@@ -26,13 +26,22 @@ When we go about preparing this wonderful evening, we can with these risks and t
 
 How much effort we expend on mitigating [Attendant Risks](attendant_risk.md) depends on how great we think they are: for example, if you know it's a 24-hour shop, you'll probably not worry too much about getting the ingredients well in advance (although, the shop _could still be closed_).
 
-There are also hidden [Attendant Risks](attendant_risk.md) that you might not know about: if you're poaching eggs for dinner, you might know that fresh eggs poach best.  
+### Hidden Risks
+
+There are also hidden [Attendant Risks](attendant_risk.md) that you might not know about: if you're poaching eggs for dinner, you might know that fresh eggs poach best.    These are the "Unknown Unknowns" of [Rumsfeld's model](https://en.wikipedia.org/wiki/There_are_known_knowns).
 
 ![Goal In Mind](images/hidden_risk.png)
 
-How we evaluate the risks, and which ones we know about depends on how closely our [Mental Model](mental_model.md) matches reality, and this depends on **knowledge** and **experience**.
+How we evaluate the risks, and which ones we know about depends on how closely our [Mental Model](mental_model.md) matches reality, and this depends on **knowledge** and **experience**.  
 
-> What we don’t know is usually what gets us killed.  - Petyr 'Littlefinger' Baelish
+### Model Meets Reality
+
+As the dinner party gets closer, the inadequacies of the [Mental Model](mental_model.md) become apparent, and we learn what we didn't know.  The [Hidden Risks] reveal themselves; things we were worried about may not materialise, things we thought would be minor risks turn out to be greater.  
+
+![Reality](images/reality.png)
+
+> What we don’t know is usually what gets us killed. 
+>   - Petyr 'Littlefinger' Baelish
 
 ## Back To Software
 
