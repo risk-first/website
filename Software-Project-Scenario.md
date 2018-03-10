@@ -42,7 +42,7 @@ However, as the number of users of the sites increased, the risk increased too, 
 
 ## Tacit and Explicit Modelling
 
-As we saw in the example of the [Dinner Party](welcome.md), creating an internal model is something _we just do_:  we have this functionality in our brains already.  When we scale this up to a whole project team, we can expect the individuals on the project to continue to do this, but we might also want to consider _explicitly_ creating a [risk register for the whole project](https://en.wikipedia.org/wiki/Risk_register).  
+As we saw in the example of the [Dinner Party](welcome), creating an internal model is something _we just do_:  we have this functionality in our brains already.  When we scale this up to a whole project team, we can expect the individuals on the project to continue to do this, but we might also want to consider _explicitly_ creating a [risk register for the whole project](https://en.wikipedia.org/wiki/Risk_register).  
 
 Whether we do this explicitly or not, we are still individually following this model.
 
