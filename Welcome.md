@@ -36,13 +36,21 @@ How we evaluate the risks, and which ones we know about depends on how closely o
 
 ### Model Meets Reality
 
-As the dinner party gets closer, the inadequacies of the [Mental Model](mental_model.md) become apparent, and we learn what we didn't know.  The [Hidden Risks](hidden_risks.md) reveal themselves; things we were worried about may not materialise, things we thought would be minor risks turn out to be greater.  
+As the dinner party gets closer, we make our preparations, and the inadequacies of the [Mental Model](mental_model.md) become apparent, and we learn what we didn't know.  The [Hidden Risks](hidden_risks.md) reveal themselves; things we were worried about may not materialise, things we thought would be minor risks turn out to be greater.   
+
+Our model is forced into contact with reality, and the model changes.  
 
 ![Reality](images/reality.png)
 
+If we had a good model, and took the right actions, we should see positive consequences.  If we failed to mitigate risks, or took inappropriate actions, we'll probably see negative actions.
+
 ## On To Software
 
-In this website, we're going to look at the risks in the software process and how these are mitigated by the various methodologies you can choose from.  Let's examine the scenario of a [new software project](software_project_example.md), and expand on the simple model being outlined above.
+In this website, we're going to look at the risks in the software process and how these are mitigated by the various methodologies you can choose from.  
+
+Let's examine the scenario of a new software project, and expand on the simple model being outlined above:  instead of a single person, we are likely to have a team, and our model will not just exist in our heads, but in the code we write.  
+
+On to [Software Project Scenario](software_project_scenario.md)
 
 > What we don’t know is usually what gets us killed. 
 >   - Petyr 'Littlefinger' Baelish
