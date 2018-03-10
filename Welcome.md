@@ -28,12 +28,12 @@ How much effort we expend on mitigating [Attendant Risks](attendant_risk.md) dep
 
 There are also hidden [Attendant Risks](attendant_risk.md) that you might not know about: if you're poaching eggs for dinner, you might know that fresh eggs poach best.  
 
+![Goal In Mind](images/hidden_risk.png)
+
 How we evaluate the risks, and which ones we know about depends on how closely our [Mental Model](mental_model.md) matches reality, and this depends on **knowledge** and **experience**.
 
-![Goal In Mind](images/hidden_risk.png)
+> What we don’t know is usually what gets us killed.  - Petyr 'Littlefinger' Baelish
 
 ## Back To Software
 
 In this website, we're going to look at 
-
-
