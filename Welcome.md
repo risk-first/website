@@ -7,7 +7,7 @@ I've started this website because, on my career journey, I've noticed that the w
 I've worked on lots of different projects, using various different "methodologies" over the years: waterfall, XP, Scrum, Lean, and mixtures of all kinds in between.  You can learn things from all of them - they all have something valuable to offer.   
 
 
-## A Synthesis
+## A Simple Scenario
 
 Lets for a moment forget about software completely, and think about _any endeavour at all_ in life.  It could be passing a test, mowing the lawn or going on holiday.  Choose something now.   I'll discuss from the point of view of "cooking a meal for some friends", but you can play along with your own example.  
 
@@ -15,18 +15,21 @@ Now, in this endeavour, we want to be successful.  That is to say, we have a [Go
 
 If we do nothing, our friends will turn up and maybe there's nothing in the house for them to eat.   Or maybe, the thing that you're going to cook is going to take hours and they'll have to sit around and wait for you to cook it and they'll leave before it's ready.  Maybe you'll be some ingredients short, or maybe you're not confident of the steps to prepare the meal and you're worried about messing it all up.  
 
-These _nagging doubts_ that are going through your head I'll call the [Attendant Risks](attendant_risk.md) of the project:  they're the ones that will occur to you as you start to think about what will happen. 
+These _nagging doubts_ that are going through your head I'll call the [Attendant Risks](attendant_risk.md):  they're the ones that will occur to you as you start to think about what will happen. 
 
- ![Goal In Mind](images/goal_in_mind.png)
+![Goal In Mind](images/goal_in_mind.png)
 
+When we go about preparing this wonderful evening, we can with these risks and try to mitigate them:  shop for the ingredients in advance, prepare parts of the meal, maybe practice the cooking in advance.  Or, we can wing it, and sometimes we'll get lucky.
 
+How much effort we expend on mitigating [Attendant Risks](attendant_risk.md) depends on how great we think they are: for example, if you know it's a 24-hour shop, you'll probably not worry too much about getting the ingredients well in advance (although, the shop _could still be closed_).
 
+There are also hidden [Attendant Risks](attendant_risk.md) that you might not know about: if you're poaching eggs for dinner, you might know that fresh eggs poach best.  
 
+How we evaluate the risks, and which ones we know about depends on how closely our [Mental Model](mental_model.md) matches reality, and this depends on **knowledge** and **experience**.
 
 ## Back To Software
 
 In this website, we're going to look at 
-
 
 
 
