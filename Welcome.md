@@ -34,11 +34,11 @@ There are also hidden [Attendant Risks](attendant_risk.md) that you might not kn
 
 ![Goal In Mind](images/hidden_risk.png)
 
-How we evaluate the risks, and which ones we know about depends on how closely our [Risk Model](risk_model.md) matches reality, and this depends on **knowledge** and **experience**.  
+How we evaluate the risks, and which ones we know about depends on how closely our [Internal Model](internal_model.md) matches reality, and this depends on **knowledge** and **experience**.  
 
 ### Model Meets Reality
 
-As the dinner party gets closer, we make our preparations, and the inadequacies of the [Risk Model](risk_model.md) become apparent, and we learn what we didn't know.  The [Hidden Risks](hidden_risks.md) reveal themselves; things we were worried about may not materialise, things we thought would be minor risks turn out to be greater.   
+As the dinner party gets closer, we make our preparations, and the inadequacies of the [Internal Model](internal_model.md) become apparent, and we learn what we didn't know.  The [Hidden Risks](hidden_risks.md) reveal themselves; things we were worried about may not materialise, things we thought would be minor risks turn out to be greater.   
 
 Our model is forced into contact with reality, and the model changes.  
 
