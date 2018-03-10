@@ -40,9 +40,9 @@ As the dinner party gets closer, the inadequacies of the [Mental Model](mental_m
 
 ![Reality](images/reality.png)
 
+## Back To Software
+
 > What we don’t know is usually what gets us killed. 
 >   - Petyr 'Littlefinger' Baelish
 
-## Back To Software
-
-In this website, we're going to look at 
+In this website, we're going to look at the risks in the software process and how these are mitigated by the various methodologies you can choose from.  We'll look at day-to-day risk, and how to deal with it effectively, and 
