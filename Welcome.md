@@ -52,7 +52,7 @@ In this website, we're going to look at the risks in the software process and ho
 
 Let's examine the scenario of a new software project, and expand on the simple model being outlined above:  instead of a single person, we are likely to have a team, and our model will not just exist in our heads, but in the code we write.  
 
-On to [Software Project Scenario](software_project_scenario.md)
-
 > What we don’t know is usually what gets us killed. 
 >   - Petyr 'Littlefinger' Baelish
+
+On to [Software Project Scenario](software_project_scenario.md)
