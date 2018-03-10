@@ -36,6 +36,13 @@ Let's consider a single risk:  that the website gets hacked, and sensitive data 
 * Risk of litigation
 * etc.
 
-We've seen [in the example of hacks on LinkedIn and Ashley Maddison](https://www.acunetix.com/blog/articles/password-hashing-and-the-ashley-madison-hack/) that passwords were not held as hashes in the database.  The problem is, at the time of implementing the password storage, the evaluation of the risk was low.  However, as the number of users of the sites increased, the risk increased too, but there was no re-evaluation of the risk otherwise they would have addressed it.  This was a _failure to update the [Internal Model](internal_model.md)_.
+We've seen [in the example of hacks on LinkedIn and Ashley Maddison](https://www.acunetix.com/blog/articles/password-hashing-and-the-ashley-madison-hack/) that passwords were not held as hashes in the database.  The problem is, at the time of implementing the password storage, the evaluation of the risk was low.  Perhaps, the risk of not shipping quickly was deemed greater.  
 
-Once you model your risks, you can begin to quantify them.
+However, as the number of users of the sites increased, the risk increased too, but there was no re-evaluation of the risk otherwise they would have addressed it.  This was a costly _failure to update the [Internal Model](internal_model.md)_.
+
+## Tacit and Explicit Modelling
+
+As we saw in the example of the [Dinner Party](welcome.md), creating an internal model is something _we just do_:  we have this functionality in our brains already.  When we scale this up to a whole project team, we can expect the individuals on the project to continue to do this, but we might also want to consider _explicitly_ creating a [risk register for the whole project](https://en.wikipedia.org/wiki/Risk_register).  
+
+Whether we do this explicitly or not, we are still individually following this model.
+
