@@ -2,13 +2,17 @@ Where do the risks of the project lie?
 
 How do we decide what _needs to be done today_ on a software project?  
 
-Let's look again at the simple risk framework and try to apply it:
+Let's look again at the simple risk framework from the [introduction](Introduction) and try to apply it:
 
 ![Reality](images/reality.png)
 
 ## Goal In Mind
 
-Let's consider a project that's in production, and has paying clients using it.  How should we decide how to spend our time on a day to day basis?  What actions should we take?  (In [Scrum](frameworks/agile.md) terminology, this might be our _Sprint Goal_?).
+Let's consider a project that's in production, and has paying clients using it.  
+
+How should we decide how to spend our time on a day to day basis?  
+
+What actions should we take?  (In [Scrum](Agile) terminology, what is our _Sprint Goal_?).
 
 If we want to take the right actions, we need to have a good [Internal Model](Internal-Model).  
 
@@ -28,7 +32,7 @@ What are the [Attendant Risks](Attendant-Risk) that come with that goal?  Here a
 
 I'm sure you can think of some more. 
 
-## Evaluating The Risks.
+## Evaluating The Risks
 
 Next, we can look at each of these risks and consider the threat they represent.  Usually, when [evaluating a risk](Risk-Theory.md) we consider both it's **impact** and **likelihood**.  
 
@@ -50,7 +54,7 @@ As part of evaluating the risks, we can also _predict_ the negative outcomes if 
 * Bad Reputation
 * etc.
 
-## Stolen Data
+## Reality
 
 Let's consider a single risk:  that the website gets hacked, and sensitive data is stolen.  How we evaluate this risk is going to depend on a number of factors:
 
@@ -67,6 +71,8 @@ How does our model explain what happened here?
 - It's possible that _at the time of implementing the password storage_, hashing was considered, but the evaluation of the risk was low:  Perhaps, the risk of not shipping quickly was deemed greater.  And so they ignored this concern.
 - It's also possible that for the developers in question this was a [Hidden Risk](Attendant-Risk), and they hadn't even considered it. 
 - However, as the number of users of the sites increased, the risk increased too, but there was no re-evaluation of the risk otherwise they would have addressed it.  This was a costly _failure to update the [Internal Model](Internal-Model)_.
+
+## Actions
 
 When exposing a service on the Internet, it's now a good idea to _look for trouble_:  you should go out and try and improve your [Internal Model](Internal-Model).   
 
