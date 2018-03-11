@@ -35,6 +35,7 @@ A more in-depth look at software methodologies and their opinions on software ri
  - [Agile](Agile)
  - [Lean](Lean)
  - [PMBoK and Prince2](PMBoK)
+ - [Programming, M10r](PM)
  - [DevOps](DevOps) 
  - [12 Factor](12factor)
  
@@ -47,12 +48,12 @@ This is a m
  - [Testing](Testing)
  - [Minimizing The Downside](Minimizing-The-Downside)
  - [Issue Tracking](Issue-Tracking)
- 
-
 
 ### Glossary Of Terms
 
- - [Attendant Risk](terminology/Attendant-Risk)
+ - [Attendant Risk](Attendant-Risk)
+ - [Goal In Mind](Goal-In-Mind)
+ - [Internal Model](Internal-Model)
   
 
 
