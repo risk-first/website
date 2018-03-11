@@ -20,39 +20,39 @@ Hopefully, after reading through some of the articles on this short website, you
 
 Some easy-to-digest ideas that will set the scene for examining the methodologies.
 
- - [Introduction](introduction/Introduction)
- - [A Software Project Scenario](introduction/Software-Project-Scenario.md)
- - [Development Process](introduction/Development-Process.md)
- - [Some Risk Theory](introduction/Risk-Theory.md)
- - [Software Risks](introduction/Software-Risks.md)
+ - [Introduction](Introduction)
+ - [A Software Project Scenario](Software-Project-Scenario)
+ - [Development Process](Development-Process)
+ - [Some Risk Theory](Risk-Theory)
+ - [Software Risks](Software-Risks)
   
 ### Methdologies
 
 A more in-depth look at software methodologies and their opinions on software risks.
 
- - [Introduction](method/Introduction.md)
- - [Waterfall](method/Waterfall.md)
- - [Agile](method/Agile.md)
- - [Lean](method/Lean.md)
- - [PMBoK and Prince2](method/PMBoK.md)
- - [12 Factor](method/12factor.md)
- - [DevOps](method/DevOps.md) 
+ - [Introduction](Methodologies)
+ - [Waterfall](Waterfall)
+ - [Agile](Agile)
+ - [Lean](Lean)
+ - [PMBoK and Prince2](PMBoK)
+ - [DevOps](DevOps) 
+ - [12 Factor](12factor)
  
 ### Specific Topics
 
 Digging down to see how risk is relevant to specific areas of the software process.
 This is a m
 
- - [Technical Debt](topics/Technical-Debt.md)
- - [Testing](topics/Testing.md)
- - [Minimizing The Downside](topics/Minimizing-The-Downside.md)
- - [Issue Tracking](topics/Issue-Tracking.md)
+ - [Technical Debt](Technical-Debt)
+ - [Testing](Testing)
+ - [Minimizing The Downside](Minimizing-The-Downside)
+ - [Issue Tracking](Issue-Tracking)
  
 
 
 ### Glossary Of Terms
 
- - [Attendant Risk](terminology/Attendant-Risk.md)
+ - [Attendant Risk](terminology/Attendant-Risk)
   
 
 
