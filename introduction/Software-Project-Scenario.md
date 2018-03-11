@@ -84,4 +84,4 @@ As we saw in the example of the [Dinner Party](Introduction), creating an intern
 
 Whether we do this explicitly or not, we are still individually following this model.
 
-On to: [Development Process](Development-Process.md).
+On to: [Development Process](Development-Process).
