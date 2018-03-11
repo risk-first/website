@@ -1,5 +1,10 @@
 
 
+ceremony
+practices
+bureacratic overhead
+
+
 How do frameworks change the risk landscape?
 
 What are the risks in choosing a framework?
