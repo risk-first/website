@@ -20,7 +20,7 @@ Hopefully, after reading through some of the articles on this short website, you
 
 Some easy-to-digest ideas that will set the scene for examining the methodologies.
 
- - [Introduction](introduction/Introduction.md)
+ - [Introduction](introduction/Introduction)
  - [A Software Project Scenario](introduction/Software-Project-Scenario.md)
  - [Development Process](introduction/Development-Process.md)
  - [Some Risk Theory](introduction/Risk-Theory.md)
