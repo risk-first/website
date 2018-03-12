@@ -33,7 +33,7 @@ I'm sure you can think of some more.
 
 ## Evaluating The Risks
 
-Next, we can look at each of these risks and consider the threat they represent.  Usually, when [evaluating a risk](Risk-Theory.md) we consider both it's **impact** and **likelihood**.  
+Next, we can look at each of these risks and consider the threat they represent.  Usually, when [evaluating a risk](Risk-Theory) we consider both it's **impact** and **likelihood**.  
 
 The same [Attendant Risks](Attendant-Risk) will be evaluated differently depending on the _nature of the project_ and the mitigations you already have in place.  For example:
 
@@ -86,7 +86,12 @@ So, this gives us a guide for one potential action we could take _today_.  But o
 
 Which actions give us the biggest benefit in terms of mitigating the [Attendant Risks](Attendant-Risk)?
 
-It's worth considering that if we're just starting this project, risks 1-4 are _negligible_, and we're only going to spend time building functionality or improving our understanding of the market.  (Which makes sense, right?)
+That is, we consider for each possible action:
+
+- The Impact and Likelihood of the [Attendant Risks](Attendant-Risk) it mitigates
+- The Cost of the Action
+
+For example, it's worth considering that if we're just starting this project, risks 1-4 are _negligible_, and we're only going to spend time building functionality or improving our understanding of the market.  (Which makes sense, right?)
 
 ## Tacit and Explicit Modelling
 
