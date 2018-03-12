@@ -12,7 +12,12 @@ Hopefully, after reading through some of the articles on this short website, you
 
 - An appreciation of how risk underpins everything we do as developers, whether we want it to or not.
 - A framework for evaluating [software methodologies](https://en.wikipedia.org/wiki/Software_development_process#Methodologies) and choosing the right one for the task-at-hand.
+- A recontextualization of the software process as being an exercise in mitigating different kinds of risk.
 - The tools to help you decide when a methodology is _letting you down_, and the vocabulary to argue for when it's a good idea to deviate from it.
+
+## Contributing
+
+If you find this site useful, and want to contribute, [we need help](Contributing).
 
 ## Table of Contents
 
@@ -48,6 +53,16 @@ This is a m
  - [Testing](Testing)
  - [Minimizing The Downside](Minimizing-The-Downside)
  - [Issue Tracking](Issue-Tracking)
+ 
+### Menagerie
+
+Although we talk a lot about [Hidden Risk](Attendant-Risk) here, [Hidden Risks](Attendant-Risk) are often very similar 
+across different software projects.   And, if you know about them, you can look for them.  This section attempts to list them for you:
+
+ - [Devil Makes Work](Devil-Makes-Work)
+ - [Technical Debt](Technical-Debt)
+ - [Too Many Cooks](Too-Many-Cooks)
+
 
 ### Glossary Of Terms
 
