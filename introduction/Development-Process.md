@@ -123,7 +123,7 @@ A couple of things:
 
 ## Conclusion?
 
-Could it be that _everything_ you do on a software project is risk management?  This is an idea explored in [the next section](All-Risk-Management)  
+Could it be that _everything_ you do on a software project is risk management?  This is an idea explored in [the next section](All-Risk-Management).
 
 
 
