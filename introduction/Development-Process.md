@@ -46,15 +46,15 @@ Two reasons:
 
 ## Applying the Model
 
-Let's look at how our process should act to prevent these risks materializing by considering an unhappy path, one where at the outset, we have lots of [Hidden Risks](Attendant-Risk) ready to materialize.  Let's say a particularly vocal user rings up someone in the office and asks for new feature **X** to be added to the software.  It's logged as a new feature request, but:
+Let's look at how our process should act to prevent these risks materializing by considering an unhappy path, one where at the outset, we have lots of [Hidden Risks](Attendant-Risk) ready to materialize.  Let's say a particularly vocal user rings up someone in the office and asks for new **Feature X** to be added to the software.  It's logged as a new feature request, but:
   
-- Unfortunately, this feature once programmed will break an existing feature **Y**  
+- Unfortunately, this feature once programmed will break an existing **Feature Y**  
 - Implementing the feature will use some api in a library, which contains bugs and have to be coded around.    
 - It's going to get misunderstood by the developer too, who is new on the project and doesn't understand how the software is used.  
-- Actually, this functionality is mainly served by feature **Z**...
+- Actually, this functionality is mainly served by **Feature Z**...
 - which is already there but hard to find.
 
-![Development Process - Hidden Risks](dev_process_hidden_risks.png)
+![Development Process - Hidden Risks](images/dev_process_hidden_risks.png)
 
 This is a slightly contrived example, as you'll see.  But let's follow our feature through the process and see how it meets reality slowly, and the hidden risks are discovered:
 
@@ -73,19 +73,15 @@ In the process of doing this, the BA is turning the simple feature request _idea
 
 Hopefully, after this stage, our [Internal Model](Internal-Model) might look something like this:
 
-Reality - the BA's understanding
-New Apparent Risks: 
-  - Feature Z:  we duplicate functionality in the project which will waste time and make it more complicated to understand.
-  - Implementation risk: explain the concepts really well so the developer will understand.
+![BA Specification](images/dev_process_ba.png)
 
-
-Now, it's _also_ part of the BA's job to polish up these ideas: **Feature X** might be flawed, but perhaps with work, the BA can "evolve" it into **Feature X+**, which circumvents the original problems.   The BA does all this by simply _thinking about it_, _talking to people_ and _writing stuff down_.
+In surfacing these risks, there is another outcome:  while **Feature X** might be flawed as originally presented, the BA can "evolve" it into a specification, ties it down sufficiently to reduce the risks.   The BA does all this by simply _thinking about it_, _talking to people_ and _writing stuff down_.
 
 This process of evolving the feature request into a requirement is the BAs job.  From our risk-first perspective, it is _taking an idea and making it meet reality_.  Not the _full reality_ of production (yet), but something more limited.  After its brush with reality, the [goal in mind](Goal-In-Mind) has _evolved_ from being **Feature X Idea** to **Feature X Specification**.
 
 ### Code And Unit Test
 
-The next stage for our feature, **Feature X++** is that it gets coded and some tests get written.  This article isn't about good testing process, so we're not going to look at that.  Let's look at how our [goal in mind](Goal-In-Mind) meets a new reality:   this time it's the reality of a pre-existing codebase, which has it's own internal logic.
+The next stage for our feature, **Feature X (Specification)** is that it gets coded and some tests get written.  This article isn't about good testing process, so we're not going to look at that.  Let's look at how our [goal in mind](Goal-In-Mind) meets a new reality:   this time it's the reality of a pre-existing codebase, which has it's own internal logic.
 
 As the developer begins coding the feature in the software, she will start with an [Internal Model](Internal-Model) of the software, and how the code fits into it.  But, in the process of implementing it, she is likely to learn about the codebase, and 
 her [Internal Model](Internal-Model) will develop.  
@@ -93,12 +89,9 @@ her [Internal Model](Internal-Model) will develop.
 To a large extent, this is the whole point of _type safety_:  to ensure that your [Internal Model](Internal-Model) stays consistent with the reality of the codebase.  If you add code that doesn't fit the reality of the codebase, you'll know about it with compile errors.
 
 The same thing is true of writing unit tests:  again you are testing your [Internal Model](Internal-Model) against the reality of the system being built, running in your development environment.  Hopefully, this will surface some new hidden risks, and again,
-because the [goal in mind](Goal-In-Mind) has met reality, it is changed, to **Feature X Code**.
+because the [goal in mind](Goal-In-Mind) has met reality, it is changed, to **Feature X (Code)**.
 
-Reality: working code
-Apparent Risks:
-  - problems with API
-  - Output feature x code
+![Coding Process](images/dev_process_code.png)
 
 ### Integration
 
@@ -108,17 +101,13 @@ So, this stage is about the developer's committed code meeting a new reality: th
 
 At this stage, we might discover the [Hidden Risk](Attendant-Risk) that we'd break **Feature Y**
 
-INput - Feature X Code
-New hidden risk - broken feature Y
-Output - Feature X Integrated
+![Integration](images/dev_process_integration.png)
 
 ### UAT
 
 Is where our feature meets another reality: _actual users_.   I think you can see how the process works by now.  We're just flushing out yet more [Hidden Risks](Attendant-Risk):
 
-Input: Feature X Integrated
-Reality: UAT
-Hidden Risks:  Users find it difficult to find the functionality.
+![UAT](images/dev_process_uat.png)
 
 ## Observations
 
@@ -130,7 +119,7 @@ Second, are these really risks, or are they _problems we just didn't know about_
 
 Third, the real takeaway from this is that all these risks exist because we don't know 100% how reality is.  Risk exists because we don't (and can't) have a perfect view of the universe and how it'll develop.   Reality is reality, _the risks just exist in our head_.
 
-Fourth, hopefully you can see from the above that really _all work is risk management_, and _all work is testing ideas against reality_.  
+Fourth, hopefully you can see from the above that really _all this work is risk management_, and _all work is testing ideas against reality_.   (This idea is expanded on in the next section).
 
 Fifth, and finally, the wake-up call _is_ reality:  the longer you leave your [goal in mind](Goal-In-Mind), the longer it'll be before you find out how it really stacks up against reality.  Testing your [goals in mind](Goal-In-Mind) early and safely is how you'll manage risk effectively, as we'll see in the next section.
 
