@@ -1,5 +1,5 @@
 
-In the [previous section](Software-Project-Scenario) we looked at how risk determines what actions we take on a project.
+In the [previous section](Introduction) we looked at a simple model for risks on any given activity.
 
 Now, let's look at the everyday process of developing _a new feature_ on a software project, and see how our risk model informs it.
 
@@ -75,13 +75,13 @@ Hopefully, after this stage, our [Internal Model](Internal-Model) might look som
 
 ![BA Specification](images/dev_process_ba.png)
 
-In surfacing these risks, there is another outcome:  while **Feature X** might be flawed as originally presented, the BA can "evolve" it into a specification, ties it down sufficiently to reduce the risks.   The BA does all this by simply _thinking about it_, _talking to people_ and _writing stuff down_.
+In surfacing these risks, there is another outcome:  while **Feature X** might be flawed as originally presented, the BA can "evolve" it into a specification, and tie it down sufficiently to reduce the risks.   The BA does all this by simply _thinking about it_, _talking to people_ and _writing stuff down_.
 
 This process of evolving the feature request into a requirement is the BAs job.  From our risk-first perspective, it is _taking an idea and making it meet reality_.  Not the _full reality_ of production (yet), but something more limited.  After its brush with reality, the [goal in mind](Goal-In-Mind) has _evolved_ from being **Feature X (Idea)** to **Feature X (Specification)**.
 
 ### Code And Unit Test
 
-The next stage for our feature, **Feature X (Specification)** is that it gets coded and some tests get written.  This article isn't about good testing process, so we're not going to look at that.  Let's look at how our [goal in mind](Goal-In-Mind) meets a new reality:   this time it's the reality of a pre-existing codebase, which has it's own internal logic.
+The next stage for our feature, **Feature X (Specification)** is that it gets coded and some tests get written.  Let's look at how our [goal in mind](Goal-In-Mind) meets a new reality:   this time it's the reality of a pre-existing codebase, which has it's own internal logic.
 
 As the developer begins coding the feature in the software, she will start with an [Internal Model](Internal-Model) of the software, and how the code fits into it.  But, in the process of implementing it, she is likely to learn about the codebase, and 
 her [Internal Model](Internal-Model) will develop.  
@@ -119,11 +119,11 @@ A couple of things:
 
 **Third**, the real take-away from this is that all these risks exist because we don't know 100% how reality is.  Risk exists because we don't (and can't) have a perfect view of the universe and how it'll develop.   Reality is reality, _the risks just exist in our head_.
 
-**Fourth**, hopefully you can see from the above that really _all this work is risk management_, and _all work is testing ideas against reality_.   (This idea is expanded on in the next section).
+**Fourth**, hopefully you can see from the above that really _all this work is risk management_, and _all work is testing ideas against reality_.   
 
-**Fifth**, and finally, the wake-up call _is_ reality:  the longer you leave your [goal in mind](Goal-In-Mind), the longer it'll be before you find out how it really stacks up against reality.  Testing your [goals in mind](Goal-In-Mind) early and safely is how you'll manage risk effectively, as we'll see in the next section.
+## Conclusion?
 
-
+Could it be that _everything_ you do on a software project is risk management?  This is an idea explored in [the next section](All-Risk-Management)  
 
 
 

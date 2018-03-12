@@ -2,7 +2,7 @@ Where do the risks of the project lie?
 
 How do we decide what _needs to be done today_ on a software project?  
 
-Let's look again at the simple risk framework from the [introduction](Introduction) and try to apply it:
+Let's look again at the simple risk framework from the [introduction](Introduction) and try to apply it at the level of the _entire project_.
 
 ![Reality](images/reality.png)
 
@@ -10,7 +10,7 @@ Let's look again at the simple risk framework from the [introduction](Introducti
 
 Let's consider a project that's in production, and has paying clients using it.  
 
-How should we decide how to spend our time on a day to day basis?  
+How should we decide how to spend our time today?  
 
 What actions should we take?  (In [Scrum](Agile) terminology, what is our _Sprint Goal_?).
 
