@@ -2,7 +2,9 @@ Hi.
 
 Welcome to the Risk-First Wiki.  
 
-I've started this website because, on my career journey, I've noticed that the way I do things doesn't seem to match up with the way the books _say_ it should be done.  And, I found this odd and wanted to explore it further.   Hopefully, you, the reader, will find something of use in this.  First up, I'm going to introduce a simple model for thinking about risk.
+I've started this website because, on my career journey, I've noticed that the way I do things doesn't seem to match up with the way the books _say_ it should be done.  And, I found this odd and wanted to explore it further.   Hopefully, you, the reader, will find something of use in this.  
+
+First up, I'm going to introduce a simple model for thinking about risk.
 
 ## A Simple Scenario
 
@@ -10,7 +12,7 @@ Lets for a moment forget about software completely, and think about _any endeavo
 
 ### Goal In Mind
 
-Now, in this endeavour, we want to be successful.  That is to say, we have a [Goal In Mind](Goal-In-Mind):  we want our friends to go home satisfied after a decent meal, and not to feel hungry.   As a bonus, we might also want to spend time talking with them before and during the meal.  So, now to achieve our [Goal In Mind](goal_in_mind.md) we *probably* have to do some tasks.  
+Now, in this endeavour, we want to be successful.  That is to say, we have a [Goal In Mind](Goal-In-Mind):  we want our friends to go home satisfied after a decent meal, and not to feel hungry.   As a bonus, we might also want to spend time talking with them before and during the meal.  So, now to achieve our [Goal In Mind](Goal-In-Mind) we *probably* have to do some tasks.  
 
 If we do nothing, our friends will turn up and maybe there's nothing in the house for them to eat.   Or maybe, the thing that you're going to cook is going to take hours and they'll have to sit around and wait for you to cook it and they'll leave before it's ready.  Maybe you'll be some ingredients short, or maybe you're not confident of the steps to prepare the meal and you're worried about messing it all up.  
 
@@ -30,7 +32,9 @@ There are also hidden [Attendant Risks](Attendant-Risk) that you might not know 
 
 ![Goal In Mind](images/hidden_risk.png)
 
-How we evaluate the risks, and which ones we know about depends on how closely our [Internal Model](Internal-Model) matches reality, and this depends on **knowledge** and **experience**.  
+Different people will evaluate the risks differently.  (That is, worry about them more or less.)  They'll also _know_ about different risks.  They might have cooked the recipe before, or organised lots more dinner parties than you.   
+
+How we evaluate the risks, and which ones we know about depends on our **knowledge** and **experience**, then.  And that varies from person to person (or team to team).  Lets call this our [Internal Model](Internal-Model), and it's something we build on and improve with experience (of organising dinner parties, amongst everything else).
 
 ### Model Meets Reality
 
