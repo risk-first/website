@@ -4,7 +4,7 @@ Scrum, Waterfall, Lean, Prince2:  what do they all have in common?
 
 One perspective is that they are individual [software methodologies](https://en.wikipedia.org/wiki/Software_development_process#Methodologies), offering different viewpoints on how to build software.
 
-However, here, we are going to consider a second perspective:  that building software is all about _managing risk_, and that these methodologies are acknowledgements of this fact, and they differ because they have different ideas about which are the most important _risks to manage_.
+However, here, we are going to consider a second perspective:  that building software is all about _managing risk_, and that these methodologies are acknowledgements of this fact, and they differ because they have _different ideas_ about which are the most important _risks to manage_.
 
 ## Goal
 

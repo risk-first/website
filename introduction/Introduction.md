@@ -2,15 +2,11 @@ Hi.
 
 Welcome to the Risk-First Wiki.  
 
-I've started this website because, on my career journey, I've noticed that the way I do things doesn't seem to match up with the way the books _say_ it should be done.  And, I found this odd and wanted to explore it further.   Hopefully, you, the reader, will find something of use in this. 
-
-## A Really Short Overview
-
-I've worked on lots of different projects, using various different "methodologies" over the years: waterfall, XP, Scrum, Lean, and mixtures of all kinds in between.  You can learn things from all of them - they all have something valuable to offer.   
+I've started this website because, on my career journey, I've noticed that the way I do things doesn't seem to match up with the way the books _say_ it should be done.  And, I found this odd and wanted to explore it further.   Hopefully, you, the reader, will find something of use in this.  First up, I'm going to introduce a simple model for thinking about risk.
 
 ## A Simple Scenario
 
-Lets for a moment forget about software completely, and think about _any endeavour at all_ in life.  It could be passing a test, mowing the lawn or going on holiday.  Choose something now.   I'll discuss from the point of view of "cooking a meal for some friends", but you can play along with your own example.  
+Lets for a moment forget about software completely, and think about _any endeavor at all_ in life.  It could be passing a test, mowing the lawn or going on holiday.  Choose something now.   I'll discuss from the point of view of "cooking a meal for some friends", but you can play along with your own example.  
 
 ### Goal In Mind
 
@@ -51,8 +47,5 @@ If we had a good model, and took the right actions, we should see positive conse
 In this website, we're going to look at the risks in the software process and how these are mitigated by the various methodologies you can choose from.  
 
 Let's examine the scenario of a new software project, and expand on the simple model being outlined above:  instead of a single person, we are likely to have a team, and our model will not just exist in our heads, but in the code we write.  
-
-> What we don’t know is usually what gets us killed. 
->   - Petyr 'Littlefinger' Baelish
 
 On to [Software Project Scenario](Software-Project-Scenario)
