@@ -6,18 +6,16 @@ In the previous section [Software Project Scenario](Software-Project-Scenario) w
 
 A [Risk Register](https://en.wikipedia.org/wiki/Risk_register) can help with this.  From Wikipedia:
 
-```
-A typical risk register contains:
-
-- A risk category to group similar risks
-- The risk breakdown structure identification number
-- A brief description or name of the risk to make the risk easy to discuss
-- The impact (or consequence) if event actually occurs rated on an integer scale
-- The probability or likelihood of its occurrence rated on an integer scale
-- The Risk Score (or Risk Rating) is the multiplication of Probability and Impact and is often used to rank the risks.
-- Common mitigation steps (e.g. within IT projects) are Identify, Analyze, Plan Response, Monitor and Control.
-
-```
+> A typical risk register contains:
+> 
+> - A risk category to group similar risks
+> - The risk breakdown structure identification number
+> - A brief description or name of the risk to make the risk easy to discuss
+> - The impact (or consequence) if event actually occurs rated on an integer scale
+> - The probability or likelihood of its occurrence rated on an integer scale
+> - The Risk Score (or Risk Rating) is the multiplication of Probability and Impact and is often used to rank the risks.
+> - Common mitigation steps (e.g. within IT projects) are Identify, Analyze, Plan Response, Monitor and Control.
+> 
 
 ## Graphical Analysis
 
