@@ -28,6 +28,7 @@ Some easy-to-digest ideas that will set the scene for examining the methodologie
  - [Introduction](Introduction)
  - [A Software Project Scenario](Software-Project-Scenario)
  - [Development Process](Development-Process)
+ - [Meeting Reality](Meeting-Reality)
  - [Some Risk Theory](Risk-Theory)
  - [Software Risks](Software-Risks)
   

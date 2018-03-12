@@ -77,7 +77,7 @@ Hopefully, after this stage, our [Internal Model](Internal-Model) might look som
 
 In surfacing these risks, there is another outcome:  while **Feature X** might be flawed as originally presented, the BA can "evolve" it into a specification, ties it down sufficiently to reduce the risks.   The BA does all this by simply _thinking about it_, _talking to people_ and _writing stuff down_.
 
-This process of evolving the feature request into a requirement is the BAs job.  From our risk-first perspective, it is _taking an idea and making it meet reality_.  Not the _full reality_ of production (yet), but something more limited.  After its brush with reality, the [goal in mind](Goal-In-Mind) has _evolved_ from being **Feature X Idea** to **Feature X Specification**.
+This process of evolving the feature request into a requirement is the BAs job.  From our risk-first perspective, it is _taking an idea and making it meet reality_.  Not the _full reality_ of production (yet), but something more limited.  After its brush with reality, the [goal in mind](Goal-In-Mind) has _evolved_ from being **Feature X (Idea)** to **Feature X (Specification)**.
 
 ### Code And Unit Test
 
@@ -113,15 +113,15 @@ Is where our feature meets another reality: _actual users_.   I think you can se
 
 A couple of things:
 
-First, the person setting up the development process _didn't know_ about these _exact_ risks, but they knew the _shape that the risks take_.   The process builds nets for the different kinds of risks without knowing exactly what they are.
+**First**, the people setting up the development process _didn't know_ about these _exact_ risks, but they knew the _shape that the risks take_.   The process builds "nets" for the different kinds of hidden risks without knowing exactly what they are.  Part of the purpose of this site is to help with this and try and provide a taxonomy for different types of risks.
 
-Second, are these really risks, or are they _problems we just didn't know about_?  I am using the terms interchangeably, to a certain extent.  Even when you know you have a problem, it's still a risk to your deadline until it's solved.  So, when does a risk become a problem?  Is a problem still just a schedule-risk, or cost-risk?  It's pretty hard to draw a line and say exactly.
+**Second**, are these really risks, or are they _problems we just didn't know about_?  I am using the terms interchangeably, to a certain extent.  Even when you know you have a problem, it's still a risk to your deadline until it's solved.  So, when does a risk become a problem?  Is a problem still just a schedule-risk, or cost-risk?  It's pretty hard to draw a line and say exactly.
 
-Third, the real takeaway from this is that all these risks exist because we don't know 100% how reality is.  Risk exists because we don't (and can't) have a perfect view of the universe and how it'll develop.   Reality is reality, _the risks just exist in our head_.
+**Third**, the real take-away from this is that all these risks exist because we don't know 100% how reality is.  Risk exists because we don't (and can't) have a perfect view of the universe and how it'll develop.   Reality is reality, _the risks just exist in our head_.
 
-Fourth, hopefully you can see from the above that really _all this work is risk management_, and _all work is testing ideas against reality_.   (This idea is expanded on in the next section).
+**Fourth**, hopefully you can see from the above that really _all this work is risk management_, and _all work is testing ideas against reality_.   (This idea is expanded on in the next section).
 
-Fifth, and finally, the wake-up call _is_ reality:  the longer you leave your [goal in mind](Goal-In-Mind), the longer it'll be before you find out how it really stacks up against reality.  Testing your [goals in mind](Goal-In-Mind) early and safely is how you'll manage risk effectively, as we'll see in the next section.
+**Fifth**, and finally, the wake-up call _is_ reality:  the longer you leave your [goal in mind](Goal-In-Mind), the longer it'll be before you find out how it really stacks up against reality.  Testing your [goals in mind](Goal-In-Mind) early and safely is how you'll manage risk effectively, as we'll see in the next section.
 
 
 
