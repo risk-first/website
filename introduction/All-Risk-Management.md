@@ -31,7 +31,7 @@ Is it a **risk**?  Probably:  Debbie might go to the client and they _still_ don
 
 This is a completely made-up example, deliberately chosen to be hard to categorize.  Normally, items are more one thing than another.  But often, you'll have to make a choice between two categories, if not all four.  
 
-This hints at the fact that at some level it's all risk.
+This hints at the fact that at some level it's all risk:
 
 ### Every Action is a Risk.  
 

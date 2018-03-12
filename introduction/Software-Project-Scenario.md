@@ -8,8 +8,6 @@ Let's look again at the simple risk framework from the [introduction](Introducti
 
 ## Goal In Mind
 
-Let's consider a project that's in production, and has paying clients using it.  
-
 How should we decide how to spend our time today?  
 
 What actions should we take?  (In [Scrum](Agile) terminology, what is our _Sprint Goal_?).
@@ -24,11 +22,12 @@ But let's say for example, today our [Goal In Mind](Goal-In-Mind) is to grow our
 
 What are the [Attendant Risks](Attendant-Risk) that come with that goal?  Here are some to get us started:
 
-1. The users can’t access it
+1. The users can’t access the system
 2. The data gets lost, stolen. 
 3. The data is wrong or corrupted
 4. There are bugs that prevent the functionality working
 5. The functionality isn’t there that the user needs.
+6. Our [Internal Model](Internal-Model) of the market is poor, and we could be building the wrong thing.
 
 I'm sure you can think of some more. 
 
@@ -43,6 +42,7 @@ The same [Attendant Risks](Attendant-Risk) will be evaluated differently dependi
 * If the **data is wrong**, does that mean that the wrong people get sent their parcels?  Do they receive the wrong orders?  Do they end up going to the wrong courses?
 * If there are **bugs**, does it mean that their pictures don’t end up on the internet?  Does it mean that they have to restart the program?  Does it mean that they’ll waste time, or that they end up thinking they have insurance but haven’t?  
 * If there is **missing functionality**, will they not buy the system?  Will they use a competitor’s product?  Will they waste time doing things a harder or less optimal way?
+* If our **[Internal Model](Internal-Model) is wrong**, then is there a chance we are building something for a non-existent market?  Or annoying our customers?  Or leaving an opportunity for competitors?
 
 ## Outcomes
 
@@ -54,7 +54,7 @@ As part of evaluating the risks, we can also _predict_ the negative outcomes if 
 * Bad Reputation
 * etc.
 
-## Reality
+## A Single Attendant Risk:  Getting Hacked
 
 Let's consider a single risk:  that the website gets hacked, and sensitive data is stolen.  How we evaluate this risk is going to depend on a number of factors:
 
@@ -64,6 +64,8 @@ Let's consider a single risk:  that the website gets hacked, and sensitive data 
 * Risk of litigation
 * etc.
 
+#### Ashley Maddison
+
 We've seen [in the example of hacks on LinkedIn and Ashley Maddison](https://www.acunetix.com/blog/articles/password-hashing-and-the-ashley-madison-hack/) that passwords were not held as hashes in the database.  (A practice which experienced developers mainly would see as negligent).  
 
 How does our model explain what happened here?
@@ -72,11 +74,19 @@ How does our model explain what happened here?
 - It's also possible that for the developers in question this was a [Hidden Risk](Attendant-Risk), and they hadn't even considered it. 
 - However, as the number of users of the sites increased, the risk increased too, but there was no re-evaluation of the risk otherwise they would have addressed it.  This was a costly _failure to update the [Internal Model](Internal-Model)_.
 
-## Actions
+#### Possible Action
 
 When exposing a service on the Internet, it's now a good idea to _look for trouble_:  you should go out and try and improve your [Internal Model](Internal-Model).   
 
 Thankfully, this is what sites like [OWASP](https://www.owasp.org/index.php/Top_10-2017_Top_10) are for:  they _tell you about the [Attendant Risks](Attendant-Risk)_ and further, try to provide some evaluation of them to guide your actions.
+
+## Actions
+
+So, this gives us a guide for one potential action we could take _today_.  But on it's own, this isn't helpful:   we would need to consider this action against the actions we could take to mitigate the other risks.  Can we answer this question:
+
+Which actions give us the biggest benefit in terms of mitigating the [Attendant Risks](Attendant-Risk)?
+
+It's worth considering that if we're just starting this project, risks 1-4 are _negligible_, and we're only going to spend time building functionality or improving our understanding of the market.  (Which makes sense, right?)
 
 ## Tacit and Explicit Modelling
 
@@ -84,4 +94,4 @@ As we saw in the example of the [Dinner Party](Introduction), creating an intern
 
 Whether we do this explicitly or not, we are still individually following this model.
 
-On to: [Development Process](Development-Process).
+On to: [Meeting Reality](Meeting-Reality).
