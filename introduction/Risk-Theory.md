@@ -50,6 +50,9 @@ Sometimes, there are hard deadlines on projects.  TBC
 
 ## Long Running vs Short Running Risks TBC
 
+## Dependencies TBC
+
+
 
 On to [Meeting Reality](Meeting-Reality). 
 
