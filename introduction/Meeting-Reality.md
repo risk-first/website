@@ -1,83 +1,43 @@
+In this section, we will look at how exposing your [Internal Model](Internal-Model) to reality is in itself a good risk management technique.
+
+## Revisiting the Model
+
+In the [Introduction](Introduction), we looked at a basic model for how **Reality** and our **Internal Model** interacted with each other.   
+
+And, in [Development Process](Development-Process) we looked at how we can meet with reality in different forms:  Analysis, Testing, Integration and so on, and saw how the model could work in each stage.
+
+Finally, in [Software Project Scenario](Software-Project-Scenario) we looked at how we could use this model on a day-to-day basis to inform what we should do next.  
+
+So, it should be no surprise to see that there is a _recursive_ nature about this:  the **actions** we perform each day have consequences:  they **expose new [Hidden Risks](Attendant-Risk)**, which inform our [Internal Model(Internal-Model), and at the same time, they change reality in some way (otherwise, what would be the point of doing them?)
+
+So, let's see how this kind of recursion looks on our model:
+
+![Reality 2](images/reality2.png).
+
+## Iterations
+
+In the [Development Process](Development-Process), we had four steps between a feature being an "idea" to being ready for production.  (Putting the idea in production would count as a 5th step, too).  So, that's 5 times.  What is the right number of steps?  
+
+- If you have more steps, the process is more complex, and will take longer.
+- But, more steps is clearly _safer_
+- Can we 
+
+## Cadence
+
+How _fast_ should we go round this loop?  Is there a right answer?  The longer you leave your [goal in mind](Goal-In-Mind), the longer it'll be before you find out how it really stacks up against reality.  Testing your [goals in mind](Goal-In-Mind) early and safely is how you'll manage risk effectively.  
+
+## Feedback Loops
 
 
 
-Risk Management is the process of thinking out corrective actions before a problem occurs, while it's still an abstraction.  
-The opposite of risk management is crisis management, trying to figure out what to do about the problem after it happens.
- - waltzing with bears
- 
- 
- 
-I need to model this in kite9
 
-User’s Model
+## Going Into Production
 
-User’s Requirements 
-
-Bug Reports
-Feature Requests -> Spec -> Written Software -> Deployment -> Running Software -> User Interactions   ->  Bug Reports
-                                                        \-/                            \-/                       \-/                                                   ->  Feature Requests
-                                                                                                                                       -> Other Resource Interactions
-                                                                                                                                                      \-/
-
-System ->                          User Interaction -> User’s Idea Of the System
-User’s Idea Of the System /
-User’s Requirements
+...
+Bug reports, feedback
+Quality of feedback
 
 
-Area 
-Risks
-Mitigations
-Idea -> Spec
-Spec is inconsistent (entropy)
-Spec doesn’t reflect the idea properly (entropy)
-Review
-Spec -> Written Software
-Incorrect implementation (entropy)
-Bugs (entropy)
-Spec is inconsistent with the actual system (merging)
-Functional Testing
-Written Software
-Breaking existing code (merging)
-
-WS -> Deployment
-Failure to deploy correctly
-(entropy)
-Automated deployment processes
-Same process, different environments
-Deployment
-Unrecorded changes in deployment environment that get lost (merging)
-
-no access to production
-state change in production not allowed
-Deployment->Running Software
-Missing libraries, code
-Dependency issues
-Environment problems (merging)
-Lost data / transactions / dropped sessions (merging)
-Progressive release 
-Running Software
-Disks filling up, crashing (entropy)
-Systems failing 
-State inconsistency
-Failover, load balancing, redundancy, stateless apps
-Running Software -> User Interactions
-User doesn’t understand system (merging)
-Access issues 
-
-Help documentation
-
-User Interactions -> Bug Reports, Feature Requests
-User doesn’t submit them (entropy)
-User writes something that doesn’t make sense to team (entropy)
-False positives (entropy)
-
-Running System -> Other Resource Interactions
-Other systems work differently to how you expected (merging)
 
 
-Other Resource Interactions
-System changes in an incompatible way (entropy)
-
-
-crashing through various layers of reality
  

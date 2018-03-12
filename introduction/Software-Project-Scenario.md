@@ -99,4 +99,4 @@ As we saw in the example of the [Dinner Party](Introduction), creating an intern
 
 Whether we do this explicitly or not, we are still individually following this model.
 
-On to: [Meeting Reality](Meeting-Reality).
+In the next section, we're going to take a quick aside into looking at some [Risk Theory](Risk-Theory).
