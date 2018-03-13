@@ -44,7 +44,7 @@ Our model is forced into contact with reality, and the model changes.
 
 ![Reality](images/reality.png)
 
-If we had a good model, and took the right actions, we should see positive consequences.  If we failed to mitigate risks, or took inappropriate actions, we'll probably see negative actions.
+If we had a good model, and took the right actions, we should see positive outcomes.  If we failed to mitigate risks, or took inappropriate actions, we'll probably see negative outcomes.
 
 ## On To Software
 
