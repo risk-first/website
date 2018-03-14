@@ -16,6 +16,26 @@ Let's look at the journey so far:
  
 ## Purpose
 
+
+## Cadence
+
+Let's go back to the model again:
+
+![Reality 2](images/reality2.png).
+
+How _fast_ should we go round this loop?  Is there a right answer?  The longer you leave your [goal in mind](Goal-In-Mind), the longer it'll be before you find out how it really stacks up against reality.  
+
+Testing your [goals in mind](Goal-In-Mind) against reality early and safely is how you'll manage risk effectively, and to do this, you need **Feedback Loops**:
+
+ - **Bug Reports and Feature Requests** tell you how the users are getting on with the software.
+ - **Dog-Fooding** (i.e using the software you write yourself) can be faster though.
+ - [Monitoring Tools and Logs](Production-Risk) allow you to find out how your software is doing in reality.
+ - [Continuous Delivery](DevOps) (CD) is about putting software into production as soon as it's written.   
+ - **Integration Testing** is a faster way of meeting _some_ reality than continually deploying code and re-testing it manually.
+ - **Unit Testing** is a faster feedback loop than Integration Testing. 
+
+.. and so on.
+
 So, why have we done all this? 
 
  

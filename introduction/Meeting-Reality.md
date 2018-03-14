@@ -41,8 +41,6 @@ The data storage [Attendant Risk](Attendant-Risk) was mitigated easily with Mong
 
 This is not a criticism of MongoDB: it's simply a demonstration that sometimes, the cure is worse than the disease.  Successful projects are _always_ trying to _reduce_ [Attendant Risks](Attendant-Risk).  
 
-That's what "Navigating the Risk Landscape" means.
-
 ### YAGNI 
 
 As a flavour of what's to come, let's look at [YAGNI](https://www.martinfowler.com/bliki/Yagni.html), an acronym for You Aren't Gonna Need It.   Martin Fowler says:
@@ -75,26 +73,17 @@ Another mantra from Kent Beck (originator of the [Extreme Programming](Agile) me
 
 So, "Do The Simplest Thing That Could Possibly Work" is really a helpful guideline for Navigating the Risk Landscape.  
 
-## Cadence
+## Summary
 
-Let's go back to the model again:
+So, here we've looked at Meeting Reality, which basically boils down to taking actions to manage risk and seeing how it turns out:
 
-![Reality 2](images/reality2.png).
+- Each Action you take is a step on the Risk Landscape
+- Each Action is a cycle around our model.
+- Each cycle, you'll expose new [Hidden Risks](Attendant-Risk), changing your [Internal Model](Internal-Model).
+- Preferably, each cycle should reduce the overall [Attendant Risk](Attendant-Risk) of the [Goal](Goal-In-Mind)
 
-How _fast_ should we go round this loop?  Is there a right answer?  The longer you leave your [goal in mind](Goal-In-Mind), the longer it'll be before you find out how it really stacks up against reality.  
+Surely, the faster you can do this, the better?  [Let's investigate...](Cadence)
 
-Testing your [goals in mind](Goal-In-Mind) against reality early and safely is how you'll manage risk effectively, and to do this, you need **Feedback Loops**:
-
- - **Bug Reports and Feature Requests** tell you how the users are getting on with the software.
- - **Dog-Fooding** (i.e using the software you write yourself) can be faster though.
- - [Monitoring Tools and Logs](Production-Risk) allow you to find out how your software is doing in reality.
- - [Continuous Delivery](DevOps) (CD) is about putting software into production as soon as it's written.   
- - **Integration Testing** is a faster way of meeting _some_ reality than continually deploying code and re-testing it manually.
- - **Unit Testing** is a faster feedback loop than Integration Testing. 
-
-.. and so on.
-
-Now that we've Met Reality, let's [Finish Up](Finishing-Up).
 
 
 
