@@ -57,10 +57,10 @@ But, there is always the opposite opinion:  [You Are Gonna Need It](http://wiki.
 
 Now, we can say:  do the work _if it mitigates your [Attendant Risks](Attendant-Risk)_.  
 
- - Logging statements are _good_, because otherwise, you're adding risk that in production, no one will be able to understand _how the software went wrong_.
+ - Logging statements are _good_, because otherwise, you're increasing the risk that in production, no one will be able to understand _how the software went wrong_.
  - However, adding them takes time, which might introduce [Schedule Risk](Schedule-Risk).
  
-So, continue adding logging statements so long as you feel that overall, you're reducing risk.
+So, it's a trade-off: continue adding logging statements so long as you feel that overall, you're reducing risk.
 
 ### Do The Simplest Thing That Could Possibly Work
 
