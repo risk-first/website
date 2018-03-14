@@ -22,9 +22,11 @@ This is Wikipedia's example:
 
 Some points about this description:
 
-### This is a Bells-and-Whistles Description.
+### This is a Bells-and-Whistles Description
 
 Remember back to the Dinner Party example at the start: the Risk Register happened *entirely in your head*.  There is a continuum all the way from "in your head" to Wikipedia's Risk Register description.  Most of the time, it's going to be in your head, or in discussion with the team, rather than written down.   
+
+Most of the value of the Risk First approach is _in conversation_.  Later, we'll have an example to show how this can work out.
 
 ### Probability And Impact
 
