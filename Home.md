@@ -32,6 +32,7 @@ Some easy-to-digest ideas that will set the scene for examining the methodologie
  - [Some Risk Theory](Risk-Theory)
  - [Meeting Reality](Meeting-Reality)
  - [Cadence](Cadence)
+ - [A Conversation](A-Conversation)
   
 ### Methdologies
 

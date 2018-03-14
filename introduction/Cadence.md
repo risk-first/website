@@ -1,14 +1,16 @@
 Let's go back to the model again, introduced in [Meeting Reality](Meeting-Reality):
 
-![Reality 2](images/reality2.png).
+![Reality 2](images/reality2.png)
 
-As you can see, it's an idealized **Feedback Loop**.  How _fast_ should we go round this loop?  Is there a right answer?  The longer you leave your [goal in mind](Goal-In-Mind), the longer it'll be before you find out how it really stacks up against reality.  
+As you can see, it's an idealized **Feedback Loop**.  
 
-Testing your [goals in mind](Goal-In-Mind) against reality early and safely is how you'll manage risk effectively, and to do this, you need to create these **Feedback Loops**:
+How _fast_ should we go round this loop?  Is there a right answer?  The longer you leave your [goal in mind](Goal-In-Mind), the longer it'll be before you find out how it really stacks up against reality.  
+
+Testing your [goals in mind](Goal-In-Mind) against reality early and safely is how you'll manage risk effectively, and to do this, you need to set up **Feedback Loops**. e.g.
 
  - **Bug Reports and Feature Requests** tell you how the users are getting on with the software.
  - [Monitoring Tools and Logs](Production-Risk) allow you to find out how your software is doing in reality.
- - **Dog-Fooding** (i.e using the software you write yourself) can be faster though.
+ - **Dog-Fooding** i.e using the software you write yourself might be faster than talking to users.
  - [Continuous Delivery](DevOps) (CD) is about putting software into production as soon as it's written.   
  - **Integration Testing** is a faster way of meeting _some_ reality than continually deploying code and re-testing it manually.
  - **Unit Testing** is a faster feedback loop than Integration Testing. 
@@ -20,7 +22,7 @@ Testing your [goals in mind](Goal-In-Mind) against reality early and safely is h
 
 This list is arranged so that at the top, we have the most visceral, most _real_ feedback loop, but at the same time, the slowest.   
 
-At the bottom, compilation is checking your [Internal Model](Internal-Model) in real time in a good IDE.  So, this is the fastest loop, but it's the most _limited_ reality.
+At the bottom, a good IDE can inform you about errors in your [Internal Model](Internal-Model) in real time, by way of highlighting compilation errors .  So, this is the fastest loop, but it's the most _limited_ reality.
 
 Imagine for a second that you had a special time-travelling machine.  With it, you could make a change to your software, and get back a report from the future listing out all the issues people had faced using it over its lifetime, instantly.
 
@@ -37,12 +39,14 @@ If you're doing it over and over, this is a terrible waste of time.  And, you ge
 The [Testing Pyramid](http://www.agilenutshell.com/episodes/41-testing-pyramid) hints at this truth: 
 
 - **Unit Tests** have a _fast feedback loop_, so have _lots of them_.
-- **Integration Tests** have a slightly _slower feedback loop_, so have _few of them_.   Use them when you can't write unit tests.
+- **Integration Tests** have a slightly _slower feedback loop_, so have _few of them_.   Use them when you can't write unit tests (at the application boundaries).
 - **Manual Tests** have a _very slow feedback loop_, so have _even fewer of them_.  Use them as a last resort.
 
 ### Production
 
-You could take this section to mean that [Continuous Delivery](DevOps) (CD) is always and everywhere a good idea.  I _guess_ that's not a bad take-away, but it's clearly more nuanced than that:  yes, CD will give you faster feedback loops, but getting things into production is not the whole story:   the feedback loop isn't complete until people have used the code, and reported back to the development team.  
+You could take this section to mean that [Continuous Delivery](DevOps) (CD) is always and everywhere a good idea.  I _guess_ that's not a bad take-away, but it's clearly more nuanced than that.  
+
+Yes, CD will give you faster feedback loops, but getting things into production is not the whole story:   the feedback loop isn't complete until people have used the code, and reported back to the development team.  
 
 The right answer is to use the fastest feedback loop possible, _which actually does give you feed back_.
 
@@ -62,26 +66,8 @@ Let's look at the journey so far:
  
  - Then, generalizing the lessons of the Development Process article, we examined the idea that [Meeting Reality](Meeting-Reality) frequently helps flush out [Hidden Risks](Attendant-Risk) and improve your [Internal Model](Internal-Model).
  
- - Finally, above, we looked at **Cadence**, and how feedback loops allow you Navigate the Risk Landscape more effectively, by showing you more quickly when you're going wrong.
+ - Finally, above, we looked at [Cadence](Cadence), and how feedback loops allow you Navigate the Risk Landscape more effectively, by showing you more quickly when you're going wrong.
  
 What this has been building towards is supplying us with a vocabulary with which to communicate to our team-mates about which Risks are important to us, which actions we believe are the right ones, and which tools we should use.
 
-Let's have a look at an example of how this might work:
-
-## A Risk Conversation
-
-
- 
- 
-
-
-
-
-
-This seems like progress.  However, when we work on a team, we want to pick up actions and just _get stuff done_ without having to debate the finer points of each risk over and over again.  
-
-This is where process comes in.   It's time to look at some [Methodologies](Methodologies).
-
-
-
- 
+Let's have a [look at an example](A-Conversation) of how this might work:
