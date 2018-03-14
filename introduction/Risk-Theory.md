@@ -16,6 +16,10 @@ A [Risk Register](https://en.wikipedia.org/wiki/Risk_register) can help with thi
 > - The Risk Score (or Risk Rating) is the multiplication of Probability and Impact and is often used to rank the risks.
 > - Common mitigation steps (e.g. within IT projects) are Identify, Analyze, Plan Response, Monitor and Control.
 
+This is Wikipedia's example:
+
+![Wikipedia Risk Register](images/WikipediaRiskRegister2.png)
+
 Some points about this description:
 
 ### This is a Bells-and-Whistles Description.
@@ -28,7 +32,6 @@ Sometimes, it's better to skip these, and just figure out a Risk Score.  This is
 
 **Risk-First** takes a view that risks are a continuous quantity, more like _money_ or _water_:  by taking an action before delivering a project you might add a degree of [Schedule Risk](Schedule-Risk), but decrease the [Production Risk](Production-Risk) later on by a greater amount.   
 
-Even having a quantified **Risk Score** might be giving a false sense of precision:  as well as being a continuous quantity, it's _never_ possibly to fully figure out how something in the future might impact you.  So, you might want to consider ratings, like **HIGH**, **MEDIUM** or **LOW** which are a lot easier for a team to agree on.
 
 ## Graphical Analysis
 
