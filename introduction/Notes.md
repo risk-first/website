@@ -1,11 +1,4 @@
 
-Risk Management is the process of thinking out corrective actions before a problem occurs, while it's still an abstraction.  
-The opposite of risk management is crisis management, trying to figure out what to do about the problem after it happens.
- - waltzing with bears
- 
- 
- **Fifth**, and finally, the wake-up call _is_ reality:   as we'll see in the next section.
-I need to model this in kite9
 
 
 Diagram - where the outcome goes, where the hidden risks go.

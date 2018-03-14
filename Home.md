@@ -31,7 +31,6 @@ Some easy-to-digest ideas that will set the scene for examining the methodologie
  - [A Software Project Scenario](Software-Project-Scenario)
  - [Some Risk Theory](Risk-Theory)
  - [Meeting Reality](Meeting-Reality)
- - [Software Risks](Software-Risks)
   
 ### Methdologies
 
@@ -55,6 +54,7 @@ This is a m
  - [Testing](Testing)
  - [Minimizing The Downside](Minimizing-The-Downside)
  - [Issue Tracking](Issue-Tracking)
+ - [Software Risks](Software-Risks)
  
 ### Menagerie
 

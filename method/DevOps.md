@@ -1,3 +1,3 @@
 
 
-Continuous Delivery
+Continuous Delivery (https://devops.com/often-release-continuous-delivery/)
