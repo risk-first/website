@@ -31,6 +31,7 @@ Some easy-to-digest ideas that will set the scene for examining the methodologie
  - [A Software Project Scenario](Software-Project-Scenario)
  - [Some Risk Theory](Risk-Theory)
  - [Meeting Reality](Meeting-Reality)
+ - [Finishing Up](Finishing Up)
   
 ### Methdologies
 

@@ -2,13 +2,11 @@ In this section, I am going to introduce the idea that everything you do on a so
 
 In the [last section](Development-Process), we observed that all the activities in a simple methodology had a part to play in exposing different risks.  They worked to manage risk prior to them creating bigger problems in production.
 
-Here, we'll look at one of the tools in the Project Manager's toolbox, the [RAID Log](http://pmtips.net/blog-new/raid-logs-introduction).
+Here, we'll look at one of the tools in the Project Manager's toolbox, the [RAID Log](http://pmtips.net/blog-new/raid-logs-introduction), and observe how risk-centric it is.
 
 ## RAID Log
 
-Many project managers will be familiar with the [RAID Log](http://pmtips.net/blog-new/raid-logs-introduction).
-
-This is a set of four lists:
+Many project managers will be familiar with the [RAID Log](http://pmtips.net/blog-new/raid-logs-introduction).  It's simply four columns on a spreadsheet:
 
  - Risks
  - Actions
@@ -17,23 +15,20 @@ This is a set of four lists:
  
 Let's try and put the following [Attendant Risk](Attendant-Risk) into the RAID Log:
 
-> Debbie needs to visit the client to get them to choose the Logotype to use on the product, otherwise we can't size the screen areas exactly.
+> Debbie needs to visit the client to get them to choose the logo to use on the product, otherwise we can't size the screen areas exactly.
 
-So, is this an **action**?   Certainly.  There's definitely something for Debbie to do here. 
-  
-Is it an **issue**?  Yes, because it's holding up the screen-areas sizing thing. 
-
-Is it a **decision**?  Well, clearly, it's a decision for someone.
-
-Is it a **risk**?  Probably:  Debbie might go to the client and they _still_ don't make a decision.  What then?
+ - So, is this an **action**?   Certainly.  There's definitely something for Debbie to do here. 
+ - Is it an **issue**?  Yes, because it's holding up the screen-areas sizing thing. 
+ - Is it a **decision**?  Well, clearly, it's a decision for someone.
+ - Is it a **risk**?  Probably:  Debbie might go to the client and they _still_ don't make a decision.  What then?
 
 ## Let's Go Again
 
 This is a completely made-up example, deliberately chosen to be hard to categorize.  Normally, items are more one thing than another.  But often, you'll have to make a choice between two categories, if not all four.  
 
-This hints at the fact that at some level it's all risk:
+This hints at the fact that at some level it's All Risk:
 
-### Every Action is a Risk.  
+### Every Action Carries Risk.  
 
 - How do you know if the action will get completed?  
 - Will it overrun on time?  
@@ -41,13 +36,20 @@ This hints at the fact that at some level it's all risk:
 
 Consider _coding a feature_ (as we did in the earlier [Development Process](Development-Process) section).  We saw here how the whole process of coding was an exercise in learning what we didn't know about the world, uncovering problems and improving our [Internal Model](Internal-Model).  That is, flushing out the [Attendant Risk](Attendant-Risk) of the [Goal In Mind](Goal-In-Mind).
 
-And, as we saw in the [Introduction](Introduction), even something _mundane_ like the Dinner Party had risks.  
+And, as we saw in the [Introduction](Introduction), even something _mundane_ like the Dinner Party had risks. 
 
-### Every Issue is Also a Risk
+### An Issue is Just A Type of Risk
 
 - Because issues need to be solved...  
 - And solving an issue is an action... 
-- Which is also a risk.
+- Which, as we just saw also carry risk.
+
+One retort to this might be to say:  an issue is a problem I have now, whereas a risk is a problem that _might_ occur.  I am going to try and _break_ that mindset in the coming pages, but I'll just start with this:
+
+- Do you know _exactly_ how much damage this issue will do?
+- Can you be sure that the issue might not somehow go away?  
+
+_Issues_ then, just seem more "definite" and "now" than _risks_, right?  This classification is arbitrary:  they're all just part of the same spectrum, so stop agonising over which column to put them in.
 
 ### Every Decision is a Risk.  
 

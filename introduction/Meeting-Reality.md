@@ -43,7 +43,7 @@ This is not a criticism of MongoDB: it's simply a demonstration that sometimes, 
 
 That's what "Navigating the Risk Landscape" means.
 
-### YAGNI / WAGNI
+### YAGNI 
 
 As a flavour of what's to come, let's look at [YAGNI](https://www.martinfowler.com/bliki/Yagni.html), an acronym for You Aren't Gonna Need It.   Martin Fowler says:
 
@@ -52,7 +52,7 @@ As a flavour of what's to come, let's look at [YAGNI](https://www.martinfowler.c
 
 The idea makes sense:  if you take on extra work that you don't need, _of course_ you'll be accreting [Attendant Risks](Attendant-Risk).
 
-But, there is always the opposite opinion:  [YouAreGonnaNeedIt](http://wiki.c2.com/?YouAreGonnaNeedIt).  As a simple example, we often add log statements in our code as we write it, though following YAGNI strictly says we should leave it out.  
+But, there is always the opposite opinion:  [You Are Gonna Need It](http://wiki.c2.com/?YouAreGonnaNeedIt).  As a simple example, we often add log statements in our code as we write it, though following YAGNI strictly says we should leave it out.  
 
 #### Which is right?
 
@@ -93,7 +93,7 @@ Testing your [goals in mind](Goal-In-Mind) against reality early and safely is h
 
 .. and so on.
 
-
+Now that we've Met Reality, let's [Finish Up](Finishing-Up).
 
 
 
