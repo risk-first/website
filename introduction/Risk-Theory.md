@@ -26,7 +26,7 @@ Some points about this description:
 
 Remember back to the Dinner Party example at the start: the Risk Register happened *entirely in your head*.  There is a continuum all the way from "in your head" to Wikipedia's Risk Register description.  Most of the time, it's going to be in your head, or in discussion with the team, rather than written down.   
 
-Most of the value of the Risk First approach is _in conversation_.  Later, we'll have an example to show how this can work out.
+Most of the value of the **Risk-First** approach is _in conversation_.  Later, we'll have an example to show how this can work out.
 
 ### Probability And Impact
 
@@ -41,15 +41,15 @@ The [Wikipedia page](https://en.wikipedia.org/wiki/Risk_register) also includes 
 
 ![Wikipedia Risk Register](images/WikipediaRiskRegister1.png)
 
-This type of graphic is _helpful_ in deciding what to do next, although personally I prefer to graph the overall **Risk Score** against the **Cost of Mitigation**:   easily mitigated, but expensive risks can therefore be dealt with first (sometimes).
+This type of graphic is _helpful_ in deciding what to do next, although personally I prefer to graph the overall **Risk Score** against the **Cost of Mitigation**:   easily mitigated, but expensive risks can therefore be dealt with first (hopefully).
 
 ## Unknown Unknowns
 
 In Wikipedia's example, this ficticious BBQ has high fire risk, so one should begin mitigating there.  
 
-But, does this feel right?  One of the criticisms of the Risk Register approach is that of "mistaking the map for the territory".  
+But, does this feel right?  One of the criticisms of the Risk Register approach is that of "mistaking the map for the territory".  That is, mistakenly believing that what's on the Risk Register _is all there is_.  
 
-In the preceeding discussions, I have been careful to point out [Hidden Risks](Attendant-Risk) for that very reason. Or, to put another way:
+In the preceeding discussions, I have been careful to point out the existence of [Hidden Risks](Attendant-Risk) for that very reason. Or, to put another way:
 
 > What we don't know is what usually gets us killed 
 >     - Petyr Baelish
