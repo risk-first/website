@@ -1,4 +1,15 @@
 
+Thinking is hard.
+
+Life is too short to go around considering Risk Management over everything you do.  
+
+Usually, our brains do it for us too, subconsiously:   You might embark on some 
+
+Brushing Teeth:  you never stop.
+
+Habits -> Methodologies.
+
+So _Methodology_ exists as a way 
 
 ceremony
 practices

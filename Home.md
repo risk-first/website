@@ -56,6 +56,7 @@ This is a m
  - [Minimizing The Downside](Minimizing-The-Downside)
  - [Issue Tracking](Issue-Tracking)
  - [Software Risks](Software-Risks)
+ - [Surfacing Risks](Surfacing-Risks)
  
 ### Menagerie
 
