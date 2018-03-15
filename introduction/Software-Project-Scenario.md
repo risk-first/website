@@ -26,7 +26,7 @@ What are the [Attendant Risks](Attendant-Risk) that come with that goal?  Here a
 2. The data gets lost, stolen. 
 3. The data is wrong or corrupted
 4. There are bugs that prevent the functionality working
-5. The functionality isn’t there that the user needs.
+5. The functionality isn’t there that the user needs ([Feature Risk](Feature-Risk)).
 6. Our [Internal Model](Internal-Model) of the market is poor, and we could be building the wrong thing.
 
 I'm sure you can think of some more. 
