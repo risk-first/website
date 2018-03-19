@@ -19,7 +19,7 @@ So, let's see how this kind of recursion looks on our model. Note that here, I a
 
 Hopefully, if you've read along so far, this model shouldn't be too hard to understand.  But, how is it helpful?  
 
-## "Navigating the Risk Landscape"
+## "Navigating the [Risk Landscape](Risk-Landscape)"
 
 So, we often have multiple ways of achieving a [Goal In Mind](Goal-In-Mind).  
 
@@ -71,7 +71,7 @@ Another mantra from Kent Beck (originator of the [Extreme Programming](Agile) me
 - The reason you're taking action _at all_ is because you're trying to reduce risk elsewhere on the project 
 - Therefore, the biggest payoff is whatever action _works_ to remove that risk, whilst simultaneously picking up the least amount of new [Attendant Risk](Attendant-Risk).
 
-So, "Do The Simplest Thing That Could Possibly Work" is really a helpful guideline for Navigating the Risk Landscape.  
+So, "Do The Simplest Thing That Could Possibly Work" is really a helpful guideline for Navigating the [Risk Landscape](Risk-Landscape).  
 
 ## Summary
 

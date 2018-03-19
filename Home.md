@@ -34,7 +34,7 @@ Some easy-to-digest ideas that will set the scene for examining the methodologie
  - [Cadence](Cadence)
  - [A Conversation](A-Conversation)
   
-### Methdologies
+### Methodologies
 
 A more in-depth look at software methodologies and their opinions on software risks.
 
@@ -47,18 +47,6 @@ A more in-depth look at software methodologies and their opinions on software ri
  - [DevOps](DevOps) 
  - [12 Factor](12factor)
  
-### Specific Topics
-
-Digging down to see how risk is relevant to specific areas of the software process.
-This is a m
-
- - [Technical Debt](Technical-Debt)
- - [Testing](Testing)
- - [Minimizing The Downside](Minimizing-The-Downside)
- - [Issue Tracking](Issue-Tracking)
- - [Software Risks](Software-Risks)
- - [Surfacing Risks](Surfacing-Risks)
- 
 ### Menagerie
 
 Although we talk a lot about [Hidden Risk](Attendant-Risk) here, [Hidden Risks](Attendant-Risk) are often very similar 
@@ -67,6 +55,18 @@ across different software projects.   And, if you know about them, you can look 
  - [Devil Makes Work](Devil-Makes-Work)
  - [Technical Debt](Technical-Debt)
  - [Too Many Cooks](Too-Many-Cooks)
+ - [Software Risks](Software-Risks)
+ 
+### Specific Topics
+
+Digging down to see how risk is relevant to specific areas of the software process.
+This is a m
+
+ - [Testing](Testing)
+ - [Minimizing The Downside](Minimizing-The-Downside)
+ - [Issue Tracking](Issue-Tracking)
+ - [Surfacing Risks](Surfacing-Risks)
+ 
 
 
 ### Glossary Of Terms

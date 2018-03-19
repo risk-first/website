@@ -47,9 +47,9 @@ This type of graphic is _helpful_ in deciding what to do next, although personal
 
 In Wikipedia's example, this ficticious BBQ has high fire risk, so one should begin mitigating there.  
 
-But, does this feel right?  One of the criticisms of the Risk Register approach is that of "mistaking the map for the territory".  That is, mistakenly believing that what's on the Risk Register _is all there is_.  
+But, does this feel right?  One of the criticisms of the Risk Register approach is that of [mistaking the map for the territory](Map-And-Territory).  That is, mistakenly believing that what's on the Risk Register _is all there is_.  
 
-In the preceeding discussions, I have been careful to point out the existence of [Hidden Risks](Attendant-Risk) for that very reason. Or, to put another way:
+In the preceding discussions, I have been careful to point out the existence of [Hidden Risks](Attendant-Risk) for that very reason. Or, to put another way:
 
 > What we don't know is what usually gets us killed 
 >     - Petyr Baelish

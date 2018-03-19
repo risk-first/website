@@ -16,3 +16,7 @@ In the large
 - Integration
 - Fat Finger
 - Pair Programming
+
+
+Concurrency
+File Systems vs Databases

@@ -28,6 +28,11 @@ This is a completely made-up example, deliberately chosen to be hard to categori
 
 This hints at the fact that at some level it's All Risk:
 
+### Every Action Mitigates Risk
+
+The reason you are _taking_ an action is to mitigate a risk.  For example, if you're coing up new features in the software, this is mitigating [Feature Risk](Feature Risk).  If you're getting a business sign-off for something, this is mitigating a [Too Many Cooks](Too-Many-Cooks)-style _stakeholder risk_.  
+
+
 ### Every Action Carries Risk.  
 
 - How do you know if the action will get completed?  
