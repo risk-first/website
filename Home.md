@@ -19,6 +19,11 @@ Hopefully, after reading through some of the articles on this short website, you
 
 If you find this site useful, and want to contribute, [we need help](Contributing).
 
+## Caveats
+
+This is not intended to be a rigorously scientific work
+
+
 ## Table of Contents
 
 ### Overview

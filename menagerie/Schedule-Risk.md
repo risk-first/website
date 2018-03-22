@@ -1,9 +1,20 @@
 
 
+## Schedule Risk
+
+
+
+## Funding Risk
+
+Is this sufficiently different from Schedule risk to have a separate page?
+
+Mitigating funding risk can be all-consuming.
+
+(Maybe have a page for both)
 
 - sign offs, hard deadlines
 
-time as a risk, generally.
+time/money as a risk, generally.
 
 
 ## Student Syndrome

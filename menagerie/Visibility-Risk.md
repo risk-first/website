@@ -52,3 +52,14 @@ Programming languages fail us because they encourage us to build software that i
 In the same way as we made Java a language without memory leaks, could we make a language for describing software in a way that makes it eminently knowable?
 
 So far, I have not come across anything that does this.  But that doesn’t mean it’s impossible - just that it hasn’t even been attempted before.
+
+
+
+
+
+Manifests in other ways:
+
+- people assume invisibility risk on projects/people that don't communicate much
+- that can also lead to 
+
+- internal models differ, and they don't recocnile easily.

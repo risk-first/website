@@ -1,6 +1,8 @@
 
 
-### Sign-Offs
+### Sign-Offs and Reviews
+
+(See also review, code review)
 
 Sign-Offs are used in Waterfall after each stage.  
 
@@ -16,6 +18,10 @@ Third, they provide a written record that something was agreed.   This is useful
 
 Usually, it's hard to get sign-offs.  This is because it's hard to get lots of people to agree on _anything_.  The process often involves several walkthroughs, and iterations until everyone is happy.  Sadly, in order to bring people on board, the iterations usually involve _adding more complexity_ to the project, rather than reducing it, which has the effect of actually _increasing risk_.
 
+ 
+ ## Code Review
+ 
+ ## Sign-Off
  
 
  

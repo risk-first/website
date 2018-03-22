@@ -1,4 +1,15 @@
 
+You can't build A before you build B.
+
+Adding dependencies to a project also increases Complexity Risk.
+
+Which dependencies should you add?
+
+Code yourself or add a dependency?
+
+Cost of learning the dependency.
+
+
 
 how to choose libraries
 

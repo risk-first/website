@@ -4,7 +4,7 @@
 Risk that people believe the constructions they create.  Perhaps a kind of bureaucratic risk?
 
 
-Deliberately ignoring
+Deliberately ignoring reality, and working in models.
 
 Groupthink
 

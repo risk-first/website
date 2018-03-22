@@ -3,7 +3,10 @@ A gradient-descent approach to minimizing software risk, seen in the wild.
 
 The HSBC Story of MicroServices:
 
-- use microservices  ( no one remembers why)
+- used datafabric, initially
+- use microservices because they wanted to get away from a single point of failure
+- but, few, limited standards
+- moved away from using shared libraries because of version hell
 - you break the compiler because now everyone is using different languages
 - no consistent model of software correctness.. software evolves
 - what risks does this manage?  Why did they focus on these risks?

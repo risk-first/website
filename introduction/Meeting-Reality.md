@@ -41,6 +41,12 @@ The data storage [Attendant Risk](Attendant-Risk) was mitigated easily with Mong
 
 This is not a criticism of MongoDB: it's simply a demonstration that sometimes, the cure is worse than the disease.  Successful projects are _always_ trying to _reduce_ [Attendant Risks](Attendant-Risk).  
 
+## The Cost Of Meeting Reality
+
+You don't have to meet the whole of reality in one go - sometimes that is expensive.  But we can meet it in "limited ways".
+
+blah...
+
 ### YAGNI 
 
 As a flavour of what's to come, let's look at [YAGNI](https://www.martinfowler.com/bliki/Yagni.html), an acronym for You Aren't Gonna Need It.   Martin Fowler says:

@@ -1,15 +1,6 @@
-
-
-
-- Developers do support
-
-- Support team
-
-What's the roundtrip? Minimizing barriers to entry.
-
 ## What Is It
 
-
+Actually building your project is the way to turn 
 
 
 ## How It Works

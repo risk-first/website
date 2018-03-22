@@ -20,3 +20,5 @@ In the large
 
 Concurrency
 File Systems vs Databases
+
+Finding enough staff

@@ -78,7 +78,33 @@ Second, the opposite of "Risk Management" (or trying to minimize the "Downside")
 
 Finally, Crisis Management is _still just Risk Management_:  the crisis (Earthquake, whatever) has _happened_.  You can't manage it because it's in the past.   All you can do is Risk Manage the future (minimize further casualties and human suffering, for example).    
 
-Yes, it's fine to say "we're in crisis", but to assume there is a different strategy for dealing with it is a mistake:  this is the [Fallacy of Sunk Costs](https://en.wikipedia.org/wiki/Sunk_costs).  
+Yes, it's fine to say "we're in crisis", but to assume there is a different strategy for dealing with it is a mistake:  this is the [Fallacy of Sunk Costs](https://en.wikipedia.org/wiki/Sunk_costs). 
+
+## Value
+
+"Upside Risk" isn't a commonly used term:  industry tends to prefer "value", as in "Is this a value-add project?".  There is plenty of theory surrounding **Value**, such as Porter's [Value Chain]() and [Net Present Value]().  This is all fine so long as we remember:
+
+ - **The pay-off is risky**: Since the **Value** is created in the future, we can't be certain about it happening - we should never consider it a done-deal.  **Future Value** is always at risk.  In finance, for example, we account for this in our future cash-flows by discounting them according to the risk of default.
+ - **The pay-off amount is risky**:  Additionally, whereas in a financial transaction (like a loan, say), we might know the size of a future payment, in IT projects we can rarely be sure that they will deliver a certain return.  On some fixed-contract projects this sometimes is not true: there may be a date when the payment-for-delivery gets made, but mostly we'll be expecting an uncertain pay-off.
+ 
+ 
+## Time Value of Risk
+
+ 
+ 
+## Urgency vs Importance 
+ 
+
+## Is This Scientific?
+
+**Risk-First** is an attempt to provide a practical framework, rather than a scientifically rigorous analysis.  In fact, my view is that you should _give up_ on trying to compute risk numerically.  You _can't_ work out how long a software project will take based purely on an analysis of (say) _function points_.  (Whatever you define them to be).
+
+- First, there isn't enough evidence for an approach like this.  We _can_ look at collected data about IT projects, but [techniques and tools change](Silver-Bullets).
+- Second,  IT projects have too many confounding factors, such as experience of the teams, 
+technologies used etc.  That is, the risks faced by IT projects are _too diverse_ and _hard to quantify_ to allow for meaningful comparison from one to the next.
+- Third, as soon as you _publish a date_ it changes the expectations of the project (see [Student Syndrome](Schedule-Risk)).
+
+So, Reality is messy.  Dressing it up with numbers doesn't change that and you risk [fooling yourself](Map-And-Territory).   
 
 Reality is Reality, [so let's meet it](Meeting-Reality). 
 
