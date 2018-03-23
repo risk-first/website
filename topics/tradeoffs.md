@@ -1,9 +1,7 @@
 
 A gradient-descent approach to minimizing software risk, seen in the wild.
 
-The HSBC Story of MicroServices:
-
-- used datafabric, initially
+- used DataF, initially
 - use microservices because they wanted to get away from a single point of failure
 - but, few, limited standards
 - moved away from using shared libraries because of version hell

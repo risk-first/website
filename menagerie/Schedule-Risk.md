@@ -28,3 +28,14 @@ WHat should you do?
 c.f Waltzing with bears, which assumes that the time you'll spend on a project is _fixed_, so you need to work out the correct 
 schedule for that.  It doesn't work like this.
 
+
+## Necessity Of Dates to Managers
+
+Release trains
+
+
+
+## Red-Queen Risk
+
+
+

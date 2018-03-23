@@ -21,3 +21,6 @@ Technical Debt is also _rework_
 IT's also when, to make a change, you have to do lots of work... technical debt is like inertia... it's harder to change projects with lots of tech debt.
 
 Is technical debt _unnecessary complexity_?
+
+
+Complexity Risk is heavily mitigated by **Compilers** and **UNit Tests**.

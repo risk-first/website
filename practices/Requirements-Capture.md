@@ -1,9 +1,24 @@
 
-Requirements Capture is not a single technique, but a broad category of techniques such as:
+## What Is It
 
-- Interviews
+**Requirements Capture** is not a single technique, but a broad category of techniques such as:
+
+- **Interviews**
 - Focus Groups 
-- Prototyping
+- User Stories
+- Use Cases
+
+
+## How It Works
+
+Whatever exact methodology you are using, the aim is to meet **stakeholders** and try to capture their [Internal Models](Internal-Model) in written form.  This has a few effects:
+
+- The [Internal Models](Internal-Model) of the development team can be enriched with this new information.
+- You are capturing at a moment-in-time what people _thought_.  
+-  As with any [Documentation](Documentation), you can to some extent reconcile the [Internal Models](Internal-Model) of a wide variety of stakeholders and implementers.
+
+
+
 
 
 See also: [Terms Of Reference](Terms-Of-Reference)
@@ -28,3 +43,6 @@ The feedback loop for any design is _review_.  You can also follow review with [
 
 Steve Jobs - people don't know what they want until they see it.
 
+
+
+Elizer Yodowski - what exactly is a MVP.

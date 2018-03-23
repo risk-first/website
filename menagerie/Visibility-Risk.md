@@ -63,3 +63,5 @@ Manifests in other ways:
 - that can also lead to 
 
 - internal models differ, and they don't recocnile easily.
+
+- 3rd party contractors

@@ -9,19 +9,22 @@ Having large cycles in a waterfall project of many months or many people has bee
 
 You can see the priority Waterfall places the risks by observing the order of the steps:
 
-1.  [Cost Of Implementation](Production-Risk)
+### 1.  [Cost Of Implementation](Production-Risk)
 
 It's likely that the Waterfall-Style methodologies were inspired by the construction industry, wherein we try to [Design Up Front] in order to avoid the cost of re-work:  once concrete is poured, it's expensive to change it again, compared to the cost of updating the design in a diagram.  In the same way, 
 
-2.  [Lots Of Stakeholders](Too-Many-Cooks)
+### 2.  [Lots Of Stakeholders](Too-Many-Cooks)
 
 In any construction project, there are likely to be lots of stakeholders - landowners, neighbours, government, clients and so on.   
 Waterfall tries to mitigate this risk by getting [Sign-Offs](Sign-Off) as it goes along.
 
+### 3.  [Cost Of Testing](Testing)
+
+When Waterfall was originally conceived, automated testing techniques were not well established.  If you expect to perform a large [manual testing cycle](Testing) for each release, then clearly, few releases looks cheaper on paper.  
+
+### 4.  Need For Dates
 
 
-
-The idea of the model is that at the end of each different stage, there is a sign-off process.  
 
 According to the Wikipedia article, 
 

@@ -10,3 +10,5 @@ how to avoid dead-end projects.
 how to spot where the Goal In Mind is hopelessly ill-thought-through.
 
 CV Building
+
+- Agency Risk

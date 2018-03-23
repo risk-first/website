@@ -43,9 +43,23 @@ This is not a criticism of MongoDB: it's simply a demonstration that sometimes, 
 
 ## The Cost Of Meeting Reality
 
-You don't have to meet the whole of reality in one go - sometimes that is expensive.  But we can meet it in "limited ways".
+Meeting reality is _costly_, for example.  Going to production can look like this:
 
-blah...
+- Releasing software
+- Training users
+- Getting users to use your system
+- Gathering feedback
+
+All of these steps take a lot of effort and time.   But you don't have to meet the whole of reality in one go - sometimes that is expensive.  But we can meet it in "limited ways".  
+
+
+
+In all, to de-risk, you should try and meet reality:
+
+- **Sooner**, so you have time to mitigate the hidden risks it uncovers
+- **More Frequently**: so the hidden risks don't hit you all at once
+- **In Smaller Chunks**:
+
 
 ### YAGNI 
 

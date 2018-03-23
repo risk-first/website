@@ -25,3 +25,6 @@ In a project at work, coming across use of Hazlecast to cache the session IDs.  
 Stuck In the Middle Pattern - Scala / Raj.
 
 Using a library vs writing it yourself.  Feature risk
+
+
+Dependency Change - REST endpoints, etc.   Semantic versioning .  Hickey
