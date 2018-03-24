@@ -19,3 +19,7 @@ Requirements Drift Risk:  Risk that reality changes under you.
 cf.  Change in internal model.  Did you really understand reality when you started?
 
 Accessiblity: can everyone use it?
+
+
+
+No one knows what the features should be (Steve jobs)

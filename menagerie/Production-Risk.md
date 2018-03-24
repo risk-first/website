@@ -23,6 +23,8 @@ Quality of feedback
 Monitoring tools, logs
 
 
+reputation damage
+(you only get one chance to make a first impression)
 
 SPOFs & Correlation
 Contingency Planning
