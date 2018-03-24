@@ -79,7 +79,7 @@ There are so many different types of testing and this guide is not meant to be e
 
 |Risk|Mitigation|
 |----|----------|
-|[Boundary Risk](Boundary-Risk)             |System Integration Testing|
+|[Boundary Risk](Boundary-Risk)             |System Integration Testing<br />CI Deployment|
 |  |CI Deployment   |
 |  - Context Risk          |User Acceptance Testing |
 |  - Configuration Risk    |
