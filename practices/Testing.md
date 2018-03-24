@@ -68,10 +68,16 @@ White-box testing however considers the components within the box, and how they 
 
 ### Testing Level 
 
-However, if possible, it's better to break open the white box and test the components _themselves_.  This means you end up having "higher" and "lower" level tests, depending on the scope of the **Sytsem Under Test**.   There are several advantages to this:
+However, if possible, it's better to break open the white box and test the components _themselves_.  This means you end up having "higher" and "lower" level tests, depending on the scope of the **System Under Test**.   There are several advantages to this:
 
  - First, tests become less "brittle":   the smaller the **System Under Test**, the less **Context** it needs to operate, therefore the more insulated it is to changes in other parts of the system.   As a counter-example, if _all_ of your tests run over the whole system, and the authentication system changes, does that break all the tests?   This is an argument from [Complexity-Risk](Complexity-Risk).
  - Tests at the "whole system" level are usually longer-running since they require starting up the whole system, and also require more data and context to run.  This is an argument both from [Complexity-Risk](Complexity-Risk) and [Process Risk](Process-Risk).
+
+Expanding on this then, the [Testing Pyramid](https://martinfowler.com/bliki/TestPyramid.html) idea is that lower level, automated tests which run quickly should be common, while there should be fewer of the more expensive "whole system" level tests.  
+
+![Testing Pyramid](images/testing_pyramid.png)
+
+Finally, since manual tests are run by people (who are comparatively slow and costly), these should be the _rarest_ kind of test.
 
 ### Testing Team
 
