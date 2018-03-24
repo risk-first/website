@@ -13,9 +13,9 @@ Basically, are we building the right features.  Have we _got_ the right features
 - Ideally, mitigate Feature Risk with as little [Complexity Risk] as possible.
 
 
-Drift Risk:  Risk that reality changes under you.
+Requirements Drift Risk:  Risk that reality changes under you.
 
 
 cf.  Change in internal model.  Did you really understand reality when you started?
 
-Accessiblity
+Accessiblity: can everyone use it?

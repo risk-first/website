@@ -1,3 +1,6 @@
+In a nutshell, the difficulty you have in getting the reality of a new situation into your mental model, because the reality is obfuscated from you.
+
+
 Edit this up:
 
 This is the issue Constantin and I have been bumping up against this week.  On the one hand, Spring Boot gives you enormous power to build applications quickly and easily.  I can build REST interfaces fast, and know they are standards-compliant.  On the other hand, he doesn’t know how it works.  A simple thing to say would be: RTFM.  But, there is a deeper problem.   Software systems, in abstracting away complexity, and human convention, also abstract away visibility of how they run and operate. 

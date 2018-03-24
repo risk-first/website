@@ -52,3 +52,14 @@ a few _archetypes_ and leave it at that.
 So, let's start at the beginning then, with [Waterfall](Waterfall).
 
 
+
+
+### It's the same steps, but it's Sizing those steps:
+
+Agile is per-feature delivery,
+Waterfall is a bunch of features.
+
+But, a lot of the practices end up being the same.
+
+
+

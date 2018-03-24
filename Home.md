@@ -15,6 +15,14 @@ Hopefully, after reading through some of the articles on this short website, you
 - A recontextualization of the software process as being an exercise in mitigating different kinds of risk.
 - The tools to help you decide when a methodology is _letting you down_, and the vocabulary to argue for when it's a good idea to deviate from it.
 
+## What This is Not
+
+This site isn't going to be an exhaustive guide of every possible software development practice and methodology.  
+
+There are plenty of places you can find that information already.  Where possible, this site will link to or reference recommented further reading on each subject.
+
+Neither is this Wiki meant to be an open-ended discussion of software techniques like [Ward's Wiki](http://wiki.c2.com).  In order to be concise and useful, discussions need to be carried out by opening an issue.
+
 ## Contributing
 
 If you find this site useful, and want to contribute, [we need help](Contributing).

@@ -24,7 +24,7 @@ Monitoring tools, logs
 
 
 
-SPOFs
+SPOFs & Correlation
 Contingency Planning
 Disaster Recovery
 Datacentres
@@ -41,4 +41,6 @@ Denial Of Service
 - CAn you support all the users?  IS there enough kit?  WIll you know?
 
 
+
+Upgrades ( tell story of Research upgrade that went wrong because we were upgrading at the same time as an outage)
 

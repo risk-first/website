@@ -62,3 +62,11 @@ Sometimes, releases have a _cost_ associated with them in terms of time and bure
 
 If you are replacing an old system with a new one, incrementally replacing functionality is a good way to go when the system is complex.  However, this means that you're going to have two systems running at the same time, which is inevitably [more complex](Complexity-Risk) than just one system.  
 
+
+
+### PLanning
+
+- also  gannt chart
+- critical path
+- roadmap
+- dependency analysis

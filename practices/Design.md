@@ -21,7 +21,7 @@ In these cases, you have to _widen your horizon_ and look at where you want to g
 
 
 
-## Feedback Loops & Risks Mitigated
+## Feedback Loops & Mitigated Risks
 
 The feedback loop for any design is [Review and Sign Off](Sign-Off).
 

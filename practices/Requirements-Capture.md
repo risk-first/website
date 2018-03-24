@@ -25,11 +25,11 @@ See also: [Terms Of Reference](Terms-Of-Reference)
 
 ## Feedback Loops / Risks Mitigated
 
-Requirements Capture is itself a process of [Meeting Reality](), and in a limited way:  rather than speculatively building a piece of software and trying it out on the world, Requirements Capture allows us, cheaply, to go and see what the world _thinks_ it wants, which is much _cheaper_.
+Requirements Capture is itself a process of [Meeting Reality](), and in a limited way:  rather than speculatively building a piece of software and trying it out on the world, Requirements Capture allows us, cheaply, to go and see what the world _thinks_ it wants, which is much _cheaper_, but perhaps less accurate.
 
 ### [Feature-Risk](Feature-Risk)
 
-_Asking people what they want_ is often a way to reduce [Feature Risk](Feature-Risk) by stopping you building the wrong thing.
+_Asking people what they want_ is often a way to reduce [Feature Risk](Feature-Risk) by stopping you building the wrong thing.  
 
 ### [
 

@@ -12,3 +12,6 @@ how to spot where the Goal In Mind is hopelessly ill-thought-through.
 CV Building
 
 - Agency Risk
+
+
+Trust?  - Getting people to trust you
