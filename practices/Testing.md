@@ -48,7 +48,7 @@ Automated tests look roughly the same, irrespective of the scope they are trying
 
 ![Testing Process](images/testing_process.png)
 
-The more _automated_ a test is, the more cheaply it can be re-used.  However, the process of automation takes longer, and so adds [Schedule Risk](Schedule-Risk].  Whether or not it's worth automating is to some extend going to depend on how much you [value  future time](Risk-Theory).
+The more _automated_ a test is, the more cheaply it can be re-used.  However, the process of automation takes longer, and so adds [Schedule Risk](Schedule-Risk).  Whether or not it's worth automating is to some extend going to depend on how much you [value  future time](Risk-Theory).
 
 **Automated Testing** has an interesting effect on managing [Complexity Risk](Complexity-Risk):  Although you may initially write a Unit Test (say) to mitigate the risk of [having implemented a feature wrongly](Feature-Risk), you are also given insurance against future change breaking that feature.   That is to say, they are _regression tests_.  However, implementing tests like this is better than building regression tests, [as discussed here](Regression-Testing).
 
