@@ -28,6 +28,7 @@ This should work at _every level_ within a project.  If you are building a new f
 - Is it going to connect to third-party systems?  If so, I should build **System Integration Tests** to cover the [Dependency Risk](Dependency-Risk) associated with this, and the chance that in the future, the interface will change. 
 - Does my code do what I expect?  I probably should build a **Unit Test** to mitigate [Complexity Risk](Complexity-Risk). 
 - Will users understand the software I build for them?  I should probably do some [Beta Testing](https://en.wikipedia.org/wiki/Software_testing#Beta_testing) or [Corridor Testing](https://www.usability.gov/what-and-why/glossary/corridor-testing.html) to mitigate [Visiblity Risk](Visibility-Risk).
+- To go live, am I going to need some piece of real-world paperwork?  Test the process ahead-of-time to expose all the [Hidden Risks](Risk) 
 
 ## Where It's Used
 
