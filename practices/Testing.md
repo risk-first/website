@@ -102,11 +102,11 @@ There are so many different types of testing and this guide is not meant to be e
 |Risk|Mitigation|
 |----|----------|
 |[Boundary Risk](Boundary-Risk)             |System Integration Testing<br />CI Deployment<br />User Acceptance Testing|
-|Dependency Risk|Integration Testing<br />System Integration Testing|
-|Production Risk  |Performance Testing / Load Testing<br />Non-Functional Testing<br />Disaster Recovery Testing<br />Security Testing<br />Smoke / Sanity Testing|
-|Software Risk|Unit Testing<br />Component Testing<br />End-To-End Testing<br />Functional Testing|
-|Feature Risk|Browser-Based Testing<br />Accessibility Testing<br />Acceptance Testing (UAT)<br />Beta Testing|
-|Visibility Risk|Usability Testing<br />Corridor Testing|
+|[Dependency Risk](Dependency-Risk)|Integration Testing<br />System Integration Testing|
+|[Production Risk](Production-Risk)  |Performance Testing / Load Testing<br />Non-Functional Testing<br />Disaster Recovery Testing<br />Security esting<br />Smoke / Sanity Testing|
+|[Software Risk](Software-Risk)|Unit Testing<br />Component Testing<br />End-To-End Testing<br />Functional Testing|
+|[Feature Risk](Feature-Risk)|Browser-Based Testing<br />Accessibility Testing<br />Acceptance Testing (UAT)<br />Beta Testing|
+|[Visibility Risk](Visibility-Risk)|Usability Testing<br />Corridor Testing|
 
 ## Attendant Risks
 
