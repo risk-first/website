@@ -1,3 +1,5 @@
+#Process: Testing
+
 ## What Is It 
 
 Most forms of testing are about isolating a particular _characteristic_ of your system, and exploring it from a risk perspective.  It could be:
@@ -101,7 +103,7 @@ Sometimes code coverage spawns its own [Map And Territory Risks](Map-And-Territo
 
 Worse still is that having 100% code coverage does not guarantee an absence of bugs, or that the code will do what the users wanted it to do.  [Feature Risk](Feature-Risk) is always there.
 
-## Feedback Loops & Risks Mitigated
+## Risks Mitigated
 
 There are so many different types of testing and this guide is not meant to be exhaustive.  Instead, here is a table covering some of the main types of testing and the risks they mitigate:
 
