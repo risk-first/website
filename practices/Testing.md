@@ -68,7 +68,7 @@ White-box testing however considers the components within the box, and how they 
 
 ### Testing Level 
 
-However, if possible, it's better to break open the white box and test the components _themselves_.  There are several advantages to this:
+However, if possible, it's better to break open the white box and test the components _themselves_.  This means you end up having "higher" and "lower" level tests, depending on the scope of the **Sytsem Under Test**.   There are several advantages to this:
 
  - First, tests become less "brittle":   the smaller the **System Under Test**, the less **Context** it needs to operate, therefore the more insulated it is to changes in other parts of the system.   As a counter-example, if _all_ of your tests run over the whole system, and the authentication system changes, does that break all the tests?   This is an argument from [Complexity-Risk](Complexity-Risk).
  - Tests at the "whole system" level are usually longer-running since they require starting up the whole system, and also require more data and context to run.  This is an argument both from [Complexity-Risk](Complexity-Risk) and [Process Risk](Process-Risk).
