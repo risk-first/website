@@ -1,4 +1,3 @@
-# Process: Testing
 
 ## What Is It 
 
@@ -128,7 +127,7 @@ Second, Testing is a double-edged sword.  While it allows you to mitigate variou
 
 Third, if you are [exploring functionality](Prototyping) in order to flush out requirements, understand user behaviour or figure out performance characteristics, then there is _no point in building tests_ yet: what you are doing is exploratory at best and the extra code will [slow you down](Complexity-Risk).
 
-For these reasons, focus on writing the _smallest number of tests that mitigates the risks_.  Consider using static analysis and code coverage tools to help you work out whe
+For these reasons, focus on writing the _smallest number of tests that mitigates the risks_.  
 
 ## See Also
 
