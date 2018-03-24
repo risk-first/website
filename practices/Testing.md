@@ -43,8 +43,8 @@ Often, the decision of whether to automate a test will be based on whether or no
 
 Automated tests look roughly the same, irrespective of the scope they are trying to test.  
  - We have a **System Under Test**, which may be a single class, or a whole executable.  
- - We have some input conditions for the test, and some expected outputs.
- - When the test is executed, we compare the actual outputs with the expected ones. 
+ - We have some **Input Conditions** for the test, and some **Expectations**.
+ - When the test is executed, we compare the actual outputs with the expected ones, giving us **The Result**.
 
 ![Testing Process](images/testing_process.png)
 
