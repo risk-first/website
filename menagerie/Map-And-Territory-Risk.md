@@ -18,3 +18,9 @@ Cutting yourself off from the world and building castles in the sky.
 Focusing on number of releases, for example.  
 
 Mistaking metrics for the real thing.  Gaming metrics
+
+
+Code Coverage
+SLOC
+Function Points
+Story Points and Burndown

@@ -10,6 +10,8 @@ than in different directions.
 - having lots of people working on the same code
 
 
+timezones. languages
+
 
 ## Mitigating Actions
 

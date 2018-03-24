@@ -5,6 +5,10 @@ Most forms of testing are about isolating a particular _characteristic_ of your 
 - **Performance Testing** addresses the risk of [not being able to support all the users](Production-Risk)
 - **Usability Testing** tries to see whether people struggle to make sense of your software, usually because the assumptions of their [Internal Models](Internal-Model) differ from those embedded in the system, or that the system isn't adequately [transparent](Visibility-Risk) about it's own model.
 - **Security Testing** addresses the risk that your software could be used against you or its users [by hackers](Production-Risk).
+- **Integration Testing**:  Where we test how the software works as-a-whole, and test that it will work [with other systems](Dependency-Risk) 
+- **Corridor Testing**:  Asking a few, random people to use the system-under-test, in order to see [if it confuses them, or not](Visibility-Risk).
+- **User Acceptance Testing**:  Asking users to review new features, and make sure that they actually [do what is required](Feature-Risk)
+- **Regression Testing**: Making sure changes in new versions of the system haven't [broken functionality](Feature-Risk)
 
 ## How It Works
 
@@ -29,22 +33,12 @@ This should work at _every level_ within a project.  If you are building a new f
 
 - [Waterfall](Waterfall) initially was conceived with a long, manual testing phase to be performed on the _whole system_ after development
 - [Extreme Programming](Agile) championed the use of **Unit Tests** in order to test individual subsystems, as well as having an **On-Site Customer** to act as a testing resource when needed.
-- [Lean]
-
-## Practicalities
 
 ## Variations
 
+### Automated Tests
 
-### White-Box and Black-Box Testing
-
-
-### Testing Level (wide, narrow)
-
-
-### Automated vs Manual
-
-Often, the decision of whether to automate a test will be based on whether or not it can be expressed _objectively_.  For example, ensuring the UI "looks ok and doesn't glitch" is entirely _subjective_:  you'll need to express this in a manual test.  But checking that a REST endpoint "returns the right error code" is _objective_, and is therefore a candidate for automation.
+Often, the decision of whether to automate a test will be based on whether or not it can be expressed _objectively_.  For example, checking that a REST endpoint "returns the right error code" is _objective_, and is therefore a candidate for automation.
 
 Automated tests look roughly the same, irrespective of the scope they are trying to test.  
  - We have a **System Under Test**, which may be a single class, or a whole executable.  
@@ -53,25 +47,52 @@ Automated tests look roughly the same, irrespective of the scope they are trying
 
 ![Testing Process](images/testing_process.png)
 
-
-
-
-
 The more _automated_ a test is, the more cheaply it can be re-used.  However, the process of automation takes longer, and so adds [Schedule Risk](Schedule-Risk].  Whether or not it's worth automating is to some extend going to depend on how much you [value  future time](Risk-Theory).
 
-**Automated Testing** has an interesting effect on managing [Complexity Risk](Complexity-Risk):  Although you may initially write a Unit Test (say) to mitigate the risk of [having implemented a feature wrongly](Feature-Risk), you are also given insurance against future change breaking that feature.  
+**Automated Testing** has an interesting effect on managing [Complexity Risk](Complexity-Risk):  Although you may initially write a Unit Test (say) to mitigate the risk of [having implemented a feature wrongly](Feature-Risk), you are also given insurance against future change breaking that feature.   That is to say, they are _regression tests_.  However, implementing tests like this is better than building regression tests, [as discussed here](Regression-Testing).
 
+### Manual Tests
+
+**Manual Testing** is, at some level, essential if your product is to be used by humans.  Although UI-Automation tools such as [Selenium](https://docs.seleniumhq.org) allow you to script browser interactions, they cannot reliably catch every problem.
+
+For example, ensuring the UI "looks ok and doesn't glitch" is entirely _subjective_:  you'll need to express this in a manual test.  Manual Tests are often described in [Test Plans](https://en.wikipedia.org/wiki/Test_plan) and [Test Scripts](https://en.wikipedia.org/wiki/Test_script) in order to ensure repeatability, and manage [Process Risk](Process-Risk).
+
+Since manual tests carry much higher per-use cost to run, there is a tendency to want to save this cost by doing _fewer releases_.  After all, fewer releases means less manual testing, but this may increase [Process Risk](Process-Risk).
+
+### White-Box and Black-Box Testing
+
+In the initial conception, [Black-Box Testing](https://en.wikipedia.org/wiki/Black-box_testing) ignores the _implementation details_ of a component and tests the interface only.
+
+White-box testing however considers the components within the box, and how they interact with one another in order to define the tests.  This is _fair enough_ if, for some reason, you are unable to test the components individually for some reason:  knowing how something is implemented gives you an insight into _where the bugs will hide_, and therefore, where the risks lie.   
+
+### Testing Level 
+
+However, if possible, it's better to break open the white box and test the components _themselves_.  There are several advantages to this:
+
+ - First, tests become less "brittle":   the smaller the **System Under Test**, the less **Context** it needs to operate, therefore the more insulated it is to changes in other parts of the system.   As a counter-example, if _all_ of your tests run over the whole system, and the authentication system changes, does that break all the tests?   This is an argument from [Complexity-Risk](Complexity-Risk).
+ - Tests at the "whole system" level are usually longer-running since they require starting up the whole system, and also require more data and context to run.  This is an argument both from [Complexity-Risk](Complexity-Risk) and [Process Risk](Process-Risk).
 
 ### Testing Team
 
-Sometimes, testing is handled by external teams.  ...
+Sometimes, testing is handled by external teams (possibly in other locales).  This is often done as a cost-saving measure, but comes with some penalties such as:
+ - Increased [Bureacratic Risk](Bureaucratic-Risk) in terms of having to engage with an external company.
+ - [Agency Risk](Agency-Risk) because the testing team are a _business in their own right_, who might be more interested in the goal of making money from you than shipping your product.
+ - Obvious [Coordination Risk](Coordination-Risk) in trying to arrange work in other timezones or countries, and not having control on exactly which staff are dealing with your product.
+ - [Visibility Risk](Visibility-Risk) because at some level, the testing team need to understand _what your software is for_.
 
 ### Test-Driven Development
 
-Also called test-first development.
+Also called test-first development, the idea here is that you write the tests before the code, in order that you think up-front about the requirements of the software you are writing.  The aim of this is to minimize [Complexity Risk](Complexity-Risk) via preventing developers from [Gold Plating](https://en.wikipedia.org/wiki/Gold_plating_(software_engineering), and getting them to do [The Simplest Thing That Can Possibly Work](Meeting-Reality).
+
+Additionally, by having test _fail_ before they _pass_, you mitigate the risk of writing a "null" test (see below).
 
 ### Code Coverage
 
+Code Coverage tools are a useful way of showing you which parts of your software might contain bugs due to lack of testing, which is really useful in the **Risk Evaluation** phase of test-planning.  
+
+Sometimes code coverage spawns its own [Map And Territory Risks](Map-And-Territory-Risk) though, where people forget that the goal should be mitigating overall project risk (via delivering functionality and so forth) and start to believe that the goal is delivering 100% code coverage.  Writing tests to cover every `get()` method is a fools' errand which increases the overall [codebase complexity](Complexity-Risk) for no real reduction in [Feature Risk](Feature Risk).
+
+Worse still is that having 100% code coverage does not guarantee an absence of bugs, or that the code will do what the users wanted it to do.  [Feature Risk](Feature-Risk) is always there.
 
 ## Feedback Loops & Risks Mitigated
 
@@ -79,74 +100,12 @@ There are so many different types of testing and this guide is not meant to be e
 
 |Risk|Mitigation|
 |----|----------|
-|[Boundary Risk](Boundary-Risk)             |System Integration Testing|
-|  |CI Deployment   |
-|  - Context Risk          |User Acceptance Testing |
-|  - Configuration Risk    |
-|  - Production Secret Risk|
-|------------------------|----------------------------|
-|Dependency Risk
-| - On Other Teams
-| - On Unwritten Software
-|- On 3rd Party Libraries## Attendant Risks
-|------------------------|----------------------------|
-|Production Risk  |
-| - Reputation Risk|
-| - Data Theft|
-| - Security Risk|
-| - Failures |
-| - SPOFs|
-
-
-
-
-
-- Risks caused by using these practices
-
-
-## What Is It
-
-There are an enormous number of different ways to test software, and the reason for having so many different ways is that they all cover different technical circumstances and risks.  Let's look at just a few:
-
-
-
-Because each addresses a different risk, the technique for each is different.
-
-
-
-## How It Works
-
-
-
-##
-
-
-
-### Unit Testing
-
-### Integration Testing
-
-Where we test a few classes, or a small amount of code.  
-- **Integration Testing**:  Where we test how the software works as-a-whole, and test that it will work with other systems 
-- **Corridor Testing**:  Asking a few, random people to use the system-under-test, in order to see if it confuses them, or not.
-- **User Acceptance Testing**:  Asking users to review new features, and make sure that 
-- **Regression Testing**
-
-|
-
-
-Test plans / design
-
-
-
-## Feedback Loops & Risks Mitigated
-
-[Meeting Reality](Meeting-Reality), in test terms means setting up a _fixture_:   
-
-[Testing Picture]()
-
-The _entire environment_ (or the reality, if you will) of the test is fixed, and controlled.  We can then examine how the system being tested behaves within this environment.  This is why we often use the term _Mock_ in testing: we are asking something else to stand in for reality.
-
+|[Boundary Risk](Boundary-Risk)             |System Integration Testing<br />CI Deployment<br />User Acceptance Testing|
+|Dependency Risk|Integration Testing<br />System Integration Testing|
+|Production Risk  |Performance Testing / Load Testing<br />Non-Functional Testing<br />Disaster Recovery Testing<br />Security Testing<br />Smoke / Sanity Testing|
+|Software Risk|Unit Testing<br />Component Testing<br />End-To-End Testing<br />Functional Testing|
+|Feature Risk|Browser-Based Testing<br />Accessibility Testing<br />Acceptance Testing (UAT)<br />Beta Testing|
+|Visibility Risk|Usability Testing<br />Corridor Testing|
 
 ## Attendant Risks
 
