@@ -81,7 +81,7 @@ Finally, since manual tests are run by people (who are comparatively slow and co
 
 ### Testing Team
 
-Sometimes, testing is handled by external teams (possibly in other locales).  This is often done as a cost-saving measure, but comes with some penalties such as:
+Sometimes, testing is handled by external teams (possibly in other locales).  This is often done as a [cost-saving measure](Schedule-Risk), but comes with some penalties such as:
  - Increased [Bureacratic Risk](Bureaucratic-Risk) in terms of having to engage with an external company.
  - [Agency Risk](Agency-Risk) because the testing team are a _business in their own right_, who might be more interested in the goal of making money from you than shipping your product.
  - Obvious [Coordination Risk](Coordination-Risk) in trying to arrange work in other timezones or countries, and not having control on exactly which staff are dealing with your product.
