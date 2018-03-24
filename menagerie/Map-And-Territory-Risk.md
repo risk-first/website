@@ -24,3 +24,6 @@ Code Coverage
 SLOC
 Function Points
 Story Points and Burndown
+
+
+Drinking the Coolaid - when you advertise your own metrics and then believe in them (which is Agency Risk now).
