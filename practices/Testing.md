@@ -83,7 +83,7 @@ Sometimes, testing is handled by external teams (possibly in other locales).  Th
 
 ### Test-Driven Development
 
-Also called test-first development, the idea here is that you write the tests before the code, in order that you think up-front about the requirements of the software you are writing.  The aim of this is to minimize [Complexity Risk](Complexity-Risk) via preventing developers from [Gold Plating](https://en.wikipedia.org/wiki/Gold_plating_(software_engineering), and getting them to do [The Simplest Thing That Can Possibly Work](Meeting-Reality).
+Also called test-first development, the idea here (from [Extreme Programming](Extreme-Programming) is that you write the tests before the code, in order that you think up-front about the requirements of the software you are writing.  The aim of this is to minimize [Complexity Risk](Complexity-Risk) via preventing developers from [Gold Plating](https://en.wikipedia.org/wiki/Gold_plating_(software_engineering)), and getting them to do [The Simplest Thing That Can Possibly Work](Meeting-Reality).
 
 Additionally, by having test _fail_ before they _pass_, you mitigate the risk of writing a "null" test (see below).
 
