@@ -13,7 +13,7 @@ Most forms of testing are about isolating a particular _characteristic_ of your 
 
 ## How It Works
 
-- (need a new type of diagram for this)
+![Testing Process](images/dev_process_test.png)
 
 The whole purpose of testing is to [meet reality](Meeting-Reality) early, ahead of putting software in front of real users, where you face [Production Risks](Production-Risk), like reputation damage and financial penalties.
 
