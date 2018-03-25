@@ -49,7 +49,7 @@ Automated tests look roughly the same, irrespective of the scope they are trying
 
 ![Testing Process](images/testing_process.png)
 
-The more _automated_ a test is, the more cheaply it can be re-used.  However, the process of automation takes longer, and so adds [Schedule Risk](Schedule-Risk).  Whether or not it's worth automating is to some extend going to depend on how much you [value  future time](Risk-Theory).
+A useful way to think about automated testing is that it turns the **System Under Test** into a [Pure Function](https://en.wikipedia.org/wiki/Pure_function):  This means that for a specific set of inputs, the system will produce a specific output, reliably, every time.   Getting complex systems to behave as pure functions can be costly, but there are techniques to help with this such as _mocking_.  However, if you try to devise as much of your software in a pure-functional way to start with, automated testing is much easier.
 
 **Automated Testing** has an interesting effect on managing [Complexity Risk](Complexity-Risk):  Although you may initially write a Unit Test (say) to mitigate the risk of [having implemented a feature wrongly](Feature-Risk), you are also given insurance against future change breaking that feature.   That is to say, they are _regression tests_.  However, implementing tests like this is better than building regression tests, [as discussed here](Regression-Testing).
 
@@ -60,6 +60,8 @@ The more _automated_ a test is, the more cheaply it can be re-used.  However, th
 For example, ensuring the UI "looks ok and doesn't glitch" is entirely _subjective_:  you'll need to express this in a manual test.  Manual Tests are often described in [Test Plans](https://en.wikipedia.org/wiki/Test_plan) and [Test Scripts](https://en.wikipedia.org/wiki/Test_script) in order to ensure repeatability, and manage [Process Risk](Process-Risk).
 
 Since manual tests carry much higher per-use cost to run, there is a tendency to want to save this cost by doing _fewer releases_.  After all, fewer releases means less manual testing, but this may increase [Process Risk](Process-Risk).
+
+How do you decide whether to keep a test manual, or automate?  The more _automated_ a test is, the more cheaply it can be re-used.  However, the process of automation can take longer, and so adds [Schedule Risk](Schedule-Risk).  Whether or not it's worth automating is to some extend going to depend on how much you [value future time](Risk-Theory).
 
 ### White-Box and Black-Box Testing
 
