@@ -34,7 +34,7 @@ This should work at _every level_ within a project.  If you are building a new f
 ## Where It's Used
 
 - [Waterfall](Waterfall) initially was conceived with a long, manual testing phase to be performed on the _whole system_ after development
-- [Extreme Programming](Agile) championed the use of **Unit Tests** in order to test individual subsystems, as well as having an **On-Site Customer** to act as a testing resource when needed.
+- [Extreme Programming](Agile) championed the use of [Unit Tests](https://en.wikipedia.org/wiki/Unit_testing) in order to test individual subsystems, as well as having an [On-Site Customer](On-Site-Customer) to act as a testing resource when needed.
 
 ## Variations
 
