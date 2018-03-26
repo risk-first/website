@@ -16,6 +16,7 @@ After _any_ activity, you can perform a retrospective.  Level of formality may v
 
 - Post Incident Review
 
+- decision making processes, ego
 
 
 ### Sign-Offs and Reviews

@@ -68,14 +68,24 @@ One assumption of Prototyping is that Users can iterate towards The Perfect Prod
 
 ### Automating
 
+Automation is one of the key practices of [DevOps](DevOps) - the idea that people in general are poor at repeatable tasks, and anything people do repeatedly _should_ be automated.  This is mitigating [Process Risk](Process-Risk) at the expense of attendant [Complexity Risk](Complexity-Risk) and [Schedule Risk](Schedule-Risk).
 
+Since this is a trade-off, you have to be careful about how you weigh the [Process Risk](Process-Risk):  clearly, it exists _into the future_, and you are making a bet that increased risk now will pay off in decreased [Process Risk](Process-Risk) over the lifetime of the project.  This is a hard thing to judge:
+ - How long will the mitigation last before the process changes again?
+ - How much [Process Risk](Process-Risk) are we carrying, week-to-week?  (A good way to answer this is to look at past-performance).
+ - How much [Complexity Risk](Complexity-Risk) will we gain?
+
+### Tool Use
+ 
+In general, unless the problem is somehow _specific to your circumstances_ it may well be better to skip direct coding and pick up some new tools.
  
 
 ### Refactoring
 
-- Dead end risk too
 
-### Learning
+
+
+- Tools, compilers, dependency risk.
 
 ### Benchmarking
 
