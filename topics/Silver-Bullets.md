@@ -62,7 +62,7 @@ To put my software in front of users, I don’t have to send them a CD with a cl
 
 Even just the improvements to browsers over the last ten years have been huge.   Anyone remember programming for IE4 or 5?  
 
-Epilogue
+## Epilogue
 
 Brooks signs off the book in an epilogue called “Fifty Years of Wonder, Excitement, and Joy”.  And he’s totally right.  The silver bullets are coming thick and fast.  I expect to see golden bullets in my lifetime.  As he says:
 
