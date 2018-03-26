@@ -79,7 +79,8 @@ Automation is one of the key practices of [DevOps](DevOps) - the idea that peopl
 Since this is a trade-off, you have to be careful about how you weigh the [Process Risk](Process-Risk):  clearly, it exists _into the future_, and you are making a bet that increased risk now will pay off in decreased [Process Risk](Process-Risk) over the lifetime of the project.  This is a hard thing to judge:
  - How long will the mitigation last before the process changes again?
  - How much [Process Risk](Process-Risk) are we carrying, week-to-week?  (A good way to answer this is to look at past failures).
- - How much [Complexity Risk](Complexity-Risk) will we gain?
+ - How much [Complexity Risk](Complexity-Risk) will we pick up?
+ - How much [Schedule Risk](Schedule-Risk) (in spent developer effort) will we pick up?
 
 ### Tool Use
  
