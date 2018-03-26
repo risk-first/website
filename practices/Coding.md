@@ -8,16 +8,14 @@ Often, this can be called "programming", "hacking" or "development", although th
 
 ## How It Works
 
-In [Development Process](Development-Process) we introduced the following diagram to show what is happening when we do some coding:
-
-![Coding](images/dev_process_code.png)
-
-Let's generalize a bit from this diagram:
+In [Development Process](Development-Process) we introduced the following diagram to show what is happening when we do some coding.  Let's generalize a bit from this diagram:
 
 - We start with a [Goal In Mind](Goal-In-Mind) to implement _something_.
 - We build an [Internal Model](Internal-Model) of how we're going to meet this goal (though coding, naturally)
 - Then, we find out how well our idea stands up when we [Meet Reality](Meet-Reality) and try it out in our code-test-run-debug cycle.
 - As we go, the main outcome is that we change reality, and create code, but along the way, we discover where our [Internal Model](Internal-Model) was wrong, in the form of surfacing [Hidden Risks](Hidden-Risks).
+
+![Coding](images/dev_process_code.png)
 
 As with any [Practice](Practices), we are coding to minimize [Attendant Risks](Risk).  We might want...
 
