@@ -19,11 +19,11 @@ In [Development Process](Development-Process) we introduced the following diagra
 
 As with any [Practice](Practices), we are coding to minimize [Attendant Risks](Risk).  We might want...
 
-- **To Build** or improve some features which our clients will find useful. [Feature Risk](Feature-Risk)
-- **To Automate** some process that takes too long or is too arduous. [Process Risk](Process-Risk)
-- **To Explore** how our tools, systems or dependencies work (also called [Hacking]()). [Dependency Risk](Dependency-Risk)
-- **To Refactor** our codebase, to reduce complexity. [Complexity Risk](Complexity-Risk)
-- **To Clarify** our product, making our software more _presentable_ and _easier to understand_.  [Communication Risk](Communication-Risk)
+- **To Build** or improve some features which our clients will find useful. -- [Feature Risk](Feature-Risk)
+- **To Automate** some process that takes too long or is too arduous.  -- [Process Risk](Process-Risk)
+- **To Explore** how our tools, systems or dependencies work (also called [Hacking]()). -- [Dependency Risk](Dependency-Risk)
+- **To Refactor** our codebase, to reduce complexity. -- [Complexity Risk](Complexity-Risk)
+- **To Clarify** our product, making our software more _presentable_ and _easier to understand_.  -- [Communication Risk](Communication-Risk)
 
 ... and so on.   As usual, the advice is to _reduce risk_ in the most meaningful way possible, all the time.  This might involve coding _or it might not_.
 
