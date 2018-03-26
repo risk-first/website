@@ -40,18 +40,18 @@ You could argue that the choice of _platform_ is also going to limit access:  wr
 
 The point is:  [Requirements captured](Requirements-Capture) _today_ might not make it to _tomorrow_, especially in the fast-paced world of IT.  
 
-**Feature Drift Risk** is _not the same thing_ as **Requirements Drift**, which is the tendency projects have to expand in scope as they go along.  There are lots of reasons they do that, one key one being the [Hidden Risks](Risk) uncovered on the project as it progresses.
+**Feature Drift Risk** is _not the same thing_ as **Requirements Drift**, which is the tendency projects have to expand in scope as they go along.  There are lots of reasons they do that, a key one being the [Hidden Risks](Risk) uncovered on the project as it progresses.
 
 ### Fashion
 
-Fashion plays a big part in IT, as this [infographic shows](https://designers.hubspot.com/blog/the-history-of-web-design-infographic).  True, websites have got easier to use as time has gone by, and users now expect this.  Also, bandwidth is greater now, which means we can afford more media and code on the client side.  However, _fashion_ has a part to play in this.  
+Fashion plays a big part in IT, as this [infographic on website design shows](https://designers.hubspot.com/blog/the-history-of-web-design-infographic).  True, websites have got easier to use as time has gone by, and users now expect this.  Also, bandwidth is greater now, which means we can afford more media and code on the client side.  However, _fashion_ has a part to play in this.  
 
 
-By being _fashionable_, websites are communicating:   _this is a new thing_, _this is relevant_, _this is not terrible_:  all of which is mitigating a [Communication Risk](Communication-Risk):  Users are all-too-aware that the internet is awash with terrible, abandonware sites that are going to waste their time.  How can you avoid communicating that to your users?
+By being _fashionable_, websites are communicating:   _this is a new thing_, _this is relevant_, _this is not terrible_:  all of which is mitigating a [Communication Risk](Communication-Risk).  Users are all-too-aware that the Internet is awash with terrible, abandon-ware sites that are going to waste their time.  How can you communicate that you're not one of them to your users?
 
 ### Delight
 
-If this breakdown of **Feature Risk** seems reductive, then try not to think of it that way:  the aim _of course_ should be to delight users, and turn them into fans.  That's a laudable goal, but should be treated in the usual Risk-First way:  pick the biggest risk you can mitigate next.   
+If this breakdown of **Feature Risk** seems reductive, then try not to think of it that way:  the aim _of course_ should be to delight users, and turn them into fans.  That's a laudable [Goal](Goal-In-Mind), but should be treated in the usual Risk-First way:  _pick the biggest risk you can mitigate next_.   
 
 Consider **Feature Risk** from both the up-side and the down-side:  
  - What are we missing?
