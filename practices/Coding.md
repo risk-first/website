@@ -65,7 +65,9 @@ The problem here is that this is a very _protracted feedback loop_.  This is mit
  - By working together, you mitigate [Communication Risk](Communication-Risk)
  - By focusing on one or two elements (such as UI design), you can minimize [Schedule Risk](Schedule-Risk)
  
-One assumption of Prototyping is that **User**s can iterate towards **The Perfect Product**.  But it might not be so:   the Conceptual gap between their own ideas and what they really _need_ might prove too great.  After all, bridging this gap is the job of the [Designer](Design):
+One assumption of Prototyping is that **User**s can iterate towards **The Perfect Product**.  But it might not be so:   the Conceptual gap between their own ideas and what they really _need_ might prove too great.  
+
+After all, bridging this gap is the job of the [Designer](Design):
 
 > “It's really hard to design products by focus groups. A lot of times, people don't know what they want until you show it to them.”
 > — Steve Jobs 
