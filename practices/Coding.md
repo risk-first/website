@@ -77,7 +77,24 @@ Since this is a trade-off, you have to be careful about how you weigh the [Proce
 
 ### Tool Use
  
-In general, unless the problem is somehow _specific to your circumstances_ it may well be better to skip direct coding and pick up some new tools.
+In general, unless the problem is somehow _specific to your circumstances_ it may well be better to skip direct coding and pick up some new tools to help with the job.  For Automation, say, tools are a different trade off:  you are mitigating [Process Risk](Process-Risk) in return for [Dependency Risk](Dependency-Risk) and some smaller amounts of:
+ - [Communication Risk](Communication-Risk) because now you (and the rest of the team) have to understand the tool.
+ - [Schedule Risk](Schedule-Risk) in the time it takes to learn and integrate the tool.
+ - [Complexity Risk](Complexity-Risk) because your project necessarily becomes more complex for the addition of the tool.
+
+Tools in general are _good_ and _worth using_ if they offer you a better risk return than you would have had from not using them.  But, this is a low bar -  some tools offer _amazing_ returns on investment.  The [Silver Bullets](Silver-Bullets) article describes in general some of these: 
+ - Assemblers
+ - Compilers
+ - Garbage Collection
+ - Type Systems
+ - Libraries
+ - Build Tools
+ - etc.
+
+A _really good tool_ offers such advantages that not using it becomes _unthinkable_:  Linux is heading towards this point.   For Java developers, the JVM is there already.  
+
+
+Picking new tools should be done **very carefully**:  you may be stuck with your choices for some time.  Here is my short guide to doing this. 
  
 
 ### Refactoring
