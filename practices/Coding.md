@@ -36,11 +36,11 @@ Since the focus of this site is on _software methodologies_, you shouldn't be su
 
 ### Building Features
 
-Most commonly, the reason we are **Coding** is same as the one in the [Development Process](Development-Process) page: we want to put features in the hands of our customers, and so we want to mitigate [Feature Risk](Feature-Risk): that is, our clients don't have the features they need to see in the software.  
+Most commonly, the reason we are **Coding** is same as the one in the [Development Process](Development-Process) page: we want to put features in the hands of our customers, i.e. we want to mitigate [Feature Risk](Feature-Risk).  That is, we believe our clients don't have the features they need to see in the software.  
 
 By coding, we are mitigating [Feature Risk](Feature-Risk) in exchange for [Complexity Risk](Complexity-Risk) in terms of the extra code we now have on the project, and [Schedule Risk](Schedule-Risk), because by spending time or money coding we now have less time or money to do other things.
 
-Bill Gates once said:
+> “Measuring programming progress by lines of code is like measuring aircraft building progress by weight.” - Bill Gates
 
 And you can see _why_ this is true:  the more code you write, the more [Complexity Risk](Complexity-Risk) you now have on the project, and the more [Dead End Risk](Dead-End-Risk) you've picked up in case it's wrong.
 
@@ -80,8 +80,6 @@ But at the same time, we need to consider that
 
 Too Many Cooks?
 
-
-Pair Programming
 
 
 ## See Also
