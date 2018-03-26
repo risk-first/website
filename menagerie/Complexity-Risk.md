@@ -34,3 +34,8 @@ This is an _antipractice_ where idle people will add [Complexity Risk](Complexit
 gold plating software engineering
 
 Complexity Risk is heavily mitigated by **Compilers** and **UNit Tests**.
+
+Complexity risk isn't bad in itself, but it's inertia that slows us down.
+Starting a new project is always easier than continuing an existing one.  And, more exciting.
+
+uSers and data add to complexity risk, especially hetrogenous requirements from lots of different users - should you add users like this?

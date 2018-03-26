@@ -24,7 +24,8 @@ As with any [Practice](Practices), we are coding to minimize [Attendant Risks](R
 - **To Build** or improve some features which our clients will find useful. [Feature Risk](Feature-Risk)
 - **To Automate** some process that takes too long or is too arduous. [Process Risk](Process-Risk)
 - **To Explore** how our tools, systems or dependencies work (also called [Hacking]()). [Dependency Risk](Dependency-Risk)
-- **To Refactor** our codebase, to make our software simpler. [Complexity Risk](Complexity-Risk)
+- **To Refactor** our codebase, to reduce complexity. [Complexity Risk](Complexity-Risk)
+- **To Clarify** our product, making our software more _presentable_ and _easier to understand_.  [Communication Risk](Communication-Risk)
 
 ... and so on.   As usual, the advice is to _reduce risk_ in the most meaningful way possible, all the time.  This might involve coding _or it might not_.
 
@@ -46,21 +47,29 @@ And you can see _why_ this is true:  the more code you write, the more [Complexi
 
 ### Prototyping
 
-Users often have trouble _conceiving_ of what they want in software, let alone _explaining_ that to developers in any meaningful way.  Let's look at how that can happen.  Imagine for a moment, that there was such a thing as The Perfect Product.  It doesn't exist 
+Users often have trouble _conceiving_ of what they want in software, let alone _explaining_ that to developers in any meaningful way.  Let's look at how that can happen.  Imagine for a moment, that there was such a thing as The Perfect Product, and a User wants to build it with a Coder:
+ - The Perfect Product might be _conceptually elusive_, and it might take several attempts for the User to find it's form. [Conceptual Integrity Risk](Feature-Risk)
+ - It might be hard for the User to _communicate_ the idea of it in writing or words:  where do the buttons go? What do they do?  What are the key abstractions?  [Communication Risk](Communication-Risk)
+ - It might be hard too, for the Coder to work with this description.  Since his [Internal Model](Internal-Model) is different from the User's, they have different ideas about the _meaning_ of what the User is communicating.  [Communication Risk](Communication-Risk)
+ - Then, implementing the idea of whatever is in the Coder's [Internal Model](Internal-Model) takes _effort_, and therefore involves [Schedule Risk](Schedule-Risk)
+ - Finally, we have a feedback loop, so the User can improve their [Internal Model](Internal-Model) and see the previously unforeseen [Hidden Risks](Risk).
+ - Then, you can go round again.
 
-Perfect Product - User's Conception Of It's Design - User's Understanding Of It - User's Explanation Of It - Developer's Understanding Of the Explanation - Developer's Ability To Implement It. 
+![Coding Communication Risks](images/coding-communication-risk.png)
 
+The problem here is that this is a very _protracted feedback loop_.  This is mitigated by prototyping, because that's all about shortening the feedback loop as far as possible:  
+ - By working together, you mitigate [Communication Risk](Communication-Risk)
+ - By focusing on one or two elements (such as UI design), you can minimize [Schedule Risk](Schedule-Risk)
+ 
+One assumption of Prototyping is that Users can iterate towards The Perfect Product.  But it might not be so:   the Conceptual gap between their own ideas and what they really _need_ might prove too great.  After all, bridging this gap is the job of the [Designer](Design):
 
-Steve Jobs - users don't know what they want until they see it.
-
-
-
-Sometimes, we will code to reduce [Communication Risk](Communication-Risk) by making our software more _presentable_ and _easier to understand_.  
-
-
-But at the same time, we need to consider that  
+> “It's really hard to design products by focus groups. A lot of times, people don't know what they want until you show it to them.”
+> — Steve Jobs 
 
 ### Automating
+
+
+ 
 
 ### Refactoring
 
