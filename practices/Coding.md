@@ -47,7 +47,11 @@ And you can see _why_ this is true:  the more code you write, the more [Complexi
 
 ### Prototyping
 
-Users often have trouble _conceiving_ of what they want in software, let alone _explaining_ that to developers in any meaningful way.  Let's look at how that can happen.  Imagine for a moment, that there was such a thing as The Perfect Product, and a User wants to build it with a Coder:
+Users often have trouble _conceiving_ of what they want in software, let alone _explaining_ that to developers in any meaningful way.  
+
+Let's look at how that can happen.  
+
+Imagine for a moment, that there was such a thing as The Perfect Product, and a User wants to build it with a Coder:
  - The Perfect Product might be _conceptually elusive_, and it might take several attempts for the User to find it's form. [Conceptual Integrity Risk](Feature-Risk)
  - It might be hard for the User to _communicate_ the idea of it in writing or words:  where do the buttons go? What do they do?  What are the key abstractions?  [Communication Risk](Communication-Risk)
  - It might be hard too, for the Coder to work with this description.  Since his [Internal Model](Internal-Model) is different from the User's, they have different ideas about the _meaning_ of what the User is communicating.  [Communication Risk](Communication-Risk)
@@ -55,7 +59,7 @@ Users often have trouble _conceiving_ of what they want in software, let alone _
  - Finally, we have a feedback loop, so the User can improve their [Internal Model](Internal-Model) and see the previously unforeseen [Hidden Risks](Risk).
  - Then, you can go round again.
 
-![Coding Communication Risks](images/coding-communication-risk.png)
+![Coding Communication Risks](images/coding_communication_risk.png)
 
 The problem here is that this is a very _protracted feedback loop_.  This is mitigated by prototyping, because that's all about shortening the feedback loop as far as possible:  
  - By working together, you mitigate [Communication Risk](Communication-Risk)
