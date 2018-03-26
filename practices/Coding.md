@@ -84,8 +84,12 @@ Since this is a trade-off, you have to be careful about how you weigh the [Proce
 
 ### Tool Use
  
-In general, unless the problem is somehow _specific to your circumstances_ it may well be better to skip direct coding and pick up some new tools to help with the job.  For Automation, say, tools are a different trade off:  you are mitigating [Process Risk](Process-Risk) in return for [Dependency Risk](Dependency-Risk) and some smaller amounts of:
- - [Communication Risk](Communication-Risk) because now you (and the rest of the team) have to understand the tool.
+In general, unless the problem is somehow _specific to your circumstances_ it may well be better to skip direct coding and pick up some new tools to help with the job.  
+
+Tools are a different trade off to automation:  
+ - You are mitigating [Process Risk](Process-Risk) in return for..
+ - New [Dependency Risk](Dependency-Risk) on the new tool.
+ - [Communication Risk](Communication-Risk) because now the team has to understand the tool.
  - [Schedule Risk](Schedule-Risk) in the time it takes to learn and integrate the tool.
  - [Complexity Risk](Complexity-Risk) because your project necessarily becomes more complex for the addition of the tool.
 
