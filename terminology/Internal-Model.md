@@ -1,4 +1,13 @@
-An **Internal Model** is the model of reality that you carry around in your head.  
+An **Internal Model** is the model of reality that you or I carry around in our heads.   You can regard the concept of **Internal Model** as being what you _know_ and what you _think_ about a certain situation.
+
+Obviously, because we've all had different experiences, everyone will have a different **Internal Model** of reality.  We all have different 
+
+It's all a fiction.
+ 
+
+## Individuals
+
+
 
 ## Teams
 
@@ -7,12 +16,6 @@ a slightly different **Internal Model**.
 
 Probably, you'll talk with the people on your team, and discuss the differences in your models to try and get everyone consistent.
 
-## It Consists Of...
-
- - The [goal](Goal-In-Mind) you're trying to get to
- - The [risks you foresee](Attendant-Risk) to that goal
- - And how you evaluate those risks
- 
  
 ## Code
 

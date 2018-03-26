@@ -68,3 +68,7 @@ Manifests in other ways:
 - internal models differ, and they don't recocnile easily.
 
 - 3rd party contractors
+
+- code is hard to read, but software is hard to use.
+
+COmmunication Risk

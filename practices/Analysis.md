@@ -1,4 +1,4 @@
 
 
 SWOT
-Cost-BEnefit Analysis
+Cost-Benefit Analysis

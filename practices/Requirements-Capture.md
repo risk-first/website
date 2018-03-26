@@ -1,5 +1,6 @@
-
 ## What Is It
+
+
 
 **Requirements Capture** is not a single technique, but a broad category of techniques such as:
 
@@ -18,6 +19,13 @@ Whatever exact methodology you are using, the aim is to meet **stakeholders** an
 -  As with any [Documentation](Documentation), you can to some extent reconcile the [Internal Models](Internal-Model) of a wide variety of stakeholders and implementers.
 
 
+
+## Variations
+
+### Structured Requirements
+
+
+### Use Cases
 
 
 

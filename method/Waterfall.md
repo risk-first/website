@@ -18,15 +18,15 @@ As shown in the diagram above, the software process is broken into distinct stag
 
 ### Variations
 
-- [Prototyping](Spike-Solution):  Picking a particularly high-risk part of the project (such as UI elements) and delivering it first.  
-- [Business Case](Cost-Benefit-Analysis): Adding a stage in the at the start of the project to perform some benefits calculations.
+- [Prototyping](Prototyping):  Picking a particularly high-risk part of the project (such as UI elements) and delivering it first.  
+- [Business Case](Analysis): Adding a stage in the at the start of the project to perform some benefits calculations.
 - [Cycles](Prioritisation): Delivering in multiple, incremental stages.
 
 ## Risks Mitigated
 
 ### 1.  [Cost Of Implementation](Schedule-Risk)
 
-It's likely that the Waterfall-Style methodologies were inspired by the construction industry, wherein we try to [Design Up Front] in order to avoid the cost of re-work:  once concrete is poured, it's expensive to change it again, compared to the cost of updating the design in a diagram.   
+It's likely that the Waterfall-Style methodologies were inspired by the construction industry, wherein we try to [Design Up Front](Design) in order to avoid the cost of re-work:  once concrete is poured, it's expensive to change it again, compared to the cost of updating the design in a diagram.   
 
 Also, when Waterfall was originally conceived, automated testing techniques were not well established.  If you expect to perform a large [manual testing cycle](Testing) for each release, then clearly, doing fewer releases looks cheaper on paper.  
 
@@ -35,6 +35,7 @@ But, while _in principle_, Waterfall aims to _contain_ the cost of implementatio
 ### 2.  [Lots Of Stakeholders](Coordination-Risk)
 
 In any construction project, there are likely to be lots of stakeholders - landowners, neighbours, government, clients and so on.   
+
 Waterfall tries to mitigate this risk by getting [Sign-Offs](Sign-Off) as it goes along.
 
 Additionally, by putting in the work at the planning and design stage, hopefully this means lots of staff can work together and not interfere with each other when the time for construction comes.

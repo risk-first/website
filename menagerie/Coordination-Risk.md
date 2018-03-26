@@ -18,7 +18,7 @@ timezones. languages
  - [Sign Off](Sign-Off) is useful when you need people to agree on something at a point in time.
  - [Documentation]
  - [Stand Up Meeting]
- - 
+ - [Pair Programming]
  
  People feel left out if they don't have a say
  

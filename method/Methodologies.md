@@ -15,13 +15,14 @@ When it sticks, a methodology embeds a set of practices in a team to such an ext
 
 ## A Pattern Language
 
-Diagram:  How this fits:  methodology - practice (action) - attendant risks, vs risks mitigated 
+![A Pattern Language](images/pattern.png)
 
 It stands to reason that if [all software is about risk management](All-Risk-Management), then we can examine methodologies 
 _themselves_ in terms of how their practices mitigate risk, and change the balance of risk on projects.  
 
 With that in mind, we are going to examine several methodologies, and break them down into their key _practices_.  For each practice, we will look at which [attendant risks](Attendant-Risk) it mitigates, and what [attendant risks](Attendant-Risk) it incurs.
 
+!Show similarity between pattern and practice
 
 
 
