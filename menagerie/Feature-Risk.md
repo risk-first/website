@@ -3,13 +3,15 @@
 You could also call it **Functionality Risk**.  
 
 **Feature Risk** is the risk that you face by _not having features that your clients need_.  
+
 Eventually, this will come down to lost money, business, acclaim, or whatever else reason you are doing your project for.
 
 So, in a way, **Feature Risk** is very fundamental:  if there were _no_ feature risk, the job would be done already, either
 by you, or by another product.  
 
-As a simple example, if your needs are served perfectly by Microsoft Excel, then you don't have any **Feature Risk**.  However,
-the day you find Microsoft Excel wanting, and decide to build an Add-On is the day when you first appreciate some **Feature Risk**.
+As a simple example, if your needs are served perfectly by Microsoft Excel, then you don't have any **Feature Risk**.  
+
+However, the day you find Microsoft Excel wanting, and decide to build an Add-On is the day when you first appreciate some **Feature Risk**.
 
 ## Variations
 
@@ -18,7 +20,7 @@ the day you find Microsoft Excel wanting, and decide to build an Add-On is the d
 This is the one we've just discussed above: the feature that you (or your clients) want to use in the software _isn't there_.   Now, as usual, you could call this an issue, but we're calling it a [Risk](Risk) because it's not clear exactly _how many_ people are affected, or how badly. 
 
  - This might manifest itself as complete _absence_ of something you need, e.g "Where is the word count?"  
- - It could be that the implementation isn't complete enough ("why can't I add really long numbers in this calculator?")
+ - It could be that the implementation isn't complete enough, e.g "why can't I add really long numbers in this calculator?"
 
 ### Features Don't Work Properly
 
