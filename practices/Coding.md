@@ -30,7 +30,7 @@ As with any [Practice](Practices), we are coding to minimize [Attendant Risks](R
 
 ## Where It's Used
 
-Since the focus of this site is on _software methodologies_, you shouldn't be surprised to learn that _all_ of the methodologies use **Coding** as a central focus.  And [Programming M10R](PM) considers this to be _the only_ practice you should do (I hope the view expressed here comes across as more nuanced).  
+Since the focus of this site is on _software methodologies_, you shouldn't be surprised to learn that _all_ of the methodologies use **Coding** as a central focus.  ...And [Programming M10R](PM) considers this to be _the_ practice that matters.  
 
 ## Variations
 

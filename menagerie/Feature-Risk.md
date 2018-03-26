@@ -28,6 +28,18 @@ This is the one we've just discussed above: the feature that you (or your client
 
 (At this point, it's worth pointing out that sometimes, _the user expects the wrong thing_.  This is a different but related risk, which could be down to [Training](Training) or [Documentation](Documentation) or simply [Poor User Interface](Communication-Risk) and we'll look at that more in [Communication Risk](Communication-Risk).)
 
+### Conceptual Integrity Risk
+
+Sometimes, users _swear blind_ that they need some feature or other, but it runs at odds with the design of the system, and plain _doesn't make sense_.   Often, the development team can spot this kind of conceptual failure as soon as it enters the [Backlog](Prioritisation), however, sometimes it's only during coding that this becomes apparent.  
+
+Sometimes, it can go for a lot longer.  I once worked on some software that was built as a scoreboard within a chat application.  However, after we'd added much-asked-for commenting and reply features to our scoreboard, we realised we'd implemented a chat application _within a chat application_, and had wasted our time enormously.  
+
+Which leads to [Greenspun's 10th Rule](https://en.wikipedia.org/wiki/Greenspun's_tenth_rule):
+
+> Any sufficiently complicated C or Fortran program contains an ad-hoc, informally-specified, bug-ridden, slow implementation of half of Common Lisp.
+
+This is a particularly pernicious kind of **Feature Risk** which can only be mitigated by good [Design](Design).
+
 ### Feature Access Risk
 
 Sometimes, features can work for some people and not others:  this could be down to [Accessibility](https://en.wikipedia.org/wiki/Accessibility) issues, language barriers or localization.   
