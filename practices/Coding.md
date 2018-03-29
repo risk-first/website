@@ -237,7 +237,7 @@ or
 
 > "**Refactoring (n)**: a change made to the internal structure of software to make it easier to understand and cheaper to modify without changing its observable behavior""  -- [Refactoring.com](https://www.refactoring.com)
 
-Fowler's definition clearly leaves the question of what is "improving the design" open for discussion.  Whilst Refactoring.com's points to "easier to understand" (which makes sense) and "cheaper to modify" (which could mean anything).  
+Fowler's definition clearly leaves the question of what is "improving the design" open for discussion, whilst Refactoring.com's points to "easier to understand" (which makes sense) and "cheaper to modify" (which could mean anything).  
 
 Let's try and be more specific.   With Refactoring, we are trying to:
 
