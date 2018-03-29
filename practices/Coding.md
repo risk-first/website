@@ -47,7 +47,7 @@ By coding, we are mitigating [Feature Risk](Feature-Risk) in exchange for [Compl
 
 And you can see _why_ this is true:  the more code you write, the more [Complexity Risk](Complexity-Risk) you now have on the project, and the more [Dead End Risk](Complexity-Risk) you've picked up in case it's wrong.  This is why [The Agile Manifesto]() stresses:
 
-> Simplicity--the art of maximizing the amount of work not done--is essential.
+> "Simplicity -the art of maximizing the amount of work not done- is essential."  [Agile Manifesto](http://agilemanifesto.org/)
 
 ### Prototyping
 
@@ -74,8 +74,7 @@ One assumption of Prototyping is that **Users** can iterate towards **The Perfec
 
 After all, bridging this gap is the job of the [Designer](Design):
 
-> “It's really hard to design products by focus groups. A lot of times, people don't know what they want until you show it to them.”
-> — Steve Jobs 
+> “It's really hard to design products by focus groups. A lot of times, people don't know what they want until you show it to them.” — Steve Jobs 
 
 ### SkunkWorks
 
@@ -140,7 +139,9 @@ In the extreme, I've seen situations where the team at one location has decided 
 
 When this happens, it's because somehow the team feel that [Coordination Risk](Coordination-Risk) is more unmanageable than [Schedule Risk](Schedule-Risk).
 
-There are some mitigations here:  moving staff from location-to-location on business trips, frequent [show-and-tell](Review), or simply modularizing accross geographic boundaries, in respect of [Conway's Law](Coordination-Risk).
+There are some mitigations here:  moving staff from location-to-location on business trips, frequent [show-and-tell](Review), or simply modularizing accross geographic boundaries, in respect of [Conway's Law](Coordination-Risk):
+
+> "organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations."  — _[M. Conway](https://en.wikipedia.org/wiki/Conway%27s_law)_
 
 When we add **Outsourcing** into the mix, we also have to consider [Agency Risk](Agency-Risk).  As Kent Beck says:
 
