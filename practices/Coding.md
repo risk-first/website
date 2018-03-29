@@ -206,8 +206,7 @@ You are making a bet that increased risk now will pay off in decreased [Process 
  
 In general, unless the problem is somehow _specific to your circumstances_ it may well be better to skip direct coding and pick up some new tools to help with the job.  
 
-Tools are a different trade off to automation:  
- - You are mitigating [Process Risk](Process-Risk) in return for..
+Tools are a different trade off to automation.  You are mitigating [Process Risk](Process-Risk) in return for:
  - New [Dependency Risk](Dependency-Risk) on the new tool.
  - [Communication Risk](Communication-Risk) because now the team has to understand the tool.
  - [Schedule Risk](Schedule-Risk) in the time it takes to learn and integrate the tool.
