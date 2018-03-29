@@ -231,7 +231,7 @@ Picking new tools and libraries should be done **very carefully**:  you may be s
 
 Most coders use the phrase "refactoring", and intuitively understand what it is.  It shouldn't have been hard to find a clear explanation for this page, but sadly it was.  There are some very woolly definitions of "refactoring" around.  Such as:
 
-> "Refactoring is a controlled technique for improving the design of an existing code base. " - _[Martin Fowler](https://martinfowler.com/books/refactoring.html)
+> "Refactoring is a controlled technique for improving the design of an existing code base. " - _[Martin Fowler](https://martinfowler.com/books/refactoring.html)_
 
 or 
 
