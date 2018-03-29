@@ -143,13 +143,12 @@ There are some mitigations here:  moving staff from location-to-location on busi
 
 > "organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations."  — _[M. Conway](https://en.wikipedia.org/wiki/Conway%27s_law)_
 
-When we add **Outsourcing** into the mix, we also have to consider [Agency Risk](Agency-Risk).  As Kent Beck says:
-
-> 
+When we add **Outsourcing** into the mix, we also have to consider [Agency Risk](Agency-Risk):  the consultancy you've hired is _definitely_ more interested in keeping themselves solvent than solving your business problems.
 
 As team sizes grow, [Coordination Risk](Coordination-Risk) grows fast.  To see this, let's consider a made-up situation where all the developers are equal, and we can mitigate [Coordination Risk](Coordination-Risk) at the cost of a 1-hour presentation each per week.  How many man-hours of presentations do we need?
 
 |Team Size|Hours Of Presentations|Man-Hours In Presentations|
+|---------|----------------------|--------------------------|
 |1        |0                     |0                         |  
 |2        |2                     |4                         |
 |3        |3                     |9                         |
@@ -158,10 +157,9 @@ As team sizes grow, [Coordination Risk](Coordination-Risk) grows fast.  To see t
 |6        |6                     |36                        |
 |7        |7                     |49                        |
 
-
 Adding the 7th person to the team (ceteris paribus) does absolutely _nothing_ for productivity, it makes matters worse: assuming everyone works a 40-hour week, we're now 9 hours worse off than before.   
 
-This is a toy example, but is it better or worse than this in reality.  If the new developers are arriving on an existing project, then 1 hour-per-week of training by the existing team members might be conservative.  This is why we get [Brooks' Law](https://en.wikipedia.org/wiki/Brooks%27s_law): 
+This is a _toy example_, but is it better or worse than this in reality.  If the new developers are arriving on an existing project, then 1 hour-per-week of training by the existing team members might be conservative.  This is why we get [Brooks' Law](https://en.wikipedia.org/wiki/Brooks%27s_law): 
 
 > "adding human resources to a late software project makes it later".
 
