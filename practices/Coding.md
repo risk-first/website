@@ -119,7 +119,7 @@ In the main, [Review](Review) is the main way to mitigate [Coordination Risk](Co
  
 **Pair Programming** however _combines_ the review with the process of coding: there are now two heads at each terminal.  What does this achieve?  
  - Clearly, we mitigate [Key-Man Risk](Coordination-Risk) as we've got two people doing every job.  
- - Knowledge is transferred at the same time, too, mitigating [Specialist-Risk](Coordination-Risk).  
+ - Knowledge is transferred at the same time, too, mitigating [Specialist Risk](Coordination-Risk).  
  - Proponents also argue that this mitigates [Complexity Risk](Complexity-Risk), as the software will be better quality.
  - Since the pair spend _so much time together_, the communication is very _high bandwidth_, so this mitigates [Communication Risk](Communication-Risk)
  
