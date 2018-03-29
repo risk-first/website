@@ -147,7 +147,11 @@ When we add **Outsourcing** into the mix, we also have to consider [Agency Risk]
 
 ### Team Size
 
-As team sizes grow, [Coordination Risk](Coordination-Risk) grows fast.  To see this, let's consider a made-up situation where all the developers are equal, and we can mitigate [Coordination Risk](Coordination-Risk) at the cost of a 1-hour presentation each per week.  How many man-hours of presentations do we need?
+As team sizes grow, [Coordination Risk](Coordination-Risk) grows fast.  
+
+To see this, let's consider a made-up situation where all the developers are equal, and we can mitigate [Coordination Risk](Coordination-Risk) at the cost of a 1-hour presentation each per week.  
+
+How many man-hours of presentations do we need?
 
 |Team Size|Hours Of Presentations|Man-Hours In Presentations|
 |---------|----------------------|--------------------------|
