@@ -196,7 +196,7 @@ Repetitive work of any kind is a [Process Risk](Process-Risk), and can be mitiga
 
 Since this is a trade-off, you have to be careful about how you _weigh_ the [Process Risk](Process-Risk):  clearly, it exists _into the future_.  
 
-You are making a bet that increased risk now will pay off in decreased [Process Risk](Process-Risk) over the lifetime of the project.  This is a hard thing to judge:
+You are making a bet that acting now will pay off in decreased [Process Risk](Process-Risk) over the lifetime of the project.  This is a hard thing to judge:
  - How much [Process Risk](Process-Risk) are we carrying, week-to-week?  (A good way to answer this is to look at past failures).
  - How much [Complexity Risk](Complexity-Risk) will we pick up?
  - How much [Schedule Risk](Schedule-Risk) (in spent developer effort) will we pick up?
