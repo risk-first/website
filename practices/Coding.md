@@ -89,6 +89,8 @@ To give some idea of the [Conceptual Integrity Risk](Feature-Risk) involved, ini
 
 Scott Forstall picked a small, secret team from within the ranks of Apple.  By doing this, he mitigated [Communication Risk](Communication-Risk) and [Coordiation Risk](Coordiation-Risk) _within his team_, but having fewer people in the room meant more [Throughput Risk](Schedule-Risk).
 
+By having more people involved, the feedback loop will be longer than the two-man prototyping team, but that's the tradeoff you get for mitigating those other risks.
+
 ### Specialization
 
 One of the problems with a **Skunkworks** approach is that you end up with more [Coordination Risk](Coordination-Risk) than you'd like, as teams end up with different [Internal Models](Internal-Model) and different [Goals](Goal-In-Mind).  
