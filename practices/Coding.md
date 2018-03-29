@@ -93,7 +93,7 @@ By having more people involved, the feedback loop will be longer than the two-ma
 
 ### Specialization
 
-One of the problems with a **Skunkworks** approach is that you end up with more [Coordination Risk](Coordination-Risk) than you'd like, as your different skunk-teams end up with different [Internal Models](Internal-Model) and different [Goals](Goal-In-Mind).  
+One of the problems with a **SkunkWorks** approach is that you end up with more [Coordination Risk](Coordination-Risk) than you'd like, as your different skunk-teams end up with different [Internal Models](Internal-Model) and different [Goals](Goal-In-Mind).  
 
 In large companies, this is called [Silo Mentality](https://en.wikipedia.org/wiki/Information_silo) - the tendency for lines of business to stop communicating and sharing with one another.  As you can imagine, this leads to a more [Complex](Complexity-Risk) and [bureaucratic](Bureaucratic-Risk) structure than would be optimal.
 
