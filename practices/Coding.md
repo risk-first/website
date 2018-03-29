@@ -171,7 +171,7 @@ This is why we get [Brooks' Law](https://en.wikipedia.org/wiki/Brooks%27s_law):
 
 > "adding human resources to a late software project makes it later".  - [Fred Brooks, _The Mythical Man-Month_](https://en.wikipedia.org/wiki/Brooks%27s_law)
 
-We'll come back to Brooks later.  But you can see that this law is founded in an appreciation of [Coordination Risk](Coordination-Risk).  But the argument from [Coordination Risk](Coordination-Risk) _adds nuance_, and explains when this is true and when it isn't.
+You can see that this law is founded in an appreciation of [Coordination Risk](Coordination-Risk).  But the argument from [Coordination Risk](Coordination-Risk) _adds nuance_, and explains when this is true and when it isn't.
 
 ### Too Many Cooks
 
