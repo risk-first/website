@@ -17,7 +17,7 @@ In [Development Process](Development-Process) we introduced the following diagra
 
 ![Coding](images/dev_process_code.png)
 
-### Mitigated Risks
+## Examples
 
 As with any [Practice](Practices), we are coding to minimize [Attendant Risks](Risk).  We might want...
 
@@ -249,3 +249,14 @@ On **Refactoring**, Kent Beck says:
 > "If a programmer sees a one-minute ugly way to get a test working and a ten-minute way to get it working with a simpler design, the correct choice is to spend the ten minutes. " -- Kent Beck, _Extreme Programming Explained_
 
 This is a bold, not-necessarily-true assertion, but you can see how it's motivated:  Kent is saying that the nine extra minutes of [Schedule Risk](Schedule-Risk) are _nothing_ compared to the carry cost of [Complexity Risk](Complexity-Risk) on the project.
+
+## Risks Mitigated / Attendant Risks
+
+tbdd
+
+## Attendant Risks
+
+tbd
+
+## See Also
+

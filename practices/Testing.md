@@ -24,6 +24,8 @@ Given this, the best approach to test planning should be risk-based: consider wh
  - Prioritise Risks
  - Plan tests from the top of the priority list down.
  
+## Examples
+ 
 This should work at _every level_ within a project.  If you are building a new feature, you should consider:
 
 - Is it going to connect to third-party systems?  If so, I should build [System Integration Tests](https://en.wikipedia.org/wiki/System_integration_testing) to cover the [Dependency Risk](Dependency-Risk) associated with this, and the chance that in the future, the interface will change. 
