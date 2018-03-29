@@ -249,5 +249,3 @@ On **Refactoring**, Kent Beck says:
 > "If a programmer sees a one-minute ugly way to get a test working and a ten-minute way to get it working with a simpler design, the correct choice is to spend the ten minutes. " -- Kent Beck, _Extreme Programming Explained_
 
 This is a bold, not-necessarily-true assertion, but you can see how it's motivated:  Kent is saying that the nine extra minutes of [Schedule Risk](Schedule-Risk) are _nothing_ compared to the carry cost of [Complexity Risk](Complexity-Risk) on the project.
-
-## See Also
