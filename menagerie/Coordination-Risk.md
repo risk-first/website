@@ -10,10 +10,15 @@ than in different directions.
 - having lots of people working on the same code
 
 
+-- not knowing exactly what everyone else is doing
+
+
 timezones. languages
 
 
 ## Mitigating Actions
+
+- Communication, obvs.
 
  - [Sign Off](Sign-Off) is useful when you need people to agree on something at a point in time.
  - [Documentation]
@@ -26,6 +31,20 @@ timezones. languages
  
  ## Staff Risk
  
+ milestones.
+ 
  
 - people leaving, taking their internal models with them
-- training time
+- training time (Learning-Curve Risk)
+- ability levels  (Specialist-Risk)
+- learning new tools and techniques (Learning-Curve Risk)
+
+
+
+- Fungibility vs Specialisation 
+
+- Team Building: forming, norming, storming etc.  [Team Risk]
+
+- People don't get on.  (recent experience)  -- literature about this.
+
+- Skill Level

@@ -94,8 +94,11 @@ In exactly th
  
 ## Urgency vs Importance 
 
+
 ## Discounting the Future To Zero
- 
+
+- more pressure, heavier discounting
+pooh bear 
 
 ## Is This Scientific?
 

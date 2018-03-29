@@ -5,6 +5,8 @@
 -- reviews, generally
 -- code review
 -- sign off / approvals
+-- training sessions
+-- presentations
 
 Also, Post IMplementation Review
 

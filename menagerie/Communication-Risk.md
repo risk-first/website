@@ -58,6 +58,14 @@ So far, I have not come across anything that does this.  But that doesn’t mean
 
 
 
+Communication Risk is the risk of communication between two entities _going wrong_, due to loss or misunderstanding.
+If we had identical knowledge, there would be no [Coordination Risk](Coordination-Risk), and also no [Communication Risk](Communication-Risk).
+
+If we want to create some commonality between our [Internal Models](Internal-Model), we have to communicate, and that is
+risky.  (reading and writing, listening and speaking are communication).
+
+
+- bandwidth:  higher == less communication risk
 
 
 Manifests in other ways:
@@ -72,3 +80,5 @@ Manifests in other ways:
 - code is hard to read, but software is hard to use.
 
 COmmunication Risk
+
+Silo thinking - Conway's law.

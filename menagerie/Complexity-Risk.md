@@ -25,7 +25,7 @@ Technical Debt is also _rework_
 
 IT's also when, to make a change, you have to do lots of work... technical debt is like inertia... it's harder to change projects with lots of tech debt.
 
-Is technical debt _unnecessary complexity_?
+Is technical debt _unnecessary complexity_?  
 
 ## Devil makes work
 This is an _antipractice_ where idle people will add [Complexity Risk](Complexity-Risk) to your project
@@ -39,3 +39,32 @@ Complexity risk isn't bad in itself, but it's inertia that slows us down.
 Starting a new project is always easier than continuing an existing one.  And, more exciting.
 
 uSers and data add to complexity risk, especially hetrogenous requirements from lots of different users - should you add users like this?
+
+Inertia
+
+- You could describe complexity risk as inertia.   
+- If you're carrying a lot of complexity, it makes the project _hard to change_.
+- If you're _scared of making changes_ it's _hard to change_.
+
+Testing and Code coverage (and compilation) _mitigate_ inertia, because it gives you the confidence to make change without having the entire project in your head.
+
+
+Dead end risk
+
+## Summary
+
+Dead-End Risk is where you build functionality that you _think_ is useful, only to find out later that actually, it was 
+a dead-end, and is superceded by something else.
+
+Sometimes, the path from your starting point to your goal on the [Risk Landscape](Risk-Landscape) will take you to dead ends:  places 
+where the only way towards your destination is to lose something, and do it again another way.
+
+## Examples
+
+-- The Re-write
+
+
+## Mitigating Practices
+
+[Design](Big-Design
+

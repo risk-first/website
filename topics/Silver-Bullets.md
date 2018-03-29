@@ -1,6 +1,6 @@
 In the original “Mythical Man-Month”, 1975, Fred Brooks (who said many very insightful things also) posited:
 
-“There is no single development, in either technology or management technique, which by itself promises even one order-of-magnitude improvement within a decade in productivity, in reliability, in simplicity"
+> “There is no single development, in either technology or management technique, which by itself promises even one order-of magnitude improvement within a decade in productivity, in reliability, in simplicity"
 
 Many years ago, I bought the 20th Anniversary Edition of “The Mythical Man-Month” and read the essay  '“No Silver Bullet” Refired’.  (So that would have been 1995).  In this, Fred talks about the potential Silver Bullet of re-use, and is cautiously optimistic. 
 

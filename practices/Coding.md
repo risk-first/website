@@ -17,6 +17,8 @@ In [Development Process](Development-Process) we introduced the following diagra
 
 ![Coding](images/dev_process_code.png)
 
+### Mitigated Risks
+
 As with any [Practice](Practices), we are coding to minimize [Attendant Risks](Risk).  We might want...
 
 - **To Build** or improve some features which our clients will find useful. -- [Feature Risk](Feature-Risk)
@@ -43,7 +45,9 @@ By coding, we are mitigating [Feature Risk](Feature-Risk) in exchange for [Compl
 
 > “Measuring programming progress by lines of code is like measuring aircraft building progress by weight.” - Bill Gates
 
-And you can see _why_ this is true:  the more code you write, the more [Complexity Risk](Complexity-Risk) you now have on the project, and the more [Dead End Risk](Dead-End-Risk) you've picked up in case it's wrong.
+And you can see _why_ this is true:  the more code you write, the more [Complexity Risk](Complexity-Risk) you now have on the project, and the more [Dead End Risk](Complexity-Risk) you've picked up in case it's wrong.  This is why [The Agile Manifesto]() stresses:
+
+> Simplicity--the art of maximizing the amount of work not done--is essential.
 
 ### Prototyping
 
@@ -64,6 +68,7 @@ Imagine for a moment, that there was such a thing as **The Perfect Product**, an
 The problem here is that this is a very _protracted feedback loop_.  This is mitigated by prototyping, because that's all about shortening the feedback loop as far as possible:  
  - By working together, you mitigate [Communication Risk](Communication-Risk)
  - By focusing on one or two elements (such as UI design), you can minimize [Schedule Risk](Schedule-Risk)
+ - By having a tight feedback loop, you can focus on _iteration_, try lots of ideas, and work through [Conceptual Integrity Risk](Feature-Risk). 
  
 One assumption of Prototyping is that **User**s can iterate towards **The Perfect Product**.  But it might not be so:   the Conceptual gap between their own ideas and what they really _need_ might prove too great.  
 
@@ -72,15 +77,117 @@ After all, bridging this gap is the job of the [Designer](Design):
 > “It's really hard to design products by focus groups. A lot of times, people don't know what they want until you show it to them.”
 > — Steve Jobs 
 
+### Skunkworks
+
+The [SkunkWorks](https://en.wikipedia.org/wiki/Skunk_Works) approach is one small step up from **Prototyping**.  Wikipedia describes this as:
+
+>  A group within an organization given a high degree of autonomy and unhampered by bureaucracy, with the task of working on advanced or secret projects
+
+The idea here is _again_ to minimze the length of the feedback loop, and focus on (Design)[Design] and [Conceptual Integrity Risk](Feature-Risk).  It was in this kind of small, secret team that the [iPhone was invented](https://www.networkworld.com/article/2159873/smartphones/apple-s-iphone--the-untold-story.html).  
+
+To give some idea of the [Conceptual Integrity Risk](Feature-Risk) involved, initially, the team were building a _tablet_ using the multi-touch technology that the iPhone introduced to the world, but pivoted towards the phones after the failure of the "Apple Phone" collaboration with Motorola.
+
+Scott Forstall picked a small, secret team from within the ranks of Apple.  By doing this, he mitigated [Communication Risk](Communication-Risk) and [Coordiation Risk](Coordiation-Risk) _within his team_, but having fewer people in the room meant more [Throughput Risk](Schedule-Risk).
+
+### Specialization
+
+One of the problems with a **Skunkworks** approach is that you end up with more [Coordination Risk](Coordination-Risk) than you'd like, as teams end up with different [Internal Models](Internal-Model) and different [Goals](Goal-In-Mind).  
+
+In large companies, this is called [Silo Mentality](https://en.wikipedia.org/wiki/Information_silo) - the tendency for lines of business to stop communicating and sharing with one another.  As you can imagine, this leads to a more [Complex](Complexity-Risk) and [bureaucratic](Bureaucratic-Risk) structure than would be optimal.
+
+But this can happen within a single coding team, too:  by splitting up and working on different pieces of functionality within a project, the team _specialises_ and becomes expert in the parts it has worked on.  This means the team members have different [Internal Models](Internal-Model) of the codebase.
+
+This is _perfectly normal_:  we _need_ people to have different opinions and points-of-view.  We _need_ specialisation, it's how humanity has ended up on top.  It's better to have a team who, between them all, know a codebase really well, than a group of people who know it poorly.   
+
+The reason for this is explained again by the first diagram in this section:  the closer our [Internal Model](Internal-Model) matches [Reality](Meet-Reality), the fewer [Hidden Risks](Risk) we will meet, and the easier we'll have it.
+
+The downside of specialization is [Coordination Risk](Coordination-Risk):  
+ - If your payroll expert is off ill for a week, progress on that stops. [Key-Man Risk](Coordination-Risk)
+ - Work is rarely evenly spread out amongst the different components of a project for long.
+ - If work temporarily dries up on a specific component, what do the component owners do in the meantime? 
+ - What if the developer of a particular component makes _the wrong assumptions_ about other parts of the system or tool-set?
+
+### Pair Programming / Mob Programming
+
+In the main, [Review](Review) is the main way to mitigate [Coordination Risk](Coordination-Risk). We can apply:
+ - [Code Reviews](Review)
+ - [Stand Up Meetings](Review)
+ - [Presentations & Demos](Review)
+ - [Training](Review)
+ 
+**Pair Programming** however _combines_ the review with the process of coding: there are now two heads at each terminal.  What does this achieve?  
+ - Clearly, we mitigate [Key-Man Risk](Coordination-Risk) as we've got two people doing every job.  
+ - Knowledge is transferred at the same time, too, mitigating [Specialist-Risk](Coordination-Risk).  
+ - Proponents also argue that this mitigates [Complexity Risk](Complexity-Risk), as the software will be better quality.
+ - Since the pair spend _so much time together_, the communication is very _high bandwidth_, so this mitigates [Communication Risk](Communication-Risk)
+ 
+But, conversely, there is a cost to **Pair Programming**:
+ - Having two people doing the job _one person could do_ intimates [Schedule Risk](Schedule-Risk).
+ - Could the same [Complexity Risk](Complexity-Risk) be mitigated just with more regular [Code Reviews](Review)?
+ - Sometimes, asking members of a team to work so closely together is a recipe for disaster.  [Team Risk](Coordination-Risk)
+ - Not every pair programmer "shares" the keyboard time evenly, especially if ability levels aren't the same.
+ - There is only one **Feedback loop**, so despite the fact you have two people, you can only [Meet Reality](Meeting-Reality) serially.  
+   
+ **Mob Programming** goes one stage further and suggests that we can write better software with _even more people around the keyboard_.  So, what's the right number?  Clearly, the usual trade-off applies:  are you _mitigating_ more risk than you're _gaining_?   
+ 
+### Offshoring / Remote Teams
+
+**Pairing** and **Mobbing** as mitigations to [Coordination Risk](Coordination-Risk) are easiest when developers are together in the same room.  But it doesn't always work out like this.   Teams spread in different locations and timezones naturally don't have the same [communication bandwidth](Communication-Risk) and you _will_ have more issues with [Coordination Risk](Coordination-Risk).  
+
+In the extreme, I've seen situations where the team at one location has decided to "suck up" the extra development effort themselves rather than spend time trying to bring a new remote team up-to-speed.  More common is for one location to do the development, while another gets the [Support](Support) duties.  This is an admission that [Coordination Risk](Coordination-Risk) is more unmanageable than [Schedule Risk](Schedule-Risk).
+
+There are some mitigations here:  moving staff from location-to-location on business trips, frequent [show-and-tell](Review), or simply modularizing accross geographic boundaries, in respect of [Conway's Law](Coordination-Risk).
+
+When we add **Outsourcing** into the mix, we also have to consider [Agency Risk](Agency-Risk).  As Kent Beck says:
+
+> 
+
+As team sizes grow, [Coordination Risk](Coordination-Risk) grows fast.  To see this, let's consider a made-up situation where all the developers are equal, and we can mitigate [Coordination Risk](Coordination-Risk) at the cost of a 1-hour presentation each per week.  How many man-hours of presentations do we need?
+
+|Team Size|Hours Of Presentations|Man-Hours In Presentations|
+|1        |0                     |0                         |  
+|2        |2                     |4                         |
+|3        |3                     |9                         |
+|4        |4                     |16                        |
+|5        |5                     |25                        |
+|6        |6                     |36                        |
+|7        |7                     |49                        |
+
+
+Adding the 7th person to the team (ceteris paribus) does absolutely _nothing_ for productivity, it makes matters worse: assuming everyone works a 40-hour week, we're now 9 hours worse off than before.   
+
+This is a toy example, but is it better or worse than this in reality.  If the new developers are arriving on an existing project, then 1 hour-per-week of training by the existing team members might be conservative.  This is why we get [Brooks' Law](https://en.wikipedia.org/wiki/Brooks%27s_law): 
+
+> "adding human resources to a late software project makes it later".
+
+We'll come back to Brooks later.  But you can see that this law is founded in an appreciation of [Coordination Risk](Coordination-Risk).  But the argument from [Coordination Risk](Coordination-Risk) _adds nuance_, and explains when this is true and when it isn't.
+
+### Too Many Cooks
+
+Sometimes, you have _too many developers_ on a project.  This is not a blessing.   As with [Student Syndrome](Schedule-Risk), having too many resources means that: 
+
+> "Work expands so as to fill the time available for it's completion" - [Parkinson's Law]()
+
+One of the reasons for this is that _Developers love to develop_ and it is, after all, their job.  If they _aren't_ developing, then are they still needed?  This is [Agency Risk](Agency-Risk):  people who are worried about their jobs will often try to _look busy_, and if that means creating some drama on the project, then so be it.
+
+This usually occurs when a successful project is nearing delivery:  ideally, you want to be _decreasing_ the amount of change on a project as it gets closer to key [Delivery Dates](Coordination-Risk).  This is because the risk of [Missing the Date](Coordination-Risk) is greater than the risk of [some features not being ready](Feature-Risk).
+
+In the past, I've found it helpful to down-size the team by temporarily moving developers into other less-fortunate teams, reducing both [Coordination Risk](Coordination-Risk) and [Agency Risk](Agency-Risk) at the same time.  This can require some guts to do:  you have to overcome your own ego (wanting to run a big team) for the sake of your project.
+
+ 
 ### Automating
 
-Automation is one of the key practices of [DevOps](DevOps) - the idea that people in general are poor at repeatable tasks, and anything people do repeatedly _should_ be automated.  This is mitigating [Process Risk](Process-Risk) at the expense of attendant [Complexity Risk](Complexity-Risk) and [Schedule Risk](Schedule-Risk).
+One of the key ways to measure whether your team is doing _useful work_ is to look at whether, in fact, it can be automated.  And this is the spirit of [DevOps](DevOps) - the idea that people in general are poor at repeatable tasks, and anything people do repeatedly _should_ be automated.  
 
-Since this is a trade-off, you have to be careful about how you weigh the [Process Risk](Process-Risk):  clearly, it exists _into the future_, and you are making a bet that increased risk now will pay off in decreased [Process Risk](Process-Risk) over the lifetime of the project.  This is a hard thing to judge:
- - How long will the mitigation last before the process changes again?
+Repetitive work of any kind is a [Process Risk](Process-Risk), and can be mitigated at the expense of attendant [Complexity Risk](Complexity-Risk) and [Schedule Risk](Schedule-Risk).
+
+Since this is a trade-off, you have to be careful about how you _weigh_ the [Process Risk](Process-Risk):  clearly, it exists _into the future_.  
+
+You are making a bet that increased risk now will pay off in decreased [Process Risk](Process-Risk) over the lifetime of the project.  This is a hard thing to judge:
  - How much [Process Risk](Process-Risk) are we carrying, week-to-week?  (A good way to answer this is to look at past failures).
  - How much [Complexity Risk](Complexity-Risk) will we pick up?
  - How much [Schedule Risk](Schedule-Risk) (in spent developer effort) will we pick up?
+ - How long will the mitigation last before the process changes again?
 
 ### Tool Use
  
@@ -93,7 +200,9 @@ Tools are a different trade off to automation:
  - [Schedule Risk](Schedule-Risk) in the time it takes to learn and integrate the tool.
  - [Complexity Risk](Complexity-Risk) because your project necessarily becomes more complex for the addition of the tool.
 
-Tools in general are _good_ and _worth using_ if they offer you a better risk return than you would have had from not using them.  But, this is a low bar -  some tools offer _amazing_ returns on investment.  The [Silver Bullets](Silver-Bullets) article describes in general some of these: 
+Tools in general are _good_ and _worth using_ if they offer you a better risk return than you would have had from not using them.  
+
+But, this is a low bar -  some tools offer _amazing_ returns on investment.  The [Silver Bullets](Silver-Bullets) article describes in general some of these: 
  - Assemblers
  - Compilers
  - Garbage Collection
@@ -104,28 +213,17 @@ Tools in general are _good_ and _worth using_ if they offer you a better risk re
 
 A _really good tool_ offers such advantages that not using it becomes _unthinkable_:  Linux is heading towards this point.   For Java developers, the JVM is there already.  
 
-
-Picking new tools should be done **very carefully**:  you may be stuck with your choices for some time.  Here is my short guide to doing this. 
- 
+Picking new tools and libraries should be done **very carefully**:  you may be stuck with your choices for some time.  Here is a [short guide that might help](Dependency-Risk).
 
 ### Refactoring
 
-
+In the battle against [Complexity Risk](Complexity-Risk), we have the following tools:
+ - **Modularization**
 
 
 - Tools, compilers, dependency risk.
 
 ### Benchmarking
-
-### For The Sake Of It
-
-### Outsourcing / Offshoring
-
-
-### Pair Programming / Mob Programming
-
-
-Too Many Cooks?
 
 
 

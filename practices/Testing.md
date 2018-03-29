@@ -55,6 +55,8 @@ Getting complex systems to behave as pure functions can be costly, but there are
 
 **Automated Testing** has an interesting effect on managing [Complexity Risk](Complexity-Risk):  Although you may initially write a Unit Test (say) to mitigate the risk of [having implemented a feature wrongly](Feature-Risk), you are also given insurance against future change breaking that feature.   That is to say, they are _regression tests_.  However, implementing tests like this is better than building regression tests, [as discussed here](Regression-Testing).
 
+-- how do automated tests mitigate complexity risk?
+
 ### Manual Tests
 
 **Manual Testing** is, at some level, essential if your product is to be used by humans.  Although UI-Automation tools such as [Selenium](https://docs.seleniumhq.org) allow you to script browser interactions, they cannot reliably catch every problem.
@@ -118,6 +120,7 @@ There are so many different types of testing and this guide is not meant to be e
 |[Software Risk](Software-Risk)|Unit Testing<br />Component Testing<br />End-To-End Testing<br />Functional Testing|
 |[Feature Risk](Feature-Risk)|Browser-Based Testing<br />Accessibility Testing<br />Acceptance Testing (UAT)<br />Beta Testing|
 |[Visibility Risk](Visibility-Risk)|Usability Testing<br />Corridor Testing|
+|[Complexity Risk](Complexity-Risk)|Unit Testing<br />Automated Acceptance testing<br />Integration Testing|
 
 ## Attendant Risks
 
