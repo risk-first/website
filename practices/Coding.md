@@ -242,7 +242,7 @@ Fowler's definition clearly leaves the question of what is "improving the design
 Let's try and be more specific.   With Refactoring, we are trying to:
 
 - Mitigate [Communication Risk](Communication-Risk) by making the _intent_ of the software clearer. This can be done by breaking down larger functions and methods into smaller ones with helpful names, and naming elements of the program clearly, and
-- Mitigate [Complexity Risk](Complexity-Risk) by employing _abstraction_, _componentization_ and _modularization_ to remove duplication and reduce cross-cutting concerns.
+- Mitigate [Complexity Risk](Complexity-Risk) by employing _abstraction_, _componentization_ and _modularization_ to remove duplication and reduce cross-cutting concerns.   By becoming less complex, the code has less [Inertia Against Change](Complexity-Risk).
 
 On **Refactoring**, Kent Beck says:
 
