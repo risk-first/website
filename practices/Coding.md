@@ -41,7 +41,7 @@ Most commonly, the reason we are **Coding** is same as the one in the [Developme
 
 That is, we believe our clients don't have the features they need to see in the software, and we have [Feature Risk](Feature-Risk). 
 
-By coding, we are mitigating [Feature Risk](Feature-Risk) in exchange for [Complexity Risk](Complexity-Risk) in terms of the extra code we now have on the project, and [Schedule Risk](Schedule-Risk), because by spending time or money coding we now have less time or money to do other things.
+By coding, we are mitigating [Feature Risk](Feature-Risk) in exchange for [Complexity Risk](Complexity-Risk) in terms of the extra code we now have on the project, and [Schedule Risk](Schedule-Risk), because by spending time or money coding we now have less time or money to do other things.  Bill Gates said: 
 
 > “Measuring programming progress by lines of code is like measuring aircraft building progress by weight.” - Bill Gates
 
