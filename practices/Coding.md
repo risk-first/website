@@ -163,11 +163,13 @@ How many man-hours of presentations do we need?
 |6        |6                     |36                        |
 |7        |7                     |49                        |
 
-Adding the 7th person to the team (ceteris paribus) does absolutely _nothing_ for productivity, it makes matters worse: assuming everyone works a 40-hour week, we're now 9 hours worse off than before.   
+Adding the 7th person to the team (ceteris paribus) does absolutely _nothing_ for productivity, it makes matters worse.  Assuming everyone works a 40-hour week, we're now 9 hours worse off than before.   
 
-This is a _toy example_, but is it better or worse than this in reality.  If the new developers are arriving on an existing project, then 1 hour-per-week of training by the existing team members might be conservative.  This is why we get [Brooks' Law](https://en.wikipedia.org/wiki/Brooks%27s_law): 
+This is a _toy example_, but is it better or worse than this in reality?  If the new developers are arriving on an existing project, then 1 hour-per-week of training by the existing team members might be conservative.  
 
-> "adding human resources to a late software project makes it later".
+This is why we get [Brooks' Law](https://en.wikipedia.org/wiki/Brooks%27s_law): 
+
+> "adding human resources to a late software project makes it later".  - [Fred Brooks, _The Mythical Man-Month_](https://en.wikipedia.org/wiki/Brooks%27s_law)
 
 We'll come back to Brooks later.  But you can see that this law is founded in an appreciation of [Coordination Risk](Coordination-Risk).  But the argument from [Coordination Risk](Coordination-Risk) _adds nuance_, and explains when this is true and when it isn't.
 
