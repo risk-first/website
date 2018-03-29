@@ -37,7 +37,7 @@ Since the focus of this site is on _software methodologies_, you shouldn't be su
 
 ### Building Features
 
-Most commonly, the reason we are **Coding** is same as the one in the [Development Process](Development-Process) page: we want to put features in the hands of our customers.  I.e. we want to mitigate [Feature Risk](Feature-Risk).  
+Most commonly, the reason we are **Coding** is same as the one in the [Development Process](Development-Process) page: we want to put features in the hands of our customers.  That is, we want to mitigate [Feature Risk](Feature-Risk).  
 
 That is, we believe our clients don't have the features they need to see in the software.  
 
