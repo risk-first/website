@@ -183,7 +183,9 @@ One of the reasons for this is that _Developers love to develop_ and it is, afte
 
 This usually occurs when a successful project is nearing delivery:  ideally, you want to be _decreasing_ the amount of change on a project as it gets closer to key [Delivery Dates](Coordination-Risk).  This is because the risk of [Missing the Date](Coordination-Risk) is greater than the risk of [some features not being ready](Feature-Risk).
 
-In the past, I've found it helpful to down-size the team by temporarily moving developers into other less-fortunate teams, reducing both [Coordination Risk](Coordination-Risk) and [Agency Risk](Agency-Risk) at the same time.  This can require some guts to do:  you have to overcome your own ego (wanting to run a big team) for the sake of your project.
+In the past, I've found it helpful to down-size the team by temporarily moving developers into other less-fortunate teams, reducing both [Coordination Risk](Coordination-Risk) and [Agency Risk](Agency-Risk) at the same time.  
+
+This can require some guts to do:  you have to overcome your own ego (wanting to run a big team) for the sake of your project.
 
  
 ### Automating
