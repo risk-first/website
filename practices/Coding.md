@@ -56,18 +56,18 @@ Users often have trouble _conceiving_ of what they want in software, let alone _
 Let's look at how that can happen.  
 
 Imagine for a moment, that there was such a thing as **The Perfect Product**, and a **User** wants to build it with a **Coder**:
- - The **Perfect Product** might be _conceptually elusive_, and it might take several attempts for the **User** to find it's form. [Conceptual Integrity Risk](Feature-Risk)
- - It might be hard for the **User** to _communicate_ the idea of it in writing or words:  where do the buttons go? What do they do?  What are the key abstractions?  [Communication Risk](Communication-Risk)
- - It might be hard too, for the **Coder** to work with this description.  Since his [Internal Model](Internal-Model) is different from the **User**'s, they have different ideas about the _meaning_ of what the **User** is communicating.  [Communication Risk](Communication-Risk)
- - Then, implementing the idea of whatever is in the **Coder**'s [Internal Model](Internal-Model) takes _effort_, and therefore involves [Schedule Risk](Schedule-Risk)
+ - The **Perfect Product** might be _conceptually elusive_, and it might take several attempts for the **User** to find it's form. _[Conceptual Integrity Risk](Feature-Risk)_
+ - It might be hard for the **User** to _communicate_ the idea of it in writing or words:  where do the buttons go? What do they do?  What are the key abstractions?  _[Communication Risk](Communication-Risk)_
+ - It might be hard too, for the **Coder** to work with this description.  Since his [Internal Model](Internal-Model) is different from the **User**'s, they have different ideas about the _meaning_ of what the **User** is communicating.  _[Communication Risk](Communication-Risk)_
+ - Then, implementing the idea of whatever is in the **Coder**'s [Internal Model](Internal-Model) takes _effort_, and therefore involves [Schedule Risk](Schedule-Risk).
  - Finally, we have a feedback loop, so the **User** can improve their [Internal Model](Internal-Model) and see the previously unforeseen [Hidden Risks](Risk).
  - Then, you can go round again.
 
 ![Coding Communication Risks](images/coding_communication_risk.png)
 
 The problem here is that this is a very _protracted feedback loop_.  This is mitigated by prototyping, because that's all about shortening the feedback loop as far as possible:  
- - By working together, you mitigate [Communication Risk](Communication-Risk)
- - By focusing on one or two elements (such as UI design), you can minimize [Schedule Risk](Schedule-Risk)
+ - By working together, you mitigate [Communication Risk](Communication-Risk).
+ - By focusing on one or two elements (such as UI design), you can minimize [Schedule Risk](Schedule-Risk).
  - By having a tight feedback loop, you can focus on _iteration_, try lots of ideas, and work through [Conceptual Integrity Risk](Feature-Risk). 
  
 One assumption of Prototyping is that **Users** can iterate towards **The Perfect Product**.  But it might not be so:   the Conceptual gap between their own ideas and what they really _need_ might prove too great.  
@@ -104,8 +104,8 @@ This is _perfectly normal_:  we _need_ people to have different opinions and poi
 The reason for this is explained again by the first diagram in this section:  the closer our [Internal Model](Internal-Model) matches [Reality](Meet-Reality), the fewer [Hidden Risks](Risk) we will meet, and the easier we'll have it.
 
 The downside of specialization is [Coordination Risk](Coordination-Risk):  
- - If your payroll expert is off ill for a week, progress on that stops. [Key-Man Risk](Coordination-Risk)
- - Work is rarely evenly spread out amongst the different components of a project for long.
+ - If your payroll expert is off ill for a week, progress on that stops. 
+ - Work is rarely evenly spread out amongst the different components of a project for long. 
  - If work temporarily dries up on a specific component, what do the component owners do in the meantime? 
  - What if the developer of a particular component makes _the wrong assumptions_ about other parts of the system or tool-set?
 
