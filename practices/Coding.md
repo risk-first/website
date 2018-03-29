@@ -111,7 +111,7 @@ The downside of specialization is [Coordination Risk](Coordination-Risk):
 
 ### Pair Programming / Mob Programming
 
-In the main, [Review](Review) is the main way to mitigate [Coordination Risk](Coordination-Risk). We can apply:
+In the main, [Review](Review) is the main way to mitigate [Coordination Risk](Coordination-Risk). For example:
  - [Code Reviews](Review)
  - [Stand Up Meetings](Review)
  - [Presentations & Demos](Review)
