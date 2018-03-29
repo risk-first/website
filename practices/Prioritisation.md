@@ -70,3 +70,6 @@ If you are replacing an old system with a new one, incrementally replacing funct
 - critical path
 - roadmap
 - dependency analysis
+
+
+- planning using risk

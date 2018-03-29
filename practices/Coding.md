@@ -217,11 +217,28 @@ Picking new tools and libraries should be done **very carefully**:  you may be s
 
 ### Refactoring
 
-In the battle against [Complexity Risk](Complexity-Risk), we have the following tools:
- - **Modularization**
+Most coders use the phrase "refactoring", and intuitively understand what it is.  It shouldn't have been hard to find a clear explanation for this page, but sadly it was.  There are some very woolly definitions of "refactoring" around.  Such as:
+
+> "Refactoring is a controlled technique for improving the design of an existing code base. " -- Martin Fowler
+
+or 
+
+> "**Refactoring (n)**: a change made to the internal structure of software to make it easier to understand and cheaper to modify without changing its observable behavior""  -- [Refactoring.com](https://www.refactoring.com)
+
+Fowler's definition clearly leaves the question of what is "improving the design" open for discussion.  Whilst Refactoring.com's points to "easier to understand" (which makes sense) and "cheaper to modify" (which could mean anything).  
+
+Let's try and be more specific.   With Refactoring, we are trying to:
+
+- Mitigate [Communication Risk](Communication-Risk) by making the _intent_ of the software clearer. This can be done by breaking down larger functions and methods into smaller ones with helpful names, and naming elements of the program clearly, and
+- Mitigate [Complexity Risk](Complexity-Risk) by employing _abstraction_, _componentization_ and _modularization_ to remove duplication and reduce cross-cutting concerns.
+
+On **Refactoring**, Kent Beck says:
+
+> "If a programmer sees a one-minute ugly way to get a test working and a ten-minute way to get it working with a simpler design, the correct choice is to spend the ten minutes. " -- Kent Beck, _Extreme Programming Explained_
+
+This is a bold, not-necessarily-true assertion, but you can see how it's motivated:  Kent is saying that the nine extra minutes of [Schedule Risk](Schedule-Risk) are _nothing_ compared to the carry cost of [Complexity Risk](Complexity-Risk) on the project.
 
 
-- Tools, compilers, dependency risk.
 
 ### Benchmarking
 

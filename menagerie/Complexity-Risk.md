@@ -1,5 +1,27 @@
 
-Complexity-Risk 
+**Complexity Risk** are the risks to your project due to its underlying complexity.  This could be down to the size of the codebase, the number of modules, the interconnectedness of the modules and how well-factored the code is.   
+
+Often, programmers think about **Complexity Risk** as **Technical Debt** (see below), but there's a bit more to it than that.
+
+## What Complexity Means
+
+
+
+
+
+
+## Future Complexity
+
+
+
+
+## Technical Debt
+
+
+
+
+
+##
 
 
 
@@ -11,7 +33,7 @@ Especially not in advance.
 
 Kitchen Analogy
 
-Technical Debt
+## Technical Debt
 
 Technical Debt is caused by **unnecessary complexity** within the software system.   It’s often hard to make the case for minimising technical debt: it often feels that there are more important priorities, especially when technical debt can be “swept under the carpet” and forgotten about until later.  
 
@@ -49,12 +71,23 @@ Inertia
 Testing and Code coverage (and compilation) _mitigate_ inertia, because it gives you the confidence to make change without having the entire project in your head.
 
 
-Dead end risk
+## Dead-End Risk
 
-## Summary
-
-Dead-End Risk is where you build functionality that you _think_ is useful, only to find out later that actually, it was 
+**Dead-End Risk** is where you build functionality that you _think_ is useful, only to find out later that actually, it was 
 a dead-end, and is superceded by something else.
+
+For example, let's say that the Accounting sub-system needed password access (so you built this).  Then the team realised that you needed a way to _change the password_ (so you built that).   Then, that you needed to have more than one user of the Accounting system so they would all need passwords (ok, fine).  
+
+Finally, the team realises that actually logging-in would be something that all the sub-systems would need, and that it had already been implemented more thoroughly by the Approvals sub-system.   
+
+At this point, you realise you're in a **Dead End**:  
+ - Either you carry on making minor incremental improvements to the accounting password system (carrying the extra **Complexity Risk** of duplicated functionality), or
+ - You rip out the accounting password system, and merge in the Approvals system, surfacing new, hidden **Complexity Risk** in the process, due to the difficulty in migrating users from the old to new way of working.
+ 
+ 
+ 
+ 
+ 
 
 Sometimes, the path from your starting point to your goal on the [Risk Landscape](Risk-Landscape) will take you to dead ends:  places 
 where the only way towards your destination is to lose something, and do it again another way.

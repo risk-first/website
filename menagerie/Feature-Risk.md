@@ -30,7 +30,7 @@ This is the one we've just discussed above: the feature that you (or your client
 
 ### Regression Risk
 
-**Regression Risk** is basically risk of breaking existing features in your software when you add new ones.  As with the previous risks, the eventual result is the same; customers don't have the features they expect.  All of the risks so far are mitigated by [Testing](Testing) in various forms.
+**Regression Risk** is basically risk of breaking existing features in your software when you add new ones.  As with the previous risks, the eventual result is the same; customers don't have the features they expect.  This can become a problem as your code-base [gains Complexity](Complexity-Risk), as it becomes impossible to keep a complete [Internal Model](Internal-Model) of the whole thing.
 
 ### Conceptual Integrity Risk
 
@@ -69,7 +69,7 @@ By being _fashionable_, websites are communicating:   _this is a new thing_, _th
 
 If this breakdown of **Feature Risk** seems reductive, then try not to think of it that way:  the aim _of course_ should be to delight users, and turn them into fans.  That's a laudable [Goal](Goal-In-Mind), but should be treated in the usual Risk-First way:  _pick the biggest risk you can mitigate next_.   
 
-Consider **Feature Risk** from both the up-side and the down-side:  
+Consider **Feature Risk** from both the down-side and the up-side:  
  - What are we missing?
  - How can we be _even better_?
  
