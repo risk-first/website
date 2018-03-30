@@ -71,5 +71,6 @@ If you are replacing an old system with a new one, incrementally replacing funct
 - roadmap
 - dependency analysis
 
+Discuss the tool Duncan and I used to determine whether a release date was feasible.
 
 - planning using risk

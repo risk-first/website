@@ -73,22 +73,22 @@ Risks are often very similar across different software projects.   And, if you k
 
 This part is a discussion of the different practices within Software Development, and how they mitigate and accentuate the different risks.
 
- - [Practices](Practices)
- - [Analysis](Analysis)
+ - Practices
+ - Analysis
  - [Coding](Coding)
- - [Contract](Contract)
- - [Delivery](Delivery)
+ - Contract
+ - Delivery
  - [Design](Design)
- - [Documentation](Documentation)
+ - Documentation
  - [On-Site-Customer](On-Site-Customer)
  - [Prioritisation](Prioritisation)
  - [Requirements Capture](Requirements-Capture)
- - [Review](Review)
- - [Standards](Standards)
- - [Support](Support)
- - [Terms-Of-Reference](Terms-Of-Reference)
+ - Review
+ - Standards
+ - Support
+ - Terms-Of-Reference
  - [Testing](Testing)
- - [Training](Training) 
+ - Training
  
 ### Part 4: [Methodologies](Methodologies)
 
@@ -96,31 +96,32 @@ A more in-depth look at software methodologies and how their chosen practices re
 
  - [Introduction](Methodologies)
  - [Waterfall](Waterfall)
- - [Extreme Programming](Extreme-Programming)
- - [Scrum](Scrum)
- - [Lean](Lean)
- - [PMBoK and Prince2](PMBoK)
- - [Programming, Motherf](PM)
- - [DevOps](DevOps) 
- - [12 Factor](12factor)
+ - Extreme Programming
+ - Scrum
+ - Lean
+ - PMBoK and Prince2
+ - Programming, Motherf
+ - DevOps
+ - 12 Factor
  
 ### Part 5: Specific Topics
 
-Digging down to see how risk is relevant to specific areas of the software process.
-This is a m
+A more light-hearted collection of blog posts related to the software development process, aiming to use what we've learnt in real-life contexts.
 
+ - Case Study
  - [Regression Testing](Regression-Testing)
- - [Minimizing The Downside](Minimizing-The-Downside)
+ - Minimizing The Downside
  - [Issue Tracking](Issue-Tracking)
  - [Surfacing Risks](Surfacing-Risks)
- 
-
+ - [Silver Bullets](Silver-Bullets)
 
 ### Glossary Of Terms
 
- - [Attendant Risk](Attendant-Risk)
+ - [Feedback Loop](Feedback-Loop)
  - [Goal In Mind](Goal-In-Mind)
  - [Internal Model](Internal-Model)
+ - [Meet Reality](Meet-Reality)
+ - [Risk](Risk)
   
 
 
