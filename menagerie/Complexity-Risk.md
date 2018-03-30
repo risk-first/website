@@ -101,3 +101,26 @@ where the only way towards your destination is to lose something, and do it agai
 
 [Design](Big-Design
 
+
+In the small:
+
+
+- Changing one thing at a time
+- Compilers
+- Build Process
+- Running Tests
+- Language Design
+- Choice of Language
+
+
+In the large
+
+- Integration
+- Fat Finger
+- Pair Programming
+
+
+Concurrency
+File Systems vs Databases
+
+Finding enough staff
