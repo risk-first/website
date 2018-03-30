@@ -52,9 +52,7 @@ Hopefully, this type of conversation will feel familiar.  It should.  There's no
 
 If you can now apply it in conversation, like we did above, then that's one extra tool you have for delivering software.  
 
-When we work on a team, though, we want to pick up actions and just _get stuff done_ without having to debate the finer points of each risk over and over again.  
-
-This is where process comes in.   It's time to look at some [Methodologies](Methodologies).
+So with the groundwork out of the way, let's get on to Part 2 and investigate [The Risk Landscape](Risk-Landscape).  
 
 
 
