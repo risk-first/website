@@ -25,7 +25,7 @@ In [Meeting Reality](Meeting-Reality), we looked at the concept of the [Risk Lan
 
 In this section, I am going to try and show you some of the geography of the [Risk Landscape](Risk-Landscape).  We know every project is different, so every [Risk Landscape](Risk-Landscape) is also different.  But, just as I can tell you that the landscape outside your window will probably will have some roads, trees, fields, forests, buildings, and that the buildings are likely to be joined together by roads, I can tell you some general things about risks too.
 
-In fact, we're going to try and categorize the kinds of things we see on this risk landscape.  This isn't going to be perfect: 
+In fact, we're going to try and categorize the kinds of things we see on this risk landscape.  But, this isn't going to be perfect: 
  - One risk can "blend" into another just like sometimes a "field" is also a "car-park" or a building might contain some trees (but isn't a forest).   
  - There is _correlation_ between different risks:  one risk may cause another, or two risks may be due to the same underlying cause.  
  - As we saw in [Part 1](Introduction), mitigating one risk can give rise to another, so risks are often _inversely correlated_.
