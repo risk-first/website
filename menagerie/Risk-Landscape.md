@@ -49,6 +49,8 @@ None of the risk categories we're going to look at fit _exactly_ into these area
 
 ## Our Tour Itinerary
 
+tbd
+
 |Risk                                                |          Areas           |Description     |
 |----------------------------------------------------|--------------------------|----------------|
 |[Feature Risk](Feature-Risk)                        |Customer, Product         |tbd|  
