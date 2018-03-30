@@ -9,7 +9,7 @@ Code yourself or add a dependency?
 
 Cost of learning the dependency.
 
-
+3rd parties / outsourcing
 
 how to choose libraries
 

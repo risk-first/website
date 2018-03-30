@@ -1,3 +1,4 @@
+consider infinite time
 
 
 ## Schedule Risk
