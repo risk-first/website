@@ -40,7 +40,7 @@ There are basically five parts to this work:
 
 ### Part 1: [Introduction](Introduction)
 
-Some easy-to-digest ideas that will set the scene for examining the methodologies.
+Some easy-to-digest ideas that will set the scene for examining the practices later.
 
  - [Introduction](Introduction)
  - [Development Process](Development-Process)
@@ -53,8 +53,7 @@ Some easy-to-digest ideas that will set the scene for examining the methodologie
  
 ### Part 2: [The Risk Landscape](Risk-Landscape)
 
-Although we talk a lot about [Hidden Risk](Risk) here, [Hidden Risks](Risk) are often very similar 
-across different software projects.   And, if you know about them, you can look for them.  This section attempts to list them for you:
+Risks are often very similar across different software projects.   And, if you know about them, you can look for them.  This section attempts to break them down for you:
 
  - [The Risk landscape](Risk-Landscape)
  - [Feature Risk](Feature-Risk)
