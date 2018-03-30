@@ -9,9 +9,13 @@ In the [Financial Services](https://en.wikipedia.org/wiki/Financial_services) in
 
 They talk of [Exposure](https://en.wikipedia.org/wiki/Market_exposure), and how much is at risk if a specific event occurs.  
 
-In the financial crisis, though, it didn't play out like this.   Liquidity difficulties caused some banks to not be able to cover their interest payments, which caused credit defaults (the thing that **Credit Risk** measures were meant to guard against) and that meant that, in time, banks got bailed out, share prices crashed and there was lots of [Quantitative Easing](https://en.wikipedia.org/wiki/Quantitative_easing).  All of which had massive impacts on the markets in ways that none of the **Market Risk** models foresaw.
+In the financial crisis, though, it didn't play out like this.   Although there are lots of conflicting explanations of what happened, one way to look at it is this:
+ - Liquidity difficulties caused some banks to not be able to cover their interest payments.
+ - This caused credit defaults (the thing that **Credit Risk** measures were meant to guard against).
+ - That meant that, in time, banks got bailed out, share prices crashed and there was lots of [Quantitative Easing](https://en.wikipedia.org/wiki/Quantitative_easing).  
+ - All of which had massive impacts on the markets in ways that none of the **Market Risk** models foresaw.
 
-Everything was [correlated](https://www.investopedia.com/terms/c/correlation.asp).
+All the [Risks](Risk) were [correlated](https://www.investopedia.com/terms/c/correlation.asp).  That is, they were affected by the _same underlying events_, or _each other_.
 
 ## The Risk Landscape Again
 
