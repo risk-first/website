@@ -8,7 +8,7 @@ However, here, we are going to consider a second perspective:  that building sof
 
 ## Goal
 
-Hopefully, after reading through some of the articles on this short website, you'll come away with:
+Hopefully, after reading through some of the articles here, you'll come away with:
 
 - An appreciation of how risk underpins everything we do as developers, whether we want it to or not.
 - A framework for evaluating [software methodologies](https://en.wikipedia.org/wiki/Software_development_process#Methodologies) and choosing the right one for the task-at-hand.
