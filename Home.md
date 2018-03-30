@@ -25,7 +25,7 @@ Neither is this Wiki meant to be an open-ended discussion of software techniques
 
 ## Contributing
 
-If you find this site useful, and want to contribute, [we need help](Contributing).
+If you feel something important is missing, or you spot a mistake, [we need help](Contributing).
 
 ## Caveats
 
@@ -34,7 +34,9 @@ This is not intended to be a rigorously scientific work
 
 ## Table of Contents
 
-There are basically five parts to this work:  Parts 1 and 2 really need to be read in sequentially, as they'll explain the concepts you need to digest the rest.  But Parts 3, 4 and 5 don't have a linear structure, you can dive in anywhere after reading the first two.
+There are basically five parts to this work:  
+ - Parts 1 and 2 really need to be read in sequentially, as they'll explain the concepts you need to digest the rest.  
+ - Parts 3, 4 and 5 don't have a linear structure, you can dive in anywhere after reading the first two.
 
 ### Part 1: [Introduction](Introduction)
 
