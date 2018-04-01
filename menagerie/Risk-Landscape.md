@@ -1,17 +1,19 @@
 
-What are risks?  Let's look at a high-profile recent example.
+Risk is messy.  It's not always easy to tease apart the different components of risk and look at them individually.  Let's look at a high-profile recent example to see why.
 
 ## Financial Crisis
 
-In the [Financial Services](https://en.wikipedia.org/wiki/Financial_services) industry, lots of effort is spend calculating things like [Market Risk](https://en.wikipedia.org/wiki/Market_risk) and [Credit Risk](https://en.wikipedia.org/wiki/Credit_risk).  These were computed in monetary terms, like:  
+In the [Financial Services](https://en.wikipedia.org/wiki/Financial_services) industry, lots of effort is spend calculating things like:
+- [Market Risk](https://en.wikipedia.org/wiki/Market_risk):  the risk that the amount some asset you hold/borrow/have loaned is going to change in value.
+- [Credit Risk](https://en.wikipedia.org/wiki/Credit_risk).  the risk that someone who owes you a payment at a specific point in time might not pay it back.
+
+They get expressed in ways like this:  
 
 > "we have a 95% chance that today we'll lose less than £100"
 
-They talk of [Exposure](https://en.wikipedia.org/wiki/Market_exposure), and how much is at risk if a specific event occurs.  
-
-In the financial crisis, though, it didn't play out like this.   Although there are lots of conflicting explanations of what happened, one way to look at it is this:
- - Liquidity difficulties caused some banks to not be able to cover their interest payments.
- - This caused credit defaults (the thing that **Credit Risk** measures were meant to guard against).
+In the financial crisis, though, these models of risk didn't turn out to be much use.   Although there are lots of conflicting explanations of what happened, one way to look at it is this:
+ - Liquidity difficulties (i.e. amount of cash you have for day-to-day running of the bank) caused some banks to not be able to cover their interest payments.
+ - This caused credit defaults (the thing that **Credit Risk** measures were meant to guard against) even though the banks _technically_ were solvent.
  - That meant that, in time, banks got bailed out, share prices crashed and there was lots of [Quantitative Easing](https://en.wikipedia.org/wiki/Quantitative_easing).  
  - All of which had massive impacts on the markets in ways that none of the **Market Risk** models foresaw.
 
@@ -31,6 +33,8 @@ In fact, we're going to try and categorize the kinds of things we see on this ri
  - As we saw in [Part 1](Introduction), mitigating one risk can give rise to another, so risks are often _inversely correlated_.
 
 ## Three Basic Areas Of Risk
+
+_tbd; is this enough?_
 
 ![Risk Types](images/types_of_risk.png)
 

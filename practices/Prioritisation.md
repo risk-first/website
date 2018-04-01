@@ -74,3 +74,7 @@ If you are replacing an old system with a new one, incrementally replacing funct
 Discuss the tool Duncan and I used to determine whether a release date was feasible.
 
 - planning using risk
+
+
+
+-- estimating:  holding the risks in your hand and saying, which is heavier?

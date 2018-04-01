@@ -94,6 +94,9 @@ In exactly th
  
 ## Urgency vs Importance 
 
+--eisenhower's box
+tbd
+
 
 ## Discounting the Future To Zero
 
@@ -108,8 +111,9 @@ pooh bear
 - Second,  IT projects have too many confounding factors, such as experience of the teams, 
 technologies used etc.  That is, the risks faced by IT projects are _too diverse_ and _hard to quantify_ to allow for meaningful comparison from one to the next.
 - Third, as soon as you _publish a date_ it changes the expectations of the project (see [Student Syndrome](Schedule-Risk)).
+- Fourth, metrics get first of all [misused](Map-And-Territory-Risk) and then [gamed](Agency-Risk).
 
-So, Reality is messy.  Dressing it up with numbers doesn't change that and you risk [fooling yourself](Map-And-Territory).   
+Reality is messy.  Dressing it up with numbers doesn't change that and you risk [fooling yourself](Map-And-Territory).  If this is the case, is there any hope at all in what we're doing?  I would argue yes:   _forget precision_.  You should, with experience be able to hold up two separate risks and answer the question, "is this one bigger than this one?"  
 
 Reality is Reality, [so let's meet it](Meeting-Reality). 
 

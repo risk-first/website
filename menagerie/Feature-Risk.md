@@ -32,6 +32,18 @@ This is the one we've just discussed above: the feature that you (or your client
 
 **Regression Risk** is basically risk of breaking existing features in your software when you add new ones.  As with the previous risks, the eventual result is the same; customers don't have the features they expect.  This can become a problem as your code-base [gains Complexity](Complexity-Risk), as it becomes impossible to keep a complete [Internal Model](Internal-Model) of the whole thing.
 
+Also, while delivering new features can delight your customers, breaking existing ones will annoy them.  This is something we'll come back to in [Reputation Risk](Production-Risk).
+
+### Market Risk
+
+On the [Risk Landscape](Risk-Landscape) page I introduced the idea of **Market Risk** as being the value that the market places on a particular asset.  Since the product you are building is your asset, it makes sense that you'll face **Market Risk** on it:
+
+_The value that the market places on your asset is outside your control._
+
+In the same way as I face market risk when I own some [Apple](http://apple.com) stock, you have **Market Risk** because you own your product.  [Apple's](http://apple.com)'s stock price will decline if a competitor brings out an amazing product, or if 
+
+tbd.
+
 ### Conceptual Integrity Risk
 
 Sometimes, users _swear blind_ that they need some feature or other, but it runs at odds with the design of the system, and plain _doesn't make sense_.   Often, the development team can spot this kind of conceptual failure as soon as it enters the [Backlog](Prioritisation), however, sometimes it's only during coding that this becomes apparent.  
@@ -72,5 +84,3 @@ If this breakdown of **Feature Risk** seems reductive, then try not to think of 
 Consider **Feature Risk** from both the down-side and the up-side:  
  - What are we missing?
  - How can we be _even better_?
- 
- 
