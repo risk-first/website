@@ -26,6 +26,8 @@ This was not the first tablet computer.  Apple had already tried to introduce th
 
 But maybe now, the iPad's window is closing?   We have more _wearable computers_ like the Apple Watch, and voice-controlled devices like Alexa, Cortana and (cough) Siri.  Peak iPad was in 2014, according to [this graph](https://www.statista.com/statistics/269915/global-apple-ipad-sales-since-q3-2010/).
 
+So, it seems Apple timed the iPad to hit the peak of the Window of Opportunity.  
+
 But, even if you time the Window Of Opportunity correctly, you might still have the rug pulled from under your feet due to a different kind of **Schedule Risk**.
 
 ## Deadline Risk
