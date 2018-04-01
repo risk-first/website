@@ -4,7 +4,7 @@
 
 SWOT
 Cost-Benefit Analysis  (reframe as risk analysis)
-Decision Making
+Decision Making - Vroom and Yetton
 Brainstorming
 4-matrix / boston box
 theory of constraints

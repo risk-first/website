@@ -62,6 +62,14 @@ To put my software in front of users, I don’t have to send them a CD with a cl
 
 Even just the improvements to browsers over the last ten years have been huge.   Anyone remember programming for IE4 or 5?  
 
+## 11.  Containerization
+
+To most people, this might not seem like a "10X" improvement, but believe me, if you've worked in a large organisation, provisioning hardware can sometimes take _months_.  Spinning up containerized, virtual servers not only means more efficient hardware usage and fewer single points-of-failure, but it means that those _months_ could turn into _minutes_.  
+
+## 12.  AI?
+
+Building a self-driving car with `for` loops and `if`s would be _inconceivable_.  But, just maybe it can be done with deep learning and computer vision?  It's looking likely, but we'll see.
+
 ## Epilogue
 
 Brooks signs off the book in an epilogue called “Fifty Years of Wonder, Excitement, and Joy”.  And he’s totally right.  The silver bullets are coming thick and fast.  I expect to see golden bullets in my lifetime.  As he says:

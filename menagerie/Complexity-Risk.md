@@ -3,11 +3,31 @@
 
 Often, programmers think about **Complexity Risk** as **Technical Debt** (see below), but there's a bit more to it than that.
 
-## What Complexity Means
+## Kolmogorov Complexity
+
+The standard Computer-Science definition of complexity, is [Kolmogorov Complexity](https://en.wikipedia.org/wiki/Kolmogorov_complexity).  This is:
+
+>  "...is the length of the shortest computer program (in a predetermined programming language) that produces the object as output." - [Kolmogorov Complexity, Wikipedia](https://en.wikipedia.org/wiki/Kolmogorov_complexity)
+
+This is a fairly handy definition for us, as it means that to in writing software to solve a problem, there is a lower bound on the complexity of the software we write.  By applying techniques such as abstraction, we can get closer to the Kolmogorov limit.  However, in practice, this is pretty much impossible to quantify.
+
+## Connectivity
+
+A second, useful measure of complexity comes from graph theory, and that is the connectivity of a graph:
+
+> "...the minimum number of elements (nodes or edges) that need to be removed to disconnect the remaining nodes from each other" - [Connectivity, _Wikipedia_](https://en.wikipedia.org/wiki/Connectivity_(graph_theory)
+
+To see this in action, have a look at the below graph:
+
+![Connectivity 1](images/connectivity_1.png)
+
+It has 10 vertices, labelled **a** to **g**, and it has 15 links.  
+
+If there are 10 vertices in a graph, then you should be able to connect them minimally with 9 edges.  In the diagram below, we have 
 
 
 
-
+Complexity vs readability - gzip it.
 
 
 ## Future Complexity

@@ -75,6 +75,6 @@ Discuss the tool Duncan and I used to determine whether a release date was feasi
 
 - planning using risk
 
-
+https://en.wikipedia.org/wiki/Planning_fallacy
 
 -- estimating:  holding the risks in your hand and saying, which is heavier?
