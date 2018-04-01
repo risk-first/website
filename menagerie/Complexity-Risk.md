@@ -124,3 +124,6 @@ Concurrency
 File Systems vs Databases
 
 Finding enough staff
+
+ANYTHING YOU CANT CHANGE IS LEGACY
+
