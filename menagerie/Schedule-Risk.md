@@ -1,4 +1,6 @@
-**Schedule Risk** is the fundamental risk you face because of _lack of time_.  You could also call this **Chronological Risk** or just **Time Risk** if you wanted to.
+**Schedule Risk** is the fundamental risk you face because of _lack of time_.  
+
+You could also call this **Chronological Risk** or just **Time Risk** if you wanted to.
 
 **Schedule Risk** is very pervasive, and really underlies _everything_ we do.  People _want_ things, but they _want them at a certain time_.   We need to eat and drink every day, for example.  We might value having a great meal, but not if we have to wait three weeks for it.  
 
