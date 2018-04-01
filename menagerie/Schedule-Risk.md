@@ -4,7 +4,7 @@ You could also call this **Chronological Risk** or just **Time Risk** if you wan
 
 **Schedule Risk** is very pervasive, and really underlies _everything_ we do.  People _want_ things, but they _want them at a certain time_.   We need to eat and drink every day, for example.  We might value having a great meal, but not if we have to wait three weeks for it.  
 
-And let's go completely philosophical for a second:  If you were _completely immortal_, you'd probably not feel the need to buy _anything_.  You'd clearly have no _needs_, and anything you wanted, you could create yourself within your infinite time-budget.
+And let's go completely philosophical for a second:  If you were completely immortal, you'd probably not feel the need to buy _anything_.  You'd clearly have no _needs_, and anything you wanted, you could create yourself within your infinite time-budget.  Rocks don't need money, after all.
 
 Let's look at some specific kinds of **Schedule Risk**.
 
