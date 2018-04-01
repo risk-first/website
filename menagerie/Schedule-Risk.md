@@ -61,7 +61,7 @@ This grants you some leeway as now you have two variables to play with: the _siz
 
 In startup circles, this "amount of time you can afford it" is called the "runway":  you have to get the product to "take-off" before the runway ends.  So you could term this component as **Runway Risk**.
 
-Startups often spend a lot of time courting investors in order to get funding and mitigate **Schedule Risk**.  But, this activity comes at the expense of **Opportunity Risk** and **Feature Risk**, as usually the same people are trying to raise funds as build the project itself.  
+Startups often spend a lot of time courting investors in order to get funding and mitigate **Schedule Risk**.  But, this activity comes at the expense of **Opportunity Risk** and [Feature Risk](Feature-Risk), as usually the same people are trying to raise funds as build the project itself.  
 
 ## Staff Risk / Turnover Risk
 
