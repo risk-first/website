@@ -47,7 +47,7 @@ Deadlines can be set by an authority in order to _sharpen focus_ and reduce [Coo
 
 The 9-year timespan came from an authority figure (the president) and helped a huge team of people coordinate their efforts and arrive at a solution that would work within a given time-frame.  Compare with this quote:  
 
-> “I love deadlines. I love the whooshing noise they make as they go by.” -- Douglas Adams
+> “I love deadlines. I love the whooshing noise they make as they go by.” - Douglas Adams
 
 As a successful author, Douglas Adams _didn't really care_ about the deadlines his publisher's gave him.  The **Deadline Risk** was minimal for him, because the publisher wouldn't be able to give his project to someone else to complete. 
 
@@ -83,7 +83,7 @@ Arguably, there is good psychological, evolutionary and risk-based reasoning beh
 
 Or at least, that's the argument.  If you're [Discounting the Future To Zero](Risk-Theory) then you'll be pulling all-nighters in order to deliver any assignment.   
 
-So, the problem with **Student Syndrome** is that the _very mitigation_ for Schedule Risk (allowing more time) is an [attendant risk](Risk) that _causes_ Schedule Risk:   you'll work towards the new, generous deadline more slowly, and you'll end up revealing [Hidden Risk](Hidden-Risk) _later_ than you would have with the original, pressing deadline ... and you end up being late because of them.
+So, the problem with **Student Syndrome** is that the _very mitigation_ for **Schedule Risk** (allowing more time) is an [attendant risk](Risk) that _causes_ **Schedule Risk**:   you'll work towards the new, generous deadline more slowly, and you'll end up revealing [Hidden Risk](Hidden-Risk) _later_ than you would have with the original, pressing deadline ... and you end up being late because of them.
 
 We'll look at mitigations for this in [Prioritisation](Prioritisation).
 
