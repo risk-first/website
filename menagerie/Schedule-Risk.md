@@ -12,7 +12,7 @@ Let's look at some specific kinds of **Schedule Risk**.
 
 **Opportunity Risk** is really the concern that whatever we do, we have to do it _in time_.  If we wait too long, we'll miss the [Window Of Opportunity](https://en.wikipedia.org/wiki/Window_of_opportunity) for our product or service.   
 
-Any product idea is necessarily _of it's time_:  the [Goal In Mind](Goal-In-Mind) will be based on observations from a particular [Internal Model](Internal-Model), reflecting a view on reality at a specific _point in time_.  
+Any product idea is necessarily of it's time:  the [Goal In Mind](Goal-In-Mind) will be based on observations from a particular [Internal Model](Internal-Model), reflecting a view on reality at a specific _point in time_.  
 
 How long will that remain true for?  This is your _opportunity_:  it exists apart from any deadlines you set yourself, or funding deadlines.  It's purely, "how long will this idea be worth doing?"  
 
