@@ -97,19 +97,25 @@ This is named after the Red Queen quote from Alice in Wonderland:
 
 The problem with software projects is that tools and techniques change _really fast_.  In 2011, 3DRealms released Duke Nukem Forever after [15 years in development](https://en.wikipedia.org/wiki/Duke_Nukem_Forever), to negative reviews:  
 
-> "most of the criticism directed towards the game's long loading times, clunky controls, offensive humor, and overall aging and dated design. " - _[Duke Nukem Forever, Wikipedia](https://en.wikipedia.org/wiki/Duke_Nukem_Forever)_
+> "... most of the criticism directed towards the game's long loading times, clunky controls, offensive humor, and overall aging and dated design. " - _[Duke Nukem Forever, Wikipedia](https://en.wikipedia.org/wiki/Duke_Nukem_Forever)_
 
 Now, they didn't _deliberately_ take 15 years to build this game (lots of things went wrong).  But, the longer it took, the more their existing code-base was a liability rather than an asset. 
 
 Personally, I have suffered the pain on project teams where we've had to cope with legacy code and databases because the cost of changing them was too high.  And any team who is stuck using [Visual Basic 6.0](https://en.wikipedia.org/wiki/Visual_Basic) is here.   It's possible to ignore **Red Queen Risk** for a time, but this is just another form of [Technical Debt](Complexity-Risk) which eventually comes due.
 
-
 ## Schedule Risk and Feature Risk
 
 In the section on [Feature Risk](Feature-Risk) we looked at [Market Risk](Feature-Risk), the idea that the value of your product is itself at risk from the morés of the market, share prices being the obvious example of that effect.  In Finance, we measure this using _money_, and we can put together probability models based on how much money you might make or lose.
 
-tbd.  graph 
-
 With **Schedule Risk**, the underlying measure is _time_:  
+ - "If I implement feature X, I'm picking up something like 5 days of **Schedule Risk**."
+ - "If John goes travelling that's going to hit us with lots of **Schedule Risk** while we train up Anne."
+ 
+... and so on.  Clearly, in the same way as you don't know exactly how much money you might lose or gain on the stock-exchange, you can't put precise numbers on **Schedule Risk** either.
 
-...
+Having looked at both Time and Money components of risk, let's look at something equally fundamental, [Complexity Risk](Complexity-Risk).
+
+ 
+
+
+
