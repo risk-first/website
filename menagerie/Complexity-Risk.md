@@ -269,6 +269,7 @@ interface BInput {
 function b(in: BInput): string {
     return "whatever" // do something here.
 }
+```
 
 Now, of course, there is a tradeoff:  we _mitigate_ [Complexity Risk](Complexity-Risk), because we define the protocols / types _once only_ in the program, and ensure that usages all match the specification.  But the tradeoff is (as we can see in the `typescript` code) more _finger-typing_, which some people argue counts as [Schedule Risk](Schedule-Risk).  
 
