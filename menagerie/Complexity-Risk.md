@@ -23,7 +23,7 @@ We might choose this representation:
  
 function out() {                                             (7 symbols)
     return "abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd"        (45 symbols)
-} (1 symbol)
+}                                                            (1 symbol)
 ```
 
 ... which contains **53** symbols, if you count `function`, `out` and `return` as one symbol each.
