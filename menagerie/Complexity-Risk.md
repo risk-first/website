@@ -94,7 +94,7 @@ On the downside, perhaps our messages have farther to go now:  in the original *
 
 As a tool to battle complexity, we don't just see this in software, but everywhere in our lives and in nature too:  
  - **Organelles** - such as [Mitochondria](https://en.wikipedia.org/wiki/Mitochondrion).
- - **Cells** - such as blood cells, nerve cells, skin cells in the [HumanBody](https://en.wikipedia.org/wiki/List_of_distinct_cell_types_in_the_adult_human_body).
+ - **Cells** - such as blood cells, nerve cells, skin cells in the [Human Body](https://en.wikipedia.org/wiki/List_of_distinct_cell_types_in_the_adult_human_body).
  - **Organs** - like hearts livers, brains etc.
  - **Organisms** - like you and me.
  
@@ -114,7 +114,7 @@ So, our first graph had a **Cyclomatic Complexity** of 7. `(15 - 10 + 2)`, while
 
 ## Abstraction
 
-Although we ended up with our second graph having a **Cyclomatic Complexity** of 1 (the minimum), we can go further through abstraction, because this representation isn't minimal from a **Kolmogorov Complexity** point of view.  For example, we might observe that there are further similarities in the graph that we can "draw out":
+Although we ended up with our second graph having a **Cyclomatic Complexity** of 1 (the minimum), we can go further through abstraction, because this representation isn't minimal from a **Kolmogorov Complexity** point-of-view.  For example, we might observe that there are further similarities in the graph that we can "draw out":
 
 ![Complexity 3](images/connectivity_3.png)
 
@@ -144,7 +144,7 @@ But there is actually some underlying sense in which _this is real_, as discusse
 
 To paraphrase:
 
-> "Most of your mass you owe due to E=mc², you owe to the fact that your mass is packed with energy, because of the interactions between these quarks and gluon fluctuations in the gluon field... what we think of as ordinarily empty space... that turns out to be the thing that gives us most of our mass." - [Veritaseum](https://www.youtube.com/watch?annotation_id=annotation_3771848421&feature=iv&src_vid=Xo232kyTsO0&v=Ztc6QPNUqls)
+> "Most of your mass you owe due to E=mc², you owe to the fact that your mass is packed with energy, because of the interactions between these quarks and gluon fluctuations in the gluon field... what we think of as ordinarily empty space... that turns out to be the thing that gives us most of our mass." - [Veritasium](https://www.youtube.com/watch?annotation_id=annotation_3771848421&feature=iv&src_vid=Xo232kyTsO0&v=Ztc6QPNUqls)
 
 I'm not an expert in physics, _at all_, and so there is every chance that I am pushing this analogy too hard.  But, substituting quarks and gluons for pieces of software we can (in a very handwaving-y way) say that more complex software has more mass than simple software, because it has more complex interactions going on.  
 
@@ -156,7 +156,7 @@ The most common way we talk about unnecessary complexity in software is as **Tec
 
 > "Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite... The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise." -- [Ward Cunningham, 1992](https://en.wikipedia.org/wiki/Technical_debt)
 
-Building a first-time, over-complex implementation is necessary to try things out, to mitigate [Conceptual Integrity Risk](Feature-Risk) and put things in front of users to [Meet Reality](Meeting-Reality) as fast as possible (see [Prototyping](Coding)).  
+Building a first-time, quick-and-dirty, over-complex implementation is necessary to try things out, to mitigate [Conceptual Integrity Risk](Feature-Risk) and put things in front of users to [Meet Reality](Meeting-Reality) as fast as possible (see [Prototyping](Coding)).  
 
 Having mitigated that risk, though, you are now carrying more **Complexity Risk** than you necessarily need, and it's time to think about how to [Refactor](Coding) the software to reduce this risk again.
 
