@@ -74,15 +74,31 @@ Let's remove some of those extra links:
 
 ![Connectivity 2](images/connectivity_2.png)
 
-In this graph, I've removed 6 of the edges.  Now, we're in a situation where if any single edge is removed, the graph becomes _unconnected_.  That is, it's broken into distinct chunks.  
+In this graph, I've removed 6 of the edges.  Now, we're in a situation where if any single edge is removed, the graph becomes _unconnected_.  That is, it's broken into distinct chunks.  So, it's _1-connected_.
 
-Also, it's I've arranged it as a hierarchy, which I can do now that it's minimally connected in this way.  For 10 vertices, we need 9 edges to connect everything up: it's always:
+Also, it's I've arranged it as a hierarchy, which I can do now that it's only 1-connected.  For 10 vertices, we need 9 edges to connect everything up: it's always:
 
 ```
   edges = vertices - 1
 ```
 
-You can't always equate _connectedness_ with _complexity_, but it helps.  To demonstrate this, we can go further.  
+Note that I could pick any hierarchy here:  I don't have to start at **c** (although it has the nice property that it has two roughly even sub-trees attached to it).
+
+How does this help us?   Imagine if **a** - **g** were modules of a software system, and the edges of the graph showed communications between the different sub-systems.  In the first graph, we're in a worse position:  who's in charge?  What deals with what?  Can I isolate a component and change it safely?  What happens if one component disappears?  But, in the second graph, it's easier to reason about, because of the reduced number of connections and the new heirarchy of organisation.  
+
+On the downside, perhaps our messages have farther to go now:  in the original **i** could send a message straight to **j**, but now we have to go all the way via **c**.   But this is the basis of **modularization**.  
+
+In Computer Science, we can measure this property as [Cyclomatic Complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity).  This is:
+
+```
+Cyclomatic Complexity = edges − vertices + 2P,
+```
+
+Where **P** is the number of **Connected Components** (i.e. distinct parts of the graph that aren't connected to one another by any edges).
+
+So, our first graph had a **Cyclomatic Complexity** of `7 (15 - 10 + 2)`, while our second was `1 (9 - 10 + 2)`.
+
+
 
 
 
