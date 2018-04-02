@@ -93,10 +93,10 @@ How does this help us?   Imagine if **a** - **j** were modules of a software sys
 On the downside, perhaps our messages have farther to go now:  in the original **i** could send a message straight to **j**, but now we have to go all the way via **c**.   But this is the basis of [Modularization](https://en.wikipedia.org/wiki/Modular_programming) and [Hierarchy](https://en.wikipedia.org/wiki/Hierarchy).
 
 As a tool to battle complexity, we don't just see this in software, but everywhere in our lives and in nature too:  
- - **Organelles** (such as [Mitochondria](https://en.wikipedia.org/wiki/Mitochondrion)
- - **Cells** (such as blood cells, nerve cells, skin cells in the [HumanBody](https://en.wikipedia.org/wiki/List_of_distinct_cell_types_in_the_adult_human_body).
- - **Organs** like hearts livers, brains etc.
- - **Organisms** like you and me.
+ - **Organelles** - such as [Mitochondria](https://en.wikipedia.org/wiki/Mitochondrion).
+ - **Cells** - such as blood cells, nerve cells, skin cells in the [HumanBody](https://en.wikipedia.org/wiki/List_of_distinct_cell_types_in_the_adult_human_body).
+ - **Organs** - like hearts livers, brains etc.
+ - **Organisms** - like you and me.
  
 ## Cyclomatic Complexity
 
