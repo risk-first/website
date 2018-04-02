@@ -84,11 +84,21 @@ Also, it's I've arranged it as a hierarchy, which I can do now that it's only 1-
 
 Note that I could pick any hierarchy here:  I don't have to start at **c** (although it has the nice property that it has two roughly even sub-trees attached to it).
 
-## Cyclomatic Complexity
+## Hierarchies and Modularization
 
 How does this help us?   Imagine if **a** - **g** were modules of a software system, and the edges of the graph showed communications between the different sub-systems.  In the first graph, we're in a worse position:  who's in charge?  What deals with what?  Can I isolate a component and change it safely?  What happens if one component disappears?  But, in the second graph, it's easier to reason about, because of the reduced number of connections and the new heirarchy of organisation.  
 
-On the downside, perhaps our messages have farther to go now:  in the original **i** could send a message straight to **j**, but now we have to go all the way via **c**.   But this is the basis of **modularization**.  
+On the downside, perhaps our messages have farther to go now:  in the original **i** could send a message straight to **j**, but now we have to go all the way via **c**.   But this is the basis of [Modularization](https://en.wikipedia.org/wiki/Modular_programming) and [Hierarchy](https://en.wikipedia.org/wiki/Hierarchy).
+
+As a tool to battle complexity, we don't just see this in software, but everywhere in our lives and in nature too:  
+ - **Organelles** (such as [Mitochondria](https://en.wikipedia.org/wiki/Mitochondrion)
+ - **Cells** (such as blood cells, nerve cells, skin cells in the [HumanBody](https://en.wikipedia.org/wiki/List_of_distinct_cell_types_in_the_adult_human_body).
+ - **Organs** like hearts livers, brains etc.
+ - **Organisms** like you and me.
+ 
+## Cyclomatic Complexity
+
+It would be nice to be able to measure, somehow, the complexity of our first graph with our second, and somehow, be able to say how much simpler our second graph is.  
 
 In Computer Science, we can measure this property as [Cyclomatic Complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity).  This is:
 
@@ -106,21 +116,35 @@ Although we ended up with our second graph having a **Cyclomatic Complexity** of
 
 ![Complexity 3](images/connectivity_3.png)
 
-
-
-
-
-Complexity vs readability - gzip it.
-
-
-## Future Complexity
-
-
-
+Here, we've spotted that the structure of subgraphs **P1** and **P2** are the same:  we can have the same functions there to assemble those.  Noticing and exploiting patterns of repetition is one of the fundamental tools we have in the fight against complexity, and our programming languages support this through [Abstraction](https://en.wikipedia.org/wiki/Abstraction_(software_engineering).
 
 ## Technical Debt
 
+So, we've looked at some measures of software structure complexity, in order that we can say "this is more complex than this".  However, we've not really said why complexity entails _risk_.  So let's address that now.  
 
+
+
+
+
+## Inertia
+
+One way to look at complexity is as _inertia_ or _mass_:  a software project with more complexity has greater _mass_ than one with less complexity, and, via Newton's Second Law:
+
+> F = _m_**a**
+
+That is, in order to move your project _somewhere new_, and make it do new things, you need to give it a push, and the more _mass_ it has, the more _Force_ you'll need to move it.  Inertia and mass are equivalent concepts in physics, and 
+
+> "mass is the quantitative or numerical measure of a body’s inertia, that is of its resistance to being accelerated".  - [Inertia, _Wikipedia](https://en.wikipedia.org/wiki/Inertia#Mass_and_inertia)
+
+So, this seems like just a handy metaphor for complexity, but there is actually some underlying sense in which _this is real_, as discussed in this [Veritasium]() video:
+
+[![E=Mc2](images/e_mc2.png)](https://www.youtube.com/watch?annotation_id=annotation_3771848421&feature=iv&src_vid=Xo232kyTsO0&v=Ztc6QPNUqls)
+
+To paraphrase:
+
+> "Most of your mass you owe due to E=Mc^2, you owe to the fact that your mass is packed with energy, because of the interactions between these quarks and gluon fluctuations in the gluon field... what we think of as ordinarily empty space... that turns out to be the thing that gives us most of our mass." - [Veritaseum](https://www.youtube.com/watch?annotation_id=annotation_3771848421&feature=iv&src_vid=Xo232kyTsO0&v=Ztc6QPNUqls)
+
+I'm not an expert in physics, by any sense, and so there is every chance that I am pushing this analogy too hard.  But, substituting quarks and gluons for pieces of software we can (in a very handwaving-y way) say that more complex software simply _weighs more_ than simple software.  
 
 
 
@@ -230,3 +254,17 @@ Finding enough staff
 
 ANYTHING YOU CANT CHANGE IS LEGACY
 
+
+
+## Space and Time Complexity
+
+So far, we've looked at a couple of definitions of complexity in terms of the _structure_ of software.  However, in Computer Science there is a whole branch of complexity theory devoted to how the software _runs_, namely [Big O Complexity](https://en.wikipedia.org/wiki/Big_O_notation).  
+
+Once running, an algorithm or data structure will consume space or runtime dependent on it's characteristics.  
+
+
+### See Also
+
+ - [Big O Cheatsheet](http://bigocheatsheet.com): This is a wonderful resource to investigate this further.
+ 
+  
