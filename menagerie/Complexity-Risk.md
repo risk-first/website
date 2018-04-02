@@ -132,7 +132,7 @@ Newton's Second Law states:
 
 That is, in order to move your project _somewhere new_, and make it do new things, you need to give it a push, and the more **Mass** it has, the more **Force** you'll need to move (accelerate) it.  
 
-**Inertia** and **Mass** are equivalent concepts in physics, and 
+**Inertia** and **Mass** are equivalent concepts in physics:
 
 > "mass is the quantitative or numerical measure of a body’s inertia, that is of its resistance to being accelerated".  - [Inertia, _Wikipedia_](https://en.wikipedia.org/wiki/Inertia#Mass_and_inertia)
 
