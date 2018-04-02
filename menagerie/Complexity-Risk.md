@@ -283,7 +283,7 @@ Nevertheless, compilers and type-checking are so prevalent in software that clea
 
 ### Memory Management
 
-Memory Management is another place where **Complexity Risk** hides.  I for one am glad to have banished this class of problems to the scrap heap:
+Memory Management is another place where **Complexity Risk** hides:
 
 > "Memory leaks are a common error in programming, especially when using languages that have no built in automatic garbage collection, such as C and C++." - [Memory Leak, _Wikipedia_](https://en.wikipedia.org/wiki/Memory_leak)
 
