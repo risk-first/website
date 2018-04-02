@@ -146,9 +146,15 @@ To paraphrase:
 
 > "Most of your mass you owe due to E=mc², you owe to the fact that your mass is packed with energy, because of the interactions between these quarks and gluon fluctuations in the gluon field... what we think of as ordinarily empty space... that turns out to be the thing that gives us most of our mass." - [Veritasium](https://www.youtube.com/watch?annotation_id=annotation_3771848421&feature=iv&src_vid=Xo232kyTsO0&v=Ztc6QPNUqls)
 
-I'm not an expert in physics, _at all_, and so there is every chance that I am pushing this analogy too hard.  But, substituting quarks and gluons for pieces of software we can (in a very handwaving-y way) say that more complex software has more _interactions_ going on, and therefore has more mass than simple software.  
+I'm not an expert in physics, _at all_, and so there is every chance that I am pushing this analogy too hard.  But, substituting quarks and gluons for pieces of software we can (in a very handwaving-y way) say that more complex software has more _interactions_ going on, and therefore has more mass than simple software. 
 
-So, at a basic level, **Complexity Risk** is correlated closely with **Schedule Risk**:  more complexity means you need more force to get things done, which takes longer.
+The reason I am labouring this analogy is to try and make the point that **Complexity Risk** is really as fundamental as [Feature Risk](Feature-Risk) or [Schedule Risk](Schedule-Risk):
+
+ - [Feature Risk](Feature-Risk):  like **money**.
+ - [Schedule Risk](Schedule-Risk): like **time**.
+ - [Complexity Risk](Complexity-Risk): like **mass**.
+ 
+At a basic level, **Complexity Risk** heavily impacts on **Schedule Risk**:  more complexity means you need more force to get things done, which takes longer.
 
 ## Technical Debt
 
