@@ -178,11 +178,11 @@ In Brooks' essay "No Silver Bullet – Essence and Accident in Software Engineer
 
 > - **Essence**  _the difficulties inherent in the nature of the software_
 > - **Accident**: _those difficulties that attend its production but are not inherent_
->     - [Fred Brooks, -_No Silver Bullet_](https://en.wikipedia.org/wiki/No_Silver_Bullet)
+>     [Fred Brooks, -_No Silver Bullet_](https://en.wikipedia.org/wiki/No_Silver_Bullet)
 
 The problem with this definition is that we are accepting features of our software as _essential_.  The **Risk-First** approach is that if you want to mitigate some [Feature Risk](Feature-Risk) then you have to pick up **Complexity Risk** as a result.  But, that's a _choice you get to make_.  
 
-Therefore, [Feature Creep](https://en.wikipedia.org/wiki/Feature_creep) (or [Gold Plating](https://en.wikipedia.org/wiki/Gold_plating_(software_engineering)) is a failure to observe this basic equation:  instead of considering this trade off, you're building every feature possible.  This has an impact on **Complexity Risk**, which in turn impacts [Communication Risk](Communication-Risk) and also [Schedule Risk](Schedule-Risk).
+Therefore, [Feature Creep](https://en.wikipedia.org/wiki/Feature_creep) (or [Gold Plating](https://en.wikipedia.org/wiki/Gold_plating_(software_engineering))) is a failure to observe this basic equation:  instead of considering this trade off, you're building every feature possible.  This has an impact on **Complexity Risk**, which in turn impacts [Communication Risk](Communication-Risk) and also [Schedule Risk](Schedule-Risk).
 
 Sometimes, feature-creep happens because either managers feel they need to keep their staff busy, or the staff decide on their own that they need to [keep themselves busy](Agency-Risk).  
 
