@@ -26,7 +26,7 @@ function out() {                                             (7 symbols)
 } (1 symbol)
 ```
 
-... which contains 53 "symbols", if you count `function`, `out` and `return` as one symbol each.
+... which contains **53** symbols, if you count `function`, `out` and `return` as one symbol each.
 
 But, if we write it like this:
 
@@ -38,7 +38,7 @@ function out() {                                             (7 symbols)
 }                                                            (1 symbol)
 ```
 
-With this version, we now have 40 symbols.  And with this version:
+With this version, we now have **40** symbols.  And with this version:
 
 ```javascript
 const ABCD="ABCD";                                           (11 symbols)
@@ -48,7 +48,7 @@ function out() {                                             (7 symbols)
 }                                                            (1 symbol)
 ```
 
-... we have 26 symbols.  
+... we have **26** symbols.  
 
 By applying techniques such as abstraction, we can improve in the direction of the Kolmogorov limit.  By allowing ourselves to say that _symbols_ are worth one complexity point, we've allowed that we can be descriptive in our `function` name and `const`.  But we could go further down into [Code Golf]() territory.  This javascript program plays [FizzBuzz] up to 100, but is less readable than you might hope:
 
