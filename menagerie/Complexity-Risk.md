@@ -122,7 +122,7 @@ Here, we've spotted that the structure of subgraphs **P1** and **P2** are the sa
 
 ## Complexity As Mass / Inertia
 
-So, we've looked at some measures of software structure complexity, in order that we can say "this is more complex than this".  However, we've not really said why complexity entails _risk_.  So let's address that now by looking at two analogies, **Inertia** and **Technical Debt**.  
+So, we've looked at some measures of software structure complexity, in order that we can say "this is more complex than this".  However, we've not really said why complexity entails [Risk](Risk).  So let's address that now by looking at two analogies, **Inertia** and **Technical Debt**.  
 
 The first way to look at complexity is as **Inertia** or **Mass**:  a software project with more complexity has greater **Inertia** or **Mass** than one with less complexity.
 
