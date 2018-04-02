@@ -50,15 +50,13 @@ function out() {                                             (7 symbols)
 
 ... we have **26** symbols.  
 
-By applying techniques such as abstraction, we can improve in the direction of the Kolmogorov limit.  By allowing ourselves to say that _symbols_ are worth one complexity point, we've allowed that we can be descriptive in our `function` name and `const`.  But we could go further down into [Code Golf]() territory.  This javascript program plays [FizzBuzz] up to 100, but is less readable than you might hope:
+By applying techniques such as abstraction, we can improve in the direction of the Kolmogorov limit.  By allowing ourselves to say that _symbols_ are worth one complexity point, we've allowed that we can be descriptive in our `function` name and `const`.  But we could go further down into [Code Golf](https://en.wikipedia.org/wiki/Code_golf) territory.  This javascript program plays [FizzBuzz](https://en.wikipedia.org/wiki/Fizz_buzz) up to 100, but is less readable than you might hope:
 
 ```javascript
 	for(i=0;i<100;)document.write(((++i%3?'':'Fizz')+(i%5?'':'Buzz')||i)+"<br>")  (77 symbols)
 ```
 
-So there is at some point a trade-off to be made between **Complexity Risk** and [Communication Risk](Communication-Risk), which we'll return to later.
-
-
+So there is at some point a trade-off to be made between **Complexity Risk** and [Communication Risk](Communication-Risk) (a topic we'll come to later).
 
 ## Connectivity
 
@@ -70,7 +68,7 @@ To see this in action, have a look at the below graph:
 
 ![Connectivity 1](images/connectivity_1.png)
 
-It has 10 vertices, labelled **a** to **g**, and it has 15 edges (or links) connecting the vertices together.  If any single edge were removed from this diagram, the 10 vertices would still be linked together.   Because of this, we can say that the graph is at least _2-connected_. 
+It has 10 vertices, labelled **a** to **g**, and it has 15 edges (or links) connecting the vertices together.  If any single edge were removed from this diagram, the 10 vertices would still be linked together.   Because of this, we can say that the graph is _2-connected_.   That is, to disconnect any single vertex, you'd have to remove _at least_ two edges.
 
 Let's remove some of those extra links:
 
