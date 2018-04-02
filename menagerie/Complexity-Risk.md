@@ -188,18 +188,6 @@ Sometimes, feature-creep happens because either managers feel they need to keep 
 
 > "Perfection is Achieved Not When There Is Nothing More to Add, But When There Is Nothing Left to Take Away" - Antoine de Saint-Exupery
 
-## Compilers and Tests
-
-Complexity Risk is heavily mitigated by **Compilers** and **UNit Tests**.
-
-Complexity risk isn't bad in itself, but it's inertia that slows us down.
-Starting a new project is always easier than continuing an existing one.  And, more exciting.
-
-uSers and data add to complexity risk, especially hetrogenous requirements from lots of different users - should you add users like this?
-
-Testing and Code coverage (and compilation) _mitigate_ inertia, because it gives you the confidence to make change without having the entire project in your head.
-
-
 ## Dead-End Risk
 
 **Dead-End Risk** is where you build functionality that you _think_ is useful, only to find out later that actually, it was 
@@ -210,16 +198,46 @@ For example, let's say that the Accounting sub-system needed password access (so
 Finally, the team realises that actually logging-in would be something that all the sub-systems would need, and that it had already been implemented more thoroughly by the Approvals sub-system.   
 
 At this point, you realise you're in a **Dead End**:  
- - Either you carry on making minor incremental improvements to the accounting password system (carrying the extra **Complexity Risk** of duplicated functionality), or
- - You rip out the accounting password system, and merge in the Approvals system, surfacing new, hidden **Complexity Risk** in the process, due to the difficulty in migrating users from the old to new way of working.
- - You start again, 
+ - **Option 1**: You carry on making minor incremental improvements to the accounting password system (carrying the extra **Complexity Risk** of the duplicated functionality).
+ - **Option 2**: You rip out the accounting password system, and merge in the Approvals system, surfacing new, hidden **Complexity Risk** in the process, due to the difficulty in migrating users from the old to new way of working.
+ - **Option 3**: You start again, trying to take into account both sets of requirements at the same time, again, possibly surfacing new hidden **Complexity Risk** due to the combined approach.
  
-Sometimes, the path from your starting point to your goal on the [Risk Landscape](Risk-Landscape) will take you to dead ends:  places 
-where the only way towards your destination is to lose something, and do it again another way.
+Sometimes, the path from your starting point to your goal on the [Risk Landscape](Risk-Landscape) will take you to dead ends:  places where the only way towards your destination is to lose something, and do it again another way.  
+
+This is because you surface new [Hidden Risk](Risk) along the way.  And the source of a lot of this hidden risk will be unexpected **Complexity Risk** in the solutions you choose.  This happens a lot. 
 
 ## The Re-Write
 
+**Option 3**, Rewriting code or a whole project can seem like a way to mitigate **Complexity Risk**, but it usually doesn't work out too well.  As Joel Spolksky says:
 
+> There’s a subtle reason that programmers always want to throw away the code and start over. The reason is that they think the old code is a mess. And here is the interesting observation: they are probably wrong. The reason that they think the old code is a mess is because of a cardinal, fundamental law of programming:  
+> _It’s harder to read code than to write it._    - [Joel Spolsky](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)
+
+The problem that Joel is outlining here is that the developer mistakes [Communication Risk](Communication-Risk) for unnecessary **Complexity Risk**.  Also, perhaps there is [Agency Risk](Agency-Risk) because the developer is doing something that is more useful to him than the project.  But generally speaking, **Dead-End Risk** isn't caused by **Complexity Risk**, it's caused by [Conceptual Integrity Risk](Feature-Risk): if you've ended up in a dead-end because of **Complexity Risk**, the solution is much more likely to be to take **Option 2** and [Refactor out of it](Coding).
+
+## Where Complexity Hides
+
+Complexity isn't spread evenly within a software project.  Some problems, some areas, have more than their fair share of issues.   We're going to cover a few of these now, but be warned, this is not a complete list by any means:
+
+ - Types
+ - Memory Management
+ - Algorithmic Complexity
+ - Concurrency
+ - Mutability
+ 
+ 
+
+
+## Compilers and Tests
+
+Complexity Risk is heavily mitigated by **Compilers** and **UNit Tests**.
+
+Complexity risk isn't bad in itself, but it's inertia that slows us down.
+Starting a new project is always easier than continuing an existing one.  And, more exciting.
+
+uSers and data add to complexity risk, especially hetrogenous requirements from lots of different users - should you add users like this?
+
+Testing and Code coverage (and compilation) _mitigate_ inertia, because it gives you the confidence to make change without having the entire project in your head.
 
 ## Concurrency
 
