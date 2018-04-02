@@ -309,6 +309,8 @@ In the case of security considerations, exploits _thrive_ on the complexity of y
 
 > "Anyone, from the most clueless amateur to the best cryptographer, can create an algorithm that he himself can't break. It's not even hard. What is hard is creating an algorithm that no one else can break, even after years of analysis." - [Bruce Schneier, 1998](https://en.wikipedia.org/wiki/Bruce_Schneier#Cryptography) 
 
-Luckily, most good languages include libraries that you can include to mitigate these **Complexity Risks** from your own code-base.  This is a strong argument for the use of libraries.  
+Luckily, most good languages include crypto libraries that you can include to mitigate these **Complexity Risks** from your own code-base.  
 
-But, when should you use a library and when should you implement yourself?  This is the subject of [Dependency Risk(Dependency-Risk) which we will look at next.
+This is a strong argument for the use of libraries.  
+
+But, when should you use a library and when should you implement yourself?  This is the subject of [Dependency Risk](Dependency-Risk) which we will look at next.
