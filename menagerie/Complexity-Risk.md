@@ -31,7 +31,7 @@ function out() {                                             (7 symbols)
 But, if we write it like this:
 
 ```javascript
-const ABCD="ABCD"; (11 symbols)
+const ABCD="ABCD";                                           (11 symbols)
 
 function out() {                                             (7 symbols)
     return ABCD+ABCD+ABCD+ABCD+ABCD+ABCD+ABCD+ABCD+ABCD+ABCD (21 symbols)
