@@ -62,7 +62,6 @@ Risks are often very similar across different software projects.   And, if you k
  - [Process Risk](Process-Risk)
  - [Coordination Risk](Coordination-Risk)
  - [Communication Risk](Communication-Risk)
- - [Bureaucracy Risk](Bureaucracy-Risk)
  - [Map And Territory Risk](Map-And-Territory-Risk)
  - [Agency Risk](Agency-Risk) 
  
