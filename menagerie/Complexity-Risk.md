@@ -225,40 +225,84 @@ But (generally speaking), **Dead-End Risk** isn't caused by **Complexity Risk**,
 
 Complexity isn't spread evenly within a software project.  Some problems, some areas, have more than their fair share of issues.   We're going to cover a few of these now, but be warned, this is not a complete list by any means:
 
- - Types
+ - Protocols / Types
  - Memory Management
- - Algorithmic Complexity
- - Concurrency
- - Mutability
+ - Algorithmic (Space and Time) Complexity
+ - Concurrency / Mutability
+ - Networks / Security
  
- 
+### Protocols / Types
 
+Whenever two components of a software system need to interact, they have to establish a protocol for doing so.  There are lots of different ways this can work, but the simplest example I can think of is where some component **a** calls some function **b**.  e.g: 
 
-## Compilers and Tests
+```javascript
+function b(a, b, c) {
+    return "whatever" // do something here.
+}
+```
 
-Complexity Risk is heavily mitigated by **Compilers** and **UNit Tests**.
+If component **b** then changes in some backwards-incompatible way, say:
 
-Complexity risk isn't bad in itself, but it's inertia that slows us down.
-Starting a new project is always easier than continuing an existing one.  And, more exciting.
+```javascript
+function b(a, b, c, d /* new parameter */) {
+    return "whatever" // do something here.
+}
+```
 
-uSers and data add to complexity risk, especially hetrogenous requirements from lots of different users - should you add users like this?
+Then, we can say that the protocol has changed.  This problem is so common, so endemic to computing that we've had compilers that check function arguments [since the 1960's](https://en.wikipedia.org/wiki/Compiler).  The point being is that it's totally possible for the compiler to warn you about when a protocol within the program has changed.  
 
-Testing and Code coverage (and compilation) _mitigate_ inertia, because it gives you the confidence to make change without having the entire project in your head.
+The same is basically true of [Data Types](https://en.wikipedia.org/wiki/Data_type):  whenever we change the **Data Type**, we need to correct the usages of that type.  Note above, I've given the `javascript` example, but I'm going to switch to `typescript` now:
 
-## Concurrency
+```typescript
+interface BInput {
+    a: string,
+    b: string, 
+    c: string,
+    d: string
+}
 
+function b(in: BInput): string {
+    return "whatever" // do something here.
+}
 
+Now, of course, there is a tradeoff:  we _mitigate_ [Complexity Risk](Complexity-Risk), because we define the protocols / types _once only_ in the program, and ensure that usages all match the specification.  But the tradeoff is (as we can see in the `typescript` code) more _finger-typing_, which some people argue counts as [Schedule Risk](Schedule-Risk).  
 
+Nevertheless, compilers and type-checking are so prevalent in software that clearly, you have to accept that in most cases, the trade-off is worth it.
 
-## Space and Time Complexity
+Even languages like [Clojure](https://clojure.org) have [type checkers](https://github.com/clojure/core.typed/wiki/User-Guide).
+
+### Memory Management
+
+Memory Management is another place where **Complexity Risk** hides.  I for one am glad to have banished this class of problems to the scrap heap:
+
+> "Memory leaks are a common error in programming, especially when using languages that have no built in automatic garbage collection, such as C and C++." - [Memory Leak, _Wikipedia_](https://en.wikipedia.org/wiki/Memory_leak)
+
+Garbage Collectors (as found in Javascript or Java) offer you the deal that they will mitigate the [Complexity Risk](Complexity-Risk) of you having to manage your own memory, but in return perhaps give you fewer guarantees about the _performance_ of your software.  Again, there are times when you can't accommodate this [Performance Risk](Production-Risk), but these are rare and usually only affect a small portion of an entire software-system.  
+
+### Space and Time Complexity
 
 So far, we've looked at a couple of definitions of complexity in terms of the _structure_ of software.  However, in Computer Science there is a whole branch of complexity theory devoted to how the software _runs_, namely [Big O Complexity](https://en.wikipedia.org/wiki/Big_O_notation).  
 
-Once running, an algorithm or data structure will consume space or runtime dependent on it's characteristics.  
+Once running, an algorithm or data structure will consume space or runtime dependent on it's characteristics.  As with Garbage Collectors, these characteristics can introduce [Performance Risk](Production-Risk) which can easily catch out the unwary.  By and large, using off-the-shelf components helps, but you still need to know their performance characteristics. 
 
+The [Big O Cheatsheet](http://bigocheatsheet.com) is a wonderful resource to investigate this further.  
 
-### See Also
+### Concurrency / Mutability
 
- - [Big O Cheatsheet](http://bigocheatsheet.com): This is a wonderful resource to investigate this further.
+Although modern languages include plenty of concurrency primitives, (such as the [java.util.concurrent](https://docs.oracle.com/javase/9/docs/api/java/util/concurrent/package-summary.html) libraries), concurrency is _still_ hard to get right.  
+
+[Race conditions](https://en.wikipedia.org/wiki/Race_condition) and [Deadlocks](https://en.wikipedia.org/wiki/Deadlock) _thrive_ in over-complicated concurrency designs:  complexity issues are magnified by concurrency concerns, and are also hard to test and debug.  
+
+Recently, languages such as [Clojure](https://clojure.org) have introduced [persistent collections](https://en.wikipedia.org/wiki/Persistent_data_structure) to circumvent concurrency issues.  The basic premise is that any time you want to _change_ the contents of a collection, you get given back a _new collection_.  (So, any collection instance is immutable once created).   The tradeoff is again [Performance Risk](Production-Risk) to mitigate **Complexity Risk**.
  
-  
+### Networking / Security
+
+The last area I want to touch on here is networking.  There are plenty of **Complexity Risk** perils in _anything_ to do with networked code, chief amongst them being error handling and (again) protocol evolution.  
+
+In the case of security considerations, exploits _thrive_ on the complexity of your code, and exploit the weaknesses because of it.  In particular, Schneier's Law says, never implement your own crypto scheme:
+
+> "Anyone, from the most clueless amateur to the best cryptographer, can create an algorithm that he himself can't break. It's not even hard. What is hard is creating an algorithm that no one else can break, even after years of analysis." - [Bruce Schneier, 1998](https://en.wikipedia.org/wiki/Bruce_Schneier#Cryptography) 
+
+Luckily, most good languages include libraries that you can include to mitigate these **Complexity Risks** from your own code-base.  This is a strong argument for the use of libraries.  
+
+But, when should you use a library and when should you implement yourself?  This is the subject of [Dependency Risk(Dependency-Risk) which we will look at next.

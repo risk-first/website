@@ -12,6 +12,8 @@ breaking process.
 
 reputation risk
 
+performance risk -- oding things in time/memory
+
 
 ## Going Into Production
 
