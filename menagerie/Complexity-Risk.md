@@ -56,7 +56,7 @@ By applying techniques such as abstraction, we can improve in the direction of t
 	for(i=0;i<100;)document.write(((++i%3?'':'Fizz')+(i%5?'':'Buzz')||i)+"<br>")  (77 symbols)
 ```
 
-So there is at some point a trade-off to be made between **Complexity Risk** and [Communication Risk](Communication-Risk) (a topic we'll come to later).
+So there is at some point a trade-off to be made between **Complexity Risk** and [Communication Risk](Communication-Risk).  This is a topic we'll address more in that section.   But for now, it should be said that the more complex a piece of software is, the more difficulty users will have understanding it, and the more difficulty developers will have changing it.  
 
 ## Connectivity
 
@@ -118,69 +118,71 @@ Although we ended up with our second graph having a **Cyclomatic Complexity** of
 
 Here, we've spotted that the structure of subgraphs **P1** and **P2** are the same:  we can have the same functions there to assemble those.  Noticing and exploiting patterns of repetition is one of the fundamental tools we have in the fight against complexity, and our programming languages support this through [Abstraction](https://en.wikipedia.org/wiki/Abstraction_(software_engineering).
 
-## Technical Debt
+## Complexity As Inertia
 
-So, we've looked at some measures of software structure complexity, in order that we can say "this is more complex than this".  However, we've not really said why complexity entails _risk_.  So let's address that now.  
+So, we've looked at some measures of software structure complexity, in order that we can say "this is more complex than this".  However, we've not really said why complexity entails _risk_.  So let's address that now by looking at two analogies, **Inertia** and **Technical Debt**.  
 
+The first way to look at complexity is as **Inertia** or **Mass**:  a software project with more complexity has greater **Inertia** than one with less complexity, and, via Newton's Second Law:
 
+> F = _m_**a**,   Force = Mass x Acceleration
 
+That is, in order to move your project _somewhere new_, and make it do new things, you need to give it a push, and the more **Mass** it has, the more **Force** you'll need to move (accelerate) it.  **Inertia** and **Mass** are equivalent concepts in physics, and 
 
+> "mass is the quantitative or numerical measure of a body’s inertia, that is of its resistance to being accelerated".  - [Inertia, _Wikipedia_](https://en.wikipedia.org/wiki/Inertia#Mass_and_inertia)
 
-## Inertia
+You could stop here and say that the more lines of code a project contains, the higher it's mass.  And, that makes sense, because in order to get it to do something new, you're likely to need to change more lines.  
 
-One way to look at complexity is as _inertia_ or _mass_:  a software project with more complexity has greater _mass_ than one with less complexity, and, via Newton's Second Law:
-
-> F = _m_**a**
-
-That is, in order to move your project _somewhere new_, and make it do new things, you need to give it a push, and the more _mass_ it has, the more _Force_ you'll need to move it.  Inertia and mass are equivalent concepts in physics, and 
-
-> "mass is the quantitative or numerical measure of a body’s inertia, that is of its resistance to being accelerated".  - [Inertia, _Wikipedia](https://en.wikipedia.org/wiki/Inertia#Mass_and_inertia)
-
-So, this seems like just a handy metaphor for complexity, but there is actually some underlying sense in which _this is real_, as discussed in this [Veritasium]() video:
+But there is actually some underlying sense in which _this is real_, as discussed in this [Veritasium](https://www.youtube.com/user/1veritasium) video:
 
 [![E=Mc2](images/e_mc2.png)](https://www.youtube.com/watch?annotation_id=annotation_3771848421&feature=iv&src_vid=Xo232kyTsO0&v=Ztc6QPNUqls)
 
 To paraphrase:
 
-> "Most of your mass you owe due to E=Mc^2, you owe to the fact that your mass is packed with energy, because of the interactions between these quarks and gluon fluctuations in the gluon field... what we think of as ordinarily empty space... that turns out to be the thing that gives us most of our mass." - [Veritaseum](https://www.youtube.com/watch?annotation_id=annotation_3771848421&feature=iv&src_vid=Xo232kyTsO0&v=Ztc6QPNUqls)
+> "Most of your mass you owe due to E=mc², you owe to the fact that your mass is packed with energy, because of the interactions between these quarks and gluon fluctuations in the gluon field... what we think of as ordinarily empty space... that turns out to be the thing that gives us most of our mass." - [Veritaseum](https://www.youtube.com/watch?annotation_id=annotation_3771848421&feature=iv&src_vid=Xo232kyTsO0&v=Ztc6QPNUqls)
 
-I'm not an expert in physics, by any sense, and so there is every chance that I am pushing this analogy too hard.  But, substituting quarks and gluons for pieces of software we can (in a very handwaving-y way) say that more complex software simply _weighs more_ than simple software.  
+I'm not an expert in physics, _at all_, and so there is every chance that I am pushing this analogy too hard.  But, substituting quarks and gluons for pieces of software we can (in a very handwaving-y way) say that more complex software simply _weighs more_ than simple software, and therefore has more mass.  
 
-
-
-##
-
-
-
-You don't know how complex something is until you do it?
-
-You can't create an internal model of the whole system.
-
-Especially not in advance.
-
-Kitchen Analogy
+So, at a basic level, **Complexity Risk** is correlated closely with **Schedule Risk**:  more complexity means stuff just takes longer to do.
 
 ## Technical Debt
 
-Technical Debt is caused by **unnecessary complexity** within the software system.   It’s often hard to make the case for minimising technical debt: it often feels that there are more important priorities, especially when technical debt can be “swept under the carpet” and forgotten about until later.  
+The most common way we talk about unnecessary complexity in software is as **Technical Debt**:
 
-Technical debt manifests when you are merging new code and existing code.  The more existing code you have, the harder the merge.  Also, if we have some requirements and some existing code, and we are creating new code, then the situation is always harder when we have more of the existing code to work from.  
+> "Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite... The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise." -- [Ward Cunningham, 1992](https://en.wikipedia.org/wiki/Technical_debt)
 
-The solution to technical debt is refactoring.  This is well named:  consolidating the functionality down into the minimum number of orthogonal design factors of the system.   A well-factored system is not necessarily the simplest one:  it could be that there are further abstractions that could be made.  However, a well-factored system is one that most ably supports future merging, without introducing problems for the person doing the merge.  
+Building a first-time, over-complex implementation is necessary to try things out, to mitigate [Conceptual Integrity Risk](Feature-Risk) and put things in front of users to [Meet Reality](Meeting-Reality) as fast as possible (see [Prototyping](Coding)).  
 
-Kitchen Analogy:  Technical Debt is like not clearing up the kitchen after cooking.
+Having mitigated that risk, though, you are now carrying more **Complexity Risk** than you necessarily need, and it's time to think about how to [Refactor](Coding) the software to reduce this risk again.
 
-Technical Debt is also _rework_
+## Kitchen Analogy
 
-IT's also when, to make a change, you have to do lots of work... technical debt is like inertia... it's harder to change projects with lots of tech debt.
+It’s often hard to make the case for minimising technical debt: it often feels that there are more important priorities, especially when technical debt can be “swept under the carpet” and forgotten about until later.  
 
-Is technical debt _unnecessary complexity_?  
+One helpful analogy I have found is in that of the kitchen.   After preparing a meal (i.e. delivering the first implementation), _you need to tidy up the kitchen_.  This is just something everyone does as a matter of _basic sanitation_.
 
-## Devil makes work
-This is an _antipractice_ where idle people will add [Complexity Risk](Complexity-Risk) to your project
+Now of course, you could carry on with the messy kitchen.  When tomorrow comes and you need to make another meal, you find yourself needing to wash up saucepans as you go, or working around the mess by using different surfaces to chop on.  
 
+It's not long before someone comes down with food poisoning.   
 
-gold plating software engineering
+We wouldn't tolerate this behaviour in a restaurant kitchen, so why put up with it in a software project?
+
+## Feature Creep Risk
+
+In Brooks' essay "No Silver Bullet – Essence and Accident in Software Engineering, a distinction is made between:
+
+> - **Essence**  _the difficulties inherent in the nature of the software_
+> - **Accident**: _those difficulties that attend its production but are not inherent 
+>     - [Fred Brooks, -_No Silver Bullet_](https://en.wikipedia.org/wiki/No_Silver_Bullet)
+
+The problem with this definition is that we are accepting features of our software as _essential_.  The **Risk-First** approach is that if you want to mitigate some [Feature Risk](Feature-Risk) then you have to pick up **Complexity Risk** as a result.  But, that's a _choice you get to make_.  
+
+Therefore, [Feature Creep](https://en.wikipedia.org/wiki/Feature_creep) (or [Gold Plating](https://en.wikipedia.org/wiki/Gold_plating_(software_engineering)) is a failure to observe this basic equation:  instead of considering this trade off, you're building every feature possible.  This has an impact on **Complexity Risk**, which in turn impacts [Communication Risk](Communication-Risk) and also [Schedule Risk](Schedule-Risk).
+
+Sometimes, feature-creep happens because either managers feel they need to keep their staff busy, or the staff decide on their own that they need to [keep themselves busy](Agency-Risk).  
+
+> "Perfection is Achieved Not When There Is Nothing More to Add, But When There Is Nothing Left to Take Away" - Antoine de Saint-Exupery
+
+## Compilers and Tests
 
 Complexity Risk is heavily mitigated by **Compilers** and **UNit Tests**.
 
@@ -188,12 +190,6 @@ Complexity risk isn't bad in itself, but it's inertia that slows us down.
 Starting a new project is always easier than continuing an existing one.  And, more exciting.
 
 uSers and data add to complexity risk, especially hetrogenous requirements from lots of different users - should you add users like this?
-
-Inertia
-
-- You could describe complexity risk as inertia.   
-- If you're carrying a lot of complexity, it makes the project _hard to change_.
-- If you're _scared of making changes_ it's _hard to change_.
 
 Testing and Code coverage (and compilation) _mitigate_ inertia, because it gives you the confidence to make change without having the entire project in your head.
 
@@ -210,49 +206,17 @@ Finally, the team realises that actually logging-in would be something that all 
 At this point, you realise you're in a **Dead End**:  
  - Either you carry on making minor incremental improvements to the accounting password system (carrying the extra **Complexity Risk** of duplicated functionality), or
  - You rip out the accounting password system, and merge in the Approvals system, surfacing new, hidden **Complexity Risk** in the process, due to the difficulty in migrating users from the old to new way of working.
+ - You start again, 
  
- 
- 
- 
- 
-
 Sometimes, the path from your starting point to your goal on the [Risk Landscape](Risk-Landscape) will take you to dead ends:  places 
 where the only way towards your destination is to lose something, and do it again another way.
 
-## Examples
-
--- The Re-write
+## The Re-Write
 
 
-## Mitigating Practices
 
-[Design](Big-Design
+## Concurrency
 
-
-In the small:
-
-
-- Changing one thing at a time
-- Compilers
-- Build Process
-- Running Tests
-- Language Design
-- Choice of Language
-
-
-In the large
-
-- Integration
-- Fat Finger
-- Pair Programming
-
-
-Concurrency
-File Systems vs Databases
-
-Finding enough staff
-
-ANYTHING YOU CANT CHANGE IS LEGACY
 
 
 
