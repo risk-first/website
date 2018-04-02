@@ -120,11 +120,11 @@ Although we ended up with our second graph having a **Cyclomatic Complexity** of
 
 Here, we've spotted that the structure of subgraphs **P1** and **P2** are the same:  we can have the same functions there to assemble those.  Noticing and exploiting patterns of repetition is one of the fundamental tools we have in the fight against complexity, and our programming languages support this through [Abstraction](https://en.wikipedia.org/wiki/Abstraction_(software_engineering)).
 
-## Complexity As Inertia
+## Complexity As Mass / Inertia
 
 So, we've looked at some measures of software structure complexity, in order that we can say "this is more complex than this".  However, we've not really said why complexity entails _risk_.  So let's address that now by looking at two analogies, **Inertia** and **Technical Debt**.  
 
-The first way to look at complexity is as **Inertia** or **Mass**:  a software project with more complexity has greater **Inertia** than one with less complexity.
+The first way to look at complexity is as **Inertia** or **Mass**:  a software project with more complexity has greater **Inertia** or **Mass** than one with less complexity.
 
 Newton's Second Law states:
 
@@ -188,7 +188,7 @@ The **Risk-First** approach is that if you want to mitigate some [Feature Risk](
 
 Therefore, [Feature Creep](https://en.wikipedia.org/wiki/Feature_creep) (or [Gold Plating](https://en.wikipedia.org/wiki/Gold_plating_(software_engineering))) is a failure to observe this basic equation:  instead of considering this trade off, you're building every feature possible.  This has an impact on **Complexity Risk**, which in turn impacts [Communication Risk](Communication-Risk) and also [Schedule Risk](Schedule-Risk).
 
-Sometimes, feature-creep happens because either managers feel they need to keep their staff busy, or the staff decide on their own that they need to [keep themselves busy](Agency-Risk).  
+Sometimes, feature-creep happens because either managers feel they need to keep their staff busy, or the staff decide on their own that they need to [keep themselves busy](Agency-Risk).  But now, we can see that basically this boils down to bad risk management.  
 
 > "Perfection is Achieved Not When There Is Nothing More to Add, But When There Is Nothing Left to Take Away" - Antoine de Saint-Exupery
 
