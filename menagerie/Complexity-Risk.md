@@ -124,9 +124,11 @@ Here, we've spotted that the structure of subgraphs **P1** and **P2** are the sa
 
 So, we've looked at some measures of software structure complexity, in order that we can say "this is more complex than this".  However, we've not really said why complexity entails _risk_.  So let's address that now by looking at two analogies, **Inertia** and **Technical Debt**.  
 
-The first way to look at complexity is as **Inertia** or **Mass**:  a software project with more complexity has greater **Inertia** than one with less complexity, and, via Newton's Second Law:
+The first way to look at complexity is as **Inertia** or **Mass**:  a software project with more complexity has greater **Inertia** than one with less complexity.
 
-> F = _m_**a**,   Force = Mass x Acceleration
+Newton's Second Law states:
+
+> F = _m_**a**,    ( Force = Mass x Acceleration )
 
 That is, in order to move your project _somewhere new_, and make it do new things, you need to give it a push, and the more **Mass** it has, the more **Force** you'll need to move (accelerate) it.  **Inertia** and **Mass** are equivalent concepts in physics, and 
 
