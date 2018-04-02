@@ -177,7 +177,7 @@ We wouldn't tolerate this behaviour in a restaurant kitchen, so why put up with 
 In Brooks' essay "No Silver Bullet – Essence and Accident in Software Engineering, a distinction is made between:
 
 > - **Essence**  _the difficulties inherent in the nature of the software_
-> - **Accident**: _those difficulties that attend its production but are not inherent 
+> - **Accident**: _those difficulties that attend its production but are not inherent_
 >     - [Fred Brooks, -_No Silver Bullet_](https://en.wikipedia.org/wiki/No_Silver_Bullet)
 
 The problem with this definition is that we are accepting features of our software as _essential_.  The **Risk-First** approach is that if you want to mitigate some [Feature Risk](Feature-Risk) then you have to pick up **Complexity Risk** as a result.  But, that's a _choice you get to make_.  
