@@ -239,6 +239,11 @@ Whenever two components of a software system need to interact, they have to esta
 function b(a, b, c) {
     return "whatever" // do something here.
 }
+
+function a() {
+	var bOut = b("one", "two", "three");
+	return "something "+bOut;	
+}
 ```
 
 If component **b** then changes in some backwards-incompatible way, say:
