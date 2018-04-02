@@ -104,7 +104,7 @@ So, our first graph had a **Cyclomatic Complexity** of 7. `(15 - 10 + 2)`, while
 
 Although we ended up with our second graph having a **Cyclomatic Complexity** of 1 (the minimum), we can go further through abstraction, because this representation isn't minimal from a **Kolmogorov Complexity** point of view.  For example, we might observe that there are further similarities in the graph that we can "draw out":
 
-![Complexity 3](images/complexity_3.png)
+![Complexity 3](images/connectivity_3.png)
 
 
 
