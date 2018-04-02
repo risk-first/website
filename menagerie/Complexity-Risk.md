@@ -146,9 +146,9 @@ To paraphrase:
 
 > "Most of your mass you owe due to E=mc², you owe to the fact that your mass is packed with energy, because of the interactions between these quarks and gluon fluctuations in the gluon field... what we think of as ordinarily empty space... that turns out to be the thing that gives us most of our mass." - [Veritaseum](https://www.youtube.com/watch?annotation_id=annotation_3771848421&feature=iv&src_vid=Xo232kyTsO0&v=Ztc6QPNUqls)
 
-I'm not an expert in physics, _at all_, and so there is every chance that I am pushing this analogy too hard.  But, substituting quarks and gluons for pieces of software we can (in a very handwaving-y way) say that more complex software simply _weighs more_ than simple software, and therefore has more mass.  
+I'm not an expert in physics, _at all_, and so there is every chance that I am pushing this analogy too hard.  But, substituting quarks and gluons for pieces of software we can (in a very handwaving-y way) say that more complex software has more mass than simple software, because it has more complex interactions going on.  
 
-So, at a basic level, **Complexity Risk** is correlated closely with **Schedule Risk**:  more complexity means stuff just takes longer to do.
+So, at a basic level, **Complexity Risk** is correlated closely with **Schedule Risk**:  more complexity means you need more force to get things done, which takes longer.
 
 ## Technical Debt
 
