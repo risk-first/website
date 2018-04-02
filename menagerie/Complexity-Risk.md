@@ -154,7 +154,7 @@ The reason I am labouring this analogy is to try and make the point that **Compl
  - [Schedule Risk](Schedule-Risk): like **time**.
  - [Complexity Risk](Complexity-Risk): like **mass**.
  
-At a basic level, **Complexity Risk** heavily impacts on **Schedule Risk**:  more complexity means you need more force to get things done, which takes longer.
+At a basic level, **Complexity Risk** heavily impacts on [Schedule Risk](Schedule-Risk):  more complexity means you need more force to get things done, which takes longer.
 
 ## Technical Debt
 
