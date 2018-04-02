@@ -305,7 +305,7 @@ The tradeoff is again attendant [Performance Risk](Production-Risk) to mitigate 
 
 The last area I want to touch on here is networking.  There are plenty of **Complexity Risk** perils in _anything_ to do with networked code, chief amongst them being error handling and (again) protocol evolution.  
 
-In the case of security considerations, exploits _thrive_ on the complexity of your code, and exploit the weaknesses because of it.  In particular, Schneier's Law says, never implement your own crypto scheme:
+In the case of security considerations, exploits _thrive_ on the complexity of your code, and the weaknesses that occur because of it.  In particular, Schneier's Law says, never implement your own crypto scheme:
 
 > "Anyone, from the most clueless amateur to the best cryptographer, can create an algorithm that he himself can't break. It's not even hard. What is hard is creating an algorithm that no one else can break, even after years of analysis." - [Bruce Schneier, 1998](https://en.wikipedia.org/wiki/Bruce_Schneier#Cryptography) 
 
