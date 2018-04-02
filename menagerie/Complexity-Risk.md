@@ -9,7 +9,49 @@ The standard Computer-Science definition of complexity, is [Kolmogorov Complexit
 
 >  "...is the length of the shortest computer program (in a predetermined programming language) that produces the object as output." - [Kolmogorov Complexity, Wikipedia](https://en.wikipedia.org/wiki/Kolmogorov_complexity)
 
-This is a fairly handy definition for us, as it means that to in writing software to solve a problem, there is a lower bound on the complexity of the software we write.  By applying techniques such as abstraction, we can get closer to the Kolmogorov limit.  However, in practice, this is pretty much impossible to quantify.
+This is a fairly handy definition for us, as it means that to in writing software to solve a problem, there is a lower bound on the size of the software we write.  In practice, this is pretty much impossible to quantify.  But that doesn't really matter:  the techniques for _moving in that direction_ are all that we are interested in, and this basically amounts to compression.
+
+Let's say we wanted to write a javascript program to output this string:
+
+```
+abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
+```
+
+We might choose this representation:
+
+```javascript
+ 
+function out() {    (7)
+	return "abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd" (45)
+} (1)
+```
+
+... which contains 53 "symbols", if you count `function`, `out` and `return` as one symbol each.
+
+But, if we write it like this:
+
+```javascript
+const ABCD="ABCD"; (11)
+
+function out() {    (7)
+	return ABCD+ABCD+ABCD+ABCD+ABCD+ABCD+ABCD+ABCD+ABCD+ABCD (21)
+} (1)
+```
+
+With this version, we now have 40 symbols.  And with this version:
+
+```javascript
+const ABCD="ABCD"; (11)
+
+function out() {    (7)
+	return ABCD.repeat(10)  (7)
+} (1)
+```
+
+... we have 26 symbols.  
+
+By applying techniques such as abstraction, we can improve in the direction of the Kolmogorov limit.  
+
 
 ## Connectivity
 
@@ -21,9 +63,23 @@ To see this in action, have a look at the below graph:
 
 ![Connectivity 1](images/connectivity_1.png)
 
-It has 10 vertices, labelled **a** to **g**, and it has 15 links.  
+It has 10 vertices, labelled **a** to **g**, and it has 15 edges (or links) connecting the vertices together.  If any single edge were removed from this diagram, the 10 vertices would still be linked together.   Because of this, we can say that the graph is at least _2-connected_. 
 
-If there are 10 vertices in a graph, then you should be able to connect them minimally with 9 edges.  In the diagram below, we have 
+Let's remove some of those extra links:
+
+![Connectivity 2](images/connectivity_2.png)
+
+In this graph, I've removed 6 of the edges.  Now, we're in a situation where if any single edge is removed, the graph becomes _unconnected_.  That is, it's broken into distinct chunks.  
+
+Also, it's I've arranged it as a hierarchy, which I can do now that it's minimally connected in this way.  For 10 vertices, we need 9 edges to connect everything up: it's always:
+
+```
+  edges = vertices - 1
+```
+
+You can't always equate _connectedness_ with _complexity_, but it helps.  To demonstrate this, we can go further.  
+
+
 
 
 
