@@ -21,8 +21,8 @@ We might choose this representation:
 
 ```javascript
  
-function out() {    (7 symbols)
-	return "abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd" (45 symbols)
+function out() {                                             (7 symbols)
+    return "abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd"        (45 symbols)
 } (1 symbol)
 ```
 
@@ -33,19 +33,19 @@ But, if we write it like this:
 ```javascript
 const ABCD="ABCD"; (11 symbols)
 
-function out() {    (7 symbols)
-	return ABCD+ABCD+ABCD+ABCD+ABCD+ABCD+ABCD+ABCD+ABCD+ABCD (21 symbols)
-} (1 symbol)
+function out() {                                             (7 symbols)
+    return ABCD+ABCD+ABCD+ABCD+ABCD+ABCD+ABCD+ABCD+ABCD+ABCD (21 symbols)
+}                                                            (1 symbol)
 ```
 
 With this version, we now have 40 symbols.  And with this version:
 
 ```javascript
-const ABCD="ABCD"; (11 symbols)
+const ABCD="ABCD";                                           (11 symbols)
 
-function out() {    (7 symbols)
-	return ABCD.repeat(10)  (7 symbols)
-} (1 symbol)
+function out() {                                             (7 symbols)
+    return ABCD.repeat(10)                                   (7 symbols)
+}                                                            (1 symbol)
 ```
 
 ... we have 26 symbols.  
@@ -53,7 +53,7 @@ function out() {    (7 symbols)
 By applying techniques such as abstraction, we can improve in the direction of the Kolmogorov limit.  By allowing ourselves to say that _symbols_ are worth one complexity point, we've allowed that we can be descriptive in our `function` name and `const`.  But we could go further down into [Code Golf]() territory.  This javascript program plays [FizzBuzz] up to 100, but is less readable than you might hope:
 
 ```javascript
-	for(i=0;i<100;)document.write(((++i%3?'':'Fizz')+(i%5?'':'Buzz')||i)+"<br>") (77 symbols)
+	for(i=0;i<100;)document.write(((++i%3?'':'Fizz')+(i%5?'':'Buzz')||i)+"<br>")  (77 symbols)
 ```
 
 So there is at some point a trade-off to be made between **Complexity Risk** and [Communication Risk](Communication-Risk), which we'll return to later.
