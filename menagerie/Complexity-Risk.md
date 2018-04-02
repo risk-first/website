@@ -299,7 +299,7 @@ Although modern languages include plenty of concurrency primitives, (such as the
 
 Recently, languages such as [Clojure](https://clojure.org) have introduced [persistent collections](https://en.wikipedia.org/wiki/Persistent_data_structure) to circumvent concurrency issues.  The basic premise is that any time you want to _change_ the contents of a collection, you get given back a _new collection_.  So, any collection instance is immutable once created.   
 
-The tradeoff is again [Performance Risk](Production-Risk) to mitigate **Complexity Risk**.
+The tradeoff is again attendant [Performance Risk](Production-Risk) to mitigate **Complexity Risk**.
  
 ### Networking / Security
 
