@@ -21,9 +21,9 @@ We might choose this representation:
 
 ```javascript
  
-function out() {    (7)
-	return "abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd" (45)
-} (1)
+function out() {    (7 symbols)
+	return "abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd" (45 symbols)
+} (1 symbol)
 ```
 
 ... which contains 53 "symbols", if you count `function`, `out` and `return` as one symbol each.
@@ -31,21 +31,21 @@ function out() {    (7)
 But, if we write it like this:
 
 ```javascript
-const ABCD="ABCD"; (11)
+const ABCD="ABCD"; (11 symbols)
 
-function out() {    (7)
-	return ABCD+ABCD+ABCD+ABCD+ABCD+ABCD+ABCD+ABCD+ABCD+ABCD (21)
-} (1)
+function out() {    (7 symbols)
+	return ABCD+ABCD+ABCD+ABCD+ABCD+ABCD+ABCD+ABCD+ABCD+ABCD (21 symbols)
+} (1 symbol)
 ```
 
 With this version, we now have 40 symbols.  And with this version:
 
 ```javascript
-const ABCD="ABCD"; (11)
+const ABCD="ABCD"; (11 symbols)
 
-function out() {    (7)
-	return ABCD.repeat(10)  (7)
-} (1)
+function out() {    (7 symbols)
+	return ABCD.repeat(10)  (7 symbols)
+} (1 symbol)
 ```
 
 ... we have 26 symbols.  
