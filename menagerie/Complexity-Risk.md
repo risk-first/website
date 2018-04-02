@@ -58,7 +58,7 @@ But we could go further down into [Code Golf](https://en.wikipedia.org/wiki/Code
 for(i=0;i<100;)document.write(((++i%3?'':'Fizz')+(i%5?'':'Buzz')||i)+"<br>") (66 symbols)
 ```
 
-So there is at some point a trade-off to be made between **Complexity Risk** and [Communication Risk](Communication-Risk).  This is a topic we'll address more in that section.   But for now, it should be said that the more complex a piece of software is, the more difficulty users will have understanding it, and the more difficulty developers will have changing it.  
+So there is at some point a trade-off to be made between **Complexity Risk** and [Communication Risk](Communication-Risk).  This is a topic we'll address more in that section.   But for now, it should be said that [Communication Risk](Communication-Risk) is about _understanding_:  The more complex a piece of software is, the more difficulty users will have understanding it, and the more difficulty developers will have changing it.  
 
 ## Connectivity
 
