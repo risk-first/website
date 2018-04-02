@@ -180,8 +180,7 @@ In Brooks' essay "No Silver Bullet – Essence and Accident in Software Engineer
 
 > - **Essence**  _the difficulties inherent in the nature of the software._
 > - **Accident**: _those difficulties that attend its production but are not inherent._
-
->     - Fred Brooks, -_No Silver Bullet_](https://en.wikipedia.org/wiki/No_Silver_Bullet)
+>     [Fred Brooks, -_No Silver Bullet_](https://en.wikipedia.org/wiki/No_Silver_Bullet)
 
 The problem with this definition is that we are accepting features of our software as _essential_.  The **Risk-First** approach is that if you want to mitigate some [Feature Risk](Feature-Risk) then you have to pick up **Complexity Risk** as a result.  But, that's a _choice you get to make_.  
 
