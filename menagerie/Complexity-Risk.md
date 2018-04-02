@@ -100,7 +100,7 @@ As a tool to battle complexity, we don't just see this in software, but everywhe
  
 ## Cyclomatic Complexity
 
-It would be nice to be able to measure, somehow, the complexity of our first graph with our second, and somehow, be able to say how much simpler our second graph is.  
+It would be nice to be able to measure, somehow, the complexity of our graphs in order to say how much simpler our second graph is.  
 
 In Computer Science, we can measure this property as [Cyclomatic Complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity).  This is:
 
