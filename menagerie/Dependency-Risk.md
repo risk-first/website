@@ -17,7 +17,9 @@ function out() {                                             (7 symbols)
 }                                                            (1 symbol)
 ```
 
-Which had **26** symbols in it.  Now, here's the cheat:  The `repeat()` function was built into Javascript in 2015 in [ECMAScript 6.0](http://www.ecma-international.org/ecma-262/6.0/).  If we'd had to program it ourselves, we might have added this:
+Which had **26** symbols in it.  
+
+Now, here's the cheat:  The `repeat()` function was built into Javascript in 2015 in [ECMAScript 6.0](http://www.ecma-international.org/ecma-262/6.0/).  If we'd had to program it ourselves, we might have added this:
 
 ```javascript
 function repeat(s,n) {                                       (10 symbols)
@@ -40,19 +42,26 @@ function out() {                                             (7 symbols)
 
 .. and re-encode to **14** symbols.  Now, clearly there are some problems with all this:
 
-1.  Kolmogorov complexity is uncomputable anyway.  It's just a fairly abstract idea, so we shouldn't get too hung up on this.  There is no function to be able to say, "what's the Kolmogorov complexity of string X"
-2.  What is this new library function we've created?   Is `abcdRepeater` part of _every_ Javascript?  If so, then we've shifted [Codebase Risk](Complexity-Risk) away from ourselves, but we've pushed [Communication Risk](Communication-Risk) and [Dependency Risk](Dependency-Risk) onto every _other_ user of Javascript.
-3.  Are there equivalent functions for every single other string?  If so, then compilation is no longer a tractable problem: is `return abcdRepeater(10)` correct code?  Well, now we have an infinite list of different `XXXRepeater` functions to check against to see if it is...  So, what we _lose_ in **Kolmogorov Complexity** we gain in **Big-O Complexity**.  
+1.  Clearly, _language matters_:  the Kolmogorov complexity is dependent on the language, and the features the language has built in.  
+2.  The exact Kolmogorov complexity is uncomputable anyway.  It's just a fairly abstract idea, so we shouldn't get too hung up on this.  There is no function to be able to say, "what's the Kolmogorov complexity of string X"
+3.  What is this new library function we've created?   Is `abcdRepeater` going to be part of _every_ Javascript?  If so, then we've shifted [Codebase Risk](Complexity-Risk) away from ourselves, but we've pushed [Communication Risk](Communication-Risk) and [Dependency Risk](Dependency-Risk) onto every _other_ user of Javascript.
+4.  Are there equivalent functions for every single other string?  If so, then compilation is no longer a tractable problem: is `return abcdRepeater(10)` correct code?  Well, now we have an infinite list of different `XXXRepeater` functions to check against to see if it is...  So, what we _lose_ in [Kolmogorov Complexity](Complexity-Risk) we gain in [Big-O Complexity](Complexity-Risk).  
 
-## Are libraries a free lunch?
+## Are Libraries a Free Lunch?
 
 [npmjs](http://npmjs.com) currently boasts of having over 650,000 different libraries, so although we're unlikely to find an `abcdRepeater` function this suggests that we can "win" against Kolmogorov complexity by using them.  But actually, this is really a problem with the metric itself.  
 
 In reality, using libraries allows us a "Kolmogorov tradeoff": our [Codebase Risk](Complexity-Risk) for other kinds of risk instead.
 
-To be fair to Andrey Kolmogorov, who first published on the subject in 1963, reusable libraries were not really a thing back then.
+To be fair to Andrey Kolmogorov, who first published on the subject in 1963, reusable libraries were not really a thing back then, or was the Internet, where I can quickly search for a library that serves my purposes.  And sadly, since he died in 1987, he missed out on seeing the concept of "web services" (dependencies served via the Internet).  
 
-Web Services
+For example, there's a service called [Fill Murray](http://www.fillmurray.com) where  can ask for random, sized images of Bill Murray (to use as placeholders for web design purposes, obviously).  
+
+Today, choosing libraries looks like a "bounded rationality"-type process:
+
+> "Bounded rationality is the idea that when individuals make decisions, their rationality is limited by the tractability of the decision problem, the cognitive limitations of their minds, and the time available to make the decision. " - [Bounded Rationality, _Wikipedia_](https://en.wikipedia.org/wiki/Bounded_rationality)
+
+We're going to dig down into some of the risks associated with this, in order to build a model of what this decision making process should involve.
 
 ## Types Of Dependency Risk
 
@@ -133,7 +142,7 @@ Sometimes, the amount of code and complexity _goes up_:  Spring Templates exampl
 
 ## Choosing And Using A Library
 
-
+-- we don't use bounded rationality.
 
 
 how to choose libraries
