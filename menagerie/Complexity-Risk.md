@@ -1,7 +1,7 @@
 
-**Complexity Risk** are the risks to your project due to its underlying complexity.  This could be down to the size of the codebase, the number of modules, the interconnectedness of the modules and how well-factored the code is.   
+**Complexity Risk** are the risks to your project due to its underlying complexity.  In the next few sections, we'll break this idea down, looking at [Dependency Risk](Dependency-Risk) and [Boundary Risk](Boundary-Risk) as two particular sub-types of **Complexity Risk**.  However, here, we're going to be specifically focusing on _code you write_: the size of your code-base, the number of modules, the interconnectedness of the modules and how well-factored the code is.  
 
-Often, programmers think about **Complexity Risk** as **Technical Debt** (see below), but there's a bit more to it than that.
+You could think of this as **Codebase Risk**, and we'll look, three separate measures of complexity and talk about **Technical Debt**, and look at places in which **Codebase Risk** is at it's greatest.
 
 ## Kolmogorov Complexity
 
@@ -86,6 +86,18 @@ Also, it's I've arranged it as a hierarchy, which I can do now that it's only 1-
 
 Note that I could pick any hierarchy here:  I don't have to start at **c** (although it has the nice property that it has two roughly even sub-trees attached to it).
 
+### Space and Time Complexity
+
+So far, we've looked at a couple of definitions of complexity in terms of the _structure_ of software.  However, in Computer Science there is a whole branch of complexity theory devoted to how the software _runs_, namely [Big O Complexity](https://en.wikipedia.org/wiki/Big_O_notation).  
+
+Once running, an algorithm or data structure will consume space or runtime dependent on it's characteristics.  As with Garbage Collectors, these characteristics can introduce [Performance Risk](Production-Risk) which can easily catch out the unwary.  By and large, using off-the-shelf components helps, but you still need to know their performance characteristics. 
+
+The [Big O Cheatsheet](http://bigocheatsheet.com) is a wonderful resource to investigate this further.  
+
+A third measure of complexity.  ( Start calling these out).
+
+Depth-first search complexity with N and E.
+
 ## Hierarchies and Modularization
 
 How does this help us?   Imagine if **a** - **j** were modules of a software system, and the edges of the graph showed communications between the different sub-systems.  In the first graph, we're in a worse position:  who's in charge?  What deals with what?  Can I isolate a component and change it safely?  What happens if one component disappears?  But, in the second graph, it's easier to reason about, because of the reduced number of connections and the new heirarchy of organisation.  
@@ -97,6 +109,10 @@ As a tool to battle complexity, we don't just see this in software, but everywhe
  - **Cells** - such as blood cells, nerve cells, skin cells in the [Human Body](https://en.wikipedia.org/wiki/List_of_distinct_cell_types_in_the_adult_human_body).
  - **Organs** - like hearts livers, brains etc.
  - **Organisms** - like you and me.
+ 
+## Depth-First Complexity
+
+tbd.  bring in stuff about algorithmic complexity here. 
  
 ## Cyclomatic Complexity
 
@@ -231,13 +247,24 @@ But (generally speaking), **Dead-End Risk** isn't caused by **Complexity Risk**,
 
 Complexity isn't spread evenly within a software project.  Some problems, some areas, have more than their fair share of issues.   We're going to cover a few of these now, but be warned, this is not a complete list by any means:
 
- - Protocols / Types
  - Memory Management
+ - Protocols / Types
  - Algorithmic (Space and Time) Complexity
  - Concurrency / Mutability
  - Networks / Security
+
+### Memory Management
+
+Memory Management is another place where **Complexity Risk** hides:
+
+> "Memory leaks are a common error in programming, especially when using languages that have no built in automatic garbage collection, such as C and C++." - [Memory Leak, _Wikipedia_](https://en.wikipedia.org/wiki/Memory_leak)
+
+Garbage Collectors (as found in Javascript or Java) offer you the deal that they will mitigate the [Complexity Risk](Complexity-Risk) of you having to manage your own memory, but in return perhaps give you fewer guarantees about the _performance_ of your software.  Again, there are times when you can't accommodate this [Performance Risk](Production-Risk), but these are rare and usually only affect a small portion of an entire software-system.  
+ 
  
 ### Protocols / Types
+
+tbd - this is a [Boundary Risk](Boundary-Risk)
 
 Whenever two components of a software system need to interact, they have to establish a protocol for doing so.  There are lots of different ways this can work, but the simplest example I can think of is where some component **a** calls some function **b**.  e.g: 
 
@@ -281,21 +308,7 @@ Now, of course, there is a tradeoff:  we _mitigate_ [Complexity Risk](Complexity
 
 Nevertheless, compilers and type-checking are so prevalent in software that clearly, you have to accept that in most cases, the trade-off has been worth it: Even languages like [Clojure](https://clojure.org) have been retro-fitted with [type checkers](https://github.com/clojure/core.typed/wiki/User-Guide).
 
-### Memory Management
-
-Memory Management is another place where **Complexity Risk** hides:
-
-> "Memory leaks are a common error in programming, especially when using languages that have no built in automatic garbage collection, such as C and C++." - [Memory Leak, _Wikipedia_](https://en.wikipedia.org/wiki/Memory_leak)
-
-Garbage Collectors (as found in Javascript or Java) offer you the deal that they will mitigate the [Complexity Risk](Complexity-Risk) of you having to manage your own memory, but in return perhaps give you fewer guarantees about the _performance_ of your software.  Again, there are times when you can't accommodate this [Performance Risk](Production-Risk), but these are rare and usually only affect a small portion of an entire software-system.  
-
-### Space and Time Complexity
-
-So far, we've looked at a couple of definitions of complexity in terms of the _structure_ of software.  However, in Computer Science there is a whole branch of complexity theory devoted to how the software _runs_, namely [Big O Complexity](https://en.wikipedia.org/wiki/Big_O_notation).  
-
-Once running, an algorithm or data structure will consume space or runtime dependent on it's characteristics.  As with Garbage Collectors, these characteristics can introduce [Performance Risk](Production-Risk) which can easily catch out the unwary.  By and large, using off-the-shelf components helps, but you still need to know their performance characteristics. 
-
-The [Big O Cheatsheet](http://bigocheatsheet.com) is a wonderful resource to investigate this further.  
+tbd.  languages are their own worlds
 
 ### Concurrency / Mutability
 
