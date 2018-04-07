@@ -78,13 +78,33 @@ So, let's look at the different kinds of **Dependency Risk** we meet.  Luckily, 
 
 So, we're going to focus on [Dependency Risk] from 5 different perspectives:
 
+ - **Reliability Risk**
  - [Communication Risk](Communication-Risk)
  - [Scheduling Risk](Scheduling-Risk)
  - [Complexity Risk](Complexity-Risk)
  - [Dead-End Risk](Complexity-Risk)
- - **Reliability Risk**
  
-Apart from **Reliability Risk**, which we'll cover below, all of these we've looked at in some detail already.
+**Reliability Risk** is the new one here, so let's look at that first.
+
+### Reliability Risk
+
+ - If a component **A** uses component **B**, unless there is some extra redundancy around **B**, then **A** _can't be more reliable than **B**. 
+ 
+ - Are there bugs in **B** that are going to prevent it working correclty in all circumstances?
+ 
+(This might sound unlikely, but I've made several career decisions off the back of this)
+
+Dependency and reliability
+
+Pinto
+https://en.wikipedia.org/wiki/Reliability_engineering
+
+FECMA FEMA https://en.wikipedia.org/wiki/Failure_mode_and_effects_analysis
+
+Diagram of a distributed software system - where can failures hide?
+
+SPOFs.
+
 
 ### Communication Risk
 
@@ -113,7 +133,17 @@ If a component **A** of our project _depends_ on **B** for some kind of processi
  
 ### Dead-End Risk
 
- - When you choose a new component, **D** to depend on, you can't be certain that it's going to work out in your favour.  There's [Dead End Risk](Complexity Risk] that you've chosen the wrong thing.   I don't know whether a library is actually going to reduce my [Codebase Risk](Complexity-Risk) or make it worse. 
+First, when you choose a new component to depend on, you can't be certain that it's going to work out in your favour.  There's [Dead End Risk](Complexity Risk] that you've chosen the wrong thing.  You can mitigate this somewhat by searching resources online like [StackOverflow]() to find other people using the dependency in the same way as you, or alternatively by  [Prototyping](Prototyping) hard in order to uncover as much of the [Hidden Risk](Risk) as possible.
+
+Second, you can't always be sure that a dependency now will always have the same guarantees in the future: 
+- **Ownership changes** (e.g. [Oracle](http://oracle.com) buys [Sun](http://sun.com) who own [Java](https://en.wikipedia.org/wiki/Java_%28programming_language%29) for example)
+- **Licensing changes**.  (e.g. [Oracle](http://oracle.com) buys **Tangosol** who make [Coherence](https://en.wikipedia.org/wiki/Oracle_Coherence) for example)
+- Security updates not applied.
+- **Better alternatives become available**:  As a real example of this, I began a project in 2016 using [Apache Solr]().  However, in 2018, I would probably use [ElasticSearch](https://en.wikipedia.org/wiki/Elasticsearch).  In the past, I've built websites using [Drupal]() and then later converted them to use [Wordpress]().
+
+Some predictors:
+ 
+
  
  - Or they produce a new version which is incompatible with your old version, forcing you to upgrade?  (libraries, webservices)
  
@@ -121,6 +151,10 @@ If a component **A** of our project _depends_ on **B** for some kind of processi
 
 
 ### Complexity Risk
+
+I don't know whether a library is actually going to reduce my [Codebase Risk](Complexity-Risk) or make it worse. 
+
+Although 
 
 These stem from  
  
@@ -138,26 +172,6 @@ In a project at work, coming across use of Hazlecast to cache the session IDs.  
 
 
 Sometimes, the amount of code and complexity _goes up_:  Spring Templates example:  really hard to debug, more code.  But, better?  No chance of injection attacks.
-
-
-### Reliability Risk
-
- - If a component **A** uses component **B**, unless there is some extra redundancy around **B**, then **A** _can't be more reliable than **B**. 
- - Further, you can't always be sure that a dependency now will always have the same guarantees in the future:  what if the ownership changes, or the licensing costs change?  Or security fixes don't get applied?  Or some other package becomes better than the one you use?    (Future Reliability Risk)
- - Are there bugs in **B** that are going to prevent it working correclty in all circumstances?
- 
-(This might sound unlikely, but I've made several career decisions off the back of this)
-
-Dependency and reliability
-
-Pinto
-https://en.wikipedia.org/wiki/Reliability_engineering
-
-FECMA FEMA https://en.wikipedia.org/wiki/Failure_mode_and_effects_analysis
-
-Diagram of a distributed software system - where can failures hide?
-
-SPOFs.
 
 
 ## Choosing And Using A Library
