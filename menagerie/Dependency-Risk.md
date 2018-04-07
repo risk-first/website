@@ -47,9 +47,16 @@ function out() {                                             (7 symbols)
 3.  What is this new library function we've created?   Is `abcdRepeater` going to be part of _every_ Javascript?  If so, then we've shifted [Codebase Risk](Complexity-Risk) away from ourselves, but we've pushed [Communication Risk](Communication-Risk) and [Dependency Risk](Dependency-Risk) onto every _other_ user of Javascript.
 4.  Are there equivalent functions for every single other string?  If so, then compilation is no longer a tractable problem: is `return abcdRepeater(10)` correct code?  Well, now we have an infinite list of different `XXXRepeater` functions to check against to see if it is...  So, what we _lose_ in [Kolmogorov Complexity](Complexity-Risk) we gain in [Big-O Complexity](Complexity-Risk).  
 
-## Are Libraries a Free Lunch?
+## Types Of Dependencies
 
-[npmjs](http://npmjs.com) currently boasts of having over 650,000 different libraries, so although we're unlikely to find an `abcdRepeater` function this suggests that we can "win" against Kolmogorov complexity by using them.  But actually, this is really a problem with the metric itself.  
+We're going to consider 3 basic types of dependencies in this section:  
+ - **Our own**: write some code ourselves to meet the dependency.
+ - **Libraries**:  importing code from the internet, and using it in our project
+ - **Services**: calling a service on the internet, (probably via `http`)
+ 
+All 3 approaches involve a different risk-profile.  Initially, writing our own code was the only game in town:  when I started programming with a Commodore 64, you had a user guide, BASIC and that was pretty much it.  Tool support was very thin-on-the-ground.  Even now, there's always the opportunity cost of depending on our own code, which may well be more appropriate and expedient for whatever is required.  
+
+Using library code offers a [Schedule Risk](Schedule-Risk) shortcut:  Consider [npmjs](http://npmjs.com), which is the most popular package manager for the Javascript ecosystem.  It currently boasts of having over 650,000 different libraries, so although we're unlikely to find an `abcdRepeater` function this suggests that we can "win" against Kolmogorov complexity by using them.  But actually, this is really a problem with the metric itself.  
 
 In reality, using libraries allows us a "Kolmogorov tradeoff": our [Codebase Risk](Complexity-Risk) for other kinds of risk instead.
 
@@ -69,9 +76,19 @@ So, let's look at the different kinds of **Dependency Risk** we meet.  Luckily, 
 
 ![Venn Dependency Risk](images/venn_dependency_risk.JPG)
 
+So, we're going to focus on [Dependency Risk] from 5 different perspectives:
 
+ - [Communication Risk](Communication-Risk)
+ - [Scheduling Risk](Scheduling-Risk)
+ - [Complexity Risk](Complexity-Risk)
+ - [Dead-End Risk](Complexity-Risk)
+ - **Reliability Risk**
+ 
+Apart from **Reliability Risk**, which we'll cover below, all of these we've looked at in some detail already.
 
 ### Communication Risk
+
+We've already looked at communication risk... tbd.
 
  - The concept that there is a module **D** which solves my problem isn't something I'd even considered.    
  - I'd like to have a dependency on some module **D**, but I don't even know what to search for.  
@@ -83,6 +100,43 @@ So, let's look at the different kinds of **Dependency Risk** we meet.  Luckily, 
 (But:  is understanding **D** more trouble than understanding <yourcode>?)  
 
 I didn't even know I was missing Redux until I'd heard of it.
+
+### Scheduling Risk
+
+If a component **A** of our project _depends_ on **B** for some kind of processing, you can't really complete **A** before writing **B**.   This makes _scheduling_ the project harder, and if component **A** is a risky part of the project, then the chances are you'll want to mitigate risk there first.  There are a couple of ways to do this:
+
+- **Standards**:  If component **B** is a database, a queue, mail gateway or something else with a standard interface, then you're in luck.   Write **A** to those standards, and find a cheap, simple implementation, giving you time to sort out exactly what implementation of **B** you're going for.  This is not a great long-term solution, because obviously, you're not using the _real_ dependency.  You might get surprised when the behaviour of the real component is subtly different.  But it can reduce [Schedule Risk](Schedule-Risk) in the short-term.
+- **Coding To Interfaces**:  If standards aren't an option, but the surface area of **B** that **A** uses is quite small and obvious, you can write a small interface for it, and work behind that, using a [Mock](https://en.wikipedia.org/wiki/Mock_object) for **B** while you're waiting for finished component.  Write the interface to cover only what **A** _needs_, rather than everything that **B** _does_ in order to minimize the risk of [Leaky Abstractions](https://en.wikipedia.org/wiki/Leaky_abstraction).
+- **Do The Homework**:  Accept that **B** is going to bite you and try to make the decision now.  Pick the best 3rd-party component you can find (preferably on a trial basis), whilst being aware that you might get it wrong and need to change later.   Write [Tests](Testing) to alleviate [Communication Risk](Communication-Risk).
+ 
+### Dead-End Risk
+
+ - When you choose a new component, **D** to depend on, you can't be certain that it's going to work out in your favour.  There's [Dead End Risk](Complexity Risk] that you've chosen the wrong thing.   I don't know whether a library is actually going to reduce my [Codebase Risk](Complexity-Risk) or make it worse. 
+ 
+ - Or they produce a new version which is incompatible with your old version, forcing you to upgrade?  (libraries, webservices)
+ 
+ - Dependency Change - REST endpoints, etc.   Semantic versioning .  Hickey
+
+
+### Complexity Risk
+
+These stem from  
+ 
+ - Jar hell:  are you bringing in more stuff than is helping you?   Are you really overall decreasing complexity on the project or making it worse?  [Versioning Risk](
+ (testing jars vs runtime jars.  how integrated is the jar in question?  Is it everywhere, or is it behind an interface?
+ 
+ - Shipped size complexity - Spring.  Sometimes, you just end up with a ton of jars, even when they don't collide on version numbers. (Kolmogorov Complexity?)
+
+ - Big O Complexity Again (Complexity-Risk)
+
+
+Example
+
+In a project at work, coming across use of Hazlecast to cache the session IDs.   But, the app is only used once every month, and session IDs can be obtained in milliseconds.   Why cache them?  By doing this, you have introduced extra dependency risk, cache invalidation risks, networking risks, synchronisation risks and so on, for actually no benefit at all.  Unless, it’s CV building.  
+
+
+Sometimes, the amount of code and complexity _goes up_:  Spring Templates example:  really hard to debug, more code.  But, better?  No chance of injection attacks.
+
 
 ### Reliability Risk
 
@@ -102,42 +156,6 @@ FECMA FEMA https://en.wikipedia.org/wiki/Failure_mode_and_effects_analysis
 Diagram of a distributed software system - where can failures hide?
 
 SPOFs.
-
-### Scheduling Risk
-
- - If a component **A** _depends_ on **B** for some kind of processing, you can't really complete **A** before writing **B**.   This makes _scheduling_ the project harder.  Sure, you can knock out some interfaces, but these are likely to be "leaky abstractions" [Schedule Risk](Schedule-Risk)
- -  3rd parties / outsourcing
- 
- - this is even true if you are writing the dependencies yourself.
- 
-### Dead-End Risk
-
- - When you choose a new component, **D** to depend on, you can't be certain that it's going to work out in your favour.  There's [Dead End Risk](Complexity Risk] that you've chosen the wrong thing.   I don't know whether a library is actually going to reduce my [Codebase Risk](Complexity-Risk) or make it worse. 
- 
- - Or they produce a new version which is incompatible with your old version, forcing you to upgrade?  (libraries, webservices)
- 
- - Dependency Change - REST endpoints, etc.   Semantic versioning .  Hickey
-
-
-### Complexity Risk
-
-These stem from  
- 
- - Jar hell:  are you bringing in more stuff than is helping you?   Are you really overall decreasing complexity on the project or making it worse?  [Versioning Risk](
- (testing jars vs runtime jars.  how integrated is the jar in question?  Is it everywhere, or is it behind an interface?
- 
- - Shipped size complexity - Spring.  Sometimes, you just end up with a ton of jars, even when they don't collide on version numbers.
-
- - Big O Complexity Again (Complexity-Risk)
-
-
-Example
-
-In a project at work, coming across use of Hazlecast to cache the session IDs.   But, the app is only used once every month, and session IDs can be obtained in milliseconds.   Why cache them?  By doing this, you have introduced extra dependency risk, cache invalidation risks, networking risks, synchronisation risks and so on, for actually no benefit at all.  Unless, it’s CV building.  
-
-
-Sometimes, the amount of code and complexity _goes up_:  Spring Templates example:  really hard to debug, more code.  But, better?  No chance of injection attacks.
-
 
 
 ## Choosing And Using A Library
