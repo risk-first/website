@@ -67,7 +67,7 @@ We're going to dig down into some of the risks associated with this, in order to
 
 So, let's look at the different kinds of **Dependency Risk** we meet.  Luckily, we've actually already come across most of this stuff before: there's a lot of overlap between the risks due to dependencies, and the risks we've already seen.   It looks something like this:
 
-![Venn Dependency Risk](images/venn_dependency_risk.jpg)
+![Venn Dependency Risk](images/venn_dependency_risk.JPG)
 
 
 
