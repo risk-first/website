@@ -20,6 +20,8 @@ Let's have a quick look at how that works with a `curl` command, which allows me
 > curl -v http://google.com/preferences      # -v indicates verbose
 ```
 
+### DNS - Domain Name System
+
 Then, the first thing that happens is this:
 
 ```
@@ -27,7 +29,9 @@ Then, the first thing that happens is this:
 *   Trying 216.58.204.78...
 ```
 
-At this point, curl has used [DNS] to _resolve_ the address "google.com" to an IP address.  This is some [Abstraction](Complexity-Risk):  instead of using the machine's [IP Address](https://en.wikipedia.org/wiki/IP_address) on the network, (216.58.204.78), I can use a human-readable address, (google.com).   The address "google.com" doesn't necessarily resolve to that same address each time:  _They have multiple IP addresses for google.com_.   But, for the rest of the `curl` request, I'm now set to just use this one.
+At this point, curl has used [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) to _resolve_ the address "google.com" to an IP address.  This is some [Abstraction](Complexity-Risk):  instead of using the machine's [IP Address](https://en.wikipedia.org/wiki/IP_address) on the network, (216.58.204.78), I can use a human-readable address, (google.com).   The address "google.com" doesn't necessarily resolve to that same address each time:  _They have multiple IP addresses for google.com_.   But, for the rest of the `curl` request, I'm now set to just use this one.
+
+### IP - Internet Protocol
 
 But this hints at what is beneath the abstraction:  although I'm loading a web-page, the communication to the Google server happens by [IP Protocol](https://en.wikipedia.org/wiki/Internet_Protocol) - it's a bunch of discrete "packets" (streams of binary digits).  You can think of a packet as being like a real-world parcel or letter.
 
@@ -39,6 +43,8 @@ But, even this concept of "packets" is an [Abstraction](Complexity-Risk).  Altho
 
 I ran this at home, using Wifi, which uses [IEEE 802.11 Protocol](https://en.wikipedia.org/wiki/IEEE_802.11), which allows my laptop to communicate with the router wirelessly, again using an agreed, standard protocol.  But even _this_ isn't the bottom, because this is actually probably specifying something like [MIMO-OFDM](https://en.wikipedia.org/wiki/MIMO-OFDM), giving specifications about frequencies of microwave radiation, antennas, multiplexing, error-correction codes and so on.
 
+### TCP - Transmission Control Protocol
+
 Anyway, the next thing that happens is this:
 
 ```
@@ -46,9 +52,11 @@ Anyway, the next thing that happens is this:
 * Connected to google.com (216.58.204.78) port 80 (#0)
 ```
 
-The second obvious [Abstraction](Complexity-Risk) going on here is that `curl` now believes it has _a TCP connection_.   The TCP connection abstraction gives us the surety that the packets get delivered in the right order, and retried if they go missing.  Effectively it _guarantees_ these things, or that it will have a connection failure if it can't make the guarantees. 
+The second obvious [Abstraction](Complexity-Risk) going on here is that `curl` now believes it has _a TCP(https://en.wikipedia.org/wiki/Transmission_Control_Protocol) connection_.   The TCP connection abstraction gives us the surety that the packets get delivered in the right order, and retried if they go missing.  Effectively it _guarantees_ these things, or that it will have a connection failure if it can't make the guarantees. 
 
 But, this is a fiction - TCP is built on the IP protocol, packets of data on the network.  So there are lots of packets floating around which say "this connection is still alive" and "I'm message 5 in the sequence" and so on in order to maintain this fiction.  But that means that the HTTP protocol can forget about this complexity.
+
+### HTTP - Hypertext Transfer Protocol
 
 Next, we see this:
 
@@ -83,9 +91,11 @@ The document has moved
 ```
 
 There's a lot going on here, but we can break it down really easily into 3 chunks:
-- The first line is the HTTP Status.  `301` is a code meaning that the page has moved.
+- The first line is the [HTTP Status Code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).  `301` is a code meaning that the page has moved.
 - The next 9 lines are HTTP headers again (name-value pairs).   The `Location:` directive tells us where the page has moved to.  Instead of trying `http://google.com/preferences`, we should have used `http://www.google.com/preferences`.  
 - The lines starting `<HTML>` are now some HTML to display on the screen to tell the user that the page has moved.  In most browsers, you don't get to see this:  the browser will understand the meaning of the `301` error and redirect you to the location.  
+
+### A Stack Of Protocols
 
 Let's look at all the levels of abstraction we saw here:
  - `HTTP` Abstraction: Name-Value pairs, agreed on by both `curl` and Google, URLs and error codes.
