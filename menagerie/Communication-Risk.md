@@ -1,3 +1,155 @@
+Communication Risk is the risk of communication between two entities _going wrong_, due to loss or misunderstanding.
+If we had identical knowledge, there would be no need to do any communicating at all, and therefore and also no [Communication Risk](Communication-Risk).  
+
+Humans are not all-powerful oracles.  We rely on our _senses_ to improve our [Internal Models](Internal-Model) of the world, but there is **Communication Risk** here - we might overlook something vital (like an oncoming truck) or mistake something someone says (like "Don't cut the green wire").  Because **Information Risk** is fundamental, the computer systems we build share the same flaws and have the same constraints.
+
+To get inside **Communication Risk**, we need to understand **Communication** as it pertains to two parties, whether they are _machines_, _people_ or _products_:   we'll look at each in turn.  In order to do that, we're going to examine two concepts in each of these settings: 
+ - **Bandwidth**, the rate at which we can transfer data and
+ - **Communication Protocols** -  the systems of rules  that allow two or more entities of a communications system to transmit information.
+
+## Machines and Communication Protocols
+
+In this section, I want to hammer home the concept of [Communication Protocol](https://en.wikipedia.org/wiki/Communication_protocol) and how it relates to [Abstraction](Complexity-Risk), which we touched on in [Complexity Risk](Complexity-Risk) already.  
+
+So, to do this, let's look in a bit of detail at the [http protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol), which of course is used in your browser to load web pages.  As far as the [http protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) is concerned, a _client_ makes an `HTTP Request` at a specific URL and the `HTTP Response` is returned in a predictable format that the browser can understand. 
+
+Let's have a quick look at how that works with a `curl` command, which allows me to load a web page from the command line.   We're going to try and load Google's preferences page, and see what happens.  If I type:
+
+
+```bash
+> curl -v http://google.com/preferences      # -v indicates verbose
+```
+
+Then, the first thing that happens is this:
+
+```bash
+* Rebuilt URL to: http://google.com/
+*   Trying 216.58.204.78...
+```
+
+At this point, curl has used [DNS] to _resolve_ the address "google.com" to an IP address.  This is some [Abstraction](Complexity-Risk):  instead of using the machine's [IP Address](https://en.wikipedia.org/wiki/IP_address) on the network, (216.58.204.78), I can use a human-readable address, (google.com).   The address "google.com" doesn't necessarily resolve to that same address each time:  _They have multiple IP addresses for google.com_.   But, for the rest of the `curl` request, I'm now set to just use this one.
+
+But this hints at what is beneath the abstraction:  although I'm loading a web-page, the communication to the Google server happens by [IP Protocol](https://en.wikipedia.org/wiki/Internet_Protocol) - it's a bunch of discrete "packets" (streams of binary digits).  You can think of a packet as being like a real-world parcel or letter.
+
+Each packet consists of two things:  
+- An address, which tells the network components (such as routers and gateways) where to send the packet, much like you'd write the address on the outside of a parcel.
+- The _payload_, the stream of bytes for processing at the destination.   Like the contents of the parcel.
+
+But, even this concept of "packets" is an [Abstraction](Complexity-Risk).  Although all the components of the network interoperate with this protocol, we might be using Wired Ethernet, or Wifi, or 4G or _something else_.
+
+I ran this at home, using Wifi, which uses [IEEE 802.11 Protocol](https://en.wikipedia.org/wiki/IEEE_802.11), which allows my laptop to communicate with the router wirelessly, again using an agreed, standard protocol.  But even _this_ isn't the bottom, because this is actually probably specifying something like [MIMO-OFDM](https://en.wikipedia.org/wiki/MIMO-OFDM), giving specifications about frequencies of microwave radiation, antennas, multiplexing, error-correction codes and so on.
+
+Anyway, the next thing that happens is this:
+
+```bash
+* TCP_NODELAY set
+* Connected to google.com (216.58.204.78) port 80 (#0)
+```
+
+The second obvious [Abstraction](Complexity-Risk) going on here is that `curl` now believes it has _a TCP connection_.   The TCP connection abstraction gives us the surety that the packets get delivered in the right order, and retried if they go missing.  Effectively it _guarantees_ these things, or that it will have a connection failure if it can't make the guarantees. 
+
+But, this is a fiction - TCP is built on the IP protocol, packets of data on the network.  So there are lots of packets floating around which say "this connection is still alive" and "I'm message 5 in the sequence" and so on in order to maintain this fiction.  But that means that the HTTP protocol can forget about this complexity.
+
+Next, we see this:
+
+```bash
+> GET /preferences HTTP/1.1     (1)
+> Host: google.com              (2)
+> User-Agent: curl/7.54.0       (3)
+> Accept: */*                   (4)
+>                               (5)
+```
+
+This is now the HTTP protocol proper, and these 5 lines are sending information _over the connection_ to the Google server.  Line (1) says what version of HTTP we are using, and the path we're loading (`/preferences` in this case).   Lines `(2)` to `(4)` are _headers_.  They are name-value pairs, separated with a colon.   The HTTP protocol specifies a bunch of these names, and later versions of the protocol might introduce newer ones.  Line (5) is an empty line, which indicates that we're done with the headers, please give us the response.  And it does:
+
+```bash
+< HTTP/1.1 301 Moved Permanently                                      
+< Location: http://www.google.com/preferences
+< Content-Type: text/html; charset=UTF-8
+< Date: Sun, 08 Apr 2018 10:24:34 GMT
+< Expires: Tue, 08 May 2018 10:24:34 GMT
+< Cache-Control: public, max-age=2592000
+< Server: gws
+< Content-Length: 230
+< X-XSS-Protection: 1; mode=block
+< X-Frame-Options: SAMEORIGIN
+< 
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+</BODY></HTML>
+* Connection #0 to host google.com left intact
+```
+
+There's a lot going on here, but we can break it down really easily into 3 chunks:
+- The first line is the HTTP Status.  `301` is a code meaning that the page has moved.
+- The next 9 lines are HTTP headers again (name-value pairs).   The `Location:` directive tells us where the page has moved to.  Instead of trying `http://google.com/preferences`, we should have used `http://www.google.com/preferences`.  
+- The lines starting `<HTML>` are now some HTML to display on the screen to tell the user that the page has moved.  In most browsers, you don't get to see this:  the browser will understand the meaning of the `301` error and redirect you to the location.  
+
+Let's look at all the levels of abstraction we saw here:
+ - `HTTP` Abstraction: Name-Value pairs, agreed on by both `curl` and Google, URLs and error codes.
+ - `TCP` Abstraction:  The concept of a "connection" with guarantees about ordering and delivery.
+ - `DNS` Abstraction:  Names of servers to IP Addresses.
+ - `IP` Abstraction:  "Packets" with addresses and payloads.
+ - `Wifi` Abstraction:  "Networks", 802.11 flavours.
+ - Transmitters, Antennas, error correction codes, etc.
+ 
+HTTP "stands on the shoulders of giants".  Not only does it get to use pre-existing protocols like TCP and DNS to make it's life easier, it got 802.11 "for free" when this came along and plugged into the existing IP protocol.  This is the key value of abstraction:  you get to piggy-back on _existing_ patterns, and use them yourself. 
+
+What would HTTP look like without any of these protocols?  It's really difficult to envisage, but without the IP protocol it wouldn't even be compatible with the existing Internet. You'd need special support in all the hardware in all the networks on the planet, in much the same way as [IPv6](https://en.wikipedia.org/wiki/IPv6) (a new version of the IP protocol) does.  
+
+At the lowest level in the above list, we are a long way from HTTP, and it's the world of [Information Theory](https://en.wikipedia.org/wiki/Information_theory), a field invented by Claude Shannon who described it:
+
+> "The fundamental problem of communication is that of reproducing at one point, either exactly or approximately, a message selected at another point." - [A Mathematical Theory Of Communication, _Claude Shannon_](https://en.wikipedia.org/wiki/A_Mathematical_Theory_of_Communication)
+
+He introduced the concepts of _entropy_ (which is closely related to [Kolmogorov Complexity](Complexity-Risk)), _redundancy_ (adding extra "correction" information in case of loss) and the use of "bits" as single units of information.
+
+
+
+
+
+
+shannon.
+
+So, the takeaways from this section are:
+
+- Machine-to-machine or process-to-process communication is based on _towers_ of abstraction.
+- These abstractions are somewhat leaky, in that we can see them at work (as in the curl example)
+- Broadly, they are simplifying the experience of building communicating software systems.
+- There's a lot of complexity here.  Try not to implement it yourself.
+- At the level of the physical world, Shannon's Information Theory comes into play.  
+- Abstraction is a really heavily-used technique.
+- Error correction codes.
+
+How does this relate to Communication Risk?
+
+- Ok, well we can directly relate Shannon theory.
+- We also need to consider the power of abstraction.  (stuff below)
+- 
+
+
+## Human Communication
+
+We need to dive further into the concept of the internal model to figure this out.
+
+In the section on computers, it was all about shared, standardized abstractions - how does this apply to people?
+
+- Computer systems heavily rely on standards.
+
+
+https://en.wikipedia.org/wiki/World_view   https://en.wikipedia.org/w/index.php?title=Weltanschauung&redirect=no
+
+https://en.wikipedia.org/wiki/Communication
+https://en.wikipedia.org/wiki/Communication_accommodation_theory
+https://en.wikipedia.org/wiki/Psycholinguistics
+https://en.wikipedia.org/wiki/Umwelt
+
+https://en.wikipedia.org/wiki/Relativism
+
+## Abstraction, Modularization and Obfuscation
+
+
 In a nutshell, the difficulty you have in getting the reality of a new situation into your mental model, because the reality is obfuscated from you.
 
 
@@ -58,12 +210,6 @@ So far, I have not come across anything that does this.  But that doesn’t mean
 
 
 
-Communication Risk is the risk of communication between two entities _going wrong_, due to loss or misunderstanding.
-If we had identical knowledge, there would be no [Coordination Risk](Coordination-Risk), and also no [Communication Risk](Communication-Risk).
-
-If we want to create some commonality between our [Internal Models](Internal-Model), we have to communicate, and that is
-risky.  (reading and writing, listening and speaking are communication).
-
 
 - bandwidth:  higher == less communication risk
 
@@ -82,3 +228,6 @@ Manifests in other ways:
 COmmunication Risk
 
 Silo thinking - Conway's law.
+
+
+https://en.wikipedia.org/wiki/Marketing_communications
