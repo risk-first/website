@@ -63,7 +63,7 @@ Then, the first thing that happens is this:
 *   Trying 216.58.204.78...
 ```
 
-At this point, curl has used [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) to _resolve_ the address "google.com" to an IP address.  This is some [Abstraction](Complexity-Risk):  instead of using the machine's [IP Address](https://en.wikipedia.org/wiki/IP_address) on the network, (216.58.204.78), I can use a human-readable address, (google.com).   The address "google.com" doesn't necessarily resolve to that same address each time:  _They have multiple IP addresses for google.com_.   But, for the rest of the `curl` request, I'm now set to just use this one.
+At this point, curl has used [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) to _resolve_ the address "google.com" to an IP address.  This is some [Abstraction](Complexity-Risk):  instead of using the machine's [IP Address](https://en.wikipedia.org/wiki/IP_address) on the network, `216.58.204.78`, I can use a human-readable address, `google.com`.   The address `google.com` doesn't necessarily resolve to that same address each time:  _They have multiple IP addresses for `google.com`_.   But, for the rest of the `curl` request, I'm now set to just use this one.
 
 ### 2. IP - Internet Protocol
 
