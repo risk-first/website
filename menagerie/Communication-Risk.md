@@ -138,7 +138,7 @@ Let's look at all the levels of abstraction we saw here:
  - `TCP` Abstraction:  The concept of a "connection" with guarantees about ordering and delivery.
  - `DNS` Abstraction:  Names of servers to IP Addresses.
  - `IP` Abstraction:  "Packets" with addresses and payloads.
- - `Wifi` Abstraction:  "Networks", 802.11 flavours.
+ - `WiFi` Abstraction:  "Networks", 802.11 flavours.
  - Transmitters, Antennas, error correction codes, etc.
  
 HTTP "stands on the shoulders of giants".  Not only does it get to use pre-existing protocols like TCP and DNS to make it's life easier, it got 802.11 "for free" when this came along and plugged into the existing IP protocol.  This is the key value of abstraction:  you get to piggy-back on _existing_ patterns, and use them yourself. 
