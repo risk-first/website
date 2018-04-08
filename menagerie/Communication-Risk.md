@@ -73,11 +73,11 @@ Each packet consists of two things:
 - An address, which tells the network components (such as routers and gateways) where to send the packet, much like you'd write the address on the outside of a parcel.
 - The _payload_, the stream of bytes for processing at the destination.   Like the contents of the parcel.
 
-But, even this concept of "packets" is an [Abstraction](Complexity-Risk).  Although all the components of the network interoperate with this protocol, we might be using Wired Ethernet, or Wifi, or 4G or _something else_.
+But, even this concept of "packets" is an [Abstraction](Complexity-Risk).  Although all the components of the network interoperate with this protocol, we might be using Wired Ethernet, or WiFi, 4G or _something else_.
 
-### 3. 802.11 - Wifi Protocol
+### 3. 802.11 - WiFi Protocol
 
-I ran this at home, using Wifi, which uses [IEEE 802.11 Protocol](https://en.wikipedia.org/wiki/IEEE_802.11), which allows my laptop to communicate with the router wirelessly, again using an agreed, standard protocol.  But even _this_ isn't the bottom, because this is actually probably specifying something like [MIMO-OFDM](https://en.wikipedia.org/wiki/MIMO-OFDM), giving specifications about frequencies of microwave radiation, antennas, multiplexing, error-correction codes and so on.
+I ran this at home, using WiFi, which uses [IEEE 802.11 Protocol](https://en.wikipedia.org/wiki/IEEE_802.11), which allows my laptop to communicate with the router wirelessly, again using an agreed, standard protocol.  But even _this_ isn't the bottom, because this is actually probably specifying something like [MIMO-OFDM](https://en.wikipedia.org/wiki/MIMO-OFDM), giving specifications about frequencies of microwave radiation, antennas, multiplexing, error-correction codes and so on.
 
 ### 4. TCP - Transmission Control Protocol
 
