@@ -15,7 +15,7 @@ In 1948, Claude Shannon proposed this definition of communication:
 
 > "The fundamental problem of communication is that of reproducing at one point, either exactly or approximately, a message selected at another point." - [A Mathematical Theory Of Communication, _Claude Shannon_](https://en.wikipedia.org/wiki/A_Mathematical_Theory_of_Communication)
 
-And from this paper, we get the following (slightly adapted) model:
+And from this same paper, we get the following (slightly adapted) model:
 
 ![Communication Model](images/communication_1.png)
 
@@ -23,7 +23,7 @@ We move from top-left ("I want to send a message to someone") to bottom left, cl
 
 One of the chief concerns in Shannon's paper is the step between Transmission and Reception:  he creates a theory of information, the upper-bounds of information that can be communicated over a channel and ways in which **Communication Risk** between these processes can be mitigated by clever Encoding and Decoding steps.
 
-But actually, **Communication Risk** occurs at each of these steps.  Let's imagine a short exchange where **S** is trying to send a message to **R**:
+But it's not just transmission.  **Communication Risk** exists at each of these steps.  Let's imagine a short exchange where **S** is trying to send a message to **R**:
 - **S** might be **motivated** to send a message to tell **R** something, only to find out that _they already knew it_, or it wasn't useful information for them.
 - In the **composition** stage, **S** might mess up the _intent_ of the message: instead of "The bar is on fire!" they might say, "The car is on fire!".
 - In the **encoding** stage, **S** might not speak clearly enough to be understood, and 
