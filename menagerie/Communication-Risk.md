@@ -30,8 +30,8 @@ But it's not just transmission.  **Communication Risk** exists at each of these 
 - In the **transmission** stage, **S** might not say it loudly enough for **R** to 
 - **receive** the message clearly (maybe there is background noise).
 - Having heard **S** say something, can **R** **decode** what was said into a meaningful sentence?
-- And, assuming that, will they understand which bar (or car) **S** was talking about?
-- Finally, assuming _everything else_, will **R** believe that this is real information that needs to be acted on?
+- And, assuming that, will they **interpret** correctly which bar (or car) **S** was talking about?
+- Finally, assuming _everything else_, will **R** believe the message?  Will they **assimilate** the information into their [Internal Model](Internal-Model) and act on it?
 
 ## Bandwidth
 
