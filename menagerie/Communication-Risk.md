@@ -43,7 +43,7 @@ So, given the _usefulness_ of bandwidth, it's not surprising that our computer n
 
 ## Machines and Communication Protocols
 
-In this section, I want to hammer home the concept of [Communication Protocol](https://en.wikipedia.org/wiki/Communication_protocol) and how it relates to [Abstraction](Complexity-Risk), which we touched on in [Complexity Risk](Complexity-Risk) already.  
+In this section, I want to examine the concept of [Communication Protocols](https://en.wikipedia.org/wiki/Communication_protocol) and how they relate to [Abstraction](Complexity-Risk), which we touched on in [Complexity Risk](Complexity-Risk) already.  
 
 So, to do this, let's look in a bit of detail at the [http protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol), which of course is used in your browser to load web pages.  As far as the [http protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) is concerned, a _client_ makes an `HTTP Request` at a specific URL and the `HTTP Response` is returned in a predictable format that the browser can understand. 
 
