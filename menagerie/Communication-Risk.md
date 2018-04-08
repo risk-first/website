@@ -45,7 +45,7 @@ So, given the _usefulness_ of bandwidth, it's not surprising that our computer n
 
 In this section, I want to examine the concept of [Communication Protocols](https://en.wikipedia.org/wiki/Communication_protocol) and how they relate to [Abstraction](Complexity-Risk), which we touched on in [Complexity Risk](Complexity-Risk) already.  
 
-So, to do this, let's look in a bit of detail at the [http protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol), which of course is used in your browser to load web pages.  As far as the [http protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) is concerned, a _client_ makes an `HTTP Request` at a specific URL and the `HTTP Response` is returned in a predictable format that the browser can understand. 
+So, to do this, let's look in a bit of detail at how web pages are loaded.  This is going to involve (at least) five separate protocols, the top-most one being the HTTP Protocol.   As far as the [http protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) is concerned, a _client_ makes an `HTTP Request` at a specific URL and the `HTTP Response` is returned in a predictable format that the browser can understand. 
 
 Let's have a quick look at how that works with a `curl` command, which allows me to load a web page from the command line.   We're going to try and load Google's preferences page, and see what happens.  If I type:
 
@@ -54,7 +54,7 @@ Let's have a quick look at how that works with a `curl` command, which allows me
 > curl -v http://google.com/preferences      # -v indicates verbose
 ```
 
-### DNS - Domain Name System
+### 1. DNS - Domain Name System
 
 Then, the first thing that happens is this:
 
@@ -65,7 +65,7 @@ Then, the first thing that happens is this:
 
 At this point, curl has used [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) to _resolve_ the address "google.com" to an IP address.  This is some [Abstraction](Complexity-Risk):  instead of using the machine's [IP Address](https://en.wikipedia.org/wiki/IP_address) on the network, (216.58.204.78), I can use a human-readable address, (google.com).   The address "google.com" doesn't necessarily resolve to that same address each time:  _They have multiple IP addresses for google.com_.   But, for the rest of the `curl` request, I'm now set to just use this one.
 
-### IP - Internet Protocol
+### 2. IP - Internet Protocol
 
 But this hints at what is beneath the abstraction:  although I'm loading a web-page, the communication to the Google server happens by [IP Protocol](https://en.wikipedia.org/wiki/Internet_Protocol) - it's a bunch of discrete "packets" (streams of binary digits).  You can think of a packet as being like a real-world parcel or letter.
 
@@ -75,9 +75,11 @@ Each packet consists of two things:
 
 But, even this concept of "packets" is an [Abstraction](Complexity-Risk).  Although all the components of the network interoperate with this protocol, we might be using Wired Ethernet, or Wifi, or 4G or _something else_.
 
+### 3. 802.11 - Wifi Protocol
+
 I ran this at home, using Wifi, which uses [IEEE 802.11 Protocol](https://en.wikipedia.org/wiki/IEEE_802.11), which allows my laptop to communicate with the router wirelessly, again using an agreed, standard protocol.  But even _this_ isn't the bottom, because this is actually probably specifying something like [MIMO-OFDM](https://en.wikipedia.org/wiki/MIMO-OFDM), giving specifications about frequencies of microwave radiation, antennas, multiplexing, error-correction codes and so on.
 
-### TCP - Transmission Control Protocol
+### 4. TCP - Transmission Control Protocol
 
 Anyway, the next thing that happens is this:
 
@@ -90,7 +92,7 @@ The second obvious [Abstraction](Complexity-Risk) going on here is that `curl` n
 
 But, this is a fiction - TCP is built on the IP protocol, packets of data on the network.  So there are lots of packets floating around which say "this connection is still alive" and "I'm message 5 in the sequence" and so on in order to maintain this fiction.  But that means that the HTTP protocol can forget about this complexity.
 
-### HTTP - Hypertext Transfer Protocol
+### 5. HTTP - Hypertext Transfer Protocol
 
 Next, we see this:
 
