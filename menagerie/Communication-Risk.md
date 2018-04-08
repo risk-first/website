@@ -6,6 +6,38 @@ Humans are not all-powerful oracles.  We rely on our _senses_ to improve our [In
 To get inside **Communication Risk**, we need to understand **Communication** as it pertains to two parties, whether they are _machines_, _people_ or _products_:   we'll look at each in turn.  In order to do that, we're going to examine two concepts in each of these settings: 
  - **Bandwidth**, the rate at which we can transfer data and
  - **Communication Protocols** -  the systems of rules  that allow two or more entities of a communications system to transmit information.
+ 
+## A Model Of Communication
+
+In 1948, Claude Shannon proposed this definition of communication:
+
+> "The fundamental problem of communication is that of reproducing at one point, either exactly or approximately, a message selected at another point." - [A Mathematical Theory Of Communication, _Claude Shannon_](https://en.wikipedia.org/wiki/A_Mathematical_Theory_of_Communication)
+
+And from this paper, we get the following (slightly adapted) model:
+
+![Communication Model](images/communication_1.png)
+
+We move from top-left ("I want to send a message to someone") to bottom left, clockwise, where we hope the message has been understood and believed.  
+
+One of the chief concerns in Shannon's paper is the step between Transmission and Reception:  he creates a theory of information, the upper-bounds of information that can be communicated over a channel and ways in which **Communication Risk** between these processes can be mitigated by clever Encoding and Decoding steps.
+
+One of the key outcomes (rather like the [Kolgomorov complexity](Complexity-Risk) result) is that the more _randomness_ in the signal, the less compressible it is, and therefore the more _bits_ it will take to transmit.   
+
+Another key outcome is that there is a tradeoff:  within the capacity of the channel (the **Bandwidth**), you can either send lots of information with _higher_ risk that it is wrong, or less information with _lower_ risk of errors.
+
+But actually, **Communication Risk** occurs at each of these steps.  Let's imagine a short exchange where **S** is trying to send a message to **R**:
+- **S** might be **motivated** to send a message to tell **R** something, only to find out that _they already knew it_, or it wasn't useful information for them.
+- In the **composition** stage, **S** might mess up the _intent_ of the message: instead of "The bar is on fire!" they might say, "The car is on fire!".
+- In the **encoding** stage, **S** might not speak clearly enough to be understood, and 
+- In the **transmission** stage, **S** might not say it loudly enough for **R** to 
+- **receive** the message clearly (maybe there is background noise).
+- Having heard **S** say something, can **R** **decode** what was said into a meaningful sentence?
+- And, assuming that, will they understand which bar (or car) **S** was talking about?
+- Finally, assuming _everything else_, will **R** believe that this is real information that needs to be acted on?
+
+And, this is where **Bandwidth** becomes important:  in a high-bandwidth situation, **S** and **R** can _check_ with each other that the meaning was transferred correctly.  They can discuss exactly which bar is on fire, they can agree that **S** wasn't lying or playing a joke.  
+
+So, given the _usefulness_ of bandwidth, it's not surprising that our computer networks are always under pressure to _increase_ bandwidth, and a huge amount of effort has gone into formulating protocols that make as much use of available bandwidth as possible.  
 
 ## Machines and Communication Protocols
 
@@ -109,18 +141,7 @@ HTTP "stands on the shoulders of giants".  Not only does it get to use pre-exist
 
 What would HTTP look like without any of these protocols?  It's really difficult to envisage, but without the IP protocol it wouldn't even be compatible with the existing Internet. You'd need special support in all the hardware in all the networks on the planet, in much the same way as [IPv6](https://en.wikipedia.org/wiki/IPv6) (a new version of the IP protocol) does.  
 
-At the lowest level in the above list, we are a long way from HTTP, and it's the world of [Information Theory](https://en.wikipedia.org/wiki/Information_theory), a field invented by Claude Shannon who described it:
 
-> "The fundamental problem of communication is that of reproducing at one point, either exactly or approximately, a message selected at another point." - [A Mathematical Theory Of Communication, _Claude Shannon_](https://en.wikipedia.org/wiki/A_Mathematical_Theory_of_Communication)
-
-He introduced the concepts of _entropy_ (which is closely related to [Kolmogorov Complexity](Complexity-Risk)), _redundancy_ (adding extra "correction" information in case of loss) and the use of "bits" as single units of information.
-
-
-
-
-
-
-shannon.
 
 So, the takeaways from this section are:
 
