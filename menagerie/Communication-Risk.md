@@ -5,7 +5,7 @@ Humans are not all-powerful oracles.  We rely on our _senses_ to improve our [In
 
 **Information Risk** isn't just for people; it's fundamental.   Therefore, the computer systems we build share the same flaws and have the same constraints.
 
-To get inside **Communication Risk**, we need to understand **Communication** as it pertains to two parties, whether they are _machines_, _people_ or _products_:   we'll look at each in turn.  In order to do that, we're going to examine two concepts in each of these settings: 
+To get inside **Communication Risk**, we need to understand **Communication** itself, whether between _machines_, _people_ or _products_:   we'll look at each in turn.  In order to do that, we're going to examine two concepts in each of these settings: 
  - **Bandwidth**, the rate at which we can transfer data and
  - **Communication Protocols** -  the systems of rules  that allow two or more entities of a communications system to transmit information.
  
