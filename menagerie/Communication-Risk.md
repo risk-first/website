@@ -21,10 +21,6 @@ We move from top-left ("I want to send a message to someone") to bottom left, cl
 
 One of the chief concerns in Shannon's paper is the step between Transmission and Reception:  he creates a theory of information, the upper-bounds of information that can be communicated over a channel and ways in which **Communication Risk** between these processes can be mitigated by clever Encoding and Decoding steps.
 
-One of the key outcomes (rather like the [Kolgomorov complexity](Complexity-Risk) result) is that the more _randomness_ in the signal, the less compressible it is, and therefore the more _bits_ it will take to transmit.   
-
-Another key outcome is that there is a tradeoff:  within the capacity of the channel (the **Bandwidth**), you can either send lots of information with _higher_ risk that it is wrong, or less information with _lower_ risk of errors.
-
 But actually, **Communication Risk** occurs at each of these steps.  Let's imagine a short exchange where **S** is trying to send a message to **R**:
 - **S** might be **motivated** to send a message to tell **R** something, only to find out that _they already knew it_, or it wasn't useful information for them.
 - In the **composition** stage, **S** might mess up the _intent_ of the message: instead of "The bar is on fire!" they might say, "The car is on fire!".
@@ -35,7 +31,11 @@ But actually, **Communication Risk** occurs at each of these steps.  Let's imagi
 - And, assuming that, will they understand which bar (or car) **S** was talking about?
 - Finally, assuming _everything else_, will **R** believe that this is real information that needs to be acted on?
 
-And, this is where **Bandwidth** becomes important:  in a high-bandwidth situation, **S** and **R** can _check_ with each other that the meaning was transferred correctly.  They can discuss exactly which bar is on fire, they can agree that **S** wasn't lying or playing a joke.  
+## Bandwidth
+
+Another key outcome from Shannon's paper is that there is a tradeoff:  within the capacity of the channel (the **Bandwidth**), you can either send lots of information with _higher_ risk that it is wrong, or less information with _lower_ risk of errors.  And, rather like the [Kolgomorov complexity](Complexity-Risk) result, the more _randomness_ in the signal, the less compressible it is, and therefore the more _bits_ it will take to transmit.   
+
+This is where **Bandwidth** becomes important:  in a high-bandwidth situation, **S** and **R** can _check_ with each other that the meaning was transferred correctly.  They can discuss exactly which bar is on fire, they can agree that **S** wasn't lying or playing a joke.  
 
 So, given the _usefulness_ of bandwidth, it's not surprising that our computer networks are always under pressure to _increase_ bandwidth, and a huge amount of effort has gone into formulating protocols that make as much use of available bandwidth as possible.  
 
