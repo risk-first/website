@@ -141,23 +141,14 @@ HTTP "stands on the shoulders of giants".  Not only does it get to use pre-exist
 
 What would HTTP look like without any of these protocols?  It's really difficult to envisage, but without the IP protocol it wouldn't even be compatible with the existing Internet. You'd need special support in all the hardware in all the networks on the planet, in much the same way as [IPv6](https://en.wikipedia.org/wiki/IPv6) (a new version of the IP protocol) does.  
 
+## Abstraction
+
+Machine-to-machine or process-to-process communication is based on _towers_ of abstraction, and, as we saw when using `curl`, these abstractions are somewhat "leaky" - we can see them at work.  But, by building using abstraction, we simplify the knowledge each protocol has to know about the others.  
+
+But abstractions are _themselves_ a communication risk.  
 
 
-So, the takeaways from this section are:
 
-- Machine-to-machine or process-to-process communication is based on _towers_ of abstraction.
-- These abstractions are somewhat leaky, in that we can see them at work (as in the curl example)
-- Broadly, they are simplifying the experience of building communicating software systems.
-- There's a lot of complexity here.  Try not to implement it yourself.
-- At the level of the physical world, Shannon's Information Theory comes into play.  
-- Abstraction is a really heavily-used technique.
-- Error correction codes.
-
-How does this relate to Communication Risk?
-
-- Ok, well we can directly relate Shannon theory.
-- We also need to consider the power of abstraction.  (stuff below)
-- 
 
 
 ## Human Communication
