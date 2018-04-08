@@ -1,7 +1,9 @@
 Communication Risk is the risk of communication between two entities _going wrong_, due to loss or misunderstanding.
 If we had identical knowledge, there would be no need to do any communicating at all, and therefore and also no [Communication Risk](Communication-Risk).  
 
-Humans are not all-powerful oracles.  We rely on our _senses_ to improve our [Internal Models](Internal-Model) of the world, but there is **Communication Risk** here - we might overlook something vital (like an oncoming truck) or mistake something someone says (like "Don't cut the green wire").  Because **Information Risk** is fundamental, the computer systems we build share the same flaws and have the same constraints.
+Humans are not all-powerful oracles.  We rely on our _senses_ to improve our [Internal Models](Internal-Model) of the world, but there is **Communication Risk** here - we might overlook something vital (like an oncoming truck) or mistake something someone says (like "Don't cut the green wire").  
+
+**Information Risk** isn't just for people; it's fundamental.   Therefore, the computer systems we build share the same flaws and have the same constraints.
 
 To get inside **Communication Risk**, we need to understand **Communication** as it pertains to two parties, whether they are _machines_, _people_ or _products_:   we'll look at each in turn.  In order to do that, we're going to examine two concepts in each of these settings: 
  - **Bandwidth**, the rate at which we can transfer data and
