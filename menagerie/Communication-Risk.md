@@ -22,7 +22,7 @@ Let's have a quick look at how that works with a `curl` command, which allows me
 
 Then, the first thing that happens is this:
 
-```bash
+```
 * Rebuilt URL to: http://google.com/
 *   Trying 216.58.204.78...
 ```
@@ -41,7 +41,7 @@ I ran this at home, using Wifi, which uses [IEEE 802.11 Protocol](https://en.wik
 
 Anyway, the next thing that happens is this:
 
-```bash
+```
 * TCP_NODELAY set
 * Connected to google.com (216.58.204.78) port 80 (#0)
 ```
@@ -52,7 +52,7 @@ But, this is a fiction - TCP is built on the IP protocol, packets of data on the
 
 Next, we see this:
 
-```bash
+```
 > GET /preferences HTTP/1.1     (1)
 > Host: google.com              (2)
 > User-Agent: curl/7.54.0       (3)
@@ -62,7 +62,7 @@ Next, we see this:
 
 This is now the HTTP protocol proper, and these 5 lines are sending information _over the connection_ to the Google server.  Line (1) says what version of HTTP we are using, and the path we're loading (`/preferences` in this case).   Lines `(2)` to `(4)` are _headers_.  They are name-value pairs, separated with a colon.   The HTTP protocol specifies a bunch of these names, and later versions of the protocol might introduce newer ones.  Line (5) is an empty line, which indicates that we're done with the headers, please give us the response.  And it does:
 
-```bash
+```
 < HTTP/1.1 301 Moved Permanently                                      
 < Location: http://www.google.com/preferences
 < Content-Type: text/html; charset=UTF-8
