@@ -1,13 +1,15 @@
-Communication Risk is the risk of communication between two entities _going wrong_, due to loss or misunderstanding.
+Communication Risk is the risk of communication between entities _going wrong_, due to loss or misunderstanding.
 If we had identical knowledge, there would be no need to do any communicating at all, and therefore and also no [Communication Risk](Communication-Risk).  
 
 Humans are not all-powerful oracles.  We rely on our _senses_ to improve our [Internal Models](Internal-Model) of the world, but there is **Communication Risk** here - we might overlook something vital (like an oncoming truck) or mistake something someone says (like "Don't cut the green wire").  
 
 **Information Risk** isn't just for people; it's fundamental.   Therefore, the computer systems we build share the same flaws and have the same constraints.
 
-To get inside **Communication Risk**, we need to understand **Communication** itself, whether between _machines_, _people_ or _products_:   we'll look at each in turn.  In order to do that, we're going to examine two concepts in each of these settings: 
- - **Bandwidth**, the rate at which we can transfer data and
- - **Communication Protocols** -  the systems of rules  that allow two or more entities of a communications system to transmit information.
+To get inside **Communication Risk**, we need to understand **Communication** itself, whether between _machines_, _people_ or _products_:   we'll look at each in turn.  In order to do that, we're going to examine four basic concepts in each of these settings: 
+ - [Channels], the property of the medium via which the communication is happening.
+ - [Messages]: The information we want to convey.
+ - [Protocols](https://en.wikipedia.org/wiki/Communication_protocol) -  the systems of rules that allow two or more entities of a communications system to transmit information.
+ - [Internal Models](Internal-Model): the sources and destinations for the messages.  Updating internal models (whether in our heads or machines) is the reason why we're communicating.
  
 ## A Model Of Communication
 
@@ -25,27 +27,64 @@ One of the chief concerns in Shannon's paper is the step between Transmission an
 
 But it's not just transmission.  **Communication Risk** exists at each of these steps.  Let's imagine a short exchange where **S** is trying to send a message to **R**:
 - **S** might be **motivated** to send a message to tell **R** something, only to find out that _they already knew it_, or it wasn't useful information for them.
-- In the **composition** stage, **S** might mess up the _intent_ of the message: instead of "The bar is on fire!" they might say, "The car is on fire!".
+- In the **composition** stage, **S** might mess up the _intent_ of the message: instead of "Please buy chips" they might say, "Please buy chops".
 - In the **encoding** stage, **S** might not speak clearly enough to be understood, and 
 - In the **transmission** stage, **S** might not say it loudly enough for **R** to 
 - **receive** the message clearly (maybe there is background noise).
 - Having heard **S** say something, can **R** **decode** what was said into a meaningful sentence?
-- And, assuming that, will they **interpret** correctly which bar (or car) **S** was talking about?
-- Finally, assuming _everything else_, will **R** believe the message?  Will they **assimilate** the information into their [Internal Model](Internal-Model) and act on it?
+- And, assuming that, will they **interpret** correctly which type of chips (or chops) **S** was talking about?  Does "Please buy chips" convey all the information they need?
+- Finally, assuming _everything else_, will **R** believe the message?  Will they **reconcile** the information into their [Internal Model](Internal-Model) and act on it?  Perhaps not, if **R** thinks that there are chips at home already.
 
-## Bandwidth
+## Channels
 
-Another key outcome from Shannon's paper is that there is a tradeoff:  within the capacity of the channel (the **Bandwidth**), you can either send lots of information with _higher_ risk that it is wrong, or less information with _lower_ risk of errors.  And, rather like the [Kolgomorov complexity](Complexity-Risk) result, the more _randomness_ in the signal, the less compressible it is, and therefore the more _bits_ it will take to transmit.   
+There are lots of different types of channel for communicating (e.g. TV, Radio, DVD, Talking, Posters, Books, Phones, The Internet, etc. ) and they all have different characteristics.   Some obvious ones are cost, utilisation, number of people reached, simplex or duplex (parties can transmit and receive at the same time), persistence (a play vs a book, say), latency (how long messages take to arrive) and bandwidth (the amount of information that can be transmitted in a period of time).
 
-This is where **Bandwidth** becomes important:  in a high-bandwidth situation, **S** and **R** can _check_ with each other that the meaning was transferred correctly.  They can discuss exactly which bar is on fire, they can agree that **S** wasn't lying or playing a joke.  
+Channel characteristics are important:  in a high-bandwidth, low-latency situation, **S** and **R** can _check_ with each other that the meaning was transferred correctly.  They can discuss what to buy, they can agree that **S** wasn't lying or playing a joke.  
 
-So, given the _usefulness_ of bandwidth, it's not surprising that our computer networks are always under pressure to _increase_ bandwidth, and a huge amount of effort has gone into formulating protocols that make as much use of available bandwidth as possible.  
+The channel characteristics also imply suitability for certain _kinds_ of messages.  A documentary might be a great way of explaining some economic concept, whereas an opera might not be.
 
-## Machines and Communication Protocols
+### Channel Risk
 
-In this section, I want to examine the concept of [Communication Protocols](https://en.wikipedia.org/wiki/Communication_protocol) and how they relate to [Abstraction](Complexity-Risk), which we touched on in [Complexity Risk](Complexity-Risk) already.  
+Shannon discusses that no channel is perfect:  there is always the risk of noise corrupting the signal.  A key outcome from Shannon's paper is that there is a tradeoff:  within the capacity of the channel (the **Bandwidth**), you can either send lots of information with _higher_ risk that it is wrong, or less information with _lower_ risk of errors.  And, rather like the [Kolgomorov complexity](Complexity-Risk) result, the more _randomness_ in the signal, the less compressible it is, and therefore the more _bits_ it will take to transmit.  
 
-So, to do this, let's look in a bit of detail at how web pages are loaded.  This is going to involve (at least) five separate protocols, the top-most one being the HTTP Protocol.   As far as the [http protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) is concerned, a _client_ makes an `HTTP Request` at a specific URL and the `HTTP Response` is returned in a predictable format that the browser can understand. 
+But channel risk goes wider than just this mathematical example:  messages might be delayed or delivered in the wrong order, or not be acknowledged when they do arrive.  Sometimes, a channel is just an inappropriate way of communicating.  When you work in a different timezone to someone else on your team, there is _automatic_ **Channel Risk**, because instantaneous communication is only available for a few hours' a day. 
+
+When channels are poor-quality, less communication occurs.  People will try to communicate just the most important information.  But, it's often impossible to know apriori what this information is.   This is why [Extreme Programming](Extreme-Programming) recommends the practice of [Pair Programming](Coding) and siting all the developers together: although you don't know whether useful communication will happen, you are mitigating **Channel Risk** by ensuring high-quality communication channels are in place.
+
+At other times, channels can contain so much information that we can't hope to receive all the messages.  In these cases, we don't even observe the whole channel, just parts of it.  For example, you might have a few YouTube channels that you subscribe to, but hundreds of hours of video are being posted on YouTube every second, so there is no way you can keep up with all of it.
+
+#### Marketing Communications
+
+This is a problem of _curation_, and when we are talking about a product or a brand, mitigating this risk is the domain of [Marketing Communications].   How do you ensure that the information about your useful project makes it to the right people?  How do you address the right channels? 
+
+This works both ways.  Let's say there is some amazing new technology (**D**) you could employ usefully on your project.  How do you find out about it?
+
+ - The concept that there is such a thing as **D** which solves my problem isn't something I'd even considered.    
+ - I'd like to use something like **D**, but how do I find it?  
+ - There are multiple implementations of **D**, which is the best one for the task?
+ - I know **D**, but I can't figure out how to solve my problem in it.
+ - I've chosen **D**, I now need to persuade my team that **D** is the correct solution...
+ - ... and then they also need to understand **D** to do their job too.
+ 
+(But:  is understanding **D** more trouble than understanding <yourcode>?)  
+
+## Messages
+
+
+
+
+
+
+Between the message and the channel, we have the _protocol_, the way in which the message is encoded into the channel.  
+
+
+## Protocols
+
+In this section, I want to examine the concept of [Communication Protocols](https://en.wikipedia.org/wiki/Communication_protocol) and how they relate to [Abstraction](Complexity-Risk).  
+
+So, to do this, let's look in a bit of detail at how web pages are loaded.   When considering this, we need to broaden our terminology.  Although so far we've talked about **Senders** and **Receivers**, we now need to talk from the point of view of who-depends-on-who.  If you're _depended on_, then you're a "Server", whereas if you require communication with something else, you're a "Client".   Thus, clients depend on servers in order to load pages.
+
+This is going to involve (at least) six separate protocols, the top-most one being the HTTP Protocol.   As far as the [http protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) is concerned, a _client_ makes an `HTTP Request` at a specific URL and the `HTTP Response` is returned in a predictable format that the browser can understand. 
 
 Let's have a quick look at how that works with a `curl` command, which allows me to load a web page from the command line.   We're going to try and load Google's preferences page, and see what happens.  If I type:
 
@@ -77,7 +116,7 @@ But, even this concept of "packets" is an [Abstraction](Complexity-Risk).  Altho
 
 ### 3. 802.11 - WiFi Protocol
 
-I ran this at home, using WiFi, which uses [IEEE 802.11 Protocol](https://en.wikipedia.org/wiki/IEEE_802.11), which allows my laptop to communicate with the router wirelessly, again using an agreed, standard protocol.  But even _this_ isn't the bottom, because this is actually probably specifying something like [MIMO-OFDM](https://en.wikipedia.org/wiki/MIMO-OFDM), giving specifications about frequencies of microwave radiation, antennas, multiplexing, error-correction codes and so on.
+I ran this at home, using WiFi, which uses [IEEE 802.11 Protocol](https://en.wikipedia.org/wiki/IEEE_802.11), which allows my laptop to communicate with the router wirelessly, again using an agreed, standard protocol.  But even _this_ isn't the bottom, because this is actually probably specifying something like [MIMO-OFDM](https://en.wikipedia.org/wiki/MIMO-OFDM), giving specifications about frequencies of microwave radiation, antennas, multiplexing, error-correction codes and so on.  And WiFi is just the first hop:  after the WiFi receiver, there will be protocols for delivering the packets via the telephony system.
 
 ### 4. TCP - Transmission Control Protocol
 
@@ -128,32 +167,121 @@ The document has moved
 
 There's a lot going on here, but we can break it down really easily into 3 chunks:
 - The first line is the [HTTP Status Code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).  `301` is a code meaning that the page has moved.
-- The next 9 lines are HTTP headers again (name-value pairs).   The `Location:` directive tells us where the page has moved to.  Instead of trying `http://google.com/preferences`, we should have used `http://www.google.com/preferences`.  
-- The lines starting `<HTML>` are now some HTML to display on the screen to tell the user that the page has moved.  In most browsers, you don't get to see this:  the browser will understand the meaning of the `301` error and redirect you to the location.  
+- The next 9 lines are HTTP headers again (name-value pairs).   The `Location:` directive tells us where the page has moved to.  Instead of trying `http://google.com/preferences`, we should have used `http://www.google.com/preferences`. 
+- The lines starting `<HTML>` are now some HTML to display on the screen to tell the user that the page has moved.  
 
-### A Stack Of Protocols
+### 6. HTML - Hypertext Markup Language
+ 
+Although [HTML]() is a language, a language is also a protocol.  (After all, language is what we use to encode our ideas for transmission as speech.)   In the example we gave, this was a very simple page telling the client that it's looking in the wrong place.  In most browsers, you don't get to see this:  the browser will understand the meaning of the `301` error and redirect you to the location.  
 
-Let's look at all the levels of abstraction we saw here:
+Let's look at all the protocols we saw here:
+
+![Some image showing these]() 
+
+Each protocol "passes on" to the next one in the chain.  On the left, we have the representation most suitable for the _messages_:  HTTP is designed for browsers to use to ask for and receive web pages.  As we move right, we are converting the message more and more into a form suitable for the [Channel]: in this case, microwave transmission.   
+
+By having a stack of protocols, we are able to apply [Separation Of Concerns](), each protocol handling just a few concerns:
+
+ - 'HTML' Abstraction: A language for describing the contents of a web-page.
  - `HTTP` Abstraction: Name-Value pairs, agreed on by both `curl` and Google, URLs and error codes.
- - `TCP` Abstraction:  The concept of a "connection" with guarantees about ordering and delivery.
  - `DNS` Abstraction:  Names of servers to IP Addresses.
+ - `TCP` Abstraction:  The concept of a "connection" with guarantees about ordering and delivery.
  - `IP` Abstraction:  "Packets" with addresses and payloads.
  - `WiFi` Abstraction:  "Networks", 802.11 flavours.
  - Transmitters, Antennas, error correction codes, etc.
  
 HTTP "stands on the shoulders of giants".  Not only does it get to use pre-existing protocols like TCP and DNS to make it's life easier, it got 802.11 "for free" when this came along and plugged into the existing IP protocol.  This is the key value of abstraction:  you get to piggy-back on _existing_ patterns, and use them yourself. 
 
-What would HTTP look like without any of these protocols?  It's really difficult to envisage, but without the IP protocol it wouldn't even be compatible with the existing Internet. You'd need special support in all the hardware in all the networks on the planet, in much the same way as [IPv6](https://en.wikipedia.org/wiki/IPv6) (a new version of the IP protocol) does.  
+The protocol mediates between the message and the channel.  Where this goes wrong, we have **Protocol Risk**.  This is a really common issue for IT systems, but also sometimes for human communication too.
 
-## Abstraction
+## Protocol Risk
 
-Machine-to-machine or process-to-process communication is based on _towers_ of abstraction, and, as we saw when using `curl`, these abstractions are somewhat "leaky" - we can see them at work.  But, by building using abstraction, we simplify the knowledge each protocol has to know about the others.  
+Generally, anytime where you have different parts of a system communicating with each other, and one part can change incompatibly with another you have **Protocol Risk**.
 
-But abstractions are _themselves_ a communication risk.  
+Locally, (within our own project), where we have control, we can mitigate this risk using compile-time checking (as discussed already in [Complexity Risk]()), which essentially forces all senders and receivers to agree on protocol.  But, the wider the group that you are communicating with, the less control you have and the more chance there is of **Protocol Risk**.   Let's look at some types of **Protocol Risk**:
+ 
+### Protocol Incompatibility Risk
+
+The people you find it _easiest_ to communicate with are your friends and family, those closest to you.  That's because you're all familiar with the same protocols.  Someone from a foreign country, speaking a different language and having a different culture, will essentially have a completely incompatible protocol for spoken communication to you.
+
+Within software, there are also _competing_, incompatible protocols for the same things, which is maddening when your protocol isn't supported.   Although the world seems to be standardizing, there used to be _hundreds_ of different image formats.  Photographs often use [TIFF], [RAW] or [JPEG], whilst we also have [SVG] for vector graphics, [GIF] for images and animations and [PNG]() for other bitmap graphics.   
+
+### Protocol Versioning Risk
+
+Even when systems are talking the same protocol, there can be problems.  When we have multiple, different systems owned by different parties, on their own upgrade cycles, we have **Protocol Versioning Risk**: the risk that either client or server could start talking in a version of the protocol that the other side hasn't learnt yet.  There are various mitigating strategies for this.  We'll look at 3 now: Backwards Compatibility, Negotiation and Forwards Compatibility.
+
+#### Backward Compatibility
+
+Backwards compatibility mitigates **Protocol Versioning Risk**.  Quite simply, this means, supporting the old format until it falls out of use.  If a server is pushing for a change in protocol it either must ensure that it is backwards compatible with the clients it is communicating with, or make sure they are upgraded first.  When building [web services](), for example, it's common practice to version all apis so that you can manage the migration.  Something like this:
+
+ - Server publishes `/api/v1/something`.
+ - Clients use `/api/v1/something`.
+ - Server publishes `/api/v2/something`.
+ - Clients start using `/api/v2/something`.
+ - Clients (eventually) stop using `/api/v2/something`.
+ - Server retires `/api/v2/something` API. 
+
+#### Negotiation
+
+With HTTP, potentially, both client and server can know about different versions of the HTTP protocol, so they "negotiate" the protocol version together. In the example above they both decide on `HTTP/1.1`:
+
+```
+> GET /preferences HTTP/1.1     
+...
+< HTTP/1.1 301 Moved Permanently                                      
+```
+
+The client says the latest version of the protocol it knows in the request, and the server  tbd
+
+Humans work the same way.  [Communication Accommodation Theory](https://en.wikipedia.org/wiki/Communication_accommodation_theory) is the idea that tbd.
+
+#### Forward Compatibility
+
+HTML and CSS provide "graceful failure" to mitigate **Protocol Risk**:  while its expected that all clients can parse the syntax of HTML and CSS, it's not necessary for them to be able to handle all of the tags, attributes and rules they see.  The specification for both these languages (and the HTTP headers we saw earlier) is that if you don't understand something, ignore it.  Designing with this in mind means that old clients can always at least cope with new features, but it's not always possible.  
+
+Javascript _can't_ support this:  because the meaning of the next instruction will often depend on the result of the previous one.  
+
+Does human language support this?  To some extent!  New words are added to our languages all the time.  When we come across a new word, we can either ignore it, guess the meaning, ask or look it up.  In this way, our language has forward compatibility features built in.
+
+### Protocol Implementation Risk
+
+A second aspect of **Protocol Risk** exists in heterogenous computing environments, where protocols have been independently implemented based on standards.  For example, there are now so many different browsers, all supporting different levels of HTTP, HTML, Javascript and CSS so it becomes impossible to test comprehensively over all the different versions.  To mitigate as much **Protocol Risk** as possible, generally we run tests in a subset of browsers, and use a lowest-common-denominator approach to choosing protocol and language features.
+
+### Inappropriate Protocol Risk
+
+As we mentioned before, protocol _mediates_ between the message and the channel.  So, it's perfectly possible to use an inappropriate protocol for a message: emailing a film or  sending the holiday photos in a powerpoint presentation for example.
+
+## Message Risk
+
+As we saw when using `curl`, these protocol abstractions are somewhat "leaky" - we can see them at work.  But, by building using abstraction, we simplify the knowledge each protocol has to know about the others.  
+
+But abstractions are _themselves_ a **Communication Risk** because they _name_ something.  For the computer, it's simple: it is blindly running code, first from one library, then another.  These libraries represent different parts of the [Protocol Stack](https://en.wikipedia.org/wiki/Protocol_stack), but that's irrelevant to the computer - it's just _computing_.  
+
+But for people, nothing exists unless we have a name for it.  _The name is the thing_.   tbd
+
+And this brings about it's own **Communication Risk**: names are not _precise_, and concepts mean different things to different people.
+
+ 
+
+## Computer Code
 
 
 
+Code - principle of least surprise
 
+
+
+For people though, **Abstraction** is a tool that we can use to refer to other concepts, without necessarily knowing how the concepts work.  This divorcing of "what" from "how" is the essence of abstraction.  
+
+As soon as you create a function, you are doing abstraction.  You are saying:  “I now have this operation. The details, I won’t mention again, but from now on, it’s called _f_.”  And suddenly, “_f_” hides.  It is working invisibly.  Things go on in _f_ that people don’t necessarily need to understand.   There may be some documentation, or tacit knowledge around what _f_ is, and what it does, but it’s not necessarily right.  Using _f_ is a much simpler job than understanding _f_.
+
+## Invisibility Risk
+
+Abstraction is a massively powerful technique.  As we saw above, it allows things like the Internet to happen.  However, the price of Abstraction is **Invisibility Risk**: function hides behind layers of abstraction and becomes invisible.  
+
+We try to mitigate this type of **Communication Risk** via (for the most part) documentation.  This is a terrible deal:  because we can't understand the original, (un-abstracted) implementation, we now need to write some simpler documentation, which _explains_ the abstraction, in terms of further abstractions, and this is where things start to get murky.
+
+However, this is all we have: if 
 
 ## Human Communication
 
@@ -172,68 +300,6 @@ https://en.wikipedia.org/wiki/Psycholinguistics
 https://en.wikipedia.org/wiki/Umwelt
 
 https://en.wikipedia.org/wiki/Relativism
-
-## Abstraction, Modularization and Obfuscation
-
-
-In a nutshell, the difficulty you have in getting the reality of a new situation into your mental model, because the reality is obfuscated from you.
-
-
-Edit this up:
-
-This is the issue Constantin and I have been bumping up against this week.  On the one hand, Spring Boot gives you enormous power to build applications quickly and easily.  I can build REST interfaces fast, and know they are standards-compliant.  On the other hand, he doesn’t know how it works.  A simple thing to say would be: RTFM.  But, there is a deeper problem.   Software systems, in abstracting away complexity, and human convention, also abstract away visibility of how they run and operate. 
-
-As soon as you create a function, you are doing abstraction.  You are saying:  “I now have this operation. The details, I won’t mention again, but from now on, it’s called F.”  And suddenly, “F” hides.  It is working invisibly.  Things go on in “F” that people don’t necessarily need to understand.   There may be some documentation, or tacit knowledge around what “F” is, and what it does, but it’s not necessarily right.   
-
-In Java, problems like this are handled by having the source code, and being able to dig down, statically, into it and figure out what’s going on.  However, Spring makes lots of use of runtime reflection, which stymies static analysis, and leaves Constantin wondering why he can’t just figure out what’s going on by inspecting it.  The extra power afforded by using runtime reflection is a double-edged sword:  you lose the ability to expand statically and say what the system is doing.  Static Java is insufficiently powerful to express all the kinds of abstractions that programmers want.  This is why runtime reflection exists.  (Lisps have Macros, which offer a similar level of escape-the-box power).
-
-Extensibility
-
-But, the underlying problem is still the one above, of definition vs reference.  So, I spend a lot of time hunting through other people’s code trying to figure out exactly how it works, and whether I can bend it to my will.  Because, this is another problem:
-
-Since the function F is a black box, you can only use it in the way the author intended.  If you and the author have a different view about this, you’re going to be in trouble.  
-
-This is why we end up with change requests, patch requests, feature requests:  we need for the original author to change the meaning of “F” to more suit what we want to use it for.  The advantage of this, is that everyone coalesces around a meaning and purpose for F, and we get reuse occurring.  
-
-
-What is this notion of visibility, anyway?   I am thinking that what it means is that we could, by auditing the running systems, build something like the Current Operating Model of our business, without any effort whatsoever. 
-
-What would we need, in order to be able to do this?
-
-* We would need to specify processes, and say when they ran, and how.
-* Maybe all processes would communicate what they were doing with a standard protocol.
-* Inputs and Outputs would need to be known
-* When do processes run?
-* BPMN  / XPDL are all about describing processes.  But, for me this doesn’t really cut it. 
-
-What would our running software need to tell us for this to happen?
-
-Containment
-
-Organising at higher levels than object.
-
-Part of the problem might be that we don’t really have programming language abstractions that properly include containment.  
-
-Does containment actually exist?  It makes sense to me to say that some software is running inside a JVM on a particular box.  And that the JVM process is contained on that box.  There seems to be a hierarchy of containment here, much like you’d get with geneos.  
-
-Principle Of Locality
-
-Networks and computers break locality. They allow anything to happen anywhere.  But, the human brain (and possibly the universe as a whole) are founded on this principle.  So, abstracting it away means that it becomes an unknowable quantity.  And, lack of observability might follow from this.
-
-Common Taxonomy
-
-This is something you see in the TOM:  the desire to end up with a single way of describing features.  Essentially, we really need a database that explains our software processes.  Building the model of the processes is basically building a database.  But, is there a fixed schema for this, or do you let people figure it out as they go?
-
-schema: could also refer to an XML schema, which obviously, is also a database format.  What happened to XML databases, anyway?
-
-What would this even mean?
-
-Programming languages fail us because they encourage us to build software that is unknowable.  Could we invent a language that fixes this problem?
-
-In the same way as we made Java a language without memory leaks, could we make a language for describing software in a way that makes it eminently knowable?
-
-So far, I have not come across anything that does this.  But that doesn’t mean it’s impossible - just that it hasn’t even been attempted before.
-
 
 
 
@@ -257,3 +323,64 @@ Silo thinking - Conway's law.
 
 
 https://en.wikipedia.org/wiki/Marketing_communications
+
+
+How to structure this:
+
+COmmunication Risk
+
+  Intro: 
+    Shannon's model  done
+    Machines, People, Products done
+    
+  Channels, properties of done
+  	Channel Risk: people, machines   done
+    
+  Messages, properties of (shannon - information in bits) 
+    What information are you sending?  Is it sufficient?  Does it fill in the blanks. Competition
+    (oss risks, identified before, invisibility risk)  marketing, etc.
+    too many messages
+    
+  
+  Protocols, for machines, for people   done
+  	Protocol Risk: people, machines, (abstraction & documentation & bdd) https://en.wikipedia.org/wiki/Communication_accommodation_theory  nearly done
+  	
+  
+  Models:
+    Umwelt, relativism, world_view, computers unable to update (missed messages)
+    Code:  why is it hard, documentation, learning curve
+    Products: why we ignore them.  selective attention
+    
+  Outro:
+    Diagram of four types of risks, by area
+    Some examples of each.
+      
+## Communication Risk Wrap Up
+
+Shannon's model of communication can be broadly broken into four sections, each with their risk types:
+
+![Communication 2](images/communication_2.png)
+
+Over the course of this section, we've broken that down further:
+
+|Area                     |Sub-Risk                                           |Examples Of Problems
+|-------------------------|---------------------------------------------------|--------
+|Channel Risk             |- Suitability Risk: the message to the type of channel.|- Not hearing things in a crowd
+|                         |- Noise Risk: messages lost, delayed, corrupted.   |- Data synchronization failures
+|                         |- Quality Risk: capacity, bandwidth, latency etc.      |- Product Discovery
+|                         |                                                   |- Teams not communicating enough
+|-------------------------|---------------------------------------------------|------------------------|
+|Message Risk             |- Wrong information for the intended audience      |- 
+|                         |- Ignored Messages                                 |
+|                         |- Timeliness                                       |
+|-------------------------|---------------------------------------------------|------------------------|
+|Protocol Risk            |- Inappropriate Protocols                          |- Language barriers to communication
+|                         |- Protocol Versioning                              |- Failed calls to services
+|                         |- Incompatible Protocol                            |- 
+|                         |- Inconsistent Implementations                     |
+|-------------------------|---------------------------------------------------|------------------------|
+|Internal Model Risk      |- Relativism                                       |- Split Brain Problems 
+|                         |- Belief / Trust                                   |- Code is harder to read than write
+|                         |                                                   |- Persuasion
+|                         |                                                   |- Bad Actors       
+|-------------------------|---------------------------------------------------|------------------------|

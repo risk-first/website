@@ -264,7 +264,7 @@ Garbage Collectors (as found in Javascript or Java) offer you the deal that they
  
 ### Protocols / Types
 
-tbd - this is a [Boundary Risk](Boundary-Risk)
+tbd - this is a [Boundary Risk](Boundary-Risk)  Although we discuss this hard in Communication Risk/Protocol Risk
 
 Whenever two components of a software system need to interact, they have to establish a protocol for doing so.  There are lots of different ways this can work, but the simplest example I can think of is where some component **a** calls some function **b**.  e.g: 
 
