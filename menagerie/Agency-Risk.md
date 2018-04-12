@@ -28,3 +28,5 @@ gaming metrics
 Devil Makes Work
 
 agile consultancies
+
+irrationality, how long for, the onion of bullshit
