@@ -1,7 +1,7 @@
-Communication Risk is the risk of communication between entities _going wrong_, due to loss or misunderstanding.
-If we had identical knowledge, there would be no need to do any communicating at all, and therefore and also no [Communication Risk](Communication-Risk).  
+**Communication Risk** is the risk of communication between entities _going wrong_, due to loss or misunderstanding.
+Consider this: if we all had identical knowledge, there would be no need to do any communicating at all, and therefore and also no [Communication Risk](Communication-Risk).  
 
-Humans are not all-powerful oracles.  We rely on our _senses_ to improve our [Internal Models](Internal-Model) of the world, but there is **Communication Risk** here - we might overlook something vital (like an oncoming truck) or mistake something someone says (like "Don't cut the green wire").  
+But, people are not all-knowing oracles.  We rely on our _senses_ to improve our [Internal Models](Internal-Model) of the world. There is **Communication Risk** here - we might overlook something vital (like an oncoming truck) or mistake something someone says (like "Don't cut the green wire").  
 
 **Information Risk** isn't just for people; it's fundamental.   Therefore, the computer systems we build share the same flaws and have the same constraints.
 
@@ -23,23 +23,23 @@ And from this same paper, we get the following (slightly adapted) model:
 
 We move from top-left ("I want to send a message to someone") to bottom left, clockwise, where we hope the message has been understood and believed.  
 
-One of the chief concerns in Shannon's paper is the step between Transmission and Reception:  he creates a theory of information, the upper-bounds of information that can be communicated over a channel and ways in which **Communication Risk** between these processes can be mitigated by clever Encoding and Decoding steps.
+One of the chief concerns in Shannon's paper is the step between **Transmission** and **Reception**:  he creates a theory of information, the upper-bounds of information that can be communicated over a channel and ways in which **Communication Risk** between these processes can be mitigated by clever Encoding and Decoding steps.
 
-But it's not just transmission.  **Communication Risk** exists at each of these steps.  Let's imagine a short exchange where **S** is trying to send a message to **R**:
-- **S** might be **motivated** to send a message to tell **R** something, only to find out that _they already knew it_, or it wasn't useful information for them.
-- In the **composition** stage, **S** might mess up the _intent_ of the message: instead of "Please buy chips" they might say, "Please buy chops".
-- In the **encoding** stage, **S** might not speak clearly enough to be understood, and 
-- In the **transmission** stage, **S** might not say it loudly enough for **R** to 
+But it's not just transmission.  **Communication Risk** exists at each of these steps.  Let's imagine a short exchange where**T** is trying to send a message to **R**:
+-**T** might be **motivated** to send a message to tell **R** something, only to find out that _they already knew it_, or it wasn't useful information for them.
+- In the **composition** stage,**T** might mess up the _intent_ of the message: instead of "Please buy chips" they might say, "Please buy chops".
+- In the **encoding** stage,**T** might not speak clearly enough to be understood, and 
+- In the **transmission** stage,**T** might not say it loudly enough for **R** to 
 - **receive** the message clearly (maybe there is background noise).
-- Having heard **S** say something, can **R** **decode** what was said into a meaningful sentence?
-- And, assuming that, will they **interpret** correctly which type of chips (or chops) **S** was talking about?  Does "Please buy chips" convey all the information they need?
+- Having heard**T** say something, can **R** **decode** what was said into a meaningful sentence?
+- And, assuming that, will they **interpret** correctly which type of chips (or chops)**T** was talking about?  Does "Please buy chips" convey all the information they need?
 - Finally, assuming _everything else_, will **R** believe the message?  Will they **reconcile** the information into their [Internal Model](Internal-Model) and act on it?  Perhaps not, if **R** thinks that there are chips at home already.
 
 ## Channels
 
 There are lots of different types of channel for communicating (e.g. TV, Radio, DVD, Talking, Posters, Books, Phones, The Internet, etc. ) and they all have different characteristics.   Some obvious ones are cost, utilisation, number of people reached, simplex or duplex (parties can transmit and receive at the same time), persistence (a play vs a book, say), latency (how long messages take to arrive) and bandwidth (the amount of information that can be transmitted in a period of time).
 
-Channel characteristics are important:  in a high-bandwidth, low-latency situation, **S** and **R** can _check_ with each other that the meaning was transferred correctly.  They can discuss what to buy, they can agree that **S** wasn't lying or playing a joke.  
+Channel characteristics are important:  in a high-bandwidth, low-latency situation,**T** and **R** can _check_ with each other that the meaning was transferred correctly.  They can discuss what to buy, they can agree that**T** wasn't lying or playing a joke.  
 
 The channel characteristics also imply suitability for certain _kinds_ of messages.  A documentary might be a great way of explaining some economic concept, whereas an opera might not be.
 
