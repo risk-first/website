@@ -5,12 +5,6 @@ But, people are not all-knowing oracles.  We rely on our _senses_ to improve our
 
 **Information Risk** isn't just for people; it's fundamental.   Therefore, the computer systems we build share the same flaws and have the same constraints.
 
-To get inside **Communication Risk**, we need to understand **Communication** itself, whether between _machines_, _people_ or _products_:   we'll look at each in turn.  In order to do that, we're going to examine four basic concepts in each of these settings: 
- - [Channels](https://en.wikipedia.org/wiki/Communication_channel), the medium via which the communication is happening.
- - [Messages](https://en.wikipedia.org/wiki/Message): The information we want to convey.
- - [Protocols](https://en.wikipedia.org/wiki/Communication_protocol) -  the systems of rules that allow two or more entities of a communications system to transmit information.
- - [Internal Models](Internal-Model): the sources and destinations for the messages.  Updating internal models (whether in our heads or machines) is the reason why we're communicating.
- 
 ## A Model Of Communication
 
 In 1948, Claude Shannon proposed this definition of communication:
@@ -40,6 +34,14 @@ But it's not just transmission.  **Communication Risk** exists at each of these 
 There is a symmetry about the steps going on in Shannon's diagram, and we're going to exploit this in order to break down **Communication Risk** into it's main types.  
 
 ![Communication Risk 2](images/communication_2.png)
+
+To get inside **Communication Risk**, we need to understand **Communication** itself, whether between _machines_, _people_ or _products_:   we'll look at each in turn.  In order to do that, we're going to examine four basic concepts in each of these settings: 
+ - [Channels](https://en.wikipedia.org/wiki/Communication_channel), the medium via which the communication is happening.
+ - [Messages](https://en.wikipedia.org/wiki/Message): The information we want to convey.
+ - [Protocols](https://en.wikipedia.org/wiki/Communication_protocol) -  the systems of rules that allow two or more entities of a communications system to transmit information.
+ - [Internal Models](Internal-Model): the sources and destinations for the messages.  Updating internal models (whether in our heads or machines) is the reason why we're communicating.
+ 
+And, as we look at these four areas, we'll consider the attendant risks of each.
 
 ## Channels
 
