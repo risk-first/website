@@ -21,7 +21,7 @@ And from this same paper, we get the following (slightly adapted) model:
 
 ![Communication Model](images/communication_1.png)
 
-We move from top-left ("I want to send a message to someone") to bottom left, clockwise, where we hope the message has been understood and believed.  
+We move from top-left ("I want to send a message to someone") to bottom left, clockwise, where we hope the message has been understood and believed.   
 
 One of the chief concerns in Shannon's paper is the step between **Transmission** and **Reception**:  he creates a theory of information (measured in **bits**), the upper-bounds of information that can be communicated over a channel and ways in which **Communication Risk** between these processes can be mitigated by clever **Encoding** and **Decoding** steps.
 
@@ -34,6 +34,12 @@ But it's not just transmission.  **Communication Risk** exists at each of these 
 - Having heard**T** say something, can **R** **decode** what was said into a meaningful sentence?
 - And, assuming that, will they **interpret** correctly which type of chips (or chops)**T** was talking about?  Does "Please buy chips" convey all the information they need?
 - Finally, assuming _everything else_, will **R** believe the message?  Will they **reconcile** the information into their [Internal Model](Internal-Model) and act on it?  Perhaps not, if **R** thinks that there are chips at home already.
+
+## Approach To Communication Risk
+
+There is a symmetry about the steps going on in Shannon's diagram, and we're going to exploit this in order to break down **Communication Risk** into it's main types.  
+
+![Communication Risk 2](images/communication_2.png)
 
 ## Channels
 
