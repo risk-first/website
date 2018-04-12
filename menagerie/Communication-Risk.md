@@ -65,9 +65,9 @@ At other times, channels can contain so much information that we can't hope to r
 
 #### Marketing Communications
 
-This is a problem of _curation_, and when we are talking about a product or a brand, mitigating this risk is the domain of [Marketing Communications].   How do you ensure that the information about your useful project makes it to the right people?  How do you address the right channels? 
+When we are talking about a product or a brand, mitigating **Channel Risk** is the domain of [Marketing Communications](https://en.wikipedia.org/wiki/Marketing_communications).   How do you ensure that the information about your (useful) project makes it to the right people?  How do you address the right channels? 
 
-This works both ways.  Let's say there is some amazing new technology (**D**) you could employ usefully on your project.  How do you find out about it?
+This works both ways.  Let's looks at some of the **Channel Risks** from the point of view of a hypothetical product, **D**, which would really useful in my software: 
 
  - The concept that there is such a thing as **D** which solves my problem isn't something I'd even considered.    
  - I'd like to use something like **D**, but how do I find it?  
@@ -77,6 +77,10 @@ This works both ways.  Let's say there is some amazing new technology (**D**) yo
  - ... and then they also need to understand **D** to do their job too.
  
 (But:  is understanding **D** more trouble than understanding <yourcode>?)  
+
+![Communication Marketing](images/communication_marketing.png)
+
+[Internal Models](Internal-Model) don't magically get populated with the information they need:  they fill up gradually, as shown in this diagram.  Popular products and ideas _spread_, by word-of-mouth or other means.  Part of the job of being a good technologist is to keep track of new **Concepts** and **Options** as widely as possible, so as to use them when needed.
 
 ## Messages
 
