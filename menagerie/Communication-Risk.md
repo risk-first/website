@@ -6,8 +6,8 @@ Humans are not all-powerful oracles.  We rely on our _senses_ to improve our [In
 **Information Risk** isn't just for people; it's fundamental.   Therefore, the computer systems we build share the same flaws and have the same constraints.
 
 To get inside **Communication Risk**, we need to understand **Communication** itself, whether between _machines_, _people_ or _products_:   we'll look at each in turn.  In order to do that, we're going to examine four basic concepts in each of these settings: 
- - [Channels], the property of the medium via which the communication is happening.
- - [Messages]: The information we want to convey.
+ - [Channels](https://en.wikipedia.org/wiki/Communication_channel), the medium via which the communication is happening.
+ - [Messages](https://en.wikipedia.org/wiki/Message): The information we want to convey.
  - [Protocols](https://en.wikipedia.org/wiki/Communication_protocol) -  the systems of rules that allow two or more entities of a communications system to transmit information.
  - [Internal Models](Internal-Model): the sources and destinations for the messages.  Updating internal models (whether in our heads or machines) is the reason why we're communicating.
  
