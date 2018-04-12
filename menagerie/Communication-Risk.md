@@ -75,12 +75,10 @@ This works both ways.  Let's looks at some of the **Channel Risks** from the poi
  - I know **D**, but I can't figure out how to solve my problem in it.
  - I've chosen **D**, I now need to persuade my team that **D** is the correct solution...
  - ... and then they also need to understand **D** to do their job too.
- 
-(But:  is understanding **D** more trouble than understanding <yourcode>?)  
 
 ![Communication Marketing](images/communication_marketing.png)
 
-[Internal Models](Internal-Model) don't magically get populated with the information they need:  they fill up gradually, as shown in this diagram.  Popular products and ideas _spread_, by word-of-mouth or other means.  Part of the job of being a good technologist is to keep track of new **Concepts** and **Options** as widely as possible, so as to use them when needed.
+[Internal Models](Internal-Model) don't magically get populated with the information they need:  they fill up gradually, as shown in this diagram.  Popular products and ideas _spread_, by word-of-mouth or other means.  Part of the job of being a good technologist is to keep track of new **Concepts** and **Options** as widely as possible, so as to use them as [Dependencies](Dependency) when needed.
 
 ## Messages
 
@@ -190,13 +188,13 @@ Although [HTML]() is a language, a language is also a protocol.  (After all, lan
 
 Let's look at all the protocols we saw here:
 
-![Some image showing these]() 
+![Protocol Stack](images/communication_protocols.png) 
 
 Each protocol "passes on" to the next one in the chain.  On the left, we have the representation most suitable for the _messages_:  HTTP is designed for browsers to use to ask for and receive web pages.  As we move right, we are converting the message more and more into a form suitable for the [Channel]: in this case, microwave transmission.   
 
 By having a stack of protocols, we are able to apply [Separation Of Concerns](), each protocol handling just a few concerns:
 
- - 'HTML' Abstraction: A language for describing the contents of a web-page.
+ - `HTML` Abstraction: A language for describing the contents of a web-page.
  - `HTTP` Abstraction: Name-Value pairs, agreed on by both `curl` and Google, URLs and error codes.
  - `DNS` Abstraction:  Names of servers to IP Addresses.
  - `TCP` Abstraction:  The concept of a "connection" with guarantees about ordering and delivery.
