@@ -51,7 +51,7 @@ The job of harmonzing this on a project would seem to fall to the team leader, b
 
 With enough communication bandwidth and entente, a team motivated will self-organise code reviews, information exchange and improve their practices.  But **Staff Risks** sometimes cannot be resolved without escalation:
 
- - People leave, taking their [Internal Models]() and expertise with them [Key Man Risk]()
+ - People leave, taking their [Internal Models]() and expertise with them [Key Man Risk]().
  - People often require external training, to understand new tools and techniques [Learning-Curve Risk](Communciation-Risk)
  - People can get protective about their knowledge in order to protect their jobs [Agency Risk](Agency-Risk). 
  - Where there are mixed ability levels, senior developers might not help juniors as it "slows them down"
@@ -59,11 +59,10 @@ With enough communication bandwidth and entente, a team motivated will self-orga
  
 ... and so on.
 
+Experiments showed that rather than t
 
 
-- Skill Level
-
-
+split brain
  
  People change their minds when they have evidence of new information, and quickly forget what they _previously thought_ about things.
  
