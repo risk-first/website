@@ -10,3 +10,6 @@ Doing work up front, thinking ahead - see my evernote article
 Turning one risk into another.
 
 e.g. planning mitigates one thing , gives you something else.
+
+
+Sign offs mitigate communication risk - back to protocols and interpretation again.

@@ -232,6 +232,14 @@ Sometimes, the path from your starting point to your goal on the [Risk Landscape
 
 This is because you surface new [Hidden Risk](Risk) along the way.  And the source of a lot of this hidden risk will be unexpected **Complexity Risk** in the solutions you choose.  This happens a lot. 
 
+tbd.  split this out into a section.  there's so much more here.
+
+source control mitigates dead end risk a bit, becuase you can go back and chnage things.  mistakes are dead end risk.
+backups etc.  help with this.
+
+Is it a known unknown?  You know you might be going the wrong way.
+
+
 ## The Re-Write
 
 **Option 3**, Rewriting code or a whole project can seem like a way to mitigate **Complexity Risk**, but it usually doesn't work out too well.  As Joel Spolksky says:
