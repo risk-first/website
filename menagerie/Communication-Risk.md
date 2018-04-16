@@ -37,8 +37,8 @@ There is a symmetry about the steps going on in Shannon's diagram, and we're goi
 
 To get inside **Communication Risk**, we need to understand **Communication** itself, whether between _machines_, _people_ or _products_:   we'll look at each in turn.  In order to do that, we're going to examine four basic concepts in each of these settings: 
  - [Channels](https://en.wikipedia.org/wiki/Communication_channel), the medium via which the communication is happening.
- - [Messages](https://en.wikipedia.org/wiki/Message): The information we want to convey.
  - [Protocols](https://en.wikipedia.org/wiki/Communication_protocol) -  the systems of rules that allow two or more entities of a communications system to transmit information.
+ - [Messages](https://en.wikipedia.org/wiki/Message): The information we want to convey.
  - [Internal Models](Internal-Model): the sources and destinations for the messages.  Updating internal models (whether in our heads or machines) is the reason why we're communicating.
  
 And, as we look at these four areas, we'll consider the attendant risks of each.
@@ -51,7 +51,7 @@ Channel characteristics are important:  in a high-bandwidth, low-latency situati
 
 The channel characteristics also imply suitability for certain _kinds_ of messages.  A documentary might be a great way of explaining some economic concept, whereas an opera might not be.
 
-### Channel Risk
+## Channel Risk
 
 Shannon discusses that no channel is perfect:  there is always the **risk of noise** corrupting the signal.  A key outcome from Shannon's paper is that there is a tradeoff:  within the capacity of the channel (the **Bandwidth**), you can either send lots of information with _higher_ risk that it is wrong, or less information with _lower_ risk of errors.  And, rather like the [Kolgomorov complexity](Complexity-Risk) result, the more _randomness_ in the signal, the less compressible it is, and therefore the more _bits_ it will take to transmit.  
 
@@ -78,17 +78,7 @@ This works both ways.  Let's looks at some of the **Channel Risks** from the poi
 
 ![Communication Marketing](images/communication_marketing.png)
 
-[Internal Models](Internal-Model) don't magically get populated with the information they need:  they fill up gradually, as shown in this diagram.  Popular products and ideas _spread_, by word-of-mouth or other means.  Part of the job of being a good technologist is to keep track of new **Concepts** and **Options** as widely as possible, so as to use them as [Dependencies](Dependency) when needed.
-
-## Messages
-
-
-
-
-
-
-Between the message and the channel, we have the _protocol_, the way in which the message is encoded into the channel.  
-
+[Internal Models](Internal-Model) don't magically get populated with the information they need:  they fill up gradually, as shown in this diagram.  Popular products and ideas _spread_, by word-of-mouth or other means.  Part of the job of being a good technologist is to keep track of new **Ideas**, **Concepts** and **Options** as widely as possible, so as to use them as [Dependencies](Dependency) when needed.
 
 ## Protocols
 
@@ -220,7 +210,7 @@ Within software, there are also _competing_, incompatible protocols for the same
 
 ### Protocol Versioning Risk
 
-Even when systems are talking the same protocol, there can be problems.  When we have multiple, different systems owned by different parties, on their own upgrade cycles, we have **Protocol Versioning Risk**: the risk that either client or server could start talking in a version of the protocol that the other side hasn't learnt yet.  There are various mitigating strategies for this.  We'll look at 3 now: Backwards Compatibility, Negotiation and Forwards Compatibility.
+Even when systems are talking the same protocol, there can be problems.  When we have multiple, different systems owned by different parties, on their own upgrade cycles, we have **Protocol Versioning Risk**: the risk that either client or server could start talking in a version of the protocol that the other side hasn't learnt yet.  There are various mitigating strategies for this.  We'll look at two now: Backwards Compatibility and Forwards Compatibility.
 
 #### Backward Compatibility
 
@@ -232,20 +222,6 @@ Backwards compatibility mitigates **Protocol Versioning Risk**.  Quite simply, t
  - Clients start using `/api/v2/something`.
  - Clients (eventually) stop using `/api/v2/something`.
  - Server retires `/api/v2/something` API. 
-
-#### Negotiation
-
-With HTTP, potentially, both client and server can know about different versions of the HTTP protocol, so they "negotiate" the protocol version together. In the example above they both decide on `HTTP/1.1`:
-
-```
-> GET /preferences HTTP/1.1     
-...
-< HTTP/1.1 301 Moved Permanently                                      
-```
-
-The client says the latest version of the protocol it knows in the request, and the server  tbd
-
-Humans work the same way.  [Communication Accommodation Theory](https://en.wikipedia.org/wiki/Communication_accommodation_theory) is the idea that tbd.
 
 #### Forward Compatibility
 
@@ -259,140 +235,96 @@ Does human language support this?  To some extent!  New words are added to our l
 
 A second aspect of **Protocol Risk** exists in heterogenous computing environments, where protocols have been independently implemented based on standards.  For example, there are now so many different browsers, all supporting different levels of HTTP, HTML, Javascript and CSS so it becomes impossible to test comprehensively over all the different versions.  To mitigate as much **Protocol Risk** as possible, generally we run tests in a subset of browsers, and use a lowest-common-denominator approach to choosing protocol and language features.
 
-### Inappropriate Protocol Risk
+## Messages
 
-As we mentioned before, protocol _mediates_ between the message and the channel.  So, it's perfectly possible to use an inappropriate protocol for a message: emailing a film or  sending the holiday photos in a powerpoint presentation for example.
+Although Shannon's Communication Theory is about transmitting **Messages**, messages are really encoded **ideas** and **Concepts**, from one **Internal Model**.
 
-## Message Risk
+### Internal Model Assumption Risk
 
-As we saw when using `curl`, these protocol abstractions are somewhat "leaky" - we can see them at work.  But, by building using abstraction, we simplify the knowledge each protocol has to know about the others.  
+When we construct messages in a conversation, we have to make judgements about what the other person already knows.  When talking to children, it's often hard work because they _assume_ that you have knowledge of everything they do.  This is called [Theory Of Mind](): the appreciation that your knowledge is different to other people's, and adjusting you messages accordingly.
 
-But abstractions are _themselves_ a **Communication Risk** because they _name_ something.  For the computer, it's simple: it is blindly running code, first from one library, then another.  These libraries represent different parts of the [Protocol Stack](https://en.wikipedia.org/wiki/Protocol_stack), but that's irrelevant to the computer - it's just _computing_.  
+When teaching, this is called [The Curse Of Knowledge]():  teachers have difficulty understanding students' problems _because they already understand the subject).  For example, if I want to tell you about a new [JDBC Driver](), this pre-assumes that you know what JDBC is:  the message has a dependency on prior knowledge.
 
-But for people, nothing exists unless we have a name for it.  _The name is the thing_.   tbd
+### Message Dependency Risk  
 
-And this brings about it's own **Communication Risk**: names are not _precise_, and concepts mean different things to different people.
+A second, related problem is actually [Dependency Risk](Dependency-Risk), which is covered more thoroughly in the next section.  Often, messages assume that you have followed everything up to that point already, otherwise again, your [Internal Model](Internal-Model) will not be rich enough to understand the new messages.
 
- 
+This happens when messages get missed, or delivered out of order.  In the past, TV shows were only aired once a week at a particular time.  So writers were constrained plot-wise by not knowing whether their audience would have seen the previous week's episode.  Therefore, often the state of the show would "reset" week-to-week, allowing you to watch it in _any_ order.
 
-## Computer Code
+The same **Message Dependency Risk** exists for computer software:  if there is replication going on between instances of an application, and one of the instances misses some messages, you end up with a "[Split Brain]" scenario, where later messages can't be processed because they refer to an application state that doesn't exist.  For example, a message saying:
 
+```
+Update user 53's surname to 'Jones'
+```
 
+only makes sense if the application has previously had the message 
 
-Code - principle of least surprise
+```
+Create user 53 with surname 'Smith'
+```
 
+### Abstraction Risk & Misinterpretation Risk
 
+People don't rely on rigorous implementations of abstractions like computers do; we make do with fuzzy definitions of concepts and ideas.  We rely on **Abstraction** to move between the name of a thing and the _idea of a thing_.
 
-For people though, **Abstraction** is a tool that we can use to refer to other concepts, without necessarily knowing how the concepts work.  This divorcing of "what" from "how" is the essence of abstraction.  
+While machines only process _information_, people's brains run on concepts and ideas.  For people, abstraction is critical: nothing exists unless we have a name for it.  Our world is just atoms, but we don't think like this.  _The name is the thing_.  
 
-As soon as you create a function, you are doing abstraction.  You are saying:  “I now have this operation. The details, I won’t mention again, but from now on, it’s called _f_.”  And suddenly, “_f_” hides.  It is working invisibly.  Things go on in _f_ that people don’t necessarily need to understand.   There may be some documentation, or tacit knowledge around what _f_ is, and what it does, but it’s not necessarily right.  Using _f_ is a much simpler job than understanding _f_.
+> "The famous pipe. How people reproached me for it! And yet, could you stuff my pipe? No, it's just a representation, is it not? So if I had written on my picture “This is a pipe”, I'd have been lying!" - [Rene Magritte, of _The Treachery of Images_](https://en.wikipedia.org/wiki/The_Treachery_of_Images)
 
-## Invisibility Risk
+This brings about it's own **Communication Risk**: names are not _precise_, and concepts mean different things to different people.  We can't be sure that people have the same meaning for concepts that we have.  
+
+### Invisibility Risk
 
 Abstraction is a massively powerful technique.  As we saw above, it allows things like the Internet to happen.  However, the price of Abstraction is **Invisibility Risk**: function hides behind layers of abstraction and becomes invisible.  
 
 We try to mitigate this type of **Communication Risk** via (for the most part) documentation.  This is a terrible deal:  because we can't understand the original, (un-abstracted) implementation, we now need to write some simpler documentation, which _explains_ the abstraction, in terms of further abstractions, and this is where things start to get murky.
 
-However, this is all we have: if 
-
-## Human Communication
-
-We need to dive further into the concept of the internal model to figure this out.
-
-In the section on computers, it was all about shared, standardized abstractions - how does this apply to people?
-
-- Computer systems heavily rely on standards.
-
-
-https://en.wikipedia.org/wiki/World_view   https://en.wikipedia.org/w/index.php?title=Weltanschauung&redirect=no
-
-https://en.wikipedia.org/wiki/Communication
-https://en.wikipedia.org/wiki/Communication_accommodation_theory
-https://en.wikipedia.org/wiki/Psycholinguistics
-https://en.wikipedia.org/wiki/Umwelt
-
-https://en.wikipedia.org/wiki/Relativism
-
-
-
-- bandwidth:  higher == less communication risk
-
-
-Manifests in other ways:
+**Invisibility Risk** is risk due to information not sent.  Because humans don't need a complete understanding of a concept to use it, we can cope with some **Invisibility Risk** in communication.
 
 - people assume invisibility risk on projects/people that don't communicate much
 - that can also lead to 
 
-- internal models differ, and they don't recocnile easily.
+For people though, **Abstraction** is a tool that we can use to refer to other concepts, without necessarily knowing how the concepts work.  This divorcing of "what" from "how" is the essence of abstraction.  
 
-- 3rd party contractors
+As soon as you create a function, you are doing abstraction.  You are saying:  “I now have this operation. The details, I won’t mention again, but from now on, it’s called _f_.”  And suddenly, “_f_” hides.  It is working invisibly.  Things go on in _f_ that people don’t necessarily need to understand.   There may be some documentation, or tacit knowledge around what _f_ is, and what it does, but it’s not necessarily right.  Referring to _f_ is a much simpler job than understanding _f_.
 
-- code is hard to read, but software is hard to use.
+**Invisibility Risk** is mainly [Hidden Risk](Risk):  you don't know what you don't know.
 
-COmmunication Risk
+## Internal Models
 
-Silo thinking - Conway's law.
+So finally, we are coming to the root of the problem:  communication is about transferring ideas and concepts from one [Internal Model](Internal-Model) to another. 
 
+As we've seen already, this is fraught with risk on many levels, but even at this last level there are risks.
 
-https://en.wikipedia.org/wiki/Marketing_communications
+## Trust Risk & Belief Risk
 
+Although protocols can sometimes handle security features of communication (such as proof-of-identity and preventing man-in-the-middle attacks), trust goes further than this, intersecting with [Agency Risk]():  can you be sure that the other party in the communication is acting in your best interests?
+ 
+Even if the receiver trusts the communicator, they may not trust the message.  Let's look at some reasons for that:
+ - [Weltanschauung (World View)](https://en.wikipedia.org/wiki/World_view): The ethics, values and beliefs in the receiver's [Internal Model]() may be incompatible to those from the sender.  This is particularly a problem in religious debates.
+ - [Relativism]() is the concept that there are no universal truths.  Every truth is from a frame of reference.  For example, what constitutes _offensive language_ is 
+ - [Psycholinguistics]() is the study of humans aquire languages.  Just as there are different languages and dialects, and _industry dialects_ 
+ - [Umwelt](https://en.wikipedia.org/wiki/Umwelt) is the model of the world, based on experience.
+ 
+From the point-of-view of [Marketing Communications]() choosing the right message is part of the battle.  You are trying to communicate your idea in such a way as to mitigate **Belief Risk** and **Trust Risk**.
 
-How to structure this:
+## Learning Curve Risk
 
-COmmunication Risk
+If the messages we are receiving force us to update our [Internal Mode](Internal-Model) too much, we can suffer from the problem of "too steep a [Learning Curve]()" or "[Information Overload]", where the messages force us to adapt our [Internal Model](Internal-Model) too quickly for our brains to keep up.  
 
-  Intro: 
-    Shannon's model  done
-    Machines, People, Products done
-    
-  Channels, properties of done
-  	Channel Risk: people, machines   done
-    
-  Messages, properties of (shannon - information in bits) 
-    What information are you sending?  Is it sufficient?  Does it fill in the blanks. Competition
-    (oss risks, identified before, invisibility risk)  marketing, etc.
-    too many messages
-    
-  
-  Protocols, for machines, for people   done
-  	Protocol Risk: people, machines, (abstraction & documentation & bdd) https://en.wikipedia.org/wiki/Communication_accommodation_theory  nearly done
-  	
-  
-  Models:
-    Umwelt, relativism, world_view, computers unable to update (missed messages)
-    Code:  why is it hard, documentation, learning curve
-    Products: why we ignore them.  selective attention
-    
-  Outro:
-    Diagram of four types of risks, by area
-    Some examples of each.
-      
+Commonly, the easiest option is just to ignore the information channel completely in these cases.
+
+### Reading Code
+
+It's often been said that code is [harder to read than to write]().  By now it should be clear that it's going to be _both_ quite hard to read and write:  the protocol of code is actually designed for the purpose of machines communicating, not primarily for people to understand.  Simultanously making code human readable is a subordinate concern to making it machine readable.
+
+But now we should be able to see the reasons it's harder to read than write too:  
+ - When reading code, you are having to shift your [Internal Model](Internal-Model) to wherever the code is, accepting decisions that you might not agree with and accepting counter-intuitive logical leaps.  This is **Information Overload Risk**, cf. [Principle of Least Surprise](). 
+ - There is no [Feedback Loop](Feedback-Loop) between your [Internal Model](Internal-Model) and the [Reality](Meet-Reality) of the code, opening you up to **Misinterpretation Risk**.  When you write code, your compiler and tests give you this.
+ - While reading code _takes less time_ than writing it, this also means the [Learning Curve]() is steeper.
+
 ## Communication Risk Wrap Up
 
 Shannon's model of communication can be broadly broken into four sections, each with their risk types:
 
 ![Communication 2](images/communication_2.png)
-
-Over the course of this section, we've broken that down further:
-
-|Area                     |Sub-Risk                                           |Examples Of Problems
-|-------------------------|---------------------------------------------------|--------
-|Channel Risk             |- Suitability Risk: the message to the type of channel.|- Not hearing things in a crowd
-|                         |- Noise Risk: messages lost, delayed, corrupted.   |- Data synchronization failures
-|                         |- Quality Risk: capacity, bandwidth, latency etc.      |- Product Discovery
-|                         |                                                   |- Teams not communicating enough
-|-------------------------|---------------------------------------------------|------------------------|
-|Message Risk             |- Wrong information for the intended audience      |- 
-|                         |- Ignored Messages                                 |
-|                         |- Timeliness                                       |
-|-------------------------|---------------------------------------------------|------------------------|
-|Protocol Risk            |- Inappropriate Protocols                          |- Language barriers to communication
-|                         |- Protocol Versioning                              |- Failed calls to services
-|                         |- Incompatible Protocol                            |- 
-|                         |- Inconsistent Implementations                     |
-|-------------------------|---------------------------------------------------|------------------------|
-|Internal Model Risk      |- Relativism                                       |- Split Brain Problems 
-|                         |- Belief / Trust                                   |- Code is harder to read than write
-|                         |                                                   |- Persuasion
-|                         |                                                   |- Bad Actors       
-|-------------------------|---------------------------------------------------|------------------------|

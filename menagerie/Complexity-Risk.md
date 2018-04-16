@@ -333,3 +333,20 @@ Luckily, most good languages include crypto libraries that you can include to mi
 This is a strong argument for the use of libraries.  
 
 But, when should you use a library and when should you implement yourself?  This is the subject of [Dependency Risk](Dependency-Risk) which we will look at next.
+
+
+
+WE NEED TO TALK ABOUT ALTERNATIVES, AND COMBINATION EXPLOSION
+
+Let's say you have two ways to do X (x1,x2), and two ways to do Y (y1, y2).  But there are incompatbilities.  There are 6 ways to use the system, and it breaks down like this:
+
+|     |x1   |x2   |
+|-----|-----|-----|
+|y1   |1    |2, 3 |
+|y2   |4, 5 |6    |
+|-----|-----|-----|
+
+Both x1, and x2 are used 3 times each.  Both y1 and y2 are used 3 times each.
+
+
+

@@ -9,32 +9,6 @@ lack of faith
 
 
 
-## Abstraction, Modularization and Obfuscation
-
-
-In a nutshell, the difficulty you have in getting the reality of a new situation into your mental model, because the reality is obfuscated from you.
-
-
-Edit this up:
-
-This is the issue Constantin and I have been bumping up against this week.  On the one hand, Spring Boot gives you enormous power to build applications quickly and easily.  I can build REST interfaces fast, and know they are standards-compliant.  On the other hand, he doesn’t know how it works.  A simple thing to say would be: RTFM.  But, there is a deeper problem.   Software systems, in abstracting away complexity, and human convention, also abstract away visibility of how they run and operate. 
-
-
-
-In Java, problems like this are handled by having the source code, and being able to dig down, statically, into it and figure out what’s going on.  However, Spring makes lots of use of runtime reflection, which stymies static analysis, and leaves Constantin wondering why he can’t just figure out what’s going on by inspecting it.  The extra power afforded by using runtime reflection is a double-edged sword:  you lose the ability to expand statically and say what the system is doing.  Static Java is insufficiently powerful to express all the kinds of abstractions that programmers want.  This is why runtime reflection exists.  (Lisps have Macros, which offer a similar level of escape-the-box power).
-
-Extensibility
-
-But, the underlying problem is still the one above, of definition vs reference.  So, I spend a lot of time hunting through other people’s code trying to figure out exactly how it works, and whether I can bend it to my will.  Because, this is another problem:
-
-Since the function F is a black box, you can only use it in the way the author intended.  If you and the author have a different view about this, you’re going to be in trouble.  
-
-This is why we end up with change requests, patch requests, feature requests:  we need for the original author to change the meaning of “F” to more suit what we want to use it for.  The advantage of this, is that everyone coalesces around a meaning and purpose for F, and we get reuse occurring.  
-
-
-What is this notion of visibility, anyway?   I am thinking that what it means is that we could, by auditing the running systems, build something like the Current Operating Model of our business, without any effort whatsoever. 
-
-What would we need, in order to be able to do this?
 
 * We would need to specify processes, and say when they ran, and how.
 * Maybe all processes would communicate what they were doing with a standard protocol.
