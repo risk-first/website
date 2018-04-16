@@ -30,3 +30,7 @@ Devil Makes Work
 agile consultancies
 
 irrationality, how long for, the onion of bullshit
+
+we have to spend the budget.
+
+following the rules more important than getting things done.  

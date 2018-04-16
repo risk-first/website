@@ -6,3 +6,7 @@ Doing work up front, thinking ahead - see my evernote article
 
 - always consider what risks there are 
 - try and mitigate the biggest risks first for the least effort (ie..e value)
+
+Turning one risk into another.
+
+e.g. planning mitigates one thing , gives you something else.
