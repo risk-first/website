@@ -245,7 +245,7 @@ Although Shannon's Communication Theory is about transmitting **Messages**, mess
 
 When we construct messages in a conversation, we have to make judgements about what the other person already knows.  When talking to children, it's often hard work because they _assume_ that you have knowledge of everything they do.  This is called [Theory Of Mind](): the appreciation that your knowledge is different to other people's, and adjusting you messages accordingly.
 
-When teaching, this is called [The Curse Of Knowledge]():  teachers have difficulty understanding students' problems _because they already understand the subject).  For example, if I want to tell you about a new [JDBC Driver](), this pre-assumes that you know what JDBC is:  the message has a dependency on prior knowledge.
+When teaching, this is called [The Curse Of Knowledge]():  teachers have difficulty understanding students' problems _because they already understand the subject_.  For example, if I want to tell you about a new [JDBC Driver](), this pre-assumes that you know what JDBC is:  the message has a dependency on prior knowledge.
 
 ### Message Dependency Risk  
 
@@ -292,6 +292,8 @@ As soon as you create a function, you are doing abstraction.  You are saying:  â
 
 **Invisibility Risk** is mainly [Hidden Risk](Risk):  you don't know what you don't know.
 
+![Message Risk](images/communication_messages.png)
+
 ## Internal Models
 
 So finally, we are coming to the root of the problem:  communication is about transferring ideas and concepts from one [Internal Model](Internal-Model) to another. 
@@ -303,11 +305,10 @@ As we've seen already, this is fraught with risk on many levels, but even at thi
 Although protocols can sometimes handle security features of communication (such as proof-of-identity and preventing man-in-the-middle attacks), trust goes further than this, intersecting with [Agency Risk]():  can you be sure that the other party in the communication is acting in your best interests?
  
 Even if the receiver trusts the communicator, they may not trust the message.  Let's look at some reasons for that:
- - [Weltanschauung (World View)](https://en.wikipedia.org/wiki/World_view): The ethics, values and beliefs in the receiver's [Internal Model]() may be incompatible to those from the sender.  This is particularly a problem in religious debates.
- - [Relativism]() is the concept that there are no universal truths.  Every truth is from a frame of reference.  For example, what constitutes _offensive language_ is 
- - [Psycholinguistics]() is the study of humans aquire languages.  Just as there are different languages and dialects, and _industry dialects_ 
- - [Umwelt](https://en.wikipedia.org/wiki/Umwelt) is the model of the world, based on experience.
- 
+ - [Weltanschauung (World View)](https://en.wikipedia.org/wiki/World_view): The ethics, values and beliefs in the receiver's [Internal Model]() may be incompatible to those from the sender.  
+ - [Relativism]() is the concept that there are no universal truths.  Every truth is from a frame of reference.  For example, what constitutes _offensive language_ is dependent on the listener.
+ - [Psycholinguistics]() is the study of humans aquire languages.  Just as there are different languages and dialects, and _industry dialects_: we all 
+  
 From the point-of-view of [Marketing Communications]() choosing the right message is part of the battle.  You are trying to communicate your idea in such a way as to mitigate **Belief Risk** and **Trust Risk**.
 
 ## Learning Curve Risk
@@ -330,3 +331,27 @@ But now we should be able to see the reasons it's harder to read than write too:
 Shannon's model of communication can be broadly broken into four sections, each with their risk types:
 
 ![Communication 2](images/communication_2.png)
+
+|Area                     |Sub-Risk                                           |Examples Of Problems
+|-------------------------|---------------------------------------------------|--------
+|Channel Risk             |- Suitability Risk: the message to the type of channel.|- Not hearing things in a crowd
+|                         |- Noise Risk: messages lost, delayed, corrupted.   |- Data synchronization failures
+|                         |- Quality Risk: capacity, bandwidth, latency etc.  |- Product Discovery
+|                         |                                                   |- Teams not communicating enough
+|-------------------------|---------------------------------------------------|------------------------|
+|Message Risk             |- Internal Model Assumption Risk                   |- "The Curse Of Knowledge"
+|                         |- Message Dependency Risk                          |- Out-of-order messages
+|                         |- Abstraction & Misinterpretation Risk             |- 
+|                         |- Invisibility Risk                                |- Forgotten information
+|-------------------------|---------------------------------------------------|------------------------|
+|Protocol Risk            |- Inappropriate Protocols                          |- Language barriers to communication
+|                         |- Protocol Versioning                              |- Failed calls to services
+|                         |- Incompatible Protocol                            |- 
+|                         |- Inconsistent Implementations                     |
+|-------------------------|---------------------------------------------------|------------------------|
+|Internal Model Risk      |- Learning Curve Risk                              |- Split Brain Problems 
+|                         |- Belief / Trust                                   |- Code is harder to read than write
+|                         |                                                   |- Persuasion
+|                         |                                                   |- Bad Actors       
+|-------------------------|---------------------------------------------------|------------------------|
+
