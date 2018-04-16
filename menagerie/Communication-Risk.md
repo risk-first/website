@@ -300,7 +300,7 @@ So finally, we are coming to the root of the problem:  communication is about tr
 
 As we've seen already, this is fraught with risk on many levels, but even at this last level there are risks.
 
-## Trust Risk & Belief Risk
+### Trust Risk & Belief Risk
 
 Although protocols can sometimes handle security features of communication (such as proof-of-identity and preventing man-in-the-middle attacks), trust goes further than this, intersecting with [Agency Risk]():  can you be sure that the other party in the communication is acting in your best interests?
  
@@ -311,7 +311,7 @@ Even if the receiver trusts the communicator, they may not trust the message.  L
   
 From the point-of-view of [Marketing Communications]() choosing the right message is part of the battle.  You are trying to communicate your idea in such a way as to mitigate **Belief Risk** and **Trust Risk**.
 
-## Learning Curve Risk
+### Learning Curve Risk
 
 If the messages we are receiving force us to update our [Internal Mode](Internal-Model) too much, we can suffer from the problem of "too steep a [Learning Curve]()" or "[Information Overload]", where the messages force us to adapt our [Internal Model](Internal-Model) too quickly for our brains to keep up.  
 
@@ -325,6 +325,8 @@ But now we should be able to see the reasons it's harder to read than write too:
  - When reading code, you are having to shift your [Internal Model](Internal-Model) to wherever the code is, accepting decisions that you might not agree with and accepting counter-intuitive logical leaps.  This is **Information Overload Risk**, cf. [Principle of Least Surprise](). 
  - There is no [Feedback Loop](Feedback-Loop) between your [Internal Model](Internal-Model) and the [Reality](Meet-Reality) of the code, opening you up to **Misinterpretation Risk**.  When you write code, your compiler and tests give you this.
  - While reading code _takes less time_ than writing it, this also means the [Learning Curve]() is steeper.
+
+![Internal Model Risks](images/communication_internalmodel.png)
 
 ## Communication Risk Wrap Up
 
@@ -349,9 +351,8 @@ Shannon's model of communication can be broadly broken into four sections, each 
 |                         |- Incompatible Protocol                            |- 
 |                         |- Inconsistent Implementations                     |
 |-------------------------|---------------------------------------------------|------------------------|
-|Internal Model Risk      |- Learning Curve Risk                              |- Split Brain Problems 
-|                         |- Belief / Trust                                   |- Code is harder to read than write
-|                         |                                                   |- Persuasion
-|                         |                                                   |- Bad Actors       
+|Internal Model Risk      |- Learning Curve Risk                              |- Code is harder to read than write
+|                         |- Belief / Trust                                   |- Persuasive Argument
+|                         |                                                   |- Bad Actors
 |-------------------------|---------------------------------------------------|------------------------|
 
