@@ -15,7 +15,7 @@ And from this same paper, we get the following (slightly adapted) model:
 
 ![Communication Model](images/communication_1.png)
 
-We move from top-left ("I want to send a message to someone") to bottom left, clockwise, where we hope the message has been understood and believed.   
+We move from top-left ("I want to send a message to someone") to bottom left, clockwise, where we hope the message has been understood and believed.  (I've added this last box to Shannon's original diagram.)
 
 One of the chief concerns in Shannon's paper is the step between **Transmission** and **Reception**:  he creates a theory of information (measured in **bits**), the upper-bounds of information that can be communicated over a channel and ways in which **Communication Risk** between these processes can be mitigated by clever **Encoding** and **Decoding** steps.
 
@@ -210,7 +210,7 @@ Within software, there are also _competing_, incompatible protocols for the same
 
 ### Protocol Versioning Risk
 
-Even when systems are talking the same protocol, there can be problems.  When we have multiple, different systems owned by different parties, on their own upgrade cycles, we have **Protocol Versioning Risk**: the risk that either client or server could start talking in a version of the protocol that the other side hasn't learnt yet.  There are various mitigating strategies for this.  We'll look at two now: Backwards Compatibility and Forwards Compatibility.
+Even when systems are talking the same protocol, there can be problems.  When we have multiple, different systems owned by different parties, on their own upgrade cycles, we have **Protocol Versioning Risk**: the risk that either client or server could start talking in a version of the protocol that the other side hasn't learnt yet.  There are various mitigating strategies for this.  We'll look at two now: **Backwards Compatibility** and **Forwards Compatibility**.
 
 #### Backward Compatibility
 
@@ -227,13 +227,15 @@ Backwards compatibility mitigates **Protocol Versioning Risk**.  Quite simply, t
 
 HTML and CSS provide "graceful failure" to mitigate **Protocol Risk**:  while its expected that all clients can parse the syntax of HTML and CSS, it's not necessary for them to be able to handle all of the tags, attributes and rules they see.  The specification for both these languages (and the HTTP headers we saw earlier) is that if you don't understand something, ignore it.  Designing with this in mind means that old clients can always at least cope with new features, but it's not always possible.  
 
-Javascript _can't_ support this:  because the meaning of the next instruction will often depend on the result of the previous one.  
+JavaScript _can't_ support this:  because the meaning of the next instruction will often depend on the result of the previous one.  
 
-Does human language support this?  To some extent!  New words are added to our languages all the time.  When we come across a new word, we can either ignore it, guess the meaning, ask or look it up.  In this way, our language has forward compatibility features built in.
+Does human language support this?  To some extent!  New words are added to our languages all the time.  When we come across a new word, we can either ignore it, guess the meaning, ask or look it up.  In this way, human language has **Forward Compatibility** features built in.
 
 ### Protocol Implementation Risk
 
 A second aspect of **Protocol Risk** exists in heterogenous computing environments, where protocols have been independently implemented based on standards.  For example, there are now so many different browsers, all supporting different levels of HTTP, HTML, Javascript and CSS so it becomes impossible to test comprehensively over all the different versions.  To mitigate as much **Protocol Risk** as possible, generally we run tests in a subset of browsers, and use a lowest-common-denominator approach to choosing protocol and language features.
+
+![Communication Protocols Risks](images/communication_protocols_risks.png)
 
 ## Messages
 
