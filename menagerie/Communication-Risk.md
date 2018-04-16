@@ -330,29 +330,8 @@ But now we should be able to see the reasons it's harder to read than write too:
 
 ## Communication Risk Wrap Up
 
-Shannon's model of communication can be broadly broken into four sections, each with their risk types:
+So, here's a summary of where we've arrived with our model of communication risk:
 
-![Communication 2](images/communication_2.png)
+![Communication 2](images/communication_3.png)
 
-|Area                     |Sub-Risk                                           |Examples Of Problems
-|-------------------------|---------------------------------------------------|--------
-|Channel Risk             |- Suitability Risk: the message to the type of channel.|- Not hearing things in a crowd
-|                         |- Noise Risk: messages lost, delayed, corrupted.   |- Data synchronization failures
-|                         |- Quality Risk: capacity, bandwidth, latency etc.  |- Product Discovery
-|                         |                                                   |- Teams not communicating enough
-|-------------------------|---------------------------------------------------|------------------------|
-|Message Risk             |- Internal Model Assumption Risk                   |- "The Curse Of Knowledge"
-|                         |- Message Dependency Risk                          |- Out-of-order messages
-|                         |- Abstraction & Misinterpretation Risk             |- 
-|                         |- Invisibility Risk                                |- Forgotten information
-|-------------------------|---------------------------------------------------|------------------------|
-|Protocol Risk            |- Inappropriate Protocols                          |- Language barriers to communication
-|                         |- Protocol Versioning                              |- Failed calls to services
-|                         |- Incompatible Protocol                            |- 
-|                         |- Inconsistent Implementations                     |
-|-------------------------|---------------------------------------------------|------------------------|
-|Internal Model Risk      |- Learning Curve Risk                              |- Code is harder to read than write
-|                         |- Belief / Trust                                   |- Persuasive Argument
-|                         |                                                   |- Bad Actors
-|-------------------------|---------------------------------------------------|------------------------|
-
+The purpose of Communication is to _coordinate_ our actions, so next it's time to look at [Coordination Risk](Coordination-Risk).
