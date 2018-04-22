@@ -1,0 +1,86 @@
+@font-face {
+	font-family: "opensans-light-webfont";
+	src: url('../../../../fonts/opensans-light-webfont.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: "opensans-bold-webfont";
+	src: url('../../../../fonts/opensans-bold-webfont.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: "gothic";
+	src: url('GOTHIC.ttf') format('truetype');
+}
+
+/*
+ * Required so we can process old XML content
+ */
+renderingInformation,
+fromDecoration,
+toDecoration, 
+position,
+size,
+allLinks {
+	kite9-type: none;
+}
+
+/* Definitions of Kite9 Elements */
+
+risk {
+	kite9-margin: 10px;
+	kite9-link-inset: 10px;
+	kite9-link-gutter: 10px;
+	kite9-type: container;
+	kite9-layout: vertical;	
+	kite9-template: url(template.svg#risk);
+	kite9-padding: 6px 6px 6px 6px; 
+	kite9-margin: 10px;
+	kite9-connection-align: 50%;
+}
+
+diagram {
+	kite9-type: diagram;
+	kite9-padding: 15px;
+	kite9-traversal: none;
+	kite9-template: url(template.svg#diagram);
+}
+
+risk image {
+	kite9-type: svg;
+	kite9-horizontal-align: center;
+	kite9-usage: container;
+}
+
+risk code {
+	kite9-type: container;
+	kite9-sizing: minimize;
+	kite9-template: url(template.svg#code);
+}
+
+risk title {
+	kite9-type: container;
+	kite9-sizing: minimize;
+	kite9-occupies: 0 2;
+	kite9-layout: horizontal;
+	kite9-template: url(template.svg#title);
+}
+
+.risk-back {
+	stroke: black;
+	stroke-width: 1px;
+}
+
+.code-label-front {
+	stroke-width: 0;
+	font-size: 16px;
+	font-family: "gothic";
+	fill: black;
+}
+
+.title-label-front {
+	font-size: 8px;
+	font-family: "gothic";
+}
+
+
