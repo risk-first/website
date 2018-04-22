@@ -13,7 +13,6 @@ import org.apache.batik.transcoder.TranscoderInput;
 import org.junit.Test;
 import org.kite9.framework.common.RepositoryHelp;
 import org.kite9.framework.common.StackHelp;
-import org.kite9.framework.common.TestingHelp;
 
 public class TestR1Primitives extends AbstractDisplayFunctionalTest {
 
@@ -44,8 +43,7 @@ public class TestR1Primitives extends AbstractDisplayFunctionalTest {
 	
 	protected File getOutputFile(String ending) {
 		Method m = StackHelp.getAnnotatedMethod(Test.class);
-		Class<?> theTest = m.getDeclaringClass();
-		File f = TestingHelp.prepareFileName(theTest, m.getName(), m.getName()+ending);
+		File f = new File("kite9", m.getName()+ending);
 		return f;
 	}
 }

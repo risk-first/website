@@ -20,17 +20,6 @@ public class AbstractDisplayFunctionalTest extends AbstractFunctionalTest {
 	protected boolean checkXML() {
 		return true;
 	}
-
-	
-	private void writeTemplateExpandedSVG(DiagramKite9XMLElement lastDiagram) throws IOException {
-		ADLDocument d = lastDiagram.getOwnerDocument();
-		File f = getOutputFile("-expanded.svg");
-		String input2 = new XMLHelper().toXML(d);
-		FileWriter fw = new FileWriter(f);
-		fw.write(input2);
-		fw.close();
-	}
-
 	
 	protected void renderDiagram(String xml) throws Exception {
 		//transcodePNG(addSVGFurniture(xml));

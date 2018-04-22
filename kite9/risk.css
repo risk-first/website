@@ -47,9 +47,14 @@ diagram {
 }
 
 risk image {
-	kite9-type: svg;
+	kite9-type: container;
 	kite9-horizontal-align: center;
-	kite9-usage: container;
+	kite9-padding: 25px;
+	kite9-template: url(template.svg#image)
+}
+
+image-content.invisibility {
+	kite9-template: url(noun_1010324.svg)
 }
 
 risk code {

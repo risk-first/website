@@ -119,7 +119,7 @@ public abstract class AbstractFunctionalTest extends HelpMethods {
 	protected void copyToErrors(File output) {
 		copyTo(output, "errors");
 	}
-	
+	 
 	
 	protected void copyTo(File output, String dir) {
 		try {
