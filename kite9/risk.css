@@ -28,12 +28,36 @@ allLinks {
 /* Definitions of Kite9 Elements */
 
 risk {
+	kite9-type: container;
+}
+
+risk.invisibility {
+	kite9-template: url(template.svg#invisibility);
+}
+
+risk.feature {
+	kite9-template: url(template.svg#feature);
+}
+
+risk.communication {
+	kite9-template: url(template.svg#communication);
+}
+
+risk.complexity {
+	kite9-template: url(template.svg#complexity);
+}
+
+risk.boundary {
+	kite9-template: url(template.svg#boundary);
+}
+
+risk-box {
 	kite9-margin: 10px;
 	kite9-link-inset: 10px;
 	kite9-link-gutter: 10px;
 	kite9-type: container;
 	kite9-layout: vertical;	
-	kite9-template: url(template.svg#risk);
+	kite9-template: url(template.svg#risk-box);
 	kite9-padding: 6px 6px 6px 6px; 
 	kite9-margin: 10px;
 	kite9-connection-align: 50%;
@@ -50,11 +74,28 @@ risk image {
 	kite9-type: container;
 	kite9-horizontal-align: center;
 	kite9-padding: 25px;
+	kite9-margin: 4px;
 	kite9-template: url(template.svg#image)
 }
 
-image-content.invisibility {
+risk.invisibility image-content {
 	kite9-template: url(noun_1010324.svg)
+}
+
+risk.feature image-content {
+	kite9-template: url(noun_1517815.svg)
+}
+
+risk.communication image-content {
+	kite9-template: url(noun_561881.svg)
+}
+
+risk.complexity image-content {
+	kite9-template: url(noun_1584141.svg)
+}
+
+risk.boundary image-content {
+	kite9-template: url(noun_1331794.svg)
 }
 
 risk code {
@@ -66,9 +107,9 @@ risk code {
 risk title {
 	kite9-type: container;
 	kite9-sizing: minimize;
-	kite9-occupies: 0 2;
 	kite9-layout: horizontal;
 	kite9-template: url(template.svg#title);
+	kite9-horizontal-align: center;
 }
 
 .risk-back {
@@ -84,7 +125,7 @@ risk title {
 }
 
 .title-label-front {
-	font-size: 8px;
+	font-size: 10px;
 	font-family: "gothic";
 }
 
