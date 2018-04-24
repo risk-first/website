@@ -58,11 +58,11 @@ Sometimes, budget-holders have projects they value more than others without refe
 
 Morale, also known as Esprit de Corps is the capacity of a group's members to retain belief in an institution or goal, particularly in the face of opposition or hardship - [Wikipedia] 
 
-Sometimes, the morale of the team or individuals within it dips, leading to lack of motivation.  Morale Risk is a kind of [Agency Risk]() because it really means that a team member or the whole team isn't committed to the [Goal](), and won't give it their best shot.  Morale Risk might be caused by:
+Sometimes, the morale of the team or individuals within it dips, leading to lack of motivation.  **Morale Risk** is a kind of Agency Risk** because it really means that a team member or the whole team isn't committed to the [Goal](Goal-In-Mind), may decide their efforts are best spent elsewhere.  **Morale Risk** might be caused by:
  - External factors.  Perhaps the employees' dog has died, or they're simply tired of the industry, or are not feeling challenged.
  - If the team don't believe a goal is achievable, they won't commit their full effort to it.  This might be due to to a difference in the evaluation of the risks on the project between the team members and the leader.
  - If the goal isn't considered sufficiently worthy, or the team isn't sufficiently valued.
- - In military science, a second meaning of morale is how well supplied and equipped a unit is.  This would also seem like a useful reference point for IT projects.  If teams are understaffed or underequipped, this will impact on motivation too.
+ - In military science, a second meaning of morale is how well supplied and equipped a unit is.  This would also seem like a useful reference point for IT projects.  If teams are under-staffed or under-equipped, this will impact on motivation too.
 
 ## Hubris & Ego
 
