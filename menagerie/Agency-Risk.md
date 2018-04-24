@@ -6,7 +6,9 @@ This is **Agency Risk**.   This term comes from finance (again), and refers to t
 
 The less visibility you have of the agent's activities, the bigger the risk.  However, the whole _point_ of giving the money to the agent was that you would have to spend less time and effort managing it.  Hence the dilemma.  So, **Agency Risk** flourishes where there is [Invisibility Risk](Communication-Risk).
 
-**Agency Risk** clearly includes the behaviour of [Bad Actors](https://en.wiktionary.org/wiki/bad_actor).  But, this is a very strict definition of **Agency Risk**.   In softwaree development, we're not lending each other money, but we are being paid by the project sponsor, so they are assuming **Agency Risk** by employing us.   Let's look at some examples of borderline **Agency Risk** situations, in order to sketch out where the domain of this risk lies.
+**Agency Risk** clearly includes the behaviour of [Bad Actors](https://en.wiktionary.org/wiki/bad_actor).  But, this is a very strict definition of **Agency Risk**.   
+
+In software development, we're not lending each other money, but we are being paid by the project sponsor, so they are assuming **Agency Risk** by employing us.   Let's look at some examples of borderline **Agency Risk** situations, in order to sketch out where the domain of this risk lies.
 
 ## CV Building
 
@@ -24,31 +26,33 @@ Also, try to look for _hungry_ consultancies:  if you being a happy client is va
 
 ## The Hero
 
-[Hero Programmers] put in more hours and try to deliver the projects single-handedly, often cutting corners like team communication and process in order to get there.   Sometimes, this can be of benefit to the project: maybe the last push is what is needed to get it over the line?   
+> "The one who stays later than the others is a hero. " - [Hero Culture, _Ward's Wiki_](http://wiki.c2.com/?HeroCulture)
+
+[Hero Programmers](http://wiki.c2.com/?HeroCulture) put in more hours and try to deliver the projects single-handedly, often cutting corners like team communication and process in order to get there.   
+
+Sometimes, this can be of benefit to the project: maybe the last push is what is needed to get it over the line?   
 
 However, sometimes, the hero has an alternative agenda than just getting the project done:
-- A need for control, and for their own vision
-- A preference to work alone
-- A desire for recognition and acclaim from colleagues
-- For job security of being a [Key Man].
+- A need for control, and for their own vision.
+- A preference to work alone.
+- A desire for recognition and acclaim from colleagues.
+- For the job security of being a [Key Man](https://en.wikipedia.org/wiki/Key_person_insurance).
 
 A team _can_ make use of heroism, but it's a double-edged sword.  The hero can becomes a bottleneck to work getting done, and because want to solve all the problems themselves, they under-communicate.
-
-Egoistic program
 
 ## Devil Makes Work
 
 Heroes can be useful, but _underused_ project members are a nightmare.   The problem is, people who are not fully occupied begin to worry that actually, the team would be better off without them, and then wonder if their jobs are at risk.
 
-The solution to this is "busy-work":  finding tasks that, at first sight, look useful, and then delivering them in an over-elaborate way ([Gold Plating]()) that'll keep them occupied.  This will leave you with more [Complexity Risk]() than you had in the first place.
+The solution to this is "busy-work":  finding tasks that, at first sight, look useful, and then delivering them in an over-elaborate way ([Gold Plating](https://en.wikipedia.org/wiki/Gold_plating_(software_engineering))) that'll keep them occupied.  This will leave you with more [Complexity Risk](Complexity-Risk) than you had in the first place.
 
 Even if they don't worry about their jobs, doing this is a way to stave off _boredom_.
 
 ## Pet Projects
 
-> A project, activity or goal pursued as a personal favourite, rather than because it is generally accepted as necessary or important.  - []
+> A project, activity or goal pursued as a personal favourite, rather than because it is generally accepted as necessary or important.  - [Pet Project, _Wiktionary_](https://en.wiktionary.org/wiki/pet_project)
 
-Sometimes, budget holders have projects they value more than others without reference to the value placed on them by the business.  Perhaps the project has a goal that aligns closely with the budget holder's passions, or its related to work they were previously responsible for.  Working on a pet project usually means you get lots of attention (and more than enough budget), but much like [Map and Territory Risk](Map-And-Territory-Risk), it can fall apart very quickly under scrutiny.
+Sometimes, budget-holders have projects they value more than others without reference to the value placed on them by the business.  Perhaps the project has a goal that aligns closely with the budget holder's passions, or its related to work they were previously responsible for.  Working on a pet project usually means you get lots of attention (and more than enough budget), but much like [Map and Territory Risk](Map-And-Territory-Risk), it can fall apart very quickly under scrutiny.
 
 ## Morale Risk
 
