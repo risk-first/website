@@ -66,11 +66,15 @@ Sometimes, the morale of the team or individuals within it dips, leading to lack
 
 ## Hubris & Ego
 
-It seems strange that humans are over-confident.  You would have thought that evolution would drive out this trait but apparently it's not so.  According to tbd, over-confidence is useful when you're in a negotiating position.  And individually, humans are risk-takers 
+It seems strange that humans are over-confident.  You would have thought that evolution would drive out this trait but apparently it's not so:
+
+> "Now, new computer simulations show that a false sense of optimism, whether when deciding to go to war or investing in a new stock, can often improve your chances of winning." - [Evolution of Narcissism, _National Geographic_](https://news.nationalgeographic.com/news/2011/09/110914-optimism-narcissism-overconfidence-hubris-evolution-science-nature/).
+
+In any case, humans have lots of self-destructive tendencies that _haven't_ been evolved away, and we get by.  
 
 Development is a craft, and ideally, we'd like developers to take pride in their work.   Too little pride means lack of care, but too much pride is _hubris_, and the belief that you are better than you really are.  Who does hubris benefit?  Certainly not the team, and not the goal.  
 
-Although over-confidence might be a useful trait when bargaining with other humans, the thesis of everything so far is that reality will punish your over-confidence again and again.  
+Although over-confidence might be a useful trait when bargaining with other humans, the thesis of everything so far is that [Meeting Reality](Meet-Reality) will punish your over-confidence again and again.  
 
 
 
