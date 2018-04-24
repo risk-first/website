@@ -1,10 +1,12 @@
 [Coordinating a team](Coordination-Risk) is difficult enough when everyone on the team has a single [Goal](Goal-In-Mind).  But, people have their own goals, too.  Sometimes, the goals harmlessly co-exist with the team's goal, but other times they don't.
 
-This is [Agency Risk]().   This term comes from finanance (again), and refers to the situation where you entrust your money to someone (the "agent") in order to invest it, but the don't necessarily have your best interests at heart.  They may instead elect to invest the money in ways that help them, or outright steal it.  
+This is **Agency Risk**.   This term comes from finance (again), and refers to the situation where you entrust your money to someone (the "agent") in order to invest it, but the don't necessarily have your best interests at heart.  They may instead elect to invest the money in ways that help them, or outright steal it.  
 
-The less visibility you have of the agent's activities, the bigger the risk.  However, the whole _point_ of giving the money to the agent was that you would have to spend less time and effort managing it.  Hence the quandary.  So, **Agency Risk** flourishes where there is [Invisibility Risk](Communication-Risk).
+> "This dilemma exists in circumstances where agents are motivated to act in their own best interests, which are contrary to those of their principals, and is an example of moral hazard." - [Principal-Agent Problem, _Wikipedia_](https://en.wikipedia.org/wiki/Principal–agent_problem)
 
-So, **Agency Risk** clearly includes the behaviour of [Bad Actors].  But, this is a very strict definition of **Agency Risk**.  And, in development, we're not lending each other money, but we are being paid by the project sponsor, so they are assuming **Agency Risk** by employing us.   Let's look at some examples of borderline **Agency Risk** situations, in order to sketch out where the domain of this risk lies.
+The less visibility you have of the agent's activities, the bigger the risk.  However, the whole _point_ of giving the money to the agent was that you would have to spend less time and effort managing it.  Hence the dilemma.  So, **Agency Risk** flourishes where there is [Invisibility Risk](Communication-Risk).
+
+**Agency Risk** clearly includes the behaviour of [Bad Actors](https://en.wiktionary.org/wiki/bad_actor).  But, this is a very strict definition of **Agency Risk**.   In softwaree development, we're not lending each other money, but we are being paid by the project sponsor, so they are assuming **Agency Risk** by employing us.   Let's look at some examples of borderline **Agency Risk** situations, in order to sketch out where the domain of this risk lies.
 
 ## CV Building
 
