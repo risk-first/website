@@ -1,6 +1,10 @@
 **Dependency Risk** is the risk you take on whenever you have a dependency on something else.   One simple example could be that the software service you write might depend on a server to run on.  If the server goes down, the service goes down too.  In turn, the server depends on electricity from a supplier, as well as a network connection from a provider.  If either of these dependencies aren't met, the service is out of commission.
 
-Dependencies can be on _software_, _services_, _people_, _teams_, _events_ and so on.   Dependencies add risk to any project because the reliability of the project itself is now a function involving the reliability of the dependency.  
+Dependencies can be on _events_, _people_, _teams_, _software_, _services_  and so on.   Dependencies add risk to any project because the reliability of the project itself is now a function involving the reliability of the dependency.  
+
+## Reliability
+
+Reliability of an overall system is constrained by the reliability
 
 ## Events 
 
@@ -204,6 +208,24 @@ Sometimes, the amount of code and complexity _goes up_:  Spring Templates exampl
 
 ## Choosing And Using A Library
 
+m&t risk, obvs.  but
+1.  Is it alive?
+2.  Is it open source?
+3.  Well trafficked
+4.  Namespace
+5.  Look at the source
+6.  Alternatives available?
+7.  Traction (vs. expected traction)
+
+
+Trying things out usually has a low Dead end Risk vs coding yourself, and you can usually try several
+
+- number of dependencies it has
+
+Write as little code as possible.
+
+
+
 -- we don't use bounded rationality.
 
 
@@ -225,3 +247,11 @@ gantt charts
 
 Silo thinking 
 
+
+counterparty risk
+insurance
+
+
+dependency ijection - invisibile dependencies
+
+reliability risk

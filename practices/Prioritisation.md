@@ -78,3 +78,6 @@ Discuss the tool Duncan and I used to determine whether a release date was feasi
 https://en.wikipedia.org/wiki/Planning_fallacy
 
 -- estimating:  holding the risks in your hand and saying, which is heavier?
+
+
+Risk first planning:  break down the goal into the biggest risks3

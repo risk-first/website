@@ -3,6 +3,32 @@
 
 You could think of this as **Codebase Risk**, and we'll look, three separate measures of complexity and talk about **Technical Debt**, and look at places in which **Codebase Risk** is at it's greatest.
 
+complexity is different to entropy, but related
+
+
+1.  Cyclomatic complexity - number of routes through a program  (and, abstraction). A1, A2, B1, B2, A3,A4,B3,B4.. nothing about (long process with a small difference) and (another long process with a small difference - but kc does).
+2.  Kolmogorov complexity - program size (minimum)
+3.  Graph complexity
+4.  Reliability 
+5.  Dependency Injection / Ioc
+
+What is complexity risk?   
+
+ - Inertia
+ - Technical Debt
+ - Refactoring
+ 
+Encapsulation:  why is it useful?  (it turns a problem of cc i*o into i+o)  also from a psychollogical perspective.   plus, city walls.
+
+
+
+
+
+
+
+
+
+
 ## Kolmogorov Complexity
 
 The standard Computer-Science definition of complexity, is [Kolmogorov Complexity](https://en.wikipedia.org/wiki/Kolmogorov_complexity).  This is:
@@ -355,6 +381,35 @@ Let's say you have two ways to do X (x1,x2), and two ways to do Y (y1, y2).  But
 |-----|-----|-----|
 
 Both x1, and x2 are used 3 times each.  Both y1 and y2 are used 3 times each.
+
+
+What would our running software need to tell us for this to happen?
+
+Containment
+
+Organising at higher levels than object.
+
+Part of the problem might be that we don’t really have programming language abstractions that properly include containment.  
+
+Does containment actually exist?  It makes sense to me to say that some software is running inside a JVM on a particular box.  And that the JVM process is contained on that box.  There seems to be a hierarchy of containment here, much like you’d get with geneos.  
+
+Principle Of Locality
+
+Networks and computers break locality. They allow anything to happen anywhere.  But, the human brain (and possibly the universe as a whole) are founded on this principle.  So, abstracting it away means that it becomes an unknowable quantity.  And, lack of observability might follow from this.
+
+Common Taxonomy
+
+This is something you see in the TOM:  the desire to end up with a single way of describing features.  Essentially, we really need a database that explains our software processes.  Building the model of the processes is basically building a database.  But, is there a fixed schema for this, or do you let people figure it out as they go?
+
+schema: could also refer to an XML schema, which obviously, is also a database format.  What happened to XML databases, anyway?
+
+What would this even mean?
+
+Programming languages fail us because they encourage us to build software that is unknowable.  Could we invent a language that fixes this problem?
+
+In the same way as we made Java a language without memory leaks, could we make a language for describing software in a way that makes it eminently knowable?
+
+So far, I have not come across anything that does this.  But that doesn’t mean it’s impossible - just that it hasn’t even been attempted before.
 
 
 
