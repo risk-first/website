@@ -20,6 +20,7 @@ We move from top-left ("I want to send a message to someone") to bottom left, cl
 One of the chief concerns in Shannon's paper is the step between **Transmission** and **Reception**:  he creates a theory of information (measured in **bits**), the upper-bounds of information that can be communicated over a channel and ways in which **Communication Risk** between these processes can be mitigated by clever **Encoding** and **Decoding** steps.
 
 But it's not just transmission.  **Communication Risk** exists at each of these steps.  Let's imagine a short exchange where**T** is trying to send a message to **R**:
+
 -**T** might be **motivated** to send a message to tell **R** something, only to find out that _they already knew it_, or it wasn't useful information for them.
 - In the **composition** stage,**T** might mess up the _intent_ of the message: instead of "Please buy chips" they might say, "Please buy chops".
 - In the **encoding** stage,**T** might not speak clearly enough to be understood, and 
@@ -290,7 +291,13 @@ For people though, **Abstraction** is a tool that we can use to refer to other c
 
 As soon as you create a function, you are doing abstraction.  You are saying:  “I now have this operation. The details, I won’t mention again, but from now on, it’s called _f_.”  And suddenly, “_f_” hides.  It is working invisibly.  Things go on in _f_ that people don’t necessarily need to understand.   There may be some documentation, or tacit knowledge around what _f_ is, and what it does, but it’s not necessarily right.  Referring to _f_ is a much simpler job than understanding _f_.
 
-**Invisibility Risk** is mainly [Hidden Risk](Risk):  you don't know what you don't know.
+**Invisibility Risk** is mainly [Hidden Risk](Risk):  you don't know what you don't know.  But you can easily _hide things from yourself_ with software.  
+ - Adding a thread to an application that doesn't report whether it's worked or failed, or is running out of control and consuming all the cycles of the CPU.
+ - Load balancing can increase reliability, but only if you find and fix failed servers quickly.   Otherwise, you only see problems when the last server fails.
+ - When building a webservice, can you assume that it's working for the users in the way you want it to?
+ 
+Software brings tbd   
+  
 
 ![Message Risk](images/communication_messages.png)
 
@@ -308,6 +315,7 @@ Even if the receiver trusts the communicator, they may not trust the message.  L
  - [Weltanschauung (World View)](https://en.wikipedia.org/wiki/World_view): The ethics, values and beliefs in the receiver's [Internal Model]() may be incompatible to those from the sender.  
  - [Relativism]() is the concept that there are no universal truths.  Every truth is from a frame of reference.  For example, what constitutes _offensive language_ is dependent on the listener.
  - [Psycholinguistics]() is the study of humans aquire languages.  Just as there are different languages and dialects, and _industry dialects_: we all 
+ - Internalizing
   
 From the point-of-view of [Marketing Communications]() choosing the right message is part of the battle.  You are trying to communicate your idea in such a way as to mitigate **Belief Risk** and **Trust Risk**.
 

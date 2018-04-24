@@ -101,7 +101,7 @@ tbd
 ## Discounting the Future To Zero
 
 - more pressure, heavier discounting
-pooh bear 
+pooh bear procrastination
 
 ## Is This Scientific?
 

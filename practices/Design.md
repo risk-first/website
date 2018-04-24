@@ -51,3 +51,7 @@ Building architects appreciate that their _plans might change_:  Roman ruins mig
  
 > Everyone has a great plan until they get hit in the nose - Mike Tyson
 > Fail to plan and you plan to fail - Eisenhower?
+
+
+
+Risk first design example ; building the research indexer
