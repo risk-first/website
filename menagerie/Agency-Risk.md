@@ -6,9 +6,9 @@ This is **Agency Risk**.   This term comes from finance (again), and refers to t
 
 The less visibility you have of the agent's activities, the bigger the risk.  However, the whole _point_ of giving the money to the agent was that you would have to spend less time and effort managing it.  Hence the dilemma.  So, **Agency Risk** flourishes where there is [Invisibility Risk](Communication-Risk).
 
-**Agency Risk** clearly includes the behaviour of [Bad Actors](https://en.wiktionary.org/wiki/bad_actor).  But, this is a very strict definition of **Agency Risk**.   
+**Agency Risk** clearly includes the behaviour of [Bad Actors](https://en.wiktionary.org/wiki/bad_actor).  But, this is a very strict definition of **Agency Risk**.   In software development, we're not lending each other money, but we are being paid by the project sponsor, so they are assuming **Agency Risk** by employing us.   
 
-In software development, we're not lending each other money, but we are being paid by the project sponsor, so they are assuming **Agency Risk** by employing us.   Let's look at some examples of borderline **Agency Risk** situations, in order to sketch out where the domain of this risk lies.
+Let's look at some examples of borderline **Agency Risk** situations, in order to sketch out where the domain of this risk lies.
 
 ## CV Building
 
