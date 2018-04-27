@@ -1,10 +1,12 @@
 
+\newpage
 
 
 
 
 Risk First Software Development
 
+\newpage
 
 This is part of the risk first series.
 
@@ -16,12 +18,21 @@ sd
 f
 sdf
 
+\newpage
 Published by.
 
 On.
 
 Stuff;
+\newpage
 Dedicated to blan
+\newpage
+
+# Table Of Contents
+
+\setcounter{tocdepth}{1}
+\tableofcontents
+\newpage
 # Preface
 
 Welcome to Risk-First
@@ -53,10 +64,16 @@ Lastly, although this is a [Wiki](https://en.wikipedia.org/wiki/Wiki), it's not 
 
 
 
+\pagebreak
+
 # Part 1: Introduction
 
 Some easy-to-digest ideas that will set the scene for examining the practices later.
 
+\pagebreak
+
+\newpage
+# Introduction
 Hi.  
 
 Welcome to the Risk-First Wiki.  
@@ -112,6 +129,8 @@ In this website, we're going to look at the risks in the software process and ho
 Let's examine the scenario of a new software project, and expand on the simple model being outlined above:  instead of a single person, we are likely to have a team, and our model will not just exist in our heads, but in the code we write.  
 
 On to [Development Process](Development-Process)
+\newpage
+# Development Process
 
 In the [previous section](Introduction) we looked at a simple model for risks on any given activity.
 
@@ -242,6 +261,8 @@ Could it be that _everything_ you do on a software project is risk management?  
 
 
 
+\newpage
+# All Risk Management
 In this section, I am going to introduce the idea that everything you do on a software project is Risk Management.
 
 In the [last section](Development-Process), we observed that all the activities in a simple methodology had a part to play in exposing different risks.  They worked to manage risk prior to them creating bigger problems in production.
@@ -316,6 +337,8 @@ In the next section, [Software Project Scenario](Software-Project-Scenario) I wi
 
 
  
+\newpage
+# Software Project Scenario
 Where do the risks of the project lie?  
 
 How do we decide what _needs to be done today_ on a software project?  
@@ -418,6 +441,8 @@ As we saw in the example of the [Dinner Party](Introduction), creating an intern
 Whether we do this explicitly or not, we are still individually following this model.
 
 In the next section, we're going to take a quick aside into looking at some [Risk Theory](Risk-Theory).
+\newpage
+# Risk Theory
 Here, I am going to recap on some pre-existing knowledge about risk, generally, in order to set the scene for the next section on [Meeting Reality](Meeting-Reality).  
 
 ## Risk Registers
@@ -537,6 +562,8 @@ Reality is messy.  Dressing it up with numbers doesn't change that and you risk 
 
 Reality is Reality, [so let's meet it](Meeting-Reality). 
 
+\newpage
+# Meeting Reality
 In this section, we will look at how exposing your [Internal Model](Internal-Model) to reality is in itself a good risk management technique.
 
 ## Revisiting the Model
@@ -649,6 +676,8 @@ Surely, the faster you can do this, the better?  [Let's investigate...](Cadence)
 
 
  
+\newpage
+# Cadence
 Let's go back to the model again, introduced in [Meeting Reality](Meeting-Reality):
 
 ![Reality 2](images/reality2.png)
@@ -722,6 +751,8 @@ Let's look at the journey so far:
 What this has been building towards is supplying us with a vocabulary with which to communicate to our team-mates about which Risks are important to us, which actions we believe are the right ones, and which tools we should use.
 
 Let's have a [look at an example](A-Conversation) of how this might work:
+\newpage
+# A Conversation
 After so much theory, it seems like it's time to look at how we can apply these principles in the real world.
 
 The following is based the summary of an issue from just a few weeks ago.  It's heavily edited and anonymized, and I've tried to add the **Risk-First** vocabulary along the way, but otherwise, it's real.
@@ -786,6 +817,8 @@ So with the groundwork out of the way, let's get on to Part 2 and investigate [T
 
 Risks are often very similar across different software projects.   And, if you know about them, you can look for them.  This section attempts to break them down for you:
 
+\newpage
+# Risk Landscape
 
 Risk is messy.  It's not always easy to tease apart the different components of risk and look at them individually.  Let's look at a high-profile recent example to see why.
 
@@ -860,6 +893,8 @@ tbd
 On each page we'll start by looking at the category of the risk _in general_, and then break this down into some specific subtypes.                                                          
 
 Let's get started with [Feature Risk](Feature-Risk).
+\newpage
+# Feature Risk
 
 **Feature Risk** is the category of risks to do with features that have to be in your software.   
 You could also call it **Functionality Risk**.  
@@ -949,6 +984,8 @@ Consider **Feature Risk** from both the down-side and the up-side:
 
 Hopefully, this has given you some ideas about what **Feature Risk** involves.   Hopefully, you might be able to identify a few more specific varieties.  But, it's time to move on and look at how time affects our projects, in [Schedule Risk](Schedule-Risk).
  
+\newpage
+# Schedule Risk
 **Schedule Risk** is the fundamental risk you face because of _lack of time_.  
 
 You could also call this **Chronological Risk** or just **Time Risk** if you wanted to.
@@ -1070,6 +1107,8 @@ Having looked at both Time and Money components of risk, let's look at something
 
 
 
+\newpage
+# Complexity Risk
 
 **Complexity Risk** are the risks to your project due to its underlying complexity.  In the next few sections, we'll break this idea down, looking at [Dependency Risk](Dependency-Risk) and [Boundary Risk](Boundary-Risk) as two particular sub-types of **Complexity Risk**.  However, here, we're going to be specifically focusing on _code you write_: the size of your code-base, the number of modules, the interconnectedness of the modules and how well-factored the code is.  
 
@@ -1485,6 +1524,8 @@ So far, I have not come across anything that does this.  But that doesn’t mean
 
 
 
+\newpage
+# Dependency Risk
 **Dependency Risk** is the risk you take on whenever you have a dependency on something else.   One simple example could be that the software service you write might depend on a server to run on.  If the server goes down, the service goes down too.  In turn, the server depends on electricity from a supplier, as well as a network connection from a provider.  If either of these dependencies aren't met, the service is out of commission.
 
 Dependencies can be on _events_, _people_, _teams_, _software_, _services_  and so on.   Dependencies add risk to any project because the reliability of the project itself is now a function involving the reliability of the dependency.  
@@ -1742,6 +1783,8 @@ insurance
 dependency ijection - invisibile dependencies
 
 reliability risk
+\newpage
+# Boundary Risk
 **Boundary Risk** is an emergent risk, which exists at the intersection of [Complexity Risk](Complexity-Risk), [Dependency Risk](Dependency-Risk) and [Communication Protocol Risk](Communication-Risk).  Because of that, it's going to take a bit of time to pick it apart and understand it, so we're going to build up to this in stages.
 
 ## Hand Tools
@@ -2021,6 +2064,8 @@ Wicked Problems In Boundary Risk
 
 - Object relational impedance mismatch
 
+\newpage
+# Production Risk
 
 
 
@@ -2071,6 +2116,8 @@ Denial Of Service
 
 Upgrades ( tell story of Research upgrade that went wrong because we were upgrading at the same time as an outage)
 
+\newpage
+# Process Risk
 
 
 Finding problems in the process, fixing it quickly, how to do this.
@@ -2126,6 +2173,8 @@ Bureaucracy is self-serving.
 ### See Also
 
 [Map And Territory Risk]
+\newpage
+# Coordination Risk
 **Coordination Risk** is the risk that, despite a group of people (or processes) having the same [Goal In Mind]() they can fail to coordinate on a way to meet this goal and end up making things worse.  **Coordination Risk** is embodied in the phrase "Too Many Cooks Spoil The Broth":  more people, opinions or actors often make results worse.
 
 In this section, we're going to work on the assumption that everyone has a common [Goal](), but in reality, people often have their own agendas.  We'll come to that in the section on [Agency Risk](Agency-Risk) later.
@@ -2207,6 +2256,8 @@ split brain
  geographic risk
  
  
+\newpage
+# Communication Risk
 **Communication Risk** is the risk of communication between entities _going wrong_, due to loss or misunderstanding.
 Consider this: if we all had identical knowledge, there would be no need to do any communicating at all, and therefore and also no [Communication Risk](Communication-Risk).  
 
@@ -2552,6 +2603,8 @@ So, here's a summary of where we've arrived with our model of communication risk
 ![Communication 2](images/communication_3.png)
 
 The purpose of Communication is to _coordinate_ our actions, so next it's time to look at [Coordination Risk](Coordination-Risk).
+\newpage
+# Map And Territory Risk
 As we discussed in the section on [Abstraction Risk](Communication Risk), our understanding of the world is entirely informed by the names we give things and the abstractions we create.  
 
 **Map And Territory Risk** is the recognition that there is a danger that we come to believe the abstractions are more real than reality itself.  It comes from the expression "Confusing the Map for the Territory".  That is believing the abstraction is reality, instead of reality itself.
@@ -2648,6 +2701,8 @@ following the rules more important than getting things done.
 
 Head in the sand
 
+\newpage
+# Agency Risk
 [Coordinating a team](Coordination-Risk) is difficult enough when everyone on the team has a single [Goal](Goal-In-Mind).  But, people have their own goals, too.  Sometimes, the goals harmlessly co-exist with the team's goal, but other times they don't.
 
 This is **Agency Risk**.   This term comes from finance (again), and refers to the situation where you entrust your money to someone (the "agent") in order to invest it, but the don't necessarily have your best interests at heart.  They may instead elect to invest the money in ways that help them, or outright steal it.  
@@ -2735,6 +2790,8 @@ Although over-confidence might be a useful trait when bargaining with other huma
 
 This part is a discussion of the different practices within Software Development, and how they mitigate and accentuate the different risks.
 
+\newpage
+# Coding
 ## What Is It
 
 **Coding** is the main practice that identifies us as working on a _software project_:  Actually entering instructions in a language that the computer will understand, be it Java, C++, Matlab, Excel or _whatever_.   It is transferring the ideas in your head into steps that the computer can understand, or, as Wikipedia has it:
@@ -2995,6 +3052,8 @@ tbd
 
 ## See Also
 
+\newpage
+# Design
 ## What Is It
 
 Design is what you do every time you think of an action to mitigate a risk.  And **Big Design Up Front** is where you do a lot of it in one go, for example:
@@ -3052,6 +3111,8 @@ Building architects appreciate that their _plans might change_:  Roman ruins mig
 
 
 Risk first design example ; building the research indexer
+\newpage
+# Prioritisation
 ## What Is It
 
 Prioritisation is a key process in trying to focus on building _useful_ stuff first.   It could look like:
@@ -3135,6 +3196,8 @@ https://en.wikipedia.org/wiki/Planning_fallacy
 
 
 Risk first planning:  break down the goal into the biggest risks3
+\newpage
+# Requirements Capture
 ## What Is It
 
 
@@ -3191,6 +3254,8 @@ Steve Jobs - people don't know what they want until they see it.
 
 
 Elizer Yodowski - what exactly is a MVP.
+\newpage
+# Testing
 
 ## What Is It 
 
@@ -3339,6 +3404,8 @@ For these reasons, focus on writing the _smallest number of tests that mitigates
 
 A more in-depth look at software methodologies and how their chosen practices reflect their position on what the most critical risks are. 
 
+\newpage
+# Methodologies
 
 Thinking is hard.  And worrying about Risk constantly would be _exhausting_.
 
@@ -3405,6 +3472,8 @@ But, a lot of the practices end up being the same.
 
 
 
+\newpage
+# Waterfall
 
 [Waterfall](https://en.wikipedia.org/wiki/Waterfall_model) is a linear, stepwise approach to the processes involved in delivering a software system, and it really represents a family of methodologies, such as [RUP](https://en.wikipedia.org/wiki/Rational_Unified_Process) or [SSADM](https://en.wikipedia.org/wiki/Structured_systems_analysis_and_design_method).
 
