@@ -10,6 +10,8 @@ book/Preface.md
 
 \pagebreak
 
+\part{''Part 1: Introduction''}
+
 # Part 1: Introduction
 
 Some easy-to-digest ideas that will set the scene for examining the practices later.
@@ -26,6 +28,8 @@ introduction/Meeting-Reality.md
 introduction/Cadence.md
 introduction/A-Conversation.md
 ```
+
+\part{''Part 2: A Risk Menagerie''}
 
 # Part 2:  A Risk Menagerie
 
@@ -46,6 +50,8 @@ menagerie/Map-And-Territory-Risk.md
 menagerie/Agency-Risk.md 
 ```
 
+\part{''Part 3: Practices''}
+
 # Part 3: Practices
 
 This part is a discussion of the different practices within Software Development, and how they mitigate and accentuate the different risks.
@@ -58,6 +64,8 @@ practices/Requirements-Capture.md
 practices/Testing.md
 ```
 
+\part{''Part 4: Methodologies''}
+
 # Part 4: Methodologies
 
 A more in-depth look at software methodologies and how their chosen practices reflect their position on what the most critical risks are. 
@@ -67,5 +75,4 @@ method/Methodologies.md
 method/Waterfall.md
 ```
 
-# Glossary
 
