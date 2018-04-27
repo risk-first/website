@@ -52,7 +52,9 @@ Even if they don't worry about their jobs, doing this is a way to stave off _bor
 
 > A project, activity or goal pursued as a personal favourite, rather than because it is generally accepted as necessary or important.  - [Pet Project, _Wiktionary_](https://en.wiktionary.org/wiki/pet_project)
 
-Sometimes, budget-holders have projects they value more than others without reference to the value placed on them by the business.  Perhaps the project has a goal that aligns closely with the budget holder's passions, or its related to work they were previously responsible for.  Working on a pet project usually means you get lots of attention (and more than enough budget), but much like [Map and Territory Risk](Map-And-Territory-Risk), it can fall apart very quickly under scrutiny.
+Sometimes, budget-holders have projects they value more than others without reference to the value placed on them by the business.  Perhaps the project has a goal that aligns closely with the budget holder's passions, or its related to work they were previously responsible for.  
+
+Working on a pet project usually means you get lots of attention (and more than enough budget), but much like [Map and Territory Risk](Map-And-Territory-Risk), it can fall apart very quickly under scrutiny.
 
 ## Morale Risk
 
