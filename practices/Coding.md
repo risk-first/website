@@ -141,7 +141,7 @@ When this happens, it's because somehow the team feel that [Coordination Risk](C
 
 There are some mitigations here:  video-chat, moving staff from location-to-location for face-time, frequent [show-and-tell](Review), or simply modularizing accross geographic boundaries, in respect of [Conway's Law](Coordination-Risk):
 
-> "organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations."  — _[M. Conway](https://en.wikipedia.org/wiki/Conway%27s_law)_
+> "organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations."  - _[M. Conway](https://en.wikipedia.org/wiki/Conway%27s_law)_
 
 When we add **Outsourcing** into the mix, we also have to consider [Agency Risk](Agency-Risk):  the consultancy you've hired is _definitely_ more interested in keeping themselves solvent than solving your business problems.
 
