@@ -1,10 +1,19 @@
+---
+title:  Risk-First Software Development
+author: Rob Moffat
+geometry: "paperheight=9.69in,paperwidth=7.44in,top=2cm, bottom=2cm, outer=3cm, inner=3.5cm, headsep=14pt"
+documentclass: book
+mainfont: Constantia
+header-includes: |
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \fancyhead{}
+    \renewcommand{\headrulewidth}{0pt}
+    \fancyfoot[LE, RO]{\thepage}
+    \fancyfoot[C]{\textsl}
+---
 
-\newpage
-
-
-
-
-Risk First Software Development
+\frontmatter
 
 \newpage
 
@@ -27,10 +36,7 @@ Stuff;
 \newpage
 Dedicated to blan
 \newpage
-
-# Table Of Contents
-
-\setcounter{tocdepth}{1}
+\setcounter{tocdepth}{0}
 \tableofcontents
 \newpage
 # Preface
@@ -64,16 +70,11 @@ Lastly, although this is a [Wiki](https://en.wikipedia.org/wiki/Wiki), it's not 
 
 
 
-\pagebreak
-
-# Part 1: Introduction
-
-Some easy-to-digest ideas that will set the scene for examining the practices later.
-
-\pagebreak
+\mainmatter
+\part{Introduction}
 
 \newpage
-# Introduction
+# A Simple Scenario
 Hi.  
 
 Welcome to the Risk-First Wiki.  
@@ -813,9 +814,7 @@ So with the groundwork out of the way, let's get on to Part 2 and investigate [T
 
  
 
-# Part 2:  A Risk Menagerie
-
-Risks are often very similar across different software projects.   And, if you know about them, you can look for them.  This section attempts to break them down for you:
+\part{Risk}
 
 \newpage
 # Risk Landscape
@@ -1081,7 +1080,7 @@ A more specific formulation of **Schedule Risk** is **Red Queen Risk**, which is
 
 This is named after the Red Queen quote from Alice in Wonderland:  
 
-> “My dear, here we must run as fast as we can, just to stay in place. And if you wish to go anywhere you must run twice as fast as that.”  ― [Lewis Carroll, _Alice in Wonderland_](https://www.goodreads.com/quotes/458856-my-dear-here-we-must-run-as-fast-as-we)
+> “My dear, here we must run as fast as we can, just to stay in place. And if you wish to go anywhere you must run twice as fast as that.”  - [Lewis Carroll, _Alice in Wonderland_](https://www.goodreads.com/quotes/458856-my-dear-here-we-must-run-as-fast-as-we)
 
 The problem with software projects is that tools and techniques change _really fast_.  In 2011, 3DRealms released Duke Nukem Forever after [15 years in development](https://en.wikipedia.org/wiki/Duke_Nukem_Forever), to negative reviews:  
 
@@ -1375,6 +1374,8 @@ source control mitigates dead end risk a bit, becuase you can go back and chnage
 backups etc.  help with this.
 
 Is it a known unknown?  You know you might be going the wrong way.
+
+Muneer building the extractor, using ASP.net.. turned out we don't deploy .net/ASP only Java
 
 
 ## The Re-Write
@@ -2069,41 +2070,21 @@ Wicked Problems In Boundary Risk
 
 
 
+
+
+
 stuff that can go wrong in production
 
 changing stuff in production is harder than changing it in test, as you have to _migrate_.
 
 all the costs of breaking stuff, and damaging the running of the business.
 
-breaking data.
-breaking process.
-
-reputation risk
-
-performance risk -- oding things in time/memory
-
-
-## Going Into Production
-
-...
-Bug reports, feedback
-Quality of feedback
-
-
-Monitoring tools, logs
-
 
 reputation damage
 (you only get one chance to make a first impression)
 
-SPOFs & Correlation
-Contingency Planning
-Disaster Recovery
-Datacentres
-Support
 
-Hacking
-Denial Of Service
+
 
 
  - You don't know all the ways the software will get used in production.
@@ -2116,8 +2097,66 @@ Denial Of Service
 
 Upgrades ( tell story of Research upgrade that went wrong because we were upgrading at the same time as an outage)
 
+Production Risk
+  Overview: 	
+    - Overall definition: anything that can go wrong with the production system.  Loss of data, hacking, poor user experience.
+    - In general, meeting reality when there are things at stake.
+    - Ideally, move production risks _forward_, and deal with them before they are production.
+    - Tension:  you can only make a first impression once, vs.  gilding the lilly, perfectionism.
+    - Consider risk.
+    - Measuring Impact (affected users, losses in currency etc).
+    
+  Specifics:
+    - Operational Risk:
+      - Single points of failure.
+        - Poor monitoring, visibility risk meets operational risk (otherwise, it doesn't matter - good example here)
+        - Correlation  (need a good example here)
+        - Contingency Planning 
+        - Disaster Recovery
+        - Datacentres (Aws etc)
+        - Performance Degradation / Runaway processes
+        - Monitoring Tools and Logs
+    - Reputational Risk:
+      - Support (trade off - promptness vs ability)
+    - Security Risk
+      - Hacking
+      - Denial Of Service 
+    - Feedback Loops
+       - Bug reports, feedback
+       - Quality of feedback
+       - Internal Controls
+         - Agency Risk meets Production Risk (bad actors, controls)
+  
+
+
+
+
+
 \newpage
 # Process Risk
+
+Example evolution:
+
+1.  Person B in a company starts doing A.  
+2.  A is really useful.   B gets busy.  No one cares.
+3.  B goes on holiday.  A doesn't get done, and people care.  
+4.  Either, B co-opts other people to help, gets given a team (T), or someone else forms a team containing B to get the job done "properly".
+5.  T organises bureaucratically, like a cell, so that there is a controlled gate (G) by which A can get done.  They monitor G, 
+which probably involves filling in a form.
+6.  There are abuses of A: people either misuse it, or use it too much.
+7.  T reacts and sets up sign-off, authorization or monetary barriers around B, increasing the bureauratic load involved in using A.
+8.  There are further abuses of A:  bureaucratic load increases.
+9.  Person C, who has experience working with team T acts as a middleman for customers requiring some variant of A.  They are able to help navigate the bureaucratic process.
+
+There is a "food chain" around the use of A: people can make a living off "helping" other people use A.
+
+So, what is process risk?   Process risk is the hidden complexity of following any process.  It involves coordination risk, invisibility risk, communication risk, agency risk, but most of all, Hidden risk:  "A" has been thoroughly submerged beneath a layer of bureaucracy, either to protect the organisation from misuse of A, to help in the use of A.
+
+Hold on, but why?  Because A represents a capability, _but_ the capability doesn't exactly match the feature required, so it gets buried in a layeror bureaucracy to protect the organisation from misuse of the feature, and adapt its interface to what the organisation requires.
+
+But, bureaucracy is self-serving too:  by creating the barrier, you take away risk internally, and make it external.
+
+
 
 
 Finding problems in the process, fixing it quickly, how to do this.
@@ -2132,19 +2171,11 @@ Does not releasing often enough count as process risk?
 
 Processes used rarely work less well.
 
-
 Repeatability.
 
-
 ## BUreaucracy Risk
-
 operational risk
-
-
 guides
-
-
-
 
 getting other people to do things takes time.
 
@@ -2168,11 +2199,18 @@ Bureaucracy is self-serving.
 
 - understand why it's there 
 
-
-
 ### See Also
 
 [Map And Territory Risk]
+
+
+Process Risk 
+  - Organisations evolve to minimize process risk?
+  
+  
+
+
+
 \newpage
 # Coordination Risk
 **Coordination Risk** is the risk that, despite a group of people (or processes) having the same [Goal In Mind]() they can fail to coordinate on a way to meet this goal and end up making things worse.  **Coordination Risk** is embodied in the phrase "Too Many Cooks Spoil The Broth":  more people, opinions or actors often make results worse.
@@ -2255,6 +2293,7 @@ split brain
  
  geographic risk
  
+large organisation risks?
  
 \newpage
 # Communication Risk
@@ -2786,9 +2825,7 @@ Although over-confidence might be a useful trait when bargaining with other huma
 
 
 
-# Part 3: Practices
-
-This part is a discussion of the different practices within Software Development, and how they mitigate and accentuate the different risks.
+\part{Practices}
 
 \newpage
 # Coding
@@ -2935,7 +2972,7 @@ When this happens, it's because somehow the team feel that [Coordination Risk](C
 
 There are some mitigations here:  video-chat, moving staff from location-to-location for face-time, frequent [show-and-tell](Review), or simply modularizing accross geographic boundaries, in respect of [Conway's Law](Coordination-Risk):
 
-> "organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations."  — _[M. Conway](https://en.wikipedia.org/wiki/Conway%27s_law)_
+> "organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations."  - _[M. Conway](https://en.wikipedia.org/wiki/Conway%27s_law)_
 
 When we add **Outsourcing** into the mix, we also have to consider [Agency Risk](Agency-Risk):  the consultancy you've hired is _definitely_ more interested in keeping themselves solvent than solving your business problems.
 
@@ -3400,9 +3437,7 @@ For these reasons, focus on writing the _smallest number of tests that mitigates
 
 [Risk Based Agile Testing](https://www.amazon.co.uk/Risk-Driven-Agile-Testing-risk-based-effective-ebook/dp/B06XGL4CDL/ref=sr_1_1?ie=UTF8&qid=1521908627&sr=8-1&keywords=risk+based+agile+testing) by Martin Ivison, which covers a lot of this ground in much more detail. 
 
-# Part 4: Methodologies
-
-A more in-depth look at software methodologies and how their chosen practices reflect their position on what the most critical risks are. 
+\part{Methodologies}
 
 \newpage
 # Methodologies
@@ -3539,5 +3574,4 @@ One of the biggest problems in sticking to a [Design](Design), rather than letti
 The fewer different [phases or cycles](Prioritisation) in your project, the fewer times you will [Meet Reality](Meet-Reality) 
 
 
-# Glossary
 

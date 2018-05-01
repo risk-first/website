@@ -265,6 +265,8 @@ backups etc.  help with this.
 
 Is it a known unknown?  You know you might be going the wrong way.
 
+Muneer building the extractor, using ASP.net.. turned out we don't deploy .net/ASP only Java
+
 
 ## The Re-Write
 

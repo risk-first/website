@@ -1,5 +1,2 @@
-
-# Table Of Contents
-
-\setcounter{tocdepth}{1}
+\setcounter{tocdepth}{0}
 \tableofcontents
