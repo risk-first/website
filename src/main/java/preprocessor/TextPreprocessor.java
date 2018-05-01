@@ -43,6 +43,12 @@ public class TextPreprocessor {
 		while (!line.equals("```")) {
 			if (!line.startsWith("#")) {
 				File f = new File(origin.getParentFile(), line);
+				String title = "# " + line.substring(line.lastIndexOf("/")+1).replace("-", " ");
+				title = title.replace(".md", "");
+				System.out.println("\\newpage");
+				if (!line.contains("book")) {
+					System.out.println(title);
+				}
 				process(createBufferedReader(f), f);
 			}
 			line = br.readLine().trim();
