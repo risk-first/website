@@ -3,7 +3,7 @@ title:  Risk-First Software Development
 author: Rob Moffat
 geometry: "paperheight=9.69in,paperwidth=7.44in,top=2cm, bottom=2cm, outer=3cm, inner=3.5cm, headsep=14pt"
 documentclass: book
-mainfont: Constantia
+mainfont: Palatino 
 header-includes: |
     \usepackage{fancyhdr}
     \pagestyle{fancy}

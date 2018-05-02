@@ -81,7 +81,8 @@ By applying techniques such as abstraction, we can improve in the direction of t
 But we could go further down into [Code Golf](https://en.wikipedia.org/wiki/Code_golf) territory.  This javascript program plays [FizzBuzz](https://en.wikipedia.org/wiki/Fizz_buzz) up to 100, but is less readable than you might hope:
 
 ```javascript
-for(i=0;i<100;)document.write(((++i%3?'':'Fizz')+(i%5?'':'Buzz')||i)+"<br>") (66 symbols)
+for(i=0;i<100;)document.write(((++i%3?'':'Fizz')+
+(i%5?'':'Buzz')||i)+"<br>")                                  (66 symbols)
 ```
 
 So there is at some point a trade-off to be made between **Complexity Risk** and [Communication Risk](Communication-Risk).  This is a topic we'll address more in that section.   But for now, it should be said that [Communication Risk](Communication-Risk) is about _understanding_:  The more complex a piece of software is, the more difficulty users will have understanding it, and the more difficulty developers will have changing it.  
