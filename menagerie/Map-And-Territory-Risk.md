@@ -55,7 +55,7 @@ The map is _always_ simpler than the territory, therefore there can be no perfec
 - The budget that was given to our department (Risk) was really based on how much fear the budget holders currently had of the market regulators.  But this was bullshit too, because
 - At a higher level, the executives had realised that Investment Banking wasn't one of the banks strategic strengths, and was working to close it all down anyway.
 
-When faced with so many mis-aligned objectives, it seemed completely hopeless to concentrate on the task at hand.  But then, my colleague Gavin was able to nihilistically resolve the onion by adding a final layer:
+When faced with so many mis-aligned objectives, it seemed completely hopeless to concentrate on the task at hand.  But then, my colleague Gavin was able to nihilistically complete the onion by adding a final layer:
 
 - It's all about chasing money, which is bullshit, because life is bullshit.
 
@@ -83,7 +83,7 @@ tbd
 
 ## Head In The Sand
 
-
+Introduce Rapid Development example here?
 
 how to pick projects
 
@@ -94,3 +94,4 @@ following the rules more important than getting things done.
 
 Head in the sand
 
+Bullshit jobs

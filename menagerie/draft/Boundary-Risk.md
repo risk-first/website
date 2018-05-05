@@ -276,4 +276,7 @@ Wicked Problems In Boundary Risk
  
 
 - Object relational impedance mismatch
+Boundary risk around companies, (Contracts), abstraction boundaries. 
+bigger the organisation, the more risk that you don't know what's happening outside it
+
 

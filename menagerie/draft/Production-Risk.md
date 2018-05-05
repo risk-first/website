@@ -59,7 +59,7 @@ Production Risk
          - Agency Risk meets Production Risk (bad actors, controls)
   
 
-
+Regulatory Risk  Legal Risk  (Pestle?)
 
 
 

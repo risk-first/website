@@ -71,8 +71,9 @@ With enough communication bandwidth and entente, a team motivated will self-orga
 
 Experiments showed that rather than t
 
+Resource Coordination Risk
 
-split brain
+split brain (left hand right hand)
  
  People change their minds when they have evidence of new information, and quickly forget what they _previously thought_ about things.
  
