@@ -51,6 +51,10 @@ risk.boundary {
 	kite9-template: url(template.svg#boundary);
 }
 
+risk.agency {
+	kite9-template: url(template.svg#agency);
+}
+
 risk-box {
 	kite9-margin: 10px;
 	kite9-link-inset: 10px;
@@ -59,7 +63,6 @@ risk-box {
 	kite9-layout: vertical;	
 	kite9-template: url(template.svg#risk-box);
 	kite9-padding: 6px 6px 6px 6px; 
-	kite9-margin: 10px;
 	kite9-connection-align: 50%;
 }
 
@@ -75,11 +78,11 @@ risk image {
 	kite9-horizontal-align: center;
 	kite9-padding: 25px;
 	kite9-margin: 4px;
-	kite9-template: url(template.svg#image)
 }
 
 image-content {
-	kite9-usage: decal;
+    kite9-type: svg;
+ 	kite9-usage: decal;
 }
 
 risk code {
@@ -111,6 +114,7 @@ risk title {
 .title-label-front {
 	font-size: 10px;
 	font-family: "gothic";
+	text-align: middle;
 }
 
 

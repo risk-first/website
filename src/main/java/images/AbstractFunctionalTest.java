@@ -1,4 +1,4 @@
-package org.kite9.diagram.r1;
+package images;
 
 import java.io.File;
 import java.io.FileInputStream;

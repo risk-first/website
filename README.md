@@ -14,27 +14,24 @@
 brew install pandoc
 ```
 
-
-### 2.  Install Latex
+### 2.  Install MacTex
 
 http://www.tug.org/mactex/morepackages.html
 
-
-### 3.  Setup The Template
-
-https://github.com/Wandmalfarbe/pandoc-latex-template
-
-### 4.  Preprocess The Markdown File
+##  Preprocess The Markdown File + Convert
 
 (Run the Java TextPreprocessor to generate the book output in website.wiki main directory)
 
-Going to try and do it with something like this:
+This is done with the `./convert.sh` script.
 
-https://github.com/steindani/pandoc-include
+## Left To Do
+
+- Write the front matter
+- Update captions
+- Figure out how to reference 3rd party sites correctly.  
+- Generate high-quality versions of the diagrams.
+- Figure out diagram sizing.
+- Bold for any internal references
+- Better fixedWidth font
 
 
-### 5.  Do The Conversion
-
-```
-pandoc example.md -o example.pdf --from markdown --template eisvogel --listings
-```

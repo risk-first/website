@@ -22,10 +22,6 @@
 
   </svg:defs>
   
-  <template id="image">
-     <image-content style='kite9-usage: decal; kite9-type: svg; ' />
-  </template>
-   
   <template id='risk-box'>
     <back style='kite9-usage: decal; kite9-type: svg; '>
       <svg:rect x='0' y='0' width='{x1}' height='{y1}' rx='8' ry='8' style='fill: url(#risk-background); ' class="risk-back" />
@@ -73,7 +69,8 @@
       <image>
         <image-content style="kite9-template: url(noun_561881.svg)" />
       </image>
-      <title>Communication Risk</title>
+      <title>Communication 
+      Risk</title>
     </risk-box>
   </template>
 
@@ -104,6 +101,16 @@
         <image-content style="kite9-template: url(noun_1331794.svg); " />
       </image>
       <title>Boundary Risk</title>
+    </risk-box>
+  </template>
+  
+   <template id="agency">
+    <risk-box>
+      <code>A</code>
+      <image>
+        <image-content style="kite9-template: url(noun_1279842.svg); " />
+      </image>
+      <title>Agency Risk</title>
     </risk-box>
   </template>
 
