@@ -73,7 +73,7 @@ At other times, channels can contain so much information that we can't hope to r
 
 When we are talking about a product or a brand, mitigating [Channel Risk](Communication-Risk#channel-risk) is the domain of [Marketing Communications](https://en.wikipedia.org/wiki/Marketing_communications).   How do you ensure that the information about your (useful) project makes it to the right people?  How do you address the right channels? 
 
-This works both ways.  Let's looks at some of the **Channel Risks** from the point of view of a hypothetical product, **D**, which would really useful in my software: 
+This works both ways.  Let's looks at some of the **Channel Risks** from the point of view of a hypothetical software tool, **D**, which would really useful in my software: 
 
  - The concept that there is such a thing as **D** which solves my problem isn't something I'd even considered.    
  - I'd like to use something like **D**, but how do I find it?  
