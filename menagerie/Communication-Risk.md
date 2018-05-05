@@ -289,7 +289,7 @@ only makes sense if the application has previously had the message
 Create user 53 with surname 'Smith'
 ```
 
-### Abstraction And Misinterpretation Risk
+### Abstraction and Misinterpretation Risk
 
 ![Misinterpretation Risk](images/generated/misinterpretation-risk.png)
 
@@ -299,9 +299,9 @@ While machines only process _information_, people's brains run on concepts and i
 
 > "The famous pipe. How people reproached me for it! And yet, could you stuff my pipe? No, it's just a representation, is it not? So if I had written on my picture “This is a pipe”, I'd have been lying!" - [Rene Magritte, of _The Treachery of Images_](https://en.wikipedia.org/wiki/The_Treachery_of_Images)
 
-This brings about it's own [Communication Risk](Communication-Risk): names are not _precise_, and concepts mean different things to different people.  We can't be sure that people have the same meaning for concepts that we have.  
+This brings about [Misinterpretation Risk](Communication-Risk#misinterpretation-risk): names are not _precise_, and concepts mean different things to different people.  We can't be sure that people have the same meaning for concepts that we have.  
 
-### Invisibility Risk
+### Abstraction and Invisibility Risk
 
 ![Invisibility Risk](images/generated/invisibility-risk.png)
 
