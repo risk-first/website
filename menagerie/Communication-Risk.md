@@ -208,9 +208,9 @@ The protocol mediates between the message and the channel.  Where this goes wron
 
 ## Protocol Risk
 
-Generally, anytime where you have different parts of a system communicating with each other, and one part can change incompatibly with another you have **Protocol Risk**.
+Generally, anytime where you have different parts of a system communicating with each other, and one part can change incompatibly with another you have [Protocol Risk](Communication-Risk#protocol-risk).
 
-Locally, (within our own project), where we have control, we can mitigate this risk using compile-time checking (as discussed already in [Complexity Risk]()), which essentially forces all senders and receivers to agree on protocol.  But, the wider the group that you are communicating with, the less control you have and the more chance there is of **Protocol Risk**.   Let's look at some types of **Protocol Risk**:
+Locally, (within our own project), where we have control, we can mitigate this risk using compile-time checking (as discussed already in [Complexity Risk]()), which essentially forces all senders and receivers to agree on protocol.  But, the wider the group that you are communicating with, the less control you have and the more chance there is of [Protocol Risk](Communication-Risk#protocol-risk).   Let's look at some types of [Protocol Risk](Communication-Risk#protocol-risk):
  
 ### Protocol Incompatibility Risk
 
@@ -235,7 +235,7 @@ Backwards compatibility mitigates **Protocol Versioning Risk**.  Quite simply, t
 
 #### Forward Compatibility
 
-HTML and CSS provide "graceful failure" to mitigate **Protocol Risk**:  while its expected that all clients can parse the syntax of HTML and CSS, it's not necessary for them to be able to handle all of the tags, attributes and rules they see.  The specification for both these languages (and the HTTP headers we saw earlier) is that if you don't understand something, ignore it.  Designing with this in mind means that old clients can always at least cope with new features, but it's not always possible.  
+HTML and CSS provide "graceful failure" to mitigate [Protocol Risk](Communication-Risk#protocol-risk):  while its expected that all clients can parse the syntax of HTML and CSS, it's not necessary for them to be able to handle all of the tags, attributes and rules they see.  The specification for both these languages (and the HTTP headers we saw earlier) is that if you don't understand something, ignore it.  Designing with this in mind means that old clients can always at least cope with new features, but it's not always possible.  
 
 JavaScript _can't_ support this:  because the meaning of the next instruction will often depend on the result of the previous one.  
 
@@ -243,7 +243,7 @@ Does human language support this?  To some extent!  New words are added to our l
 
 ### Protocol Implementation Risk
 
-A second aspect of **Protocol Risk** exists in heterogenous computing environments, where protocols have been independently implemented based on standards.  For example, there are now so many different browsers, all supporting different levels of HTTP, HTML, Javascript and CSS so it becomes impossible to test comprehensively over all the different versions.  To mitigate as much **Protocol Risk** as possible, generally we run tests in a subset of browsers, and use a lowest-common-denominator approach to choosing protocol and language features.
+A second aspect of [Protocol Risk](Communication-Risk#protocol-risk) exists in heterogenous computing environments, where protocols have been independently implemented based on standards.  For example, there are now so many different browsers, all supporting different levels of HTTP, HTML, Javascript and CSS so it becomes impossible to test comprehensively over all the different versions.  To mitigate as much [Protocol Risk](Communication-Risk#protocol-risk) as possible, generally we run tests in a subset of browsers, and use a lowest-common-denominator approach to choosing protocol and language features.
 
 ![Communication Protocols Risks](images/communication_protocols_risks.png)
 
