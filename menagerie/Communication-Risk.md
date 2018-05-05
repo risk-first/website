@@ -21,9 +21,9 @@ We move from top-left ("I want to send a message to someone") to bottom left, cl
 
 One of the chief concerns in Shannon's paper is the step between **Transmission** and **Reception**:  he creates a theory of information (measured in **bits**), the upper-bounds of information that can be communicated over a channel and ways in which [Communication Risk](Communication-Risk) between these processes can be mitigated by clever **Encoding** and **Decoding** steps.
 
-But it's not just transmission.  [Communication Risk](Communication-Risk) exists at each of these steps.  Let's imagine a short exchange where someone, **Alice** is trying to send a message to **Bob**:
+But it's not just transmission:  [Communication Risk](Communication-Risk) exists at each of these steps.  Let's imagine a short exchange where someone, **Alice** is trying to send a message to **Bob**:
 
--**Alice** might be **motivated** to send a message to tell **Bob** something, only to find out that _they already knew it_, or it wasn't useful information for them.
+- **Alice** might be **motivated** to send a message to tell **Bob** something, only to find out that _they already knew it_, or it wasn't useful information for them.
 - In the **composition** stage,**Alice** might mess up the _intent_ of the message: instead of "Please buy chips" they might say, "Please buy chops".
 - In the **encoding** stage,**Alice** might not speak clearly enough to be understood, and 
 - In the **transmission** stage,**Alice** might not say it loudly enough for **Bob** to 
@@ -38,7 +38,8 @@ There is a symmetry about the steps going on in Shannon's diagram, and we're goi
 
 ![Communication Risk 2](images/communication_2.png)
 
-To get inside [Communication Risk](Communication-Risk), we need to understand **Communication** itself, whether between _machines_, _people_ or _products_:   we'll look at each in turn.  In order to do that, we're going to examine four basic concepts in each of these settings: 
+To get inside [Communication Risk](Communication-Risk), we need to understand **Communication** itself, whether between _machines_, _people_ or _products_:   we'll look at each in turn.  In order to do that, we're going to examine four basic concepts in each of these settings:
+ 
  - [Channels](https://en.wikipedia.org/wiki/Communication_channel), the medium via which the communication is happening.
  - [Protocols](https://en.wikipedia.org/wiki/Communication_protocol) -  the systems of rules that allow two or more entities of a communications system to transmit information.
  - [Messages](https://en.wikipedia.org/wiki/Message): The information we want to convey.
