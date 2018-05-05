@@ -5,14 +5,18 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
- * We're bound to need preprocessing of some kind, let's do it here.
+ * Converts to a single markdown file for the whole site.
  * 
  * @author robmoffat
  *
  */
 public class TextPreprocessor {
+	
+	public static final boolean LINKS_AS_BOLD = true;
 
 	public static void main(String[] args) throws IOException {
 		String file = args[0];
@@ -32,10 +36,62 @@ public class TextPreprocessor {
 			if (line.trim().equals("```include")) {
 				processIncludes(br, origin);
 			} else {
-				System.out.println(line);
+				processLinks(line);
 			}
 			line = br.readLine();
 		}
+	}
+	
+	static Pattern p = Pattern.compile("\\[[^\\]]*?\\]\\(.*?\\)");
+
+	private static void processLinks(String line) {
+		Matcher m = p.matcher(line);
+		int place = 0;
+		while (m.find()) {
+			int s = m.start();
+			int e = m.end();
+			
+			System.out.print(line.substring(place, s));
+			
+			String link = line.substring(s, e);
+			
+			String text = link.substring(1, link.indexOf("]"));
+			String url = link.substring(link.indexOf("](")+2, link.length()-1);
+			
+			if (!link.equals("["+text+"]("+url+")")) {
+				System.err.println("BAD: "+link+"    "+text+"    "+url);
+			} else {
+				System.err.println("OK: " + link+"    "+text+"    "+url);
+			}
+			
+			if (!isExternal(url)) {
+				if (!isImage(url)) {
+					// these are links in the same document.
+					if (LINKS_AS_BOLD) {
+						System.out.print("**"+text+"**");
+					} else {
+						// something else.
+					}
+				} else {
+					System.out.print(link);
+				}
+			} else {
+				System.out.print(link);
+			}
+			
+			
+			place = e;
+		}
+		
+		System.out.println(line.substring(place));
+	}
+
+	private static boolean isImage(String url) {
+		return url.contains("images");
+	}
+
+	private static boolean isExternal(String url) {
+		return url.contains("http");
 	}
 
 	private static void processIncludes(BufferedReader br, File origin) throws IOException {
@@ -45,7 +101,7 @@ public class TextPreprocessor {
 				File f = new File(origin.getParentFile(), line);
 				String title = "# " + line.substring(line.lastIndexOf("/")+1).replace("-", " ");
 				title = title.replace(".md", "");
-				System.out.println("\\newpage");
+				System.out.println("\n\n");
 				if (!line.contains("book")) {
 					System.out.println(title);
 				}

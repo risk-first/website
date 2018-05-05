@@ -55,9 +55,8 @@ public class ImagePreprocessor {
 		TranscoderInput in = new TranscoderInput(new StringReader(str));
 		File kite9Dir = new File("kite9/somefile.svg");
 		in.setURI(kite9Dir.toURI().toString());
-		Transcoder transcoder = new Kite9PNGTranscoder();
-		//Transcoder transcoder = new Kite9SVGTranscoder();
-		
+		Kite9PNGTranscoder transcoder = new Kite9PNGTranscoder();
+		transcoder.addTranscodingHint(Kite9PNGTranscoder.KEY_PIXEL_UNIT_TO_MILLIMETER, .0635f);	// 400dpi
 		transcoder.transcode(in, out);
 		System.out.println("Wrote: "+path);
 	}
