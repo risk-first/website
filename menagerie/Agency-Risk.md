@@ -62,8 +62,8 @@ Working on a pet project usually means you get lots of attention (and more than 
 
 ![Morale Risk](images/generated/morale-risk.png)
 
-Sometimes, the morale of the team or individuals within it dips, leading to lack of motivation.  **Morale Risk** is a kind of [Agency Risk](Agency-Risk) because it really means that a team member or the whole team isn't committed to the [Goal](Goal-In-Mind), may decide their efforts are best spent elsewhere.  **Morale Risk** might be caused by:
- - External factors.  Perhaps the employees' dog has died, or they're simply tired of the industry, or are not feeling challenged.
+Sometimes, the morale of the team or individuals within it dips, leading to lack of motivation.  [Morale Risk](Agency-Risk#morale-risk) is a kind of [Agency Risk](Agency-Risk) because it really means that a team member or the whole team isn't committed to the [Goal](Goal-In-Mind), may decide their efforts are best spent elsewhere.  [Morale Risk](Agency-Risk#morale-risk) might be caused by:
+ - External factors:  Perhaps the employees' dog has died, or they're simply tired of the industry, or are not feeling challenged.
  - If the team don't believe a goal is achievable, they won't commit their full effort to it.  This might be due to to a difference in the evaluation of the risks on the project between the team members and the leader.
  - If the goal isn't considered sufficiently worthy, or the team isn't sufficiently valued.
  - In military science, a second meaning of morale is how well supplied and equipped a unit is.  This would also seem like a useful reference point for IT projects.  If teams are under-staffed or under-equipped, this will impact on motivation too.
@@ -72,13 +72,17 @@ Sometimes, the morale of the team or individuals within it dips, leading to lack
 
 It seems strange that humans are over-confident.  You would have thought that evolution would drive out this trait but apparently it's not so:
 
-> "Now, new computer simulations show that a false sense of optimism, whether when deciding to go to war or investing in a new stock, can often improve your chances of winning." - [Evolution of Narcissism, _National Geographic_](https://news.nationalgeographic.com/news/2011/09/110914-optimism-narcissism-overconfidence-hubris-evolution-science-nature/).
+> "Now, new computer simulations show that a false sense of optimism, whether when deciding to go to war or investing in a new stock, can often improve your chances of winning." - [Evolution of Narcissism, _National Geographic_](https://news.nationalgeographic.com/news/2011/09/110914-optimism-narcissism-overconfidence-hubris-evolution-science-nature/)
 
 In any case, humans have lots of self-destructive tendencies that _haven't_ been evolved away, and we get by.  
 
 Development is a craft, and ideally, we'd like developers to take pride in their work.   Too little pride means lack of care, but too much pride is _hubris_, and the belief that you are better than you really are.  Who does hubris benefit?  Certainly not the team, and not the goal.  
 
 Although over-confidence might be a useful trait when bargaining with other humans, the thesis of everything so far is that [Meeting Reality](Meet-Reality) will punish your over-confidence again and again. 
+
+Perhaps it's a little unfair to draw out one human characteristic for attention.   After all, we are [riddled with biases](https://en.wikipedia.org/wiki/List_of_cognitive_biases).  There is probably an interesting article to be written about the effects of different biases on the software development and project management processes.  
+
+This task is left as an exercise for the reader.
 
 
 
