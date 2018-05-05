@@ -214,7 +214,13 @@ Generally, any time where you have different parts of a system communicating wit
 
 ![Protocol Risk](images/generated/protocol-risk.png)
 
-Locally, (within our own project), where we have control, we can mitigate this risk using compile-time checking (as discussed already in [Complexity Risk](Complexity-Risk#protocols-and-types)), which essentially forces all clients and servers to agree on protocol.  But, the wider the group that you are communicating with, the less control you have and the more chance there is of [Protocol Risk](Communication-Risk#protocol-risk).   Let's look at some types of [Protocol Risk](Communication-Risk#protocol-risk):
+Locally, (within our own project), where we have control, we can mitigate this risk using compile-time checking (as discussed already in [Complexity Risk](Complexity-Risk#protocols-and-types)), which essentially forces all clients and servers to agree on protocol.  But, the wider the group that you are communicating with, the less control you have and the more chance there is of [Protocol Risk](Communication-Risk#protocol-risk).   
+
+Let's look at some types of [Protocol Risk](Communication-Risk#protocol-risk):
+
+![Protocol Versioning Risk](images/generated/protocol-versioning-risk.png)
+![Protocol Incompatibility Risk](images/generated/protocol-incompatibility-risk.png)
+![Protocol Implementation Risk](images/generated/protocol-implementation-risk.png)
  
 ### Protocol Incompatibility Risk
 
@@ -248,10 +254,6 @@ Does human language support this?  To some extent!  New words are added to our l
 ### Protocol Implementation Risk
 
 A second aspect of [Protocol Risk](Communication-Risk#protocol-risk) exists in heterogenous computing environments, where protocols have been independently implemented based on standards.  For example, there are now so many different browsers, all supporting different levels of `HTTP`, `HTML` and `JavaScript` that it becomes impossible to test comprehensively over all the different versions.  To mitigate as much [Protocol Risk](Communication-Risk#protocol-risk) as possible, generally we run tests in a subset of browsers, and use a lowest-common-denominator approach to choosing protocol and language features.
-
-![Protocol Versioning Risk](images/generated/protocol-versioning-risk.png)
-![Protocol Incompatibility Risk](images/generated/protocol-incompatibility-risk.png)
-![Protocol Implementation Risk](images/generated/protocol-implementation-risk.png)
 
 ![Communication Protocols Risks](images/communication_protocols_risks.png)
 
