@@ -150,9 +150,9 @@ So, we've looked at different types of dependencies.
 |[Dead End Risk]       |                                  |                      |                    |                          |
 |                      |                                  |                      |                    |                          |
 
-[1](Dependency-Risk)
-[2](Software-Dependency-Risk)
-[3](Process-Risk)
-[4](Deadline-Risk)
+[1]: (Dependency-Risk)
+[2]: (Software-Dependency-Risk)
+[3]: (Process-Risk)
+[4]: (Deadline-Risk)
 
 
