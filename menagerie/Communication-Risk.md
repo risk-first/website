@@ -61,6 +61,8 @@ The channel characteristics also imply suitability for certain _kinds_ of messag
 
 Shannon discusses that no channel is perfect:  there is always the **risk of noise** corrupting the signal.  A key outcome from Shannon's paper is that there is a tradeoff:  within the capacity of the channel (the **Bandwidth**), you can either send lots of information with _higher_ risk that it is wrong, or less information with _lower_ risk of errors.  And, rather like the [Kolgomorov complexity](Complexity-Risk) result, the more _randomness_ in the signal, the less compressible it is, and therefore the more _bits_ it will take to transmit.  
 
+![Channel Risk](images/generated/channel-risk.png)
+
 But channel risk goes wider than just this mathematical example:  messages might be delayed or delivered in the wrong order, or not be acknowledged when they do arrive.  Sometimes, a channel is just an inappropriate way of communicating.  When you work in a different timezone to someone else on your team, there is _automatic_ [Channel Risk](Communication-Risk#channel-risk), because instantaneous communication is only available for a few hours' a day. 
 
 When channels are **poor-quality**, less communication occurs.  People will try to communicate just the most important information.  But, it's often impossible to know apriori what constitutes "important".   This is why [Extreme Programming](Extreme-Programming) recommends the practice of [Pair Programming](Coding) and siting all the developers together: although you don't know whether useful communication will happen, you are mitigating [Channel Risk](Communication-Risk#channel-risk) by ensuring high-quality communication channels are in place.
@@ -210,13 +212,15 @@ The protocol mediates between the message and the channel.  Where this goes wron
 
 Generally, anytime where you have different parts of a system communicating with each other, and one part can change incompatibly with another you have [Protocol Risk](Communication-Risk#protocol-risk).
 
+![Protocol Risk](images/generated/protocol-risk.png)
+
 Locally, (within our own project), where we have control, we can mitigate this risk using compile-time checking (as discussed already in [Complexity Risk](Complexity-Risk#protocols-and-types)), which essentially forces all clients and servers to agree on protocol.  But, the wider the group that you are communicating with, the less control you have and the more chance there is of [Protocol Risk](Communication-Risk#protocol-risk).   Let's look at some types of [Protocol Risk](Communication-Risk#protocol-risk):
  
 ### Protocol Incompatibility Risk
 
 The people you find it _easiest_ to communicate with are your friends and family, those closest to you.  That's because you're all familiar with the same protocols.  Someone from a foreign country, speaking a different language and having a different culture, will essentially have a completely incompatible protocol for spoken communication to you.
 
-Within software, there are also _competing_, incompatible protocols for the same things, which is maddening when your protocol isn't supported.   Although the world seems to be standardizing, there used to be _hundreds_ of different image formats.  Photographs often use [TIFF], [RAW] or [JPEG], whilst we also have [SVG] for vector graphics, [GIF] for images and animations and [PNG]() for other bitmap graphics.   
+Within software, there are also _competing_, incompatible protocols for the same things, which is maddening when your protocol isn't supported.   Although the world seems to be standardizing, there used to be _hundreds_ of different image formats.  Photographs often use [TIFF](https://en.wikipedia.org/wiki/TIFF), [RAW](https://en.wikipedia.org/wiki/Raw_image_format) or [JPEG](https://en.wikipedia.org/wiki/JPEG), whilst we also have [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) for vector graphics, [GIF](https://en.wikipedia.org/wiki/GIF) for images and animations and [PNG](https://en.wikipedia.org/wiki/Portable_Network_Graphics) for other bitmap graphics.   
 
 ### Protocol Versioning Risk
 
