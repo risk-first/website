@@ -210,7 +210,7 @@ The protocol mediates between the message and the channel.  Where this goes wron
 
 ## Protocol Risk
 
-Generally, anytime where you have different parts of a system communicating with each other, and one part can change incompatibly with another you have [Protocol Risk](Communication-Risk#protocol-risk).
+Generally, any time where you have different parts of a system communicating with each other, and one part can change incompatibly with another you have [Protocol Risk](Communication-Risk#protocol-risk).
 
 ![Protocol Risk](images/generated/protocol-risk.png)
 
@@ -248,6 +248,10 @@ Does human language support this?  To some extent!  New words are added to our l
 ### Protocol Implementation Risk
 
 A second aspect of [Protocol Risk](Communication-Risk#protocol-risk) exists in heterogenous computing environments, where protocols have been independently implemented based on standards.  For example, there are now so many different browsers, all supporting different levels of HTTP, HTML, Javascript and CSS so it becomes impossible to test comprehensively over all the different versions.  To mitigate as much [Protocol Risk](Communication-Risk#protocol-risk) as possible, generally we run tests in a subset of browsers, and use a lowest-common-denominator approach to choosing protocol and language features.
+
+![Protocol Versioning Risk](images/generated/protocol-versioning-risk.png)
+![Protocol Incompatibility Risk](images/generated/protocol-incompatibility-risk.png)
+![Protocol Implementation Risk](images/generated/protocol-implementation-risk.png)
 
 ![Communication Protocols Risks](images/communication_protocols_risks.png)
 
