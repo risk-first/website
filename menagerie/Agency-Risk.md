@@ -60,6 +60,8 @@ Working on a pet project usually means you get lots of attention (and more than 
 
 > Morale, also known as Esprit de Corps is the capacity of a group's members to retain belief in an institution or goal, particularly in the face of opposition or hardship - [Morale, _Wikipedia_](https://en.wikipedia.org/wiki/Morale) 
 
+![Morale Risk](images/generated/morale-risk.png)
+
 Sometimes, the morale of the team or individuals within it dips, leading to lack of motivation.  **Morale Risk** is a kind of [Agency Risk](Agency-Risk) because it really means that a team member or the whole team isn't committed to the [Goal](Goal-In-Mind), may decide their efforts are best spent elsewhere.  **Morale Risk** might be caused by:
  - External factors.  Perhaps the employees' dog has died, or they're simply tired of the industry, or are not feeling challenged.
  - If the team don't believe a goal is achievable, they won't commit their full effort to it.  This might be due to to a difference in the evaluation of the risks on the project between the team members and the leader.
