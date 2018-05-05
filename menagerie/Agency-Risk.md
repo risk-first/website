@@ -1,6 +1,6 @@
 [Coordinating a team](Coordination-Risk) is difficult enough when everyone on the team has a single [Goal](Goal-In-Mind).  But, people have their own goals, too.  Sometimes, the goals harmlessly co-exist with the team's goal, but other times they don't.
 
-![Agency Risk](images/generated/agency-risk.svg)
+![Agency Risk](images/generated/agency-risk.png)
 
 This is [Agency Risk](Agency-Risk).   This term comes from finance (again), and refers to the situation where you entrust your money to someone (the "agent") in order to invest it, but the don't necessarily have your best interests at heart.  They may instead elect to invest the money in ways that help them, or outright steal it.  
 
