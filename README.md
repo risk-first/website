@@ -28,10 +28,15 @@ This is done with the `./convert.sh` script.
 
 - Write the front matter
 - Update captions
-- Figure out how to reference 3rd party sites correctly.  
+- Figure out how to reference 3rd party sites correctly.    DONE
 - Generate high-quality versions of the diagrams.
-- Figure out diagram sizing.
-- Bold for any internal references
+- Figure out diagram sizing.        DONE
+- Bold for any internal references  DONE
 - Better fixedWidth font
+
+Images:  we need to be able to set minimum width and height in kite9 for text, images etc.  padding doesn't really
+cut it.
+
+
 
 
