@@ -339,40 +339,43 @@ The debt of [Invisibility Risk](Communication-Risk#invisibility-risk) comes due 
 
 So finally, we are coming to the root of the problem:  communication is about transferring ideas and concepts from one [Internal Model](Internal-Model) to another. 
 
-As we've seen already, this is fraught with risk on many levels, but even at this last level there are risks.
+The communication process so far has been fraught with risks, but we have a few more to come.
 
 ### Trust Risk & Belief Risk
 
 ![Trust Risk](images/generated/trust-risk.png)
 ![Belief Risk](images/generated/belief-risk.png)
 
-Although protocols can sometimes handle security features of communication (such as proof-of-identity and preventing man-in-the-middle attacks), trust goes further than this, intersecting with [Agency Risk]():  can you be sure that the other party in the communication is acting in your best interests?
+Although protocols can sometimes handle security features of communication (such as [Authentication](https://en.wikipedia.org/wiki/Authentication) and preventing [man-in-the-middle attacks](https://en.wikipedia.org/wiki/Man-in-the-middle_attack)), trust goes further than this, intersecting with [Agency Risk](Agency-Risk):  can you be sure that the other party in the communication is acting in your best interests?
  
 Even if the receiver trusts the communicator, they may not trust the message.  Let's look at some reasons for that:
- - [Weltanschauung (World View)](https://en.wikipedia.org/wiki/World_view): The ethics, values and beliefs in the receiver's [Internal Model]() may be incompatible to those from the sender.  
- - [Relativism]() is the concept that there are no universal truths.  Every truth is from a frame of reference.  For example, what constitutes _offensive language_ is dependent on the listener.
- - [Psycholinguistics]() is the study of humans aquire languages.  Just as there are different languages and dialects, and _industry dialects_: we all 
- - Internalizing
+ - [Weltanschauung (World View)](https://en.wikipedia.org/wiki/World_view): The ethics, values and beliefs in the receiver's [Internal Model](Internal-Model) may be incompatible to those from the sender.  
+ - [Relativism](https://en.wikipedia.org/wiki/Relativism) is the concept that there are no universal truths.  Every truth is from a frame of reference.  For example, what constitutes _offensive language_ is dependent on the listener.
+ - [Psycholinguistics](https://en.wikipedia.org/wiki/Psycholinguistics) is the study of humans aquire languages.  Just as there are different languages and dialects, (and _industry dialects_), we all understand language in different ways, take different meanings and apply different contexts to the messages.
   
-From the point-of-view of [Marketing Communications]() choosing the right message is part of the battle.  You are trying to communicate your idea in such a way as to mitigate **Belief Risk** and **Trust Risk**.
+From the point-of-view of [Marketing Communications](Communication-Risk#Marketing-Communications) choosing the right message is part of the battle.  You are trying to communicate your idea in such a way as to mitigate [Belief Risk](Communication-Risk#trust-risk--belief-risk) and [Trust Risk](Communication-Risk#trust-risk--belief-risk).
 
-### Learning Curve Risk
+### Learning-Curve Risk
 
-![Learning Curve Risk](images/generated/learning-curve-risk.png)
+![Learning-Curve Risk](images/generated/learning-curve-risk.png)
 
-
-If the messages we are receiving force us to update our [Internal Mode](Internal-Model) too much, we can suffer from the problem of "too steep a [Learning Curve]()" or "[Information Overload]", where the messages force us to adapt our [Internal Model](Internal-Model) too quickly for our brains to keep up.  
+If the messages we are receiving force us to update our [Internal Model](Internal-Model) too much, we can suffer from the problem of "too steep a [Learning Curve](https://en.wikipedia.org/wiki/Learning_curve)" or "[Information Overload](https://en.wikipedia.org/wiki/Information_overload)", where the messages force us to adapt our [Internal Model](Internal-Model) too quickly for our brains to keep up.  
 
 Commonly, the easiest option is just to ignore the information channel completely in these cases.
 
 ### Reading Code
 
-It's often been said that code is [harder to read than to write]().  By now it should be clear that it's going to be _both_ quite hard to read and write:  the protocol of code is actually designed for the purpose of machines communicating, not primarily for people to understand.  Simultanously making code human readable is a subordinate concern to making it machine readable.
+It's often been said that code is _harder to read than to write_:  
 
-But now we should be able to see the reasons it's harder to read than write too:  
- - When reading code, you are having to shift your [Internal Model](Internal-Model) to wherever the code is, accepting decisions that you might not agree with and accepting counter-intuitive logical leaps.  This is **Information Overload Risk**, cf. [Principle of Least Surprise](). 
- - There is no [Feedback Loop](Feedback-Loop) between your [Internal Model](Internal-Model) and the [Reality](Meet-Reality) of the code, opening you up to **Misinterpretation Risk**.  When you write code, your compiler and tests give you this.
- - While reading code _takes less time_ than writing it, this also means the [Learning Curve]() is steeper.
+> If you ask a software developer what they spend their time doing, they'll tell you that they spend most of their time writing code.  However, if you actually observe what software developers spend their time doing, you'll find that they spend most of their time trying to understand code.  [When Understanding Means Rewriting, _Coding Horror_](https://blog.codinghorror.com/when-understanding-means-rewriting/)
+
+By now it should be clear that it's going to be _both_ quite hard to read and write:  the protocol of code is actually designed for the purpose of machines communicating, not primarily for people to understand.  Making code human readable is a secondary concern to making it machine readable.
+
+But now we should be able to see the reasons it's harder to read than write too: 
+ 
+ - When reading code, you are having to shift your [Internal Model](Internal-Model) to wherever the code is, accepting decisions that you might not agree with and accepting counter-intuitive logical leaps.  [Learning Curve](Communication-Risk#learning-curve-risk). _(cf. [Principle of Least Surprise](https://en.wikipedia.org/wiki/Principle_of_least_astonishment). )_
+ - There is no [Feedback Loop](Feedback-Loop) between your [Internal Model](Internal-Model) and the [Reality](Meet-Reality) of the code, opening you up to [Misinterpretation Risk](Communication-Risk#misinterpretation-risk).  When you write code, your compiler and tests give you this.
+ - While reading code _takes less time_ than writing it, this also means the [Learning Curve](Communication-Risk#learning-curve-risk) is steeper.
 
 ![Internal Model Risks](images/communication_internalmodel.png)
 
