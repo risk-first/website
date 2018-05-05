@@ -5,7 +5,7 @@ Consider this: if we all had identical knowledge, there would be no need to do a
 
 But, people are not all-knowing oracles.  We rely on our _senses_ to improve our [Internal Models](Internal-Model) of the world. There is [Communication Risk](Communication-Risk) here - we might overlook something vital (like an oncoming truck) or mistake something someone says (like "Don't cut the green wire").  
 
-[Communication Risk] isn't just for people; it affects computer systems too.
+[Communication Risk](Communication-Risk) isn't just for people; it affects computer systems too.
 
 ## A Model Of Communication
 
@@ -13,7 +13,7 @@ In 1948, Claude Shannon proposed this definition of communication:
 
 > "The fundamental problem of communication is that of reproducing at one point, either exactly or approximately, a message selected at another point." - [A Mathematical Theory Of Communication, _Claude Shannon_](https://en.wikipedia.org/wiki/A_Mathematical_Theory_of_Communication)
 
-And from this same paper, we get the following (slightly adapted) model:
+And from this same paper, we get the following (slightly adapted) model.
 
 ![Communication Model](images/communication_1.png)
 
@@ -23,8 +23,8 @@ One of the chief concerns in Shannon's paper is the step between **Transmission*
 
 But it's not just transmission.  [Communication Risk](Communication-Risk) exists at each of these steps.  Let's imagine a short exchange where someone, **Alice** is trying to send a message to **Bob**:
 
-- **Alice** might be **motivated** to send a message to tell **Bob** something, only to find out that _they already knew it_, or it wasn't useful information for them.
-- In the **composition** stage, **Alice** might mess up the _intent_ of the message: instead of "Please buy chips" they might say, "Please buy chops".
+- **Alice** might be **motivated** to send a message to tell **Bob** something, only to find out that he already knew it_, or it wasn't useful information for them.
+- In the **composition** stage, **Alice** might mess up the _intent_ of the message: instead of "Please buy chips" she might say, "Please buy chops".
 - In the **encoding** stage, **Alice** might not speak clearly enough to be understood, and... 
 - In the **transmission** stage, **Alice** might not say it loudly enough for **Bob** to... 
 - **receive** the message clearly (maybe there is background noise).
@@ -63,9 +63,9 @@ Shannon discusses that no channel is perfect:  there is always the **risk of noi
 
 ![Channel Risk](images/generated/channel-risk.png)
 
-But channel risk goes wider than just this mathematical example:  messages might be delayed or delivered in the wrong order, or not be acknowledged when they do arrive.  Sometimes, a channel is just an inappropriate way of communicating.  When you work in a different timezone to someone else on your team, there is _automatic_ [Channel Risk](Communication-Risk#channel-risk), because instantaneous communication is only available for a few hours' a day. 
+But channel risk goes wider than just this mathematical example:  messages might be delayed or delivered in the wrong order, or not be acknowledged when they do arrive.  Sometimes, a channel is just an inappropriate way of communicating.  When you work in a different time-zone to someone else on your team, there is _automatic_ [Channel Risk](Communication-Risk#channel-risk), because instantaneous communication is only available for a few hours' a day. 
 
-When channels are **poor-quality**, less communication occurs.  People will try to communicate just the most important information.  But, it's often impossible to know apriori what constitutes "important".   This is why [Extreme Programming](Extreme-Programming) recommends the practice of [Pair Programming](Coding) and siting all the developers together: although you don't know whether useful communication will happen, you are mitigating [Channel Risk](Communication-Risk#channel-risk) by ensuring high-quality communication channels are in place.
+When channels are **poor-quality**, less communication occurs.  People will try to communicate just the most important information.  But, it's often impossible to know a-priori what constitutes "important".   This is why [Extreme Programming](Extreme-Programming) recommends the practice of [Pair Programming](Coding) and siting all the developers together: although you don't know whether useful communication will happen, you are mitigating [Channel Risk](Communication-Risk#channel-risk) by ensuring high-quality communication channels are in place.
 
 At other times, channels can contain so much information that we can't hope to receive all the messages.  In these cases, we don't even observe the whole channel, just parts of it.  For example, you might have a few YouTube channels that you subscribe to, but hundreds of hours of video are being posted on YouTube every second, so there is no way you can keep up with all of it.
 
@@ -86,7 +86,7 @@ This works both ways.  Let's looks at some of the **Channel Risks** from the poi
 
 ![Communication Marketing](images/communication_marketing.png)
 
-[Internal Models](Internal-Model) don't magically get populated with the information they need:  they fill up gradually, as shown in this diagram.  Popular products and ideas _spread_, by word-of-mouth or other means.  Part of the job of being a good technologist is to keep track of new **Ideas**, **Concepts** and **Options** as widely as possible, so as to use them as [Dependencies](Dependency) when needed.
+[Internal Models](Internal-Model) don't magically get populated with the information they need:  they fill up gradually, as shown in this diagram.  Popular products and ideas _spread_, by word-of-mouth or other means.  Part of the job of being a good technologist is to keep track of new **Ideas**, **Concepts** and **Options**, so as to use them as [Dependencies](Dependency) when needed.
 
 ## Protocols
 
@@ -118,7 +118,8 @@ At this point, curl has used [DNS](https://en.wikipedia.org/wiki/Domain_Name_Sys
 
 But this hints at what is beneath the abstraction:  although I'm loading a web-page, the communication to the Google server happens by [IP Protocol](https://en.wikipedia.org/wiki/Internet_Protocol) - it's a bunch of discrete "packets" (streams of binary digits).  You can think of a packet as being like a real-world parcel or letter.
 
-Each packet consists of two things:  
+Each packet consists of two things: 
+ 
 - An address, which tells the network components (such as routers and gateways) where to send the packet, much like you'd write the address on the outside of a parcel.
 - The _payload_, the stream of bytes for processing at the destination.   Like the contents of the parcel.
 
@@ -137,7 +138,7 @@ Anyway, the next thing that happens is this:
 * Connected to google.com (216.58.204.78) port 80 (#0)
 ```
 
-The second obvious [Abstraction](Complexity-Risk) going on here is that `curl` now believes it has a [TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol) connection.   The TCP connection abstraction gives us the surety that the packets get delivered in the right order, and retried if they go missing.  Effectively it _guarantees_ these things, or that it will have a connection failure if it can't make the guarantees. 
+The second obvious [Abstraction](Complexity-Risk) going on here is that `curl` now believes it has a [TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol) connection.   The TCP connection abstraction gives us the surety that the packets get delivered in the right order, and retried if they go missing.  Effectively it _guarantees_ these things, or that it will have a connection failure if it can't keep it's guarantee. 
 
 But, this is a fiction - TCP is built on the IP protocol, packets of data on the network.  So there are lots of packets floating around which say "this connection is still alive" and "I'm message 5 in the sequence" and so on in order to maintain this fiction.  But that means that the HTTP protocol can forget about this complexity and work with the fiction of a connection.
 
@@ -180,13 +181,14 @@ The document has moved
 ```
 
 There's a lot going on here, but we can break it down really easily into 3 chunks:
+
 - The first line is the [HTTP Status Code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).  `301` is a code meaning that the page has moved.
 - The next 9 lines are HTTP headers again (name-value pairs).   The `Location:` directive tells us where the page has moved to.  Instead of trying `http://google.com/preferences`, we should have used `http://www.google.com/preferences`. 
 - The lines starting `<HTML>` are now some HTML to display on the screen to tell the user that the page has moved.  
 
 ### 6. HTML - Hypertext Markup Language
  
-Although [HTML]() is a language, a language is also a protocol.  (After all, language is what we use to encode our ideas for transmission as speech.)   In the example we gave, this was a very simple page telling the client that it's looking in the wrong place.  In most browsers, you don't get to see this:  the browser will understand the meaning of the `301` error and redirect you to the location.  
+Although [HTML](https://en.wikipedia.org/wiki/HTML) is a language, a language is also a protocol.  (After all, language is what we use to encode our ideas for transmission as speech.)   In the example we gave, this was a very simple page telling the client that it's looking in the wrong place.  In most browsers, you don't get to see this:  the browser will understand the meaning of the `301` error and redirect you to the location.  
 
 Let's look at all the protocols we saw here:
 
@@ -267,9 +269,9 @@ Although Shannon's Communication Theory is about transmitting **Messages**, mess
 
 ### Internal Model Assumption Risk
 
-When we construct messages in a conversation, we have to make judgements about what the other person already knows.  When talking to children, it's often hard work because they _assume_ that you have knowledge of everything they do.  This is called [Theory Of Mind](): the appreciation that your knowledge is different to other people's, and adjusting you messages accordingly.
+When we construct messages in a conversation, we have to make judgements about what the other person already knows.  When talking to children, it's often hard work because they _assume_ that you have knowledge of everything they do.  This is called [Theory Of Mind](https://en.wikipedia.org/wiki/Theory_of_mind): the appreciation that your knowledge is different to other people's, and adjusting you messages accordingly.
 
-When teaching, this is called [The Curse Of Knowledge]():  teachers have difficulty understanding students' problems _because they already understand the subject_.  For example, if I want to tell you about a new [JDBC Driver](), this pre-assumes that you know what JDBC is:  the message has a dependency on prior knowledge.
+When teaching, this is called [The Curse Of Knowledge](https://en.wikipedia.org/wiki/Curse_of_knowledge):  teachers have difficulty understanding students' problems _because they already understand the subject_.  For example, if I want to tell you about a new [JDBC Driver](https://en.wikipedia.org/wiki/JDBC_driver), this pre-assumes that you know what JDBC is:  the message has a dependency on prior knowledge.
 
 ### Message Dependency Risk  
 
@@ -349,9 +351,10 @@ The communication process so far has been fraught with risks, but we have a few 
 Although protocols can sometimes handle security features of communication (such as [Authentication](https://en.wikipedia.org/wiki/Authentication) and preventing [man-in-the-middle attacks](https://en.wikipedia.org/wiki/Man-in-the-middle_attack)), trust goes further than this, intersecting with [Agency Risk](Agency-Risk):  can you be sure that the other party in the communication is acting in your best interests?
  
 Even if the receiver trusts the communicator, they may not trust the message.  Let's look at some reasons for that:
- - [Weltanschauung (World View)](https://en.wikipedia.org/wiki/World_view): The ethics, values and beliefs in the receiver's [Internal Model](Internal-Model) may be incompatible to those from the sender.  
- - [Relativism](https://en.wikipedia.org/wiki/Relativism) is the concept that there are no universal truths.  Every truth is from a frame of reference.  For example, what constitutes _offensive language_ is dependent on the listener.
- - [Psycholinguistics](https://en.wikipedia.org/wiki/Psycholinguistics) is the study of humans aquire languages.  Just as there are different languages and dialects, (and _industry dialects_), we all understand language in different ways, take different meanings and apply different contexts to the messages.
+
+- [Weltanschauung (World View)](https://en.wikipedia.org/wiki/World_view): The ethics, values and beliefs in the receiver's [Internal Model](Internal-Model) may be incompatible to those from the sender.  
+- [Relativism](https://en.wikipedia.org/wiki/Relativism) is the concept that there are no universal truths.  Every truth is from a frame of reference.  For example, what constitutes _offensive language_ is dependent on the listener.
+- [Psycholinguistics](https://en.wikipedia.org/wiki/Psycholinguistics) is the study of humans aquire languages.  There are different languages and dialects, (and _industry dialects_), and we all understand language in different ways, take different meanings and apply different contexts to the messages.
   
 From the point-of-view of [Marketing Communications](Communication-Risk#Marketing-Communications) choosing the right message is part of the battle.  You are trying to communicate your idea in such a way as to mitigate [Belief Risk](Communication-Risk#trust-risk--belief-risk) and [Trust Risk](Communication-Risk#trust-risk--belief-risk).
 
@@ -373,7 +376,7 @@ By now it should be clear that it's going to be _both_ quite hard to read and wr
 
 But now we should be able to see the reasons it's harder to read than write too: 
  
- - When reading code, you are having to shift your [Internal Model](Internal-Model) to wherever the code is, accepting decisions that you might not agree with and accepting counter-intuitive logical leaps.  [Learning Curve](Communication-Risk#learning-curve-risk). _(cf. [Principle of Least Surprise](https://en.wikipedia.org/wiki/Principle_of_least_astonishment))_
+ - When reading code, you are having to shift your [Internal Model](Internal-Model) to wherever the code is, accepting decisions that you might not agree with and accepting counter-intuitive logical leaps.  i.e. [Learning Curve Risk](Communication-Risk#learning-curve-risk). _(cf. [Principle of Least Surprise](https://en.wikipedia.org/wiki/Principle_of_least_astonishment))_
  - There is no [Feedback Loop](Feedback-Loop) between your [Internal Model](Internal-Model) and the [Reality](Meet-Reality) of the code, opening you up to [Misinterpretation Risk](Communication-Risk#misinterpretation-risk).  When you write code, your compiler and tests give you this.
  - While reading code _takes less time_ than writing it, this also means the [Learning Curve](Communication-Risk#learning-curve-risk) is steeper.
 
