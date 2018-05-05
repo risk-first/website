@@ -1,9 +1,11 @@
-**Communication Risk** is the risk of communication between entities _going wrong_, due to loss or misunderstanding.
+[Communication Risk](Communication-Risk) is the risk of communication between entities _going wrong_, due to loss or misunderstanding.
 Consider this: if we all had identical knowledge, there would be no need to do any communicating at all, and therefore and also no [Communication Risk](Communication-Risk).  
 
-But, people are not all-knowing oracles.  We rely on our _senses_ to improve our [Internal Models](Internal-Model) of the world. There is **Communication Risk** here - we might overlook something vital (like an oncoming truck) or mistake something someone says (like "Don't cut the green wire").  
+![Communication Risk](images/generated/communication-risk.png)
 
-**Information Risk** isn't just for people; it's fundamental.   Therefore, the computer systems we build share the same flaws and have the same constraints.
+But, people are not all-knowing oracles.  We rely on our _senses_ to improve our [Internal Models](Internal-Model) of the world. There is [Communication Risk](Communication-Risk) here - we might overlook something vital (like an oncoming truck) or mistake something someone says (like "Don't cut the green wire").  
+
+[Communication Risk] isn't just for people; it affects computer systems too.
 
 ## A Model Of Communication
 
@@ -17,26 +19,26 @@ And from this same paper, we get the following (slightly adapted) model:
 
 We move from top-left ("I want to send a message to someone") to bottom left, clockwise, where we hope the message has been understood and believed.  (I've added this last box to Shannon's original diagram.)
 
-One of the chief concerns in Shannon's paper is the step between **Transmission** and **Reception**:  he creates a theory of information (measured in **bits**), the upper-bounds of information that can be communicated over a channel and ways in which **Communication Risk** between these processes can be mitigated by clever **Encoding** and **Decoding** steps.
+One of the chief concerns in Shannon's paper is the step between **Transmission** and **Reception**:  he creates a theory of information (measured in **bits**), the upper-bounds of information that can be communicated over a channel and ways in which [Communication Risk](Communication-Risk) between these processes can be mitigated by clever **Encoding** and **Decoding** steps.
 
-But it's not just transmission.  **Communication Risk** exists at each of these steps.  Let's imagine a short exchange where**T** is trying to send a message to **R**:
+But it's not just transmission.  [Communication Risk](Communication-Risk) exists at each of these steps.  Let's imagine a short exchange where someone, **Alice** is trying to send a message to **Bob**:
 
--**T** might be **motivated** to send a message to tell **R** something, only to find out that _they already knew it_, or it wasn't useful information for them.
-- In the **composition** stage,**T** might mess up the _intent_ of the message: instead of "Please buy chips" they might say, "Please buy chops".
-- In the **encoding** stage,**T** might not speak clearly enough to be understood, and 
-- In the **transmission** stage,**T** might not say it loudly enough for **R** to 
+-**Alice** might be **motivated** to send a message to tell **Bob** something, only to find out that _they already knew it_, or it wasn't useful information for them.
+- In the **composition** stage,**Alice** might mess up the _intent_ of the message: instead of "Please buy chips" they might say, "Please buy chops".
+- In the **encoding** stage,**Alice** might not speak clearly enough to be understood, and 
+- In the **transmission** stage,**Alice** might not say it loudly enough for **Bob** to 
 - **receive** the message clearly (maybe there is background noise).
-- Having heard**T** say something, can **R** **decode** what was said into a meaningful sentence?
-- And, assuming that, will they **interpret** correctly which type of chips (or chops)**T** was talking about?  Does "Please buy chips" convey all the information they need?
-- Finally, assuming _everything else_, will **R** believe the message?  Will they **reconcile** the information into their [Internal Model](Internal-Model) and act on it?  Perhaps not, if **R** thinks that there are chips at home already.
+- Having heard**Alice** say something, can **Bob** **decode** what was said into a meaningful sentence?
+- And, assuming that, will they **interpret** correctly which type of chips (or chops)**Alice** was talking about?  Does "Please buy chips" convey all the information they need?
+- Finally, assuming _everything else_, will **Bob** believe the message?  Will they **reconcile** the information into their [Internal Model](Internal-Model) and act on it?  Perhaps not, if **Bob** thinks that there are chips at home already.
 
 ## Approach To Communication Risk
 
-There is a symmetry about the steps going on in Shannon's diagram, and we're going to exploit this in order to break down **Communication Risk** into it's main types.  
+There is a symmetry about the steps going on in Shannon's diagram, and we're going to exploit this in order to break down [Communication Risk](Communication-Risk) into it's main types.  
 
 ![Communication Risk 2](images/communication_2.png)
 
-To get inside **Communication Risk**, we need to understand **Communication** itself, whether between _machines_, _people_ or _products_:   we'll look at each in turn.  In order to do that, we're going to examine four basic concepts in each of these settings: 
+To get inside [Communication Risk](Communication-Risk), we need to understand **Communication** itself, whether between _machines_, _people_ or _products_:   we'll look at each in turn.  In order to do that, we're going to examine four basic concepts in each of these settings: 
  - [Channels](https://en.wikipedia.org/wiki/Communication_channel), the medium via which the communication is happening.
  - [Protocols](https://en.wikipedia.org/wiki/Communication_protocol) -  the systems of rules that allow two or more entities of a communications system to transmit information.
  - [Messages](https://en.wikipedia.org/wiki/Message): The information we want to convey.
@@ -48,7 +50,7 @@ And, as we look at these four areas, we'll consider the attendant risks of each.
 
 There are lots of different types of channel for communicating (e.g. TV, Radio, DVD, Talking, Posters, Books, Phones, The Internet, etc. ) and they all have different characteristics.   Some obvious ones are cost, utilisation, number of people reached, simplex or duplex (parties can transmit and receive at the same time), persistence (a play vs a book, say), latency (how long messages take to arrive) and bandwidth (the amount of information that can be transmitted in a period of time).
 
-Channel characteristics are important:  in a high-bandwidth, low-latency situation,**T** and **R** can _check_ with each other that the meaning was transferred correctly.  They can discuss what to buy, they can agree that**T** wasn't lying or playing a joke.  
+Channel characteristics are important:  in a high-bandwidth, low-latency situation,**Alice** and **Bob** can _check_ with each other that the meaning was transferred correctly.  They can discuss what to buy, they can agree that**Alice** wasn't lying or playing a joke.  
 
 The channel characteristics also imply suitability for certain _kinds_ of messages.  A documentary might be a great way of explaining some economic concept, whereas an opera might not be.
 
@@ -274,13 +276,13 @@ While machines only process _information_, people's brains run on concepts and i
 
 > "The famous pipe. How people reproached me for it! And yet, could you stuff my pipe? No, it's just a representation, is it not? So if I had written on my picture “This is a pipe”, I'd have been lying!" - [Rene Magritte, of _The Treachery of Images_](https://en.wikipedia.org/wiki/The_Treachery_of_Images)
 
-This brings about it's own **Communication Risk**: names are not _precise_, and concepts mean different things to different people.  We can't be sure that people have the same meaning for concepts that we have.  
+This brings about it's own [Communication Risk](Communication-Risk): names are not _precise_, and concepts mean different things to different people.  We can't be sure that people have the same meaning for concepts that we have.  
 
 ### Invisibility Risk
 
 Abstraction is a massively powerful technique.  As we saw above, it allows things like the Internet to happen.  However, the price of Abstraction is **Invisibility Risk**: function hides behind layers of abstraction and becomes invisible.  
 
-We try to mitigate this type of **Communication Risk** via (for the most part) documentation.  This is a terrible deal:  because we can't understand the original, (un-abstracted) implementation, we now need to write some simpler documentation, which _explains_ the abstraction, in terms of further abstractions, and this is where things start to get murky.
+We try to mitigate this type of [Communication Risk](Communication-Risk) via (for the most part) documentation.  This is a terrible deal:  because we can't understand the original, (un-abstracted) implementation, we now need to write some simpler documentation, which _explains_ the abstraction, in terms of further abstractions, and this is where things start to get murky.
 
 **Invisibility Risk** is risk due to information not sent.  Because humans don't need a complete understanding of a concept to use it, we can cope with some **Invisibility Risk** in communication.
 
