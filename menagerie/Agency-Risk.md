@@ -30,9 +30,10 @@ Also, try to look for _hungry_ consultancies:  if you being a happy client is va
 
 > "The one who stays later than the others is a hero. " - [Hero Culture, _Ward's Wiki_](http://wiki.c2.com/?HeroCulture)
 
-[Hero Programmers](http://wiki.c2.com/?HeroCulture) put in more hours and try to rescue projects single-handedly, often cutting corners like team communication and process in order to get there.   
+Heroes put in more hours and try to rescue projects single-handedly, often cutting corners like team communication and process in order to get there.   
 
 Sometimes, projects don't get done without heroes.  But other times, the hero has an alternative agenda than just getting the project done:
+
 - A need for control, and for their own vision.
 - A preference to work alone.
 - A desire for recognition and acclaim from colleagues.
@@ -63,6 +64,7 @@ Working on a pet project usually means you get lots of attention (and more than 
 ![Morale Risk](images/generated/morale-risk.png)
 
 Sometimes, the morale of the team or individuals within it dips, leading to lack of motivation.  [Morale Risk](Agency-Risk#morale-risk) is a kind of [Agency Risk](Agency-Risk) because it really means that a team member or the whole team isn't committed to the [Goal](Goal-In-Mind), may decide their efforts are best spent elsewhere.  [Morale Risk](Agency-Risk#morale-risk) might be caused by:
+
  - External factors:  Perhaps the employees' dog has died, or they're simply tired of the industry, or are not feeling challenged.
  - If the team don't believe a goal is achievable, they won't commit their full effort to it.  This might be due to to a difference in the evaluation of the risks on the project between the team members and the leader.
  - If the goal isn't considered sufficiently worthy, or the team isn't sufficiently valued.
@@ -76,7 +78,7 @@ It seems strange that humans are over-confident.  You would have thought that ev
 
 In any case, humans have lots of self-destructive tendencies that _haven't_ been evolved away, and we get by.  
 
-Development is a craft, and ideally, we'd like developers to take pride in their work.   Too little pride means lack of care, but too much pride is _hubris_, and the belief that you are better than you really are.  Who does hubris benefit?  Certainly not the team, and not the goal.  
+Development is a craft, and ideally, we'd like developers to take pride in their work.   Too little pride means lack of care, but too much pride is _hubris_, and the belief that you are better than you really are.  Who does hubris benefit?  Certainly not the team, and not the goal, because hubris blinds the team to hidden risks that they really should have seen.   
 
 Although over-confidence might be a useful trait when bargaining with other humans, the thesis of everything so far is that [Meeting Reality](Meet-Reality) will punish your over-confidence again and again. 
 
