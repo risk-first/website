@@ -190,7 +190,7 @@ Let's look at all the protocols we saw here:
 
 ![Protocol Stack](images/communication_protocols.png) 
 
-Each protocol "passes on" to the next one in the chain.  On the left, we have the representation most suitable for the _messages_:  HTTP is designed for browsers to use to ask for and receive web pages.  As we move right, we are converting the message more and more into a form suitable for the [Channel]: in this case, microwave transmission.   
+Each protocol "passes on" to the next one in the chain.  On the left, we have the representation most suitable for the _messages_:  HTTP is designed for browsers to use to ask for and receive web pages.  As we move right, we are converting the message more and more into a form suitable for the [Channel](Communication-Risk#channels): in this case, microwave transmission.   
 
 By having a stack of protocols, we are able to apply [Separation Of Concerns](), each protocol handling just a few concerns:
 
