@@ -19,14 +19,14 @@ And from this same paper, we get the following (slightly adapted) model:
 
 We move from top-left ("I want to send a message to someone") to bottom left, clockwise, where we hope the message has been understood and believed.  (I've added this last box to Shannon's original diagram.)
 
-One of the chief concerns in Shannon's paper is the step between **Transmission** and **Reception**:  he creates a theory of information (measured in **bits**), the upper-bounds of information that can be communicated over a channel and ways in which [Communication Risk](Communication-Risk) between these processes can be mitigated by clever **Encoding** and **Decoding** steps.
+One of the chief concerns in Shannon's paper is the step between **Transmission** and **Reception**.  He creates a theory of information (measured in **bits**), the upper-bounds of information that can be communicated over a channel and ways in which [Communication Risk](Communication-Risk) between these processes can be mitigated by clever **Encoding** and **Decoding** steps.
 
-But it's not just transmission:  [Communication Risk](Communication-Risk) exists at each of these steps.  Let's imagine a short exchange where someone, **Alice** is trying to send a message to **Bob**:
+But it's not just transmission.  [Communication Risk](Communication-Risk) exists at each of these steps.  Let's imagine a short exchange where someone, **Alice** is trying to send a message to **Bob**:
 
 - **Alice** might be **motivated** to send a message to tell **Bob** something, only to find out that _they already knew it_, or it wasn't useful information for them.
-- In the **composition** stage,**Alice** might mess up the _intent_ of the message: instead of "Please buy chips" they might say, "Please buy chops".
-- In the **encoding** stage,**Alice** might not speak clearly enough to be understood, and 
-- In the **transmission** stage,**Alice** might not say it loudly enough for **Bob** to 
+- In the **composition** stage, **Alice** might mess up the _intent_ of the message: instead of "Please buy chips" they might say, "Please buy chops".
+- In the **encoding** stage, **Alice** might not speak clearly enough to be understood, and 
+- In the **transmission** stage, **Alice** might not say it loudly enough for **Bob** to... 
 - **receive** the message clearly (maybe there is background noise).
 - Having heard**Alice** say something, can **Bob** **decode** what was said into a meaningful sentence?
 - And, assuming that, will they **interpret** correctly which type of chips (or chops)**Alice** was talking about?  Does "Please buy chips" convey all the information they need?
