@@ -305,25 +305,25 @@ This brings about [Misinterpretation Risk](Communication-Risk#misinterpretation-
 
 ![Invisibility Risk](images/generated/invisibility-risk.png)
 
-Abstraction is a massively powerful technique.  As we saw above in the section on [Protocols](Communication-Risk#protocols), it allows things like the Internet to happen.  However, the price of Abstraction is **Invisibility Risk**.  It lets the function of a thing hide behind the layers of abstraction and becomes invisible.  
+Another cost of Abstraction is [Invisibility Risk](Communication-Risk#invisibility-risk).  While Abstraction is a massively powerful technique, (as we saw above in the section on [Protocols](Communication-Risk#protocols), it allows things like the Internet to happen) it lets the function of a thing hide behind the layers of abstraction and become invisible.  
 
-We try to mitigate this type of [Communication Risk](Communication-Risk) via (for the most part) documentation.  This is a terrible deal:  because we can't understand the original, (un-abstracted) implementation, we now need to write some simpler documentation, which _explains_ the abstraction, in terms of further abstractions, and this is where things start to get murky.
+As soon as you create a function, you are doing abstraction.  You are saying:  “I now have this operation. The details, I won’t mention again, but from now on, it’s called **f**”  And suddenly, “**f**” hides.  It is working invisibly.  Things go on in **f** that people don’t necessarily need to understand.   There may be some documentation, or tacit knowledge around what **f** is, and what it does, but it’s not necessarily right.  Referring to _f_ is a much simpler job than understanding **f**.
 
-As soon as you create a function, you are doing abstraction.  You are saying:  “I now have this operation. The details, I won’t mention again, but from now on, it’s called _f_.”  And suddenly, “_f_” hides.  It is working invisibly.  Things go on in _f_ that people don’t necessarily need to understand.   There may be some documentation, or tacit knowledge around what _f_ is, and what it does, but it’s not necessarily right.  Referring to _f_ is a much simpler job than understanding _f_.
+We try to mitigate this via (for the most part) documentation, but this is a terrible deal:  because we can't understand the original, (un-abstracted) implementation, we now need to write some simpler documentation, which _explains_ the abstraction, in terms of further abstractions, and this is where things start to get murky.
 
 [Invisibility Risk](Communication-Risk#invisibility-risk) is mainly [Hidden Risk](Risk).  (Mostly, _you don't know what you don't know_.)  But you can carelessly _hide things from yourself_ with software:
 
- - Adding a thread to an application that doesn't report whether it's worked or failed, or is running out of control and consuming all the cycles of the CPU.
- - Load balancing can increase reliability, but only if you find and fix failed servers quickly.   Otherwise, you only see problems when the last server fails.
+ - Adding a thread to an application that doesn't report whether it's worked, failed, or is running out of control and consuming all the cycles of the CPU.
+ - Redundancy can increase reliability, but only if you know when servers fail, and fix them quickly.   Otherwise, you only see problems when the last server fails.
  - When building a webservice, can you assume that it's working for the users in the way you want it to?
 
-When you build a service, or even start a thread, ask yourself:  "How will I know next week that this is working properly?"  If the answer involves manual work and investigation, then your implementation has just cost you in [Invisibility Risk](Communication-Risk#invisibility-risk).
+When you build a software service, or even implement a thread, ask yourself:  "How will I know next week that this is working properly?"  If the answer involves manual work and investigation, then your implementation has just cost you in [Invisibility Risk](Communication-Risk#invisibility-risk).
 
 #### Invisibility Risk In Conversation
 
-**Invisibility Risk** is risk due to information not sent.  But because humans don't need a complete understanding of a concept to use it, we can cope with some **Invisibility Risk** in communication, and this saves us time when we're talking.   It would be _painful_ to have conversations if, say, the other person needed to in detail understand everything about how cars work in order to discuss cars.  For people, **Abstraction** is a tool that we can use to refer to other concepts, without necessarily knowing how the concepts work.  This divorcing of "what" from "how" is the essence of abstraction and is essential.   
+[Invisibility Risk](Communication-Risk#invisibility-risk) is risk due to information not sent.  But because humans don't need a complete understanding of a concept to use it, we can cope with some [Invisibility Risk](Communication-Risk#invisibility-risk) in communication, and this saves us time when we're talking.   It would be _painful_ to have conversations if, say, the other person needed to in detail understand everything about how cars work in order to discuss cars.  For people, **Abstraction** is a tool that we can use to refer to other concepts, without necessarily knowing how the concepts work.  This divorcing of "what" from "how" is the essence of abstraction and is essential.   
 
-The debt of [Invisibility Risk](Communication-Risk#invisibility-risk) comes due when you realise that _not being given_ the details _prevents_ you from reasoning about it effectively.  Let's think about this in the context of a project status meeting, for example:
+The debt of [Invisibility Risk](Communication-Risk#invisibility-risk) comes due when you realise that _not_ being given_ the details _prevents_ you from reasoning about it effectively.  Let's think about this in the context of a project status meeting, for example:
  
 - Can you be sure that the status update contains all the details you need to know?
 - Is the person giving the update wrong or lying?
