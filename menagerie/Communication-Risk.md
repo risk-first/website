@@ -151,7 +151,11 @@ Next, we see this:
 >                               (5)
 ```
 
-This is now the HTTP protocol proper, and these 5 lines are sending information _over the connection_ to the Google server.  Line (1) says what version of HTTP we are using, and the path we're loading (`/preferences` in this case).   Lines `(2)` to `(4)` are _headers_.  They are name-value pairs, separated with a colon.   The HTTP protocol specifies a bunch of these names, and later versions of the protocol might introduce newer ones.  Line (5) is an empty line, which indicates that we're done with the headers, please give us the response.  And it does:
+This is now the HTTP protocol proper, and these 5 lines are sending information _over the connection_ to the Google server.  
+
+- `(1)` says what version of HTTP we are using, and the path we're loading (`/preferences` in this case).   
+- `(2)` to `(4)` are _headers_.  They are name-value pairs, separated with a colon.   The HTTP protocol specifies a bunch of these names, and later versions of the protocol might introduce newer ones.  
+- `(5)` is an empty line, which indicates that we're done with the headers, please give us the response.  And it does:
 
 ```
 < HTTP/1.1 301 Moved Permanently                                      
