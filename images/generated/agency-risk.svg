@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.0//EN'
+          'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg contentScriptType="text/ecmascript" xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify" contentStyleType="text/css" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" version="1.0"
+>
+  <defs
+  >
+    <style type="text/css" xml:space="preserve"
+    > @import url("risk.css");</style
+    >
+  </defs
+    >
+  <g kite9-elem="diagram" id="The Diagram"
+    >
+    <g filter="url(#dropshadow)"
+      >
+      
+    <g kite9-elem="risk" transform="translate(15.0,15.0)"
+        />
+  
+    </g
+        >
+  </g
+        >
+<defs
+        >
+    <linearGradient x1="0%" xmlns:xlink="http://www.w3.org/1999/xlink" y1="0%" x2="0%" y2="100%" xlink:type="simple" xlink:actuate="onLoad" id="risk-background" xlink:show="other"
+          >
+      <stop stop-color="#FFF" offset="0%"
+            />
+      <stop stop-color="#DDD" offset="100%"
+            />
+    </linearGradient
+            >
+    
+    <filter xlink:actuate="onLoad" xlink:type="simple" height="130%" id="dropshadow" xlink:show="other" xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+      <feGaussianBlur stdDeviation="1" in="SourceAlpha"
+              /> 
+      <feOffset dx="2" dy="2"
+              /> 
+      <feColorMatrix values="0 0 0 0 .5                 0 0 0 0 .5                 0 0 0 0 .5                 0 0 0 1 0" type="matrix"
+              />
+      <feMerge
+              > 
+        <feMergeNode
+                />
+        <feMergeNode in="SourceGraphic"
+                /> 
+      </feMerge
+                >
+    </filter
+                >
+
+  </defs
+              ></svg
+            >
