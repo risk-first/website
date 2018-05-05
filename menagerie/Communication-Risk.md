@@ -305,7 +305,7 @@ This brings about [Misinterpretation Risk](Communication-Risk#misinterpretation-
 
 ![Invisibility Risk](images/generated/invisibility-risk.png)
 
-Another cost of Abstraction is [Invisibility Risk](Communication-Risk#invisibility-risk).  While Abstraction is a massively powerful technique, (as we saw above in the section on [Protocols](Communication-Risk#protocols), it allows things like the Internet to happen) it lets the function of a thing hide behind the layers of abstraction and become invisible.  
+Another cost of **Abstraction** is [Invisibility Risk](Communication-Risk#invisibility-risk).  While abstraction is a massively powerful technique, (as we saw above in the section on [Protocols](Communication-Risk#protocols), it allows things like the Internet to happen) it lets the function of a thing hide behind the layers of abstraction and become invisible.  
 
 As soon as you create a function, you are doing abstraction.  You are saying:  “I now have this operation. The details, I won’t mention again, but from now on, it’s called **f**”  And suddenly, “**f**” hides.  It is working invisibly.  Things go on in **f** that people don’t necessarily need to understand.   There may be some documentation, or tacit knowledge around what **f** is, and what it does, but it’s not necessarily right.  Referring to _f_ is a much simpler job than understanding **f**.
 
