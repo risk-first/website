@@ -35,8 +35,9 @@ This is done with the `./convert.sh` script.
 - Better fixedWidth font
 
 Images:  we need to be able to set minimum width and height in kite9 for text, images etc.  padding doesn't really
-cut it.
+cut it.  Then, we can sort out the Communication Risk icon. Also, we need to sort out text centering.  It should work.
 
+It's annoying to keep having to define the risks over and over.  Ideally,
 
 
 
