@@ -22,7 +22,7 @@ Encapsulation:  why is it useful?  (it turns a problem of cc i*o into i+o)  also
 
 
 
-
+Context Switching/Locality
 
 
 
