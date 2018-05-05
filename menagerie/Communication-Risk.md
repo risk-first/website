@@ -25,11 +25,11 @@ But it's not just transmission.  [Communication Risk](Communication-Risk) exists
 
 - **Alice** might be **motivated** to send a message to tell **Bob** something, only to find out that _they already knew it_, or it wasn't useful information for them.
 - In the **composition** stage, **Alice** might mess up the _intent_ of the message: instead of "Please buy chips" they might say, "Please buy chops".
-- In the **encoding** stage, **Alice** might not speak clearly enough to be understood, and 
+- In the **encoding** stage, **Alice** might not speak clearly enough to be understood, and... 
 - In the **transmission** stage, **Alice** might not say it loudly enough for **Bob** to... 
 - **receive** the message clearly (maybe there is background noise).
-- Having heard**Alice** say something, can **Bob** **decode** what was said into a meaningful sentence?
-- And, assuming that, will they **interpret** correctly which type of chips (or chops)**Alice** was talking about?  Does "Please buy chips" convey all the information they need?
+- Having heard **Alice** say something, can **Bob** **decode** what was said into a meaningful sentence?
+- Then, assuming that, will they **interpret** correctly which type of chips (or chops) **Alice** was talking about?  Does "Please buy chips" convey all the information they need?
 - Finally, assuming _everything else_, will **Bob** believe the message?  Will they **reconcile** the information into their [Internal Model](Internal-Model) and act on it?  Perhaps not, if **Bob** thinks that there are chips at home already.
 
 ## Approach To Communication Risk
