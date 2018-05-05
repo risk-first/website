@@ -373,7 +373,7 @@ By now it should be clear that it's going to be _both_ quite hard to read and wr
 
 But now we should be able to see the reasons it's harder to read than write too: 
  
- - When reading code, you are having to shift your [Internal Model](Internal-Model) to wherever the code is, accepting decisions that you might not agree with and accepting counter-intuitive logical leaps.  [Learning Curve](Communication-Risk#learning-curve-risk). _(cf. [Principle of Least Surprise](https://en.wikipedia.org/wiki/Principle_of_least_astonishment). )_
+ - When reading code, you are having to shift your [Internal Model](Internal-Model) to wherever the code is, accepting decisions that you might not agree with and accepting counter-intuitive logical leaps.  [Learning Curve](Communication-Risk#learning-curve-risk). _(cf. [Principle of Least Surprise](https://en.wikipedia.org/wiki/Principle_of_least_astonishment))_
  - There is no [Feedback Loop](Feedback-Loop) between your [Internal Model](Internal-Model) and the [Reality](Meet-Reality) of the code, opening you up to [Misinterpretation Risk](Communication-Risk#misinterpretation-risk).  When you write code, your compiler and tests give you this.
  - While reading code _takes less time_ than writing it, this also means the [Learning Curve](Communication-Risk#learning-curve-risk) is steeper.
 
@@ -385,4 +385,4 @@ So, here's a summary of where we've arrived with our model of communication risk
 
 ![Communication 2](images/communication_3.png)
 
-The purpose of Communication is to _coordinate_ our actions, so next it's time to look at [Coordination Risk](Coordination-Risk).
+Since the purpose of Communication is to _coordinate our actions_, next it's time to look at [Coordination Risk](Coordination-Risk).
