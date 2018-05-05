@@ -210,7 +210,7 @@ The protocol mediates between the message and the channel.  Where this goes wron
 
 Generally, anytime where you have different parts of a system communicating with each other, and one part can change incompatibly with another you have [Protocol Risk](Communication-Risk#protocol-risk).
 
-Locally, (within our own project), where we have control, we can mitigate this risk using compile-time checking (as discussed already in [Complexity Risk]()), which essentially forces all senders and receivers to agree on protocol.  But, the wider the group that you are communicating with, the less control you have and the more chance there is of [Protocol Risk](Communication-Risk#protocol-risk).   Let's look at some types of [Protocol Risk](Communication-Risk#protocol-risk):
+Locally, (within our own project), where we have control, we can mitigate this risk using compile-time checking (as discussed already in [Complexity Risk](Complexity-Risk#protocols-and-types)), which essentially forces all clients and servers to agree on protocol.  But, the wider the group that you are communicating with, the less control you have and the more chance there is of [Protocol Risk](Communication-Risk#protocol-risk).   Let's look at some types of [Protocol Risk](Communication-Risk#protocol-risk):
  
 ### Protocol Incompatibility Risk
 
