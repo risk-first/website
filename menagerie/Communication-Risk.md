@@ -202,9 +202,9 @@ By having a stack of protocols, we are able to apply [Separation Of Concerns](),
  - `WiFi` Abstraction:  "Networks", 802.11 flavours.
  - Transmitters, Antennas, error correction codes, etc.
  
-HTTP "stands on the shoulders of giants".  Not only does it get to use pre-existing protocols like TCP and DNS to make it's life easier, it got 802.11 "for free" when this came along and plugged into the existing IP protocol.  This is the key value of abstraction:  you get to piggy-back on _existing_ patterns, and use them yourself. 
+`HTTP` "stands on the shoulders of giants".  Not only does it get to use pre-existing protocols like `TCP` and `DNS` to make it's life easier, it got `802.11` "for free" when this came along and plugged into the existing `IP` protocol.  This is the key value of abstraction:  you get to piggy-back on _existing_ patterns, and use them yourself. 
 
-The protocol mediates between the message and the channel.  Where this goes wrong, we have **Protocol Risk**.  This is a really common issue for IT systems, but also sometimes for human communication too.
+The protocol mediates between the message and the channel.  Where this goes wrong, we have [Protocol Risk](Communication-Risk#protocol-risk).  This is a really common issue for IT systems, but also sometimes for human communication too.
 
 ## Protocol Risk
 
