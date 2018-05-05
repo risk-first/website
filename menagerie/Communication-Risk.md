@@ -327,7 +327,6 @@ As soon as you create a function, you are doing abstraction.  You are saying:  â
  
 Software brings tbd   
   
-
 ![Message Risk](images/communication_messages.png)
 
 ## Internal Models
@@ -337,6 +336,9 @@ So finally, we are coming to the root of the problem:  communication is about tr
 As we've seen already, this is fraught with risk on many levels, but even at this last level there are risks.
 
 ### Trust Risk & Belief Risk
+
+![Trust Risk](images/generated/trust-risk.png)
+![Belief Risk](images/generated/belief-risk.png)
 
 Although protocols can sometimes handle security features of communication (such as proof-of-identity and preventing man-in-the-middle attacks), trust goes further than this, intersecting with [Agency Risk]():  can you be sure that the other party in the communication is acting in your best interests?
  
@@ -349,6 +351,9 @@ Even if the receiver trusts the communicator, they may not trust the message.  L
 From the point-of-view of [Marketing Communications]() choosing the right message is part of the battle.  You are trying to communicate your idea in such a way as to mitigate **Belief Risk** and **Trust Risk**.
 
 ### Learning Curve Risk
+
+![Learning Curve Risk](images/generated/learning-curve-risk.png)
+
 
 If the messages we are receiving force us to update our [Internal Mode](Internal-Model) too much, we can suffer from the problem of "too steep a [Learning Curve]()" or "[Information Overload]", where the messages force us to adapt our [Internal Model](Internal-Model) too quickly for our brains to keep up.  
 
