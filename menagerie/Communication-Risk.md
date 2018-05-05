@@ -267,8 +267,6 @@ Although Shannon's Communication Theory is about transmitting **Messages**, mess
 
 ### Internal Model Assumption Risk
 
-
-
 When we construct messages in a conversation, we have to make judgements about what the other person already knows.  When talking to children, it's often hard work because they _assume_ that you have knowledge of everything they do.  This is called [Theory Of Mind](): the appreciation that your knowledge is different to other people's, and adjusting you messages accordingly.
 
 When teaching, this is called [The Curse Of Knowledge]():  teachers have difficulty understanding students' problems _because they already understand the subject_.  For example, if I want to tell you about a new [JDBC Driver](), this pre-assumes that you know what JDBC is:  the message has a dependency on prior knowledge.
@@ -307,25 +305,29 @@ This brings about it's own [Communication Risk](Communication-Risk): names are n
 
 ![Invisibility Risk](images/generated/invisibility-risk.png)
 
-Abstraction is a massively powerful technique.  As we saw above, it allows things like the Internet to happen.  However, the price of Abstraction is **Invisibility Risk**: function hides behind layers of abstraction and becomes invisible.  
+Abstraction is a massively powerful technique.  As we saw above in the section on [Protocols](Communication-Risk#protocols), it allows things like the Internet to happen.  However, the price of Abstraction is **Invisibility Risk**.  It lets the function of a thing hide behind the layers of abstraction and becomes invisible.  
 
 We try to mitigate this type of [Communication Risk](Communication-Risk) via (for the most part) documentation.  This is a terrible deal:  because we can't understand the original, (un-abstracted) implementation, we now need to write some simpler documentation, which _explains_ the abstraction, in terms of further abstractions, and this is where things start to get murky.
 
-**Invisibility Risk** is risk due to information not sent.  Because humans don't need a complete understanding of a concept to use it, we can cope with some **Invisibility Risk** in communication.
-
-- people assume invisibility risk on projects/people that don't communicate much
-- that can also lead to 
-
-For people though, **Abstraction** is a tool that we can use to refer to other concepts, without necessarily knowing how the concepts work.  This divorcing of "what" from "how" is the essence of abstraction.  
-
 As soon as you create a function, you are doing abstraction.  You are saying:  “I now have this operation. The details, I won’t mention again, but from now on, it’s called _f_.”  And suddenly, “_f_” hides.  It is working invisibly.  Things go on in _f_ that people don’t necessarily need to understand.   There may be some documentation, or tacit knowledge around what _f_ is, and what it does, but it’s not necessarily right.  Referring to _f_ is a much simpler job than understanding _f_.
 
-**Invisibility Risk** is mainly [Hidden Risk](Risk):  you don't know what you don't know.  But you can easily _hide things from yourself_ with software.  
+[Invisibility Risk](Communication-Risk#invisibility-risk) is mainly [Hidden Risk](Risk).  (Mostly, _you don't know what you don't know_.)  But you can carelessly _hide things from yourself_ with software:
+
  - Adding a thread to an application that doesn't report whether it's worked or failed, or is running out of control and consuming all the cycles of the CPU.
  - Load balancing can increase reliability, but only if you find and fix failed servers quickly.   Otherwise, you only see problems when the last server fails.
  - When building a webservice, can you assume that it's working for the users in the way you want it to?
+
+When you build a service, or even start a thread, ask yourself:  "How will I know next week that this is working properly?"  If the answer involves manual work and investigation, then your implementation has just cost you in [Invisibility Risk](Communication-Risk#invisibility-risk).
+
+#### Invisibility Risk In Conversation
+
+**Invisibility Risk** is risk due to information not sent.  But because humans don't need a complete understanding of a concept to use it, we can cope with some **Invisibility Risk** in communication, and this saves us time when we're talking.   It would be _painful_ to have conversations if, say, the other person needed to in detail understand everything about how cars work in order to discuss cars.  For people, **Abstraction** is a tool that we can use to refer to other concepts, without necessarily knowing how the concepts work.  This divorcing of "what" from "how" is the essence of abstraction and is essential.   
+
+The debt of [Invisibility Risk](Communication-Risk#invisibility-risk) comes due when you realise that _not being given_ the details _prevents_ you from reasoning about it effectively.  Let's think about this in the context of a project status meeting, for example:
  
-Software brings tbd   
+- Can you be sure that the status update contains all the details you need to know?
+- Is the person giving the update wrong or lying?
+- Do you know enough about the details of what's being discussed in order to make informed decisions about how the project is going?
   
 ![Message Risk](images/communication_messages.png)
 
