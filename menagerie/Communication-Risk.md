@@ -259,9 +259,15 @@ A second aspect of [Protocol Risk](Communication-Risk#protocol-risk) exists in h
 
 ## Messages
 
-Although Shannon's Communication Theory is about transmitting **Messages**, messages are really encoded **ideas** and **Concepts**, from one **Internal Model**.
+Although Shannon's Communication Theory is about transmitting **Messages**, messages are really encoded **Ideas** and **Concepts**, from an **Internal Model**.
+
+![Internal Model Assumption Risk](images/generated/model-assumption-risk.png)
+![Message Dependency Risk](images/generated/message-dependency-risk.png)
+
 
 ### Internal Model Assumption Risk
+
+
 
 When we construct messages in a conversation, we have to make judgements about what the other person already knows.  When talking to children, it's often hard work because they _assume_ that you have knowledge of everything they do.  This is called [Theory Of Mind](): the appreciation that your knowledge is different to other people's, and adjusting you messages accordingly.
 
@@ -285,7 +291,9 @@ only makes sense if the application has previously had the message
 Create user 53 with surname 'Smith'
 ```
 
-### Abstraction Risk & Misinterpretation Risk
+### Abstraction And Misinterpretation Risk
+
+![Misinterpretation Risk](images/generated/misinterpretation-risk.png)
 
 People don't rely on rigorous implementations of abstractions like computers do; we make do with fuzzy definitions of concepts and ideas.  We rely on **Abstraction** to move between the name of a thing and the _idea of a thing_.
 
@@ -296,6 +304,8 @@ While machines only process _information_, people's brains run on concepts and i
 This brings about it's own [Communication Risk](Communication-Risk): names are not _precise_, and concepts mean different things to different people.  We can't be sure that people have the same meaning for concepts that we have.  
 
 ### Invisibility Risk
+
+![Invisibility Risk](images/generated/invisibility-risk.png)
 
 Abstraction is a massively powerful technique.  As we saw above, it allows things like the Internet to happen.  However, the price of Abstraction is **Invisibility Risk**: function hides behind layers of abstraction and becomes invisible.  
 
