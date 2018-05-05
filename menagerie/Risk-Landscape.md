@@ -63,9 +63,9 @@ tbd
 |[Communication Risk](Communication-Risk)            |Customer, Product, Staff  | |             
 |[Coordination Risk](Coordination-Risk)              |Staff                     ||       
 |[Dependency Risk](Dependency-Risk)                  |Product, Customer, Staff  ||  
+|[Process Risk](Process-Risk)                        |Staff                     ||
 |[Boundary Risk](Boundary-Risk)                      |Product                   | |            
 |[Production Risk](Production-Risk)                  |Customer, Product         |  |
-|[Process Risk](Process-Risk)                        |Staff                     ||
 |[Map And Territory Risk](Map-And-Territory-Risk)    |Staff                     | |  
 |[Agency Risk](Agency-Risk)                          |Staff                     |  |
        

@@ -38,7 +38,11 @@ However, sometimes, the hero has an alternative agenda than just getting the pro
 - A desire for recognition and acclaim from colleagues.
 - For the job security of being a [Key Man](https://en.wikipedia.org/wiki/Key_person_insurance).
 
-A team _can_ make use of heroism, but it's a double-edged sword.  The hero can becomes a bottleneck to work getting done, and because want to solve all the problems themselves, they under-communicate.
+A team _can_ make use of heroism, but it's a double-edged sword.  The hero can becomes a bottleneck to work getting done, and because want to solve all the problems themselves, they under-communicate.  
+
+tbd - reference process risk, parkinson's law again.
+
+
 
 ## Devil Makes Work
 
@@ -76,7 +80,7 @@ In any case, humans have lots of self-destructive tendencies that _haven't_ been
 
 Development is a craft, and ideally, we'd like developers to take pride in their work.   Too little pride means lack of care, but too much pride is _hubris_, and the belief that you are better than you really are.  Who does hubris benefit?  Certainly not the team, and not the goal.  
 
-Although over-confidence might be a useful trait when bargaining with other humans, the thesis of everything so far is that [Meeting Reality](Meet-Reality) will punish your over-confidence again and again.  
+Although over-confidence might be a useful trait when bargaining with other humans, the thesis of everything so far is that [Meeting Reality](Meet-Reality) will punish your over-confidence again and again. 
 
 
 
