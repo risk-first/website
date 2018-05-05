@@ -92,7 +92,7 @@ In this section, I want to examine the concept of [Communication Protocols](http
 
 So, to do this, let's look in a bit of detail at how web pages are loaded.   When considering this, we need to broaden our terminology.  Although so far we've talked about **Senders** and **Receivers**, we now need to talk from the point of view of who-depends-on-who.  If you're _depended on_, then you're a "Server", whereas if you require communication with something else, you're a "Client".   Thus, clients depend on servers in order to load pages.
 
-This is going to involve (at least) six separate protocols, the top-most one being the HTTP Protocol.   As far as the [http protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) is concerned, a _client_ makes an `HTTP Request` at a specific URL and the `HTTP Response` is returned in a predictable format that the browser can understand. 
+This is going to involve (at least) six separate protocols, the top-most one being the [HTTP Protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol).   As far as the HTTP Protocol is concerned, a _client_ makes an `HTTP Request` at a specific URL and the `HTTP Response` is returned in a predictable format that the browser can understand. 
 
 Let's have a quick look at how that works with a `curl` command, which allows me to load a web page from the command line.   We're going to try and load Google's preferences page, and see what happens.  If I type:
 
