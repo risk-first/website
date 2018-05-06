@@ -151,14 +151,6 @@ So, our first graph had a **Cyclomatic Complexity** of 7. `(15 - 10 + 2)`, while
 
 Cyclomatic complexity is all about the number of different routes through the program.   The more branches a program has, the greater it's cyclomatic complexity.  Hence, this is a useful metric in [Testing](Testing) and [Code Coverage](Testing#code-coverage): the more branches you have, the more tests you'll need to exercise them all. 
 
-## Space and Time Complexity
-
-So far, we've looked at a couple of definitions of complexity in terms of the codebase itself.  However, in Computer Science there is a whole branch of complexity theory devoted to how the software _runs_, namely [Big O Complexity](https://en.wikipedia.org/wiki/Big_O_notation).  
-
-Once running, an algorithm or data structure will consume space or runtime dependent on it's characteristics.  As with [Garbage Collectors](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)), these characteristics can introduce [Performance Risk](Production-Risk) which can easily catch out the unwary.  By and large, using off-the-shelf data structures and algorithms helps, but you still need to know their performance characteristics. 
-
-The [Big O Cheatsheet](http://bigocheatsheet.com) is a wonderful resource to investigate this further.  
-
 ## Complexity As Mass
 
 So, we've looked at some measures of software structure complexity, in order that we can say "this is more complex than this".  However, we've not really said why complexity entails [Risk](Risk).  So let's address that now by looking at two analogies, [Mass](Complexity-as-mass) and [Technical Debt](Complexity-Risk#technical-debt).  
@@ -329,6 +321,14 @@ Now, of course, there is a tradeoff:  we _mitigate_ [Complexity Risk](Complexity
 Nevertheless, compilers and type-checking are so prevalent in software that clearly, you have to accept that in most cases, the trade-off has been worth it: Even languages like [Clojure](https://clojure.org) have been retro-fitted with [type checkers](https://github.com/clojure/core.typed/wiki/User-Guide).
 
 We're going to head into much more detail on this in the section on [Protocol Risk](Communication-Risk#protocol-risk).
+
+### Space and Time Complexity
+
+So far, we've looked at a couple of definitions of complexity in terms of the codebase itself.  However, in Computer Science there is a whole branch of complexity theory devoted to how the software _runs_, namely [Big O Complexity](https://en.wikipedia.org/wiki/Big_O_notation).  
+
+Once running, an algorithm or data structure will consume space or runtime dependent on it's characteristics.  As with [Garbage Collectors](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)), these characteristics can introduce [Performance Risk](Production-Risk) which can easily catch out the unwary.  By and large, using off-the-shelf data structures and algorithms helps, but you still need to know their performance characteristics. 
+
+The [Big O Cheatsheet](http://bigocheatsheet.com) is a wonderful resource to investigate this further.  
 
 ### Concurrency / Mutability
 
