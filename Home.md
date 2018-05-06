@@ -54,14 +54,15 @@ Risks are often very similar across different software projects.   And, if you k
 
  - [The Risk landscape](Risk-Landscape)
  - [Feature Risk](Feature-Risk)
- - [Schedule Risk](Schedule-Risk)
  - [Complexity Risk](Complexity-Risk)
+ - [Communication Risk](Communication-Risk)
+ - [Coordination Risk](Coordination-Risk)
  - [Dependency Risk](Dependency-Risk)
+ - [Software Dependency Risk]
+ - [Schedule Risk](Schedule-Risk)
  - [Boundary Risk](Boundary-Risk)
  - [Production Risk](Production-Risk)
  - [Process Risk](Process-Risk)
- - [Coordination Risk](Coordination-Risk)
- - [Communication Risk](Communication-Risk)
  - [Map And Territory Risk](Map-And-Territory-Risk)
  - [Agency Risk](Agency-Risk) 
  
