@@ -31,6 +31,13 @@ risk {
 	kite9-type: container;
 }
 
+container {
+	kite9-type: container;
+	kite9-padding: 15px;
+	kite9-margin: 15px;
+	kite9-template: url(template.svg#container);
+}
+
 risk.invisibility {
 	kite9-template: url(template.svg#invisibility);
 }
@@ -103,6 +110,14 @@ risk.learning-curve {
 	kite9-template: url(template.svg#learning-curve);
 }
 
+risk.message {
+	kite9-template: url(template.svg#message);
+}
+
+risk.internal-model {
+	kite9-template: url(template.svg#internal-model);
+}
+
 risk-box {
 	kite9-margin: 10px;
 	kite9-link-inset: 10px;
@@ -163,6 +178,12 @@ risk title {
 	font-size: 10px;
 	font-family: "gothic";
 	text-align: middle;
+}
+
+.container-back {
+	stroke-width: 1px; 
+	fill:none;
+	stroke: black;
 }
 
 

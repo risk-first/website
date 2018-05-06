@@ -2,19 +2,40 @@
   <svg:defs>
     <svg:style type="text/css"> @import url("risk.css");</svg:style>
   </svg:defs>
-  <diagram xmlns="http://www.kite9.org/schema/adl" id="The Diagram">
-    <risk class="invisibility" />
-    <risk class="communication" />
-    <risk class="complexity" />
-    <risk class="boundary" />
-    <risk class="agency" />
-    <risk class="morale" />
-    <risk class="channel" />
-    <risk class="protocol" />
-    <risk class="protocol-incompatibility" />
-    <risk class="protocol-versioning" />
-    <risk class="protocol-implementation" />
-    <risk class="model-assumption" />
-    <risk class="message-dependency" />
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="The Diagram" style="kite9-layout: down;">
+    <container style="">
+      <risk class="boundary" />
+      <risk class="agency" />
+      <risk class="complexity" />
+      <risk class="morale" />
+    </container>
+    <container style="kite9-layout: down">
+     <risk class="communication" />
+      <container style="kite9-layout: right" >
+        <risk class="internal-model" />
+        <risk class="misintepretation" />
+        <risk class="trust" />
+        <risk class="belief" />
+        <risk class="learning-curve" />
+        <risk class="invisibility" />
+      </container>
+      <container style="kite9-layout: right" >
+        <risk class="message" />
+        <risk class="model-assumption" />
+        <risk class="message-dependency" />
+      </container>
+      <container style="kite9-layout: right" >
+        <risk class="protocol" />
+        <risk class="protocol-incompatibility" />
+        <risk class="protocol-versioning" />
+        <risk class="protocol-implementation" />
+      </container>
+      <container style="kite9-layout: right" >
+        <risk class="channel" />
+      </container>
+    </container>
+    <container style="kitge9-layout: right;">
+      <risk class="feature" />
+    </container>
   </diagram>
 </svg:svg>

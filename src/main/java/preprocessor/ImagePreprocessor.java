@@ -5,14 +5,11 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.StringReader;
 
-import org.apache.batik.transcoder.Transcoder;
 import org.apache.batik.transcoder.TranscoderInput;
 import org.apache.batik.transcoder.TranscoderOutput;
 import org.kite9.diagram.batik.format.Kite9PNGTranscoder;
-import org.kite9.diagram.batik.format.Kite9SVGTranscoder;
 import org.kite9.framework.common.RepositoryHelp;
 
 /**
@@ -39,42 +36,38 @@ public class ImagePreprocessor {
 		String line = br.readLine();
 		while (line != null) {
 			if (line.trim().contains("(images/generated/")) {
-				processGeneratedImage(br, origin, line);
+				processGeneratedImage(line);
 				System.out.println(line);
 			}
 			line = br.readLine();
 		}
 	}
 
-	private static void processGeneratedImage(BufferedReader br, File origin, String line) throws Exception {
-		String str = RepositoryHelp.stream(ImagePreprocessor.class.getResourceAsStream("icon-template.svg"));
-		String path = "../website.wiki/"+line.substring(line.lastIndexOf("(")+1, line.lastIndexOf(")"));
-		String name = line.substring(line.lastIndexOf("/")+1, line.lastIndexOf("-risk."));
-		str = str.replaceAll("\\$\\{TYPE\\}", name);
-		TranscoderOutput out = new TranscoderOutput(new FileOutputStream(new File(path)));
-		TranscoderInput in = new TranscoderInput(new StringReader(str));
+	private static void processGeneratedImage(String line) throws Exception {
+		String imagePath = line.substring(line.lastIndexOf("(")+1, line.lastIndexOf(".png)"));
+		String outputPath = "../website.wiki/"+imagePath+".png";
+		
+		// check if we have a template
+		TranscoderInput in = null;
+		File sourceFile = new File("../website.wiki/src/"+imagePath+".xml");
+		if (sourceFile.exists()) {
+			// a pre-existing file
+			in = new TranscoderInput(new FileReader(sourceFile));
+		} else {
+			// create one
+			String str = RepositoryHelp.stream(ImagePreprocessor.class.getResourceAsStream("icon-template.svg"));
+			String name = line.substring(line.lastIndexOf("/")+1, line.lastIndexOf("-risk."));
+			str = str.replaceAll("\\$\\{TYPE\\}", name);
+			in = new TranscoderInput(new StringReader(str));
+		}
+		
+		TranscoderOutput out = new TranscoderOutput(new FileOutputStream(new File(outputPath)));
 		File kite9Dir = new File("kite9/somefile.svg");
 		in.setURI(kite9Dir.toURI().toString());
 		Kite9PNGTranscoder transcoder = new Kite9PNGTranscoder();
 		transcoder.addTranscodingHint(Kite9PNGTranscoder.KEY_PIXEL_UNIT_TO_MILLIMETER, .0635f);	// 400dpi
 		transcoder.transcode(in, out);
-		System.out.println("Wrote: "+path);
+		System.out.println("Wrote: "+outputPath);
 	}
 
-	private static void processIncludes(BufferedReader br, File origin) throws Exception {
-		String line = br.readLine().trim();
-		while (!line.equals("```")) {
-			if (!line.startsWith("#")) {
-				File f = new File(origin.getParentFile(), line);
-				String title = "# " + line.substring(line.lastIndexOf("/")+1).replace("-", " ");
-				title = title.replace(".md", "");
-				System.out.println("\\newpage");
-				if (!line.contains("book")) {
-					System.out.println(title);
-				}
-				process(createBufferedReader(f), f);
-			}
-			line = br.readLine().trim();
-		}
-	}
 }

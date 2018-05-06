@@ -31,6 +31,15 @@
     </svg:g>
   </template>
   
+  <template id="container">
+    <back style='kite9-usage: decal; kite9-type: svg; '>
+      <svg:rect x='0' y='0' width='{x1}' height='{y1}' rx='8' ry='8'  class="container-back" />
+    </back>
+    <svg:g class="container">
+      <contents />
+    </svg:g>
+  </template>
+  
   <template id='code'>
     <svg:g class="code-label-front">
       <front style="kite9-type: text; ">
@@ -246,6 +255,29 @@
       <title>Learning 
       Curve
        Risk</title>
+    </risk-box>
+  </template>  
+  
+  <template id="message">
+    <risk-box>
+      <code>M</code>
+      <image>
+        <image-content style="kite9-template: url(noun_1422027.svg); " />
+      </image>
+      <title>Message 
+      Risk</title>
+    </risk-box>
+  </template>  
+  
+  <template id="internal-model">
+    <risk-box>
+      <code>IM</code>
+      <image>
+        <image-content style="kite9-template: url(noun_232241.svg); " />
+      </image>
+      <title>Internal
+      Model 
+      Risk</title>
     </risk-box>
   </template>  
 
