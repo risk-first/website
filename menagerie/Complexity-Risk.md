@@ -73,7 +73,7 @@ To see this in action, have a look at the below graph:
 
 It has 10 vertices, labelled **a** to **j**, and it has 15 edges (or links) connecting the vertices together.  If any single edge were removed from this diagram, the 10 vertices would still be linked together.   Because of this, we can say that the graph is _2-connected_.   That is, to disconnect any single vertex, you'd have to remove _at least_ two edges.
 
-As a slight aside, let's consider the Kolmogorov Complexity of this graph, by inventing a mini-language to describe graphs.  It could look something like this:
+As a slight aside, let's consider the **Kolmogorov Complexity** of this graph, by inventing a mini-language to describe graphs.  It could look something like this:
 
 ```javascript
 <item> : [<item>,]* <item>    # Indicates that the item before the colon 
@@ -90,22 +90,33 @@ h: i
 i: j                                                         (39 symbols)
 ```
 
-
 Let's remove some of those extra links:
 
 ![Connectivity 2](images/connectivity_2.png)
 
-In this graph, I've removed 6 of the edges.  Now, we're in a situation where if any single edge is removed, the graph becomes _unconnected_.  That is, it's broken into distinct chunks.  So, it's _1-connected_.
+In this graph, I've removed 6 of the edges.  Now, we're in a situation where if any single edge is removed, the graph becomes _unconnected_.  That is, it's broken into distinct chunks.  So, it's _1-connected_.  
 
-Also, it's I've arranged it as a hierarchy, which I can do now that it's only 1-connected.  For 10 vertices, we need 9 edges to connect everything up: it's always:
+The second graph is clearly simpler than the first.  And, we can show this by looking at the **Kolgomorov Complexity** in our little language:
+
+```javascript
+a: d,g
+b: f
+c: d,f
+e: h
+i: h                                                         (19 symbols)
+```
+
+**Connectivity** is also **Complexity**.  Heavily connected programs/graphs are much harder to work with than less-connected ones.  Even _laying out_ the first graph sensibly is a harder task than the second (the second is a doddle).  
+
+## Hierarchies and Modularization
+
+In the second, simplified graph, I've arranged it as a hierarchy, which I can do now that it's only 1-connected.  For 10 vertices, we need 9 edges to connect everything up.  It's always:
 
 ```
   edges = vertices - 1
 ```
 
 Note that I could pick any hierarchy here:  I don't have to start at **c** (although it has the nice property that it has two roughly even sub-trees attached to it).
-
-## Hierarchies and Modularization
 
 How does this help us?   Imagine if **a** - **j** were modules of a software system, and the edges of the graph showed communications between the different sub-systems.  In the first graph, we're in a worse position:  who's in charge?  What deals with what?  Can I isolate a component and change it safely?  What happens if one component disappears?  But, in the second graph, it's easier to reason about, because of the reduced number of connections and the new heirarchy of organisation.  
 
@@ -116,6 +127,11 @@ As a tool to battle complexity, we don't just see this in software, but everywhe
  - **Cells** - such as blood cells, nerve cells, skin cells in the [Human Body](https://en.wikipedia.org/wiki/List_of_distinct_cell_types_in_the_adult_human_body).
  - **Organs** - like hearts livers, brains etc.
  - **Organisms** - like you and me.
+ 
+The great complexity-reducing mechanism of modularization is that _you only have to consider your local environment_.  Elements of the program that are "far away" in the hierarchy can be relied on not to affect you.  Again, this is not the case in the first graph.  This is somewhat akin to the **Principal Of Locality**:
+
+> "Spatial locality refers to the use of data elements within relatively close storage locations." - [Locality Of Reference, _Wikipedia](https://en.wikipedia.org/wiki/Locality_of_reference)
+ 
  
 ## Cyclomatic Complexity
 
