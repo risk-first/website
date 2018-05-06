@@ -29,6 +29,15 @@ public class TestR1Primitives extends AbstractDisplayFunctionalTest {
 		transcodeSVG(xml);
 	}
 	
+	@Test
+	public void test_r1example2() throws Exception {
+		StringWriter out = new StringWriter();
+		Reader in = new FileReader(new File(getWorkingDirectory(),"r1example2.xml"));
+		RepositoryHelp.streamCopy(in, out, true);
+		String xml = out.toString();
+		transcodeSVG(xml);
+	}
+	
 	protected String getInputURI(File f) {
 		return getWorkingDirectory().toString()+"/r1example.xml";
 	}
