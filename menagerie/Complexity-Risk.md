@@ -215,13 +215,13 @@ It's not long before someone comes down with food poisoning.
 
 We wouldn't tolerate this behaviour in a restaurant kitchen, so why put up with it in a software project?
 
-## Feature Creep Risk
+## Feature Creep
 
 In Brooks' essay "No Silver Bullet – Essence and Accident in Software Engineering", a distinction is made between:
 
-> - **Essence**  _the difficulties inherent in the nature of the software._
+> - **Essence**:  _the difficulties inherent in the nature of the software._
 > - **Accident**: _those difficulties that attend its production but are not inherent._
->     [- Fred Brooks, _No Silver Bullet_](https://en.wikipedia.org/wiki/No_Silver_Bullet)
+>   -  [ Fred Brooks, _No Silver Bullet_](https://en.wikipedia.org/wiki/No_Silver_Bullet)
 
 The problem with this definition is that we are accepting features of our software as _essential_.  
 
