@@ -157,15 +157,15 @@ Once running, an algorithm or data structure will consume space or runtime depen
 
 The [Big O Cheatsheet](http://bigocheatsheet.com) is a wonderful resource to investigate this further.  
 
-## Complexity As Mass / Inertia
+## Complexity As Mass
 
-So, we've looked at some measures of software structure complexity, in order that we can say "this is more complex than this".  However, we've not really said why complexity entails [Risk](Risk).  So let's address that now by looking at two analogies, **Inertia** and **Technical Debt**.  
+So, we've looked at some measures of software structure complexity, in order that we can say "this is more complex than this".  However, we've not really said why complexity entails [Risk](Risk).  So let's address that now by looking at two analogies, [Mass](Complexity-as-mass) and [Technical Debt](Complexity-Risk#technical-debt).  
 
-The first way to look at complexity is as **Inertia** or **Mass**:  a software project with more complexity has greater **Inertia** or **Mass** than one with less complexity.
+The first way to look at complexity is as **Mass** or **Inertia** :  a software project with more complexity has greater **Inertia** or **Mass** than one with less complexity.
 
 Newton's Second Law states:
 
-> F = _m_**a**,    ( Force = Mass x Acceleration )
+> "F = _m_**a**,    ( Force = Mass x Acceleration )" - [Netwon's Laws Of Motion, _Wikipedia](https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion)
 
 That is, in order to move your project _somewhere new_, and make it do new things, you need to give it a push, and the more **Mass** it has, the more **Force** you'll need to move (accelerate) it.  
 
@@ -177,9 +177,9 @@ You could stop here and say that the more lines of code a project contains, the 
 
 But there is actually some underlying sense in which _this is real_, as discussed in this [Veritasium](https://www.youtube.com/user/1veritasium) video.  To paraphrase:
 
-> "Most of your mass you owe due to E=mc², you owe to the fact that your mass is packed with energy, because of the interactions between these quarks and gluon fluctuations in the gluon field... what we think of as ordinarily empty space... that turns out to be the thing that gives us most of our mass." - [Your Mass is NOT From the Higgs Boson, _Veritasium_](https://www.youtube.com/watch?annotation_id=annotation_3771848421&feature=iv&src_vid=Xo232kyTsO0&v=Ztc6QPNUqls)
+> "Most of your mass you owe due to E=mc², you owe to the fact that your mass is packed with energy, because of the **interactions** between these quarks and gluon fluctuations in the gluon field... what we think of as ordinarily empty space... that turns out to be the thing that gives us most of our mass." - [Your Mass is NOT From the Higgs Boson, _Veritasium_](https://www.youtube.com/watch?annotation_id=annotation_3771848421&feature=iv&src_vid=Xo232kyTsO0&v=Ztc6QPNUqls)
 
-I'm not an expert in physics, _at all_, and so there is every chance that I am pushing this analogy too hard.  But, substituting quarks and gluons for pieces of software we can (in a very handwaving-y way) say that more complex software has more _interactions_ going on, and therefore has more mass than simple software. 
+I'm not an expert in physics, _at all_, and so there is every chance that I am pushing this analogy too hard.  But, substituting quarks and gluons for pieces of software we can (in a very handwaving-y way) say that more complex software has more **interactions** going on, and therefore has more mass than simple software. 
 
 The reason I am labouring this analogy is to try and make the point that [Complexity Risk](Complexity-Risk) is really fundamental:
 
@@ -191,7 +191,7 @@ At a basic level, [Complexity Risk](Complexity-Risk) heavily impacts on [Schedul
 
 ## Technical Debt
 
-The most common way we talk about unnecessary complexity in software is as **Technical Debt**:
+The most common way we talk about unnecessary complexity in software is as [Technical Debt](Complexity-Risk#technical-debt):
 
 > "Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite... The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise." -- [Ward Cunningham, 1992](https://en.wikipedia.org/wiki/Technical_debt)
 
@@ -363,24 +363,6 @@ But, when should you use a library and when should you implement yourself?  This
 
 
 
-WE NEED TO TALK ABOUT ALTERNATIVES, AND COMBINATION EXPLOSION
-
-Let's say you have two ways to do X (x1,x2), and two ways to do Y (y1, y2).  But there are incompatbilities.  There are 6 ways to use the system, and it breaks down like this:
-
-|     |x1   |x2   |
-|-----|-----|-----|
-|y1   |1    |2, 3 |
-|y2   |4, 5 |6    |
-|-----|-----|-----|
-
-Both x1, and x2 are used 3 times each.  Both y1 and y2 are used 3 times each.
-
-
-What would our running software need to tell us for this to happen?
-
-Containment
-
-Organising at higher levels than object.
 
 Part of the problem might be that we don’t really have programming language abstractions that properly include containment.  
 
