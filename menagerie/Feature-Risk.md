@@ -17,7 +17,7 @@ As a simple example, if your needs are served perfectly by Microsoft Excel, then
 
 This is the one we've just discussed above: the feature that you (or your clients) want to use in the software _isn't there_.   Now, as usual, you could call this an issue, but we're calling it a [Risk](Risk) because it's not clear exactly _how many_ people are affected, or how badly. 
 
- - This might manifest itself as complete _absence_ of something you need, e.g "Where is the word count?"  
+ - This might manifest itself as complete _absence_ of something you need, e.g "Where is the word count?"
  - It could be that the implementation isn't complete enough, e.g "why can't I add really long numbers in this calculator?"
 
 ### Features Don't Work Properly
@@ -94,6 +94,7 @@ By being _fashionable_, websites are communicating:   _this is a new thing_, _th
 If this breakdown of [Feature Risk](Feature-Risk) seems reductive, then try not to think of it that way:  the aim _of course_ should be to delight users, and turn them into fans.  That's a laudable [Goal](Goal-In-Mind), but should be treated in the usual Risk-First way:  _pick the biggest risk you can mitigate next_.   
 
 Consider [Feature Risk](Feature-Risk) from both the down-side and the up-side:  
+
  - What are we missing?
  - How can we be _even better_?
 
