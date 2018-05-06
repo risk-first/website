@@ -257,16 +257,14 @@ This is because you surface new [Hidden Risk](Risk) along the way.  And the sour
 
 [Version Control Systems](https://en.wikipedia.org/wiki/Version_control) like [Git](https://en.wikipedia.org/wiki/Git) are a useful mitigation of [Dead-End Risk](Complexity-Risk#dead-end-risk), because it means you can _go back_ to the point where you made the bad decision and go a different way.  Additionally, they provide you with backups against the often inadvertent [Dead-End Risk](Complexity-Risk#dead-end-risk) of someone wiping the hard-disk.
 
-## The Re-Write
+### The Re-Write
 
-**Option 3**, Rewriting code or a whole project can seem like a way to mitigate [Complexity Risk](Complexity-Risk), but it usually doesn't work out too well.  As Joel Spolksky says:
+**Option 3**, Rewriting code or a whole project can seem like a way to mitigate [Complexity Risk](Complexity-Risk), but it usually doesn't work out too well.  As Joel Spolsky says:
 
 > There’s a subtle reason that programmers always want to throw away the code and start over. The reason is that they think the old code is a mess. And here is the interesting observation: they are probably wrong. The reason that they think the old code is a mess is because of a cardinal, fundamental law of programming:  
-> _It’s harder to read code than to write it._    - [Joel Spolsky](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)
+> _It’s harder to read code than to write it._    - [Things You Should Never Do, Part 1, _Joel Spolsky_](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)
 
-The problem that Joel is outlining here is that the developer mistakes [Communication Risk](Communication-Risk) for unnecessary [Complexity Risk](Complexity-Risk).  Also, perhaps there is [Agency Risk](Agency-Risk) because the developer is doing something that is more useful to him than the project.  
-
-But (generally speaking), [Dead-End Risk](Complexity-Risk#dead-end-risk) isn't caused by [Complexity Risk](Complexity-Risk), it's caused by [Conceptual Integrity Risk](Feature-Risk): if you've ended up in a dead-end because of [Complexity Risk](Complexity-Risk), the solution is much more likely to be to take **Option 2** and [Refactor out of it](Coding).
+The problem that Joel is outlining here is that the developer mistakes hard-to-understand code for unnecessary [Complexity Risk](Complexity-Risk).  Also, perhaps there is [Agency Risk](Agency-Risk) because the developer is doing something that is more useful to him than the project.    We're going to return to this problem in again [Communication Risk](Communication-Risk#reading-code).
 
 ## Where Complexity Hides
 
@@ -284,12 +282,9 @@ Memory Management is another place where [Complexity Risk](Complexity-Risk) hide
 
 > "Memory leaks are a common error in programming, especially when using languages that have no built in automatic garbage collection, such as C and C++." - [Memory Leak, _Wikipedia_](https://en.wikipedia.org/wiki/Memory_leak)
 
-Garbage Collectors (as found in Javascript or Java) offer you the deal that they will mitigate the [Complexity Risk](Complexity-Risk) of you having to manage your own memory, but in return perhaps give you fewer guarantees about the _performance_ of your software.  Again, there are times when you can't accommodate this [Performance Risk](Production-Risk), but these are rare and usually only affect a small portion of an entire software-system.  
- 
+[Garbage Collectors](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)) (as found in Javascript or Java) offer you the deal that they will mitigate the [Complexity Risk](Complexity-Risk) of you having to manage your own memory, but in return perhaps give you fewer guarantees about the _performance_ of your software.  Again, there are times when you can't accommodate this [Performance Risk](Production-Risk#performance-risk), but these are rare and usually only affect a small portion of an entire software-system.  
  
 ### Protocols And Types
-
-tbd - this is a [Boundary Risk](Boundary-Risk)  Although we discuss this hard in Communication Risk/Protocol Risk
 
 Whenever two components of a software system need to interact, they have to establish a protocol for doing so.  There are lots of different ways this can work, but the simplest example I can think of is where some component **a** calls some function **b**.  e.g: 
 
@@ -333,7 +328,7 @@ Now, of course, there is a tradeoff:  we _mitigate_ [Complexity Risk](Complexity
 
 Nevertheless, compilers and type-checking are so prevalent in software that clearly, you have to accept that in most cases, the trade-off has been worth it: Even languages like [Clojure](https://clojure.org) have been retro-fitted with [type checkers](https://github.com/clojure/core.typed/wiki/User-Guide).
 
-tbd.  languages are their own worlds
+We're going to head into much more detail on this in the section on [Protocol Risk](Communication-Risk#protocol-risk).
 
 ### Concurrency / Mutability
 
@@ -341,61 +336,18 @@ Although modern languages include plenty of concurrency primitives, (such as the
 
 [Race conditions](https://en.wikipedia.org/wiki/Race_condition) and [Deadlocks](https://en.wikipedia.org/wiki/Deadlock) _thrive_ in over-complicated concurrency designs:  complexity issues are magnified by concurrency concerns, and are also hard to test and debug.  
 
-Recently, languages such as [Clojure](https://clojure.org) have introduced [persistent collections](https://en.wikipedia.org/wiki/Persistent_data_structure) to circumvent concurrency issues.  The basic premise is that any time you want to _change_ the contents of a collection, you get given back a _new collection_.  So, any collection instance is immutable once created.   
+Recently, languages such as [Clojure](https://clojure.org) have introduced [persistent collections](https://en.wikipedia.org/wiki/Persistent_data_structure) to alleviate concurrency issues.  The basic premise is that any time you want to _change_ the contents of a collection, you get given back a _new collection_.  So, any collection instance is immutable once created.  The tradeoff is again attendant [Performance Risk](Production-Risk) to mitigate [Complexity Risk](Complexity-Risk).  
 
-The tradeoff is again attendant [Performance Risk](Production-Risk) to mitigate [Complexity Risk](Complexity-Risk).
+An important lesson here is that choice of language can reduce complexity: and we'll come back to this in [Software Dependency Risk](Software-Dependency-Risk).
  
 ### Networking / Security
 
-The last area I want to touch on here is networking.  There are plenty of [Complexity Risk](Complexity-Risk) perils in _anything_ to do with networked code, chief amongst them being error handling and (again) protocol evolution.  
+The last area I want to touch on here is networking.  There are plenty of [Complexity Risk](Complexity-Risk) perils in _anything_ to do with networked code, chief amongst them being error handling and (again) [protocol evolution](Communication-Risk#protocol-risk).  
 
 In the case of security considerations, exploits _thrive_ on the complexity of your code, and the weaknesses that occur because of it.  In particular, Schneier's Law says, never implement your own crypto scheme:
 
 > "Anyone, from the most clueless amateur to the best cryptographer, can create an algorithm that he himself can't break. It's not even hard. What is hard is creating an algorithm that no one else can break, even after years of analysis." - [Bruce Schneier, 1998](https://en.wikipedia.org/wiki/Bruce_Schneier#Cryptography) 
 
-Luckily, most good languages include crypto libraries that you can include to mitigate these **Complexity Risks** from your own code-base.  
+Luckily, most good languages include crypto libraries that you can include to mitigate these [Complexity Risks](Complexity-Risk) from your own code-base.  
 
-This is a strong argument for the use of libraries.  
-
-But, when should you use a library and when should you implement yourself?  This is the subject of [Dependency Risk](Dependency-Risk) which we will look at next.
-
-
-
-
-Part of the problem might be that we don’t really have programming language abstractions that properly include containment.  
-
-Does containment actually exist?  It makes sense to me to say that some software is running inside a JVM on a particular box.  And that the JVM process is contained on that box.  There seems to be a hierarchy of containment here, much like you’d get with geneos.  
-
-Principle Of Locality
-
-Networks and computers break locality. They allow anything to happen anywhere.  But, the human brain (and possibly the universe as a whole) are founded on this principle.  So, abstracting it away means that it becomes an unknowable quantity.  And, lack of observability might follow from this.
-
-Common Taxonomy
-
-This is something you see in the TOM:  the desire to end up with a single way of describing features.  Essentially, we really need a database that explains our software processes.  Building the model of the processes is basically building a database.  But, is there a fixed schema for this, or do you let people figure it out as they go?
-
-schema: could also refer to an XML schema, which obviously, is also a database format.  What happened to XML databases, anyway?
-
-What would this even mean?
-
-Programming languages fail us because they encourage us to build software that is unknowable.  Could we invent a language that fixes this problem?
-
-In the same way as we made Java a language without memory leaks, could we make a language for describing software in a way that makes it eminently knowable?
-
-So far, I have not come across anything that does this.  But that doesn’t mean it’s impossible - just that it hasn’t even been attempted before.
-
-
-What is complexity risk?   
-
- - Inertia
- - Technical Debt
- - Refactoring
- 
-Encapsulation:  why is it useful?  (it turns a problem of cc i*o into i+o)  also from a psychollogical perspective.   plus, city walls.
-
-
-
-Context Switching/Locality
-
-
-
+This is a strong argument for the use of libraries.  But, when should you use a library and when should you implement yourself?  This is again covered in [Software Dependency Risk](Software-Dependency-Risk).
