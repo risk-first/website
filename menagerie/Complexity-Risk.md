@@ -197,9 +197,9 @@ The most common way we talk about unnecessary complexity in software is as [Tech
 
 > "Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite... The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise." -- [Ward Cunningham, 1992](https://en.wikipedia.org/wiki/Technical_debt)
 
-Building a perfectly-architected first-time solution is a waste, because you're going to take longer to mitigate the [Conceptual Integrity Risk](Feature-Risk) than you would if you put together a quick-and-dirty, complex first pass.  You're taking on more attendant [Schedule Risk](Schedule-Risk) than necessary and [Meeting Reality](Meeting-Reality) more slowly than you could.
+Building a perfect first-time solution is a waste, because perfection takes a long time:  You're taking on more attendant [Schedule Risk](Schedule-Risk) than necessary and [Meeting Reality](Meeting-Reality) more slowly than you could.
 
-Building a first-time, quick-and-dirty, over-complex implementation mitigates the same [Conceptual Integrity Risk](Feature-Risk) and allows you to put things in front of users to [Meet Reality](Meeting-Reality) as fast as possible (see [Prototyping](Coding)).  
+A quick-and-dirty, over-complex implementation mitigates the same [Feature Risk](Feature-Risk) and allows you to put things in front of users to [Meet Reality](Meeting-Reality) as fast as possible (see [Prototyping](Coding)).  
 
 But, having mitigated that risk, though, you are now carrying more [Complexity Risk](Complexity-Risk) than you necessarily need, and it's time to think about how to [Refactor](Coding) the software to reduce this risk again.
 
