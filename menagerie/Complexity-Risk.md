@@ -235,6 +235,8 @@ Sometimes, feature-creep happens because either managers feel they need to keep 
 
 ## Dead-End Risk
 
+![Dead-End Risk](images/generated/dead-end-risk.png)
+
 **Dead-End Risk** is where you build functionality that you _think_ is useful, only to find out later that actually, it was 
 a dead-end, and is superceded by something else.
 
