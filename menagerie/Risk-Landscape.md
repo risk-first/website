@@ -55,19 +55,20 @@ None of the risk categories we're going to look at fit _exactly_ into these area
 
 tbd
 
-|Risk                                                |          Areas           |Description     |
-|----------------------------------------------------|--------------------------|----------------|
-|[Feature Risk](Feature-Risk)                        |Customer, Product         |tbd|  
-|[Schedule Risk](Schedule-Risk)                      |Product, Staff            ||    
-|[Complexity Risk](Complexity-Risk)                  |Product, Staff            ||        
-|[Communication Risk](Communication-Risk)            |Customer, Product, Staff  | |             
-|[Coordination Risk](Coordination-Risk)              |Staff                     ||       
-|[Dependency Risk](Dependency-Risk)                  |Product, Customer, Staff  ||  
-|[Process Risk](Process-Risk)                        |Staff                     ||
-|[Boundary Risk](Boundary-Risk)                      |Product                   | |            
-|[Production Risk](Production-Risk)                  |Customer, Product         |  |
-|[Map And Territory Risk](Map-And-Territory-Risk)    |Staff                     | |  
-|[Agency Risk](Agency-Risk)                          |Staff                     |  |
+|Risk                                                |          Areas           |
+|----------------------------------------------------|--------------------------|
+|[Feature Risk](Feature-Risk)                        |Customer, Product         |
+|[Complexity Risk](Complexity-Risk)                  |Product, Staff            |        
+|[Communication Risk](Communication-Risk)            |Customer, Product, Staff  |             
+|[Coordination Risk](Coordination-Risk)              |Staff                     |       
+|[Dependency Risk](Dependency-Risk)                  |Product, Customer, Staff  |  
+|[Software Dependency Risk](Software-Dependency-Risk)|Product, Staff            |    
+|[Process Risk](Process-Risk)                        |Staff                     |
+|[Schedule Risk](Schedule-Risk)                      |Product, Staff            |    
+|[Boundary Risk](Boundary-Risk)                      |Product                   |            
+|[Production Risk](Production-Risk)                  |Customer, Product         |
+|[Map And Territory Risk](Map-And-Territory-Risk)    |Staff                     |  
+|[Agency Risk](Agency-Risk)                          |Staff                     |
        
 On each page we'll start by looking at the category of the risk _in general_, and then break this down into some specific subtypes.                                                          
 

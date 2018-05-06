@@ -97,6 +97,6 @@ Consider [Feature Risk](Feature-Risk) from both the down-side and the up-side:
  - What are we missing?
  - How can we be _even better_?
 
-Hopefully, this has given you some ideas about what [Feature Risk](Feature-Risk) involves.   Hopefully, you might be able to identify a few more specific varieties.  But, it's time to move on and look at how time affects our projects, in [Schedule Risk](Schedule-Risk).
+Hopefully, this has given you some ideas about what [Feature Risk](Feature-Risk) involves.   Hopefully, you might be able to identify a few more specific varieties.  But, it's time to move on and look in more detail at [Complexity Risk](Complexity-Risk) and how it affects what we build.
  
  
