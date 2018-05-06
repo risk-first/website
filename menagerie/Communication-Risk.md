@@ -263,6 +263,7 @@ A second aspect of [Protocol Risk](Communication-Risk#protocol-risk) exists in h
 
 Although Shannon's Communication Theory is about transmitting **Messages**, messages are really encoded **Ideas** and **Concepts**, from an **Internal Model**.
 
+![Message Risk](images/generated/message-risk.png)
 ![Internal Model Assumption Risk](images/generated/model-assumption-risk.png)
 ![Message Dependency Risk](images/generated/message-dependency-risk.png)
 
@@ -340,6 +341,8 @@ The debt of [Invisibility Risk](Communication-Risk#invisibility-risk) comes due 
 ## Internal Models
 
 So finally, we are coming to the root of the problem:  communication is about transferring ideas and concepts from one [Internal Model](Internal-Model) to another. 
+
+![Internal Model Risk](images/generated/internal-model-risk.png)
 
 The communication process so far has been fraught with risks, but we have a few more to come.
 
