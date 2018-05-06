@@ -3,24 +3,6 @@
 
 You could think of this section, then, as **Codebase Risk**:  We'll look, three separate measures of codebase complexity and talk about **Technical Debt**, and look at places in which **Codebase Risk** is at it's greatest.
 
-
-What is complexity risk?   
-
- - Inertia
- - Technical Debt
- - Refactoring
- 
-Encapsulation:  why is it useful?  (it turns a problem of cc i*o into i+o)  also from a psychollogical perspective.   plus, city walls.
-
-
-
-Context Switching/Locality
-
-
-
-
-
-
 ## Kolmogorov Complexity
 
 The standard Computer-Science definition of complexity, is [Kolmogorov Complexity](https://en.wikipedia.org/wiki/Kolmogorov_complexity).  This is:
@@ -93,7 +75,7 @@ It has 10 vertices, labelled **a** to **j**, and it has 15 edges (or links) conn
 
 As a slight aside, let's consider the Kolmogorov Complexity of this graph, by inventing a mini-language to describe graphs.  It could look something like this:
 
-```
+```javascript
 <item> : [<item>,]* <item>    # Indicates that the item before the colon 
                               # has a connection to all the items after the colon.
                               
@@ -106,6 +88,8 @@ f: h
 g: j
 h: i
 i: j                                                         (39 symbols)
+
+
 
 Let's remove some of those extra links:
 
@@ -418,6 +402,19 @@ Programming languages fail us because they encourage us to build software that i
 In the same way as we made Java a language without memory leaks, could we make a language for describing software in a way that makes it eminently knowable?
 
 So far, I have not come across anything that does this.  But that doesn’t mean it’s impossible - just that it hasn’t even been attempted before.
+
+
+What is complexity risk?   
+
+ - Inertia
+ - Technical Debt
+ - Refactoring
+ 
+Encapsulation:  why is it useful?  (it turns a problem of cc i*o into i+o)  also from a psychollogical perspective.   plus, city walls.
+
+
+
+Context Switching/Locality
 
 
 
