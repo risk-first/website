@@ -60,9 +60,9 @@ Sometimes, users _swear blind_ that they need some feature or other, but it runs
 
 Sometimes, it can go for a lot longer.  I once worked on some software that was built as a score-board within a chat application.  However, after we'd added much-asked-for commenting and reply features to our score-board, we realised we'd implemented a chat application _within a chat application_, and had wasted our time enormously.  
 
-Which leads to [Greenspun's 10th Rule][1]:
+Which leads to Greenspun's 10th Rule:
 
-> Any sufficiently complicated C or Fortran program contains an ad-hoc, informally-specified, bug-ridden, slow implementation of half of Common Lisp.
+> "Any sufficiently complicated C or Fortran program contains an ad-hoc, informally-specified, bug-ridden, slow implementation of half of Common Lisp." - [Greenspun's 10th Rule, _Wikipedia_](https://en.wikipedia.org/wiki/Greenspun's_tenth_rule)
 
 This is a particularly pernicious kind of [Feature Risk](Feature-Risk) which can only be mitigated by good [Design](Design).  Human needs are fractal in nature: the more you examine them, the more differences you can find.  The aim of a product is to capture some needs at a *general* level:  you can't hope to "please all of the people all of the time".  
 
@@ -77,6 +77,8 @@ Sometimes, features can work for some people and not others:  this could be down
 You could argue that the choice of _platform_ is also going to limit access:  writing code for XBox-only leaves PlayStation owners out in the cold.   This is _largely_ [Feature Access Risk](Feature-Risk#feature-access-risk), though [Dependency Risk](Dependency-Risk) is related here.
 
 ### Feature Drift Risk
+
+![Feature Drift Risk](images/generated/feature-drift-risk.png)
 
 **Feature Drift** is the tendency that the features people need _change over time_.   For example, at one point in time, supporting IE6 was right up there for website developers, but it's not really relevant anymore.  Although that change took _many_ years to materialize, other changes are more rapid.    
 
@@ -102,4 +104,3 @@ Consider [Feature Risk](Feature-Risk) from both the down-side and the up-side:
 Hopefully, this has given you some ideas about what [Feature Risk](Feature-Risk) involves.   Hopefully, you might be able to identify a few more specific varieties.  But, it's time to move on and look at how time affects our projects, in [Schedule Risk](Schedule-Risk).
  
  
-[1]: https://en.wikipedia.org/wiki/Greenspun's_tenth_rule  "Greenspun's 10th Rule"
