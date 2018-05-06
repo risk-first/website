@@ -197,15 +197,15 @@ The most common way we talk about unnecessary complexity in software is as [Tech
 
 > "Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite... The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise." -- [Ward Cunningham, 1992](https://en.wikipedia.org/wiki/Technical_debt)
 
-Building a perfect first-time solution is a waste, because perfection takes a long time:  You're taking on more attendant [Schedule Risk](Schedule-Risk) than necessary and [Meeting Reality](Meeting-Reality) more slowly than you could.
+Building a perfect first-time solution is a waste, because perfection takes a long time.  You're taking on more attendant [Schedule Risk](Schedule-Risk) than necessary and [Meeting Reality](Meeting-Reality) more slowly than you could.
 
-A quick-and-dirty, over-complex implementation mitigates the same [Feature Risk](Feature-Risk) and allows you to put things in front of users to [Meet Reality](Meeting-Reality) as fast as possible (see [Prototyping](Coding)).  
+A quick-and-dirty, over-complex implementation mitigates the same [Feature Risk](Feature-Risk) and allows you to [Meet Reality](Meeting-Reality) faster (see [Prototyping](Coding)).  
 
-But, having mitigated that risk, though, you are now carrying more [Complexity Risk](Complexity-Risk) than you necessarily need, and it's time to think about how to [Refactor](Coding) the software to reduce this risk again.
+But, having mitigated the [Feature Risk](Feature-Risk), you are now carrying more [Complexity Risk](Complexity-Risk) than you necessarily need, and it's time to think about how to [Refactor](Coding) the software to reduce this risk again.
 
 ## Kitchen Analogy
 
-It’s often hard to make the case for minimising [Technical Debt](Complexity-Risk#technical-debt): it often feels that there are more important priorities, especially when technical debt can be “swept under the carpet” and forgotten about until later.  
+It’s often hard to make the case for minimizing [Technical Debt](Complexity-Risk#technical-debt): it often feels that there are more important priorities, especially when technical debt can be “swept under the carpet” and forgotten about until later.  (See [Discounting The Future](Risk-Theory#discounting-the-future-to-zero).)
 
 One helpful analogy I have found is to suggest your code-base is a kitchen.   After preparing a meal (i.e. delivering the first implementation), _you need to tidy up the kitchen_.  This is just something everyone does as a matter of _basic sanitation_.
 
