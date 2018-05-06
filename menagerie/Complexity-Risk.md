@@ -350,4 +350,8 @@ In the case of security considerations, exploits _thrive_ on the complexity of y
 
 Luckily, most good languages include crypto libraries that you can include to mitigate these [Complexity Risks](Complexity-Risk) from your own code-base.  
 
-This is a strong argument for the use of libraries.  But, when should you use a library and when should you implement yourself?  This is again covered in [Software Dependency Risk](Software-Dependency-Risk).
+This is a strong argument for the use of libraries.  But, when should you use a library and when should you implement yourself?  This is again covered in the section on [Software Dependency Risk](Software-Dependency-Risk).  
+
+But next, we are going to look at [Communication Risk](Communication-Risk).
+
+

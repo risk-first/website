@@ -66,9 +66,9 @@ tbd
 |[Process Risk](Process-Risk)                        |Staff                     |
 |[Schedule Risk](Schedule-Risk)                      |Product, Staff            |    
 |[Boundary Risk](Boundary-Risk)                      |Product                   |            
+|[Agency Risk](Agency-Risk)                          |Staff                     |
 |[Production Risk](Production-Risk)                  |Customer, Product         |
 |[Map And Territory Risk](Map-And-Territory-Risk)    |Staff                     |  
-|[Agency Risk](Agency-Risk)                          |Staff                     |
        
 On each page we'll start by looking at the category of the risk _in general_, and then break this down into some specific subtypes.                                                          
 
