@@ -16,8 +16,6 @@ reputation damage
 
 
 
-
-
  - You don't know all the ways the software will get used in production.
  - Different browsers, versions of code, accessiblilty.
 
@@ -45,7 +43,7 @@ Production Risk
         - Contingency Planning 
         - Disaster Recovery
         - Datacentres (Aws etc)
-        - Performance Degradation / Runaway processes
+        - Performance Degradation / Runaway processes  (Performance Risk)
         - Monitoring Tools and Logs
     - Reputational Risk:
       - Support (trade off - promptness vs ability)
