@@ -3,7 +3,7 @@
 
 ![Complexity Risks](images/generated/all-complexity-risk.png)
 
-You could think of this section, then, as **Codebase Risk**:  We'll look at three separate measures of codebase complexity and talk about **Technical Debt**, and look at places in which **Codebase Risk** is at it's greatest.
+You could think of this section, then, as **Codebase Risk**:  We'll look at three separate measures of codebase complexity and talk about [Technical Debt](Complexity-Risk#technical-debt), and look at places in which **Codebase Risk** is at it's greatest.
 
 ## Kolmogorov Complexity
 
@@ -205,7 +205,7 @@ But, having mitigated that risk, though, you are now carrying more [Complexity R
 
 ## Kitchen Analogy
 
-It’s often hard to make the case for minimising technical debt: it often feels that there are more important priorities, especially when technical debt can be “swept under the carpet” and forgotten about until later.  
+It’s often hard to make the case for minimising [Technical Debt](Complexity-Risk#technical-debt): it often feels that there are more important priorities, especially when technical debt can be “swept under the carpet” and forgotten about until later.  
 
 One helpful analogy I have found is to suggest your code-base is a kitchen.   After preparing a meal (i.e. delivering the first implementation), _you need to tidy up the kitchen_.  This is just something everyone does as a matter of _basic sanitation_.
 
