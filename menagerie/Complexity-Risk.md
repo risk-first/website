@@ -237,7 +237,7 @@ Sometimes, feature-creep happens because either managers feel they need to keep 
 
 ![Dead-End Risk](images/generated/dead-end-risk.png)
 
-**Dead-End Risk** is where you build functionality that you _think_ is useful, only to find out later that actually, it was 
+[Dead-End Risk](Complexity-Risk#dead-end-risk) is where you build functionality that you _think_ is useful, only to find out later that actually, it was 
 a dead-end, and is superceded by something else.
 
 For example, let's say that the Accounting sub-system needed password access (so you built this).  Then the team realised that you needed a way to _change the password_ (so you built that).   Then, that you needed to have more than one user of the Accounting system so they would all need passwords (ok, fine).  
@@ -253,15 +253,9 @@ Sometimes, the path from your starting point to your goal on the [Risk Landscape
 
 This is because you surface new [Hidden Risk](Risk) along the way.  And the source of a lot of this hidden risk will be unexpected [Complexity Risk](Complexity-Risk) in the solutions you choose.  This happens a lot. 
 
-tbd.  split this out into a section.  there's so much more here.
+### Source Control
 
-source control mitigates dead end risk a bit, becuase you can go back and chnage things.  mistakes are dead end risk.
-backups etc.  help with this.
-
-Is it a known unknown?  You know you might be going the wrong way.
-
-Muneer building the extractor, using ASP.net.. turned out we don't deploy .net/ASP only Java
-
+[Version Control Systems](https://en.wikipedia.org/wiki/Version_control) like [Git](https://en.wikipedia.org/wiki/Git) are a useful mitigation of [Dead-End Risk](Complexity-Risk#dead-end-risk), because it means you can _go back_ to the point where you made the bad decision and go a different way.  Additionally, they provide you with backups against the often inadvertent [Dead-End Risk](Complexity-Risk#dead-end-risk) of someone wiping the hard-disk.
 
 ## The Re-Write
 
@@ -272,7 +266,7 @@ Muneer building the extractor, using ASP.net.. turned out we don't deploy .net/A
 
 The problem that Joel is outlining here is that the developer mistakes [Communication Risk](Communication-Risk) for unnecessary [Complexity Risk](Complexity-Risk).  Also, perhaps there is [Agency Risk](Agency-Risk) because the developer is doing something that is more useful to him than the project.  
 
-But (generally speaking), **Dead-End Risk** isn't caused by [Complexity Risk](Complexity-Risk), it's caused by [Conceptual Integrity Risk](Feature-Risk): if you've ended up in a dead-end because of [Complexity Risk](Complexity-Risk), the solution is much more likely to be to take **Option 2** and [Refactor out of it](Coding).
+But (generally speaking), [Dead-End Risk](Complexity-Risk#dead-end-risk) isn't caused by [Complexity Risk](Complexity-Risk), it's caused by [Conceptual Integrity Risk](Feature-Risk): if you've ended up in a dead-end because of [Complexity Risk](Complexity-Risk), the solution is much more likely to be to take **Option 2** and [Refactor out of it](Coding).
 
 ## Where Complexity Hides
 
