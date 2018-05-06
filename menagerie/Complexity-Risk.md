@@ -1,7 +1,7 @@
 
 [Complexity Risk](Complexity-Risk) are the risks to your project due to its underlying "complexity".  Over the next few sections, we'll break down exactly what we mean by complexity, looking at [Dependency Risk](Dependency-Risk) and [Boundary Risk](Boundary-Risk) as two particular sub-types of [Complexity Risk](Complexity-Risk).  However, in this section, we're going to be specifically focusing on _code you write_: the size of your code-base, the number of modules, the interconnectedness of the modules and how well-factored the code is.  
 
-You could think of this section, then, as **Codebase Risk**:  We'll look, three separate measures of codebase complexity and talk about **Technical Debt**, and look at places in which **Codebase Risk** is at it's greatest.
+You could think of this section, then, as **Codebase Risk**:  We'll look at three separate measures of codebase complexity and talk about **Technical Debt**, and look at places in which **Codebase Risk** is at it's greatest.
 
 ## Kolmogorov Complexity
 
@@ -102,11 +102,13 @@ The second graph is clearly simpler than the first.  And, we can show this by lo
 a: d,g
 b: f
 c: d,f
+d: j
+f: h
 e: h
-i: h                                                         (19 symbols)
+h: i                                                         (25 symbols)
 ```
 
-**Connectivity** is also **Complexity**.  Heavily connected programs/graphs are much harder to work with than less-connected ones.  Even _laying out_ the first graph sensibly is a harder task than the second (the second is a doddle).  
+**Connectivity** is also **Complexity**.  Heavily connected programs/graphs are much harder to work with than less-connected ones.  Even _laying out_ the first graph sensibly is a harder task than the second (the second is a doddle).  But the reason programs with greater connectivity are harder to work with is that changing one module potentially impacts many others.
 
 ## Hierarchies and Modularization
 
@@ -122,22 +124,20 @@ How does this help us?   Imagine if **a** - **j** were modules of a software sys
 
 On the downside, perhaps our messages have farther to go now:  in the original **i** could send a message straight to **j**, but now we have to go all the way via **c**.   But this is the basis of [Modularization](https://en.wikipedia.org/wiki/Modular_programming) and [Hierarchy](https://en.wikipedia.org/wiki/Hierarchy).
 
-As a tool to battle complexity, we don't just see this in software, but everywhere in our lives and in nature too:  
+As a tool to battle complexity, we don't just see this in software, but everywhere in our lives.  Society, business, nature and even our bodies:
+  
  - **Organelles** - such as [Mitochondria](https://en.wikipedia.org/wiki/Mitochondrion).
  - **Cells** - such as blood cells, nerve cells, skin cells in the [Human Body](https://en.wikipedia.org/wiki/List_of_distinct_cell_types_in_the_adult_human_body).
  - **Organs** - like hearts livers, brains etc.
  - **Organisms** - like you and me.
  
-The great complexity-reducing mechanism of modularization is that _you only have to consider your local environment_.  Elements of the program that are "far away" in the hierarchy can be relied on not to affect you.  Again, this is not the case in the first graph.  This is somewhat akin to the **Principal Of Locality**:
+The great complexity-reducing mechanism of modularization is that _you only have to consider your local environment_.  Elements of the program that are "far away" in the hierarchy can be relied on not to affect you.  This is somewhat akin to the **Principal Of Locality**:
 
 > "Spatial locality refers to the use of data elements within relatively close storage locations." - [Locality Of Reference, _Wikipedia](https://en.wikipedia.org/wiki/Locality_of_reference)
  
- 
 ## Cyclomatic Complexity
 
-It would be nice to be able to measure, somehow, the complexity of our graphs in order to say how much simpler our second graph is.  
-
-In Computer Science, we can measure this property as [Cyclomatic Complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity).  This is:
+A variation on this graph connectivity metric is our third measure of complexity, [Cyclomatic Complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity).  This is:
 
 ```
 Cyclomatic Complexity = edges − vertices + 2P,
@@ -147,26 +147,15 @@ Where **P** is the number of **Connected Components** (i.e. distinct parts of th
 
 So, our first graph had a **Cyclomatic Complexity** of 7. `(15 - 10 + 2)`, while our second was 1. `(9 - 10 + 2)`.
 
+Cyclomatic complexity is all about the number of different routes through the program.   The more branches a program has, the greater it's cyclomatic complexity.  Hence, this is a useful metric in [Testing](Testing) and [Code Coverage](Testing#code-coverage): the more branches you have, the more tests you'll need to exercise them all. 
 
 ## Space and Time Complexity
 
-So far, we've looked at a couple of definitions of complexity in terms of the _structure_ of software.  However, in Computer Science there is a whole branch of complexity theory devoted to how the software _runs_, namely [Big O Complexity](https://en.wikipedia.org/wiki/Big_O_notation).  
+So far, we've looked at a couple of definitions of complexity in terms of the codebase itself.  However, in Computer Science there is a whole branch of complexity theory devoted to how the software _runs_, namely [Big O Complexity](https://en.wikipedia.org/wiki/Big_O_notation).  
 
-Once running, an algorithm or data structure will consume space or runtime dependent on it's characteristics.  As with Garbage Collectors, these characteristics can introduce [Performance Risk](Production-Risk) which can easily catch out the unwary.  By and large, using off-the-shelf components helps, but you still need to know their performance characteristics. 
+Once running, an algorithm or data structure will consume space or runtime dependent on it's characteristics.  As with [Garbage Collectors](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)), these characteristics can introduce [Performance Risk](Production-Risk) which can easily catch out the unwary.  By and large, using off-the-shelf data structures and algorithms helps, but you still need to know their performance characteristics. 
 
 The [Big O Cheatsheet](http://bigocheatsheet.com) is a wonderful resource to investigate this further.  
-
-A third measure of complexity.  ( Start calling these out).
-
-Depth-first search complexity with N and E.
-
-## Abstraction
-
-Although we ended up with our second graph having a **Cyclomatic Complexity** of 1 (the minimum), we can go further through abstraction, because this representation isn't minimal from a **Kolmogorov Complexity** point-of-view.  For example, we might observe that there are further similarities in the graph that we can "draw out":
-
-![Complexity 3](images/connectivity_3.png)
-
-Here, we've spotted that the structure of subgraphs **P1** and **P2** are the same:  we can have the same functions there to assemble those.  Noticing and exploiting patterns of repetition is one of the fundamental tools we have in the fight against complexity, and our programming languages support this through [Abstraction](https://en.wikipedia.org/wiki/Abstraction_(software_engineering)).
 
 ## Complexity As Mass / Inertia
 
@@ -186,17 +175,13 @@ That is, in order to move your project _somewhere new_, and make it do new thing
 
 You could stop here and say that the more lines of code a project contains, the higher it's mass.  And, that makes sense, because in order to get it to do something new, you're likely to need to change more lines.  
 
-But there is actually some underlying sense in which _this is real_, as discussed in this [Veritasium](https://www.youtube.com/user/1veritasium) video:
+But there is actually some underlying sense in which _this is real_, as discussed in this [Veritasium](https://www.youtube.com/user/1veritasium) video.  To paraphrase:
 
-[![E=Mc2](images/e_mc2.png)](https://www.youtube.com/watch?annotation_id=annotation_3771848421&feature=iv&src_vid=Xo232kyTsO0&v=Ztc6QPNUqls)
-
-To paraphrase:
-
-> "Most of your mass you owe due to E=mc², you owe to the fact that your mass is packed with energy, because of the interactions between these quarks and gluon fluctuations in the gluon field... what we think of as ordinarily empty space... that turns out to be the thing that gives us most of our mass." - [Veritasium](https://www.youtube.com/watch?annotation_id=annotation_3771848421&feature=iv&src_vid=Xo232kyTsO0&v=Ztc6QPNUqls)
+> "Most of your mass you owe due to E=mc², you owe to the fact that your mass is packed with energy, because of the interactions between these quarks and gluon fluctuations in the gluon field... what we think of as ordinarily empty space... that turns out to be the thing that gives us most of our mass." - [Your Mass is NOT From the Higgs Boson, _Veritasium_](https://www.youtube.com/watch?annotation_id=annotation_3771848421&feature=iv&src_vid=Xo232kyTsO0&v=Ztc6QPNUqls)
 
 I'm not an expert in physics, _at all_, and so there is every chance that I am pushing this analogy too hard.  But, substituting quarks and gluons for pieces of software we can (in a very handwaving-y way) say that more complex software has more _interactions_ going on, and therefore has more mass than simple software. 
 
-The reason I am labouring this analogy is to try and make the point that [Complexity Risk](Complexity-Risk) is really as fundamental as [Feature Risk](Feature-Risk) or [Schedule Risk](Schedule-Risk):
+The reason I am labouring this analogy is to try and make the point that [Complexity Risk](Complexity-Risk) is really fundamental:
 
  - [Feature Risk](Feature-Risk):  like **money**.
  - [Schedule Risk](Schedule-Risk): like **time**.
