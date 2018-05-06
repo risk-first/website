@@ -1,5 +1,5 @@
 
-**Complexity Risk** are the risks to your project due to its underlying complexity.  In the next few sections, we'll break this idea down, looking at [Dependency Risk](Dependency-Risk) and [Boundary Risk](Boundary-Risk) as two particular sub-types of **Complexity Risk**.  However, here, we're going to be specifically focusing on _code you write_: the size of your code-base, the number of modules, the interconnectedness of the modules and how well-factored the code is.  
+[Complexity Risk](Complexity-Risk) are the risks to your project due to its underlying "complexity".  In the next few sections, we'll break down exactly what we mean by complexity, looking at [Dependency Risk](Dependency-Risk) and [Boundary Risk](Boundary-Risk) as two particular sub-types of [Complexity Risk](Complexity-Risk).  However, here, we're going to be specifically focusing on _code you write_: the size of your code-base, the number of modules, the interconnectedness of the modules and how well-factored the code is.  
 
 You could think of this as **Codebase Risk**, and we'll look, three separate measures of complexity and talk about **Technical Debt**, and look at places in which **Codebase Risk** is at it's greatest.
 
@@ -85,7 +85,7 @@ for(i=0;i<100;)document.write(((++i%3?'':'Fizz')+
 (i%5?'':'Buzz')||i)+"<br>")                                  (66 symbols)
 ```
 
-So there is at some point a trade-off to be made between **Complexity Risk** and [Communication Risk](Communication-Risk).  This is a topic we'll address more in that section.   But for now, it should be said that [Communication Risk](Communication-Risk) is about _understanding_:  The more complex a piece of software is, the more difficulty users will have understanding it, and the more difficulty developers will have changing it.  
+So there is at some point a trade-off to be made between [Complexity Risk](Complexity-Risk) and [Communication Risk](Communication-Risk).  This is a topic we'll address more in that section.   But for now, it should be said that [Communication Risk](Communication-Risk) is about _understanding_:  The more complex a piece of software is, the more difficulty users will have understanding it, and the more difficulty developers will have changing it.  
 
 ## Connectivity
 
@@ -191,13 +191,13 @@ To paraphrase:
 
 I'm not an expert in physics, _at all_, and so there is every chance that I am pushing this analogy too hard.  But, substituting quarks and gluons for pieces of software we can (in a very handwaving-y way) say that more complex software has more _interactions_ going on, and therefore has more mass than simple software. 
 
-The reason I am labouring this analogy is to try and make the point that **Complexity Risk** is really as fundamental as [Feature Risk](Feature-Risk) or [Schedule Risk](Schedule-Risk):
+The reason I am labouring this analogy is to try and make the point that [Complexity Risk](Complexity-Risk) is really as fundamental as [Feature Risk](Feature-Risk) or [Schedule Risk](Schedule-Risk):
 
  - [Feature Risk](Feature-Risk):  like **money**.
  - [Schedule Risk](Schedule-Risk): like **time**.
  - [Complexity Risk](Complexity-Risk): like **mass**.
  
-At a basic level, **Complexity Risk** heavily impacts on [Schedule Risk](Schedule-Risk):  more complexity means you need more force to get things done, which takes longer.
+At a basic level, [Complexity Risk](Complexity-Risk) heavily impacts on [Schedule Risk](Schedule-Risk):  more complexity means you need more force to get things done, which takes longer.
 
 ## Technical Debt
 
@@ -209,7 +209,7 @@ Building a perfectly-architected first-time solution is a waste, because you're 
 
 Building a first-time, quick-and-dirty, over-complex implementation mitigates the same [Conceptual Integrity Risk](Feature-Risk) and allows you to put things in front of users to [Meet Reality](Meeting-Reality) as fast as possible (see [Prototyping](Coding)).  
 
-But, having mitigated that risk, though, you are now carrying more **Complexity Risk** than you necessarily need, and it's time to think about how to [Refactor](Coding) the software to reduce this risk again.
+But, having mitigated that risk, though, you are now carrying more [Complexity Risk](Complexity-Risk) than you necessarily need, and it's time to think about how to [Refactor](Coding) the software to reduce this risk again.
 
 ## Kitchen Analogy
 
@@ -233,9 +233,9 @@ In Brooks' essay "No Silver Bullet – Essence and Accident in Software Engineer
 
 The problem with this definition is that we are accepting features of our software as _essential_.  
 
-The **Risk-First** approach is that if you want to mitigate some [Feature Risk](Feature-Risk) then you have to pick up **Complexity Risk** as a result.  But, that's a _choice you get to make_.  
+The **Risk-First** approach is that if you want to mitigate some [Feature Risk](Feature-Risk) then you have to pick up [Complexity Risk](Complexity-Risk) as a result.  But, that's a _choice you get to make_.  
 
-Therefore, [Feature Creep](https://en.wikipedia.org/wiki/Feature_creep) (or [Gold Plating](https://en.wikipedia.org/wiki/Gold_plating_(software_engineering))) is a failure to observe this basic equation:  instead of considering this trade off, you're building every feature possible.  This has an impact on **Complexity Risk**, which in turn impacts [Communication Risk](Communication-Risk) and also [Schedule Risk](Schedule-Risk).
+Therefore, [Feature Creep](https://en.wikipedia.org/wiki/Feature_creep) (or [Gold Plating](https://en.wikipedia.org/wiki/Gold_plating_(software_engineering))) is a failure to observe this basic equation:  instead of considering this trade off, you're building every feature possible.  This has an impact on [Complexity Risk](Complexity-Risk), which in turn impacts [Communication Risk](Communication-Risk) and also [Schedule Risk](Schedule-Risk).
 
 Sometimes, feature-creep happens because either managers feel they need to keep their staff busy, or the staff decide on their own that they need to [keep themselves busy](Agency-Risk).  But now, we can see that basically this boils down to bad risk management.  
 
@@ -251,13 +251,13 @@ For example, let's say that the Accounting sub-system needed password access (so
 Finally, the team realises that actually logging-in would be something that all the sub-systems would need, and that it had already been implemented more thoroughly by the Approvals sub-system.   
 
 At this point, you realise you're in a **Dead End**:  
- - **Option 1**: You carry on making minor incremental improvements to the accounting password system (carrying the extra **Complexity Risk** of the duplicated functionality).
- - **Option 2**: You rip out the accounting password system, and merge in the Approvals system, surfacing new, hidden **Complexity Risk** in the process, due to the difficulty in migrating users from the old to new way of working.
- - **Option 3**: You start again, trying to take into account both sets of requirements at the same time, again, possibly surfacing new hidden **Complexity Risk** due to the combined approach.
+ - **Option 1**: You carry on making minor incremental improvements to the accounting password system (carrying the extra [Complexity Risk](Complexity-Risk) of the duplicated functionality).
+ - **Option 2**: You rip out the accounting password system, and merge in the Approvals system, surfacing new, hidden [Complexity Risk](Complexity-Risk) in the process, due to the difficulty in migrating users from the old to new way of working.
+ - **Option 3**: You start again, trying to take into account both sets of requirements at the same time, again, possibly surfacing new hidden [Complexity Risk](Complexity-Risk) due to the combined approach.
  
 Sometimes, the path from your starting point to your goal on the [Risk Landscape](Risk-Landscape) will take you to dead ends:  places where the only way towards your destination is to lose something, and do it again another way.  
 
-This is because you surface new [Hidden Risk](Risk) along the way.  And the source of a lot of this hidden risk will be unexpected **Complexity Risk** in the solutions you choose.  This happens a lot. 
+This is because you surface new [Hidden Risk](Risk) along the way.  And the source of a lot of this hidden risk will be unexpected [Complexity Risk](Complexity-Risk) in the solutions you choose.  This happens a lot. 
 
 tbd.  split this out into a section.  there's so much more here.
 
@@ -271,14 +271,14 @@ Muneer building the extractor, using ASP.net.. turned out we don't deploy .net/A
 
 ## The Re-Write
 
-**Option 3**, Rewriting code or a whole project can seem like a way to mitigate **Complexity Risk**, but it usually doesn't work out too well.  As Joel Spolksky says:
+**Option 3**, Rewriting code or a whole project can seem like a way to mitigate [Complexity Risk](Complexity-Risk), but it usually doesn't work out too well.  As Joel Spolksky says:
 
 > There’s a subtle reason that programmers always want to throw away the code and start over. The reason is that they think the old code is a mess. And here is the interesting observation: they are probably wrong. The reason that they think the old code is a mess is because of a cardinal, fundamental law of programming:  
 > _It’s harder to read code than to write it._    - [Joel Spolsky](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)
 
-The problem that Joel is outlining here is that the developer mistakes [Communication Risk](Communication-Risk) for unnecessary **Complexity Risk**.  Also, perhaps there is [Agency Risk](Agency-Risk) because the developer is doing something that is more useful to him than the project.  
+The problem that Joel is outlining here is that the developer mistakes [Communication Risk](Communication-Risk) for unnecessary [Complexity Risk](Complexity-Risk).  Also, perhaps there is [Agency Risk](Agency-Risk) because the developer is doing something that is more useful to him than the project.  
 
-But (generally speaking), **Dead-End Risk** isn't caused by **Complexity Risk**, it's caused by [Conceptual Integrity Risk](Feature-Risk): if you've ended up in a dead-end because of **Complexity Risk**, the solution is much more likely to be to take **Option 2** and [Refactor out of it](Coding).
+But (generally speaking), **Dead-End Risk** isn't caused by [Complexity Risk](Complexity-Risk), it's caused by [Conceptual Integrity Risk](Feature-Risk): if you've ended up in a dead-end because of [Complexity Risk](Complexity-Risk), the solution is much more likely to be to take **Option 2** and [Refactor out of it](Coding).
 
 ## Where Complexity Hides
 
@@ -292,7 +292,7 @@ Complexity isn't spread evenly within a software project.  Some problems, some a
 
 ### Memory Management
 
-Memory Management is another place where **Complexity Risk** hides:
+Memory Management is another place where [Complexity Risk](Complexity-Risk) hides:
 
 > "Memory leaks are a common error in programming, especially when using languages that have no built in automatic garbage collection, such as C and C++." - [Memory Leak, _Wikipedia_](https://en.wikipedia.org/wiki/Memory_leak)
 
@@ -355,11 +355,11 @@ Although modern languages include plenty of concurrency primitives, (such as the
 
 Recently, languages such as [Clojure](https://clojure.org) have introduced [persistent collections](https://en.wikipedia.org/wiki/Persistent_data_structure) to circumvent concurrency issues.  The basic premise is that any time you want to _change_ the contents of a collection, you get given back a _new collection_.  So, any collection instance is immutable once created.   
 
-The tradeoff is again attendant [Performance Risk](Production-Risk) to mitigate **Complexity Risk**.
+The tradeoff is again attendant [Performance Risk](Production-Risk) to mitigate [Complexity Risk](Complexity-Risk).
  
 ### Networking / Security
 
-The last area I want to touch on here is networking.  There are plenty of **Complexity Risk** perils in _anything_ to do with networked code, chief amongst them being error handling and (again) protocol evolution.  
+The last area I want to touch on here is networking.  There are plenty of [Complexity Risk](Complexity-Risk) perils in _anything_ to do with networked code, chief amongst them being error handling and (again) protocol evolution.  
 
 In the case of security considerations, exploits _thrive_ on the complexity of your code, and the weaknesses that occur because of it.  In particular, Schneier's Law says, never implement your own crypto scheme:
 

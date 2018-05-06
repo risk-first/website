@@ -214,15 +214,11 @@ The protocol mediates between the message and the channel.  Where this goes wron
 
 Generally, any time where you have different parts of a system communicating with each other, and one part can change incompatibly with another you have [Protocol Risk](Communication-Risk#protocol-risk).
 
-![Protocol Risk](images/generated/protocol-risk.png)
+![Protocol Risk](images/generated/all-protocol-risk.png)
 
 Locally, (within our own project), where we have control, we can mitigate this risk using compile-time checking (as discussed already in [Complexity Risk](Complexity-Risk#protocols-and-types)), which essentially forces all clients and servers to agree on protocol.  But, the wider the group that you are communicating with, the less control you have and the more chance there is of [Protocol Risk](Communication-Risk#protocol-risk).   
 
 Let's look at some types of [Protocol Risk](Communication-Risk#protocol-risk):
-
-![Protocol Versioning Risk](images/generated/protocol-versioning-risk.png)
-![Protocol Incompatibility Risk](images/generated/protocol-incompatibility-risk.png)
-![Protocol Implementation Risk](images/generated/protocol-implementation-risk.png)
  
 ### Protocol Incompatibility Risk
 
@@ -263,10 +259,7 @@ A second aspect of [Protocol Risk](Communication-Risk#protocol-risk) exists in h
 
 Although Shannon's Communication Theory is about transmitting **Messages**, messages are really encoded **Ideas** and **Concepts**, from an **Internal Model**.
 
-![Message Risk](images/generated/message-risk.png)
-![Internal Model Assumption Risk](images/generated/model-assumption-risk.png)
-![Message Dependency Risk](images/generated/message-dependency-risk.png)
-
+![Message Risk](images/generated/all-message-risk.png)
 
 ### Internal Model Assumption Risk
 
@@ -294,8 +287,6 @@ Create user 53 with surname 'Smith'
 
 ### Abstraction and Misinterpretation Risk
 
-![Misinterpretation Risk](images/generated/misinterpretation-risk.png)
-
 People don't rely on rigorous implementations of abstractions like computers do; we make do with fuzzy definitions of concepts and ideas.  We rely on **Abstraction** to move between the name of a thing and the _idea of a thing_.
 
 While machines only process _information_, people's brains run on concepts and ideas.  For people, abstraction is critical: nothing exists unless we have a name for it.  Our world is just atoms, but we don't think like this.  _The name is the thing_.  
@@ -305,8 +296,6 @@ While machines only process _information_, people's brains run on concepts and i
 This brings about [Misinterpretation Risk](Communication-Risk#misinterpretation-risk): names are not _precise_, and concepts mean different things to different people.  We can't be sure that people have the same meaning for concepts that we have.  
 
 ### Abstraction and Invisibility Risk
-
-![Invisibility Risk](images/generated/invisibility-risk.png)
 
 Another cost of **Abstraction** is [Invisibility Risk](Communication-Risk#invisibility-risk).  While abstraction is a massively powerful technique, (as we saw above in the section on [Protocols](Communication-Risk#protocols), it allows things like the Internet to happen) it lets the function of a thing hide behind the layers of abstraction and become invisible.  
 
@@ -342,14 +331,11 @@ The debt of [Invisibility Risk](Communication-Risk#invisibility-risk) comes due 
 
 So finally, we are coming to the root of the problem:  communication is about transferring ideas and concepts from one [Internal Model](Internal-Model) to another. 
 
-![Internal Model Risk](images/generated/internal-model-risk.png)
+![Internal Model Risk](images/generated/all-internal-model-risk.png)
 
 The communication process so far has been fraught with risks, but we have a few more to come.
 
 ### Trust Risk & Belief Risk
-
-![Trust Risk](images/generated/trust-risk.png)
-![Belief Risk](images/generated/belief-risk.png)
 
 Although protocols can sometimes handle security features of communication (such as [Authentication](https://en.wikipedia.org/wiki/Authentication) and preventing [man-in-the-middle attacks](https://en.wikipedia.org/wiki/Man-in-the-middle_attack)), trust goes further than this, intersecting with [Agency Risk](Agency-Risk):  can you be sure that the other party in the communication is acting in your best interests?
  
@@ -362,8 +348,6 @@ Even if the receiver trusts the communicator, they may not trust the message.  L
 From the point-of-view of [Marketing Communications](Communication-Risk#Marketing-Communications) choosing the right message is part of the battle.  You are trying to communicate your idea in such a way as to mitigate [Belief Risk](Communication-Risk#trust-risk--belief-risk) and [Trust Risk](Communication-Risk#trust-risk--belief-risk).
 
 ### Learning-Curve Risk
-
-![Learning-Curve Risk](images/generated/learning-curve-risk.png)
 
 If the messages we are receiving force us to update our [Internal Model](Internal-Model) too much, we can suffer from the problem of "too steep a [Learning Curve](https://en.wikipedia.org/wiki/Learning_curve)" or "[Information Overload](https://en.wikipedia.org/wiki/Information_overload)", where the messages force us to adapt our [Internal Model](Internal-Model) too quickly for our brains to keep up.  
 
