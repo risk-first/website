@@ -1,16 +1,8 @@
 
-[Complexity Risk](Complexity-Risk) are the risks to your project due to its underlying "complexity".  In the next few sections, we'll break down exactly what we mean by complexity, looking at [Dependency Risk](Dependency-Risk) and [Boundary Risk](Boundary-Risk) as two particular sub-types of [Complexity Risk](Complexity-Risk).  However, here, we're going to be specifically focusing on _code you write_: the size of your code-base, the number of modules, the interconnectedness of the modules and how well-factored the code is.  
+[Complexity Risk](Complexity-Risk) are the risks to your project due to its underlying "complexity".  Over the next few sections, we'll break down exactly what we mean by complexity, looking at [Dependency Risk](Dependency-Risk) and [Boundary Risk](Boundary-Risk) as two particular sub-types of [Complexity Risk](Complexity-Risk).  However, in this section, we're going to be specifically focusing on _code you write_: the size of your code-base, the number of modules, the interconnectedness of the modules and how well-factored the code is.  
 
-You could think of this as **Codebase Risk**, and we'll look, three separate measures of complexity and talk about **Technical Debt**, and look at places in which **Codebase Risk** is at it's greatest.
+You could think of this section, then, as **Codebase Risk**:  We'll look, three separate measures of codebase complexity and talk about **Technical Debt**, and look at places in which **Codebase Risk** is at it's greatest.
 
-complexity is different to entropy, but related
-
-
-1.  Cyclomatic complexity - number of routes through a program  (and, abstraction). A1, A2, B1, B2, A3,A4,B3,B4.. nothing about (long process with a small difference) and (another long process with a small difference - but kc does).
-2.  Kolmogorov complexity - program size (minimum)
-3.  Graph complexity
-4.  Reliability 
-5.  Dependency Injection / Ioc
 
 What is complexity risk?   
 
@@ -85,7 +77,7 @@ for(i=0;i<100;)document.write(((++i%3?'':'Fizz')+
 (i%5?'':'Buzz')||i)+"<br>")                                  (66 symbols)
 ```
 
-So there is at some point a trade-off to be made between [Complexity Risk](Complexity-Risk) and [Communication Risk](Communication-Risk).  This is a topic we'll address more in that section.   But for now, it should be said that [Communication Risk](Communication-Risk) is about _understanding_:  The more complex a piece of software is, the more difficulty users will have understanding it, and the more difficulty developers will have changing it.  
+So there is at some point a trade-off to be made between [Complexity Risk](Complexity-Risk) and [Communication Risk](Communication-Risk).  This is a topic we'll address more in that section.   But for now, it should be said that [Communication Risk](Communication-Risk) is about _misunderstanding_:  The more complex a piece of software is, the more difficulty users will have understanding it, and the more difficulty developers will have changing it.  
 
 ## Connectivity
 
@@ -98,6 +90,22 @@ To see this in action, have a look at the below graph:
 ![Connectivity 1](images/connectivity_1.png)
 
 It has 10 vertices, labelled **a** to **j**, and it has 15 edges (or links) connecting the vertices together.  If any single edge were removed from this diagram, the 10 vertices would still be linked together.   Because of this, we can say that the graph is _2-connected_.   That is, to disconnect any single vertex, you'd have to remove _at least_ two edges.
+
+As a slight aside, let's consider the Kolmogorov Complexity of this graph, by inventing a mini-language to describe graphs.  It could look something like this:
+
+```
+<item> : [<item>,]* <item>    # Indicates that the item before the colon 
+                              # has a connection to all the items after the colon.
+                              
+a: b,c,d
+b: c,f,e
+c: f,d
+d: j
+e: h,j
+f: h
+g: j
+h: i
+i: j                                                         (39 symbols)
 
 Let's remove some of those extra links:
 
@@ -113,18 +121,6 @@ Also, it's I've arranged it as a hierarchy, which I can do now that it's only 1-
 
 Note that I could pick any hierarchy here:  I don't have to start at **c** (although it has the nice property that it has two roughly even sub-trees attached to it).
 
-### Space and Time Complexity
-
-So far, we've looked at a couple of definitions of complexity in terms of the _structure_ of software.  However, in Computer Science there is a whole branch of complexity theory devoted to how the software _runs_, namely [Big O Complexity](https://en.wikipedia.org/wiki/Big_O_notation).  
-
-Once running, an algorithm or data structure will consume space or runtime dependent on it's characteristics.  As with Garbage Collectors, these characteristics can introduce [Performance Risk](Production-Risk) which can easily catch out the unwary.  By and large, using off-the-shelf components helps, but you still need to know their performance characteristics. 
-
-The [Big O Cheatsheet](http://bigocheatsheet.com) is a wonderful resource to investigate this further.  
-
-A third measure of complexity.  ( Start calling these out).
-
-Depth-first search complexity with N and E.
-
 ## Hierarchies and Modularization
 
 How does this help us?   Imagine if **a** - **j** were modules of a software system, and the edges of the graph showed communications between the different sub-systems.  In the first graph, we're in a worse position:  who's in charge?  What deals with what?  Can I isolate a component and change it safely?  What happens if one component disappears?  But, in the second graph, it's easier to reason about, because of the reduced number of connections and the new heirarchy of organisation.  
@@ -136,10 +132,6 @@ As a tool to battle complexity, we don't just see this in software, but everywhe
  - **Cells** - such as blood cells, nerve cells, skin cells in the [Human Body](https://en.wikipedia.org/wiki/List_of_distinct_cell_types_in_the_adult_human_body).
  - **Organs** - like hearts livers, brains etc.
  - **Organisms** - like you and me.
- 
-## Depth-First Complexity
-
-tbd.  bring in stuff about algorithmic complexity here. 
  
 ## Cyclomatic Complexity
 
@@ -154,6 +146,19 @@ Cyclomatic Complexity = edges − vertices + 2P,
 Where **P** is the number of **Connected Components** (i.e. distinct parts of the graph that aren't connected to one another by any edges).
 
 So, our first graph had a **Cyclomatic Complexity** of 7. `(15 - 10 + 2)`, while our second was 1. `(9 - 10 + 2)`.
+
+
+## Space and Time Complexity
+
+So far, we've looked at a couple of definitions of complexity in terms of the _structure_ of software.  However, in Computer Science there is a whole branch of complexity theory devoted to how the software _runs_, namely [Big O Complexity](https://en.wikipedia.org/wiki/Big_O_notation).  
+
+Once running, an algorithm or data structure will consume space or runtime dependent on it's characteristics.  As with Garbage Collectors, these characteristics can introduce [Performance Risk](Production-Risk) which can easily catch out the unwary.  By and large, using off-the-shelf components helps, but you still need to know their performance characteristics. 
+
+The [Big O Cheatsheet](http://bigocheatsheet.com) is a wonderful resource to investigate this further.  
+
+A third measure of complexity.  ( Start calling these out).
+
+Depth-first search complexity with N and E.
 
 ## Abstraction
 
