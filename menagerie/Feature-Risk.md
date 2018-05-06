@@ -1,17 +1,13 @@
 [Feature Risk](Feature-Risk) is the category of risks to do with features that have to be in your software.   
-You could also call it **Functionality Risk**.  
-
-[Feature Risk](Feature-Risk) is the risk that you face by _not having features that your clients need_.  
+You could also call it **Functionality Risk**.  It is the risk that you face by _not having features that your clients need_.  
 
 ![Feature Risk](images/generated/feature-risk.png)
 
 Eventually, this will come down to lost money, business, acclaim, or whatever else reason you are doing your project for.
 
-So, in a way, [Feature Risk](Feature-Risk) is very fundamental:  if there were _no_ feature risk, the job would be done already, either by you, or by another product.  
+In a way, [Feature Risk](Feature-Risk) is very fundamental:  if there were _no_ feature risk, the job would be done already, either by you, or by another product.  
 
-As a simple example, if your needs are served perfectly by Microsoft Excel, then you don't have any [Feature Risk](Feature-Risk).  
-
-However, the day you find Microsoft Excel wanting, and decide to build an Add-On is the day when you first appreciate some [Feature Risk](Feature-Risk).
+As a simple example, if your needs are served perfectly by Microsoft Excel, then you don't have any [Feature Risk](Feature-Risk).  However, the day you find Microsoft Excel wanting, and decide to build an Add-On is the day when you first appreciate some [Feature Risk](Feature-Risk).
 
 ## Variations
 
@@ -44,13 +40,13 @@ Also, while delivering new features can delight your customers, breaking existin
 
 ![Market Risk](images/generated/market-risk.png)
 
-On the [Risk Landscape](Risk-Landscape) page I introduced the idea of **Market Risk** as being the value that the market places on a particular asset.  Since the product you are building is your asset, it makes sense that you'll face **Market Risk** on it:
+On the [Risk Landscape](Risk-Landscape) page I introduced the idea of [Market Risk](Feature-Risk#market-risk) as being the value that the market places on a particular asset.  Since the product you are building is your asset, it makes sense that you'll face [Market Risk](Feature-Risk#market-risk) on it:
 
  > "Market risk is the risk of losses in positions arising from movements in market prices." - [Market Risk, _Wikipedia_](https://en.wikipedia.org/wiki/Market_risk)
 
 I face market risk when I own (i.e. have a _position_ in) some [Apple](http://apple.com) stock.  [Apple's](http://apple.com)'s stock price will decline if a competitor brings out an amazing product, or if fashions change and people don't want their products any more.
 
-In the same way, _you_ have **Market Risk** on the product or service you are building:  the _market_ decides what it is prepared to pay for this, and it tends to be outside your control.    
+In the same way, _you_ have [Market Risk](Feature-Risk#market-risk) on the product or service you are building:  the _market_ decides what it is prepared to pay for this, and it tends to be outside your control.    
 
 ### Conceptual Integrity Risk
 
