@@ -15,6 +15,15 @@ Dealing with Dependency Risk is what project managers do
 
 Reliability of an overall system is constrained by the reliability
 
+
+tbd.  split this out into a section.  there's so much more here.
+
+Is it a known unknown?  You know you might be going the wrong way.
+
+Muneer building the extractor, using ASP.net.. turned out we don't deploy .net/ASP only Java
+
+
+
 ## Events 
 
 The simplest type of **Dependency Risk** is around events.   For example, "I can't start shopping until the supermarket opens at 9am", or "I must catch my bus to work at 7:30am".  In the first example, you can't _start_ something until a particular event happens.  In the latter example, you must _be ready_ for an event at a particular time.
