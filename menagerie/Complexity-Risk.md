@@ -88,7 +88,7 @@ f: h
 g: j
 h: i
 i: j                                                         (39 symbols)
-
+```
 
 
 Let's remove some of those extra links:
