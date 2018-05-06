@@ -42,6 +42,7 @@ cut it.
 - Also, we need to sort out text centering.  It should work.
 - PNGs should be sizable based on the contents of the diagram element.
 - It's annoying to keep having to define the risks over and over.  Ideally, we should improve the templating in Kite9.
+- Namespaces are painful.  Nounproject keeps using new ones.  Maybe we should just add some code to remove them?
 
 ## Links
 
