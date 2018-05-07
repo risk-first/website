@@ -60,13 +60,13 @@ tbd
 |[Feature Risk](Feature-Risk)                        |Customer, Product         |
 |[Complexity Risk](Complexity-Risk)                  |Product, Staff            |        
 |[Communication Risk](Communication-Risk)            |Customer, Product, Staff  |             
-|[Coordination Risk](Coordination-Risk)              |Staff                     |       
 |[Dependency Risk](Dependency-Risk)                  |Product, Customer, Staff  |  
 |[Software Dependency Risk](Software-Dependency-Risk)|Product, Staff            |    
 |[Process Risk](Process-Risk)                        |Staff                     |
 |[Schedule Risk](Schedule-Risk)                      |Product, Staff            |    
 |[Boundary Risk](Boundary-Risk)                      |Product                   |            
 |[Agency Risk](Agency-Risk)                          |Staff                     |
+|[Coordination Risk](Coordination-Risk)              |Staff                     |       
 |[Production Risk](Production-Risk)                  |Customer, Product         |
 |[Map And Territory Risk](Map-And-Territory-Risk)    |Staff                     |  
        

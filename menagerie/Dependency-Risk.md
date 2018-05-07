@@ -1,13 +1,17 @@
-**Dependency Risk** is the risk you take on whenever you have a dependency on something else.   One simple example could be that the software service you write might depend on a server to run on.  If the server goes down, the service goes down too.  In turn, the server depends on electricity from a supplier, as well as a network connection from a provider.  If either of these dependencies aren't met, the service is out of commission.
+**Dependency Risk** is the risk you take on whenever you have a dependency on something (or someone) else.   One simple example could be that the software service you write might depend on a server to run on.  If the server goes down, the service goes down too.  In turn, the server depends on electricity from a supplier, as well as a network connection from a provider.  If either of these dependencies aren't met, the service is out of commission.
 
 Dependencies can be on _events_, _people_, _teams_, _software_, _services_, _processes_: pretty much _anything_.  Dependencies add risk to any project because the reliability of the project itself is now a function involving the reliability of the dependency.  
 
-In order to avoid repetition, and also to break down this large topic, we're going to look at this over 3 sections.   
- - This first section will look at dependencies _in general_, and some of the features of **Dependency Risk**.  
- - Then, we'll move on to look at [Software Dependency Risk](Software-Dependency-Risk), covering using libraries, software services and building on top of the work of others.
- - Finally, we'll take a look at [Process Risk](Process-Risk), which is still **Dependency Risk**, but we'll be considering more organisational factors and how bureaucracy comes into the picture.  
+In order to avoid repetition, and also to break down this large topic, we're going to look at this over 4 sections.   
+ - This first section will look at dependencies _in general_, and some of the variations on [Dependency Risk](Dependency-Risk).
+ - Then, we'll move on to look specifically at [Software Dependency Risk](Software-Dependency-Risk), covering using libraries, software services and building on top of the work of others.
+ - Then, we'll take a look at [Process Risk](Process-Risk), which is still [Dependency Risk](Dependency-Risk), but we'll be considering more organisational factors and how bureaucracy comes into the picture.  
+ - Then, we'll look at some of the specific problems around working with other people or businesses in [Agency Risk](Agency Risk).
 
-Dealing with Dependency Risk is what project managers do
+## Why Have Dependencies?
+
+
+
 
 
 
@@ -97,7 +101,7 @@ I didn't even know I was missing Redux until I'd heard of it.
 
 ![Dependency](images/dependency_depends.png)
 
-If a component **A** of our project _depends_ on **B** for some kind of processing, you can't really complete **A** before writing **B**.   This makes _scheduling_ the project harder, and if component **A** is a risky part of the project, then the chances are you'll want to mitigate risk there first.  There are a couple of ways to do this:
+If a component **A** of our project _depends_ on **B** for some kind of processing, you might not be able to complete **A** before writing **B**.   This makes _scheduling_ the project harder, and if component **A** is a risky part of the project, then the chances are you'll want to mitigate risk there first.  There are a couple of ways to do this:
 
 - **Standards**:  If component **B** is a database, a queue, mail gateway or something else with a standard interface, then you're in luck.   Write **A** to those standards, and find a cheap, simple implementation to test with.  This gives you time to sort out exactly what implementation of **B** you're going for.  This is not a great long-term solution, because obviously, you're not using the _real_ dependency- you might get surprised when the behaviour of the real component is subtly different.  But it can reduce [Schedule Risk](Schedule-Risk) in the short-term.
 - **Coding To Interfaces**:  If standards aren't an option, but the surface area of **B** that **A** uses is quite small and obvious, you can write a small interface for it, and work behind that, using a [Mock](https://en.wikipedia.org/wiki/Mock_object) for **B** while you're waiting for finished component.  Write the interface to cover only what **A** _needs_, rather than everything that **B** _does_ in order to minimize the risk of [Leaky Abstractions](https://en.wikipedia.org/wiki/Leaky_abstraction).
@@ -197,3 +201,8 @@ insurance
 dependency ijection - invisibile dependencies
 
 reliability risk
+
+
+
+Dealing with Dependency Risk is what project managers do
+

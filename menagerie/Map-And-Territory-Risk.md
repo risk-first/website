@@ -95,3 +95,20 @@ following the rules more important than getting things done.
 Head in the sand
 
 Bullshit jobs
+
+## Biases
+
+Why is this relevant?
+
+human biases.
+
+
+
+- showing progress
+- the release
+
+- less wrong
+
+Is this really a risk?? Why is this here?  To shore up the scheduling thing?
+
+Do biases go in here?  YES!!
