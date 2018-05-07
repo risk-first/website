@@ -52,7 +52,13 @@ function out() {                                             (7 symbols)
 
 ... we have **26** symbols.  
 
-By applying techniques such as abstraction, we can improve in the direction of the Kolmogorov limit.  By allowing ourselves to say that _symbols_ are worth one complexity point, we've allowed that we can be descriptive in our `function` name and `const`.  
+### Abstraction
+
+What's happening here is that we're _exploiting a pattern_: we noticed that `ABCD` occurs several times, so we defined it a single time and then used it over and over, like a stamp.  Separating the _definition_ of something from the _use_ of something as we've done here is called "abstraction".  We're going to come across it over and over again in this part of the book, and not just in terms of computer programs.  
+
+By applying techniques such as Abstraction, we can improve in the direction of the Kolmogorov limit.  And, by allowing ourselves to say that _symbols_ (like `out` and `ABCD`) are worth one complexity point, we've allowed that we can be descriptive in our `function` name and `const`.  Naming things is an important part of abstraction, because to use something, you have to be able to refer to it.
+
+### Trade-Off
 
 But we could go further down into [Code Golf](https://en.wikipedia.org/wiki/Code_golf) territory.  This javascript program plays [FizzBuzz](https://en.wikipedia.org/wiki/Fizz_buzz) up to 100, but is less readable than you might hope:
 
@@ -71,7 +77,7 @@ A second, useful measure of complexity comes from graph theory, and that is the 
 
 To see this in action, have a look at the below graph:
 
-![Connectivity 1](images/connectivity_1.png)
+![Graph 1](images/connectivity_1.png)
 
 It has 10 vertices, labelled **a** to **j**, and it has 15 edges (or links) connecting the vertices together.  If any single edge were removed from this diagram, the 10 vertices would still be linked together.   Because of this, we can say that the graph is _2-connected_.   That is, to disconnect any single vertex, you'd have to remove _at least_ two edges.
 
@@ -94,7 +100,7 @@ i: j                                                         (39 symbols)
 
 Let's remove some of those extra links:
 
-![Connectivity 2](images/connectivity_2.png)
+![Graph 2](images/connectivity_2.png)
 
 In this graph, I've removed 6 of the edges.  Now, we're in a situation where if any single edge is removed, the graph becomes _unconnected_.  That is, it's broken into distinct chunks.  So, it's _1-connected_.  
 
@@ -135,7 +141,7 @@ As a tool to battle complexity, we don't just see this in software, but everywhe
  
 The great complexity-reducing mechanism of modularization is that _you only have to consider your local environment_.  Elements of the program that are "far away" in the hierarchy can be relied on not to affect you.  This is somewhat akin to the **Principal Of Locality**:
 
-> "Spatial locality refers to the use of data elements within relatively close storage locations." - [Locality Of Reference, _Wikipedia](https://en.wikipedia.org/wiki/Locality_of_reference)
+> "Spatial locality refers to the use of data elements within relatively close storage locations." - [Locality Of Reference, _Wikipedia_](https://en.wikipedia.org/wiki/Locality_of_reference)
  
 ## Cyclomatic Complexity
 
@@ -150,6 +156,14 @@ Where **P** is the number of **Connected Components** (i.e. distinct parts of th
 So, our first graph had a **Cyclomatic Complexity** of 7. `(15 - 10 + 2)`, while our second was 1. `(9 - 10 + 2)`.
 
 Cyclomatic complexity is all about the number of different routes through the program.   The more branches a program has, the greater it's cyclomatic complexity.  Hence, this is a useful metric in [Testing](Testing) and [Code Coverage](Testing#code-coverage): the more branches you have, the more tests you'll need to exercise them all. 
+
+## More Abstraction
+
+Although we ended up with our second graph having a **Cyclomatic Complexity** of 1 (the minimum), we can go further through abstraction, because this representation isn't minimal from a **Kolmogorov Complexity** point-of-view.  For example, we might observe that there are further similarities in the graph that we can "draw out":
+
+![Complexity 3](images/connectivity_3.png)
+
+Here, we've spotted that the structure of subgraphs **P1** and **P2** are the same:  we can have the same functions there to assemble those.  Noticing and exploiting patterns of repetition is one of the fundamental tools we have in the fight against [Complexity Risk](Complexity-Risk).
 
 ## Complexity As Mass
 
@@ -199,7 +213,7 @@ But, having mitigated the [Feature Risk](Feature-Risk), you are now carrying mor
 
 It’s often hard to make the case for minimizing [Technical Debt](Complexity-Risk#technical-debt): it often feels that there are more important priorities, especially when technical debt can be “swept under the carpet” and forgotten about until later.  (See [Discounting The Future](Risk-Theory#discounting-the-future-to-zero).)
 
-One helpful analogy I have found is to suggest your code-base is a kitchen.   After preparing a meal (i.e. delivering the first implementation), _you need to tidy up the kitchen_.  This is just something everyone does as a matter of _basic sanitation_.
+One helpful analogy I have found is to imagine your code-base is a kitchen.   After preparing a meal (i.e. delivering the first implementation), _you need to tidy up the kitchen_.  This is just something everyone does as a matter of _basic sanitation_.
 
 Now of course, you could carry on with the messy kitchen.  When tomorrow comes and you need to make another meal, you find yourself needing to wash up saucepans as you go, or working around the mess by using different surfaces to chop on.  
 
@@ -232,11 +246,12 @@ Sometimes, feature-creep happens because either managers feel they need to keep 
 [Dead-End Risk](Complexity-Risk#dead-end-risk) is where you build functionality that you _think_ is useful, only to find out later that actually, it was 
 a dead-end, and is superceded by something else.
 
-For example, let's say that the Accounting sub-system needed password access (so you built this).  Then the team realised that you needed a way to _change the password_ (so you built that).   Then, that you needed to have more than one user of the Accounting system so they would all need passwords (ok, fine).  
+For example, let's say that the Accounting sub-system needed password protection (so you built this).  Then the team realised that you needed a way to _change the password_ (so you built that).   Then, that you needed to have more than one user of the Accounting system so they would all need passwords (ok, fine).  
 
 Finally, the team realises that actually logging-in would be something that all the sub-systems would need, and that it had already been implemented more thoroughly by the Approvals sub-system.   
 
-At this point, you realise you're in a **Dead End**:  
+At this point, you realise you're in a **Dead End**:
+  
  - **Option 1**: You carry on making minor incremental improvements to the accounting password system (carrying the extra [Complexity Risk](Complexity-Risk) of the duplicated functionality).
  - **Option 2**: You rip out the accounting password system, and merge in the Approvals system, surfacing new, hidden [Complexity Risk](Complexity-Risk) in the process, due to the difficulty in migrating users from the old to new way of working.
  - **Option 3**: You start again, trying to take into account both sets of requirements at the same time, again, possibly surfacing new hidden [Complexity Risk](Complexity-Risk) due to the combined approach.
@@ -352,6 +367,6 @@ Luckily, most good languages include crypto libraries that you can include to mi
 
 This is a strong argument for the use of libraries.  But, when should you use a library and when should you implement yourself?  This is again covered in the section on [Software Dependency Risk](Software-Dependency-Risk).  
 
-But next, we are going to look at [Communication Risk](Communication-Risk).
+tbd - next section.
 
 
