@@ -9,11 +9,11 @@ import java.io.InputStream;
 import java.lang.reflect.Method;
 
 import org.junit.Test;
+import org.kite9.diagram.adl.DiagramKite9XMLElement;
+import org.kite9.diagram.dom.XMLHelper;
+import org.kite9.diagram.dom.elements.ADLDocument;
 import org.kite9.framework.common.StackHelp;
 import org.kite9.framework.common.TestingHelp;
-import org.kite9.framework.dom.XMLHelper;
-import org.kite9.framework.xml.ADLDocument;
-import org.kite9.framework.xml.DiagramKite9XMLElement;
 
 public class AbstractDisplayFunctionalTest extends AbstractFunctionalTest {
 

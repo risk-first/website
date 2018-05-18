@@ -165,8 +165,9 @@ risk-box {
 	kite9-type: container;
 	kite9-layout: vertical;	
 	kite9-template: url(template.svg#risk-box);
-	kite9-padding: 6px 6px 6px 6px; 
+	kite9-padding: 10px; 
 	kite9-connection-align: 50%;
+	kite9-min-size: 110px 140px;
 }
 
 diagram {
@@ -179,8 +180,10 @@ diagram {
 risk image {
 	kite9-type: container;
 	kite9-horizontal-align: center;
-	kite9-padding: 25px;
-	kite9-margin: 4px;
+	kite9-vertical-align: top;
+	kite9-min-size: 50px 50px;
+	kite9-margin: 10px;
+	
 }
 
 image-content {
@@ -189,9 +192,13 @@ image-content {
 }
 
 risk code {
+	kite9-horizontal-align: center;
+	kite9-vertical-align: top;
 	kite9-type: container;
 	kite9-sizing: minimize;
 	kite9-template: url(template.svg#code);
+	font-size: 22px;
+	kite9-margin: 10px;
 }
 
 risk title {
@@ -200,6 +207,8 @@ risk title {
 	kite9-layout: horizontal;
 	kite9-template: url(template.svg#title);
 	kite9-horizontal-align: center;
+	kite9-vertical-align: bottom;
+
 }
 
 .risk-back {
@@ -209,13 +218,14 @@ risk title {
 
 .code-label-front {
 	stroke-width: 0;
-	font-size: 16px;
+	font-size: 19px;
 	font-family: "gothic";
 	fill: black;
+	text-align: middle;
 }
 
 .title-label-front {
-	font-size: 10px;
+	font-size: 12px;
 	font-family: "gothic";
 	text-align: middle;
 }

@@ -42,7 +42,7 @@ public class TextPreprocessor {
 		}
 	}
 	
-	static Pattern p = Pattern.compile("\\[[^\\]]*?\\]\\(.*?\\)");
+	static Pattern p = Pattern.compile("(\\!)?\\[([^\\]]*?)\\]\\((.*?)\\)(\\{(.*?)\\})?");
 
 	private static void processLinks(String line) {
 		Matcher m = p.matcher(line);
@@ -55,11 +55,14 @@ public class TextPreprocessor {
 			
 			String link = line.substring(s, e);
 			
-			String text = link.substring(1, link.indexOf("]"));
-			String url = link.substring(link.indexOf("](")+2, link.length()-1);
-			
-			if (!link.equals("["+text+"]("+url+")")) {
-				System.err.println("BAD: "+link+"    "+text+"    "+url);
+			String bang = m.group(1);
+			String text = m.group(2);
+			String url = m.group(3);
+			String extra = m.group(4);
+			String reconstructed = (bang==null ? "" : "!")+"["+text+"]("+url+")"+ (extra==null ? "" : extra);
+
+			if (!link.equals(reconstructed)) {
+				System.err.println("BAD: "+link+"    "+text+"    "+url+"   "+reconstructed);
 			} else {
 				System.err.println("OK: " + link+"    "+text+"    "+url);
 			}
@@ -73,7 +76,7 @@ public class TextPreprocessor {
 						// something else.
 					}
 				} else {
-					System.out.print(link);
+					processImage(link, text, url, m);
 				}
 			} else {
 				System.out.print(link);
@@ -84,6 +87,16 @@ public class TextPreprocessor {
 		}
 		
 		System.out.println(line.substring(place));
+	}
+
+	private static void processImage(String link, String text, String url, Matcher m) {
+		if (link.contains("margin")) {
+			System.out.println("\\marginpar{");
+			System.out.println("  \\vspace*{0cm}\\includegraphics[width=2cm,height=2cm]{"+url+"}");
+			System.out.println("}");
+		} else {
+			System.out.println(link);
+		}
 	}
 
 	private static boolean isImage(String url) {

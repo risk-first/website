@@ -12,14 +12,14 @@ import org.apache.batik.transcoder.Transcoder;
 import org.apache.batik.transcoder.TranscoderInput;
 import org.apache.batik.transcoder.TranscoderOutput;
 import org.junit.Before;
+import org.kite9.diagram.adl.AbstractMutableXMLElement;
 import org.kite9.diagram.batik.format.Kite9PNGTranscoder;
 import org.kite9.diagram.batik.format.Kite9SVGTranscoder;
+import org.kite9.diagram.dom.elements.ADLDocument;
 import org.kite9.framework.common.HelpMethods;
 import org.kite9.framework.common.RepositoryHelp;
 import org.kite9.framework.common.StackHelp;
 import org.kite9.framework.logging.Kite9Log;
-import org.kite9.framework.xml.ADLDocument;
-import org.kite9.framework.xml.AbstractStyleableXMLElement;
 
 public abstract class AbstractFunctionalTest extends HelpMethods {
 
@@ -29,12 +29,12 @@ public abstract class AbstractFunctionalTest extends HelpMethods {
 
 	@Before
 	public void initTestDocument() {
-		AbstractStyleableXMLElement.TESTING_DOCUMENT =  new ADLDocument();
+		AbstractMutableXMLElement.TESTING_DOCUMENT =  new ADLDocument();
 	}
 	
 	@Before
 	public void resetCounter() {
-		AbstractStyleableXMLElement.resetCounter();
+		AbstractMutableXMLElement.resetCounter();
 	}
 
 	protected void transcodePNG(String s) throws Exception {

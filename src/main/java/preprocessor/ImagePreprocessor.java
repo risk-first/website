@@ -11,6 +11,7 @@ import org.apache.batik.transcoder.TranscoderInput;
 import org.apache.batik.transcoder.TranscoderOutput;
 import org.kite9.diagram.batik.format.Kite9PNGTranscoder;
 import org.kite9.framework.common.RepositoryHelp;
+import org.kite9.framework.logging.Kite9Log;
 
 /**
  * We're bound to need preprocessing of some kind, let's do it here.
@@ -23,6 +24,8 @@ public class ImagePreprocessor {
 	public static void main(String[] args) throws Exception {
 		String file = args[0];
 		File f = new File(file);
+		
+		Kite9Log.setLogging(false);
 		
 		BufferedReader br = createBufferedReader(f);
 		process(br, f);

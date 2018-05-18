@@ -24,7 +24,7 @@
   
   <template id='risk-box'>
     <back style='kite9-usage: decal; kite9-type: svg; '>
-      <svg:rect x='0' y='0' width='{x1}' height='{y1}' rx='8' ry='8' style='fill: url(#risk-background); ' class="risk-back" />
+      <svg:rect x='0' y='0' width='#{$width}' height='#{$height}' rx='8' ry='8' style='fill: url(#risk-background); ' class="risk-back" />
     </back>
     <svg:g class="risk">
       <contents />
@@ -33,7 +33,7 @@
   
   <template id="container">
     <back style='kite9-usage: decal; kite9-type: svg; '>
-      <svg:rect x='0' y='0' width='{x1}' height='{y1}' rx='8' ry='8'  class="container-back" />
+      <svg:rect x='0' y='0' width='#{$width}' height='#{$height}' rx='8' ry='8'  class="container-back" />
     </back>
     <svg:g class="container">
       <contents />
@@ -68,7 +68,8 @@
       <image>
         <image-content style="kite9-template: url(noun_1517815.svg)" />
       </image>
-      <title>Feature Risk</title>
+      <title>Feature 
+      Risk</title>
     </risk-box>
   </template>
 
@@ -89,7 +90,8 @@
       <image>
         <image-content style="kite9-template: url(noun_1010324.svg)" />
       </image>
-      <title>Invisibility Risk</title>
+      <title>Invisibility
+       Risk</title>
     </risk-box>
   </template>
 
@@ -99,7 +101,8 @@
       <image>
         <image-content style="kite9-template: url(noun_1584141.svg); " />
       </image>
-      <title>Complexity Risk</title>
+      <title>Complexity
+       Risk</title>
     </risk-box>
   </template>
 
@@ -109,7 +112,8 @@
       <image>
         <image-content style="kite9-template: url(noun_1331794.svg); " />
       </image>
-      <title>Boundary Risk</title>
+      <title>Boundary 
+      Risk</title>
     </risk-box>
   </template>
   
@@ -119,17 +123,19 @@
       <image>
         <image-content style="kite9-template: url(noun_1279842.svg); " />
       </image>
-      <title>Agency Risk</title>
+      <title>Agency
+       Risk</title>
     </risk-box>
   </template>
   
   <template id="morale">
     <risk-box>
-      <code>M</code>
+      <code>Mo</code>
       <image>
         <image-content style="kite9-template: url(noun_1090685.svg); " />
       </image>
-      <title>Morale Risk</title>
+      <title>Morale
+       Risk</title>
     </risk-box>
   </template>
   
@@ -139,7 +145,8 @@
       <image>
         <image-content style="kite9-template: url(noun_98162.svg); " />
       </image>
-      <title>Channel Risk</title>
+      <title>Channel 
+      Risk</title>
     </risk-box>
   </template>
   
@@ -149,7 +156,8 @@
       <image>
         <image-content style="kite9-template: url(noun_410844.svg); " />
       </image>
-      <title>Protocol Risk</title>
+      <title>Protocol
+       Risk</title>
     </risk-box>
   </template>
   
@@ -203,7 +211,7 @@
   
   <template id="message-dependency">
     <risk-box>
-      <code>Ma</code>
+      <code>Md</code>
       <image>
         <image-content style="kite9-template: url(noun_1528256.svg); " />
       </image>
@@ -283,7 +291,7 @@
   
   <template id="fit">
     <risk-box>
-      <code>F</code>
+      <code>Fi</code>
       <image>
         <image-content style="kite9-template: url(noun_1705889.svg); " />
       </image>
@@ -340,7 +348,7 @@
 
  <template id="market">
     <risk-box>
-      <code>M</code>
+      <code>Ma</code>
       <image>
         <image-content style="kite9-template: url(noun_1393306.svg); " />
       </image>
@@ -374,7 +382,7 @@
   
    <template id="dependency">
     <risk-box>
-      <code>CI</code>
+      <code>D</code>
       <image>
         <image-content style="kite9-template: url(noun_1340837.svg); " />
       </image>
@@ -385,11 +393,11 @@
   
   <template id="dead-end">
     <risk-box>
-      <code>CI</code>
+      <code>De</code>
       <image>
         <image-content style="kite9-template: url(noun_152853.svg); " />
       </image>
-      <title>Dead End
+      <title>Dead-End
       Risk</title>
     </risk-box>
   </template>  
