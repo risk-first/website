@@ -55,8 +55,8 @@ None of the risk categories we're going to look at fit _exactly_ into these area
 
 tbd
 
-|Risk                                                |          Areas           |
-|----------------------------------------------------|--------------------------|
+|Risk                                                |          Areas           |       |
+|----------------------------------------------------|--------------------------|-------|
 |[Feature Risk](Feature-Risk)                        |Customer, Product         |
 |[Complexity Risk](Complexity-Risk)                  |Product, Staff            |        
 |[Communication Risk](Communication-Risk)            |Customer, Product, Staff  |             

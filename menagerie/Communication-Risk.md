@@ -1,7 +1,7 @@
 [Communication Risk](Communication-Risk) is the risk of communication between entities _going wrong_, due to loss or misunderstanding.
 Consider this: if we all had identical knowledge, there would be no need to do any communicating at all, and therefore and also no [Communication Risk](Communication-Risk).  
 
-![Communication Risk](images/generated/communication-risk.png)
+![Communication Risk](images/generated/communication-risk.png){margin}
 
 But, people are not all-knowing oracles.  We rely on our _senses_ to improve our [Internal Models](Internal-Model) of the world. There is [Communication Risk](Communication-Risk) here - we might overlook something vital (like an oncoming truck) or mistake something someone says (like "Don't cut the green wire").  
 
@@ -61,7 +61,7 @@ The channel characteristics also imply suitability for certain _kinds_ of messag
 
 Shannon discusses that no channel is perfect:  there is always the **risk of noise** corrupting the signal.  A key outcome from Shannon's paper is that there is a tradeoff:  within the capacity of the channel (the **Bandwidth**), you can either send lots of information with _higher_ risk that it is wrong, or less information with _lower_ risk of errors.  And, rather like the [Kolgomorov complexity](Complexity-Risk) result, the more _randomness_ in the signal, the less compressible it is, and therefore the more _bits_ it will take to transmit.  
 
-![Channel Risk](images/generated/channel-risk.png)
+![Channel Risk](images/generated/channel-risk.png){margin}
 
 But channel risk goes wider than just this mathematical example:  messages might be delayed or delivered in the wrong order, or not be acknowledged when they do arrive.  Sometimes, a channel is just an inappropriate way of communicating.  When you work in a different time-zone to someone else on your team, there is _automatic_ [Channel Risk](Communication-Risk#channel-risk), because instantaneous communication is only available for a few hours' a day. 
 
@@ -214,7 +214,7 @@ The protocol mediates between the message and the channel.  Where this goes wron
 
 Generally, any time where you have different parts of a system communicating with each other, and one part can change incompatibly with another you have [Protocol Risk](Communication-Risk#protocol-risk).
 
-![Protocol Risk](images/generated/all-protocol-risk.png)
+![Protocol Risk](images/generated/all-protocol-risk.png){margin}
 
 Locally, (within our own project), where we have control, we can mitigate this risk using compile-time checking (as discussed already in [Complexity Risk](Complexity-Risk#protocols-and-types)), which essentially forces all clients and servers to agree on protocol.  But, the wider the group that you are communicating with, the less control you have and the more chance there is of [Protocol Risk](Communication-Risk#protocol-risk).   
 
@@ -259,7 +259,7 @@ A second aspect of [Protocol Risk](Communication-Risk#protocol-risk) exists in h
 
 Although Shannon's Communication Theory is about transmitting **Messages**, messages are really encoded **Ideas** and **Concepts**, from an **Internal Model**.
 
-![Message Risk](images/generated/all-message-risk.png)
+![Message Risk](images/generated/all-message-risk.png){margin}
 
 ### Internal Model Assumption Risk
 
@@ -331,7 +331,7 @@ The debt of [Invisibility Risk](Communication-Risk#invisibility-risk) comes due 
 
 So finally, we are coming to the root of the problem:  communication is about transferring ideas and concepts from one [Internal Model](Internal-Model) to another. 
 
-![Internal Model Risk](images/generated/all-internal-model-risk.png)
+![Internal Model Risk](images/generated/all-internal-model-risk.png){margin}
 
 The communication process so far has been fraught with risks, but we have a few more to come.
 

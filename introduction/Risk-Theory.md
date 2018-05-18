@@ -80,6 +80,10 @@ Finally, Crisis Management is _still just Risk Management_:  the crisis (Earthqu
 
 Yes, it's fine to say "we're in crisis", but to assume there is a different strategy for dealing with it is a mistake:  this is the [Fallacy of Sunk Costs](https://en.wikipedia.org/wiki/Sunk_costs). 
 
+## Scale and Panic Invariance
+
+tbd.
+
 ## Value
 
 "Upside Risk" isn't a commonly used term:  industry tends to prefer "value", as in "Is this a value-add project?".  There is plenty of theory surrounding **Value**, such as Porter's [Value Chain]() and [Net Present Value]().  This is all fine so long as we remember:

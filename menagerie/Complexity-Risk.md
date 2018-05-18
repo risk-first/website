@@ -1,7 +1,7 @@
 
 [Complexity Risk](Complexity-Risk) are the risks to your project due to its underlying "complexity".  Over the next few sections, we'll break down exactly what we mean by complexity, looking at [Dependency Risk](Dependency-Risk) and [Boundary Risk](Boundary-Risk) as two particular sub-types of [Complexity Risk](Complexity-Risk).  However, in this section, we're going to be specifically focusing on _code you write_: the size of your code-base, the number of modules, the interconnectedness of the modules and how well-factored the code is.  
 
-![Complexity Risks](images/generated/all-complexity-risk.png)
+![Complexity Risks](images/generated/all-complexity-risk.png){margin}
 
 You could think of this section, then, as **Codebase Risk**:  We'll look at three separate measures of codebase complexity and talk about [Technical Debt](Complexity-Risk#technical-debt), and look at places in which **Codebase Risk** is at it's greatest.
 
@@ -241,7 +241,7 @@ Sometimes, feature-creep happens because either managers feel they need to keep 
 
 ## Dead-End Risk
 
-![Dead-End Risk](images/generated/dead-end-risk.png)
+![Dead-End Risk](images/generated/dead-end-risk.png){margin}
 
 [Dead-End Risk](Complexity-Risk#dead-end-risk) is where you build functionality that you _think_ is useful, only to find out later that actually, it was 
 a dead-end, and is superceded by something else.
