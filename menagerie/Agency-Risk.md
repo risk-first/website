@@ -1,4 +1,4 @@
-![Agency Risk](images/generated/agency-risk.png){margin}
+![Agency Risk](images/generated/agency-risk.png)
 
 [Coordinating a team](Coordination-Risk) is difficult enough when everyone on the team has a single [Goal](Goal-In-Mind).  But, people have their own goals, too.  Sometimes, the goals harmlessly co-exist with the team's goal, but other times they don't.
 
@@ -61,7 +61,7 @@ Working on a pet project usually means you get lots of attention (and more than 
 
 > Morale, also known as Esprit de Corps is the capacity of a group's members to retain belief in an institution or goal, particularly in the face of opposition or hardship - [Morale, _Wikipedia_](https://en.wikipedia.org/wiki/Morale) 
 
-![Morale Risk](images/generated/morale-risk.png){margin}
+![Morale Risk](images/generated/morale-risk.png)
 
 Sometimes, the morale of the team or individuals within it dips, leading to lack of motivation.  [Morale Risk](Agency-Risk#morale-risk) is a kind of [Agency Risk](Agency-Risk) because it really means that a team member or the whole team isn't committed to the [Goal](Goal-In-Mind), may decide their efforts are best spent elsewhere.  [Morale Risk](Agency-Risk#morale-risk) might be caused by:
 

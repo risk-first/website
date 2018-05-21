@@ -1,7 +1,7 @@
 [Feature Risk](Feature-Risk) is the category of risks to do with features that have to be in your software.   
 You could also call it **Functionality Risk**.  It is the risk that you face by _not having features that your clients need_.  
 
-![Feature Risk](images/generated/feature-risk.png){margin}
+![Feature Risk](images/generated/feature-risk.png) 
 
 Eventually, this will come down to lost money, business, acclaim, or whatever else reason you are doing your project for.
 
@@ -13,7 +13,7 @@ As a simple example, if your needs are served perfectly by Microsoft Excel, then
 
 ### Feature Fit Risk
 
-![Feature Risk](images/generated/fit-risk.png){margin}
+![Feature Risk](images/generated/fit-risk.png) 
 
 This is the one we've just discussed above: the feature that you (or your clients) want to use in the software _isn't there_.   Now, as usual, you could call this an issue, but we're calling it a [Risk](Risk) because it's not clear exactly _how many_ people are affected, or how badly. 
 
@@ -22,15 +22,15 @@ This is the one we've just discussed above: the feature that you (or your client
 
 ### Features Don't Work Properly
 
-![Implementation Risk](images/generated/implementation-risk.png){margin}
-
 [Feature Risk](Feature-Risk) also includes things that don't work as expected: That is to say, [bugs](https://en.wikipedia.org/wiki/Software_bug).   Although the distinction between "a missing feature" and "a broken feature" might be worth making in the development team, we can consider these both the same kind of risk:  _the software doesn't do what the user expects_.
+
+![Implementation Risk](images/generated/implementation-risk.png) 
 
 (At this point, it's worth pointing out that sometimes, _the user expects the wrong thing_.  This is a different but related risk, which could be down to [Training](Training) or [Documentation](Documentation) or simply [Poor User Interface](Communication-Risk) and we'll look at that more in [Communication Risk](Communication-Risk).)
 
 ### Regression Risk
 
-![Regression Risk](images/generated/regression-risk.png){margin}
+![Regression Risk](images/generated/regression-risk.png) 
 
 [Regression Risk](Feature-Risk#regression-risk) is basically risk of breaking existing features in your software when you add new ones.  As with the previous risks, the eventual result is the same; customers don't have the features they expect.  This can become a problem as your code-base [gains Complexity](Complexity-Risk), as it becomes impossible to keep a complete [Internal Model](Internal-Model) of the whole thing.
 
@@ -38,7 +38,7 @@ Also, while delivering new features can delight your customers, breaking existin
 
 ### Market Risk
 
-![Market Risk](images/generated/market-risk.png){margin}
+![Market Risk](images/generated/market-risk.png) 
 
 On the [Risk Landscape](Risk-Landscape) page I introduced the idea of [Market Risk](Feature-Risk#market-risk) as being the value that the market places on a particular asset.  Since the product you are building is your asset, it makes sense that you'll face [Market Risk](Feature-Risk#market-risk) on it:
 
@@ -50,7 +50,7 @@ In the same way, _you_ have [Market Risk](Feature-Risk#market-risk) on the produ
 
 ### Conceptual Integrity Risk
 
-![Conceptual Integrity Risk](images/generated/conceptual-integrity-risk.png){margin}
+![Conceptual Integrity Risk](images/generated/conceptual-integrity-risk.png) 
 
 Sometimes, users _swear blind_ that they need some feature or other, but it runs at odds with the design of the system, and plain _doesn't make sense_.   Often, the development team can spot this kind of conceptual failure as soon as it enters the [Backlog](Prioritisation). Usually, it's in coding that this becomes apparent.  
 
@@ -66,7 +66,7 @@ This is a particularly pernicious kind of [Feature Risk](Feature-Risk) which can
 
 ### Feature Access Risk
 
-![Feature Access Risk](images/generated/feature-access-risk.png){margin}
+![Feature Access Risk](images/generated/feature-access-risk.png) 
 
 Sometimes, features can work for some people and not others:  this could be down to [Accessibility](https://en.wikipedia.org/wiki/Accessibility) issues, language barriers or localization.   
 
@@ -74,7 +74,7 @@ You could argue that the choice of _platform_ is also going to limit access:  wr
 
 ### Feature Drift Risk
 
-![Feature Drift Risk](images/generated/feature-drift-risk.png){margin}
+![Feature Drift Risk](images/generated/feature-drift-risk.png) 
 
 **Feature Drift** is the tendency that the features people need _change over time_.   For example, at one point in time, supporting IE6 was right up there for website developers, but it's not really relevant anymore.  Although that change took _many_ years to materialize, other changes are more rapid.    
 
