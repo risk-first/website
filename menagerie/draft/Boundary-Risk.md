@@ -279,4 +279,4 @@ Wicked Problems In Boundary Risk
 Boundary risk around companies, (Contracts), abstraction boundaries. 
 bigger the organisation, the more risk that you don't know what's happening outside it
 
-
+walled gardens

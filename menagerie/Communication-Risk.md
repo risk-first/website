@@ -1,7 +1,7 @@
 [Communication Risk](Communication-Risk) is the risk of communication between entities _going wrong_, due to loss or misunderstanding.
 Consider this: if we all had identical knowledge, there would be no need to do any communicating at all, and therefore and also no [Communication Risk](Communication-Risk).  
 
-![Communication Risk](images/generated/communication-risk.png){margin}
+![Communication Risk](images/generated/communication-risk.png) 
 
 But, people are not all-knowing oracles.  We rely on our _senses_ to improve our [Internal Models](Internal-Model) of the world. There is [Communication Risk](Communication-Risk) here - we might overlook something vital (like an oncoming truck) or mistake something someone says (like "Don't cut the green wire").  
 
@@ -61,7 +61,7 @@ The channel characteristics also imply suitability for certain _kinds_ of messag
 
 Shannon discusses that no channel is perfect:  there is always the **risk of noise** corrupting the signal.  A key outcome from Shannon's paper is that there is a tradeoff:  within the capacity of the channel (the **Bandwidth**), you can either send lots of information with _higher_ risk that it is wrong, or less information with _lower_ risk of errors.  And, rather like the [Kolgomorov complexity](Complexity-Risk) result, the more _randomness_ in the signal, the less compressible it is, and therefore the more _bits_ it will take to transmit.  
 
-![Channel Risk](images/generated/channel-risk.png){margin}
+![Channel Risk](images/generated/channel-risk.png) 
 
 But channel risk goes wider than just this mathematical example:  messages might be delayed or delivered in the wrong order, or not be acknowledged when they do arrive.  Sometimes, a channel is just an inappropriate way of communicating.  When you work in a different time-zone to someone else on your team, there is _automatic_ [Channel Risk](Communication-Risk#channel-risk), because instantaneous communication is only available for a few hours' a day. 
 
@@ -212,9 +212,9 @@ The protocol mediates between the message and the channel.  Where this goes wron
 
 ## Protocol Risk
 
-Generally, any time where you have different parts of a system communicating with each other, and one part can change incompatibly with another you have [Protocol Risk](Communication-Risk#protocol-risk).
+![Protocol Risk](images/generated/protocol-risk.png) 
 
-![Protocol Risk](images/generated/protocol-risk.png){margin}
+Generally, any time where you have different parts of a system communicating with each other, and one part can change incompatibly with another you have [Protocol Risk](Communication-Risk#protocol-risk).
 
 Locally, (within our own project), where we have control, we can mitigate this risk using compile-time checking (as discussed already in [Complexity Risk](Complexity-Risk#protocols-and-types)), which essentially forces all clients and servers to agree on protocol.  But, the wider the group that you are communicating with, the less control you have and the more chance there is of [Protocol Risk](Communication-Risk#protocol-risk).   
 
@@ -222,7 +222,7 @@ Let's look at some types of [Protocol Risk](Communication-Risk#protocol-risk):
  
 ### Protocol Incompatibility Risk
 
-![Protocol Risk](images/generated/protocol-incompatibility-risk.png){margin}
+![Protocol Risk](images/generated/protocol-incompatibility-risk.png) 
 
 The people you find it _easiest_ to communicate with are your friends and family, those closest to you.  That's because you're all familiar with the same protocols.  Someone from a foreign country, speaking a different language and having a different culture, will essentially have a completely incompatible protocol for spoken communication to you.
 
@@ -230,7 +230,7 @@ Within software, there are also competing, incompatible protocols for the same t
 
 ### Protocol Versioning Risk
 
-![Protocol Risk](images/generated/protocol-versioning-risk.png){margin}
+![Protocol Risk](images/generated/protocol-versioning-risk.png) 
 
 Even when systems are talking the same protocol, there can be problems.  When we have multiple, different systems owned by different parties, on their own upgrade cycles, we have **Protocol Versioning Risk**: the risk that either client or server could start talking in a version of the protocol that the other side hasn't learnt yet.  There are various mitigating strategies for this.  We'll look at two now: **Backwards Compatibility** and **Forwards Compatibility**.
 
@@ -255,7 +255,7 @@ Does human language support this?  To some extent!  New words are added to our l
 
 ### Protocol Implementation Risk
 
-![Protocol Risk](images/generated/protocol-implementation-risk.png){margin}
+![Protocol Risk](images/generated/protocol-implementation-risk.png) 
 
 A second aspect of [Protocol Risk](Communication-Risk#protocol-risk) exists in heterogenous computing environments, where protocols have been independently implemented based on standards.  For example, there are now so many different browsers, all supporting different levels of `HTTP`, `HTML` and `JavaScript` that it becomes impossible to test comprehensively over all the different versions.  To mitigate as much [Protocol Risk](Communication-Risk#protocol-risk) as possible, generally we run tests in a subset of browsers, and use a lowest-common-denominator approach to choosing protocol and language features.
 
@@ -263,13 +263,13 @@ A second aspect of [Protocol Risk](Communication-Risk#protocol-risk) exists in h
 
 ## Messages
 
-![Message Risk](images/generated/message-risk.png){margin}
+![Message Risk](images/generated/message-risk.png) 
 
 Although Shannon's Communication Theory is about transmitting **Messages**, messages are really encoded **Ideas** and **Concepts**, from an **Internal Model**.
 
 ### Internal Model Assumption Risk
 
-![Message Risk](images/generated/model-assumption-risk.png){margin}
+![Message Risk](images/generated/model-assumption-risk.png) 
 
 When we construct messages in a conversation, we have to make judgements about what the other person already knows.  When talking to children, it's often hard work because they _assume_ that you have knowledge of everything they do.  This is called [Theory Of Mind](https://en.wikipedia.org/wiki/Theory_of_mind): the appreciation that your knowledge is different to other people's, and adjusting you messages accordingly.
 
@@ -277,7 +277,7 @@ When teaching, this is called [The Curse Of Knowledge](https://en.wikipedia.org/
 
 ### Message Dependency Risk  
 
-![Message Risk](images/generated/message-dependency-risk.png){margin}
+![Message Risk](images/generated/message-dependency-risk.png) 
 
 A second, related problem is actually [Dependency Risk](Dependency-Risk), which is covered more thoroughly in the next section.  Often, messages assume that you have followed everything up to that point already, otherwise again, your [Internal Model](Internal-Model) will not be rich enough to understand the new messages.
 
@@ -297,7 +297,7 @@ Create user 53 with surname 'Smith'
 
 ### Abstraction and Misinterpretation Risk
 
-![Message Risk](images/generated/misinterpretation-risk.png){margin}
+![Message Risk](images/generated/misinterpretation-risk.png) 
 
 People don't rely on rigorous implementations of abstractions like computers do; we make do with fuzzy definitions of concepts and ideas.  We rely on **Abstraction** to move between the name of a thing and the _idea of a thing_.
 
@@ -309,7 +309,7 @@ This brings about [Misinterpretation Risk](Communication-Risk#misinterpretation-
 
 ### Abstraction and Invisibility Risk
 
-![Message Risk](images/generated/invisibility-risk.png){margin}
+![Message Risk](images/generated/invisibility-risk.png) 
 
 Another cost of **Abstraction** is [Invisibility Risk](Communication-Risk#invisibility-risk).  While abstraction is a massively powerful technique, (as we saw above in the section on [Protocols](Communication-Risk#protocols), it allows things like the Internet to happen) it lets the function of a thing hide behind the layers of abstraction and become invisible.  
 
@@ -343,17 +343,17 @@ The debt of [Invisibility Risk](Communication-Risk#invisibility-risk) comes due 
 
 ## Internal Models
 
-So finally, we are coming to the root of the problem:  communication is about transferring ideas and concepts from one [Internal Model](Internal-Model) to another. 
+![Internal Model Risk](images/generated/internal-model-risk.png) 
 
-![Internal Model Risk](images/generated/internal-model-risk.png){margin}
+So finally, we are coming to the root of the problem:  communication is about transferring ideas and concepts from one [Internal Model](Internal-Model) to another. 
 
 The communication process so far has been fraught with risks, but we have a few more to come.
 
 ### Trust Risk & Belief Risk
 
-![Message Risk](images/generated/trust-risk.png){margin}
+![Internal Model Risk](images/generated/trust-risk.png) 
 
-![Message Risk](images/generated/belief-risk.png){margin}
+![Internal Model Risk](images/generated/belief-risk.png) 
 
 Although protocols can sometimes handle security features of communication (such as [Authentication](https://en.wikipedia.org/wiki/Authentication) and preventing [man-in-the-middle attacks](https://en.wikipedia.org/wiki/Man-in-the-middle_attack)), trust goes further than this, intersecting with [Agency Risk](Agency-Risk):  can you be sure that the other party in the communication is acting in your best interests?
  
@@ -367,7 +367,7 @@ From the point-of-view of [Marketing Communications](Communication-Risk#Marketin
 
 ### Learning-Curve Risk
 
-![Message Risk](images/generated/learning-curve-risk.png){margin}
+![Internal Model Risk](images/generated/learning-curve-risk.png) 
 
 If the messages we are receiving force us to update our [Internal Model](Internal-Model) too much, we can suffer from the problem of "too steep a [Learning Curve](https://en.wikipedia.org/wiki/Learning_curve)" or "[Information Overload](https://en.wikipedia.org/wiki/Information_overload)", where the messages force us to adapt our [Internal Model](Internal-Model) too quickly for our brains to keep up.  
 
