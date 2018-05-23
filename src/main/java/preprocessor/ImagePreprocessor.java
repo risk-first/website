@@ -38,7 +38,7 @@ public class ImagePreprocessor {
 	private static void process(BufferedReader br, File origin) throws Exception {
 		String line = br.readLine();
 		while (line != null) {
-			if (line.trim().contains("(images/generated/")) {
+			if (line.trim().contains("images/generated/")) {
 				processGeneratedImage(line);
 				System.out.println(line);
 			}
@@ -49,7 +49,7 @@ public class ImagePreprocessor {
 	private static void processGeneratedImage(String line) throws Exception {
 		
 		try {
-			String imagePath = line.substring(line.lastIndexOf("(")+1, line.lastIndexOf(".png)"));
+			String imagePath = line.substring(line.lastIndexOf("{")+1, line.lastIndexOf(".png}"));
 			String outputPath = "../website.wiki/"+imagePath+".png";
 			
 			// check if we have a template

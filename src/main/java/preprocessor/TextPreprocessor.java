@@ -90,9 +90,9 @@ public class TextPreprocessor {
 	}
 
 	private static void processImage(String link, String text, String url, Matcher m) {
-		if (link.contains("margin")) {
+		if (link.contains("-risk.png")) {		// needs to be in margin
 			System.out.println("\\marginpar{");
-			System.out.println("  \\vspace*{0cm}\\includegraphics[width=2cm,height=2cm]{"+url+"}");
+			System.out.println("  \\vspace*{0cm}\\includegraphics[width=2cm,height=5cm]{"+url+"}");
 			System.out.println("}");
 		} else {
 			System.out.println(link);
