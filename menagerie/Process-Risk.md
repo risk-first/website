@@ -100,6 +100,16 @@ It is interesting that we _don't_ do that:  although we know the driving process
 
 The point of this is that we _accept_ [Operational Risk] as we go.  However, if opportunities rise to mitigate it, which don't leave us with a net risk increase elsewhere, we'll make those improvements.      
 
+## Counterparty Risk
+
+Where the process you depend on is being run by a third-party organisation, (or that party depends on you) you are looking at [Counterparty Risk]:
+
+> tbd.
+
+Money is _changing hands_ between you and the supplier of the process, and often, the money doesn't transfer at the same time as the process is performed.  Let's look at an example:  Instead of hosting my website on a server in my office, I could choose to host my software project with an online provider.   I am trading [Complexity Risk] for [Counterparty Risk], because now, I have to care that the supplier is solvent.  There's a couple of ways this could go wrong:  They may _take my payment_, but then turn off my account.  Or, they could go bankrupt, and leave me with the costs of moving to another provider (this is also [Dead-End Risk]).  
+
+Mechanisms like _insurance_ and _guarantees_ help reduce this risk:  
+
 ## Feedback Loops
 
 [Operational Risk] is usually incurred for outliers: processes tend to work well for the common cases, because *practice makes perfect*.  Processes are really tested when unusual situations occur.  Having mechanisms to deal with edge-cases can incur [Complexity Risk]Complexity-Risk), so often it's better to try and have clear boundaries of what is "in" and "out" of the process' domain.
