@@ -62,6 +62,8 @@ Arguably, this site uses the term 'Risk' wrongly:  most literature suggests [ris
 
 I am using **risk** everywhere because later we will talk about specific risks (e.g. [Executable Boundary Risk](Executable-Boundary-Risk) or [Technical Debt Risk](Technical-Debt)), and it doesn't feel grammatically correct to talk about those as **uncertainties**, especially given the pre-existing usage in Banking of terms like [Operational risk](https://en.wikipedia.org/wiki/Operational_risk) or [Reputational risk](https://www.investopedia.com/terms/r/reputational-risk.asp) which are also not really a-priori measurable.
 
+e.g. Schedule Risk
+
 ## The Opposite Of Risk Management
 
 Let's look at the classic description of Risk Management:

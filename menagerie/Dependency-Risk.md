@@ -1,208 +1,163 @@
 **Dependency Risk** is the risk you take on whenever you have a dependency on something (or someone) else.   One simple example could be that the software service you write might depend on a server to run on.  If the server goes down, the service goes down too.  In turn, the server depends on electricity from a supplier, as well as a network connection from a provider.  If either of these dependencies aren't met, the service is out of commission.
 
-Dependencies can be on _events_, _people_, _teams_, _software_, _services_, _processes_: pretty much _anything_.  Dependencies add risk to any project because the reliability of the project itself is now a function involving the reliability of the dependency.  
+Dependencies can be on _events_, _people_, _teams_, _processes_, _software_, _services_, _money_: pretty much _anything_.  Dependencies add risk to any project because the reliability of the project itself is now a function involving the reliability of the dependency.  
 
 In order to avoid repetition, and also to break down this large topic, we're going to look at this over 4 sections.   
- - This first section will look at dependencies _in general_, and some of the variations on [Dependency Risk](Dependency-Risk).
+ - In this first section will look at dependencies _in general_, and specifically on _events_, and some of the variations on [Dependency Risk](Dependency-Risk).
  - Then, we'll move on to look specifically at [Software Dependency Risk](Software-Dependency-Risk), covering using libraries, software services and building on top of the work of others.
  - Then, we'll take a look at [Process Risk](Process-Risk), which is still [Dependency Risk](Dependency-Risk), but we'll be considering more organisational factors and how bureaucracy comes into the picture.  
  - Then, we'll look at some of the specific problems around working with other people or businesses in [Agency Risk](Agency Risk).
-
+ - Finally, we'll wrap up this analysis with a closer look at [Boundary Risk](Boundary-Risk) and [Dead-End Risk].
+ 
 ## Why Have Dependencies?
 
+Luckily for us, the things we depend on in life are, for the most part, abundant:  water to drink, air to breathe, light, heat and most of the time, food for energy.  This isn't even lucky though: life has adapted to build dependencies on things that it can _rely_ on.  Although life exists at the bottom of the ocean around thermal vents (tbd), it is a very different kind of life to us, and has a different set of dependencies given it's circumstances. 
 
+This tells us a lot about dependency risk right here:
+ - On the one hand, depending on something else is very often helpful, and quite often essential.  (For example, all animals that _move_ seem to depend on oxygen).
+ - However, as soon as you have dependencies, you need to take into account of their _reliability_. (Living near a river or stream gives ou access to fresh water, for example).  
+ - Successful organisms _adapt_ to the dependencies available to them (like the thermal vent creatures).
+ - There is likely to be _competition_ for a dependency when it is scarce (think of droughts and famine).
 
+So, dependencies are a trade-off.  They give with one hand and take with the other.  Our modern lives are full of dependency (just think of the chains of dependency needed for putting a packet of biscuits on a supermarket shelf, for example), but we accept this extra complexity because it allows tbd.
 
+## Event Dependencies
 
+We rely on events occuring all the time in our lives, and so this is a good place to start in our analysis of [Dependency Risk] generally.   And, as we will see, all the risks that apply to events pretty much apply to all the other kinds of dependencies we'll look at.    
 
-## Reliability
+Arguably, the event dependencies are the simplest to express, too: usually, a _time_ and a _place_.   For example, "I can't start shopping until the supermarket opens at 9am", or "I must catch my bus to work at 7:30am".  In the first example, you can't _start_ something until a particular event happens.  In the latter example, you must _be ready_ for an event at a particular time.
 
-Reliability of an overall system is constrained by the reliability
+### Events Mitigate Risk...
 
+Having an event occur in a fixed time and place is _mitigating risk_:
 
-tbd.  split this out into a section.  there's so much more here.
+- By taking the bus, we are mitigating our own [Schedule Risk](Schedule-Risk):  we're (hopefully) reducing the amount of time we're going to spend on the activity of getting to work.  
+- A bus needn't necessarily _have_ a fixed timetable: it could wait for each passenger until they turned up, and then go.  (A bit like ride-sharing works).  This would be a total disaster from a [Coordination Risk](Coordination-Risk) perspective, as one person could cause everyone else to be really really late.  Events are a mitigation for [Coordination Risk](Coordination-Risk).   Having a fixed time for doing something mitigates [Coordination Risk](Coordination-Risk) by turning it into [Schedule Risk](Schedule-Risk).  Agreeing a date for a product launch, for example, allows lots of teams to coordinate their activities.
+- It's not entirely necessary to even take the bus:  you could walk, or go by another form of transport.  But, effectively, this just swaps one dependency for another:  if you walk, this might well take longer and use more energy, so you're just picking up [Schedule Risk] in another way.  If you drive, you have a dependency on your car instead.  So, there is often an _opportunity cost_ with dependencies.  Using the bus might be a cheap way to travel.  You're therefore imposing less [Dependency Risk] on a different scarce resource - your money.
+
+### But, Events Lead To Attendant Risk
+
+By _deciding to use the bus_ we've **Taken Action**.  However, as we saw in [A Simple Scenario](A-Simple-Scenario), this means we pick up [Attendant Risks](Risk).  Although you might be able to think of a few more, in this section, we're going to look at the following ones:
+
+So, we're going to look at [Dependency Risk] for our toy events from 7 different perspectives, many of which we've already touched on in the other sections:
+
+ - [Schedule Risk]
+ - [Reliability Risk]
+ - [Scarcity Risk]
+ - [Communication Risk](Communication-Risk)
+ - [Complexity Risk](Complexity-Risk)
+ - [Fit Risk] and Baggage
+ - [Dead-End Risk] and [Boundary Risk](Complexity-Risk)  
+ 
+Let's look at each of these in turn.
+
+## Schedule Risk
+
+By agreeing a _time_ and _place_ for something to happen, you're introducing [Deadline Risk](Schedule-Risk#Deadline-Risk).  Miss the deadline, and you miss the bus, miss the start of the meeting or get fined for not filling your tax return on time.  
+
+As discussed above schedules (such as bus timetables) exist so that _two or more parties can coordinate_, and [Deadline Risk](Schedule-Risk#Deadline-Risk) is on _all_ of the parties.  While there's a risk I am late, there's also a risk the bus is late.  I might miss the start of a concert, or the band might keep everyone waiting.   
+ 
+Each party can mitigate [Deadline Risk](Schedule-Risk#Deadline-Risk) with _slack_.  That is, ensuring that the exact time of the event isn't critical to your plans:   Don't build into your plans a _need_ to start shopping at 9am.   Arrive at the bus-stop _early_.   The amount of slack you build into the schedule is likely dependent on the level of risk you face:  I tend to arrive a few minutes early for a bus, because the risk is _low_ (there'll be another bus along soon), however I try to arrive over an hour early for a flight, because I can't simply get on the next flight straight away, and anyway, I've already paid for it.
+ 
+[Deadline Risk](Schedule-Risk#Deadline-Risk) becomes very hard to manage when you have to coordinate actions with lots of tightly-constrained events.  So what else can give?  We can reduce the number of _parties_ involved in the event, which reduces risk, or, we can make sure all the parties are in the same _place_ to begin with.  
+
+## Reliability Risk
+
+[Deadline Risk](Schedule-Risk#Deadline-Risk) is really a kind of reliability issue: if you can understand which parties are unreliable, you have a much better handle on your [Deadline Risk](Schedule-Risk#Deadline-Risk). 
+
+Luckily, there is quite a lot of existing science around reliability.  For example:  
+ - If a component **A** depends on component **B**, unless there is some extra redundancy around **B**, then **A** _can't be more reliable than **B**. 
+ - A [Single Point Of Failure] in a system 
+ - Are there bugs in **B** that are going to prevent it working correctly in all circumstances?
+
+Reliability of an overall system is constrained by the reliability.  How does re
 
 Is it a known unknown?  You know you might be going the wrong way.
 
-Muneer building the extractor, using ASP.net.. turned out we don't deploy .net/ASP only Java
-
-
-
-## Events 
-
-The simplest type of **Dependency Risk** is around events.   For example, "I can't start shopping until the supermarket opens at 9am", or "I must catch my bus to work at 7:30am".  In the first example, you can't _start_ something until a particular event happens.  In the latter example, you must _be ready_ for an event at a particular time.
-
-When we have a dependency on an event, we depend on the reliability of that event occurring when it says it will occur.  We pick up [Schedule Risk](Schedule-Risk) when it doesn't.  
-
-Both of these types of risk can be mitigated with _slack_.  That is, ensuring that the exact time of the event isn't critical to your plans:   Don't build into your plans a _need_ to start shopping at 9am.  Arrive at the bus-stop _early_ in order to mitigate your own [Schedule Risk](Schedule-Risk). 
-
-[Schedule Risk](Schedule-Risk) becomes very hard to manage when you have to coordinate actions  with lots of tightly-constrained events.  Rehearsal?
-
-Sometimes, events are a mitigation for [Coordination Risk](Coordination-Risk).   Having a fixed time for doing something mitigates [Coordination Risk](Coordination-Risk) by turning it into [Schedule Risk](Schedule-Risk).  Agreeing a date for a product launch, for example, allows lots of teams to coordinate their activities.  
-
-
-## People and Teams
-
-Often, events are outside of our control, and we just have to plan around them.  But usually events occur at certain times because people have chosen them to, in order to manage [Coordination Risk](Coordination-Risk).
-
-
-## Types Of Dependency Risk
-
-So, let's look at the different kinds of **Dependency Risk** we meet.  Luckily, we've actually already come across most of this stuff before: there's a lot of overlap between the risks due to dependencies, and the risks we've already seen.   It looks something like this:
-
-![Venn Dependency Risk](images/venn_dependency_risk.JPG)
-
-So, we're going to focus on [Dependency Risk] from 5 different perspectives:
-
- - **Reliability Risk**
- - [Communication Risk](Communication-Risk)
- - [Scheduling Risk](Scheduling-Risk)
- - [Complexity Risk](Complexity-Risk)
- - [Dead-End Risk](Complexity-Risk)
- 
-**Reliability Risk** is the new one here, so let's look at that first.
-
-### Reliability Risk
-
- - If a component **A** uses component **B**, unless there is some extra redundancy around **B**, then **A** _can't be more reliable than **B**. 
- 
- - Are there bugs in **B** that are going to prevent it working correclty in all circumstances?
- 
 (This might sound unlikely, but I've made several career decisions off the back of this)
 
 Dependency and reliability
-
 Pinto
 https://en.wikipedia.org/wiki/Reliability_engineering
-
 FECMA FEMA https://en.wikipedia.org/wiki/Failure_mode_and_effects_analysis
-
 Diagram of a distributed software system - where can failures hide?
-
 SPOFs.
 
+## Scarcity Risk
 
-### Communication Risk
+Let's get back to the bus:  what if, when it arrives, it's already full of passengers?  Let's term this, [Scarcity Risk] - the chance that a dependency is over-subscribed and you can't use it the way you want.  This is clearly an issue for nearly every kind of dependency: buses, supermarkets, concerts, teams, services and people.  
 
-We've already looked at communication risk... tbd.
+You could also call this _availability risk_ or _capacity risk_ of the resource.  Here are a selection of mitigations:
+ - **Buffers**: Smoothing out peaks and troughs in utilisation tbd.
+ - **Reservation Systems**: giving clients information _ahead_ of the dependency usage about whether the resource will be available to them.
+ - **Graceful degradation**: Ensuring _some_ service in the event of over-subscription.  It would be no use allowing people to cram onto the bus until it can't move.
+ - **Demand Management**:  Having different prices during busy periods helps to reduce demand.  Having "first class" seats means that higher-paying clients can get service even when the train is full.  [Uber] adjust prices in real-time by so-called [Surge Pricing].
+ - **Queues**: Again, these provide a "fair" way of dealing with scarcity by exposing some mechanism for prioritising use of the resource.  Buses operate a first-come-first-served system, whereas emergency departments in hospitals triage according to need.
+ - **Pools**: Reserving parts of a resource for particular customers.  For exampl
+ - **Horizontal Scaling**: allowing a scarce resource to flexibly scale according to how much demand there is.   (For example, putting on extra buses when the trains are on strike, or opening extra check-outs at the supermarket.)
 
- - The concept that there is a module **D** which solves my problem isn't something I'd even considered.    
- - I'd like to have a dependency on some module **D**, but I don't even know what to search for.  
- - I'd like to have a dependency on some module **D**, but there are multiple candidates for this dependency, and I don't know the "best" one.
- - Or, I know **D**, but I can't figure out how to solve my problem in it.
- - Or, given that I've chosen **D**, I now need to persuade my team that **D** is the correct solution...
- - ... and then they also need to understand **D** to do their job too.
+## Communication Risk
+
+We've already looked at communication risk in a lot of depth, and we're going to go deeper still in [Software Dependency Risk](Software-Dependency-Risk), but let's look at some general issues around communicating dependencies.  Recall from the discussion on [Marketing Communications](Communication-Risk#Marketing-Communications) which started like this:
+
+ - The concept that there is such a thing as **D** which solves my problem isn't something I'd even considered.    
+ - I'd like to use something like **D**, but how do I find it?  
+ - There are multiple implementations of **D**, which is the best one for the task?
+ - I know **D**, but I can't figure out how to solve my problem in it.
  
-(But:  is understanding **D** more trouble than understanding <yourcode>?)  
+Let's apply this to our Bus scenario:
 
-I didn't even know I was missing Redux until I'd heard of it.
-
-### Scheduling Risk
-
-![Dependency](images/dependency_depends.png)
-
-If a component **A** of our project _depends_ on **B** for some kind of processing, you might not be able to complete **A** before writing **B**.   This makes _scheduling_ the project harder, and if component **A** is a risky part of the project, then the chances are you'll want to mitigate risk there first.  There are a couple of ways to do this:
-
-- **Standards**:  If component **B** is a database, a queue, mail gateway or something else with a standard interface, then you're in luck.   Write **A** to those standards, and find a cheap, simple implementation to test with.  This gives you time to sort out exactly what implementation of **B** you're going for.  This is not a great long-term solution, because obviously, you're not using the _real_ dependency- you might get surprised when the behaviour of the real component is subtly different.  But it can reduce [Schedule Risk](Schedule-Risk) in the short-term.
-- **Coding To Interfaces**:  If standards aren't an option, but the surface area of **B** that **A** uses is quite small and obvious, you can write a small interface for it, and work behind that, using a [Mock](https://en.wikipedia.org/wiki/Mock_object) for **B** while you're waiting for finished component.  Write the interface to cover only what **A** _needs_, rather than everything that **B** _does_ in order to minimize the risk of [Leaky Abstractions](https://en.wikipedia.org/wiki/Leaky_abstraction).
-- **Do The Homework**:  Accept that **B** is going to bite you and try to make the decision now.  Pick the best 3rd-party component you can find (preferably on a trial basis), whilst being aware that you might get it wrong and need to change later.   Write [Tests](Testing) to alleviate [Communication Risk](Communication-Risk) now, and then to use to evaluate alternatives if need be.
+ - Am I aware that there is public transport in my area?
+ - How do I find out about the different options?
+ - How do I choose between buses, taxis, cars etc.
+ - How do I understand the timetable, and apply it to my problem?
  
-### Dead-End Risk
+Finding out about bus schedules is easy.  But in a large company, [Communication Risk] and especially [Invisibility Risk] are huge problems:  this tends to get called "Silo Thinking", that is, ignoring what else is going on in other parts of the company or "not invented here" syndrome.   These are all varieties of communication risk.   
 
-First, when you choose a new component to depend on, you can't be certain that it's going to work out in your favour.  There's [Dead End Risk](Complexity Risk] that you've chosen the wrong thing.  You can mitigate this somewhat by searching resources online like [StackOverflow]() to find other people using the dependency in the same way as you, or alternatively by  [Prototyping](Prototyping) hard in order to uncover as much of the [Hidden Risk](Risk) as possible.
-
-Second, you can't always be sure that a dependency now will always have the same guarantees in the future: 
-- **Ownership changes** (e.g. [Oracle](http://oracle.com) buys [Sun](http://sun.com) who own [Java](https://en.wikipedia.org/wiki/Java_%28programming_language%29) for example)
-- **Licensing changes**.  (e.g. [Oracle](http://oracle.com) buys **Tangosol** who make [Coherence](https://en.wikipedia.org/wiki/Oracle_Coherence) for example)
-- Security updates not applied.
-- **Better alternatives become available**:  As a real example of this, I began a project in 2016 using [Apache Solr]().  However, in 2018, I would probably use [ElasticSearch](https://en.wikipedia.org/wiki/Elasticsearch).  In the past, I've built websites using [Drupal]() and then later converted them to use [Wordpress]().
-
-Some predictors:
- 
-
- 
- - Or they produce a new version which is incompatible with your old version, forcing you to upgrade?  (libraries, webservices)
- 
- - Dependency Change - REST endpoints, etc.   Semantic versioning .  Hickey
-
-
-### Complexity Risk
-
-I don't know whether a library is actually going to reduce my [Codebase Risk](Complexity-Risk) or make it worse. 
-
-Although 
-
-These stem from  
- 
- - Jar hell:  are you bringing in more stuff than is helping you?   Are you really overall decreasing complexity on the project or making it worse?  [Versioning Risk](
- (testing jars vs runtime jars.  how integrated is the jar in question?  Is it everywhere, or is it behind an interface?
- 
- - Shipped size complexity - Spring.  Sometimes, you just end up with a ton of jars, even when they don't collide on version numbers. (Kolmogorov Complexity?)
-
- - Big O Complexity Again (Complexity-Risk)
-
-
-Example
-
-In a project at work, coming across use of Hazlecast to cache the session IDs.   But, the app is only used once every month, and session IDs can be obtained in milliseconds.   Why cache them?  By doing this, you have introduced extra dependency risk, cache invalidation risks, networking risks, synchronisation risks and so on, for actually no benefit at all.  Unless, it’s CV building.  
-
-
-Sometimes, the amount of code and complexity _goes up_:  Spring Templates example:  really hard to debug, more code.  But, better?  No chance of injection attacks.
-
-
-## Choosing And Using A Library
-
-m&t risk, obvs.  but
-1.  Is it alive?
-2.  Is it open source?
-3.  Well trafficked
-4.  Namespace
-5.  Look at the source
-6.  Alternatives available?
-7.  Traction (vs. expected traction)
-
-
-Trying things out usually has a low Dead end Risk vs coding yourself, and you can usually try several
-
-- number of dependencies it has
-
-Write as little code as possible.
-
-
-
--- we don't use bounded rationality.
-
-
-how to choose libraries
-
--- the dependency you already have (e.g. spring)
-
-## Choosing Libraries
-
-- 3rd party contractors
-
-dependencies between teams
- 
-dependencies between modules
-Dependency Mismatch
-gantt charts
-
-
-Visibility Risk
+Ironically, _more communication_ might not be the answer - if channels are provided where 
 
 Silo thinking 
 
 Lots of beginners don't see dependency risk:  they have the dependencies round the wrong way in their heads.  eg. sunny with jenkins and environment variables.  You can't solve a problem if you are working down the line of dependencies but your issue is with an earlier one
 
-counterparty risk
-insurance
-
-
 dependency ijection - invisibile dependencies
 
-reliability risk
+### Dependencies Are Abstractions
+
+Dependencies are usually a mitigation for complexity risk, and we'll investigate that in much more detail in [Software Dependency Risk].  The reason for this is that a dependency gives you an _abstraction_: you no longer need to know _how_ to do something, (that's the job of the dependency), you just need to interact with the dependency properly to get the job done.  Buses are _perfect_ for people who can't drive, after all.
+
+But this means that all of the issues of abstractions that we covered in [Communication Risk]() apply:
+ - There is [Invisiblity Risk] because you probably don't have a full view of what the dependency is doing.  Nowadays, bus stops have a digital "arrivals" board which gives you details of when the bus will arrive, and shops publish their opening hours online.  But, abstraction always means the loss of some detail.
+ - There is [Misinterpretation Risk], because often the dependency might mistake your instructions.  This is endemic in software, where it's nearly impossible to describe exactly what you want up-front.  
+ 
+## Fit Risk
+
+Sometimes, the bus will take you to lots of in-between places you _didn't_ want to go.   This is [Fit Risk] and we saw this already in the page on [Feature Risk].  There, we considered two problems:
+ - The feature (or now, dependency) doesn't provide all the functinality you need.  This was [Fit Risk].  An example might be the supermarket not stocking everything you wanted.
+ - The feature / dependency provides far too much, and you have to accept more complexity than you need.  This was [Conceptual Integrity Risk].  An example of this might be the supermarket being _too big_, and you spend a lot longer navigating it than you wanted to.
+ 
+ 
+diagram tbd
 
 
+### Dead-End Risk and Boundary Risk
 
-Dealing with Dependency Risk is what project managers do
+When you choose something to depend on, you can't be certain that it's going to work out in your favour.  Sometimes, the path from your starting point to your goal on the [Risk Landscape](Risk-Landscape) will take you to dead ends:  places where the only way towards your destination is to lose something, and do it again another way.  This is [Dead End Risk](Complexity-Risk#Dead-End-Risk], which we looked at before. 
+
+[Boundary Risk] is another feature of the risk landscape:  when you make a decision to use one dependency over another, you are picking a path on the risk landscape that _precludes_ other choices.  After all, there's not really much cost in a [Dead End] if you've not had to follow a path to get to it.  
+
+We're also going to look at [Boundary Risk] in more detail later, but I want to introduce it here. Here are some examples: 
+- If I choose to program some software in Java, I will find it hard to integrate libraries from other languages.  The dependencies available to Java software are different to those in Javascript, or C#.  Having gone down a Java route, there are _higher risks_ associated with choosing incompatible technologies.  Yes, I can pick dependencies that use C# (still), but I am now facing greater complexity risk than if I'd just chosen to do everything in C# in the first place.
+- If I choose one database over another, I am _limited to the features of that database_.  This is not the same as a dead-end:  I can probably build what I want to build, but the solution will be "bounded" by the dependency choices I make.    One of the reasons we have standards like [JDBC] is to mitigate [Dead End Risk] around databases, so that we can move to a different datbase later.
+- If I choose to buy a bus ticket, I've made a decision not to travel by train, even though later on it might turn out that the train was a better option.  Buying the bus ticket is [Boundary Risk]:  I may be able to get a refund, but having chosen the dependency I've set down a path on the risk landscape.
+
+## Managing Dependency Risk
+
+Arguably, managing dependency risk is _what Project Managers do_.  Their job is to meet the [Goal] by organising the available dependencies into some kind of useful order.  
+
+There are _some_ tools for managing dependency risk:  [Gantt Charts] for example, arrange work according to the capacity of the resources (i.e. dependencies) available, but also the _dependencies between the tasks_.   If task B requires the outputs of task A, then clearly task A comes first and task B starts after it finishes.  We'll look at this more in [Process Risk](Process-Risk). 
+
+We'll look in more detail in the _practices_ part, later.   
+
+
 

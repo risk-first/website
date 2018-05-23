@@ -243,8 +243,7 @@ Sometimes, feature-creep happens because either managers feel they need to keep 
 
 ![Dead-End Risk](images/generated/dead-end-risk.png) 
 
-[Dead-End Risk](Complexity-Risk#dead-end-risk) is where you build functionality that you _think_ is useful, only to find out later that actually, it was 
-a dead-end, and is superceded by something else.
+[Dead-End Risk](Complexity-Risk#dead-end-risk) is where you build functionality that you _think_ is useful, only to find out later that actually, it was a dead-end, and is superceded by something else.
 
 For example, let's say that the Accounting sub-system needed password protection (so you built this).  Then the team realised that you needed a way to _change the password_ (so you built that).   Then, that you needed to have more than one user of the Accounting system so they would all need passwords (ok, fine).  
 

@@ -1,3 +1,5 @@
+AND DEAD END RISK
+
 **Boundary Risk** is an emergent risk, which exists at the intersection of [Complexity Risk](Complexity-Risk), [Dependency Risk](Dependency-Risk) and [Communication Protocol Risk](Communication-Risk).  Because of that, it's going to take a bit of time to pick it apart and understand it, so we're going to build up to this in stages.
 
 ## Hand Tools
@@ -212,6 +214,7 @@ boundary risk is also like dead-end risk.. consider the point from the risk land
 But originally, boundary risk referred to the fact that the boundaries were around the software.  
 
 this kind of made sense: running on your pc would be different than running on an xbox, linode etc.
+Muneer building the extractor, using ASP.net.. turned out we don't deploy .net/ASP only Java
 
 
 
