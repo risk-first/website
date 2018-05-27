@@ -2,12 +2,13 @@
 
 Dependencies can be on _events_, _people_, _teams_, _processes_, _software_, _services_, _money_: pretty much _anything_.  Dependencies add risk to any project because the reliability of the project itself is now a function involving the reliability of the dependency.  
 
-In order to avoid repetition, and also to break down this large topic, we're going to look at this over 4 sections.   
+In order to avoid repetition, and also to break down this large topic, we're going to look at this over 6 sections:   
  - In this first section will look at dependencies _in general_, and specifically on _events_, and some of the variations on [Dependency Risk](Dependency-Risk).
  - Then, we'll move on to look specifically at [Software Dependency Risk](Software-Dependency-Risk), covering using libraries, software services and building on top of the work of others.
  - Then, we'll take a look at [Process Risk](Process-Risk), which is still [Dependency Risk](Dependency-Risk), but we'll be considering more organisational factors and how bureaucracy comes into the picture.  
  - Then, we'll look at some of the specific problems around working with other people or businesses in [Agency Risk](Agency Risk).
  - Finally, we'll wrap up this analysis with a closer look at [Boundary Risk](Boundary-Risk) and [Dead-End Risk].
+ - A short wrap-up tbd.
  
 ## Why Have Dependencies?
 
@@ -140,7 +141,7 @@ Sometimes, the bus will take you to lots of in-between places you _didn't_ want 
 diagram tbd
 
 
-### Dead-End Risk and Boundary Risk
+## Dead-End Risk and Boundary Risk
 
 When you choose something to depend on, you can't be certain that it's going to work out in your favour.  Sometimes, the path from your starting point to your goal on the [Risk Landscape](Risk-Landscape) will take you to dead ends:  places where the only way towards your destination is to lose something, and do it again another way.  This is [Dead End Risk](Complexity-Risk#Dead-End-Risk], which we looked at before. 
 
@@ -157,7 +158,7 @@ Arguably, managing dependency risk is _what Project Managers do_.  Their job is 
 
 There are _some_ tools for managing dependency risk:  [Gantt Charts] for example, arrange work according to the capacity of the resources (i.e. dependencies) available, but also the _dependencies between the tasks_.   If task B requires the outputs of task A, then clearly task A comes first and task B starts after it finishes.  We'll look at this more in [Process Risk](Process-Risk). 
 
-We'll look in more detail in the _practices_ part, later.   
+We'll look in more detail in the _practices_ part, later.   But now let's get into the specifics with [Software Dependency Risk](Software-Dependency-Risk).
 
 
 

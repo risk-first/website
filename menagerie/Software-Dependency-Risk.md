@@ -167,8 +167,6 @@ What Do I want to say?
   (find some useful articles on this and summarize them, explain why they mitigate the risks)
 - Evolution
 - Baggage
-
-
 - Versioning
   
 
