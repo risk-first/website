@@ -82,9 +82,28 @@ Finally, Crisis Management is _still just Risk Management_:  the crisis (Earthqu
 
 Yes, it's fine to say "we're in crisis", but to assume there is a different strategy for dealing with it is a mistake:  this is the [Fallacy of Sunk Costs](https://en.wikipedia.org/wiki/Sunk_costs). 
 
-## Scale and Panic Invariance
+## Invariances #1: Panic Invariance
+
+You would expect then, that any methods for managing software delivery should be _invariant_ to the level of crisis in the project.  If, for example, a project proceeds using [Scrum] for eight months, and then the deadline looms and everyone agrees to throw Scrum out of the window and start hacking, then _this implies there is a problem with Scrum_.  Or at least, the way it was being implemented.  
+
+I call this **Panic Invariance**:   the methodology shouldn't need to change given the amount of pressure or importance on the table.
+
+## Invariances #2: Scale Invariance
+
+Another test of a methodology is that it shouldn't fall down when applied at different _scales_.   Because, if it does, this implies that there is something wrong with the methodology.   The same is true of physical laws:  if they don't apply under all circumstances,  then that implies something is wrong.  For example, Newton's Laws of Motion fail to calculate the orbital period of Mercury, and this was an early win for Einstein's Relativity.  
+
+Some methodologies are designed for certain scales:  Extreme Programming is designed for small, co-located teams.  And, that's useful.  But the fact it doesn't scale tells us something about it:  chiefly, that it considers certain _kinds_ of risk, while ignoring others.  At small scales, that works ok, but at larger scales, the bigger risks increase too fast for it to work.
 
 tbd.
+
+So ideally, a methodology should be applicable at _any_ scale:  
+ - A single class or function
+ - A collection of functions, or a library
+ - A project team
+ - A department
+ - An entire organisation
+
+If the methodology _fails at a particular scale_, this tells you something about the risks that the methodology isn't addressing.  It's fine to have methodologies that work at different scales, and on different problems.   One of the things that I am exploring with Risk First is trying to place methodologies and practices within a framework to say _when_ they are applicable.
 
 ## Value
 
@@ -93,18 +112,79 @@ tbd.
  - **The pay-off is risky**: Since the **Value** is created in the future, we can't be certain about it happening - we should never consider it a done-deal.  **Future Value** is always at risk.  In finance, for example, we account for this in our future cash-flows by discounting them according to the risk of default.
  - **The pay-off amount is risky**:  Additionally, whereas in a financial transaction (like a loan, say), we might know the size of a future payment, in IT projects we can rarely be sure that they will deliver a certain return.  On some fixed-contract projects this sometimes is not true: there may be a date when the payment-for-delivery gets made, but mostly we'll be expecting an uncertain pay-off. 
  
-## Time Value of Risk
+**Risk-First** is a particular _view_ on reality.  It's not the only one.  However, I am going to try and make the case that it's an underutilized one that has much to offer us.
 
-In exactly th
+## Speed
+
+For example, in [Rapid Development] by Steve McConnell we have the following diagram:
+
+![Rapid Development Pillars](images/rapid_development_pillars.png)  
+
+tbd. redraw this.
+
+And, this is _fine_, McConnel is structuring the process from the perspective of _delivering as quickly as possible_.  However, here, I want to turn this on it's head.  Exploring Software Development from a risk-first perspective is an under-explored technique, and I believe it offers some useful insights.   So the aim here is to present the case for viewing software development like this:
+
+tbd.  risk-first diagram. 
  
+## Net Present Risk
  
-## Urgency vs Importance 
+If we can view software delivery from the point of view of _value_, then why can't we apply the same tools to [Risk] too?  In order to do this, let's review "Eisenhower's Box" model.  This considers two variables:
 
---eisenhower's box
-tbd
+ - How valuable the work is (Importance)
+ - How soon it is needed (Urgency)
 
+tbd.  image from wikipedia.  text from wikipedia.
+
+Here, we're considering a synthesis of both _time_ and _value_.  But [Net Present Value] allows us to discount value in the future, which offers us a way to reconcile these two variables:
+
+chart of discounting into the future tbd.
+
+Let's do the same thing with risk?  Let's introduce the concept of [Net Present Risk], or NPR:
+
+> Net Present Risk is tbd.
+
+Let's look at a quick example to see how this could work out.  Let's say you had the following 3 risks:
+
+- Risk **A**, which will cost you £50 in 5 year's time.
+- Risk **B**, which will cost you £70 in 8 year's time.
+- Risk **C**, which will cost you £120 in 18 year's time.
+
+Which has the biggest NPR?  Well, it depends on the discount rate that you apply.  Let's assume we are discounting at 6% per year.  A graph of the discounted risks looks like this:
+
+tbd, see numbers
+
+On this basis, the biggest risk is **B**, at about #45.  If we _reduce_ the discount factor to 3%, we get a different result:
+
+tbd, see numbers.
+
+Now, risk **C** is bigger.  
+
+Because this is _Net_ Present Risk, we can also use it to make decisions about whether or not to mitigate risks.   Let's consider the cost of mitigating each risk _now_:
+
+- Risk **A** costs £20 to mitigate
+- Risk **B** costs £50 to mitigate
+- Risk **C** costs £100 to mitigate
+
+Which is the best deal?
+
+Well, under the 6% regime, only Risk **A** is worth mitigating, because you spend £20 today to get rid of #40 of risk (today).  The NPR is positive at around £20, whereas for **B** and **C** mitigations it's under water.
+
+tbd.
+
+Under a 3% regime, risk **A** and **B** are _both_ worth mitigating, as you can see in this graph:
 
 ## Discounting the Future To Zero
+
+I have worked in teams sometimes where the blinkers go down, and the only thing that matters is _now_.    They may apply a rate of 60% per-day, which means that anything with a horizon over a week is irrelevant.   Regimes of such [hyperinflation] are a sure sign that something has _really broken down_ within a project.  Consider in this case a Discount Factor of 60% per day, and the following risks:
+
+- Risk A: £80 cost, happening _tomorrow_
+- Risk B: £500 cost, happening in _5 days_.  
+
+Risk B is almost irrelevant under this regime, as this graph shows:
+
+tbd.
+
+Why do things like this happen?  Often, the people involved are under incredible job-stress:  usually they are threatened with the sack on a daily basis, and therefore feel they have to react.  For publically-listed companies you can also 
 
 - more pressure, heavier discounting
 pooh bear procrastination
