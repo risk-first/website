@@ -1,0 +1,44 @@
+<?xml version="1.0"?><diagram xmlns="http://www.kite9.org/schema/adl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="diagram-117" name="Development Process 2">
+ 
+ <hints px1="0.001499" py2="0.998002" py1="0.001998" px2="0.998252"/>
+ <glyph id="id_4" shape="fcSTART1">
+  
+  <hints py2="0.998002" px1="0.0014990001" y1="12.0" py1="0.001998" y2="84.0" x1="12.0" x2="156.0" px2="0.499501"/>
+  <stereotype>Goal In Mind</stereotype>
+  <label>New Feature</label>
+  <text-lines/>
+  <symbols/>
+ </glyph>
+ <glyph id="id_0">
+  
+  <hints py2="0.997006" px1="0.500748" y1="30.0" py1="0.0029940042" y2="66.0" x1="196.0" x2="244.0" px2="0.749251"/>
+  <stereotype/>
+  <label>Code</label>
+  <text-lines/>
+  <symbols/>
+ </glyph>
+ <glyph id="id_2" shape="fcTERMINATOR">
+  
+  <hints py2="0.997006" px1="0.749749" y1="30.0" py1="0.0029940042" y2="66.0" x1="284.0" x2="404.0" px2="0.998252"/>
+  <stereotype/>
+  <label>Production</label>
+  <text-lines/>
+  <symbols/>
+ </glyph>
+ 
+<allLinks>
+  <link id="id_3" shape="NORMAL" style="" drawDirection="LEFT">
+   
+   <from xsi:type="glyph" reference="id_0"/>
+   <to xsi:type="glyph" reference="id_4"/>
+   <fromDecoration>BARBED ARROW</fromDecoration>
+   <toDecoration>NONE</toDecoration>
+  </link>
+  <link id="id_1" shape="NORMAL" style="" drawDirection="RIGHT">
+   
+   <from xsi:type="glyph" reference="id_0"/>
+   <to xsi:type="glyph" reference="id_2"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>BARBED ARROW</toDecoration>
+  </link>
+ </allLinks></diagram>

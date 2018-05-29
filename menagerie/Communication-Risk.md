@@ -15,7 +15,7 @@ In 1948, Claude Shannon proposed this definition of communication:
 
 And from this same paper, we get the following (slightly adapted) model.
 
-![Communication Model](images/communication_1.png)
+![Communication Model](images/generated/communication_1.png)
 
 We move from top-left ("I want to send a message to someone") to bottom left, clockwise, where we hope the message has been understood and believed.  (I've added this last box to Shannon's original diagram.)
 
@@ -36,7 +36,7 @@ But it's not just transmission.  [Communication Risk](Communication-Risk) exists
 
 There is a symmetry about the steps going on in Shannon's diagram, and we're going to exploit this in order to break down [Communication Risk](Communication-Risk) into it's main types.  
 
-![Communication Risk 2](images/communication_2.png)
+![Communication Risk 2](images/generated/communication_2.png)
 
 To get inside [Communication Risk](Communication-Risk), we need to understand **Communication** itself, whether between _machines_, _people_ or _products_:   we'll look at each in turn.  In order to do that, we're going to examine four basic concepts in each of these settings:
  
@@ -69,7 +69,7 @@ When channels are **poor-quality**, less communication occurs.  People will try 
 
 At other times, channels can contain so much information that we can't hope to receive all the messages.  In these cases, we don't even observe the whole channel, just parts of it.  For example, you might have a few YouTube channels that you subscribe to, but hundreds of hours of video are being posted on YouTube every second, so there is no way you can keep up with all of it.
 
-![Communication Channels](images/communication_channels.png)
+![Communication Channels](images/generated/communication_channels.png)
 
 #### Marketing Communications
 
@@ -84,7 +84,7 @@ This works both ways.  Let's looks at some of the **Channel Risks** from the poi
  - I've chosen **D**, I now need to persuade my team that **D** is the correct solution...
  - ... and then they also need to understand **D** to do their job too.
 
-![Communication Marketing](images/communication_marketing.png)
+![Communication Marketing](images/generated/communication_marketing.png)
 
 [Internal Models](Internal-Model) don't magically get populated with the information they need:  they fill up gradually, as shown in this diagram.  Popular products and ideas _spread_, by word-of-mouth or other means.  Part of the job of being a good technologist is to keep track of new **Ideas**, **Concepts** and **Options**, so as to use them as [Dependencies](Dependency) when needed.
 
@@ -192,7 +192,7 @@ Although [HTML](https://en.wikipedia.org/wiki/HTML) is a language, a language is
 
 Let's look at all the protocols we saw here:
 
-![Protocol Stack](images/communication_protocols.png) 
+![Protocol Stack](images/generated/communication_protocols.png) 
 
 Each protocol "passes on" to the next one in the chain.  On the left, we have the representation most suitable for the _messages_:  HTTP is designed for browsers to use to ask for and receive web pages.  As we move right, we are converting the message more and more into a form suitable for the [Channel](Communication-Risk#channels): in this case, microwave transmission.   
 
@@ -339,7 +339,7 @@ The debt of [Invisibility Risk](Communication-Risk#invisibility-risk) comes due 
 - Is the person giving the update wrong or lying?
 - Do you know enough about the details of what's being discussed in order to make informed decisions about how the project is going?
   
-![Message Risk](images/communication_messages.png)
+![Message Risk](images/generated/communication_message_risk.png)
 
 ## Internal Models
 
@@ -387,12 +387,12 @@ But now we should be able to see the reasons it's harder to read than write too:
  - There is no [Feedback Loop](Feedback-Loop) between your [Internal Model](Internal-Model) and the [Reality](Meet-Reality) of the code, opening you up to [Misinterpretation Risk](Communication-Risk#misinterpretation-risk).  When you write code, your compiler and tests give you this.
  - While reading code _takes less time_ than writing it, this also means the [Learning Curve](Communication-Risk#learning-curve-risk) is steeper.
 
-![Internal Model Risks](images/communication_internalmodel.png)
+![Internal Model Risks](images/generated/communication_internal_model_risk.png)
 
 ## Communication Risk Wrap Up
 
 So, here's a summary of where we've arrived with our model of communication risk:
 
-![Communication 2](images/communication_3.png)
+![Communication 2](images/generated/communication_3.png)
 
 Since the purpose of Communication is to _coordinate our actions_, next it's time to look at [Coordination Risk](Coordination-Risk).

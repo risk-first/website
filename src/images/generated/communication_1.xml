@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink'  zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+
+  <diagram xmlns="http://www.kite9.org/schema/adl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="diagram-137" name="Communication - Model">
+
+    <hints px1="0.001997002" py2="0.998501" py1="0.001996504" px2="0.99812776" />
+    <glyph id="id_0">
+
+      <hints py2="0.2500025" px1="0.0019970022" y1="12.0" py1="0.0019965041" y2="48.0" x1="24.0" x2="108.0" px2="0.499003" />
+      <stereotype />
+      <label>Motivation</label>
+      <text-lines />
+      <symbols />
+    </glyph>
+    <glyph id="id_29">
+
+      <hints py2="0.998501" px1="0.0019970022" y1="88.0" py1="0.500499" y2="124.0" x1="12.0" x2="120.0" px2="0.499003" />
+      <stereotype />
+      <label>Reconciliation</label>
+      <text-lines />
+      <symbols />
+    </glyph>
+    <glyph id="id_2">
+
+      <hints py2="0.24975449" px1="0.50099653" y1="12.0" py1="0.00224451" y2="48.0" x1="160.0" x2="268.0" px2="0.7490025" />
+      <stereotype />
+      <label>Composition</label>
+      <text-lines />
+      <symbols />
+    </glyph>
+    <glyph id="id_14">
+
+      <hints py2="0.4990035" px1="0.50099653" y1="88.0" py1="0.2509975" y2="124.0" x1="160.0" x2="268.0" px2="0.7490025" />
+      <stereotype />
+      <label>Interpretation</label>
+      <text-lines />
+      <symbols />
+    </glyph>
+    <glyph id="id_10">
+
+      <hints py2="0.49875548" px1="0.74999714" y1="88.0" py1="0.2512455" y2="124.0" x1="308.0" x2="392.0" px2="0.8117509" />
+      <stereotype />
+      <label>Decoding</label>
+      <text-lines />
+      <symbols />
+    </glyph>
+    <glyph id="id_4">
+
+      <hints py2="0.24950698" px1="0.74999714" y1="12.0" py1="0.0024920201" y2="48.0" x1="308.0" x2="392.0" px2="0.8117509" />
+      <stereotype />
+      <label>Encoding</label>
+      <text-lines />
+      <symbols />
+    </glyph>
+    <glyph id="id_24">
+
+      <hints py2="0.24950698" px1="0.81193674" y1="12.0" py1="0.0024920201" y2="48.0" x1="432.0" x2="540.0" px2="0.8738142" />
+      <stereotype />
+      <label>Transmission</label>
+      <text-lines />
+      <symbols />
+    </glyph>
+    <glyph id="id_8">
+
+      <hints py2="0.49875548" px1="0.87412477" y1="88.0" py1="0.2512455" y2="124.0" x1="444.0" x2="528.0" px2="0.99812776" />
+      <stereotype />
+      <label>Reception</label>
+      <text-lines />
+      <symbols />
+    </glyph>
+
+    
+      <link id="id_11" shape="NORMAL" style="" drawDirection="RIGHT">
+
+        <from xsi:type="glyph" reference="id_0" />
+        <to xsi:type="glyph" reference="id_2" class="arrow" />
+      </link>
+      <link id="id_31" class="invisible" drawDirection="DOWN">
+
+        <from xsi:type="glyph" reference="id_0" />
+        <to xsi:type="glyph" reference="id_29" />
+      </link>
+      <link id="id_30" shape="NORMAL" style="">
+
+        <from xsi:type="glyph" reference="id_14" />
+        <to xsi:type="glyph" reference="id_29" class="arrow" />
+      </link>
+      <link id="id_3" shape="NORMAL" style="" drawDirection="RIGHT">
+
+        <from xsi:type="glyph" reference="id_2" />
+        <to xsi:type="glyph" reference="id_4" class="arrow" />
+      </link>
+      <link id="id_27" class="invisible" drawDirection="DOWN">
+
+        <from xsi:type="glyph" reference="id_2" />
+        <to xsi:type="glyph" reference="id_14" />
+      </link>
+      <link id="id_13" shape="NORMAL" style="" drawDirection="LEFT">
+
+        <from xsi:type="glyph" reference="id_10" />
+        <to xsi:type="glyph" reference="id_14" class="arrow" />
+      </link>
+      <link id="id_9" shape="NORMAL" style="" drawDirection="LEFT">
+
+        <from xsi:type="glyph" reference="id_8" />
+        <to xsi:type="glyph" reference="id_10" class="arrow" />
+      </link>
+      <link id="id_26" class="invisible" drawDirection="DOWN">
+
+        <from xsi:type="glyph" reference="id_4" />
+        <to xsi:type="glyph" reference="id_10" />
+      </link>
+      <link id="id_23" shape="NORMAL" style="" drawDirection="RIGHT">
+
+        <from xsi:type="glyph" reference="id_4" />
+        <to xsi:type="glyph" reference="id_24" class="arrow"  />
+      </link>
+      <link id="id_32" shape="NORMAL" style="">
+
+        <from xsi:type="glyph" reference="id_24"  />
+        <to xsi:type="glyph" reference="id_8" class="arrow"  />
+      </link>
+  </diagram>
+</svg:svg>
