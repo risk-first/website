@@ -34,7 +34,6 @@ Sometimes, it's better to skip these, and just figure out a Risk Score.  This is
 
 **Risk-First** takes a view that risks are a continuous quantity, more like _money_ or _water_:  by taking an action before delivering a project you might add a degree of [Schedule Risk](Schedule-Risk), but decrease the [Production Risk](Production-Risk) later on by a greater amount.   
 
-
 ## Graphical Analysis
 
 The [Wikipedia page](https://en.wikipedia.org/wiki/Risk_register) also includes this wonderful diagram showing you risks of a poorly run barbecue party:

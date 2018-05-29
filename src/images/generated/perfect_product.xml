@@ -1,0 +1,156 @@
+<?xml version="1.0"?><diagram xmlns="http://www.kite9.org/schema/adl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="diagram-130" name="Perfect Product">
+ 
+ <hints px1="0.001499" py2="0.998002" py1="0.001998" px2="0.99801165"/>
+ <glyph id="id_16">
+  
+  <hints py2="0.997007" px1="0.0014990001" y1="136.0" py1="0.500995" y2="208.0" x1="12.0" x2="120.0" px2="0.499501"/>
+  <stereotype/>
+  <label>The
+Implemented
+Product</label>
+  <text-lines/>
+  <symbols/>
+ </glyph>
+ <glyph id="id_0">
+  
+  <hints py2="0.499005" px1="0.500748" y1="24.0" py1="0.0029930081" y2="96.0" x1="18.0" x2="90.0" px2="0.749251"/>
+  <stereotype/>
+  <label>The 
+Perfect 
+Product</label>
+  <text-lines/>
+  <symbols/>
+ </glyph>
+ <arrow id="id_5">
+  
+  <hints py2="0.498509" px1="0.7498733" y1="30.0" py1="0.00348902" y2="90.0" x1="130.0" x2="214.0" px2="0.8738763"/>
+  <label>Feature Risk
+(Conceptual 
+Integrity Risk)</label>
+ </arrow>
+ <arrow id="id_14">
+  
+  <hints py2="0.996511" px1="0.87418675" y1="148.0" py1="0.501491" y2="196.0" x1="160.0" x2="220.0" px2="0.93606424"/>
+  <label>Schedule
+ Risk</label>
+ </arrow>
+ <context id="auto:115163" bordered="true">
+  
+  <hints px1="0.9362501" py2="0.99601597" y1="12.0" py1="0.00398404" x1="240.0" y2="238.0" x2="400.0" px2="0.96706516"/>
+  <glyph id="id_3">
+   
+   <hints py2="0.99601597" px1="0.9362501" y1="136.0" py1="0.501986" y2="208.0" x1="260.0" x2="380.0" px2="0.96706516"/>
+   <stereotype/>
+   <label>The Coder's 
+Understanding
+Of The Product</label>
+   <text-lines/>
+   <symbols/>
+  </glyph>
+  <glyph id="id_1">
+   
+   <hints py2="0.49801397" px1="0.9362501" y1="24.0" py1="0.00398404" y2="96.0" x1="260.0" x2="380.0" px2="0.96706516"/>
+   <stereotype/>
+   <label>The User's 
+Conception 
+Of The Product</label>
+   <text-lines/>
+   <symbols/>
+  </glyph>
+  <label xsi:type="text-line" id="id_24">
+   
+   <hints y1="215.0" x1="276.0" y2="236.0" x2="364.0"/>
+   <text>Internal Models</text>
+   <symbols/>
+  </label>
+ </context>
+ <arrow id="id_8">
+  
+  <hints py2="0.49801397" px1="0.9671734" y1="36.0" py1="0.00398404" y2="84.0" x1="420.0" x2="516.0" px2="0.98258096"/>
+  <label>Communication
+ Risk</label>
+ </arrow>
+ <arrow id="id_10">
+  
+  <hints py2="0.99601597" px1="0.9826195" y1="132.0" py1="0.501986" y2="196.0" x1="420.0" x2="516.0" px2="0.99030787"/>
+  <label>Communication 
+Risk</label>
+ </arrow>
+ <glyph id="id_2">
+  
+  <hints py2="0.998002" px1="0.9903233" y1="48.0" py1="0.001998" y2="168.0" x1="556.0" x2="652.0" px2="0.99801165"/>
+  <stereotype/>
+  <label>The User's 
+Description 
+Of
+This 
+Product</label>
+  <text-lines/>
+  <symbols/>
+ </glyph>
+ 
+<allLinks>
+  <link id="id_15" shape="NORMAL" style="" drawDirection="LEFT">
+   
+   <from xsi:type="arrow" reference="id_14"/>
+   <to xsi:type="glyph" reference="id_16"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>NONE</toDecoration>
+  </link>
+  <link id="id_26" shape="DOTTED" style="">
+   
+   <from xsi:type="glyph" reference="id_16"/>
+   <to xsi:type="glyph" reference="id_1"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>BARBED ARROW</toDecoration>
+  </link>
+  <link id="id_4" shape="NORMAL" style="" drawDirection="RIGHT">
+   
+   <from xsi:type="glyph" reference="id_0"/>
+   <to xsi:type="arrow" reference="id_5"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>NONE</toDecoration>
+  </link>
+  <link id="id_6" shape="NORMAL" style="" drawDirection="RIGHT">
+   
+   <from xsi:type="arrow" reference="id_5"/>
+   <to xsi:type="glyph" reference="id_1"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>NONE</toDecoration>
+  </link>
+  <link id="id_11" shape="NORMAL" style="" drawDirection="LEFT">
+   
+   <from xsi:type="glyph" reference="id_3"/>
+   <to xsi:type="arrow" reference="id_14"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>NONE</toDecoration>
+  </link>
+  <link id="id_13" shape="NORMAL" style="" drawDirection="LEFT">
+   
+   <from xsi:type="arrow" reference="id_10"/>
+   <to xsi:type="glyph" reference="id_3"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>NONE</toDecoration>
+  </link>
+  <link id="id_7" shape="NORMAL" style="" drawDirection="RIGHT">
+   
+   <from xsi:type="glyph" reference="id_1"/>
+   <to xsi:type="arrow" reference="id_8"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>NONE</toDecoration>
+  </link>
+  <link id="id_12" shape="NORMAL" style="" drawDirection="RIGHT">
+   
+   <from xsi:type="arrow" reference="id_8"/>
+   <to xsi:type="glyph" reference="id_2"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>NONE</toDecoration>
+  </link>
+  <link id="id_9" shape="NORMAL" style="" drawDirection="LEFT">
+   
+   <from xsi:type="glyph" reference="id_2"/>
+   <to xsi:type="arrow" reference="id_10"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>NONE</toDecoration>
+  </link>
+ </allLinks></diagram>

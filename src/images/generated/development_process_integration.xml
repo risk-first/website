@@ -1,0 +1,154 @@
+<?xml version="1.0"?><diagram xmlns="http://www.kite9.org/schema/adl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="diagram-122" name="Models vs Reality">
+ 
+ <hints px1="0.001997002" py2="0.9980035" py1="0.001499" px2="0.99812776"/>
+ <context id="id_3" bordered="true">
+  
+  <hints py2="0.997508" px1="0.001997002" y1="12.0" py1="0.500748" y2="208.0" x1="12.0" x2="176.0" px2="0.499003"/>
+  <glyph id="id_0">
+   
+   <hints py2="0.749251" px1="0.0019970022" y1="24.0" py1="0.500748" y2="108.0" x1="24.0" x2="156.0" px2="0.499003"/>
+   <stereotype/>
+   <label>Goal In Mind</label>
+   <text-lines>
+    <text-line id="auto:49159">
+     
+     <hints y1="49.5" x1="33.5" y2="67.5" x2="146.5"/>
+     <text>Implement Feature X</text>
+     <symbols/>
+    </text-line>
+    <text-line id="auto:49160">
+     
+     <hints y1="67.5" x1="33.5" y2="85.5" x2="146.5"/>
+     <text>Attendant Risks</text>
+     <symbols/>
+    </text-line>
+    <text-line id="auto:49161">
+     
+     <hints y1="85.5" x1="33.5" y2="103.5" x2="146.5"/>
+     <text>Evaluation of Risks</text>
+     <symbols/>
+    </text-line>
+   </text-lines>
+   <symbols/>
+  </glyph>
+  <glyph id="id_1">
+   
+   <hints py2="0.997508" px1="0.0019970022" y1="128.0" py1="0.75049305" y2="176.0" x1="42.0" x2="138.0" px2="0.499003"/>
+   <stereotype/>
+   <label>Action</label>
+   <text-lines>
+    <text-line id="auto:94917">
+     
+     <hints y1="153.5" x1="49.5" y2="171.5" x2="130.5"/>
+     <text>Integrate Code</text>
+     <symbols/>
+    </text-line>
+   </text-lines>
+   <symbols/>
+  </glyph>
+  <label xsi:type="text-line" id="id_12">
+   
+   <hints y1="185.0" x1="53.0" y2="206.0" x2="135.0"/>
+   <text>Internal Model</text>
+   <symbols/>
+  </label>
+ </context>
+ <glyph id="id_5">
+  
+  <hints py2="0.499501" px1="0.50099653" y1="42.0" py1="0.0014990001" y2="90.0" x1="196.0" x2="280.0" px2="0.7490025"/>
+  <stereotype/>
+  <label>Reality</label>
+  <text-lines>
+   <text-line id="auto:69319">
+    
+    <hints y1="67.5" x1="208.0" y2="85.5" x2="268.0"/>
+    <text>(codebase)</text>
+    <symbols/>
+   </text-line>
+  </text-lines>
+  <symbols/>
+ </glyph>
+ <arrow id="id_19">
+  
+  <hints py2="0.997508" px1="0.50099653" y1="140.0" py1="0.75049305" y2="164.0" x1="202.0" x2="274.0" px2="0.7490025"/>
+  <label>Integration</label>
+ </arrow>
+ <glyph id="id_2">
+  
+  <hints py2="0.99775547" px1="0.7498733" y1="128.0" py1="0.7502455" y2="176.0" x1="314.0" x2="482.0" px2="0.8738763"/>
+  <stereotype/>
+  <label>Outcomes</label>
+  <text-lines>
+   <text-line id="auto:49547">
+    
+    <hints y1="153.5" x1="323.5" y2="171.5" x2="472.5"/>
+    <text>Feature X (Integrated Code)</text>
+    <symbols/>
+   </text-line>
+  </text-lines>
+  <symbols/>
+ </glyph>
+ <glyph id="id_11">
+  
+  <hints py2="0.9980035" px1="0.87412477" y1="128.0" py1="0.7499975" y2="176.0" x1="494.0" x2="662.0" px2="0.99812776"/>
+  <stereotype/>
+  <label>Revealed Hidden Risks</label>
+  <text-lines>
+   <text-line id="auto:49737">
+    
+    <hints y1="153.5" x1="502.5" y2="171.5" x2="653.5"/>
+    <text>Breaks Existing Feature</text>
+    <symbols/>
+   </text-line>
+  </text-lines>
+  <symbols/>
+ </glyph>
+ 
+<allLinks>
+  <link id="id_4" shape="NORMAL" style="" drawDirection="DOWN">
+   
+   <from xsi:type="glyph" reference="id_0"/>
+   <to xsi:type="glyph" reference="id_1"/>
+   <fromDecoration>NONE</fromDecoration>
+  </link>
+  <link id="id_6" shape="DOTTED" style="">
+   
+   <from xsi:type="glyph" reference="id_5"/>
+   <to xsi:type="glyph" reference="id_0"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>BARBED ARROW</toDecoration>
+  </link>
+  <link id="id_4.1" shape="NORMAL" style="" drawDirection="RIGHT">
+   
+   <from xsi:type="glyph" reference="id_1"/>
+   <to xsi:type="arrow" reference="id_19"/>
+   <fromDecoration>CIRCLE</fromDecoration>
+   <toDecoration>NONE</toDecoration>
+  </link>
+  <link id="id_7" shape="NORMAL" style="" drawDirection="DOWN">
+   
+   <from xsi:type="glyph" reference="id_5"/>
+   <to xsi:type="arrow" reference="id_19"/>
+   <fromDecoration>CIRCLE</fromDecoration>
+   <toDecoration>NONE</toDecoration>
+  </link>
+  <link id="id_23" shape="NORMAL" style="">
+   
+   <from xsi:type="arrow" reference="id_19"/>
+   <to xsi:type="glyph" reference="id_11"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>BARBED ARROW</toDecoration>
+  </link>
+  <link id="id_22" shape="NORMAL" style="" drawDirection="RIGHT">
+   
+   <from xsi:type="arrow" reference="id_19"/>
+   <to xsi:type="glyph" reference="id_2"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>BARBED ARROW</toDecoration>
+  </link>
+  <link id="id_16" shape="INVISIBLE" drawDirection="LEFT">
+   
+   <from xsi:type="glyph" reference="id_11"/>
+   <to xsi:type="glyph" reference="id_2"/>
+  </link>
+ </allLinks></diagram>

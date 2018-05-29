@@ -1,0 +1,129 @@
+<?xml version="1.0"?><diagram xmlns="http://www.kite9.org/schema/adl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="diagram-141" name="Communication - Protocols">
+ 
+ <hints px1="0.001499" py2="0.9980037" py1="0.001996504" px2="0.998252"/>
+ <glyph id="id_21">
+  
+  <hints py2="0.2500025" px1="0.0014990001" y1="24.0" py1="0.0019965041" y2="60.0" x1="12.0" x2="84.0" px2="0.499501"/>
+  <stereotype/>
+  <label>Message</label>
+  <text-lines/>
+  <symbols/>
+ </glyph>
+ <context id="auto:176064" bordered="true">
+  
+  <hints px1="0.50099623" py2="0.9980037" y1="12.0" py1="0.001996504" x1="104.0" y2="90.0" x2="656.0" px2="0.7490029"/>
+  <glyph id="id_0">
+   
+   <hints py2="0.2500025" px1="0.50099623" y1="24.0" py1="0.0019965041" y2="60.0" x1="124.0" x2="184.0" px2="0.62475127"/>
+   <stereotype/>
+   <label>HTML</label>
+   <text-lines/>
+   <symbols/>
+  </glyph>
+  <glyph id="id_2">
+   
+   <hints py2="0.499252" px1="0.50099623" y1="24.0" py1="0.250749" y2="60.0" x1="224.0" x2="272.0" px2="0.62475127"/>
+   <stereotype/>
+   <label>HTTP</label>
+   <text-lines/>
+   <symbols/>
+  </glyph>
+  <glyph id="id_9">
+   
+   <hints py2="0.746766" px1="0.62521666" y1="24.0" py1="0.503233" y2="60.0" x1="312.0" x2="360.0" px2="0.65609354"/>
+   <stereotype/>
+   <label>DNS</label>
+   <text-lines/>
+   <symbols/>
+  </glyph>
+  <glyph id="id_4">
+   
+   <hints py2="0.746766" px1="0.65615547" y1="24.0" py1="0.503233" y2="60.0" x1="400.0" x2="448.0" px2="0.6870323"/>
+   <stereotype/>
+   <label>TCP</label>
+   <text-lines/>
+   <symbols/>
+  </glyph>
+  <glyph id="id_6">
+   
+   <hints py2="0.8738763" px1="0.6872491" y1="24.0" py1="0.7498733" y2="60.0" x1="488.0" x2="524.0" px2="0.7490029"/>
+   <stereotype/>
+   <label>IP</label>
+   <text-lines/>
+   <symbols/>
+  </glyph>
+  <glyph id="id_8">
+   
+   <hints py2="0.9980037" px1="0.6872491" y1="24.0" py1="0.87424874" y2="60.0" x1="564.0" x2="636.0" px2="0.7490029"/>
+   <stereotype/>
+   <label>802.11b</label>
+   <text-lines/>
+   <symbols/>
+  </glyph>
+  <label xsi:type="text-line" id="id_19">
+   
+   <hints y1="67.0" x1="339.5" y2="88.0" x2="420.5"/>
+   <text>Protocol Stack</text>
+   <symbols/>
+  </label>
+ </context>
+ <glyph id="id_23">
+  
+  <hints py2="0.9980037" px1="0.749749" y1="24.0" py1="0.87424874" y2="60.0" x1="676.0" x2="748.0" px2="0.998252"/>
+  <stereotype/>
+  <label>Channel</label>
+  <text-lines/>
+  <symbols/>
+ </glyph>
+ 
+<allLinks>
+  <link id="id_20" shape="NORMAL" style="" drawDirection="LEFT">
+   
+   <from xsi:type="glyph" reference="id_0"/>
+   <to xsi:type="glyph" reference="id_21"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>NONE</toDecoration>
+  </link>
+  <link id="id_14" shape="NORMAL" style="">
+   
+   <from xsi:type="glyph" reference="id_0"/>
+   <to xsi:type="glyph" reference="id_2"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>NONE</toDecoration>
+  </link>
+  <link id="id_15" shape="NORMAL" style="">
+   
+   <from xsi:type="glyph" reference="id_2"/>
+   <to xsi:type="glyph" reference="id_9"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>NONE</toDecoration>
+  </link>
+  <link id="id_16" shape="NORMAL" style="">
+   
+   <from xsi:type="glyph" reference="id_9"/>
+   <to xsi:type="glyph" reference="id_4"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>NONE</toDecoration>
+  </link>
+  <link id="id_17" shape="NORMAL" style="">
+   
+   <from xsi:type="glyph" reference="id_4"/>
+   <to xsi:type="glyph" reference="id_6"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>NONE</toDecoration>
+  </link>
+  <link id="id_18" shape="NORMAL" style="">
+   
+   <from xsi:type="glyph" reference="id_6"/>
+   <to xsi:type="glyph" reference="id_8"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>NONE</toDecoration>
+  </link>
+  <link id="id_22" shape="NORMAL" style="" drawDirection="RIGHT">
+   
+   <from xsi:type="glyph" reference="id_8"/>
+   <to xsi:type="glyph" reference="id_23"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>NONE</toDecoration>
+  </link>
+ </allLinks></diagram>

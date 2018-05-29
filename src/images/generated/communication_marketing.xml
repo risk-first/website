@@ -1,0 +1,108 @@
+<?xml version="1.0"?><diagram xmlns="http://www.kite9.org/schema/adl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="diagram-140" name="Communication Marketing">
+ 
+ <hints px1="0.001748001" py2="0.998002" py1="0.001998" px2="0.998501"/>
+ <context id="auto:171627" bordered="true">
+  
+  <hints px1="0.001748001" py2="0.998002" y1="12.0" py1="0.001998" x1="12.0" y2="134.0" x2="576.0" px2="0.49903482"/>
+  <glyph id="id_0">
+   
+   <hints py2="0.998002" px1="0.0017480011" y1="56.0" py1="0.001998" y2="92.0" x1="24.0" x2="96.0" px2="0.250251"/>
+   <stereotype/>
+   <label>No Idea</label>
+   <text-lines/>
+   <symbols/>
+  </glyph>
+  <glyph id="id_2">
+   
+   <hints py2="0.997006" px1="0.25087324" y1="56.0" py1="0.0029940042" y2="92.0" x1="136.0" x2="208.0" px2="0.37487626"/>
+   <stereotype/>
+   <label>Concept</label>
+   <text-lines/>
+   <symbols/>
+  </glyph>
+  <glyph id="id_4">
+   
+   <hints py2="0.996012" px1="0.37518674" y1="56.0" py1="0.003988016" y2="92.0" x1="248.0" x2="320.0" px2="0.43706426"/>
+   <stereotype/>
+   <label>Options</label>
+   <text-lines/>
+   <symbols/>
+  </glyph>
+  <glyph id="id_6">
+   
+   <hints py2="0.99502" px1="0.4372192" y1="56.0" py1="0.0049800402" y2="92.0" x1="360.0" x2="420.0" px2="0.46809605"/>
+   <stereotype/>
+   <label>Choice</label>
+   <text-lines/>
+   <symbols/>
+  </glyph>
+  <glyph id="id_8">
+   
+   <hints py2="0.99402994" px1="0.46815795" y1="44.0" py1="0.00597008" y2="104.0" x1="460.0" x2="556.0" px2="0.49903482"/>
+   <stereotype/>
+   <label>Increasing
+Knowledge</label>
+   <text-lines/>
+   <symbols/>
+  </glyph>
+  <label xsi:type="text-line" id="id_17">
+   
+   <hints y1="111.0" x1="253.0" y2="132.0" x2="335.0"/>
+   <text>Internal Model</text>
+   <symbols/>
+  </label>
+ </context>
+ <glyph id="id_10">
+  
+  <hints py2="0.99402994" px1="0.500499" y1="44.0" py1="0.00597008" y2="104.0" x1="596.0" x2="692.0" px2="0.998501"/>
+  <stereotype/>
+  <label>Spreading
+Knowledge</label>
+  <text-lines/>
+  <symbols/>
+ </glyph>
+ 
+<allLinks>
+  <link id="id_11" shape="NORMAL" style="" drawDirection="RIGHT">
+   
+   <from xsi:type="glyph" reference="id_0"/>
+   <to xsi:type="glyph" reference="id_2"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>BARBED ARROW</toDecoration>
+  </link>
+  <link id="id_12" shape="NORMAL" style="" drawDirection="RIGHT">
+   
+   <from xsi:type="glyph" reference="id_2"/>
+   <to xsi:type="glyph" reference="id_4"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>BARBED ARROW</toDecoration>
+  </link>
+  <link id="id_19" shape="NORMAL" style="">
+   
+   <from xsi:type="glyph" reference="id_10"/>
+   <to xsi:type="glyph" reference="id_2"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>BARBED ARROW</toDecoration>
+  </link>
+  <link id="id_13" shape="NORMAL" style="" drawDirection="RIGHT">
+   
+   <from xsi:type="glyph" reference="id_4"/>
+   <to xsi:type="glyph" reference="id_6"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>BARBED ARROW</toDecoration>
+  </link>
+  <link id="id_14" shape="NORMAL" style="" drawDirection="RIGHT">
+   
+   <from xsi:type="glyph" reference="id_6"/>
+   <to xsi:type="glyph" reference="id_8"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>BARBED ARROW</toDecoration>
+  </link>
+  <link id="id_15" shape="NORMAL" style="" drawDirection="RIGHT">
+   
+   <from xsi:type="glyph" reference="id_8"/>
+   <to xsi:type="glyph" reference="id_10"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>BARBED ARROW</toDecoration>
+  </link>
+ </allLinks></diagram>

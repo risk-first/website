@@ -1,0 +1,116 @@
+<?xml version="1.0"?><diagram xmlns="http://www.kite9.org/schema/adl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="diagram-119" name="Development Process 4">
+ 
+ <hints px1="0.001499" py2="0.998252" py1="0.0018722526" px2="0.99750596"/>
+ <glyph id="id_0">
+  
+  <hints py2="0.4990035" px1="0.0014990001" y1="102.0" py1="0.2509975" y2="150.0" x1="12.0" x2="180.0" px2="0.499501"/>
+  <stereotype/>
+  <label>Internal Model</label>
+  <text-lines>
+   <text-line id="auto:10658">
+    
+    <hints y1="127.5" x1="19.5" y2="145.5" x2="172.5"/>
+    <text>Goal In Mind: New Feature X</text>
+    <symbols/>
+   </text-line>
+  </text-lines>
+  <symbols/>
+ </glyph>
+ <glyph id="id_8">
+  
+  <hints py2="0.4990035" px1="0.501494" y1="108.0" py1="0.2509975" y2="144.0" x1="220.0" x2="484.0" px2="0.99750596"/>
+  <stereotype/>
+  <label>Hidden Risk: Development Difficulties</label>
+  <text-lines/>
+  <symbols/>
+ </glyph>
+ <glyph id="id_5">
+  
+  <hints py2="0.25012675" px1="0.50199" y1="60.0" py1="0.12612376" y2="96.0" x1="208.0" x2="496.0" px2="0.99701"/>
+  <stereotype/>
+  <label>Hidden Risk: Developer Misunderstands</label>
+  <text-lines/>
+  <symbols/>
+ </glyph>
+ <glyph id="id_3">
+  
+  <hints py2="0.12587525" px1="0.50199" y1="12.0" py1="0.0018722526" y2="48.0" x1="220.0" x2="484.0" px2="0.99701"/>
+  <stereotype/>
+  <label>Hidden Risk: Breaks Existing Feature</label>
+  <text-lines/>
+  <symbols/>
+ </glyph>
+ <glyph id="id_10">
+  
+  <hints py2="0.749251" px1="0.501494" y1="156.0" py1="0.500748" y2="192.0" x1="220.0" x2="484.0" px2="0.99750596"/>
+  <stereotype/>
+  <label>Hidden Risk: Duplicates Functionality</label>
+  <text-lines/>
+  <symbols/>
+ </glyph>
+ <glyph id="id_1">
+  
+  <hints py2="0.998252" px1="0.501494" y1="204.0" py1="0.749749" y2="240.0" x1="202.0" x2="502.0" px2="0.99750596"/>
+  <stereotype/>
+  <label>Hidden Risk: Functionality is Hard To Find</label>
+  <text-lines/>
+  <symbols/>
+ </glyph>
+ 
+<allLinks>
+  <link id="id_2" shape="DOTTED" style="">
+   
+   <from xsi:type="glyph" reference="id_0"/>
+   <to xsi:type="glyph" reference="id_3"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>BARBED ARROW</toDecoration>
+  </link>
+  <link id="id_14" shape="DOTTED" style="">
+   
+   <from xsi:type="glyph" reference="id_0"/>
+   <to xsi:type="glyph" reference="id_10"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>BARBED ARROW</toDecoration>
+  </link>
+  <link id="id_12" shape="DOTTED" style="">
+   
+   <from xsi:type="glyph" reference="id_0"/>
+   <to xsi:type="glyph" reference="id_5"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>BARBED ARROW</toDecoration>
+  </link>
+  <link id="id_13" shape="DOTTED" style="" drawDirection="RIGHT">
+   
+   <from xsi:type="glyph" reference="id_0"/>
+   <to xsi:type="glyph" reference="id_8"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>BARBED ARROW</toDecoration>
+  </link>
+  <link id="id_7" shape="DOTTED" style="">
+   
+   <from xsi:type="glyph" reference="id_0"/>
+   <to xsi:type="glyph" reference="id_1"/>
+   <fromDecoration>NONE</fromDecoration>
+   <toDecoration>BARBED ARROW</toDecoration>
+  </link>
+  <link id="id_11" shape="INVISIBLE" drawDirection="DOWN">
+   
+   <from xsi:type="glyph" reference="id_8"/>
+   <to xsi:type="glyph" reference="id_10"/>
+  </link>
+  <link id="id_9" shape="INVISIBLE" drawDirection="DOWN">
+   
+   <from xsi:type="glyph" reference="id_5"/>
+   <to xsi:type="glyph" reference="id_8"/>
+  </link>
+  <link id="id_6" shape="INVISIBLE" drawDirection="DOWN">
+   
+   <from xsi:type="glyph" reference="id_3"/>
+   <to xsi:type="glyph" reference="id_5"/>
+  </link>
+  <link id="id_4" shape="INVISIBLE" drawDirection="DOWN">
+   
+   <from xsi:type="glyph" reference="id_10"/>
+   <to xsi:type="glyph" reference="id_1"/>
+  </link>
+ </allLinks></diagram>
