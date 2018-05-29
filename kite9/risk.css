@@ -247,11 +247,13 @@ diagram,
 glyph,
 arrow,
 link {
-	kite9-margin: 30pt;
+	kite9-margin: 20pt;
 	kite9-link-inset: 10pt;
 	kite9-link-gutter: 10pt;
 	kite9-padding: 30pt;
 }
+
+/* Glyphs */
 
 glyph {
 	kite9-type: container;
@@ -278,16 +280,19 @@ diagram glyph label {
 }
 
 .glyph-label-text {
-	font-size: 15pt;
+	font-size: 12pt;
 	fill: black;
 	font-family: "gothic";
 	stroke: none;
 }
 
+/* Links */
+
 link {
 	kite9-type: link;
 	kite9-template: url(template.svg#link);
-	kite9-link-minimum-length: 30pt;
+	kite9-link-minimum-length: 15pt;
+	kite9-link-corner-radius: 10pt;
 }
 
 .link {
@@ -318,5 +323,37 @@ to.arrow {
 	stroke-width: 1px; 
 	stroke: black; 
 	fill: none;
+}
+
+/* Contexts */
+
+context {
+	kite9-template: url(template.svg#context);
+	kite9-type: container;
+	kite9-sizing: maximize;
+	kite9-traversal: always;
+	kite9-padding: 12px;	
+	kite9-link-inset: 12px;
+}
+
+.context-back {
+	fill: none;
+	stroke: black;
+	stroke-width: 1pt;
+}
+
+context > label {
+	kite9-usage: label;
+	kite9-type: container; 
+	kite9-sizing: minimize;
+	kite9-template: url(template.svg#container-label);
+	kite9-padding: 4pt;
+}
+
+.container-label-front {
+	stroke-width: 0;
+	font-size: 11pt;
+	font-family: "gothic";
+	fill: black;
 }
 

@@ -30,6 +30,22 @@
       
   </svg:defs>
   
+  <template id='context'>
+    <contents />
+    <back style='kite9-usage: decal; kite9-type: svg;  ' >
+      <svg:rect x='0' y='0' width='#{$width}' height='#{$height}' rx='12pt' ry='12pt' class="context-back" />
+    </back>
+  </template>
+  
+  <template id='container-label'>
+    <svg:g class="container-label-front">
+      <front style="kite9-type: text; ">
+        <contents />
+      </front>
+    </svg:g>
+  </template>
+  
+  
   <template id='glyph'>
     <back style='kite9-usage: decal; kite9-type: svg; '>
       <svg:rect x='0' y='0' width='#{$width}' height='#{$height}' rx='8pt' ry='8pt' style='fill: url(#risk-background); ' class="glyph-back" />
