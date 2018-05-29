@@ -10,6 +10,7 @@ import java.io.StringReader;
 import org.apache.batik.transcoder.TranscoderInput;
 import org.apache.batik.transcoder.TranscoderOutput;
 import org.kite9.diagram.batik.format.Kite9PNGTranscoder;
+import org.kite9.diagram.batik.format.Kite9SVGTranscoder;
 import org.kite9.framework.common.RepositoryHelp;
 import org.kite9.framework.logging.Kite9Log;
 
@@ -49,30 +50,51 @@ public class ImagePreprocessor {
 	private static void processGeneratedImage(String line) throws Exception {
 		
 		try {
-			String imagePath = line.substring(line.lastIndexOf("{")+1, line.lastIndexOf(".png}"));
-			String outputPath = "../website.wiki/"+imagePath+".png";
+			String imagePath;
+			try {
+				imagePath = line.substring(line.lastIndexOf("(")+1, line.lastIndexOf(".png)"));
+			} catch (Exception e) {
+				imagePath = line.substring(line.lastIndexOf("{")+1, line.lastIndexOf(".png}"));
+			}
+			String outputPath1 = "../website.wiki/"+imagePath+".png";
+			String outputPath2 = "../website.wiki/"+imagePath+"-400dpi.png";
+
 			
 			// check if we have a template
-			TranscoderInput in = null;
+			TranscoderInput in1 = null;
+			TranscoderInput in2 = null;
+
 			File sourceFile = new File("../website.wiki/src/"+imagePath+".xml");
 			if (sourceFile.exists()) {
 				// a pre-existing file
-				in = new TranscoderInput(new FileReader(sourceFile));
+				in1 = new TranscoderInput(new FileReader(sourceFile));
+				in2 = new TranscoderInput(new FileReader(sourceFile));
+				
 			} else {
 				// create one
 				String str = RepositoryHelp.stream(ImagePreprocessor.class.getResourceAsStream("icon-template.svg"));
 				String name = line.substring(line.lastIndexOf("/")+1, line.lastIndexOf("-risk."));
 				str = str.replaceAll("\\$\\{TYPE\\}", name);
-				in = new TranscoderInput(new StringReader(str));
+				in1 = new TranscoderInput(new StringReader(str));
+				in2 = new TranscoderInput(new StringReader(str));
+				return;
 			}
-			
-			TranscoderOutput out = new TranscoderOutput(new FileOutputStream(new File(outputPath)));
+
 			File kite9Dir = new File("kite9/somefile.svg");
-			in.setURI(kite9Dir.toURI().toString());
+			in1.setURI(kite9Dir.toURI().toString());
+			in2.setURI(kite9Dir.toURI().toString());
+
+			
+			TranscoderOutput out = new TranscoderOutput(new FileOutputStream(new File(outputPath1)));
 			Kite9PNGTranscoder transcoder = new Kite9PNGTranscoder();
+			transcoder.transcode(in1, out);
+			System.out.println("Wrote: "+outputPath1);
+			
+			TranscoderOutput out2 = new TranscoderOutput(new FileOutputStream(new File(outputPath2)));
+			transcoder = new Kite9PNGTranscoder();
 			transcoder.addTranscodingHint(Kite9PNGTranscoder.KEY_PIXEL_UNIT_TO_MILLIMETER, .0635f);	// 400dpi
-			transcoder.transcode(in, out);
-			System.out.println("Wrote: "+outputPath);
+			transcoder.transcode(in2, out2);
+			System.out.println("Wrote: "+outputPath2);
 		} catch (Exception e) {
 			throw new Exception("Couldn't generate: "+line, e);
 		}

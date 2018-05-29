@@ -1,14 +1,4 @@
 @font-face {
-	font-family: "opensans-light-webfont";
-	src: url('../../../../fonts/opensans-light-webfont.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: "opensans-bold-webfont";
-	src: url('../../../../fonts/opensans-bold-webfont.ttf') format('truetype');
-}
-
-@font-face {
 	font-family: "gothic";
 	src: url('GOTHIC.ttf') format('truetype');
 }
@@ -33,8 +23,8 @@ risk {
 
 container {
 	kite9-type: container;
-	kite9-padding: 15px;
-	kite9-margin: 15px;
+	kite9-padding: 15pt;
+	kite9-margin: 15pt;
 	kite9-template: url(template.svg#container);
 }
 
@@ -159,20 +149,20 @@ risk.dead-end {
 }
 
 risk-box {
-	kite9-margin: 10px;
-	kite9-link-inset: 10px;
-	kite9-link-gutter: 10px;
+	kite9-margin: 10pt;
+	kite9-link-inset: 10pt;
+	kite9-link-gutter: 10pt;
 	kite9-type: container;
 	kite9-layout: vertical;	
 	kite9-template: url(template.svg#risk-box);
-	kite9-padding: 10px; 
+	kite9-padding: 10pt; 
 	kite9-connection-align: 50%;
-	kite9-min-size: 110px 140px;
+	kite9-min-size: 110pt 140pt;
 }
 
 diagram {
 	kite9-type: diagram;
-	kite9-padding: 15px;
+	kite9-padding: 15pt;
 	kite9-traversal: none;
 	kite9-template: url(template.svg#diagram);
 }
@@ -181,8 +171,8 @@ risk image {
 	kite9-type: container;
 	kite9-horizontal-align: center;
 	kite9-vertical-align: top;
-	kite9-min-size: 50px 50px;
-	kite9-margin: 10px;
+	kite9-min-size: 50pt 50pt;
+	kite9-margin: 10pt;
 	
 }
 
@@ -197,8 +187,8 @@ risk code {
 	kite9-type: container;
 	kite9-sizing: minimize;
 	kite9-template: url(template.svg#code);
-	font-size: 22px;
-	kite9-margin: 10px;
+	font-size: 22pt;
+	kite9-margin: 10pt;
 }
 
 risk title {
@@ -213,27 +203,120 @@ risk title {
 
 .risk-back {
 	stroke: black;
-	stroke-width: 1px;
+	stroke-width: 1pt;
 }
 
 .code-label-front {
 	stroke-width: 0;
-	font-size: 19px;
+	font-size: 19pt;
 	font-family: "gothic";
 	fill: black;
 	text-align: middle;
 }
 
 .title-label-front {
-	font-size: 12px;
+	font-size: 12pt;
 	font-family: "gothic";
 	text-align: middle;
 }
 
 .container-back {
-	stroke-width: 1px; 
+	stroke-width: 1pt; 
 	fill:none;
 	stroke: black;
 }
 
+
+/* Kite9 Element Stuff */
+
+renderingInformation,
+fromDecoration,
+toDecoration, 
+position,
+size,
+allLinks,
+stereotype,
+text-lines,
+symbols,
+hints {
+	kite9-type: none;
+}
+
+context, 
+diagram,
+glyph,
+arrow,
+link {
+	kite9-margin: 30pt;
+	kite9-link-inset: 10pt;
+	kite9-link-gutter: 10pt;
+	kite9-padding: 30pt;
+}
+
+glyph {
+	kite9-type: container;
+	kite9-layout: down;	
+	kite9-template: url(template.svg#glyph);
+	kite9-padding: 6pt 10pt 6pt 10pt; 
+	kite9-margin: 10pt;
+	kite9-connection-align: 50%;
+	kite9-min-height: 30pt;
+}
+
+diagram glyph label {
+	kite9-type: container;
+	kite9-sizing: minimize;
+	kite9-template: url(template.svg#glyph-label-text);
+	kite9-vertical-align: center;
+	kite9-margin: 5pt 
+}
+
+.glyph-back {
+	stroke-width: 1pt;
+	stroke: black;
+	fill: white;
+}
+
+.glyph-label-text {
+	font-size: 15pt;
+	fill: black;
+	font-family: "gothic";
+	stroke: none;
+}
+
+link {
+	kite9-type: link;
+	kite9-template: url(template.svg#link);
+	kite9-link-minimum-length: 30pt;
+}
+
+.link {
+	stroke: black;
+	stroke-width: 2pt;
+	fill: none;
+}
+
+link.invisible {
+	kite9-template: url(template.svg#invisible-link);
+}
+
+from,
+to {
+	kite9-type: link-end;
+	kite9-template: url(template.svg#empty-terminator);
+	kite9-padding: 5px 5px 5px 5px; 
+} 
+
+from.arrow,
+to.arrow {
+	kite9-marker-start-reference: url(template.svg#arrow-start-marker);
+	kite9-marker-end-reference: url(template.svg#arrow-end-marker);
+	kite9-padding: 5px 12px 5px 1px;
+}
+
+.arrow-marker {
+	stroke-width: 1px; 
+	stroke: black; 
+	fill: none;
+}
 

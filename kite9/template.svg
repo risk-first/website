@@ -20,20 +20,65 @@
       </svg:feMerge>
     </svg:filter>
 
+    <svg:marker id="arrow-end-marker" markerWidth="7" markerHeight="7" refX="6" refY="4" orient="auto">
+      <svg:path d="M2,2 L6,4 L2,6" class="arrow-marker"></svg:path>
+    </svg:marker>
+  
+    <svg:marker id="arrow-start-marker" markerWidth="7" markerHeight="7" refX="2" refY="4" orient="auto">
+      <svg:path d="M6,2 L2,4 L6,6" class="arrow-marker"></svg:path>
+    </svg:marker>
+      
   </svg:defs>
+  
+  <template id='glyph'>
+    <back style='kite9-usage: decal; kite9-type: svg; '>
+      <svg:rect x='0' y='0' width='#{$width}' height='#{$height}' rx='8pt' ry='8pt' style='fill: url(#risk-background); ' class="glyph-back" />
+    </back>
+    <svg:g class="glyph">
+      <contents />
+    </svg:g>
+  </template>
+  
+ <template id="glyph-label-text">
+    <svg:g class="glyph-label-text">
+      <text-label style="kite9-type: text;" class="glyph-label-text">
+        <contents />
+      </text-label>
+    </svg:g>
+  </template>
+  
+  <template id="link">
+    <contents />
+    <link-body style="kite9-type: svg; kite9-usage: decal;">
+      <svg:path d="#{$path}" class="link" style="marker-start: #{$markerstart}; marker-end: #{$markerend}"/>
+    </link-body>
+  </template>
+
+  <template id="invisible-link">
+    <contents />
+    <link-body style="kite9-type: svg; kite9-usage: decal;">
+      <svg:path d="#{$path}" class="" style="marker-start: #{$markerstart}; marker-end: #{$markerend}"/>
+    </link-body>
+  </template>
+  
+  <template id='empty-terminator'>
+    <svg:rect x='0' y='0' width='#{$width}' height='#{$height}' style='fill: none; stroke: none ' />
+  </template>
+
+ 
   
   <template id='risk-box'>
     <back style='kite9-usage: decal; kite9-type: svg; '>
-      <svg:rect x='0' y='0' width='#{$width}' height='#{$height}' rx='8' ry='8' style='fill: url(#risk-background); ' class="risk-back" />
+      <svg:rect x='0' y='0' width='#{$width}' height='#{$height}' rx='8pt' ry='8pt' style='fill: url(#risk-background); ' class="risk-back" />
     </back>
     <svg:g class="risk">
       <contents />
     </svg:g>
   </template>
-  
+   
   <template id="container">
     <back style='kite9-usage: decal; kite9-type: svg; '>
-      <svg:rect x='0' y='0' width='#{$width}' height='#{$height}' rx='8' ry='8'  class="container-back" />
+      <svg:rect x='0' y='0' width='#{$width}' height='#{$height}' rx='8pt' ry='8pt'  class="container-back" />
     </back>
     <svg:g class="container">
       <contents />
