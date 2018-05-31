@@ -75,6 +75,15 @@
     </svg:g>
   </template>
   
+  <template id="generic-text">
+    <!--  svg:rect x='0' y='0' width='#{$width}' height='#{$height}' rx='2' ry='2' stroke="black" fill="none" stroke-width="1" / -->
+    <svg:g class="generic-text">
+      <text-label style="kite9-type: text;">
+        <contents />
+      </text-label>
+    </svg:g>
+  </template>
+  
   <template id='arrow'>
     <back style='kite9-usage: decal; kite9-type: svg; ' class="arrow-back">
       <svg:rect x='0' y='0' width='#{$width}' height='#{$height}' rx='4pt' ry='4pt' style='fill: black; ' />

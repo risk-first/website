@@ -425,14 +425,16 @@ glyph stereotype {
 	kite9-padding: 2pt; 
 }
 
+/* Text Lines */
+
 glyph text-lines {
 	kite9-type: container;
 	kite9-sizing: maximize;
 	kite9-layout: vertical;
 }
 
-text-line, text {
-	kite9-type: container;
+text-line {
+	kite9-type: text;
 	kite9-sizing: maximize;
 	kite9-padding-top: 2px;
 	kite9-padding-bottom: 2px;
@@ -441,4 +443,6 @@ text-line, text {
 	kite9-margin: 0 0 0 0; 
 	kite9-vertical-align: top;
 	kite9-connection-align: 50%;
+	kite9-horizontal-align: left;
+	kite9-template: url(template.svg#generic-text);
 }
