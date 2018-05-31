@@ -1,30 +1,34 @@
-<?xml version="1.0"?><diagram xmlns="http://www.kite9.org/schema/adl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="diagram-121" name="Models vs Reality">
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink'  zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs><diagram xmlns="http://www.kite9.org/schema/adl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="diagram-121" name="Models vs Reality">
  
- <hints px1="0.00549" py2="0.98951" py1="0.01049" px2="0.9986277"/>
+ 
  <context id="id_3" bordered="true">
   
-  <hints py2="0.98951" px1="0.00549" y1="12.0" py1="0.01049" y2="228.0" x1="12.0" x2="188.0" px2="0.49451"/>
+  
   <glyph id="id_0">
    
-   <hints py2="0.49951" px1="0.00549" y1="24.0" py1="0.01049" y2="108.0" x1="30.0" x2="162.0" px2="0.49451"/>
+   
    <stereotype/>
    <label>Goal In Mind</label>
    <text-lines>
     <text-line id="auto:98115">
      
-     <hints y1="49.5" x1="39.5" y2="67.5" x2="152.5"/>
+     
      <text>Implement Feature X</text>
      <symbols/>
     </text-line>
     <text-line id="auto:98116">
      
-     <hints y1="67.5" x1="39.5" y2="85.5" x2="152.5"/>
+     
      <text>Attendant Risks</text>
      <symbols/>
     </text-line>
     <text-line id="auto:98117">
      
-     <hints y1="85.5" x1="39.5" y2="103.5" x2="152.5"/>
+     
      <text>Evaluation of Risks</text>
      <symbols/>
     </text-line>
@@ -33,13 +37,13 @@
   </glyph>
   <glyph id="id_7">
    
-   <hints py2="0.98951" px1="0.00549" y1="148.0" py1="0.50049" y2="196.0" x1="24.0" x2="168.0" px2="0.49451"/>
+   
    <stereotype/>
    <label>Action</label>
    <text-lines>
     <text-line id="auto:96128">
      
-     <hints y1="173.5" x1="31.0" y2="191.5" x2="161.0"/>
+     
      <text>Implement Specification</text>
      <symbols/>
     </text-line>
@@ -48,25 +52,25 @@
   </glyph>
   <label xsi:type="text-line" id="id_12">
    
-   <hints y1="205.0" x1="59.0" y2="226.0" x2="141.0"/>
+   
    <text>Internal Model</text>
    <symbols/>
   </label>
  </context>
  <arrow id="id_19">
   
-  <hints py2="0.98804295" px1="0.5014965" y1="160.0" py1="0.50097704" y2="184.0" x1="226.0" x2="274.0" px2="0.7495025"/>
+  
   <label>Coding</label>
  </arrow>
  <glyph id="id_5">
   
-  <hints py2="0.49951097" px1="0.5014965" y1="42.0" py1="0.0114690205" y2="90.0" x1="208.0" x2="292.0" px2="0.7495025"/>
+  
   <stereotype/>
   <label>Reality</label>
   <text-lines>
    <text-line id="auto:97937">
     
-    <hints y1="67.5" x1="220.0" y2="85.5" x2="280.0"/>
+    
     <text>(codebase)</text>
     <symbols/>
    </text-line>
@@ -75,13 +79,13 @@
  </glyph>
  <glyph id="id_2">
   
-  <hints py2="0.98755586" px1="0.75037324" y1="148.0" py1="0.5014641" y2="196.0" x1="314.0" x2="422.0" px2="0.87437624"/>
+  
   <stereotype/>
   <label>Outcomes</label>
   <text-lines>
    <text-line id="auto:49547">
     
-    <hints y1="173.5" x1="323.0" y2="191.5" x2="413.0"/>
+    
     <text>Feature X (Code)</text>
     <symbols/>
    </text-line>
@@ -90,13 +94,13 @@
  </glyph>
  <glyph id="id_11">
   
-  <hints py2="0.98755586" px1="0.8746247" y1="148.0" py1="0.5014641" y2="196.0" x1="434.0" x2="602.0" px2="0.9986277"/>
+  
   <stereotype/>
   <label>Revealed Hidden Risks</label>
   <text-lines>
    <text-line id="auto:49737">
     
-    <hints y1="173.5" x1="442.5" y2="191.5" x2="593.5"/>
+    
     <text>Development Difficulties</text>
     <symbols/>
    </text-line>
@@ -104,7 +108,7 @@
   <symbols/>
  </glyph>
  
-<allLinks>
+ 
   <link id="id_4" shape="NORMAL" style="">
    
    <from xsi:type="glyph" reference="id_0"/>
@@ -147,9 +151,9 @@
    <fromDecoration>NONE</fromDecoration>
    <toDecoration>BARBED ARROW</toDecoration>
   </link>
-  <link id="id_16" shape="INVISIBLE" drawDirection="LEFT">
+  <link id="id_16" class="invisible" drawDirection="LEFT">
    
    <from xsi:type="glyph" reference="id_11"/>
    <to xsi:type="glyph" reference="id_2"/>
   </link>
- </allLinks></diagram>
+  </diagram></svg:svg>

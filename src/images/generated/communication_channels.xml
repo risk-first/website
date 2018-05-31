@@ -1,28 +1,32 @@
-<?xml version="1.0"?><diagram xmlns="http://www.kite9.org/schema/adl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="diagram-139" name="Communication - Model">
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink'  zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs><diagram xmlns="http://www.kite9.org/schema/adl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="diagram-139" name="Communication - Model">
  
- <hints px1="0.001499" py2="0.998002" py1="0.001998" px2="0.998252"/>
+ 
  <glyph id="id_1">
   
-  <hints py2="0.998002" px1="0.0014990001" y1="35.0" py1="0.001998" y2="143.0" x1="12.0" x2="276.0" px2="0.499501"/>
+  
   <stereotype/>
   <label>Attendant Risks</label>
   <text-lines>
    <text-line id="auto:168563">
     
-    <hints y1="64.0" x1="21.5" y2="82.0" x2="266.5"/>
+    
     <text>Noise Risk: messages lost, delayed, corrupted</text>
     <symbols/>
    </text-line>
    <text-line id="auto:168564">
     
-    <hints y1="82.0" x1="21.5" y2="117.0" x2="266.5"/>
+    
     <text>Suitability Risk: is the message appropriate
 to the type of channel?</text>
     <symbols/>
    </text-line>
    <text-line id="auto:168565">
     
-    <hints y1="117.0" x1="21.5" y2="135.0" x2="266.5"/>
+    
     <text>Quality Risk:  capacity, bandwidth, latency etc</text>
     <symbols/>
    </text-line>
@@ -31,10 +35,10 @@ to the type of channel?</text>
  </glyph>
  <context id="auto:158001" bordered="true">
   
-  <hints px1="0.500748" py2="0.998002" y1="12.0" py1="0.001998" x1="288.0" y2="166.0" x2="420.0" px2="0.749251"/>
+  
   <glyph id="id_24">
    
-   <hints py2="0.499502" px1="0.5012445" y1="24.0" py1="0.002496002" y2="60.0" x1="300.0" x2="408.0" px2="0.7487545"/>
+   
    <stereotype/>
    <label>Transmission</label>
    <text-lines/>
@@ -42,7 +46,7 @@ to the type of channel?</text>
   </glyph>
   <glyph id="id_8">
    
-   <hints py2="0.997504" px1="0.5012445" y1="100.0" py1="0.500498" y2="136.0" x1="312.0" x2="396.0" px2="0.7487545"/>
+   
    <stereotype/>
    <label>Reception</label>
    <text-lines/>
@@ -50,38 +54,38 @@ to the type of channel?</text>
   </glyph>
   <label xsi:type="text-line" id="id_13">
    
-   <hints y1="143.0" x1="330.0" y2="164.0" x2="378.0"/>
+   
    <text>Channel</text>
    <symbols/>
   </label>
  </context>
  <glyph id="id_0" shape="umlNOTE">
   
-  <hints py2="0.998002" px1="0.749749" y1="41.0" py1="0.001998" y2="137.0" x1="432.0" x2="672.0" px2="0.998252"/>
+  
   <stereotype>Examples</stereotype>
   <label/>
   <text-lines>
    <text-line id="auto:168931">
     
-    <hints y1="61.0" x1="441.0" y2="79.0" x2="663.0"/>
+    
     <text>Mishearing because of background noise</text>
     <symbols/>
    </text-line>
    <text-line id="auto:168932">
     
-    <hints y1="79.0" x1="441.0" y2="97.0" x2="663.0"/>
+    
     <text>Messages arriving out-of-order</text>
     <symbols/>
    </text-line>
    <text-line id="auto:168933">
     
-    <hints y1="97.0" x1="441.0" y2="115.0" x2="663.0"/>
+    
     <text>Difficulty finding the products you need</text>
     <symbols/>
    </text-line>
    <text-line id="auto:168934">
     
-    <hints y1="115.0" x1="441.0" y2="133.0" x2="663.0"/>
+    
     <text>Teams not communicating enough</text>
     <symbols/>
    </text-line>
@@ -89,13 +93,13 @@ to the type of channel?</text>
   <symbols/>
  </glyph>
  
-<allLinks>
-  <link id="id_2" shape="INVISIBLE" drawDirection="RIGHT">
+ 
+  <link id="id_2" class="invisible" drawDirection="RIGHT">
    
    <from xsi:type="glyph" reference="id_1"/>
    <to xsi:type="context" reference="auto:158001"/>
   </link>
-  <link id="id_3" shape="INVISIBLE" drawDirection="RIGHT">
+  <link id="id_3" class="invisible" drawDirection="RIGHT">
    
    <from xsi:type="context" reference="auto:158001"/>
    <to xsi:type="glyph" reference="id_0"/>
@@ -107,4 +111,4 @@ to the type of channel?</text>
    <fromDecoration>NONE</fromDecoration>
    <toDecoration>BARBED ARROW</toDecoration>
   </link>
- </allLinks></diagram>
+  </diagram></svg:svg>
