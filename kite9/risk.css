@@ -3,6 +3,11 @@
 	src: url('GOTHIC.ttf') format('truetype');
 }
 
+@font-face {
+	font-family: "gothic-bold";
+	src: url('GOTHICB.ttf') format('truetype');
+}
+
 /*
  * Required so we can process old XML content
  */
@@ -398,4 +403,42 @@ arrow > label > contents {
 	stroke: none;
 	font-size: 10pt;
 	font-family: "gothic";
+}
+
+/* Stereotype */
+
+glyph stereotype {
+	kite9-type: container;
+	kite9-template: url(template.svg#glyph-stereotype-text);
+	kite9-vertical-align: bottom;
+	kite9-horizontal-align: center;
+	kite9-margin: 5pt; 
+	kite9-sizing: maximize;
+	text-align: middle;
+}
+
+.glyph-stereotype-text {
+	font-family: "gothic-bold";
+	font-size: 12pt;
+	fill: black;
+	stroke: none;
+	kite9-padding: 2pt; 
+}
+
+glyph text-lines {
+	kite9-type: container;
+	kite9-sizing: maximize;
+	kite9-layout: vertical;
+}
+
+text-line, text {
+	kite9-type: container;
+	kite9-sizing: maximize;
+	kite9-padding-top: 2px;
+	kite9-padding-bottom: 2px;
+	kite9-padding-left: 0px;
+	kite9-padding-right: 0px;
+	kite9-margin: 0 0 0 0; 
+	kite9-vertical-align: top;
+	kite9-connection-align: 50%;
 }
