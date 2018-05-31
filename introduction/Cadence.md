@@ -1,6 +1,6 @@
 Let's go back to the model again, introduced in [Meeting Reality](Meeting-Reality):
 
-![Reality 2](images/reality2.png)
+![Reality 2](images/generated/movel_vs_reality_2.png)
 
 As you can see, it's an idealized **Feedback Loop**.  
 

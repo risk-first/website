@@ -15,7 +15,7 @@ So, it should be no surprise to see that there is a _recursive_ nature about thi
 
 So, let's see how this kind of recursion looks on our model. Note that here, I am showing _just one possible action_, in reality, you'll have choices.
 
-![Reality 2](images/reality2.png).
+![Reality 2](images/model_vs_reality_2.png).
 
 Hopefully, if you've read along so far, this model shouldn't be too hard to understand.  But, how is it helpful?  
 
