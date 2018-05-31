@@ -32,42 +32,18 @@
         <symbols />
       </label>
     </context>
-    <glyph id="id_1.1">
-
-
-      <stereotype />
-      <label>Attendant Risks</label>
-      <text-lines>
-        <text-line id="auto:187204">
-
-
-          <text>Learning Curve Risk
-            Belief Risk / Trust Risk
-          </text>
-          <symbols />
-        </text-line>
-      </text-lines>
-      <symbols />
-    </glyph>
-    <glyph id="id_0">
-
-
-      <stereotype />
-      <label>Attendant Risks</label>
-      <text-lines>
-        <text-line id="auto:184866">
-
-
-          <text>Internal Model Assumption Risk
-            Message Dependency Risk
-            Abstraction &amp; Misinterpretation Risk
-            Invisibility Risk
-          </text>
-          <symbols />
-        </text-line>
-      </text-lines>
-      <symbols />
-    </glyph>
+    <context id="id_1.1" style="kite9-layout: down;">
+      <risk class="internal-model" />
+      <risk class="belief" />
+      <risk class="learning-curve" />
+      <risk class="trust" />
+    </context>
+    <context id="id_0" style="kite9-layout: down;">
+      <risk class="message" />
+      <risk class="internal-model-assumption" />
+      <risk class="misinterpretation" />
+      <risk class="invisibility" />
+    </context>
     <context id="auto:152870.1" bordered="true">
 
 
@@ -94,39 +70,12 @@
         <symbols />
       </label>
     </context>
-    <glyph id="id_0.1">
-
-
-      <stereotype />
-      <label>Attendant Risks</label>
-      <text-lines>
-        <text-line id="auto:182084">
-
-
-          <text>Abstraction Risk</text>
-          <symbols />
-        </text-line>
-        <text-line id="auto:182085">
-
-
-          <text>Protocol Versioning Risk</text>
-          <symbols />
-        </text-line>
-        <text-line id="auto:182086">
-
-
-          <text>Incompatible Protocol Risk</text>
-          <symbols />
-        </text-line>
-        <text-line id="auto:182087">
-
-
-          <text>Implementation Risk</text>
-          <symbols />
-        </text-line>
-      </text-lines>
-      <symbols />
-    </glyph>
+    <context id="id_0.1" style="kite9-layout: down;">
+      <risk class="protocol" />
+      <risk class="protocol-versioning" />
+      <risk class="protocol-incompatibility" />
+      <risk class="protocol-implementation" />
+    </context>
     <context id="auto:157513.1" bordered="true">
 
 
@@ -153,35 +102,12 @@
         <symbols />
       </label>
     </context>
-    <glyph id="id_1.1.1">
-
-
-      <stereotype />
-      <label>Attendant Risks</label>
-      <text-lines>
-        <text-line id="auto:168563">
-
-
-          <text>Noise Risk: messages lost, delayed, corrupted</text>
-          <symbols />
-        </text-line>
-        <text-line id="auto:168564">
-
-
-          <text>Suitability Risk: is the message appropriate
-            to the type of channel?
-          </text>
-          <symbols />
-        </text-line>
-        <text-line id="auto:168565">
-
-
-          <text>Quality Risk: capacity, bandwidth, latency etc</text>
-          <symbols />
-        </text-line>
-      </text-lines>
-      <symbols />
-    </glyph>
+    <context id="id_1.1.1" style="kite9-layout: down;">
+      <risk class="channel" />
+      <risk class="noise" />
+      <risk class="channel-fit" />
+      <risk class="channel-capacity" />
+    </context>
     <context id="auto:158001.1" bordered="true">
 
 
