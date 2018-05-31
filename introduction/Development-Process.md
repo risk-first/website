@@ -18,7 +18,7 @@ Now, it might be waterfall, it might be agile, we're not going to commit to spec
 
 I'm not saying this is the _right_ process, or even a _good_ process: you could add code review, a pilot, integration testing, whatever.  We're just doing some analysis of _what process gives us_.  
 
-![Development Process](images/dev_process1.png)
+![Development Process](images/generated/development_process1.png)
 
 What's happening here?  Why these steps?  
 
@@ -35,7 +35,7 @@ We could skip all those steps above and just do this:
 
 1.  Developer gets wind of new idea from user, logs onto production and changes some code directly.
 
-![Development Process](images/dev_process2.png)
+![Development Process](images/generated/development_process2.png)
 
 We can all see this would be a disaster, but why?
 
@@ -54,7 +54,7 @@ Let's look at how our process should act to prevent these risks materializing by
 - Actually, this functionality is mainly served by **Feature Z**...
 - which is already there but hard to find.
 
-![Development Process - Hidden Risks](images/dev_process_hidden_risks.png)
+![Development Process - Hidden Risks](images/generated/development_process_4.png)
 
 This is a slightly contrived example, as you'll see.  But let's follow our feature through the process and see how it meets reality slowly, and the hidden risks are discovered:
 
@@ -73,7 +73,7 @@ In the process of doing this, the BA is turning the simple feature request _idea
 
 Hopefully, after this stage, our [Internal Model](Internal-Model) might look something like this:
 
-![BA Specification](images/dev_process_ba.png)
+![BA Specification](images/generated/development_process_ba.png)
 
 In surfacing these risks, there is another outcome:  while **Feature X** might be flawed as originally presented, the BA can "evolve" it into a specification, and tie it down sufficiently to reduce the risks.   The BA does all this by simply _thinking about it_, _talking to people_ and _writing stuff down_.
 
@@ -91,7 +91,7 @@ To a large extent, this is the whole point of _type safety_:  to ensure that you
 The same thing is true of writing unit tests:  again you are testing your [Internal Model](Internal-Model) against the reality of the system being built, running in your development environment.  Hopefully, this will surface some new hidden risks, and again,
 because the [goal in mind](Goal-In-Mind) has met reality, it is changed, to **Feature X (Code)**.
 
-![Coding Process](images/dev_process_code.png)
+![Coding Process](images/generated/development_process_code.png)
 
 ### Integration
 
@@ -101,13 +101,13 @@ So, this stage is about the developer's committed code meeting a new reality: th
 
 At this stage, we might discover the [Hidden Risk](Attendant-Risk) that we'd break **Feature Y**
 
-![Integration](images/dev_process_integration.png)
+![Integration](images/generated/development_process_integration.png)
 
 ### UAT
 
 Is where our feature meets another reality: _actual users_.   I think you can see how the process works by now.  We're just flushing out yet more [Hidden Risks](Attendant-Risk):
 
-![UAT](images/dev_process_uat.png)
+![UAT](images/generated/development_process_uat.png)
 
 ## Observations
 

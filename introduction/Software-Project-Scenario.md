@@ -4,7 +4,7 @@ How do we decide what _needs to be done today_ on a software project?
 
 Let's look again at the simple risk framework from the [introduction](Introduction) and try to apply it at the level of the _entire project_.
 
-![Reality](images/reality.png)
+![Reality](images/development/model_vs_reality.png)
 
 ## Goal In Mind
 
