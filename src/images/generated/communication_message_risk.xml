@@ -5,24 +5,12 @@
   </svg:defs><diagram xmlns="http://www.kite9.org/schema/adl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="diagram-143" name="Communication - Model">
  
  
- <glyph id="id_0">
-  
-  
-  <stereotype/>
-  <label>Attendant Risks</label>
-  <text-lines>
-   <text-line id="auto:184866">
-    
-    
-    <text>Internal Model Assumption Risk  
-Message Dependency Risk
-Abstraction &amp; Misinterpretation Risk
-Invisibility Risk</text>
-    <symbols/>
-   </text-line>
-  </text-lines>
-  <symbols/>
- </glyph>
+ <context id="id_0">
+   <risk class="internal-model" />
+   <risk class="internal-model-assumption" />
+   <risk class="message-dependency" />
+   <risk class="invisibility" />
+ </context>
  <context id="auto:152870" bordered="true">
   
   
@@ -56,11 +44,9 @@ Invisibility Risk</text>
   <label/>
   <text-lines>
    <text-line id="auto:184780">
-    
-    
-    <text> "The Curse Of Knowledge"
-Out-of-order messages
-Forgotten information</text>
+- "Curse Of Knowledge"
+- Out-of-order messages
+- Forgotten information
     <symbols/>
    </text-line>
   </text-lines>

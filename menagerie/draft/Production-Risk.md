@@ -59,7 +59,8 @@ Production Risk
 
 Regulatory Risk  Legal Risk  (Pestle?)
 
-Competition
+Competition - this is the game, everything else is practice.3
+
 
 
 

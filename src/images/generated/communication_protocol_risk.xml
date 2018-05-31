@@ -5,61 +5,27 @@
   </svg:defs><diagram xmlns="http://www.kite9.org/schema/adl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="diagram-142" name="Communication - Model">
  
  
- <glyph id="id_0">
-  
-  
-  <stereotype/>
-  <label>Attendant Risks</label>
-  <text-lines>
-   <text-line id="auto:182084">
-    
-    
-    <text>Abstraction Risk</text>
-    <symbols/>
-   </text-line>
-   <text-line id="auto:182085">
-    
-    
-    <text>Protocol Versioning Risk</text>
-    <symbols/>
-   </text-line>
-   <text-line id="auto:182086">
-    
-    
-    <text>Incompatible Protocol Risk</text>
-    <symbols/>
-   </text-line>
-   <text-line id="auto:182087">
-    
-    
-    <text>Implementation Risk</text>
-    <symbols/>
-   </text-line>
-  </text-lines>
-  <symbols/>
- </glyph>
+ <context id="id_0">
+  <risk class="protocol" />
+  <risk class="protocol-versioning" />
+  <risk class="abstraction" />
+  <risk class="protocol-incompatibility" />
+  <risk class="implementation" />
+ </context>
  <context id="auto:157513" bordered="true">
-  
-  
   <glyph id="id_10">
-   
-   
    <stereotype/>
    <label>Decoding</label>
    <text-lines/>
    <symbols/>
   </glyph>
   <glyph id="id_4">
-   
-   
    <stereotype/>
    <label>Encoding</label>
    <text-lines/>
    <symbols/>
   </glyph>
   <label xsi:type="text-line" id="id_11">
-   
-   
    <text>Protocol</text>
    <symbols/>
   </label>
@@ -71,11 +37,9 @@
   <label/>
   <text-lines>
    <text-line id="auto:182214">
-    
-    
-    <text>Language barriers
-Incompatible APIs
-Misunderstandings about meaning</text>
+    <text>- Language barriers
+- Incompatible APIs
+- Misunderstandings about meaning</text>
     <symbols/>
    </text-line>
   </text-lines>
