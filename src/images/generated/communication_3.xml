@@ -1,325 +1,328 @@
 <?xml version="1.0"?>
-<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink'  zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
   <svg:defs>
     <svg:style type="text/css"> @import url("risk.css");</svg:style>
-  </svg:defs> 
-<diagram xmlns="http://www.kite9.org/schema/adl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="diagram-145" name="Communication - Model">
- 
- 
- <context id="auto:159560" bordered="true">
-  
-  
-  <glyph id="id_29">
-   
-   
-   <stereotype/>
-   <label>Reconciliation</label>
-   <text-lines/>
-   <symbols/>
-  </glyph>
-  <glyph id="id_17">
-   
-   
-   <stereotype/>
-   <label>Motivation</label>
-   <text-lines/>
-   <symbols/>
-  </glyph>
-  <label xsi:type="text-line" id="id_19">
-   
-   
-   <text>Internal Model</text>
-   <symbols/>
-  </label>
- </context>
- <glyph id="id_1.1">
-  
-  
-  <stereotype/>
-  <label>Attendant Risks</label>
-  <text-lines>
-   <text-line id="auto:187204">
-    
-    
-    <text>Learning Curve Risk   
-Belief Risk / Trust Risk
-</text>
-    <symbols/>
-   </text-line>
-  </text-lines>
-  <symbols/>
- </glyph>
- <glyph id="id_0">
-  
-  
-  <stereotype/>
-  <label>Attendant Risks</label>
-  <text-lines>
-   <text-line id="auto:184866">
-    
-    
-    <text>Internal Model Assumption Risk  
-Message Dependency Risk
-Abstraction &amp; Misinterpretation Risk
-Invisibility Risk</text>
-    <symbols/>
-   </text-line>
-  </text-lines>
-  <symbols/>
- </glyph>
- <context id="auto:152870.1" bordered="true">
-  
-  
-  <glyph id="id_14.1">
-   
-   
-   <stereotype/>
-   <label>Interpretation</label>
-   <text-lines/>
-   <symbols/>
-  </glyph>
-  <glyph id="id_2.1">
-   
-   
-   <stereotype/>
-   <label>Composition</label>
-   <text-lines/>
-   <symbols/>
-  </glyph>
-  <label xsi:type="text-line" id="id_6.1">
-   
-   
-   <text>Message</text>
-   <symbols/>
-  </label>
- </context>
- <glyph id="id_0.1">
-  
-  
-  <stereotype/>
-  <label>Attendant Risks</label>
-  <text-lines>
-   <text-line id="auto:182084">
-    
-    
-    <text>Abstraction Risk</text>
-    <symbols/>
-   </text-line>
-   <text-line id="auto:182085">
-    
-    
-    <text>Protocol Versioning Risk</text>
-    <symbols/>
-   </text-line>
-   <text-line id="auto:182086">
-    
-    
-    <text>Incompatible Protocol Risk</text>
-    <symbols/>
-   </text-line>
-   <text-line id="auto:182087">
-    
-    
-    <text>Implementation Risk</text>
-    <symbols/>
-   </text-line>
-  </text-lines>
-  <symbols/>
- </glyph>
- <context id="auto:157513.1" bordered="true">
-  
-  
-  <glyph id="id_10.1">
-   
-   
-   <stereotype/>
-   <label>Decoding</label>
-   <text-lines/>
-   <symbols/>
-  </glyph>
-  <glyph id="id_4.1">
-   
-   
-   <stereotype/>
-   <label>Encoding</label>
-   <text-lines/>
-   <symbols/>
-  </glyph>
-  <label xsi:type="text-line" id="id_11.1">
-   
-   
-   <text>Protocol</text>
-   <symbols/>
-  </label>
- </context>
- <glyph id="id_1.1.1">
-  
-  
-  <stereotype/>
-  <label>Attendant Risks</label>
-  <text-lines>
-   <text-line id="auto:168563">
-    
-    
-    <text>Noise Risk: messages lost, delayed, corrupted</text>
-    <symbols/>
-   </text-line>
-   <text-line id="auto:168564">
-    
-    
-    <text>Suitability Risk: is the message appropriate
-to the type of channel?</text>
-    <symbols/>
-   </text-line>
-   <text-line id="auto:168565">
-    
-    
-    <text>Quality Risk:  capacity, bandwidth, latency etc</text>
-    <symbols/>
-   </text-line>
-  </text-lines>
-  <symbols/>
- </glyph>
- <context id="auto:158001.1" bordered="true">
-  
-  
-  <glyph id="id_24.1">
-   
-   
-   <stereotype/>
-   <label>Transmission</label>
-   <text-lines/>
-   <symbols/>
-  </glyph>
-  <glyph id="id_8.1">
-   
-   
-   <stereotype/>
-   <label>Reception</label>
-   <text-lines/>
-   <symbols/>
-  </glyph>
-  <label xsi:type="text-line" id="id_13.1">
-   
-   
-   <text>Channel</text>
-   <symbols/>
-  </label>
- </context>
- 
- 
-  <link id="id_8" class="invisible" drawDirection="RIGHT">
-   
-   <from xsi:type="context" reference="auto:159560"/>
-   <to xsi:type="context" reference="auto:152870.1"/>
-  </link>
-  <link id="id_12" class="invisible" drawDirection="DOWN">
-   
-   <from xsi:type="glyph" reference="id_1.1"/>
-   <to xsi:type="context" reference="auto:159560"/>
-  </link>
-  <link id="id_15" shape="NORMAL" style="" drawDirection="LEFT">
-   
-   <from xsi:type="glyph" reference="id_14.1"/>
-   <to xsi:type="glyph" reference="id_29" class="arrow"/>
-   <fromDecoration>NONE</fromDecoration>
-   <toDecoration>BARBED ARROW</toDecoration>
-  </link>
-  <link id="id_37" class="invisible" drawDirection="DOWN">
-   
-   <from xsi:type="glyph" reference="id_17"/>
-   <to xsi:type="glyph" reference="id_29"/>
-  </link>
-  <link id="id_21" shape="NORMAL" style="" drawDirection="RIGHT">
-   
-   <from xsi:type="glyph" reference="id_17"/>
-   <to xsi:type="glyph" reference="id_2.1" class="arrow"/>
-   <fromDecoration>NONE</fromDecoration>
-   <toDecoration>BARBED ARROW</toDecoration>
-  </link>
-  <link id="id_34" class="invisible" drawDirection="RIGHT">
-   
-   <from xsi:type="glyph" reference="id_1.1"/>
-   <to xsi:type="glyph" reference="id_0"/>
-  </link>
-  <link id="id_30" class="invisible" drawDirection="UP">
-   
-   <from xsi:type="glyph" reference="id_2.1"/>
-   <to xsi:type="glyph" reference="id_0"/>
-  </link>
-  <link id="id_31" class="invisible" drawDirection="RIGHT">
-   
-   <from xsi:type="glyph" reference="id_0"/>
-   <to xsi:type="glyph" reference="id_0.1"/>
-  </link>
-  <link id="id_10" class="invisible" drawDirection="RIGHT">
-   
-   <from xsi:type="context" reference="auto:152870.1"/>
-   <to xsi:type="context" reference="auto:157513.1"/>
-  </link>
-  <link id="id_1.1.1.1" class="invisible" drawDirection="DOWN">
-   
-   <from xsi:type="glyph" reference="id_2.1"/>
-   <to xsi:type="glyph" reference="id_14.1"/>
-  </link>
-  <link id="id_20" shape="NORMAL" style="" drawDirection="LEFT">
-   
-   <from xsi:type="glyph" reference="id_10.1"/>
-   <to xsi:type="glyph" reference="id_14.1" class="arrow"/>
-   <fromDecoration>NONE</fromDecoration>
-   <toDecoration>BARBED ARROW</toDecoration>
-  </link>
-  <link id="id_3.1" shape="NORMAL" style="" drawDirection="RIGHT">
-   
-   <from xsi:type="glyph" reference="id_2.1"/>
-   <to xsi:type="glyph" reference="id_4.1" class="arrow"/>
-   <fromDecoration>NONE</fromDecoration>
-   <toDecoration>BARBED ARROW</toDecoration>
-  </link>
-  <link id="id_25" class="invisible" drawDirection="UP">
-   
-   <from xsi:type="glyph" reference="id_4.1"/>
-   <to xsi:type="glyph" reference="id_0.1"/>
-  </link>
-  <link id="id_27" class="invisible" drawDirection="RIGHT">
-   
-   <from xsi:type="glyph" reference="id_0.1"/>
-   <to xsi:type="glyph" reference="id_1.1.1"/>
-  </link>
-  <link id="id_11" class="invisible" drawDirection="RIGHT">
-   
-   <from xsi:type="context" reference="auto:157513.1"/>
-   <to xsi:type="context" reference="auto:158001.1"/>
-  </link>
-  <link id="id_9" shape="NORMAL" style="" drawDirection="LEFT">
-   
-   <from xsi:type="glyph" reference="id_8.1"/>
-   <to xsi:type="glyph" reference="id_10.1" class="arrow"/>
-   <fromDecoration>NONE</fromDecoration>
-   <toDecoration>BARBED ARROW</toDecoration>
-  </link>
-  <link id="id_5" class="invisible" drawDirection="DOWN">
-   
-   <from xsi:type="glyph" reference="id_4.1"/>
-   <to xsi:type="glyph" reference="id_10.1"/>
-  </link>
-  <link id="id_23" shape="NORMAL" style="" drawDirection="RIGHT">
-   
-   <from xsi:type="glyph" reference="id_4.1"/>
-   <to xsi:type="glyph" reference="id_24.1" class="arrow"/>
-   <fromDecoration>NONE</fromDecoration>
-   <toDecoration>BARBED ARROW</toDecoration>
-  </link>
-  <link id="id_26" class="invisible" drawDirection="UP">
-   
-   <from xsi:type="glyph" reference="id_24.1"/>
-   <to xsi:type="glyph" reference="id_1.1.1"/>
-  </link>
-  <link id="id_32" shape="NORMAL" style="">
-   
-   <from xsi:type="glyph" reference="id_24.1"/>
-   <to xsi:type="glyph" reference="id_8.1" class="arrow"/>
-   <fromDecoration>NONE</fromDecoration>
-   <toDecoration>BARBED ARROW</toDecoration>
-  </link>
-  </diagram></svg:svg>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="diagram-145" name="Communication - Model">
+
+
+    <context id="auto:159560" bordered="true">
+
+
+      <glyph id="id_29">
+
+
+        <stereotype />
+        <label>Reconciliation</label>
+        <text-lines />
+        <symbols />
+      </glyph>
+      <glyph id="id_17">
+
+
+        <stereotype />
+        <label>Motivation</label>
+        <text-lines />
+        <symbols />
+      </glyph>
+      <label xsi:type="text-line" id="id_19">
+
+
+        <text>Internal Model</text>
+        <symbols />
+      </label>
+    </context>
+    <glyph id="id_1.1">
+
+
+      <stereotype />
+      <label>Attendant Risks</label>
+      <text-lines>
+        <text-line id="auto:187204">
+
+
+          <text>Learning Curve Risk
+            Belief Risk / Trust Risk
+          </text>
+          <symbols />
+        </text-line>
+      </text-lines>
+      <symbols />
+    </glyph>
+    <glyph id="id_0">
+
+
+      <stereotype />
+      <label>Attendant Risks</label>
+      <text-lines>
+        <text-line id="auto:184866">
+
+
+          <text>Internal Model Assumption Risk
+            Message Dependency Risk
+            Abstraction &amp; Misinterpretation Risk
+            Invisibility Risk
+          </text>
+          <symbols />
+        </text-line>
+      </text-lines>
+      <symbols />
+    </glyph>
+    <context id="auto:152870.1" bordered="true">
+
+
+      <glyph id="id_14.1">
+
+
+        <stereotype />
+        <label>Interpretation</label>
+        <text-lines />
+        <symbols />
+      </glyph>
+      <glyph id="id_2.1">
+
+
+        <stereotype />
+        <label>Composition</label>
+        <text-lines />
+        <symbols />
+      </glyph>
+      <label xsi:type="text-line" id="id_6.1">
+
+
+        <text>Message</text>
+        <symbols />
+      </label>
+    </context>
+    <glyph id="id_0.1">
+
+
+      <stereotype />
+      <label>Attendant Risks</label>
+      <text-lines>
+        <text-line id="auto:182084">
+
+
+          <text>Abstraction Risk</text>
+          <symbols />
+        </text-line>
+        <text-line id="auto:182085">
+
+
+          <text>Protocol Versioning Risk</text>
+          <symbols />
+        </text-line>
+        <text-line id="auto:182086">
+
+
+          <text>Incompatible Protocol Risk</text>
+          <symbols />
+        </text-line>
+        <text-line id="auto:182087">
+
+
+          <text>Implementation Risk</text>
+          <symbols />
+        </text-line>
+      </text-lines>
+      <symbols />
+    </glyph>
+    <context id="auto:157513.1" bordered="true">
+
+
+      <glyph id="id_10.1">
+
+
+        <stereotype />
+        <label>Decoding</label>
+        <text-lines />
+        <symbols />
+      </glyph>
+      <glyph id="id_4.1">
+
+
+        <stereotype />
+        <label>Encoding</label>
+        <text-lines />
+        <symbols />
+      </glyph>
+      <label xsi:type="text-line" id="id_11.1">
+
+
+        <text>Protocol</text>
+        <symbols />
+      </label>
+    </context>
+    <glyph id="id_1.1.1">
+
+
+      <stereotype />
+      <label>Attendant Risks</label>
+      <text-lines>
+        <text-line id="auto:168563">
+
+
+          <text>Noise Risk: messages lost, delayed, corrupted</text>
+          <symbols />
+        </text-line>
+        <text-line id="auto:168564">
+
+
+          <text>Suitability Risk: is the message appropriate
+            to the type of channel?
+          </text>
+          <symbols />
+        </text-line>
+        <text-line id="auto:168565">
+
+
+          <text>Quality Risk: capacity, bandwidth, latency etc</text>
+          <symbols />
+        </text-line>
+      </text-lines>
+      <symbols />
+    </glyph>
+    <context id="auto:158001.1" bordered="true">
+
+
+      <glyph id="id_24.1">
+
+
+        <stereotype />
+        <label>Transmission</label>
+        <text-lines />
+        <symbols />
+      </glyph>
+      <glyph id="id_8.1">
+
+
+        <stereotype />
+        <label>Reception</label>
+        <text-lines />
+        <symbols />
+      </glyph>
+      <label xsi:type="text-line" id="id_13.1">
+
+
+        <text>Channel</text>
+        <symbols />
+      </label>
+    </context>
+
+
+    <link id="id_8" class="invisible" drawDirection="RIGHT">
+
+      <from xsi:type="context" reference="auto:159560" />
+      <to xsi:type="context" reference="auto:152870.1" />
+    </link>
+    <link id="id_12" class="invisible" drawDirection="DOWN">
+
+      <from xsi:type="glyph" reference="id_1.1" />
+      <to xsi:type="context" reference="auto:159560" />
+    </link>
+    <link id="id_15" shape="NORMAL" style="" drawDirection="LEFT">
+
+      <from xsi:type="glyph" reference="id_14.1" />
+      <to xsi:type="glyph" reference="id_29" class="arrow" />
+
+
+    </link>
+    <link id="id_37" class="invisible" drawDirection="DOWN">
+
+      <from xsi:type="glyph" reference="id_17" />
+      <to xsi:type="glyph" reference="id_29" />
+    </link>
+    <link id="id_21" shape="NORMAL" style="" drawDirection="RIGHT">
+
+      <from xsi:type="glyph" reference="id_17" />
+      <to xsi:type="glyph" reference="id_2.1" class="arrow" />
+
+
+    </link>
+    <link id="id_34" class="invisible" drawDirection="RIGHT">
+
+      <from xsi:type="glyph" reference="id_1.1" />
+      <to xsi:type="glyph" reference="id_0" />
+    </link>
+    <link id="id_30" class="invisible" drawDirection="UP">
+
+      <from xsi:type="glyph" reference="id_2.1" />
+      <to xsi:type="glyph" reference="id_0" />
+    </link>
+    <link id="id_31" class="invisible" drawDirection="RIGHT">
+
+      <from xsi:type="glyph" reference="id_0" />
+      <to xsi:type="glyph" reference="id_0.1" />
+    </link>
+    <link id="id_10" class="invisible" drawDirection="RIGHT">
+
+      <from xsi:type="context" reference="auto:152870.1" />
+      <to xsi:type="context" reference="auto:157513.1" />
+    </link>
+    <link id="id_1.1.1.1" class="invisible" drawDirection="DOWN">
+
+      <from xsi:type="glyph" reference="id_2.1" />
+      <to xsi:type="glyph" reference="id_14.1" />
+    </link>
+    <link id="id_20" shape="NORMAL" style="" drawDirection="LEFT">
+
+      <from xsi:type="glyph" reference="id_10.1" />
+      <to xsi:type="glyph" reference="id_14.1" class="arrow" />
+
+
+    </link>
+    <link id="id_3.1" shape="NORMAL" style="" drawDirection="RIGHT">
+
+      <from xsi:type="glyph" reference="id_2.1" />
+      <to xsi:type="glyph" reference="id_4.1" class="arrow" />
+
+
+    </link>
+    <link id="id_25" class="invisible" drawDirection="UP">
+
+      <from xsi:type="glyph" reference="id_4.1" />
+      <to xsi:type="glyph" reference="id_0.1" />
+    </link>
+    <link id="id_27" class="invisible" drawDirection="RIGHT">
+
+      <from xsi:type="glyph" reference="id_0.1" />
+      <to xsi:type="glyph" reference="id_1.1.1" />
+    </link>
+    <link id="id_11" class="invisible" drawDirection="RIGHT">
+
+      <from xsi:type="context" reference="auto:157513.1" />
+      <to xsi:type="context" reference="auto:158001.1" />
+    </link>
+    <link id="id_9" shape="NORMAL" style="" drawDirection="LEFT">
+
+      <from xsi:type="glyph" reference="id_8.1" />
+      <to xsi:type="glyph" reference="id_10.1" class="arrow" />
+
+
+    </link>
+    <link id="id_5" class="invisible" drawDirection="DOWN">
+
+      <from xsi:type="glyph" reference="id_4.1" />
+      <to xsi:type="glyph" reference="id_10.1" />
+    </link>
+    <link id="id_23" shape="NORMAL" style="" drawDirection="RIGHT">
+
+      <from xsi:type="glyph" reference="id_4.1" />
+      <to xsi:type="glyph" reference="id_24.1" class="arrow" />
+
+
+    </link>
+    <link id="id_26" class="invisible" drawDirection="UP">
+
+      <from xsi:type="glyph" reference="id_24.1" />
+      <to xsi:type="glyph" reference="id_1.1.1" />
+    </link>
+    <link id="id_32" shape="NORMAL" style="">
+
+      <from xsi:type="glyph" reference="id_24.1" />
+      <to xsi:type="glyph" reference="id_8.1" class="arrow" />
+
+
+    </link>
+  </diagram>
+</svg:svg>

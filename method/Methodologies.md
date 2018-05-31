@@ -15,7 +15,7 @@ When it sticks, a methodology embeds a set of practices in a team to such an ext
 
 ## A Pattern Language
 
-![A Pattern Language](images/pattern.png)
+![A Pattern Language](images/generated/pattern_language.png)
 
 It stands to reason that if [all software is about risk management](All-Risk-Management), then we can examine methodologies 
 _themselves_ in terms of how their practices mitigate risk, and change the balance of risk on projects.  

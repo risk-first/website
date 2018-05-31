@@ -77,7 +77,7 @@ A second, useful measure of complexity comes from graph theory, and that is the 
 
 To see this in action, have a look at the below graph:
 
-![Graph 1](images/connectivity_1.png)
+![Graph 1](images/generated/connectivity_1.png)
 
 It has 10 vertices, labelled **a** to **j**, and it has 15 edges (or links) connecting the vertices together.  If any single edge were removed from this diagram, the 10 vertices would still be linked together.   Because of this, we can say that the graph is _2-connected_.   That is, to disconnect any single vertex, you'd have to remove _at least_ two edges.
 
@@ -100,7 +100,7 @@ i: j                                                         (39 symbols)
 
 Let's remove some of those extra links:
 
-![Graph 2](images/connectivity_2.png)
+![Graph 2](images/generated/connectivity_2.png)
 
 In this graph, I've removed 6 of the edges.  Now, we're in a situation where if any single edge is removed, the graph becomes _unconnected_.  That is, it's broken into distinct chunks.  So, it's _1-connected_.  
 
@@ -161,7 +161,7 @@ Cyclomatic complexity is all about the number of different routes through the pr
 
 Although we ended up with our second graph having a **Cyclomatic Complexity** of 1 (the minimum), we can go further through abstraction, because this representation isn't minimal from a **Kolmogorov Complexity** point-of-view.  For example, we might observe that there are further similarities in the graph that we can "draw out":
 
-![Complexity 3](images/connectivity_3.png)
+![Complexity 3](images/generated/connectivity_3.png)
 
 Here, we've spotted that the structure of subgraphs **P1** and **P2** are the same:  we can have the same functions there to assemble those.  Noticing and exploiting patterns of repetition is one of the fundamental tools we have in the fight against [Complexity Risk](Complexity-Risk).
 

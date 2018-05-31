@@ -63,7 +63,7 @@ Imagine for a moment, that there was such a thing as **The Perfect Product**, an
  - Finally, we have a feedback loop, so the **User** can improve their [Internal Model](Internal-Model) and see the previously unforeseen [Hidden Risks](Risk).
  - Then, you can go round again.
 
-![Coding Communication Risks](images/generated/coding_communication_risk.png)
+![Coding Communication Risks](images/generated/perfect_product.png)
 
 The problem here is that this is a very _protracted feedback loop_.  This is mitigated by prototyping, because that's all about shortening the feedback loop as far as possible:  
  - By working together, you mitigate [Communication Risk](Communication-Risk).

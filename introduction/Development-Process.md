@@ -18,7 +18,7 @@ Now, it might be waterfall, it might be agile, we're not going to commit to spec
 
 I'm not saying this is the _right_ process, or even a _good_ process: you could add code review, a pilot, integration testing, whatever.  We're just doing some analysis of _what process gives us_.  
 
-![Development Process](images/generated/development_process1.png)
+![Development Process](images/generated/development_process_1.png)
 
 What's happening here?  Why these steps?  
 
@@ -35,7 +35,7 @@ We could skip all those steps above and just do this:
 
 1.  Developer gets wind of new idea from user, logs onto production and changes some code directly.
 
-![Development Process](images/generated/development_process2.png)
+![Development Process](images/generated/development_process_2.png)
 
 We can all see this would be a disaster, but why?
 
@@ -54,7 +54,12 @@ Let's look at how our process should act to prevent these risks materializing by
 - Actually, this functionality is mainly served by **Feature Z**...
 - which is already there but hard to find.
 
+![Development Process - Hidden Risks](images/generated/development_process_3.png)
+
+-or-
+
 ![Development Process - Hidden Risks](images/generated/development_process_4.png)
+
 
 This is a slightly contrived example, as you'll see.  But let's follow our feature through the process and see how it meets reality slowly, and the hidden risks are discovered:
 
