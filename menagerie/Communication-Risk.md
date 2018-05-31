@@ -259,7 +259,7 @@ Does human language support this?  To some extent!  New words are added to our l
 
 A second aspect of [Protocol Risk](Communication-Risk#protocol-risk) exists in heterogenous computing environments, where protocols have been independently implemented based on standards.  For example, there are now so many different browsers, all supporting different levels of `HTTP`, `HTML` and `JavaScript` that it becomes impossible to test comprehensively over all the different versions.  To mitigate as much [Protocol Risk](Communication-Risk#protocol-risk) as possible, generally we run tests in a subset of browsers, and use a lowest-common-denominator approach to choosing protocol and language features.
 
-![Communication Protocols Risks](images/communication_protocols_risks.png)
+![Communication Protocols Risks](images/generated/communication_protocol_risk.png)
 
 ## Messages
 
