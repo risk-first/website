@@ -14,9 +14,18 @@ So [Feature Risk] _is_ [Dependency Risk]:  they’re two sides of the same coin.
 
 ### Coordination Risk 
 
-
+- similar to _threading/deadlocking issues 
 
 
 One thing that should be apparent is that there are similarities in the risks between all the kinds of
+
+Production risk == security risk??
+
+
+Boehm..  OWASP..
+
+
+
+
 
 

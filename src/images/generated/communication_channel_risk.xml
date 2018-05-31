@@ -5,34 +5,11 @@
   </svg:defs><diagram xmlns="http://www.kite9.org/schema/adl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="diagram-139" name="Communication - Model">
  
  
- <glyph id="id_1">
-  
-  
-  <stereotype/>
-  <label>Attendant Risks</label>
-  <text-lines>
-   <text-line id="auto:168563">
-    
-    
-    <text>Noise Risk: messages lost, delayed, corrupted</text>
-    <symbols/>
-   </text-line>
-   <text-line id="auto:168564">
-    
-    
-    <text>Suitability Risk: is the message appropriate
-to the type of channel?</text>
-    <symbols/>
-   </text-line>
-   <text-line id="auto:168565">
-    
-    
-    <text>Quality Risk:  capacity, bandwidth, latency etc</text>
-    <symbols/>
-   </text-line>
-  </text-lines>
-  <symbols/>
- </glyph>
+ <context id="id_1">
+  <risk class="noise" />
+  <risk class="channel-fit" />
+  <risk class="channel-capacity" />
+ </context>
  <context id="auto:158001" bordered="true">
   
   
