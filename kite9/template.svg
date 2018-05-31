@@ -76,12 +76,9 @@
   </template>
   
   <template id="generic-text">
-    <!--  svg:rect x='0' y='0' width='#{$width}' height='#{$height}' rx='2' ry='2' stroke="black" fill="none" stroke-width="1" / -->
-    <svg:g class="generic-text">
-      <text-label style="kite9-type: text;">
-        <contents />
-      </text-label>
-    </svg:g>
+    <text-label style="kite9-type: text;" class="generic-text">
+      <contents />
+    </text-label>
   </template>
   
   <template id='arrow'>
@@ -397,6 +394,32 @@
       Risk</title>
     </risk-box>
   </template>  
+  
+  <template id="channel-fit">
+    <risk-box>
+      <code>CF</code>
+      <image>
+        <image-content style="kite9-template: url(noun_1705889.svg); " />
+      </image>
+      <title>
+      Channel
+      Fit
+      Risk</title>
+    </risk-box>
+  </template>  
+  
+  <template id="noise">
+    <risk-box>
+      <code>N</code>
+      <image>
+        <image-content style="kite9-template: url(noun_465127.svg); " />
+      </image>
+      <title>
+      Channel
+      Noise
+      Risk</title>
+    </risk-box>
+  </template>  
 
   <template id="implementation">
     <risk-box>
@@ -496,6 +519,29 @@
         <image-content style="kite9-template: url(noun_152853.svg); " />
       </image>
       <title>Dead-End
+      Risk</title>
+    </risk-box>
+  </template>  
+
+  <template id="abstraction">
+    <risk-box>
+      <code>A</code>
+      <image>
+        <image-content style="kite9-template: url(noun_1466741.svg); " />
+      </image>
+      <title>Abstraction
+      Risk</title>
+    </risk-box>
+  </template>  
+
+  <template id="channel-capacity">
+    <risk-box>
+      <code>CC</code>
+      <image>
+        <image-content style="kite9-template: url(noun_605867.svg); " />
+      </image>
+      <title>Channel
+      Capacity
       Risk</title>
     </risk-box>
   </template>  

@@ -63,17 +63,21 @@ public class ImagePreprocessor {
 			}
 			String outputPath1 = "../website.wiki/"+imagePath+".png";
 			String outputPath2 = "../website.wiki/"+imagePath+"-400dpi.png";
+			String outputPath3 = "../website.wiki/"+imagePath+".svg";
 
 			
 			// check if we have a template
 			TranscoderInput in1 = null;
 			TranscoderInput in2 = null;
+			TranscoderInput in3 = null;
 
+			
 			File sourceFile = new File("../website.wiki/src/"+imagePath+".xml");
 			if (sourceFile.exists()) {
 				// a pre-existing file
 				in1 = new TranscoderInput(new FileReader(sourceFile));
 				in2 = new TranscoderInput(new FileReader(sourceFile));
+				in3 = new TranscoderInput(new FileReader(sourceFile));
 				
 			} else {
 				// create one
@@ -82,11 +86,14 @@ public class ImagePreprocessor {
 				str = str.replaceAll("\\$\\{TYPE\\}", name);
 				in1 = new TranscoderInput(new StringReader(str));
 				in2 = new TranscoderInput(new StringReader(str));
+				in3 = new TranscoderInput(new StringReader(str));
+
 			}
 
 			File kite9Dir = new File("kite9/somefile.svg");
 			in1.setURI(kite9Dir.toURI().toString());
 			in2.setURI(kite9Dir.toURI().toString());
+			in3.setURI(kite9Dir.toURI().toString());
 
 			
 			TranscoderOutput out = new TranscoderOutput(new FileOutputStream(new File(outputPath1)));
@@ -99,9 +106,15 @@ public class ImagePreprocessor {
 			transcoder.addTranscodingHint(Kite9PNGTranscoder.KEY_PIXEL_UNIT_TO_MILLIMETER, .0635f);	// 400dpi
 			transcoder.transcode(in2, out2);
 			System.out.println("Wrote: "+outputPath2);
+			
+			TranscoderOutput out3 = new TranscoderOutput(new FileOutputStream(new File(outputPath3)));
+			Kite9SVGTranscoder transcoder3 = new Kite9SVGTranscoder();
+			transcoder3.transcode(in3, out3);
+			System.out.println("Wrote: "+outputPath3);
+
+
 		} catch (Exception e) {
 			throw new Exception("Couldn't generate: "+line, e);
 		}
 	}
-
 }

@@ -153,6 +153,22 @@ risk.dead-end {
 	kite9-template: url(template.svg#dead-end);
 }
 
+risk.abstraction {
+	kite9-template: url(template.svg#abstraction);
+}
+
+risk.channel-capacity {
+	kite9-template: url(template.svg#channel-capacity);
+}
+
+risk.channel-fit {
+	kite9-template: url(template.svg#channel-fit);
+}
+
+risk.noise {
+	kite9-template: url(template.svg#noise);
+}
+
 risk-box {
 	kite9-margin: 10pt;
 	kite9-link-inset: 10pt;
@@ -410,7 +426,6 @@ arrow > label > contents {
 glyph stereotype {
 	kite9-type: container;
 	kite9-template: url(template.svg#glyph-stereotype-text);
-	kite9-vertical-align: bottom;
 	kite9-horizontal-align: center;
 	kite9-margin: 5pt; 
 	kite9-sizing: maximize;
@@ -436,13 +451,14 @@ glyph text-lines {
 text-line {
 	kite9-type: text;
 	kite9-sizing: maximize;
-	kite9-padding-top: 2px;
-	kite9-padding-bottom: 2px;
-	kite9-padding-left: 0px;
-	kite9-padding-right: 0px;
-	kite9-margin: 0 0 0 0; 
+	kite9-margin: 4pt;
 	kite9-vertical-align: top;
 	kite9-connection-align: 50%;
 	kite9-horizontal-align: left;
-	kite9-template: url(template.svg#generic-text);
+	stroke: none;
+	fill: black;
+	font-family: "gothic";
+	text-align: start;	
+	font-size: 12pt;
 }
+
