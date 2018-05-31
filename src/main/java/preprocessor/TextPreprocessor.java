@@ -90,12 +90,17 @@ public class TextPreprocessor {
 	}
 
 	private static void processImage(String link, String text, String url, Matcher m) {
+		if (url.contains("generated")) {
+			// need to replace with 400dpi version
+			url = url.substring(0, url.length()-4) + "-400dpi.png";
+		}
+		
 		if (link.contains("-risk.png")) {		// needs to be in margin
 			System.out.println("\\marginpar{");
 			System.out.println("  \\vspace*{0cm}\\includegraphics[width=2cm,height=5cm]{"+url+"}");
 			System.out.println("}");
 		} else {
-			System.out.println(link);
+			System.out.println("!["+text+"]("+url+")");
 		}
 	}
 

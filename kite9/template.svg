@@ -27,6 +27,10 @@
     <svg:marker id="arrow-start-marker" markerWidth="7" markerHeight="7" refX="2" refY="4" orient="auto">
       <svg:path d="M6,2 L2,4 L6,6" class="arrow-marker"></svg:path>
     </svg:marker>
+    
+    <svg:marker id="circle-marker" markerWidth="6" markerHeight="6" refX="3" refY="3">
+      <svg:circle cx="3" cy="3" r="2" class="circle-marker"></svg:circle>
+    </svg:marker>
       
   </svg:defs>
   
@@ -58,6 +62,22 @@
  <template id="glyph-label-text">
     <svg:g class="glyph-label-text">
       <text-label style="kite9-type: text;" class="glyph-label-text">
+        <contents />
+      </text-label>
+    </svg:g>
+  </template>
+  
+  <template id='arrow'>
+    <back style='kite9-usage: decal; kite9-type: svg; ' class="arrow-back">
+      <svg:rect x='0' y='0' width='#{$width}' height='#{$height}' rx='4pt' ry='4pt' style='fill: black; ' />
+    </back>
+    <contents />
+  </template>
+  
+  <template id="arrow-label-text">
+    <!-- svg:rect x='0' y='0' width='#{$width}' height='#{$height}' rx='2' ry='2' stroke="black" fill="none" stroke-width="1" / -->
+    <svg:g class="arrow-label-text">
+      <text-label style="kite9-type: text;" class="arrow-label-text">
         <contents />
       </text-label>
     </svg:g>

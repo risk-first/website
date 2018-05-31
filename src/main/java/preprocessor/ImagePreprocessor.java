@@ -28,8 +28,13 @@ public class ImagePreprocessor {
 		
 		Kite9Log.setLogging(false);
 		
-		BufferedReader br = createBufferedReader(f);
-		process(br, f);
+		if (file.endsWith("md")) {
+			BufferedReader br = createBufferedReader(f);
+			process(br, f);
+		} else {
+			processGeneratedImage(file);
+		}
+		
 	}
 
 	public static BufferedReader createBufferedReader(File f) throws FileNotFoundException {
@@ -52,9 +57,9 @@ public class ImagePreprocessor {
 		try {
 			String imagePath;
 			try {
-				imagePath = line.substring(line.lastIndexOf("(")+1, line.lastIndexOf(".png)"));
+				imagePath = line.substring(line.lastIndexOf("(")+1, line.lastIndexOf("-400dpi.png)"));
 			} catch (Exception e) {
-				imagePath = line.substring(line.lastIndexOf("{")+1, line.lastIndexOf(".png}"));
+				imagePath = line.substring(line.lastIndexOf("{")+1, line.lastIndexOf("-400dpi.png}"));
 			}
 			String outputPath1 = "../website.wiki/"+imagePath+".png";
 			String outputPath2 = "../website.wiki/"+imagePath+"-400dpi.png";
@@ -73,11 +78,10 @@ public class ImagePreprocessor {
 			} else {
 				// create one
 				String str = RepositoryHelp.stream(ImagePreprocessor.class.getResourceAsStream("icon-template.svg"));
-				String name = line.substring(line.lastIndexOf("/")+1, line.lastIndexOf("-risk."));
+				String name = line.substring(line.lastIndexOf("/")+1, line.lastIndexOf("-risk-400dpi.png"));
 				str = str.replaceAll("\\$\\{TYPE\\}", name);
 				in1 = new TranscoderInput(new StringReader(str));
 				in2 = new TranscoderInput(new StringReader(str));
-				return;
 			}
 
 			File kite9Dir = new File("kite9/somefile.svg");

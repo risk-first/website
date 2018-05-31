@@ -309,20 +309,31 @@ from,
 to {
 	kite9-type: link-end;
 	kite9-template: url(template.svg#empty-terminator);
-	kite9-padding: 5px 5px 5px 5px; 
+	kite9-padding: 5pt; 
 } 
 
 from.arrow,
 to.arrow {
 	kite9-marker-start-reference: url(template.svg#arrow-start-marker);
 	kite9-marker-end-reference: url(template.svg#arrow-end-marker);
-	kite9-padding: 5px 12px 5px 1px;
+	kite9-padding: 5pt 12pt 5pt 1pt;
+	kite9-marker-reserve: 1pt;
+}
+
+from.circle,
+to.circle {
+	kite9-marker-start-reference: url(template.svg#circle-marker);
+	kite9-marker-end-reference: url(template.svg#circle-marker);
 }
 
 .arrow-marker {
-	stroke-width: 1px; 
 	stroke: black; 
 	fill: none;
+}
+
+.circle-marker {
+	fill: black;
+	stroke: none;
 }
 
 /* Contexts */
@@ -357,3 +368,34 @@ context > label {
 	fill: black;
 }
 
+/* Arrow */
+arrow {
+	kite9-padding: 3pt 5pt 3pt 5pt; 
+	kite9-type: container;
+	kite9-sizing: minimize;
+	kite9-template: url(template.svg#arrow);
+	kite9-connections: separate;
+	kite9-connection-align: 50%;
+	kite9-link-inset: 4pt;
+}
+
+
+arrow > label {
+	kite9-type: container;
+	kite9-sizing: minimize;
+	kite9-template: url(template.svg#arrow-label-text);
+	kite9-horizontal-align: center;
+	kite9-vertical-align: center;
+}
+
+arrow > label > contents {
+	kite9-horizontal-align: center;
+	kite9-vertical-align: center;
+}
+
+.arrow-label-text {
+	fill: white;
+	stroke: none;
+	font-size: 10pt;
+	font-family: "gothic";
+}
