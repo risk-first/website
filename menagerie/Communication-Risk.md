@@ -61,7 +61,7 @@ The channel characteristics also imply suitability for certain _kinds_ of messag
 
 Shannon discusses that no channel is perfect:  there is always the **risk of noise** corrupting the signal.  A key outcome from Shannon's paper is that there is a tradeoff:  within the capacity of the channel (the **Bandwidth**), you can either send lots of information with _higher_ risk that it is wrong, or less information with _lower_ risk of errors.  And, rather like the [Kolgomorov complexity](Complexity-Risk) result, the more _randomness_ in the signal, the less compressible it is, and therefore the more _bits_ it will take to transmit.  
 
-![Channel Risk](images/generated/channel-risk.png) 
+![Communication Channel Risk](images/generated/channel-risk.png) 
 
 But channel risk goes wider than just this mathematical example:  messages might be delayed or delivered in the wrong order, or not be acknowledged when they do arrive.  Sometimes, a channel is just an inappropriate way of communicating.  When you work in a different time-zone to someone else on your team, there is _automatic_ [Channel Risk](Communication-Risk#channel-risk), because instantaneous communication is only available for a few hours' a day. 
 
@@ -69,7 +69,7 @@ When channels are **poor-quality**, less communication occurs.  People will try 
 
 At other times, channels can contain so much information that we can't hope to receive all the messages.  In these cases, we don't even observe the whole channel, just parts of it.  For example, you might have a few YouTube channels that you subscribe to, but hundreds of hours of video are being posted on YouTube every second, so there is no way you can keep up with all of it.
 
-![Communication Channels](images/generated/communication_channels.png)
+![Communication Channels](images/generated/communication_channel_risks.png)
 
 #### Marketing Communications
 
@@ -259,7 +259,7 @@ Does human language support this?  To some extent!  New words are added to our l
 
 A second aspect of [Protocol Risk](Communication-Risk#protocol-risk) exists in heterogenous computing environments, where protocols have been independently implemented based on standards.  For example, there are now so many different browsers, all supporting different levels of `HTTP`, `HTML` and `JavaScript` that it becomes impossible to test comprehensively over all the different versions.  To mitigate as much [Protocol Risk](Communication-Risk#protocol-risk) as possible, generally we run tests in a subset of browsers, and use a lowest-common-denominator approach to choosing protocol and language features.
 
-![Communication Protocols Risks](images/generated/communication_protocol_risk.png)
+![Communication Protocols Risks](images/generated/communication_protocol_risks.png)
 
 ## Messages
 
@@ -339,7 +339,7 @@ The debt of [Invisibility Risk](Communication-Risk#invisibility-risk) comes due 
 - Is the person giving the update wrong or lying?
 - Do you know enough about the details of what's being discussed in order to make informed decisions about how the project is going?
   
-![Message Risk](images/generated/communication_message_risk.png)
+![Message Risk](images/generated/communication_message_risks.png)
 
 ## Internal Models
 
@@ -387,7 +387,7 @@ But now we should be able to see the reasons it's harder to read than write too:
  - There is no [Feedback Loop](Feedback-Loop) between your [Internal Model](Internal-Model) and the [Reality](Meet-Reality) of the code, opening you up to [Misinterpretation Risk](Communication-Risk#misinterpretation-risk).  When you write code, your compiler and tests give you this.
  - While reading code _takes less time_ than writing it, this also means the [Learning Curve](Communication-Risk#learning-curve-risk) is steeper.
 
-![Internal Model Risks](images/generated/communication_internal_model_risk.png)
+![Internal Model Risks](images/generated/communication_internal_model_risks.png)
 
 ## Communication Risk Wrap Up
 
