@@ -396,3 +396,5 @@ So, here's a summary of where we've arrived with our model of communication risk
 ![Communication 2](images/generated/communication_3.png)
 
 Since the purpose of Communication is to _coordinate our actions_, next it's time to look at [Coordination Risk](Coordination-Risk).
+
+this seems complex tbd.

@@ -1,3 +1,5 @@
+
+
 # Preface
 
 Welcome to Risk-First
@@ -28,3 +30,7 @@ Neither is this really a practitioner's guide to using any particular methodolog
 Lastly, although this is a [Wiki](https://en.wikipedia.org/wiki/Wiki), it's not meant to be an open-ended discussion of software techniques like [Ward's Wiki](http://wiki.c2.com).  In order to be concise and useful, discussions need to be carried out by [Opening an Issue](https://github.com/risk-first/website/issues).
 
 
+
+
+if waterfall applies the principles from building, and lean applies the principles from manufacture, risk First applies the 
+principles from finance.

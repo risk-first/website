@@ -38,23 +38,24 @@ Production Risk
   Specifics:
     - Operational Risk:
       - Single points of failure.
-        - Poor monitoring, visibility risk meets operational risk (otherwise, it doesn't matter - good example here)
-        - Correlation  (need a good example here)
-        - Contingency Planning 
-        - Disaster Recovery
-        - Datacentres (Aws etc)
-        - Performance Degradation / Runaway processes  (Performance Risk)
-        - Monitoring Tools and Logs
-    - Reputational Risk:
-      - Support (trade off - promptness vs ability)
-    - Security Risk
-      - Hacking
-      - Denial Of Service 
+      - Poor monitoring, visibility risk meets operational risk (otherwise, it doesn't matter - good example here)
+      - Correlation  (need a good example here)
+      - Contingency Planning 
+      - Disaster Recovery
+      - Datacentres (Aws etc)
+      - Performance Degradation / Runaway processes  (Performance Risk)
+      - Monitoring Tools and Logs
     - Feedback Loops
        - Bug reports, feedback
        - Quality of feedback
        - Internal Controls
          - Agency Risk meets Production Risk (bad actors, controls)
+    - Reputational Risk:
+      - Support (trade off - promptness vs ability)
+    - Security Risk
+      - Hacking
+      - Denial Of Service
+      - Security, Trust and Complexity 
   
 
 Regulatory Risk  Legal Risk  (Pestle?)
