@@ -23,7 +23,7 @@ As with any [Practice](Practices), we are coding to minimize [Attendant Risks](R
 
 - **To Build** or improve some features which our clients will find useful. - _[Feature Risk](Feature-Risk)_
 - **To Automate** some process that takes too long or is too arduous.  - _[Process Risk](Process-Risk)_
-- **To Explore** how our tools, systems or dependencies work (also called [Hacking](https://en.wikipedia.org/wiki/Hacking)). -  _[Dependency Risk](Dependency-Risk)_
+- **To Explore** how our tools, systems or dependencies work (also called [Hacking](https://en.wikipedia.org/wiki/Hacking)). -  _[Dependency Risk](Dependency-Risk)_ internal model risk
 - **To Refactor** our codebase, to reduce complexity. - _[Complexity Risk](Complexity-Risk)_
 - **To Clarify** our product, making our software more _presentable_ and _easier to understand_.  -  _[Communication Risk](Communication-Risk)_
 

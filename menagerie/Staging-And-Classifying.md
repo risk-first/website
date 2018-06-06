@@ -2,6 +2,8 @@ Our tour is complete.
 
 We've collected on this journey around the [Risk Landscape] a (hopefully) good, representative sample of [Risks] and where to find them.  But if we are good collectors, then before we're done we should [Stage] our collection on some solid [Mounting Boards], and do some work in classifying what we've seen.
 
+tbd collecting image
+
 ## Some Observations
 
 ### Your Feature Risk is Someone Else's Dependency Risk
@@ -24,6 +26,27 @@ Production risk == security risk??
 
 Boehm..  OWASP..
 
+
+
+How much do compilers do for you?
+
+
+
+
+1.  Classifying Risks
+  - Dependencies and Features are the same
+    - Dependency risks are all 2-sided.  (Counterparty risk)
+  - Communication is a Dependency
+  - Fit Risk / Communication Risk - buckets 
+    - Mention Kanban = the control is the physical object
+  - Expected Requirement Coverage - diagrams 1 & 2.
+  - Dependencies and Coordination
+
+2.  What's Gone Before
+  - Boehm.
+  
+    
+  
 
 
 
