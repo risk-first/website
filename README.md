@@ -1,7 +1,10 @@
+## The Content
+
+Everything you really want to read is here:
+
 [Wiki](https://github.com/risk-first/website/wiki)
 
-[Diagrams](kite9)
-
+The rest of this README is concerned with building the diagrams and PDF images.
 
 ## Installation
 
@@ -23,18 +26,21 @@ This is done with the `./convert.sh` script.
 
 ## Left To Do
 
-- Write the front matter
-- Update captions
+- Write the front matter DONE
 - Figure out how to reference 3rd party sites correctly.    DONE
 - Generate high-quality versions of the diagrams.
 - Figure out diagram sizing.        DONE
 - Bold for any internal references  DONE
 - Better fixedWidth font            DONE
+- Update captions 
+- 
+
+
 
 ## Images:  
 
-- Then, we can sort out the Communication Risk icon. 
-- Also, we need to sort out text centering.  It should work.
+- Then, we can sort out the Communication Risk icon.   DONE
+- Also, we need to sort out text centering.  It should work.  DONE
 - Namespaces are painful.  Nounproject keeps using new ones.  Maybe we should just add some code to remove them?  DONE
 
 ## Templating
@@ -52,24 +58,16 @@ This is done with the `./convert.sh` script.
 </template>
 ```
 
-
-
-
-
-
-
 ## Kite9 Sizing
 
-- One option is that we set SVG height and width using the diagram element.  That should definitely be an option.
-- What about viewport, then?
-- Also, what if you want to centre the diagram within a sea of whitespace?  This was an option before.
-- We need to allow width and height as options in Kite9, so they should be allowed to apply to diagram elements.
-- Then, you should "promote" them to the SVG document if it hasn't got any set already.
+- One option is that we set SVG height and width using the diagram element.  That should definitely be an option.  DONE
+- What about viewport, then?   DONE
+- Also, what if you want to centre the diagram within a sea of whitespace?  This was an option before.  DONE
+- We need to allow width and height as options in Kite9, so they should be allowed to apply to diagram elements.  DONE
+- Then, you should "promote" them to the SVG document if it hasn't got any set already.   DONE
 
 ## Links
 
 - We need a link checker, that makes sure all the uses of certain phrases are links.  This needs to happen in the source document
-
-
 
 
