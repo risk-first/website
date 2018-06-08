@@ -6,28 +6,41 @@ In this section, we're going to work on the assumption that everyone has a commo
 
 You might think that this is just another type of [Communication Risk](Communication-Risk) problem, and that's often a part of it, but even with synchronized [Internal Models](Internal-Model), coordination risk can occur.  Imagine the example of people all trying to madly leave a burning building.  They all have the same information (the building is on fire).  If they coordinate, and leave in an orderly fashion, they might all get out.  If they don't, and there's a scramble for the door, more people might die.
 
-But generally, [Coordination Risk]() occurs most commonly where people have different ideas about how to achieve a goal, and they have different ideas because they have different evaluations of the [Attendant Risk](Risk).  As we saw in the section on [Communication Risk](Communication-Risk), we can only hope to synchronize [Internal Models]() if there are high-bandwidth [Channels]() available for communication.  
+Commonly, [Coordination Risk] occurs where people have different ideas about how to achieve a goal, and they have different ideas because they have different evaluations of the [Attendant Risk](Risk).  As we saw in the section on [Communication Risk](Communication-Risk), we can only hope to synchronize [Internal Models]() if there are high-bandwidth [Channels]() available for communication.  
 
 ## Problems Of Coordination
 
 Here are some classic problems of coordination:
 
-1. **Merging Data**.  If you are familiar with the source code control system, [git], you will know that this is a _distributed_ version control system.  That means that two or more people can make source changes at the same time, completely unconnected to one another.  This means that at some later time, [git] then has to merge changes together.  Git is very good at doing this automatically, but sometimes, different people can independently change the same lines of code and these will have to be merged manually.  In this case, a human arbitrator "resolves" the difference, either by combining the two changes or picking a winner.
+1. **Merging Data**.  If you are familiar with the source code control system, [git], you will know that this is a _distributed_ version control system.  That means that two or more people can propose changes to the same files without knowing about each other.  This means that at some later time, [git] then has to merge (or reconcile) these changes together.  Git is very good at doing this automatically, but sometimes, different people can independently change the same lines of code and these will have to be merged manually.  In this case, a human arbitrator "resolves" the difference, either by combining the two changes or picking a winner.
 
 2. **Consensus**.  Making group decisions (as in elections) is often decided by votes.  But having a vote is a coordination issue:  
   - How long do you provide for the vote?  
   - What do you do about absentees?  
   - What if people change their minds in the light of new information?
+  - How do you ensure everyone has enough information to make a good decision?
   
-3. **Factions**.  Sometimes, it's hard to coordinate large groups at the same time, and "factions" can occur.  That the world isn't a single big country is probably partly a testament to this - organising on such a huge scale becomes self-defeating, and so instead at some level we end up with competition instead of coordination.   We can also see this in distributed systems, with the "split brain" problem.   This is where a network of processes becomes disconnected (usually due to a network failure between data centers), and you end up with two, smaller networks.  We'll address in more depth later.
+3. **Factions**.  Sometimes, it's hard to coordinate large groups at the same time, and "factions" can occur.  That the world isn't a single big country is probably partly a testament to this.  Organizing on such a huge scale becomes self-defeating, and so instead at some level we end up with competition instead of coordination.   We can also see this in distributed systems, with the "split brain" problem.   This is where a network of processes becomes disconnected (usually due to a network failure between data centers), and you end up with two, smaller networks.  We'll address in more depth later.
 
 4.  **Resource Allocation**:  Ensuring that the right people are doing the right work, or the right resources are given to the right people is a coordination issue.  On a grand scale, we have Logistics tbd, and ensuring that packages get delivered around the world in good time.  On a small scale, the office's _room booking system_ solves the coordination issue of who gets a meeting room using a first-come-first-served booking algorithm.
 
 5. **Deadlock**:  Deadlock refers to a situation where, in an environment where multiple parallel processes are running, the processing stops and no-one can make progress because the resources each process needs are being reserved by another process.  This is a specific issue in **Resource Allocation**, but it's one we're familiar with in the computer science industry.  Compare with [Gridlock], where traffic can't move because other traffic is occupying the space it wants to move to already. 
 
-6.  **Race Conditions**:  A race condition is where tbd
+6.  **Race Conditions**:  A race condition is where we can't be sure of the result of a calculation, because it is dependent on the ordering of events within a system.  For example, two separate threads writing the same memory at the same time (one losing the work of the other) is a race.  
 
-The basic problem of [Coordination Risk] is _competition_.  Sometimes, competition is desireable (such as in sports and in markets), but sometimes competition is a waste and cooperation would be more efficient. 
+7.  **Contention**: Where there is [Scarcity Risk] for a [Dependency], we might want to make sure that everyone gets fair use of it, by taking turns, booking, queueing and so on.  As we saw in [Scarcity Risk], sometimes, this is handled for us by the [Dependency] itself.  However if it isn't, it's the _users_ of the dependency who'll need to coordinate to use the resource fairly.
+
+## A Model Of Coordination Risk
+
+Earlier, in [Dependency Risk], we looked at various resources (time, money, people, events etc) and showed how we could [Depend On Them], taking on risk.  Here, however, we're looking at the situation where those dependencies are _condended_:   other parties want to use them in a different way.  
+
+The basic problem of [Coordination Risk], then, is _competition_.  Sometimes, competition is desireable (such as in sports and in markets), but sometimes competition is a waste and cooperation would be more efficient.   Without coordination, we would deliberately or accidentally compete for the same [Dependencies], which is wasteful.  
+
+
+
+
+
+
 
 ## Team Decision Making
 
@@ -41,14 +54,17 @@ Therefore, **Coordination Risk** is worse on projects with more members, and wor
 
 In their original formulation, Vroom and Yetton introduced five different ways of making decisions as a team, which are summarised in the table below (AI, AII, CI, CII, GII).  To this, I have added a sixth (UI), which is the _uncoordinated_ option, where everyone competes.  
 
-|Type       |People Involved In Decision   |Opinions         |Channels Of Communication    |Coordination Risk            |Description
-|-----------|------------------------------|-----------------|-----------------------------|-----------------------------|----------
-|UI         |1                             |1                |0                            |Competition                  |_No Coordination_
-|AI         |1                             |1                |s                            |Maximum [Coordination Risk]  |Autocratic, top-down
-|AII        |1                             |1                |s + i                        |                             |Autocratic, with information flow up.
-|CI         |1                             |1 + r            |s + i + r                    |                             |Individual Consultations
-|CII        |1                             |1 + r            |s + i + r<sup>2</sup>        |                             |Group Consultation
-|GII        |r                             |1 + r            |s + i + r<sup>2</sup>        |Minimum [Coordination Risk]  |Group Consultation with voting
+|Type           |People Involved In Decision|Opinions         |Channels Of Communication          |Coordination Risk              |Description
+|---------------|---------------------------|-----------------|-----------------------------------|-------------------------------|----------
+|**UI**         |1                          |1                |0                                  |Competition                    |_No Coordination_
+|**AI**         |1                          |1                |s (One message to each subordinate)|Maximum [Coordination Risk][1] |Autocratic, top-down
+|**AII**        |1                          |1                |s + i (Messages from informants)   |                               |Autocratic, with information flow up.
+|**CI**         |1                          |1 + r            |s + i + r (Opinions)               |                               |Individual Consultations
+|**CII**        |1                          |1 + r            |s + i + r<sup>2</sup>              |                               |Group Consultation
+|**GII**        |r                          |1 + r            |s + i + r<sup>2</sup>              |Maximum [Communication Risk][2]|Group Consultation with voting
+
+[1]: (Coordination-Risk)
+[2]: (Communication-Risk)
 
 At the top, you have the _least_ consultative styles, and at the bottom, the _most_.   At the top, decisions are made with just the leader's [Internal Model]() but moving down, the [Internal Models]() of the rest of the team are increasingly brought into play.  
 
@@ -60,39 +76,39 @@ The trick is to be able to tell which approach is suitable at which time.   Ever
  
 Hopefully, this model shows how _organisation_ can reduce [Coordination Risk].  But, to make this work, we need more _communication_, and this has attendant complexity and time costs.  So, we can draw this diagram of our move on the [Risk Landscape]:
 
-![Coordination Risk traded for Complexity Risk, Schedule Risk and Communication Risk](images/kite9/coordination-1.png)
+![Coordination Risk traded for Complexity Risk, Schedule Risk and Communication Risk](images/kite9/coordination-1.png)   -- add specialization
 
-In a lot of cases, it's better to just suck it up and compete, but 
+In a lot of cases, it's better to just suck it up and compete, but tbd
  
 ## In Living Organisms
 
-[Vroom and Yetton's] organisational style isn't relevant to just teams of people.  We can see it in the natural world too.  _The majority_ of cellular life on earth (by weight) is [single celled organisms], but the existence of _humans_ (to pick a single example) demonstrates that sometimes, it's better to take the trade
+[Vroom and Yetton's] organisational style isn't relevant to just teams of people.  We can see it in the natural world too.  Although _the majority_ of cellular life on earth (by weight) is [single celled organisms], the existence of _humans_ (to pick a single example) demonstrates that sometimes it's better to try to mitigate [Coordination Risk] and work as a team, accepting the [Complexity Risk] and [Communication Risk] this entails.  As soon as cells start working together, they either need to pass _resources_ between them, or _control_ and _feedback_.  In the human body, we have:
 
-survival of the fittest
+ - The [Respiratory System] which is responsible for ensuring that [Red Blood Cells] are replenished with Oxygen, as well as disposing of Carbon Dioxide.  
+ - The [Digestive System] which is responsible for extracting nutrition from food and putting them in our [Blood Plasma].
+ - The [Circulatory System] which is responsible for moving blood cells to all the rest of the body.
+ - The [Nervous System] which is responsible for collecting information from all the parts of the body, dealing with it in the [Brain] and issuing commands.
+ - The [Motor System] which contains muscles and bones, and allows us to move about.
  
-organisations 
+... and many others.  Each of these systems contains organs, which contain tissues, which contain cells of different types.  (Even cells are complex systems containing multiple different, communicating sub-systems.)  There is huge [Complexity Risk] here:  the entire organism fails if one of these systems fail (they are [Single Points Of Failure], although we can get by despite the failure of one lung or one leg say).  
+
+[Some argue] that the human nervous system is the most complex known artifact in the universe: there is huge attendant [Communication Risk] to running the human body.  But, given the success of humanity as a species, you must conclude that these steps on the evolutionary [Risk Landscape] have benefitted us in our ecological niche.
+
+The key observation from looking at biology is this:  most of the cells in the human body _don't get a vote_.   Muscles in the motor system have an **AI** or **AII** relationship with the brain - they do what they are told, but there are often nerves to report pain back.   The only place where **CII** or **GII** _could_ occur is in our brains, when we try to make a decision and weigh up the pros and cons.  
+
+This means that there is a deal:  _most_ of the cells in our body acceed control of their destiny to "the system".  Living within the system of the human body is a better option than going it alone.  Occasionally, due to mutation, we can end up with [Cancer], which is where one cell genetically "forgets" its purpose in the whole system and goes back to selfish individual self-replication (**UI**).  We have [White Blood Cells] in the body to shut down this kind of behaviour and try to kill the rogue cells.  In the same way, society has a police force to stop undesireable behaviour amongst its citizens. 
+
+As we saw in [Process Risk], _evolution_ is the driving force taking steps on the risk landscape tbd.
  
 ## Large Organisations
- 
- 
+
+Working in a large organisation often feels like being a cell in a larger organism.  Cells live and die, but the organism goes on.  In the same way, workers come and go from a large company but the organisation goes on.  By working in an organisation, we give up self-control and competition and accept **AI** and **AII** power structures above us, but we trust that there is symbiotic value creation on both sides of the employment deal.
  
 _Less_ consultative decision making styles are more appropriate then when we don't have the luxury of high-bandwidth channels for discussion, or when the number of parties rises above a room-full of people.   As we saw in the [Complexity Risk] section, hierarchies are an excellent way of economizing on number of different communication channels, and we use these frequently when there are lots of parties to coordinate.
 
-In large organisations, teams are created and leaders chosen for those teams precisely to mitigate [Coordination Risk].  We're all familiar with this: control of the team is ceded to the leader, who takes on the role of 'handing down' direction from above, but also 'reporting up' issues that cannot be resolved within the team.   
+In large organisations, teams are created and leaders chosen for those teams precisely to mitigate [Communication Risk].  We're all familiar with this: control of the team is ceded to the leader, who takes on the role of 'handing down' direction from above, but also 'reporting up' issues that cannot be resolved within the team.   In Vroom and Yetton's model, this is moving from a **GII** or **CII** to an **AI** or **AII** style of leadership.  So we end up with a hierarchy of groups like this:
 
 tbd diagram of this.
-
-By adopting this model, we reduce [Complexity], which 
-
-
-
-
-
-  
-
-Large Organisations
-
-
  
 ## Staff Risk
 
@@ -118,7 +134,9 @@ With enough communication bandwidth and entente, a team motivated will self-orga
 Experiments showed that rather than t
 
 
-### With Processes 
+### In Software
+
+
  
 Almost the same model can be used with software processes.  
  
@@ -151,5 +169,14 @@ hierarchy and parallelism - depth first search vs concurrent
  - Resource Allocation
  - Split Brain / Geographic Risk
  - Deadlock / Race Conditions
+ 
+What exactly is coordination?
+  - Either, working together to share resources properly  -or- share information to make good decisions.
+  - In risk terms:  reducing coordination risk means reducing resource risk.  Resources are dependencies.  So, coordination means effectively using dependencies.
+  - Coordination is using dependencies effectively, within a team: time, cpu etc. 
+  - Leads on to agency risk, because you have to put the needs of the system first.
+  - How does communication fit in?  It just does.  To use a dependency you need to communicate with it.  But, you also need to communicate with others using it to avoid contention.
+  
+
  
  

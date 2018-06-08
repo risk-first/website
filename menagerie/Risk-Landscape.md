@@ -65,8 +65,8 @@ tbd
 |[Process Risk](Process-Risk)                        |Staff                     |
 |[Schedule Risk](Schedule-Risk)                      |Product, Staff            |    
 |[Boundary Risk](Boundary-Risk)                      |Product                   |            
-|[Agency Risk](Agency-Risk)                          |Staff                     |
 |[Coordination Risk](Coordination-Risk)              |Staff                     |       
+|[Agency Risk](Agency-Risk)                          |Staff                     |
 |[Production Risk](Production-Risk)                  |Customer, Product         |
 |[Map And Territory Risk](Map-And-Territory-Risk)    |Staff                     |  
        
