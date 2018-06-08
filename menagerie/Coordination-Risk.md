@@ -1,12 +1,19 @@
-**Coordination Risk** is the risk that, despite a group of people (or processes) having the same [Goal In Mind]() they can fail to coordinate on a way to meet this goal and end up making things worse.  **Coordination Risk** is embodied in the phrase "Too Many Cooks Spoil The Broth":  more people, opinions or actors often make results worse.
+**Coordination Risk** is the risk that, a group of people (or processes), maybe with a similar [Goal In Mind]() they can fail to coordinate on a way to meet this goal and end up making things worse.  **Coordination Risk** is embodied in the phrase "Too Many Cooks Spoil The Broth":  more people, opinions or actors often make results worse.
 
-In this section, we're going to work on the assumption that everyone has a common [Goal](), but in reality, people often have their own agendas.  We'll come to that in the section on [Agency Risk](Agency-Risk) later.
+In this section and beyond, we're going to use the term **Actor**, which refers to anything with _agency_ in a system to decide it's own fate.  That is, an [Actor] has an [Internal Model], and can [take actions] based on it.  In this section, we're going to consider actors at several different levels (because of [Scale Invariance]).  We'll look at:
+ - People
+ - Teams
+ - Organisations
+ - Processes (in software)
+ - and Organisms
+ 
+... and we'll consider how [Coordination Risk] is a problem at each scale.
 
-## More Communication Risk?
+In this section, we're going to work on the assumption that the actors can agree on a common [Goal](), but in reality it's not always the case, and we'll analyse that more in the section on [Agency Risk](Agency-Risk) later.
 
-You might think that this is just another type of [Communication Risk](Communication-Risk) problem, and that's often a part of it, but even with synchronized [Internal Models](Internal-Model), coordination risk can occur.  Imagine the example of people all trying to madly leave a burning building.  They all have the same information (the building is on fire).  If they coordinate, and leave in an orderly fashion, they might all get out.  If they don't, and there's a scramble for the door, more people might die.
+Also, in the section on [Map And Territory Risk], we'll look at how, even when [Coordination] issues are solved, we can end up with less-than-optimal results.  
 
-Commonly, [Coordination Risk] occurs where people have different ideas about how to achieve a goal, and they have different ideas because they have different evaluations of the [Attendant Risk](Risk).  As we saw in the section on [Communication Risk](Communication-Risk), we can only hope to synchronize [Internal Models]() if there are high-bandwidth [Channels]() available for communication.  
+But for now, let's crack on and examine where [Coordination Risk] comes from.
 
 ## Problems Of Coordination
 
@@ -32,15 +39,28 @@ Here are some classic problems of coordination:
 
 ## A Model Of Coordination Risk
 
-Earlier, in [Dependency Risk], we looked at various resources (time, money, people, events etc) and showed how we could [Depend On Them], taking on risk.  Here, however, we're looking at the situation where those dependencies are _condended_:   other parties want to use them in a different way.  
+Earlier, in [Dependency Risk], we looked at various resources (time, money, people, events etc) and showed how we could [Depend On Them], taking on risk.  Here, however, we're looking at the situation where there is competition for those dependencies:   other parties want to use them in a different way.  
 
-The basic problem of [Coordination Risk], then, is _competition_.  Sometimes, competition is desireable (such as in sports and in markets), but sometimes competition is a waste and cooperation would be more efficient.   Without coordination, we would deliberately or accidentally compete for the same [Dependencies], which is wasteful.  
+The basic problem of [Coordination Risk], then, is _competition_.  Sometimes, competition is desireable (such as in sports and in markets), but sometimes competition is a waste and cooperation would be more efficient.   Without coordination, we would deliberately or accidentally compete for the same [Dependencies], which is wasteful.  Why is this wasteful?  One argument could come from [Diminishing Returns](https://en.wikipedia.org/wiki/Diminishing_returns), which says that the earlier units of a resource (say, chocolate bars) give you more benefit than later ones.  
 
+We can see this in the graph below.  Let's say A and B compete over a resource, of which there are 5 units available.  For every extra A takes, B loses one.  The X axis shows A's consumption of the resource, so the biggest benefit to A is in the consumption of the first unit. 
 
+![Sharing Resources.  5 units are available, and the X axis shows A's consumption of the resource.  B gets whatever remains.  Total benefit is maximised somewhere in the middle](images/sharing.png)
 
+As you can see, by _sharing_, it's possible that the _total benefit_ is greater than it can be for either individual.  But sharing requires coordination.
 
+Just two things are needed for competition to occur:
 
+ - Individual Actors, trying to achieve [Goals]
+ - Scarce Resources, which the actors want to use as [Dependencies].
+ 
+![Coordination Risk 2](images/kite9/coordination-2.png)
 
+The only way that the actors can move away from competition towards coordination is via [Communication], and this is where their problems begin.  
+
+You might think, therefore, that this is just another type of [Communication Risk](Communication-Risk) problem, and that's often a part of it, but even with synchronized [Internal Models](Internal-Model), coordination risk can occur.  Imagine the example of people all trying to madly leave a burning building.  They all have the same information (the building is on fire).  If they coordinate, and leave in an orderly fashion, they might all get out.  If they don't, and there's a scramble for the door, more people might die.
+
+But commonly, [Coordination Risk] occurs where people have different ideas about how to achieve a [goal], and they have different ideas because they have different evaluations of the [Attendant Risk](Risk).  As we saw in the section on [Communication Risk](Communication-Risk), we can only hope to synchronize [Internal Models]() if there are high-bandwidth [Channels]() available for communication.  There are 3 factors we need to suffer competition, or [Coordination Risk]:
 
 ## Team Decision Making
 
@@ -133,10 +153,9 @@ With enough communication bandwidth and entente, a team motivated will self-orga
 
 Experiments showed that rather than t
 
-
 ### In Software
 
-
+It should be pretty clear that we are applying the [Scale Invariance] rule to [Coordination Risk]:  all of the problems we've described as affecting teams, also affect software, although the scale and terrain are 
  
 Almost the same model can be used with software processes.  
  
@@ -178,5 +197,6 @@ What exactly is coordination?
   - How does communication fit in?  It just does.  To use a dependency you need to communicate with it.  But, you also need to communicate with others using it to avoid contention.
   
 
+The whole point of communication is coordination.
  
  
