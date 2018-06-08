@@ -1,6 +1,6 @@
 **Dependency Risk** is the risk you take on whenever you have a dependency on something (or someone) else.   One simple example could be that the software service you write might depend on a server to run on.  If the server goes down, the service goes down too.  In turn, the server depends on electricity from a supplier, as well as a network connection from a provider.  If either of these dependencies aren't met, the service is out of commission.
 
-Dependencies can be on _events_, _people_, _teams_, _processes_, _software_, _services_, _money_: pretty much _anything_.  Dependencies add risk to any project because the reliability of the project itself is now a function involving the reliability of the dependency.  
+Dependencies can be on _events_, _people_, _teams_, _processes_, _software_, _services_, _money_: pretty much _any resource_.  Dependencies add risk to any project because the reliability of the project itself is now a function involving the reliability of the dependency.  
 
 In order to avoid repetition, and also to break down this large topic, we're going to look at this over 6 sections:   
  - In this first section will look at dependencies _in general_, and specifically on _events_, and some of the variations on [Dependency Risk](Dependency-Risk).
