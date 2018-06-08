@@ -60,7 +60,7 @@ The only way that the actors can move away from competition towards coordination
 
 You might think, therefore, that this is just another type of [Communication Risk](Communication-Risk) problem, and that's often a part of it, but even with synchronized [Internal Models](Internal-Model), coordination risk can occur.  Imagine the example of people all trying to madly leave a burning building.  They all have the same information (the building is on fire).  If they coordinate, and leave in an orderly fashion, they might all get out.  If they don't, and there's a scramble for the door, more people might die.
 
-But commonly, [Coordination Risk] occurs where people have different ideas about how to achieve a [goal], and they have different ideas because they have different evaluations of the [Attendant Risk](Risk).  As we saw in the section on [Communication Risk](Communication-Risk), we can only hope to synchronize [Internal Models]() if there are high-bandwidth [Channels]() available for communication.  There are 3 factors we need to suffer competition, or [Coordination Risk]:
+But commonly, [Coordination Risk] occurs where people have different ideas about how to achieve a [goal], and they have different ideas because they have different evaluations of the [Attendant Risk](Risk).  As we saw in the section on [Communication Risk](Communication-Risk), we can only hope to synchronize [Internal Models]() if there are high-bandwidth [Channels]() available for communication. 
 
 ## Team Decision Making
 
@@ -72,7 +72,7 @@ Therefore, **Coordination Risk** is worse on projects with more members, and wor
 
 ![Vroom And Yetton Decision Making Styles.  "d" indicates authority in making a decision.  Thin lines with arrow-heads show information flow, whilst thick lines show _opinions_ being passed around.](images/kite9/vroom-yetton.png)
 
-In their original formulation, Vroom and Yetton introduced five different ways of making decisions as a team, which are summarised in the table below (AI, AII, CI, CII, GII).  To this, I have added a sixth (UI), which is the _uncoordinated_ option, where everyone competes.  
+In their original formulation, Vroom and Yetton introduced five different ways of making decisions as a team, which are summarised in the table below (**AI, AII, CI, CII, GII**).  To this, I have added a sixth (**UI**), which is the _uncoordinated_ option, where everyone competes.  
 
 |Type           |People Involved In Decision|Opinions         |Channels Of Communication          |Coordination Risk              |Description
 |---------------|---------------------------|-----------------|-----------------------------------|-------------------------------|----------
@@ -97,20 +97,21 @@ The trick is to be able to tell which approach is suitable at which time.   Ever
 Hopefully, this model shows how _organisation_ can reduce [Coordination Risk].  But, to make this work, we need more _communication_, and this has attendant complexity and time costs.  So, we can draw this diagram of our move on the [Risk Landscape]:
 
 ![Coordination Risk traded for Complexity Risk, Schedule Risk and Communication Risk](images/kite9/coordination-1.png)   -- add specialization
-
-In a lot of cases, it's better to just suck it up and compete, but tbd
  
 ## In Living Organisms
 
-[Vroom and Yetton's] organisational style isn't relevant to just teams of people.  We can see it in the natural world too.  Although _the majority_ of cellular life on earth (by weight) is [single celled organisms], the existence of _humans_ (to pick a single example) demonstrates that sometimes it's better to try to mitigate [Coordination Risk] and work as a team, accepting the [Complexity Risk] and [Communication Risk] this entails.  As soon as cells start working together, they either need to pass _resources_ between them, or _control_ and _feedback_.  In the human body, we have:
+[Vroom and Yetton's] organisational style isn't relevant to just teams of people.  We can see it in the natural world too.  Although _the majority_ of cellular life on earth (by weight) is [single celled organisms], the existence of _humans_ (to pick a single example) demonstrates that sometimes it's better to try to mitigate [Coordination Risk] and work as a team, accepting the [Complexity Risk] and [Communication Risk] this entails.  As soon as cells start working together, they either need to pass _resources_ between them, or _control_ and _feedback_.  In the human body, we have various [systems](https://en.wikipedia.org/wiki/List_of_systems_of_the_human_body):
 
  - The [Respiratory System] which is responsible for ensuring that [Red Blood Cells] are replenished with Oxygen, as well as disposing of Carbon Dioxide.  
  - The [Digestive System] which is responsible for extracting nutrition from food and putting them in our [Blood Plasma].
  - The [Circulatory System] which is responsible for moving blood cells to all the rest of the body.
  - The [Nervous System] which is responsible for collecting information from all the parts of the body, dealing with it in the [Brain] and issuing commands.
  - The [Motor System] which contains muscles and bones, and allows us to move about.
+
  
 ... and many others.  Each of these systems contains organs, which contain tissues, which contain cells of different types.  (Even cells are complex systems containing multiple different, communicating sub-systems.)  There is huge [Complexity Risk] here:  the entire organism fails if one of these systems fail (they are [Single Points Of Failure], although we can get by despite the failure of one lung or one leg say).  
+
+![Hierarchy of Function in the Human Body](images/kite9/coordination-organism.png)
 
 [Some argue] that the human nervous system is the most complex known artifact in the universe: there is huge attendant [Communication Risk] to running the human body.  But, given the success of humanity as a species, you must conclude that these steps on the evolutionary [Risk Landscape] have benefitted us in our ecological niche.
 
