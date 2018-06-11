@@ -365,6 +365,10 @@ Even if the receiver trusts the communicator, they may not trust the message.  L
   
 From the point-of-view of [Marketing Communications](Communication-Risk#Marketing-Communications) choosing the right message is part of the battle.  You are trying to communicate your idea in such a way as to mitigate [Belief Risk](Communication-Risk#trust-risk--belief-risk) and [Trust Risk](Communication-Risk#trust-risk--belief-risk).
 
+### Reputational Risk
+
+tbd.
+
 ### Learning-Curve Risk
 
 ![Internal Model Risk](images/generated/learning-curve-risk.png) 
