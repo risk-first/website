@@ -108,7 +108,7 @@ Hopefully, this model shows how _organisation_ can reduce [Coordination Risk].  
  - The [Nervous System] which is responsible for collecting information from all the parts of the body, dealing with it in the [Brain] and issuing commands.
  - The [Motor System] which contains muscles and bones, and allows us to move about.
 
- 
+
 ... and many others.  Each of these systems contains organs, which contain tissues, which contain cells of different types.  (Even cells are complex systems containing multiple different, communicating sub-systems.)  There is huge [Complexity Risk] here:  the entire organism fails if one of these systems fail (they are [Single Points Of Failure], although we can get by despite the failure of one lung or one leg say).  
 
 ![Hierarchy of Function in the Human Body](images/kite9/coordination-organism.png)
@@ -125,13 +125,15 @@ As we saw in [Process Risk], _evolution_ is the driving force taking steps on th
 
 Working in a large organisation often feels like being a cell in a larger organism.  Cells live and die, but the organism goes on.  In the same way, workers come and go from a large company but the organisation goes on.  By working in an organisation, we give up self-control and competition and accept **AI** and **AII** power structures above us, but we trust that there is symbiotic value creation on both sides of the employment deal.
  
-_Less_ consultative decision making styles are more appropriate then when we don't have the luxury of high-bandwidth channels for discussion, or when the number of parties rises above a room-full of people.   As we saw in the [Complexity Risk] section, hierarchies are an excellent way of economizing on number of different communication channels, and we use these frequently when there are lots of parties to coordinate.
+_Less_ consultative decision making styles are more appropriate then when we don't have the luxury of high-bandwidth channels for discussion, or when the number of parties rises above a room-full of people.   As you can see from the table above, for **CII** and **GII** decision-making styles, the amount of communication increases non-linearly with the number of participants, so we need something simpler.  As we saw in the [Complexity Risk] section, hierarchies are an excellent way of economizing on number of different communication channels, and we use these frequently when there are lots of parties to coordinate.
 
 In large organisations, teams are created and leaders chosen for those teams precisely to mitigate [Communication Risk].  We're all familiar with this: control of the team is ceded to the leader, who takes on the role of 'handing down' direction from above, but also 'reporting up' issues that cannot be resolved within the team.   In Vroom and Yetton's model, this is moving from a **GII** or **CII** to an **AI** or **AII** style of leadership.  So we end up with a hierarchy of groups like this:
 
 tbd diagram of this.
  
 ## Staff Risk
+
+Staff in a team are both **Actors** and **Resources** at the same time.  The team [depends] on them for their resource of _labour)_, but they're also part of the decision making process of the team, because they have [agency] over their own actions.  
 
 If **Coordination Risk** is about trying to mitigate differences in [Internal Models](Internal-Model), then it's worth considering how varied people's models can be:
  - Different skill levels
@@ -140,64 +142,65 @@ If **Coordination Risk** is about trying to mitigate differences in [Internal Mo
  - Preferences
  - Personalities
  
-The job of harmonzing this on a project would seem to fall to the team leader, but actually people are self-organising to some extent.  This process is called [Team Development](), after [Tuckman](), and can be encouraged with orthogonal practices such as [Team Building exercises]() (generally, submitting everyone to extreme experiences in order to bond them together).  
+The job of harmonzing this on a project would seem to fall to the team leader, but actually people are self-organising to some extent.  This process is called [Team Development]:
 
-With enough communication bandwidth and entente, a team motivated will self-organise code reviews, information exchange and improve their practices.  But **Staff Risks** sometimes cannot be resolved without escalation:
+>  after [Tuckman], 
+
+They can be encouraged with orthogonal practices such as [Team Building exercises] (generally, submitting everyone to extreme experiences in order to bond them together).  With enough communication bandwidth and entente, a motivated team will self-organise code reviews, information exchange and improve their practices.  But **Staff Risks** sometimes cannot be resolved without escalation:
 
  - People leave, taking their [Internal Models]() and expertise with them [Key Man Risk]().
- - People often require external training, to understand new tools and techniques [Learning-Curve Risk](Communciation-Risk)
+ - People often require external training, to understand new tools and techniques [Learning-Curve Risk](Communiciation-Risk)
  - People can get protective about their knowledge in order to protect their jobs [Agency Risk](Agency-Risk). 
  - Where there are mixed ability levels, senior developers might not help juniors as it "slows them down"
  - People don't get on. 
  
 ... and so on.
 
-Experiments showed that rather than t
+## In Software Processes
 
-### In Software
+It should be pretty clear that we are applying the [Scale Invariance] rule to [Coordination Risk]:  all of the problems we've described as affecting teams, also affect software, although the scale and terrain are different.  Software processes have limited _agency_ - in most cases they follow fixed rules set down by the programmers, rather than self-organising like people can.
 
-It should be pretty clear that we are applying the [Scale Invariance] rule to [Coordination Risk]:  all of the problems we've described as affecting teams, also affect software, although the scale and terrain are 
- 
-Almost the same model can be used with software processes.  
- 
-tbd:  use bitcoin as an example here. 
+As before, in order to face [Coordination Risk] in software, we need multiple actors all working together, so [Coordination Risks] (such as race conditions or deadlock) only really occurs in multi-threaded software where there is resource competition.  
 
-## Specialization / Abstraction Risk
+### CAP Theorem
 
-One common way groups and larger organizations aim to mitigate **Coordination Risk** is via [Abstraction](Communication-Risk):  teams and organizations can be arranged along functional lines, with _interfaces_ between their different parts.  This means the different functions can _use_ each other without _understanding_ each other.  
+The [CAP Theorem] has a lot to say about [Coordination Risk].  Imagine talking to a distributed database, where your request (read or write) can be handled by one of many actors.  
 
-On a team level, this might mean that you have one developer doing "UI", another working on "billing" and so on.  In a larger organisation you might have a "marketing" team or "accounts" team, or divisions by product.
+There are three properties we could desire in such a system:
 
-As we saw before [Abstraction brings it's own risks](Communication-Risk).  A key one being that if team members are specialized, you can end up with "bottlenecks" in an organisation (see [Critical Chain](Analysis)).  This is covered in more detail in the [Dependency Risk](Dependency-Risk) section.
+- **Consistency**: Every read receives the most recent value from the last write.
+- **Availability**: Every request receives a response.
+- **Partition tolerance**: The system can operate despite the isolation (lack of communication with) some of it's actors.
 
-Bottlenecks in one part of a team mean that other members will be under-utilised.  This is the trade-off between **Fungibility** (people are jack-of-all-trades) and **Specialization** (people understand one small area well).   Specialism pays off except in highly dynamic situations, where it becomes necessary for people to re-skill, with attendant [Learning Curve Risk](Communication-Risk).  But software is _often_ highly dynamic:  [Extreme Programming]() avoids specialization with it's insistence on [Pair Programming](), for example.
+Since _any_ actor can receive the read or write, it's a **GII** decision making system, because all the actors are going to need to coordinate to figure out what the right value is to return for a read, and what the last value written was.
 
-Specialization is a type of complexity too:  a homogeneous team of people presents fewer [Scheduling](Schedule-Risk) problems, and 
+[CAP Theory] states that this is a [Trilemma].  That is, you can only have two out of the three properties.   There are plenty of resources on the internet that discuss this in depth, but let's just illustrate with a diagram how this plays out.  In this, the last write (3) was sent to a node which is now _isolated_, and can't be communicated with, due to network failure.  What do you get back?
 
-Another advantage to specialization is that people have domains of responsibility, which makes the **Decision Making** approach easier to choose.   Individuals and teams generally know when a decision can't be made at their level, and that they need to escalate. 
+tbd image
 
-CAP theory
+CA:  show how the system wouldn't be partition tolerant if the last write was on an isolated node.
+CP:  waits until the isolated node comes back
+AP:  you can return some value back, but it won't necessarily be the last one.
 
-hierarchy and parallelism - depth first search vs concurrent
+This sets an upper bound on [Coordination Risk]:  we _can't get rid of it completely in a software system, -or- a system on any other scale.  This explains in part why _countries_ are often created along geographic bounds:    
 
+### Immutability
 
-## General Problems In Coordination
+Immutability (or write-only data structures) are often presented as a solution to many of the problems of multi-actor systems.  After all, if values in the system aren't _changing_, then memory is not a scarce resource, and we avoid [race conditions].  However, we _still_ have to contend with [Coordination Risk]. Let's look at two examples.
 
- - Consensus 
- - Node Failure
- - Leadership
- - Resource Allocation
- - Split Brain / Geographic Risk
- - Deadlock / Race Conditions
- 
-What exactly is coordination?
-  - Either, working together to share resources properly  -or- share information to make good decisions.
-  - In risk terms:  reducing coordination risk means reducing resource risk.  Resources are dependencies.  So, coordination means effectively using dependencies.
-  - Coordination is using dependencies effectively, within a team: time, cpu etc. 
-  - Leads on to agency risk, because you have to put the needs of the system first.
-  - How does communication fit in?  It just does.  To use a dependency you need to communicate with it.  But, you also need to communicate with others using it to avoid contention.
-  
+First, [BitCoin] is a write-only [distributed ledger], where agents _compete_ to mine BitCoins, but also at the same time record transactions on the ledger.  But there is _huge_ [Coordination Risk] in BTC, because it is pretty much outright competition.  If someone beats you to completing a piece of work, then your work is wasted.   For this reason, BTC agents _coordinate_ into [mining consortia], so they can avoid working on the same problems at the same time.  Nevertheless, the performance of BitCoin is [highly questionable], and this is because it is entirely competitive.  In **CAP** terms, BitCoin is tbd.
 
-The whole point of communication is coordination.
+Second, [git] is a write-only ledger of source changes.  However, as we already discussed, where different agents make incompatible changes, someone has to decide how to resolve the conflicts so that we have a single source of truth.  The [Coordination Risk] just _doesn't go away_.  Git is an AP system.
+
+## Communication Is For Coordination
+
+Earlier in this section, we questioned whether [Coordination Risk] was just another type of [Communication Risk].  However, it should be clear after looking at the examples of competition, cellular life and [Vroom and Yetton's Model] that this is exactly _backwards_:  
+
+- Most single-celled life has no need for communication: it simply competes for the available resources.  If it lacks anything it needs, it dies.  
+- There are _no_ lines of communication on the **UI** decision-type.  It's only when we want to avoid competition, by sharing resources and working towards common goals that we needs to communicate.  
+
+The whole point of communication is for coordination.  
+
+In the next section, [Map And Territory Risk], we're going to look at some new ways in which systems can fail, despite their attempts to coordinate.
  
  

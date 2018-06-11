@@ -1,3 +1,30 @@
+In this section on [Production Risks], we're going to take our head out of the clouds a bit and start considering the realities of running software systems in the real world.  After all, [Coordination Risk] and [Agency Risk] got a bit theoretical.  Here, we're going to look at [Operational Risk], [Security Risk] and [Reputational Risk]: real-world concerns for anyone running a business.  
+
+But before we go there, let's try and recap on where we've come so far.  So far, we've been looking at risks to _systems in general_: 
+
+- [Complexity Risk]: to do with the number of independent components in the system, and their interactions.
+- [Dependency Risk]:  how those components rely on each other..
+- [Coordination Risk]: the problem of competition over dependencies, and ..
+- [Communication Risk]: how they mitigate [Coordination Risk] by taking on [Communication Risk].
+
+Here is a diagram that shows how these different elements line up:
+
+tbd. diagram.  circle of our system.  inside some components etc.
+
+But, although this is starting to look complicated, in reality, things are _worse_.  We have to contend with [Bad Actors] from _within_ and _outside_ the system too, and, we have to consider our software a component of a larger _system in the world_, which consists of our _customers_ depending on us.  
+
+- [Security Risk]: problem of bad actors affecting the system
+- [Agency Risk]:  problem of actors within the system having their own agendas.
+- [Operational Risk]: problem of _delivering on our promises_ as a dependency.
+
+tbd, another diagram, different labels. add customers, bad actors, agency risk.
+
+## Operational Risk
+
+tbd definition.
+
+As we saw in [Development Process], a lot of the processes we put in place in the software development process ([Continuous Integration], [Testing], tbd) are there to mitigate [Operational Risk].  
+
 
 
 

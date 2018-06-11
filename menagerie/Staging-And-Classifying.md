@@ -38,6 +38,8 @@ How much do compilers do for you?
     - Dependency risks are all 2-sided.  (Counterparty risk)
   - Communication is a Dependency
   - Fit Risk / Communication Risk - buckets 
+    - Fit risk example from work:  choosing the right format.  
+    - Why standards can never be perfect.
     - Mention Kanban = the control is the physical object
   - Expected Requirement Coverage - diagrams 1 & 2.
   - Dependencies and Coordination
