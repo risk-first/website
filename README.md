@@ -3,6 +3,6 @@
 This is a placeholder.  
 
 
-# [Wiki]((https://github.com/risk-first/website/wiki))
+# Wiki
 
-- Everything you really want to read is here.
+ - Development and documentation, and everything you can currently read is [here](https://github.com/risk-first/website/wiki).
