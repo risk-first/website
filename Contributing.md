@@ -1,6 +1,22 @@
+## Help Wanted!
 
+Risk-First is turning out to be a big undertaking, and any help would be greatfully appreciated.  
 
+## Seen Something Wrong?
 
+Please [Open An Issue](https://github.com/risk-first/website/issues) and explain what needs to be done.
+
+## Want To Write Something?
+
+[Join the Risk-First Organisation], and begin editing pages. 
+
+Alternatively, if you are git-savvy you can clone the repo:
+
+```
+git@github.com:risk-first/website.wiki.git
+``` 
+
+And then submit pull-requests to get your work merged into the `master` branch for everyone to see.
 
 ## A Note On Editing Symbols
 
@@ -11,4 +27,4 @@ At the top of each page, there's an image in to show what kind state the page is
 |![Under Construction](images/uc.png)|Means this is probably a placeholder page, and needs fleshing out.  If you have ideas, please add them|
 |![Draft](images/draft.png) |Most of the text is correct, but there are likely to be placeholders.   Open issues if there are glaring omissions/inaccuracies.|
 |![For Review](images/for-review.png)|Get involved!  Please help by reviewing the document and letting us know what you think!|
-|![Reviewed](images/reviewed.png)|Means it should be ready for publication, enjoy!|
+|![Reviewed](images/reviewed.png)|Totally ready for consumption, enjoy!|
