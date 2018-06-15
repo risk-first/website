@@ -1,3 +1,5 @@
+![For Review](images/for-review.png)
+
 Where do the risks of the project lie?  
 
 How do we decide what _needs to be done today_ on a software project?  

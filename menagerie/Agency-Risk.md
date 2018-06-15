@@ -1,3 +1,5 @@
+![Draft](images/draft.png)
+
 ![Agency Risk](images/generated/agency-risk.png)
 
 [Coordinating a team](Coordination-Risk) is difficult enough when everyone on the team has a single [Goal](Goal-In-Mind).  But, people have their own goals, too.  Sometimes, the goals harmlessly co-exist with the team's goal, but other times they don't.
