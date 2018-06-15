@@ -20,7 +20,7 @@ At the top of each page, there's an image in to show what kind state the page is
 
 ## Want To Write Something?
 
-[Join the Risk-First Organisation](https://github.com/risk-first), and begin editing pages.  (You'll need to be somewhat familiar with [Markdown](https://github.github.com/gfm/).)
+Either [Join the Risk-First Organisation](https://github.com/risk-first) by emailing [a member](https://github.com/robmoffat), and begin editing pages.  (You'll need to be somewhat familiar with [Markdown](https://github.github.com/gfm/).)
 
 Alternatively, if you are git-savvy you can clone the repo:
 
