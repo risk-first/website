@@ -1,3 +1,5 @@
+![Draft](images/draft.png)
+
 In the original “Mythical Man-Month”, 1975, Fred Brooks (who said many very insightful things also) posited:
 
 > “There is no single development, in either technology or management technique, which by itself promises even one order-of magnitude improvement within a decade in productivity, in reliability, in simplicity"

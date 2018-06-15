@@ -1,3 +1,4 @@
+![Draft](images/draft.png)
 
 Risk is messy.  It's not always easy to tease apart the different components of risk and look at them individually.  Let's look at a high-profile recent example to see why.
 

@@ -1,3 +1,5 @@
+![Draft](images/draft.png)
+
 ## What Is It?
 
 Let’s say you have two versions of some software.  A and A*. A* will replace version A at some period in the future.   Because we’ve not bothered to build any automated acceptance tests for either A or A*, we want to make sure we haven’t introduced any faults into A* that A didn’t have.  
