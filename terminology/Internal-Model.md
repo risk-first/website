@@ -1,3 +1,5 @@
+![Under Construction](images/uc.png)
+
 An **Internal Model** is the model of reality that you or I carry around in our heads.   You can regard the concept of **Internal Model** as being what you _know_ and what you _think_ about a certain situation.
 
 Obviously, because we've all had different experiences, everyone will have a different **Internal Model** of reality.  We all have different 

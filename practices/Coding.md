@@ -1,3 +1,5 @@
+![Draft](images/draft.png)
+
 ## What Is It
 
 **Coding** is the main practice that identifies us as working on a _software project_:  Actually entering instructions in a language that the computer will understand, be it Java, C++, Matlab, Excel or _whatever_.   It is transferring the ideas in your head into steps that the computer can understand, or, as Wikipedia has it:
