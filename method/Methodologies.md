@@ -1,3 +1,4 @@
+![Under Construction](images/uc.png)
 
 Thinking is hard.  And worrying about Risk constantly would be _exhausting_.
 

@@ -1,6 +1,6 @@
-**Coordination Risk** is the risk that, a group of people (or processes), maybe with a similar [Goal In Mind]() they can fail to coordinate on a way to meet this goal and end up making things worse.  **Coordination Risk** is embodied in the phrase "Too Many Cooks Spoil The Broth":  more people, opinions or actors often make results worse.
+**Coordination Risk** is the risk that, a group of people (or processes), maybe with a similar [Goal In Mind]() they can fail to coordinate on a way to meet this goal and end up making things worse.  **Coordination Risk** is embodied in the phrase "Too Many Cooks Spoil The Broth":  more people, opinions or agents often make results worse.
 
-In this section and beyond, we're going to use the term **Actor**, which refers to anything with _agency_ in a system to decide it's own fate.  That is, an [Actor] has an [Internal Model], and can [take actions] based on it.  In this section, we're going to consider actors at several different levels (because of [Scale Invariance]).  We'll look at:
+In this section and beyond, we're going to use the term **Agent**, which refers to anything with _agency_ in a system to decide it's own fate.  That is, an [Agent] has an [Internal Model], and can [take actions] based on it.  In this section, we're going to consider Agents at several different levels (because of [Scale Invariance]).  We'll look at:
  - People
  - Teams
  - Organisations
@@ -9,7 +9,7 @@ In this section and beyond, we're going to use the term **Actor**, which refers 
  
 ... and we'll consider how [Coordination Risk] is a problem at each scale.
 
-In this section, we're going to work on the assumption that the actors can agree on a common [Goal](), but in reality it's not always the case, and we'll analyse that more in the section on [Agency Risk](Agency-Risk) later.
+In this section, we're going to work on the assumption that the Agents can agree on a common [Goal](), but in reality it's not always the case, and we'll analyse that more in the section on [Agency Risk](Agency-Risk) later.
 
 Also, in the section on [Map And Territory Risk], we'll look at how, even when [Coordination] issues are solved, we can end up with less-than-optimal results.  
 
@@ -51,12 +51,12 @@ As you can see, by _sharing_, it's possible that the _total benefit_ is greater 
 
 Just two things are needed for competition to occur:
 
- - Individual Actors, trying to achieve [Goals]
- - Scarce Resources, which the actors want to use as [Dependencies].
+ - Individual Agents, trying to achieve [Goals]
+ - Scarce Resources, which the Agents want to use as [Dependencies].
  
 ![Coordination Risk 2](images/kite9/coordination-2.png)
 
-The only way that the actors can move away from competition towards coordination is via [Communication], and this is where their problems begin.  
+The only way that the Agents can move away from competition towards coordination is via [Communication], and this is where their problems begin.  
 
 You might think, therefore, that this is just another type of [Communication Risk](Communication-Risk) problem, and that's often a part of it, but even with synchronized [Internal Models](Internal-Model), coordination risk can occur.  Imagine the example of people all trying to madly leave a burning building.  They all have the same information (the building is on fire).  If they coordinate, and leave in an orderly fashion, they might all get out.  If they don't, and there's a scramble for the door, more people might die.
 
@@ -133,7 +133,7 @@ tbd diagram of this.
  
 ## Staff Risk
 
-Staff in a team are both **Actors** and **Resources** at the same time.  The team [depends] on them for their resource of _labour)_, but they're also part of the decision making process of the team, because they have [agency] over their own actions.  
+Staff in a team are both **Agents** and **Resources** at the same time.  The team [depends] on them for their resource of _labour)_, but they're also part of the decision making process of the team, because they have [agency] over their own actions.  
 
 If **Coordination Risk** is about trying to mitigate differences in [Internal Models](Internal-Model), then it's worth considering how varied people's models can be:
  - Different skill levels
@@ -160,19 +160,19 @@ They can be encouraged with orthogonal practices such as [Team Building exercise
 
 It should be pretty clear that we are applying the [Scale Invariance] rule to [Coordination Risk]:  all of the problems we've described as affecting teams, also affect software, although the scale and terrain are different.  Software processes have limited _agency_ - in most cases they follow fixed rules set down by the programmers, rather than self-organising like people can.
 
-As before, in order to face [Coordination Risk] in software, we need multiple actors all working together, so [Coordination Risks] (such as race conditions or deadlock) only really occurs in multi-threaded software where there is resource competition.  
+As before, in order to face [Coordination Risk] in software, we need multiple Agents all working together, so [Coordination Risks] (such as race conditions or deadlock) only really occurs in multi-threaded software where there is resource competition.  
 
 ### CAP Theorem
 
-The [CAP Theorem] has a lot to say about [Coordination Risk].  Imagine talking to a distributed database, where your request (read or write) can be handled by one of many actors.  
+The [CAP Theorem] has a lot to say about [Coordination Risk].  Imagine talking to a distributed database, where your request (read or write) can be handled by one of many agents.  
 
 There are three properties we could desire in such a system:
 
 - **Consistency**: Every read receives the most recent value from the last write.
 - **Availability**: Every request receives a response.
-- **Partition tolerance**: The system can operate despite the isolation (lack of communication with) some of it's actors.
+- **Partition tolerance**: The system can operate despite the isolation (lack of communication with) some of it's agents.
 
-Since _any_ actor can receive the read or write, it's a **GII** decision making system, because all the actors are going to need to coordinate to figure out what the right value is to return for a read, and what the last value written was.
+Since _any_ agent can receive the read or write, it's a **GII** decision making system, because all the agents are going to need to coordinate to figure out what the right value is to return for a read, and what the last value written was.
 
 [CAP Theory] states that this is a [Trilemma].  That is, you can only have two out of the three properties.   There are plenty of resources on the internet that discuss this in depth, but let's just illustrate with a diagram how this plays out.  In this, the last write (3) was sent to a node which is now _isolated_, and can't be communicated with, due to network failure.  What do you get back?
 
@@ -186,11 +186,15 @@ This sets an upper bound on [Coordination Risk]:  we _can't get rid of it comple
 
 ### Immutability
 
-Immutability (or write-only data structures) are often presented as a solution to many of the problems of multi-actor systems.  After all, if values in the system aren't _changing_, then memory is not a scarce resource, and we avoid [race conditions].  However, we _still_ have to contend with [Coordination Risk]. Let's look at two examples.
+Immutability (or write-only data structures) are often presented as a solution to many of the problems of multi-agent systems.  After all, if values in the system aren't _changing_, then memory is not a scarce resource, and we avoid [race conditions].  However, we _still_ have to contend with [Coordination Risk]. Let's look at two examples.
 
 First, [BitCoin] is a write-only [distributed ledger], where agents _compete_ to mine BitCoins, but also at the same time record transactions on the ledger.  But there is _huge_ [Coordination Risk] in BTC, because it is pretty much outright competition.  If someone beats you to completing a piece of work, then your work is wasted.   For this reason, BTC agents _coordinate_ into [mining consortia], so they can avoid working on the same problems at the same time.  Nevertheless, the performance of BitCoin is [highly questionable], and this is because it is entirely competitive.  In **CAP** terms, BitCoin is tbd.
 
 Second, [git] is a write-only ledger of source changes.  However, as we already discussed, where different agents make incompatible changes, someone has to decide how to resolve the conflicts so that we have a single source of truth.  The [Coordination Risk] just _doesn't go away_.  Git is an AP system.
+
+### Monitoring
+
+tbd. talk about invisibility risk again.
 
 ## Communication Is For Coordination
 

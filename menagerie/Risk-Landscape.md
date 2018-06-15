@@ -32,6 +32,11 @@ In fact, we're going to try and categorize the kinds of things we see on this ri
  - There is _correlation_ between different risks:  one risk may cause another, or two risks may be due to the same underlying cause.  
  - As we saw in [Part 1](Introduction), mitigating one risk can give rise to another, so risks are often _inversely correlated_.
 
+## Why Should We Categorize The Risks
+
+
+
+
 ## Three Basic Areas Of Risk
 
 _tbd; is this enough?_

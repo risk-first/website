@@ -1,3 +1,5 @@
+![For Review](images/for-review.png)
+
 After so much theory, it seems like it's time to look at how we can apply these principles in the real world.
 
 The following is based the summary of an issue from just a few weeks ago.  It's heavily edited and anonymized, and I've tried to add the **Risk-First** vocabulary along the way, but otherwise, it's real.

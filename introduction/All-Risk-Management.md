@@ -1,3 +1,5 @@
+![For Review](images/for-review.png)
+
 In this section, I am going to introduce the idea that everything you do on a software project is Risk Management.
 
 In the [last section](Development-Process), we observed that all the activities in a simple methodology had a part to play in exposing different risks.  They worked to manage risk prior to them creating bigger problems in production.

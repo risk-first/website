@@ -1,3 +1,5 @@
+![Draft](images/draft.png)
+
 Here, I am going to recap on some pre-existing knowledge about risk, generally, in order to set the scene for the next section on [Meeting Reality](Meeting-Reality).  
 
 ## Risk Registers
