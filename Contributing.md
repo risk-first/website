@@ -4,7 +4,7 @@ Risk-First is turning out to be a big undertaking, and any help would be greatfu
 
 ## Seen Something Wrong?
 
-Please [Open An Issue](https://github.com/risk-first/website/issues) and explain what needs to be done.
+The basic route to feedback is simply to [Open An Issue](https://github.com/risk-first/website/issues) and explain what needs to be done.  We'd be very grateful to hear your ideas.
 
 ### A Note On Editing Symbols
 
@@ -12,7 +12,7 @@ At the top of each page, there's an image in to show what kind state the page is
 
 |Symbol                     |Means                         |
 |---------------------------|------------------------------|
-|![Under Construction](images/uc.png)|Means this is probably a placeholder page, and needs fleshing out.  If you have ideas, please add them|
+|![Under Construction](images/uc.png)|Means this is probably a placeholder page, and needs fleshing out.  If you have ideas, please submit them in an issue|
 |![Draft](images/draft.png) |Most of the text is correct, but there are likely to be placeholders.   Open issues if there are glaring omissions/inaccuracies.|
 |![For Review](images/for-review.png)|Get involved!  Please help by reviewing the document and letting us know what you think!|
 |![Reviewed](images/reviewed.png)|Totally ready for consumption, enjoy!|
