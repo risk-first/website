@@ -15,8 +15,6 @@ Hopefully, after reading through some of the articles here, you'll come away wit
 - A recontextualization of the software process as being an exercise in mitigating different kinds of risk.
 - The tools to help you decide when a methodology is _letting you down_, and the vocabulary to argue for when it's a good idea to deviate from it.
 
-[Executive Summary](Executive-Summary)
-
 ## What This is Not
 
 This is not intended to be a rigorously scientific work: I don't believe it's possible to objectively analyze a field like software development in any meaningful, statistically significant way.  (For one, things just change [too fast](Silver-Bullets).) 
@@ -30,6 +28,10 @@ Lastly, although this is a [Wiki](https://en.wikipedia.org/wiki/Wiki), it's not 
 ## Contributing
 
 If you feel something important is missing, or you spot a mistake, [we need help](Contributing).
+
+## Executive Summary
+
+You can get a flavour for where all this is going by reaading this:  [Executive Summary](Executive-Summary)
 
 ## Table of Contents
 
