@@ -1,4 +1,4 @@
-![Under Construction](images/uc.png)
+![Under Construction](images/state/uc.png)
 
 In this section on [Production Risks], we're going to take our head out of the clouds a bit and start considering the realities of running software systems in the real world.  After all, [Coordination Risk] and [Map And Terriory Risk] got a bit theoretical.  Here, we're going to look at [Operational Risk], [Security Risk] and [Reputational Risk]: real-world concerns for anyone running a business.  
 

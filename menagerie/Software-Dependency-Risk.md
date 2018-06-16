@@ -1,4 +1,4 @@
-![Under Construction](images/uc.png)
+![Under Construction](images/state/uc.png)
 
 In this section, we're going to look specifically at _Software_ dependencies, although many of the concerns we'll raise here apply equally to all the other types of dependency we outlined in [Dependency Risk](Dependency-Risk). 
 

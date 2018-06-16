@@ -1,4 +1,4 @@
-![For Review](images/for-review.png)
+![For Review](images/state/for-review.png)
 
 **Schedule Risk** is the fundamental risk you face because of _lack of time_.  
 

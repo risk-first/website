@@ -1,4 +1,4 @@
-![Under Construction](images/uc.png)
+![Under Construction](images/state/uc.png)
 
 As we discussed in the section on [Abstraction Risk](Communication Risk), our understanding of the world is entirely informed by the names we give things and the abstractions we create.  
 

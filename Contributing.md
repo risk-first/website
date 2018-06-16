@@ -12,10 +12,10 @@ At the top of each page, there's an image in to show what kind state the page is
 
 |Symbol                     |Means                         |
 |---------------------------|------------------------------|
-|![Under Construction](images/uc.png)|Means this is probably a placeholder page, and needs fleshing out.  If you have ideas, please submit them in an issue|
-|![Draft](images/draft.png) |Most of the text is correct, but there are likely to be placeholders.   Open issues if there are glaring omissions/inaccuracies.|
-|![For Review](images/for-review.png)|Get involved!  Please help by reviewing the document and letting us know what you think!|
-|![Reviewed](images/reviewed.png)|Totally ready for consumption, enjoy!|
+|![Under Construction](images/state/uc.png)|Means this is probably a placeholder page, and needs fleshing out.  If you have ideas, please submit them in an issue|
+|![Draft](images/state/draft.png) |Most of the text is correct, but there are likely to be placeholders.   Open issues if there are glaring omissions/inaccuracies.|
+|![For Review](images/state/for-review.png)|Get involved!  Please help by reviewing the document and letting us know what you think!|
+|![Reviewed](images/state/reviewed.png)|Totally ready for consumption, enjoy!|
 
 
 ## Want To Write Something?

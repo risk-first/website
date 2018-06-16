@@ -1,4 +1,4 @@
-![Draft](images/draft.png)
+![Draft](images/state/draft.png)
 
 **Process Risk**, as we will see, is the risk you take on whenever you embark on a process.   This is the final part of our analysis of different [Dependency Risks](Dependency-Risk), so at the end of this section we're going to summarise what we've learned about [Dependency Risk](Dependency-Risk) so far. 
 

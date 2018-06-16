@@ -1,4 +1,4 @@
-![Draft](images/draft.png)
+![Draft](images/state/draft.png)
 
 ![Agency Risk](images/generated/agency-risk.png)
 
