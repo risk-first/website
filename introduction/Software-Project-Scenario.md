@@ -1,4 +1,4 @@
-![For Review](images/for-review.png)
+![For Review](images/state/for-review.png)
 
 Where do the risks of the project lie?  
 

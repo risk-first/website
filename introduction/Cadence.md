@@ -1,4 +1,4 @@
-![For Review](images/for-review.png)
+![For Review](images/state/for-review.png)
 
 Let's go back to the model again, introduced in [Meeting Reality](Meeting-Reality):
 

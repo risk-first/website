@@ -1,4 +1,4 @@
-![Under Construction](images/uc.png)
+![Under Construction](images/state/uc.png)
 
 Thinking is hard.  And worrying about Risk constantly would be _exhausting_.
 

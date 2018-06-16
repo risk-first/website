@@ -1,4 +1,4 @@
-![For Review](images/for-review.png)
+![For Review](images/state/for-review.png)
 
 In the [previous section](Introduction) we looked at a simple model for risks on any given activity.
 

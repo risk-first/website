@@ -1,4 +1,4 @@
-![Draft](images/draft.png)
+![Draft](images/state/draft.png)
 
 
 ## 1.  There are lots of ways of running software projects
