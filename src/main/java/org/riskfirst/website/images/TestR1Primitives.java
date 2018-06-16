@@ -1,4 +1,4 @@
-package images;
+package org.riskfirst.website.images;
 
 import java.io.File;
 import java.io.FileReader;

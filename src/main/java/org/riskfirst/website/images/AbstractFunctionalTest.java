@@ -1,4 +1,4 @@
-package images;
+package org.riskfirst.website.images;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -12,10 +12,8 @@ import org.apache.batik.transcoder.Transcoder;
 import org.apache.batik.transcoder.TranscoderInput;
 import org.apache.batik.transcoder.TranscoderOutput;
 import org.junit.Before;
-import org.kite9.diagram.adl.AbstractMutableXMLElement;
 import org.kite9.diagram.batik.format.Kite9PNGTranscoder;
 import org.kite9.diagram.batik.format.Kite9SVGTranscoder;
-import org.kite9.diagram.dom.elements.ADLDocument;
 import org.kite9.framework.common.HelpMethods;
 import org.kite9.framework.common.RepositoryHelp;
 import org.kite9.framework.common.StackHelp;
@@ -29,12 +27,10 @@ public abstract class AbstractFunctionalTest extends HelpMethods {
 
 	@Before
 	public void initTestDocument() {
-		AbstractMutableXMLElement.TESTING_DOCUMENT =  new ADLDocument();
 	}
 	
 	@Before
 	public void resetCounter() {
-		AbstractMutableXMLElement.resetCounter();
 	}
 
 	protected void transcodePNG(String s) throws Exception {

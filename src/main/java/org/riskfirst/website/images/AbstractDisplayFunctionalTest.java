@@ -1,17 +1,12 @@
-package images;
+package org.riskfirst.website.images;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Method;
 
 import org.junit.Test;
-import org.kite9.diagram.adl.DiagramKite9XMLElement;
-import org.kite9.diagram.dom.XMLHelper;
-import org.kite9.diagram.dom.elements.ADLDocument;
 import org.kite9.framework.common.StackHelp;
 import org.kite9.framework.common.TestingHelp;
 
