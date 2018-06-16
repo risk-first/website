@@ -16,8 +16,16 @@ public class ImageTweetSource extends AbstractRiskFirstWikiTweetSource implement
 
 	@Override
 	public List<StatusUpdate> getAllTweets() {
+		// first, get back articles 
+		
+		
 		StatusUpdate su = new StatusUpdate("Testing");
 		return Collections.singletonList(su);
+	}
+	
+	public List<Image> getImagesFromArticle(Article a) {
+		
+		
 	}
 
 }
