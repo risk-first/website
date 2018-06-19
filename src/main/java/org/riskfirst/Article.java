@@ -2,7 +2,9 @@ package org.riskfirst;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -37,25 +39,30 @@ public class Article {
 
 	public List<Link> getLinks() {
 		if (links == null) {
-			
+			links = new ArrayList<>();
+			try {
+				BufferedReader br = new BufferedReader(new FileReader(f));
+				process(br, links);
+				br.close();
+			} catch (IOException e) {
+				throw new RuntimeException("Couldn't get links:", e);
+			}
 		}
 		
 		return links;
 	}
 	
-	private static void process(BufferedReader br, File origin) throws IOException {
+	private static void process(BufferedReader br, List<Link> links) throws IOException {
 		String line = br.readLine();
+		int number = 1;
 		while (line != null) {
-			if (line.trim().equals("```include")) {
-				processIncludes(br, origin);
-			} else {
-				processLinks(line);
-			}
+			processLinks(line, number, links);
 			line = br.readLine();
+			number++;
 		}
 	}
 	
-	private static void processLinks(String line) {
+	private static void processLinks(String line, int number, List<Link> links) {
 		Matcher m = p.matcher(line);
 		int place = 0;
 		while (m.find()) {
@@ -71,33 +78,10 @@ public class Article {
 			String url = m.group(3);
 			String extra = m.group(4);
 			String reconstructed = (bang==null ? "" : "!")+"["+text+"]("+url+")"+ (extra==null ? "" : extra);
-
-			if (!link.equals(reconstructed)) {
-				System.err.println("BAD: "+link+"    "+text+"    "+url+"   "+reconstructed);
-			} else {
-				System.err.println("OK: " + link+"    "+text+"    "+url);
-			}
-			
-			if (!isExternal(url)) {
-				if (!isImage(url)) {
-					// these are links in the same document.
-					if (LINKS_AS_BOLD) {
-						System.out.print("**"+text+"**");
-					} else {
-						// something else.
-					}
-				} else {
-					processImage(link, text, url, m);
-				}
-			} else {
-				System.out.print(link);
-			}
-			
-			
+			links.add(new Link(bang != null, text, url, link, number));
 			place = e;
 		}
 		
-		System.out.println(line.substring(place));
 	}
 	
 }

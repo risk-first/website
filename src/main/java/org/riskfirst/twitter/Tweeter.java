@@ -23,7 +23,7 @@ public class Tweeter {
 		List<StatusUpdate> potentialTweets = new ArrayList<>();
 		
 		// work out some tweet sources
-		TweetSource imageTweetSource = new ImageTweetSource(articles, baseURI);
+		TweetSource imageTweetSource = new ImageTweetSource(articles, baseURI, riskFirstWikiDir);
 		List<StatusUpdate> tweets = imageTweetSource.getRandomTweets(5);
 		potentialTweets.addAll(tweets);
 		

@@ -36,7 +36,7 @@ public class ArticleLoader {
 	}
 
 	private ArticleState getStateFor(String contents) {
-		contents = contents.substring(contents.indexOf('\n')+1);
+		contents = contents.substring(0, contents.indexOf('\n')+1);
 		if (contents.contains("state/uc.png")) {
 			return ArticleState.UNDER_CONSTRUCTION;
 		} else if (contents.contains("state/draft.png")) {

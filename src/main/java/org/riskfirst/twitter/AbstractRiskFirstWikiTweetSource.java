@@ -33,7 +33,8 @@ public abstract class AbstractRiskFirstWikiTweetSource implements TweetSource {
 	}
 	
 	public List<Article> getArticlesInState(EnumSet<ArticleState> states) {
-		return articles.stream().filter(a -> states.contains(a.getState())).collect(Collectors.toList());
+		List<Article> out =  articles.stream().filter(a -> states.contains(a.getState())).collect(Collectors.toList());
+		return out;
 	}
 	
 }
