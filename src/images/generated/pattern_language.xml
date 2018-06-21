@@ -40,6 +40,19 @@
   <symbols/>
  </glyph>
  
+ <glyph id="id_10">
+  
+  
+  <stereotype/>
+  <label>Goal</label>
+  <text-lines/>
+  <symbols/>
+ </glyph>
+  <arrow id="id_9">
+  
+  
+  <label>obstructs</label>
+ </arrow>
  
   <link id="id_1" shape="NORMAL" style="" drawDirection="RIGHT">
    
@@ -69,4 +82,20 @@
 
 
   </link>
+  
+  <link id="id_15" shape="NORMAL" style="" drawDirection="RIGHT">
+   
+   <from xsi:type="glyph" reference="id_8"/>
+   <to xsi:type="arrow" reference="id_9"/>
+
+
+  </link>
+  <link id="id_17" shape="NORMAL" style="" drawDirection="RIGHT">
+   
+   <from xsi:type="arrow" reference="id_9"/>
+   <to xsi:type="glyph" reference="id_10" class="arrow"/>
+
+
+  </link>
+  
   </diagram></svg:svg>
