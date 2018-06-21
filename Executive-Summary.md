@@ -1,6 +1,6 @@
 ![Draft](images/state/draft.png)
 
-## 1.  There are lots of ways of running software projects
+## 1.  There are Lots of Ways of Running Software Projects
 
 There are lots of different ways to look at a project.  For example, metrics such as “number of open tickets”, “story points”, “code coverage" or "release cadence" give us a numerical feel for how things are going and what needs to happen next.  We also judge projects by the practices used on them - [Continuous Integration], [Unit Testing](Testing) or [Pair Programming](Coding), for example.  
 
@@ -8,7 +8,7 @@ Software methodologies, then, are collections of tools and practices:  “Agile�
 
 **A key question then is: how do we select the right tool for the job?**
 
-## 2.  We can look at projects in terms of risks
+## 2.  We can Look at Projects in Terms of Risks
 
 One way to examine a project in-flight is a risk-based one.  Commonly, tools such as RAID logs and RAG status reporting are used.  These techniques should be familiar to project managers everywhere.  However, the [Risk-First](Home) view is that we can go much further:  that each item of work being done on the project is mitigating a particular risk.  Risk isn't something that just appears in a report, it actually drives *everything we do*.  For example:
 
@@ -18,7 +18,7 @@ One way to examine a project in-flight is a risk-based one.  Commonly, tools suc
 
 **One assertion of [Risk-First](Home) therefore, is that every action you take on a project is to mitigate some risk.  **
 
-3.  We can break down and analyse risks on a project methodically
+3.  We Can Break Down and Analyse Risks on a Project Methodically
 
 Although risk is usually complicated and messy, other industries have found value in breaking down the types of risks that affect them and addressing them individually.  For example:
 - In manufacturing, _tolerances_ allow for calculating the likelihood of defects in production.  
@@ -30,7 +30,7 @@ Software risks are difficult to quantify, and mostly, the effort involved in doi
 - Expose [Hidden Risks](Risk) that we hadn't considered before
 - Weigh the risks against each other, and decide which order to tackle them.   
 
-4.  We can analyse practices in terms of how they mitigate risk
+4.  We Can Analyse Practices in Terms of how they Mitigate Risk
 
 If we accept the assertion above that _all_ the actions we take on a project are about mitigating risks, then it stands to reason that the tools and techniques available to us on a project are there for mitigating different types of risks.  
 
@@ -41,7 +41,7 @@ For example:
 
 **Different tools are appropriate for mitigating different types of risks.**
 
-5.  Different methodologies are appropriate to different risk profiles
+5.  Different Methodologies are Appropriate to Different Risk Profiles
 
 In the same way that our tools and techniques are appropriate to dealing with different risks, the same is true of the methodologies we use on our projects.  We can use a [Risk-First](Home) approach to examine the different methodologies, and see which risks they address.  For example:
 - [Agile](Agile) methodologies prioritise mitigating the risk that requirements capture is complicated, error-prone and that requirements change easily.  
@@ -52,7 +52,7 @@ Although many developers have a methodology-of-choice, the argument here is that
 
 **We can place methodologies within a framework, and show how choice of methodology is contingent on the risks faced.**
 
-6.  Driving a project with a [Risk-First](Home) perspective 
+6.  Driving a Project With a [Risk-First](Home) Perspective 
 
 We have described a model of risk within software projects, looking something like this:
 
