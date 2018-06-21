@@ -70,11 +70,11 @@ Although many developers have a methodology-of-choice, the argument here is that
 
 **We can place methodologies within a framework, and show how choice of methodology is contingent on the risks faced.**
 
-6.  Driving a Project With a [Risk-First](Home) Perspective 
+## 6.  Driving a Project With a Risk-First Perspective 
 
 We have described a model of risk within software projects, looking something like this:
 
-tbd.  image (risk, practice, methodology, action, goal)
+![Methdologies, Risks, Practices](images/generated/pattern_language.png)
 
 How do we take this further?
 
