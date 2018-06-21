@@ -36,9 +36,12 @@ For example:
 - In finance, reserves are commonly set aside for “market risk” and “credit risk”, and teams are structured around different risks.  
 - The insurance industry is founded on identifying particular risks and providing financial safety-nets for when they occur.   
 
-Software risks are difficult to quantify, and mostly, the effort involved in doing so _exactly_ would outweigh the benefit.  Nevertheless, there is value in spending time building _our own classifications of risk_.  With this in place, we can:
-- Talk about the types of risks we face on our projects, using an appropriate language
-- Expose [Hidden Risks](Risk) that we hadn't considered before
+Software risks are difficult to quantify, and mostly, the effort involved in doing so _exactly_ would outweigh the benefit.  Nevertheless, there is value in spending time building _classifications of risk for software_.  
+
+With this in place, we can:
+
+- Talk about the types of risks we face on our projects, using an appropriate language.
+- Expose [Hidden Risks](Risk) that we hadn't considered before.
 - Weigh the risks against each other, and decide which order to tackle them.   
 
 4.  We Can Analyse Practices in Terms of how they Mitigate Risk
