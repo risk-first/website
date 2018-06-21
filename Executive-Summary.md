@@ -26,7 +26,7 @@ For example:
 
 **One assertion of [Risk-First](Home) therefore, is that every action you take on a project is to mitigate some risk.**
 
-# 3.  We Can Break Down and Analyze Risks on a Project Methodically
+## 3.  We Can Break Down and Analyze Risks on a Project Methodically
 
 Although risk is usually complicated and messy, other industries have found value in breaking down the types of risks that affect them and addressing them individually.  
 
