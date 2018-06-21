@@ -252,6 +252,10 @@ Stuck In the Middle Pattern - Scala / Raj.
 machine publishers 
 
 
+Need to rethink this:  
+ - it's about decision making.  
+
+
 Boundary Risk Defined
  - Exists at confluence of Dependency Risk, Complexity Risk and Protocol Risk
  - 

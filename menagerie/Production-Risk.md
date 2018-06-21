@@ -123,5 +123,6 @@ Regulatory Risk  Legal Risk  (Pestle?)
 Competition - this is the game, everything else is practice.3
 
 
+REALITY RISK - if you don't meet reality, how will you know if you'll survive it?  Reality is very good at surfacing hidden risks.
 
 
