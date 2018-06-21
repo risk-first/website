@@ -2,17 +2,25 @@
 
 ## 1.  There are Lots of Ways of Running Software Projects
 
-There are lots of different ways to look at a project.  For example, metrics such as “number of open tickets”, “story points”, “code coverage" or "release cadence" give us a numerical feel for how things are going and what needs to happen next.  We also judge projects by the practices used on them - [Continuous Integration], [Unit Testing](Testing) or [Pair Programming](Coding), for example.  
+There are lots of different ways to look at a project.  For example, metrics such as “number of open tickets”, “story points”, “code coverage" or "release cadence" give us a numerical feel for how things are going and what needs to happen next.  We also judge projects by the practices used on them - Continuous Integration, [Unit Testing](Testing) or [Pair Programming](Coding), for example.  
 
-Software methodologies, then, are collections of tools and practices:  “Agile”, “Waterfall”, “Lean” or “Phased Delivery” (for example) all suggest different approaches to running a project, and are opinionated about the way they think projects should be done and the tools that should be used.    None of these is necessarily more “right” than another, they are suitable on different projects at different times.
+Software methodologies, then, are collections of tools and practices:  “Agile”, “Waterfall”, “Lean” or “Phased Delivery” (for example) all suggest different approaches to running a project, and are opinionated about the way they think projects should be done and the tools that should be used.    
+
+None of these is necessarily more “right” than another, they are suitable on different projects at different times.
 
 **A key question then is: how do we select the right tool for the job?**
 
 ## 2.  We can Look at Projects in Terms of Risks
 
-One way to examine a project in-flight is a risk-based one.  Commonly, tools such as RAID logs and RAG status reporting are used.  These techniques should be familiar to project managers everywhere.  However, the [Risk-First](Home) view is that we can go much further:  that each item of work being done on the project is mitigating a particular risk.  Risk isn't something that just appears in a report, it actually drives *everything we do*.  For example:
+One way to examine a project in-flight is a risk-based one.  
 
-- a story about improving the user login screen can be seen as reducing _the risk of users not signing up_.   
+Commonly, tools such as RAID logs and RAG status reporting are used.  These techniques should be familiar to project managers everywhere.  
+
+However, the [Risk-First](Home) view is that we can go much further:  that each item of work being done on the project is mitigating a particular risk.  Risk isn't something that just appears in a report, it actually drives *everything we do*.  
+
+For example:
+
+- A story about improving the user login screen can be seen as reducing _the risk of users not signing up_.   
 - A task about improving the health indicators could be seen as mitigating _the risk of the application failing and no-one reacting to it_. 
 - Even a task as basic as implementing a new function in the application is mitigating _the risk that users are dissatisfied and go elsewhere_.  
 
