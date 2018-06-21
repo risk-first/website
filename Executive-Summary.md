@@ -56,7 +56,7 @@ For example:
 
 **Different tools are appropriate for mitigating different types of risks.**
 
-## 5.  Different Methodologies are Appropriate to Different Risk Profiles
+## 5.  Different Methodologies for Different Risk Profiles
 
 In the same way that our tools and techniques are appropriate to dealing with different risks, the same is true of the methodologies we use on our projects.  We can use a Risk-First approach to examine the different methodologies, and see which risks they address.  
 
