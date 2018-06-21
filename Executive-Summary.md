@@ -26,7 +26,7 @@ For example:
 
 **One assertion of [Risk-First](Home) therefore, is that every action you take on a project is to mitigate some risk.**
 
-## 3.  We Can Break Down and Analyze Risks on a Project Methodically
+## 3.  We Can Break Down Risks on a Project Methodically
 
 Although risk is usually complicated and messy, other industries have found value in breaking down the types of risks that affect them and addressing them individually.  
 
@@ -36,7 +36,7 @@ For example:
 - In finance, reserves are commonly set aside for “market risk” and “credit risk”, and teams are structured around different risks.  
 - The insurance industry is founded on identifying particular risks and providing financial safety-nets for when they occur.   
 
-Software risks are difficult to quantify, and mostly, the effort involved in doing so exactly would outweigh the benefit.  Nevertheless, there is value in spending time building _our own classifications of risk_.  With this in place, we can:
+Software risks are difficult to quantify, and mostly, the effort involved in doing so _exactly_ would outweigh the benefit.  Nevertheless, there is value in spending time building _our own classifications of risk_.  With this in place, we can:
 - Talk about the types of risks we face on our projects, using an appropriate language
 - Expose [Hidden Risks](Risk) that we hadn't considered before
 - Weigh the risks against each other, and decide which order to tackle them.   
