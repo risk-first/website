@@ -1,4 +1,4 @@
-![Draft](images/state/draft.png)
+![For Review](images/state/for-review.png)
 
 ## 1.  There are Lots of Ways of Running Software Projects
 
