@@ -56,9 +56,12 @@ For example:
 
 **Different tools are appropriate for mitigating different types of risks.**
 
-5.  Different Methodologies are Appropriate to Different Risk Profiles
+## 5.  Different Methodologies are Appropriate to Different Risk Profiles
 
-In the same way that our tools and techniques are appropriate to dealing with different risks, the same is true of the methodologies we use on our projects.  We can use a [Risk-First](Home) approach to examine the different methodologies, and see which risks they address.  For example:
+In the same way that our tools and techniques are appropriate to dealing with different risks, the same is true of the methodologies we use on our projects.  We can use a Risk-First approach to examine the different methodologies, and see which risks they address.  
+
+For example:
+
 - [Agile](Agile) methodologies prioritise mitigating the risk that requirements capture is complicated, error-prone and that requirements change easily.  
 - [Waterfall](Waterfall) takes the view that development is an expensive risk, and that we should build plans up-front to avoid it.  
 - [Lean](Lean) takes the view that risk lies in incomplete work and wasted work, and aims to minimize that.
