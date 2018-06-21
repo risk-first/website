@@ -16,7 +16,7 @@ One way to examine a project in-flight is a risk-based one.
 
 Commonly, tools such as RAID logs and RAG status reporting are used.  These techniques should be familiar to project managers everywhere.  
 
-However, the [Risk-First](Home) view is that we can go much further:  that each item of work being done on the project is mitigating a particular risk.  Risk isn't something that just appears in a report, it actually drives *everything we do*.  
+However, the Risk-First view is that we can go much further:  that each item of work being done on the project is mitigating a particular risk.  Risk isn't something that just appears in a report, it actually drives *everything we do*.  
 
 For example:
 
@@ -24,7 +24,7 @@ For example:
 - A task about improving the health indicators could be seen as mitigating _the risk of the application failing and no-one reacting to it_. 
 - Even a task as basic as implementing a new function in the application is mitigating _the risk that users are dissatisfied and go elsewhere_.  
 
-**One assertion of [Risk-First](Home) therefore, is that every action you take on a project is to mitigate some risk.  **
+**One assertion of [Risk-First](Home) therefore, is that every action you take on a project is to mitigate some risk.**
 
 3.  We Can Break Down and Analyse Risks on a Project Methodically
 
