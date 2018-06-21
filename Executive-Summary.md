@@ -78,11 +78,13 @@ We have described a model of risk within software projects, looking something li
 
 How do we take this further?
 
-One idea we explore is that of the [Risk Landscape](Risk-Landscape):  Although the software team can't remove risk from their project, they can take actions that move them to a place in the [Risk Landscape](Risk-Landscape) where the risks on the project are more favourable than where they started.  
+The first idea we explore is that of the [Risk Landscape](Risk-Landscape):  Although the software team can't remove risk from their project, they can take actions that move them to a place in the [Risk Landscape](Risk-Landscape) where the risks on the project are more favourable than where they started.  
 
 From there, we examine basic risk archetypes you will encounter on the software project, to build up a [Taxonomy of Software Risk](Staging-And-Classifying), and look at which specific tools you can use to mitigate each kind of risk.  
 
-Then, we look at different software practices, and how they mitigate various risks.  Beyond this we examine the question:  _how can a risk-first approach inform the use of this technique?_  For example:
+Then, we look at different software practices, and how they mitigate various risks.  Beyond this we examine the question:  _how can a Risk-First approach inform the use of this technique?_  
+
+For example:
 
  - If we are introducing a **Sign-Off** in our process, we have to balance the risks it _mitigates_ (coordination of effort, quality control, information sharing) with the risks it _introduces_ (delays and process bottlenecks).  
  - If we have **Redundant Systems**, this mitigates the risk of a _single point of failure_, but introduces risks around _synchronizing data_ and _communication_ between the systems. 
