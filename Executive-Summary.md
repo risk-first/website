@@ -63,7 +63,7 @@ In the same way that our tools and techniques are appropriate to dealing with di
 For example:
 
 - [Agile](Agile) methodologies prioritise mitigating the risk that requirements capture is complicated, error-prone and that requirements change easily.  
-- [Waterfall](Waterfall) takes the view that development is an expensive risk, and that we should build plans up-front to avoid it.  
+- [Waterfall](Waterfall) takes the view that coding effort is an expensive risk, and that we should build plans up-front to avoid it.  
 - [Lean](Lean) takes the view that risk lies in incomplete work and wasted work, and aims to minimize that.
 
 Although many developers have a methodology-of-choice, the argument here is that there are tradeoffs with all of these choices.
