@@ -90,6 +90,6 @@ For example:
  - If we have **Redundant Systems**, this mitigates the risk of a _single point of failure_, but introduces risks around _synchronizing data_ and _communication_ between the systems. 
  - If we introduce **Process**, this may make it easier to _coordinate as a team_ and _measure performance_ but may lead to bureaucracy, focusing on the wrong goals or over-rigid interfaces to those processes.   
 
-[Risk-First] aims to provide a framework in which we can _analyse these choices_ and weigh up _accepting_ versus _mitigating_ risks.
+Risk-First aims to provide a framework in which we can _analyse these choices_ and weigh up _accepting_ versus _mitigating_ risks.
 
 **Still interested?  Then dive into reading [the introduction](A-Simple-Scenario).**
