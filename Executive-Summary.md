@@ -44,11 +44,12 @@ With this in place, we can:
 - Expose [Hidden Risks](Risk) that we hadn't considered before.
 - Weigh the risks against each other, and decide which order to tackle them.   
 
-4.  We Can Analyse Practices in Terms of how they Mitigate Risk
+## 4.  We Can Analyse Practices in Terms of how they Mitigate Risk
 
 If we accept the assertion above that _all_ the actions we take on a project are about mitigating risks, then it stands to reason that the tools and techniques available to us on a project are there for mitigating different types of risks.  
 
 For example:
+
  - If we do a [Code Review](Review), we are partly trying to mitigate the risks of bugs slipping through into production, and also mitigate the [Key-Man Risk](Coordination-Risk) of knowledge not being widely-enough shared. 
  - If we write [Unit Tests](Testing), we’re also mitigating the risk of bugs going to production, but we’re also mitigating against future changes breaking our existing functionality.   
  - If we enter into a [contract with a supplier](Contract), we are mitigating the risk of the supplier vanishing and leaving us exposed.  With the contract in place, we have legal recourse against this risk.
