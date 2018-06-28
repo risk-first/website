@@ -177,9 +177,9 @@ tbd.  diagram of how this works out: [feature risk], [communication risk] being 
 These are not the only ways to provide a dependency, and there's clearly no one _right_ way.   Although here we have looked just at "Commercial Saas" and "Free Open Source", in reality, these are just points in a two-dimensional space involving _Pricing_ and _Hosting_.   Let's expand this view slightly and look at where different pieces of software sit on these axes:
 
 | Pricing                        	|                    On Premises 3rd Party                   	| In Cloud / Browser 3rd Party                           	| Risk Profile                                                                 	|
-|--------------------------------	|:----------------------------------------------------------:	|--------------------------------------------------------	|------------------------------------------------------------------------------	|
-| Free                           	| **OSS Libraries** <br /><ul><li>Tools</li><li>Java</li><li>Firefox</li>Linux</li><li>Programming Languages</li></ul> 	| FreemiumSplunkSpotifyGitHub                            	| Boundary Risk Drives AdoptionValue In Network Effect                         	|
-| Advertising Supported          	|    Commercial SoftwareLots of phone appse.g. Angry Birds   	| Commercial SaaSGoogle SearchGmailTwitter               	| Low Boundary RiskHigh Availability Of Substitutes                            	|
+|--------------------------------	|----------------------------------------------------------- |--------------------------------------------------------	|------------------------------------------------------------------------------	|
+| Free                           	| **OSS Libraries** <br /><ul><li>Tools</li><li>Java</li><li>Firefox</li>Linux</li><li>Programming Languages</li></ul> 	| FreemiumSplunkSpotifyGitHub                            	| *Boundary Risk Drives Adoption*<br />*Value In Network Effect*                         	|
+| Advertising Supported          	| **Commercial Software**<ul><li>Lots of phone app</li><li>se.g. Angry Birds</li></ul>   	| **Commercial SaaS** <ul><li>Google Search</li><li>Gmail</li><li>Twitter</li></ul>               	| *Low Boundary Risk*<br />*High Availability Of Substitutes*                            	|
 | Monthly / Metered Subscription 	|      Commercial SoftwareOracle DatabasesWindowsOffice      	| Commercial SaaSOffice 365SalesForceAmazon Web Services 	| Easy arguments for reducedComplexity RiskCommunication RiskCoordination Risk 	|
 
     
