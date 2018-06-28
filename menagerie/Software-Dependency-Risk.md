@@ -81,10 +81,10 @@ So, we now have two types of complexity:
   
 ## Types Of Software Dependencies
 
-The way to win, then, is to allow a language to be extensible as-needed with features written by third parties.  By supplying mechanisms for extension a language can provide insurances against the [Boundary Risk] of adopting it.  Although there are many ways of allowing such extension, we're going to consider 3 basic types of dependencies in this section:  tbd.
+The way to win, then, is to allow a language to be extensible as-needed with features written by third parties.  By supplying mechanisms for extension a language can provide insurances against the [Boundary Risk](Boundary-Risk) of adopting it.  Although there are many ways of allowing such extension, we're going to consider 3 basic types of dependencies in this section:  
  - **Our own**: write some code ourselves to meet the dependency.
  - **Libraries**:  importing code from the Internet, and using it in our project.  Often, libraries are Open Source (this is what we'll consider here).
- - **Services**: calling a service on the Internet, (probably via `http`)  This is often known as [SaaS, or Software as a Service].
+ - **Services**: calling a service on the Internet, (probably via `http`)  This is often known as [SaaS, or Software as a Service](https://en.wikipedia.org/wiki/Software_as_a_service).
  
 All 3 approaches involve a different risk-profile.  Let's look at each in turn, from the perspective of which risks get mitigated, and which risks are accentuated. 
  
@@ -111,7 +111,7 @@ Today, choosing software dependencies looks like a "bounded rationality"-type pr
 
 We're going to dig down into some of the risks associated with this, in order to build a model of what this decision making process should involve.  Luckily, other authros have already considered this problem.  In the table below, I am summarizing three different sources, which give descriptions of which factors to look for when choosing open-source libraries.  
 
-| Concern                                                                                                                               | <img src="images/generated/coordination-risk.png" width="100"/> | <img src="images/generated/boundary-risk.png" width="100" /> | <img src="images/generated/feature-risk.png" width="100"/>    | <img src="images/generated/communication-risk.png" width="100" /> | Source       | 
+| Concern                                                                                                                               | <img src="images/generated/coordination-risk.png" width="300"/> | <img src="images/generated/boundary-risk.png" width="300" /> | <img src="images/generated/feature-risk.png" width="300"/>    | <img src="images/generated/communication-risk.png" width="300" /> | Source       | 
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------:|:-------------:|:-------------------:|:------------------:|--------------| 
 | Is the project "famous"?                                                                                                                                                                                  |                   | X             | X                   | X                  | [sd2], [sd3] | 
 | Is there evidence of a large user community on user forums or e-mail list archives?                                                                                                                       |                   | X             | X                   | X                  | [sd1]        | 
