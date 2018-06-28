@@ -136,7 +136,7 @@ We're going to dig down into some of the risks associated with this, in order to
 
 <table>
 <tr><th>Concern</th><th>Coordination Risk</th><th>Boundary Risk</th><th>Feature Fit Risk</th><th>Communication Risk</th><th>Source </th></tr>
-<tr><td>Is the project ""famous""? "</td><td></td><td>X</td><td>X</td><td>X</td><td>"II</td><td> III</td></tr>
+3<tr><td>Is the project ""famous""? "</td><td></td><td>X</td><td>X</td><td>X</td><td>[1], [2]</td></tr>
 <tr><td>Is there evidence of a large user community on user forums or e-mail list archives?</td><td></td><td>X</td><td>X</td><td>X</td><td>I</td></tr>
 <tr><td>Who is developing and maintaining the project? (Track Record)</td><td></td><td>X</td><td>X</td><td>X</td><td>III</td></tr>
 <tr><td>What are the mechanisms for supporting the software (community support</td><td> direct email</td><td> dedicated support team)</td><td> and how long will the support be available? The more support</td><td> the better"</td><td></td><td></td><td>X</td><td>X</td><td>I</td></tr>
