@@ -51,7 +51,7 @@ function out() {                                             (7 symbols)
 2.  The exact Kolmogorov complexity is uncomputable anyway.  It's just a fairly abstract idea, so we shouldn't get too hung up on this.  There is no function to be able to say, "what's the Kolmogorov complexity of string X"
 3.  What is this new library function we've created?   Is `abcdRepeater` going to be part of _every_ Javascript?  If so, then we've shifted [Codebase Risk](Complexity-Risk) away from ourselves, but we've pushed [Communication Risk](Communication-Risk) and [Dependency Risk](Dependency-Risk) onto every _other_ user of Javascript.
 4.  Are there equivalent functions for every single other string?  If so, then compilation is no longer a tractable problem: is `return abcdRepeater(10)` correct code?  Well, now we have a massive library of different `XXXRepeater` functions to compile against to see if it is...  So, what we _lose_ in [Kolmogorov Complexity](Complexity-Risk) we gain in [Big-O Complexity](Complexity-Risk).  
-5.  Language design, then, is about _ergonomics_.  After you have passed the relatively low bar of providing [Turing Completeness], the key is to provide _useful_ features that enable problems to be solved, without over-burdening the user with features they _don't_ need.  And in fact, all software is about this.
+5.  Language design, then, is about _ergonomics_.  After you have passed the relatively low bar of providing [Turing Completeness](https://en.wikipedia.org/wiki/Turing_completeness), the key is to provide _useful_ features that enable problems to be solved, without over-burdening the user with features they _don't_ need.  And in fact, all software is about this.
 
 ## Ergonomics Examined
 
@@ -67,7 +67,7 @@ In the same way as with a hand-tool, the bulk of the complexity of a software to
 
 Software is not constrained by _physical_ ergonomics in the same way as a tool is.  But ideally, it should have conceptual ergonomics:  ideally, complexity is hidden away from the user behind the API (Application Programming Interface).  This is the familiar concept of [Abstraction] we've already looked at.   
 
-That is, the tool should be as simple to use and understand as possible.  This is the **Principal Of Least Surprise**:
+That is, the tool should be as simple to use and understand as possible.  This is the [Principal Of Least Astonishment](https://en.wikipedia.org/wiki/Principle_of_least_astonishment):
 
  - **The abstractions should map easily to how the user expects the tool to work.** For example, I _expect_ the trigger on a drill to start the drill turning.  
  - **The abstractions should leverage existing idioms and knowledge.** In a new car, I _expect_ to know what the symbols on the dashboard mean, because I've driven other cars.
@@ -76,8 +76,8 @@ That is, the tool should be as simple to use and understand as possible.  This i
 The interface of a system expands when you ask it to do a wide variety of things.   An easy-to-use drill does one thing well: it turns drill-bits at useful levels of torque for drilling holes and sinking screws.  But if you wanted it to also operate as a lathe, a sander or a strimmer (all basically mechanical things going round) you would have to sacrifice the ergonomic simplicity for a more complex interface, probably including adapters, extensions, handles and so on.
 
 So, we now have two types of complexity:
- - The inner complexity of the tool (how it works internally, it's own [Kolmogorov Complexity]).
- - The complexity of the interface that we need to understand to make the tool work (the [Kolmogorov Complexity] we need to make it work for us). 
+ - The inner complexity of the tool (how it works internally, it's own [Kolmogorov Complexity](Complexity-Risk#Kolmogorov-Complexity)).
+ - The complexity of the instructions that we need to write to make the tool work (the interface [Kolmogorov Complexity](Complexity-Risk#Kolmogorov-Complexity)). 
   
 ## Types Of Software Dependencies
 
