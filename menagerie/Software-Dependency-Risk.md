@@ -134,6 +134,32 @@ We're going to dig down into some of the risks associated with this, in order to
 | **Totals **                                                                                                                                                                                               | **1**             | **9**         | **15**              | **8*               |              | 
 
 
+<table>
+<tr><td>Concern</td><td>Risk</td><td></td><td></td><td></td><td>Source </td></tr>
+<tr><td></td><td>Coordination Risk</td><td>Boundary Risk</td><td>Feature Fit Risk</td><td>Communication Risk</td><td></td></tr>
+<tr><td>Is the project ""famous""? "</td><td></td><td>X</td><td>X</td><td>X</td><td>"II</td><td> III</td></tr>
+<tr><td>Is there evidence of a large user community on user forums or e-mail list archives?</td><td></td><td>X</td><td>X</td><td>X</td><td>I</td></tr>
+<tr><td>Who is developing and maintaining the project? (Track Record)</td><td></td><td>X</td><td>X</td><td>X</td><td>III</td></tr>
+<tr><td>What are the mechanisms for supporting the software (community support</td><td> direct email</td><td> dedicated support team)</td><td> and how long will the support be available? The more support</td><td> the better"</td><td></td><td></td><td>X</td><td>X</td><td>I</td></tr>
+<tr><td>Is the API to your liking?</td><td></td><td></td><td></td><td>X</td><td>II</td></tr>
+<tr><td>Are there examples of using the software successfully in the manner you want to use it?</td><td></td><td></td><td>X</td><td></td><td>I</td></tr>
+<tr><td>Are all the features you need</td><td> and think you will need</td><td> included?"</td><td></td><td></td><td>X</td><td></td><td>I</td></tr>
+<tr><td>How mature is the project?</td><td></td><td></td><td>X</td><td></td><td>II</td></tr>
+<tr><td>In respect to the software licence</td><td> do you have the right to use the software in its intended production environment</td><td> or the right to distribute it along with your software?"</td><td></td><td></td><td>X</td><td></td><td>I</td></tr>
+<tr><td>What is its deprecation or versioning policy? Does it have one? If not then it may be more unstable and features may disappear without warning between versioning</td><td> especially if releases are frequent."</td><td></td><td>X</td><td>Regression Risk</td><td>X</td><td>I</td></tr>
+<tr><td>What does the codebase look like?</td><td></td><td></td><td>Implementation Risk</td><td></td><td>III</td></tr>
+<tr><td>How frequent are its releases?</td><td></td><td></td><td>X</td><td></td><td>"I</td><td> II</td><td> III</td></tr>
+<tr><td>How well documented is the project?</td><td></td><td></td><td></td><td>X</td><td>II</td></tr>
+<tr><td>Does the software have evidence of a sustainable future (e.g. is there a roadmap)?</td><td></td><td>X</td><td></td><td></td><td>I</td></tr>
+<tr><td>Does the software support open standards? If it does</td><td> it will be easier to replace the software should it come to the end of its lifetime"</td><td></td><td>X</td><td></td><td></td><td>I</td></tr>
+<tr><td>Does the version you intend to use come from a forked open-source project</td><td> or is it from the original source project? If so</td><td> which source is more appropriate?"</td><td></td><td>X</td><td></td><td></td><td>I</td></tr>
+<tr><td>Are there any alternatives to the software?</td><td></td><td>X</td><td></td><td></td><td>I</td></tr>
+<tr><td>Has your community converged on using a particular software package?</td><td>X</td><td></td><td></td><td></td><td>I</td></tr>
+<tr><td>Totals</td><td>1</td><td>9</td><td>15</td><td>8</td><td></td></tr>
+</table>
+
+
+
 [1]: https://www.software.ac.uk/resources/guides/defending-your-code-against-dependency-problems
 [2]: https://stackoverflow.com/questions/2960371/how-to-choose-an-open-source-library
 [3]: https://www.forbes.com/sites/forbestechcouncil/2017/07/20/open-source-to-use-or-not-to-use-and-how-to-choose/2/#39e67e445a8c
