@@ -57,9 +57,9 @@ function out() {                                             (7 symbols)
 
 Have a look at some physical tools, like a hammer, or spanner.  To look at them, they are probably _simple_ objects, obvious, strong and dependable.  Their entire behaviour is encapsulated in their form.  Now, if you have a drill or sander to hand, look at the design of this too.  If it's well-designed, then from the outside it is simple, perhaps with only one or two controls.  Inside, it is complex and contains a motor, perhaps a transformer, and is maybe made of a hundred different components.
 
-But outside, the form is simple, and designed for humans to use.   This is [ergonomics]:
+But outside, the form is simple, and designed for humans to use.   This is _[ergonomics](https://en.wikipedia.org/wiki/Human_factors_and_ergonomics)_:
 
-> definition.
+> "Human factors and ergonomics (commonly referred to as Human Factors), is the application of psychological and physiological principles to the (engineering and) design of products, processes, and systems. The goal of human factors is to reduce human error, increase productivity, and enhance safety and comfort with a specific focus on the interaction between the human and the thing of interest."  - [Human Factors and Ergonomics, _Wikipedia_](https://en.wikipedia.org/wiki/Human_factors_and_ergonomics)
 
 ### Software Tools
 
