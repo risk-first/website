@@ -41,6 +41,8 @@ Here are some classic problems of coordination:
 
 ## A Model Of Coordination Risk
 
+![Coordination Risk](images/generated/coordination-risk.png)
+
 Earlier, in [Dependency Risk], we looked at various resources (time, money, people, events etc) and showed how we could [Depend On Them], taking on risk.  Here, however, we're looking at the situation where there is competition for those dependencies:   other parties want to use them in a different way.  
 
 The basic problem of [Coordination Risk], then, is _competition_.  Sometimes, competition is desireable (such as in sports and in markets), but sometimes competition is a waste and cooperation would be more efficient.   Without coordination, we would deliberately or accidentally compete for the same [Dependencies], which is wasteful.  Why is this wasteful?  One argument could come from [Diminishing Returns](https://en.wikipedia.org/wiki/Diminishing_returns), which says that the earlier units of a resource (say, chocolate bars) give you more benefit than later ones.  
