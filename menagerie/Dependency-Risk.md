@@ -52,6 +52,8 @@ So, we're going to look at [Dependency Risk] for our toy events from 7 different
  - [Fit Risk] and Baggage
  - [Dead-End Risk] and [Boundary Risk](Complexity-Risk)  
  
+tbd tree diagram of this.
+ 
 Let's look at each of these in turn.
 
 ## Schedule Risk

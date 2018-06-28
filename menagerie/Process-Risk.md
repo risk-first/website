@@ -132,6 +132,9 @@ This is a nasty situation, but there are a couple of ways to de-risk this:
  - break signoffs down into bite-size chunks of risk that are acceptable to those doing the sign-off.  
  - Agree far-in-advance the sign-off criteria.  As discussed in [Risk Theory](Risk-Theory), people have a habit of heavily discounting future risk, and it's much easier to get agreement on the criteria than it is to get the sign-off. 
 
+## Bureaucracy
+
+
 ## Dependencies - A Quick Review
 
 Dependency of any kind is a choice in which you are trying to choosing a position of lower [Attendant Risk](Risk) than you would have without the dependency. 

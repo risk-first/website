@@ -8,7 +8,7 @@ Software methodologies, then, are collections of tools and practices:  “Agile�
 
 None of these is necessarily more “right” than another, they are suitable on different projects at different times.
 
-**A key question then is: how do we select the right tool for the job?**
+**A key question then is: how do we select the right tools for the job?**
 
 ## 2.  We can Look at Projects in Terms of Risks
 

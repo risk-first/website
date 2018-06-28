@@ -4,32 +4,9 @@ AND DEAD END RISK
 
 **Boundary Risk** is an emergent risk, which exists at the intersection of [Complexity Risk](Complexity-Risk), [Dependency Risk](Dependency-Risk) and [Communication Protocol Risk](Communication-Risk).  Because of that, it's going to take a bit of time to pick it apart and understand it, so we're going to build up to this in stages.
 
-## Hand Tools
+Musical Instruments - ergonomics and boundary risk.
 
-Have a look at some physical tools, like a hammer, or spanner.  To look at them, they are probably _simple_ objects, obvious, strong and dependable.  Their entire behaviour is encapsulated in their form.  Now, if you have a drill or sander to hand, look at the design of this too.  From the outside, it is simple, perhaps with only one or two controls.  Inside, it is complex and contains a motor, perhaps a transformer, and is maybe made of a hundred different components.
 
-But outside, the form is simple, and designed for humans to use.   This is [ergonomics]:
-
-tbd
-
-## Software Tools
-
-Software is not constrained by physical ergonomics in the same way as a tool is.  But ideally, it should have conceptual ergonomics:  ideally, complexity is hidden away from the user.  This is the familiar concept of [Abstraction] we've already looked at.  
-
-That is, the tool should be as simple to use and understand as possible.  This is the **Principal Of Least Surprise**:
-
-tbd.
-
-In the same way as with a hand-tool, the bulk of the complexity of a software tool is hidden behind it's abstraction (or interface).  But, the more complex the _purpose_ of the tool, the more complex the interface will be.
-
-The interface of a system expands when you ask it to do a wide variety of things.   A drill does one thing well: it turns drill-bits at useful levels of torque for drilling holes and sinking screws.  But if you wanted it to also operate as a lathe, a sander or a strimmer (all basically mechanical things going round) you would have to sacrifice the ergonomic simplicity for a more complex interface, probably including adapters, extensions, handles and so on.
-
-So, we now have two types of complexity:
- - The inner complexity of the tool (how it works internally).
- - The complexity of the interface that we use.
- 
-We care about the former from the perspective of minimizing [Complexity Risk](Complexity-Risk) in our own codebase.  However, we care about the latter when we are using someone else's code as a [Dependency](Dependency-Risk) in our project.
- 
 ## Integration And Translation
 
 If we are going to use a software tool as a dependency, we have to use it's [API]():
