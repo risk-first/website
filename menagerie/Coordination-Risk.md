@@ -158,6 +158,11 @@ They can be encouraged with orthogonal practices such as [Team Building exercise
  
 ... and so on.
 
+new starters
+
+norming, storming etc.
+
+
 ## In Software Processes
 
 It should be pretty clear that we are applying the [Scale Invariance] rule to [Coordination Risk]:  all of the problems we've described as affecting teams, also affect software, although the scale and terrain are different.  Software processes have limited _agency_ - in most cases they follow fixed rules set down by the programmers, rather than self-organising like people can.

@@ -54,14 +54,12 @@ Meeting reality is _costly_, for example.  Going to production can look like thi
 
 All of these steps take a lot of effort and time.   But you don't have to meet the whole of reality in one go - sometimes that is expensive.  But we can meet it in "limited ways".  
 
-
-
 In all, to de-risk, you should try and meet reality:
 
 - **Sooner**, so you have time to mitigate the hidden risks it uncovers
 - **More Frequently**: so the hidden risks don't hit you all at once
-- **In Smaller Chunks**:
-
+- **In Smaller Chunks**: so you're not overburdened by hidden risks all in one go.
+- **With Feedback**: if you don't collect feedback from the experience of meeting reality, hidden risks _stay hidden_.
 
 ### YAGNI 
 

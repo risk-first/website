@@ -53,6 +53,9 @@ How much do compilers do for you?
   
 
 
+risk based debugging.
 
+risk based coding.
 
+We're all naturalists now.
 
