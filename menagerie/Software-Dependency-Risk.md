@@ -118,13 +118,13 @@ But, it's quite possible that we could wind up in a worse state, by using a libr
 
 It's _really easy_ to make bad decisions about which tools to use because the tools don't (generally) advertise their deficiencies.  After all, they don't generally know how _you_ will want to use them.  
 
+### Software Libraries - Hidden Risks
+
 Currently, choosing software dependencies looks like a "bounded rationality"-type process:
 
 > "Bounded rationality is the idea that when individuals make decisions, their rationality is limited by the tractability of the decision problem, the cognitive limitations of their minds, and the time available to make the decision. " - [Bounded Rationality, _Wikipedia_](https://en.wikipedia.org/wiki/Bounded_rationality)
 
-Humans don't always use this process tbd.
-
-### Software Libraries - Hidden Risks
+(Unfortunately, we know that most decisions _don't_ really get made this way.  We have things like [Confirmation Bias](https://en.wikipedia.org/wiki/Confirmation_bias) (looking for evidence to support a decision you've already made) and [Cognitive Inertia](https://en.wikipedia.org/wiki/Cognitive_inertia) (ignoring evidence that would require you to change your mind) to contend with.) 
 
 Let's try to build a model of what this decision making process should involve.  Luckily, other authors have already considered the problem of choosing good software libraries, so let's start there.
 
