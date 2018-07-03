@@ -65,7 +65,7 @@ None of the risk categories we're going to look at fit _exactly_ into these area
 
 ## Our Tour Itinerary
 
-tbd
+tbd - describe all the different risks here.  
 
 |Risk                                                |          Areas           |       |
 |----------------------------------------------------|--------------------------|-------|

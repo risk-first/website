@@ -102,7 +102,7 @@ Diagram:  Feature risk being mitigated , but complexity Risk, schedule risk
 
 ## Software Libraries
 
-Using library code offers a [Schedule Risk](Schedule-Risk) and [Complexity Risk] [Silver Bullet]:  
+Using library code offers a [Schedule Risk](Schedule-Risk) and [Complexity Risk] [Silver Bullet]  
 
 Consider [npmjs](http://npmjs.com), which is the most popular package manager for the Javascript ecosystem.  It currently boasts of having over 650,000 different libraries, so although we're unlikely to find an `abcdRepeater` function this suggests that we can "win" against Kolmogorov complexity by using them.  But actually, this is really a problem with the metric itself.  
 
@@ -110,7 +110,13 @@ In reality, using libraries allows us a "Kolmogorov tradeoff": our [Codebase Ris
 
 ![Software Libraries Risk Tradeoff](images/kite9/software-dependency-library.png)
 
-By choosing a particular software library, we are making a move on the [Risk Landscape] in the hope of moving to place with more favourable risks.  As the above diagram shows, typically, we want to reduce [Feature Risk] and [Schedule Risk].  But, it's quite possible that we could wind up in a worse state, by using a library that's out-of-date, riddled with bugs or badly supported.  It's _really easy_ to make bad decisions about which tools to use.  
+By choosing a particular software library, we are making a move on the [Risk Landscape] in the hope of moving to place with more favourable risks.  As the above diagram shows, typically, we want to reduce [Feature Risk] and [Schedule Risk].  In return we expect to pick up:
+- [Communication Risk]: because we now have to learn how to communicate with this new dependency.
+- [Boundary Risk] - because now are limited to using the functionality provided by this dependency.  We have chosen it over alternatives and changing to something else would be more work and therefore costly.   
+
+But, it's quite possible that we could wind up in a worse state, by using a library that's out-of-date, riddled with bugs or badly supported.  i.e. Full of new, hidden [Feature Risk].  
+
+It's _really easy_ to make bad decisions about which tools to use because the tools don't (generally) advertise their deficiencies.  After all, they don't generally know how _you_ will want to use them.  
 
 Currently, choosing software dependencies looks like a "bounded rationality"-type process:
 
@@ -118,9 +124,9 @@ Currently, choosing software dependencies looks like a "bounded rationality"-typ
 
 Humans don't always use this process tbd.
 
+### Software Libraries - Hidden Risks
 
-
-We're going to dig down into some of the risks associated with this, in order to build a model of what this decision making process should involve.  Luckily, other authors have already considered this problem.  
+Let's try to build a model of what this decision making process should involve.  Luckily, other authors have already considered the problem of choosing good software libraries, so let's start there.
 
 In the table below, I am summarizing three different sources, which give descriptions of which factors to look for when choosing open-source libraries.  
 
