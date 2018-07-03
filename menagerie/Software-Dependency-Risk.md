@@ -108,7 +108,7 @@ Consider [npmjs](http://npmjs.com), which is the most popular package manager fo
 
 In reality, using libraries allows us a "Kolmogorov tradeoff": our [Codebase Risk](Complexity-Risk) for other kinds of risk instead, as shown in this diagram.  
 
-![Software Libraries Risk Tradeoff](images/kite9/software-dependency-risk.png)
+![Software Libraries Risk Tradeoff](images/kite9/software-dependency-library.png)
 
 By choosing a particular software library, we are making a move on the [Risk Landscape] in the hope of moving to place with more favourable risks.  As the above diagram shows, typically, we want to reduce [Feature Risk] and [Schedule Risk].  But, it's quite possible that we could wind up in a worse state, by using a library that's out-of-date, riddled with bugs or badly supported.  It's _really easy_ to make bad decisions about which tools to use.  
 
