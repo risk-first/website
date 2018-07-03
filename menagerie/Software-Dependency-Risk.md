@@ -73,9 +73,11 @@ That is, the tool should be as simple to use and understand as possible.  This i
  - **The abstractions should leverage existing idioms and knowledge.** In a new car, I _expect_ to know what the symbols on the dashboard mean, because I've driven other cars.
  - **The abstractions provide me with only the functions I need.** Because everything else is confusing and gets in the way.  
 
+### Interfaces
+
 The interface of a system expands when you ask it to do a wide variety of things.   An easy-to-use drill does one thing well: it turns drill-bits at useful levels of torque for drilling holes and sinking screws.  But if you wanted it to also operate as a lathe, a sander or a strimmer (all basically mechanical things going round) you would have to sacrifice the ergonomic simplicity for a more complex interface, probably including adapters, extensions, handles and so on.
 
-So, we now have two types of complexity:
+So, we now have split the complexity 
  - The inner complexity of the tool (how it works internally, it's own [Kolmogorov Complexity](Complexity-Risk#Kolmogorov-Complexity)).
  - The complexity of the instructions that we need to write to make the tool work (the interface [Kolmogorov Complexity](Complexity-Risk#Kolmogorov-Complexity)). 
  
@@ -104,14 +106,19 @@ Using library code offers a [Schedule Risk](Schedule-Risk) and [Complexity Risk]
 
 Consider [npmjs](http://npmjs.com), which is the most popular package manager for the Javascript ecosystem.  It currently boasts of having over 650,000 different libraries, so although we're unlikely to find an `abcdRepeater` function this suggests that we can "win" against Kolmogorov complexity by using them.  But actually, this is really a problem with the metric itself.  
 
-In reality, using libraries allows us a "Kolmogorov tradeoff": our [Codebase Risk](Complexity-Risk) for other kinds of risk instead.
-tbd.  diagram of how this works out: feature risk being mitigated, but [Protocol Complexity Risk], [Fit Risk], [Dead End/Boundary Risk]
+In reality, using libraries allows us a "Kolmogorov tradeoff": our [Codebase Risk](Complexity-Risk) for other kinds of risk instead, as shown in this diagram.  
 
-Today, choosing software dependencies looks like a "bounded rationality"-type process:
+![Software Libraries Risk Tradeoff](images/kite9/software-dependency-risk.png)
+
+By choosing a particular software library, we are making a move on the [Risk Landscape] in the hope of moving to place with more favourable risks.  As the above diagram shows, typically, we want to reduce [Feature Risk] and [Schedule Risk].  But, it's quite possible that we could wind up in a worse state, by using a library that's out-of-date, riddled with bugs or badly supported.  It's _really easy_ to make bad decisions about which tools to use.  
+
+Currently, choosing software dependencies looks like a "bounded rationality"-type process:
 
 > "Bounded rationality is the idea that when individuals make decisions, their rationality is limited by the tractability of the decision problem, the cognitive limitations of their minds, and the time available to make the decision. " - [Bounded Rationality, _Wikipedia_](https://en.wikipedia.org/wiki/Bounded_rationality)
 
 Humans don't always use this process tbd.
+
+
 
 We're going to dig down into some of the risks associated with this, in order to build a model of what this decision making process should involve.  Luckily, other authors have already considered this problem.  
 
@@ -153,7 +160,7 @@ Some take-aways:
  
 One thing that none of the sources consider (at least from the outset) is the [Complexity Risk] of using a solution:    
  - Does it drag in lots of extra dependencies that seem unnecessary for the job in hand?  If so, you could end up in [Dependency Hell], with multiple, conflicting versions of libraries in the project.
- - Do you already have a dependency providing this functionality?  So many times, I've worked on projects that import a _new_ dependency when some existing (perhaps transitive) dependency has _already brought in the functionality_.
+ - Do you already have a dependency providing this functionality?  So many times, I've worked on projects that import a _new_ dependency when some existing (perhaps transitive) dependency has _already brought in the functionality_.  For example, there are plenty of libraries for JSON marshalling, but if I'm also using a web framework the chances are it already has a dependency on one already.
  - Does it contain lots of functionality that isn’t relevant to the task you want it to accomplish?  e.g. Using Java when a shell script would do (on a non-Java project)
  
 To give an extreme example of this, I once worked on an application which used [Hazlecast] to cache log-in session tokens for a 3rd party datasource.  But, the app is only used once every month, and session IDs can be obtained in milliseconds.   So... why cache them?  Although Hazlecast is an excellent choice for in-memory caching across multiple JVMs, it is a complex piece of software (after all, it does lots of stuff).  By doing this, you have introduced extra dependency risk, cache invalidation risks, networking risks, synchronisation risks and so on, for actually no benefit at all...  Unless, it’s about [CV building](Agency-Risk).  
@@ -196,7 +203,7 @@ Let's expand this view slightly and look at where different pieces of software s
 |--------------------------------	|-----------------------------------------------------------                                                           |--------------------------------------------------------	                                     |------------------------------------------------------------------------------	|
 | Free                           	| **OSS Libraries** <br /><ul><li>Tools</li><li>Java</li><li>Firefox</li>Linux</li><li>Programming Languages</li></ul> | **Freemium**<ul><li>Splunk</li><li>Spotify</li><li>GitHub</li></ul>                            	| *<ul><li>Low Boundary Risk Drives Adoption</li><li>Value In Network Effect</li></ul>*                         	|
 | Advertising Supported          	| **Commercial Software**<ul><li>Lots of phone apps</li><li>e.g. Angry Birds</li></ul>                              	| **Commercial SaaS** <ul><li>Google Search</li><li>Gmail</li><li>Twitter</li></ul>               	| *<ul><li>Low Boundary Risk</li><li>High Availability Of Substitutes</li></ul>*                            	|
-| Monthly / Metered Subscription 	| **Commercial Software**<ul><li>Oracle Databases</li><li>Windows</li><li>Office</li></ul>                         	| **Commercial SaaS** <ul><li>Office 365</li><li>SalesForce</li><li>Amazon Web Services</li></ul> 	| *<ul><li>Easy arguments for reduced Complexity Risk</li><li>Communication Risk</li><li>Coordination Risk</li></ul>* <br /> *Higher Boundary Risk*	|
+| Monthly / Metered Subscription 	| **Commercial Software**<ul><li>Oracle Databases</li><li>Windows</li><li>Office</li></ul>                         	| **Commercial SaaS** <ul><li>Office 365</li><li>SalesForce</li><li>Amazon Web Services</li></ul> 	| *Easy arguments for reduced: <ul><li>Complexity Risk</li><li>Communication Risk</li><li>Coordination Risk</li></ul>* <br /> *Higher Boundary Risk*	|
 |                                    |                                                                                                                      | *Transferred: <ul><li>Operational Risk</li></ul>*                                               |                                                                                 |
 - Where there is value in the **Network Effect**, it's often a sign that the software will be free, or open source:  programming languages and linux are the obvious examples of this.  Bugs are easier to find when there are lots of eyes looking, and learning the skill to use the software has less [Boundary Risk](Boundary-Risk) if you know you'll be able to use it at any point in the future.
 - At the other end of the spectrum, clients will happily pay for software if it clearly **reduces complexity**.  Take [Amazon Web Services].  The essential trade here is that you substitute the complexity of hosting and maintaining various pieces of software, in exchange for monthly payments ([Funding Risk](Schedule-Risk#Funding-Risk) for you).  Since AWS services are specific to Amazon, there is significant [Boundary Risk] in choosing this option.

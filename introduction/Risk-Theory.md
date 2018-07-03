@@ -190,7 +190,7 @@ Why do things like this happen?  Often, the people involved are under incredible
 - more pressure, heavier discounting
 pooh bear procrastination
 
-## Is This Scientific?
+## Science vs Craftsmanship
 
 **Risk-First** is an attempt to provide a practical framework, rather than a scientifically rigorous analysis.  In fact, my view is that you should _give up_ on trying to compute risk numerically.  You _can't_ work out how long a software project will take based purely on an analysis of (say) _function points_.  (Whatever you define them to be).
 
