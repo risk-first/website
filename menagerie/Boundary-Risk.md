@@ -84,7 +84,7 @@ Why does this happen?
 Each new version has a larger boundary than the one before, and this increases the API [Complexity Risk](Complexity-Risk) as there is more functionality to deal with.  But, on the plus side, this increased **Boundary Risk** is offset by the decrease in the [Complexity Risk] in programs depending on it:  all that extra functionality should mean you have less code to write, right?
 
 
-
+java is popular because it defeated boundary risk.  js does the same.
 
 
 

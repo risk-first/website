@@ -78,6 +78,8 @@ The interface of a system expands when you ask it to do a wide variety of things
 So, we now have two types of complexity:
  - The inner complexity of the tool (how it works internally, it's own [Kolmogorov Complexity](Complexity-Risk#Kolmogorov-Complexity)).
  - The complexity of the instructions that we need to write to make the tool work (the interface [Kolmogorov Complexity](Complexity-Risk#Kolmogorov-Complexity)). 
+ 
+tbd diagram of this 
   
 ## Types Of Software Dependencies
 
@@ -109,7 +111,11 @@ Today, choosing software dependencies looks like a "bounded rationality"-type pr
 
 > "Bounded rationality is the idea that when individuals make decisions, their rationality is limited by the tractability of the decision problem, the cognitive limitations of their minds, and the time available to make the decision. " - [Bounded Rationality, _Wikipedia_](https://en.wikipedia.org/wiki/Bounded_rationality)
 
-We're going to dig down into some of the risks associated with this, in order to build a model of what this decision making process should involve.  Luckily, other authros have already considered this problem.  In the table below, I am summarizing three different sources, which give descriptions of which factors to look for when choosing open-source libraries.  
+Humans don't always use this process tbd.
+
+We're going to dig down into some of the risks associated with this, in order to build a model of what this decision making process should involve.  Luckily, other authors have already considered this problem.  
+
+In the table below, I am summarizing three different sources, which give descriptions of which factors to look for when choosing open-source libraries.  
 
 | Concern                                                                                                                               | <img src="images/generated/coordination-risk.png" width="300"/> | <img src="images/generated/boundary-risk.png" width="300" /> | <img src="images/generated/feature-risk.png" width="300"/>    | <img src="images/generated/communication-risk.png" width="300" /> | Source       | 
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------:|:-------------:|:-------------------:|:------------------:|--------------| 
@@ -133,28 +139,30 @@ We're going to dig down into some of the risks associated with this, in order to
 | Has your community converged on using a particular software package?                                                                                                                                      | X                 |               |                     |                    | [sd1]        | 
 | **Totals**                                                                                                                                                                                                | **1**             | **9**         | **15**              | **8**              |              | 
 
-
-
 [sd1]: https://www.software.ac.uk/resources/guides/defending-your-code-against-dependency-problems
 [sd2]: https://stackoverflow.com/questions/2960371/how-to-choose-an-open-source-library
 [sd3]: https://www.forbes.com/sites/forbestechcouncil/2017/07/20/open-source-to-use-or-not-to-use-and-how-to-choose/2/#39e67e445a8c
 
- - [Feature Risk] is the biggest concern.   How can you be sure that the project will do what you want it to do ahead of schedule?  Will it contain bugs or missing features?  By looking at factors like _release frequency_ and _size of the community_ you get a good feel for this which is difficult to fake.
- - [Boundary Risk] is also very important.  You are going to have to _live_ with your choices for the duration of the project, so it's worth spending the effort to either ensure that you're not going to regret the decision, or that you can change direction later.
- - Third is [Communication Risk]:  how well does the project deal with it's users?  If a project is "famous", then it has communicated its usefulness to a wide, appreciative audience.
+Some take-aways:
+
+ - [Feature Risk](Feature-Risk) is the biggest concern.   How can you be sure that the project will do what you want it to do ahead of schedule?  Will it contain bugs or missing features?  By looking at factors like _release frequency_ and _size of the community_ you get a good feel for this which is difficult to fake.
+ - [Boundary Risk](Boundary-Risk) is also very important.  You are going to have to _live_ with your choices for the duration of the project, so it's worth spending the effort to either ensure that you're not going to regret the decision, or that you can change direction later.
+ - Third is [Communication Risk](Communication-Risk):  how well does the project deal with it's users?  If a project is "famous", then it has communicated its usefulness to a wide, appreciative audience.
+ 
+### Complexity Risk? 
  
 One thing that none of the sources consider (at least from the outset) is the [Complexity Risk] of using a solution:    
  - Does it drag in lots of extra dependencies that seem unnecessary for the job in hand?  If so, you could end up in [Dependency Hell], with multiple, conflicting versions of libraries in the project.
+ - Do you already have a dependency providing this functionality?  So many times, I've worked on projects that import a _new_ dependency when some existing (perhaps transitive) dependency has _already brought in the functionality_.
  - Does it contain lots of functionality that isn’t relevant to the task you want it to accomplish?  e.g. Using Java when a shell script would do (on a non-Java project)
  
-To give an extreme example of this, I once worked on an application which used [Hazlecast] to cache log-in session tokens for a 3rd party datasource.   But, the app is only used once every month, and session IDs can be obtained in milliseconds.   Why cache them?  By doing this, you have introduced extra dependency risk, cache invalidation risks, networking risks, synchronisation risks and so on, for actually no benefit at all.  Unless, it’s CV building.  
+To give an extreme example of this, I once worked on an application which used [Hazlecast] to cache log-in session tokens for a 3rd party datasource.  But, the app is only used once every month, and session IDs can be obtained in milliseconds.   So... why cache them?  Although Hazlecast is an excellent choice for in-memory caching across multiple JVMs, it is a complex piece of software (after all, it does lots of stuff).  By doing this, you have introduced extra dependency risk, cache invalidation risks, networking risks, synchronisation risks and so on, for actually no benefit at all...  Unless, it’s about [CV building](Agency-Risk).  
 
+Sometimes, the amount of complexity _goes up_ when you use a dependency for _good reason_.   For example, in Java, you can use JDBC to interface with various types of database.  [Spring] (a popular middleware suite) provides a thing called a [JDBCTemplate].  This actually makes your code _more_ complex, and can prove very difficult to debug.  However, it prevents injection attacks, handles resource disposal and makes use of prepared statements.  None of those are essential to interfacing with the database, but not using them is technical debt that can bite you later on.  
 
-Sometimes, the amount of code and complexity _goes up_:  Spring Templates example:  really hard to debug, more code.  But, better?  No chance of injection attacks.
+tbd.  dependency diagram, showing complexity, feature, schedule risk on the left, feature risk, boundary risk, communication risk on the right.
 
-
-- number of dependencies it has
-
+So, adopting any library is a trade-off:   tbd.
 
 ### Software as a Service (SaaS)
 
@@ -170,51 +178,71 @@ The trade-off of SaaS looks a lot like library code, except that the dependency 
 |Operational Risk    |Loss Of Data is your concern to manage.                     |Loss of data impacts you, but is a concern managed by the 3rd party|
 |                    |
 
-tbd.  diagram of how this works out: [feature risk], [communication risk] being mitigated, but [Protocol Complexity Risk], [Fit Risk], [Dead End/Boundary Risk], [Costs?], [Red Queen Risk].
-
-### A Matrix of Options
-
-These are not the only ways to provide a dependency, and there's clearly no one _right_ way.   Although here we have looked just at "Commercial Saas" and "Free Open Source", in reality, these are just points in a two-dimensional space involving _Pricing_ and _Hosting_.   Let's expand this view slightly and look at where different pieces of software sit on these axes:
-
-| Pricing                        	|                    On Premises 3rd Party                                                                         	| In Cloud / Browser 3rd Party                           	                                         | Risk Profile                                                                 	|
-|--------------------------------	|-----------------------------------------------------------                                                           |--------------------------------------------------------	                                     |------------------------------------------------------------------------------	|
-| Free                           	| **OSS Libraries** <br /><ul><li>Tools</li><li>Java</li><li>Firefox</li>Linux</li><li>Programming Languages</li></ul> | **Freemium**<ul><li>Splunk</li><li>Spotify</li><li>GitHub</li></ul>                            	| *<ul><li>Boundary Risk Drives Adoption</li><li>Value In Network Effect</li></ul>*                         	|
-| Advertising Supported          	| **Commercial Software**<ul><li>Lots of phone app</li><li>se.g. Angry Birds</li></ul>                              	| **Commercial SaaS** <ul><li>Google Search</li><li>Gmail</li><li>Twitter</li></ul>               	| *<ul><li>Low Boundary Risk</li><li>High Availability Of Substitutes</li></ul>*                            	|
-| Monthly / Metered Subscription 	| **Commercial Software**<ul><li>Oracle Databases</li><li>Windows</li><li>Office</li></ul>                         	| **Commercial SaaS** <ul><li>Office 365</li><li>SalesForce</li><li>Amazon Web Services</li></ul> 	| *<ul><li>Easy arguments for reduced Complexity Risk</li><li>Communication Risk</li><li>Coordination Risk</li></ul>* 	|
-
-    
-
-
-
-tbd.  include diagram
-
-
-
-
-## Commercial Dependencies (SaaS)
 
 I: https://www.zdnet.com/article/saas-checklist-nine-factors-to-consider-when-selecting-a-vendor/
 
 
 
+tbd.  diagram of how this works out: [feature risk], [communication risk] being mitigated, but [Protocol Complexity Risk], [Fit Risk], [Dead End/Boundary Risk], [Costs?], [Red Queen Risk].
+internal vs external risks.
+
+### A Matrix of Options
+
+These are not the only ways to provide a dependency, and there's clearly no one _right_ way.   Although here we have looked just at "Commercial Saas" and "Free Open Source", in reality, these are just points in a two-dimensional space involving _Pricing_ and _Hosting_.   
+
+Let's expand this view slightly and look at where different pieces of software sit on these axes:
+
+| Pricing                        	|                    On Premises 3rd Party                                                                         	| In Cloud / Browser 3rd Party                           	                                         | Risk Profile                                                                 	|
+|--------------------------------	|-----------------------------------------------------------                                                           |--------------------------------------------------------	                                     |------------------------------------------------------------------------------	|
+| Free                           	| **OSS Libraries** <br /><ul><li>Tools</li><li>Java</li><li>Firefox</li>Linux</li><li>Programming Languages</li></ul> | **Freemium**<ul><li>Splunk</li><li>Spotify</li><li>GitHub</li></ul>                            	| *<ul><li>Low Boundary Risk Drives Adoption</li><li>Value In Network Effect</li></ul>*                         	|
+| Advertising Supported          	| **Commercial Software**<ul><li>Lots of phone apps</li><li>e.g. Angry Birds</li></ul>                              	| **Commercial SaaS** <ul><li>Google Search</li><li>Gmail</li><li>Twitter</li></ul>               	| *<ul><li>Low Boundary Risk</li><li>High Availability Of Substitutes</li></ul>*                            	|
+| Monthly / Metered Subscription 	| **Commercial Software**<ul><li>Oracle Databases</li><li>Windows</li><li>Office</li></ul>                         	| **Commercial SaaS** <ul><li>Office 365</li><li>SalesForce</li><li>Amazon Web Services</li></ul> 	| *<ul><li>Easy arguments for reduced Complexity Risk</li><li>Communication Risk</li><li>Coordination Risk</li></ul>* <br /> *Higher Boundary Risk*	|
+|                                    |                                                                                                                      | *Transferred: <ul><li>Operational Risk</li></ul>*                                               |                                                                                 |
+- Where there is value in the **Network Effect**, it's often a sign that the software will be free, or open source:  programming languages and linux are the obvious examples of this.  Bugs are easier to find when there are lots of eyes looking, and learning the skill to use the software has less [Boundary Risk](Boundary-Risk) if you know you'll be able to use it at any point in the future.
+- At the other end of the spectrum, clients will happily pay for software if it clearly **reduces complexity**.  Take [Amazon Web Services].  The essential trade here is that you substitute the complexity of hosting and maintaining various pieces of software, in exchange for monthly payments ([Funding Risk](Schedule-Risk#Funding-Risk) for you).  Since AWS services are specific to Amazon, there is significant [Boundary Risk] in choosing this option.
+- In the middle there are lots of **substitute options** and therefore high competition.  Because of this, prices are pushed towards zero, adn and therefore often advertising is used to monetarize the product.  Angry Birds is a classic example:  initially, it had demo and paid versions, however Rovio discovered there was much more money to be made through advertising than from the [paid-for app].
+
+tbd.  include diagram
+
+Clearly, from this analysis, 
+
+Second, you can't always be sure that a dependency now will always have the same guarantees in the future: 
+- **Ownership changes** (e.g. [Oracle](http://oracle.com) buys [Sun](http://sun.com) who own [Java](https://en.wikipedia.org/wiki/Java_%28programming_language%29) for example)
+- **Licensing changes**.  (e.g. [Oracle](http://oracle.com) buys **Tangosol** who make [Coherence](https://en.wikipedia.org/wiki/Oracle_Coherence) for example)
+- Security updates not applied.
+- **Better alternatives become available**:  As a real example of this, I began a project in 2016 using [Apache Solr]().  However, in 2018, I would probably use [ElasticSearch](https://en.wikipedia.org/wiki/Elasticsearch).  In the past, I've built websites using [Drupal]() and then later converted them to use [Wordpress]().
 
 
-### Complexity Risk
 
-I don't know whether a library is actually going to reduce my [Codebase Risk](Complexity-Risk) or make it worse. 
 
-Although 
 
-These stem from  
- 
- - Jar hell:  are you bringing in more stuff than is helping you?   Are you really overall decreasing complexity on the project or making it worse?  [Versioning Risk](
- (testing jars vs runtime jars.  how integrated is the jar in question?  Is it everywhere, or is it behind an interface?
- 
- - Shipped size complexity - Spring.  Sometimes, you just end up with a ton of jars, even when they don't collide on version numbers. (Kolmogorov Complexity?)
 
- - Big O Complexity Again (Complexity-Risk)
 
- - Dependency Complexity.  Kitchen Sinks.
+![Dependency](images/dependency_depends.png)
+
+If a component **A** of our project _depends_ on **B** for some kind of processing, you might not be able to complete **A** before writing **B**.   This makes _scheduling_ the project harder, and if component **A** is a risky part of the project, then the chances are you'll want to mitigate risk there first.  There are a couple of ways to do this:
+
+- **Standards**:  If component **B** is a database, a queue, mail gateway or something else with a standard interface, then you're in luck.   Write **A** to those standards, and find a cheap, simple implementation to test with.  This gives you time to sort out exactly what implementation of **B** you're going for.  This is not a great long-term solution, because obviously, you're not using the _real_ dependency- you might get surprised when the behaviour of the real component is subtly different.  But it can reduce [Schedule Risk](Schedule-Risk) in the short-term.
+- **Coding To Interfaces**:  If standards aren't an option, but the surface area of **B** that **A** uses is quite small and obvious, you can write a small interface for it, and work behind that, using a [Mock](https://en.wikipedia.org/wiki/Mock_object) for **B** while you're waiting for finished component.  Write the interface to cover only what **A** _needs_, rather than everything that **B** _does_ in order to minimize the risk of [Leaky Abstractions](https://en.wikipedia.org/wiki/Leaky_abstraction).
+- **Do The Homework**:  Accept that **B** is going to bite you and try to make the decision now.  Pick the best 3rd-party component you can find (preferably on a trial basis), whilst being aware that you might get it wrong and need to change later.   Write [Tests](Testing) to alleviate [Communication Risk](Communication-Risk) now, and then to use to evaluate alternatives if need be.
+
+You can mitigate this somewhat by searching resources online like [StackOverflow]() to find other people using the dependency in the same way as you, or alternatively by  [Prototyping](Prototyping) hard in order to uncover as much of the [Hidden Risk](Risk) as possible.
+
+## Versioning
+
+
+
+## Dependencies Between Teams and Components
+
+We know from the section on [Communication Risk] that introducing new communication protocols and apis is a great way to keep a lid on complexity.  
+
+In the section on [Process Risk](Process-Risk) we're going to l
+
+
+
+
+
+
 
 
 ## VErsoining
@@ -226,20 +254,11 @@ Write as little code as possible.
 -- we don't use bounded rationality.
 
 
-how to choose libraries
-
--- the dependency you already have (e.g. spring)
-
-## Choosing Libraries
-
-- 3rd party contractors
-
 dependencies between teams
  
 dependencies between modules
 Dependency Mismatch
 
-interface complexity vs implementation complexity. (hazlecast example)
 
 
 What Do I want to say?  
@@ -247,7 +266,6 @@ What Do I want to say?
 Journey:  a journey of _ergonomics_:  trying to make things that will be maximally useful, but with minimum commuinicaton risk.
 
 
--
   - Payment, Licensing, extension.
   - The trade-off. ( Show as a diagram)
      - Types of risks
@@ -263,22 +281,6 @@ Journey:  a journey of _ergonomics_:  trying to make things that will be maximal
  
   
   
-
-![Dependency](images/dependency_depends.png)
-
-If a component **A** of our project _depends_ on **B** for some kind of processing, you might not be able to complete **A** before writing **B**.   This makes _scheduling_ the project harder, and if component **A** is a risky part of the project, then the chances are you'll want to mitigate risk there first.  There are a couple of ways to do this:
-
-- **Standards**:  If component **B** is a database, a queue, mail gateway or something else with a standard interface, then you're in luck.   Write **A** to those standards, and find a cheap, simple implementation to test with.  This gives you time to sort out exactly what implementation of **B** you're going for.  This is not a great long-term solution, because obviously, you're not using the _real_ dependency- you might get surprised when the behaviour of the real component is subtly different.  But it can reduce [Schedule Risk](Schedule-Risk) in the short-term.
-- **Coding To Interfaces**:  If standards aren't an option, but the surface area of **B** that **A** uses is quite small and obvious, you can write a small interface for it, and work behind that, using a [Mock](https://en.wikipedia.org/wiki/Mock_object) for **B** while you're waiting for finished component.  Write the interface to cover only what **A** _needs_, rather than everything that **B** _does_ in order to minimize the risk of [Leaky Abstractions](https://en.wikipedia.org/wiki/Leaky_abstraction).
-- **Do The Homework**:  Accept that **B** is going to bite you and try to make the decision now.  Pick the best 3rd-party component you can find (preferably on a trial basis), whilst being aware that you might get it wrong and need to change later.   Write [Tests](Testing) to alleviate [Communication Risk](Communication-Risk) now, and then to use to evaluate alternatives if need be.
-
-You can mitigate this somewhat by searching resources online like [StackOverflow]() to find other people using the dependency in the same way as you, or alternatively by  [Prototyping](Prototyping) hard in order to uncover as much of the [Hidden Risk](Risk) as possible.
-
-Second, you can't always be sure that a dependency now will always have the same guarantees in the future: 
-- **Ownership changes** (e.g. [Oracle](http://oracle.com) buys [Sun](http://sun.com) who own [Java](https://en.wikipedia.org/wiki/Java_%28programming_language%29) for example)
-- **Licensing changes**.  (e.g. [Oracle](http://oracle.com) buys **Tangosol** who make [Coherence](https://en.wikipedia.org/wiki/Oracle_Coherence) for example)
-- Security updates not applied.
-- **Better alternatives become available**:  As a real example of this, I began a project in 2016 using [Apache Solr]().  However, in 2018, I would probably use [ElasticSearch](https://en.wikipedia.org/wiki/Elasticsearch).  In the past, I've built websites using [Drupal]() and then later converted them to use [Wordpress]().
 
 Some predictors:
  
