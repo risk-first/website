@@ -33,14 +33,14 @@ It's tempting to think of our [Risk Landscape](Risk-Landscape) as being like a [
 
 However, there's a problem with this:  we don't have a cost function.  We can only guess at what risks there are.  For this reason, I prefer to think of the [Risk Landscape](Risk-Landscape) as a terrain which contains _fauna_ and _obstacles_ (or, specifically [Barriers](Barrier-Risk)).
 
-In this section, I am going to try and show you some of the fauna that live on the [Risk Landscape](Risk-Landscape).  We know every project is different, so every [Risk Landscape](Risk-Landscape) is also different.  But, just as I can tell you that the landscape outside your window will probably will have some roads, trees, fields, forests, buildings, and that the buildings are likely to be joined together by roads, I can tell you some general things about risks too.
+I am going to try and show you some of the fauna of the [Risk Landscape](Risk-Landscape).  We know every project is different, so every [Risk Landscape](Risk-Landscape) is also different.  But, just as I can tell you that the landscape outside your window will probably will have some roads, trees, fields, forests, buildings, and that the buildings are likely to be joined together by roads, I can tell you some general things about risks too.
 
 In fact, we're going to try and categorize the kinds of things we see on this [Risk Landscape](Risk-Landscape).  But, this isn't going to be perfect: 
  - One risk can "blend" into another just like sometimes a "field" is also a "car-park" or a building might contain some trees (but isn't a forest).   
  - There is _correlation_ between different risks:  one risk may cause another, or two risks may be due to the same underlying cause.  
  - As we saw in [Part 1](Home#Part-1-Introduction), mitigating one risk can give rise to another, so risks are often _inversely correlated_.
 
-## Why Should We Categorize The Risks
+## Why Should We Categorize The Risks?
 
 This is a "spotters' guide" to risks, not an in-depth encyclopedia.  
 
@@ -50,7 +50,7 @@ As software developers, we can't hope to know the detailed specifics of the whol
 
 ## We're all Naturalists Now
 
-This is a new venture.  There's a long way to go.  Just as naturalists are able to head out and find new species of insects and plants, we should expect to do the same.  This is by no means a complete picture - it's barely a sketch.   
+This is a new adventure.  There's a long way to go.  Just as naturalists are able to head out and find new species of insects and plants, we should expect to do the same.  This is by no means a complete picture - it's barely a sketch.   
 
 It's a big, crazy, evolving world of software.  Help to fill in the detiails.   Report back what you find.
 
