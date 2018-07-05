@@ -4,7 +4,7 @@ In this section, we're going to look specifically at _Software_ dependencies, al
 
 ## Kolmogorov Complexity: How To Win
 
-In the earlier section on [Complexity Risk](Complexity-Risk) we tackled [Kolmogorov Complexity], and the idea that your codebase had some kind of minimal level of complexity based on the output it was trying to create.  This is a neat idea, but in a way, we cheated.  Let's look at how.
+In the earlier section on [Complexity Risk](Complexity-Risk) we tackled [Kolmogorov Complexity](Complexity-Risk#Kolmogorov-Complexity), and the idea that your codebase had some kind of minimal level of complexity based on the output it was trying to create.  This is a neat idea, but in a way, we cheated.  Let's look at how.
 
 We were trying to figure out the shortest (Javascript) program to generate this output:
 
@@ -102,17 +102,17 @@ Diagram:  Feature risk being mitigated , but complexity Risk, schedule risk
 
 ## Software Libraries
 
-Using library code offers a [Schedule Risk](Schedule-Risk) and [Complexity Risk]() [Silver Bullet]()  
+Using library code offers a [Schedule Risk](Schedule-Risk) and [Complexity Risk](Complexity-Risk) [Silver Bullet](Silver-Bullets)  
 
 Consider [npmjs](http://npmjs.com), which is the most popular package manager for the Javascript ecosystem.  It currently boasts of having over 650,000 different libraries, so although we're unlikely to find an `abcdRepeater` function this suggests that we can "win" against Kolmogorov complexity by using them.  But actually, this is really a problem with the metric itself.  
 
-In reality, using libraries allows us a "Kolmogorov tradeoff": our [Codebase Risk](Complexity-Risk) for other kinds of risk instead, as shown in this diagram.  
+In reality, using libraries allows us a "Kolmogorov tradeoff": our [Codebase Risk](Complexity-Risk#Codebase-Risk) for other kinds of risk instead, as shown in this diagram.  
 
 ![Software Libraries Risk Tradeoff](images/kite9/software-dependency-library.png)
 
 By choosing a particular software library, we are making a move on the [Risk Landscape]() in the hope of moving to place with more favourable risks.  As the above diagram shows, typically, we want to reduce [Feature Risk]() and [Schedule Risk].  In return we expect to pick up:
-- [Communication Risk]: because we now have to learn how to communicate with this new dependency.
-- [Boundary Risk]() - because now are limited to using the functionality provided by this dependency.  We have chosen it over alternatives and changing to something else would be more work and therefore costly.   
+- [Communication Risk](Communication-Risk): because we now have to learn how to communicate with this new dependency.
+- [Boundary Risk](Boundary-Risk) - because now are limited to using the functionality provided by this dependency.  We have chosen it over alternatives and changing to something else would be more work and therefore costly.   
 
 But, it's quite possible that we could wind up in a worse state, by using a library that's out-of-date, riddled with bugs or badly supported.  i.e. Full of new, hidden [Feature Risk].  
 
