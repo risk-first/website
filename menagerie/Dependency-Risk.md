@@ -143,7 +143,7 @@ Let's apply this to our Bus scenario:
  - How do I choose between buses, taxis, cars etc.
  - How do I understand the timetable, and apply it to my problem?
  
-Finding out about bus schedules is easy.  But in a large company, [Communication Risk]() and especially [Invisibility Risk]() are huge problems:  this tends to get called "Silo Thinking", that is, ignoring what else is going on in other parts of the company or "not invented here" syndrome.   These are all varieties of communication risk.   
+Finding out about bus schedules is easy.  But in a large company, [Communication Risk](Communication-Risk) and especially [Invisibility Risk]() are huge problems.  This tends to get called "[Silo Mentality](https://en.wikipedia.org/wiki/Information_silo#Silo_mentality)", that is, ignoring what else is going on in other parts of the company or "not invented here" syndrome.   These are all varieties of [Communication Risk](Communication-Risk).
 
 Ironically, _more communication_ might not be the answer - if channels are provided where 
 
