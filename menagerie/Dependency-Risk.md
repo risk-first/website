@@ -50,7 +50,7 @@ In the first example, you can't _start_ something until a particular event happe
 
 ### Events Mitigate Risk...
 
-Having an event occur in a fixed time and place is _mitigating risk_:
+Having an event occur in a fixed time and place is [mitigating risk](Glossary#Mitigated-Risk):
 
 - By taking the bus, we are mitigating our own [Schedule Risk](Schedule-Risk):  we're (hopefully) reducing the amount of time we're going to spend on the activity of getting to work.  
 - A bus needn't necessarily _have_ a fixed timetable: it could wait for each passenger until they turned up, and then go.  (A bit like ride-sharing works).  This would be a total disaster from a [Coordination Risk](Coordination-Risk) perspective, as one person could cause everyone else to be really really late.  Events are a mitigation for [Coordination Risk](Coordination-Risk).   Having a fixed time for doing something mitigates [Coordination Risk](Coordination-Risk) by turning it into [Schedule Risk](Schedule-Risk).  Agreeing a date for a product launch, for example, allows lots of teams to coordinate their activities.
