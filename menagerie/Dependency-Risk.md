@@ -122,9 +122,10 @@ You could also call this _availability risk_ or _capacity risk_ of the resource.
  - **Pools**: Reserving parts of a resource for particular customers. 
  - **Horizontal Scaling**: allowing a scarce resource to flexibly scale according to how much demand there is.   (For example, putting on extra buses when the trains are on strike, or opening extra check-outs at the supermarket.)
  
-Much like [Reliability Risk](#reliability-risk), there is science for it.  [Queue Theory](https://en.wikipedia.org/wiki/Queueing_theory) is all about building mathematical models of buffers, queues, pools and so forth.  [Logistics](https://en.wikipedia.org/wiki/Logistics) is the practical organisation of the flows of materials and goods around things like [Supply Chains](https://en.wikipedia.org/wiki/Supply_chain).  
-
-And [Project Management](https://en.wikipedia.org/wiki/Project_management) is in large part about ensuring the right resources are avaiable at the right times.  We'll be taking a closer look at that in the Part 3 sections on [Prioritisation](Prioritisation) and the [Project Managment Body Of Knowledge](PMBoK).
+Much like [Reliability Risk](#reliability-risk), there is science for it:
+ - [Queue Theory](https://en.wikipedia.org/wiki/Queueing_theory) is all about building mathematical models of buffers, queues, pools and so forth.  
+ - [Logistics](https://en.wikipedia.org/wiki/Logistics) is the practical organisation of the flows of materials and goods around things like [Supply Chains](https://en.wikipedia.org/wiki/Supply_chain).  
+ - And [Project Management](https://en.wikipedia.org/wiki/Project_management) is in large part about ensuring the right resources are avaiable at the right times.  We'll be taking a closer look at that in the Part 3 sections on [Prioritisation](Prioritisation) and the [Project Managment Body Of Knowledge](PMBoK).
 
 ## Communication Risk
 
