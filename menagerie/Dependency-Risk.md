@@ -95,22 +95,15 @@ The amount of slack you build into the schedule is likely dependent on the level
 [Deadline Risk](Schedule-Risk#Deadline-Risk) is really a kind of reliability issue: if you can understand which parties are unreliable, you have a much better handle on your [Deadline Risk](Schedule-Risk#Deadline-Risk). 
 
 Luckily, there is quite a lot of existing science around reliability.  For example:  
- - If a component **A** depends on component **B**, unless there is some extra redundancy around **B**, then **A** _can't be more reliable than **B**. 
- - A [Single Point Of Failure]() in a system 
+ - If a component **A** depends on component **B**, unless there is some extra redundancy around **B**, then **A** _can't_ be more reliable than **B**. 
+ - A [Single Point Of Failure](https://en.wikipedia.org/wiki/Single_point_of_failure) in a system 
  - Are there bugs in **B** that are going to prevent it working correctly in all circumstances?
 
-Reliability of an overall system is constrained by the reliability.  How does re
+There is a whole science around [Reliability Engineering](https://en.wikipedia.org/wiki/Reliability_engineering).   For example, [Failure mode and effects analysis (FEMA)](https://en.wikipedia.org/wiki/Failure_mode_and_effects_analysis):
 
-Is it a known unknown?  You know you might be going the wrong way.
+> "...was one of the first highly structured, systematic techniques for failure analysis. It was developed by reliability engineers in the late 1950s to study problems that might arise from malfunctions of military systems. " - [FEMA, _Wikipedia](https://en.wikipedia.org/wiki/Failure_mode_and_effects_analysis)
 
-(This might sound unlikely, but I've made several career decisions off the back of this)
-
-Dependency and reliability
-Pinto
-https://en.wikipedia.org/wiki/Reliability_engineering
-FECMA FEMA https://en.wikipedia.org/wiki/Failure_mode_and_effects_analysis
-Diagram of a distributed software system - where can failures hide?
-SPOFs.
+This was applied on NASA missions, and then more recently in the 1970's to car design following the [Ford Pinto exploding car](https://en.wikipedia.org/wiki/Ford_Pinto#Design_flaws_and_ensuing_lawsuits) affair.
 
 ## Scarcity Risk
 
