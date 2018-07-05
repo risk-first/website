@@ -1,17 +1,17 @@
 ![Draft](images/state/draft.png)
 
-**Dependency Risk** is the risk you take on whenever you have a dependency on something (or someone) else.   One simple example could be that the software service you write might depend on a server to run on.  If the server goes down, the service goes down too.  In turn, the server depends on electricity from a supplier, as well as a network connection from a provider.  If either of these dependencies aren't met, the service is out of commission.
+[Dependency Risk](Dependency-Risk) is the risk you take on whenever you have a dependency on something (or someone) else.   One simple example could be that the software service you write might depend on a server to run on.  If the server goes down, the service goes down too.  In turn, the server depends on electricity from a supplier, as well as a network connection from a provider.  If either of these dependencies aren't met, the service is out of commission.
 
 Dependencies can be on _events_, _people_, _teams_, _processes_, _software_, _services_, _money_: pretty much _any resource_.  Dependencies add risk to any project because the reliability of the project itself is now a function involving the reliability of the dependency.  
 
 In order to avoid repetition, and also to break down this large topic, we're going to look at this over 6 sections:   
  - In this first section will look at dependencies _in general_, and specifically on _events_, and some of the variations on [Dependency Risk](Dependency-Risk).
+ - Next, we'll look at [Schedule Risk](Schedule-Risk), because time and money are key dependencies in any project.
  - Then, we'll move on to look specifically at [Software Dependency Risk](Software-Dependency-Risk), covering using libraries, software services and building on top of the work of others.
- - Then, we'll take a look at [Process Risk](Process-Risk), which is still [Dependency Risk](Dependency-Risk), but we'll be considering more organisational factors and how bureaucracy comes into the picture.  
- - Then, we'll look at some of the specific problems around working with other people or businesses in [Agency Risk](Agency Risk).
- - Finally, we'll wrap up this analysis with a closer look at [Boundary Risk](Boundary-Risk) and [Dead-End Risk].
- - A short wrap-up tbd.
- 
+ - Next, we'll take a closer look at [Boundary Risk](Boundary-Risk) and [Dead-End Risk](Boundary-Risk#dead-end-risk).  These are the risks you face in choosing the wrong things to depend on.  
+ - After, we'll take a look at [Process Risk](Process-Risk), which is still [Dependency Risk](Dependency-Risk), but we'll be considering more organisational factors and how bureaucracy comes into the picture.  
+ - Finally, we'll wrap up this analysis with a look at some of the specific problems around working with other people or businesses in [Agency Risk](Agency Risk).
+  
 ## Why Have Dependencies?
 
 Luckily for us, the things we depend on in life are, for the most part, abundant:  water to drink, air to breathe, light, heat and most of the time, food for energy.  This isn't even lucky though: life has adapted to build dependencies on things that it can _rely_ on.  Although life exists at the bottom of the ocean around thermal vents (tbd), it is a very different kind of life to us, and has a different set of dependencies given it's circumstances. 
