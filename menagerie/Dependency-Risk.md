@@ -14,7 +14,11 @@ In order to avoid repetition, and also to break down this large topic, we're goi
   
 ## Why Have Dependencies?
 
-Luckily for us, the things we depend on in life are, for the most part, abundant:  water to drink, air to breathe, light, heat and most of the time, food for energy.  This isn't even lucky though: life has adapted to build dependencies on things that it can _rely_ on.  Although life exists at the bottom of the ocean around thermal vents (tbd), it is a very different kind of life to us, and has a different set of dependencies given it's circumstances. 
+Luckily for us, the things we depend on in life are, for the most part, abundant:  water to drink, air to breathe, light, heat and most of the time, food for energy.  
+
+This isn't even lucky though: life has adapted to build dependencies on things that it can _rely_ on.  
+
+Although life exists at the bottom of the ocean around [hydrothermal vents](https://en.wikipedia.org/wiki/Hydrothermal_vent), it is a very different kind of life to us, and has a different set of dependencies given it's circumstances. 
 
 This tells us a lot about dependency risk right here:
  - On the one hand, depending on something else is very often helpful, and quite often essential.  (For example, all animals that _move_ seem to depend on oxygen).
@@ -22,7 +26,15 @@ This tells us a lot about dependency risk right here:
  - Successful organisms _adapt_ to the dependencies available to them (like the thermal vent creatures).
  - There is likely to be _competition_ for a dependency when it is scarce (think of droughts and famine).
 
-So, dependencies are a trade-off.  They give with one hand and take with the other.  Our modern lives are full of dependency (just think of the chains of dependency needed for putting a packet of biscuits on a supermarket shelf, for example), but we accept this extra complexity because it allows tbd.
+So, dependencies are a trade-off.  They give with one hand and take with the other.  Our modern lives are full of dependency (just think of the chains of dependency needed for putting a packet of biscuits on a supermarket shelf, for example), but we accept this extra complexity because it makes life _easier_.  
+
+## Simple Made Easy
+
+In Rich Hickey's talk, [Simple Made Easy](https://www.infoq.com/presentations/Simple-Made-Easy) he discusses the difference between _simple_ software systems and _easy_ ones, heavily stressing the virtues of simple over easy.  It's an incredible talk and well worth watching.  
+
+But.  Living systems are not simple.  And, they evolved to this level of complexity through because life was _easier_ that way.  Depending on things makes _your job easier_.  It's just [division of labour](https://en.wikipedia.org/wiki/Division_of_labour) and dependency hiearchies, as we saw in [Hierarchies and Modularization](Complexity-Risk#Hierarchies-and-Modularization).
+
+Our economic system and our software systems exhibit the same tendency-towards-complexity.
 
 ## Event Dependencies
 
