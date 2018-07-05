@@ -1,21 +1,21 @@
 ![For Review](images/state/for-review.png)
 
-**Coordination Risk** is the risk that, a group of people (or processes), maybe with a similar [Goal In Mind]() they can fail to coordinate on a way to meet this goal and end up making things worse.  **Coordination Risk** is embodied in the phrase "Too Many Cooks Spoil The Broth":  more people, opinions or agents often make results worse.
+[Coordination Risk](Coordination-Risk) is the risk that, a group of people (or processes), maybe with a similar [Goal In Mind](Goal-In-Mind) they can fail to coordinate on a way to meet this goal and end up making things worse.  [Coordination Risk](Coordination-Risk) is embodied in the phrase "Too Many Cooks Spoil The Broth":  more people, opinions or agents often make results worse.
 
-In this section and beyond, we're going to use the term **Agent**, which refers to anything with _agency_ in a system to decide it's own fate.  That is, an [Agent]() has an [Internal Model], and can [take actions]() based on it.  In this section, we're going to consider Agents at several different levels (because of [Scale Invariance]).  We'll look at:
+In this section and beyond, we're going to use the term **Agent**, which refers to anything with _agency_ in a system to decide it's own fate.  That is, an [Agent]() has an [Internal Model](),  and can [take actions]() based on it.  In this section, we're going to consider Agents at several different levels (because of [Scale Invariance]()) .  We'll look at:
  - People
  - Teams
  - Organisations
  - Processes (in software)
  - and Organisms
  
-... and we'll consider how [Coordination Risk]() is a problem at each scale.
+... and we'll consider how [Coordination Risk](Coordination-Risk) is a problem at each scale.
 
-In this section, we're going to work on the assumption that the Agents can agree on a common [Goal](), but in reality it's not always the case, and we'll analyse that more in the section on [Agency Risk](Agency-Risk) later.
+In this section, we're going to work on the assumption that the Agents can agree on a common [Goal](Gaol-In-Mind), but in reality it's not always the case, and we'll analyse that more in the section on [Agency Risk](Agency-Risk) later.
 
-Also, in the section on [Map And Territory Risk](), we'll look at how, even when [Coordination]() issues are solved, we can end up with less-than-optimal results.  
+Also, in the section on [Map And Territory Risk](Map-And-Territory-Risk), we'll look at how, even when [Coordination](Coordination-Risk) issues are solved, we can end up with less-than-optimal results.  
 
-But for now, let's crack on and examine where [Coordination Risk]() comes from.
+But for now, let's crack on and examine where [Coordination Risk](Coordination-Risk) comes from.
 
 ## Problems Of Coordination
 
@@ -62,7 +62,7 @@ Just two things are needed for competition to occur:
 
 The only way that the Agents can move away from competition towards coordination is via [Communication](), and this is where their problems begin.  
 
-You might think, therefore, that this is just another type of [Communication Risk](Communication-Risk) problem, and that's often a part of it, but even with synchronized [Internal Models](Internal-Model), coordination risk can occur.  Imagine the example of people all trying to madly leave a burning building.  They all have the same information (the building is on fire).  If they coordinate, and leave in an orderly fashion, they might all get out.  If they don't, and there's a scramble for the door, more people might die.
+You might think, therefore, that this is just another type of [Communication Risk](Communication-Risk) problem, and that's often a part of it, but even with synchronized [Internal Models](Glossary#Internal-Model), coordination risk can occur.  Imagine the example of people all trying to madly leave a burning building.  They all have the same information (the building is on fire).  If they coordinate, and leave in an orderly fashion, they might all get out.  If they don't, and there's a scramble for the door, more people might die.
 
 But commonly, [Coordination Risk]() occurs where people have different ideas about how to achieve a [goal](), and they have different ideas because they have different evaluations of the [Attendant Risk](Risk).  As we saw in the section on [Communication Risk](Communication-Risk), we can only hope to synchronize [Internal Models]() if there are high-bandwidth [Channels]() available for communication. 
 
@@ -92,7 +92,7 @@ In their original formulation, Vroom and Yetton introduced five different ways o
 
 At the top, you have the _least_ consultative styles, and at the bottom, the _most_.   At the top, decisions are made with just the leader's [Internal Model]() but moving down, the [Internal Models]() of the rest of the team are increasingly brought into play.  
 
-The decisions at the top are faster, but don't do much for mitigating **Coordination Risk**.  The ones below take longer, (incurring [Schedule Risk](Schedule-Risk)) but mitigate more **Coordination Risk**.   Group decision-making inevitably involves everyone _learning_, and improving their [Internal Models].  
+The decisions at the top are faster, but don't do much for mitigating **Coordination Risk**.  The ones below take longer, (incurring [Schedule Risk](Schedule-Risk)) but mitigate more **Coordination Risk**.   Group decision-making inevitably involves everyone _learning_, and improving their [Internal Models]().   
 
 The trick is to be able to tell which approach is suitable at which time.   Everyone is expected to make decisions _within their realm of expertise_: you can't have developers continually calling meetings to discuss whether they should be using an [Abstract Factory]() or a [Factory Method](), this would waste time.  The critical question is therefore, "what's the biggest risk?"
  - Is the **Coordination Risk** greater?   Are we going to suffer [Dead End Risk](Complexity-Risk) if the decision is made wrongly?  What if people don't agree with it?  Poor leadership has an impact on [Morale](Agency-Risk) too.  
@@ -139,7 +139,7 @@ tbd diagram of this.
 
 Staff in a team are both **Agents** and **Resources** at the same time.  The team [depends]() on them for their resource of _labour)_, but they're also part of the decision making process of the team, because they have [agency]() over their own actions.  
 
-If **Coordination Risk** is about trying to mitigate differences in [Internal Models](Internal-Model), then it's worth considering how varied people's models can be:
+If **Coordination Risk** is about trying to mitigate differences in [Internal Models](Glossary#Internal-Model), then it's worth considering how varied people's models can be:
  - Different skill levels
  - Different experiences
  - Expertise in different areas

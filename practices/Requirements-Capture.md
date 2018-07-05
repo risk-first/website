@@ -15,11 +15,11 @@
 
 ## How It Works
 
-Whatever exact methodology you are using, the aim is to meet **stakeholders** and try to capture their [Internal Models](Internal-Model) in written form.  This has a few effects:
+Whatever exact methodology you are using, the aim is to meet **stakeholders** and try to capture their [Internal Models](Glossary#Internal-Model) in written form.  This has a few effects:
 
-- The [Internal Models](Internal-Model) of the development team can be enriched with this new information.
+- The [Internal Models](Glossary#Internal-Model) of the development team can be enriched with this new information.
 - You are capturing at a moment-in-time what people _thought_.  
--  As with any [Documentation](Documentation), you can to some extent reconcile the [Internal Models](Internal-Model) of a wide variety of stakeholders and implementers.
+-  As with any [Documentation](Documentation), you can to some extent reconcile the [Internal Models](Glossary#Internal-Model) of a wide variety of stakeholders and implementers.
 
 
 

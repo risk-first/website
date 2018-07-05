@@ -65,7 +65,7 @@ But outside, the form is simple, and designed for humans to use.   This is _[erg
 
 In the same way as with a hand-tool, the bulk of the complexity of a software tool is hidden behind it's interface.  But, the more complex the _purpose_ of the tool, the more complex the interface will be.
 
-Software is not constrained by _physical_ ergonomics in the same way as a tool is.  But ideally, it should have conceptual ergonomics:  ideally, complexity is hidden away from the user behind the API (Application Programming Interface).  This is the familiar concept of [Abstraction]() we've already looked at.   
+Software is not constrained by _physical_ ergonomics in the same way as a tool is.  But ideally, it should have conceptual ergonomics:  ideally, complexity is hidden away from the user behind the API (Application Programming Interface).  This is the familiar concept of [Abstraction](Abstraction) we've already looked at.   
 
 That is, the tool should be as simple to use and understand as possible.  This is the [Principal Of Least Astonishment](https://en.wikipedia.org/wiki/Principle_of_least_astonishment):
 
@@ -177,6 +177,10 @@ tbd.  dependency diagram, showing complexity, feature, schedule risk on the left
 
 So, adopting any library is a trade-off:   tbd.
 
+### Coordination Risk
+
+
+
 ### Software as a Service (SaaS)
 
 Businesses opt for SaaS because it vastly reduces the [Complexity Risk]() they face in their organisations.  Instead of having to pay for in-house software administrators, they can leave this function to the experts.
@@ -239,7 +243,7 @@ If a component **A** of our project _depends_ on **B** for some kind of processi
 - **Coding To Interfaces**:  If standards aren't an option, but the surface area of **B** that **A** uses is quite small and obvious, you can write a small interface for it, and work behind that, using a [Mock](https://en.wikipedia.org/wiki/Mock_object) for **B** while you're waiting for finished component.  Write the interface to cover only what **A** _needs_, rather than everything that **B** _does_ in order to minimize the risk of [Leaky Abstractions](https://en.wikipedia.org/wiki/Leaky_abstraction).
 - **Do The Homework**:  Accept that **B** is going to bite you and try to make the decision now.  Pick the best 3rd-party component you can find (preferably on a trial basis), whilst being aware that you might get it wrong and need to change later.   Write [Tests](Testing) to alleviate [Communication Risk](Communication-Risk) now, and then to use to evaluate alternatives if need be.
 
-You can mitigate this somewhat by searching resources online like [StackOverflow]() to find other people using the dependency in the same way as you, or alternatively by  [Prototyping](Prototyping) hard in order to uncover as much of the [Hidden Risk](Risk) as possible.
+You can mitigate this somewhat by searching resources online like [StackOverflow]() to find other people using the dependency in the same way as you, or alternatively by  [Prototyping](Prototyping) hard in order to uncover as much of the [Hidden Risk](Glossary#Hidden-Risk) as possible.
 
 ## Versioning
 

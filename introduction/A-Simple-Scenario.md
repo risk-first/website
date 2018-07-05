@@ -36,11 +36,11 @@ There are also hidden [Attendant Risks](Risk#attendant-risk) that you might not 
 
 Different people will evaluate the risks differently.  (That is, worry about them more or less.)  They'll also _know_ about different risks.  They might have cooked the recipe before, or organised lots more dinner parties than you.   
 
-How we evaluate the risks, and which ones we know about depends on our **knowledge** and **experience**, then.  And that varies from person to person (or team to team).  Lets call this our [Internal Model](Internal-Model), and it's something we build on and improve with experience (of organising dinner parties, amongst everything else).
+How we evaluate the risks, and which ones we know about depends on our **knowledge** and **experience**, then.  And that varies from person to person (or team to team).  Lets call this our [Internal Model](Glossary#Internal-Model), and it's something we build on and improve with experience (of organising dinner parties, amongst everything else).
 
 ### Model Meets Reality
 
-As the dinner party gets closer, we make our preparations, and the inadequacies of the [Internal Model](Internal-Model) become apparent, and we learn what we didn't know.  The [Hidden Risks](Risk#attendant-risk) reveal themselves; things we were worried about may not materialise, things we thought would be minor risks turn out to be greater.   
+As the dinner party gets closer, we make our preparations, and the inadequacies of the [Internal Model](Glossary#Internal-Model) become apparent, and we learn what we didn't know.  The [Hidden Risks](Glossary#hidden-risk) reveal themselves; things we were worried about may not materialise, things we thought would be minor risks turn out to be greater.   
 
 Our model is forced into contact with reality, and the model changes.  
 

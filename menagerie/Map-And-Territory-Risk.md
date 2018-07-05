@@ -1,6 +1,6 @@
 ![Under Construction](images/state/uc.png)
 
-As we discussed in the section on [Abstraction Risk](Communication Risk), our understanding of the world is entirely informed by the names we give things and the abstractions we create.  
+As we discussed in the section on [Abstraction Risk](Communication-Risk), our understanding of the world is entirely informed by the names we give things and the abstractions we create.  
 
 **Map And Territory Risk** is the recognition that there is a danger that we come to believe the abstractions are more real than reality itself.  It comes from the expression "Confusing the Map for the Territory".  That is believing the abstraction is reality, instead of reality itself.
 
@@ -32,7 +32,7 @@ But _correlation_ doesn't imply _causation_.  The cause might be different:
  - user satisfaction and SLOC might both be down to the calibre of the developers.
  - response time and revenue might both be down to clever team planning.
  
-When you have easy go-to metrics based on accidental or incidental correlations, [Hidden Risk]() mounts up.  By relying on the metrics, you're not really _seeing_ the reality.  The devil is in the detail. 
+When you have easy go-to metrics based on accidental or incidental correlations, [Hidden Risk](Glossary#hidden-risk) mounts up.  By relying on the metrics, you're not really _seeing_ the reality.  The devil is in the detail. 
 
 ## Drinking The Kool-Aid
 
@@ -100,7 +100,7 @@ Bullshit jobs
 
 ## Biases
 
-It's tempting to think that [Map And Territory Risk]() is something that happens to someone else, and that you are going to be immune to it.  
+It's tempting to think that [Map And Territory Risk](Map-And-Territory-Risk) is something that happens to someone else, and that you are going to be immune to it.  
 
 
 Unfortunately, science is here to prove you wrong - our brains are _filled_ with biases which 

@@ -88,7 +88,7 @@ Perhaps it's a little unfair to draw out one human characteristic for attention.
 
 ## On The Take?
 
-
+tbd
 
 tbd chapter link
 

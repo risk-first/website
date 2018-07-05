@@ -67,9 +67,9 @@ and rapid response to issues.
 
 ## Meeting Reality
 
-So in this second model, we are now considering that the world is a dangerous, untrustworthy place where _bad things happen_, either deliberately or accidentally.  And, since we don't have a perfect understanding of the world, most of the [Production Risk]() we face is [Hidden Risks](Risk).  
+So in this second model, we are now considering that the world is a dangerous, untrustworthy place where _bad things happen_, either deliberately or accidentally.  And, since we don't have a perfect understanding of the world, most of the [Production Risk]() we face is [Hidden Risks](Glossary#hidden-risk).  
 
-Putting software into production is [Meeting Reality](Meeting-Reality) in the fullest way possible.  The more contact we can give our system with the outside world, the more [Hidden Risks]() will materialize.  If we observe these and take action to mitigate them, then our system can get stronger.   cybernetics, antifragile tbd.
+Putting software into production is [Meeting Reality](Meeting-Reality) in the fullest way possible.  The more contact we can give our system with the outside world, the more [Hidden Risks](Glossary#hidden-risk) will materialize.  If we observe these and take action to mitigate them, then our system can get stronger.   cybernetics, antifragile tbd.
 
 It is tempting to delay [Meeting Reality](Meeting-Reality) as long as possible, to "get your house in order".  There is a tension between "you only get one chance to make a first impression" and "gilding the lilly" (perfectionism).  In the past I've seen this stated as:
 
@@ -171,6 +171,8 @@ reputational damage
 
 ## Reaction & Recovery
 
+## Reliability Risk
+
     - Feedback Loops
        - Bug reports, feedback
        - Quality of feedback
@@ -201,6 +203,7 @@ reputational damage
 
 There is a lot more to Operational Risk.  Here, we've touched on it, and sketched the edges of it enough for it to be familiar and fit in our framework.
 
+## Reputational Risk
 
 ## High-Profile Cases
 

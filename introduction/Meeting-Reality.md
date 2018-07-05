@@ -1,10 +1,10 @@
 ![For Review](images/state/for-review.png)
 
-In this section, we will look at how exposing your [Internal Model](Internal-Model) to reality is in itself a good risk management technique.
+In this section, we will look at how exposing your [Internal Model](Glossary#Internal-Model) to reality is in itself a good risk management technique.
 
 ## Revisiting the Model
 
-In [A Simple Scenario](A-Simple-Scenario), we looked at a basic model for how **Reality** and our [Internal Model](Internal-Model) interacted with each other:  we take action based on out [Internal Model](Internal-Model), hoping to **change Reality** with some positive outcome.
+In [A Simple Scenario](A-Simple-Scenario), we looked at a basic model for how **Reality** and our [Internal Model](Glossary#Internal-Model) interacted with each other:  we take action based on out [Internal Model](Glossary#Internal-Model), hoping to **change Reality** with some positive outcome.
 
 And, in [Development Process](Development-Process) we looked at how we can meet with reality in _different forms_:  Analysis, Testing, Integration and so on, and saw how the model could work in each stage of a project.
 
@@ -12,8 +12,8 @@ Finally, in [Software Project Scenario](Software-Project-Scenario) we looked at 
 
 So, it should be no surprise to see that there is a _recursive_ nature about this:  
 
-1.  The **actions we take** each day have consequences:  they **expose new [Hidden Risks](Risk#attendant-risk)**, which inform our [Internal Model](Internal-Model), and at the same time, they change reality in some way (otherwise, what would be the point of doing them?)
-2.  The actions we take towards achieving a [Goal In Mind](Goal-In-Mind) each have their _own_ [Goal In Mind](Goal-In-Mind).  And because of this, when we take action, we have to consider and evaluate the [Hidden Risks](Risk#attendant-risk) exposed by that action.   That is, there are many ways to achieving a goal, and these different ways expose different [Hidden Risks](Risk#attendant-risk).
+1.  The **actions we take** each day have consequences:  they **expose new [Hidden Risks](Glossary#hidden-risk)**, which inform our [Internal Model](Glossary#Internal-Model), and at the same time, they change reality in some way (otherwise, what would be the point of doing them?)
+2.  The actions we take towards achieving a [Goal In Mind](Goal-In-Mind) each have their _own_ [Goal In Mind](Goal-In-Mind).  And because of this, when we take action, we have to consider and evaluate the [Hidden Risks](Glossary#hidden-risk) exposed by that action.   That is, there are many ways to achieving a goal, and these different ways expose different [Hidden Risks](Glossary#hidden-risk).
 
 So, let's see how this kind of recursion looks on our model. Note that here, I am showing _just one possible action_, in reality, you'll have choices.
 
@@ -31,7 +31,7 @@ I would argue that the best way is the one which accrues the _least risk_ to get
 
 Ideally, when you take an action, you are trading off a big risk for a smaller one.  Take Unit Testing for example.  Clearly, writing Unit Tests adds to the amount of development work, so on it's own, it adds [Schedule Risk](Schedule-Risk).   However, if you write _just enough_ of the right Unit Tests, you should be short-cutting the time spent finding issues in the User Acceptance Testing (UAT) stage, so you're hopefully trading off a larger [Schedule Risk](Schedule-Risk) from UAT and adding a smaller risk to **Development**.
 
-Sometimes, in solving one problem, you can end up somewhere _worse_:  the actions you take to solve a higher-level [Attendant Risk](Risk#attendant-risk) will leave you with a worse [Attendant Risks](Risk#attendant-risk).  Almost certainly, this will have been a [Hidden Risk](Risk#attendant-risk) when you embarked on the action, otherwise you'd not have chosen it.  
+Sometimes, in solving one problem, you can end up somewhere _worse_:  the actions you take to solve a higher-level [Attendant Risk](Risk#attendant-risk) will leave you with a worse [Attendant Risks](Risk#attendant-risk).  Almost certainly, this will have been a [Hidden Risk](Glossary#hidden-risk) when you embarked on the action, otherwise you'd not have chosen it.  
 
 ### An Example: Automation
 
@@ -41,7 +41,7 @@ diagram of how automation reduces process risk, but increases complexity?
 
 On a recent project in a bank, we had a requirement to store a modest amount of data and we needed to be able to retrieve it fast.  The developer chose to use [MongoDB](https://www.mongodb.com) for this.  At the time, others pointed out that other teams in the bank had had lots of difficulty deploying MongoDB internally, due to licensing issues and other factors internal to the bank.
 
-Other options were available, but the developer chose MongoDB because of their _existing familiarity_ with it:   therefore, they felt that the [Hidden Risks](Risk#attendant-risk) of MongoDB were _lower_ than the other options, and disregarded the others' opinions.
+Other options were available, but the developer chose MongoDB because of their _existing familiarity_ with it:   therefore, they felt that the [Hidden Risks](Glossary#hidden-risk) of MongoDB were _lower_ than the other options, and disregarded the others' opinions.
 
 The data storage [Attendant Risk](Risk#attendant-risk) was mitigated easily with MongoDB.  However, the new [Attendant Risk](Risk#attendant-risk) of licensing bureacracy eventually proved too great, and MongoDB had to be abandoned after much investment of time.
 
@@ -103,7 +103,7 @@ So, here we've looked at Meeting Reality, which basically boils down to taking a
 
 - Each Action you take is a step on the Risk Landscape
 - Each Action is a cycle around our model.
-- Each cycle, you'll expose new [Hidden Risks](Risk#attendant-risk), changing your [Internal Model](Internal-Model).
+- Each cycle, you'll expose new [Hidden Risks](Glossary#hidden-risk), changing your [Internal Model](Glossary#Internal-Model).
 - Preferably, each cycle should reduce the overall [Attendant Risk](Risk#attendant-risk) of the [Goal](Goal-In-Mind)
 
 Surely, the faster you can do this, the better?  [Let's investigate...](Cadence)
