@@ -101,13 +101,13 @@ Luckily, there is quite a lot of existing science around reliability.  For examp
 
 This kind of stuff is encapsulated in the science of [Reliability Engineering](https://en.wikipedia.org/wiki/Reliability_engineering).   For example, [Failure mode and effects analysis (FEMA)](https://en.wikipedia.org/wiki/Failure_mode_and_effects_analysis):
 
-> "...was one of the first highly structured, systematic techniques for failure analysis. It was developed by reliability engineers in the late 1950s to study problems that might arise from malfunctions of military systems. " - [FEMA, _Wikipedia](https://en.wikipedia.org/wiki/Failure_mode_and_effects_analysis)
+> "...was one of the first highly structured, systematic techniques for failure analysis. It was developed by reliability engineers in the late 1950s to study problems that might arise from malfunctions of military systems. " - [FEMA, _Wikipedia_](https://en.wikipedia.org/wiki/Failure_mode_and_effects_analysis)
 
 This was applied on NASA missions, and then more recently in the 1970's to car design following the [Ford Pinto exploding car](https://en.wikipedia.org/wiki/Ford_Pinto#Design_flaws_and_ensuing_lawsuits) affair.
 
 ## Scarcity Risk
 
-Let's get back to the bus:  what if, when it arrives, it's already full of passengers?  Let's term this, [Scarcity Risk]() - the chance that a dependency is over-subscribed and you can't use it the way you want.  This is clearly an issue for nearly every kind of dependency: buses, supermarkets, concerts, teams, services and people.  
+Let's get back to the bus (which, hopefully, is still working):  what if, when it arrives, it's already full of passengers?  Let's term this, [Scarcity Risk]() - the chance that a dependency is over-subscribed and you can't use it the way you want.  This is clearly an issue for nearly every kind of dependency: buses, supermarkets, concerts, teams, services and people.  
 
 You could also call this _availability risk_ or _capacity risk_ of the resource.  Here are a selection of mitigations:
  - **Buffers**: Smoothing out peaks and troughs in utilisation tbd.
