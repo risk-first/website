@@ -31,7 +31,7 @@ In [Meeting Reality](Meeting-Reality), we looked at the concept of the [Risk Lan
 
 It's tempting to think of our [Risk Landscape](Risk-Landscape) as being like a [Fitness Landscape](https://en.wikipedia.org/wiki/Fitness_landscape).  That is, you have a "cost function" which is your height above the landscape, and you try and optimise by moving downhill in a [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent) fashion.  
 
-However, there's a problem with this:  we don't have a cost function.  We can only guess at what risks there are.  For this reason, I prefer to think of the [Risk Landscape](Risk-Landscape) as a terrian which contains _fauna_ and _obstacles_ (or, specifically [Barriers](Barrier-Risk)).
+However, there's a problem with this:  we don't have a cost function.  We can only guess at what risks there are.  For this reason, I prefer to think of the [Risk Landscape](Risk-Landscape) as a terrain which contains _fauna_ and _obstacles_ (or, specifically [Barriers](Barrier-Risk)).
 
 In this section, I am going to try and show you some of the fauna that live on the [Risk Landscape](Risk-Landscape).  We know every project is different, so every [Risk Landscape](Risk-Landscape) is also different.  But, just as I can tell you that the landscape outside your window will probably will have some roads, trees, fields, forests, buildings, and that the buildings are likely to be joined together by roads, I can tell you some general things about risks too.
 
