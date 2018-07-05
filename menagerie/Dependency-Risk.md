@@ -60,17 +60,19 @@ Having an event occur in a fixed time and place is [mitigating risk](Glossary#Mi
 
 By _deciding to use the bus_ we've [Taken Action](Glossary#Take-Action).  
 
-However, as we saw in [A Simple Scenario](A-Simple-Scenario), this means we pick up [Attendant Risks](Glossary#attendant-risk).  Although you might be able to think of a few more, in this section, we're going to look at the following ones:
+However, as we saw in [A Simple Scenario](A-Simple-Scenario), this means we pick up [Attendant Risks](Glossary#attendant-risk).  
 
-So, we're going to look at [Dependency Risk]() for our toy events from 7 different perspectives, many of which we've already touched on in the other sections:
+So, we're going to look at [Dependency Risk](Dependency-Risk) for our toy events (bus, supermarket) from 7 different perspectives, many of which we've already touched on in the other sections.
 
  - [Schedule Risk](Schedule-Risk)
  - [Reliability Risk](Operational-Risk#reliability-risk)
  - [Scarcity Risk](Feature-Risk#market-risk)
  - [Communication Risk](Communication-Risk)
  - [Complexity Risk](Complexity-Risk)
- - [Fit Risk](Feature-Risk#feature-fit-risk) and Baggage
+ - [Fit Risk](Feature-Risk#feature-fit-risk)
  - [Dead-End Risk](Boundary-Risk#dead-end-risk) and [Boundary Risk](Boundary-Risk)  
+ 
+(Although you might be able to think of a few more.) 
  
 tbd tree diagram of this.
  
