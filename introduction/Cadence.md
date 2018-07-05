@@ -11,7 +11,7 @@ How _fast_ should we go round this loop?  Is there a right answer?  The longer y
 Testing your [goals in mind](Goal-In-Mind) against reality early and safely is how you'll manage risk effectively, and to do this, you need to set up **Feedback Loops**. e.g.
 
  - **Bug Reports and Feature Requests** tell you how the users are getting on with the software.
- - [Monitoring Tools and Logs](Production-Risk) allow you to find out how your software is doing in reality.
+ - [Monitoring Tools and Logs](Operational-Risk) allow you to find out how your software is doing in reality.
  - **Dog-Fooding** i.e using the software you write yourself might be faster than talking to users.
  - [Continuous Delivery](DevOps) (CD) is about putting software into production as soon as it's written.   
  - **Integration Testing** is a faster way of meeting _some_ reality than continually deploying code and re-testing it manually.
@@ -24,7 +24,7 @@ Testing your [goals in mind](Goal-In-Mind) against reality early and safely is h
 
 This list is arranged so that at the top, we have the most visceral, most _real_ feedback loop, but at the same time, the slowest.   
 
-At the bottom, a good IDE can inform you about errors in your [Internal Model](Internal-Model) in real time, by way of highlighting compilation errors .  So, this is the fastest loop, but it's the most _limited_ reality.
+At the bottom, a good IDE can inform you about errors in your [Internal Model](Glossary#Internal-Model) in real time, by way of highlighting compilation errors .  So, this is the fastest loop, but it's the most _limited_ reality.
 
 Imagine for a second that you had a special time-travelling machine.  With it, you could make a change to your software, and get back a report from the future listing out all the issues people had faced using it over its lifetime, instantly.
 
@@ -56,7 +56,7 @@ The right answer is to use the fastest feedback loop possible, _which actually d
 
 Let's look at the journey so far:
 
- - In [A Simple Scenario](A-Simple-Scenario) we looked at how risk pervades every goal we have in life, big or small.  We saw that risk stems from the fact that our [Internal Model](Internal-Model) of the world couldn't capture everything about reality, and so some things were down to chance.  
+ - In [A Simple Scenario](A-Simple-Scenario) we looked at how risk pervades every goal we have in life, big or small.  We saw that risk stems from the fact that our [Internal Model](Glossary#Internal-Model) of the world couldn't capture everything about reality, and so some things were down to chance.  
  
  - In the [Development Process](Development-Process) we looked at how common software engineering conventions like Unit Testing, User Acceptance Testing and Integration could help us manage the risk of taking an idea to production, by _gradually_ introducing it to reality in stages.
  
@@ -66,7 +66,7 @@ Let's look at the journey so far:
  
  - [Some Risk Theory](Risk-Theory) was an aside, looking at some terminology and the useful concept of a Risk Register.
  
- - Then, generalizing the lessons of the Development Process article, we examined the idea that [Meeting Reality](Meeting-Reality) frequently helps flush out [Hidden Risks](Risk#attendant-risk) and improve your [Internal Model](Internal-Model).
+ - Then, generalizing the lessons of the Development Process article, we examined the idea that [Meeting Reality](Meeting-Reality) frequently helps flush out [Hidden Risks](Glossary#hidden-risk) and improve your [Internal Model](Glossary#Internal-Model).
  
  - Finally, above, we looked at [Cadence](Cadence), and how feedback loops allow you Navigate the Risk Landscape more effectively, by showing you more quickly when you're going wrong.
  

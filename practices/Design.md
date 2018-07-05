@@ -18,7 +18,7 @@ As we saw in [Meet Reality](Meeting-Reality), "Navigating the [Risk Landscape](R
 
 But the problem with this is you can get trapped in a [Local Minima](), where there are _no_ easy steps to take to get you to where you want to be.  Here is a [real life example](Tradeoffs).  This is [Dead End Risk](Dead-End-Risk).
 
-In these cases, you have to _widen your horizon_ and look at where you want to go:  and this is the process of _design_.  You're not necessarily now taking steps on the [Risk Landscape](Risk-Landscape), but imagining a place on the [Risk Landscape](Risk-Landscape) where you want to be, and checking it against your [Internal Model](Internal-Model) for validity.
+In these cases, you have to _widen your horizon_ and look at where you want to go:  and this is the process of _design_.  You're not necessarily now taking steps on the [Risk Landscape](Risk-Landscape), but imagining a place on the [Risk Landscape](Risk-Landscape) where you want to be, and checking it against your [Internal Model](Glossary#Internal-Model) for validity.
 
 ## Examples
 

@@ -44,13 +44,13 @@ By _deciding to use the bus_ we've **Taken Action**.  However, as we saw in [A S
 
 So, we're going to look at [Dependency Risk]() for our toy events from 7 different perspectives, many of which we've already touched on in the other sections:
 
- - [Schedule Risk]
- - [Reliability Risk]
- - [Scarcity Risk]
+ - [Schedule Risk](Schedule-Risk)
+ - [Reliability Risk](Operational-Risk#reliability-risk)
+ - [Scarcity Risk](Feature-Risk#market-risk)
  - [Communication Risk](Communication-Risk)
  - [Complexity Risk](Complexity-Risk)
- - [Fit Risk]() and Baggage
- - [Dead-End Risk] and [Boundary Risk](Complexity-Risk)  
+ - [Fit Risk](Feature-Risk#feature-fit-risk) and Baggage
+ - [Dead-End Risk](Boundary-Risk#dead-end-risk) and [Boundary Risk](Boundary-Risk)  
  
 tbd tree diagram of this.
  

@@ -41,7 +41,7 @@ Software risks are difficult to quantify, and mostly, the effort involved in doi
 With this in place, we can:
 
 - Talk about the types of risks we face on our projects, using an appropriate language.
-- Expose [Hidden Risks](Risk) that we hadn't considered before.
+- Expose [Hidden Risks](Glossary#hidden-risk) that we hadn't considered before.
 - Weigh the risks against each other, and decide which order to tackle them.   
 
 ## 4.  We Can Analyse Practices in Terms of how they Mitigate Risk

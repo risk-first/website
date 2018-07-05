@@ -51,12 +51,12 @@ So **Boundary Risk** is the attendant [Complexity](Complexity-Risk) required to 
 ### Drupal and WordPress
 
 On the face of it, [WordPress]() and [Drupal]() should be very similar:
- - They are both [Content Management Systems]
- - They both use a [LAMP (Linux, Apache, MySql, PHP) Stack]
+ - They are both [Content Management Systems]()
+ - They both use a [LAMP (Linux, Apache, MySql, PHP) Stack]()
  - They were both started around the same time.
  - They are both Open-Source, and have a wide variety of plugins.
 
-However, in practice, they are very different.  This could be put down to different _design goals_:  it seems that [WordPress]() was focused much more on usability, and an easy learning curve, whereas [Drupal]() supported plugins for building things with complex data formats.  It could also be down to the _design decisions_:  although they both support [Plugins], they do it in very different ways.  
+However, in practice, they are very different.  This could be put down to different _design goals_:  it seems that [WordPress]() was focused much more on usability, and an easy learning curve, whereas [Drupal]() supported plugins for building things with complex data formats.  It could also be down to the _design decisions_:  although they both support [Plugins](), they do it in very different ways.  
 
 Alternatively, I could have picked on Team City and Jenkins here, or Maven and Gradle.  In all cases, the choice of plugins I have is dependent on the platform I've chosen, despite the fact that the platforms are solving pretty much the same problem.  If I want to 
 
@@ -64,7 +64,7 @@ This is a crucial determinant of **Boundary Risk**:  given the same problems, pe
 
 In all these cases, 
 
-Nowadays, the [WordPress]() user base is huge:  approximately tbd 30% of all websites are hosted with [WordPress].  For [Drupal]() it's tbd.  Because [WordPress]() is so popular, it has attracted an [ecosystem]() of plugin developers, who have bent the platform to more purposes, and expanded the boundary of it's functionality.  The [WordPress]() APIs are now much more complex than they were originally, in order to support this vast ecosystem of plugins.
+Nowadays, the [WordPress]() user base is huge:  approximately tbd 30% of all websites are hosted with [WordPress]().  For [Drupal]() it's tbd.  Because [WordPress]() is so popular, it has attracted an [ecosystem]() of plugin developers, who have bent the platform to more purposes, and expanded the boundary of it's functionality.  The [WordPress]() APIs are now much more complex than they were originally, in order to support this vast ecosystem of plugins.
 
 ### Java 
 
@@ -96,7 +96,7 @@ Encapsulation is the main
 
 Sometimes, technology comes along that allows us to cross boundaries effectivey, and there are a number of ways that this can happen:
 
-### [ASCII]
+### [ASCII]()
 
 [ASCII]() fixed the different-character-sets boundary risk by being a standard that others could adopt.   [UTF]() continues this work to ensure we don't have to worry about **Translation** from one encoding to another.  This mitigates **Boundary Risk** by standards.
 

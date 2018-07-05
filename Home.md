@@ -64,13 +64,14 @@ Risks are often very similar across different software projects.   And, if you k
  - [Communication Risk](Communication-Risk)
  - [Coordination Risk](Coordination-Risk)
  - [Dependency Risk](Dependency-Risk)
- - [Software Dependency Risk]
+ - [Software Dependency Risk](Software-Dependency-Risk)
  - [Schedule Risk](Schedule-Risk)
  - [Boundary Risk](Boundary-Risk)
- - [Production Risk](Production-Risk)
+ - [Operational Risk](Operational-Risk)
  - [Process Risk](Process-Risk)
  - [Map And Territory Risk](Map-And-Territory-Risk)
  - [Agency Risk](Agency-Risk) 
+ - [Staging And Classifying](Staging-And-Classifying)
  
 ### Part 3: [Practices](Practices)
 
@@ -115,14 +116,14 @@ A more light-hearted collection of blog posts related to the software developmen
  - [Regression Testing](Regression-Testing)
  - Minimizing The Downside
  - [Issue Tracking](Issue-Tracking)
- - [Surfacing Risks](Surfacing-Risks)
+ - Surfacing Risks
  - [Silver Bullets](Silver-Bullets)
 
 ### Glossary Of Terms
 
  - [Feedback Loop](Feedback-Loop)
  - [Goal In Mind](Goal-In-Mind)
- - [Internal Model](Internal-Model)
+ - [Internal Model](Glossary#Internal-Model)
  - [Meet Reality](Meet-Reality)
  - [Risk](Risk)
   
