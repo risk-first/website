@@ -75,7 +75,7 @@ The first stage of the journey for the feature is that it meets the Business Ana
 In the process of doing this, the BA is turning the simple feature request _idea_ into a more consistent, well-explained _specification_ or _requirement_ which the developer can pick up.  But why is this a useful step in our simple methodology?  From the perspective of our [Internal Model](Glossary#Internal-Model), we can say that the BA is responsible for:
 
 - Trying to surface [Hidden Risks](Glossary#hidden-risk)
-- Trying to evaluate [Attendant Risk](Risk#Attendant-Risk) and make it clear to everyone on the project.
+- Trying to evaluate [Attendant Risk](Glossary#attendant-risk) and make it clear to everyone on the project.
 
 Hopefully, after this stage, our [Internal Model](Glossary#Internal-Model) might look something like this:
 

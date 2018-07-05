@@ -64,7 +64,7 @@ The only way that the Agents can move away from competition towards coordination
 
 You might think, therefore, that this is just another type of [Communication Risk](Communication-Risk) problem, and that's often a part of it, but even with synchronized [Internal Models](Glossary#Internal-Model), coordination risk can occur.  Imagine the example of people all trying to madly leave a burning building.  They all have the same information (the building is on fire).  If they coordinate, and leave in an orderly fashion, they might all get out.  If they don't, and there's a scramble for the door, more people might die.
 
-But commonly, [Coordination Risk]() occurs where people have different ideas about how to achieve a [goal](), and they have different ideas because they have different evaluations of the [Attendant Risk](Risk).  As we saw in the section on [Communication Risk](Communication-Risk), we can only hope to synchronize [Internal Models]() if there are high-bandwidth [Channels]() available for communication. 
+But commonly, [Coordination Risk]() occurs where people have different ideas about how to achieve a [goal](), and they have different ideas because they have different evaluations of the [Attendant Risk](Glossary#attendant-risk).  As we saw in the section on [Communication Risk](Communication-Risk), we can only hope to synchronize [Internal Models]() if there are high-bandwidth [Channels]() available for communication. 
 
 ## Team Decision Making
 

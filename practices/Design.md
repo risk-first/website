@@ -6,7 +6,7 @@
 Design is what you do every time you think of an action to mitigate a risk.  And **Big Design Up Front** is where you do a lot of it in one go, for example:
 
  - Where you think about the design of all (or a set of) the requirements in one go, in advance.
- - Where you consider a _set of [Attendant Risks](Attendant-Risk)_ all at the same time.
+ - Where you consider a _set of [Attendant Risks](Glossary#attendant-risk)_ all at the same time.
  
 Compare with "little" design, where we consider just the _next_ requirement, or the _most pressing_ risk. 
  

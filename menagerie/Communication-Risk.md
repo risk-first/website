@@ -47,7 +47,7 @@ To get inside [Communication Risk](Communication-Risk), we need to understand **
  - [Messages](https://en.wikipedia.org/wiki/Message): The information we want to convey.
  - [Internal Models](Glossary#Internal-Model): the sources and destinations for the messages.  Updating internal models (whether in our heads or machines) is the reason why we're communicating.
  
-And, as we look at these four areas, we'll consider the [Attendant Risks](Risk#attendant-risk) of each.
+And, as we look at these four areas, we'll consider the [Attendant Risks](Glossary#attendant-risk) of each.
 
 ## Channels
 

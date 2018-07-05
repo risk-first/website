@@ -27,11 +27,11 @@ So, we often have multiple ways of achieving a [Goal In Mind](Goal-In-Mind).
 
 What's the best way?  
 
-I would argue that the best way is the one which accrues the _least risk_ to get it done:  each action you take in trying to achieve the overall [Goal In Mind](Goal-In-Mind) will have it's [Attendant Risks](Risk#attendant-risk), and it's the experience you bring to bear on these that will help you navigate through them smoothly.
+I would argue that the best way is the one which accrues the _least risk_ to get it done:  each action you take in trying to achieve the overall [Goal In Mind](Goal-In-Mind) will have it's [Attendant Risks](Glossary#attendant-risk), and it's the experience you bring to bear on these that will help you navigate through them smoothly.
 
 Ideally, when you take an action, you are trading off a big risk for a smaller one.  Take Unit Testing for example.  Clearly, writing Unit Tests adds to the amount of development work, so on it's own, it adds [Schedule Risk](Schedule-Risk).   However, if you write _just enough_ of the right Unit Tests, you should be short-cutting the time spent finding issues in the User Acceptance Testing (UAT) stage, so you're hopefully trading off a larger [Schedule Risk](Schedule-Risk) from UAT and adding a smaller risk to **Development**.
 
-Sometimes, in solving one problem, you can end up somewhere _worse_:  the actions you take to solve a higher-level [Attendant Risk](Risk#attendant-risk) will leave you with a worse [Attendant Risks](Risk#attendant-risk).  Almost certainly, this will have been a [Hidden Risk](Glossary#hidden-risk) when you embarked on the action, otherwise you'd not have chosen it.  
+Sometimes, in solving one problem, you can end up somewhere _worse_:  the actions you take to solve a higher-level [Attendant Risk](Glossary#attendant-risk) will leave you with a worse [Attendant Risks](Glossary#attendant-risk).  Almost certainly, this will have been a [Hidden Risk](Glossary#hidden-risk) when you embarked on the action, otherwise you'd not have chosen it.  
 
 ### An Example: Automation
 
@@ -43,9 +43,9 @@ On a recent project in a bank, we had a requirement to store a modest amount of 
 
 Other options were available, but the developer chose MongoDB because of their _existing familiarity_ with it:   therefore, they felt that the [Hidden Risks](Glossary#hidden-risk) of MongoDB were _lower_ than the other options, and disregarded the others' opinions.
 
-The data storage [Attendant Risk](Risk#attendant-risk) was mitigated easily with MongoDB.  However, the new [Attendant Risk](Risk#attendant-risk) of licensing bureacracy eventually proved too great, and MongoDB had to be abandoned after much investment of time.
+The data storage [Attendant Risk](Glossary#attendant-risk) was mitigated easily with MongoDB.  However, the new [Attendant Risk](Glossary#attendant-risk) of licensing bureacracy eventually proved too great, and MongoDB had to be abandoned after much investment of time.
 
-This is not a criticism of MongoDB: it's simply a demonstration that sometimes, the cure is worse than the disease.  Successful projects are _always_ trying to _reduce_ [Attendant Risks](Risk#attendant-risk).  
+This is not a criticism of MongoDB: it's simply a demonstration that sometimes, the cure is worse than the disease.  Successful projects are _always_ trying to _reduce_ [Attendant Risks](Glossary#attendant-risk).  
 
 ## The Cost Of Meeting Reality
 
@@ -73,13 +73,13 @@ As a flavour of what's to come, let's look at [YAGNI](https://www.martinfowler.c
 
 > This principle was first discussed and fleshed out on [Ward's Wiki](http://wiki.c2.com/?YouArentGonnaNeedIt)
 
-The idea makes sense:  if you take on extra work that you don't need, _of course_ you'll be accreting [Attendant Risks](Risk#attendant-risk).
+The idea makes sense:  if you take on extra work that you don't need, _of course_ you'll be accreting [Attendant Risks](Glossary#attendant-risk).
 
 But, there is always the opposite opinion:  [You Are Gonna Need It](http://wiki.c2.com/?YouAreGonnaNeedIt).  As a simple example, we often add log statements in our code as we write it, though following YAGNI strictly says we should leave it out.  
 
 #### Which is right?
 
-Now, we can say:  do the work _if it mitigates your [Attendant Risks](Risk#attendant-risk)_.  
+Now, we can say:  do the work _if it mitigates your [Attendant Risks](Glossary#attendant-risk)_.  
 
  - Logging statements are _good_, because otherwise, you're increasing the risk that in production, no one will be able to understand _how the software went wrong_.
  - However, adding them takes time, which might introduce [Schedule Risk](Schedule-Risk).
@@ -90,10 +90,10 @@ So, it's a trade-off: continue adding logging statements so long as you feel tha
 
 Another mantra from Kent Beck (originator of the [Extreme Programming](Agile) methodology, is "Do The Simplest Thing That Could Possibly Work", which is closely related to YAGNI and is about looking for solutions which are simple.  Our risk-centric view of this strategy would be:
 
-- Every action you take on a project has it's own [Attendant Risks](Risk#attendant-risk).
-- The bigger or more complex the action, the more [Attendant Risk](Risk#attendant-risk) it'll have.
+- Every action you take on a project has it's own [Attendant Risks](Glossary#attendant-risk).
+- The bigger or more complex the action, the more [Attendant Risk](Glossary#attendant-risk) it'll have.
 - The reason you're taking action _at all_ is because you're trying to reduce risk elsewhere on the project 
-- Therefore, the biggest payoff is whatever action _works_ to remove that risk, whilst simultaneously picking up the least amount of new [Attendant Risk](Risk#attendant-risk).
+- Therefore, the biggest payoff is whatever action _works_ to remove that risk, whilst simultaneously picking up the least amount of new [Attendant Risk](Glossary#attendant-risk).
 
 So, "Do The Simplest Thing That Could Possibly Work" is really a helpful guideline for Navigating the [Risk Landscape](Risk-Landscape).  
 
@@ -104,7 +104,7 @@ So, here we've looked at Meeting Reality, which basically boils down to taking a
 - Each Action you take is a step on the Risk Landscape
 - Each Action is a cycle around our model.
 - Each cycle, you'll expose new [Hidden Risks](Glossary#hidden-risk), changing your [Internal Model](Glossary#Internal-Model).
-- Preferably, each cycle should reduce the overall [Attendant Risk](Risk#attendant-risk) of the [Goal](Goal-In-Mind)
+- Preferably, each cycle should reduce the overall [Attendant Risk](Glossary#attendant-risk) of the [Goal](Goal-In-Mind)
 
 Surely, the faster you can do this, the better?  [Let's investigate...](Cadence)
 

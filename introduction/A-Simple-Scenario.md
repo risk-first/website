@@ -20,17 +20,17 @@ If we do nothing, our friends will turn up and maybe there's nothing in the hous
 
 ### Attendant Risk
 
-These _nagging doubts_ that are going through your head I'll call the [Attendant Risks](Risk#attendant-risk):  they're the ones that will occur to you as you start to think about what will happen. 
+These _nagging doubts_ that are going through your head I'll call the [Attendant Risks](Glossary#attendant-risk):  they're the ones that will occur to you as you start to think about what will happen. 
 
 ![Goal In Mind](images/generated/goal_in_mind.png)
 
 When we go about preparing this wonderful evening, we can with these risks and try to mitigate them:  shop for the ingredients in advance, prepare parts of the meal, maybe practice the cooking in advance.  Or, we can wing it, and sometimes we'll get lucky.
 
-How much effort we expend on mitigating [Attendant Risks](Risk#attendant-risk) depends on how great we think they are: for example, if you know it's a 24-hour shop, you'll probably not worry too much about getting the ingredients well in advance (although, the shop _could still be closed_).
+How much effort we expend on mitigating [Attendant Risks](Glossary#attendant-risk) depends on how great we think they are: for example, if you know it's a 24-hour shop, you'll probably not worry too much about getting the ingredients well in advance (although, the shop _could still be closed_).
 
 ### Hidden Risks
 
-There are also hidden [Attendant Risks](Risk#attendant-risk) that you might not know about: if you're poaching eggs for dinner, you might know that fresh eggs poach best.    These are the "Unknown Unknowns" of [Rumsfeld's model](https://en.wikipedia.org/wiki/There_are_known_knowns).
+There are also hidden [Attendant Risks](Glossary#attendant-risk) that you might not know about: if you're poaching eggs for dinner, you might know that fresh eggs poach best.    These are the "Unknown Unknowns" of [Rumsfeld's model](https://en.wikipedia.org/wiki/There_are_known_knowns).
 
 ![Goal In Mind](images/generated/goal_in_mind.png)
 

@@ -40,7 +40,7 @@ Having an event occur in a fixed time and place is _mitigating risk_:
 
 ### But, Events Lead To Attendant Risk
 
-By _deciding to use the bus_ we've **Taken Action**.  However, as we saw in [A Simple Scenario](A-Simple-Scenario), this means we pick up [Attendant Risks](Risk).  Although you might be able to think of a few more, in this section, we're going to look at the following ones:
+By _deciding to use the bus_ we've **Taken Action**.  However, as we saw in [A Simple Scenario](A-Simple-Scenario), this means we pick up [Attendant Risks](Glossary#attendant-risk).  Although you might be able to think of a few more, in this section, we're going to look at the following ones:
 
 So, we're going to look at [Dependency Risk]() for our toy events from 7 different perspectives, many of which we've already touched on in the other sections:
 

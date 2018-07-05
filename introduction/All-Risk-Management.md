@@ -15,7 +15,7 @@ Many project managers will be familiar with the [RAID Log](http://pmtips.net/blo
  - Issues
  - Decisions
  
-Let's try and put the following [Attendant Risk](Risk#attendant-risk) into the RAID Log:
+Let's try and put the following [Attendant Risk](Glossary#attendant-risk) into the RAID Log:
 
 > Debbie needs to visit the client to get them to choose the logo to use on the product, otherwise we can't size the screen areas exactly.
 
@@ -41,7 +41,7 @@ The reason you are _taking_ an action is to mitigate a risk.  For example, if yo
 - Will it overrun on time?  
 - Will it lead to yet more actions?
 
-Consider _coding a feature_ (as we did in the earlier [Development Process](Development-Process) section).  We saw here how the whole process of coding was an exercise in learning what we didn't know about the world, uncovering problems and improving our [Internal Model](Glossary#Internal-Model).  That is, flushing out the [Attendant Risk](Risk#attendant-risk) of the [Goal In Mind](Goal-In-Mind).
+Consider _coding a feature_ (as we did in the earlier [Development Process](Development-Process) section).  We saw here how the whole process of coding was an exercise in learning what we didn't know about the world, uncovering problems and improving our [Internal Model](Glossary#Internal-Model).  That is, flushing out the [Attendant Risk](Glossary#attendant-risk) of the [Goal In Mind](Goal-In-Mind).
 
 And, as we saw in the [Introduction](A-Simple-Scenario), even something _mundane_ like the Dinner Party had risks. 
 
