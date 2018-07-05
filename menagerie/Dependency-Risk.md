@@ -34,13 +34,19 @@ In Rich Hickey's talk, [Simple Made Easy](https://www.infoq.com/presentations/Si
 
 But.  Living systems are not simple.  And, they evolved to this level of complexity through because life was _easier_ that way.  Depending on things makes _your job easier_.  It's just [division of labour](https://en.wikipedia.org/wiki/Division_of_labour) and dependency hiearchies, as we saw in [Hierarchies and Modularization](Complexity-Risk#Hierarchies-and-Modularization).
 
-Our economic system and our software systems exhibit the same tendency-towards-complexity.
+Our economic system and our software systems exhibit the same tendency-towards-complexity.  
 
 ## Event Dependencies
 
-We rely on events occuring all the time in our lives, and so this is a good place to start in our analysis of [Dependency Risk]() generally.   And, as we will see, all the risks that apply to events pretty much apply to all the other kinds of dependencies we'll look at.    
+Let's start with dependencies on _events_.  
 
-Arguably, the event dependencies are the simplest to express, too: usually, a _time_ and a _place_.   For example, "I can't start shopping until the supermarket opens at 9am", or "I must catch my bus to work at 7:30am".  In the first example, you can't _start_ something until a particular event happens.  In the latter example, you must _be ready_ for an event at a particular time.
+We rely on events occuring all the time in our lives, and so this is a good place to start in our analysis of [Dependency Risk](Dependency-Risk) generally.   And, as we will see, all the risks that apply to events pretty much apply to all the other kinds of dependencies we'll look at.    
+
+Arguably, the event dependencies are the simplest to express, too: usually, a _time_ and a _place_.   For example:
+- "I can't start shopping until the supermarket opens at 9am", or
+- "I must catch my bus to work at 7:30am".  
+
+In the first example, you can't _start_ something until a particular event happens.  In the latter example, you must _be ready_ for an event at a particular time.
 
 ### Events Mitigate Risk...
 
