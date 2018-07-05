@@ -107,7 +107,7 @@ This was applied on NASA missions, and then more recently in the 1970's to car d
 
 ## Scarcity Risk
 
-Let's get back to the bus (which, hopefully, is still working):  what if, when it arrives, it's already full of passengers?  Let's term this, [Scarcity Risk]() - the chance that a dependency is over-subscribed and you can't use it the way you want.  This is clearly an issue for nearly every kind of dependency: buses, supermarkets, concerts, teams, services and people.  
+Let's get back to the bus (which, hopefully, is still working).  What if, when it arrives, it's already full of passengers?  Let's term this, [Scarcity Risk]() - the chance that a dependency is over-subscribed and you can't use it the way you want.  This is clearly an issue for nearly every kind of dependency: buses, supermarkets, concerts, teams, services and people.  
 
 You could also call this _availability risk_ or _capacity risk_ of the resource.  Here are a selection of mitigations:
  - **Buffers**: Smoothing out peaks and troughs in utilisation tbd.
