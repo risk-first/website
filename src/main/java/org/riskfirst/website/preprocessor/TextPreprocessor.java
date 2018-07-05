@@ -32,26 +32,34 @@ public class TextPreprocessor {
 
 	private static void process(BufferedReader br, File origin) throws IOException {
 		String line = br.readLine();
+		int lineNo = 1;
 		while (line != null) {
 			if (line.trim().equals("```include")) {
 				processIncludes(br, origin);
 			} else {
-				processLinks(line);
+				processLinks(line, TextPreprocessor::processImageLink, lineNo);
 			}
 			line = br.readLine();
+			lineNo++;
 		}
 	}
 	
 	static Pattern p = Pattern.compile("(\\!)?\\[([^\\]]*?)\\]\\((.*?)\\)(\\{(.*?)\\})?");
+	
+	public interface LinkProcessor {
+		
+		void process(String link, String text, String url, boolean image, int lineNo);
+		
+	}
 
-	private static void processLinks(String line) {
+	public static void processLinks(String line, LinkProcessor lp, int lineNo) {
 		Matcher m = p.matcher(line);
 		int place = 0;
 		while (m.find()) {
 			int s = m.start();
 			int e = m.end();
 			
-			System.out.print(line.substring(place, s));
+			//System.out.print(line.substring(place, s));
 			
 			String link = line.substring(s, e);
 			
@@ -67,40 +75,40 @@ public class TextPreprocessor {
 				System.err.println("OK: " + link+"    "+text+"    "+url);
 			}
 			
-			if (!isExternal(url)) {
-				if (!isImage(url)) {
-					// these are links in the same document.
-					if (LINKS_AS_BOLD) {
-						System.out.print("**"+text+"**");
-					} else {
-						// something else.
-					}
-				} else {
-					processImage(link, text, url, m);
-				}
-			} else {
-				System.out.print(link);
-			}
-			
+			lp.process(link, text, url, bang != null, lineNo);
 			
 			place = e;
 		}
 		
-		System.out.println(line.substring(place));
+		//System.out.println(line.substring(place));
 	}
 
-	private static void processImage(String link, String text, String url, Matcher m) {
-		if (url.contains("generated")) {
-			// need to replace with 400dpi version
-			url = url.substring(0, url.length()-4) + "-400dpi.png";
-		}
+	private static void processImageLink(String link, String text, String url, boolean image, int lineNo) {
 		
-		if (link.contains("-risk.png")) {		// needs to be in margin
-			System.out.println("\\marginpar{");
-			System.out.println("  \\vspace*{0cm}\\includegraphics[width=2cm,height=5cm]{"+url+"}");
-			System.out.println("}");
+		if (!isExternal(url)) {
+			if (!isImage(url)) {
+				// these are links in the same document.
+				if (LINKS_AS_BOLD) {
+					System.out.print("**"+text+"**");
+				} else {
+					// something else.
+				}
+			} else {
+				if (url.contains("generated")) {
+					// need to replace with 400dpi version
+					url = url.substring(0, url.length()-4) + "-400dpi.png";
+				}
+				
+				if (link.contains("-risk.png")) {		// needs to be in margin
+					System.out.println("\\marginpar{");
+					System.out.println("  \\vspace*{0cm}\\includegraphics[width=2cm,height=5cm]{"+url+"}");
+					System.out.println("}");
+				} else {
+					System.out.println("!["+text+"]("+url+")");
+				}
+			}
 		} else {
-			System.out.println("!["+text+"]("+url+")");
+			System.out.print(link);
 		}
 	}
 

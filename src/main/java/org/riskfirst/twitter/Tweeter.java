@@ -27,6 +27,10 @@ public class Tweeter {
 		List<StatusUpdate> tweets = imageTweetSource.getRandomTweets(5);
 		potentialTweets.addAll(tweets);
 		
+		TweetSource articleTweetSource = new ArticleTweetSource(articles, baseURI);
+		tweets = articleTweetSource.getRandomTweets(5);
+		potentialTweets.addAll(tweets);
+		
 		if (tweets.size() > 10) {
 			throw new Exception("too many tweets");
 		}

@@ -26,11 +26,12 @@ public class ArticleLoader {
 				recurse(f2, out);
 			}
 		} else if (f.getName().endsWith(".md")) {
-			System.out.println("Loading: "+f.getAbsolutePath());
 			String contents = RepositoryHelp.stream(new FileInputStream(f));
 			ArticleState as = getStateFor(contents);
 			
-			out.add(new Article(as, contents, f));
+			Article art = new Article(as, contents, f);
+			out.add(art);
+			System.out.println("Loaded: "+art);
 			
 		}
 	}

@@ -83,5 +83,11 @@ public class Article {
 		}
 		
 	}
+
+	@Override
+	public String toString() {
+		return "Article [state=" + state + ", f=" + f + "]";
+	}
+	
 	
 }
