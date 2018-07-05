@@ -139,7 +139,7 @@ tbd.
 
 ## Dependencies - A Quick Review
 
-Dependency of any kind is a choice in which you are trying to choosing a position of lower [Attendant Risk](Risk) than you would have without the dependency. 
+Dependency of any kind is a choice in which you are trying to choosing a position of lower [Attendant Risk](Glossary#attendant-risk) than you would have without the dependency. 
 
 So, we've looked at different types of dependencies.   
 

@@ -4,7 +4,7 @@ Here, I am going to recap on some pre-existing knowledge about risk, generally, 
 
 ## Risk Registers
 
-In the previous section [Software Project Scenario](Software-Project-Scenario) we saw how you try to look across the [Attendant Risks](Risk#attendant-risk) of the project, in order to decide what to do next.  
+In the previous section [Software Project Scenario](Software-Project-Scenario) we saw how you try to look across the [Attendant Risks](Glossary#attendant-risk) of the project, in order to decide what to do next.  
 
 A [Risk Register](https://en.wikipedia.org/wiki/Risk_register) can help with this.  From Wikipedia:
 

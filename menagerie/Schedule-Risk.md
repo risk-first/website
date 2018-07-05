@@ -85,7 +85,7 @@ Arguably, there is good psychological, evolutionary and risk-based reasoning beh
 
 Or at least, that's the argument.  If you're [Discounting the Future To Zero](Risk-Theory) then you'll be pulling all-nighters in order to deliver any assignment.   
 
-So, the problem with **Student Syndrome** is that the _very mitigation_ for **Schedule Risk** (allowing more time) is an [attendant risk](Risk) that _causes_ **Schedule Risk**:   you'll work towards the new, generous deadline more slowly, and you'll end up revealing [Hidden Risk](Glossary#Hidden-Risk) _later_ than you would have with the original, pressing deadline ... and you end up being late because of them.
+So, the problem with **Student Syndrome** is that the _very mitigation_ for **Schedule Risk** (allowing more time) is an [Attendant Risk](Glossary#attendant-risk) that _causes_ **Schedule Risk**:   you'll work towards the new, generous deadline more slowly, and you'll end up revealing [Hidden Risk](Glossary#Hidden-Risk) _later_ than you would have with the original, pressing deadline ... and you end up being late because of them.
 
 We'll look at mitigations for this in [Prioritisation](Prioritisation).
 

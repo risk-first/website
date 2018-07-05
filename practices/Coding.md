@@ -21,7 +21,7 @@ In [Development Process](Development-Process) we introduced the following diagra
 
 ## Examples
 
-As with any [Practice](Practices), we are coding to minimize [Attendant Risks](Risk).  We might want...
+As with any [Practice](Practices), we are coding to minimize [Attendant Risks](Glossary#attendant-risk).  We might want...
 
 - **To Build** or improve some features which our clients will find useful. - _[Feature Risk](Feature-Risk)_
 - **To Automate** some process that takes too long or is too arduous.  - _[Process Risk](Process-Risk)_
