@@ -92,7 +92,7 @@ This works both ways.  Let's looks at some of the **Channel Risks** from the poi
 
 ## Protocols
 
-In this section, I want to examine the concept of [Communication Protocols](https://en.wikipedia.org/wiki/Communication_protocol) and how they relate to [Abstraction](Abstraction).  
+In this section, I want to examine the concept of [Communication Protocols](https://en.wikipedia.org/wiki/Communication_protocol) and how they relate to [Abstraction](Glossary#abstraction).  
 
 So, to do this, let's look in a bit of detail at how web pages are loaded.   When considering this, we need to broaden our terminology.  Although so far we've talked about **Senders** and **Receivers**, we now need to talk from the point of view of who-depends-on-who.  If you're _depended on_, then you're a "Server", whereas if you require communication with something else, you're a "Client".   Thus, clients depend on servers in order to load pages.
 
@@ -114,7 +114,7 @@ Then, the first thing that happens is this:
 *   Trying 216.58.204.78...
 ```
 
-At this point, curl has used [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) to _resolve_ the address "google.com" to an IP address.  This is some [Abstraction](Abstraction):  instead of using the machine's [IP Address](https://en.wikipedia.org/wiki/IP_address) on the network, `216.58.204.78`, I can use a human-readable address, `google.com`.   The address `google.com` doesn't necessarily resolve to that same address each time:  _They have multiple IP addresses for `google.com`_.   But, for the rest of the `curl` request, I'm now set to just use this one.
+At this point, curl has used [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) to _resolve_ the address "google.com" to an IP address.  This is some [Abstraction](Glossary#abstraction):  instead of using the machine's [IP Address](https://en.wikipedia.org/wiki/IP_address) on the network, `216.58.204.78`, I can use a human-readable address, `google.com`.   The address `google.com` doesn't necessarily resolve to that same address each time:  _They have multiple IP addresses for `google.com`_.   But, for the rest of the `curl` request, I'm now set to just use this one.
 
 ### 2. IP - Internet Protocol
 
@@ -125,7 +125,7 @@ Each packet consists of two things:
 - An address, which tells the network components (such as routers and gateways) where to send the packet, much like you'd write the address on the outside of a parcel.
 - The _payload_, the stream of bytes for processing at the destination.   Like the contents of the parcel.
 
-But, even this concept of "packets" is an [Abstraction](Abstraction).  Although all the components of the network interoperate with this protocol, we might be using Wired Ethernet, or WiFi, 4G or _something else_.
+But, even this concept of "packets" is an [Abstraction](Glossary#abstraction).  Although all the components of the network interoperate with this protocol, we might be using Wired Ethernet, or WiFi, 4G or _something else_.
 
 ### 3. 802.11 - WiFi Protocol
 
@@ -140,7 +140,7 @@ Anyway, the next thing that happens is this:
 * Connected to google.com (216.58.204.78) port 80 (#0)
 ```
 
-The second obvious [Abstraction](Abstraction) going on here is that `curl` now believes it has a [TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol) connection.   The TCP connection abstraction gives us the surety that the packets get delivered in the right order, and retried if they go missing.  Effectively it _guarantees_ these things, or that it will have a connection failure if it can't keep it's guarantee. 
+The second obvious [Abstraction](Glossary#abstraction) going on here is that `curl` now believes it has a [TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol) connection.   The TCP connection abstraction gives us the surety that the packets get delivered in the right order, and retried if they go missing.  Effectively it _guarantees_ these things, or that it will have a connection failure if it can't keep it's guarantee. 
 
 But, this is a fiction - TCP is built on the IP protocol, packets of data on the network.  So there are lots of packets floating around which say "this connection is still alive" and "I'm message 5 in the sequence" and so on in order to maintain this fiction.  But that means that the HTTP protocol can forget about this complexity and work with the fiction of a connection.
 
@@ -301,7 +301,7 @@ Create user 53 with surname 'Smith'
 
 ![Message Risk](images/generated/misinterpretation-risk.png) 
 
-People don't rely on rigorous implementations of abstractions like computers do; we make do with fuzzy definitions of concepts and ideas.  We rely on [Abstraction](Abstraction) to move between the name of a thing and the _idea of a thing_.
+People don't rely on rigorous implementations of abstractions like computers do; we make do with fuzzy definitions of concepts and ideas.  We rely on [Abstraction](Glossary#abstraction) to move between the name of a thing and the _idea of a thing_.
 
 While machines only process _information_, people's brains run on concepts and ideas.  For people, abstraction is critical: nothing exists unless we have a name for it.  Our world is just atoms, but we don't think like this.  _The name is the thing_.  
 
@@ -313,7 +313,7 @@ This brings about [Misinterpretation Risk](Communication-Risk#misinterpretation-
 
 ![Message Risk](images/generated/invisibility-risk.png) 
 
-Another cost of [Abstraction](Abstraction) is [Invisibility Risk](Communication-Risk#invisibility-risk).  While abstraction is a massively powerful technique, (as we saw above in the section on [Protocols](Communication-Risk#protocols), it allows things like the Internet to happen) it lets the function of a thing hide behind the layers of abstraction and become invisible.  
+Another cost of [Abstraction](Glossary#abstraction) is [Invisibility Risk](Communication-Risk#invisibility-risk).  While abstraction is a massively powerful technique, (as we saw above in the section on [Protocols](Communication-Risk#protocols), it allows things like the Internet to happen) it lets the function of a thing hide behind the layers of abstraction and become invisible.  
 
 #### Invisibility Risk In Software
 
@@ -333,7 +333,7 @@ When you build a software service, or even implement a thread, ask yourself:  "H
 
 [Invisibility Risk](Communication-Risk#invisibility-risk) is risk due to information not sent.  But because humans don't need a complete understanding of a concept to use it, we can cope with some [Invisibility Risk](Communication-Risk#invisibility-risk) in communication, and this saves us time when we're talking.   It would be _painful_ to have conversations if, say, the other person needed to understand everything about how cars worked in order to discuss cars.  
 
-For people, [Abstraction](Abstraction) is a tool that we can use to refer to other concepts, without necessarily knowing how the concepts work.  This divorcing of "what" from "how" is the essence of abstraction and is what makes language useful.   
+For people, [Abstraction](Glossary#abstraction) is a tool that we can use to refer to other concepts, without necessarily knowing how the concepts work.  This divorcing of "what" from "how" is the essence of abstraction and is what makes language useful.   
 
 The debt of [Invisibility Risk](Communication-Risk#invisibility-risk) comes due when you realise that _not_ being given the details _prevents_ you from reasoning about it effectively.  Let's think about this in the context of a project status meeting, for example:
  

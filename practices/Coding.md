@@ -12,9 +12,9 @@ Often, this can be called "programming", "hacking" or "development", although th
 
 In [Development Process](Development-Process) we introduced the following diagram to show what is happening when we do some coding.  Let's generalize a bit from this diagram:
 
-- We start with a [Goal In Mind](Goal-In-Mind) to implement _something_.
+- We start with a [Goal In Mind](Glossary#Goal-In-Mind) to implement _something_.
 - We build an [Internal Model](Glossary#Internal-Model) of how we're going to meet this goal (though coding, naturally)
-- Then, we find out how well our idea stands up when we [Meet Reality](Meet-Reality) and try it out in our code-test-run-debug cycle.
+- Then, we find out how well our idea stands up when we [Meet Reality](Glossary#Meet-Reality) and try it out in our code-test-run-debug cycle.
 - As we go, the main outcome is that we change reality, and create code, but along the way, we discover where our [Internal Model](Glossary#Internal-Model) was wrong, in the form of surfacing [Hidden Risks](Glossary#hidden-risk).
 
 ![Coding](images/generated/development_process_code.png)
@@ -94,7 +94,7 @@ By having more people involved, the feedback loop will be longer than the two-ma
 
 ### Specialization
 
-One of the problems with a **SkunkWorks** approach is that you end up with more [Coordination Risk](Coordination-Risk) than you'd like, as your different skunk-teams end up with different [Internal Models](Glossary#Internal-Model) and different [Goals](Goal-In-Mind).  
+One of the problems with a **SkunkWorks** approach is that you end up with more [Coordination Risk](Coordination-Risk) than you'd like, as your different skunk-teams end up with different [Internal Models](Glossary#Internal-Model) and different [Goals](Glossary#Goal-In-Mind).  
 
 In large companies, this is called [Silo Mentality](https://en.wikipedia.org/wiki/Information_silo) - the tendency for lines of business to stop communicating and sharing with one another.  As you can imagine, this leads to a more [Complex](Complexity-Risk) and [bureaucratic](Process-Risk#bureaucratic-risk) structure than would be optimal.
 
@@ -102,7 +102,7 @@ But this can happen within a single coding team, too:  by splitting up and worki
 
 This is _perfectly normal_:  we _need_ people to have different opinions and points-of-view.  We _need_ specialisation, it's how humanity has [ended up on top](https://en.wikipedia.org/wiki/Division_of_labour).  It's better to have a team who, between them all, know a codebase really well, than a group of people who know it poorly.   
 
-The reason for this is explained again by the first diagram in this section:  the closer our [Internal Model](Glossary#Internal-Model) matches [Reality](Meet-Reality), the fewer [Hidden Risks](Glossary#hidden-risk) we will meet, and the easier we'll have it.
+The reason for this is explained again by the first diagram in this section:  the closer our [Internal Model](Glossary#Internal-Model) matches [Reality](Glossary#Meet-Reality), the fewer [Hidden Risks](Glossary#hidden-risk) we will meet, and the easier we'll have it.
 
 The downside of specialization is [Coordination Risk](Coordination-Risk):  
  - If your payroll expert is off ill for a week, progress on that stops. 
