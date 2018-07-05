@@ -2,6 +2,6 @@
 
 
 
-hidden risks
-attendant risks
-mitigated risks
+## Hidden Risk
+## Attendant Risk
+## Mitigated Risk

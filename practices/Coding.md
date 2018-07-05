@@ -15,7 +15,7 @@ In [Development Process](Development-Process) we introduced the following diagra
 - We start with a [Goal In Mind](Goal-In-Mind) to implement _something_.
 - We build an [Internal Model](Internal-Model) of how we're going to meet this goal (though coding, naturally)
 - Then, we find out how well our idea stands up when we [Meet Reality](Meet-Reality) and try it out in our code-test-run-debug cycle.
-- As we go, the main outcome is that we change reality, and create code, but along the way, we discover where our [Internal Model](Internal-Model) was wrong, in the form of surfacing [Hidden Risks](Hidden-Risks).
+- As we go, the main outcome is that we change reality, and create code, but along the way, we discover where our [Internal Model](Internal-Model) was wrong, in the form of surfacing [Hidden Risks](Risk#Hidden-Risk).
 
 ![Coding](images/generated/development_process_code.png)
 
@@ -88,7 +88,7 @@ The idea here is _again_ to minimize the length of the feedback loop, and focus 
 
 To give some idea of the [Conceptual Integrity Risk](Feature-Risk) involved, initially, the team were building a _tablet_ using the multi-touch technology that the iPhone introduced to the world, but pivoted towards the phones after the failure of the "Apple Phone" collaboration with Motorola.
 
-Scott Forstall picked a small, secret team from within the ranks of Apple.  By doing this, he mitigated [Communication Risk](Communication-Risk) and [Coordiation Risk](Coordiation-Risk) _within his team_, but having fewer people in the room meant more [Throughput Risk](Schedule-Risk).
+Scott Forstall picked a small, secret team from within the ranks of Apple.  By doing this, he mitigated [Communication Risk](Communication-Risk) and [Coordination Risk](Coordination-Risk) _within his team_, but having fewer people in the room meant more [Throughput Risk](Schedule-Risk).
 
 By having more people involved, the feedback loop will be longer than the two-man prototyping team, but that's the tradeoff you get for mitigating those other risks.
 
@@ -96,7 +96,7 @@ By having more people involved, the feedback loop will be longer than the two-ma
 
 One of the problems with a **SkunkWorks** approach is that you end up with more [Coordination Risk](Coordination-Risk) than you'd like, as your different skunk-teams end up with different [Internal Models](Internal-Model) and different [Goals](Goal-In-Mind).  
 
-In large companies, this is called [Silo Mentality](https://en.wikipedia.org/wiki/Information_silo) - the tendency for lines of business to stop communicating and sharing with one another.  As you can imagine, this leads to a more [Complex](Complexity-Risk) and [bureaucratic](Bureaucratic-Risk) structure than would be optimal.
+In large companies, this is called [Silo Mentality](https://en.wikipedia.org/wiki/Information_silo) - the tendency for lines of business to stop communicating and sharing with one another.  As you can imagine, this leads to a more [Complex](Complexity-Risk) and [bureaucratic](Process-Risk#bureaucratic-risk) structure than would be optimal.
 
 But this can happen within a single coding team, too:  by splitting up and working on different pieces of functionality within a project, the team _specialises_ and becomes expert in the parts it has worked on.  This means the team members have different [Internal Models](Internal-Model) of the codebase.
 

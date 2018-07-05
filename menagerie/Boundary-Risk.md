@@ -8,6 +8,7 @@ AND DEAD END RISK
 
 Musical Instruments - ergonomics and boundary risk.
 
+used to be boundary risk was the risk that problems occur because you can't test across boundaries.
 
 ## Integration And Translation
 
@@ -22,13 +23,13 @@ Let's take a look at a hypothetical project structure:
 tbd.
 
 In this design, we have included 3 dependencies, `a`, `b`, `c`.  As you can see, `Our Code` is orchestrating the flow of information between them:
- - First, it receives something from `a`, using the [Protocol] of `a`.
- - Then, it **Translates** this into the [Protocol] of `b`, retrieving something back from `b`.
- - Then, it **Translates** that into the [Protocol] of `c`.
+ - First, it receives something from `a`, using the [Protocol]() of `a`.
+ - Then, it **Translates** this into the [Protocol]() of `b`, retrieving something back from `b`.
+ - Then, it **Translates** that into the [Protocol]() of `c`.
  
 You could say we are doing **Integration** of the different dependencies, or **Translation** between those dependencies.  Since we are talking about **Translation**, we are clearly talking about [Communication Risk](Communication-Risk) again:  our task in **Integrating** all of these components is _to get them to talk to each other_.
 
-From a [Cyclomatic Complexity] point of view, this is a very simple structure, with low [Complexity Risk](Complexity-Risk).  But each of these systems presents us with **Boundary Risk**, because we don't know that we'll be able to make them _talk to each other_ properly:
+From a [Cyclomatic Complexity]() point of view, this is a very simple structure, with low [Complexity Risk](Complexity-Risk).  But each of these systems presents us with **Boundary Risk**, because we don't know that we'll be able to make them _talk to each other_ properly:
  - Maybe `a` outputs dates, in a strange calendar format that `b` won't understand.
  - Maybe `b` works on some streaming API basis, that is incompatible with `a`.
  - Maybe `c` runs on Windows, whereas `a` and `b` run on Linux.
@@ -49,13 +50,13 @@ So **Boundary Risk** is the attendant [Complexity](Complexity-Risk) required to 
 
 ### Drupal and WordPress
 
-On the face of it, [WordPress] and [Drupal] should be very similar:
+On the face of it, [WordPress]() and [Drupal]() should be very similar:
  - They are both [Content Management Systems]
  - They both use a [LAMP (Linux, Apache, MySql, PHP) Stack]
  - They were both started around the same time.
  - They are both Open-Source, and have a wide variety of plugins.
 
-However, in practice, they are very different.  This could be put down to different _design goals_:  it seems that [WordPress] was focused much more on usability, and an easy learning curve, whereas [Drupal] supported plugins for building things with complex data formats.  It could also be down to the _design decisions_:  although they both support [Plugins], they do it in very different ways.  
+However, in practice, they are very different.  This could be put down to different _design goals_:  it seems that [WordPress]() was focused much more on usability, and an easy learning curve, whereas [Drupal]() supported plugins for building things with complex data formats.  It could also be down to the _design decisions_:  although they both support [Plugins], they do it in very different ways.  
 
 Alternatively, I could have picked on Team City and Jenkins here, or Maven and Gradle.  In all cases, the choice of plugins I have is dependent on the platform I've chosen, despite the fact that the platforms are solving pretty much the same problem.  If I want to 
 
@@ -63,7 +64,7 @@ This is a crucial determinant of **Boundary Risk**:  given the same problems, pe
 
 In all these cases, 
 
-Nowadays, the [WordPress] user base is huge:  approximately tbd 30% of all websites are hosted with [WordPress].  For [Drupal] it's tbd.  Because [WordPress] is so popular, it has attracted an [ecosystem] of plugin developers, who have bent the platform to more purposes, and expanded the boundary of it's functionality.  The [WordPress] APIs are now much more complex than they were originally, in order to support this vast ecosystem of plugins.
+Nowadays, the [WordPress]() user base is huge:  approximately tbd 30% of all websites are hosted with [WordPress].  For [Drupal]() it's tbd.  Because [WordPress]() is so popular, it has attracted an [ecosystem]() of plugin developers, who have bent the platform to more purposes, and expanded the boundary of it's functionality.  The [WordPress]() APIs are now much more complex than they were originally, in order to support this vast ecosystem of plugins.
 
 ### Java 
 
@@ -78,10 +79,10 @@ Java is a very popular platform.  Let's look at how the number of public classes
 Why does this happen?  
  - More and more people are using Java for more and more things.  It's popularity begets more popularity.  
  - Human needs are _fractal_ in complexity.  You can always find ways to make an API _better_.
- - There is [Red Queen Risk](Feature-Risk):  our requirements evolve with time.   [Android Apps] weren't even a thing when Java 3 came out, for example, yet they are all written with this.  
+ - There is [Red Queen Risk](Feature-Risk):  our requirements evolve with time.   [Android Apps]() weren't even a thing when Java 3 came out, for example, yet they are all written with this.  
  - The art of good design is to afford the greatest increase in functionality with the smallest increase in boundary possible, and this usually means [Refactoring](Coding).  But, this is at odds with [Backward Compatibility](Communication-Risk)
 
-Each new version has a larger boundary than the one before, and this increases the API [Complexity Risk](Complexity-Risk) as there is more functionality to deal with.  But, on the plus side, this increased **Boundary Risk** is offset by the decrease in the [Complexity Risk] in programs depending on it:  all that extra functionality should mean you have less code to write, right?
+Each new version has a larger boundary than the one before, and this increases the API [Complexity Risk](Complexity-Risk) as there is more functionality to deal with.  But, on the plus side, this increased **Boundary Risk** is offset by the decrease in the [Complexity Risk]() in programs depending on it:  all that extra functionality should mean you have less code to write, right?
 
 
 java is popular because it defeated boundary risk.  js does the same.
@@ -97,11 +98,11 @@ Sometimes, technology comes along that allows us to cross boundaries effectivey,
 
 ### [ASCII]
 
-[ASCII] fixed the different-character-sets boundary risk by being a standard that others could adopt.   [UTF] continues this work to ensure we don't have to worry about **Translation** from one encoding to another.  This mitigates **Boundary Risk** by standards.
+[ASCII]() fixed the different-character-sets boundary risk by being a standard that others could adopt.   [UTF]() continues this work to ensure we don't have to worry about **Translation** from one encoding to another.  This mitigates **Boundary Risk** by standards.
 
 ### Maven / Semver
 
-Maven is a Java build tool in which you can specify a project declaratively, including details of all its dependencies.   Maven will then manage the downloading of these dependencies at compile time.   [Semantic Versioning] is a technique for ameliorating the problems of different dependencies being on different version numbers.
+Maven is a Java build tool in which you can specify a project declaratively, including details of all its dependencies.   Maven will then manage the downloading of these dependencies at compile time.   [Semantic Versioning]() is a technique for ameliorating the problems of different dependencies being on different version numbers.
 
 ### C
 
@@ -109,7 +110,7 @@ The C programming language provided a way to get the same programs compiled agai
 
 ### Java
 
-Java provided something similar to C: instead of a _compile anywhere_ ethos, it was a _run anywhere_ ethos.  Java code could run anywhere where there was a [Java Virtual Machine] installed.   Again, this _abstracted_ away the details of the lower level architecture.
+Java provided something similar to C: instead of a _compile anywhere_ ethos, it was a _run anywhere_ ethos.  Java code could run anywhere where there was a [Java Virtual Machine]() installed.   Again, this _abstracted_ away the details of the lower level architecture.
 
 ### Microservices
 

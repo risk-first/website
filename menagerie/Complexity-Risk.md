@@ -166,9 +166,9 @@ Although we ended up with our second graph having a **Cyclomatic Complexity** of
 
 Here, we've spotted that the structure of subgraphs **P1** and **P2** are the same:  we can have the same functions there to assemble those.  Noticing and exploiting patterns of repetition is one of the fundamental tools we have in the fight against [Complexity Risk](Complexity-Risk).
 
-## Complexity As Mass
+So, we've looked at some measures of software structure complexity, in order that we can say "this is more complex than this".  However, we've not really said why complexity entails [Risk](Risk).  So let's address that now by looking at two analogies, [Mass](Complexity-Risk#Complexity-as-mass) and [Technical Debt](Complexity-Risk#technical-debt).  
 
-So, we've looked at some measures of software structure complexity, in order that we can say "this is more complex than this".  However, we've not really said why complexity entails [Risk](Risk).  So let's address that now by looking at two analogies, [Mass](Complexity-as-mass) and [Technical Debt](Complexity-Risk#technical-debt).  
+## Complexity As Mass
 
 The first way to look at complexity is as **Mass** or **Inertia** :  a software project with more complexity has greater **Inertia** or **Mass** than one with less complexity.
 
@@ -289,7 +289,7 @@ Memory Management is another place where [Complexity Risk](Complexity-Risk) hide
 
 > "Memory leaks are a common error in programming, especially when using languages that have no built in automatic garbage collection, such as C and C++." - [Memory Leak, _Wikipedia_](https://en.wikipedia.org/wiki/Memory_leak)
 
-[Garbage Collectors](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)) (as found in Javascript or Java) offer you the deal that they will mitigate the [Complexity Risk](Complexity-Risk) of you having to manage your own memory, but in return perhaps give you fewer guarantees about the _performance_ of your software.  Again, there are times when you can't accommodate this [Performance Risk](Production-Risk#performance-risk), but these are rare and usually only affect a small portion of an entire software-system.  
+[Garbage Collectors](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)) (as found in Javascript or Java) offer you the deal that they will mitigate the [Complexity Risk](Complexity-Risk) of you having to manage your own memory, but in return perhaps give you fewer guarantees about the _performance_ of your software.  Again, there are times when you can't accommodate this [Operational Risk](Operational-Risk#performance-risk), but these are rare and usually only affect a small portion of an entire software-system.  
  
 ### Protocols And Types
 
@@ -370,3 +370,6 @@ This is a strong argument for the use of libraries.  But, when should you use a 
 tbd - next section.
 
 
+costs associated with complexity risk
+
+CHANGE is also more risky why?

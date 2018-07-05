@@ -57,7 +57,7 @@ Getting complex systems to behave as pure functions can be costly, but there are
 
 **Automated Testing** has an interesting effect on managing [Complexity Risk](Complexity-Risk):  Although you may initially write a Unit Test (say) to mitigate the risk of [having implemented a feature wrongly](Feature-Risk), you are also given insurance against future change breaking that feature.   That is to say, they are _regression tests_.  However, implementing tests like this is better than building regression tests, [as discussed here](Regression-Testing).
 
--- how do automated tests mitigate complexity risk?
+-- how do automated tests mitigate complexity risk? tbd
 
 ### Manual Tests
 

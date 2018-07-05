@@ -53,7 +53,7 @@ Usually, it's hard to get sign-offs.  This is because it's hard to get lots of p
  slowed down by bureaucratic risk
 
  
-Helps solve [Disenfranchisement] problems
+Helps solve [Disenfranchisement]() problems
 
 ## How It Works
 

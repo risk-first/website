@@ -49,7 +49,7 @@ Breaking a large delivery down into lots of small releases has an impact on [Pro
  
 ### [Schedule Risk](Schedule-Risk)
 
-If you're able to do [Continuous Delivery](DevOps), and have de-risked the release process, then you can eliminate some [Schedule Risk](Schedule-Risk), because you'll know you can hit any date with _something_.  The risks of what you deliver on that date are then [Feature Risk] rather than [Schedule Risk](Schedule-Risk).
+If you're able to do [Continuous Delivery](DevOps), and have de-risked the release process, then you can eliminate some [Schedule Risk](Schedule-Risk), because you'll know you can hit any date with _something_.  The risks of what you deliver on that date are then [Feature Risk]() rather than [Schedule Risk](Schedule-Risk).
 
 ## Attendant Risks
 

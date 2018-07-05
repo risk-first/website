@@ -19,7 +19,7 @@ Process exists to mitigate other kinds of risk, and for this reason, we'll be lo
 But until we get there, let's look at some examples of how process can mitigate other risks:
 
  - [Coordination Risk](Coordination-Risk):   You can often use process to help people coordinate.  For example, a production Line is a process where work being done by one person is pushed to the next person when it's done.  A meeting booking process ensures that people will all attend a meeting together at the same place and time, and that a room is available for it. 
- - [Dependency Risk](Dependency-Risk): You can use processes to make dependencies explicit and mitigate dependency risk.  For example, a process for hiring a car will make sure there is a car available at the time you need it.  Alternatively, if we're processing a loan application, we might need evidence of income or bank statements.  We can push this [Dependency Risk] onto the person asking for the loan, by making it part of the process and not accepting the application until this has been provided.
+ - [Dependency Risk](Dependency-Risk): You can use processes to make dependencies explicit and mitigate dependency risk.  For example, a process for hiring a car will make sure there is a car available at the time you need it.  Alternatively, if we're processing a loan application, we might need evidence of income or bank statements.  We can push this [Dependency Risk]() onto the person asking for the loan, by making it part of the process and not accepting the application until this has been provided.
  - [Complexity Risk](Complexity-Risk): Working within a process can reduce the amount of Complexity you have to deal with.  We accept that processes are going to slow us down, but we appreciate the reduction in risk this brings.  (They allow us to trade Complexity for schedule risk).  For example, setting up a server might be complex, but filling in a form to do the job might simplify things.  Clearly, the complexity hasn't gone away, but it's hidden within the process.  Process therefore can provide [Abstraction].
  - **Operational Risk**:  Operational Risk is the risk of people not doing their job properly (tbd).  But, by having a process, (and asking, did this person follow the process?) you can draw a distinction between a process failure and a personnel failure.  For example, making a loan to a money launderer _could_ be a failure of the loan agent.   But, if they followed the _process_, it's a failure of the Process itself. 
 
@@ -41,7 +41,7 @@ tbd
 
 tbd
 
-3. T organises bureaucratically, so that there is a controlled process (P) by which A can get done.  Like a cell, they have arranged a protective barrier around themselves, the strength of which depends on the power conferred to them by control of A.  P probably involves filling in a form (or following some other [Protocol](Communication-Risk)).   They can now deal with requests on a first-come-first-served basis: [Resource Risk] and [Dependency Risk] are externalized.  
+3. T organises bureaucratically, so that there is a controlled process (P) by which A can get done.  Like a cell, they have arranged a protective barrier around themselves, the strength of which depends on the power conferred to them by control of A.  P probably involves filling in a form (or following some other [Protocol](Communication-Risk)).   They can now deal with requests on a first-come-first-served basis: [Resource Risk]() and [Dependency Risk]() are externalized.  
 
 tbd
 
@@ -83,10 +83,10 @@ For many years I have worked in the Finance Industry, and it's given me time to 
 
 ## Process Risks
 
-**Process Risk**, then, is a type of [Dependency Risk](Dependency Risk), where you are relying on a process.  In a way, it's no different from any other kind of [Dependency Risk].   But [Process Risk] manifests itself in fairly predictable ways:
+**Process Risk**, then, is a type of [Dependency Risk](Dependency-Risk), where you are relying on a process.  In a way, it's no different from any other kind of [Dependency Risk].   But [Process Risk]() manifests itself in fairly predictable ways:
 
- - [Reliability Risk](Dependency-Risk): If _people_ are part of the process, there's the chance that they forget to follow the process itself, and miss steps or forget your request completely.  The reliability is related to the amount of [Complexity Risk] the process is absorbing.
- - [Visibility Risk]: Usually, processes (like other dependencies) trade [Complexity Risk] for visibility:  it's often not possible to see how far along a process is to completion.  Sometimes, you can do this to an extent.  For example, when I send a package for delivery, I can see roughly how far it's got on the tracking website.  But, this is still less-than-complete information, and is a representation of reality.    
+ - [Reliability Risk](Dependency-Risk): If _people_ are part of the process, there's the chance that they forget to follow the process itself, and miss steps or forget your request completely.  The reliability is related to the amount of [Complexity Risk]() the process is absorbing.
+ - [Visibility Risk]: Usually, processes (like other dependencies) trade [Complexity Risk]() for visibility:  it's often not possible to see how far along a process is to completion.  Sometimes, you can do this to an extent.  For example, when I send a package for delivery, I can see roughly how far it's got on the tracking website.  But, this is still less-than-complete information, and is a representation of reality.    
  - Process Fit Risk/ [Dead-End Risk](Dependency-Risk): You have to be careful to match the process to the outcome you want.  Much like choosing a [Software Dependency](Software-Dependency-Risk), initiating a process has no guarantee that your efforts won't be wasted and you'll be back where you started from.  The chances of this happening increase as you get further from the standard use-case for the process, and the sunk cost increases with the length of time the process takes to report back.
  - [Agency Risk](Agency-Risk): Due to Parkinson's Law, above.
 	
@@ -96,11 +96,11 @@ When processes fail, this is called *Operational Risk*:
 
 tbd - Wikipedia definition
 
-This is a very specific name for [Reliability Risk] with regard to processes.  In the UK each year, X number of people are killed in car accidents.  If you regard driving a car from A to B as a process, then you could say that car accidents are [Operational Risk].  Why do we tolerate such costly operational risk in the UK.  Could it be reduced?  Well, yes.  There are lots of ways.  One way is that we could just reduce the speed limit.  
+This is a very specific name for [Reliability Risk]() with regard to processes.  In the UK each year, X number of people are killed in car accidents.  If you regard driving a car from A to B as a process, then you could say that car accidents are [Operational Risk].  Why do we tolerate such costly operational risk in the UK.  Could it be reduced?  Well, yes.  There are lots of ways.  One way is that we could just reduce the speed limit.  
  
-It is interesting that we _don't_ do that:  although we know the driving process fails, and fails in a way that is costly to human lives, as a society we value the freedom, the economic efficiency and time savings that come from not mitigating this operational risk.  Changing the speed limit would have it's own risks, of course: there would be a complicated transition to manage.   However, if ten times as many people were killed in car accidents, and it was shown that reducing the speed limit would help, maybe it would be done.  The [Operational Risk] would outweigh the [Schedule Risk](Schedule Risk).
+It is interesting that we _don't_ do that:  although we know the driving process fails, and fails in a way that is costly to human lives, as a society we value the freedom, the economic efficiency and time savings that come from not mitigating this operational risk.  Changing the speed limit would have it's own risks, of course: there would be a complicated transition to manage.   However, if ten times as many people were killed in car accidents, and it was shown that reducing the speed limit would help, maybe it would be done.  The [Operational Risk]() would outweigh the [Schedule Risk](Schedule-Risk).
 
-The point of this is that we _accept_ [Operational Risk] as we go.  However, if opportunities rise to mitigate it, which don't leave us with a net risk increase elsewhere, we'll make those improvements.      
+The point of this is that we _accept_ [Operational Risk]() as we go.  However, if opportunities rise to mitigate it, which don't leave us with a net risk increase elsewhere, we'll make those improvements.      
 
 ## Counterparty Risk
 
@@ -108,13 +108,13 @@ Where the process you depend on is being run by a third-party organisation, (or 
 
 > tbd.
 
-Money is _changing hands_ between you and the supplier of the process, and often, the money doesn't transfer at the same time as the process is performed.  Let's look at an example:  Instead of hosting my website on a server in my office, I could choose to host my software project with an online provider.   I am trading [Complexity Risk] for [Counterparty Risk], because now, I have to care that the supplier is solvent.  There's a couple of ways this could go wrong:  They may _take my payment_, but then turn off my account.  Or, they could go bankrupt, and leave me with the costs of moving to another provider (this is also [Dead-End Risk]).  
+Money is _changing hands_ between you and the supplier of the process, and often, the money doesn't transfer at the same time as the process is performed.  Let's look at an example:  Instead of hosting my website on a server in my office, I could choose to host my software project with an online provider.   I am trading [Complexity Risk]() for [Counterparty Risk], because now, I have to care that the supplier is solvent.  There's a couple of ways this could go wrong:  They may _take my payment_, but then turn off my account.  Or, they could go bankrupt, and leave me with the costs of moving to another provider (this is also [Dead-End Risk]).  
 
 Mechanisms like _insurance_ and _guarantees_ help reduce this risk:  
 
 ## Feedback Loops
 
-[Operational Risk] is usually incurred for outliers: processes tend to work well for the common cases, because *practice makes perfect*.  Processes are really tested when unusual situations occur.  Having mechanisms to deal with edge-cases can incur [Complexity Risk]Complexity-Risk), so often it's better to try and have clear boundaries of what is "in" and "out" of the process' domain.
+[Operational Risk]() is usually incurred for outliers: processes tend to work well for the common cases, because *practice makes perfect*.  Processes are really tested when unusual situations occur.  Having mechanisms to deal with edge-cases can incur [Complexity Risk]Complexity-Risk), so often it's better to try and have clear boundaries of what is "in" and "out" of the process' domain.
 
 Sometimes, processes are _not_ used commonly.  How can we rely on them anyway?  Usually, the answer is to build in extra feedback loops anyway:
 
@@ -126,13 +126,15 @@ The feedback loops allow us to perform [Retrospectives and Reviews](Review) to i
 
 ## Sign-Offs
 
-Often, Processes will include sign-off steps.  The Sign-Off is an interesting mechanism:  by signing off on something for the business, people are usually in some part staking their reputation on something being right.  Therefore, you would expect that sign-off involves a lot of [Agency Risk](Agency-Risk):  people don't want to expose themselves in career-limiting ways.  Therefore, the bigger the risk they are being asked to swallow, the more cumbersome and protracted the sign off process.  Often, Sign Offs boil down to a balance of risk for the signer:  on the one hand, personal risk from signing off, on the other, the risk of upsetting the rest of the staff waiting for the sign-off, and the [Dead End Risk] of all the effort gone into getting the sign off if they don't.  
+Often, Processes will include sign-off steps.  The Sign-Off is an interesting mechanism:  by signing off on something for the business, people are usually in some part staking their reputation on something being right.  Therefore, you would expect that sign-off involves a lot of [Agency Risk](Agency-Risk):  people don't want to expose themselves in career-limiting ways.  Therefore, the bigger the risk they are being asked to swallow, the more cumbersome and protracted the sign off process.  Often, Sign Offs boil down to a balance of risk for the signer:  on the one hand, personal risk from signing off, on the other, the risk of upsetting the rest of the staff waiting for the sign-off, and the [Dead End Risk]() of all the effort gone into getting the sign off if they don't.  
 
 This is a nasty situation, but there are a couple of ways to de-risk this: 
  - break signoffs down into bite-size chunks of risk that are acceptable to those doing the sign-off.  
  - Agree far-in-advance the sign-off criteria.  As discussed in [Risk Theory](Risk-Theory), people have a habit of heavily discounting future risk, and it's much easier to get agreement on the criteria than it is to get the sign-off. 
 
-## Bureaucracy
+## Bureaucratic Risk
+
+tbd.
 
 
 ## Dependencies - A Quick Review
@@ -149,20 +151,20 @@ So, we've looked at different types of dependencies.
 |Risks Mitigated       |[Complexity Risk][6] from having  |[Complexity Risk][6]|[Coordination Risk][7]|[Resource Coordination Risk][8]| 
 |                      |to do the process yourself        |                    |                      |                               |
 |----------------------|----------------------------------|--------------------|----------------------|-------------------------------|
-|[Communication Risk]  |Understanding the API, using it   |Filling in forms    |Communicating the     |- Being misunderstood          |
+|[Communication Risk]()  |Understanding the API, using it   |Filling in forms    |Communicating the     |- Being misunderstood          |
 |                      |                                  |wrongly.            |right place and time  |- Instructions not followed    |
 |                      |                                  |                    |to everyone           |                               |
 |----------------------|----------------------------------|--------------------|----------------------|-------------------------------|
-|[Invisibility Risk]   |Understanding the API, but not the|You don't know how  |- Will people show up?|                               |
+|[Invisibility Risk]()   |Understanding the API, but not the|You don't know how  |- Will people show up?|                               |
 |                      |implementation.    Debugging      |far along the work  |- Will it be what you |                               |
 |                      |is harder.                        |might be            | expect?              |                               |
 |----------------------|----------------------------------|--------------------|----------------------|-------------------------------|
-|[Feature Risk]        |The product might not work how you|Might not           |Is this:              |Do the available staff have    |
+|[Feature Risk]()        |The product might not work how you|Might not           |Is this:              |Do the available staff have    |
 |                      |expected.  If features are missing|cater to your exact |-What you want        |the skills you need?           |
 |                      |you might be stuck.               |use case            |-When you want it?    |                               |
 |----------------------|----------------------------------|--------------------|----------------------|-------------------------------|
 |                      |                                  |                      |                    |                          |
-|[Dead End Risk]       |                                  |                      |                    |                          |
+|[Dead End Risk]()       |                                  |                      |                    |                          |
 |                      |                                  |                      |                    |                          |
 
 [1]: (Dependency-Risk)

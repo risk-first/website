@@ -31,7 +31,7 @@ In this section, I am going to try and show you some of the geography of the [Ri
 In fact, we're going to try and categorize the kinds of things we see on this risk landscape.  But, this isn't going to be perfect: 
  - One risk can "blend" into another just like sometimes a "field" is also a "car-park" or a building might contain some trees (but isn't a forest).   
  - There is _correlation_ between different risks:  one risk may cause another, or two risks may be due to the same underlying cause.  
- - As we saw in [Part 1](Introduction), mitigating one risk can give rise to another, so risks are often _inversely correlated_.
+ - As we saw in [Part 1](Home#Introduction), mitigating one risk can give rise to another, so risks are often _inversely correlated_.
 
 ## Why Should We Categorize The Risks
 
