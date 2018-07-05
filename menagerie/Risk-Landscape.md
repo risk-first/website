@@ -17,7 +17,7 @@ They get expressed in ways like this:
 
 In the financial crisis, though, these models of risk didn't turn out to be much use.   Although there are lots of conflicting explanations of what happened, one way to look at it is this:
  - Liquidity difficulties (i.e. amount of cash you have for day-to-day running of the bank) caused some banks to not be able to cover their interest payments.
- - This caused credit defaults (the thing that **Credit Risk** measures were meant to guard against) even though the banks _technically_ were solvent.
+ - This caused credit defaults (the thing that [Credit Risk](https://en.wikipedia.org/wiki/Credit_risk) measures were meant to guard against) even though the banks _technically_ were solvent.
  - That meant that, in time, banks got bailed out, share prices crashed and there was lots of [Quantitative Easing](https://en.wikipedia.org/wiki/Quantitative_easing).  
  - All of which had massive impacts on the markets in ways that none of the [Market Risk](https://en.wikipedia.org/wiki/Market_risk) models foresaw.
 
