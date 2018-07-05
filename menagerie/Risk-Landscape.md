@@ -2,12 +2,12 @@
 
 Risk is messy.  It's not always easy to tease apart the different components of risk and look at them individually.  Let's look at a high-profile recent example to see why.
 
-## Financial Crisis
+## The Financial Crisis
 
 In the [Financial Services](https://en.wikipedia.org/wiki/Financial_services) industry, lots of effort is spend calculating things like:
 - [Market Risk](https://en.wikipedia.org/wiki/Market_risk):  the risk that the amount some asset you hold/borrow/have loaned is going to change in value.
-- [Credit Risk](https://en.wikipedia.org/wiki/Credit_risk).  the risk that someone who owes you a payment at a specific point in time might not pay it back.
-- [Liquidity Risk](tbd)
+- [Credit Risk](https://en.wikipedia.org/wiki/Credit_risk):  the risk that someone who owes you a payment at a specific point in time might not pay it back.
+- [Liquidity Risk](https://en.wikipedia.org/wiki/Liquidity_risk): the risk that you can't find a market to sell/buy something, usually leading to a shortage of ready cash.
 
 ... and so on.  You don't need to know the details exactly to understand this story.
 
