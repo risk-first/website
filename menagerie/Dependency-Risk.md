@@ -129,7 +129,7 @@ Much like [Reliability Risk](#reliability-risk), there is science for it:
 
 ## Communication Risk
 
-We've already looked at communication risk in a lot of depth, and we're going to go deeper still in [Software Dependency Risk](Software-Dependency-Risk), but let's look at some general issues around communicating dependencies.  Recall from the discussion on [Marketing Communications](Communication-Risk#Marketing-Communications) which started like this:
+We've already looked at communication risk in a lot of depth, and we're going to go deeper still in [Software Dependency Risk](Software-Dependency-Risk), but let's look at some general issues around communicating dependencies.  In the [Communication Risk](Communication-Risk) section we looked at [Marketing Communications](Communication-Risk#Marketing-Communications) and talked about the levels of awareness that you could have with dependencies.  i.e.
 
  - The concept that there is such a thing as **D** which solves my problem isn't something I'd even considered.    
  - I'd like to use something like **D**, but how do I find it?  
