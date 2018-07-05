@@ -65,13 +65,13 @@ Below is a table outlining the different risks we'll see.  There _is_ an order t
 |[Communication Risk](Communication-Risk)            |Risks associated with getting messages heard and understood.|             
 |[Dependency Risk](Dependency-Risk)                  |Risks of depending on other people, products, software, functions, etc. This is a general look at dependencies, before diving into specifics like...|  
 |[Software Dependency Risk](Software-Dependency-Risk)|When you choose to depend on a software library, service or function.|    
-|[Process Risk](Process-Risk)                        |When you depend on a business process, or human process to give you something you need|
-|[Schedule Risk](Schedule-Risk)                      |Risks associated with having a dependency on time (or money)|    
-|[Boundary Risk](Boundary-Risk)                      |Risks due to making decisions that limit your choices later on|            
-|[Coordination Risk](Coordination-Risk)              |Risks due to the fact that systems contain multiple agents, which need to work together|       
-|[Map And Territory Risk](Map-And-Territory-Risk)    |Risks due to the fact that people don't see the world as it really is|  
-|[Agency Risk](Agency-Risk)                          |Risks that staff have their own goals, which might not align with those of the project/team|
-|[Operational Risk](Production-Risk)                 |General risks associated with running a software service or business in the real world|
+|[Process Risk](Process-Risk)                        |When you depend on a business process, or human process to give you something you need.|
+|[Schedule Risk](Schedule-Risk)                      |Risks associated with having a dependency on time (or money).|    
+|[Boundary Risk](Boundary-Risk)                      |Risks due to making decisions that limit your choices later on.  Sometimes, you go the wrong way on the [Risk Landscape](Risk-Landscape) and it's hard to get back to where you want to be.|            
+|[Coordination Risk](Coordination-Risk)              |Risks due to the fact that systems contain multiple agents, which need to work together.|       
+|[Map And Territory Risk](Map-And-Territory-Risk)    |Risks due to the fact that people don't see the world as it really is. (After all, they're working off different, imperfect [Internal Models](Glossary#internal-model).)|  
+|[Agency Risk](Agency-Risk)                          |Risks that staff have their own [Goals](Glossary#goal-in-mind), which might not align with those of the project or team.|
+|[Operational Risk](Production-Risk)                 |Software is embedded in a system containing people, buildings, machines and other services.  Operational risk considers this wider picture of risk associated with running a software service or business in the real world.|
        
 On each page we'll start by looking at the category of the risk _in general_, and then break this down into some specific subtypes.  At the end, in [Staging and Classifying](Staging-And-Classifying) we'll have a recap about what we've seen and make some guesses about how things fit together.                                                          
 
