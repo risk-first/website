@@ -69,20 +69,18 @@ So, we're going to look at [Dependency Risk](Dependency-Risk) for our toy events
  - [Scarcity Risk](Feature-Risk#market-risk)
  - [Communication Risk](Communication-Risk)
  - [Complexity Risk](Complexity-Risk)
- - [Fit Risk](Feature-Risk#feature-fit-risk)
+ - [Feature Fit Risk](Feature-Risk#feature-fit-risk)
  - [Dead-End Risk](Boundary-Risk#dead-end-risk) and [Boundary Risk](Boundary-Risk)  
  
 (Although you might be able to think of a few more.) 
- 
-tbd tree diagram of this.
  
 Let's look at each of these in turn.
 
 ## Schedule Risk
 
-By agreeing a _time_ and _place_ for something to happen, you're introducing [Deadline Risk](Schedule-Risk#Deadline-Risk).  Miss the deadline, and you miss the bus, miss the start of the meeting or get fined for not filling your tax return on time.  
+By agreeing a _time_ and _place_ for something to happen, you're introducing [Deadline Risk](Schedule-Risk#Deadline-Risk).  Miss the deadline, and you miss the bus, or the start of the meeting or get fined for not filling your tax return on time.  
 
-As discussed above schedules (such as bus timetables) exist so that _two or more parties can coordinate_, and [Deadline Risk](Schedule-Risk#Deadline-Risk) is on _all_ of the parties.  While there's a risk I am late, there's also a risk the bus is late.  I might miss the start of a concert, or the band might keep everyone waiting.   
+As discussed above, _schedules_ (such as bus timetables) exist so that _two or more parties can coordinate_, and [Deadline Risk](Schedule-Risk#Deadline-Risk) is on _all_ of the parties.  While there's a risk I am late, there's also a risk the bus is late.  I might miss the start of a concert, or the band might keep everyone waiting.   
  
 Each party can mitigate [Deadline Risk](Schedule-Risk#Deadline-Risk) with _slack_.  That is, ensuring that the exact time of the event isn't critical to your plans:   Don't build into your plans a _need_ to start shopping at 9am.   Arrive at the bus-stop _early_.   The amount of slack you build into the schedule is likely dependent on the level of risk you face:  I tend to arrive a few minutes early for a bus, because the risk is _low_ (there'll be another bus along soon), however I try to arrive over an hour early for a flight, because I can't simply get on the next flight straight away, and anyway, I've already paid for it.
  
