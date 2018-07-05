@@ -16,9 +16,9 @@ Synergy's release means that the app-store refresh will happen in a few weeks, s
 
 **Eve**:  Well, you know Synergy did their review and asked us to upgrade our Web Server to only allow TLS version 1.1 and greater?  
 
-**Bob**:  Yes, I remember:   We discussed it as a team and thought the simplest thing would be to change the security settings on the Web Server, but we all felt it was pretty risky.  We decided that in order to flush out [Hidden Risk](Attendant-Risk), we'd upgrade our entire production site to use it _now_, rather than wait for the app launch.
+**Bob**:  Yes, I remember:   We discussed it as a team and thought the simplest thing would be to change the security settings on the Web Server, but we all felt it was pretty risky.  We decided that in order to flush out [Hidden Risk](Risk#attendant-risk), we'd upgrade our entire production site to use it _now_, rather than wait for the app launch.
 
-**Eve**:  Right, and it _did_ flush out [Hidden Risk](Attendant-Risk): some people using Windows 7, downloading Excel spreadsheets on the site, couldn't download them:  for some reason, that combination didn't support anything greater than TLS version 1.0.  So, we had to back it out.
+**Eve**:  Right, and it _did_ flush out [Hidden Risk](Risk#attendant-risk): some people using Windows 7, downloading Excel spreadsheets on the site, couldn't download them:  for some reason, that combination didn't support anything greater than TLS version 1.0.  So, we had to back it out.
 
 **Bob**:  Ok, well I guess it's good we found out _now_.  It would have been a disaster to discover this after the go-live.
 
@@ -28,17 +28,17 @@ Synergy's release means that the app-store refresh will happen in a few weeks, s
 
 **Eve**:  How about we run two web-servers?  One for the existing content, and one for our new Synergy app?  We'd have to get a new external IP address, handle DNS setup, change the firewalls, and then deploy a new version of the Web Server software on the production boxes.
 
-**Bob**:  This feels like there'd be a lot of [Attendant Risk](Attendant-Risk):  and all of this needs to be handled by the Networking Team, so we're picking up a lot of [Bureaucratic Risk](Bureaucratic-Risk).  I'm also worried that there are too many steps here, and we're going to discover loads of [Hidden Risks](Attendant-Risk) as we go.
+**Bob**:  This feels like there'd be a lot of [Attendant Risk](Risk#attendant-risk):  and all of this needs to be handled by the Networking Team, so we're picking up a lot of [Bureaucratic Risk](Process-Risk#bureaucratic-risk).  I'm also worried that there are too many steps here, and we're going to discover loads of [Hidden Risks](Risk#attendant-risk) as we go.
 
-**Eve**:  Well, you're correct on the first one.  But, I've done this before not that long ago for a Chinese project, so I know the process - we shouldn't run into any new [Hidden Risk](Attendant-Risk).
+**Eve**:  Well, you're correct on the first one.  But, I've done this before not that long ago for a Chinese project, so I know the process - we shouldn't run into any new [Hidden Risk](Risk#attendant-risk).
 
 **Bob**:  Ok, fair enough.  But isn't there something simpler we can do?  Maybe some settings in the Web Server?
 
 **Eve**:  Well, if we were using Apache, yes, it would be easy to do this.  But, we're using Baroque Web Server, and it _might_ support it, but the documentation isn't very clear.
 
-**Bob**:  Ok, and upgrading it is a _big_ risk, right?  We'd have to migrate all of our [configuration](Configuration-Riks)... 
+**Bob**:  Ok, and upgrading it is a _big_ risk, right?  We'd have to migrate all of our [configuration](Complexity-Risk)... 
 
-**Eve**:  Yes, let's not go there.  But if we changing the settings on Baroque, we have the [Attendant Risk](Attendant-Risk) that it's not supported by the software and we're back where we started.  Also, if we isolate the Synergy app stuff now, we can mess around with it at any point in future, which is a big win in case there are other [Hidden Risks](Attendant-Risk) with the security changes that we don't know about yet.
+**Eve**:  Yes, let's not go there.  But if we changing the settings on Baroque, we have the [Attendant Risk](Risk#attendant-risk) that it's not supported by the software and we're back where we started.  Also, if we isolate the Synergy app stuff now, we can mess around with it at any point in future, which is a big win in case there are other [Hidden Risks](Risk#attendant-risk) with the security changes that we don't know about yet.
 
 **Bob**:  Ok, I can see that buys us something, but time is really short and we have holidays coming up.  
 

@@ -100,7 +100,7 @@ Bullshit jobs
 
 ## Biases
 
-It's tempting to think that [Map And Territory Risk] is something that happens to someone else, and that you are going to be immune to it.  
+It's tempting to think that [Map And Territory Risk]() is something that happens to someone else, and that you are going to be immune to it.  
 
 
 Unfortunately, science is here to prove you wrong - our brains are _filled_ with biases which 

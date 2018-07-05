@@ -41,7 +41,7 @@ There are basically five parts to this work:
  - Parts 1 and 2 really need to be read in sequentially, as they'll explain the concepts you need to digest the rest.  
  - Parts 3, 4 and 5 don't have a linear structure, you can dive in anywhere after reading the first two.
 
-### Part 1: [Introduction](Introduction)
+### Part 1: Introduction
 
 Some easy-to-digest ideas that will set the scene for examining the practices later.
 

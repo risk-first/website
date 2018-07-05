@@ -88,7 +88,7 @@ This works both ways.  Let's looks at some of the **Channel Risks** from the poi
 
 ![Communication Marketing](images/generated/communication_marketing.png)
 
-[Internal Models](Internal-Model) don't magically get populated with the information they need:  they fill up gradually, as shown in this diagram.  Popular products and ideas _spread_, by word-of-mouth or other means.  Part of the job of being a good technologist is to keep track of new **Ideas**, **Concepts** and **Options**, so as to use them as [Dependencies](Dependency) when needed.
+[Internal Models](Internal-Model) don't magically get populated with the information they need:  they fill up gradually, as shown in this diagram.  Popular products and ideas _spread_, by word-of-mouth or other means.  Part of the job of being a good technologist is to keep track of new **Ideas**, **Concepts** and **Options**, so as to use them as [Dependencies](Dependency-Risk) when needed.
 
 ## Protocols
 
@@ -297,7 +297,7 @@ only makes sense if the application has previously had the message
 Create user 53 with surname 'Smith'
 ```
 
-### Abstraction and Misinterpretation Risk
+### Misinterpretation Risk
 
 ![Message Risk](images/generated/misinterpretation-risk.png) 
 
@@ -309,7 +309,7 @@ While machines only process _information_, people's brains run on concepts and i
 
 This brings about [Misinterpretation Risk](Communication-Risk#misinterpretation-risk): names are not _precise_, and concepts mean different things to different people.  We can't be sure that people have the same meaning for concepts that we have.  
 
-### Abstraction and Invisibility Risk
+### Invisibility Risk
 
 ![Message Risk](images/generated/invisibility-risk.png) 
 

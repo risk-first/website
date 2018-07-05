@@ -4,7 +4,7 @@ Here, I am going to recap on some pre-existing knowledge about risk, generally, 
 
 ## Risk Registers
 
-In the previous section [Software Project Scenario](Software-Project-Scenario) we saw how you try to look across the [Attendant Risks](Attendant-Risk) of the project, in order to decide what to do next.  
+In the previous section [Software Project Scenario](Software-Project-Scenario) we saw how you try to look across the [Attendant Risks](Risk#attendant-risk) of the project, in order to decide what to do next.  
 
 A [Risk Register](https://en.wikipedia.org/wiki/Risk_register) can help with this.  From Wikipedia:
 
@@ -48,9 +48,9 @@ This type of graphic is _helpful_ in deciding what to do next, although personal
 
 In Wikipedia's example, this ficticious BBQ has high fire risk, so one should begin mitigating there.  
 
-But, does this feel right?  One of the criticisms of the Risk Register approach is that of [mistaking the map for the territory](Map-And-Territory).  That is, mistakenly believing that what's on the Risk Register _is all there is_.  
+But, does this feel right?  One of the criticisms of the [Risk Register](Risk-Theory#risk-register) approach is that of [mistaking the map for the territory](Map-And-Territory-Risk).  That is, mistakenly believing that what's on the Risk Register _is all there is_.  
 
-In the preceding discussions, I have been careful to point out the existence of [Hidden Risks](Attendant-Risk) for that very reason. Or, to put another way:
+In the preceding discussions, I have been careful to point out the existence of [Hidden Risks](Risk#attendant-risk) for that very reason. Or, to put another way:
 
 > What we don't know is what usually gets us killed 
 >     - Petyr Baelish
@@ -61,9 +61,7 @@ Donald Rumsfeld's famous [Known Knowns](https://en.wikipedia.org/wiki/There_are_
 
 Arguably, this site uses the term 'Risk' wrongly:  most literature suggests [risk can be measured](https://keydifferences.com/difference-between-risk-and-uncertainty.html) whereas uncertainty represents things that cannot.  
 
-I am using **risk** everywhere because later we will talk about specific risks (e.g. [Executable Boundary Risk](Executable-Boundary-Risk) or [Technical Debt Risk](Technical-Debt)), and it doesn't feel grammatically correct to talk about those as **uncertainties**, especially given the pre-existing usage in Banking of terms like [Operational risk](https://en.wikipedia.org/wiki/Operational_risk) or [Reputational risk](https://www.investopedia.com/terms/r/reputational-risk.asp) which are also not really a-priori measurable.
-
-e.g. Schedule Risk
+I am using **risk** everywhere because later we will talk about specific risks (e.g. [Boundary Risk](Boundary-Risk) or [Complexity Risk](Complexity-Risk)), and it doesn't feel grammatically correct to talk about those as **uncertainties**, especially given the pre-existing usage in Banking of terms like [Operational Risk](https://en.wikipedia.org/wiki/Operational_risk) or [Reputational risk](https://www.investopedia.com/terms/r/reputational-risk.asp) which are also not really a-priori measurable.
 
 ## The Opposite Of Risk Management
 
@@ -77,7 +75,7 @@ This is not how **Risk-First** sees it:
 
 First, we have the notion that Risks are discrete events, again.  Some risks _are_ (like gambling on a horse race), but most _aren't_.  In the [Dinner Party](Introduction), for example, bad preparation is going to mean a _worse_ time for everyone, but how good a time you're having is a spectrum, it doesn't divide neatly into just "good" or "bad".  
 
-Second, the opposite of "Risk Management" (or trying to minimize the "Downside") is either "Upside Risk Management", (trying to maximise the good things happening), or it's trying to make as many bad things happen as possible.  Humans tend to be optimists (especially when there are lots of [Hidden Risks](Attendant-Risk)), hence our focus on Downside Risk.  Sometimes though, it's good to stand back and look at a scenario and think:  am I capturing all the Upside Risk here?
+Second, the opposite of "Risk Management" (or trying to minimize the "Downside") is either "Upside Risk Management", (trying to maximise the good things happening), or it's trying to make as many bad things happen as possible.  Humans tend to be optimists (especially when there are lots of [Hidden Risks](Risk#attendant-risk)), hence our focus on Downside Risk.  Sometimes though, it's good to stand back and look at a scenario and think:  am I capturing all the Upside Risk here?
 
 Finally, Crisis Management is _still just Risk Management_:  the crisis (Earthquake, whatever) has _happened_.  You can't manage it because it's in the past.   All you can do is Risk Manage the future (minimize further casualties and human suffering, for example).    
 
@@ -85,7 +83,7 @@ Yes, it's fine to say "we're in crisis", but to assume there is a different stra
 
 ## Invariances #1: Panic Invariance
 
-You would expect then, that any methods for managing software delivery should be _invariant_ to the level of crisis in the project.  If, for example, a project proceeds using [Scrum] for eight months, and then the deadline looms and everyone agrees to throw Scrum out of the window and start hacking, then _this implies there is a problem with Scrum_.  Or at least, the way it was being implemented.  
+You would expect then, that any methods for managing software delivery should be _invariant_ to the level of crisis in the project.  If, for example, a project proceeds using [Scrum]() for eight months, and then the deadline looms and everyone agrees to throw Scrum out of the window and start hacking, then _this implies there is a problem with Scrum_.  Or at least, the way it was being implemented.  
 
 I call this **Panic Invariance**:   the methodology shouldn't need to change given the amount of pressure or importance on the table.
 
@@ -117,7 +115,7 @@ If the methodology _fails at a particular scale_, this tells you something about
 
 ## Speed
 
-For example, in [Rapid Development] by Steve McConnell we have the following diagram:
+For example, in [Rapid Development]() by Steve McConnell we have the following diagram:
 
 ![Rapid Development Pillars](images/rapid_development_pillars.png)  
 
@@ -129,18 +127,18 @@ tbd.  risk-first diagram.
  
 ## Net Present Risk
  
-If we can view software delivery from the point of view of _value_, then why can't we apply the same tools to [Risk] too?  In order to do this, let's review "Eisenhower's Box" model.  This considers two variables:
+If we can view software delivery from the point of view of _value_, then why can't we apply the same tools to [Risk]() too?  In order to do this, let's review "Eisenhower's Box" model.  This considers two variables:
 
  - How valuable the work is (Importance)
  - How soon it is needed (Urgency)
 
 tbd.  image from wikipedia.  text from wikipedia.
 
-Here, we're considering a synthesis of both _time_ and _value_.  But [Net Present Value] allows us to discount value in the future, which offers us a way to reconcile these two variables:
+Here, we're considering a synthesis of both _time_ and _value_.  But [Net Present Value]() allows us to discount value in the future, which offers us a way to reconcile these two variables:
 
 chart of discounting into the future tbd.
 
-Let's do the same thing with risk?  Let's introduce the concept of [Net Present Risk], or NPR:
+Let's do the same thing with risk?  Let's introduce the concept of [Net Present Risk](), or NPR:
 
 > Net Present Risk is tbd.
 
@@ -176,7 +174,7 @@ Under a 3% regime, risk **A** and **B** are _both_ worth mitigating, as you can 
 
 ## Discounting the Future To Zero
 
-I have worked in teams sometimes where the blinkers go down, and the only thing that matters is _now_.    They may apply a rate of 60% per-day, which means that anything with a horizon over a week is irrelevant.   Regimes of such [hyperinflation] are a sure sign that something has _really broken down_ within a project.  Consider in this case a Discount Factor of 60% per day, and the following risks:
+I have worked in teams sometimes where the blinkers go down, and the only thing that matters is _now_.    They may apply a rate of 60% per-day, which means that anything with a horizon over a week is irrelevant.   Regimes of such [hyperinflation]() are a sure sign that something has _really broken down_ within a project.  Consider in this case a Discount Factor of 60% per day, and the following risks:
 
 - Risk A: £80 cost, happening _tomorrow_
 - Risk B: £500 cost, happening in _5 days_.  
@@ -190,7 +188,7 @@ Why do things like this happen?  Often, the people involved are under incredible
 - more pressure, heavier discounting
 pooh bear procrastination
 
-## Science vs Craftsmanship
+## Is This Scientific?
 
 **Risk-First** is an attempt to provide a practical framework, rather than a scientifically rigorous analysis.  In fact, my view is that you should _give up_ on trying to compute risk numerically.  You _can't_ work out how long a software project will take based purely on an analysis of (say) _function points_.  (Whatever you define them to be).
 

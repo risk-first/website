@@ -56,7 +56,7 @@ The right answer is to use the fastest feedback loop possible, _which actually d
 
 Let's look at the journey so far:
 
- - In the [Introduction](Introduction) we looked at how risk pervades every goal we have in life, big or small.  We saw that risk stems from the fact that our [Internal Model](Internal-Model) of the world couldn't capture everything about reality, and so some things were down to chance.  
+ - In [A Simple Scenario](A-Simple-Scenario) we looked at how risk pervades every goal we have in life, big or small.  We saw that risk stems from the fact that our [Internal Model](Internal-Model) of the world couldn't capture everything about reality, and so some things were down to chance.  
  
  - In the [Development Process](Development-Process) we looked at how common software engineering conventions like Unit Testing, User Acceptance Testing and Integration could help us manage the risk of taking an idea to production, by _gradually_ introducing it to reality in stages.
  
@@ -66,7 +66,7 @@ Let's look at the journey so far:
  
  - [Some Risk Theory](Risk-Theory) was an aside, looking at some terminology and the useful concept of a Risk Register.
  
- - Then, generalizing the lessons of the Development Process article, we examined the idea that [Meeting Reality](Meeting-Reality) frequently helps flush out [Hidden Risks](Attendant-Risk) and improve your [Internal Model](Internal-Model).
+ - Then, generalizing the lessons of the Development Process article, we examined the idea that [Meeting Reality](Meeting-Reality) frequently helps flush out [Hidden Risks](Risk#attendant-risk) and improve your [Internal Model](Internal-Model).
  
  - Finally, above, we looked at [Cadence](Cadence), and how feedback loops allow you Navigate the Risk Landscape more effectively, by showing you more quickly when you're going wrong.
  

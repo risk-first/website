@@ -15,7 +15,7 @@ As shown in the diagram above, the software process is broken into distinct stag
 - [Implementation](Development)
 - [Verification](Testing)
 - [Delivery](Delivery) and [Operations](Support)
-- [Sign Offs](Sign-Off) at each stage
+- [Sign Offs](Sign-Offs) at each stage
 
 ### Variations
 

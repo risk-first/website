@@ -65,7 +65,7 @@ But outside, the form is simple, and designed for humans to use.   This is _[erg
 
 In the same way as with a hand-tool, the bulk of the complexity of a software tool is hidden behind it's interface.  But, the more complex the _purpose_ of the tool, the more complex the interface will be.
 
-Software is not constrained by _physical_ ergonomics in the same way as a tool is.  But ideally, it should have conceptual ergonomics:  ideally, complexity is hidden away from the user behind the API (Application Programming Interface).  This is the familiar concept of [Abstraction] we've already looked at.   
+Software is not constrained by _physical_ ergonomics in the same way as a tool is.  But ideally, it should have conceptual ergonomics:  ideally, complexity is hidden away from the user behind the API (Application Programming Interface).  This is the familiar concept of [Abstraction]() we've already looked at.   
 
 That is, the tool should be as simple to use and understand as possible.  This is the [Principal Of Least Astonishment](https://en.wikipedia.org/wiki/Principle_of_least_astonishment):
 
@@ -102,7 +102,7 @@ Diagram:  Feature risk being mitigated , but complexity Risk, schedule risk
 
 ## Software Libraries
 
-Using library code offers a [Schedule Risk](Schedule-Risk) and [Complexity Risk] [Silver Bullet]  
+Using library code offers a [Schedule Risk](Schedule-Risk) and [Complexity Risk]() [Silver Bullet]()  
 
 Consider [npmjs](http://npmjs.com), which is the most popular package manager for the Javascript ecosystem.  It currently boasts of having over 650,000 different libraries, so although we're unlikely to find an `abcdRepeater` function this suggests that we can "win" against Kolmogorov complexity by using them.  But actually, this is really a problem with the metric itself.  
 
@@ -110,9 +110,9 @@ In reality, using libraries allows us a "Kolmogorov tradeoff": our [Codebase Ris
 
 ![Software Libraries Risk Tradeoff](images/kite9/software-dependency-library.png)
 
-By choosing a particular software library, we are making a move on the [Risk Landscape] in the hope of moving to place with more favourable risks.  As the above diagram shows, typically, we want to reduce [Feature Risk] and [Schedule Risk].  In return we expect to pick up:
+By choosing a particular software library, we are making a move on the [Risk Landscape]() in the hope of moving to place with more favourable risks.  As the above diagram shows, typically, we want to reduce [Feature Risk]() and [Schedule Risk].  In return we expect to pick up:
 - [Communication Risk]: because we now have to learn how to communicate with this new dependency.
-- [Boundary Risk] - because now are limited to using the functionality provided by this dependency.  We have chosen it over alternatives and changing to something else would be more work and therefore costly.   
+- [Boundary Risk]() - because now are limited to using the functionality provided by this dependency.  We have chosen it over alternatives and changing to something else would be more work and therefore costly.   
 
 But, it's quite possible that we could wind up in a worse state, by using a library that's out-of-date, riddled with bugs or badly supported.  i.e. Full of new, hidden [Feature Risk].  
 
@@ -164,14 +164,14 @@ Some take-aways:
  
 ### Complexity Risk? 
  
-One thing that none of the sources consider (at least from the outset) is the [Complexity Risk] of using a solution:    
+One thing that none of the sources consider (at least from the outset) is the [Complexity Risk]() of using a solution:    
  - Does it drag in lots of extra dependencies that seem unnecessary for the job in hand?  If so, you could end up in [Dependency Hell], with multiple, conflicting versions of libraries in the project.
  - Do you already have a dependency providing this functionality?  So many times, I've worked on projects that import a _new_ dependency when some existing (perhaps transitive) dependency has _already brought in the functionality_.  For example, there are plenty of libraries for JSON marshalling, but if I'm also using a web framework the chances are it already has a dependency on one already.
  - Does it contain lots of functionality that isn’t relevant to the task you want it to accomplish?  e.g. Using Java when a shell script would do (on a non-Java project)
  
-To give an extreme example of this, I once worked on an application which used [Hazlecast] to cache log-in session tokens for a 3rd party datasource.  But, the app is only used once every month, and session IDs can be obtained in milliseconds.   So... why cache them?  Although Hazlecast is an excellent choice for in-memory caching across multiple JVMs, it is a complex piece of software (after all, it does lots of stuff).  By doing this, you have introduced extra dependency risk, cache invalidation risks, networking risks, synchronisation risks and so on, for actually no benefit at all...  Unless, it’s about [CV building](Agency-Risk).  
+To give an extreme example of this, I once worked on an application which used [Hazlecast]() to cache log-in session tokens for a 3rd party datasource.  But, the app is only used once every month, and session IDs can be obtained in milliseconds.   So... why cache them?  Although Hazlecast is an excellent choice for in-memory caching across multiple JVMs, it is a complex piece of software (after all, it does lots of stuff).  By doing this, you have introduced extra dependency risk, cache invalidation risks, networking risks, synchronisation risks and so on, for actually no benefit at all...  Unless, it’s about [CV building](Agency-Risk).  
 
-Sometimes, the amount of complexity _goes up_ when you use a dependency for _good reason_.   For example, in Java, you can use JDBC to interface with various types of database.  [Spring] (a popular middleware suite) provides a thing called a [JDBCTemplate].  This actually makes your code _more_ complex, and can prove very difficult to debug.  However, it prevents injection attacks, handles resource disposal and makes use of prepared statements.  None of those are essential to interfacing with the database, but not using them is technical debt that can bite you later on.  
+Sometimes, the amount of complexity _goes up_ when you use a dependency for _good reason_.   For example, in Java, you can use JDBC to interface with various types of database.  [Spring]() (a popular middleware suite) provides a thing called a [JDBCTemplate].  This actually makes your code _more_ complex, and can prove very difficult to debug.  However, it prevents injection attacks, handles resource disposal and makes use of prepared statements.  None of those are essential to interfacing with the database, but not using them is technical debt that can bite you later on.  
 
 tbd.  dependency diagram, showing complexity, feature, schedule risk on the left, feature risk, boundary risk, communication risk on the right.
 
@@ -179,9 +179,9 @@ So, adopting any library is a trade-off:   tbd.
 
 ### Software as a Service (SaaS)
 
-Businesses opt for SaaS because it vastly reduces the [Complexity Risk] they face in their organisations.  Instead of having to pay for in-house software administrators, they can leave this function to the experts.
+Businesses opt for SaaS because it vastly reduces the [Complexity Risk]() they face in their organisations.  Instead of having to pay for in-house software administrators, they can leave this function to the experts.
 
-SaaS is now a very convenient way to provide _commercial_ software.   Popular examples of SaaS might be [SalesForce], or [GMail].  Both of which follow a [Freemium] model, where the basic service is provided free, but upgrading to a paid account gives extra benefits.  By providing the software on their own servers, the commercial organisation has a defence against _piracy_, as well as being able to control the complexity of the support environment.
+SaaS is now a very convenient way to provide _commercial_ software.   Popular examples of SaaS might be [SalesForce], or [GMail].  Both of which follow a [Freemium]() model, where the basic service is provided free, but upgrading to a paid account gives extra benefits.  By providing the software on their own servers, the commercial organisation has a defence against _piracy_, as well as being able to control the complexity of the support environment.
 
 The trade-off of SaaS looks a lot like library code, except that the dependency is arguably _more_ fragile:
 
@@ -196,7 +196,7 @@ I: https://www.zdnet.com/article/saas-checklist-nine-factors-to-consider-when-se
 
 
 
-tbd.  diagram of how this works out: [feature risk], [communication risk] being mitigated, but [Protocol Complexity Risk], [Fit Risk], [Dead End/Boundary Risk], [Costs?], [Red Queen Risk].
+tbd.  diagram of how this works out: [feature risk], [communication risk]() being mitigated, but [Protocol Complexity Risk], [Fit Risk], [Dead End/Boundary Risk], [Costs?], [Red Queen Risk].
 internal vs external risks.
 
 ### A Matrix of Options
@@ -212,7 +212,7 @@ Let's expand this view slightly and look at where different pieces of software s
 | Monthly / Metered Subscription 	| **Commercial Software**<ul><li>Oracle Databases</li><li>Windows</li><li>Office</li></ul>                         	| **Commercial SaaS** <ul><li>Office 365</li><li>SalesForce</li><li>Amazon Web Services</li></ul> 	| *Easy arguments for reduced: <ul><li>Complexity Risk</li><li>Communication Risk</li><li>Coordination Risk</li></ul>* <br /> *Higher Boundary Risk*	|
 |                                    |                                                                                                                      | *Transferred: <ul><li>Operational Risk</li></ul>*                                               |                                                                                 |
 - Where there is value in the **Network Effect**, it's often a sign that the software will be free, or open source:  programming languages and linux are the obvious examples of this.  Bugs are easier to find when there are lots of eyes looking, and learning the skill to use the software has less [Boundary Risk](Boundary-Risk) if you know you'll be able to use it at any point in the future.
-- At the other end of the spectrum, clients will happily pay for software if it clearly **reduces complexity**.  Take [Amazon Web Services].  The essential trade here is that you substitute the complexity of hosting and maintaining various pieces of software, in exchange for monthly payments ([Funding Risk](Schedule-Risk#Funding-Risk) for you).  Since AWS services are specific to Amazon, there is significant [Boundary Risk] in choosing this option.
+- At the other end of the spectrum, clients will happily pay for software if it clearly **reduces complexity**.  Take [Amazon Web Services].  The essential trade here is that you substitute the complexity of hosting and maintaining various pieces of software, in exchange for monthly payments ([Funding Risk](Schedule-Risk#Funding-Risk) for you).  Since AWS services are specific to Amazon, there is significant [Boundary Risk]() in choosing this option.
 - In the middle there are lots of **substitute options** and therefore high competition.  Because of this, prices are pushed towards zero, adn and therefore often advertising is used to monetarize the product.  Angry Birds is a classic example:  initially, it had demo and paid versions, however Rovio discovered there was much more money to be made through advertising than from the [paid-for app].
 
 tbd.  include diagram
@@ -247,7 +247,7 @@ You can mitigate this somewhat by searching resources online like [StackOverflow
 
 ## Dependencies Between Teams and Components
 
-We know from the section on [Communication Risk] that introducing new communication protocols and apis is a great way to keep a lid on complexity.  
+We know from the section on [Communication Risk]() that introducing new communication protocols and apis is a great way to keep a lid on complexity.  
 
 In the section on [Process Risk](Process-Risk) we're going to l
 
