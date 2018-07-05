@@ -18,7 +18,7 @@ Alternatively, we can use the term [Internal Model](#internal-model) to consider
 
 An internal model _represents_ reality:  reality is made of atoms, whereas the internal model is information.
 
-## Meeting Reality
+## Meet Reality
 
 ## Risk
 
