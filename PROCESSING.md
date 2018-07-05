@@ -69,8 +69,9 @@ This is done with the `./convert.sh` script.
 ## Links
 
 - We need a link checker, that makes sure all the uses of certain phrases are links.  This needs to happen in the source document.
-- You can check for malformed links by doing this regex search: \[[A-Za-z].*?[A-Za-z]\][^\(]
-- Then, fix them so they at least have an empty target.
-- Then, run 
+- You can check for _any_ wanna-be links with this: \[([0-9A-Za-z\-,\(\) &_]+)\]
+- You can check for malformed links by doing this regex search: \[([0-9A-Za-z\-,\(\) &_]+)\]([^\(])
+- Then, fix them so they at least have an empty target (use search and replace in eclipse)
+- Then, run LinkChecker
 
 

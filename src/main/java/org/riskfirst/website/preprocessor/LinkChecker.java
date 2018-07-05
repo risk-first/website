@@ -27,8 +27,9 @@ public class LinkChecker {
 		final String file;
 		final int line;
 		final String link;
+		final String text;
 		
-		public Target(String file, int line, String link) {
+		public Target(String file, int line, String link, String text) {
 			super();
 			this.file = file;
 			this.line = line;
@@ -38,11 +39,13 @@ public class LinkChecker {
 			} else {
 				this.link = link;
 			}
+			
+			this.text = text;
 		}
 
 		@Override
 		public String toString() {
-			return "Target [file=" + file + ", line=" + line + ", link=" + link + "]";
+			return "Target [file=" + file + ", line=" + line + ", link=" + link + ", text="+ text + "]";
 		}
 
 		@Override
@@ -93,6 +96,8 @@ public class LinkChecker {
 //		for (Target target : externals) {
 //			System.out.println("EXTERNAL: "+target);
 //		}
+		
+		System.out.println("Breaks: "+targets.size());
 	}
 	
 	public static void process(File f, Set<String> links, Set<Target> targets) throws Exception {
@@ -112,7 +117,7 @@ public class LinkChecker {
 					TextPreprocessor.processLinks(content, 
 						(link, text, url, image, lineNo) -> {
 							if (!image) {
-								targets.add(new Target(f.getName(), lineNo, url.toLowerCase()));
+								targets.add(new Target(f.getName(), lineNo, url.toLowerCase(), text));
 							}
 						}, line);
 					
