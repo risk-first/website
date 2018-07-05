@@ -92,6 +92,8 @@ The amount of slack you build into the schedule is likely dependent on the level
 
 ## Reliability Risk
 
+![Reliability Risk](images/generated/reliability-risk.png)
+
 [Deadline Risk](Schedule-Risk#Deadline-Risk) is really a kind of reliability issue: if you can understand which parties are unreliable, you have a much better handle on your [Deadline Risk](Schedule-Risk#Deadline-Risk). 
 
 Luckily, there is quite a lot of existing science around reliability.  For example:  
@@ -107,16 +109,22 @@ This was applied on NASA missions, and then more recently in the 1970's to car d
 
 ## Scarcity Risk
 
-Let's get back to the bus (which, hopefully, is still working).  What if, when it arrives, it's already full of passengers?  Let's term this, [Scarcity Risk]() - the chance that a dependency is over-subscribed and you can't use it the way you want.  This is clearly an issue for nearly every kind of dependency: buses, supermarkets, concerts, teams, services and people.  
+![Scarcity Risk](images/generated/scarcity-risk.png)
+
+Let's get back to the bus (which, hopefully, is still working).  What if, when it arrives, it's already full of passengers?  Let's term this, [Scarcity Risk](Dependency-Risk#Scarcity-Risk) - the chance that a dependency is over-subscribed and you can't use it the way you want.  This is clearly an issue for nearly every kind of dependency: buses, supermarkets, concerts, teams, services and people.  
 
 You could also call this _availability risk_ or _capacity risk_ of the resource.  Here are a selection of mitigations:
- - **Buffers**: Smoothing out peaks and troughs in utilisation tbd.
+ - **Buffers**: Smoothing out peaks and troughs in utilisation.
  - **Reservation Systems**: giving clients information _ahead_ of the dependency usage about whether the resource will be available to them.
  - **Graceful degradation**: Ensuring _some_ service in the event of over-subscription.  It would be no use allowing people to cram onto the bus until it can't move.
- - **Demand Management**:  Having different prices during busy periods helps to reduce demand.  Having "first class" seats means that higher-paying clients can get service even when the train is full.  [Uber]() adjust prices in real-time by so-called [Surge Pricing].
+ - **Demand Management**:  Having different prices during busy periods helps to reduce demand.  Having "first class" seats means that higher-paying clients can get service even when the train is full.  [Uber](https://www.uber.com) adjust prices in real-time by so-called [Surge Pricing](https://www.uber.com/en-GB/drive/partner-app/how-surge-works/).  This is basically turning [Scarcity Risk](Dependency-Risk#Scarcity-Risk) into a [Market Risk](Feature-Risk#market-risk) problem.
  - **Queues**: Again, these provide a "fair" way of dealing with scarcity by exposing some mechanism for prioritising use of the resource.  Buses operate a first-come-first-served system, whereas emergency departments in hospitals triage according to need.
- - **Pools**: Reserving parts of a resource for particular customers.  For exampl
+ - **Pools**: Reserving parts of a resource for particular customers. 
  - **Horizontal Scaling**: allowing a scarce resource to flexibly scale according to how much demand there is.   (For example, putting on extra buses when the trains are on strike, or opening extra check-outs at the supermarket.)
+ 
+Much like [Reliability Risk](#reliability-risk), there is science for it.  [Queue Theory](https://en.wikipedia.org/wiki/Queueing_theory) is all about building mathematical models of buffers, queues, pools and so forth.  [Logistics](https://en.wikipedia.org/wiki/Logistics) is the practical organisation of the flows of materials and goods around things like [Supply Chains](https://en.wikipedia.org/wiki/Supply_chain).  
+
+And [Project Management](https://en.wikipedia.org/wiki/Project_management) is in large part about ensuring the right resources are avaiable at the right times.  We'll be taking a closer look at that in the Part 3 sections on [Prioritisation](Prioritisation) and the [Project Managment Body Of Knowledge](PMBoK).
 
 ## Communication Risk
 
