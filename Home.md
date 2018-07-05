@@ -121,11 +121,7 @@ A more light-hearted collection of blog posts related to the software developmen
 
 ### Glossary Of Terms
 
- - [Feedback Loop](Feedback-Loop)
- - [Goal In Mind](Goal-In-Mind)
- - [Internal Model](Glossary#Internal-Model)
- - [Meet Reality](Meet-Reality)
- - [Risk](Risk)
+ - [Glossary](Glossary)
   
 
 

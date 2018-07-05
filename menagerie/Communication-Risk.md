@@ -390,7 +390,7 @@ By now it should be clear that it's going to be _both_ quite hard to read and wr
 But now we should be able to see the reasons it's harder to read than write too: 
  
  - When reading code, you are having to shift your [Internal Model](Glossary#Internal-Model) to wherever the code is, accepting decisions that you might not agree with and accepting counter-intuitive logical leaps.  i.e. [Learning Curve Risk](Communication-Risk#learning-curve-risk). _(cf. [Principle of Least Surprise](https://en.wikipedia.org/wiki/Principle_of_least_astonishment))_
- - There is no [Feedback Loop](Feedback-Loop) between your [Internal Model](Glossary#Internal-Model) and the [Reality](Meet-Reality) of the code, opening you up to [Misinterpretation Risk](Communication-Risk#misinterpretation-risk).  When you write code, your compiler and tests give you this.
+ - There is no [Feedback Loop](Feedback-Loop) between your [Internal Model](Glossary#Internal-Model) and the [Reality](Glossary#Meet-Reality) of the code, opening you up to [Misinterpretation Risk](Communication-Risk#misinterpretation-risk).  When you write code, your compiler and tests give you this.
  - While reading code _takes less time_ than writing it, this also means the [Learning Curve](Communication-Risk#learning-curve-risk) is steeper.
 
 ![Internal Model Risks](images/generated/communication_internal_model_risks.png)

@@ -6,9 +6,9 @@ Let's go back to the model again, introduced in [Meeting Reality](Meeting-Realit
 
 As you can see, it's an idealized **Feedback Loop**.  
 
-How _fast_ should we go round this loop?  Is there a right answer?  The longer you leave your [goal in mind](Goal-In-Mind), the longer it'll be before you find out how it really stacks up against reality.  
+How _fast_ should we go round this loop?  Is there a right answer?  The longer you leave your [goal in mind](Glossary#Goal-In-Mind), the longer it'll be before you find out how it really stacks up against reality.  
 
-Testing your [goals in mind](Goal-In-Mind) against reality early and safely is how you'll manage risk effectively, and to do this, you need to set up **Feedback Loops**. e.g.
+Testing your [goals in mind](Glossary#Goal-In-Mind) against reality early and safely is how you'll manage risk effectively, and to do this, you need to set up **Feedback Loops**. e.g.
 
  - **Bug Reports and Feature Requests** tell you how the users are getting on with the software.
  - [Monitoring Tools and Logs](Operational-Risk) allow you to find out how your software is doing in reality.

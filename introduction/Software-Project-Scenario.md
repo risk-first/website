@@ -4,7 +4,7 @@ Where do the risks of the project lie?
 
 How do we decide what _needs to be done today_ on a software project?  
 
-Let's look again at the simple risk framework from the [introduction](Introduction) and try to apply it at the level of the _entire project_.
+Let's look again at the simple risk framework from the [introduction](A-Simple-Scenario) and try to apply it at the level of the _entire project_.
 
 ![Reality](images/generated/model_vs_reality.png)
 
@@ -18,7 +18,7 @@ If we want to take the right actions, we need to have a good [Internal Model](Gl
 
 Sometimes, we will know that our model is deficient, and our time should be spend _improving_ it, perhaps by talking to our clients, or the support staff, or other developers, or reading.  
 
-But let's say for example, today our [Goal In Mind](Goal-In-Mind) is to grow our user base.  
+But let's say for example, today our [Goal In Mind](Glossary#Goal-In-Mind) is to grow our user base.  
 
 ## Attendant Risks
 
@@ -97,7 +97,7 @@ For example, it's worth considering that if we're just starting this project, ri
 
 ## Tacit and Explicit Modelling
 
-As we saw in the example of the [Dinner Party](Introduction), creating an internal model is something _we just do_:  we have this functionality in our brains already.  When we scale this up to a whole project team, we can expect the individuals on the project to continue to do this, but we might also want to consider _explicitly_ creating a [risk register for the whole project](Risk-Theory).  
+As we saw in the example of the [Dinner Party](A-Simple-Scenario), creating an internal model is something _we just do_:  we have this functionality in our brains already.  When we scale this up to a whole project team, we can expect the individuals on the project to continue to do this, but we might also want to consider _explicitly_ creating a [risk register for the whole project](Risk-Theory).  
 
 Whether we do this explicitly or not, we are still individually following this model.
 
