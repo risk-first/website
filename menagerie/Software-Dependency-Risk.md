@@ -89,7 +89,7 @@ We've looked in-depth at how introducing software dependencies mitigates [Comple
 
 |Risk                                                 |Examples of Software Mitigating That Risk                                |
 |-----------------------------------------------------|-------------------------------------------------------------------------|
-|[Coordination Risk](Coordination Risk)               |Calendar tools,  Bug Tracking, Distributed Databases                     |
+|[Coordination Risk](Coordination-Risk)               |Calendar tools,  Bug Tracking, Distributed Databases                     |
 |[Map-And-Territory-Risk](Map-And-Territory-Risk)     |The Internet, generally.  Excel, Google, "Big Data", Reporting tools     |
 |[Schedule-Risk](Schedule-Risk)                       |Planning Software, Project Mangement Software                            |
 |[Communication-Risk](Communication-Risk)             |Email, Chat tools, CRM tools like SalesForce, Forums, Twitter            |
@@ -208,10 +208,10 @@ The trade-off of SaaS looks a lot like library code, except that the dependency 
 |What's the backup plan? (It's vital that you understand how your data are protected, and what redundancies are available should your SaaS provider have an outage. )   |X                  |X              |                     |                    |                    |              |
 |What happens to your data if you sever ties with the vendor?                                                                                                           |                   |X              |                     |                    |                    |              |
 |Are your current and future user environments supported? (Browser Compatibility)                                                                                       |                   |X              |X                    |                    |                    |              |
-|What migration and training assistance options are available?                                                                                                          |                   |X              |X                    |                    |                    |              |
-|What integration options are available?                                                                                                                                |                   |               |                     |                    |                    |              |
-|Can you test in parallel?                                                                                                                                              |                   |X              |                     |                    |                    |              |
-|How does functionality compare to maturity?                                                                                                                            |                   |               |                     |                    |                    |              |
+|What migration and training assistance options are available?                                                                                                          |                   |               |                     |                    |X                   |              |
+|What integration options are available?                                                                                                                                |                   |               |                     |                    |X                   |              |
+|Can you test in parallel?                                                                                                                                              |                   |               |X                    |                    |                    |              |
+|How does functionality compare to maturity?                                                                                                                            |                   |               |X                    |                    |                    |              |
 |What's the pricing model?                                                                                                                                              |                   |X              |                     |                    |                    |X             |
 
 
