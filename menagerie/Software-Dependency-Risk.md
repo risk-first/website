@@ -35,7 +35,7 @@ function repeat(s,n) {                                       (10 symbols)
     return a.join('');                                       (10 symbols)
 }                                                            (1 symbol)
 ```
-... which would be an extra **44** symbols (in total **70**), and push us completely over the original string encoding of **53** symbols.   So, encoding language is important.   
+... which would be an extra **44** symbols (in total **70**), and push us completely over the original string encoding of **53** symbols.   So, _encoding language is important_.   
 
 Conversely, if ECMAScript 6.0 had introduced a function called `abcdRepeater(n)` we'd have been able to do this:
 
@@ -49,8 +49,8 @@ function out() {                                             (7 symbols)
 
 1.  Clearly, _language matters_:  the Kolmogorov complexity is dependent on the language, and the features the language has built in.  
 2.  The exact Kolmogorov complexity is uncomputable anyway.  It's just a fairly abstract idea, so we shouldn't get too hung up on this.  There is no function to be able to say, "what's the Kolmogorov complexity of string X"
-3.  What is this new library function we've created?   Is `abcdRepeater` going to be part of _every_ Javascript?  If so, then we've shifted [Codebase Risk](Complexity-Risk) away from ourselves, but we've pushed [Communication Risk](Communication-Risk) and [Dependency Risk](Dependency-Risk) onto every _other_ user of Javascript.
-4.  Are there equivalent functions for every single other string?  If so, then compilation is no longer a tractable problem: is `return abcdRepeater(10)` correct code?  Well, now we have a massive library of different `XXXRepeater` functions to compile against to see if it is...  So, what we _lose_ in [Kolmogorov Complexity](Complexity-Risk) we gain in [Big-O Complexity](Complexity-Risk).  
+3.  What is this new library function we've created?   Is `abcdRepeater` going to be part of _every_ Javascript?  If so, then we've shifted [Codebase Risk](Complexity-Risk) away from ourselves, but we've pushed [Communication Risk](Communication-Risk) and [Dependency Risk](Dependency-Risk) onto every _other_ user of Javascript. (Why these?  Because `abcdRepeater` will be clogging up the documentation and other people will rely on it to function correctly.)
+4.  Are there equivalent functions for every single other string?  If so, then compilation is no longer a tractable problem: is `return abcdRepeater(10)` correct code?  Well, now we have a massive library of different `XXXRepeater` functions to compile against to see if it is...  So, what we _lose_ in [Kolmogorov Complexity](Complexity-Risk) we gain in [Big-O Complexity](Complexity-Risk).
 5.  Language design, then, is about _ergonomics_.  After you have passed the relatively low bar of providing [Turing Completeness](https://en.wikipedia.org/wiki/Turing_completeness), the key is to provide _useful_ features that enable problems to be solved, without over-burdening the user with features they _don't_ need.  And in fact, all software is about this.
 
 ## Ergonomics Examined
@@ -77,7 +77,7 @@ That is, the tool should be as simple to use and understand as possible.  This i
 
 The interface of a system expands when you ask it to do a wide variety of things.   An easy-to-use drill does one thing well: it turns drill-bits at useful levels of torque for drilling holes and sinking screws.  But if you wanted it to also operate as a lathe, a sander or a strimmer (all basically mechanical things going round) you would have to sacrifice the ergonomic simplicity for a more complex interface, probably including adapters, extensions, handles and so on.
 
-So, we now have split the complexity 
+So, we now have split the complexity into two:
  - The inner complexity of the tool (how it works internally, it's own [Kolmogorov Complexity](Complexity-Risk#Kolmogorov-Complexity)).
  - The complexity of the instructions that we need to write to make the tool work (the interface [Kolmogorov Complexity](Complexity-Risk#Kolmogorov-Complexity)). 
  
@@ -85,7 +85,9 @@ tbd diagram of this
 
 ### Risks Mitigated
 
-We've looked in-depth at how introducing software dependencies mitigates [Complexity Risk]().  But, you can mitigate _all kinds of risk_ with [Software Dependencies]().  Let's look at some:
+So far, we've considered only how [Software Dependencies]() can alleviate complexity from our codebases.  But with [Software Dependencies]() we can construct dependency networks to give us all kinds of features and mitigate all kinds of risk.  
+
+Let's look at some:
 
 |Risk                                                 |Examples of Software Mitigating That Risk                                |
 |-----------------------------------------------------|-------------------------------------------------------------------------|
@@ -116,7 +118,6 @@ Initially, writing our own code was the only game in town:  when I started progr
 Even now, there's always the opportunity cost of depending on our own code, which may well be more appropriate and ergonomic for whatever is required.  
 
 Sometimes, you will pick up a dependency on _unwritten software_.  This commonly happens when work is divided amongst team members, or teams.  
-
 
 If a component **A** of our project _depends_ on **B** for some kind of processing, you might not be able to complete **A** before writing **B**.   This makes _scheduling_ the project harder, and if component **A** is a risky part of the project, then the chances are you'll want to mitigate risk there first.  There are a couple of ways to do this:
 
