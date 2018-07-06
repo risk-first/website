@@ -214,6 +214,7 @@ The trade-off of SaaS looks a lot like library code, except that the dependency 
 |What migration and training assistance options are available?                                                                                                          |                   |               |                     |X                   |                    | [sd4]         |
 |What integration options are available?  _(Are there APIs you can use to get at your data?)_                                                                           |                   |               |                     |X                   |                    | [sd4]         |
 |**Totals**                                                                                                                                                             |**2**              |**4**          |**3**                |**2**               |**1**               |               |
+
 [sd4]: https://www.zdnet.com/article/saas-checklist-nine-factors-to-consider-when-selecting-a-vendor/
 
 
