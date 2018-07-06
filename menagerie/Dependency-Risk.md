@@ -36,7 +36,7 @@ But.  Living systems are not simple.  They evolved to this level of complexity t
 
 Depending on things makes _your job easier_.  It's just [division of labour](https://en.wikipedia.org/wiki/Division_of_labour) and dependency hiearchies, as we saw in [Hierarchies and Modularization](Complexity-Risk#Hierarchies-and-Modularization).
 
-Our economic system and our software systems exhibit the same tendency-towards-complexity.  For example, the television in my house now is _vastly more complicated_ than the one in my home when I was a child.  But, it contains much more functionality and consumes much less power and space.
+Our economic system and our software systems exhibit the same tendency-towards-complexity.  For example, the television in my house now is _vastly more complicated_ than the one in my home when I was a child.  But, it contains much more functionality and consumes much less power and space.  
 
 ## Event Dependencies
 
@@ -192,7 +192,7 @@ Arguably, managing dependency risk is _what Project Managers do_.  Their job is 
 
 There are _some_ tools for managing dependency risk:  [Gantt Charts]() for example, arrange work according to the capacity of the resources (i.e. dependencies) available, but also the _dependencies between the tasks_.   If task B requires the outputs of task A, then clearly task A comes first and task B starts after it finishes.  We'll look at this more in [Process Risk](Process-Risk). 
 
-We'll look in more detail in the _practices_ part, later.   But now let's get into the specifics with [Software Dependency Risk](Software-Dependency-Risk).
+We'll look in more detail in the _practices_ part, later.   But now let's get into the specifics with [Schedule Risk](Schedule-Risk).
 
 
 
