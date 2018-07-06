@@ -119,3 +119,8 @@ human biases.
 Is this really a risk?? Why is this here?  To shore up the scheduling thing?
 
 Do biases go in here?  YES!!
+
+**Any time your internal model is inconsistent with the world outside.   Should we call this internal model risk?**
+
+
+

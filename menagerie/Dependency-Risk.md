@@ -32,9 +32,11 @@ So, dependencies are a trade-off.  They give with one hand and take with the oth
 
 In Rich Hickey's talk, [Simple Made Easy](https://www.infoq.com/presentations/Simple-Made-Easy) he discusses the difference between _simple_ software systems and _easy_ ones, heavily stressing the virtues of simple over easy.  It's an incredible talk and well worth watching.  
 
-But.  Living systems are not simple.  And, they evolved to this level of complexity through because life was _easier_ that way.  Depending on things makes _your job easier_.  It's just [division of labour](https://en.wikipedia.org/wiki/Division_of_labour) and dependency hiearchies, as we saw in [Hierarchies and Modularization](Complexity-Risk#Hierarchies-and-Modularization).
+But.  Living systems are not simple.  They evolved to this level of complexity though because life was _easier_ that way.  In the other direction, life is first _harder_ and then _impossible_, and then an evolutionary dead-end.
 
-Our economic system and our software systems exhibit the same tendency-towards-complexity.  
+Depending on things makes _your job easier_.  It's just [division of labour](https://en.wikipedia.org/wiki/Division_of_labour) and dependency hiearchies, as we saw in [Hierarchies and Modularization](Complexity-Risk#Hierarchies-and-Modularization).
+
+Our economic system and our software systems exhibit the same tendency-towards-complexity.  For example, the television in my house now is _vastly more complicated_ than the one in my home when I was a child.  But, it contains much more functionality and consumes much less power and space.
 
 ## Event Dependencies
 
@@ -75,6 +77,8 @@ So, we're going to look at [Dependency Risk](Dependency-Risk) for our toy events
 (Although you might be able to think of a few more.) 
  
 Let's look at each of these in turn.
+
+tbd.  diagram of events as an action.
 
 ## Schedule Risk
 

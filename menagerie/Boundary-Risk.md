@@ -66,6 +66,8 @@ In all these cases,
 
 Nowadays, the [WordPress]() user base is huge:  approximately tbd 30% of all websites are hosted with [WordPress]().  For [Drupal]() it's tbd.  Because [WordPress]() is so popular, it has attracted an [ecosystem]() of plugin developers, who have bent the platform to more purposes, and expanded the boundary of it's functionality.  The [WordPress]() APIs are now much more complex than they were originally, in order to support this vast ecosystem of plugins.
 
+TALK ABOUT EVOLUTION
+
 ### Java 
 
 When a tool or platform is popular, it is under pressure to increase in complexity.  This is because people are attracted to something useful, and want to extend it to new purposes.  This is known as _The Peter Principle_:  
