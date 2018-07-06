@@ -1,4 +1,8 @@
 
+This is a depressing book.
+
+It's part of 2, but in this one you only get to meet the bad guy.
+
 
 # Preface
 
