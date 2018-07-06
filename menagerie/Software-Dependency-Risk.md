@@ -83,6 +83,8 @@ So, we now have split the complexity into two:
  
 tbd diagram of this 
 
+The way to win, then, is to allow a language to be extensible as-needed with features written by third parties.  By supplying mechanisms for extension a language can provide insurances against the [Boundary Risk](Boundary-Risk) of adopting it. 
+
 ### Risks Mitigated
 
 So far, we've considered only how [Software Dependencies]() can alleviate complexity from our codebases.  But with [Software Dependencies]() we can construct dependency networks to give us all kinds of features and mitigate all kinds of risk.  
@@ -104,7 +106,7 @@ Often, the feature that you're looking for in a piece of software is to mitigate
   
 ## Types Of Software Dependencies
 
-The way to win, then, is to allow a language to be extensible as-needed with features written by third parties.  By supplying mechanisms for extension a language can provide insurances against the [Boundary Risk](Boundary-Risk) of adopting it.  Although there are many ways of allowing such extension, we're going to consider 3 basic types of dependencies in this section:  
+There are lots of ways you can depend on software.  Here though, we're going to focus on just three main types:  
  - **Our own**: write some code ourselves to meet the dependency.
  - **Libraries**:  importing code from the Internet, and using it in our project.  Often, libraries are Open Source (this is what we'll consider here).
  - **Services**: calling a service on the Internet, (probably via `http`)  This is often known as [SaaS, or Software as a Service](https://en.wikipedia.org/wiki/Software_as_a_service).
