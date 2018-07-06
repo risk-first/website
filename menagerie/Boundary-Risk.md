@@ -229,9 +229,20 @@ tasks easier to do
 
 
 
+Clearly, from this analysis, 
+
+Second, you can't always be sure that a dependency now will always have the same guarantees in the future: 
+- **Ownership changes** (e.g. [Oracle](http://oracle.com) buys [Sun](http://sun.com) who own [Java](https://en.wikipedia.org/wiki/Java_%28programming_language%29) for example)
+- **Licensing changes**.  (e.g. [Oracle](http://oracle.com) buys **Tangosol** who make [Coherence](https://en.wikipedia.org/wiki/Oracle_Coherence) for example)
+- Security updates not applied.
+- **Better alternatives become available**:  As a real example of this, I began a project in 2016 using [Apache Solr]().  However, in 2018, I would probably use [ElasticSearch](https://en.wikipedia.org/wiki/Elasticsearch).  In the past, I've built websites using [Drupal]() and then later converted them to use [Wordpress]().
+
+
+
 Stuck In the Middle Pattern - Scala / Raj.
 
 machine publishers 
+## Versioning
 
 
 Need to rethink this:  

@@ -115,6 +115,14 @@ Initially, writing our own code was the only game in town:  when I started progr
 
 Even now, there's always the opportunity cost of depending on our own code, which may well be more appropriate and ergonomic for whatever is required.  
 
+Sometimes, you will pick up a dependency on _unwritten software_.  This commonly happens when work is divided amongst team members, or teams.  
+
+
+If a component **A** of our project _depends_ on **B** for some kind of processing, you might not be able to complete **A** before writing **B**.   This makes _scheduling_ the project harder, and if component **A** is a risky part of the project, then the chances are you'll want to mitigate risk there first.  There are a couple of ways to do this:
+
+- **Standards**:  If component **B** is a database, a queue, mail gateway or something else with a standard interface, then you're in luck.   Write **A** to those standards, and find a cheap, simple implementation to test with.  This gives you time to sort out exactly what implementation of **B** you're going for.  This is not a great long-term solution, because obviously, you're not using the _real_ dependency- you might get surprised when the behaviour of the real component is subtly different.  But it can reduce [Schedule Risk](Schedule-Risk) in the short-term.
+- **Coding To Interfaces**:  If standards aren't an option, but the surface area of **B** that **A** uses is quite small and obvious, you can write a small interface for it, and work behind that, using a [Mock](https://en.wikipedia.org/wiki/Mock_object) for **B** while you're waiting for finished component.  Write the interface to cover only what **A** _needs_, rather than everything that **B** _does_ in order to minimize the risk of [Leaky Abstractions](https://en.wikipedia.org/wiki/Leaky_abstraction).
+
 Diagram:  Feature risk being mitigated , but complexity Risk, schedule risk  
 
 ## Software Libraries
@@ -217,8 +225,6 @@ The trade-off of SaaS looks a lot like library code, except that the dependency 
 
 [sd4]: https://www.zdnet.com/article/saas-checklist-nine-factors-to-consider-when-selecting-a-vendor/
 
-
-
 tbd.  diagram of how this works out: [feature risk], [communication risk]() being mitigated, but [Protocol Complexity Risk], [Fit Risk], [Dead End/Boundary Risk], [Costs?], [Red Queen Risk].
 internal vs external risks.
 
@@ -234,97 +240,14 @@ Let's expand this view slightly and look at where different pieces of software s
 | Advertising Supported          	| **Commercial Software**<ul><li>Lots of phone apps</li><li>e.g. Angry Birds</li></ul>                                 | **Commercial SaaS** <ul><li>Google Search</li><li>Gmail</li><li>Twitter</li></ul>               | *<ul><li>Low Boundary Risk</li><li>High Availability Of Substitutes</li></ul>*                            	|
 | Monthly / Metered Subscription 	| **Commercial Software**<ul><li>Oracle Databases</li><li>Windows</li><li>Office</li></ul>                             | **Commercial SaaS** <ul><li>Office 365</li><li>SalesForce</li><li>Amazon Web Services</li></ul> | *Easy arguments for reduced: <ul><li>Complexity Risk</li><li>Communication Risk</li><li>Coordination Risk</li></ul>* <br /> *Higher Boundary Risk*	|
 |                                    |                                                                                                                      | *Transferred: <ul><li>Operational Risk</li></ul>*                                               |                                                                                 |
-- Where there is value in the **Network Effect**, it's often a sign that the software will be free, or open source:  programming languages and linux are the obvious examples of this.  Bugs are easier to find when there are lots of eyes looking, and learning the skill to use the software has less [Boundary Risk](Boundary-Risk) if you know you'll be able to use it at any point in the future.
+
+- Where there is value in the [Network Effect](), it's often a sign that the software will be free, or open source:  programming languages and linux are the obvious examples of this.  Bugs are easier to find when there are lots of eyes looking, and learning the skill to use the software has less [Boundary Risk](Boundary-Risk) if you know you'll be able to use it at any point in the future.
 - At the other end of the spectrum, clients will happily pay for software if it clearly **reduces complexity**.  Take [Amazon Web Services].  The essential trade here is that you substitute the complexity of hosting and maintaining various pieces of software, in exchange for monthly payments ([Funding Risk](Schedule-Risk#Funding-Risk) for you).  Since AWS services are specific to Amazon, there is significant [Boundary Risk]() in choosing this option.
-- In the middle there are lots of **substitute options** and therefore high competition.  Because of this, prices are pushed towards zero, adn and therefore often advertising is used to monetarize the product.  Angry Birds is a classic example:  initially, it had demo and paid versions, however Rovio discovered there was much more money to be made through advertising than from the [paid-for app].
+- In the middle there are lots of **substitute options** and therefore high competition.  Because of this, prices are pushed towards zero, adn and therefore often advertising is used to monetarize the product.  [Angry Birds]() is a classic example:  initially, it had demo and paid versions, however [Rovio]() discovered there was much more money to be made through advertising than from the [paid-for app]().
 
 tbd.  include diagram
 
-Clearly, from this analysis, 
+### Moving On
 
-Second, you can't always be sure that a dependency now will always have the same guarantees in the future: 
-- **Ownership changes** (e.g. [Oracle](http://oracle.com) buys [Sun](http://sun.com) who own [Java](https://en.wikipedia.org/wiki/Java_%28programming_language%29) for example)
-- **Licensing changes**.  (e.g. [Oracle](http://oracle.com) buys **Tangosol** who make [Coherence](https://en.wikipedia.org/wiki/Oracle_Coherence) for example)
-- Security updates not applied.
-- **Better alternatives become available**:  As a real example of this, I began a project in 2016 using [Apache Solr]().  However, in 2018, I would probably use [ElasticSearch](https://en.wikipedia.org/wiki/Elasticsearch).  In the past, I've built websites using [Drupal]() and then later converted them to use [Wordpress]().
-
-
-
-
-
-
-
-![Dependency](images/dependency_depends.png)
-
-If a component **A** of our project _depends_ on **B** for some kind of processing, you might not be able to complete **A** before writing **B**.   This makes _scheduling_ the project harder, and if component **A** is a risky part of the project, then the chances are you'll want to mitigate risk there first.  There are a couple of ways to do this:
-
-- **Standards**:  If component **B** is a database, a queue, mail gateway or something else with a standard interface, then you're in luck.   Write **A** to those standards, and find a cheap, simple implementation to test with.  This gives you time to sort out exactly what implementation of **B** you're going for.  This is not a great long-term solution, because obviously, you're not using the _real_ dependency- you might get surprised when the behaviour of the real component is subtly different.  But it can reduce [Schedule Risk](Schedule-Risk) in the short-term.
-- **Coding To Interfaces**:  If standards aren't an option, but the surface area of **B** that **A** uses is quite small and obvious, you can write a small interface for it, and work behind that, using a [Mock](https://en.wikipedia.org/wiki/Mock_object) for **B** while you're waiting for finished component.  Write the interface to cover only what **A** _needs_, rather than everything that **B** _does_ in order to minimize the risk of [Leaky Abstractions](https://en.wikipedia.org/wiki/Leaky_abstraction).
-- **Do The Homework**:  Accept that **B** is going to bite you and try to make the decision now.  Pick the best 3rd-party component you can find (preferably on a trial basis), whilst being aware that you might get it wrong and need to change later.   Write [Tests](Testing) to alleviate [Communication Risk](Communication-Risk) now, and then to use to evaluate alternatives if need be.
-
-You can mitigate this somewhat by searching resources online like [StackOverflow]() to find other people using the dependency in the same way as you, or alternatively by  [Prototyping](Prototyping) hard in order to uncover as much of the [Hidden Risk](Glossary#Hidden-Risk) as possible.
-
-## Versioning
-
-
-
-## Dependencies Between Teams and Components
-
-We know from the section on [Communication Risk]() that introducing new communication protocols and apis is a great way to keep a lid on complexity.  
-
-In the section on [Process Risk](Process-Risk) we're going to l
-
-
-
-
-
-
-
-
-## VErsoining
-
-
-
-Write as little code as possible.
-
--- we don't use bounded rationality.
-
-
-dependencies between teams
- 
-dependencies between modules
-Dependency Mismatch
-
-
-
-What Do I want to say?  
-
-Journey:  a journey of _ergonomics_:  trying to make things that will be maximally useful, but with minimum commuinicaton risk.
-
-
-  - Payment, Licensing, extension.
-  - The trade-off. ( Show as a diagram)
-     - Types of risks
-- Choosing Software Dependencies (and why)
-  (find some useful articles on this and summarize them, explain why they mitigate the risks)
-- Evolution
-- Baggage
-- Versioning
-  
-
-
-.. on to boundary risk
- 
-  
-  
-
-Some predictors:
- 
-
- 
- - Or they produce a new version which is incompatible with your old version, forcing you to upgrade?  (libraries, webservices)
- 
- - Dependency Change - REST endpoints, etc.   Semantic versioning .  Hickey
-
-
+_[Boundary Risk](Boundary-Risk)_ keeps coming up as a concern, both in [SaaS](#software-as-a-service) and [Software Libraries](#software-libraries).  Let's take a closer look in the [next section](Boundary-Risk).
 
