@@ -82,6 +82,23 @@ So, we now have split the complexity
  - The complexity of the instructions that we need to write to make the tool work (the interface [Kolmogorov Complexity](Complexity-Risk#Kolmogorov-Complexity)). 
  
 tbd diagram of this 
+
+### Risks Mitigated
+
+We've looked in-depth at how introducing software dependencies mitigates [Complexity Risk]().  But, you can mitigate _all kinds of risk_ with [Software Dependencies]().  Let's look at some:
+
+|Risk                                                 |Examples of Software Mitigating That Risk                                |
+|-----------------------------------------------------|-------------------------------------------------------------------------|
+|[Coordination Risk](Coordination Risk)               |Calendar tools,  Bug Tracking, Distributed Databases                     |
+|[Map-And-Territory-Risk](Map-And-Territory-Risk)     |The Internet, generally.  Excel, Google, "Big Data", Reporting tools     |
+|[Schedule-Risk](Schedule-Risk)                       |Planning Software, Project Mangement Software                            |
+|[Communication-Risk](Communication-Risk)             |Email, Chat tools, CRM tools like SalesForce, Forums, Twitter            |
+|[Process-Risk](Process-Risk)                         |Reporting tools, online forms, process tracking tools                    |
+|[Agency-Risk](Agency-Risk)                           |Auditing tools, transaction logs                                         |  
+|[Operational-Risk](Operational-Risk)                 |Support tools like ZenDesk, Grafana, InfluxDB, Geneos                    |
+|[Feature-Risk](Feature-Risk)                         |Every piece of software you use!                                         |
+
+Often, the feature that you're looking for in a piece of software is to mitigate some kind of risk.  I might start using [WhatsApp]() for example, because I want to be able to send my friends photos and text messages.  However, it's likely that those same features are going to allow us to mitigate [Communication-Risk](Communication-Risk) and [Coordination Risk](Coordination-Risk) when we're next trying to meet up.   
   
 ## Types Of Software Dependencies
 
@@ -177,10 +194,6 @@ tbd.  dependency diagram, showing complexity, feature, schedule risk on the left
 
 So, adopting any library is a trade-off:   tbd.
 
-### Coordination Risk
-
-
-
 ### Software as a Service (SaaS)
 
 Businesses opt for SaaS because it vastly reduces the [Complexity Risk]() they face in their organisations.  Instead of having to pay for in-house software administrators, they can leave this function to the experts.
@@ -189,14 +202,22 @@ SaaS is now a very convenient way to provide _commercial_ software.   Popular ex
 
 The trade-off of SaaS looks a lot like library code, except that the dependency is arguably _more_ fragile:
 
-|Risk Type           |3rd-Party Library Code                                      |Software-as-a-Service                                   |
-|--------------------|------------------------------------------------------------|--------------------------------------------------------|
-|Boundary Risk       |If the software is Open Source, you can potentially patch it|You are at the mercy of the team providing it           |
-|Operational Risk    |Loss Of Data is your concern to manage.                     |Loss of data impacts you, but is a concern managed by the 3rd party|
-|                    |
+| Concern                                                                                                                                                               | <img src="images/generated/operational-risk.png" width="300"/> | <img src="images/generated/boundary-risk.png" width="300" /> | <img src="images/generated/feature-risk.png" width="300"/>    | <img src="images/generated/communication-risk.png" width="300" /> | <img src="images/generated/schedule-risk.png" width="300" /> | Source       | 
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------:|:-------------:|:-------------------:|:------------------:|:------------------:|--------------| 
+|How does the support process hold up in your trial runs?                                                                                                               |X                  |               |                     |                    |                    |              |
+|What's the backup plan? (It's vital that you understand how your data are protected, and what redundancies are available should your SaaS provider have an outage. )   |X                  |X              |                     |                    |                    |              |
+|What happens to your data if you sever ties with the vendor?                                                                                                           |                   |X              |                     |                    |                    |              |
+|Are your current and future user environments supported? (Browser Compatibility)                                                                                       |                   |X              |X                    |                    |                    |              |
+|What migration and training assistance options are available?                                                                                                          |                   |X              |X                    |                    |                    |              |
+|What integration options are available?                                                                                                                                |                   |               |                     |                    |                    |              |
+|Can you test in parallel?                                                                                                                                              |                   |X              |                     |                    |                    |              |
+|How does functionality compare to maturity?                                                                                                                            |                   |               |                     |                    |                    |              |
+|What's the pricing model?                                                                                                                                              |                   |X              |                     |                    |                    |X             |
 
 
-I: https://www.zdnet.com/article/saas-checklist-nine-factors-to-consider-when-selecting-a-vendor/
+
+
+[sd4]: https://www.zdnet.com/article/saas-checklist-nine-factors-to-consider-when-selecting-a-vendor/
 
 
 
@@ -209,11 +230,11 @@ These are not the only ways to provide a dependency, and there's clearly no one 
 
 Let's expand this view slightly and look at where different pieces of software sit on these axes:
 
-| Pricing                        	|                    On Premises 3rd Party                                                                         	| In Cloud / Browser 3rd Party                           	                                         | Risk Profile                                                                 	|
+| Pricing                        	|                    On Premises 3rd Party                                                                             | In Cloud / Browser 3rd Party                           	                                     | Risk Profile                                                                                                    |
 |--------------------------------	|-----------------------------------------------------------                                                           |--------------------------------------------------------	                                     |------------------------------------------------------------------------------	|
-| Free                           	| **OSS Libraries** <br /><ul><li>Tools</li><li>Java</li><li>Firefox</li>Linux</li><li>Programming Languages</li></ul> | **Freemium**<ul><li>Splunk</li><li>Spotify</li><li>GitHub</li></ul>                            	| *<ul><li>Low Boundary Risk Drives Adoption</li><li>Value In Network Effect</li></ul>*                         	|
-| Advertising Supported          	| **Commercial Software**<ul><li>Lots of phone apps</li><li>e.g. Angry Birds</li></ul>                              	| **Commercial SaaS** <ul><li>Google Search</li><li>Gmail</li><li>Twitter</li></ul>               	| *<ul><li>Low Boundary Risk</li><li>High Availability Of Substitutes</li></ul>*                            	|
-| Monthly / Metered Subscription 	| **Commercial Software**<ul><li>Oracle Databases</li><li>Windows</li><li>Office</li></ul>                         	| **Commercial SaaS** <ul><li>Office 365</li><li>SalesForce</li><li>Amazon Web Services</li></ul> 	| *Easy arguments for reduced: <ul><li>Complexity Risk</li><li>Communication Risk</li><li>Coordination Risk</li></ul>* <br /> *Higher Boundary Risk*	|
+| Free                           	| **OSS Libraries** <br /><ul><li>Tools</li><li>Java</li><li>Firefox</li>Linux</li><li>Programming Languages</li></ul> | **Freemium**<ul><li>Splunk</li><li>Spotify</li><li>GitHub</li></ul>                             | *<ul><li>Low Boundary Risk Drives Adoption</li><li>Value In Network Effect</li></ul>*                         	|
+| Advertising Supported          	| **Commercial Software**<ul><li>Lots of phone apps</li><li>e.g. Angry Birds</li></ul>                                 | **Commercial SaaS** <ul><li>Google Search</li><li>Gmail</li><li>Twitter</li></ul>               | *<ul><li>Low Boundary Risk</li><li>High Availability Of Substitutes</li></ul>*                            	|
+| Monthly / Metered Subscription 	| **Commercial Software**<ul><li>Oracle Databases</li><li>Windows</li><li>Office</li></ul>                             | **Commercial SaaS** <ul><li>Office 365</li><li>SalesForce</li><li>Amazon Web Services</li></ul> | *Easy arguments for reduced: <ul><li>Complexity Risk</li><li>Communication Risk</li><li>Coordination Risk</li></ul>* <br /> *Higher Boundary Risk*	|
 |                                    |                                                                                                                      | *Transferred: <ul><li>Operational Risk</li></ul>*                                               |                                                                                 |
 - Where there is value in the **Network Effect**, it's often a sign that the software will be free, or open source:  programming languages and linux are the obvious examples of this.  Bugs are easier to find when there are lots of eyes looking, and learning the skill to use the software has less [Boundary Risk](Boundary-Risk) if you know you'll be able to use it at any point in the future.
 - At the other end of the spectrum, clients will happily pay for software if it clearly **reduces complexity**.  Take [Amazon Web Services].  The essential trade here is that you substitute the complexity of hosting and maintaining various pieces of software, in exchange for monthly payments ([Funding Risk](Schedule-Risk#Funding-Risk) for you).  Since AWS services are specific to Amazon, there is significant [Boundary Risk]() in choosing this option.
