@@ -137,7 +137,7 @@ public class LinkChecker {
 	private static String createLink(String name, String title) {
 		String mainName = name.substring(0,  name.indexOf(".md"));
 		if (title != null) {
-			String titleLink = title.trim().replace("&","").replace(" ","-");
+			String titleLink = title.trim().replace("&","").replace(":","").replace(" ","-");
 			mainName =  mainName+"#"+titleLink;
 		}
 		
