@@ -19,9 +19,9 @@ Process exists to mitigate other kinds of risk, and for this reason, we'll be lo
 But until we get there, let's look at some examples of how process can mitigate other risks:
 
  - [Coordination Risk](Coordination-Risk):   You can often use process to help people coordinate.  For example, a production Line is a process where work being done by one person is pushed to the next person when it's done.  A meeting booking process ensures that people will all attend a meeting together at the same place and time, and that a room is available for it. 
- - [Dependency Risk](Dependency-Risk): You can use processes to make dependencies explicit and mitigate dependency risk.  For example, a process for hiring a car will make sure there is a car available at the time you need it.  Alternatively, if we're processing a loan application, we might need evidence of income or bank statements.  We can push this [Dependency Risk]() onto the person asking for the loan, by making it part of the process and not accepting the application until this has been provided.
- - [Complexity Risk](Complexity-Risk): Working within a process can reduce the amount of Complexity you have to deal with.  We accept that processes are going to slow us down, but we appreciate the reduction in risk this brings.  (They allow us to trade Complexity for schedule risk).  For example, setting up a server might be complex, but filling in a form to do the job might simplify things.  Clearly, the complexity hasn't gone away, but it's hidden within the process.  Process therefore can provide [Abstraction].
- - **Operational Risk**:  Operational Risk is the risk of people not doing their job properly (tbd).  But, by having a process, (and asking, did this person follow the process?) you can draw a distinction between a process failure and a personnel failure.  For example, making a loan to a money launderer _could_ be a failure of the loan agent.   But, if they followed the _process_, it's a failure of the Process itself. 
+ - [Dependency Risk](Dependency-Risk): You can use processes to make dependencies explicit and mitigate dependency risk.  For example, a process for hiring a car will make sure there is a car available at the time you need it.  Alternatively, if we're processing a loan application, we might need evidence of income or bank statements.  We can push this [Dependency Risk](Dependency-Risk) onto the person asking for the loan, by making it part of the process and not accepting the application until this has been provided.
+ - [Complexity Risk](Complexity-Risk): Working within a process can reduce the amount of Complexity you have to deal with.  We accept that processes are going to slow us down, but we appreciate the reduction in risk this brings.  (They allow us to trade Complexity for schedule risk).  For example, setting up a server might be complex, but filling in a form to do the job might simplify things.  Clearly, the complexity hasn't gone away, but it's hidden within the process.  Process therefore can provide [Abstraction](Glossary#Abstraction).
+ - [Operational Risk](Operational-Risk):  Operational Risk is the risk of people not doing their job properly (tbd).  But, by having a process, (and asking, did this person follow the process?) you can draw a distinction between a process failure and a personnel failure.  For example, making a loan to a money launderer _could_ be a failure of the loan agent.   But, if they followed the _process_, it's a failure of the Process itself. 
 
 ## Evolution Of Business Process
 
@@ -83,7 +83,7 @@ For many years I have worked in the Finance Industry, and it's given me time to 
 
 ## Process Risks
 
-**Process Risk**, then, is a type of [Dependency Risk](Dependency-Risk), where you are relying on a process.  In a way, it's no different from any other kind of [Dependency Risk].   But [Process Risk]() manifests itself in fairly predictable ways:
+**Process Risk**, then, is a type of [Dependency Risk](Dependency-Risk), where you are relying on a process.  In a way, it's no different from any other kind of [Dependency Risk](Dependency-Risk).   But [Process Risk](Process-Risk) manifests itself in fairly predictable ways:
 
  - [Reliability Risk](Dependency-Risk): If _people_ are part of the process, there's the chance that they forget to follow the process itself, and miss steps or forget your request completely.  The reliability is related to the amount of [Complexity Risk]() the process is absorbing.
  - [Visibility Risk]: Usually, processes (like other dependencies) trade [Complexity Risk]() for visibility:  it's often not possible to see how far along a process is to completion.  Sometimes, you can do this to an extent.  For example, when I send a package for delivery, I can see roughly how far it's got on the tracking website.  But, this is still less-than-complete information, and is a representation of reality.    
@@ -142,34 +142,5 @@ tbd.
 Dependency of any kind is a choice in which you are trying to choosing a position of lower [Attendant Risk](Glossary#attendant-risk) than you would have without the dependency. 
 
 So, we've looked at different types of dependencies.   
-
-
-|What does the risk look like?   |Software Dependency     |Process             |Event                 |Person                         |
-|----------------------|----------------------------------|--------------------|----------------------|-------------------------------|
-|[Dependency Risk][1]  |[Software Dependency Risk][2]     |[Process Risk][3]   |[Deadline Risk][4]    |[Key-Man Risk][5]              |
-|----------------------|----------------------------------|--------------------|----------------------|-------------------------------|
-|Risks Mitigated       |[Complexity Risk][6] from having  |[Complexity Risk][6]|[Coordination Risk][7]|[Resource Coordination Risk][8]| 
-|                      |to do the process yourself        |                    |                      |                               |
-|----------------------|----------------------------------|--------------------|----------------------|-------------------------------|
-|[Communication Risk]()  |Understanding the API, using it   |Filling in forms    |Communicating the     |- Being misunderstood          |
-|                      |                                  |wrongly.            |right place and time  |- Instructions not followed    |
-|                      |                                  |                    |to everyone           |                               |
-|----------------------|----------------------------------|--------------------|----------------------|-------------------------------|
-|[Invisibility Risk]()   |Understanding the API, but not the|You don't know how  |- Will people show up?|                               |
-|                      |implementation.    Debugging      |far along the work  |- Will it be what you |                               |
-|                      |is harder.                        |might be            | expect?              |                               |
-|----------------------|----------------------------------|--------------------|----------------------|-------------------------------|
-|[Feature Risk]()        |The product might not work how you|Might not           |Is this:              |Do the available staff have    |
-|                      |expected.  If features are missing|cater to your exact |-What you want        |the skills you need?           |
-|                      |you might be stuck.               |use case            |-When you want it?    |                               |
-|----------------------|----------------------------------|--------------------|----------------------|-------------------------------|
-|                      |                                  |                      |                    |                          |
-|[Dead End Risk]()       |                                  |                      |                    |                          |
-|                      |                                  |                      |                    |                          |
-
-[1]: (Dependency-Risk)
-[2]: (Software-Dependency-Risk)
-[3]: (Process-Risk)
-[4]: (Deadline-Risk)
 
 

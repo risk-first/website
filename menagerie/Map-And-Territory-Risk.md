@@ -81,6 +81,13 @@ So far, we've considered what happens when a team _has been told_ to optimise ar
  
 So, publication in prestigious journals is a _metric_ which is open to abuse, as we saw earlier. 
 
+- Everyone can see this system is broken, but no-one can change it because they are all trapped within it. 
+- The onion is a better situation - at least the people at the top can do something.  
+
+## Picking Projects
+
+
+
 tbd
 
 ## Head In The Sand
@@ -102,8 +109,8 @@ Bullshit jobs
 
 It's tempting to think that [Map And Territory Risk](Map-And-Territory-Risk) is something that happens to someone else, and that you are going to be immune to it.  
 
-
 Unfortunately, science is here to prove you wrong - our brains are _filled_ with biases which 
+
 
 Why is this relevant?
 
@@ -122,5 +129,5 @@ Do biases go in here?  YES!!
 
 **Any time your internal model is inconsistent with the world outside.   Should we call this internal model risk?**
 
-
+Machine biases:   machines only store what we put in them, which is not necessarily reality either
 
