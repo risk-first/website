@@ -68,7 +68,7 @@ So, we're going to look at [Dependency Risk](Dependency-Risk) for our toy events
 
  - [Schedule Risk](Schedule-Risk)
  - [Reliability Risk](Operational-Risk#reliability-risk)
- - [Scarcity Risk](Feature-Risk#market-risk)
+ - [Scarcity Risk](Dependency-Risk#scarcity-risk)
  - [Communication Risk](Communication-Risk)
  - [Complexity Risk](Complexity-Risk)
  - [Feature Fit Risk](Feature-Risk#feature-fit-risk)

@@ -12,9 +12,9 @@ tbd collecting image
 
 In the [Feature Risk]() section, we looked at the problems of _supplying a dependency to someone else_:  you've got to satisfy a demand [Market Risk], and ensure a close fit with requirements [Conceptual Integrity Risk].  The section on [Production Risk]() went further, looking at specific aspects of being the supplier of an IT service as a dependency.  
 
-However, over the rest of the [Dependency Risk]() sections, we looked at this from the point of view of _being a client to someone else_:  you want to find trustworthy, reliable dependencies that don't give up when you least want them to.
+However, over the rest of the [Dependency Risk](Dependency-Risk) sections, we looked at this from the point of view of _being a client to someone else_:  you want to find trustworthy, reliable dependencies that don't give up when you least want them to.
 
-So [Feature Risk]() _is_ [Dependency Risk]:  they’re two sides of the same coin.  In a dependency, you’re a client, whereas feature risk, you’re the supplier. 
+So [Feature Risk]() _is_ [Dependency Risk](Dependency-Risk):  they’re two sides of the same coin.  In a dependency, you’re a client, whereas feature risk, you’re the supplier. 
 
 ### Coordination Risk 
 
@@ -45,17 +45,37 @@ How much do compilers do for you?
     - Mention Kanban = the control is the physical object
   - Expected Requirement Coverage - diagrams 1 & 2.
   - Dependencies and Coordination
+  - Need to do this again, now.
+  
+  - In The Bin
+  
+     - CapsLock: complexity, not using tools.
+     - Configuration Tool (Complexity, feature fit, bugs in hibernate, difficulty mapping domain model)
+     - Wide Learning  (Funding, but also complexity), did we know what we were building?  Agency risk
+     - AreAye - needless complexity XMLBox
+     - Agora: Notes / Typing. (Complexity Risk)  Archipelago
+     - PDC: website redesign. funding.  i.e. schedule risk
+     - Hawk:  complexity risk in the software.  but actually, they made it work.  offshoring.
+     - Dark:  market/feature fit?  
+     - J10: marketing / market fit / Complexity in spades.  algorithmic complexity
+     - DSL:  complexity (code generation).  complexity = layers.  team dynamics.  
+     - REF:  complexity. agency risk. failure of goals.  m&t.
+     - REF Testing:  complexity risk.  communication risk?
+     - HSC: Trader Comments:  feature fit.
+     - HSC: Takeover of Symph: Complexity (of change)
+     
 
 2.  What's Gone Before
+  - An attempt to categorize all the ways in which software projects go wrong.
+  
   - Boehm.
   
-    
   
+3.  What's To Come
+  - risk based debugging.
+  - risk based coding.
 
-
-risk based debugging.
-
-risk based coding.
-
-We're all naturalists now.
+4.  On to Part 3.
+ - I'm a better coder for knowing this.
+ - We're all naturalists now.
 
