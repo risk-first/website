@@ -119,7 +119,7 @@ public class LinkChecker {
 							if (!image) {
 								targets.add(new Target(f.getName(), lineNo, url.toLowerCase(), text));
 							}
-						}, line);
+						}, line, (s) -> {});
 					
 					LinkChecker.processTargets(content, 
 						(title, depth, lineNo) -> {

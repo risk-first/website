@@ -37,7 +37,7 @@ public class TextPreprocessor {
 			if (line.trim().equals("```include")) {
 				processIncludes(br, origin);
 			} else {
-				processLinks(line, TextPreprocessor::processImageLink, lineNo);
+				processLinks(line, TextPreprocessor::processImageLink, lineNo, System.out::println);
 			}
 			line = br.readLine();
 			lineNo++;
@@ -51,15 +51,20 @@ public class TextPreprocessor {
 		void process(String link, String text, String url, boolean image, int lineNo);
 		
 	}
+	
+	public interface TextOutputter {
+		
+		void process(String s);
+	}
 
-	public static void processLinks(String line, LinkProcessor lp, int lineNo) {
+	public static void processLinks(String line, LinkProcessor lp, int lineNo, TextOutputter tp) {
 		Matcher m = p.matcher(line);
 		int place = 0;
 		while (m.find()) {
 			int s = m.start();
 			int e = m.end();
 			
-			//System.out.print(line.substring(place, s));
+			tp.process(line.substring(place, s));
 			
 			String link = line.substring(s, e);
 			
@@ -80,7 +85,7 @@ public class TextPreprocessor {
 			place = e;
 		}
 		
-		//System.out.println(line.substring(place));
+		tp.process(line.substring(place));
 	}
 
 	private static void processImageLink(String link, String text, String url, boolean image, int lineNo) {
@@ -93,7 +98,7 @@ public class TextPreprocessor {
 				} else {
 					// something else.
 				}
-			} else {
+			} else if (!isState(url)) {
 				if (url.contains("generated")) {
 					// need to replace with 400dpi version
 					url = url.substring(0, url.length()-4) + "-400dpi.png";
@@ -118,6 +123,10 @@ public class TextPreprocessor {
 
 	private static boolean isExternal(String url) {
 		return url.contains("http");
+	}
+	
+	private static boolean isState(String url) {
+		return url.contains("/state/");
 	}
 
 	private static void processIncludes(BufferedReader br, File origin) throws IOException {
