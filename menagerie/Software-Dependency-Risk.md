@@ -121,7 +121,7 @@ Consider the [Communication Risk](Communication-Risk) involved in the dependency
 
 > "organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations." — [M. Conway, Conway's Law, _Wikipedia_](https://en.wikipedia.org/wiki/Conway%27s_law)
 
-Diagram:  Feature risk being mitigated , but complexity Risk, schedule risk  
+![Code your own mitigates immediate feature risk, but at the expense of schedule risk, complexity risk and communication risk.  There is also a hidden risk of features you don't yet know you need.](images/kite9/software-dependency-code-your-own.png) 
 
 ## Software Libraries
 
