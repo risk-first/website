@@ -113,6 +113,8 @@ If a component **A** of our project _depends_ on **B** for some kind of processi
 - **Standards**:  If component **B** is a database, a queue, mail gateway or something else with a standard interface, then you're in luck.   Write **A** to those standards, and find a cheap, simple implementation to test with.  This gives you time to sort out exactly what implementation of **B** you're going for.  This is not a great long-term solution, because obviously, you're not using the _real_ dependency- you might get surprised when the behaviour of the real component is subtly different.  But it can reduce [Schedule Risk](Schedule-Risk) in the short-term.
 - **Coding To Interfaces**:  If standards aren't an option, but the surface area of **B** that **A** uses is quite small and obvious, you can write a small interface for it, and work behind that, using a [Mock](https://en.wikipedia.org/wiki/Mock_object) for **B** while you're waiting for finished component.  Write the interface to cover only what **A** _needs_, rather than everything that **B** _does_ in order to minimize the risk of [Leaky Abstractions](https://en.wikipedia.org/wiki/Leaky_abstraction).
 
+![Coding to a standard on an interface breaks the dependency on unwritten software](images/kite9/software-dependency-unwritten-2.png)
+
 ### Conway's Law
 
 Consider the [Communication Risk](Communication-Risk) involved in the dependency too.  If it's being written by another person, another team or in another country, communication risks pile up.  When this happens, you will want to minimize _as much as possible_ the interface complexity, because a more complex interface will .  In essence, this is [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law):
