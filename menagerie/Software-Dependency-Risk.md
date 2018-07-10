@@ -2,7 +2,7 @@
 
 In this section, we're going to look specifically at _Software_ dependencies, although many of the concerns we'll raise here apply equally to all the other types of dependency we outlined in [Dependency Risk](Dependency-Risk). 
 
-## Kolmogorov Complexity: How To Win
+## Kolmogorov Complexity: Cheating
 
 In the earlier section on [Complexity Risk](Complexity-Risk) we tackled [Kolmogorov Complexity](Complexity-Risk#Kolmogorov-Complexity), and the idea that your codebase had some kind of minimal level of complexity based on the output it was trying to create.  This is a neat idea, but in a way, we cheated.  Let's look at how.
 
@@ -51,7 +51,9 @@ function out() {                                             (7 symbols)
 2.  The exact Kolmogorov complexity is uncomputable anyway.  It's just a fairly abstract idea, so we shouldn't get too hung up on this.  There is no function to be able to say, "what's the Kolmogorov complexity of string X"
 3.  What is this new library function we've created?   Is `abcdRepeater` going to be part of _every_ Javascript?  If so, then we've shifted [Codebase Risk](Complexity-Risk) away from ourselves, but we've pushed [Communication Risk](Communication-Risk) and [Dependency Risk](Dependency-Risk) onto every _other_ user of Javascript. (Why these?  Because `abcdRepeater` will be clogging up the documentation and other people will rely on it to function correctly.)
 4.  Are there equivalent functions for every single other string?  If so, then compilation is no longer a tractable problem: is `return abcdRepeater(10)` correct code?  Well, now we have a massive library of different `XXXRepeater` functions to compile against to see if it is...  So, what we _lose_ in [Kolmogorov Complexity](Complexity-Risk) we gain in [Big-O Complexity](Complexity-Risk).
-5.  Language design, then, is about _ergonomics_.  After you have passed the relatively low bar of providing [Turing Completeness](https://en.wikipedia.org/wiki/Turing_completeness), the key is to provide _useful_ features that enable problems to be solved, without over-burdening the user with features they _don't_ need.  And in fact, all software is about this.
+5.  Language design, then, is about _ergonomics_.  After you have passed the relatively low bar of providing [Turing Completeness](https://en.wikipedia.org/wiki/Turing_completeness), the key is to provide _useful_ features that enable problems to be solved, without over-burdening the user with features they _don't_ need.  And in fact, all software is about this. (expand on this)
+
+tbd diagram
 
 ## Ergonomics Examined
 
@@ -81,7 +83,7 @@ So, we now have split the complexity into two:
  - The inner complexity of the tool (how it works internally, it's own [Kolmogorov Complexity](Complexity-Risk#Kolmogorov-Complexity)).
  - The complexity of the instructions that we need to write to make the tool work (the interface [Kolmogorov Complexity](Complexity-Risk#Kolmogorov-Complexity)). 
  
-tbd diagram of this 
+![Types of Complexity For a Software Dependency](images/kite9/software-dependency-complexity.png)
 
 The way to win, then, is to allow a language to be extensible as-needed with features written by third parties.  By supplying mechanisms for extension a language can provide insurances against the [Boundary Risk](Boundary-Risk) of adopting it. 
 
@@ -207,12 +209,12 @@ Let's look at some:
 |[Operational-Risk](Operational-Risk)                 |Support tools like ZenDesk, Grafana, InfluxDB, Geneos                    |
 |[Feature-Risk](Feature-Risk)                         |Every piece of software you use!                                         |
 
-Often, the feature that you're looking for in a piece of software is to mitigate some kind of risk.  I might start using [WhatsApp]() for example, because I want to be able to send my friends photos and text messages.  However, it's likely that those same features are going to allow us to mitigate [Communication-Risk](Communication-Risk) and [Coordination Risk](Coordination-Risk) when we're next trying to meet up.   
+Often, the feature that you're looking for in a piece of software is to mitigate some kind of risk.  I might start using [WhatsApp](https://en.wikipedia.org/wiki/WhatsApp) for example, because I want to be able to send my friends photos and text messages.  However, it's likely that those same features are going to allow us to mitigate [Communication-Risk](Communication-Risk) and [Coordination Risk](Coordination-Risk) when we're next trying to meet up.   
   
 
 tbd.  dependency diagram, showing complexity, feature, schedule risk on the left, feature risk, boundary risk, communication risk on the right.
 
-So, adopting any library is a trade-off:   tbd.
+So, adopting any library is a trade-off:   tbd. bring it back to ergonomics
 
 ### Software as a Service (SaaS)
 
