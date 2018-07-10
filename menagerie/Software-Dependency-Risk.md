@@ -106,6 +106,8 @@ Even now, there's always the opportunity cost of depending on our own code, whic
 
 Sometimes, you will pick up a dependency on _unwritten software_.  This commonly happens when work is divided amongst team members, or teams.  
 
+![Sometimes, a module you're writing will depend on unwritten code](images/kite9/software-dependency-unwritten-1.png)
+
 If a component **A** of our project _depends_ on **B** for some kind of processing, you might not be able to complete **A** before writing **B**.   This makes _scheduling_ the project harder, and if component **A** is a risky part of the project, then the chances are you'll want to mitigate risk there first.  There are a couple of ways to do this:
 
 - **Standards**:  If component **B** is a database, a queue, mail gateway or something else with a standard interface, then you're in luck.   Write **A** to those standards, and find a cheap, simple implementation to test with.  This gives you time to sort out exactly what implementation of **B** you're going for.  This is not a great long-term solution, because obviously, you're not using the _real_ dependency- you might get surprised when the behaviour of the real component is subtly different.  But it can reduce [Schedule Risk](Schedule-Risk) in the short-term.
