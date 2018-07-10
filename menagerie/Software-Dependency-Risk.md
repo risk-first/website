@@ -178,9 +178,7 @@ Some take-aways:
  - [Feature Risk](Feature-Risk) is the biggest concern.   How can you be sure that the project will do what you want it to do ahead of schedule?  Will it contain bugs or missing features?  By looking at factors like _release frequency_ and _size of the community_ you get a good feel for this which is difficult to fake.
  - [Boundary Risk](Boundary-Risk) is also very important.  You are going to have to _live_ with your choices for the duration of the project, so it's worth spending the effort to either ensure that you're not going to regret the decision, or that you can change direction later.
  - Third is [Communication Risk](Communication-Risk):  how well does the project deal with it's users?  If a project is "famous", then it has communicated its usefulness to a wide, appreciative audience.
-
-![Software Libraries Risk Tradeoff](images/kite9/software-dependency-library.png)
- 
+  
 ### Complexity Risk? 
  
 One thing that none of the sources consider (at least from the outset) is the [Complexity Risk]() of using a solution:    
@@ -191,6 +189,8 @@ One thing that none of the sources consider (at least from the outset) is the [C
 To give an extreme example of this, I once worked on an application which used [Hazlecast]() to cache log-in session tokens for a 3rd party datasource.  But, the app is only used once every month, and session IDs can be obtained in milliseconds.   So... why cache them?  Although Hazlecast is an excellent choice for in-memory caching across multiple JVMs, it is a complex piece of software (after all, it does lots of stuff).  By doing this, you have introduced extra dependency risk, cache invalidation risks, networking risks, synchronisation risks and so on, for actually no benefit at all...  Unless, it’s about [CV building](Agency-Risk).  
 
 Sometimes, the amount of complexity _goes up_ when you use a dependency for _good reason_.   For example, in Java, you can use JDBC to interface with various types of database.  [Spring]() (a popular middleware suite) provides a thing called a [JDBCTemplate].  This actually makes your code _more_ complex, and can prove very difficult to debug.  However, it prevents injection attacks, handles resource disposal and makes use of prepared statements.  None of those are essential to interfacing with the database, but not using them is technical debt that can bite you later on.  
+
+![Software Libraries Risk Tradeoff](images/kite9/software-dependency-library.png) 
 
 ### Risks Mitigated
 
