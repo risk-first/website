@@ -1,6 +1,8 @@
-![For Review](images/state/for-review.png)
+![Draft](images/state/draft.png)
 
-[Coordination Risk](Coordination-Risk) is the risk that, a group of people (or processes), maybe with a similar [Goal In Mind](Goal-In-Mind) they can fail to coordinate on a way to meet this goal and end up making things worse.  [Coordination Risk](Coordination-Risk) is embodied in the phrase "Too Many Cooks Spoil The Broth":  more people, opinions or agents often make results worse.
+[Coordination Risk](Coordination-Risk) is the risk that, a group of people (or processes), maybe with a similar [Goal In Mind](Goal-In-Mind) they can fail to coordinate on a way to meet this goal and end up making things worse.  
+
+[Coordination Risk](Coordination-Risk) is embodied in the phrase "Too Many Cooks Spoil The Broth":  more people, opinions or agents often make results worse.
 
 In this section and beyond, we're going to use the term **Agent**, which refers to anything with _agency_ in a system to decide it's own fate.  That is, an [Agent]() has an [Internal Model](Glossary#Internal-Model),  and can [take actions]() based on it.  In this section, we're going to consider Agents at several different levels (because of [Scale Invariance]()) .  We'll look at:
  - People
