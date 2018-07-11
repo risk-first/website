@@ -34,7 +34,7 @@ But maybe now, the iPad's window is closing?   We have more _wearable computers_
 
 So, it seems Apple timed the iPad to hit the peak of the Window of Opportunity.  
 
-But, even if you time the Window Of Opportunity correctly, you might still have the rug pulled from under your feet due to a different kind of [Schedule Risk](Schedule-Risk).
+But, even if you time the Window Of Opportunity correctly, you might still have the rug pulled from under your feet due to a different kind of [Schedule Risk](Schedule-Risk), such as...
 
 ## Deadline Risk
 
