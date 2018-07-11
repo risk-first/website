@@ -1,20 +1,16 @@
 ![Draft](images/state/draft.png)
 
-**Process Risk**, as we will see, is the risk you take on whenever you embark on a process.   This is the final part of our analysis of different [Dependency Risks](Dependency-Risk), so at the end of this section we're going to summarise what we've learned about [Dependency Risk](Dependency-Risk) so far. 
+[Process Risk](Process-Risk), as we will see, is the risk you take on whenever you embark on completing a _process_. 
 
-But first, what exactly is a process?    
+> "**Process:**: A process is a set of activities that interact to achieve a result." - [Process, _Wikipedia_](https://en.wikipedia.org/wiki/Process)
 
-tbd.  definition
-
-## Elaboration
-
-In the software development world, and the business world generally, processes usually involve _forms_.  If you're filling out a form (whether on paper or on a computer) then you're involved in a process of some sort, whether an "Account Registration" process, "Loan Application" process or "Consumer Satisfaction Survey" process.  
-
-Later in this section we'll look at 
+In the software development world (and the business world generally) processes usually somehow involve _forms_.  If you're filling out a form (whether on paper or on a computer) then you're involved in a process of some sort, whether an "Account Registration" process, "Loan Application" process or "Consumer Satisfaction Survey" process.  
 
 ## The Purpose Of Process
 
-Process exists to mitigate other kinds of risk, and for this reason, we'll be looking at them again in [Practices](Process).  In this section, we'll look mainly at how you can deal with **Process Risk** where you are a client of the process.  However, in the later section we'll look at how you can use process design to your advantage mitigating risk on your own project.
+Process exists to mitigate other kinds of risk, and for this reason, we'll be looking at them again in [Part 3: Practices](Process).  
+
+In this section, we'll look mainly at how you can deal with [Process Risk](Process-Risk) where you are a client of the process.  However, in the later section we'll look at how you can use process design to your advantage mitigating risk on your own project.
 
 But until we get there, let's look at some examples of how process can mitigate other risks:
 
