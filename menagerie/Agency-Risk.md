@@ -113,8 +113,12 @@ There is significant [Agency Risk](Agency-Risk) in running software _at all_.  S
  - A team introduces excessive [Bureaucracy](Process-Risk#bureaucratic-risk) in order to avoid work it doesn't like.
  - A team gets obsessed with a particular technology, or their own internal process improvement, at the expense of delivering business value.
  - A marginalised team forces their services on other teams in the name of "consistency".   (This can happen a lot with "Architecture", "Branding" and "Testing" teams, sometimes for the better, sometimes for the worse.)
+
+## It's About Goals 
  
 We've looked here at some illustrative examples of [Agency Risk](Agency-Risk), but as we stated at the beginning, [Agency Risk](Agency-Risk) at any level comes down to differences of [Goals](Glossary#goal-in-mind) between the different agents, whether they are _people_, _teams_ or _software_.  
  
-So, having looked at agents _individually_, in the next section, we're going to look more closely at [Goals](Glossary#goal-in-mind), and the [Attendant Risks](Glossary#attendant-risk) when aligning them amongst multiple agents.   On to [Coordination Risk](Coordination-Risk).
+So, having looked at agents _individually_, in the next section, we're going to look more closely at [Goals](Glossary#goal-in-mind), and the [Attendant Risks](Glossary#attendant-risk) when aligning them amongst multiple agents.   
+
+On to [Coordination Risk](Coordination-Risk).
  
