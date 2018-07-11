@@ -175,7 +175,7 @@ But this means that all of the issues of abstractions that we covered in [Commun
 
 ![Feature Fit Risk](images/generated/fit-risk.png) 
 
-Sometimes, the bus will take you to lots of in-between places you _didn't_ want to go.   This is [Fit Risk](Feature-Risk#feature-fit-risk) and we saw this already in the page on [Feature Risk].  There, we considered two problems:
+Sometimes, the bus will take you to lots of in-between places you _didn't_ want to go.   This is [Fit Risk](Feature-Risk#feature-fit-risk) and we saw this already in the section on [Feature Risk](Feature Risk).  There, we considered two problems:
  - The feature (or now, dependency) doesn't provide all the functionality you need.  This was [Fit Risk](Feature-Risk#feature-fit-risk).  An example might be the supermarket not stocking everything you wanted.
  - The feature / dependency provides far too much, and you have to accept more complexity than you need.  This was [Conceptual Integrity Risk](Feature-Risk#conceptual-integrity-risk).  An example of this might be the supermarket being _too big_, and you spend a lot longer navigating it than you wanted to.
  
