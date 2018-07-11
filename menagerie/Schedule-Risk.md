@@ -1,14 +1,16 @@
 ![For Review](images/state/for-review.png)
 
-**Schedule Risk** is the fundamental risk you face because of _lack of time_.  
+[Schedule Risk](Schedule-Risk) is the fundamental risk you face because of _lack of time_.  
 
-You could also call this **Chronological Risk** or just **Time Risk** if you wanted to.
+You could also call this "Chronological Risk" or just "Time Risk" if you wanted to.
 
-**Schedule Risk** is very pervasive, and really underlies _everything_ we do.  People _want_ things, but they _want them at a certain time_.   We need to eat and drink every day, for example.  We might value having a great meal, but not if we have to wait three weeks for it.  
+![Schedule Risk](images/generated/schedule-risk.png)
+
+[Schedule Risk](Schedule-Risk) is very pervasive, and really underlies _everything_ we do.  People _want_ things, but they _want them at a certain time_.   We need to eat and drink every day, for example.  We might value having a great meal, but not if we have to wait three weeks for it.  
 
 And let's go completely philosophical for a second:  If you were completely immortal, you'd probably not feel the need to buy _anything_.  You'd clearly have no _needs_, and anything you wanted, you could create yourself within your infinite time-budget.  Rocks don't need money, after all.
 
-Let's look at some specific kinds of **Schedule Risk**.
+Let's look at some specific kinds of [Schedule Risk](Schedule-Risk).
 
 ## Opportunity Risk
 
@@ -30,7 +32,7 @@ But maybe now, the iPad's window is closing?   We have more _wearable computers_
 
 So, it seems Apple timed the iPad to hit the peak of the Window of Opportunity.  
 
-But, even if you time the Window Of Opportunity correctly, you might still have the rug pulled from under your feet due to a different kind of **Schedule Risk**.
+But, even if you time the Window Of Opportunity correctly, you might still have the rug pulled from under your feet due to a different kind of [Schedule Risk](Schedule-Risk).
 
 ## Deadline Risk
 
@@ -57,13 +59,13 @@ Sometimes, deadlines are set in order to _coordinate work between teams_.  The c
 
 ## Funding Risk
 
-On a lot of software projects, you are "handed down" deadlines from above, and told to deliver by a certain date or face the consequences.  But sometimes you're given a budget instead, which really just adds another layer of abstraction to the **Schedule Risk**:   That is, do I have enough funds to cover the team for as long as I need them?
+On a lot of software projects, you are "handed down" deadlines from above, and told to deliver by a certain date or face the consequences.  But sometimes you're given a budget instead, which really just adds another layer of abstraction to the [Schedule Risk](Schedule-Risk):   That is, do I have enough funds to cover the team for as long as I need them?
 
 This grants you some leeway as now you have two variables to play with: the _size_ of the team, and _how long_ you can run it for.  The larger the team, the shorter the time you can afford to pay for it.
 
 In startup circles, this "amount of time you can afford it" is called the "runway":  you have to get the product to "take-off" before the runway ends.  So you could term this component as **Runway Risk**.
 
-Startups often spend a lot of time courting investors in order to get funding and mitigate this type of **Schedule Risk**.  But, this activity comes at the expense of **Opportunity Risk** and [Feature Risk](Feature-Risk), as usually the same people are trying to raise funds as build the project itself.  
+Startups often spend a lot of time courting investors in order to get funding and mitigate this type of [Schedule Risk](Schedule-Risk).  But, this activity comes at the expense of **Opportunity Risk** and [Feature Risk](Feature-Risk), as usually the same people are trying to raise funds as build the project itself.  
 
 ## Staff Risk / Turnover Risk
 
@@ -85,13 +87,13 @@ Arguably, there is good psychological, evolutionary and risk-based reasoning beh
 
 Or at least, that's the argument.  If you're [Discounting the Future To Zero](Risk-Theory) then you'll be pulling all-nighters in order to deliver any assignment.   
 
-So, the problem with **Student Syndrome** is that the _very mitigation_ for **Schedule Risk** (allowing more time) is an [Attendant Risk](Glossary#attendant-risk) that _causes_ **Schedule Risk**:   you'll work towards the new, generous deadline more slowly, and you'll end up revealing [Hidden Risk](Glossary#Hidden-Risk) _later_ than you would have with the original, pressing deadline ... and you end up being late because of them.
+So, the problem with **Student Syndrome** is that the _very mitigation_ for [Schedule Risk](Schedule-Risk) (allowing more time) is an [Attendant Risk](Glossary#attendant-risk) that _causes_ [Schedule Risk](Schedule-Risk):   you'll work towards the new, generous deadline more slowly, and you'll end up revealing [Hidden Risk](Glossary#Hidden-Risk) _later_ than you would have with the original, pressing deadline ... and you end up being late because of them.
 
 We'll look at mitigations for this in [Prioritisation](Prioritisation).
 
 ## Red-Queen Risk
 
-A more specific formulation of **Schedule Risk** is **Red Queen Risk**, which is that whatever you build at the start of the project will go slowly more-and-more out of date as the project goes on.  
+A more specific formulation of [Schedule Risk](Schedule-Risk) is **Red Queen Risk**, which is that whatever you build at the start of the project will go slowly more-and-more out of date as the project goes on.  
 
 This is named after the Red Queen quote from Alice in Wonderland:  
 
@@ -109,11 +111,11 @@ Personally, I have suffered the pain on project teams where we've had to cope wi
 
 In the section on [Feature Risk](Feature-Risk) we looked at [Market Risk](Feature-Risk), the idea that the value of your product is itself at risk from the morés of the market, share prices being the obvious example of that effect.  In Finance, we measure this using _money_, and we can put together probability models based on how much money you might make or lose.
 
-With **Schedule Risk**, the underlying measure is _time_:  
- - "If I implement feature X, I'm picking up something like 5 days of **Schedule Risk**."
- - "If John goes travelling that's going to hit us with lots of **Schedule Risk** while we train up Anne."
+With [Schedule Risk](Schedule-Risk), the underlying measure is _time_:  
+ - "If I implement feature X, I'm picking up something like 5 days of [Schedule Risk](Schedule-Risk)."
+ - "If John goes travelling that's going to hit us with lots of [Schedule Risk](Schedule-Risk) while we train up Anne."
  
-... and so on.  Clearly, in the same way as you don't know exactly how much money you might lose or gain on the stock-exchange, you can't put precise numbers on **Schedule Risk** either.
+... and so on.  Clearly, in the same way as you don't know exactly how much money you might lose or gain on the stock-exchange, you can't put precise numbers on [Schedule Risk](Schedule-Risk) either.
 
 Having looked at both Time and Money components of risk, let's look at something equally fundamental, [Complexity Risk](Complexity-Risk).
 
