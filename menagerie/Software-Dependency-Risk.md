@@ -103,7 +103,17 @@ All 3 approaches involve a different risk-profile.  Let's look at each in turn, 
 
 Initially, writing our own code was the only game in town:  when I started programming, you had a user guide, BASIC and that was pretty much it.  Tool support was very thin-on-the-ground.  Programs and libraries could be distributed as code snippets _in magazines_ which could be transcribed and run, and added to your program.  This spirit lives on somewhat in StackOverflow and JSFiddle, where you are expected to "adopt" others' code into your own project.  
 
-Even now, there's always the opportunity cost of depending on our own code, which may well be more appropriate and ergonomic for whatever is required.  
+One of the hidden risks of embarking on a code-your-own approach is that the features you need are _not_ apparent from the outset.  What might appear to be a trivial implementation of some piece of functionality can often turn into it's own industry as more and more hidden [Feature Risk](Feature-Risk) is uncovered.  
+
+For example, as we discussed in our earlier treatment of [Dead-End Risk](Complexity-Risk#dead-end-risk), building log-in screens _seemed like a good idea_.  However, this gets out-of-hand fast when you need:
+ - A password reset screen
+ - To email the reset links to the user
+ - An email verification screen
+ - A lost account screen
+ - Reminders to complete the sign up process
+ - ... and so on.
+
+![Code your own mitigates immediate feature risk, but at the expense of schedule risk, complexity risk and communication risk.  There is also a hidden risk of features you don't yet know you need.](images/kite9/software-dependency-code-your-own.png) 
 
 ### Unwritten Software
 
@@ -129,8 +139,6 @@ If the dependency is being written by another person, another team or in another
 In essence, this is [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law):
 
 > "organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations." — [M. Conway, Conway's Law, _Wikipedia_](https://en.wikipedia.org/wiki/Conway%27s_law)
-
-![Code your own mitigates immediate feature risk, but at the expense of schedule risk, complexity risk and communication risk.  There is also a hidden risk of features you don't yet know you need.](images/kite9/software-dependency-code-your-own.png) 
 
 ## Software Libraries
 
