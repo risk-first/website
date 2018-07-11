@@ -93,13 +93,13 @@ The way to win, then, is to allow a language to be extensible as-needed with fea
 ## Types Of Software Dependencies
 
 There are lots of ways you can depend on software.  Here though, we're going to focus on just three main types:  
- - **Our own**: write some code ourselves to meet the dependency.
- - **Libraries**:  importing code from the Internet, and using it in our project.  Often, libraries are Open Source (this is what we'll consider here).
- - **Services**: calling a service on the Internet, (probably via `http`)  This is often known as [SaaS, or Software as a Service](https://en.wikipedia.org/wiki/Software_as_a_service).
+ 1. **Code Your Own**: write some code ourselves to meet the dependency.
+ 2. **Software Libraries**:  importing code from the Internet, and using it in our project.  Often, libraries are Open Source (this is what we'll consider here).
+ 3. **Software as a Service**: calling a service on the Internet, (probably via `http`)  This is often known as [SaaS, or Software as a Service](https://en.wikipedia.org/wiki/Software_as_a_service).
  
 All 3 approaches involve a different risk-profile.  Let's look at each in turn, from the perspective of which risks get mitigated, and which risks are accentuated. 
  
-## Code Your Own
+## 1. Code Your Own
 
 Initially, writing our own code was the only game in town:  when I started programming, you had a user guide, BASIC and that was pretty much it.  Tool support was very thin-on-the-ground.  Programs and libraries could be distributed as code snippets _in magazines_ which could be transcribed and run, and added to your program.  This spirit lives on somewhat in StackOverflow and JSFiddle, where you are expected to "adopt" others' code into your own project.  
 
@@ -140,7 +140,7 @@ In essence, this is [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law)
 
 > "organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations." — [M. Conway, Conway's Law, _Wikipedia_](https://en.wikipedia.org/wiki/Conway%27s_law)
 
-## Software Libraries
+## 2.  Software Libraries
 
 Using library code offers a [Schedule Risk](Schedule-Risk) and [Complexity Risk](Complexity-Risk) [Silver Bullet](Silver-Bullets).  
 
@@ -233,9 +233,9 @@ tbd.  dependency diagram, showing complexity, feature, schedule risk on the left
 
 So, adopting any library is a trade-off:   tbd. bring it back to ergonomics
 
-### Software as a Service (SaaS)
+### 3.  Software as a Service
 
-Businesses opt for SaaS because it vastly reduces the [Complexity Risk]() they face in their organisations.  Instead of having to pay for in-house software administrators, they can leave this function to the experts.
+Businesses opt for Software as a Service (SaaS) because it vastly reduces the [Complexity Risk]() they face in their organisations.  Instead of having to pay for in-house software administrators, they can leave this function to the experts.
 
 SaaS is now a very convenient way to provide _commercial_ software.   Popular examples of SaaS might be [SalesForce], or [GMail].  Both of which follow a [Freemium]() model, where the basic service is provided free, but upgrading to a paid account gives extra benefits.  By providing the software on their own servers, the commercial organisation has a defence against _piracy_, as well as being able to control the complexity of the support environment.
 
