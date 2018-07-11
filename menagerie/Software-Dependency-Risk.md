@@ -289,7 +289,7 @@ Let's look at some:
   
 ## Back To Ergonomics
 
-What's clear from this analysis is that software dependencies don't _conquer_ any risk - the moves they make on the risk landscape are _subtle_.  Whether or not you end up in a more favourable position risk-wise is going to depend heavily on the quality of the execution and the skill of the implementor.  
+What's clear from this analysis is that software dependencies don't _conquer_ any risk - the moves they make on the [Risk Landscape](Glossary#risk-landscape) are _subtle_.  Whether or not you end up in a more favourable position risk-wise is going to depend heavily on the quality of the execution and the skill of the implementor.  
 
 In particular, _choosing_ dependencies can be extremely difficult.  As we discussed above, the usefulness of any tool depends on its fit for purpose, it's _ergonomics within a given context_: it's all too easy to pick a good tool for the wrong job:  
 
