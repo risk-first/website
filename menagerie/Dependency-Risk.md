@@ -20,7 +20,7 @@ This isn't even lucky though: life has adapted to build dependencies on things t
 
 Although life exists at the bottom of the ocean around [hydrothermal vents](https://en.wikipedia.org/wiki/Hydrothermal_vent), it is a very different kind of life to us, and has a different set of dependencies given it's circumstances. 
 
-This tells us a lot about dependency risk right here:
+This tells us a lot about [Dependency Risk](Dependency-Risk) right here:
  - On the one hand, depending on something else is very often helpful, and quite often essential.  (For example, all animals that _move_ seem to depend on oxygen).
  - However, as soon as you have dependencies, you need to take into account of their _reliability_. (Living near a river or stream gives you access to fresh water, for example).  
  - Successful organisms _adapt_ to the dependencies available to them (like the thermal vent creatures).
@@ -32,7 +32,7 @@ So, dependencies are a trade-off.  They give with one hand and take with the oth
 
 In Rich Hickey's talk, [Simple Made Easy](https://www.infoq.com/presentations/Simple-Made-Easy) he discusses the difference between _simple_ software systems and _easy_ (to use) ones, heavily stressing the virtues of simple over easy.  It's an incredible talk and well worth watching.  
 
-But.  Living systems are not simple.  Not anymore.  They evolved in the direction of increasing complexity though because life was _easier_ that way.  In the "simpler" direction, life is first _harder_ and then _impossible_, and then an evolutionary dead-end.
+But.  Living systems are not simple.  Not anymore.  They evolved in the direction of increasing complexity because life was _easier_ that way.  In the "simpler" direction, life is first _harder_ and then _impossible_, and then an evolutionary dead-end.
 
 Depending on things makes _your job easier_.  It's just [division of labour](https://en.wikipedia.org/wiki/Division_of_labour) and dependency hiearchies, as we saw in [Hierarchies and Modularization](Complexity-Risk#Hierarchies-and-Modularization).
 
@@ -104,7 +104,7 @@ The amount of slack you build into the schedule is likely dependent on the level
 
 Luckily, there is quite a lot of existing science around reliability.  For example:  
  - If a component **A** depends on component **B**, unless there is some extra redundancy around **B**, then **A** _can't_ be more reliable than **B**. 
- - A [Single Point Of Failure](https://en.wikipedia.org/wiki/Single_point_of_failure) in a system 
+ - Is **A** or **B** a [Single Point Of Failure](https://en.wikipedia.org/wiki/Single_point_of_failure) in a system?
  - Are there bugs in **B** that are going to prevent it working correctly in all circumstances?
 
 This kind of stuff is encapsulated in the science of [Reliability Engineering](https://en.wikipedia.org/wiki/Reliability_engineering).   For example, [Failure mode and effects analysis (FEMA)](https://en.wikipedia.org/wiki/Failure_mode_and_effects_analysis):
