@@ -209,9 +209,12 @@ Sometimes, the amount of complexity _goes up_ when you use a dependency for _goo
 
 ## 3.  Software as a Service
 
-Businesses opt for Software as a Service (SaaS) because it vastly reduces the [Complexity Risk]() they face in their organisations.  Instead of having to pay for in-house software administrators, they can leave this function to the experts.
+Businesses opt for Software as a Service (SaaS) because:
+- It vastly reduces the [Complexity Risk](Complexity-Risk) they face in their organisations. e.g. managing the software or making changes to it.
+- Payment is usually based on _usage_, mitigating [Schedule Risk](Schedule-Risk).  e.g. Instead of having to pay for in-house software administrators, they can leave this function to the experts.
+- Potentially, you outsource the [Operational Risk](Operational-Risk) to a third party. e.g. ensuring availability, making sure data is secure and so on.
 
-SaaS is now a very convenient way to provide _commercial_ software.   Popular examples of SaaS might be [SalesForce], or [GMail].  Both of which follow a [Freemium]() model, where the basic service is provided free, but upgrading to a paid account gives extra benefits.  By providing the software on their own servers, the commercial organisation has a defence against _piracy_, as well as being able to control the complexity of the support environment.
+SaaS is now a very convenient way to provide _commercial_ software.   Popular examples of SaaS might be [SalesForce](https://en.wikipedia.org/wiki/Salesforce.com), or [GMail](https://en.wikipedia.org/wiki/Gmail).  Both of which follow the commonly-used [Freemium](https://en.wikipedia.org/wiki/Freemium) model, where the basic service is provided free, but upgrading to a paid account gives extra benefits.  By providing the software on their own servers, the commercial organisation has a defence against _piracy_, as well as being able to control the complexity of the support environment (e.g. not having to support _every_ version of the software that's ever been released).
 
 The trade-off of SaaS looks a lot like library code, except that the dependency is arguably _more_ fragile:
 
