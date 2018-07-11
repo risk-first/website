@@ -138,7 +138,7 @@ If the dependency is being written by another person, another team or in another
 
 In essence, this is [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law):
 
-> "organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations." — [M. Conway, Conway's Law, _Wikipedia_](https://en.wikipedia.org/wiki/Conway%27s_law)
+> "organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations." — [M. Conway, _Conway's Law_](https://en.wikipedia.org/wiki/Conway%27s_law)
 
 ## 2.  Software Libraries
 
