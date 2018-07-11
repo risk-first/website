@@ -50,11 +50,15 @@ What happens if you miss the deadline?  It could be:
  
 .. or something else.
 
-Deadlines can be set by an authority in order to _sharpen focus_ and reduce [Coordination Risk](Coordination-Risk).  This is how we arrive at tools like [SMART Objectives](https://en.wikipedia.org/wiki/SMART_criteria) and [KPI's (Key Performance Indicators)](https://en.wikipedia.org/wiki/Performance_indicator).  Time scales change the way we evaluate goals, and the solutions we choose.  In JFK's quote:
+Deadlines can be set by an authority in order to _sharpen focus_ and reduce [Coordination Risk](Coordination-Risk).  This is how we arrive at tools like [SMART Objectives](https://en.wikipedia.org/wiki/SMART_criteria) and [KPI's (Key Performance Indicators)](https://en.wikipedia.org/wiki/Performance_indicator).  Time scales change the way we evaluate goals, and the solutions we choose.  
+
+In JFK's quote:
 
 > "First, I believe that this nation should commit itself to achieving the goal, before this decade is out, of landing a man on the moon and returning him safely to the Earth." -  John F. Kennedy, 1961
 
-The 9-year timespan came from an authority figure (the president) and helped a huge team of people coordinate their efforts and arrive at a solution that would work within a given time-frame.  Compare with this quote:  
+The 9-year timespan came from an authority figure (the president) and helped a huge team of people coordinate their efforts and arrive at a solution that would work within a given time-frame.  
+
+Compare with this quote:  
 
 > “I love deadlines. I love the whooshing noise they make as they go by.” - [Douglas Adams](https://en.wikipedia.org/wiki/Douglas_Adams)
 
