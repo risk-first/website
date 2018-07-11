@@ -33,7 +33,7 @@ Business Processes often arise in response to an unmet need within an organisati
 
 ![Team T is created to do A for Company C](images/kite9/process-risk-2.png)
 
-2.  Either, `B` co-opts other people to help, gets given a team (`T`), or someone else forms a team `T` containing B to get the job done "properly".  `T` is responsible for doing `A` (it might be a resource, some source of complexity, whatever).  However, it needs to supply the company with `A` reliably and responsibly, otherwise there will be problems.  They can't simply sit on the resource and do nothing, but at the same time, so they try and please all of their clients as far as possible.  This is a good deal for their clients, but they end up absorbing a lot of [Complexity Risk](Complexity-Risk) which impacts their ability to reliably deliver `A`. 
+2.  Either, `B` co-opts other people to help, gets given a team (`T`), or someone else forms a team `T` containing B to get the job done "properly".  `T` is responsible for doing `A` (it might be a resource, some source of complexity, whatever).  However, it needs to supply the company with `A` reliably and responsibly, otherwise there will be problems.  They try and please all of their clients as far as possible.  This is a good deal for their clients, but they end up absorbing a lot of [Complexity Risk](Complexity-Risk) which impacts their ability to reliably deliver `A`. 
 
 ![Team T protects itself from complexity with a process, P](images/kite9/process-risk-3.png)
 
