@@ -16,7 +16,7 @@ Let's look at some specific kinds of [Schedule Risk](Schedule-Risk).
 
 ![Opportunity Risk](images/generated/opportunity-risk.png)
 
-**Opportunity Risk** is really the concern that whatever we do, we have to do it _in time_.  If we wait too long, we'll miss the [Window Of Opportunity](https://en.wikipedia.org/wiki/Window_of_opportunity) for our product or service.   
+[Opportunity Risk](Schedule-Risk#opportunity-risk) is really the concern that whatever we do, we have to do it _in time_.  If we wait too long, we'll miss the [Window Of Opportunity](https://en.wikipedia.org/wiki/Window_of_opportunity) for our product or service.   
 
 Any product idea is necessarily of it's time:  the [Goal In Mind](Goal-In-Mind) will be based on observations from a particular [Internal Model](Glossary#Internal-Model), reflecting a view on reality at a specific _point in time_.  
 
@@ -41,7 +41,7 @@ But, even if you time the Window Of Opportunity correctly, you might still have 
 ![Deadline Risk](images/generated/deadline-risk.png)
 
 
-Often when running a software project, you're given a team of people and told to get something delivered by a certain date.  i.e. you have an artificially-imposed **Deadline** on delivery.
+Often when running a software project, you're given a team of people and told to get something delivered by a certain date.  i.e. you have an artificially-imposed [Deadline](Schedule-Risk#Deadline-Risk) on delivery.
 
 What happens if you miss the deadline?  It could be:
  - The funding on the project runs out, and it gets cancelled.
@@ -56,11 +56,25 @@ Deadlines can be set by an authority in order to _sharpen focus_ and reduce [Coo
 
 The 9-year timespan came from an authority figure (the president) and helped a huge team of people coordinate their efforts and arrive at a solution that would work within a given time-frame.  Compare with this quote:  
 
-> “I love deadlines. I love the whooshing noise they make as they go by.” - Douglas Adams
+> “I love deadlines. I love the whooshing noise they make as they go by.” - [Douglas Adams](https://en.wikipedia.org/wiki/Douglas_Adams)
 
-As a successful author, Douglas Adams _didn't really care_ about the deadlines his publisher's gave him.  The **Deadline Risk** was minimal for him, because the publisher wouldn't be able to give his project to someone else to complete. 
+As a successful author, Douglas Adams _didn't really care_ about the deadlines his publisher's gave him.  The [Deadline Risk](Schedule-Risk#Deadline-Risk) was minimal for him, because the publisher wouldn't be able to give his project to someone else to complete. 
 
 Sometimes, deadlines are set in order to _coordinate work between teams_.  The classic example being in a battle, to coordinate attacks.   When our deadlines are for this purpose, we're heading towards [Coordination Risk](Coordination-Risk) territory.
+
+### Student Syndrome
+
+[Student Syndrome](https://en.wikipedia.org/wiki/Student_syndrome) is, according to Wikipedia:
+
+> "Student syndrome refers to planned procrastination, when, for example, a student will only start to apply themselves to an assignment at the last possible moment before its deadline."   - _[Wikipedia](https://en.wikipedia.org/wiki/Student_syndrome)_
+
+Arguably, there is good psychological, evolutionary and risk-based reasoning behind procrastination:  the further in the future the **Deadline Risk** is, the more we discount it.  If we're only ever mitigating our _biggest risks_, then deadlines in the future don't matter so much, do they?  And, putting efforts into mitigating future risks that _might not arise_ is wasted effort.
+
+Or at least, that's the argument.  If you're [Discounting the Future To Zero](Risk-Theory) then you'll be pulling all-nighters in order to deliver any assignment.   
+
+So, the problem with **Student Syndrome** is that the _very mitigation_ for [Schedule Risk](Schedule-Risk) (allowing more time) is an [Attendant Risk](Glossary#attendant-risk) that _causes_ [Schedule Risk](Schedule-Risk):   you'll work towards the new, generous deadline more slowly, and you'll end up revealing [Hidden Risk](Glossary#Hidden-Risk) _later_ than you would have with the original, pressing deadline ... and you end up being late because of them.
+
+We'll look at mitigations for this in [Prioritisation](Prioritisation).
 
 ## Funding Risk
 
@@ -86,26 +100,11 @@ If a startup has a "Runway", then the chances are that the founders and staff do
   
 You need to consider how long your staff are going to be around, especially if you have [Key Man Risk](https://en.wikipedia.org/wiki/Key_person_insurance#Key_person_definition) on some of them.  You also can't rely on getting the [best staff for failing projects](Agency-Risk).
 
-## Student Syndrome
-
-[Student Syndrome](https://en.wikipedia.org/wiki/Student_syndrome) is, according to Wikipedia:
-
-> "Student syndrome refers to planned procrastination, when, for example, a student will only start to apply themselves to an assignment at the last possible moment before its deadline."   - _[Wikipedia](https://en.wikipedia.org/wiki/Student_syndrome)_
-
-Arguably, there is good psychological, evolutionary and risk-based reasoning behind procrastination:  the further in the future the **Deadline Risk** is, the more we discount it.  If we're only ever mitigating our _biggest risks_, then deadlines in the future don't matter so much, do they?  And, putting efforts into mitigating future risks that _might not arise_ is wasted effort.
-
-Or at least, that's the argument.  If you're [Discounting the Future To Zero](Risk-Theory) then you'll be pulling all-nighters in order to deliver any assignment.   
-
-So, the problem with **Student Syndrome** is that the _very mitigation_ for [Schedule Risk](Schedule-Risk) (allowing more time) is an [Attendant Risk](Glossary#attendant-risk) that _causes_ [Schedule Risk](Schedule-Risk):   you'll work towards the new, generous deadline more slowly, and you'll end up revealing [Hidden Risk](Glossary#Hidden-Risk) _later_ than you would have with the original, pressing deadline ... and you end up being late because of them.
-
-We'll look at mitigations for this in [Prioritisation](Prioritisation).
-
 ## Red-Queen Risk
 
 ![Red Queen Risk](images/generated/red-queen-risk.png)
 
-
-A more specific formulation of [Schedule Risk](Schedule-Risk) is **Red Queen Risk**, which is that whatever you build at the start of the project will go slowly more-and-more out of date as the project goes on.  
+A more specific formulation of [Schedule Risk](Schedule-Risk) is [Red Queen Risk](Schedule-Risk#red-queen-risk), which is that whatever you build at the start of the project will go slowly more-and-more out of date as the project goes on.  
 
 This is named after the Red Queen quote from Alice in Wonderland:  
 
@@ -117,7 +116,7 @@ The problem with software projects is that tools and techniques change _really f
 
 Now, they didn't _deliberately_ take 15 years to build this game (lots of things went wrong).  But, the longer it took, the more their existing design and code-base were a liability rather than an asset. 
 
-Personally, I have suffered the pain on project teams where we've had to cope with legacy code and databases because the cost of changing them was too high.  And any team who is stuck using [Visual Basic 6.0](https://en.wikipedia.org/wiki/Visual_Basic) is here.   It's possible to ignore **Red Queen Risk** for a time, but this is just another form of [Technical Debt](Complexity-Risk) which eventually comes due.
+Personally, I have suffered the pain on project teams where we've had to cope with legacy code and databases because the cost of changing them was too high.  And any team who is stuck using [Visual Basic 6.0](https://en.wikipedia.org/wiki/Visual_Basic) is here.   It's possible to ignore [Red Queen Risk](Schedule-Risk#red-queen-risk) for a time, but this is just another form of [Technical Debt](Complexity-Risk) which eventually comes due.
 
 ## Schedule Risk and Feature Risk
 
