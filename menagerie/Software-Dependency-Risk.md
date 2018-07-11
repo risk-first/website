@@ -192,7 +192,7 @@ Some take-aways:
 
  - [Feature Risk](Feature-Risk) is the biggest concern.   How can you be sure that the project will do what you want it to do ahead of schedule?  Will it contain bugs or missing features?  By looking at factors like _release frequency_ and _size of the community_ you get a good feel for this which is difficult to fake.
  - [Boundary Risk](Boundary-Risk) is also very important.  You are going to have to _live_ with your choices for the duration of the project, so it's worth spending the effort to either ensure that you're not going to regret the decision, or that you can change direction later.
- - Third is [Communication Risk](Communication-Risk):  how well does the project deal with it's users?  If a project is "famous", then it has communicated its usefulness to a wide, appreciative audience.
+ - Third is [Communication Risk](Communication-Risk):  how well does the project deal with it's users?  If a project is "famous", then it has communicated its usefulness to a wide, appreciative audience.  Avoiding [Communication Risk](Communication-Risk) is also a good reason to pick _tools you are already familiar with_.
   
 ### Complexity Risk? 
  
