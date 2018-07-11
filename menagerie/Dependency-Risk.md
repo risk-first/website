@@ -153,15 +153,13 @@ Let's apply this to our Bus scenario:
  
 ### Silo Mentality
  
-Finding out about bus schedules is easy.  But in a large company, [Communication Risk](Communication-Risk) and especially [Invisibility Risk]() are huge problems.  This tends to get called "[Silo Mentality](https://en.wikipedia.org/wiki/Information_silo#Silo_mentality)", that is, ignoring what else is going on in other parts of the company or "not invented here" syndrome.   These are all varieties of [Communication Risk](Communication-Risk).
+Finding out about bus schedules is easy.  But in a large company, [Communication Risk](Communication-Risk) and especially [Invisibility Risk](Communication-Risk#invisibility-risk) are huge problems.  This tends to get called "[Silo Mentality](https://en.wikipedia.org/wiki/Information_silo#Silo_mentality)", that is, ignoring what else is going on in other divisions of the company or ["not invented here"](https://en.wikipedia.org/wiki/Not_invented_here) syndrome:
 
-Ironically, _more communication_ might not be the answer - if channels are provided where 
+> "In management the term silo mentality often refers to information silos in organizations. Silo mentality is caused by divergent goals of different organizational units." - [Silo Mentality, _Wikipedia_](https://en.wikipedia.org/wiki/Information_silo#Silo_mentality)
 
-Silo thinking 
+Ironically, _more communication_ might not be the answer - if channels are provided to discover functionality in other teams you can still run into [Trust Risk](Communication-Risk#trust-risk) (why should I believe in the quality of this dependency?)  Or [Channel Risk](Communication-Risk#channel-risk) in terms of too low a signal-to-noise ratio, or desperate self-promotion.
 
-Lots of beginners don't see dependency risk:  they have the dependencies round the wrong way in their heads.  eg. sunny with jenkins and environment variables.  You can't solve a problem if you are working down the line of dependencies but your issue is with an earlier one
-
-dependency ijection - invisibile dependencies
+Silo Mentality is exacerbated by the problems you would face in _budgeting_ if suddenly all the divisions in an organisation started providing dependencies for each other.  This starts to require a change to organisational structure towards being a set of individual businesses marketing services to one another, rather than a division-based one.  We'll look more closely at these kind of organisational issues in the [Coordination Risk](Coordination-Risk) section. 
 
 ### Dependencies Are Abstractions
 
