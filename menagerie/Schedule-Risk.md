@@ -102,7 +102,9 @@ If a startup has a "Runway", then the chances are that the founders and staff do
   - Founder Cash:  The **Runway** for a founder, before they run out of money and can't afford their rent.
   - Team Cash:  The **Runway** for team members, who may not have the same appetite for risk as the founders do.
   
-You need to consider how long your staff are going to be around, especially if you have [Key Man Risk](https://en.wikipedia.org/wiki/Key_person_insurance#Key_person_definition) on some of them.  You also can't rely on getting the [best staff for failing projects](Agency-Risk).
+You need to consider how long your staff are going to be around, especially if you have [Key Man Risk](https://en.wikipedia.org/wiki/Key_person_insurance#Key_person_definition) on some of them.  People like to have new challenges, or move on to live in new places, or simply get bored.  The longer your project goes on for, the more [Staff Risk](Schedule-Risk#staff-risk) you will have to endure, and you can't rely on getting the [best staff for failing projects](Agency-Risk).
+
+In the section on [Coordination-Risk](Coordination-Risk) we'll look in more detail at the non-temporal components of [Staff Risk](Schedule-Risk#staff-risk).
 
 ## Red-Queen Risk
 
