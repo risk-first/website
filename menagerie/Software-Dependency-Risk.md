@@ -88,10 +88,7 @@ That is, the tool should be as simple to use and understand as possible.  This i
  - **The abstractions should leverage existing idioms and knowledge.** In a new car, I _expect_ to know what the symbols on the dashboard mean, because I've driven other cars.
  - **The abstractions provide me with only the functions I need.** Because everything else is confusing and gets in the way.  
 
-
 The way to win, then, is to allow a language to be extensible as-needed with features written by third parties.  By supplying mechanisms for extension a language can provide insurances against the [Boundary Risk](Boundary-Risk) of adopting it. 
-
-As we discussed in the [C
 
 ## Types Of Software Dependencies
 
@@ -114,7 +111,9 @@ Sometimes, you will pick up a dependency on _unwritten software_.  This commonly
 
 ![Sometimes, a module you're writing will depend on unwritten code](images/kite9/software-dependency-unwritten-1.png)
 
-If a component **A** of our project _depends_ on **B** for some kind of processing, you might not be able to complete **A** before writing **B**.   This makes _scheduling_ the project harder, and if component **A** is a risky part of the project, then the chances are you'll want to mitigate risk there first.  There are a couple of ways to do this:
+If a component **A** of our project _depends_ on **B** for some kind of processing, you might not be able to complete **A** before writing **B**.   This makes _scheduling_ the project harder, and if component **A** is a risky part of the project, then the chances are you'll want to mitigate risk there first.  But it also hugely increases [Communication Risk](Communication-Risk) because now you're being asked to communicate with a dependency that doesn't really exist yet, _let alone_ have any documentation.
+
+There are a couple of ways to do this:
 
 - **Standards**:  If component **B** is a database, a queue, mail gateway or something else with a standard interface, then you're in luck.   Write **A** to those standards, and find a cheap, simple implementation to test with.  This gives you time to sort out exactly what implementation of **B** you're going for.  This is not a great long-term solution, because obviously, you're not using the _real_ dependency- you might get surprised when the behaviour of the real component is subtly different.  But it can reduce [Schedule Risk](Schedule-Risk) in the short-term.
 - **Coding To Interfaces**:  If standards aren't an option, but the surface area of **B** that **A** uses is quite small and obvious, you can write a small interface for it, and work behind that, using a [Mock](https://en.wikipedia.org/wiki/Mock_object) for **B** while you're waiting for finished component.  Write the interface to cover only what **A** _needs_, rather than everything that **B** _does_ in order to minimize the risk of [Leaky Abstractions](https://en.wikipedia.org/wiki/Leaky_abstraction).
