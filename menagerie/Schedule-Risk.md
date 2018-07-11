@@ -70,19 +70,21 @@ On a lot of software projects, you are "handed down" deadlines from above, and t
 
 This grants you some leeway as now you have two variables to play with: the _size_ of the team, and _how long_ you can run it for.  The larger the team, the shorter the time you can afford to pay for it.
 
-In startup circles, this "amount of time you can afford it" is called the "runway":  you have to get the product to "take-off" before the runway ends.  So you could term this component as **Runway Risk**.
+In startup circles, this "amount of time you can afford it" is called the ["Runway"](https://en.wiktionary.org/wiki/runway):  you have to get the product to "take-off" before the runway ends.  So you could term this component as "Runway Risk".
 
 Startups often spend a lot of time courting investors in order to get funding and mitigate this type of [Schedule Risk](Schedule-Risk).  But, this activity comes at the expense of **Opportunity Risk** and [Feature Risk](Feature-Risk), as usually the same people are trying to raise funds as build the project itself.  
 
-## Staff Risk / Turnover Risk
+## Staff Risk
 
-If a startup has a **Runway**, then the chances are that the founders and staff do too, as this article [explores](https://www.entrepreneur.com/article/223135).  It identifies the following risks:
+![Staff Risk](images/generated/staff-risk.png)
+
+If a startup has a "Runway", then the chances are that the founders and staff do too, as this article [explores](https://www.entrepreneur.com/article/223135).  It identifies the following risks:
 
   - Company Cash:  The **Runway** of the startup itself
   - Founder Cash:  The **Runway** for a founder, before they run out of money and can't afford their rent.
   - Team Cash:  The **Runway** for team members, who may not have the same appetite for risk as the founders do.
   
-You need to consider how long your staff are going to be around, especially if you have [Key Man Risk](Coordination-Risk) on some of them.  You also can't rely on getting the [best staff for failing projects](Agency-Risk).
+You need to consider how long your staff are going to be around, especially if you have [Key Man Risk](https://en.wikipedia.org/wiki/Key_person_insurance#Key_person_definition) on some of them.  You also can't rely on getting the [best staff for failing projects](Agency-Risk).
 
 ## Student Syndrome
 
@@ -128,9 +130,3 @@ With [Schedule Risk](Schedule-Risk), the underlying measure is _time_:
 ... and so on.  Clearly, in the same way as you don't know exactly how much money you might lose or gain on the stock-exchange, you can't put precise numbers on [Schedule Risk](Schedule-Risk) either.
 
 Having looked at both Time and Money components of risk, let's look at something equally fundamental, [Complexity Risk](Complexity-Risk).
-
- 
-Doing things slowly.
-
-beating rush hour
-

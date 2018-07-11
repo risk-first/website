@@ -154,7 +154,7 @@ The job of harmonzing this on a project would seem to fall to the team leader, b
 
 They can be encouraged with orthogonal practices such as [Team Building exercises]() (generally, submitting everyone to extreme experiences in order to bond them together).  With enough communication bandwidth and entente, a motivated team will self-organise code reviews, information exchange and improve their practices.  But **Staff Risks** sometimes cannot be resolved without escalation:
 
- - People leave, taking their [Internal Models](Glossary#Internal-Model) and expertise with them [Key Man Risk]().
+ - People leave, taking their [Internal Models](Glossary#Internal-Model) and expertise with them [Key Man Risk](Schedule-Risk#Staff-Risk).
  - People often require external training, to understand new tools and techniques [Learning-Curve Risk](Communiciation-Risk)
  - People can get protective about their knowledge in order to protect their jobs [Agency Risk](Agency-Risk). 
  - Where there are mixed ability levels, senior developers might not help juniors as it "slows them down"
