@@ -14,6 +14,8 @@ Let's look at some specific kinds of [Schedule Risk](Schedule-Risk).
 
 ## Opportunity Risk
 
+![Opportunity Risk](images/generated/opportunity-risk.png)
+
 **Opportunity Risk** is really the concern that whatever we do, we have to do it _in time_.  If we wait too long, we'll miss the [Window Of Opportunity](https://en.wikipedia.org/wiki/Window_of_opportunity) for our product or service.   
 
 Any product idea is necessarily of it's time:  the [Goal In Mind](Goal-In-Mind) will be based on observations from a particular [Internal Model](Glossary#Internal-Model), reflecting a view on reality at a specific _point in time_.  
@@ -35,6 +37,9 @@ So, it seems Apple timed the iPad to hit the peak of the Window of Opportunity.
 But, even if you time the Window Of Opportunity correctly, you might still have the rug pulled from under your feet due to a different kind of [Schedule Risk](Schedule-Risk).
 
 ## Deadline Risk
+
+![Deadline Risk](images/generated/deadline-risk.png)
+
 
 Often when running a software project, you're given a team of people and told to get something delivered by a certain date.  i.e. you have an artificially-imposed **Deadline** on delivery.
 
@@ -58,6 +63,8 @@ As a successful author, Douglas Adams _didn't really care_ about the deadlines h
 Sometimes, deadlines are set in order to _coordinate work between teams_.  The classic example being in a battle, to coordinate attacks.   When our deadlines are for this purpose, we're heading towards [Coordination Risk](Coordination-Risk) territory.
 
 ## Funding Risk
+
+![Funding Risk](images/generated/funding-risk.png)
 
 On a lot of software projects, you are "handed down" deadlines from above, and told to deliver by a certain date or face the consequences.  But sometimes you're given a budget instead, which really just adds another layer of abstraction to the [Schedule Risk](Schedule-Risk):   That is, do I have enough funds to cover the team for as long as I need them?
 
@@ -92,6 +99,9 @@ So, the problem with **Student Syndrome** is that the _very mitigation_ for [Sch
 We'll look at mitigations for this in [Prioritisation](Prioritisation).
 
 ## Red-Queen Risk
+
+![Red Queen Risk](images/generated/red-queen-risk.png)
+
 
 A more specific formulation of [Schedule Risk](Schedule-Risk) is **Red Queen Risk**, which is that whatever you build at the start of the project will go slowly more-and-more out of date as the project goes on.  
 
