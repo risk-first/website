@@ -198,7 +198,7 @@ Some take-aways:
  
 One thing that none of the sources consider (at least from the outset) is the [Complexity Risk](Complexity-Risk) of using a solution:    
  - Does it drag in lots of extra dependencies that seem unnecessary for the job in hand?  If so, you could end up in [Dependency Hell](https://en.wikipedia.org/wiki/Dependency_hell), with multiple, conflicting versions of libraries in the project.
- - Do you already have a dependency providing this functionality?  So many times, I've worked on projects that import a _new_ dependency when some existing (perhaps transitive) dependency has _already brought in the functionality_.  For example, there are plenty of libraries for JSON marshalling, but if I'm also using a web framework the chances are it already has a dependency on one already.
+ - Do you already have a dependency providing this functionality?  So many times, I've worked on projects that import a _new_ dependency when some existing (perhaps transitive) dependency has _already brought in the functionality_.  For example, there are plenty of libraries for [JSON](https://en.wikipedia.org/wiki/JSON) marshalling, but if I'm also using a web framework the chances are it already has a dependency on one already.
  - Does it contain lots of functionality that isn’t relevant to the task you want it to accomplish?  e.g. Using Java when a shell script would do (on a non-Java project)
  
 To give an extreme example of this, I once worked on an application which used [Hazlecast](https://en.wikipedia.org/wiki/Hazelcast) to cache log-in session tokens for a 3rd party datasource.  But, the app is only used once every month, and session IDs can be obtained in milliseconds.   So... why cache them?  Although Hazlecast is an excellent choice for in-memory caching across multiple JVMs, it is a complex piece of software (after all, it does lots of stuff).  By doing this, you have introduced extra dependency risk, cache invalidation risks, networking risks, synchronisation risks and so on, for actually no benefit at all...  Unless, it’s about [CV Building](Agency-Risk#CV_building).  
@@ -207,31 +207,7 @@ Sometimes, the amount of complexity _goes up_ when you use a dependency for _goo
 
 ![Software Libraries Risk Tradeoff](images/kite9/software-dependency-library.png) 
 
-### Risks Mitigated
-
-So far, we've considered only how [Software Dependencies](Software-Dependency-Risk) can alleviate complexity from our codebases.  But with [Software Dependencies](Software-Dependency-Risk) we can construct dependency networks to give us all kinds of features and mitigate all kinds of risk.  
-
-Let's look at some:
-
-|Risk                                                 |Examples of Software Mitigating That Risk                                |
-|-----------------------------------------------------|-------------------------------------------------------------------------|
-|[Coordination Risk](Coordination-Risk)               |Calendar tools,  Bug Tracking, Distributed Databases                     |
-|[Map-And-Territory-Risk](Map-And-Territory-Risk)     |The Internet, generally.  Excel, Google, "Big Data", Reporting tools     |
-|[Schedule-Risk](Schedule-Risk)                       |Planning Software, Project Mangement Software                            |
-|[Communication-Risk](Communication-Risk)             |Email, Chat tools, CRM tools like SalesForce, Forums, Twitter            |
-|[Process-Risk](Process-Risk)                         |Reporting tools, online forms, process tracking tools                    |
-|[Agency-Risk](Agency-Risk)                           |Auditing tools, transaction logs                                         |  
-|[Operational-Risk](Operational-Risk)                 |Support tools like ZenDesk, Grafana, InfluxDB, Geneos                    |
-|[Feature-Risk](Feature-Risk)                         |Every piece of software you use!                                         |
-
-Often, the feature that you're looking for in a piece of software is to mitigate some kind of risk.  I might start using [WhatsApp](https://en.wikipedia.org/wiki/WhatsApp) for example, because I want to be able to send my friends photos and text messages.  However, it's likely that those same features are going to allow us to mitigate [Communication-Risk](Communication-Risk) and [Coordination Risk](Coordination-Risk) when we're next trying to meet up.   
-  
-
-tbd.  dependency diagram, showing complexity, feature, schedule risk on the left, feature risk, boundary risk, communication risk on the right.
-
-So, adopting any library is a trade-off:   tbd. bring it back to ergonomics
-
-### 3.  Software as a Service
+## 3.  Software as a Service
 
 Businesses opt for Software as a Service (SaaS) because it vastly reduces the [Complexity Risk]() they face in their organisations.  Instead of having to pay for in-house software administrators, they can leave this function to the experts.
 
@@ -275,6 +251,32 @@ Let's expand this view slightly and look at where different pieces of software s
 - In the middle there are lots of **substitute options** and therefore high competition.  Because of this, prices are pushed towards zero, adn and therefore often advertising is used to monetarize the product.  [Angry Birds]() is a classic example:  initially, it had demo and paid versions, however [Rovio]() discovered there was much more money to be made through advertising than from the [paid-for app]().
 
 tbd.  include diagram
+
+
+### Risks Mitigated
+
+So far, we've considered only how [Software Dependencies](Software-Dependency-Risk) can alleviate complexity from our codebases.  But with [Software Dependencies](Software-Dependency-Risk) we can construct dependency networks to give us all kinds of features and mitigate all kinds of risk.  
+
+Let's look at some:
+
+|Risk                                                 |Examples of Software Mitigating That Risk                                |
+|-----------------------------------------------------|-------------------------------------------------------------------------|
+|[Coordination Risk](Coordination-Risk)               |Calendar tools,  Bug Tracking, Distributed Databases                     |
+|[Map-And-Territory-Risk](Map-And-Territory-Risk)     |The Internet, generally.  Excel, Google, "Big Data", Reporting tools     |
+|[Schedule-Risk](Schedule-Risk)                       |Planning Software, Project Mangement Software                            |
+|[Communication-Risk](Communication-Risk)             |Email, Chat tools, CRM tools like SalesForce, Forums, Twitter            |
+|[Process-Risk](Process-Risk)                         |Reporting tools, online forms, process tracking tools                    |
+|[Agency-Risk](Agency-Risk)                           |Auditing tools, transaction logs                                         |  
+|[Operational-Risk](Operational-Risk)                 |Support tools like ZenDesk, Grafana, InfluxDB, Geneos                    |
+|[Feature-Risk](Feature-Risk)                         |Every piece of software you use!                                         |
+
+Often, the feature that you're looking for in a piece of software is to mitigate some kind of risk.  I might start using [WhatsApp](https://en.wikipedia.org/wiki/WhatsApp) for example, because I want to be able to send my friends photos and text messages.  However, it's likely that those same features are going to allow us to mitigate [Communication-Risk](Communication-Risk) and [Coordination Risk](Coordination-Risk) when we're next trying to meet up.   
+  
+
+tbd.  dependency diagram, showing complexity, feature, schedule risk on the left, feature risk, boundary risk, communication risk on the right.
+
+So, adopting any library is a trade-off:   tbd. bring it back to ergonomics
+
 
 ### Moving On
 
