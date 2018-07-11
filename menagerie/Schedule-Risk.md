@@ -30,7 +30,7 @@ For example, let's look at the [iPad](https://en.wikipedia.org/wiki/History_of_t
 
 This was not the first tablet computer.  Apple had already tried to introduce the [Newton](https://en.wikipedia.org/wiki/Apple_Newton) in 1989, and Microsoft had released the [Tablet PC](https://en.wikipedia.org/wiki/Microsoft_Tablet_PC) in 1999.  But somehow, they both missed the [Window Of Opportunity](https://en.wikipedia.org/wiki/Window_of_opportunity).  Possibly, the window existed because Apple had changed changed the market with their release of the iPhone, which left people open to the idea of a tablet being "just a bigger iPhone".
 
-But maybe now, the iPad's window is closing?   We have more _wearable computers_ like the Apple Watch, and voice-controlled devices like Alexa, Cortana and (cough) Siri.  Peak iPad was in 2014, according to [this graph](https://www.statista.com/statistics/269915/global-apple-ipad-sales-since-q3-2010/).
+But maybe now, the iPad's window is closing?   We have more _wearable computers_ like the [Apple Watch](https://en.wikipedia.org/wiki/Apple_Watch), and voice-controlled devices like [Alexa](https://en.wikipedia.org/wiki/Amazon_Alexa) or [Siri](https://en.wikipedia.org/wiki/Siri).  Peak iPad was in 2014, according to [this graph](https://www.statista.com/statistics/269915/global-apple-ipad-sales-since-q3-2010/).
 
 So, it seems Apple timed the iPad to hit the peak of the Window of Opportunity.  
 
