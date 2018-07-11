@@ -194,7 +194,7 @@ We're also going to look at [Boundary Risk](Boundary-Risk) in more detail later,
 
 ## Managing Dependency Risk
 
-Arguably, managing dependency risk is _what Project Managers do_.  Their job is to meet the [Goal](Glossary#goal-in-mind) by organising the available dependencies into some kind of useful order.  
+Arguably, managing [Dependency Risk](Dependency-Risk) is _what Project Managers do_.  Their job is to meet the [Goal](Glossary#goal-in-mind) by organising the available dependencies into some kind of useful order.  
 
 There are _some_ tools for managing dependency risk:  [Gantt Charts](https://en.wikipedia.org/wiki/Gantt_chart) for example, arrange work according to the capacity of the resources (i.e. dependencies) available, but also the _dependencies between the tasks_.   If task **B** requires the outputs of task **A**, then clearly task **A** comes first and task **B** starts after it finishes.  We'll look at this more in [Process Risk](Process-Risk). 
 
