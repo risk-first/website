@@ -142,13 +142,11 @@ In essence, this is [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law)
 
 ## 2.  Software Libraries
 
-Using library code offers a [Schedule Risk](Schedule-Risk) and [Complexity Risk](Complexity-Risk) [Silver Bullet](Silver-Bullets).  
-
-By choosing a particular software library, we are making a move on the [Risk Landscape](Glossary#Risk-Landscape) in the hope of moving to place with more favourable risks.  As the above diagram shows, typically, we want to reduce [Feature Risk](Feature-Risk) and [Schedule Risk](Schedule-Risk).  In return we expect to pick up:
+By choosing a particular software library, we are making a move on the [Risk Landscape](Glossary#Risk-Landscape) in the hope of moving to place with more favourable risks.  Typically, using library code offers a [Schedule Risk](Schedule-Risk) and [Complexity Risk](Complexity-Risk) [Silver Bullet](Silver-Bullets).  But, in return we expect to pick up:
 - [Communication Risk](Communication-Risk): because we now have to learn how to communicate with this new dependency.
 - [Boundary Risk](Boundary-Risk) - because now are limited to using the functionality provided by this dependency.  We have chosen it over alternatives and changing to something else would be more work and therefore costly.   
 
-But, it's quite possible that we could wind up in a worse state, by using a library that's out-of-date, riddled with bugs or badly supported.  i.e. Full of new, hidden [Feature Risk].  
+But, it's quite possible that we could wind up in a worse place than we started out, by using a library that's out-of-date, riddled with bugs or badly supported.  i.e. Full of new, hidden [Feature Risk](Feature-Risk).  
 
 It's _really easy_ to make bad decisions about which tools to use because the tools don't (generally) advertise their deficiencies.  After all, they don't generally know how _you_ will want to use them.  
 
