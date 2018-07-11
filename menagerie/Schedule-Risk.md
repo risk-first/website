@@ -1,8 +1,8 @@
 ![For Review](images/state/for-review.png)
 
-[Schedule Risk](Schedule-Risk) is the fundamental risk you face because of _lack of time_.  
+[Schedule Risk](Schedule-Risk) is the term for risks you face because of _lack of time_.  
 
-You could also call this "Chronological Risk" or just "Time Risk" if you wanted to.
+You could also call this "Chronological Risk" or just "Time Risk" if you wanted to. 
 
 ![Schedule Risk](images/generated/schedule-risk.png)
 
