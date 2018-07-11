@@ -247,9 +247,11 @@ Some take-aways:
 
 ![Risk Tradeoff From Using _Software as a Service (SaaS)](images/kite9/software-dependency-saas.png)
 
-### A Matrix of Options
+## A Matrix of Options
 
-These are not the only ways to provide a dependency, and there's clearly no one _right_ way.   Although here we have looked just at "Commercial Saas" and "Free Open Source", in reality, these are just points in a two-dimensional space involving _Pricing_ and _Hosting_.   
+We've looked at just 3 different ways of providing a software dependency: SaaS, Libraries and code-your-own.
+
+But these are not the only ways to do it, and there's clearly no one _right_ way.   Although here we have looked just at "Commercial Saas" and "Free Open Source", in reality, these are just points in a two-dimensional space involving _Pricing_ and _Hosting_.   
 
 Let's expand this view slightly and look at where different pieces of software sit on these axes:
 
@@ -260,9 +262,9 @@ Let's expand this view slightly and look at where different pieces of software s
 | Monthly / Metered Subscription 	| **Commercial Software**<ul><li>Oracle Databases</li><li>Windows</li><li>Office</li></ul>                             | **Commercial SaaS** <ul><li>Office 365</li><li>SalesForce</li><li>Amazon Web Services</li></ul> | *Easy arguments for reduced: <ul><li>Complexity Risk</li><li>Communication Risk</li><li>Coordination Risk</li></ul>* <br /> *Higher Boundary Risk*	|
 |                                    |                                                                                                                      | *Transferred: <ul><li>Operational Risk</li></ul>*                                               |                                                                                 |
 
-- Where there is value in the [Network Effect](), it's often a sign that the software will be free, or open source:  programming languages and linux are the obvious examples of this.  Bugs are easier to find when there are lots of eyes looking, and learning the skill to use the software has less [Boundary Risk](Boundary-Risk) if you know you'll be able to use it at any point in the future.
-- At the other end of the spectrum, clients will happily pay for software if it clearly **reduces complexity**.  Take [Amazon Web Services].  The essential trade here is that you substitute the complexity of hosting and maintaining various pieces of software, in exchange for monthly payments ([Funding Risk](Schedule-Risk#Funding-Risk) for you).  Since AWS services are specific to Amazon, there is significant [Boundary Risk]() in choosing this option.
-- In the middle there are lots of **substitute options** and therefore high competition.  Because of this, prices are pushed towards zero, adn and therefore often advertising is used to monetarize the product.  [Angry Birds]() is a classic example:  initially, it had demo and paid versions, however [Rovio]() discovered there was much more money to be made through advertising than from the [paid-for app]().
+- Where there is value in the [Network Effect](https://en.wikipedia.org/wiki/Network_effect), it's often a sign that the software will be free, or open source:  programming languages and Linux are the obvious examples of this.  Bugs are easier to find when there are lots of eyes looking, and learning the skill to use the software has less [Boundary Risk](Boundary-Risk) if you know you'll be able to use it at any point in the future.
+- At the other end of the spectrum, clients will happily pay for software if it clearly **reduces complexity**.  Take [Amazon Web Services (AWS)](https://en.wikipedia.org/wiki/Amazon_Web_Services).  The essential trade here is that you substitute the complexity of hosting and maintaining various pieces of software, in exchange for monthly payments ([Funding Risk](Schedule-Risk#Funding-Risk) for you).  Since the AWS _interfaces_ are specific to Amazon, there is significant [Boundary Risk](Boundary-Risk) in choosing this option.
+- In the middle there are lots of **substitute options** and therefore high competition.  Because of this, prices are pushed towards zero, and and therefore often advertising is used to monetarize the product.  [Angry Birds](https://en.wikipedia.org/wiki/Angry_Birds) is a classic example:  initially, it had demo and paid versions, however [Rovio](https://en.wikipedia.org/wiki/Rovio_Entertainment) discovered there was much more money to be made through advertising than from the [paid-for app](https://www.deconstructoroffun.com/blog/2017/6/11/how-angry-birds-2-multiplied-quadrupled-revenue-in-a-year).
 
 tbd.  include diagram
 
