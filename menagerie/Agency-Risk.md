@@ -1,4 +1,4 @@
-![Draft](images/state/draft.png)
+![For Review](images/state/for-review.png)
 
 [Coordinating a team](Coordination-Risk) is difficult enough when everyone on the team has a single [Goal](Glossary#Goal-In-Mind).  But, people have their own goals, too.  Sometimes, the goals harmlessly co-exist with the team's goal, but other times they don't.
 
@@ -8,7 +8,7 @@ This is [Agency Risk](Agency-Risk).   This term comes from finance and refers to
 
 > "This dilemma exists in circumstances where agents are motivated to act in their own best interests, which are contrary to those of their principals, and is an example of moral hazard." - [Principal-Agent Problem, _Wikipedia_](https://en.wikipedia.org/wiki/Principal–agent_problem)
 
-The less visibility you have of the agent's activities, the bigger the risk.  However, the whole _point_ of giving the money to the agent was that you would have to spend less time and effort managing it.  Hence the dilemma.  So, [Agency Risk](Agency-Risk) flourishes where there is [Invisibility Risk](Communication-Risk).
+The less visibility you have of the agent's activities, the bigger the risk.  However, the whole _point_ of giving the money to the agent was that you would have to spend less time and effort managing it.  
 
 ![Mitigating Agency Risk Through Monitoring](images/kite9/agency-risk-monitoring.png)
 
