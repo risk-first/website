@@ -218,7 +218,7 @@ SaaS is now a very convenient way to provide _commercial_ software.   Popular ex
 
 By providing the software on their own servers, the commercial organisation has a defence against _piracy_, as well as being able to control the [Complexity Risk](Complexity-Risk) of the their environment (e.g. not having to support _every_ version of the software that's ever been released).
 
-The trade-off of SaaS looks a lot like library code:
+Let's again recap the risks raised in some of the available literature:
 
 | Concern                                                                                                                                                               | <img src="images/generated/operational-risk.png" width="300"/> | <img src="images/generated/boundary-risk.png" width="300" /> | <img src="images/generated/feature-risk.png" width="300"/>    | <img src="images/generated/communication-risk.png" width="300" /> | <img src="images/generated/schedule-risk.png" width="300" /> | Source       | 
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------:|:-------------:|:-------------------:|:------------------:|:------------------:|---------------| 
