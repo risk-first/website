@@ -20,7 +20,7 @@ Let's look at some examples of borderline [Agency Risk](Agency-Risk) situations,
 
 We can't (shouldn't) expect people on a project to sacrifice their personal lives for the success of the project, right?  Except that ["Crunch Time"](https://en.wikipedia.org/wiki/Video_game_developer#"Crunch_time") is exactly how some software companies work:
 
-> "Some video game developers (such as Electronic Arts) have been accused of the excessive invocation of "crunch time".[17] "Crunch time" is the point at which the team is thought to be failing to achieve milestones needed to launch a game on schedule. " - [Crunch Time, _Wikipedia_](https://en.wikipedia.org/wiki/Video_game_developer#"Crunch_time")
+> "Game development... requires long working hours and dedication from their employees.  Some video game developers (such as Electronic Arts) have been accused of the excessive invocation of "crunch time".  "Crunch time" is the point at which the team is thought to be failing to achieve milestones needed to launch a game on schedule. " - [Crunch Time, _Wikipedia_](https://en.wikipedia.org/wiki/Video_game_developer#"Crunch_time")
 
 People taking time off, going to funerals, looking after sick relatives and so on are all [Agency Risk](Agency-Risk), but they should be _accepted_ on the project.  They are a necessary attendant risk of having _staff_ rather than _slaves_.
 
