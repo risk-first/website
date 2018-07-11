@@ -165,17 +165,19 @@ dependency ijection - invisibile dependencies
 
 ### Dependencies Are Abstractions
 
-Dependencies are usually a mitigation for complexity risk, and we'll investigate that in much more detail in [Software Dependency Risk].  The reason for this is that a dependency gives you an _abstraction_: you no longer need to know _how_ to do something, (that's the job of the dependency), you just need to interact with the dependency properly to get the job done.  Buses are _perfect_ for people who can't drive, after all.
+Dependencies are usually a mitigation for complexity risk, and we'll investigate that in much more detail in [Software Dependency Risk](Software-Dependency-Risk).  The reason for this is that a dependency gives you an [abstraction](Glossary#abstraction): you no longer need to know _how_ to do something, (that's the job of the dependency), you just need to interact with the dependency properly to get the job done.  Buses are _perfect_ for people who can't drive, after all.
 
 But this means that all of the issues of abstractions that we covered in [Communication Risk]() apply:
- - There is [Invisiblity Risk]() because you probably don't have a full view of what the dependency is doing.  Nowadays, bus stops have a digital "arrivals" board which gives you details of when the bus will arrive, and shops publish their opening hours online.  But, abstraction always means the loss of some detail.
- - There is [Misinterpretation Risk], because often the dependency might mistake your instructions.  This is endemic in software, where it's nearly impossible to describe exactly what you want up-front.  
+ - There is [Invisiblity Risk](Communication-Risk#invisibility-risk) because you probably don't have a full view of what the dependency is doing.  Nowadays, bus stops have a digital "arrivals" board which gives you details of when the bus will arrive, and shops publish their opening hours online.  But, abstraction always means the loss of some detail.
+ - There is [Misinterpretation Risk](Communication-Risk#misinterpretation-risk), because often the dependency might mistake your instructions.  This is endemic in software, where it's nearly impossible to describe exactly what you want up-front.  
  
 ## Fit Risk
 
-Sometimes, the bus will take you to lots of in-between places you _didn't_ want to go.   This is [Fit Risk]() and we saw this already in the page on [Feature Risk].  There, we considered two problems:
- - The feature (or now, dependency) doesn't provide all the functinality you need.  This was [Fit Risk].  An example might be the supermarket not stocking everything you wanted.
- - The feature / dependency provides far too much, and you have to accept more complexity than you need.  This was [Conceptual Integrity Risk].  An example of this might be the supermarket being _too big_, and you spend a lot longer navigating it than you wanted to.
+![Feature Fit Risk](images/generated/fit-risk.png) 
+
+Sometimes, the bus will take you to lots of in-between places you _didn't_ want to go.   This is [Fit Risk](Feature-Risk#feature-fit-risk) and we saw this already in the page on [Feature Risk].  There, we considered two problems:
+ - The feature (or now, dependency) doesn't provide all the functionality you need.  This was [Fit Risk](Feature-Risk#feature-fit-risk).  An example might be the supermarket not stocking everything you wanted.
+ - The feature / dependency provides far too much, and you have to accept more complexity than you need.  This was [Conceptual Integrity Risk](Feature-Risk#conceptual-integrity-risk).  An example of this might be the supermarket being _too big_, and you spend a lot longer navigating it than you wanted to.
  
  
 diagram tbd
