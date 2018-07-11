@@ -266,12 +266,11 @@ Let's expand this view slightly and look at where different pieces of software s
 - At the other end of the spectrum, clients will happily pay for software if it clearly **reduces complexity**.  Take [Amazon Web Services (AWS)](https://en.wikipedia.org/wiki/Amazon_Web_Services).  The essential trade here is that you substitute the complexity of hosting and maintaining various pieces of software, in exchange for monthly payments ([Funding Risk](Schedule-Risk#Funding-Risk) for you).  Since the AWS _interfaces_ are specific to Amazon, there is significant [Boundary Risk](Boundary-Risk) in choosing this option.
 - In the middle there are lots of **substitute options** and therefore high competition.  Because of this, prices are pushed towards zero, and and therefore often advertising is used to monetarize the product.  [Angry Birds](https://en.wikipedia.org/wiki/Angry_Birds) is a classic example:  initially, it had demo and paid versions, however [Rovio](https://en.wikipedia.org/wiki/Rovio_Entertainment) discovered there was much more money to be made through advertising than from the [paid-for app](https://www.deconstructoroffun.com/blog/2017/6/11/how-angry-birds-2-multiplied-quadrupled-revenue-in-a-year).
 
-tbd.  include diagram
+### Managing Risks
 
+So far, we've considered only how the different approaches to [Software Dependencies](Software-Dependency-Risk) change the landscape of risks we face to mitigate some [Feature Risk](Feature-Risk) or other.  
 
-### Risks Mitigated
-
-So far, we've considered only how [Software Dependencies](Software-Dependency-Risk) can alleviate complexity from our codebases.  But with [Software Dependencies](Software-Dependency-Risk) we can construct dependency networks to give us all kinds of features and mitigate all kinds of risk.  
+But with [Software Dependencies](Software-Dependency-Risk) we can construct dependency networks to give us all kinds of features and mitigate all kinds of risk.  That is, _the features we are looking for are to mitigate some kind of risk_.
 
 Let's look at some:
 
@@ -280,21 +279,23 @@ Let's look at some:
 |[Coordination Risk](Coordination-Risk)               |Calendar tools,  Bug Tracking, Distributed Databases                     |
 |[Map-And-Territory-Risk](Map-And-Territory-Risk)     |The Internet, generally.  Excel, Google, "Big Data", Reporting tools     |
 |[Schedule-Risk](Schedule-Risk)                       |Planning Software, Project Mangement Software                            |
-|[Communication-Risk](Communication-Risk)             |Email, Chat tools, CRM tools like SalesForce, Forums, Twitter            |
+|[Communication-Risk](Communication-Risk)             |Email, Chat tools, CRM tools like SalesForce, Forums, Twitter, Protocols |
 |[Process-Risk](Process-Risk)                         |Reporting tools, online forms, process tracking tools                    |
 |[Agency-Risk](Agency-Risk)                           |Auditing tools, transaction logs                                         |  
 |[Operational-Risk](Operational-Risk)                 |Support tools like ZenDesk, Grafana, InfluxDB, Geneos                    |
 |[Feature-Risk](Feature-Risk)                         |Every piece of software you use!                                         |
 
-Often, the feature that you're looking for in a piece of software is to mitigate some kind of risk.  I might start using [WhatsApp](https://en.wikipedia.org/wiki/WhatsApp) for example, because I want to be able to send my friends photos and text messages.  However, it's likely that those same features are going to allow us to mitigate [Communication-Risk](Communication-Risk) and [Coordination Risk](Coordination-Risk) when we're next trying to meet up.   
+Often, the feature that you're looking for in a piece of software is to mitigate some kind of risk.  I might start using [WhatsApp](https://en.wikipedia.org/wiki/WhatsApp) for example, because I want to be able to send my friends photos and text messages.  However, it's likely that those same features are going to allow us to mitigate [Communication Risk](Communication-Risk) and [Coordination Risk](Coordination-Risk) when we're next trying to meet up.   
   
+## Back To Ergonomics
 
-tbd.  dependency diagram, showing complexity, feature, schedule risk on the left, feature risk, boundary risk, communication risk on the right.
+What's clear from this analysis is that software dependencies don't _conquer_ any risk - the moves they make on the risk landscape are _subtle_.  Whether or not you end up in a more favourable position risk-wise is going to depend heavily on the quality of the execution and the skill of the implementor.  
 
-So, adopting any library is a trade-off:   tbd. bring it back to ergonomics
+In particular, _choosing_ dependencies can be extremely difficult.  As we discussed above, the usefulness of any tool depends on its fit for purpose, it's _ergonomics within a given context_: it's all too easy to pick a good tool for the wrong job:  
 
+> "I suppose it is tempting, if the only tool you have is a hammer, to treat everything as if it were a nail." - [Abraham Maslow, _Toward a Psychology of Being_](https://en.wiktionary.org/wiki/if_all_you_have_is_a_hammer,_everything_looks_like_a_nail)
 
-### Moving On
+With software dependencies, we often have to live with the decisions we make for a long time.  In my experience, given the [Boundary Risks](Boundary-Risks) associated with getting this wrong, not enough time is spent really thinking about this in advance.  
 
-_[Boundary Risk](Boundary-Risk)_ keeps coming up as a concern, both in [SaaS](#software-as-a-service) and [Software Libraries](#software-libraries).  Let's take a closer look in the [next section](Boundary-Risk).
+Let's take a closer look at this problem in the next section, [Boundary Risk](Boundary-Risk).
 
