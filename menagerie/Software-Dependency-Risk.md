@@ -50,7 +50,7 @@ function out() {                                             (7 symbols)
 1.  Clearly, _language matters_:  the Kolmogorov complexity is dependent on the language, and the features the language has built in.  
 2.  The exact Kolmogorov complexity is uncomputable anyway (it's the _theoretical_ minimum program length).  It's just a fairly abstract idea, so we shouldn't get too hung up on this.  There is no function to be able to say, "what's the Kolmogorov complexity of string X"
 3.  What is this new library function we've created?   Is `abcdRepeater` going to be part of _every_ Javascript?  If so, then we've shifted [Codebase Risk](Complexity-Risk) away from ourselves, but we've pushed [Communication Risk](Communication-Risk) and [Dependency Risk](Dependency-Risk) onto every _other_ user of Javascript. (Why these?  Because `abcdRepeater` will be clogging up the documentation and other people will rely on it to function correctly.)
-4.  Are there equivalent functions for every single other string?  If so, then compilation is no longer a tractable problem: is `return abcdRepeater(10)` correct code?  Well, now we have a massive library of different `XXXRepeater` functions to compile against to see if it is...  So, what we _lose_ in [Kolmogorov Complexity](Complexity-Risk) we gain in [Big-O Complexity](Complexity-Risk).
+4.  Are there equivalent functions for every single other string?  If so, then compilation is no longer a tractable problem: is `return abcdRepeater(10)` correct code?  Well, now we have a massive library of different `XXXRepeater` functions to compile against to see if it is...  So, what we _lose_ in [Kolmogorov Complexity](Complexity-Risk) we gain in [Runtime Complexity](Complexity-Risk#space-and-time-complexity).
 5.  Language design, then, is about _ergonomics_.  After you have passed the relatively low bar of providing [Turing Completeness](https://en.wikipedia.org/wiki/Turing_completeness), the key is to provide _useful_ features that enable problems to be solved, without over-burdening the user with features they _don't_ need.  And in fact, all software is about this.
 
 ![Software Dependency Ergonomics:  finding the sweet spot between too many features and too few](images/kite9/software-dependency-ergonomics.png)
@@ -67,7 +67,7 @@ But outside, the form is simple, and designed for humans to use.   This is _[erg
 
 In the same way as with a hand-tool, the bulk of the complexity of a software tool is hidden behind it's interface.  But, the more complex the _purpose_ of the tool, the more complex the interface will be.
 
-Software is not constrained by _physical_ ergonomics in the same way as a tool is.  But ideally, it should have conceptual ergonomics:  ideally, complexity is hidden away from the user behind the API (Application Programming Interface).  This is the familiar concept of [Abstraction](Glossary#abstraction) we've already looked at.   
+Software is not constrained by _physical_ ergonomics in the same way as a tool is.  But ideally, it should have conceptual ergonomics:  ideally, complexity is hidden away from the user behind the [Application Programming Interface (API)](https://en.wikipedia.org/wiki/Application_programming_interface).  This is the familiar concept of [Abstraction](Glossary#abstraction) we've already looked at.   
 
 That is, the tool should be as simple to use and understand as possible.  This is the [Principal Of Least Astonishment](https://en.wikipedia.org/wiki/Principle_of_least_astonishment):
 
@@ -86,6 +86,8 @@ So, we now have split the complexity into two:
 ![Types of Complexity For a Software Dependency](images/kite9/software-dependency-complexity.png)
 
 The way to win, then, is to allow a language to be extensible as-needed with features written by third parties.  By supplying mechanisms for extension a language can provide insurances against the [Boundary Risk](Boundary-Risk) of adopting it. 
+
+As we discussed in the [C
 
 ## Types Of Software Dependencies
 
