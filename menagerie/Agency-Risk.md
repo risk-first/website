@@ -1,8 +1,8 @@
 ![Draft](images/state/draft.png)
 
-![Agency Risk](images/generated/agency-risk.png)
-
 [Coordinating a team](Coordination-Risk) is difficult enough when everyone on the team has a single [Goal](Glossary#Goal-In-Mind).  But, people have their own goals, too.  Sometimes, the goals harmlessly co-exist with the team's goal, but other times they don't.
+
+![Agency Risk](images/generated/agency-risk.png)
 
 This is [Agency Risk](Agency-Risk).   This term comes from finance and refers to the situation where you (the "principal") entrust your money to someone (the "agent") in order to invest it, but they don't necessarily have your best interests at heart.  They may instead elect to invest the money in ways that help them, or outright steal it.  
 
@@ -12,27 +12,23 @@ The less visibility you have of the agent's activities, the bigger the risk.  Ho
 
 [Agency Risk](Agency-Risk) clearly includes the behaviour of [Bad Actors](https://en.wiktionary.org/wiki/bad_actor).  But, this is a very strict definition of [Agency Risk](Agency-Risk).   In software development, we're not lending each other money, but we are being paid by the project sponsor, so they are assuming [Agency Risk](Agency-Risk) by employing us.   
 
+As we saw in the previous section on [Process Risk](Process-Risk), [Agency Risk](Agency-Risk) doesn't just apply to people: it can apply to _running software_ or _whole teams_.  
+
 Let's look at some examples of borderline [Agency Risk](Agency-Risk) situations, in order to sketch out where the domain of this risk lies.
 
-## CV Building
+## Personal Lives
 
-This is when someone decides that the project needs a dose of "Some Technology X", but in actual fact, this is either completely unhelpful to the project (incurring large amounts of [Complexity Risk](Complexity-Risk)), or merely less useful than something else.  
+We can't (shouldn't) expect people on a project to sacrifice their personal lives for the success of the project, right?  Except that ["Crunch Time"](https://en.wikipedia.org/wiki/Video_game_developer#"Crunch_time") is exactly how some software companies work:
 
-It's very easy to spot CV building:  look for choices of technology that are incongruently complex compared to the problem they solve, and then challenge by suggesting a simpler alternative.    
+> "Some video game developers (such as Electronic Arts) have been accused of the excessive invocation of "crunch time".[17] "Crunch time" is the point at which the team is thought to be failing to achieve milestones needed to launch a game on schedule. " - [Crunch Time, _Wikipedia_](https://en.wikipedia.org/wiki/Video_game_developer#"Crunch_time")
 
-## Consultancies
-
-When you work with an external consultancy, there is *always* more [Agency Risk](Agency-Risk) than with a direct employee.  This is because as well as your goals and the employee's goals, there is also the consultancy's goals.  
-
-This is a good argument for not using consultancies, but sometimes the technical expertise they bring can outweigh this risk.
-
-Also, try to look for _hungry_ consultancies:  if you being a happy client is valuable to them, they will work at a discount (either working cheaper, harder or longer or more carefully) as a result.
+People taking time off, going to funerals, looking after sick relatives and so on are all [Agency Risk](Agency-Risk), but they should be _accepted_ on the project.  They are a necessary attendant risk of having _staff_ rather than _slaves_.
 
 ## The Hero
 
 > "The one who stays later than the others is a hero. " - [Hero Culture, _Ward's Wiki_](http://wiki.c2.com/?HeroCulture)
 
-Heroes put in more hours and try to rescue projects single-handedly, often cutting corners like team communication and process in order to get there.   
+Conversely, Heroes put in more hours and try to rescue projects single-handedly, often cutting corners like team communication and process in order to get there.   
 
 Sometimes, projects don't get done without heroes.  But other times, the hero has an alternative agenda than just getting the project done:
 
@@ -42,6 +38,20 @@ Sometimes, projects don't get done without heroes.  But other times, the hero ha
 - For the job security of being a [Key Man](https://en.wikipedia.org/wiki/Key_person_insurance).
 
 A team _can_ make use of heroism, but it's a double-edged sword.  The hero can becomes [a bottleneck](Coordination-Risk) to work getting done, and because want to solve all the problems themselves, they [under-communicate](Communication-Risk).  
+
+## Consultancies
+
+When you work with an external consultancy, there is *always* more [Agency Risk](Agency-Risk) than with a direct employee.  This is because as well as your goals and the employee's goals, there is also the consultancy's goals.  
+
+This is a good argument for not using consultancies, but sometimes the technical expertise they bring can outweigh this risk.
+
+Also, try to look for _hungry_ consultancies:  if you being a happy client is valuable to them, they will work at a discount (either working cheaper, harder or longer or more carefully) as a result.
+
+## CV Building
+
+This is when someone decides that the project needs a dose of "Some Technology X", but in actual fact, this is either completely unhelpful to the project (incurring large amounts of [Complexity Risk](Complexity-Risk)), or merely less useful than something else.  
+
+It's very easy to spot CV building:  look for choices of technology that are incongruently complex compared to the problem they solve, and then challenge by suggesting a simpler alternative.    
 
 ## Devil Makes Work
 
@@ -86,11 +96,9 @@ Although over-confidence might be a useful trait when bargaining with other huma
 
 Perhaps it's a little unfair to draw out one human characteristic for attention.   After all, we are [riddled with biases](https://en.wikipedia.org/wiki/List_of_cognitive_biases).  There is probably an interesting article to be written about the effects of different biases on the software development and project management processes.  This task is left as an exercise for the reader.
 
-## On The Take?
+## Agency Risk In Code
 
-tbd
 
-tbd chapter link
 
 
 
