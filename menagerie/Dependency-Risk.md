@@ -58,11 +58,11 @@ Having an event occur in a fixed time and place is [mitigating risk](Glossary#Mi
 - Events are a mitigation for [Coordination Risk](Coordination-Risk): A bus needn't necessarily _have_ a fixed timetable: it could wait for each passenger until they turned up, and then go.  (A bit like ride-sharing works).  This would be a total disaster from a [Coordination Risk](Coordination-Risk) perspective, as one person could cause everyone else to be really really late.  Having a fixed time for doing something mitigates [Coordination Risk](Coordination-Risk) by turning it into [Schedule Risk](Schedule-Risk).  Agreeing a date for a product launch, for example, allows lots of teams to coordinate their activities.
 - It's not entirely necessary to even take the bus:  you could walk, or go by another form of transport.  But, effectively, this just swaps one dependency for another:  if you walk, this might well take longer and use more energy, so you're just picking up [Schedule Risk]() in another way.  If you drive, you have a dependency on your car instead.  So, there is often an _opportunity cost_ with dependencies.  Using the bus might be a cheap way to travel.  You're therefore imposing less [Dependency Risk]() on a different scarce resource - your money.
 
-![Action Diagram showing risks mitigated by having an _event_](images/kite9/dependency-risk-event.png)
-
 ### But, Events Lead To Attendant Risk
 
-By _deciding to use the bus_ we've [Taken Action](Glossary#Take-Action), as shown in the diagram.
+By _deciding to use the bus_ we've [Taken Action](Glossary#Take-Action).  
+
+![Action Diagram showing risks mitigated by having an _event_](images/kite9/dependency-risk-event.png)
 
 However, as we saw in [A Simple Scenario](A-Simple-Scenario), this means we pick up [Attendant Risks](Glossary#attendant-risk).  
 
@@ -79,8 +79,6 @@ So, we're going to look at [Dependency Risk](Dependency-Risk) for our toy events
 (Although you might be able to think of a few more.) 
  
 Let's look at each of these in turn.
-
-tbd.  diagram of events as an action.
 
 ## Schedule Risk
 
