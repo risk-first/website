@@ -62,7 +62,7 @@ Having an event occur in a fixed time and place is [mitigating risk](Glossary#Mi
 
 ### But, Events Lead To Attendant Risk
 
-By _deciding to use the bus_ we've [Taken Action](Glossary#Take-Action).  
+By _deciding to use the bus_ we've [Taken Action](Glossary#Take-Action), as shown in the diagram.
 
 However, as we saw in [A Simple Scenario](A-Simple-Scenario), this means we pick up [Attendant Risks](Glossary#attendant-risk).  
 
