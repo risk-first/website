@@ -118,7 +118,7 @@ There is significant [Agency Risk](Agency-Risk) in running software _at all_.  S
  
 We've looked here at some illustrative examples of [Agency Risk](Agency-Risk).  But as we stated at the beginning, [Agency Risk](Agency-Risk) at any level comes down to differences of [Goals](Glossary#goal-in-mind) between the different agents, whether they are _people_, _teams_ or _software_.  
  
-So, having looked at agents _individually_, in the next section, we're going to look more closely at [Goals](Glossary#goal-in-mind), and the [Attendant Risks](Glossary#attendant-risk) when aligning them amongst multiple agents.   
+So, having looked at agents _individually_, it's time to look more closely at [Goals](Glossary#goal-in-mind), and the [Attendant Risks](Glossary#attendant-risk) when aligning them amongst multiple agents.   
 
-On to [Coordination Risk](Coordination-Risk).
+On to [Coordination Risk](Coordination-Risk)...
  
