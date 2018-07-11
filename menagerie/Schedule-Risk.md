@@ -78,7 +78,7 @@ Or at least, that's the argument.  If you're [Discounting the Future To Zero](Ri
 
 So, the problem with [Student Syndrome](Schedule-Risk#student-syndrome) is that the _very mitigation_ for [Schedule Risk](Schedule-Risk) (allowing more time) is an [Attendant Risk](Glossary#attendant-risk) that _causes_ [Schedule Risk](Schedule-Risk):   you'll work towards the new, generous deadline more slowly, and you'll end up revealing [Hidden Risk](Glossary#Hidden-Risk) _later_ than you would have with the original, pressing deadline ... and you end up being late because of them.
 
-We'll look at mitigations for this in [Prioritisation](Prioritisation).
+We'll look at mitigations for this in Part 3's section on [Prioritisation](Prioritisation).
 
 ## Funding Risk
 
