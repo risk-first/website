@@ -8,16 +8,16 @@ In the software development world (and the business world generally) processes u
 
 ## The Purpose Of Process
 
-Process exists to mitigate other kinds of risk, and for this reason, we'll be looking at them again in [Part 3: Practices](Process).  
+Process exists to mitigate other kinds of risk, and for this reason, we'll be looking at them again in [Part 3: Practices](Process), where we'll look at how you can design processes to mitigate risks on your own project.
 
-In this section, we'll look mainly at how you can deal with [Process Risk](Process-Risk) where you are a client of the process.  However, in the later section we'll look at how you can use process design to your advantage mitigating risk on your own project.
-
-But until we get there, let's look at some examples of how process can mitigate other risks:
+Until we get there, let's look at some examples of how process can mitigate other risks:
 
  - [Coordination Risk](Coordination-Risk):   You can often use process to help people coordinate.  For example, a production Line is a process where work being done by one person is pushed to the next person when it's done.  A meeting booking process ensures that people will all attend a meeting together at the same place and time, and that a room is available for it. 
  - [Dependency Risk](Dependency-Risk): You can use processes to make dependencies explicit and mitigate dependency risk.  For example, a process for hiring a car will make sure there is a car available at the time you need it.  Alternatively, if we're processing a loan application, we might need evidence of income or bank statements.  We can push this [Dependency Risk](Dependency-Risk) onto the person asking for the loan, by making it part of the process and not accepting the application until this has been provided.
  - [Complexity Risk](Complexity-Risk): Working within a process can reduce the amount of Complexity you have to deal with.  We accept that processes are going to slow us down, but we appreciate the reduction in risk this brings.  (They allow us to trade Complexity for schedule risk).  For example, setting up a server might be complex, but filling in a form to do the job might simplify things.  Clearly, the complexity hasn't gone away, but it's hidden within the process.  Process therefore can provide [Abstraction](Glossary#Abstraction).
  - [Operational Risk](Operational-Risk):  Operational Risk is the risk of people not doing their job properly (tbd).  But, by having a process, (and asking, did this person follow the process?) you can draw a distinction between a process failure and a personnel failure.  For example, making a loan to a money launderer _could_ be a failure of the loan agent.   But, if they followed the _process_, it's a failure of the Process itself. 
+ 
+However, in this section,  we'll look mainly at how you can deal with [Process Risk](Process-Risk) where you are a _client_ of _someone else's process_.
 
 ## Evolution Of Business Process
 
