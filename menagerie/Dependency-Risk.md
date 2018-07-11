@@ -82,6 +82,8 @@ Let's look at each of these in turn.
 
 ## Schedule Risk
 
+![Schedule Risk](images/generated/schedule-risk.png)
+
 By agreeing a _time_ and _place_ for something to happen, you're introducing [Deadline Risk](Schedule-Risk#Deadline-Risk).  Miss the deadline, and you miss the bus, or the start of the meeting or get fined for not filling your tax return on time.  
 
 As discussed above, _schedules_ (such as bus timetables) exist so that _two or more parties can coordinate_, and [Deadline Risk](Schedule-Risk#Deadline-Risk) is on _all_ of the parties.  While there's a risk I am late, there's also a risk the bus is late.  I might miss the start of a concert, or the band might keep everyone waiting.   
@@ -133,6 +135,8 @@ Much like [Reliability Risk](#reliability-risk), there is science for it:
 
 ## Communication Risk
 
+![Communication Risk](images/generated/communication-risk.png)
+
 We've already looked at communication risk in a lot of depth, and we're going to go deeper still in [Software Dependency Risk](Software-Dependency-Risk), but let's look at some general issues around communicating dependencies.  In the [Communication Risk](Communication-Risk) section we looked at [Marketing Communications](Communication-Risk#Marketing-Communications) and talked about the levels of awareness that you could have with dependencies.  i.e.
 
  - The concept that there is such a thing as **D** which solves my problem isn't something I'd even considered.    
@@ -146,6 +150,8 @@ Let's apply this to our Bus scenario:
  - How do I find out about the different options?
  - How do I choose between buses, taxis, cars etc.
  - How do I understand the timetable, and apply it to my problem?
+ 
+### Silo Mentality
  
 Finding out about bus schedules is easy.  But in a large company, [Communication Risk](Communication-Risk) and especially [Invisibility Risk]() are huge problems.  This tends to get called "[Silo Mentality](https://en.wikipedia.org/wiki/Information_silo#Silo_mentality)", that is, ignoring what else is going on in other parts of the company or "not invented here" syndrome.   These are all varieties of [Communication Risk](Communication-Risk).
 
