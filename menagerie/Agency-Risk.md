@@ -10,6 +10,8 @@ This is [Agency Risk](Agency-Risk).   This term comes from finance and refers to
 
 The less visibility you have of the agent's activities, the bigger the risk.  However, the whole _point_ of giving the money to the agent was that you would have to spend less time and effort managing it.  Hence the dilemma.  So, [Agency Risk](Agency-Risk) flourishes where there is [Invisibility Risk](Communication-Risk).
 
+![Mitigating Agency Risk Through Monitoring](images/kite9/agency-risk-monitoring.png)
+
 [Agency Risk](Agency-Risk) clearly includes the behaviour of [Bad Actors](https://en.wiktionary.org/wiki/bad_actor).  But, this is a very strict definition of [Agency Risk](Agency-Risk).   In software development, we're not lending each other money, but we are being paid by the project sponsor, so they are assuming [Agency Risk](Agency-Risk) by employing us.   
 
 As we saw in the previous section on [Process Risk](Process-Risk), [Agency Risk](Agency-Risk) doesn't just apply to people: it can apply to _running software_ or _whole teams_.  
@@ -96,7 +98,12 @@ Although over-confidence might be a useful trait when bargaining with other huma
 
 Perhaps it's a little unfair to draw out one human characteristic for attention.   After all, we are [riddled with biases](https://en.wikipedia.org/wiki/List_of_cognitive_biases).  There is probably an interesting article to be written about the effects of different biases on the software development and project management processes.  This task is left as an exercise for the reader.
 
-## Agency Risk In Code
+## Errant Processes
+
+
+
+
+## Errant Teams
 
 
 
