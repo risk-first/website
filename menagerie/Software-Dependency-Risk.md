@@ -214,7 +214,9 @@ Businesses opt for Software as a Service (SaaS) because:
 - Payment is usually based on _usage_, mitigating [Schedule Risk](Schedule-Risk).  e.g. Instead of having to pay for in-house software administrators, they can leave this function to the experts.
 - Potentially, you outsource the [Operational Risk](Operational-Risk) to a third party. e.g. ensuring availability, making sure data is secure and so on.
 
-SaaS is now a very convenient way to provide _commercial_ software.   Popular examples of SaaS might be [SalesForce](https://en.wikipedia.org/wiki/Salesforce.com), or [GMail](https://en.wikipedia.org/wiki/Gmail).  Both of which follow the commonly-used [Freemium](https://en.wikipedia.org/wiki/Freemium) model, where the basic service is provided free, but upgrading to a paid account gives extra benefits.  By providing the software on their own servers, the commercial organisation has a defence against _piracy_, as well as being able to control the complexity of the support environment (e.g. not having to support _every_ version of the software that's ever been released).
+SaaS is now a very convenient way to provide _commercial_ software.   Popular examples of SaaS might be [SalesForce](https://en.wikipedia.org/wiki/Salesforce.com), or [GMail](https://en.wikipedia.org/wiki/Gmail).  Both of which follow the commonly-used [Freemium](https://en.wikipedia.org/wiki/Freemium) model, where the basic service is provided free, but upgrading to a paid account gives extra benefits.  
+
+By providing the software on their own servers, the commercial organisation has a defence against _piracy_, as well as being able to control the [Complexity Risk](Complexity-Risk) of the their environment (e.g. not having to support _every_ version of the software that's ever been released).
 
 The trade-off of SaaS looks a lot like library code, except that the dependency is arguably _more_ fragile:
 
