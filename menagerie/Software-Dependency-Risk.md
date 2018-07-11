@@ -190,7 +190,7 @@ In the table below, I am summarizing three different sources, which give descrip
 
 Some take-aways:
 
- - [Feature Risk](Feature-Risk) is the biggest concern.   How can you be sure that the project will do what you want it to do ahead of schedule?  Will it contain bugs or missing features?  By looking at factors like _release frequency_ and _size of the community_ you get a good feel for this which is difficult to fake.
+ - [Feature Risk](Feature-Risk) is a big concern.   How can you be sure that the project will do what you want it to do ahead of schedule?  Will it contain bugs or missing features?  By looking at factors like _release frequency_ and _size of the community_ you get a good feel for this which is difficult to fake.
  - [Boundary Risk](Boundary-Risk) is also very important.  You are going to have to _live_ with your choices for the duration of the project, so it's worth spending the effort to either ensure that you're not going to regret the decision, or that you can change direction later.
  - Third is [Communication Risk](Communication-Risk):  how well does the project deal with it's users?  If a project is "famous", then it has communicated its usefulness to a wide, appreciative audience.  Avoiding [Communication Risk](Communication-Risk) is also a good reason to pick _tools you are already familiar with_.
   
@@ -239,8 +239,13 @@ Let's again recap the risks raised in some of the available literature:
 [sd4]: https://www.zdnet.com/article/saas-checklist-nine-factors-to-consider-when-selecting-a-vendor/
 [sd5]: http://sandhill.com/article/how-to-evaluate-saas-vendors-five-key-considerations/
 
-tbd.  diagram of how this works out: [feature risk], [communication risk]() being mitigated, but [Protocol Complexity Risk], [Fit Risk], [Dead End/Boundary Risk], [Costs?], [Red Queen Risk].
-internal vs external risks.
+Some take-aways:
+
+- Clearly, [Operational Risk](Operational-Risk) is now a big concern.  By depending on a third-party organisation you are tying yourself to its success or failure in a much bigger way than just by using a piece of open-source software.   What happens to data security, both in the data centre and over the internet?   
+- With [Feature Risk](Feature-Risk) you now have to condend with the fact that the software will be upgraded _outside your control_, and you may have limited control over which features get added or changed. 
+- [Boundary Risk](Boundary-Risk) is a also a different proposition: you are tied to the software provider by _a contract_.  If the service changes in the future, or isn't to your liking, you can't simply fork the code (like you could with an open source project).
+
+![Risk Tradeoff From Using _Software as a Service (SaaS)](images/kite9/software-dependency-saas.png)
 
 ### A Matrix of Options
 
