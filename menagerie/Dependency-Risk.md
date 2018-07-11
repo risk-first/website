@@ -22,7 +22,7 @@ Although life exists at the bottom of the ocean around [hydrothermal vents](http
 
 This tells us a lot about dependency risk right here:
  - On the one hand, depending on something else is very often helpful, and quite often essential.  (For example, all animals that _move_ seem to depend on oxygen).
- - However, as soon as you have dependencies, you need to take into account of their _reliability_. (Living near a river or stream gives ou access to fresh water, for example).  
+ - However, as soon as you have dependencies, you need to take into account of their _reliability_. (Living near a river or stream gives you access to fresh water, for example).  
  - Successful organisms _adapt_ to the dependencies available to them (like the thermal vent creatures).
  - There is likely to be _competition_ for a dependency when it is scarce (think of droughts and famine).
 
@@ -30,9 +30,9 @@ So, dependencies are a trade-off.  They give with one hand and take with the oth
 
 ## Simple Made Easy
 
-In Rich Hickey's talk, [Simple Made Easy](https://www.infoq.com/presentations/Simple-Made-Easy) he discusses the difference between _simple_ software systems and _easy_ ones, heavily stressing the virtues of simple over easy.  It's an incredible talk and well worth watching.  
+In Rich Hickey's talk, [Simple Made Easy](https://www.infoq.com/presentations/Simple-Made-Easy) he discusses the difference between _simple_ software systems and _easy_ (to use) ones, heavily stressing the virtues of simple over easy.  It's an incredible talk and well worth watching.  
 
-But.  Living systems are not simple.  They evolved to this level of complexity though because life was _easier_ that way.  In the other direction, life is first _harder_ and then _impossible_, and then an evolutionary dead-end.
+But.  Living systems are not simple.  Not anymore.  They evolved in the direction of increasing complexity though because life was _easier_ that way.  In the "simpler" direction, life is first _harder_ and then _impossible_, and then an evolutionary dead-end.
 
 Depending on things makes _your job easier_.  It's just [division of labour](https://en.wikipedia.org/wiki/Division_of_labour) and dependency hiearchies, as we saw in [Hierarchies and Modularization](Complexity-Risk#Hierarchies-and-Modularization).
 
