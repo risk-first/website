@@ -20,7 +20,7 @@ Let's look at some specific kinds of [Schedule Risk](Schedule-Risk).
 
 Any product idea is necessarily of it's time:  the [Goal In Mind](Goal-In-Mind) will be based on observations from a particular [Internal Model](Glossary#Internal-Model), reflecting a view on reality at a specific _point in time_.  
 
-How long will that remain true for?  This is your _opportunity_:  it exists apart from any deadlines you set yourself, or funding deadlines.  It's purely, "how long will this idea be worth doing?"  
+How long will that remain true for?  This is your _opportunity_:  it exists apart from any deadlines you set yourself, or funding options.  It's purely, "how long will this idea be worth doing?"  
 
 With any luck, decisions around _funding_ your project will be tied into this, but it's not always the case.   It's very easy to undershoot or overshoot the market completely and miss the window of opportunity.  
 
