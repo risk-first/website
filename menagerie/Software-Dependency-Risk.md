@@ -111,7 +111,9 @@ Sometimes, you will pick up a dependency on _unwritten software_.  This commonly
 
 ![Sometimes, a module you're writing will depend on unwritten code](images/kite9/software-dependency-unwritten-1.png)
 
-If a component **A** of our project _depends_ on **B** for some kind of processing, you might not be able to complete **A** before writing **B**.   This makes _scheduling_ the project harder, and if component **A** is a risky part of the project, then the chances are you'll want to mitigate risk there first.  But it also hugely increases [Communication Risk](Communication-Risk) because now you're being asked to communicate with a dependency that doesn't really exist yet, _let alone_ have any documentation.
+If a component **A** of our project _depends_ on **B** for some kind of processing, you might not be able to complete **A** before writing **B**.   This makes _scheduling_ the project harder, and if component **A** is a risky part of the project, then the chances are you'll want to mitigate risk there first.  
+
+But it also hugely increases [Communication Risk](Communication-Risk) because now you're being asked to communicate with a dependency that doesn't really exist yet, _let alone_ have any documentation.
 
 There are a couple of ways to do this:
 
