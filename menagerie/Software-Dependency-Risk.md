@@ -272,6 +272,8 @@ So far, we've considered only how the different approaches to [Software Dependen
 
 But with [Software Dependencies](Software-Dependency-Risk) we can construct dependency networks to give us all kinds of features and mitigate all kinds of risk.  That is, _the features we are looking for are to mitigate some kind of risk_.
 
+For example, I might start using [WhatsApp](https://en.wikipedia.org/wiki/WhatsApp) for example, because I want to be able to send my friends photos and text messages.  However, it's likely that those same features are going to allow us to mitigate [Communication Risk](Communication-Risk) and [Coordination Risk](Coordination-Risk) when we're next trying to meet up. 
+
 Let's look at some:
 
 |Risk                                                 |Examples of Software Mitigating That Risk                                |
@@ -281,11 +283,9 @@ Let's look at some:
 |[Schedule-Risk](Schedule-Risk)                       |Planning Software, Project Mangement Software                            |
 |[Communication-Risk](Communication-Risk)             |Email, Chat tools, CRM tools like SalesForce, Forums, Twitter, Protocols |
 |[Process-Risk](Process-Risk)                         |Reporting tools, online forms, process tracking tools                    |
-|[Agency-Risk](Agency-Risk)                           |Auditing tools, transaction logs                                         |  
+|[Agency-Risk](Agency-Risk)                           |Auditing tools, transaction logs, Timesheet software, HR Software        |  
 |[Operational-Risk](Operational-Risk)                 |Support tools like ZenDesk, Grafana, InfluxDB, Geneos                    |
 |[Feature-Risk](Feature-Risk)                         |Every piece of software you use!                                         |
-
-Often, the feature that you're looking for in a piece of software is to mitigate some kind of risk.  I might start using [WhatsApp](https://en.wikipedia.org/wiki/WhatsApp) for example, because I want to be able to send my friends photos and text messages.  However, it's likely that those same features are going to allow us to mitigate [Communication Risk](Communication-Risk) and [Coordination Risk](Coordination-Risk) when we're next trying to meet up.   
   
 ## Back To Ergonomics
 
