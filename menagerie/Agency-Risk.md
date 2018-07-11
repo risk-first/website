@@ -98,14 +98,23 @@ Although over-confidence might be a useful trait when bargaining with other huma
 
 Perhaps it's a little unfair to draw out one human characteristic for attention.   After all, we are [riddled with biases](https://en.wikipedia.org/wiki/List_of_cognitive_biases).  There is probably an interesting article to be written about the effects of different biases on the software development and project management processes.  This task is left as an exercise for the reader.
 
-## Errant Processes
+## Software Processes And Teams
 
+[Agency Risk](Agency-Risk) doesn't just refer to people - it refers to anything which has agency over it's actions.  
 
+> "Agency is the capacity of an actor to act in a given environment... Agency may either be classified as unconscious, involuntary behavior, or purposeful, goal directed activity (intentional action). " - [Agency, _Wikipedia_](https://en.wikipedia.org/wiki/Agency_(philosophy)) 
 
+There is significant [Agency Risk](Agency-Risk) in running software _at all_.  Since computer systems follow rules we set for them, we shouldn't be surprised when those rules have exceptions that lead to disaster.  For example:
+ - A process continually writing log files until the disks fill up, crashing the system.
+ - Bugs causing data to get corrupted, causing financial loss.
+ - Malware infecting a system, and sending your passwords and data to undesirables.
 
-## Errant Teams
-
-
-
-
-
+[Agency Risk](Agency-Risk) also covers _whole teams_ too.  It's perfectly possible that a team within an organisation develops [Goals](Glossary#Goal-In-Mind) that don't align with those of the overall organisation.  For example:
+ - A team introduces excessive [Bureaucracy](Process-Risk#bureaucratic-risk) in order to avoid work it doesn't like.
+ - A team gets obsessed with a particular technology, or their own internal process improvement, at the expense of delivering business value.
+ - A marginalised team tbd.
+ 
+We've looked here at some illustrative examples of [Agency Risk](Agency-Risk), but as we stated at the beginning, [Agency Risk](Agency-Risk) at any level comes down to differences of [Goals](Glossary#goal-in-mind) between the different agents, whether they are _people_, _teams_ or _software_.  
+ 
+So, having looked at agents _individually_, in the next section, we're going to look more closely at [Goals](Glossary#goal-in-mind), and the [Attendant Risks](Glossary#attendant-risk) when aligning them amongst multiple agents.   On to [Coordination Risk](Coordination-Risk).
+ 
