@@ -179,9 +179,7 @@ Sometimes, the bus will take you to lots of in-between places you _didn't_ want 
  - The feature (or now, dependency) doesn't provide all the functionality you need.  This was [Fit Risk](Feature-Risk#feature-fit-risk).  An example might be the supermarket not stocking everything you wanted.
  - The feature / dependency provides far too much, and you have to accept more complexity than you need.  This was [Conceptual Integrity Risk](Feature-Risk#conceptual-integrity-risk).  An example of this might be the supermarket being _too big_, and you spend a lot longer navigating it than you wanted to.
  
- 
-diagram tbd
-
+![Feature Fit:  A Two-Dimensional Problem (at least)](images/kite9/dependency-risk-fit.png)
 
 ## Dead-End Risk and Boundary Risk
 
