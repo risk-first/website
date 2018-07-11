@@ -27,25 +27,25 @@ Before we get to examining different [Process Risks](Process-Risk), let's consid
 
 Business Processes often arise in response to an unmet need within an organisation.  And, as we said above, they are usually there to mitigate other risks.  Let's look at an example lifecycle of how that can happen:
 
-[Person B doing A for company C](images/kite9/process-risk-1.png)
+![Person B doing A for company C](images/kite9/process-risk-1.png)
 
 1.  Person `B` in a company starts doing `A`.  `A` is really useful!   `B` gets busy.  No one cares.  But then, `B` goes on holiday.  `A` doesn't get done, and people now care:  the [Dependency Risk](Dependency-Risk) is suddenly apparent. 
 
-[Team T is created to do A for Company C](images/kite9/process-risk-2.png)
+![Team T is created to do A for Company C](images/kite9/process-risk-2.png)
 
 2.  Either, `B` co-opts other people to help, gets given a team (`T`), or someone else forms a team `T` containing B to get the job done "properly".  `T` is responsible for doing `A` (it might be a resource, some source of complexity, whatever).  However, it needs to supply the company with `A` reliably and responsibly, otherwise there will be problems.  They can't simply sit on the resource and do nothing, but at the same time, so they try and please all of their clients as far as possible.  This is a good deal for their clients, but they end up absorbing a lot of [Complexity Risk](Complexity-Risk) which impacts their ability to reliably deliver `A`. 
 
-[Team T protects itself from complexity with a process, P](images/kite9/process-risk-3.png)
+![Team T protects itself from complexity with a process, P](images/kite9/process-risk-3.png)
 
 3. `T` organises bureaucratically, so that there is a controlled process (`P`) by which `A` can be accessed.  Like a cell, they have arranged a protective barrier around themselves, the strength of which depends on the power conferred to them by control of `A`.  `P` probably involves filling in a form (or following some other [Protocol](Communication-Risk)).   They can now deal with requests on a first-come-first-served basis: [Complexity Risks](Complexity-Risk) are now the problem of the form-filler in `C`.  
 
-[Team T protects itself from Coordination issues with signoffs or other barriers](images/kite9/process-risk-4.png)
+![Team T protects itself from Coordination issues with signoffs or other barriers](images/kite9/process-risk-4.png)
 
 4.   But it's hard to make sure the right clients get access to `A` at the right times, and it's necessary to synchronize access across company `C`.  (A [Coordination Risk](Coordination-Risk) issue.)  `T` reacts and sets up sign-off, authorization or monetary barriers around `A`, increasing the bureauratic load involved in using `A`.  But, also by requiring these things, they move risk *out of* their team. 
 
 5.  But, there are abuses of `A`: people either misuse it, or use it too much ([Operational Risk](Operational-Risk), and so bureaucratic load increases to match, increasing the amount of _process_ to use `A`.  This corresponds to greater [Process Risk](Process-Risk) for clients in company `C`.
 
-[Person D acts as a middleman for customers needing some variant of `A`](images/kite9/process-risk-5.png)
+![Person D acts as a middleman for customers needing some variant of `A`](images/kite9/process-risk-5.png)
 
 6.  Person `D`, who has experience working with team `T` acts as a middleman for customers requiring some variant of A.  They are able to help navigate the bureaucratic process (deal with Process Risk).  The cycle potentially starts again, except with process risk being dealt with by someone else. 
 
