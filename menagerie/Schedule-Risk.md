@@ -134,4 +134,4 @@ With [Schedule Risk](Schedule-Risk), the underlying measure is _time_:
  
 ... and so on.  Clearly, in the same way as you don't know exactly how much money you might lose or gain on the stock-exchange, you can't put precise numbers on [Schedule Risk](Schedule-Risk) either.
 
-Having looked at both Time and Money components of risk, let's look at something equally fundamental, [Complexity Risk](Complexity-Risk).
+[Schedule Risk](Schedule-Risk), then is _fundamental_ to every dependency.  But now it's time to get into the _specifics_, and look at [Software Dependencies](Software-Dependency-Risk).
