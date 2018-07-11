@@ -53,7 +53,8 @@ function out() {                                             (7 symbols)
 4.  Are there equivalent functions for every single other string?  If so, then compilation is no longer a tractable problem: is `return abcdRepeater(10)` correct code?  Well, now we have a massive library of different `XXXRepeater` functions to compile against to see if it is...  So, what we _lose_ in [Kolmogorov Complexity](Complexity-Risk) we gain in [Big-O Complexity](Complexity-Risk).
 5.  Language design, then, is about _ergonomics_.  After you have passed the relatively low bar of providing [Turing Completeness](https://en.wikipedia.org/wiki/Turing_completeness), the key is to provide _useful_ features that enable problems to be solved, without over-burdening the user with features they _don't_ need.  And in fact, all software is about this. (expand on this)
 
-tbd diagram
+![Software Dependency Ergonomics:  finding the sweet spot between too many features and too few](images/kite9/software-dependency-ergonomics.png)
+
 
 ## Ergonomics Examined
 
