@@ -83,7 +83,11 @@ Therefore, [Coordination Risk](Coordination-Risk) is worse on projects with more
 
 ![Vroom And Yetton Decision Making Styles.  "d" indicates authority in making a decision.  Thin lines with arrow-heads show information flow, whilst thick lines show _opinions_ being passed around.](images/kite9/vroom-yetton.png)
 
-In their original formulation, Vroom and Yetton introduced five different ways of making decisions as a team, which are summarised in the table below (**AI, AII, CI, CII, GII**).  To this, I have added a sixth (**UI**), which is the _uncoordinated_ option, where everyone competes.  
+In their original formulation, Vroom and Yetton introduced five different ways of making decisions as a team, which are summarised in the table below (**AI, AII, CI, CII, GII**).  To this, I have added a sixth (**UI**), which is the _uncoordinated_ option, where everyone competes.  In the diagram I have adopted the following convention:
+ - Thin lines with arrow-heads show a flow of _information_, either one-way or two-way.
+ - Thick lines show a flow of _opinion_.
+ - Squares with "d" are decision makers, whereas circles don't have a part in the decision.
+
 
 |Type           |People Involved In Decision|Opinions         |Channels Of Communication                             |Coordination Risk                |Description
 |---------------|---------------------------|-----------------|-----------------------------------                   |---------------------------------|----------
