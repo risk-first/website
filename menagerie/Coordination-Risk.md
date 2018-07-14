@@ -55,7 +55,7 @@ But commonly, [Coordination Risk](Coordination-Risk) occurs where people have di
 
 Here are some classic problems of coordination, none of which can be addressed without good communication:
 
-1. **Merging Data**.  If you are familiar with the source code control system, [Git](https://en.wikipedia.org/wiki/Git), you will know that this is a _distributed_ version control system.  That means that two or more people can propose changes to the same files without knowing about each other.  This means that at some later time, [git]() then has to merge (or reconcile) these changes together.  Git is very good at doing this automatically, but sometimes, different people can independently change the same lines of code and these will have to be merged manually.  In this case, a human arbitrator "resolves" the difference, either by combining the two changes or picking a winner.
+1. **Merging Data**.  If you are familiar with the source code control system, [Git](https://en.wikipedia.org/wiki/Git), you will know that this is a _distributed_ version control system.  That means that two or more people can propose changes to the same files without knowing about each other.  This means that at some later time, [Git](https://en.wikipedia.org/wiki/Git) then has to merge (or reconcile) these changes together.  Git is very good at doing this automatically, but sometimes, different people can independently change the same lines of code and these will have to be merged manually.  In this case, a human arbitrator "resolves" the difference, either by combining the two changes or picking a winner.
 
 2. **Consensus**.  Making group decisions (as in elections) is often decided by votes.  But having a vote is a coordination issue:  
   - How long do you provide for the vote?  
@@ -77,25 +77,26 @@ Here are some classic problems of coordination, none of which can be addressed w
 
 Within a team, [Coordination Risk](Coordination-Risk) is at it's core about resolving [Internal Model](Glossary#Internal-Model) conflicts in order that everyone can agree on a [Goal In Mind](Glossary#Goal-In-Mind) and cooperate on getting it done.  
 
-Therefore, **Coordination Risk** is worse on projects with more members, and worse in organizations with more staff.  If you are engaged in a solo project, do you suffer from **Coordination Risk** at all?  Maybe:  sometimes, you can feel "conflicted" about the best way to solve a problem.  And weirdly, usually _not thinking about it_ helps.  Sleeping too.  (Rich Hickey calls this "[Hammock Based Development]()").  This is probably because, unbeknownst to you, your subconscious is furiously communicating internally, trying to resolve these conflicts itself, and will let you know when it's come to a resolution.  
+Therefore, [Coordination Risk](Coordination-Risk) is worse on projects with more members, and worse in organizations with more staff.  If you are engaged in a solo project, do you suffer from [Coordination Risk](Coordination-Risk) at all?  Maybe:  sometimes, you can feel "conflicted" about the best way to solve a problem.  And weirdly, usually _not thinking about it_ helps.  Sleeping too.  (Rich Hickey calls this "[Hammock Driven Development](https://www.youtube.com/watch?v=f84n5oFoZBc)").  This is probably because, unbeknownst to you, your subconscious is furiously communicating internally, trying to resolve these conflicts itself, and will let you know when it's come to a resolution.  
 
-[Vroom and Yetton]() introduced a model of group decision making which looks something like this:
+[Vroom and Yetton](https://en.wikipedia.org/wiki/Vroom–Yetton_decision_model) introduced a model of group decision making which looks something like this:
 
 ![Vroom And Yetton Decision Making Styles.  "d" indicates authority in making a decision.  Thin lines with arrow-heads show information flow, whilst thick lines show _opinions_ being passed around.](images/kite9/vroom-yetton.png)
 
 In their original formulation, Vroom and Yetton introduced five different ways of making decisions as a team, which are summarised in the table below (**AI, AII, CI, CII, GII**).  To this, I have added a sixth (**UI**), which is the _uncoordinated_ option, where everyone competes.  
 
-|Type           |People Involved In Decision|Opinions         |Channels Of Communication          |Coordination Risk                |Description
-|---------------|---------------------------|-----------------|-----------------------------------|---------------------------------|----------
-|**UI**         |1                          |1                |0                                  |Competition                      |_No Coordination_
-|**AI**         |1                          |1                |s (One message to each subordinate)|Maximum [Coordination Risk][co1] |Autocratic, top-down
-|**AII**        |1                          |1                |s + i (Messages from informants)   |                                 |Autocratic, with information flow up.
-|**CI**         |1                          |1 + r            |s + i + r (Opinions)               |                                 |Individual Consultations
-|**CII**        |1                          |1 + r            |s + i + r<sup>2</sup>              |                                 |Group Consultation
-|**GII**        |r                          |1 + r            |s + i + r<sup>2</sup>              |Maximum [Communication Risk][co2]|Group Consultation with voting
+|Type           |People Involved In Decision|Opinions         |Channels Of Communication                             |Coordination Risk                |Description
+|---------------|---------------------------|-----------------|-----------------------------------                   |---------------------------------|----------
+|**UI**         |1                          |1                |0                                                     |Competition                      |_No Coordination_
+|**AI**         |1                          |1                |**s** (One message to each **subordinate**)           |Maximum [Coordination Risk][co1] |Autocratic, top-down
+|**AII**        |1                          |1                |2 x **s** (Messages from/to each **subordinate**)     |                                 |Autocratic, with information flow up.
+|**CI**         |1                          |1 + s            |> 2 x **s**                                           |                                 |Individual Consultations
+|**CII**        |1                          |1 + s            |s<sup>2</sup>                                         |                                 |Group Consultation
+|**GII**        |1+s                        |1 + s            |s<sup>2</sup>                                         |Maximum [Communication Risk][co2], [Schedule Risk][co3]|Group Consultation with voting
 
 [co1]: (Coordination-Risk)
 [co2]: (Communication-Risk)
+[co3]: (Schedule-Risk)
 
 At the top, you have the _least_ consultative styles, and at the bottom, the _most_.   At the top, decisions are made with just the leader's [Internal Model](Glossary#Internal-Model) but moving down, the [Internal Models](Glossary#Internal-Model) of the rest of the team are increasingly brought into play.  
 
