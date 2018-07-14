@@ -37,7 +37,10 @@ Business Processes often arise in response to an unmet need within an organisati
 
 ![Team T is created to do A for Company C](images/kite9/process-risk-2.png)
 
-2.  Either, `B` co-opts other people to help, gets given a team (`T`), or someone else forms a team `T` containing `B` to get the job done "properly".  Now `T` is responsible for doing `A`.  However, it needs to supply the company with `A` reliably and responsibly, otherwise there will be problems.  They try and please all of their clients as far as possible.  This is a good deal for their clients within `C`, but because there is a lot of variation in what the clients ask for, they end up absorbing a lot of [Complexity Risk](Complexity-Risk) and are overworked.  This is attendant [Schedule Risk](Schedule-Risk): They either need to streamline what they are doing, or get a larger budget, because all this extra [Complexity](Complexity-Risk) impacts their ability to reliably deliver `A`.  
+2.  Either, `B` co-opts other people to help, gets given a team (`T`), or someone else forms a team `T` containing `B` to get the job done "properly".  
+ - `T` is responsible for doing `A`, but it needs to supply the company with `A` reliably and responsibly, otherwise there will be trouble, so they try and please all of their clients as far as possible.  
+ - This is a good deal for their clients within `C`, but because there is a lot of variation in what the clients ask for, `T` end up absorbing a lot of [Complexity Risk](Complexity-Risk) and are overworked.  
+ - This is attendant [Schedule Risk](Schedule-Risk): They either need to streamline what they are doing, or get a larger budget, because all this extra [Complexity](Complexity-Risk) impacts their ability to reliably deliver `A`.  
 
 ![Team T protects itself from complexity with a process, P](images/kite9/process-risk-3.png)
 
