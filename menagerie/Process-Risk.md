@@ -72,11 +72,11 @@ In this example, you can see how the organisation evolves to mitigate risk aroun
 
 ### Process Accretion
 
-In each step, the actors involved have been acting in good faith:   they are working to mitigate risk in the organisation.  The **Process Risk** that accretes along the way is an _unintended consequence_:  There is no guarantee that the process that arises will be humane and intuitive.  Many organisational processes end up being baroque or Kafkaesque, forcing unintuitive contortions on their users.  Dealing with complex processes is a [Communication Risk](Communication-Risk) because you have to translate your requirements into the language of the process.
+In each step, the actors involved have been acting in good faith:   they are working to mitigate risk in the organisation.  The **Process Risk** that accretes along the way is an _unintended consequence_:  There is no guarantee that the process that arises will be humane and intuitive.  Many organisational processes end up being baroque or Kafkaesque, forcing unintuitive behaviour on their users.  This is partly because process design is _hard_, and it's difficult to anticipate all the various ways a process will be used ahead-of-time.
 
-But [Parkinson's Law] takes this one step further:  the human actors shaping the organisation will abuse their positions of power in order to further their own careers (this is [Agency Risk](Agency-Risk), which we will come to in a future section):
+But [Parkinson's Law](https://en.wikipedia.org/wiki/Parkinson%27s_law) takes this one step further:  the human actors shaping the organisation will abuse their positions of power in order to further their own careers (this is [Agency Risk](Agency-Risk), which we will come to in a future section):
 
-tbd - parkinson's law
+> "Parkinson's law is the adage that "work expands so as to fill the time available for its completion". It is sometimes applied to the growth of bureaucracy in an organization... He explains this growth by two forces: (1) 'An official wants to multiply subordinates, not rivals' and (2) 'Officials make work for each other.'" - [Parkinson's Law, _Wikipedia_](https://en.wikipedia.org/wiki/Parkinson%27s_law)
 
 ## An Example - Release Process
 
