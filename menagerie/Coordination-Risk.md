@@ -130,8 +130,6 @@ Hopefully, this model shows how _organisation_ can reduce [Coordination Risk](Co
 The key observation from looking at biology is this:  most of the cells in the human body _don't get a vote_.   Muscles in the motor system have an **AI** or **AII** relationship with the brain - they do what they are told, but there are often nerves to report pain back.   The only place where **CII** or **GII** _could_ occur is in our brains, when we try to make a decision and weigh up the pros and cons.  
 
 This means that there is a deal:  _most_ of the cells in our body accede control of their destiny to "the system".  Living within the system of the human body is a better option than going it alone.  Occasionally, due to mutation, we can end up with [Cancer](https://en.wikipedia.org/wiki/Cancer), which is where one cell genetically "forgets" its purpose in the whole system and goes back to selfish individual self-replication (**UI**).  We have [White Blood Cells](https://en.wikipedia.org/wiki/White_blood_cell) in the body to shut down this kind of behaviour and try to kill the rogue cells.  In the same way, society has a police force to stop undesireable behaviour amongst its citizens. 
-
-As we saw in [Process Risk](Process-Risk), _evolution_ is the driving force taking steps on the risk landscape tbd.
  
 ## Large Organisations
 
@@ -139,15 +137,15 @@ Working in a large organisation often feels like being a cell in a larger organi
  
 _Less_ consultative decision making styles are more appropriate then when we don't have the luxury of high-bandwidth channels for discussion, or when the number of parties rises above a room-full of people.   As you can see from the table above, for **CII** and **GII** decision-making styles, the amount of communication increases non-linearly with the number of participants, so we need something simpler.  As we saw in the [Complexity Risk](Complexity-Risk) section, hierarchies are an excellent way of economizing on number of different communication channels, and we use these frequently when there are lots of parties to coordinate.
 
-In large organisations, teams are created and leaders chosen for those teams precisely to mitigate [Communication Risk](Communication-Risk).  We're all familiar with this: control of the team is ceded to the leader, who takes on the role of 'handing down' direction from above, but also 'reporting up' issues that cannot be resolved within the team.   In Vroom and Yetton's model, this is moving from a **GII** or **CII** to an **AI** or **AII** style of leadership.  So we end up with a hierarchy of groups like this:
+![Hierarchy of Function in an Organisation](images/kite9/coordination-organisation.png)
 
-tbd diagram of this.
+In large organisations, teams are created and leaders chosen for those teams precisely to mitigate [Communication Risk](Communication-Risk).  We're all familiar with this: control of the team is ceded to the leader, who takes on the role of 'handing down' direction from above, but also 'reporting up' issues that cannot be resolved within the team.   In Vroom and Yetton's model, this is moving from a **GII** or **CII** to an **AI** or **AII** style of leadership.  So we end up with a hierarchy of groups, as shown in the diagram.
  
-## Staff Risk
+### Staff Risk
 
-Staff in a team are both **Agents** and **Resources** at the same time.  The team [depends](Dependency-Risk) on them for their resource of _labour)_, but they're also part of the decision making process of the team, because they have [agency](Agency-Risk) over their own actions.  
+Staff in a team are both **Agents** and **Resources** at the same time.  The team [depends](Dependency-Risk) on them for their resource of _labour_, but they're also part of the decision making process of the team, because they have [agency](Agency-Risk) over their own actions.  
 
-If **Coordination Risk** is about trying to mitigate differences in [Internal Models](Glossary#Internal-Model), then it's worth considering how varied people's models can be:
+Part of [Coordination Risk](Coordination-Risk) is about trying to mitigate differences in [Internal Models](Glossary#Internal-Model). So it's worth considering how varied people's models can be:
  - Different skill levels
  - Different experiences
  - Expertise in different areas
