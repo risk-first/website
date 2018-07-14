@@ -79,15 +79,12 @@ Within a team, [Coordination Risk](Coordination-Risk) is at it's core about reso
 
 Therefore, [Coordination Risk](Coordination-Risk) is worse on projects with more members, and worse in organizations with more staff.  If you are engaged in a solo project, do you suffer from [Coordination Risk](Coordination-Risk) at all?  Maybe:  sometimes, you can feel "conflicted" about the best way to solve a problem.  And weirdly, usually _not thinking about it_ helps.  Sleeping too.  (Rich Hickey calls this "[Hammock Driven Development](https://www.youtube.com/watch?v=f84n5oFoZBc)").  This is probably because, unbeknownst to you, your subconscious is furiously communicating internally, trying to resolve these conflicts itself, and will let you know when it's come to a resolution.  
 
-[Vroom and Yetton](https://en.wikipedia.org/wiki/Vroom–Yetton_decision_model) introduced a model of group decision making which looks something like this:
-
-![Vroom And Yetton Decision Making Styles.  "d" indicates authority in making a decision.  Thin lines with arrow-heads show information flow, whilst thick lines show _opinions_ being passed around.](images/kite9/vroom-yetton.png)
-
-In their original formulation, Vroom and Yetton introduced five different ways of making decisions as a team, which are summarised in the table below (**AI, AII, CI, CII, GII**).  To this, I have added a sixth (**UI**), which is the _uncoordinated_ option, where everyone competes.  In the accompanying diagram I have adopted the following convention:
+[Vroom and Yetton](https://en.wikipedia.org/wiki/Vroom–Yetton_decision_model) introduced a model of group decision making which delineated five different styles of decision making within a team. These are summarised in the table below (**AI, AII, CI, CII, GII**).  To this, I have added a sixth (**UI**), which is the _uncoordinated_ option, where everyone competes.   In the accompanying diagram I have adopted the following convention:
  - Thin lines with arrow-heads show a flow of _information_, either one-way or two-way.
  - Thick lines show a flow of _opinion_.
  - Squares with "d" are decision makers, whereas circles don't have a part in the decision.
- 
+
+![Vroom And Yetton Decision Making Styles.  "d" indicates authority in making a decision.  Thin lines with arrow-heads show information flow, whilst thick lines show _opinions_ being passed around.](images/kite9/vroom-yetton.png)
 
 |Type           |People Involved In Decision|Opinions         |Channels Of Communication                             |Coordination Risk                |Description
 |---------------|---------------------------|-----------------|-----------------------------------                   |---------------------------------|----------
