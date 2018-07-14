@@ -109,28 +109,27 @@ The trick is to be able to tell which approach is suitable at which time.   Ever
  
 Hopefully, this model shows how _organisation_ can reduce [Coordination Risk](Coordination-Risk).  But, to make this work, we need more _communication_, and this has attendant complexity and time costs.  So, we can draw this diagram of our move on the [Risk Landscape](Glossary#Risk-Landscape):
 
-![Coordination Risk traded for Complexity Risk, Schedule Risk and Communication Risk](images/kite9/coordination-1.png)   -- add specialization
+![Coordination Risk traded for Complexity Risk, Schedule Risk and Communication Risk](images/kite9/coordination-1.png)
  
 ## In Living Organisms
 
-[Vroom and Yetton's]() organisational style isn't relevant to just teams of people.  We can see it in the natural world too.  Although _the majority_ of cellular life on earth (by weight) is [single celled organisms](), the existence of _humans_ (to pick a single example) demonstrates that sometimes it's better to try to mitigate [Coordination Risk](Coordination-Risk) and work as a team, accepting the [Complexity Risk](Complexity-Risk) and [Communication Risk](Communication-Risk) this entails.  As soon as cells start working together, they either need to pass _resources_ between them, or _control_ and _feedback_.  In the human body, we have various [systems](https://en.wikipedia.org/wiki/List_of_systems_of_the_human_body):
+[Vroom and Yetton's]() organisational style isn't relevant to just teams of people.  We can see it in the natural world too.  Although _the majority_ of cellular life on earth (by weight) is [single celled organisms](http://www.stephenjaygould.org/library/gould_bacteria.html), the existence of _humans_ (to pick a single example) demonstrates that sometimes it's better to try to mitigate [Coordination Risk](Coordination-Risk) and work as a team, accepting the [Complexity Risk](Complexity-Risk) and [Communication Risk](Communication-Risk) this entails.  As soon as cells start working together, they either need to pass _resources_ between them, or _control_ and _feedback_.  In the human body, we have various [systems](https://en.wikipedia.org/wiki/List_of_systems_of_the_human_body):
 
- - The [Respiratory System]() which is responsible for ensuring that [Red Blood Cells]() are replenished with Oxygen, as well as disposing of Carbon Dioxide.  
- - The [Digestive System]() which is responsible for extracting nutrition from food and putting them in our [Blood Plasma]().
- - The [Circulatory System]() which is responsible for moving blood cells to all the rest of the body.
- - The [Nervous System]() which is responsible for collecting information from all the parts of the body, dealing with it in the [Brain]() and issuing commands.
- - The [Motor System]() which contains muscles and bones, and allows us to move about.
+ - The [Respiratory System](https://en.wikipedia.org/wiki/Respiratory_system) which is responsible for ensuring that [Red Blood Cells](https://en.wikipedia.org/wiki/Red_blood_cell) are replenished with Oxygen, as well as disposing of Carbon Dioxide.  
+ - The [Digestive System](https://en.wikipedia.org/wiki/Human_digestive_system) which is responsible for extracting nutrition from food and putting them in our [Blood Plasma](https://en.wikipedia.org/wiki/Blood_plasma).
+ - The [Circulatory System](https://en.wikipedia.org/wiki/Circulatory_system) which is responsible for moving blood cells to all the rest of the body.
+ - The [Nervous System](https://en.wikipedia.org/wiki/Nervous_system) which is responsible for collecting information from all the parts of the body, dealing with it in the [Brain](https://en.wikipedia.org/wiki/Brain) and issuing commands.
+ - The [Motor System](https://en.wikipedia.org/wiki/Motor_system) which contains muscles and bones, and allows us to move about.
 
-
-... and many others.  Each of these systems contains organs, which contain tissues, which contain cells of different types.  (Even cells are complex systems containing multiple different, communicating sub-systems.)  There is huge [Complexity Risk](Complexity-Risk) here:  the entire organism fails if one of these systems fail (they are [Single Points Of Failure](), although we can get by despite the failure of one lung or one leg say).  
+... and many others.  Each of these systems contains organs, which contain tissues, which contain cells of different types.  (Even cells are complex systems containing multiple different, communicating sub-systems.)  There is huge [Complexity Risk](Complexity-Risk) here:  the entire organism fails if one of these systems fail (they are [Single Points Of Failure](https://en.wikipedia.org/wiki/Single_point_of_failure), although we can get by despite the failure of one lung or one leg say).  
 
 ![Hierarchy of Function in the Human Body](images/kite9/coordination-organism.png)
 
-[Some argue]() that the human nervous system is the most complex known artifact in the universe: there is huge attendant [Communication Risk](Communication-Risk) to running the human body.  But, given the success of humanity as a species, you must conclude that these steps on the evolutionary [Risk Landscape](Glossary#Risk-Landscape) have benefitted us in our ecological niche.
+[Some argue](https://www.quora.com/What-is-the-most-complex-object-in-the-universe) that the human nervous system is the most complex known artifact in the universe: there is huge attendant [Communication Risk](Communication-Risk) to running the human body.  But, given the success of humanity as a species, you must conclude that these steps on the evolutionary [Risk Landscape](Glossary#Risk-Landscape) have benefitted us in our ecological niche.
 
 The key observation from looking at biology is this:  most of the cells in the human body _don't get a vote_.   Muscles in the motor system have an **AI** or **AII** relationship with the brain - they do what they are told, but there are often nerves to report pain back.   The only place where **CII** or **GII** _could_ occur is in our brains, when we try to make a decision and weigh up the pros and cons.  
 
-This means that there is a deal:  _most_ of the cells in our body acceed control of their destiny to "the system".  Living within the system of the human body is a better option than going it alone.  Occasionally, due to mutation, we can end up with [Cancer](), which is where one cell genetically "forgets" its purpose in the whole system and goes back to selfish individual self-replication (**UI**).  We have [White Blood Cells]() in the body to shut down this kind of behaviour and try to kill the rogue cells.  In the same way, society has a police force to stop undesireable behaviour amongst its citizens. 
+This means that there is a deal:  _most_ of the cells in our body accede control of their destiny to "the system".  Living within the system of the human body is a better option than going it alone.  Occasionally, due to mutation, we can end up with [Cancer](https://en.wikipedia.org/wiki/Cancer), which is where one cell genetically "forgets" its purpose in the whole system and goes back to selfish individual self-replication (**UI**).  We have [White Blood Cells](https://en.wikipedia.org/wiki/White_blood_cell) in the body to shut down this kind of behaviour and try to kill the rogue cells.  In the same way, society has a police force to stop undesireable behaviour amongst its citizens. 
 
 As we saw in [Process Risk](Process-Risk), _evolution_ is the driving force taking steps on the risk landscape tbd.
  
