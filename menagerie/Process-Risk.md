@@ -14,10 +14,10 @@ Until we get there, let's look at some examples of how process can mitigate othe
 
  - [Coordination Risk](Coordination-Risk):   You can often use process to help people coordinate.  For example, a [Production Line](https://en.wikipedia.org/wiki/Production_line) is a process where work being done by one person is pushed to the next person when it's done.  A meeting booking process ensures that people will all attend a meeting together at the same place and time, and that a room is available for it. 
  - [Dependency Risk](Dependency-Risk): You can use processes to make dependencies explicit and mitigate dependency risk.  For example, a process for hiring a car will make sure there is a car available at the time you need it.  Alternatively, if we're processing a loan application, we might need evidence of income or bank statements.  We can push this [Dependency Risk](Dependency-Risk) onto the person asking for the loan, by making it part of the process and not accepting the application until this has been provided.
- - [Complexity Risk](Complexity-Risk): Working _within a process_ can reduce the amount of [Complexity](Complexity-Risk) you have to deal with.  We accept that processes are going to slow us down, but we appreciate the reduction in risk this brings.  (They allow us to trade [Complexity](Complexity-Risk) for [Schedule risk](Schedule-Risk)).  For example, setting up a server might be complex, but filling in a form to do the job might simplify things.  Clearly, the complexity hasn't gone away, but it's hidden within the process.  Process therefore can provide [Abstraction](Glossary#Abstraction).
+ - [Complexity Risk](Complexity-Risk): Working _within a process_ can reduce the amount of [Complexity](Complexity-Risk) you have to deal with.  We accept that processes are going to slow us down, but we appreciate the reduction in risk this brings.  (They allow us to trade [Complexity](Complexity-Risk) for [Schedule risk](Schedule-Risk)).  For example, setting up a server might be complex, but filling in a form to do the job might simplify things.  Clearly, the complexity hasn't gone away, but it's hidden within the process.  Process therefore can provide [Abstraction](Glossary#Abstraction).    mcdonalds.  tbd
  - [Operational Risk](Operational-Risk):  [Operational Risk](Operational-Risk) encompasses the risk of people _not doing their job properly_.  But, by having a process, (and asking, did this person follow the process?) you can draw a distinction between a process failure and a personnel failure.  For example, making a loan to a money launderer _could_ be a failure of the loan agent.   But, if they followed the _process_, it's a failure of the [Process](Process-Risk) itself. 
  
-These are all examples of [Risk Mitigation](Glossary#Mitigated-risk) for the _owners_ of the process.  However, in this section,  we'll look mainly at how you can deal with [Process Risk](Process-Risk) where you are a _client_ of _someone else's process_.
+These are all examples of [Risk Mitigation](Glossary#Mitigated-risk) for the _owners_ of the process.  However, in this section,  we'll look mainly at how you can deal with [Process Risk](Process-Risk) where you are a _client_ of _someone else's process_.  tbd
 
 ## Evolution Of Business Process
 
@@ -25,15 +25,20 @@ Before we get to examining different [Process Risks](Process-Risk), let's consid
 
 > "**Business Process** or **Business Method** is a collection of related, structured activities or tasks that in a specific sequence produces a service or product (serves a particular business goal) for a particular customer or customers." - [Business Process, _Wikipedia_](https://en.wikipedia.org/wiki/Business_process)
 
-Business Processes often arise in response to an unmet need within an organisation.  And, as we said above, they are usually there to mitigate other risks.  Let's look at an example lifecycle of how that can happen:
+Business Processes often arise in response to an unmet need within an organisation.  And, as we said above, they are usually there to mitigate other risks.  Let's look at an example lifecycle of how that can happen.
+
+![Clients `C` need `A` to do their jobs](images/kite9/process-risk-0.png)
+
+0.  Let's say, there exists a group of people inside a company `C`, which need a certain something `A` in order to get their jobs done.  It might be a producing a resource, or dealing with some source of complexity, or whatever.
+
 
 ![Person B doing A for company C](images/kite9/process-risk-1.png)
 
-1.  Person `B` in a company starts doing `A`.  `A` is really useful!   `B` gets busy.  No one cares.  But then, `B` goes on holiday.  `A` doesn't get done, and people now care:  the [Dependency Risk](Dependency-Risk) is suddenly apparent. 
+1.  Person `B` in a company starts producing `A`,  `A` is really useful!   `B` gets busy.  No one cares.  But then, `B` goes on holiday.  `A` doesn't get done, and people now care:  the [Dependency Risk](Dependency-Risk) is suddenly apparent. 
 
 ![Team T is created to do A for Company C](images/kite9/process-risk-2.png)
 
-2.  Either, `B` co-opts other people to help, gets given a team (`T`), or someone else forms a team `T` containing B to get the job done "properly".  `T` is responsible for doing `A` (it might be a resource, some source of complexity, whatever).  However, it needs to supply the company with `A` reliably and responsibly, otherwise there will be problems.  They try and please all of their clients as far as possible.  This is a good deal for their clients, but they end up absorbing a lot of [Complexity Risk](Complexity-Risk) which impacts their ability to reliably deliver `A`. 
+2.  Either, `B` co-opts other people to help, gets given a team (`T`), or someone else forms a team `T` containing `B` to get the job done "properly".  Now `T` is responsible for doing `A`.  However, it needs to supply the company with `A` reliably and responsibly, otherwise there will be problems.  They try and please all of their clients as far as possible.  This is a good deal for their clients within `C`, but they end up absorbing a lot of [Complexity Risk](Complexity-Risk) which impacts their ability to reliably deliver `A`, and sometimes their clients aren't satisfied. 
 
 ![Team T protects itself from complexity with a process, P](images/kite9/process-risk-3.png)
 
@@ -57,6 +62,7 @@ In each step, you can see how the organisation evolves to mitigate risk around t
 
 - [MInzberg, strategy safari]
 
+### Process Accretion
 
 In each step, the actors involved have been acting in good faith:   they are working to mitigate risk in the organisation.  The **Process Risk** that accretes along the way is an _unintended consequence_:  There is no guarantee that the process that arises will be humane and intuitive.  Many organisational processes end up being baroque or Kafkaesque, forcing unintuitive contortions on their users.  Dealing with complex processes is a [Communication Risk](Communication-Risk) because you have to translate your requirements into the language of the process.
 

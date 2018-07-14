@@ -38,3 +38,12 @@ Lastly, although this is a [Wiki](https://en.wikipedia.org/wiki/Wiki), it's not 
 
 if waterfall applies the principles from building, and lean applies the principles from manufacture, risk First applies the 
 principles from finance.
+
+
+
+- I have this pattern
+
+- looking at projects, working out how they fail.  Understanding how failure happens, then avoiding it.  "It's all about risk" - Ward C.
+
+- it's all on the web.
+- it's part 1 of 2.

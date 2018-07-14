@@ -236,6 +236,10 @@ Within software, there are also competing, incompatible protocols for the same t
 
 Even when systems are talking the same protocol, there can be problems.  When we have multiple, different systems owned by different parties, on their own upgrade cycles, we have **Protocol Versioning Risk**: the risk that either client or server could start talking in a version of the protocol that the other side hasn't learnt yet.  There are various mitigating strategies for this.  We'll look at two now: **Backwards Compatibility** and **Forwards Compatibility**.
 
+### Protocol Complexity
+
+tbd.
+
 #### Backward Compatibility
 
 Backwards Compatibility mitigates **Protocol Versioning Risk**.  Quite simply, this means, supporting the old format until it falls out of use.  If a server is pushing for a change in protocol it either must ensure that it is Backwards Compatible with the clients it is communicating with, or make sure they are upgraded concurrently.  When building [web services](), for example, it's common practice to version all apis so that you can manage the migration.  Something like this:
