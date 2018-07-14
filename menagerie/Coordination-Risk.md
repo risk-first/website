@@ -91,8 +91,8 @@ In their original formulation, Vroom and Yetton introduced five different ways o
 |**AI**         |1                          |1                |**s** (One message to each **subordinate**)           |Maximum [Coordination Risk][co1] |Autocratic, top-down
 |**AII**        |1                          |1                |2 x **s** (Messages from/to each **subordinate**)     |                                 |Autocratic, with information flow up.
 |**CI**         |1                          |1 + **s**        |> 2 x **s**                                           |                                 |Individual Consultations
-|**CII**        |1                          |1 + **s**        |**s**<sup>2</sup>                                     |                                 |Group Consultation
-|**GII**        |1 + **s**                  |1 + **s**        |**s**<sup>2</sup>                                     |Maximum [Communication Risk][co2], [Schedule Risk][co3]|Group Consultation with voting
+|**CII**        |1                          |1 + **s**        |> **s**<sup>2</sup>                                   |                                 |Group Consultation
+|**GII**        |1 + **s**                  |1 + **s**        |> **s**<sup>2</sup>                                   |Maximum [Communication Risk][co2], [Schedule Risk][co3]|Group Consultation with voting
 
 [co1]: (Coordination-Risk)
 [co2]: (Communication-Risk)
