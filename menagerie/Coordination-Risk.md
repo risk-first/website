@@ -25,6 +25,8 @@ But for now, let's crack on and examine where [Coordination Risk](Coordination-R
 
 Earlier, in [Dependency Risk](Dependency-Risk), we looked at various resources (time, money, people, events etc) and showed how we could [Depend On Them](Dependency-Risk), taking on risk.  Here, however, we're looking at the situation where there is competition for those dependencies:   other parties want to use them in a different way.  
 
+### Competition
+
 The basic problem of [Coordination Risk](Coordination-Risk), then, is _competition_.  Sometimes, competition is desireable (such as in sports and in markets), but sometimes competition is a waste and cooperation would be more efficient.   Without coordination, we would deliberately or accidentally compete for the same [Dependencies](Dependency-Risk), which is wasteful.  Why is this wasteful?  One argument could come from [Diminishing Returns](https://en.wikipedia.org/wiki/Diminishing_returns), which says that the earlier units of a resource (say, chocolate bars) give you more benefit than later ones.  
 
 We can see this in the graph below.  Let's say A and B compete over a resource, of which there are 5 units available.  For every extra A takes, B loses one.  The X axis shows A's consumption of the resource, so the biggest benefit to A is in the consumption of the first unit. 
@@ -35,10 +37,10 @@ As you can see, by _sharing_, it's possible that the _total benefit_ is greater 
 
 Just two things are needed for competition to occur:
 
- - Individual Agents, trying to achieve [Goals](Glossary#Goal-In-Mind)
+ - Individual Agents, trying to achieve [Goals](Glossary#Goal-In-Mind).
  - Scarce Resources, which the Agents want to use as [Dependencies](Dependency-Risk).
  
-![Coordination Risk 2](images/kite9/coordination-2.png)
+![A model of competition:  scarce resources, and individual agents competing for them.](images/kite9/coordination-2.png)
 
 The only way that the Agents can move away from competition towards coordination is via [Communication](Communication-Risk), and this is where their problems begin.  
 
