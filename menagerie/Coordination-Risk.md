@@ -2,7 +2,7 @@
 
 [Coordination Risk](Coordination-Risk) is the risk that, a group of people (or processes), maybe with a similar [Goal In Mind](Goal-In-Mind) they can fail to coordinate on a way to meet this goal and end up making things worse.  [Coordination Risk](Coordination-Risk) is embodied in the phrase "Too Many Cooks Spoil The Broth":  more people, opinions or agents often make results worse.
 
-As in [Agency Risk](Agency-Risk), we are going to use the term _agent_, which refers to anything with [agency](https://github.com/risk-first/website/wiki/Agency-Risk#software-processes-and-teams) in a system to decide it's own fate.  That is, an [Agent](Agency-Risk) has an [Internal Model](Glossary#Internal-Model),  and can [take actions](Glossary#take-action) based on it.  Here, we're going to work on the assumption that the Agents _are_ working towards a common [Goal](Gaol-In-Mind), but in reality it's not always the case, as we saw in the section on [Agency Risk](Agency-Risk).
+As in [Agency Risk](Agency-Risk), we are going to use the term _agent_, which refers to anything with [agency](https://github.com/risk-first/website/wiki/Agency-Risk#software-processes-and-teams) in a system to decide it's own fate.  That is, an [Agent](Agency-Risk) has an [Internal Model](Glossary#Internal-Model),  and can [take actions](Glossary#take-action) based on it.  Here, we're going to work on the assumption that the Agents _are_ working towards a common [Goal](Gaol-In-Mind), even though in reality it's not always the case, as we saw in the section on [Agency Risk](Agency-Risk).
 
  In this section, we'll first build up [A Model Of Coordination Risk](#a-model-of-coordination-risk) and what exactly coordination means and why we do it.  Then, we'll look at some classic [Problems of Coordination](#problems-of-coordination).  Then, we're going to consider Agents at several different levels (because of [Scale Invariance](Risk-Theory#scale-invariance)) .  We'll look at:
  - [Team Decision Making](#team-decision-making)
@@ -20,7 +20,7 @@ But for now, let's crack on and examine where [Coordination Risk](Coordination-R
 
 ![Coordination Risk](images/generated/coordination-risk.png)
 
-Earlier, in [Dependency Risk](Dependency-Risk), we looked at various resources (time, money, people, events etc) and showed how we could [Depend On Them](Dependency-Risk), taking on risk.  Here, however, we're looking at the situation where there is competition for those dependencies:   other parties want to use them in a different way.  
+Earlier, in [Dependency Risk](Dependency-Risk), we looked at various resources (time, money, people, events etc) and showed how we could [Depend On Them](Dependency-Risk), taking on risk.  Here, however, we're looking at the situation where there is competition for those dependencies ([Scarcity Risk](Dependency-Risk#Scarcity-Risk):   other parties want to use them in a different way.  
 
 ### Competition
 
