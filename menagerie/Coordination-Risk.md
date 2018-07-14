@@ -4,7 +4,7 @@
 
 [Coordination Risk](Coordination-Risk) is embodied in the phrase "Too Many Cooks Spoil The Broth":  more people, opinions or agents often make results worse.
 
-As in [Agency Risk](Agency-Risk), we are going to use the term , which refers to anything with [agency](https://github.com/risk-first/website/wiki/Agency-Risk#software-processes-and-teams) in a system to decide it's own fate.  That is, an [Agent](Agency-Risk) has an [Internal Model](Glossary#Internal-Model),  and can [take actions](Glossary#take-action) based on it.  In this section, we're going to consider Agents at several different levels (because of [Scale Invariance](Risk-Theory#scale-invariance)) .  We'll look at:
+As in [Agency Risk](Agency-Risk), we are going to use the term _agent_, which refers to anything with [agency](https://github.com/risk-first/website/wiki/Agency-Risk#software-processes-and-teams) in a system to decide it's own fate.  That is, an [Agent](Agency-Risk) has an [Internal Model](Glossary#Internal-Model),  and can [take actions](Glossary#take-action) based on it.  In this section, we're going to consider Agents at several different levels (because of [Scale Invariance](Risk-Theory#scale-invariance)) .  We'll look at:
  - People
  - Teams
  - Organisations
@@ -18,28 +18,6 @@ In this section, we're going to work on the assumption that the Agents _are_ wor
 Following this, in the section on [Map And Territory Risk](Map-And-Territory-Risk), we'll look at how, even when [Coordination](Coordination-Risk) issues are solved, we can end up with less-than-optimal results.  
 
 But for now, let's crack on and examine where [Coordination Risk](Coordination-Risk) comes from.
-
-## Problems Of Coordination
-
-Here are some classic problems of coordination:
-
-1. **Merging Data**.  If you are familiar with the source code control system, [git](), you will know that this is a _distributed_ version control system.  That means that two or more people can propose changes to the same files without knowing about each other.  This means that at some later time, [git]() then has to merge (or reconcile) these changes together.  Git is very good at doing this automatically, but sometimes, different people can independently change the same lines of code and these will have to be merged manually.  In this case, a human arbitrator "resolves" the difference, either by combining the two changes or picking a winner.
-
-2. **Consensus**.  Making group decisions (as in elections) is often decided by votes.  But having a vote is a coordination issue:  
-  - How long do you provide for the vote?  
-  - What do you do about absentees?  
-  - What if people change their minds in the light of new information?
-  - How do you ensure everyone has enough information to make a good decision?
-  
-3. **Factions**.  Sometimes, it's hard to coordinate large groups at the same time, and "factions" can occur.  That the world isn't a single big country is probably partly a testament to this.  Organizing on huge scales becomes self-defeating, and so instead at some level we end up with competition instead of coordination.   We can also see this in distributed systems, with the ["split brain"](https://en.wikipedia.org/wiki/Split-brain_(computing)) problem.   This is where a network of processes becomes disconnected (usually due to a network failure between data centers), and you end up with two, smaller networks.  We'll address in more depth later.
-
-4. [Resource Allocation](https://en.wikipedia.org/wiki/Race_condition):  Ensuring that the right people are doing the right work, or the right resources are given to the right people is a coordination issue.  On a grand scale, we have [Logistics](https://en.wikipedia.org/wiki/Logistics), and [Economic Systems](https://en.wikipedia.org/wiki/Economic_system).  On a small scale, the office's _room booking system_ solves the coordination issue of who gets a meeting room using a first-come-first-served booking algorithm.
-
-5. [Deadlock](https://en.wikipedia.org/wiki/Deadlock):  Deadlock refers to a situation where, in an environment where multiple parallel processes are running, the processing stops and no-one can make progress because the resources each process needs are being reserved by another process.  This is a specific issue in **Resource Allocation**, but it's one we're familiar with in the computer science industry.  Compare with [Gridlock](https://en.wikipedia.org/wiki/Gridlock), where traffic can't move because other traffic is occupying the space it wants to move to already. 
-
-6.  [Race Conditions](https://en.wikipedia.org/wiki/Race_condition):  A race condition is where we can't be sure of the result of a calculation, because it is dependent on the ordering of events within a system.  For example, two separate threads writing the same memory at the same time (one losing the work of the other) is a race.  
-
-7.  **Contention**: Where there is [Scarcity Risk](Dependency-Risk#Scarcity-Risk) for a [Dependency](Dependency-Risk), we might want to make sure that everyone gets fair use of it, by taking turns, booking, queueing and so on.  As we saw in [Scarcity Risk](Dependency-Risk#scarcity-risk), sometimes, this is handled for us by the [Dependency](Dependency-Risk) itself.  However if it isn't, it's the _users_ of the dependency who'll need to coordinate to use the resource fairly.
 
 ## A Model Of Coordination Risk
 
@@ -67,6 +45,30 @@ The only way that the Agents can move away from competition towards coordination
 You might think, therefore, that this is just another type of [Communication Risk](Communication-Risk) problem, and that's often a part of it, but even with synchronized [Internal Models](Glossary#Internal-Model), coordination risk can occur.  Imagine the example of people all trying to madly leave a burning building.  They all have the same information (the building is on fire).  If they coordinate, and leave in an orderly fashion, they might all get out.  If they don't, and there's a scramble for the door, more people might die.
 
 But commonly, [Coordination Risk](Coordination-Risk) occurs where people have different ideas about how to achieve a [goal](Glossary#Goal-In-Mind), and they have different ideas because they have different evaluations of the [Attendant Risk](Glossary#attendant-risk).  As we saw in the section on [Communication Risk](Communication-Risk), we can only hope to synchronize [Internal Models](Glossary#Internal-Model) if there are high-bandwidth [Channels]() available for communication. 
+
+
+## Problems Of Coordination
+
+Here are some classic problems of coordination:
+
+1. **Merging Data**.  If you are familiar with the source code control system, [git](), you will know that this is a _distributed_ version control system.  That means that two or more people can propose changes to the same files without knowing about each other.  This means that at some later time, [git]() then has to merge (or reconcile) these changes together.  Git is very good at doing this automatically, but sometimes, different people can independently change the same lines of code and these will have to be merged manually.  In this case, a human arbitrator "resolves" the difference, either by combining the two changes or picking a winner.
+
+2. **Consensus**.  Making group decisions (as in elections) is often decided by votes.  But having a vote is a coordination issue:  
+  - How long do you provide for the vote?  
+  - What do you do about absentees?  
+  - What if people change their minds in the light of new information?
+  - How do you ensure everyone has enough information to make a good decision?
+  
+3. **Factions**.  Sometimes, it's hard to coordinate large groups at the same time, and "factions" can occur.  That the world isn't a single big country is probably partly a testament to this.  Organizing on huge scales becomes self-defeating, and so instead at some level we end up with competition instead of coordination.   We can also see this in distributed systems, with the ["split brain"](https://en.wikipedia.org/wiki/Split-brain_(computing)) problem.   This is where a network of processes becomes disconnected (usually due to a network failure between data centers), and you end up with two, smaller networks.  We'll address in more depth later.
+
+4. [Resource Allocation](https://en.wikipedia.org/wiki/Race_condition):  Ensuring that the right people are doing the right work, or the right resources are given to the right people is a coordination issue.  On a grand scale, we have [Logistics](https://en.wikipedia.org/wiki/Logistics), and [Economic Systems](https://en.wikipedia.org/wiki/Economic_system).  On a small scale, the office's _room booking system_ solves the coordination issue of who gets a meeting room using a first-come-first-served booking algorithm.
+
+5. [Deadlock](https://en.wikipedia.org/wiki/Deadlock):  Deadlock refers to a situation where, in an environment where multiple parallel processes are running, the processing stops and no-one can make progress because the resources each process needs are being reserved by another process.  This is a specific issue in **Resource Allocation**, but it's one we're familiar with in the computer science industry.  Compare with [Gridlock](https://en.wikipedia.org/wiki/Gridlock), where traffic can't move because other traffic is occupying the space it wants to move to already. 
+
+6.  [Race Conditions](https://en.wikipedia.org/wiki/Race_condition):  A race condition is where we can't be sure of the result of a calculation, because it is dependent on the ordering of events within a system.  For example, two separate threads writing the same memory at the same time (one losing the work of the other) is a race.  
+
+7.  **Contention**: Where there is [Scarcity Risk](Dependency-Risk#Scarcity-Risk) for a [Dependency](Dependency-Risk), we might want to make sure that everyone gets fair use of it, by taking turns, booking, queueing and so on.  As we saw in [Scarcity Risk](Dependency-Risk#scarcity-risk), sometimes, this is handled for us by the [Dependency](Dependency-Risk) itself.  However if it isn't, it's the _users_ of the dependency who'll need to coordinate to use the resource fairly.
+
 
 ## Team Decision Making
 
