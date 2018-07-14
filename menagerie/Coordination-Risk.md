@@ -4,17 +4,15 @@
 
 [Coordination Risk](Coordination-Risk) is embodied in the phrase "Too Many Cooks Spoil The Broth":  more people, opinions or agents often make results worse.
 
-As in [Agency Risk](Agency-Risk), we are going to use the term _agent_, which refers to anything with [agency](https://github.com/risk-first/website/wiki/Agency-Risk#software-processes-and-teams) in a system to decide it's own fate.  That is, an [Agent](Agency-Risk) has an [Internal Model](Glossary#Internal-Model),  and can [take actions](Glossary#take-action) based on it. 
+As in [Agency Risk](Agency-Risk), we are going to use the term _agent_, which refers to anything with [agency](https://github.com/risk-first/website/wiki/Agency-Risk#software-processes-and-teams) in a system to decide it's own fate.  That is, an [Agent](Agency-Risk) has an [Internal Model](Glossary#Internal-Model),  and can [take actions](Glossary#take-action) based on it.  Here, we're going to work on the assumption that the Agents _are_ working towards a common [Goal](Gaol-In-Mind), but in reality it's not always the case, as we saw in the section on [Agency Risk](Agency-Risk).
 
- In this section, we're going to consider Agents at several different levels (because of [Scale Invariance](Risk-Theory#scale-invariance)) .  We'll look at:
- - Teams
- - Organisms
- - Organisations and Staff
- - and Software Processes
+ In this section, we'll first build up [A Model Of Coordination Risk](#a-model-of-coordination-risk) and what exactly coordination means and why we do it.  Then, we'll look at some classic [Problems of Coordination](#problems-of-coordination).  Then, we're going to consider Agents at several different levels (because of [Scale Invariance](Risk-Theory#scale-invariance)) .  We'll look at:
+ - [Team Decision Making](#team-decision-making)
+ - [Living Organisms](#in-living-organisms)
+ - [Larger Organisations, and Staff In Them](#large-organisations)
+ - and [Software Processes](#in-software-processes)
  
 ... and we'll consider how [Coordination Risk](Coordination-Risk) is a problem at each scale.
-
-In this section, we're going to work on the assumption that the Agents _are_ working towards a common [Goal](Gaol-In-Mind), but in reality it's not always the case, as we saw in the section on [Agency Risk](Agency-Risk).
 
 Following this, in the section on [Map And Territory Risk](Map-And-Territory-Risk), we'll look at how, even when [Coordination](Coordination-Risk) issues are solved, we can end up with less-than-optimal results.  
 
