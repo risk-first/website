@@ -83,35 +83,25 @@ But [Parkinson's Law](https://en.wikipedia.org/wiki/Parkinson%27s_law) takes thi
 For many years I have worked in the Finance Industry, and it's given me time to observe how, across an entire industry, process can evolve, both in response to regulatory pressure but also because of organisational maturity, and mitigating risks:
 
 1. Initially, I could release software by logging onto the production accounts with a password that everyone knew, and deploy software or change data in the database.  
-2. The first issue with this is bad actors.  How could you know that the numbers weren't being altered in the databases? Production auditing came in so that at least you could tell _who was changing what_, in order to point the blame later.
+2. The first issue with this is [bad actors](Agency-Risk):  How could you know that the numbers weren't being altered in the databases? Production auditing came in so that at least you could tell _who was changing what_, in order to point the blame later.
 3. But, there was still plenty of scope for deliberate or accidental damage.  I personally managed to wipe production data on one occasion by mistaking it for a development environment. Eventually, passwords were taken out of the hands of developers and you needed approval to "break glass" to get onto production.  
 4. Change Requests were introduced.  This is another approval process which asks you to describe what you want to change in production, and why you want to change it.  In most places, this was quite an onerous process, so the unintended consequence was that release cadence was reduced.
 5. The change request software is generally awful, making the job of raising change requests tedious and time-consuming.  Therefore, developers would _automate_ the processes for release, sometimes including the process to write the change request.  This allowed them to improve release cadence, at the expense of owning more code.
 6. Auditors didn't like the fact that this automation existed, because effectively, that meant that developers could get access to production with the press of a button, effectively taking you back to step 1.   So auditing of Change Requests had to happen.
 
-... and so on.  tbd.  
+... and so on.  
 
 ## Process Risks
 
 **Process Risk**, then, is a type of [Dependency Risk](Dependency-Risk), where you are relying on a process.  In a way, it's no different from any other kind of [Dependency Risk](Dependency-Risk).   But [Process Risk](Process-Risk) manifests itself in fairly predictable ways:
 
- - [Reliability Risk](Dependency-Risk): If _people_ are part of the process, there's the chance that they forget to follow the process itself, and miss steps or forget your request completely.  The reliability is related to the amount of [Complexity Risk]() the process is absorbing.
- - [Visibility Risk]: Usually, processes (like other dependencies) trade [Complexity Risk]() for visibility:  it's often not possible to see how far along a process is to completion.  Sometimes, you can do this to an extent.  For example, when I send a package for delivery, I can see roughly how far it's got on the tracking website.  But, this is still less-than-complete information, and is a representation of reality.    
- - Process Fit Risk/ [Dead-End Risk](Dependency-Risk): You have to be careful to match the process to the outcome you want.  Much like choosing a [Software Dependency](Software-Dependency-Risk), initiating a process has no guarantee that your efforts won't be wasted and you'll be back where you started from.  The chances of this happening increase as you get further from the standard use-case for the process, and the sunk cost increases with the length of time the process takes to report back.
+ - [Reliability Risk](Dependency-Risk#reliability-risk): If _people_ are part of the process, there's the chance that they forget to follow the process itself, and miss steps or forget your request completely.  The reliability is related to the amount of [Complexity Risk]() the process is absorbing.
+ - [Invisibility Risk](Communication-Risk#invisibility-risk): Usually, processes (like other dependencies) trade [Complexity Risk]() for visibility:  it's often not possible to see how far along a process is to completion.  Sometimes, you can do this to an extent.  For example, when I send a package for delivery, I can see roughly how far it's got on the tracking website.  But, this is still less-than-complete information, and is a representation of reality.    
+ - [Fit Risk](Feature-Risk#feature-fit-risk): You have to be careful to match the process to the outcome you want.  Sometimes, it's easy to waste time on the wrong process.
+ - [Dead-End Risk](Complexity-Risk#dead-end-risk): Even if you have the right process, initiating a process has no guarantee that your efforts won't be wasted and you'll be back where you started from.  The chances of this happening increase as you get further from the standard use-case for the process, and the sunk cost increases with the length of time the process takes to report back.
  - [Agency Risk](Agency-Risk): Due to Parkinson's Law, above.
+ - [Operational Risk](Operational-Risk): Where processes fail, this is often called [Operational Risk](Operational-Risk), which we'll address further in it's own section.
 	
-## Operational Risk
-
-When processes fail, this is called *Operational Risk*:
-
-tbd - Wikipedia definition
-
-This is a very specific name for [Reliability Risk]() with regard to processes.  In the UK each year, X number of people are killed in car accidents.  If you regard driving a car from A to B as a process, then you could say that car accidents are [Operational Risk].  Why do we tolerate such costly operational risk in the UK.  Could it be reduced?  Well, yes.  There are lots of ways.  One way is that we could just reduce the speed limit.  
- 
-It is interesting that we _don't_ do that:  although we know the driving process fails, and fails in a way that is costly to human lives, as a society we value the freedom, the economic efficiency and time savings that come from not mitigating this operational risk.  Changing the speed limit would have it's own risks, of course: there would be a complicated transition to manage.   However, if ten times as many people were killed in car accidents, and it was shown that reducing the speed limit would help, maybe it would be done.  The [Operational Risk]() would outweigh the [Schedule Risk](Schedule-Risk).
-
-The point of this is that we _accept_ [Operational Risk]() as we go.  However, if opportunities rise to mitigate it, which don't leave us with a net risk increase elsewhere, we'll make those improvements.      
-
 ## Counterparty Risk
 
 Where the process you depend on is being run by a third-party organisation, (or that party depends on you) you are looking at [Counterparty Risk]:
