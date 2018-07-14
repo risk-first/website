@@ -33,7 +33,7 @@ Business Processes often arise in response to an unmet need within an organisati
 
 ![Person B doing A for company C](images/kite9/process-risk-1.png)
 
-1.  Person `B` in a company starts producing `A`,  This is really useful! It makes the the lives of clients in `C` much easier as they have an easier path to `A` than before.  `B` gets busy keeping `C` happy.  No one cares.  But then, `B` goes on holiday.  `A` doesn't get done, and people now care:  the [Dependency Risk](Dependency-Risk) is suddenly apparent. 
+1.  Person `B` in a company starts producing `A` _as a service to others_.  This is really useful! It makes the the lives of clients in `C` much easier as they have an easier path to `A` than before.  `B` gets busy keeping `C` happy.  No one cares.  But then, `B` goes on holiday.  `A` doesn't get done, and people now care:  the [Dependency Risk](Dependency-Risk) is suddenly apparent. 
 
 ![Team T is created to do A for Company C](images/kite9/process-risk-2.png)
 
