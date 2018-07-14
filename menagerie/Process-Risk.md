@@ -54,23 +54,21 @@ Business Processes often arise in response to an unmet need within an organisati
 
 4.   But it's hard to make sure the right clients get access to `A` at the right times, and it's necessary to synchronize access across company `C`.  (A [Coordination Risk](Coordination-Risk) issue.)  
    - `T` reacts and sets up sign-off, authorization or monetary barriers around `A`, moving the [Coordination Risk](Coordination-Risk) issue out of their team.
-   - But, for `C`, this increases the [Process Risk](Process-Risk) involved in using `A`. 
+   - But, for `C`, this _again_ increases the [Process Risk](Process-Risk) involved in using `A`. 
    
 ![Team T increases bureaucratic load, and pushes Process Risk onto C](images/kite9/process-risk-5.png)
 
-5.  But, there are abuses of `A`: people either misuse it, or use it too much ([Operational Risk](Operational-Risk).  
+5.  But, there are abuses of `A`: people either misuse it, or use it too much.  (These are [Operational Risks](Operational-Risk)).  
  - `T` reacts by _increasing_ the amount of _process_ to use `A`, mitigating [Operational Risk](Operational-Risk) within their team, but...  
  - This corresponds to greater [Process Risk](Process-Risk) for clients in company `C`.
 
 ![Person D acts as a middleman for customers needing some variant of `A`](images/kite9/process-risk-6.png)
 
-6.  Person `D`, who has experience working with team `T` acts as a middleman for customers requiring some variant of `A` for a subset of `C`.  They are able to help navigate the bureaucratic process (deal with Process Risk).  The cycle potentially starts again, except with process risk being dealt with by someone else. 
+6.  Person `D`, who has experience working with team `T` acts as a middleman for customers requiring some variant of `A` for a subset of `C`.  They are able to help navigate the bureaucratic process (handle with [Process Risk](Process-Risk)).  The cycle potentially starts again: will `D` end up becoming a new team, with a new process? 
 
-In this example, you can see how the organisation evolves to mitigate risk around the use (and misuse) of `A`:  First, [Complexity Risk](Complexity-Risk), then [Coordination Risk](Coordination-Risk), then [Dependency Risk](Dependency-Risk) and finally, the **Process Risk** of the process that was created to mitigate everything else.  This is an example of _Process following Strategy_: 
+In this example, you can see how the organisation evolves to mitigate risk around the use (and misuse) of `A`:  First, [Complexity Risk](Complexity-Risk), then [Coordination Risk](Coordination-Risk), then [Dependency Risk](Dependency-Risk) and finally, the [Process Risk](Process-Risk) was created to mitigate everything else.  This is an example of _Process following Strategy_: 
 
-> In this conception, you can see how the structure of an organisation (the teams and processes within it, the heirarchy of control) will 'evolve' from the resources of the organisation and the strategy it pursues.  Processes evolve to meet the needs of the organisation, 
-
-- [MInzberg, strategy safari]
+> In this conception, you can see how the structure of an organisation (the teams and processes within it, the heirarchy of control) will 'evolve' from the resources of the organisation and the strategy it pursues.  Processes evolve to meet the needs of the organisation." - [Minzberg, _Strategy Safari_](http://www.mintzberg.org/books/strategy-safari)
 
 ### Process Accretion
 
