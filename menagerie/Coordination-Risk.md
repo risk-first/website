@@ -27,7 +27,11 @@ Earlier, in [Dependency Risk](Dependency-Risk), we looked at various resources (
 
 ### Competition
 
-The basic problem of [Coordination Risk](Coordination-Risk), then, is _competition_.  Sometimes, competition is desireable (such as in sports and in markets), but sometimes competition is a waste and cooperation would be more efficient.   Without coordination, we would deliberately or accidentally compete for the same [Dependencies](Dependency-Risk), which is wasteful.  Why is this wasteful?  One argument could come from [Diminishing Returns](https://en.wikipedia.org/wiki/Diminishing_returns), which says that the earlier units of a resource (say, chocolate bars) give you more benefit than later ones.  
+The basic problem of [Coordination Risk](Coordination-Risk), then, is _competition_.  Sometimes, competition is desireable (such as in sports and in markets), but sometimes competition is a waste and cooperation would be more efficient.   Without coordination, we would deliberately or accidentally compete for the same [Dependencies](Dependency-Risk), which is wasteful.  
+
+Why is this wasteful?  
+
+One argument could come from [Diminishing Returns](https://en.wikipedia.org/wiki/Diminishing_returns), which says that the earlier units of a resource (say, chocolate bars) give you more benefit than later ones.  
 
 We can see this in the graph below.  Let's say A and B compete over a resource, of which there are 5 units available.  For every extra A takes, B loses one.  The X axis shows A's consumption of the resource, so the biggest benefit to A is in the consumption of the first unit. 
 
