@@ -93,6 +93,8 @@ For many years I have worked in the Finance Industry, and it's given me time to 
 
 ## Process Risks
 
+![Process Risk](images/generated/process-risk.png)
+
 **Process Risk**, then, is a type of [Dependency Risk](Dependency-Risk), where you are relying on a process.  In a way, it's no different from any other kind of [Dependency Risk](Dependency-Risk).   But [Process Risk](Process-Risk) manifests itself in fairly predictable ways:
 
  - [Reliability Risk](Dependency-Risk#reliability-risk): If _people_ are part of the process, there's the chance that they forget to follow the process itself, and miss steps or forget your request completely.  The reliability is related to the amount of [Complexity Risk]() the process is covering.
@@ -104,6 +106,8 @@ For many years I have worked in the Finance Industry, and it's given me time to 
  - [Credit Risk](Process-Risk#credit-risk): Where you pay for something to be done, but then end up without the outcome you want.  Let's look at that in more detail.
  
 ## Credit Risk
+
+![Credit Risk](images/generated/credit-risk.png)
 
 Where the process you depend on is being run by a third-party organisation, (or that party depends on you) you are looking at [Credit Risk](Process-Risk#credit-risk) (also known as [Counterparty Risk](Process-Risk#credit-risk):
 
@@ -132,10 +136,6 @@ Often, Processes will include sign-off steps.  The Sign-Off is an interesting me
 This is a nasty situation, but there are a couple of ways to de-risk this: 
  - break signoffs down into bite-size chunks of risk that are acceptable to those doing the sign-off.  
  - Agree far-in-advance the sign-off criteria.  As discussed in [Risk Theory](Risk-Theory), people have a habit of heavily discounting future risk, and it's much easier to get agreement on the criteria than it is to get the sign-off. 
-
-## Bureaucratic Risk
-
-tbd.
 
 
 
