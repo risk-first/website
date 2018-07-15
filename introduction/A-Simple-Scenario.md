@@ -14,7 +14,7 @@ Lets for a moment forget about software completely, and think about _any endeavo
 
 ### Goal In Mind
 
-Now, in this endeavour, we want to be successful.  That is to say, we have a [Goal In Mind](Goal-In-Mind):  we want our friends to go home satisfied after a decent meal, and not to feel hungry.   As a bonus, we might also want to spend time talking with them before and during the meal.  So, now to achieve our [Goal In Mind](Goal-In-Mind) we *probably* have to do some tasks.  
+Now, in this endeavour, we want to be successful.  That is to say, we have a [Goal In Mind](Glossary#Goal-In-Mind):  we want our friends to go home satisfied after a decent meal, and not to feel hungry.   As a bonus, we might also want to spend time talking with them before and during the meal.  So, now to achieve our [Goal In Mind](Glossary#Goal-In-Mind) we *probably* have to do some tasks.  
 
 If we do nothing, our friends will turn up and maybe there's nothing in the house for them to eat.   Or maybe, the thing that you're going to cook is going to take hours and they'll have to sit around and wait for you to cook it and they'll leave before it's ready.  Maybe you'll be some ingredients short, or maybe you're not confident of the steps to prepare the meal and you're worried about messing it all up.  
 

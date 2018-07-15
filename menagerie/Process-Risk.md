@@ -98,8 +98,20 @@ For many years I have worked in the Finance Industry, and it's given me time to 
  - [Agency Risk](Agency-Risk): Due to Parkinson's Law, see below.
  - [Operational Risk](Operational-Risk): Where processes fail, this is often called [Operational Risk](Operational-Risk), which we'll address further in it's own section.
  - [Credit Risk](Process-Risk#credit-risk): Where you pay for something to be done, but then end up without the outcome you want.  Let's look at that in more detail.
+
+### Processes And Invisibility Risk
+
+Processes tend to work well for the common cases, because *practice makes perfect*.  but they are really tested when unusual situations occur.  Expanding processes to deal with edge-cases incurs [Complexity Risk](Complexity-Risk), so often it's better to try and have clear boundaries of what is "in" and "out" of the process' domain.
+
+Sometimes, processes are _not_ used commonly.  How can we rely on them anyway?  Usually, the answer is to build in extra [feedback loops](Glossary#feedback-loop) anyway:
+
+- Testing that backups work, even when no backup is needed.
+- Running through a disaster recovery scenario at the weekend.
+- Increasing the release cadence, so that we practice the release process more.
+
+The feedback loops allow us to perform [Retrospectives and Reviews](Review) to improve our processes. 
  
-### Process Accretion And Bureaucracy Risk
+### Bureaucracy Risk
 
 ![Bureaucracy Risk](images/generated/bureaucracy-risk.png)
 
@@ -125,25 +137,20 @@ There's a couple of ways this could go wrong:  They may _take my payment_, but t
 
 Mechanisms like [insurance](https://en.wikipedia.org/wiki/Insurance_policy), [contracts](https://en.wikipedia.org/wiki/Contract) and [guarantees](https://en.wikipedia.org/wiki/Guarantee) help mitigate this risk at the cost of complexity and expense.
 
-## Feedback Loops
 
-Processes tend to work well for the common cases, because *practice makes perfect*.  but they are really tested when unusual situations occur.  Having mechanisms to deal with edge-cases can incur [Complexity Risk]Complexity-Risk), so often it's better to try and have clear boundaries of what is "in" and "out" of the process' domain.
-
-Sometimes, processes are _not_ used commonly.  How can we rely on them anyway?  Usually, the answer is to build in extra feedback loops anyway:
-
-- Testing that backups work, even when no backup is needed.
-- Running through a disaster recovery scenario at the weekend.
-- Increasing the release cadence, so that we practice the release process more.
-
-The feedback loops allow us to perform [Retrospectives and Reviews](Review) to improve our processes.
 
 ## Sign-Offs
 
-Often, Processes will include sign-off steps.  The Sign-Off is an interesting mechanism:  by signing off on something for the business, people are usually in some part staking their reputation on something being right.  Therefore, you would expect that sign-off involves a lot of [Agency Risk](Agency-Risk):  people don't want to expose themselves in career-limiting ways.  Therefore, the bigger the risk they are being asked to swallow, the more cumbersome and protracted the sign off process.  Often, Sign Offs boil down to a balance of risk for the signer:  on the one hand, personal risk from signing off, on the other, the risk of upsetting the rest of the staff waiting for the sign-off, and the [Dead End Risk]() of all the effort gone into getting the sign off if they don't.  
+Often, Processes will include sign-off steps.  The [Sign-Off](Sign-Off) is an interesting mechanism:  
+ - By signing off on something for the business, people are usually in some part staking their reputation on something being right. 
+ - Therefore, you would expect that sign-off involves a lot of [Agency Risk](Agency-Risk):  people don't want to expose themselves in career-limiting ways.  
+ - Therefore, the bigger the risk they are being asked to swallow, the more cumbersome and protracted the sign off process.  
+ 
+Often, [Sign Offs](Sign-Off) boil down to a balance of risk for the signer:  on the one hand, _personal, career risk_ from signing off, on the other, the risk of upsetting the rest of the staff waiting for the sign-off, and the [Dead End Risk](Complexity-Risk#dead-end-risk) of all the effort gone into getting the sign off if they don't.  
 
 This is a nasty situation, but there are a couple of ways to de-risk this: 
- - break signoffs down into bite-size chunks of risk that are acceptable to those doing the sign-off.  
- - Agree far-in-advance the sign-off criteria.  As discussed in [Risk Theory](Risk-Theory), people have a habit of heavily discounting future risk, and it's much easier to get agreement on the criteria than it is to get the sign-off. 
+ - break [Sign Offs](Sign-Off) down into bite-size chunks of risk that are acceptable to those doing the sign-off.  
+ - Agree far-in-advance the sign-off criteria.  As discussed in [Risk Theory](Risk-Theory), people have a habit of heavily discounting future risk, and it's much easier to get agreement on the _criteria_ than it is to get the sign-off. 
 
 
 
