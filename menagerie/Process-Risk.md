@@ -16,8 +16,10 @@ Until we get there, let's look at some examples of how process can mitigate othe
  - [Dependency Risk](Dependency-Risk): You can use processes to make dependencies explicit and mitigate dependency risk.  For example, a process for hiring a car will make sure there is a car available at the time you need it.  Alternatively, if we're processing a loan application, we might need evidence of income or bank statements.  We can push this [Dependency Risk](Dependency-Risk) onto the person asking for the loan, by making it part of the process and not accepting the application until this has been provided.
  - [Complexity Risk](Complexity-Risk): Working _within a process_ can reduce the amount of [Complexity](Complexity-Risk) you have to deal with.  We accept that processes are going to slow us down, but we appreciate the reduction in risk this brings.  (They allow us to trade [Complexity](Complexity-Risk) for [Schedule risk](Schedule-Risk)).  For example, setting up a server might be complex, but filling in a form to do the job might simplify things.  Clearly, the complexity hasn't gone away, but it's hidden within the process.  Process therefore can provide [Abstraction](Glossary#Abstraction).    mcdonalds.  tbd
  - [Operational Risk](Operational-Risk):  [Operational Risk](Operational-Risk) encompasses the risk of people _not doing their job properly_.  But, by having a process, (and asking, did this person follow the process?) you can draw a distinction between a process failure and a personnel failure.  For example, making a loan to a money launderer _could_ be a failure of the loan agent.   But, if they followed the _process_, it's a failure of the [Process](Process-Risk) itself. 
+
+![Introducing process can mitigate many risks for a team, but there are attendant process risks created.](images/kite9/process-risk-introduction.png)
  
-These are all examples of [Risk Mitigation](Glossary#Mitigated-risk) for the _owners_ of the process.  However, in this section,  we'll look mainly at how you can deal with [Process Risk](Process-Risk) where you are a _client_ of _someone else's process_.  tbd
+These are all examples of [Risk Mitigation](Glossary#Mitigated-risk) for the _owners_ of the process.  The _consumers_ of the process end up picking up most of the [Process Risks](Process-Risk)  Let's see how this comes about.
 
 ## Evolution Of Business Process
 
@@ -97,7 +99,7 @@ For many years I have worked in the Finance Industry, and it's given me time to 
 
 **Process Risk**, then, is a type of [Dependency Risk](Dependency-Risk), where you are relying on a process.  In a way, it's no different from any other kind of [Dependency Risk](Dependency-Risk).   But [Process Risk](Process-Risk) manifests itself in fairly predictable ways:
 
- - [Reliability Risk](Dependency-Risk#reliability-risk): If _people_ are part of the process, there's the chance that they forget to follow the process itself, and miss steps or forget your request completely.  The reliability is related to the amount of [Complexity Risk]() the process is covering.
+ - [Reliability Risk](Dependency-Risk#reliability-risk): If _people_ are part of the process, there's the chance that they forget to follow the process itself, and miss steps or forget your request completely.  The reliability is related to the amount of [Complexity Risk](Complexity-Risk) the process is covering.
  - [Invisibility Risk](Communication-Risk#invisibility-risk): Usually, processes (like other dependencies) trade [Complexity Risk]() for visibility:  it's often not possible to see how far along a process is to completion.  Sometimes, you can do this to an extent.  For example, when I send a package for delivery, I can see roughly how far it's got on the tracking website.  But, this is still less-than-complete information, and is a representation of reality.    
  - [Fit Risk](Feature-Risk#feature-fit-risk): You have to be careful to match the process to the outcome you want.  Sometimes, it's easy to waste time on the wrong process.
  - [Dead-End Risk](Complexity-Risk#dead-end-risk): Even if you have the right process, initiating a process has no guarantee that your efforts won't be wasted and you'll be back where you started from.  The chances of this happening increase as you get further from the standard use-case for the process, and the sunk cost increases with the length of time the process takes to report back.
@@ -109,17 +111,19 @@ For many years I have worked in the Finance Industry, and it's given me time to 
 
 ![Credit Risk](images/generated/credit-risk.png)
 
-Where the process you depend on is being run by a third-party organisation, (or that party depends on you) you are looking at [Credit Risk](Process-Risk#credit-risk) (also known as [Counterparty Risk](Process-Risk#credit-risk):
+Where the process you depend on is being run by a third-party organisation, (or that party depends on you) you are looking at [Credit Risk](Process-Risk#credit-risk) (also known as [Counterparty Risk](Process-Risk#credit-risk)):
 
 > "A credit risk is the risk of default on a debt that may arise from a borrower failing to make required payments... For example... A business or consumer does not pay a trade invoice when due [or] A business does not pay an employee's earned wages when due" - [Credit Risk, _Wikipedia_](https://en.wikipedia.org/wiki/Credit_risk)
 
-Money is _changing hands_ between you and the supplier of the process, and often, the money doesn't transfer _at the same time_ as the process is performed.  Let's look at an example:  Instead of hosting my website on a server in my office, I could choose to host my software project with an online provider.   I am trading [Complexity Risk](Complexity-Risk) for [Credit Risk](Process-Risk#credit-risk), because now, I have to care that the supplier is solvent.  There's a couple of ways this could go wrong:  They may _take my payment_, but then turn off my account.  Or, they could go bankrupt, and leave me with the costs of moving to another provider (this is also [Dead-End Risk](Complexity-Risk#dead-end-risk)).  
+Money is _changing hands_ between you and the supplier of the process, and often, the money doesn't transfer _at the same time_ as the process is performed.  Let's look at an example:  Instead of hosting my website on a server in my office, I could choose to host my software project with an online provider.   I am trading [Complexity Risk](Complexity-Risk) for [Credit Risk](Process-Risk#credit-risk), because now, I have to care that the supplier is solvent.  
 
-Mechanisms like [insurance](https://en.wikipedia.org/wiki/Insurance_policy), [contracts](https://en.wikipedia.org/wiki/Contract) and [guarantees](https://en.wikipedia.org/wiki/Guarantee) help reduce this risk.
+There's a couple of ways this could go wrong:  They may _take my payment_, but then turn off my account.  Or, they could go bankrupt, and leave me with the costs of moving to another provider (this is also [Dead-End Risk](Complexity-Risk#dead-end-risk)).  
+
+Mechanisms like [insurance](https://en.wikipedia.org/wiki/Insurance_policy), [contracts](https://en.wikipedia.org/wiki/Contract) and [guarantees](https://en.wikipedia.org/wiki/Guarantee) help mitigate this risk at the cost of complexity and expense.
 
 ## Feedback Loops
 
-[Operational Risk]() is usually incurred for outliers: processes tend to work well for the common cases, because *practice makes perfect*.  Processes are really tested when unusual situations occur.  Having mechanisms to deal with edge-cases can incur [Complexity Risk]Complexity-Risk), so often it's better to try and have clear boundaries of what is "in" and "out" of the process' domain.
+Processes tend to work well for the common cases, because *practice makes perfect*.  but they are really tested when unusual situations occur.  Having mechanisms to deal with edge-cases can incur [Complexity Risk]Complexity-Risk), so often it's better to try and have clear boundaries of what is "in" and "out" of the process' domain.
 
 Sometimes, processes are _not_ used commonly.  How can we rely on them anyway?  Usually, the answer is to build in extra feedback loops anyway:
 
