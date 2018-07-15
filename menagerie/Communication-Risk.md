@@ -67,7 +67,7 @@ Shannon discusses that no channel is perfect:  there is always the **risk of noi
 
 But channel risk goes wider than just this mathematical example:  messages might be delayed or delivered in the wrong order, or not be acknowledged when they do arrive.  Sometimes, a channel is just an inappropriate way of communicating.  When you work in a different time-zone to someone else on your team, there is _automatic_ [Channel Risk](Communication-Risk#channel-risk), because instantaneous communication is only available for a few hours' a day. 
 
-When channels are **poor-quality**, less communication occurs.  People will try to communicate just the most important information.  But, it's often impossible to know a-priori what constitutes "important".   This is why [Extreme Programming](Extreme-Programming) recommends the practice of [Pair Programming](Coding#pair-programming) and siting all the developers together: although you don't know whether useful communication will happen, you are mitigating [Channel Risk](Communication-Risk#channel-risk) by ensuring high-quality communication channels are in place.
+When channels are **poor-quality**, less communication occurs.  People will try to communicate just the most important information.  But, it's often impossible to know a-priori what constitutes "important".   This is why [Extreme Programming](Extreme-Programming) recommends the practice of [Pair Programming](Coding#pair-programming--mob-programming) and siting all the developers together: although you don't know whether useful communication will happen, you are mitigating [Channel Risk](Communication-Risk#channel-risk) by ensuring high-quality communication channels are in place.
 
 At other times, channels can contain so much information that we can't hope to receive all the messages.  In these cases, we don't even observe the whole channel, just parts of it.  For example, you might have a few YouTube channels that you subscribe to, but hundreds of hours of video are being posted on YouTube every second, so there is no way you can keep up with all of it.
 
@@ -198,7 +198,7 @@ Let's look at all the protocols we saw here:
 
 Each protocol "passes on" to the next one in the chain.  On the left, we have the representation most suitable for the _messages_:  HTTP is designed for browsers to use to ask for and receive web pages.  As we move right, we are converting the message more and more into a form suitable for the [Channel](Communication-Risk#channels): in this case, microwave transmission.   
 
-By having a stack of protocols, we are able to apply [Separation Of Concerns](), each protocol handling just a few concerns:
+By having a stack of protocols, we are able to apply [Separation Of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns), each protocol handling just a few concerns:
 
  - `HTML` Abstraction: A language for describing the contents of a web-page.
  - `HTTP` Abstraction: Name-Value pairs, agreed on by both `curl` and Google, URLs and error codes.
@@ -242,7 +242,7 @@ tbd.
 
 #### Backward Compatibility
 
-Backwards Compatibility mitigates **Protocol Versioning Risk**.  Quite simply, this means, supporting the old format until it falls out of use.  If a server is pushing for a change in protocol it either must ensure that it is Backwards Compatible with the clients it is communicating with, or make sure they are upgraded concurrently.  When building [web services](), for example, it's common practice to version all apis so that you can manage the migration.  Something like this:
+Backwards Compatibility mitigates [Protocol Versioning Risk](Communication-Risk#protocol-versioning-risk).  Quite simply, this means, supporting the old format until it falls out of use.  If a server is pushing for a change in protocol it either must ensure that it is Backwards Compatible with the clients it is communicating with, or make sure they are upgraded concurrently.  When building [web services](https://en.wikipedia.org/wiki/Web_service), for example, it's common practice to version all APIs so that you can manage the migration.  Something like this:
 
  - Server publishes `/api/v1/something`.
  - Clients use `/api/v1/something`.
@@ -394,7 +394,7 @@ By now it should be clear that it's going to be _both_ quite hard to read and wr
 But now we should be able to see the reasons it's harder to read than write too: 
  
  - When reading code, you are having to shift your [Internal Model](Glossary#Internal-Model) to wherever the code is, accepting decisions that you might not agree with and accepting counter-intuitive logical leaps.  i.e. [Learning Curve Risk](Communication-Risk#learning-curve-risk). _(cf. [Principle of Least Surprise](https://en.wikipedia.org/wiki/Principle_of_least_astonishment))_
- - There is no [Feedback Loop](Feedback-Loop) between your [Internal Model](Glossary#Internal-Model) and the [Reality](Glossary#Meet-Reality) of the code, opening you up to [Misinterpretation Risk](Communication-Risk#misinterpretation-risk).  When you write code, your compiler and tests give you this.
+ - There is no [Feedback Loop](Glossary#Feedback-Loop) between your [Internal Model](Glossary#Internal-Model) and the [Reality](Glossary#Meet-Reality) of the code, opening you up to [Misinterpretation Risk](Communication-Risk#misinterpretation-risk).  When you write code, your compiler and tests give you this.
  - While reading code _takes less time_ than writing it, this also means the [Learning Curve](Communication-Risk#learning-curve-risk) is steeper.
 
 ![Internal Model Risks](images/generated/communication_internal_model_risks.png)
