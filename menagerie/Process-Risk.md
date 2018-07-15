@@ -99,17 +99,19 @@ For many years I have worked in the Finance Industry, and it's given me time to 
  - [Operational Risk](Operational-Risk): Where processes fail, this is often called [Operational Risk](Operational-Risk), which we'll address further in it's own section.
  - [Credit Risk](Process-Risk#credit-risk): Where you pay for something to be done, but then end up without the outcome you want.  Let's look at that in more detail.
  
-### Process Accretion And Bureaucracy
+### Process Accretion And Bureaucracy Risk
 
 ![Bureaucracy Risk](images/generated/bureaucracy-risk.png)
 
-Where we've talked about process evolution above, the actors involved have been acting in good faith:   they are working to mitigate risk in the organisation.  The [Process Risk](Process-Risk) that accretes along the way is an _unintended consequence_:  There is no guarantee that the process that arises will be humane and intuitive.  Many organisational processes end up being baroque or Kafkaesque, forcing unintuitive behaviour on their users.  This is partly because process design is _hard_, and it's difficult to anticipate all the various ways a process will be used ahead-of-time.  This is [Bureaucracy Risk](Process-Risk#process-accretion-and-bureaucracy).
+Where we've talked about process evolution above, the actors involved have been acting in good faith:   they are working to mitigate risk in the organisation.  The [Process Risk](Process-Risk) that accretes along the way is an _unintended consequence_:  There is no guarantee that the process that arises will be humane and intuitive.  Many organisational processes end up being baroque or Kafkaesque, forcing unintuitive behaviour on their users.  This is partly because process design is _hard_, and it's difficult to anticipate all the various ways a process will be used ahead-of-time.  So, some of [Bureaucracy Risk](Process-Risk#process-accretion-and-bureaucracy-risk) is due to [Complexity](Complexity-Risk).
 
 But [Parkinson's Law](https://en.wikipedia.org/wiki/Parkinson%27s_law) takes this one step further:  the human actors shaping the organisation will abuse their positions of power in order to further their own careers (this is [Agency Risk](Agency-Risk), which we will come to in a future section):
 
 > "Parkinson's law is the adage that "work expands so as to fill the time available for its completion". It is sometimes applied to the growth of bureaucracy in an organization... He explains this growth by two forces: (1) 'An official wants to multiply subordinates, not rivals' and (2) 'Officials make work for each other.'" - [Parkinson's Law, _Wikipedia_](https://en.wikipedia.org/wiki/Parkinson%27s_law)  
+
+This implies that there is a tendency for organisations to end up with _needless levels of [Bureaucratic Risk](Process-Risk#process-accretion-and-bureaucracy-risk)_.
  
-## Credit Risk
+### Credit Risk
 
 ![Credit Risk](images/generated/credit-risk.png)
 
