@@ -72,14 +72,6 @@ In this example, you can see how the organisation evolves to mitigate risk aroun
 
 > In this conception, you can see how the structure of an organisation (the teams and processes within it, the heirarchy of control) will 'evolve' from the resources of the organisation and the strategy it pursues.  Processes evolve to meet the needs of the organisation." - [Minzberg, _Strategy Safari_](http://www.mintzberg.org/books/strategy-safari)
 
-### Process Accretion
-
-In each step, the actors involved have been acting in good faith:   they are working to mitigate risk in the organisation.  The **Process Risk** that accretes along the way is an _unintended consequence_:  There is no guarantee that the process that arises will be humane and intuitive.  Many organisational processes end up being baroque or Kafkaesque, forcing unintuitive behaviour on their users.  This is partly because process design is _hard_, and it's difficult to anticipate all the various ways a process will be used ahead-of-time.
-
-But [Parkinson's Law](https://en.wikipedia.org/wiki/Parkinson%27s_law) takes this one step further:  the human actors shaping the organisation will abuse their positions of power in order to further their own careers (this is [Agency Risk](Agency-Risk), which we will come to in a future section):
-
-> "Parkinson's law is the adage that "work expands so as to fill the time available for its completion". It is sometimes applied to the growth of bureaucracy in an organization... He explains this growth by two forces: (1) 'An official wants to multiply subordinates, not rivals' and (2) 'Officials make work for each other.'" - [Parkinson's Law, _Wikipedia_](https://en.wikipedia.org/wiki/Parkinson%27s_law)
-
 ## An Example - Release Process
 
 For many years I have worked in the Finance Industry, and it's given me time to observe how, across an entire industry, process can evolve, both in response to regulatory pressure but also because of organisational maturity, and mitigating risks:
@@ -103,9 +95,19 @@ For many years I have worked in the Finance Industry, and it's given me time to 
  - [Invisibility Risk](Communication-Risk#invisibility-risk): Usually, processes (like other dependencies) trade [Complexity Risk]() for visibility:  it's often not possible to see how far along a process is to completion.  Sometimes, you can do this to an extent.  For example, when I send a package for delivery, I can see roughly how far it's got on the tracking website.  But, this is still less-than-complete information, and is a representation of reality.    
  - [Fit Risk](Feature-Risk#feature-fit-risk): You have to be careful to match the process to the outcome you want.  Sometimes, it's easy to waste time on the wrong process.
  - [Dead-End Risk](Complexity-Risk#dead-end-risk): Even if you have the right process, initiating a process has no guarantee that your efforts won't be wasted and you'll be back where you started from.  The chances of this happening increase as you get further from the standard use-case for the process, and the sunk cost increases with the length of time the process takes to report back.
- - [Agency Risk](Agency-Risk): Due to Parkinson's Law, above.
+ - [Agency Risk](Agency-Risk): Due to Parkinson's Law, see below.
  - [Operational Risk](Operational-Risk): Where processes fail, this is often called [Operational Risk](Operational-Risk), which we'll address further in it's own section.
  - [Credit Risk](Process-Risk#credit-risk): Where you pay for something to be done, but then end up without the outcome you want.  Let's look at that in more detail.
+ 
+### Process Accretion And Bureaucracy
+
+![Bureaucracy Risk](images/generated/bureaucracy-risk.png)
+
+Where we've talked about process evolution above, the actors involved have been acting in good faith:   they are working to mitigate risk in the organisation.  The [Process Risk](Process-Risk) that accretes along the way is an _unintended consequence_:  There is no guarantee that the process that arises will be humane and intuitive.  Many organisational processes end up being baroque or Kafkaesque, forcing unintuitive behaviour on their users.  This is partly because process design is _hard_, and it's difficult to anticipate all the various ways a process will be used ahead-of-time.  This is [Bureaucracy Risk](Process-Risk#process-accretion-and-bureaucracy).
+
+But [Parkinson's Law](https://en.wikipedia.org/wiki/Parkinson%27s_law) takes this one step further:  the human actors shaping the organisation will abuse their positions of power in order to further their own careers (this is [Agency Risk](Agency-Risk), which we will come to in a future section):
+
+> "Parkinson's law is the adage that "work expands so as to fill the time available for its completion". It is sometimes applied to the growth of bureaucracy in an organization... He explains this growth by two forces: (1) 'An official wants to multiply subordinates, not rivals' and (2) 'Officials make work for each other.'" - [Parkinson's Law, _Wikipedia_](https://en.wikipedia.org/wiki/Parkinson%27s_law)  
  
 ## Credit Risk
 
