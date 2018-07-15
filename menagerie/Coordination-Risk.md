@@ -1,10 +1,10 @@
 ![Draft](images/state/draft.png)
 
-[Coordination Risk](Coordination-Risk) is the risk that, a group of people (or processes), maybe with a similar [Goal In Mind](Goal-In-Mind) they can fail to coordinate on a way to meet this goal and end up making things worse.  [Coordination Risk](Coordination-Risk) is embodied in the phrase "Too Many Cooks Spoil The Broth":  more people, opinions or agents often make results worse.
+[Coordination Risk](Coordination-Risk) is the risk that, a group of people (or processes), maybe with a similar [Goal In Mind](Glossary#Goal-In-Mind) they can fail to coordinate on a way to meet this goal and end up making things worse.  [Coordination Risk](Coordination-Risk) is embodied in the phrase "Too Many Cooks Spoil The Broth":  more people, opinions or agents often make results worse.
 
-As in [Agency Risk](Agency-Risk), we are going to use the term _agent_, which refers to anything with [agency](https://github.com/risk-first/website/wiki/Agency-Risk#software-processes-and-teams) in a system to decide it's own fate.  That is, an [Agent](Agency-Risk) has an [Internal Model](Glossary#Internal-Model),  and can [take actions](Glossary#take-action) based on it.  Here, we're going to work on the assumption that the Agents _are_ working towards a common [Goal](Gaol-In-Mind), even though in reality it's not always the case, as we saw in the section on [Agency Risk](Agency-Risk).
+As in [Agency Risk](Agency-Risk), we are going to use the term _agent_, which refers to anything with [agency](https://github.com/risk-first/website/wiki/Agency-Risk#software-processes-and-teams) in a system to decide it's own fate.  That is, an [Agent](Agency-Risk) has an [Internal Model](Glossary#Internal-Model),  and can [take actions](Glossary#take-action) based on it.  Here, we're going to work on the assumption that the Agents _are_ working towards a common [Goal](Glossary#Goal-In-Mind), even though in reality it's not always the case, as we saw in the section on [Agency Risk](Agency-Risk).
 
- In this section, we'll first build up [A Model Of Coordination Risk](#a-model-of-coordination-risk) and what exactly coordination means and why we do it.  Then, we'll look at some classic [Problems of Coordination](#problems-of-coordination).  Then, we're going to consider Agents at several different levels (because of [Scale Invariance](Risk-Theory#scale-invariance)) .  We'll look at:
+ In this section, we'll first build up [A Model Of Coordination Risk](#a-model-of-coordination-risk) and what exactly coordination means and why we do it.  Then, we'll look at some classic [Problems of Coordination](#problems-of-coordination).  Then, we're going to consider Agents at several different levels (because of [Scale Invariance](Risk-Theory#invariances-2-scale-invariance)) .  We'll look at:
  - [Team Decision Making](#team-decision-making)
  - [Living Organisms](#in-living-organisms)
  - [Larger Organisations, and Staff In Them](#large-organisations)
@@ -107,7 +107,7 @@ The trick is to be able to tell which approach is suitable at which time.   Ever
  - Is the [Coordination Risk](Coordination-Risk) greater?   Are we going to suffer [Dead End Risk](Complexity-Risk) if the decision is made wrongly?  What if people don't agree with it?  Poor leadership has an impact on [Morale](Agency-Risk#morale-risk) too.  
  - Is the [Schedule Risk](schedule-Risk) greater?  If you have a 1-hour meeting with eight people to decide a decision, that's _one man day_ gone right there:  group decision making is _expensive_.  
  
-Hopefully, this model shows how _organisation_ can reduce [Coordination Risk](Coordination-Risk).  But, to make this work, we need more _communication_, and this has attendant complexity and time costs.  So, we can draw this diagram of our move on the [Risk Landscape](Glossary#Risk-Landscape):
+Hopefully, this model shows how _organisation_ can reduce [Coordination Risk](Coordination-Risk).  But, to make this work, we need more _communication_, and this has attendant complexity and time costs.  So, we can draw this diagram of our move on the [Risk Landscape](Risk-Landscape):
 
 ![Coordination Risk traded for Complexity Risk, Schedule Risk and Communication Risk](images/kite9/coordination-1.png)
 
@@ -152,7 +152,7 @@ Vroom and Yetton's organisational style isn't relevant to just teams of people. 
 
 ![Hierarchy of Function in the Human Body](images/kite9/coordination-organism.png)
 
-[Some argue](https://www.quora.com/What-is-the-most-complex-object-in-the-universe) that the human nervous system is the most complex known artifact in the universe: there is huge attendant [Communication Risk](Communication-Risk) to running the human body.  But, given the success of humanity as a species, you must conclude that these steps on the evolutionary [Risk Landscape](Glossary#Risk-Landscape) have benefitted us in our ecological niche.
+[Some argue](https://www.quora.com/What-is-the-most-complex-object-in-the-universe) that the human nervous system is the most complex known artifact in the universe: there is huge attendant [Communication Risk](Communication-Risk) to running the human body.  But, given the success of humanity as a species, you must conclude that these steps on the evolutionary [Risk Landscape](Risk-Landscape) have benefitted us in our ecological niche.
 
 The key observation from looking at biology is this:  most of the cells in the human body _don't get a vote_.   Muscles in the motor system have an **AI** or **AII** relationship with the brain - they do what they are told, but there are often nerves to report pain back.   The only place where **CII** or **GII** _could_ occur is in our brains, when we try to make a decision and weigh up the pros and cons.  
 
@@ -172,7 +172,7 @@ Sometimes, parts of an organisation are encouraged _not_ to coordinate, but to c
 
 ## In Software Processes
 
-It should be pretty clear that we are applying the [Scale Invariance](Risk-Theory#scale-invariance) rule to [Coordination Risk](Coordination-Risk):  all of the problems we've described as affecting teams, also affect software, although the scale and terrain are different.  So far, software processes have limited _agency_ - in most cases they follow fixed rules set down by the programmers, rather than self-organising like people can.
+It should be pretty clear that we are applying the [Scale Invariance](Risk-Theory#invariances-2-scale-invariance) rule to [Coordination Risk](Coordination-Risk):  all of the problems we've described as affecting teams, also affect software, although the scale and terrain are different.  So far, software processes have limited _agency_ - in most cases they follow fixed rules set down by the programmers, rather than self-organising like people can.
 
 As before, in order to face [Coordination Risk](Coordination-Risk) in software, we need multiple Agents all working together, so [Coordination Risks](Coordination-Risk) (such as race conditions or deadlock) only really occurs in multi-threaded software where there is resource competition.  
 
@@ -204,7 +204,7 @@ tbd
 
 Immutability (or write-only data structures) are often presented as a solution to many of the problems of multi-agent systems.  After all, if values in the system aren't _changing_, then memory is not a scarce resource, and we avoid [race conditions](https://en.wikipedia.org/wiki/Race_condition).  However, we _still_ have to contend with [Coordination Risk](Coordination-Risk). Let's look at two examples.
 
-First, [Bitcoin](https://en.wikipedia.org/wiki/Bitcoin) (BTC) is a write-only [distributed ledger](https://en.wikipedia.org/wiki/Distributed_ledger), where agents _compete_ to mine BTC, but also at the same time record transactions on the ledger.  But there is _huge_ [Coordination Risk](Coordination-Risk) in BTC, because it is pretty much outright competition.  If someone beats you to completing a piece of work, then your work is wasted.   For this reason, BTC agents _coordinate_ into [mining consortia](https://en.bitcoin.it/wiki/Comparison_of_mining_pools), so they can avoid working on the same problems at the same time.  Nevertheless, the performance of BTC is [highly questionable](), and this is because it is entirely competitive.  In [CAP](Coordination-Risk#CAP-theorem) terms, BitCoin is tbd.
+First, [Bitcoin](https://en.wikipedia.org/wiki/Bitcoin) (BTC) is a write-only [distributed ledger](https://en.wikipedia.org/wiki/Distributed_ledger), where agents _compete_ to mine BTC, but also at the same time record transactions on the ledger.  But there is _huge_ [Coordination Risk](Coordination-Risk) in BTC, because it is pretty much outright competition.  If someone beats you to completing a piece of work, then your work is wasted.   For this reason, BTC agents _coordinate_ into [mining consortia](https://en.bitcoin.it/wiki/Comparison_of_mining_pools), so they can avoid working on the same problems at the same time.  Nevertheless, the performance of BTC is [highly questionable](https://en.wikipedia.org/wiki/Bitcoin#Energy_consumption), and this is because it is entirely competitive.  In [CAP](Coordination-Risk#CAP-theorem) terms, BitCoin is tbd.
 
 Second, [git](https://en.wikipedia.org/wiki/Git) is a (mainly) write-only ledger of source changes.  However, as we already discussed, where different agents make incompatible changes, someone has to decide how to resolve the conflicts so that we have a single source of truth.  The [Coordination Risk](Coordination-Risk) just _doesn't go away_.  Git is an AP system.
 
