@@ -19,11 +19,11 @@ Until we get there, let's look at some examples of how process can mitigate othe
 
 ![Introducing process can mitigate many risks for a team, but there are attendant process risks created.](images/kite9/process-risk-introduction.png)
  
-These are all examples of [Risk Mitigation](Glossary#Mitigated-risk) for the _owners_ of the process.  The _consumers_ of the process end up picking up most of the [Process Risks](Process-Risk)  Let's see how this comes about.
+These are all examples of [Risk Mitigation](Glossary#Mitigated-risk) for the _owners_ of the process.  The _consumers_ of the process end up picking up most of the [Process Risks](Process-Risk).  Let's see how this comes about.
 
 ## Evolution Of Business Process
 
-Before we get to examining different [Process Risks](Process-Risk), let's consider how processes _form_.  Specifically, we're going to look at **Business Process**:
+Before we get to examining what constitues [Process Risks](Process-Risk), let's consider how processes _form_.  Specifically, we're going to look at [Business Process](https://en.wikipedia.org/wiki/Business_process):
 
 > "**Business Process** or **Business Method** is a collection of related, structured activities or tasks that in a specific sequence produces a service or product (serves a particular business goal) for a particular customer or customers." - [Business Process, _Wikipedia_](https://en.wikipedia.org/wiki/Business_process)
 
