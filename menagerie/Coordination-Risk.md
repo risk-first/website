@@ -65,7 +65,7 @@ Here are some classic problems of coordination, none of which can be addressed w
   
 3. **Factions**.  Sometimes, it's hard to coordinate large groups at the same time, and "factions" can occur.  That the world isn't a single big country is probably partly a testament to this.  Organizing on huge scales becomes self-defeating, and so instead at some level we end up with competition instead of coordination.   We can also see this in distributed systems, with the ["split brain"](https://en.wikipedia.org/wiki/Split-brain_(computing)) problem.   This is where a network of processes becomes disconnected (usually due to a network failure between data centers), and you end up with two, smaller networks.  We'll address in more depth later.
 
-4. [Resource Allocation](https://en.wikipedia.org/wiki/Race_condition):  Ensuring that the right people are doing the right work, or the right resources are given to the right people is a coordination issue.  On a grand scale, we have [Logistics](https://en.wikipedia.org/wiki/Logistics), and [Economic Systems](https://en.wikipedia.org/wiki/Economic_system).  On a small scale, the office's _room booking system_ solves the coordination issue of who gets a meeting room using a first-come-first-served booking algorithm.
+4. [Resource Allocation](https://en.wikipedia.org/wiki/Resource_allocation):  Ensuring that the right people are doing the right work, or the right resources are given to the right people is a coordination issue.  On a grand scale, we have [Logistics](https://en.wikipedia.org/wiki/Logistics), and [Economic Systems](https://en.wikipedia.org/wiki/Economic_system).  On a small scale, the office's _room booking system_ solves the coordination issue of who gets a meeting room using a first-come-first-served booking algorithm.  
 
 5. [Deadlock](https://en.wikipedia.org/wiki/Deadlock):  Deadlock refers to a situation where, in an environment where multiple parallel processes are running, the processing stops and no-one can make progress because the resources each process needs are being reserved by another process.  This is a specific issue in **Resource Allocation**, but it's one we're familiar with in the computer science industry.  Compare with [Gridlock](https://en.wikipedia.org/wiki/Gridlock), where traffic can't move because other traffic is occupying the space it wants to move to already. 
 
@@ -110,6 +110,33 @@ The trick is to be able to tell which approach is suitable at which time.   Ever
 Hopefully, this model shows how _organisation_ can reduce [Coordination Risk](Coordination-Risk).  But, to make this work, we need more _communication_, and this has attendant complexity and time costs.  So, we can draw this diagram of our move on the [Risk Landscape](Glossary#Risk-Landscape):
 
 ![Coordination Risk traded for Complexity Risk, Schedule Risk and Communication Risk](images/kite9/coordination-1.png)
+
+### Staff As Agents
+
+Staff in a team have a dual nature:  they are **Agents** and **Resources** at the same time.  The team [depends](Dependency-Risk) on staff for their resource of _labour_, but they're also part of the decision making process of the team, because they have [agency](Agency-Risk) over their own actions.  
+
+Part of [Coordination Risk](Coordination-Risk) is about trying to mitigate differences in [Internal Models](Glossary#Internal-Model). So it's worth considering how varied people's models can be:
+ - Different skill levels
+ - Different experiences
+ - Expertise in different areas
+ - Preferences
+ - Personalities
+ 
+The job of harmonzing this on a project would seem to fall to the team leader, but actually people are self-organising to some extent.  This process is called [Team Development](https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development):
+
+> "The forming–storming–norming–performing model of group development was first proposed by Bruce Tuckman in 1965,[1] who said that these phases are all necessary and inevitable in order for the team to grow, face up to challenges, tackle problems, find solutions, plan work, and deliver results." - [Tuckman, _Stages Of Group Development_](https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development)
+
+Specifically, this describes a process whereby a new group will form and then be required to work together. In the process, they will have many _disputes_.  Ideally, the group will resolve these disputes internally and emerge as a _Team_, with a common [Goal In Mind](Glossary#goal-in-mind).
+
+They can be encouraged with orthogonal practices such as [Team Building exercises](https://en.wikipedia.org/wiki/Team_building) (generally, submitting everyone to extreme experiences in order to bond them together).  With enough communication bandwidth and entente, a motivated team will self-organise code reviews, information exchange and improve their practices. 
+
+As decribed above, the job of [Coordination](Coordination-Risk) is [Resource Allocation](Coordination-Risk#problems-in-coordination), and so the skills of staff should be looked at as resources to allocate.  This means handling [Coordination Risk](Coordination-Risk) issues like:
+
+ - People leaving, taking their [Internal Models](Glossary#Internal-Model) and expertise with them [Key Man Risk](Schedule-Risk#Staff-Risk).
+ - People often require external training, to understand new tools and techniques [Learning-Curve Risk](Communication-Risk#learning-curve-risk)
+ - People can get protective about their knowledge in order to protect their jobs [Agency Risk](Agency-Risk). 
+ - Where there are mixed ability levels, senior developers might not help juniors as it "slows them down"
+ - People don't get on and don't help each other.
  
 ## In Living Organisms
 
@@ -140,48 +167,20 @@ _Less_ consultative decision making styles are more appropriate then when we don
 ![Hierarchy of Function in an Organisation](images/kite9/coordination-organisation.png)
 
 In large organisations, teams are created and leaders chosen for those teams precisely to mitigate [Communication Risk](Communication-Risk).  We're all familiar with this: control of the team is ceded to the leader, who takes on the role of 'handing down' direction from above, but also 'reporting up' issues that cannot be resolved within the team.   In Vroom and Yetton's model, this is moving from a **GII** or **CII** to an **AI** or **AII** style of leadership.  So we end up with a hierarchy of groups, as shown in the diagram.
- 
-### Staff Risk
 
-Staff in a team are both **Agents** and **Resources** at the same time.  The team [depends](Dependency-Risk) on them for their resource of _labour_, but they're also part of the decision making process of the team, because they have [agency](Agency-Risk) over their own actions.  
-
-Part of [Coordination Risk](Coordination-Risk) is about trying to mitigate differences in [Internal Models](Glossary#Internal-Model). So it's worth considering how varied people's models can be:
- - Different skill levels
- - Different experiences
- - Expertise in different areas
- - Preferences
- - Personalities
- 
-The job of harmonzing this on a project would seem to fall to the team leader, but actually people are self-organising to some extent.  This process is called [Team Development]():
-
->  after [Tuckman](), 
-
-They can be encouraged with orthogonal practices such as [Team Building exercises]() (generally, submitting everyone to extreme experiences in order to bond them together).  With enough communication bandwidth and entente, a motivated team will self-organise code reviews, information exchange and improve their practices.  But **Staff Risks** sometimes cannot be resolved without escalation:
-
- - People leave, taking their [Internal Models](Glossary#Internal-Model) and expertise with them [Key Man Risk](Schedule-Risk#Staff-Risk).
- - People often require external training, to understand new tools and techniques [Learning-Curve Risk](Communiciation-Risk)
- - People can get protective about their knowledge in order to protect their jobs [Agency Risk](Agency-Risk). 
- - Where there are mixed ability levels, senior developers might not help juniors as it "slows them down"
- - People don't get on. 
- 
-... and so on.
-
-new starters
-
-norming, storming etc.
-
+Sometimes, parts of an organisation are encouraged _not_ to coordinate, but to compete.   In the diagram above, we have an [M-Form](https://en.wikipedia.org/wiki/Multi-divisional_form) organisation, composed of _competing divisions_.  
 
 ## In Software Processes
 
-It should be pretty clear that we are applying the [Scale Invariance](Risk-Theory#scale-invariance) rule to [Coordination Risk](Coordination-Risk):  all of the problems we've described as affecting teams, also affect software, although the scale and terrain are different.  Software processes have limited _agency_ - in most cases they follow fixed rules set down by the programmers, rather than self-organising like people can.
+It should be pretty clear that we are applying the [Scale Invariance](Risk-Theory#scale-invariance) rule to [Coordination Risk](Coordination-Risk):  all of the problems we've described as affecting teams, also affect software, although the scale and terrain are different.  So far, software processes have limited _agency_ - in most cases they follow fixed rules set down by the programmers, rather than self-organising like people can.
 
 As before, in order to face [Coordination Risk](Coordination-Risk) in software, we need multiple Agents all working together, so [Coordination Risks](Coordination-Risk) (such as race conditions or deadlock) only really occurs in multi-threaded software where there is resource competition.  
 
 ### CAP Theorem
 
-The [CAP Theorem]() has a lot to say about [Coordination Risk](Coordination-Risk).  Imagine talking to a distributed database, where your request (read or write) can be handled by one of many agents.  
+The [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem) has a lot to say about [Coordination Risk](Coordination-Risk).  Imagine talking to a distributed database, where your request (read or write) can be handled by one of many agents.  
 
-There are three properties we could desire in such a system:
+According to the [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem), there are three properties we could desire in such a system:
 
 - **Consistency**: Every read receives the most recent value from the last write.
 - **Availability**: Every request receives a response.
@@ -189,7 +188,7 @@ There are three properties we could desire in such a system:
 
 Since _any_ agent can receive the read or write, it's a **GII** decision making system, because all the agents are going to need to coordinate to figure out what the right value is to return for a read, and what the last value written was.
 
-[CAP Theory]() states that this is a [Trilemma]().  That is, you can only have two out of the three properties.   There are plenty of resources on the internet that discuss this in depth, but let's just illustrate with a diagram how this plays out.  In this, the last write (3) was sent to a node which is now _isolated_, and can't be communicated with, due to network failure.  What do you get back?
+The [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem) states that this is a [Trilemma](https://en.wikipedia.org/wiki/Trilemma).  That is, you can only have two out of the three properties.   There are plenty of resources on the internet that discuss this in depth, but let's just illustrate with a diagram how this plays out.  In this, the last write (3) was sent to a node which is now _isolated_, and can't be communicated with, due to network failure.  What do you get back?
 
 tbd image
 
@@ -197,15 +196,17 @@ CA:  show how the system wouldn't be partition tolerant if the last write was on
 CP:  waits until the isolated node comes back
 AP:  you can return some value back, but it won't necessarily be the last one.
 
-This sets an upper bound on [Coordination Risk](Coordination-Risk):  we _can't get rid of it completely in a software system, -or- a system on any other scale.  This explains in part why _countries_ are often created along geographic bounds:    
+This sets an upper bound on [Coordination Risk](Coordination-Risk):  we _can't_ get rid of it completely in a software system, -or- a system on any other scale.  This explains in part why _countries_ are often created along geographic bounds:   
+
+tbd 
 
 ### Immutability
 
 Immutability (or write-only data structures) are often presented as a solution to many of the problems of multi-agent systems.  After all, if values in the system aren't _changing_, then memory is not a scarce resource, and we avoid [race conditions]().  However, we _still_ have to contend with [Coordination Risk](Coordination-Risk). Let's look at two examples.
 
-First, [BitCoin]() (BTC) is a write-only [distributed ledger](), where agents _compete_ to mine BTC, but also at the same time record transactions on the ledger.  But there is _huge_ [Coordination Risk](Coordination-Risk) in BTC, because it is pretty much outright competition.  If someone beats you to completing a piece of work, then your work is wasted.   For this reason, BTC agents _coordinate_ into [mining consortia](), so they can avoid working on the same problems at the same time.  Nevertheless, the performance of BTC is [highly questionable](), and this is because it is entirely competitive.  In **CAP** terms, BitCoin is tbd.
+First, [Bitcoin](https://en.wikipedia.org/wiki/Bitcoin) (BTC) is a write-only [distributed ledger](https://en.wikipedia.org/wiki/Distributed_ledger), where agents _compete_ to mine BTC, but also at the same time record transactions on the ledger.  But there is _huge_ [Coordination Risk](Coordination-Risk) in BTC, because it is pretty much outright competition.  If someone beats you to completing a piece of work, then your work is wasted.   For this reason, BTC agents _coordinate_ into [mining consortia](), so they can avoid working on the same problems at the same time.  Nevertheless, the performance of BTC is [highly questionable](), and this is because it is entirely competitive.  In **CAP** terms, BitCoin is tbd.
 
-Second, [git]() is a write-only ledger of source changes.  However, as we already discussed, where different agents make incompatible changes, someone has to decide how to resolve the conflicts so that we have a single source of truth.  The [Coordination Risk](Coordination-Risk) just _doesn't go away_.  Git is an AP system.
+Second, [git](https://en.wikipedia.org/wiki/Git) is a (mainly) write-only ledger of source changes.  However, as we already discussed, where different agents make incompatible changes, someone has to decide how to resolve the conflicts so that we have a single source of truth.  The [Coordination Risk](Coordination-Risk) just _doesn't go away_.  Git is an AP system.
 
 ### Monitoring
 
@@ -213,12 +214,11 @@ tbd. talk about invisibility risk again.
 
 ## Communication Is For Coordination
 
-Earlier in this section, we questioned whether [Coordination Risk](Coordination-Risk) was just another type of [Communication Risk](Communication-Risk).  However, it should be clear after looking at the examples of competition, cellular life and [Vroom and Yetton's Model]() that this is exactly _backwards_:  
+Earlier in this section, we questioned whether [Coordination Risk](Coordination-Risk) was just another type of [Communication Risk](Communication-Risk).  However, it should be clear after looking at the examples of competition, cellular life and Vroom and Yetton's Model that this is exactly _backwards_:  
 
 - Most single-celled life has no need for communication: it simply competes for the available resources.  If it lacks anything it needs, it dies.  
 - There are _no_ lines of communication on the **UI** decision-type.  It's only when we want to avoid competition, by sharing resources and working towards common goals that we needs to communicate.  
-
-The whole point of communication is for coordination.  
+- Therefore, the whole point of communication _is for coordination_.  
 
 In the next section, [Map And Territory Risk](Map-And-Territory-Risk), we're going to look at some new ways in which systems can fail, despite their attempts to coordinate.
  
