@@ -28,11 +28,13 @@ public class LinkChecker {
 		final int line;
 		final String link;
 		final String text;
+		final boolean image;
 		
-		public Target(String file, int line, String link, String text) {
+		public Target(String file, int line, String link, String text, boolean image) {
 			super();
 			this.file = file;
 			this.line = line;
+			this.image = image;
 			
 			if (link.startsWith("#")) {
 				this.link = file.substring(0, file.lastIndexOf(".md"))+link;
@@ -80,7 +82,11 @@ public class LinkChecker {
 		// now, we can remove targets that are ok
 		for (Iterator<Target> iterator = targets.iterator(); iterator.hasNext();) {
 			Target target = iterator.next();
-			if (links.contains(target.link)) {
+			if (target.image) {
+				if (new File(file, target.link).exists()) {
+					iterator.remove();
+				}
+			} else if (links.contains(target.link)) {
 				//System.out.println("FOUND: "+target);
 				iterator.remove();
 			} else if (target.link.startsWith("http")) {
@@ -116,9 +122,7 @@ public class LinkChecker {
 					// this only checks the one type of link like [dsfs](link).
 					TextPreprocessor.processLinks(content, 
 						(link, text, url, image, lineNo) -> {
-							if (!image) {
-								targets.add(new Target(f.getName(), lineNo, url.toLowerCase(), text));
-							}
+							targets.add(new Target(f.getName(), lineNo, url.toLowerCase(), text, image));
 						}, line, (s) -> {});
 					
 					LinkChecker.processTargets(content, 
@@ -137,7 +141,7 @@ public class LinkChecker {
 	private static String createLink(String name, String title) {
 		String mainName = name.substring(0,  name.indexOf(".md"));
 		if (title != null) {
-			String titleLink = title.trim().replace("&","").replace(":","").replace(" ","-");
+			String titleLink = title.trim().replaceAll("[\\&\\:\\/]*", "").replace(" ","-");
 			mainName =  mainName+"#"+titleLink;
 		}
 		
