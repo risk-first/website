@@ -142,7 +142,7 @@ In essence, this is [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law)
 
 ## 2.  Software Libraries
 
-By choosing a particular software library, we are making a move on the [Risk Landscape](Glossary#Risk-Landscape) in the hope of moving to place with more favourable risks.  Typically, using library code offers a [Schedule Risk](Schedule-Risk) and [Complexity Risk](Complexity-Risk) [Silver Bullet](Silver-Bullets).  But, in return we expect to pick up:
+By choosing a particular software library, we are making a move on the [Risk Landscape](Risk-Landscape) in the hope of moving to place with more favourable risks.  Typically, using library code offers a [Schedule Risk](Schedule-Risk) and [Complexity Risk](Complexity-Risk) [Silver Bullet](Silver-Bullets).  But, in return we expect to pick up:
 - [Communication Risk](Communication-Risk): because we now have to learn how to communicate with this new dependency.
 - [Boundary Risk](Boundary-Risk) - because now are limited to using the functionality provided by this dependency.  We have chosen it over alternatives and changing to something else would be more work and therefore costly.   
 
@@ -201,7 +201,7 @@ One thing that none of the sources consider (at least from the outset) is the [C
  - Do you already have a dependency providing this functionality?  So many times, I've worked on projects that import a _new_ dependency when some existing (perhaps transitive) dependency has _already brought in the functionality_.  For example, there are plenty of libraries for [JSON](https://en.wikipedia.org/wiki/JSON) marshalling, but if I'm also using a web framework the chances are it already has a dependency on one already.
  - Does it contain lots of functionality that isn’t relevant to the task you want it to accomplish?  e.g. Using Java when a shell script would do (on a non-Java project)
  
-To give an extreme example of this, I once worked on an application which used [Hazlecast](https://en.wikipedia.org/wiki/Hazelcast) to cache log-in session tokens for a 3rd party datasource.  But, the app is only used once every month, and session IDs can be obtained in milliseconds.   So... why cache them?  Although Hazlecast is an excellent choice for in-memory caching across multiple JVMs, it is a complex piece of software (after all, it does lots of stuff).  By doing this, you have introduced extra dependency risk, cache invalidation risks, networking risks, synchronisation risks and so on, for actually no benefit at all...  Unless, it’s about [CV Building](Agency-Risk#CV_building).  
+To give an extreme example of this, I once worked on an application which used [Hazlecast](https://en.wikipedia.org/wiki/Hazelcast) to cache log-in session tokens for a 3rd party datasource.  But, the app is only used once every month, and session IDs can be obtained in milliseconds.   So... why cache them?  Although Hazlecast is an excellent choice for in-memory caching across multiple JVMs, it is a complex piece of software (after all, it does lots of stuff).  By doing this, you have introduced extra dependency risk, cache invalidation risks, networking risks, synchronisation risks and so on, for actually no benefit at all...  Unless, it’s about [CV Building](Agency-Risk#CV-building).  
 
 Sometimes, the amount of complexity _goes up_ when you use a dependency for _good reason_.   For example, in Java, you can use [Java Database Connectivity (JDBC)](https://en.wikipedia.org/wiki/Java_Database_Connectivity) to interface with various types of database.  [Spring Framework](https://en.wikipedia.org/wiki/Spring_Framework) (a popular Java library) provides a thing called a `JDBCTemplate`.  This actually makes your code _more_ complex, and can prove very difficult to debug.  However, it prevents some security issues, handles resource disposal and makes database access more efficient.  None of those are essential to interfacing with the database, but not using them is [Technical Debt](Complexity-Risk#technical-debt) that can bite you later on.  
 
@@ -289,13 +289,13 @@ Let's look at some:
   
 ## Back To Ergonomics
 
-What's clear from this analysis is that software dependencies don't _conquer_ any risk - the moves they make on the [Risk Landscape](Glossary#risk-landscape) are _subtle_.  Whether or not you end up in a more favourable position risk-wise is going to depend heavily on the quality of the execution and the skill of the implementor.  
+What's clear from this analysis is that software dependencies don't _conquer_ any risk - the moves they make on the [Risk Landscape](Risk-Landscape) are _subtle_.  Whether or not you end up in a more favourable position risk-wise is going to depend heavily on the quality of the execution and the skill of the implementor.  
 
 In particular, _choosing_ dependencies can be extremely difficult.  As we discussed above, the usefulness of any tool depends on its fit for purpose, it's _ergonomics within a given context_.  It's all too easy to pick a good tool for the wrong job:  
 
 > "I suppose it is tempting, if the only tool you have is a hammer, to treat everything as if it were a nail." - [Abraham Maslow, _Toward a Psychology of Being_](https://en.wiktionary.org/wiki/if_all_you_have_is_a_hammer,_everything_looks_like_a_nail)
 
-With software dependencies, we often have to live with the decisions we make for a long time.  In my experience, given the [Boundary Risks](Boundary-Risks) associated with getting this wrong, not enough time is spent really thinking about this in advance.  
+With software dependencies, we often have to live with the decisions we make for a long time.  In my experience, given the [Boundary Risks](Boundary-Risk) associated with getting this wrong, not enough time is spent really thinking about this in advance.  
 
 Let's take a closer look at this problem in the next section, [Boundary Risk](Boundary-Risk).
 

@@ -83,11 +83,11 @@ Hopefully, after this stage, our [Internal Model](Glossary#Internal-Model) might
 
 In surfacing these risks, there is another outcome:  while **Feature X** might be flawed as originally presented, the BA can "evolve" it into a specification, and tie it down sufficiently to reduce the risks.   The BA does all this by simply _thinking about it_, _talking to people_ and _writing stuff down_.
 
-This process of evolving the feature request into a requirement is the BAs job.  From our risk-first perspective, it is _taking an idea and making it meet reality_.  Not the _full reality_ of production (yet), but something more limited.  After its brush with reality, the [goal in mind](Goal-In-Mind) has _evolved_ from being **Feature X (Idea)** to **Feature X (Specification)**.
+This process of evolving the feature request into a requirement is the BAs job.  From our risk-first perspective, it is _taking an idea and making it meet reality_.  Not the _full reality_ of production (yet), but something more limited.  After its brush with reality, the [goal in mind](Glossary#Goal-In-Mind) has _evolved_ from being **Feature X (Idea)** to **Feature X (Specification)**.
 
 ### Code And Unit Test
 
-The next stage for our feature, **Feature X (Specification)** is that it gets coded and some tests get written.  Let's look at how our [goal in mind](Goal-In-Mind) meets a new reality:   this time it's the reality of a pre-existing codebase, which has it's own internal logic.
+The next stage for our feature, **Feature X (Specification)** is that it gets coded and some tests get written.  Let's look at how our [goal in mind](Glossary#Goal-In-Mind) meets a new reality:   this time it's the reality of a pre-existing codebase, which has it's own internal logic.
 
 As the developer begins coding the feature in the software, she will start with an [Internal Model](Glossary#Internal-Model) of the software, and how the code fits into it.  But, in the process of implementing it, she is likely to learn about the codebase, and 
 her [Internal Model](Glossary#Internal-Model) will develop.  
@@ -95,7 +95,7 @@ her [Internal Model](Glossary#Internal-Model) will develop.
 To a large extent, this is the whole point of _type safety_:  to ensure that your [Internal Model](Glossary#Internal-Model) stays consistent with the reality of the codebase.  If you add code that doesn't fit the reality of the codebase, you'll know about it with compile errors.
 
 The same thing is true of writing unit tests:  again you are testing your [Internal Model](Glossary#Internal-Model) against the reality of the system being built, running in your development environment.  Hopefully, this will surface some new hidden risks, and again,
-because the [goal in mind](Goal-In-Mind) has met reality, it is changed, to **Feature X (Code)**.
+because the [goal in mind](Glossary#Goal-In-Mind) has met reality, it is changed, to **Feature X (Code)**.
 
 ![Coding Process](images/generated/development_process_code.png)
 
