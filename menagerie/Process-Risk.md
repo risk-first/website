@@ -95,22 +95,23 @@ For many years I have worked in the Finance Industry, and it's given me time to 
 
 **Process Risk**, then, is a type of [Dependency Risk](Dependency-Risk), where you are relying on a process.  In a way, it's no different from any other kind of [Dependency Risk](Dependency-Risk).   But [Process Risk](Process-Risk) manifests itself in fairly predictable ways:
 
- - [Reliability Risk](Dependency-Risk#reliability-risk): If _people_ are part of the process, there's the chance that they forget to follow the process itself, and miss steps or forget your request completely.  The reliability is related to the amount of [Complexity Risk]() the process is absorbing.
+ - [Reliability Risk](Dependency-Risk#reliability-risk): If _people_ are part of the process, there's the chance that they forget to follow the process itself, and miss steps or forget your request completely.  The reliability is related to the amount of [Complexity Risk]() the process is covering.
  - [Invisibility Risk](Communication-Risk#invisibility-risk): Usually, processes (like other dependencies) trade [Complexity Risk]() for visibility:  it's often not possible to see how far along a process is to completion.  Sometimes, you can do this to an extent.  For example, when I send a package for delivery, I can see roughly how far it's got on the tracking website.  But, this is still less-than-complete information, and is a representation of reality.    
  - [Fit Risk](Feature-Risk#feature-fit-risk): You have to be careful to match the process to the outcome you want.  Sometimes, it's easy to waste time on the wrong process.
  - [Dead-End Risk](Complexity-Risk#dead-end-risk): Even if you have the right process, initiating a process has no guarantee that your efforts won't be wasted and you'll be back where you started from.  The chances of this happening increase as you get further from the standard use-case for the process, and the sunk cost increases with the length of time the process takes to report back.
  - [Agency Risk](Agency-Risk): Due to Parkinson's Law, above.
  - [Operational Risk](Operational-Risk): Where processes fail, this is often called [Operational Risk](Operational-Risk), which we'll address further in it's own section.
-	
-## Counterparty Risk
+ - [Credit Risk](Process-Risk#credit-risk): Where you pay for something to be done, but then end up without the outcome you want.  Let's look at that in more detail.
+ 
+## Credit Risk
 
-Where the process you depend on is being run by a third-party organisation, (or that party depends on you) you are looking at [Counterparty Risk]:
+Where the process you depend on is being run by a third-party organisation, (or that party depends on you) you are looking at [Credit Risk](Process-Risk#credit-risk) (also known as [Counterparty Risk](Process-Risk#credit-risk):
 
-> tbd.
+> "A credit risk is the risk of default on a debt that may arise from a borrower failing to make required payments... For example... A business or consumer does not pay a trade invoice when due [or] A business does not pay an employee's earned wages when due" - [Credit Risk, _Wikipedia_](https://en.wikipedia.org/wiki/Credit_risk)
 
-Money is _changing hands_ between you and the supplier of the process, and often, the money doesn't transfer at the same time as the process is performed.  Let's look at an example:  Instead of hosting my website on a server in my office, I could choose to host my software project with an online provider.   I am trading [Complexity Risk]() for [Counterparty Risk], because now, I have to care that the supplier is solvent.  There's a couple of ways this could go wrong:  They may _take my payment_, but then turn off my account.  Or, they could go bankrupt, and leave me with the costs of moving to another provider (this is also [Dead-End Risk]).  
+Money is _changing hands_ between you and the supplier of the process, and often, the money doesn't transfer _at the same time_ as the process is performed.  Let's look at an example:  Instead of hosting my website on a server in my office, I could choose to host my software project with an online provider.   I am trading [Complexity Risk](Complexity-Risk) for [Credit Risk](Process-Risk#credit-risk), because now, I have to care that the supplier is solvent.  There's a couple of ways this could go wrong:  They may _take my payment_, but then turn off my account.  Or, they could go bankrupt, and leave me with the costs of moving to another provider (this is also [Dead-End Risk](Complexity-Risk#dead-end-risk)).  
 
-Mechanisms like _insurance_ and _guarantees_ help reduce this risk:  
+Mechanisms like [insurance](https://en.wikipedia.org/wiki/Insurance_policy), [contracts](https://en.wikipedia.org/wiki/Contract) and [guarantees](https://en.wikipedia.org/wiki/Guarantee) help reduce this risk.
 
 ## Feedback Loops
 
@@ -136,11 +137,5 @@ This is a nasty situation, but there are a couple of ways to de-risk this:
 
 tbd.
 
-
-## Dependencies - A Quick Review
-
-Dependency of any kind is a choice in which you are trying to choosing a position of lower [Attendant Risk](Glossary#attendant-risk) than you would have without the dependency. 
-
-So, we've looked at different types of dependencies.   
 
 
