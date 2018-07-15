@@ -37,7 +37,7 @@ public class LinkChecker {
 			this.image = image;
 			
 			if (link.startsWith("#")) {
-				this.link = file.substring(0, file.lastIndexOf(".md"))+link;
+				this.link = file.substring(0, file.lastIndexOf(".md")).toLowerCase()+link;
 			} else {
 				this.link = link;
 			}
@@ -141,7 +141,7 @@ public class LinkChecker {
 	private static String createLink(String name, String title) {
 		String mainName = name.substring(0,  name.indexOf(".md"));
 		if (title != null) {
-			String titleLink = title.trim().replaceAll("[\\&\\:\\/]*", "").replace(" ","-");
+			String titleLink = title.trim().replaceAll("[\\&\\:\\/\\#]*", "").replace(" ","-");
 			mainName =  mainName+"#"+titleLink;
 		}
 		
