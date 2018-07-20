@@ -21,7 +21,9 @@ Let's start with an obvious example: Musical Instruments.  Let's say you want to
 
 Those risks are true for _any_ instrument you choose.  However, if you choose the _uncommon_ instrument like the [Balalaika](), you have _worse_ [boundary risk](), because the _ecosystem_ for the balalaika is smaller.   It might be hard to find a tutor, or a band needing a balalaika.  You're unlikely to find one in a friend's house (compared to the piano, say).  
 
-Even choosing a Piano has [Boundary Risk]().  By spending your time learning to play the piano, you're mitigating [Communication Risk]() issues, but _mostly_, your skills won't be transferrable to playing the guitar.  Your decision to choose one instrument over another cements the [Boundary Risk]: you're following a path on the [Risk Landscape]() and changing to a different path is _expensive_.
+Even choosing the Piano has [Boundary Risk]().  By spending your time learning to play the piano, you're mitigating [Communication Risk]() issues, but _mostly_, your skills won't be transferrable to playing the guitar.  Your decision to choose one instrument over another cements the [Boundary Risk]: you're following a path on the [Risk Landscape]() and changing to a different path is _expensive_.
+
+Also, it stands to reason that making _any_ choice is better than making _no_ choice, because you can't try and learn _all_ the instruments.  Doing that, you'd make no meaningful progress on any of them.
 
 ## Integration And Translation
 
@@ -68,6 +70,7 @@ So **Boundary Risk** is the attendant [Complexity](Complexity-Risk) required to 
 ## Plugins, Ecosystems and Evolution
 
 ### Plugins 
+
 Let's look at an example.
 
 On the face of it, [WordPress]() and [Drupal]() should be very similar:
@@ -80,13 +83,15 @@ In practice, they are very different.  This could be put down to different _desi
 
 (Side note: I wasn't short of go-to examples for this.  I could have picked on [Team City]() and [Jenkins]() here ([Continuous Integration]() tools, or [Maven]() and [Gradle]() (Java build tools).  In all cases, the choice of plugins I have is dependent on the platform I've chosen, despite the fact that the platforms are solving pretty much the same problem. )
 
-### Ecosystems
+### Ecosystems and Systems
 
 The quality, and choice of [plugins]() for a given platform, along with factors such as community and online documentation is often called its [ecosystem]:
 
 tbd
 
-You can think of the ecosystem as being like the shape of a town or a city.  Within it, it's easy to make moves on the [Risk Landscape](), you just pick up the plugin and go.  It's like a transport system.    
+You can think of the ecosystem as being like the footprint of a town or a city, consisting of the buildings, transport network and the people that live there.  Within the city, and because of the transport network and the amenities available, it's easy to make rapid, useful moves on the [Risk Landscape]().  In a software ecosystem it's the same: the ecosystem has gathered together to provide a way to mitigate 
+
+Systems and Ecosystems.
 
 Ecosystem size is a key determinant of boundary risk:  in a _large_ ecosystem, the diameter of the [boundary] is large, so [Boundary Risk]() is low.  Your moves on the [Risk Landscape](Glossary#risk-landscape) are unlikely to collide with it.  The boundary _got large_ because other developers before you hit the boundary and did the work building bridges, roads and pushing it back so that the boundary didn't get in their way.  In a small ecosystem, you are much more likely to come into contact with the edges of the boundary.  _You_ will have to be the developer that pushes back the frontier and builds the roads for the others.  This is hard work.
 
@@ -102,16 +107,19 @@ You can see the same effect in the adoption rates of [Wordpress]() and [Drupal](
 
 tbd.  graphs of adoption
 
-Nowadays, the [WordPress]() user base is huge:  approximately tbd 30% of all websites are hosted with [WordPress]().  For [Drupal]() it's tbd.  That it's this way round could be entirely accidental.  Is this because [WordPress]() is _better_ than [Drupal]()? That's arguable.  But, by now _it should be_: there are so many people working on this platform:
- - Submitting bug requests
- - Fixing bugs
- - Writing documentation
- - Building plugins
- - Creating features
+Nowadays, the [WordPress]() user base is huge:  approximately tbd 30% of all websites are hosted with [WordPress]().  For [Drupal]() it's tbd.  That it's this way round could be entirely accidental.  Is this because [WordPress]() is _better_ than [Drupal]()? That's arguable.  But, by now _it should be_: there are so many people in this ecosystem:
+ - Creating web sites.
+ - Using those sites.
+ - Submitting bug requests.
+ - Fixing bugs.
+ - Writing documentation.
+ - Building plugins.
+ - Creating features.
+ - Improving the core platform.
  
 ... that by now _it should be miles better_ than [Drupal]().  But, there are other things to consider...
 
-## The Peter Principle
+### The Peter Principle
 
 When a tool or platform is popular, it is under pressure to increase in complexity.  This is because people are attracted to something useful, and want to extend it to new purposes.  This is known as _The Peter Principle_:  
 
@@ -128,7 +136,7 @@ Why does this happen?
  - Human needs are _fractal_ in [complexity]().  You can always find ways to make an [API]() _better_.
  - There is [Red Queen Risk](Feature-Risk):  our requirements evolve with time.   [Android Apps]() weren't even a thing when Java 3 came out, for example, yet they are all written in Java now, and Java has had to keep up.  
 
-## Backward Compatibility and Emergent Complexity
+### Backward Compatibility and Emergent Complexity
 
 As we saw in [Software Dependency Risk](), The art of good design is to afford the greatest increase in functionality with the smallest increase in complexity possible, and this usually means [Refactoring](Coding).  But, this is at odds with [Backward Compatibility](Communication-Risk).
 
@@ -136,162 +144,186 @@ Each new version has a larger [boundary] than the one before (pushing back [Boun
 
 I spent many years living in London.  It was fun, and easy to travel round, but it was highly [Complex]() and there were plenty of downsides like the cost of travel and housing, and pollution.   Sometimes, it felt like the design of the city was out to get you: the roads were too narrow, the river was always in the way and the Underground carriages were too small.  Wouldn't it be better to start again?
 
-TALK ABOUT EVOLUTION
+### Focus vs Overreach
 
-### Java 
+Because of backwards compatibility and internal complexity, large systems and ecosystems are unable to change quickly.   [Complexity is Mass]() after all.  This means that when the world changes ([Red Queen Risk]()), new systems will come along to plug the gaps.  tbd. 
 
-As with a real city, complexity, communication risk.
+This implies a trade-off:  sometimes it's better to accept the [Boundary Risk]() innate in a smaller system than try to work within the bigger, more complex system.
 
+example:  
 
+In the late 80's and 90's there was a massive push towards _building functionality in the database_.  [Relational Database Managment Systems (RDBMSs)]() were all-in-one solutions, expensive platforms that you purchased and built _everything_ inside.  However, this dream didn't last:  
 
+why?  (need some research here).
 
- 
+This  tbd
 
+tbd. diagram here. 
 
+## Boundary-Crossing With Standards
 
-java is popular because it defeated boundary risk.  js does the same.
+Sometimes, technology comes along that allows us to cross boundaries, like a _bridge_ or a _road_.  This has the effect of making it easy to to go from one self-contained [ecosystem]() to another.  Going back to [Wordpress](), a simple example might be the [Analytics Dashboard]() which provides [Google Analytics]() functionality inside [WordPress]().  Or, the [SVG Plugin](), which allows you to use [SVG images]() within [WordPress]().  I find, a lot of code I write is of this nature:  trying to write the _glue code_ to together two different _ecosystems_.   
 
+- [ASCII](): fixed the different-character-sets boundary risk by being a standard that others could adopt.  Before everyone agreed on ASCII, copying data from one computer system to another was a massive pain, and would involve some kind of translation.  [UTF]() continues this work to ensure we don't have to worry about **Translation** from one encoding to another.  This is an example of mitigating [Boundary Risk]() with standards.  One of the problems with this is that _you have to get everyone to change to using the standard_ and this isn't always a given.  
 
+- [C]](): The C programming language provided a way to get the same programs compiled against different architectures, therefore providing some _portability_ to code.  This essentially reduced the [Boundary Risk]() of the system architectures.  The problem was, this was a _leaky abstraction_: each different operating system would likely have it's own libraries, and so to support multiple operating systems, you'd have to write code against multiple different libraries.  In a way, C provides a standard:  it's a programming language that [Abstracts]() over processor instruction sets.
 
-Encapsulation is the main
+- [Java]() took what C did and went one step further: instead of a _compile anywhere_ ethos, it was a _run anywhere_ ethos.  Java code could run anywhere where there was a [Java Virtual Machine]() installed.   Again, this [abstracted] away the details of the lower level architecture.  As we saw above, Java comes with a large and steadily growing collection library of built-in functionality that you can call _instead_ of diving down to the host operating system.  If the [Java Virtual Machine]() is installed, you can _rely_ on this functionality.  So Java provides a standard [abstraction] over operating systems.
 
+- [Docker]() and [Containerization](): [Emulation]() has long been a thing in computing, where one platform _pretends to be_ another in order to get foreign software to run.  But containerization software like [Docker]() and [Kubernetes]() are leading a huge upswing in the popularity of this.  The key advantage is that you can spin up running software services _in a standard way_ with very little administration.   The [Protocol Complexity]() of installing each _individual_ piece of software has been mitigated by giving them all a _standard interface_ for composing the systems.  Docker is a _de facto_ standard, which can be used to wrap the individual software components _after the fact_.
 
-## Boundary-Crossing
+- [Internet Protocol](): As we saw in [Communication Risk](), the [Internet Protocol (IP)]() is the _lingua franca_ of the modern internet.  People adopt IP now because all the hardware is designed with this in mind, and using any other standard would leave you cut off in [Walled Garden](), a victim of [Boundary Risk]() because you can't communicate with anyone else.  However, at one period of time, there were [many competing standards](), and IP was the ecosystem that "won".
 
-Sometimes, technology comes along that allows us to cross boundaries effectivey, and there are a number of ways that this can happen:
+|Technology            |Type of Ecosystem                                                       |Standardization                          | Type of Standarization           |
+|----------------------|------------------------------------------------------------------------|-----------------------------------------|----------------------------------|
+|[ASCII]()             |Text File Formats on different Operating Systems                        | tbd  Standards Institute                |Gradual conformity                |
+|[C]()                 |Processor Instruction Sets                                              |                                         |Abstraction over differences      |
+|[Java]()              |Operating Systems                                                       |                                         |Abstraction over differences      |
+|[Docker]()            |Operating Systems, Installation and administration of Programs          |                                         |Abstraction over differences      |
+|[Internet Protocol]() |Networks                                                                | Standards Institute                     |Gradual conformity                |
 
-### [ASCII]()
+Downside. 
 
-[ASCII]() fixed the different-character-sets boundary risk by being a standard that others could adopt.   [UTF]() continues this work to ensure we don't have to worry about **Translation** from one encoding to another.  This mitigates **Boundary Risk** by standards.
-
-### Maven / Semver
-
-Maven is a Java build tool in which you can specify a project declaratively, including details of all its dependencies.   Maven will then manage the downloading of these dependencies at compile time.   [Semantic Versioning]() is a technique for ameliorating the problems of different dependencies being on different version numbers.
-
-### C
-
-The C programming language provided a way to get the same programs compiled against different architectures, therefore providing some _portability_ to code.  This essentially reduced the **Boundary Risk** of the system architectures (although this was a leaky abstraction)
-
-### Java
-
-Java provided something similar to C: instead of a _compile anywhere_ ethos, it was a _run anywhere_ ethos.  Java code could run anywhere where there was a [Java Virtual Machine]() installed.   Again, this _abstracted_ away the details of the lower level architecture.
-
-### Microservices
-
-Microservices:  using HTTP as the boundary.
+tbd 2 diagrams:  one of adopting a standard, one of the resultant
 
 
-
-### Virtualization / Docker
-
-
-
-
-used to be boundary risk was the risk that problems occur because you can't test across boundaries.
 
 
 ## Complex Boundaries
 
+As shown in the above diagram, mitigating [Boundary Risk] involves taking on complexity.  The more [Protocol Complexity]() there is to bridge the two ecosystems, the more [Complex]() the bridge will necessarily be.  
 
+|[Protocol Risk][br1] From A  |[Protocol Risk][br2] From B |Resulting Bridge Complexity  |Example                                                  |
+|-----------------------------|----------------------------|-----------------------------|---------------------------------------------------------|
+|Low                          |Low                         |Simple                       |Changing from one date format to another.                |
+|High                         |Low                         |Moderate                     |Status Dashboard, tbd                                    |
+|High                         |High                        |Complex                      |Object-Relational Mapping (ORM) Tools, (see below)       |
+|High + Evolving              |Low                         |Moderate, Versioned          |Simple Phone App, e.g. note-taker or calculator          |
+|Evolving                     |High                        |Complex                      |Modern browser (see below)                               |
+|Evolving                     |Evolving                    |Very Complex                 |Google Search, Scala (see below)                         |
 
-.   - many of the concepts are the same, but it's a nightmare to map between the two.
+[br1]: (Communication-Risk#Protocol-Risk)
 
-However, sometimes, tech comes along to bridge the gap: C, Java, Containerization (Docker)
+From examining the [Protocol Risk][br1] at each end of the bridge you are creating, you can get a rough idea of how complex the endeavour will be:
+ - If it's low-risk at both ends, you're probably going to be able to knock it out easily.  Like translating a date, or converting one file format to another.
+ - Where one of the protocols is _evolving_, you're definitely going to need to keep releasing new versions.   The functionality of a `Calculator` app on my phone remains the same, but new versions have to be released as the phone APIs change, screens change resolution and so on.
+ - tbd
 
-Vendor Lock-In
+Where boundaries
 
 Trying to create a complex, fractal surface.  User requirements are fractal in nature.
 
 
+### Object-Relational Mapping 
 
+For example, [Object Relational Mapping (ORM)]() has long been a problem in software.  This is [Boundary-Crossing] software trying to bridge the gap between [Relational Databases]() and [Object-Oriented Languages]() like [Java].  Building a _general_ library that does this and is useful tbd said:
 
+> 'ORM is the vietnam of ...' -
 
-Executable Boundary Risk
+This is a particularly difficult problem because the two ecosystems are so _rich_ and _complex_ in the functionality they expose.   But what are the alternatives? 
 
+- Either back to building functionality within the database again, using stored procedures
+- Building [Object Oriented Databases]().   It's interesting that neither of these really worked out. 
+- Custom-building the bridge between the systems, one database call at-a-time in your own software.  
 
-- protocols issue - this is boundary risk too.
+This is tbd hobson's choice, there is strong debate about whether [ORM]() is a worse trade of mitigated [Boundary Risk]() for attendant [Complexity Risk]() or not, and clearly will depend on your circumstances.
 
+### Scala
 
-Add configuration risk
+Mapping between complex boundaries is expecially difficult if the [Boundaries]() are evolving and changing as you go.  This means in ecosystems that are changing rapidly, you are unlikely to be able to create lasting bridges between them.  Given that [Java]() is an old, large and complex ecosystem, you would imagine that it would have a slow-enough rate of change that abstracting technologies can be built on top of it safely.  
 
-Should this be called contextual risk?
+Indeed, we see that happening with [Clojure]() and [Kotlin](), two successful languages built on top of the [Java Virtual Machine (JVM)]() and offering compatibility with it.
 
-deployment risk
+[Scala] is arguably the first mainstream language that tried to do the same thing:  it is trying to build a [Functional Programming]() paradigm on top of the [Java Virtual Machine (JVM)](), which traditionally has an [Object Oriented]() paradigm.
 
-long command line
+The problem faced by [Scala]() is that Java didn't stay still:  as soon as they demonstrated some really useful features in Scala (i.e. stream-based processing), Java moved to include this new functionality too.  If they hadn't, the developer community would have slowly drifted away and used Scala instead.
 
-Testing in Production
+So, in a sense, Scala is a _success story_: they were able to force change to Java.  But, once Java had changed, Scala was in the difficult position of having two sets of competing features in the platform:  the existing Scala streams, and the new Java streams.   
 
-platforms - compiling code for different platofrms, the jvm.  javascript, other languages
+Clojure can interop with Java because on one side, the boundary is simple:  lisp is a simple language which lends itself to reimplementation within other platforms.   Therefore, the complexity of the bridge is _simple_:  all that needs to be provided is a way to call methods from Java to clojure.
 
-protocol risk
+Scala and Java have a complex relationship because Scala creates it's own complex boundary:  it is syntactically and functionally a broad language with lots of features.  And so is Java.  Mapping from one to the other is therefore 
 
-
-One of the ways to sort boundary risk is with abstraction, but this doesn't work with languages - is the surface of a langauge too large?
-
-- some languages compile back ot javascript
-
-C# and Java, for example.
-
-They deliberately are different in order to accentuate boundary risk/
-
-Boundary risk moves on. e.g. the JVM abstracted away _platform_.  IP protocol abstracted away a lot of different network types.
-
-we used to worry about disks, and file formats and even ASCII wasn't a common format, everyone used something different.
-
-Now, the boundary is AWS/Azuretc .  Databases are still different _a bit_, but you're foolish for using the weird features.  Tom's argument
-for using Oracle  features.
-
-Should I abstract away a technology?  Does this gain anything
-
-
-Boundary risk - filesystems and databases.
-
-SQL, Linux, Java, Bash, Servlets, Junit, Gradle, Maven, Team City, HTML, CSS, Browsers, Javascript, SVN, GIT..
-
-Why this?
-
-It's like a fitness landscape.  We're evolving 
-
-Evolution of dependencies
-
-Red Queen Risk again
-
-boundary risk is also like dead-end risk.. consider the point from the risk landscape
-
-But originally, boundary risk referred to the fact that the boundaries were around the software.  
-
-this kind of made sense: running on your pc would be different than running on an xbox, linode etc.
-Muneer building the extractor, using ASP.net.. turned out we don't deploy .net/ASP only Java
-
-
-
-So what exactly is boundary risk?
-
-The incompatibilities of different worlds... that can't be spanned.
-
-phantomjs / chrome headless etc.
-
-the boundary can be too complex to overcome
-
-java/scala
-
-Sometimes the boundary is simple, other times complex
-sometimes its complexity is hidden
-
-Clojure can interop with Java because the complexity of the boundary is _simple_:  all that needs to be provided is a way to call methods on java
-objects and get return values.
-
-Scala and Java have a complex relationship because Scala creates it's own complex boundary, and so does Java.  It's _almost_ impossible
 for interop here.  Why is one so different from the other?
 
+### Browsers
 
-The boundaries really exist:  building things in a java-only world means less boundary risk
-Emacs is entirely written in lisp, and your extensions to it are also lisp.   This means less boundary risk, which in turn makes some 
-tasks easier to do
+Web browsers are another suprisingly complex boundary.  They have to understand the following [protocols]():
+
+ - [HTTP]() for loading resources (as we already reviewed in [Complexity Risk]()
+ - [HTML]() Pages, for describing the content of web pages [Complexity Risk]()
+ - Various image formats
+ - [Javascript]() for web-page _interactivity_
+ - [CSS]() for web-page styling, animation and so on.
+ - ... and several others.
+ 
+Handling any one of these protocols alone is a massive endeavour, so browsers are built on top of [Software Libraries]() which handle each concern, for example, [Networking Libraries](),  [Parsers]() and so on. 
+ 
+One way of looking at the browser is that it is a _function_, where those elements listed above are the _inputs_ to the function, and the output is _what is displayed on the screen_, as shown in the image below.
+
+tbd. browser as a function
+
+There are three specific problems that make this a really complex boundary:
+
+1.  All of the standards above are _evolving and improving_.  And, although [HTML5]() (say) is a reasonably well-specified standard, in reality, web pages tend not to adhere exactly to the letter of it.  People make mistakes in the HTML they write, and it's up to the browser to try and figure out what they _meant_ to write, rather than what they did write.  This makes the _input_ to the function extremely complex.
+
+2.  Similarly, the _output_ of the function is not well defined either, and relies a lot on people's _subjective aesthetic judgement_.  For example, if you insert a `<table>` into an HTML page, the specification doesn't say anything about exactly how big the table should be, the size of it's borders, the spacing of the content and so on.  At least, initially, _none_ of this was covered by the [HTML Specification]().  The [CSS]() specification is over time clearing this up, but it's not _exactly nailed down_, which means...
+
+3.  That because there are various different browsers ([Chrome](), [Safari](), [Internet Explorer](), [Microsoft Edge](), [Firefox]() etc.) and each browser has multiple different versions, released over a period of many years, you cannot, as a web-page developer know, _a priori_ what your web-page will look like to a user.
+
+As developers trying to build software to be delivered over the internet, this is therefore a source of common [Boundary Risk]().  If you were trying to build software to work in _all browsers_ and _all versions_, this problem would be nearly insurmountable.  So, in order to tackle this risk, we do the following:
+
+- We pick a small (but commonly used) subset of browsers, and use features from the specifications that we know commonly work in that subset.  
+- We test across the subset.  Again, testing is _harder than it should be_, because of problem 2 above, that the expected output is not exactly defined.  This generally means you have to get humans to apply their _subjective aesthetic judgement_, rather than getting machines to do it.
+- There is considerable pressure on browser developers to ensure consistency of behaviour across the implementations.  If all the browsers work the same, then we don't face the [Boundary Risk]() of having to choose just one to make our software work in.  However, it's not always been like this... 
+
+## Vendor Lock-In
+
+In the late 1990s, faced with the emergence of the nascent [World Wide Web](), and the [Netscape Navigator]() browser, [Microsoft]() adoped a strategy known as [Embrace and Extend]().  The idea of this was to subvert the [HTML]() standard to their own ends by _embracing_ the standard and creating their own browser ([Internet Explorer]()) and then _extending_ it with as much functionality as possible, which would then _not work_ in [Netscape Navigator]().  They then embarked on a campaign to try and get everyone to "upgrade" to [Internet Explorer]().   In this way, they hoped to "own" the Internet, or at least, the software of the browser, which they saw as analogous to being the "operating system" of the Internet, and therefore a threat to their own operating system, [Windows]().
+
+There are two questions we need to ask about this, from the point-of-view of understanding [Boundary Risk]():
+
+1.  Why was this a successful strategy?  
+2.  Why did they stop doing this?
+
+Let's look at the first question then.  Yes, it was a successful strategy.  In the 1990s, browser functionality was rudimentary.  Developers were _desperate_ for more features, and for more control over what appeared on their webpages.  And, [Internet Explorer (IE)]()	 was a free download (or, bundled with Windows).   By shunning other browsers and coding just for [IE](), developers pushed [Boundary Risk]() to the consumers of the web pages and in return mitigated [Dependency Fit Risk](): they were able to get more of the functionality they wanted in the browser.
+
+It's worth pointing out, _this was not a new strategy_:  
+
+ - Processor Chip manufacturers had done something similar in the tbds:  by providing features (instructions) on their processors that other vendors didn't have, they made their processors more attractive to system integrators.  However, since the instructions were different on different chips, this created [Boundary Risk]() for the integrators.  Intel and Microsoft were able to use this fact to build a big ecosystem around Windows running on Intel chips (so called, Wintel).
+ - We have two main _mobile_ ecosystems:  [Apple]()'s [iOS] and [Google]()'s [Android](), which are both _very_ different and complex ecosystems with large, complex boundaries.  They are both innovating as fast as possible to keep users happy with their features.  Tools like [Xamarin]() exist which allow you to build 
+ - Currently, [Amazon Web Services (AWS)]() are competing with [Microsoft Azure]() and [Google tbd] over building tools for [Platform as a Service (PaaS)]() (running software in the cloud).  They are both racing to build new functionality, but at the same time it's hard to move from one vendor to another as there is no standardization on the tools.
+ - As we saw above, Database vendors tried to do the same thing with features in the database.  Oracle particularly makes money over differentiating itself from competitors by providing features that other vendors don't have.  Tom tbd provides a compelling argument for using these features thus:
+
+> tbd.
+
+The next question, is why did Microsoft _stop_ pursuing this strategy?  This is more difficult to answer, but let's try:
+ - To gain market share, Internet Explorer was given away free, and other browsers had to follow suit.  This meant that owning the browser didn't turn out to be a huge strategic advantage for Microsoft in the way that owning Windows was, because they couldn't easily monetize this advantage.  Perhaps this was why Microsoft under-invested in IE from tbd.
+ - Companies like Google demonstrated that the value on the Web was via _advertising_.  This meant driving customers through things like _search_.  Microsoft tried then to compete on search, and double-down on their Windows and Office cash-cows.   tbd.
+ - Microsoft faced _considerable_ push-back from the 
+ 
+## Everyday Boundary Risks
+
+[Boundary Risk]() occurs all the time.  Let's look at some ways:
+
+- **Configuration**:  When software has to be deployed onto a server, there has to be configuration (usually on the command line, or via configuration property files) in order to bridge the boundary between the _environment it's running in_ and the _software being run_.  Often, this is setting up file locations, security keys and passwords, and telling it where to find other files and services.  
+- **Integration Testing**:  Building a unit test is easy.  You are generally testing some code you have written, aided with a testing framework.  Your code and the framework are both written in the same language, which means low boundary risk.  But, to _integration test_ you need to step outside this boundary and so it becomes much harder.  This is true whether you are integrating with other systems (providing or supplying them with data) or parts of your own system (say testing the client-side and server parts together).  
+- **User Interface Testing**:  If you are supplying a user-interface, then the interface with the user is already a complex, under-specified risky [protocol]().  Although tools exist to automate UI testing (such as [Selenium](), these rarely satisfactorily mitigate this [protocol risk]():  can you be sure that the screen hasn't got strange glitches, that the mouse moves correctly, that the proportions on the screen are correct on all browsers?  
+- **
 
 
+### Boundary Risk In The Workplace
 
+Muneer building the extractor, using ASP.net.. turned out we don't deploy .net/ASP only Java
+Boundary Risk In Your Career
+SaaS / Security in banks
+
+
+### The European Union
+
+Boundary risk around companies, (Contracts), abstraction boundaries. 
+
+### Red-Queen Risk
 
 Clearly, from this analysis, 
 
@@ -300,53 +332,20 @@ Second, you can't always be sure that a dependency now will always have the same
 - **Licensing changes**.  (e.g. [Oracle](http://oracle.com) buys **Tangosol** who make [Coherence](https://en.wikipedia.org/wiki/Oracle_Coherence) for example)
 - Security updates not applied.
 - **Better alternatives become available**:  As a real example of this, I began a project in 2016 using [Apache Solr]().  However, in 2018, I would probably use [ElasticSearch](https://en.wikipedia.org/wiki/Elasticsearch).  In the past, I've built websites using [Drupal]() and then later converted them to use [Wordpress]().
-
-
-
-Stuck In the Middle Pattern - Scala / Raj.
-
-machine publishers 
-## Versioning
-
-
-CAREER BOUNDARY RISK - lotus notes
-TESTING BOUNDARY RISK
-
-Need to rethink this:  
- - it's about decision making.  
-
-
-Boundary Risk Defined
- - Exists at confluence of Dependency Risk, Complexity Risk and Protocol Risk
- - Complexity Of the Abstraction (abstractions still are complex).  Learning Curve, Communication.
- - Translation and Integration
- - Boundary Risk Defined: boundaries that exist due to the dependencies' requirements / apis.
- - Emergent Boundary Risk (discussion of surface areas)
  
-Some Examples
- - Wordpress / Drupal:  boundary around each ecosystem
- - Team City / Jenkins:  
- - Java API Surface Area 
-   - C#
- - AWS / Azure Etc. (Vendor Lock-In)
-   - How Containerization mitigates boundary risk
-   - Tom's Argument for using Oracle features
- 
-Boundary Risk Mitigated
- - Standards and Common Protocols (JDBC, ASCII, XML, JSON, HTTP (Microservices))
- - New Abstractions (Maven, Languages: C, Java)
- - Translation Services (Docker, Virtualization)
- 
-Wicked Problems In Boundary Risk
- - Scala (type system)
- - Browser Testing (then, testing generally)
- - Testing Across Boundaries In General
- - Crossing Boundaries
- 
- 
+  This would be a tall order if web pages were forced to conform to the HTML specification, but in reality a lot of HTML is malformed and browsers have to deal with this as they go along.  
 
-- Object relational impedance mismatch
-Boundary risk around companies, (Contracts), abstraction boundaries. 
-bigger the organisation, the more risk that you don't know what's happening outside it
 
-walled gardens
+## Patterns In Boundary Risk
+
+Should I abstract away a technology?  Does this gain anything?
+- The landscape becomes ever more complex(fractal human needs)
+- Large systems ossify and disappear,
+SQL, Linux, Java, Bash, Servlets, Junit, Gradle, Maven, Team City, HTML, CSS, Browsers, Javascript, SVN, GIT..
+Red Queen Risk again
+Boundary risk moves on. e.g. the JVM abstracted away _platform_.  IP protocol abstracted away a lot of different network types.
+boundary risk is also like dead-end risk.. consider the point from the risk landscape
+we used to worry about disks, and file formats and even ASCII wasn't a common format, everyone used something different.
+Implications of boundary risk:  - either systems die under their own weight of complexity, or they get subsumed at a lower level of architecture.
+It's like a fitness landscape.  We're evolving 
+
