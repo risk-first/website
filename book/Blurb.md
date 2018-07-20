@@ -3,7 +3,7 @@
 
 For example, metrics such as “number of open tickets”, “story points”, “code coverage" or "release cadence" give us a numerical feel for how things are going and what needs to happen next.  
 
-And methodologies such as **Scrum**, **Waterfall** and **Lean** give us different approaches to organising our work.
+And methodologies such as **Scrum**, **Waterfall** and **Lean** give us different approaches to organising ourselves and our work.
 
 But what do they all have in common?
 
