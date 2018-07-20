@@ -11,6 +11,8 @@ import java.util.stream.Collectors;
 import org.riskfirst.Article;
 import org.riskfirst.ArticleLoader;
 
+import twitter4j.ResponseList;
+import twitter4j.SavedSearch;
 import twitter4j.StatusUpdate;
 import twitter4j.Twitter;
 import twitter4j.TwitterFactory;
@@ -32,20 +34,21 @@ public class Tweeter {
 		List<Article> allArticles = new ArticleLoader().loadArticles(riskFirstWikiDir);
 		List<Article> articles = allArticles.stream().filter(a -> !tweetsArticle(a)).collect(Collectors.toList());
 		List<Article> tweetsArticle = allArticles.stream().filter(a -> tweetsArticle(a)).collect(Collectors.toList());
+		List<String> tags = twitter.getSavedSearches().stream().map(ss -> ss.getQuery()).collect(Collectors.toList());
 		
 		List<StatusUpdate> potentialTweets = new ArrayList<>();
 		List<Long> retweets;
 		List<Long> potentialRetweets = new ArrayList<>();
 		
-		collectTweets(baseURI, articles, potentialTweets, amount("articles", 5));
-		collectTweets(baseURI, tweetsArticle, potentialTweets, amount("tweets", 5));
+		collectTweets(baseURI, articles, potentialTweets, amount("articles", 3), tags);
+		collectTweets(baseURI, tweetsArticle, potentialTweets, amount("tweets", 3), tags);
 
 		RetweetSource followerSource = new FollowerRetweetSource(twitter);
-		retweets = followerSource.getRandomTweets(amount("follow", 5));
+		retweets = followerSource.getRandomTweets(amount("follow", 2));
 		potentialRetweets.addAll(retweets);
 
 		RetweetSource searchSource = new SavedSearchRetweetSource(twitter);
-		retweets = searchSource.getRandomTweets(amount("searches", 5));
+		retweets = searchSource.getRandomTweets(amount("searches", 2));
 		potentialRetweets.addAll(retweets);
 		
 		for (StatusUpdate statusUpdate : potentialTweets) {
@@ -75,13 +78,13 @@ public class Tweeter {
 		return Integer.parseInt(props.getProperty(prop, ""+i));
 	}
 
-	public static void collectTweets(URI baseURI, List<Article> articles, List<StatusUpdate> potentialTweets, int count) {
+	public static void collectTweets(URI baseURI, List<Article> articles, List<StatusUpdate> potentialTweets, int count, List<String> tags) {
 		List<StatusUpdate> tweets;
-		TweetSource imageTweetSource = new ImageTweetSource(articles, baseURI, riskFirstWikiDir);
+		TweetSource imageTweetSource = new ImageTweetSource(articles, baseURI, riskFirstWikiDir, tags);
 		tweets = imageTweetSource.getRandomTweets(count);
 		potentialTweets.addAll(tweets);
 		
-		TweetSource articleTweetSource = new ArticleTweetSource(articles, baseURI);
+		TweetSource articleTweetSource = new ArticleTweetSource(articles, baseURI, tags);
 		tweets = articleTweetSource.getRandomTweets(count);
 		potentialTweets.addAll(tweets);
 	}

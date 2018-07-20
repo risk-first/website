@@ -2,6 +2,7 @@ package org.riskfirst.twitter;
 
 import java.io.File;
 import java.net.URI;
+import java.util.ArrayList;
 import java.util.EnumSet;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -13,13 +14,12 @@ import org.riskfirst.Link;
 import twitter4j.StatusUpdate;
 
 public class ImageTweetSource extends AbstractRiskFirstWikiTweetSource implements TweetSource {
-	
-	public static final String STANDARD_HASHTAGS = " #riskfirst #agile #methodology #ci";
-	
+		
 	private String riskFirstWikiDir;
+	private List<String> hashtags = new ArrayList<>();
 
-	public ImageTweetSource(List<Article> articles, URI baseUri, String riskFirstWikiDir) {
-		super(articles, baseUri);
+	public ImageTweetSource(List<Article> articles, URI baseUri, String riskFirstWikiDir, List<String> hashtags) {
+		super(articles, baseUri, hashtags);
 		this.riskFirstWikiDir = riskFirstWikiDir;
 	}
 
@@ -35,7 +35,7 @@ public class ImageTweetSource extends AbstractRiskFirstWikiTweetSource implement
 	}
 	
 	private StatusUpdate convertToStatusUpdate(Link l) {
-		StatusUpdate out = new StatusUpdate(l.getText()+STANDARD_HASHTAGS);
+		StatusUpdate out = new StatusUpdate(l.getText()+randomHashtags(4));
 		out.setMedia(getImageFile(l.getUrl()));
 		return out;
 	}

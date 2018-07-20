@@ -12,10 +12,8 @@ import twitter4j.StatusUpdate;
 
 public class ArticleTweetSource extends AbstractRiskFirstWikiTweetSource {
 	
-	public static final String STANDARD_HASHTAGS = "";
-
-	public ArticleTweetSource(List<Article> articles, URI baseUri) {
-		super(articles, baseUri);
+	public ArticleTweetSource(List<Article> articles, URI baseUri, List<String> tags) {
+		super(articles, baseUri, tags);
 	}
 	
 	static final Pattern p = Pattern.compile("\\<\\!-- tweet-start --\\>(.*?)\\<\\!-- tweet-end --\\>");
@@ -28,14 +26,12 @@ public class ArticleTweetSource extends AbstractRiskFirstWikiTweetSource {
 	}
 
 	public void getTweetsFor(Article a, List<StatusUpdate> out) {
-		if (!a.getFile().getName().contains("Tweets")) {
-			String text = a.getText();
-			Matcher m = p.matcher(text);
-			while (m.find()) {
-				String tweet = m.group(1);
-				StatusUpdate su = new StatusUpdate(deMarkdown(tweet) + " "+a.getUrl(baseUri.toString()));
-				out.add(su);
-			}
+		String text = a.getText();
+		Matcher m = p.matcher(text);
+		while (m.find()) {
+			String tweet = m.group(1);
+			StatusUpdate su = new StatusUpdate(deMarkdown(tweet) + " "+a.getUrl(baseUri.toString()));
+			out.add(su);
 		}
 	}
 	
@@ -45,9 +41,6 @@ public class ArticleTweetSource extends AbstractRiskFirstWikiTweetSource {
 				link -> sb.append(link.getText()+" ("+baseUri.toString()+link.getUrl()+")"), 
 				t ->sb.append(t));
 		 
-		return sb.toString();
+		return sb.toString()+randomHashtags(2);
 	}
-	
-	
-
 }
