@@ -1,6 +1,6 @@
 ![For Review](images/state/for-review.png)
 
-<!-- tweet-start -->[Feature Risk](Feature-Risk) is the category of risks to do with features that have to be in your software.   
+[Feature Risk](Feature-Risk) is the category of risks to do with features that have to be in your software.   
 You could also call it **Functionality Risk**.  It is the risk that you face by _not having features that your clients need_.<!-- tweet-end -->  
 
 ![Feature Risk](images/generated/feature-risk.png) 
