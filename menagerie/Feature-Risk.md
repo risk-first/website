@@ -46,7 +46,7 @@ Also, while delivering new features can delight your customers, breaking existin
 
  > "Market risk is the risk of losses in positions arising from movements in market prices." - [Market Risk, _Wikipedia_](https://en.wikipedia.org/wiki/Market_risk)
 
-<!-- tweet-start -->I face market risk when I own (i.e. have a _position_ in) some [Apple](http://apple.com) stock. <!-- tweet-end --> [Apple's](http://apple.com)'s stock price will decline if a competitor brings out an amazing product, or if fashions change and people don't want their products any more.
+I face market risk when I own (i.e. have a _position_ in) some [Apple](http://apple.com) stock. <!-- tweet-end --> [Apple's](http://apple.com)'s stock price will decline if a competitor brings out an amazing product, or if fashions change and people don't want their products any more.
 
 In the same way, _you_ have [Market Risk](Feature-Risk#market-risk) on the product or service you are building:  the _market_ decides what it is prepared to pay for this, and it tends to be outside your control.     
 
