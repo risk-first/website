@@ -1,6 +1,6 @@
 ![For Review](images/state/for-review.png)
 
-[Coordinating a team](Coordination-Risk) is difficult enough when everyone on the team has a single [Goal](Glossary#Goal-In-Mind).  But, people have their own goals, too.  Sometimes, the goals harmlessly co-exist with the team's goal, but other times they don't.
+<!-- tweet-start -->[Coordinating a team](Coordination-Risk) is difficult enough when everyone on the team has a single [Goal](Glossary#Goal-In-Mind). <!-- tweet-end --> But, people have their own goals, too.  Sometimes, the goals harmlessly co-exist with the team's goal, but other times they don't.
 
 ![Agency Risk](images/generated/agency-risk.png)
 
@@ -12,23 +12,23 @@ The less visibility you have of the agent's activities, the bigger the risk.  Ho
 
 ![Mitigating Agency Risk Through Monitoring](images/kite9/agency-risk-monitoring.png)
 
-[Agency Risk](Agency-Risk) clearly includes the behaviour of [Bad Actors](https://en.wiktionary.org/wiki/bad_actor).  But, this is a very strict definition of [Agency Risk](Agency-Risk).   In software development, we're not lending each other money, but we are being paid by the project sponsor, so they are assuming [Agency Risk](Agency-Risk) by employing us.   
+[Agency Risk](Agency-Risk) clearly includes the behaviour of [Bad Actors](https://en.wiktionary.org/wiki/bad_actor).  But, this is a very strict definition of [Agency Risk](Agency-Risk).   <!-- tweet-start -->In software development, we're not lending each other money, but we are being paid by the project sponsor, so they are assuming [Agency Risk](Agency-Risk) by employing us.   <!-- tweet-end -->
 
-As we saw in the previous section on [Process Risk](Process-Risk), [Agency Risk](Agency-Risk) doesn't just apply to people: it can apply to _running software_ or _whole teams_.  
+As we saw in the previous section on [Process Risk](Process-Risk), <!-- tweet-start -->[Agency Risk](Agency-Risk) doesn't just apply to people: it can apply to _running software_ or _whole teams_.  <!-- tweet-end -->
 
 Let's look at some examples of borderline [Agency Risk](Agency-Risk) situations, in order to sketch out where the domain of this risk lies.
 
 ## Personal Lives
 
-We can't (shouldn't) expect people on a project to sacrifice their personal lives for the success of the project, right?  Except that ["Crunch Time"](https://en.wikipedia.org/wiki/Video_game_developer#"Crunch_time") is exactly how some software companies work:
+<!-- tweet-start -->We can't (shouldn't) expect people on a project to sacrifice their personal lives for the success of the project, right?  <!-- tweet-end --> Except that ["Crunch Time"](https://en.wikipedia.org/wiki/Video_game_developer#"Crunch_time") is exactly how some software companies work:
 
 > "Game development... requires long working hours and dedication from their employees.  Some video game developers (such as Electronic Arts) have been accused of the excessive invocation of "crunch time".  "Crunch time" is the point at which the team is thought to be failing to achieve milestones needed to launch a game on schedule. " - [Crunch Time, _Wikipedia_](https://en.wikipedia.org/wiki/Video_game_developer#"Crunch_time")
 
-People taking time off, going to funerals, looking after sick relatives and so on are all [Agency Risk](Agency-Risk), but they should be _accepted_ on the project.  They are a necessary [Attendant Risk](Glossary#attendant-risk) of having _staff_ rather than _slaves_.
+<!-- tweet-start -->People taking time off, going to funerals, looking after sick relatives and so on are all [Agency Risk](Agency-Risk), but they should be _accepted_ on the project. <!-- tweet-end --> They are a necessary [Attendant Risk](Glossary#attendant-risk) of having _staff_ rather than _slaves_.
 
 ## The Hero
 
-> "The one who stays later than the others is a hero. " - [Hero Culture, _Ward's Wiki_](http://wiki.c2.com/?HeroCulture)
+> <!-- tweet-start --> "The one who stays later than the others is a hero. " - [Hero Culture, _Ward's Wiki_](http://wiki.c2.com/?HeroCulture) <!-- tweet-end -->
 
 Conversely, Heroes put in more hours and try to rescue projects single-handedly, often cutting corners like team communication and process in order to get there.   
 
