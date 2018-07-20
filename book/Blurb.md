@@ -18,7 +18,7 @@ Software teams will be familiar with tools such as RAID reports (Risk, Assumptio
 - A task about improving the health indicators could be seen as mitigating _the risk of the application failing and no-one reacting to it_.
 - Even a task as basic as implementing a new function in the application is mitigating _the risk that users are dissatisfied and go elsewhere_.
 
-**Risk-First** makes the case that understanding the nature of these risks is critical to building software in the complex, interconnected world we live in.  It aims to break down risk into it's different components, and show how the tools and methodologies we use aim to mitigate those risks.
+**Risk-First** makes the case that understanding the nature of these risks is critical to building software in the complex, interconnected world we live in.  It aims to break down risk into it's different components, and show how the tools and methodologies we use aim to manage those risks.
 
 Visit **https://riskfirst.org** for more details.
 
