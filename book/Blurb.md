@@ -14,7 +14,7 @@ The **Risk-First** perspective is that all of these practices and methodologies 
 Software teams will be familiar with tools such as RAID reports (Risk, Assumptions, Issues, Dependencies) but the Risk-First view is that we can go much further: that each item of work being done on the project is mitigating a particular risk. Risk isn't something that just appears in a report, it actually drives _everything we do_:
 
 - A story about improving the user login screen can be seen as reducing _the risk of users not signing up_.
-- If we write unit tests, we’re mitigating the risk of bugs going to production, but we’re also mitigating against future changes breaking our existing functionality.
+- If we write unit tests, we’re _mitigating the risk of bugs going to production_, but we’re also _defending against the risk of future changes breaking our existing functionality_.
 - A task about improving the health indicators could be seen as mitigating _the risk of the application failing and no-one reacting to it_.
 - Even a task as basic as implementing a new function in the application is mitigating the risk that users are dissatisfied and go elsewhere.
 
