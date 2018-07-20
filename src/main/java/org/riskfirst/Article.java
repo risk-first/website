@@ -10,6 +10,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Article {
+	
+	public static final String URL_BASE = "https://github.com/risk-first/website/wiki/";
 
 	private final ArticleState state;
 	private final String text;
@@ -56,32 +58,43 @@ public class Article {
 		String line = br.readLine();
 		int number = 1;
 		while (line != null) {
-			processLinks(line, number, links);
+			processLine(line, number, l -> links.add(l), System.out::println);
 			line = br.readLine();
 			number++;
 		}
 	}
 	
-	private static void processLinks(String line, int number, List<Link> links) {
+	public interface TextCollector {
+		
+		void addText(String text);
+		
+	}
+	
+	public interface LinkCollector {
+		
+		void addLink(Link l);
+		
+	}
+	
+	public static void processLine(String line, int number, LinkCollector lc, TextCollector tc) {
 		Matcher m = p.matcher(line);
 		int place = 0;
 		while (m.find()) {
 			int s = m.start();
 			int e = m.end();
 			
-			System.out.print(line.substring(place, s));
+			tc.addText(line.substring(place, s));
 			
 			String link = line.substring(s, e);
 			
 			String bang = m.group(1);
 			String text = m.group(2);
 			String url = m.group(3);
-			String extra = m.group(4);
-			String reconstructed = (bang==null ? "" : "!")+"["+text+"]("+url+")"+ (extra==null ? "" : extra);
-			links.add(new Link(bang != null, text, url, link, number));
+			lc.addLink(new Link(bang != null, text, url, link, number));
 			place = e;
 		}
 		
+		tc.addText(line.substring(place));
 	}
 
 	@Override
@@ -89,5 +102,8 @@ public class Article {
 		return "Article [state=" + state + ", f=" + f + "]";
 	}
 	
+	public String getUrl() {
+		return URL_BASE+f.getName().replace(".md", "");
+	}
 	
 }

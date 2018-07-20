@@ -37,8 +37,9 @@ public class TextPreprocessor {
 			if (line.trim().equals("```include")) {
 				processIncludes(br, origin);
 			} else {
-				processLinks(line, TextPreprocessor::processImageLink, lineNo, System.out::println);
+				processLinks(line, TextPreprocessor::processImageLink, lineNo, System.out::print);
 			}
+			System.out.println("");
 			line = br.readLine();
 			lineNo++;
 		}

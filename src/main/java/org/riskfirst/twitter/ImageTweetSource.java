@@ -14,7 +14,7 @@ import twitter4j.StatusUpdate;
 
 public class ImageTweetSource extends AbstractRiskFirstWikiTweetSource implements TweetSource {
 	
-	public static final String STANDARD_HASHTAGS = " #risk-first #agile #methodology #ci";
+	public static final String STANDARD_HASHTAGS = " #riskfirst #agile #methodology #ci";
 	
 	private String riskFirstWikiDir;
 

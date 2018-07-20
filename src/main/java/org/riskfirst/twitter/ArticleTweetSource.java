@@ -18,7 +18,7 @@ public class ArticleTweetSource extends AbstractRiskFirstWikiTweetSource {
 		super(articles, baseUri);
 	}
 	
-	static final Pattern p = Pattern.compile("\\<div class=\"tweet\"\\>(.*?)\\<");
+	static final Pattern p = Pattern.compile("\\<\\!-- tweet-start --\\>(.*?)\\<\\!-- tweet-end --\\>");
 
 	@Override
 	public List<StatusUpdate> getAllTweets() {
@@ -28,12 +28,24 @@ public class ArticleTweetSource extends AbstractRiskFirstWikiTweetSource {
 	}
 
 	public void getTweetsFor(Article a, List<StatusUpdate> out) {
-		String text = a.getText();
-		Matcher m = p.matcher(text);
-		while (m.find()) {
-			String tweet = m.group(1);
-			out.add(new StatusUpdate(tweet));
+		if (!a.getFile().getName().contains("Tweets")) {
+			String text = a.getText();
+			Matcher m = p.matcher(text);
+			while (m.find()) {
+				String tweet = m.group(1);
+				StatusUpdate su = new StatusUpdate(deMarkdown(tweet) + " "+a.getUrl());
+				out.add(su);
+			}
 		}
+	}
+	
+	public String deMarkdown(String text) {
+		StringBuilder sb = new StringBuilder();
+		Article.processLine(text, 0, 
+				link -> sb.append(link.getText()+" ("+Article.URL_BASE+link.getUrl()+")"), 
+				t ->sb.append(t));
+		 
+		return sb.toString();
 	}
 	
 	
