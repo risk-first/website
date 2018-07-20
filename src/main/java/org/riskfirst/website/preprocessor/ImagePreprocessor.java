@@ -44,7 +44,7 @@ public class ImagePreprocessor {
 	private static void process(BufferedReader br, File origin) throws Exception {
 		String line = br.readLine();
 		while (line != null) {
-			if (line.trim().contains("images/generated/")) {
+			if (line.trim().contains("(images/generated/")) {
 				processGeneratedImage(line);
 				System.out.println(line);
 			}
