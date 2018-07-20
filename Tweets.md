@@ -1,3 +1,3 @@
-<div class="tweet">
+<!-- tweet-start -->
 	This is a test tweet
-</div>
+<!-- tweet-end -->
