@@ -20,7 +20,7 @@ Software teams will be familiar with risk-based analysis tools such as RAID repo
 
 **Risk-First** makes the case that understanding the nature of these risks is critical to building software in the complex, interconnected world we live in.  It aims to break down risk into it's different components, and show how the tools and methodologies we use aim to manage those risks.
 
-Visit **https://riskfirst.org** for more details.
+Visit **riskfirst.org** for more details.
 
 ## About _The Menagerie_
 
