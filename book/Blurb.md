@@ -31,12 +31,6 @@ This book is volume one of the **Risk-First** series.
  - It tries to name and classify these risks so that we can try to understand them better.
 
 The book aims to develop a _Pattern Language_ for understanding software risk, and develop a practical framework for discussing how the activities we take on a project change the balance of the risks we are exposed to.
- 
-**Rob Moffat** 
-
-The first step to beating your enemy is _knowing_ your enemy.
-
-
 
 
  
