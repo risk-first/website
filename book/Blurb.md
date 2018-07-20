@@ -26,8 +26,8 @@ Visit **riskfirst.org** for more details.
 
 This book is volume one of the **Risk-First** series.  
 
- - In the first part, it makes the case that you can view _all_ of the activities on a software project as attempting to _managing risk_.  
- - The second part introduces a menagerie of different risks you're likely to meet on a software project.
+ - It makes the case that you can view _all_ of the activities on a software project as attempting to _managing risk_.  
+ - It introduces a menagerie of different risks you're likely to meet on a software project.
  - It tries to name and classify these risks so that we can try to understand them better.
 
 The book aims to develop a _Pattern Language_ for understanding software risk, and develop a practical framework for discussing how the activities we take on a project change the balance of the risks we are exposed to.
