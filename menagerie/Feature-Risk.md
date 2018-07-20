@@ -9,7 +9,7 @@ Eventually, this will come down to lost money, business, acclaim, or whatever el
 
 In a way, [Feature Risk](Feature-Risk) is very fundamental:  if there were _no_ feature risk, the job would be done already, either by you, or by another product.  
 
-As a simple example, <!-- tweet-start -->if your needs are served perfectly by Microsoft Excel, then you don't have any [Feature Risk](Feature-Risk).<!-- tweet-end -->  However,  <!-- tweet-start -->the day you find Microsoft Excel wanting, and decide to build an Add-On is the day when you first appreciate some [Feature Risk](Feature-Risk).<!-- tweet-end -->
+As a simple example, <!-- tweet-start -->if your needs are served perfectly by Microsoft Excel, then you don't have any [Feature Risk](Feature-Risk).<!-- tweet-end -->  However, the day you find Microsoft Excel wanting, and decide to build an Add-On is the day when you first appreciate some [Feature Risk](Feature-Risk).
 
 ## Variations
 
@@ -34,7 +34,7 @@ This is the one we've just discussed above: the feature that you (or your client
 
 ![Regression Risk](images/generated/regression-risk.png) 
 
-<!-- tweet-start -->[Regression Risk](Feature-Risk#regression-risk) is basically risk of breaking existing features in your software when you add new ones.  <!-- tweet-end -->As with the previous risks, the eventual result is the same; customers don't have the features they expect.  This can become a problem as your code-base [gains Complexity](Complexity-Risk), as it becomes impossible to keep a complete [Internal Model](Glossary#Internal-Model) of the whole thing.
+[Regression Risk](Feature-Risk#regression-risk) is basically risk of breaking existing features in your software when you add new ones.  <!-- tweet-end -->As with the previous risks, the eventual result is the same; customers don't have the features they expect.  This can become a problem as your code-base [gains Complexity](Complexity-Risk), as it becomes impossible to keep a complete [Internal Model](Glossary#Internal-Model) of the whole thing.
 
 Also, while delivering new features can delight your customers, breaking existing ones will annoy them.  This is something we'll come back to in [Reputation Risk](Operational-Risk#reputational-risk).
 
@@ -42,7 +42,7 @@ Also, while delivering new features can delight your customers, breaking existin
 
 ![Market Risk](images/generated/market-risk.png) 
 
-<!-- tweet-start -->On the [Risk Landscape](Risk-Landscape) page I introduced the idea of [Market Risk](Feature-Risk#market-risk) as being the value that the market places on a particular asset.  <!-- tweet-end --><!-- tweet-start -->Since the product you are building is your asset, it makes sense that you'll face [Market Risk](Feature-Risk#market-risk) on it<!-- tweet-end -->:
+On the [Risk Landscape](Risk-Landscape) page I introduced the idea of [Market Risk](Feature-Risk#market-risk) as being the value that the market places on a particular asset.  <!-- tweet-end -->Since the product you are building is your asset, it makes sense that you'll face [Market Risk](Feature-Risk#market-risk) on it:
 
  > "Market risk is the risk of losses in positions arising from movements in market prices." - [Market Risk, _Wikipedia_](https://en.wikipedia.org/wiki/Market_risk)
 
@@ -70,7 +70,7 @@ This is a particularly pernicious kind of [Feature Risk](Feature-Risk) which can
 
 ![Feature Access Risk](images/generated/feature-access-risk.png) 
 
-<!-- tweet-start -->Sometimes, features can work for some people and not others:  this could be down to [Accessibility](https://en.wikipedia.org/wiki/Accessibility) issues, language barriers or localization.   <!-- tweet-end -->
+Sometimes, features can work for some people and not others:  this could be down to [Accessibility](https://en.wikipedia.org/wiki/Accessibility) issues, language barriers or localization.   <!-- tweet-end -->
 
 You could argue that the choice of _platform_ is also going to limit access:  <!-- tweet-start -->writing code for XBox-only leaves PlayStation owners out in the cold.   This is _largely_ [Feature Access Risk](Feature-Risk#feature-access-risk), though [Dependency Risk](Dependency-Risk) is related here.<!-- tweet-end -->
 
@@ -78,7 +78,7 @@ You could argue that the choice of _platform_ is also going to limit access:  <!
 
 ![Feature Drift Risk](images/generated/feature-drift-risk.png) 
 
-<!-- tweet-start -->**Feature Drift** is the tendency that the features people need _change over time_.   For example, at one point in time, supporting IE6 was right up there for website developers, but it's not really relevant anymore.  <!-- tweet-end --> Although that change took _many_ years to materialize, other changes are more rapid.    
+**Feature Drift** is the tendency that the features people need _change over time_.   For example, at one point in time, supporting IE6 was right up there for website developers, but it's not really relevant anymore.  <!-- tweet-end --> Although that change took _many_ years to materialize, other changes are more rapid.    
 
 The point is:  [Requirements captured](Requirements-Capture) _today_ might not make it to _tomorrow_, especially in the fast-paced world of IT.  
 
