@@ -36,5 +36,4 @@ public abstract class AbstractRiskFirstWikiTweetSource implements TweetSource {
 		List<Article> out =  articles.stream().filter(a -> states.contains(a.getState())).collect(Collectors.toList());
 		return out;
 	}
-	
 }

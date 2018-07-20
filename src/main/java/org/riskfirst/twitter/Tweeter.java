@@ -21,11 +21,12 @@ public class Tweeter {
 	    Twitter twitter = TwitterFactory.getSingleton();
 		List<Article> articles = new ArticleLoader().loadArticles(riskFirstWikiDir);
 		List<StatusUpdate> potentialTweets = new ArrayList<>();
+		List<StatusUpdate> tweets;
 		
-		// work out some tweet sources
-		TweetSource imageTweetSource = new ImageTweetSource(articles, baseURI, riskFirstWikiDir);
-		List<StatusUpdate> tweets = imageTweetSource.getRandomTweets(5);
-		potentialTweets.addAll(tweets);
+//		// work out some tweet sources
+//		TweetSource imageTweetSource = new ImageTweetSource(articles, baseURI, riskFirstWikiDir);
+//		List<StatusUpdate> tweets = imageTweetSource.getRandomTweets(5);
+//		potentialTweets.addAll(tweets);
 		
 		TweetSource articleTweetSource = new ArticleTweetSource(articles, baseURI);
 		tweets = articleTweetSource.getRandomTweets(5);
@@ -36,7 +37,12 @@ public class Tweeter {
 		}
 		
 		for (StatusUpdate statusUpdate : potentialTweets) {
-			twitter.updateStatus(statusUpdate);
+			try {
+				twitter.updateStatus(statusUpdate);
+			} catch (Exception e) {
+				System.err.println("Couldn't tweet: "+statusUpdate);
+				e.printStackTrace();
+			}
 			Thread.sleep(1000);
 		}	
 	}
