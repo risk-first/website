@@ -16,6 +16,24 @@ However, over the rest of the [Dependency Risk](Dependency-Risk) sections, we lo
 
 So [Feature Risk](Feature-Risk) _is_ [Dependency Risk](Dependency-Risk):  they’re two sides of the same coin.  In a dependency, you’re a client, whereas feature risk, you’re the supplier. 
 
+
+Dependency Risk is basically three things:
+
+- Schedule (things happening in time, running out of stuff.  e.g I need enough money to get this done, etc.  I need enough patience, enough loyalty, trust, entente.)
+- Technology (depending on software, hardware, etc.  )
+- Organisation (arrangements of people, processes, technology to achieve some goal)
+- Agency (people/machines/processes/organisations doing what you asked, working with you)
+
+Using a dependency requires learning a _protocol_.    You have to learn to use it.  Maybe it learns you.  This requires changes to your internal model.  
+
+
+Internal Model      - Communication --  Dependency
+   Goal 
+
+
+
+
+
 ### Coordination Risk 
 
 - similar to _threading/deadlocking issues 
@@ -79,3 +97,5 @@ How much do compilers do for you?
  - I'm a better coder for knowing this.
  - We're all naturalists now.
 
+
+derisking

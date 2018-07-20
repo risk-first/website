@@ -129,6 +129,7 @@ Personally, I have suffered the pain on project teams where we've had to cope wi
 In the section on [Feature Risk](Feature-Risk) we looked at [Market Risk](Feature-Risk), the idea that the value of your product is itself at risk from the morés of the market, share prices being the obvious example of that effect.  In Finance, we measure this using _money_, and we can put together probability models based on how much money you might make or lose.
 
 With [Schedule Risk](Schedule-Risk), the underlying measure is _time_:  
+
  - "If I implement feature X, I'm picking up something like 5 days of [Schedule Risk](Schedule-Risk)."
  - "If John goes travelling that's going to hit us with lots of [Schedule Risk](Schedule-Risk) while we train up Anne."
  

@@ -4,21 +4,23 @@ Risk is messy.  It's not always easy to tease apart the different components of 
 
 ## The Financial Crisis
 
-In the [Financial Services](https://en.wikipedia.org/wiki/Financial_services) industry, lots of effort is spend calculating things like:
+In the [Financial Services](https://en.wikipedia.org/wiki/Financial_services) industry, whole _departments_ exist to calculate things like:
+
 - [Market Risk](https://en.wikipedia.org/wiki/Market_risk):  the risk that the amount some asset you hold/borrow/have loaned is going to change in value.
 - [Credit Risk](https://en.wikipedia.org/wiki/Credit_risk):  the risk that someone who owes you a payment at a specific point in time might not pay it back.
 - [Liquidity Risk](https://en.wikipedia.org/wiki/Liquidity_risk): the risk that you can't find a market to sell/buy something, usually leading to a shortage of ready cash.
 
-... and so on.  You don't need to know the details exactly to understand this story.
+... and so on.  But, we don't need to know the details exactly to understand this story.
 
 They get expressed in ways like this:  
 
 > "we have a 95% chance that today we'll lose less than £100"
 
 In the financial crisis, though, these models of risk didn't turn out to be much use.   Although there are lots of conflicting explanations of what happened, one way to look at it is this:
+
  - Liquidity difficulties (i.e. amount of cash you have for day-to-day running of the bank) caused some banks to not be able to cover their interest payments.
  - This caused credit defaults (the thing that [Credit Risk](https://en.wikipedia.org/wiki/Credit_risk) measures were meant to guard against) even though the banks _technically_ were solvent.
- - That meant that, in time, banks got bailed out, share prices crashed and there was lots of [Quantitative Easing](https://en.wikipedia.org/wiki/Quantitative_easing).  
+ - That meant that, in time, banks got bailed out, share prices crashed and there was lots of [Quantitative Easing](https://en.wikipedia.org/wiki/Quantitative_easing).
  - All of which had massive impacts on the markets in ways that none of the [Market Risk](https://en.wikipedia.org/wiki/Market_risk) models foresaw.
 
 All the [Risks](Glossary#Risk) were [correlated](https://www.investopedia.com/terms/c/correlation.asp).  That is, they were affected by the _same underlying events_, or _each other_.
@@ -36,8 +38,9 @@ However, there's a problem with this:  As we said in [Risk Theory](Risk-Theory),
 I am going to try and show you some of the fauna of the [Risk Landscape](Risk-Landscape).  We know every project is different, so every [Risk Landscape](Risk-Landscape) is also different.  But, just as I can tell you that the landscape outside your window will probably will have some roads, trees, fields, forests, buildings, and that the buildings are likely to be joined together by roads, I can tell you some general things about risks too.
 
 In fact, we're going to try and categorize the kinds of things we see on this [Risk Landscape](Risk-Landscape).  But, this isn't going to be perfect: 
- - One risk can "blend" into another just like sometimes a "field" is also a "car-park" or a building might contain some trees (but isn't a forest).   
- - There is _correlation_ between different risks:  one risk may cause another, or two risks may be due to the same underlying cause.  
+
+ - One risk can "blend" into another just like sometimes a "field" is also a "car-park" or a building might contain some trees (but isn't a forest).
+ - There is _correlation_ between different risks:  one risk may cause another, or two risks may be due to the same underlying cause.
  - As we saw in [Part 1](Home#Part-1-Introduction), mitigating one risk can give rise to another, so risks are often _inversely correlated_.
 
 ## Why Should We Categorize The Risks?
@@ -52,15 +55,15 @@ As software developers, we can't hope to know the detailed specifics of the whol
 
 This is a new adventure.  There's a long way to go.  Just as naturalists are able to head out and find new species of insects and plants, we should expect to do the same.  This is by no means a complete picture - it's barely a sketch.   
 
-It's a big, crazy, evolving world of software.  Help to fill in the detiails.   Report back what you find.
+It's a big, crazy, evolving world of software.  Help to fill in the details.   Report back what you find.
 
 ## Our Tour Itinerary
 
 Below is a table outlining the different risks we'll see.  There _is_ an order to this:  the later risks are written assuming a familiarity with the earlier ones.  Hopefully, you'll stay to the end and see everything, but you're free to choose your own tour if you want to.
 
-|Risk                                                |          Description           |      
-|----------------------------------------------------|--------------------------|
-|[Feature Risk](Feature-Risk)                        |When you haven't built features the market needs, or they contain bugs, or the market changes underneath you.       |
+|Risk            |          Description           |      
+|----------------|--------------------------|
+|[Feature Risk](Feature-Risk)                        |When you haven't built features the market needs, or they contain bugs, or the market changes underneath you.  <br />     |
 |[Complexity Risk](Complexity-Risk)                  |Your software is so complex it makes it hard to change, understand or run.             |        
 |[Communication Risk](Communication-Risk)            |Risks associated with getting messages heard and understood.|             
 |[Dependency Risk](Dependency-Risk)                  |Risks of depending on other people, products, software, functions, etc. This is a general look at dependencies, before diving into specifics like...|  

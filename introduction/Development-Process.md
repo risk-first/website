@@ -49,9 +49,9 @@ Two reasons:
 
 Let's look at how our process should act to prevent these risks materializing by considering an unhappy path, one where at the outset, we have lots of [Hidden Risks](Glossary#hidden-risk) ready to materialize.  Let's say a particularly vocal user rings up someone in the office and asks for new **Feature X** to be added to the software.  It's logged as a new feature request, but:
   
-- Unfortunately, this feature once programmed will break an existing **Feature Y**  
-- Implementing the feature will use some api in a library, which contains bugs and have to be coded around.    
-- It's going to get misunderstood by the developer too, who is new on the project and doesn't understand how the software is used.  
+- Unfortunately, this feature once programmed will break an existing **Feature Y**.
+- Implementing the feature will use some api in a library, which contains bugs and have to be coded around.
+- It's going to get misunderstood by the developer too, who is new on the project and doesn't understand how the software is used.
 - Actually, this functionality is mainly served by **Feature Z**...
 - which is already there but hard to find.
 

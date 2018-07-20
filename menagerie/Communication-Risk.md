@@ -79,8 +79,8 @@ When we are talking about a product or a brand, mitigating [Channel Risk](Commun
 
 This works both ways.  Let's looks at some of the **Channel Risks** from the point of view of a hypothetical software tool, **D**, which would really useful in my software: 
 
- - The concept that there is such a thing as **D** which solves my problem isn't something I'd even considered.    
- - I'd like to use something like **D**, but how do I find it?  
+ - The concept that there is such a thing as **D** which solves my problem isn't something I'd even considered.
+ - I'd like to use something like **D**, but how do I find it?
  - There are multiple implementations of **D**, which is the best one for the task?
  - I know **D**, but I can't figure out how to solve my problem in it.
  - I've chosen **D**, I now need to persuade my team that **D** is the correct solution...
@@ -238,7 +238,7 @@ Even when systems are talking the same protocol, there can be problems.  When we
 
 ### Protocol Complexity
 
-tbd.
+tbd.   abstraction - virtue between two vices
 
 #### Backward Compatibility
 
@@ -365,7 +365,7 @@ Although protocols can sometimes handle security features of communication (such
  
 Even if the receiver trusts the communicator, they may not trust the message.  Let's look at some reasons for that:
 
-- [Weltanschauung (World View)](https://en.wikipedia.org/wiki/World_view): The ethics, values and beliefs in the receiver's [Internal Model](Glossary#Internal-Model) may be incompatible to those from the sender.  
+- [Weltanschauung (World View)](https://en.wikipedia.org/wiki/World_view): The ethics, values and beliefs in the receiver's [Internal Model](Glossary#Internal-Model) may be incompatible to those from the sender.
 - [Relativism](https://en.wikipedia.org/wiki/Relativism) is the concept that there are no universal truths.  Every truth is from a frame of reference.  For example, what constitutes _offensive language_ is dependent on the listener.
 - [Psycholinguistics](https://en.wikipedia.org/wiki/Psycholinguistics) is the study of humans aquire languages.  There are different languages and dialects, (and _industry dialects_), and we all understand language in different ways, take different meanings and apply different contexts to the messages.
   
