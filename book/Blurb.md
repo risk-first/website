@@ -16,7 +16,7 @@ Software teams will be familiar with tools such as RAID reports (Risk, Assumptio
 - A story about improving the user login screen can be seen as reducing _the risk of users not signing up_.
 - If we write unit tests, we’re _mitigating the risk of bugs going to production_, but we’re also defending against _the risk of future changes breaking our existing functionality_.
 - A task about improving the health indicators could be seen as mitigating _the risk of the application failing and no-one reacting to it_.
-- Even a task as basic as implementing a new function in the application is mitigating the risk that users are dissatisfied and go elsewhere.
+- Even a task as basic as implementing a new function in the application is mitigating _the risk that users are dissatisfied and go elsewhere_.
 
 **Risk-First** makes the case that understanding the nature of software risk is critical to building software in the complex, interconnected world we live in.  It aims to break down risk into it's different components, and show how the tools and methodologies we use aim to mitigate those risks.
 
