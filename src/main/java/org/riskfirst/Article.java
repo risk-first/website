@@ -42,7 +42,7 @@ public class Article {
 			links = new ArrayList<>();
 			try {
 				BufferedReader br = new BufferedReader(new FileReader(f));
-				process(br, links);
+				process(br, links, this);
 				br.close();
 			} catch (IOException e) {
 				throw new RuntimeException("Couldn't get links:", e);
@@ -52,11 +52,11 @@ public class Article {
 		return links;
 	}
 	
-	private static void process(BufferedReader br, List<Link> links) throws IOException {
+	private static void process(BufferedReader br, List<Link> links, Article a) throws IOException {
 		String line = br.readLine();
 		int number = 1;
 		while (line != null) {
-			processLine(line, number, l -> links.add(l), t -> {});
+			processLine(line, number, l -> links.add(l), t -> {}, a);
 			line = br.readLine();
 			number++;
 		}
@@ -74,7 +74,7 @@ public class Article {
 		
 	}
 	
-	public static void processLine(String line, int number, LinkCollector lc, TextCollector tc) {
+	public static void processLine(String line, int number, LinkCollector lc, TextCollector tc, Article a) {
 		Matcher m = p.matcher(line);
 		int place = 0;
 		while (m.find()) {
@@ -88,7 +88,7 @@ public class Article {
 			String bang = m.group(1);
 			String text = m.group(2);
 			String url = m.group(3);
-			lc.addLink(new Link(bang != null, text, url, link, number));
+			lc.addLink(new Link(bang != null, text, url, link, number, a));
 			place = e;
 		}
 		

@@ -8,8 +8,9 @@ public class Link {
 	private final String url;
 	private final String link;
 	private final int line;
+	private final Article a;
 	
-	public Link(boolean image, String text, String url, String link, int line) {
+	public Link(boolean image, String text, String url, String link, int line, Article a) {
 		super();
 		this.image = image;
 		this.external = url.startsWith("http");
@@ -17,6 +18,7 @@ public class Link {
 		this.url = url;
 		this.link = link;
 		this.line = line;
+		this.a = a;
 	}
 	
 	public boolean isImage() {
@@ -48,6 +50,8 @@ public class Link {
 		return "Link [image=" + image + ", external=" + external + ", text=" + text + ", url=" + url + ", link=" + link + ", line=" + line + "]";
 	}
 
-
+	public Article getArticle() {
+		return a;
+	}
 	
 }
