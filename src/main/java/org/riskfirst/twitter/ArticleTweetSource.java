@@ -33,7 +33,7 @@ public class ArticleTweetSource extends AbstractRiskFirstWikiTweetSource {
 			Matcher m = p.matcher(text);
 			while (m.find()) {
 				String tweet = m.group(1);
-				StatusUpdate su = new StatusUpdate(deMarkdown(tweet) + " "+a.getUrl());
+				StatusUpdate su = new StatusUpdate(deMarkdown(tweet) + " "+a.getUrl(baseUri.toString()));
 				out.add(su);
 			}
 		}
@@ -42,7 +42,7 @@ public class ArticleTweetSource extends AbstractRiskFirstWikiTweetSource {
 	public String deMarkdown(String text) {
 		StringBuilder sb = new StringBuilder();
 		Article.processLine(text, 0, 
-				link -> sb.append(link.getText()+" ("+Article.URL_BASE+link.getUrl()+")"), 
+				link -> sb.append(link.getText()+" ("+baseUri.toString()+link.getUrl()+")"), 
 				t ->sb.append(t));
 		 
 		return sb.toString();

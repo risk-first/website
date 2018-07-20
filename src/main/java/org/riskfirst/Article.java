@@ -11,8 +11,6 @@ import java.util.regex.Pattern;
 
 public class Article {
 	
-	public static final String URL_BASE = "https://github.com/risk-first/website/wiki/";
-
 	private final ArticleState state;
 	private final String text;
 	private final File f;
@@ -102,8 +100,8 @@ public class Article {
 		return "Article [state=" + state + ", f=" + f + "]";
 	}
 	
-	public String getUrl() {
-		return URL_BASE+f.getName().replace(".md", "");
+	public String getUrl(String baseUri) {
+		return baseUri+f.getName().replace(".md", "");
 	}
 	
 }
