@@ -338,6 +338,9 @@ Second, you can't always be sure that a dependency now will always have the same
 
 ## Patterns In Boundary Risk
 
+
+
+
 Should I abstract away a technology?  Does this gain anything?
 - The landscape becomes ever more complex(fractal human needs)
 - Large systems ossify and disappear,

@@ -1,3 +1,1 @@
-<!-- tweet-start -->
-This is a test tweet
-<!-- tweet-end -->
+<!-- tweet-start -->This is a test tweet<!-- tweet-end -->
