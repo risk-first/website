@@ -152,6 +152,9 @@
   </template>
     
   <template id="diagram">
+    <back style='kite9-usage: decal; kite9-type: svg; '>
+      <svg:rect x='0' y='0' width='#{$width}' height='#{$height}'  style='fill: white; ' class="diagram-back" />
+    </back>
     <svg:g filter="url(#dropshadow)">
       <contents />
     </svg:g>
