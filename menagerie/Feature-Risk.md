@@ -1,7 +1,7 @@
 ![For Review](images/state/for-review.png)
 
-[Feature Risk](Feature-Risk) is the category of risks to do with features that have to be in your software.   
-You could also call it **Functionality Risk**.  It is the risk that you face by _not having features that your clients need_.  
+<!-- tweet-start -->[Feature Risk](Feature-Risk) is the category of risks to do with features that have to be in your software.   
+You could also call it **Functionality Risk**.  It is the risk that you face by _not having features that your clients need_.<!-- tweet-end -->  
 
 ![Feature Risk](images/generated/feature-risk.png) 
 
@@ -9,7 +9,7 @@ Eventually, this will come down to lost money, business, acclaim, or whatever el
 
 In a way, [Feature Risk](Feature-Risk) is very fundamental:  if there were _no_ feature risk, the job would be done already, either by you, or by another product.  
 
-As a simple example, if your needs are served perfectly by Microsoft Excel, then you don't have any [Feature Risk](Feature-Risk).  However, the day you find Microsoft Excel wanting, and decide to build an Add-On is the day when you first appreciate some [Feature Risk](Feature-Risk).
+As a simple example, <!-- tweet-start -->if your needs are served perfectly by Microsoft Excel, then you don't have any [Feature Risk](Feature-Risk).<!-- tweet-end -->  However,  <!-- tweet-start -->the day you find Microsoft Excel wanting, and decide to build an Add-On is the day when you first appreciate some [Feature Risk](Feature-Risk).<!-- tweet-end -->
 
 ## Variations
 
@@ -24,7 +24,7 @@ This is the one we've just discussed above: the feature that you (or your client
 
 ### Features Don't Work Properly
 
-[Feature Risk](Feature-Risk) also includes things that don't work as expected: That is to say, [bugs](https://en.wikipedia.org/wiki/Software_bug).   Although the distinction between "a missing feature" and "a broken feature" might be worth making in the development team, we can consider these both the same kind of risk:  _the software doesn't do what the user expects_.
+<!-- tweet-start -->[Feature Risk](Feature-Risk) also includes things that don't work as expected: That is to say, [bugs](https://en.wikipedia.org/wiki/Software_bug).   Although the distinction between "a missing feature" and "a broken feature" might be worth making in the development team, we can consider these both the same kind of risk:  _the software doesn't do what the user expects_.<!-- tweet-start -->
 
 ![Implementation Risk](images/generated/implementation-risk.png) 
 
@@ -34,7 +34,7 @@ This is the one we've just discussed above: the feature that you (or your client
 
 ![Regression Risk](images/generated/regression-risk.png) 
 
-[Regression Risk](Feature-Risk#regression-risk) is basically risk of breaking existing features in your software when you add new ones.  As with the previous risks, the eventual result is the same; customers don't have the features they expect.  This can become a problem as your code-base [gains Complexity](Complexity-Risk), as it becomes impossible to keep a complete [Internal Model](Glossary#Internal-Model) of the whole thing.
+<!-- tweet-start -->[Regression Risk](Feature-Risk#regression-risk) is basically risk of breaking existing features in your software when you add new ones.  <!-- tweet-end -->As with the previous risks, the eventual result is the same; customers don't have the features they expect.  This can become a problem as your code-base [gains Complexity](Complexity-Risk), as it becomes impossible to keep a complete [Internal Model](Glossary#Internal-Model) of the whole thing.
 
 Also, while delivering new features can delight your customers, breaking existing ones will annoy them.  This is something we'll come back to in [Reputation Risk](Operational-Risk#reputational-risk).
 
@@ -42,11 +42,11 @@ Also, while delivering new features can delight your customers, breaking existin
 
 ![Market Risk](images/generated/market-risk.png) 
 
-On the [Risk Landscape](Risk-Landscape) page I introduced the idea of [Market Risk](Feature-Risk#market-risk) as being the value that the market places on a particular asset.  Since the product you are building is your asset, it makes sense that you'll face [Market Risk](Feature-Risk#market-risk) on it:
+<!-- tweet-start -->On the [Risk Landscape](Risk-Landscape) page I introduced the idea of [Market Risk](Feature-Risk#market-risk) as being the value that the market places on a particular asset.  <!-- tweet-end --><!-- tweet-start -->Since the product you are building is your asset, it makes sense that you'll face [Market Risk](Feature-Risk#market-risk) on it<!-- tweet-end -->:
 
  > "Market risk is the risk of losses in positions arising from movements in market prices." - [Market Risk, _Wikipedia_](https://en.wikipedia.org/wiki/Market_risk)
 
-I face market risk when I own (i.e. have a _position_ in) some [Apple](http://apple.com) stock.  [Apple's](http://apple.com)'s stock price will decline if a competitor brings out an amazing product, or if fashions change and people don't want their products any more.
+<!-- tweet-start -->I face market risk when I own (i.e. have a _position_ in) some [Apple](http://apple.com) stock. <!-- tweet-end --> [Apple's](http://apple.com)'s stock price will decline if a competitor brings out an amazing product, or if fashions change and people don't want their products any more.
 
 In the same way, _you_ have [Market Risk](Feature-Risk#market-risk) on the product or service you are building:  the _market_ decides what it is prepared to pay for this, and it tends to be outside your control.     
 
@@ -70,15 +70,15 @@ This is a particularly pernicious kind of [Feature Risk](Feature-Risk) which can
 
 ![Feature Access Risk](images/generated/feature-access-risk.png) 
 
-Sometimes, features can work for some people and not others:  this could be down to [Accessibility](https://en.wikipedia.org/wiki/Accessibility) issues, language barriers or localization.   
+<!-- tweet-start -->Sometimes, features can work for some people and not others:  this could be down to [Accessibility](https://en.wikipedia.org/wiki/Accessibility) issues, language barriers or localization.   <!-- tweet-end -->
 
-You could argue that the choice of _platform_ is also going to limit access:  writing code for XBox-only leaves PlayStation owners out in the cold.   This is _largely_ [Feature Access Risk](Feature-Risk#feature-access-risk), though [Dependency Risk](Dependency-Risk) is related here.
+You could argue that the choice of _platform_ is also going to limit access:  <!-- tweet-start -->writing code for XBox-only leaves PlayStation owners out in the cold.   This is _largely_ [Feature Access Risk](Feature-Risk#feature-access-risk), though [Dependency Risk](Dependency-Risk) is related here.<!-- tweet-end -->
 
 ### Feature Drift Risk
 
 ![Feature Drift Risk](images/generated/feature-drift-risk.png) 
 
-**Feature Drift** is the tendency that the features people need _change over time_.   For example, at one point in time, supporting IE6 was right up there for website developers, but it's not really relevant anymore.  Although that change took _many_ years to materialize, other changes are more rapid.    
+<!-- tweet-start -->**Feature Drift** is the tendency that the features people need _change over time_.   For example, at one point in time, supporting IE6 was right up there for website developers, but it's not really relevant anymore.  <!-- tweet-end --> Although that change took _many_ years to materialize, other changes are more rapid.    
 
 The point is:  [Requirements captured](Requirements-Capture) _today_ might not make it to _tomorrow_, especially in the fast-paced world of IT.  
 
@@ -89,11 +89,11 @@ The point is:  [Requirements captured](Requirements-Capture) _today_ might not m
 Fashion plays a big part in IT, as this [infographic on website design shows](https://designers.hubspot.com/blog/the-history-of-web-design-infographic).  True, websites have got easier to use as time has gone by, and users now expect this.  Also, bandwidth is greater now, which means we can afford more media and code on the client side.  However, _fashion_ has a part to play in this.  
 
 
-By being _fashionable_, websites are communicating:   _this is a new thing_, _this is relevant_, _this is not terrible_:  all of which is mitigating a [Communication Risk](Communication-Risk).  Users are all-too-aware that the Internet is awash with terrible, abandon-ware sites that are going to waste their time.  How can you communicate that you're not one of them to your users?
+By being _fashionable_, websites are communicating:   _this is a new thing_, _this is relevant_, _this is not terrible_:  all of which is mitigating a [Communication Risk](Communication-Risk).  <!-- tweet-start -->Users are all-too-aware that the Internet is awash with terrible, abandon-ware sites that are going to waste their time.  How can you communicate that you're not one of them to your users? <!-- tweet-end -->
 
 ### Delight
 
-If this breakdown of [Feature Risk](Feature-Risk) seems reductive, then try not to think of it that way:  the aim _of course_ should be to delight users, and turn them into fans.  That's a laudable [Goal](Glossary#Goal-In-Mind), but should be treated in the usual Risk-First way:  _pick the biggest risk you can mitigate next_.   
+If this breakdown of [Feature Risk](Feature-Risk) seems reductive, then try not to think of it that way:  <!-- tweet-start --> the aim _of course_ should be to delight users, and turn them into fans.  That's a laudable [Goal](Glossary#Goal-In-Mind), but should be treated in the usual Risk-First way:  _pick the biggest risk you can mitigate next_.   <!-- tweet-end -->
 
 Consider [Feature Risk](Feature-Risk) from both the down-side and the up-side:  
 
