@@ -1,8 +1,12 @@
 package org.riskfirst.twitter;
 
+import java.io.File;
+import java.io.FileReader;
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
+import java.util.stream.Collectors;
 
 import org.riskfirst.Article;
 import org.riskfirst.ArticleLoader;
@@ -13,36 +17,40 @@ import twitter4j.TwitterFactory;
 
 public class Tweeter {
 
-    static String riskFirstWikiDir = "../website.wiki"; 
-    static URI baseURI;
+    static Properties props = new Properties();
+    static String riskFirstWikiDir;
 
 	public static void main(String[] args) throws Exception {
-		URI baseURI = new URI("https://github.com/risk-first/website/wiki/");
-	    Twitter twitter = TwitterFactory.getSingleton();
-		List<Article> articles = new ArticleLoader().loadArticles(riskFirstWikiDir);
+		props.load(new FileReader(new File("tweeter.properties")));
+		riskFirstWikiDir = props.getProperty("dir", "../website.wiki");
+		
+		URI baseURI = new URI(props.getProperty("baseURI", "https://github.com/risk-first/website/wiki/"));
+		
+		System.out.println("baseURI: "+baseURI);
+
+		Twitter twitter = TwitterFactory.getSingleton();
+		List<Article> allArticles = new ArticleLoader().loadArticles(riskFirstWikiDir);
+		List<Article> articles = allArticles.stream().filter(a -> !tweetsArticle(a)).collect(Collectors.toList());
+		List<Article> tweetsArticle = allArticles.stream().filter(a -> tweetsArticle(a)).collect(Collectors.toList());
+		
 		List<StatusUpdate> potentialTweets = new ArrayList<>();
-		List<StatusUpdate> tweets;
+		List<Long> retweets;
 		List<Long> potentialRetweets = new ArrayList<>();
 		
-//		// work out some tweet sources
-//		TweetSource imageTweetSource = new ImageTweetSource(articles, baseURI, riskFirstWikiDir);
-//		List<StatusUpdate> tweets = imageTweetSource.getRandomTweets(5);
-//		potentialTweets.addAll(tweets);
-		
-//		TweetSource articleTweetSource = new ArticleTweetSource(articles, baseURI);
-//		tweets = articleTweetSource.getRandomTweets(5);
-//		potentialTweets.addAll(tweets);
-	
+		collectTweets(baseURI, articles, potentialTweets, amount("articles", 5));
+		collectTweets(baseURI, tweetsArticle, potentialTweets, amount("tweets", 5));
+
 		RetweetSource followerSource = new FollowerRetweetSource(twitter);
-		List<Long> retweets = followerSource.getRandomTweets(5);
+		retweets = followerSource.getRandomTweets(amount("follow", 5));
 		potentialRetweets.addAll(retweets);
 
-		RetweetSource themeSource = new ThemeRetweetSource(twitter, "softwaretesting");
-		List<Long> retweets = followerSource.getRandomTweets(5);
+		RetweetSource searchSource = new SavedSearchRetweetSource(twitter);
+		retweets = searchSource.getRandomTweets(amount("searches", 5));
 		potentialRetweets.addAll(retweets);
 		
 		for (StatusUpdate statusUpdate : potentialTweets) {
 			try {
+				System.out.println("Tweeting: "+statusUpdate);
 				twitter.updateStatus(statusUpdate);
 			} catch (Exception e) {
 				System.err.println("Couldn't tweet: "+statusUpdate);
@@ -53,6 +61,7 @@ public class Tweeter {
 		
 		for (Long l : potentialRetweets) {
 			try {
+				System.out.println("Retweeting: "+l);
 				twitter.retweetStatus(l);
 			} catch (Exception e) {
 				System.err.println("Couldn't re-tweet: "+l);
@@ -60,5 +69,24 @@ public class Tweeter {
 			}
 			Thread.sleep(1000);
 		}	
+	}
+
+	private static int amount(String prop, int i) {
+		return Integer.parseInt(props.getProperty(prop, ""+i));
+	}
+
+	public static void collectTweets(URI baseURI, List<Article> articles, List<StatusUpdate> potentialTweets, int count) {
+		List<StatusUpdate> tweets;
+		TweetSource imageTweetSource = new ImageTweetSource(articles, baseURI, riskFirstWikiDir);
+		tweets = imageTweetSource.getRandomTweets(count);
+		potentialTweets.addAll(tweets);
+		
+		TweetSource articleTweetSource = new ArticleTweetSource(articles, baseURI);
+		tweets = articleTweetSource.getRandomTweets(count);
+		potentialTweets.addAll(tweets);
+	}
+
+	public static boolean tweetsArticle(Article a) {
+		return a.getFile().getName().contains("Tweets");
 	}
 }
