@@ -22,11 +22,15 @@ Software teams will be familiar with tools such as RAID reports (Risk, Assumptio
 
 Visit **https://riskfirst.org** for more details.
 
-## About This Book
+## About _The Menagerie_
 
 This book is volume one of the **Risk-First** series.  
 
-In the first part, it makes the case that you can view _all_ of the activities on a software project as _managing risk_.  The second part introduces a menagerie of different risks you're likely to meet on a software project, and tries to name and classify these risks so that we can try to understand them better.
+In the first part, it makes the case that you can view _all_ of the activities on a software project as _managing risk_.  
+
+The second part introduces a menagerie of different risks you're likely to meet on a software project, and tries to name and classify these risks so that we can try to understand them better.
+
+The first step to beating your enemy is _knowing_ your enemy.
 
 
 
