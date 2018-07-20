@@ -1,5 +1,5 @@
 
-**There are lots of different ways to run software projects. **
+**There are lots of different ways to run software projects.**
 
 For example, metrics such as “number of open tickets”, “story points”, “code coverage" or "release cadence" give us a numerical feel for how things are going and what needs to happen next.  And methodologies such as "Scrum", "Waterfall" and "Lean" give us different approaches to organising our work.
 
