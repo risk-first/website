@@ -56,7 +56,7 @@ public class Article {
 		String line = br.readLine();
 		int number = 1;
 		while (line != null) {
-			processLine(line, number, l -> links.add(l), System.out::println);
+			processLine(line, number, l -> links.add(l), t -> {});
 			line = br.readLine();
 			number++;
 		}
