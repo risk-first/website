@@ -22,7 +22,7 @@ If we do nothing, our friends will turn up and maybe there's nothing in the hous
 
 These _nagging doubts_ that are going through your head I'll call the [Attendant Risks](Glossary#attendant-risk):  they're the ones that will occur to you as you start to think about what will happen. 
 
-![Goal In Mind](images/generated/goal_in_mind.png)
+![Goal In Mind, with the risks you know about](images/generated/goal_in_mind.png)
 
 When we go about preparing this wonderful evening, we can with these risks and try to mitigate them:  shop for the ingredients in advance, prepare parts of the meal, maybe practice the cooking in advance.  Or, we can wing it, and sometimes we'll get lucky.
 
@@ -32,11 +32,11 @@ How much effort we expend on mitigating [Attendant Risks](Glossary#attendant-ris
 
 There are also hidden [Attendant Risks](Glossary#attendant-risk) that you might not know about: if you're poaching eggs for dinner, you might know that fresh eggs poach best.    These are the "Unknown Unknowns" of [Rumsfeld's model](https://en.wikipedia.org/wiki/There_are_known_knowns).
 
-![Goal In Mind](images/generated/goal_in_mind.png)
+![Goal In Mind, the risks you know about and the ones you don't](images/generated/goal_in_mind.png)
 
 Different people will evaluate the risks differently.  (That is, worry about them more or less.)  They'll also _know_ about different risks.  They might have cooked the recipe before, or organised lots more dinner parties than you.   
 
-How we evaluate the risks, and which ones we know about depends on our **knowledge** and **experience**, then.  And that varies from person to person (or team to team).  Lets call this our [Internal Model](Glossary#Internal-Model), and it's something we build on and improve with experience (of organising dinner parties, amongst everything else).
+<!-- tweet-start -->How we evaluate the risks, and which ones we know about depends on our **knowledge** and **experience**, then. <!-- tweet-end --> And that varies from person to person (or team to team).  Lets call this our [Internal Model](Glossary#Internal-Model), and it's something we build on and improve with experience (of organising dinner parties, amongst everything else).
 
 ### Model Meets Reality
 
@@ -44,13 +44,13 @@ As the dinner party gets closer, we make our preparations, and the inadequacies 
 
 Our model is forced into contact with reality, and the model changes.  
 
-![Reality](images/generated/model_vs_reality.png)
+![How taking action affects Reality, and also changes your internal model](images/generated/model_vs_reality.png)
 
 If we had a good model, and took the right actions, we should see positive outcomes.  If we failed to mitigate risks, or took inappropriate actions, we'll probably see negative outcomes.
 
 ## On To Software
 
-In this website, we're going to look at the risks in the software process and how these are mitigated by the various methodologies you can choose from.  
+<!-- tweet-start -->In this website, we're going to look at the risks in the software process and how these are mitigated by the various methodologies you can choose from.  <!-- tweet-end -->
 
 Let's examine the scenario of a new software project, and expand on the simple model being outlined above:  instead of a single person, we are likely to have a team, and our model will not just exist in our heads, but in the code we write.  
 

@@ -117,7 +117,7 @@ If the methodology _fails at a particular scale_, this tells you something about
 
 For example, in [Rapid Development]() by Steve McConnell we have the following diagram:
 
-![Rapid Development Pillars](images/rapid_development_pillars.png)  
+![Rapid Development Pillars- From Steve McConnell](images/rapid_development_pillars.png)  
 
 tbd. redraw this.
 

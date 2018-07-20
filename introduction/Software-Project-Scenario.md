@@ -1,12 +1,12 @@
 ![For Review](images/state/for-review.png)
 
-Where do the risks of the project lie?  
+<!-- tweet-start -->Where do the risks of the project lie? <!-- tweet-end --> 
 
-How do we decide what _needs to be done today_ on a software project?  
+<!-- tweet-start -->How do we decide what _needs to be done today_ on a software project? <!-- tweet-end --> 
 
 Let's look again at the simple risk framework from the [introduction](A-Simple-Scenario) and try to apply it at the level of the _entire project_.
 
-![Reality](images/generated/model_vs_reality.png)
+![Taking action changes reality, but it changes your perception of the attendant risks too](images/generated/model_vs_reality.png)
 
 ## Goal In Mind
 
@@ -48,7 +48,7 @@ The same [Attendant Risks](Glossary#attendant-risk) will be evaluated differentl
 
 ## Outcomes
 
-As part of evaluating the risks, we can also _predict_ the negative outcomes if these risks materialise and we don't take action.
+<!-- tweet-start -->As part of evaluating the risks, we can also _predict_ the negative outcomes if these risks materialise and we don't take action.<!-- tweet-end -->
 
 * Losing Revenue
 * Legal Culpability
@@ -58,7 +58,7 @@ As part of evaluating the risks, we can also _predict_ the negative outcomes if 
 
 ## A Single Attendant Risk:  Getting Hacked
 
-Let's consider a single risk:  that the website gets hacked, and sensitive data is stolen.  How we evaluate this risk is going to depend on a number of factors:
+<!-- tweet-start -->Let's consider a single risk:  that the website gets hacked, and sensitive data is stolen. <!-- tweet-end --> How we evaluate this risk is going to depend on a number of factors:
 
 * How many users we have
 * The importance of the data
@@ -78,9 +78,9 @@ How does our model explain what happened here?
 
 #### Possible Action
 
-When exposing a service on the Internet, it's now a good idea to _look for trouble_:  you should go out and try and improve your [Internal Model](Glossary#Internal-Model).   
+<!-- tweet-start -->When exposing a service on the Internet, it's now a good idea to _look for trouble_:  you should go out and try and improve your [Internal Model](Glossary#Internal-Model).<!-- tweet-end -->   
 
-Thankfully, this is what sites like [OWASP](https://www.owasp.org/index.php/Top_10-2017_Top_10) are for:  they _tell you about the [Attendant Risks](Glossary#attendant-risk)_ and further, try to provide some evaluation of them to guide your actions.
+Thankfully, <!-- tweet-start -->this is what sites like [OWASP](https://www.owasp.org/index.php/Top_10-2017_Top_10) are for:  they _tell you about the [Attendant Risks](Glossary#attendant-risk)_ <!-- tweet-end --> and further, try to provide some evaluation of them to guide your actions.
 
 ## Actions
 
@@ -97,7 +97,7 @@ For example, it's worth considering that if we're just starting this project, ri
 
 ## Tacit and Explicit Modelling
 
-As we saw in the example of the [Dinner Party](A-Simple-Scenario), creating an internal model is something _we just do_:  we have this functionality in our brains already.  When we scale this up to a whole project team, we can expect the individuals on the project to continue to do this, but we might also want to consider _explicitly_ creating a [risk register for the whole project](Risk-Theory).  
+<!-- tweet-start -->As we saw in the example of the [Dinner Party](A-Simple-Scenario), creating an internal model is something _we just do_<!-- tweet-end -->:  we have this functionality in our brains already.  When we scale this up to a whole project team, we can expect the individuals on the project to continue to do this, but we might also want to consider _explicitly_ creating a [risk register for the whole project](Risk-Theory).  
 
 Whether we do this explicitly or not, we are still individually following this model.
 
