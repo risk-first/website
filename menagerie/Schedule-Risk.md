@@ -40,7 +40,6 @@ But, even if you time the Window Of Opportunity correctly, you might still have 
 
 ![Deadline Risk](images/generated/deadline-risk.png)
 
-
 Often when running a software project, you're given a team of people and told to get something delivered by a certain date.  i.e. you have an artificially-imposed [Deadline](Schedule-Risk#Deadline-Risk) on delivery.
 
 What happens if you miss the deadline?  It could be:
@@ -84,25 +83,25 @@ We'll look at mitigations for this in Part 3's section on [Prioritisation](Prior
 
 ![Funding Risk](images/generated/funding-risk.png)
 
-On a lot of software projects, you are "handed down" deadlines from above, and told to deliver by a certain date or face the consequences.  But sometimes you're given a budget instead, which really just adds another layer of abstraction to the [Schedule Risk](Schedule-Risk):   That is, do I have enough funds to cover the team for as long as I need them?
+On a lot of software projects, you are "handed down" deadlines from above, and told to deliver by a certain date or face the consequences. <!-- tweet-end --> But sometimes you're given a budget instead, which really just adds another layer of abstraction to the [Schedule Risk](Schedule-Risk):   That is, do I have enough funds to cover the team for as long as I need them?
 
 This grants you some leeway as now you have two variables to play with: the _size_ of the team, and _how long_ you can run it for.  The larger the team, the shorter the time you can afford to pay for it.
 
 In startup circles, this "amount of time you can afford it" is called the ["Runway"](https://en.wiktionary.org/wiki/runway):  you have to get the product to "take-off" before the runway ends.  So you could term this component as "Runway Risk".
 
-Startups often spend a lot of time courting investors in order to get funding and mitigate this type of [Schedule Risk](Schedule-Risk).  But, this activity usually comes at the expense of [Opportunity Risk](Schedule-Risk#opportunity-risk) and [Feature Risk](Feature-Risk), as usually the same people are trying to raise funds as build the project itself.  
+Startups often spend a lot of time courting investors in order to get funding and mitigate this type of [Schedule Risk](Schedule-Risk).<!-- tweet-end -->  But, this activity usually comes at the expense of [Opportunity Risk](Schedule-Risk#opportunity-risk) and [Feature Risk](Feature-Risk), as usually the same people are trying to raise funds as build the project itself.  
 
 ## Staff Risk
 
 ![Staff Risk](images/generated/staff-risk.png)
 
-If a startup has a "Runway", then the chances are that the founders and staff do too, as this article [explores](https://www.entrepreneur.com/article/223135).  It identifies the following risks:
+If a startup has a "Runway", then the chances are that the founders and staff do too<!-- tweet-end -->, as this article [explores](https://www.entrepreneur.com/article/223135).  It identifies the following risks:
 
   - Company Cash:  The **Runway** of the startup itself
   - Founder Cash:  The **Runway** for a founder, before they run out of money and can't afford their rent.
   - Team Cash:  The **Runway** for team members, who may not have the same appetite for risk as the founders do.
   
-You need to consider how long your staff are going to be around, especially if you have [Key Man Risk](https://en.wikipedia.org/wiki/Key_person_insurance#Key_person_definition) on some of them.  People like to have new challenges, or move on to live in new places, or simply get bored.  The longer your project goes on for, the more [Staff Risk](Schedule-Risk#staff-risk) you will have to endure, and you can't rely on getting the [best staff for failing projects](Agency-Risk).
+You need to consider how long your staff are going to be around, especially if you have [Key Man Risk](https://en.wikipedia.org/wiki/Key_person_insurance#Key_person_definition) on some of them.  <!-- tweet-end -->People like to have new challenges, or move on to live in new places, or simply get bored.  The longer your project goes on for, the more [Staff Risk](Schedule-Risk#staff-risk) you will have to endure, and you can't rely on getting the [best staff for failing projects](Agency-Risk).
 
 In the section on [Coordination-Risk](Coordination-Risk) we'll look in more detail at the non-temporal components of [Staff Risk](Schedule-Risk#staff-risk).
 
@@ -110,7 +109,7 @@ In the section on [Coordination-Risk](Coordination-Risk) we'll look in more deta
 
 ![Red Queen Risk](images/generated/red-queen-risk.png)
 
-A more specific formulation of [Schedule Risk](Schedule-Risk) is [Red Queen Risk](Schedule-Risk#red-queen-risk), which is that whatever you build at the start of the project will go slowly more-and-more out of date as the project goes on.  
+A more specific formulation of [Schedule Risk](Schedule-Risk) is [Red Queen Risk](Schedule-Risk#red-queen-risk), which is that whatever you build at the start of the project will go slowly more-and-more out of date as the project goes on. <!-- tweet-end --> 
 
 This is named after the Red Queen quote from Alice in Wonderland:  
 
