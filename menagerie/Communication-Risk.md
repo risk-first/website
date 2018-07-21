@@ -1,6 +1,6 @@
 ![For Review](images/state/for-review.png)
 
-[Communication Risk](Communication-Risk) is the risk of communication between entities _going wrong_, due to loss or misunderstanding.
+[Communication Risk](Communication-Risk) is the risk of communication between entities _going wrong_, due to loss or misunderstanding. <!-- tweet-end -->
 Consider this: if we all had identical knowledge, there would be no need to do any communicating at all, and therefore and also no [Communication Risk](Communication-Risk).  
 
 ![Communication Risk](images/generated/communication-risk.png) 
@@ -13,7 +13,7 @@ But, people are not all-knowing oracles.  We rely on our _senses_ to improve our
 
 In 1948, Claude Shannon proposed this definition of communication:
 
-> "The fundamental problem of communication is that of reproducing at one point, either exactly or approximately, a message selected at another point." - [A Mathematical Theory Of Communication, _Claude Shannon_](https://en.wikipedia.org/wiki/A_Mathematical_Theory_of_Communication)
+> "The fundamental problem of communication is that of reproducing at one point, either exactly or approximately, a message selected at another point." - [A Mathematical Theory Of Communication, _Claude Shannon_](https://en.wikipedia.org/wiki/A_Mathematical_Theory_of_Communication)  <!-- tweet-end -->
 
 And from this same paper, we get the following (slightly adapted) model.
 
@@ -36,7 +36,7 @@ But it's not just transmission.  [Communication Risk](Communication-Risk) exists
 
 ## Approach To Communication Risk
 
-There is a symmetry about the steps going on in Shannon's diagram, and we're going to exploit this in order to break down [Communication Risk](Communication-Risk) into it's main types.  
+There is a symmetry about the steps going on in Shannon's diagram, and we're going to exploit this in order to break down [Communication Risk](Communication-Risk) into it's main types.  <!-- tweet-end -->
 
 ![Communication Risk 2](images/generated/communication_2.png)
 
@@ -57,7 +57,7 @@ The channel _characteristics_ depend on the medium, then.  Some obvious ones are
 
 Channel characteristics are important:  in a high-bandwidth, low-latency situation, **Alice** and **Bob** can _check_ with each other that the meaning was transferred correctly.  They can discuss what to buy, they can agree that **Alice** wasn't lying or playing a joke.  
 
-The channel characteristics also imply suitability for certain _kinds_ of messages.  A documentary might be a great way of explaining some economic concept, whereas an opera might not be.
+The channel characteristics also imply suitability for certain _kinds_ of messages.  A documentary might be a great way of explaining some economic concept, whereas an opera might not be.  <!-- tweet-end -->
 
 ## Channel Risk
 
@@ -75,7 +75,7 @@ At other times, channels can contain so much information that we can't hope to r
 
 #### Marketing Communications
 
-When we are talking about a product or a brand, mitigating [Channel Risk](Communication-Risk#channel-risk) is the domain of [Marketing Communications](https://en.wikipedia.org/wiki/Marketing_communications).   How do you ensure that the information about your (useful) project makes it to the right people?  How do you address the right channels? 
+When we are talking about a product or a brand, mitigating [Channel Risk](Communication-Risk#channel-risk) is the domain of [Marketing Communications](https://en.wikipedia.org/wiki/Marketing_communications).  <!-- tweet-end --> How do you ensure that the information about your (useful) project makes it to the right people?  How do you address the right channels? 
 
 This works both ways.  Let's looks at some of the **Channel Risks** from the point of view of a hypothetical software tool, **D**, which would really useful in my software: 
 
@@ -190,7 +190,7 @@ There's a lot going on here, but we can break it down really easily into 3 chunk
 
 ### 6. HTML - Hypertext Markup Language
  
-Although [HTML](https://en.wikipedia.org/wiki/HTML) is a language, a language is also a protocol.  (After all, language is what we use to encode our ideas for transmission as speech.)   In the example we gave, this was a very simple page telling the client that it's looking in the wrong place.  In most browsers, you don't get to see this:  the browser will understand the meaning of the `301` error and redirect you to the location.  
+Although [HTML](https://en.wikipedia.org/wiki/HTML) is a language, a language is also a protocol. <!-- tweet-end --> (After all, language is what we use to encode our ideas for transmission as speech.)   In the example we gave, this was a very simple page telling the client that it's looking in the wrong place.  In most browsers, you don't get to see this:  the browser will understand the meaning of the `301` error and redirect you to the location.  
 
 Let's look at all the protocols we saw here:
 
@@ -198,7 +198,7 @@ Let's look at all the protocols we saw here:
 
 Each protocol "passes on" to the next one in the chain.  On the left, we have the representation most suitable for the _messages_:  HTTP is designed for browsers to use to ask for and receive web pages.  As we move right, we are converting the message more and more into a form suitable for the [Channel](Communication-Risk#channels): in this case, microwave transmission.   
 
-By having a stack of protocols, we are able to apply [Separation Of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns), each protocol handling just a few concerns:
+By having a stack of protocols, we are able to apply [Separation Of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns), each protocol handling just a few concerns<!-- tweet-end -->:
 
  - `HTML` Abstraction: A language for describing the contents of a web-page.
  - `HTTP` Abstraction: Name-Value pairs, agreed on by both `curl` and Google, URLs and error codes.
@@ -208,9 +208,9 @@ By having a stack of protocols, we are able to apply [Separation Of Concerns](ht
  - `WiFi` Abstraction:  "Networks", 802.11 flavours.
  - Transmitters, Antennas, error correction codes, etc.
  
-`HTTP` "stands on the shoulders of giants".  Not only does it get to use pre-existing protocols like `TCP` and `DNS` to make it's life easier, it got `802.11` "for free" when this came along and plugged into the existing `IP` protocol.  This is the key value of abstraction:  you get to piggy-back on _existing_ patterns, and use them yourself. 
+`HTTP` "stands on the shoulders of giants".  Not only does it get to use pre-existing protocols like `TCP` and `DNS` to make it's life easier, it got `802.11` "for free" when this came along and plugged into the existing `IP` protocol.<!-- tweet-end -->  This is the key value of abstraction:  you get to piggy-back on _existing_ patterns, and use them yourself. 
 
-The protocol mediates between the message and the channel.  Where this goes wrong, we have [Protocol Risk](Communication-Risk#protocol-risk).  This is a really common issue for IT systems, but also sometimes for human communication too.
+The protocol mediates between the message and the channel.  <!-- tweet-end -->Where this goes wrong, we have [Protocol Risk](Communication-Risk#protocol-risk).  This is a really common issue for IT systems, but also sometimes for human communication too.
 
 ## Protocol Risk
 
@@ -226,7 +226,7 @@ Let's look at some types of [Protocol Risk](Communication-Risk#protocol-risk):
 
 ![Protocol Risk](images/generated/protocol-incompatibility-risk.png) 
 
-The people you find it _easiest_ to communicate with are your friends and family, those closest to you.  That's because you're all familiar with the same protocols.  Someone from a foreign country, speaking a different language and having a different culture, will essentially have a completely incompatible protocol for spoken communication to you.
+The people you find it _easiest_ to communicate with are your friends and family, those closest to you. <!-- tweet-end --> That's because you're all familiar with the same protocols.  Someone from a foreign country, speaking a different language and having a different culture, will essentially have a completely incompatible protocol for spoken communication to you.
 
 Within software, there are also competing, incompatible protocols for the same things, which is maddening when your protocol isn't supported.   Although the world seems to be standardizing, there used to be _hundreds_ of different image formats.  Photographs often use [TIFF](https://en.wikipedia.org/wiki/TIFF), [RAW](https://en.wikipedia.org/wiki/Raw_image_format) or [JPEG](https://en.wikipedia.org/wiki/JPEG), whilst we also have [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) for vector graphics, [GIF](https://en.wikipedia.org/wiki/GIF) for images and animations and [PNG](https://en.wikipedia.org/wiki/Portable_Network_Graphics) for other bitmap graphics.   
 
@@ -234,7 +234,7 @@ Within software, there are also competing, incompatible protocols for the same t
 
 ![Protocol Risk](images/generated/protocol-versioning-risk.png) 
 
-Even when systems are talking the same protocol, there can be problems.  When we have multiple, different systems owned by different parties, on their own upgrade cycles, we have **Protocol Versioning Risk**: the risk that either client or server could start talking in a version of the protocol that the other side hasn't learnt yet.  There are various mitigating strategies for this.  We'll look at two now: **Backwards Compatibility** and **Forwards Compatibility**.
+Even when systems are talking the same protocol, there can be problems. <!-- tweet-end --> When we have multiple, different systems owned by different parties, on their own upgrade cycles, we have **Protocol Versioning Risk**: the risk that either client or server could start talking in a version of the protocol that the other side hasn't learnt yet.  There are various mitigating strategies for this.  We'll look at two now: **Backwards Compatibility** and **Forwards Compatibility**.
 
 ### Protocol Complexity
 
@@ -253,7 +253,7 @@ Backwards Compatibility mitigates [Protocol Versioning Risk](Communication-Risk#
 
 #### Forward Compatibility
 
-`HTML` and `HTTP` provide "graceful failure" to mitigate [Protocol Risk](Communication-Risk#protocol-risk):  while its expected that all clients can parse the syntax of `HTML` and `HTTP`, it's not necessary for them to be able to handle all of the tags, attributes and rules they see.  The specification for both these standards is that if you don't understand something, ignore it.  Designing with this in mind means that old clients can always at least cope with new features, but it's not always possible.  
+`HTML` and `HTTP` provide "graceful failure" to mitigate [Protocol Risk](Communication-Risk#protocol-risk)<!-- tweet-end -->:  while its expected that all clients can parse the syntax of `HTML` and `HTTP`, it's not necessary for them to be able to handle all of the tags, attributes and rules they see.  The specification for both these standards is that if you don't understand something, ignore it.  Designing with this in mind means that old clients can always at least cope with new features, but it's not always possible.  
 
 `JavaScript` _can't_ support this:  because the meaning of the next instruction will often depend on the result of the previous one.  
 
@@ -271,7 +271,7 @@ A second aspect of [Protocol Risk](Communication-Risk#protocol-risk) exists in h
 
 ![Message Risk](images/generated/message-risk.png) 
 
-Although Shannon's Communication Theory is about transmitting **Messages**, messages are really encoded **Ideas** and **Concepts**, from an **Internal Model**.
+Although Shannon's Communication Theory is about transmitting **Messages**, messages are really encoded **Ideas** and **Concepts**, from an **Internal Model**. <!-- tweet-end -->
 
 ### Internal Model Assumption Risk
 
@@ -307,7 +307,7 @@ Create user 53 with surname 'Smith'
 
 People don't rely on rigorous implementations of abstractions like computers do; we make do with fuzzy definitions of concepts and ideas.  We rely on [Abstraction](Glossary#abstraction) to move between the name of a thing and the _idea of a thing_.
 
-While machines only process _information_, people's brains run on concepts and ideas.  For people, abstraction is critical: nothing exists unless we have a name for it.  Our world is just atoms, but we don't think like this.  _The name is the thing_.  
+While machines only process _information_, people's brains run on concepts and ideas.  For people, abstraction is critical: nothing exists unless we have a name for it. <!-- tweet-end --> Our world is just atoms, but we don't think like this.  _The name is the thing_.  
 
 > "The famous pipe. How people reproached me for it! And yet, could you stuff my pipe? No, it's just a representation, is it not? So if I had written on my picture “This is a pipe”, I'd have been lying!" - [Rene Magritte, of _The Treachery of Images_](https://en.wikipedia.org/wiki/The_Treachery_of_Images)
 
@@ -321,25 +321,25 @@ Another cost of [Abstraction](Glossary#abstraction) is [Invisibility Risk](Commu
 
 #### Invisibility Risk In Software
 
-As soon as you create a function, you are doing abstraction.  You are saying:  “I now have this operation. The details, I won’t mention again, but from now on, it’s called **f**”  And suddenly, “**f**” hides.  It is working invisibly.  Things go on in **f** that people don’t necessarily need to understand.   There may be some documentation, or tacit knowledge around what **f** is, and what it does, but it’s not necessarily right.  Referring to **f** is a much simpler job than understanding **f**.
+As soon as you create a function, you are doing abstraction.  <!-- tweet-end -->You are saying:  “I now have this operation. The details, I won’t mention again, but from now on, it’s called **f**”  And suddenly, “**f**” hides.  It is working invisibly.  Things go on in **f** that people don’t necessarily need to understand.   There may be some documentation, or tacit knowledge around what **f** is, and what it does, but it’s not necessarily right.  Referring to **f** is a much simpler job than understanding **f**.
 
 We try to mitigate this via (for the most part) documentation, but this is a terrible deal:  because we can't understand the original, (un-abstracted) implementation, we now need to write some simpler documentation, which _explains_ the abstraction, in terms of further abstractions, and this is where things start to get murky.
 
-[Invisibility Risk](Communication-Risk#invisibility-risk) is mainly [Hidden Risk](Glossary#Hidden-Risk).  (Mostly, _you don't know what you don't know_.)  But you can carelessly _hide things from yourself_ with software:
+[Invisibility Risk](Communication-Risk#invisibility-risk) is mainly [Hidden Risk](Glossary#Hidden-Risk).  (Mostly, _you don't know what you don't know_.)  But you can carelessly _hide things from yourself_ with software<!-- tweet-end -->:
 
  - Adding a thread to an application that doesn't report whether it's worked, failed, or is running out of control and consuming all the cycles of the CPU.
  - Redundancy can increase reliability, but only if you know when servers fail, and fix them quickly.   Otherwise, you only see problems when the last server fails.
  - When building a webservice, can you assume that it's working for the users in the way you want it to?
 
-When you build a software service, or even implement a thread, ask yourself:  "How will I know next week that this is working properly?"  If the answer involves manual work and investigation, then your implementation has just cost you in [Invisibility Risk](Communication-Risk#invisibility-risk).
+When you build a software service, or even implement a thread, ask yourself:  "How will I know next week that this is working properly?"  <!-- tweet-end -->If the answer involves manual work and investigation, then your implementation has just cost you in [Invisibility Risk](Communication-Risk#invisibility-risk).
 
 #### Invisibility Risk In Conversation
 
 [Invisibility Risk](Communication-Risk#invisibility-risk) is risk due to information not sent.  But because humans don't need a complete understanding of a concept to use it, we can cope with some [Invisibility Risk](Communication-Risk#invisibility-risk) in communication, and this saves us time when we're talking.   It would be _painful_ to have conversations if, say, the other person needed to understand everything about how cars worked in order to discuss cars.  
 
-For people, [Abstraction](Glossary#abstraction) is a tool that we can use to refer to other concepts, without necessarily knowing how the concepts work.  This divorcing of "what" from "how" is the essence of abstraction and is what makes language useful.   
+For people, [Abstraction](Glossary#abstraction) is a tool that we can use to refer to other concepts, without necessarily knowing how the concepts work. <!-- tweet-end --> This divorcing of "what" from "how" is the essence of abstraction and is what makes language useful.   
 
-The debt of [Invisibility Risk](Communication-Risk#invisibility-risk) comes due when you realise that _not_ being given the details _prevents_ you from reasoning about it effectively.  Let's think about this in the context of a project status meeting, for example:
+The debt of [Invisibility Risk](Communication-Risk#invisibility-risk) comes due when you realise that _not_ being given the details _prevents_ you from reasoning about it effectively.<!-- tweet-end -->  Let's think about this in the context of a project status meeting, for example:
  
 - Can you be sure that the status update contains all the details you need to know?
 - Is the person giving the update wrong or lying?
@@ -405,6 +405,6 @@ So, here's a summary of where we've arrived with our model of communication risk
 
 ![Communication 2](images/generated/communication_3.png)
 
-Since the purpose of Communication is to _coordinate our actions_, next it's time to look at [Coordination Risk](Coordination-Risk).
+There's no point to Communication unless you have someone or something to communicate with!<!-- tweet-end -->  So next it's time to look at [Dependency Risk](Dependency-Risk).
 
 this seems complex tbd.
