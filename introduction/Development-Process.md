@@ -129,7 +129,7 @@ A couple of things:
 
 ## Conclusion?
 
-<!-- tweet-start -->Could it be that _everything_ you do on a software project is risk management? <!-- tweet-end --> This is an idea explored in [the next section](All-Risk-Management).
+Could it be that _everything_ you do on a software project is risk management? <!-- tweet-end --> This is an idea explored in [the next section](All-Risk-Management).
 
 
 
