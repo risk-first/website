@@ -24,7 +24,7 @@ This is the one we've just discussed above: the feature that you (or your client
 
 ### Features Don't Work Properly
 
-<!-- tweet-start -->[Feature Risk](Feature-Risk) also includes things that don't work as expected: That is to say, [bugs](https://en.wikipedia.org/wiki/Software_bug).   Although the distinction between "a missing feature" and "a broken feature" might be worth making in the development team, we can consider these both the same kind of risk:  _the software doesn't do what the user expects_.<!-- tweet-start -->
+[Feature Risk](Feature-Risk) also includes things that don't work as expected<!-- tweet-end -->: That is to say, [bugs](https://en.wikipedia.org/wiki/Software_bug).   Although the distinction between "a missing feature" and "a broken feature" might be worth making in the development team, we can consider these both the same kind of risk:  _the software doesn't do what the user expects_.
 
 ![Implementation Risk](images/generated/implementation-risk.png) 
 

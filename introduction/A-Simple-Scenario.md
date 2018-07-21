@@ -36,7 +36,7 @@ There are also hidden [Attendant Risks](Glossary#attendant-risk) that you might 
 
 Different people will evaluate the risks differently.  (That is, worry about them more or less.)  They'll also _know_ about different risks.  They might have cooked the recipe before, or organised lots more dinner parties than you.   
 
-<!-- tweet-start -->How we evaluate the risks, and which ones we know about depends on our **knowledge** and **experience**, then. <!-- tweet-end --> And that varies from person to person (or team to team).  Lets call this our [Internal Model](Glossary#Internal-Model), and it's something we build on and improve with experience (of organising dinner parties, amongst everything else).
+How we evaluate the risks, and which ones we know about depends on our **knowledge** and **experience**, then. <!-- tweet-end --> And that varies from person to person (or team to team).  Lets call this our [Internal Model](Glossary#Internal-Model), and it's something we build on and improve with experience (of organising dinner parties, amongst everything else).
 
 ### Model Meets Reality
 
@@ -50,7 +50,7 @@ If we had a good model, and took the right actions, we should see positive outco
 
 ## On To Software
 
-<!-- tweet-start -->In this website, we're going to look at the risks in the software process and how these are mitigated by the various methodologies you can choose from.  <!-- tweet-end -->
+In this website, we're going to look at the risks in the software process and how these are mitigated by the various methodologies you can choose from.  <!-- tweet-end -->
 
 Let's examine the scenario of a new software project, and expand on the simple model being outlined above:  instead of a single person, we are likely to have a team, and our model will not just exist in our heads, but in the code we write.  
 
