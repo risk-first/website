@@ -2,7 +2,6 @@ package org.riskfirst.twitter;
 
 import java.io.File;
 import java.net.URI;
-import java.util.ArrayList;
 import java.util.EnumSet;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -16,7 +15,6 @@ import twitter4j.StatusUpdate;
 public class ImageTweetSource extends AbstractRiskFirstWikiTweetSource implements TweetSource {
 		
 	private String riskFirstWikiDir;
-	private List<String> hashtags = new ArrayList<>();
 
 	public ImageTweetSource(List<Article> articles, URI baseUri, String riskFirstWikiDir, List<String> hashtags) {
 		super(articles, baseUri, hashtags);
@@ -36,7 +34,7 @@ public class ImageTweetSource extends AbstractRiskFirstWikiTweetSource implement
 	
 	private StatusUpdate convertToStatusUpdate(Link l) {
 		String articleUrl = l.getArticle().getUrl(baseUri.toString());
-		StatusUpdate out = new StatusUpdate(l.getText()+" "+articleUrl+" "+randomHashtags(4));
+		StatusUpdate out = new StatusUpdate("\""+ l.getText()+"\" "+randomHashtags(4)+"- from "+articleUrl+" ");
 		
 		out.setMedia(getImageFile(l.getUrl()));
 		return out;

@@ -3,8 +3,6 @@ package org.riskfirst.twitter;
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import org.riskfirst.Article;
 
@@ -16,8 +14,6 @@ public class ArticleTweetSource extends AbstractRiskFirstWikiTweetSource {
 		super(articles, baseUri, tags);
 	}
 	
-	static final Pattern p = Pattern.compile("\\<\\!-- tweet-start --\\>(.*?)\\<\\!-- tweet-end --\\>");
-
 	@Override
 	public List<StatusUpdate> getAllTweets() {
 		List<StatusUpdate> out = new ArrayList<>();
@@ -27,11 +23,20 @@ public class ArticleTweetSource extends AbstractRiskFirstWikiTweetSource {
 
 	public void getTweetsFor(Article a, List<StatusUpdate> out) {
 		String text = a.getText();
-		Matcher m = p.matcher(text);
-		while (m.find()) {
-			String tweet = m.group(1);
-			StatusUpdate su = new StatusUpdate(deMarkdown(tweet, a) + " "+a.getUrl(baseUri.toString()));
-			out.add(su);
+		String[] lines = text.split("\\r?\\n");
+		
+		for (String string : lines) {
+			int e = string.indexOf("<!-- tweet-end -->");
+			if (e > -1) {
+				string = string.substring(0, e);
+				int s = string.indexOf("<!-- tweet-start -->");
+				if (s > -1) {
+					string = string.substring(s+20);
+				}
+				StatusUpdate su = new StatusUpdate("\""+deMarkdown(string, a) + "\" - from "+a.getUrl(baseUri.toString()));
+				System.out.println("Potential tweet: "+su);
+				out.add(su);
+			}
 		}
 	}
 	

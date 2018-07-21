@@ -43,13 +43,13 @@ public class Tweeter {
 		collectTweets(baseURI, articles, potentialTweets, amount("articles", 3), tags);
 		collectTweets(baseURI, tweetsArticle, potentialTweets, amount("tweets", 3), tags);
 
-		RetweetSource followerSource = new FollowerRetweetSource(twitter);
-		retweets = followerSource.getRandomTweets(amount("follow", 2));
-		potentialRetweets.addAll(retweets);
+//		RetweetSource followerSource = new FollowerRetweetSource(twitter);
+//		retweets = followerSource.getRandomTweets(amount("follow", 2));
+//		potentialRetweets.addAll(retweets);
 
-		RetweetSource searchSource = new SavedSearchRetweetSource(twitter);
-		retweets = searchSource.getRandomTweets(amount("searches", 2));
-		potentialRetweets.addAll(retweets);
+//		RetweetSource searchSource = new SavedSearchRetweetSource(twitter);
+//		retweets = searchSource.getRandomTweets(amount("searches", 2));
+//		potentialRetweets.addAll(retweets);
 		
 		for (StatusUpdate statusUpdate : potentialTweets) {
 			try {

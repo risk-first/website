@@ -27,8 +27,9 @@ public abstract class AbstractRiskFirstWikiTweetSource extends AbstractTweetSour
 	}
 	
 	public String randomHashtags(int c) {
-		Collections.shuffle(hashtags);
-		List<String> sl = hashtags.subList(0, Math.min(c, hashtags.size()-1));
-		return " "+sl.stream().reduce((a, b) -> a+" "+b).orElse("");
+		return "#riskfirst"; 
+//		Collections.shuffle(hashtags);
+//		List<String> sl = hashtags.subList(0, Math.min(c, hashtags.size()-1));
+//		return " "+sl.stream().reduce((a, b) -> a+" "+b).orElse("");
 	}
 }
