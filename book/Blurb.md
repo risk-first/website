@@ -7,8 +7,8 @@ The **Risk-First** perspective is that all of these practices and methodologies 
 
 - A story about improving the user login screen can be seen as reducing _the risk of users not signing up_.
 - If we write unit tests, we’re tackling _the risk of bugs going to production_, but we’re also defending against _the risk of future changes breaking our existing functionality_.
-- A task about improving the health indicators could be seen as addressing _the risk of the application failing and no-one reacting to it_.
-- Implementing a new function in the application is fixing _the risk that users are dissatisfied and go elsewhere_.
+- Building health indicators could be seen as addressing _the risk of the application failing and no-one reacting to it_.
+- Implementing a new function is fixing _the risk that users are dissatisfied and go elsewhere_.
 
 **Risk-First** makes the case that better understanding the nature of these risks is critical to building software in the complex, interconnected domain we work in.  
 
