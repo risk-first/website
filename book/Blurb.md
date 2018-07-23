@@ -16,7 +16,7 @@ Visit **riskfirst.org** for more details.
 
 ## About _The Menagerie_
 
-This book is volume one of the **Risk-First** series, introducing the  case for viewing _all_ of the activities on a software project as attempting to _managing risk_.  It introduces the menagerie of different risks you're likely to meet on a software project, naming and classifying them so that we can try to understand them better.
+Volume one of the **Risk-First** series argues the case for viewing _all_ of the activities on a software project through the lens of _managing risk_.  It introduces the menagerie of different risks you're likely to meet on a software project, naming and classifying them so that we can try to understand them better.
 
 The book aims to develop a _Pattern Language_ for understanding software risk, and develop a practical framework for discussing how the activities we take on a project change the balance of the risks we are exposed to.
 
