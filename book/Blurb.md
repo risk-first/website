@@ -5,7 +5,7 @@ The software development world is crowded with different practices, metrics, met
 
 The **Risk-First** perspective is that all of these practices and methodologies have at their heart the job of managing different _risks_.   Risk isn't something that just appears in a report, it actually drives _everything we do_:
 
-- A story about improving the user login screen can be seen as reducing _the risk of users not signing up_.
+- A story about improving the user registration screen can be seen as reducing _the risk of users not signing up_.
 - If we write unit tests, we’re tackling _the risk of bugs going to production_, but we’re also defending against _the risk of future changes breaking our existing functionality_.
 - Building health indicators could be seen as addressing _the risk of the application failing and no-one reacting to it_.
 - Implementing a new function is fixing _the risk that users are dissatisfied and go elsewhere_.
