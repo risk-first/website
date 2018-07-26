@@ -37,10 +37,10 @@ Let's take a look at a hypothetical project structure:
 
 ![Our System receives data from `a`, translates it for `b` and then sends the result to `c` in a format it understands](images/kite9/boundary-risk-ps.png)
 
-In this design, we have included 3 dependencies, `a`, `b`, `c`.  As you can see, `Our Code` is orchestrating the flow of information between them:
- - First, it receives something from `a`, using the [Protocol]() of `a`.
- - Then, it **Translates** this into the [Protocol]() of `b`, retrieving something back from `b`.
- - Then, it **Translates** that into the [Protocol]() of `c`.
+In this design, we have 3 dependencies, `a`, `b`, `c`.  As you can see, `Our System` is orchestrating the flow of information between them:
+ - First, it receives something from `a`, using the [Protocol](Communication-Risk#protocol-risk) of `a`.
+ - Then, it **Translates** this into the [Protocol](Communication-Risk#protocol-risk) of `b`, retrieving something back from `b`.
+ - Then, it **Translates** that into the [Protocol](Communication-Risk#protocol-risk) of `c`.
  
 You could say we are doing **Integration** of the different dependencies, or **Translation** between those dependencies.  Since we are talking about **Translation**, we are clearly talking about [Communication Risk](Communication-Risk) again:  our task in **Integrating** all of these components is _to get them to talk to each other_.
 
