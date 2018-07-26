@@ -183,7 +183,9 @@ As before, in order to face [Coordination Risk](Coordination-Risk) in software, 
 
 ### CAP Theorem
 
-The [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem) has a lot to say about [Coordination Risk](Coordination-Risk).  Imagine talking to a distributed database, where your request (_read_ or _write_) can be handled by one of many agents.  
+The [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem) has a lot to say about [Coordination Risk](Coordination-Risk).  Imagine talking to a distributed database, where your request (_read_ or _write_) can be handled by one of many agents.
+
+In the diagram below, we have just two agents `1` and `2`, in order to keep things simple.  `User A` _writes something_ to the database, then `User B` _reads it back_ afterwards.     
 
 ![User A and User B are both using a distributed database, managed by Agents 1 and 2, whom each have their own Internal Model](images/kite9/coordination-cap-1.png)
 
