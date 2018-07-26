@@ -89,7 +89,7 @@ On the face of it, [WordPress](https://en.wikipedia.org/wiki/WordPress) and [Dru
  - They were both started around the same time (2001 for Drupal, 2003 for WordPress)
  - They are both Open-Source, and have a wide variety of [Plugins](https://en.wikipedia.org/wiki/Plug-in_(computing)).  That is, ways for other programmers to extend the functionality in new directions.
 
-In practice, they are very different.  This could be put down to different _design goals_:  it seems that [WordPress](https://en.wikipedia.org/wiki/WordPress) was focused much more on usability, and an easy learning curve, whereas [Drupal](https://en.wikipedia.org/wiki/Drupal) supported plugins for building things with complex data formats.  It could also be down to the _design decisions_:  although they both support [Plugins](), they do it in very different ways.  
+In practice, they are very different.  This could be put down to different _design goals_:  it seems that WordPress was focused much more on usability, and an easy learning curve, whereas Drupal) supported plugins for building things with complex data formats.  It could also be down to the _design decisions_:  although they both support [Plugins](), they do it in very different ways.  
 
 (Side note: I wasn't short of go-to examples for this.  I could have picked on [Team City](https://en.wikipedia.org/wiki/TeamCity) and [Jenkins](https://en.wikipedia.org/wiki/Jenkins_(software)) here ([Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration) tools), or [Maven](https://en.wikipedia.org/wiki/Apache_Maven) and [Gradle](https://en.wikipedia.org/wiki/Gradle) (Java build tools).  All of these support [plugins](https://en.wikipedia.org/wiki/Plug-in_(computing)), and the _choice_ of plugins is dependent on which I've chosen, despite the fact that the platforms are solving pretty much the same problems. )
 
@@ -111,15 +111,15 @@ In the real world, there is a tendency for _big cities to get bigger_.  The more
 
 > "A network effect (also called network externality or demand-side economies of scale) is the positive effect described in economics and business that an additional user of a good or service has on the value of that product to others. When a network effect is present, the value of a product or service increases according to the number of others using it." - [Network Effect, _Wikipedia_](https://en.wikipedia.org/wiki/Network_effect)
 
-You can see the same effect in the adoption rates of [WordPress](https://en.wikipedia.org/wiki/WordPress) and [Drupal](https://en.wikipedia.org/wiki/Drupal), shown in the chart below.  Note: this is over _all sites on the internet_, so Drupal accounts for hundreds of thousands of sites.  In 2018, [WordPress](https://en.wikipedia.org/wiki/WordPress) is approximately 32% of all websites.  For [Drupal](https://en.wikipedia.org/wiki/Drupal) it's 2%.
+You can see the same effect in the adoption rates of WordPress and Drupal), shown in the chart below.  Note: this is over _all sites on the internet_, so Drupal accounts for hundreds of thousands of sites.  In 2018, WordPress is approximately 32% of all websites.  For Drupal) it's 2%.
 
 ![Wordpress vs Drupal adoption over 8 years, according to [w3techs.com](https://w3techs.com/technologies/history_overview/content_management/all/y)](images/wordpress-drupal-chart.png)
 
-Did [WordPress](https://en.wikipedia.org/wiki/WordPress) gain this march because it was better than [Drupal](https://en.wikipedia.org/wiki/Drupal)?  That's arguable.  That it's this way round could be _entirely accidental_, and a result of [Network Effect](https://en.wikipedia.org/wiki/Network_effect).
+Did WordPress gain this march because it was better than Drupal)?  That's arguable.  That it's this way round could be _entirely accidental_, and a result of [Network Effect](https://en.wikipedia.org/wiki/Network_effect).
 
 And maybe, they aren't comparable:  Given the same problems, the people in each ecosystem have approached them and solved them in different ways.  And, this has impacted the 'shape' of the abstractions, and the protocols you use in each.  [Complexity](Complexity-Risk) _emerges_, and the ecosystem gets more complex and opinionated, much like the way in which the network of a city will evolve over time in an unpredictable way.
 
-But, by now, if they _are_ to be compared side-by-side, [WordPress](https://en.wikipedia.org/wiki/WordPress) _should be better_ due to the sheer number of people in this ecosystem who are...
+But, by now, if they _are_ to be compared side-by-side, WordPress _should be better_ due to the sheer number of people in this ecosystem who are...
  - Creating web sites.
  - Using those sites.
  - Submitting bug requests.
@@ -174,7 +174,7 @@ tbd. diagram here.
 
 ## Boundary-Crossing With Standards
 
-Sometimes, technology comes along that allows us to cross boundaries, like a _bridge_ or a _road_.  This has the effect of making it easy to to go from one self-contained [ecosystem]() to another.  Going back to [WordPress](https://en.wikipedia.org/wiki/WordPress), a simple example might be the [Analytics Dashboard]() which provides [Google Analytics]() functionality inside [WordPress](https://en.wikipedia.org/wiki/WordPress).  Or, the [SVG Plugin](), which allows you to use [SVG images]() within [WordPress](https://en.wikipedia.org/wiki/WordPress).  I find, a lot of code I write is of this nature:  trying to write the _glue code_ to together two different _ecosystems_.   
+Sometimes, technology comes along that allows us to cross boundaries, like a _bridge_ or a _road_.  This has the effect of making it easy to to go from one self-contained [ecosystem]() to another.  Going back to WordPress, a simple example might be the [Analytics Dashboard]() which provides [Google Analytics]() functionality inside WordPress.  Or, the [SVG Plugin](), which allows you to use [SVG images]() within WordPress.  I find, a lot of code I write is of this nature:  trying to write the _glue code_ to together two different _ecosystems_.   
 
 - [ASCII](): fixed the different-character-sets boundary risk by being a standard that others could adopt.  Before everyone agreed on ASCII, copying data from one computer system to another was a massive pain, and would involve some kind of translation.  [UTF]() continues this work to ensure we don't have to worry about **Translation** from one encoding to another.  This is an example of mitigating [Boundary Risk](Boundary-Risk) with standards.  One of the problems with this is that _you have to get everyone to change to using the standard_ and this isn't always a given.  
 
@@ -326,7 +326,7 @@ The next question, is why did Microsoft _stop_ pursuing this strategy?  It seems
 You can't always be sure that a dependency now will always have the same guarantees in the future: 
 - **Ownership changes**  [Microsoft]() buys [Github]().  What will happen to the ecosystem around github now?
 - **Licensing changes**.  (e.g. [Oracle](http://oracle.com) buys **Tangosol** who make [Coherence](https://en.wikipedia.org/wiki/Oracle_Coherence) for example).  Having done this, they increase the licensing costs of Tangosol to huge levels, milking the [Cash Cow]() of the installed user-base, but ensuring no-one else is likely to use it.
-- **Better alternatives become available**:  As a real example of this, I began a project in 2016 using [Apache Solr]().  However, in 2018, I would probably use [ElasticSearch](https://en.wikipedia.org/wiki/Elasticsearch).  In the past, I've built websites using [Drupal](https://en.wikipedia.org/wiki/Drupal) and then later converted them to use [WordPress](https://en.wikipedia.org/wiki/WordPress).
+- **Better alternatives become available**:  As a real example of this, I began a project in 2016 using [Apache Solr]().  However, in 2018, I would probably use [ElasticSearch](https://en.wikipedia.org/wiki/Elasticsearch).  In the past, I've built websites using Drupal) and then later converted them to use WordPress.
 
 ## Patterns In Boundary Risk
 
