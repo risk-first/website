@@ -9,8 +9,8 @@ In order to avoid repetition, and also to break down this large topic, we're goi
  - In this first section will look at dependencies _in general_, and specifically on _events_, and some of the variations on [Dependency Risk](Dependency-Risk).
  - Next, we'll look at [Schedule Risk](Schedule-Risk), because time and money are key dependencies in any project.
  - Then, we'll move on to look specifically at [Software Dependency Risk](Software-Dependency-Risk), covering using libraries, software services and building on top of the work of others.
- - Next, we'll take a closer look at [Boundary Risk](Boundary-Risk) and [Dead-End Risk](Boundary-Risk#dead-end-risk).  These are the risks you face in choosing the wrong things to depend on.
  - After, we'll take a look at [Process Risk](Process-Risk), which is still [Dependency Risk](Dependency-Risk), but we'll be considering more organisational factors and how bureaucracy comes into the picture.
+ - Next, we'll take a closer look at [Boundary Risk](Boundary-Risk) and [Dead-End Risk](Boundary-Risk#dead-end-risk).  These are the risks you face in choosing the wrong things to depend on.
  - Finally, we'll wrap up this analysis with a look at some of the specific problems around working with other people or businesses in [Agency Risk](Agency-Risk).
   
 ## Why Have Dependencies?
