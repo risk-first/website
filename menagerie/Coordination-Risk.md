@@ -197,16 +197,17 @@ Since _any_ agent can receive the read or write, it's a **GII** decision making 
 
 The [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem) states that this is a [Trilemma](https://en.wikipedia.org/wiki/Trilemma).  That is, you can only have two out of the three properties.   There are plenty of resources on the internet that discuss this in depth, but let's just illustrate with some diagrams to show how this plays out.  In these, the last write (setting X to 1) was sent to Agent 1 which then becomes _isolated_, and can't be communicated with, due to network failure.  What will User B get back?
 
-![In an AP system, the User B will get back a _stale value_ for X](images/kite9/communication-cap-ap.png)
+![In an AP system, the User B will get back a _stale value_ for X](images/kite9/coordination-cap-ap.png)
 
-![In an CP system, the User B won't get anything back for X, because Agent 2 can't be sure it has the latest value](images/kite9/communication-cap-cp.png)
+With AP, you can see that User B is getting back a stale value.  The availability or otherwise of 
 
-![In an CA system, we can't have partition tolerance, so in order to be consistent a single Agent has to do all the work](images/kite9/communication-cap-ca.png)
+![In an CP system, the User B won't get anything back for X, because Agent 2 can't be sure it has the latest value](images/kite9/coordination-cap-cp.png)
+
+![In an CA system, we can't have partition tolerance, so in order to be consistent a single Agent has to do all the work](images/kite9/coordination-cap-ca.png)
 
 This sets an upper bound on [Coordination Risk](Coordination-Risk):  we _can't_ get rid of it completely in a software system, -or- a system on any other scale.  
 
-
-### Immutability
+### Some Examples
 
 Immutability (or write-only data structures) are often presented as a solution to many of the problems of multi-agent systems.  After all, if values in the system aren't _changing_, then memory is not a scarce resource, and we avoid [race conditions](https://en.wikipedia.org/wiki/Race_condition).  However, we _still_ have to contend with [Coordination Risk](Coordination-Risk). Let's look at two examples.
 
