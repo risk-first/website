@@ -179,11 +179,13 @@ Clearly, this is just a _model_, it's not set in stone and decision making style
 
 It should be pretty clear that we are applying the [Scale Invariance](Risk-Theory#invariances-2-scale-invariance) rule to [Coordination Risk](Coordination-Risk):  all of the problems we've described as affecting teams, also affect software, although the scale and terrain are different.  Software processes have limited _agency_ - in most cases they follow fixed rules set down by the programmers, rather than self-organising like people can (so far).
 
-As before, in order to face [Coordination Risk](Coordination-Risk) in software, we need multiple Agents all working together, so [Coordination Risks](Coordination-Risk) (such as race conditions or deadlock) only really occurs in multi-threaded software where there is resource competition.  
+As before, in order to face [Coordination Risk](Coordination-Risk) in software, we need multiple Agents all working together, so [Coordination Risks](Coordination-Risk) (such as race conditions or deadlock) only really occurs where _more than one thing is happening at a time_.  This means we are considering _at least_ multi-threaded software and anything above that (multiple CPUs, servers, data-centres and so on).  
 
 ### CAP Theorem
 
-The [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem) has a lot to say about [Coordination Risk](Coordination-Risk).  Imagine talking to a distributed database, where your request (read or write) can be handled by one of many agents.  
+The [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem) has a lot to say about [Coordination Risk](Coordination-Risk).  Imagine talking to a distributed database, where your request (_read_ or _write_) can be handled by one of many agents.  
+
+![User A and User B are both using a distributed database, managed by Agents 1 and 2, whom each have their own Internal Model](images/kite9/communication-cap-1.png)
 
 According to the [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem), there are three properties we could desire in such a system:
 
@@ -193,17 +195,16 @@ According to the [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem), there
 
 Since _any_ agent can receive the read or write, it's a **GII** decision making system, because all the agents are going to need to coordinate to figure out what the right value is to return for a read, and what the last value written was.
 
-The [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem) states that this is a [Trilemma](https://en.wikipedia.org/wiki/Trilemma).  That is, you can only have two out of the three properties.   There are plenty of resources on the internet that discuss this in depth, but let's just illustrate with a diagram how this plays out.  In this, the last write (3) was sent to a node which is now _isolated_, and can't be communicated with, due to network failure.  What do you get back?
+The [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem) states that this is a [Trilemma](https://en.wikipedia.org/wiki/Trilemma).  That is, you can only have two out of the three properties.   There are plenty of resources on the internet that discuss this in depth, but let's just illustrate with some diagrams to show how this plays out.  In these, the last write (setting X to 1) was sent to Agent 1 which then becomes _isolated_, and can't be communicated with, due to network failure.  What will User B get back?
 
-tbd image
+![In an AP system, the User B will get back a _stale value_ for X](images/kite9/communication-cap-ap.png)
 
-CA:  show how the system wouldn't be partition tolerant if the last write was on an isolated node.
-CP:  waits until the isolated node comes back
-AP:  you can return some value back, but it won't necessarily be the last one.
+![In an CP system, the User B won't get anything back for X, because Agent 2 can't be sure it has the latest value](images/kite9/communication-cap-ap.png)
 
-This sets an upper bound on [Coordination Risk](Coordination-Risk):  we _can't_ get rid of it completely in a software system, -or- a system on any other scale.  This explains in part why _countries_ are often created along geographic bounds:   
+![In an CA system, we can't have partition tolerance, so in order to be consistent a single Agent has to do all the work](images/kite9/communication-cap-ap.png)
 
-tbd 
+This sets an upper bound on [Coordination Risk](Coordination-Risk):  we _can't_ get rid of it completely in a software system, -or- a system on any other scale.  
+
 
 ### Immutability
 
