@@ -2,9 +2,9 @@
 
 [Process Risk](Process-Risk), as we will see, is the risk you take on whenever you embark on completing a _process_. 
 
-> "**Process:**: A process is a set of activities that interact to achieve a result." - [Process, _Wikipedia_](https://en.wikipedia.org/wiki/Process)
+> "**Process:** A process is a set of activities that interact to achieve a result." - [Process, _Wikipedia_](https://en.wikipedia.org/wiki/Process)
 
-In the software development world (and the business world generally) processes usually somehow involve _forms_.  If you're filling out a form (whether on paper or on a computer) then you're involved in a process of some sort, whether an "Account Registration" process, "Loan Application" process or "Consumer Satisfaction Survey" process.  
+In the software development world (and the business world generally) processes commonly involve _forms_:  If you're filling out a form (whether on paper or on a computer) then you're involved in a process of some sort, whether an "Account Registration" process, "Loan Application" process or "Consumer Satisfaction Survey" process.  But sometimes, they involve events occuring:  a [build process](https://en.wikipedia.org/wiki/Software_build) might start after you commit some code, for example.
 
 ## The Purpose Of Process
 
@@ -29,15 +29,15 @@ Before we get to examining what constitues [Process Risks](Process-Risk), let's 
 
 Business Processes often arise in response to an unmet need within an organisation.  And, as we said above, they are usually there to mitigate other risks.  Let's look at an example lifecycle of how that can happen.
 
-![Clients `C` need `A` to do their jobs](images/kite9/process-risk-0.png)
+![Step 0: Clients `C` need `A` to do their jobs](images/kite9/process-risk-0.png)
 
 0.  Let's say, there exists a group of people inside a company `C`, which need a certain something `A` in order to get their jobs done.  It might be a producing a resource, or dealing with some source of complexity, or whatever.
 
-![Person B doing A for company C](images/kite9/process-risk-1.png)
+![Step 1: Person B doing A for company C](images/kite9/process-risk-1.png)
 
 1.  Person `B` in a company starts producing `A` _as a service to others_.  This is really useful! It makes the the lives of clients in `C` much easier as they have an easier path to `A` than before.  `B` gets busy keeping `C` happy.  No one cares.  But then, `B` goes on holiday.  `A` doesn't get done, and people now care:  the [Dependency Risk](Dependency-Risk) is suddenly apparent. 
 
-![Team T is created to do A for Company C](images/kite9/process-risk-2.png)
+![Step 2: Team T is created to do A for Company C](images/kite9/process-risk-2.png)
 
 2.  Either, `B` co-opts other people to help, gets given a team (`T`), or someone else forms a team `T` containing `B` to get the job done "properly".  
  - `T` is responsible for doing `A`, but it needs to supply the company with `A` reliably and responsibly, otherwise there will be trouble, so they try and please all of their clients as far as possible.  
@@ -137,9 +137,7 @@ There's a couple of ways this could go wrong:  They may _take my payment_, but t
 
 Mechanisms like [insurance](https://en.wikipedia.org/wiki/Insurance_policy), [contracts](https://en.wikipedia.org/wiki/Contract) and [guarantees](https://en.wikipedia.org/wiki/Guarantee) help mitigate this risk at the cost of complexity and expense.
 
-
-
-## Sign-Offs
+### Sign-Offs
 
 Often, Processes will include sign-off steps.  The [Sign-Off](Sign-Off) is an interesting mechanism:  
  - By signing off on something for the business, people are usually in some part staking their reputation on something being right. 
@@ -151,6 +149,11 @@ Often, [Sign Offs](Sign-Off) boil down to a balance of risk for the signer:  on 
 This is a nasty situation, but there are a couple of ways to de-risk this: 
  - break [Sign Offs](Sign-Off) down into bite-size chunks of risk that are acceptable to those doing the sign-off.  
  - Agree far-in-advance the sign-off criteria.  As discussed in [Risk Theory](Risk-Theory), people have a habit of heavily discounting future risk, and it's much easier to get agreement on the _criteria_ than it is to get the sign-off. 
+
+### Software Processes
+
+tbd
+
 
 
 
