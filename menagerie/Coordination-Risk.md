@@ -209,11 +209,12 @@ Where Agent 2 is left waiting for Agent 1 to re-appear, we are _blocked_.  So CP
 
 ![In an CA system, we can't have partition tolerance, so in order to be consistent a single Agent has to do all the work](images/kite9/coordination-cap-ca.png)
 
-Finally, if we have a CA system, we are essentially saying that only one agent is doing the work.  (You can't partition a single agent, after all).  But this leads to the [Resource Allocation](https://en.wikipedia.org/wiki/Resource_allocation) problems we saw earlier, and **Contention** around use of the scarce resource of `Agent 2`'s attention.  Because we don't support `Partition Tolerance`, we can't subdivide `Agent 2`s work.
+Finally, if we have a CA system, we are essentially saying that _only one agent is doing the work_.  (You can't partition a single agent, after all).  But this leads to [Resource Allocation](https://en.wikipedia.org/wiki/Resource_allocation) and **Contention** around use of the scarce resource of `Agent 2`'s attention. (Both [Coordination Risk](Coordination-Risk) issues we met earlier.)  
 
-This sets an upper bound on [Coordination Risk](Coordination-Risk):  we _can't_ get rid of it completely in a software system, -or- a system on any other scale.  We _can_ mitigate it a long way by agreeing on protocols and doing lots of communication, but fundamentally, coordination problems are inescapable at some level.
 
 ### Some Real-Life Examples
+
+This sets an upper bound on [Coordination Risk](Coordination-Risk):  we _can't_ get rid of it completely in a software system, -or- a system on any other scale.  We _can_ mitigate it a long way by agreeing on protocols and doing lots of communication, but fundamentally, coordination problems are inescapable at some level.  Let's look at some real-life examples of how this manifests in software.
 
 #### ZooKeeper
 
