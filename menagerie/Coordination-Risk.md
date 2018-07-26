@@ -203,19 +203,37 @@ There are plenty of resources on the internet that discuss this in depth, but le
 
 With `AP`, you can see that `User B` is getting back a _stale value_.  `AP` scenarios lead to [Race Conditions](https://en.wikipedia.org/wiki/Race_condition):  `Agent 1`s availability determines what value `User B` gets back.  
 
-![In an CP system, the User B won't get anything back for X, because Agent 2 can't be sure it has the latest value](images/kite9/coordination-cap-cp.png).  Where Agent 2 is left waiting for Agent 1 to re-appear, we are blocked.  So CP systems lead to [Deadlock](https://en.wikipedia.org/wiki/Deadlock) scenarios.  
+![In an CP system, the User B won't get anything back for X, because Agent 2 can't be sure it has the latest value](images/kite9/coordination-cap-cp.png).  
+
+Where Agent 2 is left waiting for Agent 1 to re-appear, we are _blocked_.  So CP systems lead to [Deadlock](https://en.wikipedia.org/wiki/Deadlock) scenarios.  
 
 ![In an CA system, we can't have partition tolerance, so in order to be consistent a single Agent has to do all the work](images/kite9/coordination-cap-ca.png)
 
 Finally, if we have a CA system, we are essentially saying that only one agent is doing the work.  (You can't partition a single agent, after all).  But this leads to the [Resource Allocation](https://en.wikipedia.org/wiki/Resource_allocation) problems we saw earlier, and **Contention** around use of the scarce resource of `Agent 2`'s attention.  Because we don't support `Partition Tolerance`, we can't subdivide `Agent 2`s work.
 
-This sets an upper bound on [Coordination Risk](Coordination-Risk):  we _can't_ get rid of it completely in a software system, -or- a system on any other scale.  
+This sets an upper bound on [Coordination Risk](Coordination-Risk):  we _can't_ get rid of it completely in a software system, -or- a system on any other scale.  We _can_ mitigate it a long way by agreeing on protocols and doing lots of communication, but fundamentally, coordination problems are inescapable at some level.
 
 ### Some Real-Life Examples
 
-First, [Bitcoin](https://en.wikipedia.org/wiki/Bitcoin) (BTC) is a write-only [distributed ledger](https://en.wikipedia.org/wiki/Distributed_ledger), where agents _compete_ to mine BTC, but also at the same time record transactions on the ledger.  But there is _huge_ [Coordination Risk](Coordination-Risk) in BTC, because it is pretty much outright competition.  If someone beats you to completing a piece of work, then your work is wasted.   For this reason, BTC agents _coordinate_ into [mining consortia](https://en.bitcoin.it/wiki/Comparison_of_mining_pools), so they can avoid working on the same problems at the same time.  Nevertheless, the performance of BTC is [highly questionable](https://en.wikipedia.org/wiki/Bitcoin#Energy_consumption), and this is because it is entirely competitive.  In [CAP](Coordination-Risk#CAP-theorem) terms, BitCoin is tbd.
+#### ZooKeeper
 
-Second, [git](https://en.wikipedia.org/wiki/Git) is a (mainly) write-only ledger of source changes.  However, as we already discussed, where different agents make incompatible changes, someone has to decide how to resolve the conflicts so that we have a single source of truth.  The [Coordination Risk](Coordination-Risk) just _doesn't go away_.  Git is an AP system.
+First, [ZooKeeper](https://zookeeper.apache.org) is an Open-Source datastore, which is used a lot for coordinating a [cluster, and storing things like configuration information across the distributed system.  If the configuration of a distributed system gets changed, it's important that _all of the agents in the system know about it_, otherwise... disaster.
+
+This _seems_ trivial, but it quickly gets out-of-hand:  what happens if only some of the agents receive the new information? What happens if a datacentre gets disconnected while the update is happening?  There are lots of edge-cases.  
+
+ZooK handles this by communicating with it's own protocol, and making sure that a _majority of agents_ have received and stored the configuration change before telling the user that the transaction is complete.  Therefore, ZooKeeper is a `CP` system.
+
+#### Git
+
+Second, [git](https://en.wikipedia.org/wiki/Git) is a (mainly) write-only ledger of source changes.  However, as we already discussed above, where different agents make incompatible changes, someone has to decide how to resolve the conflicts so that we have a single source of truth.  The [Coordination Risk](Coordination-Risk) just _doesn't go away_.  Since multiple users can make all the changes they like locally, and merge them later, Git is an `AP` system:  individual users may have _wildly_ different ideas about what the source looks like until the merge is complete.
+
+#### Bitcoin
+
+Finally, [Bitcoin (BTC)](https://en.wikipedia.org/wiki/Bitcoin) (BTC) is a write-only [distributed ledger](https://en.wikipedia.org/wiki/Distributed_ledger), where agents _compete_ to mine BTC, but also at the same time record transactions on the ledger.  BTC is also `AP`, in a similar way to Git.  But new changes can only be appended if you have the latest version of the ledger, because if you append to an out-of-date ledger, your work will be lost.  
+
+Because it's based on outright competition, if someone beats you to completing a piece of work, then your work is wasted.  So, there is  _huge_ [Coordination Risk](Coordination-Risk).
+
+For this reason, BTC agents [coordinate](Coordination-Risk) into [mining consortia](https://en.bitcoin.it/wiki/Comparison_of_mining_pools), so they can avoid working on the same problems at the same time.  But this in itself is a problem, because the whole _point_ of BTC is that it's competitive, and no one entity has control.  So, this sets a maximum size on the mining pool of just under 50% of the BTC network's processing power.
 
 ## Communication Is For Coordination
 
