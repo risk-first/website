@@ -175,33 +175,28 @@ This  tbd
 
 tbd. diagram here. 
 
-## Boundary-Crossing With Standards
+## Beating Boundary Risk With Standards
 
-Sometimes, technology comes along that allows us to cross boundaries, like a _bridge_ or a _road_.  This has the effect of making it easy to to go from one self-contained [ecosystem]() to another.  Going back to WordPress, a simple example might be the [Analytics Dashboard]() which provides [Google Analytics]() functionality inside WordPress.  Or, the [SVG Plugin](), which allows you to use [SVG images]() within WordPress.  I find, a lot of code I write is of this nature:  trying to write the _glue code_ to together two different _ecosystems_.   
+Sometimes, technology comes along that allows us to cross boundaries, like a _bridge_ or a _road_.  This has the effect of making it easy to to go from one self-contained ecosystem to another.  Going back to WordPress, a simple example might be the [Analytics Dashboard]() which provides [Google Analytics](https://en.wikipedia.org/wiki/Google_Marketing_Platform) functionality inside WordPress.  
 
-- [ASCII](): fixed the different-character-sets boundary risk by being a standard that others could adopt.  Before everyone agreed on ASCII, copying data from one computer system to another was a massive pain, and would involve some kind of translation.  [UTF]() continues this work to ensure we don't have to worry about **Translation** from one encoding to another.  This is an example of mitigating [Boundary Risk](Boundary-Risk) with standards.  One of the problems with this is that _you have to get everyone to change to using the standard_ and this isn't always a given.  
+I find, a lot of code I write is of this nature:  trying to write the _glue code_ to join together two different _ecosystems_.  
 
-- [C]](): The C programming language provided a way to get the same programs compiled against different architectures, therefore providing some _portability_ to code.  This essentially reduced the [Boundary Risk](Boundary-Risk) of the system architectures.  The problem was, this was a _leaky abstraction_: each different operating system would likely have it's own libraries, and so to support multiple operating systems, you'd have to write code against multiple different libraries.  In a way, C provides a standard:  it's a programming language that [Abstracts]() over processor instruction sets.
+Standards allow us to achieve the same thing, in one of two ways:
 
-- [Java]() took what C did and went one step further: instead of a _compile anywhere_ ethos, it was a _run anywhere_ ethos.  Java code could run anywhere where there was a [Java Virtual Machine]() installed.   Again, this [abstracted] away the details of the lower level architecture.  As we saw above, Java comes with a large and steadily growing collection library of built-in functionality that you can call _instead_ of diving down to the host operating system.  If the [Java Virtual Machine]() is installed, you can _rely_ on this functionality.  So Java provides a standard [abstraction] over operating systems.
+ - **Mode 1:  Abstract over the ecosystems.**  Provide a _standard_ protocol (a _lingua franca_) which can be converted down into the protocol of any of a number of competing ecosystems.
+ - **Mode 2: Force adoption.** All of the ecosystems start using the standard for fear of being left out in the cold.  Sometimes, a standards body is involved, but other times a "de facto" standard emerges that everyone adopts.
 
-- [Docker]() and [Containerization](): [Emulation]() has long been a thing in computing, where one platform _pretends to be_ another in order to get foreign software to run.  But containerization software like [Docker]() and [Kubernetes]() are leading a huge upswing in the popularity of this.  The key advantage is that you can spin up running software services _in a standard way_ with very little administration.   The [Protocol Complexity]() of installing each _individual_ piece of software has been mitigated by giving them all a _standard interface_ for composing the systems.  Docker is a _de facto_ standard, which can be used to wrap the individual software components _after the fact_.
+Let's look at some examples: 
 
-- [Internet Protocol](): As we saw in [Communication Risk](), the [Internet Protocol (IP)]() is the _lingua franca_ of the modern internet.  People adopt IP now because all the hardware is designed with this in mind, and using any other standard would leave you cut off in [Walled Garden](), a victim of [Boundary Risk](Boundary-Risk) because you can't communicate with anyone else.  However, at one period of time, there were [many competing standards](), and IP was the ecosystem that "won".
+- [ASCII](https://en.wikipedia.org/wiki/ASCII): fixed the different-character-sets boundary risk by being a standard that others could adopt.  Before everyone agreed on ASCII, copying data from one computer system to another was a massive pain, and would involve some kind of translation.  [Unicode](https://en.wikipedia.org/wiki/Unicode) continues this work.  (**Mode 1**)
 
-|Technology            |Type of Ecosystem                                                       |Standardization                          | Type of Standarization           |
-|----------------------|------------------------------------------------------------------------|-----------------------------------------|----------------------------------|
-|[ASCII]()             |Text File Formats on different Operating Systems                        | tbd  Standards Institute                |Gradual conformity                |
-|[C]()                 |Processor Instruction Sets                                              |                                         |Abstraction over differences      |
-|[Java]()              |Operating Systems                                                       |                                         |Abstraction over differences      |
-|[Docker]()            |Operating Systems, Installation and administration of Programs          |                                         |Abstraction over differences      |
-|[Internet Protocol]() |Networks                                                                | Standards Institute                     |Gradual conformity                |
+- [C](https://en.wikipedia.org/wiki/C_(programming_language)): The C programming language provided a way to get the same programs compiled against different CPU instruction sets, therefore providing some _portability_ to code.  The problem was, each different operating system would still have it's own libraries, and so to support multiple operating systems, you'd have to write code against multiple different libraries.  (**Mode 2**)
 
-Downside. 
+- [Java](https://en.wikipedia.org/wiki/Java_(programming_language)) took what C did and went one step further, providing interoperability at the library level. Java code could run anywhere where Java was installed.   (**Mode 2**)
 
-tbd 2 diagrams:  one of adopting a standard, one of the resultant
+- [Docker](https://en.wikipedia.org/wiki/Docker_(software)) and [Containerization](https://en.wikipedia.org/wiki/Operating-system-level_virtualization): The key advantage is that you can spin up running software services _in a standard way_ with very little administration.   The [Protocol Complexity]() of installing each _individual_ piece of software has been mitigated by giving them all a _standard interface_ for composing the systems.  (**Mode 2**)
 
-
+- [Internet Protocol](https://en.wikipedia.org/wiki/Internet_Protocol): As we saw in [Communication Risk](Communication-Risk#protocol-risk), the Internet Protocol (IP) is the _lingua franca_ of the modern internet.  However, at one period of time, there were many competing standards.  and IP was the ecosystem that "won", and was subsequently standardized by the [IETF](https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force).  (**Mode 1**)
 
 
 ## Complex Boundaries
