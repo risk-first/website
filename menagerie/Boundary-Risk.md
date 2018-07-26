@@ -111,13 +111,15 @@ In the real world, there is a tendency for _big cities to get bigger_.  The more
 
 > "A network effect (also called network externality or demand-side economies of scale) is the positive effect described in economics and business that an additional user of a good or service has on the value of that product to others. When a network effect is present, the value of a product or service increases according to the number of others using it." - [Network Effect, _Wikipedia_](https://en.wikipedia.org/wiki/Network_effect)
 
-You can see the same effect in the adoption rates of [WordPress](https://en.wikipedia.org/wiki/WordPress) and [Drupal](https://en.wikipedia.org/wiki/Drupal).  Note: this is over _all sites on the internet_, so Drupal is still _really big_.  
+You can see the same effect in the adoption rates of [WordPress](https://en.wikipedia.org/wiki/WordPress) and [Drupal](https://en.wikipedia.org/wiki/Drupal), shown in the chart below.  Note: this is over _all sites on the internet_, so Drupal accounts for hundreds of thousands of sites.  In 2018, [WordPress](https://en.wikipedia.org/wiki/WordPress) is approximately 32% of all websites.  For [Drupal](https://en.wikipedia.org/wiki/Drupal) it's 2%.
 
 ![Wordpress vs Drupal adoption over 8 years, according to [w3techs.com](https://w3techs.com/technologies/history_overview/content_management/all/y)](images/wordpress-drupal-chart.png)
 
-This is a crucial determinant of [Boundary Risk](Boundary-Risk):  given the same problems, people will approach them and solve them in different ways.  And, this will impact the 'shape' of the abstractions, and the APIs that you end up with.  [Complexity] emerges from the solution, as the solution gets more complex and opinionated, much like the way in which the network of a city will evolve over time in an unpredictable way.
+Did [WordPress](https://en.wikipedia.org/wiki/WordPress) gain this march because it was better than [Drupal](https://en.wikipedia.org/wiki/Drupal)?  That's arguable.  That it's this way round could be _entirely accidental_, and a result of [Network Effect](https://en.wikipedia.org/wiki/Network_effect).
 
-Nowadays, the [WordPress](https://en.wikipedia.org/wiki/WordPress) user base is huge:  approximately tbd 30% of all websites are hosted with [WordPress](https://en.wikipedia.org/wiki/WordPress).  For [Drupal](https://en.wikipedia.org/wiki/Drupal) it's tbd.  That it's this way round could be entirely accidental.  Is this because [WordPress](https://en.wikipedia.org/wiki/WordPress) is _better_ than [Drupal](https://en.wikipedia.org/wiki/Drupal)? That's arguable.  But, by now _it should be_: there are so many people in this ecosystem:
+And maybe, they aren't comparable:  Given the same problems, the people in each ecosystem have approached them and solved them in different ways.  And, this has impacted the 'shape' of the abstractions, and the protocols you use in each.  [Complexity](Complexity-Risk) _emerges_, and the ecosystem gets more complex and opinionated, much like the way in which the network of a city will evolve over time in an unpredictable way.
+
+But, by now, if they _are_ to be compared side-by-side, [WordPress](https://en.wikipedia.org/wiki/WordPress) _should be better_ due to the sheer number of people in this ecosystem who are...
  - Creating web sites.
  - Using those sites.
  - Submitting bug requests.
@@ -127,7 +129,7 @@ Nowadays, the [WordPress](https://en.wikipedia.org/wiki/WordPress) user base is 
  - Creating features.
  - Improving the core platform.
  
-... that by now _it should be miles better_ than [Drupal](https://en.wikipedia.org/wiki/Drupal).  But, there are other things to consider...
+But, there is something else to consider...
 
 ### The Peter Principle
 
