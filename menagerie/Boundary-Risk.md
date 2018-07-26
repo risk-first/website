@@ -2,26 +2,26 @@
 
 ![Boundary Risk](images/generated/boundary-risk.png)
 
-In the previous few sections on [Dependency Risk]() we've touched on [Boundary Risk]() several times, but now it's time to tackle it head-on and discuss this important type of risk.  
+In the previous few sections on [Dependency Risk]() we've touched on [Boundary Risk](Boundary-Risk) several times, but now it's time to tackle it head-on and discuss this important type of risk.  
 
-In terms of the [Risk Landscape](), [Boundary Risk]() is exactly as it says:  a _boundary_, _wall_ or other kind of obstacle in your way to making a move you want to make.   This changes the nature of the [Risk Landscape](), and introduces a maze-like component to it.  It also means that we have to make _decisions_ about which way to go, knowing that our future paths are constrained by the decisions we make.
+In terms of the [Risk Landscape](Risk-Landscape), [Boundary Risk](Boundary-Risk) is exactly as it says:  a _boundary_, _wall_ or other kind of obstacle in your way to making a move you want to make.   This changes the nature of the [Risk Landscape](), and introduces a maze-like component to it.  It also means that we have to make _decisions_ about which way to go, knowing that our future paths are constrained by the decisions we make.
 
 ![Dead-End Risk](images/generated/dead-end-risk.png)
 
-And, as we discussed earlier, there is always the chance we end up at a [Dead End](Complexity-Risk#dead-end-risk), and we've done work that we need to throw away.  In this case, we'll have to head back and make a different decision.
+And, as we discussed in [Complexity Risk](Complexity-Risk), there is always the chance we end up at a [Dead End](Complexity-Risk#dead-end-risk), and we've done work that we need to throw away.  In this case, we'll have to head back and make a different decision.
 
 ## Emergence
 
-[Boundary Risk]() is an emergent risk, which exists at the intersection of [Complexity Risk](Complexity-Risk), [Dependency Risk](Dependency-Risk) and [Communication Risk](Communication-Risk).  Because of that, it's going to take a bit of time to pick it apart and understand it, so we're going to build up to this in stages.
+[Boundary Risk](Boundary-Risk) is an emergent risk, which exists at the intersection of [Complexity Risk](Complexity-Risk), [Dependency Risk](Dependency-Risk) and [Communication Risk](Communication-Risk).  Because of that, it's going to take a bit of time to pick it apart and understand it, so we're going to build up to this in stages.
 
-Let's start with an obvious example: Musical Instruments.  Let's say you want to learn to play some music.  There are a _multitude_ of options available to you, and you might choose an _uncommon_ instrument like a [Balalaika]() or tbd, or you might choose a _common_ one like a piano or guitar.   In any case, once you start learning this instrument, you have picked up the three risks above:  
- - [Dependency Risk]() You have a _physical_ [Dependency]() on it in order to play music, so get to the music shop and buy one.
- - [Communication Risk}():  You have to _communicate_ with the instrument in order to get it to make the sounds you want.  And you have [Learning Curve]() risk in order to be able to do that.
- - [Complexity Risk](): As _a music playing system_, you now have an extra component (the instrument), with all the attendant complexity of looking after that instrument, tuning it, and so on.
+Let's start with an obvious example: Musical Instruments.  Let's say you want to learn to play some music.  There are a _multitude_ of options available to you, and you might choose an _uncommon_ instrument like a [Balalaika]() or a [Theremin](https://en.wikipedia.org/wiki/Theremin), or you might choose a _common_ one like a piano or guitar.   In any case, once you start learning this instrument, you have picked up the three risks above:  
+ - [Dependency Risk](Dependency-Risk) You have a _physical_ [Dependency]() on it in order to play music, so get to the music shop and buy one.
+ - [Communication Risk](Communication-Risk):  You have to _communicate_ with the instrument in order to get it to make the sounds you want.  And you have [Learning Curve Risk](Communication-Risk#learning-curve-risk) in order to be able to do that.
+ - [Complexity Risk](Complexity-Risk): As _a music playing system_, you now have an extra component (the instrument), with all the attendant complexity of looking after that instrument, tuning it, and so on.
 
-Those risks are true for _any_ instrument you choose.  However, if you choose the _uncommon_ instrument like the [Balalaika](), you have _worse_ [boundary risk](), because the _ecosystem_ for the balalaika is smaller.   It might be hard to find a tutor, or a band needing a balalaika.  You're unlikely to find one in a friend's house (compared to the piano, say).  
+Those risks are true for _any_ instrument you choose.  However, if you choose the _uncommon_ instrument like the [Balalaika](), you have _worse_ [Boundary Risk](Boundary-Risk), because the _ecosystem_ for the balalaika is smaller.   It might be hard to find a tutor, or a band needing a balalaika.  You're unlikely to find one in a friend's house (compared to the piano, say).  
 
-Even choosing the Piano has [Boundary Risk]().  By spending your time learning to play the piano, you're mitigating [Communication Risk]() issues, but _mostly_, your skills won't be transferrable to playing the guitar.  Your decision to choose one instrument over another cements the [Boundary Risk]: you're following a path on the [Risk Landscape]() and changing to a different path is _expensive_.
+Even choosing the Piano has [Boundary Risk](Boundary-Risk).  By spending your time learning to play the piano, you're mitigating [Communication Risk]() issues, but _mostly_, your skills won't be transferrable to playing the guitar.  Your decision to choose one instrument over another cements the [Boundary Risk](Boundary-Risk): you're following a path on the [Risk Landscape](Risk-Landscape) and changing to a different path is _expensive_.
 
 Also, it stands to reason that making _any_ choice is better than making _no_ choice, because you can't try and learn _all_ the instruments.  Doing that, you'd make no meaningful progress on any of them.
 
@@ -35,7 +35,7 @@ Essentially, the interface is a [protocol](Communication-Risk#protocol):  it's t
 
 Let's take a look at a hypothetical project structure:
 
-tbd.
+![Our System receives data from `a`, translates it for `b` and then sends the result to `c` in a format it understands](images/kite9/boundary-risk-ps.png)
 
 In this design, we have included 3 dependencies, `a`, `b`, `c`.  As you can see, `Our Code` is orchestrating the flow of information between them:
  - First, it receives something from `a`, using the [Protocol]() of `a`.
@@ -44,14 +44,14 @@ In this design, we have included 3 dependencies, `a`, `b`, `c`.  As you can see,
  
 You could say we are doing **Integration** of the different dependencies, or **Translation** between those dependencies.  Since we are talking about **Translation**, we are clearly talking about [Communication Risk](Communication-Risk) again:  our task in **Integrating** all of these components is _to get them to talk to each other_.
 
-From a [Cyclomatic Complexity]() point of view, this is a very simple structure, with low [Complexity](Complexity-Risk).  But each of these systems presents us with [Boundary Risk](), because we don't know that we'll be able to make them _talk to each other_ properly:
+From a [Cyclomatic Complexity]() point of view, this is a very simple structure, with low [Complexity](Complexity-Risk).  But each of these systems presents us with [Boundary Risk](Boundary-Risk), because we don't know that we'll be able to make them _talk to each other_ properly:
  - Maybe `a` outputs dates, in a strange calendar format that `b` won't understand.
  - Maybe `b` works on some streaming API basis, that is incompatible with `a`.
  - Maybe `c` runs on Windows, whereas `a` and `b` run on Linux.
 
 ## Boundary Risk Defined
 
-Wherever we integrate dependencies with complex [Interfaces], we have [Boundary Risk].  The more complex the systems being integrated, the higher the risk.  When we choose software tools or libraries to help us build our systems, we are trading [Complexity Risk](Complexity-Risk) for [Boundary Risk](). It is:
+Wherever we integrate dependencies with complex [Interfaces], we have [Boundary Risk].  The more complex the systems being integrated, the higher the risk.  When we choose software tools or libraries to help us build our systems, we are trading [Complexity Risk](Complexity-Risk) for [Boundary Risk](Boundary-Risk). It is:
 
  - The _sunk cost_ of the [Learning Curve]() we've overcome to integrate the dependency.
  - The likelihood of, and costs of changing in the future.
@@ -62,7 +62,7 @@ We can mitigate attendant [Boundary Risk] by trying to choose the _simplest_ dep
 - Using a database with a standard JDBC driver comes with _some_ **Boundary Risk**:  but the boundary is specified by a standard.  Although the standard doesn't cover every aspect of the behaviour of the database, it does minimize risk, because if you are familiar with one JDBC driver, you'll be familiar with them all, and swapping one for another is relatively easy.
 - Using a framework like [Spring](), [Redux]() or [Angular]() comes with higher boundary risk:  you are expected to yield to the framework's way of behaving throughout your application.  You cannot separate the concern easily, and swapping out the framework for another is likely to leave you with a whole new set of assumptions and interfaces to deal with.
 
-So **Boundary Risk** is the attendant [Complexity](Complexity-Risk) required to [Communicate]() with [Dependencies](Dependency-Risk).  Unless the project _ends_, (and you have nowhere else to go on the [Risk Landscape]()) you can never be completely sure that [Boundary Risk]() _isn't_ going to stop you making a move you want.  For example:
+So **Boundary Risk** is the attendant [Complexity](Complexity-Risk) required to [Communicate]() with [Dependencies](Dependency-Risk).  Unless the project _ends_, (and you have nowhere else to go on the [Risk Landscape]()) you can never be completely sure that [Boundary Risk](Boundary-Risk) _isn't_ going to stop you making a move you want.  For example:
  - `mkdirp` might not work on a new device's [Operating System](), forcing you to swap it out.
  - You might discover that the database you chose satisfied all the features you needed at the start of the project, but came up short when the requirements changed later on.
  - The front-end framework you chose might go out-of-fashion, and it might be hard to find developers interested in working on the project because of it.
@@ -93,7 +93,7 @@ You can think of the ecosystem as being like the footprint of a town or a city, 
 
 Systems and Ecosystems.
 
-Ecosystem size is a key determinant of boundary risk:  in a _large_ ecosystem, the diameter of the [boundary] is large, so [Boundary Risk]() is low.  Your moves on the [Risk Landscape](Glossary#risk-landscape) are unlikely to collide with it.  The boundary _got large_ because other developers before you hit the boundary and did the work building bridges, roads and pushing it back so that the boundary didn't get in their way.  In a small ecosystem, you are much more likely to come into contact with the edges of the boundary.  _You_ will have to be the developer that pushes back the frontier and builds the roads for the others.  This is hard work.
+Ecosystem size is a key determinant of boundary risk:  in a _large_ ecosystem, the diameter of the [boundary] is large, so [Boundary Risk](Boundary-Risk) is low.  Your moves on the [Risk Landscape](Glossary#risk-landscape) are unlikely to collide with it.  The boundary _got large_ because other developers before you hit the boundary and did the work building bridges, roads and pushing it back so that the boundary didn't get in their way.  In a small ecosystem, you are much more likely to come into contact with the edges of the boundary.  _You_ will have to be the developer that pushes back the frontier and builds the roads for the others.  This is hard work.
 
 ### Evolution
 
@@ -140,7 +140,7 @@ Why does this happen?
 
 As we saw in [Software Dependency Risk](), The art of good design is to afford the greatest increase in functionality with the smallest increase in complexity possible, and this usually means [Refactoring](Coding).  But, this is at odds with [Backward Compatibility](Communication-Risk).
 
-Each new version has a larger [boundary] than the one before (pushing back [Boundary Risk](), and making the platform more attractive to build solutions in, but this increases the API [Complexity Risk](Complexity-Risk) as there is more functionality to deal with.  The downside is [Learning Curve]() and other [Communication Risk](), and you can see that large ecosystems like [Java]() react to this by having copious amounts of literature to read or buy to help.
+Each new version has a larger [boundary] than the one before (pushing back [Boundary Risk](Boundary-Risk), and making the platform more attractive to build solutions in, but this increases the API [Complexity Risk](Complexity-Risk) as there is more functionality to deal with.  The downside is [Learning Curve]() and other [Communication Risk](), and you can see that large ecosystems like [Java]() react to this by having copious amounts of literature to read or buy to help.
 
 I spent many years living in London.  It was fun, and easy to travel round, but it was highly [Complex]() and there were plenty of downsides like the cost of travel and housing, and pollution.   Sometimes, it felt like the design of the city was out to get you: the roads were too narrow, the river was always in the way and the Underground carriages were too small.  Wouldn't it be better to start again?
 
@@ -148,7 +148,7 @@ I spent many years living in London.  It was fun, and easy to travel round, but 
 
 Because of backwards compatibility and internal complexity, large systems and ecosystems are unable to change quickly.   [Complexity is Mass]() after all.  This means that when the world changes ([Red Queen Risk]()), new systems will come along to plug the gaps.  tbd. 
 
-This implies a trade-off:  sometimes it's better to accept the [Boundary Risk]() innate in a smaller system than try to work within the bigger, more complex system.
+This implies a trade-off:  sometimes it's better to accept the [Boundary Risk](Boundary-Risk) innate in a smaller system than try to work within the bigger, more complex system.
 
 example:  
 
@@ -164,15 +164,15 @@ tbd. diagram here.
 
 Sometimes, technology comes along that allows us to cross boundaries, like a _bridge_ or a _road_.  This has the effect of making it easy to to go from one self-contained [ecosystem]() to another.  Going back to [Wordpress](), a simple example might be the [Analytics Dashboard]() which provides [Google Analytics]() functionality inside [WordPress]().  Or, the [SVG Plugin](), which allows you to use [SVG images]() within [WordPress]().  I find, a lot of code I write is of this nature:  trying to write the _glue code_ to together two different _ecosystems_.   
 
-- [ASCII](): fixed the different-character-sets boundary risk by being a standard that others could adopt.  Before everyone agreed on ASCII, copying data from one computer system to another was a massive pain, and would involve some kind of translation.  [UTF]() continues this work to ensure we don't have to worry about **Translation** from one encoding to another.  This is an example of mitigating [Boundary Risk]() with standards.  One of the problems with this is that _you have to get everyone to change to using the standard_ and this isn't always a given.  
+- [ASCII](): fixed the different-character-sets boundary risk by being a standard that others could adopt.  Before everyone agreed on ASCII, copying data from one computer system to another was a massive pain, and would involve some kind of translation.  [UTF]() continues this work to ensure we don't have to worry about **Translation** from one encoding to another.  This is an example of mitigating [Boundary Risk](Boundary-Risk) with standards.  One of the problems with this is that _you have to get everyone to change to using the standard_ and this isn't always a given.  
 
-- [C]](): The C programming language provided a way to get the same programs compiled against different architectures, therefore providing some _portability_ to code.  This essentially reduced the [Boundary Risk]() of the system architectures.  The problem was, this was a _leaky abstraction_: each different operating system would likely have it's own libraries, and so to support multiple operating systems, you'd have to write code against multiple different libraries.  In a way, C provides a standard:  it's a programming language that [Abstracts]() over processor instruction sets.
+- [C]](): The C programming language provided a way to get the same programs compiled against different architectures, therefore providing some _portability_ to code.  This essentially reduced the [Boundary Risk](Boundary-Risk) of the system architectures.  The problem was, this was a _leaky abstraction_: each different operating system would likely have it's own libraries, and so to support multiple operating systems, you'd have to write code against multiple different libraries.  In a way, C provides a standard:  it's a programming language that [Abstracts]() over processor instruction sets.
 
 - [Java]() took what C did and went one step further: instead of a _compile anywhere_ ethos, it was a _run anywhere_ ethos.  Java code could run anywhere where there was a [Java Virtual Machine]() installed.   Again, this [abstracted] away the details of the lower level architecture.  As we saw above, Java comes with a large and steadily growing collection library of built-in functionality that you can call _instead_ of diving down to the host operating system.  If the [Java Virtual Machine]() is installed, you can _rely_ on this functionality.  So Java provides a standard [abstraction] over operating systems.
 
 - [Docker]() and [Containerization](): [Emulation]() has long been a thing in computing, where one platform _pretends to be_ another in order to get foreign software to run.  But containerization software like [Docker]() and [Kubernetes]() are leading a huge upswing in the popularity of this.  The key advantage is that you can spin up running software services _in a standard way_ with very little administration.   The [Protocol Complexity]() of installing each _individual_ piece of software has been mitigated by giving them all a _standard interface_ for composing the systems.  Docker is a _de facto_ standard, which can be used to wrap the individual software components _after the fact_.
 
-- [Internet Protocol](): As we saw in [Communication Risk](), the [Internet Protocol (IP)]() is the _lingua franca_ of the modern internet.  People adopt IP now because all the hardware is designed with this in mind, and using any other standard would leave you cut off in [Walled Garden](), a victim of [Boundary Risk]() because you can't communicate with anyone else.  However, at one period of time, there were [many competing standards](), and IP was the ecosystem that "won".
+- [Internet Protocol](): As we saw in [Communication Risk](), the [Internet Protocol (IP)]() is the _lingua franca_ of the modern internet.  People adopt IP now because all the hardware is designed with this in mind, and using any other standard would leave you cut off in [Walled Garden](), a victim of [Boundary Risk](Boundary-Risk) because you can't communicate with anyone else.  However, at one period of time, there were [many competing standards](), and IP was the ecosystem that "won".
 
 |Technology            |Type of Ecosystem                                                       |Standardization                          | Type of Standarization           |
 |----------------------|------------------------------------------------------------------------|-----------------------------------------|----------------------------------|
@@ -226,7 +226,7 @@ This is a particularly difficult problem because the two ecosystems are so _rich
 - Building [Object Oriented Databases]().   It's interesting that neither of these really worked out. 
 - Custom-building the bridge between the systems, one database call at-a-time in your own software.  
 
-This is tbd hobson's choice, there is strong debate about whether [ORM]() is a worse trade of mitigated [Boundary Risk]() for attendant [Complexity Risk]() or not, and clearly will depend on your circumstances.
+This is tbd hobson's choice, there is strong debate about whether [ORM]() is a worse trade of mitigated [Boundary Risk](Boundary-Risk) for attendant [Complexity Risk]() or not, and clearly will depend on your circumstances.
 
 ### Scala
 
@@ -271,26 +271,26 @@ There are three specific problems that make this a really complex boundary:
 
 3.  That because there are various different browsers ([Chrome](), [Safari](), [Internet Explorer](), [Microsoft Edge](), [Firefox]() etc.) and each browser has multiple different versions, released over a period of many years, you cannot, as a web-page developer know, _a priori_ what your web-page will look like to a user.
 
-As developers trying to build software to be delivered over the internet, this is therefore a source of common [Boundary Risk]().  If you were trying to build software to work in _all browsers_ and _all versions_, this problem would be nearly insurmountable.  So, in order to tackle this risk, we do the following:
+As developers trying to build software to be delivered over the internet, this is therefore a source of common [Boundary Risk](Boundary-Risk).  If you were trying to build software to work in _all browsers_ and _all versions_, this problem would be nearly insurmountable.  So, in order to tackle this risk, we do the following:
 
 - We pick a small (but commonly used) subset of browsers, and use features from the specifications that we know commonly work in that subset.  
 - We test across the subset.  Again, testing is _harder than it should be_, because of problem 2 above, that the expected output is not exactly defined.  This generally means you have to get humans to apply their _subjective aesthetic judgement_, rather than getting machines to do it.
-- There is considerable pressure on browser developers to ensure consistency of behaviour across the implementations.  If all the browsers work the same, then we don't face the [Boundary Risk]() of having to choose just one to make our software work in.  However, it's not always been like this... 
+- There is considerable pressure on browser developers to ensure consistency of behaviour across the implementations.  If all the browsers work the same, then we don't face the [Boundary Risk](Boundary-Risk) of having to choose just one to make our software work in.  However, it's not always been like this... 
 
 ## Vendor Lock-In
 
 In the late 1990s, faced with the emergence of the nascent [World Wide Web](), and the [Netscape Navigator]() browser, [Microsoft]() adoped a strategy known as [Embrace and Extend]().  The idea of this was to subvert the [HTML]() standard to their own ends by _embracing_ the standard and creating their own browser ([Internet Explorer]()) and then _extending_ it with as much functionality as possible, which would then _not work_ in [Netscape Navigator]().  They then embarked on a campaign to try and get everyone to "upgrade" to [Internet Explorer]().   In this way, they hoped to "own" the Internet, or at least, the software of the browser, which they saw as analogous to being the "operating system" of the Internet, and therefore a threat to their own operating system, [Windows]().
 
-There are two questions we need to ask about this, from the point-of-view of understanding [Boundary Risk]():
+There are two questions we need to ask about this, from the point-of-view of understanding [Boundary Risk](Boundary-Risk):
 
 1.  Why was this a successful strategy?  
 2.  Why did they stop doing this?
 
-Let's look at the first question then.  Yes, it was a successful strategy.  In the 1990s, browser functionality was rudimentary.  Developers were _desperate_ for more features, and for more control over what appeared on their webpages.  And, [Internet Explorer (IE)]()	 was a free download (or, bundled with Windows).   By shunning other browsers and coding just for [IE](), developers pushed [Boundary Risk]() to the consumers of the web pages and in return mitigated [Dependency Fit Risk](): they were able to get more of the functionality they wanted in the browser.
+Let's look at the first question then.  Yes, it was a successful strategy.  In the 1990s, browser functionality was rudimentary.  Developers were _desperate_ for more features, and for more control over what appeared on their webpages.  And, [Internet Explorer (IE)]()	 was a free download (or, bundled with Windows).   By shunning other browsers and coding just for [IE](), developers pushed [Boundary Risk](Boundary-Risk) to the consumers of the web pages and in return mitigated [Dependency Fit Risk](): they were able to get more of the functionality they wanted in the browser.
 
 It's worth pointing out, _this was not a new strategy_:  
 
- - Processor Chip manufacturers had done something similar in the tbds:  by providing features (instructions) on their processors that other vendors didn't have, they made their processors more attractive to system integrators.  However, since the instructions were different on different chips, this created [Boundary Risk]() for the integrators.  Intel and Microsoft were able to use this fact to build a big ecosystem around Windows running on Intel chips (so called, Wintel).
+ - Processor Chip manufacturers had done something similar in the tbds:  by providing features (instructions) on their processors that other vendors didn't have, they made their processors more attractive to system integrators.  However, since the instructions were different on different chips, this created [Boundary Risk](Boundary-Risk) for the integrators.  Intel and Microsoft were able to use this fact to build a big ecosystem around Windows running on Intel chips (so called, Wintel).
  - We have two main _mobile_ ecosystems:  [Apple]()'s [iOS] and [Google]()'s [Android](), which are both _very_ different and complex ecosystems with large, complex boundaries.  They are both innovating as fast as possible to keep users happy with their features.  Tools like [Xamarin]() exist which allow you to build 
  - Currently, [Amazon Web Services (AWS)]() are competing with [Microsoft Azure]() and [Google tbd] over building tools for [Platform as a Service (PaaS)]() (running software in the cloud).  They are both racing to build new functionality, but at the same time it's hard to move from one vendor to another as there is no standardization on the tools.
  - As we saw above, Database vendors tried to do the same thing with features in the database.  Oracle particularly makes money over differentiating itself from competitors by providing features that other vendors don't have.  Tom tbd provides a compelling argument for using these features thus:
@@ -301,7 +301,7 @@ The next question, is why did Microsoft _stop_ pursuing this strategy?  It seems
  
 ## Everyday Boundary Risks
 
-[Boundary Risk]() occurs all the time.  Let's look at some ways:
+[Boundary Risk](Boundary-Risk) occurs all the time.  Let's look at some ways:
 
 - **Configuration**:  When software has to be deployed onto a server, there has to be configuration (usually on the command line, or via configuration property files) in order to bridge the boundary between the _environment it's running in_ and the _software being run_.  Often, this is setting up file locations, security keys and passwords, and telling it where to find other files and services.  
 - **Integration Testing**:  Building a unit test is easy.  You are generally testing some code you have written, aided with a testing framework.  Your code and the framework are both written in the same language, which means low boundary risk.  But, to _integration test_ you need to step outside this boundary and so it becomes much harder.  This is true whether you are integrating with other systems (providing or supplying them with data) or parts of your own system (say testing the client-side and server parts together).  
