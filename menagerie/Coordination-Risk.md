@@ -18,9 +18,7 @@ But for now, let's crack on and examine where [Coordination Risk](Coordination-R
 
 ## A Model Of Coordination Risk
 
-![Coordination Risk](images/generated/coordination-risk.png)
-
-Earlier, in [Dependency Risk](Dependency-Risk), we looked at various resources (time, money, people, events etc) and showed how we could [Depend On Them](Dependency-Risk), taking on risk.  Here, however, we're looking at the situation where there is competition for those dependencies ([Scarcity Risk](Dependency-Risk#Scarcity-Risk):   other parties want to use them in a different way.  
+Earlier, in [Dependency Risk](Dependency-Risk), we looked at various resources (time, money, people, events etc) and showed how we could [Depend On Them](Dependency-Risk), taking on risk.  Here, however, we're looking at the situation where there is _competition for those dependencies_, that is, [Scarcity Risk](Dependency-Risk#Scarcity-Risk):   other parties want to use them in a different way.  
 
 ### Competition
 
