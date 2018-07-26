@@ -43,7 +43,7 @@ Just two things are needed for competition to occur:
 
 ### Coordination via Communication
 
-The only way that the agents can move away from competition towards coordination is via [Communication](Communication-Risk), and this is where their problems begin.  
+The only way that the agents can move away from competition towards coordination is via [Communication](Communication-Risk), and this is where their coordination problems begin.  
 
 You might think, therefore, that this is just another type of [Communication Risk](Communication-Risk) problem, and that's often a part of it, but even with synchronized [Internal Models](Glossary#Internal-Model), coordination risk can occur.  Imagine the example of people all trying to madly leave a burning building.  They all have the same information (the building is on fire).  If they coordinate, and leave in an orderly fashion, they might all get out.  If they don't, and there's a scramble for the door, more people might die.
 
