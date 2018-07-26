@@ -241,7 +241,7 @@ Since multiple users can make all the changes they like locally, and merge them 
 
 #### Bitcoin
 
-Finally, [Bitcoin (BTC)](https://en.wikipedia.org/wiki/Bitcoin) (BTC) is a write-only [distributed ledger](https://en.wikipedia.org/wiki/Distributed_ledger), where agents _compete_ to mine BTC, but also at the same time record transactions on the ledger.  BTC is also `AP`, in a similar way to Git.  But new changes can only be appended if you have the latest version of the ledger, because if you append to an out-of-date ledger, your work will be lost.  
+Finally, [Bitcoin (BTC)](https://en.wikipedia.org/wiki/Bitcoin) is a write-only [distributed ledger](https://en.wikipedia.org/wiki/Distributed_ledger), where agents _compete_ to mine BTC, but also at the same time record transactions on the ledger.  BTC is also `AP`, in a similar way to Git.  But new changes can only be appended if you have the latest version of the ledger.  If you append to an out-of-date ledger, your work will be lost.  
 
 Because it's based on outright competition, if someone beats you to completing a piece of work, then your work is wasted.  So, there is  _huge_ [Coordination Risk](Coordination-Risk).
 
