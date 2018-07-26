@@ -1,9 +1,12 @@
 ![Risk First Logo](images/R1_logo_grue.png)
 
+## Start Here
+
 - **[Home](Home)**
 - **[Executive Summary](Executive-Summary)**
 - **[A Simple Scenario](A-Simple-Scenario)**
 - **[The Risk Landscape](The-Risk-Landscape)**
 
+## The Menagerie
 
-[![Book](images/Cover_Image_Bordered.png)](Blurb)
+[Click here for details.  ![Book](images/Cover_Image_Bordered.png)](Blurb)
