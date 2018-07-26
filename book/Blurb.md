@@ -20,8 +20,5 @@ Volume one of the **Risk-First** series argues the case for viewing _all_ of the
 
 The book aims to develop a _Pattern Language_ for understanding software risk, and develop a practical framework for discussing how the activities we take on a project change the balance of the risks we are exposed to.
 
-![Book Cover](images/Cover_Image.png)
-
-Available for pre-order soon
-Avaia
+Available for pre-order soon from Amazon.
  
