@@ -1,4 +1,4 @@
-![Under Construction](images/state/uc.png)
+![Draft](images/state/draft.png)
 
 ![Boundary Risk](images/generated/boundary-risk.png)
 
@@ -211,7 +211,7 @@ From examining the [Protocol Risk][br1] at each end of the bridge you are creati
 
 Where boundaries
 
-Trying to create a complex, fractal surface.  User requirements are fractal in nature.
+tbd Trying to create a complex, fractal surface.  User requirements are fractal in nature.
 
 
 ### Object-Relational Mapping 
@@ -297,10 +297,7 @@ It's worth pointing out, _this was not a new strategy_:
 
 > tbd.
 
-The next question, is why did Microsoft _stop_ pursuing this strategy?  This is more difficult to answer, but let's try:
- - To gain market share, Internet Explorer was given away free, and other browsers had to follow suit.  This meant that owning the browser didn't turn out to be a huge strategic advantage for Microsoft in the way that owning Windows was, because they couldn't easily monetize this advantage.  Perhaps this was why Microsoft under-invested in IE from tbd.
- - Companies like Google demonstrated that the value on the Web was via _advertising_.  This meant driving customers through things like _search_.  Microsoft tried then to compete on search, and double-down on their Windows and Office cash-cows.   tbd.
- - Microsoft faced _considerable_ push-back from the 
+The next question, is why did Microsoft _stop_ pursuing this strategy?  It seems that the answer is because they were made to.   tbd.
  
 ## Everyday Boundary Risks
 
@@ -309,46 +306,29 @@ The next question, is why did Microsoft _stop_ pursuing this strategy?  This is 
 - **Configuration**:  When software has to be deployed onto a server, there has to be configuration (usually on the command line, or via configuration property files) in order to bridge the boundary between the _environment it's running in_ and the _software being run_.  Often, this is setting up file locations, security keys and passwords, and telling it where to find other files and services.  
 - **Integration Testing**:  Building a unit test is easy.  You are generally testing some code you have written, aided with a testing framework.  Your code and the framework are both written in the same language, which means low boundary risk.  But, to _integration test_ you need to step outside this boundary and so it becomes much harder.  This is true whether you are integrating with other systems (providing or supplying them with data) or parts of your own system (say testing the client-side and server parts together).  
 - **User Interface Testing**:  If you are supplying a user-interface, then the interface with the user is already a complex, under-specified risky [protocol]().  Although tools exist to automate UI testing (such as [Selenium](), these rarely satisfactorily mitigate this [protocol risk]():  can you be sure that the screen hasn't got strange glitches, that the mouse moves correctly, that the proportions on the screen are correct on all browsers?  
-- **
+- **Jobs**:  When you pick a new technology to learn and add to your CV, it's worth keeping in mind how useful this will be to you in the future.   It's career-limiting to be stuck in a dying ecosystem and need to retrain.
 
 
-### Boundary Risk In The Workplace
+### Boundary Risk and Change
 
-Muneer building the extractor, using ASP.net.. turned out we don't deploy .net/ASP only Java
-Boundary Risk In Your Career
-SaaS / Security in banks
-
-
-### The European Union
-
-Boundary risk around companies, (Contracts), abstraction boundaries. 
-
-### Red-Queen Risk
-
-Clearly, from this analysis, 
-
-Second, you can't always be sure that a dependency now will always have the same guarantees in the future: 
-- **Ownership changes** (e.g. [Oracle](http://oracle.com) buys [Sun](http://sun.com) who own [Java](https://en.wikipedia.org/wiki/Java_%28programming_language%29) for example)
-- **Licensing changes**.  (e.g. [Oracle](http://oracle.com) buys **Tangosol** who make [Coherence](https://en.wikipedia.org/wiki/Oracle_Coherence) for example)
-- Security updates not applied.
+You can't always be sure that a dependency now will always have the same guarantees in the future: 
+- **Ownership changes**  [Microsoft]() buys [Github]().  What will happen to the ecosystem around github now?
+- **Licensing changes**.  (e.g. [Oracle](http://oracle.com) buys **Tangosol** who make [Coherence](https://en.wikipedia.org/wiki/Oracle_Coherence) for example).  Having done this, they increase the licensing costs of Tangosol to huge levels, milking the [Cash Cow]() of the installed user-base, but ensuring no-one else is likely to use it.
 - **Better alternatives become available**:  As a real example of this, I began a project in 2016 using [Apache Solr]().  However, in 2018, I would probably use [ElasticSearch](https://en.wikipedia.org/wiki/Elasticsearch).  In the past, I've built websites using [Drupal]() and then later converted them to use [Wordpress]().
- 
-  This would be a tall order if web pages were forced to conform to the HTML specification, but in reality a lot of HTML is malformed and browsers have to deal with this as they go along.  
-
 
 ## Patterns In Boundary Risk
 
+In [Feature Risk](Feature-Risk#feature-drift-risk), we saw that the features people need change over time.  Let's get more specific about this: 
+ 
+- Human need is [Fractal]().  This means that over time, software products have evolved to more closely map to human needs.   Software that would have delighted us ten years ago lacks the sophistication we expect today.
+- Software and hardware are both is improving with time, due to evolution and the ability to support greater and greater levels of complexity.
+- Abstractions build too.  As we saw in [Process Risk](), we _encapsulate_ earlier abstractions in order to build later ones.
+
+If all this is true, the only thing we can expect in the future is that the lifespan of any ecosystem will follow an arc through creation, adoption, growth, statis and finally either be abstracted over or abandoned.  
+
+tbd diagram.
+
+Although our discipline is a young one, we should probably expect to see "Software Archaeology" in the same way as we see it for biological organisms.  Already we can see the dead-ends in the software evolutionary tree:  COBOL and BASIC languages, CASE systems.  Languages like FORTH live on in PostScript, SQL is still embedded in everything
 
 
-
-Should I abstract away a technology?  Does this gain anything?
-- The landscape becomes ever more complex(fractal human needs)
-- Large systems ossify and disappear,
-SQL, Linux, Java, Bash, Servlets, Junit, Gradle, Maven, Team City, HTML, CSS, Browsers, Javascript, SVN, GIT..
-Red Queen Risk again
-Boundary risk moves on. e.g. the JVM abstracted away _platform_.  IP protocol abstracted away a lot of different network types.
-boundary risk is also like dead-end risk.. consider the point from the risk landscape
-we used to worry about disks, and file formats and even ASCII wasn't a common format, everyone used something different.
-Implications of boundary risk:  - either systems die under their own weight of complexity, or they get subsumed at a lower level of architecture.
-It's like a fitness landscape.  We're evolving 
 
