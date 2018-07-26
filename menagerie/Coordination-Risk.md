@@ -254,7 +254,7 @@ So, now we have a fundamental limit on how much [Coordination Risk](Coordination
 Earlier in this section, we questioned whether [Coordination Risk](Coordination-Risk) was just another type of [Communication Risk](Communication-Risk).  However, it should be clear after looking at the examples of competition, cellular life and Vroom and Yetton's Model that this is exactly _backwards_:  
 
 - Most single-celled life has no need for communication: it simply competes for the available resources.  If it lacks anything it needs, it dies.  
-- There are _no_ lines of communication on the **UI** decision-type.  It's only when we want to avoid competition, by sharing resources and working towards common goals that we needs to communicate.  
+- There are _no_ lines of communication on the **UI** decision-type.  It's only when we want to avoid competition, by sharing resources and working towards common goals that we need to communicate.  
 - Therefore, the whole point of communication _is for coordination_.  
 
 In the next section, [Map And Territory Risk](Map-And-Territory-Risk), we're going to look at some new ways in which systems can fail, despite their attempts to coordinate.
