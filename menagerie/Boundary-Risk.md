@@ -194,8 +194,6 @@ Let's look at some examples:
 
 - [Java](https://en.wikipedia.org/wiki/Java_(programming_language)) took what C did and went one step further, providing interoperability at the library level. Java code could run anywhere where Java was installed.   (**Mode 2**)
 
-- [Docker](https://en.wikipedia.org/wiki/Docker_(software)) and [Containerization](https://en.wikipedia.org/wiki/Operating-system-level_virtualization): The key advantage is that you can spin up running software services _in a standard way_ with very little administration.   The [Protocol Complexity]() of installing each _individual_ piece of software has been mitigated by giving them all a _standard interface_ for composing the systems.  (**Mode 2**)
-
 - [Internet Protocol](https://en.wikipedia.org/wiki/Internet_Protocol): As we saw in [Communication Risk](Communication-Risk#protocol-risk), the Internet Protocol (IP) is the _lingua franca_ of the modern internet.  However, at one period of time, there were many competing standards.  and IP was the ecosystem that "won", and was subsequently standardized by the [IETF](https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force).  (**Mode 1**)
 
 
