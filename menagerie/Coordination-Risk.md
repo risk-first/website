@@ -225,7 +225,7 @@ Let's look at some real-life examples of how this manifests in software.
 
 #### ZooKeeper
 
-First, [ZooKeeper](https://zookeeper.apache.org) is an Open-Source datastore, which is used a lot for coordinating a [cluster, and storing things like configuration information across the distributed system.  If the configuration of a distributed system gets changed, it's important that _all of the agents in the system know about it_, otherwise... disaster.
+First, [ZooKeeper](https://zookeeper.apache.org) is an Open-Source datastore, which is used a lot for coordinating a distributed systems, and storing things like configuration information across them.  If the configuration of a distributed system gets changed, it's important that _all of the agents in the system know about it_, otherwise... disaster.
 
 This _seems_ trivial, but it quickly gets out-of-hand:  what happens if only some of the agents receive the new information? What happens if a datacentre gets disconnected while the update is happening?  There are lots of edge-cases.  
 
