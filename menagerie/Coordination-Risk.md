@@ -195,9 +195,9 @@ According to the [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem), there
 - **Availability**: Every request receives a response.
 - **Partition tolerance**: The system can operate despite the isolation (lack of communication with) some of it's agents.
 
-In our diagram example, we'll say that _any_ agent can receive the read or write.  So this might be a **GII** decision making system, because all the agents are going to need to coordinate to figure out what the right value is to return for a read, and what the last value written was.
+The [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem) states that this is a [Trilemma](https://en.wikipedia.org/wiki/Trilemma).  That is, you can only have two out of the three properties.   
 
-The [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem) states that this is a [Trilemma](https://en.wikipedia.org/wiki/Trilemma).  That is, you can only have two out of the three properties.   There are plenty of resources on the internet that discuss this in depth, but let's just illustrate with some diagrams to show how this plays out.  In these, the last write (setting X to 1) was sent to Agent 1 which then becomes _isolated_, and can't be communicated with, due to network failure.  What will User B get back?
+There are plenty of resources on the internet that discuss this in depth, but let's just illustrate with some diagrams to show how this plays out.  In our diagram example, we'll say that _any_ agent can receive the read or write.  So this might be a **GII** decision making system, because all the agents are going to need to coordinate to figure out what the right value is to return for a read, and what the last value written was.  In these, the last write (setting X to 1) was sent to Agent 1 which then becomes _isolated_, and can't be communicated with, due to network failure.  What will User B get back?
 
 ![In an AP system, the User B will get back a _stale value_ for X](images/kite9/coordination-cap-ap.png)
 
