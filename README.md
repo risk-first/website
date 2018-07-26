@@ -1,13 +1,5 @@
 ![Welcome to Risk First](images/risk_first_pink.png)
 
-# Online Links
-
- - [Executive Summary](https://github.com/risk-first/website/wiki/Executive-Summary)
- - [Start Reading Here](https://github.com/risk-first/website/wiki)
- 
-# Pre-Order _The Menagerie_
-
-
 The software development world is crowded with different practices, metrics, methodologies, tools and techniques.  
 
 For example, metrics such as “number of open tickets”, “code coverage" or "release cadence" give us a numerical feel for how things are going, and methodologies such as **Scrum**, **Waterfall** and **Lean** give us different approaches to organising.
