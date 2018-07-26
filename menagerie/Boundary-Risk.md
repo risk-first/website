@@ -55,7 +55,7 @@ Wherever we integrate dependencies with complex [Protocols](Communication-Risk#p
 
  - The _sunk cost_ of the [Learning Curve](Communication-Risk#learning-curve-risk) we've overcome to integrate the dependency, when it fails to live up to expectations.
  - The likelihood of, and costs of changing in the future.  
- - The rarity of alternatives (or, conversely, the risk of [Lock In](#vendor-lock-in). 
+ - The rarity of alternatives (or, conversely, the risk of [Lock In](#vendor-lock-in)). 
  
 ![The tradeoff for using a library](images/kite9/software-dependency-library.png)
 
@@ -64,13 +64,15 @@ As we saw in [Software Dependency Risk](Software-Dependency-Risk), [Boundary Ris
  - If you're depending on [Staff](Agency-Risk#staff-risk), they might leave, meaning your efforts on training them don't pay back as well as you hoped.
  - If you're depending on an [Event](Schedule-Risk) occuring at a particular time, you might have a lot of work to reorganise your life if it changes time or place.
 
-## Avoiding Boundary Risk
+## Avoiding Boundary Risk Now...
 
 Because of [Boundary Risk](Boundary-Risk)'s relationship to [Learning Curve Risk](Communication-Risk#learning-curve-risk), we can avoid accreting it by choose the _simplest_ and _fewest_ dependencies for any job.  Let's look at some examples:
 
 - `mkdirp` is an [npm](https://www.npmjs.com) module defining a single function.  This function takes a single string parameter and recursively creating directories.  Because the [protocol](Communication-Risk) is so simple, there is almost no [Boundary Risk](Boundary-Risk).
 - Using a database with a [JDBC](https://en.wikipedia.org/wiki/Java_Database_Connectivity) driver comes with _some_ [Boundary Risk](Boundary-Risk):  but the boundary is specified by a standard.  Although the standard doesn't cover every aspect of the behaviour of the database, it does minimize risk, because if you are familiar with one JDBC driver, you'll be familiar with them all, and swapping one for another is relatively easy.
 - Using a framework like [Spring](https://spring.io), [Redux](https://redux.js.org) or [Angular](https://angularjs.org) comes with higher [Boundary Risk](Boundary-Risk):  you are expected to yield to the framework's way of behaving throughout your application.  You cannot separate the concern easily, and swapping out the framework for another is likely to leave you with a whole new set of assumptions and interfaces to deal with.
+
+## And In The Future
 
 Unless your project _ends_, you can never be completely sure that [Boundary Risk](Boundary-Risk) _isn't_ going to stop you making a move you want.  For example:
  - `mkdirp` might not work on a new device's [Operating System](), forcing you to swap it out.
