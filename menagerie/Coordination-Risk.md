@@ -32,7 +32,7 @@ We can see this in the graph below.  Let's say A and B compete over a resource, 
 
 ![Sharing Resources.  5 units are available, and the X axis shows A's consumption of the resource.  B gets whatever remains.  Total benefit is maximised somewhere in the middle](images/sharing.png)
 
-As you can see, by _sharing_, it's possible that the _total benefit_ is greater than it can be for either individual.  But sharing requires coordination.
+As you can see, by _sharing_, it's possible that the _total benefit_ is greater than it can be for either individual.  But sharing requires coordination.  Further, the more competitors involved, the _worse_ a winner-take-all outcome is for total benefit.
 
 Just two things are needed for competition to occur:
 
