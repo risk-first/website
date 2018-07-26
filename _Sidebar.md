@@ -4,8 +4,9 @@
 
 - **[Home](Home)**
 - **[Executive Summary](Executive-Summary)**
+- **[Contributing](Contributing)**
 - **[A Simple Scenario](A-Simple-Scenario)**
-- **[The Risk Landscape](The-Risk-Landscape)**
+- **[The Risk Landscape](Risk-Landscape)**
 
 ## The Menagerie
 
