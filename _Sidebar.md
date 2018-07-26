@@ -9,4 +9,5 @@
 
 ## The Menagerie
 
-- **[Click here for details.  ![Book](images/Cover_Image_Bordered.png)](Blurb)**
+- **[Click here for details.](Blurb)**
+[![Book](images/Cover_Image_Bordered.png)](Blurb)
