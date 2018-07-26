@@ -56,7 +56,7 @@ Let's unpack this idea, and review some classic problems of coordination, none o
 1. **Merging Data**.  If you are familiar with the source code control system, [Git](https://en.wikipedia.org/wiki/Git), you will know that this is a _distributed_ version control system.  That means that two or more people can propose changes to the same files without knowing about each other.  This means that at some later time, [Git](https://en.wikipedia.org/wiki/Git) then has to merge (or reconcile) these changes together.  Git is very good at doing this automatically, but sometimes, different people can independently change the same lines of code and these will have to be merged manually.  In this case, a human arbitrator "resolves" the difference, either by combining the two changes or picking a winner.
 
 2. **Consensus**.  Making group decisions (as in elections) is often decided by votes.  But having a vote is a coordination issue, and requires that everyone has been told the rules:
-  - Where can a vote be cast?  
+  - Where will the vote be held?  
   - How long do you provide for the vote?  
   - What do you do about absentees?  
   - What if people change their minds in the light of new information?
