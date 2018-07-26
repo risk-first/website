@@ -199,7 +199,7 @@ The [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem) states that this is
 
 ![In an AP system, the User B will get back a _stale value_ for X](images/kite9/coordination-cap-ap.png)
 
-With AP, you can see that User B is getting back a stale value.  AP scenarios lead to [Race Conditions](https://en.wikipedia.org/wiki/Race_condition):  The availability or otherwise of `Agent 1` here at the time we need to return a value to `User B` a _race_.  
+With `AP`, you can see that `User B` is getting back a _stale value_.  `AP` scenarios lead to [Race Conditions](https://en.wikipedia.org/wiki/Race_condition):  `Agent 1`s availability determines what value `User B` gets back.  
 
 ![In an CP system, the User B won't get anything back for X, because Agent 2 can't be sure it has the latest value](images/kite9/coordination-cap-cp.png).  Where Agent 2 is left waiting for Agent 1 to re-appear, we are blocked.  So CP systems lead to [Deadlock](https://en.wikipedia.org/wiki/Deadlock) scenarios.  
 
