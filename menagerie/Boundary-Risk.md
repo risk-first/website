@@ -79,21 +79,19 @@ Unless your project _ends_, you can never be completely sure that [Boundary Risk
  - You might discover that the database you chose satisfied all the features you needed at the start of the project, but came up short when the requirements changed later on.
  - The front-end framework you chose might go out-of-fashion, and it might be hard to find developers interested in working on the project because of it.
  
-This third point is perhaps the most interesting aspect of [Boundary Risk](Boundary-Risk):  how can we ensure that the decisions we make now are future-proof?  In order to investigate this further, let's look at 3 things:  Plugins, Ecosystems and Evolution (again).  
+This third point is perhaps the most interesting aspect of [Boundary Risk](Boundary-Risk):  how can we ensure that the decisions we make now are future-proof?  In order to investigate this further, let's look at three things:  Plugins, Ecosystems and Evolution (again).  
 
 ## Plugins, Ecosystems and Evolution
-
-### Plugins 
 
 On the face of it, [WordPress](https://en.wikipedia.org/wiki/WordPress) and [Drupal](https://en.wikipedia.org/wiki/Drupal) _should_ be very similar:
  - They are both [Content Management Systems](https://en.wikipedia.org/wiki/Content_management_system)
  - They both use a [LAMP (Linux, Apache, MySql, PHP) Stack](https://en.wikipedia.org/wiki/LAMP_(software_bundle))
  - They were both started around the same time (2001 for Drupal, 2003 for WordPress)
- - They are both Open-Source, and have a wide variety of plugins.
+ - They are both Open-Source, and have a wide variety of [Plugins](https://en.wikipedia.org/wiki/Plug-in_(computing)).  That is, ways for other programmers to extend the functionality in new directions.
 
 In practice, they are very different.  This could be put down to different _design goals_:  it seems that [WordPress](https://en.wikipedia.org/wiki/WordPress) was focused much more on usability, and an easy learning curve, whereas [Drupal](https://en.wikipedia.org/wiki/Drupal) supported plugins for building things with complex data formats.  It could also be down to the _design decisions_:  although they both support [Plugins](), they do it in very different ways.  
 
-(Side note: I wasn't short of go-to examples for this.  I could have picked on [Team City]() and [Jenkins]() here ([Continuous Integration]() tools, or [Maven]() and [Gradle]() (Java build tools).  In all cases, the choice of plugins I have is dependent on the platform I've chosen, despite the fact that the platforms are solving pretty much the same problem. )
+(Side note: I wasn't short of go-to examples for this.  I could have picked on [Team City](https://en.wikipedia.org/wiki/TeamCity) and [Jenkins](https://en.wikipedia.org/wiki/Jenkins_(software)) here ([Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration) tools), or [Maven](https://en.wikipedia.org/wiki/Apache_Maven) and [Gradle](https://en.wikipedia.org/wiki/Gradle) (Java build tools).  All of these support [plugins](https://en.wikipedia.org/wiki/Plug-in_(computing)), and the _choice_ of plugins is dependent on which I've chosen, despite the fact that the platforms are solving pretty much the same problem. )
 
 ### Ecosystems and Systems
 
