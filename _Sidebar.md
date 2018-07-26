@@ -1,1 +1,1 @@
-[Risk First Logo](images/R1_logo_black.svg)
+![Risk First Logo](images/R1_logo_black.svg)
