@@ -199,27 +199,25 @@ The [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem) states that this is
 
 ![In an AP system, the User B will get back a _stale value_ for X](images/kite9/coordination-cap-ap.png)
 
-With AP, you can see that User B is getting back a stale value.  The availability or otherwise of 
+With AP, you can see that User B is getting back a stale value.  AP scenarios lead to [Race Conditions](https://en.wikipedia.org/wiki/Race_condition):  The availability or otherwise of `Agent 1` here at the time we need to return a value to `User B` a _race_.  
 
-![In an CP system, the User B won't get anything back for X, because Agent 2 can't be sure it has the latest value](images/kite9/coordination-cap-cp.png)
+![In an CP system, the User B won't get anything back for X, because Agent 2 can't be sure it has the latest value](images/kite9/coordination-cap-cp.png).  Where Agent 2 is left waiting for Agent 1 to re-appear, we are blocked.  So CP systems lead to [Deadlock](https://en.wikipedia.org/wiki/Deadlock) scenarios.  
 
 ![In an CA system, we can't have partition tolerance, so in order to be consistent a single Agent has to do all the work](images/kite9/coordination-cap-ca.png)
 
+Finally, if we have a CA system, we are essentially saying that only one agent is doing the work.  (You can't partition a single agent, after all).  But this leads to the [Resource Allocation](https://en.wikipedia.org/wiki/Resource_allocation) problems we saw earlier, and **Contention** around use of the scarce resource of `Agent 2`'s attention.  Because we don't support `Partition Tolerance`, we can't subdivide `Agent 2`s work.
+
 This sets an upper bound on [Coordination Risk](Coordination-Risk):  we _can't_ get rid of it completely in a software system, -or- a system on any other scale.  
 
-### Some Examples
-
-Immutability (or write-only data structures) are often presented as a solution to many of the problems of multi-agent systems.  After all, if values in the system aren't _changing_, then memory is not a scarce resource, and we avoid [race conditions](https://en.wikipedia.org/wiki/Race_condition).  However, we _still_ have to contend with [Coordination Risk](Coordination-Risk). Let's look at two examples.
+### Some Real-Life Examples
 
 First, [Bitcoin](https://en.wikipedia.org/wiki/Bitcoin) (BTC) is a write-only [distributed ledger](https://en.wikipedia.org/wiki/Distributed_ledger), where agents _compete_ to mine BTC, but also at the same time record transactions on the ledger.  But there is _huge_ [Coordination Risk](Coordination-Risk) in BTC, because it is pretty much outright competition.  If someone beats you to completing a piece of work, then your work is wasted.   For this reason, BTC agents _coordinate_ into [mining consortia](https://en.bitcoin.it/wiki/Comparison_of_mining_pools), so they can avoid working on the same problems at the same time.  Nevertheless, the performance of BTC is [highly questionable](https://en.wikipedia.org/wiki/Bitcoin#Energy_consumption), and this is because it is entirely competitive.  In [CAP](Coordination-Risk#CAP-theorem) terms, BitCoin is tbd.
 
 Second, [git](https://en.wikipedia.org/wiki/Git) is a (mainly) write-only ledger of source changes.  However, as we already discussed, where different agents make incompatible changes, someone has to decide how to resolve the conflicts so that we have a single source of truth.  The [Coordination Risk](Coordination-Risk) just _doesn't go away_.  Git is an AP system.
 
-### Monitoring
-
-tbd. talk about invisibility risk again.
-
 ## Communication Is For Coordination
+
+So, now we have a fundamental limit on how much [Coordination Risk](Coordination-Risk) we can mitigate.  And, just as there are plenty of ways to mitigate [Coordination Risk](Coordination-Risk) within teams of people, organisations or living organisms, so it's the case in software.   
 
 Earlier in this section, we questioned whether [Coordination Risk](Coordination-Risk) was just another type of [Communication Risk](Communication-Risk).  However, it should be clear after looking at the examples of competition, cellular life and Vroom and Yetton's Model that this is exactly _backwards_:  
 
