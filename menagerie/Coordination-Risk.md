@@ -78,10 +78,10 @@ Within a team, [Coordination Risk](Coordination-Risk) is at it's core about reso
 
 If you are engaged in a solo project, do you suffer from [Coordination Risk](Coordination-Risk) at all?  Maybe:  sometimes, you can feel "conflicted" about the best way to solve a problem.  And weirdly, usually _not thinking about it_ helps.  Sleeping too.  (Rich Hickey calls this "[Hammock Driven Development](https://www.youtube.com/watch?v=f84n5oFoZBc)").  This is probably because, unbeknownst to you, your subconscious is furiously communicating internally, trying to resolve these conflicts itself, and will let you know when it's come to a resolution.  
 
-[Vroom and Yetton](https://en.wikipedia.org/wiki/Vroom–Yetton_decision_model) introduced a model of group decision making which delineated five different styles of decision making within a team. These are summarised in the table below (**AI, AII, CI, CII, GII**).  To this, I have added a sixth (**UI**), which is the _uncoordinated_ option, where everyone competes.   In the accompanying diagram I have adopted the following convention:
+[Vroom and Yetton](https://en.wikipedia.org/wiki/Vroom–Yetton_decision_model) introduced a model of group decision making which delineated five different styles of decision making within a team. These are summarised in the table below (**AI, AII, CI, CII, GII**).  To this, I have added a sixth (**UI**), which is the _uncoordinated_ option, where everyone competes.   In the accompanying diagrams I have adopted the following convention:
  - Thin lines with arrow-heads show a flow of _information_, either one-way or two-way.
  - Thick lines show a flow of _opinion_.
- - Squares with "d" are decision makers, whereas circles don't have a part in the decision.
+ - Boxes with corners are _decision makers_, whereas curved corners don't have a part in the decision.
 
 ![Vroom And Yetton Decision Making Styles.  "d" indicates authority in making a decision.  Thin lines with arrow-heads show information flow, whilst thick lines show _opinions_ being passed around.](images/kite9/vroom-yetton.png)
 
@@ -123,23 +123,25 @@ Part of [Coordination Risk](Coordination-Risk) is about trying to mitigate diffe
  
 The job of harmonzing this on a project would seem to fall to the team leader, but actually people are self-organising to some extent.  This process is called [Team Development](https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development):
 
-> "The forming–storming–norming–performing model of group development was first proposed by Bruce Tuckman in 1965,[1] who said that these phases are all necessary and inevitable in order for the team to grow, face up to challenges, tackle problems, find solutions, plan work, and deliver results." - [Tuckman's Stages Of Group Development, _Wikipedia_](https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development)
+> "The forming–storming–norming–performing model of group development was first proposed by Bruce Tuckman in 1965, who said that these phases are all necessary and inevitable in order for the team to grow, face up to challenges, tackle problems, find solutions, plan work, and deliver results." - [Tuckman's Stages Of Group Development, _Wikipedia_](https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development)
 
 Specifically, this describes a process whereby a new group will form and then be required to work together. In the process, they will have many _disputes_.  Ideally, the group will resolve these disputes internally and emerge as a _Team_, with a common [Goal In Mind](Glossary#goal-in-mind).
 
-They can be encouraged with orthogonal practices such as [Team Building exercises](https://en.wikipedia.org/wiki/Team_building) (generally, submitting everyone to extreme experiences in order to bond them together).  With enough communication bandwidth and entente, a motivated team will self-organise code reviews, information exchange and improve their practices. 
+They can be encouraged with orthogonal practices such as [team-building exercises](https://en.wikipedia.org/wiki/Team_building) (generally, submitting everyone to extreme experiences in order to bond them together).  With enough communication bandwidth and detente, a motivated team will self-organise code reviews, information exchange and improve their practices. 
 
-As decribed above, the job of [Coordination](Coordination-Risk) is [Resource Allocation](Coordination-Risk#problems-in-coordination), and so the skills of staff should be looked at as resources to allocate.  This means handling [Coordination Risk](Coordination-Risk) issues like:
+As decribed above, the job of [Coordination](Coordination-Risk) is [Resource Allocation](Coordination-Risk#problems-in-coordination), and so the skills of staff can potentially be looked at as resources to allocate.  This means handling [Coordination Risk](Coordination-Risk) issues like:
 
  - People leaving, taking their [Internal Models](Glossary#Internal-Model) and expertise with them [Key Man Risk](Schedule-Risk#Staff-Risk).
- - People often require external training, to understand new tools and techniques [Learning-Curve Risk](Communication-Risk#learning-curve-risk)
- - People can get protective about their knowledge in order to protect their jobs [Agency Risk](Agency-Risk). 
- - Where there are mixed ability levels, senior developers might not help juniors as it "slows them down"
- - People don't get on and don't help each other.
+ - People requiring external training, to understand new tools and techniques [Learning-Curve Risk](Communication-Risk#learning-curve-risk).
+ - People being protective about their knowledge in order to protect their jobs [Agency Risk](Agency-Risk). 
+ - Where there are mixed ability levels, senior developers not helping juniors as it "slows them down".
+ - People not getting on and not helping each other.
  
 ## In Living Organisms
 
-Vroom and Yetton's organisational style isn't relevant to just teams of people.  We can see it in the natural world too.  Although _the majority_ of cellular life on earth (by weight) is [single celled organisms](http://www.stephenjaygould.org/library/gould_bacteria.html), the existence of _humans_ (to pick a single example) demonstrates that sometimes it's better to try to mitigate [Coordination Risk](Coordination-Risk) and work as a team, accepting the [Complexity Risk](Complexity-Risk) and [Communication Risk](Communication-Risk) this entails.  As soon as cells start working together, they either need to pass _resources_ between them, or _control_ and _feedback_.  In the human body, we have various [systems](https://en.wikipedia.org/wiki/List_of_systems_of_the_human_body):
+Vroom and Yetton's organisational style isn't relevant to just teams of people.  We can see it in the natural world too.  Although _the majority_ of cellular life on earth (by weight) is [single celled organisms](http://www.stephenjaygould.org/library/gould_bacteria.html), the existence of _humans_ (to pick a single example) demonstrates that sometimes it's better to try to mitigate [Coordination Risk](Coordination-Risk) and work as a team, accepting the [Complexity Risk](Complexity-Risk) and [Communication Risk](Communication-Risk) this entails.  As soon as cells start working together, they either need to pass _resources_ between them, or _control_ and _feedback_.  
+
+For example, in the human body, we have various [systems](https://en.wikipedia.org/wiki/List_of_systems_of_the_human_body):
 
  - The [Respiratory System](https://en.wikipedia.org/wiki/Respiratory_system) which is responsible for ensuring that [Red Blood Cells](https://en.wikipedia.org/wiki/Red_blood_cell) are replenished with Oxygen, as well as disposing of Carbon Dioxide.  
  - The [Digestive System](https://en.wikipedia.org/wiki/Human_digestive_system) which is responsible for extracting nutrition from food and putting them in our [Blood Plasma](https://en.wikipedia.org/wiki/Blood_plasma).
@@ -159,15 +161,19 @@ This means that there is a deal:  _most_ of the cells in our body accede control
  
 ## Large Organisations
 
-Working in a large organisation often feels like being a cell in a larger organism.  Cells live and die, but the organism goes on.  In the same way, workers come and go from a large company but the organisation goes on.  By working in an organisation, we give up self-control and competition and accept **AI** and **AII** power structures above us, but we trust that there is symbiotic value creation on both sides of the employment deal.
+Working in a large organisation often feels like being a cell in a larger organism.  Just as cells live and die, but the organism goes on, in the same way, workers come and go from a large company but the organisation goes on.  By working in an organisation, we give up self-control and competition and accept **AI** and **AII** power structures above us, but we trust that there is symbiotic value creation on both sides of the employment deal.
  
 _Less_ consultative decision making styles are more appropriate then when we don't have the luxury of high-bandwidth channels for discussion, or when the number of parties rises above a room-full of people.   As you can see from the table above, for **CII** and **GII** decision-making styles, the amount of communication increases non-linearly with the number of participants, so we need something simpler.  As we saw in the [Complexity Risk](Complexity-Risk) section, hierarchies are an excellent way of economizing on number of different communication channels, and we use these frequently when there are lots of parties to coordinate.
 
 ![Hierarchy of Function in an Organisation](images/kite9/coordination-organisation.png)
 
-In large organisations, teams are created and leaders chosen for those teams precisely to mitigate [Communication Risk](Communication-Risk).  We're all familiar with this: control of the team is ceded to the leader, who takes on the role of 'handing down' direction from above, but also 'reporting up' issues that cannot be resolved within the team.   In Vroom and Yetton's model, this is moving from a **GII** or **CII** to an **AI** or **AII** style of leadership.  So we end up with a hierarchy of groups, as shown in the diagram.
+In large organisations, teams are created and leaders chosen for those teams precisely to mitigate [Communication Risk](Communication-Risk).  We're all familiar with this: control of the team is ceded to the leader, who takes on the role of 'handing down' direction from above, but also 'reporting up' issues that cannot be resolved within the team.   In Vroom and Yetton's model, this is moving from a **GII** or **CII** to an **AI** or **AII** style of leadership.  
+
+As shown in the diagram above, we end up with a hierarchy of groups, each having it's own decision-making style.  The team leader at the bottom level is a _decision maker_ within his team, but moving up, doesn't have decision making power in the next team up.. and so on.  
 
 Sometimes, parts of an organisation are encouraged _not_ to coordinate, but to compete.   In the diagram above, we have an [M-Form](https://en.wikipedia.org/wiki/Multi-divisional_form) organisation, composed of _competing divisions_.  
+
+Clearly, this is just a _model_, it's not set in stone and decision making styles usually change from day-to-day and decision to decision.  The same is not true in our software - _rules are rules_.
 
 ## In Software Processes
 
