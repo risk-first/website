@@ -199,19 +199,19 @@ The [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem) states that this is
 
 There are plenty of resources on the internet that discuss this in depth, but let's just illustrate with some diagrams to show how this plays out.  In our diagram example, we'll say that _any_ agent can receive the read or write.  So this might be a **GII** decision making system, because all the agents are going to need to coordinate to figure out what the right value is to return for a read, and what the last value written was.  In these, the last write (setting X to 1) was sent to Agent 1 which then becomes _isolated_, and can't be communicated with, due to network failure.  What will User B get back?
 
-#### AP
+#### With an AP System
 
 ![In an AP system, the User B will get back a _stale value_ for X](images/kite9/coordination-cap-ap.png)
 
 With `AP`, you can see that `User B` is getting back a _stale value_.  `AP` scenarios lead to [Race Conditions](https://en.wikipedia.org/wiki/Race_condition):  `Agent 1`s availability determines what value `User B` gets back.  
 
-#### CP
+#### With an CP System
 
 ![In an CP system, the User B won't get anything back for X, because Agent 2 can't be sure it has the latest value](images/kite9/coordination-cap-cp.png).  
 
 Where Agent 2 is left waiting for Agent 1 to re-appear, we are _blocked_.  So CP systems lead to [Deadlock](https://en.wikipedia.org/wiki/Deadlock) scenarios.  
 
-#### CA
+#### With an CA System
 
 ![In an CA system, we can't have partition tolerance, so in order to be consistent a single Agent has to do all the work](images/kite9/coordination-cap-ca.png)
 
