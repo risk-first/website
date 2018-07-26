@@ -229,7 +229,7 @@ First, [ZooKeeper](https://zookeeper.apache.org) is an Open-Source datastore, wh
 
 This _seems_ trivial, but it quickly gets out-of-hand:  what happens if only some of the agents receive the new information? What happens if a datacentre gets disconnected while the update is happening?  There are lots of edge-cases.  
 
-ZooKeeper handles this by communicating inter-agent with it's own protocol, and making sure that a _majority of agents_ have received and stored the configuration change before telling the user that the transaction is complete.  Therefore, ZooKeeper is a `CP` system.
+ZooKeeper handles this by communicating inter-agent with it's own protocol.  It elects a **master agent** (via voting), turning it into an **AI**-style team.  If the master is lost for some reason, a new leader is elected.  _Writes_ are then coordinated via the **master agent** who makes sure that a _majority of agents_ have received and stored the configuration change before telling the user that the transaction is complete.  Therefore, ZooKeeper is a `CP` system.  
 
 #### Git
 
