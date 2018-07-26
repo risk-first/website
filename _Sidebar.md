@@ -1,1 +1,1 @@
-A sidebar
+[Risk First Logo](images/R1_logo_black.svg)
