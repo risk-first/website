@@ -233,7 +233,11 @@ ZooKeeper handles this by communicating inter-agent with it's own protocol, and 
 
 #### Git
 
-Second, [git](https://en.wikipedia.org/wiki/Git) is a (mainly) write-only ledger of source changes.  However, as we already discussed above, where different agents make incompatible changes, someone has to decide how to resolve the conflicts so that we have a single source of truth.  The [Coordination Risk](Coordination-Risk) just _doesn't go away_.  Since multiple users can make all the changes they like locally, and merge them later, Git is an `AP` system:  individual users may have _wildly_ different ideas about what the source looks like until the merge is complete.
+Second, [git](https://en.wikipedia.org/wiki/Git) is a (mainly) write-only ledger of source changes.  However, as we already discussed above, where different agents make incompatible changes, someone has to decide how to resolve the conflicts so that we have a single source of truth.  
+
+The [Coordination Risk](Coordination-Risk) just _doesn't go away_.  
+
+Since multiple users can make all the changes they like locally, and merge them later, Git is an `AP` system:  individual users may have _wildly_ different ideas about what the source looks like until the merge is complete.
 
 #### Bitcoin
 
