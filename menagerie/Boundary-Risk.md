@@ -10,76 +10,86 @@ In terms of the [Risk Landscape](Risk-Landscape), [Boundary Risk](Boundary-Risk)
 
 And, as we discussed in [Complexity Risk](Complexity-Risk), there is always the chance we end up at a [Dead End](Complexity-Risk#dead-end-risk), and we've done work that we need to throw away.  In this case, we'll have to head back and make a different decision.
 
-## Emergence
+## Emergence Through Choice
 
 [Boundary Risk](Boundary-Risk) is an emergent risk, which exists at the intersection of [Complexity Risk](Complexity-Risk), [Dependency Risk](Dependency-Risk) and [Communication Risk](Communication-Risk).  Because of that, it's going to take a bit of time to pick it apart and understand it, so we're going to build up to this in stages.
 
-Let's start with an obvious example: Musical Instruments.  Let's say you want to learn to play some music.  There are a _multitude_ of options available to you, and you might choose an _uncommon_ instrument like a [Balalaika]() or a [Theremin](https://en.wikipedia.org/wiki/Theremin), or you might choose a _common_ one like a piano or guitar.   In any case, once you start learning this instrument, you have picked up the three risks above:  
+Let's start with an obvious example: Musical Instruments.  Let's say you want to learn to play some music.  There are a _multitude_ of options available to you, and you might choose an _uncommon_ instrument like a [Balalaika](https://en.wikipedia.org/wiki/Balalaika) or a [Theremin](https://en.wikipedia.org/wiki/Theremin), or you might choose a _common_ one like a piano or guitar.   In any case, once you start learning this instrument, you have picked up the three risks above:  
  - [Dependency Risk](Dependency-Risk) You have a _physical_ [Dependency]() on it in order to play music, so get to the music shop and buy one.
  - [Communication Risk](Communication-Risk):  You have to _communicate_ with the instrument in order to get it to make the sounds you want.  And you have [Learning Curve Risk](Communication-Risk#learning-curve-risk) in order to be able to do that.
  - [Complexity Risk](Complexity-Risk): As _a music playing system_, you now have an extra component (the instrument), with all the attendant complexity of looking after that instrument, tuning it, and so on.
 
-Those risks are true for _any_ instrument you choose.  However, if you choose the _uncommon_ instrument like the [Balalaika](), you have _worse_ [Boundary Risk](Boundary-Risk), because the _ecosystem_ for the balalaika is smaller.   It might be hard to find a tutor, or a band needing a balalaika.  You're unlikely to find one in a friend's house (compared to the piano, say).  
+Those risks are true for _any_ instrument you choose.  However, if you choose the _uncommon_ instrument like the [Balalaika](https://en.wikipedia.org/wiki/Balalaika), you have _worse_ [Boundary Risk](Boundary-Risk), because the _ecosystem_ for the balalaika is smaller.   It might be hard to find a tutor, or a band needing a balalaika.  You're unlikely to find one in a friend's house (compared to the piano, say).  
 
 Even choosing the Piano has [Boundary Risk](Boundary-Risk).  By spending your time learning to play the piano, you're mitigating [Communication Risk]() issues, but _mostly_, your skills won't be transferrable to playing the guitar.  Your decision to choose one instrument over another cements the [Boundary Risk](Boundary-Risk): you're following a path on the [Risk Landscape](Risk-Landscape) and changing to a different path is _expensive_.
 
 Also, it stands to reason that making _any_ choice is better than making _no_ choice, because you can't try and learn _all_ the instruments.  Doing that, you'd make no meaningful progress on any of them.
 
-## Integration And Translation
+## Boundary Risk For Software Dependencies
 
 Let's look at a software example now.
 
-As discussed in [Software Dependency Risk](Software-Dependency-Risk), if we are going to use a software tool as a dependency, we have to accept the complexity of it's [Interface](Software-Dependency-Risk#interfaces). 
+As discussed in [Software Dependency Risk](Software-Dependency-Risk), if we are going to use a software tool as a dependency, we have to accept the complexity of it's [Interface](Software-Dependency-Risk#interfaces), and learn the [protocol](Communication-Risk#protocol) of that interface.  If you want to work with it, you have to use it's protocol, it won't come to you.   
 
-Essentially, the interface is a [protocol](Communication-Risk#protocol):  it's the language that the tool understands.  If you want to work with it, you have to use it's protocol, it won't come to you.   
+Let's take a look at a hypothetical system structure:
 
-Let's take a look at a hypothetical project structure:
+![Our System receives data from the `input`, translates it and sends it to the `output`.  But which dependency should we use for the translation, if any?](images/kite9/boundary-risk-ps.png)
 
-![Our System receives data from `a`, translates it for `b` and then sends the result to `c` in a format it understands](images/kite9/boundary-risk-ps.png)
-
-In this design, we have 3 dependencies, `a`, `b`, `c`.  As you can see, `Our System` is orchestrating the flow of information between them:
- - First, it receives something from `a`, using the [Protocol](Communication-Risk#protocol-risk) of `a`.
- - Then, it **Translates** this into the [Protocol](Communication-Risk#protocol-risk) of `b`, retrieving something back from `b`.
- - Then, it **Translates** that into the [Protocol](Communication-Risk#protocol-risk) of `c`.
+In this design, we have are transforming data from the `input` to the `output`.  But how should we do it?
+ - We could go via `a`, using the [Protocols](Communication-Risk#protocol-risk) of `a`, and having a dependency on `a`.
+ - We could go via `b`, using the [Protocols](Communication-Risk#protocol-risk) of `b`, and having a dependency on `b`. 
+ - We could choose the middle route, and avoid the dependency, but potentially pick up lots more [Complexity Risk](Complexity-Risk) and [Schedule Risk](Schedule-Risk).
  
-You could say we are doing **Integration** of the different dependencies, or **Translation** between those dependencies.  Since we are talking about **Translation**, we are clearly talking about [Communication Risk](Communication-Risk) again:  our task in **Integrating** all of these components is _to get them to talk to each other_.
+This is a basic **Translation** job from `input` to `output`. Since we are talking about **Translation**, we are clearly talking about [Communication Risk](Communication-Risk) again:  our task in **Integrating** all of these components is _to get them to talk to each other_.
 
-From a [Cyclomatic Complexity]() point of view, this is a very simple structure, with low [Complexity](Complexity-Risk).  But each of these systems presents us with [Boundary Risk](Boundary-Risk), because we don't know that we'll be able to make them _talk to each other_ properly:
- - Maybe `a` outputs dates, in a strange calendar format that `b` won't understand.
- - Maybe `b` works on some streaming API basis, that is incompatible with `a`.
- - Maybe `c` runs on Windows, whereas `a` and `b` run on Linux.
+From a [Cyclomatic Complexity](Complexity-Risk#cyclomatic-complexity) point of view, this is a very simple structure, with low [Complexity](Complexity-Risk).  But the choice of approach presents us with [Boundary Risk](Boundary-Risk), because we don't know that we'll be able to make them _talk to each other_ properly:
+ - Maybe `a` outputs dates in a strange calendar format that we won't understand.
+ - Maybe `b` works on some streaming API basis, that is incompatible with the input protocol.
+ - Maybe `a` runs on Windows, whereas our code runs on Linux.
+ 
+... and so on.
 
-## Boundary Risk Defined
+## Boundary Risk Pinned Down
 
-Wherever we integrate dependencies with complex [Interfaces], we have [Boundary Risk].  The more complex the systems being integrated, the higher the risk.  When we choose software tools or libraries to help us build our systems, we are trading [Complexity Risk](Complexity-Risk) for [Boundary Risk](Boundary-Risk). It is:
+Wherever we integrate dependencies with complex [Protocols](Communication-Risk#protocol-risk), we potentially have [Boundary Risk](Boundary-Risk).  The more complex the systems being integrated, the higher the risk.  When we choose software tools or libraries to help us build our systems, we are trading [Complexity Risk](Complexity-Risk) for [Boundary Risk](Boundary-Risk). It is:
 
- - The _sunk cost_ of the [Learning Curve]() we've overcome to integrate the dependency.
- - The likelihood of, and costs of changing in the future.
+ - The _sunk cost_ of the [Learning Curve](Communication-Risk#learning-curve-risk) we've overcome to integrate the dependency, when it fails to live up to expectations.
+ - The likelihood of, and costs of changing in the future.  
+ - The rarity of alternatives (or, conversely, the risk of [Lock In](#vendor-lock-in). 
+ 
+![The tradeoff for using a library](images/kite9/software-dependency-library.png)
 
-We can mitigate attendant [Boundary Risk] by trying to choose the _simplest_ dependencies for any job, and also the smallest number of dependencies.  Let's look at some examples:
+As we saw in [Software Dependency Risk](Software-Dependency-Risk), [Boundary Risk](Boundary-Risk) is a big factor in choosing libraries and services.  However, it can apply to any kind of dependency:
+ - If you're depending on a [Process or Organisation](Process-Risk), they might change their products or quality, making the effort you put into the relationship worthless.
+ - If you're depending on [Staff](Agency-Risk#staff-risk), they might leave, meaning your efforts on training them don't pay back as well as you hoped.
+ - If you're depending on an [Event](Schedule-Risk) occuring at a particular time, you might have a lot of work to reorganise your life if it changes time or place.
 
-- `mkdirp` is an `npm` module defining a single function.  This function takes a single string parameter and recursively creating directories.  Because the [protocol](Communication-Risk) is so simple, there is almost no **Boundary Risk**.
-- Using a database with a standard JDBC driver comes with _some_ **Boundary Risk**:  but the boundary is specified by a standard.  Although the standard doesn't cover every aspect of the behaviour of the database, it does minimize risk, because if you are familiar with one JDBC driver, you'll be familiar with them all, and swapping one for another is relatively easy.
-- Using a framework like [Spring](), [Redux]() or [Angular]() comes with higher boundary risk:  you are expected to yield to the framework's way of behaving throughout your application.  You cannot separate the concern easily, and swapping out the framework for another is likely to leave you with a whole new set of assumptions and interfaces to deal with.
+## Avoiding Boundary Risk
 
-So **Boundary Risk** is the attendant [Complexity](Complexity-Risk) required to [Communicate]() with [Dependencies](Dependency-Risk).  Unless the project _ends_, (and you have nowhere else to go on the [Risk Landscape]()) you can never be completely sure that [Boundary Risk](Boundary-Risk) _isn't_ going to stop you making a move you want.  For example:
+Because of [Boundary Risk](Boundary-Risk)'s relationship to [Learning Curve Risk](Communication-Risk#learning-curve-risk), we can avoid accreting it by choose the _simplest_ and _fewest_ dependencies for any job.  Let's look at some examples:
+
+- `mkdirp` is an [npm](https://www.npmjs.com) module defining a single function.  This function takes a single string parameter and recursively creating directories.  Because the [protocol](Communication-Risk) is so simple, there is almost no [Boundary Risk](Boundary-Risk).
+- Using a database with a [JDBC](https://en.wikipedia.org/wiki/Java_Database_Connectivity) driver comes with _some_ [Boundary Risk](Boundary-Risk):  but the boundary is specified by a standard.  Although the standard doesn't cover every aspect of the behaviour of the database, it does minimize risk, because if you are familiar with one JDBC driver, you'll be familiar with them all, and swapping one for another is relatively easy.
+- Using a framework like [Spring](https://spring.io), [Redux](https://redux.js.org) or [Angular](https://angularjs.org) comes with higher [Boundary Risk](Boundary-Risk):  you are expected to yield to the framework's way of behaving throughout your application.  You cannot separate the concern easily, and swapping out the framework for another is likely to leave you with a whole new set of assumptions and interfaces to deal with.
+
+Unless your project _ends_, you can never be completely sure that [Boundary Risk](Boundary-Risk) _isn't_ going to stop you making a move you want.  For example:
  - `mkdirp` might not work on a new device's [Operating System](), forcing you to swap it out.
  - You might discover that the database you chose satisfied all the features you needed at the start of the project, but came up short when the requirements changed later on.
  - The front-end framework you chose might go out-of-fashion, and it might be hard to find developers interested in working on the project because of it.
+ 
+This third point is perhaps the most interesting aspect of [Boundary Risk](Boundary-Risk):  how can we ensure that the decisions we make now are future-proof?  In order to investigate this further, let's look at 3 things:  Plugins, Ecosystems and Evolution (again).  
 
 ## Plugins, Ecosystems and Evolution
 
 ### Plugins 
 
-Let's look at an example.
-
-On the face of it, [WordPress]() and [Drupal]() should be very similar:
- - They are both [Content Management Systems]()
- - They both use a [LAMP (Linux, Apache, MySql, PHP) Stack]()
- - They were both started around the same time.
+On the face of it, [WordPress](https://en.wikipedia.org/wiki/WordPress) and [Drupal](https://en.wikipedia.org/wiki/Drupal) _should_ be very similar:
+ - They are both [Content Management Systems](https://en.wikipedia.org/wiki/Content_management_system)
+ - They both use a [LAMP (Linux, Apache, MySql, PHP) Stack](https://en.wikipedia.org/wiki/LAMP_(software_bundle))
+ - They were both started around the same time (2001 for Drupal, 2003 for WordPress)
  - They are both Open-Source, and have a wide variety of plugins.
 
-In practice, they are very different.  This could be put down to different _design goals_:  it seems that [WordPress]() was focused much more on usability, and an easy learning curve, whereas [Drupal]() supported plugins for building things with complex data formats.  It could also be down to the _design decisions_:  although they both support [Plugins](), they do it in very different ways.  
+In practice, they are very different.  This could be put down to different _design goals_:  it seems that [WordPress](https://en.wikipedia.org/wiki/WordPress) was focused much more on usability, and an easy learning curve, whereas [Drupal](https://en.wikipedia.org/wiki/Drupal) supported plugins for building things with complex data formats.  It could also be down to the _design decisions_:  although they both support [Plugins](), they do it in very different ways.  
 
 (Side note: I wasn't short of go-to examples for this.  I could have picked on [Team City]() and [Jenkins]() here ([Continuous Integration]() tools, or [Maven]() and [Gradle]() (Java build tools).  In all cases, the choice of plugins I have is dependent on the platform I've chosen, despite the fact that the platforms are solving pretty much the same problem. )
 
@@ -93,21 +103,21 @@ You can think of the ecosystem as being like the footprint of a town or a city, 
 
 Systems and Ecosystems.
 
-Ecosystem size is a key determinant of boundary risk:  in a _large_ ecosystem, the diameter of the [boundary] is large, so [Boundary Risk](Boundary-Risk) is low.  Your moves on the [Risk Landscape](Glossary#risk-landscape) are unlikely to collide with it.  The boundary _got large_ because other developers before you hit the boundary and did the work building bridges, roads and pushing it back so that the boundary didn't get in their way.  In a small ecosystem, you are much more likely to come into contact with the edges of the boundary.  _You_ will have to be the developer that pushes back the frontier and builds the roads for the others.  This is hard work.
+Ecosystem size is a key determinant of [Boundary Risk](Boundary-Risk):  in a _large_ ecosystem, the diameter of the [boundary] is large, so [Boundary Risk](Boundary-Risk) is low.  Your moves on the [Risk Landscape](Glossary#risk-landscape) are unlikely to collide with it.  The boundary _got large_ because other developers before you hit the boundary and did the work building bridges, roads and pushing it back so that the boundary didn't get in their way.  In a small ecosystem, you are much more likely to come into contact with the edges of the boundary.  _You_ will have to be the developer that pushes back the frontier and builds the roads for the others.  This is hard work.
 
 ### Evolution
 
-This is a crucial determinant of **Boundary Risk**:  given the same problems, people will approach them and solve them in different ways.  And, this will impact the 'shape' of the abstractions, and the APIs that you end up with.  [Complexity] emerges from the solution, as the solution gets more complex and opinionated, much like the way in which the network of a city will evolve over time in an unpredictable way.
+This is a crucial determinant of [Boundary Risk](Boundary-Risk):  given the same problems, people will approach them and solve them in different ways.  And, this will impact the 'shape' of the abstractions, and the APIs that you end up with.  [Complexity] emerges from the solution, as the solution gets more complex and opinionated, much like the way in which the network of a city will evolve over time in an unpredictable way.
 
 In the real world, there is a tendency for _big cities to get bigger_.  The more people that live there, the more services they provide, and therefore, the more immigrants they attract.  And, it's the same in the software world.  In both cases, this is due to the [Network Effect]:
 
 tbd.
 
-You can see the same effect in the adoption rates of [Wordpress]() and [Drupal]().  
+You can see the same effect in the adoption rates of [WordPress](https://en.wikipedia.org/wiki/WordPress) and [Drupal](https://en.wikipedia.org/wiki/Drupal).  
 
 tbd.  graphs of adoption
 
-Nowadays, the [WordPress]() user base is huge:  approximately tbd 30% of all websites are hosted with [WordPress]().  For [Drupal]() it's tbd.  That it's this way round could be entirely accidental.  Is this because [WordPress]() is _better_ than [Drupal]()? That's arguable.  But, by now _it should be_: there are so many people in this ecosystem:
+Nowadays, the [WordPress](https://en.wikipedia.org/wiki/WordPress) user base is huge:  approximately tbd 30% of all websites are hosted with [WordPress](https://en.wikipedia.org/wiki/WordPress).  For [Drupal](https://en.wikipedia.org/wiki/Drupal) it's tbd.  That it's this way round could be entirely accidental.  Is this because [WordPress](https://en.wikipedia.org/wiki/WordPress) is _better_ than [Drupal](https://en.wikipedia.org/wiki/Drupal)? That's arguable.  But, by now _it should be_: there are so many people in this ecosystem:
  - Creating web sites.
  - Using those sites.
  - Submitting bug requests.
@@ -117,7 +127,7 @@ Nowadays, the [WordPress]() user base is huge:  approximately tbd 30% of all web
  - Creating features.
  - Improving the core platform.
  
-... that by now _it should be miles better_ than [Drupal]().  But, there are other things to consider...
+... that by now _it should be miles better_ than [Drupal](https://en.wikipedia.org/wiki/Drupal).  But, there are other things to consider...
 
 ### The Peter Principle
 
@@ -162,7 +172,7 @@ tbd. diagram here.
 
 ## Boundary-Crossing With Standards
 
-Sometimes, technology comes along that allows us to cross boundaries, like a _bridge_ or a _road_.  This has the effect of making it easy to to go from one self-contained [ecosystem]() to another.  Going back to [Wordpress](), a simple example might be the [Analytics Dashboard]() which provides [Google Analytics]() functionality inside [WordPress]().  Or, the [SVG Plugin](), which allows you to use [SVG images]() within [WordPress]().  I find, a lot of code I write is of this nature:  trying to write the _glue code_ to together two different _ecosystems_.   
+Sometimes, technology comes along that allows us to cross boundaries, like a _bridge_ or a _road_.  This has the effect of making it easy to to go from one self-contained [ecosystem]() to another.  Going back to [WordPress](https://en.wikipedia.org/wiki/WordPress), a simple example might be the [Analytics Dashboard]() which provides [Google Analytics]() functionality inside [WordPress](https://en.wikipedia.org/wiki/WordPress).  Or, the [SVG Plugin](), which allows you to use [SVG images]() within [WordPress](https://en.wikipedia.org/wiki/WordPress).  I find, a lot of code I write is of this nature:  trying to write the _glue code_ to together two different _ecosystems_.   
 
 - [ASCII](): fixed the different-character-sets boundary risk by being a standard that others could adopt.  Before everyone agreed on ASCII, copying data from one computer system to another was a massive pain, and would involve some kind of translation.  [UTF]() continues this work to ensure we don't have to worry about **Translation** from one encoding to another.  This is an example of mitigating [Boundary Risk](Boundary-Risk) with standards.  One of the problems with this is that _you have to get everyone to change to using the standard_ and this isn't always a given.  
 
@@ -314,7 +324,7 @@ The next question, is why did Microsoft _stop_ pursuing this strategy?  It seems
 You can't always be sure that a dependency now will always have the same guarantees in the future: 
 - **Ownership changes**  [Microsoft]() buys [Github]().  What will happen to the ecosystem around github now?
 - **Licensing changes**.  (e.g. [Oracle](http://oracle.com) buys **Tangosol** who make [Coherence](https://en.wikipedia.org/wiki/Oracle_Coherence) for example).  Having done this, they increase the licensing costs of Tangosol to huge levels, milking the [Cash Cow]() of the installed user-base, but ensuring no-one else is likely to use it.
-- **Better alternatives become available**:  As a real example of this, I began a project in 2016 using [Apache Solr]().  However, in 2018, I would probably use [ElasticSearch](https://en.wikipedia.org/wiki/Elasticsearch).  In the past, I've built websites using [Drupal]() and then later converted them to use [Wordpress]().
+- **Better alternatives become available**:  As a real example of this, I began a project in 2016 using [Apache Solr]().  However, in 2018, I would probably use [ElasticSearch](https://en.wikipedia.org/wiki/Elasticsearch).  In the past, I've built websites using [Drupal](https://en.wikipedia.org/wiki/Drupal) and then later converted them to use [WordPress](https://en.wikipedia.org/wiki/WordPress).
 
 ## Patterns In Boundary Risk
 
