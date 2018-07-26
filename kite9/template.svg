@@ -115,7 +115,9 @@
     <svg:rect x='0' y='0' width='#{$width}' height='#{$height}' style='fill: none; stroke: none ' />
   </template>
 
- 
+  <template id="tick">
+    <svg:rect x='0' y='0' width='20' height='20' style='fill: red; stroke: none ' />
+  </template>
   
   <template id='risk-box'>
     <back style='kite9-usage: decal; kite9-type: svg; '>
@@ -685,6 +687,7 @@
       Risk</title>
     </risk-box>
   </template>     
+  
   
   
 </svg:svg>
