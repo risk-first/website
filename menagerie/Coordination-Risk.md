@@ -245,7 +245,7 @@ Finally, [Bitcoin (BTC)](https://en.wikipedia.org/wiki/Bitcoin) is a write-only 
 
 Because it's based on outright competition, if someone beats you to completing a piece of work, then your work is wasted.  So, there is  _huge_ [Coordination Risk](Coordination-Risk).
 
-For this reason, BTC agents [coordinate](Coordination-Risk) into [mining consortia](https://en.bitcoin.it/wiki/Comparison_of_mining_pools), so they can avoid working on the same problems at the same time.  But this in itself is a problem, because the whole _point_ of BTC is that it's competitive, and no one entity has control.  So, this sets a maximum size on the mining pool of just under 50% of the BTC network's processing power.
+For this reason, BTC agents [coordinate](Coordination-Risk) into [mining consortia](https://en.bitcoin.it/wiki/Comparison_of_mining_pools), so they can avoid working on the same problems at the same time.  But this in itself is a problem, because the whole _point_ of BTC is that it's competitive, and no one entity has control.  So, mining pools  tend to stop growing before they reach 50% of the BTC network's processing power.  Taking control would be [politically disastrous](https://www.reddit.com/r/Bitcoin/comments/5fe9vz/in_the_last_24hrs_three_mining_pools_have_control/) and confidence in the currency (such as there is) would likely be lost.
 
 ## Communication Is For Coordination
 
