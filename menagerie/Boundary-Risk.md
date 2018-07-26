@@ -83,15 +83,15 @@ This third point is perhaps the most interesting aspect of [Boundary Risk](Bound
 
 ## Plugins, Ecosystems and Evolution
 
-On the face of it, [WordPress](https://en.wikipedia.org/wiki/WordPress) and [Drupal](https://en.wikipedia.org/wiki/Drupal) _should_ be very similar:
+On the face of it, [WordPress](https://en.wikipedia.org/wiki/WordPress) and [Drupal](https://en.wikipedia.org/wiki/Drupal _should_ be very similar:
  - They are both [Content Management Systems](https://en.wikipedia.org/wiki/Content_management_system)
  - They both use a [LAMP (Linux, Apache, MySql, PHP) Stack](https://en.wikipedia.org/wiki/LAMP_(software_bundle))
  - They were both started around the same time (2001 for Drupal, 2003 for WordPress)
  - They are both Open-Source, and have a wide variety of [Plugins](https://en.wikipedia.org/wiki/Plug-in_(computing)).  That is, ways for other programmers to extend the functionality in new directions.
 
-In practice, they are very different.  This could be put down to different _design goals_:  it seems that WordPress was focused much more on usability, and an easy learning curve, whereas Drupal) supported plugins for building things with complex data formats.  It could also be down to the _design decisions_:  although they both support [Plugins](), they do it in very different ways.  
+In practice, they are very different.  This could be put down to different _design goals_:  it seems that WordPress was focused much more on usability, and an easy learning curve, whereas Drupal supported plugins for building things with complex data formats.  It could also be down to the _design decisions_:  although they both support [Plugins](), they do it in very different ways.  
 
-(Side note: I wasn't short of go-to examples for this.  I could have picked on [Team City](https://en.wikipedia.org/wiki/TeamCity) and [Jenkins](https://en.wikipedia.org/wiki/Jenkins_(software)) here ([Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration) tools), or [Maven](https://en.wikipedia.org/wiki/Apache_Maven) and [Gradle](https://en.wikipedia.org/wiki/Gradle) (Java build tools).  All of these support [plugins](https://en.wikipedia.org/wiki/Plug-in_(computing)), and the _choice_ of plugins is dependent on which I've chosen, despite the fact that the platforms are solving pretty much the same problems. )
+(Side note: I wasn't short of go-to examples for this.  I could have picked on [Team City](https://en.wikipedia.org/wiki/TeamCity) and [Jenkins](https://en.wikipedia.org/wiki/Jenkins_(software)) here ([Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration) tools), or [Maven](https://en.wikipedia.org/wiki/Apache_Maven) and [Gradle](https://en.wikipedia.org/wiki/Gradle) (build tools).  All of these support [plugins](https://en.wikipedia.org/wiki/Plug-in_(computing)), and the _choice_ of plugins is dependent on which I've chosen, despite the fact that the platforms are solving pretty much the same problems. )
 
 ### Ecosystems and Systems
 
@@ -111,11 +111,11 @@ In the real world, there is a tendency for _big cities to get bigger_.  The more
 
 > "A network effect (also called network externality or demand-side economies of scale) is the positive effect described in economics and business that an additional user of a good or service has on the value of that product to others. When a network effect is present, the value of a product or service increases according to the number of others using it." - [Network Effect, _Wikipedia_](https://en.wikipedia.org/wiki/Network_effect)
 
-You can see the same effect in the adoption rates of WordPress and Drupal), shown in the chart below.  Note: this is over _all sites on the internet_, so Drupal accounts for hundreds of thousands of sites.  In 2018, WordPress is approximately 32% of all websites.  For Drupal) it's 2%.
+You can see the same effect in the adoption rates of WordPress and Drupal, shown in the chart below.  Note: this is over _all sites on the internet_, so Drupal accounts for hundreds of thousands of sites.  In 2018, WordPress is approximately 32% of all websites.  For Drupal it's 2%.
 
 ![Wordpress vs Drupal adoption over 8 years, according to [w3techs.com](https://w3techs.com/technologies/history_overview/content_management/all/y)](images/wordpress-drupal-chart.png)
 
-Did WordPress gain this march because it was better than Drupal)?  That's arguable.  That it's this way round could be _entirely accidental_, and a result of [Network Effect](https://en.wikipedia.org/wiki/Network_effect).
+Did WordPress gain this march because it was better than Drupal?  That's arguable.  That it's this way round could be _entirely accidental_, and a result of [Network Effect](https://en.wikipedia.org/wiki/Network_effect).
 
 And maybe, they aren't comparable:  Given the same problems, the people in each ecosystem have approached them and solved them in different ways.  And, this has impacted the 'shape' of the abstractions, and the protocols you use in each.  [Complexity](Complexity-Risk) _emerges_, and the ecosystem gets more complex and opinionated, much like the way in which the network of a city will evolve over time in an unpredictable way.
 
@@ -129,15 +129,15 @@ But, by now, if they _are_ to be compared side-by-side, WordPress _should be bet
  - Creating features.
  - Improving the core platform.
  
-But, there is something else to consider...
+But, there are two further factors to consider...
 
-### The Peter Principle
+#### 1.  The Peter Principle
 
 When a tool or platform is popular, it is under pressure to increase in complexity.  This is because people are attracted to something useful, and want to extend it to new purposes.  This is known as _The Peter Principle_:  
 
- (the Peter Principle tbd).  
- 
-Let's look at [Java] as an example of this.
+> "The Peter principle is a concept in management developed by Laurence J. Peter, which observes that people in a hierarchy tend to rise to their 'level of incompetence'." - [The Peter Principle, _Wikipedia_](https://en.wikipedia.org/wiki/Peter_principle)
+
+Although designed for _people_, it can just as easily be applied to any other dependency you can think of.  Let's look at [Java](https://en.wikipedia.org/wiki/Java_(software_platform)) as an example of this.
 
 Java is a very popular platform.  Let's look at how the number of public classes (a good proxy for the boundary) has increased with each release:
 
@@ -145,22 +145,25 @@ Java is a very popular platform.  Let's look at how the number of public classes
 
 Why does this happen?  
  - More and more people are using Java for more and more things.  It's popularity begets more popularity.  
- - Human needs are _fractal_ in [complexity]().  You can always find ways to make an [API]() _better_.
- - There is [Red Queen Risk](Feature-Risk):  our requirements evolve with time.   [Android Apps]() weren't even a thing when Java 3 came out, for example, yet they are all written in Java now, and Java has had to keep up.  
+ - Human needs are _fractal_ in [complexity](Complexity-Risk).  You can always find ways to make a dependency _better_  (For some meaning of better).
+ - There is [Feature Drift Risk](Feature-Risk#feature-drift-risk):  our requirements evolve with time.   [Android Apps](https://en.wikipedia.org/wiki/Android_software_development) weren't even a thing when Java 3 came out, for example, yet they are all written in Java now, and Java has had to keep up.  
 
-### Backward Compatibility and Emergent Complexity
+#### 2.  Backward Compatibility
 
-As we saw in [Software Dependency Risk](), The art of good design is to afford the greatest increase in functionality with the smallest increase in complexity possible, and this usually means [Refactoring](Coding).  But, this is at odds with [Backward Compatibility](Communication-Risk).
+As we saw in [Software Dependency Risk](Software-Dependency-Risk), The art of good design is to afford the greatest increase in functionality with the smallest increase in  complexity possible, and this usually means [Refactoring](Coding).  But, this is at odds with [Backward Compatibility](Communication-Risk#backward-compatibility).
 
-Each new version has a larger [boundary] than the one before (pushing back [Boundary Risk](Boundary-Risk), and making the platform more attractive to build solutions in, but this increases the API [Complexity Risk](Complexity-Risk) as there is more functionality to deal with.  The downside is [Learning Curve]() and other [Communication Risk](), and you can see that large ecosystems like [Java]() react to this by having copious amounts of literature to read or buy to help.
-
-I spent many years living in London.  It was fun, and easy to travel round, but it was highly [Complex]() and there were plenty of downsides like the cost of travel and housing, and pollution.   Sometimes, it felt like the design of the city was out to get you: the roads were too narrow, the river was always in the way and the Underground carriages were too small.  Wouldn't it be better to start again?
+Each new version has a greater functional scope than the one before (pushing back [Boundary Risk](Boundary-Risk)), making the platform more attractive to build solutions in.   But this increases the [Complexity Risk](Complexity-Risk) as there is more functionality to deal with.  
 
 ### Focus vs Overreach
 
-Because of backwards compatibility and internal complexity, large systems and ecosystems are unable to change quickly.   [Complexity is Mass]() after all.  This means that when the world changes ([Red Queen Risk]()), new systems will come along to plug the gaps.  tbd. 
+![The Peter Principle:  Backward Compatibility + Extension leads to complexity and learning curve risk](images/kite9/boundary-risk-peter-principle.png)
 
-This implies a trade-off:  sometimes it's better to accept the [Boundary Risk](Boundary-Risk) innate in a smaller system than try to work within the bigger, more complex system.
+You can see in the diagram the Peter Principle at play:  as more responsibility is given to a dependency, the more complex it gets, and the greater the learning curve to work with it.  Large ecosystems like Java react to [Learning Curve Risk](Communication-Risk#learning-curve-risk) by having copious amounts of literature to read or buy to help, but it is still off-putting.
+
+Because [Complexity is Mass](Complexity-Risk#complexity-as-mass), large ecosystems can't respond quickly to [Feature Drift](Feature-Risk#feature-drift-risk).  This means that when the world changes, _new_ systems will come along to plug the gaps. 
+
+This implies a trade-off:  
+- Sometimes it's better to accept the [Boundary Risk](Boundary-Risk) innate in a smaller system than try to work within the bigger, more complex system.
 
 example:  
 
@@ -326,7 +329,7 @@ The next question, is why did Microsoft _stop_ pursuing this strategy?  It seems
 You can't always be sure that a dependency now will always have the same guarantees in the future: 
 - **Ownership changes**  [Microsoft]() buys [Github]().  What will happen to the ecosystem around github now?
 - **Licensing changes**.  (e.g. [Oracle](http://oracle.com) buys **Tangosol** who make [Coherence](https://en.wikipedia.org/wiki/Oracle_Coherence) for example).  Having done this, they increase the licensing costs of Tangosol to huge levels, milking the [Cash Cow]() of the installed user-base, but ensuring no-one else is likely to use it.
-- **Better alternatives become available**:  As a real example of this, I began a project in 2016 using [Apache Solr]().  However, in 2018, I would probably use [ElasticSearch](https://en.wikipedia.org/wiki/Elasticsearch).  In the past, I've built websites using Drupal) and then later converted them to use WordPress.
+- **Better alternatives become available**:  As a real example of this, I began a project in 2016 using [Apache Solr]().  However, in 2018, I would probably use [ElasticSearch](https://en.wikipedia.org/wiki/Elasticsearch).  In the past, I've built websites using Drupal and then later converted them to use WordPress.
 
 ## Patterns In Boundary Risk
 
