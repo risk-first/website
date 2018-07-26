@@ -199,9 +199,9 @@ The [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem) states that this is
 
 ![In an AP system, the User B will get back a _stale value_ for X](images/kite9/communication-cap-ap.png)
 
-![In an CP system, the User B won't get anything back for X, because Agent 2 can't be sure it has the latest value](images/kite9/communication-cap-ap.png)
+![In an CP system, the User B won't get anything back for X, because Agent 2 can't be sure it has the latest value](images/kite9/communication-cap-cp.png)
 
-![In an CA system, we can't have partition tolerance, so in order to be consistent a single Agent has to do all the work](images/kite9/communication-cap-ap.png)
+![In an CA system, we can't have partition tolerance, so in order to be consistent a single Agent has to do all the work](images/kite9/communication-cap-ca.png)
 
 This sets an upper bound on [Coordination Risk](Coordination-Risk):  we _can't_ get rid of it completely in a software system, -or- a system on any other scale.  
 
