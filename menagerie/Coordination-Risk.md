@@ -243,9 +243,9 @@ Since multiple users can make all the changes they like locally, and merge them 
 
 Finally, [Bitcoin (BTC)](https://en.wikipedia.org/wiki/Bitcoin) is a write-only [distributed ledger](https://en.wikipedia.org/wiki/Distributed_ledger), where agents _compete_ to mine BTC, but also at the same time record transactions on the ledger.  BTC is also `AP`, in a similar way to Git.  But new changes can only be appended if you have the latest version of the ledger.  If you append to an out-of-date ledger, your work will be lost.  
 
-Because it's based on outright competition, if someone beats you to completing a piece of work, then your work is wasted.  So, there is  _huge_ [Coordination Risk](Coordination-Risk).
+Because it's based on outright competition, if someone beats you to completing a mining task, then your work is wasted.  So, there is  _huge_ [Coordination Risk](Coordination-Risk).
 
-For this reason, BTC agents [coordinate](Coordination-Risk) into [mining consortia](https://en.bitcoin.it/wiki/Comparison_of_mining_pools), so they can avoid working on the same problems at the same time.  But this in itself is a problem, because the whole _point_ of BTC is that it's competitive, and no one entity has control.  So, mining pools  tend to stop growing before they reach 50% of the BTC network's processing power.  Taking control would be [politically disastrous](https://www.reddit.com/r/Bitcoin/comments/5fe9vz/in_the_last_24hrs_three_mining_pools_have_control/) and confidence in the currency (such as there is) would likely be lost.
+For this reason, BTC agents [coordinate](Coordination-Risk) into [mining consortia](https://en.bitcoin.it/wiki/Comparison_of_mining_pools), so they can avoid working on the same tasks at the same time.  But this in itself is a problem, because the whole _point_ of BTC is that it's competitive, and no one entity has control.  So, mining pools  tend to stop growing before they reach 50% of the BTC network's processing power.  Taking control would be [politically disastrous](https://www.reddit.com/r/Bitcoin/comments/5fe9vz/in_the_last_24hrs_three_mining_pools_have_control/) and confidence in the currency (such as there is) would likely be lost.
 
 ## Communication Is For Coordination
 
