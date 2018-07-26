@@ -1,7 +1,4 @@
-# Welcome To Risk-First
-
-This is a placeholder.  
-
+![Welcome to Risk First](images/risk_first_pink.png)
 
 # Online Links
 
