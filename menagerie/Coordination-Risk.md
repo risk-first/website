@@ -219,7 +219,9 @@ Finally, if we have a CA system, we are essentially saying that _only one agent 
 
 ### Some Real-Life Examples
 
-This sets an upper bound on [Coordination Risk](Coordination-Risk):  we _can't_ get rid of it completely in a software system, -or- a system on any other scale.  We _can_ mitigate it a long way by agreeing on protocols and doing lots of communication, but fundamentally, coordination problems are inescapable at some level.  Let's look at some real-life examples of how this manifests in software.
+This sets an upper bound on [Coordination Risk](Coordination-Risk):  we _can't_ get rid of it completely in a software system, -or- a system on any other scale. Fundamentally, coordination problems are inescapable at some level.  The best we can do is mitigate it by agreeing on protocols and doing lots of communication.   
+
+Let's look at some real-life examples of how this manifests in software.
 
 #### ZooKeeper
 
