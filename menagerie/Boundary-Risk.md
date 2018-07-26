@@ -91,31 +91,31 @@ On the face of it, [WordPress](https://en.wikipedia.org/wiki/WordPress) and [Dru
 
 In practice, they are very different.  This could be put down to different _design goals_:  it seems that [WordPress](https://en.wikipedia.org/wiki/WordPress) was focused much more on usability, and an easy learning curve, whereas [Drupal](https://en.wikipedia.org/wiki/Drupal) supported plugins for building things with complex data formats.  It could also be down to the _design decisions_:  although they both support [Plugins](), they do it in very different ways.  
 
-(Side note: I wasn't short of go-to examples for this.  I could have picked on [Team City](https://en.wikipedia.org/wiki/TeamCity) and [Jenkins](https://en.wikipedia.org/wiki/Jenkins_(software)) here ([Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration) tools), or [Maven](https://en.wikipedia.org/wiki/Apache_Maven) and [Gradle](https://en.wikipedia.org/wiki/Gradle) (Java build tools).  All of these support [plugins](https://en.wikipedia.org/wiki/Plug-in_(computing)), and the _choice_ of plugins is dependent on which I've chosen, despite the fact that the platforms are solving pretty much the same problem. )
+(Side note: I wasn't short of go-to examples for this.  I could have picked on [Team City](https://en.wikipedia.org/wiki/TeamCity) and [Jenkins](https://en.wikipedia.org/wiki/Jenkins_(software)) here ([Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration) tools), or [Maven](https://en.wikipedia.org/wiki/Apache_Maven) and [Gradle](https://en.wikipedia.org/wiki/Gradle) (Java build tools).  All of these support [plugins](https://en.wikipedia.org/wiki/Plug-in_(computing)), and the _choice_ of plugins is dependent on which I've chosen, despite the fact that the platforms are solving pretty much the same problems. )
 
 ### Ecosystems and Systems
 
-The quality, and choice of [plugins]() for a given platform, along with factors such as community and online documentation is often called its [ecosystem]:
+The quality, and choice of plugins for a given platform, along with factors such as community and online documentation is often called its [ecosystem](https://en.wikipedia.org/wiki/Software_ecosystem):
 
-tbd
+> "as a set of businesses functioning as a unit and interacting with a shared market for software and services, together with relationships among them" - [Software Ecosystem, _Wikipedia_](https://en.wikipedia.org/wiki/Software_ecosystem)
 
-You can think of the ecosystem as being like the footprint of a town or a city, consisting of the buildings, transport network and the people that live there.  Within the city, and because of the transport network and the amenities available, it's easy to make rapid, useful moves on the [Risk Landscape]().  In a software ecosystem it's the same: the ecosystem has gathered together to provide a way to mitigate 
+You can think of the ecosystem as being like the footprint of a town or a city, consisting of the buildings, transport network and the people that live there.  Within the city, and because of the transport network and the amenities available, it's easy to make rapid, useful moves on the [Risk Landscape](Risk-Landscape).  In a software ecosystem it's the same: the ecosystem has gathered together to provide a way to mitigate various different [Feature Risks](Feature-Risk) in a common way.
 
-Systems and Ecosystems.
+Ecosystem size is one key determinant of [Boundary Risk](Boundary-Risk):  a _large_ ecosystem has a large boundary circumference.  [Boundary Risk](Boundary-Risk) is lower because your moves on the [Risk Landscape](Glossary#risk-landscape) are unlikely to collide with it.  The boundary _got large_ because other developers before you hit the boundary and did the work building the software equivalents of bridges and roads and pushing it back so that the boundary didn't get in their way.  
 
-Ecosystem size is a key determinant of [Boundary Risk](Boundary-Risk):  in a _large_ ecosystem, the diameter of the [boundary] is large, so [Boundary Risk](Boundary-Risk) is low.  Your moves on the [Risk Landscape](Glossary#risk-landscape) are unlikely to collide with it.  The boundary _got large_ because other developers before you hit the boundary and did the work building bridges, roads and pushing it back so that the boundary didn't get in their way.  In a small ecosystem, you are much more likely to come into contact with the edges of the boundary.  _You_ will have to be the developer that pushes back the frontier and builds the roads for the others.  This is hard work.
+In a small ecosystem, you are much more likely to come into contact with the edges of the boundary.  _You_ will have to be the developer that pushes back the frontier and builds the roads for the others.  This is hard work.
 
 ### Evolution
 
+In the real world, there is a tendency for _big cities to get bigger_.  The more people that live there, the more services they provide, and therefore, the more immigrants they attract.  And, it's the same in the software world.  In both cases, this is due to the [Network Effect](https://en.wikipedia.org/wiki/Network_effect):
+
+> "A network effect (also called network externality or demand-side economies of scale) is the positive effect described in economics and business that an additional user of a good or service has on the value of that product to others. When a network effect is present, the value of a product or service increases according to the number of others using it." - [Network Effect, _Wikipedia_](https://en.wikipedia.org/wiki/Network_effect)
+
+You can see the same effect in the adoption rates of [WordPress](https://en.wikipedia.org/wiki/WordPress) and [Drupal](https://en.wikipedia.org/wiki/Drupal).  Note: this is over _all sites on the internet_, so Drupal is still _really big_.  
+
+![Wordpress vs Drupal adoption over 8 years, according to [w3techs.com](https://w3techs.com/technologies/history_overview/content_management/all/y)](images/wordpress-drupal-chart.png)
+
 This is a crucial determinant of [Boundary Risk](Boundary-Risk):  given the same problems, people will approach them and solve them in different ways.  And, this will impact the 'shape' of the abstractions, and the APIs that you end up with.  [Complexity] emerges from the solution, as the solution gets more complex and opinionated, much like the way in which the network of a city will evolve over time in an unpredictable way.
-
-In the real world, there is a tendency for _big cities to get bigger_.  The more people that live there, the more services they provide, and therefore, the more immigrants they attract.  And, it's the same in the software world.  In both cases, this is due to the [Network Effect]:
-
-tbd.
-
-You can see the same effect in the adoption rates of [WordPress](https://en.wikipedia.org/wiki/WordPress) and [Drupal](https://en.wikipedia.org/wiki/Drupal).  
-
-tbd.  graphs of adoption
 
 Nowadays, the [WordPress](https://en.wikipedia.org/wiki/WordPress) user base is huge:  approximately tbd 30% of all websites are hosted with [WordPress](https://en.wikipedia.org/wiki/WordPress).  For [Drupal](https://en.wikipedia.org/wiki/Drupal) it's tbd.  That it's this way round could be entirely accidental.  Is this because [WordPress](https://en.wikipedia.org/wiki/WordPress) is _better_ than [Drupal](https://en.wikipedia.org/wiki/Drupal)? That's arguable.  But, by now _it should be_: there are so many people in this ecosystem:
  - Creating web sites.
