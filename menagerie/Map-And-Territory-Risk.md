@@ -12,11 +12,6 @@ So there is a translation going on here: observations about the arrangement of _
 
 ![Map And Territory Risk](images/generated/map-and-territory-risk.png)
 
-In this section, we are going to look at some ways in which this risk manifests itself, starting simple and getting more complex.   We will look at:
-- **Fitness**, and the issues we face when our [Internal Models]() don't contain the _right_ abstractions.
-- **Audience**: risks associated with _shared understanding_ within groups and organisations.
-- **Evolution**: how [Map and Territory Risk]() changes over time, and how it can sometimes get stuck.
-
 ## Internal Model Fitness
 
 ![Sat Nav Blunder Sends Asda Van Crashing Narrow Footpath - Telegraph Newspaper](images/sat_nav.png)
@@ -27,9 +22,13 @@ So, there are two [Map and Territory Risks]() here:
  - The [Internal Model]() of the SatNav contained information that was wrong:  the track had been marked up as a road, rather than a path.  
  - The [Internal Model]() of the driver was wrong:   his abstraction of "the SatNav is always right" turned out to be only _mostly_ accurate.  
 
+## Internal Models as Dependencies, Features
+
 What are the risks at play here?  We've already looked in detail at the [Dependency Risks]() involved in relying on something like a SatNav, in the [Software Dependency Risk]() section.  But here, we are really looking at [Internal Models]() as a source of [Dependency Risk]() too.
 
-Conversely, we could argue that the SatNav and the [Internal Model]() had bugs in them:  i.e. the same [Feature Implementation Risk]() we saw in the [Feature Risk]() section.  If a SatNav has too much of this, you'd end up not trusting it, and getting a new one.  With your [Internal Model](), you are slightly stuck in that you can't go elsewhere, but you may learn to _trust certain bits of knowledge less_, as this driver did.
+Conversely, we could argue that the SatNav and the [Internal Model]() had bugs in them:  i.e. the same [Feature Implementation Risk]() we saw in the [Feature Risk]() section.  If a SatNav has too much of this, you'd end up not trusting it, and getting a new one.  With your [Internal Model](), you can't buy a new one, but you may learn to _trust certain abstractions less_, as this driver did.
+
+In the [Feature Risk]() section, we observed that [Feature Risk]() can be broken down on three axes:  **Fitness**, **Evolution** and **Audience**.  So, extending this observation further, let's see how each type of [Feature Risk]() can manifest in the [Internal Model]():
 
 <table>
   <tr>
@@ -79,11 +78,11 @@ Conversely, we could argue that the SatNav and the [Internal Model]() had bugs i
   </tr>
 </table>
 
-Let's summarize what's going on here.  For any given nugget of information in our internal model, we are evaluating it on three axes:
+Let's summarize what's going on here.  For any given information in our internal model, we are evaluating it on three axes:
 
-- **Fitness**: as we've discussed, this is how closely the information matches reality, and how _useful that is to us_ (models that contain too much detail are as bad as models with too little).
+- **Fitness**: as discussed above with the SatNav example, this is how closely the information matches reality, and how _useful that is to us_ (models that contain too much detail are as bad as models with too little).
 - **Audience**: is all about how a piece of information is _shared_ between many [Internal Models](), and it's this we are going to address further now.
-- **Evolution**: is all about how the _world changes_, and your information goes out-of-date.   
+- **Evolution**: is all about how [Internal Models]() change when they meet reality, and we'll cover that last.   
 
 ## Audience
 
