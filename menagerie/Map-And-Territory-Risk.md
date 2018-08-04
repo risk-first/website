@@ -14,8 +14,8 @@ So there is a translation going on here: observations about the arrangement of _
 
 In this section, we are going to look at some ways in which this risk manifests itself, starting simple and getting more complex.   We will look at:
 - **Fitness**, and the issues we face when our [Internal Models]() don't contain the _right_ abstractions.
-- **Audience**: risks associated with _shared understanding_
-- **Evolution**
+- **Audience**: risks associated with _shared understanding_ within groups and organisations.
+- **Evolution**: how [Map and Territory Risk]() changes over time, and how it can sometimes get stuck.
 
 ## Internal Model Fitness
 
@@ -33,7 +33,7 @@ Conversely, we could argue that the SatNav and the [Internal Model]() had bugs i
 
 <table>
   <tr>
-    <th>DIMENSION</th>
+    <th>Dimension</th>
     <th>Feature Risk</th>
     <th>M&amp;T Examples</th>
   </tr>
