@@ -101,21 +101,23 @@ Any given information in our [internal model]() has these three dimensions:
 
 ## Audience
 
-Let's pick apart the "Audience" dimension of the above table:
+We already know a lot about [Internal Models]() and audience, as these have been the subject of previous sections:
  - We know from looking at [Communication Risk]() that communication allows us to _share_ information between [Internal Models](). 
- - Job markets show us that there is demand for people with certain _skills_, so this demonstrates to us that [Market Risk}() is as applicable to [Internal Models]() containing certain information as it is to products containing [Features](Feature-Risk).
- - And, we're all familiar with _memes_.
+ - We know from [Coordination Risk]() the difficulties inherent in aligning [Internal Models]() so that they cooperate.
+ - Job markets show us that there is demand for people with certain _skills_.  This demonstrates to us that [Market Risk]() is as applicable to [Internal Models]() containing certain information as it is to products containing [Features](Feature-Risk).  This was the focus of the [Ecosystem]() discussion in [Boundary Risk](Boundary-Risk).
+ - And, we're all familiar with _memes_:
 
-> tbd meme definition
+> "A meme acts as a unit for carrying cultural ideas, symbols, or practices, that can be transmitted from one mind to another through writing, speech, gestures, rituals, or other imitable phenomena with a mimicked theme." - [Meme, _Wikipedia_](https://en.wikipedia.org/wiki/Meme)
 
+Therefore, we should be able to track the rise-and-fall of _ideas_ much as we can track stock prices.  And in effect, this is what [Google Trends](https://trends.google.com) does.  In the chart below, we can see the relative popularity of two search terms over time.  This is probably as good an indicator as any of the audience for an abstraction at any point in time.
 
-Therefore, we should be able to track the rise-and-fall of _ideas_ much as we can track stock prices.  And in effect, this is what [Google Trends]() does.  In the graph below, we can see the relative popularity of two search terms over time. 
-
-tbd search terms google trends
+![Relative popularity of "Machine Learning" and "Big Data" as search terms on Google Trends, 2011-2018](images/google-trends.png)
 
 ### Metrics
 
-Let's dive into a specific example now: someone finds a useful new metric that helps in evaluating performance. It might be:
+Good abstractions are shared (a la _memes_, above).  They start off with one inventor, and are shared, eventually becoming institutionalised in the same way [Software Dependencies]() are.   Let's dive into a specific example now: someone finds a useful new metric that helps in evaluating performance. 
+
+It might be:
 
 - **SLOC (Source Lines Of Code)**: i.e. the number of lines of code each developer writes per day/week whatever.
 - **Function Points**: the number of function points a person on the team completes, each sprint.
