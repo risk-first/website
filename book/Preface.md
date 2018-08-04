@@ -1,4 +1,7 @@
 
+WHAT WILL I GET OUT OF THIS BOOK
+
+
 This is a depressing book.
 
 It's part of 2, but in this one you only get to meet the bad guy.
@@ -47,3 +50,10 @@ principles from finance.
 
 - it's all on the web.
 - it's part 1 of 2.
+
+
+- tv tropes for software
+- "I have this pattern".
+
+- software risk patterns
+

@@ -101,6 +101,9 @@ The quality, and choice of plugins for a given platform, along with factors such
 
 You can think of the ecosystem as being like the footprint of a town or a city, consisting of the buildings, transport network and the people that live there.  Within the city, and because of the transport network and the amenities available, it's easy to make rapid, useful moves on the [Risk Landscape](Risk-Landscape).  In a software ecosystem it's the same: the ecosystem has gathered together to provide a way to mitigate various different [Feature Risks](Feature-Risk) in a common way.
 
+tbd:  talk about complexity within  the boundary.  (increased convenience?)
+
+
 Ecosystem size is one key determinant of [Boundary Risk](Boundary-Risk):  a _large_ ecosystem has a large boundary circumference.  [Boundary Risk](Boundary-Risk) is lower because your moves on the [Risk Landscape](Glossary#risk-landscape) are unlikely to collide with it.  The boundary _got large_ because other developers before you hit the boundary and did the work building the software equivalents of bridges and roads and pushing it back so that the boundary didn't get in their way.  
 
 In a small ecosystem, you are much more likely to come into contact with the edges of the boundary.  _You_ will have to be the developer that pushes back the frontier and builds the roads for the others.  This is hard work.
@@ -315,6 +318,8 @@ The next question, is why did Microsoft _stop_ pursuing this strategy?  It seems
 - **Integration Testing**:  Building a unit test is easy.  You are generally testing some code you have written, aided with a testing framework.  Your code and the framework are both written in the same language, which means low boundary risk.  But, to _integration test_ you need to step outside this boundary and so it becomes much harder.  This is true whether you are integrating with other systems (providing or supplying them with data) or parts of your own system (say testing the client-side and server parts together).  
 - **User Interface Testing**:  If you are supplying a user-interface, then the interface with the user is already a complex, under-specified risky [protocol]().  Although tools exist to automate UI testing (such as [Selenium](), these rarely satisfactorily mitigate this [protocol risk]():  can you be sure that the screen hasn't got strange glitches, that the mouse moves correctly, that the proportions on the screen are correct on all browsers?  
 - **Jobs**:  When you pick a new technology to learn and add to your CV, it's worth keeping in mind how useful this will be to you in the future.   It's career-limiting to be stuck in a dying ecosystem and need to retrain.
+- **Teams**:  if you're given license to build a new product within an existing team, are you creating [Boundary Risk]() by using tools that the team aren't familiar with?
+- **Organisatations**: Getting teams or departments to work with each other often involves breaking down [Boundary Risk]().  Often the departments use different tool-sets or processes, and have different goals making the translation harder.  tbd
 
 
 ### Boundary Risk and Change
