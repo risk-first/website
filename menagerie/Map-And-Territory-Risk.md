@@ -39,7 +39,7 @@ Conversely, we could argue that the SatNav and the [Internal Model]() had bugs i
   </tr>
   <tr>
     <td>Fitness</td>
-    <td>[Conceptual Integrity Risk]() <br />[Implementation Risk]()</td>
+    <td>Conceptual Integrity Risk <br />Implementation Risk</td>
     <td>
       <ul>
         <li>A filing cabinet containing too much junk. </li>
@@ -53,7 +53,7 @@ Conversely, we could argue that the SatNav and the [Internal Model]() had bugs i
   </tr>
   <tr>
     <td>Evolution</td>
-    <td>[Feature Drift Risk]() <br />[Regression Risk]()</td>
+    <td>Feature Drift Risk <br />Regression Risk</td>
     <td>
       <ul>
         <li>Knowing outdated tools. </li>
@@ -65,7 +65,7 @@ Conversely, we could argue that the SatNav and the [Internal Model]() had bugs i
   </tr>
   <tr>
     <td>Audience</td>
-    <td>[Feature Access Risk]()<br /> [Market Risk]()</td>
+    <td>Feature Access Risk<br />Market Risk</td>
     <td>
       <ul>
         <li>Memes. </li>
