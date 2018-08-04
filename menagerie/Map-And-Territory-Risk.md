@@ -38,7 +38,12 @@ In the [Feature Risk]() section, we observed that [Feature Risk]() can be broken
   </tr>
   <tr>
     <td>Fitness</td>
-    <td>Conceptual Integrity Risk <br />Implementation Risk</td>
+    <td>
+      <ul>
+        <li>Conceptual Integrity Risk</li>
+        <li>Implementation Risk</li>
+      </ul>
+    </td>
     <td>
       <ul>
         <li>A filing cabinet containing too much junk. </li>
@@ -52,7 +57,12 @@ In the [Feature Risk]() section, we observed that [Feature Risk]() can be broken
   </tr>
   <tr>
     <td>Evolution</td>
-    <td>Feature Drift Risk <br />Regression Risk</td>
+    <td>
+      <ul>
+        <li>Feature Drift Risk</li>
+        <li>Regression Risk</li>
+      </ul>
+    </td>
     <td>
       <ul>
         <li>Knowing outdated tools. </li>
@@ -64,7 +74,12 @@ In the [Feature Risk]() section, we observed that [Feature Risk]() can be broken
   </tr>
   <tr>
     <td>Audience</td>
-    <td>Feature Access Risk<br />Market Risk</td>
+    <td>
+      <ul>
+        <li>Feature Access Risk</li>
+        <li>Market Risk</li>
+      </ul>
+    </td>
     <td>
       <ul>
         <li>Memes. </li>
