@@ -38,7 +38,7 @@ Conversely, we could argue that the SatNav and the [Internal Model]() had bugs i
     <th>M&amp;T Examples</th>
   </tr>
   <tr>
-    <td>FITNESS</td>
+    <td>Fitness</td>
     <td>Conceptual Integrity Risk Implementation Risk</td>
     <td>
       <ul>
@@ -52,7 +52,7 @@ Conversely, we could argue that the SatNav and the [Internal Model]() had bugs i
     </td>
   </tr>
   <tr>
-    <td>EVOLUTION</td>
+    <td>Evolution</td>
     <td>Feature Drift Risk Regression Risk</td>
     <td>
       <ul>
@@ -64,7 +64,7 @@ Conversely, we could argue that the SatNav and the [Internal Model]() had bugs i
     </td>
   </tr>
   <tr>
-    <td>AUDIENCE</td>
+    <td>Audience</td>
     <td>Feature Access Risk Market Risk</td>
     <td>
       <ul>
