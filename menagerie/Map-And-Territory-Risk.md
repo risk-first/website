@@ -7,7 +7,7 @@ So there is a translation going on here: observations about the arrangement of _
  - The whole process of abstraction is _fitting a pattern to a situation_.  But our pattern may not be the _right_ one, and it may be an _oversimplification_.  I.e. choice of pattern has the usual [Feature Risks]().
  - Sometimes, we are not in charge of all the facts we need to make a decision. 
 
-[Maps and Territories, and Communication happening between them](images/kite9/mapter-bits-atoms.png) 
+![Maps and Territories, and Communication happening between them](images/kite9/mapter-bits-atoms.png) 
 
 [Map And Territory Risk]() is the risk we face because we base our behaviour on our [Internal Models]() rather than reality itself.  It comes from the expression "Confusing the Map for the Territory", attributed to Alfred Korzybski:
 
