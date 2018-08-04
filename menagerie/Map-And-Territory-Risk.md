@@ -1,23 +1,70 @@
 ![Under Construction](images/state/uc.png)
 
-As we discussed in the section on [Abstraction Risk](Communication-Risk), our understanding of the world is entirely informed by the names we give things and the abstractions we create.  
+As we discussed in the section on [Abstraction Risk](Communication-Risk), our understanding of the world is entirely informed by the names we give things and the abstractions we create.  In fact, the whole **Risk-First** endeavour is about _identifying patterns_ within software development and calling them out.  Our [Internal Models]() are a model of the world based on these patterns, and their relationships.
 
-**Map And Territory Risk** is the recognition that there is a danger that we come to believe the abstractions are more real than reality itself.  It comes from the expression "Confusing the Map for the Territory".  That is believing the abstraction is reality, instead of reality itself.
+So there is a translation going on here: observations about the arrangement of _atoms_ in the world get turned into patterns of _information_ (measured in bits and bytes).  And, as we saw in the section on [Communication Risk](), any time there is translation going on, we face :  
+
+ - The whole process of abstraction is _fitting a pattern to a situation_.  But our pattern may not be the _right_ one, and it may be an _oversimplification_.  I.e. choice of pattern has the usual [Feature Risks]().
+ - Sometimes, we are not in charge of all the facts we need to make a decision. 
+ 
+tbd. diagram showing internal model at the top (a world of information), communication going on, world of atoms at the bottom. 
+
+[Map And Territory Risk]() is the risk we face because we base our behaviour on our [Internal Models]() rather than reality itself.  It comes from the expression "Confusing the Map for the Territory".  
+
+tbd.  quote this.
+
+In this section, we are going to look at some ways in which this risk manifests itself, starting simple and getting more complex.   We will look at:
+- **Fitness**, and the issues we face when our [Internal MOdels]() don't contain the _right_ pieces of information.
+- **Audience**: risks associated with _shared understanding_
+- **Evolution**
+tbd.
+
+## Internal Model Fitness
 
 ![Sat Nav Crash - Telegraph Newspaper](images/sat_nav.png)
 
-In the picture shown here, the driver _trusted_ the SatNav to such an extent that he didn't pay attention to the road-signs around him, and ended up getting stuck.
+In the picture shown here, the driver _trusted_ the SatNav to such an extent that he didn't pay attention to the road-signs around him, and ended up getting stuck.  This wasn't borne of stupidity, but experience:  SatNavs are pretty reliable. _So many times_ the SatNav had been right, that the driver stopped _questioning its fallibility_.  
 
-This wasn't borne of stupidity, but experience:  _so many times_ the SatNav had been right, that the driver stopped questioning its fallibility.  But SatNavs are pretty reliable, this is kind of excusable.  People are happy to make this mistake with far less reliable systems because often it's a shortcut to having to do any real thinking.
+So, there are two [Map and Territory Risks]() here:
+ - The [Internal Model]() of the SatNav contained information that was wrong:  the track had been marked up as a road, rather than a path.  
+ - The [Internal Model]() of the driver was wrong:   his abstraction of "the SatNav is always right" turned out to be only _mostly_ accurate.  
 
-## Metrics
+What are the risks at play here?  We've already looked in detail at the [Dependency Risks]() involved in relying on something like a SatNav, in the [Software Dependency Risk]() section.  But here, we are really looking at [Internal Models]() as a source of [Dependency Risk]() too.
 
-The simplest type of **Map And Territory Risk** occurs like this:  someone finds a useful new metric that helps in evaluating performance. It might be:
+Conversely, we could argue that the SatNav and the [Internal Model]() had bugs in them:  i.e. the same [Feature Implementation Risk]() we saw in the [Feature Risk]() section.  If a SatNav has too much of this, you'd end up not trusting it, and getting a new one.  With your [Internal Model](), you are slightly stuck in that you can't go elsewhere, but you may learn to _trust certain bits of knowledge less_, as this driver did.
+
+It turns out, all of the risks we met in the [Feature Risk]() section are applicable to [Map and Territory Risk]() too.  Let's look at some examples:
+
+tbd.  insert table here.
+
+Let's summarize what's going on here.  For any given nugget of information in our internal model, we are evaluating it on three axes:
+
+- **Fitness**: as we've discussed, this is how closely the information matches reality, and how _useful that is to us_ (models that contain too much detail are as bad as models with too little).
+- **Audience**: is all about how a piece of information is _shared_ between many [Internal Models](), and it's this we are going to address further now.
+- **Evolution**: is all about how the _world changes_, and your information goes out-of-date.   
+
+## Audience
+
+Let's pick apart the "Audience" dimension of the above table:
+ - We know from looking at [Communication Risk]() that communication allows us to _share_ information between [Internal Models](). 
+ - Job markets show us that there is demand for people with certain _skills_, so this demonstrates to us that [Market Risk}() is as applicable to [Internal Models]() containing certain information as it is to products containing [Features](Feature-Risk).
+ - And, we're all familiar with _memes_.
+
+> tbd meme definition
+
+
+Therefore, we should be able to track the rise-and-fall of _ideas_ much as we can track stock prices.  And in effect, this is what [Google Trends]() does.  In the graph below, we can see the relative popularity of two search terms over time. 
+
+tbd search terms google trends
+
+### Metrics
+
+Let's dive into a specific example now: someone finds a useful new metric that helps in evaluating performance. It might be:
 
 - **SLOC (Source Lines Of Code)**: i.e. the number of lines of code each developer writes per day/week whatever.
 - **Function Points**: the number of function points a person on the team completes, each sprint.
-- **Code Coverage**: the number of lines of code exercised by unit tests
-- **Response Time**: the time it takes to respond to an emergency call, say
+- **Code Coverage**: the number of lines of code exercised by unit tests.
+- **Response Time**: the time it takes to respond to an emergency call, say, or to go from a feature request to production.
 - **Release cadence**:  number of releases a team performs, per month, say.
 
 With some skill, they may be able to _correlate_ this metric against some other more abstract measure of success.  For example:
@@ -25,25 +72,60 @@ With some skill, they may be able to _correlate_ this metric against some other 
 - "user-satisfaction is correlated with SLOC"
 - "response time is correlated with revenue"
 
-Because the _thing on the left_ being is immediate and easier to measure than _the thing on the right_, it becomes used as a proxy (or, Map) for the thing they are really interested in (the Territory).  
-
-But _correlation_ doesn't imply _causation_.  The cause might be different:  
+Because the _thing on the left_ being is immediate and easier to measure than _the thing on the right_, it becomes used as a proxy (or, Map) for the thing they are really interested in (the Territory).  At this point, it's _easy_ to communicate this idea with the rest of the team, and _the market value of the idea is high_:  it is a useful representation of reality, which is shown to be accurate at a particular point in time. 
+ 
+But _correlation_ doesn't imply _causation_.  The _cause_ might be different:  
  - quality and number of releases might both be down to the simplicity of the product.
  - user satisfaction and SLOC might both be down to the calibre of the developers.
  - response time and revenue might both be down to clever team planning.
  
-When you have easy go-to metrics based on accidental or incidental correlations, [Hidden Risk](Glossary#hidden-risk) mounts up.  By relying on the metrics, you're not really _seeing_ the reality.  The devil is in the detail. 
+Metrics are _seductive_ because they simplify reality and are easily communicated.  But they _inherently_ contain [Map and Territory Risk](): By relying _only_ on the metrics, you're not really _seeing_ the reality.  The devil is in the detail. 
 
-## Drinking The Kool-Aid
+## Evolution
 
-The next problem comes when metrics start being used for more than just indicators, but as measures of performance or targets:
-  - If a team is _told_ to do lots of releases, they will perform lots of releases *at the expense of something else*.
-  - If team members are promoted according to SLOC, they will make sure their code takes up as many lines as possible.
-  - In the UK, when ambulances were asked to respond to all emergency calls within a short window, cars and bicycles were employed as ambulances too [tbd].
+The section on [Communication Risk]() introduced the following model for ideas:
+
+![Spread of information between [Internal Models]()](images/generated/communication_marketing.png)
+
+But what happens next?   As we saw in [Boundary Risk](), the **Peter Principle** applies, people will use dependencies up to the point when they start breaking down.  
+
+In the case of metrics, this is where they start being used for more than just indicators, but as measures of performance or targets:
+ - If a team is _told_ to do lots of releases, they will perform lots of releases *at the expense of something else*.
+ - If team members are promoted according to SLOC, they will make sure their code takes up as many lines as possible.
+ - In the UK, when ambulances were asked to respond to all emergency calls within a short window, cars and bicycles were employed as ambulances too [tbd].
   
-You are probably nodding your head at these examples.  _Of course_ SLOC is a terrible measure performance!  We're not that stupid anymore.  The problem is, it's not so much the _choice_ of metric, but the fact that _all_ metrics merely approximate reality with a few numbers.  
+You are probably nodding your head at these examples.  _Of course_ SLOC is a terrible measure performance!  We're not that stupid anymore.  The problem is, it's not so much the _choice_ of metric, but the fact that _all_ metrics merely approximate reality with a few numbers.  The map is _always_ simpler than the territory, therefore there can be no perfect metrics.
 
-The map is _always_ simpler than the territory, therefore there can be no perfect metrics.
+In the same way that [markets evolve to demand more features](), our behaviour evolves to incorporate new ideas.  The more popular an idea is, the more people will modify their behaviour as a result of it, and the more the world will change.   Will the idea still be useful as the world adapts?   
+
+### Hype Cycles
+
+One way this manifests itself in the world is though the [Hype Cycle](), as demonstrated here:
+
+tbd.   hype cycle.
+
+tbd. describe this with relation to M&T risk.
+
+FacebooK?
+
+tbd.  diagram showing new idea getting used more and more, reality changing as a result, idea is rendered less useful.
+
+
+## Humans and Machines
+
+The _qualities_ of [Map and Territory Risk]() change as we shift our focus from _people_ to _machines_.   Whereas people can be expected show scepticism to new (unlikely) information, our databases accept it unquestioningly.  _Forgetting_ is an everyday, usually benign part of our human [Internal Model](), but for software systems it is a production crisis involving 3am calls and backups.  
+
+For Humans, [Map and Territory Risk]() is exacerbated by [cognitive biases]():
+
+> tbd cognitive bias
+
+Here are some examples:
+
+It's tempting to think that [Map And Territory Risk](Map-And-Territory-Risk) is something that happens to someone else, and that you are going to be immune to it.   Example in the workplace, the release.
+
+
+
+
 
 ## The Onion Of Bullshit
 
@@ -54,8 +136,8 @@ The map is _always_ simpler than the territory, therefore there can be no perfec
 - The organisational structure was created along a "matrix", with "business function" on one axis and "functional area" on another.   Although we were only building the application for a single business function, it was expected to cater with all the requirements from the an entire "functional area".  This was bullshit too, because
 - The matrix structure was largely the legacy of a recent merger with another department.  As [Conway's Law]() predicts, our software therefore had to reflect this structure.  But this was bullshit because
 - The matrix structure didn't represent reality in any useful way.  It was designed to pacify the budget committee at the higher level, and try to demonstrate attributes such as _control_ and _governance_.  But this was bullshit too, because
-- The budget that was given to our department (Risk) was really based on how much fear the budget holders currently had of the market regulators.  But this was bullshit too, because
-- At a higher level, the executives had realised that Investment Banking wasn't one of the banks strategic strengths, and was working to close it all down anyway.
+- The budget that was given to our department was really based on how much fear the budget holders currently had of the market regulators.  But this was bullshit too, because
+- At a higher level, the executives had realised that our department wasn't one of the banks strategic strengths, and was working to close it all down anyway.
 
 When faced with so many mis-aligned objectives, it seemed completely hopeless to concentrate on the task at hand.  But then, my colleague Gavin was able to nihilistically complete the onion by adding a final layer:
 
@@ -86,48 +168,12 @@ So, publication in prestigious journals is a _metric_ which is open to abuse, as
 
 ## Picking Projects
 
-
-
-tbd
-
-## Head In The Sand
-
 Introduce Rapid Development example here?
-
 how to pick projects
-
 how to spot vanity projects
-
 how to spot where the Goal In Mind is hopelessly ill-thought-through.
 following the rules more important than getting things done.  
-
 Head in the sand
-
 Bullshit jobs
 
-## Biases
-
-It's tempting to think that [Map And Territory Risk](Map-And-Territory-Risk) is something that happens to someone else, and that you are going to be immune to it.  
-
-Unfortunately, science is here to prove you wrong - our brains are _filled_ with biases which 
-
-
-Why is this relevant?
-
-human biases.
-
-
-
-- showing progress
-- the release
-
-- less wrong
-
-Is this really a risk?? Why is this here?  To shore up the scheduling thing?
-
-Do biases go in here?  YES!!
-
-**Any time your internal model is inconsistent with the world outside.   Should we call this internal model risk?**
-
-Machine biases:   machines only store what we put in them, which is not necessarily reality either
 

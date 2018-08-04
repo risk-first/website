@@ -37,9 +37,10 @@ So, is there a synthesis of these two approaches that makes sense?
 
 ## Risk-First Estimating
 
+One approach
 
- 
- 
+Devops approach.
+
  
  
 

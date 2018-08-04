@@ -21,6 +21,8 @@ This is the one we've just discussed above: the feature that you (or your client
 
  - This might manifest itself as complete _absence_ of something you need, e.g "Where is the word count?"
  - It could be that the implementation isn't complete enough, e.g "why can't I add really long numbers in this calculator?"
+ 
+tbd.  we need to show a diagram of this - 
 
 ### Features Don't Work Properly
 
@@ -56,6 +58,8 @@ In the same way, _you_ have [Market Risk](Feature-Risk#market-risk) on the produ
 
 Sometimes, users _swear blind_ that they need some feature or other, but it runs at odds with the design of the system, and plain _doesn't make sense_.   Often, the development team can spot this kind of conceptual failure as soon as it enters the [Backlog](Prioritisation). Usually, it's in coding that this becomes apparent.  
 
+tbd: feature phones.
+
 Sometimes, it can go for a lot longer.  I once worked on some software that was built as a score-board within a chat application.  However, after we'd added much-asked-for commenting and reply features to our score-board, we realised we'd implemented a chat application _within a chat application_, and had wasted our time enormously.  
 
 Which leads to Greenspun's 10th Rule:
@@ -84,6 +88,8 @@ The point is:  [Requirements captured](Requirements-Capture) _today_ might not m
 
 [Feature Drift Risk](Feature-Risk#feature-drift-risk) is _not the same thing_ as **Requirements Drift**, which is the tendency projects have to expand in scope as they go along.  There are lots of reasons they do that, a key one being the [Hidden Risks](Glossary#hidden-risk) uncovered on the project as it progresses.
 
+tbd.  evolution from simple needs to complex ones.
+
 ### Fashion
 
 Fashion plays a big part in IT, as this [infographic on website design shows](https://designers.hubspot.com/blog/the-history-of-web-design-infographic).  True, websites have got easier to use as time has gone by, and users now expect this.  Also, bandwidth is greater now, which means we can afford more media and code on the client side.  However, _fashion_ has a part to play in this.  
@@ -100,6 +106,30 @@ Consider [Feature Risk](Feature-Risk) from both the down-side and the up-side:
  - What are we missing?
  - How can we be _even better_?
 
-Hopefully, this has given you some ideas about what [Feature Risk](Feature-Risk) involves.   Hopefully, you might be able to identify a few more specific varieties.  But, it's time to move on and look in more detail at [Complexity Risk](Complexity-Risk) and how it affects what we build.
+Hopefully, this has given you some ideas about what [Feature Risk](Feature-Risk) involves.   Hopefully, you might be able to identify a few more specific varieties.  But, it's time to move on and look in more detail at [Complexity Risk](Complexity-Risk) and how it affects what we build. 
+
+### Analysis
+
+At this point, it would be easy to stop and say, look, here are a bunch of [Feature Risk]() issues that you could face.  But, it turns out that we're going to be relying heavily on [Feature Risk]() as we go on in order to build our understanding of other risks, so it's probably worth spending a bit of time up front to classify what we've found.  In the later section, [Staging and Classifying](), we're going to go into this in much more detail over the whole menagerie, but let's introduce it here.
+
+The [Feature Risks]() identified here basically exist in a 3-dimensional space:
+ - We've looked at the dimension of _the features we're supplying_, and whether this matches _the features the a user needs_.   This is the **Feature** dimension.
+ 
+tbd.  3 diagrams: perfect fit, implementation risk, conceptual integrity risk.
+ 
+ - We've looked at the market of all possible users,  and considered which of those will find our product suitable.  This is the **Market** dimension.
+ 
+tbd: show 5 users, each with slightly different requirements, how they intersect with the product.  (market risk, feature access risk)
+
+ - We've looked at time, and how this can change both the market and the features.  This is the **Change** dimension.
+ 
+ tbd.  regression risk and feature drift risk.
+ 
+
+Somewhere between "what the customer wants" and "what you give them" is a dialog.  Communication Risk.
+ 
+ 
+ 
+ 
  
  
