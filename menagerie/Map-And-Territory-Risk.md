@@ -46,8 +46,8 @@ Conversely, we could argue that the SatNav and the [Internal Model]() had bugs i
         <li>Learning things that aren’t useful. </li>
         <li>Knowing how a car works, but actually needing to know how to drive. </li>
         <li>Knowing how to program in one language, when another would be more appropriate. </li>
-        </li>Sat Nav had the wrong route. </li>
-        </li>Not quite remembering a recipe properly.</li>
+        <li>Sat Nav had the wrong route. </li>
+        <li>Not quite remembering a recipe properly.</li>
       </ul>
     </td>
   </tr>
@@ -57,9 +57,9 @@ Conversely, we could argue that the SatNav and the [Internal Model]() had bugs i
     <td>
       <ul>
         <li>Knowing outdated tools. </li>
-        </li>Writing last year’s date on the cheque. </li>
-        </li>The bank sending letters to your old address. </li>
-        </li>Forgetting things</li>
+        <li>Writing last year’s date on the cheque. </li>
+        <li>The bank sending letters to your old address. </li>
+        <li>Forgetting things</li>
       </ul>
     </td>
   </tr>
@@ -69,11 +69,11 @@ Conversely, we could argue that the SatNav and the [Internal Model]() had bugs i
     <td>
       <ul>
         <li>Memes. </li>
-        </li>Demand for courses. </li>
-        </li>Metrics.</li>
-        </li>Echo-chambers. </li>
-        </li>Shared values which exclude certain people. </li>
-        </li>Ideas going “out of fashion”.</li>
+        <li>Demand for courses. </li>
+        <li>Metrics.</li>
+        <li>Echo-chambers. </li>
+        <li>Shared values which exclude certain people. </li>
+        <li>Ideas going “out of fashion”.</li>
       </ul>
     </td>
   </tr>
