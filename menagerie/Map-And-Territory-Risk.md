@@ -1,6 +1,6 @@
 ![Under Construction](images/state/uc.png)
 
-As we discussed in the section on [Abstraction Risk](Communication-Risk), our understanding of the world is entirely informed by the names we give things and the abstractions we create.  In fact, the whole **Risk-First** endeavour is about _identifying patterns_ within software development and calling them out.  Our [Internal Models]() are a model of the world based on these patterns, and their relationships.
+As we discussed in the section on [Abstraction](), our understanding of the world is entirely informed by the names we give things and the abstractions we create.  (In the same way, **Risk-First** is about _identifying patterns_ within software development and calling them out.)  Our [Internal Models]() are a model of the world based on these patterns, and their relationships.
 
 So there is a translation going on here: observations about the arrangement of _atoms_ in the world get turned into patterns of _information_ (measured in bits and bytes).  And, as we saw in the section on [Communication Risk](), any time there is translation going on, we face :  
 
@@ -9,9 +9,11 @@ So there is a translation going on here: observations about the arrangement of _
  
 tbd. diagram showing internal model at the top (a world of information), communication going on, world of atoms at the bottom. 
 
-[Map And Territory Risk]() is the risk we face because we base our behaviour on our [Internal Models]() rather than reality itself.  It comes from the expression "Confusing the Map for the Territory".  
+[Map And Territory Risk]() is the risk we face because we base our behaviour on our [Internal Models]() rather than reality itself.  It comes from the expression "Confusing the Map for the Territory", attributed to Alfred Korzybski:
 
-tbd.  quote this.
+> "Polish-American scientist and philosopher Alfred Korzybski remarked that "the map is not the territory" and that "the word is not the thing", encapsulating his view that an abstraction derived from something, or a reaction to it, is not the thing itself. Korzybski held that many people _do_ confuse maps with territories, that is, confuse models of reality with reality itself." - [Map-Territory Relation, _Wikipedia_](https://en.wikipedia.org/wiki/Map–territory_relation)
+
+![Map And Territory Risk](images/generated/map-and-territory-risk.png)
 
 In this section, we are going to look at some ways in which this risk manifests itself, starting simple and getting more complex.   We will look at:
 - **Fitness**, and the issues we face when our [Internal MOdels]() don't contain the _right_ pieces of information.
