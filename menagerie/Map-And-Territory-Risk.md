@@ -19,8 +19,8 @@ So there is a translation going on here: observations about the arrangement of _
 In the picture shown here, from the Telegraph newspaper, the driver _trusted_ the SatNav to such an extent that he didn't pay attention to the road-signs around him, and ended up getting stuck.  This wasn't borne of stupidity, but experience:  SatNavs are pretty reliable. _So many times_ the SatNav had been right, that the driver stopped _questioning its fallibility_.  
 
 So, there are two [Map and Territory Risks]() here:
- - The [Internal Model]() of the SatNav contained information that was wrong:  the track had been marked up as a road, rather than a path.  
- - The [Internal Model]() of the driver was wrong:   his abstraction of "the SatNav is always right" turned out to be only _mostly_ accurate.  
+ - The [Internal Model]() of the _SatNav_ contained information that was wrong:  the track had been marked up as a road, rather than a path.  
+ - The [Internal Model]() of the _driver_ was wrong:   his abstraction of "the SatNav is always right" turned out to be only _mostly_ accurate.  
 
 ## Internal Models as Dependencies, Features
 
