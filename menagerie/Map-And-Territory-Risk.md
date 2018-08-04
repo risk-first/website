@@ -2,10 +2,7 @@
 
 As we discussed in the section on [Abstraction](), our understanding of the world is entirely informed by the names we give things and the abstractions we create.  (In the same way, **Risk-First** is about _identifying patterns_ within software development and calling them out.)  Our [Internal Models]() are a model of the world based on these patterns, and their relationships.
 
-So there is a translation going on here: observations about the arrangement of _atoms_ in the world get turned into patterns of _information_ (measured in bits and bytes).  And, as we saw in the section on [Communication Risk](), any time there is translation going on, we face :  
-
- - The whole process of abstraction is _fitting a pattern to a situation_.  But our pattern may not be the _right_ one, and it may be an _oversimplification_.  I.e. choice of pattern has the usual [Feature Risks]().
- - Sometimes, we are not in charge of all the facts we need to make a decision. 
+So there is a translation going on here: observations about the arrangement of _atoms_ in the world get turned into patterns of _information_ (measured in bits and bytes).  
 
 ![Maps and Territories, and Communication happening between them](images/kite9/mapter-bits-atoms.png) 
 
@@ -16,16 +13,15 @@ So there is a translation going on here: observations about the arrangement of _
 ![Map And Territory Risk](images/generated/map-and-territory-risk.png)
 
 In this section, we are going to look at some ways in which this risk manifests itself, starting simple and getting more complex.   We will look at:
-- **Fitness**, and the issues we face when our [Internal MOdels]() don't contain the _right_ pieces of information.
+- **Fitness**, and the issues we face when our [Internal Models]() don't contain the _right_ abstractions.
 - **Audience**: risks associated with _shared understanding_
 - **Evolution**
-tbd.
 
 ## Internal Model Fitness
 
 ![Sat Nav Blunder Sends Asda Van Crashing Narrow Footpath - Telegraph Newspaper](images/sat_nav.png)
 
-In the picture shown here, the driver _trusted_ the SatNav to such an extent that he didn't pay attention to the road-signs around him, and ended up getting stuck.  This wasn't borne of stupidity, but experience:  SatNavs are pretty reliable. _So many times_ the SatNav had been right, that the driver stopped _questioning its fallibility_.  
+In the picture shown here, from the Telegraph newspaper, the driver _trusted_ the SatNav to such an extent that he didn't pay attention to the road-signs around him, and ended up getting stuck.  This wasn't borne of stupidity, but experience:  SatNavs are pretty reliable. _So many times_ the SatNav had been right, that the driver stopped _questioning its fallibility_.  
 
 So, there are two [Map and Territory Risks]() here:
  - The [Internal Model]() of the SatNav contained information that was wrong:  the track had been marked up as a road, rather than a path.  
@@ -35,9 +31,53 @@ What are the risks at play here?  We've already looked in detail at the [Depende
 
 Conversely, we could argue that the SatNav and the [Internal Model]() had bugs in them:  i.e. the same [Feature Implementation Risk]() we saw in the [Feature Risk]() section.  If a SatNav has too much of this, you'd end up not trusting it, and getting a new one.  With your [Internal Model](), you are slightly stuck in that you can't go elsewhere, but you may learn to _trust certain bits of knowledge less_, as this driver did.
 
-It turns out, all of the risks we met in the [Feature Risk]() section are applicable to [Map and Territory Risk]() too.  Let's look at some examples:
-
-tbd.  insert table here.
+<table>
+  <tr>
+    <th>DIMENSION</th>
+    <th>Feature Risk</th>
+    <th>M&amp;T Examples</th>
+  </tr>
+  <tr>
+    <td>FITNESS</td>
+    <td>Conceptual Integrity Risk Implementation Risk</td>
+    <td>
+      <ul>
+        <li>A filing cabinet containing too much junk. </li>
+        <li>Learning things that aren’t useful. </li>
+        <li>Knowing how a car works, but actually needing to know how to drive. </li>
+        <li>Knowing how to program in one language, when another would be more appropriate. </li>
+        </li>Sat Nav had the wrong route. </li>
+        </li>Not quite remembering a recipe properly.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>EVOLUTION</td>
+    <td>Feature Drift Risk Regression Risk</td>
+    <td>
+      <ul>
+        <li>Knowing outdated tools. </li>
+        </li>Writing last year’s date on the cheque. </li>
+        </li>The bank sending letters to your old address. </li>
+        </li>Forgetting things</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>AUDIENCE</td>
+    <td>Feature Access Risk Market Risk</td>
+    <td>
+      <ul>
+        <li>Memes. </li>
+        </li>Demand for courses. </li>
+        </li>Metrics.</li>
+        </li>Echo-chambers. </li>
+        </li>Shared values which exclude certain people. </li>
+        </li>Ideas going “out of fashion”.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 Let's summarize what's going on here.  For any given nugget of information in our internal model, we are evaluating it on three axes:
 
