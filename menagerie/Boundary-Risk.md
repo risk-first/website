@@ -343,5 +343,5 @@ tbd diagram.
 
 Although our discipline is a young one, we should probably expect to see "Software Archaeology" in the same way as we see it for biological organisms.  Already we can see the dead-ends in the software evolutionary tree:  COBOL and BASIC languages, CASE systems.  Languages like FORTH live on in PostScript, SQL is still embedded in everything
 
-
+Boundary risk is _inside_ and _outside_
 

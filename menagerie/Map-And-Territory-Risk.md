@@ -12,7 +12,7 @@ So there is a translation going on here: observations about the arrangement of _
 
 ![Map And Territory Risk](images/generated/map-and-territory-risk.png)
 
-In this section, we're going to make a case for analysing [Map and Territory Risk]() along the same axes we introduced for [Feature Risk](), that is **Fitness**, **Audience** and **Evolution**.  After that, we are going to widen the scope by looking at [Map and Territory Risk]() within the context of _machines_, _people_, _hierarchies_ and _markets_.
+In this section, we're going to make a case for analysing [Map and Territory Risk]() along the same axes we introduced for [Feature Risk](), that is **Fitness**, **Audience** and **Evolution**.  After that, we are going to widen the scope by looking at [Map and Territory Risk]() within the context of **machines**, **people**, **hierarchies** and **markets**.
 
 ## Fitness
 
@@ -129,8 +129,8 @@ The five phases (and the "Hype" itself) are shown in the chart below, with the t
 ![Hype Cycle, along with Map & Territory Risk](images/hype-cycle.png)
 
 Also in this diagram we are showing where the hype originates:
- - The **saturation** of the idea within the audience.
- - The **amount known** about the idea by the audience (the [Learning Curve](), if you will).
+ - The **saturation** of the idea within the audience (a dotted line).
+ - The **amount known** about the idea by the audience (a [Learning Curve](), if you will, a dashed line).
  
 Both of these are modelled with [Cumulative Distribution](https://en.wikipedia.org/wiki/Cumulative_distribution_function#Use_in_statistical_analysis) curves.  From these two things, we can figure out where our maximum [Map and Territory Risk]() lies:  it's the point where awareness of an idea is furthest from the understanding of it.  This acts as a "brake" on the **hype** around the idea, corresponding to the "Trough of Disillusionment".  
 
@@ -148,18 +148,9 @@ The section on [Communication Risk]() introduced the following model for ideas:
 
 But what happens next?   As we saw in [Boundary Risk](), the **Peter Principle** applies, people will use dependencies up to the point when they start breaking down.  
 
-In the case of metrics, this is where they start being used for more than just indicators, but as measures of performance or targets:
- - If a team is _told_ to do lots of releases, they will perform lots of releases *at the expense of something else*.
- - If team members are promoted according to SLOC, they will make sure their code takes up as many lines as possible.
- - In the UK, ambulances were asked to wait before admitting patients to Emergency wards, in order that hospitals could [meet their targets](https://en.wikipedia.org/wiki/NHS_targets).
-  
-Some of this seems obvious:  _Of course_ SLOC is a terrible measure performance!  We're not that stupid anymore.  The problem is, it's not so much the _choice_ of metric, but the fact that _all_ metrics merely approximate reality with a few numbers.  The map is _always_ simpler than the territory, therefore there can be no perfect metrics.
+### Example: Metrics
 
-In the same way that [markets evolve to demand more features](), our behaviour evolves to incorporate new ideas.  The more popular an idea is, the more people will modify their behaviour as a result of it, and the more the world will change.   Will the idea still be useful as the world adapts?   
-
-### Example: Metrics as Maps 
-
-Good abstractions are shared (a la _memes_, above).  They start off with one inventor, and are shared, eventually becoming institutionalised in the same way [Software Dependencies]() are.   Let's dive into a specific example now: someone finds a useful new metric that helps in evaluating performance. 
+Let's dive into a specific example now: someone finds a useful new metric that helps in evaluating performance. 
 
 It might be:
 
@@ -182,6 +173,21 @@ But _correlation_ doesn't imply _causation_.  The _cause_ might be different:
  - response time and revenue might both be down to clever team planning.
  
 Metrics are _seductive_ because they simplify reality and are easily communicated.  But they _inherently_ contain [Map and Territory Risk](): By relying _only_ on the metrics, you're not really _seeing_ the reality.  The devil is in the detail.
+
+### Reality Evolves
+
+In the case of metrics, this is where they start being used for more than just indicators, but as measures of performance or targets:
+ - If a team is _told_ to do lots of releases, they will perform lots of releases *at the expense of something else*.
+ - If team members are promoted according to SLOC, they will make sure their code takes up as many lines as possible.
+ - In the UK, ambulances were asked to wait before admitting patients to Emergency wards, in order that hospitals could [meet their targets](https://en.wikipedia.org/wiki/NHS_targets).
+  
+Some of this seems obvious:  _Of course_ SLOC is a terrible measure performance!  We're not that stupid anymore.  The problem is, it's not so much the _choice_ of metric, but the fact that _all_ metrics merely approximate reality with a few numbers.  The map is _always_ simpler than the territory, therefore there can be no perfect metrics.
+
+In the same way that [markets evolve to demand more features](), our behaviour evolves to incorporate new ideas.  The more popular an idea is, the more people will modify their behaviour as a result of it, and the more the world will change.   Will the idea still be useful as the world adapts?   Although the [Hype Cycle]() model doesn't cover it, ideas and products all eventually have their day and decline in usefulness.
+
+There are plenty of ideas which _seem a really good idea at the time_ but then end up being terrible.  It's only as we _learn about the products_ and realize the hidden [Map and Territory Risk]() that we stop using them.  While SLOC is a minor offender, [CFCs]() or [Leaded Petrol]() are more significant examples.  The following Hype-Cycle graph shows an initially promising idea that turns out to be terrible, and there is a "Period of Innoculation" where the population realise their mistake.  There is "negative hype" as they work to phase out the offending idea:
+
+![Hype Cycle For Something that turns out to be a _bad_ idea](images/hype-cycle3.png)
 
 ## Humans and Machines
 
