@@ -51,6 +51,9 @@ Boehm..  OWASP..
 How much do compilers do for you?
 
 
+- draw a diagram of this system.  mark on all the different risks using numbers.  mention specifically that since this is a diagram, it is a "map".
+
+
 
 
 1.  Classifying Risks
