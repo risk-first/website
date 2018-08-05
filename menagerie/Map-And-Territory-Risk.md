@@ -185,7 +185,11 @@ Some of this seems obvious:  _Of course_ SLOC is a terrible measure performance!
 
 In the same way that [markets evolve to demand more features](), our behaviour evolves to incorporate new ideas.  The more popular an idea is, the more people will modify their behaviour as a result of it, and the more the world will change.   Will the idea still be useful as the world adapts?   Although the [Hype Cycle]() model doesn't cover it, ideas and products all eventually have their day and decline in usefulness.
 
-There are plenty of ideas which _seem a really good idea at the time_ but then end up being terrible.  It's only as we _learn about the products_ and realize the hidden [Map and Territory Risk]() that we stop using them.  While SLOC is a minor offender, [CFCs]() or [Leaded Petrol]() are more significant examples.  The following Hype-Cycle graph shows an initially promising idea that turns out to be terrible, and there is a "Period of Innoculation" where the population realise their mistake.  There is "negative hype" as they work to phase out the offending idea:
+### Bad Ideas
+
+There are plenty of ideas which _seem a really good idea at the time_ but then end up being terrible.  It's only as we _learn about the products_ and realize the hidden [Map and Territory Risk]() that we stop using them.  While SLOC is a minor offender, [CFCs]() or [Leaded Petrol]() are more significant examples.  
+
+The following Hype-Cycle graph shows an initially promising idea that turns out to be terrible, and there is a "Period of Innoculation" where the population realise their mistake.  There is "negative hype" as they work to phase out the offending idea:
 
 ![Hype Cycle For Something that turns out to be a _bad_ idea](images/hype-cycle3.png)
 
@@ -193,13 +197,15 @@ There are plenty of ideas which _seem a really good idea at the time_ but then e
 
 In the example of the SatNav, we saw how the _quality_ of [Map and Territory Risk]() is different for _people_ and _machines_.   Whereas people _should_ be expected show skepticism to new (unlikely) information, our databases accept it unquestioningly.  _Forgetting_ is an everyday, usually benign part of our human [Internal Model](), but for software systems it is a production crisis involving 3am calls and backups.  
 
-For Humans, [Map and Territory Risk]() is exacerbated by [cognitive biases]():
+For Humans, [Map and Territory Risk]() is exacerbated by [cognitive biases](https://en.wikipedia.org/wiki/List_of_cognitive_biases):
 
-> tbd cognitive bias
+> "Cognitive biases are systematic patterns of deviation from norm or rationality in judgment, and are often studied in psychology and behavioral economics." - [Cognitive Bias, _Wikipedia_](https://en.wikipedia.org/wiki/List_of_cognitive_biases)
 
-Here are some examples:
+There are _lots_ of cognitive biases.  But let's just look at a couple that are relevant to [Map and Territory Risk]():
 
-It's tempting to think that [Map And Territory Risk](Map-And-Territory-Risk) is something that happens to someone else, and that you are going to be immune to it.   Example in the workplace, the release.
+- **Availability Heuristic**: People overestimate the importance of knowledge they have been exposed to.  Could this be relevant in the Volkswagen case?  Or could it be..
+- **The Ostrich Effect**:  Which is where dangerous information is ignored or avoided because of the emotions it will evoke.
+- **Bandwagon Effect**:  People like to believe things that other people believe.  Could this be a factor in the existence of the hype cycle?
 
 ## Hierarchical Organisations
 
