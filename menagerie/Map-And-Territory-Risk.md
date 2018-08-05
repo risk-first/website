@@ -203,7 +203,7 @@ For Humans, [Map and Territory Risk]() is exacerbated by [cognitive biases](http
 
 There are _lots_ of cognitive biases.  But let's just look at a couple that are relevant to [Map and Territory Risk]():
 
-- **Availability Heuristic**: People overestimate the importance of knowledge they have been exposed to.  Could this be relevant in the Volkswagen case?  Or could it be..
+- **Availability Heuristic**: People overestimate the importance of knowledge they have been exposed to. 
 - **The Ostrich Effect**:  Which is where dangerous information is ignored or avoided because of the emotions it will evoke.
 - **Bandwagon Effect**:  People like to believe things that other people believe.  Could this be a factor in the existence of the Hype Cycle?
 
@@ -218,7 +218,7 @@ There are _lots_ of cognitive biases.  But let's just look at a couple that are 
 This article identifies the following process:
 
 - **De-sensing**: VW Executives ignored _The Territory_ society around them (such as the green movement), ensuring their maps were out of date.  The top-down culture made it hard for reality to propagate back up the hierarchy.  
-- **Hubris/Absencing**:  They pursued their own metrics of _volume_ and _cost_.  That is, focusing on their own _Map_, which is _easier_ than checking the _Territory_.  (See [Hubris](Agency-Risk#hubris--ego) in the [Agency Risk]() section).
+- **Hubris/Absencing**:  They pursued their own metrics of _volume_ and _cost_, rather than seeking out others (a la the Availability Heuristic Bias).  That is, focusing on their own _Map_, which is _easier_ than checking the _Territory_.  (See [Hubris](Agency-Risk#hubris--ego) in the [Agency Risk]() section).
 - **Deception**:  Backed into a corner, engineers had no choice but to find "creative" ways to meet the metrics.
 - **Destruction**: Eventually, the truth comes out, to the detriment of the company, the environment and the shareholders.
 
