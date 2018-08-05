@@ -167,12 +167,12 @@ The five phases (and the "Hype" itself) are shown in the chart below, with the t
 ![Hype Cycle, along with Map & Territory Risk](images/hype-cycle.png)
 
 Also in this diagram we are showing where the hype originates:
- - The _saturation of the idea_ within the audience.
- - The _amount known about the idea_ by the audience.
+ - The **saturation** of the idea within the audience.
+ - The **amount known** about the idea by the audience (the [Learning Curve](), if you will).
  
-Both of these are modelled with [Cumulative Distribution](https://en.wikipedia.org/wiki/Cumulative_distribution_function#Use_in_statistical_analysis) curves.  From these two things, we can figure out where our maximum [Map and Territory Risk]() lies:  it's the point where knowledge of an idea is furthest from the understanding of it.  This acts as a "brake" on the popularity of the idea, corresponding to the "Trough of Disillusionment".  
+Both of these are modelled with [Cumulative Distribution](https://en.wikipedia.org/wiki/Cumulative_distribution_function#Use_in_statistical_analysis) curves.  From these two things, we can figure out where our maximum [Map and Territory Risk]() lies:  it's the point where awareness of an idea is furthest from the understanding of it.  This acts as a "brake" on the **hype** around the idea, corresponding to the "Trough of Disillusionment".  
 
-Where the _saturation_ and the _knowledge_ grow together, [Map and Territory Risk]() peaks less fiercely, and we don't see the corresponding "Trough of Disillusionment" at all, as shown in this chart:
+Where the **saturation** and **knowledge** grow together, [Map and Territory Risk]() peaks less fiercely, and we don't see the corresponding "Trough of Disillusionment" at all, as shown in this chart:
 
 ![Hype Cycle 2: Slower growth of Map and Territory Risk means no "Trough of Disillusionment"](images/hype-cycle2.png)
 
