@@ -174,7 +174,7 @@ From these two things, we can figure out where our maximum [Map and Territory Ri
 
 Where the _idea_ and the _knowledge_ grow together, we don't see a "Trough of Disillusionment" at all, as shown in this chart:
 
-![Hype Cycle 2: Slower growth means no "Trough of Disillusionment"](images/hype-cycle.png)
+![Hype Cycle 2: Slower growth means no "Trough of Disillusionment"](images/hype-cycle2.png)
 
 
 
