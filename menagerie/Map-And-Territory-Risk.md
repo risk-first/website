@@ -107,7 +107,8 @@ We already know a lot about [Internal Models]() and audience, as these have been
  - We know from looking at [Communication Risk]() that communication allows us to _share_ information between [Internal Models](). 
  - We know from [Coordination Risk]() the difficulties inherent in aligning [Internal Models]() so that they cooperate.
  - Job markets show us that there is demand for people with certain _skills_.  This demonstrates to us that [Market Risk]() is as applicable to [Internal Models]() containing certain information as it is to products containing [Features](Feature-Risk).  This was the focus of the [Ecosystem]() discussion in [Boundary Risk](Boundary-Risk).
- - And, we're all familiar with _memes_:
+
+... And, we're all familiar with _memes_:
 
 > "A meme acts as a unit for carrying cultural ideas, symbols, or practices, that can be transmitted from one mind to another through writing, speech, gestures, rituals, or other imitable phenomena with a mimicked theme." - [Meme, _Wikipedia_](https://en.wikipedia.org/wiki/Meme)
 
