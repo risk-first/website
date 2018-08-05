@@ -95,7 +95,7 @@ Lets do this again and see how each type of [Feature Risk]() can manifest in the
   </tr>
 </table>
 
-Any given information in our [internal model]() has these three dimensions:
+Information in our [internal model]() has at least these three dimensions:
 
 - **Fitness**: as discussed above with the SatNav example, this is how closely the information matches reality, and how _useful that is to us_ (models that contain too much detail are as bad as models with too little).
 - **Audience**: is all about how a piece of information is _shared_ between many [Internal Models](), and it's this we are going to address further now.
