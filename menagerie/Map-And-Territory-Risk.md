@@ -113,7 +113,7 @@ Therefore, we should be able to track the rise-and-fall of _ideas_ much as we ca
 
 ![Relative popularity of "Machine Learning" and "Big Data" as search terms on Google Trends, 2011-2018](images/google-trends.png)
 
-### Metrics as Maps 
+### Example: Metrics as Maps 
 
 Good abstractions are shared (a la _memes_, above).  They start off with one inventor, and are shared, eventually becoming institutionalised in the same way [Software Dependencies]() are.   Let's dive into a specific example now: someone finds a useful new metric that helps in evaluating performance. 
 
