@@ -234,7 +234,7 @@ It feels like there's no way back from that.  All of life might well be a big [M
  - Therefore, it seems like the more layers you have, the less likely it is that your objectives become inconsistent between the lower and higher levels.
  - On a new project, it seems like a good idea to model this stuff:  does the objective of the work you're about to undertake "align" with the objectives at a higher level?  
  
-Trying to spot [Map and Territory Risk]() ahead-of-time in this manner seems like a useful way of trying to avoid [Vanity Projects](Agency-Risk#pet-project), and, if you get it right, allows you to see which [Goals]() in the organisation are fragile and likely to change.  However, usually, if you are working in a team, you have limited agency to decide which projects you feel are valuable.  
+Trying to spot [Map and Territory Risk]() ahead-of-time in this manner seems like a useful way of trying to avoid [Vanity Projects](Agency-Risk#pet-project), and, if you are good at it, allows you to see which [Goals]() in the organisation are fragile and likely to change.  However, usually, if you are working in a team, you have limited agency to decide which projects you feel are valuable.  
 
 This comes down to a personal decision: do you want to spend time working on projects that you know are going in the bin?  Some developers have the attitude that, so long as they get paid, it doesn't matter.  Others are also in it for the satisfaction of the work itself, so this ends up being a personal call.  (This theme will be developed further in [Staging and Classifying](Staging-and-Classifying).)
 
