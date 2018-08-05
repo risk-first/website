@@ -138,8 +138,6 @@ Where the **saturation** and **knowledge** grow together, there is no spike in [
 
 ![Hype Cycle 2: Slower growth of Map and Territory Risk means no "Trough of Disillusionment"](images/hype-cycle2.png)
 
-(This model is available in **Numbers** form [here](https://github.com/risk-first/website/blob/master/RiskMatrix.numbers).) 
-
 ## Evolution
 
 The section on [Communication Risk]() introduced the following model for ideas:
@@ -274,5 +272,6 @@ This is a _small example_ from a much larger, closely argued book, and it's wort
 
 As usual, this section forms a grab-bag of examples in a complex topic.  But it's time to move on as there is one last stop we have to make on the [Risk Landscape](), and that is to look at [Operational Risk]().  
 
+(NB: The Hype Cycle model is available in **Numbers** form [here](https://github.com/risk-first/website/blob/master/RiskMatrix.numbers).) 
 
 
