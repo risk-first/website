@@ -226,7 +226,7 @@ A similar (but less catastrophic) personal story from a bank I worked at, where 
 
 When faced with so many mis-aligned objectives, it seemed completely hopeless to concentrate on the task at hand.  But then, a colleague was able to nihilistically add one final layer to this onion by saying:
 
-8. It's all about chasing money, which is bullshit, because life is bullshit.
+8. "It's all about chasing money, which is bullshit, because life is bullshit."
 
 ### Picking Fights
 
@@ -260,7 +260,7 @@ As the book points out, while everyone _persists_ in using an inadequate abstrac
 
 This is a _small example_ from a much larger, closely argued book, and it's worth taking the time to read a couple of the chapters on this interesting topic.
 
-But there is one last stop we have to make on the [Risk Landscape](), and that is to look at [Operational Risk]().  
+As usual, this section forms a grab-bag of examples in a complex topic.  But it's time to move on as there is one last stop we have to make on the [Risk Landscape](), and that is to look at [Operational Risk]().  
 
 
 
