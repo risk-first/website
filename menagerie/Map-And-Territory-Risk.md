@@ -240,9 +240,11 @@ This comes down to a personal decision: do you want to spend time working on pro
 
 ## Inadequate Equilibria
 
-So far, we've considered what happens to individuals, teams and organisations when told to optimise around a particular objective.  Sometime
+So far, we've considered what happens to individuals, teams and organisations when told to optimise around a particular objective.  In [Coordination Risk]() we looked at how [Communication]() was critical for Coordination to happen.  And, as we've already discussed, [Abstraction]() is a key part of communication.
 
-**Inadequate Equilibria** is a book by Eleizer Yudkovsky, who looks at how **Map and Territory Risk** can break not just departments, but entire societal systems.  Here is one example involving _academics_ and _grantmakers_ in academia:
+The languages we adopt or create are _sets of useful abstractions_ that allow us to communicate.  But what happens when this goes wrong?
+
+[Inadequate Equilibria](https://equilibriabook.com) by Eleizer Yudkovsky, looks at how perverse incentive mechanisms break not just departments, but entire societal systems.  He highlights one example involving _academics_ and _grantmakers_ in academia:
 
  - It's not very apparent which scientists are better than which other scientists.
  - One proxy is what they've published (scientific papers) and where they've published (journals).
@@ -251,9 +253,9 @@ So far, we've considered what happens to individuals, teams and organisations wh
  - Therefore, immense power rests in the hands of the journals, since they can control the money-proxy.
  - Therefore, journals are able to charge large amounts of money to universities for subscriptions.
  
-So, publication in prestigious journals is a _metric_ which is open to abuse, as we saw earlier. 
+> "**CECIE**: Now consider the system of scientific journals that we were originally talking about. Some journals are prestigious. So university hiring committees pay the most attention to publications in that journal. So people with the best, most interesting-looking publications try to send them to that journal. So if a university hiring committee paid an equal amount of attention to publications in lower-prestige journals, they’d end up granting tenure to less prestigious people. Thus, the whole system is a stable equilibrium that nobody can unilaterally defy except at cost to themselves." - [Inadequate Equilibria, _Eleizer Yudkovsky_](https://equilibriabook.com/molochs-toolbox/)
 
-- Everyone can see this system is broken, but no-one can change it because they are all trapped within it. 
-- The onion is a better situation - at least the people at the top can do something.  
+As the book points out, while everyone _persists_ in using an inadequate measure, the system is broken.  However, [Coordination]() would be required for everyone to _stop_ doing it this way, which is hard work.  At least within the hiearchy, Maps can get fixed.
+
 
 
