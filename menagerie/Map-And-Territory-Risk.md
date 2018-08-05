@@ -28,13 +28,15 @@ What are the risks at play here?  We've already looked in detail at the [Depende
 
 We could argue that the SatNav and the Driver's [Internal Model]() had bugs in them.  That is, they both suffer the [Feature Implementation Risk]() we saw in the [Feature Risk]() section.  If a SatNav has too much of this, you'd end up not trusting it, and getting a new one.  With your _personal_ [Internal Model](), you can't buy a new one, but you may learn to _trust certain abstractions less_, as this driver did.
 
-In the [Feature Risk]() section, we observed that [Feature Risk]() can be broken down on three axes:  **Fitness**, **Evolution** and **Audience**.  Lets apply this observation again and see how each type of [Feature Risk]() can manifest in the [Internal Model]():
+In the [Feature Risk]() section, we broke down [Feature Risk]() on three axes:  **Fitness**, **Evolution** and **Audience**.  
+
+Lets do this again and see how each type of [Feature Risk]() can manifest in the [Internal Model]():
 
 <table>
   <tr>
     <th>Dimension</th>
     <th>Feature Risk</th>
-    <th>M&amp;T Examples</th>
+    <th>Map and Territory Examples</th>
   </tr>
   <tr>
     <td>Fitness</td>
