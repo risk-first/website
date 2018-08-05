@@ -253,9 +253,13 @@ The languages we adopt or create are _sets of useful abstractions_ that allow us
  - Therefore, immense power rests in the hands of the journals, since they can control the money-proxy.
  - Therefore, journals are able to charge large amounts of money to universities for subscriptions.
  
-> "**CECIE**: Now consider the system of scientific journals that we were originally talking about. Some journals are prestigious. So university hiring committees pay the most attention to publications in that journal. So people with the best, most interesting-looking publications try to send them to that journal. So if a university hiring committee paid an equal amount of attention to publications in lower-prestige journals, they’d end up granting tenure to less prestigious people. Thus, the whole system is a stable equilibrium that nobody can unilaterally defy except at cost to themselves." - [Inadequate Equilibria, _Eleizer Yudkovsky_](https://equilibriabook.com/molochs-toolbox/)
+> "Now consider the system of scientific journals... Some journals are prestigious. So university hiring committees pay the most attention to publications in that journal. So people with the best, most interesting-looking publications try to send them to that journal. So if a university hiring committee paid an equal amount of attention to publications in lower-prestige journals, they’d end up granting tenure to less prestigious people. Thus, the whole system is a stable equilibrium that nobody can unilaterally defy except at cost to themselves." - [Inadequate Equilibria, _Eleizer Yudkovsky_](https://equilibriabook.com/molochs-toolbox/)
 
-As the book points out, while everyone _persists_ in using an inadequate measure, the system is broken.  However, [Coordination]() would be required for everyone to _stop_ doing it this way, which is hard work.  At least within the hiearchy, Maps can get fixed.
+As the book points out, while everyone _persists_ in using an inadequate abstraction, the system is broken.  However, [Coordination]() would be required for everyone to _stop_ doing it this way, which is hard work.  (At least within a hiearchy, Maps can get fixed.)
+
+This is a _small example_ from a much larger, closely argued book, and it's worth taking the time to read a couple of the chapters on this interesting topic.
+
+But there is one last stop we have to make on the [Risk Landscape](), and that is to look at [Operational Risk]().  
 
 
 
