@@ -162,7 +162,7 @@ Most ideas (and most products) have a slow, hard climb to wide-scale adoption.  
 
 > "The hype cycle is a branded graphical presentation developed and used by the American research, advisory and information technology firm Gartner, for representing the maturity, adoption and social application of specific technologies. The hype cycle provides a graphical and conceptual presentation of the maturity of emerging technologies through five phases." - [Hype Cycle, _Wikipedia_](https://en.wikipedia.org/wiki/Hype_cycle)
 
-The five phases (and the "Hype" itself) are shown in the chart below, with the thick black line being "Hype".
+The five phases (and the "Hype" itself) are shown in the chart below, with the thick black line being "Hype":
 
 ![Hype Cycle, along with Map & Territory Risk](images/hype-cycle.png)
 
@@ -172,7 +172,7 @@ Also in this diagram we are showing where the hype originates:
  
 Both of these are modelled with [Cumulative Distribution](https://en.wikipedia.org/wiki/Cumulative_distribution_function#Use_in_statistical_analysis) curves.  From these two things, we can figure out where our maximum [Map and Territory Risk]() lies:  it's the point where awareness of an idea is furthest from the understanding of it.  This acts as a "brake" on the **hype** around the idea, corresponding to the "Trough of Disillusionment".  
 
-Where the **saturation** and **knowledge** grow together, [Map and Territory Risk]() peaks less fiercely, and we don't see the corresponding "Trough of Disillusionment" at all, as shown in this chart:
+Where the **saturation** and **knowledge** grow together, there is no spike in [Map and Territory Risk]() and we don't see the corresponding "Trough of Disillusionment" at all, as shown in this chart:
 
 ![Hype Cycle 2: Slower growth of Map and Territory Risk means no "Trough of Disillusionment"](images/hype-cycle2.png)
 
@@ -194,9 +194,9 @@ It's tempting to think that [Map And Territory Risk](Map-And-Territory-Risk) is 
 ## Example: Methodologies as Maps
 
 
-## Organisations, Hierarchies
+## Organisations and Hierarchies
 
-[Map And Territory Risk] "trickles down" through an organisation.  The higher levels have an outsize ability to pervert the incentives at lower levels because once an organisation begins to pursue a "bullshit objective", the whole company can align to this.  
+[Map And Territory Risk]() "trickles down" through an organisation.  The higher levels have an outsize ability to pervert the incentives at lower levels because once an organisation begins to pursue a "bullshit objective", the whole company can align to this.  
 
 [The Huffington Post](https://www.huffingtonpost.com/otto-scharmer/the-fish-rots-from-the-he_b_8208652.html) paints a brilliant picture of how Volkswagen managed to get caught faking their emissions tests.  As they point out:
 
@@ -204,19 +204,19 @@ It's tempting to think that [Map And Territory Risk](Map-And-Territory-Risk) is 
 
 This article identifies the following process:
 
-- **De-sensing**: VW Executives ignored _The Territory_ society around them (such as the green movement), ensuring their maps were out of date.  The top-down culture made it hard for reality to propagate back up the hierarchy.
-- **Hubris/Absencing**:  They pursued their own metrics of _volume_ and _cost_.  That is, focusing on their own _Map_, which is _easier_ than checking the _Territory_.
+- **De-sensing**: VW Executives ignored _The Territory_ society around them (such as the green movement), ensuring their maps were out of date.  The top-down culture made it hard for reality to propagate back up the hierarchy.  
+- **Hubris/Absencing**:  They pursued their own metrics of _volume_ and _cost_.  That is, focusing on their own _Map_, which is _easier_ than checking the _Territory_.  (See [Hubris](Agency-Risk#hubris--ego) in the [Agency Risk]() section).
 - **Deception**:  Backed into a corner, engineers had no choice but to find "creative" ways to meet the metrics.
 - **Destruction**: Eventually, the truth comes out, to the detriment of the company, the environment and the shareholders.
 
-As the article's title summarizes "The fish rots from the head down".
+As the article's title summarizes "A fish rots from the head down".
 
-### My Own Experience
+### Personal Example
 
 A similar (but less catastrophic) personal story from a bank I worked at, where the objectives end up being mis-aligned _within the company_: 
 
 1. My team had been tasked with building automated "smoke tests" of an application.  But this was bullshit:  We only needed to build these _at all_ because the application was so complex.  The reason it was so complex was...
-2 The application was being designed within a "Framework" constructed by the department.  However, the framework was only being used by this one application.  Building a "reuasable" framework which is only used by a single application is bullshit.  But, we had to do this because...
+2. The application was being designed within a "Framework" constructed by the department.  However, the framework was only being used by this one application.  Building a "reuasable" framework which is only used by a single application is bullshit.  But, we had to do this because...
 3. The organisational structure was created along a "matrix", with "business function" on one axis and "functional area" on another.   Although we were only building the application for a single business function, it was expected to cater with all the requirements from the an entire "functional area".  This was bullshit too, because...
 4. The matrix structure was largely the legacy of a recent merger with another department.  As [Conway's Law]() predicts, our software therefore had to reflect this structure.  But this was bullshit because...
 5. The matrix structure didn't represent reality in any useful way.  It was designed to pacify the budget committee at the higher level, and try to demonstrate attributes such as _control_ and _governance_.  But this was bullshit too, because...
