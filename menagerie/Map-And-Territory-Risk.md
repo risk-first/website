@@ -12,7 +12,9 @@ So there is a translation going on here: observations about the arrangement of _
 
 ![Map And Territory Risk](images/generated/map-and-territory-risk.png)
 
-## Internal Model Fitness
+In this section, we're going to make a case for analysing [Map and Territory Risk]() along the same axes we introduced for [Feature Risk](), that is **Fitness**, **Audience** and **Evolution**.  After that, we are going to widen the scope by looking at [Map and Territory Risk]() within the context of _machines_, _people_, _hierarchies_ and _markets_.
+
+## Fitness
 
 ![Sat Nav Blunder Sends Asda Van Crashing Narrow Footpath - Telegraph Newspaper](images/sat_nav.png)
 
@@ -58,23 +60,6 @@ Lets do this again and see how each type of [Feature Risk]() can manifest in the
     </td>
   </tr>
   <tr>
-    <td>Evolution</td>
-    <td>
-      <ul>
-        <li>Feature Drift Risk</li>
-        <li>Regression Risk</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>Knowing outdated tools. </li>
-        <li>Writing last year’s date on the cheque. </li>
-        <li>The bank sending letters to your old address. </li>
-        <li>Forgetting things</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
     <td>Audience</td>
     <td>
       <ul>
@@ -90,6 +75,23 @@ Lets do this again and see how each type of [Feature Risk]() can manifest in the
         <li>Echo-chambers. </li>
         <li>Shared values which exclude certain people. </li>
         <li>Ideas going “out of fashion”.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Evolution</td>
+    <td>
+      <ul>
+        <li>Feature Drift Risk</li>
+        <li>Regression Risk</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Knowing outdated tools. </li>
+        <li>Writing last year’s date on the cheque. </li>
+        <li>The bank sending letters to your old address. </li>
+        <li>Forgetting things</li>
       </ul>
     </td>
   </tr>
@@ -116,6 +118,45 @@ Therefore, we should be able to track the rise-and-fall of _ideas_ much as we ca
 
 ![Relative popularity of "Machine Learning" and "Big Data" as search terms on Google Trends, 2011-2018](images/google-trends.png)
 
+### Example: Hype Cycles
+
+Most ideas (and most products) have a slow, hard climb to wide-scale adoption.  But some ideas seem to disperse much more rapidly and are picked up quickly because they are exciting and promising, having greater "memetic potential" within society.  One way this evolution manifests itself in the world is though the [Hype Cycle](https://en.wikipedia.org/wiki/Hype_cycle):
+
+> "The hype cycle is a branded graphical presentation developed and used by the American research, advisory and information technology firm Gartner, for representing the maturity, adoption and social application of specific technologies. The hype cycle provides a graphical and conceptual presentation of the maturity of emerging technologies through five phases." - [Hype Cycle, _Wikipedia_](https://en.wikipedia.org/wiki/Hype_cycle)
+
+The five phases (and the "Hype" itself) are shown in the chart below, with the thick black line being "Hype":
+
+![Hype Cycle, along with Map & Territory Risk](images/hype-cycle.png)
+
+Also in this diagram we are showing where the hype originates:
+ - The **saturation** of the idea within the audience.
+ - The **amount known** about the idea by the audience (the [Learning Curve](), if you will).
+ 
+Both of these are modelled with [Cumulative Distribution](https://en.wikipedia.org/wiki/Cumulative_distribution_function#Use_in_statistical_analysis) curves.  From these two things, we can figure out where our maximum [Map and Territory Risk]() lies:  it's the point where awareness of an idea is furthest from the understanding of it.  This acts as a "brake" on the **hype** around the idea, corresponding to the "Trough of Disillusionment".  
+
+Where the **saturation** and **knowledge** grow together, there is no spike in [Map and Territory Risk]() and we don't see the corresponding "Trough of Disillusionment" at all, as shown in this chart:
+
+![Hype Cycle 2: Slower growth of Map and Territory Risk means no "Trough of Disillusionment"](images/hype-cycle2.png)
+
+(This model is available in **Numbers** form [here](https://github.com/risk-first/website/blob/master/RiskMatrix.numbers).) 
+
+## Evolution
+
+The section on [Communication Risk]() introduced the following model for ideas:
+
+![Spread of information between [Internal Models]()](images/generated/communication_marketing.png)
+
+But what happens next?   As we saw in [Boundary Risk](), the **Peter Principle** applies, people will use dependencies up to the point when they start breaking down.  
+
+In the case of metrics, this is where they start being used for more than just indicators, but as measures of performance or targets:
+ - If a team is _told_ to do lots of releases, they will perform lots of releases *at the expense of something else*.
+ - If team members are promoted according to SLOC, they will make sure their code takes up as many lines as possible.
+ - In the UK, ambulances were asked to wait before admitting patients to Emergency wards, in order that hospitals could [meet their targets](https://en.wikipedia.org/wiki/NHS_targets).
+  
+Some of this seems obvious:  _Of course_ SLOC is a terrible measure performance!  We're not that stupid anymore.  The problem is, it's not so much the _choice_ of metric, but the fact that _all_ metrics merely approximate reality with a few numbers.  The map is _always_ simpler than the territory, therefore there can be no perfect metrics.
+
+In the same way that [markets evolve to demand more features](), our behaviour evolves to incorporate new ideas.  The more popular an idea is, the more people will modify their behaviour as a result of it, and the more the world will change.   Will the idea still be useful as the world adapts?   
+
 ### Example: Metrics as Maps 
 
 Good abstractions are shared (a la _memes_, above).  They start off with one inventor, and are shared, eventually becoming institutionalised in the same way [Software Dependencies]() are.   Let's dive into a specific example now: someone finds a useful new metric that helps in evaluating performance. 
@@ -140,50 +181,11 @@ But _correlation_ doesn't imply _causation_.  The _cause_ might be different:
  - user satisfaction and SLOC might both be down to the calibre of the developers.
  - response time and revenue might both be down to clever team planning.
  
-Metrics are _seductive_ because they simplify reality and are easily communicated.  But they _inherently_ contain [Map and Territory Risk](): By relying _only_ on the metrics, you're not really _seeing_ the reality.  The devil is in the detail. 
-
-## Evolution
-
-The section on [Communication Risk]() introduced the following model for ideas:
-
-![Spread of information between [Internal Models]()](images/generated/communication_marketing.png)
-
-But what happens next?   As we saw in [Boundary Risk](), the **Peter Principle** applies, people will use dependencies up to the point when they start breaking down.  
-
-In the case of metrics, this is where they start being used for more than just indicators, but as measures of performance or targets:
- - If a team is _told_ to do lots of releases, they will perform lots of releases *at the expense of something else*.
- - If team members are promoted according to SLOC, they will make sure their code takes up as many lines as possible.
- - In the UK, ambulances were asked to wait before admitting patients to Emergency wards, in order that hospitals could [meet their targets](https://en.wikipedia.org/wiki/NHS_targets).
-  
-Some of this seems obvious:  _Of course_ SLOC is a terrible measure performance!  We're not that stupid anymore.  The problem is, it's not so much the _choice_ of metric, but the fact that _all_ metrics merely approximate reality with a few numbers.  The map is _always_ simpler than the territory, therefore there can be no perfect metrics.
-
-In the same way that [markets evolve to demand more features](), our behaviour evolves to incorporate new ideas.  The more popular an idea is, the more people will modify their behaviour as a result of it, and the more the world will change.   Will the idea still be useful as the world adapts?   
-
-### Example: Hype Cycles
-
-Most ideas (and most products) have a slow, hard climb to wide-scale adoption.  But some ideas seem to disperse much more rapidly and are picked up quickly because they are exciting and promising, having greater "memetic potential" within society.  One way this evolution manifests itself in the world is though the [Hype Cycle](https://en.wikipedia.org/wiki/Hype_cycle):
-
-> "The hype cycle is a branded graphical presentation developed and used by the American research, advisory and information technology firm Gartner, for representing the maturity, adoption and social application of specific technologies. The hype cycle provides a graphical and conceptual presentation of the maturity of emerging technologies through five phases." - [Hype Cycle, _Wikipedia_](https://en.wikipedia.org/wiki/Hype_cycle)
-
-The five phases (and the "Hype" itself) are shown in the chart below, with the thick black line being "Hype":
-
-![Hype Cycle, along with Map & Territory Risk](images/hype-cycle.png)
-
-Also in this diagram we are showing where the hype originates:
- - The **saturation** of the idea within the audience.
- - The **amount known** about the idea by the audience (the [Learning Curve](), if you will).
- 
-Both of these are modelled with [Cumulative Distribution](https://en.wikipedia.org/wiki/Cumulative_distribution_function#Use_in_statistical_analysis) curves.  From these two things, we can figure out where our maximum [Map and Territory Risk]() lies:  it's the point where awareness of an idea is furthest from the understanding of it.  This acts as a "brake" on the **hype** around the idea, corresponding to the "Trough of Disillusionment".  
-
-Where the **saturation** and **knowledge** grow together, there is no spike in [Map and Territory Risk]() and we don't see the corresponding "Trough of Disillusionment" at all, as shown in this chart:
-
-![Hype Cycle 2: Slower growth of Map and Territory Risk means no "Trough of Disillusionment"](images/hype-cycle2.png)
-
-(This model is available in **Numbers** form [here](https://github.com/risk-first/website/blob/master/RiskMatrix.numbers).)
+Metrics are _seductive_ because they simplify reality and are easily communicated.  But they _inherently_ contain [Map and Territory Risk](): By relying _only_ on the metrics, you're not really _seeing_ the reality.  The devil is in the detail.
 
 ## Humans and Machines
 
-The _qualities_ of [Map and Territory Risk]() change as we shift our focus from _people_ to _machines_.   Whereas people can be expected show skepticism to new (unlikely) information, our databases accept it unquestioningly.  _Forgetting_ is an everyday, usually benign part of our human [Internal Model](), but for software systems it is a production crisis involving 3am calls and backups.  
+In the example of the SatNav, we saw how the _quality_ of [Map and Territory Risk]() is different for _people_ and _machines_.   Whereas people _should_ be expected show skepticism to new (unlikely) information, our databases accept it unquestioningly.  _Forgetting_ is an everyday, usually benign part of our human [Internal Model](), but for software systems it is a production crisis involving 3am calls and backups.  
 
 For Humans, [Map and Territory Risk]() is exacerbated by [cognitive biases]():
 
@@ -193,11 +195,7 @@ Here are some examples:
 
 It's tempting to think that [Map And Territory Risk](Map-And-Territory-Risk) is something that happens to someone else, and that you are going to be immune to it.   Example in the workplace, the release.
 
-
-## Example: Methodologies as Maps
-
-
-## Organisations and Hierarchies
+## Hierarchical Organisations
 
 [Map And Territory Risk]() "trickles down" through an organisation.  The higher levels have an outsize ability to pervert the incentives at lower levels because once an organisation begins to pursue a "bullshit objective", the whole company can align to this.  
 
@@ -241,7 +239,7 @@ Trying to spot [Map and Territory Risk]() ahead-of-time in this manner seems lik
 
 This comes down to a personal decision: do you want to spend time working on projects that you know are going in the bin?  Some developers have the attitude that, so long as they get paid, it doesn't matter.  But others are in it for the satisfaction of the work itself, so this ends up being a personal call.  (This theme will be developed further in [Staging and Classifying](Staging-and-Classifying).)
 
-## Inadequate Equilibria
+## Markets
 
 So far, we've considered what happens to individuals, teams and organisations when told to optimise around a particular objective.  In [Coordination Risk]() we looked at how [Communication]() was critical for Coordination to happen.  And, as we've already discussed, [Abstraction]() is a key part of communication.
 
