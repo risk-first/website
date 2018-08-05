@@ -176,6 +176,8 @@ Where the **saturation** and **knowledge** grow together, [Map and Territory Ris
 
 ![Hype Cycle 2: Slower growth of Map and Territory Risk means no "Trough of Disillusionment"](images/hype-cycle2.png)
 
+(This model is available in **Numbers** form [here](https://github.com/risk-first/website/blob/master/RiskMatrix.numbers).)
+
 ## Humans and Machines
 
 The _qualities_ of [Map and Territory Risk]() change as we shift our focus from _people_ to _machines_.   Whereas people can be expected show skepticism to new (unlikely) information, our databases accept it unquestioningly.  _Forgetting_ is an everyday, usually benign part of our human [Internal Model](), but for software systems it is a production crisis involving 3am calls and backups.  
