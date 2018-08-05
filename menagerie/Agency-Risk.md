@@ -100,7 +100,7 @@ Development is a craft, and ideally, we'd like developers to take pride in their
 
 Although over-confidence might be a useful trait when bargaining with other humans, the thesis of everything so far is that [Meeting Reality](Glossary#Meet-Reality) will punish your over-confidence again and again. 
 
-Perhaps it's a little unfair to draw out one human characteristic for attention.   After all, we are [riddled with biases](https://en.wikipedia.org/wiki/List_of_cognitive_biases).  There is probably an interesting article to be written about the effects of different biases on the software development and project management processes.  (This task is left as an exercise for the reader.)
+Perhaps it's a little unfair to draw out one human characteristic for attention.   After all, we are [riddled with biases](Map-And-Territory-Risk#humans-and-machines).  There is probably an interesting article to be written about the effects of different biases on the software development and project management processes.  (This task is left as an exercise for the reader.)
 
 ## Software Processes And Teams
 
