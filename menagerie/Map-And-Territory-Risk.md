@@ -187,9 +187,9 @@ In the same way that [markets evolve to demand more features](), our behaviour e
 
 ### Bad Ideas
 
-There are plenty of ideas which _seem a really good idea at the time_ but then end up being terrible.  It's only as we _learn about the products_ and realize the hidden [Map and Territory Risk]() that we stop using them.  While SLOC is a minor offender, [CFCs]() or [Leaded Petrol]() are more significant examples.  
+There are plenty of ideas which _seem a really good idea at the time_ but then end up being terrible.  It's only as we _learn about the products_ and realize the hidden [Map and Territory Risk]() that we stop using them.  While SLOC is a minor offender, [CFCs](https://en.wikipedia.org/wiki/Chlorofluorocarbon) or [Leaded Petrol](https://en.wikipedia.org/wiki/Tetraethyllead) are more significant examples.  
 
-The following Hype-Cycle graph shows an initially promising idea that turns out to be terrible, and there is a "Period of Innoculation" where the population realise their mistake.  There is "negative hype" as they work to phase out the offending idea:
+The following Hyph Cycle chart shows an initially promising idea that turns out to be terrible, and there is a "Period of Inoculation" where the population realise their mistake.  There is "negative hype" as they work to phase out the offending idea:
 
 ![Hype Cycle For Something that turns out to be a _bad_ idea](images/hype-cycle3.png)
 
@@ -205,7 +205,7 @@ There are _lots_ of cognitive biases.  But let's just look at a couple that are 
 
 - **Availability Heuristic**: People overestimate the importance of knowledge they have been exposed to.  Could this be relevant in the Volkswagen case?  Or could it be..
 - **The Ostrich Effect**:  Which is where dangerous information is ignored or avoided because of the emotions it will evoke.
-- **Bandwagon Effect**:  People like to believe things that other people believe.  Could this be a factor in the existence of the hype cycle?
+- **Bandwagon Effect**:  People like to believe things that other people believe.  Could this be a factor in the existence of the Hype Cycle?
 
 ## Hierarchical Organisations
 
