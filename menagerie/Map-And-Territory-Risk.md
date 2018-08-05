@@ -221,9 +221,9 @@ A similar (but less catastrophic) personal story from a bank I worked at, where 
 4. The matrix structure was largely the legacy of a recent merger with another department.  As [Conway's Law]() predicts, our software therefore had to reflect this structure.  But this was bullshit because...
 5. The matrix structure didn't represent reality in any useful way.  It was designed to pacify the budget committee at the higher level, and try to demonstrate attributes such as _control_ and _governance_.  But this was bullshit too, because...
 6. The budget that was given to our department was really based on how much fear the budget holders currently had of the market regulators.  But this was bullshit too, because...
-7. At a higher level, the executives had realised that our department wasn't one of the banks strategic strengths, and was working to close it all down anyway.
+7. At a higher level, the executives had realised that our division wasn't one of the banks strategic strengths, and was working to close it all down anyway.
 
-When faced with so many mis-aligned objectives, it seemed completely hopeless to concentrate on the task at hand.  But then, a colleague was able to nihilistically complete the onion by adding a final layer:
+When faced with so many mis-aligned objectives, it seemed completely hopeless to concentrate on the task at hand.  But then, a colleague was able to nihilistically add one final layer to this onion by saying:
 
 8. It's all about chasing money, which is bullshit, because life is bullshit.
 
