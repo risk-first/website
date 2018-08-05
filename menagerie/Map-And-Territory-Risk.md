@@ -156,7 +156,7 @@ Some of this seems obvious:  _Of course_ SLOC is a terrible measure performance!
 
 In the same way that [markets evolve to demand more features](), our behaviour evolves to incorporate new ideas.  The more popular an idea is, the more people will modify their behaviour as a result of it, and the more the world will change.   Will the idea still be useful as the world adapts?   
 
-### Hype Cycles
+### Example: Hype Cycles
 
 Most ideas (and most products) have a slow, hard climb to wide-scale adoption.  But some ideas seem to disperse much more rapidly and are picked up quickly because they are exciting and promising, having greater "memetic potential" within society.  One way this evolution manifests itself in the world is though the [Hype Cycle](https://en.wikipedia.org/wiki/Hype_cycle):
 
@@ -166,33 +166,19 @@ The five phases (and the "Hype" itself) are shown in the chart below, with the t
 
 ![Hype Cycle, along with Map & Territory Risk](images/hype-cycle.png)
 
-In this diagram we are also _deriving_ hype from two other things:
- - The saturation of the idea within the population.
- - The amount known about the idea by the population.
+Also in this diagram we are showing where the hype originates:
+ - The _saturation of the idea_ within the audience.
+ - The _amount known about the idea_ by the audience.
  
-From these two things, we can figure out where our maximum [Map and Territory Risk]() lies:  it's the point where knowledge of an idea is furthest from the understanding of it.  This acts as a "brake" on the popularity of the idea, corresponding to the "Trough of Disillusionment".  
+Both of these are modelled with [Cumulative Distribution](https://en.wikipedia.org/wiki/Cumulative_distribution_function#Use_in_statistical_analysis) curves.  From these two things, we can figure out where our maximum [Map and Territory Risk]() lies:  it's the point where knowledge of an idea is furthest from the understanding of it.  This acts as a "brake" on the popularity of the idea, corresponding to the "Trough of Disillusionment".  
 
-Where the _idea_ and the _knowledge_ grow together, we don't see a "Trough of Disillusionment" at all, as shown in this chart:
+Where the _saturation_ and the _knowledge_ grow together, [Map and Territory Risk]() peaks less fiercely, and we don't see the corresponding "Trough of Disillusionment" at all, as shown in this chart:
 
-![Hype Cycle 2: Slower growth means no "Trough of Disillusionment"](images/hype-cycle2.png)
-
-
-
-
-In this chart, the Hype Cycle
-
-tbd.   hype cycle.
-
-tbd. describe this with relation to M&T risk.
-
-FacebooK?
-
-tbd.  diagram showing new idea getting used more and more, reality changing as a result, idea is rendered less useful.
-
+![Hype Cycle 2: Slower growth of Map and Territory Risk means no "Trough of Disillusionment"](images/hype-cycle2.png)
 
 ## Humans and Machines
 
-The _qualities_ of [Map and Territory Risk]() change as we shift our focus from _people_ to _machines_.   Whereas people can be expected show scepticism to new (unlikely) information, our databases accept it unquestioningly.  _Forgetting_ is an everyday, usually benign part of our human [Internal Model](), but for software systems it is a production crisis involving 3am calls and backups.  
+The _qualities_ of [Map and Territory Risk]() change as we shift our focus from _people_ to _machines_.   Whereas people can be expected show skepticism to new (unlikely) information, our databases accept it unquestioningly.  _Forgetting_ is an everyday, usually benign part of our human [Internal Model](), but for software systems it is a production crisis involving 3am calls and backups.  
 
 For Humans, [Map and Territory Risk]() is exacerbated by [cognitive biases]():
 
@@ -203,7 +189,7 @@ Here are some examples:
 It's tempting to think that [Map And Territory Risk](Map-And-Territory-Risk) is something that happens to someone else, and that you are going to be immune to it.   Example in the workplace, the release.
 
 
-## Methodologies as Maps
+## Example: Methodologies as Maps
 
 
 ## Organisations, Hierarchies
@@ -241,25 +227,18 @@ When faced with so many mis-aligned objectives, it seemed completely hopeless to
 
 ### Picking Fights
 
-It feels like there's no way back from that.  All of life might well be a big **Map and Territory** illusion.  But let's analyse just a bit:
- - At each layer of the onion, the objectives changed.  But, they impacted on the objectives of the layer below.
+It feels like there's no way back from that.  All of life might well be a big [Map and Territory]() illusion.  But let's analyse just a bit:
+ - At each layer, the objectives changed.  But, they impacted on the objectives of the layer below.
  - Therefore, it seems like the more layers you have, the less likely it is that your objectives become inconsistent between the lower and higher levels.
  - On a new project, it seems like a good idea to model this stuff:  does the objective of the work you're about to undertake "align" with the objectives at a higher level?  
  
+Trying to spot [Map and Territory Risk]() ahead-of-time in this manner seems like a useful way of trying to avoid [Vanity Projects](Agency-Risk#pet-project), and, if you get it right, allows you to see which [Goals]() in the organisation are fragile and likely to change.  However, usually, if you are working in a team, you have limited agency to decide which projects you feel are valuable.  
 
-Introduce Rapid Development example here?
-how to pick projects
-how to spot vanity projects
-how to spot where the Goal In Mind is hopelessly ill-thought-through.
-following the rules more important than getting things done.  
-Head in the sand
-
-
-
+This comes down to a personal decision: do you want to spend time working on projects that you know are going in the bin?  Some developers have the attitude that, so long as they get paid, it doesn't matter.  Others are also in it for the satisfaction of the work itself, so this ends up being a personal call.  (This theme will be developed further in [Staging and Classifying](Staging-and-Classifying).)
 
 ## Inadequate Equilibria
 
-So far, we've considered what happens when a team _has been told_ to optimise around a particular objective.  But it's not a great stretch from here to a point where people are optimising the metric at the expense of doing what they know is best for the project.  Or, optimising a metric for personal gain because that metric is more visible than other (perhaps more important) qualities.  This is [Agency Risk](Agency-Risk) which we'll look at in the next section.  
+So far, we've considered what happens to individuals, teams and organisations when told to optimise around a particular objective.  Sometime
 
 **Inadequate Equilibria** is a book by Eleizer Yudkovsky, who looks at how **Map and Territory Risk** can break not just departments, but entire societal systems.  Here is one example involving _academics_ and _grantmakers_ in academia:
 
