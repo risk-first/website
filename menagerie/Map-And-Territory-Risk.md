@@ -158,9 +158,28 @@ In the same way that [markets evolve to demand more features](), our behaviour e
 
 ### Hype Cycles
 
-Most ideas (and most products) have a slow, hard climb to wide-scale adoption.  This allows Some ideas seem to disperse much more rapidly
+Most ideas (and most products) have a slow, hard climb to wide-scale adoption.  But some ideas seem to disperse much more rapidly and are picked up quickly because they are exciting and promising, having greater "memetic potential" within society.  One way this evolution manifests itself in the world is though the [Hype Cycle](https://en.wikipedia.org/wiki/Hype_cycle):
 
-One way this evolution manifests itself in the world is though the [Hype Cycle](https://en.wikipedia.org/wiki/Hype_cycle), as demonstrated here:
+> "The hype cycle is a branded graphical presentation developed and used by the American research, advisory and information technology firm Gartner, for representing the maturity, adoption and social application of specific technologies. The hype cycle provides a graphical and conceptual presentation of the maturity of emerging technologies through five phases." - [Hype Cycle, _Wikipedia_](https://en.wikipedia.org/wiki/Hype_cycle)
+
+The five phases (and the "Hype" itself) are shown in the chart below, with the thick black line being "Hype".
+
+![Hype Cycle, along with Map & Territory Risk](images/hype-cycle.png)
+
+In this diagram we are also _deriving_ hype from two other things:
+ - The saturation of the idea within the population.
+ - The amount known about the idea by the population.
+ 
+From these two things, we can figure out where our maximum [Map and Territory Risk]() lies:  it's the point where knowledge of an idea is furthest from the understanding of it.  This acts as a "brake" on the popularity of the idea, corresponding to the "Trough of Disillusionment".  
+
+Where the _idea_ and the _knowledge_ grow together, we don't see a "Trough of Disillusionment" at all, as shown in this chart:
+
+![Hype Cycle 2: Slower growth means no "Trough of Disillusionment"](images/hype-cycle.png)
+
+
+
+
+In this chart, the Hype Cycle
 
 tbd.   hype cycle.
 
