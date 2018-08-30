@@ -1,8 +1,6 @@
 ## Welcome to Risk-First
 
-<div class="tweet">
 Scrum, Waterfall, Lean, Prince2:  what do they all have in common?  
-</div>
 
 One perspective is that they are individual [software methodologies](https://en.wikipedia.org/wiki/Software_development_process#Methodologies), offering different approaches on how to build software.
 
