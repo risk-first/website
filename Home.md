@@ -125,5 +125,7 @@ A more light-hearted collection of blog posts related to the software developmen
 
  - [Glossary](Glossary)
   
+<hr />
 
+**[Discuss](https://github.com/risk-first/website/issues/1)**
 
