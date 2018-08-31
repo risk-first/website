@@ -142,7 +142,7 @@ Where the **saturation** and **knowledge** grow together, there is no spike in [
 
 The section on [Communication Risk]() introduced the following model for ideas:
 
-![Spread of information between [Internal Models]()](images/generated/communication_marketing.png)
+![Spread of information between Internal Models](images/generated/communication_marketing.png)
 
 But what happens next?   As we saw in [Boundary Risk](), the **Peter Principle** applies, people will use dependencies up to the point when they start breaking down.  
 
@@ -274,4 +274,5 @@ As usual, this section forms a grab-bag of examples in a complex topic.  But it'
 
 (NB: The Hype Cycle model is available in **Numbers** form [here](https://github.com/risk-first/website/blob/master/RiskMatrix.numbers).) 
 
+(talk about how operational risk is an extension of this).  tbd
 

@@ -178,7 +178,7 @@ But this means that all of the issues of abstractions that we covered in [Commun
  
 ## Fit Risk
 
-![Feature Fit Risk](images/generated/fit-risk.png) 
+![Feature Fit Risk](images/generated/feature-risk.png) 
 
 Sometimes, the bus will take you to lots of in-between places you _didn't_ want to go.   This is [Fit Risk](Feature-Risk#feature-fit-risk) and we saw this already in the section on [Feature Risk](Feature-Risk).  There, we considered two problems:
 

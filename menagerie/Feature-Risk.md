@@ -1,15 +1,12 @@
 ![For Review](images/state/for-review.png)
 
-[Feature Risk](Feature-Risk) is the category of risks to do with features that have to be in your software.   
-You could also call it **Functionality Risk**.  It is the risk that you face by _not having features that your clients need_.<!-- tweet-end -->  
+[Feature Risk](Feature-Risk) is the category of software risk to do with features that have to be in your software.  It is the risk that you face by _not having features that your clients need_.<!-- tweet-end -->  
 
-![Feature Risk](images/generated/feature-risk.png) 
-
-Eventually, this will come down to lost money, business, acclaim, or whatever else reason you are doing your project for.
-
-In a way, [Feature Risk](Feature-Risk) is very fundamental:  if there were _no_ feature risk, the job would be done already, either by you, or by another product.  
+In a way, [Feature Risk](Feature-Risk) is very fundamental:  if there were _no_ feature risk, the job would be done already, either by you, or by another product, and the product would be perfect!
 
 As a simple example, <!-- tweet-start -->if your needs are served perfectly by Microsoft Excel, then you don't have any [Feature Risk](Feature-Risk).<!-- tweet-end -->  However, the day you find Microsoft Excel wanting, and decide to build an Add-On is the day when you first appreciate some [Feature Risk](Feature-Risk).
+
+Not considering [Feature Risk](Feature-Risk) means that you might be building the wrong functionality, for the wrong audience or at the wrong time.  And eventually, this will come down to lost money, business, acclaim, or whatever else reason you are doing your project for.  So let's unpack this concept into some of it's variations.
 
 ## Variations
 
@@ -22,8 +19,6 @@ This is the one we've just discussed above: the feature that you (or your client
  - This might manifest itself as complete _absence_ of something you need, e.g "Where is the word count?"
  - It could be that the implementation isn't complete enough, e.g "why can't I add really long numbers in this calculator?"
  
-tbd.  we need to show a diagram of this - 
-
 ### Features Don't Work Properly
 
 [Feature Risk](Feature-Risk) also includes things that don't work as expected<!-- tweet-end -->: That is to say, [bugs](https://en.wikipedia.org/wiki/Software_bug).   Although the distinction between "a missing feature" and "a broken feature" might be worth making in the development team, we can consider these both the same kind of risk:  _the software doesn't do what the user expects_.
@@ -78,17 +73,20 @@ Sometimes, features can work for some people and not others:  this could be down
 
 You could argue that the choice of _platform_ is also going to limit access:  <!-- tweet-start -->writing code for XBox-only leaves PlayStation owners out in the cold.   This is _largely_ [Feature Access Risk](Feature-Risk#feature-access-risk), though [Dependency Risk](Dependency-Risk) is related here.<!-- tweet-end -->
 
+In Marketing, minimizing [Feature Access Risk]() is all about [Segmentation]():  trying to work out _who_ your product appeals to, and tailoring it to that particular market.
+
 ### Feature Drift Risk
 
 ![Feature Drift Risk](images/generated/feature-drift-risk.png) 
 
 **Feature Drift** is the tendency that the features people need _change over time_.   For example, at one point in time, supporting IE6 was right up there for website developers, but it's not really relevant anymore.  <!-- tweet-end --> Although that change took _many_ years to materialize, other changes are more rapid.    
 
-The point is:  [Requirements captured](Requirements-Capture) _today_ might not make it to _tomorrow_, especially in the fast-paced world of IT.  
+The point is:  [Requirements captured](Requirements-Capture) _today_ might not make it to _tomorrow_, especially in the fast-paced world of IT.  This is partly because the market _evolves_ and becomes more discerning.  This happens in several ways:
+ - Features present in competitor's versions of the software become _the baseline_, and they're expected to be available in your version.
+ - Certain ways of interacting become the norm (e.g. [querty]() keyboards, or the control layout in cars: these don't change with time).
+ - Features decline in usefulness: _Printing_ is less important now than it was,  for example.
 
 [Feature Drift Risk](Feature-Risk#feature-drift-risk) is _not the same thing_ as **Requirements Drift**, which is the tendency projects have to expand in scope as they go along.  There are lots of reasons they do that, a key one being the [Hidden Risks](Glossary#hidden-risk) uncovered on the project as it progresses.
-
-tbd.  evolution from simple needs to complex ones.
 
 ### Fashion
 
@@ -110,10 +108,12 @@ Hopefully, this has given you some ideas about what [Feature Risk](Feature-Risk)
 
 ### Analysis
 
-At this point, it would be easy to stop and say, look, here are a bunch of [Feature Risk]() issues that you could face.  But, it turns out that we're going to be relying heavily on [Feature Risk]() as we go on in order to build our understanding of other risks, so it's probably worth spending a bit of time up front to classify what we've found.  In the later section, [Staging and Classifying](), we're going to go into this in much more detail over the whole menagerie, but let's introduce it here.
+At this point, it would be easy to stop and say, look, here are a bunch of [Feature Risk]() issues that you could face.  But, it turns out that we're going to be relying heavily on [Feature Risk]() as we go on in order to build our understanding of other risks, so it's probably worth spending a bit of time up front to classify what we've found.  
 
 The [Feature Risks]() identified here basically exist in a 3-dimensional space:
- - We've looked at the dimension of _the features we're supplying_, and whether this matches _the features the a user needs_.   This is the **Feature** dimension.
+ - **Fit**: How well the features fit for a particular client.
+ - **Audience**:  The range of clients (the _market_) that may be able to use this feature.
+ - **Evolution**:  The way the fit and the audience changes and evolves as time goes by.  
  
 tbd.  3 diagrams: perfect fit, implementation risk, conceptual integrity risk.
  
@@ -125,11 +125,16 @@ tbd: show 5 users, each with slightly different requirements, how they intersect
  
  tbd.  regression risk and feature drift risk.
  
+### Applying Feature Risk
 
-Somewhere between "what the customer wants" and "what you give them" is a dialog.  Communication Risk.
- 
- 
- 
- 
+Consider [Feature Risk](Feature-Risk) carefully next time you are grooming the backlog:
+ - Can you judge which tasks mitigate the most [Feature Risk](Feature-Risk)?
+ - Are you delivering features that are valuable to a large audience?  How well do you understand your audience?  How does the size of the audience for a task impact it's importance in the backlog?
+ - Does the audience _know_ that the features exist?  How do you communicate feature availability to them?  
+ - How does writing a specification mitigate [Fit Risk](Feature-Risk#feature-fit-risk)?  For what other reasons are you writing specifications?
+  
+In the next section, we are going to unpack this third point further.  Somewhere between "what the customer wants" and "what you give them" is a _dialog_.  In using a software product, users are engaging in a _dialog_ with its features.  If the features don't exist, hopefully they will engage in a dialog with the development team to get them added.  
+
+These dialogs are prone to risk, and this is the subject of the next section, [Communication-Risk](Communication-Risk).
  
  

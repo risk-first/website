@@ -1,11 +1,5 @@
 ![For Review](images/state/for-review.png)
 
-Hi.  
-
-Welcome to the Risk-First Wiki.  
-
-I've started this because, on my career journey, I've noticed that the way I do things doesn't seem to match up with the way the books _say_ it should be done.  And, I found this odd and wanted to explore it further.   Hopefully, you, the reader, will find something of use in this.  
-
 First up, I'm going to introduce a simple model for thinking about risk.
 
 ## A Simple Scenario
