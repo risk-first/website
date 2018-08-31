@@ -137,6 +137,8 @@ As decribed above, the job of [Coordination](Coordination-Risk) is [Resource All
  - Where there are mixed ability levels, senior developers not helping juniors as it "slows them down".
  - People not getting on and not helping each other.
  
+> "As a rough rule, three programmers organised into a team can do only twice the work of a single programmer of the same ability - because of time spent on coordination problems." - [Gerald Wienberg, The Psychology of Computer Programming](https://en.wikipedia.org/wiki/Gerald_Weinberg) 
+ 
 ## In Living Organisms
 
 Vroom and Yetton's organisational style isn't relevant to just teams of people.  We can see it in the natural world too.  Although _the majority_ of cellular life on earth (by weight) is [single celled organisms](http://www.stephenjaygould.org/library/gould_bacteria.html), the existence of _humans_ (to pick a single example) demonstrates that sometimes it's better to try to mitigate [Coordination Risk](Coordination-Risk) and work as a team, accepting the [Complexity Risk](Complexity-Risk) and [Communication Risk](Communication-Risk) this entails.  As soon as cells start working together, they either need to pass _resources_ between them, or _control_ and _feedback_.  
