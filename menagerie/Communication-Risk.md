@@ -224,15 +224,11 @@ Let's look at some types of [Protocol Risk](Communication-Risk#protocol-risk):
  
 ### Protocol Incompatibility Risk
 
-![Protocol Risk](images/generated/protocol-incompatibility-risk.png) 
-
 The people you find it _easiest_ to communicate with are your friends and family, those closest to you. <!-- tweet-end --> That's because you're all familiar with the same protocols.  Someone from a foreign country, speaking a different language and having a different culture, will essentially have a completely incompatible protocol for spoken communication to you.
 
 Within software, there are also competing, incompatible protocols for the same things, which is maddening when your protocol isn't supported.   Although the world seems to be standardizing, there used to be _hundreds_ of different image formats.  Photographs often use [TIFF](https://en.wikipedia.org/wiki/TIFF), [RAW](https://en.wikipedia.org/wiki/Raw_image_format) or [JPEG](https://en.wikipedia.org/wiki/JPEG), whilst we also have [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) for vector graphics, [GIF](https://en.wikipedia.org/wiki/GIF) for images and animations and [PNG](https://en.wikipedia.org/wiki/Portable_Network_Graphics) for other bitmap graphics.   
 
 ### Protocol Versioning Risk
-
-![Protocol Risk](images/generated/protocol-versioning-risk.png) 
 
 Even when systems are talking the same protocol, there can be problems. <!-- tweet-end --> When we have multiple, different systems owned by different parties, on their own upgrade cycles, we have **Protocol Versioning Risk**: the risk that either client or server could start talking in a version of the protocol that the other side hasn't learnt yet.  There are various mitigating strategies for this.  We'll look at two now: **Backwards Compatibility** and **Forwards Compatibility**.
 
@@ -261,8 +257,6 @@ Does human language support this?  To some extent!  New words are added to our l
 
 ### Protocol Implementation Risk
 
-![Protocol Risk](images/generated/protocol-implementation-risk.png) 
-
 A second aspect of [Protocol Risk](Communication-Risk#protocol-risk) exists in heterogenous computing environments, where protocols have been independently implemented based on standards.  For example, there are now so many different browsers, all supporting different levels of `HTTP`, `HTML` and `JavaScript` that it becomes impossible to test comprehensively over all the different versions.  To mitigate as much [Protocol Risk](Communication-Risk#protocol-risk) as possible, generally we run tests in a subset of browsers, and use a lowest-common-denominator approach to choosing protocol and language features.
 
 ![Communication Protocols Risks](images/generated/communication_protocol_risks.png)
@@ -275,15 +269,11 @@ Although Shannon's Communication Theory is about transmitting **Messages**, mess
 
 ### Internal Model Assumption Risk
 
-![Message Risk](images/generated/model-assumption-risk.png) 
-
 When we construct messages in a conversation, we have to make judgements about what the other person already knows.  When talking to children, it's often hard work because they _assume_ that you have knowledge of everything they do.  This is called [Theory Of Mind](https://en.wikipedia.org/wiki/Theory_of_mind): the appreciation that your knowledge is different to other people's, and adjusting you messages accordingly.
 
 When teaching, this is called [The Curse Of Knowledge](https://en.wikipedia.org/wiki/Curse_of_knowledge):  teachers have difficulty understanding students' problems _because they already understand the subject_.  For example, if I want to tell you about a new [JDBC Driver](https://en.wikipedia.org/wiki/JDBC_driver), this pre-assumes that you know what JDBC is:  the message has a dependency on prior knowledge.
 
 ### Message Dependency Risk  
-
-![Message Risk](images/generated/message-dependency-risk.png) 
 
 A second, related problem is actually [Dependency Risk](Dependency-Risk), which is covered more thoroughly in the next section.  Often, messages assume that you have followed everything up to that point already, otherwise again, your [Internal Model](Glossary#Internal-Model) will not be rich enough to understand the new messages.
 
@@ -303,8 +293,6 @@ Create user 53 with surname 'Smith'
 
 ### Misinterpretation Risk
 
-![Message Risk](images/generated/misinterpretation-risk.png) 
-
 People don't rely on rigorous implementations of abstractions like computers do; we make do with fuzzy definitions of concepts and ideas.  We rely on [Abstraction](Glossary#abstraction) to move between the name of a thing and the _idea of a thing_.
 
 While machines only process _information_, people's brains run on concepts and ideas.  For people, abstraction is critical: nothing exists unless we have a name for it. <!-- tweet-end --> Our world is just atoms, but we don't think like this.  _The name is the thing_.  
@@ -314,9 +302,7 @@ While machines only process _information_, people's brains run on concepts and i
 This brings about [Misinterpretation Risk](Communication-Risk#misinterpretation-risk): names are not _precise_, and concepts mean different things to different people.  We can't be sure that people have the same meaning for concepts that we have.  
 
 ### Invisibility Risk
-
-![Message Risk](images/generated/invisibility-risk.png) 
-
+ 
 Another cost of [Abstraction](Glossary#abstraction) is [Invisibility Risk](Communication-Risk#invisibility-risk).  While abstraction is a massively powerful technique, (as we saw above in the section on [Protocols](Communication-Risk#protocols), it allows things like the Internet to happen) it lets the function of a thing hide behind the layers of abstraction and become invisible.  
 
 #### Invisibility Risk In Software
@@ -355,11 +341,9 @@ So finally, we are coming to the root of the problem:  communication is about tr
 
 The communication process so far has been fraught with risks, but we have a few more to come.
 
-### Trust Risk & Belief Risk
+### Trust & Belief Risk
 
 ![Internal Model Risk](images/generated/trust-risk.png) 
-
-![Internal Model Risk](images/generated/belief-risk.png) 
 
 Although protocols can sometimes handle security features of communication (such as [Authentication](https://en.wikipedia.org/wiki/Authentication) and preventing [man-in-the-middle attacks](https://en.wikipedia.org/wiki/Man-in-the-middle_attack)), trust goes further than this, intersecting with [Agency Risk](Agency-Risk):  can you be sure that the other party in the communication is acting in your best interests?
  

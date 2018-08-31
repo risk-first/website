@@ -17,6 +17,8 @@ However, over the rest of the [Dependency Risk](Dependency-Risk) sections, we lo
 So [Feature Risk](Feature-Risk) _is_ [Dependency Risk](Dependency-Risk):  they’re two sides of the same coin.  In a dependency, you’re a client, whereas feature risk, you’re the supplier. 
 
 
+- A Section on Abstraction, and what it really means.
+
 Dependency Risk is basically three things:
 
 - Schedule (things happening in time, running out of stuff.  e.g I need enough money to get this done, etc.  I need enough patience, enough loyalty, trust, entente.)
@@ -59,17 +61,23 @@ How much do compilers do for you?
 1.  Classifying Risks
   - Dependencies and Features are the same
     - Dependency risks are all 2-sided.  (Counterparty risk)
-  - Communication is a Dependency
-  - Fit Risk / Communication Risk - buckets 
-    - Fit risk example from work:  choosing the right format.  
-    - Why standards can never be perfect.
-    - Mention Kanban = the control is the physical object
-  - Expected Requirement Coverage - diagrams 1 & 2.
-  - Dependencies and Coordination
-  - Need to do this again, now.
+    - Communication is a Dependency
+    - Fit Risk / Communication Risk - buckets 
+      - Fit risk example from work:  choosing the right format.  
+      - Why standards can never be perfect.
+      - Mention Kanban = the control is the physical object
+    - Dependencies and Coordination
+      
+  - On Abstraction (see notes in evernote)
   
-  - In The Bin
+  - Periodic Table of Risks
   
+2.  Failure Modes
+
+  - Understanding Failure:  what exactly does it mean to fail?
+
+  - Personal Failures
+
      - CapsLock: complexity, not using tools.
      - Configuration Tool (Complexity, feature fit, bugs in hibernate, difficulty mapping domain model)
      - Wide Learning  (Funding, but also complexity), did we know what we were building?  Agency risk
@@ -84,11 +92,8 @@ How much do compilers do for you?
      - REF Testing:  complexity risk.  communication risk?
      - HSC: Trader Comments:  feature fit.
      - HSC: Takeover of Symph: Complexity (of change)
+     - TT: Feature Fit
      
-
-2.  What's Gone Before
-  - An attempt to categorize all the ways in which software projects go wrong.
-  
   - Boehm.
   
   
@@ -102,3 +107,9 @@ How much do compilers do for you?
 
 
 derisking
+
+https://wwwx.cs.unc.edu/~welch/class/comp145/media/docs/Boehm_Term_NE_Fail.pdf
+
+https://www.worksoft.com/top-software-failures-of-2017-so-far
+
+https://sites.hks.harvard.edu/m-rcbg/ethiopia/Publications/Top%2010%20Reasons%20Why%20Systems%20Projects%20Fail.pdf

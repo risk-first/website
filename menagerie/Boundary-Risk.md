@@ -337,7 +337,7 @@ In [Feature Risk](Feature-Risk#feature-drift-risk), we saw that the features peo
 - Software and hardware are both is improving with time, due to evolution and the ability to support greater and greater levels of complexity.
 - Abstractions build too.  As we saw in [Process Risk](), we _encapsulate_ earlier abstractions in order to build later ones.
 
-If all this is true, the only thing we can expect in the future is that the lifespan of any ecosystem will follow an arc through creation, adoption, growth, statis and finally either be abstracted over or abandoned.  
+If all this is true, the only thing we can expect in the future is that the lifespan of any ecosystem will follow an arc through creation, adoption, growth, use and finally either be abstracted over or abandoned.  
 
 tbd diagram.
 

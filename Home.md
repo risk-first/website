@@ -1,8 +1,6 @@
 ## Welcome to Risk-First
 
-<div class="tweet">
 Scrum, Waterfall, Lean, Prince2:  what do they all have in common?  
-</div>
 
 One perspective is that they are individual [software methodologies](https://en.wikipedia.org/wiki/Software_development_process#Methodologies), offering different approaches on how to build software.
 
@@ -26,6 +24,10 @@ Neither is this site isn't going to be an exhaustive guide of every possible sof
 Neither is this really a practitioner's guide to using any particular methodology:  If you've come here to learn the best way to do [Retrospectives](Review), then you're in the wrong place.  There are plenty of places you can find that information already.  Where possible, this site will link to or reference concepts on Wikipedia or the wider internet for further reading on each subject.
 
 Lastly, although this is a [Wiki](https://en.wikipedia.org/wiki/Wiki), it's not meant to be an open-ended discussion of software techniques like [Ward's Wiki](http://wiki.c2.com).  In order to be concise and useful, discussions need to be carried out by [Opening an Issue](https://github.com/risk-first/website/issues).
+
+## Patterns and Tropes
+
+
 
 ## Contributing
 

@@ -65,6 +65,8 @@ In all, to de-risk, you should try and meet reality:
 - **In Smaller Chunks**: so you're not overburdened by hidden risks all in one go.
 - **With Feedback**: if you don't collect feedback from the experience of meeting reality, hidden risks _stay hidden_.
 
+tbd this is what testing is all about.
+
 ### YAGNI 
 
 As a flavour of what's to come, let's look at [YAGNI](https://www.martinfowler.com/bliki/Yagni.html), an acronym for You Aren't Gonna Need It.   Martin Fowler says:
