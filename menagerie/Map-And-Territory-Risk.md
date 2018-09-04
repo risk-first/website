@@ -14,6 +14,8 @@ So there is a translation going on here: observations about the arrangement of _
 
 In this section, we're going to make a case for analysing [Map and Territory Risk]() along the same axes we introduced for [Feature Risk](), that is **Fitness**, **Audience** and **Evolution**.  After that, we are going to widen the scope by looking at [Map and Territory Risk]() within the context of **machines**, **people**, **hierarchies** and **markets**.
 
+tbd - diagram of how our actions are based on the map, not the territory.
+
 ## Fitness
 
 ![Sat Nav Blunder Sends Asda Van Crashing Narrow Footpath - Telegraph Newspaper](images/sat_nav.png)

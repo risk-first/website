@@ -1,5 +1,15 @@
 ![Under Construction](images/state/uc.png)
 
+1.  Purpose of Estimating 
+  1.  (coordination risk)
+  2.  trying to work out _the value_ of doing some work
+2.  How Estimates Fail
+  1.   Hidden Risk
+  2.   Visible Risk
+3.  
+
+## How Estimates Fail
+
 The problem with a developer answering a question such as:
 
 > "How long will it take to deliver X"
