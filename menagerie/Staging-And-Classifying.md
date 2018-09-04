@@ -6,6 +6,13 @@ We've collected on this journey around the [Risk Landscape](Risk-Landscape) a (h
 
 tbd collecting image
 
+If you've been reading closely, you'll notice that a number of themes come up again and again within the different sections.   For example:
+
+ - **Fit**:  
+ - **Abstraction**
+ - **Evolution** 
+
+
 ## Some Observations
 
 ### Your Feature Risk is Someone Else's Dependency Risk
@@ -14,7 +21,40 @@ In the [Feature Risk](Feature-Risk) section, we looked at the problems of _suppl
 
 However, over the rest of the [Dependency Risk](Dependency-Risk) sections, we looked at this from the point of view of _being a client to someone else_:  you want to find trustworthy, reliable dependencies that don't give up when you least want them to.
 
-So [Feature Risk](Feature-Risk) _is_ [Dependency Risk](Dependency-Risk):  they’re two sides of the same coin.  In a dependency, you’re a client, whereas feature risk, you’re the supplier. 
+So [Feature Risk](Feature-Risk) _is_ [Dependency Risk](Dependency-Risk):  they’re _two sides of the same coin_.  In a dependency, you’re a client, whereas feature risk, you’re the supplier. 
+
+tbd image comparing the two
+
+### The Power Of Abstractions
+
+_Abstraction_ appears as a concept continually throughout the book, whether we are looking at [Communication](Communication-Risk), [Complexity Metrics](Complexity-Risk#kolmogorov-complexity), [Map and Territory Risk](Map-And-Territory-Risk) or how it causes [Boundary Risk](Boundary-Risk).  And, so far, we've looked at some complicated examples of abstractions, such as [network protocols](Communication-Risk#network), [dependencies on technology](Software-Dependency-Risk#software-tools) or [Business Processes](Process-Risk#the-purpose-of-process).
+
+There's a good reason for this repetition.   Abstraction is at the heart of _everything we do within software_.  So, let's now _generalize_ what is happening with abstraction, but have in mind _a really simple example_:  giving a name to something.
+
+#### **Inventing an Abstraction** means:  
+
+- **Creating a [Feature](Feature-Risk) that can be _used_ for some purpose. **  So, at the simplest end, you might be simply _naming a pattern_ of behaviour we see in the real world, such as "Binge Watching" or "Remote Working", or naming your dog, "Alfie".
+ - **Creating a [boundary](Boundary-Risk).**  By naming something, you _implicitly_ create a boundary, because the world is now divided into "things which _are_ X" and "things which _are not_ X".   Sometimes, this abstraction may literally end up having a physical boundary to enforce this division (such as, "My Property / Not My Property"). _Boundary Risk is created by abstractions._
+ - **Creating a [protocol](Communication-Risk#protocol)**  At the very simplest level (again), this is just introducing _new words to a language_.   Therefore, we create [Protocol Risk](Communication-Risk#protocol-risk):  what if the person we are communicating with _doesn't know this word?  
+    
+tbd, diagram.
+
+
+#### **Using an Abstraction** means:
+
+ - **Overcoming a [Learning Curve](Communication-Risk#learning-curve)**:  Because you have to _learn_ a name in order to use it (whether a function, a dog, or the name of someone at a party).
+ - **Dealing with [Boundary Risks](Boundary-Risk).**  Even learning _a single word_ to use, but the word will come as part of the whole _ecosystem_ of a language.  Using _french words_ 
+    * [Communicating with the 
+    * Which means, Boundary Risk:  the bigger the abstraction, the bigger the risk.
+
+* Abstractions Change and Evolve
+    * You face Red Queen Risk
+    * Feature Drift risk
+    * Regression Risk
+    * What is Rich Hickey doing in this space?
+
+
+
 
 
 - A Section on Abstraction, and what it really means.

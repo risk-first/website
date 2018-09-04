@@ -24,6 +24,8 @@ But, although this is starting to look complicated, in reality, things are _wors
 
 ## Introducing Operational Risk Management
 
+Operations?
+
 The _software systems_ we build and put into production don't just consist of software.  tbd
 
 Operational Risk is a very broad church, and encompasses pretty much all the real-world things that can go wrong with your enterprise.  Let's try and define what we mean by [Operational Risk]:

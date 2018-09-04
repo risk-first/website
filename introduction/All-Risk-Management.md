@@ -64,6 +64,10 @@ _Issues_ then, just seem more "definite" and "now" than _risks_, right?  This cl
 - And, there's the time it takes to make the decision.
 - And what's the risk if the decision doesn't get made?
 
+## Failure
+
+tbd.
+
 ## What To Do?
 
 It makes it much easier to tackle the RAID log if there's only one list:  all you do is pick the worst risk on the list, and deal with it.  (In [Risk Theory](Risk-Theory) we look at how to figure out which one that is).
