@@ -19,7 +19,7 @@ Book two of the **Risk First** series explores the relationship between software
 
 ### Online
 
-Material for the books is freely available to read, drawn from `risk-first.org`.  
+Material for the books is freely available to read, drawn from [risk-first.org](http://risk-first.org).  
 
 ### Published By
 
