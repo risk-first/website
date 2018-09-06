@@ -6,8 +6,6 @@ One perspective is that they are individual [software methodologies](https://en.
 
 However, here, we are going to consider a second perspective:  that building software is all about _managing risk_, and that these methodologies are acknowledgements of this fact, and they differ because they have _different ideas_ about which are the most important _risks to manage_.
 
-## Goal
-
 Hopefully, after reading through some of the articles here, you'll come away with:
 
 - An appreciation of how risk underpins everything we do as developers, whether we want it to or not.
@@ -15,33 +13,20 @@ Hopefully, after reading through some of the articles here, you'll come away wit
 - A recontextualization of the software process as being an exercise in mitigating different kinds of risk.
 - The tools to help you decide when a methodology is _letting you down_, and the vocabulary to argue for when it's a good idea to deviate from it.
 
-## What This is Not
+## Questions Answered
 
-This is not intended to be a rigorously scientific work: I don't believe it's possible to objectively analyze a field like software development in any meaningful, statistically significant way.  (For one, things just change [too fast](Silver-Bullets).) 
-
-Neither is this site isn't going to be an exhaustive guide of every possible software development practice and methodology.  That would just be too long and tedious.  
-
-Neither is this really a practitioner's guide to using any particular methodology:  If you've come here to learn the best way to do [Retrospectives](Review), then you're in the wrong place.  There are plenty of places you can find that information already.  Where possible, this site will link to or reference concepts on Wikipedia or the wider internet for further reading on each subject.
-
-Lastly, although this is a [Wiki](https://en.wikipedia.org/wiki/Wiki), it's not meant to be an open-ended discussion of software techniques like [Ward's Wiki](http://wiki.c2.com).  In order to be concise and useful, discussions need to be carried out by [Opening an Issue](https://github.com/risk-first/website/issues).
-
-## Patterns and Tropes
-
-
+- [Risk-First is a Pattern Language (think Design Patterns, or TVTropes)](A-Pattern-Language)
+- ["Software Development Is All About Risk" - Kent Beck](All-About-Risk)
+- [Who Is This For?](Audience)
+- [Executive Summary](Executive-Summary)
 
 ## Contributing
 
 If you feel something important is missing, or you spot a mistake, [we need help](Contributing).
 
-## Executive Summary
-
-You can get a flavour for where all this is going by reaading this:  [Executive Summary](Executive-Summary)
+Although this is a [Wiki](https://en.wikipedia.org/wiki/Wiki), it's not meant to be an open-ended discussion of software techniques like [Ward's Wiki](http://wiki.c2.com).  In order to be concise and useful, discussions need to be carried out by [Opening an Issue](https://github.com/risk-first/website/issues).
 
 ## Table of Contents
-
-There are basically five parts to this work:  
- - Parts 1 and 2 really need to be read in sequentially, as they'll explain the concepts you need to digest the rest.  
- - Parts 3, 4 and 5 don't have a linear structure, you can dive in anywhere after reading the first two.
 
 ### Part 1: Introduction
 
@@ -55,6 +40,7 @@ Some easy-to-digest ideas that will set the scene for examining the practices la
  - [Meeting Reality](Meeting-Reality)
  - [Cadence](Cadence)
  - [A Conversation](A-Conversation)
+ - [De-Risking](De-Risking)
  
 ### Part 2: [The Risk Landscape](Risk-Landscape)
 
@@ -74,6 +60,7 @@ Risks are often very similar across different software projects.   And, if you k
  - [Map And Territory Risk](Map-And-Territory-Risk)
  - [Operational Risk](Operational-Risk)
  - [Staging And Classifying](Staging-And-Classifying)
+ - [Stories Of Failure](Stories-Of-Failure)
  
 ### Part 3: [Practices](Practices)
 

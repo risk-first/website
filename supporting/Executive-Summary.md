@@ -2,19 +2,19 @@
 
 ## 1.  There are Lots of Ways of Running Software Projects
 
-There are lots of different ways to look at a project.  For example, metrics such as “number of open tickets”, “story points”, “code coverage" or "release cadence" give us a numerical feel for how things are going and what needs to happen next.  We also judge projects by the practices used on them - Continuous Integration, [Unit Testing](Testing) or [Pair Programming](Coding), for example.  
+There are lots of different ways to look at a project.  For example, metrics such as “number of open tickets”, “story points”, “code coverage" or "release cadence" give us a numerical feel for how things are going and what needs to happen next.  We also judge the health of projects by the practices used on them - [Continuous Integration](), [Unit Testing](Testing) or [Pair Programming](Coding), for example.  
 
 Software methodologies, then, are collections of tools and practices:  “Agile”, “Waterfall”, “Lean” or “Phased Delivery” (for example) all suggest different approaches to running a project, and are opinionated about the way they think projects should be done and the tools that should be used.    
 
-None of these is necessarily more “right” than another, they are suitable on different projects at different times.
+None of these is necessarily more “right” than another- they are suitable on different projects at different times.
 
-**A key question then is: how do we select the right tools for the job?**
+A key question then is: **how do we select the right tools for the job?**
 
 ## 2.  We can Look at Projects in Terms of Risks
 
-One way to examine a project in-flight is a risk-based one.  
+One way to examine a project in-flight is by looking at the risks it faces. 
 
-Commonly, tools such as RAID logs and RAG status reporting are used.  These techniques should be familiar to project managers everywhere.  
+Commonly, tools such as RAID logs and RAG status reporting are used.  These techniques should be familiar to project managers and developers everywhere.   
 
 However, the Risk-First view is that we can go much further:  that each item of work being done on the project is mitigating a particular risk.  Risk isn't something that just appears in a report, it actually drives *everything we do*.  
 
@@ -33,10 +33,10 @@ Although risk is usually complicated and messy, other industries have found valu
 For example:
 
 - In manufacturing, _tolerances_ allow for calculating the likelihood of defects in production.  
-- In finance, reserves are commonly set aside for “market risk” and “credit risk”, and teams are structured around different risks.  
-- The insurance industry is founded on identifying particular risks and providing financial safety-nets for when they occur.   
+- In finance, reserves are commonly set aside for the risks of stock-market crashes, and teams are structured around monitoring these different risks. 
+- The insurance industry is founded on identifying particular risks and providing financial safety-nets for when they occur, such as death, injury, accident and so on.   
 
-Software risks are difficult to quantify, and mostly, the effort involved in doing so _exactly_ would outweigh the benefit.  Nevertheless, there is value in spending time building _classifications of risk for software_.  
+Software risks are difficult to quantify, and mostly, the effort involved in doing so _exactly_ would outweigh the benefit.  Nevertheless, there is value in spending time building _classifications of risk for software_.   That's what Risk-First does:   describes the set of _risk patterns_ we see every day on software projects. 
 
 With this in place, we can:
 
@@ -44,7 +44,7 @@ With this in place, we can:
 - Expose [Hidden Risks](Glossary#hidden-risk) that we hadn't considered before.
 - Weigh the risks against each other, and decide which order to tackle them.   
 
-## 4.  We Can Analyse Practices in Terms of how they Mitigate Risk
+## 4.  We Can Analyse Tools and Techniques in Terms of how they Mitigate Risk
 
 If we accept the assertion above that _all_ the actions we take on a project are about mitigating risks, then it stands to reason that the tools and techniques available to us on a project are there for mitigating different types of risks.  
 
@@ -66,11 +66,11 @@ For example:
 - **Waterfall** takes the view that coding effort is an expensive risk, and that we should build plans up-front to avoid it.  
 - **Lean** takes the view that risk lies in incomplete work and wasted work, and aims to minimize that.
 
-Although many developers have a methodology-of-choice, the argument here is that there are tradeoffs with all of these choices.
+Although many developers have a methodology-of-choice, the argument here is that there are tradeoffs with all of these choices.  <!-- tweet-start -->Methodologies are like _bicycles_, rather than _religions_.  Rather than simply _believing_, we can take them apart and see how they work. <!-- tweet-end -->
 
 **We can place methodologies within a framework, and show how choice of methodology is contingent on the risks faced.**
 
-## 6.  Driving a Project With a Risk-First Perspective 
+## 6.  Driving Development With a Risk-First Perspective 
 
 We have described a model of risk within software projects, looking something like this:
 

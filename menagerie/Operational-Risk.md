@@ -67,6 +67,8 @@ Therefore, one of the best defences against [Operational Risk]() is dealing with
 Good [Feedback Loops]() in the form of [Monitoring](Monitoring) 
 and rapid response to issues.
 
+tbd, talk with John about this
+
 ## Meeting Reality
 
 So in this second model, we are now considering that the world is a dangerous, untrustworthy place where _bad things happen_, either deliberately or accidentally.  And, since we don't have a perfect understanding of the world, most of the [Production Risk]() we face is [Hidden Risks](Glossary#hidden-risk).  
@@ -112,7 +114,7 @@ Complex systems (ones which contain multiple, interacting parts, like the ones i
 
 Interestingly, security is handled in very similar ways at all sorts of levels:
 
-- **Walls**: defences _around_ the complex system, to protect it's parts from the external environment.
+- **Walls**: defences _around_ the complex system, to protect it's parts from the external environment.  
 - **Doors**: ways to get _in_ and _out_ of the complex system, possibly with _locks_.
 - **Guards**: to make sure only the right things go in and out.  (i.e. to try and keep out _Bad Actors_).
 - **Police**: to defend from _within_ the system, against [Agency Risk]() and _invaders_.
@@ -129,6 +131,10 @@ We're waking up to the realisation that our software systems need to work the sa
       - Denial Of Service
       - Security, Trust and Complexity 
       - oWASp
+      
+tbd, How much do compilers do for you?   Now, they prevent many kinds of security error.  Libraries too.  
+
+      
       
       
 ## Operational Risk
@@ -193,7 +199,8 @@ reputational damage
        - Bug reports, feedback
        - Quality of feedback
        - Internal Controls
-         - Agency Risk meets Production Risk (bad actors, controls)
+         - Agency Risk meets Production Risk (bad act
+         ors, controls)
 
 
 
@@ -227,3 +234,5 @@ There is a lot more to Operational Risk.  Here, we've touched on it, and sketche
 
 https://math.nist.gov/IFIP-UQSC-2011/slides/Oberkampf.pdf
 https://www.bsimm.com/framework/intelligence/attack-models.html
+
+OWASP
