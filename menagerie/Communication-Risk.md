@@ -234,7 +234,8 @@ Even when systems are talking the same protocol, there can be problems. <!-- twe
 
 ### Protocol Complexity
 
-tbd.   abstraction - virtue between two vices
+tbd.   abstraction - virtue between two vices.  Postel's law.
+
 
 #### Backward Compatibility
 

@@ -35,18 +35,6 @@ This is the one we've just discussed above: the feature that you (or your client
 
 Also, while delivering new features can delight your customers, breaking existing ones will annoy them.  This is something we'll come back to in [Reputation Risk](Operational-Risk#reputational-risk).
 
-### Market Risk
-
-![Market Risk](images/generated/market-risk.png) 
-
-On the [Risk Landscape](Risk-Landscape) page I introduced the idea of [Market Risk](Feature-Risk#market-risk) as being the value that the market places on a particular asset.  <!-- tweet-end -->Since the product you are building is your asset, it makes sense that you'll face [Market Risk](Feature-Risk#market-risk) on it:
-
- > "Market risk is the risk of losses in positions arising from movements in market prices." - [Market Risk, _Wikipedia_](https://en.wikipedia.org/wiki/Market_risk)
-
-I face market risk when I own (i.e. have a _position_ in) some [Apple](http://apple.com) stock. <!-- tweet-end --> [Apple's](http://apple.com)'s stock price will decline if a competitor brings out an amazing product, or if fashions change and people don't want their products any more.
-
-In the same way, _you_ have [Market Risk](Feature-Risk#market-risk) on the product or service you are building:  the _market_ decides what it is prepared to pay for this, and it tends to be outside your control.     
-
 ### Conceptual Integrity Risk
 
 ![Conceptual Integrity Risk](images/generated/conceptual-integrity-risk.png) 
@@ -73,7 +61,19 @@ Sometimes, features can work for some people and not others:  this could be down
 
 You could argue that the choice of _platform_ is also going to limit access:  <!-- tweet-start -->writing code for XBox-only leaves PlayStation owners out in the cold.   This is _largely_ [Feature Access Risk](Feature-Risk#feature-access-risk), though [Dependency Risk](Dependency-Risk) is related here.<!-- tweet-end -->
 
-In Marketing, minimizing [Feature Access Risk]() is all about [Segmentation]():  trying to work out _who_ your product appeals to, and tailoring it to that particular market.
+In Marketing, minimizing [Feature Access Risk]() is all about [Segmentation]():  trying to work out _who_ your product appeals to, and tailoring it to that particular market, but for technologists, increasing [Feature Access]() means increasing complexity:  you have to deliver the software on more platforms, localized in more languages, with different configurations of features at different price-points.  Mitigating [Feature Acccess Risk]() therefore means increased effort and complexity (which we'll come to later).
+
+### Market Risk
+
+[Feature Access Risk]() is related, of course, to [Market Risk](Feature-Risk#market-risk), which I introduced on the [Risk Landscape](Risk-Landscape) page as being the value that the market places on a particular asset.  <!-- tweet-end -->Since the product you are building is your asset, it makes sense that you'll face [Market Risk](Feature-Risk#market-risk) on it:
+
+![Market Risk](images/generated/market-risk.png) 
+
+ > "Market risk is the risk of losses in positions arising from movements in market prices." - [Market Risk, _Wikipedia_](https://en.wikipedia.org/wiki/Market_risk)
+
+I face market risk when I own (i.e. have a _position_ in) some [Apple](http://apple.com) stock. <!-- tweet-end --> [Apple's](http://apple.com)'s stock price will decline if a competitor brings out an amazing product, or if fashions change and people don't want their products any more.
+
+In the same way, _you_ have [Market Risk](Feature-Risk#market-risk) on the product or service you are building:  the _market_ decides what it is prepared to pay for this, and it tends to be outside your control.     
 
 ### Feature Drift Risk
 
@@ -113,10 +113,26 @@ At this point, it would be easy to stop and say, look, here are a bunch of [Feat
 The [Feature Risks]() identified here basically exist in a 3-dimensional space:
  - **Fit**: How well the features fit for a particular client.
  - **Audience**:  The range of clients (the _market_) that may be able to use this feature.
- - **Evolution**:  The way the fit and the audience changes and evolves as time goes by.  
+ - **Evolution**:  The way the fit and the audience changes and evolves as time goes by. 
  
-tbd.  3 diagrams: perfect fit, implementation risk, conceptual integrity risk.
+#### Fit
+
+ > "Survival Of The Fittest" - Darwin, tbd.
  
+Darwin's conception of fitness was not one of athletic prowess, but how well an organism worked within the landscape.
+
+tbd:  definition of biological fitness
+
+ [Fit Risk](), [Conceptual Integrity Risk]() and [Implementation Risk]() all hint at different aspects of this "fitness".   We can conceive of the relationships between them in the following way:
+
+![Feature Risks Assembled](images/kite9/all_feature_risk_1.png) 
+
+For further reading, you can check out [The Service Quality Model](http://en.wikipedia.org/SERVQUAL), whcih this model is derived from.  This model analyses the types of _quality gaps_ in services, and how consumer expectations and perceptions of a service arise.  In [Staging And Classifying](Staging-And-Classifying#Your-Feature-Risk-is-Someone-Else-s-Dependency-Risk), we'll come back and build on this model further. 
+
+#### Audience
+
+
+
  - We've looked at the market of all possible users,  and considered which of those will find our product suitable.  This is the **Market** dimension.
  
 tbd: show 5 users, each with slightly different requirements, how they intersect with the product.  (market risk, feature access risk)
@@ -136,5 +152,12 @@ Consider [Feature Risk](Feature-Risk) carefully next time you are grooming the b
 In the next section, we are going to unpack this third point further.  Somewhere between "what the customer wants" and "what you give them" is a _dialog_.  In using a software product, users are engaging in a _dialog_ with its features.  If the features don't exist, hopefully they will engage in a dialog with the development team to get them added.  
 
 These dialogs are prone to risk, and this is the subject of the next section, [Communication-Risk](Communication-Risk).
+ 
+## Gaps
+
+
+https://community.verint.com/b/customer-engagement/posts/service-quality-gap-model 
+
+GAP model’ developed by a group of authors- Parasuraman, Zeithaml and Berry at Texas and North Carolina in 1985 , 
  
  
