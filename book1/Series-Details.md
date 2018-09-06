@@ -23,10 +23,12 @@ Material for the books is freely available to read, drawn from [risk-first.org](
 
 ### Published By
 
+```
 Kite9 Ltd.
 14 Manor Close
 Colchester
 CO6 4AR
+```
 
 ISBN:  tbd.
 
