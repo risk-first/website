@@ -32,3 +32,8 @@ https://wwwx.cs.unc.edu/~welch/class/comp145/media/docs/Boehm_Term_NE_Fail.pdf
 https://www.worksoft.com/top-software-failures-of-2017-so-far
 
 https://sites.hks.harvard.edu/m-rcbg/ethiopia/Publications/Top%2010%20Reasons%20Why%20Systems%20Projects%20Fail.pdf
+
+
+JC Example 1:  Compensation Workbench, rules to uplift payrolls annually based on certain definitions.  e.g tied into performance gradiing, min wage.  Was done off s/s, out of HR system.  Analysis done on S/s.   But wanted to do it in the HR database.  It took a lot longer than it should.  Underestimated the complexity.  Excel could be infinitely complex, but if you standardize, you lose that.  The customer hadn't got experience of big IT projects - scope creep. No real sense of prioritisation and focusing on what was iportant.   PM was nice, but didn't understand delivery management.  (i.e. managing risks and issues).  Had short timescale, lead delivery resource underestimated.  2m exercise.  Lasted 5m in the end, but not with full functionality.
+
+

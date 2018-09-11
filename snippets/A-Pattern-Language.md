@@ -29,12 +29,12 @@ This book was a set of experts handing down their battle-tested practices for ot
 
 In the same way, this book aims to be a set of _Patterns for Software Risk_.  Hopefully after reading this book, you will see where risk hides in software projects, and have a name for it when you see it.
 
-### Towards a Periodic Table
+### Towards a "Periodic Table"
 
 In the latter chapters of "The Menagerie" we try to assemble these risk patterns into a cohesive whole.  Projects fail because of risks, and risks arise from predictable sources.
 
 
-## What This is Not
+### What This is Not
 
 This is not intended to be a rigorously scientific work: I don't believe it's possible to objectively analyze a field like software development in any meaningful, statistically significant way.  (For one, things just change [too fast](Silver-Bullets).) 
 
