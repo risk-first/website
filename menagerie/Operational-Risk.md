@@ -1,6 +1,8 @@
 ![Under Construction](images/state/uc.png)
 
-In this section on [Operational Risks], we're going to take our head out of the clouds a bit and start considering the realities of running software systems in the real world.  After all, [Coordination Risk]() and [Map And Terriory Risk]() got a bit theoretical.  Here, we're going to look at [Operational Risks], including [Security Risk]() and [Reputational Risk]: real-world concerns for anyone running a business.  
+In this section on [Operational Risks], we're going to take our head out of the clouds a bit and start considering the realities of running software systems in the real world.  After all, [Coordination Risk]() and [Map And Territory Risk]() got a bit theoretical.  Here, we're going to look at [Operational Risks](), including [Security Risk]() and [Reputational Risk](): real-world concerns for anyone running a business.  
+
+## A Recap
 
 But before we go there, let's try and recap on where we've come so far.  So far, we've been looking at risks to _systems in general_: 
 
@@ -13,54 +15,68 @@ Here is a diagram that shows how these different elements line up:
 
 ![Systemic View of Risks](images/kite9/production-1.png)
 
-But, although this is starting to look complicated, in reality, things are _worse_.  We have to contend with [Bad Actors]() from _within_ and _outside_ the system too, and, we have to consider our software a component of a larger _system in the world_, which consists of our _customers_ depending on us.  Our system is embedded within a context which we can't hope to fully understand:
+(tbd, remove outside client)
 
-- [Security Risk]: problem of bad actors affecting the system
-- [Operational Risk]: problem of _delivering on our promises_ as a dependency.
-- [Agency Risk]:  problem of actors _within the system_ having their own agendas.
-- [Dependency Risk]: our system relies on a stable environment in which to operate.
+## Operational Risks
 
-![Systemic View of Risks (2)](images/kite9/production-2.png)
+It's tempting to take a very narrow view of the dependencies of a system, but [Operational Risks]() are often caused by dependencies we don't consider - the _context_ within which the system is operating.  Here are some examples:  
 
-## Introducing Operational Risk Management
+ - Staff Dependencies ([Staff Risk]()):  
+   - Freak weather conditions affecting ability of staff to get to work, interrupting the development and support teams. 
+   - Reputational damage caused when staff are rude to the customers.
+ 
+ - Infrastructure Dependencies ([Availability Risk]()):  
+   - A data-centre going off-line, causing your customers to lose access.
+   - A power cut causing backups to fail.
+   - Not having enough desks for everyone to sit at.
+   
+ - Process Dependencies ([Process Risk]()):
+   - Regulatory change, which means you have to adapt your business model.
+   - Insufficient controls which means you don't notice when some transactions are failing, leaving you out-of-pocket.
+   - Data loss because of bugs introduced during an untested release.
+ 
+ - Software Dependencies ([Software Dependency Risk]()):
+   - Hackers breaking into the system and bringing your service down.
+ 
+ - Agency Dependencies ([Agency Risk]()):
+   - Suppliers deciding to stop supplying you with something you need.
+   - Workers going on strike.
+   - Employees trying to steal from the company (bad actors).
 
-Operations?
+.. basically, a long laundry-list of everything that can go wrong due to operating in "The Real World".  Although these issues don't exist with _ideal_ dependencies, pragmatically, when we design our system, we design in features to _strengthen_ it against [Operational Risks]() such as these.   _However_, we don't get these for free:  they come at the cost of extra [Complexity Risk]().
 
-The _software systems_ we build and put into production don't just consist of software.  tbd
+For example, as we saw in [Development Process](), a lot of the processes we put in place (e.g. [Continuous Integration]() or various types of [Testing]()) are there to mitigate [Operational Risk]() problems caused by _releasing buggy software_.  [Unit Testing]() increases our [Kolmogorov Complexity]() (as there is more code) but we accept this extra complexity as the price for mitigating this [Operational Risk]().  [User Acceptance Testing]() increased our [Schedule Risk](), but again reduced the likelihood of bugs making it into production.
 
-Operational Risk is a very broad church, and encompasses pretty much all the real-world things that can go wrong with your enterprise.  Let's try and define what we mean by [Operational Risk]:
+Dependencies are not just things we _use_, then:  For a system to run well, it needs to carefully manage unreliable dependencies, and ensure their safety and availability.  In the example of the human food system, say, it's the difference between [Hunter-Gathering]() (picking up food where we find it) and [Farming](). 
+ 
+## Operational Risk Management
+
+Since we have looked in detail at various types of [Dependency Risk](), in this section we'll be focusing on the job of [Operational Risk Management](), and the tools it brings to bear on [Dependency Risk]():  
 
 > "Operational Risk Management is the oversight of Operational Risk, including the risk of loss resulting from inadequate or failed internal processes and systems; human factors; or external events." - [Operational Risk Management, _Wikipedia_](https://en.wikipedia.org/wiki/Operational_risk_management)
 
-Here are some examples of [Operational Risk]:
- - Freak weather conditions affecting ability of staff to get to work, interrupting the developmemt and support teams.
- - A data-centre going off-line, causing your customers to lose access.
- - Insufficient controls which means you don't notice when some transactions are failing, leaving you out-of-pocket.
- - Data loss because of bugs introduced during an untested release.
- - Hackers breaking into the system and bringing your service down.
- - Reputational damage caused when staff are rude to the customers.
- - Regulatory change, which means you have to adapt your business model.
- 
-... basically, a long laundry-list of everything that can go wrong due to operating in the Real World.  _Ideally_, when we design our software system, we design in features to _strengthen_ it against [Operational Risks]() such as these.   _However_, we don't get these for free:  they come at the cost of extra [Complexity].
-
-For example, as we saw in [Development Process], a lot of the processes we put in place (e.g. [Continuous Integration]() or various types of [Testing]) are there to mitigate [Operational Risk]() problems caused by _releasing buggy software_.  [Unit Testing]() increases our [Kolmogorov Complexity]() (as there is more code) but we accept this extra complexity as the price for mitigating this [Operational Risk].  [User Acceptance Testing]() increased our [Schedule Risk], but again reduced the likelihood of bugs making it into production.
+![Systemic View of Risks (2)](images/kite9/production-2.png)   tbd, need to modify this, 
 
 ## Mitigating Operational Risk
 
-Operational Risks, then are things that happen _to_ our carefully constructed, theoretical system, as shown in this diagram:
+[Operational Risk]() then, is really just an extended view on [Dependency Risk](), with reference to embedding the system of dependencies in the real world.  There are various activities then that Operational Risks, then are things that happen _to_ our carefully constructed, theoretical system, as shown in this diagram:
 
-diagram:  our system -> event -> weakness -> effect -> reaction -> recovery -> adaptation  
+diagram:  our system -> event's exploit weakness -> effect -> reaction -> recovery -> adaptation  
 
 (our system: meeting reality, deployment)
 (event: detection)
 (weakness: minimization (see Security risk))
 (effect:  what happens, how much chaos ensues)
+(sensing / detection)
 (reaction:  monitoring, etc)
 (recovery:  how we fix it)
 (adaptation: how the system changes in the future)
+(prediction: how to forecast failures)  pestle, environmental scanning. / anticipation
+(practicing: e.g. testing failover etc.)
+(changing outside world)
 
+These are properties not only of software systems, but biological systems, and businesses too.  Let's now take each in turn and inspect it further.
 
--- something like this.
 
 Therefore, one of the best defences against [Operational Risk]() is dealing with the issues quickly once they happen.  This requires:
 
@@ -93,7 +109,7 @@ The "should we ship?" decision is therefore a complex one.  In [Meeting Reality]
 |**In Smaller Chunks**             |[Modular Releases]() [Microservices]() [Feature Toggles]() Trial Populations   |
 |**With Feedback**                 |User Communities, Support Groups, Monitoring, Logging, Analytics|
 
-## External Events and Bad Actors
+## External Events
 
 We're familiar with the concept of taking steps on the [Risk Landscape], wherein we [take action]() to move to a position where the [Attendant Risks](Glossary#attendant-risk) are more acceptable to us.  However, now we have to contend with the idea that external events _also_ change the risk landscape too.  If there is sudden bad weather, we might have a risk of a power-cut, and the losses that might entail to productivity or sales.   If there is a change of government, that might impact the contracts we've written, or the security of our servers or staff.
 
@@ -108,7 +124,9 @@ With a [Bad Actor], we're in a situation more like a zero-sum game:  value is _t
 
 - Regulatory Risk  Legal Risk  (Pestle?)
 
-## Security Risk
+## Weaknesses
+
+Security of supply
 
 Complex systems (ones which contain multiple, interacting parts, like the ones in the above diagrams) have to contend with their external environments, and try to minimize the ways in which they get interrupted from outside either by _Bad Actors_ or external events.  In the tbd
 
@@ -199,8 +217,7 @@ reputational damage
        - Bug reports, feedback
        - Quality of feedback
        - Internal Controls
-         - Agency Risk meets Production Risk (bad act
-         ors, controls)
+         - Agency Risk meets Production Risk (bad actors, controls)
 
 
 
@@ -234,5 +251,6 @@ There is a lot more to Operational Risk.  Here, we've touched on it, and sketche
 
 https://math.nist.gov/IFIP-UQSC-2011/slides/Oberkampf.pdf
 https://www.bsimm.com/framework/intelligence/attack-models.html
+ISO27001
 
 OWASP

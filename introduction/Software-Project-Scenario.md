@@ -20,6 +20,8 @@ Sometimes, we will know that our model is deficient, and our time should be spen
 
 But let's say for example, today our [Goal In Mind](Glossary#Goal-In-Mind) is to grow our user base.  
 
+tbd. image of this goal.
+
 ## Attendant Risks
 
 What are the [Attendant Risks](Glossary#attendant-risk) that come with that goal?  Here are some to get us started:
@@ -32,6 +34,8 @@ What are the [Attendant Risks](Glossary#attendant-risk) that come with that goal
 6. Our [Internal Model](Glossary#Internal-Model) of the market is poor, and we could be building the wrong thing.
 
 I'm sure you can think of some more. 
+
+tbd. image 
 
 ## Evaluating The Risks
 

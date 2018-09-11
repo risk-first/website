@@ -129,15 +129,16 @@ tbd:  definition of biological fitness
 
 For further reading, you can check out [The Service Quality Model](http://en.wikipedia.org/SERVQUAL), whcih this model is derived from.  This model analyses the types of _quality gaps_ in services, and how consumer expectations and perceptions of a service arise.  In [Staging And Classifying](Staging-And-Classifying#Your-Feature-Risk-is-Someone-Else-s-Dependency-Risk), we'll come back and build on this model further. 
 
-#### Audience
+#### Fit and Audience
 
+Two risks, [Feature Access Risk](Feature-Risk#feature-access-risk) and [Market Risk](Feature-Risk#market-risk) considers _Fit_ for a whole _Audience_ of users.  They are different:  just as it's possible to have a small audience, but a large revenue, it's possible to have a product which has low [Feature Access Risk]() (i.e lots of users can access it without difficulty) but high [Market Risk]() (i.e. the market is highly volatile or capricious in it's demands).  _Online services_ often suffer from this [Market Risk]() rollercoaster, being one moment highly valued and the next irrelevant. 
 
+#### Fit, Audience and Evolution
 
- - We've looked at the market of all possible users,  and considered which of those will find our product suitable.  This is the **Market** dimension.
- 
-tbd: show 5 users, each with slightly different requirements, how they intersect with the product.  (market risk, feature access risk)
-
- - We've looked at time, and how this can change both the market and the features.  This is the **Change** dimension.
+Two risks further consider how the **Fit** and **Audience** _change_: [Regression Risk]() and [Feature Drift Risk]().  We call this _evolution_ in the sense that:
+ - Our product's features _evolve_ with time, and changes made by the development team.
+ - Our audience changes and evolves as it is exposed to our product and competing products.
+ - The world as a whole is an evolving system within which our product exists.
  
  tbd.  regression risk and feature drift risk.
  
@@ -152,12 +153,3 @@ Consider [Feature Risk](Feature-Risk) carefully next time you are grooming the b
 In the next section, we are going to unpack this third point further.  Somewhere between "what the customer wants" and "what you give them" is a _dialog_.  In using a software product, users are engaging in a _dialog_ with its features.  If the features don't exist, hopefully they will engage in a dialog with the development team to get them added.  
 
 These dialogs are prone to risk, and this is the subject of the next section, [Communication-Risk](Communication-Risk).
- 
-## Gaps
-
-
-https://community.verint.com/b/customer-engagement/posts/service-quality-gap-model 
-
-GAP model’ developed by a group of authors- Parasuraman, Zeithaml and Berry at Texas and North Carolina in 1985 , 
- 
- 

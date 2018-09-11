@@ -1,5 +1,7 @@
 ![Draft](images/state/draft.png)
 
+# Preface
+
 Welcome to Risk-First!  
 
 Let's cover some of the big questions up-front:  The why, what, who, how and where of _The Menagerie_.
@@ -21,19 +23,19 @@ This book considers that perspective:  that building software is all about _mana
 ## What This Is
 
 ```include
-snippets/A-Pattern-Language.md
+../snippets/A-Pattern-Language.md
 ```
 
 ## Who
 
 ```include
-snippets/Audience.md
+../snippets/Audience.md
 ```
 
 ## How
 
 ```include
-snippets/All-About-Risk.md
+../snippets/All-About-Risk.md
 ```
 
 ## Where  
