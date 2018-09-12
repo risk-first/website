@@ -24,6 +24,7 @@ allLinks {
 
 risk {
 	kite9-type: container;
+	fill: black;
 }
 
 container {
@@ -221,6 +222,10 @@ risk.bureaucracy {
 	kite9-template: url(template.svg#bureaucracy);
 }
 
+risk.map-and-territory {
+	kite9-template: url(template.svg#map-and-territory);
+}
+
 
 risk-box {
 	kite9-margin: 10pt;
@@ -321,7 +326,9 @@ context,
 diagram,
 glyph,
 arrow,
-link {
+link,
+panel,
+description {
 	kite9-margin: 20pt;
 	kite9-link-inset: 10pt;
 	kite9-link-gutter: 10pt;
@@ -521,14 +528,66 @@ text-line {
 table {
 	kite9-layout: grid;
 	kite9-type: container;
+	kite9-template: url(template.svg#table);
 }
 
 celltext {
-	kite9-type: text;
+	kite9-usage: regular;
+	kite9-type: container;
+	kite9-template: url(template.svg#celltext);
+	kite9-minimum-height: 250px;
 	kite9-padding: 10px;
+	kite9-vertical-align: center;
+	kite9-horizontal-align: left;
+	font-size: 40pt;
+	fill: black;
+	font-family: "gothic";
+	stroke: none;
+}
+
+celltext.center {
+	kite9-horizontal-align: center;
+}
+
+celltext.bold {
+	font-family: "gothic-bold";
 }
 
 tick {
-	kite9-type: 	svg;
+	kite9-usage: regular;
+	kite9-type:  container;	
 	kite9-template: url(template.svg#tick);
+}
+
+table risk,
+table tick {
+	kite9-horizontal-align: center;
+	kite9-margin: 20pt;
+}
+
+table celltext.bottom {
+	kite9-vertical-align: bottom;
+}
+
+/* Risk Descriptions */
+
+description {
+	kite9-type: container;	
+	kite9-template: url(template.svg#description);
+	font-size: 18pt;
+}
+
+panel {
+	kite9-template: url(template.svg#panel);
+	kite9-type: container;
+	kite9-sizing: maximize;
+	kite9-traversal: always;
+	kite9-padding: 12pt;	
+	kite9-link-inset: 12pt;
+}
+
+.panel-back {
+	fill: white;
+	stroke: none;
+	stroke-width: 0;
 }

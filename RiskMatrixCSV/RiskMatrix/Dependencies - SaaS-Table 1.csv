@@ -1,17 +1,16 @@
-Factor,Risk,Source
-"1: What happens to your data if you sever ties with the vendor?
-",Counterparty Risk,I
-2: How does the support process hold up in your trial runs?,Operational Risk,I
-3: What migration and training assistance options are available?,Communication Risk,I
-4: Can you test in parallel?,Feature Fit Risk,I
-5: How does functionality compare to maturity?,Feature Fit Risk,I
-"6: What's the backup plan?
-(It's vital that you understand how your data are protected, and what redundancies are available should your SaaS provider have an outage. )",Operational Risk,I
-7: What's the pricing model?,Schedule Risk,I
-8: What integration options are available?,Communication Risk,I
-9: Are your current and future user environments supported? (Browser Compatibility),Boundary Risk,I
-,,
-,,
-,,
-,,
-,,
+Factor,Operational Risk,Boundary Risk,Feature Risk,Communication Risk,Schedule Risk,Source
+"What happens to your data if you sever ties with the vendor?
+",,X,,,,I
+How does the support process hold up in your trial runs?,X,,,,,I
+What migration and training assistance options are available?,,,,X,,I
+Can you test in parallel?,,,X,,,I
+How does functionality compare to maturity?,,,X,,,I
+"What's the backup plan?
+(It's vital that you understand how your data are protected, and what redundancies are available should your SaaS provider have an outage. )",X,X,,,,I II
+What's the pricing model?,,X,,,X,I
+What integration options are available?,,,,X,,I II
+Are your current and future user environments supported? (Browser Compatibility),,X,X,,,I
+Security What standards are in place?,X,,,,,II
+SLAs.  What are the guarantees?  What happens when the service levels are not met?,X,,,,,II
+Global Reach.  Is the service usable everywhere?,X,,,,,II
+Totals,5,4,3,2,1,
