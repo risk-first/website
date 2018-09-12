@@ -37,6 +37,7 @@ public class TextPreprocessor {
 			if (line.trim().equals("```include")) {
 				processIncludes(br, origin);
 			} else {
+				line = line.replaceAll("\\s+$", "");	// trim end of line
 				processLinks(line, TextPreprocessor::processImageLink, lineNo, System.out::print);
 			}
 			System.out.println("");
@@ -105,13 +106,7 @@ public class TextPreprocessor {
 					url = url.substring(0, url.length()-4) + "-400dpi.png";
 				}
 				
-				if (link.contains("-risk.png")) {		// needs to be in margin
-					System.out.println("\\marginpar{");
-					System.out.println("  \\vspace*{0cm}\\includegraphics[width=2cm,height=5cm]{"+url+"}");
-					System.out.println("}");
-				} else {
-					System.out.println("!["+text+"]("+url+")");
-				}
+				System.out.println("!["+text+"]("+url+")");
 			}
 		} else {
 			System.out.print(link);
@@ -138,7 +133,7 @@ public class TextPreprocessor {
 				String title = "# " + line.substring(line.lastIndexOf("/")+1).replace("-", " ");
 				title = title.replace(".md", "");
 				System.out.println("\n\n");
-				if (!line.contains("book")) {
+				if ((!line.contains("book")) && (!line.contains("snippets"))) {
 					System.out.println(title);
 				}
 				process(createBufferedReader(f), f);
