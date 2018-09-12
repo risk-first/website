@@ -1,1 +1,0 @@
-Dedicated to blan
