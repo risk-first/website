@@ -37,6 +37,8 @@
 \makeatother
 \let\Oldincludegraphics\includegraphics
 \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
+\suppressfloats[t]
+\suppressfloats[b]
 
 % Links
 \hypersetup{breaklinks=true,
@@ -64,10 +66,21 @@
 \def\fnum@table{\tablename~\thetable}
 \makeatother
 
+% Code Sections
+\usepackage{listings}
+\newcommand{\passthrough}[1]{#1}
+\lstnewenvironment{code}{\lstset{language=Haskell,basicstyle=\small\ttfamily}}{}
+$if(highlighting-macros)$
+$highlighting-macros$
+$endif$
+
+
 %Links as Notes
 \DeclareRobustCommand{\href}[2]{#2\footnote{\url{#1}}}
 
 %Sections
+\chapterstyle{veelo}
+\setlength{\beforechapskip}{20pt}
 \setsechook{\hangsecnum}
 \setcounter{secnumdepth}{$if(secnumdepth)$$secnumdepth$$else$5$endif$}
 
