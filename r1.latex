@@ -1,0 +1,723 @@
+% Page setup
+\documentclass[fontsize=12pt]{memoir}
+\setstocksize{9.69in}{7.44in}
+\settrimmedsize{\stockheight}{\stockwidth}{*}
+\setlrmarginsandblock{3.5cm}{2.5cm}{*}
+\setulmarginsandblock{2cm}{3cm}{*}
+\checkandfixthelayout 
+\setheadfoot{\onelineskip}{2\onelineskip}
+
+% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{parskip}    	
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}	
+
+\usepackage{graphicx}					
+\usepackage{amssymb}
+
+%SetFonts
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fontspec}
+\usepackage[]{}
+\usepackage[unicode=true]{hyperref}
+\usepackage{lmodern}
+\setmainfont{Constantia}
+\setsansfont{Menlo}
+\setmonofont[Mapping=tex-ansi]{Menlo}
+
+%Images
+\usepackage{graphicx}
+% We will generate all images so they have a width .8\maxwidth. This means
+% that they will get their normal width if they fit onto the page, but
+% are scaled down if they would overflow the margins.
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+\else\Gin@nat@width\fi}
+\makeatother
+\let\Oldincludegraphics\includegraphics
+\renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
+\suppressfloats[t]
+\suppressfloats[b]
+
+% Links
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={Rob Moffat},
+            pdftitle={r1: Risk-First Software Development},
+            colorlinks=false,
+            urlcolor=black,
+            linkcolor=black,
+            pdfborder={0 0 0}}
+
+% Footers / Page Numbers            
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+  \renewcommand{\headrulewidth}{0pt}
+  \fancyfoot[LE, RO]{\thepage}
+  \fancyfoot[C]{\textsl}
+
+% Tables            
+\usepackage{longtable,booktabs}
+\usepackage[width=.8\textwidth]{caption}
+% These lines are needed to make table captions work with longtable:
+\makeatletter
+\def\fnum@table{\tablename~\thetable}
+\makeatother
+
+% Code Sections
+\usepackage{listings}
+\newcommand{\passthrough}[1]{#1}
+\lstnewenvironment{code}{\lstset{language=Haskell,basicstyle=\small\ttfamily}}{}
+
+
+%Links as Notes
+\DeclareRobustCommand{\href}[2]{#2\footnote{\url{#1}}}
+
+%Sections
+\chapterstyle{veelo}
+\setlength{\beforechapskip}{20pt}
+\setsechook{\hangsecnum}
+\setcounter{secnumdepth}{5}
+
+\begin{document}
+
+\frontmatter
+
+\title{Risk-First Software Development: The Menagerie}
+\author{Rob Moffat}
+
+\begin{titlingpage}
+
+\hspace{0.05\textwidth}
+
+\centering
+
+{\Huge\bfseries\textsc{Risk-First Software Development}}\\[2\baselineskip]
+
+{\Huge\textit{Volume 1: The Menagerie}}\\[10\baselineskip]
+
+{\Oldincludegraphics[width=0.5\textwidth]{images/R1_logo_grue.png}}\\[10\baselineskip]
+
+{\Huge\textsc{Rob Moffat}}
+
+
+\end{titlingpage}
+
+\hypertarget{risk-first-the-menagerie}{%
+\section{Risk First: The Menagerie}\label{risk-first-the-menagerie}}
+
+By Rob Moffat
+
+Copyright © 2018 Kite9 Ltd.
+
+All rights reserved. No part of this publication may be reproduced,
+distributed, or transmitted in any form or by any means, including
+photocopying, recording, or other electronic or mechanical methods,
+without the prior written permission of the publisher, except in the
+case of brief quotations embodied in critical reviews and certain other
+noncommercial uses permitted by copyright law. For permission requests,
+write to the publisher, addressed ``Attention: Permissions
+Coordinator,'' at the address below.
+
+ISBN: tbd.
+
+\hypertarget{credits}{%
+\subsection{Credits}\label{credits}}
+
+tbd
+
+Cover Images: Biodiversity Heritage Library. Biologia
+Centrali-Americana. Insecta. Rhynchota. Hemiptera-Homoptera. Volume 1
+(1881-1905)
+
+Cover Design By P. Moffat (\texttt{peter@petermoffat.com})
+
+Thanks to:
+
+\hypertarget{books-in-the-series}{%
+\subsection{Books In The Series}\label{books-in-the-series}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Risk First: The Menagerie:} Book one of the
+  \textbf{Risk-First} series argues the case for viewing \emph{all} of
+  the activities on a software project through the lens of
+  \emph{managing risk}. It introduces the menagerie of different risks
+  you're likely to meet on a software project, naming and classifying
+  them so that we can try to understand them better.
+\item
+  \textbf{Risk First: Tools and Practices:} Book two of the \textbf{Risk
+  First} series explores the relationship between software project risks
+  and the tools and practices we use to mitigate them. Due for
+  publication in 2020.
+\end{itemize}
+
+\hypertarget{online}{%
+\subsection{Online}\label{online}}
+
+Material for the books is freely available to read, drawn from
+\texttt{risk-first.org}.
+
+\hypertarget{published-by}{%
+\subsection{Published By}\label{published-by}}
+
+\begin{verbatim}
+Kite9 Ltd.
+14 Manor Close
+Colchester
+CO6 4AR
+\end{verbatim}
+
+\setcounter{tocdepth}{0}
+\tableofcontents
+
+\hypertarget{preface}{%
+\chapter{Preface}\label{preface}}
+
+Welcome to Risk-First!
+
+Let's cover some of the big questions up-front: The why, what, who, how
+and where of \emph{The Menagerie}.
+
+\hypertarget{why}{%
+\section{Why}\label{why}}
+
+\begin{quote}
+``Scrum, Waterfall, Lean, Prince2: what do they all have in common?''
+\end{quote}
+
+I've started this because, on my career journey, I've noticed that the
+way I do things doesn't seem to match up with the way the books
+\emph{say} it should be done. And, I found this odd and wanted to
+explore it further. Hopefully, you, the reader, will find something of
+use in this.
+
+I started with this observation: \emph{Development Teams} put a lot of
+faith in methodology. Sometimes, this faith is often so strong it
+borders on religion. (Which in itself is a concern.) For some, this is
+\textbf{Prince2}. For others, it might be \textbf{Lean} or
+\textbf{Agile}.
+
+\emph{Developers} put a lot of faith in \emph{particular tools} too.
+Some developers are pro-or-anti-Java, others are pro-or-anti-XML. All of
+them have their views coloured by their \emph{experiences} (or lack of)
+with these tools. Was this because their past projects \emph{succeeded}
+or \emph{failed} because of them?
+
+As time went by, I came to see that the choice of methodology, process
+or tool was contingent on the problem being solved, and the person
+solving the problem. We don't face a shortage of tools in IT, or a
+shortage of methodologies, or a shortage of practices. Essentially, that
+all the tools and methodologies that the industry had supplied were
+there to help \emph{minimize the risk of my project failing}.
+
+This book considers that perspective: that building software is all
+about \emph{managing risk}, and that these methodologies are
+acknowledgements of this fact, and they differ because they have
+\emph{different ideas} about which are the most important \emph{risks to
+manage}.
+
+\hypertarget{what-this-is}{%
+\section{What This Is}\label{what-this-is}}
+
+Hopefully, after reading this, you'll come away with:
+
+\begin{itemize}
+\tightlist
+\item
+  An appreciation of how risk underpins everything we do as developers,
+  whether we want it to or not.
+\item
+  A framework for evaluating methodologies, tools and practices and
+  choosing the right one for the task-at-hand.
+\item
+  A recontextualization of the software process as being an exercise in
+  mitigating different kinds of risk.
+\item
+  The tools to help you decide when a methodology or tool is
+  \emph{letting you down}, and the vocabulary to argue for when it's a
+  good idea to deviate from it.
+\end{itemize}
+
+This is not intended to be a rigorously scientific work: I don't believe
+it's possible to objectively analyze a field like software development
+in any meaningful, statistically significant way. (For one, things just
+change \textbf{too fast}.)
+
+\begin{quote}
+``I have this Pattern''
+\end{quote}
+
+Does that diminish it? If you have visited the \textbf{TVTropes}
+website, you'll know that it's a set of web-pages describing
+\emph{common patterns} of narrative, production, character design etc.
+to do with fiction. For example:
+
+\begin{quote}
+tbd.
+\end{quote}
+
+Is it scientific? No.~Is it correct? Almost certainly. TVTropes is a set
+of \emph{empirical patterns} for how stories on TV and other media work.
+It's really useful, and a lot of fun. (Warning: it's also incredibly
+addictive).
+
+In the same way, tbd, the tbd published a book called ``Design Patterns:
+tbd''. Which shows you patterns of \emph{structure} within
+Object-Oriented programming:
+
+\begin{quote}
+tbd.
+\end{quote}
+
+\hypertarget{patterns-for-practitioners}{%
+\subsection{Patterns For
+Practitioners}\label{patterns-for-practitioners}}
+
+This book aimed to be a set of \emph{useful} patterns which
+practitioners could use in their software to achieve certain goals. ``I
+have this pattern'' was a phrase used to describe how they had seen a
+certain set of constraints before, and how they had solved it in
+software.
+
+This book was a set of experts handing down their battle-tested
+practices for other developers to use, and, whether you like patterns or
+not, knowing them is an important part of being a software developer, as
+you will see them used everywhere you go and probably use them yourself.
+
+In the same way, this book aims to be a set of \emph{Patterns for
+Software Risk}. Hopefully after reading this book, you will see where
+risk hides in software projects, and have a name for it when you see it.
+
+\hypertarget{towards-a-periodic-table}{%
+\subsection{Towards a ``Periodic
+Table''}\label{towards-a-periodic-table}}
+
+In the latter chapters of ``The Menagerie'' we try to assemble these
+risk patterns into a cohesive whole. Projects fail because of risks, and
+risks arise from predictable sources.
+
+\hypertarget{what-this-is-not}{%
+\subsection{What This is Not}\label{what-this-is-not}}
+
+This is not intended to be a rigorously scientific work: I don't believe
+it's possible to objectively analyze a field like software development
+in any meaningful, statistically significant way. (For one, things just
+change \textbf{too fast}.)
+
+Neither is this site isn't going to be an exhaustive guide of every
+possible software development practice and methodology. That would just
+be too long and tedious.
+
+Neither is this really a practitioner's guide to using any particular
+methodology: If you've come here to learn the best way to do
+\textbf{Retrospectives}, then you're in the wrong place. There are
+plenty of places you can find that information already. Where possible,
+this site will link to or reference concepts on Wikipedia or the wider
+internet for further reading on each subject.
+
+\hypertarget{who}{%
+\section{Who}\label{who}}
+
+This work is intended to be read by people who work on software
+projects, and especially those who are involved in managing software
+projects.
+
+If you work collaboratively with other people in a software process, you
+should find Risk-First a useful lexicon of terms to help describe the
+risks you face.
+
+But here's a warning: This is going to be a depressing book to read. It
+is book one of a two-book series, but in \textbf{Book One} you only get
+to meet the bad guy.
+
+While \textbf{Book Two} is all about \emph{how to succeed}, This book is
+all about how projects \emph{fail}. In it, we're going to try and put
+together a framework for understanding the risk of failure, in order
+that we can reconstruct our understanding of our activities on a project
+based on avoiding it.
+
+So, if you are interested in \emph{avoiding your project failing}, this
+is probably going to be useful knowledge.
+
+\hypertarget{for-developers}{%
+\subsection{For Developers}\label{for-developers}}
+
+Risk-First is a tool you can deploy to immediately improve your ability
+to plan your work.
+
+Frequently, as developers we find software methodologies ``done to us''
+from above. Risk-First is a toolkit to help \emph{take apart}
+methodologies like \textbf{Scrum}, \textbf{Lean} and \textbf{Prince2},
+and understand them. Methodologies are \emph{bicycles}, rather than
+\emph{religions}. Rather than simply \emph{believing}, we can take them
+apart and see how they work.
+
+\hypertarget{for-project-managers-and-team-leads}{%
+\subsection{For Project Managers and Team
+Leads}\label{for-project-managers-and-team-leads}}
+
+All too often, Project Managers don't have a full grasp of the technical
+details of their projects. And this is perfectly normal, as the
+specialization belongs below them. However, projects fail because risks
+materialize, and risks materialize because the devil is in those
+details.
+
+This seems like a lost cause, but there is hope: the ways in which risks
+materialize on technical projects is the same every time. With
+Risk-First we are attempting to name each of these types of risk, which
+allows for a dialog with developers about which risks they face, and the
+order they should be tackled.
+
+Risk-First allows a project manager to pry open the black box of
+development and talk with developers about their work, and how it will
+affect the project. It is another tool in the (limited) arsenal of
+techniques a project manager can bring to bear on the task of delivering
+a successful project.
+
+\hypertarget{how}{%
+\section{How}\label{how}}
+
+One of the original proponents of the \textbf{Agile Manifesto}, Kent
+Beck, begins his book \textbf{Extreme Programming} by stating:
+
+``It's all about risk'' \textgreater{} Kent Beck
+
+This is a promising start. From there, he introduces his methodology,
+\textbf{Extreme Programming}, and explains how you can adopt it in your
+team, the features to observe and the characteristics of success and
+failure. However, while \emph{Risk} has clearly driven the conception of
+\textbf{Extreme Programming}, there is no clear model of software risk
+underpinning the work, and the relationship between the practices he
+espouses and the risks he is avoiding are hidden.
+
+In this book, we are going to introduce a model of software project
+risk. This means that in \textbf{Book Two} (Risk-First: Tools and
+Practices), we can properly analyse \textbf{Extreme Programming} (and
+Scrum, Waterfall, Lean and all the others) and \emph{understand} what
+drives them. Since they are designed to deliver successful software
+projects, they must be about mitigate risks, and we will uncover
+\emph{exactly which risks are mitigated} and \emph{how they do it}.
+
+\hypertarget{where}{%
+\section{Where}\label{where}}
+
+All of the material for this book is available Open Source on
+\href{https://github.com}{github.com}, and at the
+\href{https://risk-first.org}{risk-first.org} website. Please visit,
+your feedback is appreciated.
+
+There is no compulsion to buy a print or digital version of the book,
+but we'd really appreciate the support. So, if you've read this and
+enjoyed it, how about buying a copy for someone else to read?
+
+\hypertarget{a-note-on-references}{%
+\subsection{A Note on References}\label{a-note-on-references}}
+
+Where possible, references are to the
+\href{https://wikipedia.org}{Wikipedia} website. Wikipedia is not
+perfect. There is a case for linking to the original articles and
+papers, but by using Wikipedia references are free and easy for everyone
+to access, and hopefully will exist for a long time into the future.
+
+On to \textbf{The Executive Summary}
+
+\hypertarget{executive-summary}{%
+\chapter{Executive Summary}\label{executive-summary}}
+
+\hypertarget{there-are-lots-of-ways-of-running-software-projects}{%
+\section{1. There are Lots of Ways of Running Software
+Projects}\label{there-are-lots-of-ways-of-running-software-projects}}
+
+There are lots of different ways to look at a project. For example,
+metrics such as ``number of open tickets'', ``story points'', ``code
+coverage'' or ``release cadence'' give us a numerical feel for how
+things are going and what needs to happen next. We also judge the health
+of projects by the practices used on them - \textbf{Continuous
+Integration}, \textbf{Unit Testing} or \textbf{Pair Programming}, for
+example.
+
+Software methodologies, then, are collections of tools and practices:
+``Agile'', ``Waterfall'', ``Lean'' or ``Phased Delivery'' (for example)
+all suggest different approaches to running a project, and are
+opinionated about the way they think projects should be done and the
+tools that should be used.
+
+None of these is necessarily more ``right'' than another- they are
+suitable on different projects at different times.
+
+A key question then is: \textbf{how do we select the right tools for the
+job?}
+
+\hypertarget{we-can-look-at-projects-in-terms-of-risks}{%
+\section{2. We can Look at Projects in Terms of
+Risks}\label{we-can-look-at-projects-in-terms-of-risks}}
+
+One way to examine a project in-flight is by looking at the risks it
+faces.
+
+Commonly, tools such as RAID logs and RAG status reporting are used.
+These techniques should be familiar to project managers and developers
+everywhere.
+
+However, the Risk-First view is that we can go much further: that each
+item of work being done on the project is mitigating a particular risk.
+Risk isn't something that just appears in a report, it actually drives
+\emph{everything we do}.
+
+For example:
+
+\begin{itemize}
+\tightlist
+\item
+  A story about improving the user login screen can be seen as reducing
+  \emph{the risk of users not signing up}.
+\item
+  A task about improving the health indicators could be seen as
+  mitigating \emph{the risk of the application failing and no-one
+  reacting to it}.
+\item
+  Even a task as basic as implementing a new function in the application
+  is mitigating \emph{the risk that users are dissatisfied and go
+  elsewhere}.
+\end{itemize}
+
+\textbf{One assertion of }Risk-First** therefore, is that every action
+you take on a project is to mitigate some risk.**
+
+\hypertarget{we-can-break-down-risks-on-a-project-methodically}{%
+\section{3. We Can Break Down Risks on a Project
+Methodically}\label{we-can-break-down-risks-on-a-project-methodically}}
+
+Although risk is usually complicated and messy, other industries have
+found value in breaking down the types of risks that affect them and
+addressing them individually.
+
+For example:
+
+\begin{itemize}
+\tightlist
+\item
+  In manufacturing, \emph{tolerances} allow for calculating the
+  likelihood of defects in production.
+\item
+  In finance, reserves are commonly set aside for the risks of
+  stock-market crashes, and teams are structured around monitoring these
+  different risks.
+\item
+  The insurance industry is founded on identifying particular risks and
+  providing financial safety-nets for when they occur, such as death,
+  injury, accident and so on.
+\end{itemize}
+
+Software risks are difficult to quantify, and mostly, the effort
+involved in doing so \emph{exactly} would outweigh the benefit.
+Nevertheless, there is value in spending time building
+\emph{classifications of risk for software}. That's what Risk-First
+does: describes the set of \emph{risk patterns} we see every day on
+software projects.
+
+With this in place, we can:
+
+\begin{itemize}
+\tightlist
+\item
+  Talk about the types of risks we face on our projects, using an
+  appropriate language.
+\item
+  Expose \textbf{Hidden Risks} that we hadn't considered before.
+\item
+  Weigh the risks against each other, and decide which order to tackle
+  them.
+\end{itemize}
+
+\hypertarget{we-can-analyse-tools-and-techniques-in-terms-of-how-they-mitigate-risk}{%
+\section{4. We Can Analyse Tools and Techniques in Terms of how they
+Mitigate
+Risk}\label{we-can-analyse-tools-and-techniques-in-terms-of-how-they-mitigate-risk}}
+
+If we accept the assertion above that \emph{all} the actions we take on
+a project are about mitigating risks, then it stands to reason that the
+tools and techniques available to us on a project are there for
+mitigating different types of risks.
+
+For example:
+
+\begin{itemize}
+\tightlist
+\item
+  If we do a \textbf{Code Review}, we are partly trying to mitigate the
+  risks of bugs slipping through into production, and also mitigate the
+  \textbf{Key-Man Risk} of knowledge not being widely-enough shared.
+\item
+  If we write \textbf{Unit Tests}, we're also mitigating the risk of
+  bugs going to production, but we're also mitigating against future
+  changes breaking our existing functionality.
+\item
+  If we enter into a \textbf{contract with a supplier}, we are
+  mitigating the risk of the supplier vanishing and leaving us exposed.
+  With the contract in place, we have legal recourse against this risk.
+\end{itemize}
+
+\textbf{Different tools are appropriate for mitigating different types
+of risks.}
+
+\hypertarget{different-methodologies-for-different-risk-profiles}{%
+\section{5. Different Methodologies for Different Risk
+Profiles}\label{different-methodologies-for-different-risk-profiles}}
+
+In the same way that our tools and techniques are appropriate to dealing
+with different risks, the same is true of the methodologies we use on
+our projects. We can use a Risk-First approach to examine the different
+methodologies, and see which risks they address.
+
+For example:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Agile} methodologies prioritise mitigating the risk that
+  requirements capture is complicated, error-prone and that requirements
+  change easily.
+\item
+  \textbf{Waterfall} takes the view that coding effort is an expensive
+  risk, and that we should build plans up-front to avoid it.
+\item
+  \textbf{Lean} takes the view that risk lies in incomplete work and
+  wasted work, and aims to minimize that.
+\end{itemize}
+
+Although many developers have a methodology-of-choice, the argument here
+is that there are tradeoffs with all of these choices. Methodologies are
+like \emph{bicycles}, rather than \emph{religions}. Rather than simply
+\emph{believing}, we can take them apart and see how they work.
+
+\textbf{We can place methodologies within a framework, and show how
+choice of methodology is contingent on the risks faced.}
+
+\hypertarget{driving-development-with-a-risk-first-perspective}{%
+\section{6. Driving Development With a Risk-First
+Perspective}\label{driving-development-with-a-risk-first-perspective}}
+
+We have described a model of risk within software projects, looking
+something like this:
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/pattern_language-400dpi.png}
+\caption{Methdologies, Risks, Practices}
+\end{figure}
+
+How do we take this further?
+
+The first idea we explore is that of the \textbf{Risk Landscape}:
+Although the software team can't remove risk from their project, they
+can take actions that move them to a place in the \textbf{Risk
+Landscape} where the risks on the project are more favourable than where
+they started.
+
+From there, we examine basic risk archetypes you will encounter on the
+software project, to build up a \textbf{Taxonomy of Software Risk}, and
+look at which specific tools you can use to mitigate each kind of risk.
+
+Then, we look at different software practices, and how they mitigate
+various risks. Beyond this we examine the question: \emph{how can a
+Risk-First approach inform the use of this technique?}
+
+For example:
+
+\begin{itemize}
+\tightlist
+\item
+  If we are introducing a \textbf{Sign-Off} in our process, we have to
+  balance the risks it \emph{mitigates} (coordination of effort, quality
+  control, information sharing) with the risks it \emph{introduces}
+  (delays and process bottlenecks).
+\item
+  If we have \textbf{Redundant Systems}, this mitigates the risk of a
+  \emph{single point of failure}, but introduces risks around
+  \emph{synchronizing data} and \emph{communication} between the
+  systems.
+\item
+  If we introduce \textbf{Process}, this may make it easier to
+  \emph{coordinate as a team} and \emph{measure performance} but may
+  lead to bureaucracy, focusing on the wrong goals or over-rigid
+  interfaces to those processes.
+\end{itemize}
+
+Risk-First aims to provide a framework in which we can \emph{analyse
+these choices} and weigh up \emph{accepting} versus \emph{mitigating}
+risks.
+
+\textbf{Still interested? Then dive into reading }the
+introduction\textbf{.}
+
+\mainmatter
+\part{Introduction}
+
+\part{Risk}
+
+\part{Preview}
+
+book1/Part3.md practices/Estimates.md
+
+\backmatter
+
+\hypertarget{glossary}{%
+\chapter{Glossary}\label{glossary}}
+
+\hypertarget{abstraction}{%
+\section{Abstraction}\label{abstraction}}
+
+\hypertarget{feedback-loop}{%
+\section{Feedback Loop}\label{feedback-loop}}
+
+\hypertarget{goal-in-mind}{%
+\section{Goal In Mind}\label{goal-in-mind}}
+
+\hypertarget{internal-model}{%
+\section{Internal Model}\label{internal-model}}
+
+The most common use for \textbf{Internal Model} is to refer to the model
+of reality that you or I carry around in our heads. You can regard the
+concept of \textbf{Internal Model} as being what you \emph{know} and
+what you \emph{think} about a certain situation.
+
+Obviously, because we've all had different experiences, and our brains
+are wired up differently, everyone will have a different
+\textbf{Internal Model} of reality.
+
+Alternatively, we can use the term \textbf{Internal Model} to consider
+other viewpoints: - Within an organisation, we might consider the
+\textbf{Internal Model} of a \emph{team of people} to be the shared
+knowledge, values and working practices of that team. - Within a
+software system, we might consider the \textbf{Internal Model} of a
+single processor, and what knowledge it has of the world. - A codebase
+is a team's \textbf{Internal Model} written down and encoded as
+software.
+
+An internal model \emph{represents} reality: reality is made of atoms,
+whereas the internal model is information.
+
+\hypertarget{meet-reality}{%
+\section{Meet Reality}\label{meet-reality}}
+
+\hypertarget{risk}{%
+\section{Risk}\label{risk}}
+
+\hypertarget{attendant-risk}{%
+\subsection{Attendant Risk}\label{attendant-risk}}
+
+\hypertarget{hidden-risk}{%
+\subsection{Hidden Risk}\label{hidden-risk}}
+
+\hypertarget{mitigated-risk}{%
+\subsection{Mitigated Risk}\label{mitigated-risk}}
+
+\hypertarget{take-action}{%
+\section{Take Action}\label{take-action}}
+
+\end{document}  
