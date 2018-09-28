@@ -1,6 +1,10 @@
 ![Draft](images/state/draft.png)
 
-As we discussed in the section on [Abstraction](), our understanding of the world is entirely informed by the names we give things and the abstractions we create.  (In the same way, **Risk-First** is about _identifying patterns_ within software development and calling them out.)  Our [Internal Models]() are a model of the world based on these patterns, and their relationships.
+As we discussed in the section on [Abstraction](), our understanding of the world is entirely informed by the names we give things and the abstractions we create.  
+
+(In the same way, **Risk-First** is about _identifying patterns_ within software development and calling them out.)  
+
+Our [Internal Models](Glossary#internal-model) are a model of the world based on these patterns, and their relationships.
 
 So there is a translation going on here: observations about the arrangement of _atoms_ in the world get turned into patterns of _information_ (measured in bits and bytes).  
 
@@ -8,23 +12,24 @@ So there is a translation going on here: observations about the arrangement of _
 
 [Map And Territory Risk]() is the risk we face because we base our behaviour on our [Internal Models]() rather than reality itself.  It comes from the expression "Confusing the Map for the Territory", attributed to Alfred Korzybski:
 
-> "Polish-American scientist and philosopher Alfred Korzybski remarked that "the map is not the territory" and that "the word is not the thing", encapsulating his view that an abstraction derived from something, or a reaction to it, is not the thing itself. Korzybski held that many people _do_ confuse maps with territories, that is, confuse models of reality with reality itself." - [Map-Territory Relation, _Wikipedia_](https://en.wikipedia.org/wiki/Map–territory_relation)
+> "Polish-American scientist and philosopher Alfred Korzybski remarked that "the map is not the territory"  and that "the word is not the thing", encapsulating his view that an abstraction derived from something, or a reaction to it, is not the thing itself. Korzybski held that many people _do_ confuse maps with territories, that is, confuse models of reality with reality itself." - [Map-Territory Relation, _Wikipedia_](https://en.wikipedia.org/wiki/Map–territory_relation)
 
-![Map And Territory Risk](images/generated/map-and-territory-risk.png)
-
-In this section, we're going to make a case for analysing [Map and Territory Risk]() along the same axes we introduced for [Feature Risk](), that is **Fitness**, **Audience** and **Evolution**.  After that, we are going to widen the scope by looking at [Map and Territory Risk]() within the context of **machines**, **people**, **hierarchies** and **markets**.
+In this section, we're going to make a case for analysing [Map and Territory Risk]() along the same axes we introduced for [Feature Risk](Feature-Risk), that is **Fitness**, **Audience** and **Evolution**.  After that, we are going to widen the scope by looking at [Map and Territory Risk]() within the context of **machines**, **people**, **hierarchies** and **markets**.
 
 tbd - diagram of how our actions are based on the map, not the territory.
 
 ## Fitness
 
+In the picture shown here, from the Telegraph newspaper, the driver _trusted_ the SatNav to such an extent that he didn't pay attention to the road-signs around him, and ended up getting stuck.  
+
+This wasn't borne of stupidity, but experience:  SatNavs are pretty reliable. _So many times_ the SatNav had been right, that the driver stopped _questioning its fallibility_.  
+
 ![Sat Nav Blunder Sends Asda Van Crashing Narrow Footpath - Telegraph Newspaper](images/sat_nav.png)
 
-In the picture shown here, from the Telegraph newspaper, the driver _trusted_ the SatNav to such an extent that he didn't pay attention to the road-signs around him, and ended up getting stuck.  This wasn't borne of stupidity, but experience:  SatNavs are pretty reliable. _So many times_ the SatNav had been right, that the driver stopped _questioning its fallibility_.  
-
 So, there are two [Map and Territory Risks]() here:
- - The [Internal Model]() of the _SatNav_ contained information that was wrong:  the track had been marked up as a road, rather than a path.  
- - The [Internal Model]() of the _driver_ was wrong:   his abstraction of "the SatNav is always right" turned out to be only _mostly_ accurate.  
+
+- The [Internal Model]() of the _SatNav_ contained information that was wrong:  the track had been marked up as a road, rather than a path.  
+- The [Internal Model]() of the _driver_ was wrong:   his abstraction of "the SatNav is always right" turned out to be only _mostly_ accurate.  
 
 ## Internal Models as Dependencies, Features
 
@@ -36,68 +41,7 @@ In the [Feature Risk]() section, we broke down [Feature Risk]() on three axes:  
 
 Lets do this again and see how each type of [Feature Risk]() can manifest in the [Internal Model]():
 
-<table>
-  <tr>
-    <th>Dimension</th>
-    <th>Feature Risk</th>
-    <th>Map and Territory Examples</th>
-  </tr>
-  <tr>
-    <td>Fitness</td>
-    <td>
-      <ul>
-        <li>Conceptual Integrity Risk</li>
-        <li>Implementation Risk</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>A filing cabinet containing too much junk. </li>
-        <li>Learning things that aren’t useful. </li>
-        <li>Knowing how a car works, but actually needing to know how to drive. </li>
-        <li>Knowing how to program in one language, when another would be more appropriate. </li>
-        <li>Sat Nav had the wrong route. </li>
-        <li>Not quite remembering a recipe properly.</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td>Audience</td>
-    <td>
-      <ul>
-        <li>Feature Access Risk</li>
-        <li>Market Risk</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>Memes. </li>
-        <li>Demand for courses. </li>
-        <li>Metrics.</li>
-        <li>Echo-chambers. </li>
-        <li>Shared values which exclude certain people. </li>
-        <li>Ideas going “out of fashion”.</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td>Evolution</td>
-    <td>
-      <ul>
-        <li>Feature Drift Risk</li>
-        <li>Regression Risk</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>Knowing outdated tools. </li>
-        <li>Writing last year’s date on the cheque. </li>
-        <li>The bank sending letters to your old address. </li>
-        <li>Forgetting things</li>
-      </ul>
-    </td>
-  </tr>
-</table>
+![Feature Risk, as manifested in the Internal Model](images/generated/map_and_territory_table_1_sideways.png)
 
 As with [Features]() in a product, Information in an [internal model]() has at least these three dimensions:
 
@@ -108,6 +52,7 @@ As with [Features]() in a product, Information in an [internal model]() has at l
 ## Audience
 
 We already know a lot about [Internal Models]() and audience, as these have been the subject of previous sections:
+
  - We know from looking at [Communication Risk]() that communication allows us to _share_ information between [Internal Models](). 
  - We know from [Coordination Risk]() the difficulties inherent in aligning [Internal Models]() so that they cooperate.
  - Job markets show us that there is demand for people with certain _skills_.  This demonstrates to us that [Market Risk]() is as applicable to [Internal Models]() containing certain information as it is to products containing [Features](Feature-Risk).  This was the focus of the [Ecosystem]() discussion in [Boundary Risk](Boundary-Risk).
@@ -131,6 +76,7 @@ The five phases (and the "Hype" itself) are shown in the chart below, with the t
 ![Hype Cycle, along with Map & Territory Risk](images/hype-cycle.png)
 
 Also in this diagram we are showing where the hype originates:
+
  - The **saturation** of the idea within the audience (a dotted line).
  - The **amount known** about the idea by the audience (a [Learning Curve](), if you will, a dashed line).
  
@@ -161,29 +107,34 @@ It might be:
 - **Release cadence**:  number of releases a team performs, per month, say.
 
 With some skill, they may be able to _correlate_ this metric against some other more abstract measure of success.  For example:
-- "quality is correlated with more releases" 
-- "user-satisfaction is correlated with SLOC"
-- "revenue is correlated with response time"
+
+> "quality is correlated with more releases" 
+> "user-satisfaction is correlated with SLOC"
+> "revenue is correlated with response time"
 
 Because the _thing on the right_ is easier to measure than _the thing on the left_, it becomes used as a proxy (or, Map) for the thing they are really interested in (the Territory).  At this point, it's _easy_ to communicate this idea with the rest of the team, and _the market value of the idea is high_:  it is a useful representation of reality, which is shown to be accurate at a particular point in time. 
  
-But _correlation_ doesn't imply _causation_.  The _cause_ might be different:  
+But _correlation_ doesn't imply _causation_.  The _cause_ might be different:
+  
  - quality and number of releases might both be down to the simplicity of the product.
  - user satisfaction and SLOC might both be down to the calibre of the developers.
  - response time and revenue might both be down to clever team planning.
- 
-Metrics are _seductive_ because they simplify reality and are easily communicated.  But they _inherently_ contain [Map and Territory Risk](): By relying _only_ on the metrics, you're not really _seeing_ the reality.  The devil is in the detail.
+
+Metrics are seductive because they simplify reality and are easily communicated.  But they _inherently_ contain [Map and Territory Risk](Map-and-territory-risk): By relying _only_ on the metrics, you're not really _seeing_ the reality.  
+
+The devil is in the detail.
 
 ### Reality Evolves
 
 In the case of metrics, this is where they start being used for more than just indicators, but as measures of performance or targets:
+
  - If a team is _told_ to do lots of releases, they will perform lots of releases *at the expense of something else*.
  - If team members are promoted according to SLOC, they will make sure their code takes up as many lines as possible.
  - In the UK, ambulances were asked to wait before admitting patients to Emergency wards, in order that hospitals could [meet their targets](https://en.wikipedia.org/wiki/NHS_targets).
   
 Some of this seems obvious:  _Of course_ SLOC is a terrible measure performance!  We're not that stupid anymore.  The problem is, it's not so much the _choice_ of metric, but the fact that _all_ metrics merely approximate reality with a few numbers.  The map is _always_ simpler than the territory, therefore there can be no perfect metrics.
 
-In the same way that [markets evolve to demand more features](), our behaviour evolves to incorporate new ideas.  The more popular an idea is, the more people will modify their behaviour as a result of it, and the more the world will change.   Will the idea still be useful as the world adapts?   Although the [Hype Cycle]() model doesn't cover it, ideas and products all eventually have their day and decline in usefulness.
+In the same way that [markets evolve to demand more features](Feature-Risk#red-queen-risk), our behaviour evolves to incorporate new ideas.  The more popular an idea is, the more people will modify their behaviour as a result of it, and the more the world will change.   Will the idea still be useful as the world adapts?   Although the [Hype Cycle]() model doesn't cover it, ideas and products all eventually have their day and decline in usefulness.
 
 ### Bad Ideas
 
@@ -220,9 +171,7 @@ This article identifies the following process:
 - **De-sensing**: VW Executives ignored _The Territory_ society around them (such as the green movement), ensuring their maps were out of date.  The top-down culture made it hard for reality to propagate back up the hierarchy.  
 - **Hubris/Absencing**:  They pursued their own metrics of _volume_ and _cost_, rather than seeking out others (a la the Availability Heuristic Bias).  That is, focusing on their own _Map_, which is _easier_ than checking the _Territory_.  (See [Hubris](Agency-Risk#hubris--ego) in the [Agency Risk]() section).
 - **Deception**:  Backed into a corner, engineers had no choice but to find "creative" ways to meet the metrics.
-- **Destruction**: Eventually, the truth comes out, to the detriment of the company, the environment and the shareholders.
-
-As the article's title summarizes "A fish rots from the head down".
+- **Destruction**: Eventually, the truth comes out, to the detriment of the company, the environment and the shareholders.  As the article's title summarizes "A fish rots from the head down".
 
 ### Personal Example
 
@@ -242,14 +191,19 @@ When faced with so many mis-aligned objectives, it seemed completely hopeless to
 
 ### Picking Fights
 
-It feels like there's no way back from that.  All of life might well be a big [Map and Territory]() illusion.  But let's analyse just a bit:
+It feels like there's no way back from that.  
+
+All of life might well be a big [Map and Territory]() illusion.  But let's analyse just a bit:
+
  - At each layer, the objectives changed.  But, they impacted on the objectives of the layer below.
  - Therefore, it seems like the more layers you have, the less likely it is that your objectives become inconsistent between the lower and higher levels.
  - On a new project, it seems like a good idea to model this stuff:  does the objective of the work you're about to undertake "align" with the objectives at a higher level?  
  
 Trying to spot [Map and Territory Risk]() ahead-of-time in this manner seems like a useful way of trying to avoid [Vanity Projects](Agency-Risk#pet-project), and, if you are good at it, allows you to see which [Goals]() in the organisation are fragile and likely to change.  However, usually, if you are working in a team, you have limited agency to decide which projects you feel are valuable.  
 
-This comes down to a personal decision: do you want to spend time working on projects that you know are going in the bin?  Some developers have the attitude that, so long as they get paid, it doesn't matter.  But others are in it for the satisfaction of the work itself, so this ends up being a personal call.  (This theme will be developed further in [Staging and Classifying](Staging-and-Classifying).)
+This comes down to a personal decision: do you want to spend time working on projects that you know are going in the bin?  Some developers have the attitude that, so long as they get paid, it doesn't matter.  But others are in it for the satisfaction of the work itself, so this ends up being a personal call.  
+
+(This theme will be developed further in [Staging and Classifying](Staging-and-Classifying).)
 
 ## Markets
 
@@ -275,6 +229,9 @@ This is a _small example_ from a much larger, closely argued book, and it's wort
 As usual, this section forms a grab-bag of examples in a complex topic.  But it's time to move on as there is one last stop we have to make on the [Risk Landscape](), and that is to look at [Operational Risk]().  
 
 (NB: The Hype Cycle model is available in **Numbers** form [here](https://github.com/risk-first/website/blob/master/RiskMatrix.numbers).) 
+
+![Map And Territory Risk](images/generated/map-and-territory-risk.png)
+
 
 (talk about how operational risk is an extension of this).  tbd
 

@@ -1,5 +1,5 @@
 % Page setup
-\documentclass[fontsize=12pt]{memoir}
+\documentclass[12pt]{memoir}
 \setstocksize{9.69in}{7.44in}
 \settrimmedsize{\stockheight}{\stockwidth}{*}
 \setlrmarginsandblock{3.5cm}{2.5cm}{*}
@@ -16,15 +16,8 @@
 \usepackage{amssymb}
 
 %SetFonts
-\usepackage{amssymb,amsmath}
-\usepackage{ifxetex,ifluatex}
-\usepackage{fontspec}
-\usepackage[]{}
-\usepackage[unicode=true]{hyperref}
-\usepackage{lmodern}
-\setmainfont{Constantia}
-\setsansfont{Menlo}
-\setmonofont[Mapping=tex-ansi]{Menlo}
+\usepackage[T1]{fontenc}
+\usepackage{newpxtext,newpxmath}
 
 %Images
 \usepackage{graphicx}
@@ -37,20 +30,21 @@
 \makeatother
 \let\Oldincludegraphics\includegraphics
 \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
-\suppressfloats[t]
-\suppressfloats[b]
+\usepackage{rotating}
+
 
 % Links
+\usepackage[unicode=true]{hyperref}
 \hypersetup{breaklinks=true,
             bookmarks=true,
-            pdfauthor={Rob Moffat},
-            pdftitle={r1: Risk-First Software Development},
+            pdfauthor={},
+            pdftitle={},
             colorlinks=false,
             urlcolor=black,
             linkcolor=black,
             pdfborder={0 0 0}}
 
-% Footers / Page Numbers            
+% Footers / Page Numbers            (FIX ME)
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhead{}
@@ -65,15 +59,17 @@
 \makeatletter
 \def\fnum@table{\tablename~\thetable}
 \makeatother
+\usepackage{rotating}
 
 % Code Sections
 \usepackage{listings}
 \newcommand{\passthrough}[1]{#1}
-\lstnewenvironment{code}{\lstset{language=Haskell,basicstyle=\small\ttfamily}}{}
+\lstnewenvironment{code}{\lstset{basicstyle=\small\ttfamily}}{}
 
 
 %Links as Notes
 \DeclareRobustCommand{\href}[2]{#2\footnote{\url{#1}}}
+ \renewcommand{\footnotesize}{\fontsize{6.5pt}{8.5pt}\selectfont}
 
 %Sections
 \chapterstyle{veelo}
@@ -85,580 +81,1453 @@
 
 \frontmatter
 
-\title{Risk-First Software Development: The Menagerie}
-\author{Rob Moffat}
-
-\begin{titlingpage}
-
-\hspace{0.05\textwidth}
-
-\centering
-
-{\Huge\bfseries\textsc{Risk-First Software Development}}\\[2\baselineskip]
-
-{\Huge\textit{Volume 1: The Menagerie}}\\[10\baselineskip]
-
-{\Oldincludegraphics[width=0.5\textwidth]{images/R1_logo_grue.png}}\\[10\baselineskip]
-
-{\Huge\textsc{Rob Moffat}}
-
-
-\end{titlingpage}
-
-\hypertarget{risk-first-the-menagerie}{%
-\section{Risk First: The Menagerie}\label{risk-first-the-menagerie}}
-
-By Rob Moffat
-
-Copyright © 2018 Kite9 Ltd.
-
-All rights reserved. No part of this publication may be reproduced,
-distributed, or transmitted in any form or by any means, including
-photocopying, recording, or other electronic or mechanical methods,
-without the prior written permission of the publisher, except in the
-case of brief quotations embodied in critical reviews and certain other
-noncommercial uses permitted by copyright law. For permission requests,
-write to the publisher, addressed ``Attention: Permissions
-Coordinator,'' at the address below.
-
-ISBN: tbd.
-
-\hypertarget{credits}{%
-\subsection{Credits}\label{credits}}
-
-tbd
-
-Cover Images: Biodiversity Heritage Library. Biologia
-Centrali-Americana. Insecta. Rhynchota. Hemiptera-Homoptera. Volume 1
-(1881-1905)
-
-Cover Design By P. Moffat (\texttt{peter@petermoffat.com})
-
-Thanks to:
-
-\hypertarget{books-in-the-series}{%
-\subsection{Books In The Series}\label{books-in-the-series}}
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Risk First: The Menagerie:} Book one of the
-  \textbf{Risk-First} series argues the case for viewing \emph{all} of
-  the activities on a software project through the lens of
-  \emph{managing risk}. It introduces the menagerie of different risks
-  you're likely to meet on a software project, naming and classifying
-  them so that we can try to understand them better.
-\item
-  \textbf{Risk First: Tools and Practices:} Book two of the \textbf{Risk
-  First} series explores the relationship between software project risks
-  and the tools and practices we use to mitigate them. Due for
-  publication in 2020.
-\end{itemize}
-
-\hypertarget{online}{%
-\subsection{Online}\label{online}}
-
-Material for the books is freely available to read, drawn from
-\texttt{risk-first.org}.
-
-\hypertarget{published-by}{%
-\subsection{Published By}\label{published-by}}
-
-\begin{verbatim}
-Kite9 Ltd.
-14 Manor Close
-Colchester
-CO6 4AR
-\end{verbatim}
-
-\setcounter{tocdepth}{0}
-\tableofcontents
-
-\hypertarget{preface}{%
-\chapter{Preface}\label{preface}}
-
-Welcome to Risk-First!
-
-Let's cover some of the big questions up-front: The why, what, who, how
-and where of \emph{The Menagerie}.
-
-\hypertarget{why}{%
-\section{Why}\label{why}}
-
-\begin{quote}
-``Scrum, Waterfall, Lean, Prince2: what do they all have in common?''
-\end{quote}
-
-I've started this because, on my career journey, I've noticed that the
-way I do things doesn't seem to match up with the way the books
-\emph{say} it should be done. And, I found this odd and wanted to
-explore it further. Hopefully, you, the reader, will find something of
-use in this.
-
-I started with this observation: \emph{Development Teams} put a lot of
-faith in methodology. Sometimes, this faith is often so strong it
-borders on religion. (Which in itself is a concern.) For some, this is
-\textbf{Prince2}. For others, it might be \textbf{Lean} or
-\textbf{Agile}.
-
-\emph{Developers} put a lot of faith in \emph{particular tools} too.
-Some developers are pro-or-anti-Java, others are pro-or-anti-XML. All of
-them have their views coloured by their \emph{experiences} (or lack of)
-with these tools. Was this because their past projects \emph{succeeded}
-or \emph{failed} because of them?
-
-As time went by, I came to see that the choice of methodology, process
-or tool was contingent on the problem being solved, and the person
-solving the problem. We don't face a shortage of tools in IT, or a
-shortage of methodologies, or a shortage of practices. Essentially, that
-all the tools and methodologies that the industry had supplied were
-there to help \emph{minimize the risk of my project failing}.
-
-This book considers that perspective: that building software is all
-about \emph{managing risk}, and that these methodologies are
-acknowledgements of this fact, and they differ because they have
-\emph{different ideas} about which are the most important \emph{risks to
-manage}.
-
-\hypertarget{what-this-is}{%
-\section{What This Is}\label{what-this-is}}
-
-Hopefully, after reading this, you'll come away with:
-
-\begin{itemize}
-\tightlist
-\item
-  An appreciation of how risk underpins everything we do as developers,
-  whether we want it to or not.
-\item
-  A framework for evaluating methodologies, tools and practices and
-  choosing the right one for the task-at-hand.
-\item
-  A recontextualization of the software process as being an exercise in
-  mitigating different kinds of risk.
-\item
-  The tools to help you decide when a methodology or tool is
-  \emph{letting you down}, and the vocabulary to argue for when it's a
-  good idea to deviate from it.
-\end{itemize}
-
-This is not intended to be a rigorously scientific work: I don't believe
-it's possible to objectively analyze a field like software development
-in any meaningful, statistically significant way. (For one, things just
-change \textbf{too fast}.)
-
-\begin{quote}
-``I have this Pattern''
-\end{quote}
-
-Does that diminish it? If you have visited the \textbf{TVTropes}
-website, you'll know that it's a set of web-pages describing
-\emph{common patterns} of narrative, production, character design etc.
-to do with fiction. For example:
-
-\begin{quote}
-tbd.
-\end{quote}
-
-Is it scientific? No.~Is it correct? Almost certainly. TVTropes is a set
-of \emph{empirical patterns} for how stories on TV and other media work.
-It's really useful, and a lot of fun. (Warning: it's also incredibly
-addictive).
-
-In the same way, tbd, the tbd published a book called ``Design Patterns:
-tbd''. Which shows you patterns of \emph{structure} within
-Object-Oriented programming:
-
-\begin{quote}
-tbd.
-\end{quote}
-
-\hypertarget{patterns-for-practitioners}{%
-\subsection{Patterns For
-Practitioners}\label{patterns-for-practitioners}}
-
-This book aimed to be a set of \emph{useful} patterns which
-practitioners could use in their software to achieve certain goals. ``I
-have this pattern'' was a phrase used to describe how they had seen a
-certain set of constraints before, and how they had solved it in
-software.
-
-This book was a set of experts handing down their battle-tested
-practices for other developers to use, and, whether you like patterns or
-not, knowing them is an important part of being a software developer, as
-you will see them used everywhere you go and probably use them yourself.
-
-In the same way, this book aims to be a set of \emph{Patterns for
-Software Risk}. Hopefully after reading this book, you will see where
-risk hides in software projects, and have a name for it when you see it.
-
-\hypertarget{towards-a-periodic-table}{%
-\subsection{Towards a ``Periodic
-Table''}\label{towards-a-periodic-table}}
-
-In the latter chapters of ``The Menagerie'' we try to assemble these
-risk patterns into a cohesive whole. Projects fail because of risks, and
-risks arise from predictable sources.
-
-\hypertarget{what-this-is-not}{%
-\subsection{What This is Not}\label{what-this-is-not}}
-
-This is not intended to be a rigorously scientific work: I don't believe
-it's possible to objectively analyze a field like software development
-in any meaningful, statistically significant way. (For one, things just
-change \textbf{too fast}.)
-
-Neither is this site isn't going to be an exhaustive guide of every
-possible software development practice and methodology. That would just
-be too long and tedious.
-
-Neither is this really a practitioner's guide to using any particular
-methodology: If you've come here to learn the best way to do
-\textbf{Retrospectives}, then you're in the wrong place. There are
-plenty of places you can find that information already. Where possible,
-this site will link to or reference concepts on Wikipedia or the wider
-internet for further reading on each subject.
-
-\hypertarget{who}{%
-\section{Who}\label{who}}
-
-This work is intended to be read by people who work on software
-projects, and especially those who are involved in managing software
-projects.
-
-If you work collaboratively with other people in a software process, you
-should find Risk-First a useful lexicon of terms to help describe the
-risks you face.
-
-But here's a warning: This is going to be a depressing book to read. It
-is book one of a two-book series, but in \textbf{Book One} you only get
-to meet the bad guy.
-
-While \textbf{Book Two} is all about \emph{how to succeed}, This book is
-all about how projects \emph{fail}. In it, we're going to try and put
-together a framework for understanding the risk of failure, in order
-that we can reconstruct our understanding of our activities on a project
-based on avoiding it.
-
-So, if you are interested in \emph{avoiding your project failing}, this
-is probably going to be useful knowledge.
-
-\hypertarget{for-developers}{%
-\subsection{For Developers}\label{for-developers}}
-
-Risk-First is a tool you can deploy to immediately improve your ability
-to plan your work.
-
-Frequently, as developers we find software methodologies ``done to us''
-from above. Risk-First is a toolkit to help \emph{take apart}
-methodologies like \textbf{Scrum}, \textbf{Lean} and \textbf{Prince2},
-and understand them. Methodologies are \emph{bicycles}, rather than
-\emph{religions}. Rather than simply \emph{believing}, we can take them
-apart and see how they work.
-
-\hypertarget{for-project-managers-and-team-leads}{%
-\subsection{For Project Managers and Team
-Leads}\label{for-project-managers-and-team-leads}}
-
-All too often, Project Managers don't have a full grasp of the technical
-details of their projects. And this is perfectly normal, as the
-specialization belongs below them. However, projects fail because risks
-materialize, and risks materialize because the devil is in those
-details.
-
-This seems like a lost cause, but there is hope: the ways in which risks
-materialize on technical projects is the same every time. With
-Risk-First we are attempting to name each of these types of risk, which
-allows for a dialog with developers about which risks they face, and the
-order they should be tackled.
-
-Risk-First allows a project manager to pry open the black box of
-development and talk with developers about their work, and how it will
-affect the project. It is another tool in the (limited) arsenal of
-techniques a project manager can bring to bear on the task of delivering
-a successful project.
-
-\hypertarget{how}{%
-\section{How}\label{how}}
-
-One of the original proponents of the \textbf{Agile Manifesto}, Kent
-Beck, begins his book \textbf{Extreme Programming} by stating:
-
-``It's all about risk'' \textgreater{} Kent Beck
-
-This is a promising start. From there, he introduces his methodology,
-\textbf{Extreme Programming}, and explains how you can adopt it in your
-team, the features to observe and the characteristics of success and
-failure. However, while \emph{Risk} has clearly driven the conception of
-\textbf{Extreme Programming}, there is no clear model of software risk
-underpinning the work, and the relationship between the practices he
-espouses and the risks he is avoiding are hidden.
-
-In this book, we are going to introduce a model of software project
-risk. This means that in \textbf{Book Two} (Risk-First: Tools and
-Practices), we can properly analyse \textbf{Extreme Programming} (and
-Scrum, Waterfall, Lean and all the others) and \emph{understand} what
-drives them. Since they are designed to deliver successful software
-projects, they must be about mitigate risks, and we will uncover
-\emph{exactly which risks are mitigated} and \emph{how they do it}.
-
-\hypertarget{where}{%
-\section{Where}\label{where}}
-
-All of the material for this book is available Open Source on
-\href{https://github.com}{github.com}, and at the
-\href{https://risk-first.org}{risk-first.org} website. Please visit,
-your feedback is appreciated.
-
-There is no compulsion to buy a print or digital version of the book,
-but we'd really appreciate the support. So, if you've read this and
-enjoyed it, how about buying a copy for someone else to read?
-
-\hypertarget{a-note-on-references}{%
-\subsection{A Note on References}\label{a-note-on-references}}
-
-Where possible, references are to the
-\href{https://wikipedia.org}{Wikipedia} website. Wikipedia is not
-perfect. There is a case for linking to the original articles and
-papers, but by using Wikipedia references are free and easy for everyone
-to access, and hopefully will exist for a long time into the future.
-
-On to \textbf{The Executive Summary}
-
-\hypertarget{executive-summary}{%
-\chapter{Executive Summary}\label{executive-summary}}
-
-\hypertarget{there-are-lots-of-ways-of-running-software-projects}{%
-\section{1. There are Lots of Ways of Running Software
-Projects}\label{there-are-lots-of-ways-of-running-software-projects}}
-
-There are lots of different ways to look at a project. For example,
-metrics such as ``number of open tickets'', ``story points'', ``code
-coverage'' or ``release cadence'' give us a numerical feel for how
-things are going and what needs to happen next. We also judge the health
-of projects by the practices used on them - \textbf{Continuous
-Integration}, \textbf{Unit Testing} or \textbf{Pair Programming}, for
-example.
-
-Software methodologies, then, are collections of tools and practices:
-``Agile'', ``Waterfall'', ``Lean'' or ``Phased Delivery'' (for example)
-all suggest different approaches to running a project, and are
-opinionated about the way they think projects should be done and the
-tools that should be used.
-
-None of these is necessarily more ``right'' than another- they are
-suitable on different projects at different times.
-
-A key question then is: \textbf{how do we select the right tools for the
-job?}
-
-\hypertarget{we-can-look-at-projects-in-terms-of-risks}{%
-\section{2. We can Look at Projects in Terms of
-Risks}\label{we-can-look-at-projects-in-terms-of-risks}}
-
-One way to examine a project in-flight is by looking at the risks it
-faces.
-
-Commonly, tools such as RAID logs and RAG status reporting are used.
-These techniques should be familiar to project managers and developers
-everywhere.
-
-However, the Risk-First view is that we can go much further: that each
-item of work being done on the project is mitigating a particular risk.
-Risk isn't something that just appears in a report, it actually drives
-\emph{everything we do}.
-
-For example:
-
-\begin{itemize}
-\tightlist
-\item
-  A story about improving the user login screen can be seen as reducing
-  \emph{the risk of users not signing up}.
-\item
-  A task about improving the health indicators could be seen as
-  mitigating \emph{the risk of the application failing and no-one
-  reacting to it}.
-\item
-  Even a task as basic as implementing a new function in the application
-  is mitigating \emph{the risk that users are dissatisfied and go
-  elsewhere}.
-\end{itemize}
-
-\textbf{One assertion of }Risk-First** therefore, is that every action
-you take on a project is to mitigate some risk.**
-
-\hypertarget{we-can-break-down-risks-on-a-project-methodically}{%
-\section{3. We Can Break Down Risks on a Project
-Methodically}\label{we-can-break-down-risks-on-a-project-methodically}}
-
-Although risk is usually complicated and messy, other industries have
-found value in breaking down the types of risks that affect them and
-addressing them individually.
-
-For example:
-
-\begin{itemize}
-\tightlist
-\item
-  In manufacturing, \emph{tolerances} allow for calculating the
-  likelihood of defects in production.
-\item
-  In finance, reserves are commonly set aside for the risks of
-  stock-market crashes, and teams are structured around monitoring these
-  different risks.
-\item
-  The insurance industry is founded on identifying particular risks and
-  providing financial safety-nets for when they occur, such as death,
-  injury, accident and so on.
-\end{itemize}
-
-Software risks are difficult to quantify, and mostly, the effort
-involved in doing so \emph{exactly} would outweigh the benefit.
-Nevertheless, there is value in spending time building
-\emph{classifications of risk for software}. That's what Risk-First
-does: describes the set of \emph{risk patterns} we see every day on
-software projects.
-
-With this in place, we can:
-
-\begin{itemize}
-\tightlist
-\item
-  Talk about the types of risks we face on our projects, using an
-  appropriate language.
-\item
-  Expose \textbf{Hidden Risks} that we hadn't considered before.
-\item
-  Weigh the risks against each other, and decide which order to tackle
-  them.
-\end{itemize}
-
-\hypertarget{we-can-analyse-tools-and-techniques-in-terms-of-how-they-mitigate-risk}{%
-\section{4. We Can Analyse Tools and Techniques in Terms of how they
-Mitigate
-Risk}\label{we-can-analyse-tools-and-techniques-in-terms-of-how-they-mitigate-risk}}
-
-If we accept the assertion above that \emph{all} the actions we take on
-a project are about mitigating risks, then it stands to reason that the
-tools and techniques available to us on a project are there for
-mitigating different types of risks.
-
-For example:
-
-\begin{itemize}
-\tightlist
-\item
-  If we do a \textbf{Code Review}, we are partly trying to mitigate the
-  risks of bugs slipping through into production, and also mitigate the
-  \textbf{Key-Man Risk} of knowledge not being widely-enough shared.
-\item
-  If we write \textbf{Unit Tests}, we're also mitigating the risk of
-  bugs going to production, but we're also mitigating against future
-  changes breaking our existing functionality.
-\item
-  If we enter into a \textbf{contract with a supplier}, we are
-  mitigating the risk of the supplier vanishing and leaving us exposed.
-  With the contract in place, we have legal recourse against this risk.
-\end{itemize}
-
-\textbf{Different tools are appropriate for mitigating different types
-of risks.}
-
-\hypertarget{different-methodologies-for-different-risk-profiles}{%
-\section{5. Different Methodologies for Different Risk
-Profiles}\label{different-methodologies-for-different-risk-profiles}}
-
-In the same way that our tools and techniques are appropriate to dealing
-with different risks, the same is true of the methodologies we use on
-our projects. We can use a Risk-First approach to examine the different
-methodologies, and see which risks they address.
-
-For example:
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Agile} methodologies prioritise mitigating the risk that
-  requirements capture is complicated, error-prone and that requirements
-  change easily.
-\item
-  \textbf{Waterfall} takes the view that coding effort is an expensive
-  risk, and that we should build plans up-front to avoid it.
-\item
-  \textbf{Lean} takes the view that risk lies in incomplete work and
-  wasted work, and aims to minimize that.
-\end{itemize}
-
-Although many developers have a methodology-of-choice, the argument here
-is that there are tradeoffs with all of these choices. Methodologies are
-like \emph{bicycles}, rather than \emph{religions}. Rather than simply
-\emph{believing}, we can take them apart and see how they work.
-
-\textbf{We can place methodologies within a framework, and show how
-choice of methodology is contingent on the risks faced.}
-
-\hypertarget{driving-development-with-a-risk-first-perspective}{%
-\section{6. Driving Development With a Risk-First
-Perspective}\label{driving-development-with-a-risk-first-perspective}}
-
-We have described a model of risk within software projects, looking
-something like this:
-
-\begin{figure}
-\centering
-\includegraphics{images/generated/pattern_language-400dpi.png}
-\caption{Methdologies, Risks, Practices}
-\end{figure}
-
-How do we take this further?
-
-The first idea we explore is that of the \textbf{Risk Landscape}:
-Although the software team can't remove risk from their project, they
-can take actions that move them to a place in the \textbf{Risk
-Landscape} where the risks on the project are more favourable than where
-they started.
-
-From there, we examine basic risk archetypes you will encounter on the
-software project, to build up a \textbf{Taxonomy of Software Risk}, and
-look at which specific tools you can use to mitigate each kind of risk.
-
-Then, we look at different software practices, and how they mitigate
-various risks. Beyond this we examine the question: \emph{how can a
-Risk-First approach inform the use of this technique?}
-
-For example:
-
-\begin{itemize}
-\tightlist
-\item
-  If we are introducing a \textbf{Sign-Off} in our process, we have to
-  balance the risks it \emph{mitigates} (coordination of effort, quality
-  control, information sharing) with the risks it \emph{introduces}
-  (delays and process bottlenecks).
-\item
-  If we have \textbf{Redundant Systems}, this mitigates the risk of a
-  \emph{single point of failure}, but introduces risks around
-  \emph{synchronizing data} and \emph{communication} between the
-  systems.
-\item
-  If we introduce \textbf{Process}, this may make it easier to
-  \emph{coordinate as a team} and \emph{measure performance} but may
-  lead to bureaucracy, focusing on the wrong goals or over-rigid
-  interfaces to those processes.
-\end{itemize}
-
-Risk-First aims to provide a framework in which we can \emph{analyse
-these choices} and weigh up \emph{accepting} versus \emph{mitigating}
-risks.
-
-\textbf{Still interested? Then dive into reading }the
-introduction\textbf{.}
-
 \mainmatter
 \part{Introduction}
 
 \part{Risk}
+
+\hypertarget{coordination-risk}{%
+\chapter{Coordination Risk}\label{coordination-risk}}
+
+Coordination Risk is the risk that, a group of people (or processes),
+maybe with a similar Goal In Mind they can fail to coordinate on a way
+to meet this goal and end up making things worse. Coordination Risk is
+embodied in the phrase ``Too Many Cooks Spoil The Broth'': more people,
+opinions or agents often make results worse.
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/coordination-risk-400dpi.png}
+\caption{Coordination Risk}
+\end{figure}
+
+As in Agency Risk, we are going to use the term \emph{agent}, which
+refers to anything with
+\href{https://github.com/risk-first/website/wiki/Agency-Risk\#software-processes-and-teams}{agency}
+in a system to decide it's own fate. That is, an agent has an Internal
+Model, and can take actions based on it. Here, we're going to work on
+the assumption that the agents \emph{are} working towards a common Goal,
+even though in reality it's not always the case, as we saw in the
+section on Agency Risk.
+
+In this section, we'll first build up A Model Of Coordination Risk and
+what exactly coordination means and why we do it. Then, we'll look at
+some classic Problems of Coordination. Then, we're going to consider
+agency at several different levels (because of Scale Invariance) . We'll
+look at: - Team Decision Making, - Living Organisms, - Larger
+Organisations and the staff within them, - and Software Processes.
+
+\ldots{} and we'll consider how Coordination Risk is a problem at each
+scale.
+
+But for now, let's crack on and examine where Coordination Risk comes
+from.
+
+\hypertarget{a-model-of-coordination-risk}{%
+\section{A Model Of Coordination
+Risk}\label{a-model-of-coordination-risk}}
+
+Earlier, in Dependency Risk, we looked at various resources (time,
+money, people, events etc) and showed how we could Depend On Them,
+taking on risk. Here, however, we're looking at the situation where
+there is \emph{competition for those dependencies}, that is, Scarcity
+Risk: other parties want to use them in a different way.
+
+\hypertarget{competition}{%
+\subsection{Competition}\label{competition}}
+
+The basic problem of Coordination Risk, then, is \emph{competition}.
+Sometimes, competition is desireable (such as in sports and in markets),
+but sometimes competition is a waste and cooperation would be more
+efficient. Without coordination, we would deliberately or accidentally
+compete for the same Dependencies, which is wasteful.
+
+Why is this wasteful?
+
+One argument could come from
+\href{https://en.wikipedia.org/wiki/Diminishing_returns}{Diminishing
+Returns}, which says that the earlier units of a resource (say,
+chocolate bars) give you more benefit than later ones.
+
+We can see this in the graph below. Let's say A and B compete over a
+resource, of which there are 5 units available. For every extra A takes,
+B loses one. The X axis shows A's consumption of the resource, so the
+biggest benefit to A is in the consumption of the first unit.
+
+\begin{figure}
+\centering
+\includegraphics{images/sharing.png}
+\caption{Sharing Resources. 5 units are available, and the X axis shows
+A's consumption of the resource. B gets whatever remains. Total benefit
+is maximised somewhere in the middle}
+\end{figure}
+
+As you can see, by \emph{sharing}, it's possible that the \emph{total
+benefit} is greater than it can be for either individual. But sharing
+requires coordination. Further, the more competitors involved, the
+\emph{worse} a winner-take-all outcome is for total benefit.
+
+Just two things are needed for competition to occur:
+
+\begin{itemize}
+\tightlist
+\item
+  Individual agents, trying to achieve Goals.
+\item
+  Scarce Resources, which the agents want to use as Dependencies.
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{images/kite9/coordination-2.png}
+\caption{A model of competition: scarce resources, and individual agents
+competing for them.}
+\end{figure}
+
+\hypertarget{coordination-via-communication}{%
+\subsection{Coordination via
+Communication}\label{coordination-via-communication}}
+
+The only way that the agents can move away from competition towards
+coordination is via Communication, and this is where their coordination
+problems begin.
+
+You might think, therefore, that this is just another type of
+Communication Risk problem, and that's often a part of it, but even with
+synchronized Internal Models, coordination risk can occur. Imagine the
+example of people all trying to madly leave a burning building. They all
+have the same information (the building is on fire). If they coordinate,
+and leave in an orderly fashion, they might all get out. If they don't,
+and there's a scramble for the door, more people might die.
+
+But commonly, Coordination Risk occurs where people have different ideas
+about how to achieve a goal, and they have different ideas because they
+have different evaluations of the Attendant Risk. As we saw in the
+section on Communication Risk, we can only hope to synchronize Internal
+Models if there are high-bandwidth Channels available for communication.
+
+\hypertarget{problems-of-coordination}{%
+\section{Problems Of Coordination}\label{problems-of-coordination}}
+
+Let's unpack this idea, and review some classic problems of
+coordination, none of which can be addressed without good communication:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Merging Data}. If you are familiar with the source code
+  control system, \href{https://en.wikipedia.org/wiki/Git}{Git}, you
+  will know that this is a \emph{distributed} version control system.
+  That means that two or more people can propose changes to the same
+  files without knowing about each other. This means that at some later
+  time, Git then has to merge (or reconcile) these changes together. Git
+  is very good at doing this automatically, but sometimes, different
+  people can independently change the same lines of code and these will
+  have to be merged manually. In this case, a human arbitrator
+  ``resolves'' the difference, either by combining the two changes or
+  picking a winner.
+\item
+  \textbf{Consensus}. Making group decisions (as in elections) is often
+  decided by votes. But having a vote is a coordination issue, and
+  requires that everyone has been told the rules:
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  Where will the vote be held?
+\item
+  How long do you provide for the vote?
+\item
+  What do you do about absentees?
+\item
+  What if people change their minds in the light of new information?
+\item
+  How do you ensure everyone has enough information to make a good
+  decision?
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\item
+  \textbf{Factions}. Sometimes, it's hard to coordinate large groups at
+  the same time, and ``factions'' can occur. That the world isn't a
+  single big country is probably partly a testament to this: countries
+  are frequently separated by geographic features that prevent the easy
+  flow of communication (and force). We can also see this in distributed
+  systems, with the
+  \href{https://en.wikipedia.org/wiki/Split-brain_(computing)}{``split
+  brain''} problem. This is where a network of processes becomes
+  disconnected (usually due to a network failure between data centers),
+  and you end up with two, smaller networks with different knowledge.
+  We'll address in more depth later.
+\item
+  \href{https://en.wikipedia.org/wiki/Resource_allocation}{Resource
+  Allocation}: Ensuring that the right people are doing the right work,
+  or the right resources are given to the right people is a coordination
+  issue. On a grand scale, we have
+  \href{https://en.wikipedia.org/wiki/Logistics}{Logistics}, and
+  \href{https://en.wikipedia.org/wiki/Economic_system}{Economic
+  Systems}. On a small scale, the office's \emph{room booking system}
+  solves the coordination issue of who gets a meeting room using a
+  first-come-first-served booking algorithm.
+\item
+  \href{https://en.wikipedia.org/wiki/Deadlock}{Deadlock}: Deadlock
+  refers to a situation where, in an environment where multiple parallel
+  processes are running, the processing stops and no-one can make
+  progress because the resources each process needs are being reserved
+  by another process. This is a specific issue in Resource Allocation,
+  but it's one we're familiar with in the computer science industry.
+  Compare with \href{https://en.wikipedia.org/wiki/Gridlock}{Gridlock},
+  where traffic can't move because other traffic is occupying the space
+  it wants to move to already.
+\item
+  \href{https://en.wikipedia.org/wiki/Race_condition}{Race Conditions}:
+  A race condition is where we can't be sure of the result of a
+  calculation, because it is dependent on the ordering of events within
+  a system. For example, two separate threads writing the same memory at
+  the same time (one ignoring and over-writing the work of the other) is
+  a race.
+\item
+  \textbf{Contention}: Where there is Scarcity Risk for a Dependency, we
+  might want to make sure that everyone gets fair use of it, by taking
+  turns, booking, queueing and so on. As we saw in Scarcity Risk,
+  sometimes, this is handled for us by the Dependency itself. However if
+  it isn't, it's the \emph{users} of the dependency who'll need to
+  coordinate to use the resource fairly, again, by communicating with
+  each other.
+\end{enumerate}
+
+\hypertarget{team-decision-making}{%
+\section{Team Decision Making}\label{team-decision-making}}
+
+Within a team, Coordination Risk is at it's core about resolving
+Internal Model conflicts in order that everyone can agree on a Goal In
+Mind and cooperate on getting it done. Therefore, Coordination Risk is
+worse on projects with more members, and worse in organizations with
+more staff.
+
+If you are engaged in a solo project, do you suffer from Coordination
+Risk at all? Maybe: sometimes, you can feel ``conflicted'' about the
+best way to solve a problem. And weirdly, usually \emph{not thinking
+about it} helps. Sleeping too. (Rich Hickey calls this
+``\href{https://www.youtube.com/watch?v=f84n5oFoZBc}{Hammock Driven
+Development}''). This is probably because, unbeknownst to you, your
+subconscious is furiously communicating internally, trying to resolve
+these conflicts itself, and will let you know when it's come to a
+resolution.
+
+\href{https://en.wikipedia.org/wiki/Vroom–Yetton_decision_model}{Vroom
+and Yetton} introduced a model of group decision making which delineated
+five different styles of decision making within a team. These are
+summarised in the table below (\textbf{AI, AII, CI, CII, GII}). To this,
+I have added a sixth (\textbf{UI}), which is the \emph{uncoordinated}
+option, where everyone competes. In the accompanying diagrams I have
+adopted the following convention: - Thin lines with arrow-heads show a
+flow of \emph{information}, either one-way or two-way. - Thick lines
+show a flow of \emph{opinion}. - Boxes with corners are \emph{decision
+makers}, whereas curved corners don't have a part in the decision.
+
+\begin{figure}
+\centering
+\includegraphics{images/kite9/vroom-yetton.png}
+\caption{Vroom And Yetton Decision Making Styles. ``d'' indicates
+authority in making a decision. Thin lines with arrow-heads show
+information flow, whilst thick lines show \emph{opinions} being passed
+around.}
+\end{figure}
+
+\begin{sidewaystable} 
+
+\begin{longtable}[]{@{}llllll@{}}
+\toprule
+\begin{minipage}[b]{0.09\columnwidth}\raggedright
+Type\strut
+\end{minipage} & \begin{minipage}[b]{0.16\columnwidth}\raggedright
+People Involved In Decision\strut
+\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedright
+Opinions\strut
+\end{minipage} & \begin{minipage}[b]{0.21\columnwidth}\raggedright
+Channels Of Communication\strut
+\end{minipage} & \begin{minipage}[b]{0.20\columnwidth}\raggedright
+Coordination Risk\strut
+\end{minipage} & \begin{minipage}[b]{0.06\columnwidth}\raggedright
+Description\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.09\columnwidth}\raggedright
+\textbf{UI}\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
+1\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
+1\strut
+\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
+Competition\strut
+\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright
+\emph{No Coordination}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.09\columnwidth}\raggedright
+\textbf{AI}\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
+1\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
+1\strut
+\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright
+\textbf{s} (One message to each \textbf{subordinate})\strut
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
+Maximum Coordination Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright
+Autocratic, top-down\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.09\columnwidth}\raggedright
+\textbf{AII}\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
+1\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
+1\strut
+\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright
+2 x \textbf{s} (Messages from/to each \textbf{subordinate})\strut
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
+\strut
+\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright
+Autocratic, with information flow up.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.09\columnwidth}\raggedright
+\textbf{CI}\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
+1\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
+1 + \textbf{s}\strut
+\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright
+\textgreater{} 2 x \textbf{s}\strut
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
+\strut
+\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright
+Individual Consultations\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.09\columnwidth}\raggedright
+\textbf{CII}\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
+1\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
+1 + \textbf{s}\strut
+\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright
+\textgreater{} \textbf{s}2\strut
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
+\strut
+\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright
+Group Consultation\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.09\columnwidth}\raggedright
+\textbf{GII}\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
+1 + \textbf{s}\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
+1 + \textbf{s}\strut
+\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright
+\textgreater{} \textbf{s}2\strut
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
+Maximum Communication Risk, Schedule Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright
+Group Consultation with voting\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\end{sidewaystable} 
+
+At the top, you have the \emph{least} consultative styles, and at the
+bottom, the \emph{most}. At the top, decisions are made with just the
+leader's Internal Model but moving down, the Internal Models of the rest
+of the team are increasingly brought into play.
+
+The decisions at the top are faster, but don't do much for mitigating
+\textbf{Coordination Risk}. The ones below take longer, (incurring
+Schedule Risk) but mitigate more \textbf{Coordination Risk}. Group
+decision-making inevitably involves everyone \emph{learning}, and
+improving their Internal Models.
+
+The trick is to be able to tell which approach is suitable at which
+time. Everyone is expected to make decisions \emph{within their realm of
+expertise}: you can't have developers continually calling meetings to
+discuss whether they should be using an
+\href{https://en.wikipedia.org/wiki/Abstract_factory_pattern}{Abstract
+Factory} or a
+\href{https://en.wikipedia.org/wiki/Factory_method_pattern}{Factory
+Method}, this would waste time. The critical question is therefore,
+``what's the biggest risk?'' - Is the Coordination Risk greater? Are we
+going to suffer Dead End Risk if the decision is made wrongly? What if
+people don't agree with it? Poor leadership has an impact on Morale too.
+- Is the Schedule Risk greater? If you have a 1-hour meeting with eight
+people to decide a decision, that's \emph{one man day} gone right there:
+group decision making is \emph{expensive}.
+
+Hopefully, this model shows how \emph{organisation} can reduce
+Coordination Risk. But, to make this work, we need more
+\emph{communication}, and this has attendant complexity and time costs.
+So, we can draw this diagram of our move on the Risk Landscape:
+
+\begin{figure}
+\centering
+\includegraphics{images/kite9/coordination-1.png}
+\caption{Coordination Risk traded for Complexity Risk, Schedule Risk and
+Communication Risk}
+\end{figure}
+
+\hypertarget{staff-as-agents}{%
+\subsection{Staff As Agents}\label{staff-as-agents}}
+
+Staff in a team have a dual nature: they are \textbf{Agents} and
+\textbf{Resources} at the same time. The team depends on staff for their
+resource of \emph{labour}, but they're also part of the decision making
+process of the team, because they have agency over their own actions.
+
+Part of Coordination Risk is about trying to mitigate differences in
+Internal Models. So it's worth considering how varied people's models
+can be: - Different skill levels - Different experiences - Expertise in
+different areas - Preferences - Personalities
+
+The job of harmonzing this on a project would seem to fall to the team
+leader, but actually people are self-organising to some extent. This
+process is called
+\href{https://en.wikipedia.org/wiki/Tuckman\%27s_stages_of_group_development}{Team
+Development}:
+
+\begin{quote}
+``The forming--storming--norming--performing model of group development
+was first proposed by Bruce Tuckman in 1965, who said that these phases
+are all necessary and inevitable in order for the team to grow, face up
+to challenges, tackle problems, find solutions, plan work, and deliver
+results.'' - Tuckman's Stages Of Group Development, \emph{Wikipedia}
+\end{quote}
+
+Specifically, this describes a process whereby a new group will form and
+then be required to work together. In the process, they will have many
+\emph{disputes}. Ideally, the group will resolve these disputes
+internally and emerge as a \emph{Team}, with a common Goal In Mind.
+
+They can be encouraged with orthogonal practices such as
+\href{https://en.wikipedia.org/wiki/Team_building}{team-building
+exercises} (generally, submitting everyone to extreme experiences in
+order to bond them together). With enough communication bandwidth and
+detente, a motivated team will self-organise code reviews, information
+exchange and improve their practices.
+
+As decribed above, the job of Coordination is Resource Allocation, and
+so the skills of staff can potentially be looked at as resources to
+allocate. This means handling Coordination Risk issues like:
+
+\begin{itemize}
+\tightlist
+\item
+  People leaving, taking their Internal Models and expertise with them
+  Key Man Risk.
+\item
+  People requiring external training, to understand new tools and
+  techniques Learning-Curve Risk.
+\item
+  People being protective about their knowledge in order to protect
+  their jobs Agency Risk.
+\item
+  Where there are mixed ability levels, senior developers not helping
+  juniors as it ``slows them down''.
+\item
+  People not getting on and not helping each other.
+\end{itemize}
+
+\begin{quote}
+``As a rough rule, three programmers organised into a team can do only
+twice the work of a single programmer of the same ability - because of
+time spent on coordination problems.'' -
+\href{https://en.wikipedia.org/wiki/Gerald_Weinberg}{Gerald Wienberg,
+The Psychology of Computer Programming}
+\end{quote}
+
+\hypertarget{in-living-organisms}{%
+\section{In Living Organisms}\label{in-living-organisms}}
+
+Vroom and Yetton's organisational style isn't relevant to just teams of
+people. We can see it in the natural world too. Although \emph{the
+majority} of cellular life on earth (by weight) is
+\href{http://www.stephenjaygould.org/library/gould_bacteria.html}{single
+celled organisms}, the existence of \emph{humans} (to pick a single
+example) demonstrates that sometimes it's better to try to mitigate
+Coordination Risk and work as a team, accepting the Complexity Risk and
+Communication Risk this entails. As soon as cells start working
+together, they either need to pass \emph{resources} between them, or
+\emph{control} and \emph{feedback}.
+
+For example, in the human body, we have various
+\href{https://en.wikipedia.org/wiki/List_of_systems_of_the_human_body}{systems}:
+
+\begin{itemize}
+\tightlist
+\item
+  The
+  \href{https://en.wikipedia.org/wiki/Respiratory_system}{Respiratory
+  System} which is responsible for ensuring that
+  \href{https://en.wikipedia.org/wiki/Red_blood_cell}{Red Blood Cells}
+  are replenished with Oxygen, as well as disposing of Carbon Dioxide.
+\item
+  The
+  \href{https://en.wikipedia.org/wiki/Human_digestive_system}{Digestive
+  System} which is responsible for extracting nutrition from food and
+  putting them in our
+  \href{https://en.wikipedia.org/wiki/Blood_plasma}{Blood Plasma}.
+\item
+  The
+  \href{https://en.wikipedia.org/wiki/Circulatory_system}{Circulatory
+  System} which is responsible for moving blood cells to all the rest of
+  the body.
+\item
+  The \href{https://en.wikipedia.org/wiki/Nervous_system}{Nervous
+  System} which is responsible for collecting information from all the
+  parts of the body, dealing with it in the
+  \href{https://en.wikipedia.org/wiki/Brain}{Brain} and issuing
+  commands.
+\item
+  The \href{https://en.wikipedia.org/wiki/Motor_system}{Motor System}
+  which contains muscles and bones, and allows us to move about.
+\end{itemize}
+
+\ldots{} and many others. Each of these systems contains organs, which
+contain tissues, which contain cells of different types. (Even cells are
+complex systems containing multiple different, communicating
+sub-systems.) There is huge Complexity Risk here: the entire organism
+fails if one of these systems fail (they are
+\href{https://en.wikipedia.org/wiki/Single_point_of_failure}{Single
+Points Of Failure}, although we can get by despite the failure of one
+lung or one leg say).
+
+\begin{figure}
+\centering
+\includegraphics{images/kite9/coordination-organism.png}
+\caption{Hierarchy of Function in the Human Body}
+\end{figure}
+
+\href{https://www.quora.com/What-is-the-most-complex-object-in-the-universe}{Some
+argue} that the human nervous system is the most complex known artifact
+in the universe: there is huge attendant Communication Risk to running
+the human body. But, given the success of humanity as a species, you
+must conclude that these steps on the evolutionary Risk Landscape have
+benefitted us in our ecological niche.
+
+The key observation from looking at biology is this: most of the cells
+in the human body \emph{don't get a vote}. Muscles in the motor system
+have an \textbf{AI} or \textbf{AII} relationship with the brain - they
+do what they are told, but there are often nerves to report pain back.
+The only place where \textbf{CII} or \textbf{GII} \emph{could} occur is
+in our brains, when we try to make a decision and weigh up the pros and
+cons.
+
+This means that there is a deal: \emph{most} of the cells in our body
+accede control of their destiny to ``the system''. Living within the
+system of the human body is a better option than going it alone.
+Occasionally, due to mutation, we can end up with
+\href{https://en.wikipedia.org/wiki/Cancer}{Cancer}, which is where one
+cell genetically ``forgets'' its purpose in the whole system and goes
+back to selfish individual self-replication (\textbf{UI}). We have
+\href{https://en.wikipedia.org/wiki/White_blood_cell}{White Blood Cells}
+in the body to shut down this kind of behaviour and try to kill the
+rogue cells. In the same way, society has a police force to stop
+undesireable behaviour amongst its citizens.
+
+\hypertarget{large-organisations}{%
+\section{Large Organisations}\label{large-organisations}}
+
+Working in a large organisation often feels like being a cell in a
+larger organism. Just as cells live and die, but the organism goes on,
+in the same way, workers come and go from a large company but the
+organisation goes on. By working in an organisation, we give up
+self-control and competition and accept \textbf{AI} and \textbf{AII}
+power structures above us, but we trust that there is symbiotic value
+creation on both sides of the employment deal.
+
+\emph{Less} consultative decision making styles are more appropriate
+then when we don't have the luxury of high-bandwidth channels for
+discussion, or when the number of parties rises above a room-full of
+people. As you can see from the table above, for \textbf{CII} and
+\textbf{GII} decision-making styles, the amount of communication
+increases non-linearly with the number of participants, so we need
+something simpler. As we saw in the Complexity Risk section, hierarchies
+are an excellent way of economizing on number of different communication
+channels, and we use these frequently when there are lots of parties to
+coordinate.
+
+\begin{figure}
+\centering
+\includegraphics{images/kite9/coordination-organisation.png}
+\caption{Hierarchy of Function in an Organisation}
+\end{figure}
+
+In large organisations, teams are created and leaders chosen for those
+teams precisely to mitigate Communication Risk. We're all familiar with
+this: control of the team is ceded to the leader, who takes on the role
+of `handing down' direction from above, but also `reporting up' issues
+that cannot be resolved within the team. In Vroom and Yetton's model,
+this is moving from a \textbf{GII} or \textbf{CII} to an \textbf{AI} or
+\textbf{AII} style of leadership.
+
+As shown in the diagram above, we end up with a hierarchy of groups,
+each having it's own decision-making style. The team leader at the
+bottom level is a \emph{decision maker} within his team, but moving up,
+doesn't have decision making power in the next team up.. and so on.
+
+Sometimes, parts of an organisation are encouraged \emph{not} to
+coordinate, but to compete. In the diagram above, we have an
+\href{https://en.wikipedia.org/wiki/Multi-divisional_form}{M-Form}
+organisation, composed of \emph{competing divisions}.
+
+Clearly, this is just a \emph{model}, it's not set in stone and decision
+making styles usually change from day-to-day and decision to decision.
+The same is not true in our software - \emph{rules are rules}.
+
+\hypertarget{in-software-processes}{%
+\section{In Software Processes}\label{in-software-processes}}
+
+It should be pretty clear that we are applying the Scale Invariance rule
+to Coordination Risk: all of the problems we've described as affecting
+teams, also affect software, although the scale and terrain are
+different. Software processes have limited \emph{agency} - in most cases
+they follow fixed rules set down by the programmers, rather than
+self-organising like people can (so far).
+
+As before, in order to face Coordination Risk in software, we need
+multiple agents all working together. Coordination Risks (such as race
+conditions or deadlock) only really occurs where \emph{more than one
+thing is happening at a time}. This means we are considering \emph{at
+least} multi-threaded software and anything above that (multiple CPUs,
+servers, data-centres and so on).
+
+\hypertarget{cap-theorem}{%
+\subsection{CAP Theorem}\label{cap-theorem}}
+
+The \href{https://en.wikipedia.org/wiki/CAP_theorem}{CAP Theorem} has a
+lot to say about Coordination Risk. Imagine talking to a distributed
+database, where your request (\emph{read} or \emph{write}) can be
+handled by one of many agents.
+
+In the diagram below, we have just two agents \texttt{1} and \texttt{2},
+in order to keep things simple. \texttt{User\ A} \emph{writes something}
+to the database, then \texttt{User\ B} \emph{reads it back} afterwards.
+
+\begin{figure}
+\centering
+\includegraphics{images/kite9/coordination-cap-1.png}
+\caption{User A and User B are both using a distributed database,
+managed by Agents 1 and 2, whom each have their own Internal Model}
+\end{figure}
+
+According to the CAP Theorem, there are three properties we could desire
+in such a system:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Consistency}: Every read receives the most recent value from
+  the last write.
+\item
+  \textbf{Availability}: Every request receives a response.
+\item
+  \textbf{Partition tolerance}: The system can operate despite the
+  isolation (lack of communication with) some of it's agents.
+\end{itemize}
+
+The CAP Theorem states that this is a
+\href{https://en.wikipedia.org/wiki/Trilemma}{Trilemma}. That is, you
+can only have two out of the three properties.
+
+There are plenty of resources on the internet that discuss this in
+depth, but let's just illustrate with some diagrams to show how this
+plays out. In our diagram example, we'll say that \emph{any} agent can
+receive the read or write. So this might be a \textbf{GII} decision
+making system, because all the agents are going to need to coordinate to
+figure out what the right value is to return for a read, and what the
+last value written was. In these, the last write (setting X to 1) was
+sent to Agent 1 which then becomes \emph{isolated}, and can't be
+communicated with, due to network failure. What will User B get back?
+
+\hypertarget{with-an-ap-system}{%
+\subsubsection{With an AP System}\label{with-an-ap-system}}
+
+\begin{figure}
+\centering
+\includegraphics{images/kite9/coordination-cap-ap.png}
+\caption{In an AP system, the User B will get back a \emph{stale value}
+for X}
+\end{figure}
+
+With \texttt{AP}, you can see that \texttt{User\ B} is getting back a
+\emph{stale value}. \texttt{AP} scenarios lead to Race Conditions:
+\texttt{Agent\ 1}s availability determines what value \texttt{User\ B}
+gets back.
+
+\hypertarget{with-an-cp-system}{%
+\subsubsection{With an CP System}\label{with-an-cp-system}}
+
+\includegraphics{images/kite9/coordination-cap-cp.png} .
+
+Where Agent 2 is left waiting for Agent 1 to re-appear, we are
+\emph{blocked}. So CP systems lead to Deadlock scenarios.
+
+\hypertarget{with-an-ca-system}{%
+\subsubsection{With an CA System}\label{with-an-ca-system}}
+
+\begin{figure}
+\centering
+\includegraphics{images/kite9/coordination-cap-ca.png}
+\caption{In an CA system, we can't have partition tolerance, so in order
+to be consistent a single Agent has to do all the work}
+\end{figure}
+
+Finally, if we have a CA system, we are essentially saying that
+\emph{only one agent is doing the work}. (You can't partition a single
+agent, after all). But this leads to Resource Allocation and
+\textbf{Contention} around use of the scarce resource of
+\texttt{Agent\ 2}'s attention. (Both Coordination Risk issues we met
+earlier.)
+
+\hypertarget{some-real-life-examples}{%
+\subsection{Some Real-Life Examples}\label{some-real-life-examples}}
+
+This sets an upper bound on Coordination Risk: we \emph{can't} get rid
+of it completely in a software system, -or- a system on any other scale.
+Fundamentally, coordination problems are inescapable at some level. The
+best we can do is mitigate it by agreeing on protocols and doing lots of
+communication.
+
+Let's look at some real-life examples of how this manifests in software.
+
+\hypertarget{zookeeper}{%
+\subsubsection{ZooKeeper}\label{zookeeper}}
+
+First, \href{https://zookeeper.apache.org}{ZooKeeper} is an Open-Source
+datastore, which is used a lot for coordinating a distributed systems,
+and storing things like configuration information across them. If the
+configuration of a distributed system gets changed, it's important that
+\emph{all of the agents in the system know about it}, otherwise\ldots{}
+disaster.
+
+This \emph{seems} trivial, but it quickly gets out-of-hand: what happens
+if only some of the agents receive the new information? What happens if
+a datacentre gets disconnected while the update is happening? There are
+lots of edge-cases.
+
+ZooKeeper handles this by communicating inter-agent with it's own
+protocol. It elects a \textbf{master agent} (via voting), turning it
+into an \textbf{AI}-style team. If the master is lost for some reason, a
+new leader is elected. \emph{Writes} are then coordinated via the
+\textbf{master agent} who makes sure that a \emph{majority of agents}
+have received and stored the configuration change before telling the
+user that the transaction is complete. Therefore, ZooKeeper is a
+\texttt{CP} system.
+
+\hypertarget{git}{%
+\subsubsection{Git}\label{git}}
+
+Second, git is a (mainly) write-only ledger of source changes. However,
+as we already discussed above, where different agents make incompatible
+changes, someone has to decide how to resolve the conflicts so that we
+have a single source of truth.
+
+The Coordination Risk just \emph{doesn't go away}.
+
+Since multiple users can make all the changes they like locally, and
+merge them later, Git is an \texttt{AP} system: individual users may
+have \emph{wildly} different ideas about what the source looks like
+until the merge is complete.
+
+\hypertarget{bitcoin}{%
+\subsubsection{Bitcoin}\label{bitcoin}}
+
+Finally, \href{https://en.wikipedia.org/wiki/Bitcoin}{Bitcoin (BTC)} is
+a write-only
+\href{https://en.wikipedia.org/wiki/Distributed_ledger}{distributed
+ledger}, where agents \emph{compete} to mine BTC, but also at the same
+time record transactions on the ledger. BTC is also \texttt{AP}, in a
+similar way to Git. But new changes can only be appended if you have the
+latest version of the ledger. If you append to an out-of-date ledger,
+your work will be lost.
+
+Because it's based on outright competition, if someone beats you to
+completing a mining task, then your work is wasted. So, there is
+\emph{huge} Coordination Risk.
+
+For this reason, BTC agents coordinate into
+\href{https://en.bitcoin.it/wiki/Comparison_of_mining_pools}{mining
+consortia}, so they can avoid working on the same tasks at the same
+time. But this in itself is a problem, because the whole \emph{point} of
+BTC is that it's competitive, and no one entity has control. So, mining
+pools tend to stop growing before they reach 50\% of the BTC network's
+processing power. Taking control would be
+\href{https://www.reddit.com/r/Bitcoin/comments/5fe9vz/in_the_last_24hrs_three_mining_pools_have_control/}{politically
+disastrous} and confidence in the currency (such as there is) would
+likely be lost.
+
+\hypertarget{communication-is-for-coordination}{%
+\section{Communication Is For
+Coordination}\label{communication-is-for-coordination}}
+
+So, now we have a fundamental limit on how much Coordination Risk we can
+mitigate. And, just as there are plenty of ways to mitigate Coordination
+Risk within teams of people, organisations or living organisms, so it's
+the case in software.
+
+Earlier in this section, we questioned whether Coordination Risk was
+just another type of Communication Risk. However, it should be clear
+after looking at the examples of competition, cellular life and Vroom
+and Yetton's Model that this is exactly \emph{backwards}:
+
+\begin{itemize}
+\tightlist
+\item
+  Most single-celled life has no need for communication: it simply
+  competes for the available resources. If it lacks anything it needs,
+  it dies.
+\item
+  There are \emph{no} lines of communication on the \textbf{UI}
+  decision-type. It's only when we want to avoid competition, by sharing
+  resources and working towards common goals that we need to
+  communicate.
+\item
+  Therefore, the whole point of communication \emph{is for
+  coordination}.
+\end{itemize}
+
+In the next section, Map And Territory Risk, we're going to look at some
+new ways in which systems can fail, despite their attempts to
+coordinate.
+
+\hypertarget{map-and-territory-risk}{%
+\chapter{Map And Territory Risk}\label{map-and-territory-risk}}
+
+As we discussed in the section on Abstraction, our understanding of the
+world is entirely informed by the names we give things and the
+abstractions we create.
+
+(In the same way, \textbf{Risk-First} is about \emph{identifying
+patterns} within software development and calling them out.)
+
+Our Internal Models are a model of the world based on these patterns,
+and their relationships.
+
+So there is a translation going on here: observations about the
+arrangement of \emph{atoms} in the world get turned into patterns of
+\emph{information} (measured in bits and bytes).
+
+\begin{figure}
+\centering
+\includegraphics{images/kite9/mapter-bits-atoms.png}
+\caption{Maps and Territories, and Communication happening between them}
+\end{figure}
+
+Map And Territory Risk is the risk we face because we base our behaviour
+on our Internal Models rather than reality itself. It comes from the
+expression ``Confusing the Map for the Territory'', attributed to Alfred
+Korzybski:
+
+\begin{quote}
+``Polish-American scientist and philosopher Alfred Korzybski remarked
+that''the map is not the territory" and that ``the word is not the
+thing'', encapsulating his view that an abstraction derived from
+something, or a reaction to it, is not the thing itself. Korzybski held
+that many people \emph{do} confuse maps with territories, that is,
+confuse models of reality with reality itself." -
+\href{https://en.wikipedia.org/wiki/Map–territory_relation}{Map-Territory
+Relation, \emph{Wikipedia}}
+\end{quote}
+
+In this section, we're going to make a case for analysing Map and
+Territory Risk along the same axes we introduced for Feature Risk, that
+is \textbf{Fitness}, \textbf{Audience} and \textbf{Evolution}. After
+that, we are going to widen the scope by looking at Map and Territory
+Risk within the context of \textbf{machines}, \textbf{people},
+\textbf{hierarchies} and \textbf{markets}.
+
+tbd - diagram of how our actions are based on the map, not the
+territory.
+
+\hypertarget{fitness}{%
+\section{Fitness}\label{fitness}}
+
+In the picture shown here, from the Telegraph newspaper, the driver
+\emph{trusted} the SatNav to such an extent that he didn't pay attention
+to the road-signs around him, and ended up getting stuck.
+
+This wasn't borne of stupidity, but experience: SatNavs are pretty
+reliable. \emph{So many times} the SatNav had been right, that the
+driver stopped \emph{questioning its fallibility}.
+
+\begin{figure}
+\centering
+\includegraphics{images/sat_nav.png}
+\caption{Sat Nav Blunder Sends Asda Van Crashing Narrow Footpath -
+Telegraph Newspaper}
+\end{figure}
+
+So, there are two Map and Territory Risks here:
+
+\begin{itemize}
+\tightlist
+\item
+  The Internal Model of the \emph{SatNav} contained information that was
+  wrong: the track had been marked up as a road, rather than a path.
+\item
+  The Internal Model of the \emph{driver} was wrong: his abstraction of
+  ``the SatNav is always right'' turned out to be only \emph{mostly}
+  accurate.
+\end{itemize}
+
+\hypertarget{internal-models-as-dependencies-features}{%
+\section{Internal Models as Dependencies,
+Features}\label{internal-models-as-dependencies-features}}
+
+What are the risks at play here? We've already looked in detail at the
+Dependency Risks involved in relying on something like a SatNav, in the
+Software Dependency Risk section. But here, we are really looking at the
+\emph{Internal Models themselves} as a source of Dependency Risk too.
+
+We could argue that the SatNav and the Driver's Internal Model had bugs
+in them. That is, they both suffer the Feature Implementation Risk we
+saw in the Feature Risk section. If a SatNav has too much of this, you'd
+end up not trusting it, and getting a new one. With your \emph{personal}
+Internal Model, you can't buy a new one, but you may learn to
+\emph{trust certain abstractions less}, as this driver did.
+
+In the Feature Risk section, we broke down Feature Risk on three axes:
+\textbf{Fitness}, \textbf{Evolution} and \textbf{Audience}.
+
+Lets do this again and see how each type of Feature Risk can manifest in
+the Internal Model:
+
+\begin{sidewaysfigure}
+\centering
+\includegraphics{images/generated/map_and_territory_table_1_sideways-400dpi.png}
+\caption{Feature Risk, as manifested in the Internal Model}
+\end{sidewaysfigure}
+
+As with Features in a product, Information in an internal model has at
+least these three dimensions:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Fitness}: as discussed above with the SatNav example, this is
+  how closely the information matches reality, and how \emph{useful that
+  is to us} (models that contain too much detail are as bad as models
+  with too little).
+\item
+  \textbf{Audience}: is all about how a piece of information is
+  \emph{shared} between many Internal Models, and it's this we are going
+  to address further now.
+\item
+  \textbf{Evolution}: is all about how Internal Models change when they
+  meet reality, and we'll cover that last.
+\end{itemize}
+
+\hypertarget{audience}{%
+\section{Audience}\label{audience}}
+
+We already know a lot about Internal Models and audience, as these have
+been the subject of previous sections:
+
+\begin{itemize}
+\tightlist
+\item
+  We know from looking at Communication Risk that communication allows
+  us to \emph{share} information between Internal Models.
+\item
+  We know from Coordination Risk the difficulties inherent in aligning
+  Internal Models so that they cooperate.
+\item
+  Job markets show us that there is demand for people with certain
+  \emph{skills}. This demonstrates to us that Market Risk is as
+  applicable to Internal Models containing certain information as it is
+  to products containing Features. This was the focus of the Ecosystem
+  discussion in Boundary Risk.
+\end{itemize}
+
+\ldots{} And, we're all familiar with \emph{memes}:
+
+\begin{quote}
+``A meme acts as a unit for carrying cultural ideas, symbols, or
+practices, that can be transmitted from one mind to another through
+writing, speech, gestures, rituals, or other imitable phenomena with a
+mimicked theme.'' - \href{https://en.wikipedia.org/wiki/Meme}{Meme,
+\emph{Wikipedia}}
+\end{quote}
+
+Therefore, we should be able to track the rise-and-fall of \emph{ideas}
+much as we can track stock prices. And in effect, this is what
+\href{https://trends.google.com}{Google Trends} does. In the chart
+below, we can see the relative popularity of two search terms over time.
+This is probably as good an indicator as any of the audience for an
+abstraction at any point in time.
+
+\begin{figure}
+\centering
+\includegraphics{images/google-trends.png}
+\caption{Relative popularity of ``Machine Learning'' and ``Big Data'' as
+search terms on Google Trends, 2011-2018}
+\end{figure}
+
+\hypertarget{example-hype-cycles}{%
+\subsection{Example: Hype Cycles}\label{example-hype-cycles}}
+
+Most ideas (and most products) have a slow, hard climb to wide-scale
+adoption. But some ideas seem to disperse much more rapidly and are
+picked up quickly because they are exciting and promising, having
+greater ``memetic potential'' within society. One way this evolution
+manifests itself in the world is though the
+\href{https://en.wikipedia.org/wiki/Hype_cycle}{Hype Cycle}:
+
+\begin{quote}
+``The hype cycle is a branded graphical presentation developed and used
+by the American research, advisory and information technology firm
+Gartner, for representing the maturity, adoption and social application
+of specific technologies. The hype cycle provides a graphical and
+conceptual presentation of the maturity of emerging technologies through
+five phases.'' - Hype Cycle, \emph{Wikipedia}
+\end{quote}
+
+The five phases (and the ``Hype'' itself) are shown in the chart below,
+with the thick black line being ``Hype'':
+
+\begin{figure}
+\centering
+\includegraphics{images/hype-cycle.png}
+\caption{Hype Cycle, along with Map \& Territory Risk}
+\end{figure}
+
+Also in this diagram we are showing where the hype originates:
+
+\begin{itemize}
+\tightlist
+\item
+  The \textbf{saturation} of the idea within the audience (a dotted
+  line).
+\item
+  The \textbf{amount known} about the idea by the audience (a Learning
+  Curve, if you will, a dashed line).
+\end{itemize}
+
+Both of these are modelled with
+\href{https://en.wikipedia.org/wiki/Cumulative_distribution_function\#Use_in_statistical_analysis}{Cumulative
+Distribution} curves. From these two things, we can figure out where our
+maximum Map and Territory Risk lies: it's the point where awareness of
+an idea is furthest from the understanding of it. This acts as a
+``brake'' on the \textbf{hype} around the idea, corresponding to the
+``Trough of Disillusionment''.
+
+Where the \textbf{saturation} and \textbf{knowledge} grow together,
+there is no spike in Map and Territory Risk and we don't see the
+corresponding ``Trough of Disillusionment'' at all, as shown in this
+chart:
+
+\begin{figure}
+\centering
+\includegraphics{images/hype-cycle2.png}
+\caption{Hype Cycle 2: Slower growth of Map and Territory Risk means no
+``Trough of Disillusionment''}
+\end{figure}
+
+\hypertarget{evolution}{%
+\section{Evolution}\label{evolution}}
+
+The section on Communication Risk introduced the following model for
+ideas:
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/communication_marketing-400dpi.png}
+\caption{Spread of information between Internal Models}
+\end{figure}
+
+But what happens next? As we saw in Boundary Risk, the \textbf{Peter
+Principle} applies, people will use dependencies up to the point when
+they start breaking down.
+
+\hypertarget{example-metrics}{%
+\subsection{Example: Metrics}\label{example-metrics}}
+
+Let's dive into a specific example now: someone finds a useful new
+metric that helps in evaluating performance.
+
+It might be:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{SLOC (Source Lines Of Code)}: i.e.~the number of lines of code
+  each developer writes per day/week whatever.
+\item
+  \textbf{Function Points}: the number of function points a person on
+  the team completes, each sprint.
+\item
+  \textbf{Code Coverage}: the number of lines of code exercised by unit
+  tests.
+\item
+  \textbf{Response Time}: the time it takes to respond to an emergency
+  call, say, or to go from a feature request to production.
+\item
+  \textbf{Release cadence}: number of releases a team performs, per
+  month, say.
+\end{itemize}
+
+With some skill, they may be able to \emph{correlate} this metric
+against some other more abstract measure of success. For example:
+
+\begin{quote}
+``quality is correlated with more releases'' ``user-satisfaction is
+correlated with SLOC'' ``revenue is correlated with response time''
+\end{quote}
+
+Because the \emph{thing on the right} is easier to measure than
+\emph{the thing on the left}, it becomes used as a proxy (or, Map) for
+the thing they are really interested in (the Territory). At this point,
+it's \emph{easy} to communicate this idea with the rest of the team, and
+\emph{the market value of the idea is high}: it is a useful
+representation of reality, which is shown to be accurate at a particular
+point in time.
+
+But \emph{correlation} doesn't imply \emph{causation}. The \emph{cause}
+might be different:
+
+\begin{itemize}
+\tightlist
+\item
+  quality and number of releases might both be down to the simplicity of
+  the product.
+\item
+  user satisfaction and SLOC might both be down to the calibre of the
+  developers.
+\item
+  response time and revenue might both be down to clever team planning.
+\end{itemize}
+
+Metrics are seductive because they simplify reality and are easily
+communicated. But they \emph{inherently} contain Map and Territory Risk:
+By relying \emph{only} on the metrics, you're not really \emph{seeing}
+the reality.
+
+The devil is in the detail.
+
+\hypertarget{reality-evolves}{%
+\subsection{Reality Evolves}\label{reality-evolves}}
+
+In the case of metrics, this is where they start being used for more
+than just indicators, but as measures of performance or targets:
+
+\begin{itemize}
+\tightlist
+\item
+  If a team is \emph{told} to do lots of releases, they will perform
+  lots of releases \emph{at the expense of something else}.
+\item
+  If team members are promoted according to SLOC, they will make sure
+  their code takes up as many lines as possible.
+\item
+  In the UK, ambulances were asked to wait before admitting patients to
+  Emergency wards, in order that hospitals could
+  \href{https://en.wikipedia.org/wiki/NHS_targets}{meet their targets}.
+\end{itemize}
+
+Some of this seems obvious: \emph{Of course} SLOC is a terrible measure
+performance! We're not that stupid anymore. The problem is, it's not so
+much the \emph{choice} of metric, but the fact that \emph{all} metrics
+merely approximate reality with a few numbers. The map is \emph{always}
+simpler than the territory, therefore there can be no perfect metrics.
+
+In the same way that markets evolve to demand more features, our
+behaviour evolves to incorporate new ideas. The more popular an idea is,
+the more people will modify their behaviour as a result of it, and the
+more the world will change. Will the idea still be useful as the world
+adapts? Although the Hype Cycle model doesn't cover it, ideas and
+products all eventually have their day and decline in usefulness.
+
+\hypertarget{bad-ideas}{%
+\subsection{Bad Ideas}\label{bad-ideas}}
+
+There are plenty of ideas which \emph{seem a really good idea at the
+time} but then end up being terrible. It's only as we \emph{learn about
+the products} and realize the hidden Map and Territory Risk that we stop
+using them. While SLOC is a minor offender,
+\href{https://en.wikipedia.org/wiki/Chlorofluorocarbon}{CFCs} or
+\href{https://en.wikipedia.org/wiki/Tetraethyllead}{Leaded Petrol} are
+more significant examples.
+
+The following Hyph Cycle chart shows an initially promising idea that
+turns out to be terrible, and there is a ``Period of Inoculation'' where
+the population realise their mistake. There is ``negative hype'' as they
+work to phase out the offending idea:
+
+\begin{figure}
+\centering
+\includegraphics{images/hype-cycle3.png}
+\caption{Hype Cycle For Something that turns out to be a \emph{bad}
+idea}
+\end{figure}
+
+\hypertarget{humans-and-machines}{%
+\section{Humans and Machines}\label{humans-and-machines}}
+
+In the example of the SatNav, we saw how the \emph{quality} of Map and
+Territory Risk is different for \emph{people} and \emph{machines}.
+Whereas people \emph{should} be expected show skepticism to new
+(unlikely) information, our databases accept it unquestioningly.
+\emph{Forgetting} is an everyday, usually benign part of our human
+Internal Model, but for software systems it is a production crisis
+involving 3am calls and backups.
+
+For Humans, Map and Territory Risk is exacerbated by
+\href{https://en.wikipedia.org/wiki/List_of_cognitive_biases}{cognitive
+biases}:
+
+\begin{quote}
+``Cognitive biases are systematic patterns of deviation from norm or
+rationality in judgment, and are often studied in psychology and
+behavioral economics.'' - Cognitive Bias, \emph{Wikipedia}
+\end{quote}
+
+There are \emph{lots} of cognitive biases. But let's just look at a
+couple that are relevant to Map and Territory Risk:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Availability Heuristic}: People overestimate the importance of
+  knowledge they have been exposed to.
+\item
+  \textbf{The Ostrich Effect}: Which is where dangerous information is
+  ignored or avoided because of the emotions it will evoke.
+\item
+  \textbf{Bandwagon Effect}: People like to believe things that other
+  people believe. Could this be a factor in the existence of the Hype
+  Cycle?
+\end{itemize}
+
+\hypertarget{hierarchical-organisations}{%
+\section{Hierarchical Organisations}\label{hierarchical-organisations}}
+
+Map And Territory Risk ``trickles down'' through an organisation. The
+higher levels have an outsize ability to pervert the incentives at lower
+levels because once an organisation begins to pursue a ``bullshit
+objective'', the whole company can align to this.
+
+\href{https://www.huffingtonpost.com/otto-scharmer/the-fish-rots-from-the-he_b_8208652.html}{The
+Huffington Post} paints a brilliant picture of how Volkswagen managed to
+get caught faking their emissions tests. As they point out:
+
+\begin{quote}
+``The leadership culture of VW probably amplified the problem by
+disconnecting itself from the values and trajectory of society, by
+entrenching in what another executive in the auto industry once called a
+``bullshit-castle''\ldots{} No engineer wakes up in the morning and
+thinks: OK, today I want to build devices that deceive our customers and
+destroy our planet. Yet it happened. Why? Because of hubris at the
+top.'' - Otto Scharmer, \emph{Huffington Post}.
+\end{quote}
+
+This article identifies the following process:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{De-sensing}: VW Executives ignored \emph{The Territory}
+  society around them (such as the green movement), ensuring their maps
+  were out of date. The top-down culture made it hard for reality to
+  propagate back up the hierarchy.
+\item
+  \textbf{Hubris/Absencing}: They pursued their own metrics of
+  \emph{volume} and \emph{cost}, rather than seeking out others (a la
+  the Availability Heuristic Bias). That is, focusing on their own
+  \emph{Map}, which is \emph{easier} than checking the \emph{Territory}.
+  (See Hubris in the Agency Risk section).
+\item
+  \textbf{Deception}: Backed into a corner, engineers had no choice but
+  to find ``creative'' ways to meet the metrics.
+\item
+  \textbf{Destruction}: Eventually, the truth comes out, to the
+  detriment of the company, the environment and the shareholders. As the
+  article's title summarizes ``A fish rots from the head down''.
+\end{itemize}
+
+\hypertarget{personal-example}{%
+\subsection{Personal Example}\label{personal-example}}
+
+A similar (but less catastrophic) personal story from a bank I worked
+at, where the objectives end up being mis-aligned \emph{within the
+company}:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  My team had been tasked with building automated ``smoke tests'' of an
+  application. But this was bullshit: We only needed to build these
+  \emph{at all} because the application was so complex. The reason it
+  was so complex was\ldots{}
+\item
+  The application was being designed within a ``Framework'' constructed
+  by the department. However, the framework was only being used by this
+  one application. Building a ``reuasable'' framework which is only used
+  by a single application is bullshit. But, we had to do this
+  because\ldots{}
+\item
+  The organisational structure was created along a ``matrix'', with
+  ``business function'' on one axis and ``functional area'' on another.
+  Although we were only building the application for a single business
+  function, it was expected to cater with all the requirements from the
+  an entire ``functional area''. This was bullshit too, because\ldots{}
+\item
+  The matrix structure was largely the legacy of a recent merger with
+  another department. As Conway's Law predicts, our software therefore
+  had to reflect this structure. But this was bullshit because\ldots{}
+\item
+  The matrix structure didn't represent reality in any useful way. It
+  was designed to pacify the budget committee at the higher level, and
+  try to demonstrate attributes such as \emph{control} and
+  \emph{governance}. But this was bullshit too, because\ldots{}
+\item
+  The budget that was given to our department was really based on how
+  much fear the budget holders currently had of the market regulators.
+  But this was bullshit too, because\ldots{}
+\item
+  At a higher level, the executives had realised that our division
+  wasn't one of the banks strategic strengths, and was working to close
+  it all down anyway.
+\end{enumerate}
+
+When faced with so many mis-aligned objectives, it seemed completely
+hopeless to concentrate on the task at hand. But then, a colleague was
+able to nihilistically add one final layer to this onion by saying:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{7}
+\tightlist
+\item
+  ``It's all about chasing money, which is bullshit, because life is
+  bullshit.''
+\end{enumerate}
+
+\hypertarget{picking-fights}{%
+\subsection{Picking Fights}\label{picking-fights}}
+
+It feels like there's no way back from that.
+
+All of life might well be a big Map and Territory illusion. But let's
+analyse just a bit:
+
+\begin{itemize}
+\tightlist
+\item
+  At each layer, the objectives changed. But, they impacted on the
+  objectives of the layer below.
+\item
+  Therefore, it seems like the more layers you have, the less likely it
+  is that your objectives become inconsistent between the lower and
+  higher levels.
+\item
+  On a new project, it seems like a good idea to model this stuff: does
+  the objective of the work you're about to undertake ``align'' with the
+  objectives at a higher level?
+\end{itemize}
+
+Trying to spot Map and Territory Risk ahead-of-time in this manner seems
+like a useful way of trying to avoid Vanity Projects, and, if you are
+good at it, allows you to see which Goals in the organisation are
+fragile and likely to change. However, usually, if you are working in a
+team, you have limited agency to decide which projects you feel are
+valuable.
+
+This comes down to a personal decision: do you want to spend time
+working on projects that you know are going in the bin? Some developers
+have the attitude that, so long as they get paid, it doesn't matter. But
+others are in it for the satisfaction of the work itself, so this ends
+up being a personal call.
+
+(This theme will be developed further in Staging and Classifying.)
+
+\hypertarget{markets}{%
+\section{Markets}\label{markets}}
+
+So far, we've considered what happens to individuals, teams and
+organisations when told to optimise around a particular objective. In
+Coordination Risk we looked at how Communication was critical for
+Coordination to happen. And, as we've already discussed, Abstraction is
+a key part of communication.
+
+The languages we adopt or create are \emph{sets of useful abstractions}
+that allow us to communicate. But what happens when this goes wrong?
+
+\href{https://equilibriabook.com}{Inadequate Equilibria} by Eleizer
+Yudkovsky, looks at how perverse incentive mechanisms break not just
+departments, but entire societal systems. He highlights one example
+involving \emph{academics} and \emph{grantmakers} in academia:
+
+\begin{itemize}
+\tightlist
+\item
+  It's not very apparent which scientists are better than which other
+  scientists.
+\item
+  One proxy is what they've published (scientific papers) and where
+  they've published (journals).
+\item
+  Universities want to attract research grants, and the best way to do
+  this is to have the best scientists.
+\item
+  Because ``best'' isn't measureable, they use the proxy.
+\item
+  Therefore, immense power rests in the hands of the journals, since
+  they can control the money-proxy.
+\item
+  Therefore, journals are able to charge large amounts of money to
+  universities for subscriptions.
+\end{itemize}
+
+\begin{quote}
+``Now consider the system of scientific journals\ldots{} Some journals
+are prestigious. So university hiring committees pay the most attention
+to publications in that journal. So people with the best, most
+interesting-looking publications try to send them to that journal. So if
+a university hiring committee paid an equal amount of attention to
+publications in lower-prestige journals, they'd end up granting tenure
+to less prestigious people. Thus, the whole system is a stable
+equilibrium that nobody can unilaterally defy except at cost to
+themselves.'' -
+\href{https://equilibriabook.com/molochs-toolbox/}{Inadequate
+Equilibria, \emph{Eleizer Yudkovsky}}
+\end{quote}
+
+As the book points out, while everyone \emph{persists} in using an
+inadequate abstraction, the system is broken. However, Coordination
+would be required for everyone to \emph{stop} doing it this way, which
+is hard work. (At least within a hiearchy, Maps can get fixed.)
+
+This is a \emph{small example} from a much larger, closely argued book,
+and it's worth taking the time to read a couple of the chapters on this
+interesting topic.
+
+As usual, this section forms a grab-bag of examples in a complex topic.
+But it's time to move on as there is one last stop we have to make on
+the Risk Landscape, and that is to look at Operational Risk.
+
+(NB: The Hype Cycle model is available in \textbf{Numbers} form
+\href{https://github.com/risk-first/website/blob/master/RiskMatrix.numbers}{here}.)
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/map-and-territory-risk-400dpi.png}
+\caption{Map And Territory Risk}
+\end{figure}
+
+(talk about how operational risk is an extension of this). tbd
 
 \part{Preview}
 
@@ -681,23 +1550,22 @@ book1/Part3.md practices/Estimates.md
 \hypertarget{internal-model}{%
 \section{Internal Model}\label{internal-model}}
 
-The most common use for \textbf{Internal Model} is to refer to the model
-of reality that you or I carry around in our heads. You can regard the
-concept of \textbf{Internal Model} as being what you \emph{know} and
-what you \emph{think} about a certain situation.
+The most common use for Internal Model is to refer to the model of
+reality that you or I carry around in our heads. You can regard the
+concept of Internal Model as being what you \emph{know} and what you
+\emph{think} about a certain situation.
 
 Obviously, because we've all had different experiences, and our brains
-are wired up differently, everyone will have a different
-\textbf{Internal Model} of reality.
+are wired up differently, everyone will have a different Internal Model
+of reality.
 
-Alternatively, we can use the term \textbf{Internal Model} to consider
-other viewpoints: - Within an organisation, we might consider the
-\textbf{Internal Model} of a \emph{team of people} to be the shared
-knowledge, values and working practices of that team. - Within a
-software system, we might consider the \textbf{Internal Model} of a
-single processor, and what knowledge it has of the world. - A codebase
-is a team's \textbf{Internal Model} written down and encoded as
-software.
+Alternatively, we can use the term Internal Model to consider other
+viewpoints: - Within an organisation, we might consider the Internal
+Model of a \emph{team of people} to be the shared knowledge, values and
+working practices of that team. - Within a software system, we might
+consider the Internal Model of a single processor, and what knowledge it
+has of the world. - A codebase is a team's Internal Model written down
+and encoded as software.
 
 An internal model \emph{represents} reality: reality is made of atoms,
 whereas the internal model is information.
