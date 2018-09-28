@@ -78,7 +78,7 @@ Within a team, [Coordination Risk](Coordination-Risk) is at it's core about reso
 
 If you are engaged in a solo project, do you suffer from [Coordination Risk](Coordination-Risk) at all?  Maybe:  sometimes, you can feel "conflicted" about the best way to solve a problem.  And weirdly, usually _not thinking about it_ helps.  Sleeping too.  (Rich Hickey calls this "[Hammock Driven Development](https://www.youtube.com/watch?v=f84n5oFoZBc)").  This is probably because, unbeknownst to you, your subconscious is furiously communicating internally, trying to resolve these conflicts itself, and will let you know when it's come to a resolution.  
 
-[Vroom and Yetton](https://en.wikipedia.org/wiki/Vroom–Yetton_decision_model) introduced a model of group decision making which delineated five different styles of decision making within a team. These are summarised in the table below (**AI, AII, CI, CII, GII**).  To this, I have added a sixth (**UI**), which is the _uncoordinated_ option, where everyone competes.   In the accompanying diagrams I have adopted the following convention:
+[Vroom and Yetton](https://en.wikipedia.org/wiki/Vroom-Yetton_decision_model) introduced a model of group decision making which delineated five different styles of decision making within a team. These are summarised in the table below (**AI, AII, CI, CII, GII**).  To this, I have added a sixth (**UI**), which is the _uncoordinated_ option, where everyone competes.   In the accompanying diagrams I have adopted the following convention:
  - Thin lines with arrow-heads show a flow of _information_, either one-way or two-way.
  - Thick lines show a flow of _opinion_.
  - Boxes with corners are _decision makers_, whereas curved corners don't have a part in the decision.
@@ -88,7 +88,7 @@ If you are engaged in a solo project, do you suffer from [Coordination Risk](Coo
 <!--latex\begin{sidewaystable} -->
 
 |Type           |People Involved In Decision|Opinions         |Channels Of Communication                             |Coordination Risk                |Description                                |
-|---------------|---------------------------|-----------------|-----------------------------------|---------------------------------|----------|
+|---------------|---------------------------|-----------------|------------------------------------------------------|---------------------------------|-------------------------------------------|
 |**UI**         |1                          |1                |0                                                     |Competition                      |_No Coordination_|
 |**AI**         |1                          |1                |**s** (One message to each **subordinate**)           |Maximum Coordination Risk|Autocratic, top-down|
 |**AII**        |1                          |1                |2 x **s** (Messages from/to each **subordinate**)     |                                 |Autocratic, with information flow up.|

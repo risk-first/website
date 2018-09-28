@@ -2,8 +2,6 @@
 
 [Coordinating a team](Coordination-Risk) is difficult enough when everyone on the team has a single [Goal](Glossary#Goal-In-Mind). <!-- tweet-end --> But, people have their own goals, too.  Sometimes, the goals harmlessly co-exist with the team's goal, but other times they don't.
 
-![Agency Risk](images/generated/agency-risk.png)
-
 This is [Agency Risk](Agency-Risk).   This term comes from finance and refers to the situation where you (the "principal") entrust your money to someone (the "agent") in order to invest it, but they don't necessarily have your best interests at heart.  They may instead elect to invest the money in ways that help them, or outright steal it.  
 
 > "This dilemma exists in circumstances where agents are motivated to act in their own best interests, which are contrary to those of their principals, and is an example of moral hazard." - [Principal-Agent Problem, _Wikipedia_](https://en.wikipedia.org/wiki/Principal–agent_problem)
@@ -79,8 +77,6 @@ Working on a pet project usually means you get lots of attention (and more than 
 
 > Morale, also known as Esprit de Corps is the capacity of a group's members to retain belief in an institution or goal, particularly in the face of opposition or hardship - [Morale, _Wikipedia_](https://en.wikipedia.org/wiki/Morale) 
 
-![Morale Risk](images/generated/morale-risk.png)
-
 Sometimes, the morale of the team or individuals within it dips, leading to lack of motivation.  [Morale Risk](Agency-Risk#morale-risk) is a kind of [Agency Risk](Agency-Risk) because it really means that a team member or the whole team isn't committed to the [Goal](Glossary#Goal-In-Mind), may decide their efforts are best spent elsewhere.  [Morale Risk](Agency-Risk#morale-risk) might be caused by:
 
  - External factors:  Perhaps the employees' dog has died, or they're simply tired of the industry, or are not feeling challenged.
@@ -109,17 +105,21 @@ Perhaps it's a little unfair to draw out one human characteristic for attention.
 > "Agency is the capacity of an actor to act in a given environment... Agency may either be classified as unconscious, involuntary behavior, or purposeful, goal directed activity (intentional action). " - [Agency, _Wikipedia_](https://en.wikipedia.org/wiki/Agency_(philosophy)) 
 
 There is significant [Agency Risk](Agency-Risk) in running software _at all_.  Since computer systems follow rules we set for them, we shouldn't be surprised when those rules have exceptions that lead to disaster.  For example:
+
  - A process continually writing log files until the disks fill up, crashing the system.
  - Bugs causing data to get corrupted, causing financial loss.
  - Malware infecting a system, and sending your passwords and data to undesirables.
 
 [Agency Risk](Agency-Risk) also covers _whole teams_ too.  It's perfectly possible that a team within an organisation develops [Goals](Glossary#Goal-In-Mind) that don't align with those of the overall organisation.  For example:
+
  - A team introduces excessive [Bureaucracy](Process-Risk#bureaucracy-risk) in order to avoid work it doesn't like.
  - A team gets obsessed with a particular technology, or their own internal process improvement, at the expense of delivering business value.
  - A marginalised team forces their services on other teams in the name of "consistency".   (This can happen a lot with "Architecture", "Branding" and "Testing" teams, sometimes for the better, sometimes for the worse.)
 
 ## It's About Goals 
- 
+
+![Agency Risk](images/generated/agency-risk.png)
+
 We've looked here at some illustrative examples of [Agency Risk](Agency-Risk).  But as we stated at the beginning, [Agency Risk](Agency-Risk) at any level comes down to differences of [Goals](Glossary#goal-in-mind) between the different agents, whether they are _people_, _teams_ or _software_.  
  
 So, having looked at agents _individually_, it's time to look more closely at [Goals](Glossary#goal-in-mind), and the [Attendant Risks](Glossary#attendant-risk) when aligning them amongst multiple agents.   
