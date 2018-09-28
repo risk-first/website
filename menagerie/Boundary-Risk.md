@@ -238,7 +238,7 @@ tbd Trying to create a complex, fractal surface.  User requirements are fractal 
 
 For example, [Object Relational Mapping (ORM)]() has long been a problem in software.  This is [Boundary-Crossing] software trying to bridge the gap between [Relational Databases]() and [Object-Oriented Languages]() like [Java].  Building a _general_ library that does this and is useful tbd said:
 
-> 'ORM is the vietnam of ...' -
+> 'Object/Relational Mapping is the Vietnam of Computer Science' - [Ted Neward](http://blogs.tedneward.com/post/the-vietnam-of-computer-science/)
 
 This is a particularly difficult problem because the two ecosystems are so _rich_ and _complex_ in the functionality they expose.   But what are the alternatives? 
 

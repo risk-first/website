@@ -1226,12 +1226,14 @@ As shown in the above diagram, mitigating
 complexity. The more Protocol Complexity there is to bridge the two
 ecosystems, the more Complex the bridge will necessarily be.
 
+\begin{sidewaystable} 
+
 \begin{longtable}[]{@{}llll@{}}
 \toprule
 \begin{minipage}[b]{0.18\columnwidth}\raggedright
-\href{}{Protocol Risk} From A\strut
+Protocol Risk From A\strut
 \end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedright
-{[}Protocol Risk{]}{[}br2{]} From B\strut
+Protocol Risk From B\strut
 \end{minipage} & \begin{minipage}[b]{0.18\columnwidth}\raggedright
 Resulting Bridge Complexity\strut
 \end{minipage} & \begin{minipage}[b]{0.35\columnwidth}\raggedright
@@ -1296,9 +1298,11 @@ Google Search, Scala (see below)\strut
 \bottomrule
 \end{longtable}
 
-From examining the \href{}{Protocol Risk} at each end of the bridge you
-are creating, you can get a rough idea of how complex the endeavour will
-be:
+\end{sidewaystable} 
+
+From examining the {[}Protocol Risk{]}{[}br1{]} at each end of the
+bridge you are creating, you can get a rough idea of how complex the
+endeavour will be:
 
 \begin{itemize}
 \tightlist
@@ -1331,7 +1335,9 @@ gap between Relational Databases and Object-Oriented Languages like
 useful tbd said:
 
 \begin{quote}
-`ORM is the vietnam of \ldots{}' -
+`Object/Relational Mapping is the Vietnam of Computer Science' -
+\href{http://blogs.tedneward.com/post/the-vietnam-of-computer-science/}{Ted
+Neward}
 \end{quote}
 
 This is a particularly difficult problem because the two ecosystems are
