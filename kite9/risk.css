@@ -545,6 +545,23 @@ celltext {
 	stroke: none;
 }
 
+bulleted {
+	kite9-usage: regular;
+	kite9-type: container;
+	kite9-template: url(template.svg#bulleted);
+	kite9-vertical-align: top;
+	kite9-horizontal-align: left;	
+	font-size: 40pt;
+	fill: black;
+	font-family: "gothic";
+	stroke: none;
+}
+
+cell {
+	kite9-usage: regular;
+	kite9-type: container;
+}
+
 celltext.center {
 	kite9-horizontal-align: center;
 }
@@ -567,6 +584,10 @@ table tick {
 
 table celltext.bottom {
 	kite9-vertical-align: bottom;
+}
+
+table celltext.top {
+	kite9-vertical-align: top;
 }
 
 /* Risk Descriptions */

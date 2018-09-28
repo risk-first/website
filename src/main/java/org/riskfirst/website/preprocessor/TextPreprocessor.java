@@ -16,7 +16,7 @@ import java.util.regex.Pattern;
  */
 public class TextPreprocessor {
 	
-	public static final boolean LINKS_AS_BOLD = true;
+	public static final boolean LINKS_AS_BOLD = false;
 
 	public static void main(String[] args) throws IOException {
 		String file = args[0];
@@ -36,6 +36,9 @@ public class TextPreprocessor {
 		while (line != null) {
 			if (line.trim().equals("```include")) {
 				processIncludes(br, origin);
+			} else if (line.trim().startsWith("<!--latex")) {
+				line = line.replaceAll("<!--latex", "").replaceAll("-->", "");
+				System.out.print(line);
 			} else {
 				line = line.replaceAll("\\s+$", "");	// trim end of line
 				processLinks(line, TextPreprocessor::processImageLink, lineNo, System.out::print);
@@ -98,7 +101,7 @@ public class TextPreprocessor {
 				if (LINKS_AS_BOLD) {
 					System.out.print("**"+text+"**");
 				} else {
-					// something else.
+					System.out.print(text.trim());
 				}
 			} else if (!isState(url)) {
 				if (url.contains("generated")) {
@@ -109,7 +112,7 @@ public class TextPreprocessor {
 				System.out.println("!["+text+"]("+url+")");
 			}
 		} else {
-			System.out.print(link);
+			System.out.print(link.trim());
 		}
 	}
 
