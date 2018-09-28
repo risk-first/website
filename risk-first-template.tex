@@ -1,5 +1,5 @@
 % Page setup
-\documentclass[fontsize=12pt]{memoir}
+\documentclass[12pt]{memoir}
 \setstocksize{9.69in}{7.44in}
 \settrimmedsize{\stockheight}{\stockwidth}{*}
 \setlrmarginsandblock{3.5cm}{2.5cm}{*}
@@ -16,15 +16,8 @@
 \usepackage{amssymb}
 
 %SetFonts
-\usepackage{amssymb,amsmath}
-\usepackage{ifxetex,ifluatex}
-\usepackage{fontspec}
-\usepackage[$for(fontfamilyoptions)$$fontfamilyoptions$$sep$,$endfor$]{$fontfamily$}
-\usepackage[unicode=true]{hyperref}
-\usepackage{lmodern}
-\setmainfont{Constantia}
-\setsansfont{Menlo}
-\setmonofont[Mapping=tex-ansi]{Menlo}
+\usepackage[T1]{fontenc}
+\usepackage{newpxtext,newpxmath}
 
 %Images
 \usepackage{graphicx}
@@ -37,10 +30,9 @@
 \makeatother
 \let\Oldincludegraphics\includegraphics
 \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
-\suppressfloats[t]
-\suppressfloats[b]
 
 % Links
+\usepackage[unicode=true]{hyperref}
 \hypersetup{breaklinks=true,
             bookmarks=true,
             pdfauthor={$author-meta$},
@@ -65,11 +57,12 @@
 \makeatletter
 \def\fnum@table{\tablename~\thetable}
 \makeatother
+\usepackage{rotating}
 
 % Code Sections
 \usepackage{listings}
 \newcommand{\passthrough}[1]{#1}
-\lstnewenvironment{code}{\lstset{language=Haskell,basicstyle=\small\ttfamily}}{}
+\lstnewenvironment{code}{\lstset{basicstyle=\small\ttfamily}}{}
 $if(highlighting-macros)$
 $highlighting-macros$
 $endif$
@@ -77,6 +70,7 @@ $endif$
 
 %Links as Notes
 \DeclareRobustCommand{\href}[2]{#2\footnote{\url{#1}}}
+ \renewcommand{\footnotesize}{\fontsize{6.5pt}{8.5pt}\selectfont}
 
 %Sections
 \chapterstyle{veelo}
