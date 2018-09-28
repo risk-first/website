@@ -29,7 +29,7 @@
 \else\Gin@nat@width\fi}
 \makeatother
 \let\Oldincludegraphics\includegraphics
-\renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
+\renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.9\maxwidth]{#1}}
 \usepackage{rotating}
 \usepackage[margin=10pt,font=small,labelfont=bf]{caption}
 \captionsetup[figure]{labelfont={bf,it},textfont={bf,it}}
@@ -67,6 +67,46 @@
 \usepackage{listings}
 \newcommand{\passthrough}[1]{#1}
 \lstnewenvironment{code}{\lstset{basicstyle=\small\ttfamily}}{}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 
 
 %Links as Notes
@@ -656,1030 +696,701 @@ risks.
 
 \part{Risk}
 
-\hypertarget{boundary-risk}{%
-\chapter{Boundary Risk}\label{boundary-risk}}
+\hypertarget{software-dependency-risk}{%
+\chapter{Software Dependency Risk}\label{software-dependency-risk}}
+
+In this section, we're going to look specifically at \emph{Software}
+dependencies, although many of the concerns we'll raise here apply
+equally to all the other types of dependency we outlined in Dependency
+Risk.
+
+\hypertarget{kolmogorov-complexity-cheating}{%
+\section{Kolmogorov Complexity:
+Cheating}\label{kolmogorov-complexity-cheating}}
+
+In the earlier section on Complexity Risk we tackled Kolmogorov
+Complexity, and the idea that your codebase had some kind of minimal
+level of complexity based on the output it was trying to create. This is
+a neat idea, but in a way, we cheated. Let's look at how.
+
+We were trying to figure out the shortest (Javascript) program to
+generate this output:
+
+\begin{verbatim}
+abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
+\end{verbatim}
+
+And we came up with this:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{const}\NormalTok{ ABCD}\OperatorTok{=}\StringTok{"ABCD"}\OperatorTok{;}\NormalTok{                                           (}\DecValTok{11}\NormalTok{ symbols)}
+
+\KeywordTok{function} \AttributeTok{out}\NormalTok{() }\OperatorTok{\{}\NormalTok{                                             (}\DecValTok{7}\NormalTok{ symbols)}
+    \ControlFlowTok{return} \VariableTok{ABCD}\NormalTok{.}\AttributeTok{repeat}\NormalTok{(}\DecValTok{10}\NormalTok{)                                   (}\DecValTok{7}\NormalTok{ symbols)}
+\OperatorTok{\}}\NormalTok{                                                            (}\DecValTok{1}\NormalTok{ symbol)}
+\end{Highlighting}
+\end{Shaded}
+
+Which had \textbf{26} symbols in it.
+
+Now, here's the cheat: The \texttt{repeat()} function was built into
+Javascript in 2015 in
+\href{http://www.ecma-international.org/ecma-262/6.0/}{ECMAScript 6.0}.
+If we'd had to program it ourselves, we might have added this:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{function} \AttributeTok{repeat}\NormalTok{(s}\OperatorTok{,}\NormalTok{n) }\OperatorTok{\{}\NormalTok{                                       (}\DecValTok{10}\NormalTok{ symbols)}
+    \KeywordTok{var}\NormalTok{ a}\OperatorTok{=}\NormalTok{[]}\OperatorTok{;}\NormalTok{                                                (}\DecValTok{7}\NormalTok{ symbols)}
+    \ControlFlowTok{while}\NormalTok{(}\VariableTok{a}\NormalTok{.}\AttributeTok{length}\OperatorTok{<}\NormalTok{n)}\OperatorTok{\{}\NormalTok{                                       (}\DecValTok{9}\NormalTok{ symbols)}
+        \VariableTok{a}\NormalTok{.}\AttributeTok{push}\NormalTok{(s)                                            (}\DecValTok{6}\NormalTok{ symbols)}
+    \OperatorTok{\}}\NormalTok{                                                        (}\DecValTok{1}\NormalTok{ symbol)}
+    \ControlFlowTok{return} \VariableTok{a}\NormalTok{.}\AttributeTok{join}\NormalTok{(}\StringTok{''}\NormalTok{)}\OperatorTok{;}\NormalTok{                                       (}\DecValTok{10}\NormalTok{ symbols)}
+\OperatorTok{\}}\NormalTok{                                                            (}\DecValTok{1}\NormalTok{ symbol)}
+\end{Highlighting}
+\end{Shaded}
+
+\ldots{} which would be an extra \textbf{44} symbols (in total
+\textbf{70}), and push us completely over the original string encoding
+of \textbf{53} symbols. So, \emph{encoding language is important}.
+
+Conversely, if ECMAScript 6.0 had introduced a function called
+\texttt{abcdRepeater(n)} we'd have been able to do this:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{function} \AttributeTok{out}\NormalTok{() }\OperatorTok{\{}\NormalTok{                                             (}\DecValTok{7}\NormalTok{ symbols)}
+    \ControlFlowTok{return} \AttributeTok{abcdRepeater}\NormalTok{(}\DecValTok{10}\NormalTok{)                                  (}\DecValTok{6}\NormalTok{ symbols)}
+\OperatorTok{\}}\NormalTok{                                                            (}\DecValTok{1}\NormalTok{ symbol)}
+\end{Highlighting}
+\end{Shaded}
+
+.. and re-encode to \textbf{14} symbols. Now, clearly there are some
+problems with all this:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Clearly, \emph{language matters}: the Kolmogorov complexity is
+  dependent on the language, and the features the language has built in.
+\item
+  The exact Kolmogorov complexity is uncomputable anyway (it's the
+  \emph{theoretical} minimum program length). It's just a fairly
+  abstract idea, so we shouldn't get too hung up on this. There is no
+  function to be able to say, ``what's the Kolmogorov complexity of
+  string X''
+\item
+  What is this new library function we've created? Is
+  \texttt{abcdRepeater} going to be part of \emph{every} Javascript? If
+  so, then we've shifted Codebase Risk away from ourselves, but we've
+  pushed Communication Risk and Dependency Risk onto every \emph{other}
+  user of Javascript. (Why these? Because \texttt{abcdRepeater} will be
+  clogging up the documentation and other people will rely on it to
+  function correctly.)
+\item
+  Are there equivalent functions for every single other string? If so,
+  then compilation is no longer a tractable problem: is
+  \texttt{return\ abcdRepeater(10)} correct code? Well, now we have a
+  massive library of different \texttt{XXXRepeater} functions to compile
+  against to see if it is\ldots{} So, what we \emph{lose} in Kolmogorov
+  Complexity we gain in Runtime Complexity.
+\item
+  Language design, then, is about \emph{ergonomics}. After you have
+  passed the relatively low bar of providing
+  \href{https://en.wikipedia.org/wiki/Turing_completeness}{Turing
+  Completeness}, the key is to provide \emph{useful} features that
+  enable problems to be solved, without over-burdening the user with
+  features they \emph{don't} need. And in fact, all software is about
+  this.
+\end{enumerate}
 
 \begin{figure}
 \centering
-\includegraphics{images/generated/boundary-risk-400dpi.png}
-\caption{Boundary Risk}
+\includegraphics{images/kite9/software-dependency-ergonomics.png}
+\caption{Software Dependency Ergonomics: finding the sweet spot between
+too many features and too few}
 \end{figure}
 
-In the previous few sections on Dependency Risk we've touched on
-Boundary Risk several times, but now it's time to tackle it head-on and
-discuss this important type of risk.
+\hypertarget{ergonomics-examined}{%
+\section{Ergonomics Examined}\label{ergonomics-examined}}
 
-In terms of the Risk Landscape, Boundary Risk is exactly as it says: a
-\emph{boundary}, \emph{wall} or other kind of obstacle in your way to
-making a move you want to make. This changes the nature of the Risk
-Landscape, and introduces a maze-like component to it. It also means
-that we have to make \emph{decisions} about which way to go, knowing
-that our future paths are constrained by the decisions we make.
+Have a look at some physical tools, like a hammer, or spanner. To look
+at them, they are probably \emph{simple} objects, obvious, strong and
+dependable. Their entire behaviour is encapsulated in their form. Now,
+if you have a drill or sander to hand, look at the design of this too.
+If it's well-designed, then from the outside it is simple, perhaps with
+only one or two controls. Inside, it is complex and contains a motor,
+perhaps a transformer, and is maybe made of a hundred different
+components.
+
+But outside, the form is simple, and designed for humans to use. This is
+\emph{\href{https://en.wikipedia.org/wiki/Human_factors_and_ergonomics}{ergonomics}}:
+
+\begin{quote}
+``Human factors and ergonomics (commonly referred to as Human Factors),
+is the application of psychological and physiological principles to the
+(engineering and) design of products, processes, and systems. The goal
+of human factors is to reduce human error, increase productivity, and
+enhance safety and comfort with a specific focus on the interaction
+between the human and the thing of interest.'' - Human Factors and
+Ergonomics, \emph{Wikipedia}
+\end{quote}
+
+\hypertarget{interfaces}{%
+\subsection{Interfaces}\label{interfaces}}
+
+The interface of a tool is the part we touch and interact with. By
+striving for simplicity, the interface reduces Communication Risk.
+
+The interface of a system expands when you ask it to do a wide variety
+of things. An easy-to-use drill does one thing well: it turns drill-bits
+at useful levels of torque for drilling holes and sinking screws. But if
+you wanted it to also operate as a lathe, a sander or a strimmer (all
+basically mechanical things going round) you would have to sacrifice the
+ergonomic simplicity for a more complex interface, probably including
+adapters, extensions, handles and so on.
+
+So, we now have split complexity into two: - The inner complexity of the
+tool (how it works internally, it's own Kolmogorov Complexity). - The
+complexity of the instructions that we need to write to make the tool
+work (the interface Kolmogorov Complexity).
 
 \begin{figure}
 \centering
-\includegraphics{images/generated/dead-end-risk-400dpi.png}
-\caption{Dead-End Risk}
+\includegraphics{images/kite9/software-dependency-complexity.png}
+\caption{Types of Complexity For a Software Dependency}
 \end{figure}
 
-And, as we discussed in Complexity Risk, there is always the chance we
-end up at a Dead End, and we've done work that we need to throw away. In
-this case, we'll have to head back and make a different decision.
+\hypertarget{software-tools}{%
+\subsection{Software Tools}\label{software-tools}}
 
-\hypertarget{emergence-through-choice}{%
-\section{Emergence Through Choice}\label{emergence-through-choice}}
+In the same way as with a hand-tool, the bulk of the complexity of a
+software tool is hidden behind it's interface. But, the more complex the
+\emph{purpose} of the tool, the more complex the interface will be.
 
-Boundary Risk is an emergent risk, which exists at the intersection of
-Complexity Risk, Dependency Risk and Communication Risk. Because of
-that, it's going to take a bit of time to pick it apart and understand
-it, so we're going to build up to this in stages.
+Software is not constrained by \emph{physical} ergonomics in the same
+way as a tool is. But ideally, it should have conceptual ergonomics:
+ideally, complexity is hidden away from the user behind the
+\href{https://en.wikipedia.org/wiki/Application_programming_interface}{Application
+Programming Interface (API)}. This is the familiar concept of
+Abstraction we've already looked at.
 
-Let's start with an obvious example: Musical Instruments. Let's say you
-want to learn to play some music. There are a \emph{multitude} of
-options available to you, and you might choose an \emph{uncommon}
-instrument like a
-\href{https://en.wikipedia.org/wiki/Balalaika}{Balalaika} or a
-\href{https://en.wikipedia.org/wiki/Theremin}{Theremin}, or you might
-choose a \emph{common} one like a piano or guitar. In any case, once you
-start learning this instrument, you have picked up the three risks
-above:
+That is, the tool should be as simple to use and understand as possible.
+This is the
+\href{https://en.wikipedia.org/wiki/Principle_of_least_astonishment}{Principal
+Of Least Astonishment}:
 
 \begin{itemize}
 \tightlist
 \item
-  Dependency Risk You have a \emph{physical} Dependency on it in order
-  to play music, so get to the music shop and buy one.
+  \textbf{The abstractions should map easily to how the user expects the
+  tool to work.} For example, I \emph{expect} the trigger on a drill to
+  start the drill turning.
 \item
-  Communication Risk: You have to \emph{communicate} with the instrument
-  in order to get it to make the sounds you want. And you have Learning
-  Curve Risk in order to be able to do that.
+  \textbf{The abstractions should leverage existing idioms and
+  knowledge.} In a new car, I \emph{expect} to know what the symbols on
+  the dashboard mean, because I've driven other cars.
 \item
-  Complexity Risk: As \emph{a music playing system}, you now have an
-  extra component (the instrument), with all the attendant complexity of
-  looking after that instrument, tuning it, and so on.
+  \textbf{The abstractions provide me with only the functions I need.}
+  Because everything else is confusing and gets in the way.
 \end{itemize}
 
-Those risks are true for \emph{any} instrument you choose. However, if
-you choose the \emph{uncommon} instrument like the Balalaika, you have
-\emph{worse} Boundary Risk, because the \emph{ecosystem} for the
-balalaika is smaller. It might be hard to find a tutor, or a band
-needing a balalaika. You're unlikely to find one in a friend's house
-(compared to the piano, say).
+The way to win, then, is to allow a language to be extensible as-needed
+with features written by third parties. By supplying mechanisms for
+extension a language can provide insurances against the Boundary Risk of
+adopting it.
 
-Even choosing the Piano has Boundary Risk. By spending your time
-learning to play the piano, you're mitigating Communication Risk issues,
-but \emph{mostly}, your skills won't be transferrable to playing the
-guitar. Your decision to choose one instrument over another cements the
-Boundary Risk: you're following a path on the Risk Landscape and
-changing to a different path is \emph{expensive}.
+\hypertarget{types-of-software-dependencies}{%
+\section{Types Of Software
+Dependencies}\label{types-of-software-dependencies}}
 
-Also, it stands to reason that making \emph{any} choice is better than
-making \emph{no} choice, because you can't try and learn \emph{all} the
-instruments. Doing that, you'd make no meaningful progress on any of
-them.
+There are lots of ways you can depend on software. Here though, we're
+going to focus on just three main types: 1. \textbf{Code Your Own}:
+write some code ourselves to meet the dependency. 2. \textbf{Software
+Libraries}: importing code from the Internet, and using it in our
+project. Often, libraries are Open Source (this is what we'll consider
+here). 3. \textbf{Software as a Service}: calling a service on the
+Internet, (probably via \texttt{http}) This is often known as
+\href{https://en.wikipedia.org/wiki/Software_as_a_service}{SaaS, or
+Software as a Service}.
 
-\hypertarget{boundary-risk-for-software-dependencies}{%
-\section{Boundary Risk For Software
-Dependencies}\label{boundary-risk-for-software-dependencies}}
+All 3 approaches involve a different risk-profile. Let's look at each in
+turn, from the perspective of which risks get mitigated, and which risks
+are accentuated.
 
-Let's look at a software example now.
+\hypertarget{code-your-own}{%
+\subsection{1. Code Your Own}\label{code-your-own}}
 
-As discussed in Software Dependency Risk, if we are going to use a
-software tool as a dependency, we have to accept the complexity of it's
-Interface, and learn the protocol of that interface. If you want to work
-with it, you have to use it's protocol, it won't come to you.
+Initially, writing our own code was the only game in town: when I
+started programming, you had a user guide, BASIC and that was pretty
+much it. Tool support was very thin-on-the-ground. Programs and
+libraries could be distributed as code snippets \emph{in magazines}
+which could be transcribed and run, and added to your program. This
+spirit lives on somewhat in StackOverflow and JSFiddle, where you are
+expected to ``adopt'' others' code into your own project.
 
-Let's take a look at a hypothetical system structure, in the
-accompanying diagram. In this design, we have are transforming data from
-the \texttt{input} to the \texttt{output}. But how should we do it?
+One of the hidden risks of embarking on a code-your-own approach is that
+the features you need are \emph{not} apparent from the outset. What
+might appear to be a trivial implementation of some piece of
+functionality can often turn into it's own industry as more and more
+hidden Feature Risk is uncovered.
 
-\begin{itemize}
-\tightlist
-\item
-  We could go via \texttt{a}, using the Protocols of \texttt{a}, and
-  having a dependency on \texttt{a}.
-\item
-  We could go via \texttt{b}, using the Protocols of \texttt{b}, and
-  having a dependency on \texttt{b}.
-\item
-  We could choose the middle route, and avoid the dependency, but
-  potentially pick up lots more Complexity Risk and Schedule Risk.
-\end{itemize}
-
-\begin{figure}
-\centering
-\includegraphics{images/kite9/boundary-risk-ps.png}
-\caption{Our System receives data from the \texttt{input}, translates it
-and sends it to the \texttt{output}. But which dependency should we use
-for the translation, if any?}
-\end{figure}
-
-This is a basic \textbf{Translation} job from \texttt{input} to
-\texttt{output}. Since we are talking about \textbf{Translation}, we are
-clearly talking about Communication Risk again: our task in
-\textbf{Integrating} all of these components is \emph{to get them to
-talk to each other}.
-
-From a Cyclomatic Complexity point of view, this is a very simple
-structure, with low Complexity. But the choice of approach presents us
-with Boundary Risk, because we don't know that we'll be able to make
-them \emph{talk to each other} properly:
-
-\begin{itemize}
-\tightlist
-\item
-  Maybe \texttt{a} outputs dates in a strange calendar format that we
-  won't understand.
-\item
-  Maybe \texttt{b} works on some streaming API basis, that is
-  incompatible with the input protocol.
-\item
-  Maybe \texttt{a} runs on Windows, whereas our code runs on Linux.
-\end{itemize}
-
+For example, as we discussed in our earlier treatment of Dead-End Risk,
+building log-in screens \emph{seemed like a good idea}. However, this
+gets out-of-hand fast when you need: - A password reset screen - To
+email the reset links to the user - An email verification screen - A
+lost account screen - Reminders to complete the sign up process -
 \ldots{} and so on.
 
-\hypertarget{boundary-risk-pinned-down}{%
-\section{Boundary Risk Pinned Down}\label{boundary-risk-pinned-down}}
+\begin{figure}
+\centering
+\includegraphics{images/kite9/software-dependency-code-your-own.png}
+\caption{Code-Your-Own mitigates immediate feature risk, but at the
+expense of schedule risk, complexity risk and communication risk. There
+is also a hidden risk of features you don't yet know you need.}
+\end{figure}
 
-Wherever we integrate dependencies with complex Protocols, we
-potentially have Boundary Risk. The more complex the systems being
-integrated, the higher the risk. When we choose software tools or
-libraries to help us build our systems, we are trading Complexity Risk
-for Boundary Risk. It is:
+\hypertarget{unwritten-software}{%
+\subsection{Unwritten Software}\label{unwritten-software}}
+
+Sometimes, you will pick up a dependency on \emph{unwritten software}.
+This commonly happens when work is divided amongst team members, or
+teams.
+
+\begin{figure}
+\centering
+\includegraphics{images/kite9/software-dependency-unwritten-1.png}
+\caption{Sometimes, a module you're writing will depend on unwritten
+code}
+\end{figure}
+
+If a component \textbf{A} of our project \emph{depends} on \textbf{B}
+for some kind of processing, you might not be able to complete
+\textbf{A} before writing \textbf{B}. This makes \emph{scheduling} the
+project harder, and if component \textbf{A} is a risky part of the
+project, then the chances are you'll want to mitigate risk there first.
+
+But it also hugely increases Communication Risk because now you're being
+asked to communicate with a dependency that doesn't really exist yet,
+\emph{let alone} have any documentation.
+
+There are a couple of ways to do this:
 
 \begin{itemize}
 \tightlist
 \item
-  The \emph{sunk cost} of the Learning Curve we've overcome to integrate
-  the dependency, when it fails to live up to expectations.
+  \textbf{Standards}: If component \textbf{B} is a database, a queue,
+  mail gateway or something else with a standard interface, then you're
+  in luck. Write \textbf{A} to those standards, and find a cheap, simple
+  implementation to test with. This gives you time to sort out exactly
+  what implementation of \textbf{B} you're going for. This is not a
+  great long-term solution, because obviously, you're not using the
+  \emph{real} dependency- you might get surprised when the behaviour of
+  the real component is subtly different. But it can reduce Schedule
+  Risk in the short-term.
 \item
-  The likelihood of, and costs of changing in the future.
-\item
-  The rarity of alternatives (or, conversely, the risk of Lock In).
+  \textbf{Coding To Interfaces}: If standards aren't an option, but the
+  surface area of \textbf{B} that \textbf{A} uses is quite small and
+  obvious, you can write a small interface for it, and work behind that,
+  using a \href{https://en.wikipedia.org/wiki/Mock_object}{Mock} for
+  \textbf{B} while you're waiting for finished component. Write the
+  interface to cover only what \textbf{A} \emph{needs}, rather than
+  everything that \textbf{B} \emph{does} in order to minimize the risk
+  of \href{https://en.wikipedia.org/wiki/Leaky_abstraction}{Leaky
+  Abstractions}.
 \end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{images/kite9/software-dependency-unwritten-2.png}
+\caption{Coding to a standard on an interface breaks the dependency on
+unwritten software}
+\end{figure}
+
+\hypertarget{conways-law}{%
+\subsection{Conway's Law}\label{conways-law}}
+
+If the dependency is being written by another person, another team or in
+another country, communication risks pile up. When this happens, you
+will want to minimize \emph{as much as possible} the interface
+complexity, since the more complex the interface, the worse the
+Communication Risk will be. The tendency then is to make the interfaces
+between teams or people \emph{as simple as possible}, modularizing along
+these organisational boundaries.
+
+In essence, this is
+\href{https://en.wikipedia.org/wiki/Conway\%27s_law}{Conway's Law}:
+
+\begin{quote}
+``organizations which design systems \ldots{} are constrained to produce
+designs which are copies of the communication structures of these
+organizations.'' --- M. Conway, \emph{Conway's Law}
+\end{quote}
+
+\hypertarget{software-libraries}{%
+\subsection{2. Software Libraries}\label{software-libraries}}
+
+By choosing a particular software library, we are making a move on the
+Risk Landscape in the hope of moving to place with more favourable
+risks. Typically, using library code offers a Schedule Risk and
+Complexity Risk Silver Bullet. But, in return we expect to pick up: -
+Communication Risk: because we now have to learn how to communicate with
+this new dependency. - Boundary Risk - because now are limited to using
+the functionality provided by this dependency. We have chosen it over
+alternatives and changing to something else would be more work and
+therefore costly.
+
+But, it's quite possible that we could wind up in a worse place than we
+started out, by using a library that's out-of-date, riddled with bugs or
+badly supported. i.e.~Full of new, hidden Feature Risk.
+
+It's \emph{really easy} to make bad decisions about which tools to use
+because the tools don't (generally) advertise their deficiencies. After
+all, they don't generally know how \emph{you} will want to use them.
+
+\hypertarget{software-libraries---hidden-risks}{%
+\subsection{Software Libraries - Hidden
+Risks}\label{software-libraries---hidden-risks}}
+
+Currently, choosing software dependencies looks like a ``bounded
+rationality''-type process:
+
+\begin{quote}
+``Bounded rationality is the idea that when individuals make decisions,
+their rationality is limited by the tractability of the decision
+problem, the cognitive limitations of their minds, and the time
+available to make the decision.'' -
+\href{https://en.wikipedia.org/wiki/Bounded_rationality}{Bounded
+Rationality, \emph{Wikipedia}}
+\end{quote}
+
+Unfortunately, we know that most decisions \emph{don't} really get made
+this way. We have things like
+\href{https://en.wikipedia.org/wiki/Confirmation_bias}{Confirmation
+Bias} (looking for evidence to support a decision you've already made)
+and \href{https://en.wikipedia.org/wiki/Cognitive_inertia}{Cognitive
+Inertia} (ignoring evidence that would require you to change your mind)
+to contend with.
+
+But, leaving that aside, let's try to build a model of what this
+decision making process \emph{should} involve. Luckily, other authors
+have already considered the problem of choosing good software libraries,
+so let's start there.
+
+In the table below, I am summarizing three different sources, which give
+descriptions of which factors to look for when choosing open-source
+libraries.
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/software_dependency_table_1-400dpi.png}
+\caption{Software Dependencies}
+\end{figure}
+
+\href{https://www.software.ac.uk/resources/guides/defending-your-code-against-dependency-problems}{sd1
+- Defending your code against dependency problems}
+\href{https://stackoverflow.com/questions/2960371/how-to-choose-an-open-source-library}{sd2
+- How to choose an open source library}
+\href{https://www.forbes.com/sites/forbestechcouncil/2017/07/20/open-source-to-use-or-not-to-use-and-how-to-choose/2/\#39e67e445a8c}{sd3
+- Open Source - To use or not to use}
+
+Some take-aways:
+
+\begin{itemize}
+\tightlist
+\item
+  Feature Risk is a big concern. How can you be sure that the project
+  will do what you want it to do ahead of schedule? Will it contain bugs
+  or missing features? By looking at factors like \emph{release
+  frequency} and \emph{size of the community} you get a good feel for
+  this which is difficult to fake.
+\item
+  Boundary Risk is also very important. You are going to have to
+  \emph{live} with your choices for the duration of the project, so it's
+  worth spending the effort to either ensure that you're not going to
+  regret the decision, or that you can change direction later.
+\item
+  Third is Communication Risk: how well does the project deal with it's
+  users? If a project is ``famous'', then it has communicated its
+  usefulness to a wide, appreciative audience. Avoiding Communication
+  Risk is also a good reason to pick \emph{tools you are already
+  familiar with}.
+\end{itemize}
+
+\hypertarget{complexity-risk}{%
+\subsection{Complexity Risk?}\label{complexity-risk}}
+
+One thing that none of the sources consider (at least from the outset)
+is the Complexity Risk of using a solution: - Does it drag in lots of
+extra dependencies that seem unnecessary for the job in hand? If so, you
+could end up in
+\href{https://en.wikipedia.org/wiki/Dependency_hell}{Dependency Hell},
+with multiple, conflicting versions of libraries in the project. - Do
+you already have a dependency providing this functionality? So many
+times, I've worked on projects that import a \emph{new} dependency when
+some existing (perhaps transitive) dependency has \emph{already brought
+in the functionality}. For example, there are plenty of libraries for
+\href{https://en.wikipedia.org/wiki/JSON}{JSON} marshalling, but if I'm
+also using a web framework the chances are it already has a dependency
+on one already. - Does it contain lots of functionality that isn't
+relevant to the task you want it to accomplish? e.g.~Using Java when a
+shell script would do (on a non-Java project)
+
+To give an extreme example of this, I once worked on an application
+which used \href{https://en.wikipedia.org/wiki/Hazelcast}{Hazlecast} to
+cache log-in session tokens for a 3rd party datasource. But, the app is
+only used once every month, and session IDs can be obtained in
+milliseconds. So\ldots{} why cache them? Although Hazlecast is an
+excellent choice for in-memory caching across multiple JVMs, it is a
+complex piece of software (after all, it does lots of stuff). By doing
+this, you have introduced extra dependency risk, cache invalidation
+risks, networking risks, synchronisation risks and so on, for actually
+no benefit at all\ldots{} Unless, it's about CV Building.
+
+Sometimes, the amount of complexity \emph{goes up} when you use a
+dependency for \emph{good reason}. For example, in Java, you can use
+\href{https://en.wikipedia.org/wiki/Java_Database_Connectivity}{Java
+Database Connectivity (JDBC)} to interface with various types of
+database. \href{https://en.wikipedia.org/wiki/Spring_Framework}{Spring
+Framework} (a popular Java library) provides a thing called a
+\texttt{JDBCTemplate}. This actually makes your code \emph{more}
+complex, and can prove very difficult to debug. However, it prevents
+some security issues, handles resource disposal and makes database
+access more efficient. None of those are essential to interfacing with
+the database, but not using them is Technical Debt that can bite you
+later on.
 
 \begin{figure}
 \centering
 \includegraphics{images/kite9/software-dependency-library.png}
-\caption{The tradeoff for using a library}
+\caption{Software Libraries Risk Tradeoff}
 \end{figure}
 
-As we saw in Software Dependency Risk, Boundary Risk is a big factor in
-choosing libraries and services. However, it can apply to any kind of
-dependency:
+\hypertarget{software-as-a-service}{%
+\section{3. Software as a Service}\label{software-as-a-service}}
 
-\begin{itemize}
-\tightlist
-\item
-  If you're depending on a Process or Organisation, they might change
-  their products or quality, making the effort you put into the
-  relationship worthless.
-\item
-  If you're depending on Staff, they might leave, meaning your efforts
-  on training them don't pay back as well as you hoped.
-\item
-  If you're depending on an Event occuring at a particular time, you
-  might have a lot of work to reorganise your life if it changes time or
-  place.
-\end{itemize}
+Businesses opt for Software as a Service (SaaS) because: - It vastly
+reduces the Complexity Risk they face in their organisations.
+e.g.~managing the software or making changes to it. - Payment is usually
+based on \emph{usage}, mitigating Schedule Risk. e.g.~Instead of having
+to pay for in-house software administrators, they can leave this
+function to the experts. - Potentially, you outsource the Operational
+Risk to a third party. e.g.~ensuring availability, making sure data is
+secure and so on.
 
-\hypertarget{avoiding-boundary-risk-now}{%
-\section{Avoiding Boundary Risk
-Now\ldots{}}\label{avoiding-boundary-risk-now}}
+SaaS is now a very convenient way to provide \emph{commercial} software.
+Popular examples of SaaS might be
+\href{https://en.wikipedia.org/wiki/Salesforce.com}{SalesForce}, or
+\href{https://en.wikipedia.org/wiki/Gmail}{GMail}. Both of which follow
+the commonly-used
+\href{https://en.wikipedia.org/wiki/Freemium}{Freemium} model, where the
+basic service is provided free, but upgrading to a paid account gives
+extra benefits.
 
-Because of Boundary Risk's relationship to Learning Curve Risk, we can
-avoid accreting it by choose the \emph{simplest} and \emph{fewest}
-dependencies for any job. Let's look at some examples:
+By providing the software on their own servers, the commercial
+organisation has a defence against \emph{piracy}, as well as being able
+to control the Complexity Risk of the their environment (e.g.~not having
+to support \emph{every} version of the software that's ever been
+released).
 
-\begin{itemize}
-\tightlist
-\item
-  \texttt{mkdirp} is an \href{https://www.npmjs.com}{npm} module
-  defining a single function. This function takes a single string
-  parameter and recursively creating directories. Because the protocol
-  is so simple, there is almost no Boundary Risk.
-\item
-  Using a database with a
-  \href{https://en.wikipedia.org/wiki/Java_Database_Connectivity}{JDBC}
-  driver comes with \emph{some} Boundary Risk: but the boundary is
-  specified by a standard. Although the standard doesn't cover every
-  aspect of the behaviour of the database, it does minimize risk,
-  because if you are familiar with one JDBC driver, you'll be familiar
-  with them all, and swapping one for another is relatively easy.
-\item
-  Using a framework like \href{https://spring.io}{Spring},
-  \href{https://redux.js.org}{Redux} or
-  \href{https://angularjs.org}{Angular} comes with higher Boundary Risk:
-  you are expected to yield to the framework's way of behaving
-  throughout your application. You cannot separate the concern easily,
-  and swapping out the framework for another is likely to leave you with
-  a whole new set of assumptions and interfaces to deal with.
-\end{itemize}
-
-\hypertarget{and-in-the-future}{%
-\section{\ldots{} And In The Future}\label{and-in-the-future}}
-
-Unless your project \emph{ends}, you can never be completely sure that
-Boundary Risk \emph{isn't} going to stop you making a move you want. For
-example:
-
-\begin{itemize}
-\tightlist
-\item
-  \texttt{mkdirp} might not work on a new device's Operating System,
-  forcing you to swap it out.
-\item
-  You might discover that the database you chose satisfied all the
-  features you needed at the start of the project, but came up short
-  when the requirements changed later on.
-\item
-  The front-end framework you chose might go out-of-fashion, and it
-  might be hard to find developers interested in working on the project
-  because of it.
-\end{itemize}
-
-This third point is perhaps the most interesting aspect of Boundary
-Risk: how can we ensure that the decisions we make now are future-proof?
-In order to investigate this further, let's look at three things:
-Plugins, Ecosystems and Evolution (again).
-
-\hypertarget{plugins-ecosystems-and-evolution}{%
-\section{Plugins, Ecosystems and
-Evolution}\label{plugins-ecosystems-and-evolution}}
-
-On the face of it,
-\href{https://en.wikipedia.org/wiki/WordPress}{WordPress} and
-{[}Drupal{]}(https://en.wikipedia.org/wiki/Drupal \emph{should} be very
-similar:
-
-\begin{itemize}
-\tightlist
-\item
-  They are both
-  \href{https://en.wikipedia.org/wiki/Content_management_system}{Content
-  Management Systems}
-\item
-  They both use a
-  \href{https://en.wikipedia.org/wiki/LAMP_(software_bundle)}{LAMP
-  (Linux, Apache, MySql, PHP) Stack}
-\item
-  They were both started around the same time (2001 for Drupal, 2003 for
-  WordPress)
-\item
-  They are both Open-Source, and have a wide variety of
-  \href{https://en.wikipedia.org/wiki/Plug-in_(computing)}{Plugins}.
-  That is, ways for other programmers to extend the functionality in new
-  directions.
-\end{itemize}
-
-In practice, they are very different. This could be put down to
-different \emph{design goals}: it seems that WordPress was focused much
-more on usability, and an easy learning curve, whereas Drupal supported
-plugins for building things with complex data formats. It could also be
-down to the \emph{design decisions}: although they both support Plugins,
-they do it in very different ways.
-
-(Side note: I wasn't short of go-to examples for this. I could have
-picked on \href{https://en.wikipedia.org/wiki/TeamCity}{Team City} and
-\href{https://en.wikipedia.org/wiki/Jenkins_(software)}{Jenkins} here
-(\href{https://en.wikipedia.org/wiki/Continuous_integration}{Continuous
-Integration} tools), or
-\href{https://en.wikipedia.org/wiki/Apache_Maven}{Maven} and
-\href{https://en.wikipedia.org/wiki/Gradle}{Gradle} (build tools). All
-of these support plugins), and the \emph{choice} of plugins is dependent
-on which I've chosen, despite the fact that the platforms are solving
-pretty much the same problems. )
-
-\hypertarget{ecosystems-and-systems}{%
-\subsection{Ecosystems and Systems}\label{ecosystems-and-systems}}
-
-The quality, and choice of plugins for a given platform, along with
-factors such as community and online documentation is often called its
-\href{https://en.wikipedia.org/wiki/Software_ecosystem}{ecosystem}:
-
-\begin{quote}
-``as a set of businesses functioning as a unit and interacting with a
-shared market for software and services, together with relationships
-among them'' - Software Ecosystem, \emph{Wikipedia}
-\end{quote}
-
-You can think of the ecosystem as being like the footprint of a town or
-a city, consisting of the buildings, transport network and the people
-that live there. Within the city, and because of the transport network
-and the amenities available, it's easy to make rapid, useful moves on
-the Risk Landscape. In a software ecosystem it's the same: the ecosystem
-has gathered together to provide a way to mitigate various different
-Feature Risks in a common way.
-
-tbd: talk about complexity within the boundary. (increased convenience?)
-
-Ecosystem size is one key determinant of Boundary Risk: a \emph{large}
-ecosystem has a large boundary circumference. Boundary Risk is lower
-because your moves on the Risk Landscape are unlikely to collide with
-it. The boundary \emph{got large} because other developers before you
-hit the boundary and did the work building the software equivalents of
-bridges and roads and pushing it back so that the boundary didn't get in
-their way.
-
-In a small ecosystem, you are much more likely to come into contact with
-the edges of the boundary. \emph{You} will have to be the developer that
-pushes back the frontier and builds the roads for the others. This is
-hard work.
-
-\hypertarget{evolution}{%
-\subsection{Evolution}\label{evolution}}
-
-In the real world, there is a tendency for \emph{big cities to get
-bigger}. The more people that live there, the more services they
-provide, and therefore, the more immigrants they attract. And, it's the
-same in the software world. In both cases, this is due to the
-\href{https://en.wikipedia.org/wiki/Network_effect}{Network Effect}:
-
-\begin{quote}
-``A network effect (also called network externality or demand-side
-economies of scale) is the positive effect described in economics and
-business that an additional user of a good or service has on the value
-of that product to others. When a network effect is present, the value
-of a product or service increases according to the number of others
-using it.'' - Network Effect, \emph{Wikipedia}
-\end{quote}
-
-You can see the same effect in the adoption rates of WordPress and
-Drupal, shown in the chart below. Note: this is over \emph{all sites on
-the internet}, so Drupal accounts for hundreds of thousands of sites. In
-2018, WordPress is approximately 32\% of all websites. For Drupal it's
-2\%.
+Let's again recap the risks raised in some of the available literature:
 
 \begin{figure}
 \centering
-\includegraphics{images/wordpress-drupal-chart.png}
-\caption{Wordpress vs Drupal adoption over 8 years, according to
-\href{https://w3techs.com/technologies/history_overview/content_management/all/y}{w3techs.com}}
+\includegraphics{images/generated/software_dependency_table_2-400dpi.png}
+\caption{Software As A Service Dependencies}
 \end{figure}
 
-Did WordPress gain this march because it was better than Drupal? That's
-arguable. That it's this way round could be \emph{entirely accidental},
-and a result of Network Effect.
+\href{https://www.zdnet.com/article/saas-checklist-nine-factors-to-consider-when-selecting-a-vendor/}{sd4
+- Saas Checklist - Nine Factors to Consider}
+\href{http://sandhill.com/article/how-to-evaluate-saas-vendors-five-key-considerations/}{sd5
+- How to Evaluate Saas Vendors}
 
-And maybe, they aren't comparable: Given the same problems, the people
-in each ecosystem have approached them and solved them in different
-ways. And, this has impacted the `shape' of the abstractions, and the
-protocols you use in each. Complexity \emph{emerges}, and the ecosystem
-gets more complex and opinionated, much like the way in which the
-network of a city will evolve over time in an unpredictable way.
-
-But, by now, if they \emph{are} to be compared side-by-side, WordPress
-\emph{should be better} due to the sheer number of people in this
-ecosystem who are\ldots{}
+Some take-aways:
 
 \begin{itemize}
 \tightlist
 \item
-  Creating web sites.
+  Clearly, Operational Risk is now a big concern. By depending on a
+  third-party organisation you are tying yourself to its success or
+  failure in a much bigger way than just by using a piece of open-source
+  software. What happens to data security, both in the data centre and
+  over the internet?
 \item
-  Using those sites.
+  With Feature Risk you now have to condend with the fact that the
+  software will be upgraded \emph{outside your control}, and you may
+  have limited control over which features get added or changed.
 \item
-  Submitting bug requests.
-\item
-  Fixing bugs.
-\item
-  Writing documentation.
-\item
-  Building plugins.
-\item
-  Creating features.
-\item
-  Improving the core platform.
+  Boundary Risk is a also a different proposition: you are tied to the
+  software provider by \emph{a contract}. If the service changes in the
+  future, or isn't to your liking, you can't simply fork the code (like
+  you could with an open source project).
 \end{itemize}
-
-But, there are two further factors to consider\ldots{}
-
-\hypertarget{the-peter-principle}{%
-\subsubsection{1. The Peter Principle}\label{the-peter-principle}}
-
-When a tool or platform is popular, it is under pressure to increase in
-complexity. This is because people are attracted to something useful,
-and want to extend it to new purposes. This is known as \emph{The Peter
-Principle}:
-
-\begin{quote}
-``The Peter principle is a concept in management developed by Laurence
-J. Peter, which observes that people in a hierarchy tend to rise to
-their `level of incompetence'.'' -
-\href{https://en.wikipedia.org/wiki/Peter_principle}{The Peter
-Principle, \emph{Wikipedia}}
-\end{quote}
-
-Although designed for \emph{people}, it can just as easily be applied to
-any other dependency you can think of. Let's look at
-\href{https://en.wikipedia.org/wiki/Java_(software_platform)}{Java} as
-an example of this.
-
-Java is a very popular platform. Let's look at how the number of public
-classes (a good proxy for the boundary) has increased with each release:
 
 \begin{figure}
 \centering
-\includegraphics{images/java_classes_by_version.png}
-\caption{Java Public Classes By Version (3-9)}
+\includegraphics{images/kite9/software-dependency-saas.png}
+\caption{Risk Tradeoff From Using \_Software as a Service (SaaS)}
 \end{figure}
 
-Why does this happen?
+\hypertarget{a-matrix-of-options}{%
+\section{A Matrix of Options}\label{a-matrix-of-options}}
 
-\begin{itemize}
-\tightlist
-\item
-  More and more people are using Java for more and more things. It's
-  popularity begets more popularity.
-\item
-  Human needs are \emph{fractal} in complexity. You can always find ways
-  to make a dependency \emph{better} (For some meaning of better).
-\item
-  There is Feature Drift Risk: our requirements evolve with time.
-  \href{https://en.wikipedia.org/wiki/Android_software_development}{Android
-  Apps} weren't even a thing when Java 3 came out, for example, yet they
-  are all written in Java now, and Java has had to keep up.
-\end{itemize}
+We've looked at just 3 different ways of providing a software
+dependency: SaaS, Libraries and code-your-own.
 
-\hypertarget{backward-compatibility}{%
-\subsubsection{2. Backward Compatibility}\label{backward-compatibility}}
+But these are not the only ways to do it, and there's clearly no one
+\emph{right} way. Although here we have looked just at ``Commercial
+Saas'' and ``Free Open Source'', in reality, these are just points in a
+two-dimensional space involving \emph{Pricing} and \emph{Hosting}.
 
-As we saw in Software Dependency Risk, The art of good design is to
-afford the greatest increase in functionality with the smallest increase
-in complexity possible, and this usually means Refactoring. But, this is
-at odds with Backward Compatibility.
+Let's expand this view slightly and look at where different pieces of
+software sit on these axes:
 
-Each new version has a greater functional scope than the one before
-(pushing back Boundary Risk), making the platform more attractive to
-build solutions in. But this increases the Complexity Risk as there is
-more functionality to deal with.
-
-\hypertarget{focus-vs-overreach}{%
-\subsection{Focus vs Overreach}\label{focus-vs-overreach}}
-
-\begin{figure}
+\begin{sidewaysfigure}
 \centering
-\includegraphics{images/kite9/boundary-risk-peter-principle.png}
-\caption{The Peter Principle: Backward Compatibility + Extension leads
-to complexity and learning curve risk}
-\end{figure}
-
-You can see in the diagram the Peter Principle at play: as more
-responsibility is given to a dependency, the more complex it gets, and
-the greater the learning curve to work with it. Large ecosystems like
-Java react to Learning Curve Risk by having copious amounts of
-literature to read or buy to help, but it is still off-putting.
-
-Because Complexity is Mass, large ecosystems can't respond quickly to
-Feature Drift. This means that when the world changes, \emph{new}
-systems will come along to plug the gaps.
-
-This implies a trade-off: - Sometimes it's better to accept the Boundary
-Risk innate in a smaller system than try to work within the bigger, more
-complex system.
-
-example:
-
-In the late 80's and 90's there was a massive push towards
-\emph{building functionality in the database}. Relational Database
-Managment Systems (RDBMSs) were all-in-one solutions, expensive
-platforms that you purchased and built \emph{everything} inside.
-However, this dream didn't last:
-
-why? (need some research here).
-
-This tbd
-
-tbd. diagram here.
-
-\hypertarget{beating-boundary-risk-with-standards}{%
-\section{Beating Boundary Risk With
-Standards}\label{beating-boundary-risk-with-standards}}
-
-Sometimes, technology comes along that allows us to cross boundaries,
-like a \emph{bridge} or a \emph{road}. This has the effect of making it
-easy to to go from one self-contained ecosystem to another. Going back
-to WordPress, a simple example might be the Analytics Dashboard which
-provides
-\href{https://en.wikipedia.org/wiki/Google_Marketing_Platform}{Google
-Analytics} functionality inside WordPress.
-
-I find, a lot of code I write is of this nature: trying to write the
-\emph{glue code} to join together two different \emph{ecosystems}.
-
-Standards allow us to achieve the same thing, in one of two ways:
+\includegraphics{images/generated/software_dependency_table_3_sideways-400dpi.png}
+\caption{Software Dependencies, Pricing, Delivery Matrix Risk Profiles}
+\end{sidewaysfigure}
 
 \begin{itemize}
 \tightlist
 \item
-  \textbf{Mode 1: Abstract over the ecosystems.} Provide a
-  \emph{standard} protocol (a \emph{lingua franca}) which can be
-  converted down into the protocol of any of a number of competing
-  ecosystems.
+  Where there is value in the
+  \href{https://en.wikipedia.org/wiki/Network_effect}{Network Effect},
+  it's often a sign that the software will be free, or open source:
+  programming languages and Linux are the obvious examples of this. Bugs
+  are easier to find when there are lots of eyes looking, and learning
+  the skill to use the software has less Boundary Risk if you know
+  you'll be able to use it at any point in the future.
 \item
-  \textbf{Mode 2: Force adoption.} All of the ecosystems start using the
-  standard for fear of being left out in the cold. Sometimes, a
-  standards body is involved, but other times a ``de facto'' standard
-  emerges that everyone adopts.
+  At the other end of the spectrum, clients will happily pay for
+  software if it clearly \textbf{reduces complexity}. Take
+  \href{https://en.wikipedia.org/wiki/Amazon_Web_Services}{Amazon Web
+  Services (AWS)}. The essential trade here is that you substitute the
+  complexity of hosting and maintaining various pieces of software, in
+  exchange for monthly payments (Funding Risk for you). Since the AWS
+  \emph{interfaces} are specific to Amazon, there is significant
+  Boundary Risk in choosing this option.
+\item
+  In the middle there are lots of \textbf{substitute options} and
+  therefore high competition. Because of this, prices are pushed towards
+  zero, and and therefore often advertising is used to monetarize the
+  product. \href{https://en.wikipedia.org/wiki/Angry_Birds}{Angry Birds}
+  is a classic example: initially, it had demo and paid versions,
+  however
+  \href{https://en.wikipedia.org/wiki/Rovio_Entertainment}{Rovio}
+  discovered there was much more money to be made through advertising
+  than from the
+  \href{https://www.deconstructoroffun.com/blog/2017/6/11/how-angry-birds-2-multiplied-quadrupled-revenue-in-a-year}{paid-for
+  app}.
 \end{itemize}
 
-Let's look at some examples:
+\hypertarget{managing-risks}{%
+\subsection{Managing Risks}\label{managing-risks}}
 
-\begin{itemize}
-\item
-  \href{https://en.wikipedia.org/wiki/ASCII}{ASCII}: fixed the
-  different-character-sets boundary risk by being a standard that others
-  could adopt. Before everyone agreed on ASCII, copying data from one
-  computer system to another was a massive pain, and would involve some
-  kind of translation.
-  \href{https://en.wikipedia.org/wiki/Unicode}{Unicode} continues this
-  work. (\textbf{Mode 1})
-\item
-  \href{https://en.wikipedia.org/wiki/C_(programming_language)}{C}: The
-  C programming language provided a way to get the same programs
-  compiled against different CPU instruction sets, therefore providing
-  some \emph{portability} to code. The problem was, each different
-  operating system would still have it's own libraries, and so to
-  support multiple operating systems, you'd have to write code against
-  multiple different libraries. (\textbf{Mode 2})
-\item
-  \href{https://en.wikipedia.org/wiki/Java_(programming_language)}{Java}
-  took what C did and went one step further, providing interoperability
-  at the library level. Java code could run anywhere where Java was
-  installed. (\textbf{Mode 2})
-\item
-  \href{https://en.wikipedia.org/wiki/Internet_Protocol}{Internet
-  Protocol}: As we saw in Communication Risk, the Internet Protocol (IP)
-  is the \emph{lingua franca} of the modern internet. However, at one
-  period of time, there were many competing standards. and IP was the
-  ecosystem that ``won'', and was subsequently standardized by the
-  \href{https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force}{IETF}.
-  (\textbf{Mode 1})
-\end{itemize}
+So far, we've considered only how the different approaches to Software
+Dependencies change the landscape of risks we face to mitigate some
+Feature Risk or other.
 
-\hypertarget{complex-boundaries}{%
-\section{Complex Boundaries}\label{complex-boundaries}}
+But with Software Dependencies we can construct dependency networks to
+give us all kinds of features and mitigate all kinds of risk. That is,
+\emph{the features we are looking for are to mitigate some kind of
+risk}.
 
-As shown in the above diagram, mitigating
-\protect\hyperlink{boundary-risk}{Boundary Risk} involves taking on
-complexity. The more Protocol Complexity there is to bridge the two
-ecosystems, the more Complex the bridge will necessarily be.
+For example, I might start using
+\href{https://en.wikipedia.org/wiki/WhatsApp}{WhatsApp} for example,
+because I want to be able to send my friends photos and text messages.
+However, it's likely that those same features are going to allow us to
+mitigate Communication Risk and Coordination Risk when we're next trying
+to meet up.
 
-\begin{sidewaystable} 
+Let's look at some:
 
-\begin{longtable}[]{@{}llll@{}}
+\begin{longtable}[]{@{}ll@{}}
 \toprule
-\begin{minipage}[b]{0.18\columnwidth}\raggedright
-Protocol Risk From A\strut
-\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedright
-Protocol Risk From B\strut
-\end{minipage} & \begin{minipage}[b]{0.18\columnwidth}\raggedright
-Resulting Bridge Complexity\strut
-\end{minipage} & \begin{minipage}[b]{0.35\columnwidth}\raggedright
-Example\strut
+\begin{minipage}[b]{0.40\columnwidth}\raggedright
+Risk\strut
+\end{minipage} & \begin{minipage}[b]{0.55\columnwidth}\raggedright
+Examples of Software Mitigating That Risk\strut
 \end{minipage}\tabularnewline
 \midrule
 \endhead
-\begin{minipage}[t]{0.18\columnwidth}\raggedright
-Low\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-Low\strut
-\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
-Simple\strut
-\end{minipage} & \begin{minipage}[t]{0.35\columnwidth}\raggedright
-Changing from one date format to another.\strut
+\begin{minipage}[t]{0.40\columnwidth}\raggedright
+Coordination Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedright
+Calendar tools, Bug Tracking, Distributed Databases\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.18\columnwidth}\raggedright
-High\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-Low\strut
-\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
-Moderate\strut
-\end{minipage} & \begin{minipage}[t]{0.35\columnwidth}\raggedright
-Status Dashboard, tbd\strut
+\begin{minipage}[t]{0.40\columnwidth}\raggedright
+Map-And-Territory-Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedright
+The Internet, generally. Excel, Google, ``Big Data'', Reporting
+tools\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.18\columnwidth}\raggedright
-High\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-High\strut
-\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
-Complex\strut
-\end{minipage} & \begin{minipage}[t]{0.35\columnwidth}\raggedright
-Object-Relational Mapping (ORM) Tools, (see below)\strut
+\begin{minipage}[t]{0.40\columnwidth}\raggedright
+Schedule-Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedright
+Planning Software, Project Mangement Software\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.18\columnwidth}\raggedright
-High + Evolving\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-Low\strut
-\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
-Moderate, Versioned\strut
-\end{minipage} & \begin{minipage}[t]{0.35\columnwidth}\raggedright
-Simple Phone App, e.g.~note-taker or calculator\strut
+\begin{minipage}[t]{0.40\columnwidth}\raggedright
+Communication-Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedright
+Email, Chat tools, CRM tools like SalesForce, Forums, Twitter,
+Protocols\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.18\columnwidth}\raggedright
-Evolving\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-High\strut
-\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
-Complex\strut
-\end{minipage} & \begin{minipage}[t]{0.35\columnwidth}\raggedright
-Modern browser (see below)\strut
+\begin{minipage}[t]{0.40\columnwidth}\raggedright
+Process-Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedright
+Reporting tools, online forms, process tracking tools\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.18\columnwidth}\raggedright
-Evolving\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-Evolving\strut
-\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
-Very Complex\strut
-\end{minipage} & \begin{minipage}[t]{0.35\columnwidth}\raggedright
-Google Search, Scala (see below)\strut
+\begin{minipage}[t]{0.40\columnwidth}\raggedright
+Agency-Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedright
+Auditing tools, transaction logs, Timesheet software, HR Software\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.40\columnwidth}\raggedright
+Operational-Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedright
+Support tools like ZenDesk, Grafana, InfluxDB, Geneos\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.40\columnwidth}\raggedright
+Feature-Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedright
+Every piece of software you use!\strut
 \end{minipage}\tabularnewline
 \bottomrule
 \end{longtable}
 
-\end{sidewaystable} 
+\hypertarget{back-to-ergonomics}{%
+\section{Back To Ergonomics}\label{back-to-ergonomics}}
 
-From examining the {[}Protocol Risk{]}{[}br1{]} at each end of the
-bridge you are creating, you can get a rough idea of how complex the
-endeavour will be:
+What's clear from this analysis is that software dependencies don't
+\emph{conquer} any risk - the moves they make on the Risk Landscape are
+\emph{subtle}. Whether or not you end up in a more favourable position
+risk-wise is going to depend heavily on the quality of the execution and
+the skill of the implementor.
 
-\begin{itemize}
-\tightlist
-\item
-  If it's low-risk at both ends, you're probably going to be able to
-  knock it out easily. Like translating a date, or converting one file
-  format to another.
-\item
-  Where one of the protocols is \emph{evolving}, you're definitely going
-  to need to keep releasing new versions. The functionality of a
-  \texttt{Calculator} app on my phone remains the same, but new versions
-  have to be released as the phone APIs change, screens change
-  resolution and so on.
-\item
-  tbd
-\end{itemize}
-
-Where boundaries
-
-tbd Trying to create a complex, fractal surface. User requirements are
-fractal in nature.
-
-\hypertarget{object-relational-mapping}{%
-\subsection{Object-Relational Mapping}\label{object-relational-mapping}}
-
-For example, Object Relational Mapping (ORM) has long been a problem in
-software. This is {[}Boundary-Crossing{]} software trying to bridge the
-gap between Relational Databases and Object-Oriented Languages like
-{[}Java{]}. Building a \emph{general} library that does this and is
-useful tbd said:
+In particular, \emph{choosing} dependencies can be extremely difficult.
+As we discussed above, the usefulness of any tool depends on its fit for
+purpose, it's \emph{ergonomics within a given context}. It's all too
+easy to pick a good tool for the wrong job:
 
 \begin{quote}
-`Object/Relational Mapping is the Vietnam of Computer Science' -
-\href{http://blogs.tedneward.com/post/the-vietnam-of-computer-science/}{Ted
-Neward}
+``I suppose it is tempting, if the only tool you have is a hammer, to
+treat everything as if it were a nail.'' -
+\href{https://en.wiktionary.org/wiki/if_all_you_have_is_a_hammer,_everything_looks_like_a_nail}{Abraham
+Maslow, \emph{Toward a Psychology of Being}}
 \end{quote}
 
-This is a particularly difficult problem because the two ecosystems are
-so \emph{rich} and \emph{complex} in the functionality they expose. But
-what are the alternatives?
+With software dependencies, we often have to live with the decisions we
+make for a long time. In my experience, given the Boundary Risks
+associated with getting this wrong, not enough time is spent really
+thinking about this in advance.
 
-\begin{itemize}
-\tightlist
-\item
-  Either back to building functionality within the database again, using
-  stored procedures
-\item
-  Building Object Oriented Databases. It's interesting that neither of
-  these really worked out.
-\item
-  Custom-building the bridge between the systems, one database call
-  at-a-time in your own software.
-\end{itemize}
-
-This is tbd hobson's choice, there is strong debate about whether ORM is
-a worse trade of mitigated Boundary Risk for attendant Complexity Risk
-or not, and clearly will depend on your circumstances.
-
-\hypertarget{scala}{%
-\subsection{Scala}\label{scala}}
-
-Mapping between complex boundaries is expecially difficult if the
-Boundaries are evolving and changing as you go. This means in ecosystems
-that are changing rapidly, you are unlikely to be able to create lasting
-bridges between them. Given that Java is an old, large and complex
-ecosystem, you would imagine that it would have a slow-enough rate of
-change that abstracting technologies can be built on top of it safely.
-
-Indeed, we see that happening with Clojure and Kotlin, two successful
-languages built on top of the Java Virtual Machine (JVM) and offering
-compatibility with it.
-
-\protect\hyperlink{scala}{Scala} is arguably the first mainstream
-language that tried to do the same thing: it is trying to build a
-Functional Programming paradigm on top of the Java Virtual Machine
-(JVM), which traditionally has an Object Oriented paradigm.
-
-The problem faced by Scala is that Java didn't stay still: as soon as
-they demonstrated some really useful features in Scala
-(i.e.~stream-based processing), Java moved to include this new
-functionality too. If they hadn't, the developer community would have
-slowly drifted away and used Scala instead.
-
-So, in a sense, Scala is a \emph{success story}: they were able to force
-change to Java. But, once Java had changed, Scala was in the difficult
-position of having two sets of competing features in the platform: the
-existing Scala streams, and the new Java streams.
-
-Clojure can interop with Java because on one side, the boundary is
-simple: lisp is a simple language which lends itself to reimplementation
-within other platforms. Therefore, the complexity of the bridge is
-\emph{simple}: all that needs to be provided is a way to call methods
-from Java to clojure.
-
-Scala and Java have a complex relationship because Scala creates it's
-own complex boundary: it is syntactically and functionally a broad
-language with lots of features. And so is Java. Mapping from one to the
-other is therefore
-
-for interop here. Why is one so different from the other?
-
-\hypertarget{browsers}{%
-\subsection{Browsers}\label{browsers}}
-
-Web browsers are another suprisingly complex boundary. They have to
-understand the following protocols:
-
-\begin{itemize}
-\tightlist
-\item
-  HTTP for loading resources (as we already reviewed in Complexity Risk
-\item
-  HTML Pages, for describing the content of web pages Complexity Risk
-\item
-  Various image formats
-\item
-  Javascript for web-page \emph{interactivity}
-\item
-  CSS for web-page styling, animation and so on.
-\item
-  \ldots{} and several others.
-\end{itemize}
-
-Handling any one of these protocols alone is a massive endeavour, so
-browsers are built on top of Software Libraries which handle each
-concern, for example, Networking Libraries, Parsers and so on.
-
-One way of looking at the browser is that it is a \emph{function}, where
-those elements listed above are the \emph{inputs} to the function, and
-the output is \emph{what is displayed on the screen}, as shown in the
-image below.
-
-tbd. browser as a function
-
-There are three specific problems that make this a really complex
-boundary:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  All of the standards above are \emph{evolving and improving}. And,
-  although HTML5 (say) is a reasonably well-specified standard, in
-  reality, web pages tend not to adhere exactly to the letter of it.
-  People make mistakes in the HTML they write, and it's up to the
-  browser to try and figure out what they \emph{meant} to write, rather
-  than what they did write. This makes the \emph{input} to the function
-  extremely complex.
-\item
-  Similarly, the \emph{output} of the function is not well defined
-  either, and relies a lot on people's \emph{subjective aesthetic
-  judgement}. For example, if you insert a
-  \texttt{\textless{}table\textgreater{}} into an HTML page, the
-  specification doesn't say anything about exactly how big the table
-  should be, the size of it's borders, the spacing of the content and so
-  on. At least, initially, \emph{none} of this was covered by the HTML
-  Specification. The CSS specification is over time clearing this up,
-  but it's not \emph{exactly nailed down}, which means\ldots{}
-\item
-  That because there are various different browsers (Chrome, Safari,
-  Internet Explorer, Microsoft Edge, Firefox etc.) and each browser has
-  multiple different versions, released over a period of many years, you
-  cannot, as a web-page developer know, \emph{a priori} what your
-  web-page will look like to a user.
-\end{enumerate}
-
-As developers trying to build software to be delivered over the
-internet, this is therefore a source of common Boundary Risk. If you
-were trying to build software to work in \emph{all browsers} and
-\emph{all versions}, this problem would be nearly insurmountable. So, in
-order to tackle this risk, we do the following:
-
-\begin{itemize}
-\tightlist
-\item
-  We pick a small (but commonly used) subset of browsers, and use
-  features from the specifications that we know commonly work in that
-  subset.
-\item
-  We test across the subset. Again, testing is \emph{harder than it
-  should be}, because of problem 2 above, that the expected output is
-  not exactly defined. This generally means you have to get humans to
-  apply their \emph{subjective aesthetic judgement}, rather than getting
-  machines to do it.
-\item
-  There is considerable pressure on browser developers to ensure
-  consistency of behaviour across the implementations. If all the
-  browsers work the same, then we don't face the Boundary Risk of having
-  to choose just one to make our software work in. However, it's not
-  always been like this\ldots{}
-\end{itemize}
-
-\hypertarget{vendor-lock-in}{%
-\section{Vendor Lock-In}\label{vendor-lock-in}}
-
-In the late 1990s, faced with the emergence of the nascent World Wide
-Web, and the Netscape Navigator browser, Microsoft adoped a strategy
-known as Embrace and Extend. The idea of this was to subvert the HTML
-standard to their own ends by \emph{embracing} the standard and creating
-their own browser (Internet Explorer) and then \emph{extending} it with
-as much functionality as possible, which would then \emph{not work} in
-Netscape Navigator. They then embarked on a campaign to try and get
-everyone to ``upgrade'' to Internet Explorer. In this way, they hoped to
-``own'' the Internet, or at least, the software of the browser, which
-they saw as analogous to being the ``operating system'' of the Internet,
-and therefore a threat to their own operating system, Windows.
-
-There are two questions we need to ask about this, from the
-point-of-view of understanding Boundary Risk:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Why was this a successful strategy?
-\item
-  Why did they stop doing this?
-\end{enumerate}
-
-Let's look at the first question then. Yes, it was a successful
-strategy. In the 1990s, browser functionality was rudimentary.
-Developers were \emph{desperate} for more features, and for more control
-over what appeared on their webpages. And, Internet Explorer (IE) was a
-free download (or, bundled with Windows). By shunning other browsers and
-coding just for IE, developers pushed Boundary Risk to the consumers of
-the web pages and in return mitigated Dependency Fit Risk: they were
-able to get more of the functionality they wanted in the browser.
-
-It's worth pointing out, \emph{this was not a new strategy}:
-
-\begin{itemize}
-\tightlist
-\item
-  Processor Chip manufacturers had done something similar in the tbds:
-  by providing features (instructions) on their processors that other
-  vendors didn't have, they made their processors more attractive to
-  system integrators. However, since the instructions were different on
-  different chips, this created Boundary Risk for the integrators. Intel
-  and Microsoft were able to use this fact to build a big ecosystem
-  around Windows running on Intel chips (so called, Wintel).
-\item
-  We have two main \emph{mobile} ecosystems: Apple's {[}iOS{]} and
-  Google's Android, which are both \emph{very} different and complex
-  ecosystems with large, complex boundaries. They are both innovating as
-  fast as possible to keep users happy with their features. Tools like
-  Xamarin exist which allow you to build
-\item
-  Currently, Amazon Web Services (AWS) are competing with Microsoft
-  Azure and {[}Google tbd{]} over building tools for Platform as a
-  Service (PaaS) (running software in the cloud). They are both racing
-  to build new functionality, but at the same time it's hard to move
-  from one vendor to another as there is no standardization on the
-  tools.
-\item
-  As we saw above, Database vendors tried to do the same thing with
-  features in the database. Oracle particularly makes money over
-  differentiating itself from competitors by providing features that
-  other vendors don't have. Tom tbd provides a compelling argument for
-  using these features thus:
-\end{itemize}
-
-\begin{quote}
-tbd.
-\end{quote}
-
-The next question, is why did Microsoft \emph{stop} pursuing this
-strategy? It seems that the answer is because they were made to. tbd.
-
-\hypertarget{everyday-boundary-risks}{%
-\section{Everyday Boundary Risks}\label{everyday-boundary-risks}}
-
-Boundary Risk occurs all the time. Let's look at some ways:
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Configuration}: When software has to be deployed onto a
-  server, there has to be configuration (usually on the command line, or
-  via configuration property files) in order to bridge the boundary
-  between the \emph{environment it's running in} and the \emph{software
-  being run}. Often, this is setting up file locations, security keys
-  and passwords, and telling it where to find other files and services.
-\item
-  \textbf{Integration Testing}: Building a unit test is easy. You are
-  generally testing some code you have written, aided with a testing
-  framework. Your code and the framework are both written in the same
-  language, which means low boundary risk. But, to \emph{integration
-  test} you need to step outside this boundary and so it becomes much
-  harder. This is true whether you are integrating with other systems
-  (providing or supplying them with data) or parts of your own system
-  (say testing the client-side and server parts together).
-\item
-  \textbf{User Interface Testing}: If you are supplying a
-  user-interface, then the interface with the user is already a complex,
-  under-specified risky protocol. Although tools exist to automate UI
-  testing (such as Selenium, these rarely satisfactorily mitigate this
-  protocol risk: can you be sure that the screen hasn't got strange
-  glitches, that the mouse moves correctly, that the proportions on the
-  screen are correct on all browsers?
-\item
-  \textbf{Jobs}: When you pick a new technology to learn and add to your
-  CV, it's worth keeping in mind how useful this will be to you in the
-  future. It's career-limiting to be stuck in a dying ecosystem and need
-  to retrain.
-\item
-  \textbf{Teams}: if you're given license to build a new product within
-  an existing team, are you creating Boundary Risk by using tools that
-  the team aren't familiar with?
-\item
-  \textbf{Organisatations}: Getting teams or departments to work with
-  each other often involves breaking down Boundary Risk. Often the
-  departments use different tool-sets or processes, and have different
-  goals making the translation harder. tbd
-\end{itemize}
-
-\hypertarget{boundary-risk-and-change}{%
-\subsection{Boundary Risk and Change}\label{boundary-risk-and-change}}
-
-You can't always be sure that a dependency now will always have the same
-guarantees in the future:
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Ownership changes} Microsoft buys Github. What will happen to
-  the ecosystem around github now?
-\item
-  \textbf{Licensing changes}. (e.g. \href{http://oracle.com}{Oracle}
-  buys \textbf{Tangosol} who make
-  \href{https://en.wikipedia.org/wiki/Oracle_Coherence}{Coherence} for
-  example). Having done this, they increase the licensing costs of
-  Tangosol to huge levels, milking the Cash Cow of the installed
-  user-base, but ensuring no-one else is likely to use it.
-\item
-  \textbf{Better alternatives become available}: As a real example of
-  this, I began a project in 2016 using Apache Solr. However, in 2018, I
-  would probably use
-  \href{https://en.wikipedia.org/wiki/Elasticsearch}{ElasticSearch}. In
-  the past, I've built websites using Drupal and then later converted
-  them to use WordPress.
-\end{itemize}
-
-\hypertarget{patterns-in-boundary-risk}{%
-\section{Patterns In Boundary Risk}\label{patterns-in-boundary-risk}}
-
-In Feature Risk, we saw that the features people need change over time.
-Let's get more specific about this:
-
-\begin{itemize}
-\tightlist
-\item
-  Human need is Fractal. This means that over time, software products
-  have evolved to more closely map to human needs. Software that would
-  have delighted us ten years ago lacks the sophistication we expect
-  today.
-\item
-  Software and hardware are both is improving with time, due to
-  evolution and the ability to support greater and greater levels of
-  complexity.
-\item
-  Abstractions build too. As we saw in Process Risk, we
-  \emph{encapsulate} earlier abstractions in order to build later ones.
-\end{itemize}
-
-If all this is true, the only thing we can expect in the future is that
-the lifespan of any ecosystem will follow an arc through creation,
-adoption, growth, use and finally either be abstracted over or
-abandoned.
-
-tbd diagram.
-
-Although our discipline is a young one, we should probably expect to see
-``Software Archaeology'' in the same way as we see it for biological
-organisms. Already we can see the dead-ends in the software evolutionary
-tree: COBOL and BASIC languages, CASE systems. Languages like FORTH live
-on in PostScript, SQL is still embedded in everything
-
-Boundary risk is \emph{inside} and \emph{outside}
+Let's take a closer look at this problem in the next section, Boundary
+Risk.
 
 \part{Preview}
 
