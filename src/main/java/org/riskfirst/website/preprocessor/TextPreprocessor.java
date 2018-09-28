@@ -5,6 +5,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -17,6 +19,8 @@ import java.util.regex.Pattern;
 public class TextPreprocessor {
 	
 	public static final boolean LINKS_AS_BOLD = false;
+	
+	public static Set<String> seenUrls = new HashSet<>();
 
 	public static void main(String[] args) throws IOException {
 		String file = args[0];
@@ -38,7 +42,9 @@ public class TextPreprocessor {
 				processIncludes(br, origin);
 			} else if (line.trim().startsWith("<!--latex")) {
 				line = line.replaceAll("<!--latex", "").replaceAll("-->", "");
-				System.out.print(line);
+				System.out.println("```{=latex}");
+				System.out.println(line);
+				System.out.println("```");
 			} else {
 				line = line.replaceAll("\\s+$", "");	// trim end of line
 				processLinks(line, TextPreprocessor::processImageLink, lineNo, System.out::print);
@@ -109,9 +115,24 @@ public class TextPreprocessor {
 					url = url.substring(0, url.length()-4) + "-400dpi.png";
 				}
 				
-				System.out.println("!["+text+"]("+url+")");
+				if (url.contains("sideways")) {
+					System.out.println("```{=latex}");
+					System.out.println("\\begin{sidewaysfigure}");
+					System.out.println("\\centering");
+					System.out.println("\\includegraphics{"+url+"}");
+					System.out.println("\\caption{"+text+"}");
+					System.out.println("\\end{sidewaysfigure}");
+					System.out.println("```");
+
+				} else {
+					System.out.println("!["+text+"]("+url+")");
+				}					
 			}
+		} else if (seenUrls.contains(url)) {
+			// just output as text.
+			System.out.print(text);
 		} else {
+			seenUrls.add(url);
 			System.out.print(link.trim());
 		}
 	}
