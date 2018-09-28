@@ -15,6 +15,7 @@ And, as we discussed in [Complexity Risk](Complexity-Risk), there is always the 
 [Boundary Risk](Boundary-Risk) is an emergent risk, which exists at the intersection of [Complexity Risk](Complexity-Risk), [Dependency Risk](Dependency-Risk) and [Communication Risk](Communication-Risk).  Because of that, it's going to take a bit of time to pick it apart and understand it, so we're going to build up to this in stages.
 
 Let's start with an obvious example: Musical Instruments.  Let's say you want to learn to play some music.  There are a _multitude_ of options available to you, and you might choose an _uncommon_ instrument like a [Balalaika](https://en.wikipedia.org/wiki/Balalaika) or a [Theremin](https://en.wikipedia.org/wiki/Theremin), or you might choose a _common_ one like a piano or guitar.   In any case, once you start learning this instrument, you have picked up the three risks above:  
+
  - [Dependency Risk](Dependency-Risk) You have a _physical_ [Dependency]() on it in order to play music, so get to the music shop and buy one.
  - [Communication Risk](Communication-Risk):  You have to _communicate_ with the instrument in order to get it to make the sounds you want.  And you have [Learning Curve Risk](Communication-Risk#learning-curve-risk) in order to be able to do that.
  - [Complexity Risk](Complexity-Risk): As _a music playing system_, you now have an extra component (the instrument), with all the attendant complexity of looking after that instrument, tuning it, and so on.
@@ -31,18 +32,18 @@ Let's look at a software example now.
 
 As discussed in [Software Dependency Risk](Software-Dependency-Risk), if we are going to use a software tool as a dependency, we have to accept the complexity of it's [Interface](Software-Dependency-Risk#interfaces), and learn the [protocol](Communication-Risk#protocol) of that interface.  If you want to work with it, you have to use it's protocol, it won't come to you.   
 
-Let's take a look at a hypothetical system structure:
+Let's take a look at a hypothetical system structure, in the accompanying diagram.  In this design, we have are transforming data from the `input` to the `output`.  But how should we do it?
 
-![Our System receives data from the `input`, translates it and sends it to the `output`.  But which dependency should we use for the translation, if any?](images/kite9/boundary-risk-ps.png)
-
-In this design, we have are transforming data from the `input` to the `output`.  But how should we do it?
  - We could go via `a`, using the [Protocols](Communication-Risk#protocol-risk) of `a`, and having a dependency on `a`.
  - We could go via `b`, using the [Protocols](Communication-Risk#protocol-risk) of `b`, and having a dependency on `b`. 
  - We could choose the middle route, and avoid the dependency, but potentially pick up lots more [Complexity Risk](Complexity-Risk) and [Schedule Risk](Schedule-Risk).
  
+![Our System receives data from the `input`, translates it and sends it to the `output`.  But which dependency should we use for the translation, if any?](images/kite9/boundary-risk-ps.png)
+
 This is a basic **Translation** job from `input` to `output`. Since we are talking about **Translation**, we are clearly talking about [Communication Risk](Communication-Risk) again:  our task in **Integrating** all of these components is _to get them to talk to each other_.
 
 From a [Cyclomatic Complexity](Complexity-Risk#cyclomatic-complexity) point of view, this is a very simple structure, with low [Complexity](Complexity-Risk).  But the choice of approach presents us with [Boundary Risk](Boundary-Risk), because we don't know that we'll be able to make them _talk to each other_ properly:
+
  - Maybe `a` outputs dates in a strange calendar format that we won't understand.
  - Maybe `b` works on some streaming API basis, that is incompatible with the input protocol.
  - Maybe `a` runs on Windows, whereas our code runs on Linux.
@@ -60,6 +61,7 @@ Wherever we integrate dependencies with complex [Protocols](Communication-Risk#p
 ![The tradeoff for using a library](images/kite9/software-dependency-library.png)
 
 As we saw in [Software Dependency Risk](Software-Dependency-Risk), [Boundary Risk](Boundary-Risk) is a big factor in choosing libraries and services.  However, it can apply to any kind of dependency:
+
  - If you're depending on a [Process or Organisation](Process-Risk), they might change their products or quality, making the effort you put into the relationship worthless.
  - If you're depending on [Staff](Agency-Risk#staff-risk), they might leave, meaning your efforts on training them don't pay back as well as you hoped.
  - If you're depending on an [Event](Schedule-Risk) occuring at a particular time, you might have a lot of work to reorganise your life if it changes time or place.
@@ -75,6 +77,7 @@ Because of [Boundary Risk](Boundary-Risk)'s relationship to [Learning Curve Risk
 ## ... And In The Future
 
 Unless your project _ends_, you can never be completely sure that [Boundary Risk](Boundary-Risk) _isn't_ going to stop you making a move you want.  For example:
+
  - `mkdirp` might not work on a new device's [Operating System](), forcing you to swap it out.
  - You might discover that the database you chose satisfied all the features you needed at the start of the project, but came up short when the requirements changed later on.
  - The front-end framework you chose might go out-of-fashion, and it might be hard to find developers interested in working on the project because of it.
@@ -84,6 +87,7 @@ This third point is perhaps the most interesting aspect of [Boundary Risk](Bound
 ## Plugins, Ecosystems and Evolution
 
 On the face of it, [WordPress](https://en.wikipedia.org/wiki/WordPress) and [Drupal](https://en.wikipedia.org/wiki/Drupal _should_ be very similar:
+
  - They are both [Content Management Systems](https://en.wikipedia.org/wiki/Content_management_system)
  - They both use a [LAMP (Linux, Apache, MySql, PHP) Stack](https://en.wikipedia.org/wiki/LAMP_(software_bundle))
  - They were both started around the same time (2001 for Drupal, 2003 for WordPress)
@@ -123,6 +127,7 @@ Did WordPress gain this march because it was better than Drupal?  That's arguabl
 And maybe, they aren't comparable:  Given the same problems, the people in each ecosystem have approached them and solved them in different ways.  And, this has impacted the 'shape' of the abstractions, and the protocols you use in each.  [Complexity](Complexity-Risk) _emerges_, and the ecosystem gets more complex and opinionated, much like the way in which the network of a city will evolve over time in an unpredictable way.
 
 But, by now, if they _are_ to be compared side-by-side, WordPress _should be better_ due to the sheer number of people in this ecosystem who are...
+
  - Creating web sites.
  - Using those sites.
  - Submitting bug requests.
@@ -147,6 +152,7 @@ Java is a very popular platform.  Let's look at how the number of public classes
 ![Java Public Classes By Version (3-9)](images/java_classes_by_version.png)
 
 Why does this happen?  
+
  - More and more people are using Java for more and more things.  It's popularity begets more popularity.  
  - Human needs are _fractal_ in [complexity](Complexity-Risk).  You can always find ways to make a dependency _better_  (For some meaning of better).
  - There is [Feature Drift Risk](Feature-Risk#feature-drift-risk):  our requirements evolve with time.   [Android Apps](https://en.wikipedia.org/wiki/Android_software_development) weren't even a thing when Java 3 came out, for example, yet they are all written in Java now, and Java has had to keep up.  
@@ -204,7 +210,9 @@ Let's look at some examples:
 
 As shown in the above diagram, mitigating [Boundary Risk] involves taking on complexity.  The more [Protocol Complexity]() there is to bridge the two ecosystems, the more [Complex]() the bridge will necessarily be.  
 
-|[Protocol Risk][br1] From A  |[Protocol Risk][br2] From B |Resulting Bridge Complexity  |Example                                                  |
+<!--latex\begin{sidewaystable} -->
+
+|Protocol Risk From A         |Protocol Risk        From B |Resulting Bridge Complexity  |Example                                                  |
 |-----------------------------|----------------------------|-----------------------------|---------------------------------------------------------|
 |Low                          |Low                         |Simple                       |Changing from one date format to another.                |
 |High                         |Low                         |Moderate                     |Status Dashboard, tbd                                    |
@@ -213,9 +221,10 @@ As shown in the above diagram, mitigating [Boundary Risk] involves taking on com
 |Evolving                     |High                        |Complex                      |Modern browser (see below)                               |
 |Evolving                     |Evolving                    |Very Complex                 |Google Search, Scala (see below)                         |
 
-[br1]: (Communication-Risk#Protocol-Risk)
+<!--latex\end{sidewaystable} -->
 
 From examining the [Protocol Risk][br1] at each end of the bridge you are creating, you can get a rough idea of how complex the endeavour will be:
+
  - If it's low-risk at both ends, you're probably going to be able to knock it out easily.  Like translating a date, or converting one file format to another.
  - Where one of the protocols is _evolving_, you're definitely going to need to keep releasing new versions.   The functionality of a `Calculator` app on my phone remains the same, but new versions have to be released as the phone APIs change, screens change resolution and so on.
  - tbd
@@ -325,6 +334,7 @@ The next question, is why did Microsoft _stop_ pursuing this strategy?  It seems
 ### Boundary Risk and Change
 
 You can't always be sure that a dependency now will always have the same guarantees in the future: 
+
 - **Ownership changes**  [Microsoft]() buys [Github]().  What will happen to the ecosystem around github now?
 - **Licensing changes**.  (e.g. [Oracle](http://oracle.com) buys **Tangosol** who make [Coherence](https://en.wikipedia.org/wiki/Oracle_Coherence) for example).  Having done this, they increase the licensing costs of Tangosol to huge levels, milking the [Cash Cow]() of the installed user-base, but ensuring no-one else is likely to use it.
 - **Better alternatives become available**:  As a real example of this, I began a project in 2016 using [Apache Solr]().  However, in 2018, I would probably use [ElasticSearch](https://en.wikipedia.org/wiki/Elasticsearch).  In the past, I've built websites using Drupal and then later converted them to use WordPress.
