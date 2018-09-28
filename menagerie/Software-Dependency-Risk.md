@@ -99,7 +99,7 @@ There are lots of ways you can depend on software.  Here though, we're going to 
  
 All 3 approaches involve a different risk-profile.  Let's look at each in turn, from the perspective of which risks get mitigated, and which risks are accentuated. 
  
-## 1. Code Your Own
+### 1. Code Your Own
 
 Initially, writing our own code was the only game in town:  when I started programming, you had a user guide, BASIC and that was pretty much it.  Tool support was very thin-on-the-ground.  Programs and libraries could be distributed as code snippets _in magazines_ which could be transcribed and run, and added to your program.  This spirit lives on somewhat in StackOverflow and JSFiddle, where you are expected to "adopt" others' code into your own project.  
 
@@ -140,7 +140,7 @@ In essence, this is [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law)
 
 > "organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations." — [M. Conway, _Conway's Law_](https://en.wikipedia.org/wiki/Conway%27s_law) <!-- tweet-end -->
 
-## 2.  Software Libraries
+### 2.  Software Libraries
 
 By choosing a particular software library, we are making a move on the [Risk Landscape](Risk-Landscape) in the hope of moving to place with more favourable risks. <!-- tweet-end --> Typically, using library code offers a [Schedule Risk](Schedule-Risk) and [Complexity Risk](Complexity-Risk) [Silver Bullet](Silver-Bullets).  But, in return we expect to pick up:
 - [Communication Risk](Communication-Risk): because we now have to learn how to communicate with this new dependency.
@@ -221,12 +221,7 @@ But these are not the only ways to do it, and there's clearly no one _right_ way
 
 Let's expand this view slightly and look at where different pieces of software sit on these axes:
 
-| Pricing                        	|                    On Premises 3rd Party                                                                             | In Cloud / Browser 3rd Party                           	                                     | Risk Profile                                                                                                    |
-|--------------------------------	|-----------------------------------------------------------                                                           |--------------------------------------------------------	                                     |------------------------------------------------------------------------------	|
-| Free                           	| **OSS Libraries** <br /><ul><li>Tools</li><li>Java</li><li>Firefox</li>Linux</li><li>Programming Languages</li></ul> | **Freemium**<ul><li>Splunk</li><li>Spotify</li><li>GitHub</li></ul>                             | *<ul><li>Low Boundary Risk Drives Adoption</li><li>Value In Network Effect</li></ul>*                         	|
-| Advertising Supported          	| **Commercial Software**<ul><li>Lots of phone apps</li><li>e.g. Angry Birds</li></ul>                                 | **Commercial SaaS** <ul><li>Google Search</li><li>Gmail</li><li>Twitter</li></ul>               | *<ul><li>Low Boundary Risk</li><li>High Availability Of Substitutes</li></ul>*                            	|
-| Monthly / Metered Subscription 	| **Commercial Software**<ul><li>Oracle Databases</li><li>Windows</li><li>Office</li></ul>                             | **Commercial SaaS** <ul><li>Office 365</li><li>SalesForce</li><li>Amazon Web Services</li></ul> | *Easy arguments for reduced: <ul><li>Complexity Risk</li><li>Communication Risk</li><li>Coordination Risk</li></ul>* <br /> *Higher Boundary Risk*	|
-|                                    |                                                                                                                      | *Transferred: <ul><li>Operational Risk</li></ul>*                                               |                                                                                 |
+![Software Dependencies, Pricing, Delivery Matrix Risk Profiles](images/generated/software_dependency_table_3_sideways.png)
 
 - Where there is value in the [Network Effect](https://en.wikipedia.org/wiki/Network_effect), it's often a sign that the software will be free, or open source<!-- tweet-end -->:  programming languages and Linux are the obvious examples of this.  Bugs are easier to find when there are lots of eyes looking, and learning the skill to use the software has less [Boundary Risk](Boundary-Risk) if you know you'll be able to use it at any point in the future.
 - At the other end of the spectrum, clients will happily pay for software if it clearly **reduces complexity**.  Take [Amazon Web Services (AWS)](https://en.wikipedia.org/wiki/Amazon_Web_Services).  The essential trade here is that you substitute the complexity of hosting and maintaining various pieces of software, in exchange for monthly payments ([Funding Risk](Schedule-Risk#Funding-Risk) for you).  Since the AWS _interfaces_ are specific to Amazon, there is significant [Boundary Risk](Boundary-Risk) in choosing this option.
