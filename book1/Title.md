@@ -7,11 +7,13 @@
 
 \centering
 
-{\Huge\bfseries\textsc{Risk-First Software Development}}\\[2\baselineskip]
+{\Huge\bfseries\textsc{Risk-First}}\\[2\baselineskip]
 
-{\Huge\textit{Volume 1: The Menagerie}}\\[10\baselineskip]
+{\Huge\bfseries\textsc{Software Development De-Risked }}\\[2\baselineskip]
 
-{\Oldincludegraphics[width=0.5\textwidth]{images/R1_logo_grue.png}}\\[10\baselineskip]
+{\Huge\textit{Volume 1: The Menagerie}}\\[7\baselineskip]
+
+{\Oldincludegraphics[width=0.5\textwidth]{images/R1_logo_grue.png}}\\[7\baselineskip]
 
 {\Huge\textsc{Rob Moffat}}
 

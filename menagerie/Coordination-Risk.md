@@ -85,18 +85,19 @@ If you are engaged in a solo project, do you suffer from [Coordination Risk](Coo
 
 ![Vroom And Yetton Decision Making Styles.  "d" indicates authority in making a decision.  Thin lines with arrow-heads show information flow, whilst thick lines show _opinions_ being passed around.](images/kite9/vroom-yetton.png)
 
-|Type           |People Involved In Decision|Opinions         |Channels Of Communication                             |Coordination Risk                |Description
-|---------------|---------------------------|-----------------|-----------------------------------                   |---------------------------------|----------
-|**UI**         |1                          |1                |0                                                     |Competition                      |_No Coordination_
-|**AI**         |1                          |1                |**s** (One message to each **subordinate**)           |Maximum [Coordination Risk][co1] |Autocratic, top-down
-|**AII**        |1                          |1                |2 x **s** (Messages from/to each **subordinate**)     |                                 |Autocratic, with information flow up.
-|**CI**         |1                          |1 + **s**        |> 2 x **s**                                           |                                 |Individual Consultations
-|**CII**        |1                          |1 + **s**        |> **s**<sup>2</sup>                                   |                                 |Group Consultation
-|**GII**        |1 + **s**                  |1 + **s**        |> **s**<sup>2</sup>                                   |Maximum [Communication Risk][co2], [Schedule Risk][co3]|Group Consultation with voting
+<!--latex\begin{sidewaystable} -->
 
-[co1]: (Coordination-Risk)
-[co2]: (Communication-Risk)
-[co3]: (Schedule-Risk)
+|Type           |People Involved In Decision|Opinions         |Channels Of Communication                             |Coordination Risk                |Description                                |
+|---------------|---------------------------|-----------------|-----------------------------------|---------------------------------|----------|
+|**UI**         |1                          |1                |0                                                     |Competition                      |_No Coordination_|
+|**AI**         |1                          |1                |**s** (One message to each **subordinate**)           |Maximum Coordination Risk|Autocratic, top-down|
+|**AII**        |1                          |1                |2 x **s** (Messages from/to each **subordinate**)     |                                 |Autocratic, with information flow up.|
+|**CI**         |1                          |1 + **s**        |> 2 x **s**                                           |                                 |Individual Consultations|
+|**CII**        |1                          |1 + **s**        |> **s**<sup>2</sup>                                   |                                 |Group Consultation|
+|**GII**        |1 + **s**                  |1 + **s**        |> **s**<sup>2</sup>                                   |Maximum Communication Risk, Schedule Risk|Group Consultation with voting|
+
+<!--latex\end{sidewaystable} -->
+
 
 At the top, you have the _least_ consultative styles, and at the bottom, the _most_.   At the top, decisions are made with just the leader's [Internal Model](Glossary#Internal-Model) but moving down, the [Internal Models](Glossary#Internal-Model) of the rest of the team are increasingly brought into play.  
 
