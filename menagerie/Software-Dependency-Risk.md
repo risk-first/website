@@ -15,11 +15,11 @@ abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
 And we came up with this:
 
 ```javascript
-const ABCD="ABCD";                                           (11 symbols)
+const ABCD="ABCD";                         (11 symbols)
 
-function out() {                                             (7 symbols)
-    return ABCD.repeat(10)                                   (7 symbols)
-}                                                            (1 symbol)
+function out() {                           (7 symbols)
+    return ABCD.repeat(10)                 (7 symbols)
+}                                          (1 symbol)
 ```
 
 Which had **26** symbols in it.  
@@ -27,22 +27,22 @@ Which had **26** symbols in it.
 Now, here's the cheat:  The `repeat()` function was built into Javascript in 2015 in [ECMAScript 6.0](http://www.ecma-international.org/ecma-262/6.0/).  If we'd had to program it ourselves, we might have added this:
 
 ```javascript
-function repeat(s,n) {                                       (10 symbols)
-    var a=[];                                                (7 symbols)
-    while(a.length<n){                                       (9 symbols)  
-        a.push(s)                                            (6 symbols)
-    }                                                        (1 symbol)
-    return a.join('');                                       (10 symbols)
-}                                                            (1 symbol)
+function repeat(s,n) {                     (10 symbols)
+    var a=[];                              (7 symbols)
+    while(a.length<n){                     (9 symbols)  
+        a.push(s)                          (6 symbols)
+    }                                      (1 symbol)
+    return a.join('');                     (10 symbols)
+}                                          (1 symbol)
 ```
 ... which would be an extra **44** symbols (in total **70**), and push us completely over the original string encoding of **53** symbols.   So, _encoding language is important_.   
 
 Conversely, if ECMAScript 6.0 had introduced a function called `abcdRepeater(n)` we'd have been able to do this:
 
 ```javascript
-function out() {                                             (7 symbols)
-    return abcdRepeater(10)                                  (6 symbols)
-}                                                            (1 symbol)
+function out() {                           (7 symbols)
+    return abcdRepeater(10)                (6 symbols)
+}                                          (1 symbol)
 ``` 
 
 .. and re-encode to **14** symbols.  Now, clearly there are some problems with all this:
@@ -160,13 +160,9 @@ Unfortunately, we know that most decisions _don't_ really get made this way.  We
 
 But, leaving that aside, let's try to build a model of what this decision making process _should_ involve.  Luckily, other authors have already considered the problem of choosing good software libraries, so let's start there.
 
-In the table below, I am summarizing three different sources, which give descriptions of which factors to look for when choosing open-source libraries.  
+In the table below, I am summarizing three different sources, which give descriptions of which factors to look for when choosing open-source libraries.
 
-![Software Dependencies](images/generated/software_dependency_table_1.xml)
-
-[sd1 - Defending your code against dependency problems](https://www.software.ac.uk/resources/guides/defending-your-code-against-dependency-problems)
-[sd2 - How to choose an open source library](https://stackoverflow.com/questions/2960371/how-to-choose-an-open-source-library)
-[sd3 - Open Source - To use or not to use](https://www.forbes.com/sites/forbestechcouncil/2017/07/20/open-source-to-use-or-not-to-use-and-how-to-choose/2/#39e67e445a8c)
+![Software Dependencies](images/generated/software_dependency_table_1_large.png)
 
 Some take-aways:
 
@@ -187,7 +183,7 @@ Sometimes, the amount of complexity _goes up_ when you use a dependency for _goo
 
 ![Software Libraries Risk Tradeoff](images/kite9/software-dependency-library.png) 
 
-## 3.  Software as a Service
+### 3.  Software as a Service
 
 Businesses opt for Software as a Service (SaaS) because:
 - It vastly reduces the [Complexity Risk](Complexity-Risk) they face in their organisations. e.g. managing the software or making changes to it.
@@ -200,10 +196,7 @@ By providing the software on their own servers, the commercial organisation has 
 
 Let's again recap the risks raised in some of the available literature:
 
-![Software As A Service Dependencies](images/generated/software_dependency_table_2.png)
-
-[sd4 - Saas Checklist - Nine Factors to Consider](https://www.zdnet.com/article/saas-checklist-nine-factors-to-consider-when-selecting-a-vendor/)
-[sd5 - How to Evaluate Saas Vendors](http://sandhill.com/article/how-to-evaluate-saas-vendors-five-key-considerations/)
+![Software As A Service Dependencies](images/generated/software_dependency_table_2_large.png)
 
 Some take-aways:
 
@@ -259,4 +252,13 @@ In particular, _choosing_ dependencies can be extremely difficult.  As we discus
 With software dependencies, we often have to live with the decisions we make for a long time. <!-- tweet-end --> In my experience, given the [Boundary Risks](Boundary-Risk) associated with getting this wrong, not enough time is spent really thinking about this in advance.  
 
 Let's take a closer look at this problem in the next section, [Boundary Risk](Boundary-Risk).
+
+|Sources          |
+|-----------------|
+| [sd1 - Defending your code against dependency problems](https://www.software.ac.uk/resources/guides/defending-your-code-against-dependency-problems)
+| [sd2 - How to choose an open source library](https://stackoverflow.com/questions/2960371/how-to-choose-an-open-source-library)
+| [sd3 - Open Source - To use or not to use](https://www.forbes.com/sites/forbestechcouncil/2017/07/20/open-source-to-use-or-not-to-use-and-how-to-choose/2/#39e67e445a8c)
+| [sd4 - Saas Checklist - Nine Factors to Consider](https://www.zdnet.com/article/saas-checklist-nine-factors-to-consider-when-selecting-a-vendor/) |
+| [sd5 - How to Evaluate Saas Vendors](http://sandhill.com/article/how-to-evaluate-saas-vendors-five-key-considerations/) |
+
 

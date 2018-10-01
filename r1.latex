@@ -21,7 +21,7 @@
 
 %Images
 \usepackage{graphicx}
-% We will generate all images so they have a width .8\maxwidth. This means
+% We will generate all images so they have a width .9\maxwidth. This means
 % that they will get their normal width if they fit onto the page, but
 % are scaled down if they would overflow the margins.
 \makeatletter
@@ -699,7 +699,7 @@ risks.
 \hypertarget{software-dependency-risk}{%
 \chapter{Software Dependency Risk}\label{software-dependency-risk}}
 
-In this section, we're going to look specifically at \emph{Software}
+In this chapter, we're going to look specifically at \emph{Software}
 dependencies, although many of the concerns we'll raise here apply
 equally to all the other types of dependency we outlined in Dependency
 Risk.
@@ -708,7 +708,7 @@ Risk.
 \section{Kolmogorov Complexity:
 Cheating}\label{kolmogorov-complexity-cheating}}
 
-In the earlier section on Complexity Risk we tackled Kolmogorov
+In the earlier chapter on Complexity Risk we tackled Kolmogorov
 Complexity, and the idea that your codebase had some kind of minimal
 level of complexity based on the output it was trying to create. This is
 a neat idea, but in a way, we cheated. Let's look at how.
@@ -724,11 +724,11 @@ And we came up with this:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{const}\NormalTok{ ABCD}\OperatorTok{=}\StringTok{"ABCD"}\OperatorTok{;}\NormalTok{                                           (}\DecValTok{11}\NormalTok{ symbols)}
+\KeywordTok{const}\NormalTok{ ABCD}\OperatorTok{=}\StringTok{"ABCD"}\OperatorTok{;}\NormalTok{                         (}\DecValTok{11}\NormalTok{ symbols)}
 
-\KeywordTok{function} \AttributeTok{out}\NormalTok{() }\OperatorTok{\{}\NormalTok{                                             (}\DecValTok{7}\NormalTok{ symbols)}
-    \ControlFlowTok{return} \VariableTok{ABCD}\NormalTok{.}\AttributeTok{repeat}\NormalTok{(}\DecValTok{10}\NormalTok{)                                   (}\DecValTok{7}\NormalTok{ symbols)}
-\OperatorTok{\}}\NormalTok{                                                            (}\DecValTok{1}\NormalTok{ symbol)}
+\KeywordTok{function} \AttributeTok{out}\NormalTok{() }\OperatorTok{\{}\NormalTok{                           (}\DecValTok{7}\NormalTok{ symbols)}
+    \ControlFlowTok{return} \VariableTok{ABCD}\NormalTok{.}\AttributeTok{repeat}\NormalTok{(}\DecValTok{10}\NormalTok{)                 (}\DecValTok{7}\NormalTok{ symbols)}
+\OperatorTok{\}}\NormalTok{                                          (}\DecValTok{1}\NormalTok{ symbol)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -741,13 +741,13 @@ If we'd had to program it ourselves, we might have added this:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{function} \AttributeTok{repeat}\NormalTok{(s}\OperatorTok{,}\NormalTok{n) }\OperatorTok{\{}\NormalTok{                                       (}\DecValTok{10}\NormalTok{ symbols)}
-    \KeywordTok{var}\NormalTok{ a}\OperatorTok{=}\NormalTok{[]}\OperatorTok{;}\NormalTok{                                                (}\DecValTok{7}\NormalTok{ symbols)}
-    \ControlFlowTok{while}\NormalTok{(}\VariableTok{a}\NormalTok{.}\AttributeTok{length}\OperatorTok{<}\NormalTok{n)}\OperatorTok{\{}\NormalTok{                                       (}\DecValTok{9}\NormalTok{ symbols)}
-        \VariableTok{a}\NormalTok{.}\AttributeTok{push}\NormalTok{(s)                                            (}\DecValTok{6}\NormalTok{ symbols)}
-    \OperatorTok{\}}\NormalTok{                                                        (}\DecValTok{1}\NormalTok{ symbol)}
-    \ControlFlowTok{return} \VariableTok{a}\NormalTok{.}\AttributeTok{join}\NormalTok{(}\StringTok{''}\NormalTok{)}\OperatorTok{;}\NormalTok{                                       (}\DecValTok{10}\NormalTok{ symbols)}
-\OperatorTok{\}}\NormalTok{                                                            (}\DecValTok{1}\NormalTok{ symbol)}
+\KeywordTok{function} \AttributeTok{repeat}\NormalTok{(s}\OperatorTok{,}\NormalTok{n) }\OperatorTok{\{}\NormalTok{                     (}\DecValTok{10}\NormalTok{ symbols)}
+    \KeywordTok{var}\NormalTok{ a}\OperatorTok{=}\NormalTok{[]}\OperatorTok{;}\NormalTok{                              (}\DecValTok{7}\NormalTok{ symbols)}
+    \ControlFlowTok{while}\NormalTok{(}\VariableTok{a}\NormalTok{.}\AttributeTok{length}\OperatorTok{<}\NormalTok{n)}\OperatorTok{\{}\NormalTok{                     (}\DecValTok{9}\NormalTok{ symbols)}
+        \VariableTok{a}\NormalTok{.}\AttributeTok{push}\NormalTok{(s)                          (}\DecValTok{6}\NormalTok{ symbols)}
+    \OperatorTok{\}}\NormalTok{                                      (}\DecValTok{1}\NormalTok{ symbol)}
+    \ControlFlowTok{return} \VariableTok{a}\NormalTok{.}\AttributeTok{join}\NormalTok{(}\StringTok{''}\NormalTok{)}\OperatorTok{;}\NormalTok{                     (}\DecValTok{10}\NormalTok{ symbols)}
+\OperatorTok{\}}\NormalTok{                                          (}\DecValTok{1}\NormalTok{ symbol)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -760,9 +760,9 @@ Conversely, if ECMAScript 6.0 had introduced a function called
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{function} \AttributeTok{out}\NormalTok{() }\OperatorTok{\{}\NormalTok{                                             (}\DecValTok{7}\NormalTok{ symbols)}
-    \ControlFlowTok{return} \AttributeTok{abcdRepeater}\NormalTok{(}\DecValTok{10}\NormalTok{)                                  (}\DecValTok{6}\NormalTok{ symbols)}
-\OperatorTok{\}}\NormalTok{                                                            (}\DecValTok{1}\NormalTok{ symbol)}
+\KeywordTok{function} \AttributeTok{out}\NormalTok{() }\OperatorTok{\{}\NormalTok{                           (}\DecValTok{7}\NormalTok{ symbols)}
+    \ControlFlowTok{return} \AttributeTok{abcdRepeater}\NormalTok{(}\DecValTok{10}\NormalTok{)                (}\DecValTok{6}\NormalTok{ symbols)}
+\OperatorTok{\}}\NormalTok{                                          (}\DecValTok{1}\NormalTok{ symbol)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1085,16 +1085,9 @@ libraries.
 
 \begin{figure}
 \centering
-\includegraphics{images/generated/software_dependency_table_1-400dpi.png}
+\Oldincludegraphics[width=1\maxwidth]{images/generated/software_dependency_table_1_large-400dpi.png}
 \caption{Software Dependencies}
 \end{figure}
-
-\href{https://www.software.ac.uk/resources/guides/defending-your-code-against-dependency-problems}{sd1
-- Defending your code against dependency problems}
-\href{https://stackoverflow.com/questions/2960371/how-to-choose-an-open-source-library}{sd2
-- How to choose an open source library}
-\href{https://www.forbes.com/sites/forbestechcouncil/2017/07/20/open-source-to-use-or-not-to-use-and-how-to-choose/2/\#39e67e445a8c}{sd3
-- Open Source - To use or not to use}
 
 Some take-aways:
 
@@ -1169,7 +1162,7 @@ later on.
 \end{figure}
 
 \hypertarget{software-as-a-service}{%
-\section{3. Software as a Service}\label{software-as-a-service}}
+\subsection{3. Software as a Service}\label{software-as-a-service}}
 
 Businesses opt for Software as a Service (SaaS) because: - It vastly
 reduces the Complexity Risk they face in their organisations.
@@ -1199,14 +1192,9 @@ Let's again recap the risks raised in some of the available literature:
 
 \begin{figure}
 \centering
-\includegraphics{images/generated/software_dependency_table_2-400dpi.png}
+\Oldincludegraphics[width=1\maxwidth]{images/generated/software_dependency_table_2_large-400dpi.png}
 \caption{Software As A Service Dependencies}
 \end{figure}
-
-\href{https://www.zdnet.com/article/saas-checklist-nine-factors-to-consider-when-selecting-a-vendor/}{sd4
-- Saas Checklist - Nine Factors to Consider}
-\href{http://sandhill.com/article/how-to-evaluate-saas-vendors-five-key-considerations/}{sd5
-- How to Evaluate Saas Vendors}
 
 Some take-aways:
 
@@ -1389,8 +1377,26 @@ make for a long time. In my experience, given the Boundary Risks
 associated with getting this wrong, not enough time is spent really
 thinking about this in advance.
 
-Let's take a closer look at this problem in the next section, Boundary
+Let's take a closer look at this problem in the next chapter, Boundary
 Risk.
+
+\begin{longtable}[]{@{}l@{}}
+\toprule
+Sources\tabularnewline
+\midrule
+\endhead
+\href{https://www.software.ac.uk/resources/guides/defending-your-code-against-dependency-problems}{sd1
+- Defending your code against dependency problems}\tabularnewline
+\href{https://stackoverflow.com/questions/2960371/how-to-choose-an-open-source-library}{sd2
+- How to choose an open source library}\tabularnewline
+\href{https://www.forbes.com/sites/forbestechcouncil/2017/07/20/open-source-to-use-or-not-to-use-and-how-to-choose/2/\#39e67e445a8c}{sd3
+- Open Source - To use or not to use}\tabularnewline
+\href{https://www.zdnet.com/article/saas-checklist-nine-factors-to-consider-when-selecting-a-vendor/}{sd4
+- Saas Checklist - Nine Factors to Consider}\tabularnewline
+\href{http://sandhill.com/article/how-to-evaluate-saas-vendors-five-key-considerations/}{sd5
+- How to Evaluate Saas Vendors}\tabularnewline
+\bottomrule
+\end{longtable}
 
 \part{Preview}
 
