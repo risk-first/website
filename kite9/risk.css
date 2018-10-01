@@ -425,8 +425,8 @@ context {
 	kite9-type: container;
 	kite9-sizing: maximize;
 	kite9-traversal: always;
-	kite9-padding: 12px;	
-	kite9-link-inset: 12px;
+	kite9-padding: 12pt;	
+	kite9-link-inset: 12pt;
 }
 
 .context-back {
@@ -535,8 +535,8 @@ celltext {
 	kite9-usage: regular;
 	kite9-type: container;
 	kite9-template: url(template.svg#celltext);
-	kite9-minimum-height: 250px;
-	kite9-padding: 10px;
+	kite9-minimum-height: 250pt;
+	kite9-padding: 10pt;
 	kite9-vertical-align: center;
 	kite9-horizontal-align: left;
 	font-size: 40pt;
@@ -557,6 +557,28 @@ bulleted {
 	stroke: none;
 }
 
+ctext {
+	kite9-usage: regular;
+	kite9-vertical-align: top;
+	kite9-horizontal-align: left;	
+	font-size: 40pt;
+	fill: black;
+	font-family: "gothic";
+	stroke: none;
+	kite9-type: text;
+}
+
+btext {
+	kite9-usage: regular;
+	kite9-vertical-align: top;
+	kite9-horizontal-align: left;	
+	font-size: 40pt;
+	fill: black;
+	font-family: "gothic-bold";
+	stroke: none;
+	kite9-type: text;
+}
+	
 cell {
 	kite9-usage: regular;
 	kite9-type: container;
