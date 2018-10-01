@@ -47,6 +47,7 @@ public class TextPreprocessor {
 				System.out.println("```");
 			} else {
 				line = line.replaceAll("\\s+$", "");	// trim end of line
+				line = line.replaceAll(" section", " chapter"); // section -> chapter
 				processLinks(line, TextPreprocessor::processImageLink, lineNo, System.out::print);
 			}
 			System.out.println("");
@@ -124,6 +125,15 @@ public class TextPreprocessor {
 					System.out.println("\\end{sidewaysfigure}");
 					System.out.println("```");
 
+				} else if (url.contains("large")){
+					System.out.println("```{=latex}");
+					System.out.println("\\begin{figure}");
+					System.out.println("\\centering");
+					System.out.println("\\Oldincludegraphics[width=1\\maxwidth]{"+url+"}");
+					System.out.println("\\caption{"+text+"}");
+					System.out.println("\\end{figure}");
+					System.out.println("```");
+					
 				} else {
 					System.out.println("!["+text+"]("+url+")");
 				}					

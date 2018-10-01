@@ -21,7 +21,7 @@
 
 %Images
 \usepackage{graphicx}
-% We will generate all images so they have a width .8\maxwidth. This means
+% We will generate all images so they have a width .9\maxwidth. This means
 % that they will get their normal width if they fit onto the page, but
 % are scaled down if they would overflow the margins.
 \makeatletter
@@ -29,8 +29,10 @@
 \else\Gin@nat@width\fi}
 \makeatother
 \let\Oldincludegraphics\includegraphics
-\renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
+\renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.9\maxwidth]{#1}}
 \usepackage{rotating}
+\usepackage[margin=10pt,font=small,labelfont=bf]{caption}
+\captionsetup[figure]{labelfont={bf,it},textfont={bf,it}}
 
 
 % Links
