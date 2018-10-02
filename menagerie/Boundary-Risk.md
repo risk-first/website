@@ -86,7 +86,7 @@ This third point is perhaps the most interesting aspect of [Boundary Risk](Bound
 
 ## Plugins, Ecosystems and Evolution
 
-On the face of it, [WordPress](https://en.wikipedia.org/wiki/WordPress) and [Drupal](https://en.wikipedia.org/wiki/Drupal _should_ be very similar:
+On the face of it, [WordPress](https://en.wikipedia.org/wiki/WordPress) and [Drupal](https://en.wikipedia.org/wiki/Drupal) _should_ be very similar:
 
  - They are both [Content Management Systems](https://en.wikipedia.org/wiki/Content_management_system)
  - They both use a [LAMP (Linux, Apache, MySql, PHP) Stack](https://en.wikipedia.org/wiki/LAMP_(software_bundle))
