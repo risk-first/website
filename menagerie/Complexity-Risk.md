@@ -24,9 +24,9 @@ We might choose this representation:
 
 ```javascript
  
-function out() {                                             (7 symbols)
-    return "abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd"        (45 symbols)
-}                                                            (1 symbol)
+function out() {                                (7 symbols)
+    return "abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd"  (45)
+}                                                      (1 )
 ```
 
 ... which contains **53** symbols, if you count `function`, `out` and `return` as one symbol each.

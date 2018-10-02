@@ -3,8 +3,6 @@
 [Communication Risk](Communication-Risk) is the risk of communication between entities _going wrong_, due to loss or misunderstanding. <!-- tweet-end -->
 Consider this: if we all had identical knowledge, there would be no need to do any communicating at all, and therefore and also no [Communication Risk](Communication-Risk).  
 
-![Communication Risk](images/generated/communication-risk.png) 
-
 But, people are not all-knowing oracles.  We rely on our _senses_ to improve our [Internal Models](Glossary#Internal-Model) of the world. There is [Communication Risk](Communication-Risk) here - we might overlook something vital (like an oncoming truck) or mistake something someone says (like "Don't cut the green wire").  
 
 [Communication Risk](Communication-Risk) isn't just for people; it affects computer systems too.
@@ -17,7 +15,7 @@ In 1948, Claude Shannon proposed this definition of communication:
 
 And from this same paper, we get the following (slightly adapted) model.
 
-![Communication Model](images/generated/communication_1.png)
+![Shannon's Communication Model](images/generated/communication_1.png)
 
 We move from top-left ("I want to send a message to someone") to bottom left, clockwise, where we hope the message has been understood and believed.  (I've added this last box to Shannon's original diagram.)
 
@@ -25,7 +23,7 @@ One of the chief concerns in Shannon's paper is the step between **Transmission*
 
 But it's not just transmission.  [Communication Risk](Communication-Risk) exists at each of these steps.  Let's imagine a short exchange where someone, **Alice** is trying to send a message to **Bob**:
 
-- **Alice** might be **motivated** to send a message to tell **Bob** something, only to find out that he already knew it_, or it wasn't useful information for them.
+- **Alice** might be **motivated** to send a message to tell **Bob** something, only to find out that _he already knew it_, or it wasn't useful information for them.
 - In the **composition** stage, **Alice** might mess up the _intent_ of the message: instead of "Please buy chips" she might say, "Please buy chops".
 - In the **encoding** stage, **Alice** might not speak clearly enough to be understood, and... 
 - In the **transmission** stage, **Alice** might not say it loudly enough for **Bob** to... 
@@ -102,14 +100,14 @@ Let's have a quick look at how that works with a `curl` command, which allows me
 
 
 ```bash
-> curl -v http://google.com/preferences      # -v indicates verbose
+> curl -v http://google.com/preferences
 ```
 
 ### 1. DNS - Domain Name System
 
 Then, the first thing that happens is this:
 
-```
+```bash
 * Rebuilt URL to: http://google.com/
 *   Trying 216.58.204.78...
 ```
@@ -135,7 +133,7 @@ I ran this at home, using WiFi, which uses [IEEE 802.11 Protocol](https://en.wik
 
 Anyway, the next thing that happens is this:
 
-```
+```bash
 * TCP_NODELAY set
 * Connected to google.com (216.58.204.78) port 80 (#0)
 ```
@@ -148,7 +146,7 @@ But, this is a fiction - TCP is built on the IP protocol, packets of data on the
 
 Next, we see this:
 
-```
+```bash
 > GET /preferences HTTP/1.1     (1)
 > Host: google.com              (2)
 > User-Agent: curl/7.54.0       (3)
@@ -162,7 +160,7 @@ This is now the HTTP protocol proper, and these 5 lines are sending information 
 - `(2)` to `(4)` are _headers_.  They are name-value pairs, separated with a colon.   The HTTP protocol specifies a bunch of these names, and later versions of the protocol might introduce newer ones.  
 - `(5)` is an empty line, which indicates that we're done with the headers, please give us the response.  And it does:
 
-```
+```bash
 < HTTP/1.1 301 Moved Permanently                                      
 < Location: http://www.google.com/preferences
 < Content-Type: text/html; charset=UTF-8
@@ -174,7 +172,8 @@ This is now the HTTP protocol proper, and these 5 lines are sending information 
 < X-XSS-Protection: 1; mode=block
 < X-Frame-Options: SAMEORIGIN
 < 
-<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<HTML><HEAD><meta http-equiv="content-type" 
+content="text/html;charset=utf-8">
 <TITLE>301 Moved</TITLE></HEAD><BODY>
 <H1>301 Moved</H1>
 The document has moved
@@ -336,15 +335,11 @@ The debt of [Invisibility Risk](Communication-Risk#invisibility-risk) comes due 
 
 ## Internal Models
 
-![Internal Model Risk](images/generated/internal-model-risk.png) 
-
 So finally, we are coming to the root of the problem:  communication is about transferring ideas and concepts from one [Internal Model](Glossary#Internal-Model) to another. 
 
 The communication process so far has been fraught with risks, but we have a few more to come.
 
 ### Trust & Belief Risk
-
-![Internal Model Risk](images/generated/trust-risk.png) 
 
 Although protocols can sometimes handle security features of communication (such as [Authentication](https://en.wikipedia.org/wiki/Authentication) and preventing [man-in-the-middle attacks](https://en.wikipedia.org/wiki/Man-in-the-middle_attack)), trust goes further than this, intersecting with [Agency Risk](Agency-Risk):  can you be sure that the other party in the communication is acting in your best interests?
  
@@ -361,8 +356,6 @@ From the point-of-view of [Marketing Communications](Communication-Risk#Marketin
 tbd.
 
 ### Learning-Curve Risk
-
-![Internal Model Risk](images/generated/learning-curve-risk.png) 
 
 If the messages we are receiving force us to update our [Internal Model](Glossary#Internal-Model) too much, we can suffer from the problem of "too steep a [Learning Curve](https://en.wikipedia.org/wiki/Learning_curve)" or "[Information Overload](https://en.wikipedia.org/wiki/Information_overload)", where the messages force us to adapt our [Internal Model](Glossary#Internal-Model) too quickly for our brains to keep up.  
 

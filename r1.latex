@@ -134,11 +134,13 @@
 
 {\Huge\bfseries\textsc{Risk-First}}\\[2\baselineskip]
 
-{\Huge\bfseries\textsc{Software Development De-Risked }}\\[2\baselineskip]
+{\Huge\bfseries\textsc{Software Development}}\\[1\baselineskip]
 
-{\Huge\textit{Volume 1: The Menagerie}}\\[7\baselineskip]
+{\Huge\bfseries\textsc{De-Risked }}\\[2\baselineskip]
 
-{\Oldincludegraphics[width=0.5\textwidth]{images/R1_logo_grue.png}}\\[7\baselineskip]
+{\Huge\textit{Volume 1: The Menagerie}}\\[4\baselineskip]
+
+{\Oldincludegraphics[width=0.5\textwidth]{images/R1_logo_grue.png}}\\[4\baselineskip]
 
 {\Huge\textsc{Rob Moffat}}
 
@@ -696,707 +698,781 @@ risks.
 
 \part{Risk}
 
-\hypertarget{software-dependency-risk}{%
-\chapter{Software Dependency Risk}\label{software-dependency-risk}}
+\hypertarget{complexity-risk}{%
+\chapter{Complexity Risk}\label{complexity-risk}}
 
-In this chapter, we're going to look specifically at \emph{Software}
-dependencies, although many of the concerns we'll raise here apply
-equally to all the other types of dependency we outlined in Dependency
-Risk.
+Complexity Risk are the risks to your project due to its underlying
+``complexity''. Over the next few chapters, we'll break down exactly
+what we mean by complexity, looking at Dependency Risk and Boundary Risk
+as two particular sub-types of Complexity Risk. However, in this
+chapter, we're going to be specifically focusing on \emph{code you
+write}: the size of your code-base, the number of modules, the
+interconnectedness of the modules and how well-factored the code is.
 
-\hypertarget{kolmogorov-complexity-cheating}{%
-\section{Kolmogorov Complexity:
-Cheating}\label{kolmogorov-complexity-cheating}}
+\begin{figure}
+\centering
+\includegraphics{images/generated/complexity-risk-400dpi.png}
+\caption{Complexity Risks}
+\end{figure}
 
-In the earlier chapter on Complexity Risk we tackled Kolmogorov
-Complexity, and the idea that your codebase had some kind of minimal
-level of complexity based on the output it was trying to create. This is
-a neat idea, but in a way, we cheated. Let's look at how.
+You could think of this chapter, then, as \textbf{Codebase Risk}: We'll
+look at three separate measures of codebase complexity and talk about
+Technical Debt, and look at places in which \textbf{Codebase Risk} is at
+it's greatest.
 
-We were trying to figure out the shortest (Javascript) program to
-generate this output:
+\hypertarget{kolmogorov-complexity}{%
+\section{Kolmogorov Complexity}\label{kolmogorov-complexity}}
+
+The standard Computer-Science definition of complexity, is
+\href{https://en.wikipedia.org/wiki/Kolmogorov_complexity}{Kolmogorov
+Complexity}. This is:
+
+\begin{quote}
+``\ldots{}is the length of the shortest computer program (in a
+predetermined programming language) that produces the object as
+output.'' - Kolmogorov Complexity, Wikipedia
+\end{quote}
+
+This is a fairly handy definition for us, as it means that to in writing
+software to solve a problem, there is a lower bound on the size of the
+software we write. In practice, this is pretty much impossible to
+quantify. But that doesn't really matter: the techniques for
+\emph{moving in that direction} are all that we are interested in, and
+this basically amounts to compression.
+
+Let's say we wanted to write a javascript program to output this string:
 
 \begin{verbatim}
 abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
 \end{verbatim}
 
-And we came up with this:
+We might choose this representation:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{const}\NormalTok{ ABCD}\OperatorTok{=}\StringTok{"ABCD"}\OperatorTok{;}\NormalTok{                         (}\DecValTok{11}\NormalTok{ symbols)}
 
-\KeywordTok{function} \AttributeTok{out}\NormalTok{() }\OperatorTok{\{}\NormalTok{                           (}\DecValTok{7}\NormalTok{ symbols)}
-    \ControlFlowTok{return} \VariableTok{ABCD}\NormalTok{.}\AttributeTok{repeat}\NormalTok{(}\DecValTok{10}\NormalTok{)                 (}\DecValTok{7}\NormalTok{ symbols)}
-\OperatorTok{\}}\NormalTok{                                          (}\DecValTok{1}\NormalTok{ symbol)}
+\KeywordTok{function} \AttributeTok{out}\NormalTok{() }\OperatorTok{\{}\NormalTok{                                 (}\DecValTok{7}\NormalTok{ symbols)}
+    \ControlFlowTok{return} \StringTok{"abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd"}\NormalTok{   (}\DecValTok{45}\NormalTok{)}
+\OperatorTok{\}}\NormalTok{                                                       (}\DecValTok{1}\NormalTok{ )}
 \end{Highlighting}
 \end{Shaded}
 
-Which had \textbf{26} symbols in it.
+\ldots{} which contains \textbf{53} symbols, if you count
+\texttt{function}, \texttt{out} and \texttt{return} as one symbol each.
 
-Now, here's the cheat: The \texttt{repeat()} function was built into
-Javascript in 2015 in
-\href{http://www.ecma-international.org/ecma-262/6.0/}{ECMAScript 6.0}.
-If we'd had to program it ourselves, we might have added this:
+But, if we write it like this:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{function} \AttributeTok{repeat}\NormalTok{(s}\OperatorTok{,}\NormalTok{n) }\OperatorTok{\{}\NormalTok{                     (}\DecValTok{10}\NormalTok{ symbols)}
-    \KeywordTok{var}\NormalTok{ a}\OperatorTok{=}\NormalTok{[]}\OperatorTok{;}\NormalTok{                              (}\DecValTok{7}\NormalTok{ symbols)}
-    \ControlFlowTok{while}\NormalTok{(}\VariableTok{a}\NormalTok{.}\AttributeTok{length}\OperatorTok{<}\NormalTok{n)}\OperatorTok{\{}\NormalTok{                     (}\DecValTok{9}\NormalTok{ symbols)}
-        \VariableTok{a}\NormalTok{.}\AttributeTok{push}\NormalTok{(s)                          (}\DecValTok{6}\NormalTok{ symbols)}
-    \OperatorTok{\}}\NormalTok{                                      (}\DecValTok{1}\NormalTok{ symbol)}
-    \ControlFlowTok{return} \VariableTok{a}\NormalTok{.}\AttributeTok{join}\NormalTok{(}\StringTok{''}\NormalTok{)}\OperatorTok{;}\NormalTok{                     (}\DecValTok{10}\NormalTok{ symbols)}
-\OperatorTok{\}}\NormalTok{                                          (}\DecValTok{1}\NormalTok{ symbol)}
+\KeywordTok{const}\NormalTok{ ABCD}\OperatorTok{=}\StringTok{"ABCD"}\OperatorTok{;}\NormalTok{                                           (}\DecValTok{11}\NormalTok{ symbols)}
+
+\KeywordTok{function} \AttributeTok{out}\NormalTok{() }\OperatorTok{\{}\NormalTok{                                             (}\DecValTok{7}\NormalTok{ symbols)}
+    \ControlFlowTok{return}\NormalTok{ ABCD}\OperatorTok{+}\NormalTok{ABCD}\OperatorTok{+}\NormalTok{ABCD}\OperatorTok{+}\NormalTok{ABCD}\OperatorTok{+}\NormalTok{ABCD}\OperatorTok{+}\NormalTok{ABCD}\OperatorTok{+}\NormalTok{ABCD}\OperatorTok{+}\NormalTok{ABCD}\OperatorTok{+}\NormalTok{ABCD}\OperatorTok{+}\AttributeTok{ABCD}\NormalTok{ (}\DecValTok{21}\NormalTok{ symbols)}
+\OperatorTok{\}}\NormalTok{                                                            (}\DecValTok{1}\NormalTok{ symbol)}
 \end{Highlighting}
 \end{Shaded}
 
-\ldots{} which would be an extra \textbf{44} symbols (in total
-\textbf{70}), and push us completely over the original string encoding
-of \textbf{53} symbols. So, \emph{encoding language is important}.
-
-Conversely, if ECMAScript 6.0 had introduced a function called
-\texttt{abcdRepeater(n)} we'd have been able to do this:
+With this version, we now have \textbf{40} symbols. And with this
+version:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{function} \AttributeTok{out}\NormalTok{() }\OperatorTok{\{}\NormalTok{                           (}\DecValTok{7}\NormalTok{ symbols)}
-    \ControlFlowTok{return} \AttributeTok{abcdRepeater}\NormalTok{(}\DecValTok{10}\NormalTok{)                (}\DecValTok{6}\NormalTok{ symbols)}
-\OperatorTok{\}}\NormalTok{                                          (}\DecValTok{1}\NormalTok{ symbol)}
+\KeywordTok{const}\NormalTok{ ABCD}\OperatorTok{=}\StringTok{"ABCD"}\OperatorTok{;}\NormalTok{                                           (}\DecValTok{11}\NormalTok{ symbols)}
+
+\KeywordTok{function} \AttributeTok{out}\NormalTok{() }\OperatorTok{\{}\NormalTok{                                             (}\DecValTok{7}\NormalTok{ symbols)}
+    \ControlFlowTok{return} \VariableTok{ABCD}\NormalTok{.}\AttributeTok{repeat}\NormalTok{(}\DecValTok{10}\NormalTok{)                                   (}\DecValTok{7}\NormalTok{ symbols)}
+\OperatorTok{\}}\NormalTok{                                                            (}\DecValTok{1}\NormalTok{ symbol)}
 \end{Highlighting}
 \end{Shaded}
 
-.. and re-encode to \textbf{14} symbols. Now, clearly there are some
-problems with all this:
+\ldots{} we have \textbf{26} symbols.
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Clearly, \emph{language matters}: the Kolmogorov complexity is
-  dependent on the language, and the features the language has built in.
-\item
-  The exact Kolmogorov complexity is uncomputable anyway (it's the
-  \emph{theoretical} minimum program length). It's just a fairly
-  abstract idea, so we shouldn't get too hung up on this. There is no
-  function to be able to say, ``what's the Kolmogorov complexity of
-  string X''
-\item
-  What is this new library function we've created? Is
-  \texttt{abcdRepeater} going to be part of \emph{every} Javascript? If
-  so, then we've shifted Codebase Risk away from ourselves, but we've
-  pushed Communication Risk and Dependency Risk onto every \emph{other}
-  user of Javascript. (Why these? Because \texttt{abcdRepeater} will be
-  clogging up the documentation and other people will rely on it to
-  function correctly.)
-\item
-  Are there equivalent functions for every single other string? If so,
-  then compilation is no longer a tractable problem: is
-  \texttt{return\ abcdRepeater(10)} correct code? Well, now we have a
-  massive library of different \texttt{XXXRepeater} functions to compile
-  against to see if it is\ldots{} So, what we \emph{lose} in Kolmogorov
-  Complexity we gain in Runtime Complexity.
-\item
-  Language design, then, is about \emph{ergonomics}. After you have
-  passed the relatively low bar of providing
-  \href{https://en.wikipedia.org/wiki/Turing_completeness}{Turing
-  Completeness}, the key is to provide \emph{useful} features that
-  enable problems to be solved, without over-burdening the user with
-  features they \emph{don't} need. And in fact, all software is about
-  this.
-\end{enumerate}
+\hypertarget{abstraction}{%
+\subsection{Abstraction}\label{abstraction}}
 
-\begin{figure}
-\centering
-\includegraphics{images/kite9/software-dependency-ergonomics.png}
-\caption{Software Dependency Ergonomics: finding the sweet spot between
-too many features and too few}
-\end{figure}
+What's happening here is that we're \emph{exploiting a pattern}: we
+noticed that \texttt{ABCD} occurs several times, so we defined it a
+single time and then used it over and over, like a stamp. Separating the
+\emph{definition} of something from the \emph{use} of something as we've
+done here is called ``abstraction''. We're going to come across it over
+and over again in this part of the book, and not just in terms of
+computer programs.
 
-\hypertarget{ergonomics-examined}{%
-\section{Ergonomics Examined}\label{ergonomics-examined}}
+By applying techniques such as Abstraction, we can improve in the
+direction of the Kolmogorov limit. And, by allowing ourselves to say
+that \emph{symbols} (like \texttt{out} and \texttt{ABCD}) are worth one
+complexity point, we've allowed that we can be descriptive in our
+\texttt{function} name and \texttt{const}. Naming things is an important
+part of abstraction, because to use something, you have to be able to
+refer to it.
 
-Have a look at some physical tools, like a hammer, or spanner. To look
-at them, they are probably \emph{simple} objects, obvious, strong and
-dependable. Their entire behaviour is encapsulated in their form. Now,
-if you have a drill or sander to hand, look at the design of this too.
-If it's well-designed, then from the outside it is simple, perhaps with
-only one or two controls. Inside, it is complex and contains a motor,
-perhaps a transformer, and is maybe made of a hundred different
-components.
+\hypertarget{trade-off}{%
+\subsection{Trade-Off}\label{trade-off}}
 
-But outside, the form is simple, and designed for humans to use. This is
-\emph{\href{https://en.wikipedia.org/wiki/Human_factors_and_ergonomics}{ergonomics}}:
+But we could go further down into
+\href{https://en.wikipedia.org/wiki/Code_golf}{Code Golf} territory.
+This javascript program plays
+\href{https://en.wikipedia.org/wiki/Fizz_buzz}{FizzBuzz} up to 100, but
+is less readable than you might hope:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ControlFlowTok{for}\NormalTok{(i}\OperatorTok{=}\DecValTok{0}\OperatorTok{;}\NormalTok{i}\OperatorTok{<}\DecValTok{100}\OperatorTok{;}\NormalTok{)}\VariableTok{document}\NormalTok{.}\AttributeTok{write}\NormalTok{(((}\OperatorTok{++}\NormalTok{i}\OperatorTok{%}\DecValTok{3}\OperatorTok{?}\StringTok{''}\NormalTok{:}\StringTok{'Fizz'}\NormalTok{)}\OperatorTok{+}
+\NormalTok{(i}\OperatorTok{%}\DecValTok{5}\OperatorTok{?}\StringTok{''}\NormalTok{:}\StringTok{'Buzz'}\NormalTok{)}\OperatorTok{||}\NormalTok{i)}\OperatorTok{+}\StringTok{"<br>"}\NormalTok{)                                  (}\DecValTok{66}\NormalTok{ symbols)}
+\end{Highlighting}
+\end{Shaded}
+
+So there is at some point a trade-off to be made between Complexity Risk
+and Communication Risk. This is a topic we'll address more in that
+chapter. But for now, it should be said that Communication Risk is about
+\emph{misunderstanding}: The more complex a piece of software is, the
+more difficulty users will have understanding it, and the more
+difficulty developers will have changing it.
+
+\hypertarget{connectivity}{%
+\section{Connectivity}\label{connectivity}}
+
+A second, useful measure of complexity comes from graph theory, and that
+is the connectivity of a graph:
 
 \begin{quote}
-``Human factors and ergonomics (commonly referred to as Human Factors),
-is the application of psychological and physiological principles to the
-(engineering and) design of products, processes, and systems. The goal
-of human factors is to reduce human error, increase productivity, and
-enhance safety and comfort with a specific focus on the interaction
-between the human and the thing of interest.'' - Human Factors and
-Ergonomics, \emph{Wikipedia}
+``\ldots{}the minimum number of elements (nodes or edges) that need to
+be removed to disconnect the remaining nodes from each other'' -
+\href{https://en.wikipedia.org/wiki/Connectivity_(graph_theory)}{Connectivity,
+\emph{Wikipedia}}
 \end{quote}
 
-\hypertarget{interfaces}{%
-\subsection{Interfaces}\label{interfaces}}
-
-The interface of a tool is the part we touch and interact with. By
-striving for simplicity, the interface reduces Communication Risk.
-
-The interface of a system expands when you ask it to do a wide variety
-of things. An easy-to-use drill does one thing well: it turns drill-bits
-at useful levels of torque for drilling holes and sinking screws. But if
-you wanted it to also operate as a lathe, a sander or a strimmer (all
-basically mechanical things going round) you would have to sacrifice the
-ergonomic simplicity for a more complex interface, probably including
-adapters, extensions, handles and so on.
-
-So, we now have split complexity into two: - The inner complexity of the
-tool (how it works internally, it's own Kolmogorov Complexity). - The
-complexity of the instructions that we need to write to make the tool
-work (the interface Kolmogorov Complexity).
+To see this in action, have a look at the below graph:
 
 \begin{figure}
 \centering
-\includegraphics{images/kite9/software-dependency-complexity.png}
-\caption{Types of Complexity For a Software Dependency}
+\includegraphics{images/generated/connectivity_1-400dpi.png}
+\caption{Graph 1}
 \end{figure}
 
-\hypertarget{software-tools}{%
-\subsection{Software Tools}\label{software-tools}}
+It has 10 vertices, labelled \textbf{a} to \textbf{j}, and it has 15
+edges (or links) connecting the vertices together. If any single edge
+were removed from this diagram, the 10 vertices would still be linked
+together. Because of this, we can say that the graph is
+\emph{2-connected}. That is, to disconnect any single vertex, you'd have
+to remove \emph{at least} two edges.
 
-In the same way as with a hand-tool, the bulk of the complexity of a
-software tool is hidden behind it's interface. But, the more complex the
-\emph{purpose} of the tool, the more complex the interface will be.
+As a slight aside, let's consider the \textbf{Kolmogorov Complexity} of
+this graph, by inventing a mini-language to describe graphs. It could
+look something like this:
 
-Software is not constrained by \emph{physical} ergonomics in the same
-way as a tool is. But ideally, it should have conceptual ergonomics:
-ideally, complexity is hidden away from the user behind the
-\href{https://en.wikipedia.org/wiki/Application_programming_interface}{Application
-Programming Interface (API)}. This is the familiar concept of
-Abstraction we've already looked at.
+\begin{Shaded}
+\begin{Highlighting}[]
+\OperatorTok{<}\NormalTok{item}\OperatorTok{>} \OperatorTok{:}\NormalTok{ [}\OperatorTok{<}\NormalTok{item}\OperatorTok{>,}\NormalTok{]}\OperatorTok{*} \OperatorTok{<}\NormalTok{item}\OperatorTok{>}\NormalTok{    # Indicates that the item before the colon}
+\NormalTok{                              # has a connection to all the items after the }\VariableTok{colon}\NormalTok{.}
 
-That is, the tool should be as simple to use and understand as possible.
-This is the
-\href{https://en.wikipedia.org/wiki/Principle_of_least_astonishment}{Principal
-Of Least Astonishment}:
+\NormalTok{a}\OperatorTok{:}\NormalTok{ b}\OperatorTok{,}\NormalTok{c}\OperatorTok{,}\NormalTok{d}
+\NormalTok{b}\OperatorTok{:}\NormalTok{ c}\OperatorTok{,}\NormalTok{f}\OperatorTok{,}\NormalTok{e}
+\NormalTok{c}\OperatorTok{:}\NormalTok{ f}\OperatorTok{,}\NormalTok{d}
+\NormalTok{d}\OperatorTok{:}\NormalTok{ j}
+\NormalTok{e}\OperatorTok{:}\NormalTok{ h}\OperatorTok{,}\NormalTok{j}
+\NormalTok{f}\OperatorTok{:}\NormalTok{ h}
+\NormalTok{g}\OperatorTok{:}\NormalTok{ j}
+\NormalTok{h}\OperatorTok{:}\NormalTok{ i}
+\NormalTok{i}\OperatorTok{:} \AttributeTok{j}\NormalTok{                                                         (}\DecValTok{39}\NormalTok{ symbols)}
+\end{Highlighting}
+\end{Shaded}
+
+Let's remove some of those extra links:
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/connectivity_2-400dpi.png}
+\caption{Graph 2}
+\end{figure}
+
+In this graph, I've removed 6 of the edges. Now, we're in a situation
+where if any single edge is removed, the graph becomes
+\emph{unconnected}. That is, it's broken into distinct chunks. So, it's
+\emph{1-connected}.
+
+The second graph is clearly simpler than the first. And, we can show
+this by looking at the \textbf{Kolgomorov Complexity} in our little
+language:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{a}\OperatorTok{:}\NormalTok{ d}\OperatorTok{,}\NormalTok{g}
+\NormalTok{b}\OperatorTok{:}\NormalTok{ f}
+\NormalTok{c}\OperatorTok{:}\NormalTok{ d}\OperatorTok{,}\NormalTok{f}
+\NormalTok{d}\OperatorTok{:}\NormalTok{ j}
+\NormalTok{f}\OperatorTok{:}\NormalTok{ h}
+\NormalTok{e}\OperatorTok{:}\NormalTok{ h}
+\NormalTok{h}\OperatorTok{:} \AttributeTok{i}\NormalTok{                                                         (}\DecValTok{25}\NormalTok{ symbols)}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Connectivity} is also \textbf{Complexity}. Heavily connected
+programs/graphs are much harder to work with than less-connected ones.
+Even \emph{laying out} the first graph sensibly is a harder task than
+the second (the second is a doddle). But the reason programs with
+greater connectivity are harder to work with is that changing one module
+potentially impacts many others.
+
+\hypertarget{hierarchies-and-modularization}{%
+\section{Hierarchies and
+Modularization}\label{hierarchies-and-modularization}}
+
+In the second, simplified graph, I've arranged it as a hierarchy, which
+I can do now that it's only 1-connected. For 10 vertices, we need 9
+edges to connect everything up. It's always:
+
+\begin{verbatim}
+  edges = vertices - 1
+\end{verbatim}
+
+Note that I could pick any hierarchy here: I don't have to start at
+\textbf{c} (although it has the nice property that it has two roughly
+even sub-trees attached to it).
+
+How does this help us? Imagine if \textbf{a} - \textbf{j} were modules
+of a software system, and the edges of the graph showed communications
+between the different sub-systems. In the first graph, we're in a worse
+position: who's in charge? What deals with what? Can I isolate a
+component and change it safely? What happens if one component
+disappears? But, in the second graph, it's easier to reason about,
+because of the reduced number of connections and the new heirarchy of
+organisation.
+
+On the downside, perhaps our messages have farther to go now: in the
+original \textbf{i} could send a message straight to \textbf{j}, but now
+we have to go all the way via \textbf{c}. But this is the basis of
+\href{https://en.wikipedia.org/wiki/Modular_programming}{Modularization}
+and \href{https://en.wikipedia.org/wiki/Hierarchy}{Hierarchy}.
+
+As a tool to battle complexity, we don't just see this in software, but
+everywhere in our lives. Society, business, nature and even our bodies:
 
 \begin{itemize}
 \tightlist
 \item
-  \textbf{The abstractions should map easily to how the user expects the
-  tool to work.} For example, I \emph{expect} the trigger on a drill to
-  start the drill turning.
+  \textbf{Organelles} - such as
+  \href{https://en.wikipedia.org/wiki/Mitochondrion}{Mitochondria}.
 \item
-  \textbf{The abstractions should leverage existing idioms and
-  knowledge.} In a new car, I \emph{expect} to know what the symbols on
-  the dashboard mean, because I've driven other cars.
+  \textbf{Cells} - such as blood cells, nerve cells, skin cells in the
+  \href{https://en.wikipedia.org/wiki/List_of_distinct_cell_types_in_the_adult_human_body}{Human
+  Body}.
 \item
-  \textbf{The abstractions provide me with only the functions I need.}
-  Because everything else is confusing and gets in the way.
+  \textbf{Organs} - like hearts livers, brains etc.
+\item
+  \textbf{Organisms} - like you and me.
 \end{itemize}
 
-The way to win, then, is to allow a language to be extensible as-needed
-with features written by third parties. By supplying mechanisms for
-extension a language can provide insurances against the Boundary Risk of
-adopting it.
-
-\hypertarget{types-of-software-dependencies}{%
-\section{Types Of Software
-Dependencies}\label{types-of-software-dependencies}}
-
-There are lots of ways you can depend on software. Here though, we're
-going to focus on just three main types: 1. \textbf{Code Your Own}:
-write some code ourselves to meet the dependency. 2. \textbf{Software
-Libraries}: importing code from the Internet, and using it in our
-project. Often, libraries are Open Source (this is what we'll consider
-here). 3. \textbf{Software as a Service}: calling a service on the
-Internet, (probably via \texttt{http}) This is often known as
-\href{https://en.wikipedia.org/wiki/Software_as_a_service}{SaaS, or
-Software as a Service}.
-
-All 3 approaches involve a different risk-profile. Let's look at each in
-turn, from the perspective of which risks get mitigated, and which risks
-are accentuated.
-
-\hypertarget{code-your-own}{%
-\subsection{1. Code Your Own}\label{code-your-own}}
-
-Initially, writing our own code was the only game in town: when I
-started programming, you had a user guide, BASIC and that was pretty
-much it. Tool support was very thin-on-the-ground. Programs and
-libraries could be distributed as code snippets \emph{in magazines}
-which could be transcribed and run, and added to your program. This
-spirit lives on somewhat in StackOverflow and JSFiddle, where you are
-expected to ``adopt'' others' code into your own project.
-
-One of the hidden risks of embarking on a code-your-own approach is that
-the features you need are \emph{not} apparent from the outset. What
-might appear to be a trivial implementation of some piece of
-functionality can often turn into it's own industry as more and more
-hidden Feature Risk is uncovered.
-
-For example, as we discussed in our earlier treatment of Dead-End Risk,
-building log-in screens \emph{seemed like a good idea}. However, this
-gets out-of-hand fast when you need: - A password reset screen - To
-email the reset links to the user - An email verification screen - A
-lost account screen - Reminders to complete the sign up process -
-\ldots{} and so on.
-
-\begin{figure}
-\centering
-\includegraphics{images/kite9/software-dependency-code-your-own.png}
-\caption{Code-Your-Own mitigates immediate feature risk, but at the
-expense of schedule risk, complexity risk and communication risk. There
-is also a hidden risk of features you don't yet know you need.}
-\end{figure}
-
-\hypertarget{unwritten-software}{%
-\subsection{Unwritten Software}\label{unwritten-software}}
-
-Sometimes, you will pick up a dependency on \emph{unwritten software}.
-This commonly happens when work is divided amongst team members, or
-teams.
-
-\begin{figure}
-\centering
-\includegraphics{images/kite9/software-dependency-unwritten-1.png}
-\caption{Sometimes, a module you're writing will depend on unwritten
-code}
-\end{figure}
-
-If a component \textbf{A} of our project \emph{depends} on \textbf{B}
-for some kind of processing, you might not be able to complete
-\textbf{A} before writing \textbf{B}. This makes \emph{scheduling} the
-project harder, and if component \textbf{A} is a risky part of the
-project, then the chances are you'll want to mitigate risk there first.
-
-But it also hugely increases Communication Risk because now you're being
-asked to communicate with a dependency that doesn't really exist yet,
-\emph{let alone} have any documentation.
-
-There are a couple of ways to do this:
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Standards}: If component \textbf{B} is a database, a queue,
-  mail gateway or something else with a standard interface, then you're
-  in luck. Write \textbf{A} to those standards, and find a cheap, simple
-  implementation to test with. This gives you time to sort out exactly
-  what implementation of \textbf{B} you're going for. This is not a
-  great long-term solution, because obviously, you're not using the
-  \emph{real} dependency- you might get surprised when the behaviour of
-  the real component is subtly different. But it can reduce Schedule
-  Risk in the short-term.
-\item
-  \textbf{Coding To Interfaces}: If standards aren't an option, but the
-  surface area of \textbf{B} that \textbf{A} uses is quite small and
-  obvious, you can write a small interface for it, and work behind that,
-  using a \href{https://en.wikipedia.org/wiki/Mock_object}{Mock} for
-  \textbf{B} while you're waiting for finished component. Write the
-  interface to cover only what \textbf{A} \emph{needs}, rather than
-  everything that \textbf{B} \emph{does} in order to minimize the risk
-  of \href{https://en.wikipedia.org/wiki/Leaky_abstraction}{Leaky
-  Abstractions}.
-\end{itemize}
-
-\begin{figure}
-\centering
-\includegraphics{images/kite9/software-dependency-unwritten-2.png}
-\caption{Coding to a standard on an interface breaks the dependency on
-unwritten software}
-\end{figure}
-
-\hypertarget{conways-law}{%
-\subsection{Conway's Law}\label{conways-law}}
-
-If the dependency is being written by another person, another team or in
-another country, communication risks pile up. When this happens, you
-will want to minimize \emph{as much as possible} the interface
-complexity, since the more complex the interface, the worse the
-Communication Risk will be. The tendency then is to make the interfaces
-between teams or people \emph{as simple as possible}, modularizing along
-these organisational boundaries.
-
-In essence, this is
-\href{https://en.wikipedia.org/wiki/Conway\%27s_law}{Conway's Law}:
+The great complexity-reducing mechanism of modularization is that
+\emph{you only have to consider your local environment}. Elements of the
+program that are ``far away'' in the hierarchy can be relied on not to
+affect you. This is somewhat akin to the \textbf{Principal Of Locality}:
 
 \begin{quote}
-``organizations which design systems \ldots{} are constrained to produce
-designs which are copies of the communication structures of these
-organizations.'' --- M. Conway, \emph{Conway's Law}
+``Spatial locality refers to the use of data elements within relatively
+close storage locations.'' -
+\href{https://en.wikipedia.org/wiki/Locality_of_reference}{Locality Of
+Reference, \emph{Wikipedia}}
 \end{quote}
 
-\hypertarget{software-libraries}{%
-\subsection{2. Software Libraries}\label{software-libraries}}
+\hypertarget{cyclomatic-complexity}{%
+\section{Cyclomatic Complexity}\label{cyclomatic-complexity}}
 
-By choosing a particular software library, we are making a move on the
-Risk Landscape in the hope of moving to place with more favourable
-risks. Typically, using library code offers a Schedule Risk and
-Complexity Risk Silver Bullet. But, in return we expect to pick up: -
-Communication Risk: because we now have to learn how to communicate with
-this new dependency. - Boundary Risk - because now are limited to using
-the functionality provided by this dependency. We have chosen it over
-alternatives and changing to something else would be more work and
-therefore costly.
+A variation on this graph connectivity metric is our third measure of
+complexity,
+\href{https://en.wikipedia.org/wiki/Cyclomatic_complexity}{Cyclomatic
+Complexity}. This is:
 
-But, it's quite possible that we could wind up in a worse place than we
-started out, by using a library that's out-of-date, riddled with bugs or
-badly supported. i.e.~Full of new, hidden Feature Risk.
+\begin{verbatim}
+Cyclomatic Complexity = edges − vertices + 2P,
+\end{verbatim}
 
-It's \emph{really easy} to make bad decisions about which tools to use
-because the tools don't (generally) advertise their deficiencies. After
-all, they don't generally know how \emph{you} will want to use them.
+Where \textbf{P} is the number of \textbf{Connected Components}
+(i.e.~distinct parts of the graph that aren't connected to one another
+by any edges).
 
-\hypertarget{software-libraries---hidden-risks}{%
-\subsection{Software Libraries - Hidden
-Risks}\label{software-libraries---hidden-risks}}
+So, our first graph had a \textbf{Cyclomatic Complexity} of 7.
+\texttt{(15\ -\ 10\ +\ 2)}, while our second was 1.
+\texttt{(9\ -\ 10\ +\ 2)}.
 
-Currently, choosing software dependencies looks like a ``bounded
-rationality''-type process:
+Cyclomatic complexity is all about the number of different routes
+through the program. The more branches a program has, the greater it's
+cyclomatic complexity. Hence, this is a useful metric in Testing and
+Code Coverage: the more branches you have, the more tests you'll need to
+exercise them all.
+
+\hypertarget{more-abstraction}{%
+\section{More Abstraction}\label{more-abstraction}}
+
+Although we ended up with our second graph having a \textbf{Cyclomatic
+Complexity} of 1 (the minimum), we can go further through abstraction,
+because this representation isn't minimal from a \textbf{Kolmogorov
+Complexity} point-of-view. For example, we might observe that there are
+further similarities in the graph that we can ``draw out'':
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/connectivity_3-400dpi.png}
+\caption{Complexity 3}
+\end{figure}
+
+Here, we've spotted that the structure of subgraphs \textbf{P1} and
+\textbf{P2} are the same: we can have the same functions there to
+assemble those. Noticing and exploiting patterns of repetition is one of
+the fundamental tools we have in the fight against Complexity Risk.
+
+So, we've looked at some measures of software structure complexity, in
+order that we can say ``this is more complex than this''. However, we've
+not really said why complexity entails Risk. So let's address that now
+by looking at two analogies, Mass and Technical Debt.
+
+\hypertarget{complexity-as-mass}{%
+\section{Complexity As Mass}\label{complexity-as-mass}}
+
+The first way to look at complexity is as \textbf{Mass} or
+\textbf{Inertia} : a software project with more complexity has greater
+\textbf{Inertia} or \textbf{Mass} than one with less complexity.
+
+Newton's Second Law states:
 
 \begin{quote}
-``Bounded rationality is the idea that when individuals make decisions,
-their rationality is limited by the tractability of the decision
-problem, the cognitive limitations of their minds, and the time
-available to make the decision.'' -
-\href{https://en.wikipedia.org/wiki/Bounded_rationality}{Bounded
-Rationality, \emph{Wikipedia}}
+``F = \emph{m}\textbf{a}, ( Force = Mass x Acceleration )'' -
+\href{https://en.wikipedia.org/wiki/Newton\%27s_laws_of_motion}{Netwon's
+Laws Of Motion, \emph{Wikipedia}}
 \end{quote}
 
-Unfortunately, we know that most decisions \emph{don't} really get made
-this way. We have things like
-\href{https://en.wikipedia.org/wiki/Confirmation_bias}{Confirmation
-Bias} (looking for evidence to support a decision you've already made)
-and \href{https://en.wikipedia.org/wiki/Cognitive_inertia}{Cognitive
-Inertia} (ignoring evidence that would require you to change your mind)
-to contend with.
+That is, in order to move your project \emph{somewhere new}, and make it
+do new things, you need to give it a push, and the more \textbf{Mass} it
+has, the more \textbf{Force} you'll need to move (accelerate) it.
 
-But, leaving that aside, let's try to build a model of what this
-decision making process \emph{should} involve. Luckily, other authors
-have already considered the problem of choosing good software libraries,
-so let's start there.
-
-In the table below, I am summarizing three different sources, which give
-descriptions of which factors to look for when choosing open-source
-libraries.
-
-\begin{figure}
-\centering
-\Oldincludegraphics[width=1\maxwidth]{images/generated/software_dependency_table_1_large-400dpi.png}
-\caption{Software Dependencies}
-\end{figure}
-
-Some take-aways:
-
-\begin{itemize}
-\tightlist
-\item
-  Feature Risk is a big concern. How can you be sure that the project
-  will do what you want it to do ahead of schedule? Will it contain bugs
-  or missing features? By looking at factors like \emph{release
-  frequency} and \emph{size of the community} you get a good feel for
-  this which is difficult to fake.
-\item
-  Boundary Risk is also very important. You are going to have to
-  \emph{live} with your choices for the duration of the project, so it's
-  worth spending the effort to either ensure that you're not going to
-  regret the decision, or that you can change direction later.
-\item
-  Third is Communication Risk: how well does the project deal with it's
-  users? If a project is ``famous'', then it has communicated its
-  usefulness to a wide, appreciative audience. Avoiding Communication
-  Risk is also a good reason to pick \emph{tools you are already
-  familiar with}.
-\end{itemize}
-
-\hypertarget{complexity-risk}{%
-\subsection{Complexity Risk?}\label{complexity-risk}}
-
-One thing that none of the sources consider (at least from the outset)
-is the Complexity Risk of using a solution: - Does it drag in lots of
-extra dependencies that seem unnecessary for the job in hand? If so, you
-could end up in
-\href{https://en.wikipedia.org/wiki/Dependency_hell}{Dependency Hell},
-with multiple, conflicting versions of libraries in the project. - Do
-you already have a dependency providing this functionality? So many
-times, I've worked on projects that import a \emph{new} dependency when
-some existing (perhaps transitive) dependency has \emph{already brought
-in the functionality}. For example, there are plenty of libraries for
-\href{https://en.wikipedia.org/wiki/JSON}{JSON} marshalling, but if I'm
-also using a web framework the chances are it already has a dependency
-on one already. - Does it contain lots of functionality that isn't
-relevant to the task you want it to accomplish? e.g.~Using Java when a
-shell script would do (on a non-Java project)
-
-To give an extreme example of this, I once worked on an application
-which used \href{https://en.wikipedia.org/wiki/Hazelcast}{Hazlecast} to
-cache log-in session tokens for a 3rd party datasource. But, the app is
-only used once every month, and session IDs can be obtained in
-milliseconds. So\ldots{} why cache them? Although Hazlecast is an
-excellent choice for in-memory caching across multiple JVMs, it is a
-complex piece of software (after all, it does lots of stuff). By doing
-this, you have introduced extra dependency risk, cache invalidation
-risks, networking risks, synchronisation risks and so on, for actually
-no benefit at all\ldots{} Unless, it's about CV Building.
-
-Sometimes, the amount of complexity \emph{goes up} when you use a
-dependency for \emph{good reason}. For example, in Java, you can use
-\href{https://en.wikipedia.org/wiki/Java_Database_Connectivity}{Java
-Database Connectivity (JDBC)} to interface with various types of
-database. \href{https://en.wikipedia.org/wiki/Spring_Framework}{Spring
-Framework} (a popular Java library) provides a thing called a
-\texttt{JDBCTemplate}. This actually makes your code \emph{more}
-complex, and can prove very difficult to debug. However, it prevents
-some security issues, handles resource disposal and makes database
-access more efficient. None of those are essential to interfacing with
-the database, but not using them is Technical Debt that can bite you
-later on.
-
-\begin{figure}
-\centering
-\includegraphics{images/kite9/software-dependency-library.png}
-\caption{Software Libraries Risk Tradeoff}
-\end{figure}
-
-\hypertarget{software-as-a-service}{%
-\subsection{3. Software as a Service}\label{software-as-a-service}}
-
-Businesses opt for Software as a Service (SaaS) because: - It vastly
-reduces the Complexity Risk they face in their organisations.
-e.g.~managing the software or making changes to it. - Payment is usually
-based on \emph{usage}, mitigating Schedule Risk. e.g.~Instead of having
-to pay for in-house software administrators, they can leave this
-function to the experts. - Potentially, you outsource the Operational
-Risk to a third party. e.g.~ensuring availability, making sure data is
-secure and so on.
-
-SaaS is now a very convenient way to provide \emph{commercial} software.
-Popular examples of SaaS might be
-\href{https://en.wikipedia.org/wiki/Salesforce.com}{SalesForce}, or
-\href{https://en.wikipedia.org/wiki/Gmail}{GMail}. Both of which follow
-the commonly-used
-\href{https://en.wikipedia.org/wiki/Freemium}{Freemium} model, where the
-basic service is provided free, but upgrading to a paid account gives
-extra benefits.
-
-By providing the software on their own servers, the commercial
-organisation has a defence against \emph{piracy}, as well as being able
-to control the Complexity Risk of the their environment (e.g.~not having
-to support \emph{every} version of the software that's ever been
-released).
-
-Let's again recap the risks raised in some of the available literature:
-
-\begin{figure}
-\centering
-\Oldincludegraphics[width=1\maxwidth]{images/generated/software_dependency_table_2_large-400dpi.png}
-\caption{Software As A Service Dependencies}
-\end{figure}
-
-Some take-aways:
-
-\begin{itemize}
-\tightlist
-\item
-  Clearly, Operational Risk is now a big concern. By depending on a
-  third-party organisation you are tying yourself to its success or
-  failure in a much bigger way than just by using a piece of open-source
-  software. What happens to data security, both in the data centre and
-  over the internet?
-\item
-  With Feature Risk you now have to condend with the fact that the
-  software will be upgraded \emph{outside your control}, and you may
-  have limited control over which features get added or changed.
-\item
-  Boundary Risk is a also a different proposition: you are tied to the
-  software provider by \emph{a contract}. If the service changes in the
-  future, or isn't to your liking, you can't simply fork the code (like
-  you could with an open source project).
-\end{itemize}
-
-\begin{figure}
-\centering
-\includegraphics{images/kite9/software-dependency-saas.png}
-\caption{Risk Tradeoff From Using \_Software as a Service (SaaS)}
-\end{figure}
-
-\hypertarget{a-matrix-of-options}{%
-\section{A Matrix of Options}\label{a-matrix-of-options}}
-
-We've looked at just 3 different ways of providing a software
-dependency: SaaS, Libraries and code-your-own.
-
-But these are not the only ways to do it, and there's clearly no one
-\emph{right} way. Although here we have looked just at ``Commercial
-Saas'' and ``Free Open Source'', in reality, these are just points in a
-two-dimensional space involving \emph{Pricing} and \emph{Hosting}.
-
-Let's expand this view slightly and look at where different pieces of
-software sit on these axes:
-
-\begin{sidewaysfigure}
-\centering
-\includegraphics{images/generated/software_dependency_table_3_sideways-400dpi.png}
-\caption{Software Dependencies, Pricing, Delivery Matrix Risk Profiles}
-\end{sidewaysfigure}
-
-\begin{itemize}
-\tightlist
-\item
-  Where there is value in the
-  \href{https://en.wikipedia.org/wiki/Network_effect}{Network Effect},
-  it's often a sign that the software will be free, or open source:
-  programming languages and Linux are the obvious examples of this. Bugs
-  are easier to find when there are lots of eyes looking, and learning
-  the skill to use the software has less Boundary Risk if you know
-  you'll be able to use it at any point in the future.
-\item
-  At the other end of the spectrum, clients will happily pay for
-  software if it clearly \textbf{reduces complexity}. Take
-  \href{https://en.wikipedia.org/wiki/Amazon_Web_Services}{Amazon Web
-  Services (AWS)}. The essential trade here is that you substitute the
-  complexity of hosting and maintaining various pieces of software, in
-  exchange for monthly payments (Funding Risk for you). Since the AWS
-  \emph{interfaces} are specific to Amazon, there is significant
-  Boundary Risk in choosing this option.
-\item
-  In the middle there are lots of \textbf{substitute options} and
-  therefore high competition. Because of this, prices are pushed towards
-  zero, and and therefore often advertising is used to monetarize the
-  product. \href{https://en.wikipedia.org/wiki/Angry_Birds}{Angry Birds}
-  is a classic example: initially, it had demo and paid versions,
-  however
-  \href{https://en.wikipedia.org/wiki/Rovio_Entertainment}{Rovio}
-  discovered there was much more money to be made through advertising
-  than from the
-  \href{https://www.deconstructoroffun.com/blog/2017/6/11/how-angry-birds-2-multiplied-quadrupled-revenue-in-a-year}{paid-for
-  app}.
-\end{itemize}
-
-\hypertarget{managing-risks}{%
-\subsection{Managing Risks}\label{managing-risks}}
-
-So far, we've considered only how the different approaches to Software
-Dependencies change the landscape of risks we face to mitigate some
-Feature Risk or other.
-
-But with Software Dependencies we can construct dependency networks to
-give us all kinds of features and mitigate all kinds of risk. That is,
-\emph{the features we are looking for are to mitigate some kind of
-risk}.
-
-For example, I might start using
-\href{https://en.wikipedia.org/wiki/WhatsApp}{WhatsApp} for example,
-because I want to be able to send my friends photos and text messages.
-However, it's likely that those same features are going to allow us to
-mitigate Communication Risk and Coordination Risk when we're next trying
-to meet up.
-
-Let's look at some:
-
-\begin{longtable}[]{@{}ll@{}}
-\toprule
-\begin{minipage}[b]{0.40\columnwidth}\raggedright
-Risk\strut
-\end{minipage} & \begin{minipage}[b]{0.55\columnwidth}\raggedright
-Examples of Software Mitigating That Risk\strut
-\end{minipage}\tabularnewline
-\midrule
-\endhead
-\begin{minipage}[t]{0.40\columnwidth}\raggedright
-Coordination Risk\strut
-\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedright
-Calendar tools, Bug Tracking, Distributed Databases\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.40\columnwidth}\raggedright
-Map-And-Territory-Risk\strut
-\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedright
-The Internet, generally. Excel, Google, ``Big Data'', Reporting
-tools\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.40\columnwidth}\raggedright
-Schedule-Risk\strut
-\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedright
-Planning Software, Project Mangement Software\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.40\columnwidth}\raggedright
-Communication-Risk\strut
-\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedright
-Email, Chat tools, CRM tools like SalesForce, Forums, Twitter,
-Protocols\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.40\columnwidth}\raggedright
-Process-Risk\strut
-\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedright
-Reporting tools, online forms, process tracking tools\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.40\columnwidth}\raggedright
-Agency-Risk\strut
-\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedright
-Auditing tools, transaction logs, Timesheet software, HR Software\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.40\columnwidth}\raggedright
-Operational-Risk\strut
-\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedright
-Support tools like ZenDesk, Grafana, InfluxDB, Geneos\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.40\columnwidth}\raggedright
-Feature-Risk\strut
-\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedright
-Every piece of software you use!\strut
-\end{minipage}\tabularnewline
-\bottomrule
-\end{longtable}
-
-\hypertarget{back-to-ergonomics}{%
-\section{Back To Ergonomics}\label{back-to-ergonomics}}
-
-What's clear from this analysis is that software dependencies don't
-\emph{conquer} any risk - the moves they make on the Risk Landscape are
-\emph{subtle}. Whether or not you end up in a more favourable position
-risk-wise is going to depend heavily on the quality of the execution and
-the skill of the implementor.
-
-In particular, \emph{choosing} dependencies can be extremely difficult.
-As we discussed above, the usefulness of any tool depends on its fit for
-purpose, it's \emph{ergonomics within a given context}. It's all too
-easy to pick a good tool for the wrong job:
+\textbf{Inertia} and \textbf{Mass} are equivalent concepts in physics:
 
 \begin{quote}
-``I suppose it is tempting, if the only tool you have is a hammer, to
-treat everything as if it were a nail.'' -
-\href{https://en.wiktionary.org/wiki/if_all_you_have_is_a_hammer,_everything_looks_like_a_nail}{Abraham
-Maslow, \emph{Toward a Psychology of Being}}
+``mass is the quantitative or numerical measure of a body's inertia,
+that is of its resistance to being accelerated''. -
+\href{https://en.wikipedia.org/wiki/Inertia\#Mass_and_inertia}{Inertia,
+\emph{Wikipedia}}
 \end{quote}
 
-With software dependencies, we often have to live with the decisions we
-make for a long time. In my experience, given the Boundary Risks
-associated with getting this wrong, not enough time is spent really
-thinking about this in advance.
+You could stop here and say that the more lines of code a project
+contains, the higher it's mass. And, that makes sense, because in order
+to get it to do something new, you're likely to need to change more
+lines.
 
-Let's take a closer look at this problem in the next chapter, Boundary
-Risk.
+But there is actually some underlying sense in which \emph{this is
+real}, as discussed in this
+\href{https://www.youtube.com/user/1veritasium}{Veritasium} video. To
+paraphrase:
 
-\begin{longtable}[]{@{}l@{}}
-\toprule
-Sources\tabularnewline
-\midrule
-\endhead
-\href{https://www.software.ac.uk/resources/guides/defending-your-code-against-dependency-problems}{sd1
-- Defending your code against dependency problems}\tabularnewline
-\href{https://stackoverflow.com/questions/2960371/how-to-choose-an-open-source-library}{sd2
-- How to choose an open source library}\tabularnewline
-\href{https://www.forbes.com/sites/forbestechcouncil/2017/07/20/open-source-to-use-or-not-to-use-and-how-to-choose/2/\#39e67e445a8c}{sd3
-- Open Source - To use or not to use}\tabularnewline
-\href{https://www.zdnet.com/article/saas-checklist-nine-factors-to-consider-when-selecting-a-vendor/}{sd4
-- Saas Checklist - Nine Factors to Consider}\tabularnewline
-\href{http://sandhill.com/article/how-to-evaluate-saas-vendors-five-key-considerations/}{sd5
-- How to Evaluate Saas Vendors}\tabularnewline
-\bottomrule
-\end{longtable}
+\begin{quote}
+``Most of your mass you owe due to E=mc², you owe to the fact that your
+mass is packed with energy, because of the \textbf{interactions} between
+these quarks and gluon fluctuations in the gluon field\ldots{} what we
+think of as ordinarily empty space\ldots{} that turns out to be the
+thing that gives us most of our mass.'' -
+\href{https://www.youtube.com/watch?annotation_id=annotation_3771848421\&feature=iv\&src_vid=Xo232kyTsO0\&v=Ztc6QPNUqls}{Your
+Mass is NOT From the Higgs Boson, \emph{Veritasium}}
+\end{quote}
+
+I'm not an expert in physics, \emph{at all}, and so there is every
+chance that I am pushing this analogy too hard. But, substituting quarks
+and gluons for pieces of software we can (in a very handwaving-y way)
+say that more complex software has more \textbf{interactions} going on,
+and therefore has more mass than simple software.
+
+The reason I am labouring this analogy is to try and make the point that
+Complexity Risk is really fundamental:
+
+\begin{itemize}
+\tightlist
+\item
+  Feature Risk: like \textbf{money}.
+\item
+  Schedule Risk: like \textbf{time}.
+\item
+  Complexity Risk: like \textbf{mass}.
+\end{itemize}
+
+At a basic level, Complexity Risk heavily impacts on Schedule Risk: more
+complexity means you need more force to get things done, which takes
+longer.
+
+\hypertarget{technical-debt}{%
+\section{Technical Debt}\label{technical-debt}}
+
+The most common way we talk about unnecessary complexity in software is
+as Technical Debt:
+
+\begin{quote}
+``Shipping first time code is like going into debt. A little debt speeds
+development so long as it is paid back promptly with a rewrite\ldots{}
+The danger occurs when the debt is not repaid. Every minute spent on
+not-quite-right code counts as interest on that debt. Entire engineering
+organizations can be brought to a stand-still under the debt load of an
+unconsolidated implementation, object-oriented or otherwise.'' --
+\href{https://en.wikipedia.org/wiki/Technical_debt}{Ward Cunningham,
+1992}
+\end{quote}
+
+Building a perfect first-time solution is a waste, because perfection
+takes a long time. You're taking on more attendant Schedule Risk than
+necessary and Meeting Reality more slowly than you could.
+
+A quick-and-dirty, over-complex implementation mitigates the same
+Feature Risk and allows you to Meet Reality faster (see Prototyping).
+
+But, having mitigated the Feature Risk, you are now carrying more
+Complexity Risk than you necessarily need, and it's time to think about
+how to Refactor the software to reduce this risk again.
+
+\hypertarget{kitchen-analogy}{%
+\section{Kitchen Analogy}\label{kitchen-analogy}}
+
+It's often hard to make the case for minimizing Technical Debt: it often
+feels that there are more important priorities, especially when
+technical debt can be ``swept under the carpet'' and forgotten about
+until later. (See Discounting The Future.)
+
+One helpful analogy I have found is to imagine your code-base is a
+kitchen. After preparing a meal (i.e.~delivering the first
+implementation), \emph{you need to tidy up the kitchen}. This is just
+something everyone does as a matter of \emph{basic sanitation}.
+
+Now of course, you could carry on with the messy kitchen. When tomorrow
+comes and you need to make another meal, you find yourself needing to
+wash up saucepans as you go, or working around the mess by using
+different surfaces to chop on.
+
+It's not long before someone comes down with food poisoning.
+
+We wouldn't tolerate this behaviour in a restaurant kitchen, so why put
+up with it in a software project?
+
+\hypertarget{feature-creep}{%
+\section{Feature Creep}\label{feature-creep}}
+
+In Brooks' essay ``No Silver Bullet - Essence and Accident in Software
+Engineering'', a distinction is made between:
+
+\begin{quote}
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Essence}: \emph{the difficulties inherent in the nature of the
+  software.}
+\item
+  \textbf{Accident}: \emph{those difficulties that attend its production
+  but are not inherent.}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://en.wikipedia.org/wiki/No_Silver_Bullet}{Fred Brooks,
+    \emph{No Silver Bullet}}
+  \end{itemize}
+\end{itemize}
+\end{quote}
+
+The problem with this definition is that we are accepting features of
+our software as \emph{essential}.
+
+The \textbf{Risk-First} approach is that if you want to mitigate some
+Feature Risk then you have to pick up Complexity Risk as a result. But,
+that's a \emph{choice you get to make}.
+
+Therefore, \href{https://en.wikipedia.org/wiki/Feature_creep}{Feature
+Creep} (or
+\href{https://en.wikipedia.org/wiki/Gold_plating_(software_engineering)}{Gold
+Plating}) is a failure to observe this basic equation: instead of
+considering this trade off, you're building every feature possible. This
+has an impact on Complexity Risk, which in turn impacts Communication
+Risk and also Schedule Risk.
+
+Sometimes, feature-creep happens because either managers feel they need
+to keep their staff busy, or the staff decide on their own that they
+need to keep themselves busy. But now, we can see that basically this
+boils down to bad risk management.
+
+\begin{quote}
+``Perfection is Achieved Not When There Is Nothing More to Add, But When
+There Is Nothing Left to Take Away'' - Antoine de Saint-Exupery
+\end{quote}
+
+\hypertarget{dead-end-risk}{%
+\section{Dead-End Risk}\label{dead-end-risk}}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/dead-end-risk-400dpi.png}
+\caption{Dead-End Risk}
+\end{figure}
+
+Dead-End Risk is where you build functionality that you \emph{think} is
+useful, only to find out later that actually, it was a dead-end, and is
+superceded by something else.
+
+For example, let's say that the Accounting sub-system needed password
+protection (so you built this). Then the team realised that you needed a
+way to \emph{change the password} (so you built that). Then, that you
+needed to have more than one user of the Accounting system so they would
+all need passwords (ok, fine).
+
+Finally, the team realises that actually logging-in would be something
+that all the sub-systems would need, and that it had already been
+implemented more thoroughly by the Approvals sub-system.
+
+At this point, you realise you're in a \textbf{Dead End}:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Option 1}: You carry on making minor incremental improvements
+  to the accounting password system (carrying the extra Complexity Risk
+  of the duplicated functionality).
+\item
+  \textbf{Option 2}: You rip out the accounting password system, and
+  merge in the Approvals system, surfacing new, hidden Complexity Risk
+  in the process, due to the difficulty in migrating users from the old
+  to new way of working.
+\item
+  \textbf{Option 3}: You start again, trying to take into account both
+  sets of requirements at the same time, again, possibly surfacing new
+  hidden Complexity Risk due to the combined approach.
+\end{itemize}
+
+Sometimes, the path from your starting point to your goal on the Risk
+Landscape will take you to dead ends: places where the only way towards
+your destination is to lose something, and do it again another way.
+
+This is because you surface new Hidden Risk along the way. And the
+source of a lot of this hidden risk will be unexpected Complexity Risk
+in the solutions you choose. This happens a lot.
+
+\hypertarget{source-control}{%
+\subsection{Source Control}\label{source-control}}
+
+\href{https://en.wikipedia.org/wiki/Version_control}{Version Control
+Systems} like \href{https://en.wikipedia.org/wiki/Git}{Git} are a useful
+mitigation of Dead-End Risk, because it means you can \emph{go back} to
+the point where you made the bad decision and go a different way.
+Additionally, they provide you with backups against the often
+inadvertent Dead-End Risk of someone wiping the hard-disk.
+
+\hypertarget{the-re-write}{%
+\subsection{The Re-Write}\label{the-re-write}}
+
+\textbf{Option 3}, Rewriting code or a whole project can seem like a way
+to mitigate Complexity Risk, but it usually doesn't work out too well.
+As Joel Spolsky says:
+
+\begin{quote}
+There's a subtle reason that programmers always want to throw away the
+code and start over. The reason is that they think the old code is a
+mess. And here is the interesting observation: they are probably wrong.
+The reason that they think the old code is a mess is because of a
+cardinal, fundamental law of programming: \emph{It's harder to read code
+than to write it.} -
+\href{https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/}{Things
+You Should Never Do, Part 1, \emph{Joel Spolsky}}
+\end{quote}
+
+The problem that Joel is outlining here is that the developer mistakes
+hard-to-understand code for unnecessary Complexity Risk. Also, perhaps
+there is Agency Risk because the developer is doing something that is
+more useful to him than the project. We're going to return to this
+problem in again Communication Risk.
+
+\hypertarget{where-complexity-hides}{%
+\section{Where Complexity Hides}\label{where-complexity-hides}}
+
+Complexity isn't spread evenly within a software project. Some problems,
+some areas, have more than their fair share of issues. We're going to
+cover a few of these now, but be warned, this is not a complete list by
+any means:
+
+\begin{itemize}
+\tightlist
+\item
+  Memory Management
+\item
+  Protocols / Types
+\item
+  Algorithmic (Space and Time) Complexity
+\item
+  Concurrency / Mutability
+\item
+  Networks / Security
+\end{itemize}
+
+\hypertarget{memory-management}{%
+\subsection{Memory Management}\label{memory-management}}
+
+Memory Management is another place where Complexity Risk hides:
+
+\begin{quote}
+``Memory leaks are a common error in programming, especially when using
+languages that have no built in automatic garbage collection, such as C
+and C++.'' - \href{https://en.wikipedia.org/wiki/Memory_leak}{Memory
+Leak, \emph{Wikipedia}}
+\end{quote}
+
+\href{https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)}{Garbage
+Collectors} (as found in Javascript or Java) offer you the deal that
+they will mitigate the Complexity Risk of you having to manage your own
+memory, but in return perhaps give you fewer guarantees about the
+\emph{performance} of your software. Again, there are times when you
+can't accommodate this Operational Risk, but these are rare and usually
+only affect a small portion of an entire software-system.
+
+\hypertarget{protocols-and-types}{%
+\subsection{Protocols And Types}\label{protocols-and-types}}
+
+Whenever two components of a software system need to interact, they have
+to establish a protocol for doing so. There are lots of different ways
+this can work, but the simplest example I can think of is where some
+component \textbf{a} calls some function \textbf{b}. e.g:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{function} \AttributeTok{b}\NormalTok{(a}\OperatorTok{,}\NormalTok{ b}\OperatorTok{,}\NormalTok{ c) }\OperatorTok{\{}
+    \ControlFlowTok{return} \StringTok{"whatever"} \CommentTok{// do something here.}
+\OperatorTok{\}}
+
+\KeywordTok{function} \AttributeTok{a}\NormalTok{() }\OperatorTok{\{}
+    \KeywordTok{var}\NormalTok{ bOut }\OperatorTok{=} \AttributeTok{b}\NormalTok{(}\StringTok{"one"}\OperatorTok{,} \StringTok{"two"}\OperatorTok{,} \StringTok{"three"}\NormalTok{)}\OperatorTok{;}
+    \ControlFlowTok{return} \StringTok{"something "}\OperatorTok{+}\NormalTok{bOut}\OperatorTok{;}
+\OperatorTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+If component \textbf{b} then changes in some backwards-incompatible way,
+say:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{function} \AttributeTok{b}\NormalTok{(a}\OperatorTok{,}\NormalTok{ b}\OperatorTok{,}\NormalTok{ c}\OperatorTok{,}\NormalTok{ d }\CommentTok{/* new parameter */}\NormalTok{) }\OperatorTok{\{}
+    \ControlFlowTok{return} \StringTok{"whatever"} \CommentTok{// do something here.}
+\OperatorTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+Then, we can say that the protocol has changed. This problem is so
+common, so endemic to computing that we've had compilers that check
+function arguments \href{https://en.wikipedia.org/wiki/Compiler}{since
+the 1960's}. The point being is that it's totally possible for the
+compiler to warn you about when a protocol within the program has
+changed.
+
+The same is basically true of
+\href{https://en.wikipedia.org/wiki/Data_type}{Data Types}: whenever we
+change the \textbf{Data Type}, we need to correct the usages of that
+type. Note above, I've given the \texttt{javascript} example, but I'm
+going to switch to \texttt{typescript} now:
+
+\begin{verbatim}
+interface BInput {
+    a: string,
+    b: string,
+    c: string,
+    d: string
+}
+
+function b(in: BInput): string {
+    return "whatever" // do something here.
+}
+\end{verbatim}
+
+Now, of course, there is a tradeoff: we \emph{mitigate} Complexity Risk,
+because we define the protocols / types \emph{once only} in the program,
+and ensure that usages all match the specification. But the tradeoff is
+(as we can see in the \texttt{typescript} code) more
+\emph{finger-typing}, which some people argue counts as Schedule Risk.
+
+Nevertheless, compilers and type-checking are so prevalent in software
+that clearly, you have to accept that in most cases, the trade-off has
+been worth it: Even languages like \href{https://clojure.org}{Clojure}
+have been retro-fitted with
+\href{https://github.com/clojure/core.typed/wiki/User-Guide}{type
+checkers}.
+
+We're going to head into much more detail on this in the chapter on
+Protocol Risk.
+
+\hypertarget{space-and-time-complexity}{%
+\subsection{Space and Time Complexity}\label{space-and-time-complexity}}
+
+So far, we've looked at a couple of definitions of complexity in terms
+of the codebase itself. However, in Computer Science there is a whole
+branch of complexity theory devoted to how the software \emph{runs},
+namely \href{https://en.wikipedia.org/wiki/Big_O_notation}{Big O
+Complexity}.
+
+Once running, an algorithm or data structure will consume space or
+runtime dependent on it's characteristics. As with Garbage Collectors),
+these characteristics can introduce Performance Risk which can easily
+catch out the unwary. By and large, using off-the-shelf data structures
+and algorithms helps, but you still need to know their performance
+characteristics.
+
+The \href{http://bigocheatsheet.com}{Big O Cheatsheet} is a wonderful
+resource to investigate this further.
+
+\hypertarget{concurrency-mutability}{%
+\subsection{Concurrency / Mutability}\label{concurrency-mutability}}
+
+Although modern languages include plenty of concurrency primitives,
+(such as the
+\href{https://docs.oracle.com/javase/9/docs/api/java/util/concurrent/package-summary.html}{java.util.concurrent}
+libraries), concurrency is \emph{still} hard to get right.
+
+\href{https://en.wikipedia.org/wiki/Race_condition}{Race conditions} and
+\href{https://en.wikipedia.org/wiki/Deadlock}{Deadlocks} \emph{thrive}
+in over-complicated concurrency designs: complexity issues are magnified
+by concurrency concerns, and are also hard to test and debug.
+
+Recently, languages such as Clojure have introduced
+\href{https://en.wikipedia.org/wiki/Persistent_data_structure}{persistent
+collections} to alleviate concurrency issues. The basic premise is that
+any time you want to \emph{change} the contents of a collection, you get
+given back a \emph{new collection}. So, any collection instance is
+immutable once created. The tradeoff is again attendant Performance Risk
+to mitigate Complexity Risk.
+
+An important lesson here is that choice of language can reduce
+complexity: and we'll come back to this in Software Dependency Risk.
+
+\hypertarget{networking-security}{%
+\subsection{Networking / Security}\label{networking-security}}
+
+The last area I want to touch on here is networking. There are plenty of
+Complexity Risk perils in \emph{anything} to do with networked code,
+chief amongst them being error handling and (again) protocol evolution.
+
+In the case of security considerations, exploits \emph{thrive} on the
+complexity of your code, and the weaknesses that occur because of it. In
+particular, Schneier's Law says, never implement your own crypto scheme:
+
+\begin{quote}
+``Anyone, from the most clueless amateur to the best cryptographer, can
+create an algorithm that he himself can't break. It's not even hard.
+What is hard is creating an algorithm that no one else can break, even
+after years of analysis.'' -
+\href{https://en.wikipedia.org/wiki/Bruce_Schneier\#Cryptography}{Bruce
+Schneier, 1998}
+\end{quote}
+
+Luckily, most good languages include crypto libraries that you can
+include to mitigate these Complexity Risks from your own code-base.
+
+This is a strong argument for the use of libraries. But, when should you
+use a library and when should you implement yourself? This is again
+covered in the chapter on Software Dependency Risk.
+
+tbd - next chapter.
+
+costs associated with complexity risk
+
+CHANGE is also more risky why?
 
 \part{Preview}
 
@@ -1407,8 +1483,8 @@ book1/Part3.md practices/Estimates.md
 \hypertarget{glossary}{%
 \chapter{Glossary}\label{glossary}}
 
-\hypertarget{abstraction}{%
-\section{Abstraction}\label{abstraction}}
+\hypertarget{abstraction-1}{%
+\section{Abstraction}\label{abstraction-1}}
 
 \hypertarget{feedback-loop}{%
 \section{Feedback Loop}\label{feedback-loop}}
