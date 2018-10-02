@@ -160,7 +160,7 @@ Unfortunately, we know that most decisions _don't_ really get made this way.  We
 
 But, leaving that aside, let's try to build a model of what this decision making process _should_ involve.  Luckily, other authors have already considered the problem of choosing good software libraries, so let's start there.
 
-In the table below, I am summarizing three different sources, which give descriptions of which factors to look for when choosing open-source libraries.
+In the table below, I am summarizing three different sources (linked at the end of the section), which give descriptions of which factors to look for when choosing open-source libraries.
 
 ![Software Dependencies](images/generated/software_dependency_table_1_large.png)
 
