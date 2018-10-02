@@ -8,9 +8,7 @@ As a simple example, <!-- tweet-start -->if your needs are served perfectly by M
 
 Not considering [Feature Risk](Feature-Risk) means that you might be building the wrong functionality, for the wrong audience or at the wrong time.  And eventually, this will come down to lost money, business, acclaim, or whatever else reason you are doing your project for.  So let's unpack this concept into some of it's variations.
 
-## Variations
-
-### Feature Fit Risk
+## Feature Fit Risk
 
 ![Feature Risk](images/generated/fit-risk.png) 
 
@@ -27,7 +25,7 @@ This is the one we've just discussed above: the feature that you (or your client
 
 (At this point, it's worth pointing out that sometimes, _the user expects the wrong thing_.  This is a different but related risk, which could be down to [Training](Training) or [Documentation](Documentation) or simply [Poor User Interface](Communication-Risk) and we'll look at that more in [Communication Risk](Communication-Risk).)
 
-### Regression Risk
+## Regression Risk
 
 ![Regression Risk](images/generated/regression-risk.png) 
 
@@ -35,7 +33,7 @@ This is the one we've just discussed above: the feature that you (or your client
 
 Also, while delivering new features can delight your customers, breaking existing ones will annoy them.  This is something we'll come back to in [Reputation Risk](Operational-Risk#reputational-risk).
 
-### Conceptual Integrity Risk
+## Conceptual Integrity Risk
 
 ![Conceptual Integrity Risk](images/generated/conceptual-integrity-risk.png) 
 
@@ -53,7 +51,7 @@ This is a particularly pernicious kind of [Feature Risk](Feature-Risk) which can
 
 [Conceptual Integrity Risk](Feature-Risk#conceptual-integrity-risk) is the risk that chasing after features leaves the product making no sense, and therefore pleasing no-one.   
 
-### Feature Access Risk
+## Feature Access Risk
 
 ![Feature Access Risk](images/generated/feature-access-risk.png) 
 
@@ -75,13 +73,14 @@ I face market risk when I own (i.e. have a _position_ in) some [Apple](http://ap
 
 In the same way, _you_ have [Market Risk](Feature-Risk#market-risk) on the product or service you are building:  the _market_ decides what it is prepared to pay for this, and it tends to be outside your control.     
 
-### Feature Drift Risk
+## Feature Drift Risk
 
 ![Feature Drift Risk](images/generated/feature-drift-risk.png) 
 
 **Feature Drift** is the tendency that the features people need _change over time_.   For example, at one point in time, supporting IE6 was right up there for website developers, but it's not really relevant anymore.  <!-- tweet-end --> Although that change took _many_ years to materialize, other changes are more rapid.    
 
 The point is:  [Requirements captured](Requirements-Capture) _today_ might not make it to _tomorrow_, especially in the fast-paced world of IT.  This is partly because the market _evolves_ and becomes more discerning.  This happens in several ways:
+
  - Features present in competitor's versions of the software become _the baseline_, and they're expected to be available in your version.
  - Certain ways of interacting become the norm (e.g. [querty]() keyboards, or the control layout in cars: these don't change with time).
  - Features decline in usefulness: _Printing_ is less important now than it was,  for example.
@@ -92,10 +91,9 @@ The point is:  [Requirements captured](Requirements-Capture) _today_ might not m
 
 Fashion plays a big part in IT, as this [infographic on website design shows](https://designers.hubspot.com/blog/the-history-of-web-design-infographic).  True, websites have got easier to use as time has gone by, and users now expect this.  Also, bandwidth is greater now, which means we can afford more media and code on the client side.  However, _fashion_ has a part to play in this.  
 
-
 By being _fashionable_, websites are communicating:   _this is a new thing_, _this is relevant_, _this is not terrible_:  all of which is mitigating a [Communication Risk](Communication-Risk).  <!-- tweet-start -->Users are all-too-aware that the Internet is awash with terrible, abandon-ware sites that are going to waste their time.  How can you communicate that you're not one of them to your users? <!-- tweet-end -->
 
-### Delight
+## Delight
 
 If this breakdown of [Feature Risk](Feature-Risk) seems reductive, then try not to think of it that way:  <!-- tweet-start --> the aim _of course_ should be to delight users, and turn them into fans.  That's a laudable [Goal](Glossary#Goal-In-Mind), but should be treated in the usual Risk-First way:  _pick the biggest risk you can mitigate next_.   <!-- tweet-end -->
 
@@ -106,16 +104,17 @@ Consider [Feature Risk](Feature-Risk) from both the down-side and the up-side:
 
 Hopefully, this has given you some ideas about what [Feature Risk](Feature-Risk) involves.   Hopefully, you might be able to identify a few more specific varieties.  But, it's time to move on and look in more detail at [Complexity Risk](Complexity-Risk) and how it affects what we build. 
 
-### Analysis
+## Analysis
 
 At this point, it would be easy to stop and say, look, here are a bunch of [Feature Risk]() issues that you could face.  But, it turns out that we're going to be relying heavily on [Feature Risk]() as we go on in order to build our understanding of other risks, so it's probably worth spending a bit of time up front to classify what we've found.  
 
 The [Feature Risks]() identified here basically exist in a 3-dimensional space:
+
  - **Fit**: How well the features fit for a particular client.
  - **Audience**:  The range of clients (the _market_) that may be able to use this feature.
  - **Evolution**:  The way the fit and the audience changes and evolves as time goes by. 
  
-#### Fit
+### Fit
 
  > "Survival Of The Fittest" - Darwin, tbd.
  
@@ -129,22 +128,24 @@ tbd:  definition of biological fitness
 
 For further reading, you can check out [The Service Quality Model](http://en.wikipedia.org/SERVQUAL), whcih this model is derived from.  This model analyses the types of _quality gaps_ in services, and how consumer expectations and perceptions of a service arise.  In [Staging And Classifying](Staging-And-Classifying#Your-Feature-Risk-is-Someone-Else-s-Dependency-Risk), we'll come back and build on this model further. 
 
-#### Fit and Audience
+### Fit and Audience
 
 Two risks, [Feature Access Risk](Feature-Risk#feature-access-risk) and [Market Risk](Feature-Risk#market-risk) considers _Fit_ for a whole _Audience_ of users.  They are different:  just as it's possible to have a small audience, but a large revenue, it's possible to have a product which has low [Feature Access Risk]() (i.e lots of users can access it without difficulty) but high [Market Risk]() (i.e. the market is highly volatile or capricious in it's demands).  _Online services_ often suffer from this [Market Risk]() rollercoaster, being one moment highly valued and the next irrelevant. 
 
-#### Fit, Audience and Evolution
+### Fit, Audience and Evolution
 
 Two risks further consider how the **Fit** and **Audience** _change_: [Regression Risk]() and [Feature Drift Risk]().  We call this _evolution_ in the sense that:
+
  - Our product's features _evolve_ with time, and changes made by the development team.
  - Our audience changes and evolves as it is exposed to our product and competing products.
  - The world as a whole is an evolving system within which our product exists.
  
  tbd.  regression risk and feature drift risk.
  
-### Applying Feature Risk
+## Applying Feature Risk
 
 Consider [Feature Risk](Feature-Risk) carefully next time you are grooming the backlog:
+
  - Can you judge which tasks mitigate the most [Feature Risk](Feature-Risk)?
  - Are you delivering features that are valuable to a large audience?  How well do you understand your audience?  How does the size of the audience for a task impact it's importance in the backlog?
  - Does the audience _know_ that the features exist?  How do you communicate feature availability to them?  

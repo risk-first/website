@@ -24,34 +24,35 @@ We might choose this representation:
 
 ```javascript
  
-function out() {                                (7 symbols)
-    return "abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd"  (45)
-}                                                      (1 )
+function out() {                                      (7 )
+    return "abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd" (45)
+}                                                     (1 )
 ```
 
-... which contains **53** symbols, if you count `function`, `out` and `return` as one symbol each.
+The numbers in brackets indicate how many symbols each line contains, so in total, this code block contains **53 symbols**, if you count `function`, `out` and `return` as one symbol each.
 
 But, if we write it like this:
 
 ```javascript
-const ABCD="ABCD";                                           (11 symbols)
+const ABCD="ABCD";                                    (11)
 
-function out() {                                             (7 symbols)
-    return ABCD+ABCD+ABCD+ABCD+ABCD+ABCD+ABCD+ABCD+ABCD+ABCD (21 symbols)
-}                                                            (1 symbol)
+function out() {                                      (7 )
+    return ABCD+ABCD+ABCD+ABCD+ABCD+ABCD+ABCD+        (16)
+        ABCD+ABCD+ABCD;                               (6 )
+}                                                     (1 )
 ```
 
-With this version, we now have **40** symbols.  And with this version:
+With this version, we now have **41 symbols** (**ABCD** is a single symbol, because we could have called it anything).  And with this version:
 
 ```javascript
-const ABCD="ABCD";                                           (11 symbols)
+const ABCD="ABCD";                                    (11)
 
-function out() {                                             (7 symbols)
-    return ABCD.repeat(10)                                   (7 symbols)
-}                                                            (1 symbol)
+function out() {                                      (7 )
+    return ABCD.repeat(10)                            (7 )
+}                                                     (1 )
 ```
 
-... we have **26** symbols.  
+... we have **26 symbols**.  
 
 ### Abstraction
 
@@ -64,8 +65,8 @@ By applying techniques such as Abstraction, we can improve in the direction of t
 But we could go further down into [Code Golf](https://en.wikipedia.org/wiki/Code_golf) territory.  This javascript program plays [FizzBuzz](https://en.wikipedia.org/wiki/Fizz_buzz) up to 100, but is less readable than you might hope:
 
 ```javascript
-for(i=0;i<100;)document.write(((++i%3?'':'Fizz')+
-(i%5?'':'Buzz')||i)+"<br>")                                  (66 symbols)
+for(i=0;i<100;)document.write(((++i%3?'':'Fizz')+     
+(i%5?'':'Buzz')||i)+"<br>")                           (62)
 ```
 
 So there is at some point a trade-off to be made between [Complexity Risk](Complexity-Risk) and [Communication Risk](Communication-Risk).  This is a topic we'll address more in that section.   But for now, it should be said that [Communication Risk](Communication-Risk) is about _misunderstanding_:  The more complex a piece of software is, the more difficulty users will have understanding it, and the more difficulty developers will have changing it.  
@@ -85,9 +86,15 @@ It has 10 vertices, labelled **a** to **j**, and it has 15 edges (or links) conn
 As a slight aside, let's consider the **Kolmogorov Complexity** of this graph, by inventing a mini-language to describe graphs.  It could look something like this:
 
 ```javascript
-<item> : [<item>,]* <item>    # Indicates that the item before the colon 
-                              # has a connection to all the items after the colon.
-                              
+<item> : [<item>,]* <item>    # Indicates that the item 
+                              # before the colon 
+                              # has a connection to all 
+                              # the items after the colon
+```
+
+So our graph could be defined like this:                              
+                             
+```javascript                              
 a: b,c,d
 b: c,f,e
 c: f,d
@@ -96,7 +103,8 @@ e: h,j
 f: h
 g: j
 h: i
-i: j                                                         (39 symbols)
+i: j                                                  
+                                                      (39)
 ```
 
 Let's remove some of those extra links:
@@ -114,7 +122,8 @@ c: d,f
 d: j
 f: h
 e: h
-h: i                                                         (25 symbols)
+h: i                                                  
+                                                      (25)
 ```
 
 **Connectivity** is also **Complexity**.  Heavily connected programs/graphs are much harder to work with than less-connected ones.  Even _laying out_ the first graph sensibly is a harder task than the second (the second is a doddle).  But the reason programs with greater connectivity are harder to work with is that changing one module potentially impacts many others.
