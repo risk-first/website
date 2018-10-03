@@ -183,9 +183,13 @@ The document has moved
 
 There's a lot going on here, but we can break it down really easily into 3 chunks:
 
-- The first line is the [HTTP Status Code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).  `301` is a code meaning that the page has moved.
-- The next 9 lines are HTTP headers again (name-value pairs).   The `Location:` directive tells us where the page has moved to.  Instead of trying `http://google.com/preferences`, we should have used `http://www.google.com/preferences`. 
-- The lines starting `<HTML>` are now some HTML to display on the screen to tell the user that the page has moved.  
+1. The first line is the [HTTP Status Code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).  `301` is a code meaning that the page has moved.
+
+2. The next 9 lines are HTTP headers again (name-value pairs).   The `Location:` directive tells us where the page has moved to.  Instead of trying `http://google.com/preferences`, we should have used:
+
+> `http://www.google.com/preferences`. 
+
+3. The lines starting `<HTML>` are now some HTML to display on the screen to tell the user that the page has moved.  
 
 ### 6. HTML - Hypertext Markup Language
  
