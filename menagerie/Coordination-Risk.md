@@ -168,7 +168,7 @@ Working in a large organisation often feels like being a cell in a larger organi
  
 _Less_ consultative decision making styles are more appropriate then when we don't have the luxury of high-bandwidth channels for discussion, or when the number of parties rises above a room-full of people.   As you can see from the table above, for **CII** and **GII** decision-making styles, the amount of communication increases non-linearly with the number of participants, so we need something simpler.  As we saw in the [Complexity Risk](Complexity-Risk) section, hierarchies are an excellent way of economizing on number of different communication channels, and we use these frequently when there are lots of parties to coordinate.
 
-![Hierarchy of Function in an Organisation](images/kite9/coordination-organisation.png)
+![Hierarchy of Function in an Organisation](images/kite9/coordination-organisation-temp.png)
 
 In large organisations, teams are created and leaders chosen for those teams precisely to mitigate [Communication Risk](Communication-Risk).  We're all familiar with this: control of the team is ceded to the leader, who takes on the role of 'handing down' direction from above, but also 'reporting up' issues that cannot be resolved within the team.   In Vroom and Yetton's model, this is moving from a **GII** or **CII** to an **AI** or **AII** style of leadership.  
 
