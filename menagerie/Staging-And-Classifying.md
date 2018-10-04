@@ -82,7 +82,6 @@ Internal Model      - Communication --  Dependency
 
 tbd diagram: abstractions -> agency -> coordintion -> communication
 
-
 One thing that should be apparent is that there are similarities in the risks between all the kinds of
 
 - draw a diagram of this system.  mark on all the different risks using numbers.  mention specifically that since this is a diagram, it is a "map".
