@@ -120,7 +120,11 @@ The [Feature Risks]() identified here basically exist in a 3-dimensional space:
  
 Darwin's conception of fitness was not one of athletic prowess, but how well an organism worked within the landscape, with the goal of reproducing itself.  
 
- [Fit Risk](), [Conceptual Integrity Risk]() and [Implementation Risk]() all hint at different aspects of this "fitness".   We can conceive of the relationships between them in the following way:
+ [Fit Risk](), [Conceptual Integrity Risk]() and [Implementation Risk]() all hint at different aspects of this "fitness".   We can conceive of them as the gaps between the following entities:
+ 
+ - Perceived Need:  What the user _thinks_ they want
+ - Expectation: What the user _expects_
+ - Reality: What they actually _get_.
 
 ![Feature Risks Assembled:  Fit Risks](images/kite9/all_feature_risk_1.png) 
 
@@ -139,7 +143,6 @@ Two risks further consider how the **Fit** and **Audience** _change_: [Regressio
  - The world as a whole is an evolving system within which our product exists.
  
 ![Feature Risks Assembled:  Audience and Evolution](images/kite9/all_feature_risk_2.png) 
-
  
 ## Applying Feature Risk
 

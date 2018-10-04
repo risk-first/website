@@ -8,31 +8,29 @@ Hopefully, after reading this, you'll come away with:
 
 This is not intended to be a rigorously scientific work: I don't believe it's possible to objectively analyze a field like software development in any meaningful, statistically significant way.  (For one, things just change [too fast](Silver-Bullets).) 
 
-> "I have this Pattern"
+> "I have this Pattern" - [Attributed to Ward Cunningham, _Have This Pattern, C2 Wiki_](http://c2.com/ppr/wiki/WikiPagesAboutWhatArePatterns/HaveThisPattern.html)
 
-Does that diminish it?   If you have visited the [TVTropes]() website, you'll know that it's a set of web-pages describing _common patterns_ of narrative, production, character design etc. to do with fiction.  For example:
+Does that diminish it?   If you have visited the [TVTropes](https://tvtropes.org) website, you'll know that it's a set of web-pages describing _common patterns_ of narrative, production, character design etc. to do with fiction.  For example:
 
-> tbd.
+> "Sometimes, at the end of a Dream Sequence or an All Just a Dream episode, after the character in question has woken up and demonstrated any [lesson] that the dream might have been communicating, there's some small hint that it wasn't a dream after all, even though it quite obviously was... right?. " - [Or Was It a Dream?, _TVTropes_](https://tvtropes.org/pmwiki/pmwiki.php/Main/OrWasItADream)
 
+Is it scientific?  No.  Is it correct?  Almost certainly.  TVTropes is a set of _empirical patterns_ for how stories on TV and other media work.  It's really useful, and a lot of fun.  (Warning:  it's also incredibly addictive).
 
-Is it scientific?  No.   Is it correct?  Almost certainly.  TVTropes is a set of _empirical patterns_ for how stories on TV and other media work.  It's really useful, and a lot of fun.  (Warning:  it's also incredibly addictive).
+In the same way, "Design Patterns: Elements of Reusable Object-Oriented Software", is a book detailing patterns of _structure_ within Object-Oriented programming, such as:
 
-In the same way, tbd, the tbd published a book called "Design Patterns:  tbd".  Which shows you patterns of _structure_ within Object-Oriented programming:
-
-> tbd.
+> "[The] Adapter [pattern] allows classes with incompatible interfaces to work together by wrapping its own interface around that of an already existing class..." - [Design Patterns, _Wikipedia_](https://en.wikipedia.org/wiki/Design_Patterns)
 
 ### Patterns For Practitioners
 
-This book aimed to be a set of _useful_ patterns which practitioners could use in their software to achieve certain goals.  "I have this pattern" was a phrase used to describe how they had seen a certain set of constraints before, and how they had solved it in software.  
+Design Patterns aimed to be a set of _useful_ patterns which practitioners could use in their software to achieve certain goals.  "I have this pattern" was a phrase used to describe how they had seen a certain set of constraints before, and how they had solved it in software.  
 
 This book was a set of experts handing down their battle-tested practices for other developers to use, and, whether you like patterns or not, knowing them is an important part of being a software developer, as you will see them used everywhere you go and probably use them yourself.
 
-In the same way, this book aims to be a set of _Patterns for Software Risk_.  Hopefully after reading this book, you will see where risk hides in software projects, and have a name for it when you see it.
+In the same way, Risk-First aims to be a set of _Patterns for Software Risk_.  Hopefully after reading this book, you will see where risk hides in software projects, and have a name for it when you see it.
 
 ### Towards a "Periodic Table"
 
 In the latter chapters of "The Menagerie" we try to assemble these risk patterns into a cohesive whole.  Projects fail because of risks, and risks arise from predictable sources.
-
 
 ### What This is Not
 
