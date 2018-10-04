@@ -52,8 +52,7 @@ But, does this feel right?  One of the criticisms of the [Risk Register](Risk-Th
 
 In the preceding discussions, I have been careful to point out the existence of [Hidden Risks](Glossary#hidden-risk) for that very reason. Or, to put another way:
 
-> What we don't know is what usually gets us killed 
->     - Petyr Baelish
+> What we don't know is what usually gets us killed - Petyr Baelish, _Game of Thrones_
 
 Donald Rumsfeld's famous [Known Knowns](https://en.wikipedia.org/wiki/There_are_known_knowns) is also a helpful conceptualization.
 
