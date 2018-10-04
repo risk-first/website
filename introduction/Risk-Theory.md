@@ -66,8 +66,7 @@ I am using **risk** everywhere because later we will talk about specific risks (
 
 Let's look at the classic description of Risk Management:
 
-> Risk Management is the process of thinking out corrective actions before a problem occurs, while it's still an abstraction.  
-> The opposite of risk management is crisis management, trying to figure out what to do about the problem after it happens. - [Waltzing With Bears, _Tom De Marco & Tim Lister_](http://amzn.eu/d/i0IDFA2)
+> Risk Management is the process of thinking out corrective actions before a problem occurs, while it's still an abstraction.  The opposite of risk management is crisis management, trying to figure out what to do about the problem after it happens. - [Waltzing With Bears, _Tom De Marco & Tim Lister_](http://amzn.eu/d/i0IDFA2)
 
 This is not how **Risk-First** sees it:  
 
@@ -117,7 +116,7 @@ For example, in [Rapid Development]( http://a.co/d/ddWGTB2) by Steve McConnell w
 
 ![Pillars, From Rapid Development By Steve McConnell](images/kite9/rapid_development_pillars.png)  
 
-And, this is _fine_, McConnel is structuring the process from the perspective of _delivering as quickly as possible_.  However, here, I want to turn this on it's head.  Exploring Software Development from a risk-first perspective is an under-explored technique, and I believe it offers some useful insights.   So the aim here is to present the case for viewing software development like this:
+And, this is _fine_, McConnell is structuring the process from the perspective of _delivering as quickly as possible_.  However, here, I want to turn this on it's head.  Exploring Software Development from a risk-first perspective is an under-explored technique, and I believe it offers some useful insights.   So the aim here is to present the case for viewing software development like this:
 
 ![Pillars, re-arranged](images/kite9/rapid_development_pillars2.png)
 
@@ -185,11 +184,11 @@ Why do things like this happen?  Often, the people involved are under incredible
 
 Under these circumstances, we often see _Pooh-Bear Procrastination_:
 
-> "Here is Edward Bear coming downstairs now, bump, bump, bump, on the back of his head, behind Christopher Robin. It is, as far as he knows, the only way of coming downstairs, but sometimes he feels that there really is another way…if only he could stop bumping for a moment and think of it!" - [A. A. Milne, _Winne-the-Pooh](http://amzn.eu/d/acJ5a2j)
+> "Here is Edward Bear coming downstairs now, bump, bump, bump, on the back of his head, behind Christopher Robin. It is, as far as he knows, the only way of coming downstairs, but sometimes he feels that there really is another way…if only he could stop bumping for a moment and think of it!" - [A. A. Milne, _Winne-the-Pooh_](http://amzn.eu/d/acJ5a2j)
 
 ## Is This Scientific?
 
-**Risk-First** is an attempt to provide a practical framework, rather than a scientifically rigorous analysis.  In fact, my view is that you should _give up_ on trying to compute risk numerically.  You _can't_ work out how long a software project will take based purely on an analysis of (say) _function points_.  (Whatever you define them to be).
+Enough with the numbers and the theory:  **Risk-First** is an attempt to provide a practical framework, rather than a scientifically rigorous analysis.  In fact, my view is that you should _give up_ on trying to compute risk numerically.  You _can't_ work out how long a software project will take based purely on an analysis of (say) _function points_.  (Whatever you define them to be).
 
 - First, there isn't enough evidence for an approach like this.  We _can_ look at collected data about IT projects, but [techniques and tools change](Silver-Bullets).
 - Second,  IT projects have too many confounding factors, such as experience of the teams, 
