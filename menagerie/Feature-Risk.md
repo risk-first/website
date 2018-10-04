@@ -39,9 +39,9 @@ Also, while delivering new features can delight your customers, breaking existin
 
 Sometimes, users _swear blind_ that they need some feature or other, but it runs at odds with the design of the system, and plain _doesn't make sense_.   Often, the development team can spot this kind of conceptual failure as soon as it enters the [Backlog](Prioritisation). Usually, it's in coding that this becomes apparent.  
 
-tbd: feature phones.
-
 Sometimes, it can go for a lot longer.  I once worked on some software that was built as a score-board within a chat application.  However, after we'd added much-asked-for commenting and reply features to our score-board, we realised we'd implemented a chat application _within a chat application_, and had wasted our time enormously.  
+
+[Feature Phones](https://en.wikipedia.org/wiki/Feature_phone) are a real-life example:  although it _seemed_ like the market wanted more and more features added to their phones, [Apple's iPhone](https://en.wikipedia.org/wiki/IPhone) was able to steal huge market share by presenting a much more enjoyable, more coherent user experience, despite being more expensive and having fewer features.  Feature Phones had been drowning in increasing [Conceptual Integrity Risk](Feature-Risk#Conceptual-integrity-risk) without realising it.
 
 Which leads to Greenspun's 10th Rule:
 
@@ -116,15 +116,13 @@ The [Feature Risks]() identified here basically exist in a 3-dimensional space:
  
 ### Fit
 
- > "Survival Of The Fittest" - Darwin, tbd.
+ > "This preservation, during the battle for life, of varieties which possess any advantage in structure, constitution, or instinct, I have called Natural Selection; and Mr. Herbert Spencer has well expressed the same idea by the Survival of the Fittest" - [Charles Darwin (Survival of the Fittest), _Wikipedia_](https://en.wikipedia.org/wiki/Survival_of_the_fittest).
  
-Darwin's conception of fitness was not one of athletic prowess, but how well an organism worked within the landscape.
-
-tbd:  definition of biological fitness
+Darwin's conception of fitness was not one of athletic prowess, but how well an organism worked within the landscape, with the goal of reproducing itself.  
 
  [Fit Risk](), [Conceptual Integrity Risk]() and [Implementation Risk]() all hint at different aspects of this "fitness".   We can conceive of the relationships between them in the following way:
 
-![Feature Risks Assembled](images/kite9/all_feature_risk_1.png) 
+![Feature Risks Assembled:  Fit Risks](images/kite9/all_feature_risk_1.png) 
 
 For further reading, you can check out [The Service Quality Model](http://en.wikipedia.org/SERVQUAL), whcih this model is derived from.  This model analyses the types of _quality gaps_ in services, and how consumer expectations and perceptions of a service arise.  In [Staging And Classifying](Staging-And-Classifying#Your-Feature-Risk-is-Someone-Else-s-Dependency-Risk), we'll come back and build on this model further. 
 
@@ -140,7 +138,8 @@ Two risks further consider how the **Fit** and **Audience** _change_: [Regressio
  - Our audience changes and evolves as it is exposed to our product and competing products.
  - The world as a whole is an evolving system within which our product exists.
  
- tbd.  regression risk and feature drift risk.
+![Feature Risks Assembled:  Audience and Evolution](images/kite9/all_feature_risk_2.png) 
+
  
 ## Applying Feature Risk
 
