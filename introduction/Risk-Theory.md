@@ -68,8 +68,7 @@ I am using **risk** everywhere because later we will talk about specific risks (
 Let's look at the classic description of Risk Management:
 
 > Risk Management is the process of thinking out corrective actions before a problem occurs, while it's still an abstraction.  
-> The opposite of risk management is crisis management, trying to figure out what to do about the problem after it happens.
-> - Waltzing With Bears, Tom De Marco & Tim Lister
+> The opposite of risk management is crisis management, trying to figure out what to do about the problem after it happens. - [Waltzing With Bears, _Tom De Marco & Tim Lister_](http://amzn.eu/d/i0IDFA2)
 
 This is not how **Risk-First** sees it:  
 
