@@ -234,7 +234,9 @@ and where of \emph{The Menagerie}.
 \section{Why}\label{why}}
 
 \begin{quotation}
-Scrum, Waterfall, Lean, Prince2:  what do they all have in common?
+
+Scrum, Waterfall, Lean, Prince2: what do they all have in common?
+
 \end{quotation}
 
 I've started this because, on my career journey, I've noticed that the
@@ -246,7 +248,7 @@ use in this.
 I started with this observation: \emph{Development Teams} put a lot of
 faith in methodology. Sometimes, this faith is often so strong it
 borders on religion. (Which in itself is a concern.) For some, this is
-Prince2. For others, it might be Lean or Agile.
+Prince2.
 
 \emph{Developers} put a lot of faith in \emph{particular tools} too.
 Some developers are pro-or-anti-Java, others are pro-or-anti-XML. All of
@@ -292,10 +294,12 @@ Hopefully, after reading this, you'll come away with:
 This is not intended to be a rigorously scientific work: I don't believe
 it's possible to objectively analyze a field like software development
 in any meaningful, statistically significant way. (For one, things just
-change too fast.)
+change too fast
 
 \begin{quotation}
+
 I have this Pattern
+
 \end{quotation}
 
 Does that diminish it? If you have visited the TVTropes website, you'll
@@ -353,7 +357,7 @@ risks arise from predictable sources.
 This is not intended to be a rigorously scientific work: I don't believe
 it's possible to objectively analyze a field like software development
 in any meaningful, statistically significant way. (For one, things just
-change too fast.)
+change too fast
 
 Neither is this site isn't going to be an exhaustive guide of every
 possible software development practice and methodology. That would just
@@ -398,10 +402,9 @@ to plan your work.
 
 Frequently, as developers we find software methodologies ``done to us''
 from above. Risk-First is a toolkit to help \emph{take apart}
-methodologies like Scrum, Lean and Prince2, and understand them.
-Methodologies are \emph{bicycles}, rather than \emph{religions}. Rather
-than simply \emph{believing}, we can take them apart and see how they
-work.
+methodologies like Scrum, and understand them. Methodologies are
+\emph{bicycles}, rather than \emph{religions}. Rather than simply
+\emph{believing}, we can take them apart and see how they work.
 
 \hypertarget{for-project-managers-and-team-leads}{%
 \subsection{For Project Managers and Team
@@ -428,26 +431,22 @@ a successful project.
 \hypertarget{how}{%
 \section{How}\label{how}}
 
-One of the original proponents of the Agile Manifesto, Kent Beck, begins
-his book Extreme Programming by stating:
+One of the original proponents of the Agile Manifesto by stating:
 
 ``It's all about risk'' \textgreater{} Kent Beck
 
 This is a promising start. From there, he introduces his methodology,
-Extreme Programming, and explains how you can adopt it in your team, the
-features to observe and the characteristics of success and failure.
-However, while \emph{Risk} has clearly driven the conception of Extreme
-Programming, there is no clear model of software risk underpinning the
-work, and the relationship between the practices he espouses and the
-risks he is avoiding are hidden.
+Extreme Programming, there is no clear model of software risk
+underpinning the work, and the relationship between the practices he
+espouses and the risks he is avoiding are hidden.
 
 In this book, we are going to introduce a model of software project
 risk. This means that in \textbf{Book Two} (Risk-First: Tools and
-Practices), we can properly analyse Extreme Programming (and Scrum,
-Waterfall, Lean and all the others) and \emph{understand} what drives
-them. Since they are designed to deliver successful software projects,
-they must be about mitigate risks, and we will uncover \emph{exactly
-which risks are mitigated} and \emph{how they do it}.
+Practices), we can properly analyse Extreme Programming and
+\emph{understand} what drives them. Since they are designed to deliver
+successful software projects, they must be about mitigate risks, and we
+will uncover \emph{exactly which risks are mitigated} and \emph{how they
+do it}.
 
 \hypertarget{where}{%
 \section{Where}\label{where}}
@@ -483,8 +482,8 @@ There are lots of different ways to look at a project. For example,
 metrics such as ``number of open tickets'', ``story points'', ``code
 coverage'' or ``release cadence'' give us a numerical feel for how
 things are going and what needs to happen next. We also judge the health
-of projects by the practices used on them - Continuous Integration, Unit
-Testing or Pair Programming, for example.
+of projects by the practices used on them - Continuous Integration, for
+example.
 
 Software methodologies, then, are collections of tools and practices:
 ``Agile'', ``Waterfall'', ``Lean'' or ``Phased Delivery'' (for example)
@@ -595,9 +594,7 @@ For example:
 \begin{itemize}
 \tightlist
 \item
-  If we do a Code Review, we are partly trying to mitigate the risks of
-  bugs slipping through into production, and also mitigate the Key-Man
-  Risk of knowledge not being widely-enough shared.
+  If we do a Code Review of knowledge not being widely-enough shared.
 \item
   If we write Unit Tests, we're also mitigating the risk of bugs going
   to production, but we're also mitigating against future changes
@@ -659,9 +656,7 @@ something like this:
 
 How do we take this further?
 
-The first idea we explore is that of the Risk Landscape: Although the
-software team can't remove risk from their project, they can take
-actions that move them to a place in the Risk Landscape where the risks
+The first idea we explore is that of the Risk Landscape where the risks
 on the project are more favourable than where they started.
 
 From there, we examine basic risk archetypes you will encounter on the
@@ -720,10 +715,7 @@ play along with your own example.
 \subsection{Goal In Mind}\label{goal-in-mind}}
 
 Now, in this endeavour, we want to be successful. That is to say, we
-have a Goal In Mind: we want our friends to go home satisfied after a
-decent meal, and not to feel hungry. As a bonus, we might also want to
-spend time talking with them before and during the meal. So, now to
-achieve our Goal In Mind we \emph{probably} have to do some tasks.
+have a Goal In Mind we \emph{probably} have to do some tasks.
 
 If we do nothing, our friends will turn up and maybe there's nothing in
 the house for them to eat. Or maybe, the thing that you're going to cook
@@ -750,18 +742,17 @@ risks and try to mitigate them: shop for the ingredients in advance,
 prepare parts of the meal, maybe practice the cooking in advance. Or, we
 can wing it, and sometimes we'll get lucky.
 
-How much effort we expend on mitigating Attendant Risks depends on how
-great we think they are: for example, if you know it's a 24-hour shop,
-you'll probably not worry too much about getting the ingredients well in
-advance (although, the shop \emph{could still be closed}).
+How much effort we expend on mitigating Attendant Risks.
 
 \hypertarget{hidden-risks}{%
 \subsection{Hidden Risks}\label{hidden-risks}}
 
-There are also hidden Attendant Risks that you might not know about: if
-you're poaching eggs for dinner, you might know that fresh eggs poach
-best. These are the ``Unknown Unknowns'' of
-\href{https://en.wikipedia.org/wiki/There_are_known_knowns}{Rumsfeld's model}.
+There are also hidden \href{Glossary\#attendant-risk}{Attendant Risks}
+that you might not know about: if you're poaching eggs for dinner, you
+might know that fresh eggs poach best. These are the ``Unknown
+Unknowns'' of
+\href{https://en.wikipedia.org/wiki/There_are_known_knowns}{Rumsfeld's
+model}.
 
 \begin{figure}
 \centering
@@ -776,18 +767,15 @@ dinner parties than you.
 
 How we evaluate the risks, and which ones we know about depends on our
 \textbf{knowledge} and \textbf{experience}, then. And that varies from
-person to person (or team to team). Lets call this our Internal Model,
-and it's something we build on and improve with experience (of
-organising dinner parties, amongst everything else).
+person to person (or team to team). Lets call this our Internal Model.
 
 \hypertarget{model-meets-reality}{%
 \subsection{Model Meets Reality}\label{model-meets-reality}}
 
 As the dinner party gets closer, we make our preparations, and the
-inadequacies of the Internal Model become apparent, and we learn what we
-didn't know. The Hidden Risks reveal themselves; things we were worried
-about may not materialise, things we thought would be minor risks turn
-out to be greater.
+inadequacies of the Internal Model reveal themselves; things we were
+worried about may not materialise, things we thought would be minor
+risks turn out to be greater.
 
 Our model is forced into contact with reality, and the model changes.
 
@@ -821,13 +809,10 @@ On to Development Process
 \hypertarget{complexity-risk}{%
 \chapter{Complexity Risk}\label{complexity-risk}}
 
-Complexity Risk are the risks to your project due to its underlying
-``complexity''. Over the next few chapters, we'll break down exactly
-what we mean by complexity, looking at Dependency Risk and Boundary Risk
-as two particular sub-types of Complexity Risk. However, in this
-chapter, we're going to be specifically focusing on \emph{code you
-write}: the size of your code-base, the number of modules, the
-interconnectedness of the modules and how well-factored the code is.
+Complexity Risk. However, in this chapter, we're going to be
+specifically focusing on \emph{code you write}: the size of your
+code-base, the number of modules, the interconnectedness of the modules
+and how well-factored the code is.
 
 \begin{figure}
 \centering
@@ -844,8 +829,8 @@ it's greatest.
 \section{Kolmogorov Complexity}\label{kolmogorov-complexity}}
 
 The standard Computer-Science definition of complexity, is
-\href{https://en.wikipedia.org/wiki/Kolmogorov_complexity}{Kolmogorov Complexity}.
-This is:
+\href{https://en.wikipedia.org/wiki/Kolmogorov_complexity}{Kolmogorov
+Complexity}. This is:
 
 \begin{quote}
 ``\ldots{}is the length of the shortest computer program (in a
@@ -946,10 +931,8 @@ is less readable than you might hope:
 \end{Shaded}
 
 So there is at some point a trade-off to be made between Complexity Risk
-and Communication Risk. This is a topic we'll address more in that
-chapter. But for now, it should be said that Communication Risk is about
-\emph{misunderstanding}: The more complex a piece of software is, the
-more difficulty users will have understanding it, and the more
+is about \emph{misunderstanding}: The more complex a piece of software
+is, the more difficulty users will have understanding it, and the more
 difficulty developers will have changing it.
 
 \hypertarget{connectivity}{%
@@ -959,8 +942,11 @@ A second, useful measure of complexity comes from graph theory, and that
 is the connectivity of a graph:
 
 \begin{quotation}
-"...the minimum number of elements (nodes or edges) that need to be removed to disconnect the remaining nodes from each other" 
-\sourceatright{\href{https://en.wikipedia.org/wiki/Connectivity_(graph_theory}{Connectivity, _Wikipedia_})}
+
+``\ldots{}the minimum number of elements (nodes or edges) that need to
+be removed to disconnect the remaining nodes from each other''
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Connectivity_(graph_theory)}{\textemdash  Connectivity, \emph{Wikipedia}}}
 \end{quotation}
 
 To see this in action, have a look at the below graph:
@@ -1086,7 +1072,8 @@ everywhere in our lives. Society, business, nature and even our bodies:
   \href{https://en.wikipedia.org/wiki/Mitochondrion}{Mitochondria}.
 \item
   \textbf{Cells} - such as blood cells, nerve cells, skin cells in the
-  \href{https://en.wikipedia.org/wiki/List_of_distinct_cell_types_in_the_adult_human_body}{Human Body}.
+  \href{https://en.wikipedia.org/wiki/List_of_distinct_cell_types_in_the_adult_human_body}{Human
+  Body}.
 \item
   \textbf{Organs} - like hearts livers, brains etc.
 \item
@@ -1099,8 +1086,11 @@ program that are ``far away'' in the hierarchy can be relied on not to
 affect you. This is somewhat akin to the \textbf{Principal Of Locality}:
 
 \begin{quotation}
-"Spatial locality refers to the use of data elements within relatively close storage locations." 
-\sourceatright{\href{https://en.wikipedia.org/wiki/Locality_of_reference}{Locality Of Reference, _Wikipedia_}}
+
+``Spatial locality refers to the use of data elements within relatively
+close storage locations.''
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Locality_of_reference}{\textemdash  Locality Of Reference, \emph{Wikipedia}}}
 \end{quotation}
 
 \hypertarget{cyclomatic-complexity}{%
@@ -1108,8 +1098,8 @@ affect you. This is somewhat akin to the \textbf{Principal Of Locality}:
 
 A variation on this graph connectivity metric is our third measure of
 complexity,
-\href{https://en.wikipedia.org/wiki/Cyclomatic_complexity}{Cyclomatic Complexity}.
-This is:
+\href{https://en.wikipedia.org/wiki/Cyclomatic_complexity}{Cyclomatic
+Complexity}. This is:
 
 \begin{verbatim}
 Cyclomatic Complexity = edges − vertices + 2P,
@@ -1125,9 +1115,8 @@ So, our first graph had a \textbf{Cyclomatic Complexity} of 7.
 
 Cyclomatic complexity is all about the number of different routes
 through the program. The more branches a program has, the greater it's
-cyclomatic complexity. Hence, this is a useful metric in Testing and
-Code Coverage: the more branches you have, the more tests you'll need to
-exercise them all.
+cyclomatic complexity. Hence, this is a useful metric in Testing: the
+more branches you have, the more tests you'll need to exercise them all.
 
 \hypertarget{more-abstraction}{%
 \section{More Abstraction}\label{more-abstraction}}
@@ -1151,8 +1140,7 @@ the fundamental tools we have in the fight against Complexity Risk.
 
 So, we've looked at some measures of software structure complexity, in
 order that we can say ``this is more complex than this''. However, we've
-not really said why complexity entails Risk. So let's address that now
-by looking at two analogies, Mass and Technical Debt.
+not really said why complexity entails Risk.
 
 \hypertarget{complexity-as-mass}{%
 \section{Complexity As Mass}\label{complexity-as-mass}}
@@ -1164,8 +1152,10 @@ The first way to look at complexity is as \textbf{Mass} or
 Newton's Second Law states:
 
 \begin{quotation}
-"F = _m_**a**,    ( Force = Mass x Acceleration )" 
-\sourceatright{\href{https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion}{Netwon's Laws Of Motion, _Wikipedia_}}
+
+``F = \emph{m}\textbf{a}, ( Force = Mass x Acceleration )''
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Newtons_laws_of_motion}{\textemdash  Netwon's Laws Of Motion, \emph{Wikipedia}}}
 \end{quotation}
 
 That is, in order to move your project \emph{somewhere new}, and make it
@@ -1175,8 +1165,11 @@ has, the more \textbf{Force} you'll need to move (accelerate) it.
 \textbf{Inertia} and \textbf{Mass} are equivalent concepts in physics:
 
 \begin{quotation}
-"mass is the quantitative or numerical measure of a body’s inertia, that is of its resistance to being accelerated".  
-\sourceatright{\href{https://en.wikipedia.org/wiki/Inertia#Mass_and_inertia}{Inertia, _Wikipedia_}}
+
+``mass is the quantitative or numerical measure of a body's inertia,
+that is of its resistance to being accelerated''.
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Inertia\#Mass_and_inertia}{\textemdash  Inertia, \emph{Wikipedia}}}
 \end{quotation}
 
 You could stop here and say that the more lines of code a project
@@ -1190,8 +1183,14 @@ real}, as discussed in this
 paraphrase:
 
 \begin{quotation}
-"Most of your mass you owe due to E=mc², you owe to the fact that your mass is packed with energy, because of the **interactions** between these quarks and gluon fluctuations in the gluon field... what we think of as ordinarily empty space... that turns out to be the thing that gives us most of our mass." 
-\sourceatright{\href{https://www.youtube.com/watch?annotation_id=annotation_3771848421&feature=iv&src_vid=Xo232kyTsO0&v=Ztc6QPNUqls}{Your Mass is NOT From the Higgs Boson, _Veritasium_}}
+
+``Most of your mass you owe due to E=mc², you owe to the fact that your
+mass is packed with energy, because of the \textbf{interactions} between
+these quarks and gluon fluctuations in the gluon field\ldots{} what we
+think of as ordinarily empty space\ldots{} that turns out to be the
+thing that gives us most of our mass.''
+
+\sourceatright{\href{https://www.youtube.com/watch?annotation_id=annotation_3771848421&feature=iv&src_vid=Xo232kyTsO0&v=Ztc6QPNUqls}{\textemdash  Your Mass is NOT From the Higgs Boson, \emph{Veritasium}}}
 \end{quotation}
 
 I'm not an expert in physics, \emph{at all}, and so there is every
@@ -1213,9 +1212,8 @@ Complexity Risk is really fundamental:
   Complexity Risk: like \textbf{mass}.
 \end{itemize}
 
-At a basic level, Complexity Risk heavily impacts on Schedule Risk: more
-complexity means you need more force to get things done, which takes
-longer.
+At a basic level, Complexity Risk: more complexity means you need more
+force to get things done, which takes longer.
 
 \hypertarget{technical-debt}{%
 \section{Technical Debt}\label{technical-debt}}
@@ -1224,28 +1222,31 @@ The most common way we talk about unnecessary complexity in software is
 as Technical Debt:
 
 \begin{quotation}
-"Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite... The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise." 
+
+``Shipping first time code is like going into debt. A little debt speeds
+development so long as it is paid back promptly with a rewrite\ldots{}
+The danger occurs when the debt is not repaid. Every minute spent on
+not-quite-right code counts as interest on that debt. Entire engineering
+organizations can be brought to a stand-still under the debt load of an
+unconsolidated implementation, object-oriented or otherwise.''
+
 \sourceatright{\href{https://en.wikipedia.org/wiki/Technical_debt}{Ward Cunningham, 1992}}
 \end{quotation}
 
 Building a perfect first-time solution is a waste, because perfection
-takes a long time. You're taking on more attendant Schedule Risk than
-necessary and Meeting Reality more slowly than you could.
+takes a long time. You're taking on more attendant Schedule Risk more
+slowly than you could.
 
 A quick-and-dirty, over-complex implementation mitigates the same
-Feature Risk and allows you to Meet Reality faster (see Prototyping).
+Feature Risk.
 
-But, having mitigated the Feature Risk, you are now carrying more
-Complexity Risk than you necessarily need, and it's time to think about
-how to Refactor the software to reduce this risk again.
+But, having mitigated the Feature Risk the software to reduce this risk
+again.
 
 \hypertarget{kitchen-analogy}{%
 \section{Kitchen Analogy}\label{kitchen-analogy}}
 
-It's often hard to make the case for minimizing Technical Debt: it often
-feels that there are more important priorities, especially when
-technical debt can be ``swept under the carpet'' and forgotten about
-until later. (See Discounting The Future.)
+It's often hard to make the case for minimizing Technical Debt
 
 One helpful analogy I have found is to imagine your code-base is a
 kitchen. After preparing a meal (i.e.~delivering the first
@@ -1278,8 +1279,8 @@ Engineering'', a distinction is made between:
   \textbf{Accident}: \emph{those difficulties that attend its production
   but are not inherent.}
 \item
-  \textbackslash{}href\{https://en.wikipedia.org/wiki/No\_Silver\_Bullet\}\{
-  Fred Brooks, \emph{No Silver Bullet}\}
+  \href{https://en.wikipedia.org/wiki/No_Silver_Bullet}{Fred Brooks,
+  \emph{No Silver Bullet}}
 \end{itemize}
 \end{quote}
 
@@ -1287,16 +1288,16 @@ The problem with this definition is that we are accepting features of
 our software as \emph{essential}.
 
 The \textbf{Risk-First} approach is that if you want to mitigate some
-Feature Risk then you have to pick up Complexity Risk as a result. But,
-that's a \emph{choice you get to make}.
+Feature Risk as a result. But, that's a \emph{choice you get to make}.
 
-Therefore,
-\href{https://en.wikipedia.org/wiki/Feature_creep}{Feature Creep} (or
-\href{https://en.wikipedia.org/wiki/Gold_plating_(software_engineering}{Gold Plating}))
-is a failure to observe this basic equation: instead of considering this
-trade off, you're building every feature possible. This has an impact on
-Complexity Risk, which in turn impacts Communication Risk and also
-Schedule Risk.
+Therefore, \href{https://en.wikipedia.org/wiki/Feature_creep}{Feature
+Creep} (or
+\href{https://en.wikipedia.org/wiki/Gold_plating_(software_engineering)}{Gold
+Plating}) is a failure to observe this basic equation: instead of
+considering this trade off, you're building every feature possible. This
+has an impact on \href{Complexity-Risk}{Complexity Risk}, which in turn
+impacts \href{Communication-Risk}{Communication Risk} and also
+\href{Schedule-Risk}{Schedule Risk}.
 
 Sometimes, feature-creep happens because either managers feel they need
 to keep their staff busy, or the staff decide on their own that they
@@ -1304,8 +1305,11 @@ need to keep themselves busy. But now, we can see that basically this
 boils down to bad risk management.
 
 \begin{quotation}
-"Perfection is Achieved Not When There Is Nothing More to Add, But When There Is Nothing Left to Take Away" 
-\sourceatright{Antoine de Saint-Exupery}
+
+``Perfection is Achieved Not When There Is Nothing More to Add, But When
+There Is Nothing Left to Take Away''
+
+\sourceatright{\href{}{Antoine de Saint-Exupery}}
 \end{quotation}
 
 \hypertarget{dead-end-risk}{%
@@ -1337,8 +1341,7 @@ At this point, you realise you're in a \textbf{Dead End}:
 \tightlist
 \item
   \textbf{Option 1}: You carry on making minor incremental improvements
-  to the accounting password system (carrying the extra Complexity Risk
-  of the duplicated functionality).
+  to the accounting password system (carrying the extra Complexity Risk.
 \item
   \textbf{Option 2}: You rip out the accounting password system, and
   merge in the Approvals system, surfacing new, hidden Complexity Risk
@@ -1354,19 +1357,20 @@ Sometimes, the path from your starting point to your goal on the Risk
 Landscape will take you to dead ends: places where the only way towards
 your destination is to lose something, and do it again another way.
 
-This is because you surface new Hidden Risk along the way. And the
-source of a lot of this hidden risk will be unexpected Complexity Risk
-in the solutions you choose. This happens a lot.
+This is because you surface new Hidden Risk in the solutions you choose.
+This happens a lot.
 
 \hypertarget{source-control}{%
 \subsection{Source Control}\label{source-control}}
 
-\href{https://en.wikipedia.org/wiki/Version_control}{Version Control Systems}
-like \href{https://en.wikipedia.org/wiki/Git}{Git} are a useful
-mitigation of Dead-End Risk, because it means you can \emph{go back} to
-the point where you made the bad decision and go a different way.
-Additionally, they provide you with backups against the often
-inadvertent Dead-End Risk of someone wiping the hard-disk.
+\href{https://en.wikipedia.org/wiki/Version_control}{Version Control
+Systems} like \href{https://en.wikipedia.org/wiki/Git}{Git} are a useful
+mitigation of \href{Complexity-Risk\#dead-end-risk}{Dead-End Risk},
+because it means you can \emph{go back} to the point where you made the
+bad decision and go a different way. Additionally, they provide you with
+backups against the often inadvertent
+\href{Complexity-Risk\#dead-end-risk}{Dead-End Risk} of someone wiping
+the hard-disk.
 
 \hypertarget{the-re-write}{%
 \subsection{The Re-Write}\label{the-re-write}}
@@ -1382,15 +1386,12 @@ mess. And here is the interesting observation: they are probably wrong.
 The reason that they think the old code is a mess is because of a
 cardinal, fundamental law of programming: \emph{It's harder to read code
 than to write it.} -
-\textbackslash{}href\{https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/\}\{Things
-You Should Never Do, Part 1, \emph{Joel Spolsky}\}
+\href{https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/}{Things
+You Should Never Do, Part 1, \emph{Joel Spolsky}}
 \end{quote}
 
 The problem that Joel is outlining here is that the developer mistakes
-hard-to-understand code for unnecessary Complexity Risk. Also, perhaps
-there is Agency Risk because the developer is doing something that is
-more useful to him than the project. We're going to return to this
-problem in again Communication Risk.
+hard-to-understand code for unnecessary Complexity Risk.
 
 \hypertarget{where-complexity-hides}{%
 \section{Where Complexity Hides}\label{where-complexity-hides}}
@@ -1420,17 +1421,23 @@ any means:
 Memory Management is another place where Complexity Risk hides:
 
 \begin{quotation}
-"Memory leaks are a common error in programming, especially when using languages that have no built in automatic garbage collection, such as C and C++." 
-\sourceatright{\href{https://en.wikipedia.org/wiki/Memory_leak}{Memory Leak, _Wikipedia_}}
+
+``Memory leaks are a common error in programming, especially when using
+languages that have no built in automatic garbage collection, such as C
+and C++.''
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Memory_leak}{\textemdash  Memory Leak, \emph{Wikipedia}}}
 \end{quotation}
 
-\href{https://en.wikipedia.org/wiki/Garbage_collection_(computer_science}{Garbage Collectors})
-(as found in Javascript or Java) offer you the deal that they will
-mitigate the Complexity Risk of you having to manage your own memory,
-but in return perhaps give you fewer guarantees about the
-\emph{performance} of your software. Again, there are times when you
-can't accommodate this Operational Risk, but these are rare and usually
-only affect a small portion of an entire software-system.
+\href{https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)}{Garbage
+Collectors} (as found in Javascript or Java) offer you the deal that
+they will mitigate the \href{Complexity-Risk}{Complexity Risk} of you
+having to manage your own memory, but in return perhaps give you fewer
+guarantees about the \emph{performance} of your software. Again, there
+are times when you can't accommodate this
+\href{Operational-Risk\#performance-risk}{Operational Risk}, but these
+are rare and usually only affect a small portion of an entire
+software-system.
 
 \hypertarget{protocols-and-types}{%
 \subsection{Protocols And Types}\label{protocols-and-types}}
@@ -1466,10 +1473,10 @@ say:
 
 Then, we can say that the protocol has changed. This problem is so
 common, so endemic to computing that we've had compilers that check
-function arguments
-\href{https://en.wikipedia.org/wiki/Compiler}{since the 1960's}. The
-point being is that it's totally possible for the compiler to warn you
-about when a protocol within the program has changed.
+function arguments \href{https://en.wikipedia.org/wiki/Compiler}{since
+the 1960's}. The point being is that it's totally possible for the
+compiler to warn you about when a protocol within the program has
+changed.
 
 The same is basically true of
 \href{https://en.wikipedia.org/wiki/Data_type}{Data Types}: whenever we
@@ -1490,17 +1497,14 @@ function b(in: BInput): string {
 }
 \end{verbatim}
 
-Now, of course, there is a tradeoff: we \emph{mitigate} Complexity Risk,
-because we define the protocols / types \emph{once only} in the program,
-and ensure that usages all match the specification. But the tradeoff is
-(as we can see in the \texttt{typescript} code) more
-\emph{finger-typing}, which some people argue counts as Schedule Risk.
+Now, of course, there is a tradeoff: we \emph{mitigate} Complexity Risk.
 
 Nevertheless, compilers and type-checking are so prevalent in software
 that clearly, you have to accept that in most cases, the trade-off has
 been worth it: Even languages like \href{https://clojure.org}{Clojure}
 have been retro-fitted with
-\href{https://github.com/clojure/core.typed/wiki/User-Guide}{type checkers}.
+\href{https://github.com/clojure/core.typed/wiki/User-Guide}{type
+checkers}.
 
 We're going to head into much more detail on this in the chapter on
 Protocol Risk.
@@ -1511,15 +1515,17 @@ Protocol Risk.
 So far, we've looked at a couple of definitions of complexity in terms
 of the codebase itself. However, in Computer Science there is a whole
 branch of complexity theory devoted to how the software \emph{runs},
-namely
-\href{https://en.wikipedia.org/wiki/Big_O_notation}{Big O Complexity}.
+namely \href{https://en.wikipedia.org/wiki/Big_O_notation}{Big O
+Complexity}.
 
 Once running, an algorithm or data structure will consume space or
-runtime dependent on it's characteristics. As with Garbage Collectors),
-these characteristics can introduce Performance Risk which can easily
-catch out the unwary. By and large, using off-the-shelf data structures
-and algorithms helps, but you still need to know their performance
-characteristics.
+runtime dependent on it's characteristics. As with
+\href{https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)}{Garbage
+Collectors}, these characteristics can introduce
+\href{Operational-Risk\#performance-risk}{Performance Risk} which can
+easily catch out the unwary. By and large, using off-the-shelf data
+structures and algorithms helps, but you still need to know their
+performance characteristics.
 
 The \href{http://bigocheatsheet.com}{Big O Cheatsheet} is a wonderful
 resource to investigate this further.
@@ -1537,13 +1543,15 @@ libraries), concurrency is \emph{still} hard to get right.
 in over-complicated concurrency designs: complexity issues are magnified
 by concurrency concerns, and are also hard to test and debug.
 
-Recently, languages such as Clojure have introduced
-\href{https://en.wikipedia.org/wiki/Persistent_data_structure}{persistent collections}
-to alleviate concurrency issues. The basic premise is that any time you
-want to \emph{change} the contents of a collection, you get given back a
-\emph{new collection}. So, any collection instance is immutable once
-created. The tradeoff is again attendant Performance Risk to mitigate
-Complexity Risk.
+Recently, languages such as \href{https://clojure.org}{Clojure} have
+introduced
+\href{https://en.wikipedia.org/wiki/Persistent_data_structure}{persistent
+collections} to alleviate concurrency issues. The basic premise is that
+any time you want to \emph{change} the contents of a collection, you get
+given back a \emph{new collection}. So, any collection instance is
+immutable once created. The tradeoff is again attendant
+\href{Operational-Risk\#performance-Risk}{Performance Risk} to mitigate
+\href{Complexity-Risk}{Complexity Risk}.
 
 An important lesson here is that choice of language can reduce
 complexity: and we'll come back to this in Software Dependency Risk.
@@ -1552,16 +1560,20 @@ complexity: and we'll come back to this in Software Dependency Risk.
 \subsection{Networking / Security}\label{networking-security}}
 
 The last area I want to touch on here is networking. There are plenty of
-Complexity Risk perils in \emph{anything} to do with networked code,
-chief amongst them being error handling and (again) protocol evolution.
+Complexity Risk.
 
 In the case of security considerations, exploits \emph{thrive} on the
 complexity of your code, and the weaknesses that occur because of it. In
 particular, Schneier's Law says, never implement your own crypto scheme:
 
 \begin{quotation}
-"Anyone, from the most clueless amateur to the best cryptographer, can create an algorithm that he himself can't break. It's not even hard. What is hard is creating an algorithm that no one else can break, even after years of analysis." 
-\sourceatright{\href{https://en.wikipedia.org/wiki/Bruce_Schneier#Cryptography}{Bruce Schneier, 1998} }
+
+``Anyone, from the most clueless amateur to the best cryptographer, can
+create an algorithm that he himself can't break. It's not even hard.
+What is hard is creating an algorithm that no one else can break, even
+after years of analysis.''
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Bruce_Schneier\#Cryptography}{Bruce Schneier, 1998} }
 \end{quotation}
 
 Luckily, most good languages include crypto libraries that you can
@@ -1632,7 +1644,9 @@ Bad to leave on the failure notes, let's talk about some successes.
 The problem with a developer answering a question such as:
 
 \begin{quotation}
+
 How long will it take to deliver X
+
 \end{quotation}
 
 Is the following:
@@ -1641,20 +1655,20 @@ Is the following:
 \tightlist
 \item
   The developer likely doesn't know what X is, and any description of it
-  is inadequate anyway (Invisibility Risk).
+  is inadequate anyway (Invisibility Risk.
 \item
   The developer has a less-than-complete understanding of the
-  environment he will be delivering X in (Complexity Risk).
+  environment he will be delivering X in (Complexity Risk.
 \item
   The developer has some vague ideas about how to do X, but he'll need
   to try out various approaches until he finds exactly the right one
-  (Boundary Risk).
+  (Boundary Risk.
 \item
   The developer has no idea what Hidden Risk will surface when he starts
   work on it.
 \item
   What will happen if he takes too long and misses the date by a
-  day/week/month/year. (Schedule Risk)
+  day/week/month/year. (Schedule Risk
 \end{itemize}
 
 \ldots{} and so on. So, his estimate is both wrong, and contingent on
@@ -1674,17 +1688,14 @@ what the most meaningful step towards achieving an objective would be in
 that time. By fixing the time period, we remove Schedule Risk from the
 equation.
 
-The problems with this are: - First, this is just Gradient Descent.
-Sometimes, you have to make a worse mess before you can make it better.
-Houses are not built by gradient descent, for example. (Although, this
-is a great technique for training machine learning systems). - Second,
-what happens after the two days? If you \emph{abandon the work}, then
-maybe you are giving up too early: a day or two more might have cracked
-it. If you undergo the planning process again, you might decide that
-another objective is more important. Constantly switching ideas all the
-time \emph{might not get you anywhere}. - Third, how to choose the time
-period? In Scrum it's betweeen tbd. But, lots of people are saying go
-smaller.
+The problems with this are: - First, this is just Gradient Descent. -
+Second, what happens after the two days? If you \emph{abandon the work},
+then maybe you are giving up too early: a day or two more might have
+cracked it. If you undergo the planning process again, you might decide
+that another objective is more important. Constantly switching ideas all
+the time \emph{might not get you anywhere}. - Third, how to choose the
+time period? In Scrum it's betweeen tbd. But, lots of people are saying
+go smaller.
 
 The choice of using gradient descent means that you have given up on
 {[}Grand Objectives{]}.

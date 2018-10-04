@@ -183,7 +183,7 @@ The first way to look at complexity is as **Mass** or **Inertia** :  a software 
 
 Newton's Second Law states:
 
-> "F = _m_**a**,    ( Force = Mass x Acceleration )" - [Netwon's Laws Of Motion, _Wikipedia_](https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion)
+> "F = _m_**a**,    ( Force = Mass x Acceleration )" - [Netwon's Laws Of Motion, _Wikipedia_](https://en.wikipedia.org/wiki/Newtons_laws_of_motion)
 
 That is, in order to move your project _somewhere new_, and make it do new things, you need to give it a push, and the more **Mass** it has, the more **Force** you'll need to move (accelerate) it.  
 
