@@ -211,7 +211,7 @@ At a basic level, [Complexity Risk](Complexity-Risk) heavily impacts on [Schedul
 
 The most common way we talk about unnecessary complexity in software is as [Technical Debt](Complexity-Risk#technical-debt):
 
-> "Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite... The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise." -- [Ward Cunningham, 1992](https://en.wikipedia.org/wiki/Technical_debt)
+> "Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite... The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise." - [Ward Cunningham, 1992](https://en.wikipedia.org/wiki/Technical_debt)
 
 Building a perfect first-time solution is a waste, because perfection takes a long time.  You're taking on more attendant [Schedule Risk](Schedule-Risk) than necessary and [Meeting Reality](Meeting-Reality) more slowly than you could.
 
@@ -237,7 +237,7 @@ In Brooks' essay "No Silver Bullet - Essence and Accident in Software Engineerin
 
 > - **Essence**:  _the difficulties inherent in the nature of the software._
 > - **Accident**: _those difficulties that attend its production but are not inherent._
->   -  [ Fred Brooks, _No Silver Bullet_](https://en.wikipedia.org/wiki/No_Silver_Bullet)
+> - [ Fred Brooks, _No Silver Bullet_](https://en.wikipedia.org/wiki/No_Silver_Bullet)
 
 The problem with this definition is that we are accepting features of our software as _essential_.  
 
@@ -247,7 +247,7 @@ Therefore, [Feature Creep](https://en.wikipedia.org/wiki/Feature_creep) (or [Gol
 
 Sometimes, feature-creep happens because either managers feel they need to keep their staff busy, or the staff decide on their own that they need to [keep themselves busy](Agency-Risk).  But now, we can see that basically this boils down to bad risk management.  
 
-> "Perfection is Achieved Not When There Is Nothing More to Add, But When There Is Nothing Left to Take Away" - Antoine de Saint-Exupery
+> "Perfection is Achieved Not When There Is Nothing More to Add, But When There Is Nothing Left to Take Away" - [Antoine de Saint-Exupery]()
 
 ## Dead-End Risk
 
@@ -277,8 +277,7 @@ This is because you surface new [Hidden Risk](Glossary#hidden-risk) along the wa
 
 **Option 3**, Rewriting code or a whole project can seem like a way to mitigate [Complexity Risk](Complexity-Risk), but it usually doesn't work out too well.  As Joel Spolsky says:
 
-> There’s a subtle reason that programmers always want to throw away the code and start over. The reason is that they think the old code is a mess. And here is the interesting observation: they are probably wrong. The reason that they think the old code is a mess is because of a cardinal, fundamental law of programming:  
-> _It’s harder to read code than to write it._    - [Things You Should Never Do, Part 1, _Joel Spolsky_](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)
+> There’s a subtle reason that programmers always want to throw away the code and start over. The reason is that they think the old code is a mess. And here is the interesting observation: they are probably wrong. The reason that they think the old code is a mess is because of a cardinal, fundamental law of programming:  _It’s harder to read code than to write it._    - [Things You Should Never Do, Part 1, _Joel Spolsky_](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)
 
 The problem that Joel is outlining here is that the developer mistakes hard-to-understand code for unnecessary [Complexity Risk](Complexity-Risk).  Also, perhaps there is [Agency Risk](Agency-Risk) because the developer is doing something that is more useful to him than the project.    We're going to return to this problem in again [Communication Risk](Communication-Risk#reading-code).
 
