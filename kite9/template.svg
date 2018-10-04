@@ -56,6 +56,34 @@
       <contents />
     </svg:g>
   </template>
+  
+  <template id="goal">
+    <back style='kite9-usage: decal; kite9-type: svg; '>
+      <svg:polyline points='10 10, #{$width - 40} 10, #{$width - 10} #{$height div 2}, #{$width - 40} #{$height - 10}, 10 #{$height - 10}' style='fill: black; stroke-linejoin: round; stroke: black; stroke-width: 20pt;' />
+    </back>
+    <front style="kite9-usage: regular; kite9-type: container; kite9-layout: down;">
+      <goal-code>GOAL</goal-code>
+      <goal-name>
+      	<contents />
+      </goal-name>
+    </front>
+  </template>
+  
+  <template id='goal-code'>
+    <svg:g class="goal-code-label-front">
+      <front style="kite9-type: text; ">
+        <contents />
+      </front>
+    </svg:g>
+  </template>
+  
+  <template id='goal-name'>
+    <svg:g class="goal-label-front">
+      <front style="kite9-type: text; ">
+        <contents />
+      </front>
+    </svg:g>
+  </template>
 
   <template id="glyph-label-text">
     <svg:g class="glyph-label-text">

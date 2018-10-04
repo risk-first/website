@@ -1,5 +1,5 @@
 % Page setup
-\documentclass[12pt]{memoir}
+\documentclass[11pt]{memoir}
 \setstocksize{9.69in}{7.44in}
 \settrimmedsize{\stockheight}{\stockwidth}{*}
 \setlrmarginsandblock{3.5cm}{2.5cm}{*}
@@ -33,9 +33,11 @@
 \usepackage{rotating}
 \usepackage[margin=10pt,font=small,labelfont=bf]{caption}
 \captionsetup[figure]{labelfont={bf,it},textfont={bf,it}}
+ \setfloatlocations{figure}{thpb}
 
 
 % Links
+\usepackage[hyphens]{url}
 \usepackage[unicode=true]{hyperref}
 \hypersetup{breaklinks=true,
             bookmarks=true,
@@ -62,6 +64,8 @@
 \def\fnum@table{\tablename~\thetable}
 \makeatother
 \usepackage{rotating}
+ \setfloatlocations{table}{thpb}
+
 
 % Code Sections
 \usepackage{listings}
@@ -75,6 +79,7 @@ $endif$
 %Links as Notes
 \DeclareRobustCommand{\href}[2]{#2\footnote{\url{#1}}}
  \renewcommand{\footnotesize}{\fontsize{6.5pt}{8.5pt}\selectfont}
+
 
 %Sections
 \chapterstyle{veelo}

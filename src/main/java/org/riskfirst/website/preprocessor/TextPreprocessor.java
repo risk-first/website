@@ -40,23 +40,53 @@ public class TextPreprocessor {
 		while (line != null) {
 			if (line.trim().equals("```include")) {
 				processIncludes(br, origin);
+			} else if (line.trim().startsWith("> \"")) {
+				outputQuote(line, lineNo);
 			} else if (line.trim().startsWith("<!--latex")) {
-				line = line.replaceAll("<!--latex", "").replaceAll("-->", "");
-				System.out.println("```{=latex}");
-				System.out.println(line);
-				System.out.println("```");
+				outputRawLatex(line);
 			} else {
 				line = line.replaceAll("\\s+$", "");	// trim end of line
 				line = line.replaceAll(" section", " chapter"); // section -> chapter
-				processLinks(line, TextPreprocessor::processImageLink, lineNo, System.out::print);
+				processLinks(line, TextPreprocessor::processLink, lineNo, System.out::print);
 			}
 			System.out.println("");
 			line = br.readLine();
 			lineNo++;
 		}
 	}
+
+	public static void outputRawLatex(String line) {
+		line = line.replaceAll("<!--latex", "").replaceAll("-->", "");
+		System.out.println("```{=latex}");
+		System.out.println(line);
+		System.out.println("```");
+	}
+
+	public static void outputQuote(String line, int lineNo) {
+		System.out.println("```{=latex}");
+		System.out.println("\\begin{quotation}");
+		System.out.println("```");
+		int qs = line.lastIndexOf("- [");
+		String quotation, source;
+		if (qs > -1) {
+			quotation = line.substring(2, qs); 
+			source = line.substring(qs+2);
+		} else {
+			quotation = line.substring(3, line.lastIndexOf("\""));
+			source = null;
+		}
+		processLinks(quotation, TextPreprocessor::processLink, lineNo, System.out::println);
+		System.out.println("```{=latex}");
+		if (source != null) {
+			System.out.print("\\sourceatright{");
+			processLinks(source.replace("\n", ""), TextPreprocessor::latexSourceLink, lineNo, System.out::print);
+			System.out.println("}");
+		}
+		System.out.println("\\end{quotation}");
+		System.out.println("```");
+	}
 	
-	static Pattern p = Pattern.compile("(\\!)?\\[([^\\]]*?)\\]\\((.*?)\\)(\\{(.*?)\\})?");
+	static Pattern p = Pattern.compile("(\\!)?\\[([^\\]]*?)\\]\\((.*)\\)(\\{(.*?)\\})?");
 	
 	public interface LinkProcessor {
 		
@@ -67,6 +97,13 @@ public class TextPreprocessor {
 	public interface TextOutputter {
 		
 		void process(String s);
+	}
+	
+	private static void latexSourceLink(String link, String text, String url, boolean image, int lineNo) {
+		if (text.indexOf("_") > -1) {
+			text = "\\textemdash  " + text.substring(0, text.indexOf("_"))+"\\emph{"+text.substring(text.indexOf("_")+1, text.lastIndexOf("_"))+"}";
+		}
+		System.out.print("\\href{"+url.replace("#", "\\#")+"}{"+text+"}");
 	}
 
 	public static void processLinks(String line, LinkProcessor lp, int lineNo, TextOutputter tp) {
@@ -100,7 +137,7 @@ public class TextPreprocessor {
 		tp.process(line.substring(place));
 	}
 
-	private static void processImageLink(String link, String text, String url, boolean image, int lineNo) {
+	private static void processLink(String link, String text, String url, boolean image, int lineNo) {
 		
 		if (!isExternal(url)) {
 			if (!isImage(url)) {
@@ -143,7 +180,7 @@ public class TextPreprocessor {
 			System.out.print(text);
 		} else {
 			seenUrls.add(url);
-			System.out.print(link.trim());
+			System.out.print(link);
 		}
 	}
 
