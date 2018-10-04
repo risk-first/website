@@ -163,7 +163,7 @@ Because this is _Net_ Present Risk, we can also use it to make decisions about w
 
 Which is the best deal?
 
-Well, under the 6% regime, only Risk **A** is worth mitigating, because you spend £20 today to get rid of #40 of risk (today).  The NPR is positive at around £20, whereas for **B** and **C** mitigations it's under water.
+Well, under the 6% regime, only Risk **A** is worth mitigating, because you spend £20 today to get rid of £40 of risk (today).  The NPR is positive at around £20, whereas for **B** and **C** mitigations it's under water.
 
 But, under a 3% regime, risk **A** and **B** are _both_ worth mitigating.
 
@@ -176,7 +176,7 @@ I have worked in teams sometimes where the blinkers go down, and the only thing 
 
 Risk B is almost irrelevant under this regime, as this graph shows:
 
-[Net Present Risk, 60% Discount Rate](images/numbers/npr3.png)
+![Net Present Risk, 60% Discount Rate](images/numbers/npr3.png)
 
 Why do things like this happen?  Often, the people involved are under incredible job-stress:  usually they are threatened with the sack on a daily basis, and therefore feel they have to react.  Publically-listed companies also often apply short-term focus, because they only care about the _next annual report_, which limits their horizons and ability to consider future risk.
 
