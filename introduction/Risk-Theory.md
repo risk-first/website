@@ -129,7 +129,7 @@ If we can view software delivery from the point of view of _value_, then why can
  - How valuable the work is (Importance)
  - How soon it is needed (Urgency)
 
-[A basic "Eisenhower box" to help evaluate urgency and importance. Items may be placed at more precise points within each quadrant.  - [Time Management, _Wikipedia_](https://en.wikipedia.org/wiki/Time_management)](images/pd/220px-MerrillCoveyMatrix.png)
+![A basic "Eisenhower box" to help evaluate urgency and importance. Items may be placed at more precise points within each quadrant.  - [Time Management, _Wikipedia_](https://en.wikipedia.org/wiki/Time_management)](images/pd/220px-MerrillCoveyMatrix.png)
 
 Here, we're considering a synthesis of both _time_ and _value_.  But [Net Present Value](https://en.wikipedia.org/wiki/Net_present_value) allows us to discount value in the future, which offers us a way to reconcile these two variables:
 
