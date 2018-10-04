@@ -147,11 +147,11 @@ Let's look at a quick example to see how this could work out.  Let's say you had
 
 Which has the biggest NPR?  Well, it depends on the discount rate that you apply.  Let's assume we are discounting at 6% per year.  A graph of the discounted risks looks like this:
 
-[Net Present Risk, 6% Discount Rate](images/numbers/npr1.png)
+![Net Present Risk, 6% Discount Rate](images/numbers/npr1.png)
 
 On this basis, the biggest risk is **B**, at about £45.  If we _reduce_ the discount factor to 3%, we get a different result:
 
-[Net Present Risk, 3% Discount Rate](images/numbers/npr2.png)
+![Net Present Risk, 3% Discount Rate](images/numbers/npr2.png)
 
 Now, risk **C** is bigger.  
 
