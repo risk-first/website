@@ -131,9 +131,9 @@ If we can view software delivery from the point of view of _value_, then why can
 
 ![A basic "Eisenhower box" to help evaluate urgency and importance. Items may be placed at more precise points within each quadrant.  - [Time Management, _Wikipedia_](https://en.wikipedia.org/wiki/Time_management)](images/pd/220px-MerrillCoveyMatrix.png)
 
-Here, we're considering a synthesis of both _time_ and _value_.  But [Net Present Value](https://en.wikipedia.org/wiki/Net_present_value) allows us to discount value in the future, which offers us a way to reconcile these two variables:
+Here, we're considering a synthesis of both _time_ and _value_.  But [Net Present Value](https://en.wikipedia.org/wiki/Net_present_value) allows us to discount value in the future, which offers us a way to reconcile these two variables.  In the diagram, you can see two future payments, one of £100 due in one year, one of £150 due in 10 years.  By discounting at a given rate (here at 6% per year) we can compare their worth _now_.
 
-![Two future payments, one of £100 due in one year, one of £150 due in 10 years.  By discounting at a given rate (here at 6% per year) we can compare their worth now](images/numbers/npv.png)
+![Net Present Value Discounting](images/numbers/npv.png)
 
 Can we do the same thing with risk?  Let's introduce the concept of [Net Present Risk](Risk-Theory#Net-Present-Risk), or NPR:
 
