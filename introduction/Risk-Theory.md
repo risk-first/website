@@ -1,4 +1,4 @@
-![Draft](images/state/draft.png)
+![For Review](images/state/for_review.png)
 
 Here, I am going to recap on some pre-existing knowledge about risk, generally, in order to set the scene for the next section on [Meeting Reality](Meeting-Reality).  
 
@@ -93,8 +93,6 @@ Another test of a methodology is that it shouldn't fall down when applied at dif
 
 Some methodologies are designed for certain scales:  Extreme Programming is designed for small, co-located teams.  And, that's useful.  But the fact it doesn't scale tells us something about it:  chiefly, that it considers certain _kinds_ of risk, while ignoring others.  At small scales, that works ok, but at larger scales, the bigger risks increase too fast for it to work.
 
-tbd.
-
 So ideally, a methodology should be applicable at _any_ scale:  
  - A single class or function
  - A collection of functions, or a library
@@ -115,32 +113,32 @@ If the methodology _fails at a particular scale_, this tells you something about
 
 ## Speed
 
-For example, in [Rapid Development]() by Steve McConnell we have the following diagram:
+For example, in [Rapid Development]( http://a.co/d/ddWGTB2) by Steve McConnell we have the following diagram:
 
-![Rapid Development Pillars- From Steve McConnell](images/rapid_development_pillars.png)  
-
-tbd. redraw this.
+![Pillars, From Rapid Development By Steve McConnell](images/kite9/rapid_development_pillars.png)  
 
 And, this is _fine_, McConnel is structuring the process from the perspective of _delivering as quickly as possible_.  However, here, I want to turn this on it's head.  Exploring Software Development from a risk-first perspective is an under-explored technique, and I believe it offers some useful insights.   So the aim here is to present the case for viewing software development like this:
 
-tbd.  risk-first diagram. 
- 
+![Pillars, re-arranged](images/kite9/rapid_development_pillars2.png)
+
+As we will see, _Speed_ (or [Schedule Risk](Schedule-Risk) as we will term it) is one risk amongst others that need to be considered from a risk-management perspective.  There's no point in prioritising _speed_ if the software fails in production due to unaddressed [Operational Risk](Operational-Risk), and irreparably damages trust in the product.
+
 ## Net Present Risk
  
-If we can view software delivery from the point of view of _value_, then why can't we apply the same tools to [Risk]() too?  In order to do this, let's review "Eisenhower's Box" model.  This considers two variables:
+If we can view software delivery from the point of view of _value_, then why can't we apply the same tools to [Risk](Glossary#Risk) too?  In order to do this, let's review "Eisenhower's Box" model.  This considers two variables:
 
  - How valuable the work is (Importance)
  - How soon it is needed (Urgency)
 
-tbd.  image from wikipedia.  text from wikipedia.
+[A basic "Eisenhower box" to help evaluate urgency and importance. Items may be placed at more precise points within each quadrant.  - [Time Management, _Wikipedia_](https://en.wikipedia.org/wiki/Time_management)](images/pd/220px-MerrillCoveyMatrix.png)
 
-Here, we're considering a synthesis of both _time_ and _value_.  But [Net Present Value]() allows us to discount value in the future, which offers us a way to reconcile these two variables:
+Here, we're considering a synthesis of both _time_ and _value_.  But [Net Present Value](https://en.wikipedia.org/wiki/Net_present_value) allows us to discount value in the future, which offers us a way to reconcile these two variables:
 
-chart of discounting into the future tbd.
+![Two future payments, one of £100 due in one year, one of £150 due in 10 years.  By discounting at a given rate (here at 6% per year) we can compare their worth now](images/numbers/npv.png)
 
-Let's do the same thing with risk?  Let's introduce the concept of [Net Present Risk](), or NPR:
+Can we do the same thing with risk?  Let's introduce the concept of [Net Present Risk](Risk-Theory#Net-Present-Risk), or NPR:
 
-> Net Present Risk is tbd.
+> Net Present Risk is the _Importance_ of a Future risk, discounted to a common level of _Urgency_.
 
 Let's look at a quick example to see how this could work out.  Let's say you had the following 3 risks:
 
@@ -150,11 +148,11 @@ Let's look at a quick example to see how this could work out.  Let's say you had
 
 Which has the biggest NPR?  Well, it depends on the discount rate that you apply.  Let's assume we are discounting at 6% per year.  A graph of the discounted risks looks like this:
 
-tbd, see numbers
+[Net Present Risk, 6% Discount Rate](images/numbers/npr1.png)
 
-On this basis, the biggest risk is **B**, at about #45.  If we _reduce_ the discount factor to 3%, we get a different result:
+On this basis, the biggest risk is **B**, at about £45.  If we _reduce_ the discount factor to 3%, we get a different result:
 
-tbd, see numbers.
+[Net Present Risk, 3% Discount Rate](images/numbers/npr2.png)
 
 Now, risk **C** is bigger.  
 
@@ -168,25 +166,24 @@ Which is the best deal?
 
 Well, under the 6% regime, only Risk **A** is worth mitigating, because you spend £20 today to get rid of #40 of risk (today).  The NPR is positive at around £20, whereas for **B** and **C** mitigations it's under water.
 
-tbd.
-
-Under a 3% regime, risk **A** and **B** are _both_ worth mitigating, as you can see in this graph:
+But, under a 3% regime, risk **A** and **B** are _both_ worth mitigating.
 
 ## Discounting the Future To Zero
 
-I have worked in teams sometimes where the blinkers go down, and the only thing that matters is _now_.    They may apply a rate of 60% per-day, which means that anything with a horizon over a week is irrelevant.   Regimes of such [hyperinflation]() are a sure sign that something has _really broken down_ within a project.  Consider in this case a Discount Factor of 60% per day, and the following risks:
+I have worked in teams sometimes where the blinkers go down, and the only thing that matters is _now_.    They may apply a rate of 60% per-day, which means that anything with a horizon over a week is irrelevant.   Regimes of such [hyperinflation](https://en.wikipedia.org/wiki/Hyperinflation) are a sure sign that something has _really broken down_ within a project.  Consider in this case a Discount Factor of 60% per day, and the following risks:
 
 - Risk A: £80 cost, happening _tomorrow_
 - Risk B: £500 cost, happening in _5 days_.  
 
 Risk B is almost irrelevant under this regime, as this graph shows:
 
-tbd.
+[Net Present Risk, 60% Discount Rate](images/numbers/npr3.png)
 
-Why do things like this happen?  Often, the people involved are under incredible job-stress:  usually they are threatened with the sack on a daily basis, and therefore feel they have to react.  For publically-listed companies you can also 
+Why do things like this happen?  Often, the people involved are under incredible job-stress:  usually they are threatened with the sack on a daily basis, and therefore feel they have to react.  Publically-listed companies also often apply short-term focus, because they only care about the _next annual report_, which limits their horizons and ability to consider future risk.
 
-- more pressure, heavier discounting
-pooh bear procrastination
+Under these circumstances, we often see _Pooh-Bear Procrastination_:
+
+> "Here is Edward Bear coming downstairs now, bump, bump, bump, on the back of his head, behind Christopher Robin. It is, as far as he knows, the only way of coming downstairs, but sometimes he feels that there really is another way…if only he could stop bumping for a moment and think of it!" - [A. A. Milne, _Winne-the-Pooh](http://amzn.eu/d/acJ5a2j)
 
 ## Is This Scientific?
 
