@@ -101,7 +101,9 @@ So ideally, a methodology should be applicable at _any_ scale:
 
 If the methodology _fails at a particular scale_, this tells you something about the risks that the methodology isn't addressing.  It's fine to have methodologies that work at different scales, and on different problems.   One of the things that I am exploring with Risk First is trying to place methodologies and practices within a framework to say _when_ they are applicable.
 
-## Value
+## Value vs Speed
+
+### Value
 
 "Upside Risk" isn't a commonly used term:  industry tends to prefer "value", as in "Is this a value-add project?".  There is plenty of theory surrounding **Value**, such as Porter's [Value Chain]() and [Net Present Value]().  This is all fine so long as we remember:
 
@@ -110,7 +112,7 @@ If the methodology _fails at a particular scale_, this tells you something about
  
 **Risk-First** is a particular _view_ on reality.  It's not the only one.  However, I am going to try and make the case that it's an underutilized one that has much to offer us.
 
-## Speed
+### Speed
 
 For example, in [Rapid Development]( http://a.co/d/ddWGTB2) by Steve McConnell we have the following diagram:
 
@@ -122,7 +124,7 @@ And, this is _fine_, McConnel is structuring the process from the perspective of
 
 As we will see, _Speed_ (or [Schedule Risk](Schedule-Risk) as we will term it) is one risk amongst others that need to be considered from a risk-management perspective.  There's no point in prioritising _speed_ if the software fails in production due to unaddressed [Operational Risk](Operational-Risk), and irreparably damages trust in the product.
 
-## Net Present Risk
+### Eisenhower's Box
  
 If we can view software delivery from the point of view of _value_, then why can't we apply the same tools to [Risk](Glossary#Risk) too?  In order to do this, let's review "Eisenhower's Box" model.  This considers two variables:
 
@@ -134,6 +136,8 @@ If we can view software delivery from the point of view of _value_, then why can
 Here, we're considering a synthesis of both _time_ and _value_.  But [Net Present Value](https://en.wikipedia.org/wiki/Net_present_value) allows us to discount value in the future, which offers us a way to reconcile these two variables.  In the diagram, you can see two future payments, one of £100 due in one year, one of £150 due in 10 years.  By discounting at a given rate (here at 6% per year) we can compare their worth _now_.
 
 ![Net Present Value Discounting](images/numbers/npv.png)
+
+## Net Present Risk
 
 Can we do the same thing with risk?  Let's introduce the concept of [Net Present Risk](Risk-Theory#Net-Present-Risk), or NPR:
 
@@ -167,7 +171,7 @@ Well, under the 6% regime, only Risk **A** is worth mitigating, because you spen
 
 But, under a 3% regime, risk **A** and **B** are _both_ worth mitigating.
 
-## Discounting the Future To Zero
+### Discounting the Future To Zero
 
 I have worked in teams sometimes where the blinkers go down, and the only thing that matters is _now_.    They may apply a rate of 60% per-day, which means that anything with a horizon over a week is irrelevant.   Regimes of such [hyperinflation](https://en.wikipedia.org/wiki/Hyperinflation) are a sure sign that something has _really broken down_ within a project.  Consider in this case a Discount Factor of 60% per day, and the following risks:
 
