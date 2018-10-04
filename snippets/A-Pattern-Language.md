@@ -16,7 +16,7 @@ Does that diminish it?   If you have visited the [TVTropes](https://tvtropes.org
 
 Is it scientific?  No.  Is it correct?  Almost certainly.  TVTropes is a set of _empirical patterns_ for how stories on TV and other media work.  It's really useful, and a lot of fun.  (Warning:  it's also incredibly addictive).
 
-In the same way, "Design Patterns: Elements of Reusable Object-Oriented Software", is a book detailing patterns of _structure_ within Object-Oriented programming, such as:
+In the same way, "[Design Patterns: Elements of Reusable Object-Oriented Software](http://amzn.eu/d/3cOwTkH)", is a book detailing patterns of _structure_ within Object-Oriented programming, such as:
 
 > "[The] Adapter [pattern] allows classes with incompatible interfaces to work together by wrapping its own interface around that of an already existing class..." - [Design Patterns, _Wikipedia_](https://en.wikipedia.org/wiki/Design_Patterns)
 
