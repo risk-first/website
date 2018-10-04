@@ -18,24 +18,22 @@ If we want to take the right actions, we need to have a good [Internal Model](Gl
 
 Sometimes, we will know that our model is deficient, and our time should be spend _improving_ it, perhaps by talking to our clients, or the support staff, or other developers, or reading.  
 
-But let's say for example, today our [Goal In Mind](Glossary#Goal-In-Mind) is to grow our user base.  
+But let's say for example, today our [Goal In Mind](Glossary#Goal-In-Mind) is to grow our user base through an advertising campaign around a new feature. 
 
-tbd. image of this goal.
+![Our Goal](images/generated/goal.png)
 
 ## Attendant Risks
 
 What are the [Attendant Risks](Glossary#attendant-risk) that come with that goal?  Here are some to get us started:
 
-1. The users can’t access the system
-2. The data gets lost, stolen. 
-3. The data is wrong or corrupted
-4. There are bugs that prevent the functionality working
-5. The functionality isn’t there that the user needs ([Feature Risk](Feature-Risk)).
-6. Our [Internal Model](Glossary#Internal-Model) of the market is poor, and we could be building the wrong thing.
+1. We target the wrong people, and waste money.
+2. The system can't cope with the amount of traffic. 
+3. There are bugs that prevent the new features working
+4. The functionality of the new features isn’t there that the user needs.
 
 I'm sure you can think of some more. 
 
-tbd. image 
+![Our Goal, With Attendant Risks](images/generated/goal2.png)
 
 ## Evaluating The Risks
 
