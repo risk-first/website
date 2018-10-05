@@ -109,7 +109,7 @@ Is where our feature meets another reality: _actual users_.   I think you can se
 
 ![UAT - putting tame users in front of your software is better than real ones, where the risk is higher ](images/generated/development_process_uat.png)
 
- - [Taking Action](Glossary#taking action) is the _only_ way to create change in the world.
+ - [Taking Action](Glossary#taking_action) is the _only_ way to create change in the world.
  - It's also the only way we can _learn_ about the world, adding to our [Internal Model](Glossary#internal-model).  In this case, we discover the user's difficulty in finding the feature.
 
 ## Observations
