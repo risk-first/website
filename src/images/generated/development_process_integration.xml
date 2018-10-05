@@ -1,158 +1,49 @@
 <?xml version="1.0"?>
-<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink'  zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
   <svg:defs>
     <svg:style type="text/css"> @import url("risk.css");</svg:style>
-  </svg:defs><diagram xmlns="http://www.kite9.org/schema/adl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="diagram-122" name="Models vs Reality">
- 
- 
- <context id="id_3" bordered="true">
-  
-  
-  <glyph id="id_0">
-   
-   
-   <stereotype/>
-   <label>Goal In Mind</label>
-   <text-lines>
-    <text-line id="auto:49159">
-     
-     
-     <text>Implement Feature X</text>
-     <symbols/>
-    </text-line>
-    <text-line id="auto:49160">
-     
-     
-     <text>Attendant Risks</text>
-     <symbols/>
-    </text-line>
-    <text-line id="auto:49161">
-     
-     
-     <text>Evaluation of Risks</text>
-     <symbols/>
-    </text-line>
-   </text-lines>
-   <symbols/>
-  </glyph>
-  <glyph id="id_1">
-   
-   
-   <stereotype/>
-   <label>Action</label>
-   <text-lines>
-    <text-line id="auto:94917">
-     
-     
-     <text>Integrate Code</text>
-     <symbols/>
-    </text-line>
-   </text-lines>
-   <symbols/>
-  </glyph>
-  <label xsi:type="text-line" id="id_12">
-   
-   
-   <text>Internal Model</text>
-   <symbols/>
-  </label>
- </context>
- <glyph id="id_5">
-  
-  
-  <stereotype/>
-  <label>Reality</label>
-  <text-lines>
-   <text-line id="auto:69319">
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="diagram-116"
+    name="Development Process 1" style="kite9-layout: right;">
+
+
+    <group style="kite9-layout: down">
     
+      <context id="c" bordered="true">
+  
+        <risk id="id_0" class="goal">Feature X</risk>     
+        <risk class="mitigated">Developer 
+        Misimplementation</risk>
+        <risk class="attendant">Duplicates 
+        Functionality</risk>
+        
+  
+        <label xsi:type="text-line" id="id_16">
+          <text>Internal Model</text>
+          <symbols />
+        </label>
+      </context>     
+
+      <group id="reality" style="kite9-layout: right">
+        <artifact>Code</artifact>
+      </group>
+      
+    </group>
+   
+    <action>Integration</action>
     
-    <text>(codebase)</text>
-    <symbols/>
-   </text-line>
-  </text-lines>
-  <symbols/>
- </glyph>
- <arrow id="id_19">
-  
-  
-  <label>Integration</label>
- </arrow>
- <glyph id="id_2">
-  
-  
-  <stereotype/>
-  <label>Outcomes</label>
-  <text-lines>
-   <text-line id="auto:49547">
-    
-    
-    <text>Feature X (Integrated Code)</text>
-    <symbols/>
-   </text-line>
-  </text-lines>
-  <symbols/>
- </glyph>
- <glyph id="id_11">
-  
-  
-  <stereotype/>
-  <label>Revealed Hidden Risks</label>
-  <text-lines>
-   <text-line id="auto:49737">
-    
-    
-    <text>Breaks Existing Feature</text>
-    <symbols/>
-   </text-line>
-  </text-lines>
-  <symbols/>
- </glyph>
- 
- 
-  <link id="id_4" shape="NORMAL" style="" drawDirection="DOWN">
-   
-   <from xsi:type="glyph" reference="id_0"/>
-   <to xsi:type="glyph" reference="id_1"/>
+    <group style="kite9-layout: down">
 
-  </link>
-  <link id="id_6" shape="DOTTED" style="">
-   
-   <from xsi:type="glyph" reference="id_5"/>
-   <to xsi:type="glyph" reference="id_0"/>
+      <context id="d">
+        <risk class="hidden">Breaks Feature Y</risk>
+        <label xsi:type="text-line" id="4">
+          <text>Hidden Risks</text>
+          <symbols />
+        </label>
+      </context>
+      
+      <artifact>Integrated Code</artifact>
+    </group>
 
-
-  </link>
-  <link id="id_4.1" shape="NORMAL" style="" drawDirection="RIGHT">
-   
-   <from xsi:type="glyph" reference="id_1" class="circle"/>
-   <to xsi:type="arrow" reference="id_19"/>
-
-
-  </link>
-  <link id="id_7" shape="NORMAL" style="" drawDirection="DOWN">
-   
-   <from xsi:type="glyph" reference="id_5" class="circle"/>
-   <to xsi:type="arrow" reference="id_19"/>
-
-
-  </link>
-  <link id="id_23" shape="NORMAL" style="">
-   
-   <from xsi:type="arrow" reference="id_19"/>
-   <to xsi:type="glyph" reference="id_11"/>
-
-
-  </link>
-  <link id="id_22" shape="NORMAL" style="" drawDirection="RIGHT">
-   
-   <from xsi:type="arrow" reference="id_19"/>
-   <to xsi:type="glyph" reference="id_2"/>
-
-
-  </link>
-  <link id="id_16" class="invisible" drawDirection="LEFT">
-   
-   <from xsi:type="glyph" reference="id_11"/>
-   <to xsi:type="glyph" reference="id_2"/>
-  </link>
-  </diagram></svg:svg>
+  </diagram>
+</svg:svg>
