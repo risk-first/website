@@ -10,6 +10,8 @@ Lets for a moment forget about software completely, and think about _any endeavo
 
 Now, in this endeavour, we want to be successful.  That is to say, we have a [Goal In Mind](Glossary#Goal-In-Mind):  we want our friends to go home satisfied after a decent meal, and not to feel hungry.   As a bonus, we might also want to spend time talking with them before and during the meal.  So, now to achieve our [Goal In Mind](Glossary#Goal-In-Mind) we *probably* have to do some tasks.  
 
+Since our goal only exists _in our head_, we can say it is part of our [Internal Model](Glossary#Internal-model) of the world.  That is, the model we have of reality.  This model extends to _predicting what will happen_.
+
 If we do nothing, our friends will turn up and maybe there's nothing in the house for them to eat.   Or maybe, the thing that you're going to cook is going to take hours and they'll have to sit around and wait for you to cook it and they'll leave before it's ready.  Maybe you'll be some ingredients short, or maybe you're not confident of the steps to prepare the meal and you're worried about messing it all up.  
 
 ### Attendant Risk
@@ -34,9 +36,9 @@ How we evaluate the risks, and which ones we know about depends on our **knowled
 
 ### Model Meets Reality
 
-As the dinner party gets closer, we make our preparations, and the inadequacies of the [Internal Model](Glossary#Internal-Model) become apparent, and we learn what we didn't know.  The [Hidden Risks](Glossary#hidden-risk) reveal themselves; things we were worried about may not materialise, things we thought would be minor risks turn out to be greater.   
+As the dinner party gets closer, we make our preparations, and the inadequacies of the [Internal Model](Glossary#Internal-Model) become apparent, and we learn what we didn't know.  The [Hidden Risks](Glossary#hidden-risk) reveal themselves; while other things we were worried about may not materialise, things we thought would be minor risks turn out to be greater.   
 
-Our model is forced into contact with reality, and the model changes.  
+Our model is forced into contact with reality, and the model changes.  We may be forced to take further, mitigating actions to deal with these new risks, as shown in this diagram.
 
 ![How taking action affects Reality, and also changes your internal model](images/generated/model_vs_reality.png)
 
