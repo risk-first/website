@@ -20,7 +20,7 @@ Sometimes, we will know that our model is deficient, and our time should be spen
 
 But let's say for example, today our [Goal In Mind](Glossary#Goal-In-Mind) is to grow our user base through an advertising campaign around a new feature. 
 
-![Our Goal](images/generated/goal.png)
+![Our Goal](images/generated/simple_scenario_action.png)
 
 ## Attendant Risks
 
