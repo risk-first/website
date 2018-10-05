@@ -57,11 +57,6 @@ Let's look at how our process should act to prevent these risks materializing by
 
 ![Development Process - Hidden Risks](images/generated/development_process_3.png)
 
--or-
-
-![Development Process - Hidden Risks](images/generated/development_process_4.png)
-
-
 This is a slightly contrived example, as you'll see.  But let's follow our feature through the process and see how it meets reality slowly, and the hidden risks are discovered:
 
 ### Specification
