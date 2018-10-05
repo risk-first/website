@@ -57,28 +57,28 @@
     </svg:g>
   </template>
   
-  <template id="goal">
+  <template id="action">
     <back style='kite9-usage: decal; kite9-type: svg; '>
       <svg:polygon points='5 5, #{$width - 35} 5, #{$width - 5} #{$height div 2}, #{$width - 35} #{$height - 5}, 5 #{$height - 5}' style='fill: white; stroke-linejoin: round; stroke: black; stroke-width: 10pt;' />
     </back>
     <front style="kite9-usage: regular; kite9-type: container; kite9-layout: down;">
-      <goal-code>GOAL</goal-code>
-      <goal-name>
+      <action-code>Action</action-code>
+      <action-name>
       	<contents />
-      </goal-name>
+      </action-name>
     </front>
   </template>
   
-  <template id='goal-code'>
-    <svg:g class="goal-code-label-front">
+  <template id='action-code'>
+    <svg:g class="action-code-label-front">
       <front style="kite9-type: text; ">
         <contents />
       </front>
     </svg:g>
   </template>
   
-  <template id='goal-name'>
-    <svg:g class="goal-label-front">
+  <template id='action-name'>
+    <svg:g class="action-label-front">
       <front style="kite9-type: text; ">
         <contents />
       </front>
@@ -197,13 +197,34 @@
     <risk-box>
       <code>Risk</code>
       <image>
-        <image-content style="kite9-template: url(noun_risk_1440166_000000.svg)" />
+        <image-content style="kite9-template: url(noun_Caution_1714512_000000.svg)" />
+      </image>
+      <title><contents />
+      </title>
+    </risk-box>
+  </template>
+  
+  <template id="hidden">
+    <risk-box>
+      <code>Risk</code>
+      <image>
+        <image-content style="kite9-template: url(noun_Caution_1714515_000000.svg)" />
       </image>
       <title><contents />
       </title>
     </risk-box>
   </template>
 
+  <template id="goal">
+    <risk-box>
+      <code>Risk</code>
+      <image>
+        <image-content style="kite9-template: url(noun_Crosshair_793048_000000.svg)" />
+      </image>
+      <title><contents />
+      </title>
+    </risk-box>
+  </template>
 
   <template id="feature">
     <risk-box>

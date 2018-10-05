@@ -22,9 +22,9 @@ allLinks {
 
 /* Definitions of Kite9 Elements */
 
-goal {
+action {
 	kite9-type: container;
-	kite9-template: url(template.svg#goal)
+	kite9-template: url(template.svg#action)
 }
 
 risk {
@@ -41,6 +41,14 @@ container {
 
 risk.attendant {
 	kite9-template: url(template.svg#attendant);
+}
+
+risk.hidden {
+	kite9-template: url(template.svg#hidden);
+}
+
+risk.goal {
+	kite9-template: url(template.svg#goal);
 }
 
 risk.invisibility {
@@ -256,7 +264,7 @@ diagram {
 	background-color: white;
 }
 
-goal image,
+action image,
 risk image {
 	kite9-type: container;
 	kite9-horizontal-align: center;
@@ -271,7 +279,7 @@ image-content {
  	kite9-usage: decal;
 }
 
-goal goal-code,
+action action-code,
 risk code {
 	kite9-horizontal-align: center;
 	kite9-vertical-align: top;
@@ -282,12 +290,12 @@ risk code {
 	kite9-margin: 10pt;
 }
 
-goal goal-code {
-	kite9-template: url(template.svg#goal-code);
+action action-code {
+	kite9-template: url(template.svg#action-code);
 	kite9-type: container;
 }
 
-goal goal-name,
+action action-name,
 risk title {
 	kite9-type: container;
 	kite9-sizing: minimize;
@@ -297,8 +305,8 @@ risk title {
 	kite9-vertical-align: bottom;
 
 }
-goal goal-name {
-	kite9-template: url(template.svg#goal-name);
+action action-name {
+	kite9-template: url(template.svg#action-name);
 	kite9-padding-left: 20pt;
 	kite9-padding-right: 50pt;
 	kite9-padding-bottom: 20pt;
@@ -324,14 +332,14 @@ goal goal-name {
 	text-align: middle;
 }
 
-.goal-label-front {
+.action-label-front {
 	font-size: 22pt;
 	font-family: "gothic";
 	text-align: middle;
 	fill: black;
 }
 
-.goal-code-label-front {
+.action-code-label-front {
 	stroke-width: 0;
 	font-size: 22pt;
 	font-family: "gothic-bold";
