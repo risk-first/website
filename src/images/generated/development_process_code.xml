@@ -7,31 +7,47 @@
     name="Development Process 1">
 
 
-    <artifact>Specification</artifact>
-    <artifact>Existing Code</artifact>
+    <group style="kite9-layout: down">
+    
+      <context id="c" bordered="true">
+  
+        <risk id="id_0" class="goal">Feature X</risk>     
+        <risk class="mitigated">Developer 
+        Misimplementation</risk>
+        <risk class="attendant">Duplicates 
+        Functionality</risk>
+        
+  
+        <label xsi:type="text-line" id="id_16">
+          <text>Internal Model</text>
+          <symbols />
+        </label>
+      </context>     
+      <group style="kite9-layout: right">
+        <artifact>Specification</artifact>
+        <artifact>Existing Code</artifact>
+      </group>
+      
+    </group>
+    
 
-    <context id="c" bordered="true">
-
-      <risk id="id_0" class="goal">Feature X</risk>
-
-      <label xsi:type="text-line" id="id_16">
-        <text>Internal Model</text>
-        <symbols />
-      </label>
-    </context>
+    
 
     <action>Code and Unit Test</action>
-
-    <context id="d">
-      <risk class="attendant">Development 
-      Difficulties </risk>
-      <label xsi:type="text-line" id="4">
-        <text>Revealed Risks</text>
-        <symbols />
-      </label>
-    </context>
     
-    <artifact>New Code</artifact>
+    <group style="kite9-layout: down">
+
+      <context id="d">
+        <risk class="attendant">Development 
+        Difficulties </risk>
+        <label xsi:type="text-line" id="4">
+          <text>Revealed Risks</text>
+          <symbols />
+        </label>
+      </context>
+      
+      <artifact>New Code</artifact>
+    </group>
 
   </diagram>
 </svg:svg>
