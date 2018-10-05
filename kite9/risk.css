@@ -27,6 +27,19 @@ action {
 	kite9-template: url(template.svg#action)
 }
 
+artifact {
+	kite9-type: container;
+	kite9-margin: 10pt;
+	kite9-link-inset: 10pt;
+	kite9-link-gutter: 10pt;
+	kite9-type: container;
+	kite9-layout: vertical;	
+	kite9-template: url(template.svg#artifact);
+	kite9-padding: 10pt; 
+	kite9-connection-align: 50%;
+	kite9-min-size: 110pt 140pt;	
+}
+
 risk {
 	kite9-type: container;
 	fill: black;
@@ -37,6 +50,10 @@ container {
 	kite9-padding: 15pt;
 	kite9-margin: 15pt;
 	kite9-template: url(template.svg#container);
+}
+
+risk.mitigated {
+	kite9-template: url(template.svg#mitigated);
 }
 
 risk.attendant {
@@ -264,8 +281,7 @@ diagram {
 	background-color: white;
 }
 
-action image,
-risk image {
+image {
 	kite9-type: container;
 	kite9-horizontal-align: center;
 	kite9-vertical-align: top;
@@ -296,7 +312,7 @@ action action-code {
 }
 
 action action-name,
-risk title {
+title {
 	kite9-type: container;
 	kite9-sizing: minimize;
 	kite9-layout: horizontal;
