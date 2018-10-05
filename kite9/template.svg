@@ -69,6 +69,13 @@
     </front>
   </template>
   
+  <template id="artifact">
+    <image style="kite9-vertical-align: center; kite9-min-size: 80pt 80pt;">
+        <image-content style="kite9-template: url(noun_documents_1013544_000000.svg)" />
+    </image>
+    <title><contents /></title>
+  </template>
+  
   <template id='action-code'>
     <svg:g class="action-code-label-front">
       <front style="kite9-type: text; ">
@@ -204,6 +211,17 @@
     </risk-box>
   </template>
   
+  <template id="mitigated">
+    <risk-box>
+      <code>Mitigated</code>
+      <image>
+        <image-content style="kite9-template: url(noun_Shield_1981935_000000.svg)" />
+      </image>
+      <title><contents />
+      </title>
+    </risk-box>
+  </template>
+  
   <template id="hidden">
     <risk-box>
       <code>Risk</code>
@@ -217,7 +235,7 @@
 
   <template id="goal">
     <risk-box>
-      <code>Risk</code>
+      <code>Goal</code>
       <image>
         <image-content style="kite9-template: url(noun_Crosshair_793048_000000.svg)" />
       </image>
