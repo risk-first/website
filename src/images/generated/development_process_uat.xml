@@ -12,10 +12,7 @@
       <context id="c" bordered="true">
   
         <risk id="id_0" class="goal">Feature X</risk>     
-        <risk class="mitigated">Developer 
-        Misimplementation</risk>
-        <risk class="attendant">Duplicates 
-        Functionality</risk>
+        <risk class="mitigated">Breaks Feature Y</risk>
         
   
         <label xsi:type="text-line" id="id_16">
@@ -25,17 +22,19 @@
       </context>     
 
       <group id="reality" style="kite9-layout: right">
-        <artifact>Code</artifact>
+        <artifact>Product To Test</artifact>
+        <artifact>Users</artifact>
       </group>
       
     </group>
    
-    <action>Integration</action>
+    <action>User Acceptance</action>
     
     <group style="kite9-layout: down">
 
       <context id="d">
-        <risk class="hidden">Breaks Feature Y</risk>
+        <risk class="hidden">Difficulty 
+        Finding Feature</risk>
         <label xsi:type="text-line" id="4">
           <text>Hidden Risks</text>
           <symbols />
