@@ -9,6 +9,8 @@
 
 ## Internal Model
 
+## Taking Action
+
 The most common use for [Internal Model](#internal-model) is to refer to the model of reality that you or I carry around in our heads.   You can regard the concept of [Internal Model](#internal-model) as being what you _know_ and what you _think_ about a certain situation.
 
 Obviously, because we've all had different experiences, and our brains are wired up differently, everyone will have a different [Internal Model](#internal-model) of reality.  
