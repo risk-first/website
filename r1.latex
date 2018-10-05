@@ -298,37 +298,51 @@ change too fast
 
 \begin{quotation}
 
-I have this Pattern
+``I have this Pattern''
 
+\sourceatright{\href{http://c2.com/ppr/wiki/WikiPagesAboutWhatArePatterns/HaveThisPattern.html}{\textemdash  Attributed to Ward Cunningham, \emph{Have This Pattern, C2 Wiki}}}
 \end{quotation}
 
-Does that diminish it? If you have visited the TVTropes website, you'll
-know that it's a set of web-pages describing \emph{common patterns} of
-narrative, production, character design etc. to do with fiction. For
-example:
+Does that diminish it? If you have visited the
+\href{https://tvtropes.org}{TVTropes} website, you'll know that it's a
+set of web-pages describing \emph{common patterns} of narrative,
+production, character design etc. to do with fiction. For example:
 
-\begin{quote}
-tbd.
-\end{quote}
+\begin{quotation}
+
+``Sometimes, at the end of a Dream Sequence or an All Just a Dream
+episode, after the character in question has woken up and demonstrated
+any {[}lesson{]} that the dream might have been communicating, there's
+some small hint that it wasn't a dream after all, even though it quite
+obviously was\ldots{} right?.''
+
+\sourceatright{\href{https://tvtropes.org/pmwiki/pmwiki.php/Main/OrWasItADream}{\textemdash  Or Was It a Dream?, \emph{TVTropes}}}
+\end{quotation}
 
 Is it scientific? No.~Is it correct? Almost certainly. TVTropes is a set
 of \emph{empirical patterns} for how stories on TV and other media work.
 It's really useful, and a lot of fun. (Warning: it's also incredibly
 addictive).
 
-In the same way, tbd, the tbd published a book called ``Design Patterns:
-tbd''. Which shows you patterns of \emph{structure} within
-Object-Oriented programming:
+In the same way, ``\href{http://amzn.eu/d/3cOwTkH}{Design Patterns:
+Elements of Reusable Object-Oriented Software}'', is a book detailing
+patterns of \emph{structure} within Object-Oriented programming, such
+as:
 
-\begin{quote}
-tbd.
-\end{quote}
+\begin{quotation}
+
+``{[}The{]} Adapter {[}pattern{]} allows classes with incompatible
+interfaces to work together by wrapping its own interface around that of
+an already existing class\ldots{}''
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Design_Patterns}{\textemdash  Design Patterns, \emph{Wikipedia}}}
+\end{quotation}
 
 \hypertarget{patterns-for-practitioners}{%
 \subsection{Patterns For
 Practitioners}\label{patterns-for-practitioners}}
 
-This book aimed to be a set of \emph{useful} patterns which
+Design Patterns aimed to be a set of \emph{useful} patterns which
 practitioners could use in their software to achieve certain goals. ``I
 have this pattern'' was a phrase used to describe how they had seen a
 certain set of constraints before, and how they had solved it in
@@ -339,7 +353,7 @@ practices for other developers to use, and, whether you like patterns or
 not, knowing them is an important part of being a software developer, as
 you will see them used everywhere you go and probably use them yourself.
 
-In the same way, this book aims to be a set of \emph{Patterns for
+In the same way, Risk-First aims to be a set of \emph{Patterns for
 Software Risk}. Hopefully after reading this book, you will see where
 risk hides in software projects, and have a name for it when you see it.
 
@@ -433,7 +447,12 @@ a successful project.
 
 One of the original proponents of the Agile Manifesto by stating:
 
-``It's all about risk'' \textgreater{} Kent Beck
+\begin{quotation}
+
+``It's all about risk''
+
+\sourceatright{\href{http://amzn.eu/d/gUQjnbF}{\textemdash  Kent Beck, \emph{Extreme Programming Explained}}}
+\end{quotation}
 
 This is a promising start. From there, he introduces his methodology,
 Extreme Programming, there is no clear model of software risk
@@ -733,7 +752,7 @@ start to think about what will happen.
 
 \begin{figure}
 \centering
-\includegraphics{images/generated/goal_in_mind-400dpi.png}
+\includegraphics{images/kite9/goal_in_mind.png}
 \caption{Goal In Mind, with the risks you know about}
 \end{figure}
 
@@ -756,7 +775,7 @@ model}.
 
 \begin{figure}
 \centering
-\includegraphics{images/generated/goal_in_mind-400dpi.png}
+\includegraphics{images/generated/hidden_risks-400dpi.png}
 \caption{Goal In Mind, the risks you know about and the ones you don't}
 \end{figure}
 
@@ -1305,9 +1324,13 @@ be spend \emph{improving} it, perhaps by talking to our clients, or the
 support staff, or other developers, or reading.
 
 But let's say for example, today our Goal In Mind is to grow our user
-base.
+base through an advertising campaign around a new feature.
 
-tbd. image of this goal.
+\begin{figure}
+\centering
+\includegraphics{images/generated/goal-400dpi.png}
+\caption{Our Goal}
+\end{figure}
 
 \hypertarget{attendant-risks}{%
 \section{Attendant Risks}\label{attendant-risks}}
@@ -1319,23 +1342,22 @@ get us started:
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  The users can't access the system
+  We target the wrong people, and waste money.
 \item
-  The data gets lost, stolen.
+  The system can't cope with the amount of traffic.
 \item
-  The data is wrong or corrupted
+  There are bugs that prevent the new features working
 \item
-  There are bugs that prevent the functionality working
-\item
-  The functionality isn't there that the user needs (Feature Risk.
-\item
-  Our Internal Model of the market is poor, and we could be building the
-  wrong thing.
+  The functionality of the new features isn't there that the user needs.
 \end{enumerate}
 
 I'm sure you can think of some more.
 
-tbd. image
+\begin{figure}
+\centering
+\includegraphics{images/generated/goal2-400dpi.png}
+\caption{Our Goal, With Attendant Risks}
+\end{figure}
 
 \hypertarget{evaluating-the-risks}{%
 \section{Evaluating The Risks}\label{evaluating-the-risks}}
@@ -1609,7 +1631,8 @@ In the preceding discussions, I have been careful to point out the
 existence of Hidden Risks for that very reason. Or, to put another way:
 
 \begin{quote}
-What we don't know is what usually gets us killed - Petyr Baelish
+What we don't know is what usually gets us killed - Petyr Baelish,
+\emph{Game of Thrones}
 \end{quote}
 
 Donald Rumsfeld's famous
@@ -1644,8 +1667,8 @@ Let's look at the classic description of Risk Management:
 Risk Management is the process of thinking out corrective actions before
 a problem occurs, while it's still an abstraction. The opposite of risk
 management is crisis management, trying to figure out what to do about
-the problem after it happens. - Waltzing With Bears, Tom De Marco \& Tim
-Lister
+the problem after it happens. - \href{http://amzn.eu/d/i0IDFA2}{Waltzing
+With Bears, \emph{Tom De Marco \& Tim Lister}}
 \end{quote}
 
 This is not how \textbf{Risk-First} sees it:
@@ -1707,8 +1730,6 @@ considers certain \emph{kinds} of risk, while ignoring others. At small
 scales, that works ok, but at larger scales, the bigger risks increase
 too fast for it to work.
 
-tbd.
-
 So ideally, a methodology should be applicable at \emph{any} scale: - A
 single class or function - A collection of functions, or a library - A
 project team - A department - An entire organisation
@@ -1720,8 +1741,11 @@ different problems. One of the things that I am exploring with Risk
 First is trying to place methodologies and practices within a framework
 to say \emph{when} they are applicable.
 
+\hypertarget{value-vs-speed}{%
+\section{Value vs Speed}\label{value-vs-speed}}
+
 \hypertarget{value}{%
-\section{Value}\label{value}}
+\subsection{Value}\label{value}}
 
 ``Upside Risk'' isn't a commonly used term: industry tends to prefer
 ``value'', as in ``Is this a value-add project?''. There is plenty of
@@ -1751,30 +1775,35 @@ only one. However, I am going to try and make the case that it's an
 underutilized one that has much to offer us.
 
 \hypertarget{speed}{%
-\section{Speed}\label{speed}}
+\subsection{Speed}\label{speed}}
 
-For example, in Rapid Development by Steve McConnell we have the
-following diagram:
+For example, in \href{http://a.co/d/ddWGTB2}{Rapid Development} by Steve
+McConnell we have the following diagram:
 
 \begin{figure}
 \centering
-\includegraphics{images/rapid_development_pillars.png}
-\caption{Rapid Development Pillars- From Steve McConnell}
+\includegraphics{images/kite9/rapid_development_pillars.png}
+\caption{Pillars, From Rapid Development By Steve McConnell}
 \end{figure}
 
-tbd. redraw this.
-
-And, this is \emph{fine}, McConnel is structuring the process from the
+And, this is \emph{fine}, McConnell is structuring the process from the
 perspective of \emph{delivering as quickly as possible}. However, here,
 I want to turn this on it's head. Exploring Software Development from a
 risk-first perspective is an under-explored technique, and I believe it
 offers some useful insights. So the aim here is to present the case for
 viewing software development like this:
 
-tbd. risk-first diagram.
+\begin{figure}
+\centering
+\includegraphics{images/kite9/rapid_development_pillars2.png}
+\caption{Pillars, re-arranged}
+\end{figure}
 
-\hypertarget{net-present-risk}{%
-\section{Net Present Risk}\label{net-present-risk}}
+As we will see, \emph{Speed} (or Schedule Risk, and irreparably damages
+trust in the product.
+
+\hypertarget{eisenhowers-box}{%
+\subsection{Eisenhower's Box}\label{eisenhowers-box}}
 
 If we can view software delivery from the point of view of \emph{value},
 then why can't we apply the same tools to Risk too? In order to do this,
@@ -1788,19 +1817,39 @@ let's review ``Eisenhower's Box'' model. This considers two variables:
   How soon it is needed (Urgency)
 \end{itemize}
 
-tbd. image from wikipedia. text from wikipedia.
+\begin{figure}
+\centering
+\includegraphics{images/pd/220px-MerrillCoveyMatrix.png}
+\caption{A basic ``Eisenhower box'' to help evaluate urgency and
+importance. Items may be placed at more precise points within each
+quadrant. - \href{https://en.wikipedia.org/wiki/Time_management}{Time
+Management, \emph{Wikipedia}}}
+\end{figure}
 
 Here, we're considering a synthesis of both \emph{time} and
-\emph{value}. But Net Present Value allows us to discount value in the
-future, which offers us a way to reconcile these two variables:
+\emph{value}. But
+\href{https://en.wikipedia.org/wiki/Net_present_value}{Net Present
+Value} allows us to discount value in the future, which offers us a way
+to reconcile these two variables. In the diagram, you can see two future
+payments, one of £100 due in one year, one of £150 due in 10 years. By
+discounting at a given rate (here at 6\% per year) we can compare their
+worth \emph{now}.
 
-chart of discounting into the future tbd.
+\begin{figure}
+\centering
+\includegraphics{images/numbers/npv.png}
+\caption{Net Present Value Discounting}
+\end{figure}
 
-Let's do the same thing with risk? Let's introduce the concept of Net
+\hypertarget{net-present-risk}{%
+\section{Net Present Risk}\label{net-present-risk}}
+
+Can we do the same thing with risk? Let's introduce the concept of Net
 Present Risk, or NPR:
 
 \begin{quote}
-Net Present Risk is tbd.
+Net Present Risk is the \emph{Importance} of a Future risk, discounted
+to a common level of \emph{Urgency}.
 \end{quote}
 
 Let's look at a quick example to see how this could work out. Let's say
@@ -1820,12 +1869,20 @@ Which has the biggest NPR? Well, it depends on the discount rate that
 you apply. Let's assume we are discounting at 6\% per year. A graph of
 the discounted risks looks like this:
 
-tbd, see numbers
+\begin{figure}
+\centering
+\includegraphics{images/numbers/npr1.png}
+\caption{Net Present Risk, 6\% Discount Rate}
+\end{figure}
 
-On this basis, the biggest risk is \textbf{B}, at about \#45. If we
+On this basis, the biggest risk is \textbf{B}, at about £45. If we
 \emph{reduce} the discount factor to 3\%, we get a different result:
 
-tbd, see numbers.
+\begin{figure}
+\centering
+\includegraphics{images/numbers/npr2.png}
+\caption{Net Present Risk, 3\% Discount Rate}
+\end{figure}
 
 Now, risk \textbf{C} is bigger.
 
@@ -1846,25 +1903,25 @@ cost of mitigating each risk \emph{now}:
 Which is the best deal?
 
 Well, under the 6\% regime, only Risk \textbf{A} is worth mitigating,
-because you spend £20 today to get rid of \#40 of risk (today). The NPR
+because you spend £20 today to get rid of £40 of risk (today). The NPR
 is positive at around £20, whereas for \textbf{B} and \textbf{C}
 mitigations it's under water.
 
-tbd.
-
-Under a 3\% regime, risk \textbf{A} and \textbf{B} are \emph{both} worth
-mitigating, as you can see in this graph:
+But, under a 3\% regime, risk \textbf{A} and \textbf{B} are \emph{both}
+worth mitigating.
 
 \hypertarget{discounting-the-future-to-zero}{%
-\section{Discounting the Future To
+\subsection{Discounting the Future To
 Zero}\label{discounting-the-future-to-zero}}
 
 I have worked in teams sometimes where the blinkers go down, and the
 only thing that matters is \emph{now}. They may apply a rate of 60\%
 per-day, which means that anything with a horizon over a week is
-irrelevant. Regimes of such hyperinflation are a sure sign that
-something has \emph{really broken down} within a project. Consider in
-this case a Discount Factor of 60\% per day, and the following risks:
+irrelevant. Regimes of such
+\href{https://en.wikipedia.org/wiki/Hyperinflation}{hyperinflation} are
+a sure sign that something has \emph{really broken down} within a
+project. Consider in this case a Discount Factor of 60\% per day, and
+the following risks:
 
 \begin{itemize}
 \tightlist
@@ -1876,28 +1933,42 @@ this case a Discount Factor of 60\% per day, and the following risks:
 
 Risk B is almost irrelevant under this regime, as this graph shows:
 
-tbd.
+\begin{figure}
+\centering
+\includegraphics{images/numbers/npr3.png}
+\caption{Net Present Risk, 60\% Discount Rate}
+\end{figure}
 
 Why do things like this happen? Often, the people involved are under
 incredible job-stress: usually they are threatened with the sack on a
-daily basis, and therefore feel they have to react. For
-publically-listed companies you can also
+daily basis, and therefore feel they have to react. Publically-listed
+companies also often apply short-term focus, because they only care
+about the \emph{next annual report}, which limits their horizons and
+ability to consider future risk.
 
-\begin{itemize}
-\tightlist
-\item
-  more pressure, heavier discounting pooh bear procrastination
-\end{itemize}
+Under these circumstances, we often see \emph{Pooh-Bear
+Procrastination}:
+
+\begin{quotation}
+
+``Here is Edward Bear coming downstairs now, bump, bump, bump, on the
+back of his head, behind Christopher Robin. It is, as far as he knows,
+the only way of coming downstairs, but sometimes he feels that there
+really is another way\ldots{}if only he could stop bumping for a moment
+and think of it!''
+
+\sourceatright{\href{http://amzn.eu/d/acJ5a2j}{\textemdash  A. A. Milne, \emph{Winne-the-Pooh}}}
+\end{quotation}
 
 \hypertarget{is-this-scientific}{%
 \section{Is This Scientific?}\label{is-this-scientific}}
 
-\textbf{Risk-First} is an attempt to provide a practical framework,
-rather than a scientifically rigorous analysis. In fact, my view is that
-you should \emph{give up} on trying to compute risk numerically. You
-\emph{can't} work out how long a software project will take based purely
-on an analysis of (say) \emph{function points}. (Whatever you define
-them to be).
+Enough with the numbers and the theory: \textbf{Risk-First} is an
+attempt to provide a practical framework, rather than a scientifically
+rigorous analysis. In fact, my view is that you should \emph{give up} on
+trying to compute risk numerically. You \emph{can't} work out how long a
+software project will take based purely on an analysis of (say)
+\emph{function points}. (Whatever you define them to be).
 
 \begin{itemize}
 \tightlist
@@ -2060,7 +2131,15 @@ In all, to de-risk, you should try and meet reality:
   experience of meeting reality, hidden risks \emph{stay hidden}.
 \end{itemize}
 
-tbd this is what testing is all about.
+In Development Process earlier. By performing the UAT, we meet reality
+sooner. The \emph{cost} of this is that we also expend precious time on
+that process which harms our schedule.
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/meeting_reality_testing-400dpi.png}
+\caption{Testing flushes out hidden risk, but increases Schedule Risk}
+\end{figure}
 
 \hypertarget{yagni}{%
 \subsection{YAGNI}\label{yagni}}
@@ -2789,13 +2868,21 @@ other, but it runs at odds with the design of the system, and plain
 kind of conceptual failure as soon as it enters the Backlog. Usually,
 it's in coding that this becomes apparent.
 
-tbd: feature phones.
-
 Sometimes, it can go for a lot longer. I once worked on some software
 that was built as a score-board within a chat application. However,
 after we'd added much-asked-for commenting and reply features to our
 score-board, we realised we'd implemented a chat application
 \emph{within a chat application}, and had wasted our time enormously.
+
+\href{https://en.wikipedia.org/wiki/Feature_phone}{Feature Phones} are a
+real-life example: although it \emph{seemed} like the market wanted more
+and more features added to their phones,
+\href{https://en.wikipedia.org/wiki/IPhone}{Apple's iPhone} was able to
+steal huge market share by presenting a much more enjoyable, more
+coherent user experience, despite being more expensive and having fewer
+features. Feature Phones had been drowning in increasing
+\href{Feature-Risk\#Conceptual-integrity-risk}{Conceptual Integrity
+Risk} without realising it.
 
 Which leads to Greenspun's 10th Rule:
 
@@ -2964,22 +3051,35 @@ space:
 
 \begin{quotation}
 
-``Survival Of The Fittest
+``This preservation, during the battle for life, of varieties which
+possess any advantage in structure, constitution, or instinct, I have
+called Natural Selection; and Mr.~Herbert Spencer has well expressed the
+same idea by the Survival of the Fittest''
 
+\sourceatright{\href{https://en.wikipedia.org/wiki/Survival_of_the_fittest}{\textemdash  Charles Darwin (Survival of the Fittest), \emph{Wikipedia}}.}
 \end{quotation}
 
 Darwin's conception of fitness was not one of athletic prowess, but how
-well an organism worked within the landscape.
-
-tbd: definition of biological fitness
+well an organism worked within the landscape, with the goal of
+reproducing itself.
 
 Fit Risk all hint at different aspects of this ``fitness''. We can
-conceive of the relationships between them in the following way:
+conceive of them as the gaps between the following entities:
+
+\begin{itemize}
+\tightlist
+\item
+  Perceived Need: What the user \emph{thinks} they want
+\item
+  Expectation: What the user \emph{expects}
+\item
+  Reality: What they actually \emph{get}.
+\end{itemize}
 
 \begin{figure}
 \centering
 \includegraphics{images/kite9/all_feature_risk_1.png}
-\caption{Feature Risks Assembled}
+\caption{Feature Risks Assembled: Fit Risks}
 \end{figure}
 
 For further reading, you can check out
@@ -3017,7 +3117,11 @@ sense that:
   exists.
 \end{itemize}
 
-tbd. regression risk and feature drift risk.
+\begin{figure}
+\centering
+\includegraphics{images/kite9/all_feature_risk_2.png}
+\caption{Feature Risks Assembled: Audience and Evolution}
+\end{figure}
 
 \hypertarget{applying-feature-risk}{%
 \section{Applying Feature Risk}\label{applying-feature-risk}}
@@ -5979,7 +6083,7 @@ between teams or people \emph{as simple as possible}, modularizing along
 these organisational boundaries.
 
 In essence, this is
-\href{https://en.wikipedia.org/wiki/Conway\%27s_law}{Conway's Law}:
+\href{https://en.wikipedia.org/wiki/Conways_law}{Conway's Law}:
 
 \begin{quotation}
 
@@ -6761,11 +6865,11 @@ Where we've talked about process evolution above, the actors involved
 have been acting in good faith: they are working to mitigate risk in the
 organisation. The Process Risk.
 
-But \href{https://en.wikipedia.org/wiki/Parkinson\%27s_law}{Parkinson's
-Law} takes this one step further: the human actors shaping the
-organisation will abuse their positions of power in order to further
-their own careers (this is \href{Agency-Risk}{Agency Risk}, which we
-will come to in a future chapter):
+But \href{https://en.wikipedia.org/wiki/Parkinsons_law}{Parkinson's Law}
+takes this one step further: the human actors shaping the organisation
+will abuse their positions of power in order to further their own
+careers (this is \href{Agency-Risk}{Agency Risk}, which we will come to
+in a future chapter):
 
 \begin{quotation}
 
@@ -6775,7 +6879,7 @@ bureaucracy in an organization\ldots{} He explains this growth by two
 forces: (1) `An official wants to multiply subordinates, not rivals' and
 (2) `Officials make work for each other.'\,''
 
-\sourceatright{\href{https://en.wikipedia.org/wiki/Parkinson%27s_law}{\textemdash  Parkinson's Law, \emph{Wikipedia}}  }
+\sourceatright{\href{https://en.wikipedia.org/wiki/Parkinsons_law}{\textemdash  Parkinson's Law, \emph{Wikipedia}}  }
 \end{quotation}
 
 This implies that there is a tendency for organisations to end up with
@@ -8502,7 +8606,7 @@ Expertise in different areas - Preferences - Personalities
 The job of harmonzing this on a project would seem to fall to the team
 leader, but actually people are self-organising to some extent. This
 process is called
-\href{https://en.wikipedia.org/wiki/Tuckman\%27s_stages_of_group_development}{Team
+\href{https://en.wikipedia.org/wiki/Tuckmans_stages_of_group_development}{Team
 Development}:
 
 \begin{quotation}
@@ -8513,7 +8617,7 @@ are all necessary and inevitable in order for the team to grow, face up
 to challenges, tackle problems, find solutions, plan work, and deliver
 results.''
 
-\sourceatright{\href{https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development}{\textemdash  Tuckman's Stages Of Group Development, \emph{Wikipedia}}}
+\sourceatright{\href{https://en.wikipedia.org/wiki/Tuckmans_stages_of_group_development}{\textemdash  Tuckman's Stages Of Group Development, \emph{Wikipedia}}}
 \end{quotation}
 
 Specifically, this describes a process whereby a new group will form and

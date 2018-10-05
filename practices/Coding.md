@@ -143,7 +143,7 @@ When this happens, it's because somehow the team feel that [Coordination Risk](C
 
 There are some mitigations here:  video-chat, moving staff from location-to-location for face-time, frequent [show-and-tell](Review), or simply modularizing accross geographic boundaries, in respect of [Conway's Law](Coordination-Risk):
 
-> "organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations."  - _[M. Conway](https://en.wikipedia.org/wiki/Conway%27s_law)_
+> "organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations."  - _[M. Conway](https://en.wikipedia.org/wiki/Conways_law)_
 
 When we add **Outsourcing** into the mix, we also have to consider [Agency Risk](Agency-Risk):  the consultancy you've hired is _definitely_ more interested in keeping themselves solvent than solving your business problems.
 
@@ -169,9 +169,9 @@ Adding the 7th person to the team (ceteris paribus) does absolutely _nothing_ fo
 
 This is a _toy example_, but is it better or worse than this in reality?  If the new developers are arriving on an existing project, then 1 hour-per-week of training by the existing team members might be conservative.  
 
-This is why we get [Brooks' Law](https://en.wikipedia.org/wiki/Brooks%27s_law): 
+This is why we get [Brooks' Law](https://en.wikipedia.org/wiki/Brooks_law): 
 
-> "adding human resources to a late software project makes it later".  - [Fred Brooks, _The Mythical Man-Month_](https://en.wikipedia.org/wiki/Brooks%27s_law)
+> "adding human resources to a late software project makes it later".  - [Fred Brooks, _The Mythical Man-Month_](https://en.wikipedia.org/wiki/Brooks_law)
 
 You can see that this law is founded in an appreciation of [Coordination Risk](Coordination-Risk).  But the argument from [Coordination Risk](Coordination-Risk) _adds nuance_, and explains when this is true and when it isn't.
 
