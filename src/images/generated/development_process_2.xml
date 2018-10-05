@@ -1,48 +1,26 @@
 <?xml version="1.0"?>
-<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink'  zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
   <svg:defs>
     <svg:style type="text/css"> @import url("risk.css");</svg:style>
-  </svg:defs><diagram xmlns="http://www.kite9.org/schema/adl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="diagram-117" name="Development Process 2">
- 
- 
- <glyph id="id_4" shape="fcSTART1">
-  
-  
-  <stereotype>Goal In Mind</stereotype>
-  <label>New Feature</label>
-  <text-lines/>
-  <symbols/>
- </glyph>
- <glyph id="id_0">
-  
-  
-  <stereotype/>
-  <label>Code</label>
-  <text-lines/>
-  <symbols/>
- </glyph>
- <glyph id="id_2" shape="fcTERMINATOR">
-  
-  
-  <stereotype/>
-  <label>Production</label>
-  <text-lines/>
-  <symbols/>
- </glyph>
- 
- 
-  <link id="id_3" shape="NORMAL" style="" drawDirection="LEFT">
-   
-   <from xsi:type="glyph" reference="id_0" class="arrow"/>
-   <to xsi:type="glyph" reference="id_4"/>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="diagram-116"
+    name="Development Process 1">
 
 
-  </link>
-  <link id="id_1" shape="NORMAL" style="" drawDirection="RIGHT">
-   
-   <from xsi:type="glyph" reference="id_0"/>
-   <to xsi:type="glyph" reference="id_2" class="arrow"/>
+
+    <context id="c" bordered="true">
+
+      <risk id="id_0" class="goal">New Feature</risk>
+
+      <label xsi:type="text-line" id="id_16">
+        <text>Internal Model</text>
+        <symbols />
+      </label>
+    </context>
+
+    <action>Code</action>
+    <action>Release</action>
 
 
-  </link>
-  </diagram></svg:svg>
+  </diagram>
+</svg:svg>
