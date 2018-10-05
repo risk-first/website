@@ -87,6 +87,12 @@ her [Internal Model](Glossary#Internal-Model) will develop.
 
 ![Coding Process:  exposing more hidden risks as you code](images/generated/development_process_code.png)
 
+A couple of things about this diagram:
+
+ - In boxes, we are showing [Risks](Glossary#Risk), which exist within [Internal Models](Glossary#Internal-Model), whereas:
+ - Beneath them, we are showing actual _physical artifacts_ which exist in the real world.
+ - _Actions_  might _meet_ reality, but they are _changing reality_ too, by producing these artifacts.
+
 ### Integration
 
 Integration is where we run _all_ the tests on the project, and compile _all_ the code in a clean environment:  the "reality" of the development environment can vary from one developer's machine to another.  
