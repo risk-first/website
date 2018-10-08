@@ -124,7 +124,7 @@ A couple of things:
 
 **Fourth**, hopefully you can see from the above that really _all this work is risk management_, and _all work is testing ideas against reality_.   
 
-In the next section, we're going to look at the concept of [Meeting Reality](Glossary#meeting-reality) in a bit more depth.
+In the next section, we're going to look at the concept of [Meeting Reality](Meeting-reality) in a bit more depth.
 
 
 
