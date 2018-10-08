@@ -80,7 +80,7 @@ This process of evolving the feature request into a requirement is the BAs job. 
 
 ### Code And Unit Test
 
-The next stage for our feature, **Feature X (Specification)** is that it gets coded and some tests get written.  Let's look at how our [goal in mind](Glossary#Goal-In-Mind) meets a new reality:   this time it's the reality of a pre-existing codebase, which has it's own internal logic.
+The next stage for our feature, **Feature X** is that it gets coded and some tests get written.  Let's look at how our [goal in mind](Glossary#Goal-In-Mind) meets a new reality:   this time it's the reality of a pre-existing codebase, which has it's own internal logic.
 
 As the developer begins coding the feature in the software, she will start with an [Internal Model](Glossary#Internal-Model) of the software, and how the code fits into it.  But, in the process of implementing it, she is likely to learn about the codebase, and 
 her [Internal Model](Glossary#Internal-Model) will develop.  
@@ -103,7 +103,7 @@ At this stage, we might discover the [Hidden Risk](Glossary#Hidden-Risk) that we
 
 ![Integration testing exposes hidden risks before you get to production](images/generated/development_process_integration.png)
 
-### UAT
+### User Acceptance Test
 
 Is where our feature meets another reality: _actual users_.   I think you can see how the process works by now.  We're just flushing out yet more [Hidden Risks](Glossary#hidden-risk):
 
@@ -124,9 +124,7 @@ A couple of things:
 
 **Fourth**, hopefully you can see from the above that really _all this work is risk management_, and _all work is testing ideas against reality_.   
 
-## Conclusion?
-
-Could it be that _everything_ you do on a software project is risk management? <!-- tweet-end --> This is an idea explored in [the next section](All-Risk-Management).
+In the next section, we're going to look at the concept of [Meeting Reality](Glossary#meeting-reality) in a bit more depth.
 
 
 

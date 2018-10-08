@@ -67,7 +67,7 @@ _Issues_ then, just seem more "definite" and "now" than _risks_, right?  This cl
 - And, there's the time it takes to make the decision.
 - And what's the risk if the decision doesn't get made?
 
-## Failure
+## Goals Are Risks Too
 
 In the previous sections, we've introduced something of a "diagram language" of risk.  Let's review it:
 
@@ -79,21 +79,28 @@ So we have:
  - [Actions](Glossary#taking-action), which are operations we perform when we [Meet Reality](Glossary#meet-reality).
  - Artifacts, which are the results of [Meeting Reality](Glossary#meet-reality).
  
-[Goals](Glossary#goal-in-mind) live inside our [Internal Model](Glossary#internal-model) too.  As discussed above, they are also risks.  The goal of "Implementing Feature X" is _the same as_ mitigating the risk "Feature X not present".
+[Goals](Glossary#goal-in-mind) live inside our [Internal Model](Glossary#internal-model) too.  It turns out, that functionally, Goals and Risks are equivalent.  For example, The goal of "Implementing Feature X" is equivalent to mitigating "Risk of Feature X not being present".
+
+Let's try and back up that assertion with a few more examples:
+
+|Goal                                |Restated As A Risk                                                   |
+|------------------------------------|---------------------------------------------------------------------|
+|Build a Wall                        |Mitigate the risk of something getting in / out                      |
+|Land a man on the  moon             |Mitigate the risk of looking technically inferior during the cold war| 
+|Move House                          |Mitigate the risks/problems of where you currently live              |
+
+There is a certain "interplay" between the concepts of risks, actions and goals.  After all, on the [Risk Landscape](Glossary#risk-landscape) they correspond to the starting point, a movement, and the destination.  From a redundancy perspective, any one of these can be determines by knowing the other two.  
+
+Psychologically, humans are very goal-driven:  they like to know where they're going, and are good at organising around a goal.  However, by focusing on goals ("solutionizing") it's easy to ignore alternatives.  By focusing on "Risk-First", we don't ignore the reasons we're doing something.  
+
+## Failure
 
 So, when we talk about a project "failing", what do we mean?  
 
 Usually, we mean we've failed to achieve a goal, and since _goals are risks_, it is simply the scenario where we are overwhelmed by [Attendant Risks](Glossary#risk) and give up.    
  
-
 ## What To Do?
 
 It makes it much easier to tackle the RAID log if there's only one list:  all you do is pick either the _most important_ risk on the list, or the _most urgent_, or the risk you can make _the biggest impact on_, and deal with it.  
 
-(In [Risk Theory](Risk-Theory) we look at how to figure out which one that is).
-
-OK, so maybe that _works_ for a RAID log (or a Risk log, since we've thrown out the others), but does it scale to a whole project?  
-
-In the next section, [Software Project Scenario](Software-Project-Scenario) I will make a slightly stronger case for the idea that it does. 
-
-
+In the next section, [Risk Theory](Risk-Theory) we look at how to figure out which one that is.
