@@ -8,9 +8,7 @@ In [A Simple Scenario](A-Simple-Scenario), we looked at a basic model for how **
 
 And, in [Development Process](Development-Process) we looked at how we can meet with reality in _different forms_:  Analysis, Testing, Integration and so on, and saw how the model could work in each stage of a project.
 
-Finally, in [Software Project Scenario](Software-Project-Scenario) we looked at how we could use this model on a day-to-day basis to inform what we should do next.  
-
-So, it should be no surprise to see that there is a _recursive_ nature about this:  
+It should be no surprise to see that there is a _recursive_ nature about this:  
 
 1.  The **actions we take** each day have consequences:  they **expose new [Hidden Risks](Glossary#hidden-risk)**, which inform our [Internal Model](Glossary#Internal-Model), and at the same time, they change reality in some way (otherwise, what would be the point of doing them?)
 2.  The actions we take towards achieving a [Goal In Mind](Goal-In-Mind) each have their _own_ [Goal In Mind](Goal-In-Mind).  And because of this, when we take action, we have to consider and evaluate the [Hidden Risks](Glossary#hidden-risk) exposed by that action.   That is, there are many ways to achieving a goal, and these different ways expose different [Hidden Risks](Glossary#hidden-risk).
