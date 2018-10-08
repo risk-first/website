@@ -8,7 +8,7 @@ Let's look again at the simple risk framework from the [introduction](A-Simple-S
 
 ![Taking action changes reality, but it changes your perception of the attendant risks too](images/generated/model_vs_reality.png)
 
-## Goal In Mind
+## Today's Action
 
 How should we decide how to spend our time today?  
 
@@ -18,18 +18,20 @@ If we want to take the right actions, we need to have a good [Internal Model](Gl
 
 Sometimes, we will know that our model is deficient, and our time should be spend _improving_ it, perhaps by talking to our clients, or the support staff, or other developers, or reading.  
 
-But let's say for example, today our [Goal In Mind](Glossary#Goal-In-Mind) is to grow our user base through an advertising campaign around a new feature. 
+But let's say for example, today's [action](Glossary#Taking-Action) is to grow our user base through an advertising campaign.  Perhaps this is because we have [Funding Risk](Schedule-Risk#funding-risk), and we need to demonstrate a large user base to get more funding from project sponsors, or maybe we want a large user base in order to capture market share before other competitors too (an [Opportunity Risk](Schedule-Risk#opportunity-risk).  
 
-![Our Goal](images/generated/simple_scenario_action.png)
+![Today's Action](images/generated/simple_scenario_action.png)
 
 ## Attendant Risks
 
 What are the [Attendant Risks](Glossary#attendant-risk) that come with that goal?  Here are some to get us started:
 
-1. We target the wrong people, and waste money.
-2. The system can't cope with the amount of traffic. 
-3. There are bugs that prevent the new features working
-4. The functionality of the new features isn’t there that the user needs.
+1. The users can’t access the system
+2. The data gets lost, stolen. 
+3. The data is wrong or corrupted
+4. There are bugs that prevent the functionality working
+5. The functionality isn’t there that the user needs ([Feature Risk](Feature-Risk)).
+6. Our [Internal Model](Glossary#Internal-Model) of the market is poor, and we could be building the wrong thing.
 
 I'm sure you can think of some more. 
 

@@ -34,10 +34,10 @@ Some easy-to-digest ideas that will set the scene for examining the practices la
 
  - [A Simple Scenario](A-Simple-Scenario)
  - [Development Process](Development-Process)
- - [It's All Risk Management](All-Risk-Management)
- - [A Software Project Scenario](Software-Project-Scenario)
- - [Some Risk Theory](Risk-Theory)
  - [Meeting Reality](Meeting-Reality)
+ - [It's All Risk Management](All-Risk-Management)
+ - [Some Risk Theory](Risk-Theory)
+ - [A Software Project Scenario](Software-Project-Scenario)
  - [Cadence](Cadence)
  - [A Conversation](A-Conversation)
  - [De-Risking](De-Risking)
@@ -48,8 +48,8 @@ Risks are often very similar across different software projects.   And, if you k
 
  - [The Risk landscape](Risk-Landscape)
  - [Feature Risk](Feature-Risk)
- - [Complexity Risk](Complexity-Risk)
  - [Communication Risk](Communication-Risk)
+ - [Complexity Risk](Complexity-Risk)
  - [Dependency Risk](Dependency-Risk)
  - [Schedule Risk](Schedule-Risk)
  - [Software Dependency Risk](Software-Dependency-Risk)

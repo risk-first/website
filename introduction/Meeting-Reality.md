@@ -31,7 +31,9 @@ I would argue that the best way is the one which accrues the _least risk_ to get
 
 Ideally, when you take an action, you are trading off a big risk for a smaller one.  Take Unit Testing for example.  Clearly, writing Unit Tests adds to the amount of development work, so on it's own, it adds [Schedule Risk](Schedule-Risk).   However, if you write _just enough_ of the right Unit Tests, you should be short-cutting the time spent finding issues in the User Acceptance Testing (UAT) stage, so you're hopefully trading off a larger [Schedule Risk](Schedule-Risk) from UAT and adding a smaller risk to **Development**.
 
-Sometimes, in solving one problem, you can end up somewhere _worse_:  the actions you take to solve a higher-level [Attendant Risk](Glossary#attendant-risk) will leave you with a worse [Attendant Risks](Glossary#attendant-risk).  Almost certainly, this will have been a [Hidden Risk](Glossary#hidden-risk) when you embarked on the action, otherwise you'd not have chosen it.  
+You can think of taking actions as moving your project on a "[Risk Landscape](Risk-Landscape)":  ideally, when you take an action, you move to some place with worse risk to somewhere more favourable.
+
+Sometimes, you can end up somewhere _worse_:  the actions you take to solve a higher-level [Attendant Risk](Glossary#attendant-risk) will leave you with a worse [Attendant Risks](Glossary#attendant-risk).  Almost certainly, this will have been a [Hidden Risk](Glossary#hidden-risk) when you embarked on the action, otherwise you'd not have chosen it.  
 
 ### An Example: Automation
 
@@ -79,7 +81,7 @@ As a flavour of what's to come, let's look at [YAGNI](https://www.martinfowler.c
 
 The idea makes sense:  if you take on extra work that you don't need, _of course_ you'll be accreting [Attendant Risks](Glossary#attendant-risk).
 
-But, there is always the opposite opinion:  [You Are Gonna Need It](http://wiki.c2.com/?YouAreGonnaNeedIt).  As a simple example, we often add log statements in our code as we write it, though following YAGNI strictly says we should leave it out.  
+But, there is always the opposite opinion:  [You _Are_ Gonna Need It](http://wiki.c2.com/?YouAreGonnaNeedIt).  As a simple example, we often add log statements in our code as we write it, though following YAGNI strictly says we shouldn't.  
 
 #### Which is right?
 
@@ -106,14 +108,10 @@ So, "Do The Simplest Thing That Could Possibly Work" is really a helpful guideli
 So, here we've looked at Meeting Reality, which basically boils down to taking actions to manage risk and seeing how it turns out:
 
 - Each Action you take is a step on the Risk Landscape
-- Each Action is a cycle around our model.
-- Each cycle, you'll expose new [Hidden Risks](Glossary#hidden-risk), changing your [Internal Model](Glossary#Internal-Model).
-- Preferably, each cycle should reduce the overall [Attendant Risk](Glossary#attendant-risk) of the [Goal](Goal-In-Mind)
+- Each Action exposes new [Hidden Risks](Glossary#hidden-risk), changing your [Internal Model](Glossary#Internal-Model).
+- Ideally, each action should reduce the overall [Attendant Risk](Glossary#attendant-risk) on the project (that is, puts it in a better place on the [Risk Landscape](Glossary#risk-landscape)
 
-Surely, the faster you can do this, the better?  [Let's investigate...](Cadence)
-
-
-
+Could it be that _everything_ you do on a software project is risk management? <!-- tweet-end --> This is an idea explored in [the next section](All-Risk-Management).
 
 
 
