@@ -1,6 +1,6 @@
 ![For Review](images/state/for-review.png)
 
-Here, I am going to recap on some pre-existing knowledge about risk, generally, in order to set the scene for the next section on [Meeting Reality](Meeting-Reality).  
+Here, I am going to recap on some pre-existing knowledge about risk, generally, in order to set the scene for the next section which heads back to looking at risk on software projects.  
 
 ## Risk Registers
 

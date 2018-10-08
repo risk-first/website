@@ -69,7 +69,7 @@ In all, to de-risk, you should try and meet reality:
 - **In Smaller Chunks**: so you're not overburdened by hidden risks all in one go.
 - **With Feedback**: if you don't collect feedback from the experience of meeting reality, hidden risks _stay hidden_.
 
-In [Development Process](Development-Process), we looked at the use of UAT in order to [Meet Reality](Glossary#Meet-Reality) earlier.  By performing the UAT, we meet reality sooner.  The _cost_ of this is that we also expend precious time on that process which harms our schedule.
+In [Development Process](Development-Process), we looked at the use of UAT in order to [Meet Reality](Glossary#Meet-Reality) earlier.  By performing the UAT, we meet reality sooner.  The _cost_ of this is that we also expend precious time on that process which adds risk to the schedule.
 
 ![Testing flushes out hidden risk, but increases Schedule Risk](images/generated/meeting_reality_testing.png)
 
