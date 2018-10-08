@@ -14,13 +14,7 @@ How should we decide how to spend our time today?
 
 What actions should we take?  (In [Scrum](Agile) terminology, what is our _Sprint Goal_?).
 
-If we want to take the right actions, we need to have a good [Internal Model](Glossary#Internal-Model).  
-
-Sometimes, we will know that our model is deficient, and our time should be spend _improving_ it, perhaps by talking to our clients, or the support staff, or other developers, or reading.  
-
-But let's say for example, today's [action](Glossary#Taking-Action) is to grow our user base through an advertising campaign.  Perhaps this is because we have [Funding Risk](Schedule-Risk#funding-risk), and we need to demonstrate a large user base to get more funding from project sponsors, or maybe we want a large user base in order to capture market share before other competitors too (an [Opportunity Risk](Schedule-Risk#opportunity-risk).  
-
-![Today's Action](images/generated/simple_scenario_action.png)
+Let's say that we are working in a Startup, on a project building an online service.  As we discussed previously, we could call this a [Goal](Glossary#goal-in-mind), but we could also restate it as mitigating [Risk](Glossary#attendant-risk), which gives more clarity about our intentions.   For the startup, launching the Online Service is about mitigating ([Funding-Risk](Schedule-Risk#funding-risk)), in order to keep the startup alive. 
 
 ## Attendant Risks
 
@@ -35,7 +29,7 @@ What are the [Attendant Risks](Glossary#attendant-risk) that come with that goal
 
 I'm sure you can think of some more. 
 
-![Our Goal, With Attendant Risks](images/generated/goal2.png)
+![Our Goal, With Attendant Risks](images/generated/software_project_scenario_action.png)
 
 ## Evaluating The Risks
 
