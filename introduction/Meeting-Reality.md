@@ -37,7 +37,9 @@ Sometimes, you can end up somewhere _worse_:  the actions you take to solve a hi
 
 ### An Example: Automation
 
-diagram of how automation reduces process risk, but increases complexity?
+For example, _automating processes_ is very tempting: it _should_ save time, and reduce the amount of boring, repetitive work on a project.  But sometimes, it turns into an industry in itself, and consumes more effort than it's worth. 
+
+![Hidden Risks of Automation](images/generated/risk_landscape_2_automating.png)
 
 ### Another Quick Example: MongoDB
 
