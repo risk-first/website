@@ -31,6 +31,8 @@ Ideally, when you take an action, you are trading off a big risk for a smaller o
 
 You can think of taking actions as moving your project on a "[Risk Landscape](Risk-Landscape)":  ideally, when you take an action, you move to some place with worse risk to somewhere more favourable.
 
+![Navigating The Risk Landscape](images/generated/risk_landscape_1.png)
+
 Sometimes, you can end up somewhere _worse_:  the actions you take to solve a higher-level [Attendant Risk](Glossary#attendant-risk) will leave you with a worse [Attendant Risks](Glossary#attendant-risk).  Almost certainly, this will have been a [Hidden Risk](Glossary#hidden-risk) when you embarked on the action, otherwise you'd not have chosen it.  
 
 ### An Example: Automation
