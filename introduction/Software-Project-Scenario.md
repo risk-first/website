@@ -63,7 +63,7 @@ Can our risk model explain what happened here?
 - It's also possible that _for Ashley Maddison_ the perceived impact of any data-breach was considered low.  The impact is on the _customers_, rather than the _company_.
 - But, as the number of users of the sites increased, the risk increased too, but there was (apparently) no re-evaluation of the risk otherwise they would have addressed it.  This was a costly _failure to update the [Internal Model](Glossary#Internal-Model)_.
 
-![Attendant Risks of Improved Security](images/software_project_scenario_action_2.png)
+![Attendant Risks of Improved Security](images/generated/software_project_scenario_action_2.png)
 
 This story highlights a couple of important lessions.  <!-- tweet-start -->First, when exposing a service on the Internet, it's now a good idea to _look for trouble_:  you should go out and try and improve your [Internal Model](Glossary#Internal-Model).<!-- tweet-end -->   Thankfully, this is what sites like [OWASP](https://www.owasp.org/index.php/Top_10-2017_Top_10) are for:  they _tell you about the [Attendant Risks](Glossary#attendant-risk)_ <!-- tweet-end --> and further, try to provide some evaluation of them to guide your actions.   Second, you shouldn't expect an organisation with a morally-questionable business model to have your best interests at heart.
 
