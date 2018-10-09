@@ -103,4 +103,4 @@ Usually, we mean we've failed to achieve a goal, and since _goals are risks_, it
 
 It makes it much easier to tackle the RAID log if there's only one list:  all you do is pick either the _most important_ risk on the list, or the _most urgent_, or the risk you can make _the biggest impact on_, and deal with it.  
 
-In the next section, [Risk Theory](Risk-Theory) we look at how to figure out which one that is.
+In the next section, [A Software Project Scenario](Software-Project-Scenario we'll give an example of this in action.
