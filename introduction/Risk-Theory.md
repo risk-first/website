@@ -198,5 +198,5 @@ technologies used etc.  That is, the risks faced by IT projects are _too diverse
 
 Reality is messy.  Dressing it up with numbers doesn't change that and you risk [fooling yourself](Map-And-Territory).  If this is the case, is there any hope at all in what we're doing?  I would argue yes:   _forget precision_.  You should, with experience be able to hold up two separate risks and answer the question, "is this one bigger than this one?"  
 
-Reality is Reality, [so let's meet it](Meeting-Reality). 
+With that in mind, let's look at how we can meet reality [as fast and often as possible](Cadence).
 
