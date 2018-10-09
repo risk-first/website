@@ -3,17 +3,33 @@
   <svg:defs>
     <svg:style type="text/css"> @import url("risk.css");</svg:style>
   </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="diagram-113" name="Goal In Mind">
 
-  <diagram xmlns="http://www.kite9.org/schema/adl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="diagram-137" style="layout: right;">
+    <context id="c" bordered="true" style="kite9-sizing: minimize;">
 
-    <action id="1">Advertising New Features</action>
-    
-    <context id="2">
-      <risk class="attendant">Wrong Audience</risk>
-      <risk class="attendant">System Crashes</risk>
-      <risk class="attendant">Bugs</risk>
-      <risk class="attendant">Wrong Functionality</risk>
+      <risk class="attendant">Security 
+      Compromised</risk>
+
+      <label xsi:type="text-line" id="id_16">
+        <text>Internal Model</text>
+        <symbols />
+      </label>
     </context>
-    
+
+
+    <action>Security Hardening</action>
+
+    <context id="c" bordered="true">
+          <risk class="attendant">Longer
+           Time-To-Market</risk>
+          <risk class="attendant">Reputation Damage
+          (low to them)</risk>
+
+      <label xsi:type="text-line" id="id_16">
+        <text>Attendant Risks</text>
+        <symbols />
+      </label>
+    </context>
+
   </diagram>
 </svg:svg>
