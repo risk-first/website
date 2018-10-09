@@ -80,7 +80,12 @@ Yes, it's fine to say "we're in crisis", but to assume there is a different stra
 
 ## Invariances #1: Panic Invariance
 
-You would expect then, that any methods for managing software delivery should be _invariant_ to the level of crisis in the project.  If, for example, a project proceeds using [Scrum]() for eight months, and then the deadline looms and everyone agrees to throw Scrum out of the window and start hacking, then _this implies there is a problem with Scrum_.  Or at least, the way it was being implemented.  
+You would expect then, that any methods for managing software delivery should be _invariant_ to the level of crisis in the project.  If, for example, a project proceeds using [Scrum](Scrum) for eight months, and then the deadline looms and everyone agrees to throw Scrum out of the window and start hacking, then _this implies there is a problem with Scrum_, and that it is not _Panic Invariant_.  In fact, many tools like Scrum don't consider this:
+
+- If there is a production outage during the working week, we don't wait for the next Sprint to fix it.
+- Although a 40-hour work-week _is a great idea_, this goes out of the window if the databases all crash on a Saturday morning.
+
+In these cases, we (hopfully calmly) _evaluate the risks and take action_.  
 
 I call this **Panic Invariance**:   the methodology shouldn't need to change given the amount of pressure or importance on the table.
 
