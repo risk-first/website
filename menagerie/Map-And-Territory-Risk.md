@@ -41,7 +41,7 @@ In the [Feature Risk]() section, we broke down [Feature Risk]() on three axes:  
 
 Lets do this again and see how each type of [Feature Risk]() can manifest in the [Internal Model]():
 
-![Feature Risk, as manifested in the Internal Model](images/generated/map_and_territory_table_1_sideways.png)
+![Feature Risk, as manifested in the Internal Model](images/generated/risks/map-and-territory/map_and_territory_table_1_sideways.png)
 
 As with [Features]() in a product, Information in an [internal model]() has at least these three dimensions:
 
@@ -230,7 +230,7 @@ As usual, this section forms a grab-bag of examples in a complex topic.  But it'
 
 (NB: The Hype Cycle model is available in **Numbers** form [here](https://github.com/risk-first/website/blob/master/RiskMatrix.numbers).) 
 
-![Map And Territory Risk](images/generated/map-and-territory-risk.png)
+![Map And Territory Risk](images/generated/risks/map-and-territory/map-and-territory-risk.png)
 
 
 (talk about how operational risk is an extension of this).  tbd
