@@ -39,8 +39,6 @@ Just two things are needed for competition to occur:
  
 ![A model of competition:  scarce resources, and individual agents competing for them.](images/kite9/coordination-2.png)
 
-![Coordination Risk](images/generated/risks/coordination/coordination-risk.png)
-
 ### Coordination via Communication
 
 The only way that the agents can move away from competition towards coordination is via [Communication](Communication-Risk), and this is where their coordination problems begin.  
@@ -48,6 +46,8 @@ The only way that the agents can move away from competition towards coordination
 You might think, therefore, that this is just another type of [Communication Risk](Communication-Risk) problem, and that's often a part of it, but even with synchronized [Internal Models](Glossary#Internal-Model), coordination risk can occur.  Imagine the example of people all trying to madly leave a burning building.  They all have the same information (the building is on fire).  If they coordinate, and leave in an orderly fashion, they might all get out.  If they don't, and there's a scramble for the door, more people might die.
 
 But commonly, [Coordination Risk](Coordination-Risk) occurs where people have different ideas about how to achieve a [goal](Glossary#Goal-In-Mind), and they have different ideas because they have different evaluations of the [Attendant Risk](Glossary#attendant-risk).  As we saw in the section on [Communication Risk](Communication-Risk), we can only hope to synchronize [Internal Models](Glossary#Internal-Model) if there are high-bandwidth [Channels](Communication-Risk#channels) available for communication. 
+
+![Coordination Risk](images/generated/risks/coordination/coordination-risk.png)
 
 ## Problems Of Coordination
 
