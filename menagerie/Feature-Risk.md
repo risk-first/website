@@ -21,13 +21,13 @@ This is the one we've just discussed above: the feature that you (or your client
 
 [Feature Risk](Feature-Risk) also includes things that don't work as expected<!-- tweet-end -->: That is to say, [bugs](https://en.wikipedia.org/wiki/Software_bug).   Although the distinction between "a missing feature" and "a broken feature" might be worth making in the development team, we can consider these both the same kind of risk:  _the software doesn't do what the user expects_.
 
-![Implementation Risk](images/generated/implementation-risk.png) 
+![Implementation Risk](images/generated/risks/feature/feature-implementation-risk.png) 
 
 (At this point, it's worth pointing out that sometimes, _the user expects the wrong thing_.  This is a different but related risk, which could be down to [Training](Training) or [Documentation](Documentation) or simply [Poor User Interface](Communication-Risk) and we'll look at that more in [Communication Risk](Communication-Risk).)
 
 ## Regression Risk
 
-![Regression Risk](images/generated/regression-risk.png) 
+![Regression Risk](images/generated/risks/feature/feature-regression-risk.png) 
 
 [Regression Risk](Feature-Risk#regression-risk) is basically risk of breaking existing features in your software when you add new ones.  <!-- tweet-end -->As with the previous risks, the eventual result is the same; customers don't have the features they expect.  This can become a problem as your code-base [gains Complexity](Complexity-Risk), as it becomes impossible to keep a complete [Internal Model](Glossary#Internal-Model) of the whole thing.
 
@@ -35,7 +35,7 @@ Also, while delivering new features can delight your customers, breaking existin
 
 ## Conceptual Integrity Risk
 
-![Conceptual Integrity Risk](images/generated/conceptual-integrity-risk.png) 
+![Conceptual Integrity Risk](images/generated/risks/feature/conceptual-integrity-risk.png) 
 
 Sometimes, users _swear blind_ that they need some feature or other, but it runs at odds with the design of the system, and plain _doesn't make sense_.   Often, the development team can spot this kind of conceptual failure as soon as it enters the [Backlog](Prioritisation). Usually, it's in coding that this becomes apparent.  
 
@@ -53,7 +53,7 @@ This is a particularly pernicious kind of [Feature Risk](Feature-Risk) which can
 
 ## Feature Access Risk
 
-![Feature Access Risk](images/generated/feature-access-risk.png) 
+![Feature Access Risk](images/generated/risks/feature/feature-access-risk.png) 
 
 Sometimes, features can work for some people and not others:  this could be down to [Accessibility](https://en.wikipedia.org/wiki/Accessibility) issues, language barriers or localization.   <!-- tweet-end -->
 
@@ -65,7 +65,7 @@ In Marketing, minimizing [Feature Access Risk]() is all about [Segmentation](): 
 
 [Feature Access Risk]() is related, of course, to [Market Risk](Feature-Risk#market-risk), which I introduced on the [Risk Landscape](Risk-Landscape) page as being the value that the market places on a particular asset.  <!-- tweet-end -->Since the product you are building is your asset, it makes sense that you'll face [Market Risk](Feature-Risk#market-risk) on it:
 
-![Market Risk](images/generated/market-risk.png) 
+![Market Risk](images/generated/risks/feature/market-risk.png) 
 
  > "Market risk is the risk of losses in positions arising from movements in market prices." - [Market Risk, _Wikipedia_](https://en.wikipedia.org/wiki/Market_risk)
 
@@ -75,7 +75,7 @@ In the same way, _you_ have [Market Risk](Feature-Risk#market-risk) on the produ
 
 ## Feature Drift Risk
 
-![Feature Drift Risk](images/generated/feature-drift-risk.png) 
+![Feature Drift Risk](images/generated/risks/feature/feature-drift-risk.png) 
 
 **Feature Drift** is the tendency that the features people need _change over time_.   For example, at one point in time, supporting IE6 was right up there for website developers, but it's not really relevant anymore.  <!-- tweet-end --> Although that change took _many_ years to materialize, other changes are more rapid.    
 
