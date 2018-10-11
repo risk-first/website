@@ -1,12 +1,10 @@
 ![Draft](images/state/draft.png)
 
-![Boundary Risk](images/generated/boundary-risk.png)
-
 In the previous few sections on [Dependency Risk]() we've touched on [Boundary Risk](Boundary-Risk) several times, but now it's time to tackle it head-on and discuss this important type of risk.  
 
 In terms of the [Risk Landscape](Risk-Landscape), [Boundary Risk](Boundary-Risk) is exactly as it says:  a _boundary_, _wall_ or other kind of obstacle in your way to making a move you want to make.   This changes the nature of the [Risk Landscape](), and introduces a maze-like component to it.  It also means that we have to make _decisions_ about which way to go, knowing that our future paths are constrained by the decisions we make.
 
-![Dead-End Risk](images/generated/dead-end-risk.png)
+![Boundary Risk](images/generated/risks/boundary/boundary-risk.png)
 
 And, as we discussed in [Complexity Risk](Complexity-Risk), there is always the chance we end up at a [Dead End](Complexity-Risk#dead-end-risk), and we've done work that we need to throw away.  In this case, we'll have to head back and make a different decision.
 
