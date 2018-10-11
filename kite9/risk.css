@@ -8,6 +8,11 @@
 	src: url('GOTHICB.ttf') format('truetype');
 }
 
+@font-face {
+	font-family: "gothic-italic";
+	src: url('GOTHICI.ttf') format('truetype');
+}
+
 /*
  * Required so we can process old XML content
  */
@@ -35,6 +40,19 @@ artifact {
 	kite9-type: container;
 	kite9-layout: vertical;	
 	kite9-template: url(template.svg#artifact);
+	kite9-padding: 10pt; 
+	kite9-connection-align: 50%;
+	kite9-min-size: 110pt 140pt;	
+}
+
+users {
+	kite9-type: container;
+	kite9-margin: 10pt;
+	kite9-link-inset: 10pt;
+	kite9-link-gutter: 10pt;
+	kite9-type: container;
+	kite9-layout: vertical;	
+	kite9-template: url(template.svg#users);
 	kite9-padding: 10pt; 
 	kite9-connection-align: 50%;
 	kite9-min-size: 110pt 140pt;	
@@ -152,8 +170,8 @@ risk.internal-model {
 	kite9-template: url(template.svg#internal-model);
 }
 
-risk.fit {
-	kite9-template: url(template.svg#fit);
+risk.feature-fit {
+	kite9-template: url(template.svg#feature-fit);
 }
 
 risk.implementation {
@@ -295,7 +313,7 @@ image-content {
  	kite9-usage: decal;
 }
 
-action action-code,
+action code,
 risk code {
 	kite9-horizontal-align: center;
 	kite9-vertical-align: top;
@@ -306,12 +324,11 @@ risk code {
 	kite9-margin: 10pt;
 }
 
-action action-code {
-	kite9-template: url(template.svg#action-code);
-	kite9-type: container;
+action code,
+action title {
+	kite9-horizontal-align: left;
 }
 
-action action-name,
 title {
 	kite9-type: container;
 	kite9-sizing: minimize;
@@ -321,13 +338,6 @@ title {
 	kite9-vertical-align: bottom;
 
 }
-action action-name {
-	kite9-template: url(template.svg#action-name);
-	kite9-padding-left: 20pt;
-	kite9-padding-right: 50pt;
-	kite9-padding-bottom: 20pt;
-}
-
 
 .risk-back {
 	stroke: black;
@@ -390,9 +400,7 @@ context,
 diagram,
 glyph,
 arrow,
-link,
-panel,
-description {
+link {
 	kite9-margin: 20pt;
 	kite9-link-inset: 10pt;
 	kite9-link-gutter: 10pt;
@@ -491,6 +499,12 @@ context {
 	kite9-traversal: always;
 	kite9-padding: 12pt;	
 	kite9-link-inset: 12pt;
+}
+
+group {
+	kite9-type: container;
+	kite9-sizing: maximize;
+	kite9-traversal: always;
 }
 
 .context-back {
@@ -681,20 +695,7 @@ table celltext.top {
 description {
 	kite9-type: container;	
 	kite9-template: url(template.svg#description);
-	font-size: 18pt;
-}
-
-panel {
-	kite9-template: url(template.svg#panel);
-	kite9-type: container;
-	kite9-sizing: maximize;
-	kite9-traversal: always;
-	kite9-padding: 12pt;	
-	kite9-link-inset: 12pt;
-}
-
-.panel-back {
-	fill: white;
-	stroke: none;
-	stroke-width: 0;
+	font-size: 14pt;
+	font-family: "gothic-italic";
+	kite9-padding: 10pt;
 }

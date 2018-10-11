@@ -31,16 +31,14 @@ public class ImagePreprocessor {
 	public static void main(String[] args) throws Exception {
 		String file = args[0];
 		File f = new File(file);
-		Properties p = new Properties();
-		p.load(new FileInputStream(new File("kite9/definitions.properties")));
 		
 		Kite9Log.setLogging(false);
 		
 		if (file.endsWith("md")) {
 			BufferedReader br = createBufferedReader(f);
-			process(br, f, p);
+			process(br, f);
 		} else {
-			processGeneratedImage(file, p);
+			processGeneratedImage(file);
 		}
 		
 	}
@@ -49,25 +47,25 @@ public class ImagePreprocessor {
 		return new BufferedReader(new FileReader(f));
 	}
 
-	private static void process(BufferedReader br, File origin,  Properties definitions) throws Exception {
+	private static void process(BufferedReader br, File origin) throws Exception {
 		String line = br.readLine();
 		while (line != null) {
 			if (line.trim().contains("(images/generated/")) {
-				processGeneratedImage(line,definitions);
+				processGeneratedImage(line);
 				System.out.println(line);
 			}
 			line = br.readLine();
 		}
 	}
 
-	private static void processGeneratedImage(String line, Properties definitions) throws Exception {
+	private static void processGeneratedImage(String line) throws Exception {
 		
 		try {
 			String imagePath;
 			try {
-				imagePath = line.substring(line.lastIndexOf("(")+1, line.lastIndexOf("-400dpi.png)"));
+				imagePath = line.substring(line.lastIndexOf("(")+1, line.lastIndexOf(".png)"));
 			} catch (Exception e) {
-				imagePath = line.substring(line.lastIndexOf("{")+1, line.lastIndexOf("-400dpi.png}"));
+				imagePath = line.substring(line.lastIndexOf("{")+1, line.lastIndexOf(".png}"));
 			}
 
 			String outputPath1 = "../website.wiki/"+imagePath+".png";
@@ -77,23 +75,9 @@ public class ImagePreprocessor {
 			
 			File sourceFile = new File("../website.wiki/src/"+imagePath+".xml");
 			if (sourceFile.exists()) {
-				// a pre-existing file
-				
-				// check if we have a template
 				TranscoderInput in1 = new TranscoderInput(new FileReader(sourceFile));
 				TranscoderInput in2 = new TranscoderInput(new FileReader(sourceFile));
 				TranscoderInput in3 = new TranscoderInput(new FileReader(sourceFile));
-				createDifferentImageVersions(outputPath1, outputPath2, outputPath3, in1, in2, in3);
-			} else if (line.lastIndexOf("risk") > -1) {
-				// create icon with definition
-				String str = RepositoryHelp.stream(ImagePreprocessor.class.getResourceAsStream("definition-template.svg"));
-				String name = line.substring(line.lastIndexOf("/")+1, line.lastIndexOf("-risk-400dpi.png"));
-				str = str.replaceAll("\\$\\{TYPE\\}", name);
-				String definition = definitions.getProperty(name);
-				str = str.replaceAll("\\$\\{DESCRIPTION\\}", " - "+ definition);
-				TranscoderInput in1 = new TranscoderInput(new StringReader(str));
-				TranscoderInput in2 = new TranscoderInput(new StringReader(str));
-				TranscoderInput in3 = new TranscoderInput(new StringReader(str));
 				createDifferentImageVersions(outputPath1, outputPath2, outputPath3, in1, in2, in3);
 			} 
 		} catch (Exception e) {
@@ -107,9 +91,10 @@ public class ImagePreprocessor {
 		in1.setURI(kite9Dir.toURI().toString());
 		in2.setURI(kite9Dir.toURI().toString());
 		in3.setURI(kite9Dir.toURI().toString());
-
 		
-		TranscoderOutput out = new TranscoderOutput(new FileOutputStream(new File(outputPath1)));
+		File outputFile1 = new File(outputPath1);
+		ensureDirectory(outputFile1.getParentFile());
+		TranscoderOutput out = new TranscoderOutput(new FileOutputStream(outputFile1));
 		Kite9PNGTranscoder transcoder = new Kite9PNGTranscoder();
 		transcoder.transcode(in1, out);
 		System.out.println("Wrote: "+outputPath1);
@@ -122,16 +107,25 @@ public class ImagePreprocessor {
 			System.out.println("Wrote: "+outputPath2);
 		} catch (OutOfMemoryError oome) {
 			// in this case, copy the original
-			FileChannel source = new FileInputStream(new File(outputPath1)).getChannel();
-			FileChannel destination = new FileOutputStream(new File(outputPath2)).getChannel();
-	        destination.transferFrom(source, 0, source.size());
-	        source.close();
-	        destination.close();
+			copyFile(new File(outputPath2), outputFile1);
 		}
 		
 		TranscoderOutput out3 = new TranscoderOutput(new FileOutputStream(new File(outputPath3)));
 		Kite9SVGTranscoder transcoder3 = new Kite9SVGTranscoder();
 		transcoder3.transcode(in3, out3);
 		System.out.println("Wrote: "+outputPath3);
+	}
+
+	public static void copyFile(File dest, File sourceFile) throws FileNotFoundException, IOException {
+		FileChannel source = new FileInputStream(sourceFile).getChannel();
+		FileChannel destination = new FileOutputStream(dest).getChannel();
+		destination.transferFrom(source, 0, source.size());
+		source.close();
+		destination.close();
+	}
+
+	public static void ensureDirectory(File d) throws FileNotFoundException, IOException {
+		d.mkdirs();
+		copyFile(new File(d, "risk.css"), new File("./kite9/risk.css"));
 	}
 }
