@@ -10,7 +10,7 @@ Not considering [Feature Risk](Feature-Risk) means that you might be building th
 
 ## Feature Fit Risk
 
-![Feature Risk](images/generated/fit-risk.png) 
+![Feature Risk](images/generated/risks/feature/feature-fit-risk.png) 
 
 This is the one we've just discussed above: the feature that you (or your clients) want to use in the software _isn't there_.   Now, as usual, you could call this an issue, but we're calling it a [Risk](Glossary#Risk) because it's not clear exactly _how many_ people are affected, or how badly. 
 

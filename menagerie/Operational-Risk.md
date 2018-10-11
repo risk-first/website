@@ -1,21 +1,8 @@
 ![Under Construction](images/state/uc.png)
 
-In this section on [Operational Risks], we're going to take our head out of the clouds a bit and start considering the realities of running software systems in the real world.  After all, [Coordination Risk]() and [Map And Territory Risk]() got a bit theoretical.  Here, we're going to look at [Operational Risks](), including [Security Risk]() and [Reputational Risk](): real-world concerns for anyone running a business.  
+In this section on [Operational Risks], we're going to start considering the realities of running software systems in the real world.  
 
-## A Recap
-
-But before we go there, let's try and recap on where we've come so far.  So far, we've been looking at risks to _systems in general_: 
-
-- [Complexity Risk]: to do with the number of independent components in the system, and their interactions.
-- [Dependency Risk]:  how those components rely on each other..
-- [Coordination Risk]: the problem of competition over dependencies, and ..
-- [Communication Risk]: how they mitigate [Coordination Risk]() by taking on [Communication Risk].
-
-Here is a diagram that shows how these different elements line up:
-
-![Systemic View of Risks](images/kite9/production-1.png)
-
-(tbd, remove outside client)
+Here, we're going to set the scene by looking at what constitutes an [Operational Risk](), and then look at the related disciplines of [Operations Management]() and [Operational Risk Management].  Following this background, we'll apply the Risk-First model and dive into the various mitigations for [Operational Risk]().  
 
 ## Operational Risks
 
@@ -43,49 +30,57 @@ It's tempting to take a very narrow view of the dependencies of a system, but [O
    - Workers going on strike.
    - Employees trying to steal from the company (bad actors).
 
-.. basically, a long laundry-list of everything that can go wrong due to operating in "The Real World".  Although these issues don't exist with _ideal_ dependencies, pragmatically, when we design our system, we design in features to _strengthen_ it against [Operational Risks]() such as these.   _However_, we don't get these for free:  they come at the cost of extra [Complexity Risk]().
+.. basically, a long laundry-list of everything that can go wrong due to operating in "The Real World".   
 
-For example, as we saw in [Development Process](), a lot of the processes we put in place (e.g. [Continuous Integration]() or various types of [Testing]()) are there to mitigate [Operational Risk]() problems caused by _releasing buggy software_.  [Unit Testing]() increases our [Kolmogorov Complexity]() (as there is more code) but we accept this extra complexity as the price for mitigating this [Operational Risk]().  [User Acceptance Testing]() increased our [Schedule Risk](), but again reduced the likelihood of bugs making it into production.
-
-Dependencies are not just things we _use_, then:  For a system to run well, it needs to carefully manage unreliable dependencies, and ensure their safety and availability.  In the example of the human food system, say, it's the difference between [Hunter-Gathering]() (picking up food where we find it) and [Farming](). 
- 
-## Operational Risk Management
-
-Since we have looked in detail at various types of [Dependency Risk](), in this section we'll be focusing on the job of [Operational Risk Management](), and the tools it brings to bear on [Dependency Risk]():  
+Dependencies are not just things we _use_, then:  For a system to run well, it needs to carefully manage unreliable dependencies, and ensure their safety and availability.  In the example of the human food system, say, it's the difference between [Hunter-Gathering]() (picking up food where we find it) and [Farming]().   So, [Operational Risk Management]() is the purview of dealing with all the types of issues listed above:
 
 > "Operational Risk Management is the oversight of Operational Risk, including the risk of loss resulting from inadequate or failed internal processes and systems; human factors; or external events." - [Operational Risk Management, _Wikipedia_](https://en.wikipedia.org/wiki/Operational_risk_management)
 
-![Systemic View of Risks (2)](images/kite9/production-2.png)   tbd, need to modify this, 
+## Operations Management
+
+If we are designing a software system to "live" in the real world, we have to be mindful of the environment we're working in, and adapt our software and processes accordingly.   This view of the "wider" system is the discipline of Operations Management.  The below diagram (from ["Operations Management" by _Slack et al._]()) breaks down some of the concerns of this discipline.
+
+![A General Model of Operations Management](images/kite9/operations_management.png)
+
+In this diagram, a **Transform Process** (the **Operation** itself) is embedded in the **Environment**, which supplies it with three key dependencies:
+  
+ - The **Resources** it needs, whether _transformed_ resources (like electricity or information, say).  
+ - It's **Customers**, which supply it with money in return for goods and services, and 
+ - An **Operational Strategy** to follow.
+ 
+We have looked at processes like the **Transform Process** in the section on [Process Risk](Process-Risk).  The healthy function of this process is the domain of [Operations Management](), and in the diagram this involves the following tasks:
+
+ - **Design**:  Ensuring that the design of the product and the transform process itself fulfils an **Operational Strategy**.
+ - **Planning and Control**:  Ensuring that the Operation is working according to its design.  This covers aspects such as capacity planning, project planning and quality control.  
+ - **Improvement**:  Improving the operation in response to changes in the **Environment** and the **Operational Strategy**, detecting failure and recovering from it.
+
+You might think that for an IT operation, tasks like **Design** and **Planning** belong within the Development function within an organisation.  But there is (and always has been) significant overlap because it's important that we design software that allows it to be managed effectively.  In recent years, the "DevOps" movement has brought this relationship into sharper focus.
+
+![DevOps Activities:  Development and Operations activities overlap one-another](images/devops.png)
+
+
+
+![Mitigating Operational Risk Increases Complexity]()
 
 ## Mitigating Operational Risk
 
-[Operational Risk]() then, is really just an extended view on [Dependency Risk](), with reference to embedding the system of dependencies in the real world.  There are various activities then that Operational Risks, then are things that happen _to_ our carefully constructed, theoretical system, as shown in this diagram:
+In the real world, [Dependencies]() can fail in any number of unusual ways.  For this reason, the toolbox of mitigations for [Operatational Risk]() is somewhat different to that for regular dependencies.  Here we're going to focus on four _basic strategies_:
 
-diagram:  our system -> event's exploit weakness -> effect -> reaction -> recovery -> adaptation  
+![Diagram of Four Ways to Mitigate Operational Risk](images/kite9/operational_risk.png)
+
+
+
+
+
+
+
+### Control 
 
 (our system: meeting reality, deployment)
 (event: detection)
-(weakness: minimization (see Security risk))
-(effect:  what happens, how much chaos ensues)
 (sensing / detection)
 (reaction:  monitoring, etc)
-(recovery:  how we fix it)
-(adaptation: how the system changes in the future)
-(prediction: how to forecast failures)  pestle, environmental scanning. / anticipation
-(practicing: e.g. testing failover etc.)
-(changing outside world)
-
-These are properties not only of software systems, but biological systems, and businesses too.  Let's now take each in turn and inspect it further.
-
-
-Therefore, one of the best defences against [Operational Risk]() is dealing with the issues quickly once they happen.  This requires:
-
-Good [Feedback Loops]() in the form of [Monitoring](Monitoring) 
-and rapid response to issues.
-
-tbd, talk with John about this
-
-## Meeting Reality
+(pestle, environmental scanning.)
 
 So in this second model, we are now considering that the world is a dangerous, untrustworthy place where _bad things happen_, either deliberately or accidentally.  And, since we don't have a perfect understanding of the world, most of the [Production Risk]() we face is [Hidden Risks](Glossary#hidden-risk).  
 
@@ -109,22 +104,20 @@ The "should we ship?" decision is therefore a complex one.  In [Meeting Reality]
 |**In Smaller Chunks**             |[Modular Releases]() [Microservices]() [Feature Toggles]() Trial Populations   |
 |**With Feedback**                 |User Communities, Support Groups, Monitoring, Logging, Analytics|
 
-## External Events
+### Planning
 
-We're familiar with the concept of taking steps on the [Risk Landscape], wherein we [take action]() to move to a position where the [Attendant Risks](Glossary#attendant-risk) are more acceptable to us.  However, now we have to contend with the idea that external events _also_ change the risk landscape too.  If there is sudden bad weather, we might have a risk of a power-cut, and the losses that might entail to productivity or sales.   If there is a change of government, that might impact the contracts we've written, or the security of our servers or staff.
+(prediction: how to forecast failures)   / anticipation  -- operations strategy
+(forecasting)
+(adaptation: how the system changes in the future)
+(trend analysis)
 
-Being _in production_ is accepting that the [Risk Landscape]() is a volatile, uncaring place.  But it's worse than that, since we also have to contend with [Bad Actors], who are deliberately out to exploit weaknesses in the systems we build.
+### Know Thyself
 
-Ordinarily, when we transact with a [Dependency], it should be the case that after the transaction, there is value on both sides of the transaction.  This could be, _you do my accounting_, I pay you money.  On both sides, financial risks are reduced.  If the price is too high, or too low, we see one or other side getting the better deal, and _capturing an unfair share of the value_. 
-
-With a [Bad Actor], we're in a situation more like a zero-sum game:  value is _taken_ from one party and _transferred_ to the other.  These are exactly the dependency relationships that societies _don't_ condone: there is net _zero_ or _negative_ value in the transaction.
-
-[In this diagram, B does a deal with A, the value of the product B gets from A is always 4, but the price varies with the X axis.  When the price is zero, B captures all the value, but as the price increases, it becomes a worse and worse deal for B, and the net value heads towards zero or negative.](images/deal.png)
-
-
-- Regulatory Risk  Legal Risk  (Pestle?)
-
-## Weaknesses
+(practicing: e.g. testing failover etc.)
+(weakness: minimization (see Security risk), penetration testing)
+(effect:  what happens, how much chaos ensues)
+(changing outside world)
+(audit)
 
 Security of supply
 
@@ -154,20 +147,50 @@ tbd, How much do compilers do for you?   Now, they prevent many kinds of securit
 
       
       
-      
-## Operational Risk
 
-When processes fail, this is called *Operational Risk*:
 
-tbd - Wikipedia definition
+### Reaction
 
-This is a very specific name for [Reliability Risk]() with regard to processes.  In the UK each year, X number of people are killed in car accidents.  If you regard driving a car from A to B as a process, then you could say that car accidents are [Operational Risk].  Why do we tolerate such costly operational risk in the UK.  Could it be reduced?  Well, yes.  There are lots of ways.  One way is that we could just reduce the speed limit.  
- 
-It is interesting that we _don't_ do that:  although we know the driving process fails, and fails in a way that is costly to human lives, as a society we value the freedom, the economic efficiency and time savings that come from not mitigating this operational risk.  Changing the speed limit would have it's own risks, of course: there would be a complicated transition to manage.   However, if ten times as many people were killed in car accidents, and it was shown that reducing the speed limit would help, maybe it would be done.  The [Operational Risk]() would outweigh the [Schedule Risk](Schedule-Risk).
+(review)
+(recovery)
+(processes and procedures)
+(planning change)
+(homeostasis)
 
-The point of this is that we _accept_ [Operational Risk]() as we go.  However, if opportunities rise to mitigate it, which don't leave us with a net risk increase elsewhere, we'll make those improvements.      
-      
 
+https://en.wikipedia.org/wiki/Life#Biology
+
+
+These are properties not only of software systems, but biological systems, and businesses too.  Let's now take each in turn and inspect it further.
+
+
+Therefore, one of the best defences against [Operational Risk]() is dealing with the issues quickly once they happen.  This requires:
+
+Good [Feedback Loops]() in the form of [Monitoring](Monitoring) 
+and rapid response to issues.
+
+tbd, talk with John about this
+
+## Meeting Reality
+
+
+## External Events
+
+We're familiar with the concept of taking steps on the [Risk Landscape], wherein we [take action]() to move to a position where the [Attendant Risks](Glossary#attendant-risk) are more acceptable to us.  However, now we have to contend with the idea that external events _also_ change the risk landscape too.  If there is sudden bad weather, we might have a risk of a power-cut, and the losses that might entail to productivity or sales.   If there is a change of government, that might impact the contracts we've written, or the security of our servers or staff.
+
+Being _in production_ is accepting that the [Risk Landscape]() is a volatile, uncaring place.  But it's worse than that, since we also have to contend with [Bad Actors], who are deliberately out to exploit weaknesses in the systems we build.
+
+Ordinarily, when we transact with a [Dependency], it should be the case that after the transaction, there is value on both sides of the transaction.  This could be, _you do my accounting_, I pay you money.  On both sides, financial risks are reduced.  If the price is too high, or too low, we see one or other side getting the better deal, and _capturing an unfair share of the value_. 
+
+With a [Bad Actor], we're in a situation more like a zero-sum game:  value is _taken_ from one party and _transferred_ to the other.  These are exactly the dependency relationships that societies _don't_ condone: there is net _zero_ or _negative_ value in the transaction.
+
+[In this diagram, B does a deal with A, the value of the product B gets from A is always 4, but the price varies with the X axis.  When the price is zero, B captures all the value, but as the price increases, it becomes a worse and worse deal for B, and the net value heads towards zero or negative.](images/deal.png)
+
+
+- Regulatory Risk  Legal Risk  (Pestle?)
+
+
+   
 
 tbd.  diagram version 3.
 
@@ -209,48 +232,4 @@ Correlation
 reputational damage
 
 
-## Reaction & Recovery
-
-## Reliability Risk
-
-    - Feedback Loops
-       - Bug reports, feedback
-       - Quality of feedback
-       - Internal Controls
-         - Agency Risk meets Production Risk (bad actors, controls)
-
-
-
-      - Contingency Planning 
-      - Disaster Recovery
-            - Performance Degradation / Runaway processes  (Performance Risk)
-      
-            - Support (trade off - promptness vs ability)
-      
-      Sometimes, the reaction of the company makes things worse - streisand effect? others?
-
-      - Poor monitoring, visibility risk meets operational risk (otherwise, it doesn't matter - good example here)
-      - Correlation  (need a good example here)
-      - Monitoring Tools and Logs
-
-## Prevention
-
- - How we learn from our mistakes
- - You can't know everything
- - Reality changes anyway
  
-## Performance Risk
-
-There is a lot more to Operational Risk.  Here, we've touched on it, and sketched the edges of it enough for it to be familiar and fit in our framework.
-
-## Reputational Risk
-
-## High-Profile Cases
-
-## Maturity 
-
-https://math.nist.gov/IFIP-UQSC-2011/slides/Oberkampf.pdf
-https://www.bsimm.com/framework/intelligence/attack-models.html
-ISO27001
-
-OWASP
