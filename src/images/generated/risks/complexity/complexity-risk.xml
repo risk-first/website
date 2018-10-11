@@ -22,22 +22,27 @@
     <action id="a2">Libraries, Languages</action>
   </group>
   
-  <context id="d" style="kite9-layout: down; kite9-horizontal-align: left;">
-    <group id="g1" style="kite9-layout: right; ">
+  <group style="kite9-layout: down;">
+    <context id="d1" style="kite9-layout: right; ">
       <risk id="r1" class="schedule" />
       <risk class="feature-fit" />
-    </group>
     
-    <group id="g2" style="kite9-layout: right; ">
-     <risk id="r2" class="dependency" />
-     <risk class="boundary" />
-    </group>
-    
-     <label xsi:type="text-line" id="id_16">
-      <text>Attendant Risks</text>
-      <symbols />
-    </label>
-  </context>
+       <label xsi:type="text-line" id="id_16">
+        <text>Attendant Risks</text>
+        <symbols />
+      </label>
+    </context>
+  
+    <context id="d2" style="kite9-layout: right;">
+       <risk id="r2" class="dependency" />
+       <risk class="boundary" />
+      
+       <label xsi:type="text-line" id="id_16">
+        <text>Attendant Risks</text>
+        <symbols />
+      </label>
+    </context>
+  </group>
 
   <link drawDirection="RIGHT" class="invisible">
     <from reference="a1" />
