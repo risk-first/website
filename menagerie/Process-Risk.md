@@ -87,7 +87,7 @@ For many years I have worked in the Finance Industry, and it's given me time to 
 
 ## Process Risks
 
-![Process Risk](images/generated/process-risk.png)
+![Process Risk](images/generated/risks/process/process-risk.png)
 
 **Process Risk**, then, is a type of [Dependency Risk](Dependency-Risk), where you are relying on a process.  In a way, it's no different from any other kind of [Dependency Risk](Dependency-Risk).   But [Process Risk](Process-Risk) manifests itself in fairly predictable ways:
 
@@ -113,8 +113,6 @@ The feedback loops allow us to perform [Retrospectives and Reviews](Review) to i
  
 ### Bureaucracy Risk
 
-![Bureaucracy Risk](images/generated/bureaucracy-risk.png)
-
 Where we've talked about process evolution above, the actors involved have been acting in good faith:   they are working to mitigate risk in the organisation.  The [Process Risk](Process-Risk) that accretes along the way is an _unintended consequence_:  There is no guarantee that the process that arises will be humane and intuitive.  Many organisational processes end up being baroque or Kafkaesque, forcing unintuitive behaviour on their users.  This is partly because process design is _hard_, and it's difficult to anticipate all the various ways a process will be used ahead-of-time.  So, some of [Bureaucracy Risk](Process-Risk#process-accretion-and-bureaucracy-risk) is due to [Complexity](Complexity-Risk).
 
 But [Parkinson's Law](https://en.wikipedia.org/wiki/Parkinsons_law) takes this one step further:  the human actors shaping the organisation will abuse their positions of power in order to further their own careers (this is [Agency Risk](Agency-Risk), which we will come to in a future section):
@@ -125,8 +123,6 @@ This implies that there is a tendency for organisations to end up with _needless
  
 ### Credit Risk
 
-![Credit Risk](images/generated/credit-risk.png)
-
 Where the process you depend on is being run by a third-party organisation, (or that party depends on you) you are looking at [Credit Risk](Process-Risk#credit-risk) (also known as [Counterparty Risk](Process-Risk#credit-risk)):
 
 > "A credit risk is the risk of default on a debt that may arise from a borrower failing to make required payments... For example... A business or consumer does not pay a trade invoice when due [or] A business does not pay an employee's earned wages when due" - [Credit Risk, _Wikipedia_](https://en.wikipedia.org/wiki/Credit_risk)
@@ -136,6 +132,8 @@ Money is _changing hands_ between you and the supplier of the process, and often
 There's a couple of ways this could go wrong:  They may _take my payment_, but then turn off my account.  Or, they could go bankrupt, and leave me with the costs of moving to another provider (this is also [Dead-End Risk](Complexity-Risk#dead-end-risk)).  
 
 Mechanisms like [insurance](https://en.wikipedia.org/wiki/Insurance_policy), [contracts](https://en.wikipedia.org/wiki/Contract) and [guarantees](https://en.wikipedia.org/wiki/Guarantee) help mitigate this risk at the cost of complexity and expense.
+
+![Credit Risk](images/generated/risks/process/credit-risk.png)
 
 ### Sign-Offs
 
