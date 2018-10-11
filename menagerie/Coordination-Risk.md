@@ -47,7 +47,7 @@ You might think, therefore, that this is just another type of [Communication Ris
 
 But commonly, [Coordination Risk](Coordination-Risk) occurs where people have different ideas about how to achieve a [goal](Glossary#Goal-In-Mind), and they have different ideas because they have different evaluations of the [Attendant Risk](Glossary#attendant-risk).  As we saw in the section on [Communication Risk](Communication-Risk), we can only hope to synchronize [Internal Models](Glossary#Internal-Model) if there are high-bandwidth [Channels](Communication-Risk#channels) available for communication. 
 
-![Coordination Risk](images/generated/risks/coordination/coordination-risk.png)
+![Coordination Risk - Mitigated by Communication](images/generated/risks/coordination/coordination-risk.png)
 
 ## Problems Of Coordination
 
@@ -251,6 +251,8 @@ Because it's based on outright competition, if someone beats you to completing a
 For this reason, BTC agents [coordinate](Coordination-Risk) into [mining consortia](https://en.bitcoin.it/wiki/Comparison_of_mining_pools), so they can avoid working on the same tasks at the same time.  But this in itself is a problem, because the whole _point_ of BTC is that it's competitive, and no one entity has control.  So, mining pools  tend to stop growing before they reach 50% of the BTC network's processing power.  Taking control would be [politically disastrous](https://www.reddit.com/r/Bitcoin/comments/5fe9vz/in_the_last_24hrs_three_mining_pools_have_control/) and confidence in the currency (such as there is) would likely be lost.
 
 ## Communication Is For Coordination
+
+![Coordination Risk - Mitigated by Software Tools](images/generated/risks/coordination/coordination-risk-2.png)
 
 So, now we have a fundamental limit on how much [Coordination Risk](Coordination-Risk) we can mitigate.  And, just as there are plenty of ways to mitigate [Coordination Risk](Coordination-Risk) within teams of people, organisations or living organisms, so it's the case in software.   
 
