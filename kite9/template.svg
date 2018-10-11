@@ -59,13 +59,13 @@
   
   <template id="action">
     <back style='kite9-usage: decal; kite9-type: svg; '>
-      <svg:polygon points='5 5, #{$width - 35} 5, #{$width - 5} #{$height div 2}, #{$width - 35} #{$height - 5}, 5 #{$height - 5}' style='fill: white; stroke-linejoin: round; stroke: black; stroke-width: 10pt;' />
+      <svg:polygon points='0 0, #{$width - 35} 0, #{$width} #{$height div 2}, #{$width - 35} #{$height}, 0 #{$height}' style='fill: url(#risk-background); stroke: black; stroke-width: 1pt;' />
     </back>
-    <front style="kite9-usage: regular; kite9-type: container; kite9-layout: down;">
-      <action-code>Action</action-code>
-      <action-name>
+    <front style="kite9-usage: regular; kite9-type: container; kite9-layout: down; 	kite9-padding: 10pt; kite9-padding-right: 40pt; ">
+      <code>Action</code>
+      <title>
       	<contents />
-      </action-name>
+      </title>
     </front>
   </template>
   
@@ -76,20 +76,11 @@
     <title><contents /></title>
   </template>
   
-  <template id='action-code'>
-    <svg:g class="action-code-label-front">
-      <front style="kite9-type: text; ">
-        <contents />
-      </front>
-    </svg:g>
-  </template>
-  
-  <template id='action-name'>
-    <svg:g class="action-label-front">
-      <front style="kite9-type: text; ">
-        <contents />
-      </front>
-    </svg:g>
+  <template id="users">
+    <image style="kite9-vertical-align: center; kite9-min-size: 80pt 80pt;">
+        <image-content style="kite9-template: url(noun_users_1973677_000000.svg)" />
+    </image>
+    <title><contents /></title>
   </template>
 
   <template id="glyph-label-text">
@@ -224,7 +215,7 @@
   
   <template id="hidden">
     <risk-box>
-      <code>Risk</code>
+      <code>Hidden Risk</code>
       <image>
         <image-content style="kite9-template: url(noun_Caution_1714515_000000.svg)" />
       </image>
@@ -518,14 +509,14 @@
     </risk-box>
   </template>
 
-  <template id="fit">
+  <template id="feature-fit">
     <risk-box>
-      <code>Fi</code>
+      <code>F-F</code>
       <image>
         <image-content style="kite9-template: url(noun_1705889.svg); " />
       </image>
-      <title>Fit
-        Risk
+      <title>Feature 
+      Fit Risk
       </title>
     </risk-box>
   </template>
@@ -856,20 +847,12 @@
   
   
   <template id="description">
-    <text-label style="kite9-type: text;" >
+    <text-label style="kite9-type: text; kite9-padding: 0; " >
       <svg:flowRegion>
-        <svg:rect width="450pt" height="400pt" />
+        <svg:rect width="250pt" height="400pt" />
       </svg:flowRegion>
       <contents />
     </text-label>
   </template>
-
-  <template id='panel'>
-    <back style='kite9-usage: decal; kite9-type: svg;  '>
-      <svg:rect x='0' y='0' width='#{$width}' height='#{$height}' rx='12pt' ry='12pt' class="panel-back" />
-    </back>
-    <contents />
-  </template>
-  
   
 </svg:svg>
