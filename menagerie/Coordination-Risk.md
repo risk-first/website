@@ -2,8 +2,6 @@
 
 [Coordination Risk](Coordination-Risk) is the risk that, a group of people (or processes), maybe with a similar [Goal In Mind](Glossary#Goal-In-Mind) they can fail to coordinate on a way to meet this goal and end up making things worse.  [Coordination Risk](Coordination-Risk) is embodied in the phrase "Too Many Cooks Spoil The Broth":  more people, opinions or agents often make results worse.
 
-![Coordination Risk](images/generated/coordination-risk.png)
-
 As in [Agency Risk](Agency-Risk), we are going to use the term _agent_, which refers to anything with [agency](https://github.com/risk-first/website/wiki/Agency-Risk#software-processes-and-teams) in a system to decide it's own fate.  That is, an agent has an [Internal Model](Glossary#Internal-Model),  and can [take actions](Glossary#take-action) based on it.  Here, we're going to work on the assumption that the agents _are_ working towards a common [Goal](Glossary#Goal-In-Mind), even though in reality it's not always the case, as we saw in the section on [Agency Risk](Agency-Risk).
 
  In this section, we'll first build up [A Model Of Coordination Risk](#a-model-of-coordination-risk) and what exactly coordination means and why we do it.  Then, we'll look at some classic [Problems of Coordination](#problems-of-coordination).  Then, we're going to consider agency at several different levels (because of [Scale Invariance](Risk-Theory#invariances-2-scale-invariance)) .  We'll look at:
@@ -40,6 +38,8 @@ Just two things are needed for competition to occur:
  - Scarce Resources, which the agents want to use as [Dependencies](Dependency-Risk).
  
 ![A model of competition:  scarce resources, and individual agents competing for them.](images/kite9/coordination-2.png)
+
+![Coordination Risk](images/generated/risks/coordination/coordination-risk.png)
 
 ### Coordination via Communication
 
