@@ -118,7 +118,7 @@ There is significant [Agency Risk](Agency-Risk) in running software _at all_.  S
 
 ## It's About Goals 
 
-![Agency Risk](images/generated/agency-risk.png)
+![Agency Risk](images/generated/risks/agency/agency-risk.png)
 
 We've looked here at some illustrative examples of [Agency Risk](Agency-Risk).  But as we stated at the beginning, [Agency Risk](Agency-Risk) at any level comes down to differences of [Goals](Glossary#goal-in-mind) between the different agents, whether they are _people_, _teams_ or _software_.  
  
