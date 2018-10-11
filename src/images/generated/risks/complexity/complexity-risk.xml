@@ -7,9 +7,9 @@
 
   <context id="c" bordered="true" style="kite9-layout: down; ">
 
-    <risk class="feature-drift" />
+    <risk class="complexity" />
 
-    <description>Risk that the features required by clients will change and evolve over time. </description>
+    <description>Risks caused by the weight of complexity in the systems we create, and their resistance to change and comprehension.</description>
 
     <label xsi:type="text-line" id="id_16">
       <text>Internal Model</text>
@@ -18,16 +18,16 @@
   </context>
 
   <group style="kite9-layout: down; kite9-horizontal-align: left;">
-    <action>Development</action>
-    <action>Design</action>
-    <action>Disruptive Innovation</action>
+    <action>Refactoring</action>
+    <action>Removing Features</action>
+    <action>Using Libraries</action>
   </group>
-  
   
   <context id="d">
   
-    <risk class="schedule" />  
-    <risk class="conceptual-integrity" />  
+    <risk class="schedule" />
+    <risk class="feature-fit" />
+    <risk class="dependency" />
   
     <label xsi:type="text-line" id="id_16">
       <text>Attendant Risks</text>

@@ -79,7 +79,7 @@ A second, useful measure of complexity comes from graph theory, and that is the 
 
 To see this in action, have a look at the below graph:
 
-![Graph 1](images/generated/connectivity_1.png)
+![Graph 1](images/generated/risks/complexity/connectivity_1.png)
 
 It has 10 vertices, labelled **a** to **j**, and it has 15 edges (or links) connecting the vertices together.  If any single edge were removed from this diagram, the 10 vertices would still be linked together.   Because of this, we can say that the graph is _2-connected_.   That is, to disconnect any single vertex, you'd have to remove _at least_ two edges.
 
@@ -109,7 +109,7 @@ i: j
 
 Let's remove some of those extra links:
 
-![Graph 2](images/generated/connectivity_2.png)
+![Graph 2](images/generated/risks/complexity/connectivity_2.png)
 
 In this graph, I've removed 6 of the edges.  Now, we're in a situation where if any single edge is removed, the graph becomes _unconnected_.  That is, it's broken into distinct chunks.  So, it's _1-connected_.  
 
@@ -171,7 +171,7 @@ Cyclomatic complexity is all about the number of different routes through the pr
 
 Although we ended up with our second graph having a **Cyclomatic Complexity** of 1 (the minimum), we can go further through abstraction, because this representation isn't minimal from a **Kolmogorov Complexity** point-of-view.  For example, we might observe that there are further similarities in the graph that we can "draw out":
 
-![Complexity 3](images/generated/connectivity_3.png)
+![Complexity 3](images/generated/risks/complexity/connectivity_3.png)
 
 Here, we've spotted that the structure of subgraphs **P1** and **P2** are the same:  we can have the same functions there to assemble those.  Noticing and exploiting patterns of repetition is one of the fundamental tools we have in the fight against [Complexity Risk](Complexity-Risk).
 
@@ -206,6 +206,8 @@ The reason I am labouring this analogy is to try and make the point that [Comple
  - [Complexity Risk](Complexity-Risk): like **mass**.
  
 At a basic level, [Complexity Risk](Complexity-Risk) heavily impacts on [Schedule Risk](Schedule-Risk):  more complexity means you need more force to get things done, which takes longer.
+
+![Complexity Risk and it's mitigations](images/generated/risks/complexity/complexity-risk.png)
 
 ## Technical Debt
 
@@ -250,7 +252,7 @@ Sometimes, feature-creep happens because either managers feel they need to keep 
 
 ## Dead-End Risk
 
-![Dead-End Risk](images/generated/dead-end-risk.png) 
+![Dead-End Risk](images/generated/risks/complexity/dead-end-risk.png) 
 
 [Dead-End Risk](Complexity-Risk#dead-end-risk) is where you build functionality that you _think_ is useful, only to find out later that actually, it was a dead-end, and is superceded by something else.
 

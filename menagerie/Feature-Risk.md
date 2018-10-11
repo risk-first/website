@@ -84,6 +84,8 @@ The point is:  [Requirements captured](Requirements-Capture) _today_ might not m
  - Features present in competitor's versions of the software become _the baseline_, and they're expected to be available in your version.
  - Certain ways of interacting become the norm (e.g. [querty]() keyboards, or the control layout in cars: these don't change with time).
  - Features decline in usefulness: _Printing_ is less important now than it was,  for example.
+ 
+As we will see later in [Boundary Risk](Boundary-Risk), [Feature Drift Risk](Feature-Risk#feature-drift-risk) is often a source of [Complexity Risk](Complexity-Risk), since you often need to add new features, while not dismantling old features as some users still need them.
 
 [Feature Drift Risk](Feature-Risk#feature-drift-risk) is _not the same thing_ as **Requirements Drift**, which is the tendency projects have to expand in scope as they go along.  There are lots of reasons they do that, a key one being the [Hidden Risks](Glossary#hidden-risk) uncovered on the project as it progresses.
 
