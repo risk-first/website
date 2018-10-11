@@ -39,8 +39,8 @@ Some easy-to-digest ideas that will set the scene for examining the practices la
  - [A Software Project Scenario](Software-Project-Scenario)
  - [Some Risk Theory](Risk-Theory)
  - [Cadence](Cadence)
- - [A Conversation](A-Conversation)
  - [De-Risking](De-Risking)
+ - [A Conversation](A-Conversation)
  
 ### Part 2: [The Risk Landscape](Risk-Landscape)
 
