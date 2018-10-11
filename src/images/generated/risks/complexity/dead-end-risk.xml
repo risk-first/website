@@ -7,9 +7,9 @@
 
   <context id="c" bordered="true" style="kite9-layout: down; ">
 
-    <risk class="feature-drift" />
+    <risk class="dead-end" />
 
-    <description>Risk that the features required by clients will change and evolve over time. </description>
+    <description>The risk that a particular approach to a change will fail.  Caused by the fact that at some level, our internal models are not a complete reflection of reality.</description>
 
     <label xsi:type="text-line" id="id_16">
       <text>Internal Model</text>
@@ -18,16 +18,15 @@
   </context>
 
   <group style="kite9-layout: down; kite9-horizontal-align: left;">
-    <action>Development</action>
-    <action>Design</action>
-    <action>Disruptive Innovation</action>
+    <action>Backups</action>
+    <action>Versioning</action>
+    <action>Source Control</action>
   </group>
-  
   
   <context id="d">
   
-    <risk class="schedule" />  
-    <risk class="conceptual-integrity" />  
+    <risk class="complexity" />
+    <risk class="schedule" />
   
     <label xsi:type="text-line" id="id_16">
       <text>Attendant Risks</text>

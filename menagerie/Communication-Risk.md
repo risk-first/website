@@ -387,6 +387,6 @@ So, here's a summary of where we've arrived with our model of communication risk
 
 ![Communication 2](images/generated/communication_3.png)
 
-There's no point to Communication unless you have someone or something to communicate with!<!-- tweet-end -->  So next it's time to look at [Dependency Risk](Dependency-Risk).
+tbd, So next it's time to look at [Complexity Risk](Complexity-Risk).
 
 this seems complex tbd.
