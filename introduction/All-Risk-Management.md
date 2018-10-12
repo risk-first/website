@@ -75,7 +75,7 @@ In the previous sections, we've introduced something of a "diagram language" of 
 
 So we have:
 
- - [Risks](Glossary#risk), which exist within [Internal Models](Glossary#internal_model).
+ - [Risks](Glossary#risk), which exist within [Internal Models](Glossary#internal-model).
  - [Actions](Glossary#taking-action), which are operations we perform when we [Meet Reality](Glossary#meet-reality).
  - Artifacts, which are the results of [Meeting Reality](Glossary#meet-reality).
  
