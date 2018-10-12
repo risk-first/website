@@ -11,7 +11,7 @@ And, in [Development Process](Development-Process) we looked at how we can meet 
 It should be no surprise to see that there is a _recursive_ nature about this:  
 
 1.  The **actions we take** each day have consequences:  they **expose new [Hidden Risks](Glossary#hidden-risk)**, which inform our [Internal Model](Glossary#Internal-Model), and at the same time, they change reality in some way (otherwise, what would be the point of doing them?)
-2.  The actions we take towards achieving a [Goal In Mind](Goal-In-Mind) each have their _own_ [Goal In Mind](Goal-In-Mind).  And because of this, when we take action, we have to consider and evaluate the [Hidden Risks](Glossary#hidden-risk) exposed by that action.   That is, there are many ways to achieving a goal, and these different ways expose different [Hidden Risks](Glossary#hidden-risk).
+2.  The actions we take towards achieving a [Goal In Mind](Glossary#Goal-In-Mind) each have their _own_ [Goal In Mind](Glossary#Goal-In-Mind).  And because of this, when we take action, we have to consider and evaluate the [Hidden Risks](Glossary#hidden-risk) exposed by that action.   That is, there are many ways to achieving a goal, and these different ways expose different [Hidden Risks](Glossary#hidden-risk).
 
 So, let's see how this kind of recursion looks on our model. Note that here, I am showing _just one possible action_, in reality, you'll have choices.
 
@@ -21,11 +21,11 @@ Hopefully, if you've read along so far, this model shouldn't be too hard to unde
 
 ## "Navigating the [Risk Landscape](Risk-Landscape)"
 
-So, we often have multiple ways of achieving a [Goal In Mind](Goal-In-Mind).  
+So, we often have multiple ways of achieving a [Goal In Mind](Glossary#Goal-In-Mind).  
 
 What's the best way?  
 
-I would argue that the best way is the one which accrues the _least risk_ to get it done:  each action you take in trying to achieve the overall [Goal In Mind](Goal-In-Mind) will have it's [Attendant Risks](Glossary#attendant-risk), and it's the experience you bring to bear on these that will help you navigate through them smoothly.
+I would argue that the best way is the one which accrues the _least risk_ to get it done:  each action you take in trying to achieve the overall [Goal In Mind](Glossary#Goal-In-Mind) will have it's [Attendant Risks](Glossary#attendant-risk), and it's the experience you bring to bear on these that will help you navigate through them smoothly.
 
 Ideally, when you take an action, you are trading off a big risk for a smaller one.  Take Unit Testing for example.  Clearly, writing Unit Tests adds to the amount of development work, so on it's own, it adds [Schedule Risk](Schedule-Risk).   However, if you write _just enough_ of the right Unit Tests, you should be short-cutting the time spent finding issues in the User Acceptance Testing (UAT) stage, so you're hopefully trading off a larger [Schedule Risk](Schedule-Risk) from UAT and adding a smaller risk to **Development**.
 
@@ -96,7 +96,7 @@ So, it's a trade-off: continue adding logging statements so long as you feel tha
 
 ### Do The Simplest Thing That Could Possibly Work
 
-Another mantra from Kent Beck (originator of the [Extreme Programming](Agile) methodology, is "Do The Simplest Thing That Could Possibly Work", which is closely related to YAGNI and is about looking for solutions which are simple.  Our risk-centric view of this strategy would be:
+Another mantra from Kent Beck (originator of the [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) methodology, is "Do The Simplest Thing That Could Possibly Work", which is closely related to YAGNI and is about looking for solutions which are simple.  Our risk-centric view of this strategy would be:
 
 - Every action you take on a project has it's own [Attendant Risks](Glossary#attendant-risk).
 - The bigger or more complex the action, the more [Attendant Risk](Glossary#attendant-risk) it'll have.

@@ -13,7 +13,7 @@ Testing your [goals in mind](Glossary#Goal-In-Mind) against reality early and sa
  - **Bug Reports and Feature Requests** tell you how the users are getting on with the software.
  - [Monitoring Tools and Logs](Operational-Risk) allow you to find out how your software is doing in reality.
  - **Dog-Fooding** i.e using the software you write yourself might be faster than talking to users.
- - [Continuous Delivery](DevOps) (CD) is about putting software into production as soon as it's written.   
+ - [Continuous Delivery](https://en.wikipedia.org/wiki/Continuous_delivery) (CD) is about putting software into production as soon as it's written.   
  - **Integration Testing** is a faster way of meeting _some_ reality than continually deploying code and re-testing it manually.
  - **Unit Testing** is a faster feedback loop than Integration Testing. 
  - **Compilation** warns you about logical inconsistencies in your code.
@@ -46,7 +46,7 @@ The [Testing Pyramid](http://www.agilenutshell.com/episodes/41-testing-pyramid) 
 
 ### Production
 
-You could take this section to mean that [Continuous Delivery](DevOps) (CD) is always and everywhere a good idea.  I _guess_ that's not a bad take-away, but it's clearly more nuanced than that.  
+You could take this section to mean that [Continuous Delivery](https://en.wikipedia.org/wiki/Continuous_delivery) (CD) is always and everywhere a good idea.  I _guess_ that's not a bad take-away, but it's clearly more nuanced than that.  
 
 Yes, CD will give you faster feedback loops, but even getting things into production is not the whole story:   the feedback loop isn't complete until people have used the code, and reported back to the development team.  
 

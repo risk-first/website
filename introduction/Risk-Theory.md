@@ -34,7 +34,7 @@ Most of the value of the **Risk-First** approach is _in conversation_.  Later, w
 
 Sometimes, it's better to skip these, and just figure out a Risk Score.  This is because if you think about "impact", it implies a definite, discrete event occurring, or not occurring, and asks you then to consider the probability of that occurring. 
 
-**Risk-First** takes a view that risks are a continuous quantity, more like _money_ or _water_:  by taking an action before delivering a project you might add a degree of [Schedule Risk](Schedule-Risk), but decrease the [Production Risk](Production-Risk) later on by a greater amount.   
+**Risk-First** takes a view that risks are a continuous quantity, more like _money_ or _water_:  by taking an action before delivering a project you might add a degree of [Schedule Risk](Schedule-Risk), but decrease the [Operational Risk](Operational-Risk) later on by a greater amount.   
 
 ## Graphical Analysis
 
@@ -48,7 +48,7 @@ This type of graphic is _helpful_ in deciding what to do next, although personal
 
 In Wikipedia's example, this ficticious BBQ has high fire risk, so one should begin mitigating there.  
 
-But, does this feel right?  One of the criticisms of the [Risk Register](Risk-Theory#risk-register) approach is that of [mistaking the map for the territory](Map-And-Territory-Risk).  That is, mistakenly believing that what's on the Risk Register _is all there is_.  
+But, does this feel right?  One of the criticisms of the [Risk Register](Risk-Theory#risk-registers) approach is that of [mistaking the map for the territory](Map-And-Territory-Risk).  That is, mistakenly believing that what's on the Risk Register _is all there is_.  
 
 In the preceding discussions, I have been careful to point out the existence of [Hidden Risks](Glossary#hidden-risk) for that very reason. Or, to put another way:
 
@@ -70,7 +70,7 @@ Let's look at the classic description of Risk Management:
 
 This is not how **Risk-First** sees it:  
 
-First, we have the notion that Risks are discrete events, again.  Some risks _are_ (like gambling on a horse race), but most _aren't_.  In the [Dinner Party](Introduction), for example, bad preparation is going to mean a _worse_ time for everyone, but how good a time you're having is a spectrum, it doesn't divide neatly into just "good" or "bad".  
+First, we have the notion that Risks are discrete events, again.  Some risks _are_ (like gambling on a horse race), but most _aren't_.  In the [Dinner Party](A-Simple-Scenario), for example, bad preparation is going to mean a _worse_ time for everyone, but how good a time you're having is a spectrum, it doesn't divide neatly into just "good" or "bad".  
 
 Second, the opposite of "Risk Management" (or trying to minimize the "Downside") is either "Upside Risk Management", (trying to maximise the good things happening), or it's trying to make as many bad things happen as possible.  Humans tend to be optimists (especially when there are lots of [Hidden Risks](Glossary#hidden-risk)), hence our focus on Downside Risk.  Sometimes though, it's good to stand back and look at a scenario and think:  am I capturing all the Upside Risk here?
 
@@ -80,7 +80,7 @@ Yes, it's fine to say "we're in crisis", but to assume there is a different stra
 
 ## Invariances #1: Panic Invariance
 
-You would expect then, that any methods for managing software delivery should be _invariant_ to the level of crisis in the project.  If, for example, a project proceeds using [Scrum](Scrum) for eight months, and then the deadline looms and everyone agrees to throw Scrum out of the window and start hacking, then _this implies there is a problem with Scrum_, and that it is not _Panic Invariant_.  In fact, many tools like Scrum don't consider this:
+You would expect then, that any methods for managing software delivery should be _invariant_ to the level of crisis in the project.  If, for example, a project proceeds using [Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development)) for eight months, and then the deadline looms and everyone agrees to throw Scrum out of the window and start hacking, then _this implies there is a problem with Scrum_, and that it is not _Panic Invariant_.  In fact, many tools like Scrum don't consider this:
 
 - If there is a production outage during the working week, we don't wait for the next Sprint to fix it.
 - Although a 40-hour work-week _is a great idea_, this goes out of the window if the databases all crash on a Saturday morning.
@@ -108,7 +108,7 @@ If the methodology _fails at a particular scale_, this tells you something about
 
 ### Value
 
-"Upside Risk" isn't a commonly used term:  industry tends to prefer "value", as in "Is this a value-add project?".  There is plenty of theory surrounding **Value**, such as Porter's [Value Chain]() and [Net Present Value]().  This is all fine so long as we remember:
+"Upside Risk" isn't a commonly used term:  industry tends to prefer "value", as in "Is this a value-add project?".  There is plenty of theory surrounding **Value**, such as Porter's [Value Chain](https://en.wikipedia.org/wiki/Value_chain) and [Net Present Value](https://en.wikipedia.org/wiki/Net_present_value).  This is all fine so long as we remember:
 
  - **The pay-off is risky**: Since the **Value** is created in the future, we can't be certain about it happening - we should never consider it a done-deal.  **Future Value** is always at risk.  In finance, for example, we account for this in our future cash-flows by discounting them according to the risk of default.
  - **The pay-off amount is risky**:  Additionally, whereas in a financial transaction (like a loan, say), we might know the size of a future payment, in IT projects we can rarely be sure that they will deliver a certain return.  On some fixed-contract projects this sometimes is not true: there may be a date when the payment-for-delivery gets made, but mostly we'll be expecting an uncertain pay-off. 
@@ -117,7 +117,7 @@ If the methodology _fails at a particular scale_, this tells you something about
 
 ### Speed
 
-For example, in [Rapid Development]( http://a.co/d/ddWGTB2) by Steve McConnell we have the following diagram:
+For example, in [Rapid Development](http://a.co/d/ddWGTB2) by Steve McConnell we have the following diagram:
 
 ![Pillars, From Rapid Development By Steve McConnell](images/kite9/rapid_development_pillars.png)  
 
@@ -195,13 +195,13 @@ Under these circumstances, we often see _Pooh-Bear Procrastination_:
 
 Enough with the numbers and the theory:  **Risk-First** is an attempt to provide a practical framework, rather than a scientifically rigorous analysis.  In fact, my view is that you should _give up_ on trying to compute risk numerically.  You _can't_ work out how long a software project will take based purely on an analysis of (say) _function points_.  (Whatever you define them to be).
 
-- First, there isn't enough evidence for an approach like this.  We _can_ look at collected data about IT projects, but [techniques and tools change](Silver-Bullets).
+- First, there isn't enough evidence for an approach like this.  We _can_ look at collected data about IT projects, but techniques and tools advance rapidly.
 - Second,  IT projects have too many confounding factors, such as experience of the teams, 
 technologies used etc.  That is, the risks faced by IT projects are _too diverse_ and _hard to quantify_ to allow for meaningful comparison from one to the next.
 - Third, as soon as you _publish a date_ it changes the expectations of the project (see [Student Syndrome](Schedule-Risk)).
 - Fourth, metrics get first of all [misused](Map-And-Territory-Risk) and then [gamed](Agency-Risk).
 
-Reality is messy.  Dressing it up with numbers doesn't change that and you risk [fooling yourself](Map-And-Territory).  If this is the case, is there any hope at all in what we're doing?  I would argue yes:   _forget precision_.  You should, with experience be able to hold up two separate risks and answer the question, "is this one bigger than this one?"  
+Reality is messy.  Dressing it up with numbers doesn't change that and you risk [fooling yourself](Map-And-Territory-Risk).  If this is the case, is there any hope at all in what we're doing?  I would argue yes:   _forget precision_.  You should, with experience be able to hold up two separate risks and answer the question, "is this one bigger than this one?"  
 
 With that in mind, let's look at how we can meet reality [as fast and often as possible](Cadence).
 

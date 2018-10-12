@@ -5,8 +5,6 @@
 
 ## Feedback Loop
 
-## Goal In Mind
-
 ## Internal Model
 
 ## Taking Action
@@ -26,13 +24,15 @@ An internal model _represents_ reality:  reality is made of atoms, whereas the i
 
 ## Risk
 
+## Risk Landscape
+
+### Goal In Mind
+
 ### Attendant Risk
 
 ### Hidden Risk
 
 ### Mitigated Risk
-
-## Take Action
 
 
 
