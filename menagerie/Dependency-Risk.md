@@ -37,7 +37,7 @@ In Rich Hickey's talk, [Simple Made Easy](https://www.infoq.com/presentations/Si
 
 But.  Living systems are not simple.  Not anymore.  They evolved in the direction of increasing complexity because life was _easier_ that way.  In the "simpler" direction, life is first _harder_ and then _impossible_, and then an evolutionary dead-end.
 
-Depending on things makes _your job easier_.  It's just [division of labour](https://en.wikipedia.org/wiki/Division_of_labour) and dependency hiearchies, as we saw in [Hierarchies and Modularization](Complexity-Risk#Hierarchies-and-Modularization).
+Depending on things makes _your job easier_.  It's just [division of labour](https://en.wikipedia.org/wiki/Division_of_labour) and dependency hierarchies, as we saw in [Hierarchies and Modularisation](Complexity-Risk#Hierarchies-and-Modularisation).
 
 Our economic system and our software systems exhibit the same tendency-towards-complexity.  For example, the television in my house now is _vastly more complicated_ than the one in my home when I was a child.  But, it contains much more functionality and consumes much less power and space.  
 
@@ -83,7 +83,7 @@ Let's apply this to our Bus scenario:
  
 Finding out about bus schedules is easy.  But in a large company, [Communication Risk](Communication-Risk) and especially [Invisibility Risk](Communication-Risk#invisibility-risk) are huge problems.  This tends to get called "[Silo Mentality](https://en.wikipedia.org/wiki/Information_silo#Silo_mentality)", that is, ignoring what else is going on in other divisions of the company or ["not invented here"](https://en.wikipedia.org/wiki/Not_invented_here) syndrome:
 
-> "In management the term silo mentality often refers to information silos in organizations. Silo mentality is caused by divergent goals of different organizational units." - [Silo Mentality, _Wikipedia_](https://en.wikipedia.org/wiki/Information_silo#Silo_mentality)
+> "In management the term silo mentality often refers to information silos in organisations. Silo mentality is caused by divergent goals of different organisational units." - [Silo Mentality, _Wikipedia_](https://en.wikipedia.org/wiki/Information_silo#Silo_mentality)
 
 Ironically, _more communication_ might not be the answer - if channels are provided to discover functionality in other teams you can still run into [Trust Risk](Communication-Risk#trust--belief-risk) (why should I believe in the quality of this dependency?)  Or [Channel Risk](Communication-Risk#channel-risk) in terms of too low a signal-to-noise ratio, or desperate self-promotion.
 
@@ -95,7 +95,7 @@ Dependencies are usually a mitigation for [Complexity Risk](Complexity-Risk), an
 
 But this means that all of the issues of abstractions that we covered in [Communication Risk](Communication-Risk) apply:
 
- - There is [Invisiblity Risk](Communication-Risk#invisibility-risk) because you probably don't have a full view of what the dependency is doing.  Nowadays, bus stops have a digital "arrivals" board which gives you details of when the bus will arrive, and shops publish their opening hours online.  But, abstraction always means the loss of some detail.
+ - There is [Invisibility Risk](Communication-Risk#invisibility-risk) because you probably don't have a full view of what the dependency is doing.  Nowadays, bus stops have a digital "arrivals" board which gives you details of when the bus will arrive, and shops publish their opening hours online.  But, abstraction always means the loss of some detail.
  - There is [Misinterpretation Risk](Communication-Risk#misinterpretation-risk), because often the dependency might mistake your instructions.  This is endemic in software, where it's nearly impossible to describe exactly what you want up-front.
  
 ## Fit Risk

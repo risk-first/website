@@ -20,7 +20,7 @@ Let's start with an obvious example: Musical Instruments.  Let's say you want to
 
 Those risks are true for _any_ instrument you choose.  However, if you choose the _uncommon_ instrument like the [Balalaika](https://en.wikipedia.org/wiki/Balalaika), you have _worse_ [Boundary Risk](Boundary-Risk), because the _ecosystem_ for the balalaika is smaller.   It might be hard to find a tutor, or a band needing a balalaika.  You're unlikely to find one in a friend's house (compared to the piano, say).  
 
-Even choosing the Piano has [Boundary Risk](Boundary-Risk).  By spending your time learning to play the piano, you're mitigating [Communication Risk](Communication-Risk) issues, but _mostly_, your skills won't be transferrable to playing the guitar.  Your decision to choose one instrument over another cements the [Boundary Risk](Boundary-Risk): you're following a path on the [Risk Landscape](Risk-Landscape) and changing to a different path is _expensive_.
+Even choosing the Piano has [Boundary Risk](Boundary-Risk).  By spending your time learning to play the piano, you're mitigating [Communication Risk](Communication-Risk) issues, but _mostly_, your skills won't be transferable to playing the guitar.  Your decision to choose one instrument over another cements the [Boundary Risk](Boundary-Risk): you're following a path on the [Risk Landscape](Risk-Landscape) and changing to a different path is _expensive_.
 
 Also, it stands to reason that making _any_ choice is better than making _no_ choice, because you can't try and learn _all_ the instruments.  Doing that, you'd make no meaningful progress on any of them.
 
@@ -62,14 +62,14 @@ As we saw in [Software Dependency Risk](Software-Dependency-Risk), [Boundary Ris
 
  - If you're depending on a [Process or Organisation](Process-Risk), they might change their products or quality, making the effort you put into the relationship worthless.
  - If you're depending on [Staff](Scarcity-Risk#staff-risk), they might leave, meaning your efforts on training them don't pay back as well as you hoped.
- - If you're depending on an [Event](Scarcity-Risk#schedule-risk) occuring at a particular time, you might have a lot of work to reorganise your life if it changes time or place.
+ - If you're depending on an [Event](Scarcity-Risk#schedule-risk) occurring at a particular time, you might have a lot of work to reorganise your life if it changes time or place.
 
 ## Avoiding Boundary Risk Now...
 
 Because of [Boundary Risk](Boundary-Risk)'s relationship to [Learning Curve Risk](Communication-Risk#learning-curve-risk), we can avoid accreting it by choose the _simplest_ and _fewest_ dependencies for any job.  Let's look at some examples:
 
 - `mkdirp` is an [npm](https://www.npmjs.com) module defining a single function.  This function takes a single string parameter and recursively creating directories.  Because the [protocol](Communication-Risk) is so simple, there is almost no [Boundary Risk](Boundary-Risk).
-- Using a database with a [JDBC](https://en.wikipedia.org/wiki/Java_Database_Connectivity) driver comes with _some_ [Boundary Risk](Boundary-Risk):  but the boundary is specified by a standard.  Although the standard doesn't cover every aspect of the behaviour of the database, it does minimize risk, because if you are familiar with one JDBC driver, you'll be familiar with them all, and swapping one for another is relatively easy.
+- Using a database with a [JDBC](https://en.wikipedia.org/wiki/Java_Database_Connectivity) driver comes with _some_ [Boundary Risk](Boundary-Risk):  but the boundary is specified by a standard.  Although the standard doesn't cover every aspect of the behaviour of the database, it does minimise risk, because if you are familiar with one JDBC driver, you'll be familiar with them all, and swapping one for another is relatively easy.
 - Using a framework like [Spring](https://spring.io), [Redux](https://redux.js.org) or [Angular](https://angularjs.org) comes with higher [Boundary Risk](Boundary-Risk):  you are expected to yield to the framework's way of behaving throughout your application.  You cannot separate the concern easily, and swapping out the framework for another is likely to leave you with a whole new set of assumptions and interfaces to deal with.
 
 ## ... And In The Future
@@ -116,9 +116,9 @@ In the real world, there is a tendency for _big cities to get bigger_.  The more
 
 > "A network effect (also called network externality or demand-side economies of scale) is the positive effect described in economics and business that an additional user of a good or service has on the value of that product to others. When a network effect is present, the value of a product or service increases according to the number of others using it." - [Network Effect, _Wikipedia_](https://en.wikipedia.org/wiki/Network_effect)
 
-You can see the same effect in the adoption rates of WordPress and Drupal, shown in the chart below.  Note: this is over _all sites on the internet_, so Drupal accounts for hundreds of thousands of sites.  In 2018, WordPress is approximately 32% of all websites.  For Drupal it's 2%.
+You can see the same effect in the adoption rates of WordPress and Drupal, shown in the chart below.  Note: this is over _all sites on the internet_, so Drupal accounts for hundreds of thousands of sites.  In 2018, WordPress is approximately 32% of all web-sites.  For Drupal it's 2%.
 
-![Wordpress vs Drupal adoption over 8 years, according to [w3techs.com](https://w3techs.com/technologies/history_overview/content_management/all/y)](images/wordpress-drupal-chart.png)
+![WordPress vs Drupal adoption over 8 years, according to [w3techs.com](https://w3techs.com/technologies/history_overview/content_management/all/y)](images/wordpress-drupal-chart.png)
 
 Did WordPress gain this march because it was better than Drupal?  That's arguable.  That it's this way round could be _entirely accidental_, and a result of [Network Effect](https://en.wikipedia.org/wiki/Network_effect).
 
@@ -161,7 +161,7 @@ As we saw in [Software Dependency Risk](Software-Dependency-Risk), The art of go
 
 Each new version has a greater functional scope than the one before (pushing back [Boundary Risk](Boundary-Risk)), making the platform more attractive to build solutions in.   But this increases the [Complexity Risk](Complexity-Risk) as there is more functionality to deal with.  
 
-### Focus vs Overreach
+### Focus vs Over-Reach
 
 ![The Peter Principle:  Backward Compatibility + Extension leads to complexity and learning curve risk](images/kite9/boundary-risk-peter-principle.png)
 
@@ -174,7 +174,7 @@ This implies a trade-off:
 
 example:  
 
-In the late 80's and 90's there was a massive push towards _building functionality in the database_.  [Relational Database Managment Systems (RDBMSs)](https://en.wikipedia.org/wiki/Relational_database) were all-in-one solutions, expensive platforms that you purchased and built _everything_ inside.  However, this dream didn't last:  
+In the late 80's and 90's there was a massive push towards _building functionality in the database_.  [Relational Database Management Systems (RDBMSs)](https://en.wikipedia.org/wiki/Relational_database) were all-in-one solutions, expensive platforms that you purchased and built _everything_ inside.  However, this dream didn't last:  
 
 why?  (need some research here).
 
@@ -201,7 +201,7 @@ Let's look at some examples:
 
 - [Java](https://en.wikipedia.org/wiki/Java_(programming_language)) took what C did and went one step further, providing interoperability at the library level. Java code could run anywhere where Java was installed.   (**Mode 2**)
 
-- [Internet Protocol](https://en.wikipedia.org/wiki/Internet_Protocol): As we saw in [Communication Risk](Communication-Risk#protocol-risk), the Internet Protocol (IP) is the _lingua franca_ of the modern internet.  However, at one period of time, there were many competing standards.  and IP was the ecosystem that "won", and was subsequently standardized by the [IETF](https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force).  (**Mode 1**)
+- [Internet Protocol](https://en.wikipedia.org/wiki/Internet_Protocol): As we saw in [Communication Risk](Communication-Risk#protocol-risk), the Internet Protocol (IP) is the _lingua franca_ of the modern Internet.  However, at one period of time, there were many competing standards.  and IP was the ecosystem that "won", and was subsequently standardized by the [IETF](https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force).  (**Mode 1**)
 
 
 ## Complex Boundaries
@@ -248,7 +248,7 @@ This is tbd hobson's choice, there is strong debate about whether ORM is a worse
 
 ### Scala
 
-Mapping between complex boundaries is expecially difficult if the [Boundaries](Boundary-Risk) are evolving and changing as you go.  This means in ecosystems that are changing rapidly, you are unlikely to be able to create lasting bridges between them.  Given that [Java](https://en.wikipedia.org/wiki/Java_(software_platform)) is an old, large and complex ecosystem, you would imagine that it would have a slow-enough rate of change that abstracting technologies can be built on top of it safely.  
+Mapping between complex boundaries is especially difficult if the [Boundaries](Boundary-Risk) are evolving and changing as you go.  This means in ecosystems that are changing rapidly, you are unlikely to be able to create lasting bridges between them.  Given that [Java](https://en.wikipedia.org/wiki/Java_(software_platform)) is an old, large and complex ecosystem, you would imagine that it would have a slow-enough rate of change that abstracting technologies can be built on top of it safely.  
 
 Indeed, we see that happening with [Clojure](https://en.wikipedia.org/wiki/Clojure) and [Kotlin](https://en.wikipedia.org/wiki/Kotlin_(programming_language)), two successful languages built on top of the [Java Virtual Machine (JVM)](https://en.wikipedia.org/wiki/Java_virtual_machine) and offering compatibility with it.
 
@@ -258,20 +258,20 @@ The problem faced by Scala is that Java didn't stay still:  as soon as they demo
 
 So, in a sense, Scala is a _success story_: they were able to force change to Java.  But, once Java had changed, Scala was in the difficult position of having two sets of competing features in the platform:  the existing Scala streams, and the new Java streams.   
 
-Clojure can interop with Java because on one side, the boundary is simple:  lisp is a simple language which lends itself to reimplementation within other platforms.   Therefore, the complexity of the bridge is _simple_:  all that needs to be provided is a way to call methods from Java to clojure.
+Clojure can interoperability with Java because on one side, the boundary is simple:  lisp is a simple language which lends itself to re-implementation within other platforms.   Therefore, the complexity of the bridge is _simple_:  all that needs to be provided is a way to call methods from Java to Clojure.
 
 Scala and Java have a complex relationship because Scala creates it's own complex boundary:  it is syntactically and functionally a broad language with lots of features.  And so is Java.  Mapping from one to the other is therefore 
 
-for interop here.  Why is one so different from the other?
+for interoperability here.  Why is one so different from the other?
 
 ### Browsers
 
-Web browsers are another suprisingly complex boundary.  They have to understand the following [protocols](Communication-Risk#protocols):
+Web browsers are another surprisingly complex boundary.  They have to understand the following [protocols](Communication-Risk#protocols):
 
  - [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) for loading resources (as we already reviewed in [Communication Risk](Communication-Risk#protocols)
  - [HTML](https://en.wikipedia.org/wiki/HTML) Pages, for describing the content of web pages.
  - Various image formats
- - [Javascript](https://en.wikipedia.org/wiki/JavaScript) for web-page _interactivity_
+ - [JavaScript](https://en.wikipedia.org/wiki/JavaScript) for web-page _interactivity_
  - [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) for web-page styling, animation and so on.
  - ... and several others.
  
@@ -289,7 +289,7 @@ There are three specific problems that make this a really complex boundary:
 
 3.  That because there are various different browsers ([Chrome](https://en.wikipedia.org/wiki/Google_Chrome), [Safari](https://en.wikipedia.org/wiki/Safari_(web_browser)), [Internet Explorer](https://en.wikipedia.org/wiki/Internet_Explorer), [Microsoft Edge](https://en.wikipedia.org/wiki/Microsoft_Edge), [Firefox](https://en.wikipedia.org/wiki/Firefox) etc.) and each browser has multiple different versions, released over a period of many years, you cannot, as a web-page developer know, _a priori_ what your web-page will look like to a user.
 
-As developers trying to build software to be delivered over the internet, this is therefore a source of common [Boundary Risk](Boundary-Risk).  If you were trying to build software to work in _all browsers_ and _all versions_, this problem would be nearly insurmountable.  So, in order to tackle this risk, we do the following:
+As developers trying to build software to be delivered over the Internet, this is therefore a source of common [Boundary Risk](Boundary-Risk).  If you were trying to build software to work in _all browsers_ and _all versions_, this problem would be nearly insurmountable.  So, in order to tackle this risk, we do the following:
 
 - We pick a small (but commonly used) subset of browsers, and use features from the specifications that we know commonly work in that subset.  
 - We test across the subset.  Again, testing is _harder than it should be_, because of problem 2 above, that the expected output is not exactly defined.  This generally means you have to get humans to apply their _subjective aesthetic judgement_, rather than getting machines to do it.
@@ -304,13 +304,13 @@ There are two questions we need to ask about this, from the point-of-view of und
 1.  Why was this a successful strategy?  
 2.  Why did they stop doing this?
 
-Let's look at the first question then.  Yes, it was a successful strategy.  In the 1990s, browser functionality was rudimentary.  Developers were _desperate_ for more features, and for more control over what appeared on their webpages.  And, Internet Explorer was a free download (or, bundled with Windows).   By shunning other browsers and coding just for IE, developers pushed [Boundary Risk](Boundary-Risk) to the consumers of the web pages and in return mitigated [Feature Fit Risk](Feature-Risk#feature-fit-risk): they were able to get more of the functionality they wanted in the browser.
+Let's look at the first question then.  Yes, it was a successful strategy.  In the 1990s, browser functionality was rudimentary.  Developers were _desperate_ for more features, and for more control over what appeared on their web-pages.  And, Internet Explorer was a free download (or, bundled with Windows).   By shunning other browsers and coding just for IE, developers pushed [Boundary Risk](Boundary-Risk) to the consumers of the web pages and in return mitigated [Feature Fit Risk](Feature-Risk#feature-fit-risk): they were able to get more of the functionality they wanted in the browser.
 
 It's worth pointing out, _this was not a new strategy_:  
 
- - Processor Chip manufacturers had done something similar in the tbds:  by providing features (instructions) on their processors that other vendors didn't have, they made their processors more attractive to system integrators.  However, since the instructions were different on different chips, this created [Boundary Risk](Boundary-Risk) for the integrators.  Intel and Microsoft were able to use this fact to build a big ecosystem around Windows running on Intel chips (so called, Wintel).
+ - Processor Chip manufacturers had done something similar in the tbds:  by providing features (instructions) on their processors that other vendors didn't have, they made their processors more attractive to system integrators.  However, since the instructions were different on different chips, this created [Boundary Risk](Boundary-Risk) for the integrators.  Intel and Microsoft were able to use this fact to build a big ecosystem around Windows running on Intel chips (so called, WinTel).
  - We have two main _mobile_ ecosystems:  [Apple's iOS](https://en.wikipedia.org/wiki/IOS) and [Google's Android](https://en.wikipedia.org/wiki/Android_(operating_system)), which are both _very_ different and complex ecosystems with large, complex boundaries.  They are both innovating as fast as possible to keep users happy with their features.  Tools like [Xamarin](https://en.wikipedia.org/wiki/Xamarin) exist which allow you to build 
- - Currently, [Amazon Web Services (AWS)](https://en.wikipedia.org/wiki/Amazon_Web_Services) are competing with [Microsoft Azure](https://en.wikipedia.org/wiki/Microsoft_Azure) and [Google Cloud Platform](https://en.wikipedia.org/wiki/Google_Cloud_Platform) over building tools for [Platform as a Service (PaaS)](https://en.wikipedia.org/wiki/Platform_as_a_service) (running software in the cloud).  They are both racing to build new functionality, but at the same time it's hard to move from one vendor to another as there is no standardization on the tools.
+ - Currently, [Amazon Web Services (AWS)](https://en.wikipedia.org/wiki/Amazon_Web_Services) are competing with [Microsoft Azure](https://en.wikipedia.org/wiki/Microsoft_Azure) and [Google Cloud Platform](https://en.wikipedia.org/wiki/Google_Cloud_Platform) over building tools for [Platform as a Service (PaaS)](https://en.wikipedia.org/wiki/Platform_as_a_service) (running software in the cloud).  They are both racing to build new functionality, but at the same time it's hard to move from one vendor to another as there is no standardisation on the tools.
  - As we saw above, Database vendors tried to do the same thing with features in the database.  Oracle particularly makes money over differentiating itself from competitors by providing features that other vendors don't have.  Tom tbd provides a compelling argument for using these features thus:
 
 > tbd.
@@ -333,9 +333,9 @@ The next question, is why did Microsoft _stop_ pursuing this strategy?  It seems
 
 You can't always be sure that a dependency now will always have the same guarantees in the future: 
 
-- **Ownership changes**  Microsoft buys [Github](https://en.wikipedia.org/wiki/GitHub).  What will happen to the ecosystem around github now?
+- **Ownership changes**  Microsoft buys [GitHub](https://en.wikipedia.org/wiki/GitHub).  What will happen to the ecosystem around GitHub now?
 - **Licensing changes**.  (e.g. [Oracle](http://oracle.com) buys **Tangosol** who make [Coherence](https://en.wikipedia.org/wiki/Oracle_Coherence) for example).  Having done this, they increase the licensing costs of Tangosol to huge levels, milking the [Cash Cow](https://en.wikipedia.org/wiki/Cash_cow) of the installed user-base, but ensuring no-one else is likely to use it.
-- **Better alternatives become available**:  As a real example of this, I began a project in 2016 using [Apache Solr](https://en.wikipedia.org/wiki/Apache_Solr).  However, in 2018, I would probably use [ElasticSearch](https://en.wikipedia.org/wiki/Elasticsearch).  In the past, I've built websites using Drupal and then later converted them to use WordPress.
+- **Better alternatives become available**:  As a real example of this, I began a project in 2016 using [Apache Solr](https://en.wikipedia.org/wiki/Apache_Solr).  However, in 2018, I would probably use [ElasticSearch](https://en.wikipedia.org/wiki/Elasticsearch).  In the past, I've built web-sites using Drupal and then later converted them to use WordPress.
 
 ## Patterns In Boundary Risk
 

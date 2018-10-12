@@ -55,11 +55,11 @@ This is a particularly pernicious kind of [Feature Risk](Feature-Risk) which can
 
 ![Feature Access Risk](images/generated/risks/feature/feature-access-risk.png) 
 
-Sometimes, features can work for some people and not others:  this could be down to [Accessibility](https://en.wikipedia.org/wiki/Accessibility) issues, language barriers or localization.   <!-- tweet-end -->
+Sometimes, features can work for some people and not others:  this could be down to [Accessibility](https://en.wikipedia.org/wiki/Accessibility) issues, language barriers or localisation.   <!-- tweet-end -->
 
 You could argue that the choice of _platform_ is also going to limit access:  <!-- tweet-start -->writing code for XBox-only leaves PlayStation owners out in the cold.   This is _largely_ [Feature Access Risk](Feature-Risk#feature-access-risk), though [Dependency Risk](Dependency-Risk) is related here.<!-- tweet-end -->
 
-In Marketing, minimizing [Feature Access Risk](#feature-access-risk) is all about [Segmentation](https://en.wikipedia.org/wiki/Market_segmentation):  trying to work out _who_ your product appeals to, and tailoring it to that particular market, but for technologists, increasing [Feature Access](#feature-access-risk) means increasing complexity:  you have to deliver the software on more platforms, localized in more languages, with different configurations of features at different price-points.  Mitigating [Feature Acccess Risk](#feature-access-risk) therefore means increased effort and complexity (which we'll come to later).
+In Marketing, minimising [Feature Access Risk](#feature-access-risk) is all about [Segmentation](https://en.wikipedia.org/wiki/Market_segmentation):  trying to work out _who_ your product appeals to, and tailoring it to that particular market, but for technologists, increasing [Feature Access](#feature-access-risk) means increasing complexity:  you have to deliver the software on more platforms, localised in more languages, with different configurations of features at different price-points.  Mitigating [Feature Access Risk](#feature-access-risk) therefore means increased effort and complexity (which we'll come to later).
 
 ### Market Risk
 
@@ -91,9 +91,9 @@ As we will see later in [Boundary Risk](Boundary-Risk), [Feature Drift Risk](Fea
 
 ### Fashion
 
-Fashion plays a big part in IT, as this [infographic on website design shows](https://designers.hubspot.com/blog/the-history-of-web-design-infographic).  True, websites have got easier to use as time has gone by, and users now expect this.  Also, bandwidth is greater now, which means we can afford more media and code on the client side.  However, _fashion_ has a part to play in this.  
+Fashion plays a big part in IT, as this [infographic on website design shows](https://designers.hubspot.com/blog/the-history-of-web-design-infographic).  True, web-sites have got easier to use as time has gone by, and users now expect this.  Also, bandwidth is greater now, which means we can afford more media and code on the client side.  However, _fashion_ has a part to play in this.  
 
-By being _fashionable_, websites are communicating:   _this is a new thing_, _this is relevant_, _this is not terrible_:  all of which is mitigating a [Communication Risk](Communication-Risk).  <!-- tweet-start -->Users are all-too-aware that the Internet is awash with terrible, abandon-ware sites that are going to waste their time.  How can you communicate that you're not one of them to your users? <!-- tweet-end -->
+By being _fashionable_, web-sites are communicating:   _this is a new thing_, _this is relevant_, _this is not terrible_:  all of which is mitigating a [Communication Risk](Communication-Risk).  <!-- tweet-start -->Users are all-too-aware that the Internet is awash with terrible, abandon-ware sites that are going to waste their time.  How can you communicate that you're not one of them to your users? <!-- tweet-end -->
 
 ## Delight
 
@@ -134,7 +134,7 @@ For further reading, you can check out [The Service Quality Model](http://en.wik
 
 ### Fit and Audience
 
-Two risks, [Feature Access Risk](Feature-Risk#feature-access-risk) and [Market Risk](Feature-Risk#market-risk) considers _Fit_ for a whole _Audience_ of users.  They are different:  just as it's possible to have a small audience, but a large revenue, it's possible to have a product which has low [Feature Access Risk](#feature-access-risk) (i.e lots of users can access it without difficulty) but high [Market Risk](#market-risk) (i.e. the market is highly volatile or capricious in it's demands).  _Online services_ often suffer from this [Market Risk](#market-risk) rollercoaster, being one moment highly valued and the next irrelevant. 
+Two risks, [Feature Access Risk](Feature-Risk#feature-access-risk) and [Market Risk](Feature-Risk#market-risk) considers _Fit_ for a whole _Audience_ of users.  They are different:  just as it's possible to have a small audience, but a large revenue, it's possible to have a product which has low [Feature Access Risk](#feature-access-risk) (i.e lots of users can access it without difficulty) but high [Market Risk](#market-risk) (i.e. the market is highly volatile or capricious in it's demands).  _Online services_ often suffer from this [Market Risk](#market-risk) roller-coaster, being one moment highly valued and the next irrelevant. 
 
 ### Fit, Audience and Evolution
 

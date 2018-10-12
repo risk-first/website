@@ -3,7 +3,7 @@
 [Communication Risk](Communication-Risk) is the risk of communication between entities _going wrong_, due to loss or misunderstanding. <!-- tweet-end -->
 Consider this: if we all had identical knowledge, there would be no need to do any communicating at all, and therefore and also no [Communication Risk](Communication-Risk).  
 
-But, people are not all-knowing oracles.  We rely on our _senses_ to improve our [Internal Models](Glossary#Internal-Model) of the world. There is [Communication Risk](Communication-Risk) here - we might overlook something vital (like an oncoming truck) or mistake something someone says (like "Don't cut the green wire").  
+But, people are not all-knowing oracles.  We rely on our _senses_ to improve our [Internal Models](Glossary#Internal-Model) of the world. There is [Communication Risk](Communication-Risk) here - we might overlook something vital (like an on-coming truck) or mistake something someone says (like "Don't cut the green wire").  
 
 [Communication Risk](Communication-Risk) isn't just for people; it affects computer systems too.
 
@@ -191,7 +191,7 @@ There's a lot going on here, but we can break it down really easily into 3 chunk
 
 3. The lines starting `<HTML>` are now some HTML to display on the screen to tell the user that the page has moved.  
 
-### 6. HTML - Hypertext Markup Language
+### 6. HTML - Hypertext Mark-Up Language
  
 Although [HTML](https://en.wikipedia.org/wiki/HTML) is a language, a language is also a protocol. <!-- tweet-end --> (After all, language is what we use to encode our ideas for transmission as speech.)   In the example we gave, this was a very simple page telling the client that it's looking in the wrong place.  In most browsers, you don't get to see this:  the browser will understand the meaning of the `301` error and redirect you to the location.  
 
@@ -261,7 +261,7 @@ Does human language support this?  To some extent!  New words are added to our l
 
 ### Protocol Implementation Risk
 
-A second aspect of [Protocol Risk](Communication-Risk#protocol-risk) exists in heterogenous computing environments, where protocols have been independently implemented based on standards.  For example, there are now so many different browsers, all supporting different levels of `HTTP`, `HTML` and `JavaScript` that it becomes impossible to test comprehensively over all the different versions.  To mitigate as much [Protocol Risk](Communication-Risk#protocol-risk) as possible, generally we run tests in a subset of browsers, and use a lowest-common-denominator approach to choosing protocol and language features.
+A second aspect of [Protocol Risk](Communication-Risk#protocol-risk) exists in heterogeneous computing environments, where protocols have been independently implemented based on standards.  For example, there are now so many different browsers, all supporting different levels of `HTTP`, `HTML` and `JavaScript` that it becomes impossible to test comprehensively over all the different versions.  To mitigate as much [Protocol Risk](Communication-Risk#protocol-risk) as possible, generally we run tests in a subset of browsers, and use a lowest-common-denominator approach to choosing protocol and language features.
 
 ![Communication Protocols Risks](images/generated/communication_protocol_risks.png)
 
@@ -319,7 +319,7 @@ We try to mitigate this via (for the most part) documentation, but this is a ter
 
  - Adding a thread to an application that doesn't report whether it's worked, failed, or is running out of control and consuming all the cycles of the CPU.
  - Redundancy can increase reliability, but only if you know when servers fail, and fix them quickly.   Otherwise, you only see problems when the last server fails.
- - When building a webservice, can you assume that it's working for the users in the way you want it to?
+ - When building a web-service, can you assume that it's working for the users in the way you want it to?
 
 When you build a software service, or even implement a thread, ask yourself:  "How will I know next week that this is working properly?"  <!-- tweet-end -->If the answer involves manual work and investigation, then your implementation has just cost you in [Invisibility Risk](Communication-Risk#invisibility-risk).
 
@@ -354,10 +354,6 @@ Even if the receiver trusts the communicator, they may not trust the message.  L
 - [Psycholinguistics](https://en.wikipedia.org/wiki/Psycholinguistics) is the study of humans aquire languages.  There are different languages and dialects, (and _industry dialects_), and we all understand language in different ways, take different meanings and apply different contexts to the messages.
   
 From the point-of-view of [Marketing Communications](Communication-Risk#Marketing-Communications) choosing the right message is part of the battle.  You are trying to communicate your idea in such a way as to mitigate Trust & Belief Risk.
-
-### Reputational Risk
-
-tbd.
 
 ### Learning-Curve Risk
 

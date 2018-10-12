@@ -1,6 +1,6 @@
 ![For Review](images/state/for-review.png)
 
-Here, I am going to recap on some pre-existing knowledge about risk, generally, in order to set the scene for the next section which heads back to looking at risk on software projects.  
+Here, I am going to re-cap on some pre-existing knowledge about risk, generally, in order to set the scene for the next section which heads back to looking at risk on software projects.  
 
 ## Risk Registers
 
@@ -16,7 +16,7 @@ A [Risk Register](https://en.wikipedia.org/wiki/Risk_register) can help with thi
 > - The impact (or consequence) if event actually occurs rated on an integer scale
 > - The probability or likelihood of its occurrence rated on an integer scale
 > - The Risk Score (or Risk Rating) is the multiplication of Probability and Impact and is often used to rank the risks.
-> - Common mitigation steps (e.g. within IT projects) are Identify, Analyze, Plan Response, Monitor and Control.
+> - Common mitigation steps (e.g. within IT projects) are Identify, Analyse, Plan Response, Monitor and Control.
 
 This is Wikipedia's example:
 
@@ -46,7 +46,7 @@ This type of graphic is _helpful_ in deciding what to do next, although personal
 
 ## Unknown Unknowns
 
-In Wikipedia's example, this ficticious BBQ has high fire risk, so one should begin mitigating there.  
+In Wikipedia's example, this fictitious BBQ has high fire risk, so one should begin mitigating there.  
 
 But, does this feel right?  One of the criticisms of the [Risk Register](Risk-Theory#risk-registers) approach is that of [mistaking the map for the territory](Map-And-Territory-Risk).  That is, mistakenly believing that what's on the Risk Register _is all there is_.  
 
@@ -54,7 +54,7 @@ In the preceding discussions, I have been careful to point out the existence of 
 
 > What we don't know is what usually gets us killed - Petyr Baelish, _Game of Thrones_
 
-Donald Rumsfeld's famous [Known Knowns](https://en.wikipedia.org/wiki/There_are_known_knowns) is also a helpful conceptualization.
+Donald Rumsfeld's famous [Known Knowns](https://en.wikipedia.org/wiki/There_are_known_knowns) is also a helpful conceptualisation.
 
 ## Risk And Uncertainty
 
@@ -72,7 +72,7 @@ This is not how **Risk-First** sees it:
 
 First, we have the notion that Risks are discrete events, again.  Some risks _are_ (like gambling on a horse race), but most _aren't_.  In the [Dinner Party](A-Simple-Scenario), for example, bad preparation is going to mean a _worse_ time for everyone, but how good a time you're having is a spectrum, it doesn't divide neatly into just "good" or "bad".  
 
-Second, the opposite of "Risk Management" (or trying to minimize the "Downside") is either "Upside Risk Management", (trying to maximise the good things happening), or it's trying to make as many bad things happen as possible.  Humans tend to be optimists (especially when there are lots of [Hidden Risks](Glossary#hidden-risk)), hence our focus on Downside Risk.  Sometimes though, it's good to stand back and look at a scenario and think:  am I capturing all the Upside Risk here?
+Second, the opposite of "Risk Management" (or trying to minimise the "Down-side") is either "Upside Risk Management", (trying to maximise the good things happening), or it's trying to make as many bad things happen as possible.  Humans tend to be optimists (especially when there are lots of [Hidden Risks](Glossary#hidden-risk)), hence our focus on Downside Risk.  Sometimes though, it's good to stand back and look at a scenario and think:  am I capturing all the Upside Risk here?
 
 Finally, Crisis Management is _still just Risk Management_:  the crisis (Earthquake, whatever) has _happened_.  You can't manage it because it's in the past.   All you can do is Risk Manage the future (minimize further casualties and human suffering, for example).    
 
@@ -85,7 +85,7 @@ You would expect then, that any methods for managing software delivery should be
 - If there is a production outage during the working week, we don't wait for the next Sprint to fix it.
 - Although a 40-hour work-week _is a great idea_, this goes out of the window if the databases all crash on a Saturday morning.
 
-In these cases, we (hopfully calmly) _evaluate the risks and take action_.  
+In these cases, we (hopefully calmly) _evaluate the risks and take action_.  
 
 I call this **Panic Invariance**:   the methodology shouldn't need to change given the amount of pressure or importance on the table.
 
@@ -176,7 +176,7 @@ But, under a 3% regime, risk **A** and **B** are _both_ worth mitigating.
 
 ### Discounting the Future To Zero
 
-I have worked in teams sometimes where the blinkers go down, and the only thing that matters is _now_.    They may apply a rate of 60% per-day, which means that anything with a horizon over a week is irrelevant.   Regimes of such [hyperinflation](https://en.wikipedia.org/wiki/Hyperinflation) are a sure sign that something has _really broken down_ within a project.  Consider in this case a Discount Factor of 60% per day, and the following risks:
+I have worked in teams sometimes where the blinkers go down, and the only thing that matters is _now_.    They may apply a rate of 60% per-day, which means that anything with a horizon over a week is irrelevant.   Regimes of such [hyper-inflation](https://en.wikipedia.org/wiki/Hyperinflation) are a sure sign that something has _really broken down_ within a project.  Consider in this case a Discount Factor of 60% per day, and the following risks:
 
 - Risk A: £80 cost, happening _tomorrow_
 - Risk B: £500 cost, happening in _5 days_.  

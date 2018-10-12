@@ -36,7 +36,7 @@ Much like [Reliability Risk](#reliability-risk), there is science for it:
 
  - [Queue Theory](https://en.wikipedia.org/wiki/Queueing_theory) is all about building mathematical models of buffers, queues, pools and so forth.
  - [Logistics](https://en.wikipedia.org/wiki/Logistics) is the practical organisation of the flows of materials and goods around things like [Supply Chains](https://en.wikipedia.org/wiki/Supply_chain).
- - And [Project Management](https://en.wikipedia.org/wiki/Project_management) is in large part about ensuring the right resources are avaiable at the right times.  We'll be taking a closer look at that in Risk-First Part 3 sections on Prioritisation and the [Project Managment Body Of Knowledge](https://en.wikipedia.org/wiki/Project_Management_Body_of_Knowledge).
+ - And [Project Management](https://en.wikipedia.org/wiki/Project_management) is in large part about ensuring the right resources are available at the right times.  We'll be taking a closer look at that in Risk-First Part 3 sections on Prioritisation and the [Project Management Body Of Knowledge](https://en.wikipedia.org/wiki/Project_Management_Body_of_Knowledge).
 
 
 
@@ -67,7 +67,7 @@ Any product idea is necessarily of it's time:  the [Goal In Mind](Glossary#Goal-
 
 How long will that remain true for?  This is your _opportunity_:  it exists apart from any deadlines you set yourself, or funding options.  It's purely, "how long will this idea be worth doing?"  
 
-With any luck, decisions around _funding_ your project will be tied into this, but it's not always the case.   It's very easy to undershoot or overshoot the market completely and miss the window of opportunity.  
+With any luck, decisions around _funding_ your project will be tied into this, but it's not always the case.   It's very easy to under-shoot or overshoot the market completely and miss the window of opportunity.  
 
 ### The iPad
 

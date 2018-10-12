@@ -102,7 +102,7 @@ Perhaps it's a little unfair to draw out one human characteristic for attention.
 
 [Agency Risk](Agency-Risk) doesn't just refer to people - it refers to anything which has agency over it's actions.  
 
-> "Agency is the capacity of an actor to act in a given environment... Agency may either be classified as unconscious, involuntary behavior, or purposeful, goal directed activity (intentional action). " - [Agency, _Wikipedia_](https://en.wikipedia.org/wiki/Agency_(philosophy)) 
+> "Agency is the capacity of an actor to act in a given environment... Agency may either be classified as unconscious, involuntary behaviour, or purposeful, goal directed activity (intentional action). " - [Agency, _Wikipedia_](https://en.wikipedia.org/wiki/Agency_(philosophy)) 
 
 There is significant [Agency Risk](Agency-Risk) in running software _at all_.  Since computer systems follow rules we set for them, we shouldn't be surprised when those rules have exceptions that lead to disaster.  For example:
 

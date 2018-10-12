@@ -12,7 +12,7 @@ The standard Computer-Science definition of complexity, is [Kolmogorov Complexit
 
 This is a fairly handy definition for us, as it means that to in writing software to solve a problem, there is a lower bound on the size of the software we write.  In practice, this is pretty much impossible to quantify.  But that doesn't really matter:  the techniques for _moving in that direction_ are all that we are interested in, and this basically amounts to compression.
 
-Let's say we wanted to write a javascript program to output this string:
+Let's say we wanted to write a JavaScript program to output this string:
 
 ```
 abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
@@ -126,7 +126,7 @@ h: i
 
 **Connectivity** is also **Complexity**.  Heavily connected programs/graphs are much harder to work with than less-connected ones.  Even _laying out_ the first graph sensibly is a harder task than the second (the second is a doddle).  But the reason programs with greater connectivity are harder to work with is that changing one module potentially impacts many others.
 
-## Hierarchies and Modularization
+## Hierarchies and Modularisation
 
 In the second, simplified graph, I've arranged it as a hierarchy, which I can do now that it's only 1-connected.  For 10 vertices, we need 9 edges to connect everything up.  It's always:
 
@@ -138,7 +138,7 @@ Note that I could pick any hierarchy here:  I don't have to start at **c** (alth
 
 How does this help us?   Imagine if **a** - **j** were modules of a software system, and the edges of the graph showed communications between the different sub-systems.  In the first graph, we're in a worse position:  who's in charge?  What deals with what?  Can I isolate a component and change it safely?  What happens if one component disappears?  But, in the second graph, it's easier to reason about, because of the reduced number of connections and the new heirarchy of organisation.  
 
-On the downside, perhaps our messages have farther to go now:  in the original **i** could send a message straight to **j**, but now we have to go all the way via **c**.   But this is the basis of [Modularization](https://en.wikipedia.org/wiki/Modular_programming) and [Hierarchy](https://en.wikipedia.org/wiki/Hierarchy).
+On the down-side, perhaps our messages have farther to go now:  in the original **i** could send a message straight to **j**, but now we have to go all the way via **c**.   But this is the basis of [Modularisation](https://en.wikipedia.org/wiki/Modular_programming) and [Hierarchy](https://en.wikipedia.org/wiki/Hierarchy).
 
 As a tool to battle complexity, we don't just see this in software, but everywhere in our lives.  Society, business, nature and even our bodies:
   
@@ -147,7 +147,7 @@ As a tool to battle complexity, we don't just see this in software, but everywhe
  - **Organs** - like hearts livers, brains etc.
  - **Organisms** - like you and me.
  
-The great complexity-reducing mechanism of modularization is that _you only have to consider your local environment_.  Elements of the program that are "far away" in the hierarchy can be relied on not to affect you.  This is somewhat akin to the **Principal Of Locality**:
+The great complexity-reducing mechanism of modularisation is that _you only have to consider your local environment_.  Elements of the program that are "far away" in the hierarchy can be relied on not to affect you.  This is somewhat akin to the **Principal Of Locality**:
 
 > "Spatial locality refers to the use of data elements within relatively close storage locations." - [Locality Of Reference, _Wikipedia_](https://en.wikipedia.org/wiki/Locality_of_reference)
  
@@ -211,7 +211,7 @@ At a basic level, [Complexity Risk](Complexity-Risk) heavily impacts on [Schedul
 
 The most common way we talk about unnecessary complexity in software is as [Technical Debt](Complexity-Risk#technical-debt):
 
-> "Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite... The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise." - [Ward Cunningham, 1992](https://en.wikipedia.org/wiki/Technical_debt)
+> "Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite... The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organisations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise." - [Ward Cunningham, 1992](https://en.wikipedia.org/wiki/Technical_debt)
 
 Building a perfect first-time solution is a waste, because perfection takes a long time.  You're taking on more attendant [Schedule Risk](Scarcity-Risk#schedule-risk) than necessary and [Meeting Reality](Meeting-Reality) more slowly than you could.
 
@@ -221,7 +221,7 @@ But, having mitigated the [Feature Risk](Feature-Risk), you are now carrying mor
 
 ## Kitchen Analogy
 
-It’s often hard to make the case for minimizing [Technical Debt](Complexity-Risk#technical-debt): it often feels that there are more important priorities, especially when technical debt can be “swept under the carpet” and forgotten about until later.  (See [Discounting The Future](Risk-Theory#discounting-the-future-to-zero).)
+It’s often hard to make the case for minimising [Technical Debt](Complexity-Risk#technical-debt): it often feels that there are more important priorities, especially when technical debt can be “swept under the carpet” and forgotten about until later.  (See [Discounting The Future](Risk-Theory#discounting-the-future-to-zero).)
 
 One helpful analogy I have found is to imagine your code-base is a kitchen.   After preparing a meal (i.e. delivering the first implementation), _you need to tidy up the kitchen_.  This is just something everyone does as a matter of _basic sanitation_.
 
@@ -252,9 +252,9 @@ Sometimes, feature-creep happens because either managers feel they need to keep 
 
 ![Dead-End Risk](images/generated/risks/complexity/dead-end-risk.png) 
 
-[Dead-End Risk](Complexity-Risk#dead-end-risk) is where you build functionality that you _think_ is useful, only to find out later that actually, it was a dead-end, and is superceded by something else.
+[Dead-End Risk](Complexity-Risk#dead-end-risk) is where you build functionality that you _think_ is useful, only to find out later that actually, it was a dead-end, and is superseded by something else.
 
-For example, let's say that the Accounting sub-system needed password protection (so you built this).  Then the team realised that you needed a way to _change the password_ (so you built that).   Then, that you needed to have more than one user of the Accounting system so they would all need passwords (ok, fine).  
+For example, let's say that the Accounting sub-system needed password protection (so you built this).  Then the team realised that you needed a way to _change the password_ (so you built that).   Then, that you needed to have more than one user of the Accounting system so they would all need passwords (OK, fine).  
 
 Finally, the team realises that actually logging-in would be something that all the sub-systems would need, and that it had already been implemented more thoroughly by the Approvals sub-system.   
 
@@ -323,7 +323,7 @@ function b(a, b, c, d /* new parameter */) {
 
 Then, we can say that the protocol has changed.  This problem is so common, so endemic to computing that we've had compilers that check function arguments [since the 1960's](https://en.wikipedia.org/wiki/Compiler).  The point being is that it's totally possible for the compiler to warn you about when a protocol within the program has changed.  
 
-The same is basically true of [Data Types](https://en.wikipedia.org/wiki/Data_type):  whenever we change the **Data Type**, we need to correct the usages of that type.  Note above, I've given the `javascript` example, but I'm going to switch to `typescript` now:
+The same is basically true of [Data Types](https://en.wikipedia.org/wiki/Data_type):  whenever we change the **Data Type**, we need to correct the usages of that type.  Note above, I've given the `JavaScript` example, but I'm going to switch to `TypeScript` now:
 
 ```typescript
 interface BInput {
@@ -338,7 +338,7 @@ function b(in: BInput): string {
 }
 ```
 
-Now, of course, there is a tradeoff:  we _mitigate_ [Complexity Risk](Complexity-Risk), because we define the protocols / types _once only_ in the program, and ensure that usages all match the specification.  But the tradeoff is (as we can see in the `typescript` code) more _finger-typing_, which some people argue counts as [Schedule Risk](Scarcity-Risk#schedule-risk).  
+Now, of course, there is a tradeoff:  we _mitigate_ [Complexity Risk](Complexity-Risk), because we define the protocols / types _once only_ in the program, and ensure that usages all match the specification.  But the tradeoff is (as we can see in the `TypeScript` code) more _finger-typing_, which some people argue counts as [Schedule Risk](Scarcity-Risk#schedule-risk).  
 
 Nevertheless, compilers and type-checking are so prevalent in software that clearly, you have to accept that in most cases, the trade-off has been worth it: Even languages like [Clojure](https://clojure.org) have been retro-fitted with [type checkers](https://github.com/clojure/core.typed/wiki/User-Guide).
 
@@ -350,7 +350,7 @@ So far, we've looked at a couple of definitions of complexity in terms of the co
 
 Once running, an algorithm or data structure will consume space or runtime dependent on it's characteristics.  As with [Garbage Collectors](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)), these characteristics can introduce [Performance Risk](Operational-Risk#performance-risk) which can easily catch out the unwary.  By and large, using off-the-shelf data structures and algorithms helps, but you still need to know their performance characteristics. 
 
-The [Big O Cheatsheet](http://bigocheatsheet.com) is a wonderful resource to investigate this further.  
+The [Big O Cheat Sheet](http://bigocheatsheet.com) is a wonderful resource to investigate this further.  
 
 ### Concurrency / Mutability
 
@@ -366,11 +366,11 @@ An important lesson here is that choice of language can reduce complexity: and w
 
 The last area I want to touch on here is networking.  There are plenty of [Complexity Risk](Complexity-Risk) perils in _anything_ to do with networked code, chief amongst them being error handling and (again) [protocol evolution](Communication-Risk#protocol-risk).  
 
-In the case of security considerations, exploits _thrive_ on the complexity of your code, and the weaknesses that occur because of it.  In particular, Schneier's Law says, never implement your own crypto scheme:
+In the case of security considerations, exploits _thrive_ on the complexity of your code, and the weaknesses that occur because of it.  In particular, Schneier's Law says, never implement your own cryptographic scheme:
 
 > "Anyone, from the most clueless amateur to the best cryptographer, can create an algorithm that he himself can't break. It's not even hard. What is hard is creating an algorithm that no one else can break, even after years of analysis." - [Bruce Schneier, 1998](https://en.wikipedia.org/wiki/Bruce_Schneier#Cryptography) 
 
-Luckily, most good languages include crypto libraries that you can include to mitigate these [Complexity Risks](Complexity-Risk) from your own code-base.  
+Luckily, most good languages include cryptographic libraries that you can include to mitigate these [Complexity Risks](Complexity-Risk) from your own code-base.  
 
 This is a strong argument for the use of libraries.  But, when should you use a library and when should you implement yourself?  This is again covered in the section on [Software Dependency Risk](Software-Dependency-Risk).  
 

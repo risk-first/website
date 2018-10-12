@@ -80,7 +80,7 @@ Internal Model      - Communication --  Dependency
 - similar to _threading/deadlocking issues 
 - Coordination is how you deal with abstractions.  and this means communication.
 
-tbd diagram: abstractions -> agency -> coordintion -> communication
+tbd diagram: abstractions -> agency -> coordination -> communication
 
 One thing that should be apparent is that there are similarities in the risks between all the kinds of
 

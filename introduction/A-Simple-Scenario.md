@@ -4,7 +4,7 @@ First up, I'm going to introduce a simple model for thinking about risk.
 
 ## A Simple Scenario
 
-Lets for a moment forget about software completely, and think about _any endeavor at all_ in life.  It could be passing a test, mowing the lawn or going on holiday.  Choose something now.   I'll discuss from the point of view of "cooking a meal for some friends", but you can play along with your own example.  
+Lets for a moment forget about software completely, and think about _any endeavour at all_ in life.  It could be passing a test, mowing the lawn or going on holiday.  Choose something now.   I'll discuss from the point of view of "cooking a meal for some friends", but you can play along with your own example.  
 
 ### Goal In Mind
 
