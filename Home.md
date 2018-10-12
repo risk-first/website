@@ -51,7 +51,7 @@ Risks are often very similar across different software projects.   And, if you k
  - [Communication Risk](Communication-Risk)
  - [Complexity Risk](Complexity-Risk)
  - [Dependency Risk](Dependency-Risk)
- - [Schedule Risk](Scarcity-Risk#schedule-risk)
+ - [Scarcity Risk](Scarcity-Risk)
  - [Software Dependency Risk](Software-Dependency-Risk)
  - [Process Risk](Process-Risk)
  - [Boundary Risk](Boundary-Risk)
