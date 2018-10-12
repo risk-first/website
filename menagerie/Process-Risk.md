@@ -4,7 +4,7 @@
 
 > "**Process:** A process is a set of activities that interact to achieve a result." - [Process, _Wikipedia_](https://en.wikipedia.org/wiki/Process)
 
-In the software development world (and the business world generally) processes commonly involve _forms_:  If you're filling out a form (whether on paper or on a computer) then you're involved in a process of some sort, whether an "Account Registration" process, "Loan Application" process or "Consumer Satisfaction Survey" process.  But sometimes, they involve events occuring:  a [build process](https://en.wikipedia.org/wiki/Software_build) might start after you commit some code, for example.
+In the software development world (and the business world generally) processes commonly involve _forms_:  If you're filling out a form (whether on paper or on a computer) then you're involved in a process of some sort, whether an "Account Registration" process, "Loan Application" process or "Consumer Satisfaction Survey" process.  But sometimes, they involve events occurring:  a [build process](https://en.wikipedia.org/wiki/Software_build) might start after you commit some code, for example.
 
 ## The Purpose Of Process
 
@@ -23,11 +23,11 @@ These are all examples of [Risk Mitigation](Glossary#Mitigated-risk) for the _ow
 
 ## Evolution Of Business Process
 
-Before we get to examining what constitues [Process Risks](Process-Risk), let's consider how processes _form_.  Specifically, we're going to look at [Business Process](https://en.wikipedia.org/wiki/Business_process):
+Before we get to examining what constitutes [Process Risks](Process-Risk), let's consider how processes _form_.  Specifically, we're going to look at [Business Process](https://en.wikipedia.org/wiki/Business_process):
 
 > "**Business Process** or **Business Method** is a collection of related, structured activities or tasks that in a specific sequence produces a service or product (serves a particular business goal) for a particular customer or customers." - [Business Process, _Wikipedia_](https://en.wikipedia.org/wiki/Business_process)
 
-Business Processes often arise in response to an unmet need within an organisation.  And, as we said above, they are usually there to mitigate other risks.  Let's look at an example lifecycle of how that can happen.
+Business Processes often arise in response to an unmet need within an organisation.  And, as we said above, they are usually there to mitigate other risks.  Let's look at an example life-cycle of how that can happen.
 
 ![Step 0: Clients `C` need `A` to do their jobs](images/kite9/process-risk-0.png)
 
@@ -52,10 +52,10 @@ Business Processes often arise in response to an unmet need within an organisati
   - `T` has mitigated [Schedule Risk](Scarcity-Risk#schedule-risk) issues by drawing a line around the amount of [Complexity Risk](Complexity-Risk) they are willing to take on.
   - `C` now has [Process Risk](Process-Risk):  will their requirements for `A` be met by `T`?  They have to submit to the process to find out... 
 
-![Team T protects itself from Coordination issues with signoffs or other barriers](images/kite9/process-risk-4.png)
+![Team T protects itself from Coordination issues with sign-offs or other barriers](images/kite9/process-risk-4.png)
 
-4.   But it's hard to make sure the right clients get access to `A` at the right times, and it's necessary to synchronize access across company `C`.  (A [Coordination Risk](Coordination-Risk) issue.)  
-   - `T` reacts and sets up sign-off, authorization or monetary barriers around `A`, moving the [Coordination Risk](Coordination-Risk) issue out of their team.
+4.   But it's hard to make sure the right clients get access to `A` at the right times, and it's necessary to synchronise access across company `C`.  (A [Coordination Risk](Coordination-Risk) issue.)  
+   - `T` reacts and sets up sign-off, authorisation or monetary barriers around `A`, moving the [Coordination Risk](Coordination-Risk) issue out of their team.
    - But, for `C`, this _again_ increases the [Process Risk](Process-Risk) involved in using `A`. 
    
 ![Team T increases bureaucratic load, and pushes Process Risk onto C](images/kite9/process-risk-5.png)
@@ -70,7 +70,7 @@ Business Processes often arise in response to an unmet need within an organisati
 
 In this example, you can see how the organisation evolves to mitigate risk around the use (and misuse) of `A`:  First, [Complexity Risk](Complexity-Risk), then [Coordination Risk](Coordination-Risk), then [Dependency Risk](Dependency-Risk) and finally, the [Process Risk](Process-Risk) was created to mitigate everything else.  This is an example of _Process following Strategy_: 
 
-> In this conception, you can see how the structure of an organisation (the teams and processes within it, the heirarchy of control) will 'evolve' from the resources of the organisation and the strategy it pursues.  Processes evolve to meet the needs of the organisation." - [Minzberg, _Strategy Safari_](http://www.mintzberg.org/books/strategy-safari)
+> In this conception, you can see how the structure of an organisation (the teams and processes within it, the hierarchy of control) will 'evolve' from the resources of the organisation and the strategy it pursues.  Processes evolve to meet the needs of the organisation." - [Minzberg, _Strategy Safari_](http://www.mintzberg.org/books/strategy-safari)
 
 ## An Example - Release Process
 
@@ -113,11 +113,11 @@ The feedback loops allow us to perform [Retrospectives and Reviews](Review) to i
  
 ### Bureaucracy Risk
 
-Where we've talked about process evolution above, the actors involved have been acting in good faith:   they are working to mitigate risk in the organisation.  The [Process Risk](Process-Risk) that accretes along the way is an _unintended consequence_:  There is no guarantee that the process that arises will be humane and intuitive.  Many organisational processes end up being baroque or Kafkaesque, forcing unintuitive behaviour on their users.  This is partly because process design is _hard_, and it's difficult to anticipate all the various ways a process will be used ahead-of-time.  So, some of [Bureaucracy Risk](Process-Risk#bureaucracy-risk) is due to [Complexity](Complexity-Risk).
+Where we've talked about process evolution above, the actors involved have been acting in good faith:   they are working to mitigate risk in the organisation.  The [Process Risk](Process-Risk) that accretes along the way is an _unintended consequence_:  There is no guarantee that the process that arises will be humane and intuitive.  Many organisational processes end up being baroque or Kafka-esque, forcing unintuitive behaviour on their users.  This is partly because process design is _hard_, and it's difficult to anticipate all the various ways a process will be used ahead-of-time.  So, some of [Bureaucracy Risk](Process-Risk#bureaucracy-risk) is due to [Complexity](Complexity-Risk).
 
 But [Parkinson's Law](https://en.wikipedia.org/wiki/Parkinsons_law) takes this one step further:  the human actors shaping the organisation will abuse their positions of power in order to further their own careers (this is [Agency Risk](Agency-Risk), which we will come to in a future section):
 
-> "Parkinson's law is the adage that "work expands so as to fill the time available for its completion". It is sometimes applied to the growth of bureaucracy in an organization... He explains this growth by two forces: (1) 'An official wants to multiply subordinates, not rivals' and (2) 'Officials make work for each other.'" - [Parkinson's Law, _Wikipedia_](https://en.wikipedia.org/wiki/Parkinsons_law)  
+> "Parkinson's law is the adage that "work expands so as to fill the time available for its completion". It is sometimes applied to the growth of bureaucracy in an organisation... He explains this growth by two forces: (1) 'An official wants to multiply subordinates, not rivals' and (2) 'Officials make work for each other.'" - [Parkinson's Law, _Wikipedia_](https://en.wikipedia.org/wiki/Parkinsons_law)  
 
 This implies that there is a tendency for organisations to end up with _needless levels of [Bureaucratic Risk](Process-Risk#bureaucracy-risk)_.
  

@@ -54,7 +54,7 @@ The right answer is to use the fastest feedback loop possible, _which actually d
 
 ![Different actions have different feedback loops](images/generated/cadence.png)
 
-## Recap
+## Re-cap
 
 Let's look at the journey so far:
 

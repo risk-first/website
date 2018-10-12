@@ -38,7 +38,7 @@ Next, we can look at each of these risks and consider the threat they represent.
 * If they **can’t access it**, does that mean that they’re stuck unable to get on the train?  Or they can’t listen to music?  
 * If the **data is lost**, does this mean that no one can get on the plane?  Or that the patients have to have their CAT scans done again?  Or that people’s private information is scattered around the Internet?
 * If the **data is wrong**, does that mean that the wrong people get sent their parcels?  Do they receive the wrong orders?  Do they end up going to the wrong courses?
-* If the **security is compromised** and all the data exposed, does that mean confidential details are shared on the internet, or that they just need to create a new password?
+* If the **security is compromised** and all the data exposed, does that mean confidential details are shared on the Internet, or that they just need to create a new password?
 * If there is **missing functionality**, will they not buy the system?  Will they use a competitor’s product?  Will they waste time doing things a harder or less optimal way?
 * If our **[Internal Model](Glossary#Internal-Model) is wrong**, then is there a chance we are building something for a non-existent market?  Or annoying our customers?  Or leaving an opportunity for competitors?
 
@@ -54,7 +54,7 @@ Let's consider a single risk:  that the website gets hacked, and sensitive data 
 
 #### Ashley Maddison
 
-In 2016, Ashley Maddison, a website specialising in aiding extra-marital affairs, [suffered a data breach](https://en.wikipedia.org/wiki/Ashley_Madison_data_breach), revealing the personal details of all of their clients on the internet.  The sensitive nature of their business contrasts sharply with the reported sloppiness of their security arrangements. 
+In 2016, Ashley Maddison, a website specialising in aiding extra-marital affairs, [suffered a data breach](https://en.wikipedia.org/wiki/Ashley_Madison_data_breach), revealing the personal details of all of their clients on the Internet.  The sensitive nature of their business contrasts sharply with the reported sloppiness of their security arrangements. 
 
 Can our risk model explain what happened here?
 
@@ -65,7 +65,7 @@ Can our risk model explain what happened here?
 
 ![Attendant Risks of Improved Security](images/generated/software_project_scenario_action_2.png)
 
-This story highlights a couple of important lessions.  <!-- tweet-start -->First, when exposing a service on the Internet, it's now a good idea to _look for trouble_:  you should go out and try and improve your [Internal Model](Glossary#Internal-Model).<!-- tweet-end -->   Thankfully, this is what sites like [OWASP](https://www.owasp.org/index.php/Top_10-2017_Top_10) are for:  they _tell you about the [Attendant Risks](Glossary#attendant-risk)_ <!-- tweet-end --> and further, try to provide some evaluation of them to guide your actions.   Second, you shouldn't expect an organisation with a morally-questionable business model to have your best interests at heart.
+This story highlights a couple of important lessons.  <!-- tweet-start -->First, when exposing a service on the Internet, it's now a good idea to _look for trouble_:  you should go out and try and improve your [Internal Model](Glossary#Internal-Model).<!-- tweet-end -->   Thankfully, this is what sites like [OWASP](https://www.owasp.org/index.php/Top_10-2017_Top_10) are for:  they _tell you about the [Attendant Risks](Glossary#attendant-risk)_ <!-- tweet-end --> and further, try to provide some evaluation of them to guide your actions.   Second, you shouldn't expect an organisation with a morally-questionable business model to have your best interests at heart.
 
 ## Actions Are Dependent On Risk Evaluation
 

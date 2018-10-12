@@ -32,15 +32,15 @@ Synergy's release means that the app-store refresh will happen in a few weeks, s
 
 **Eve**:  Well, you're correct on the first one.  But, I've done this before not that long ago for a Chinese project, so I know the process - we shouldn't run into any new [Hidden Risk](Glossary#hidden-risk).
 
-**Bob**:  Ok, fair enough.  But isn't there something simpler we can do?  Maybe some settings in the Web Server?
+**Bob**:  OK, fair enough.  But isn't there something simpler we can do?  Maybe some settings in the Web Server?
 
 **Eve**:  Well, if we were using Apache, yes, it would be easy to do this.  But, we're using Baroque Web Server, and it _might_ support it, but the documentation isn't very clear.
 
-**Bob**:  Ok, and upgrading it is a _big_ risk, right?  We'd have to migrate all of our [configuration](Complexity-Risk)... 
+**Bob**:  OK, and upgrading it is a _big_ risk, right?  We'd have to migrate all of our [configuration](Complexity-Risk)... 
 
 **Eve**:  Yes, let's not go there.  But if we changing the settings on Baroque, we have the [Attendant Risk](Glossary#attendant-risk) that it's not supported by the software and we're back where we started.  Also, if we isolate the Synergy app stuff now, we can mess around with it at any point in future, which is a big win in case there are other [Hidden Risks](Glossary#hidden-risk) with the security changes that we don't know about yet.
 
-**Bob**:  Ok, I can see that buys us something, but time is really short and we have holidays coming up.  
+**Bob**:  OK, I can see that buys us something, but time is really short and we have holidays coming up.  
 
 **Eve**:  Yes. How about for now, we go with the isolated server, and review next week?  If it's working out, then great, we continue with it.  Otherwise, if we're not making progress next week, then it'll be because our isolation solution is meeting more risk than we originally thought.   We can try the settings change in that case.
 

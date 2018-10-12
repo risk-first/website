@@ -66,7 +66,7 @@ In all, to de-risk, you should try and meet reality:
 
 - **Sooner**, so you have time to mitigate the hidden risks it uncovers
 - **More Frequently**: so the hidden risks don't hit you all at once
-- **In Smaller Chunks**: so you're not overburdened by hidden risks all in one go.
+- **In Smaller Chunks**: so you're not over-burdened by hidden risks all in one go.
 - **With Feedback**: if you don't collect feedback from the experience of meeting reality, hidden risks _stay hidden_.
 
 In [Development Process](Development-Process), we looked at the use of UAT in order to [Meet Reality](Glossary#Meet-Reality) earlier.  By performing the UAT, we meet reality sooner.  The _cost_ of this is that we also expend precious time on that process which adds risk to the schedule.
@@ -77,7 +77,7 @@ In [Development Process](Development-Process), we looked at the use of UAT in or
 
 As a flavour of what's to come, let's look at [YAGNI](https://www.martinfowler.com/bliki/Yagni.html), an acronym for You Aren't Gonna Need It.   Martin Fowler says:
 
-> Yagni originally is an acronym that stands for "You Aren't Gonna Need It". It is a mantra from ExtremeProgramming that's often used generally in agile software teams. It's a statement that some capability we presume our software needs in the future should not be built now because "you aren't gonna need it".
+> YAGNI originally is an acronym that stands for "You Aren't Gonna Need It". It is a mantra from ExtremeProgramming that's often used generally in agile software teams. It's a statement that some capability we presume our software needs in the future should not be built now because "you aren't gonna need it".
 
 > This principle was first discussed and fleshed out on [Ward's Wiki](http://wiki.c2.com/?YouArentGonnaNeedIt)
 

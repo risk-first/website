@@ -128,17 +128,17 @@ But it also hugely increases [Communication Risk](Communication-Risk) because no
 There are a couple of ways to do this:
 
 - **Standards**:  If component **B** is a database, a queue, mail gateway or something else with a standard interface, then you're in luck.   Write **A** to those standards, and find a cheap, simple implementation to test with.  This gives you time to sort out exactly what implementation of **B** you're going for.  This is not a great long-term solution, because obviously, you're not using the _real_ dependency- you might get surprised when the behaviour of the real component is subtly different.  But it can reduce [Schedule Risk](Scarcity-Risk#schedule-risk) in the short-term.
-- **Coding To Interfaces**:  If standards aren't an option, but the surface area of **B** that **A** uses is quite small and obvious, you can write a small interface for it, and work behind that, using a [Mock](https://en.wikipedia.org/wiki/Mock_object) for **B** while you're waiting for finished component.  Write the interface to cover only what **A** _needs_, rather than everything that **B** _does_ in order to minimize the risk of [Leaky Abstractions](https://en.wikipedia.org/wiki/Leaky_abstraction).
+- **Coding To Interfaces**:  If standards aren't an option, but the surface area of **B** that **A** uses is quite small and obvious, you can write a small interface for it, and work behind that, using a [Mock](https://en.wikipedia.org/wiki/Mock_object) for **B** while you're waiting for finished component.  Write the interface to cover only what **A** _needs_, rather than everything that **B** _does_ in order to minimise the risk of [Leaky Abstractions](https://en.wikipedia.org/wiki/Leaky_abstraction).
 
 ![Coding to a standard on an interface breaks the dependency on unwritten software](images/kite9/software-dependency-unwritten-2.png)
 
 ### Conway's Law
 
-If the dependency is being written by another person, another team or in another country, communication risks pile up.<!-- tweet-end -->  When this happens, you will want to minimize _as much as possible_ the interface complexity, since the more complex the interface, the worse the [Communication Risk](Communication-Risk) will be.  The tendency then is to make the interfaces between teams or people _as simple as possible_, modularizing along these organisational boundaries.
+If the dependency is being written by another person, another team or in another country, communication risks pile up.<!-- tweet-end -->  When this happens, you will want to minimise _as much as possible_ the interface complexity, since the more complex the interface, the worse the [Communication Risk](Communication-Risk) will be.  The tendency then is to make the interfaces between teams or people _as simple as possible_, modularising along these organisational boundaries.
 
 In essence, this is [Conway's Law](https://en.wikipedia.org/wiki/Conways_law):
 
-> "organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations." — [M. Conway, _Conway's Law_](https://en.wikipedia.org/wiki/Conways_law) <!-- tweet-end -->
+> "organisations which design systems ... are constrained to produce designs which are copies of the communication structures of these organisations." — [M. Conway, _Conway's Law_](https://en.wikipedia.org/wiki/Conways_law) <!-- tweet-end -->
 
 ### 2.  Software Libraries
 
@@ -160,7 +160,7 @@ Unfortunately, we know that most decisions _don't_ really get made this way.  We
 
 But, leaving that aside, let's try to build a model of what this decision making process _should_ involve.  Luckily, other authors have already considered the problem of choosing good software libraries, so let's start there.
 
-In the table below, I am summarizing three different sources (linked at the end of the section), which give descriptions of which factors to look for when choosing open-source libraries.
+In the table below, I am summarising three different sources (linked at the end of the section), which give descriptions of which factors to look for when choosing open-source libraries.
 
 ![Software Dependencies](images/generated/software_dependency_table_1_large.png)
 
@@ -174,10 +174,10 @@ Some take-aways:
  
 One thing that none of the sources consider (at least from the outset) is the [Complexity Risk](Complexity-Risk) of using a solution:    
  - Does it drag in lots of extra dependencies that seem unnecessary for the job in hand?  If so, you could end up in [Dependency Hell](https://en.wikipedia.org/wiki/Dependency_hell), with multiple, conflicting versions of libraries in the project.
- - Do you already have a dependency providing this functionality?  So many times, I've worked on projects that import a _new_ dependency when some existing (perhaps transitive) dependency has _already brought in the functionality_.  For example, there are plenty of libraries for [JSON](https://en.wikipedia.org/wiki/JSON) marshalling, but if I'm also using a web framework the chances are it already has a dependency on one already.
+ - Do you already have a dependency providing this functionality?  So many times, I've worked on projects that import a _new_ dependency when some existing (perhaps transitive) dependency has _already brought in the functionality_.  For example, there are plenty of libraries for [JSON](https://en.wikipedia.org/wiki/JSON) marshaling, but if I'm also using a web framework the chances are it already has a dependency on one already.
  - Does it contain lots of functionality that isn’t relevant to the task you want it to accomplish?  e.g. Using Java when a shell script would do (on a non-Java project)
  
-To give an extreme example of this, I once worked on an application which used [Hazlecast](https://en.wikipedia.org/wiki/Hazelcast) to cache log-in session tokens for a 3rd party datasource.  But, the app is only used once every month, and session IDs can be obtained in milliseconds.   So... why cache them?  Although Hazlecast is an excellent choice for in-memory caching across multiple JVMs, it is a complex piece of software (after all, it does lots of stuff).  By doing this, you have introduced extra dependency risk, cache invalidation risks, networking risks, synchronisation risks and so on, for actually no benefit at all...  Unless, it’s about [CV Building](Agency-Risk#CV-building).  
+To give an extreme example of this, I once worked on an application which used [Hazlecast](https://en.wikipedia.org/wiki/Hazelcast) to cache log-in session tokens for a 3rd party data-source.  But, the app is only used once every month, and session IDs can be obtained in milliseconds.   So... why cache them?  Although Hazlecast is an excellent choice for in-memory caching across multiple JVMs, it is a complex piece of software (after all, it does lots of stuff).  By doing this, you have introduced extra dependency risk, cache invalidation risks, networking risks, synchronisation risks and so on, for actually no benefit at all...  Unless, it’s about [CV Building](Agency-Risk#CV-building).  
 
 Sometimes, the amount of complexity _goes up_ when you use a dependency for _good reason_.  <!-- tweet-end --> For example, in Java, you can use [Java Database Connectivity (JDBC)](https://en.wikipedia.org/wiki/Java_Database_Connectivity) to interface with various types of database.  [Spring Framework](https://en.wikipedia.org/wiki/Spring_Framework) (a popular Java library) provides a thing called a `JDBCTemplate`.  This actually makes your code _more_ complex, and can prove very difficult to debug.  However, it prevents some security issues, handles resource disposal and makes database access more efficient.  None of those are essential to interfacing with the database, but not using them is [Technical Debt](Complexity-Risk#technical-debt) that can bite you later on.  
 
@@ -188,7 +188,7 @@ Sometimes, the amount of complexity _goes up_ when you use a dependency for _goo
 Businesses opt for Software as a Service (SaaS) because:
 - It vastly reduces the [Complexity Risk](Complexity-Risk) they face in their organisations. e.g. managing the software or making changes to it.
 - Payment is usually based on _usage_, mitigating [Schedule Risk](Scarcity-Risk#schedule-risk).  e.g. Instead of having to pay for in-house software administrators, they can leave this function to the experts.
-- Potentially, you outsource the [Operational Risk](Operational-Risk) to a third party. e.g. ensuring availability, making sure data is secure and so on.
+- Potentially, you out-source the [Operational Risk](Operational-Risk) to a third party. e.g. ensuring availability, making sure data is secure and so on.
 
 SaaS is now a very convenient way to provide _commercial_ software.   Popular examples of SaaS might be [SalesForce](https://en.wikipedia.org/wiki/Salesforce.com), or [GMail](https://en.wikipedia.org/wiki/Gmail).  Both of which follow the commonly-used [Freemium](https://en.wikipedia.org/wiki/Freemium) model, where the basic service is provided free, but upgrading to a paid account gives extra benefits.  
 
@@ -200,8 +200,8 @@ Let's again recap the risks raised in some of the available literature:
 
 Some take-aways:
 
-- Clearly, [Operational Risk](Operational-Risk) is now a big concern.  By depending on a third-party organisation you are tying yourself to its success or failure in a much bigger way than just by using a piece of open-source software.   What happens to data security, both in the data centre and over the internet?   
-- With [Feature Risk](Feature-Risk) you now have to condend with the fact that the software will be upgraded _outside your control_, and you may have limited control over which features get added or changed. 
+- Clearly, [Operational Risk](Operational-Risk) is now a big concern.  By depending on a third-party organisation you are tying yourself to its success or failure in a much bigger way than just by using a piece of open-source software.   What happens to data security, both in the data centre and over the Internet?   
+- With [Feature Risk](Feature-Risk) you now have to contend with the fact that the software will be upgraded _outside your control_, and you may have limited control over which features get added or changed. 
 - [Boundary Risk](Boundary-Risk) is a also a different proposition: you are tied to the software provider by _a contract_.  If the service changes in the future, or isn't to your liking, you can't simply fork the code (like you could with an open source project).
 
 ![Risk Tradeoff From Using _Software as a Service (SaaS)](images/kite9/software-dependency-saas.png)
@@ -210,7 +210,7 @@ Some take-aways:
 
 We've looked at just 3 different ways of providing a software dependency: SaaS, Libraries and code-your-own.<!-- tweet-end -->
 
-But these are not the only ways to do it, and there's clearly no one _right_ way.   Although here we have looked just at "Commercial Saas" and "Free Open Source", in reality, these are just points in a two-dimensional space involving _Pricing_ and _Hosting_.   
+But these are not the only ways to do it, and there's clearly no one _right_ way.   Although here we have looked just at "Commercial SaaS" and "Free Open Source", in reality, these are just points in a two-dimensional space involving _Pricing_ and _Hosting_.   
 
 Let's expand this view slightly and look at where different pieces of software sit on these axes:
 
@@ -218,7 +218,7 @@ Let's expand this view slightly and look at where different pieces of software s
 
 - Where there is value in the [Network Effect](https://en.wikipedia.org/wiki/Network_effect), it's often a sign that the software will be free, or open source<!-- tweet-end -->:  programming languages and Linux are the obvious examples of this.  Bugs are easier to find when there are lots of eyes looking, and learning the skill to use the software has less [Boundary Risk](Boundary-Risk) if you know you'll be able to use it at any point in the future.
 - At the other end of the spectrum, clients will happily pay for software if it clearly **reduces complexity**.  Take [Amazon Web Services (AWS)](https://en.wikipedia.org/wiki/Amazon_Web_Services).  The essential trade here is that you substitute the complexity of hosting and maintaining various pieces of software, in exchange for monthly payments ([Funding Risk](Scarcity-Risk#Funding-Risk) for you).  Since the AWS _interfaces_ are specific to Amazon, there is significant [Boundary Risk](Boundary-Risk) in choosing this option.
-- In the middle there are lots of **substitute options** and therefore high competition.  Because of this, prices are pushed towards zero, and and therefore often advertising is used to monetarize the product.  [Angry Birds](https://en.wikipedia.org/wiki/Angry_Birds) is a classic example:  initially, it had demo and paid versions, however [Rovio](https://en.wikipedia.org/wiki/Rovio_Entertainment) discovered there was much more money to be made through advertising than from the [paid-for app](https://www.deconstructoroffun.com/blog/2017/6/11/how-angry-birds-2-multiplied-quadrupled-revenue-in-a-year).
+- In the middle there are lots of **substitute options** and therefore high competition.  Because of this, prices are pushed towards zero, and and therefore often advertising is used to monetarise the product.  [Angry Birds](https://en.wikipedia.org/wiki/Angry_Birds) is a classic example:  initially, it had demo and paid versions, however [Rovio](https://en.wikipedia.org/wiki/Rovio_Entertainment) discovered there was much more money to be made through advertising than from the [paid-for app](https://www.deconstructoroffun.com/blog/2017/6/11/how-angry-birds-2-multiplied-quadrupled-revenue-in-a-year).
 
 ### Managing Risks
 
@@ -234,10 +234,10 @@ Let's look at some:
 |-----------------------------------------------------|-------------------------------------------------------------------------|
 |[Coordination Risk](Coordination-Risk)               |Calendar tools,  Bug Tracking, Distributed Databases                     |
 |[Map-And-Territory-Risk](Map-And-Territory-Risk)     |The Internet, generally.  Excel, Google, "Big Data", Reporting tools     |
-|[Schedule-Risk](Scarcity-Risk#schedule-risk)                       |Planning Software, Project Mangement Software                            |
+|[Schedule-Risk](Scarcity-Risk#schedule-risk)                       |Planning Software, Project Management Software                            |
 |[Communication-Risk](Communication-Risk)             |Email, Chat tools, CRM tools like SalesForce, Forums, Twitter, Protocols |
 |[Process-Risk](Process-Risk)                         |Reporting tools, online forms, process tracking tools                    |
-|[Agency-Risk](Agency-Risk)                           |Auditing tools, transaction logs, Timesheet software, HR Software        |  
+|[Agency-Risk](Agency-Risk)                           |Auditing tools, transaction logs, Time-Sheet software, HR Software        |  
 |[Operational-Risk](Operational-Risk)                 |Support tools like ZenDesk, Grafana, InfluxDB, Geneos                    |
 |[Feature-Risk](Feature-Risk)                         |Every piece of software you use!                                         |
   
@@ -258,7 +258,7 @@ Let's take a closer look at this problem in the next section, [Boundary Risk](Bo
 | [sd1 - Defending your code against dependency problems](https://www.software.ac.uk/resources/guides/defending-your-code-against-dependency-problems)
 | [sd2 - How to choose an open source library](https://stackoverflow.com/questions/2960371/how-to-choose-an-open-source-library)
 | [sd3 - Open Source - To use or not to use](https://www.forbes.com/sites/forbestechcouncil/2017/07/20/open-source-to-use-or-not-to-use-and-how-to-choose/2/#39e67e445a8c)
-| [sd4 - Saas Checklist - Nine Factors to Consider](https://www.zdnet.com/article/saas-checklist-nine-factors-to-consider-when-selecting-a-vendor/) |
-| [sd5 - How to Evaluate Saas Vendors](http://sandhill.com/article/how-to-evaluate-saas-vendors-five-key-considerations/) |
+| [sd4 - SaaS Checklist - Nine Factors to Consider](https://www.zdnet.com/article/saas-checklist-nine-factors-to-consider-when-selecting-a-vendor/) |
+| [sd5 - How to Evaluate SaaS Vendors](http://sandhill.com/article/how-to-evaluate-saas-vendors-five-key-considerations/) |
 
 

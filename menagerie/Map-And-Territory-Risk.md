@@ -80,7 +80,7 @@ Also in this diagram we are showing where the hype originates:
  - The **saturation** of the idea within the audience (a dotted line).
  - The **amount known** about the idea by the audience (a [Learning Curve](Communication-risk#learning-curve-risk), if you will, a dashed line).
  
-Both of these are modelled with [Cumulative Distribution](https://en.wikipedia.org/wiki/Cumulative_distribution_function#Use_in_statistical_analysis) curves.  From these two things, we can figure out where our maximum [Map and Territory Risk](Map-And-Territory-Risk) lies:  it's the point where awareness of an idea is furthest from the understanding of it.  This acts as a "brake" on the **hype** around the idea, corresponding to the "Trough of Disillusionment".  
+Both of these are modelled with [Cumulative Distribution](https://en.wikipedia.org/wiki/Cumulative_distribution_function#Use_in_statistical_analysis) curves.  From these two things, we can figure out where our maximum [Map and Territory Risk](Map-And-Territory-Risk) lies:  it's the point where awareness of an idea is farthest from the understanding of it.  This acts as a "brake" on the **hype** around the idea, corresponding to the "Trough of Disillusionment".  
 
 Where the **saturation** and **knowledge** grow together, there is no spike in [Map and Territory Risk](Map-And-Territory-Risk) and we don't see the corresponding "Trough of Disillusionment" at all, as shown in this chart:
 
@@ -140,7 +140,7 @@ In the same way that [markets evolve to demand more features](Scarcity-Risk#red-
 
 There are plenty of ideas which _seem a really good idea at the time_ but then end up being terrible.  It's only as we _learn about the products_ and realize the hidden [Map and Territory Risk](Map-And-Territory-Risk) that we stop using them.  While SLOC is a minor offender, [CFCs](https://en.wikipedia.org/wiki/Chlorofluorocarbon) or [Leaded Petrol](https://en.wikipedia.org/wiki/Tetraethyllead) are more significant examples.  
 
-The following Hyph Cycle chart shows an initially promising idea that turns out to be terrible, and there is a "Period of Inoculation" where the population realise their mistake.  There is "negative hype" as they work to phase out the offending idea:
+The following Hype Cycle chart shows an initially promising idea that turns out to be terrible, and there is a "Period of Inoculation" where the population realise their mistake.  There is "negative hype" as they work to phase out the offending idea:
 
 ![Hype Cycle For Something that turns out to be a _bad_ idea](images/hype-cycle3.png)
 
@@ -150,7 +150,7 @@ In the example of the SatNav, we saw how the _quality_ of [Map and Territory Ris
 
 For Humans, [Map and Territory Risk](Map-And-Territory-Risk) is exacerbated by [cognitive biases](https://en.wikipedia.org/wiki/List_of_cognitive_biases):
 
-> "Cognitive biases are systematic patterns of deviation from norm or rationality in judgment, and are often studied in psychology and behavioral economics." - [Cognitive Bias, _Wikipedia_](https://en.wikipedia.org/wiki/List_of_cognitive_biases)
+> "Cognitive biases are systematic patterns of deviation from norm or rationality in judgement, and are often studied in psychology and behavioural economics." - [Cognitive Bias, _Wikipedia_](https://en.wikipedia.org/wiki/List_of_cognitive_biases)
 
 There are _lots_ of cognitive biases.  But let's just look at a couple that are relevant to [Map and Territory Risk](Map-And-Territory-Risk):
 
@@ -160,7 +160,7 @@ There are _lots_ of cognitive biases.  But let's just look at a couple that are 
 
 ## Hierarchical Organisations
 
-[Map And Territory Risk](Map-And-Territory-Risk) "trickles down" through an organisation.  The higher levels have an outsize ability to pervert the incentives at lower levels because once an organisation begins to pursue a "bullshit objective", the whole company can align to this.  
+[Map And Territory Risk](Map-And-Territory-Risk) "trickles down" through an organisation.  The higher levels have an out-sized ability to pervert the incentives at lower levels because once an organisation begins to pursue a "bullshit objective", the whole company can align to this.  
 
 [The Huffington Post](https://www.huffingtonpost.com/otto-scharmer/the-fish-rots-from-the-he_b_8208652.html) paints a brilliant picture of how Volkswagen managed to get caught faking their emissions tests.  As they point out:
 
@@ -178,14 +178,14 @@ This article identifies the following process:
 A similar (but less catastrophic) personal story from a bank I worked at, where the objectives end up being mis-aligned _within the company_: 
 
 1. My team had been tasked with building automated "smoke tests" of an application.  But this was bullshit:  We only needed to build these _at all_ because the application was so complex.  The reason it was so complex was...
-2. The application was being designed within a "Framework" constructed by the department.  However, the framework was only being used by this one application.  Building a "reuasable" framework which is only used by a single application is bullshit.  But, we had to do this because...
+2. The application was being designed within a "Framework" constructed by the department.  However, the framework was only being used by this one application.  Building a "reusable" framework which is only used by a single application is bullshit.  But, we had to do this because...
 3. The organisational structure was created along a "matrix", with "business function" on one axis and "functional area" on another.   Although we were only building the application for a single business function, it was expected to cater with all the requirements from the an entire "functional area".  This was bullshit too, because...
 4. The matrix structure was largely the legacy of a recent merger with another department.  As [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law) predicts, our software therefore had to reflect this structure.  But this was bullshit because...
 5. The matrix structure didn't represent reality in any useful way.  It was designed to pacify the budget committee at the higher level, and try to demonstrate attributes such as _control_ and _governance_.  But this was bullshit too, because...
 6. The budget that was given to our department was really based on how much fear the budget holders currently had of the market regulators.  But this was bullshit too, because...
 7. At a higher level, the executives had realised that our division wasn't one of the banks strategic strengths, and was working to close it all down anyway.
 
-When faced with so many mis-aligned objectives, it seemed completely hopeless to concentrate on the task at hand.  But then, a colleague was able to nihilistically add one final layer to this onion by saying:
+When faced with so many misaligned objectives, it seemed completely hopeless to concentrate on the task at hand.  But then, a colleague was able to nihilistically add one final layer to this onion by saying:
 
 8. "It's all about chasing money, which is bullshit, because life is bullshit."
 
@@ -216,13 +216,13 @@ The languages we adopt or create are _sets of useful abstractions_ that allow us
  - It's not very apparent which scientists are better than which other scientists.
  - One proxy is what they've published (scientific papers) and where they've published (journals).
  - Universities want to attract research grants, and the best way to do this is to have the best scientists.
- - Because "best" isn't measureable, they use the proxy.
+ - Because "best" isn't measurable, they use the proxy.
  - Therefore, immense power rests in the hands of the journals, since they can control the money-proxy.
  - Therefore, journals are able to charge large amounts of money to universities for subscriptions.
  
 > "Now consider the system of scientific journals... Some journals are prestigious. So university hiring committees pay the most attention to publications in that journal. So people with the best, most interesting-looking publications try to send them to that journal. So if a university hiring committee paid an equal amount of attention to publications in lower-prestige journals, they’d end up granting tenure to less prestigious people. Thus, the whole system is a stable equilibrium that nobody can unilaterally defy except at cost to themselves." - [Inadequate Equilibria, _Eleizer Yudkovsky_](https://equilibriabook.com/molochs-toolbox/)
 
-As the book points out, while everyone _persists_ in using an inadequate abstraction, the system is broken.  However, [Coordination](Coordination-Risk) would be required for everyone to _stop_ doing it this way, which is hard work.  (At least within a hiearchy, Maps can get fixed.)
+As the book points out, while everyone _persists_ in using an inadequate abstraction, the system is broken.  However, [Coordination](Coordination-Risk) would be required for everyone to _stop_ doing it this way, which is hard work.  (At least within a hierarchy, Maps can get fixed.)
 
 This is a _small example_ from a much larger, closely argued book, and it's worth taking the time to read a couple of the chapters on this interesting topic.
 

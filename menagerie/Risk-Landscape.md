@@ -37,13 +37,13 @@ However, there's a problem with this:  As we said in [Risk Theory](Risk-Theory),
 
 I am going to try and show you some of the fauna of the [Risk Landscape](Risk-Landscape).  We know every project is different, so every [Risk Landscape](Risk-Landscape) is also different.  But, just as I can tell you that the landscape outside your window will probably will have some roads, trees, fields, forests, buildings, and that the buildings are likely to be joined together by roads, I can tell you some general things about risks too.
 
-In fact, we're going to try and categorize the kinds of things we see on this [Risk Landscape](Risk-Landscape).  But, this isn't going to be perfect: 
+In fact, we're going to try and categorise the kinds of things we see on this [Risk Landscape](Risk-Landscape).  But, this isn't going to be perfect: 
 
  - One risk can "blend" into another just like sometimes a "field" is also a "car-park" or a building might contain some trees (but isn't a forest).
  - There is _correlation_ between different risks:  one risk may cause another, or two risks may be due to the same underlying cause.
  - As we saw in [Part 1](Home#Part-1-Introduction), mitigating one risk can give rise to another, so risks are often _inversely correlated_.
 
-## Why Should We Categorize The Risks?
+## Why Should We Categorise The Risks?
 
 This is a "spotters' guide" to risks, not an in-depth encyclopedia.  <!-- tweet-end -->
 
@@ -76,6 +76,6 @@ Below is a table outlining the different risks we'll see.  There _is_ an order t
 |[Map And Territory Risk](Map-And-Territory-Risk)    |Risks due to the fact that people don't see the world as it really is. (After all, they're working off different, imperfect [Internal Models](Glossary#internal-model).)|  
 |[Operational Risk](Operational-Risk)                |Software is embedded in a system containing people, buildings, machines and other services.  Operational risk considers this wider picture of risk associated with running a software service or business in the real world.|
        
-On each page we'll start by looking at the category of the risk _in general_, and then break this down into some specific subtypes.  At the end, in [Staging and Classifying](Staging-And-Classifying) we'll have a recap about what we've seen and make some guesses about how things fit together.                                                          
+On each page we'll start by looking at the category of the risk _in general_, and then break this down into some specific sub-types.  At the end, in [Staging and Classifying](Staging-And-Classifying) we'll have a recap about what we've seen and make some guesses about how things fit together.                                                          
 
 So, let's get started with [Feature Risk](Feature-Risk).

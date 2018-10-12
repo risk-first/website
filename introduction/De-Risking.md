@@ -15,7 +15,7 @@ Let's look at some common strategies for De-Risking.  This is probably not an ex
 
 ## Mitigate
 
-**Mitigating** the risk is taking steps towards minimizing either it's likelihood or impact (as we discussed in the [Risk Theory](Risk-Theory) section).  This is the main approach we will be looking at in Part 2.   We'll break down risk into its different types and look at the general mitigations for each.  The examples above of De-Risking were all mitigations.  (Safety-nets, for example, mitigate the impact of hitting the ground.)  
+**Mitigating** the risk is taking steps towards minimising either it's likelihood or impact (as we discussed in the [Risk Theory](Risk-Theory) section).  This is the main approach we will be looking at in Part 2.   We'll break down risk into its different types and look at the general mitigations for each.  The examples above of De-Risking were all mitigations.  (Safety-nets, for example, mitigate the impact of hitting the ground.)  
 
 ## Avoid
 
@@ -33,7 +33,7 @@ In part 2, we'll see how **Transfer** of risk is an essential feature of [Softwa
 
 ## Ignore / Accept
 
-**Accepting** a risk is to deal with it when it arises.   One example is the [Key-Man Risk](Scarcity-Risk#staff-risk) involved in having a superstar programmer on the team.  Although there would be fallout if they left, they are usually mitigating more risk than they cause.  Another example is using particular software dependencies:   I might build a mobile application which requires a Facebook account to log in.  This might give rise to the risk that some people can't log in, but might simplify the software to such an extent that it's worthwhile.
+**Accepting** a risk is to deal with it when it arises.   One example is the [Key-Man Risk](Scarcity-Risk#staff-risk) involved in having a super-star programmer on the team.  Although there would be fallout if they left, they are usually mitigating more risk than they cause.  Another example is using particular software dependencies:   I might build a mobile application which requires a Facebook account to log in.  This might give rise to the risk that some people can't log in, but might simplify the software to such an extent that it's worthwhile.
 
 Whereas **Accepting** a risk seems to imply an eyes-wide-open examination, **Ignoring** seems to imply that either the risk is so insignificant it doesn't warrant evaluation, or so daunting that it can't be stared down.  Either way, **Ignoring** a risk amounts to the same thing as **Accepting** it, since you're not doing anything about it. 
 
@@ -52,7 +52,7 @@ Applying this kind of logic at the start of a project leads you towards building
 
 Sometimes, risks just go away on their own.  [Learned Helplessness](https://en.wikipedia.org/wiki/Learned_helplessness) on the other hand, is where we _could_ do something about the risk, but fail to see that as an option:
 
-> "Learned helplessness is behavior typical of animals, and in rare cases humans, that occurs when the subject endures repeatedly painful or otherwise aversive stimuli which it is unable to escape or avoid. After such experience, the organism often fails to learn or accept "escape" or "avoidance" in new situations where such behavior would likely be effective. " - [Learned Helplessness, _Wikipedia_](https://en.wikipedia.org/wiki/Learned_helplessness)
+> "Learned helplessness is behaviour typical of animals, and in rare cases humans, that occurs when the subject endures repeatedly painful or otherwise aversive stimuli which it is unable to escape or avoid. After such experience, the organism often fails to learn or accept "escape" or "avoidance" in new situations where such behavior would likely be effective. " - [Learned Helplessness, _Wikipedia_](https://en.wikipedia.org/wiki/Learned_helplessness)
 
 ## Contain
 
