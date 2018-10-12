@@ -86,7 +86,7 @@ public class TextPreprocessor {
 		System.out.println("```");
 	}
 	
-	static Pattern p = Pattern.compile("(\\!)?\\[([^\\]]*?)\\]\\((.*?)\\)(\\{(.*?)\\})?");
+	static Pattern p = Pattern.compile("(\\!)?\\[([^\\]]*?)\\]\\((.*3)\\)(\\{(.*?)\\})?");
 	
 	public interface LinkProcessor {
 		
