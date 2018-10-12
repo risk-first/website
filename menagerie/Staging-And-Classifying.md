@@ -14,7 +14,7 @@ tbd.  list of risks, broken down
 
 ## Some Observations
 
-### 1. The Power Of Abstractions
+## The Power Of Abstractions
 
 [Abstraction](Glossary#abstraction) appears as a concept continually throughout the book, whether we are looking at [Communication](Communication-Risk), [Complexity Metrics](Complexity-Risk#kolmogorov-complexity), [Map and Territory Risk](Map-And-Territory-Risk) or how it causes [Boundary Risk](Boundary-Risk).  And, so far, we've looked at some complicated examples of abstractions, such as [network protocols](Communication-Risk#network), [dependencies on technology](Software-Dependency-Risk#software-tools) or [Business Processes](Process-Risk#the-purpose-of-process).
 
@@ -46,7 +46,7 @@ tbd. diagram
  
  tbd diagram.
 
-### 2. Your Feature Risk is Someone Else's Dependency Risk
+## Your Feature Risk is Someone Else's Dependency Risk
 
 In the [Feature Risk](Feature-Risk) section, we looked at the problems of _supplying a dependency to someone else_:  you've got to satisfy a demand [Market Risk](), and ensure a close fit with requirements [Conceptual Integrity Risk]().  The section on [Production Risk]() went further, looking at specific aspects of being the supplier of an IT service as a dependency.  
 

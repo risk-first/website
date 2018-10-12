@@ -2,7 +2,7 @@
 
 [Coordination Risk](Coordination-Risk) is the risk that, a group of people (or processes), maybe with a similar [Goal In Mind](Glossary#Goal-In-Mind) they can fail to coordinate on a way to meet this goal and end up making things worse.  [Coordination Risk](Coordination-Risk) is embodied in the phrase "Too Many Cooks Spoil The Broth":  more people, opinions or agents often make results worse.
 
-As in [Agency Risk](Agency-Risk), we are going to use the term _agent_, which refers to anything with [agency](https://github.com/risk-first/website/wiki/Agency-Risk#software-processes-and-teams) in a system to decide it's own fate.  That is, an agent has an [Internal Model](Glossary#Internal-Model),  and can [take actions](Glossary#take-action) based on it.  Here, we're going to work on the assumption that the agents _are_ working towards a common [Goal](Glossary#Goal-In-Mind), even though in reality it's not always the case, as we saw in the section on [Agency Risk](Agency-Risk).
+As in [Agency Risk](Agency-Risk), we are going to use the term _agent_, which refers to anything with [agency](https://github.com/risk-first/website/wiki/Agency-Risk#software-processes-and-teams) in a system to decide it's own fate.  That is, an agent has an [Internal Model](Glossary#Internal-Model),  and can [take actions](Glossary#taking-action) based on it.  Here, we're going to work on the assumption that the agents _are_ working towards a common [Goal](Glossary#Goal-In-Mind), even though in reality it's not always the case, as we saw in the section on [Agency Risk](Agency-Risk).
 
  In this section, we'll first build up [A Model Of Coordination Risk](#a-model-of-coordination-risk) and what exactly coordination means and why we do it.  Then, we'll look at some classic [Problems of Coordination](#problems-of-coordination).  Then, we're going to consider agency at several different levels (because of [Scale Invariance](Risk-Theory#invariances-2-scale-invariance)) .  We'll look at:
  - [Team Decision Making](#team-decision-making),
@@ -130,7 +130,7 @@ Specifically, this describes a process whereby a new group will form and then be
 
 They can be encouraged with orthogonal practices such as [team-building exercises](https://en.wikipedia.org/wiki/Team_building) (generally, submitting everyone to extreme experiences in order to bond them together).  With enough communication bandwidth and detente, a motivated team will self-organise code reviews, information exchange and improve their practices. 
 
-As decribed above, the job of [Coordination](Coordination-Risk) is [Resource Allocation](Coordination-Risk#problems-in-coordination), and so the skills of staff can potentially be looked at as resources to allocate.  This means handling [Coordination Risk](Coordination-Risk) issues like:
+As decribed above, the job of [Coordination](Coordination-Risk) is [Resource Allocation](Coordination-Risk#problems-of-coordination), and so the skills of staff can potentially be looked at as resources to allocate.  This means handling [Coordination Risk](Coordination-Risk) issues like:
 
  - People leaving, taking their [Internal Models](Glossary#Internal-Model) and expertise with them [Key Man Risk](Schedule-Risk#Staff-Risk).
  - People requiring external training, to understand new tools and techniques [Learning-Curve Risk](Communication-Risk#learning-curve-risk).

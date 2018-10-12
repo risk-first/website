@@ -65,7 +65,7 @@ Shannon discusses that no channel is perfect:  there is always the **risk of noi
 
 But channel risk goes wider than just this mathematical example:  messages might be delayed or delivered in the wrong order, or not be acknowledged when they do arrive.  Sometimes, a channel is just an inappropriate way of communicating.  When you work in a different time-zone to someone else on your team, there is _automatic_ [Channel Risk](Communication-Risk#channel-risk), because instantaneous communication is only available for a few hours' a day. 
 
-When channels are **poor-quality**, less communication occurs.  People will try to communicate just the most important information.  But, it's often impossible to know a-priori what constitutes "important".   This is why [Extreme Programming](Extreme-Programming) recommends the practice of [Pair Programming](Coding#pair-programming--mob-programming) and siting all the developers together: although you don't know whether useful communication will happen, you are mitigating [Channel Risk](Communication-Risk#channel-risk) by ensuring high-quality communication channels are in place.
+When channels are **poor-quality**, less communication occurs.  People will try to communicate just the most important information.  But, it's often impossible to know a-priori what constitutes "important".   This is why [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) recommends the practice of [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming) and siting all the developers together: although you don't know whether useful communication will happen, you are mitigating [Channel Risk](Communication-Risk#channel-risk) by ensuring high-quality communication channels are in place.
 
 At other times, channels can contain so much information that we can't hope to receive all the messages.  In these cases, we don't even observe the whole channel, just parts of it.  For example, you might have a few YouTube channels that you subscribe to, but hundreds of hours of video are being posted on YouTube every second, so there is no way you can keep up with all of it.
 
@@ -353,7 +353,7 @@ Even if the receiver trusts the communicator, they may not trust the message.  L
 - [Relativism](https://en.wikipedia.org/wiki/Relativism) is the concept that there are no universal truths.  Every truth is from a frame of reference.  For example, what constitutes _offensive language_ is dependent on the listener.
 - [Psycholinguistics](https://en.wikipedia.org/wiki/Psycholinguistics) is the study of humans aquire languages.  There are different languages and dialects, (and _industry dialects_), and we all understand language in different ways, take different meanings and apply different contexts to the messages.
   
-From the point-of-view of [Marketing Communications](Communication-Risk#Marketing-Communications) choosing the right message is part of the battle.  You are trying to communicate your idea in such a way as to mitigate [Belief Risk](Communication-Risk#trust-risk--belief-risk) and [Trust Risk](Communication-Risk#trust-risk--belief-risk).
+From the point-of-view of [Marketing Communications](Communication-Risk#Marketing-Communications) choosing the right message is part of the battle.  You are trying to communicate your idea in such a way as to mitigate Trust & Belief Risk.
 
 ### Reputational Risk
 

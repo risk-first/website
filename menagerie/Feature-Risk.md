@@ -59,11 +59,11 @@ Sometimes, features can work for some people and not others:  this could be down
 
 You could argue that the choice of _platform_ is also going to limit access:  <!-- tweet-start -->writing code for XBox-only leaves PlayStation owners out in the cold.   This is _largely_ [Feature Access Risk](Feature-Risk#feature-access-risk), though [Dependency Risk](Dependency-Risk) is related here.<!-- tweet-end -->
 
-In Marketing, minimizing [Feature Access Risk]() is all about [Segmentation]():  trying to work out _who_ your product appeals to, and tailoring it to that particular market, but for technologists, increasing [Feature Access]() means increasing complexity:  you have to deliver the software on more platforms, localized in more languages, with different configurations of features at different price-points.  Mitigating [Feature Acccess Risk]() therefore means increased effort and complexity (which we'll come to later).
+In Marketing, minimizing [Feature Access Risk](#feature-access-risk) is all about [Segmentation](https://en.wikipedia.org/wiki/Market_segmentation):  trying to work out _who_ your product appeals to, and tailoring it to that particular market, but for technologists, increasing [Feature Access](#feature-access-risk) means increasing complexity:  you have to deliver the software on more platforms, localized in more languages, with different configurations of features at different price-points.  Mitigating [Feature Acccess Risk](#feature-access-risk) therefore means increased effort and complexity (which we'll come to later).
 
 ### Market Risk
 
-[Feature Access Risk]() is related, of course, to [Market Risk](Feature-Risk#market-risk), which I introduced on the [Risk Landscape](Risk-Landscape) page as being the value that the market places on a particular asset.  <!-- tweet-end -->Since the product you are building is your asset, it makes sense that you'll face [Market Risk](Feature-Risk#market-risk) on it:
+[Feature Access Risk](#feature-access-risk) is related, of course, to [Market Risk](Feature-Risk#market-risk), which I introduced on the [Risk Landscape](Risk-Landscape) page as being the value that the market places on a particular asset.  <!-- tweet-end -->Since the product you are building is your asset, it makes sense that you'll face [Market Risk](Feature-Risk#market-risk) on it:
 
 ![Market Risk](images/generated/risks/feature/market-risk.png) 
 
@@ -82,7 +82,7 @@ In the same way, _you_ have [Market Risk](Feature-Risk#market-risk) on the produ
 The point is:  [Requirements captured](Requirements-Capture) _today_ might not make it to _tomorrow_, especially in the fast-paced world of IT.  This is partly because the market _evolves_ and becomes more discerning.  This happens in several ways:
 
  - Features present in competitor's versions of the software become _the baseline_, and they're expected to be available in your version.
- - Certain ways of interacting become the norm (e.g. [querty]() keyboards, or the control layout in cars: these don't change with time).
+ - Certain ways of interacting become the norm (e.g. [querty](https://en.wikipedia.org/wiki/QWERTY) keyboards, or the control layout in cars: these don't change with time).
  - Features decline in usefulness: _Printing_ is less important now than it was,  for example.
  
 As we will see later in [Boundary Risk](Boundary-Risk), [Feature Drift Risk](Feature-Risk#feature-drift-risk) is often a source of [Complexity Risk](Complexity-Risk), since you often need to add new features, while not dismantling old features as some users still need them.
@@ -108,9 +108,9 @@ Hopefully, this has given you some ideas about what [Feature Risk](Feature-Risk)
 
 ## Analysis
 
-At this point, it would be easy to stop and say, look, here are a bunch of [Feature Risk]() issues that you could face.  But, it turns out that we're going to be relying heavily on [Feature Risk]() as we go on in order to build our understanding of other risks, so it's probably worth spending a bit of time up front to classify what we've found.  
+At this point, it would be easy to stop and say, look, here are a bunch of [Feature Risk](Feature-Risk) issues that you could face.  But, it turns out that we're going to be relying heavily on [Feature Risk](Feature-Risk) as we go on in order to build our understanding of other risks, so it's probably worth spending a bit of time up front to classify what we've found.  
 
-The [Feature Risks]() identified here basically exist in a 3-dimensional space:
+The [Feature Risks](Feature-Risk) identified here basically exist in a 3-dimensional space:
 
  - **Fit**: How well the features fit for a particular client.
  - **Audience**:  The range of clients (the _market_) that may be able to use this feature.
@@ -122,7 +122,7 @@ The [Feature Risks]() identified here basically exist in a 3-dimensional space:
  
 Darwin's conception of fitness was not one of athletic prowess, but how well an organism worked within the landscape, with the goal of reproducing itself.  
 
- [Fit Risk](), [Conceptual Integrity Risk]() and [Implementation Risk]() all hint at different aspects of this "fitness".   We can conceive of them as the gaps between the following entities:
+[Feature Fit Risk](#feature-fit-risk), [Conceptual Integrity Risk](#conceptual-integrity-risk) and [Implementation Risk](#implementation-risk) all hint at different aspects of this "fitness".   We can conceive of them as the gaps between the following entities:
  
  - Perceived Need:  What the user _thinks_ they want
  - Expectation: What the user _expects_
@@ -134,11 +134,11 @@ For further reading, you can check out [The Service Quality Model](http://en.wik
 
 ### Fit and Audience
 
-Two risks, [Feature Access Risk](Feature-Risk#feature-access-risk) and [Market Risk](Feature-Risk#market-risk) considers _Fit_ for a whole _Audience_ of users.  They are different:  just as it's possible to have a small audience, but a large revenue, it's possible to have a product which has low [Feature Access Risk]() (i.e lots of users can access it without difficulty) but high [Market Risk]() (i.e. the market is highly volatile or capricious in it's demands).  _Online services_ often suffer from this [Market Risk]() rollercoaster, being one moment highly valued and the next irrelevant. 
+Two risks, [Feature Access Risk](Feature-Risk#feature-access-risk) and [Market Risk](Feature-Risk#market-risk) considers _Fit_ for a whole _Audience_ of users.  They are different:  just as it's possible to have a small audience, but a large revenue, it's possible to have a product which has low [Feature Access Risk](#feature-access-risk) (i.e lots of users can access it without difficulty) but high [Market Risk](#market-risk) (i.e. the market is highly volatile or capricious in it's demands).  _Online services_ often suffer from this [Market Risk](#market-risk) rollercoaster, being one moment highly valued and the next irrelevant. 
 
 ### Fit, Audience and Evolution
 
-Two risks further consider how the **Fit** and **Audience** _change_: [Regression Risk]() and [Feature Drift Risk]().  We call this _evolution_ in the sense that:
+Two risks further consider how the **Fit** and **Audience** _change_: [Regression Risk](#regression-risk) and [Feature Drift Risk](#feature-drift-risk).  We call this _evolution_ in the sense that:
 
  - Our product's features _evolve_ with time, and changes made by the development team.
  - Our audience changes and evolves as it is exposed to our product and competing products.
