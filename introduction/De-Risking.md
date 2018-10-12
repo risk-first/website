@@ -33,7 +33,7 @@ In part 2, we'll see how **Transfer** of risk is an essential feature of [Softwa
 
 ## Ignore / Accept
 
-**Accepting** a risk is to deal with it when it arises.   One example is the [Key-Man Risk](Schedule-Risk#staff-risk) involved in having a superstar programmer on the team.  Although there would be fallout if they left, they are usually mitigating more risk than they cause.  Another example is using particular software dependencies:   I might build a mobile application which requires a Facebook account to log in.  This might give rise to the risk that some people can't log in, but might simplify the software to such an extent that it's worthwhile.
+**Accepting** a risk is to deal with it when it arises.   One example is the [Key-Man Risk](Scarcity-Risk#staff-risk) involved in having a superstar programmer on the team.  Although there would be fallout if they left, they are usually mitigating more risk than they cause.  Another example is using particular software dependencies:   I might build a mobile application which requires a Facebook account to log in.  This might give rise to the risk that some people can't log in, but might simplify the software to such an extent that it's worthwhile.
 
 Whereas **Accepting** a risk seems to imply an eyes-wide-open examination, **Ignoring** seems to imply that either the risk is so insignificant it doesn't warrant evaluation, or so daunting that it can't be stared down.  Either way, **Ignoring** a risk amounts to the same thing as **Accepting** it, since you're not doing anything about it. 
 
@@ -58,7 +58,7 @@ Sometimes, risks just go away on their own.  [Learned Helplessness](https://en.w
 
 **Containing** risks means setting aside sufficient time or money to deal with them if they occur.  This is an excellent approach for [Hidden Risk](Glossary#hidden-risk) or entire sets of minor [Attendant Risks](Glossary#attendant-risk).  
 
-Whenever a project-manager builds slack into a project plan, this is **Containment**.  In the section on [Schedule Risk](Schedule-Risk) we are going to look in detail at how this works. 
+Whenever a project-manager builds slack into a project plan, this is **Containment**.  In the section on [Schedule Risk](Scarcity-Risk#schedule-risk) we are going to look in detail at how this works. 
 
 ## Exploit
 

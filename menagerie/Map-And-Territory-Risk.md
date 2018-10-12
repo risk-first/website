@@ -134,7 +134,7 @@ In the case of metrics, this is where they start being used for more than just i
   
 Some of this seems obvious:  _Of course_ SLOC is a terrible measure performance!  We're not that stupid anymore.  The problem is, it's not so much the _choice_ of metric, but the fact that _all_ metrics merely approximate reality with a few numbers.  The map is _always_ simpler than the territory, therefore there can be no perfect metrics.
 
-In the same way that [markets evolve to demand more features](Schedule-Risk#red-queen-risk), our behaviour evolves to incorporate new ideas.  The more popular an idea is, the more people will modify their behaviour as a result of it, and the more the world will change.   Will the idea still be useful as the world adapts?   Although the [Hype Cycle](https://en.wikipedia.org/wiki/Hype_cycle) model doesn't cover it, ideas and products all eventually have their day and decline in usefulness.
+In the same way that [markets evolve to demand more features](Scarcity-Risk#red-queen-risk), our behaviour evolves to incorporate new ideas.  The more popular an idea is, the more people will modify their behaviour as a result of it, and the more the world will change.   Will the idea still be useful as the world adapts?   Although the [Hype Cycle](https://en.wikipedia.org/wiki/Hype_cycle) model doesn't cover it, ideas and products all eventually have their day and decline in usefulness.
 
 ### Bad Ideas
 

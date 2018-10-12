@@ -34,7 +34,7 @@ Let's take a look at a hypothetical system structure, in the accompanying diagra
 
  - We could go via `a`, using the [Protocols](Communication-Risk#protocol-risk) of `a`, and having a dependency on `a`.
  - We could go via `b`, using the [Protocols](Communication-Risk#protocol-risk) of `b`, and having a dependency on `b`. 
- - We could choose the middle route, and avoid the dependency, but potentially pick up lots more [Complexity Risk](Complexity-Risk) and [Schedule Risk](Schedule-Risk).
+ - We could choose the middle route, and avoid the dependency, but potentially pick up lots more [Complexity Risk](Complexity-Risk) and [Schedule Risk](Scarcity-Risk#schedule-risk).
  
 ![Our System receives data from the `input`, translates it and sends it to the `output`.  But which dependency should we use for the translation, if any?](images/kite9/boundary-risk-ps.png)
 
@@ -61,8 +61,8 @@ Wherever we integrate dependencies with complex [Protocols](Communication-Risk#p
 As we saw in [Software Dependency Risk](Software-Dependency-Risk), [Boundary Risk](Boundary-Risk) is a big factor in choosing libraries and services.  However, it can apply to any kind of dependency:
 
  - If you're depending on a [Process or Organisation](Process-Risk), they might change their products or quality, making the effort you put into the relationship worthless.
- - If you're depending on [Staff](Schedule-Risk#staff-risk), they might leave, meaning your efforts on training them don't pay back as well as you hoped.
- - If you're depending on an [Event](Schedule-Risk) occuring at a particular time, you might have a lot of work to reorganise your life if it changes time or place.
+ - If you're depending on [Staff](Scarcity-Risk#staff-risk), they might leave, meaning your efforts on training them don't pay back as well as you hoped.
+ - If you're depending on an [Event](Scarcity-Risk#schedule-risk) occuring at a particular time, you might have a lot of work to reorganise your life if it changes time or place.
 
 ## Avoiding Boundary Risk Now...
 

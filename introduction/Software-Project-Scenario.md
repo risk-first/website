@@ -14,7 +14,7 @@ How should we decide how to spend our time today?
 
 What actions should we take?  (In [Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development)) terminology, what is our _Sprint Goal_?).
 
-Let's say that we are working in a Startup, on a project building an online service.  As we discussed previously, we could call this a [Goal](Glossary#goal-in-mind), but we could also restate it as mitigating [Risk](Glossary#attendant-risk), which gives more clarity about our intentions.   For the startup, launching the Online Service is about mitigating ([Funding-Risk](Schedule-Risk#funding-risk)), in order to keep the startup alive. 
+Let's say that we are working in a Startup, on a project building an online service.  As we discussed previously, we could call this a [Goal](Glossary#goal-in-mind), but we could also restate it as mitigating [Risk](Glossary#attendant-risk), which gives more clarity about our intentions.   For the startup, launching the Online Service is about mitigating ([Funding-Risk](Scarcity-Risk#funding-risk)), in order to keep the startup alive. 
 
 ## Attendant Risks
 

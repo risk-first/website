@@ -27,7 +27,7 @@ What's the best way?
 
 I would argue that the best way is the one which accrues the _least risk_ to get it done:  each action you take in trying to achieve the overall [Goal In Mind](Glossary#Goal-In-Mind) will have it's [Attendant Risks](Glossary#attendant-risk), and it's the experience you bring to bear on these that will help you navigate through them smoothly.
 
-Ideally, when you take an action, you are trading off a big risk for a smaller one.  Take Unit Testing for example.  Clearly, writing Unit Tests adds to the amount of development work, so on it's own, it adds [Schedule Risk](Schedule-Risk).   However, if you write _just enough_ of the right Unit Tests, you should be short-cutting the time spent finding issues in the User Acceptance Testing (UAT) stage, so you're hopefully trading off a larger [Schedule Risk](Schedule-Risk) from UAT and adding a smaller risk to **Development**.
+Ideally, when you take an action, you are trading off a big risk for a smaller one.  Take Unit Testing for example.  Clearly, writing Unit Tests adds to the amount of development work, so on it's own, it adds [Schedule Risk](Scarcity-Risk#schedule-risk).   However, if you write _just enough_ of the right Unit Tests, you should be short-cutting the time spent finding issues in the User Acceptance Testing (UAT) stage, so you're hopefully trading off a larger [Schedule Risk](Scarcity-Risk#schedule-risk) from UAT and adding a smaller risk to **Development**.
 
 You can think of taking actions as moving your project on a "[Risk Landscape](Risk-Landscape)":  ideally, when you take an action, you move to some place with worse risk to somewhere more favourable.
 
@@ -90,7 +90,7 @@ But, there is always the opposite opinion:  [You _Are_ Gonna Need It](http://wik
 Now, we can say:  do the work _if it mitigates your [Attendant Risks](Glossary#attendant-risk)_.  
 
  - Logging statements are _good_, because otherwise, you're increasing the risk that in production, no one will be able to understand _how the software went wrong_.
- - However, adding them takes time, which might introduce [Schedule Risk](Schedule-Risk).
+ - However, adding them takes time, which might introduce [Schedule Risk](Scarcity-Risk#schedule-risk).
  
 So, it's a trade-off: continue adding logging statements so long as you feel that overall, you're reducing risk.
 

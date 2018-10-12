@@ -200,10 +200,10 @@ I'm not an expert in physics, _at all_, and so there is every chance that I am p
 The reason I am labouring this analogy is to try and make the point that [Complexity Risk](Complexity-Risk) is really fundamental:
 
  - [Feature Risk](Feature-Risk):  like **money**.
- - [Schedule Risk](Schedule-Risk): like **time**.
+ - [Schedule Risk](Scarcity-Risk#schedule-risk): like **time**.
  - [Complexity Risk](Complexity-Risk): like **mass**.
  
-At a basic level, [Complexity Risk](Complexity-Risk) heavily impacts on [Schedule Risk](Schedule-Risk):  more complexity means you need more force to get things done, which takes longer.
+At a basic level, [Complexity Risk](Complexity-Risk) heavily impacts on [Schedule Risk](Scarcity-Risk#schedule-risk):  more complexity means you need more force to get things done, which takes longer.
 
 ![Complexity Risk and it's mitigations](images/generated/risks/complexity/complexity-risk.png)
 
@@ -213,7 +213,7 @@ The most common way we talk about unnecessary complexity in software is as [Tech
 
 > "Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite... The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise." - [Ward Cunningham, 1992](https://en.wikipedia.org/wiki/Technical_debt)
 
-Building a perfect first-time solution is a waste, because perfection takes a long time.  You're taking on more attendant [Schedule Risk](Schedule-Risk) than necessary and [Meeting Reality](Meeting-Reality) more slowly than you could.
+Building a perfect first-time solution is a waste, because perfection takes a long time.  You're taking on more attendant [Schedule Risk](Scarcity-Risk#schedule-risk) than necessary and [Meeting Reality](Meeting-Reality) more slowly than you could.
 
 A quick-and-dirty, over-complex implementation mitigates the same [Feature Risk](Feature-Risk) and allows you to [Meet Reality](Meeting-Reality) faster.  
 
@@ -242,7 +242,7 @@ The problem with this definition is that we are accepting features of our softwa
 
 The **Risk-First** approach is that if you want to mitigate some [Feature Risk](Feature-Risk) then you have to pick up [Complexity Risk](Complexity-Risk) as a result.  But, that's a _choice you get to make_.  
 
-Therefore, [Feature Creep](https://en.wikipedia.org/wiki/Feature_creep) (or [Gold Plating](https://en.wikipedia.org/wiki/Gold_plating_(software_engineering))) is a failure to observe this basic equation:  instead of considering this trade off, you're building every feature possible.  This has an impact on [Complexity Risk](Complexity-Risk), which in turn impacts [Communication Risk](Communication-Risk) and also [Schedule Risk](Schedule-Risk).
+Therefore, [Feature Creep](https://en.wikipedia.org/wiki/Feature_creep) (or [Gold Plating](https://en.wikipedia.org/wiki/Gold_plating_(software_engineering))) is a failure to observe this basic equation:  instead of considering this trade off, you're building every feature possible.  This has an impact on [Complexity Risk](Complexity-Risk), which in turn impacts [Communication Risk](Communication-Risk) and also [Schedule Risk](Scarcity-Risk#schedule-risk).
 
 Sometimes, feature-creep happens because either managers feel they need to keep their staff busy, or the staff decide on their own that they need to [keep themselves busy](Agency-Risk).  But now, we can see that basically this boils down to bad risk management.  
 
@@ -338,7 +338,7 @@ function b(in: BInput): string {
 }
 ```
 
-Now, of course, there is a tradeoff:  we _mitigate_ [Complexity Risk](Complexity-Risk), because we define the protocols / types _once only_ in the program, and ensure that usages all match the specification.  But the tradeoff is (as we can see in the `typescript` code) more _finger-typing_, which some people argue counts as [Schedule Risk](Schedule-Risk).  
+Now, of course, there is a tradeoff:  we _mitigate_ [Complexity Risk](Complexity-Risk), because we define the protocols / types _once only_ in the program, and ensure that usages all match the specification.  But the tradeoff is (as we can see in the `typescript` code) more _finger-typing_, which some people argue counts as [Schedule Risk](Scarcity-Risk#schedule-risk).  
 
 Nevertheless, compilers and type-checking are so prevalent in software that clearly, you have to accept that in most cases, the trade-off has been worth it: Even languages like [Clojure](https://clojure.org) have been retro-fitted with [type checkers](https://github.com/clojure/core.typed/wiki/User-Guide).
 

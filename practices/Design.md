@@ -48,7 +48,7 @@ Often, by thinking big-picture we can avoid building components that _seem_ like
 
 Building architects appreciate that their _plans might change_:  Roman ruins might be discovered underneath the site, or the supporting wall might not be as sound as originally thought.  The more effort you put into a design, the more will be wasted if it's wrong.  So, how deep should you go?  The answer as usual, is keep designing while it is reducing your overall project risk.  
 
- - The design might itself take a long time to complete [Schedule Risk](Schedule-Risk).
+ - The design might itself take a long time to complete [Schedule Risk](Scarcity-Risk#schedule-risk).
  - People _stop thinking_ [once they have a design](Map-And-Territory), even when reality _obviously_ deviates from what the design assumed.  But the whole point of a plan is that it's easier to change than the thing you are doing the plan for.  
  - If your plan starts to become as detailed as the code would be (but doesn't run) then you've made the mistake of _overspecification_, and you are creating [Technical Debt](Technical-Debt).  
  
