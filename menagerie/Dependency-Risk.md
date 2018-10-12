@@ -163,7 +163,7 @@ Finding out about bus schedules is easy.  But in a large company, [Communication
 
 > "In management the term silo mentality often refers to information silos in organizations. Silo mentality is caused by divergent goals of different organizational units." - [Silo Mentality, _Wikipedia_](https://en.wikipedia.org/wiki/Information_silo#Silo_mentality)
 
-Ironically, _more communication_ might not be the answer - if channels are provided to discover functionality in other teams you can still run into [Trust Risk](Communication-Risk#trust-belief-risk) (why should I believe in the quality of this dependency?)  Or [Channel Risk](Communication-Risk#channel-risk) in terms of too low a signal-to-noise ratio, or desperate self-promotion.
+Ironically, _more communication_ might not be the answer - if channels are provided to discover functionality in other teams you can still run into [Trust Risk](Communication-Risk#trust--belief-risk) (why should I believe in the quality of this dependency?)  Or [Channel Risk](Communication-Risk#channel-risk) in terms of too low a signal-to-noise ratio, or desperate self-promotion.
 
 Silo Mentality is exacerbated by the problems you would face in _budgeting_ if suddenly all the divisions in an organisation started providing dependencies for each other.  This starts to require a change to organisational structure towards being a set of individual businesses marketing services to one another, rather than a division-based one.  We'll look more closely at these kind of organisational issues in the [Coordination Risk](Coordination-Risk) section. 
 

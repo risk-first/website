@@ -92,7 +92,7 @@ For many years I have worked in the Finance Industry, and it's given me time to 
 **Process Risk**, then, is a type of [Dependency Risk](Dependency-Risk), where you are relying on a process.  In a way, it's no different from any other kind of [Dependency Risk](Dependency-Risk).   But [Process Risk](Process-Risk) manifests itself in fairly predictable ways:
 
  - [Reliability Risk](Dependency-Risk#reliability-risk): If _people_ are part of the process, there's the chance that they forget to follow the process itself, and miss steps or forget your request completely.  The reliability is related to the amount of [Complexity Risk](Complexity-Risk) the process is covering.
- - [Invisibility Risk](Communication-Risk#invisibility-risk): Usually, processes (like other dependencies) trade [Complexity Risk]() for visibility:  it's often not possible to see how far along a process is to completion.  Sometimes, you can do this to an extent.  For example, when I send a package for delivery, I can see roughly how far it's got on the tracking website.  But, this is still less-than-complete information, and is a representation of reality.    
+ - [Invisibility Risk](Communication-Risk#invisibility-risk): Usually, processes (like other dependencies) trade [Complexity Risk](Complexity-Risk) for visibility:  it's often not possible to see how far along a process is to completion.  Sometimes, you can do this to an extent.  For example, when I send a package for delivery, I can see roughly how far it's got on the tracking website.  But, this is still less-than-complete information, and is a representation of reality.    
  - [Fit Risk](Feature-Risk#feature-fit-risk): You have to be careful to match the process to the outcome you want.  Sometimes, it's easy to waste time on the wrong process.
  - [Dead-End Risk](Complexity-Risk#dead-end-risk): Even if you have the right process, initiating a process has no guarantee that your efforts won't be wasted and you'll be back where you started from.  The chances of this happening increase as you get further from the standard use-case for the process, and the sunk cost increases with the length of time the process takes to report back.
  - [Agency Risk](Agency-Risk): Due to Parkinson's Law, see below.
@@ -113,13 +113,13 @@ The feedback loops allow us to perform [Retrospectives and Reviews](Review) to i
  
 ### Bureaucracy Risk
 
-Where we've talked about process evolution above, the actors involved have been acting in good faith:   they are working to mitigate risk in the organisation.  The [Process Risk](Process-Risk) that accretes along the way is an _unintended consequence_:  There is no guarantee that the process that arises will be humane and intuitive.  Many organisational processes end up being baroque or Kafkaesque, forcing unintuitive behaviour on their users.  This is partly because process design is _hard_, and it's difficult to anticipate all the various ways a process will be used ahead-of-time.  So, some of [Bureaucracy Risk](Process-Risk#process-accretion-and-bureaucracy-risk) is due to [Complexity](Complexity-Risk).
+Where we've talked about process evolution above, the actors involved have been acting in good faith:   they are working to mitigate risk in the organisation.  The [Process Risk](Process-Risk) that accretes along the way is an _unintended consequence_:  There is no guarantee that the process that arises will be humane and intuitive.  Many organisational processes end up being baroque or Kafkaesque, forcing unintuitive behaviour on their users.  This is partly because process design is _hard_, and it's difficult to anticipate all the various ways a process will be used ahead-of-time.  So, some of [Bureaucracy Risk](Process-Risk#bureaucracy-risk) is due to [Complexity](Complexity-Risk).
 
 But [Parkinson's Law](https://en.wikipedia.org/wiki/Parkinsons_law) takes this one step further:  the human actors shaping the organisation will abuse their positions of power in order to further their own careers (this is [Agency Risk](Agency-Risk), which we will come to in a future section):
 
 > "Parkinson's law is the adage that "work expands so as to fill the time available for its completion". It is sometimes applied to the growth of bureaucracy in an organization... He explains this growth by two forces: (1) 'An official wants to multiply subordinates, not rivals' and (2) 'Officials make work for each other.'" - [Parkinson's Law, _Wikipedia_](https://en.wikipedia.org/wiki/Parkinsons_law)  
 
-This implies that there is a tendency for organisations to end up with _needless levels of [Bureaucratic Risk](Process-Risk#process-accretion-and-bureaucracy-risk)_.
+This implies that there is a tendency for organisations to end up with _needless levels of [Bureaucratic Risk](Process-Risk#bureaucracy-risk)_.
  
 ### Credit Risk
 

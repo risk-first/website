@@ -78,7 +78,7 @@ The five phases (and the "Hype" itself) are shown in the chart below, with the t
 Also in this diagram we are showing where the hype originates:
 
  - The **saturation** of the idea within the audience (a dotted line).
- - The **amount known** about the idea by the audience (a [Learning Curve](Communication#learning-curve-risk), if you will, a dashed line).
+ - The **amount known** about the idea by the audience (a [Learning Curve](Communication-risk#learning-curve-risk), if you will, a dashed line).
  
 Both of these are modelled with [Cumulative Distribution](https://en.wikipedia.org/wiki/Cumulative_distribution_function#Use_in_statistical_analysis) curves.  From these two things, we can figure out where our maximum [Map and Territory Risk](Map-And-Territory-Risk) lies:  it's the point where awareness of an idea is furthest from the understanding of it.  This acts as a "brake" on the **hype** around the idea, corresponding to the "Trough of Disillusionment".  
 
