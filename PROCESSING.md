@@ -72,6 +72,6 @@ This is done with the `./convert.sh` script.
 - You can check for _any_ wanna-be links with this: \[([0-9A-Za-z\-,\(\) &_]+)\]
 - You can check for malformed links by doing this regex search: \[([0-9A-Za-z\-,\(\) &_]+)\]([^\(])
 - Then, fix them so they at least have an empty target (use search and replace in eclipse)
-- Then, run LinkChecker
+- Then, run LinkChecker  DONE
 
 
