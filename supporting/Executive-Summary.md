@@ -2,7 +2,7 @@
 
 ## 1.  There are Lots of Ways of Running Software Projects
 
-There are lots of different ways to look at a project.  For example, metrics such as “number of open tickets”, “story points”, “code coverage" or "release cadence" give us a numerical feel for how things are going and what needs to happen next.  We also judge the health of projects by the practices used on them - [Continuous Integration](), [Unit Testing](Testing) or [Pair Programming](Coding), for example.  
+There are lots of different ways to look at a project.  For example, metrics such as “number of open tickets”, “story points”, “code coverage" or "release cadence" give us a numerical feel for how things are going and what needs to happen next.  We also judge the health of projects by the practices used on them - [Continuous Integration](Testing#continuous-integration), [Unit Testing](Testing) or [Pair Programming](Coding), for example.  
 
 Software methodologies, then, are collections of tools and practices:  “Agile”, “Waterfall”, “Lean” or “Phased Delivery” (for example) all suggest different approaches to running a project, and are opinionated about the way they think projects should be done and the tools that should be used.    
 

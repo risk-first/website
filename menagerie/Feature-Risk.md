@@ -17,7 +17,7 @@ This is the one we've just discussed above: the feature that you (or your client
  - This might manifest itself as complete _absence_ of something you need, e.g "Where is the word count?"
  - It could be that the implementation isn't complete enough, e.g "why can't I add really long numbers in this calculator?"
  
-### Features Don't Work Properly
+## Implementation Risk
 
 [Feature Risk](Feature-Risk) also includes things that don't work as expected<!-- tweet-end -->: That is to say, [bugs](https://en.wikipedia.org/wiki/Software_bug).   Although the distinction between "a missing feature" and "a broken feature" might be worth making in the development team, we can consider these both the same kind of risk:  _the software doesn't do what the user expects_.
 
@@ -130,7 +130,7 @@ Darwin's conception of fitness was not one of athletic prowess, but how well an 
 
 ![Feature Risks Assembled:  Fit Risks](images/kite9/all_feature_risk_1.png) 
 
-For further reading, you can check out [The Service Quality Model](http://en.wikipedia.org/SERVQUAL), whcih this model is derived from.  This model analyses the types of _quality gaps_ in services, and how consumer expectations and perceptions of a service arise.  In [Staging And Classifying](Staging-And-Classifying#Your-Feature-Risk-is-Someone-Else-s-Dependency-Risk), we'll come back and build on this model further. 
+For further reading, you can check out [The Service Quality Model](http://en.wikipedia.org/SERVQUAL), whcih this model is derived from.  This model analyses the types of _quality gaps_ in services, and how consumer expectations and perceptions of a service arise.  In the [Staging And Classifying](Staging-And-Classifying) section, we'll come back and build on this model further. 
 
 ### Fit and Audience
 

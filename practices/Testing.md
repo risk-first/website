@@ -141,3 +141,9 @@ For these reasons, focus on writing the _smallest number of tests that mitigates
 ## See Also
 
 [Risk Based Agile Testing](https://www.amazon.co.uk/Risk-Driven-Agile-Testing-risk-based-effective-ebook/dp/B06XGL4CDL/ref=sr_1_1?ie=UTF8&qid=1521908627&sr=8-1&keywords=risk+based+agile+testing) by Martin Ivison, which covers a lot of this ground in much more detail. 
+
+
+
+## Continuous Integration
+
+referred to.
