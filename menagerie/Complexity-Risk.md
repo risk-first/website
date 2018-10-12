@@ -163,7 +163,7 @@ Where **P** is the number of **Connected Components** (i.e. distinct parts of th
 
 So, our first graph had a **Cyclomatic Complexity** of 7. `(15 - 10 + 2)`, while our second was 1. `(9 - 10 + 2)`.
 
-Cyclomatic complexity is all about the number of different routes through the program.   The more branches a program has, the greater it's cyclomatic complexity.  Hence, this is a useful metric in [Testing](Testing) and [Code Coverage](Testing#code-coverage): the more branches you have, the more tests you'll need to exercise them all. 
+Cyclomatic complexity is all about the number of different routes through the program.   The more branches a program has, the greater it's cyclomatic complexity.  Hence, this is a useful metric in [Testing](Development-Process) and [Code Coverage](https://en.wikipedia.org/wiki/Code_coverage): the more branches you have, the more tests you'll need to exercise them all. 
 
 ## More Abstraction
 
@@ -215,9 +215,9 @@ The most common way we talk about unnecessary complexity in software is as [Tech
 
 Building a perfect first-time solution is a waste, because perfection takes a long time.  You're taking on more attendant [Schedule Risk](Schedule-Risk) than necessary and [Meeting Reality](Meeting-Reality) more slowly than you could.
 
-A quick-and-dirty, over-complex implementation mitigates the same [Feature Risk](Feature-Risk) and allows you to [Meet Reality](Meeting-Reality) faster (see [Prototyping](Coding)).  
+A quick-and-dirty, over-complex implementation mitigates the same [Feature Risk](Feature-Risk) and allows you to [Meet Reality](Meeting-Reality) faster.  
 
-But, having mitigated the [Feature Risk](Feature-Risk), you are now carrying more [Complexity Risk](Complexity-Risk) than you necessarily need, and it's time to think about how to [Refactor](Coding) the software to reduce this risk again.
+But, having mitigated the [Feature Risk](Feature-Risk), you are now carrying more [Complexity Risk](Complexity-Risk) than you necessarily need, and it's time to think about how to [Refactor](https://en.wikipedia.org/wiki/Code_refactoring) the software to reduce this risk again.
 
 ## Kitchen Analogy
 
@@ -246,7 +246,7 @@ Therefore, [Feature Creep](https://en.wikipedia.org/wiki/Feature_creep) (or [Gol
 
 Sometimes, feature-creep happens because either managers feel they need to keep their staff busy, or the staff decide on their own that they need to [keep themselves busy](Agency-Risk).  But now, we can see that basically this boils down to bad risk management.  
 
-> "Perfection is Achieved Not When There Is Nothing More to Add, But When There Is Nothing Left to Take Away" - [Antoine de Saint-Exupery]()
+> "Perfection is Achieved Not When There Is Nothing More to Add, But When There Is Nothing Left to Take Away" - [Antoine de Saint-Exupery](http://www.quotationspage.com/quote/26979.html)
 
 ## Dead-End Risk
 

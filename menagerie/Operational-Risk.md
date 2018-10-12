@@ -229,7 +229,14 @@ Correlation
 	- Upgrades ( tell story of Research upgrade that went wrong because we were upgrading at the same time as an outage)
       - Single points of failure.
 
-reputational damage
+## reputational risk
+
+Adding this in since we refer to it
+
+
+## Performance Risk
+
+Adding this in since we refer to it
 
 
  

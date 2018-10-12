@@ -1,6 +1,6 @@
 ![Draft](images/state/draft.png)
 
-As we discussed in the section on [Abstraction](), our understanding of the world is entirely informed by the names we give things and the abstractions we create.  
+As we discussed in the section on [Abstraction](Communication-Risk#invisibility-risk), our understanding of the world is entirely informed by the names we give things and the abstractions we create.  
 
 (In the same way, **Risk-First** is about _identifying patterns_ within software development and calling them out.)  
 
@@ -10,11 +10,11 @@ So there is a translation going on here: observations about the arrangement of _
 
 ![Maps and Territories, and Communication happening between them](images/kite9/mapter-bits-atoms.png) 
 
-[Map And Territory Risk]() is the risk we face because we base our behaviour on our [Internal Models]() rather than reality itself.  It comes from the expression "Confusing the Map for the Territory", attributed to Alfred Korzybski:
+[Map And Territory Risk](Map-And-Territory-Risk) is the risk we face because we base our behaviour on our [Internal Models](Glossary#internal-model) rather than reality itself.  It comes from the expression "Confusing the Map for the Territory", attributed to Alfred Korzybski:
 
 > "Polish-American scientist and philosopher Alfred Korzybski remarked that "the map is not the territory"  and that "the word is not the thing", encapsulating his view that an abstraction derived from something, or a reaction to it, is not the thing itself. Korzybski held that many people _do_ confuse maps with territories, that is, confuse models of reality with reality itself." - [Map-Territory Relation, _Wikipedia_](https://en.wikipedia.org/wiki/Map–territory_relation)
 
-In this section, we're going to make a case for analysing [Map and Territory Risk]() along the same axes we introduced for [Feature Risk](Feature-Risk), that is **Fitness**, **Audience** and **Evolution**.  After that, we are going to widen the scope by looking at [Map and Territory Risk]() within the context of **machines**, **people**, **hierarchies** and **markets**.
+In this section, we're going to make a case for analysing [Map and Territory Risk](Map-And-Territory-Risk) along the same axes we introduced for [Feature Risk](Feature-Risk), that is **Fitness**, **Audience** and **Evolution**.  After that, we are going to widen the scope by looking at [Map and Territory Risk](Map-And-Territory-Risk) within the context of **machines**, **people**, **hierarchies** and **markets**.
 
 tbd - diagram of how our actions are based on the map, not the territory.
 
@@ -26,36 +26,36 @@ This wasn't borne of stupidity, but experience:  SatNavs are pretty reliable. _S
 
 ![Sat Nav Blunder Sends Asda Van Crashing Narrow Footpath - Telegraph Newspaper](images/sat_nav.png)
 
-So, there are two [Map and Territory Risks]() here:
+So, there are two [Map and Territory Risks](Map-And-Territory-Risk) here:
 
-- The [Internal Model]() of the _SatNav_ contained information that was wrong:  the track had been marked up as a road, rather than a path.  
-- The [Internal Model]() of the _driver_ was wrong:   his abstraction of "the SatNav is always right" turned out to be only _mostly_ accurate.  
+- The [Internal Model](Glossary#internal-model) of the _SatNav_ contained information that was wrong:  the track had been marked up as a road, rather than a path.  
+- The [Internal Model](Glossary#internal-model) of the _driver_ was wrong:   his abstraction of "the SatNav is always right" turned out to be only _mostly_ accurate.  
 
 ## Internal Models as Dependencies, Features
 
-What are the risks at play here?  We've already looked in detail at the [Dependency Risks]() involved in relying on something like a SatNav, in the [Software Dependency Risk]() section.  But here, we are really looking at the _[Internal Models]() themselves_ as a source of [Dependency Risk]() too.
+What are the risks at play here?  We've already looked in detail at the [Dependency Risks](Dependency-Risk) involved in relying on something like a SatNav, in the [Software Dependency Risk](Software-Dependency-Risk) section.  But here, we are really looking at the _[Internal Models](Glossary#internal-model) themselves_ as a source of [Dependency Risk](Dependency-Risk) too.
 
-We could argue that the SatNav and the Driver's [Internal Model]() had bugs in them.  That is, they both suffer the [Feature Implementation Risk]() we saw in the [Feature Risk]() section.  If a SatNav has too much of this, you'd end up not trusting it, and getting a new one.  With your _personal_ [Internal Model](), you can't buy a new one, but you may learn to _trust certain abstractions less_, as this driver did.
+We could argue that the SatNav and the Driver's [Internal Model](Glossary#internal-model) had bugs in them.  That is, they both suffer the [Feature Implementation Risk](Feature-Risk#implementation-risk) we saw in the [Feature Risk](Feature-Risk) section.  If a SatNav has too much of this, you'd end up not trusting it, and getting a new one.  With your _personal_ [Internal Model](Glossary#internal-model), you can't buy a new one, but you may learn to _trust certain abstractions less_, as this driver did.
 
-In the [Feature Risk]() section, we broke down [Feature Risk]() on three axes:  **Fitness**, **Evolution** and **Audience**.  
+In the [Feature Risk](Feature-Risk) section, we broke down [Feature Risk](Feature-Risk) on three axes:  **Fitness**, **Evolution** and **Audience**.  
 
-Lets do this again and see how each type of [Feature Risk]() can manifest in the [Internal Model]():
+Lets do this again and see how each type of [Feature Risk](Feature-Risk) can manifest in the [Internal Model](Glossary#internal-model):
 
 ![Feature Risk, as manifested in the Internal Model](images/generated/risks/map-and-territory/map_and_territory_table_1_sideways.png)
 
-As with [Features]() in a product, Information in an [internal model]() has at least these three dimensions:
+As with [Features](Feature-Risk) in a product, Information in an [internal model](Glossary#internal-model) has at least these three dimensions:
 
 - **Fitness**: as discussed above with the SatNav example, this is how closely the information matches reality, and how _useful that is to us_ (models that contain too much detail are as bad as models with too little).
-- **Audience**: is all about how a piece of information is _shared_ between many [Internal Models](), and it's this we are going to address further now.
-- **Evolution**: is all about how [Internal Models]() change when they meet reality, and we'll cover that last.   
+- **Audience**: is all about how a piece of information is _shared_ between many [Internal Models](Glossary#internal-model), and it's this we are going to address further now.
+- **Evolution**: is all about how [Internal Models](Glossary#internal-model) change when they meet reality, and we'll cover that last.   
 
 ## Audience
 
-We already know a lot about [Internal Models]() and audience, as these have been the subject of previous sections:
+We already know a lot about [Internal Models](Glossary#internal-model) and audience, as these have been the subject of previous sections:
 
- - We know from looking at [Communication Risk]() that communication allows us to _share_ information between [Internal Models](). 
- - We know from [Coordination Risk]() the difficulties inherent in aligning [Internal Models]() so that they cooperate.
- - Job markets show us that there is demand for people with certain _skills_.  This demonstrates to us that [Market Risk]() is as applicable to [Internal Models]() containing certain information as it is to products containing [Features](Feature-Risk).  This was the focus of the [Ecosystem]() discussion in [Boundary Risk](Boundary-Risk).
+ - We know from looking at [Communication Risk](Communication-Risk) that communication allows us to _share_ information between [Internal Models](Glossary#internal-model). 
+ - We know from [Coordination Risk](Coordination-Risk) the difficulties inherent in aligning [Internal Models](Glossary#internal-model) so that they cooperate.
+ - Job markets show us that there is demand for people with certain _skills_.  This demonstrates to us that [Market Risk](Feature-Risk#market-risk) is as applicable to [Internal Models](Glossary#internal-model) containing certain information as it is to products containing [Features](Feature-Risk).  This was the focus of the [Ecosystem](boundary-risk#ecosystems-and-systems) discussion in [Boundary Risk](Boundary-Risk).
 
 ... And, we're all familiar with _memes_:
 
@@ -78,21 +78,21 @@ The five phases (and the "Hype" itself) are shown in the chart below, with the t
 Also in this diagram we are showing where the hype originates:
 
  - The **saturation** of the idea within the audience (a dotted line).
- - The **amount known** about the idea by the audience (a [Learning Curve](), if you will, a dashed line).
+ - The **amount known** about the idea by the audience (a [Learning Curve](Communication#learning-curve-risk), if you will, a dashed line).
  
-Both of these are modelled with [Cumulative Distribution](https://en.wikipedia.org/wiki/Cumulative_distribution_function#Use_in_statistical_analysis) curves.  From these two things, we can figure out where our maximum [Map and Territory Risk]() lies:  it's the point where awareness of an idea is furthest from the understanding of it.  This acts as a "brake" on the **hype** around the idea, corresponding to the "Trough of Disillusionment".  
+Both of these are modelled with [Cumulative Distribution](https://en.wikipedia.org/wiki/Cumulative_distribution_function#Use_in_statistical_analysis) curves.  From these two things, we can figure out where our maximum [Map and Territory Risk](Map-And-Territory-Risk) lies:  it's the point where awareness of an idea is furthest from the understanding of it.  This acts as a "brake" on the **hype** around the idea, corresponding to the "Trough of Disillusionment".  
 
-Where the **saturation** and **knowledge** grow together, there is no spike in [Map and Territory Risk]() and we don't see the corresponding "Trough of Disillusionment" at all, as shown in this chart:
+Where the **saturation** and **knowledge** grow together, there is no spike in [Map and Territory Risk](Map-And-Territory-Risk) and we don't see the corresponding "Trough of Disillusionment" at all, as shown in this chart:
 
 ![Hype Cycle 2: Slower growth of Map and Territory Risk means no "Trough of Disillusionment"](images/hype-cycle2.png)
 
 ## Evolution
 
-The section on [Communication Risk]() introduced the following model for ideas:
+The section on [Communication Risk](Communication-Risk) introduced the following model for ideas:
 
 ![Spread of information between Internal Models](images/generated/communication_marketing.png)
 
-But what happens next?   As we saw in [Boundary Risk](), the **Peter Principle** applies, people will use dependencies up to the point when they start breaking down.  
+But what happens next?   As we saw in [Boundary Risk](Boundary-Risk), the **Peter Principle** applies, people will use dependencies up to the point when they start breaking down.  
 
 ### Example: Metrics
 
@@ -134,11 +134,11 @@ In the case of metrics, this is where they start being used for more than just i
   
 Some of this seems obvious:  _Of course_ SLOC is a terrible measure performance!  We're not that stupid anymore.  The problem is, it's not so much the _choice_ of metric, but the fact that _all_ metrics merely approximate reality with a few numbers.  The map is _always_ simpler than the territory, therefore there can be no perfect metrics.
 
-In the same way that [markets evolve to demand more features](Feature-Risk#red-queen-risk), our behaviour evolves to incorporate new ideas.  The more popular an idea is, the more people will modify their behaviour as a result of it, and the more the world will change.   Will the idea still be useful as the world adapts?   Although the [Hype Cycle]() model doesn't cover it, ideas and products all eventually have their day and decline in usefulness.
+In the same way that [markets evolve to demand more features](Schedule-Risk#red-queen-risk), our behaviour evolves to incorporate new ideas.  The more popular an idea is, the more people will modify their behaviour as a result of it, and the more the world will change.   Will the idea still be useful as the world adapts?   Although the [Hype Cycle](https://en.wikipedia.org/wiki/Hype_cycle) model doesn't cover it, ideas and products all eventually have their day and decline in usefulness.
 
 ### Bad Ideas
 
-There are plenty of ideas which _seem a really good idea at the time_ but then end up being terrible.  It's only as we _learn about the products_ and realize the hidden [Map and Territory Risk]() that we stop using them.  While SLOC is a minor offender, [CFCs](https://en.wikipedia.org/wiki/Chlorofluorocarbon) or [Leaded Petrol](https://en.wikipedia.org/wiki/Tetraethyllead) are more significant examples.  
+There are plenty of ideas which _seem a really good idea at the time_ but then end up being terrible.  It's only as we _learn about the products_ and realize the hidden [Map and Territory Risk](Map-And-Territory-Risk) that we stop using them.  While SLOC is a minor offender, [CFCs](https://en.wikipedia.org/wiki/Chlorofluorocarbon) or [Leaded Petrol](https://en.wikipedia.org/wiki/Tetraethyllead) are more significant examples.  
 
 The following Hyph Cycle chart shows an initially promising idea that turns out to be terrible, and there is a "Period of Inoculation" where the population realise their mistake.  There is "negative hype" as they work to phase out the offending idea:
 
@@ -146,13 +146,13 @@ The following Hyph Cycle chart shows an initially promising idea that turns out 
 
 ## Humans and Machines
 
-In the example of the SatNav, we saw how the _quality_ of [Map and Territory Risk]() is different for _people_ and _machines_.   Whereas people _should_ be expected show skepticism to new (unlikely) information, our databases accept it unquestioningly.  _Forgetting_ is an everyday, usually benign part of our human [Internal Model](), but for software systems it is a production crisis involving 3am calls and backups.  
+In the example of the SatNav, we saw how the _quality_ of [Map and Territory Risk](Map-And-Territory-Risk) is different for _people_ and _machines_.   Whereas people _should_ be expected show skepticism to new (unlikely) information, our databases accept it unquestioningly.  _Forgetting_ is an everyday, usually benign part of our human [Internal Model](Glossary#internal-model), but for software systems it is a production crisis involving 3am calls and backups.  
 
-For Humans, [Map and Territory Risk]() is exacerbated by [cognitive biases](https://en.wikipedia.org/wiki/List_of_cognitive_biases):
+For Humans, [Map and Territory Risk](Map-And-Territory-Risk) is exacerbated by [cognitive biases](https://en.wikipedia.org/wiki/List_of_cognitive_biases):
 
 > "Cognitive biases are systematic patterns of deviation from norm or rationality in judgment, and are often studied in psychology and behavioral economics." - [Cognitive Bias, _Wikipedia_](https://en.wikipedia.org/wiki/List_of_cognitive_biases)
 
-There are _lots_ of cognitive biases.  But let's just look at a couple that are relevant to [Map and Territory Risk]():
+There are _lots_ of cognitive biases.  But let's just look at a couple that are relevant to [Map and Territory Risk](Map-And-Territory-Risk):
 
 - **Availability Heuristic**: People overestimate the importance of knowledge they have been exposed to. 
 - **The Ostrich Effect**:  Which is where dangerous information is ignored or avoided because of the emotions it will evoke.
@@ -160,7 +160,7 @@ There are _lots_ of cognitive biases.  But let's just look at a couple that are 
 
 ## Hierarchical Organisations
 
-[Map And Territory Risk]() "trickles down" through an organisation.  The higher levels have an outsize ability to pervert the incentives at lower levels because once an organisation begins to pursue a "bullshit objective", the whole company can align to this.  
+[Map And Territory Risk](Map-And-Territory-Risk) "trickles down" through an organisation.  The higher levels have an outsize ability to pervert the incentives at lower levels because once an organisation begins to pursue a "bullshit objective", the whole company can align to this.  
 
 [The Huffington Post](https://www.huffingtonpost.com/otto-scharmer/the-fish-rots-from-the-he_b_8208652.html) paints a brilliant picture of how Volkswagen managed to get caught faking their emissions tests.  As they point out:
 
@@ -169,7 +169,7 @@ There are _lots_ of cognitive biases.  But let's just look at a couple that are 
 This article identifies the following process:
 
 - **De-sensing**: VW Executives ignored _The Territory_ society around them (such as the green movement), ensuring their maps were out of date.  The top-down culture made it hard for reality to propagate back up the hierarchy.  
-- **Hubris/Absencing**:  They pursued their own metrics of _volume_ and _cost_, rather than seeking out others (a la the Availability Heuristic Bias).  That is, focusing on their own _Map_, which is _easier_ than checking the _Territory_.  (See [Hubris](Agency-Risk#hubris--ego) in the [Agency Risk]() section).
+- **Hubris/Absencing**:  They pursued their own metrics of _volume_ and _cost_, rather than seeking out others (a la the Availability Heuristic Bias).  That is, focusing on their own _Map_, which is _easier_ than checking the _Territory_.  (See [Hubris](Agency-Risk#hubris--ego) in the [Agency Risk](Agency-Risk) section).
 - **Deception**:  Backed into a corner, engineers had no choice but to find "creative" ways to meet the metrics.
 - **Destruction**: Eventually, the truth comes out, to the detriment of the company, the environment and the shareholders.  As the article's title summarizes "A fish rots from the head down".
 
@@ -180,7 +180,7 @@ A similar (but less catastrophic) personal story from a bank I worked at, where 
 1. My team had been tasked with building automated "smoke tests" of an application.  But this was bullshit:  We only needed to build these _at all_ because the application was so complex.  The reason it was so complex was...
 2. The application was being designed within a "Framework" constructed by the department.  However, the framework was only being used by this one application.  Building a "reuasable" framework which is only used by a single application is bullshit.  But, we had to do this because...
 3. The organisational structure was created along a "matrix", with "business function" on one axis and "functional area" on another.   Although we were only building the application for a single business function, it was expected to cater with all the requirements from the an entire "functional area".  This was bullshit too, because...
-4. The matrix structure was largely the legacy of a recent merger with another department.  As [Conway's Law]() predicts, our software therefore had to reflect this structure.  But this was bullshit because...
+4. The matrix structure was largely the legacy of a recent merger with another department.  As [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law) predicts, our software therefore had to reflect this structure.  But this was bullshit because...
 5. The matrix structure didn't represent reality in any useful way.  It was designed to pacify the budget committee at the higher level, and try to demonstrate attributes such as _control_ and _governance_.  But this was bullshit too, because...
 6. The budget that was given to our department was really based on how much fear the budget holders currently had of the market regulators.  But this was bullshit too, because...
 7. At a higher level, the executives had realised that our division wasn't one of the banks strategic strengths, and was working to close it all down anyway.
@@ -193,13 +193,13 @@ When faced with so many mis-aligned objectives, it seemed completely hopeless to
 
 It feels like there's no way back from that.  
 
-All of life might well be a big [Map and Territory]() illusion.  But let's analyse just a bit:
+All of life might well be a big [Map and Territory](Map-And-Territory-Risk) illusion.  But let's analyse just a bit:
 
  - At each layer, the objectives changed.  But, they impacted on the objectives of the layer below.
  - Therefore, it seems like the more layers you have, the less likely it is that your objectives become inconsistent between the lower and higher levels.
  - On a new project, it seems like a good idea to model this stuff:  does the objective of the work you're about to undertake "align" with the objectives at a higher level?  
  
-Trying to spot [Map and Territory Risk]() ahead-of-time in this manner seems like a useful way of trying to avoid [Vanity Projects](Agency-Risk#pet-project), and, if you are good at it, allows you to see which [Goals]() in the organisation are fragile and likely to change.  However, usually, if you are working in a team, you have limited agency to decide which projects you feel are valuable.  
+Trying to spot [Map and Territory Risk](Map-And-Territory-Risk) ahead-of-time in this manner seems like a useful way of trying to avoid [Vanity Projects](Agency-Risk#pet-projects), and, if you are good at it, allows you to see which [Goals](Glossary#goal-in-mind) in the organisation are fragile and likely to change.  However, usually, if you are working in a team, you have limited agency to decide which projects you feel are valuable.  
 
 This comes down to a personal decision: do you want to spend time working on projects that you know are going in the bin?  Some developers have the attitude that, so long as they get paid, it doesn't matter.  But others are in it for the satisfaction of the work itself, so this ends up being a personal call.  
 
@@ -207,7 +207,7 @@ This comes down to a personal decision: do you want to spend time working on pro
 
 ## Markets
 
-So far, we've considered what happens to individuals, teams and organisations when told to optimise around a particular objective.  In [Coordination Risk]() we looked at how [Communication]() was critical for Coordination to happen.  And, as we've already discussed, [Abstraction]() is a key part of communication.
+So far, we've considered what happens to individuals, teams and organisations when told to optimise around a particular objective.  In [Coordination Risk](Coordination-Risk) we looked at how communication was critical for coordination to happen.  And, as we've already discussed, [Abstraction](Glossary#abstraction) is a key part of communication.
 
 The languages we adopt or create are _sets of useful abstractions_ that allow us to communicate.  But what happens when this goes wrong?
 
@@ -222,11 +222,11 @@ The languages we adopt or create are _sets of useful abstractions_ that allow us
  
 > "Now consider the system of scientific journals... Some journals are prestigious. So university hiring committees pay the most attention to publications in that journal. So people with the best, most interesting-looking publications try to send them to that journal. So if a university hiring committee paid an equal amount of attention to publications in lower-prestige journals, they’d end up granting tenure to less prestigious people. Thus, the whole system is a stable equilibrium that nobody can unilaterally defy except at cost to themselves." - [Inadequate Equilibria, _Eleizer Yudkovsky_](https://equilibriabook.com/molochs-toolbox/)
 
-As the book points out, while everyone _persists_ in using an inadequate abstraction, the system is broken.  However, [Coordination]() would be required for everyone to _stop_ doing it this way, which is hard work.  (At least within a hiearchy, Maps can get fixed.)
+As the book points out, while everyone _persists_ in using an inadequate abstraction, the system is broken.  However, [Coordination](Coordination-Risk) would be required for everyone to _stop_ doing it this way, which is hard work.  (At least within a hiearchy, Maps can get fixed.)
 
 This is a _small example_ from a much larger, closely argued book, and it's worth taking the time to read a couple of the chapters on this interesting topic.
 
-As usual, this section forms a grab-bag of examples in a complex topic.  But it's time to move on as there is one last stop we have to make on the [Risk Landscape](), and that is to look at [Operational Risk]().  
+As usual, this section forms a grab-bag of examples in a complex topic.  But it's time to move on as there is one last stop we have to make on the [Risk Landscape](Glossary#risk-landscape), and that is to look at [Operational Risk](Operational-Risk).  
 
 (NB: The Hype Cycle model is available in **Numbers** form [here](https://github.com/risk-first/website/blob/master/RiskMatrix.numbers).) 
 

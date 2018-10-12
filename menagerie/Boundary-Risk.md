@@ -28,7 +28,7 @@ Also, it stands to reason that making _any_ choice is better than making _no_ ch
 
 Let's look at a software example now.
 
-As discussed in [Software Dependency Risk](Software-Dependency-Risk), if we are going to use a software tool as a dependency, we have to accept the complexity of it's [Interface](Software-Dependency-Risk#interfaces), and learn the [protocol](Communication-Risk#protocol) of that interface.  If you want to work with it, you have to use it's protocol, it won't come to you.   
+As discussed in [Software Dependency Risk](Software-Dependency-Risk), if we are going to use a software tool as a dependency, we have to accept the complexity of it's [Interface](Software-Dependency-Risk#interfaces), and learn the [protocol](Communication-Risk#protocols) of that interface.  If you want to work with it, you have to use it's protocol, it won't come to you.   
 
 Let's take a look at a hypothetical system structure, in the accompanying diagram.  In this design, we have are transforming data from the `input` to the `output`.  But how should we do it?
 
@@ -61,7 +61,7 @@ Wherever we integrate dependencies with complex [Protocols](Communication-Risk#p
 As we saw in [Software Dependency Risk](Software-Dependency-Risk), [Boundary Risk](Boundary-Risk) is a big factor in choosing libraries and services.  However, it can apply to any kind of dependency:
 
  - If you're depending on a [Process or Organisation](Process-Risk), they might change their products or quality, making the effort you put into the relationship worthless.
- - If you're depending on [Staff](Agency-Risk#staff-risk), they might leave, meaning your efforts on training them don't pay back as well as you hoped.
+ - If you're depending on [Staff](Schedule-Risk#staff-risk), they might leave, meaning your efforts on training them don't pay back as well as you hoped.
  - If you're depending on an [Event](Schedule-Risk) occuring at a particular time, you might have a lot of work to reorganise your life if it changes time or place.
 
 ## Avoiding Boundary Risk Now...
@@ -157,7 +157,7 @@ Why does this happen?
 
 #### 2.  Backward Compatibility
 
-As we saw in [Software Dependency Risk](Software-Dependency-Risk), The art of good design is to afford the greatest increase in functionality with the smallest increase in  complexity possible, and this usually means [Refactoring](Coding).  But, this is at odds with [Backward Compatibility](Communication-Risk#backward-compatibility).
+As we saw in [Software Dependency Risk](Software-Dependency-Risk), The art of good design is to afford the greatest increase in functionality with the smallest increase in  complexity possible, and this usually means [Refactoring](https://en.wikipedia.org/wiki/Refactoring).  But, this is at odds with [Backward Compatibility](Communication-Risk#backward-compatibility).
 
 Each new version has a greater functional scope than the one before (pushing back [Boundary Risk](Boundary-Risk)), making the platform more attractive to build solutions in.   But this increases the [Complexity Risk](Complexity-Risk) as there is more functionality to deal with.  
 
@@ -234,7 +234,7 @@ tbd Trying to create a complex, fractal surface.  User requirements are fractal 
 
 ### Object-Relational Mapping 
 
-For example, [Object Relational Mapping (ORM)](https://en.wikipedia.org/wiki/Object-relational_mapping) has long been a problem in software.  This is [Boundary-Crossing](Boundary-Risk) software trying to bridge the gap between [Relational Databases](relational database) and [Object-Oriented Languages](https://en.wikipedia.org/wiki/Object-oriented_programming) like [Java](https://en.wikipedia.org/wiki/Java_(programming_language)).  Building a _general_ library that does this and is useful tbd said:
+For example, [Object Relational Mapping (ORM)](https://en.wikipedia.org/wiki/Object-relational_mapping) has long been a problem in software.  This is [Boundary-Crossing](Boundary-Risk) software trying to bridge the gap between [Relational Databases](https://en.wikipedia.org/wiki/Relational_database) and [Object-Oriented Languages](https://en.wikipedia.org/wiki/Object-oriented_programming) like [Java](https://en.wikipedia.org/wiki/Java_(programming_language)).  Building a _general_ library that does this and is useful tbd said:
 
 > 'Object/Relational Mapping is the Vietnam of Computer Science' - [Ted Neward](http://blogs.tedneward.com/post/the-vietnam-of-computer-science/)
 
@@ -266,9 +266,9 @@ for interop here.  Why is one so different from the other?
 
 ### Browsers
 
-Web browsers are another suprisingly complex boundary.  They have to understand the following [protocols](Communication#protocols):
+Web browsers are another suprisingly complex boundary.  They have to understand the following [protocols](Communication-Risk#protocols):
 
- - [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) for loading resources (as we already reviewed in [Complexity Risk](Complexity-Risk#protocols)
+ - [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) for loading resources (as we already reviewed in [Communication Risk](Communication-Risk#protocols)
  - [HTML](https://en.wikipedia.org/wiki/HTML) Pages, for describing the content of web pages.
  - Various image formats
  - [Javascript](https://en.wikipedia.org/wiki/JavaScript) for web-page _interactivity_
@@ -323,7 +323,7 @@ The next question, is why did Microsoft _stop_ pursuing this strategy?  It seems
 
 - **Configuration**:  When software has to be deployed onto a server, there has to be configuration (usually on the command line, or via configuration property files) in order to bridge the boundary between the _environment it's running in_ and the _software being run_.  Often, this is setting up file locations, security keys and passwords, and telling it where to find other files and services.  
 - **Integration Testing**:  Building a unit test is easy.  You are generally testing some code you have written, aided with a testing framework.  Your code and the framework are both written in the same language, which means low boundary risk.  But, to _integration test_ you need to step outside this boundary and so it becomes much harder.  This is true whether you are integrating with other systems (providing or supplying them with data) or parts of your own system (say testing the client-side and server parts together).  
-- **User Interface Testing**:  If you are supplying a user-interface, then the interface with the user is already a complex, under-specified risky [protocol](Communication-Risk#protocol-risk).  Although tools exist to automate UI testing (such as [Selenium](https://en.wikipedia.org/wiki/Selenium_(software)), these rarely satisfactorily mitigate this [protocol risk](Complexity-Risk#protocol-risk):  can you be sure that the screen hasn't got strange glitches, that the mouse moves correctly, that the proportions on the screen are correct on all browsers?  
+- **User Interface Testing**:  If you are supplying a user-interface, then the interface with the user is already a complex, under-specified risky [protocol](Communication-Risk#protocol-risk).  Although tools exist to automate UI testing (such as [Selenium](https://en.wikipedia.org/wiki/Selenium_(software)), these rarely satisfactorily mitigate this [protocol risk](Communication-Risk#protocol-risk):  can you be sure that the screen hasn't got strange glitches, that the mouse moves correctly, that the proportions on the screen are correct on all browsers?  
 - **Jobs**:  When you pick a new technology to learn and add to your CV, it's worth keeping in mind how useful this will be to you in the future.   It's career-limiting to be stuck in a dying ecosystem and need to retrain.
 - **Teams**:  if you're given license to build a new product within an existing team, are you creating [Boundary Risk](Boundary-Risk) by using tools that the team aren't familiar with?
 - **Organisations**: Getting teams or departments to work with each other often involves breaking down [Boundary Risk](Boundary-Risk).  Often the departments use different tool-sets or processes, and have different goals making the translation harder.  tbd

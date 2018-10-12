@@ -10,7 +10,7 @@ In order to avoid repetition, and also to break down this large topic, we're goi
  - Next, we'll look at [Schedule Risk](Schedule-Risk), because time and money are key dependencies in any project.
  - Then, we'll move on to look specifically at [Software Dependency Risk](Software-Dependency-Risk), covering using libraries, software services and building on top of the work of others.
  - After, we'll take a look at [Process Risk](Process-Risk), which is still [Dependency Risk](Dependency-Risk), but we'll be considering more organisational factors and how bureaucracy comes into the picture.
- - Next, we'll take a closer look at [Boundary Risk](Boundary-Risk) and [Dead-End Risk](Boundary-Risk#dead-end-risk).  These are the risks you face in choosing the wrong things to depend on.
+ - Next, we'll take a closer look at [Boundary Risk](Boundary-Risk) and [Dead-End Risk](Complexity-Risk#dead-end-risk).  These are the risks you face in choosing the wrong things to depend on.
  - Finally, we'll wrap up this analysis with a look at some of the specific problems around working with other people or businesses in [Agency Risk](Agency-Risk).
   
 ## Why Have Dependencies?
@@ -58,11 +58,11 @@ Having an event occur in a fixed time and place is [mitigating risk](Glossary#Mi
 
 - By taking the bus, we are mitigating our own [Schedule Risk](Schedule-Risk):  we're (hopefully) reducing the amount of time we're going to spend on the activity of getting to work.
 - Events are a mitigation for [Coordination Risk](Coordination-Risk): A bus needn't necessarily _have_ a fixed timetable: it could wait for each passenger until they turned up, and then go.  (A bit like ride-sharing works).  This would be a total disaster from a [Coordination Risk](Coordination-Risk) perspective, as one person could cause everyone else to be really really late.  Having a fixed time for doing something mitigates [Coordination Risk](Coordination-Risk) by turning it into [Schedule Risk](Schedule-Risk).  Agreeing a date for a product launch, for example, allows lots of teams to coordinate their activities.
-- It's not entirely necessary to even take the bus:  you could walk, or go by another form of transport.  But, effectively, this just swaps one dependency for another:  if you walk, this might well take longer and use more energy, so you're just picking up [Schedule Risk]() in another way.  If you drive, you have a dependency on your car instead.  So, there is often an _opportunity cost_ with dependencies.  Using the bus might be a cheap way to travel.  You're therefore imposing less [Dependency Risk]() on a different scarce resource - your money.
+- It's not entirely necessary to even take the bus:  you could walk, or go by another form of transport.  But, effectively, this just swaps one dependency for another:  if you walk, this might well take longer and use more energy, so you're just picking up [Schedule Risk](Schedule-Risk) in another way.  If you drive, you have a dependency on your car instead.  So, there is often an _opportunity cost_ with dependencies.  Using the bus might be a cheap way to travel.  You're therefore imposing less [Dependency Risk](Dependency-Risk) on a different scarce resource - your money.
 
 ### But, Events Lead To Attendant Risk
 
-By _deciding to use the bus_ we've [Taken Action](Glossary#Take-Action).  
+By _deciding to use the bus_ we've [Taken Action](Glossary#Taking-Action).  
 
 ![Action Diagram showing risks mitigated by having an _event_](images/kite9/dependency-risk-event.png)
 
@@ -71,12 +71,12 @@ However, as we saw in [A Simple Scenario](A-Simple-Scenario), this means we pick
 So, we're going to look at [Dependency Risk](Dependency-Risk) for our toy events (bus, supermarket) from 7 different perspectives, many of which we've already touched on in the other sections.
 
  - [Schedule Risk](Schedule-Risk)
- - [Reliability Risk](Operational-Risk#reliability-risk)
+ - [Reliability Risk](Dependency-Risk#reliability-risk)
  - [Scarcity Risk](Dependency-Risk#scarcity-risk)
  - [Communication Risk](Communication-Risk)
  - [Complexity Risk](Complexity-Risk)
  - [Feature Fit Risk](Feature-Risk#feature-fit-risk)
- - [Dead-End Risk](Boundary-Risk#dead-end-risk) and [Boundary Risk](Boundary-Risk)  
+ - [Dead-End Risk](Complexity-Risk#dead-end-risk) and [Boundary Risk](Boundary-Risk)  
  
 (Although you might be able to think of a few more.) 
  
@@ -137,7 +137,7 @@ Much like [Reliability Risk](#reliability-risk), there is science for it:
 
  - [Queue Theory](https://en.wikipedia.org/wiki/Queueing_theory) is all about building mathematical models of buffers, queues, pools and so forth.
  - [Logistics](https://en.wikipedia.org/wiki/Logistics) is the practical organisation of the flows of materials and goods around things like [Supply Chains](https://en.wikipedia.org/wiki/Supply_chain).
- - And [Project Management](https://en.wikipedia.org/wiki/Project_management) is in large part about ensuring the right resources are avaiable at the right times.  We'll be taking a closer look at that in the Part 3 sections on [Prioritisation](Prioritisation) and the [Project Managment Body Of Knowledge](PMBoK).
+ - And [Project Management](https://en.wikipedia.org/wiki/Project_management) is in large part about ensuring the right resources are avaiable at the right times.  We'll be taking a closer look at that in Risk-First Part 3 sections on Prioritisation and the [Project Managment Body Of Knowledge](https://en.wikipedia.org/wiki/Project_Management_Body_of_Knowledge).
 
 ## Communication Risk
 
@@ -163,7 +163,7 @@ Finding out about bus schedules is easy.  But in a large company, [Communication
 
 > "In management the term silo mentality often refers to information silos in organizations. Silo mentality is caused by divergent goals of different organizational units." - [Silo Mentality, _Wikipedia_](https://en.wikipedia.org/wiki/Information_silo#Silo_mentality)
 
-Ironically, _more communication_ might not be the answer - if channels are provided to discover functionality in other teams you can still run into [Trust Risk](Communication-Risk#trust-risk) (why should I believe in the quality of this dependency?)  Or [Channel Risk](Communication-Risk#channel-risk) in terms of too low a signal-to-noise ratio, or desperate self-promotion.
+Ironically, _more communication_ might not be the answer - if channels are provided to discover functionality in other teams you can still run into [Trust Risk](Communication-Risk#trust-belief-risk) (why should I believe in the quality of this dependency?)  Or [Channel Risk](Communication-Risk#channel-risk) in terms of too low a signal-to-noise ratio, or desperate self-promotion.
 
 Silo Mentality is exacerbated by the problems you would face in _budgeting_ if suddenly all the divisions in an organisation started providing dependencies for each other.  This starts to require a change to organisational structure towards being a set of individual businesses marketing services to one another, rather than a division-based one.  We'll look more closely at these kind of organisational issues in the [Coordination Risk](Coordination-Risk) section. 
 
@@ -177,8 +177,6 @@ But this means that all of the issues of abstractions that we covered in [Commun
  - There is [Misinterpretation Risk](Communication-Risk#misinterpretation-risk), because often the dependency might mistake your instructions.  This is endemic in software, where it's nearly impossible to describe exactly what you want up-front.
  
 ## Fit Risk
-
-![Feature Fit Risk](images/generated/feature-risk.png) 
 
 Sometimes, the bus will take you to lots of in-between places you _didn't_ want to go.   This is [Fit Risk](Feature-Risk#feature-fit-risk) and we saw this already in the section on [Feature Risk](Feature-Risk).  There, we considered two problems:
 
