@@ -79,14 +79,18 @@ public class LinkChecker {
 
 		Kite9Log.setLogging(false);
 		Set<String> links = new HashSet<>();
+		
+		
 		SortedSet<Target> targets = new TreeSet<>();
 
 		for (String arg : args) {
 			if (websitePrefix == null) {
 				websitePrefix = arg;
+				File f = new File(arg);
+				process(f, links, targets, bw, true);
 			} else {
 				File f = new File(arg);
-				process(f, links, targets, bw);
+				process(f, links, targets, bw, false);
 			}
 		}
 		
@@ -121,10 +125,10 @@ public class LinkChecker {
 		tbw.close();
 	}
 	
-	public static void process(File f, Set<String> links, Set<Target> targets, PrintStream bw) throws Exception {
+	public static void process(File f, Set<String> links, Set<Target> targets, PrintStream bw, boolean destinationsOnly) throws Exception {
 		if (f.isDirectory()) {
 			for (File f2 : f.listFiles()) {
-				process(f2, links, targets, bw);
+				process(f2, links, targets, bw, destinationsOnly);
 			}
 			
 		} else if (f.getName().endsWith(".md")) {
@@ -135,10 +139,13 @@ public class LinkChecker {
 			do {
 				if (content != null) {
 					// this only checks the one type of link like [dsfs](link).
-					TextPreprocessor.processLinks(content, 
-						(link, text, url, image, lineNo) -> {
-							targets.add(new Target(f, lineNo, url.toLowerCase(), text, image));
-						}, line, (s) -> {});
+					
+					if (!destinationsOnly) {
+						TextPreprocessor.processLinks(content, 
+							(link, text, url, image, lineNo) -> {
+								targets.add(new Target(f, lineNo, url.toLowerCase(), text, image));
+							}, line, (s) -> {});
+					}
 					
 					LinkChecker.processTargets(content, 
 						(title, depth, lineNo) -> {
