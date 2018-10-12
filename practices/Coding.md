@@ -43,7 +43,7 @@ Most commonly, the reason we are **Coding** is same as the one in the [Developme
 
 That is, we believe our clients don't have the features they need to see in the software, and we have [Feature Risk](Feature-Risk). 
 
-By coding, we are mitigating [Feature Risk](Feature-Risk) in exchange for [Complexity Risk](Complexity-Risk) in terms of the extra code we now have on the project, and [Schedule Risk](Schedule-Risk), because by spending time or money coding we now have less time or money to do other things.  Bill Gates said: 
+By coding, we are mitigating [Feature Risk](Feature-Risk) in exchange for [Complexity Risk](Complexity-Risk) in terms of the extra code we now have on the project, and [Schedule Risk](Scarcity-Risk#schedule-risk), because by spending time or money coding we now have less time or money to do other things.  Bill Gates said: 
 
 > “Measuring programming progress by lines of code is like measuring aircraft building progress by weight.” - Bill Gates
 
@@ -61,7 +61,7 @@ Imagine for a moment, that there was such a thing as **The Perfect Product**, an
  - The **Perfect Product** might be _conceptually elusive_, and it might take several attempts for the **User** to find it's form. _[Conceptual Integrity Risk](Feature-Risk)_
  - It might be hard for the **User** to _communicate_ the idea of it in writing or words:  where do the buttons go? What do they do?  What are the key abstractions?  _[Communication Risk](Communication-Risk)_
  - It might be hard too, for the **Coder** to work with this description.  Since his [Internal Model](Glossary#Internal-Model) is different from the **User**'s, they have different ideas about the _meaning_ of what the **User** is communicating.  _[Communication Risk](Communication-Risk)_
- - Then, implementing the idea of whatever is in the **Coder**'s [Internal Model](Glossary#Internal-Model) takes _effort_, and therefore involves [Schedule Risk](Schedule-Risk).
+ - Then, implementing the idea of whatever is in the **Coder**'s [Internal Model](Glossary#Internal-Model) takes _effort_, and therefore involves [Schedule Risk](Scarcity-Risk#schedule-risk).
  - Finally, we have a feedback loop, so the **User** can improve their [Internal Model](Glossary#Internal-Model) and see the previously unforeseen [Hidden Risks](Glossary#hidden-risk).
  - Then, you can go round again.
 
@@ -69,7 +69,7 @@ Imagine for a moment, that there was such a thing as **The Perfect Product**, an
 
 The problem here is that this is a very _protracted feedback loop_.  This is mitigated by prototyping, because that's all about shortening the feedback loop as far as possible:  
  - By working together, you mitigate [Communication Risk](Communication-Risk).
- - By focusing on one or two elements (such as UI design), you can minimize [Schedule Risk](Schedule-Risk).
+ - By focusing on one or two elements (such as UI design), you can minimize [Schedule Risk](Scarcity-Risk#schedule-risk).
  - By having a tight feedback loop, you can focus on _iteration_, try lots of ideas, and work through [Conceptual Integrity Risk](Feature-Risk). 
  
 One assumption of Prototyping is that **Users** can iterate towards **The Perfect Product**.  But it might not be so:   the Conceptual gap between their own ideas and what they really _need_ might prove too great.  
@@ -88,7 +88,7 @@ The idea here is _again_ to minimize the length of the feedback loop, and focus 
 
 To give some idea of the [Conceptual Integrity Risk](Feature-Risk) involved, initially, the team were building a _tablet_ using the multi-touch technology that the iPhone introduced to the world, but pivoted towards the phones after the failure of the "Apple Phone" collaboration with Motorola.
 
-Scott Forstall picked a small, secret team from within the ranks of Apple.  By doing this, he mitigated [Communication Risk](Communication-Risk) and [Coordination Risk](Coordination-Risk) _within his team_, but having fewer people in the room meant more [Throughput Risk](Schedule-Risk).
+Scott Forstall picked a small, secret team from within the ranks of Apple.  By doing this, he mitigated [Communication Risk](Communication-Risk) and [Coordination Risk](Coordination-Risk) _within his team_, but having fewer people in the room meant more [Throughput Risk](Scarcity-Risk#schedule-risk).
 
 By having more people involved, the feedback loop will be longer than the two-man prototyping team, but that's the tradeoff you get for mitigating those other risks.
 
@@ -125,7 +125,7 @@ In the main, [Review](Review) is the main way to mitigate [Coordination Risk](Co
  - Since the pair spend _so much time together_, the communication is very _high bandwidth_, so this mitigates [Communication Risk](Communication-Risk)
  
 But, conversely, there is a cost to **Pair Programming**:
- - Having two people doing the job _one person could do_ intimates [Schedule Risk](Schedule-Risk).
+ - Having two people doing the job _one person could do_ intimates [Schedule Risk](Scarcity-Risk#schedule-risk).
  - Could the same [Complexity Risk](Complexity-Risk) be mitigated just with more regular [Code Reviews](Review)?
  - Sometimes, asking members of a team to work so closely together is a recipe for disaster.  [Team Risk](Coordination-Risk)
  - Not every pair programmer "shares" the keyboard time evenly, especially if ability levels aren't the same.
@@ -139,7 +139,7 @@ But, conversely, there is a cost to **Pair Programming**:
 
 In the extreme, I've seen situations where the team at one location has decided to "suck up" the extra development effort themselves rather than spend time trying to bring a new remote team up-to-speed.  More common is for one location to do the development, while another gets the [Support](Support) duties.  
 
-When this happens, it's because somehow the team feel that [Coordination Risk](Coordination-Risk) is more unmanageable than [Schedule Risk](Schedule-Risk).
+When this happens, it's because somehow the team feel that [Coordination Risk](Coordination-Risk) is more unmanageable than [Schedule Risk](Scarcity-Risk#schedule-risk).
 
 There are some mitigations here:  video-chat, moving staff from location-to-location for face-time, frequent [show-and-tell](Review), or simply modularizing accross geographic boundaries, in respect of [Conway's Law](Coordination-Risk):
 
@@ -177,7 +177,7 @@ You can see that this law is founded in an appreciation of [Coordination Risk](C
 
 ### Too Many Cooks
 
-Sometimes, you have _too many developers_ on a project.  This is not a blessing.   As with [Student Syndrome](Schedule-Risk), having too many resources means that: 
+Sometimes, you have _too many developers_ on a project.  This is not a blessing.   As with [Student Syndrome](Scarcity-Risk#schedule-risk), having too many resources means that: 
 
 > "Work expands so as to fill the time available for it's completion" - [Parkinson's Law]()
 
@@ -194,14 +194,14 @@ This can require some guts to do:  you have to overcome your own ego (wanting to
 
 One of the key ways to measure whether your team is doing _useful work_ is to look at whether, in fact, it can be automated.  And this is the spirit of [DevOps](DevOps) - the idea that people in general are poor at repeatable tasks, and anything people do repeatedly _should_ be automated.  
 
-Repetitive work of any kind is a [Process Risk](Process-Risk), and can be mitigated at the expense of attendant [Complexity Risk](Complexity-Risk) and [Schedule Risk](Schedule-Risk).
+Repetitive work of any kind is a [Process Risk](Process-Risk), and can be mitigated at the expense of attendant [Complexity Risk](Complexity-Risk) and [Schedule Risk](Scarcity-Risk#schedule-risk).
 
 Since this is a trade-off, you have to be careful about how you _weigh_ the [Process Risk](Process-Risk):  clearly, it exists _into the future_.  
 
 You are making a bet that acting now will pay off in decreased [Process Risk](Process-Risk) over the lifetime of the project.  This is a hard thing to judge:
  - How much [Process Risk](Process-Risk) are we carrying, week-to-week?  (A good way to answer this is to look at past failures).
  - How much [Complexity Risk](Complexity-Risk) will we pick up?
- - How much [Schedule Risk](Schedule-Risk) (in spent developer effort) will we pick up?
+ - How much [Schedule Risk](Scarcity-Risk#schedule-risk) (in spent developer effort) will we pick up?
  - How long will the mitigation last before the process changes again?
 
 ### Tool Use
@@ -211,7 +211,7 @@ In general, unless the problem is somehow _specific to your circumstances_ it ma
 Tools are a different trade off to automation.  You are mitigating [Process Risk](Process-Risk) or [Feature Risk](Feature-Risk) in return for:
  - New [Dependency Risk](Dependency-Risk) on the new tool.
  - [Communication Risk](Communication-Risk) because now the team has to understand the tool.
- - [Schedule Risk](Schedule-Risk) in the time it takes to learn and integrate the tool.
+ - [Schedule Risk](Scarcity-Risk#schedule-risk) in the time it takes to learn and integrate the tool.
  - [Complexity Risk](Complexity-Risk) because your project necessarily becomes more complex for the addition of the tool.
 
 Tools in general are _good_ and _worth using_ if they offer you a better risk return than you would have had from not using them.  
@@ -248,7 +248,7 @@ On **Refactoring**, Kent Beck says:
 
 > "If a programmer sees a one-minute ugly way to get a test working and a ten-minute way to get it working with a simpler design, the correct choice is to spend the ten minutes. " -- Kent Beck, _Extreme Programming Explained_
 
-This is a bold, not-necessarily-true assertion.  How does that ratio stack up when applied to _hours_ or _days_?  But you can see how it's motivated:  Kent is saying that the nine extra minutes of [Schedule Risk](Schedule-Risk) are _nothing_ compared to the carry cost of [Complexity Risk](Complexity-Risk) on the project.
+This is a bold, not-necessarily-true assertion.  How does that ratio stack up when applied to _hours_ or _days_?  But you can see how it's motivated:  Kent is saying that the nine extra minutes of [Schedule Risk](Scarcity-Risk#schedule-risk) are _nothing_ compared to the carry cost of [Complexity Risk](Complexity-Risk) on the project.
 
 ## Risks Mitigated / Attendant Risks
 

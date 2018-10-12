@@ -7,7 +7,7 @@ Dependencies can be on _events_, _people_, _teams_, _processes_, _software_, _se
 In order to avoid repetition, and also to break down this large topic, we're going to look at this over 6 sections:   
 
  - In this first section will look at dependencies _in general_, and specifically on _events_, and some of the variations on [Dependency Risk](Dependency-Risk).
- - Next, we'll look at [Schedule Risk](Schedule-Risk), because time and money are key dependencies in any project.
+ - Next, we'll look at [Schedule Risk](Scarcity-Risk#schedule-risk), because time and money are key dependencies in any project.
  - Then, we'll move on to look specifically at [Software Dependency Risk](Software-Dependency-Risk), covering using libraries, software services and building on top of the work of others.
  - After, we'll take a look at [Process Risk](Process-Risk), which is still [Dependency Risk](Dependency-Risk), but we'll be considering more organisational factors and how bureaucracy comes into the picture.
  - Next, we'll take a closer look at [Boundary Risk](Boundary-Risk) and [Dead-End Risk](Complexity-Risk#dead-end-risk).  These are the risks you face in choosing the wrong things to depend on.
@@ -56,9 +56,9 @@ In the first example, you can't _start_ something until a particular event happe
 
 Having an event occur in a fixed time and place is [mitigating risk](Glossary#Mitigated-Risk):
 
-- By taking the bus, we are mitigating our own [Schedule Risk](Schedule-Risk):  we're (hopefully) reducing the amount of time we're going to spend on the activity of getting to work.
-- Events are a mitigation for [Coordination Risk](Coordination-Risk): A bus needn't necessarily _have_ a fixed timetable: it could wait for each passenger until they turned up, and then go.  (A bit like ride-sharing works).  This would be a total disaster from a [Coordination Risk](Coordination-Risk) perspective, as one person could cause everyone else to be really really late.  Having a fixed time for doing something mitigates [Coordination Risk](Coordination-Risk) by turning it into [Schedule Risk](Schedule-Risk).  Agreeing a date for a product launch, for example, allows lots of teams to coordinate their activities.
-- It's not entirely necessary to even take the bus:  you could walk, or go by another form of transport.  But, effectively, this just swaps one dependency for another:  if you walk, this might well take longer and use more energy, so you're just picking up [Schedule Risk](Schedule-Risk) in another way.  If you drive, you have a dependency on your car instead.  So, there is often an _opportunity cost_ with dependencies.  Using the bus might be a cheap way to travel.  You're therefore imposing less [Dependency Risk](Dependency-Risk) on a different scarce resource - your money.
+- By taking the bus, we are mitigating our own [Schedule Risk](Scarcity-Risk#schedule-risk):  we're (hopefully) reducing the amount of time we're going to spend on the activity of getting to work.
+- Events are a mitigation for [Coordination Risk](Coordination-Risk): A bus needn't necessarily _have_ a fixed timetable: it could wait for each passenger until they turned up, and then go.  (A bit like ride-sharing works).  This would be a total disaster from a [Coordination Risk](Coordination-Risk) perspective, as one person could cause everyone else to be really really late.  Having a fixed time for doing something mitigates [Coordination Risk](Coordination-Risk) by turning it into [Schedule Risk](Scarcity-Risk#schedule-risk).  Agreeing a date for a product launch, for example, allows lots of teams to coordinate their activities.
+- It's not entirely necessary to even take the bus:  you could walk, or go by another form of transport.  But, effectively, this just swaps one dependency for another:  if you walk, this might well take longer and use more energy, so you're just picking up [Schedule Risk](Scarcity-Risk#schedule-risk) in another way.  If you drive, you have a dependency on your car instead.  So, there is often an _opportunity cost_ with dependencies.  Using the bus might be a cheap way to travel.  You're therefore imposing less [Dependency Risk](Dependency-Risk) on a different scarce resource - your money.
 
 ### But, Events Lead To Attendant Risk
 
@@ -70,9 +70,9 @@ However, as we saw in [A Simple Scenario](A-Simple-Scenario), this means we pick
 
 So, we're going to look at [Dependency Risk](Dependency-Risk) for our toy events (bus, supermarket) from 7 different perspectives, many of which we've already touched on in the other sections.
 
- - [Schedule Risk](Schedule-Risk)
- - [Reliability Risk](Dependency-Risk#reliability-risk)
  - [Scarcity Risk](Dependency-Risk#scarcity-risk)
+ - [Schedule Risk](Scarcity-Risk#schedule-risk)
+ - [Reliability Risk](Dependency-Risk#reliability-risk)
  - [Communication Risk](Communication-Risk)
  - [Complexity Risk](Complexity-Risk)
  - [Feature Fit Risk](Feature-Risk#feature-fit-risk)
@@ -81,41 +81,6 @@ So, we're going to look at [Dependency Risk](Dependency-Risk) for our toy events
 (Although you might be able to think of a few more.) 
  
 Let's look at each of these in turn.
-
-## Schedule Risk
-
-![Schedule Risk](images/generated/schedule-risk.png)
-
-By agreeing a _time_ and _place_ for something to happen, you're introducing [Deadline Risk](Schedule-Risk#Deadline-Risk).  Miss the deadline, and you miss the bus, or the start of the meeting or get fined for not filling your tax return on time.  
-
-As discussed above, _schedules_ (such as bus timetables) exist so that _two or more parties can coordinate_, and [Deadline Risk](Schedule-Risk#Deadline-Risk) is on _all_ of the parties.  While there's a risk I am late, there's also a risk the bus is late.  I might miss the start of a concert, or the band might keep everyone waiting.   
- 
-Each party can mitigate [Deadline Risk](Schedule-Risk#Deadline-Risk) with _slack_.  That is, ensuring that the exact time of the event isn't critical to your plans:   
-
- - Don't build into your plans a _need_ to start shopping at 9am.
- - Arrive at the bus-stop _early_.
-
-The amount of slack you build into the schedule is likely dependent on the level of risk you face:  I tend to arrive a few minutes early for a bus, because the risk is _low_ (there'll be another bus along soon), however I try to arrive over an hour early for a flight, because I can't simply get on the next flight straight away, and I've already paid for it, so the risk is _high_.
- 
-[Deadline Risk](Schedule-Risk#Deadline-Risk) becomes very hard to manage when you have to coordinate actions with lots of tightly-constrained events.  So what else can give?  We can reduce the number of _parties_ involved in the event, which reduces risk, or, we can make sure all the parties are in the same _place_ to begin with.  
-
-## Reliability Risk
-
-![Reliability Risk](images/generated/reliability-risk.png)
-
-[Deadline Risk](Schedule-Risk#Deadline-Risk) is really a kind of reliability issue: if you can understand which parties are unreliable, you have a much better handle on your [Deadline Risk](Schedule-Risk#Deadline-Risk). 
-
-Luckily, there is quite a lot of existing science around reliability.  For example:
-  
- - If a component **A** depends on component **B**, unless there is some extra redundancy around **B**, then **A** _can't_ be more reliable than **B**.
- - Is **A** or **B** a [Single Point Of Failure](https://en.wikipedia.org/wiki/Single_point_of_failure) in a system?
- - Are there bugs in **B** that are going to prevent it working correctly in all circumstances?
-
-This kind of stuff is encapsulated in the science of [Reliability Engineering](https://en.wikipedia.org/wiki/Reliability_engineering).   For example, [Failure mode and effects analysis (FEMA)](https://en.wikipedia.org/wiki/Failure_mode_and_effects_analysis):
-
-> "...was one of the first highly structured, systematic techniques for failure analysis. It was developed by reliability engineers in the late 1950s to study problems that might arise from malfunctions of military systems. " - [FEMA, _Wikipedia_](https://en.wikipedia.org/wiki/Failure_mode_and_effects_analysis)
-
-This was applied on NASA missions, and then more recently in the 1970's to car design following the [Ford Pinto exploding car](https://en.wikipedia.org/wiki/Ford_Pinto#Design_flaws_and_ensuing_lawsuits) affair.
 
 ## Scarcity Risk
 
@@ -138,6 +103,42 @@ Much like [Reliability Risk](#reliability-risk), there is science for it:
  - [Queue Theory](https://en.wikipedia.org/wiki/Queueing_theory) is all about building mathematical models of buffers, queues, pools and so forth.
  - [Logistics](https://en.wikipedia.org/wiki/Logistics) is the practical organisation of the flows of materials and goods around things like [Supply Chains](https://en.wikipedia.org/wiki/Supply_chain).
  - And [Project Management](https://en.wikipedia.org/wiki/Project_management) is in large part about ensuring the right resources are avaiable at the right times.  We'll be taking a closer look at that in Risk-First Part 3 sections on Prioritisation and the [Project Managment Body Of Knowledge](https://en.wikipedia.org/wiki/Project_Management_Body_of_Knowledge).
+
+
+## Schedule Risk
+
+![Schedule Risk](images/generated/schedule-risk.png)
+
+By agreeing a _time_ and _place_ for something to happen, you're introducing [Deadline Risk](Scarcity-Risk#Deadline-Risk).  Miss the deadline, and you miss the bus, or the start of the meeting or get fined for not filling your tax return on time.  
+
+As discussed above, _schedules_ (such as bus timetables) exist so that _two or more parties can coordinate_, and [Deadline Risk](Scarcity-Risk#Deadline-Risk) is on _all_ of the parties.  While there's a risk I am late, there's also a risk the bus is late.  I might miss the start of a concert, or the band might keep everyone waiting.   
+ 
+Each party can mitigate [Deadline Risk](Scarcity-Risk#Deadline-Risk) with _slack_.  That is, ensuring that the exact time of the event isn't critical to your plans:   
+
+ - Don't build into your plans a _need_ to start shopping at 9am.
+ - Arrive at the bus-stop _early_.
+
+The amount of slack you build into the schedule is likely dependent on the level of risk you face:  I tend to arrive a few minutes early for a bus, because the risk is _low_ (there'll be another bus along soon), however I try to arrive over an hour early for a flight, because I can't simply get on the next flight straight away, and I've already paid for it, so the risk is _high_.
+ 
+[Deadline Risk](Scarcity-Risk#Deadline-Risk) becomes very hard to manage when you have to coordinate actions with lots of tightly-constrained events.  So what else can give?  We can reduce the number of _parties_ involved in the event, which reduces risk, or, we can make sure all the parties are in the same _place_ to begin with.  
+
+## Reliability Risk
+
+![Reliability Risk](images/generated/reliability-risk.png)
+
+[Deadline Risk](Scarcity-Risk#Deadline-Risk) is really a kind of reliability issue: if you can understand which parties are unreliable, you have a much better handle on your [Deadline Risk](Scarcity-Risk#Deadline-Risk). 
+
+Luckily, there is quite a lot of existing science around reliability.  For example:
+  
+ - If a component **A** depends on component **B**, unless there is some extra redundancy around **B**, then **A** _can't_ be more reliable than **B**.
+ - Is **A** or **B** a [Single Point Of Failure](https://en.wikipedia.org/wiki/Single_point_of_failure) in a system?
+ - Are there bugs in **B** that are going to prevent it working correctly in all circumstances?
+
+This kind of stuff is encapsulated in the science of [Reliability Engineering](https://en.wikipedia.org/wiki/Reliability_engineering).   For example, [Failure mode and effects analysis (FEMA)](https://en.wikipedia.org/wiki/Failure_mode_and_effects_analysis):
+
+> "...was one of the first highly structured, systematic techniques for failure analysis. It was developed by reliability engineers in the late 1950s to study problems that might arise from malfunctions of military systems. " - [FEMA, _Wikipedia_](https://en.wikipedia.org/wiki/Failure_mode_and_effects_analysis)
+
+This was applied on NASA missions, and then more recently in the 1970's to car design following the [Ford Pinto exploding car](https://en.wikipedia.org/wiki/Ford_Pinto#Design_flaws_and_ensuing_lawsuits) affair.
 
 ## Communication Risk
 
@@ -203,7 +204,7 @@ Arguably, managing [Dependency Risk](Dependency-Risk) is _what Project Managers 
 
 There are _some_ tools for managing dependency risk:  [Gantt Charts](https://en.wikipedia.org/wiki/Gantt_chart) for example, arrange work according to the capacity of the resources (i.e. dependencies) available, but also the _dependencies between the tasks_.   If task **B** requires the outputs of task **A**, then clearly task **A** comes first and task **B** starts after it finishes.  We'll look at this more in [Process Risk](Process-Risk). 
 
-We'll look in more detail at project management in the _practices_ part, later.   But now let's get into the specifics with [Schedule Risk](Schedule-Risk).
+We'll look in more detail at project management in the _practices_ part, later.   But now let's get into the specifics with [Scarcity Risk](Scarcity-Risk).
 
 
 

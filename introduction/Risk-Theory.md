@@ -34,7 +34,7 @@ Most of the value of the **Risk-First** approach is _in conversation_.  Later, w
 
 Sometimes, it's better to skip these, and just figure out a Risk Score.  This is because if you think about "impact", it implies a definite, discrete event occurring, or not occurring, and asks you then to consider the probability of that occurring. 
 
-**Risk-First** takes a view that risks are a continuous quantity, more like _money_ or _water_:  by taking an action before delivering a project you might add a degree of [Schedule Risk](Schedule-Risk), but decrease the [Operational Risk](Operational-Risk) later on by a greater amount.   
+**Risk-First** takes a view that risks are a continuous quantity, more like _money_ or _water_:  by taking an action before delivering a project you might add a degree of [Schedule Risk](Scarcity-Risk#schedule-risk), but decrease the [Operational Risk](Operational-Risk) later on by a greater amount.   
 
 ## Graphical Analysis
 
@@ -125,7 +125,7 @@ And, this is _fine_, McConnell is structuring the process from the perspective o
 
 ![Pillars, re-arranged](images/kite9/rapid_development_pillars2.png)
 
-As we will see, _Speed_ (or [Schedule Risk](Schedule-Risk) as we will term it) is one risk amongst others that need to be considered from a risk-management perspective.  There's no point in prioritising _speed_ if the software fails in production due to unaddressed [Operational Risk](Operational-Risk), and irreparably damages trust in the product.
+As we will see, _Speed_ (or [Schedule Risk](Scarcity-Risk#schedule-risk) as we will term it) is one risk amongst others that need to be considered from a risk-management perspective.  There's no point in prioritising _speed_ if the software fails in production due to unaddressed [Operational Risk](Operational-Risk), and irreparably damages trust in the product.
 
 ### Eisenhower's Box
  
@@ -198,7 +198,7 @@ Enough with the numbers and the theory:  **Risk-First** is an attempt to provide
 - First, there isn't enough evidence for an approach like this.  We _can_ look at collected data about IT projects, but techniques and tools advance rapidly.
 - Second,  IT projects have too many confounding factors, such as experience of the teams, 
 technologies used etc.  That is, the risks faced by IT projects are _too diverse_ and _hard to quantify_ to allow for meaningful comparison from one to the next.
-- Third, as soon as you _publish a date_ it changes the expectations of the project (see [Student Syndrome](Schedule-Risk)).
+- Third, as soon as you _publish a date_ it changes the expectations of the project (see [Student Syndrome](Scarcity-Risk#schedule-risk)).
 - Fourth, metrics get first of all [misused](Map-And-Territory-Risk) and then [gamed](Agency-Risk).
 
 Reality is messy.  Dressing it up with numbers doesn't change that and you risk [fooling yourself](Map-And-Territory-Risk).  If this is the case, is there any hope at all in what we're doing?  I would argue yes:   _forget precision_.  You should, with experience be able to hold up two separate risks and answer the question, "is this one bigger than this one?"  

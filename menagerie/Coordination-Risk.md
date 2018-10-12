@@ -101,11 +101,11 @@ If you are engaged in a solo project, do you suffer from [Coordination Risk](Coo
 
 At the top, you have the _least_ consultative styles, and at the bottom, the _most_.   At the top, decisions are made with just the leader's [Internal Model](Glossary#Internal-Model) but moving down, the [Internal Models](Glossary#Internal-Model) of the rest of the team are increasingly brought into play.  
 
-The decisions at the top are faster, but don't do much for mitigating **Coordination Risk**.  The ones below take longer, (incurring [Schedule Risk](Schedule-Risk)) but mitigate more **Coordination Risk**.   Group decision-making inevitably involves everyone _learning_, and improving their [Internal Models](Glossary#Internal-Model).   
+The decisions at the top are faster, but don't do much for mitigating **Coordination Risk**.  The ones below take longer, (incurring [Schedule Risk](Scarcity-Risk#schedule-risk)) but mitigate more **Coordination Risk**.   Group decision-making inevitably involves everyone _learning_, and improving their [Internal Models](Glossary#Internal-Model).   
 
 The trick is to be able to tell which approach is suitable at which time.   Everyone is expected to make decisions _within their realm of expertise_: you can't have developers continually calling meetings to discuss whether they should be using an [Abstract Factory](https://en.wikipedia.org/wiki/Abstract_factory_pattern) or a [Factory Method](https://en.wikipedia.org/wiki/Factory_method_pattern), this would waste time.  The critical question is therefore, "what's the biggest risk?"
  - Is the [Coordination Risk](Coordination-Risk) greater?   Are we going to suffer [Dead End Risk](Complexity-Risk) if the decision is made wrongly?  What if people don't agree with it?  Poor leadership has an impact on [Morale](Agency-Risk#morale-risk) too.  
- - Is the [Schedule Risk](schedule-Risk) greater?  If you have a 1-hour meeting with eight people to decide a decision, that's _one man day_ gone right there:  group decision making is _expensive_.  
+ - Is the [Schedule Risk](Scarcity-Risk#schedule-risk) greater?  If you have a 1-hour meeting with eight people to decide a decision, that's _one man day_ gone right there:  group decision making is _expensive_.  
  
 Hopefully, this model shows how _organisation_ can reduce [Coordination Risk](Coordination-Risk).  But, to make this work, we need more _communication_, and this has attendant complexity and time costs.  So, we can draw this diagram of our move on the [Risk Landscape](Risk-Landscape):
 
@@ -132,7 +132,7 @@ They can be encouraged with orthogonal practices such as [team-building exercise
 
 As decribed above, the job of [Coordination](Coordination-Risk) is [Resource Allocation](Coordination-Risk#problems-of-coordination), and so the skills of staff can potentially be looked at as resources to allocate.  This means handling [Coordination Risk](Coordination-Risk) issues like:
 
- - People leaving, taking their [Internal Models](Glossary#Internal-Model) and expertise with them [Key Man Risk](Schedule-Risk#Staff-Risk).
+ - People leaving, taking their [Internal Models](Glossary#Internal-Model) and expertise with them [Key Man Risk](Scarcity-Risk#Staff-Risk).
  - People requiring external training, to understand new tools and techniques [Learning-Curve Risk](Communication-Risk#learning-curve-risk).
  - People being protective about their knowledge in order to protect their jobs [Agency Risk](Agency-Risk). 
  - Where there are mixed ability levels, senior developers not helping juniors as it "slows them down".

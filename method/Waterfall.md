@@ -25,13 +25,13 @@ As shown in the diagram above, the software process is broken into distinct stag
 
 ## Risks Mitigated
 
-### 1.  [Cost Of Implementation](Schedule-Risk)
+### 1.  [Cost Of Implementation](Scarcity-Risk#schedule-risk)
 
 It's likely that the Waterfall-Style methodologies were inspired by the construction industry, wherein we try to [Design Up Front](Design) in order to avoid the cost of re-work:  once concrete is poured, it's expensive to change it again, compared to the cost of updating the design in a diagram.   
 
 Also, when Waterfall was originally conceived, automated testing techniques were not well established.  If you expect to perform a large [manual testing cycle](Testing) for each release, then clearly, doing fewer releases looks cheaper on paper.  
 
-But, while _in principle_, Waterfall aims to _contain_ the cost of implementation.  However, in practice, because of [Requirements Drift](Feature-Risk), [Student Syndrome](Schedule-Risk) and [Complexity Risk](Complexity-Risk), the schedules get more inaccurate the larger the project.
+But, while _in principle_, Waterfall aims to _contain_ the cost of implementation.  However, in practice, because of [Requirements Drift](Feature-Risk), [Student Syndrome](Scarcity-Risk#schedule-risk) and [Complexity Risk](Complexity-Risk), the schedules get more inaccurate the larger the project.
 
 ### 2.  [Lots Of Stakeholders](Coordination-Risk)
 
