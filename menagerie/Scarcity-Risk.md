@@ -1,5 +1,7 @@
 ![For Review](images/state/for-review.png)
 
+Any resource that you depend on can suffer from _scarcity_, 
+
 [Schedule Risk](Scarcity-Risk#schedule-risk) is the term for risks you face because of _lack of time_.  
 
 You could also call this "Chronological Risk" or just "Time Risk" if you wanted to. 
@@ -12,9 +14,48 @@ And let's go completely philosophical for a second:  Were you to attain immortal
 
 Let's look at some specific kinds of [Schedule Risk](Scarcity-Risk#schedule-risk).
 
+
+
+## Scarcity Risk
+
+![Scarcity Risk](images/generated/scarcity-risk.png)
+
+Let's get back to the bus (which, hopefully, is still working).  What if, when it arrives, it's already full of passengers?  Let's term this, [Scarcity Risk](Dependency-Risk#Scarcity-Risk) - the chance that a dependency is over-subscribed and you can't use it the way you want.  This is clearly an issue for nearly every kind of dependency: buses, supermarkets, concerts, teams, services and people.  
+
+You could also call this _availability risk_ or _capacity risk_ of the resource.  Here are a selection of mitigations:
+
+ - **Buffers**: Smoothing out peaks and troughs in utilisation.
+ - **Reservation Systems**: giving clients information _ahead_ of the dependency usage about whether the resource will be available to them.
+ - **Graceful degradation**: Ensuring _some_ service in the event of over-subscription.  It would be no use allowing people to cram onto the bus until it can't move.
+ - **Demand Management**:  Having different prices during busy periods helps to reduce demand.  Having "first class" seats means that higher-paying clients can get service even when the train is full.  [Uber](https://www.uber.com) adjust prices in real-time by so-called [Surge Pricing](https://www.uber.com/en-GB/drive/partner-app/how-surge-works/).  This is basically turning [Scarcity Risk](Dependency-Risk#Scarcity-Risk) into a [Market Risk](Feature-Risk#market-risk) problem.
+ - **Queues**: Again, these provide a "fair" way of dealing with scarcity by exposing some mechanism for prioritising use of the resource.  Buses operate a first-come-first-served system, whereas emergency departments in hospitals triage according to need.
+ - **Pools**: Reserving parts of a resource for particular customers.
+ - **Horizontal Scaling**: allowing a scarce resource to flexibly scale according to how much demand there is.   (For example, putting on extra buses when the trains are on strike, or opening extra check-outs at the supermarket.)
+ 
+Much like [Reliability Risk](#reliability-risk), there is science for it:
+
+ - [Queue Theory](https://en.wikipedia.org/wiki/Queueing_theory) is all about building mathematical models of buffers, queues, pools and so forth.
+ - [Logistics](https://en.wikipedia.org/wiki/Logistics) is the practical organisation of the flows of materials and goods around things like [Supply Chains](https://en.wikipedia.org/wiki/Supply_chain).
+ - And [Project Management](https://en.wikipedia.org/wiki/Project_management) is in large part about ensuring the right resources are avaiable at the right times.  We'll be taking a closer look at that in Risk-First Part 3 sections on Prioritisation and the [Project Managment Body Of Knowledge](https://en.wikipedia.org/wiki/Project_Management_Body_of_Knowledge).
+
+
+
 ## Schedule Risk
 
+![Schedule Risk](images/generated/schedule-risk.png)
 
+By agreeing a _time_ and _place_ for something to happen, you're introducing [Deadline Risk](Scarcity-Risk#Deadline-Risk).  Miss the deadline, and you miss the bus, or the start of the meeting or get fined for not filling your tax return on time.  
+
+As discussed above, _schedules_ (such as bus timetables) exist so that _two or more parties can coordinate_, and [Deadline Risk](Scarcity-Risk#Deadline-Risk) is on _all_ of the parties.  While there's a risk I am late, there's also a risk the bus is late.  I might miss the start of a concert, or the band might keep everyone waiting.   
+ 
+Each party can mitigate [Deadline Risk](Scarcity-Risk#Deadline-Risk) with _slack_.  That is, ensuring that the exact time of the event isn't critical to your plans:   
+
+ - Don't build into your plans a _need_ to start shopping at 9am.
+ - Arrive at the bus-stop _early_.
+
+The amount of slack you build into the schedule is likely dependent on the level of risk you face:  I tend to arrive a few minutes early for a bus, because the risk is _low_ (there'll be another bus along soon), however I try to arrive over an hour early for a flight, because I can't simply get on the next flight straight away, and I've already paid for it, so the risk is _high_.
+ 
+[Deadline Risk](Scarcity-Risk#Deadline-Risk) becomes very hard to manage when you have to coordinate actions with lots of tightly-constrained events.  So what else can give?  We can reduce the number of _parties_ involved in the event, which reduces risk, or, we can make sure all the parties are in the same _place_ to begin with.  
 
 ## Opportunity Risk
 
@@ -39,49 +80,6 @@ But maybe now, the iPad's window is closing?   We have more _wearable computers_
 So, it seems Apple timed the iPad to hit the peak of the Window of Opportunity.  
 
 But, even if you time the Window Of Opportunity correctly, you might still have the rug pulled from under your feet due to a different kind of [Schedule Risk](Scarcity-Risk#schedule-risk), such as...
-
-## Deadline Risk
-
-![Deadline Risk](images/generated/deadline-risk.png)
-
-Often when running a software project, you're given a team of people and told to get something delivered by a certain date.  i.e. you have an artificially-imposed [Deadline](Scarcity-Risk#Deadline-Risk) on delivery.
-
-What happens if you miss the deadline?  It could be:
- - The funding on the project runs out, and it gets cancelled.
- - You have to go back to a budgeting committee, and get more money.
- - The team gets replaced, because of lack of faith.
- 
-.. or something else.
-
-Deadlines can be set by an authority in order to _sharpen focus_ and reduce [Coordination Risk](Coordination-Risk).  This is how we arrive at tools like [SMART Objectives](https://en.wikipedia.org/wiki/SMART_criteria) and [KPI's (Key Performance Indicators)](https://en.wikipedia.org/wiki/Performance_indicator).  Time scales change the way we evaluate goals, and the solutions we choose.  
-
-In JFK's quote:
-
-> "First, I believe that this nation should commit itself to achieving the goal, before this decade is out, of landing a man on the moon and returning him safely to the Earth." -  John F. Kennedy, 1961
-
-The 9-year timespan came from an authority figure (the president) and helped a huge team of people coordinate their efforts and arrive at a solution that would work within a given time-frame.  
-
-Compare with this quote:  
-
-> “I love deadlines. I love the whooshing noise they make as they go by.” - [Douglas Adams](https://en.wikipedia.org/wiki/Douglas_Adams)
-
-As a successful author, Douglas Adams _didn't really care_ about the deadlines his publisher's gave him.  The [Deadline Risk](Scarcity-Risk#Deadline-Risk) was minimal for him, because the publisher wouldn't be able to give his project to someone else to complete. 
-
-Sometimes, deadlines are set in order to _coordinate work between teams_.  The classic example being in a battle, to coordinate attacks.   When our deadlines are for this purpose, we're heading towards [Coordination Risk](Coordination-Risk) territory.
-
-### Student Syndrome
-
-[Student Syndrome](https://en.wikipedia.org/wiki/Student_syndrome) is, according to Wikipedia:
-
-> "Student syndrome refers to planned procrastination, when, for example, a student will only start to apply themselves to an assignment at the last possible moment before its deadline."   - _[Wikipedia](https://en.wikipedia.org/wiki/Student_syndrome)_
-
-Arguably, there is good psychological, evolutionary and risk-based reasoning behind procrastination:  the further in the future the [Deadline Risk](Scarcity-Risk#deadline-risk) is, the more we discount it.  If we're only ever mitigating our _biggest risks_, then deadlines in the future don't matter so much, do they?  And, putting efforts into mitigating future risks that _might not arise_ is wasted effort.
-
-Or at least, that's the argument.  If you're [Discounting the Future To Zero](Risk-Theory) then you'll be pulling all-nighters in order to deliver any assignment.   
-
-So, the problem with [Student Syndrome](Scarcity-Risk#student-syndrome) is that the _very mitigation_ for [Schedule Risk](Scarcity-Risk#schedule-risk) (allowing more time) is an [Attendant Risk](Glossary#attendant-risk) that _causes_ [Schedule Risk](Scarcity-Risk#schedule-risk):   you'll work towards the new, generous deadline more slowly, and you'll end up revealing [Hidden Risk](Glossary#Hidden-Risk) _later_ than you would have with the original, pressing deadline ... and you end up being late because of them.
-
-We'll look at mitigations for this in Part 3's section on [Prioritisation](Prioritisation).
 
 ## Funding Risk
 
