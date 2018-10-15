@@ -100,14 +100,22 @@ The "should we ship?" decision is therefore a complex one.  In [Meeting Reality]
 
 ## Monitoring and Detection
 
-[Monitoring & Detection](#monitoring-and-detection) is the second strategy for mitigating [Operational Risk](Operational-Risk), and in terms of practices, broadly corresponds to Slack's *Improvement* category, above:
+[Monitoring & Detection](#monitoring-and-detection) is the second strategy for mitigating [Operational Risk](Operational-Risk), and in terms of practices, broadly corresponds to Slack's *Improvement* category, above.  
+
+![Monitoring And Detection](images/generated/risks/operational/monitoring-detection.png)
+
+As we saw in [Map and Territory Risk](Map-and-Territory-Risk), it's very easy to fool yourself.  But good [Operations Management]() is also about looking for trouble.  Large organisations have [Audit]() functions precisely to guard against their own internal failing processes and agency risk.  
 
 ### Environmental Scanning
 
 
 ### Knowing Yourself
 
-As we saw in [Map and Territory Risk](Map-and-Territory-Risk), it's very easy to fool yourself.  This is 
+
+
+They practice 
+
+
 
 
 (practicing: e.g. testing failover etc.)
