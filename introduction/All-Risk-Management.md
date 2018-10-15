@@ -71,7 +71,7 @@ _Issues_ then, just seem more "definite" and "now" than _risks_, right?  This cl
 
 In the previous sections, we've introduced something of a "diagram language" of risk.  Let's review it:
 
-![Risk-First Diagram Language](images/generated/all_risk_management_language.png)
+![Risk-First Diagram Language](images/generated/introduction/all_risk_management_language.png)
 
 So we have:
 

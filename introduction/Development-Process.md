@@ -19,7 +19,7 @@ Now, it might be waterfall, it might be agile, we're not going to commit to spec
 
 I'm not saying this is the _right_ process, or even a _good_ process: you could add code review, a pilot, integration testing, whatever.  We're just doing some analysis of _what process gives us_.  
 
-![A Simple Development Process](images/generated/development_process_1.png)
+![A Simple Development Process](images/generated/introduction/development_process_1.png)
 
 What's happening here?  Why these steps?  
 
@@ -36,7 +36,7 @@ We could skip all those steps above and just do this:
 
 1.  Developer gets wind of new idea from user, logs onto production and changes some code directly.
 
-![A Dangerous Development Process](images/generated/development_process_2.png)
+![A Dangerous Development Process](images/generated/introduction/development_process_2.png)
 
 We can all see this would be a disaster, but why?
 
@@ -55,7 +55,7 @@ Let's look at how our process should act to prevent these risks materializing by
 - Actually, this functionality is mainly served by **Feature Z**...
 - which is already there but hard to find.
 
-![Development Process - Hidden Risks](images/generated/development_process_3.png)
+![Development Process - Hidden Risks](images/generated/introduction/development_process_3.png)
 
 This is a slightly contrived example, as you'll see.  But let's follow our feature through the process and see how it meets reality slowly, and the hidden risks are discovered:
 
@@ -72,7 +72,7 @@ In the process of doing this, the BA is turning the simple feature request _idea
 - Trying to surface [Hidden Risks](Glossary#hidden-risk)
 - Trying to evaluate [Attendant Risk](Glossary#attendant-risk) and make it clear to everyone on the project.
 
-![BA Specification: exposing hidden risks as soon as possible](images/generated/development_process_ba.png)
+![BA Specification: exposing hidden risks as soon as possible](images/generated/introduction/development_process_ba.png)
 
 In surfacing these risks, there is another outcome:  while **Feature X** might be flawed as originally presented, the BA can "evolve" it into a specification, and tie it down sufficiently to reduce the risks.   The BA does all this by simply _thinking about it_, _talking to people_ and _writing stuff down_.
 
@@ -85,7 +85,7 @@ The next stage for our feature, **Feature X** is that it gets coded and some tes
 As the developer begins coding the feature in the software, she will start with an [Internal Model](Glossary#Internal-Model) of the software, and how the code fits into it.  But, in the process of implementing it, she is likely to learn about the codebase, and 
 her [Internal Model](Glossary#Internal-Model) will develop.  
 
-![Coding Process:  exposing more hidden risks as you code](images/generated/development_process_code.png)
+![Coding Process:  exposing more hidden risks as you code](images/generated/introduction/development_process_code.png)
 
 A couple of things about this diagram:
 
@@ -101,13 +101,13 @@ So, this stage is about the developer's committed code meeting a new reality: th
 
 At this stage, we might discover the [Hidden Risk](Glossary#Hidden-Risk) that we'd break **Feature Y**
 
-![Integration testing exposes hidden risks before you get to production](images/generated/development_process_integration.png)
+![Integration testing exposes hidden risks before you get to production](images/generated/introduction/development_process_integration.png)
 
 ### User Acceptance Test
 
 Is where our feature meets another reality: _actual users_.   I think you can see how the process works by now.  We're just flushing out yet more [Hidden Risks](Glossary#hidden-risk):
 
-![UAT - putting tame users in front of your software is better than real ones, where the risk is higher ](images/generated/development_process_uat.png)
+![UAT - putting tame users in front of your software is better than real ones, where the risk is higher ](images/generated/introduction/development_process_uat.png)
 
  - [Taking Action](Glossary#taking-action) is the _only_ way to create change in the world.
  - It's also the only way we can _learn_ about the world, adding to our [Internal Model](Glossary#internal-model).  In this case, we discover the user's difficulty in finding the feature.
