@@ -72,8 +72,6 @@ As shown in this diagram, these are [Meeting Reality](Operational-Risk#meet-real
 
 Once exposed to the real world, no system is perfect.  This means we must design-in ways in which the systems we build can improve and change.  Since we don't have a perfect understanding of the world, most of the [Operational Risk](Operational-Risk) we face is [Hidden Risks](Glossary#hidden-risk).  
 
-![Taking action against Operational Risk by Meeting Reality](images/generated/risks/operational/meeting-reality.png)
-
 ### A Dilemma
 
 Our production systems are [Meeting Reality](Glossary#meet-reality) all the time, and in order to mitigate [Operational Risk](Operational-Risk) we need to take the most advantage of this as possible.  However, conversely, [Operational Risk](Operational-Risk) includes **Reputational Risk**, which gives us pause:  we don't want to destroy good will created for our organisation, this is very hard to rebuild.  
@@ -84,12 +82,12 @@ So there is a tension between "you only get one chance to make a first impressio
 
 A Risk-First reframing of this might be the balance between:
 
-- The perceived [Reputational Risk], [Feature Risk]() and [Operational Risk]() of going to production (pressure to improve)
-- The perceived [Schedule Risks]() (such as funding, time available, etc) of staying in development (pressure to ship)
+- The perceived Reputational Risk, [Feature Risk](Feature-Risk) and [Operational Risk](Operational-Risk) of going to production (pressure to improve).
+- The perceived [Scarcity Risks](Scarcity-Risk) (such as funding, time available, etc) of staying in development (pressure to ship).
 
 ![Balance of Risks from Delivering Software](images/generated/risks/operational/ship-it.png)
 
-The "should we ship?" decision is therefore a complex one.  In [Meeting Reality](Meeting-Reality), we discussed that it's better to do this "sooner, more frequently, in smaller chunks and with feedback".  We can meet [Operational Risk](Operational-Risk) on our own terms by doing so: 
+The "should we ship?" decision is therefore a complex one.  In [Meeting Reality](Meeting-Reality), we discussed that it's better to do this "sooner, more frequently, in smaller chunks and with feedback".  We can meet [Operational Risk](Operational-Risk) _on our own terms_ by doing so: 
 
 |Meet Reality...                   |Techniques                                             | 
 |----------------------------------|-------------------------------------------------------|
