@@ -30,17 +30,25 @@ public class ImagePreprocessor {
 	
 	public static void main(String[] args) throws Exception {
 		String file = args[0];
-		File f = new File(file);
 		
 		Kite9Log.setLogging(false);
 		
-		if (file.endsWith("md")) {
+		processFile(file);
+		
+	}
+
+	public static void processFile(String file) throws FileNotFoundException, Exception {
+		File f = new File(file);
+		if (f.getName().endsWith("md")) {
 			BufferedReader br = createBufferedReader(f);
 			process(br, f);
+		} else if (f.isDirectory()) {
+			processDirectory(file);
+		} else if (file.endsWith(".xml")) {
+			processGeneratedImage("("+file.replace("../website.wiki/src/", "/").replace(".xml",".png")+")");
 		} else {
 			processGeneratedImage(file);
 		}
-		
 	}
 
 	public static BufferedReader createBufferedReader(File f) throws FileNotFoundException {
@@ -55,6 +63,12 @@ public class ImagePreprocessor {
 				System.out.println(line);
 			}
 			line = br.readLine();
+		}
+	}
+	
+	private static void processDirectory(String d) throws Exception {
+		for (File f2 : new File(d).listFiles()) {
+			processFile(d+"/"+f2.getName());
 		}
 	}
 
