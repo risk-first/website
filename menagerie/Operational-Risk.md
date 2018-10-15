@@ -103,6 +103,7 @@ The "should we ship?" decision is therefore a complex one.  In [Meeting Reality]
 ### From Within
 
 As we saw in [Map and Territory Risk](Map-and-Territory-Risk), it's very easy to fool yourself, especially around [Performance Indicators](https://en.wikipedia.org/wiki/Performance_indicator) and metrics.  Good [Operations Management](#operations-management) is about going beyond this and looking for trouble.  Large organisations have [Audit]() functions precisely to guard against their own internal failing [processes](Process-Risk) and [agency risk](Agency-Risk).  Audits could be around software tools, processes, practices, quality and so on.
+Retrospectives?
 
 TQM, quality.  Continuous improvement.
 
@@ -132,7 +133,13 @@ Recording metrics and
 (homeostasis)
 
 
-### Forecasting and Planning
+### Performance Risk
+
+Adding this in since we refer to it
+
+
+
+## Forecasting and Planning
 
 Dependencies are not just things we _use_:  For a system to run well, it needs to carefully manage unreliable dependencies, and ensure their safety and availability.  In the example of the humans, say, it's the difference between [Hunter-Gathering]() (picking up food where we find it) and [Farming]().
 
@@ -144,32 +151,13 @@ Dependencies are not just things we _use_:  For a system to run well, it needs t
 
 You might think that for an IT operation, tasks like **Planning** and **Design** and  belong within the Development function within an organisation.  But there is (and always has been) significant overlap because it's important that we design software that allows it to be managed effectively.  In recent years, the "DevOps" movement has brought this relationship into sharper focus.
 
-![DevOps Activities:  Development and Operations activities overlap one-another](images/devops.png)
+![DevOps Activities:  Development and Operations activities overlap one-another (Credit: Kharnagy)](images/devops.png)
 
+Since our operation exists in a world of [Red Queen Risk](Scarcity-Risk#red-queen-risk) and [Feature Drift](Feature-Risk#feature-drift), we would expect that the output of our [Forecasting and Planning](#forecasting-and-planning) activities would result in changes to our operation.  
 
-Corresponding to Slack's **Design** box,
+![Design and Change Activities](images/generated/risks/operational/design-change.png)
 
-
-(review)
-(recovery)
-(processes and procedures)
-(planning change)
-
-
-      
-
-
-These are properties not only of software systems, but biological systems, and businesses too.  Let's now take each in turn and inspect it further.
-
-
-Therefore, one of the best defences against [Operational Risk]() is dealing with the issues quickly once they happen.  This requires:
-
-
-tbd, talk with John about this
-
-### Performance Risk
-
-Adding this in since we refer to it
+In a way, we are now back to where we started from, identifying [Dependency Risk](Dependency-Risk), [Feature Risk](Feature-Risk) and [Complexity Risk](Complexity-Risk) that hinders our operation.
 
 
  

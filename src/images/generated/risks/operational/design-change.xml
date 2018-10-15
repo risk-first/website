@@ -16,18 +16,15 @@
   </context>
 
   <group style="kite9-layout: down; kite9-horizontal-align: left;">
-    <action>Environmental Scanning</action>
-    <action>Monitoring</action>
-    <action>Audit</action>
-    <action>Penetration Testing</action>
-    <action>Detecting Failure</action>
+    <action>Design</action>
   </group>
   
      <group style="kite9-layout: down">
 
       <context id="d">
-        <risk class="hidden">Hidden 
-        Risks </risk>
+        <risk class="process" />
+        <risk class="dependency" />
+        <risk class="complexity" />
 
         <label xsi:type="text-line" id="4">
           <text>Attendant Risks</text>
@@ -35,9 +32,8 @@
         </label>
       </context>
       <group style="kite9-layout: right">
-        <artifact>KPIs</artifact>
-        <artifact>Audit Reports</artifact>
-        <artifact>Metrics</artifact>
+        <artifact>Processes</artifact>
+        <artifact>Plans</artifact>
       </group>
     </group>
   
