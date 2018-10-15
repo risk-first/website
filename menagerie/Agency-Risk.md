@@ -116,6 +116,38 @@ There is significant [Agency Risk](Agency-Risk) in running software _at all_.  S
  - A team gets obsessed with a particular technology, or their own internal process improvement, at the expense of delivering business value.
  - A marginalised team forces their services on other teams in the name of "consistency".   (This can happen a lot with "Architecture", "Branding" and "Testing" teams, sometimes for the better, sometimes for the worse.)
 
+## Security
+
+
+### Security
+
+Intersecting both the internal and external environments are security concerns.   
+
+Interestingly, security is handled in very similar ways at all sorts of levels:
+
+- **Walls**: defences _around_ the complex system, to protect it's parts from the external environment.  
+- **Doors**: ways to get _in_ and _out_ of the complex system, possibly with _locks_.
+- **Guards**: to make sure only the right things go in and out.  (i.e. to try and keep out _Bad Actors_).
+- **Police**: to defend from _within_ the system, against [Agency Risk]() and _invaders_.
+- **Subterfuge**: Hiding, camouflage, disguises, pretending to be something else. tbd   
+
+These work various levels in our own bodies:  our _cells_ have _cell walls_ around them, and _cell membranes_ that act as the guards to allow things in and out.  Our _bodies_ have _skin_ to keep the world out, and we have _mouths_, _eyes_, _pores_ and so on to allow things in and out.  We have an _immune system_ to act as the police.
+
+Our societies work in similar ways: in medieval times, a city would have walls, guards and doors to keep out intruders.  Nowadays, we have customs control, borders and passports.
+
+We're waking up to the realisation that our software systems need to work the same way:  we have [Firewalls]() to protect our organisations, we lock down _ports_ on servers to ensure there are the minimum number of doors to guard and we _police_ the servers ourselves with monitoring tools and anti-virus software.  
+
+    - Security Risk
+      - Hacking
+      - Denial Of Service
+      - Security, Trust and Complexity 
+      - oWASp
+      
+tbd, How much do compilers do for you?   Now, they prevent many kinds of security error.  Libraries too.  
+
+      
+
+
 ## It's About Goals 
 
 ![Agency Risk](images/generated/risks/agency/agency-risk.png)
@@ -125,4 +157,6 @@ We've looked here at some illustrative examples of [Agency Risk](Agency-Risk).  
 So, having looked at agents _individually_, it's time to look more closely at [Goals](Glossary#goal-in-mind), and the [Attendant Risks](Glossary#attendant-risk) when aligning them amongst multiple agents.   
 
 On to [Coordination Risk](Coordination-Risk)...
+
+
  
