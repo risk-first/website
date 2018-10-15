@@ -104,25 +104,17 @@ The "should we ship?" decision is therefore a complex one.  In [Meeting Reality]
 
 ![Monitoring And Detection](images/generated/risks/operational/monitoring-detection.png)
 
-As we saw in [Map and Territory Risk](Map-and-Territory-Risk), it's very easy to fool yourself.  But good [Operations Management]() is also about looking for trouble.  Large organisations have [Audit]() functions precisely to guard against their own internal failing processes and agency risk.  
+### From Within
 
-### Environmental Scanning
+As we saw in [Map and Territory Risk](Map-and-Territory-Risk), it's very easy to fool yourself.  But good [Operations Management]() is also about looking for trouble.  Large organisations have [Audit]() functions precisely to guard against their own internal failing [processes](Process-Risk) and [agency risk](Agency-Risk).  
 
+### From Without
 
-### Knowing Yourself
+_Environmental Scanning_ is all about trying to determine which changes in the environment are going to impact your operation.   Here, we are trying to determine the level of [Dependency Risk](Dependency-Risk) we face for external dependencies, such as _suppliers_, _customers_ and _markets_.  Tools like [PEST](https://en.wikipedia.org/wiki/PEST_analysis) are relevant here.   
 
-
-
-They practice 
-
+## Design
 
 
-
-(practicing: e.g. testing failover etc.)
-(weakness: minimization (see Security risk), penetration testing)
-(effect:  what happens, how much chaos ensues)
-(changing outside world)
-(audit)
 
 Security of supply
 
