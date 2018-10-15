@@ -59,10 +59,9 @@
   
   <template id="action">
     <back style='kite9-usage: decal; kite9-type: svg; '>
-      <svg:polygon points='0 0, #{$width - 35} 0, #{$width} #{$height div 2}, #{$width - 35} #{$height}, 0 #{$height}' style='fill: url(#risk-background); stroke: black; stroke-width: 1pt;' />
+      <svg:polygon points='0 0, #{$width - 15} 0, #{$width} #{$height div 2}, #{$width - 15} #{$height}, 0 #{$height}' style='fill: url(#risk-background); stroke: black; stroke-width: 1pt;' />
     </back>
     <front style="kite9-usage: regular; kite9-type: container; kite9-layout: down; 	kite9-padding: 10pt; kite9-padding-right: 40pt; ">
-      <code>Action</code>
       <title>
       	<contents />
       </title>
@@ -478,6 +477,18 @@
       </image>
       <title>Map and
         Territory Risk
+      </title>
+    </risk-box>
+  </template>
+  
+  <template id="reputation">
+    <risk-box>
+      <code>Op-R</code>
+      <image>
+        <image-content style="kite9-template: url(noun_Dislike_945398_000000.svg); " />
+      </image>
+      <title>Reputational
+       Risk
       </title>
     </risk-box>
   </template>
