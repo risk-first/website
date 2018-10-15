@@ -1,4 +1,4 @@
-![Under Construction](images/state/uc.png)
+![For Review](images/state/for-review.png)
 
 In this section on [Operational Risks], we're going to start considering the realities of running software systems in the real world.  
 
