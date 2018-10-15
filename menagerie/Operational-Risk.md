@@ -8,31 +8,31 @@ Here, we're going to set the scene by looking at what constitutes an [Operationa
 
 It's tempting to take a very narrow view of the dependencies of a system, but [Operational Risks]() are often caused by dependencies we don't consider - the _context_ within which the system is operating.  Here are some examples:  
 
- - Staff Dependencies ([Staff Risk]()):  
+ - Staff Dependencies ([Staff Risk](Dependency-Risk#staff-risk)):  
    - Freak weather conditions affecting ability of staff to get to work, interrupting the development and support teams. 
    - Reputational damage caused when staff are rude to the customers.
  
- - Infrastructure Dependencies ([Availability Risk]()):  
+ - Infrastructure Dependencies ([Reliability Risk](Dependency-Risk#reliability-risk)):  
    - A data-centre going off-line, causing your customers to lose access.
    - A power cut causing backups to fail.
    - Not having enough desks for everyone to sit at.
    
- - Process Dependencies ([Process Risk]()):
+ - Process Dependencies ([Process Risk](Process-Risk)):
    - Regulatory change, which means you have to adapt your business model.
    - Insufficient controls which means you don't notice when some transactions are failing, leaving you out-of-pocket.
    - Data loss because of bugs introduced during an untested release.
  
- - Software Dependencies ([Software Dependency Risk]()):
+ - Software Dependencies ([Software Dependency Risk](Software-Dependency-Risk)):
    - Hackers breaking into the system and bringing your service down.
  
- - Agency Dependencies ([Agency Risk]()):
+ - Agency Dependencies ([Agency Risk](Agency-Risk)):
    - Suppliers deciding to stop supplying you with something you need.
    - Workers going on strike.
    - Employees trying to steal from the company (bad actors).
 
 .. basically, a long laundry-list of everything that can go wrong due to operating in "The Real World".   
 
-So, [Operational Risk Management]() is the purview of dealing with all the types of issues listed above:
+So, [Operational Risk Management](https://en.wikipedia.org/wiki/Operational_risk_management) is the purview of dealing with all the types of issues listed above:
 
 > "Operational Risk Management is the oversight of Operational Risk, including the risk of loss resulting from inadequate or failed internal processes and systems; human factors; or external events." - [Operational Risk Management, _Wikipedia_](https://en.wikipedia.org/wiki/Operational_risk_management)
 
@@ -48,11 +48,12 @@ In this diagram, a **Transform Process** (the **Operation** itself) is embedded 
  - It's **Customers**, which supply it with money in return for goods and services, and 
  - An **Operational Strategy** to follow.
  
-We have looked at processes like the **Transform Process** in the section on [Process Risk](Process-Risk).  The healthy function of this process is the domain of [Operations Management](), and in the diagram this involves the following tasks:
+We have looked at processes like the **Transform Process** in the section on [Process Risk](Process-Risk).  The healthy functioning of this process is the domain of [Operations Management](), and in the diagram this involves the following tasks:
 
- - **Design**:  Ensuring that the design of the product and the transform process itself fulfils an **Operational Strategy**.
- - **Planning** and **Control**:  Ensuring that the Operation is working according to its design.  This covers aspects such as capacity planning, project planning and quality control.  
+ - **Control**:  Ensuring that the Operation is working according to its design.  This includes quality control. 
  - **Improvement**:  Improving the operation in response to changes in the **Environment** and the **Operational Strategy**, detecting failure and recovering from it.
+ - **Planning**: This covers aspects such as capacity planning, forecasting and project planning.  
+ - **Design**:  Ensuring that the design of the product and the transform process itself fulfils an **Operational Strategy**.
 
 ## Mitigating Operational Risk
 
@@ -78,7 +79,7 @@ So there is a tension between "you only get one chance to make a first impressio
 
 > "Pressure to ship vs pressure to improve"
 
-A Risk-First reframing of this might be the balance between:
+A Risk-First re-framing of this might be the balance between:
 
 - The perceived Reputational Risk, [Feature Risk](Feature-Risk) and [Operational Risk](Operational-Risk) of going to production (pressure to improve).
 - The perceived [Scarcity Risks](Scarcity-Risk) (such as funding, time available, etc) of staying in development (pressure to ship).
@@ -100,22 +101,7 @@ The "should we ship?" decision is therefore a complex one.  In [Meeting Reality]
 
 ![Monitoring And Detection](images/generated/risks/operational/monitoring-detection.png)
 
-### From Within
-
-As we saw in [Map and Territory Risk](Map-and-Territory-Risk), it's very easy to fool yourself, especially around [Performance Indicators](https://en.wikipedia.org/wiki/Performance_indicator) and metrics.  Good [Operations Management](#operations-management) is about going beyond this and looking for trouble.  Large organisations have [Audit]() functions precisely to guard against their own internal failing [processes](Process-Risk) and [agency risk](Agency-Risk).  Audits could be around software tools, processes, practices, quality and so on.
-Retrospectives?
-
-TQM, quality.  Continuous improvement.
-
-### From Without
-
-- _Environmental Scanning_ is all about trying to determine which changes in the environment are going to impact your operation.   Here, we are trying to determine the level of [Dependency Risk](Dependency-Risk) we face for external dependencies, such as _suppliers_, _customers_ and _markets_.  Tools like [PEST](https://en.wikipedia.org/wiki/PEST_analysis) are relevant here, as is 
-- [Penetration Testing](https://en.wikipedia.org/wiki/Penetration_test) is looking for security weaknesses within the operation.  See [OWASP](https://en.wikipedia.org/wiki/OWASP) for examples.
-- [Vulnerability Management](https://en.wikipedia.org/wiki/Vulnerability_management) is keeping up-to-date with vulnerabilities in [Software Depenendencies](Software-Dependency-Risk).
-
-### Reacting
-
-Humans and machines have different areas of expertise, as shown in the below table.   Since [Operational Risks]() are often novel, it's often not optimal to try and automate everything. And a good operation will consist of a mix of human and machine characteristics.  Often, the "human" part of the Operation gets termed "support", and is responsible for dealing with all the outliers tbd/
+Since Humans and machines have different areas of expertise, and because [Operational Risks](Operational-Risk) are often novel, it's often not optimal to try and automate everything.  A good operation will consist of a mix of human and machine actors, each playing to their strengths (see the table below). 
 
 |Humans Are...                |Machines Are...              |
 |-----------------------------|-----------------------------|
@@ -124,28 +110,27 @@ Humans and machines have different areas of expertise, as shown in the below tab
 |Expensive at scale           |Cheap at scale               |
 |Reacting and Anticipating    |Recording                    |
 
-Recording metrics and 
-
-[Homeostasis](https://en.wikipedia.org/wiki/Homeostasis) is the property of living things to try and maintain an equilibrium (for example, body temperature or blood glucose levels).   
-
-... do things that don't scale
-
-(homeostasis)
-
+The aim is to build a human-machine operational system that is [Homeostatic](https://en.wikipedia.org/wiki/Homeostasis).  This is the property of living things to try and maintain an equilibrium (for example, body temperature or blood glucose levels), but also applies to organisations at any scale.  The key is to build systems with feedback loops, even though this leads to more complex systems overall.  
 
 ### Performance Risk
 
-Adding this in since we refer to it
+As we saw in [Map and Territory Risk](Map-and-Territory-Risk), it's very easy to fool yourself, especially around [Key Performance Indicators (KPIs)](https://en.wikipedia.org/wiki/Performance_indicator) and metrics.  Good [Operations Management](#operations-management) is about going beyond this and looking for trouble.  Large organisations have [Audit](https://en.wikipedia.org/wiki/Audit) functions precisely to guard against their own internal failing [Processes](Process-Risk) and [Agency Risk](Agency-Risk).  Audits could be around software tools, processes, practices, quality and so on.  Practices such as [Continuous Improvement](https://en.wikipedia.org/wiki/Continual_improvement_process) and [Total Quality Management](https://en.wikipedia.org/wiki/Total_quality_management) also figure here.
 
+### The Operational Context
 
+- _Environmental Scanning_ is all about trying to determine which changes in the environment are going to impact your operation.   Here, we are trying to determine the level of [Dependency Risk](Dependency-Risk) we face for external dependencies, such as _suppliers_, _customers_ and _markets_.  Tools like [PEST](https://en.wikipedia.org/wiki/PEST_analysis) are relevant here, as is 
+- [Penetration Testing](https://en.wikipedia.org/wiki/Penetration_test) is looking for security weaknesses within the operation.  See [OWASP](https://en.wikipedia.org/wiki/OWASP) for examples.
+- [Vulnerability Management](https://en.wikipedia.org/wiki/Vulnerability_management) is keeping up-to-date with vulnerabilities in [Software Depenendencies](Software-Dependency-Risk).
 
 ## Forecasting and Planning
 
-Dependencies are not just things we _use_:  For a system to run well, it needs to carefully manage unreliable dependencies, and ensure their safety and availability.  In the example of the humans, say, it's the difference between [Hunter-Gathering]() (picking up food where we find it) and [Farming]().
+Dependencies are not just things we _use_:  For a system to run well, it needs to carefully manage unreliable dependencies, and ensure their safety and availability.  In the example of the humans, say, it's the difference between [Hunter-Gathering](https://en.wikipedia.org/wiki/Hunter-gatherer) (picking up food where we find it) and [Agriculture](https://en.wikipedia.org/wiki/Agriculture).
 
-[Forecasting and Planning](#forecasting-and-planning) then is a strategy we can bring to bear on _Dependency Management_. 
+[Forecasting and Planning](#forecasting-and-planning) then is a strategy we can bring to bear on dependency management, and this usually falls to the more human end of the operation.
 
 ![Forecasting and Planning Actions](images/generated/risks/operational/forecasting-planning.png).
+
+Retrospectives?
 
 ## Design and Change
 
@@ -157,7 +142,9 @@ Since our operation exists in a world of [Red Queen Risk](Scarcity-Risk#red-quee
 
 ![Design and Change Activities](images/generated/risks/operational/design-change.png)
 
-In a way, we are now back to where we started from, identifying [Dependency Risk](Dependency-Risk), [Feature Risk](Feature-Risk) and [Complexity Risk](Complexity-Risk) that hinders our operation.
+In a way, we are now back to where we started from, identifying [Dependency Risk](Dependency-Risk), [Feature Risk](Feature-Risk) and [Complexity Risk](Complexity-Risk) that hinders our operation, and mitigating it through tasks like _software development_.  Our safari of risk is finally complete, it's time to look back and what we've seen in [Staging and Classifying](Staging-and-Classifying).  
+
+
 
 
  
