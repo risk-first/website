@@ -130,8 +130,6 @@ Dependencies are not just things we _use_:  For a system to run well, it needs t
 
 ![Forecasting and Planning Actions](images/generated/risks/operational/forecasting-planning.png).
 
-Retrospectives?
-
 ## Design and Change
 
 You might think that for an IT operation, tasks like [Planning](#forecasting-and-planning) and [Design](#design-and-change) belong within the Development function within an organisation.  But there is (and always has been) significant overlap because it's important that we design software that allows it to be managed effectively.  In recent years, the "DevOps" movement has brought this relationship into sharper focus.

@@ -2,7 +2,7 @@
 
 Let's go back to the model again, introduced in [Meeting Reality](Meeting-Reality):
 
-![Meeting Reality: reality is changed and so is your internal model.](images/generated/model_vs_reality_2.png)
+![Meeting Reality: reality is changed and so is your internal model.](images/generated/introduction/model_vs_reality_2.png)
 
 As you can see, it's an idealized **Feedback Loop**.  
 
@@ -52,7 +52,7 @@ Yes, CD will give you faster feedback loops, but even getting things into produc
 
 The right answer is to use the fastest feedback loop possible, _which actually does give you feed back_.
 
-![Different actions have different feedback loops](images/generated/cadence.png)
+![Different actions have different feedback loops](images/generated/introduction/cadence.png)
 
 ## Re-cap
 

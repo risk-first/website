@@ -15,7 +15,7 @@ It should be no surprise to see that there is a _recursive_ nature about this:
 
 So, let's see how this kind of recursion looks on our model. Note that here, I am showing _just one possible action_, in reality, you'll have choices.
 
-![Taking actions changes reality, but changes your model of the risks too](images/generated/model_vs_reality_2.png).
+![Taking actions changes reality, but changes your model of the risks too](images/generated/introduction/model_vs_reality_2.png).
 
 Hopefully, if you've read along so far, this model shouldn't be too hard to understand.  But, how is it helpful?  
 
@@ -31,7 +31,7 @@ Ideally, when you take an action, you are trading off a big risk for a smaller o
 
 You can think of taking actions as moving your project on a "[Risk Landscape](Risk-Landscape)":  ideally, when you take an action, you move to some place with worse risk to somewhere more favourable.
 
-![Navigating The Risk Landscape](images/generated/risk_landscape_1.png)
+![Navigating The Risk Landscape](images/generated/introduction/risk_landscape_1.png)
 
 Sometimes, you can end up somewhere _worse_:  the actions you take to solve a higher-level [Attendant Risk](Glossary#attendant-risk) will leave you with a worse [Attendant Risks](Glossary#attendant-risk).  Almost certainly, this will have been a [Hidden Risk](Glossary#hidden-risk) when you embarked on the action, otherwise you'd not have chosen it.  
 
@@ -39,7 +39,7 @@ Sometimes, you can end up somewhere _worse_:  the actions you take to solve a hi
 
 For example, _automating processes_ is very tempting: it _should_ save time, and reduce the amount of boring, repetitive work on a project.  But sometimes, it turns into an industry in itself, and consumes more effort than it's worth. 
 
-![Hidden Risks of Automation](images/generated/risk_landscape_2_automating.png)
+![Hidden Risks of Automation](images/generated/introduction/risk_landscape_2_automating.png)
 
 ### Another Quick Example: MongoDB
 
@@ -71,7 +71,7 @@ In all, to de-risk, you should try and meet reality:
 
 In [Development Process](Development-Process), we looked at the use of UAT in order to [Meet Reality](Glossary#Meet-Reality) earlier.  By performing the UAT, we meet reality sooner.  The _cost_ of this is that we also expend precious time on that process which adds risk to the schedule.
 
-![Testing flushes out hidden risk, but increases Schedule Risk](images/generated/meeting_reality_testing.png)
+![Testing flushes out hidden risk, but increases Schedule Risk](images/generated/introduction/meeting_reality_testing.png)
 
 ### YAGNI 
 
