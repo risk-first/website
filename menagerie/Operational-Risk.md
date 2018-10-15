@@ -72,7 +72,9 @@ As shown in this diagram, these are [Meeting Reality](Operational-Risk#meet-real
 
 Once exposed to the real world, no system is perfect.  This means we must design-in ways in which the systems we build can improve and change.  Since we don't have a perfect understanding of the world, most of the [Operational Risk](Operational-Risk) we face is [Hidden Risks](Glossary#hidden-risk).  
 
-### A Dilemma
+![Taking action against Operational Risk by Meeting Reality](images/generated/risks/operational/meeting-reality.png)
+
+### Reputational Risk
 
 Our production systems are [Meeting Reality](Glossary#meet-reality) all the time, and in order to mitigate [Operational Risk](Operational-Risk) we need to take the most advantage of this as possible.  However, conversely, [Operational Risk](Operational-Risk) includes **Reputational Risk**, which gives us pause:  we don't want to destroy good will created for our organisation, this is very hard to rebuild.  
 
@@ -97,6 +99,16 @@ The "should we ship?" decision is therefore a complex one.  In [Meeting Reality]
 |**With Feedback**                 |User Communities, Support Groups, Monitoring, Logging, Analytics|
 
 ## Monitoring and Detection
+
+[Monitoring & Detection](#monitoring-and-detection) is the second strategy for mitigating [Operational Risk](Operational-Risk), and in terms of practices, broadly corresponds to Slack's *Improvement* category, above:
+
+### Environmental Scanning
+
+
+### Knowing Yourself
+
+As we saw in [Map and Territory Risk](Map-and-Territory-Risk), it's very easy to fool yourself.  This is 
+
 
 (practicing: e.g. testing failover etc.)
 (weakness: minimization (see Security risk), penetration testing)
@@ -213,10 +225,6 @@ reputation damage
 Correlation
 	- Upgrades ( tell story of Research upgrade that went wrong because we were upgrading at the same time as an outage)
       - Single points of failure.
-
-## reputational risk
-
-Adding this in since we refer to it
 
 
 ## Performance Risk
