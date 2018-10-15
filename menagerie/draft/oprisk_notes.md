@@ -30,3 +30,47 @@ It is interesting that we _don't_ do that:  although we know the driving process
 
 The point of this is that we _accept_ [Operational Risk](Operational-Risk) as we go.  However, if opportunities rise to mitigate it, which don't leave us with a net risk increase elsewhere, we'll make those improvements.      
       
+      
+
+## Meeting Reality
+
+
+tbd.  diagram version 3.
+
+Mitigating [Security Risk]() is a trade-off.  You can spent _a lot_ of time and effort on this, only to never face the
+
+
+secrets:  how to mitigate this
+
+## Effect / Impact
+
+Sometimes, it's possible to measure the impact of Operational Risks.  For example, if a software system fails, and leaves customers unable to access it, this can have a measurable financial impact in lost revenues or damages.   Car recall example tbd. - fight club  
+
+Impact is usually proportional to some of the below variables:
+
+ - Number of customers affected.
+ - Number of transactions affected.
+ - Size of the transactions
+ - Length of time systems were affected.
+
+stuff that can go wrong in production
+
+changing stuff in production is harder than changing it in test, as you have to _migrate_.
+
+all the costs of breaking stuff, and damaging the running of the business.
+
+reputation damage
+(you only get one chance to make a first impression)
+
+ - You don't know all the ways the software will get used in production.
+ - Different browsers, versions of code, accessiblilty.
+
+
+- CAn you support all the users?  IS there enough kit?  WIll you know?
+
+Correlation
+	- Upgrades ( tell story of Research upgrade that went wrong because we were upgrading at the same time as an outage)
+      - Single points of failure.
+
+      
+      

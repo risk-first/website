@@ -32,7 +32,7 @@ It's tempting to take a very narrow view of the dependencies of a system, but [O
 
 .. basically, a long laundry-list of everything that can go wrong due to operating in "The Real World".   
 
-Dependencies are not just things we _use_, then:  For a system to run well, it needs to carefully manage unreliable dependencies, and ensure their safety and availability.  In the example of the human food system, say, it's the difference between [Hunter-Gathering]() (picking up food where we find it) and [Farming]().   So, [Operational Risk Management]() is the purview of dealing with all the types of issues listed above:
+So, [Operational Risk Management]() is the purview of dealing with all the types of issues listed above:
 
 > "Operational Risk Management is the oversight of Operational Risk, including the risk of loss resulting from inadequate or failed internal processes and systems; human factors; or external events." - [Operational Risk Management, _Wikipedia_](https://en.wikipedia.org/wiki/Operational_risk_management)
 
@@ -53,10 +53,6 @@ We have looked at processes like the **Transform Process** in the section on [Pr
  - **Design**:  Ensuring that the design of the product and the transform process itself fulfils an **Operational Strategy**.
  - **Planning** and **Control**:  Ensuring that the Operation is working according to its design.  This covers aspects such as capacity planning, project planning and quality control.  
  - **Improvement**:  Improving the operation in response to changes in the **Environment** and the **Operational Strategy**, detecting failure and recovering from it.
-
-You might think that for an IT operation, tasks like **Design** and **Planning** belong within the Development function within an organisation.  But there is (and always has been) significant overlap because it's important that we design software that allows it to be managed effectively.  In recent years, the "DevOps" movement has brought this relationship into sharper focus.
-
-![DevOps Activities:  Development and Operations activities overlap one-another](images/devops.png)
 
 ## Mitigating Operational Risk
 
@@ -93,7 +89,7 @@ The "should we ship?" decision is therefore a complex one.  In [Meeting Reality]
 
 |Meet Reality...                   |Techniques                                             | 
 |----------------------------------|-------------------------------------------------------|
-|**Sooner**                        |Quality Control Processes, Limited Early-Access Programs, Beta Programs, Soft Launches    |
+|**Sooner**                        |Quality Control Processes, Limited Early-Access Programs, Beta Programs, Soft Launches, Business Continuity Testing    |
 |**More Frequently**               |Continuous Delivery, Sprints                              |
 |**In Smaller Chunks**             |Modular Releases, Microservices, Feature Toggles, Trial Populations   |
 |**With Feedback**                 |User Communities, Support Groups, Monitoring, Logging, Analytics|
@@ -106,56 +102,61 @@ The "should we ship?" decision is therefore a complex one.  In [Meeting Reality]
 
 ### From Within
 
-As we saw in [Map and Territory Risk](Map-and-Territory-Risk), it's very easy to fool yourself.  But good [Operations Management]() is also about looking for trouble.  Large organisations have [Audit]() functions precisely to guard against their own internal failing [processes](Process-Risk) and [agency risk](Agency-Risk).  
+As we saw in [Map and Territory Risk](Map-and-Territory-Risk), it's very easy to fool yourself, especially around [Performance Indicators](https://en.wikipedia.org/wiki/Performance_indicator) and metrics.  Good [Operations Management](#operations-management) is about going beyond this and looking for trouble.  Large organisations have [Audit]() functions precisely to guard against their own internal failing [processes](Process-Risk) and [agency risk](Agency-Risk).  Audits could be around software tools, processes, practices, quality and so on.
+
+TQM, quality.  Continuous improvement.
 
 ### From Without
 
-_Environmental Scanning_ is all about trying to determine which changes in the environment are going to impact your operation.   Here, we are trying to determine the level of [Dependency Risk](Dependency-Risk) we face for external dependencies, such as _suppliers_, _customers_ and _markets_.  Tools like [PEST](https://en.wikipedia.org/wiki/PEST_analysis) are relevant here.   
+- _Environmental Scanning_ is all about trying to determine which changes in the environment are going to impact your operation.   Here, we are trying to determine the level of [Dependency Risk](Dependency-Risk) we face for external dependencies, such as _suppliers_, _customers_ and _markets_.  Tools like [PEST](https://en.wikipedia.org/wiki/PEST_analysis) are relevant here, as is 
+- [Penetration Testing](https://en.wikipedia.org/wiki/Penetration_test) is looking for security weaknesses within the operation.  See [OWASP](https://en.wikipedia.org/wiki/OWASP) for examples.
+- [Vulnerability Management](https://en.wikipedia.org/wiki/Vulnerability_management) is keeping up-to-date with vulnerabilities in [Software Depenendencies](Software-Dependency-Risk).
 
-## Design
+### Reacting
 
+Humans and machines have different areas of expertise, as shown in the below table.   Since [Operational Risks]() are often novel, it's often not optimal to try and automate everything. And a good operation will consist of a mix of human and machine characteristics.  Often, the "human" part of the Operation gets termed "support", and is responsible for dealing with all the outliers tbd/
 
+|Humans Are...                |Machines Are...              |
+|-----------------------------|-----------------------------|
+|Good at novel situations     |Good at repetitive situations|
+|Good at adaptation           |Good at consistency          |
+|Expensive at scale           |Cheap at scale               |
+|Reacting and Anticipating    |Recording                    |
 
-Security of supply
+Recording metrics and 
 
-Complex systems (ones which contain multiple, interacting parts, like the ones in the above diagrams) have to contend with their external environments, and try to minimize the ways in which they get interrupted from outside either by _Bad Actors_ or external events.  In the tbd
+[Homeostasis](https://en.wikipedia.org/wiki/Homeostasis) is the property of living things to try and maintain an equilibrium (for example, body temperature or blood glucose levels).   
 
-Interestingly, security is handled in very similar ways at all sorts of levels:
+... do things that don't scale
 
-- **Walls**: defences _around_ the complex system, to protect it's parts from the external environment.  
-- **Doors**: ways to get _in_ and _out_ of the complex system, possibly with _locks_.
-- **Guards**: to make sure only the right things go in and out.  (i.e. to try and keep out _Bad Actors_).
-- **Police**: to defend from _within_ the system, against [Agency Risk]() and _invaders_.
-- **Subterfuge**: Hiding, camouflage, disguises, pretending to be something else. tbd   
-
-These work various levels in our own bodies:  our _cells_ have _cell walls_ around them, and _cell membranes_ that act as the guards to allow things in and out.  Our _bodies_ have _skin_ to keep the world out, and we have _mouths_, _eyes_, _pores_ and so on to allow things in and out.  We have an _immune system_ to act as the police.
-
-Our societies work in similar ways: in medieval times, a city would have walls, guards and doors to keep out intruders.  Nowadays, we have customs control, borders and passports.
-
-We're waking up to the realisation that our software systems need to work the same way:  we have [Firewalls]() to protect our organisations, we lock down _ports_ on servers to ensure there are the minimum number of doors to guard and we _police_ the servers ourselves with monitoring tools and anti-virus software.  
-
-    - Security Risk
-      - Hacking
-      - Denial Of Service
-      - Security, Trust and Complexity 
-      - oWASp
-      
-tbd, How much do compilers do for you?   Now, they prevent many kinds of security error.  Libraries too.  
-
-      
-      
+(homeostasis)
 
 
-### Reaction
+### Forecasting and Planning
+
+Dependencies are not just things we _use_:  For a system to run well, it needs to carefully manage unreliable dependencies, and ensure their safety and availability.  In the example of the humans, say, it's the difference between [Hunter-Gathering]() (picking up food where we find it) and [Farming]().
+
+[Forecasting and Planning](#forecasting-and-planning) then is a strategy we can bring to bear on _Dependency Management_. 
+
+![Forecasting and Planning Actions](images/generated/risks/operational/forecasting-planning.png).
+
+## Design & Change
+
+You might think that for an IT operation, tasks like **Planning** and **Design** and  belong within the Development function within an organisation.  But there is (and always has been) significant overlap because it's important that we design software that allows it to be managed effectively.  In recent years, the "DevOps" movement has brought this relationship into sharper focus.
+
+![DevOps Activities:  Development and Operations activities overlap one-another](images/devops.png)
+
+
+Corresponding to Slack's **Design** box,
+
 
 (review)
 (recovery)
 (processes and procedures)
 (planning change)
-(homeostasis)
 
 
-https://en.wikipedia.org/wiki/Life#Biology
+      
 
 
 These are properties not only of software systems, but biological systems, and businesses too.  Let's now take each in turn and inspect it further.
@@ -163,80 +164,12 @@ These are properties not only of software systems, but biological systems, and b
 
 Therefore, one of the best defences against [Operational Risk]() is dealing with the issues quickly once they happen.  This requires:
 
-Good [Feedback Loops]() in the form of [Monitoring](Monitoring) 
-and rapid response to issues.
 
 tbd, talk with John about this
 
-## Meeting Reality
-
-
-## External Events
-
-We're familiar with the concept of taking steps on the [Risk Landscape], wherein we [take action]() to move to a position where the [Attendant Risks](Glossary#attendant-risk) are more acceptable to us.  However, now we have to contend with the idea that external events _also_ change the risk landscape too.  If there is sudden bad weather, we might have a risk of a power-cut, and the losses that might entail to productivity or sales.   If there is a change of government, that might impact the contracts we've written, or the security of our servers or staff.
-
-Being _in production_ is accepting that the [Risk Landscape]() is a volatile, uncaring place.  But it's worse than that, since we also have to contend with [Bad Actors], who are deliberately out to exploit weaknesses in the systems we build.
-
-Ordinarily, when we transact with a [Dependency], it should be the case that after the transaction, there is value on both sides of the transaction.  This could be, _you do my accounting_, I pay you money.  On both sides, financial risks are reduced.  If the price is too high, or too low, we see one or other side getting the better deal, and _capturing an unfair share of the value_. 
-
-With a [Bad Actor], we're in a situation more like a zero-sum game:  value is _taken_ from one party and _transferred_ to the other.  These are exactly the dependency relationships that societies _don't_ condone: there is net _zero_ or _negative_ value in the transaction.
-
-[In this diagram, B does a deal with A, the value of the product B gets from A is always 4, but the price varies with the X axis.  When the price is zero, B captures all the value, but as the price increases, it becomes a worse and worse deal for B, and the net value heads towards zero or negative.](images/deal.png)
-
-
-- Regulatory Risk  Legal Risk  (Pestle?)
-
-
-   
-
-tbd.  diagram version 3.
-
-Mitigating [Security Risk]() is a trade-off.  You can spent _a lot_ of time and effort on this, only to never face the
-
-
-secrets:  how to mitigate this
-
-## Effect / Impact
-
-Sometimes, it's possible to measure the impact of Operational Risks.  For example, if a software system fails, and leaves customers unable to access it, this can have a measurable financial impact in lost revenues or damages.   Car recall example tbd. - fight club  
-
-Impact is usually proportional to some of the below variables:
-
- - Number of customers affected.
- - Number of transactions affected.
- - Size of the transactions
- - Length of time systems were affected.
-
-stuff that can go wrong in production
-
-changing stuff in production is harder than changing it in test, as you have to _migrate_.
-
-all the costs of breaking stuff, and damaging the running of the business.
-
-reputation damage
-(you only get one chance to make a first impression)
-
- - You don't know all the ways the software will get used in production.
- - Different browsers, versions of code, accessiblilty.
-
-
-- CAn you support all the users?  IS there enough kit?  WIll you know?
-
-Correlation
-	- Upgrades ( tell story of Research upgrade that went wrong because we were upgrading at the same time as an outage)
-      - Single points of failure.
-
-
-## Performance Risk
+### Performance Risk
 
 Adding this in since we refer to it
 
-
-### Planning
-
-(prediction: how to forecast failures)   / anticipation  -- operations strategy
-(forecasting)
-(adaptation: how the system changes in the future)
-(trend analysis)
 
  
