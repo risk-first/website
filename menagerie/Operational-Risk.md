@@ -51,67 +51,54 @@ In this diagram, a **Transform Process** (the **Operation** itself) is embedded 
 We have looked at processes like the **Transform Process** in the section on [Process Risk](Process-Risk).  The healthy function of this process is the domain of [Operations Management](), and in the diagram this involves the following tasks:
 
  - **Design**:  Ensuring that the design of the product and the transform process itself fulfils an **Operational Strategy**.
- - **Planning and Control**:  Ensuring that the Operation is working according to its design.  This covers aspects such as capacity planning, project planning and quality control.  
+ - **Planning** and **Control**:  Ensuring that the Operation is working according to its design.  This covers aspects such as capacity planning, project planning and quality control.  
  - **Improvement**:  Improving the operation in response to changes in the **Environment** and the **Operational Strategy**, detecting failure and recovering from it.
 
 You might think that for an IT operation, tasks like **Design** and **Planning** belong within the Development function within an organisation.  But there is (and always has been) significant overlap because it's important that we design software that allows it to be managed effectively.  In recent years, the "DevOps" movement has brought this relationship into sharper focus.
 
 ![DevOps Activities:  Development and Operations activities overlap one-another](images/devops.png)
 
-
-
-![Mitigating Operational Risk Increases Complexity]()
-
 ## Mitigating Operational Risk
 
-In the real world, [Dependencies]() can fail in any number of unusual ways.  For this reason, the toolbox of mitigations for [Operatational Risk]() is somewhat different to that for regular dependencies.  Here we're going to focus on four _basic strategies_:
+We've spent a lot of time looking at the varieties of [Dependency Risk](Dependency-Risk) on a software project.  But in the "real world" of [Operational Risk]() we have to consider that these dependencies will fail in any number of unusual ways, and we can't be ready for all of them.  
 
-![Diagram of Four Ways to Mitigate Operational Risk](images/kite9/operational_risk.png)
+For this reason, the toolbox of mitigations for [Operatational Risk](Operational-Risk) is somewhat different to that for regular dependencies.  Here we're going to focus on four _basic strategies_, and show how they align with the activities described above.  
 
+![Diagram of Four Strategies to Mitigate Operational Risk](images/generated/risks/operational/operational-risk.png)
 
+As shown in this diagram, these are [Meeting Reality](Operational-Risk#meet-reality), [Monitoring & Detection](Operatational-Risk#monitoring-and-detection), [Design & Change](Operational-Risk#design-and-change) and [Forecasting & Planning](#forecasting-and-planning).
 
+## Meeting Reality 
 
+Once exposed to the real world, no system is perfect.  This means we must design-in ways in which the systems we build can improve and change.  Since we don't have a perfect understanding of the world, most of the [Operational Risk](Operational-Risk) we face is [Hidden Risks](Glossary#hidden-risk).  
 
+![Taking action against Operational Risk by Meeting Reality](images/generated/risks/operational/meeting-reality.png)
 
+### A Dilemma
 
-### Control 
+Our production systems are [Meeting Reality](Glossary#meet-reality) all the time, and in order to mitigate [Operational Risk](Operational-Risk) we need to take the most advantage of this as possible.  However, conversely, [Operational Risk](Operational-Risk) includes **Reputational Risk**, which gives us pause:  we don't want to destroy good will created for our organisation, this is very hard to rebuild.  
 
-(our system: meeting reality, deployment)
-(event: detection)
-(sensing / detection)
-(reaction:  monitoring, etc)
-(pestle, environmental scanning.)
+So there is a tension between "you only get one chance to make a first impression" and "gilding the lilly" (perfectionism).  In the past I've seen this stated as:
 
-So in this second model, we are now considering that the world is a dangerous, untrustworthy place where _bad things happen_, either deliberately or accidentally.  And, since we don't have a perfect understanding of the world, most of the [Production Risk]() we face is [Hidden Risks](Glossary#hidden-risk).  
-
-Putting software into production is [Meeting Reality](Meeting-Reality) in the fullest way possible.  The more contact we can give our system with the outside world, the more [Hidden Risks](Glossary#hidden-risk) will materialize.  If we observe these and take action to mitigate them, then our system can get stronger.   cybernetics, antifragile tbd.
-
-It is tempting to delay [Meeting Reality](Meeting-Reality) as long as possible, to "get your house in order".  There is a tension between "you only get one chance to make a first impression" and "gilding the lilly" (perfectionism).  In the past I've seen this stated as:
-
-> Pressure to ship becomes greater than pressure to improve tbd
+> "Pressure to ship vs pressure to improve"
 
 A Risk-First reframing of this might be the balance between:
 
 - The perceived [Reputational Risk], [Feature Risk]() and [Operational Risk]() of going to production (pressure to improve)
 - The perceived [Schedule Risks]() (such as funding, time available, etc) of staying in development (pressure to ship)
 
-The "should we ship?" decision is therefore a complex one.  In [Meeting Reality](Meeting-Reality), we discussed that it's better to do this "sooner, more frequently, in smaller chunks and with feedback".  We can meet [Operational Risk]() on our own terms by doing so: 
+![Balance of Risks from Delivering Software](images/generated/risks/operational/ship-it.png)
+
+The "should we ship?" decision is therefore a complex one.  In [Meeting Reality](Meeting-Reality), we discussed that it's better to do this "sooner, more frequently, in smaller chunks and with feedback".  We can meet [Operational Risk](Operational-Risk) on our own terms by doing so: 
 
 |Meet Reality...                   |Techniques                                             | 
 |----------------------------------|-------------------------------------------------------|
-|**Sooner**                        |Limited Early-Access Programs, Beta Programs, Soft Launches    |
-|**More Frequently**               |[Continuous Delivery], [Sprints]()                               |
-|**In Smaller Chunks**             |[Modular Releases]() [Microservices]() [Feature Toggles]() Trial Populations   |
+|**Sooner**                        |Quality Control Processes, Limited Early-Access Programs, Beta Programs, Soft Launches    |
+|**More Frequently**               |Continuous Delivery, Sprints                              |
+|**In Smaller Chunks**             |Modular Releases, Microservices, Feature Toggles, Trial Populations   |
 |**With Feedback**                 |User Communities, Support Groups, Monitoring, Logging, Analytics|
 
-### Planning
-
-(prediction: how to forecast failures)   / anticipation  -- operations strategy
-(forecasting)
-(adaptation: how the system changes in the future)
-(trend analysis)
-
-### Know Thyself
+## Monitoring and Detection
 
 (practicing: e.g. testing failover etc.)
 (weakness: minimization (see Security risk), penetration testing)
@@ -238,5 +225,12 @@ Adding this in since we refer to it
 
 Adding this in since we refer to it
 
+
+### Planning
+
+(prediction: how to forecast failures)   / anticipation  -- operations strategy
+(forecasting)
+(adaptation: how the system changes in the future)
+(trend analysis)
 
  
