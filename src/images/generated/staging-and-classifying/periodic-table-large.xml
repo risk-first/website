@@ -1,0 +1,167 @@
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="The Diagram" style="kite9-layout: down;">
+
+    <group style="kite9-layout: right; ">
+      <back style='kite9-usage: decal; kite9-type: svg;  '>
+        <svg:rect x="0" y="0" width="#{$width}" height="#{$height}" style="fill: #EEEEEE;" />
+      </back>
+
+      <risk class="feature" id="feature" />
+
+      <context style="kite9-layout: down ">
+
+        <group style="kite9-layout: right; ">
+
+          <risk class="feature-fit" />
+          <risk class="implementation" />
+        </group>
+        <risk class="conceptual-integrity" />
+
+        <label>
+          <text>Fit</text>
+          <symbols />
+        </label>
+
+      </context>
+
+      <context style="kite9-layout: down ">
+
+        <risk class="market" />
+        <risk class="feature-access" />
+
+        <label>
+          <text>Audience</text>
+          <symbols />
+        </label>
+
+      </context>
+
+
+      <context style="kite9-layout: down ">
+
+        <risk class="feature-drift" />
+        <risk class="regression" />
+
+        <label>
+          <text>Evolution</text>
+          <symbols />
+        </label>
+
+      </context>
+
+    </group>
+
+    <group style="kite9-layout: right; ">
+      <risk class="communication" id="communication" />
+
+      <context style="kite9-layout: down ">
+
+        <risk class="channel" id="channel" />
+
+        <label>
+          <text>Channel</text>
+          <symbols />
+        </label>
+
+      </context>
+      <context style="kite9-layout: down ">
+        <risk class="protocol" id="protocol" />
+        <label>
+          <text>Protocol</text>
+          <symbols />
+        </label>
+      </context>
+      <context style="kite9-layout: down ">
+        <risk class="message" />
+        <risk class="invisibility" id="invisibility" />
+        <label>
+          <text>Message</text>
+          <symbols />
+        </label>
+      </context>
+      <context style="kite9-layout: down ">
+        <risk class="internal-model" />
+        <risk class="learning-curve" id="learning-curve" />
+        <label>
+          <text>Internal Model</text>
+          <symbols />
+        </label>
+      </context>
+    </group>
+
+    <group style="kite9-layout: right; ">
+
+      <back style='kite9-usage: decal; kite9-type: svg;  '>
+        <svg:rect x="0" y="0" width="#{$width}" height="#{$height}" style="fill: #EEEEEE;" />
+      </back>
+
+      <risk class="complexity" id="complexity" style="kite9-horizontal-align: left; "/>
+      <risk class="dead-end" id="dead-end" />
+      <risk class="boundary" id="boundary" />
+      <risk class="map-and-territory" id="map-and-territory" />
+      <risk class="coordination" id="coordination" />
+    </group>
+
+
+
+    <group style="kite9-layout: right; ">
+
+      <group style="kite9-layout: down; ">
+        <risk class="dependency" id="dependency" />
+      </group>
+
+      <context style="kite9-layout: right " id="sr">
+        <group style="kite9-layout: down; ">
+          <risk class="opportunity" />
+          <risk class="red-queen" />
+        </group>
+        <group style="kite9-layout: down; ">
+          <risk class="scarcity" />
+          <risk class="reliability" />
+        </group>
+        <group style="kite9-layout: down; ">
+          <risk class="funding" />
+          <risk class="schedule" />
+        </group>
+
+        <label>
+          <text>Scarcity &amp; Reliability</text>
+          <symbols />
+        </label>
+
+      </context>
+
+
+      <context style="kite9-layout: down ">
+        <group style="kite9-layout: right; ">
+          <risk class="agency" id="agency" />
+          <risk class="trust" />
+        </group>
+
+        <group style="kite9-layout: right; ">
+          <risk class="belief" />
+          <risk class="security" />
+        </group>
+        <label>
+          <text>Agency</text>
+          <symbols />
+        </label>
+
+      </context>
+
+    </group>
+
+    <group style="kite9-layout: right; ">
+      <risk class="operational" style="kite9-horizontal-align: left; " />
+      <risk class="process" id="process" />
+      <risk class="deadline" id="deadline" />
+      <risk class="staff" />
+      <risk class="software-dependency" />
+    </group>
+
+  </diagram>
+
+</svg:svg>

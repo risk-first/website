@@ -8,12 +8,6 @@ We've collected on this journey around the [Risk Landscape](Risk-Landscape) a (h
 
 If you've been reading closely, you'll notice that a number of themes come up again and again within the different sections.   For example, concepts like **Fit**, **Abstraction**, **Evolution**.  Although we've been looking at patterns of risk across software projects, it's time to look at the _patterns within the patterns_. 
 
-## First, A Recap
-
-tbd.  list of risks, broken down
-
-## Some Observations
-
 ## The Power Of Abstractions
 
 [Abstraction](Glossary#abstraction) appears as a concept continually throughout the book, whether we are looking at [Communication](Communication-Risk), [Complexity Metrics](Complexity-Risk#kolmogorov-complexity), [Map and Territory Risk](Map-And-Territory-Risk) or how it causes [Boundary Risk](Boundary-Risk).  And, so far, we've looked at some complicated examples of abstractions, such as [network protocols](Communication-Risk#network), [dependencies on technology](Software-Dependency-Risk#software-tools) or [Business Processes](Process-Risk#the-purpose-of-process).
@@ -91,6 +85,8 @@ One thing that should be apparent is that there are similarities in the risks be
 tbd, diagram, explanatory text.
 
 Dependencies, Features, Complexity etc.
+
+![Periodic Table of Risks](images/generated/staging-and-classifying/periodic-table-large.png)
 
 
 ## Patterns
