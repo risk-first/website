@@ -42,57 +42,35 @@ There's a good reason for this repetition.   Abstraction is at the heart of _eve
 
 ## Your Feature Risk is Someone Else's Dependency Risk
 
-In the [Feature Risk](Feature-Risk) section, we looked at the problems of _supplying a dependency to someone else_:  you've got to satisfy a demand [Market Risk](), and ensure a close fit with requirements [Conceptual Integrity Risk]().  The section on [Production Risk]() went further, looking at specific aspects of being the supplier of an IT service as a dependency.  
+In the [Feature Risk](Feature-Risk) section, we looked at the problems of _supplying a dependency to someone else_:  you've got to satisfy a demand [Market Risk](Feature-Risk#market-risk), and service a segment of the user community [Feature Access Risk](Feature-Risk#feature-access-risk).  The section on [Operational Risk](Operational-Risk) went further, looking at specific aspects of being the supplier of an IT service as a _dependency_.  
 
 However, over the rest of the [Dependency Risk](Dependency-Risk) sections, we looked at this from the point of view of _being a client to someone else_:  you want to find trustworthy, reliable dependencies that don't give up when you least want them to.
 
-So [Feature Risk](Feature-Risk) _is_ [Dependency Risk](Dependency-Risk):  they’re _two sides of the same coin_.  You face [Dependency Risk]() when you’re a client, [Feature Risk]() when you’re the supplier.   
+So [Feature Risk](Feature-Risk) and [Dependency Risk](Dependency-Risk) are _two sides of the same coin_.  You face [Dependency Risk](Dependency-Risk) when you’re a client, [Feature Risk](Feature-Risk) when you’re the supplier.   
 
-We've looked at three dimensions of [Feature Risk]():
-  - Fit
-  - Evolution
-  - Audience
-  
-(recap this)  
-  
-Dependency Risk has three dimensions too:
+Further, to _use_ a dependency requires the client and the supplier to communicate.  And, this entails _learning protocols_ and other types of [Communication Risk](Communication-Risk).    You have to learn to use it.  Maybe it learns you.  This requires changes to your internal model.  
 
-- Schedule (things happening in time, running out of stuff.  e.g I need enough money to get this done, etc.  I need enough patience, enough loyalty, trust, entente.)
-- Technology (depending on software, hardware, etc.  )
-- Organisation (arrangements of [people](), [processes](), product)
-- Agency (people/machines/processes/organisations doing what you asked, working with you)
-- 
+![Features And Dependencies](images/generated/staging-and-classifying/features-and-dependencies.png)
 
-Using a dependency requires learning a _protocol_.    You have to learn to use it.  Maybe it learns you.  This requires changes to your internal model.  
+## The Original Risk
 
+As we discussed in [Dependency Risk](Dependency-Risk), depending on things is necessary for life, whether it is oxygen, food or sunlight.  Minimizing [Dependency-Risk](Dependency-Risk) is therefore the goal of all life.  For some species, this also means dealing with [Feature Risk](Feature-Risk):  there's no point trying to supply a fruit that no creature will eat, for example.
 
-Internal Model      - Communication --  Dependency
-   Goal 
+Our problems really start when we try to [Coordinate](Coordination-Risk) with the dependencies themselves or each other.  As discussed in the section on [Coordination](Coordination-Risk), coordination is the root of [Communication Risk](Communication-Risk), as without coordination, we don't have to care about what the world is trying to tell us, or what we are trying to tell the world.
 
-### 3.  Coordination Risk And The Garden Of Eden
-
-- similar to _threading/deadlocking issues 
-- Coordination is how you deal with abstractions.  and this means communication.
-
-tbd diagram: abstractions -> agency -> coordination -> communication
-
-One thing that should be apparent is that there are similarities in the risks between all the kinds of
-
-- draw a diagram of this system.  mark on all the different risks using numbers.  mention specifically that since this is a diagram, it is a "map".
+ - Communication Risk then begets [Map and Territory Risk](), because 
+ - Communication Risk also means [Complexity Risk](), because now we have built a communication [graph](), and we saw how to work out how complex that is.  (Compare with human supply chains nowadays)
+ - As discussed in [Boundary Risk](), this is at a confluence of [Dependency Risk](), [Communication Risk]() and [Complexity Risk]().
+ 
+![The Origin Of Risk](images/generated/staging-and-classifying/origin-of-risk.png)
 
 ## Towards A Periodic Table Of Risks
 
-tbd, diagram, explanatory text.
+As we said [at the start](A-Pattern-Language), Risk-First is all about developing _A Pattern Language_.  We can use the terms like _"Feature Risk"_ or _"Learning Curve Risk"_ to _explain_ phenomena we see on software projects.   If we want to [De-Risk](De-Risking) our work, we need to be able to explain what the risks are, and what we expect to do about them.
 
-Dependencies, Features, Complexity etc.
+The diagram below compiles all of the risks we've seen so far on the journey accross the risk landscape.  Just like a periodic table, there are perhaps others left to discover.   Please help by reporting back what you see.
+
+In the next section, we will be looking at some [Stories Of Failure](Stories-Of-Failure), and trying to apply the patterns we've learnt.
 
 ![Periodic Table of Risks](images/generated/staging-and-classifying/periodic-table-large.png)
 
-
-## Patterns
-
-As we said [at the start](A-Pattern-Language), Risk-First is all about developing _A Pattern Language_.  We can use the terms like _"Feature Risk"_ or _"Learning Curve Risk"_ to _explain_ phenomena we see on software projects.   If we want to [De-Risk](De-Risking) our work, we need to be able to explain what the risks are, and what we expect to do about them.
-
-So, lastly in part 2 let's put our language to work, and look at some past project failures.  Can we apply our lexicon to them?  
-
-On to [Stories Of Failure](Stories-Of-Failure).
