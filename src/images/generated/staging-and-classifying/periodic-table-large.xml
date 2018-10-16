@@ -98,7 +98,7 @@
         <svg:rect x="0" y="0" width="#{$width}" height="#{$height}" style="fill: #EEEEEE;" />
       </back>
 
-      <risk class="complexity" id="complexity" style="kite9-horizontal-align: left; "/>
+      <risk class="complexity" id="complexity" style="kite9-horizontal-align: left; " />
       <risk class="dead-end" id="dead-end" />
       <risk class="boundary" id="boundary" />
       <risk class="map-and-territory" id="map-and-territory" />
@@ -109,59 +109,57 @@
 
     <group style="kite9-layout: right; ">
 
+      <risk class="dependency" id="dependency" />
+
       <group style="kite9-layout: down; ">
-        <risk class="dependency" id="dependency" />
+
+        <group style="kite9-layout: right; ">
+          <context style="kite9-layout: right " id="sr">
+            <group style="kite9-layout: down; ">
+              <risk class="opportunity" />
+              <risk class="red-queen" />
+            </group>
+            <group style="kite9-layout: down; ">
+              <risk class="scarcity" />
+              <risk class="reliability" />
+            </group>
+            <group style="kite9-layout: down; ">
+              <risk class="funding" />
+              <risk class="schedule" />
+            </group>
+
+            <label>
+              <text>Scarcity &amp; Reliability</text>
+              <symbols />
+            </label>
+          </context>
+
+          <context style="kite9-layout: down ">
+            <group style="kite9-layout: right; ">
+              <risk class="agency" id="agency" />
+              <risk class="trust" />
+            </group>
+
+            <group style="kite9-layout: right; ">
+              <risk class="belief" />
+              <risk class="security" />
+            </group>
+            <label>
+              <text>Agency</text>
+              <symbols />
+            </label>
+          </context>
+        </group>
+
+        <group style="kite9-layout: right; ">
+          <risk class="operational" style="kite9-horizontal-align: left; " />
+          <risk class="process" id="process" />
+          <risk class="deadline" id="deadline" />
+          <risk class="staff" />
+          <risk class="software-dependency" />
+        </group>
       </group>
-
-      <context style="kite9-layout: right " id="sr">
-        <group style="kite9-layout: down; ">
-          <risk class="opportunity" />
-          <risk class="red-queen" />
-        </group>
-        <group style="kite9-layout: down; ">
-          <risk class="scarcity" />
-          <risk class="reliability" />
-        </group>
-        <group style="kite9-layout: down; ">
-          <risk class="funding" />
-          <risk class="schedule" />
-        </group>
-
-        <label>
-          <text>Scarcity &amp; Reliability</text>
-          <symbols />
-        </label>
-
-      </context>
-
-
-      <context style="kite9-layout: down ">
-        <group style="kite9-layout: right; ">
-          <risk class="agency" id="agency" />
-          <risk class="trust" />
-        </group>
-
-        <group style="kite9-layout: right; ">
-          <risk class="belief" />
-          <risk class="security" />
-        </group>
-        <label>
-          <text>Agency</text>
-          <symbols />
-        </label>
-
-      </context>
-
     </group>
-
-    <group style="kite9-layout: right; ">
-      <risk class="operational" style="kite9-horizontal-align: left; " />
-      <risk class="process" id="process" />
-      <risk class="deadline" id="deadline" />
-      <risk class="staff" />
-      <risk class="software-dependency" />
-    </group>
-
   </diagram>
 
 </svg:svg>
