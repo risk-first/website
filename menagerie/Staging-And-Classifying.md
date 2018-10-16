@@ -23,18 +23,18 @@ There's a good reason for this repetition.   Abstraction is at the heart of _eve
 ### Using An Existing Abstraction means:
 
  - **Mitigating [Feature Risk]():** Because the abstraction is providing you with something _useful_.
- - **Living with [Dependency Risk]():**  We depend on a word in our language, or a function in our library, or a service on the internet.  But all of these things are _unreliable_.  The word might not communicate what you want it to, or be understood by the audience, the function might not work, the service might be down.
- - **Accepting [Evolution]().** That language _changes_ and _evolves_, and the words you are using now might not always mean what you want them to mean.  Software too changes and evolves.  We've seen this in [Red Queen Risk](), [Feature Drift Risk](), [Regression Risk]() and [Protocol Risk]().
- - **Accepting [Coordination Risk](Coordination Risk).**  Where a [Dependency]() has [Agency](), we need to consider how to work with it.
+ - **Living with [Dependency Risk]():**  We depend on a word in our language, or a function in our library, or a service on the internet.  But all of these things are _unreliable_.  The word might not communicate what you want it to, or be understood by the audience, the function might not work, the service might be down.  Also, language _changes_ and _evolves_, and the words you are using now might not always mean what you want them to mean.  Software too changes and evolves.  We've seen this in [Red Queen Risk](Scarcity-Risk#red-queen-risk) and [Feature Drift Risk](Feature-Risk#feature-drift-risk).
+ - **Accepting [Communication Risk](Communication-Risk).** : Because if you are using the abstraction in conversation, the people you are using it with _need to understand it too_. 
+ - **Accepting [Map and Territory Risk](Map-And-Territory-Risk)**: Because the abstraction is a simplification, and not the actual thing itself.
  
 ![Depending on an Abstraction](images/generated/staging-and-classifying/depending-abstraction.png)
 
 ### Inventing A New Abstraction means:  
 
-- **Creating a [Feature](Feature-Risk).**  These abstractions are [Features](Feature-Risk) in the sense that other people can choose to use them, if they fit their requirements.  
-- **Increasing [Complexity](Complexity-Risk).** Because, the more words we have, the more complex the language is.
-- **Creating a [Boundary](Boundary-Risk).**  By naming something, you _implicitly_ create a boundary, because the world is now divided into "things which _are_ X" and "things which _are not_ X".   Sometimes, this abstraction may literally end up having a physical boundary to enforce this division (such as, "My Property / Not My Property"). _Boundary Risk is created by abstractions._
-- **Creating a [Protocol](Communication-Risk#protocol).**  At the very simplest level (again), this is just introducing _new words to a language_.   Therefore, we create [Protocol Risk](Communication-Risk#protocol-risk):  what if the person we are communicating with _doesn't know this word?  
+- **Mitigating [Feature Risk](Feature-Risk).**  These abstractions are [Features](Feature-Risk) in the sense that other people can choose to use them, if they fit their requirements.  
+- **Creating a [Protocol](Communication-Risk#protocol).**  At the very simplest level (again), this is just introducing _new words to a language_.   Therefore, we create [Protocol Risk](Communication-Risk#protocol-risk):  what if the person we are communicating with _doesn't_ know this word?  
+- **Increasing [Complexity Risk](Complexity-Risk).** Because, the more words we have, the more complex the language is.
+- **Creating [Boundary Risk](Boundary-Risk).**  By naming something, you _implicitly_ create a boundary, because the world is now divided into "things which _are_ X" and "things which _are not_ X".   Sometimes, this abstraction may literally end up having a physical boundary to enforce this division (such as, "My Property / Not My Property"). _Boundary Risk is created by abstractions._
     
 ![Inventing an Abstraction](images/generated/staging-and-classifying/inventing-abstraction.png)
 
