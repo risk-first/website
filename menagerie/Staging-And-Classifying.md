@@ -23,9 +23,9 @@ There's a good reason for this repetition.   Abstraction is at the heart of _eve
 #### Inventing an Abstraction means:  
 
 - **Creating a [Feature](Feature-Risk).**  So, at the simplest end, you might be simply _naming a pattern_ of behaviour we see in the real world, such as "Binge Watching" or "Remote Working", or naming your dog, "Alfie".  These abstractions are [Features]() in the sense that other people can choose to use them, if they fit their requirements.
- - **Creating a [Boundary](Boundary-Risk).**  By naming something, you _implicitly_ create a boundary, because the world is now divided into "things which _are_ X" and "things which _are not_ X".   Sometimes, this abstraction may literally end up having a physical boundary to enforce this division (such as, "My Property / Not My Property"). _Boundary Risk is created by abstractions._
- - **Creating a [Protocol](Communication-Risk#protocol).**  At the very simplest level (again), this is just introducing _new words to a language_.   Therefore, we create [Protocol Risk](Communication-Risk#protocol-risk):  what if the person we are communicating with _doesn't know this word?  
- - **Increasing [Complexity]().** Because, the more words we have, the more complex the language is.
+- **Creating a [Boundary](Boundary-Risk).**  By naming something, you _implicitly_ create a boundary, because the world is now divided into "things which _are_ X" and "things which _are not_ X".   Sometimes, this abstraction may literally end up having a physical boundary to enforce this division (such as, "My Property / Not My Property"). _Boundary Risk is created by abstractions._
+- **Creating a [Protocol](Communication-Risk#protocol).**  At the very simplest level (again), this is just introducing _new words to a language_.   Therefore, we create [Protocol Risk](Communication-Risk#protocol-risk):  what if the person we are communicating with _doesn't know this word?  
+- **Increasing [Complexity](Complexity-Risk).** Because, the more words we have, the more complex the language is.
     
 tbd, diagram.
 
@@ -75,7 +75,7 @@ Using a dependency requires learning a _protocol_.    You have to learn to use i
 Internal Model      - Communication --  Dependency
    Goal 
 
-### 3.  Coordination Risk As Eden
+### 3.  Coordination Risk And The Garden Of Eden
 
 - similar to _threading/deadlocking issues 
 - Coordination is how you deal with abstractions.  and this means communication.
@@ -89,6 +89,9 @@ One thing that should be apparent is that there are similarities in the risks be
 ## Towards A Periodic Table Of Risks
 
 tbd, diagram, explanatory text.
+
+Dependencies, Features, Complexity etc.
+
 
 ## Patterns
 
