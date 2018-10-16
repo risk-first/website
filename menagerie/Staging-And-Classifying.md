@@ -17,7 +17,7 @@ There's a good reason for this repetition.   Abstraction is at the heart of _eve
 ### Using An Existing Abstraction means:
 
  - **Mitigating [Feature Risk]():** Because the abstraction is providing you with something _useful_.
- - **Living with [Dependency Risk]():**  We depend on a word in our language, or a function in our library, or a service on the internet.  But all of these things are _unreliable_.  The word might not communicate what you want it to, or be understood by the audience, the function might not work, the service might be down.  Also, language _changes_ and _evolves_, and the words you are using now might not always mean what you want them to mean.  Software too changes and evolves.  We've seen this in [Red Queen Risk](Scarcity-Risk#red-queen-risk) and [Feature Drift Risk](Feature-Risk#feature-drift-risk).
+ - **Living with [Dependency Risk]():**  We depend on a word in our language, or a function in our library, or a service on the Internet.  But all of these things are _unreliable_.  The word might not communicate what you want it to, or be understood by the audience, the function might not work, the service might be down.  Also, language _changes_ and _evolves_, and the words you are using now might not always mean what you want them to mean.  Software too changes and evolves.  We've seen this in [Red Queen Risk](Scarcity-Risk#red-queen-risk) and [Feature Drift Risk](Feature-Risk#feature-drift-risk).
  - **Accepting [Communication Risk](Communication-Risk).** : Because if you are using the abstraction in conversation, the people you are using it with _need to understand it too_. 
  - **Accepting [Map and Territory Risk](Map-And-Territory-Risk)**: Because the abstraction is a simplification, and not the actual thing itself.
  
@@ -52,23 +52,27 @@ Further, to _use_ a dependency requires the client and the supplier to communica
 
 ![Features And Dependencies](images/generated/staging-and-classifying/features-and-dependencies.png)
 
+These relationships of features/dependencies are the basis of [Supply Chains](https://en.wikipedia.org/wiki/Supply_chain) and the world-wide network of goods and services that forms the modern economy.  The incredible complexity of this network _should_ mean incredible [Complexity Risk](Complexity-Risk), too, but because humans are good at [Coordinating](Coordination-Risk) and managing our dependencies, and we rely on market mechanisms to help us allocate dependencies efficiently.
+
 ## The Original Risk
 
-As we discussed in [Dependency Risk](Dependency-Risk), depending on things is necessary for life, whether it is oxygen, food or sunlight.  Minimizing [Dependency-Risk](Dependency-Risk) is therefore the goal of all life.  For some species, this also means dealing with [Feature Risk](Feature-Risk):  there's no point trying to supply a fruit that no creature will eat, for example.
+As we discussed in [Dependency Risk](Dependency-Risk), _depending on things_ is necessary for life, whether it is oxygen, food or sunlight.  Minimising [Dependency-Risk](Dependency-Risk) is therefore the goal of all life.  For some species, this also means dealing with [Feature Risk](Feature-Risk):  there's no point trying to supply a fruit that no creature will eat, for example.
 
 Our problems really start when we try to [Coordinate](Coordination-Risk) with the dependencies themselves or each other.  As discussed in the section on [Coordination](Coordination-Risk), coordination is the root of [Communication Risk](Communication-Risk), as without coordination, we don't have to care about what the world is trying to tell us, or what we are trying to tell the world.
 
- - Communication Risk then begets [Map and Territory Risk](), because 
- - Communication Risk also means [Complexity Risk](), because now we have built a communication [graph](), and we saw how to work out how complex that is.  (Compare with human supply chains nowadays)
- - As discussed in [Boundary Risk](), this is at a confluence of [Dependency Risk](), [Communication Risk]() and [Complexity Risk]().
+ - Communication Risk then begets [Map and Territory Risk](Map-And-Territory-Risk), because 
+ - Communication Risk also means [Complexity Risk](Complexity-Risk), because now we have built a communication [graph](Complexity-Risk#connectivity), and we saw how to calculate how complex that is. 
+ - As discussed in [Boundary Risk](Boundary-Risk), this is at a confluence of [Dependency Risk](Dependency-Risk), [Communication Risk](Communication-Risk) and [Complexity Risk](Complexity-Risk).
+ 
+The below diagram shows how this causality plays out.
  
 ![The Origin Of Risk](images/generated/staging-and-classifying/origin-of-risk.png)
 
 ## Towards A Periodic Table Of Risks
 
-As we said [at the start](A-Pattern-Language), Risk-First is all about developing _A Pattern Language_.  We can use the terms like _"Feature Risk"_ or _"Learning Curve Risk"_ to _explain_ phenomena we see on software projects.   If we want to [De-Risk](De-Risking) our work, we need to be able to explain what the risks are, and what we expect to do about them.
+As we said [at the start](A-Pattern-Language), Risk-First is all about developing _A Pattern Language_.  We can use the terms like "[Feature Risk](Feature-Risk)"_ or "[Learning Curve Risk](Communication-Risk#learning-curve-risk)" to _explain_ phenomena we see on software projects.   If we want to [De-Risk](De-Risking) our work, we need to be able to explain what the risks are, and what we expect to do about them.
 
-The diagram below compiles all of the risks we've seen so far on the journey accross the risk landscape.  Just like a periodic table, there are perhaps others left to discover.   Please help by reporting back what you see.
+The diagram below compiles all of the risks we've seen so far on the journey across the risk landscape.  Just like a periodic table, there are perhaps others left to discover.   Please help by reporting back what you see.
 
 In the next section, we will be looking at some [Stories Of Failure](Stories-Of-Failure), and trying to apply the patterns we've learnt.
 
