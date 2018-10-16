@@ -2,9 +2,9 @@
 
 Our tour is complete.  
 
-We've collected on this journey around the [Risk Landscape](Risk-Landscape) a (hopefully) good, representative sample of [Risks](Glossary#Risk) and where to find them.  But if we are good collectors, then before we're done we should [Stage]() our collection on some solid [Mounting Boards], and do some work in classifying what we've seen.
+We've collected on this journey around the [Risk Landscape](Risk-Landscape) a (hopefully) good, representative sample of [Risks](Glossary#Risk) and where to find them.  But if we are good collectors, then before we're done we should [Stage](https://en.wikipedia.org/wiki/Entomological_equipment_for_mounting_and_storage) our specimens and do some work in classifying what we've seen.
 
-![Beetle Collection, (Credit: Fir0002, Wikipedia)](images/Beetle_collection.jpg)
+![Staged and Classified Beetle Collection, (Credit: Fir0002, Wikipedia)](images/Beetle_collection.jpg)
 
 If you've been reading closely, you'll notice that a number of themes come up again and again within the different sections.   For example, concepts like **Fit**, **Abstraction**, **Evolution**.  Although we've been looking at patterns of risk across software projects, it's time to look at the _patterns within the patterns_. 
 
