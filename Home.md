@@ -67,13 +67,13 @@ Risks are often very similar across different software projects.   And, if you k
 
 This part is a discussion of the different practices within Software Development, and how they mitigate and accentuate the different risks.
 
- - Practices
  - Analysis
  - [Coding](Coding)
  - Contract
  - Delivery
  - [Design](Design)
  - Documentation
+ - [Estimation](Estimates)
  - [On-Site-Customer](On-Site-Customer)
  - [Prioritisation](Prioritisation)
  - [Requirements Capture](Requirements-Capture)
