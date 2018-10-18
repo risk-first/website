@@ -174,6 +174,11 @@ Well, under the 6% regime, only Risk **A** is worth mitigating, because you spen
 
 But, under a 3% regime, risk **A** and **B** are _both_ worth mitigating.
 
+## Payoff
+
+tbd.  describe here.
+
+
 ### Discounting the Future To Zero
 
 I have worked in teams sometimes where the blinkers go down, and the only thing that matters is _now_.    They may apply a rate of 60% per-day, which means that anything with a horizon over a week is irrelevant.   Regimes of such [hyper-inflation](https://en.wikipedia.org/wiki/Hyperinflation) are a sure sign that something has _really broken down_ within a project.  Consider in this case a Discount Factor of 60% per day, and the following risks:
@@ -191,6 +196,7 @@ Under these circumstances, we often see _Pooh-Bear Procrastination_:
 
 > "Here is Edward Bear coming downstairs now, bump, bump, bump, on the back of his head, behind Christopher Robin. It is, as far as he knows, the only way of coming downstairs, but sometimes he feels that there really is another way…if only he could stop bumping for a moment and think of it!" - [A. A. Milne, _Winne-the-Pooh_](http://amzn.eu/d/acJ5a2j)
 
+
 ## Is This Scientific?
 
 Enough with the numbers and the theory:  **Risk-First** is an attempt to provide a practical framework, rather than a scientifically rigorous analysis.  In fact, my view is that you should _give up_ on trying to compute risk numerically.  You _can't_ work out how long a software project will take based purely on an analysis of (say) _function points_.  (Whatever you define them to be).
@@ -202,6 +208,7 @@ technologies used etc.  That is, the risks faced by IT projects are _too diverse
 - Fourth, metrics get first of all [misused](Map-And-Territory-Risk) and then [gamed](Agency-Risk).
 
 Reality is messy.  Dressing it up with numbers doesn't change that and you risk [fooling yourself](Map-And-Territory-Risk).  If this is the case, is there any hope at all in what we're doing?  I would argue yes:   _forget precision_.  You should, with experience be able to hold up two separate risks and answer the question, "is this one bigger than this one?"  
+
 
 With that in mind, let's look at how we can meet reality [as fast and often as possible](Cadence).
 

@@ -22,6 +22,10 @@ An internal model _represents_ reality:  reality is made of atoms, whereas the i
 
 ## Meet Reality
 
+## Payoff
+
+
+
 ## Risk
 
 ## Risk Landscape
@@ -33,6 +37,8 @@ An internal model _represents_ reality:  reality is made of atoms, whereas the i
 ### Hidden Risk
 
 ### Mitigated Risk
+
+
 
 
 

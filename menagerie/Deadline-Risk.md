@@ -1,6 +1,6 @@
 
 
-
+Events as mitigation for coordination risk. diagram.
 
 ## Deadline Risk
 

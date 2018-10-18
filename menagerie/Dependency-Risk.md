@@ -31,6 +31,9 @@ This tells us a lot about [Dependency Risk](Dependency-Risk) right here:
 
 So, dependencies are a trade-off.  They give with one hand and take with the other.  Our modern lives are full of dependency (just think of the chains of dependency needed for putting a packet of biscuits on a supermarket shelf, for example), but we accept this extra complexity because it makes life _easier_.  
 
+tbd.  diagram, mitigating feature risk with a dependency?
+
+
 ## Simple Made Easy
 
 In Rich Hickey's talk, [Simple Made Easy](https://www.infoq.com/presentations/Simple-Made-Easy) he discusses the difference between _simple_ software systems and _easy_ (to use) ones, heavily stressing the virtues of simple over easy.  It's an incredible talk and well worth watching.  
