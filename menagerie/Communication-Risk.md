@@ -345,9 +345,9 @@ The communication process so far has been fraught with risks, but we have a few 
 
 ### Trust & Belief Risk
 
-Although protocols can sometimes handle security features of communication (such as [Authentication](https://en.wikipedia.org/wiki/Authentication) and preventing [man-in-the-middle attacks](https://en.wikipedia.org/wiki/Man-in-the-middle_attack)), trust goes further than this, intersecting with [Agency Risk](Agency-Risk):  can you be sure that the other party in the communication is acting in your best interests?
+Although protocols can sometimes handle security features of communication (such as [Authentication](https://en.wikipedia.org/wiki/Authentication) and preventing [man-in-the-middle attacks](https://en.wikipedia.org/wiki/Man-in-the-middle_attack)), trust goes further than this, it is the flip-side of [Agency Risk](Agency-Risk), which we will look at later:  can you be sure that the other party in the communication is acting in your best interests?
  
-Even if the receiver trusts the communicator, they may not trust the message.  Let's look at some reasons for that:
+Even if the receiver trusts the communicator, they may not believe the message.  Let's look at some reasons for that:
 
 - [Weltanschauung (World View)](https://en.wikipedia.org/wiki/World_view): The ethics, values and beliefs in the receiver's [Internal Model](Glossary#Internal-Model) may be incompatible to those from the sender.
 - [Relativism](https://en.wikipedia.org/wiki/Relativism) is the concept that there are no universal truths.  Every truth is from a frame of reference.  For example, what constitutes _offensive language_ is dependent on the listener.
