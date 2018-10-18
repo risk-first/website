@@ -38,7 +38,7 @@ So, [Operational Risk Management](https://en.wikipedia.org/wiki/Operational_risk
 
 ## Operations Management
 
-If we are designing a software system to "live" in the real world, we have to be mindful of the environment we're working in, and adapt our software and processes accordingly.   This view of the "wider" system is the discipline of Operations Management.  The below diagram (from ["Operations Management" by _Slack et al._]()) breaks down some of the concerns of this discipline.
+If we are designing a software system to "live" in the real world, we have to be mindful of the environment we're working in, and adapt our software and processes accordingly.   This view of the "wider" system is the discipline of Operations Management.  The below diagram (from ["Operations Management" by _Slack et al._](http://amzn.eu/d/b6ZjuMu)) breaks down some of the concerns of this discipline.
 
 ![A General Model of Operations Management](images/kite9/operations_management.png)
 

@@ -1,25 +1,36 @@
 ![Under Construction](images/state/uc.png)
 
-1.  Purpose of Estimating 
-  1.  (coordination risk)
-  2.  trying to work out _the value_ of doing some work
-2.  How Estimates Fail
-  1.   Hidden Risk
-  2.   Visible Risk
-3.  
-
-This section on [Estimating](Estimates) is going to be something of a journey, where we look at some of the "Old Saws" of the estimation game, before looking at more modern techniques using in "Agile" estimation, and then try to bring a Riks-First approach to estimating. 
-
-We're going to start by looking at some "Old Saws" of the software develop
-
+In this section, we're going to put a Risk-First spin on the process of [Estimating](Estimates).  But, in order to get there, we first need to start with understanding _why_ we estimate, and some history around why this has been so problematic in the software world.
 
 ## The Purpose Of Estimating
 
 Why bother estimating at all?   There are two reasons why estimates are useful:
 
-1.  **To allow for the creation of _events_.**  As we saw in [Deadline Risk](), if we can put a date on something, we can mitigate lots of [Coordination Risk](). Having a _release date_ for a product allows whole teams of people to coordinate their activities in ways that hugely reduce the need for [Communication]().  Much like "attack at dawn" allows disparate units of an army to avoid lots of the [Coordination Risk]() inherent in "attack on my signal".  
+1.  **To allow for the creation of _events_.**  As we saw in [Deadline Risk](), if we can put a date on something, we can mitigate lots of [Coordination Risk](Coordination-Risk). Having a _release date_ for a product allows whole teams of people to coordinate their activities in ways that hugely reduce the need for [Communication](Communication-Risk).  Much like "attack at dawn" allows disparate units of an army to avoid lots of the [Coordination Risk]() inherent in "attack on my signal".  
 
-2.  **To allow for the estimation of the [Payoff](Glossary#payoff) of an action.**  However, as we already saw, [Payoff]() isn't just about figuring out [Schedule Risk]() - you should be looking at all the other [Attendant Risks]() of the action too.  
+2.  **To allow for the estimation of the [Pay-Off](Glossary#payoff) of an [action](Glossary#taking-action).**  However, as we already saw, [Pay-Off](Glossary#pay-off) isn't just about figuring out [Schedule Risk](Scarcity-Risk#schedule-risk) - you should be looking at all the other [Attendant Risks]() of the action too.  
+
+## How Estimates Fail
+
+Estimates are a huge source of contention in the software world:
+
+> "Typically, effort estimates are over-optimistic and there is a strong over-confidence in their accuracy. The mean effort overrun seems to be about 30% and not decreasing over time." - [Software Development Effort Estimation, _Wikipedia_](https://en.m.wikipedia.org/wiki/Software_development_effort_estimation).
+
+The problem with a developer answering a question such as:
+
+> "How long will it take to deliver X"
+
+Is the following:
+
+ - The developer likely doesn't know what X is, and any description of it is inadequate anyway ([Invisibility Risk](Communication-Risk#invisibility-risk)).
+ - The developer has a less-than-complete understanding of the environment he will be delivering X in ([Complexity Risk](Complexity-Risk)).
+ - The developer has some vague ideas about how to do X, but he'll need to try out various approaches until he finds exactly the right one ([Boundary Risk](Boundary-Risk) and [Learning-Curve Risk](Communication-Risk#learning-curve-risk).
+ - The developer has no idea what [Hidden Risk](Glossary#hidden-risk) will surface when he starts work on it.
+ - The developer has no idea what will happen if he takes too long and misses the date by a day/week/month/year. ([Schedule Risk](Scarcity-Risk#schedule-risk))
+
+... and so on.  So, his estimate is both wrong, and entirely contingent on what exact risks appear.
+
+It's a problem as old as software itself, and in deference to that, let's examine the estimating problem via some "Old Saws".
 
 ## Old Saw #1: The "10X Developer"
 
@@ -27,24 +38,26 @@ Why bother estimating at all?   There are two reasons why estimates are useful:
 
 Let's try and pull this apart:
 
- - How do we measure _productivity_?  In Risk-First terms, this is about taking action to _transform_ our current position on the [Risk Landscape]() to a position of more favourable risk.
- - It stands to reason then, that someone _faster_ will complete the transformation leaving us with less [Schedule Risk]().
+ - How do we measure this "productivity"?  In Risk-First terms, this is about taking action to _transform_ our current position on the [Risk Landscape]() to a position of more favourable risk.  A "10X Developer" then must be able to take actions that have much higher [Payoff]() than a "1X Developer".  That is mitigating more [Initial Risk](Glossary#initial-risk), and generating less [Attendant Risk](Glossary#attendant-risk).  
+ - It stands to reason then, that someone [taking action](Glossary#taking-action) _faster_ will leaving us with less [Schedule Risk]().
  - However, if they are _more expensive_, they may leave us with greater [Funding Risk]() afterwards.
- - But, [Schedule Risk]() isn't the only risk being transformed:  what level of [Feature Fit]() risk will be left behind, or [Implementation Risk]() or [Dependency Risk]() or [Complexity Risk]()?  
- - The "10x" developer will also leave behind less of these kind of risks too.
+ - But, [Schedule Risk]() isn't the only risk being transformed:   The result might be bugs, expensive new dependencies or spaghetti-code complexity.
+ - The "10x" developer _must_ also leave behind less of these kind of risks too.
+ - That means that the "10X Developer" isn't merely faster, but _taking different actions_.  They are able to use their talent and experience to see actions with greater pay-off than the 1X Developer.  
  
-tbd, diagram of a regular developer and 10x developer. 
+![1x Task vs 10x Task](images/generated/processes/estimating/1x-10x.png)
 
-Debate rages as to whether the "10x Developer" even exists.  Crucially, it would seem that such a thing would be predicated on the existence of the "Average Developer", who gets "1x" worth of work done each day.  It's not clear that there is any such thing as an average developer who is mitigating risk at an average rate.
+Debate rages as to whether the "10x Developer" even exists.  Crucially, it would seem that such a thing would be predicated on the existence of the "1X Developer", who gets "1x" worth of work done each day.  It's not clear that there is any such thing as an average developer who is mitigating risk at an average rate.  
 
-Even good developers have bad days or weeks.  [Taking Action]() is like placing a bet, and you hope that the bet will come off in your favour, mitigating the risk in the way you wanted it to.  But that doesn't always happen:
+Even good developers have bad days, weeks or projects.  [Taking Action](Glossary#taking-action) is like placing a bet.  Sometimes you lose and the [Pay-Off](Glossary#pay-off) doesn't appear:
 
  - The Open-Source software you're trying to apply to a problem doesn't solve it in the way you need.
  - A crucial use-case of the problem turns out to change the shape of the solution entirely, leading to lots of rework.
+ - An assumption about how network security is configured turns out to be wrong, leading to a lengthy engagement with the infrastructure team.
 
 ### How to Be a "10x Developer"
 
-The easiest way to be a "10x developer" is to have _done the job before_.  If you're coding in a familiar language, with familiar libraries and tools, delivering a cookie-cutter solution to a problem in the same manner you've done several times before, then _you will be a "10x developer" compared to yourself doing it the first time_.  The difference is the amount of [Learning Curve Risk]() and [Dead End Risk]() that you are facing.  
+The easiest way to be a "10x developer" is to have _done the job before_.  If you're coding in a familiar language, with familiar libraries and tools, delivering a cookie-cutter solution to a problem in the same manner you've done several times before, then _you will be a "10x developer" compared to _you doing it the first time_.  The difference is the amount of [Learning Curve Risk](Communication-Risk#learning-curve-risk) and [Dead End Risk](Complexity-Risk#dead-end-risk) that you are facing.  
 
 ### Old Saw #2: Parkinson's Law
 
@@ -58,10 +71,24 @@ This is why projects will _always_ take at least as long as is budgeted for them
 
 ### A Case Study
 
+Let's look at a quick example of this in action, taken from _Rapid Development_ by Steve McConnell.  At the point of this excerpt, Carl (the Project Manager) has already slipped the project twice, and is meeting the project sponsor, Bill, to announce another:
+
+> ... At the 9-month mark, the team had completed detailed design, but coding still hadn't begun on some modules. It was clear that Carl couldn't make the 10-month schedule either. He announced the third schedule slip number— to 12 months. Bill's face turned red when Carl announced the slip, and the pressure from him became more intense. 
+
+> Carl began to feel that his job was on the line. Coding proceeded fairly well, but a few areas needed redesign and reimplementation. The team hadn't coordinated design details in those areas well, and some of their implementations conflicted. At the 11-month oversight-committee meeting, Carl announced the fourth schedule slip— to 13 months. Bill became livid. "Do you have any idea what you're doing?" he yelled. "You obviously don't have any idea! You obviously don't have any idea when the project is going to be done! I'll tell you when it's going to be done! It's going to be done by the 13-month mark, or you're going to be out of a job! I'm tired of being jerked around by you software guys! You and your team are going to work 60 hours a week until you deliver!" 
+
+> Carl felt his blood pressure rise, especially since Bill had backed him into an unrealistic schedule in the first place. But he knew that with four schedule slips under his belt, he had no credibility left. He felt that he had to knuckle under to the mandatory overtime or he would lose his job. Carl told his team about the meeting. They worked hard and managed to deliver the software in just over 13 months. Additional implementation uncovered additional design flaws, but with everyone working 60 hours a week, they delivered the product through sweat and sheer willpower. " - [McConnell, Steve, _Rapid Development_](http://amzn.eu/d/eTWKOsK)
+
+Despite this being a fictional or fictionalised example, it rings true for many projects.  From a Risk-First perspective, what happened here?
+
+1.  
+
+
 Take aways:
  
  - There's no fixed amount of time something will take.
- - IF YOU
+ - If you give someone a period of time to do something, it'll either take that amount of time, or longer.
+ - Don't wait until 9 months to meet reality.
 
 ## Old Saw #3: Quality, Speed, Cost: Pick Any Two
 
@@ -74,34 +101,18 @@ From a Risk-First perspective, we can now see that this is an over-simplificatio
 
  - I can deliver a project in very short order by building a bunch of screens that _do nothing_ (accruing _stunning levels of [Implementation Risk]() as I go). 
  - Or, by relying on a lottery win, I can completely mitigate the budgetary risks of a project.  (Although I would have _huge_ [Funding Risk]() because _what are the chances of winning the lottery?_.  (You can bring in _any_ project at _any_ time by accepting crazy levels of risk.
- - And Brooks' Law tells us you can't trade budget for deadlines:
+ - And Brooks' Law contradicts this by saying you can't trade budget for deadlines:
 
 > "Brooks' law is an observation about software project management according to which "adding human resources to a late software project makes it later". - [Brooks Law, _Wikipedia_](https://en.wikipedia.org/wiki/Brooks_law)
 
 tbd. brooks law as a risk first diagram.
 
-What's the Risk-First take-away from this?  Focusing on just these three variables isn't enough:  we need to be looking at the project's risk _holistically_:
+Focusing on just these three variables isn't enough.  You can game these variables by sacrificing others:  we need to be looking at the project's risk _holistically_:
 
  - There's no point in calling a project complete if the dependencies you are using are [unreliable]() or [undergoing rapid change]() 
- - There's no point in delivering the project on budget if it's an [Operational Risk]() nightmare, and requires constant round-the-clock support and will cost a fortune to _run_.
- - There's no point in delivering a project on-time if [the market has moved on](Feature-Risk#market-risk) and [needs different features](Feature-Risk#feature-drift).
+ - There's no point in delivering the project on time if it's an [Operational Risk]() nightmare, and requires constant round-the-clock support and will cost a fortune to _run_.  Working on a project that "hits it's delivery date" but is nonetheless a broken mess is a common sight.
+ - There's no point in delivering a project on-budget if [the market has moved on](Feature-Risk#market-risk) and [needs different features](Feature-Risk#feature-drift).  
  
-## How Estimates Fail
-
-The problem with a developer answering a question such as:
-
-> "How long will it take to deliver X"
-
-Is the following:
-
- - The developer likely doesn't know what X is, and any description of it is inadequate anyway ([Invisibility Risk]()).
- - The developer has a less-than-complete understanding of the environment he will be delivering X in ([Complexity Risk]()).
- - The developer has some vague ideas about how to do X, but he'll need to try out various approaches until he finds exactly the right one ([Boundary Risk]()).
- - The developer has no idea what [Hidden Risk]() will surface when he starts work on it.
- - What will happen if he takes too long and misses the date by a day/week/month/year. ([Schedule Risk]())
-
-... and so on.  So, his estimate is both wrong, and contingent on what exact risks appear.
-
 ## Agile Estimation
 
 One alternative approach, must espoused in DevOps/Agile is to pick a short-enough period of time (say, two days or two weeks), and figure out what the most meaningful step towards achieving an objective would be in that time.   By fixing the time period, we remove [Schedule Risk]() from the equation, don't we?
@@ -127,7 +138,30 @@ Let's figure out what we can take away from the above experiences:
  
 How can we synthesize this knowledge, along with what we've learned into something that makes more sense?
 
+1.  Estimating is about _estimating [Pay Off]()_:  for a given [action]() or roadmap or business strategy, what  [Attendant Risks]() are we going to have when we get there?   Yes, we'll all be older (there _will be_ [Schedule Risk]()), but it's also about:
 
+  - What bets are we making about where the market will be?
+  - What [Communication Risk](Communication-Risk) will we face explaining our product to people?
+  - What [Feature Fit](Feature-Risk#feature-fit-risk) risks are we likely to have when we get there?
+  - What [Complexity Risks](Complexity-Risk) will we face building our software?  How can we avoid it ending up as a [Big Ball Of Mud](Complexity-Risk#big-ball-of-mud)?
+  - What are the [Dead End Risks]()
+  
+2. Given that most risk is likely to be [Learning Curve Risk]() and [Dead End Risk](), how can we front-load this and tackle these earlier?   
+ - Spike Solutions
+ -     
  
- 
+3.  How can we meet reality early, as often as possible?
+
+4.  Talk Frankly About the Risks
+ - If the task that's been given is clearly impossible, does that mean it's been misunderstood?  
+
+
+Carl, a project manager, and Bill
+
+
+
+
+## Understanding "Failure": An Estimating Example
+
+
 
