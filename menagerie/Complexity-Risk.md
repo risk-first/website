@@ -364,7 +364,7 @@ An important lesson here is that choice of language can reduce complexity: and w
  
 ### Networking / Security
 
-The last area I want to touch on here is networking.  There are plenty of [Complexity Risk](Complexity-Risk) perils in _anything_ to do with networked code, chief amongst them being error handling and (again) [protocol evolution](Communication-Risk#protocol-risk).  
+There are plenty of [Complexity Risk](Complexity-Risk) perils in _anything_ to do with networked code, chief amongst them being error handling and (again) [protocol evolution](Communication-Risk#protocol-risk).  
 
 In the case of security considerations, exploits _thrive_ on the complexity of your code, and the weaknesses that occur because of it.  In particular, Schneier's Law says, never implement your own cryptographic scheme:
 
@@ -374,9 +374,14 @@ Luckily, most good languages include cryptographic libraries that you can includ
 
 This is a strong argument for the use of libraries.  But, when should you use a library and when should you implement yourself?  This is again covered in the section on [Software Dependency Risk](Software-Dependency-Risk).  
 
-tbd - next section.
+### Big Ball Of Mud
 
+Although Type-Systems help for avoiding [Communication Risk](Communication-Risk) in the small, when software systems grow large it becomes hard to communicate their intent and keep their degree of connectivity low.  
+
+> "A big ball of mud is a software system that lacks a perceivable architecture. Although undesirable from a software engineering point of view, such systems are common in practice due to business pressures, developer turnover and code entropy. " - [Big Ball Of Mud, _Wikipedia_](https://en.wikipedia.org/wiki/Big_ball_of_mud)
 
 costs associated with complexity risk
 
 CHANGE is also more risky why?
+
+https://en.wikipedia.org/wiki/Big_ball_of_mud
