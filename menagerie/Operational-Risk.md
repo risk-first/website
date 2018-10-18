@@ -142,7 +142,4 @@ Since our operation exists in a world of [Red Queen Risk](Scarcity-Risk#red-quee
 
 In a way, we are now back to where we started from, identifying [Dependency Risk](Dependency-Risk), [Feature Risk](Feature-Risk) and [Complexity Risk](Complexity-Risk) that hinders our operation, and mitigating it through tasks like _software development_.  Our safari of risk is finally complete, it's time to look back and what we've seen in [Staging and Classifying](Staging-and-Classifying).  
 
-
-
-
  

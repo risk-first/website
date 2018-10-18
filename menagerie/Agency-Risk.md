@@ -145,7 +145,7 @@ We're waking up to the realisation that our software systems need to work the sa
       
 tbd, How much do compilers do for you?   Now, they prevent many kinds of security error.  Libraries too.  
 
-      
+Security risk thrives on complexity.  As does Agency Risk generally.
 
 
 ## It's About Goals 
