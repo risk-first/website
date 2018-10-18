@@ -57,7 +57,7 @@ Even good developers have bad days, weeks or projects.  [Taking Action](Glossary
 
 ### How to Be a "10x Developer"
 
-The easiest way to be a "10x developer" is to have _done the job before_.  If you're coding in a familiar language, with familiar libraries and tools, delivering a cookie-cutter solution to a problem in the same manner you've done several times before, then _you will be a "10x developer" compared to _you doing it the first time_:
+The easiest way to be a "10x developer" is to have _done the job before_.  If you're coding in a familiar language, with familiar libraries and tools, delivering a cookie-cutter solution to a problem in the same manner you've done several times before, then you will be a "10x developer" compared to _you doing it the first time_:
  - There's no [Learning Curve Risk](Communication-Risk#learning-curve-risk), because you already learnt everything.
  - There's no [Dead End Risk](Complexity-Risk#dead-end-risk) because you already know all the right choices to make.     
 
@@ -79,7 +79,7 @@ Let's look at a quick example of this in action, taken from _Rapid Development_ 
 
 > Carl began to feel that his job was on the line. Coding proceeded fairly well, but a few areas needed redesign and reimplementation. The team hadn't coordinated design details in those areas well, and some of their implementations conflicted. At the 11-month oversight-committee meeting, Carl announced the fourth schedule slip— to 13 months. Bill became livid. "Do you have any idea what you're doing?" he yelled. "You obviously don't have any idea! You obviously don't have any idea when the project is going to be done! I'll tell you when it's going to be done! It's going to be done by the 13-month mark, or you're going to be out of a job! I'm tired of being jerked around by you software guys! You and your team are going to work 60 hours a week until you deliver!"  `(2)`
 
-> Carl felt his blood pressure rise, especially since Bill had backed him into an unrealistic schedule in the first place. But he knew that with four schedule slips under his belt, he had no credibility left. He felt that he had to knuckle under to the mandatory overtime or he would lose his job. Carl told his team about the meeting. They worked hard and managed to deliver the software in just over 13 months. Additional implementation uncovered additional design flaws, but with everyone working 60 hours a week, they delivered the product through sweat and sheer willpower. " - [McConnell, Steve, _Rapid Development_](http://amzn.eu/d/eTWKOsK)
+> Carl felt his blood pressure rise, especially since Bill had backed him into an unrealistic schedule in the first place. But he knew that with four schedule slips under his belt, he had no credibility left. He felt that he had to knuckle under to the mandatory overtime or he would lose his job. Carl told his team about the meeting. They worked hard and managed to deliver the software in just over 13 months. Additional implementation uncovered additional design flaws, but with everyone working 60 hours a week, they delivered the product through sweat and sheer willpower. " `(3)` - [McConnell, Steve, _Rapid Development_](http://amzn.eu/d/eTWKOsK)
 
 Despite this being a fictional or fictionalised example, it rings true for many projects.  From a Risk-First perspective, what happened here?
 
@@ -106,33 +106,33 @@ Take aways:
 > "The Project Management Triangle (called also the Triple Constraint, Iron Triangle and "Project Triangle") is a model of the constraints of project management. While its origins are unclear, it has been used since at least the 1950s.[1] It contends that:
 > - The quality of work is constrained by the project's budget, deadlines and scope (features).
 > - The project manager can trade between constraints.
-> - Changes in one constraint necessitate changes in others to compensate or quality will suffer." 
+> - Changes in one constraint necessitate changes in others to compensate or quality will suffer." - [Project Management Triangle, _Wikipedia_](https://en.wikipedia.org/wiki/Project_management_triangle)
 
-From a Risk-First perspective, we can now see that this is an over-simplification.  If quality is some kind of [Feature Risk]() metric, _deadlines_ is [Schedule Risk]() and _budget_ refers to [Funding Risk]() then that leaves us with a lot of risks unaccounted for:
+From a Risk-First perspective, we can now see that this is an over-simplification.  If _quality_ is a [Feature Fit](Feature-Risk) metric, _deadlines_ is [Schedule Risk](Scarcity-Risk#schedule-risk) and _budget_ refers to [Funding Risk](Scarcity-Risk#funding-risk) then that leaves us with a lot of risks unaccounted for:
 
- - I can deliver a project in very short order by building a bunch of screens that _do nothing_ (accruing _stunning levels of [Implementation Risk]() as I go). 
- - Or, by relying on a lottery win, I can completely mitigate the budgetary risks of a project.  (Although I would have _huge_ [Funding Risk]() because _what are the chances of winning the lottery?_.  (You can bring in _any_ project at _any_ time by accepting crazy levels of risk.
+ - I can deliver a project in very short order by building a bunch of screens that _do nothing_ (accruing _stunning levels of [Implementation Risk](Feature-Risk#implementation-risk) as I go). 
+ - Or, by relying on a lottery win, I can completely mitigate the budgetary risks of a project.  (Although I would have _huge_ [Funding Risk](Scarcity-Risk#funding-risk) because _what are the chances of winning the lottery?_.  (You can bring in _any_ project at _any_ time by accepting crazy levels of risk.
  - And Brooks' Law contradicts this by saying you can't trade budget for deadlines:
 
 > "Brooks' law is an observation about software project management according to which "adding human resources to a late software project makes it later". - [Brooks Law, _Wikipedia_](https://en.wikipedia.org/wiki/Brooks_law)
 
-tbd. brooks law as a risk first diagram.
+![Brooks' Law, Risk-First Style](images/generated/practices/estimates/brooks.png)
 
 Focusing on just these three variables isn't enough.  You can game these variables by sacrificing others:  we need to be looking at the project's risk _holistically_:
 
- - There's no point in calling a project complete if the dependencies you are using are [unreliable]() or [undergoing rapid change]() 
- - There's no point in delivering the project on time if it's an [Operational Risk]() nightmare, and requires constant round-the-clock support and will cost a fortune to _run_.  Working on a project that "hits it's delivery date" but is nonetheless a broken mess is a common sight.
+ - There's no point in calling a project complete if the dependencies you are using are [unreliable](Dependency-Risk) or [undergoing rapid change](Scarcity-Risk#red-queen-risk) 
+ - There's no point in delivering the project on time if it's an [Operational Risk](Operational-Risk) nightmare, and requires constant round-the-clock support and will cost a fortune to _run_.  (Working on a project that "hits it's delivery date" but is nonetheless a broken mess once in production is too common a sight.)
  - There's no point in delivering a project on-budget if [the market has moved on](Feature-Risk#market-risk) and [needs different features](Feature-Risk#feature-drift).  
  
 ## Agile Estimation
 
-One alternative approach, must espoused in DevOps/Agile is to pick a short-enough period of time (say, two days or two weeks), and figure out what the most meaningful step towards achieving an objective would be in that time.   By fixing the time period, we remove [Schedule Risk]() from the equation, don't we?
+One alternative approach, must espoused in DevOps/Agile is to pick a short-enough period of time (say, two days or two weeks), and figure out what the most meaningful step towards achieving an objective would be in that time.   By fixing the time period, we remove [Schedule Risk](Scarcity-Risk#schedule-risk) from the equation, don't we?
 
-Well, no.  First, how to choose the time period? [Schedule Risk]() tends to creep back in, in the form of something like [Man-Hours](https://en.wikipedia.org/wiki/Man-hour) or [Story Points](): 
+Well, no.  First, how to choose the time period? [Schedule Risk]() tends to creep back in, in the form of something like [Man-Hours](https://en.wikipedia.org/wiki/Man-hour) or [Story Points](https://www.atlassian.com/agile/project-management/estimation): 
 
 > "Story points rate the relative effort of work in a Fibonacci-like format: 0, 0.5, 1, 2, 3, 5, 8, 13, 20, 40, 100. It may sound counter-intuitive, but that abstraction is actually helpful because it pushes the team to make tougher decisions around the difficulty of work. " - [Story Points, _Atlassian_](https://www.atlassian.com/agile/project-management/estimation)
 
-Second, the strategy of picking the two-day action with the greatest [Payoff]() is _often good_.  After all, this is just [Gradient Descent](), and that's a perfectly good way for training [Machine Learning]() systems.  However, just like following a river downhill from the top of a mountain will _often_ get you to the sea, it probably won't take the shortest path, and sometimes you'll get stuck at a lake.  
+Second, the strategy of picking the two-day action with the greatest [Pay-Off](Glossary#pay-off) is _often good_.  After all, this is just [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent), and that's a perfectly good way for training [Machine Learning](https://en.wikipedia.org/wiki/Machine_learning) systems.  However, just like following a river downhill from the top of a mountain will _often_ get you to the sea, it probably won't take the shortest path, and sometimes you'll get stuck at a lake.  
 
 The choice of using gradient descent means that you have given up on [Goals](Glossary#goal-in-mind).  Essentially, we have here the difference between "Walking towards a destination" and "Walking downhill".  Or, a planned economy and a market economy.  But, we don't live in _either_: everyone lives in some mixture of the two:  our governments _have plans_ for big things like roads and hospitals, and taxes.  Other stuff, they leave to the whims of supply and demand. 
 
@@ -142,20 +142,20 @@ A project always ends up being the same.
 
 Let's figure out what we can take away from the above experiences:
 
- - The proverb of the 10x developer, and the difference made by experience implies that a lot of [Schedule Risk]() comes from [Learning Curve]() risk and [Dead End Risk]().  
- - The lesson from the Parkinson's Law was that by giving people a _time budget_, you absolve them from [Schedule Risk]().  This gives them one less dimension of risk to worry about, but means they end up taking all the time you give them, because they are optimising over the remaining risks.
+ - The proverb of the 10x developer, and the difference made by experience implies that a lot of [Schedule Risk](Scarcity-Risk#schedule-risk) comes from [Learning Curve](Communication-Risk#learning-curve-risk) risk and [Dead End Risk](Complexity-Risk#dead-end-risk).  
+ - The lesson from the Parkinson's Law was that by giving people a _time budget_, you absolve them from [Schedule Risk](Scarcity-Risk#schedule-risk).  This gives them one less dimension of risk to worry about, but means they end up taking all the time you give them, because they are optimising over the remaining risks.
  - The lesson from "Quality, Speed, Cost" is that actually, we need to be considering _all_ risks, not just some arbitrary milestones on a project plan.  Project plans can always be gamed, and you can always leave risks unaccounted for in order to hit the goals (good old [Map and Territory Risk](Map-and-territory-risk) strikes again).
  - Finally, the lesson from Agile development is that _just iterating_ is sometimes not as efficient as _using your intuition and experience_ to find a more optimal path.  
  
 How can we synthesize this knowledge, along with what we've learned into something that makes more sense?
 
-1.  Estimating is about _estimating [Pay Off]()_:  for a given [action]() or roadmap or business strategy, what  [Attendant Risks]() are we going to have when we get there?   Yes, we'll all be older (there _will be_ [Schedule Risk]()), but it's also about:
+1.  Estimating is about _estimating [Pay Off](Glossary#pay-off)_:  for a given [action](Glossary#taking-action) / roadmap / business strategy, what  [Attendant Risks](Glossary#attendant-risk) are we going to have when we get there?   Yes, we'll all be older (there _will be_ [Schedule Risk](Scarcity-Risk#schedule-risk)), but it's also about:
 
-  - What bets are we making about where the market will be?
+  - What bets are we making about where the [market](Feature-Risk#market-risk) will be?
   - What [Communication Risk](Communication-Risk) will we face explaining our product to people?
   - What [Feature Fit](Feature-Risk#feature-fit-risk) risks are we likely to have when we get there?
   - What [Complexity Risks](Complexity-Risk) will we face building our software?  How can we avoid it ending up as a [Big Ball Of Mud](Complexity-Risk#big-ball-of-mud)?
-  - What are the [Dead End Risks]()
+  - Where are we likely to face [Boundary Risks](Boundary-Risk) and [Dead End Risks](Complexity-Risk#dead-end-risk)
   
 2. Given that most risk is likely to be [Learning Curve Risk]() and [Dead End Risk](), how can we front-load this and tackle these earlier?   
  - Spike Solutions
