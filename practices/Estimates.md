@@ -16,7 +16,7 @@ Estimates are a huge source of contention in the software world:
 
 > "Typically, effort estimates are over-optimistic and there is a strong over-confidence in their accuracy. The mean effort overrun seems to be about 30% and not decreasing over time." - [Software Development Effort Estimation, _Wikipedia_](https://en.m.wikipedia.org/wiki/Software_development_effort_estimation).
 
-The problem with a developer answering a question such as:
+Why is it so bad?  The problem with a developer answering a question such as:
 
 > "How long will it take to deliver X"
 
@@ -24,9 +24,9 @@ Is the following:
 
  - The developer likely doesn't know what X is, and any description of it is inadequate anyway ([Invisibility Risk](Communication-Risk#invisibility-risk)).
  - The developer has a less-than-complete understanding of the environment he will be delivering X in ([Complexity Risk](Complexity-Risk)).
- - The developer has some vague ideas about how to do X, but he'll need to try out various approaches until he finds exactly the right one ([Boundary Risk](Boundary-Risk) and [Learning-Curve Risk](Communication-Risk#learning-curve-risk).
+ - The developer has some vague ideas about how to do X, but he'll need to try out various approaches until he finds exactly the right one ([Boundary Risk](Boundary-Risk) and [Learning-Curve Risk](Communication-Risk#learning-curve-risk)).
  - The developer has no idea what [Hidden Risk](Glossary#hidden-risk) will surface when he starts work on it.
- - The developer has no idea what will happen if he takes too long and misses the date by a day/week/month/year. ([Schedule Risk](Scarcity-Risk#schedule-risk))
+ - The developer has no idea what will happen if he takes too long and misses the date by a day/week/month/year ([Schedule Risk](Scarcity-Risk#schedule-risk)).
 
 ... and so on.  So, his estimate is both wrong, and entirely contingent on what exact risks appear.
 
@@ -57,7 +57,7 @@ Even good developers have bad days, weeks or projects.  [Taking Action](Glossary
 
 ### How to Be a "10x Developer"
 
-The easiest way to be a "10x developer" is to have _done the job before_.  If you're coding in a familiar language, with familiar libraries and tools, delivering a cookie-cutter solution to a problem in the same manner you've done several times before, then _you will be a "10x developer" compared to _you doing it the first time_.  The difference is the amount of [Learning Curve Risk](Communication-Risk#learning-curve-risk) and [Dead End Risk](Complexity-Risk#dead-end-risk) that you are facing.  
+The easiest way to be a "10x developer" is to have _done the job before_.  If you're coding in a familiar language, with familiar libraries and tools, delivering a cookie-cutter solution to a problem in the same manner you've done several times before, then _you will be a "10x developer" compared to _you doing it the first time_.  The difference is the amount of [Learning Curve Risk](Communication-Risk#learning-curve-risk) and [Dead End Risk](Complexity-Risk#dead-end-risk) that you are facing.     
 
 ### Old Saw #2: Parkinson's Law
 
@@ -73,15 +73,23 @@ This is why projects will _always_ take at least as long as is budgeted for them
 
 Let's look at a quick example of this in action, taken from _Rapid Development_ by Steve McConnell.  At the point of this excerpt, Carl (the Project Manager) has already slipped the project twice, and is meeting the project sponsor, Bill, to announce another:
 
-> ... At the 9-month mark, the team had completed detailed design, but coding still hadn't begun on some modules. It was clear that Carl couldn't make the 10-month schedule either. He announced the third schedule slip number— to 12 months. Bill's face turned red when Carl announced the slip, and the pressure from him became more intense. 
+> ... At the 9-month mark, the team had completed detailed design, but coding still hadn't begun on some modules. It was clear that Carl couldn't make the 10-month schedule either. He announced the third schedule slip number— to 12 months. Bill's face turned red when Carl announced the slip, and the pressure from him became more intense.   `(1)`
 
-> Carl began to feel that his job was on the line. Coding proceeded fairly well, but a few areas needed redesign and reimplementation. The team hadn't coordinated design details in those areas well, and some of their implementations conflicted. At the 11-month oversight-committee meeting, Carl announced the fourth schedule slip— to 13 months. Bill became livid. "Do you have any idea what you're doing?" he yelled. "You obviously don't have any idea! You obviously don't have any idea when the project is going to be done! I'll tell you when it's going to be done! It's going to be done by the 13-month mark, or you're going to be out of a job! I'm tired of being jerked around by you software guys! You and your team are going to work 60 hours a week until you deliver!" 
+> Carl began to feel that his job was on the line. Coding proceeded fairly well, but a few areas needed redesign and reimplementation. The team hadn't coordinated design details in those areas well, and some of their implementations conflicted. At the 11-month oversight-committee meeting, Carl announced the fourth schedule slip— to 13 months. Bill became livid. "Do you have any idea what you're doing?" he yelled. "You obviously don't have any idea! You obviously don't have any idea when the project is going to be done! I'll tell you when it's going to be done! It's going to be done by the 13-month mark, or you're going to be out of a job! I'm tired of being jerked around by you software guys! You and your team are going to work 60 hours a week until you deliver!"  `(2)`
 
 > Carl felt his blood pressure rise, especially since Bill had backed him into an unrealistic schedule in the first place. But he knew that with four schedule slips under his belt, he had no credibility left. He felt that he had to knuckle under to the mandatory overtime or he would lose his job. Carl told his team about the meeting. They worked hard and managed to deliver the software in just over 13 months. Additional implementation uncovered additional design flaws, but with everyone working 60 hours a week, they delivered the product through sweat and sheer willpower. " - [McConnell, Steve, _Rapid Development_](http://amzn.eu/d/eTWKOsK)
 
 Despite this being a fictional or fictionalised example, it rings true for many projects.  From a Risk-First perspective, what happened here?
 
-1.  
+At point `(1)`, Carl's tries to mitigate [Feature Risk](Feature-Risk) by increasing [Schedule Risk](Schedule-Risk), although he knows that Bill will trust him less for doing this, as shown below:
+
+![Carl's Schedule Slip increases Trust and Belief Risks](images/generated/practices/estimates/carl1.png)
+
+At point `(2)`, after the schedule slips again, Bill threatens Carl's job.  Why does he do this?   He 
+
+
+
+
 
 
 Take aways:

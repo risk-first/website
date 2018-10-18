@@ -23,7 +23,7 @@
         </context>
       
 
-        <action style="kite9-min-width: 150pt; ">1x Action</action>
+        <action id="a1" style="kite9-min-width: 150pt; ">1x Action</action>
         <context id="d">
           <risk class="schedule" />
           <risk class="complexity" />
@@ -38,22 +38,21 @@
 
       <group style="kite9-layout: right">
       
-         <context id="c" bordered="true" style="kite9-sizing: minimize;">
+         <context id="c" bordered="true" style="kite9-sizing: minimize; kite9-horizontal-align: right; ">
     
           <risk class="feature" />          
-          <risk class="dead-end" />
     
-          <label xsi:type="text-line" id="id_16">
+          <label xsi:type="text-line" id="id_16" style="kite9-horizontal-align: center;">
             <text>Internal Model</text>
             <symbols />
           </label>
         </context>
            
-        <action style="kite9-min-width: 150pt; ">10x Action</action>
-        <context id="d">
+        <action id="a2" style="kite9-min-width: 150pt; ">10x Action</action>
+        <context id="d" style="kite9-horizontal-align: left; kite9-sizing: minimize;">
           <risk class="schedule" />
 
-          <label xsi:type="text-line" id="4">
+          <label xsi:type="text-line" id="4" style="kite9-horizontal-align: center;">
             <text>Attendant Risks</text>
             <symbols />
           </label>
@@ -61,6 +60,11 @@
       </group>
 
     </group>
+
+   <link class="invisible">
+    <from reference="a1" />
+    <to reference="a2" />
+   </link>
 
   </diagram>
 </svg:svg>
