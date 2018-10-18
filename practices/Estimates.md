@@ -45,7 +45,7 @@ Let's try and pull this apart:
  - The "10x" developer _must_ also leave behind less of these kind of risks too.
  - That means that the "10X Developer" isn't merely faster, but _taking different actions_.  They are able to use their talent and experience to see actions with greater pay-off than the 1X Developer.  
  
-![1x Task vs 10x Task](images/generated/processes/estimating/1x-10x.png)
+![1x Task vs 10x Task](images/generated/practices/estimates/1x-10x.png)
 
 Debate rages as to whether the "10x Developer" even exists.  Crucially, it would seem that such a thing would be predicated on the existence of the "1X Developer", who gets "1x" worth of work done each day.  It's not clear that there is any such thing as an average developer who is mitigating risk at an average rate.  
 
@@ -57,7 +57,9 @@ Even good developers have bad days, weeks or projects.  [Taking Action](Glossary
 
 ### How to Be a "10x Developer"
 
-The easiest way to be a "10x developer" is to have _done the job before_.  If you're coding in a familiar language, with familiar libraries and tools, delivering a cookie-cutter solution to a problem in the same manner you've done several times before, then _you will be a "10x developer" compared to _you doing it the first time_.  The difference is the amount of [Learning Curve Risk](Communication-Risk#learning-curve-risk) and [Dead End Risk](Complexity-Risk#dead-end-risk) that you are facing.     
+The easiest way to be a "10x developer" is to have _done the job before_.  If you're coding in a familiar language, with familiar libraries and tools, delivering a cookie-cutter solution to a problem in the same manner you've done several times before, then _you will be a "10x developer" compared to _you doing it the first time_:
+ - There's no [Learning Curve Risk](Communication-Risk#learning-curve-risk), because you already learnt everything.
+ - There's no [Dead End Risk](Complexity-Risk#dead-end-risk) because you already know all the right choices to make.     
 
 ### Old Saw #2: Parkinson's Law
 
@@ -85,12 +87,13 @@ At point `(1)`, Carl's tries to mitigate [Feature Risk](Feature-Risk) by increas
 
 ![Carl's Schedule Slip increases Trust and Belief Risks](images/generated/practices/estimates/carl1.png)
 
-At point `(2)`, after the schedule slips again, Bill threatens Carl's job.  Why does he do this?   He 
+At point `(2)`, after the schedule slips again, Bill threatens Carl's job.  Why does he do this?  Because _he doesn't trust Carl's evaluation of the [Schedule Risk]()_.  By telling Carl that it's his job on the line, he makes sure Carl appreciates the [Schedule Risk](). However, forcing staff to do overtime is a dangerous ploy:  it could disenfranchise the staff, or cause corners to be cut:
 
+![Bill's Ultimatum](images/generated/practices/estimates/bill1.png)
 
+At point `(3)`, we see that Bill's gamble worked (for him at least):  the project was delivered on time by the team working overtime for two months.  This was lucky - it seems unlikely that no-one quit and that the code didn't descend into a mess in that time.  
 
-
-
+![Team Response](images/generated/practices/estimates/team1.png)
 
 Take aways:
  
