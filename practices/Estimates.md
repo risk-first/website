@@ -99,27 +99,31 @@ This is why projects will _always_ take at least as long as is budgeted for them
 
 ### A Case Study
 
-Let's look at a quick example of this in action, taken from _Rapid Development_ by Steve McConnell.  At the point of this excerpt, Carl (the Project Manager) has already slipped the project twice, and is meeting the project sponsor, Bill, to announce another:
+Let's look at a quick example of this in action, taken from [Rapid Development by Steve McConnell](http://amzn.eu/d/eTWKOsK).  At the point of this excerpt, Carl (the Project Manager) is discussing the schedule with Bill, the project sponsor: 
 
-> ... At the 9-month mark, the team had completed detailed design, but coding still hadn't begun on some modules. It was clear that Carl couldn't make the 10-month schedule either. He announced the third schedule slip number— to 12 months. Bill's face turned red when Carl announced the slip, and the pressure from him became more intense.   `(1)`
+> "I think it will take about 9 months, but that's just a rough estimate at this point," Carl said. "That's not going to work," Bill said. "I was hoping you'd say 3 or 4 months. We absolutely need to bring that system in within 6 months. Can you do it in 6?" `(1)`
 
-> Carl began to feel that his job was on the line. Coding proceeded fairly well, but a few areas needed redesign and reimplementation. The team hadn't coordinated design details in those areas well, and some of their implementations conflicted. At the 11-month oversight-committee meeting, Carl announced the fourth schedule slip— to 13 months. Bill became livid. "Do you have any idea what you're doing?" he yelled. "You obviously don't have any idea! You obviously don't have any idea when the project is going to be done! I'll tell you when it's going to be done! It's going to be done by the 13-month mark, or you're going to be out of a job! I'm tired of being jerked around by you software guys! You and your team are going to work 60 hours a week until you deliver!"  `(2)`
+Later in the story, the schedule has slipped twice and is about to slip again:
 
-> Carl felt his blood pressure rise, especially since Bill had backed him into an unrealistic schedule in the first place. But he knew that with four schedule slips under his belt, he had no credibility left. He felt that he had to knuckle under to the mandatory overtime or he would lose his job. Carl told his team about the meeting. They worked hard and managed to deliver the software in just over 13 months. Additional implementation uncovered additional design flaws, but with everyone working 60 hours a week, they delivered the product through sweat and sheer willpower. " `(3)` - [McConnell, Steve, _Rapid Development_](http://amzn.eu/d/eTWKOsK)
+> ... At the 9-month mark, the team had completed detailed design, but coding still hadn't begun on some modules. It was clear that Carl couldn't make the 10-month schedule either. He announced the third schedule slip number— to 12 months. Bill's face turned red when Carl announced the slip, and the pressure from him became more intense.   `(2)`
 
-Despite this being a fictional or fictionalised example, it rings true for many projects.  From a Risk-First perspective, what happened here?
-
-At point `(1)`, Carl's tries to mitigate [Feature Risk](Feature-Risk) by increasing [Schedule Risk](Schedule-Risk), although he knows that Bill will trust him less for doing this, as shown below:
+At point `(2)`, Carl's tries to mitigate [Feature Risk](Feature-Risk) by increasing [Schedule Risk](Schedule-Risk), although he knows that Bill will trust him less for doing this, as shown below:
 
 ![Carl's Schedule Slip increases Trust and Belief Risks](images/generated/practices/estimates/carl1.png)
 
-At point `(2)`, after the schedule slips again, Bill threatens Carl's job.  Why does he do this?  Because _he doesn't trust Carl's evaluation of the [Schedule Risk]()_.  By telling Carl that it's his job on the line, he makes sure Carl appreciates the [Schedule Risk](). However, forcing staff to do overtime is a dangerous ploy:  it could disenfranchise the staff, or cause corners to be cut:
+> Carl began to feel that his job was on the line. Coding proceeded fairly well, but a few areas needed redesign and reimplementation. The team hadn't coordinated design details in those areas well, and some of their implementations conflicted. At the 11-month oversight-committee meeting, Carl announced the fourth schedule slip— to 13 months. Bill became livid. "Do you have any idea what you're doing?" he yelled. "You obviously don't have any idea! You obviously don't have any idea when the project is going to be done! I'll tell you when it's going to be done! It's going to be done by the 13-month mark, or you're going to be out of a job! I'm tired of being jerked around by you software guys! You and your team are going to work 60 hours a week until you deliver!"  `(3)`
+
+At point `(3)`, after the schedule slips again, Bill threatens Carl's job.  Why does he do this?  Because _he doesn't trust Carl's evaluation of the [Schedule Risk]()_.  By telling Carl that it's his job on the line, he makes sure Carl appreciates the [Schedule Risk](). However, forcing staff to do overtime is a dangerous ploy:  it could disenfranchise the staff, or cause corners to be cut:
 
 ![Bill's Ultimatum](images/generated/practices/estimates/bill1.png)
 
-At point `(3)`, we see that Bill's gamble worked (for him at least):  the project was delivered on time by the team working overtime for two months.  This was lucky - it seems unlikely that no-one quit and that the code didn't descend into a mess in that time.  
+> Carl felt his blood pressure rise, especially since Bill had backed him into an unrealistic schedule in the first place. But he knew that with four schedule slips under his belt, he had no credibility left. He felt that he had to knuckle under to the mandatory overtime or he would lose his job. Carl told his team about the meeting. They worked hard and managed to deliver the software in just over 13 months. Additional implementation uncovered additional design flaws, but with everyone working 60 hours a week, they delivered the product through sweat and sheer willpower. " `(4)` - [McConnell, Steve, _Rapid Development_](http://amzn.eu/d/eTWKOsK)
+
+At point `(4)`, we see that Bill's gamble worked (for him at least):  the project was delivered on time by the team working overtime for two months.  This was lucky - it seems unlikely that no-one quit and that the code didn't descend into a mess in that time.  
 
 ![Team Response](images/generated/practices/estimates/team1.png)
+
+Despite this being a fictional (or fictionalised) example, it rings true for many projects.  What _should_ have happened at point `(1)`?  Both Carl and Bill estimated incorrectly...  Or did they? 
  
 ## Agile Estimation
 
@@ -179,6 +183,13 @@ If you were doing this same journey on foot, it's a very direct route, but would
 In the software development past, _building it yourself_ was the only way to get anything done.  It was like London _before road and rail_.   Nowadays, you are bombarded with choices.  It's actually _worse than London_ because it's not even a two-dimensional geographic space and there are _multitudes of options_.  Journey planning on the software [Risk Landscape](Glossary#risk-landscape) is an optimisation problem _par excellence_. 
 
 ![Possible Moves On The Risk Landscape](images/generated/practices/estimates/risk-landscape.png)
+
+Because the [Risk Landscape]() is so complex:
+
+ - There can be orders of magnitude difference in _time_, with very little difference in destination.
+ - Going the wrong way is _so much easier_.
+ - Dead-Ends (like a broken central line) are much more likely to trip you up.
+ - If it's [Schedule Risk]() you're worried about, _Code Yourself_ isn't a great solution (for the whole thing, anyway).  "Take the tube" and use something someone built already.  There are probably multiple alternatives you can consider.
    
 #### How Can We Meet Reality Early on the Biggest Risks?
 
@@ -195,15 +206,19 @@ As we saw from the "10x Developer" saw, [Learning Curve Risk](Communication-Risk
  - _Having a vocabulary_ (like the one Risk-First provides) allows us to _at least talk about these_.  e.g. "I believe there is a [Dead End Risk]() that we might not be able to get this software to run on Linux."
  - Build mock-ups:  
    - UI wireframes allow us to bottom out the [Communication Risk](Communication-Risk) of the interfaces we build.  
-   - Spike Solutions allow us to test algorithms and approaches before making them part of the main development.
- - Don't pick delivery dates far in the future.  Collectively work out the biggest risks and concerns with your clients, and then demonstrate how you mitigated them.  
+   - [Spike Solutions]() allow us to test algorithms and approaches before making them part of the main development.
+ - Don't pick delivery dates far in the future.  Collectively work out the biggest risks with your clients, and then arrange the next possible date to demonstrate the mitigation.  
+ - Do actions _early_ that are _simple_ but are nevertheless show-stoppers.  They are as much a source of [Hidden Risk]() as more obviously tricky actions. 
 
-####  Talk Frankly About All The Risks
+#### Talk Frankly About All The Risks
 
+Finally, let's get back to Bill and Carl.  What went wrong between excerpts `(1)` and `(2)`?   Let's break it down:
 
-
- - If the task that's been given is clearly impossible, does that mean it's been misunderstood?  
-
+ - Bill _wants_ the system in 3-4 months.  It doesn't happen.  
+ - He says it "must be delivered in 6 months", but this doesn't happen either.  However, the world (and the project) doesn't end: _it carries on_.   What does this mean about the truth of his statement?
+ - Carl's original estimate was 9 months.   Was he working to this all along?  Did the initial brow-beating over deadlines contribute to [Agency Risk]() in a way that _didn't_ happen at point `(2)`?
+ - Why _did_ Bill get so angry?  It's not stated in the account, but it's likely the [Trust Risk](Communication-Risk#trust-risk) moved upwards.  Did his superiors stop trusting him?  Was his job at stake?
+ - How could including these risks in the discussion have improved the planning process?
 
 Carl, a project manager, and Bill
 
