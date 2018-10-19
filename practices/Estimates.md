@@ -161,6 +161,24 @@ Instead of the Agile Estimation being about picking out a story-point number bas
  - "I think this task is problematic because it's going to massively increase our [Dependency Risk]() to add a new database here."
  - "I don't think we should have component A interacting with component B because it'll introduce extra [Communication Risk]() which we will always be tripping over."
  - "I worry we might not understand what the sales team want and are facing [Implementation Risk]().  How about we try and get agreement on a specification?"  
+ 
+#### The Risk Landscape is Increasingly Complex
+
+![Journey via the Central Line](images/estimates/central-line.png)
+
+If you were travelling across London from Ealing (in the West) to Stratford (in the East) the _fastest_ route might be to take the Central Line.  You could do it via the A406 road, which would take a _bit_ longer.  It would _feel_ like you're mainly going in completely the wrong direction doing that, but it's much faster than cutting straight through London and you don't pay the congestion charge.
+
+![Journey by Car](images/estimates/car.png)
+
+In terms of risk, they all have different profiles.  You're often delayed in the car, by some amount.  The tube is _generally_ reliable, but when it breaks down or is being repaired it might end up quicker to walk.  
+
+If you were doing this same journey on foot, it's a very direct route, but would take five times longer.  However, if you were making this journey a hundred years ago, that might be the way you chose (horseback might be a bit faster).
+
+![Journey on Foot](images/estimates/foot.png)
+ 
+In the software development past, _building it yourself_ was the only way to get anything done.  It was like London _before road and rail_.   Nowadays, you are bombarded with choices.  It's actually _worse than London_ because it's not even a two-dimensional geographic space and there are _multitudes of options_.  Journey planning on the software [Risk Landscape](Glossary#risk-landscape) is an optimisation problem _par excellence_. 
+
+![Possible Moves On The Risk Landscape](images/generated/practices/estimates/risk-landscape.png)
    
 #### How Can We Meet Reality Early on the Biggest Risks?
 
@@ -189,25 +207,6 @@ As we saw from the "10x Developer" saw, [Learning Curve Risk](Communication-Risk
 
 Carl, a project manager, and Bill
 
-
-#### The Risk Landscape is Increasingly Complex
-
-![Journey via the Central Line](images/estimates/central-line.png)
-
-If you were travelling across London from Ealing (in the West) to Stratford (in the East) the _fastest_ route might be to take the Central Line.  You could do it via the A406 road, which would take a _bit_ longer.  It would _feel_ like you're mainly going in completely the wrong direction doing that, but it's much faster than cutting straight through London and you don't pay the congestion charge.
-
-![Journey by Car](images/estimates/car.png)
-
-In terms of risk, they all have different profiles.  You're _likely_ to be delayed in the car, by some amount.  The tube is _generally_ reliable, but when it breaks down or is being repaired it might end up quicker to walk.  
-
-If you were doing this same journey on foot, it's a very direct route, but would take five times longer.  However, if you were making this journey a hundred years ago, that might be the way you chose (horseback might be a bit faster).
-
-![Journey on Foot](images/estimates/foot.png)
- 
-In the software development past, _building it yourself_ was the only way to get anything done.  It was like London _before road and rail_.   Nowadays, you are bombarded with choices.  
-
-
-![Moves On The Risk Landscape](images/generated/practices/estimates/risk-landscape.png)
 
 
 
