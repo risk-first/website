@@ -29,7 +29,12 @@ allLinks {
 
 action {
 	kite9-type: container;
-	kite9-template: url(template.svg#action)
+	kite9-template: url(template.svg#action);
+	kite9-sizing: minimize;
+}
+
+action.left {
+	kite9-template: url(template.svg#action-left)	
 }
 
 artifact {
@@ -152,10 +157,6 @@ risk.misinterpretation {
 
 risk.trust {
 	kite9-template: url(template.svg#trust);
-}
-
-risk.belief {
-	kite9-template: url(template.svg#belief);
 }
 
 risk.learning-curve {
@@ -474,6 +475,10 @@ link {
 
 link.invisible {
 	kite9-template: url(template.svg#invisible-link);
+}
+
+link.dotted {
+	kite9-template: url(template.svg#dotted-link);
 }
 
 from,

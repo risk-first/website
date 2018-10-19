@@ -29,7 +29,7 @@ public class LinkChecker {
 	
 	static String websitePrefix = null;
 	
-	static class Target implements Comparable<Target>{
+	static class Link implements Comparable<Link>{
 		
 		final File file;
 		final int line;
@@ -37,7 +37,7 @@ public class LinkChecker {
 		final String text;
 		final boolean image;
 		
-		public Target(File file, int line, String link, String text, boolean image) {
+		public Link(File file, int line, String link, String text, boolean image) {
 			super();
 			this.file = file;
 			this.line = line;
@@ -58,7 +58,7 @@ public class LinkChecker {
 		}
 
 		@Override
-		public int compareTo(Target o) {
+		public int compareTo(Link o) {
 			if (this.file.equals(o.file)) {
 				if (this.link.equals(o.link)) {
 					return ((Integer)this.line).compareTo(o.line);
@@ -74,83 +74,83 @@ public class LinkChecker {
 	}
 
 	public static void main(String[] args) throws Exception {
-		PrintStream bw = new PrintStream(new FileOutputStream(new File("links.csv")));
-		PrintStream tbw = new PrintStream(new FileOutputStream(new File("targets.csv")));
-
+		PrintStream linkWriter = new PrintStream(new FileOutputStream(new File("links.csv")));
+		PrintStream targetWriter = new PrintStream(new FileOutputStream(new File("targets.csv")));
+		
+		
 		Kite9Log.setLogging(false);
-		Set<String> links = new HashSet<>();
+		Set<String> targetSet = new HashSet<>();
 		
 		
-		SortedSet<Target> targets = new TreeSet<>();
+		SortedSet<Link> linkSet = new TreeSet<>();
 
 		for (String arg : args) {
 			if (websitePrefix == null) {
 				websitePrefix = arg;
 				File f = new File(arg);
-				process(f, links, targets, bw, true);
+				process(f, targetSet, linkSet, linkWriter, false);
 			} else {
 				File f = new File(arg);
-				process(f, links, targets, bw, false);
+				process(f, targetSet, linkSet, linkWriter, true);
 			}
 		}
 		
-		Set<Target> externals = new HashSet<>();
+		Set<Link> externals = new HashSet<>();
 		
-		// now, we can remove targets that are ok
-		for (Iterator<Target> iterator = targets.iterator(); iterator.hasNext();) {
-			Target target = iterator.next();
-			if (links.contains(target.link)) {
-				//bw.println("FOUND,"+target);
+		// now, we can remove links that are ok
+		for (Iterator<Link> iterator = linkSet.iterator(); iterator.hasNext();) {
+			Link l = iterator.next();
+			if (targetSet.contains(l.link)) {
 				iterator.remove();
-			} else if (target.link.startsWith("http")) {
-				externals.add(target);
+			} else if (l.link.startsWith("http")) {
+				externals.add(l);
 				iterator.remove();
 			} else {
-				bw.println("NOT_FOUND,"+target);
+				linkWriter.println("NOT_FOUND,"+l);
 			}
 		}
 		
-		for (Target target : externals) {
-			//bw.println("EXTERNAL,"+target);
+		for (Link l : externals) {
+			//bw.println("EXTERNAL,"+l);
 		}
 		
-		List<String> sorted = new ArrayList<>(links);
+		List<String> sorted = new ArrayList<>(targetSet);
 		Collections.sort(sorted);
-		for (String link : sorted) {
- 			tbw.println(link);
+		for (String t : sorted) {
+ 			targetWriter.println(t);
 		}
 		
-		System.out.println("Breaks: "+targets.size());
-		bw.close();
-		tbw.close();
+		System.out.println("Breaks: "+linkSet.size());
+		linkWriter.close();
+		targetWriter.close();
 	}
 	
-	public static void process(File f, Set<String> links, Set<Target> targets, PrintStream bw, boolean destinationsOnly) throws Exception {
+	public static void process(File f, Set<String> targetSet, Set<Link> linkSet, PrintStream bw, boolean processLinks) throws Exception {
 		if (f.isDirectory()) {
 			for (File f2 : f.listFiles()) {
-				process(f2, links, targets, bw, destinationsOnly);
+				process(f2, targetSet, linkSet, bw, processLinks);
 			}
 			
 		} else if (f.getName().endsWith(".md")) {
 			BufferedReader br = createBufferedReader(f);
-			links.add(createMDLink(f.getName(), null));
+			targetSet.add(createMDLink(f.getName(), null));
 			int line = 0;
 			String content = null;
 			do {
 				if (content != null) {
 					// this only checks the one type of link like [dsfs](link).
 					
-					if (!destinationsOnly) {
+					if (processLinks) {
 						TextPreprocessor.processLinks(content, 
 							(link, text, url, image, lineNo) -> {
-								targets.add(new Target(f, lineNo, url.toLowerCase(), text, image));
+								linkSet.add(new Link(f, lineNo, url.toLowerCase(), text, image));
 							}, line, (s) -> {});
 					}
 					
 					LinkChecker.processTargets(content, 
 						(title, depth, lineNo) -> {
 							String link = createMDLink(f.getName(), title);
-							links.add(link);
+							targetSet.add(link);
 						}, line, bw);
 				}
 				content = br.readLine();
@@ -158,7 +158,9 @@ public class LinkChecker {
 			} while (content!=null);
 			
 		} else if (f.getName().endsWith(".png")) {
-			links.add(createImageLink(f.getPath()));
+			targetSet.add(createImageLink(f.getPath()));
+		} else if (f.getName().endsWith(".jpg")) {
+			targetSet.add(createImageLink(f.getPath()));
 		}
 	}
 	
