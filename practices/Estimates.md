@@ -221,7 +221,9 @@ Let's get back to Bill and Carl.  What went wrong between points `(1)` and `(2)`
  - **How could including this risk in the discussion have improved the planning process?**  Could the conversation have started like this instead?
 
 > "I think it will take about 9 months, but that's just a rough estimate at this point," Carl said. "That's not going to work," Bill said. "I was hoping you'd say 3 or 4 months.  I need to show the board something by then or I'm worried they will lose confidence in me and this project".  
+
 > "OK," said Carl.  "But I'm really concerned we have huge [Feature Fit Risk](Feature-Risk#feature-fit-risk).  The task of understanding the requirements and doing the design is massive."
+
 > "Well, in my head it's actually pretty simple, " said Bill. "Maybe I don't have the full picture, or maybe your idea of what to build is more complex than I think it needs to be.  That's a massive risk right there and I think we should try and mitigate it right now before things progress.  Maybe I'll need to go back to the board if it's worse than I think. 
 
 ![Identifying The Action](images/generated/practices/estimates/bill2.png)
