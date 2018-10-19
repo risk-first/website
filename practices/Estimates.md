@@ -1,6 +1,6 @@
 ![Under Construction](images/state/uc.png)
 
-In this section, we're going to put a Risk-First spin on the process of [Estimating](Estimates).  But, in order to get there, we first need to start with understanding _why_ we estimate, and some history around why this has been so problematic in the software world.
+In this section, we're going to put a Risk-First spin on the process of [Estimating](Estimates).  But, in order to get there, we first need to start with understanding _why_ we estimate.  We're going to look at some "Old Saws" of software estimation and what we can learn from them.  Finally, we'll bring our Risk-First menagerie to bear on de-risking the estimation process.
 
 ## The Purpose Of Estimating
 
