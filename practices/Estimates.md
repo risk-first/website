@@ -23,12 +23,14 @@ Why is it so bad?  The problem with a developer answering a question such as:
 Is the following:
 
  - The developer likely doesn't know what X is, and any description of it is inadequate anyway ([Invisibility Risk](Communication-Risk#invisibility-risk)).
- - The developer has a less-than-complete understanding of the environment he will be delivering X in ([Complexity Risk](Complexity-Risk)).
+ - The developer has a less-than-complete understanding of the environment he will be delivering X in ([Complexity Risk](Complexity-Risk) and [Map And Territory Risk](Map-And-Territory-Risk).
  - The developer has some vague ideas about how to do X, but he'll need to try out various approaches until he finds exactly the right one ([Boundary Risk](Boundary-Risk) and [Learning-Curve Risk](Communication-Risk#learning-curve-risk)).
  - The developer has no idea what [Hidden Risk](Glossary#hidden-risk) will surface when he starts work on it.
  - The developer has no idea what will happen if he takes too long and misses the date by a day/week/month/year ([Schedule Risk](Scarcity-Risk#schedule-risk)).
 
-... and so on.  So, his estimate is both wrong, and entirely contingent on what exact risks appear.
+... and so on.  
+
+The reason the estimate of _time_ is wrong is because [All Activity Is About Mitigating Risk](All-Risk-Management) and the estimate of _risk_ is wrong.
 
 It's a problem as old as software itself, and in deference to that, let's examine the estimating problem via some "Old Saws".
 
