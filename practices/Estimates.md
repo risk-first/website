@@ -6,9 +6,9 @@ In this section, we're going to put a Risk-First spin on the process of [Estimat
 
 Why bother estimating at all?   There are two reasons why estimates are useful:
 
-1.  **To allow for the creation of _events_.**  As we saw in [Deadline Risk](), if we can put a date on something, we can mitigate lots of [Coordination Risk](Coordination-Risk). Having a _release date_ for a product allows whole teams of people to coordinate their activities in ways that hugely reduce the need for [Communication](Communication-Risk).  Much like "attack at dawn" allows disparate units of an army to avoid lots of the [Coordination Risk]() inherent in "attack on my signal".  
+1.  **To allow for the creation of _events_.**  As we saw in [Deadline Risk](Deadline-Risk), if we can put a date on something, we can mitigate lots of [Coordination Risk](Coordination-Risk). Having a _release date_ for a product allows whole teams of people to coordinate their activities in ways that hugely reduce the need for [Communication](Communication-Risk).  Much like "attack at dawn" allows disparate units of an army to avoid lots of the [Coordination Risk]() inherent in "attack on my signal".  This is a _good reason for estimating_, because by using events you are mitigating risk.  This is often called a _hard deadline_.
 
-2.  **To allow for the estimation of the [Pay-Off](Glossary#payoff) of an [action](Glossary#taking-action).**  However, as we already saw, [Pay-Off](Glossary#pay-off) isn't just about figuring out [Schedule Risk](Scarcity-Risk#schedule-risk) - you should be looking at all the other [Attendant Risks]() of the action too.  
+2.  **To allow for the estimation of the [Pay-Off](Glossary#payoff) of an [action](Glossary#taking-action).**  This is a _bad reason for estimating_, as we will discuss in detail below.  But briefly, the main issue is that [Pay-Off](Glossary#pay-off) isn't just about figuring out [Schedule Risk](Scarcity-Risk#schedule-risk) - you should be looking at all the other [Attendant Risks](Glossary#attendant-risk) of the action too.  
 
 ## How Estimates Fail
 
@@ -97,7 +97,7 @@ At point `(3)`, we see that Bill's gamble worked (for him at least):  the projec
 
 Take aways:
  
- - There's no fixed amount of time something will take.
+ - There's no fixed amount of time something will take.  It's not clear why the project needed to take thirteen months, or any number.   
  - If you give someone a period of time to do something, it'll either take that amount of time, or longer.
  - Don't wait until 9 months to meet reality.
 
@@ -147,9 +147,9 @@ Let's figure out what we can take away from the above experiences:
  - The lesson from "Quality, Speed, Cost" is that actually, we need to be considering _all_ risks, not just some arbitrary milestones on a project plan.  Project plans can always be gamed, and you can always leave risks unaccounted for in order to hit the goals (good old [Map and Territory Risk](Map-and-territory-risk) strikes again).
  - Finally, the lesson from Agile development is that _just iterating_ is sometimes not as efficient as _using your intuition and experience_ to find a more optimal path.  
  
-How can we synthesize this knowledge, along with what we've learned into something that makes more sense?
+How can we synthesise this knowledge, along with what we've learned into something that makes more sense?
 
-1.  Estimating is about _estimating [Pay Off](Glossary#pay-off)_:  for a given [action](Glossary#taking-action) / roadmap / business strategy, what  [Attendant Risks](Glossary#attendant-risk) are we going to have when we get there?   Yes, we'll all be older (there _will be_ [Schedule Risk](Scarcity-Risk#schedule-risk)), but it's also about:
+1.  Estimating should be about _estimating [Pay Off](Glossary#pay-off)_:  for a given [action](Glossary#taking-action) / road-map / business strategy, what  [Attendant Risks](Glossary#attendant-risk) are we going to have when we get there?   Yes, we'll all be older (there _will be_ [Schedule Risk](Scarcity-Risk#schedule-risk)), but it's also about:
 
   - What bets are we making about where the [market](Feature-Risk#market-risk) will be?
   - What [Communication Risk](Communication-Risk) will we face explaining our product to people?
@@ -158,10 +158,13 @@ How can we synthesize this knowledge, along with what we've learned into somethi
   - Where are we likely to face [Boundary Risks](Boundary-Risk) and [Dead End Risks](Complexity-Risk#dead-end-risk)
   
 2. Given that most risk is likely to be [Learning Curve Risk]() and [Dead End Risk](), how can we front-load this and tackle these earlier?   
- - Spike Solutions
+ - _Having a vocabulary_ (like the one Risk-First provides) allows us to do this.
+ - Spike Solutions 
  -     
  
-3.  How can we meet reality early, as often as possible?
+3. How can we meet reality early on the biggest risks?
+
+Imagine that all the [Attendant Risks](Glossary#attendant-risk) are links in a chain, and in order for your course of action to work, all the links in the chain have to hold.  The _sensible_ approach would be to test the links _in order from weakest to strongest_.  This means working out how to meet reality for each risk in turn.  Often, a _strategy_ will be broken up into multiple actions.  _Which are the riskiest actions?_  Figure this out, using the Risk-First vocabulary and the best experience you can bring to bear, then, perform the actions which [Pay Off](Glossary#pay-off) the biggest risks first.  
 
 4.  Talk Frankly About the Risks
  - If the task that's been given is clearly impossible, does that mean it's been misunderstood?  
@@ -169,6 +172,11 @@ How can we synthesize this knowledge, along with what we've learned into somethi
 
 Carl, a project manager, and Bill
 
+
+5.  The Risk Landscape is increasingly complex
+
+
+![Moves On The Risk Landscape](images/generated/practices/estimates/risk-landscape.png)
 
 
 

@@ -29,7 +29,12 @@ allLinks {
 
 action {
 	kite9-type: container;
-	kite9-template: url(template.svg#action)
+	kite9-template: url(template.svg#action);
+	kite9-sizing: minimize;
+}
+
+action.left {
+	kite9-template: url(template.svg#action-left)	
 }
 
 artifact {
