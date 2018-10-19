@@ -212,15 +212,13 @@ As we saw from the "10X Developer" saw, [Learning Curve Risk](Communication-Risk
 
 #### Talk Frankly About All The Risks
 
-Finally, let's get back to Bill and Carl.  What went wrong between excerpts `(1)` and `(2)`?   Let's break it down:
+Let's get back to Bill and Carl.  What went wrong between points `(1)` and `(2)`?   Let's break it down:
 
  - **Bill _wants_ the system in 3-4 months.**  It doesn't happen.  
  - **He says it "must be delivered in 6 months", but this doesn't happen either.**  However, the world (and the project) doesn't end: _it carries on_.   What does this mean about the truth of his statement?  Was he deliberately lying, or just espousing his view on the [Schedule Risk](Scarcity-Risk#schedule-risk)?
  - **Carl's original estimate was 9 months.**   Was he working to this all along?  Did the initial brow-beating over deadlines at point `(1)` contribute to [Agency Risk](Agency-Risk) in a way that _didn't_ happen at point `(2)`?
  - **Why _did_ Bill get so angry?**  His understanding of the [Schedule Risk](Scarcity-Risk#schedule-risk) was, if anything, _worse_ than Carl's.  It's not stated in the account, but it's likely the [Trust Risk](Communication-Risk#trust-risk) moved upwards:  Did his superiors stop trusting him?  Was his job at stake?
- - How could including this risk in the discussion have improved the planning process?
-
-Could the conversation have started like this instead?
+ - **How could including this risk in the discussion have improved the planning process?**  Could the conversation have started like this instead?
 
 > "I think it will take about 9 months, but that's just a rough estimate at this point," Carl said. "That's not going to work," Bill said. "I was hoping you'd say 3 or 4 months.  I need to show the board something by then or I'm worried they will lose confidence in me and this project".  
 > "OK," said Carl.  "But I'm really concerned we have huge [Feature Fit Risk](Feature-Risk#feature-fit-risk).  The task of understanding the requirements and doing the design is massive."
