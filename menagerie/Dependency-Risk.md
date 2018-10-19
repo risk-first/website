@@ -48,7 +48,7 @@ Our economic system and our software systems exhibit the same tendency-towards-c
 
 ![Reliability Risk](images/generated/reliability-risk.png)
 
-[Deadline Risk](Scarcity-Risk#Deadline-Risk) is really a kind of reliability issue: if you can understand which parties are unreliable, you have a much better handle on your [Deadline Risk](Scarcity-Risk#Deadline-Risk). 
+[Deadline Risk](Deadline-Risk) is really a kind of reliability issue: if you can understand which parties are unreliable, you have a much better handle on your [Deadline Risk](Deadline-Risk). 
 
 Luckily, there is quite a lot of existing science around reliability.  For example:
   

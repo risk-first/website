@@ -10,14 +10,14 @@ If you've been reading closely, you'll notice that a number of themes come up ag
 
 ## The Power Of Abstractions
 
-[Abstraction](Glossary#abstraction) appears as a concept continually throughout the book, whether we are looking at [Communication](Communication-Risk), [Complexity Metrics](Complexity-Risk#kolmogorov-complexity), [Map and Territory Risk](Map-And-Territory-Risk) or how it causes [Boundary Risk](Boundary-Risk).  And, so far, we've looked at some complicated examples of abstractions, such as [network protocols](Communication-Risk#network), [dependencies on technology](Software-Dependency-Risk#software-tools) or [Business Processes](Process-Risk#the-purpose-of-process).
+[Abstraction](Glossary#abstraction) appears as a concept continually throughout the book, whether we are looking at [Communication](Communication-Risk), [Complexity Metrics](Complexity-Risk#kolmogorov-complexity), [Map and Territory Risk](Map-And-Territory-Risk) or how it causes [Boundary Risk](Boundary-Risk).  And, so far, we've looked at some complicated examples of abstractions, such as [network protocols](Communication-Risk#protocols), [dependencies on technology](Software-Dependency-Risk#software-tools) or [Business Processes](Process-Risk#the-purpose-of-process).
 
 There's a good reason for this repetition.   Abstraction is at the heart of _everything we do within software_.  So, let's now _generalize_ what is happening with abstraction, but have in mind a really simple example:  having a name for something.   So, at the simplest end, you might be simply _naming a pattern_ of behaviour we see in the real world, such as "Binge Watching" or "Remote Working", or naming a category of insects as "Beetles".
 
 ### Using An Existing Abstraction means:
 
- - **Mitigating [Feature Risk]():** Because the abstraction is providing you with something _useful_.
- - **Living with [Dependency Risk]():**  We depend on a word in our language, or a function in our library, or a service on the Internet.  But all of these things are _unreliable_.  The word might not communicate what you want it to, or be understood by the audience, the function might not work, the service might be down.  Also, language _changes_ and _evolves_, and the words you are using now might not always mean what you want them to mean.  Software too changes and evolves.  We've seen this in [Red Queen Risk](Scarcity-Risk#red-queen-risk) and [Feature Drift Risk](Feature-Risk#feature-drift-risk).
+ - **Mitigating [Feature Risk](Feature-Risk):** Because the abstraction is providing you with something _useful_.
+ - **Living with [Dependency Risk](Dependency-Risk):**  We depend on a word in our language, or a function in our library, or a service on the Internet.  But all of these things are _unreliable_.  The word might not communicate what you want it to, or be understood by the audience, the function might not work, the service might be down.  Also, language _changes_ and _evolves_, and the words you are using now might not always mean what you want them to mean.  Software too changes and evolves.  We've seen this in [Red Queen Risk](Scarcity-Risk#red-queen-risk) and [Feature Drift Risk](Feature-Risk#feature-drift-risk).
  - **Accepting [Communication Risk](Communication-Risk).** : Because if you are using the abstraction in conversation, the people you are using it with _need to understand it too_. 
  - **Accepting [Map and Territory Risk](Map-And-Territory-Risk)**: Because the abstraction is a simplification, and not the actual thing itself.
  
@@ -26,7 +26,7 @@ There's a good reason for this repetition.   Abstraction is at the heart of _eve
 ### Inventing A New Abstraction means:  
 
 - **Mitigating [Feature Risk](Feature-Risk).**  These abstractions are [Features](Feature-Risk) in the sense that other people can choose to use them, if they fit their requirements.  
-- **Creating a [Protocol](Communication-Risk#protocol).**  At the very simplest level (again), this is just introducing _new words to a language_.   Therefore, we create [Protocol Risk](Communication-Risk#protocol-risk):  what if the person we are communicating with _doesn't_ know this word?  
+- **Creating a [Protocol](Communication-Risk#protocols).**  At the very simplest level (again), this is just introducing _new words to a language_.   Therefore, we create [Protocol Risk](Communication-Risk#protocol-risk):  what if the person we are communicating with _doesn't_ know this word?  
 - **Increasing [Complexity Risk](Complexity-Risk).** Because, the more words we have, the more complex the language is.
 - **Creating [Boundary Risk](Boundary-Risk).**  By naming something, you _implicitly_ create a boundary, because the world is now divided into "things which _are_ X" and "things which _are not_ X".   Sometimes, this abstraction may literally end up having a physical boundary to enforce this division (such as, "My Property / Not My Property"). _Boundary Risk is created by abstractions._
     
@@ -34,9 +34,9 @@ There's a good reason for this repetition.   Abstraction is at the heart of _eve
 
 ### Choosing Between Abstractions means:
 
- - **Overcoming a [Learning Curve](Communication-Risk#learning-curve)**:  Because you have to _learn_ a name in order to use it (whether a function, a dog, or the name of someone at a party).
+ - **Overcoming a [Learning Curve](Communication-Risk#learning-curve-risk)**:  Because you have to _learn_ a name in order to use it (whether a function, a dog, or the name of someone at a party).
  - **Accepting [Boundary Risks](Boundary-Risk).**  Just using _a single word_ means accepting the whole _ecosystem_ of the language the word is in.  Using _French words_ means the [Boundary Risk](Boundary-Risk) of the French Language. 
- - **Accepting [Map And Territory Risk]().** Because the word refers to the _concept_ of the thing, and _not the thing itself_.
+ - **Accepting [Map And Territory Risk](Map-And-Territory-Risk).** Because the word refers to the _concept_ of the thing, and _not the thing itself_.
 
 ![Choosing an Abstraction](images/generated/staging-and-classifying/choosing-abstraction.png)
 

@@ -128,14 +128,14 @@ Interestingly, security is handled in very similar ways at all sorts of levels:
 - **Walls**: defences _around_ the complex system, to protect it's parts from the external environment.  
 - **Doors**: ways to get _in_ and _out_ of the complex system, possibly with _locks_.
 - **Guards**: to make sure only the right things go in and out.  (i.e. to try and keep out _Bad Actors_).
-- **Police**: to defend from _within_ the system, against [Agency Risk]() and _invaders_.
+- **Police**: to defend from _within_ the system, against [Agency Risk](Agency-Risk) and _invaders_.
 - **Subterfuge**: Hiding, camouflage, disguises, pretending to be something else. tbd   
 
 These work various levels in our own bodies:  our _cells_ have _cell walls_ around them, and _cell membranes_ that act as the guards to allow things in and out.  Our _bodies_ have _skin_ to keep the world out, and we have _mouths_, _eyes_, _pores_ and so on to allow things in and out.  We have an _immune system_ to act as the police.
 
 Our societies work in similar ways: in medieval times, a city would have walls, guards and doors to keep out intruders.  Nowadays, we have customs control, borders and passports.
 
-We're waking up to the realisation that our software systems need to work the same way:  we have [Firewalls]() to protect our organisations, we lock down _ports_ on servers to ensure there are the minimum number of doors to guard and we _police_ the servers ourselves with monitoring tools and anti-virus software.  
+We're waking up to the realisation that our software systems need to work the same way:  we have [Firewalls](https://en.wikipedia.org/wiki/Firewall_(computing)) to protect our organisations, we lock down _ports_ on servers to ensure there are the minimum number of doors to guard and we _police_ the servers ourselves with monitoring tools and anti-virus software.  
 
     - Security Risk
       - Hacking
