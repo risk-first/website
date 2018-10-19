@@ -224,11 +224,11 @@ Let's get back to Bill and Carl.  What went wrong between points `(1)` and `(2)`
 
 > "OK," said Carl.  "But I'm really concerned we have huge [Feature Fit Risk](Feature-Risk#feature-fit-risk).  The task of understanding the requirements and doing the design is massive."
 
-> "Well, in my head it's actually pretty simple, " said Bill. "Maybe I don't have the full picture, or maybe your idea of what to build is more complex than I think it needs to be.  That's a massive risk right there and I think we should try and mitigate it right now before things progress.  Maybe I'll need to go back to the board if it's worse than I think. 
+> "Well, in my head it's actually pretty simple, " said Bill. "Maybe I don't have the full picture, or maybe your idea of what to build is more complex than I think it needs to be.  That's a massive risk right there and I think we should try and mitigate it right now before things progress.  Maybe I'll need to go back to the board if it's worse than I think. "
 
 ![Identifying The Action](images/generated/practices/estimates/bill2.png)
 
-#### Talk About Dates, And What's Needed For Them
+#### Talk About The Future, And What Would be Most Worrying About it
 
 The Bill/Carl problem is somewhat trivial (not to mention likely fictional).  How about one from real life?  On a project I was working on in November some years ago, we had two pieces of functionality we needed: Bulk Uploads and Spock Integration.  (It doesn't really matter what these are).  The bulk uploads would be useful _now_.  But, the Spock Integration wasn't due until January.  In the Spock estimation meeting I wrote the following note:
 
@@ -238,7 +238,7 @@ The team _wanted_ to start Bulk Uploads work.  After all, from these estimates i
 
 > "If it was February now, and we'd _got nothing done_, what would our biggest risk be?"
 
-Missing Bulk Uploads wouldn't be a show-stopper, but missing Spock would be.  We've already shown that the estimates get longer when we look at that!  Start work on the things you can't miss.  
+Missing Bulk Uploads wouldn't be a show-stopper, but missing Spock would be a huge regulatory problem.  _Start work on the things you can't miss. _ 
 
 This is the essence of De-Risking.  
 
