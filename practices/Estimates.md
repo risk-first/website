@@ -178,16 +178,18 @@ If you were doing this same journey on foot, it's a very direct route, but would
 
 ![Journey on Foot](images/estimates/foot.png)
  
-In the software development past, _building it yourself_ was the only way to get anything done.  It was like London _before road and rail_.   Nowadays, you are bombarded with choices.  It's actually _worse than London_ because it's not even a two-dimensional geographic space and there are _multitudes of options_.  Journey planning on the software [Risk Landscape](Glossary#risk-landscape) is an optimisation problem _par excellence_. 
+In the software development past, _building it yourself_ was the only way to get anything done.  It was like London _before road and rail_.   Nowadays, you are bombarded with choices.  It's actually _worse than London_ because it's not even a two-dimensional geographic space and there are multitudes of different routes and acceptable destinations.  Journey planning on the software [Risk Landscape](Glossary#risk-landscape) is an optimisation problem _par excellence_. 
 
 ![Possible Moves On The Risk Landscape](images/generated/practices/estimates/risk-landscape.png)
 
-Because the [Risk Landscape]() is so complex:
+Because the modern [Risk Landscape](Glossary#risk-landscape) is so complex:
 
  - There can be orders of magnitude difference in _time_, with very little difference in destination.
+ - If it's [Schedule Risk]() you're worried about, _Code Yourself_ isn't a great solution (for the whole thing, anyway).  "Take the tube" and at least partly use something someone built already.  There are probably multiple alternatives you can consider.
+ - If no one has built something similar already, then why is that?  Have you formulated the problem properly?
  - Going the wrong way is _so much easier_.
- - Dead-Ends (like a broken central line) are much more likely to trip you up.
- - If it's [Schedule Risk]() you're worried about, _Code Yourself_ isn't a great solution (for the whole thing, anyway).  "Take the tube" and use something someone built already.  There are probably multiple alternatives you can consider.
+ - Dead-Ends (like a broken Central Line) are much more likely to trip you up.
+ - You need to keep up with developments in your field.   Read widely.
    
 #### How Can We Meet Reality Early on the Biggest Risks?
 
@@ -212,18 +214,33 @@ As we saw from the "10X Developer" saw, [Learning Curve Risk](Communication-Risk
 
 Finally, let's get back to Bill and Carl.  What went wrong between excerpts `(1)` and `(2)`?   Let's break it down:
 
- - Bill _wants_ the system in 3-4 months.  It doesn't happen.  
- - He says it "must be delivered in 6 months", but this doesn't happen either.  However, the world (and the project) doesn't end: _it carries on_.   What does this mean about the truth of his statement?
- - Carl's original estimate was 9 months.   Was he working to this all along?  Did the initial brow-beating over deadlines contribute to [Agency Risk]() in a way that _didn't_ happen at point `(2)`?
- - Why _did_ Bill get so angry?  It's not stated in the account, but it's likely the [Trust Risk](Communication-Risk#trust-risk) moved upwards.  Did his superiors stop trusting him?  Was his job at stake?
- - How could including these risks in the discussion have improved the planning process?
+ - **Bill _wants_ the system in 3-4 months.**  It doesn't happen.  
+ - **He says it "must be delivered in 6 months", but this doesn't happen either.**  However, the world (and the project) doesn't end: _it carries on_.   What does this mean about the truth of his statement?  Was he deliberately lying, or just espousing his view on the [Schedule Risk](Scarcity-Risk#schedule-risk)?
+ - **Carl's original estimate was 9 months.**   Was he working to this all along?  Did the initial brow-beating over deadlines at point `(1)` contribute to [Agency Risk](Agency-Risk) in a way that _didn't_ happen at point `(2)`?
+ - **Why _did_ Bill get so angry?**  His understanding of the [Schedule Risk](Scarcity-Risk#schedule-risk) was, if anything, _worse_ than Carl's.  It's not stated in the account, but it's likely the [Trust Risk](Communication-Risk#trust-risk) moved upwards:  Did his superiors stop trusting him?  Was his job at stake?
+ - How could including this risk in the discussion have improved the planning process?
 
-Carl, a project manager, and Bill
+Could the conversation have started like this instead?
 
+> "I think it will take about 9 months, but that's just a rough estimate at this point," Carl said. "That's not going to work," Bill said. "I was hoping you'd say 3 or 4 months.  I need to show the board something by then or I'm worried they will lose confidence in me and this project".  
+> "OK," said Carl.  "But I'm really concerned we have huge [Feature Fit Risk](Feature-Risk#feature-fit-risk).  The task of understanding the requirements and doing the design is massive."
+> "Well, in my head it's actually pretty simple, " said Bill. "Maybe I don't have the full picture, or maybe your idea of what to build is more complex than I think it needs to be.  That's a massive risk right there and I think we should try and mitigate it right now before things progress.  Maybe I'll need to go back to the board if it's worse than I think. 
 
+![Identifying The Action](images/generated/practices/estimates/bill2.png)
 
+#### Talk About Dates, And What's Needed For Them
 
-## Understanding "Failure": An Estimating Example
+The Bill/Carl problem is somewhat trivial (not to mention likely fictional).  How about one from real life?  On a project I was working on in November some years ago, we had two pieces of functionality we needed: Bulk Uploads and Spock Integration.  (It doesn't really matter what these are).  The bulk uploads would be useful _now_.  But, the Spock Integration wasn't due until January.  In the Spock estimation meeting I wrote the following note:
+
+> "Spock estimates were 4, 11 and 22 until we broke it down into tasks.  Now, estimates are above 55 for the whole piece.  And worryingly, we probably don’t have all the tasks.  We know we need bulk uploads in November.  Spock is January.  So, do bulk uploads? "
+
+The team _wanted_ to start Bulk Uploads work.  After all, from these estimates it looked like Spock could easily be completed in January.   However, the question should have been:
+
+> "If it was February now, and we'd _got nothing done_, what would our biggest risk be?"
+
+Missing Bulk Uploads wouldn't be a show-stopper, but missing Spock would be.  We've already shown that the estimates get longer when we look at that!  Start work on the things you can't miss.  
+
+This is the essence of De-Risking.  
 
 
 
