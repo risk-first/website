@@ -20,19 +20,19 @@ Let's look at some specific kinds of [Schedule Risk](Scarcity-Risk#schedule-risk
 
 ![Scarcity Risk](images/generated/scarcity-risk.png)
 
-Let's get back to the bus (which, hopefully, is still working).  What if, when it arrives, it's already full of passengers?  Let's term this, [Scarcity Risk](Dependency-Risk#Scarcity-Risk) - the chance that a dependency is over-subscribed and you can't use it the way you want.  This is clearly an issue for nearly every kind of dependency: buses, supermarkets, concerts, teams, services and people.  
+Let's get back to the bus (which, hopefully, is still working).  What if, when it arrives, it's already full of passengers?  Let's term this, [Scarcity Risk](Scarcity-Risk) - the chance that a dependency is over-subscribed and you can't use it the way you want.  This is clearly an issue for nearly every kind of dependency: buses, supermarkets, concerts, teams, services and people.  
 
 You could also call this _availability risk_ or _capacity risk_ of the resource.  Here are a selection of mitigations:
 
  - **Buffers**: Smoothing out peaks and troughs in utilisation.
  - **Reservation Systems**: giving clients information _ahead_ of the dependency usage about whether the resource will be available to them.
  - **Graceful degradation**: Ensuring _some_ service in the event of over-subscription.  It would be no use allowing people to cram onto the bus until it can't move.
- - **Demand Management**:  Having different prices during busy periods helps to reduce demand.  Having "first class" seats means that higher-paying clients can get service even when the train is full.  [Uber](https://www.uber.com) adjust prices in real-time by so-called [Surge Pricing](https://www.uber.com/en-GB/drive/partner-app/how-surge-works/).  This is basically turning [Scarcity Risk](Dependency-Risk#Scarcity-Risk) into a [Market Risk](Feature-Risk#market-risk) problem.
+ - **Demand Management**:  Having different prices during busy periods helps to reduce demand.  Having "first class" seats means that higher-paying clients can get service even when the train is full.  [Uber](https://www.uber.com) adjust prices in real-time by so-called [Surge Pricing](https://www.uber.com/en-GB/drive/partner-app/how-surge-works/).  This is basically turning [Scarcity Risk](Scarcity-Risk) into a [Market Risk](Feature-Risk#market-risk) problem.
  - **Queues**: Again, these provide a "fair" way of dealing with scarcity by exposing some mechanism for prioritising use of the resource.  Buses operate a first-come-first-served system, whereas emergency departments in hospitals triage according to need.
  - **Pools**: Reserving parts of a resource for particular customers.
  - **Horizontal Scaling**: allowing a scarce resource to flexibly scale according to how much demand there is.   (For example, putting on extra buses when the trains are on strike, or opening extra check-outs at the supermarket.)
  
-Much like [Reliability Risk](#reliability-risk), there is science for it:
+Much like [Reliability Risk](Dependency-Risk#Reliability-risk), there is science for it:
 
  - [Queue Theory](https://en.wikipedia.org/wiki/Queueing_theory) is all about building mathematical models of buffers, queues, pools and so forth.
  - [Logistics](https://en.wikipedia.org/wiki/Logistics) is the practical organisation of the flows of materials and goods around things like [Supply Chains](https://en.wikipedia.org/wiki/Supply_chain).
@@ -44,18 +44,18 @@ Much like [Reliability Risk](#reliability-risk), there is science for it:
 
 ![Schedule Risk](images/generated/schedule-risk.png)
 
-By agreeing a _time_ and _place_ for something to happen, you're introducing [Deadline Risk](Scarcity-Risk#Deadline-Risk).  Miss the deadline, and you miss the bus, or the start of the meeting or get fined for not filling your tax return on time.  
+By agreeing a _time_ and _place_ for something to happen, you're introducing [Deadline Risk](Deadline-Risk).  Miss the deadline, and you miss the bus, or the start of the meeting or get fined for not filling your tax return on time.  
 
-As discussed above, _schedules_ (such as bus timetables) exist so that _two or more parties can coordinate_, and [Deadline Risk](Scarcity-Risk#Deadline-Risk) is on _all_ of the parties.  While there's a risk I am late, there's also a risk the bus is late.  I might miss the start of a concert, or the band might keep everyone waiting.   
+As discussed above, _schedules_ (such as bus timetables) exist so that _two or more parties can coordinate_, and [Deadline Risk](Deadline-Risk) is on _all_ of the parties.  While there's a risk I am late, there's also a risk the bus is late.  I might miss the start of a concert, or the band might keep everyone waiting.   
  
-Each party can mitigate [Deadline Risk](Scarcity-Risk#Deadline-Risk) with _slack_.  That is, ensuring that the exact time of the event isn't critical to your plans:   
+Each party can mitigate [Deadline Risk](Deadline-Risk) with _slack_.  That is, ensuring that the exact time of the event isn't critical to your plans:   
 
  - Don't build into your plans a _need_ to start shopping at 9am.
  - Arrive at the bus-stop _early_.
 
 The amount of slack you build into the schedule is likely dependent on the level of risk you face:  I tend to arrive a few minutes early for a bus, because the risk is _low_ (there'll be another bus along soon), however I try to arrive over an hour early for a flight, because I can't simply get on the next flight straight away, and I've already paid for it, so the risk is _high_.
  
-[Deadline Risk](Scarcity-Risk#Deadline-Risk) becomes very hard to manage when you have to coordinate actions with lots of tightly-constrained events.  So what else can give?  We can reduce the number of _parties_ involved in the event, which reduces risk, or, we can make sure all the parties are in the same _place_ to begin with.  
+[Deadline Risk](Deadline-Risk) becomes very hard to manage when you have to coordinate actions with lots of tightly-constrained events.  So what else can give?  We can reduce the number of _parties_ involved in the event, which reduces risk, or, we can make sure all the parties are in the same _place_ to begin with.  
 
 ## Opportunity Risk
 

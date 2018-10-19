@@ -2,13 +2,13 @@
 
 In this section on [Operational Risks], we're going to start considering the realities of running software systems in the real world.  
 
-Here, we're going to set the scene by looking at what constitutes an [Operational Risk](), and then look at the related disciplines of [Operations Management]() and [Operational Risk Management].  Following this background, we'll apply the Risk-First model and dive into the various mitigations for [Operational Risk]().  
+Here, we're going to set the scene by looking at what constitutes an [Operational Risk](Operational-Risk), and then look at the related disciplines of [Operations Management](#operations-management) and [Operational Risk Management].  Following this background, we'll apply the Risk-First model and dive into the various mitigations for [Operational Risk](Operational-Risk).  
 
 ## Operational Risks
 
-It's tempting to take a very narrow view of the dependencies of a system, but [Operational Risks]() are often caused by dependencies we don't consider - the _context_ within which the system is operating.  Here are some examples:  
+It's tempting to take a very narrow view of the dependencies of a system, but [Operational Risks](Operational-Risk) are often caused by dependencies we don't consider - the _context_ within which the system is operating.  Here are some examples:  
 
- - Staff Dependencies ([Staff Risk](Dependency-Risk#staff-risk)):  
+ - Staff Dependencies ([Staff Risk](Scarcity-Risk#staff-risk)):  
    - Freak weather conditions affecting ability of staff to get to work, interrupting the development and support teams. 
    - Reputational damage caused when staff are rude to the customers.
  
@@ -48,7 +48,7 @@ In this diagram, a **Transform Process** (the **Operation** itself) is embedded 
  - It's **Customers**, which supply it with money in return for goods and services, and 
  - An **Operational Strategy** to follow.
  
-We have looked at processes like the **Transform Process** in the section on [Process Risk](Process-Risk).  The healthy functioning of this process is the domain of [Operations Management](), and in the diagram this involves the following tasks:
+We have looked at processes like the **Transform Process** in the section on [Process Risk](Process-Risk).  The healthy functioning of this process is the domain of [Operations Management](#operations-management), and in the diagram this involves the following tasks:
 
  - **Control**:  Ensuring that the Operation is working according to its design.  This includes quality control. 
  - **Improvement**:  Improving the operation in response to changes in the **Environment** and the **Operational Strategy**, detecting failure and recovering from it.
@@ -57,13 +57,13 @@ We have looked at processes like the **Transform Process** in the section on [Pr
 
 ## Mitigating Operational Risk
 
-We've spent a lot of time looking at the varieties of [Dependency Risk](Dependency-Risk) on a software project.  But in the "real world" of [Operational Risk]() we have to consider that these dependencies will fail in any number of unusual ways, and we can't be ready for all of them.  
+We've spent a lot of time looking at the varieties of [Dependency Risk](Dependency-Risk) on a software project.  But in the "real world" of [Operational Risk](Operational-Risk) we have to consider that these dependencies will fail in any number of unusual ways, and we can't be ready for all of them.  
 
 For this reason, the toolbox of mitigations for [Operatational Risk](Operational-Risk) is somewhat different to that for regular dependencies.  Here we're going to focus on four _basic strategies_, and show how they align with the activities described above.  
 
 ![Diagram of Four Strategies to Mitigate Operational Risk](images/generated/risks/operational/operational-risk.png)
 
-As shown in this diagram, these are [Meeting Reality](Operational-Risk#meet-reality), [Monitoring & Detection](Operatational-Risk#monitoring-and-detection), [Design & Change](Operational-Risk#design-and-change) and [Forecasting & Planning](#forecasting-and-planning).
+As shown in this diagram, these are [Meeting Reality](Glossary#meet-reality), [Monitoring & Detection](Operational-Risk#monitoring-and-detection), [Design & Change](Operational-Risk#design-and-change) and [Forecasting & Planning](#forecasting-and-planning).
 
 ## Meeting Reality 
 
@@ -136,7 +136,7 @@ You might think that for an IT operation, tasks like [Planning](#forecasting-and
 
 ![DevOps Activities:  Development and Operations activities overlap one-another (Credit: Kharnagy, Wikipedia)](images/devops.png)
 
-Since our operation exists in a world of [Red Queen Risk](Scarcity-Risk#red-queen-risk) and [Feature Drift](Feature-Risk#feature-drift), we would expect that the output of our [Forecasting and Planning](#forecasting-and-planning) activities would result in changes to our operation.  
+Since our operation exists in a world of [Red Queen Risk](Scarcity-Risk#red-queen-risk) and [Feature Drift](Feature-Risk#feature-drift-risk), we would expect that the output of our [Forecasting and Planning](#forecasting-and-planning) activities would result in changes to our operation.  
 
 ![Design and Change Activities](images/generated/risks/operational/design-change.png)
 

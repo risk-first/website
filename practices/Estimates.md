@@ -6,9 +6,9 @@ In this section, we're going to put a Risk-First spin on the process of [Estimat
 
 Why bother estimating at all?   There are two reasons why estimates are useful:
 
-1.  **To allow for the creation of _events_.**  As we saw in [Deadline Risk](Deadline-Risk), if we can put a date on something, we can mitigate lots of [Coordination Risk](Coordination-Risk). Having a _release date_ for a product allows whole teams of people to coordinate their activities in ways that hugely reduce the need for [Communication](Communication-Risk).  Much like "attack at dawn" allows disparate units of an army to avoid lots of the [Coordination Risk]() inherent in "attack on my signal".  This is a _good reason for estimating_, because by using events you are mitigating risk.  This is often called a _hard deadline_.
+1.  **To allow for the creation of _events_.**  As we saw in [Deadline Risk](Deadline-Risk), if we can put a date on something, we can mitigate lots of [Coordination Risk](Coordination-Risk). Having a _release date_ for a product allows whole teams of people to coordinate their activities in ways that hugely reduce the need for [Communication](Communication-Risk).  Much like "attack at dawn" allows disparate units of an army to avoid lots of the [Coordination Risk](Coordination-Risk) inherent in "attack on my signal".  This is a _good reason for estimating_, because by using events you are mitigating risk.  This is often called a _hard deadline_.
 
-2.  **To allow for the estimation of the [Pay-Off](Glossary#payoff) of an [action](Glossary#taking-action).**  This is a _bad reason for estimating_, as we will discuss in detail below.  But briefly, the main issue is that [Pay-Off](Glossary#pay-off) isn't just about figuring out [Schedule Risk](Scarcity-Risk#schedule-risk) - you should be looking at all the other [Attendant Risks](Glossary#attendant-risk) of the action too.  
+2.  **To allow for the estimation of the [Pay-Off](Glossary#pay-off) of an [action](Glossary#taking-action).**  This is a _bad reason for estimating_, as we will discuss in detail below.  But briefly, the main issue is that [Pay-Off](Glossary#pay-off) isn't just about figuring out [Schedule Risk](Scarcity-Risk#schedule-risk) - you should be looking at all the other [Attendant Risks](Glossary#attendant-risk) of the action too.  
 
 ## How Estimates Fail
 
@@ -40,10 +40,10 @@ It's a problem as old as software itself, and in deference to that, let's examin
 
 Let's try and pull this apart:
 
- - How do we measure this "productivity"?  In Risk-First terms, this is about taking action to _transform_ our current position on the [Risk Landscape]() to a position of more favourable risk.  A "10X Developer" then must be able to take actions that have much higher [Payoff]() than a "1X Developer".  That is mitigating more [Initial Risk](Glossary#initial-risk), and generating less [Attendant Risk](Glossary#attendant-risk).  
- - It stands to reason then, that someone [taking action](Glossary#taking-action) _faster_ will leaving us with less [Schedule Risk]().
- - However, if they are _more expensive_, they may leave us with greater [Funding Risk]() afterwards.
- - But, [Schedule Risk]() isn't the only risk being transformed:   The result might be bugs, expensive new dependencies or spaghetti-code complexity.
+ - How do we measure this "productivity"?  In Risk-First terms, this is about taking action to _transform_ our current position on the [Risk Landscape](Glossary#risk-landscape) to a position of more favourable risk.  A "10X Developer" then must be able to take actions that have much higher [Pay-Off](Glossary#pay-off) than a "1X Developer".  That is mitigating more [Initial Risk](Glossary#initial-risk), and generating less [Attendant Risk](Glossary#attendant-risk).  
+ - It stands to reason then, that someone [taking action](Glossary#taking-action) _faster_ will leaving us with less [Schedule Risk](Scarcity-Risk#schedule-risk).
+ - However, if they are _more expensive_, they may leave us with greater [Funding Risk](Scarcity-Risk#funding-risk) afterwards.
+ - But, [Schedule Risk](Scarcity-Risk#schedule-risk) isn't the only risk being transformed:   The result might be bugs, expensive new dependencies or spaghetti-code complexity.
  - The "10X" developer _must_ also leave behind less of these kind of risks too.
  - That means that the "10X Developer" isn't merely faster, but _taking different actions_.  They are able to use their talent and experience to see actions with greater pay-off than the 1X Developer.  
  
@@ -85,15 +85,15 @@ Focusing on just these three variables isn't enough.  You can game these variabl
 
  - There's no point in calling a project complete if the dependencies you are using are [unreliable](Dependency-Risk) or [undergoing rapid change](Scarcity-Risk#red-queen-risk) 
  - There's no point in delivering the project on time if it's an [Operational Risk](Operational-Risk) nightmare, and requires constant round-the-clock support and will cost a fortune to _run_.  (Working on a project that "hits it's delivery date" but is nonetheless a broken mess once in production is too common a sight.)
- - There's no point in delivering a project on-budget if [the market has moved on](Feature-Risk#market-risk) and [needs different features](Feature-Risk#feature-drifts).  
+ - There's no point in delivering a project on-budget if [the market has moved on](Feature-Risk#market-risk) and [needs different features](Feature-Risk#feature-drift-risk).  
 
 ### Old Saw #3: Parkinson's Law
 
-We've already looked at Parkinson's Law in [Agency Risk](Agency-Risk#bureaucracy-risk), but lets recap:
+We've already looked at Parkinson's Law in [Agency Risk](Process-Risk#bureaucracy-risk), but lets recap:
 
 > "Parkinson's law is the adage that 'work expands so as to fill the time available for its completion'." [Parkinson's Law, _Wikipedia_](https://en.wikipedia.org/wiki/Parkinsons_law)  
 
-Let's leave aside the [Agency Risk](Agency-Risk) concerns this time.  Instead, let's consider this from a Risk-First perspective.  _Of course_ work would expand to fill the time available:  _Time available_ is an _absence of [Schedule Risk]()_, it's always going to be sensible to accept [Schedule Risk]() as a trade-off for other more serious risks.  
+Let's leave aside the [Agency Risk](Agency-Risk) concerns this time.  Instead, let's consider this from a Risk-First perspective.  _Of course_ work would expand to fill the time available:  _Time available_ is an _absence of [Schedule Risk](Scarcity-Risk#schedule-risk)_, it's always going to be sensible to accept [Schedule Risk](Scarcity-Risk#schedule-risk) as a trade-off for other more serious risks.  
 
 This is why projects will _always_ take at least as long as is budgeted for them.   
 
@@ -107,13 +107,13 @@ Later in the story, the schedule has slipped twice and is about to slip again:
 
 > ... At the 9-month mark, the team had completed detailed design, but coding still hadn't begun on some modules. It was clear that Carl couldn't make the 10-month schedule either. He announced the third schedule slip number— to 12 months. Bill's face turned red when Carl announced the slip, and the pressure from him became more intense.   `(2)`
 
-At point `(2)`, Carl's tries to mitigate [Feature Risk](Feature-Risk) by increasing [Schedule Risk](Schedule-Risk), although he knows that Bill will trust him less for doing this, as shown below:
+At point `(2)`, Carl's tries to mitigate [Feature Risk](Feature-Risk) by increasing [Schedule Risk](Scarcity-Risk#Schedule-Risk), although he knows that Bill will trust him less for doing this, as shown below:
 
 ![Carl's Schedule Slip increases Trust and Belief Risks](images/generated/practices/estimates/carl1.png)
 
 > Carl began to feel that his job was on the line. Coding proceeded fairly well, but a few areas needed redesign and reimplementation. The team hadn't coordinated design details in those areas well, and some of their implementations conflicted. At the 11-month oversight-committee meeting, Carl announced the fourth schedule slip— to 13 months. Bill became livid. "Do you have any idea what you're doing?" he yelled. "You obviously don't have any idea! You obviously don't have any idea when the project is going to be done! I'll tell you when it's going to be done! It's going to be done by the 13-month mark, or you're going to be out of a job! I'm tired of being jerked around by you software guys! You and your team are going to work 60 hours a week until you deliver!"  `(3)`
 
-At point `(3)`, after the schedule slips again, Bill threatens Carl's job.  Why does he do this?  Because _he doesn't trust Carl's evaluation of the [Schedule Risk]()_.  By telling Carl that it's his job on the line, he makes sure Carl appreciates the [Schedule Risk](). However, forcing staff to do overtime is a dangerous ploy:  it could disenfranchise the staff, or cause corners to be cut:
+At point `(3)`, after the schedule slips again, Bill threatens Carl's job.  Why does he do this?  Because _he doesn't trust Carl's evaluation of the [Schedule Risk](Scarcity-Risk#schedule-risk)_.  By telling Carl that it's his job on the line, he makes sure Carl appreciates the [Schedule Risk](Scarcity-Risk#schedule-risk). However, forcing staff to do overtime is a dangerous ploy:  it could disenfranchise the staff, or cause corners to be cut:
 
 ![Bill's Ultimatum](images/generated/practices/estimates/bill1.png)
 
@@ -160,9 +160,9 @@ For a given [action](Glossary#taking-action) / road-map / business strategy, wha
 
 Instead of the Agile Estimation being about picking out a story-point number based on some idealised amount of typing that needs to be done, it should be about surfacing and weighing up risks.  e.g:
 
- - "I think this task is problematic because it's going to massively increase our [Dependency Risk]() to add a new database here."
- - "I don't think we should have component A interacting with component B because it'll introduce extra [Communication Risk]() which we will always be tripping over."
- - "I worry we might not understand what the sales team want and are facing [Implementation Risk]().  How about we try and get agreement on a specification?"  
+ - "I think this task is problematic because it's going to massively increase our [Dependency Risk](Dependency-Risk) to add a new database here."
+ - "I don't think we should have component A interacting with component B because it'll introduce extra [Communication Risk](Communication-Risk) which we will always be tripping over."
+ - "I worry we might not understand what the sales team want and are facing [Implementation Risk](Feature-Risk#implementation-risk).  How about we try and get agreement on a specification?"  
  
 #### Tip #2: The Risk Landscape is Increasingly Complex: Utilise This
 
@@ -185,7 +185,7 @@ In the software development past, _building it yourself_ was the only way to get
 Because the modern [Risk Landscape](Glossary#risk-landscape) is so complex:
 
  - There can be orders of magnitude difference in _time_, with very little difference in destination.
- - If it's [Schedule Risk]() you're worried about, _Code Yourself_ isn't a great solution (for the whole thing, anyway).  "Take the tube" and at least partly use something someone built already.  There are probably multiple alternatives you can consider.
+ - If it's [Schedule Risk](Scarcity-Risk#schedule-risk) you're worried about, _Code Yourself_ isn't a great solution (for the whole thing, anyway).  "Take the tube" and at least partly use something someone built already.  There are probably multiple alternatives you can consider.
  - If no one has built something similar already, then why is that?  Have you formulated the problem properly?
  - Going the wrong way is _so much easier_.
  - Dead-Ends (like a broken Central Line) are much more likely to trip you up.
@@ -203,12 +203,12 @@ Often, a _strategy_ will be broken up into multiple actions.  _Which are the ris
 
 As we saw from the "10X Developer" saw, [Learning Curve Risk](Communication-Risk#learning-curve-risk) and [Dead End Risk](Complexity-Risk#dead-end-risk), are likely to be the biggest risks.  How can we front-load this and tackle these earlier?   
 
- - _Having a vocabulary_ (like the one Risk-First provides) allows us to _at least talk about these_.  e.g. "I believe there is a [Dead End Risk]() that we might not be able to get this software to run on Linux."
+ - _Having a vocabulary_ (like the one Risk-First provides) allows us to _at least talk about these_.  e.g. "I believe there is a [Dead End Risk](Complexity-Risk#dead-end-risk) that we might not be able to get this software to run on Linux."
  - Build mock-ups:  
    - UI wireframes allow us to bottom out the [Communication Risk](Communication-Risk) of the interfaces we build.  
-   - [Spike Solutions]() allow us to test algorithms and approaches before making them part of the main development.
+   - [Spike Solutions](Coding#spike) allow us to de-risk algorithms and approaches before making them part of the main development.
  - Don't pick delivery dates far in the future.  Collectively work out the biggest risks with your clients, and then arrange the next possible date to demonstrate the mitigation.  
- - Do actions _early_ that are _simple_ but are nevertheless show-stoppers.  They are as much a source of [Hidden Risk]() as more obviously tricky actions. 
+ - Do actions _early_ that are _simple_ but are nevertheless show-stoppers.  They are as much a source of [Hidden Risk](Glossary#hidden-risk) as more obviously tricky actions. 
 
 #### Tip #4: Talk Frankly About All The Risks
 
@@ -217,7 +217,7 @@ Let's get back to Bill and Carl.  What went wrong between points `(1)` and `(2)`
  - **Bill _wants_ the system in 3-4 months.**  It doesn't happen.  
  - **He says it "must be delivered in 6 months", but this doesn't happen either.**  However, the world (and the project) doesn't end: _it carries on_.   What does this mean about the truth of his statement?  Was he deliberately lying, or just espousing his view on the [Schedule Risk](Scarcity-Risk#schedule-risk)?
  - **Carl's original estimate was 9 months.**   Was he working to this all along?  Did the initial brow-beating over deadlines at point `(1)` contribute to [Agency Risk](Agency-Risk) in a way that _didn't_ happen at point `(2)`?
- - **Why _did_ Bill get so angry?**  His understanding of the [Schedule Risk](Scarcity-Risk#schedule-risk) was, if anything, _worse_ than Carl's.  It's not stated in the account, but it's likely the [Trust Risk](Communication-Risk#trust-risk) moved upwards:  Did his superiors stop trusting him?  Was his job at stake?
+ - **Why _did_ Bill get so angry?**  His understanding of the [Schedule Risk](Scarcity-Risk#schedule-risk) was, if anything, _worse_ than Carl's.  It's not stated in the account, but it's likely the [Trust Risk](Communication-Risk#trust--belief-risk) moved upwards:  Did his superiors stop trusting him?  Was his job at stake?
  - **How could including this risk in the discussion have improved the planning process?**  Could the conversation have started like this instead?
 
 > "I think it will take about 9 months, but that's just a rough estimate at this point," Carl said. "That's not going to work," Bill said. "I was hoping you'd say 3 or 4 months.  I need to show the board something by then or I'm worried they will lose confidence in me and this project".  

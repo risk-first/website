@@ -6,7 +6,7 @@ Events as mitigation for coordination risk. diagram.
 
 ![Deadline Risk](images/generated/deadline-risk.png)
 
-Often when running a software project, you're given a team of people and told to get something delivered by a certain date.  i.e. you have an artificially-imposed [Deadline](Scarcity-Risk#Deadline-Risk) on delivery.
+Often when running a software project, you're given a team of people and told to get something delivered by a certain date.  i.e. you have an artificially-imposed [Deadline](Deadline-Risk) on delivery.
 
 What happens if you miss the deadline?  It could be:
 
@@ -28,7 +28,7 @@ Compare with this quote:
 
 > “I love deadlines. I love the whooshing noise they make as they go by.” - [Douglas Adams](https://en.wikipedia.org/wiki/Douglas_Adams)
 
-As a successful author, Douglas Adams _didn't really care_ about the deadlines his publisher's gave him.  The [Deadline Risk](Scarcity-Risk#Deadline-Risk) was minimal for him, because the publisher wouldn't be able to give his project to someone else to complete. 
+As a successful author, Douglas Adams _didn't really care_ about the deadlines his publisher's gave him.  The [Deadline Risk](Deadline-Risk) was minimal for him, because the publisher wouldn't be able to give his project to someone else to complete. 
 
 Sometimes, deadlines are set in order to _coordinate work between teams_.  The classic example being in a battle, to coordinate attacks.   When our deadlines are for this purpose, we're heading towards [Coordination Risk](Coordination-Risk) territory.
 
@@ -38,11 +38,11 @@ Sometimes, deadlines are set in order to _coordinate work between teams_.  The c
 
 > "Student syndrome refers to planned procrastination, when, for example, a student will only start to apply themselves to an assignment at the last possible moment before its deadline."   - _[Wikipedia](https://en.wikipedia.org/wiki/Student_syndrome)_
 
-Arguably, there is good psychological, evolutionary and risk-based reasoning behind procrastination:  the further in the future the [Deadline Risk](Scarcity-Risk#deadline-risk) is, the more we discount it.  If we're only ever mitigating our _biggest risks_, then deadlines in the future don't matter so much, do they?  And, putting efforts into mitigating future risks that _might not arise_ is wasted effort.
+Arguably, there is good psychological, evolutionary and risk-based reasoning behind procrastination:  the further in the future the [Deadline Risk](Deadline-risk) is, the more we discount it.  If we're only ever mitigating our _biggest risks_, then deadlines in the future don't matter so much, do they?  And, putting efforts into mitigating future risks that _might not arise_ is wasted effort.
 
 Or at least, that's the argument.  If you're [Discounting the Future To Zero](Risk-Theory) then you'll be pulling all-nighters in order to deliver any assignment.   
 
-So, the problem with [Student Syndrome](Scarcity-Risk#student-syndrome) is that the _very mitigation_ for [Schedule Risk](Scarcity-Risk#schedule-risk) (allowing more time) is an [Attendant Risk](Glossary#attendant-risk) that _causes_ [Schedule Risk](Scarcity-Risk#schedule-risk):   you'll work towards the new, generous deadline more slowly, and you'll end up revealing [Hidden Risk](Glossary#Hidden-Risk) _later_ than you would have with the original, pressing deadline ... and you end up being late because of them.
+So, the problem with [Student Syndrome](#student-syndrome) is that the _very mitigation_ for [Schedule Risk](Scarcity-Risk#schedule-risk) (allowing more time) is an [Attendant Risk](Glossary#attendant-risk) that _causes_ [Schedule Risk](Scarcity-Risk#schedule-risk):   you'll work towards the new, generous deadline more slowly, and you'll end up revealing [Hidden Risk](Glossary#Hidden-Risk) _later_ than you would have with the original, pressing deadline ... and you end up being late because of them.
 
 We'll look at mitigations for this in Part 3's section on [Prioritisation](Prioritisation).
 
@@ -78,7 +78,7 @@ However, as we saw in [A Simple Scenario](A-Simple-Scenario), this means we pick
 
 So, we're going to look at [Dependency Risk](Dependency-Risk) for our toy events (bus, supermarket) from 7 different perspectives, many of which we've already touched on in the other sections.
 
- - [Scarcity Risk](Dependency-Risk#scarcity-risk)
+ - [Scarcity Risk](Scarcity-risk)
  - [Schedule Risk](Scarcity-Risk#schedule-risk)
  - [Reliability Risk](Dependency-Risk#reliability-risk)
  - [Communication Risk](Communication-Risk)
