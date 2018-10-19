@@ -120,13 +120,6 @@ At point `(2)`, after the schedule slips again, Bill threatens Carl's job.  Why 
 At point `(3)`, we see that Bill's gamble worked (for him at least):  the project was delivered on time by the team working overtime for two months.  This was lucky - it seems unlikely that no-one quit and that the code didn't descend into a mess in that time.  
 
 ![Team Response](images/generated/practices/estimates/team1.png)
-
-Take aways:
- 
- - There's no fixed amount of time something will take.  It's not clear why the project needed to take thirteen months, or any number.   
- - If you give someone a period of time to do something, it'll either take that amount of time, or longer.
- - Don't wait until 9 months to meet reality.
-
  
 ## Agile Estimation
 
@@ -149,7 +142,7 @@ Let's figure out what we can take away from the above experiences:
  - The proverb of the 10x developer, and the difference made by experience implies that a lot of [Schedule Risk](Scarcity-Risk#schedule-risk) comes from [Learning Curve](Communication-Risk#learning-curve-risk) risk and [Dead End Risk](Complexity-Risk#dead-end-risk).  
  - The lesson from "Quality, Speed, Cost" is that actually, we need to be considering _all_ risks, not just some arbitrary milestones on a project plan.  Project plans can always be gamed, and you can always leave risks unaccounted for in order to hit the goals (good old [Map and Territory Risk](Map-and-territory-risk) strikes again).
  - The lesson from the Parkinson's Law was that by giving people a _time budget_, you absolve them from [Schedule Risk](Scarcity-Risk#schedule-risk)... at least until they realise they're going to overrun.   This gives them one less dimension of risk to worry about, but means they end up taking all the time you give them, because they are optimising over the remaining risks.
- - Finally, the lesson from Agile development is that _just iterating_ is sometimes not as efficient as _using your intuition and experience_ to find a more optimal path.  
+ - Finally, the lesson from Agile Estimation is that _just iterating_ is sometimes not as efficient as _using your intuition and experience_ to find a more optimal path.  
  
 How can we synthesise this knowledge, along with what we've learned into something that makes more sense?
 
@@ -162,17 +155,35 @@ For a given [action](Glossary#taking-action) / road-map / business strategy, wha
   - What [Feature Fit](Feature-Risk#feature-fit-risk) risks are we likely to have when we get there?
   - What [Complexity Risks](Complexity-Risk) will we face building our software?  How can we avoid it ending up as a [Big Ball Of Mud](Complexity-Risk#big-ball-of-mud)?
   - Where are we likely to face [Boundary Risks](Boundary-Risk) and [Dead End Risks](Complexity-Risk#dead-end-risk)
+
+Instead of the Agile Estimation being about picking out a story-point number based on some idealised amount of typing that needs to be done, it should be about surfacing and weighing up risks.  e.g:
+
+ - "I think this task is problematic because it's going to massively increase our [Dependency Risk]() to add a new database here."
+ - "I don't think we should have component A interacting with component B because it'll introduce extra [Communication Risk]() which we will always be tripping over."
+ - "I worry we might not understand what the sales team want and are facing [Implementation Risk]().  How about we try and get agreement on a specification?"  
    
 #### How Can We Meet Reality Early on the Biggest Risks?
 
-Imagine that all the [Attendant Risks](Glossary#attendant-risk) are links in a chain, and in order for your course of action to work, all the links in the chain have to hold.  The _sensible_ approach would be to test the links _in order from weakest to strongest_.  This means working out how to meet reality for each risk in turn.  Often, a _strategy_ will be broken up into multiple actions.  _Which are the riskiest actions?_  Figure this out, using the Risk-First vocabulary and the best experience you can bring to bear, then, perform the actions which [Pay Off](Glossary#pay-off) the biggest risks first.  
+In getting from A to B on the [Risk Landscape](Glossary#risk-landscape), imagine that all the [Attendant Risks](Glossary#attendant-risk) are the stages of a journey.  Some might be on foot, train, car and so on.  In order for your course of action to work, all the stages in the journey have to succeed.  
 
-As we saw from the "10x Developer" saw, [Learning Curve Risk]() and [Dead End Risk](), are likely to be the biggest risks.  How can we front-load this and tackle these earlier?   
- - _Having a vocabulary_ (like the one Risk-First provides) allows us to do this.
- - Spike Solutions 
- -     
+Although you might have to make the steps of a journey in some order, you can still mitigate risk in a different order.   For example, checking the trains are running, making sure your bike is working, booking tickets and taxis, and so on.  
+
+The _sensible_ approach would be to test the steps _in order from weakest to strongest_.  This means working out how to meet reality for each risk in turn, in order from biggest risk to smallest.
+
+Often, a _strategy_ will be broken up into multiple actions.  _Which are the riskiest actions?_  Figure this out, using the Risk-First vocabulary and the best experience you can bring to bear, then, perform the actions which [Pay Off](Glossary#pay-off) the biggest risks first.  
+
+As we saw from the "10x Developer" saw, [Learning Curve Risk](Communication-Risk#learning-curve-risk) and [Dead End Risk](Complexity-Risk#dead-end-risk), are likely to be the biggest risks.  How can we front-load this and tackle these earlier?   
+
+ - _Having a vocabulary_ (like the one Risk-First provides) allows us to _at least talk about these_.  e.g. "I believe there is a [Dead End Risk]() that we might not be able to get this software to run on Linux."
+ - Build mock-ups:  
+   - UI wireframes allow us to bottom out the [Communication Risk](Communication-Risk) of the interfaces we build.  
+   - Spike Solutions allow us to test algorithms and approaches before making them part of the main development.
+ - Don't pick delivery dates far in the future.  Collectively work out the biggest risks and concerns with your clients, and then demonstrate how you mitigated them.  
 
 ####  Talk Frankly About All The Risks
+
+
+
  - If the task that's been given is clearly impossible, does that mean it's been misunderstood?  
 
 
@@ -180,6 +191,20 @@ Carl, a project manager, and Bill
 
 
 #### The Risk Landscape is Increasingly Complex
+
+![Journey via the Central Line](images/estimates/central-line.png)
+
+If you were travelling across London from Ealing (in the West) to Stratford (in the East) the _fastest_ route might be to take the Central Line.  You could do it via the A406 road, which would take a _bit_ longer.  It would _feel_ like you're mainly going in completely the wrong direction doing that, but it's much faster than cutting straight through London and you don't pay the congestion charge.
+
+![Journey by Car](images/estimates/car.png)
+
+In terms of risk, they all have different profiles.  You're _likely_ to be delayed in the car, by some amount.  The tube is _generally_ reliable, but when it breaks down or is being repaired it might end up quicker to walk.  
+
+If you were doing this same journey on foot, it's a very direct route, but would take five times longer.  However, if you were making this journey a hundred years ago, that might be the way you chose (horseback might be a bit faster).
+
+![Journey on Foot](images/estimates/central-line.png)
+ 
+In the software development past, _building it yourself_ was the only way to get anything done.  It was like London _before road and rail_.   Nowadays, you are bombarded with choices.  
 
 
 ![Moves On The Risk Landscape](images/generated/practices/estimates/risk-landscape.png)
