@@ -63,13 +63,37 @@ The easiest way to be a "10x developer" is to have _done the job before_.  If yo
  - There's no [Learning Curve Risk](Communication-Risk#learning-curve-risk), because you already learnt everything.
  - There's no [Dead End Risk](Complexity-Risk#dead-end-risk) because you already know all the right choices to make.     
 
-### Old Saw #2: Parkinson's Law
+## Old Saw #2: Quality, Speed, Cost: Pick Any Two
+
+> "The Project Management Triangle (called also the Triple Constraint, Iron Triangle and "Project Triangle") is a model of the constraints of project management. While its origins are unclear, it has been used since at least the 1950s.[1] It contends that:
+> - The quality of work is constrained by the project's budget, deadlines and scope (features).
+> - The project manager can trade between constraints.
+> - Changes in one constraint necessitate changes in others to compensate or quality will suffer."
+>    - [Project Management Triangle, _Wikipedia_](https://en.wikipedia.org/wiki/Project_management_triangle)
+
+From a Risk-First perspective, we can now see that this is an over-simplification.  If _quality_ is a [Feature Fit](Feature-Risk) metric, _deadlines_ is [Schedule Risk](Scarcity-Risk#schedule-risk) and _budget_ refers to [Funding Risk](Scarcity-Risk#funding-risk) then that leaves us with a lot of risks unaccounted for:
+
+ - I can deliver a project in very short order by building a bunch of screens that _do nothing_ (accruing _stunning levels of [Implementation Risk](Feature-Risk#implementation-risk) as I go). 
+ - Or, by relying on a lottery win, I can completely mitigate the budgetary risks of a project.  (Although I would have _huge_ [Funding Risk](Scarcity-Risk#funding-risk) because _what are the chances of winning the lottery?_.  (You can bring in _any_ project at _any_ time by accepting crazy levels of risk.
+ - And Brooks' Law contradicts this by saying you can't trade budget for deadlines:
+
+> "Brooks' law is an observation about software project management according to which "adding human resources to a late software project makes it later". - [Brooks Law, _Wikipedia_](https://en.wikipedia.org/wiki/Brooks_law)
+
+![Brooks' Law, Risk-First Style](images/generated/practices/estimates/brooks.png)
+
+Focusing on just these three variables isn't enough.  You can game these variables by sacrificing others:  we need to be looking at the project's risk _holistically_:
+
+ - There's no point in calling a project complete if the dependencies you are using are [unreliable](Dependency-Risk) or [undergoing rapid change](Scarcity-Risk#red-queen-risk) 
+ - There's no point in delivering the project on time if it's an [Operational Risk](Operational-Risk) nightmare, and requires constant round-the-clock support and will cost a fortune to _run_.  (Working on a project that "hits it's delivery date" but is nonetheless a broken mess once in production is too common a sight.)
+ - There's no point in delivering a project on-budget if [the market has moved on](Feature-Risk#market-risk) and [needs different features](Feature-Risk#feature-drifts).  
+
+### Old Saw #3: Parkinson's Law
 
 We've already looked at Parkinson's Law in [Agency Risk](Agency-Risk#bureaucracy-risk), but lets recap:
 
 > "Parkinson's law is the adage that 'work expands so as to fill the time available for its completion'." [Parkinson's Law, _Wikipedia_](https://en.wikipedia.org/wiki/Parkinsons_law)  
 
-Let's leave aside the [Agency Risk]() concerns this time.  Instead, let's consider this from a Risk-First perspective.  _Of course_ work would expand to fill the time available:  _Time available_ is an _absence of [Schedule Risk]()_, it's always going to be sensible to accept [Schedule Risk]() as a trade-off for other more serious risks.  
+Let's leave aside the [Agency Risk](Agency-Risk) concerns this time.  Instead, let's consider this from a Risk-First perspective.  _Of course_ work would expand to fill the time available:  _Time available_ is an _absence of [Schedule Risk]()_, it's always going to be sensible to accept [Schedule Risk]() as a trade-off for other more serious risks.  
 
 This is why projects will _always_ take at least as long as is budgeted for them.   
 
@@ -103,28 +127,6 @@ Take aways:
  - If you give someone a period of time to do something, it'll either take that amount of time, or longer.
  - Don't wait until 9 months to meet reality.
 
-## Old Saw #3: Quality, Speed, Cost: Pick Any Two
-
-> "The Project Management Triangle (called also the Triple Constraint, Iron Triangle and "Project Triangle") is a model of the constraints of project management. While its origins are unclear, it has been used since at least the 1950s.[1] It contends that:
-> - The quality of work is constrained by the project's budget, deadlines and scope (features).
-> - The project manager can trade between constraints.
-> - Changes in one constraint necessitate changes in others to compensate or quality will suffer." - [Project Management Triangle, _Wikipedia_](https://en.wikipedia.org/wiki/Project_management_triangle)
-
-From a Risk-First perspective, we can now see that this is an over-simplification.  If _quality_ is a [Feature Fit](Feature-Risk) metric, _deadlines_ is [Schedule Risk](Scarcity-Risk#schedule-risk) and _budget_ refers to [Funding Risk](Scarcity-Risk#funding-risk) then that leaves us with a lot of risks unaccounted for:
-
- - I can deliver a project in very short order by building a bunch of screens that _do nothing_ (accruing _stunning levels of [Implementation Risk](Feature-Risk#implementation-risk) as I go). 
- - Or, by relying on a lottery win, I can completely mitigate the budgetary risks of a project.  (Although I would have _huge_ [Funding Risk](Scarcity-Risk#funding-risk) because _what are the chances of winning the lottery?_.  (You can bring in _any_ project at _any_ time by accepting crazy levels of risk.
- - And Brooks' Law contradicts this by saying you can't trade budget for deadlines:
-
-> "Brooks' law is an observation about software project management according to which "adding human resources to a late software project makes it later". - [Brooks Law, _Wikipedia_](https://en.wikipedia.org/wiki/Brooks_law)
-
-![Brooks' Law, Risk-First Style](images/generated/practices/estimates/brooks.png)
-
-Focusing on just these three variables isn't enough.  You can game these variables by sacrificing others:  we need to be looking at the project's risk _holistically_:
-
- - There's no point in calling a project complete if the dependencies you are using are [unreliable](Dependency-Risk) or [undergoing rapid change](Scarcity-Risk#red-queen-risk) 
- - There's no point in delivering the project on time if it's an [Operational Risk](Operational-Risk) nightmare, and requires constant round-the-clock support and will cost a fortune to _run_.  (Working on a project that "hits it's delivery date" but is nonetheless a broken mess once in production is too common a sight.)
- - There's no point in delivering a project on-budget if [the market has moved on](Feature-Risk#market-risk) and [needs different features](Feature-Risk#feature-drift).  
  
 ## Agile Estimation
 
@@ -145,37 +147,39 @@ A project always ends up being the same.
 Let's figure out what we can take away from the above experiences:
 
  - The proverb of the 10x developer, and the difference made by experience implies that a lot of [Schedule Risk](Scarcity-Risk#schedule-risk) comes from [Learning Curve](Communication-Risk#learning-curve-risk) risk and [Dead End Risk](Complexity-Risk#dead-end-risk).  
- - The lesson from the Parkinson's Law was that by giving people a _time budget_, you absolve them from [Schedule Risk](Scarcity-Risk#schedule-risk).  This gives them one less dimension of risk to worry about, but means they end up taking all the time you give them, because they are optimising over the remaining risks.
  - The lesson from "Quality, Speed, Cost" is that actually, we need to be considering _all_ risks, not just some arbitrary milestones on a project plan.  Project plans can always be gamed, and you can always leave risks unaccounted for in order to hit the goals (good old [Map and Territory Risk](Map-and-territory-risk) strikes again).
+ - The lesson from the Parkinson's Law was that by giving people a _time budget_, you absolve them from [Schedule Risk](Scarcity-Risk#schedule-risk)... at least until they realise they're going to overrun.   This gives them one less dimension of risk to worry about, but means they end up taking all the time you give them, because they are optimising over the remaining risks.
  - Finally, the lesson from Agile development is that _just iterating_ is sometimes not as efficient as _using your intuition and experience_ to find a more optimal path.  
  
 How can we synthesise this knowledge, along with what we've learned into something that makes more sense?
 
-1.  Estimating should be about _estimating [Pay Off](Glossary#pay-off)_:  for a given [action](Glossary#taking-action) / road-map / business strategy, what  [Attendant Risks](Glossary#attendant-risk) are we going to have when we get there?   Yes, we'll all be older (there _will be_ [Schedule Risk](Scarcity-Risk#schedule-risk)), but it's also about:
+#### Estimating Should be About _Estimating [Pay Off](Glossary#pay-off)_
+
+For a given [action](Glossary#taking-action) / road-map / business strategy, what [Attendant Risks](Glossary#attendant-risk) are we going to have when we get there?   Yes, we'll all be older (there _will be_ [Schedule Risk](Scarcity-Risk#schedule-risk)), but it's also about:
 
   - What bets are we making about where the [market](Feature-Risk#market-risk) will be?
   - What [Communication Risk](Communication-Risk) will we face explaining our product to people?
   - What [Feature Fit](Feature-Risk#feature-fit-risk) risks are we likely to have when we get there?
   - What [Complexity Risks](Complexity-Risk) will we face building our software?  How can we avoid it ending up as a [Big Ball Of Mud](Complexity-Risk#big-ball-of-mud)?
   - Where are we likely to face [Boundary Risks](Boundary-Risk) and [Dead End Risks](Complexity-Risk#dead-end-risk)
-  
-2. Given that most risk is likely to be [Learning Curve Risk]() and [Dead End Risk](), how can we front-load this and tackle these earlier?   
- - _Having a vocabulary_ (like the one Risk-First provides) allows us to do this.
- - Spike Solutions 
- -     
- 
-3. How can we meet reality early on the biggest risks?
+   
+#### How Can We Meet Reality Early on the Biggest Risks?
 
 Imagine that all the [Attendant Risks](Glossary#attendant-risk) are links in a chain, and in order for your course of action to work, all the links in the chain have to hold.  The _sensible_ approach would be to test the links _in order from weakest to strongest_.  This means working out how to meet reality for each risk in turn.  Often, a _strategy_ will be broken up into multiple actions.  _Which are the riskiest actions?_  Figure this out, using the Risk-First vocabulary and the best experience you can bring to bear, then, perform the actions which [Pay Off](Glossary#pay-off) the biggest risks first.  
 
-4.  Talk Frankly About the Risks
+As we saw from the "10x Developer" saw, [Learning Curve Risk]() and [Dead End Risk](), are likely to be the biggest risks.  How can we front-load this and tackle these earlier?   
+ - _Having a vocabulary_ (like the one Risk-First provides) allows us to do this.
+ - Spike Solutions 
+ -     
+
+####  Talk Frankly About All The Risks
  - If the task that's been given is clearly impossible, does that mean it's been misunderstood?  
 
 
 Carl, a project manager, and Bill
 
 
-5.  The Risk Landscape is increasingly complex
+#### The Risk Landscape is Increasingly Complex
 
 
 ![Moves On The Risk Landscape](images/generated/practices/estimates/risk-landscape.png)
