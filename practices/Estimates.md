@@ -202,7 +202,7 @@ In terms of risk, they all have different profiles.  You're _likely_ to be delay
 
 If you were doing this same journey on foot, it's a very direct route, but would take five times longer.  However, if you were making this journey a hundred years ago, that might be the way you chose (horseback might be a bit faster).
 
-![Journey on Foot](images/estimates/central-line.png)
+![Journey on Foot](images/estimates/foot.png)
  
 In the software development past, _building it yourself_ was the only way to get anything done.  It was like London _before road and rail_.   Nowadays, you are bombarded with choices.  
 
