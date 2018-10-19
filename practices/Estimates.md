@@ -148,7 +148,7 @@ Let's figure out what we can take away from the above experiences:
  
 How can we synthesise this knowledge, along with what we've learned into something that makes more sense?
 
-#### Estimating Should be About _Estimating [Pay Off](Glossary#pay-off)_
+#### Tip #1: Estimating Should be About _Estimating [Pay Off](Glossary#pay-off)_
 
 For a given [action](Glossary#taking-action) / road-map / business strategy, what [Attendant Risks](Glossary#attendant-risk) are we going to have when we get there?   Yes, we'll all be older (there _will be_ [Schedule Risk](Scarcity-Risk#schedule-risk)), but it's also about:
 
@@ -164,7 +164,7 @@ Instead of the Agile Estimation being about picking out a story-point number bas
  - "I don't think we should have component A interacting with component B because it'll introduce extra [Communication Risk]() which we will always be tripping over."
  - "I worry we might not understand what the sales team want and are facing [Implementation Risk]().  How about we try and get agreement on a specification?"  
  
-#### The Risk Landscape is Increasingly Complex
+#### Tip #2: The Risk Landscape is Increasingly Complex: Utilise This
 
 ![Journey via the Central Line](images/estimates/central-line.png)
 
@@ -191,7 +191,7 @@ Because the modern [Risk Landscape](Glossary#risk-landscape) is so complex:
  - Dead-Ends (like a broken Central Line) are much more likely to trip you up.
  - You need to keep up with developments in your field.   Read widely.
    
-#### How Can We Meet Reality Early on the Biggest Risks?
+#### Tip #3: Meet Reality Early on the Biggest Risks
 
 In getting from A to B on the [Risk Landscape](Glossary#risk-landscape), imagine that all the [Attendant Risks](Glossary#attendant-risk) are the stages of a journey.  Some might be on foot, train, car and so on.  In order for your course of action to work, all the stages in the journey have to succeed.  
 
@@ -210,7 +210,7 @@ As we saw from the "10X Developer" saw, [Learning Curve Risk](Communication-Risk
  - Don't pick delivery dates far in the future.  Collectively work out the biggest risks with your clients, and then arrange the next possible date to demonstrate the mitigation.  
  - Do actions _early_ that are _simple_ but are nevertheless show-stoppers.  They are as much a source of [Hidden Risk]() as more obviously tricky actions. 
 
-#### Talk Frankly About All The Risks
+#### Tip #4: Talk Frankly About All The Risks
 
 Let's get back to Bill and Carl.  What went wrong between points `(1)` and `(2)`?   Let's break it down:
 
@@ -228,7 +228,7 @@ Let's get back to Bill and Carl.  What went wrong between points `(1)` and `(2)`
 
 ![Identifying The Action](images/generated/practices/estimates/bill2.png)
 
-#### Talk About The Future, And What Would be Most Worrying About it
+#### Tip #5: Picture Worrying Futures
 
 The Bill/Carl problem is somewhat trivial (not to mention likely fictional).  How about one from real life?  On a project I was working on in November some years ago, we had two pieces of functionality we needed: Bulk Uploads and Spock Integration.  (It doesn't really matter what these are).  The bulk uploads would be useful _now_.  But, the Spock Integration wasn't due until January.  In the Spock estimation meeting I wrote the following note:
 
