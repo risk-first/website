@@ -36,7 +36,7 @@ It's a problem as old as software itself, and in deference to that, let's examin
 
 ## Old Saw #1: The "10X Developer"
 
-> "A 10x developer is an individual who is thought to be as productive as 10 others in his or her field. The 10x developer would produce 10 times the outcomes of other colleagues, in a production, engineering or software design environment." - [10x Developer, _Techopedia_](https://www.techopedia.com/definition/31673/10x-developer)
+> "A 10X developer is an individual who is thought to be as productive as 10 others in his or her field. The 10X developer would produce 10 times the outcomes of other colleagues, in a production, engineering or software design environment." - [10X Developer, _Techopedia_](https://www.techopedia.com/definition/31673/10X-developer)
 
 Let's try and pull this apart:
 
@@ -44,12 +44,12 @@ Let's try and pull this apart:
  - It stands to reason then, that someone [taking action](Glossary#taking-action) _faster_ will leaving us with less [Schedule Risk]().
  - However, if they are _more expensive_, they may leave us with greater [Funding Risk]() afterwards.
  - But, [Schedule Risk]() isn't the only risk being transformed:   The result might be bugs, expensive new dependencies or spaghetti-code complexity.
- - The "10x" developer _must_ also leave behind less of these kind of risks too.
+ - The "10X" developer _must_ also leave behind less of these kind of risks too.
  - That means that the "10X Developer" isn't merely faster, but _taking different actions_.  They are able to use their talent and experience to see actions with greater pay-off than the 1X Developer.  
  
-![1x Task vs 10x Task](images/generated/practices/estimates/1x-10x.png)
+![1x Task vs 10X Task](images/generated/practices/estimates/1x-10X.png)
 
-Debate rages as to whether the "10x Developer" even exists.  Crucially, it would seem that such a thing would be predicated on the existence of the "1X Developer", who gets "1x" worth of work done each day.  It's not clear that there is any such thing as an average developer who is mitigating risk at an average rate.  
+Debate rages as to whether the "10X Developer" even exists.  Crucially, it would seem that such a thing would be predicated on the existence of the "1X Developer", who gets "1x" worth of work done each day.  It's not clear that there is any such thing as an average developer who is mitigating risk at an average rate.  
 
 Even good developers have bad days, weeks or projects.  [Taking Action](Glossary#taking-action) is like placing a bet.  Sometimes you lose and the [Pay-Off](Glossary#pay-off) doesn't appear:
 
@@ -57,15 +57,15 @@ Even good developers have bad days, weeks or projects.  [Taking Action](Glossary
  - A crucial use-case of the problem turns out to change the shape of the solution entirely, leading to lots of rework.
  - An assumption about how network security is configured turns out to be wrong, leading to a lengthy engagement with the infrastructure team.
 
-### How to Be a "10x Developer"
+### How to Be a "10X Developer"
 
-The easiest way to be a "10x developer" is to have _done the job before_.  If you're coding in a familiar language, with familiar libraries and tools, delivering a cookie-cutter solution to a problem in the same manner you've done several times before, then you will be a "10x developer" compared to _you doing it the first time_:
+The easiest way to be a "10X developer" is to have _done the job before_.  If you're coding in a familiar language, with familiar libraries and tools, delivering a cookie-cutter solution to a problem in the same manner you've done several times before, then you will be a "10X developer" compared to _you doing it the first time_:
  - There's no [Learning Curve Risk](Communication-Risk#learning-curve-risk), because you already learnt everything.
  - There's no [Dead End Risk](Complexity-Risk#dead-end-risk) because you already know all the right choices to make.     
 
 ## Old Saw #2: Quality, Speed, Cost: Pick Any Two
 
-> "The Project Management Triangle (called also the Triple Constraint, Iron Triangle and "Project Triangle") is a model of the constraints of project management. While its origins are unclear, it has been used since at least the 1950s.[1] It contends that:
+> "The Project Management Triangle (called also the Triple Constraint, Iron Triangle and "Project Triangle") is a model of the constraints of project management. While its origins are unclear, it has been used since at least the 1950s.  It contends that:
 > - The quality of work is constrained by the project's budget, deadlines and scope (features).
 > - The project manager can trade between constraints.
 > - Changes in one constraint necessitate changes in others to compensate or quality will suffer."
@@ -74,7 +74,7 @@ The easiest way to be a "10x developer" is to have _done the job before_.  If yo
 From a Risk-First perspective, we can now see that this is an over-simplification.  If _quality_ is a [Feature Fit](Feature-Risk) metric, _deadlines_ is [Schedule Risk](Scarcity-Risk#schedule-risk) and _budget_ refers to [Funding Risk](Scarcity-Risk#funding-risk) then that leaves us with a lot of risks unaccounted for:
 
  - I can deliver a project in very short order by building a bunch of screens that _do nothing_ (accruing _stunning levels of [Implementation Risk](Feature-Risk#implementation-risk) as I go). 
- - Or, by relying on a lottery win, I can completely mitigate the budgetary risks of a project.  (Although I would have _huge_ [Funding Risk](Scarcity-Risk#funding-risk) because _what are the chances of winning the lottery?_.  (You can bring in _any_ project at _any_ time by accepting crazy levels of risk.
+ - Or, by relying on a lottery win, project's budget is fine.  (Although I would have _huge_ [Funding Risk](Scarcity-Risk#funding-risk) because _what are the chances of winning the lottery?_.  (You can bring in _any_ project at _any_ time by accepting crazy levels of risk.
  - And Brooks' Law contradicts this by saying you can't trade budget for deadlines:
 
 > "Brooks' law is an observation about software project management according to which "adding human resources to a late software project makes it later". - [Brooks Law, _Wikipedia_](https://en.wikipedia.org/wiki/Brooks_law)
@@ -129,21 +129,19 @@ Despite this being a fictional (or fictionalised) example, it rings true for man
 
 One alternative approach, must espoused in DevOps/Agile is to pick a short-enough period of time (say, two days or two weeks), and figure out what the most meaningful step towards achieving an objective would be in that time.   By fixing the time period, we remove [Schedule Risk](Scarcity-Risk#schedule-risk) from the equation, don't we?
 
-Well, no.  First, how to choose the time period? [Schedule Risk]() tends to creep back in, in the form of something like [Man-Hours](https://en.wikipedia.org/wiki/Man-hour) or [Story Points](https://www.atlassian.com/agile/project-management/estimation): 
+Well, no.  First, how to choose the time period? [Schedule Risk](Scarcity-Risk#schedule-risk) tends to creep back in, in the form of something like [Man-Hours](https://en.wikipedia.org/wiki/Man-hour) or [Story Points](https://www.atlassian.com/agile/project-management/estimation): 
 
 > "Story points rate the relative effort of work in a Fibonacci-like format: 0, 0.5, 1, 2, 3, 5, 8, 13, 20, 40, 100. It may sound counter-intuitive, but that abstraction is actually helpful because it pushes the team to make tougher decisions around the difficulty of work. " - [Story Points, _Atlassian_](https://www.atlassian.com/agile/project-management/estimation)
 
 Second, the strategy of picking the two-day action with the greatest [Pay-Off](Glossary#pay-off) is _often good_.  After all, this is just [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent), and that's a perfectly good way for training [Machine Learning](https://en.wikipedia.org/wiki/Machine_learning) systems.  However, just like following a river downhill from the top of a mountain will _often_ get you to the sea, it probably won't take the shortest path, and sometimes you'll get stuck at a lake.  
 
-The choice of using gradient descent means that you have given up on [Goals](Glossary#goal-in-mind).  Essentially, we have here the difference between "Walking towards a destination" and "Walking downhill".  Or, a planned economy and a market economy.  But, we don't live in _either_: everyone lives in some mixture of the two:  our governments _have plans_ for big things like roads and hospitals, and taxes.  Other stuff, they leave to the whims of supply and demand. 
-
-A project always ends up being the same.
+The choice of using gradient descent means that you have given up on [Goals](Glossary#goal-in-mind):  Essentially, we have here the difference between "Walking towards a destination" and "Walking downhill".  Or, if you like, a planned economy and a market economy.  But, we don't live in _either_: everyone lives in some mixture of the two:  our governments _have plans_ for big things like roads and hospitals, and taxes.  Other stuff, they leave to the whims of supply and demand.   A project always ends up being the same.
 
 ## Risk-First Estimating
 
 Let's figure out what we can take away from the above experiences:
 
- - The proverb of the 10x developer, and the difference made by experience implies that a lot of [Schedule Risk](Scarcity-Risk#schedule-risk) comes from [Learning Curve](Communication-Risk#learning-curve-risk) risk and [Dead End Risk](Complexity-Risk#dead-end-risk).  
+ - The 10X developer saw, and the difference made by experience implies that a lot of the effort on a project comes from [Learning Curve Risk](Communication-Risk#learning-curve-risk) and [Dead End Risk](Complexity-Risk#dead-end-risk).  
  - The lesson from "Quality, Speed, Cost" is that actually, we need to be considering _all_ risks, not just some arbitrary milestones on a project plan.  Project plans can always be gamed, and you can always leave risks unaccounted for in order to hit the goals (good old [Map and Territory Risk](Map-and-territory-risk) strikes again).
  - The lesson from the Parkinson's Law was that by giving people a _time budget_, you absolve them from [Schedule Risk](Scarcity-Risk#schedule-risk)... at least until they realise they're going to overrun.   This gives them one less dimension of risk to worry about, but means they end up taking all the time you give them, because they are optimising over the remaining risks.
  - Finally, the lesson from Agile Estimation is that _just iterating_ is sometimes not as efficient as _using your intuition and experience_ to find a more optimal path.  
@@ -201,7 +199,7 @@ The _sensible_ approach would be to test the steps _in order from weakest to str
 
 Often, a _strategy_ will be broken up into multiple actions.  _Which are the riskiest actions?_  Figure this out, using the Risk-First vocabulary and the best experience you can bring to bear, then, perform the actions which [Pay Off](Glossary#pay-off) the biggest risks first.  
 
-As we saw from the "10x Developer" saw, [Learning Curve Risk](Communication-Risk#learning-curve-risk) and [Dead End Risk](Complexity-Risk#dead-end-risk), are likely to be the biggest risks.  How can we front-load this and tackle these earlier?   
+As we saw from the "10X Developer" saw, [Learning Curve Risk](Communication-Risk#learning-curve-risk) and [Dead End Risk](Complexity-Risk#dead-end-risk), are likely to be the biggest risks.  How can we front-load this and tackle these earlier?   
 
  - _Having a vocabulary_ (like the one Risk-First provides) allows us to _at least talk about these_.  e.g. "I believe there is a [Dead End Risk]() that we might not be able to get this software to run on Linux."
  - Build mock-ups:  
