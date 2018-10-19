@@ -47,7 +47,7 @@ Let's try and pull this apart:
  - The "10X" developer _must_ also leave behind less of these kind of risks too.
  - That means that the "10X Developer" isn't merely faster, but _taking different actions_.  They are able to use their talent and experience to see actions with greater pay-off than the 1X Developer.  
  
-![1x Task vs 10X Task](images/generated/practices/estimates/1x-10X.png)
+![1x Task vs 10X Task](images/generated/practices/estimates/1x-10x.png)
 
 Debate rages as to whether the "10X Developer" even exists.  Crucially, it would seem that such a thing would be predicated on the existence of the "1X Developer", who gets "1x" worth of work done each day.  It's not clear that there is any such thing as an average developer who is mitigating risk at an average rate.  
 
