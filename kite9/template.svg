@@ -48,6 +48,8 @@
   </template>
 
 
+
+
   <template id='glyph'>
     <back style='kite9-usage: decal; kite9-type: svg; '>
       <svg:rect x='0' y='0' width='#{$width}' height='#{$height}' rx='8pt' ry='8pt' style='fill: url(#risk-background); ' class="glyph-back" />
@@ -84,6 +86,21 @@
         <image-content style="kite9-template: url(noun_documents_1013544_000000.svg)" />
     </image>
     <title><contents /></title>
+  </template>
+  
+  
+  <template id='mitigated'>
+    <contents />
+    <back style='kite9-usage: decal; kite9-type: svg;  '>
+      <svg:line x1="0" y1="#{$height}" x2="#{$width}" y2="0" stroke="black" stroke-width="10" stroke-opacity="0.2"/>
+    </back>
+  </template>
+  
+  <template id='hidden'>
+    <contents />
+    <back style='kite9-usage: decal; kite9-type: svg; kite9-transform: position;'>
+      <svg:g transform="scale(#{$width div 230}) translate(140,-20)" style="fill-opacity: 0.2;  kite9-template: url(noun_Cloud_683453_000000.svg);" />
+	</back>
   </template>
   
   <template id="users">
@@ -224,17 +241,6 @@
       <code>Mitigated</code>
       <image>
         <image-content style="kite9-template: url(noun_Shield_1981935_000000.svg)" />
-      </image>
-      <title><contents />
-      </title>
-    </risk-box>
-  </template>
-  
-  <template id="hidden">
-    <risk-box>
-      <code>Hidden Risk</code>
-      <image>
-        <image-content style="kite9-template: url(noun_Caution_1714515_000000.svg)" />
       </image>
       <title><contents />
       </title>
