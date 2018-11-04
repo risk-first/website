@@ -21,17 +21,35 @@
     <action>Code</action>
     <action>Release</action>
 
-    <context id="d">
+    <context id="d" style="kite9-layout: down;">
 
-      <risk class="hidden">Breaks Y</risk>
-      <risk class="hidden">API Bugs</risk>
-      <risk class="hidden">Developer 
-      Misimplementation</risk>
-      <risk class="hidden">Duplicates 
-      Functionality</risk>
-      <risk class="hidden">Hard To Find</risk>
+      <group style="kite9-layout: right">
+        <hidden>
+          <risk class="attendant">Breaks Y</risk>
+        </hidden>
+        <hidden>
+          <risk class="attendant">Developer
+            Misimplementation
+          </risk>
+        </hidden>
+        <hidden>
+          <risk class="attendant">Duplicates
+            Functionality
+          </risk>
+        </hidden>
+      </group>
+      <group style="kite9-layout: right">
+        <hidden>
+          <risk class="attendant">Hard To
+            Find
+          </risk>
+        </hidden>
+        <hidden>
+          <risk class="attendant">Breaks Y</risk>
+        </hidden>
+      </group>
       <label xsi:type="text-line" id="4">
-        <text>Hidden Risks</text>
+        <text>Internal Model</text>
         <symbols />
       </label>
     </context>

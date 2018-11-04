@@ -19,13 +19,17 @@
     <action>Automate Process</action>
 
     <context id="c" bordered="true">
-
-      <risk class="complexity" />
-
-      <risk class="schedule" />
+    
+      <hidden>
+        <risk class="complexity" />
+      </hidden>
+    
+      <hidden>
+        <risk class="schedule" />
+      </hidden>
 
       <label xsi:type="text-line" id="id_16">
-        <text>Revealed Hidden Risks</text>
+        <text>Internal Model</text>
         <symbols />
       </label>
     </context>
