@@ -3,8 +3,7 @@
   <svg:defs>
     <svg:style type="text/css"> @import url("risk.css");</svg:style>
   </svg:defs>
-  <diagram xmlns="http://www.kite9.org/schema/adl"  id="diagram-116"
-    name="Development Process 1">
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-116" name="Development Process 1">
 
 
 
@@ -12,7 +11,7 @@
 
       <risk id="id_0" class="goal">Feature X</risk>
 
-      <label  id="id_16">
+      <label id="id_16">
         <text>Internal Model</text>
         <symbols />
       </label>
@@ -20,22 +19,27 @@
 
     <action>Write Specification</action>
 
-    <context id="d">
-          <hidden>
-        <risk class="attendant">Developer
-        Misimplementation</risk>
-      </hidden>
-      <hidden>
-        <risk class="attendant">Duplicates
-        Functionality</risk>
-      </hidden>
-      <label  id="4">
-        <text>Internal Model</text>
-        <symbols />
-      </label>
-    </context>
-    
-    <artifact>Specification</artifact>
+    <group style="kite9-layout: down">
+      <context id="d">
+        <hidden>
+          <risk class="attendant">Developer
+            Misimplementation
+          </risk>
+        </hidden>
+        <hidden>
+          <risk class="attendant">Duplicates
+            Functionality
+          </risk>
+        </hidden>
+        <label id="4">
+          <text>Internal Model</text>
+          <symbols />
+        </label>
+      </context>
+
+      <artifact>Specification</artifact>
+    </group>
+
 
   </diagram>
 </svg:svg>
