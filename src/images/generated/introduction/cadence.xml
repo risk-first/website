@@ -10,7 +10,9 @@
 
     <context id="c" bordered="true" style="kite9-sizing: minimize;">
 
-      <risk id="id_0" class="hidden">Hidden Risks</risk>
+      <hidden>
+        <risk id="id_0" class="attendant">Hidden Risks</risk>
+      </hidden>
 
       <label xsi:type="text-line" id="id_16">
         <text>Internal Model</text>
@@ -23,9 +25,11 @@
       <group style="kite9-layout: right">
         <action style="kite9-min-width: 200pt; ">Fast Feedback</action>
         <context id="d">
-          <risk class="mitigated">Some Risks</risk>
+          <mitigated>
+            <risk class="attendant">Some Risks</risk>
+          </mitigated>
           <label xsi:type="text-line" id="4">
-            <text>Hidden Risks</text>
+            <text>Internal Model</text>
             <symbols />
           </label>
         </context>
@@ -34,10 +38,12 @@
       <group style="kite9-layout: right">
         <action style="kite9-min-width: 200pt; ">Thorough Feedback</action>
         <context id="d">
-          <risk class="mitigated">More Risks</risk>
+          <mitigated>
+            <risk class="attendant">More Risks</risk>
+          </mitigated>
           <risk class="attendant">Schedule Risk</risk>
           <label xsi:type="text-line" id="4">
-            <text>Hidden Risks</text>
+            <text>Internal Model</text>
             <symbols />
           </label>
         </context>

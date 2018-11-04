@@ -29,7 +29,12 @@ allLinks {
 
 action {
 	kite9-type: container;
-	kite9-template: url(template.svg#action)
+	kite9-template: url(template.svg#action);
+	kite9-sizing: minimize;
+}
+
+action.left {
+	kite9-template: url(template.svg#action-left)	
 }
 
 artifact {
@@ -56,6 +61,16 @@ users {
 	kite9-padding: 10pt; 
 	kite9-connection-align: 50%;
 	kite9-min-size: 110pt 140pt;	
+}
+
+mitigated {
+	kite9-type: container;
+	kite9-template: url(template.svg#mitigated);
+}
+
+hidden {
+	kite9-type: container;
+	kite9-template: url(template.svg#hidden);
 }
 
 risk {
@@ -152,10 +167,6 @@ risk.misinterpretation {
 
 risk.trust {
 	kite9-template: url(template.svg#trust);
-}
-
-risk.belief {
-	kite9-template: url(template.svg#belief);
 }
 
 risk.learning-curve {
@@ -282,6 +293,15 @@ risk.reputation {
 	kite9-template: url(template.svg#reputation);
 }
 
+risk.software-dependency {
+	kite9-template: url(template.svg#software-dependency);
+}
+
+risk.security {
+	kite9-template: url(template.svg#security);
+}
+
+
 
 risk-box {
 	kite9-margin: 10pt;
@@ -293,6 +313,10 @@ risk-box {
 	kite9-padding: 10pt; 
 	kite9-connection-align: 50%;
 	kite9-min-size: 110pt 140pt;
+}
+
+risk {
+	kite9-connection-align: 50%;
 }
 
 diagram {
@@ -461,6 +485,10 @@ link {
 
 link.invisible {
 	kite9-template: url(template.svg#invisible-link);
+}
+
+link.dotted {
+	kite9-template: url(template.svg#dotted-link);
 }
 
 from,

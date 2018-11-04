@@ -18,7 +18,7 @@ Estimates are a huge source of contention in the software world:
 
 Why is it so bad?  The problem with a developer answering a question such as:
 
-> "How long will it take to deliver X"
+> "How long will it take to deliver X?"
 
 Is the following:
 
@@ -238,7 +238,7 @@ The team _wanted_ to start Bulk Uploads work.  After all, from these estimates i
 
 > "If it was February now, and we'd _got nothing done_, what would our biggest risk be?"
 
-Missing Bulk Uploads wouldn't be a show-stopper, but missing Spock would be a huge regulatory problem.  _Start work on the things you can't miss. _ 
+Missing Bulk Uploads wouldn't be a show-stopper, but missing Spock would be a huge regulatory problem.  _Start work on the things you can't miss._ 
 
 This is the essence of De-Risking.  
 

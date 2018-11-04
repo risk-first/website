@@ -15,27 +15,32 @@
         <symbols />
       </label>
     </context>
-    
+
     <action>Host A Party</action>
 
-    <context id="c" bordered="true">
+    <context id="c" bordered="true" style="kite9-layout: down; ">
 
-    <risk id="id_0" class="attendant">Nothing To Eat</risk>
-    <risk id="id_0" class="attendant">Wrong Ingredients</risk>
-    <risk id="id_0" class="attendant">Ruin The Food</risk>
-    
-      <label xsi:type="text-line" id="id_16">
-        <text>Knowledge And Experience</text>
-        <symbols />
-      </label>
-    </context>
-    <context id="d">
+      <group style="kite9-layout: right; ">
+        <risk id="id_0" class="attendant">Nothing To Eat</risk>
+        <risk id="id_0" class="attendant">Wrong 
+        Ingredients</risk>
+        <risk id="id_0" class="attendant">Ruin The Food</risk>
+      
+      </group>
+      <group style="kite9-layout: right; ">
+        <hidden>
+          <risk id="id_0" class="attendant">Old Eggs
+            Don't Poach
+          </risk>
+        </hidden>
+        <hidden>
+          <risk id="id_0" class="attendant">Susan is Vegan</risk>
+        </hidden>
+      </group>
 
-      <risk id="id_0" class="hidden">Old Eggs 
-      Don't Poach</risk>
-      <risk id="id_0" class="hidden">Susan is Vegan</risk>
+
       <label xsi:type="text-line" id="4">
-        <text>Hidden Risks</text>
+        <text>Updated Internal Model</text>
         <symbols />
       </label>
     </context>

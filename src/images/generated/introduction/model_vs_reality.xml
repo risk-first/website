@@ -9,9 +9,9 @@
     <context id="c" bordered="true">
 
       <risk id="id_0" class="goal">Successful Party</risk>
-      <risk id="id_0" class="attendant">Attendant Risk 1</risk>
-      <risk id="id_0" class="attendant">Hidden Risk 2</risk>
-       
+      <mitigated>
+        <risk id="id_0" class="attendant">Attendant Risk 1</risk>
+      </mitigated>
 
       <label xsi:type="text-line" id="id_16">
         <text>Internal Model</text>
@@ -24,21 +24,15 @@
     <context id="c" bordered="true">
 
       <risk id="id_0" class="attendant">New Attendant Risk</risk>
-
-      <label xsi:type="text-line" id="id_16">
-        <text>Knowledge And Experience</text>
-        <symbols />
-      </label>
-    </context>
-    <context id="d">
-
-      <risk id="id_0" class="hidden">New Hidden Risk</risk>
+      <hidden>
+        <risk id="id_0" class="attendant">New Hidden Risk</risk>
+      </hidden>
+      
       <label xsi:type="text-line" id="4">
-        <text>Hidden Risks</text>
+        <text>Internal model</text>
         <symbols />
       </label>
     </context>
-
 
   </diagram>
 </svg:svg>
