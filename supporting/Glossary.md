@@ -1,7 +1,9 @@
 ![Under Construction](images/state/uc.png)
 
 
-## Abstraction
+##### Abstraction
+
+The process of removing physical, spatial, or temporal details or attributes in the study of objects or systems in order to more closely attend to other details of interest.
 
 ## Feedback Loop
 
@@ -39,7 +41,6 @@ An internal model _represents_ reality:  reality is made of atoms, whereas the i
 ### Hidden Risk
 
 ### Mitigated Risk
-
 
 
 
