@@ -31,7 +31,7 @@ public class ImagePreprocessor {
 	public static void main(String[] args) throws Exception {
 		String file = args[0];
 		
-		Kite9Log.setLogging(true);
+		Kite9Log.setLogging(false);
 		
 		processFile(file);
 		
