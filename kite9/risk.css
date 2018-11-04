@@ -452,7 +452,9 @@ diagram glyph label {
 	kite9-sizing: minimize;
 	kite9-template: url(template.svg#glyph-label-text);
 	kite9-vertical-align: center;
-	kite9-margin: 5pt 
+	kite9-margin: 5pt;
+	kite9-min-width: 600pt; 
+	
 }
 
 .glyph-back {
@@ -527,7 +529,7 @@ to.circle {
 context {
 	kite9-template: url(template.svg#context);
 	kite9-type: container;
-	kite9-sizing: maximize;
+	kite9-sizing: minimize;
 	kite9-traversal: always;
 	kite9-padding: 12pt;	
 	kite9-link-inset: 12pt;
@@ -551,6 +553,7 @@ context > label {
 	kite9-sizing: minimize;
 	kite9-template: url(template.svg#container-label);
 	kite9-padding: 4pt;
+	kite9-horizontal-align: center;
 }
 
 .container-label-front {
