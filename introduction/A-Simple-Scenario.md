@@ -36,7 +36,7 @@ Which risks we know about depends on our **knowledge** and **experience**, then.
 
 ## Meeting Reality
 
-As the dinner party gets closer, we make our preparations, and the inadequacies of the [Internal Model](Glossary#Internal-Model) become apparent, and we learn what we didn't know.  The [Hidden Risks](Glossary#hidden-risk) reveal themselves.  Other things we were worried about may not materialise. Things we thought would be minor risks turn out to be greater.   
+As the dinner party gets closer, we make our preparations, and the inadequacies of the [Internal Model](Glossary#Internal-Model) become apparent, and we learn what we didn't know.  The [Hidden Risks](Glossary#hidden-risk) reveal themselves.  Other things we were worried about don't materialise. Things we thought would be minor risks turn out to be greater.   
 
 Our model is forced to [Meet Reality](Glossary#meet-reality), and the model changes.  We may be forced to take further, mitigating actions to deal with these new risks, as shown in this diagram.
 
