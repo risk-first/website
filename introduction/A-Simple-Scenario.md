@@ -20,7 +20,7 @@ These _nagging doubts_ that are going through your head I'll call the [Attendant
 
 When we go about preparing this wonderful evening, we can choose to deal with these risks:  shop for the ingredients in advance, prepare parts of the meal, maybe practice the cooking in advance.  Or, we can wing it, and sometimes we'll get lucky.
 
-How much effort we expend on these [Attendant Risks](Glossary#attendant-risk) depends on how big we think they are.  For example, if you know it's a 24-hour shop, you'll probably not worry too much about getting the ingredients well in advance (although, the shop _could still be closed_).
+How much effort we expend on these [Attendant Risks](Glossary#attendant-risk) depends on how big we think they are.  For example, if you know there's a 24-hour shop, you'll probably not worry too much about getting the ingredients well in advance (although, the shop _could still be closed_).
 
 ## Hidden Risks
 
