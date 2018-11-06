@@ -48,6 +48,6 @@ If we had a good [Internal Model](Glossary#Internal-Model), and took the right a
 
 Here, we've introduced some new terms that we're going to use a lot:  [Meet Reality](Glossary#meet-reality), [Attendant Risk](Glossary#attendant-risk), [Hidden Risk](Glossary#attendant-risk), [Internal Model](Glossary#Internal-model) and [Goal In Mind](Glossary#Goal-In-Mind).  And, we've applied them in a simple scenario.
 
-But Risk-First is about understanding the risks in the software process, so let's examine the scenario of a new software project, and expand on the simple model being outlined above:  instead of a single person, we are likely to have a team, and our model will not just exist in our heads, but in the code we write.  
+But Risk-First is about understanding risk in software development, so let's examine the scenario of a new software project, and expand on the simple model being outlined above:  instead of a single person, we are likely to have a team, and our model will not just exist in our heads, but in the code we write.  
 
 On to [Development Process](Development-Process)...
