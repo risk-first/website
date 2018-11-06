@@ -6,7 +6,7 @@ Lets for a moment forget about software completely, and think about _any endeavo
 
 ## Goal In Mind
 
-Now, in this endeavour, we want to be successful.  That is to say, we have a [Goal In Mind](Glossary#Goal-In-Mind):  we want our friends to go home satisfied after a decent meal, and not to feel hungry.   As a bonus, we might also want to spend time talking with them before and during the meal.  So, now to achieve our [Goal In Mind](Glossary#Goal-In-Mind) we *probably* have to do some tasks.  
+Now, in this endeavour, we want to be successful.  That is to say, we have a **[Goal In Mind](Glossary#Goal-In-Mind)**:  we want our friends to go home satisfied after a decent meal, and not to feel hungry.   As a bonus, we might also want to spend time talking with them before and during the meal.  So, now to achieve our [Goal In Mind](Glossary#Goal-In-Mind) we *probably* have to do some tasks.  
 
 Since our goal only exists _in our head_, we can say it is part of our **[Internal Model](Glossary#Internal-model)** of the world.  That is, the model we have of reality.  This model extends to _predicting what will happen_.
 
