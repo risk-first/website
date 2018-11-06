@@ -24,7 +24,9 @@ How much effort we expend on these [Attendant Risks](Glossary#attendant-risk) de
 
 ## Hidden Risks
 
-There are also **[Hidden Risks](Glossary#attendant-risk)** that you _don't_ know about: if you're poaching eggs for dinner, perhaps you don't know that fresh eggs poach best.  The difference is, [Attendant Risks](Glossary#attendant-risk) are risks you are aware of, but can't be sure of the amount they will impact you.  [Hidden Risks](Glossary#attendant-risk) are ones you are unaware of.  [Donald Rumsfeld](https://en.wikipedia.org/wiki/There_are_known_knowns) famously called these "Unknown Unknowns".  
+There are also **[Hidden Risks](Glossary#attendant-risk)** that you _don't_ know about: if you're poaching eggs for dinner, perhaps you don't know that fresh eggs poach best.  The difference is, [Attendant Risks](Glossary#attendant-risk) are risks you are aware of, but can't be sure of the amount they will impact you.  [Hidden Risks](Glossary#attendant-risk) are ones you are unaware of.  
+
+[Donald Rumsfeld](https://en.wikipedia.org/wiki/There_are_known_knowns) famously called these "Unknown Unknowns".  
 
 ![Goal In Mind, the risks you know about and the ones you don't](images/generated/introduction/hidden_risks.png)
 
