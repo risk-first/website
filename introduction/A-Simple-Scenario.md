@@ -42,12 +42,12 @@ Our model is forced to [Meet Reality](Glossary#meet-reality), and the model chan
 
 ![How taking action affects Reality, and also changes your internal model](images/generated/introduction/model_vs_reality.png)
 
-If we had a good model, and took the right actions, we should see positive outcomes.  If we failed to mitigate risks, or took inappropriate actions, we'll probably see negative outcomes.
+If we had a good [Internal Model](Glossary#Internal-Model), and took the right actions, we should see positive outcomes.  If we failed to manage the risks, or took inappropriate actions, we'll probably see negative outcomes.
 
 ## On To Software
 
 Here, we've introduced some new terms that we're going to use a lot:  [Meet Reality](Glossary#meet-reality), [Attendant Risk](Glossary#attendant-risk), [Hidden Risk](Glossary#attendant-risk), [Internal Model](Glossary#Internal-model) and [Goal In Mind](Glossary#Goal-In-Mind).  And, we've applied them in a simple scenario.
 
-But Risk-First is about understanding the risks in the software process and how these are managed by the various methodologies and tools you can choose from.  <!-- tweet-end -->  So let's examine the scenario of a new software project, and expand on the simple model being outlined above:  instead of a single person, we are likely to have a team, and our model will not just exist in our heads, but in the code we write.  
+But Risk-First is about understanding the risks in the software process, so let's examine the scenario of a new software project, and expand on the simple model being outlined above:  instead of a single person, we are likely to have a team, and our model will not just exist in our heads, but in the code we write.  
 
 On to [Development Process](Development-Process)...
