@@ -10,14 +10,15 @@
     <group style="kite9-layout: down">
     
       <context id="c" bordered="true">
-  
-        <risk id="id_0" class="goal">Feature X</risk>     
-        <risk class="mitigated">Developer 
-        Misimplementation</risk>
-        <risk class="attendant">Duplicates 
-        Functionality</risk>
-        
-  
+        <risk id="id_0" class="goal">Feature X</risk> 
+        <mitigated>
+          <risk class="mitigated">Developer 
+          Misimplementation</risk>
+        </mitigated>    
+        <mitigated>
+          <risk class="attendant">Duplicates 
+          Functionality</risk>
+        </mitigated>
         <label  id="id_16">
           <text>Internal Model</text>
           <symbols />

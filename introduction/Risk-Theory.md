@@ -203,11 +203,6 @@ technologies used etc.  That is, the risks faced by IT projects are _too diverse
 
 Reality is messy.  Dressing it up with numbers doesn't change that and you risk [fooling yourself](Map-And-Territory-Risk).  If this is the case, is there any hope at all in what we're doing?  I would argue yes:   _forget precision_.  You should, with experience be able to hold up two separate risks and answer the question, "is this one bigger than this one?"  
 
-## Pay-Off
-
-Because everything we're dealing with is [Risk](Glossary#risk), we can't know in advance how well any action we take will pay off.  [Taking Action](Glossary#taking-action) is a lot like placing a bet.  But, if we can _weigh separate risks in our hands_ we should be able to intuit what the [Pay-Off](Glossary#pay-off) of a given [Action](Glossary#taking-action) will be.  
-
-The fruits of this gambling are revealed when we [meet reality](Glossary#meet-reality), and we can see whether our bets really paid off. 
 
 With that in mind, let's look at how we can meet reality [as fast and often as possible](Cadence).
 
