@@ -36,17 +36,17 @@ Which risks we know about depends on our **knowledge** and **experience**, then.
 
 ## Meeting Reality
 
-As the dinner party gets closer, we make our preparations, and the inadequacies of the [Internal Model](Glossary#Internal-Model) become apparent, and we learn what we didn't know.  The [Hidden Risks](Glossary#hidden-risk) reveal themselves.  Other things we were worried about don't materialise. Things we thought would be minor risks turn out to be greater.   
+As the dinner party gets closer, we make our preparations, and the inadequacies of the [Internal Model](Glossary#Internal-Model) become apparent.  We learn what we didn't know and the [Hidden Risks](Glossary#hidden-risk) reveal themselves.  Other things we were worried about don't materialise.  Things we thought would be minor risks turn out to be greater.   
 
-Our model is forced to [Meet Reality](Glossary#meet-reality), and the model changes.  We may be forced to take further, mitigating actions to deal with these new risks, as shown in this diagram.
+Our model is forced to [Meet Reality](Glossary#meet-reality), and the model changes,  forcing us to deal with these risks, as shown in this diagram.  Whenever we try to _do something_ about a risk, it is called [Taking Action](Glossary#take-action).  [Taking Action](Glossary#take-action) _changes_ reality, and with it your [Internal Model](Glossary#internal-model) of the risks you're facing.  That's because it's only by interacting with the world that we add knowledge to our [Internal Model](Glossary#internal-model) about what works and what doesn't.  Even something as passive as _checking the shop opening times_ is an action, and it improves on our [Internal Model](Glossary#internal-model) of the world.
 
-![How taking action affects Reality, and also changes your internal model](images/generated/introduction/model_vs_reality.png)
+![How Taking Action affects Reality, and also changes your Internal Model](images/generated/introduction/model_vs_reality.png)
 
 If we had a good [Internal Model](Glossary#Internal-Model), and took the right actions, we should see positive outcomes.  If we failed to manage the risks, or took inappropriate actions, we'll probably see negative outcomes.
 
 ## On To Software
 
-Here, we've introduced some new terms that we're going to use a lot:  [Meet Reality](Glossary#meet-reality), [Attendant Risk](Glossary#attendant-risk), [Hidden Risk](Glossary#attendant-risk), [Internal Model](Glossary#Internal-model) and [Goal In Mind](Glossary#Goal-In-Mind).  And, we've applied them in a simple scenario.
+Here, we've introduced some new terms that we're going to use a lot:  [Meet Reality](Glossary#meet-reality), [Attendant Risk](Glossary#attendant-risk), [Hidden Risk](Glossary#attendant-risk), [Internal Model](Glossary#Internal-model), [Taking Action](Glossary#take-action) and [Goal In Mind](Glossary#Goal-In-Mind).  And, we've applied them in a simple scenario.
 
 But Risk-First is about understanding risk in software development, so let's examine the scenario of a new software project, and expand on the simple model being outlined above:  instead of a single person, we are likely to have a team, and our model will not just exist in our heads, but in the code we write.  
 
