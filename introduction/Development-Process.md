@@ -104,13 +104,14 @@ At this stage, we might discover the [Hidden Risk](Glossary#Hidden-Risk) that we
 
 ### User Acceptance Test
 
-Next, User Acceptance is where our new feature meets another reality: _actual users_.   I think you can see how the process works by now.  We're just flushing out yet more [Hidden Risks](Glossary#hidden-risk).
+Next, User Acceptance Testing (UAT) is where our new feature meets another reality: _actual users_.   I think you can see how the process works by now.  We're just flushing out yet more [Hidden Risks](Glossary#hidden-risk).
 
 ![UAT - putting tame users in front of your software is better than real ones, where the risk is higher ](images/generated/introduction/development_process_uat.png)
 
  - [Taking Action](Glossary#taking-action) is the _only_ way to create change in the world.
- - It's also the only way we can _learn_ about the world, adding to our [Internal Model](Glossary#internal-model).  
+ - It's also the only way we can _learn_ about the world, adding to our [Internal Model](Glossary#internal-model). 
  - In this case, we discover a [Hidden Risk](Glossary#hidden-risk): the user's difficulty in finding the feature.  (The cloud obscuring the risk shows that it is hidden).
+ - In return, we can _expect_ the process of performing the UAT to delay our release (this is an attendant schedule risk).   
 
 ## Observations
 
