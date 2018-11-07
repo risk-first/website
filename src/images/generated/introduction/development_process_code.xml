@@ -3,51 +3,53 @@
   <svg:defs>
     <svg:style type="text/css"> @import url("risk.css");</svg:style>
   </svg:defs>
-  <diagram xmlns="http://www.kite9.org/schema/adl"  id="diagram-116"
-    name="Development Process 1">
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-116" name="Development Process 1">
 
 
     <group style="kite9-layout: down">
-    
+
       <context id="c" bordered="true">
-  
-        <risk id="id_0" class="goal">Feature X</risk>     
-        <risk class="mitigated">Developer 
-        Misimplementation</risk>
-        <risk class="attendant">Duplicates 
-        Functionality</risk>
-        
-  
-        <label  id="id_16">
-          <text>Internal Model</text>
-          <symbols />
-        </label>
-      </context>     
-      <group style="kite9-layout: right">
-        <artifact>Specification</artifact>
-        <artifact>Existing Code</artifact>
-      </group>
-      
-    </group>
-    
 
-    
+        <risk id="id_0" class="goal">Feature X</risk>
+        <risk class="mitigated">Developer
+          Misimplementation
+        </risk>
+        <risk class="attendant">Duplicating
+          Functionality
+        </risk>
 
-    <action>Code and Unit Test</action>
-    
-    <group style="kite9-layout: down">
 
-      <context id="d">
-             <hidden>
-        <risk class="attendant">Development 
-        Difficulties</risk>
-      </hidden>
-        <label  id="4">
+        <label id="id_16">
           <text>Internal Model</text>
           <symbols />
         </label>
       </context>
-      
+      <group style="kite9-layout: right">
+        <artifact>Specification</artifact>
+        <artifact>Existing Code</artifact>
+      </group>
+
+    </group>
+
+
+
+
+    <action>Code and Unit Test</action>
+
+    <group style="kite9-layout: down">
+
+      <context id="d">
+        <hidden>
+          <risk class="attendant">Development
+            Difficulties
+          </risk>
+        </hidden>
+        <label id="4">
+          <text>Hidden Risks</text>
+          <symbols />
+        </label>
+      </context>
+
       <artifact>New Code</artifact>
     </group>
 
