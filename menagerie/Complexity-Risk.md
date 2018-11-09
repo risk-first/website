@@ -221,7 +221,7 @@ But, having mitigated the [Feature Risk](Feature-Risk), you are now carrying mor
 
 ## Kitchen Analogy
 
-It’s often hard to make the case for minimising [Technical Debt](Complexity-Risk#technical-debt): it often feels that there are more important priorities, especially when technical debt can be “swept under the carpet” and forgotten about until later.  (See [Discounting The Future](Risk-Theory#discounting-the-future-to-zero).)
+It’s often hard to make the case for minimising [Technical Debt](Complexity-Risk#technical-debt): it often feels that there are more important priorities, especially when technical debt can be “swept under the carpet” and forgotten about until later.  (See [Discounting The Future](Evaluating-Risk#discounting-the-future-to-zero).)
 
 One helpful analogy I have found is to imagine your code-base is a kitchen.   After preparing a meal (i.e. delivering the first implementation), _you need to tidy up the kitchen_.  This is just something everyone does as a matter of _basic sanitation_.
 

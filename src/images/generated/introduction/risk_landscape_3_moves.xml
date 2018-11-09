@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-113" name="Goal In Mind">
+
+    <group style="kite9-layout: right;">
+
+      <context id="start" style="kite9-connection-align: 50%;   kite9-traversal: none; ">
+
+        <risk id="id_0" class="funding" />
+        <risk id="id_0" class="implementation" />
+
+        <label id="id_16">
+          <text>Current Internal Model</text>
+          <symbols />
+        </label>
+      </context>
+
+      <arrow id="gl">
+        <label>Go Live</label>
+      </arrow>
+
+      <context id="one" style="kite9-traversal: none; ">
+
+        <risk class="operational" />
+        <risk class="attendant">Reputational
+          Risk
+        </risk>
+        <risk class="implementation" />
+
+        <label id="id_16">
+          <text>Future Internal Model 1</text>
+          <symbols />
+        </label>
+      </context>
+    </group>
+
+
+    <group style="kite9-layout: right;">
+      <context id="two" style="kite9-connection-align: 50%; kite9-traversal: none; ">
+
+        <risk id="id_0" class="funding" />
+
+        <label id="id_16">
+          <text>Future Internal Model 2</text>
+          <symbols />
+        </label>
+      </context>
+
+      <arrow id="gl2">
+        <label>Go Live</label>
+      </arrow>
+
+
+
+      <context id="goal" style="kite9-connection-align: 50%; kite9-traversal: none; ">
+
+        <risk class="operational" />
+
+        <label id="id_16">
+          <text>Goal</text>
+          <symbols />
+        </label>
+      </context>
+
+      <context id="ungoal" style="kite9-connection-align: 50%; kite9-traversal: none; ">
+
+        <risk class="operational" />
+        <risk class="attendant">Reputational
+          Risk
+        </risk>
+
+        <label id="id_16">
+          <text>Dead End</text>
+          <symbols />
+        </label>
+      </context>
+
+    </group>
+
+
+
+
+
+    <arrow id="uat">
+      <label>UAT</label>
+    </arrow>
+    <arrow id="rep">
+      <label>UAT</label>
+    </arrow>
+
+    <link class="invisible" drawDirection="DOWN">
+      <from reference="gl" />
+      <to reference="gl2" />
+    </link>
+
+
+    <link style="stroke-width: 2pt; ">
+      <from reference="start" />
+      <to reference="gl" />
+    </link>
+
+    <link style="stroke-width: 2pt; " drawDirection="DOWN">
+      <from reference="start" />
+      <to reference="uat" />
+    </link>
+
+    <link style="stroke-width: 2pt; " drawDirection="DOWN">
+      <from reference="uat" />
+      <to reference="two" class="arrow" />
+    </link>
+
+    <link style="stroke-width: 2pt; ">
+      <from reference="gl" />
+      <to reference="one" class="arrow" />
+    </link>
+
+    <link style="stroke-width: 2pt; " drawDirection="DOWN">
+      <from reference="one" />
+      <to reference="rep" />
+    </link>
+
+    <link style="stroke-width: 2pt; " drawDirection="LEFT">
+      <to reference="two" />
+      <from reference="gl2" />
+    </link>
+
+    <link style="stroke-width: 2pt; " drawDirection="RIGHT">
+      <from reference="gl2" />
+      <to reference="goal" class="arrow" />
+    </link>
+
+    <link style="stroke-width: 2pt; " drawDirection="DOWN">
+      <from reference="rep" />
+      <to reference="ungoal" class="arrow" />
+    </link>
+    
+    <link class="invisible" drawDirection="RIGHT">
+      <from reference="goal" />
+      <to reference="ungoal" />
+    </link>
+
+  </diagram>
+</svg:svg>

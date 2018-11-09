@@ -2,7 +2,7 @@
 
 After so much theory, it seems like it's time to look at how we can apply these principles in the real world.
 
-The following is based the summary of an issue from just a few weeks ago.  It's heavily edited and anonymized, and I've tried to add the **Risk-First** vocabulary along the way, but otherwise, it's real.
+The following is based the summary of an issue from just a few weeks ago.  It's heavily edited and anonymized, and I've tried to add the Risk-First vocabulary along the way, but otherwise, it's real.
 
 Some background:  **Synergy** is an online service with an app-store, and **Eve** and **Bob** are developers working for **Large Corporation LTD**, which wants to have an application accepted into Synergy's app-store.  
 

@@ -40,7 +40,7 @@ Sometimes, deadlines are set in order to _coordinate work between teams_.  The c
 
 Arguably, there is good psychological, evolutionary and risk-based reasoning behind procrastination:  the further in the future the [Deadline Risk](Deadline-risk) is, the more we discount it.  If we're only ever mitigating our _biggest risks_, then deadlines in the future don't matter so much, do they?  And, putting efforts into mitigating future risks that _might not arise_ is wasted effort.
 
-Or at least, that's the argument.  If you're [Discounting the Future To Zero](Risk-Theory) then you'll be pulling all-nighters in order to deliver any assignment.   
+Or at least, that's the argument.  If you're [Discounting the Future To Zero](Evaluating-Risk) then you'll be pulling all-nighters in order to deliver any assignment.   
 
 So, the problem with [Student Syndrome](#student-syndrome) is that the _very mitigation_ for [Schedule Risk](Scarcity-Risk#schedule-risk) (allowing more time) is an [Attendant Risk](Glossary#attendant-risk) that _causes_ [Schedule Risk](Scarcity-Risk#schedule-risk):   you'll work towards the new, generous deadline more slowly, and you'll end up revealing [Hidden Risk](Glossary#Hidden-Risk) _later_ than you would have with the original, pressing deadline ... and you end up being late because of them.
 

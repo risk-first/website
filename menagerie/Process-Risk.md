@@ -146,7 +146,7 @@ Often, [Sign Offs](Sign-Off) boil down to a balance of risk for the signer:  on 
 
 This is a nasty situation, but there are a couple of ways to de-risk this: 
  - break [Sign Offs](Sign-Off) down into bite-size chunks of risk that are acceptable to those doing the sign-off.  
- - Agree far-in-advance the sign-off criteria.  As discussed in [Risk Theory](Risk-Theory), people have a habit of heavily discounting future risk, and it's much easier to get agreement on the _criteria_ than it is to get the sign-off. 
+ - Agree far-in-advance the sign-off criteria.  As discussed in [Risk Theory](Evaluating-Risk), people have a habit of heavily discounting future risk, and it's much easier to get agreement on the _criteria_ than it is to get the sign-off. 
 
 ### Software Processes
 
