@@ -77,6 +77,6 @@ For example, it's worth considering that if we're just starting this project, ri
 
 ## Tacit and Explicit Modelling
 
-As we saw in the example of the [Dinner Party](A-Simple-Scenario), creating an internal model is something _we just do_<!-- tweet-end -->:  we have this functionality in our brains already.  When we scale this up to a whole project team, we can expect the individuals on the project to continue to do this, but we might also want to consider _explicitly_ creating a [risk register for the whole project](Risk-Theory).  
+As we saw in the example of the [Dinner Party](A-Simple-Scenario), creating an internal model is something _we just do_<!-- tweet-end -->:  we have this functionality in our brains already.  When we scale this up to a whole project team, we can expect the individuals on the project to continue to do this, but we might also want to consider _explicitly_ creating a [risk register for the whole project](Evaluating-Risk).  
 
-In the next section, we're going to take a quick aside into looking at some [Risk Theory](Risk-Theory) around this.
+In the next section, we're going to take a quick aside into looking at some [risk theory](Evaluating-Risk) around this.

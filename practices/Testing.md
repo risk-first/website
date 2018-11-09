@@ -67,7 +67,7 @@ For example, ensuring the UI "looks ok and doesn't glitch" is entirely _subjecti
 
 Since manual tests carry much higher per-use cost to run, there is a tendency to want to save this cost by doing _fewer releases_.  After all, fewer releases means less manual testing, but this may increase [Process Risk](Process-Risk).
 
-How do you decide whether to keep a test manual, or automate?  The more _automated_ a test is, the more cheaply it can be re-used.  However, the process of automation can take longer, and so adds [Schedule Risk](Scarcity-Risk#schedule-risk).  Whether or not it's worth automating is to some extend going to depend on how much you [value future time](Risk-Theory).
+How do you decide whether to keep a test manual, or automate?  The more _automated_ a test is, the more cheaply it can be re-used.  However, the process of automation can take longer, and so adds [Schedule Risk](Scarcity-Risk#schedule-risk).  Whether or not it's worth automating is to some extend going to depend on how much you [value future time](Evaluating-Risk).
 
 ### White-Box and Black-Box Testing
 

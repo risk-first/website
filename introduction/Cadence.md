@@ -68,7 +68,7 @@ Let's look at the journey so far:
  
  - Next, in [A Software Project Scenario](Software-Project-Scenario) we looked at how you could treat the project-as-a-whole as a risk management exercise, and treat the goals from one day to the next as activities to mitigate risk.
  
- - [Some Risk Theory](Risk-Theory) was an aside, looking at some terminology and the useful concept of a Risk Register.
+ - [Evaluating Risk](Evaluating-Risk) was an aside, looking at some terminology and the useful concept of a Risk Register.
  
  - Finally, above, we looked at [Cadence](Cadence), and how feedback loops allow you Navigate the [Risk Landscape](Glossary#risk-landscape) more effectively, by showing you more quickly when you're going wrong.
  

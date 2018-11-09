@@ -262,7 +262,7 @@ tbd
 
 ## Debugging
 
-## Risk First Applied
+## Risk-First Applied
 
 - Do the riskiest bits first.
 - Try and map out the risk landscape

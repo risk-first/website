@@ -15,7 +15,7 @@ Let's look at some common strategies for De-Risking.  This is probably not an ex
 
 ## Mitigate
 
-**Mitigating** the risk is taking steps towards minimising either it's likelihood or impact (as we discussed in the [Risk Theory](Risk-Theory) section).  This is the main approach we will be looking at in Part 2.   We'll break down risk into its different types and look at the general mitigations for each.  The examples above of De-Risking were all mitigations.  (Safety-nets, for example, mitigate the impact of hitting the ground.)  
+**Mitigating** the risk is taking steps towards minimising either it's likelihood or impact (as we discussed in the [Evaluating Risk](Evaluating-Risk) section).  This is the main approach we will be looking at in Part 2.   We'll break down risk into its different types and look at the general mitigations for each.  The examples above of De-Risking were all mitigations.  (Safety-nets, for example, mitigate the impact of hitting the ground.)  
 
 ## Avoid
 

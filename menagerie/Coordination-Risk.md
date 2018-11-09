@@ -4,7 +4,7 @@
 
 As in [Agency Risk](Agency-Risk), we are going to use the term _agent_, which refers to anything with [agency](https://github.com/risk-first/website/wiki/Agency-Risk#software-processes-and-teams) in a system to decide it's own fate.  That is, an agent has an [Internal Model](Glossary#Internal-Model),  and can [take actions](Glossary#taking-action) based on it.  Here, we're going to work on the assumption that the agents _are_ working towards a common [Goal](Glossary#Goal-In-Mind), even though in reality it's not always the case, as we saw in the section on [Agency Risk](Agency-Risk).
 
- In this section, we'll first build up [A Model Of Coordination Risk](#a-model-of-coordination-risk) and what exactly coordination means and why we do it.  Then, we'll look at some classic [Problems of Coordination](#problems-of-coordination).  Then, we're going to consider agency at several different levels (because of [Scale Invariance](Risk-Theory#invariances-2-scale-invariance)) .  We'll look at:
+ In this section, we'll first build up [A Model Of Coordination Risk](#a-model-of-coordination-risk) and what exactly coordination means and why we do it.  Then, we'll look at some classic [Problems of Coordination](#problems-of-coordination).  Then, we're going to consider agency at several different levels (because of [Scale Invariance](Evaluating-Risk#invariances-2-scale-invariance)) .  We'll look at:
  - [Team Decision Making](#team-decision-making),
  - [Living Organisms](#in-living-organisms),
  - [Larger Organisations](#large-organisations) and the staff within them,
@@ -180,7 +180,7 @@ Clearly, this is just a _model_, it's not set in stone and decision making style
 
 ## In Software Processes
 
-It should be pretty clear that we are applying the [Scale Invariance](Risk-Theory#invariances-2-scale-invariance) rule to [Coordination Risk](Coordination-Risk):  all of the problems we've described as affecting teams, also affect software, although the scale and terrain are different.  Software processes have limited _agency_ - in most cases they follow fixed rules set down by the programmers, rather than self-organising like people can (so far).
+It should be pretty clear that we are applying the [Scale Invariance](Evaluating-Risk#invariances-2-scale-invariance) rule to [Coordination Risk](Coordination-Risk):  all of the problems we've described as affecting teams, also affect software, although the scale and terrain are different.  Software processes have limited _agency_ - in most cases they follow fixed rules set down by the programmers, rather than self-organising like people can (so far).
 
 As before, in order to face [Coordination Risk](Coordination-Risk) in software, we need multiple agents all working together. [Coordination Risks](Coordination-Risk) (such as race conditions or deadlock) only really occurs where _more than one thing is happening at a time_.  This means we are considering _at least_ multi-threaded software and anything above that (multiple CPUs, servers, data-centres and so on).  
 

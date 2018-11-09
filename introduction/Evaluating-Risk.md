@@ -1,42 +1,44 @@
 ![For Review](images/state/for-review.png)
 
-Here, I am going to re-cap on some pre-existing knowledge about risk, generally, in order to set the scene for the next section which heads back to looking at risk on software projects.  
+Here, I am going to re-cap on some pre-existing risk management theory in order to set the scene for the next section which heads back to looking at risk on software projects.  
 
 ## Risk Registers
 
-In the previous section [Software Project Scenario](Software-Project-Scenario) we saw how you try to look across the [Attendant Risks](Glossary#attendant-risk) of the project, in order to decide what to do next.  
+Most developers are familiar with recording issues in an issue tracker.  For all of the same reasons, it's good practice to record the risks you face running a project or an operation in a [Risk Register](https://en.wikipedia.org/wiki/Risk_register).  Typically, this will include for each risk:
 
-A [Risk Register](https://en.wikipedia.org/wiki/Risk_register) can help with this.  From Wikipedia:
-
-> A typical risk register contains:
-> 
-> - A risk category to group similar risks
-> - The risk breakdown structure identification number
-> - A brief description or name of the risk to make the risk easy to discuss
-> - The impact (or consequence) if event actually occurs rated on an integer scale
-> - The probability or likelihood of its occurrence rated on an integer scale
-> - The Risk Score (or Risk Rating) is the multiplication of Probability and Impact and is often used to rank the risks.
-> - Common mitigation steps (e.g. within IT projects) are Identify, Analyse, Plan Response, Monitor and Control.
-
-This is Wikipedia's example:
-
-![Wikipedia Risk Register](images/WikipediaRiskRegister2.png)
+ - The **name** of the risk, or other identifier.
+ - A **categories** to which the risk belongs (this is the focus of the [Risk Landscape](Risk-Landscape) section in Part 2).
+ - A **brief description** or name of the risk to make the risk easy to discuss
+ - Some estimate for the **Impact**, **Probability** or **Risk Score** of the risk.
+ - Proposed actions and a log of the progress made to manage the risk.
 
 Some points about this description:
 
-### This is a Bells-and-Whistles Description
+### A Continuum of Formality
 
-Remember back to the Dinner Party example at the start: the Risk Register happened *entirely in your head*.  There is a continuum all the way from "in your head" to Wikipedia's Risk Register description.  Most of the time, it's going to be in your head, or in discussion with the team, rather than written down.   
+Remember back to the Dinner Party example at the start: the Risk Register happened *entirely in your head*.  There is a continuum all the way from "in your head" through "using a spreadsheet" to dedicated Risk Management software.    
 
-Most of the value of the **Risk-First** approach is _in conversation_.  Later, we'll have an example to show how this can work out.
+It's also going to be useful _in conversation_, and this is where the value of **Risk-First** approach is: providing a vocabulary to _talk about risks_ with your team.  
 
 ### Probability And Impact
 
-Sometimes, it's better to skip these, and just figure out a Risk Score.  This is because if you think about "impact", it implies a definite, discrete event occurring, or not occurring, and asks you then to consider the probability of that occurring. 
+**Probability** is how likely something is to happen, whilst **Impact** is the cost (usually financial) when it does happen.
+
+In a financial context (or a gambling one), we can consider the overall **Risk Score** as being the sum of the **Impact** of each outcome multiplied by it's **Probability**.  For example, if you buy a 1-Euro ticket in a raffle, there are two outcomes:  win or lose.  The impact of _winning_ would be (say) a hundred Euros, but the **probability** might be 1 in 200.  The impact of _losing_ would be the loss of 1 Euro, with 
+
+
+|Outcome        |Impact         |Probabilty        |Risk Score    |
+|---------------|---------------|------------------|--------------|
+|Win            |+ 99 EUR       |1 in 200          |.5 EUR        |
+|Lose           |-  1 EUR       |199 in 200        |-.99 EUR      |
+
+Risk Management in the finance industry _starts_ here, and gets more complex, but often (especially on a software project), it's better to skip all this, and just figure out a Risk Score.  This is because if you think about "impact", it implies a definite, discrete event occurring, or not occurring, and asks you then to consider the probability of that occurring. 
 
 **Risk-First** takes a view that risks are a continuous quantity, more like _money_ or _water_:  by taking an action before delivering a project you might add a degree of [Schedule Risk](Scarcity-Risk#schedule-risk), but decrease the [Operational Risk](Operational-Risk) later on by a greater amount.   
 
-## Graphical Analysis
+## Risk Matrix
+
+A risk matrix presents a graphical view on where risks exist.
 
 The [Wikipedia page](https://en.wikipedia.org/wiki/Risk_register) also includes this wonderful diagram showing you risks of a poorly run barbecue party:
 
@@ -48,7 +50,7 @@ This type of graphic is _helpful_ in deciding what to do next, although personal
 
 In Wikipedia's example, this fictitious BBQ has high fire risk, so one should begin mitigating there.  
 
-But, does this feel right?  One of the criticisms of the [Risk Register](Risk-Theory#risk-registers) approach is that of [mistaking the map for the territory](Map-And-Territory-Risk).  That is, mistakenly believing that what's on the Risk Register _is all there is_.  
+But, does this feel right?  One of the criticisms of the [Risk Register](Evaluating-Risk#risk-registers) approach is that of [mistaking the map for the territory](Map-And-Territory-Risk).  That is, mistakenly believing that what's on the Risk Register _is all there is_.  
 
 In the preceding discussions, I have been careful to point out the existence of [Hidden Risks](Glossary#hidden-risk) for that very reason. Or, to put another way:
 
@@ -72,37 +74,38 @@ This is not how **Risk-First** sees it:
 
 First, we have the notion that Risks are discrete events, again.  Some risks _are_ (like gambling on a horse race), but most _aren't_.  In the [Dinner Party](A-Simple-Scenario), for example, bad preparation is going to mean a _worse_ time for everyone, but how good a time you're having is a spectrum, it doesn't divide neatly into just "good" or "bad".  
 
-Second, the opposite of "Risk Management" (or trying to minimise the "Down-side") is either "Upside Risk Management", (trying to maximise the good things happening), or it's trying to make as many bad things happen as possible.  Humans tend to be optimists (especially when there are lots of [Hidden Risks](Glossary#hidden-risk)), hence our focus on Downside Risk.  Sometimes though, it's good to stand back and look at a scenario and think:  am I capturing all the Upside Risk here?
+Second, the opposite of "Risk Management" (or trying to minimise the "Down-side") is either "Upside Risk Management", (trying to maximise the good things happening), or it's trying to make as many bad things happen as possible.  
 
-Finally, Crisis Management is _still just Risk Management_:  the crisis (Earthquake, whatever) has _happened_.  You can't manage it because it's in the past.   All you can do is Risk Manage the future (minimize further casualties and human suffering, for example).    
+Third, Crisis Management is _still just Risk Management_:  the crisis (Earthquake, whatever) has _happened_.  You can't manage it because it's in the past.   All you can do is Risk Manage the future (minimize further casualties and human suffering, for example).    
 
-Yes, it's fine to say "we're in crisis", but to assume there is a different strategy for dealing with it is a mistake:  this is the [Fallacy of Sunk Costs](https://en.wikipedia.org/wiki/Sunk_costs). 
+Yes, it's fine to say "we're in crisis", but to assume there is a different strategy for dealing with it is a mistake:  this is the [Fallacy of Sunk Costs](https://en.wikipedia.org/wiki/Escalation_of_commitment). 
 
 ## Invariances #1: Panic Invariance
 
 You would expect then, that any methods for managing software delivery should be _invariant_ to the level of crisis in the project.  If, for example, a project proceeds using [Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development)) for eight months, and then the deadline looms and everyone agrees to throw Scrum out of the window and start hacking, then _this implies there is a problem with Scrum_, and that it is not _Panic Invariant_.  In fact, many tools like Scrum don't consider this:
 
-- If there is a production outage during the working week, we don't wait for the next Sprint to fix it.
+- If there is a production outage during the working week, we don't wait for the next Scrum Sprint to fix it.
 - Although a 40-hour work-week _is a great idea_, this goes out of the window if the databases all crash on a Saturday morning.
 
-In these cases, we (hopefully calmly) _evaluate the risks and take action_.  
+In these cases, we (hopefully calmly) _evaluate the risks and Take Action_.  
 
-I call this **Panic Invariance**:   the methodology shouldn't need to change given the amount of pressure or importance on the table.
+This is **Panic Invariance**:  your methodology shouldn't need to change given the amount of pressure or importance on the table.
 
 ## Invariances #2: Scale Invariance
 
-Another test of a methodology is that it shouldn't fall down when applied at different _scales_.   Because, if it does, this implies that there is something wrong with the methodology.   The same is true of physical laws:  if they don't apply under all circumstances,  then that implies something is wrong.  For example, Newton's Laws of Motion fail to calculate the orbital period of Mercury, and this was an early win for Einstein's Relativity.  
+Another test of a methodology is that it shouldn't fall down when applied at different _scales_.   Because, if it does, this implies that there is something wrong with the methodology.   The same is true of physical laws:  if they don't apply under all circumstances,  then that implies something is wrong.  For example, Newton's Laws of Motion fail to calculate the orbital period of Mercury, which led to Einstein trying to improve on them with the [Theory of Relativity](https://en.wikipedia.org/wiki/Theory_of_relativity).
 
-Some methodologies are designed for certain scales:  Extreme Programming is designed for small, co-located teams.  And, that's useful.  But the fact it doesn't scale tells us something about it:  chiefly, that it considers certain _kinds_ of risk, while ignoring others.  At small scales, that works ok, but at larger scales, the bigger risks increase too fast for it to work.
+Some methodologies are designed for certain scales:  [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) is designed for small, co-located teams.  And, that's useful.  But the fact it doesn't scale tells us something about it:  chiefly, that it considers certain _kinds_ of risk, while ignoring others.  At small scales, that works ok, but at larger scales, other risks (such as team [Coordination Risk](Coordination-Risk)) increase too fast for it to work.
 
-So ideally, a methodology should be applicable at _any_ scale:  
+So ideally, a methodology should be applicable at _any_ scale: 
+ 
  - A single class or function
  - A collection of functions, or a library
  - A project team
  - A department
  - An entire organisation
 
-If the methodology _fails at a particular scale_, this tells you something about the risks that the methodology isn't addressing.  It's fine to have methodologies that work at different scales, and on different problems.   One of the things that I am exploring with Risk First is trying to place methodologies and practices within a framework to say _when_ they are applicable.
+If the methodology _fails at a particular scale_, this tells you something about the risks that the methodology isn't addressing.  It's fine to have methodologies that work at different scales, and on different problems.   One of the things Risk-First explores is trying to place methodologies and practices within a framework to say _when_ they are applicable.
 
 ## Value vs Speed
 
@@ -112,6 +115,7 @@ If the methodology _fails at a particular scale_, this tells you something about
 
  - **The pay-off is risky**: Since the **Value** is created in the future, we can't be certain about it happening - we should never consider it a done-deal.  **Future Value** is always at risk.  In finance, for example, we account for this in our future cash-flows by discounting them according to the risk of default.
  - **The pay-off amount is risky**:  Additionally, whereas in a financial transaction (like a loan, say), we might know the size of a future payment, in IT projects we can rarely be sure that they will deliver a certain return.  On some fixed-contract projects this sometimes is not true: there may be a date when the payment-for-delivery gets made, but mostly we'll be expecting an uncertain pay-off. 
+ - Humans tend to be optimists (especially when there are lots of [Hidden Risks](Glossary#hidden-risk)), hence our focus on Downside Risk.  Sometimes though, it's good to stand back and look at a scenario and think:  am I capturing all the Upside Risk here?
  
 **Risk-First** is a particular _view_ on reality.  It's not the only one.  However, I am going to try and make the case that it's an underutilized one that has much to offer us.
 
@@ -142,7 +146,7 @@ Here, we're considering a synthesis of both _time_ and _value_.  But [Net Presen
 
 ## Net Present Risk
 
-Can we do the same thing with risk?  Let's introduce the concept of [Net Present Risk](Risk-Theory#Net-Present-Risk), or NPR:
+Can we do the same thing with risk?  Let's introduce the concept of [Net Present Risk](Evaluating-Risk#Net-Present-Risk), or NPR:
 
 > Net Present Risk is the _Importance_ of a Future risk, discounted to a common level of _Urgency_.
 
