@@ -18,7 +18,7 @@ Some points about this description:
 
 Remember back to the Dinner Party example at the start: the Risk Register happened *entirely in your head*.  There is a continuum all the way from "in your head" through "using a spreadsheet" to dedicated Risk Management software.    
 
-It's also going to be useful _in conversation_, and this is where the value of **Risk-First** approach is: providing a vocabulary to _talk about risks_ with your team.  
+It's also going to be useful _in conversation_, and this is where the value of the Risk-First approach is: providing a vocabulary to _talk about risks_ with your team.  
 
 ### Probability And Impact
 
@@ -34,7 +34,7 @@ In a financial context (or a gambling one), we can consider the overall **Risk S
 
 Risk Management in the finance industry _starts_ here, and gets more complex, but often (especially on a software project), it's better to skip all this, and just figure out a Risk Score.  This is because if you think about "impact", it implies a definite, discrete event occurring, or not occurring, and asks you then to consider the probability of that occurring. 
 
-**Risk-First** takes a view that risks are a continuous quantity, more like _money_ or _water_:  by taking an action before delivering a project you might add a degree of [Schedule Risk](Scarcity-Risk#schedule-risk), but decrease the [Operational Risk](Operational-Risk) later on by a greater amount.   
+Risk-First takes a view that risks are a continuous quantity, more like _money_ or _water_:  by taking an action before delivering a project you might add a degree of [Schedule Risk](Scarcity-Risk#schedule-risk), but decrease the [Operational Risk](Operational-Risk) later on by a greater amount.   
 
 ## Risk Matrix
 
@@ -70,7 +70,7 @@ Let's look at the classic description of Risk Management:
 
 > Risk Management is the process of thinking out corrective actions before a problem occurs, while it's still an abstraction.  The opposite of risk management is crisis management, trying to figure out what to do about the problem after it happens. - [Waltzing With Bears, _Tom De Marco & Tim Lister_](http://amzn.eu/d/i0IDFA2)
 
-This is not how **Risk-First** sees it:  
+This is not how Risk-First sees it:  
 
 First, we have the notion that Risks are discrete events, again.  Some risks _are_ (like gambling on a horse race), but most _aren't_.  In the [Dinner Party](A-Simple-Scenario), for example, bad preparation is going to mean a _worse_ time for everyone, but how good a time you're having is a spectrum, it doesn't divide neatly into just "good" or "bad".  
 
@@ -109,15 +109,13 @@ If the methodology _fails at a particular scale_, this tells you something about
 
 ## Value vs Speed
 
-### Value
+### "Upside Risk"
 
 "Upside Risk" isn't a commonly used term:  industry tends to prefer "value", as in "Is this a value-add project?".  There is plenty of theory surrounding **Value**, such as Porter's [Value Chain](https://en.wikipedia.org/wiki/Value_chain) and [Net Present Value](https://en.wikipedia.org/wiki/Net_present_value).  This is all fine so long as we remember:
 
- - **The pay-off is risky**: Since the **Value** is created in the future, we can't be certain about it happening - we should never consider it a done-deal.  **Future Value** is always at risk.  In finance, for example, we account for this in our future cash-flows by discounting them according to the risk of default.
- - **The pay-off amount is risky**:  Additionally, whereas in a financial transaction (like a loan, say), we might know the size of a future payment, in IT projects we can rarely be sure that they will deliver a certain return.  On some fixed-contract projects this sometimes is not true: there may be a date when the payment-for-delivery gets made, but mostly we'll be expecting an uncertain pay-off. 
+ - **The probability of [Pay-Off](Glossary#pay-off) is risky**: Since the value is created in the future, we can't be certain about it happening - we should never consider it a done-deal.  **Future Value** is always at risk.  In finance, for example, we account for this in our future cash-flows by discounting them according to the risk of default.
+ - **The Pay-Off amount is risky**:  Additionally, whereas in a financial transaction (like a loan, say), we might know the size of a future payment, in IT projects we can rarely be sure that they will deliver a certain return.  On some fixed-contract projects this sometimes is not true: there may be a date when the payment-for-delivery gets made, but mostly we'll be expecting an uncertain pay-off. 
  - Humans tend to be optimists (especially when there are lots of [Hidden Risks](Glossary#hidden-risk)), hence our focus on Downside Risk.  Sometimes though, it's good to stand back and look at a scenario and think:  am I capturing all the Upside Risk here?
- 
-**Risk-First** is a particular _view_ on reality.  It's not the only one.  However, I am going to try and make the case that it's an underutilized one that has much to offer us.
 
 ### Speed
 
@@ -132,39 +130,40 @@ And, this is _fine_, McConnell is structuring the process from the perspective o
 As we will see, _Speed_ (or [Schedule Risk](Scarcity-Risk#schedule-risk) as we will term it) is one risk amongst others that need to be considered from a risk-management perspective.  There's no point in prioritising _speed_ if the software fails in production due to unaddressed [Operational Risk](Operational-Risk), and irreparably damages trust in the product.
 
 ### Eisenhower's Box
- 
-If we can view software delivery from the point of view of _value_, then why can't we apply the same tools to [Risk](Glossary#Risk) too?  In order to do this, let's review "Eisenhower's Box" model.  This considers two variables:
 
- - How valuable the work is (Importance)
- - How soon it is needed (Urgency)
+![A basic "Eisenhower box" to help evaluate urgency and importance. Items may be placed at more precise points within each quadrant.  - Adapted From [Time Management, _Wikipedia_](https://en.wikipedia.org/wiki/Time_management)](images/generated/introductioneisenhowers_box.png)
 
-![A basic "Eisenhower box" to help evaluate urgency and importance. Items may be placed at more precise points within each quadrant.  - [Time Management, _Wikipedia_](https://en.wikipedia.org/wiki/Time_management)](images/pd/220px-MerrillCoveyMatrix.png)
+Eisenhower's Box is a simple model allowing us to consider _two_ aspects of risk at the same time:
 
-Here, we're considering a synthesis of both _time_ and _value_.  But [Net Present Value](https://en.wikipedia.org/wiki/Net_present_value) allows us to discount value in the future, which offers us a way to reconcile these two variables.  In the diagram, you can see two future payments, one of £100 due in one year, one of £150 due in 10 years.  By discounting at a given rate (here at 6% per year) we can compare their worth _now_.
+ - How valuable the work is (Importance, Value)
+ - How soon it is needed (Urgency, Time)
+
+The problem is, we now need to take a call on whether to do something that is _urgent_ or something that is _important_.
+
+## Discounting
+
+[Net Present Value](https://en.wikipedia.org/wiki/Net_present_value) allows us to discount value in the future, which offers us a way to reconcile these two variables.  In the diagram, you can see two future payments, one of £100 due in one year, one of £150 due in 10 years.  By discounting at a given rate (here at 6% per year) we can compare their worth _now_.
 
 ![Net Present Value Discounting](images/numbers/npv.png)
 
-## Net Present Risk
-
 Can we do the same thing with risk?  Let's introduce the concept of [Net Present Risk](Evaluating-Risk#Net-Present-Risk), or NPR:
 
-> Net Present Risk is the _Importance_ of a Future risk, discounted to a common level of _Urgency_.
+> Net Present Risk is the _Impact_ of a Future risk, discounted to a common level of _Urgency_.
 
-Let's look at a quick example to see how this could work out.  Let's say you had the following 3 risks:
+Let's look at a quick example to see how this could work out.  Let's say you had the following risks:
 
-- Risk **A**, which will cost you £50 in 5 year's time.
-- Risk **B**, which will cost you £70 in 8 year's time.
-- Risk **C**, which will cost you £120 in 18 year's time.
+- Risk **A**, which will cost you £50 in 5 day's time.
+- Risk **B**, which will cost you £70 in 8 day's time.
 
-Which has the biggest NPR?  Well, it depends on the discount rate that you apply.  Let's assume we are discounting at 6% per year.  A graph of the discounted risks looks like this:
+Which has the biggest NPR?  Well, it depends on the discount rate that you apply.  Let's assume we are discounting at 6% per _day_.  A graph of the discounted risks looks like this:
 
 ![Net Present Risk, 6% Discount Rate](images/numbers/npr1.png)
 
-On this basis, the biggest risk is **B**, at about £45.  If we _reduce_ the discount factor to 3%, we get a different result:
+On this basis, the biggest risk is **B**, at about £45, e.  If we increase the discount factor to 20%, we get a different result:
 
-![Net Present Risk, 3% Discount Rate](images/numbers/npr2.png)
+![Net Present Risk, 20% Discount Rate](images/numbers/npr2.png)
 
-Now, risk **C** is bigger.  
+Now, risk **A** is bigger.  
 
 Because this is _Net_ Present Risk, we can also use it to make decisions about whether or not to mitigate risks.   Let's consider the cost of mitigating each risk _now_:
 
@@ -197,7 +196,7 @@ Under these circumstances, we often see _Pooh-Bear Procrastination_:
 
 ## Is This Scientific?
 
-Enough with the numbers and the theory:  **Risk-First** is an attempt to provide a practical framework, rather than a scientifically rigorous analysis.  In fact, my view is that you should _give up_ on trying to compute risk numerically.  You _can't_ work out how long a software project will take based purely on an analysis of (say) _function points_.  (Whatever you define them to be).
+Enough with the numbers and the theory:  Risk-First is an attempt to provide a practical framework, rather than a scientifically rigorous analysis.  In fact, my view is that you should _give up_ on trying to compute risk numerically.  You _can't_ work out how long a software project will take based purely on an analysis of (say) _function points_.  (Whatever you define them to be).
 
 - First, there isn't enough evidence for an approach like this.  We _can_ look at collected data about IT projects, but techniques and tools advance rapidly.
 - Second,  IT projects have too many confounding factors, such as experience of the teams, 

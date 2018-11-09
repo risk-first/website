@@ -2,7 +2,7 @@
 
 As we discussed in the section on [Abstraction](Communication-Risk#invisibility-risk), our understanding of the world is entirely informed by the names we give things and the abstractions we create.  
 
-(In the same way, **Risk-First** is about _identifying patterns_ within software development and calling them out.)  
+(In the same way, Risk-First is about _identifying patterns_ within software development and calling them out.)  
 
 Our [Internal Models](Glossary#internal-model) are a model of the world based on these patterns, and their relationships.
 
