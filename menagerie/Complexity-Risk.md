@@ -240,7 +240,7 @@ In Brooks' essay "No Silver Bullet - Essence and Accident in Software Engineerin
 
 The problem with this definition is that we are accepting features of our software as _essential_.  
 
-The **Risk-First** approach is that if you want to mitigate some [Feature Risk](Feature-Risk) then you have to pick up [Complexity Risk](Complexity-Risk) as a result.  But, that's a _choice you get to make_.  
+The Risk-First approach is that if you want to mitigate some [Feature Risk](Feature-Risk) then you have to pick up [Complexity Risk](Complexity-Risk) as a result.  But, that's a _choice you get to make_.  
 
 Therefore, [Feature Creep](https://en.wikipedia.org/wiki/Feature_creep) (or [Gold Plating](https://en.wikipedia.org/wiki/Gold_plating_(software_engineering))) is a failure to observe this basic equation:  instead of considering this trade off, you're building every feature possible.  This has an impact on [Complexity Risk](Complexity-Risk), which in turn impacts [Communication Risk](Communication-Risk) and also [Schedule Risk](Scarcity-Risk#schedule-risk).
 
