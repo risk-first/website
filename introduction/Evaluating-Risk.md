@@ -142,7 +142,9 @@ The problem is, we now need to take a call on whether to do something that is _u
 
 ## Discounting
 
-[Net Present Value](https://en.wikipedia.org/wiki/Net_present_value) allows us to discount value in the future, which offers us a way to reconcile these two variables.  In the diagram, you can see two future payments, Payment A of £100 due in one year, and Payment B of £150 due in 10 years.  By discounting at a given rate (here at 6% per year) we can compare their worth _now_.
+[Net Present Value](https://en.wikipedia.org/wiki/Net_present_value) allows us to discount value in the future, which offers us a way to reconcile these two variables.  The further in the future the value is realised, the bigger the discount.  This is done because payment _now_ is better than payment in the future:  there is the risk that something will happen to prevent that future payment.  This is why we have _interest rates_ on loan payments.
+
+In the diagram, you can see two future payments, Payment A of £100 due in one year, and Payment B of £150 due in 10 years.  By discounting at a given rate (here at a high rate of 20% per year) we can compare their worth _now_.
 
 ![Net Present Value Discounting](images/numbers/npv.png)
 
@@ -159,21 +161,15 @@ Which has the biggest NPR?  Well, it depends on the discount rate that you apply
 
 ![Net Present Risk, 6% Discount Rate](images/numbers/npr1.png)
 
-On this basis, the biggest risk is **B**, at about £45, e.  If we increase the discount factor to 20%, we get a different result:
+On this basis, the biggest discounted risk is **B**, at about £45.  If we increase the discount factor to 20%, we get a different result:
 
 ![Net Present Risk, 20% Discount Rate](images/numbers/npr2.png)
 
 Now, risk **A** is bigger.  
 
-Because this is _Net_ Present Risk, we can also use it to make decisions about whether or not to mitigate risks.   Let's consider the cost of mitigating each risk _now_:
+Because this is _Net_ Present Risk, we can also use it to make decisions about whether or not to mitigate risks.   Let's assume the cost of mitigating any risk _right now_ is £40.  
 
-- Risk **A** costs £20 to mitigate
-- Risk **B** costs £50 to mitigate
-- Risk **C** costs £100 to mitigate
-
-Which is the best deal?
-
-Well, under the 6% regime, only Risk **A** is worth mitigating, because you spend £20 today to get rid of £40 of risk (today).  The NPR is positive at around £20, whereas for **B** and **C** mitigations it's under water.
+Under the 6% regime, only Risk **A** is worth mitigating, because you spend £20 today to get rid of £40 of risk (today).  The NPR is positive at around £20, whereas for **B** and **C** mitigations it's under water.
 
 But, under a 3% regime, risk **A** and **B** are _both_ worth mitigating.
 
