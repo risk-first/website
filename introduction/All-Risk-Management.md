@@ -50,7 +50,7 @@ And, as we saw in the [Introduction](A-Simple-Scenario), even something _mundane
 - And fixing an issue is an action... 
 - Which, as we just saw also carry risk.
 
-One retort to this might be to say:  an issue is a problem I have now, whereas a risk is a problem that _might_ occur.  I am going to try and break that mind-set in the coming pages, but I'll just start with this:
+One retort to this might be to say:  "An issue is a problem I have now, whereas a risk is a problem that _might_ occur. "  I am going to try and break that mind-set in the coming pages, but I'll just start with this:
 
 - Do you know _exactly_ how much damage this issue will do?
 - Can you be sure that the issue might not somehow go away?  
