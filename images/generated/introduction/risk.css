@@ -547,7 +547,8 @@ group {
 	stroke-width: 1pt;
 }
 
-context > label {
+context > label,
+group > label {
 	kite9-usage: label;
 	kite9-type: container; 
 	kite9-sizing: minimize;
@@ -734,4 +735,24 @@ description {
 	font-size: 14pt;
 	font-family: "gothic-italic";
 	kite9-padding: 10pt;
+}
+
+/* Steve McConnell Stuff */
+
+leg {
+	kite9-type: container;
+	kite9-template: url(template.svg#leg);
+	kite9-layout: down;
+	kite9-min-height: 110pt;
+	kite9-min-width: 70pt;
+	kite9-sizing: minimize;
+	kite9-margin: 0px;
+	kite9-vertical-align: bottom;
+}
+
+
+plinth {
+	kite9-template: url(template.svg#plinth);
+	kite9-type: container;
+	kite9-sizing: maximize;
 }
