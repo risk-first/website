@@ -121,11 +121,11 @@ If the methodology _fails at a particular scale_, this tells you something about
 
 For example, in [Rapid Development](http://a.co/d/ddWGTB2) by Steve McConnell we have the following diagram:
 
-![Pillars, From Rapid Development By Steve McConnell](images/kite9/rapid_development_pillars.png)  
+![Pillars, From Rapid Development By Steve McConnell](images/generated/introduction/pillars_smc.png)  
 
 And, this is _fine_, McConnell is structuring the process from the perspective of _delivering as quickly as possible_.  However, here, I want to turn this on it's head.  Exploring Software Development from a risk-first perspective is an under-explored technique, and I believe it offers some useful insights.   So the aim here is to present the case for viewing software development like this:
 
-![Pillars, re-arranged](images/kite9/rapid_development_pillars2.png)
+![Pillars, re-arranged](images/generated/introduction/pillars_kite9.png)
 
 As we will see, _Speed_ (or [Schedule Risk](Scarcity-Risk#schedule-risk) as we will term it) is one risk amongst others that need to be considered from a risk-management perspective.  There's no point in prioritising _speed_ if the software fails in production due to [Operational Risk](Operational-Risk) issues and damages trust in the product.
 
@@ -144,7 +144,7 @@ The problem is, we now need to take a call on whether to do something that is _u
 
 [Net Present Value](https://en.wikipedia.org/wiki/Net_present_value) allows us to discount value in the future, which offers us a way to reconcile these two variables.  The further in the future the value is realised, the bigger the discount.  This is done because payment _now_ is better than payment in the future:  there is the risk that something will happen to prevent that future payment.  This is why we have _interest rates_ on loan payments.
 
-In the diagram, you can see two future payments, Payment A of £100 due in one year, and Payment B of £150 due in 10 years.  By discounting at a given rate (here at a high rate of 20% per year) we can compare their worth _now_.
+In the diagram, you can see two future payments, Payment A of £100 due in one year, and Payment B of £150 due in 10 years.  By discounting at a given rate (here at a high rate of 20% per year) we can compare their worth _now_.  At this discount rate, Payment A,  - arriving next year - has a far greater value.  
 
 ![Net Present Value Discounting](images/numbers/npv.png)
 
@@ -161,30 +161,28 @@ Which has the biggest NPR?  Well, it depends on the discount rate that you apply
 
 ![Net Present Risk, 6% Discount Rate](images/numbers/npr1.png)
 
-On this basis, the biggest discounted risk is **B**, at about £45.  If we increase the discount factor to 20%, we get a different result:
+On this basis, the biggest NPR is **B**, at about £45.  If we increase the discount factor to 20%, we get a different result:
 
 ![Net Present Risk, 20% Discount Rate](images/numbers/npr2.png)
 
 Now, risk **A** is bigger.  
 
-Because this is _Net_ Present Risk, we can also use it to make decisions about whether or not to mitigate risks.   Let's assume the cost of mitigating any risk _right now_ is £40.  
+Because this is _Net_ Present Risk, we can also use it to make decisions about whether or not to mitigate risks.   Let's assume the cost of mitigating any risk _right now_ is £40.  Under the 6% regime, only Risk **B** is worth mitigating today, because you spend £40 today to get rid of £45 of risk (today).  
 
-Under the 6% regime, only Risk **A** is worth mitigating, because you spend £20 today to get rid of £40 of risk (today).  The NPR is positive at around £20, whereas for **B** and **C** mitigations it's under water.
-
-But, under a 3% regime, risk **A** and **B** are _both_ worth mitigating.
+Under the 20% regime, neither are worth mitigating.  The 20% Discount Rate may reflect that sometimes, future risks just don't materialise.  
 
 ### Discounting the Future To Zero
 
-I have worked in teams sometimes where the blinkers go down, and the only thing that matters is _now_.    They may apply a rate of 60% per-day, which means that anything with a horizon over a week is irrelevant.   Regimes of such [hyper-inflation](https://en.wikipedia.org/wiki/Hyperinflation) are a sure sign that something has _really broken down_ within a project.  Consider in this case a Discount Factor of 60% per day, and the following risks:
+I have worked in teams sometimes where the blinkers go down, and the only thing that matters is _now_.    Anything with a horizon over a week is irrelevant.   Regimes of such [hyper-inflation](https://en.wikipedia.org/wiki/Hyperinflation) are a sure sign that something has _really broken down_ within a project.  Consider in this case a Discount Factor of 60% per day, and the following risks:
 
-- Risk A: £80 cost, happening _tomorrow_
-- Risk B: £500 cost, happening in _5 days_.  
+- Risk A: £10 cost, happening _tomorrow_
+- Risk B: £70 cost, happening in _5 days_.  
 
 Risk B is almost irrelevant under this regime, as this graph shows:
 
 ![Net Present Risk, 60% Discount Rate](images/numbers/npr3.png)
 
-Why do things like this happen?  Often, the people involved are under incredible job-stress:  usually they are threatened with the sack on a daily basis, and therefore feel they have to react.  Publically-listed companies also often apply short-term focus, because they only care about the _next annual report_, which limits their horizons and ability to consider future risk.
+Why do things like this happen?  Often, the people involved are under incredible job-stress:  usually they are threatened with the sack on a daily basis, and therefore feel they have to react.  In a similar way, publicly-listed companies also often apply short-term focus, because they only care about the _next annual report_, which limits their horizons and ability to consider future risk.
 
 Under these circumstances, we often see _Pooh-Bear Procrastination_:
 
