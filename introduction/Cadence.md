@@ -44,6 +44,8 @@ The [Testing Pyramid](http://www.agilenutshell.com/episodes/41-testing-pyramid) 
 - **Integration Tests** have a slightly _slower feedback loop_, so have _few of them_.   Use them when you can't write unit tests (at the application boundaries).
 - **Manual Tests** have a _very slow feedback loop_, so have _even fewer of them_.  Use them as a last resort.
 
+![The Testing Pyramid](images/generated/introduction/testing_pyramid.png)
+
 ### Production
 
 You could take this section to mean that [Continuous Delivery](https://en.wikipedia.org/wiki/Continuous_delivery) (CD) is always and everywhere a good idea.  That's not a bad take-away, but it's clearly more nuanced than that.  
