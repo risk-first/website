@@ -1128,6 +1128,1610 @@ ideas against reality}.
 In the next chapter, we're going to look at the concept of Meeting
 Reality in a bit more depth.
 
+\hypertarget{meeting-reality-1}{%
+\chapter{Meeting Reality}\label{meeting-reality-1}}
+
+In this chapter, we will look at how exposing your Internal Model to
+reality is in itself a good risk management technique.
+
+\hypertarget{revisiting-the-model}{%
+\section{Revisiting the Model}\label{revisiting-the-model}}
+
+In A Simple Scenario, we looked at a basic model for how
+\textbf{Reality} and our Internal Model interacted with each other: we
+take action based on out Internal Model, hoping to \textbf{change
+Reality} with some positive outcome.
+
+And, in Development Process we looked at how we can meet with reality in
+\emph{different forms}: Analysis, Testing, Integration and so on, and
+saw how the model could work in each stage of a project.
+
+It should be no surprise to see that there is a \emph{recursive} nature
+about this: The actions we take each day have consequences: they expose
+new hidden risks**, which inform our Internal Model, and at the same
+time, they change reality in some way. As a result, we then have to take
+\emph{new actions} to deal with these new risks.
+
+So, let's see how this kind of recursion looks on our model.
+
+\includegraphics{images/generated/introduction/model_vs_reality_2-400dpi.png}
+.
+
+\hypertarget{navigating-the-risk-landscape}{%
+\section{``Navigating the Risk
+Landscape''}\label{navigating-the-risk-landscape}}
+
+The above diagram shows \emph{just one possible action}, in reality,
+you'll have choices. We often have multiple ways of achieving a Goal In
+Mind.
+
+What's the best way?
+
+I would argue that the best way is the one which mitigates the most
+existing risk while accruing the least attendant risk to get it done.
+
+Ideally, when you take an action, you are trading off a big risk for a
+smaller one. Take Unit Testing for example. Clearly, writing Unit Tests
+adds to the amount of development work, so on it's own, it adds Schedule
+Risk. However, if you write \emph{just enough} of the right Unit Tests,
+you should be short-cutting the time spent finding issues in the User
+Acceptance Testing (UAT) stage, so you're hopefully trading off a larger
+Schedule Risk from UAT and adding a smaller Schedule Risk to
+Development. There are other benefits of Unit Testing too: once written,
+a suite of unit tests is almost cost-free to run repeatedly, whereas
+repeating a UAT is costly as it involves people's time.
+
+You can think of Taking Action as moving your project on a ``Risk
+Landscape'': ideally, when you take an action, you move to some place
+with worse risk to somewhere more favourable.
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/introduction/risk_landscape_1-400dpi.png}
+\caption{Navigating The Risk Landscape}
+\end{figure}
+
+Sometimes, you can end up somewhere \emph{worse}: the actions you take
+to manage a risk will leave you with worse Attendant Risks afterwards.
+Almost certainly, this will have been a Hidden Risk when you embarked on
+the action, otherwise you'd not have chosen it.
+
+\hypertarget{an-example-automation}{%
+\subsection{An Example: Automation}\label{an-example-automation}}
+
+For example, \emph{automating processes} is very tempting: it
+\emph{should} save time, and reduce the amount of boring, repetitive
+work on a project. But sometimes, it turns into an industry in itself,
+and consumes more effort than it's worth.
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/introduction/risk_landscape_2_automating-400dpi.png}
+\caption{Hidden Risks of Automation}
+\end{figure}
+
+\hypertarget{another-example-mongodb}{%
+\subsection{Another Example: MongoDB}\label{another-example-mongodb}}
+
+On a recent project in a Bank, we had a requirement to store a modest
+amount of data and we needed to be able to retrieve it fast. The
+developer chose to use \href{https://www.mongodb.com}{MongoDB} for this.
+At the time, others pointed out that other teams in the bank had had
+lots of difficulty deploying MongoDB internally, due to licensing issues
+and other factors internal to the bank.
+
+Other options were available, but the developer chose MongoDB because of
+their \emph{existing familiarity} with it: therefore, they felt that the
+Hidden Risks of MongoDB were \emph{lower} than the other options, and
+disregarded the others' opinions.
+
+This turned out to be a mistake: The internal bureacracy eventually
+proved too great, and MongoDB had to be abandoned after much investment
+of time.
+
+This is not a criticism of MongoDB: it's simply a demonstration that
+sometimes, the cure is worse than the disease. Successful projects are
+\emph{always} trying to \emph{reduce} Attendant Risks.
+
+\hypertarget{pay-off}{%
+\section{Pay-Off}\label{pay-off}}
+
+We can't know in advance how well any action we take will work out.
+Therefore, Taking Action is a lot like placing a bet.
+
+\textbf{Pay Off} then is our judgement about whether we expect an action
+to be worthwhile: Are the risks we escape \emph{worth} the attendant
+risks we will encounter? We should be able to \emph{weigh these separate
+risks in our hands} and figure out whether the (Glossary\#pay-off) makes
+a given Action worthwhile.
+
+The fruits of this gambling are revealed when we meet reality, and we
+can see whether our bets were worthwhile.
+
+\hypertarget{the-cost-of-meeting-reality}{%
+\section{The Cost Of Meeting
+Reality}\label{the-cost-of-meeting-reality}}
+
+Meeting reality \emph{in full} is costly. For example, going to
+production can look like this:
+
+\begin{itemize}
+\tightlist
+\item
+  Releasing software
+\item
+  Training users
+\item
+  Getting users to use your system
+\item
+  Gathering feedback
+\end{itemize}
+
+All of these steps take a lot of effort and time. But you don't have to
+meet the whole of reality in one go. But we can meet it in a limited way
+which is less expensive.
+
+In all, to de-risk, you should try and meet reality:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Sooner}, so you have time to mitigate the hidden risks it
+  uncovers
+\item
+  \textbf{More Frequently}: so the hidden risks don't hit you all at
+  once
+\item
+  \textbf{In Smaller Chunks}: so you're not over-burdened by hidden
+  risks all in one go.
+\item
+  \textbf{With Feedback}: if you don't collect feedback from the
+  experience of meeting reality, hidden risks \emph{stay hidden}.
+\end{itemize}
+
+In Development Process, we performed a UAT in order to Meet Reality more
+cheaply and sooner. The \emph{cost} of this is that we delayed the
+release to do it, adding risk to the schedule.
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/introduction/meeting_reality_testing-400dpi.png}
+\caption{Testing flushes out Hidden Risk, but increases Schedule Risk}
+\end{figure}
+
+\hypertarget{practice-1-yagni}{%
+\section{Practice 1: YAGNI}\label{practice-1-yagni}}
+
+As a flavour of what's to come, let's look at YAGNI, an acronym for You
+Aren't Gonna Need It:
+
+\begin{quote}
+YAGNI originally is an acronym that stands for ``You Aren't Gonna Need
+It''. It is a mantra from Extreme Programming that's often used
+generally in agile software teams. It's a statement that some capability
+we presume our software needs in the future should not be built now
+because ``you aren't gonna need it''. -
+\href{https://www.martinfowler.com/bliki/Yagni.html}{YAGNI, \emph{Martin
+Fowler}}
+\end{quote}
+
+The idea makes sense: if you take on extra work that you don't need,
+\emph{of course} you'll be accreting Attendant Risks.
+
+But, there is always the opposite opinion:
+\href{http://wiki.c2.com/?YouAreGonnaNeedIt}{You \emph{Are} Gonna Need
+It}. As a simple example, we often add log statements in our code as we
+write it (so we can trace what happened when things go wrong), though
+strictly following YAGNI strictly says we shouldn't.
+
+\hypertarget{which-is-right}{%
+\subsection{Which is right?}\label{which-is-right}}
+
+Now, we can say: do the work \emph{if there is a worthwhile Pay-Off}.
+
+\begin{itemize}
+\tightlist
+\item
+  Logging statements are \emph{good}, because otherwise, you're
+  increasing the risk that in production, no one will be able to
+  understand \emph{how the software went wrong}.
+\item
+  However, adding them takes time, which might introduce Schedule Risk.
+\end{itemize}
+
+So, it's a trade-off: continue adding logging statements so long as you
+feel that overall, the activity pays-off reducing overall risk.
+
+\hypertarget{practice-2-do-the-simplest-thing-that-could-possibly-work}{%
+\section{Practice 2: Do The Simplest Thing That Could Possibly
+Work}\label{practice-2-do-the-simplest-thing-that-could-possibly-work}}
+
+Another mantra from Kent Beck (originator of the
+\href{https://en.wikipedia.org/wiki/Extreme_programming}{Extreme
+Programming} methodology), is ``Do The Simplest Thing That Could
+Possibly Work'', which is closely related to YAGNI and is about looking
+for solutions which are simple. Our risk-centric view of this strategy
+would be:
+
+\begin{itemize}
+\tightlist
+\item
+  Every action you take on a project has it's own Attendant Risks.
+\item
+  The bigger or more complex the action, the more Attendant Risk it'll
+  have.
+\item
+  The reason you're taking action \emph{at all} is because you're trying
+  to reduce risk elsewhere on the project
+\item
+  Therefore, the biggest Pay-Off is likely to be the one with the least
+  Attendant Risk.
+\item
+  So, usually this is going to be the simplest thing.
+\end{itemize}
+
+So, ``Do The Simplest Thing That Could Possibly Work'' is really a
+helpful guideline for Navigating the Risk Landscape, but this analysis
+shows clearly where it's left wanting:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Don't} do the simplest thing if there are other things with a
+  better Pay-Off available.
+\end{itemize}
+
+\hypertarget{summary}{%
+\section{Summary}\label{summary}}
+
+So, here we've looked at Meeting Reality, which basically boils down to
+taking actions to manage risk and seeing how it turns out:
+
+\begin{itemize}
+\tightlist
+\item
+  Each Action you take is a step on the Risk Landscape
+\item
+  Each Action exposes new Hidden Risks, changing your Internal Model.
+\item
+  Ideally, each action should reduce the overall Attendant Risk on the
+  project (that is, puts it in a better place on the Risk Landscape
+\end{itemize}
+
+Could it be that \emph{everything} you do on a software project is risk
+management? This is an idea explored in the next chapter.
+
+\hypertarget{all-risk-management}{%
+\chapter{All Risk Management}\label{all-risk-management}}
+
+In this chapter, I am going to propose the idea that everything you do
+on a software project is Risk Management.
+
+In the last chapter, we observed that all the activities in a simple
+methodology had a part to play in exposing different risks. They worked
+to manage risk prior to them creating bigger problems in production.
+
+Here, we'll look at one of the tools in the Project Manager's tool-box,
+the \href{http://pmtips.net/blog-new/raid-logs-introduction}{RAID Log},
+and observe how risk-centric it is.
+
+\hypertarget{raid-log}{%
+\section{RAID Log}\label{raid-log}}
+
+Many project managers will be familiar with the RAID Log. It's simply
+four columns on a spreadsheet: \textbf{Risks}, \textbf{Actions},
+\textbf{Issues} and \textbf{Decisions}.
+
+Let's try and put the following Risk into the RAID Log:
+
+\begin{quotation}
+
+Debbie needs to visit the client to get them to choose the logo to use
+on the product, otherwise we can't size the screen areas exactly.
+
+\end{quotation}
+
+\begin{itemize}
+\tightlist
+\item
+  So, is this an \textbf{action}? Certainly. There's definitely
+  something for Debbie to do here.
+\item
+  Is it an \textbf{issue}? Yes, because it's holding up the screen-areas
+  sizing thing.
+\item
+  Is it a \textbf{decision}? Well, clearly, it's a decision for someone.
+\item
+  Is it a \textbf{risk}? Probably: Debbie might go to the client and
+  they \emph{still} don't make a decision. What then?
+\end{itemize}
+
+\hypertarget{lets-go-again}{%
+\section{Let's Go Again}\label{lets-go-again}}
+
+This is a completely made-up example, deliberately chosen to be hard to
+categorise. Normally, items are more one thing than another. But often,
+you'll have to make a choice between two categories, if not all four.
+
+This \emph{hints} at the fact that at some level it's all about risk:
+
+\hypertarget{every-action-attempts-to-mitigate-risk}{%
+\section{Every Action Attempts to Mitigate
+Risk}\label{every-action-attempts-to-mitigate-risk}}
+
+The reason you are \emph{taking} an action is to mitigate a risk. For
+example:
+
+\begin{itemize}
+\tightlist
+\item
+  If you're coding up new features in the software, this is mitigating
+  Feature Risk (which we'll explore in more detail later).
+\item
+  If you're getting a business sign-off for something, this is
+  mitigating the risk of everone not agreeing on a course of action (a
+  Coordination Risk).
+\item
+  If you're writing a specification, that's mitigating the type of
+  ``Developer Misimplementation Risk'' we saw in the last chapter.
+\end{itemize}
+
+\hypertarget{every-action-has-attendant-risk.}{%
+\section{Every Action Has Attendant
+Risk.}\label{every-action-has-attendant-risk.}}
+
+\begin{itemize}
+\tightlist
+\item
+  How do you know if the action will get completed?
+\item
+  Will it overrun, or be on time?
+\item
+  Will it lead to yet more actions?
+\item
+  What Hidden Risk will it uncover?
+\end{itemize}
+
+Consider \emph{coding a feature} (as we did in the earlier Development
+Process chapter). We saw here how the whole process of coding was an
+exercise in learning what we didn't know about the world, uncovering
+problems and improving our Internal Model. That is, flushing out the
+Attendant Risk of the Goal In Mind.
+
+And, as we saw in the Introduction, even something \emph{mundane} like
+the Dinner Party had risks.
+
+\hypertarget{an-issue-is-just-a-type-of-risk}{%
+\section{An Issue is Just A Type of
+Risk}\label{an-issue-is-just-a-type-of-risk}}
+
+\begin{itemize}
+\tightlist
+\item
+  Because issues need to be fixed\ldots{}
+\item
+  And fixing an issue is an action\ldots{}
+\item
+  Which, as we just saw also carry risk.
+\end{itemize}
+
+One retort to this might be to say: ``An issue is a problem I have now,
+whereas a risk is a problem that \emph{might} occur.'' I am going to try
+and break that mind-set in the coming pages, but I'll just start with
+this:
+
+\begin{itemize}
+\tightlist
+\item
+  Do you know \emph{exactly} how much damage this issue will do?
+\item
+  Can you be sure that the issue might not somehow go away?
+\end{itemize}
+
+\emph{Issues} then, just seem more ``definite'' and ``now'' than
+\emph{risks}, right? This classification is arbitrary: they're all just
+part of the same spectrum, they all have inherent uncertainty, so there
+should be no need to agonise over which column to put them in.
+
+\hypertarget{goals-are-risks-too}{%
+\section{Goals Are Risks Too}\label{goals-are-risks-too}}
+
+In the previous chapters, we've introduced something of a ``diagram
+language'' of risk. Let's review it:
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/introduction/all_risk_management_language-400dpi.png}
+\caption{Risk-First Diagram Language}
+\end{figure}
+
+Goals live inside our Internal Model, just like Risks. It turns out,
+that functionally, Goals and Risks are equivalent. For example, The Goal
+of ``Implementing Feature X'' is equivalent to mitigating ``Risk of
+Feature X not being present''.
+
+Let's try and back up that assertion with a few more examples:
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+\begin{minipage}[b]{0.32\columnwidth}\raggedright
+Goal\strut
+\end{minipage} & \begin{minipage}[b]{0.62\columnwidth}\raggedright
+Restated As A Risk\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.32\columnwidth}\raggedright
+Build a Wall\strut
+\end{minipage} & \begin{minipage}[t]{0.62\columnwidth}\raggedright
+Mitigate the risk of something getting in / out\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.32\columnwidth}\raggedright
+Land a man on the moon\strut
+\end{minipage} & \begin{minipage}[t]{0.62\columnwidth}\raggedright
+Mitigate the risk of looking technically inferior during the cold
+war\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.32\columnwidth}\raggedright
+Move House\strut
+\end{minipage} & \begin{minipage}[t]{0.62\columnwidth}\raggedright
+Mitigate the risks/problems of where you currently live\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+There is a certain ``interplay'' between the concepts of risks, actions
+and goals. After all, on the Risk Landscape they correspond to a
+starting point, a movement, and a destination. From a redundancy
+perspective, any one of these can be determined by knowing the other
+two.
+
+Psychologically, humans are very goal-driven: they like to know where
+they're going, and are good at organising around a goal. However, by
+focusing on goals (``solutionizing'') it's easy to ignore alternatives.
+By focusing on ``Risk-First'', we don't ignore the reasons we're doing
+something.
+
+\hypertarget{every-decision-is-about-pay-off.}{%
+\section{Every Decision is About
+Pay-Off.}\label{every-decision-is-about-pay-off.}}
+
+\begin{itemize}
+\tightlist
+\item
+  By the very nature of having to make a decision, there's the risk
+  you'll decide wrongly.
+\item
+  And, making a decision takes time, which could add risk to your
+  schedule.
+\item
+  And what's the risk if the decision doesn't get made?
+\end{itemize}
+
+Sometimes, there will be multiple moves available on the Risk Landscape
+and you have to choose. Let's take a hypothetical example: You're on a
+project and you're faced with the decision - release now or do more
+testing?
+
+Obviously, in the ideal world, we want to get to the place on the Risk
+Landscape where we have a tested, bug-free system in production. But
+we're not there yet, and we have funding pressure to get the software
+into the hands of some paying customers. The table below shows an
+example:
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule
+\begin{minipage}[b]{0.19\columnwidth}\raggedright
+Risk Managed\strut
+\end{minipage} & \begin{minipage}[b]{0.18\columnwidth}\raggedright
+Action\strut
+\end{minipage} & \begin{minipage}[b]{0.35\columnwidth}\raggedright
+Attendant Risk\strut
+\end{minipage} & \begin{minipage}[b]{0.16\columnwidth}\raggedright
+Pay-Off\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.19\columnwidth}\raggedright
+Funding Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
+Go Live\strut
+\end{minipage} & \begin{minipage}[t]{0.35\columnwidth}\raggedright
+Reputational Risk, Operational Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
+MEDIUM\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.19\columnwidth}\raggedright
+Implementation Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
+User Acceptance Test\strut
+\end{minipage} & \begin{minipage}[t]{0.35\columnwidth}\raggedright
+Worse Funding Risk, Operational Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
+LOW\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+This is (a simplification of) the dilemma on lots of software projects -
+\emph{test further}, to reduce the risk of users discovering bugs
+(Implementation Risk) which would cause us reputational damage, or
+\emph{get the release done} and reduce our Funding Risk by getting
+paying clients sooner.
+
+In the above table, it \emph{appears} to be better to do the ``Go Live''
+action, as there is a greater Pay Off. The problem is, actions are not
+\emph{commutative}, i.e.~the order you do them in counts.
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/introduction/risk_landscape_3_moves-400dpi.png}
+\caption{UAT or Go Live: Where will you end up?}
+\end{figure}
+
+The above diagram shows our decision as \emph{moves on the Risk
+Landscape}. Whether you ``Go Live'' first, or ``UAT'' first makes a
+difference to where you will end up. Is there a further action you can
+take to get you from the ``Dead End'' to the ``Goal''? Perhaps.
+
+\hypertarget{failure}{%
+\subsection{Failure}\label{failure}}
+
+So, when we talk about a project ``failing'', what do we mean?
+
+Usually, we mean we've failed to achieve a goal, and since \emph{goals
+are risks}, it is simply the scenario where we are overwhelmed by
+Attendant Risks: there is \emph{no} action to take that has a
+good-enough Pay Off to get us out of our hole.
+
+\hypertarget{what-to-do}{%
+\section{What To Do?}\label{what-to-do}}
+
+It makes it much easier to tackle the RAID log if there's only one list.
+But you still have to choose a \emph{strategy}: Do you tackle the
+\emph{most important} risk on the list, or the \emph{most urgent}, or
+take the action with the biggest Pay Off and deal with it?
+
+In the next chapter, Evaluating Risk we'll look at some approaches to
+choosing what to do.
+
+\hypertarget{evaluating-risk}{%
+\chapter{Evaluating Risk}\label{evaluating-risk}}
+
+Here, I am going to re-cap on some pre-existing risk management theory
+in order to set the scene for the next chapter which heads back to
+looking at risk on software projects.
+
+\hypertarget{risk-registers}{%
+\section{Risk Registers}\label{risk-registers}}
+
+Most developers are familiar with recording issues in an issue tracker.
+For all of the same reasons, it's good practice to record the risks you
+face running a project or an operation in a
+\href{https://en.wikipedia.org/wiki/Risk_register}{Risk Register}.
+Typically, this will include for each risk:
+
+\begin{itemize}
+\tightlist
+\item
+  The \textbf{name} of the risk, or other identifier.
+\item
+  A \textbf{categories} to which the risk belongs (this is the focus of
+  the Risk Landscape chapter in Part 2).
+\item
+  A \textbf{brief description} or name of the risk to make the risk easy
+  to discuss
+\item
+  Some estimate for the \textbf{Impact}, \textbf{Probability} or
+  \textbf{Risk Score} of the risk.
+\item
+  Proposed actions and a log of the progress made to manage the risk.
+\end{itemize}
+
+Some points about this description:
+
+\hypertarget{a-continuum-of-formality}{%
+\subsection{A Continuum of Formality}\label{a-continuum-of-formality}}
+
+Remember back to the Dinner Party example at the start: the Risk
+Register happened \emph{entirely in your head}. There is a continuum all
+the way from ``in your head'' through ``using a spreadsheet'' to
+dedicated Risk Management software.
+
+It's also going to be useful \emph{in conversation}, and this is where
+the value of the Risk-First approach is: providing a vocabulary to
+\emph{talk about risks} with your team.
+
+\hypertarget{probability-and-impact}{%
+\subsection{Probability And Impact}\label{probability-and-impact}}
+
+\textbf{Probability} is how likely something is to happen, whilst
+\textbf{Impact} is the cost (usually financial) when it does happen.
+
+In a financial context (or a gambling one), we can consider the overall
+\textbf{Risk Score} as being the sum of the \textbf{Impact} of each
+outcome multiplied by it's \textbf{Probability}. For example, if you buy
+a 1-Euro ticket in a raffle, there are two outcomes: win or lose. The
+impact of \emph{winning} would be (say) a hundred Euros, but the
+\textbf{probability} might be 1 in 200. The impact of \emph{losing}
+would be the loss of 1 Euro, with
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule
+Outcome & Impact & Probabilty & Risk Score\tabularnewline
+\midrule
+\endhead
+Win & + 99 EUR & 1 in 200 & .5 EUR\tabularnewline
+Lose & - 1 EUR & 199 in 200 & -.99 EUR\tabularnewline
+\bottomrule
+\end{longtable}
+
+Risk Management in the finance industry \emph{starts} here, and gets
+more complex, but often (especially on a software project), it's better
+to skip all this, and just figure out a Risk Score. This is because if
+you think about ``impact'', it implies a definite, discrete event
+occurring, or not occurring, and asks you then to consider the
+probability of that occurring.
+
+Risk-First takes a view that risks are a continuous quantity, more like
+\emph{money} or \emph{water}: by taking an action before delivering a
+project you might add a degree of Schedule Risk, but decrease the
+Operational Risk later on by a greater amount.
+
+\hypertarget{risk-matrix}{%
+\section{Risk Matrix}\label{risk-matrix}}
+
+A risk matrix presents a graphical view on where risks exist. Here is an
+example, showing the risks from the dinner party in the A Simple
+Scenario chapter:
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/introduction/risk_matrix-400dpi.png}
+\caption{Risk Register of Dinner Party Risks}
+\end{figure}
+
+This type of graphic is \emph{helpful} in deciding what to do next,
+although alternatively, you can graph the overall \textbf{Risk Score}
+against the Pay-Off. Easily mitigated risk (on the right), and worse
+risks (at the top) can therefore be dealt with first (hopefully).
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/introduction/risk_matrix_2-400dpi.png}
+\caption{Risk Register of Dinner Party Risks, Considering Pay-Off}
+\end{figure}
+
+\hypertarget{unknown-unknowns}{%
+\section{Unknown Unknowns}\label{unknown-unknowns}}
+
+One of the criticisms of the Risk Register approach is that of mistaking
+the map for the territory. That is, mistakenly believing that what's on
+the Risk Register \emph{is all there is}.
+
+In the preceding discussions, I have been careful to point out the
+existence of Hidden Risks for that very reason. Or, to put another way:
+
+\begin{quote}
+What we don't know is what usually gets us killed - Petyr Baelish,
+\emph{Game of Thrones}
+\end{quote}
+
+Donald Rumsfeld's famous Known Knowns is also a helpful
+conceptualisation:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{A \emph{known} unknown} is an Attendant Risk. i.e.~something
+  you are aware of, but where the precise degree of threat can't be
+  established.
+\item
+  \textbf{An \emph{unknown} unknown} is a Hidden Risk. i.e a risk you
+  haven't even thought to exist yet.
+\end{itemize}
+
+\hypertarget{risk-and-uncertainty}{%
+\section{Risk And Uncertainty}\label{risk-and-uncertainty}}
+
+Arguably, this site uses the term `Risk' wrongly: most literature
+suggests
+\href{https://keydifferences.com/difference-between-risk-and-uncertainty.html}{risk
+can be measured} whereas uncertainty represents things that cannot.
+
+I am using \textbf{risk} everywhere because later we will talk about
+specific risks (e.g.~Boundary Risk or Complexity Risk), and it doesn't
+feel grammatically correct to talk about those as
+\textbf{uncertainties}, especially given the pre-existing usage in
+Banking of terms like
+\href{https://en.wikipedia.org/wiki/Operational_risk}{Operational Risk}
+or
+\href{https://www.investopedia.com/terms/r/reputational-risk.asp}{Reputational
+risk} which are also not really a-priori measurable.
+
+\hypertarget{the-opposite-of-risk-management}{%
+\section{The Opposite Of Risk
+Management}\label{the-opposite-of-risk-management}}
+
+Let's look at the classic description of Risk Management:
+
+\begin{quote}
+Risk Management is the process of thinking out corrective actions before
+a problem occurs, while it's still an abstraction. The opposite of risk
+management is crisis management, trying to figure out what to do about
+the problem after it happens. - \href{http://amzn.eu/d/i0IDFA2}{Waltzing
+With Bears, \emph{Tom De Marco \& Tim Lister}}
+\end{quote}
+
+This is not how Risk-First sees it:
+
+First, we have the notion that Risks are discrete events, again. Some
+risks \emph{are} (like gambling on a horse race), but most
+\emph{aren't}. In the Dinner Party, for example, bad preparation is
+going to mean a \emph{worse} time for everyone, but how good a time
+you're having is a spectrum, it doesn't divide neatly into just ``good''
+or ``bad''.
+
+Second, the opposite of ``Risk Management'' (or trying to minimise the
+``Down-side'') is either ``Upside Risk Management'', (trying to maximise
+the good things happening), or it's trying to make as many bad things
+happen as possible.
+
+Third, Crisis Management is \emph{still just Risk Management}: the
+crisis (Earthquake, whatever) has \emph{happened}. You can't manage it
+because it's in the past. All you can do is Risk Manage the future
+(minimize further casualties and human suffering, for example).
+
+Yes, it's fine to say ``we're in crisis'', but to assume there is a
+different strategy for dealing with it is a mistake: this is the
+\href{https://en.wikipedia.org/wiki/Escalation_of_commitment}{Fallacy of
+Sunk Costs}.
+
+\hypertarget{invariances-1-panic-invariance}{%
+\section{Invariances \#1: Panic
+Invariance}\label{invariances-1-panic-invariance}}
+
+You would expect then, that any methods for managing software delivery
+should be \emph{invariant} to the level of crisis in the project. If,
+for example, a project proceeds using
+\href{https://en.wikipedia.org/wiki/Scrum_(software_development)}{Scrum}
+for eight months, and then the deadline looms and everyone agrees to
+throw Scrum out of the window and start hacking, then \emph{this implies
+there is a problem with Scrum}, and that it is not \emph{Panic
+Invariant}. In fact, many tools like Scrum don't consider this:
+
+\begin{itemize}
+\tightlist
+\item
+  If there is a production outage during the working week, we don't wait
+  for the next Scrum Sprint to fix it.
+\item
+  Although a 40-hour work-week \emph{is a great idea}, this goes out of
+  the window if the databases all crash on a Saturday morning.
+\end{itemize}
+
+In these cases, we (hopefully calmly) \emph{evaluate the risks and Take
+Action}.
+
+This is \textbf{Panic Invariance}: your methodology shouldn't need to
+change given the amount of pressure or importance on the table.
+
+\hypertarget{invariances-2-scale-invariance}{%
+\section{Invariances \#2: Scale
+Invariance}\label{invariances-2-scale-invariance}}
+
+Another test of a methodology is that it shouldn't fall down when
+applied at different \emph{scales}. Because, if it does, this implies
+that there is something wrong with the methodology. The same is true of
+physical laws: if they don't apply under all circumstances, then that
+implies something is wrong. For example, Newton's Laws of Motion fail to
+calculate the orbital period of Mercury, which led to Einstein trying to
+improve on them with the
+\href{https://en.wikipedia.org/wiki/Theory_of_relativity}{Theory of
+Relativity}.
+
+Some methodologies are designed for certain scales: Extreme Programming
+is designed for small, co-located teams. And, that's useful. But the
+fact it doesn't scale tells us something about it: chiefly, that it
+considers certain \emph{kinds} of risk, while ignoring others. At small
+scales, that works ok, but at larger scales, other risks (such as team
+Coordination Risk) increase too fast for it to work.
+
+So ideally, a methodology should be applicable at \emph{any} scale:
+
+\begin{itemize}
+\tightlist
+\item
+  A single class or function
+\item
+  A collection of functions, or a library
+\item
+  A project team
+\item
+  A department
+\item
+  An entire organisation
+\end{itemize}
+
+If the methodology \emph{fails at a particular scale}, this tells you
+something about the risks that the methodology isn't addressing. It's
+fine to have methodologies that work at different scales, and on
+different problems. One of the things Risk-First explores is trying to
+place methodologies and practices within a framework to say \emph{when}
+they are applicable.
+
+\hypertarget{value-vs-speed}{%
+\section{Value vs Speed}\label{value-vs-speed}}
+
+\hypertarget{upside-risk}{%
+\subsection{``Upside Risk''}\label{upside-risk}}
+
+``Upside Risk'' isn't a commonly used term: industry tends to prefer
+``value'', as in ``Is this a value-add project?''. There is plenty of
+theory surrounding \textbf{Value}, such as Porter's
+\href{https://en.wikipedia.org/wiki/Value_chain}{Value Chain} and
+\href{https://en.wikipedia.org/wiki/Net_present_value}{Net Present
+Value}. This is all fine so long as we remember:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{The probability of Pay-Off is risky}: Since the value is
+  created in the future, we can't be certain about it happening - we
+  should never consider it a done-deal. \textbf{Future Value} is always
+  at risk. In finance, for example, we account for this in our future
+  cash-flows by discounting them according to the risk of default.
+\item
+  \textbf{The Pay-Off amount is risky}: Additionally, whereas in a
+  financial transaction (like a loan, say), we might know the size of a
+  future payment, in IT projects we can rarely be sure that they will
+  deliver a certain return. On some fixed-contract projects this
+  sometimes is not true: there may be a date when the
+  payment-for-delivery gets made, but mostly we'll be expecting an
+  uncertain pay-off.
+\item
+  Humans tend to be optimists (especially when there are lots of Hidden
+  Risks), hence our focus on Downside Risk. Sometimes though, it's good
+  to stand back and look at a scenario and think: am I capturing all the
+  Upside Risk here?
+\end{itemize}
+
+\hypertarget{speed}{%
+\subsection{Speed}\label{speed}}
+
+For example, in \href{http://a.co/d/ddWGTB2}{Rapid Development} by Steve
+McConnell we have the following diagram:
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/introduction/pillars_smc-400dpi.png}
+\caption{Pillars, From Rapid Development By Steve McConnell}
+\end{figure}
+
+And, this is \emph{fine}, McConnell is structuring the process from the
+perspective of \emph{delivering as quickly as possible}. However, here,
+I want to turn this on it's head. Software Development from a risk-first
+perspective is an under-explored technique, and I believe it offers some
+useful insights. So the aim here is to present the case for viewing
+software development like this:
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/introduction/pillars_kite9-400dpi.png}
+\caption{Pillars, re-arranged}
+\end{figure}
+
+As we will see, \emph{Speed} (or Schedule Risk as we will term it) is
+one risk amongst others that need to be considered from a
+risk-management perspective. There's no point in prioritising
+\emph{speed} if the software fails in production due to Operational Risk
+issues and damages trust in the product.
+
+\hypertarget{eisenhowers-box}{%
+\subsection{Eisenhower's Box}\label{eisenhowers-box}}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/introduction/eisenhowers_box.png}
+\caption{A basic ``Eisenhower box'' to help evaluate urgency and
+importance. Items may be placed at more precise points within each
+quadrant. - Adapted From
+\href{https://en.wikipedia.org/wiki/Time_management}{Time Management,
+\emph{Wikipedia}}}
+\end{figure}
+
+Eisenhower's Box is a simple model allowing us to consider \emph{two}
+aspects of risk at the same time:
+
+\begin{itemize}
+\tightlist
+\item
+  How valuable the work is (Importance, Value).
+\item
+  How soon it is needed (Urgency, Time).
+\end{itemize}
+
+The problem is, we now need to take a call on whether to do something
+that is \emph{urgent} or something that is \emph{important}.
+
+\hypertarget{discounting}{%
+\section{Discounting}\label{discounting}}
+
+Net Present Value allows us to discount value in the future, which
+offers us a way to reconcile these two variables. The further in the
+future the value is realised, the bigger the discount. This is done
+because payment \emph{now} is better than payment in the future: there
+is the risk that something will happen to prevent that future payment.
+This is why we have \emph{interest rates} on loan payments.
+
+In the diagram, you can see two future payments, Payment \textbf{A} of
+£100 due in one year, and Payment \textbf{B} of £150 due in 10 years. By
+discounting at a given rate (here at a high rate of 20\% per year) we
+can compare their worth \emph{now}. At this discount rate, Payment
+\textbf{A}, - arriving next year - has a far greater value.
+
+\begin{figure}
+\centering
+\includegraphics{images/numbers/npv.png}
+\caption{Net Present Value Discounting}
+\end{figure}
+
+Can we do the same thing with risk? Let's introduce the concept of Net
+Present Risk, or NPR:
+
+\begin{quote}
+Net Present Risk is the \emph{Impact} of a Future risk, discounted to a
+common level of \emph{Urgency}.
+\end{quote}
+
+Let's look at a quick example to see how this could work out. Let's say
+you had the following risks:
+
+\begin{itemize}
+\tightlist
+\item
+  Risk \textbf{A}, which will cost you £50 in 5 day's time.
+\item
+  Risk \textbf{B}, which will cost you £70 in 8 day's time.
+\end{itemize}
+
+Which has the biggest NPR? Well, it depends on the discount rate that
+you apply. Let's assume we are discounting at 6\% per \emph{day}. A
+graph of the discounted risks looks like this:
+
+\begin{figure}
+\centering
+\includegraphics{images/numbers/npr1.png}
+\caption{Net Present Risk, 6\% Discount Rate}
+\end{figure}
+
+On this basis, the biggest NPR is \textbf{B}, at about £45. If we
+increase the discount factor to 20\%, we get a different result:
+
+\begin{figure}
+\centering
+\includegraphics{images/numbers/npr2.png}
+\caption{Net Present Risk, 20\% Discount Rate}
+\end{figure}
+
+Now, risk \textbf{A} is bigger.
+
+Because this is \emph{Net} Present Risk, we can also use it to make
+decisions about whether or not to mitigate risks. Let's assume the cost
+of mitigating any risk \emph{right now} is £40. Under the 6\% regime,
+only Risk \textbf{B} is worth mitigating today, because you spend £40
+today to get rid of £45 of risk (today).
+
+Under the 20\% regime, neither are worth mitigating. The 20\% Discount
+Rate may reflect that sometimes, future risks just don't materialise.
+
+\hypertarget{discounting-the-future-to-zero}{%
+\subsection{Discounting the Future To
+Zero}\label{discounting-the-future-to-zero}}
+
+I have worked in teams sometimes where the blinkers go down, and the
+only thing that matters is \emph{now}. Anything with a horizon over a
+week is irrelevant. Regimes of such
+\href{https://en.wikipedia.org/wiki/Hyperinflation}{hyper-inflation} are
+a sure sign that something has \emph{really broken down} within a
+project. Consider in this case a Discount Factor of 60\% per day, and
+the following risks:
+
+\begin{itemize}
+\tightlist
+\item
+  Risk A: £10 cost, happening \emph{tomorrow}
+\item
+  Risk B: £70 cost, happening in \emph{5 days}.
+\end{itemize}
+
+Risk B is almost irrelevant under this regime, as this graph shows:
+
+\begin{figure}
+\centering
+\includegraphics{images/numbers/npr3.png}
+\caption{Net Present Risk, 60\% Discount Rate}
+\end{figure}
+
+Why do things like this happen? Often, the people involved are under
+incredible job-stress: usually they are threatened on a daily basis, and
+therefore feel they have to react. In a similar way, publicly-listed
+companies also often apply short-term focus, because they only care
+about the \emph{next annual report}, which limits their horizons and
+ability to consider future risk.
+
+Under these circumstances, we often see \emph{Pooh-Bear
+Procrastination}:
+
+\begin{quotation}
+
+``Here is Edward Bear coming downstairs now, bump, bump, bump, on the
+back of his head, behind Christopher Robin. It is, as far as he knows,
+the only way of coming downstairs, but sometimes he feels that there
+really is another way\ldots{}if only he could stop bumping for a moment
+and think of it!''
+
+\sourceatright{\href{http://amzn.eu/d/acJ5a2j}{\textemdash  A. A. Milne, \emph{Winne-the-Pooh}}}
+\end{quotation}
+
+\hypertarget{is-this-scientific}{%
+\section{Is This Scientific?}\label{is-this-scientific}}
+
+Enough with the numbers and the theory: Risk-First is an attempt to
+provide a practical framework, rather than a scientifically rigorous
+analysis. For software development, you should probably \emph{give up}
+on trying to compute risk numerically. You \emph{can't} work out how
+long a software project will take based purely on an analysis of (say)
+\emph{function points}. (Whatever you define them to be).
+
+\begin{itemize}
+\tightlist
+\item
+  First, there isn't enough scientific evidence for an approach like
+  this. We \emph{can} look at collected data about IT projects, but
+  techniques and tools advance rapidly.
+\item
+  Second, IT projects have too many confounding factors, such as
+  experience of the teams, technologies used etc. That is, the risks
+  faced by IT projects are \emph{too diverse} and \emph{hard to
+  quantify} to allow for meaningful comparison from one to the next.
+\item
+  Third, as soon as you \emph{publish a date} it changes the
+  expectations of the project (see Student Syndrome).
+\item
+  Fourth, metrics get misused and gamed (as we will see in a later
+  chapter).
+\end{itemize}
+
+Reality is messy. Dressing it up with numbers doesn't change that and
+you risk fooling yourself. If this is the case, is there any hope at all
+in what we're doing? Yes: \emph{forget precision}. You should, with
+experience be able to hold up two separate risks and answer the
+question, ``is this one bigger than this one?''
+
+With that in mind, let's look at how we can meet reality as fast and
+often as possible.
+
+\hypertarget{cadence}{%
+\chapter{Cadence}\label{cadence}}
+
+Let's go back to the model again, introduced in Meeting Reality:
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/introduction/model_vs_reality_2-400dpi.png}
+\caption{Meeting Reality: reality is changed and so is your internal
+model.}
+\end{figure}
+
+As you can see, it's an idealized \textbf{Feedback Loop}.
+
+How \emph{fast} should we go round this loop? The longer you leave your
+goal in mind, the longer it'll be before you find out how it really
+stacks up against reality.
+
+Testing your goals in mind against reality early and safely is how
+you'll manage risk effectively, and to do this, you need to set up
+\textbf{Feedback Loops}. e.g.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Bug Reports and Feature Requests} tell you how the users are
+  getting on with the software.
+\item
+  \textbf{Monitoring Tools and Logs} allow you to find out how your
+  software is doing in reality.
+\item
+  \textbf{Dog-Fooding} i.e using the software you write yourself might
+  be faster than talking to users.
+\item
+  \textbf{\href{https://en.wikipedia.org/wiki/Continuous_delivery}{Continuous
+  Delivery}} is about putting software into production as soon as it's
+  written.
+\item
+  \textbf{Integration Testing} is a faster way of meeting \emph{some}
+  reality than continually deploying code and re-testing it manually.
+\item
+  \textbf{Unit Testing} is a faster feedback loop than Integration
+  Testing.
+\item
+  \textbf{Compilation} warns you about logical inconsistencies in your
+  code.
+\end{itemize}
+
+.. and so on.
+
+\hypertarget{time-reality-trade-off}{%
+\subsection{Time / Reality Trade-Off}\label{time-reality-trade-off}}
+
+This list is arranged so that at the top, we have the most visceral,
+most \emph{real} feedback loop, but at the same time, the slowest.
+
+At the bottom, a good IDE can inform you about errors in your Internal
+Model in real time, by way of highlighting compilation errors . So, this
+is the fastest loop, but it's the most \emph{limited} reality.
+
+Imagine for a second that you had a special time-travelling machine.
+With it, you could make a change to your software, and get back a report
+from the future listing out all the issues people had faced using it
+over its lifetime, instantly.
+
+That'd be neat, eh? If you did have this, would there be any point at
+all in a compiler? Probably not, right?
+
+The whole \emph{reason} we have tools like compilers is because they
+give us a short-cut way to get some limited experience of reality
+\emph{faster} than would otherwise be possible. Because, cadence is
+really important: the faster we test our ideas, the more quickly we'll
+find out if they're correct or not.
+
+\hypertarget{development-cycle-time}{%
+\subsection{Development Cycle Time}\label{development-cycle-time}}
+
+Developers often ignore the fast feedback loops at the bottom of the
+list above, because the ones nearer the top \emph{will do}. In the worst
+cases, changing two lines of code, running the build script, deploying
+and then manually testing out a feature. And then repeating.
+
+If you're doing it over and over, this is a terrible waste of time. And,
+you get none of the benefit of a permanent suite of tests to run again
+in the future.
+
+The
+\href{http://www.agilenutshell.com/episodes/41-testing-pyramid}{Testing
+Pyramid} hints at this truth:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Unit Tests} have a \emph{fast feedback loop}, so have
+  \emph{lots of them}.
+\item
+  \textbf{Integration Tests} have a slightly \emph{slower feedback
+  loop}, so have \emph{few of them}. Use them when you can't write unit
+  tests (at the application boundaries).
+\item
+  \textbf{Manual Tests} have a \emph{very slow feedback loop}, so have
+  \emph{even fewer of them}. Use them as a last resort.
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/introduction/testing_pyramid-400dpi.png}
+\caption{The Testing Pyramid}
+\end{figure}
+
+\hypertarget{production}{%
+\subsection{Production}\label{production}}
+
+You could take this chapter to mean that Continuous Delivery (CD) is
+always and everywhere a good idea. That's not a bad take-away, but it's
+clearly more nuanced than that.
+
+Yes, CD will give you faster feedback loops, but even getting things
+into production is not the whole story: the feedback loop isn't complete
+until people have used the code, and reported back to the development
+team.
+
+The right answer is to use multiple feedback loops:
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/introduction/cadence-400dpi.png}
+\caption{Different actions have different feedback loops}
+\end{figure}
+
+In the next chapter De-Risking we're going to introduce a few more
+useful terms for thinking about risk.
+
+\hypertarget{de-risking}{%
+\chapter{De Risking}\label{de-risking}}
+
+As we saw in A Conversation, it's important not only to consider the
+Attendant Risks you're trying to mitigate, but the ones you're likely to
+pick up in the process. This means picking a careful path through the
+Risk Landscape. This is the essence of \emph{De-Risking}.
+
+\begin{quotation}
+
+``To take steps to make (something) less risky or less likely to involve
+a financial loss.''
+
+\sourceatright{\href{https://en.oxforddictionaries.com/definition/de-risk}{\textemdash  De-Risk,\emph{OxfordDictionaries.com}}}
+\end{quotation}
+
+Some simple examples of this might be:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Safety-nets and ropes} De-Risk climbing. But, the activity of
+  climbing itself is otherwise much unchanged.
+\item
+  \textbf{Backups and Source-Control} De-Risk the development process by
+  reducing the impact of computer failure. Our process is changed
+  \emph{slightly} by this imposition, but we're not massively
+  inconvenienced.
+\item
+  \textbf{Insurance} De-Risks owning a house, or going on holiday or
+  driving a car. Usually, the payment is small enough not to impact us
+  too much.
+\item
+  \textbf{The National Health Service (NHS)} De-Risks medical expense by
+  pooling health-care costs across the entire population. If you were
+  struck down with a debilitating illness, then at least you wouldn't
+  also have to pay to get better.
+\end{itemize}
+
+Let's look at some common strategies for De-Risking.
+
+\hypertarget{mitigate}{%
+\section{Mitigate}\label{mitigate}}
+
+\textbf{Mitigating} the risk is taking steps towards minimising either
+it's likelihood or impact (as we discussed in the Evaluating Risk
+chapter). This is the main approach we will be looking at in Part 2.
+We'll break down risk into its different types and look at the general
+mitigations for each. The examples above of De-Risking were all
+mitigations. (Safety-nets, for example, mitigate the impact of hitting
+the ground.)
+
+\hypertarget{avoid}{%
+\section{Avoid}\label{avoid}}
+
+\textbf{Avoiding} a risk, means taking a route on the Risk Landscape
+\emph{around} the risk. For example, if you are working in a team which
+has no experience of relational databases, then \emph{storing data in
+files} might be a way to avoid the Learning-Curve Risk associated with
+this technology.
+
+Of course, you may pick up other, more serious Attendant Risks as a
+result: Relational Databases are software solutions to many kinds of
+Coordination Risk problem.
+
+\emph{Not} launching an online service \emph{avoids} the Operational
+Risk involved in running one. Although you avoid the upsides too.
+
+\hypertarget{transfer}{%
+\section{Transfer}\label{transfer}}
+
+\textbf{Transferring} risk means \emph{making it someone else's
+problem}. For example, when I buy home insurance, the impact of my house
+burning down is reduced. It hasn't gone away completely, but at least
+the financial element of it is handled by the insurance company.
+
+In part 2, we'll see how \textbf{Transfer} of risk is an essential
+feature of Software as a Service. Inside organisations,
+\textbf{Transfer} of risk can become a political game:
+
+\begin{quotation}
+
+``\ldots{} ownership results in `one throat to choke' for audit
+functions {[}and{]} from ownership comes responsibility. A lot of the
+political footwork in an enterprise revolves around trying to not own
+technologies. Who wants to be responsible for Java usage across a
+technology function of dozens of thousands of staff, any of whom might
+be doing crazy stuff? You first, mate.''
+
+\sourceatright{\href{https://zwischenzugs.com/2018/10/02/why-are-enterprises-so-slow/}{\textemdash  Why Are Enterprises So Slow?, \emph{zwischenzugs.com}}}
+\end{quotation}
+
+\hypertarget{ignore-accept}{%
+\section{Ignore / Accept}\label{ignore-accept}}
+
+\textbf{Accepting} a risk is to deal with it when it arises. One example
+is the Key-Man Risk involved in having a super-star programmer on the
+team. Although there would be fallout if they left, they are often
+mitigating more risk than they cause.
+
+Another example is using particular software dependencies: Building a
+mobile application which requires a Facebook account to log in might
+give rise to the risk that people without Facebook accounts can't log
+in, but might simplify the software to such an extent that it's
+worthwhile.
+
+Whereas \textbf{Accepting} a risk seems to imply an eyes-wide-open
+examination, \textbf{Ignoring} seems to imply that either the risk is so
+insignificant it doesn't warrant evaluation, or so daunting that it
+can't be stared down. Either way, \textbf{Ignoring} a risk amounts to
+the same thing as \textbf{Accepting} it, since you're not doing anything
+about it.
+
+\textbf{Accepting} a risk has to occur \emph{before} we can
+\textbf{Mitigate} it.
+
+\hypertarget{a-nice-problem-to-have}{%
+\subsection{A Nice Problem To Have}\label{a-nice-problem-to-have}}
+
+\textbf{Ignoring} or \textbf{Accepting} risks is a lot less work than
+\textbf{Mitigating} them, and sometimes it can feel negligent to just
+add them to the backlog or risk-register without doing anything
+immediately about them. One useful test I have found is whether ``This
+would be a nice problem to have''. For example:
+
+\begin{quotation}
+
+Running out of space in the database would be a nice problem to have,
+because it would mean we have lots of users
+
+\end{quotation}
+
+\begin{quotation}
+
+Users complaining about lacking function X would be a nice problem to
+have, because it would mean they were using the system
+
+\end{quotation}
+
+Applying this kind of logic at the start of a project leads you towards
+building a
+\href{https://en.wikipedia.org/wiki/Minimum_viable_product}{Minimum
+Viable Product}.
+
+\hypertarget{learned-helplessness}{%
+\subsection{Learned Helplessness}\label{learned-helplessness}}
+
+Sometimes, risks just go away on their own.
+\href{https://en.wikipedia.org/wiki/Learned_helplessness}{Learned
+Helplessness} on the other hand, is where we \emph{could} do something
+about the risk, but fail to see that as an option:
+
+\begin{quotation}
+
+``Learned helplessness is behaviour typical of animals, and in rare
+cases humans, that occurs when the subject endures repeatedly painful or
+otherwise aversive stimuli which it is unable to escape or avoid. After
+such experience, the organism often fails to learn or accept''escape" or
+``avoidance'' in new situations where such behavior would likely be
+effective. "
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Learned_helplessness}{\textemdash  Learned Helplessness, \emph{Wikipedia}}}
+\end{quotation}
+
+\hypertarget{contain}{%
+\section{Contain}\label{contain}}
+
+\textbf{Containing} risks means setting aside sufficient time or money
+to deal with them if they occur. This is an excellent approach for
+Hidden Risk or entire sets of minor Attendant Risks.
+
+Whenever a project-manager builds slack into a project plan, this is
+\textbf{Containment}. ``Time-Boxing'' is also containment: this is where
+you give a piece of work a week (say) to prove itself. If it can't be
+done in this time, we move on and try a different approach.
+
+In the chapter on Schedule Risk we are going to look in detail at how
+this works.
+
+\hypertarget{exploit}{%
+\section{Exploit}\label{exploit}}
+
+\textbf{Exploiting} as a strategy usually means taking advantage of the
+upside of a risk. For example, ensuring enough stock is available to
+mitigate the risk of a rush on sales over the Christmas period, or
+ensuring your website has enough bandwidth to capture all the traffic
+headed towards it after it's featured on television.
+
+Going back to the example of home insurance, the Insurance company is
+\textbf{exploiting} the risk of my house burning down by selling me
+insurance. This is a common pattern: wherever there is risk, there is
+likely to be a way to profit from it.
+
+Later, in the chapter on Process Risk we'll be looking at how
+\textbf{exploiting risk} can happen organically within a company.
+
+\hypertarget{re-cap}{%
+\section{Re-cap}\label{re-cap}}
+
+Let's look at the journey so far:
+
+\begin{itemize}
+\item
+  In A Simple Scenario we looked at how risk pervades every goal we have
+  in life, big or small. We saw that risk stems from the fact that our
+  Internal Model of the world couldn't capture everything about reality,
+  and so some things were down to chance.
+\item
+  In the Development Process we looked at how common software
+  engineering conventions like Unit Testing, User Acceptance Testing and
+  Integration could help us manage the risk of taking an idea to
+  production, by \emph{gradually} introducing it to reality in stages.
+\item
+  Then, generalizing the lessons of the Development Process article, we
+  examined the idea that Meeting Reality frequently helps flush out
+  Hidden Risks and improve your Internal Model.
+\item
+  In It's All Risk Management we took a leap of faith: Could
+  \emph{everything} we do just be risk management? And we looked at the
+  RAID log and thought that maybe it could be.
+\item
+  Next, in A Software Project Scenario we looked at how you could treat
+  the project-as-a-whole as a risk management exercise, and treat the
+  goals from one day to the next as activities to mitigate risk.
+\item
+  Evaluating Risk was an aside, looking at some terminology and the
+  useful concept of a Risk Register.
+\item
+  We looked at Cadence, and how feedback loops allow you Navigate the
+  Risk Landscape more effectively, by showing you more quickly when
+  you're going wrong.
+\end{itemize}
+
+What this has been building towards is supplying us with a vocabulary
+with which to communicate to our team-mates about which Risks are
+important to us, which actions we believe are the right ones, and which
+tools we should use.
+
+In the next chapter we will see an example of this in action.
+
+\hypertarget{a-conversation}{%
+\chapter{A Conversation}\label{a-conversation}}
+
+After so much theory, it seems like it's time to look at how we can
+apply these principles in the real world.
+
+The following is based the summary of an issue from just a few weeks
+ago. It's heavily edited and anonymized, and I've tried to add the
+Risk-First vocabulary along the way, but otherwise, it's real.
+
+Some background: \textbf{Synergy} is an online service with an
+app-store, and \textbf{Eve} and \textbf{Bob} are developers working for
+\textbf{Large Corporation LTD}, which wants to have an application
+accepted into Synergy's app-store.
+
+Synergy's release means that the app-store refresh will happen in a few
+weeks, so this is something of a hard deadline: if we miss it, the next
+release will be four months away.
+
+\hypertarget{a-risk-conversation}{%
+\section{A Risk Conversation}\label{a-risk-conversation}}
+
+\textbf{Eve}: We've got a problem with the Synergy security review.
+
+\textbf{Bob}: Tell me.
+
+\textbf{Eve}: Well, you know Synergy did their review and asked us to
+upgrade our Web Server to only allow TLS version 1.1 and greater?
+
+\textbf{Bob}: Yes, I remember: We discussed it as a team and thought the
+simplest thing would be to change the security settings on the Web
+Server, but we all felt it was pretty risky. We decided that in order to
+flush out Hidden Risk, we'd upgrade our entire production site to use it
+\emph{now}, rather than wait for the app launch.
+
+\textbf{Eve}: Right, and it \emph{did} flush out Hidden Risk: some
+people using Windows 7, downloading Excel spreadsheets on the site,
+couldn't download them: for some reason, that combination didn't support
+anything greater than TLS version 1.0. So, we had to back it out.
+
+\textbf{Bob}: Ok, well I guess it's good we found out \emph{now}. It
+would have been a disaster to discover this after the go-live.
+
+\textbf{Eve}: Yes. So, what's our next-best action to mitigate this?
+
+\textbf{Bob}: Well, we could go back to Synergy and ask them for a
+reprieve, but I think it'd be better to mitigate this risk now if we
+can\ldots{} they'll definitely want it changed at some point.
+
+\textbf{Eve}: How about we run two web-servers? One for the existing
+content, and one for our new Synergy app? We'd have to get a new
+external IP address, handle DNS setup, change the firewalls, and then
+deploy a new version of the Web Server software on the production boxes.
+
+\textbf{Bob}: This feels like there'd be a lot of Attendant Risk: and
+all of this needs to be handled by the Networking Team, so we're picking
+up a lot of Bureaucracy Risk. I'm also worried that there are too many
+steps here, and we're going to discover loads of Hidden Risks as we go.
+
+\textbf{Eve}: Well, you're correct on the first one. But, I've done this
+before not that long ago for a Chinese project, so I know the process -
+we shouldn't run into any new Hidden Risk.
+
+\textbf{Bob}: OK, fair enough. But isn't there something simpler we can
+do? Maybe some settings in the Web Server?
+
+\textbf{Eve}: Well, if we were using Apache, yes, it would be easy to do
+this. But, we're using Baroque Web Server, and it \emph{might} support
+it, but the documentation isn't very clear.
+
+\textbf{Bob}: OK, and upgrading it is a \emph{big} risk, right? We'd
+have to migrate all of our configuration\ldots{}
+
+\textbf{Eve}: Yes, let's not go there. But if we changing the settings
+on Baroque, we have the Attendant Risk that it's not supported by the
+software and we're back where we started. Also, if we isolate the
+Synergy app stuff now, we can mess around with it at any point in
+future, which is a big win in case there are other Hidden Risks with the
+security changes that we don't know about yet.
+
+\textbf{Bob}: OK, I can see that buys us something, but time is really
+short and we have holidays coming up.
+
+\textbf{Eve}: Yes. How about for now, we go with the isolated server,
+and review next week? If it's working out, then great, we continue with
+it. Otherwise, if we're not making progress next week, then it'll be
+because our isolation solution is meeting more risk than we originally
+thought. We can try the settings change in that case.
+
+\textbf{Bob}: Fair enough, it sounds like we're managing the risk
+properly, and because we can hand off a lot of this to the Networking
+Team, we can get on with mitigating our biggest risk on the project, the
+authentication problem, in the meantime.
+
+\textbf{Eve}: Right. I'll check in with the Networking Team each day and
+make sure it doesn't get forgotten.
+
+\hypertarget{aftermath}{%
+\section{Aftermath}\label{aftermath}}
+
+Hopefully, this type of conversation will feel familiar. It should.
+There's nothing ground-breaking at all in what we've covered so far;
+it's more-or-less just Risk Management theory.
+
+If you can now apply it in conversation, like we did above, then that's
+one extra tool you have for delivering software.
+
+So with the groundwork out of the way, let's get on to Part 2 and
+investigate The Risk Landscape.
+
+\hypertarget{isnt-it-obvious}{%
+\section{Isn't It Obvious?}\label{isnt-it-obvious}}
+
+At this point, you might be wondering what all the fuss is about. This
+stuff is all obvious! It's what we do anyway! Perhaps. Risk management
+\emph{is} what we do anyway:
+
+\begin{quotation}
+
+``We've survived 200,000 years as humans. Don't you think there's a
+reason why we survived? We're good at risk management.''
+
+\sourceatright{\href{https://www.zerohedge.com/news/2018-03-13/taleb-best-thing-society-bankruptcy-goldman-sachs}{\textemdash  Nassim Nicholas Taleb, author of \emph{The Black Swan}}}
+\end{quotation}
+
+The problem is that although all this \emph{is} obvious, it appears to
+have largely escaped codification within the literature, practices and
+methodologies of software development. Further, while it is obvious,
+there is a huge hole: Successful De-Risking depends heavily on
+individual experience and talent.
+
+If there are three take-aways from Risk-First, it is these:
+
+\begin{itemize}
+\tightlist
+\item
+  Concentrate on Risks, not Goals (goals are risks in disguise, anyway)
+\item
+  Every action you take is De-Risking \emph{something} (or should be)
+\item
+  tbd.
+\end{itemize}
+
+Risk-First has stressed the existence of Hidden Risk over and again, but
+\emph{it's only hidden if you're not expecting it}. In part 2, we are
+going to look at all the places where Hidden Risk lives.
+
 \part{Risk}
 
 \part{Application}
