@@ -48,9 +48,7 @@ This type of graphic is _helpful_ in deciding what to do next, although alternat
 
 ## Unknown Unknowns
 
-In Wikipedia's example, this fictitious BBQ has high fire risk, so one should begin mitigating there.  
-
-But, does this feel right?  One of the criticisms of the [Risk Register](Evaluating-Risk#risk-registers) approach is that of [mistaking the map for the territory](Map-And-Territory-Risk).  That is, mistakenly believing that what's on the Risk Register _is all there is_.  
+One of the criticisms of the [Risk Register](Evaluating-Risk#risk-registers) approach is that of [mistaking the map for the territory](Map-And-Territory-Risk).  That is, mistakenly believing that what's on the Risk Register _is all there is_.  
 
 In the preceding discussions, I have been careful to point out the existence of [Hidden Risks](Glossary#hidden-risk) for that very reason. Or, to put another way:
 
