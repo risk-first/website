@@ -110,4 +110,4 @@ Usually, we mean we've failed to achieve a goal, and since _goals are risks_, it
 
 It makes it much easier to tackle the RAID log if there's only one list.  But you still have to choose a _strategy_:   Do you tackle the _most important_ risk on the list, or the _most urgent_, or take the action with the biggest [Pay Off](Glossary#pay-off) and deal with it?
 
-In the next section, [A Software Project Scenario](Software-Project-Scenario) we'll give an example of this in action.
+In the next section, [Evaluating Risk](Evaluating-Risk) we'll look at some approaches to choosing what to do. 
