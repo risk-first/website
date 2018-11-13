@@ -6,10 +6,10 @@ As we saw in [A Conversation](A-Conversation), it's important not only to consid
 
 Some simple examples of this might be:
 
-- **Safety-nets and ropes** De-Risk climbing.  But, the activity of climbing itself is otherwise much unchanged.
-- **Backups and Source-Control** De-Risk the development process by reducing the impact of computer failure.  Our process is changed _slightly_ by this imposition, but we're not massively inconvenienced.
-- **Insurance** De-Risks owning a house, or going on holiday or driving a car.  Usually, the payment is small enough not to impact us too much.
-- **The National Health Service (NHS)** De-Risks medical expense by pooling health-care costs across the entire population.  If you were struck down with a debilitating illness, then at least you wouldn't also have to pay to get better. 
+- **Safety-nets and ropes** de-risk climbing.  But, the activity of climbing itself is otherwise much unchanged.
+- **Backups and Source-Control** de-risk the development process by reducing the impact of computer failure.  Our process is changed _slightly_ by this imposition, but we're not massively inconvenienced.
+- **Insurance** de-risks owning a house, going on holiday or driving a car.  Usually, the payment is small enough not to impact us too much.
+- **The National Health Service (NHS)** de-risks medical expense by pooling health-care costs across the entire population.  If you were struck down with a debilitating illness, then at least you wouldn't also have to pay to get better. 
 
 Let's look at some common strategies for De-Risking.
 
