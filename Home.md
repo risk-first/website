@@ -36,7 +36,6 @@ Some easy-to-digest ideas that will set the scene for examining the practices la
  - [Development Process](Development-Process)
  - [Meeting Reality](Meeting-Reality)
  - [It's All Risk Management](All-Risk-Management)
- - [A Software Project Scenario](Software-Project-Scenario)
  - [Evaluating Risk](Evaluating-Risk)
  - [Cadence](Cadence)
  - [De-Risking](De-Risking)
