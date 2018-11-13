@@ -126,7 +126,7 @@ For example, in [Rapid Development](http://a.co/d/ddWGTB2) by Steve McConnell we
 
 ![Pillars, From Rapid Development By Steve McConnell](images/generated/introduction/pillars_smc.png)  
 
-And, this is _fine_, McConnell is structuring the process from the perspective of _delivering as quickly as possible_.  However, here, I want to turn this on it's head.  Exploring Software Development from a risk-first perspective is an under-explored technique, and I believe it offers some useful insights.   So the aim here is to present the case for viewing software development like this:
+And, this is _fine_, McConnell is structuring the process from the perspective of _delivering as quickly as possible_.  However, here, I want to turn this on it's head.  Software Development from a risk-first perspective is an under-explored technique, and I believe it offers some useful insights.   So the aim here is to present the case for viewing software development like this:
 
 ![Pillars, re-arranged](images/generated/introduction/pillars_kite9.png)
 
@@ -147,7 +147,7 @@ The problem is, we now need to take a call on whether to do something that is _u
 
 [Net Present Value](https://en.wikipedia.org/wiki/Net_present_value) allows us to discount value in the future, which offers us a way to reconcile these two variables.  The further in the future the value is realised, the bigger the discount.  This is done because payment _now_ is better than payment in the future:  there is the risk that something will happen to prevent that future payment.  This is why we have _interest rates_ on loan payments.
 
-In the diagram, you can see two future payments, Payment A of £100 due in one year, and Payment B of £150 due in 10 years.  By discounting at a given rate (here at a high rate of 20% per year) we can compare their worth _now_.  At this discount rate, Payment A,  - arriving next year - has a far greater value.  
+In the diagram, you can see two future payments, Payment **A** of £100 due in one year, and Payment **B** of £150 due in 10 years.  By discounting at a given rate (here at a high rate of 20% per year) we can compare their worth _now_.  At this discount rate, Payment **A**,  - arriving next year - has a far greater value.  
 
 ![Net Present Value Discounting](images/numbers/npv.png)
 
@@ -193,15 +193,15 @@ Under these circumstances, we often see _Pooh-Bear Procrastination_:
 
 ## Is This Scientific?
 
-Enough with the numbers and the theory:  Risk-First is an attempt to provide a practical framework, rather than a scientifically rigorous analysis.  In fact, my view is that you should _give up_ on trying to compute risk numerically.  You _can't_ work out how long a software project will take based purely on an analysis of (say) _function points_.  (Whatever you define them to be).
+Enough with the numbers and the theory:  Risk-First is an attempt to provide a practical framework, rather than a scientifically rigorous analysis.  For software development, you should probably _give up_ on trying to compute risk numerically.  You _can't_ work out how long a software project will take based purely on an analysis of (say) _function points_.  (Whatever you define them to be).
 
-- First, there isn't enough evidence for an approach like this.  We _can_ look at collected data about IT projects, but techniques and tools advance rapidly.
+- First, there isn't enough scientific evidence for an approach like this.  We _can_ look at collected data about IT projects, but techniques and tools advance rapidly.
 - Second,  IT projects have too many confounding factors, such as experience of the teams, 
 technologies used etc.  That is, the risks faced by IT projects are _too diverse_ and _hard to quantify_ to allow for meaningful comparison from one to the next.
 - Third, as soon as you _publish a date_ it changes the expectations of the project (see [Student Syndrome](Scarcity-Risk#schedule-risk)).
-- Fourth, metrics get first of all [misused](Map-And-Territory-Risk) and then [gamed](Agency-Risk) (as we will see in a later chapter).
+- Fourth, metrics get [misused](Map-And-Territory-Risk) and [gamed](Agency-Risk) (as we will see in a later chapter).
 
-Reality is messy.  Dressing it up with numbers doesn't change that and you risk [fooling yourself](Map-And-Territory-Risk).  If this is the case, is there any hope at all in what we're doing?  I would argue yes:   _forget precision_.  You should, with experience be able to hold up two separate risks and answer the question, "is this one bigger than this one?"  
+Reality is messy.  Dressing it up with numbers doesn't change that and you risk [fooling yourself](Map-And-Territory-Risk).  If this is the case, is there any hope at all in what we're doing?  Yes:   _forget precision_.  You should, with experience be able to hold up two separate risks and answer the question, "is this one bigger than this one?"  
 
 
 With that in mind, let's look at how we can meet reality [as fast and often as possible](Cadence).
