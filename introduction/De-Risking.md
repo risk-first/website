@@ -6,12 +6,12 @@ As we saw in [A Conversation](A-Conversation), it's important not only to consid
 
 Some simple examples of this might be:
 
-- Safety-nets and ropes de-risk climbing.  But, the activity of climbing itself is otherwise much unchanged.
-- Backups and Source-Control de-risk the development process by reducing the impact of computer failure.  Our process is changed _slightly_ by this imposition, but we're not massively inconvenienced.
-- tbd.
-- tbd.
+- **Safety-nets and ropes** De-Risk climbing.  But, the activity of climbing itself is otherwise much unchanged.
+- **Backups and Source-Control** De-Risk the development process by reducing the impact of computer failure.  Our process is changed _slightly_ by this imposition, but we're not massively inconvenienced.
+- **Insurance** De-Risks owning a house, or going on holiday or driving a car.  Usually, the payment is small enough not to impact us too much.
+- **The National Health Service (NHS)** De-Risks medical expense by pooling health-care costs across the entire population.  If you were struck down with a debilitating illness, then at least you wouldn't also have to pay to get better. 
 
-Let's look at some common strategies for De-Risking.  This is probably not an exhaustive set, but it's a good starting point.
+Let's look at some common strategies for De-Risking.
 
 ## Mitigate
 
@@ -23,9 +23,11 @@ Let's look at some common strategies for De-Risking.  This is probably not an ex
 
 Of course, you may pick up other, more serious [Attendant Risks](Glossary#attendant-risk) as a result: Relational Databases are software solutions to many kinds of [Coordination Risk](Coordination-Risk) problem.
 
+_Not_ launching an online service _avoids_ the [Operational Risk](Operational-Risk) involved in running one.  Although you avoid the upsides too.
+
 ## Transfer
 
-**Transferring** risk means _making it someone else's problem.  For example, when I buy home insurance, the impact of my house burning down is reduced.  It hasn't gone away completely, but at least the financial element of it is handled by the insurance company.
+**Transferring** risk means _making it someone else's problem_.  For example, when I buy home insurance, the impact of my house burning down is reduced.  It hasn't gone away completely, but at least the financial element of it is handled by the insurance company.
 
 In part 2, we'll see how **Transfer** of risk is an essential feature of [Software as a Service](Software-Dependency-Risk).  Inside organisations, **Transfer** of risk can become a political game:
 
@@ -33,15 +35,17 @@ In part 2, we'll see how **Transfer** of risk is an essential feature of [Softwa
 
 ## Ignore / Accept
 
-**Accepting** a risk is to deal with it when it arises.   One example is the [Key-Man Risk](Scarcity-Risk#staff-risk) involved in having a super-star programmer on the team.  Although there would be fallout if they left, they are usually mitigating more risk than they cause.  Another example is using particular software dependencies:   I might build a mobile application which requires a Facebook account to log in.  This might give rise to the risk that some people can't log in, but might simplify the software to such an extent that it's worthwhile.
+**Accepting** a risk is to deal with it when it arises.   One example is the [Key-Man Risk](Scarcity-Risk#staff-risk) involved in having a super-star programmer on the team.  Although there would be fallout if they left, they are often mitigating more risk than they cause.  
+
+Another example is using particular software dependencies:   Building a mobile application which requires a Facebook account to log in might give rise to the risk that people without Facebook accounts can't log in, but might simplify the software to such an extent that it's worthwhile.
 
 Whereas **Accepting** a risk seems to imply an eyes-wide-open examination, **Ignoring** seems to imply that either the risk is so insignificant it doesn't warrant evaluation, or so daunting that it can't be stared down.  Either way, **Ignoring** a risk amounts to the same thing as **Accepting** it, since you're not doing anything about it. 
 
-**Accepting** a risk has to occur _before_ we can **Mitigate** it.  As we've discussed previously, what we decide to mitigate on a daily basis will depend on the evaluation of where we can best mitigate [Attendant Risk](Glossary#attendant-risk).   
+**Accepting** a risk has to occur _before_ we can **Mitigate** it.  
 
 ### A Nice Problem To Have
 
-**Ignoring** or **Accepting** risks is a lot less work than **Mitigating** them, and sometimes it can feel negligent to just add them to the backlog or risk-register.  One useful test I have found is whether "This would be a nice problem to have".  For example:
+**Ignoring** or **Accepting** risks is a lot less work than **Mitigating** them, and sometimes it can feel negligent to just add them to the backlog or risk-register without doing anything immediately about them.  One useful test I have found is whether "This would be a nice problem to have".  For example:
 
 > "Running out of space in the database would be a nice problem to have, because it would mean we have lots of users"
 > "Users complaining about lacking function X would be a nice problem to have, because it would mean they were using the system"
@@ -58,32 +62,38 @@ Sometimes, risks just go away on their own.  [Learned Helplessness](https://en.w
 
 **Containing** risks means setting aside sufficient time or money to deal with them if they occur.  This is an excellent approach for [Hidden Risk](Glossary#hidden-risk) or entire sets of minor [Attendant Risks](Glossary#attendant-risk).  
 
-Whenever a project-manager builds slack into a project plan, this is **Containment**.  In the section on [Schedule Risk](Scarcity-Risk#schedule-risk) we are going to look in detail at how this works. 
+Whenever a project-manager builds slack into a project plan, this is **Containment**.   "Time-Boxing" is also containment: this is where you give a piece of work a week (say) to prove itself.  If it can't be done in this time, we move on and try a different approach.
+
+In the section on [Schedule Risk](Scarcity-Risk#schedule-risk) we are going to look in detail at how this works. 
 
 ## Exploit
 
 **Exploiting** as a strategy usually means taking advantage of the upside of a risk.   For example, ensuring enough stock is available to mitigate the risk of a rush on sales over the Christmas period, or ensuring your website has enough bandwidth to capture all the traffic headed towards it after it's featured on television.  
 
-Going back to the example of home insurance, the Insurance company are **exploiting** the risk of my house burning down by selling me insurance.  This is a common pattern:  wherever there is risk, there is likely to be a way to profit from it.  
+Going back to the example of home insurance, the Insurance company is **exploiting** the risk of my house burning down by selling me insurance.  This is a common pattern:  wherever there is risk, there is likely to be a way to profit from it.  
 
 Later, in the section on [Process Risk](Process-Risk) we'll be looking at how **exploiting risk** can happen organically within a company. 
 
-## Isn't It Obvious?
+## Re-cap
 
-At this point, you might be wondering what all the fuss is about.   This stuff is all obvious!  It's what we do anyway!  Perhaps.  Risk management _is_ what we do anyway: 
+Let's look at the journey so far:
+
+ - In [A Simple Scenario](A-Simple-Scenario) we looked at how risk pervades every goal we have in life, big or small.  We saw that risk stems from the fact that our [Internal Model](Glossary#Internal-Model) of the world couldn't capture everything about reality, and so some things were down to chance.  
  
- > "We’ve survived 200,000 years as humans.  Don’t you think there’s a reason why we survived? We’re good at risk management. " - [Nassim Nicholas Taleb, author of _The Black Swan_](https://www.zerohedge.com/news/2018-03-13/taleb-best-thing-society-bankruptcy-goldman-sachs)
+ - In the [Development Process](Development-Process) we looked at how common software engineering conventions like Unit Testing, User Acceptance Testing and Integration could help us manage the risk of taking an idea to production, by _gradually_ introducing it to reality in stages.
+
+ - Then, generalizing the lessons of the Development Process article, we examined the idea that [Meeting Reality](Meeting-Reality) frequently helps flush out [Hidden Risks](Glossary#hidden-risk) and improve your [Internal Model](Glossary#Internal-Model).
  
-The problem is that although all this _is_ obvious, it appears to have largely escaped codification within the literature, practices and methodologies of software development.  Further, while it is obvious, there is a huge hole:   Successful De-Risking depends heavily on individual experience and talent.  
+ - In [It's All Risk Management](All-Risk-Management) we took a leap of faith:  Could _everything_ we do just be risk management?  And we looked at the RAID log and thought that maybe it could be.   
+ 
+ - Next, in [A Software Project Scenario](Software-Project-Scenario) we looked at how you could treat the project-as-a-whole as a risk management exercise, and treat the goals from one day to the next as activities to mitigate risk.
+ 
+ - [Evaluating Risk](Evaluating-Risk) was an aside, looking at some terminology and the useful concept of a Risk Register.
+ 
+ - We looked at [Cadence](Cadence), and how feedback loops allow you Navigate the [Risk Landscape](Glossary#risk-landscape) more effectively, by showing you more quickly when you're going wrong.
+ 
+What this has been building towards is supplying us with a vocabulary with which to communicate to our team-mates about which Risks are important to us, which actions we believe are the right ones, and which tools we should use.
 
-If there are three take-aways from Risk-First, it is these:
-
-- Concentrate on Risks, not Goals (goals are risks in disguise, anyway)
-- Every action you take is De-Risking _something_ (or should be)
-- tbd.
-
-
-Risk-First has stressed the existence of [Hidden Risk](Glossary#hidden-risk) over and again, but _it's only hidden if you're not expecting it_.  In part 2, we are going to look at all the places where [Hidden Risk](Glossary#hidden-risk) lives.
-
+In the next section we will see [an example of this in action](A-Conversation).
 
 

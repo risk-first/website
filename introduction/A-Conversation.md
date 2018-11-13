@@ -57,5 +57,23 @@ If you can now apply it in conversation, like we did above, then that's one extr
 So with the groundwork out of the way, let's get on to Part 2 and investigate [The Risk Landscape](Risk-Landscape).  
 
 
+## Isn't It Obvious?
+
+At this point, you might be wondering what all the fuss is about.   This stuff is all obvious!  It's what we do anyway!  Perhaps.  Risk management _is_ what we do anyway: 
+ 
+ > "We’ve survived 200,000 years as humans.  Don’t you think there’s a reason why we survived? We’re good at risk management. " - [Nassim Nicholas Taleb, author of _The Black Swan_](https://www.zerohedge.com/news/2018-03-13/taleb-best-thing-society-bankruptcy-goldman-sachs)
+ 
+The problem is that although all this _is_ obvious, it appears to have largely escaped codification within the literature, practices and methodologies of software development.  Further, while it is obvious, there is a huge hole:   Successful De-Risking depends heavily on individual experience and talent.  
+
+If there are three take-aways from Risk-First, it is these:
+
+- Concentrate on Risks, not Goals (goals are risks in disguise, anyway)
+- Every action you take is De-Risking _something_ (or should be)
+- tbd.
+
+
+Risk-First has stressed the existence of [Hidden Risk](Glossary#hidden-risk) over and again, but _it's only hidden if you're not expecting it_.  In part 2, we are going to look at all the places where [Hidden Risk](Glossary#hidden-risk) lives.
+
+
 
  

@@ -34,7 +34,7 @@ The whole _reason_ we have tools like compilers is because they give us a short-
 
 ### Development Cycle Time
 
-Developers often ignore the fast feedback loops at the bottom of the list, because the ones nearer the top _will do_.   In the worst cases, changing two lines of code, running the build script, deploying and then manually testing out a feature.  And then repeating.
+Developers often ignore the fast feedback loops at the bottom of the list above, because the ones nearer the top _will do_.   In the worst cases, changing two lines of code, running the build script, deploying and then manually testing out a feature.  And then repeating.
 
 If you're doing it over and over, this is a terrible waste of time.  And, you get none of the benefit of a permanent suite of tests to run again in the future.  
 
@@ -53,25 +53,5 @@ Yes, CD will give you faster feedback loops, but even getting things into produc
 The right answer is to use multiple feedback loops:
 
 ![Different actions have different feedback loops](images/generated/introduction/cadence.png)
-
-## Re-cap
-
-Let's look at the journey so far:
-
- - In [A Simple Scenario](A-Simple-Scenario) we looked at how risk pervades every goal we have in life, big or small.  We saw that risk stems from the fact that our [Internal Model](Glossary#Internal-Model) of the world couldn't capture everything about reality, and so some things were down to chance.  
- 
- - In the [Development Process](Development-Process) we looked at how common software engineering conventions like Unit Testing, User Acceptance Testing and Integration could help us manage the risk of taking an idea to production, by _gradually_ introducing it to reality in stages.
-
- - Then, generalizing the lessons of the Development Process article, we examined the idea that [Meeting Reality](Meeting-Reality) frequently helps flush out [Hidden Risks](Glossary#hidden-risk) and improve your [Internal Model](Glossary#Internal-Model).
- 
- - In [It's All Risk Management](All-Risk-Management) we took a leap of faith:  Could _everything_ we do just be risk management?  And we looked at the RAID log and thought that maybe it could be.   
- 
- - Next, in [A Software Project Scenario](Software-Project-Scenario) we looked at how you could treat the project-as-a-whole as a risk management exercise, and treat the goals from one day to the next as activities to mitigate risk.
- 
- - [Evaluating Risk](Evaluating-Risk) was an aside, looking at some terminology and the useful concept of a Risk Register.
- 
- - Finally, above, we looked at [Cadence](Cadence), and how feedback loops allow you Navigate the [Risk Landscape](Glossary#risk-landscape) more effectively, by showing you more quickly when you're going wrong.
- 
-What this has been building towards is supplying us with a vocabulary with which to communicate to our team-mates about which Risks are important to us, which actions we believe are the right ones, and which tools we should use.
 
 In the next section [De-Risking](De-Risking) we're going to introduce a few more useful terms for thinking about risk.
