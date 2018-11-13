@@ -38,13 +38,13 @@ Risk-First takes a view that risks are a continuous quantity, more like _money_ 
 
 ## Risk Matrix
 
-A risk matrix presents a graphical view on where risks exist.
+A risk matrix presents a graphical view on where risks exist.  Here is an example, showing the risks from the dinner party in the [A Simple Scenario](A-Simple-Scenario) section:
 
-The [Wikipedia page](https://en.wikipedia.org/wiki/Risk_register) also includes this wonderful diagram showing you risks of a poorly run barbecue party:
+![Risk Register of Dinner Party Risks](images/generated/introduction/risk_matrix.png)
 
-![Wikipedia Risk Register](images/WikipediaRiskRegister1.png)
+This type of graphic is _helpful_ in deciding what to do next, although alternatively, you can graph the overall **Risk Score** against the [Pay-Off](Glossary#pay-off).  Easily mitigated risk (on the right), and worse risks (at the top) can therefore be dealt with first (hopefully).
 
-This type of graphic is _helpful_ in deciding what to do next, although personally I prefer to graph the overall **Risk Score** against the **Cost of Mitigation**:   easily mitigated, but expensive risks can therefore be dealt with first (hopefully).
+![Risk Register of Dinner Party Risks, Considering Pay-Off](images/generated/introduction/risk_matrix_2.png)
 
 ## Unknown Unknowns
 
