@@ -56,7 +56,10 @@ In the preceding discussions, I have been careful to point out the existence of 
 
 > What we don't know is what usually gets us killed - Petyr Baelish, _Game of Thrones_
 
-Donald Rumsfeld's famous [Known Knowns](https://en.wikipedia.org/wiki/There_are_known_knowns) is also a helpful conceptualisation.
+Donald Rumsfeld's famous [Known Knowns](https://en.wikipedia.org/wiki/There_are_known_knowns) is also a helpful conceptualisation:  
+
+ - **A _known_ unknown** is an [Attendant Risk](Glossary#attendant-risk).  i.e. something you are aware of, but where the precise degree of threat can't be established.
+ - **An _unknown_ unknown** is a [Hidden Risk](Glossary#hidden-risk). i.e a risk you haven't even thought to exist yet.
 
 ## Risk And Uncertainty
 
@@ -169,7 +172,7 @@ Now, risk **A** is bigger.
 
 Because this is _Net_ Present Risk, we can also use it to make decisions about whether or not to mitigate risks.   Let's assume the cost of mitigating any risk _right now_ is £40.  Under the 6% regime, only Risk **B** is worth mitigating today, because you spend £40 today to get rid of £45 of risk (today).  
 
-Under the 20% regime, neither are worth mitigating.  The 20% Discount Rate may reflect that sometimes, future risks just don't materialise.  
+Under the 20% regime, neither are worth mitigating.  The 20% Discount Rate may reflect that sometimes, future risks just don't materialise.   
 
 ### Discounting the Future To Zero
 
@@ -182,7 +185,7 @@ Risk B is almost irrelevant under this regime, as this graph shows:
 
 ![Net Present Risk, 60% Discount Rate](images/numbers/npr3.png)
 
-Why do things like this happen?  Often, the people involved are under incredible job-stress:  usually they are threatened with the sack on a daily basis, and therefore feel they have to react.  In a similar way, publicly-listed companies also often apply short-term focus, because they only care about the _next annual report_, which limits their horizons and ability to consider future risk.
+Why do things like this happen?  Often, the people involved are under incredible job-stress:  usually they are threatened on a daily basis, and therefore feel they have to react.  In a similar way, publicly-listed companies also often apply short-term focus, because they only care about the _next annual report_, which limits their horizons and ability to consider future risk.
 
 Under these circumstances, we often see _Pooh-Bear Procrastination_:
 
