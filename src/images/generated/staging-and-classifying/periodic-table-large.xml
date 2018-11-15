@@ -2,162 +2,158 @@
   <svg:defs>
     <svg:style type="text/css"> @import url("risk.css");</svg:style>
   </svg:defs>
-  <diagram xmlns="http://www.kite9.org/schema/adl" id="The Diagram" style="kite9-layout: down;">
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="The Diagram" style="kite9-layout: down; kite9-padding: 0;">
 
-    <group style="kite9-layout: right; ">
-      <back style='kite9-usage: decal; kite9-type: svg;  '>
-        <svg:rect x="0" y="0" width="#{$width}" height="#{$height}" style="fill: #EEEEEE;" />
-      </back>
+    <table style="kite9-grid-size: 2 10; kite9-margin: 0; kite9-padding: 0">
+      <cell style="kite9-occupies: 0 0;  ">
+        <risk class="feature" id="feature" style="kite9-horizontal-align: left; " />
+      </cell>
+      <cell style="kite9-occupies: 0 1; " class="shaded">
+        <risk class="coordination" id="coordination" />
+      </cell>
+      <cell style="kite9-occupies: 0 2; ">
+        <risk class="map-and-territory" id="map-and-territory" />
+      </cell>
+      <cell style="kite9-occupies: 0 3; " class="shaded">
+        <risk class="communication" id="communication" />
+      </cell>
+      <cell style="kite9-occupies: 0 4; ">
+        <risk class="complexity" id="complexity" style="kite9-horizontal-align: left; " />
+      </cell>
+      <cell style="kite9-occupies: 0 5; " class="shaded">
+        <risk class="agency" style="kite9-horizontal-align: left; " />
+      </cell>
+      <cell style="kite9-occupies: 0 6; kite9-layout: down; ">
+        <risk class="dependency" id="dependency" />
+        <risk class="operational" style="kite9-horizontal-align: left; " />
+      </cell>
+      <cell style="kite9-occupies: 0 7; " class="shaded">
+        <risk class="boundary" id="boundary" />
+      </cell>
 
-      <risk class="feature" id="feature" />
+      <cell style="kite9-occupies: 1 1 0 1; kite9-layout: right; ">
+        <context style="kite9-layout: down; kite9-sizing: maximize;">
+          <group style="kite9-layout: right; ">
+            <risk class="feature-fit" />
+            <risk class="implementation" />
+          </group>
+          <risk class="conceptual-integrity" />
+          <label>
+            <text>Fit</text>
+            <symbols />
+          </label>
+        </context>
 
-      <context style="kite9-layout: down ">
+        <context style="kite9-layout: down; kite9-sizing: maximize; ">
+          <risk class="market" />
+          <risk class="feature-access" />
 
+          <label>
+            <text>Audience</text>
+            <symbols />
+          </label>
+        </context>
+
+
+        <context style="kite9-layout: down; kite9-sizing: maximize; ">
+          <risk class="regression" />
+          <risk class="feature-drift" />
+
+          <label>
+            <text>Evolution</text>
+            <symbols />
+          </label>
+        </context>
+      </cell>
+
+
+      <cell style="kite9-occupies: 1 1 2 3; " class="shaded">
         <group style="kite9-layout: right; ">
 
-          <risk class="feature-fit" />
-          <risk class="implementation" />
-        </group>
-        <risk class="conceptual-integrity" />
+          <context style="kite9-layout: down; kite9-sizing: maximize;">
 
-        <label>
-          <text>Fit</text>
-          <symbols />
-        </label>
-
-      </context>
-
-      <context style="kite9-layout: down ">
-
-        <risk class="market" />
-        <risk class="feature-access" />
-
-        <label>
-          <text>Audience</text>
-          <symbols />
-        </label>
-
-      </context>
-
-
-      <context style="kite9-layout: down ">
-
-        <risk class="regression" />
-        <risk class="feature-drift" />
-
-        <label>
-          <text>Evolution</text>
-          <symbols />
-        </label>
-
-      </context>
-
-    </group>
-
-    <group style="kite9-layout: right; ">
-      <risk class="communication" id="communication" />
-
-      <context style="kite9-layout: down ">
-
-        <risk class="channel" id="channel" />
-
-        <label>
-          <text>Channel</text>
-          <symbols />
-        </label>
-
-      </context>
-      <context style="kite9-layout: down; kite9-sizing: maximize; ">
-        <risk class="protocol" id="protocol" />
-        <label>
-          <text>Protocol</text>
-          <symbols />
-        </label>
-      </context>
-      <context style="kite9-layout: down; kite9-sizing: maximize; ">
-        <risk class="message" />
-        <risk class="invisibility" id="invisibility" />
-        <label>
-          <text>Message</text>
-          <symbols />
-        </label>
-      </context>
-      <context style="kite9-layout: down ">
-        <risk class="internal-model" />
-        <risk class="learning-curve" id="learning-curve" />
-        <label>
-          <text>Internal Model</text>
-          <symbols />
-        </label>
-      </context>
-    </group>
-
-    <group style="kite9-layout: right; ">
-
-      <back style='kite9-usage: decal; kite9-type: svg;  '>
-        <svg:rect x="0" y="0" width="#{$width}" height="#{$height}" style="fill: #EEEEEE;" />
-      </back>
-
-      <risk class="complexity" id="complexity" style="kite9-horizontal-align: left; " />
-      <risk class="dead-end" id="dead-end" />
-      <risk class="boundary" id="boundary" />
-      <risk class="map-and-territory" id="map-and-territory" />
-      <risk class="coordination" id="coordination" />
-    </group>
-
-
-
-    <group style="kite9-layout: right; ">
-
-      <risk class="dependency" id="dependency" />
-
-      <group style="kite9-layout: down; ">
-
-        <group style="kite9-layout: right; ">
-          <context style="kite9-layout: right " id="sr">
-            <group style="kite9-layout: down; ">
-              <risk class="opportunity" />
-              <risk class="red-queen" />
-            </group>
-            <group style="kite9-layout: down; ">
-              <risk class="scarcity" />
-              <risk class="reliability" />
-            </group>
-            <group style="kite9-layout: down; ">
-              <risk class="funding" />
-              <risk class="schedule" />
-            </group>
+            <risk class="channel" id="channel" />
 
             <label>
-              <text>Scarcity &amp; Reliability</text>
+              <text>Channel</text>
+              <symbols />
+            </label>
+
+          </context>
+          <context style="kite9-layout: down; kite9-sizing: maximize; ">
+            <risk class="protocol" id="protocol" />
+            <label>
+              <text>Protocol</text>
               <symbols />
             </label>
           </context>
-
-          <context style="kite9-layout: right; ">
-            <group style="kite9-layout: down; ">
-              <risk class="agency" id="agency" />
-              <risk class="trust" />
-            </group>
-
-            <risk class="security" />
+          <context style="kite9-layout: down; kite9-sizing: maximize; ">
+            <risk class="message" />
+            <risk class="invisibility" id="invisibility" />
             <label>
-              <text>Agency</text>
+              <text>Message</text>
+              <symbols />
+            </label>
+          </context>
+          <context style="kite9-layout: down ">
+            <risk class="internal-model" />
+            <risk class="learning-curve" id="learning-curve" />
+            <label>
+              <text>Internal Model</text>
               <symbols />
             </label>
           </context>
         </group>
 
-        <group style="kite9-layout: right; ">
-          <risk class="operational" style="kite9-horizontal-align: left; " />
-          <risk class="process" id="process" />
-          <risk class="deadline" id="deadline" />
-          <risk class="staff" />
+      </cell>
+
+      <cell style="kite9-occupies: 1 1 4 4; kite9-layout: right; ">
+        <risk class="codebase" id="codebase" />
+        <risk class="dead-end" id="dead-end" />
+      </cell>
+
+      <cell style="kite9-occupies: 1 1 5 5" class="shaded">
+        <risk class="trust" />
+        <risk class="security" />
+      </cell>
+
+      <cell style="kite9-occupies: 1 1 6 7; kite9-layout: right; ">
+        <context style="kite9-layout: right; kite9-sizing: maximize;  ">
+          <group style="kite9-layout: down; ">
+            <risk class="opportunity" />
+            <risk class="red-queen" />
+          </group>
+          <group style="kite9-layout: down; ">
+            <risk class="deadline" />
+            <risk class="schedule" />
+          </group>
+          <label>
+            <text>Temporal</text>
+            <symbols />
+          </label>
+        </context>
+
+        <context style="kite9-layout: down; ">
+          <risk class="reliability" />
           <risk class="software-dependency" />
-        </group>
-      </group>
-    </group>
-    
+          <risk class="process" id="process" />
+          <label>
+            <text>Reliability</text>
+            <symbols />
+          </label>
+        </context>
+        <context style="kite9-layout: down; ">
+          <risk class="scarcity" />
+          <risk class="funding" />
+          <risk class="staff" />
+          <label>
+            <text>Scarcity</text>
+            <symbols />
+          </label>
+        </context>
+      </cell>
+
+    </table>
   </diagram>
 
 </svg:svg>
