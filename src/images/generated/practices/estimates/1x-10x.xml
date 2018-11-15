@@ -12,9 +12,15 @@
 
         <context id="c" bordered="true" style="kite9-sizing: minimize;">
     
-          <risk class="feature" />
-          <risk class="learning-curve" />
-          <risk class="dead-end" />
+          <mitigated>
+            <risk class="feature" />
+          </mitigated>
+          <mitigated>
+            <risk class="learning-curve" />
+          </mitigated>
+          <mitigated>
+            <risk class="dead-end" />
+          </mitigated>
     
           <label  id="id_16">
             <text>Internal Model</text>
@@ -39,9 +45,11 @@
       <group style="kite9-layout: right">
       
          <context id="c" bordered="true" style="kite9-sizing: minimize; kite9-horizontal-align: right; ">
-    
-          <risk class="feature" />          
-    
+          
+          <mitigated> 
+            <risk class="feature" />          
+          </mitigated>
+          
           <label  id="id_16" style="kite9-horizontal-align: center;">
             <text>Internal Model</text>
             <symbols />

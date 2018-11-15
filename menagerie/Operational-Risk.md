@@ -1,44 +1,41 @@
 ![For Review](images/state/for-review.png)
 
-In this section on [Operational Risks], we're going to start considering the realities of running software systems in the real world.  
+In this section we're going to start considering the realities of running software systems in the real world.  
 
-Here, we're going to set the scene by looking at what constitutes an [Operational Risk](Operational-Risk), and then look at the related disciplines of [Operations Management](#operations-management) and [Operational Risk Management].  Following this background, we'll apply the Risk-First model and dive into the various mitigations for [Operational Risk](Operational-Risk).  
+Here, we're going to set the scene by looking at what constitutes an [Operational Risk](Operational-Risk), and then look at the related discipline of [Operations Management](#operations-management).  Following this background, we'll apply the Risk-First model and dive into the various mitigations for [Operational Risk](Operational-Risk).  
 
 ## Operational Risks
 
-It's tempting to take a very narrow view of the dependencies of a system, but [Operational Risks](Operational-Risk) are often caused by dependencies we don't consider - the _context_ within which the system is operating.  Here are some examples:  
+When building software, it's tempting to take a very narrow view of the dependencies of a system, but [Operational Risks](Operational-Risk) are often caused by dependencies we _don't_ consider - i.e. the _context_ within which the system is operating.  Here are some examples:  
 
- - Staff Dependencies ([Staff Risk](Scarcity-Risk#staff-risk)):  
+ - [Staff Risks](Scarcity-Risk#staff-risk):  
    - Freak weather conditions affecting ability of staff to get to work, interrupting the development and support teams. 
    - Reputational damage caused when staff are rude to the customers.
  
- - Infrastructure Dependencies ([Reliability Risk](Dependency-Risk#reliability-risk)):  
+ - [Reliability Risks](Dependency-Risk#reliability-risk):  
    - A data-centre going off-line, causing your customers to lose access.
    - A power cut causing backups to fail.
    - Not having enough desks for everyone to sit at.
    
- - Process Dependencies ([Process Risk](Process-Risk)):
+ - [Process Risks](Process-Risk):
    - Regulatory change, which means you have to adapt your business model.
    - Insufficient controls which means you don't notice when some transactions are failing, leaving you out-of-pocket.
    - Data loss because of bugs introduced during an untested release.
  
- - Software Dependencies ([Software Dependency Risk](Software-Dependency-Risk)):
-   - Hackers breaking into the system and bringing your service down.
+ - [Software Dependency Risk](Software-Dependency-Risk):
+   - Hackers exploit weaknesses in a piece of 3rd party software, bringing your service down.
  
  - Agency Dependencies ([Agency Risk](Agency-Risk)):
    - Suppliers deciding to stop supplying you with something you need.
    - Workers going on strike.
    - Employees trying to steal from the company (bad actors).
+   - Other crime, such as hackers stealing data.
 
 .. basically, a long laundry-list of everything that can go wrong due to operating in "The Real World".   
 
-So, [Operational Risk Management](https://en.wikipedia.org/wiki/Operational_risk_management) is the purview of dealing with all the types of issues listed above:
-
-> "Operational Risk Management is the oversight of Operational Risk, including the risk of loss resulting from inadequate or failed internal processes and systems; human factors; or external events." - [Operational Risk Management, _Wikipedia_](https://en.wikipedia.org/wiki/Operational_risk_management)
-
 ## Operations Management
 
-If we are designing a software system to "live" in the real world, we have to be mindful of the environment we're working in, and adapt our software and processes accordingly.   This view of the "wider" system is the discipline of Operations Management.  The below diagram (from ["Operations Management" by _Slack et al._](http://amzn.eu/d/b6ZjuMu)) breaks down some of the concerns of this discipline.
+If we are designing a software system to "live" in the real world, we have to be mindful of the environment we're working in, and craft our software and processes accordingly.   This view of the "wider" system is the discipline of Operations Management.  The below diagram (from ["Operations Management" by _Slack et al._](http://amzn.eu/d/b6ZjuMu)) breaks down some of the concerns of this discipline.
 
 ![A General Model of Operations Management](images/kite9/operations_management.png)
 
