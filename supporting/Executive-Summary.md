@@ -74,7 +74,7 @@ Although many developers have a methodology-of-choice, the argument here is that
 
 We have described a model of risk within software projects, looking something like this:
 
-![Methodologies, Risks, Practices](images/generated/pattern_language.png)
+![Methodologies, Risks, Practices](images/generated/executive-summary/pattern_language.png)
 
 How do we take this further?
 
