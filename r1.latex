@@ -101,8 +101,6 @@
 
 {\Huge\bfseries\textsc{Software Development}}\\[1\baselineskip]
 
-{\Huge\bfseries\textsc{De-Risked }}\\[2\baselineskip]
-
 {\Huge\textit{Volume 1: The Menagerie}}\\[4\baselineskip]
 
 {\Oldincludegraphics[width=0.5\textwidth]{images/R1_logo_grue.png}}\\[4\baselineskip]
@@ -195,7 +193,9 @@ and where of \emph{The Menagerie}.
 
 \begin{quotation}
 
-Scrum, Waterfall, Lean, Prince2: what do they all have in common?
+\begin{quote}
+``Scrum, Waterfall, Lean, Prince2: what do they all have in common?''
+\end{quote}
 
 \end{quotation}
 
@@ -462,18 +462,18 @@ On to The Executive Summary
 \section{1. There are Lots of Ways of Running Software
 Projects}\label{there-are-lots-of-ways-of-running-software-projects}}
 
-There are lots of different ways to look at a project. For example,
-metrics such as ``number of open tickets'', ``story points'', ``code
-coverage'' or ``release cadence'' give us a numerical feel for how
-things are going and what needs to happen next. We also judge the health
-of projects by the practices used on them - Continuous Integration, Unit
-Testing or Pair Programming, for example.
+There are lots of different ways to look at a project in-flight. For
+example, metrics such as ``number of open tickets'', ``story points'',
+``code coverage'' or ``release cadence'' give us a numerical feel for
+how things are going and what needs to happen next. We also judge the
+health of projects by the practices used on them, such as Continuous
+Integration, Unit Testing or Pair Programming.
 
 Software methodologies, then, are collections of tools and practices:
-``Agile'', ``Waterfall'', ``Lean'' or ``Phased Delivery'' (for example)
-all suggest different approaches to running a project, and are
-opinionated about the way they think projects should be done and the
-tools that should be used.
+``Agile'', ``Waterfall'', ``Lean'' or ``Phased Delivery'' all prescribe
+different approaches to running a project, and are opinionated about the
+way they think projects should be done and the tools that should be
+used.
 
 None of these is necessarily more ``right'' than another- they are
 suitable on different projects at different times.
@@ -485,7 +485,7 @@ job?}
 \section{2. We can Look at Projects in Terms of
 Risks}\label{we-can-look-at-projects-in-terms-of-risks}}
 
-One way to examine a project in-flight is by looking at the risks it
+One way to examine the project in-flight is by looking at the risks it
 faces.
 
 Commonly, tools such as RAID logs and RAG status reporting are used.
@@ -493,7 +493,7 @@ These techniques should be familiar to project managers and developers
 everywhere.
 
 However, the Risk-First view is that we can go much further: that each
-item of work being done on the project is mitigating a particular risk.
+item of work being done on the project is to manage a particular risk.
 Risk isn't something that just appears in a report, it actually drives
 \emph{everything we do}.
 
@@ -514,8 +514,8 @@ For example:
   elsewhere}.
 \end{itemize}
 
-\textbf{One assertion of Risk-First therefore, is that every action you
-take on a project is to mitigate some risk.}
+One assertion of Risk-First is that \textbf{every action you take on a
+project is to manage a risk.}
 
 \hypertarget{we-can-break-down-risks-on-a-project-methodically}{%
 \section{3. We Can Break Down Risks on a Project
@@ -533,11 +533,10 @@ For example:
   In manufacturing, \emph{tolerances} allow for calculating the
   likelihood of defects in production.
 \item
-  In finance, reserves are commonly set aside for the risks of
-  stock-market crashes, and teams are structured around monitoring these
-  different risks.
+  In finance, projects and teams are structured around monitoring risks
+  like \emph{credit risk}, \emph{market risk} and \emph{liquidity risk}.
 \item
-  The insurance industry is founded on identifying particular risks and
+  \emph{Insurance} is founded on identifying particular risks and
   providing financial safety-nets for when they occur, such as death,
   injury, accident and so on.
 \end{itemize}
@@ -546,7 +545,7 @@ Software risks are difficult to quantify, and mostly, the effort
 involved in doing so \emph{exactly} would outweigh the benefit.
 Nevertheless, there is value in spending time building
 \emph{classifications of risk for software}. That's what Risk-First
-does: describes the set of \emph{risk patterns} we see every day on
+does: it describes a set of \emph{risk patterns} we see every day on
 software projects.
 
 With this in place, we can:
@@ -557,16 +556,16 @@ With this in place, we can:
   Talk about the types of risks we face on our projects, using an
   appropriate language.
 \item
-  Expose Hidden Risks that we hadn't considered before.
+  Anticipate Hidden Risks that we hadn't considered before.
 \item
   Weigh the risks against each other, and decide which order to tackle
   them.
 \end{itemize}
 
-\hypertarget{we-can-analyse-tools-and-techniques-in-terms-of-how-they-mitigate-risk}{%
-\section{4. We Can Analyse Tools and Techniques in Terms of how they
-Mitigate
-Risk}\label{we-can-analyse-tools-and-techniques-in-terms-of-how-they-mitigate-risk}}
+\hypertarget{we-can-analyse-tools-and-techniques-in-terms-of-how-they-manage-risk}{%
+\section{4. We can Analyse Tools and Techniques in Terms of how they
+Manage
+Risk}\label{we-can-analyse-tools-and-techniques-in-terms-of-how-they-manage-risk}}
 
 If we accept the assertion above that \emph{all} the actions we take on
 a project are about mitigating risks, then it stands to reason that the
@@ -578,25 +577,26 @@ For example:
 \begin{itemize}
 \tightlist
 \item
-  If we do a Code Review, we are partly trying to mitigate the risks of
-  bugs slipping through into production, and also mitigate the Key-Man
+  If we do a Code Review, we are partly trying to minimise the risks of
+  bugs slipping through into production, and also manage the Key-Man
   Risk of knowledge not being widely-enough shared.
 \item
-  If we write Unit Tests, we're also mitigating the risk of bugs going
-  to production, but we're also mitigating against future changes
-  breaking our existing functionality.
+  If we write Unit Tests, we're addressing the risk of bugs going to
+  production, but we're also mitigating against the risk of
+  \emph{regression}, and future changes breaking our existing
+  functionality.
 \item
   If we enter into a contract with a supplier, we are mitigating the
   risk of the supplier vanishing and leaving us exposed. With the
   contract in place, we have legal recourse against this risk.
 \end{itemize}
 
-\textbf{Different tools are appropriate for mitigating different types
-of risks.}
+From the above examples, it's clear that \textbf{different tools are
+appropriate for managing different types of risks.}
 
-\hypertarget{different-methodologies-for-different-risk-profiles}{%
-\section{5. Different Methodologies for Different Risk
-Profiles}\label{different-methodologies-for-different-risk-profiles}}
+\hypertarget{different-methodologies-are-for-different-risk-profiles}{%
+\section{5. Different Methodologies are for Different Risk
+Profiles}\label{different-methodologies-are-for-different-risk-profiles}}
 
 In the same way that our tools and techniques are appropriate to dealing
 with different risks, the same is true of the methodologies we use on
@@ -608,52 +608,58 @@ For example:
 \begin{itemize}
 \tightlist
 \item
-  \textbf{Agile} methodologies prioritise mitigating the risk that
-  requirements capture is complicated, error-prone and that requirements
-  change easily.
+  \textbf{Agile} methodologies prioritise the risk that requirements
+  capture is complicated, error-prone and that requirements change
+  easily.
 \item
-  \textbf{Waterfall} takes the view that coding effort is an expensive
-  risk, and that we should build plans up-front to avoid it.
+  \textbf{Waterfall} takes the view that development effort is an
+  expensive risk, and that we should build plans up-front to avoid
+  re-work.
 \item
   \textbf{Lean} takes the view that risk lies in incomplete work and
-  wasted work, and aims to minimize that.
+  wasted work, and aims to minimise that.
 \end{itemize}
 
 Although many developers have a methodology-of-choice, the argument here
-is that there are tradeoffs with all of these choices. Methodologies are
-like \emph{bicycles}, rather than \emph{religions}. Rather than simply
-\emph{believing}, we can take them apart and see how they work.
+is that there are tradeoffs with all of these choices.
 
-\textbf{We can place methodologies within a framework, and show how
-choice of methodology is contingent on the risks faced.}
+\begin{quotation}
 
-\hypertarget{driving-development-with-a-risk-first-perspective}{%
-\section{6. Driving Development With a Risk-First
-Perspective}\label{driving-development-with-a-risk-first-perspective}}
+\begin{quote}
+``Methodologies are like \emph{bicycles}, rather than \emph{religions}.
+Rather than simply \emph{believing}, we can take them apart and see how
+they work. ''
+\end{quote}
+
+\end{quotation}
+
+\hypertarget{we-can-drive-development-with-a-risk-first-perspective}{%
+\section{6. We can Drive Development With a Risk-First
+Perspective}\label{we-can-drive-development-with-a-risk-first-perspective}}
 
 We have described a model of risk within software projects, looking
 something like this:
 
 \begin{figure}
 \centering
-\includegraphics{images/generated/pattern_language-400dpi.png}
-\caption{Methdologies, Risks, Practices}
+\includegraphics{images/generated/executive-summary/pattern_language-400dpi.png}
+\caption{Methodologies, Risks, Practices}
 \end{figure}
 
 How do we take this further?
 
-The first idea we explore is that of the Risk Landscape: Although the
-software team can't remove risk from their project, they can take
-actions that move them to a place in the Risk Landscape where the risks
-on the project are more favourable than where they started.
+One idea explored is the \emph{Risk Landscape}: Although the software
+team can't remove risk from their project, they can take actions that
+move them to a place in the Risk Landscape where the risks on the
+project are more favourable than where they started.
 
 From there, we examine basic risk archetypes you will encounter on the
 software project, to build up a Taxonomy of Software Risk, and look at
 which specific tools you can use to mitigate each kind of risk.
 
-Then, we look at different software practices, and how they mitigate
+Then, we look at different software practices, and how they manage
 various risks. Beyond this we examine the question: \emph{how can a
-Risk-First approach inform the use of this technique?}
+Risk-First approach inform the use of this practice?}
 
 For example:
 
@@ -665,7 +671,7 @@ For example:
   control, information sharing) with the risks it \emph{introduces}
   (delays and process bottlenecks).
 \item
-  If we have \textbf{Redundant Systems}, this mitigates the risk of a
+  If we build in \textbf{Redundancy}, this mitigates the risk of a
   \emph{single point of failure}, but introduces risks around
   \emph{synchronizing data} and \emph{communication} between the
   systems.
@@ -677,7 +683,7 @@ For example:
 \end{itemize}
 
 Risk-First aims to provide a framework in which we can \emph{analyse
-these choices} and weigh up \emph{accepting} versus \emph{mitigating}
+these actions} and weigh up \emph{accepting} versus \emph{mitigating}
 risks.
 
 \textbf{Still interested? Then dive into reading the introduction.}
@@ -1426,8 +1432,10 @@ Let's try and put the following Risk into the RAID Log:
 
 \begin{quotation}
 
-Debbie needs to visit the client to get them to choose the logo to use
-on the product, otherwise we can't size the screen areas exactly.
+\begin{quote}
+``Debbie needs to visit the client to get them to choose the logo to use
+on the product, otherwise we can't size the screen areas exactly.''
+\end{quote}
 
 \end{quotation}
 
@@ -2348,10 +2356,10 @@ useful terms for thinking about risk.
 \hypertarget{de-risking}{%
 \chapter{De Risking}\label{de-risking}}
 
-As we saw in A Conversation, it's important not only to consider the
-Attendant Risks you're trying to mitigate, but the ones you're likely to
-pick up in the process. This means picking a careful path through the
-Risk Landscape. This is the essence of \emph{De-Risking}.
+It's important not only to consider the Attendant Risks you're trying to
+mitigate, but the ones you're likely to pick up in the process. This
+means picking a careful path through the Risk Landscape. This is the
+essence of \emph{De-Risking}.
 
 \begin{quotation}
 
@@ -2366,19 +2374,19 @@ Some simple examples of this might be:
 \begin{itemize}
 \tightlist
 \item
-  \textbf{Safety-nets and ropes} De-Risk climbing. But, the activity of
+  \textbf{Safety-nets and ropes} de-risk climbing. But, the activity of
   climbing itself is otherwise much unchanged.
 \item
-  \textbf{Backups and Source-Control} De-Risk the development process by
+  \textbf{Backups and Source-Control} de-risk the development process by
   reducing the impact of computer failure. Our process is changed
   \emph{slightly} by this imposition, but we're not massively
   inconvenienced.
 \item
-  \textbf{Insurance} De-Risks owning a house, or going on holiday or
+  \textbf{Insurance} de-risks owning a house, going on holiday or
   driving a car. Usually, the payment is small enough not to impact us
   too much.
 \item
-  \textbf{The National Health Service (NHS)} De-Risks medical expense by
+  \textbf{The National Health Service (NHS)} de-risks medical expense by
   pooling health-care costs across the entire population. If you were
   struck down with a debilitating illness, then at least you wouldn't
   also have to pay to get better.
@@ -2472,15 +2480,19 @@ would be a nice problem to have''. For example:
 
 \begin{quotation}
 
-Running out of space in the database would be a nice problem to have,
-because it would mean we have lots of users
+\begin{quote}
+``Running out of space in the database would be a nice problem to have,
+because it would mean we have lots of users''
+\end{quote}
 
 \end{quotation}
 
 \begin{quotation}
 
-Users complaining about lacking function X would be a nice problem to
-have, because it would mean they were using the system
+\begin{quote}
+``Users complaining about lacking function X would be a nice problem to
+have, because it would mean they were using the system''
+\end{quote}
 
 \end{quotation}
 
@@ -2591,8 +2603,8 @@ In the next chapter we will see an example of this in action.
 After so much theory, it seems like it's time to look at how we can
 apply these principles in the real world.
 
-The following is based the summary of an issue from just a few weeks
-ago. It's heavily edited and anonymized, and I've tried to add the
+The following is based the summary of a real issue around the time of
+writing. It's heavily edited and anonymized, and I've tried to add the
 Risk-First vocabulary along the way, but otherwise, it's real.
 
 Some background: \textbf{Synergy} is an online service with an
@@ -2600,9 +2612,9 @@ app-store, and \textbf{Eve} and \textbf{Bob} are developers working for
 \textbf{Large Corporation LTD}, which wants to have an application
 accepted into Synergy's app-store.
 
-Synergy's release means that the app-store refresh will happen in a few
-weeks, so this is something of a hard deadline: if we miss it, the next
-release will be four months away.
+Synergy's release process means that the app-store submission must
+happen in a few weeks, so this is something of a hard deadline: if we
+miss it, the next opportunity for release will be four months away.
 
 \hypertarget{a-risk-conversation}{%
 \section{A Risk Conversation}\label{a-risk-conversation}}
@@ -2620,13 +2632,13 @@ Server, but we all felt it was pretty risky. We decided that in order to
 flush out Hidden Risk, we'd upgrade our entire production site to use it
 \emph{now}, rather than wait for the app launch.
 
-\textbf{Eve}: Right, and it \emph{did} flush out Hidden Risk: some
-people using Windows 7, downloading Excel spreadsheets on the site,
-couldn't download them: for some reason, that combination didn't support
-anything greater than TLS version 1.0. So, we had to back it out.
+\textbf{Eve}: Right, and it \emph{did} flush out Hidden Risk: some of
+our existing software broke on Windows 7, which sadly we still need to
+support. So, we had to back it out.
 
 \textbf{Bob}: Ok, well I guess it's good we found out \emph{now}. It
-would have been a disaster to discover this after the go-live.
+would have been a disaster to discover this after the app had gone live
+on Synergy's app-store.
 
 \textbf{Eve}: Yes. So, what's our next-best action to mitigate this?
 
@@ -2639,10 +2651,11 @@ content, and one for our new Synergy app? We'd have to get a new
 external IP address, handle DNS setup, change the firewalls, and then
 deploy a new version of the Web Server software on the production boxes.
 
-\textbf{Bob}: This feels like there'd be a lot of Attendant Risk: and
-all of this needs to be handled by the Networking Team, so we're picking
-up a lot of Bureaucracy Risk. I'm also worried that there are too many
-steps here, and we're going to discover loads of Hidden Risks as we go.
+\textbf{Bob}: This feels like there'd be a lot of Attendant Risk: we're
+adding Complexity Risk to our estate, and all of this needs to be
+handled by the Networking Team, so we're picking up a lot of Bureaucracy
+Risk. I'm also worried that there are too many steps here, and we're
+going to discover loads of Hidden Risks as we go.
 
 \textbf{Eve}: Well, you're correct on the first one. But, I've done this
 before not that long ago for a Chinese project, so I know the process -
@@ -2655,15 +2668,15 @@ do? Maybe some settings in the Web Server?
 this. But, we're using Baroque Web Server, and it \emph{might} support
 it, but the documentation isn't very clear.
 
-\textbf{Bob}: OK, and upgrading it is a \emph{big} risk, right? We'd
-have to migrate all of our configuration\ldots{}
+\textbf{Bob}: OK, and upgrading to Apache is a \emph{big} risk, right?
+We'd have to migrate all of our configuration\ldots{}
 
-\textbf{Eve}: Yes, let's not go there. But if we changing the settings
-on Baroque, we have the Attendant Risk that it's not supported by the
-software and we're back where we started. Also, if we isolate the
-Synergy app stuff now, we can mess around with it at any point in
-future, which is a big win in case there are other Hidden Risks with the
-security changes that we don't know about yet.
+\textbf{Eve}: Yes, let's not go there. So, \emph{changing} the settings
+on Baroque, we have the risk that it's not supported by the software and
+we're back where we started. Also, if we isolate the Synergy app stuff
+now, we can mess around with it at any point in future, which is a big
+win in case there are other Hidden Risks with the security changes that
+we don't know about yet.
 
 \textbf{Bob}: OK, I can see that buys us something, but time is really
 short and we have holidays coming up.
@@ -2672,7 +2685,7 @@ short and we have holidays coming up.
 and review next week? If it's working out, then great, we continue with
 it. Otherwise, if we're not making progress next week, then it'll be
 because our isolation solution is meeting more risk than we originally
-thought. We can try the settings change in that case.
+thought. In that case, we can attempt the settings change instead.
 
 \textbf{Bob}: Fair enough, it sounds like we're managing the risk
 properly, and because we can hand off a lot of this to the Networking
@@ -2681,19 +2694,6 @@ authentication problem, in the meantime.
 
 \textbf{Eve}: Right. I'll check in with the Networking Team each day and
 make sure it doesn't get forgotten.
-
-\hypertarget{aftermath}{%
-\section{Aftermath}\label{aftermath}}
-
-Hopefully, this type of conversation will feel familiar. It should.
-There's nothing ground-breaking at all in what we've covered so far;
-it's more-or-less just Risk Management theory.
-
-If you can now apply it in conversation, like we did above, then that's
-one extra tool you have for delivering software.
-
-So with the groundwork out of the way, let's get on to Part 2 and
-investigate The Risk Landscape.
 
 \hypertarget{isnt-it-obvious}{%
 \section{Isn't It Obvious?}\label{isnt-it-obvious}}
@@ -2716,21 +2716,8 @@ methodologies of software development. Further, while it is obvious,
 there is a huge hole: Successful De-Risking depends heavily on
 individual experience and talent.
 
-If there are three take-aways from Risk-First, it is these:
-
-\begin{itemize}
-\tightlist
-\item
-  Concentrate on Risks, not Goals (goals are risks in disguise, anyway)
-\item
-  Every action you take is De-Risking \emph{something} (or should be)
-\item
-  tbd.
-\end{itemize}
-
-Risk-First has stressed the existence of Hidden Risk over and again, but
-\emph{it's only hidden if you're not expecting it}. In part 2, we are
-going to look at all the places where Hidden Risk lives.
+In the next chapter, we are going to briefly look at software
+methodology, and how it comes up short in when addressing risk.
 
 \part{Risk}
 
@@ -2786,11 +2773,11 @@ useful:
   Deadline Risk, if we can put a date on something, we can mitigate lots
   of Coordination Risk. Having a \emph{release date} for a product
   allows whole teams of people to coordinate their activities in ways
-  that hugely reduce the need for Communication. Much like ``attack at
-  dawn'' allows disparate units of an army to avoid lots of the
-  Coordination Risk inherent in ``attack on my signal''. This is a
-  \emph{good reason for estimating}, because by using events you are
-  mitigating risk. This is often called a \emph{hard deadline}.
+  that hugely reduce the need for Communication. ``Attack at dawn''
+  allows disparate army units to avoid the Coordination Risk inherent in
+  ``attack on my signal''. This is a \emph{good reason for estimating},
+  because by using events you are mitigating Coordination Risk. This is
+  often called a \emph{hard deadline}.
 \item
   \textbf{To allow for the estimation of the Pay-Off of an action.} This
   is a \emph{bad reason for estimating}, as we will discuss in detail
@@ -2813,12 +2800,49 @@ about 30\% and not decreasing over time.''
 \sourceatright{\href{https://en.m.wikipedia.org/wiki/Software_development_effort_estimation}{\textemdash  Software Development Effort Estimation, \emph{Wikipedia}}.}
 \end{quotation}
 
+In their research ``Anchoring and Adjustment in Software Estimation'',
+\href{http://www.cs.toronto.edu/\%7Esme/papers/2005/ESEC-FSE-05-Aranda.pdf}{Aranda
+and Easterbrook} asked developers split into three groups (A, B and
+Control) to give individual estimates on how long a piece of software
+would take to build. They were each given the same specification.
+However:
+
+\begin{itemize}
+\tightlist
+\item
+  Group A was given the hint: ``I admit I have no experience with
+  software, but I guess it will take about two months to finish''.
+\item
+  Group B were given the same hint, except with \emph{20} months.
+\end{itemize}
+
+How long would members of each group estimate the work to take? The
+results were startling. On average:
+
+\begin{itemize}
+\tightlist
+\item
+  Group A estimated 5.1 months.
+\item
+  The Control Group estimated 7.8 months.
+\item
+  Group B estimated 15.4 months.
+\end{itemize}
+
+The anchor mattered more than experience, how formal the estimation
+method, or \emph{anything else}. \emph{We can't estimate time at all}.
+
+\hypertarget{is-risk-to-blame}{%
+\section{Is Risk To Blame?}\label{is-risk-to-blame}}
+
 Why is it so bad? The problem with a developer answering a question such
 as:
 
 \begin{quotation}
 
-How long will it take to deliver X?
+\begin{quote}
+``How long will it take to deliver X?''
+\end{quote}
 
 \end{quotation}
 
@@ -2850,12 +2874,13 @@ Is the following:
 The reason the estimate of \emph{time} is wrong is because All Activity
 Is About Mitigating Risk and the estimate of \emph{risk} is wrong.
 
-It's a problem as old as software itself, and in deference to that,
-let's examine the estimating problem via some ``Old Saws''.
+So what are we to do? It's a problem as old as software itself, and in
+deference to that, let's examine the estimating problem via some ``Old
+Saws''.
 
-\hypertarget{old-saw-1-the-10x-developer}{%
-\section{Old Saw \#1: The ``10X
-Developer''}\label{old-saw-1-the-10x-developer}}
+\hypertarget{old-saw-no.1-the-10x-developer}{%
+\section{Old Saw No.~1: The ``10X
+Developer''}\label{old-saw-no.1-the-10x-developer}}
 
 \begin{quotation}
 
@@ -2876,8 +2901,8 @@ Let's try and pull this apart:
   about taking action to \emph{transform} our current position on the
   Risk Landscape to a position of more favourable risk. A ``10X
   Developer'' then must be able to take actions that have much higher
-  Pay-Off than a ``1X Developer''. That is mitigating more Initial Risk,
-  and generating less Attendant Risk.
+  Pay-Off than a ``1X Developer''. That is, mitigating more existing
+  risk, and generating less Attendant Risk.
 \item
   It stands to reason then, that someone taking action \emph{faster}
   will leaving us with less Schedule Risk.
@@ -2903,11 +2928,11 @@ Let's try and pull this apart:
 \caption{1x Task vs 10X Task}
 \end{figure}
 
-Debate rages as to whether the ``10X Developer'' even exists. Crucially,
-it would seem that such a thing would be predicated on the existence of
-the ``1X Developer'', who gets ``1x'' worth of work done each day. It's
-not clear that there is any such thing as an average developer who is
-mitigating risk at an average rate.
+Does the ``10X Developer'' even exist? Crucially, it would seem that
+such a thing would be predicated on the existence of the ``1X
+Developer'', who gets ``1X'' worth of work done each day. It's not clear
+that there is any such thing as an average developer who is mitigating
+risk at an average rate.
 
 Even good developers have bad days, weeks or projects. Taking Action is
 like placing a bet. Sometimes you lose and the Pay-Off doesn't appear:
@@ -2925,27 +2950,33 @@ like placing a bet. Sometimes you lose and the Pay-Off doesn't appear:
   wrong, leading to a lengthy engagement with the infrastructure team.
 \end{itemize}
 
-\hypertarget{how-to-be-a-10x-developer}{%
-\subsection{How to Be a ``10X
-Developer''}\label{how-to-be-a-10x-developer}}
-
-The easiest way to be a ``10X developer'' is to have \emph{done the job
-before}. If you're coding in a familiar language, with familiar
+The easiest way to be the ``10X developer'' is to have \emph{done the
+job before}. If you're coding in a familiar language, with familiar
 libraries and tools, delivering a cookie-cutter solution to a problem in
 the same manner you've done several times before, then you will be a
-``10X developer'' compared to \emph{you doing it the first time}: -
-There's no Learning Curve Risk, because you already learnt everything. -
-There's no Dead End Risk because you already know all the right choices
-to make.
+``10X Developer'' compared to \emph{you doing it the first time}:
 
-\hypertarget{old-saw-2-quality-speed-cost-pick-any-two}{%
-\section{Old Saw \#2: Quality, Speed, Cost: Pick Any
-Two}\label{old-saw-2-quality-speed-cost-pick-any-two}}
+\begin{itemize}
+\tightlist
+\item
+  There's no Learning Curve Risk, because you already learnt everything.
+\item
+  There's no Dead End Risk because you already know all the right
+  choices to make.
+\end{itemize}
+
+\hypertarget{old-saw-no.2-quality-speed-cost-pick-any-two}{%
+\section{Old Saw No.~2: Quality, Speed, Cost: Pick Any
+Two}\label{old-saw-no.2-quality-speed-cost-pick-any-two}}
 
 \begin{quotation}
 
-The Project Management Triangle (called also the Triple Constraint, Iron
-Triangle and ``Project Triangle
+\begin{quote}
+``The Project Management Triangle (called also the Triple Constraint,
+Iron Triangle and Project Triangle) is a model of the constraints of
+project management. While its origins are unclear, it has been used
+since at least the 1950s. It contends that:
+\end{quote}
 
 \end{quotation}
 
@@ -2982,12 +3013,11 @@ Risk then that leaves us with a lot of risks unaccounted for:
   screens that \emph{do nothing} (accruing \_stunning levels of
   Implementation Risk as I go).
 \item
-  Or, by relying on a lottery win, project's budget is fine. (Although I
-  would have \emph{huge} Funding Risk because \emph{what are the chances
-  of winning the lottery?}. (You can bring in \emph{any} project at
-  \emph{any} time by accepting crazy levels of risk.
+  Or, by assuming a lottery win, the project's budget is fine. (Although
+  I would have \emph{huge} Funding Risk because \emph{what are the
+  chances of winning the lottery?}.
 \item
-  And Brooks' Law contradicts this by saying you can't trade budget for
+  Brooks' Law contradicts this by saying you can't trade budget for
   deadlines:
 \end{itemize}
 
@@ -3006,9 +3036,9 @@ makes it later``.
 \caption{Brooks' Law, Risk-First Style}
 \end{figure}
 
-Focusing on just these three variables isn't enough. You can game these
-variables by sacrificing others: we need to be looking at the project's
-risk \emph{holistically}:
+Focusing on the three variables of the iron triangle isn't enough. You
+can game these variables by sacrificing others: we need to be looking at
+the project's risk \emph{holistically}.
 
 \begin{itemize}
 \tightlist
@@ -3026,16 +3056,21 @@ risk \emph{holistically}:
   moved on and needs different features.
 \end{itemize}
 
-\hypertarget{old-saw-3-parkinsons-law}{%
-\subsection{Old Saw \#3: Parkinson's
-Law}\label{old-saw-3-parkinsons-law}}
+\hypertarget{old-saw-no.3-parkinsons-law}{%
+\subsection{Old Saw No.~3: Parkinson's
+Law}\label{old-saw-no.3-parkinsons-law}}
 
-We've already looked at Parkinson's Law in Agency Risk, but lets recap:
+We've already looked at Parkinson's Law in the chapter on Agency Risk,
+but lets recap:
 
 \begin{quotation}
 
-Parkinson's law is the adage that `work expands so as to fill the time
-available for its completion'.
+\begin{quote}
+``Parkinson's law is the adage that `work expands so as to fill the time
+available for its completion'.''
+\href{https://en.wikipedia.org/wiki/Parkinsons_law}{Parkinson's Law,
+\emph{Wikipedia}}
+\end{quote}
 
 \end{quotation}
 
@@ -3043,7 +3078,7 @@ Let's leave aside the Agency Risk concerns this time. Instead, let's
 consider this from a Risk-First perspective. \emph{Of course} work would
 expand to fill the time available: \emph{Time available} is an
 \emph{absence of Schedule Risk}, it's always going to be sensible to
-accept Schedule Risk as a trade-off for other more serious risks.
+exchange free time to reduce more serious risks.
 
 This is why projects will \emph{always} take at least as long as is
 budgeted for them.
@@ -3058,10 +3093,12 @@ the schedule with Bill, the project sponsor:
 
 \begin{quotation}
 
-I think it will take about 9 months, but that's just a rough estimate at
-this point," Carl said. ``That's not going to work,'' Bill said. ``I was
-hoping you'd say 3 or 4 months. We absolutely need to bring that system
-in within 6 months. Can you do it in 6?
+\begin{quote}
+``I think it will take about 9 months, but that's just a rough estimate
+at this point,'' Carl said. ``That's not going to work,'' Bill said. ``I
+was hoping you'd say 3 or 4 months. We absolutely need to bring that
+system in within 6 months. Can you do it in 6?'' \texttt{(1)}
+\end{quote}
 
 \end{quotation}
 
@@ -3102,11 +3139,11 @@ and your team are going to work 60 hours a week until you deliver!''
 \texttt{(3)}
 \end{quote}
 
-At point \texttt{(3)}, after the schedule slips again, Bill threatens
-Carl's job. Why does he do this? Because \emph{he doesn't trust Carl's
-evaluation of the Schedule Risk}. By telling Carl that it's his job on
-the line, he makes sure Carl appreciates the Schedule Risk. However,
-forcing staff to do overtime is a dangerous ploy: it could
+At point \texttt{(3)}, the schedule has slipped again, and Bill has
+threatened Carl's job. Why did he do this? Because \emph{he doesn't
+trust Carl's evaluation of the Schedule Risk}. By telling Carl that it's
+his job on the line, he makes sure Carl appreciates the Schedule Risk.
+However, forcing staff to do overtime is a dangerous ploy: it could
 disenfranchise the staff, or cause corners to be cut:
 
 \begin{figure}
@@ -3171,12 +3208,12 @@ work.''
 \end{quotation}
 
 Second, the strategy of picking the two-day action with the greatest
-Pay-Off is \emph{often good}. After all, this is just
+Pay-Off is \emph{often good}. (After all, this is just
 \href{https://en.wikipedia.org/wiki/Gradient_descent}{Gradient Descent},
 and that's a perfectly good way for training
 \href{https://en.wikipedia.org/wiki/Machine_learning}{Machine Learning}
-systems. However, just like following a river downhill from the top of a
-mountain will \emph{often} get you to the sea, it probably won't take
+systems.) However, just like following a river downhill from the top of
+a mountain will \emph{often} get you to the sea, it probably won't take
 the shortest path, and sometimes you'll get stuck at a lake.
 
 The choice of using gradient descent means that you have given up on
@@ -3186,7 +3223,7 @@ planned economy and a market economy. But, we don't live in
 \emph{either}: everyone lives in some mixture of the two: our
 governments \emph{have plans} for big things like roads and hospitals,
 and taxes. Other stuff, they leave to the whims of supply and demand. A
-project always ends up being the same.
+project ends up being the same.
 
 \hypertarget{risk-first-estimating}{%
 \section{Risk-First Estimating}\label{risk-first-estimating}}
@@ -3196,22 +3233,20 @@ Let's figure out what we can take away from the above experiences:
 \begin{itemize}
 \tightlist
 \item
-  The 10X developer saw, and the difference made by experience implies
-  that a lot of the effort on a project comes from Learning Curve Risk
-  and Dead End Risk.
+  \textbf{From the ``10X Developer'' Saw:} the difference made by
+  experience implies that a lot of the effort on a project comes from
+  Learning Curve Risk and Dead End Risk.
 \item
-  The lesson from ``Quality, Speed, Cost'' is that actually, we need to
-  be considering \emph{all} risks, not just some arbitrary milestones on
-  a project plan. Project plans can always be gamed, and you can always
-  leave risks unaccounted for in order to hit the goals (good old Map
-  and Territory Risk strikes again).
+  \textbf{From ``Quality, Speed, Cost'':} we need to be considering
+  \emph{all} risks, not just some arbitrary milestones on a project
+  plan. Project plans can always be gamed, and you can always leave
+  risks unaccounted for in order to hit the goals.
 \item
-  The lesson from the Parkinson's Law was that by giving people a
-  \emph{time budget}, you absolve them from Schedule Risk\ldots{} at
-  least until they realise they're going to overrun. This gives them one
-  less dimension of risk to worry about, but means they end up taking
-  all the time you give them, because they are optimising over the
-  remaining risks.
+  \textbf{From the Parkinson's Law:} giving people a \emph{time budget},
+  you absolve them from Schedule Risk\ldots{} at least until they
+  realise they're going to overrun. This gives them one less dimension
+  of risk to worry about, but means they end up taking all the time you
+  give them, because they are optimising over the remaining risks.
 \item
   Finally, the lesson from Agile Estimation is that \emph{just
   iterating} is sometimes not as efficient as \emph{using your intuition
@@ -3227,8 +3262,7 @@ something that makes more sense?
 Off}}{Tip \#1: Estimating Should be About Estimating Pay Off}}\label{tip-1-estimating-should-be-about-estimating-pay-off}}
 
 For a given action / road-map / business strategy, what Attendant Risks
-are we going to have when we get there? Yes, we'll all be older (there
-\emph{will be} Schedule Risk), but it's also about:
+are we going to have:
 
 \begin{itemize}
 \tightlist
@@ -3252,16 +3286,16 @@ it should be about surfacing and weighing up risks. e.g:
 \begin{itemize}
 \tightlist
 \item
-  ``I think this task is problematic because it's going to massively
-  increase our Dependency Risk to add a new database here.''
+  ``Adding this new database is problematic because it's going to
+  massively increase our Dependency Risk.''
 \item
   ``I don't think we should have component A interacting with component
   B because it'll introduce extra Communication Risk which we will
   always be tripping over.''
 \item
   ``I worry we might not understand what the sales team want and are
-  facing Implementation Risk. How about we try and get agreement on a
-  specification?''
+  facing Feature Implementation Risk. How about we try and get agreement
+  on a specification?''
 \end{itemize}
 
 \hypertarget{tip-2-the-risk-landscape-is-increasingly-complex-utilise-this}{%
@@ -3365,7 +3399,7 @@ Often, a \emph{strategy} will be broken up into multiple actions.
 Risk-First vocabulary and the best experience you can bring to bear,
 then, perform the actions which Pay Off the biggest risks first.
 
-As we saw from the ``10X Developer'' saw, Learning Curve Risk and Dead
+As we saw from the ``10X Developer'' Saw, Learning Curve Risk and Dead
 End Risk, are likely to be the biggest risks. How can we front-load this
 and tackle these earlier?
 
@@ -3387,6 +3421,8 @@ and tackle these earlier?
   \item
     Spike Solutions allow us to de-risk algorithms and approaches before
     making them part of the main development.
+  \item
+    Test the market with these and meet reality early.
   \end{itemize}
 \item
   Don't pick delivery dates far in the future. Collectively work out the
@@ -3434,29 +3470,36 @@ Let's get back to Bill and Carl. What went wrong between points
 
 \begin{quotation}
 
-I think it will take about 9 months, but that's just a rough estimate at
-this point," Carl said. ``That's not going to work,'' Bill said. ``I was
-hoping you'd say 3 or 4 months. I need to show the board something by
-then or I'm worried they will lose confidence in me and this project
+\begin{quote}
+``I think it will take about 9 months, but that's just a rough estimate
+at this point,'' Carl said. ``That's not going to work,'' Bill said. ``I
+was hoping you'd say 3 or 4 months. I need to show the board something
+by then or I'm worried they will lose confidence in me and this
+project''.
+\end{quote}
 
 \end{quotation}
 
 \begin{quotation}
 
-OK," said Carl. ``But I'm really concerned we have huge Feature Fit
+\begin{quote}
+``OK,'' said Carl. ``But I'm really concerned we have huge Feature Fit
 Risk. The task of understanding the requirements and doing the design is
-massive.
+massive.''
+\end{quote}
 
 \end{quotation}
 
 \begin{quotation}
 
-Well, in my head it's actually pretty simple, " said Bill. ``Maybe I
+\begin{quote}
+``Well, in my head it's actually pretty simple,'' said Bill. ``Maybe I
 don't have the full picture, or maybe your idea of what to build is more
 complex than I think it needs to be. That's a massive risk right there
 and I think we should try and mitigate it right now before things
 progress. Maybe I'll need to go back to the board if it's worse than I
-think.
+think.''
+\end{quote}
 
 \end{quotation}
 
@@ -3480,10 +3523,12 @@ meeting I wrote the following note:
 
 \begin{quotation}
 
-Spock estimates were 4, 11 and 22 until we broke it down into tasks.
+\begin{quote}
+``Spock estimates were 4, 11 and 22 until we broke it down into tasks.
 Now, estimates are above 55 for the whole piece. And worryingly, we
 probably don't have all the tasks. We know we need bulk uploads in
-November. Spock is January. So, do bulk uploads?
+November. Spock is January. So, do bulk uploads?''
+\end{quote}
 
 \end{quotation}
 
@@ -3493,8 +3538,10 @@ However, the question should have been:
 
 \begin{quotation}
 
-If it was February now, and we'd \emph{got nothing done}, what would our
-biggest risk be?
+\begin{quote}
+``If it was February now, and we'd \emph{got nothing done}, what would
+our biggest risk be?''
+\end{quote}
 
 \end{quotation}
 
