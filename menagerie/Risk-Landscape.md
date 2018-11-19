@@ -1,5 +1,15 @@
 ![For Review](images/state/for-review.png)
 
+
+## Why Should We Categorise The Risks?
+
+This is a "spotters' guide" to risks, not an in-depth encyclopedia.  <!-- tweet-end -->
+
+If we were studying insects, this might be a guide giving you a description and a picture of each insect, telling you where to find it and what it does.  <!-- tweet-end --> That doesn't mean that this is _all_ there is to know.  Just as a scientist could spend her entire life studying a particular species of bee, each of the risks we'll look at really has a whole sub-discipline of Computer Science attached to it, which we can't possibly hope to cover all of.  
+
+As software developers, we can't hope to know the detailed specifics of the whole discipline of [Complexity Theory](https://en.wikipedia.org/wiki/Complexity_theory), or [Concurrency Theory](https://en.wikipedia.org/wiki/Concurrency_(computer_science)).  But, we're still required to operate in a world where these things exist.  So, we may as well get used to them, and ensure that we respect their primacy.  We are operating in _their_ world, so we need to know the rules.
+
+
 Risk is messy.  It's not always easy to tease apart the different components of risk and look at them individually.<!-- tweet-end -->  Let's look at a high-profile recent example to see why.
 
 ## The Financial Crisis
@@ -42,14 +52,6 @@ In fact, we're going to try and categorise the kinds of things we see on this [R
  - One risk can "blend" into another just like sometimes a "field" is also a "car-park" or a building might contain some trees (but isn't a forest).
  - There is _correlation_ between different risks:  one risk may cause another, or two risks may be due to the same underlying cause.
  - As we saw in [Part 1](Home#Part-1-Introduction), mitigating one risk can give rise to another, so risks are often _inversely correlated_.
-
-## Why Should We Categorise The Risks?
-
-This is a "spotters' guide" to risks, not an in-depth encyclopedia.  <!-- tweet-end -->
-
-If we were studying insects, this might be a guide giving you a description and a picture of each insect, telling you where to find it and what it does.  <!-- tweet-end --> That doesn't mean that this is _all_ there is to know.  Just as a scientist could spend her entire life studying a particular species of bee, each of the risks we'll look at really has a whole sub-discipline of Computer Science attached to it, which we can't possibly hope to cover all of.  
-
-As software developers, we can't hope to know the detailed specifics of the whole discipline of [Complexity Theory](https://en.wikipedia.org/wiki/Complexity_theory), or [Concurrency Theory](https://en.wikipedia.org/wiki/Concurrency_(computer_science)).  But, we're still required to operate in a world where these things exist.  So, we may as well get used to them, and ensure that we respect their primacy.  We are operating in _their_ world, so we need to know the rules.
 
 ## We're all Naturalists Now
 
