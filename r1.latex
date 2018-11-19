@@ -71,6 +71,46 @@
 \usepackage{listings}
 \newcommand{\passthrough}[1]{#1}
 \lstnewenvironment{code}{\lstset{basicstyle=\small\ttfamily}}{}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 
 
 %Links as Notes
@@ -2721,6 +2761,2453 @@ methodology, and how it comes up short in when addressing risk.
 
 \part{Risk}
 
+\hypertarget{risk-landscape}{%
+\chapter{Risk Landscape}\label{risk-landscape}}
+
+\hypertarget{why-should-we-categorise-the-risks}{%
+\section{Why Should We Categorise The
+Risks?}\label{why-should-we-categorise-the-risks}}
+
+This is a ``spotters' guide'' to risks, not an in-depth encyclopedia.
+
+If we were studying insects, this might be a guide giving you a
+description and a picture of each insect, telling you where to find it
+and what it does. That doesn't mean that this is \emph{all} there is to
+know. Just as a scientist could spend her entire life studying a
+particular species of bee, each of the risks we'll look at really has a
+whole sub-discipline of Computer Science attached to it, which we can't
+possibly hope to cover all of.
+
+As software developers, we can't hope to know the detailed specifics of
+the whole discipline of
+\href{https://en.wikipedia.org/wiki/Complexity_theory}{Complexity
+Theory}, or
+\href{https://en.wikipedia.org/wiki/Concurrency_(computer_science)}{Concurrency
+Theory}. But, we're still required to operate in a world where these
+things exist. So, we may as well get used to them, and ensure that we
+respect their primacy. We are operating in \emph{their} world, so we
+need to know the rules.
+
+Risk is messy. It's not always easy to tease apart the different
+components of risk and look at them individually. Let's look at a
+high-profile recent example to see why.
+
+\hypertarget{the-financial-crisis}{%
+\section{The Financial Crisis}\label{the-financial-crisis}}
+
+In the \href{https://en.wikipedia.org/wiki/Financial_services}{Financial
+Services} industry, whole \emph{departments} exist to calculate things
+like:
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://en.wikipedia.org/wiki/Market_risk}{Market Risk}: the
+  risk that the amount some asset you hold/borrow/have loaned is going
+  to change in value.
+\item
+  \href{https://en.wikipedia.org/wiki/Credit_risk}{Credit Risk}: the
+  risk that someone who owes you a payment at a specific point in time
+  might not pay it back.
+\item
+  \href{https://en.wikipedia.org/wiki/Liquidity_risk}{Liquidity Risk}:
+  the risk that you can't find a market to sell/buy something, usually
+  leading to a shortage of ready cash.
+\end{itemize}
+
+\ldots{} and so on. But, we don't need to know the details exactly to
+understand this story.
+
+They get expressed in ways like this:
+
+\begin{quotation}
+
+\begin{quote}
+``we have a 95\% chance that today we'll lose less than £100''
+\end{quote}
+
+\end{quotation}
+
+In the financial crisis, though, these models of risk didn't turn out to
+be much use. Although there are lots of conflicting explanations of what
+happened, one way to look at it is this:
+
+\begin{itemize}
+\tightlist
+\item
+  Liquidity difficulties (i.e.~amount of cash you have for day-to-day
+  running of the bank) caused some banks to not be able to cover their
+  interest payments.
+\item
+  This caused credit defaults (the thing that Credit Risk measures were
+  meant to guard against) even though the banks \emph{technically} were
+  solvent.
+\item
+  That meant that, in time, banks got bailed out, share prices crashed
+  and there was lots of
+  \href{https://en.wikipedia.org/wiki/Quantitative_easing}{Quantitative
+  Easing}.
+\item
+  All of which had massive impacts on the markets in ways that none of
+  the Market Risk models foresaw.
+\end{itemize}
+
+All the Risks were
+\href{https://www.investopedia.com/terms/c/correlation.asp}{correlated}.
+That is, they were affected by the \emph{same underlying events}, or
+\emph{each other}.
+
+\hypertarget{the-risk-landscape-again}{%
+\section{The Risk Landscape Again}\label{the-risk-landscape-again}}
+
+It's like this with software risks, too, sadly.
+
+In Meeting Reality, we looked at the concept of the Risk Landscape, and
+how a software project tries to \emph{navigate} across this landscape,
+testing the way as it goes, and trying to get to a position of
+\emph{more favourable risk}.
+
+It's tempting to think of our Risk Landscape as being like a
+\href{https://en.wikipedia.org/wiki/Fitness_landscape}{Fitness
+Landscape}. That is, you have a ``cost function'' which is your height
+above the landscape, and you try and optimise by moving downhill in a
+\href{https://en.wikipedia.org/wiki/Gradient_descent}{Gradient Descent}
+fashion.
+
+However, there's a problem with this: As we said in Risk Theory, we
+don't have a cost function. We can only guess at what risks there are.
+And, we have to go on our \emph{experience}. For this reason, I prefer
+to think of the Risk Landscape as a terrain which contains \emph{fauna}
+and \emph{obstacles} (or, specifically Boundaries).
+
+I am going to try and show you some of the fauna of the Risk Landscape.
+We know every project is different, so every Risk Landscape is also
+different. But, just as I can tell you that the landscape outside your
+window will probably will have some roads, trees, fields, forests,
+buildings, and that the buildings are likely to be joined together by
+roads, I can tell you some general things about risks too.
+
+In fact, we're going to try and categorise the kinds of things we see on
+this Risk Landscape. But, this isn't going to be perfect:
+
+\begin{itemize}
+\tightlist
+\item
+  One risk can ``blend'' into another just like sometimes a ``field'' is
+  also a ``car-park'' or a building might contain some trees (but isn't
+  a forest).
+\item
+  There is \emph{correlation} between different risks: one risk may
+  cause another, or two risks may be due to the same underlying cause.
+\item
+  As we saw in Part 1, mitigating one risk can give rise to another, so
+  risks are often \emph{inversely correlated}.
+\end{itemize}
+
+\hypertarget{were-all-naturalists-now}{%
+\section{We're all Naturalists Now}\label{were-all-naturalists-now}}
+
+This is a new adventure. There's a long way to go. Just as naturalists
+are able to head out and find new species of insects and plants, we
+should expect to do the same. This is by no means a complete picture -
+it's barely a sketch.
+
+It's a big, crazy, evolving world of software. Help to fill in the
+details. Report back what you find.
+
+\hypertarget{our-tour-itinerary}{%
+\section{Our Tour Itinerary}\label{our-tour-itinerary}}
+
+Below is a table outlining the different risks we'll see. There
+\emph{is} an order to this: the later risks are written assuming a
+familiarity with the earlier ones. Hopefully, you'll stay to the end and
+see everything, but you're free to choose your own tour if you want to.
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+\begin{minipage}[b]{0.36\columnwidth}\raggedright
+Risk\strut
+\end{minipage} & \begin{minipage}[b]{0.58\columnwidth}\raggedright
+Description\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.36\columnwidth}\raggedright
+Feature Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.58\columnwidth}\raggedright
+When you haven't built features the market needs, or they contain bugs,
+or the market changes underneath you. \strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.36\columnwidth}\raggedright
+Communication Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.58\columnwidth}\raggedright
+Risks associated with getting messages heard and understood.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.36\columnwidth}\raggedright
+Complexity Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.58\columnwidth}\raggedright
+Your software is so complex it makes it hard to change, understand or
+run.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.36\columnwidth}\raggedright
+Dependency Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.58\columnwidth}\raggedright
+Risks of depending on other people, products, software, functions, etc.
+This is a general look at dependencies, before diving into specifics
+like\ldots{}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.36\columnwidth}\raggedright
+Scarcity Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.58\columnwidth}\raggedright
+Risks associated with having a dependency on time, money or some other
+limited resource.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.36\columnwidth}\raggedright
+Software Dependency Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.58\columnwidth}\raggedright
+When you choose to depend on a software library, service or
+function.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.36\columnwidth}\raggedright
+Process Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.58\columnwidth}\raggedright
+When you depend on a business process, or human process to give you
+something you need.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.36\columnwidth}\raggedright
+Boundary Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.58\columnwidth}\raggedright
+Risks due to making decisions that limit your choices later on.
+Sometimes, you go the wrong way on the Risk Landscape and it's hard to
+get back to where you want to be.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.36\columnwidth}\raggedright
+Agency Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.58\columnwidth}\raggedright
+Risks that staff have their own Goals, which might not align with those
+of the project or team.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.36\columnwidth}\raggedright
+Coordination Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.58\columnwidth}\raggedright
+Risks due to the fact that systems contain multiple agents, which need
+to work together.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.36\columnwidth}\raggedright
+Map And Territory Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.58\columnwidth}\raggedright
+Risks due to the fact that people don't see the world as it really is.
+(After all, they're working off different, imperfect Internal
+Models.)\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.36\columnwidth}\raggedright
+Operational Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.58\columnwidth}\raggedright
+Software is embedded in a system containing people, buildings, machines
+and other services. Operational risk considers this wider picture of
+risk associated with running a software service or business in the real
+world.\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+On each page we'll start by looking at the category of the risk \emph{in
+general}, and then break this down into some specific sub-types. At the
+end, in Staging and Classifying we'll have a recap about what we've seen
+and make some guesses about how things fit together.
+
+So, let's get started with Feature Risk.
+
+\hypertarget{feature-risk}{%
+\chapter{Feature Risk}\label{feature-risk}}
+
+Feature Risks are risks to do with functionality that you need to have
+in your software.
+
+As a simple example, if your needs are served perfectly by Microsoft
+Excel, then you don't have any Feature Risk. However, the day you find
+Microsoft Excel wanting, and decide to build an Add-On is the day when
+you first appreciate some Feature Risk.
+
+In a way, Feature Risk is very fundamental: if there were \emph{no}
+feature risk, the job would be done already, either by you, or by
+another product, and the product would be perfect!
+
+Not considering Feature Risk means that you might be building the wrong
+functionality, for the wrong audience or at the wrong time. And
+eventually, this will come down to lost money, business, acclaim, or
+whatever else reason you are doing your project for. So let's unpack
+this concept into some of it's variations.
+
+\hypertarget{feature-fit-risk}{%
+\section{Feature Fit Risk}\label{feature-fit-risk}}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/feature/feature-fit-risk-400dpi.png}
+\caption{Feature Risk}
+\end{figure}
+
+This is the one we've just discussed above - the feature that you (or
+your clients) want to use in the software \emph{isn't there}:
+
+\begin{itemize}
+\tightlist
+\item
+  This might manifest itself as complete \emph{absence} of something you
+  need, e.g ``Why is there no word count in this editor?''
+\item
+  It could be that the implementation isn't complete enough, e.g ``why
+  can't I add really long numbers in this calculator?''
+\end{itemize}
+
+Feature risks are mitigated by talking to clients and building things,
+which leads on to\ldots{}
+
+\hypertarget{implementation-risk}{%
+\section{Implementation Risk}\label{implementation-risk}}
+
+Feature Risk also includes things that don't work as expected: That is
+to say, \href{https://en.wikipedia.org/wiki/Software_bug}{bugs}.
+Although the distinction between ``a missing feature'' and ``a broken
+feature'' might be worth making in the development team, we can consider
+these both the same kind of risk: \emph{the software doesn't do what the
+user expects}.
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/feature/feature-implementation-risk-400dpi.png}
+\caption{Implementation Risk}
+\end{figure}
+
+At this point, it's worth pointing out that sometimes, \emph{the user
+expects the wrong thing}. This is a different but related risk, which
+could be down to training, documentation or simply a poor user
+interface. We'll look at that more in Communication Risk.
+
+\hypertarget{regression-risk}{%
+\section{Regression Risk}\label{regression-risk}}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/feature/feature-regression-risk-400dpi.png}
+\caption{Regression Risk}
+\end{figure}
+
+Regression Risk is the risk of breaking existing features in your
+software when you add new ones. As with the previous risks, the eventual
+result is the same; customers don't have the features they expect. This
+can become a problem as your code-base gains Complexity, as it becomes
+impossible to keep a complete Internal Model of the whole thing in your
+head.
+
+Delivering new features can delight your customers, breaking existing
+ones will annoy them. This is something we'll come back to in Reputation
+Risk.
+
+\hypertarget{conceptual-integrity-risk}{%
+\section{Conceptual Integrity Risk}\label{conceptual-integrity-risk}}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/feature/conceptual-integrity-risk-400dpi.png}
+\caption{Conceptual Integrity Risk}
+\end{figure}
+
+Sometimes, users \emph{swear blind} that they need some feature or
+other, but it runs at odds with the design of the system, and plain
+\emph{doesn't make sense}. Often, the development team can spot this
+kind of conceptual failure as soon as it enters the Backlog. Usually,
+it's in coding that this becomes apparent.
+
+Sometimes, it can go for a lot longer. I once worked on some software
+that was built as a score-board within a chat application. However,
+after we'd added much-asked-for commenting and reply features to our
+score-board, we realised we'd implemented a chat application
+\emph{within a chat application}, and had wasted our time enormously.
+
+\href{https://en.wikipedia.org/wiki/Feature_phone}{Feature Phones} are a
+real-life example: although it \emph{seemed} like the market wanted more
+and more features added to their phones,
+\href{https://en.wikipedia.org/wiki/IPhone}{Apple's iPhone} was able to
+steal huge market share by presenting a much more enjoyable, more
+coherent user experience, despite being more expensive and having fewer
+features. Feature Phones had been drowning in increasing Conceptual
+Integrity Risk without realising it.
+
+This is a particularly pernicious kind of Feature Risk which can only be
+mitigated by good Design. Human needs are fractal in nature: the more
+you examine them, the more complexity you can find. The aim of a product
+is to capture some needs at a \emph{general} level: you can't hope to
+anticipate everything.
+
+Conceptual Integrity Risk is the risk that chasing after features leaves
+the product making no sense, and therefore pleasing no-one.
+
+\hypertarget{feature-access-risk}{%
+\section{Feature Access Risk}\label{feature-access-risk}}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/feature/feature-access-risk-400dpi.png}
+\caption{Feature Access Risk}
+\end{figure}
+
+Sometimes, features can work for some people and not others: this could
+be down to
+\href{https://en.wikipedia.org/wiki/Accessibility}{Accessibility}
+issues, language barriers or localisation.
+
+You could argue that the choice of \emph{platform} is also going to
+limit access: writing code for XBox-only leaves PlayStation owners out
+in the cold. This is \emph{largely} Feature Access Risk, though
+Dependency Risk is related here.
+
+In Marketing, minimising Feature Access Risk is all about
+\href{https://en.wikipedia.org/wiki/Market_segmentation}{Segmentation}:
+trying to work out \emph{who} your product is for, and tailoring it to
+that particular market. For developers, increasing Feature Access means
+increasing complexity: you have to deliver the software on more
+platforms, localised in more languages, with different configurations of
+features. Mitigating Feature Access Risk therefore means increased
+effort and complexity (which we'll come to later).
+
+\hypertarget{market-risk}{%
+\subsection{Market Risk}\label{market-risk}}
+
+Feature Access Risk is related to Market Risk, which I introduced on the
+Risk Landscape page as being the value that the market places on a
+particular asset.
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/feature/market-risk-400dpi.png}
+\caption{Market Risk}
+\end{figure}
+
+\begin{quotation}
+
+``Market risk is the risk of losses in positions arising from movements
+in market prices.''
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Market_risk}{\textemdash  Market Risk, \emph{Wikipedia}}}
+\end{quotation}
+
+I face market risk when I own (i.e.~have a \emph{position} in) some
+\href{http://apple.com}{Apple} stock. Apple's's stock price will decline
+if a competitor brings out an amazing product, or if fashions change and
+people don't want their products any more.
+
+Since the product you are building is your asset, it makes sense that
+you'll face Market Risk on it: the \emph{market} decides what it is
+prepared to pay for this, and it tends to be outside your control.
+
+\hypertarget{feature-drift-risk}{%
+\section{Feature Drift Risk}\label{feature-drift-risk}}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/feature/feature-drift-risk-400dpi.png}
+\caption{Feature Drift Risk}
+\end{figure}
+
+\textbf{Feature Drift} is the tendency that the features people need
+\emph{change over time}. For example, at one point in time, supporting
+IE6 was right up there for website developers, but it's not really
+relevant anymore. Although that change took \emph{many} years to
+materialize, other changes are more rapid.
+
+The point is: Requirements captured \emph{today} might not make it to
+\emph{tomorrow}, especially in the fast-paced world of IT. This is
+partly because the market \emph{evolves} and becomes more discerning.
+This happens in several ways:
+
+\begin{itemize}
+\tightlist
+\item
+  Features present in competitor's versions of the software become
+  \emph{the baseline}, and they're expected to be available in your
+  version.
+\item
+  Certain ways of interacting become the norm (e.g.
+  \href{https://en.wikipedia.org/wiki/QWERTY}{querty} keyboards, or the
+  control layout in cars: these don't change with time).
+\item
+  Features decline in usefulness: \emph{Printing} is less important now
+  than it was, for example.
+\end{itemize}
+
+As we will see later in Boundary Risk, Feature Drift Risk is often a
+source of Complexity Risk, since you often need to add new features,
+while not dismantling old features as some users still need them.
+
+Feature Drift Risk is \emph{not the same thing} as \textbf{Requirements
+Drift}, which is the tendency projects have to expand in scope as they
+go along. There are lots of reasons they do that, a key one being the
+Hidden Risks uncovered on the project as it progresses.
+
+\hypertarget{fashion}{%
+\subsection{Fashion}\label{fashion}}
+
+Fashion plays a big part in IT, as this
+\href{https://designers.hubspot.com/blog/the-history-of-web-design-infographic}{infographic
+on website design shows}. True, web-sites have got easier to use as time
+has gone by, and users now expect this. Also, bandwidth is greater now,
+which means we can afford more media and code on the client side.
+However, \emph{fashion} has a part to play in this.
+
+By being \emph{fashionable}, web-sites are communicating: \emph{this is
+a new thing}, \emph{this is relevant}, \emph{this is not terrible}: all
+of which is mitigating a Communication Risk. Users are all-too-aware
+that the Internet is awash with terrible, abandon-ware sites that are
+going to waste their time. How can you communicate that you're not one
+of them to your users?
+
+\hypertarget{delight}{%
+\section{Delight}\label{delight}}
+
+If this breakdown of Feature Risk seems reductive, then try not to think
+of it that way: the aim \emph{of course} should be to delight users, and
+turn them into fans. That's a laudable Goal, but should be treated in
+the usual Risk-First way: \emph{pick the biggest risk you can mitigate
+next}.
+
+Consider Feature Risk from both the down-side and the up-side:
+
+\begin{itemize}
+\tightlist
+\item
+  What are we missing?
+\item
+  How can we be \emph{even better}?
+\end{itemize}
+
+Hopefully, this has given you some ideas about what Feature Risk
+involves. Hopefully, you might be able to identify a few more specific
+varieties. But, it's time to move on and look in more detail at
+Complexity Risk and how it affects what we build.
+
+\hypertarget{analysis}{%
+\section{Analysis}\label{analysis}}
+
+At this point, it would be easy to stop and say, look, here are a bunch
+of Feature Risk issues that you could face. But, it turns out that we're
+going to be relying heavily on Feature Risk as we go on in order to
+build our understanding of other risks, so it's probably worth spending
+a bit of time up front to classify what we've found.
+
+The Feature Risks identified here basically exist in a 3-dimensional
+space:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Fit}: How well the features fit for a particular client.
+\item
+  \textbf{Audience}: The range of clients (the \emph{market}) that may
+  be able to use this feature.
+\item
+  \textbf{Evolution}: The way the fit and the audience changes and
+  evolves as time goes by.
+\end{itemize}
+
+\hypertarget{fit}{%
+\subsection{Fit}\label{fit}}
+
+\begin{quotation}
+
+``This preservation, during the battle for life, of varieties which
+possess any advantage in structure, constitution, or instinct, I have
+called Natural Selection; and Mr.~Herbert Spencer has well expressed the
+same idea by the Survival of the Fittest''
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Survival_of_the_fittest}{\textemdash  Charles Darwin (Survival of the Fittest), \emph{Wikipedia}}.}
+\end{quotation}
+
+Darwin's conception of fitness was not one of athletic prowess, but how
+well an organism worked within the landscape, with the goal of
+reproducing itself.
+
+Feature Fit Risk, Conceptual Integrity Risk and Implementation Risk all
+hint at different aspects of this ``fitness''. We can conceive of them
+as the gaps between the following entities:
+
+\begin{itemize}
+\tightlist
+\item
+  Perceived Need: What the user \emph{thinks} they want
+\item
+  Expectation: What the user \emph{expects}
+\item
+  Reality: What they actually \emph{get}.
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{images/kite9/all_feature_risk_1.png}
+\caption{Feature Risks Assembled: Fit Risks}
+\end{figure}
+
+For further reading, you can check out
+\href{http://en.wikipedia.org/SERVQUAL}{The Service Quality Model},
+whcih this model is derived from. This model analyses the types of
+\emph{quality gaps} in services, and how consumer expectations and
+perceptions of a service arise. In the Staging And Classifying chapter,
+we'll come back and build on this model further.
+
+\hypertarget{fit-and-audience}{%
+\subsection{Fit and Audience}\label{fit-and-audience}}
+
+Two risks, Feature Access Risk and Market Risk considers \emph{Fit} for
+a whole \emph{Audience} of users. They are different: just as it's
+possible to have a small audience, but a large revenue, it's possible to
+have a product which has low Feature Access Risk (i.e lots of users can
+access it without difficulty) but high Market Risk (i.e.~the market is
+highly volatile or capricious in it's demands). \emph{Online services}
+often suffer from this Market Risk roller-coaster, being one moment
+highly valued and the next irrelevant.
+
+\hypertarget{fit-audience-and-evolution}{%
+\subsection{Fit, Audience and
+Evolution}\label{fit-audience-and-evolution}}
+
+Two risks further consider how the \textbf{Fit} and \textbf{Audience}
+\emph{change}: Regression Risk and Feature Drift Risk. We call this
+\emph{evolution} in the sense that:
+
+\begin{itemize}
+\tightlist
+\item
+  Our product's features \emph{evolve} with time, and changes made by
+  the development team.
+\item
+  Our audience changes and evolves as it is exposed to our product and
+  competing products.
+\item
+  The world as a whole is an evolving system within which our product
+  exists.
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{images/kite9/all_feature_risk_2.png}
+\caption{Feature Risks Assembled: Audience and Evolution}
+\end{figure}
+
+\hypertarget{applying-feature-risk}{%
+\section{Applying Feature Risk}\label{applying-feature-risk}}
+
+Consider Feature Risk carefully next time you are grooming the backlog:
+
+\begin{itemize}
+\tightlist
+\item
+  Can you judge which tasks mitigate the most Feature Risk?
+\item
+  Are you delivering features that are valuable to a large audience? How
+  well do you understand your audience? How does the size of the
+  audience for a task impact it's importance in the backlog?
+\item
+  Does the audience \emph{know} that the features exist? How do you
+  communicate feature availability to them?
+\item
+  How does writing a specification mitigate Fit Risk? For what other
+  reasons are you writing specifications?
+\end{itemize}
+
+In the next chapter, we are going to unpack this third point further.
+Somewhere between ``what the customer wants'' and ``what you give them''
+is a \emph{dialog}. In using a software product, users are engaging in a
+\emph{dialog} with its features. If the features don't exist, hopefully
+they will engage in a dialog with the development team to get them
+added.
+
+These dialogs are prone to risk, and this is the subject of the next
+chapter, Communication-Risk.
+
+\hypertarget{complexity-risk}{%
+\chapter{Complexity Risk}\label{complexity-risk}}
+
+Complexity Risk are the risks to your project due to its underlying
+``complexity''. Over the next few chapters, we'll break down exactly
+what we mean by complexity, looking at Dependency Risk and Boundary Risk
+as two particular sub-types of Complexity Risk. However, in this
+chapter, we're going to be specifically focusing on \emph{code you
+write}: the size of your code-base, the number of modules, the
+interconnectedness of the modules and how well-factored the code is.
+
+You could think of this chapter, then, as \textbf{Codebase Risk}: We'll
+look at three separate measures of codebase complexity and talk about
+Technical Debt, and look at places in which \textbf{Codebase Risk} is at
+it's greatest.
+
+\hypertarget{kolmogorov-complexity}{%
+\section{Kolmogorov Complexity}\label{kolmogorov-complexity}}
+
+The standard Computer-Science definition of complexity, is
+\href{https://en.wikipedia.org/wiki/Kolmogorov_complexity}{Kolmogorov
+Complexity}. This is:
+
+\begin{quote}
+``\ldots{}is the length of the shortest computer program (in a
+predetermined programming language) that produces the object as
+output.'' - Kolmogorov Complexity, Wikipedia
+\end{quote}
+
+This is a fairly handy definition for us, as it means that to in writing
+software to solve a problem, there is a lower bound on the size of the
+software we write. In practice, this is pretty much impossible to
+quantify. But that doesn't really matter: the techniques for
+\emph{moving in that direction} are all that we are interested in, and
+this basically amounts to compression.
+
+Let's say we wanted to write a JavaScript program to output this string:
+
+\begin{verbatim}
+abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
+\end{verbatim}
+
+We might choose this representation:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+
+\KeywordTok{function} \AttributeTok{out}\NormalTok{() }\OperatorTok{\{}\NormalTok{                                      (}\DecValTok{7}\NormalTok{ )}
+    \ControlFlowTok{return} \StringTok{"abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd"}\NormalTok{ (}\DecValTok{45}\NormalTok{)}
+\OperatorTok{\}}\NormalTok{                                                     (}\DecValTok{1}\NormalTok{ )}
+\end{Highlighting}
+\end{Shaded}
+
+The numbers in brackets indicate how many symbols each line contains, so
+in total, this code block contains \textbf{53 symbols}, if you count
+\texttt{function}, \texttt{out} and \texttt{return} as one symbol each.
+
+But, if we write it like this:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{const}\NormalTok{ ABCD}\OperatorTok{=}\StringTok{"ABCD"}\OperatorTok{;}\NormalTok{                                    (}\DecValTok{11}\NormalTok{)}
+
+\KeywordTok{function} \AttributeTok{out}\NormalTok{() }\OperatorTok{\{}\NormalTok{                                      (}\DecValTok{7}\NormalTok{ )}
+    \ControlFlowTok{return}\NormalTok{ ABCD}\OperatorTok{+}\NormalTok{ABCD}\OperatorTok{+}\NormalTok{ABCD}\OperatorTok{+}\NormalTok{ABCD}\OperatorTok{+}\NormalTok{ABCD}\OperatorTok{+}\NormalTok{ABCD}\OperatorTok{+}\NormalTok{ABCD}\OperatorTok{+}\NormalTok{        (}\DecValTok{16}\NormalTok{)}
+\NormalTok{        ABCD}\OperatorTok{+}\NormalTok{ABCD}\OperatorTok{+}\NormalTok{ABCD}\OperatorTok{;}\NormalTok{                               (}\DecValTok{6}\NormalTok{ )}
+\OperatorTok{\}}\NormalTok{                                                     (}\DecValTok{1}\NormalTok{ )}
+\end{Highlighting}
+\end{Shaded}
+
+With this version, we now have \textbf{41 symbols} (\textbf{ABCD} is a
+single symbol, because we could have called it anything). And with this
+version:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{const}\NormalTok{ ABCD}\OperatorTok{=}\StringTok{"ABCD"}\OperatorTok{;}\NormalTok{                                    (}\DecValTok{11}\NormalTok{)}
+
+\KeywordTok{function} \AttributeTok{out}\NormalTok{() }\OperatorTok{\{}\NormalTok{                                      (}\DecValTok{7}\NormalTok{ )}
+    \ControlFlowTok{return} \VariableTok{ABCD}\NormalTok{.}\AttributeTok{repeat}\NormalTok{(}\DecValTok{10}\NormalTok{)                            (}\DecValTok{7}\NormalTok{ )}
+\OperatorTok{\}}\NormalTok{                                                     (}\DecValTok{1}\NormalTok{ )}
+\end{Highlighting}
+\end{Shaded}
+
+\ldots{} we have \textbf{26 symbols}.
+
+\hypertarget{abstraction}{%
+\subsection{Abstraction}\label{abstraction}}
+
+What's happening here is that we're \emph{exploiting a pattern}: we
+noticed that \texttt{ABCD} occurs several times, so we defined it a
+single time and then used it over and over, like a stamp. Separating the
+\emph{definition} of something from the \emph{use} of something as we've
+done here is called ``abstraction''. We're going to come across it over
+and over again in this part of the book, and not just in terms of
+computer programs.
+
+By applying techniques such as Abstraction, we can improve in the
+direction of the Kolmogorov limit. And, by allowing ourselves to say
+that \emph{symbols} (like \texttt{out} and \texttt{ABCD}) are worth one
+complexity point, we've allowed that we can be descriptive in our
+\texttt{function} name and \texttt{const}. Naming things is an important
+part of abstraction, because to use something, you have to be able to
+refer to it.
+
+\hypertarget{trade-off}{%
+\subsection{Trade-Off}\label{trade-off}}
+
+But we could go further down into
+\href{https://en.wikipedia.org/wiki/Code_golf}{Code Golf} territory.
+This javascript program plays
+\href{https://en.wikipedia.org/wiki/Fizz_buzz}{FizzBuzz} up to 100, but
+is less readable than you might hope:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ControlFlowTok{for}\NormalTok{(i}\OperatorTok{=}\DecValTok{0}\OperatorTok{;}\NormalTok{i}\OperatorTok{<}\DecValTok{100}\OperatorTok{;}\NormalTok{)}\VariableTok{document}\NormalTok{.}\AttributeTok{write}\NormalTok{(((}\OperatorTok{++}\NormalTok{i}\OperatorTok{%}\DecValTok{3}\OperatorTok{?}\StringTok{''}\NormalTok{:}\StringTok{'Fizz'}\NormalTok{)}\OperatorTok{+}
+\NormalTok{(i}\OperatorTok{%}\DecValTok{5}\OperatorTok{?}\StringTok{''}\NormalTok{:}\StringTok{'Buzz'}\NormalTok{)}\OperatorTok{||}\NormalTok{i)}\OperatorTok{+}\StringTok{"<br>"}\NormalTok{)                           (}\DecValTok{62}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+So there is at some point a trade-off to be made between Complexity Risk
+and Communication Risk. This is a topic we'll address more in that
+chapter. But for now, it should be said that Communication Risk is about
+\emph{misunderstanding}: The more complex a piece of software is, the
+more difficulty users will have understanding it, and the more
+difficulty developers will have changing it.
+
+\hypertarget{connectivity}{%
+\section{Connectivity}\label{connectivity}}
+
+A second, useful measure of complexity comes from graph theory, and that
+is the connectivity of a graph:
+
+\begin{quotation}
+
+``\ldots{}the minimum number of elements (nodes or edges) that need to
+be removed to disconnect the remaining nodes from each other''
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Connectivity_(graph_theory}{\textemdash  Connectivity, \emph{Wikipedia}})}
+\end{quotation}
+
+To see this in action, have a look at the below graph:
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/complexity/connectivity_1-400dpi.png}
+\caption{Graph 1}
+\end{figure}
+
+It has 10 vertices, labelled \textbf{a} to \textbf{j}, and it has 15
+edges (or links) connecting the vertices together. If any single edge
+were removed from this diagram, the 10 vertices would still be linked
+together. Because of this, we can say that the graph is
+\emph{2-connected}. That is, to disconnect any single vertex, you'd have
+to remove \emph{at least} two edges.
+
+As a slight aside, let's consider the \textbf{Kolmogorov Complexity} of
+this graph, by inventing a mini-language to describe graphs. It could
+look something like this:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\OperatorTok{<}\NormalTok{item}\OperatorTok{>} \OperatorTok{:}\NormalTok{ [}\OperatorTok{<}\NormalTok{item}\OperatorTok{>,}\NormalTok{]}\OperatorTok{*} \OperatorTok{<}\NormalTok{item}\OperatorTok{>}\NormalTok{    # Indicates that the item}
+\NormalTok{                              # before the colon}
+\NormalTok{                              # has a connection to all}
+\NormalTok{                              # the items after the colon}
+\end{Highlighting}
+\end{Shaded}
+
+So our graph could be defined like this:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{a}\OperatorTok{:}\NormalTok{ b}\OperatorTok{,}\NormalTok{c}\OperatorTok{,}\NormalTok{d}
+\NormalTok{b}\OperatorTok{:}\NormalTok{ c}\OperatorTok{,}\NormalTok{f}\OperatorTok{,}\NormalTok{e}
+\NormalTok{c}\OperatorTok{:}\NormalTok{ f}\OperatorTok{,}\NormalTok{d}
+\NormalTok{d}\OperatorTok{:}\NormalTok{ j}
+\NormalTok{e}\OperatorTok{:}\NormalTok{ h}\OperatorTok{,}\NormalTok{j}
+\NormalTok{f}\OperatorTok{:}\NormalTok{ h}
+\NormalTok{g}\OperatorTok{:}\NormalTok{ j}
+\NormalTok{h}\OperatorTok{:}\NormalTok{ i}
+\NormalTok{i}\OperatorTok{:}\NormalTok{ j}
+\NormalTok{                                                      (}\DecValTok{39}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+Let's remove some of those extra links:
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/complexity/connectivity_2-400dpi.png}
+\caption{Graph 2}
+\end{figure}
+
+In this graph, I've removed 6 of the edges. Now, we're in a situation
+where if any single edge is removed, the graph becomes
+\emph{unconnected}. That is, it's broken into distinct chunks. So, it's
+\emph{1-connected}.
+
+The second graph is clearly simpler than the first. And, we can show
+this by looking at the \textbf{Kolgomorov Complexity} in our little
+language:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{a}\OperatorTok{:}\NormalTok{ d}\OperatorTok{,}\NormalTok{g}
+\NormalTok{b}\OperatorTok{:}\NormalTok{ f}
+\NormalTok{c}\OperatorTok{:}\NormalTok{ d}\OperatorTok{,}\NormalTok{f}
+\NormalTok{d}\OperatorTok{:}\NormalTok{ j}
+\NormalTok{f}\OperatorTok{:}\NormalTok{ h}
+\NormalTok{e}\OperatorTok{:}\NormalTok{ h}
+\NormalTok{h}\OperatorTok{:}\NormalTok{ i}
+\NormalTok{                                                      (}\DecValTok{25}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Connectivity} is also \textbf{Complexity}. Heavily connected
+programs/graphs are much harder to work with than less-connected ones.
+Even \emph{laying out} the first graph sensibly is a harder task than
+the second (the second is a doddle). But the reason programs with
+greater connectivity are harder to work with is that changing one module
+potentially impacts many others.
+
+\hypertarget{hierarchies-and-modularisation}{%
+\section{Hierarchies and
+Modularisation}\label{hierarchies-and-modularisation}}
+
+In the second, simplified graph, I've arranged it as a hierarchy, which
+I can do now that it's only 1-connected. For 10 vertices, we need 9
+edges to connect everything up. It's always:
+
+\begin{verbatim}
+  edges = vertices - 1
+\end{verbatim}
+
+Note that I could pick any hierarchy here: I don't have to start at
+\textbf{c} (although it has the nice property that it has two roughly
+even sub-trees attached to it).
+
+How does this help us? Imagine if \textbf{a} - \textbf{j} were modules
+of a software system, and the edges of the graph showed communications
+between the different sub-systems. In the first graph, we're in a worse
+position: who's in charge? What deals with what? Can I isolate a
+component and change it safely? What happens if one component
+disappears? But, in the second graph, it's easier to reason about,
+because of the reduced number of connections and the new heirarchy of
+organisation.
+
+On the down-side, perhaps our messages have farther to go now: in the
+original \textbf{i} could send a message straight to \textbf{j}, but now
+we have to go all the way via \textbf{c}. But this is the basis of
+\href{https://en.wikipedia.org/wiki/Modular_programming}{Modularisation}
+and \href{https://en.wikipedia.org/wiki/Hierarchy}{Hierarchy}.
+
+As a tool to battle complexity, we don't just see this in software, but
+everywhere in our lives. Society, business, nature and even our bodies:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Organelles} - such as
+  \href{https://en.wikipedia.org/wiki/Mitochondrion}{Mitochondria}.
+\item
+  \textbf{Cells} - such as blood cells, nerve cells, skin cells in the
+  \href{https://en.wikipedia.org/wiki/List_of_distinct_cell_types_in_the_adult_human_body}{Human
+  Body}.
+\item
+  \textbf{Organs} - like hearts livers, brains etc.
+\item
+  \textbf{Organisms} - like you and me.
+\end{itemize}
+
+The great complexity-reducing mechanism of modularisation is that
+\emph{you only have to consider your local environment}. Elements of the
+program that are ``far away'' in the hierarchy can be relied on not to
+affect you. This is somewhat akin to the \textbf{Principal Of Locality}:
+
+\begin{quotation}
+
+``Spatial locality refers to the use of data elements within relatively
+close storage locations.''
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Locality_of_reference}{\textemdash  Locality Of Reference, \emph{Wikipedia}}}
+\end{quotation}
+
+\hypertarget{cyclomatic-complexity}{%
+\section{Cyclomatic Complexity}\label{cyclomatic-complexity}}
+
+A variation on this graph connectivity metric is our third measure of
+complexity,
+\href{https://en.wikipedia.org/wiki/Cyclomatic_complexity}{Cyclomatic
+Complexity}. This is:
+
+\begin{verbatim}
+Cyclomatic Complexity = edges − vertices + 2P,
+\end{verbatim}
+
+Where \textbf{P} is the number of \textbf{Connected Components}
+(i.e.~distinct parts of the graph that aren't connected to one another
+by any edges).
+
+So, our first graph had a \textbf{Cyclomatic Complexity} of 7.
+\texttt{(15\ -\ 10\ +\ 2)}, while our second was 1.
+\texttt{(9\ -\ 10\ +\ 2)}.
+
+Cyclomatic complexity is all about the number of different routes
+through the program. The more branches a program has, the greater it's
+cyclomatic complexity. Hence, this is a useful metric in Testing and
+\href{https://en.wikipedia.org/wiki/Code_coverage}{Code Coverage}: the
+more branches you have, the more tests you'll need to exercise them all.
+
+\hypertarget{more-abstraction}{%
+\section{More Abstraction}\label{more-abstraction}}
+
+Although we ended up with our second graph having a \textbf{Cyclomatic
+Complexity} of 1 (the minimum), we can go further through abstraction,
+because this representation isn't minimal from a \textbf{Kolmogorov
+Complexity} point-of-view. For example, we might observe that there are
+further similarities in the graph that we can ``draw out'':
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/complexity/connectivity_3-400dpi.png}
+\caption{Complexity 3}
+\end{figure}
+
+Here, we've spotted that the structure of subgraphs \textbf{P1} and
+\textbf{P2} are the same: we can have the same functions there to
+assemble those. Noticing and exploiting patterns of repetition is one of
+the fundamental tools we have in the fight against Complexity Risk.
+
+So, we've looked at some measures of software structure complexity, in
+order that we can say ``this is more complex than this''. However, we've
+not really said why complexity entails Risk. So let's address that now
+by looking at two analogies, Mass and Technical Debt.
+
+\hypertarget{complexity-as-mass}{%
+\section{Complexity As Mass}\label{complexity-as-mass}}
+
+The first way to look at complexity is as \textbf{Mass} or
+\textbf{Inertia} : a software project with more complexity has greater
+\textbf{Inertia} or \textbf{Mass} than one with less complexity.
+
+Newton's Second Law states:
+
+\begin{quotation}
+
+``F = \emph{m}\textbf{a}, ( Force = Mass x Acceleration )''
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Newtons_laws_of_motion}{\textemdash  Netwon's Laws Of Motion, \emph{Wikipedia}}}
+\end{quotation}
+
+That is, in order to move your project \emph{somewhere new}, and make it
+do new things, you need to give it a push, and the more \textbf{Mass} it
+has, the more \textbf{Force} you'll need to move (accelerate) it.
+
+\textbf{Inertia} and \textbf{Mass} are equivalent concepts in physics:
+
+\begin{quotation}
+
+``mass is the quantitative or numerical measure of a body's inertia,
+that is of its resistance to being accelerated''.
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Inertia\#Mass_and_inertia}{\textemdash  Inertia, \emph{Wikipedia}}}
+\end{quotation}
+
+You could stop here and say that the more lines of code a project
+contains, the higher it's mass. And, that makes sense, because in order
+to get it to do something new, you're likely to need to change more
+lines.
+
+But there is actually some underlying sense in which \emph{this is
+real}, as discussed in this
+\href{https://www.youtube.com/user/1veritasium}{Veritasium} video. To
+paraphrase:
+
+\begin{quotation}
+
+``Most of your mass you owe due to E=mc², you owe to the fact that your
+mass is packed with energy, because of the \textbf{interactions} between
+these quarks and gluon fluctuations in the gluon field\ldots{} what we
+think of as ordinarily empty space\ldots{} that turns out to be the
+thing that gives us most of our mass.''
+
+\sourceatright{\href{https://www.youtube.com/watch?annotation_id=annotation_3771848421&feature=iv&src_vid=Xo232kyTsO0&v=Ztc6QPNUqls}{\textemdash  Your Mass is NOT From the Higgs Boson, \emph{Veritasium}}}
+\end{quotation}
+
+I'm not an expert in physics, \emph{at all}, and so there is every
+chance that I am pushing this analogy too hard. But, substituting quarks
+and gluons for pieces of software we can (in a very handwaving-y way)
+say that more complex software has more \textbf{interactions} going on,
+and therefore has more mass than simple software.
+
+The reason I am labouring this analogy is to try and make the point that
+Complexity Risk is really fundamental:
+
+\begin{itemize}
+\tightlist
+\item
+  Feature Risk: like \textbf{money}.
+\item
+  Schedule Risk: like \textbf{time}.
+\item
+  Complexity Risk: like \textbf{mass}.
+\end{itemize}
+
+At a basic level, Complexity Risk heavily impacts on Schedule Risk: more
+complexity means you need more force to get things done, which takes
+longer.
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/complexity/complexity-risk-400dpi.png}
+\caption{Complexity Risk and it's mitigations}
+\end{figure}
+
+\hypertarget{technical-debt}{%
+\section{Technical Debt}\label{technical-debt}}
+
+The most common way we talk about unnecessary complexity in software is
+as Technical Debt:
+
+\begin{quotation}
+
+``Shipping first time code is like going into debt. A little debt speeds
+development so long as it is paid back promptly with a rewrite\ldots{}
+The danger occurs when the debt is not repaid. Every minute spent on
+not-quite-right code counts as interest on that debt. Entire engineering
+organisations can be brought to a stand-still under the debt load of an
+unconsolidated implementation, object-oriented or otherwise.''
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Technical_debt}{Ward Cunningham, 1992}}
+\end{quotation}
+
+Building a perfect first-time solution is a waste, because perfection
+takes a long time. You're taking on more attendant Schedule Risk than
+necessary and Meeting Reality more slowly than you could.
+
+A quick-and-dirty, over-complex implementation mitigates the same
+Feature Risk and allows you to Meet Reality faster.
+
+But, having mitigated the Feature Risk, you are now carrying more
+Complexity Risk than you necessarily need, and it's time to think about
+how to \href{https://en.wikipedia.org/wiki/Code_refactoring}{Refactor}
+the software to reduce this risk again.
+
+\hypertarget{kitchen-analogy}{%
+\section{Kitchen Analogy}\label{kitchen-analogy}}
+
+It's often hard to make the case for minimising Technical Debt: it often
+feels that there are more important priorities, especially when
+technical debt can be ``swept under the carpet'' and forgotten about
+until later. (See Discounting The Future.)
+
+One helpful analogy I have found is to imagine your code-base is a
+kitchen. After preparing a meal (i.e.~delivering the first
+implementation), \emph{you need to tidy up the kitchen}. This is just
+something everyone does as a matter of \emph{basic sanitation}.
+
+Now of course, you could carry on with the messy kitchen. When tomorrow
+comes and you need to make another meal, you find yourself needing to
+wash up saucepans as you go, or working around the mess by using
+different surfaces to chop on.
+
+It's not long before someone comes down with food poisoning.
+
+We wouldn't tolerate this behaviour in a restaurant kitchen, so why put
+up with it in a software project?
+
+\hypertarget{feature-creep}{%
+\section{Feature Creep}\label{feature-creep}}
+
+In Brooks' essay ``No Silver Bullet - Essence and Accident in Software
+Engineering'', a distinction is made between:
+
+\begin{quote}
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Essence}: \emph{the difficulties inherent in the nature of the
+  software.}
+\item
+  \textbf{Accident}: \emph{those difficulties that attend its production
+  but are not inherent.} -
+  \href{https://en.wikipedia.org/wiki/No_Silver_Bullet}{Fred Brooks,
+  \emph{No Silver Bullet}}
+\end{itemize}
+\end{quote}
+
+The problem with this definition is that we are accepting features of
+our software as \emph{essential}.
+
+The Risk-First approach is that if you want to mitigate some Feature
+Risk then you have to pick up Complexity Risk as a result. But, that's a
+\emph{choice you get to make}.
+
+Therefore, \href{https://en.wikipedia.org/wiki/Feature_creep}{Feature
+Creep} (or
+\href{https://en.wikipedia.org/wiki/Gold_plating_(software_engineering)}{Gold
+Plating}) is a failure to observe this basic equation: instead of
+considering this trade off, you're building every feature possible. This
+has an impact on Complexity Risk, which in turn impacts Communication
+Risk and also Schedule Risk.
+
+Sometimes, feature-creep happens because either managers feel they need
+to keep their staff busy, or the staff decide on their own that they
+need to keep themselves busy. But now, we can see that basically this
+boils down to bad risk management.
+
+\begin{quotation}
+
+``Perfection is Achieved Not When There Is Nothing More to Add, But When
+There Is Nothing Left to Take Away''
+
+\sourceatright{\href{http://www.quotationspage.com/quote/26979.html}{Antoine de Saint-Exupery}}
+\end{quotation}
+
+\hypertarget{dead-end-risk}{%
+\section{Dead-End Risk}\label{dead-end-risk}}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/complexity/dead-end-risk-400dpi.png}
+\caption{Dead-End Risk}
+\end{figure}
+
+Dead-End Risk is where you build functionality that you \emph{think} is
+useful, only to find out later that actually, it was a dead-end, and is
+superseded by something else.
+
+For example, let's say that the Accounting sub-system needed password
+protection (so you built this). Then the team realised that you needed a
+way to \emph{change the password} (so you built that). Then, that you
+needed to have more than one user of the Accounting system so they would
+all need passwords (OK, fine).
+
+Finally, the team realises that actually logging-in would be something
+that all the sub-systems would need, and that it had already been
+implemented more thoroughly by the Approvals sub-system.
+
+At this point, you realise you're in a \textbf{Dead End}:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Option 1}: You carry on making minor incremental improvements
+  to the accounting password system (carrying the extra Complexity Risk
+  of the duplicated functionality).
+\item
+  \textbf{Option 2}: You rip out the accounting password system, and
+  merge in the Approvals system, surfacing new, hidden Complexity Risk
+  in the process, due to the difficulty in migrating users from the old
+  to new way of working.
+\item
+  \textbf{Option 3}: You start again, trying to take into account both
+  sets of requirements at the same time, again, possibly surfacing new
+  hidden Complexity Risk due to the combined approach.
+\end{itemize}
+
+Sometimes, the path from your starting point to your goal on the Risk
+Landscape will take you to dead ends: places where the only way towards
+your destination is to lose something, and do it again another way.
+
+This is because you surface new Hidden Risk along the way. And the
+source of a lot of this hidden risk will be unexpected Complexity Risk
+in the solutions you choose. This happens a lot.
+
+\hypertarget{source-control}{%
+\subsection{Source Control}\label{source-control}}
+
+\href{https://en.wikipedia.org/wiki/Version_control}{Version Control
+Systems} like \href{https://en.wikipedia.org/wiki/Git}{Git} are a useful
+mitigation of Dead-End Risk, because it means you can \emph{go back} to
+the point where you made the bad decision and go a different way.
+Additionally, they provide you with backups against the often
+inadvertent Dead-End Risk of someone wiping the hard-disk.
+
+\hypertarget{the-re-write}{%
+\subsection{The Re-Write}\label{the-re-write}}
+
+\textbf{Option 3}, Rewriting code or a whole project can seem like a way
+to mitigate Complexity Risk, but it usually doesn't work out too well.
+As Joel Spolsky says:
+
+\begin{quote}
+There's a subtle reason that programmers always want to throw away the
+code and start over. The reason is that they think the old code is a
+mess. And here is the interesting observation: they are probably wrong.
+The reason that they think the old code is a mess is because of a
+cardinal, fundamental law of programming: \emph{It's harder to read code
+than to write it.} -
+\href{https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/}{Things
+You Should Never Do, Part 1, \emph{Joel Spolsky}}
+\end{quote}
+
+The problem that Joel is outlining here is that the developer mistakes
+hard-to-understand code for unnecessary Complexity Risk. Also, perhaps
+there is Agency Risk because the developer is doing something that is
+more useful to him than the project. We're going to return to this
+problem in again Communication Risk.
+
+\hypertarget{where-complexity-hides}{%
+\section{Where Complexity Hides}\label{where-complexity-hides}}
+
+Complexity isn't spread evenly within a software project. Some problems,
+some areas, have more than their fair share of issues. We're going to
+cover a few of these now, but be warned, this is not a complete list by
+any means:
+
+\begin{itemize}
+\tightlist
+\item
+  Memory Management
+\item
+  Protocols / Types
+\item
+  Algorithmic (Space and Time) Complexity
+\item
+  Concurrency / Mutability
+\item
+  Networks / Security
+\end{itemize}
+
+\hypertarget{memory-management}{%
+\subsection{Memory Management}\label{memory-management}}
+
+Memory Management is another place where Complexity Risk hides:
+
+\begin{quotation}
+
+``Memory leaks are a common error in programming, especially when using
+languages that have no built in automatic garbage collection, such as C
+and C++.''
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Memory_leak}{\textemdash  Memory Leak, \emph{Wikipedia}}}
+\end{quotation}
+
+\href{https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)}{Garbage
+Collectors} (as found in Javascript or Java) offer you the deal that
+they will mitigate the Complexity Risk of you having to manage your own
+memory, but in return perhaps give you fewer guarantees about the
+\emph{performance} of your software. Again, there are times when you
+can't accommodate this Operational Risk, but these are rare and usually
+only affect a small portion of an entire software-system.
+
+\hypertarget{protocols-and-types}{%
+\subsection{Protocols And Types}\label{protocols-and-types}}
+
+Whenever two components of a software system need to interact, they have
+to establish a protocol for doing so. There are lots of different ways
+this can work, but the simplest example I can think of is where some
+component \textbf{a} calls some function \textbf{b}. e.g:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{function} \AttributeTok{b}\NormalTok{(a}\OperatorTok{,}\NormalTok{ b}\OperatorTok{,}\NormalTok{ c) }\OperatorTok{\{}
+    \ControlFlowTok{return} \StringTok{"whatever"} \CommentTok{// do something here.}
+\OperatorTok{\}}
+
+\KeywordTok{function} \AttributeTok{a}\NormalTok{() }\OperatorTok{\{}
+    \KeywordTok{var}\NormalTok{ bOut }\OperatorTok{=} \AttributeTok{b}\NormalTok{(}\StringTok{"one"}\OperatorTok{,} \StringTok{"two"}\OperatorTok{,} \StringTok{"three"}\NormalTok{)}\OperatorTok{;}
+    \ControlFlowTok{return} \StringTok{"something "}\OperatorTok{+}\NormalTok{bOut}\OperatorTok{;}
+\OperatorTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+If component \textbf{b} then changes in some backwards-incompatible way,
+say:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{function} \AttributeTok{b}\NormalTok{(a}\OperatorTok{,}\NormalTok{ b}\OperatorTok{,}\NormalTok{ c}\OperatorTok{,}\NormalTok{ d }\CommentTok{/* new parameter */}\NormalTok{) }\OperatorTok{\{}
+    \ControlFlowTok{return} \StringTok{"whatever"} \CommentTok{// do something here.}
+\OperatorTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+Then, we can say that the protocol has changed. This problem is so
+common, so endemic to computing that we've had compilers that check
+function arguments \href{https://en.wikipedia.org/wiki/Compiler}{since
+the 1960's}. The point being is that it's totally possible for the
+compiler to warn you about when a protocol within the program has
+changed.
+
+The same is basically true of
+\href{https://en.wikipedia.org/wiki/Data_type}{Data Types}: whenever we
+change the \textbf{Data Type}, we need to correct the usages of that
+type. Note above, I've given the \texttt{JavaScript} example, but I'm
+going to switch to \texttt{TypeScript} now:
+
+\begin{verbatim}
+interface BInput {
+    a: string,
+    b: string,
+    c: string,
+    d: string
+}
+
+function b(in: BInput): string {
+    return "whatever" // do something here.
+}
+\end{verbatim}
+
+Now, of course, there is a tradeoff: we \emph{mitigate} Complexity Risk,
+because we define the protocols / types \emph{once only} in the program,
+and ensure that usages all match the specification. But the tradeoff is
+(as we can see in the \texttt{TypeScript} code) more
+\emph{finger-typing}, which some people argue counts as Schedule Risk.
+
+Nevertheless, compilers and type-checking are so prevalent in software
+that clearly, you have to accept that in most cases, the trade-off has
+been worth it: Even languages like \href{https://clojure.org}{Clojure}
+have been retro-fitted with
+\href{https://github.com/clojure/core.typed/wiki/User-Guide}{type
+checkers}.
+
+We're going to head into much more detail on this in the chapter on
+Protocol Risk.
+
+\hypertarget{space-and-time-complexity}{%
+\subsection{Space and Time Complexity}\label{space-and-time-complexity}}
+
+So far, we've looked at a couple of definitions of complexity in terms
+of the codebase itself. However, in Computer Science there is a whole
+branch of complexity theory devoted to how the software \emph{runs},
+namely \href{https://en.wikipedia.org/wiki/Big_O_notation}{Big O
+Complexity}.
+
+Once running, an algorithm or data structure will consume space or
+runtime dependent on it's characteristics. As with Garbage Collectors),
+these characteristics can introduce Performance Risk which can easily
+catch out the unwary. By and large, using off-the-shelf data structures
+and algorithms helps, but you still need to know their performance
+characteristics.
+
+The \href{http://bigocheatsheet.com}{Big O Cheat Sheet} is a wonderful
+resource to investigate this further.
+
+\hypertarget{concurrency-mutability}{%
+\subsection{Concurrency / Mutability}\label{concurrency-mutability}}
+
+Although modern languages include plenty of concurrency primitives,
+(such as the
+\href{https://docs.oracle.com/javase/9/docs/api/java/util/concurrent/package-summary.html}{java.util.concurrent}
+libraries), concurrency is \emph{still} hard to get right.
+
+\href{https://en.wikipedia.org/wiki/Race_condition}{Race conditions} and
+\href{https://en.wikipedia.org/wiki/Deadlock}{Deadlocks} \emph{thrive}
+in over-complicated concurrency designs: complexity issues are magnified
+by concurrency concerns, and are also hard to test and debug.
+
+Recently, languages such as Clojure have introduced
+\href{https://en.wikipedia.org/wiki/Persistent_data_structure}{persistent
+collections} to alleviate concurrency issues. The basic premise is that
+any time you want to \emph{change} the contents of a collection, you get
+given back a \emph{new collection}. So, any collection instance is
+immutable once created. The tradeoff is again attendant Performance Risk
+to mitigate Complexity Risk.
+
+An important lesson here is that choice of language can reduce
+complexity: and we'll come back to this in Software Dependency Risk.
+
+\hypertarget{networking-security}{%
+\subsection{Networking / Security}\label{networking-security}}
+
+There are plenty of Complexity Risk perils in \emph{anything} to do with
+networked code, chief amongst them being error handling and (again)
+protocol evolution.
+
+In the case of security considerations, exploits \emph{thrive} on the
+complexity of your code, and the weaknesses that occur because of it. In
+particular, Schneier's Law says, never implement your own cryptographic
+scheme:
+
+\begin{quotation}
+
+``Anyone, from the most clueless amateur to the best cryptographer, can
+create an algorithm that he himself can't break. It's not even hard.
+What is hard is creating an algorithm that no one else can break, even
+after years of analysis.''
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Bruce_Schneier\#Cryptography}{Bruce Schneier, 1998} }
+\end{quotation}
+
+Luckily, most good languages include cryptographic libraries that you
+can include to mitigate these Complexity Risks from your own code-base.
+
+This is a strong argument for the use of libraries. But, when should you
+use a library and when should you implement yourself? This is again
+covered in the chapter on Software Dependency Risk.
+
+\hypertarget{big-ball-of-mud}{%
+\subsection{Big Ball Of Mud}\label{big-ball-of-mud}}
+
+Although Type-Systems help for avoiding Communication Risk in the small,
+when software systems grow large it becomes hard to communicate their
+intent and keep their degree of connectivity low.
+
+\begin{quotation}
+
+``A big ball of mud is a software system that lacks a perceivable
+architecture. Although undesirable from a software engineering point of
+view, such systems are common in practice due to business pressures,
+developer turnover and code entropy.''
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Big_ball_of_mud}{\textemdash  Big Ball Of Mud, \emph{Wikipedia}}}
+\end{quotation}
+
+costs associated with complexity risk
+
+CHANGE is also more risky why?
+
+https://en.wikipedia.org/wiki/Big\_ball\_of\_mud
+
+\hypertarget{communication-risk}{%
+\chapter{Communication Risk}\label{communication-risk}}
+
+Communication Risk is the risk of communication between entities
+\emph{going wrong}, due to loss or misunderstanding. Consider this: if
+we all had identical knowledge, there would be no need to do any
+communicating at all, and therefore and also no Communication Risk.
+
+But, people are not all-knowing oracles. We rely on our \emph{senses} to
+improve our Internal Models of the world. There is Communication Risk
+here - we might overlook something vital (like an on-coming truck) or
+mistake something someone says (like ``Don't cut the green wire'').
+
+Communication Risk isn't just for people; it affects computer systems
+too.
+
+\hypertarget{a-model-of-communication}{%
+\section{A Model Of Communication}\label{a-model-of-communication}}
+
+In 1948, Claude Shannon proposed this definition of communication:
+
+\begin{quotation}
+
+``The fundamental problem of communication is that of reproducing at one
+point, either exactly or approximately, a message selected at another
+point.''
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/A_Mathematical_Theory_of_Communication}{\textemdash  A Mathematical Theory Of Communication, \emph{Claude Shannon}}  <!-- tweet-end -->}
+\end{quotation}
+
+And from this same paper, we get the following (slightly adapted) model.
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/communication_1-400dpi.png}
+\caption{Shannon's Communication Model}
+\end{figure}
+
+We move from top-left (``I want to send a message to someone'') to
+bottom left, clockwise, where we hope the message has been understood
+and believed. (I've added this last box to Shannon's original diagram.)
+
+One of the chief concerns in Shannon's paper is the step between
+\textbf{Transmission} and \textbf{Reception}. He creates a theory of
+information (measured in \textbf{bits}), the upper-bounds of information
+that can be communicated over a channel and ways in which Communication
+Risk between these processes can be mitigated by clever
+\textbf{Encoding} and \textbf{Decoding} steps.
+
+But it's not just transmission. Communication Risk exists at each of
+these steps. Let's imagine a short exchange where someone,
+\textbf{Alice} is trying to send a message to \textbf{Bob}:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Alice} might be \textbf{motivated} to send a message to tell
+  \textbf{Bob} something, only to find out that \emph{he already knew
+  it}, or it wasn't useful information for them.
+\item
+  In the \textbf{composition} stage, \textbf{Alice} might mess up the
+  \emph{intent} of the message: instead of ``Please buy chips'' she
+  might say, ``Please buy chops''.
+\item
+  In the \textbf{encoding} stage, \textbf{Alice} might not speak clearly
+  enough to be understood, and\ldots{}
+\item
+  In the \textbf{transmission} stage, \textbf{Alice} might not say it
+  loudly enough for \textbf{Bob} to\ldots{}
+\item
+  \textbf{receive} the message clearly (maybe there is background
+  noise).
+\item
+  Having heard \textbf{Alice} say something, can \textbf{Bob}
+  \textbf{decode} what was said into a meaningful sentence?
+\item
+  Then, assuming that, will they \textbf{interpret} correctly which type
+  of chips (or chops) \textbf{Alice} was talking about? Does ``Please
+  buy chips'' convey all the information they need?
+\item
+  Finally, assuming \emph{everything else}, will \textbf{Bob} believe
+  the message? Will they \textbf{reconcile} the information into their
+  Internal Model and act on it? Perhaps not, if \textbf{Bob} thinks that
+  there are chips at home already.
+\end{itemize}
+
+\hypertarget{approach-to-communication-risk}{%
+\section{Approach To Communication
+Risk}\label{approach-to-communication-risk}}
+
+There is a symmetry about the steps going on in Shannon's diagram, and
+we're going to exploit this in order to break down Communication Risk
+into it's main types.
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/communication_2-400dpi.png}
+\caption{Communication Risk 2}
+\end{figure}
+
+To get inside Communication Risk, we need to understand
+\textbf{Communication} itself, whether between \emph{machines},
+\emph{people} or \emph{products}: we'll look at each in turn. In order
+to do that, we're going to examine four basic concepts in each of these
+settings:
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://en.wikipedia.org/wiki/Communication_channel}{Channels},
+  the medium via which the communication is happening.
+\item
+  \href{https://en.wikipedia.org/wiki/Communication_protocol}{Protocols}
+  - the systems of rules that allow two or more entities of a
+  communications system to transmit information.
+\item
+  \href{https://en.wikipedia.org/wiki/Message}{Messages}: The
+  information we want to convey.
+\item
+  Internal Models: the sources and destinations for the messages.
+  Updating internal models (whether in our heads or machines) is the
+  reason why we're communicating.
+\end{itemize}
+
+And, as we look at these four areas, we'll consider the Attendant Risks
+of each.
+
+\hypertarget{channels}{%
+\section{Channels}\label{channels}}
+
+There are lots of different types of media for communicating (e.g.~TV,
+Radio, DVD, Talking, Posters, Books, Phones, The Internet, etc. ) and
+they all have different characteristics. When we communicate via a given
+medium, it's called a \emph{channel}.
+
+The channel \emph{characteristics} depend on the medium, then. Some
+obvious ones are cost, utilisation, number of people reached, simplex or
+duplex (parties can transmit and receive at the same time), persistence
+(a play vs a book, say), latency (how long messages take to arrive) and
+bandwidth (the amount of information that can be transmitted in a period
+of time).
+
+Channel characteristics are important: in a high-bandwidth, low-latency
+situation, \textbf{Alice} and \textbf{Bob} can \emph{check} with each
+other that the meaning was transferred correctly. They can discuss what
+to buy, they can agree that \textbf{Alice} wasn't lying or playing a
+joke.
+
+The channel characteristics also imply suitability for certain
+\emph{kinds} of messages. A documentary might be a great way of
+explaining some economic concept, whereas an opera might not be.
+
+\hypertarget{channel-risk}{%
+\section{Channel Risk}\label{channel-risk}}
+
+Shannon discusses that no channel is perfect: there is always the
+\textbf{risk of noise} corrupting the signal. A key outcome from
+Shannon's paper is that there is a tradeoff: within the capacity of the
+channel (the \textbf{Bandwidth}), you can either send lots of
+information with \emph{higher} risk that it is wrong, or less
+information with \emph{lower} risk of errors. And, rather like the
+Kolgomorov complexity result, the more \emph{randomness} in the signal,
+the less compressible it is, and therefore the more \emph{bits} it will
+take to transmit.
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/channel-risk-400dpi.png}
+\caption{Communication Channel Risk}
+\end{figure}
+
+But channel risk goes wider than just this mathematical example:
+messages might be delayed or delivered in the wrong order, or not be
+acknowledged when they do arrive. Sometimes, a channel is just an
+inappropriate way of communicating. When you work in a different
+time-zone to someone else on your team, there is \emph{automatic}
+Channel Risk, because instantaneous communication is only available for
+a few hours' a day.
+
+When channels are \textbf{poor-quality}, less communication occurs.
+People will try to communicate just the most important information. But,
+it's often impossible to know a-priori what constitutes ``important''.
+This is why Extreme Programming recommends the practice of
+\href{https://en.wikipedia.org/wiki/Pair_programming}{Pair Programming}
+and siting all the developers together: although you don't know whether
+useful communication will happen, you are mitigating Channel Risk by
+ensuring high-quality communication channels are in place.
+
+At other times, channels can contain so much information that we can't
+hope to receive all the messages. In these cases, we don't even observe
+the whole channel, just parts of it. For example, you might have a few
+YouTube channels that you subscribe to, but hundreds of hours of video
+are being posted on YouTube every second, so there is no way you can
+keep up with all of it.
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/communication_channel_risks-400dpi.png}
+\caption{Communication Channels}
+\end{figure}
+
+\hypertarget{marketing-communications}{%
+\subsubsection{Marketing
+Communications}\label{marketing-communications}}
+
+When we are talking about a product or a brand, mitigating Channel Risk
+is the domain of
+\href{https://en.wikipedia.org/wiki/Marketing_communications}{Marketing
+Communications}. How do you ensure that the information about your
+(useful) project makes it to the right people? How do you address the
+right channels?
+
+This works both ways. Let's looks at some of the \textbf{Channel Risks}
+from the point of view of a hypothetical software tool, \textbf{D},
+which would really useful in my software:
+
+\begin{itemize}
+\tightlist
+\item
+  The concept that there is such a thing as \textbf{D} which solves my
+  problem isn't something I'd even considered.
+\item
+  I'd like to use something like \textbf{D}, but how do I find it?
+\item
+  There are multiple implementations of \textbf{D}, which is the best
+  one for the task?
+\item
+  I know \textbf{D}, but I can't figure out how to solve my problem in
+  it.
+\item
+  I've chosen \textbf{D}, I now need to persuade my team that \textbf{D}
+  is the correct solution\ldots{}
+\item
+  \ldots{} and then they also need to understand \textbf{D} to do their
+  job too.
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/communication_marketing-400dpi.png}
+\caption{Communication Marketing}
+\end{figure}
+
+Internal Models don't magically get populated with the information they
+need: they fill up gradually, as shown in this diagram. Popular products
+and ideas \emph{spread}, by word-of-mouth or other means. Part of the
+job of being a good technologist is to keep track of new \textbf{Ideas},
+\textbf{Concepts} and \textbf{Options}, so as to use them as
+Dependencies when needed.
+
+\hypertarget{protocols}{%
+\section{Protocols}\label{protocols}}
+
+In this chapter, I want to examine the concept of Communication
+Protocols and how they relate to Abstraction.
+
+So, to do this, let's look in a bit of detail at how web pages are
+loaded. When considering this, we need to broaden our terminology.
+Although so far we've talked about \textbf{Senders} and
+\textbf{Receivers}, we now need to talk from the point of view of
+who-depends-on-who. If you're \emph{depended on}, then you're a
+``Server'', whereas if you require communication with something else,
+you're a ``Client''. Thus, clients depend on servers in order to load
+pages.
+
+This is going to involve (at least) six separate protocols, the top-most
+one being the
+\href{https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol}{HTTP
+Protocol}. As far as the HTTP Protocol is concerned, a \emph{client}
+makes an \texttt{HTTP\ Request} at a specific URL and the
+\texttt{HTTP\ Response} is returned in a predictable format that the
+browser can understand.
+
+Let's have a quick look at how that works with a \texttt{curl} command,
+which allows me to load a web page from the command line. We're going to
+try and load Google's preferences page, and see what happens. If I type:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\OperatorTok{>} \ExtensionTok{curl}\NormalTok{ -v http://google.com/preferences}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{dns---domain-name-system}{%
+\subsection{1. DNS - Domain Name
+System}\label{dns---domain-name-system}}
+
+Then, the first thing that happens is this:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ExtensionTok{*}\NormalTok{ Rebuilt URL to: http://google.com/}
+\ExtensionTok{*}\NormalTok{   Trying 216.58.204.78...}
+\end{Highlighting}
+\end{Shaded}
+
+At this point, curl has used
+\href{https://en.wikipedia.org/wiki/Domain_Name_System}{DNS} to
+\emph{resolve} the address ``google.com'' to an IP address. This is some
+Abstraction: instead of using the machine's
+\href{https://en.wikipedia.org/wiki/IP_address}{IP Address} on the
+network, \texttt{216.58.204.78}, I can use a human-readable address,
+\texttt{google.com}. The address \texttt{google.com} doesn't necessarily
+resolve to that same address each time: \emph{They have multiple IP
+addresses for \texttt{google.com}}. But, for the rest of the
+\texttt{curl} request, I'm now set to just use this one.
+
+\hypertarget{ip---internet-protocol}{%
+\subsection{2. IP - Internet Protocol}\label{ip---internet-protocol}}
+
+But this hints at what is beneath the abstraction: although I'm loading
+a web-page, the communication to the Google server happens by
+\href{https://en.wikipedia.org/wiki/Internet_Protocol}{IP Protocol} -
+it's a bunch of discrete ``packets'' (streams of binary digits). You can
+think of a packet as being like a real-world parcel or letter.
+
+Each packet consists of two things:
+
+\begin{itemize}
+\tightlist
+\item
+  An address, which tells the network components (such as routers and
+  gateways) where to send the packet, much like you'd write the address
+  on the outside of a parcel.
+\item
+  The \emph{payload}, the stream of bytes for processing at the
+  destination. Like the contents of the parcel.
+\end{itemize}
+
+But, even this concept of ``packets'' is an Abstraction. Although all
+the components of the network interoperate with this protocol, we might
+be using Wired Ethernet, or WiFi, 4G or \emph{something else}.
+
+\hypertarget{wifi-protocol}{%
+\subsection{3. 802.11 - WiFi Protocol}\label{wifi-protocol}}
+
+I ran this at home, using WiFi, which uses
+\href{https://en.wikipedia.org/wiki/IEEE_802.11}{IEEE 802.11 Protocol},
+which allows my laptop to communicate with the router wirelessly, again
+using an agreed, standard protocol. But even \emph{this} isn't the
+bottom, because this is actually probably specifying something like
+\href{https://en.wikipedia.org/wiki/MIMO-OFDM}{MIMO-OFDM}, giving
+specifications about frequencies of microwave radiation, antennas,
+multiplexing, error-correction codes and so on. And WiFi is just the
+first hop: after the WiFi receiver, there will be protocols for
+delivering the packets via the telephony system.
+
+\hypertarget{tcp---transmission-control-protocol}{%
+\subsection{4. TCP - Transmission Control
+Protocol}\label{tcp---transmission-control-protocol}}
+
+Anyway, the next thing that happens is this:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ExtensionTok{*}\NormalTok{ TCP_NODELAY set}
+\ExtensionTok{*}\NormalTok{ Connected to google.com (216.58.204.78) }\ExtensionTok{port}\NormalTok{ 80 (#0)}
+\end{Highlighting}
+\end{Shaded}
+
+The second obvious Abstraction going on here is that \texttt{curl} now
+believes it has a
+\href{https://en.wikipedia.org/wiki/Transmission_Control_Protocol}{TCP}
+connection. The TCP connection abstraction gives us the surety that the
+packets get delivered in the right order, and retried if they go
+missing. Effectively it \emph{guarantees} these things, or that it will
+have a connection failure if it can't keep it's guarantee.
+
+But, this is a fiction - TCP is built on the IP protocol, packets of
+data on the network. So there are lots of packets floating around which
+say ``this connection is still alive'' and ``I'm message 5 in the
+sequence'' and so on in order to maintain this fiction. But that means
+that the HTTP protocol can forget about this complexity and work with
+the fiction of a connection.
+
+\hypertarget{http---hypertext-transfer-protocol}{%
+\subsection{5. HTTP - Hypertext Transfer
+Protocol}\label{http---hypertext-transfer-protocol}}
+
+Next, we see this:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\OperatorTok{>} \ExtensionTok{GET}\NormalTok{ /preferences HTTP/1.1     (1)}
+\OperatorTok{>} \ExtensionTok{Host}\NormalTok{: google.com              (2)}
+\OperatorTok{>} \ExtensionTok{User-Agent}\NormalTok{: curl/7.54.0       (3)}
+\OperatorTok{>} \ExtensionTok{Accept}\NormalTok{: */*                   (4)}
+\OperatorTok{>}                               \KeywordTok{(}\ExtensionTok{5}\KeywordTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+This is now the HTTP protocol proper, and these 5 lines are sending
+information \emph{over the connection} to the Google server.
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{(1)} says what version of HTTP we are using, and the path
+  we're loading (\texttt{/preferences} in this case).
+\item
+  \texttt{(2)} to \texttt{(4)} are \emph{headers}. They are name-value
+  pairs, separated with a colon. The HTTP protocol specifies a bunch of
+  these names, and later versions of the protocol might introduce newer
+  ones.
+\item
+  \texttt{(5)} is an empty line, which indicates that we're done with
+  the headers, please give us the response. And it does:
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\OperatorTok{<} \ExtensionTok{HTTP/1.1}\NormalTok{ 301 Moved Permanently}
+\OperatorTok{<} \ExtensionTok{Location}\NormalTok{: http://www.google.com/preferences}
+\OperatorTok{<} \ExtensionTok{Content-Type}\NormalTok{: text/html}\KeywordTok{;} \VariableTok{charset=}\NormalTok{UTF-8}
+\OperatorTok{<} \ExtensionTok{Date}\NormalTok{: Sun, 08 Apr 2018 10:24:34 GMT}
+\OperatorTok{<} \ExtensionTok{Expires}\NormalTok{: Tue, 08 May 2018 10:24:34 GMT}
+\OperatorTok{<} \ExtensionTok{Cache-Control}\NormalTok{: public, max-age=2592000}
+\OperatorTok{<} \ExtensionTok{Server}\NormalTok{: gws}
+\OperatorTok{<} \ExtensionTok{Content-Length}\NormalTok{: 230}
+\OperatorTok{<} \ExtensionTok{X-XSS-Protection}\NormalTok{: 1}\KeywordTok{;} \VariableTok{mode=}\NormalTok{block}
+\OperatorTok{<} \ExtensionTok{X-Frame-Options}\NormalTok{: SAMEORIGIN}
+\OperatorTok{<}
+\OperatorTok{<}\ExtensionTok{HTML}\OperatorTok{><}\NormalTok{HEAD}\OperatorTok{><}\NormalTok{meta http-equiv=}\StringTok{"content-type"}
+\VariableTok{content=}\StringTok{"text/html;charset=utf-8"}\OperatorTok{>}
+\OperatorTok{<}\ExtensionTok{TITLE}\OperatorTok{>}\NormalTok{301 Moved}\OperatorTok{<}\NormalTok{/TITLE}\OperatorTok{><}\NormalTok{/HEAD}\OperatorTok{><}\NormalTok{BODY}\OperatorTok{>}
+\OperatorTok{<}\ExtensionTok{H1}\OperatorTok{>}\NormalTok{301 Moved}\OperatorTok{<}\NormalTok{/H1}\OperatorTok{>}
+\ExtensionTok{The}\NormalTok{ document has moved}
+\OperatorTok{<}\NormalTok{/}\ExtensionTok{BODY}\OperatorTok{><}\NormalTok{/HTML}\OperatorTok{>}
+\ExtensionTok{*}\NormalTok{ Connection }\CommentTok{#0 to host google.com left intact}
+\end{Highlighting}
+\end{Shaded}
+
+There's a lot going on here, but we can break it down really easily into
+3 chunks:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  The first line is the
+  \href{https://en.wikipedia.org/wiki/List_of_HTTP_status_codes}{HTTP
+  Status Code}. \texttt{301} is a code meaning that the page has moved.
+\item
+  The next 9 lines are HTTP headers again (name-value pairs). The
+  \texttt{Location:} directive tells us where the page has moved to.
+  Instead of trying \texttt{http://google.com/preferences}, we should
+  have used:
+\end{enumerate}
+
+\begin{quote}
+\texttt{http://www.google.com/preferences}.
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  The lines starting \texttt{\textless{}HTML\textgreater{}} are now some
+  HTML to display on the screen to tell the user that the page has
+  moved.
+\end{enumerate}
+
+\hypertarget{html---hypertext-mark-up-language}{%
+\subsection{6. HTML - Hypertext Mark-Up
+Language}\label{html---hypertext-mark-up-language}}
+
+Although \href{https://en.wikipedia.org/wiki/HTML}{HTML} is a language,
+a language is also a protocol. (After all, language is what we use to
+encode our ideas for transmission as speech.) In the example we gave,
+this was a very simple page telling the client that it's looking in the
+wrong place. In most browsers, you don't get to see this: the browser
+will understand the meaning of the \texttt{301} error and redirect you
+to the location.
+
+Let's look at all the protocols we saw here:
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/communication_protocols-400dpi.png}
+\caption{Protocol Stack}
+\end{figure}
+
+Each protocol ``passes on'' to the next one in the chain. On the left,
+we have the representation most suitable for the \emph{messages}: HTTP
+is designed for browsers to use to ask for and receive web pages. As we
+move right, we are converting the message more and more into a form
+suitable for the Channel: in this case, microwave transmission.
+
+By having a stack of protocols, we are able to apply
+\href{https://en.wikipedia.org/wiki/Separation_of_concerns}{Separation
+Of Concerns}, each protocol handling just a few concerns:
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{HTML} Abstraction: A language for describing the contents of a
+  web-page.
+\item
+  \texttt{HTTP} Abstraction: Name-Value pairs, agreed on by both
+  \texttt{curl} and Google, URLs and error codes.
+\item
+  \texttt{DNS} Abstraction: Names of servers to IP Addresses.
+\item
+  \texttt{TCP} Abstraction: The concept of a ``connection'' with
+  guarantees about ordering and delivery.
+\item
+  \texttt{IP} Abstraction: ``Packets'' with addresses and payloads.
+\item
+  \texttt{WiFi} Abstraction: ``Networks'', 802.11 flavours.
+\item
+  Transmitters, Antennas, error correction codes, etc.
+\end{itemize}
+
+\texttt{HTTP} ``stands on the shoulders of giants''. Not only does it
+get to use pre-existing protocols like \texttt{TCP} and \texttt{DNS} to
+make it's life easier, it got \texttt{802.11} ``for free'' when this
+came along and plugged into the existing \texttt{IP} protocol. This is
+the key value of abstraction: you get to piggy-back on \emph{existing}
+patterns, and use them yourself.
+
+The protocol mediates between the message and the channel. Where this
+goes wrong, we have Protocol Risk. This is a really common issue for IT
+systems, but also sometimes for human communication too.
+
+\hypertarget{protocol-risk}{%
+\section{Protocol Risk}\label{protocol-risk}}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/protocol-risk-400dpi.png}
+\caption{Protocol Risk}
+\end{figure}
+
+Generally, any time where you have different parts of a system
+communicating with each other, and one part can change incompatibly with
+another you have Protocol Risk.
+
+Locally, (within our own project), where we have control, we can
+mitigate this risk using compile-time checking (as discussed already in
+Complexity Risk), which essentially forces all clients and servers to
+agree on protocol. But, the wider the group that you are communicating
+with, the less control you have and the more chance there is of Protocol
+Risk.
+
+Let's look at some types of Protocol Risk:
+
+\hypertarget{protocol-incompatibility-risk}{%
+\subsection{Protocol Incompatibility
+Risk}\label{protocol-incompatibility-risk}}
+
+The people you find it \emph{easiest} to communicate with are your
+friends and family, those closest to you. That's because you're all
+familiar with the same protocols. Someone from a foreign country,
+speaking a different language and having a different culture, will
+essentially have a completely incompatible protocol for spoken
+communication to you.
+
+Within software, there are also competing, incompatible protocols for
+the same things, which is maddening when your protocol isn't supported.
+Although the world seems to be standardizing, there used to be
+\emph{hundreds} of different image formats. Photographs often use
+\href{https://en.wikipedia.org/wiki/TIFF}{TIFF},
+\href{https://en.wikipedia.org/wiki/Raw_image_format}{RAW} or
+\href{https://en.wikipedia.org/wiki/JPEG}{JPEG}, whilst we also have
+\href{https://en.wikipedia.org/wiki/Scalable_Vector_Graphics}{SVG} for
+vector graphics, \href{https://en.wikipedia.org/wiki/GIF}{GIF} for
+images and animations and
+\href{https://en.wikipedia.org/wiki/Portable_Network_Graphics}{PNG} for
+other bitmap graphics.
+
+\hypertarget{protocol-versioning-risk}{%
+\subsection{Protocol Versioning Risk}\label{protocol-versioning-risk}}
+
+Even when systems are talking the same protocol, there can be problems.
+When we have multiple, different systems owned by different parties, on
+their own upgrade cycles, we have \textbf{Protocol Versioning Risk}: the
+risk that either client or server could start talking in a version of
+the protocol that the other side hasn't learnt yet. There are various
+mitigating strategies for this. We'll look at two now: \textbf{Backwards
+Compatibility} and \textbf{Forwards Compatibility}.
+
+\hypertarget{protocol-complexity}{%
+\subsection{Protocol Complexity}\label{protocol-complexity}}
+
+tbd. abstraction - virtue between two vices. Postel's law.
+
+\hypertarget{backward-compatibility}{%
+\subsubsection{Backward Compatibility}\label{backward-compatibility}}
+
+Backwards Compatibility mitigates Protocol Versioning Risk. Quite
+simply, this means, supporting the old format until it falls out of use.
+If a server is pushing for a change in protocol it either must ensure
+that it is Backwards Compatible with the clients it is communicating
+with, or make sure they are upgraded concurrently. When building
+\href{https://en.wikipedia.org/wiki/Web_service}{web services}, for
+example, it's common practice to version all APIs so that you can manage
+the migration. Something like this:
+
+\begin{itemize}
+\tightlist
+\item
+  Server publishes \texttt{/api/v1/something}.
+\item
+  Clients use \texttt{/api/v1/something}.
+\item
+  Server publishes \texttt{/api/v2/something}.
+\item
+  Clients start using \texttt{/api/v2/something}.
+\item
+  Clients (eventually) stop using \texttt{/api/v2/something}.
+\item
+  Server retires \texttt{/api/v2/something} API.
+\end{itemize}
+
+\hypertarget{forward-compatibility}{%
+\subsubsection{Forward Compatibility}\label{forward-compatibility}}
+
+\texttt{HTML} and \texttt{HTTP} provide ``graceful failure'' to mitigate
+Protocol Risk: while its expected that all clients can parse the syntax
+of \texttt{HTML} and \texttt{HTTP}, it's not necessary for them to be
+able to handle all of the tags, attributes and rules they see. The
+specification for both these standards is that if you don't understand
+something, ignore it. Designing with this in mind means that old clients
+can always at least cope with new features, but it's not always
+possible.
+
+\texttt{JavaScript} \emph{can't} support this: because the meaning of
+the next instruction will often depend on the result of the previous
+one.
+
+Does human language support this? To some extent! New words are added to
+our languages all the time. When we come across a new word, we can
+either ignore it, guess the meaning, ask or look it up. In this way,
+human language has \textbf{Forward Compatibility} features built in.
+
+\hypertarget{protocol-implementation-risk}{%
+\subsection{Protocol Implementation
+Risk}\label{protocol-implementation-risk}}
+
+A second aspect of Protocol Risk exists in heterogeneous computing
+environments, where protocols have been independently implemented based
+on standards. For example, there are now so many different browsers, all
+supporting different levels of \texttt{HTTP}, \texttt{HTML} and
+\texttt{JavaScript} that it becomes impossible to test comprehensively
+over all the different versions. To mitigate as much Protocol Risk as
+possible, generally we run tests in a subset of browsers, and use a
+lowest-common-denominator approach to choosing protocol and language
+features.
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/communication_protocol_risks-400dpi.png}
+\caption{Communication Protocols Risks}
+\end{figure}
+
+\hypertarget{messages}{%
+\section{Messages}\label{messages}}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/message-risk-400dpi.png}
+\caption{Message Risk}
+\end{figure}
+
+Although Shannon's Communication Theory is about transmitting
+\textbf{Messages}, messages are really encoded \textbf{Ideas} and
+\textbf{Concepts}, from an \textbf{Internal Model}.
+
+\hypertarget{internal-model-assumption-risk}{%
+\subsection{Internal Model Assumption
+Risk}\label{internal-model-assumption-risk}}
+
+When we construct messages in a conversation, we have to make judgements
+about what the other person already knows. When talking to children,
+it's often hard work because they \emph{assume} that you have knowledge
+of everything they do. This is called
+\href{https://en.wikipedia.org/wiki/Theory_of_mind}{Theory Of Mind}: the
+appreciation that your knowledge is different to other people's, and
+adjusting you messages accordingly.
+
+When teaching, this is called
+\href{https://en.wikipedia.org/wiki/Curse_of_knowledge}{The Curse Of
+Knowledge}: teachers have difficulty understanding students' problems
+\emph{because they already understand the subject}. For example, if I
+want to tell you about a new
+\href{https://en.wikipedia.org/wiki/JDBC_driver}{JDBC Driver}, this
+pre-assumes that you know what JDBC is: the message has a dependency on
+prior knowledge.
+
+\hypertarget{message-dependency-risk}{%
+\subsection{Message Dependency Risk}\label{message-dependency-risk}}
+
+A second, related problem is actually Dependency Risk, which is covered
+more thoroughly in the next chapter. Often, messages assume that you
+have followed everything up to that point already, otherwise again, your
+Internal Model will not be rich enough to understand the new messages.
+
+This happens when messages get missed, or delivered out of order. In the
+past, TV shows were only aired once a week at a particular time. So
+writers were constrained plot-wise by not knowing whether their audience
+would have seen the previous week's episode. Therefore, often the state
+of the show would ``reset'' week-to-week, allowing you to watch it in
+\emph{any} order.
+
+The same \textbf{Message Dependency Risk} exists for computer software:
+if there is replication going on between instances of an application,
+and one of the instances misses some messages, you end up with a
+``\href{https://en.wikipedia.org/wiki/Split-brain_(computing)}{Split
+Brain}'' scenario, where later messages can't be processed because they
+refer to an application state that doesn't exist. For example, a message
+saying:
+
+\begin{verbatim}
+Update user 53's surname to 'Jones'
+\end{verbatim}
+
+only makes sense if the application has previously had the message
+
+\begin{verbatim}
+Create user 53 with surname 'Smith'
+\end{verbatim}
+
+\hypertarget{misinterpretation-risk}{%
+\subsection{Misinterpretation Risk}\label{misinterpretation-risk}}
+
+People don't rely on rigorous implementations of abstractions like
+computers do; we make do with fuzzy definitions of concepts and ideas.
+We rely on Abstraction to move between the name of a thing and the
+\emph{idea of a thing}.
+
+While machines only process \emph{information}, people's brains run on
+concepts and ideas. For people, abstraction is critical: nothing exists
+unless we have a name for it. Our world is just atoms, but we don't
+think like this. \emph{The name is the thing}.
+
+\begin{quotation}
+
+``The famous pipe. How people reproached me for it! And yet, could you
+stuff my pipe? No, it's just a representation, is it not? So if I had
+written on my picture ``This is a pipe'', I'd have been lying!''
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/The_Treachery_of_Images}{\textemdash  Rene Magritte, of \emph{The Treachery of Images}}}
+\end{quotation}
+
+This brings about Misinterpretation Risk: names are not \emph{precise},
+and concepts mean different things to different people. We can't be sure
+that people have the same meaning for concepts that we have.
+
+\hypertarget{invisibility-risk}{%
+\subsection{Invisibility Risk}\label{invisibility-risk}}
+
+Another cost of Abstraction is Invisibility Risk. While abstraction is a
+massively powerful technique, (as we saw above in the chapter on
+Protocols, it allows things like the Internet to happen) it lets the
+function of a thing hide behind the layers of abstraction and become
+invisible.
+
+\hypertarget{invisibility-risk-in-software}{%
+\subsubsection{Invisibility Risk In
+Software}\label{invisibility-risk-in-software}}
+
+As soon as you create a function, you are doing abstraction. You are
+saying: ``I now have this operation. The details, I won't mention again,
+but from now on, it's called \textbf{f}'' And suddenly, ``\textbf{f}''
+hides. It is working invisibly. Things go on in \textbf{f} that people
+don't necessarily need to understand. There may be some documentation,
+or tacit knowledge around what \textbf{f} is, and what it does, but it's
+not necessarily right. Referring to \textbf{f} is a much simpler job
+than understanding \textbf{f}.
+
+We try to mitigate this via (for the most part) documentation, but this
+is a terrible deal: because we can't understand the original,
+(un-abstracted) implementation, we now need to write some simpler
+documentation, which \emph{explains} the abstraction, in terms of
+further abstractions, and this is where things start to get murky.
+
+Invisibility Risk is mainly Hidden Risk. (Mostly, \emph{you don't know
+what you don't know}.) But you can carelessly \emph{hide things from
+yourself} with software:
+
+\begin{itemize}
+\tightlist
+\item
+  Adding a thread to an application that doesn't report whether it's
+  worked, failed, or is running out of control and consuming all the
+  cycles of the CPU.
+\item
+  Redundancy can increase reliability, but only if you know when servers
+  fail, and fix them quickly. Otherwise, you only see problems when the
+  last server fails.
+\item
+  When building a web-service, can you assume that it's working for the
+  users in the way you want it to?
+\end{itemize}
+
+When you build a software service, or even implement a thread, ask
+yourself: ``How will I know next week that this is working properly?''
+If the answer involves manual work and investigation, then your
+implementation has just cost you in Invisibility Risk.
+
+\hypertarget{invisibility-risk-in-conversation}{%
+\subsubsection{Invisibility Risk In
+Conversation}\label{invisibility-risk-in-conversation}}
+
+Invisibility Risk is risk due to information not sent. But because
+humans don't need a complete understanding of a concept to use it, we
+can cope with some Invisibility Risk in communication, and this saves us
+time when we're talking. It would be \emph{painful} to have
+conversations if, say, the other person needed to understand everything
+about how cars worked in order to discuss cars.
+
+For people, Abstraction is a tool that we can use to refer to other
+concepts, without necessarily knowing how the concepts work. This
+divorcing of ``what'' from ``how'' is the essence of abstraction and is
+what makes language useful.
+
+The debt of Invisibility Risk comes due when you realise that \emph{not}
+being given the details \emph{prevents} you from reasoning about it
+effectively. Let's think about this in the context of a project status
+meeting, for example:
+
+\begin{itemize}
+\tightlist
+\item
+  Can you be sure that the status update contains all the details you
+  need to know?
+\item
+  Is the person giving the update wrong or lying?
+\item
+  Do you know enough about the details of what's being discussed in
+  order to make informed decisions about how the project is going?
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/communication_message_risks-400dpi.png}
+\caption{Message Risk}
+\end{figure}
+
+\hypertarget{internal-models}{%
+\section{Internal Models}\label{internal-models}}
+
+So finally, we are coming to the root of the problem: communication is
+about transferring ideas and concepts from one Internal Model to
+another.
+
+The communication process so far has been fraught with risks, but we
+have a few more to come.
+
+\hypertarget{trust-belief-risk}{%
+\subsection{Trust \& Belief Risk}\label{trust-belief-risk}}
+
+Although protocols can sometimes handle security features of
+communication (such as
+\href{https://en.wikipedia.org/wiki/Authentication}{Authentication} and
+preventing
+\href{https://en.wikipedia.org/wiki/Man-in-the-middle_attack}{man-in-the-middle
+attacks}), trust goes further than this, it is the flip-side of Agency
+Risk, which we will look at later: can you be sure that the other party
+in the communication is acting in your best interests?
+
+Even if the receiver trusts the communicator, they may not believe the
+message. Let's look at some reasons for that:
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://en.wikipedia.org/wiki/World_view}{Weltanschauung (World
+  View)}: The ethics, values and beliefs in the receiver's Internal
+  Model may be incompatible to those from the sender.
+\item
+  \href{https://en.wikipedia.org/wiki/Relativism}{Relativism} is the
+  concept that there are no universal truths. Every truth is from a
+  frame of reference. For example, what constitutes \emph{offensive
+  language} is dependent on the listener.
+\item
+  \href{https://en.wikipedia.org/wiki/Psycholinguistics}{Psycholinguistics}
+  is the study of humans aquire languages. There are different languages
+  and dialects, (and \emph{industry dialects}), and we all understand
+  language in different ways, take different meanings and apply
+  different contexts to the messages.
+\end{itemize}
+
+From the point-of-view of Marketing Communications choosing the right
+message is part of the battle. You are trying to communicate your idea
+in such a way as to mitigate Trust \& Belief Risk.
+
+\hypertarget{learning-curve-risk}{%
+\subsection{Learning-Curve Risk}\label{learning-curve-risk}}
+
+If the messages we are receiving force us to update our Internal Model
+too much, we can suffer from the problem of ``too steep a
+\href{https://en.wikipedia.org/wiki/Learning_curve}{Learning Curve}'' or
+``\href{https://en.wikipedia.org/wiki/Information_overload}{Information
+Overload}'', where the messages force us to adapt our Internal Model too
+quickly for our brains to keep up.
+
+Commonly, the easiest option is just to ignore the information channel
+completely in these cases.
+
+\hypertarget{reading-code}{%
+\subsection{Reading Code}\label{reading-code}}
+
+It's often been said that code is \emph{harder to read than to write}:
+
+\begin{quotation}
+
+\begin{quote}
+``If you ask a software developer what they spend their time doing,
+they'll tell you that they spend most of their time writing code.
+However, if you actually observe what software developers spend their
+time doing, you'll find that they spend most of their time trying to
+understand code.'' -\\
+\href{https://blog.codinghorror.com/when-understanding-means-rewriting/}{When
+Understanding Means Rewriting, \emph{Coding Horror}}
+\end{quote}
+
+\end{quotation}
+
+By now it should be clear that it's going to be \emph{both} quite hard
+to read and write: the protocol of code is actually designed for the
+purpose of machines communicating, not primarily for people to
+understand. Making code human readable is a secondary concern to making
+it machine readable.
+
+But now we should be able to see the reasons it's harder to read than
+write too:
+
+\begin{itemize}
+\tightlist
+\item
+  When reading code, you are having to shift your Internal Model to
+  wherever the code is, accepting decisions that you might not agree
+  with and accepting counter-intuitive logical leaps. i.e.~Learning
+  Curve Risk. \emph{(cf.
+  \href{https://en.wikipedia.org/wiki/Principle_of_least_astonishment}{Principle
+  of Least Surprise})}
+\item
+  There is no Feedback Loop between your Internal Model and the Reality
+  of the code, opening you up to Misinterpretation Risk. When you write
+  code, your compiler and tests give you this.
+\item
+  While reading code \emph{takes less time} than writing it, this also
+  means the Learning Curve is steeper.
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/communication_internal_model_risks-400dpi.png}
+\caption{Internal Model Risks}
+\end{figure}
+
+\hypertarget{communication-risk-wrap-up}{%
+\section{Communication Risk Wrap Up}\label{communication-risk-wrap-up}}
+
+So, here's a summary of where we've arrived with our model of
+communication risk:
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/communication_3-400dpi.png}
+\caption{Communication 2}
+\end{figure}
+
+tbd, So next it's time to look at Complexity Risk.
+
+this seems complex tbd.
+
 \part{Application}
 
 \hypertarget{coming-next}{%
@@ -3208,8 +5695,7 @@ work.''
 \end{quotation}
 
 Second, the strategy of picking the two-day action with the greatest
-Pay-Off is \emph{often good}. (After all, this is just
-\href{https://en.wikipedia.org/wiki/Gradient_descent}{Gradient Descent},
+Pay-Off is \emph{often good}. (After all, this is just Gradient Descent,
 and that's a perfectly good way for training
 \href{https://en.wikipedia.org/wiki/Machine_learning}{Machine Learning}
 systems.) However, just like following a river downhill from the top of

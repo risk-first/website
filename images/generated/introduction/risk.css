@@ -37,7 +37,8 @@ action.left {
 	kite9-template: url(template.svg#action-left)	
 }
 
-artifact {
+artifact, 
+users {
 	kite9-type: container;
 	kite9-margin: 10pt;
 	kite9-link-inset: 10pt;
@@ -51,16 +52,7 @@ artifact {
 }
 
 users {
-	kite9-type: container;
-	kite9-margin: 10pt;
-	kite9-link-inset: 10pt;
-	kite9-link-gutter: 10pt;
-	kite9-type: container;
-	kite9-layout: vertical;	
 	kite9-template: url(template.svg#users);
-	kite9-padding: 10pt; 
-	kite9-connection-align: 50%;
-	kite9-min-size: 110pt 140pt;	
 }
 
 mitigated {
@@ -301,6 +293,9 @@ risk.security {
 	kite9-template: url(template.svg#security);
 }
 
+risk.methdology {
+	kite9-template: url(template.svg#methodology);
+}
 
 
 risk-box {
@@ -698,6 +693,15 @@ cell {
 	kite9-usage: regular;
 	kite9-type: container;
 }
+
+cell.shaded {
+	kite9-template: url(template.svg#shaded);
+}
+
+cell.shaded-tab {
+	kite9-template: url(template.svg#shaded-tab);
+}
+
 
 celltext.center {
 	kite9-horizontal-align: center;
