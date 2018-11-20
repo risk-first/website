@@ -1,27 +1,22 @@
 ![For Review](images/state/for-review.png)
 
-[Communication Risk](Communication-Risk) is the risk of communication between entities _going wrong_, due to loss or misunderstanding. <!-- tweet-end -->
-Consider this: if we all had identical knowledge, there would be no need to do any communicating at all, and therefore and also no [Communication Risk](Communication-Risk).  
+If we all had identical knowledge, there would be no need to do any communicating at all, and therefore and also no [Communication Risk](Communication-Risk).  
 
 But, people are not all-knowing oracles.  We rely on our _senses_ to improve our [Internal Models](Glossary#Internal-Model) of the world. There is [Communication Risk](Communication-Risk) here - we might overlook something vital (like an on-coming truck) or mistake something someone says (like "Don't cut the green wire").  
 
-[Communication Risk](Communication-Risk) isn't just for people; it affects computer systems too.
-
 ## A Model Of Communication
+
+![Shannon's Communication Model](images/generated/communication_1.png)
 
 In 1948, Claude Shannon proposed this definition of communication:
 
 > "The fundamental problem of communication is that of reproducing at one point, either exactly or approximately, a message selected at another point." - [A Mathematical Theory Of Communication, _Claude Shannon_](https://en.wikipedia.org/wiki/A_Mathematical_Theory_of_Communication)  <!-- tweet-end -->
 
-And from this same paper, we get the following (slightly adapted) model.
+And from this same paper, we get the above diagram:  We move from top-left ("I want to send a message to someone") to bottom left, clockwise, where we hope the message has been understood and believed.  (I've added this last box to Shannon's original diagram.)
 
-![Shannon's Communication Model](images/generated/communication_1.png)
+One of the chief concerns in Shannon's paper is the risk of error between **Transmission** and **Reception**.  He creates a theory of information (measured in **bits**), the upper-bounds of information that can be communicated over a channel and ways in which [Communication Risk](Communication-Risk) between these processes can be mitigated by clever **Encoding** and **Decoding** steps.
 
-We move from top-left ("I want to send a message to someone") to bottom left, clockwise, where we hope the message has been understood and believed.  (I've added this last box to Shannon's original diagram.)
-
-One of the chief concerns in Shannon's paper is the step between **Transmission** and **Reception**.  He creates a theory of information (measured in **bits**), the upper-bounds of information that can be communicated over a channel and ways in which [Communication Risk](Communication-Risk) between these processes can be mitigated by clever **Encoding** and **Decoding** steps.
-
-But it's not just transmission.  [Communication Risk](Communication-Risk) exists at each of these steps.  Let's imagine a short exchange where someone, **Alice** is trying to send a message to **Bob**:
+But it's not just transmission.  [Communication Risk](Communication-Risk) exists at each of these steps.  Let's imagine a human example, where someone, **Alice** is trying to send a simple message to **Bob**:
 
 - **Alice** might be **motivated** to send a message to tell **Bob** something, only to find out that _he already knew it_, or it wasn't useful information for them.
 - In the **composition** stage, **Alice** might mess up the _intent_ of the message: instead of "Please buy chips" she might say, "Please buy chops".
