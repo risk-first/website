@@ -18,14 +18,16 @@ One of the chief concerns in Shannon's paper is the risk of error between **Tran
 
 But it's not just transmission.  [Communication Risk](Communication-Risk) exists at each of these steps.  Let's imagine a human example, where someone, **Alice** is trying to send a simple message to **Bob**:
 
-- **Alice** might be **motivated** to send a message to tell **Bob** something, only to find out that _he already knew it_, or it wasn't useful information for them.
-- In the **composition** stage, **Alice** might mess up the _intent_ of the message: instead of "Please buy chips" she might say, "Please buy chops".
-- In the **encoding** stage, **Alice** might not speak clearly enough to be understood, and... 
-- In the **transmission** stage, **Alice** might not say it loudly enough for **Bob** to... 
-- **receive** the message clearly (maybe there is background noise).
-- Having heard **Alice** say something, can **Bob** **decode** what was said into a meaningful sentence?
-- Then, assuming that, will they **interpret** correctly which type of chips (or chops) **Alice** was talking about?  Does "Please buy chips" convey all the information they need?
-- Finally, assuming _everything else_, will **Bob** believe the message?  Will they **reconcile** the information into their [Internal Model](Glossary#Internal-Model) and act on it?  Perhaps not, if **Bob** thinks that there are chips at home already.
+|Step                  |Potential Risk                                           |
+|----------------------|---------------------------------------------------------|
+|Motivation            | **Alice** might be **motivated** to send a message to tell **Bob** something, only to find out that _he already knew it_. |
+|Composition           | **Alice** might mess up the _intent_ of the message: instead of "Please buy chips" she might say, "Please buy chops". |
+|Encoding              | **Alice** might not speak clearly enough to be understood. |
+|Transmission          | **Alice** might not say it _loudly_ enough for **Bob** to hear. | 
+|Reception             | **Bob** doesn't hear the message clearly (maybe there is background noise). |
+|Decoding              | **Bob** might not decode what was said into a meaningful sentence. |
+|Interpretation        | Assuming **Bob** _has_ heard, will he correctly **interpret**  which type of chips (or chops) **Alice** was talking about? |
+|Reconciliation        | Does **Bob** believe the message?  Will he **reconcile** the information into his [Internal Model](Glossary#Internal-Model) and act on it?  Perhaps not, if **Bob** thinks that there are chips at home already.|
 
 ## Approach To Communication Risk
 
