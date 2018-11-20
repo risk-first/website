@@ -6,7 +6,7 @@ But, people are not all-knowing oracles.  We rely on our _senses_ to improve our
 
 ## A Model Of Communication
 
-![Shannon's Communication Model](images/generated/communication_1.png)
+![Shannon's Communication Model](images/generated/risks/communication/communication_1.png)
 
 In 1948, Claude Shannon proposed this definition of communication:
 
@@ -33,7 +33,7 @@ But it's not just transmission.  [Communication Risk](Communication-Risk) exists
 
 There is a symmetry about the steps going on in Shannon's diagram, and we're going to exploit this in order to break down [Communication Risk](Communication-Risk) into it's main types.  <!-- tweet-end -->
 
-![Communication Risk 2](images/generated/communication_2.png)
+![Communication Risk 2](images/generated/risks/communication/communication_2.png)
 
 To get inside [Communication Risk](Communication-Risk), we need to understand **Communication** itself, whether between _machines_, _people_ or _products_:   we'll look at each in turn.  In order to do that, we're going to examine four basic concepts in each of these settings:
  
