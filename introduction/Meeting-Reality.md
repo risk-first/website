@@ -97,7 +97,7 @@ So, it's a trade-off: continue adding logging statements so long as you feel tha
 
 ## Practice 2: Do The Simplest Thing That Could Possibly Work
 
-Another mantra from Kent Beck (originator of the [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) methodology), is "Do The Simplest Thing That Could Possibly Work", which is closely related to YAGNI and is about looking for solutions which are simple.  Our risk-centric view of this strategy would be:
+Another mantra from Kent Beck (originator of the [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) methodology), is "Do The Simplest Thing That Could Possibly Work", which is closely related to YAGNI and is about looking for solutions which are simple, and avoiding over-engineering.  Our risk-centric view of this strategy would be:
 
 - Every action you take on a project has it's own [Attendant Risks](Glossary#attendant-risk).
 - The bigger or more complex the action, the more [Attendant Risk](Glossary#attendant-risk) it'll have.
