@@ -63,27 +63,31 @@ public class TextPreprocessor {
 	}
 
 	public static void outputQuote(String line, int lineNo) {
-		System.out.println("```{=latex}");
-		System.out.println("\\begin{quotation}");
-		System.out.println("```");
-		int qs = line.lastIndexOf("- [");
-		String quotation, source;
-		if (qs > -1) {
-			quotation = line.substring(2, qs); 
-			source = line.substring(qs+2);
-		} else {
-			quotation = line.substring(3, line.lastIndexOf("\""));
-			source = null;
+		try {
+			System.out.println("```{=latex}");
+			System.out.println("\\begin{quotation}");
+			System.out.println("```");
+			int qs = line.lastIndexOf("- [");
+			String quotation, source;
+			if (qs > -1) {
+				quotation = line.substring(2, qs); 
+				source = line.substring(qs+2);
+			} else {
+				quotation = line;
+				source = null;
+			}
+			processLinks(quotation, TextPreprocessor::processLink, lineNo, System.out::println);
+			System.out.println("```{=latex}");
+			if (source != null) {
+				System.out.print("\\sourceatright{");
+				processLinks(source.replace("\n", ""), TextPreprocessor::latexSourceLink, lineNo, System.out::print);
+				System.out.println("}");
+			}
+			System.out.println("\\end{quotation}");
+			System.out.println("```");
+		} catch (Exception e) {
+			throw new RuntimeException("Problem with line "+lineNo+":"+line, e);
 		}
-		processLinks(quotation, TextPreprocessor::processLink, lineNo, System.out::println);
-		System.out.println("```{=latex}");
-		if (source != null) {
-			System.out.print("\\sourceatright{");
-			processLinks(source.replace("\n", ""), TextPreprocessor::latexSourceLink, lineNo, System.out::print);
-			System.out.println("}");
-		}
-		System.out.println("\\end{quotation}");
-		System.out.println("```");
 	}
 	
 	static Pattern p = Pattern.compile("(\\!)?\\[([^\\]]*?)\\]\\((.*?)\\)(\\{(.*?)\\})?");
@@ -162,15 +166,6 @@ public class TextPreprocessor {
 					System.out.println("\\end{sidewaysfigure}");
 					System.out.println("```");
 
-				} else if (url.contains("large")){
-					System.out.println("```{=latex}");
-					System.out.println("\\begin{figure}");
-					System.out.println("\\centering");
-					System.out.println("\\Oldincludegraphics[width=1\\maxwidth]{"+url+"}");
-					System.out.println("\\caption{"+text+"}");
-					System.out.println("\\end{figure}");
-					System.out.println("```");
-					
 				} else {
 					System.out.println("!["+text+"]("+url+")");
 				}					

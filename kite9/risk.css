@@ -37,7 +37,8 @@ action.left {
 	kite9-template: url(template.svg#action-left)	
 }
 
-artifact {
+artifact, 
+users {
 	kite9-type: container;
 	kite9-margin: 10pt;
 	kite9-link-inset: 10pt;
@@ -51,16 +52,7 @@ artifact {
 }
 
 users {
-	kite9-type: container;
-	kite9-margin: 10pt;
-	kite9-link-inset: 10pt;
-	kite9-link-gutter: 10pt;
-	kite9-type: container;
-	kite9-layout: vertical;	
 	kite9-template: url(template.svg#users);
-	kite9-padding: 10pt; 
-	kite9-connection-align: 50%;
-	kite9-min-size: 110pt 140pt;	
 }
 
 mitigated {
@@ -301,6 +293,9 @@ risk.security {
 	kite9-template: url(template.svg#security);
 }
 
+risk.methdology {
+	kite9-template: url(template.svg#methodology);
+}
 
 
 risk-box {
@@ -445,6 +440,7 @@ glyph {
 	kite9-margin: 10pt;
 	kite9-connection-align: 50%;
 	kite9-min-height: 30pt;
+	kite9-sizing: minimize;
 }
 
 diagram glyph label {
@@ -453,7 +449,7 @@ diagram glyph label {
 	kite9-template: url(template.svg#glyph-label-text);
 	kite9-vertical-align: center;
 	kite9-margin: 5pt;
-	kite9-min-width: 600pt; 
+	kite9-min-width: 60pt; 
 	
 }
 
@@ -547,7 +543,8 @@ group {
 	stroke-width: 1pt;
 }
 
-context > label {
+context > label,
+group > label {
 	kite9-usage: label;
 	kite9-type: container; 
 	kite9-sizing: minimize;
@@ -698,6 +695,15 @@ cell {
 	kite9-type: container;
 }
 
+cell.shaded {
+	kite9-template: url(template.svg#shaded);
+}
+
+cell.shaded-tab {
+	kite9-template: url(template.svg#shaded-tab);
+}
+
+
 celltext.center {
 	kite9-horizontal-align: center;
 }
@@ -735,3 +741,62 @@ description {
 	font-family: "gothic-italic";
 	kite9-padding: 10pt;
 }
+
+/* Steve McConnell Stuff */
+
+leg {
+	kite9-type: container;
+	kite9-template: url(template.svg#leg);
+	kite9-layout: down;
+	kite9-min-height: 110pt;
+	kite9-min-width: 70pt;
+	kite9-sizing: minimize;
+	kite9-margin: 0px;
+	kite9-vertical-align: bottom;
+}
+
+
+plinth {
+	kite9-template: url(template.svg#plinth);
+	kite9-type: container;
+	kite9-sizing: maximize;
+}
+
+/* Risk Matrix */
+
+symbol {
+	kite9-type: svg;
+	kite9-margin: 0 2pt 0 2pt;
+	kite9-sizing: minimize;
+	kite9-link-inset: 0px;
+	kite9-template: url(template.svg#symbol);
+}
+
+symbol.decal {
+	kite9-usage: decal;
+	kite9-transform: none;
+}
+
+box {
+	kite9-type: container;
+	kite9-template: url(template.svg#box);
+	kite9-sizing: maximize;
+}
+
+keyitem {
+	kite9-type: container;
+	kite9-layout: right;
+}
+
+keyitem > * {
+	kite9-vertical-align: center;
+}
+
+keydesc {
+	kite9-type: container;	
+	kite9-template: url(template.svg#description);
+	font-size: 12pt;
+	font-family: "gothic";
+	kite9-padding: 10pt;
+}
+
