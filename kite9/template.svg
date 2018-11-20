@@ -39,6 +39,13 @@
     </back>
   </template>
 
+  <template id='context-dotted'>
+    <contents />
+    <back style='kite9-usage: decal; kite9-type: svg;  '>
+      <svg:rect x='0' y='0' width='#{$width}' height='#{$height}' class="context-dotted" />
+    </back>
+  </template>
+
   <template id='container-label'>
     <svg:g class="container-label-front">
       <front style="kite9-type: text; ">
