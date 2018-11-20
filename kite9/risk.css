@@ -531,6 +531,10 @@ context {
 	kite9-link-inset: 12pt;
 }
 
+context.dotted {
+	kite9-template: url(template.svg#context-dotted);
+}
+
 group {
 	kite9-type: container;
 	kite9-sizing: maximize;
@@ -541,6 +545,13 @@ group {
 	fill: none;
 	stroke: black;
 	stroke-width: 1pt;
+}
+
+.context-dotted {
+	fill: none;
+	stroke: black;
+	stroke-width: 1pt;
+	stroke-dasharray: 4 4;	
 }
 
 context > label,
