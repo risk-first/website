@@ -37,10 +37,10 @@ There is a symmetry about the steps going on in Shannon's diagram, and we're goi
 
 To get inside [Communication Risk](Communication-Risk), we need to understand **Communication** itself, whether between _machines_, _people_ or _products_:   we'll look at each in turn.  In order to do that, we're going to examine four basic concepts in each of these settings:
  
- - [Channels](https://en.wikipedia.org/wiki/Communication_channel), the medium via which the communication is happening.
- - [Protocols](https://en.wikipedia.org/wiki/Communication_protocol) -  the systems of rules that allow two or more entities of a communications system to transmit information.
- - [Messages](https://en.wikipedia.org/wiki/Message): The information we want to convey.
- - [Internal Models](Glossary#Internal-Model): the sources and destinations for the messages.  Updating internal models (whether in our heads or machines) is the reason why we're communicating.
+ - **[Channels](https://en.wikipedia.org/wiki/Communication_channel)**: the medium via which the communication is happening.
+ - **[Protocols](https://en.wikipedia.org/wiki/Communication_protocol)**:  the systems of rules that allow two or more entities of a communications system to transmit information.
+ - **[Messages](https://en.wikipedia.org/wiki/Message)**: The information we want to convey.
+ - **[Internal Models](Glossary#Internal-Model)**: the sources and destinations for the messages.  Updating internal models (whether in our heads or machines) is the reason why we're communicating.
  
 And, as we look at these four areas, we'll consider the [Attendant Risks](Glossary#attendant-risk) of each.
 
@@ -56,15 +56,15 @@ The channel characteristics also imply suitability for certain _kinds_ of messag
 
 ## Channel Risk
 
-Shannon discusses that no channel is perfect:  there is always the **risk of noise** corrupting the signal.  A key outcome from Shannon's paper is that there is a tradeoff:  within the capacity of the channel (the **Bandwidth**), you can either send lots of information with _higher_ risk that it is wrong, or less information with _lower_ risk of errors.  And, rather like the [Kolgomorov complexity](Complexity-Risk) result, the more _randomness_ in the signal, the less compressible it is, and therefore the more _bits_ it will take to transmit.  
+Shannon discusses that no channel is perfect:  there is always the **risk of noise** corrupting the signal.  A key outcome from Shannon's paper is that there is a tradeoff:  within the capacity of the channel (the **Bandwidth**), you can either send lots of information with _higher_ risk that it is wrong, or less information with _lower_ risk of errors.
 
-![Communication Channel Risk](images/generated/channel-risk.png) 
+![Communication Channel Risk](images/generated/risks/communication/communication_channel_risks.png) 
 
 But channel risk goes wider than just this mathematical example:  messages might be delayed or delivered in the wrong order, or not be acknowledged when they do arrive.  Sometimes, a channel is just an inappropriate way of communicating.  When you work in a different time-zone to someone else on your team, there is _automatic_ [Channel Risk](Communication-Risk#channel-risk), because instantaneous communication is only available for a few hours' a day. 
 
 When channels are **poor-quality**, less communication occurs.  People will try to communicate just the most important information.  But, it's often impossible to know a-priori what constitutes "important".   This is why [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) recommends the practice of [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming) and siting all the developers together: although you don't know whether useful communication will happen, you are mitigating [Channel Risk](Communication-Risk#channel-risk) by ensuring high-quality communication channels are in place.
 
-At other times, channels can contain so much information that we can't hope to receive all the messages.  In these cases, we don't even observe the whole channel, just parts of it.  For example, you might have a few YouTube channels that you subscribe to, but hundreds of hours of video are being posted on YouTube every second, so there is no way you can keep up with all of it.
+At other times, channels are crowded, and can contain so much information that we can't hope to receive all the messages.  In these cases, we don't even observe the whole channel, just parts of it. 
 
 ![Communication Channels](images/generated/communication_channel_risks.png)
 
