@@ -88,18 +88,17 @@
     <title><contents /></title>
   </template>
   
-  
   <template id='mitigated'>
     <contents />
     <back style='kite9-usage: decal; kite9-type: svg;  '>
-      <svg:line x1="0" y1="#{$height}" x2="#{$width}" y2="0" stroke="black" stroke-width="10" stroke-opacity="0.2"/>
+      <svg:line x1="0" y1="#{$height}" x2="#{$width}" y2="0" stroke="black" stroke-width="10pt" stroke-opacity="0.2"/>
     </back>
   </template>
   
   <template id='hidden'>
     <contents />
     <back style='kite9-usage: decal; kite9-type: svg; kite9-transform: position;'>
-      <svg:g transform="scale(.75) translate(#{$width - 40},-20)" style="fill-opacity: 0.2;  kite9-template: url(noun_Cloud_683453_000000.svg);" />
+      <svg:g transform="scale(#{$width div 230}) translate(140,-20)" style="fill-opacity: 0.2;  kite9-template: url(noun_Cloud_683453_000000.svg);" />
 	</back>
   </template>
   
@@ -562,8 +561,7 @@
       </image>
       <title>
         Channel
-        Fit
-        Risk
+        Fit Risk
       </title>
     </risk-box>
   </template>
@@ -601,8 +599,7 @@
         <image-content style="kite9-template: url(noun_867051.svg); " />
       </image>
       <title>Feature
-        Drift
-        Risk
+        Drift Risk
       </title>
     </risk-box>
   </template>
@@ -614,8 +611,7 @@
         <image-content style="kite9-template: url(noun_1381818.svg); " />
       </image>
       <title>Feature
-        Access
-        Risk
+        Access Risk
       </title>
     </risk-box>
   </template>
@@ -651,8 +647,7 @@
         <image-content style="kite9-template: url(noun_1243559.svg); " />
       </image>
       <title>Conceptual
-        Integrity
-        Risk
+        Integrity Risk
       </title>
     </risk-box>
   </template>
@@ -879,6 +874,27 @@
       </title>
     </risk-box>
   </template>
+  
+  <template id="methodology">
+    <risk-box>
+      <code>Method</code>
+      <image>
+        <image-content style="kite9-template: url(noun_methodologies_948107_000000.svg); " />
+      </image>
+      <title>
+        <contents />
+      </title>
+    </risk-box>
+  </template>
+  
+  <!-- tables -->
+  
+  <template id="shaded">
+    <back style='kite9-usage: decal; kite9-type: svg;  '>
+      <svg:rect x="0" y="5pt" width="#{$width}" height="#{$height - (5 * $pt) }" style="fill: #EEEEEE;" />
+    </back>
+  	<contents />
+  </template>
 
   <template id="celltext">
     <text-label style="kite9-type: text;">
@@ -912,4 +928,38 @@
     </text-label>
   </template>
   
+  <!-- Steve McConnell Stuff -->
+
+ 
+   <template id="leg">
+   <back style='kite9-usage: decal; kite9-type: svg; '>
+     <svg:rect x='0' y='0' width='#{$width}' height='#{$height}' style='fill: url(#risk-background); ' class="glyph-back" />
+   </back>     
+   <leg-text style="kite9-type: text; kite9-padding: 10pt; kite9-padding-top: 50pt; text-align: middle; ">
+     <contents />
+   </leg-text>
+  </template>
+ 
+ <plinth id="plinth" style="kite9-type: container;">
+   <back style='kite9-usage: decal; kite9-type: svg; '>
+     <svg:polygon points="0, #{$height} #{$width div 2},0 #{$width}, #{$height}" style='fill: url(#risk-background); ' class="glyph-back" />
+   </back>
+   <plinth-text style="kite9-type: text; kite9-padding: 10pt; kite9-padding-top: 15pt; "><contents /></plinth-text>
+ </plinth>
+ 
+ <!-- risk matrix -->
+ 
+ <template id="symbol">
+   <svg:g transform="translate(#{../@ox * $pt }, #{../@oy * $pt})">
+    <svg:circle style="fill: #A0A0A0;  stroke: none" cx="6pt" cy="6pt" r="8pt" />
+    <svg:text x=".35pt" y="1pt" class="symbol-text"><contents xpath="substring(@theChar,1, 1)" type="string"/></svg:text>
+   </svg:g>
+  </template>
+  
+  <template id="box">
+  	<back style='kite9-usage: decal; kite9-type: svg; '>
+      <svg:rect x='0' y='0' width='#{$width}' height='#{$height}' class="glyph-back" />
+    </back>   
+    <contents />
+  </template>
 </svg:svg>
