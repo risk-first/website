@@ -54,7 +54,7 @@ function out() {                                      (7 )
 
 ### Abstraction
 
-What's happening here is that we're _exploiting a pattern_: we noticed that `ABCD` occurs several times, so we defined it a single time and then used it over and over, like a stamp.  Separating the _definition_ of something from the _use_ of something as we've done here is called "abstraction".  We're going to come across it over and over again in this part of the book, and not just in terms of computer programs.  
+What's happening here is that we're _exploiting a pattern_: we noticed that `ABCD` occurs several times, so we defined it a single time and then used it over and over, like a stamp.  
 
 By applying techniques such as Abstraction, we can improve in the direction of the Kolmogorov limit.  And, by allowing ourselves to say that _symbols_ (like `out` and `ABCD`) are worth one complexity point, we've allowed that we can be descriptive in our `function` name and `const`.  Naming things is an important part of abstraction, because to use something, you have to be able to refer to it.
 

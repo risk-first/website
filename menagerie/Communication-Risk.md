@@ -66,8 +66,6 @@ When channels are **poor-quality**, less communication occurs.  People will try 
 
 At other times, channels are crowded, and can contain so much information that we can't hope to receive all the messages.  In these cases, we don't even observe the whole channel, just parts of it. 
 
-![Communication Channels](images/generated/communication_channel_risks.png)
-
 #### Marketing Communications
 
 When we are talking about a product or a brand, mitigating [Channel Risk](Communication-Risk#channel-risk) is the domain of [Marketing Communications](https://en.wikipedia.org/wiki/Marketing_communications).  <!-- tweet-end --> How do you ensure that the information about your (useful) project makes it to the right people?  How do you address the right channels? 
@@ -87,29 +85,34 @@ This works both ways.  Let's looks at some of the **Channel Risks** from the poi
 
 ## Protocols
 
-In this section, I want to examine the concept of [Communication Protocols](https://en.wikipedia.org/wiki/Communication_protocol) and how they relate to [Abstraction](Glossary#abstraction).  
+> "A communication protocol is a system of rules that allow two or more entities of a communications system to transmit information. " - [Communication Protocol, Wikipedia](https://en.wikipedia.org/wiki/Communication_protocol)
 
-So, to do this, let's look in a bit of detail at how web pages are loaded.   When considering this, we need to broaden our terminology.  Although so far we've talked about **Senders** and **Receivers**, we now need to talk from the point of view of who-depends-on-who.  If you're _depended on_, then you're a "Server", whereas if you require communication with something else, you're a "Client".   Thus, clients depend on servers in order to load pages.
+In this section, I want to examine the concept of [Communication Protocols](https://en.wikipedia.org/wiki/Communication_protocol) and how they relate to [Abstraction](Glossary#abstraction), which is implicated over and over again in different types of risk we will be looking at. 
 
-This is going to involve (at least) six separate protocols, the top-most one being the [HTTP Protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol).   As far as the HTTP Protocol is concerned, a _client_ makes an `HTTP Request` at a specific URL and the `HTTP Response` is returned in a predictable format that the browser can understand. 
+[Abstraction](Glossary#abstraction) means separating the _definition_ of something from the _use_ of something.  It's a widely applicable concept, but our example below will be specific to communication, and looking at the abstractions involved in loading a web page. 
 
-Let's have a quick look at how that works with a `curl` command, which allows me to load a web page from the command line.   We're going to try and load Google's preferences page, and see what happens.  If I type:
+First, we need to broaden our terminology.  Although so far we've talked about **Senders** and **Receivers**, we now need to talk from the point of view of who-depends-on-who.  Clients depend on servers in order to load pages:
 
+ - If you're _depended on_, then you're a **"Server"**.
+ - If you require communication with something else, you're a **"Client"**.   
+ 
+In order that a web browser (a **client**) can load a web-page from a **server**, they both need to communicate with shared protocols.  In this example, this is going to involve (at least) six separate protocols, as shown in the diagram below.  
+
+![Protocol Stack](images/generated/communication_protocols.png) 
+
+Let's examine each protocol in turn when I try to load the web page at the following address using a web browser:
 
 ```bash
-> curl -v http://google.com/preferences
+http://google.com/preferences
 ```
 
 ### 1. DNS - Domain Name System
 
-Then, the first thing that happens is this:
+The first thing that happens is that the name "google.com" is _resolved_ by DNS.  This means that the browser looks up the domain name "google.com" and gets back an IP address.  
 
-```bash
-* Rebuilt URL to: http://google.com/
-*   Trying 216.58.204.78...
-```
+This is some [Abstraction](Glossary#abstraction):  instead of using the machine's [IP Address](https://en.wikipedia.org/wiki/IP_address) on the network, `216.58.204.78`, I can use a human-readable address, `google.com`.   
 
-At this point, curl has used [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) to _resolve_ the address "google.com" to an IP address.  This is some [Abstraction](Glossary#abstraction):  instead of using the machine's [IP Address](https://en.wikipedia.org/wiki/IP_address) on the network, `216.58.204.78`, I can use a human-readable address, `google.com`.   The address `google.com` doesn't necessarily resolve to that same address each time:  _They have multiple IP addresses for `google.com`_.   But, for the rest of the `curl` request, I'm now set to just use this one.
+The address `google.com` doesn't necessarily resolve to that same address each time:  _They have multiple IP addresses for `google.com`_, but as a user, I don't have to worry about this detail.
 
 ### 2. IP - Internet Protocol
 
@@ -117,10 +120,10 @@ But this hints at what is beneath the abstraction:  although I'm loading a web-p
 
 Each packet consists of two things: 
  
-- An address, which tells the network components (such as routers and gateways) where to send the packet, much like you'd write the address on the outside of a parcel.
-- The _payload_, the stream of bytes for processing at the destination.   Like the contents of the parcel.
+- An **IP Address**, which tells the network components (such as routers and gateways) where to send the packet, much like you'd write the address on the outside of a parcel.
+- The **Payload**, the stream of bytes for processing at the destination.   Like the contents of the parcel.
 
-But, even this concept of "packets" is an [Abstraction](Glossary#abstraction).  Although all the components of the network interoperate with this protocol, we might be using Wired Ethernet, or WiFi, 4G or _something else_.
+But, even this concept of "packets" is an [Abstraction](Glossary#abstraction).  Although all the components of the network understand this protocol, we might be using Wired Ethernet cables, or WiFi, 4G or _something else_ beneath that.
 
 ### 3. 802.11 - WiFi Protocol
 
@@ -128,91 +131,50 @@ I ran this at home, using WiFi, which uses [IEEE 802.11 Protocol](https://en.wik
 
 ### 4. TCP - Transmission Control Protocol
 
-Anyway, the next thing that happens is this:
+Another [Abstraction](Glossary#abstraction) going on here is that my browser believes it has a  "connection" to the server.  This is provided by the TCP protocol. 
 
-```bash
-* TCP_NODELAY set
-* Connected to google.com (216.58.204.78) port 80 (#0)
-```
+But, this is a fiction - my "connection" is built on the IP protocol, which as we saw above is just packets of data on the network.  So there are lots of packets floating around which say "this connection is still alive" and "I'm message 5 in the sequence" and so on in order to maintain this fiction.  
 
-The second obvious [Abstraction](Glossary#abstraction) going on here is that `curl` now believes it has a [TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol) connection.   The TCP connection abstraction gives us the surety that the packets get delivered in the right order, and retried if they go missing.  Effectively it _guarantees_ these things, or that it will have a connection failure if it can't keep it's guarantee. 
-
-But, this is a fiction - TCP is built on the IP protocol, packets of data on the network.  So there are lots of packets floating around which say "this connection is still alive" and "I'm message 5 in the sequence" and so on in order to maintain this fiction.  But that means that the HTTP protocol can forget about this complexity and work with the fiction of a connection.
+This all means that the browser can forget about all the details of packet ordering and so on, and work with the fiction of a connection.
 
 ### 5. HTTP - Hypertext Transfer Protocol
 
-Next, we see this:
+If we examine what is being sent on the TCP connection, we see something like this:
 
 ```bash
-> GET /preferences HTTP/1.1     (1)
-> Host: google.com              (2)
-> User-Agent: curl/7.54.0       (3)
-> Accept: */*                   (4)
->                               (5)
+> GET /preferences HTTP/1.1     
+> Host: google.com              
+> Accept: */*                   
+>                               
 ```
 
-This is now the HTTP protocol proper, and these 5 lines are sending information _over the connection_ to the Google server.  
-
-- `(1)` says what version of HTTP we are using, and the path we're loading (`/preferences` in this case).   
-- `(2)` to `(4)` are _headers_.  They are name-value pairs, separated with a colon.   The HTTP protocol specifies a bunch of these names, and later versions of the protocol might introduce newer ones.  
-- `(5)` is an empty line, which indicates that we're done with the headers, please give us the response.  And it does:
+This is now the HTTP protocol proper, and these 4 lines are sending information _over the connection_ to the Google server, to ask it for the page.  Finally, Google's server gets to respond:
 
 ```bash
 < HTTP/1.1 301 Moved Permanently                                      
 < Location: http://www.google.com/preferences
-< Content-Type: text/html; charset=UTF-8
-< Date: Sun, 08 Apr 2018 10:24:34 GMT
-< Expires: Tue, 08 May 2018 10:24:34 GMT
-< Cache-Control: public, max-age=2592000
-< Server: gws
-< Content-Length: 230
-< X-XSS-Protection: 1; mode=block
-< X-Frame-Options: SAMEORIGIN
-< 
-<HTML><HEAD><meta http-equiv="content-type" 
-content="text/html;charset=utf-8">
-<TITLE>301 Moved</TITLE></HEAD><BODY>
-<H1>301 Moved</H1>
-The document has moved
-</BODY></HTML>
-* Connection #0 to host google.com left intact
+... 
 ```
 
-There's a lot going on here, but we can break it down really easily into 3 chunks:
+In this case, Google's server is telling us that the web page has changed address.    The `301` is a status code meaning the page has moved:  Instead of `http://google.com/preferences`, we want `http://www.google.com/preferences`.
 
-1. The first line is the [HTTP Status Code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).  `301` is a code meaning that the page has moved.
-
-2. The next 9 lines are HTTP headers again (name-value pairs).   The `Location:` directive tells us where the page has moved to.  Instead of trying `http://google.com/preferences`, we should have used:
-
-> `http://www.google.com/preferences`. 
-
-3. The lines starting `<HTML>` are now some HTML to display on the screen to tell the user that the page has moved.  
-
-### 6. HTML - Hypertext Mark-Up Language
- 
-Although [HTML](https://en.wikipedia.org/wiki/HTML) is a language, a language is also a protocol. <!-- tweet-end --> (After all, language is what we use to encode our ideas for transmission as speech.)   In the example we gave, this was a very simple page telling the client that it's looking in the wrong place.  In most browsers, you don't get to see this:  the browser will understand the meaning of the `301` error and redirect you to the location.  
-
-Let's look at all the protocols we saw here:
-
-![Protocol Stack](images/generated/communication_protocols.png) 
-
-Each protocol "passes on" to the next one in the chain.  On the left, we have the representation most suitable for the _messages_:  HTTP is designed for browsers to use to ask for and receive web pages.  As we move right, we are converting the message more and more into a form suitable for the [Channel](Communication-Risk#channels): in this case, microwave transmission.   
+### Summary
 
 By having a stack of protocols, we are able to apply [Separation Of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns), each protocol handling just a few concerns<!-- tweet-end -->:
 
- - `HTML` Abstraction: A language for describing the contents of a web-page.
- - `HTTP` Abstraction: Name-Value pairs, agreed on by both `curl` and Google, URLs and error codes.
- - `DNS` Abstraction:  Names of servers to IP Addresses.
- - `TCP` Abstraction:  The concept of a "connection" with guarantees about ordering and delivery.
- - `IP` Abstraction:  "Packets" with addresses and payloads.
- - `WiFi` Abstraction:  "Networks", 802.11 flavours.
- - Transmitters, Antennas, error correction codes, etc.
- 
-`HTTP` "stands on the shoulders of giants".  Not only does it get to use pre-existing protocols like `TCP` and `DNS` to make it's life easier, it got `802.11` "for free" when this came along and plugged into the existing `IP` protocol.<!-- tweet-end -->  This is the key value of abstraction:  you get to piggy-back on _existing_ patterns, and use them yourself. 
+|Protocol              |Abstractions                                     |
+|----------------------|-------------------------------------------------|
+|`HTTP`                |URLs, error codes, pages.                        |
+|`DNS`                 |Names of servers to IP Addresses.                |
+|`TCP`                 |The concept of a "connection" with guarantees about ordering and delivery.|
+|`IP`                  |"Packets" with addresses and payloads.           |
+|`WiFi`                |"Networks", 802.11 flavours, Transmitters, Antennas, error correction codes.| 
 
-The protocol mediates between the message and the channel.  <!-- tweet-end -->Where this goes wrong, we have [Protocol Risk](Communication-Risk#protocol-risk).  This is a really common issue for IT systems, but also sometimes for human communication too.
+`HTTP` "stands on the shoulders of giants":  Not only does it get to use pre-existing protocols like `TCP` and `DNS` to make it's life easier, it got `802.11` "for free" when this came along and plugged into the existing `IP` protocol.<!-- tweet-end -->  This is the key value of abstraction:  you get to piggy-back on _existing_ patterns, and use them yourself. 
 
 ## Protocol Risk
+
+The protocol mediates between the message and the channel.  <!-- tweet-end -->Where this goes wrong, we have [Protocol Risk](Communication-Risk#protocol-risk).  This is a really common issue for IT systems, but also sometimes for human communication too.
 
 ![Protocol Risk](images/generated/protocol-risk.png) 
 
