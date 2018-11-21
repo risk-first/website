@@ -3,56 +3,25 @@
   <svg:defs>
     <svg:style type="text/css"> @import url("risk.css");</svg:style>
   </svg:defs>
-  <diagram xmlns="http://www.kite9.org/schema/adl"  id="diagram-113" name="Goal In Mind" style="kite9-min-width: 800pt;">
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-113" name="Goal In Mind">
 
-  <context id="c" bordered="true" style="kite9-layout: down; ">
+    <context id="c" bordered="true" style="kite9-layout: right; kite9-horizontal-align: center; kite9-sizing: minimize; ">
 
-    <risk class="complexity" />
+      <group style="kite9-layout: down;">
+        <risk class="complexity" style="kite9-vertical-align: top; " />
+        <description>Risks caused by the weight of complexity in the systems we create, and their resistance to change and comprehension.
+        </description>
+      </group>
 
-    <description>Risks caused by the weight of complexity in the systems we create, and their resistance to change and comprehension.</description>
+      <group style="kite9-layout: down">
+        <risk class="codebase" style="kite9-vertical-align: top; "/>
+        <description>The specific risks to a project of having a large, complex codebase to manage.</description>
+      </group>
 
-    <label  id="id_16">
-      <text>Internal Model</text>
-      <symbols />
-    </label>
-  </context>
-
-  <group style="kite9-layout: down; kite9-horizontal-align: left;">
-    <action id="a1">Refactoring, Simplification</action>
-    <action id="a2">Libraries, Languages</action>
-  </group>
-  
-  <group style="kite9-layout: down;">
-    <context id="d1" style="kite9-layout: right; ">
-      <risk id="r1" class="schedule" />
-      <risk class="feature-fit" />
-    
-       <label  id="id_16">
-        <text>Attendant Risks</text>
+      <label id="id_16">
+        <text>Internal Model</text>
         <symbols />
       </label>
     </context>
-  
-    <context id="d2" style="kite9-layout: right;">
-       <risk id="r2" class="dependency" />
-       <risk class="boundary" />
-      
-       <label  id="id_16">
-        <text>Attendant Risks</text>
-        <symbols />
-      </label>
-    </context>
-  </group>
-
-  <link drawDirection="RIGHT" class="invisible">
-    <from reference="a1" />
-    <to reference="r1" /> 
-  </link>
-  
-  <link drawDirection="RIGHT" class="invisible">
-    <from reference="a2" />
-    <to reference="r2" /> 
-  </link>
-
   </diagram>
 </svg:svg>
