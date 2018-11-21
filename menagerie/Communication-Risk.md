@@ -79,7 +79,7 @@ This works both ways.  Let's looks at some of the **Channel Risks** from the poi
  - I've chosen **D**, I now need to persuade my team that **D** is the correct solution...
  - ... and then they also need to understand **D** to do their job too.
 
-![Communication Marketing](images/generated/communication_marketing.png)
+![Communication Marketing](images/generated/risks/communication/communication_marketing.png)
 
 [Internal Models](Glossary#Internal-Model) don't magically get populated with the information they need:  they fill up gradually, as shown in this diagram.  Popular products and ideas _spread_, by word-of-mouth or other means.  Part of the job of being a good technologist is to keep track of new **Ideas**, **Concepts** and **Options**, so as to use them as [Dependencies](Dependency-Risk) when needed.
 
@@ -91,9 +91,9 @@ In this section, I want to examine the concept of [Communication Protocols](http
 
 [Abstraction](Glossary#abstraction) means separating the _definition_ of something from the _use_ of something.  It's a widely applicable concept, but our example below will be specific to communication, and looking at the abstractions involved in loading a web page. 
 
-First, we need to broaden our terminology.  Although so far we've talked about **Senders** and **Receivers**, we now need to talk from the point of view of who-depends-on-who.  Clients depend on servers in order to load pages:
+First, we need to broaden our terminology.  Although so far we've talked about **Senders** and **Receivers**, we now need to talk from the point of view of who-depends-on-who.  That is, Clients and Suppliers.
 
- - If you're _depended on_, then you're a **"Server"**.
+ - If you're _depended on_, then you're a **"Supplier"** (or a **"Server"**, when we're talking about actual hardware).
  - If you require communication with something else, you're a **"Client"**.   
  
 In order that a web browser (a **client**) can load a web-page from a **server**, they both need to communicate with shared protocols.  In this example, this is going to involve (at least) six separate protocols, as shown in the diagram below.  
@@ -176,11 +176,11 @@ By having a stack of protocols, we are able to apply [Separation Of Concerns](ht
 
 The protocol mediates between the message and the channel.  <!-- tweet-end -->Where this goes wrong, we have [Protocol Risk](Communication-Risk#protocol-risk).  This is a really common issue for IT systems, but also sometimes for human communication too.
 
-![Protocol Risk](images/generated/protocol-risk.png) 
+![Communication Protocols Risks](images/generated/risks/communication/communication_protocol_risks.png)
 
 Generally, any time where you have different parts of a system communicating with each other, and one part can change incompatibly with another you have [Protocol Risk](Communication-Risk#protocol-risk).
 
-Locally, (within our own project), where we have control, we can mitigate this risk using compile-time checking (as discussed already in [Complexity Risk](Complexity-Risk#protocols-and-types)), which essentially forces all clients and servers to agree on protocol.  But, the wider the group that you are communicating with, the less control you have and the more chance there is of [Protocol Risk](Communication-Risk#protocol-risk).   
+Locally, (within our own project), where we have control, we can mitigate this risk using compile-time checking (as discussed already in [Complexity Risk](Complexity-Risk#protocols-and-types)), which essentially forces all clients and suppliers to agree on protocol.  But, the wider the group that you are communicating with, the less control you have and the more chance there is of [Protocol Risk](Communication-Risk#protocol-risk).   
 
 Let's look at some types of [Protocol Risk](Communication-Risk#protocol-risk):
  
@@ -192,23 +192,18 @@ Within software, there are also competing, incompatible protocols for the same t
 
 ### Protocol Versioning Risk
 
-Even when systems are talking the same protocol, there can be problems. <!-- tweet-end --> When we have multiple, different systems owned by different parties, on their own upgrade cycles, we have **Protocol Versioning Risk**: the risk that either client or server could start talking in a version of the protocol that the other side hasn't learnt yet.  There are various mitigating strategies for this.  We'll look at two now: **Backwards Compatibility** and **Forwards Compatibility**.
-
-### Protocol Complexity
-
-tbd.   abstraction - virtue between two vices.  Postel's law.
-
+Even when systems are talking the same protocol, there can be problems. <!-- tweet-end --> When we have multiple, different systems owned by different parties, on their own upgrade cycles, we have **Protocol Versioning Risk**: the risk that either client or supplier could start talking in a version of the protocol that the other side hasn't learnt yet.  There are various mitigating strategies for this.  We'll look at two now: **Backwards Compatibility** and **Forwards Compatibility**.
 
 #### Backward Compatibility
 
-Backwards Compatibility mitigates [Protocol Versioning Risk](Communication-Risk#protocol-versioning-risk).  Quite simply, this means, supporting the old format until it falls out of use.  If a server is pushing for a change in protocol it either must ensure that it is Backwards Compatible with the clients it is communicating with, or make sure they are upgraded concurrently.  When building [web services](https://en.wikipedia.org/wiki/Web_service), for example, it's common practice to version all APIs so that you can manage the migration.  Something like this:
+Backwards Compatibility mitigates [Protocol Versioning Risk](Communication-Risk#protocol-versioning-risk).  Quite simply, this means, supporting the old format until it falls out of use.  If a supplier is pushing for a change in protocol it either must ensure that it is Backwards Compatible with the clients it is communicating with, or make sure they are upgraded concurrently.  When building [web services](https://en.wikipedia.org/wiki/Web_service), for example, it's common practice to version all APIs so that you can manage the migration.  Something like this:
 
- - Server publishes `/api/v1/something`.
+ - Supplier publishes `/api/v1/something`.
  - Clients use `/api/v1/something`.
- - Server publishes `/api/v2/something`.
+ - Supplier publishes `/api/v2/something`.
  - Clients start using `/api/v2/something`.
  - Clients (eventually) stop using `/api/v2/something`.
- - Server retires `/api/v2/something` API. 
+ - Supplier retires `/api/v2/something` API. 
 
 #### Forward Compatibility
 
@@ -216,31 +211,27 @@ Backwards Compatibility mitigates [Protocol Versioning Risk](Communication-Risk#
 
 `JavaScript` _can't_ support this:  because the meaning of the next instruction will often depend on the result of the previous one.  
 
-Does human language support this?  To some extent!  New words are added to our languages all the time.  When we come across a new word, we can either ignore it, guess the meaning, ask or look it up.  In this way, human language has **Forward Compatibility** features built in.
+Do human languages support this?  To some extent!  New words are added to our languages all the time.  When we come across a new word, we can either ignore it, guess the meaning, ask or look it up.  In this way, human language has **Forward Compatibility** features built in.
 
 ### Protocol Implementation Risk
 
-A second aspect of [Protocol Risk](Communication-Risk#protocol-risk) exists in heterogeneous computing environments, where protocols have been independently implemented based on standards.  For example, there are now so many different browsers, all supporting different levels of `HTTP`, `HTML` and `JavaScript` that it becomes impossible to test comprehensively over all the different versions.  To mitigate as much [Protocol Risk](Communication-Risk#protocol-risk) as possible, generally we run tests in a subset of browsers, and use a lowest-common-denominator approach to choosing protocol and language features.
-
-![Communication Protocols Risks](images/generated/communication_protocol_risks.png)
+A second aspect of [Protocol Risk](Communication-Risk#protocol-risk) exists in heterogeneous computing environments, where protocols have been independently implemented based on standards.  For example, there are now so many different browsers, all supporting variations of `HTTP`, `HTML` and `JavaScript` that it becomes impossible to test comprehensively over all the different versions.  To mitigate as much [Protocol Risk](Communication-Risk#protocol-risk) as possible, generally we test web sites in a subset of browsers, and use a lowest-common-denominator approach to choosing protocol and language features.
 
 ## Messages
 
-![Message Risk](images/generated/message-risk.png) 
+![Message Risk](images/generated/risks/communication/communication_message_risks.png) 
 
-Although Shannon's Communication Theory is about transmitting **Messages**, messages are really encoded **Ideas** and **Concepts**, from an **Internal Model**. <!-- tweet-end -->
+Although Shannon's Communication Theory is about transmitting **Messages**, messages are really encoded **Ideas** and **Concepts**, from an **Internal Model**. <!-- tweet-end -->  Let's break down some of the risks associated with this:
 
 ### Internal Model Assumption Risk
 
-When we construct messages in a conversation, we have to make judgements about what the other person already knows.  When talking to children, it's often hard work because they _assume_ that you have knowledge of everything they do.  This is called [Theory Of Mind](https://en.wikipedia.org/wiki/Theory_of_mind): the appreciation that your knowledge is different to other people's, and adjusting you messages accordingly.
+When we construct messages in a conversation, we have to make judgements about what the other person already knows.  For example, if I want to tell you about a new [JDBC Driver](https://en.wikipedia.org/wiki/JDBC_driver), this pre-assumes that you know what JDBC is:  the message has a dependency on prior knowledge.  Or, When talking to children, it's often hard work because they _assume_ that you have knowledge of everything they do.  
 
-When teaching, this is called [The Curse Of Knowledge](https://en.wikipedia.org/wiki/Curse_of_knowledge):  teachers have difficulty understanding students' problems _because they already understand the subject_.  For example, if I want to tell you about a new [JDBC Driver](https://en.wikipedia.org/wiki/JDBC_driver), this pre-assumes that you know what JDBC is:  the message has a dependency on prior knowledge.
+This is called [Theory Of Mind](https://en.wikipedia.org/wiki/Theory_of_mind): the appreciation that your knowledge is different to other people's, and adjusting you messages accordingly.  When teaching, this is called [The Curse Of Knowledge](https://en.wikipedia.org/wiki/Curse_of_knowledge):  teachers have difficulty understanding students' problems _because they already understand the subject_.  
 
 ### Message Dependency Risk  
 
-A second, related problem is actually [Dependency Risk](Dependency-Risk), which is covered more thoroughly in the next section.  Often, messages assume that you have followed everything up to that point already, otherwise again, your [Internal Model](Glossary#Internal-Model) will not be rich enough to understand the new messages.
-
-This happens when messages get missed, or delivered out of order.  In the past, TV shows were only aired once a week at a particular time.  So writers were constrained plot-wise by not knowing whether their audience would have seen the previous week's episode.  Therefore, often the state of the show would "reset" week-to-week, allowing you to watch it in _any_ order.
+A second, related problem is actually [Dependency Risk](Dependency-Risk), which is covered more thoroughly in a later section.  Often, to understand a new message, you have to have followed everything up to that point already.
 
 The same **Message Dependency Risk** exists for computer software:  if there is replication going on between instances of an application, and one of the instances misses some messages, you end up with a "[Split Brain](https://en.wikipedia.org/wiki/Split-brain_(computing))" scenario, where later messages can't be processed because they refer to an application state that doesn't exist.  For example, a message saying:
 
@@ -248,7 +239,7 @@ The same **Message Dependency Risk** exists for computer software:  if there is 
 Update user 53's surname to 'Jones'
 ```
 
-only makes sense if the application has previously had the message 
+only makes sense if the application has previously processed the message 
 
 ```
 Create user 53 with surname 'Smith'
@@ -256,21 +247,41 @@ Create user 53 with surname 'Smith'
 
 ### Misinterpretation Risk
 
-People don't rely on rigorous implementations of abstractions like computers do; we make do with fuzzy definitions of concepts and ideas.  We rely on [Abstraction](Glossary#abstraction) to move between the name of a thing and the _idea of a thing_.
-
-While machines only process _information_, people's brains run on concepts and ideas.  For people, abstraction is critical: nothing exists unless we have a name for it. <!-- tweet-end --> Our world is just atoms, but we don't think like this.  _The name is the thing_.  
+For people, nothing exists unless we have a name for it. <!-- tweet-end --> The world is just atoms, but we don't think like this.  _The name is the thing_.  
 
 > "The famous pipe. How people reproached me for it! And yet, could you stuff my pipe? No, it's just a representation, is it not? So if I had written on my picture “This is a pipe”, I'd have been lying!" - [Rene Magritte, of _The Treachery of Images_](https://en.wikipedia.org/wiki/The_Treachery_of_Images)
 
-This brings about [Misinterpretation Risk](Communication-Risk#misinterpretation-risk): names are not _precise_, and concepts mean different things to different people.  We can't be sure that people have the same meaning for concepts that we have.  
+People don't rely on rigorous definitions of abstractions like computers do; we make do with fuzzy definitions of concepts and ideas.  We rely on [Abstraction](Glossary#abstraction) to move between the name of a thing and the _idea of a thing_.
+
+This brings about [Misinterpretation Risk](Communication-Risk#misinterpretation-risk): names are not _precise_, and concepts mean different things to different people.  We can't be sure that other people have the same meaning for a name that we have.  
 
 ### Invisibility Risk
  
-Another cost of [Abstraction](Glossary#abstraction) is [Invisibility Risk](Communication-Risk#invisibility-risk).  While abstraction is a massively powerful technique, (as we saw above in the section on [Protocols](Communication-Risk#protocols), it allows things like the Internet to happen) it lets the function of a thing hide behind the layers of abstraction and become invisible.  
+Another cost of [Abstraction](Glossary#abstraction) is [Invisibility Risk](Communication-Risk#invisibility-risk).  While abstraction is a massively powerful technique, (as we saw above, [Protocols](Communication-Risk#protocols) allow things like the Internet to happen) it lets the function of a thing hide behind the layers of abstraction and become invisible.  
+
+#### Invisibility Risk In Conversation
+
+[Invisibility Risk](Communication-Risk#invisibility-risk) is risk due to information not sent.  Because humans don't need a complete understanding of a concept to use it, we can cope with some [Invisibility Risk](Communication-Risk#invisibility-risk) in communication, and this saves us time when we're talking.   It would be _painful_ to have conversations if, say, the other person needed to understand everything about how cars worked in order to discuss cars.  
+
+For people, [Abstraction](Glossary#abstraction) is a tool that we can use to refer to other concepts, without necessarily knowing how the concepts work. <!-- tweet-end --> This divorcing of "what" from "how" is the essence of abstraction and is what makes language useful.   
+
+The debt of [Invisibility Risk](Communication-Risk#invisibility-risk) comes due when you realise that _not_ being given the details _prevents_ you from reasoning about it effectively.<!-- tweet-end -->  Let's think about this in the context of a project status meeting, for example:
+ 
+- Can you be sure that the status update contains all the details you need to know?
+- Is the person giving the update wrong or lying?
+- Do you know enough about the details of what's being discussed in order to make informed decisions about how the project is going?
 
 #### Invisibility Risk In Software
 
-As soon as you create a function, you are doing abstraction.  <!-- tweet-end -->You are saying:  “I now have this operation. The details, I won’t mention again, but from now on, it’s called **f**”  And suddenly, “**f**” hides.  It is working invisibly.  Things go on in **f** that people don’t necessarily need to understand.   There may be some documentation, or tacit knowledge around what **f** is, and what it does, but it’s not necessarily right.  Referring to **f** is a much simpler job than understanding **f**.
+Invisibility Risk is everywhere in software.  Let's consider what happens when, in your program, you create a new function, **f**:
+
+ - First, by creating **f**, you have _given a piece of functionality a name_, which is abstraction.
+ - Second, **f** _supplies_ functionality to clients, so we have created a client-supplier relationship.
+ - Third, these parties now need to communicate, and this will require a protocol.  In a programming language, this protocol is the arguments passed to **f**, and the response _back_ from **f**. 
+ 
+But something else also happens:  By creating **f**, you are saying “I now have this operation. The details, I won’t mention again, but from now on, it’s called **f**”  Suddenly, the implementation of “**f**” hides and it is working invisibly.  Things go on in **f** that people don’t necessarily need to understand.   There may be some documentation, or tacit knowledge around what **f** is, and what it does, but it’s not necessarily right.  
+
+_Referring to **f** is a much simpler job than understanding **f**._
 
 We try to mitigate this via (for the most part) documentation, but this is a terrible deal:  because we can't understand the original, (un-abstracted) implementation, we now need to write some simpler documentation, which _explains_ the abstraction, in terms of further abstractions, and this is where things start to get murky.
 
@@ -281,20 +292,6 @@ We try to mitigate this via (for the most part) documentation, but this is a ter
  - When building a web-service, can you assume that it's working for the users in the way you want it to?
 
 When you build a software service, or even implement a thread, ask yourself:  "How will I know next week that this is working properly?"  <!-- tweet-end -->If the answer involves manual work and investigation, then your implementation has just cost you in [Invisibility Risk](Communication-Risk#invisibility-risk).
-
-#### Invisibility Risk In Conversation
-
-[Invisibility Risk](Communication-Risk#invisibility-risk) is risk due to information not sent.  But because humans don't need a complete understanding of a concept to use it, we can cope with some [Invisibility Risk](Communication-Risk#invisibility-risk) in communication, and this saves us time when we're talking.   It would be _painful_ to have conversations if, say, the other person needed to understand everything about how cars worked in order to discuss cars.  
-
-For people, [Abstraction](Glossary#abstraction) is a tool that we can use to refer to other concepts, without necessarily knowing how the concepts work. <!-- tweet-end --> This divorcing of "what" from "how" is the essence of abstraction and is what makes language useful.   
-
-The debt of [Invisibility Risk](Communication-Risk#invisibility-risk) comes due when you realise that _not_ being given the details _prevents_ you from reasoning about it effectively.<!-- tweet-end -->  Let's think about this in the context of a project status meeting, for example:
- 
-- Can you be sure that the status update contains all the details you need to know?
-- Is the person giving the update wrong or lying?
-- Do you know enough about the details of what's being discussed in order to make informed decisions about how the project is going?
-  
-![Message Risk](images/generated/communication_message_risks.png)
 
 ## Internal Models
 
@@ -312,7 +309,7 @@ Even if the receiver trusts the communicator, they may not believe the message. 
 - [Relativism](https://en.wikipedia.org/wiki/Relativism) is the concept that there are no universal truths.  Every truth is from a frame of reference.  For example, what constitutes _offensive language_ is dependent on the listener.
 - [Psycholinguistics](https://en.wikipedia.org/wiki/Psycholinguistics) is the study of humans aquire languages.  There are different languages and dialects, (and _industry dialects_), and we all understand language in different ways, take different meanings and apply different contexts to the messages.
   
-From the point-of-view of [Marketing Communications](Communication-Risk#Marketing-Communications) choosing the right message is part of the battle.  You are trying to communicate your idea in such a way as to mitigate Trust & Belief Risk.
+From the point-of-view of [Marketing Communications](Communication-Risk#Marketing-Communications), choosing the right message is part of the battle.  You are trying to communicate your idea in such a way as to mitigate Trust & Belief Risk.
 
 ### Learning-Curve Risk
 
@@ -338,10 +335,11 @@ But now we should be able to see the reasons it's harder to read than write too:
 
 ## Communication Risk Wrap Up
 
-So, here's a summary of where we've arrived with our model of communication risk:
+![Communication Marketing](images/generated/risks/communication/communication_3.png)
 
-![Communication 2](images/generated/communication_3.png)
+In this section, we've looked at [Communication Risk](Communication-Risk) itself, and broken it down into seven sub-types of risk, as shown in the diagram below.  Again, we are calling out _patterns_ here:  you can equally classify communication risks in other ways.  However, concepts like [Learning-Curve Risk](#Learning-Curve-Risk) and [Invisibility Risk](#Invisibility-Risk) we will need again: note how these risks are, in a sense, opposite: 
 
-tbd, So next it's time to look at [Complexity Risk](Complexity-Risk).
+ - The more abstraction you use, the less you need to learn, but at the expense of extra invisibility. 
+ - The more you peel back abstractions, the more you expose, but the more complex things are to understand.
 
-this seems complex tbd.
+In the next section, we will address complexity head-on, and understand how [Complexity Risk](Complexity-Risk) manifests in software projects.

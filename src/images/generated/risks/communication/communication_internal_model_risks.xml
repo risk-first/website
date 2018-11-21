@@ -3,59 +3,38 @@
   <svg:defs>
     <svg:style type="text/css"> @import url("risk.css");</svg:style>
   </svg:defs><diagram xmlns="http://www.kite9.org/schema/adl"  id="diagram-144" name="Communication - Model">
- 
- 
- <context id="id_1">
-  <risk class="internal-model" />
-  <risk class="belief"/>
-  <risk class="learning-curve" />
-  <risk class="trust" />
 
- </context>
- <context id="auto:159560" bordered="true">
-  
-  
-  <glyph id="id_29" style="kite9-vertical-align: top;">
-   
-   
-   <stereotype/>
-   <label>Reconciliation</label>
-   <text-lines/>
-   <symbols/>
-  </glyph>
-  <glyph id="id_17">
-   
-   
-   <stereotype/>
-   <label>Motivation</label>
-   <text-lines/>
-   <symbols/>
-  </glyph>
-  <label  id="id_19">
-   
-   
-   <text>Internal Model</text>
-   <symbols/>
-  </label>
- </context>
- <glyph id="id_2" shape="umlNOTE">
-  
-  
-  <stereotype>Examples</stereotype>
-  <label/>
-  <text-lines>
-   <text-line id="auto:187118">
- Code is harder to read than write
-Persuasive Argument
-Bad Actors
-   </text-line>
-  </text-lines>
- </glyph>
- 
- 
-  <link id="id_0" class="invisible" drawDirection="DOWN">
-   
-   <from xsi:type="glyph" reference="id_17"/>
-   <to xsi:type="glyph" reference="id_29"/>
-  </link>
+
+    <group style="kite9-layout: down">
+      <action id="id_24" style="kite9-margin: 20pt; kite9-horizontal-align: left; ">
+        <label>Reconciliation</label>
+      </action>
+      <action id="id_8" style="kite9-margin: 20pt; kite9-horizontal-align: left; ">
+        <label>Motivation</label>
+      </action>
+    </group>
+
+
+    <context id="c" bordered="true" style="kite9-layout: right; ">
+      <group style="kite9-layout: down;  kite9-vertical-align: top;">
+
+        <risk class="internal-model" />
+
+        <description>Risks to communication caused by the fact that the internal models of the participants are semantically incompatible in some way.  
+        </description>
+      </group>
+
+      <label id="id_16">
+        <text>Internal Model</text>
+        <symbols />
+      </label>
+      <group style="kite9-layout: down; kite9-vertical-align: top; ">
+        <risk class="learning-curve" />
+
+        <description>Risks due to the difficulty faced in updating an internal model.
+        </description>
+
+      </group>
+    </context>
+
   </diagram></svg:svg>

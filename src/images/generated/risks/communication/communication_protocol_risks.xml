@@ -1,64 +1,32 @@
 <?xml version="1.0"?>
-<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink'  zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
   <svg:defs>
     <svg:style type="text/css"> @import url("risk.css");</svg:style>
-  </svg:defs><diagram xmlns="http://www.kite9.org/schema/adl"  id="diagram-142" name="Communication - Model">
- 
- 
- <context id="id_0">
-  <risk class="protocol" />
-  <risk class="protocol-versioning" />
-  <risk class="protocol-incompatibility" />
-  <risk class="protocol-implementation" />
- </context>
- <context id="auto:157513" bordered="true">
-  <glyph id="id_10">
-   <stereotype/>
-   <label>Decoding</label>
-   <text-lines/>
-   <symbols/>
-  </glyph>
-  <glyph id="id_4">
-   <stereotype/>
-   <label>Encoding</label>
-   <text-lines/>
-   <symbols/>
-  </glyph>
-  <label  id="id_11">
-   <text>Protocol</text>
-   <symbols/>
-  </label>
- </context>
- <glyph id="id_1" shape="umlNOTE">
-  
-  
-  <stereotype>Examples</stereotype>
-  <label/>
-  <text-lines>
-   <text-line id="auto:182214">
-    <text>- Language barriers
-- Incompatible APIs
-- Misunderstandings about meaning</text>
-    <symbols/>
-   </text-line>
-  </text-lines>
-  <symbols/>
- </glyph>
- 
- 
-  <link id="id_2" class="invisible" drawDirection="RIGHT">
-   
-   <from xsi:type="glyph" reference="id_0"/>
-   <to xsi:type="context" reference="auto:157513"/>
-  </link>
-  <link id="id_3" class="invisible" drawDirection="RIGHT">
-   
-   <from xsi:type="context" reference="auto:157513"/>
-   <to xsi:type="glyph" reference="id_1"/>
-  </link>
-  <link id="id_5" class="invisible" drawDirection="DOWN">
-   
-   <from xsi:type="glyph" reference="id_4"/>
-   <to xsi:type="glyph" reference="id_10"/>
-  </link>
-  </diagram></svg:svg>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-142" name="Communication - Model">
+
+    <group style="kite9-layout: down">
+      <action id="id_24" style="kite9-margin: 20pt; kite9-horizontal-align: left; ">
+        <label>Decoding</label>
+      </action>
+      <action id="id_8" style="kite9-margin: 20pt; kite9-horizontal-align: left; ">
+        <label>Encoding</label>
+      </action>
+    </group>
+
+
+    <context id="c" bordered="true" style="kite9-layout: right; ">
+
+      <risk class="protocol" />
+
+      <description>Risks due to the failure of encoding or decoding messages between two parties in communication.  
+      </description>
+
+      <label id="id_16">
+        <text>Internal Model</text>
+        <symbols />
+      </label>
+    </context>
+
+  </diagram>
+</svg:svg>

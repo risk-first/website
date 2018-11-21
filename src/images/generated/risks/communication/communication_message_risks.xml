@@ -1,62 +1,41 @@
 <?xml version="1.0"?>
-<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink'  zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
   <svg:defs>
     <svg:style type="text/css"> @import url("risk.css");</svg:style>
-  </svg:defs><diagram xmlns="http://www.kite9.org/schema/adl"  id="diagram-143" name="Communication - Model">
- 
- 
- <context id="id_0">
-   <risk class="message" />
-   <risk class="internal-model-assumption" />
-   <risk class="misinterpretation" />
-   <risk class="invisibility" />
- </context>
- <context id="auto:152870" bordered="true">
-  
-  
-  <glyph id="id_14">
-   
-   
-   <stereotype/>
-   <label>Interpretation</label>
-   <text-lines/>
-   <symbols/>
-  </glyph>
-  <glyph id="id_2">
-   
-   
-   <stereotype/>
-   <label>Composition</label>
-   <text-lines/>
-   <symbols/>
-  </glyph>
-  <label  id="id_6">
-   
-   
-   <text>Message</text>
-   <symbols/>
-  </label>
- </context>
- <glyph id="id_3" shape="umlNOTE">
-  
-  
-  <stereotype>Examples</stereotype>
-  <label/>
-  <text-lines>
-   <text-line id="auto:184780">
-- "Curse Of Knowledge"
-- Out-of-order messages
-- Forgotten information
-    <symbols/>
-   </text-line>
-  </text-lines>
-  <symbols/>
- </glyph>
- 
- 
-  <link id="id_1" class="invisible" drawDirection="DOWN">
-   
-   <from xsi:type="glyph" reference="id_2"/>
-   <to xsi:type="glyph" reference="id_14"/>
-  </link>
-  </diagram></svg:svg>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-143" name="Communication - Model">
+
+    <group style="kite9-layout: down">
+      <action id="id_24" style="kite9-margin: 20pt; kite9-horizontal-align: left; ">
+        <label>Interpretation</label>
+      </action>
+      <action id="id_8" style="kite9-margin: 20pt; kite9-horizontal-align: left; ">
+        <label>Composition</label>
+      </action>
+    </group>
+
+
+    <context id="c" bordered="true" style="kite9-layout: right; ">
+      <group style="kite9-layout: down">
+
+        <risk class="message" />
+
+        <description>Risks caused by composing and interpreting messages in the communication process.
+        </description>
+      </group>
+
+      <label id="id_16">
+        <text>Internal Model</text>
+        <symbols />
+      </label>
+      <group style="kite9-layout: down">
+        <risk class="invisibility" />
+
+        <description>Risks caused by the choice of abstractions we use in communication.
+        </description>
+
+      </group>
+    </context>
+
+  </diagram>
+</svg:svg>
