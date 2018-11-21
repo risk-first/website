@@ -3,252 +3,46 @@
   <svg:defs>
     <svg:style type="text/css"> @import url("risk.css");</svg:style>
   </svg:defs>
-  <diagram xmlns="http://www.kite9.org/schema/adl"  id="diagram-145" name="Communication - Model">
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-145" name="Communication - Model">
+
+    <risk class="communication" />
+    <group style="kite9-layout: right; ">
+      <context style="kite9-layout: down ">
+        <risk class="internal-model" />
+        <risk class="learning-curve" id="learning-curve" />
+        <label>
+          <text>Internal Model</text>
+          <symbols />
+        </label>
+      </context>
+
+      <context style="kite9-layout: down; kite9-sizing: maximize; ">
+        <risk class="message" />
+        <risk class="invisibility" id="invisibility" />
+        <label>
+          <text>Message</text>
+          <symbols />
+        </label>
+      </context>
+
+      <context style="kite9-layout: down; kite9-sizing: maximize; ">
+        <risk class="protocol" id="protocol" />
+        <label>
+          <text>Protocol</text>
+          <symbols />
+        </label>
+      </context>
+      <context style="kite9-layout: down; kite9-sizing: maximize;">
+
+        <risk class="channel" id="channel" />
+
+        <label>
+          <text>Channel</text>
+          <symbols />
+        </label>
+
+      </context>
+    </group>
 
-
-    <context id="auto:159560" bordered="true">
-
-
-      <glyph id="id_29">
-
-
-        <stereotype />
-        <label>Reconciliation</label>
-        <text-lines />
-        <symbols />
-      </glyph>
-      <glyph id="id_17">
-
-
-        <stereotype />
-        <label>Motivation</label>
-        <text-lines />
-        <symbols />
-      </glyph>
-      <label  id="id_19">
-
-
-        <text>Internal Model</text>
-        <symbols />
-      </label>
-    </context>
-    <context id="id_1.1" style="kite9-layout: down;">
-      <risk class="internal-model" />
-      <risk class="belief" />
-      <risk class="learning-curve" />
-      <risk class="trust" />
-    </context>
-    <context id="id_0" style="kite9-layout: down;">
-      <risk class="message" />
-      <risk class="internal-model-assumption" />
-      <risk class="misinterpretation" />
-      <risk class="invisibility" />
-    </context>
-    <context id="auto:152870.1" bordered="true">
-
-
-      <glyph id="id_14.1">
-
-
-        <stereotype />
-        <label>Interpretation</label>
-        <text-lines />
-        <symbols />
-      </glyph>
-      <glyph id="id_2.1">
-
-
-        <stereotype />
-        <label>Composition</label>
-        <text-lines />
-        <symbols />
-      </glyph>
-      <label  id="id_6.1">
-
-
-        <text>Message</text>
-        <symbols />
-      </label>
-    </context>
-    <context id="id_0.1" style="kite9-layout: down;">
-      <risk class="protocol" />
-      <risk class="protocol-versioning" />
-      <risk class="protocol-incompatibility" />
-      <risk class="protocol-implementation" />
-    </context>
-    <context id="auto:157513.1" bordered="true">
-
-
-      <glyph id="id_10.1">
-
-
-        <stereotype />
-        <label>Decoding</label>
-        <text-lines />
-        <symbols />
-      </glyph>
-      <glyph id="id_4.1">
-
-
-        <stereotype />
-        <label>Encoding</label>
-        <text-lines />
-        <symbols />
-      </glyph>
-      <label  id="id_11.1">
-
-
-        <text>Protocol</text>
-        <symbols />
-      </label>
-    </context>
-    <context id="id_1.1.1" style="kite9-layout: down;">
-      <risk class="channel" />
-      <risk class="noise" />
-      <risk class="channel-fit" />
-      <risk class="channel-capacity" />
-    </context>
-    <context id="auto:158001.1" bordered="true">
-
-
-      <glyph id="id_24.1">
-
-
-        <stereotype />
-        <label>Transmission</label>
-        <text-lines />
-        <symbols />
-      </glyph>
-      <glyph id="id_8.1">
-
-
-        <stereotype />
-        <label>Reception</label>
-        <text-lines />
-        <symbols />
-      </glyph>
-      <label  id="id_13.1">
-
-
-        <text>Channel</text>
-        <symbols />
-      </label>
-    </context>
-
-
-    <link id="id_8" class="invisible" drawDirection="RIGHT">
-
-      <from xsi:type="context" reference="auto:159560" />
-      <to xsi:type="context" reference="auto:152870.1" />
-    </link>
-    <link id="id_12" class="invisible" drawDirection="DOWN">
-
-      <from xsi:type="glyph" reference="id_1.1" />
-      <to xsi:type="context" reference="auto:159560" />
-    </link>
-    <link id="id_15" shape="NORMAL" style="" drawDirection="LEFT">
-
-      <from xsi:type="glyph" reference="id_14.1" />
-      <to xsi:type="glyph" reference="id_29" class="arrow" />
-
-
-    </link>
-    <link id="id_37" class="invisible" drawDirection="DOWN">
-
-      <from xsi:type="glyph" reference="id_17" />
-      <to xsi:type="glyph" reference="id_29" />
-    </link>
-    <link id="id_21" shape="NORMAL" style="" drawDirection="RIGHT">
-
-      <from xsi:type="glyph" reference="id_17" />
-      <to xsi:type="glyph" reference="id_2.1" class="arrow" />
-
-
-    </link>
-    <link id="id_34" class="invisible" drawDirection="RIGHT">
-
-      <from xsi:type="glyph" reference="id_1.1" />
-      <to xsi:type="glyph" reference="id_0" />
-    </link>
-    <link id="id_30" class="invisible" drawDirection="UP">
-
-      <from xsi:type="glyph" reference="id_2.1" />
-      <to xsi:type="glyph" reference="id_0" />
-    </link>
-    <link id="id_31" class="invisible" drawDirection="RIGHT">
-
-      <from xsi:type="glyph" reference="id_0" />
-      <to xsi:type="glyph" reference="id_0.1" />
-    </link>
-    <link id="id_10" class="invisible" drawDirection="RIGHT">
-
-      <from xsi:type="context" reference="auto:152870.1" />
-      <to xsi:type="context" reference="auto:157513.1" />
-    </link>
-    <link id="id_1.1.1.1" class="invisible" drawDirection="DOWN">
-
-      <from xsi:type="glyph" reference="id_2.1" />
-      <to xsi:type="glyph" reference="id_14.1" />
-    </link>
-    <link id="id_20" shape="NORMAL" style="" drawDirection="LEFT">
-
-      <from xsi:type="glyph" reference="id_10.1" />
-      <to xsi:type="glyph" reference="id_14.1" class="arrow" />
-
-
-    </link>
-    <link id="id_3.1" shape="NORMAL" style="" drawDirection="RIGHT">
-
-      <from xsi:type="glyph" reference="id_2.1" />
-      <to xsi:type="glyph" reference="id_4.1" class="arrow" />
-
-
-    </link>
-    <link id="id_25" class="invisible" drawDirection="UP">
-
-      <from xsi:type="glyph" reference="id_4.1" />
-      <to xsi:type="glyph" reference="id_0.1" />
-    </link>
-    <link id="id_27" class="invisible" drawDirection="RIGHT">
-
-      <from xsi:type="glyph" reference="id_0.1" />
-      <to xsi:type="glyph" reference="id_1.1.1" />
-    </link>
-    <link id="id_11" class="invisible" drawDirection="RIGHT">
-
-      <from xsi:type="context" reference="auto:157513.1" />
-      <to xsi:type="context" reference="auto:158001.1" />
-    </link>
-    <link id="id_9" shape="NORMAL" style="" drawDirection="LEFT">
-
-      <from xsi:type="glyph" reference="id_8.1" />
-      <to xsi:type="glyph" reference="id_10.1" class="arrow" />
-
-
-    </link>
-    <link id="id_5" class="invisible" drawDirection="DOWN">
-
-      <from xsi:type="glyph" reference="id_4.1" />
-      <to xsi:type="glyph" reference="id_10.1" />
-    </link>
-    <link id="id_23" shape="NORMAL" style="" drawDirection="RIGHT">
-
-      <from xsi:type="glyph" reference="id_4.1" />
-      <to xsi:type="glyph" reference="id_24.1" class="arrow" />
-
-
-    </link>
-    <link id="id_26" class="invisible" drawDirection="UP">
-
-      <from xsi:type="glyph" reference="id_24.1" />
-      <to xsi:type="glyph" reference="id_1.1.1" />
-    </link>
-    <link id="id_32" shape="NORMAL" style="">
-
-      <from xsi:type="glyph" reference="id_24.1" />
-      <to xsi:type="glyph" reference="id_8.1" class="arrow" />
-
-
-    </link>
   </diagram>
 </svg:svg>
