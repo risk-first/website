@@ -45,14 +45,29 @@ public class TextPreprocessor {
 			} else if (line.trim().startsWith("<!--latex")) {
 				outputRawLatex(line);
 			} else {
-				line = line.replaceAll("\\s+$", "");	// trim end of line
-				line = line.replaceAll(" section", " chapter"); // section -> chapter
-				processLinks(line, TextPreprocessor::processLink, lineNo, System.out::print);
+				line = handleReplace(line);		// tidy up
+				processLinks(line, TextPreprocessor::processLink, lineNo, TextPreprocessor::handleSpecials);
 			}
 			System.out.println("");
 			line = br.readLine();
 			lineNo++;
 		}
+	}
+
+	private static String handleReplace(String line) {
+		line = line.replaceAll("\\s+$", "");	// trim end of line
+		line = line.replaceAll(" section", " chapter"); // section -> chapter
+		int replace = line.indexOf("<!--replace ");
+		if (replace > -1) {
+			int replaceContentIdx = line.indexOf("-->", replace);
+			int endreplace = line.indexOf("<!--endreplace");
+			int endReplaceContentIdx = line.indexOf("-->", endreplace)+3;
+			String replaceContent = line.substring(replace+12, replaceContentIdx);
+			String out = line.substring(0, replace) + replaceContent + line.substring(endReplaceContentIdx);
+			return out;
+		}
+		
+		return line;
 	}
 
 	public static void outputRawLatex(String line) {
@@ -76,11 +91,12 @@ public class TextPreprocessor {
 				quotation = line;
 				source = null;
 			}
-			processLinks(quotation, TextPreprocessor::processLink, lineNo, System.out::println);
-			System.out.println("```{=latex}");
+			quotation = handleReplace(quotation);
+			processLinks(quotation, TextPreprocessor::processLink, lineNo, TextPreprocessor::handleSpecials);
+			System.out.println("\n```{=latex}");
 			if (source != null) {
 				System.out.print("\\sourceatright{");
-				processLinks(source.replace("\n", ""), TextPreprocessor::latexSourceLink, lineNo, System.out::print);
+				processLinks(source.replace("\n", ""), TextPreprocessor::latexSourceLink, lineNo, TextPreprocessor::handleSpecials);
 				System.out.println("}");
 			}
 			System.out.println("\\end{quotation}");
@@ -90,6 +106,20 @@ public class TextPreprocessor {
 		}
 	}
 	
+	private static void handleSpecials(String in) {
+		int x =0;
+		for (int i = 0; i < in.length(); i++) {
+			char c = in.charAt(i);
+			if (c=='£') {
+				System.out.print("\\pounds");
+			} else if (c=='£'){
+				
+			} else {
+				System.out.print(c);
+			}
+		}
+	}
+
 	static Pattern p = Pattern.compile("(\\!)?\\[([^\\]]*?)\\]\\((.*?)\\)(\\{(.*?)\\})?");
 	
 	public interface LinkProcessor {
