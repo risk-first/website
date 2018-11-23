@@ -20,6 +20,8 @@ public class TextPreprocessor {
 	
 	public static final boolean LINKS_AS_BOLD = false;
 	
+	public static String lastFigureRef;
+	
 	public static Set<String> seenUrls = new HashSet<>();
 
 	public static void main(String[] args) throws IOException {
@@ -57,6 +59,10 @@ public class TextPreprocessor {
 	private static String handleReplace(String line) {
 		line = line.replaceAll("\\s+$", "");	// trim end of line
 		line = line.replaceAll(" section", " chapter"); // section -> chapter
+		
+		line = line.replaceAll("The diagram above", "Figure \\\\ref{"+lastFigureRef+"}");
+		line = line.replaceAll("the diagram above", "figure \\\\ref{"+lastFigureRef+"}");
+		
 		int replace = line.indexOf("<!--replace ");
 		if (replace > -1) {
 			int replaceContentIdx = line.indexOf("-->", replace);
@@ -182,11 +188,13 @@ public class TextPreprocessor {
 					System.out.print(text.trim());
 				}
 			} else if (!isState(url)) {
+				String label = url.substring(url.lastIndexOf("/")+1);
 				if (url.contains("generated")) {
 					// need to replace with 400dpi version
 					url = url.substring(0, url.length()-4) + "-400dpi.png";
 				}
 				
+				lastFigureRef = label;
 				if (url.contains("sideways")) {
 					System.out.println("```{=latex}");
 					System.out.println("\\begin{sidewaysfigure}");
@@ -197,7 +205,7 @@ public class TextPreprocessor {
 					System.out.println("```");
 
 				} else {
-					System.out.println("!["+text+"]("+url+")");
+					System.out.println("!["+text+"\\label{"+label+"}]("+url+")");
 				}					
 			}
 		} else if (seenUrls.contains(url)) {
