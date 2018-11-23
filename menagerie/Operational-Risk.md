@@ -35,11 +35,11 @@ When building software, it's tempting to take a very narrow view of the dependen
 
 ## Operations Management
 
-If we are designing a software system to "live" in the real world, we have to be mindful of the environment we're working in, and craft our software and processes accordingly.   This view of the "wider" system is the discipline of Operations Management.  The below diagram (from ["Operations Management" by _Slack et al._](http://amzn.eu/d/b6ZjuMu)) breaks down some of the concerns of this discipline.
-
 ![A General Model of Operations Management](images/kite9/operations_management.png)
 
-In this diagram, a **Transform Process** (the **Operation** itself) is embedded in the **Environment**, which supplies it with three key dependencies:
+If we are designing a software system to "live" in the real world, we have to be mindful of the environment we're working in, and craft our software and processes accordingly.   This view of the "wider" system is the discipline of Operations Management.  The diagram above (from ["Operations Management" by _Slack et al._](http://amzn.eu/d/b6ZjuMu)) breaks down some of the concerns of this discipline.
+
+In the diagram above, a **Transform Process** (the **Operation** itself) is embedded in the **Environment**, which supplies it with three key dependencies:
   
  - The **Resources** it needs, whether _transformed_ resources (like electricity or information, say).  
  - It's **Customers**, which supply it with money in return for goods and services, and 
@@ -60,7 +60,7 @@ For this reason, the toolbox of mitigations for [Operatational Risk](Operational
 
 ![Diagram of Four Strategies to Mitigate Operational Risk](images/generated/risks/operational/operational-risk.png)
 
-As shown in this diagram, these are [Meeting Reality](Glossary#meet-reality), [Monitoring & Detection](Operational-Risk#monitoring-and-detection), [Design & Change](Operational-Risk#design-and-change) and [Forecasting & Planning](#forecasting-and-planning).
+As shown in the diagram above, these are [Meeting Reality](Glossary#meet-reality), [Monitoring & Detection](Operational-Risk#monitoring-and-detection), [Design & Change](Operational-Risk#design-and-change) and [Forecasting & Planning](#forecasting-and-planning).
 
 ## Meeting Reality 
 

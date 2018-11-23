@@ -16,7 +16,7 @@ So, let's see how this kind of recursion looks on our model.
 
 ## "Navigating the [Risk Landscape](Risk-Landscape)"
 
-The above diagram shows _just one possible action_, in reality, you'll have choices.  We often have multiple ways of achieving a [Goal In Mind](Glossary#Goal-In-Mind).  
+The diagram above shows _just one possible action_, in reality, you'll have choices.  We often have multiple ways of achieving a [Goal In Mind](Glossary#Goal-In-Mind).  
 
 What's the best way?  
 

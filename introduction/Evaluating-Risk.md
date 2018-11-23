@@ -52,7 +52,7 @@ One of the criticisms of the [Risk Register](Evaluating-Risk#risk-registers) app
 
 In the preceding discussions, I have been careful to point out the existence of [Hidden Risks](Glossary#hidden-risk) for that very reason. Or, to put another way:
 
-> What we don't know is what usually gets us killed - Petyr Baelish, _Game of Thrones_
+> "What we don't know is what usually gets us killed" - Petyr Baelish, _Game of Thrones_
 
 Donald Rumsfeld's famous [Known Knowns](https://en.wikipedia.org/wiki/There_are_known_knowns) is also a helpful conceptualisation:  
 
@@ -69,7 +69,7 @@ I am using **risk** everywhere because later we will talk about specific risks (
 
 Let's look at the classic description of Risk Management:
 
-> Risk Management is the process of thinking out corrective actions before a problem occurs, while it's still an abstraction.  The opposite of risk management is crisis management, trying to figure out what to do about the problem after it happens. - [Waltzing With Bears, _Tom De Marco & Tim Lister_](http://amzn.eu/d/i0IDFA2)
+> "Risk Management is the process of thinking out corrective actions before a problem occurs, while it's still an abstraction.  The opposite of risk management is crisis management, trying to figure out what to do about the problem after it happens." - [Waltzing With Bears, _De Marco, Lister_](http://amzn.eu/d/i0IDFA2)
 
 This is not how Risk-First sees it:  
 
@@ -120,11 +120,9 @@ If the methodology _fails at a particular scale_, this tells you something about
 
 ### Speed
 
-For example, in [Rapid Development](http://a.co/d/ddWGTB2) by Steve McConnell we have the following diagram:
-
 ![Pillars, From Rapid Development By Steve McConnell](images/generated/introduction/pillars_smc.png)  
 
-And, this is _fine_, McConnell is structuring the process from the perspective of _delivering as quickly as possible_.  However, here, I want to turn this on it's head.  Software Development from a risk-first perspective is an under-explored technique, and I believe it offers some useful insights.   So the aim here is to present the case for viewing software development like this:
+The diagram above reproduces a figure from [Rapid Development](http://a.co/d/ddWGTB2) by Steve McConnell.  This is _fine_, McConnell is structuring the process from the perspective of _delivering as quickly as possible_.  However, here, I want to turn this on it's head.  Software Development from a risk-first perspective is an under-explored technique, and I believe it offers some useful insights.   So the aim here is to present the case for viewing software development like this:
 
 ![Pillars, re-arranged](images/generated/introduction/pillars_kite9.png)
 
@@ -145,7 +143,7 @@ The problem is, we now need to take a call on whether to do something that is _u
 
 [Net Present Value](https://en.wikipedia.org/wiki/Net_present_value) allows us to discount value in the future, which offers us a way to reconcile these two variables.  The further in the future the value is realised, the bigger the discount.  This is done because payment _now_ is better than payment in the future:  there is the risk that something will happen to prevent that future payment.  This is why we have _interest rates_ on loan payments.
 
-In the diagram, you can see two future payments, Payment **A** of £100 due in one year, and Payment **B** of £150 due in 10 years.  By discounting at a given rate (here at a high rate of 20% per year) we can compare their worth _now_.  At this discount rate, Payment **A**,  - arriving next year - has a far greater value.  
+In <!--replace diagram ref{npv.png} -->the diagram<!--endreplace -->, you can see two future payments, Payment **A** of £100 due in one year, and Payment **B** of £150 due in 10 years.  By discounting at a given rate (here at a high rate of 20% per year) we can compare their worth _now_.  At this discount rate, Payment **A**,  - arriving next year - has a far greater value.  
 
 ![Net Present Value Discounting](images/numbers/npv.png)
 

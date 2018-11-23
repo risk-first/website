@@ -126,7 +126,7 @@ Darwin's conception of fitness was not one of athletic prowess, but how well an 
 
 ![Feature Risks Assembled:  Fit Risks, shown as _gaps_, as in the _Service Quality Model_](images/generated/risks/feature/all_feature_risk.png) 
 
-For further reading, you can check out [The Service Quality Model](http://en.wikipedia.org/SERVQUAL), which this diagram is derived from.  This model analyses the types of _quality gaps_ in services, and how consumer expectations and perceptions of a service arise.
+For further reading, you can check out [The Service Quality Model](http://en.wikipedia.org/SERVQUAL), which the diagram above is derived from.  This model analyses the types of _quality gaps_ in services, and how consumer expectations and perceptions of a service arise.
 
 In the [Staging And Classifying](Staging-And-Classifying) section, we'll come back and build on this model further. 
 
