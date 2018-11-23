@@ -1,10 +1,10 @@
 ![For Review](images/state/for-review.png)
 
-[Complexity Risk](Complexity-Risk) are the risks to your project due to its underlying "complexity".  Over the next few sections, we'll break down exactly what we mean by complexity, looking at [Dependency Risk](Dependency-Risk) and [Boundary Risk](Boundary-Risk) as two particular sub-types of [Complexity Risk](Complexity-Risk).  However, in this section, we're going to be specifically focusing on _code you write_: the size of your code-base, the number of modules, the interconnectedness of the modules and how well-factored the code is.  
+[Complexity Risk](Complexity-Risk) are the risks to your project due to its underlying "complexity".  Over the next few sections, we'll break down exactly what we mean by complexity, looking at [Dependency Risk](Dependency-Risk) and [Boundary Risk](Boundary-Risk) as two particular sub-types of [Complexity Risk](Complexity-Risk).  However, in this section, we're going to start by looking at _code you write_: the size of your code-base, the number of modules, the interconnectedness of the modules and how well-factored the code is.  
 
 ![Complexity Risk and Codebase Risk](images/generated/risks/complexity/complexity-risk.png)
 
-You could think of this section, then, as **Codebase Risk**:  We'll look at three separate measures of codebase complexity and talk about [Technical Debt](Complexity-Risk#technical-debt), and look at places in which **Codebase Risk** is at it's greatest.
+You could think of this as **Codebase Risk**.  Next, we'll look at three separate measures of codebase complexity and talk about [Technical Debt](Complexity-Risk#technical-debt), and look at places in which **Codebase Risk** is at it's greatest.
 
 ## Kolmogorov Complexity
 
@@ -16,7 +16,7 @@ This is a fairly handy definition for us, as it means that to in writing softwar
 
 Let's say we wanted to write a JavaScript program to output this string:
 
-```
+```javascript
 abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
 ```
 
@@ -58,9 +58,11 @@ function out() {                                      (7 )
 
 What's happening here is that we're _exploiting a pattern_: we noticed that `ABCD` occurs several times, so we defined it a single time and then used it over and over, like a stamp.  
 
-By applying techniques such as Abstraction, we can improve in the direction of the Kolmogorov limit.  And, by allowing ourselves to say that _symbols_ (like `out` and `ABCD`) are worth one complexity point, we've allowed that we can be descriptive in our `function` name and `const`.  Naming things is an important part of abstraction, because to use something, you have to be able to refer to it.
+By applying Abstraction, we can improve in the direction of the Kolmogorov limit.  And, by allowing ourselves to say that _symbols_ (like `out` and `ABCD`) are worth one complexity point, we've allowed that we can be descriptive in our `function` name and `const`.  Naming things is an important part of abstraction, because to use something, you have to be able to refer to it.
 
 ### Trade-Off
+
+Generally, the more complex a piece of software is, the more difficulty users will have understanding it, and the more difficulty developers will have changing it.  We should prefer the third version of our code over either the first or second because of it's brevity.
 
 But we could go further down into [Code Golf](https://en.wikipedia.org/wiki/Code_golf) territory.  This javascript program plays [FizzBuzz](https://en.wikipedia.org/wiki/Fizz_buzz) up to 100, but is less readable than you might hope:
 
@@ -69,7 +71,7 @@ for(i=0;i<100;)document.write(((++i%3?'':'Fizz')+
 (i%5?'':'Buzz')||i)+"<br>")                           (62)
 ```
 
-So there is at some point a trade-off to be made between [Complexity Risk](Complexity-Risk) and [Communication Risk](Communication-Risk).  This is a topic we'll address more in that section.   But for now, it should be said that [Communication Risk](Communication-Risk) is about _misunderstanding_:  The more complex a piece of software is, the more difficulty users will have understanding it, and the more difficulty developers will have changing it.  
+So there is at some point a trade-off to be made between [Complexity Risk](Complexity-Risk) and [Communication Risk](Communication-Risk).  After a certain point, reducing Kolmogorov Complexity further risks making the program less intelligible. 
 
 ## Connectivity
 
@@ -79,7 +81,7 @@ A second, useful measure of complexity comes from graph theory, and that is the 
 
 To see this in action, have a look at the below graph:
 
-![Graph 1](images/generated/risks/complexity/connectivity_1.png)
+![Graph 1, 2-Connected](images/generated/risks/complexity/connectivity_1.png)
 
 It has 10 vertices, labelled **a** to **j**, and it has 15 edges (or links) connecting the vertices together.  If any single edge were removed from this diagram, the 10 vertices would still be linked together.   Because of this, we can say that the graph is _2-connected_.   That is, to disconnect any single vertex, you'd have to remove _at least_ two edges.
 
@@ -109,7 +111,7 @@ i: j
 
 Let's remove some of those extra links:
 
-![Graph 2](images/generated/risks/complexity/connectivity_2.png)
+![Graph 2, 1-Connected](images/generated/risks/complexity/connectivity_2.png)
 
 In this graph, I've removed 6 of the edges.  Now, we're in a situation where if any single edge is removed, the graph becomes _unconnected_.  That is, it's broken into distinct chunks.  So, it's _1-connected_.  
 
@@ -126,21 +128,27 @@ h: i
                                                       (25)
 ```
 
-**Connectivity** is also **Complexity**.  Heavily connected programs/graphs are much harder to work with than less-connected ones.  Even _laying out_ the first graph sensibly is a harder task than the second (the second is a doddle).  But the reason programs with greater connectivity are harder to work with is that changing one module potentially impacts many others.
+**Connectivity** is also **Complexity**.  This carries over into software too:  because heavily connected software is more complex than less-connected software, it is harder to reason about and work with, and the reason programs with greater connectivity are harder to work with is that changing one module potentially impacts many others.  Let's dig into this further.
 
 ## Hierarchies and Modularisation
 
 In the second, simplified graph, I've arranged it as a hierarchy, which I can do now that it's only 1-connected.  For 10 vertices, we need 9 edges to connect everything up.  It's always:
 
-```
+```javascript
   edges = vertices - 1
 ```
 
 Note that I could pick any hierarchy here:  I don't have to start at **c** (although it has the nice property that it has two roughly even sub-trees attached to it).
 
-How does this help us?   Imagine if **a** - **j** were modules of a software system, and the edges of the graph showed communications between the different sub-systems.  In the first graph, we're in a worse position:  who's in charge?  What deals with what?  Can I isolate a component and change it safely?  What happens if one component disappears?  But, in the second graph, it's easier to reason about, because of the reduced number of connections and the new heirarchy of organisation.  
+How does this help us?   Imagine if **a** - **j** were modules of a software system, and the edges of the graph showed communications between the different sub-systems.  In the first graph, we're in a worse position:  
 
-On the down-side, perhaps our messages have farther to go now:  in the original **i** could send a message straight to **j**, but now we have to go all the way via **c**.   But this is the basis of [Modularisation](https://en.wikipedia.org/wiki/Modular_programming) and [Hierarchy](https://en.wikipedia.org/wiki/Hierarchy).
+ - Who's in charge?  What deals with what?  
+ - Can I isolate a component and change it safely?  
+ - What happens if one component disappears?  
+ 
+But, in the second graph, it's easier to reason about, because of the reduced number of connections and the new hierarchy of organisation.  
+
+On the down-side, perhaps our messages have farther to go now:  in the original, **i** could send a message straight to **j**, but now we have to go all the way via **c**.   But this is the basis of [Modularisation](https://en.wikipedia.org/wiki/Modular_programming) and [Hierarchy](https://en.wikipedia.org/wiki/Hierarchy).
 
 As a tool to battle complexity, we don't just see this in software, but everywhere in our lives.  Society, business, nature and even our bodies:
   
@@ -149,11 +157,9 @@ As a tool to battle complexity, we don't just see this in software, but everywhe
  - **Organs** - like hearts livers, brains etc.
  - **Organisms** - like you and me.
  
-The great complexity-reducing mechanism of modularisation is that _you only have to consider your local environment_.  Elements of the program that are "far away" in the hierarchy can be relied on not to affect you.  This is somewhat akin to the **Principal Of Locality**:
+The great complexity-reducing mechanism of modularisation is that _you only have to consider your local environment_.  
 
-> "Spatial locality refers to the use of data elements within relatively close storage locations." - [Locality Of Reference, _Wikipedia_](https://en.wikipedia.org/wiki/Locality_of_reference)
- 
-## Cyclomatic Complexity
+## More Abstraction
 
 A variation on this graph connectivity metric is our third measure of complexity, [Cyclomatic Complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity).  This is:
 
@@ -167,9 +173,7 @@ So, our first graph had a **Cyclomatic Complexity** of 7. `(15 - 10 + 2)`, while
 
 Cyclomatic complexity is all about the number of different routes through the program.   The more branches a program has, the greater it's cyclomatic complexity.  Hence, this is a useful metric in [Testing](Development-Process) and [Code Coverage](https://en.wikipedia.org/wiki/Code_coverage): the more branches you have, the more tests you'll need to exercise them all. 
 
-## More Abstraction
-
-Although we ended up with our second graph having a **Cyclomatic Complexity** of 1 (the minimum), we can go further through abstraction, because this representation isn't minimal from a **Kolmogorov Complexity** point-of-view.  For example, we might observe that there are further similarities in the graph that we can "draw out":
+Our second graph has a **Cyclomatic Complexity** of 1 (the minimum), but we can go further through abstraction, because this representation isn't minimal from a **Kolmogorov Complexity** point-of-view.  For example, we might observe that there are further similarities in the graph that we can "draw out":
 
 ![Complexity 3](images/generated/risks/complexity/connectivity_3.png)
 
@@ -177,25 +181,19 @@ Here, we've spotted that the structure of subgraphs **P1** and **P2** are the sa
 
 So, we've looked at some measures of software structure complexity, in order that we can say "this is more complex than this".  However, we've not really said why complexity entails [Risk](Glossary#Attendant-Risk).  So let's address that now by looking at two analogies, [Mass](Complexity-Risk#Complexity-as-mass) and [Technical Debt](Complexity-Risk#technical-debt).  
 
-## Complexity As Mass
+## Complexity is Mass
 
-The first way to look at complexity is as **Mass** or **Inertia** :  a software project with more complexity has greater **Inertia** or **Mass** than one with less complexity.
+The first way to look at complexity is as **Mass** :  a software project with more complexity has greater mass than one with less complexity.  Newton's Second Law states:
 
-Newton's Second Law states:
+> F = _m_**a**,    ( Force = Mass x Acceleration )
 
-> "F = _m_**a**,    ( Force = Mass x Acceleration )" - [Netwon's Laws Of Motion, _Wikipedia_](https://en.wikipedia.org/wiki/Newtons_laws_of_motion)
-
-That is, in order to move your project _somewhere new_, and make it do new things, you need to give it a push, and the more **Mass** it has, the more **Force** you'll need to move (accelerate) it.  
-
-**Inertia** and **Mass** are equivalent concepts in physics:
-
-> "mass is the quantitative or numerical measure of a body’s inertia, that is of its resistance to being accelerated".  - [Inertia, _Wikipedia_](https://en.wikipedia.org/wiki/Inertia#Mass_and_inertia)
+That is, in order to move your project _somewhere new_, and make it do new things, you need to give it a push, and the more mass it has, the more **Force** you'll need to move (accelerate) it.  
 
 You could stop here and say that the more lines of code a project contains, the higher it's mass.  And, that makes sense, because in order to get it to do something new, you're likely to need to change more lines.  
 
-But there is actually some underlying sense in which _this is real_, as discussed in this [Veritasium](https://www.youtube.com/user/1veritasium) video.  To paraphrase:
+But there is actually some underlying sense in which this is true in the real, physical world too, as discussed in this [Veritasium](https://www.youtube.com/user/1veritasium) video.  To paraphrase:
 
-> "Most of your mass you owe due to E=mc², you owe to the fact that your mass is packed with energy, because of the **interactions** between these quarks and gluon fluctuations in the gluon field... what we think of as ordinarily empty space... that turns out to be the thing that gives us most of our mass." - [Your Mass is NOT From the Higgs Boson, _Veritasium_](https://www.youtube.com/watch?annotation_id=annotation_3771848421&feature=iv&src_vid=Xo232kyTsO0&v=Ztc6QPNUqls)
+> "Most of your mass you owe due to <!--replace $E=mc^2$ -->E=mc²<!--endreplace -->, you owe to the fact that your mass is packed with energy, because of the **interactions** between these quarks and gluon fluctuations in the gluon field... what we think of as ordinarily empty space... that turns out to be the thing that gives us most of our mass." - [Your Mass is NOT From the Higgs Boson, _Veritasium_](https://www.youtube.com/watch?annotation_id=annotation_3771848421&feature=iv&src_vid=Xo232kyTsO0&v=Ztc6QPNUqls)
 
 I'm not an expert in physics, _at all_, and so there is every chance that I am pushing this analogy too hard.  But, substituting quarks and gluons for pieces of software we can (in a very handwaving-y way) say that more complex software has more **interactions** going on, and therefore has more mass than simple software. 
 
