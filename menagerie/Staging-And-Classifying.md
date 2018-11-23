@@ -71,7 +71,7 @@ Our problems compound when we try to [Coordinate](Coordination-Risk) with the de
  - Communication Risk also means [Complexity Risk](Complexity-Risk), because now we have built a communication [graph](Complexity-Risk#connectivity) (and we saw how to calculate how complex that is). 
  - [Boundary Risk](Boundary-Risk), this is at a confluence of [Dependency Risk](Dependency-Risk), [Communication Risk](Communication-Risk) and [Complexity Risk](Complexity-Risk).
  
-The below diagram shows how this causality plays out.
+The way this plays out is depicted in <!--replace diagram ref{origin-of-risk.png} --> the diagram below<!--endreplace -->.
  
 ![Causes Of Risk](images/generated/staging-and-classifying/origin-of-risk.png)
 
@@ -79,9 +79,10 @@ The below diagram shows how this causality plays out.
 
 As we said [at the start](A-Pattern-Language), Risk-First is all about developing _A Pattern Language_.  We can use the terms like "[Feature Risk](Feature-Risk)"_ or "[Learning Curve Risk](Communication-Risk#learning-curve-risk)" to _explain_ phenomena we see on software projects.   If we want to [De-Risk](De-Risking) our work, we need to be able to explain what the risks are, and what we expect to do about them.
 
-The diagram below compiles all of the risks we've seen so far on the journey across the risk landscape.  Just like a periodic table, there are perhaps others left to discover.   _Unlike_ a periodic table, these risks are not completely distinct: they mix like paint and blend into one another.  
+![Periodic Table of Risks](images/generated/staging-and-classifying/periodic-table-large.png)
+
+The diagram above compiles all of the risks we've seen so far on the journey across the risk landscape.  Just like a periodic table, there are perhaps others left to discover.   _Unlike_ a periodic table, these risks are not completely distinct: they mix like paint and blend into one another.  
 
 Please help by reporting back what you find.
 
-![Periodic Table of Risks](images/generated/staging-and-classifying/periodic-table-large.png)
 

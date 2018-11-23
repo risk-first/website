@@ -12,7 +12,7 @@ In 1948, Claude Shannon proposed this definition of communication:
 
 > "The fundamental problem of communication is that of reproducing at one point, either exactly or approximately, a message selected at another point." - [A Mathematical Theory Of Communication, _Claude Shannon_](https://en.wikipedia.org/wiki/A_Mathematical_Theory_of_Communication)  <!-- tweet-end -->
 
-And from this same paper, we get the above diagram:  We move from top-left ("I want to send a message to someone") to bottom left, clockwise, where we hope the message has been understood and believed.  (I've added this last box to Shannon's original diagram.)
+And from this same paper, we get the diagram above:  We move from top-left ("I want to send a message to someone") to bottom left, clockwise, where we hope the message has been understood and believed.  (I've added this last box to Shannon's original diagram.)
 
 One of the chief concerns in Shannon's paper is the risk of error between **Transmission** and **Reception**.  He creates a theory of information (measured in **bits**), the upper-bounds of information that can be communicated over a channel and ways in which [Communication Risk](Communication-Risk) between these processes can be mitigated by clever **Encoding** and **Decoding** steps.
 
@@ -81,7 +81,7 @@ This works both ways.  Let's looks at some of the **Channel Risks** from the poi
 
 ![Communication Marketing](images/generated/risks/communication/communication_marketing.png)
 
-[Internal Models](Glossary#Internal-Model) don't magically get populated with the information they need:  they fill up gradually, as shown in this diagram.  Popular products and ideas _spread_, by word-of-mouth or other means.  Part of the job of being a good technologist is to keep track of new **Ideas**, **Concepts** and **Options**, so as to use them as [Dependencies](Dependency-Risk) when needed.
+[Internal Models](Glossary#Internal-Model) don't magically get populated with the information they need:  they fill up gradually, as shown in the diagram above.  Popular products and ideas _spread_, by word-of-mouth or other means.  Part of the job of being a good technologist is to keep track of new **Ideas**, **Concepts** and **Options**, so as to use them as [Dependencies](Dependency-Risk) when needed.
 
 ## Protocols
 
@@ -95,10 +95,10 @@ First, we need to broaden our terminology.  Although so far we've talked about *
 
  - If you're _depended on_, then you're a **"Supplier"** (or a **"Server"**, when we're talking about actual hardware).
  - If you require communication with something else, you're a **"Client"**.   
- 
-In order that a web browser (a **client**) can load a web-page from a **server**, they both need to communicate with shared protocols.  In this example, this is going to involve (at least) six separate protocols, as shown in the diagram below.  
 
 ![Protocol Stack](images/generated/communication_protocols.png) 
+ 
+In order that a web browser (a **client**) can load a web-page from a **server**, they both need to communicate with shared protocols.  In this example, this is going to involve (at least) six separate protocols, as shown in the diagram above.  
 
 Let's examine each protocol in turn when I try to load the web page at the following address using a web browser:
 
@@ -337,7 +337,7 @@ But now we should be able to see the reasons it's harder to read than write too:
 
 ![Communication Marketing](images/generated/risks/communication/communication_3.png)
 
-In this section, we've looked at [Communication Risk](Communication-Risk) itself, and broken it down into seven sub-types of risk, as shown in the diagram below.  Again, we are calling out _patterns_ here:  you can equally classify communication risks in other ways.  However, concepts like [Learning-Curve Risk](#Learning-Curve-Risk) and [Invisibility Risk](#Invisibility-Risk) we will need again: note how these risks are, in a sense, opposite: 
+In this section, we've looked at [Communication Risk](Communication-Risk) itself, and broken it down into seven sub-types of risk, as shown in the diagram above.  Again, we are calling out _patterns_ here:  you can equally classify communication risks in other ways.  However, concepts like [Learning-Curve Risk](#Learning-Curve-Risk) and [Invisibility Risk](#Invisibility-Risk) we will need again: note how these risks are, in a sense, opposite: 
 
  - The more abstraction you use, the less you need to learn, but at the expense of extra invisibility. 
  - The more you peel back abstractions, the more you expose, but the more complex things are to understand.

@@ -106,10 +106,11 @@ The decisions at the top are faster, but don't do much for mitigating **Coordina
 The trick is to be able to tell which approach is suitable at which time.   Everyone is expected to make decisions _within their realm of expertise_: you can't have developers continually calling meetings to discuss whether they should be using an [Abstract Factory](https://en.wikipedia.org/wiki/Abstract_factory_pattern) or a [Factory Method](https://en.wikipedia.org/wiki/Factory_method_pattern), this would waste time.  The critical question is therefore, "what's the biggest risk?"
  - Is the [Coordination Risk](Coordination-Risk) greater?   Are we going to suffer [Dead End Risk](Complexity-Risk) if the decision is made wrongly?  What if people don't agree with it?  Poor leadership has an impact on [Morale](Agency-Risk#morale-risk) too.  
  - Is the [Schedule Risk](Scarcity-Risk#schedule-risk) greater?  If you have a 1-hour meeting with eight people to decide a decision, that's _one man day_ gone right there:  group decision making is _expensive_.  
- 
-Hopefully, this model shows how _organisation_ can reduce [Coordination Risk](Coordination-Risk).  But, to make this work, we need more _communication_, and this has attendant complexity and time costs.  So, we can draw this diagram of our move on the [Risk Landscape](Risk-Landscape):
 
 ![Coordination Risk traded for Complexity Risk, Schedule Risk and Communication Risk](images/kite9/coordination-1.png)
+ 
+Hopefully, this model shows how _organisation_ can reduce [Coordination Risk](Coordination-Risk).  But, to make this work, we need more _communication_, and this has attendant complexity and time costs.  So, we can draw diagram above of our move on the [Risk Landscape](Risk-Landscape):
+
 
 ### Staff As Agents
 
@@ -188,9 +189,9 @@ As before, in order to face [Coordination Risk](Coordination-Risk) in software, 
 
 The [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem) has a lot to say about [Coordination Risk](Coordination-Risk).  Imagine talking to a distributed database, where your request (_read_ or _write_) can be handled by one of many agents.
 
-In the diagram below, we have just two agents `1` and `2`, in order to keep things simple.  `User A` _writes something_ to the database, then `User B` _reads it back_ afterwards.     
-
 ![User A and User B are both using a distributed database, managed by Agents 1 and 2, whom each have their own Internal Model](images/kite9/coordination-cap-1.png)
+
+In the diagram above, we have just two agents `1` and `2`, in order to keep things simple.  `User A` _writes something_ to the database, then `User B` _reads it back_ afterwards.     
 
 According to the [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem), there are three properties we could desire in such a system:
 

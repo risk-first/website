@@ -75,7 +75,7 @@ The five phases (and the "Hype" itself) are shown in the chart below, with the t
 
 ![Hype Cycle, along with Map & Territory Risk](images/hype-cycle.png)
 
-Also in this diagram we are showing where the hype originates:
+Also in the diagram above we are showing where the hype originates:
 
  - The **saturation** of the idea within the audience (a dotted line).
  - The **amount known** about the idea by the audience (a [Learning Curve](Communication-risk#learning-curve-risk), if you will, a dashed line).

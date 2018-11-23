@@ -184,7 +184,7 @@ Scenario chapter:
 \begin{figure}
 \centering
 \includegraphics{images/generated/introduction/risk_matrix-400dpi.png}
-\caption{Risk Register of Dinner Party Risks}
+\caption{Risk Register of Dinner Party Risks\label{risk_matrix.png}}
 \end{figure}
 
 This type of graphic is \emph{helpful} in deciding what to do next,
@@ -195,7 +195,8 @@ risks (at the top) can therefore be dealt with first (hopefully).
 \begin{figure}
 \centering
 \includegraphics{images/generated/introduction/risk_matrix_2-400dpi.png}
-\caption{Risk Register of Dinner Party Risks, Considering Pay-Off}
+\caption{Risk Register of Dinner Party Risks, Considering
+Pay-Off\label{risk_matrix_2.png}}
 \end{figure}
 
 \hypertarget{unknown-unknowns}{%
@@ -208,10 +209,14 @@ the Risk Register \emph{is all there is}.
 In the preceding discussions, I have been careful to point out the
 existence of Hidden Risks for that very reason. Or, to put another way:
 
+\begin{quotation}
+
 \begin{quote}
-What we don't know is what usually gets us killed - Petyr Baelish,
+``What we don't know is what usually gets us killed'' - Petyr Baelish,
 \emph{Game of Thrones}
 \end{quote}
+
+\end{quotation}
 
 Donald Rumsfeld's famous
 \href{https://en.wikipedia.org/wiki/There_are_known_knowns}{Known
@@ -252,13 +257,15 @@ Management}\label{the-opposite-of-risk-management}}
 
 Let's look at the classic description of Risk Management:
 
-\begin{quote}
-Risk Management is the process of thinking out corrective actions before
-a problem occurs, while it's still an abstraction. The opposite of risk
-management is crisis management, trying to figure out what to do about
-the problem after it happens. - \href{http://amzn.eu/d/i0IDFA2}{Waltzing
-With Bears, \emph{Tom De Marco \& Tim Lister}}
-\end{quote}
+\begin{quotation}
+
+``Risk Management is the process of thinking out corrective actions
+before a problem occurs, while it's still an abstraction. The opposite
+of risk management is crisis management, trying to figure out what to do
+about the problem after it happens.''
+
+\sourceatright{\href{http://amzn.eu/d/i0IDFA2}{\textemdash  Waltzing With Bears, \emph{De Marco, Lister}}}
+\end{quotation}
 
 This is not how Risk-First sees it:
 
@@ -397,26 +404,25 @@ Value}. This is all fine so long as we remember:
 \hypertarget{speed}{%
 \subsection{Speed}\label{speed}}
 
-For example, in \href{http://a.co/d/ddWGTB2}{Rapid Development} by Steve
-McConnell we have the following diagram:
-
 \begin{figure}
 \centering
 \includegraphics{images/generated/introduction/pillars_smc-400dpi.png}
-\caption{Pillars, From Rapid Development By Steve McConnell}
+\caption{Pillars, From Rapid Development By Steve
+McConnell\label{pillars_smc.png}}
 \end{figure}
 
-And, this is \emph{fine}, McConnell is structuring the process from the
-perspective of \emph{delivering as quickly as possible}. However, here,
-I want to turn this on it's head. Software Development from a risk-first
-perspective is an under-explored technique, and I believe it offers some
-useful insights. So the aim here is to present the case for viewing
-software development like this:
+In \href{http://a.co/d/ddWGTB2}{Rapid Development} by Steve McConnell we
+have figure \ref{pillars_smc.png}. This is \emph{fine}, McConnell is
+structuring the process from the perspective of \emph{delivering as
+quickly as possible}. However, here, I want to turn this on it's head.
+Software Development from a risk-first perspective is an under-explored
+technique, and I believe it offers some useful insights. So the aim here
+is to present the case for viewing software development like this:
 
 \begin{figure}
 \centering
 \includegraphics{images/generated/introduction/pillars_kite9-400dpi.png}
-\caption{Pillars, re-arranged}
+\caption{Pillars, re-arranged\label{pillars_kite9.png}}
 \end{figure}
 
 As we will see, \emph{Speed} (or Schedule Risk as we will term it) is
@@ -462,16 +468,17 @@ because payment \emph{now} is better than payment in the future: there
 is the risk that something will happen to prevent that future payment.
 This is why we have \emph{interest rates} on loan payments.
 
-In the diagram, you can see two future payments, Payment \textbf{A} of
-\pounds100 due in one year, and Payment \textbf{B} of \pounds150 due in
-10 years. By discounting at a given rate (here at a high rate of 20\%
-per year) we can compare their worth \emph{now}. At this discount rate,
-Payment \textbf{A}, - arriving next year - has a far greater value.
+In diagram ref\{npv.png\} , you can see two future payments, Payment
+\textbf{A} of \pounds100 due in one year, and Payment \textbf{B} of
+\pounds150 due in 10 years. By discounting at a given rate (here at a
+high rate of 20\% per year) we can compare their worth \emph{now}. At
+this discount rate, Payment \textbf{A}, - arriving next year - has a far
+greater value.
 
 \begin{figure}
 \centering
 \includegraphics{images/numbers/npv.png}
-\caption{Net Present Value Discounting}
+\caption{Net Present Value Discounting\label{npv.png}}
 \end{figure}
 
 Can we do the same thing with risk? Let's introduce the concept of Net
@@ -500,7 +507,7 @@ graph of the discounted risks looks like this:
 \begin{figure}
 \centering
 \includegraphics{images/numbers/npr1.png}
-\caption{Net Present Risk, 6\% Discount Rate}
+\caption{Net Present Risk, 6\% Discount Rate\label{npr1.png}}
 \end{figure}
 
 On this basis, the biggest NPR is \textbf{B}, at about \pounds45. If we
@@ -509,7 +516,7 @@ increase the discount factor to 20\%, we get a different result:
 \begin{figure}
 \centering
 \includegraphics{images/numbers/npr2.png}
-\caption{Net Present Risk, 20\% Discount Rate}
+\caption{Net Present Risk, 20\% Discount Rate\label{npr2.png}}
 \end{figure}
 
 Now, risk \textbf{A} is bigger.
@@ -548,7 +555,7 @@ Risk B is almost irrelevant under this regime, as this graph shows:
 \begin{figure}
 \centering
 \includegraphics{images/numbers/npr3.png}
-\caption{Net Present Risk, 60\% Discount Rate}
+\caption{Net Present Risk, 60\% Discount Rate\label{npr3.png}}
 \end{figure}
 
 Why do things like this happen? Often, the people involved are under

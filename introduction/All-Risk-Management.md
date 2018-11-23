@@ -98,7 +98,7 @@ In the above table, it _appears_ to be better to do the "Go Live" action, as the
 
 ![UAT or Go Live: Where will you end up?](images/generated/introduction/risk_landscape_3_moves.png)
 
-The above diagram shows our decision as _moves on the [Risk Landscape](Glossary#risk-landscape)_.  Whether you "Go Live" first, or "UAT" first makes a difference to where you will end up.  Is there a further action you can take to get you from the "Dead End" to the "Goal"?  Perhaps.
+The diagram above shows our decision as _moves on the [Risk Landscape](Glossary#risk-landscape)_.  Whether you "Go Live" first, or "UAT" first makes a difference to where you will end up.  Is there a further action you can take to get you from the "Dead End" to the "Goal"?  Perhaps.
 
 ### Failure
 
