@@ -38,7 +38,8 @@ action.left {
 }
 
 artifact, 
-users {
+users,
+computer {
 	kite9-type: container;
 	kite9-margin: 10pt;
 	kite9-link-inset: 10pt;
@@ -59,6 +60,7 @@ mitigated {
 	kite9-type: container;
 	kite9-template: url(template.svg#mitigated);
 }
+
 
 hidden {
 	kite9-type: container;
@@ -440,6 +442,7 @@ glyph {
 	kite9-margin: 10pt;
 	kite9-connection-align: 50%;
 	kite9-min-height: 30pt;
+	kite9-sizing: minimize;
 }
 
 diagram glyph label {
@@ -448,7 +451,7 @@ diagram glyph label {
 	kite9-template: url(template.svg#glyph-label-text);
 	kite9-vertical-align: center;
 	kite9-margin: 5pt;
-	kite9-min-width: 600pt; 
+	kite9-min-width: 60pt; 
 	
 }
 
@@ -530,6 +533,10 @@ context {
 	kite9-link-inset: 12pt;
 }
 
+context.dotted {
+	kite9-template: url(template.svg#context-dotted);
+}
+
 group {
 	kite9-type: container;
 	kite9-sizing: maximize;
@@ -540,6 +547,13 @@ group {
 	fill: none;
 	stroke: black;
 	stroke-width: 1pt;
+}
+
+.context-dotted {
+	fill: none;
+	stroke: black;
+	stroke-width: 1pt;
+	stroke-dasharray: 4 4;	
 }
 
 context > label,

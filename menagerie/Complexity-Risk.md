@@ -2,6 +2,8 @@
 
 [Complexity Risk](Complexity-Risk) are the risks to your project due to its underlying "complexity".  Over the next few sections, we'll break down exactly what we mean by complexity, looking at [Dependency Risk](Dependency-Risk) and [Boundary Risk](Boundary-Risk) as two particular sub-types of [Complexity Risk](Complexity-Risk).  However, in this section, we're going to start by looking at _code you write_: the size of your code-base, the number of modules, the interconnectedness of the modules and how well-factored the code is.  
 
+## Codebase Risk
+
 ![Complexity Risk and Codebase Risk](images/generated/risks/complexity/complexity-risk.png)
 
 You could think of this as **Codebase Risk**.  Next, we'll look at three separate measures of codebase complexity and talk about [Technical Debt](Complexity-Risk#technical-debt), and look at places in which **Codebase Risk** is at it's greatest.
@@ -197,6 +199,8 @@ But there is actually some underlying sense in which this is true in the real, p
 
 I'm not an expert in physics, _at all_, and so there is every chance that I am pushing this analogy too hard.  But, substituting quarks and gluons for pieces of software we can (in a very handwaving-y way) say that more complex software has more **interactions** going on, and therefore has more mass than simple software. 
 
+If we want to move _fast_ we need simple codebases.
+
 The reason I am labouring this analogy is to try and make the point that [Complexity Risk](Complexity-Risk) is really fundamental:
 
  - [Feature Risk](Feature-Risk):  like **money**.
@@ -205,7 +209,7 @@ The reason I am labouring this analogy is to try and make the point that [Comple
  
 At a basic level, [Complexity Risk](Complexity-Risk) heavily impacts on [Schedule Risk](Scarcity-Risk#schedule-risk):  more complexity means you need more force to get things done, which takes longer.
 
-![Complexity Risk and it's mitigations](images/generated/risks/complexity/complexity-risk.png)
+![Complexity Risk and it's mitigations](images/generated/risks/complexity/complexity-risk2.png)
 
 ## Technical Debt
 
@@ -231,6 +235,8 @@ It's not long before someone comes down with food poisoning.
 
 We wouldn't tolerate this behaviour in a restaurant kitchen, so why put up with it in a software project?
 
+![Complexity Risk and it's implications](images/generated/risks/complexity/complexity-risk-impact.png)
+
 ## Feature Creep
 
 In Brooks' essay "No Silver Bullet - Essence and Accident in Software Engineering", a distinction is made between:
@@ -240,19 +246,19 @@ In Brooks' essay "No Silver Bullet - Essence and Accident in Software Engineerin
 
 The problem with this definition is that we are accepting features of our software as _essential_.  
 
-The Risk-First approach is that if you want to mitigate some [Feature Risk](Feature-Risk) then you have to pick up [Complexity Risk](Complexity-Risk) as a result.  But, that's a _choice you get to make_.  
+Applying Risk-First, if you want to mitigate some [Feature Risk](Feature-Risk) then you have to pick up [Complexity Risk](Complexity-Risk) as a result.  But, that's a _choice you get to make_.  
+
+![Mitigating Feature Fit Risk (from Feature Risk)](images/generated/risks/feature/feature-fit-risk.png)
 
 Therefore, [Feature Creep](https://en.wikipedia.org/wiki/Feature_creep) (or [Gold Plating](https://en.wikipedia.org/wiki/Gold_plating_(software_engineering))) is a failure to observe this basic equation:  instead of considering this trade off, you're building every feature possible.  This has an impact on [Complexity Risk](Complexity-Risk), which in turn impacts [Communication Risk](Communication-Risk) and also [Schedule Risk](Scarcity-Risk#schedule-risk).
 
-Sometimes, feature-creep happens because either managers feel they need to keep their staff busy, or the staff decide on their own that they need to [keep themselves busy](Agency-Risk).  But now, we can see that basically this boils down to bad risk management.  
-
-> "Perfection is Achieved Not When There Is Nothing More to Add, But When There Is Nothing Left to Take Away" - [Antoine de Saint-Exupery](http://www.quotationspage.com/quote/26979.html)
+Sometimes, feature-creep happens because either managers feel they need to keep their staff busy, or the staff decide on their own that they need to [keep themselves busy](Agency-Risk).  This is something we'll return to in [Agency Risk](Agency-Risk).
 
 ## Dead-End Risk
 
 ![Dead-End Risk](images/generated/risks/complexity/dead-end-risk.png) 
 
-[Dead-End Risk](Complexity-Risk#dead-end-risk) is where you build functionality that you _think_ is useful, only to find out later that actually, it was a dead-end, and is superseded by something else.
+[Dead-End Risk](Complexity-Risk#dead-end-risk) is where you take an action that you _think_ is useful, only to find out later that actually, it was a dead-end, and your efforts were wasted.  
 
 For example, let's say that the Accounting sub-system needed password protection (so you built this).  Then the team realised that you needed a way to _change the password_ (so you built that).   Then, that you needed to have more than one user of the Accounting system so they would all need passwords (OK, fine).  
 
@@ -260,39 +266,38 @@ Finally, the team realises that actually logging-in would be something that all 
 
 At this point, you realise you're in a **Dead End**:
   
- - **Option 1**: You carry on making minor incremental improvements to the accounting password system (carrying the extra [Complexity Risk](Complexity-Risk) of the duplicated functionality).
- - **Option 2**: You rip out the accounting password system, and merge in the Approvals system, surfacing new, hidden [Complexity Risk](Complexity-Risk) in the process, due to the difficulty in migrating users from the old to new way of working.
- - **Option 3**: You start again, trying to take into account both sets of requirements at the same time, again, possibly surfacing new hidden [Complexity Risk](Complexity-Risk) due to the combined approach.
- 
-Sometimes, the path from your starting point to your goal on the [Risk Landscape](Risk-Landscape) will take you to dead ends:  places where the only way towards your destination is to lose something, and do it again another way.  
-
-This is because you surface new [Hidden Risk](Glossary#hidden-risk) along the way.  And the source of a lot of this hidden risk will be unexpected [Complexity Risk](Complexity-Risk) in the solutions you choose.  This happens a lot. 
-
-### Source Control
-
-[Version Control Systems](https://en.wikipedia.org/wiki/Version_control) like [Git](https://en.wikipedia.org/wiki/Git) are a useful mitigation of [Dead-End Risk](Complexity-Risk#dead-end-risk), because it means you can _go back_ to the point where you made the bad decision and go a different way.  Additionally, they provide you with backups against the often inadvertent [Dead-End Risk](Complexity-Risk#dead-end-risk) of someone wiping the hard-disk.
-
-### The Re-Write
-
-**Option 3**, Rewriting code or a whole project can seem like a way to mitigate [Complexity Risk](Complexity-Risk), but it usually doesn't work out too well.  As Joel Spolsky says:
+ - **Option 1: Continue.** You carry on making minor incremental improvements to the accounting password system (carrying the extra [Complexity Risk](Complexity-Risk) of the duplicated functionality).
+ - **Option 2: Merge.** You rip out the accounting password system, and merge in the Approvals system, surfacing new, hidden [Complexity Risk](Complexity-Risk) in the process, due to the difficulty in migrating users from the old to new way of working.  There is [Implementation Risk](Feature-Risk#implementation-risk) here.
+ - **Option 3: Remove** You start again, trying to take into account both sets of requirements at the same time, again, possibly surfacing new hidden [Complexity Risk](Complexity-Risk) due to the combined approach.  Rewriting code or a whole project can seem like a way to mitigate [Complexity Risk](Complexity-Risk), but it usually doesn't work out too well.  As Joel Spolsky says:
 
 > There’s a subtle reason that programmers always want to throw away the code and start over. The reason is that they think the old code is a mess. And here is the interesting observation: they are probably wrong. The reason that they think the old code is a mess is because of a cardinal, fundamental law of programming:  _It’s harder to read code than to write it._    - [Things You Should Never Do, Part 1, _Joel Spolsky_](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)
+ 
+Sometimes, the path across the [Risk Landscape](Risk-Landscape) will take you to dead ends, and the only benefit to be gained is experience.  No one deliberately chooses a dead end - often you can take an action that doesn't pay off, but frequently the dead end appears from nowhere:  it's a [Hidden Risk](Glossary#hidden-risk).  The source of a lot of this hidden risk is the complexity of the [risk landscape](Glossary#risk-landscape).
 
-The problem that Joel is outlining here is that the developer mistakes hard-to-understand code for unnecessary [Complexity Risk](Complexity-Risk).  Also, perhaps there is [Agency Risk](Agency-Risk) because the developer is doing something that is more useful to him than the project.    We're going to return to this problem in again [Communication Risk](Communication-Risk#reading-code).
+[Version Control Systems](https://en.wikipedia.org/wiki/Version_control) like [Git](https://en.wikipedia.org/wiki/Git) are a useful mitigation of [Dead-End Risk](Complexity-Risk#dead-end-risk), because using them means that at least you can _go back_ to the point where you made the bad decision and go a different way.  Additionally, they provide you with backups against the often inadvertent [Dead-End Risk](Complexity-Risk#dead-end-risk) of someone wiping the hard-disk.
 
 ## Where Complexity Hides
 
-Complexity isn't spread evenly within a software project.  Some problems, some areas, have more than their fair share of issues.   We're going to cover a few of these now, but be warned, this is not a complete list by any means:
+So far, we've focused mainly on [Codebase Risk](Complexity-Risk#codebase-risk), but this isn't the only place complexity appears in software.  We're going to cover a few of these areas now, but be warned, this is not a complete list by any means:
 
+ - Algorithmic (Space and Time) Complexity
  - Memory Management
  - Protocols / Types
- - Algorithmic (Space and Time) Complexity
  - Concurrency / Mutability
  - Networks / Security
+ - The Environment
+ 
+### Space and Time Complexity
+
+There is a whole branch of complexity theory devoted to how the software _runs_, namely [Big O Complexity](https://en.wikipedia.org/wiki/Big_O_notation).  
+
+Once running, an algorithm or data structure will consume space or runtime dependent on it's performance characteristics, which may well have an impact on the [Operational Risk](Operational-Risk) of the software.  Using off-the-shelf data structures and algorithms helps, but you still need to know their performance characteristics. 
+
+The [Big O Cheat Sheet](http://bigocheatsheet.com) is a wonderful resource to investigate this further.  
 
 ### Memory Management
 
-Memory Management is another place where [Complexity Risk](Complexity-Risk) hides:
+Memory Management (and more generally, all resource management in software) is another place where [Complexity Risk](Complexity-Risk) hides:
 
 > "Memory leaks are a common error in programming, especially when using languages that have no built in automatic garbage collection, such as C and C++." - [Memory Leak, _Wikipedia_](https://en.wikipedia.org/wiki/Memory_leak)
 
@@ -300,57 +305,11 @@ Memory Management is another place where [Complexity Risk](Complexity-Risk) hide
  
 ### Protocols And Types
 
-Whenever two components of a software system need to interact, they have to establish a protocol for doing so.  There are lots of different ways this can work, but the simplest example I can think of is where some component **a** calls some function **b**.  e.g: 
+As we saw in [Communication Risk](Communication-Risk), whenever two components of a software system need to interact, they have to establish a protocol for doing so.  As systems become more complex, and the connectedness increases, it becomes hard to manage the risk around versioning protocols.  This becomes especially true when operating beyond the edge of the compiler's domain. 
 
-```javascript
-function b(a, b, c) {
-    return "whatever" // do something here.
-}
+Although type checking helps mitigate [Protocol Risk](Communication-Risk#protocol-risk) in the small, when software systems grow large it becomes hard to communicate their intent and keep their degree of connectivity low, and you end up with the Big Ball Of Mud:
 
-function a() {
-	var bOut = b("one", "two", "three");
-	return "something "+bOut;	
-}
-```
-
-If component **b** then changes in some backwards-incompatible way, say:
-
-```javascript
-function b(a, b, c, d /* new parameter */) {
-    return "whatever" // do something here.
-}
-```
-
-Then, we can say that the protocol has changed.  This problem is so common, so endemic to computing that we've had compilers that check function arguments [since the 1960's](https://en.wikipedia.org/wiki/Compiler).  The point being is that it's totally possible for the compiler to warn you about when a protocol within the program has changed.  
-
-The same is basically true of [Data Types](https://en.wikipedia.org/wiki/Data_type):  whenever we change the **Data Type**, we need to correct the usages of that type.  Note above, I've given the `JavaScript` example, but I'm going to switch to `TypeScript` now:
-
-```typescript
-interface BInput {
-    a: string,
-    b: string, 
-    c: string,
-    d: string
-}
-
-function b(in: BInput): string {
-    return "whatever" // do something here.
-}
-```
-
-Now, of course, there is a tradeoff:  we _mitigate_ [Complexity Risk](Complexity-Risk), because we define the protocols / types _once only_ in the program, and ensure that usages all match the specification.  But the tradeoff is (as we can see in the `TypeScript` code) more _finger-typing_, which some people argue counts as [Schedule Risk](Scarcity-Risk#schedule-risk).  
-
-Nevertheless, compilers and type-checking are so prevalent in software that clearly, you have to accept that in most cases, the trade-off has been worth it: Even languages like [Clojure](https://clojure.org) have been retro-fitted with [type checkers](https://github.com/clojure/core.typed/wiki/User-Guide).
-
-We're going to head into much more detail on this in the section on [Protocol Risk](Communication-Risk#protocol-risk).
-
-### Space and Time Complexity
-
-So far, we've looked at a couple of definitions of complexity in terms of the codebase itself.  However, in Computer Science there is a whole branch of complexity theory devoted to how the software _runs_, namely [Big O Complexity](https://en.wikipedia.org/wiki/Big_O_notation).  
-
-Once running, an algorithm or data structure will consume space or runtime dependent on it's characteristics.  As with [Garbage Collectors](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)), these characteristics can introduce [Performance Risk](Operational-Risk#performance-risk) which can easily catch out the unwary.  By and large, using off-the-shelf data structures and algorithms helps, but you still need to know their performance characteristics. 
-
-The [Big O Cheat Sheet](http://bigocheatsheet.com) is a wonderful resource to investigate this further.  
+> "A big ball of mud is a software system that lacks a perceivable architecture. Although undesirable from a software engineering point of view, such systems are common in practice due to business pressures, developer turnover and code entropy. " - [Big Ball Of Mud, _Wikipedia_](https://en.wikipedia.org/wiki/Big_ball_of_mud)
 
 ### Concurrency / Mutability
 
@@ -374,14 +333,9 @@ Luckily, most good languages include cryptographic libraries that you can includ
 
 This is a strong argument for the use of libraries.  But, when should you use a library and when should you implement yourself?  This is again covered in the section on [Software Dependency Risk](Software-Dependency-Risk).  
 
-### Big Ball Of Mud
+### The Environment
 
-Although Type-Systems help for avoiding [Communication Risk](Communication-Risk) in the small, when software systems grow large it becomes hard to communicate their intent and keep their degree of connectivity low.  
+The complexity of software tends to reflect the complexity of the environment it runs in, and complex software environments are more difficult to reason about, and more susceptible to [Operational Risk](Operational-Risk) and [Security-Risk](Agency-Risk#security-risk).  
 
-> "A big ball of mud is a software system that lacks a perceivable architecture. Although undesirable from a software engineering point of view, such systems are common in practice due to business pressures, developer turnover and code entropy. " - [Big Ball Of Mud, _Wikipedia_](https://en.wikipedia.org/wiki/Big_ball_of_mud)
+In particular, when we talk about the environment, we are talking about the number of dependencies that the software has, and the risks we face when relying on those dependencies.  So the next stop in the tour is a closer look at [Dependency Risk](Dependency-Risk).
 
-costs associated with complexity risk
-
-CHANGE is also more risky why?
-
-https://en.wikipedia.org/wiki/Big_ball_of_mud
