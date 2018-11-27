@@ -96,7 +96,7 @@ First, we need to broaden our terminology.  Although so far we've talked about *
  - If you're _depended on_, then you're a **"Supplier"** (or a **"Server"**, when we're talking about actual hardware).
  - If you require communication with something else, you're a **"Client"**.   
 
-![Protocol Stack](images/generated/communication_protocols.png) 
+![Protocol Stack](images/generated/risks/communication/communication_protocols.png) 
  
 In order that a web browser (a **client**) can load a web-page from a **server**, they both need to communicate with shared protocols.  In this example, this is going to involve (at least) six separate protocols, as shown in the diagram above.  
 
