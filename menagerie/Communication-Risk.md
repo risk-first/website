@@ -374,7 +374,7 @@ But now we should be able to see the reasons it's harder to read than write too:
  - There is no [Feedback Loop](Glossary#Feedback-Loop) between your [Internal Model](Glossary#Internal-Model) and the [Reality](Glossary#Meet-Reality) of the code, opening you up to [Misinterpretation Risk](Communication-Risk#misinterpretation-risk).  When you write code, your compiler and tests give you this.
  - While reading code _takes less time_ than writing it, this also means the [Learning Curve](Communication-Risk#learning-curve-risk) is steeper.
 
-![Internal Model Risks](images/generated/communication_internal_model_risks.png)
+![Internal Model Risks](images/generated/risks/communication/communication_internal_model_risks.png)
 
 ## Communication Risk Wrap Up
 
