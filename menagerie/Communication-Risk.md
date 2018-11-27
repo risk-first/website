@@ -380,9 +380,9 @@ But now we should be able to see the reasons it's harder to read than write too:
 
 ![Communication Marketing](images/generated/risks/communication/communication_3.png)
 
-In this section, we've looked at [Communication Risk](Communication-Risk) itself, and broken it down into seven sub-types of risk, as shown in the diagram above.  Again, we are calling out _patterns_ here:  you can equally classify communication risks in other ways.  However, concepts like [Learning-Curve Risk](#Learning-Curve-Risk) and [Invisibility Risk](#Invisibility-Risk) we will need again: note how these risks are, in a sense, opposite: 
+In this section, we've looked at [Communication Risk](Communication-Risk) itself, and broken it down into six sub-types of risk, as shown in the diagram above.  Again, we are calling out _patterns_ here:  you can equally classify communication risks in other ways.  However, concepts like [Learning-Curve Risk](#Learning-Curve-Risk) and [Invisibility Risk](#Invisibility-Risk) we will need again.  Also, note how these risks are, in a sense, opposite: 
 
- - The more abstraction you use, the less you need to learn, but at the expense of extra invisibility. 
+ - The higher the level of abstraction you use, the less you need to learn, but at the expense of extra invisibility. 
  - The more you peel back abstractions, the more you expose, but the more complex things are to understand.
 
 In the next section, we will address complexity head-on, and understand how [Complexity Risk](Complexity-Risk) manifests in software projects.
