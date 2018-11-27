@@ -1,18 +1,20 @@
-![Draft](images/state/draft.png)
+![Draft](images/state/for-review.png)
 
-[Dependency Risk](Dependency-Risk) is the risk you take on whenever you have a dependency on something (or someone) else.   One simple example could be that the software service you write might depend on a server to run on.  If the server goes down, the service goes down too.  In turn, the server depends on electricity from a supplier, as well as a network connection from a provider.  If either of these dependencies aren't met, the service is out of commission.
+[Dependency Risk](Dependency-Risk) is the risk you take on whenever you have a dependency on something (or someone) else.   
 
-Dependencies can be on _events_, _people_, _teams_, _processes_, _software_, _services_, _money_: pretty much _any resource_.  Dependencies add risk to any project because the reliability of the project itself is now a function involving the reliability of the dependency.  
+One simple example could be that the software service you write might depend on hardware to run on:  If the server goes down, the service goes down too.  In turn, the server depends on electricity from a supplier, as well as a network connection from a provider.  If either of these dependencies aren't met, the service is out of commission.
 
-In order to avoid repetition, and also to break down this large topic, we're going to look at this over 6 sections:   
+Dependencies can be on _events_, _people_, _teams_, _processes_, _software_, _services_, _money_ and pretty much _any resource_, and while every project will need some of those, they also _add risk_ to any project because the reliability of the project itself is now a function involving the reliability of the dependency.  
 
- - In this first section will look at dependencies _in general_, and apply our existing risk categorizations to understand [Dependency Risk](Dependency-Risk).
+In order to avoid repetition, and also to break down this large topic, we're going to look at this over 7 sections:   
+
+ - In this first section will look at dependencies _in general_, and some of the variations of [Dependency Risk](Dependency-Risk).
  - Next, we'll look at [Scarcity Risk](Scarcity-Risk), because time and money are scarce resources in every project.
- - We'll cover [Deadline Risk](Deadline-Risk), and discuss the purpose of Events and Deadlines, and how they enable us to co-ordinate around dependency use.
+ - We'll cover [Deadline Risk](Deadline-Risk), and discuss the purpose of Events and Deadlines, and how they enable us to coordinate around dependency use.
  - Then, we'll move on to look specifically at [Software Dependency Risk](Software-Dependency-Risk), covering using libraries, software services and building on top of the work of others.
  - After, we'll take a look at [Process Risk](Process-Risk), which is still [Dependency Risk](Dependency-Risk), but we'll be considering more organisational factors and how bureaucracy comes into the picture.
- - Next, we'll take a closer look at [Boundary Risk](Boundary-Risk) and [Dead-End Risk](Complexity-Risk#dead-end-risk).  These are the risks you face in choosing the wrong things to depend on.
- - Finally, we'll wrap up this analysis with a look at some of the specific problems around working with other people or businesses in [Agency Risk](Agency-Risk).
+ - Next, we'll take a closer look at [Boundary Risk](Boundary-Risk) and [Dead-End Risk](Complexity-Risk#dead-end-risk).  These are the risks you face in making choices about what to depend on.
+ - Finally, we'll wrap up this analysis with a look at some of the specific problems around depending on other people or businesses in [Agency Risk](Agency-Risk).
   
 ## Why Have Dependencies?
 
@@ -24,23 +26,20 @@ Although life exists at the bottom of the ocean around [hydrothermal vents](http
 
 This tells us a lot about [Dependency Risk](Dependency-Risk) right here:
 
- - On the one hand, depending on something else is very often helpful, and quite often essential.  (For example, all animals that _move_ seem to depend on oxygen).
+ - On the one hand, depending on something else is very often helpful, and quite often essential.  (For example, all life seem to depend on water).
  - However, as soon as you have dependencies, you need to take into account of their _reliability_. (Living near a river or stream gives you access to fresh water, for example).
  - Successful organisms _adapt_ to the dependencies available to them (like the thermal vent creatures).
  - There is likely to be _competition_ for a dependency when it is scarce (think of droughts and famine).
 
-So, dependencies are a trade-off.  They give with one hand and take with the other.  Our modern lives are full of dependency (just think of the chains of dependency needed for putting a packet of biscuits on a supermarket shelf, for example), but we accept this extra complexity because it makes life _easier_.  
+So, dependencies are a trade-off.  They give with one hand and take with the other.  Our modern lives are full of dependency (just think of the chains of dependency needed for putting a packet of biscuits on a supermarket shelf, for example), but we accept this risk because it makes life _easier_.  
 
-tbd.  diagram, mitigating feature risk with a dependency?
-
-
-## Simple Made Easy
+## Dependencies Are Complex
 
 In Rich Hickey's talk, [Simple Made Easy](https://www.infoq.com/presentations/Simple-Made-Easy) he discusses the difference between _simple_ software systems and _easy_ (to use) ones, heavily stressing the virtues of simple over easy.  It's an incredible talk and well worth watching.  
 
-But.  Living systems are not simple.  Not anymore.  They evolved in the direction of increasing complexity because life was _easier_ that way.  In the "simpler" direction, life is first _harder_ and then _impossible_, and then an evolutionary dead-end.
+But: living systems are not simple.  Not anymore.  They evolved in the direction of increasing complexity because life was _easier_ that way.  In the "simpler" direction, life is first _harder_ and then _impossible_, and then an evolutionary dead-end.  
 
-Depending on things makes _your job easier_.  It's just [division of labour](https://en.wikipedia.org/wiki/Division_of_labour) and dependency hierarchies, as we saw in [Hierarchies and Modularisation](Complexity-Risk#Hierarchies-and-Modularisation).
+Depending on things makes _your job easier_.  It's just [division of labour](https://en.wikipedia.org/wiki/Division_of_labour) and dependency hierarchies, as we saw in [Complexity Risk](Complexity-Risk#Hierarchies-and-Modularisation).
 
 Our economic system and our software systems exhibit the same tendency-towards-complexity.  For example, the television in my house now is _vastly more complicated_ than the one in my home when I was a child.  But, it contains much more functionality and consumes much less power and space.  
 
@@ -61,8 +60,6 @@ This kind of stuff is encapsulated in the science of [Reliability Engineering](h
 > "...was one of the first highly structured, systematic techniques for failure analysis. It was developed by reliability engineers in the late 1950s to study problems that might arise from malfunctions of military systems. " - [FEMA, _Wikipedia_](https://en.wikipedia.org/wiki/Failure_mode_and_effects_analysis)
 
 This was applied on NASA missions, and then more recently in the 1970's to car design following the [Ford Pinto exploding car](https://en.wikipedia.org/wiki/Ford_Pinto#Design_flaws_and_ensuing_lawsuits) affair.
-
-
 
 ## Communication Risk
 
