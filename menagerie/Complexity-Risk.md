@@ -203,15 +203,9 @@ I'm not an expert in physics, _at all_, and so there is every chance that I am p
 
 If we want to move _fast_ we need simple codebases.
 
-The reason I am labouring this analogy is to try and make the point that [Complexity Risk](Complexity-Risk) is really fundamental:
-
- - [Feature Risk](Feature-Risk):  like **money**.
- - [Schedule Risk](Scarcity-Risk#schedule-risk): like **time**.
- - [Complexity Risk](Complexity-Risk): like **mass**.
- 
 At a basic level, [Complexity Risk](Complexity-Risk) heavily impacts on [Schedule Risk](Scarcity-Risk#schedule-risk):  more complexity means you need more force to get things done, which takes longer.
 
-![Complexity Risk and it's mitigations](images/generated/risks/complexity/complexity-risk2.png)
+![Complexity Risk and some mitigations](images/generated/risks/complexity/complexity-risk2.png)
 
 ## Technical Debt
 
