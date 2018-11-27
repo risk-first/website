@@ -221,9 +221,9 @@ function a() {
 }
 ```
 
-By using a [static type checker](https://en.wikipedia.org/wiki/Type_system#Static_type_checking), we can identify issues like this, but there is a tradeoff:  we mitigate [Protocol Risk](Communication-Risk#protocol-risk), because we define the protocols _once only_ in the program, and ensure that usages all match the specification.  But the tradeoff is (as we can see in the `TypeScript` code) more _finger-typing_, which means [Codebase Risk](Complexity-Risk#codebase-risk) in some circumstances. 
+By using a [static type checker](https://en.wikipedia.org/wiki/Type_system#Static_type_checking), we can identify issues like this, but there is a tradeoff:  we mitigate [Protocol Risk](Communication-Risk#protocol-risk), because we define the protocols _once only_ in the program, and ensure that usages all match the specification.  But the tradeoff is (as we can see in the TypeScript code) more _finger-typing_, which means [Codebase Risk](Complexity-Risk#codebase-risk) in some circumstances. 
 
-Nevertheless, compilers and type-checking are so prevalent in software that clearly, you have to accept that in most cases, the trade-off has been worth it: Even languages like [Clojure](https://clojure.org) have been retro-fitted with [type checkers](https://github.com/clojure/core.typed/wiki/User-Guide).
+Nevertheless, static type checking is so prevalent in software that clearly in most cases, the trade-off has been worth it: Even languages like [Clojure](https://clojure.org) have been retro-fitted with [type checkers](https://github.com/clojure/core.typed/wiki/User-Guide).
 
 Let's look at some further types of [Protocol Risk](Communication-Risk#protocol-risk):
  
