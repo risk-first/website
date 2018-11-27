@@ -174,15 +174,58 @@ By having a stack of protocols, we are able to apply [Separation Of Concerns](ht
 
 ## Protocol Risk
 
-The protocol mediates between the message and the channel.  <!-- tweet-end -->Where this goes wrong, we have [Protocol Risk](Communication-Risk#protocol-risk).  This is a really common issue for IT systems, but also sometimes for human communication too.
-
 ![Communication Protocols Risks](images/generated/risks/communication/communication_protocol_risks.png)
 
-Generally, any time where you have different parts of a system communicating with each other, and one part can change incompatibly with another you have [Protocol Risk](Communication-Risk#protocol-risk).
+Hopefully, the above example gives an indication of the usefulness of protocols within software.  But for every protocol we use, we have [Protocol Risk](Communication-Risk#protocol-risk).  This is a problem in human communication protocols, but it's really common in computer communication because we create protocols _all the time_ in software. 
 
-Locally, (within our own project), where we have control, we can mitigate this risk using compile-time checking (as discussed already in [Complexity Risk](Complexity-Risk#protocols-and-types)), which essentially forces all clients and suppliers to agree on protocol.  But, the wider the group that you are communicating with, the less control you have and the more chance there is of [Protocol Risk](Communication-Risk#protocol-risk).   
+For example, as soon as we define a Javascript function (called **b** here), we are creating a protocol for other functions (**a** here) to use it: 
 
-Let's look at some types of [Protocol Risk](Communication-Risk#protocol-risk):
+```javascript
+function b(a, b, c) {
+    return a+b+c;
+}
+
+function a() {
+	var bOut = b(1,2,3);
+	return "something "+bOut;		// returns "something 6"
+}
+```
+
+If function **b** then changes, say:
+
+```javascript
+function b(a, b, c, d /* new parameter */) {
+    return a+b+c+d;
+}
+```
+
+Then, **a** will instantly have a problem calling it and there will be an error of some sort.
+
+[Protocol Risk](Communication-Risk#protocol-risk) also occurs when we use [Data Types](https://en.wikipedia.org/wiki/Data_type):  whenever we change the data type, we need to correct the usages of that type.  Note above, I've given the `JavaScript` example, but I'm going to switch to `TypeScript` now:
+
+```typescript
+interface BInput {
+    a: string,
+    b: string, 
+    c: string,
+    d: string
+}
+
+function b(in: BInput): string {
+    return in.a + in.b + in.c + in.d; 
+}
+
+function a() {
+	var bOut = b({a: 1, b: 2, c: 3);		// new parameter d missing
+	return "something "+bOut;		
+}
+```
+
+By using a type-checker, we can identify issues like this, but there is a tradeoff:  we mitigate [Protocol Risk](Communication-Risk#protocol-risk), because we define the protocols _once only_ in the program, and ensure that usages all match the specification.  But the tradeoff is (as we can see in the `TypeScript` code) more _finger-typing_, which means [Codebase Risk](Complexity-Risk#codebase-risk) in some circumstances. 
+
+Nevertheless, compilers and type-checking are so prevalent in software that clearly, you have to accept that in most cases, the trade-off has been worth it: Even languages like [Clojure](https://clojure.org) have been retro-fitted with [type checkers](https://github.com/clojure/core.typed/wiki/User-Guide).
+
+Let's look at some further types of [Protocol Risk](Communication-Risk#protocol-risk):
  
 ### Protocol Incompatibility Risk
 
