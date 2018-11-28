@@ -75,7 +75,7 @@ The way this plays out is depicted in <!--replace diagram ref{origin-of-risk.png
  
 ![Causes Of Risk](images/generated/staging-and-classifying/origin-of-risk.png)
 
-## Towards A Periodic Table Of Risks
+## Towards A "Periodic Table" Of Risks
 
 As we said [at the start](A-Pattern-Language), Risk-First is all about developing _A Pattern Language_.  We can use the terms like "[Feature Risk](Feature-Risk)"_ or "[Learning Curve Risk](Communication-Risk#learning-curve-risk)" to _explain_ phenomena we see on software projects.   If we want to [De-Risk](De-Risking) our work, we need to be able to explain what the risks are, and what we expect to do about them.
 
