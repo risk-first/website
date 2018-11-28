@@ -1,3 +1,4 @@
+![Draft](images/state/draft.png)
 
 
 Events as mitigation for coordination risk. diagram.

@@ -3,6 +3,8 @@
 - preview of what's to come in part 3.  
 
 
+The point of part 2 is to give a taxonomy for talking about risk.  
+
 Bad to leave on the failure notes, let's talk about some successes.
 
 
