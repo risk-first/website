@@ -1,10 +1,12 @@
-![Under Construction](images/state/under-construction.png)
+![Under Construction](images/state/uc.png)
 
-In [All Risk Management](All-Risk-Management) we made the case that [any action you take(Glossary#taking-action) on a software project is to do with managing risk, and the last section, [A Conversation](A-Conversation) was an example of this happening. 
+In [All Risk Management](All-Risk-Management) we made the case that [any action you take](Glossary#taking-action) on a software project is to do with managing risk, and the last section, [A Conversation](A-Conversation) was an example of this happening. 
 
-Therefore, it stands to reason that software methodologies are all about risk management too.  Since they are prescribing a particular day-to-day process, or set of actions to take, they are also prescribing a particular approach to managing the risks on the project.  Back in the [Development Process](Development-Process) section, we introduced an example software methodology that a development team might follow when building software.  It included steps like _analysis_, _coding_ and _testing_.  And, we looked at how each of these actions reduces risk in the software delivery process.  
+Therefore, it stands to reason that software methodologies are all about risk management too.  Since they are prescribing a particular day-to-day process, or set of actions to take, they are also prescribing a particular approach to managing the risks on the project.  
 
-Moreover, we looked at how following a process would expose risks that might be hidden to the members of the team:  it doesn't matter if a developer doesn't know that he's going to break "Feature Y", because the _Integration Testing_ part of the process will mitigate this risk in the testing stage, rather than in production (where it becomes more expensive).  
+Back in the [Development Process](Development-Process) section, we introduced an example software methodology that a development team might follow when building software.  It included steps like _analysis_, _coding_ and _testing_.  And, we looked at how each of these actions reduces risk in the software delivery process.  
+
+We looked at how following a process would expose risks that might be hidden to the members of the team:  it doesn't matter if a developer doesn't know that he's going to break "Feature Y", because the _Integration Testing_ part of the process will mitigate this risk in the testing stage, rather than in production (where it becomes more expensive).  
 
 In this section, we're going to have a brief look at some different software methodologies, and see how different methodologies prioritise different risks.
 
@@ -14,9 +16,9 @@ In this section, we're going to have a brief look at some different software met
 
 [Waterfall](https://en.wikipedia.org/wiki/Waterfall_model) is a linear, stepwise approach to the processes involved in delivering a software system, and it really represents a family of methodologies, such as [RUP](https://en.wikipedia.org/wiki/Rational_Unified_Process) or [SSADM](https://en.wikipedia.org/wiki/Structured_systems_analysis_and_design_method). tbd
 
-TBD. diagram
+![Waterfall Actions](images/generated/introduction/waterfall.png) 
 
-The basic idea behind Waterfall methodologies was that the software process is broken into distinct stages, usually including:
+The basic idea behind Waterfall-style methodologies was that the software process is broken into distinct stages, usually including:
 
 - [Requirements Capture](Requirements-Capture)
 - [Specification](Big-Design-Up-Front)
@@ -29,8 +31,7 @@ Because Waterfall methodologies are borrowed from _the construction industry_, t
 
 Construction projects are often done by tender.  This means that the supplier will bid for the job of completing the project, and deliver it to a fixed price.   This is a risk-management strategy for the client:  they are transferring the risk of construction difficulties to the supplier, and avoiding the [Agency Risk](Agency-Risk) that the supplier will "pad" the project and take longer to implement it than necessary, charging them more in the process.  In order for this to work, both sides need to have a fairly close understanding of what will be delivered, and this is why a specification is created.
 
-rework, build-time costs -> specification
-cost overruns, agency risk -> fixed price bid, specifications -> 
+![Waterfall, Specifications and Requirements Capture](images/generated/introduction/waterfall2.png)
 
 In a construction scenario, this makes a lot of sense.  But, there are two key criticisms of the Waterfall approach when applied to software:  
 
