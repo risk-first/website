@@ -45,27 +45,25 @@ As you can see in the above diagram, some of the risks on the left _are the same
 
 > "Software crisis is a term used in the early days of computing science for the difficulty of writing useful and efficient computer programs in the required time...   The software crisis was due to the rapid increases in computer power and the complexity of the problems that could not be tackled. " - [Software Crisis, _Wikipedia_](https://en.wikipedia.org/wiki/Software_crisis)
 
-## Agile
+## Alternative Methodologies
 
 The software crisis showed that, a lot of the time, up-front requirements-capture, specification and fixed-price bids did little to manage risk on software projects.  So it's not surprising that by the 1990's, various different groups of software engineers were advocating "Agile" techniques, which did away with these actions.
 
-In "[Extreme Programming Explained](http://amzn.eu/d/1vSqAWa)", Kent Beck breaks down Extreme Programming, listing the risks he wants to address with his methodology, and the actions he proposes to address them with.
-
 ![Risks, and the practices that manage them in Extreme Programming](images/generated/introduction/xp.png)
 
-## Other Methodologies
+In "[Extreme Programming Explained](http://amzn.eu/d/1vSqAWa)", Kent Beck breaks down his methodology, Extreme Programming, listing the risks he wants to address and the actions he proposes to address them with.  The above diagram summarises the main risks and actions he talks about.   These are different risks to those addressed by Waterfall, and unsurprisingly, this leads to different actions too.
 
 Later in Risk-First, we will be going deeper on methodologies, examining them using a Risk-First perspective to understand what makes each one work, what they value and how they treat different risks.  To get there, we need to have a model of the risks we face on a software project, and this is the subject of Part 2, in the next section.  
 
 Until then though, let's cover at a high-level the basic differences we see in some of the methodologies:
 
- - **[Lean](https://en.wikipedia.org/wiki/Lean_software_development)**: Applies the principles used in [Lean Manufacturing](https://en.wikipedia.org/wiki/Lean_manufacturing), which was developed at Toyota in the last century.  Lean takes the view that the biggest risk in manufacturing is from waste, where waste is inventory, over-production, work-in-progress, time spent waiting or imperfectly made product.  Applying this approach to software means minimising work-in-progress and frequent releases.  [Kanban]() as a way of organising team
+ - **[Lean Software Development](https://en.wikipedia.org/wiki/Lean_software_development)**: While Waterfall borrows from risk management techniques in the construction industry, Lean Software Development applies the principles used in [Lean Manufacturing](https://en.wikipedia.org/wiki/Lean_manufacturing), which was developed at Toyota in the last century.  Lean takes the view that the biggest risk in manufacturing is from waste, where waste is inventory, over-production, work-in-progress, time spent waiting or defects in production.  Applying this approach to software means minimising work-in-progress, frequent releases and continuous improvement.  
 
- - **[Project Management Body Of Knowledge (PMBoK)](https://en.wikipedia.org/wiki/Project_Management_Body_of_Knowledge)**:  This is a formalisation of traditional project management practice.  It prescribes ways of individually managing scope, schedule, resources, communications, dependencies, stakeholders etc. on a project.  Although "risk" is seen as a separate entity to be managed, all of the above areas are sources of risk within a project, as we will see in Part 2.
+ - **[Project Management Body Of Knowledge (PMBoK)](https://en.wikipedia.org/wiki/Project_Management_Body_of_Knowledge)**:  This is a formalisation of traditional project management practice.  It prescribes best practices for managing scope, schedule, resources, communications, dependencies, stakeholders etc. on a project.  Although "risk" is seen as a separate entity to be managed, all of the above areas are sources of risk within a project, as we will see in Part 2.
 
- - **[Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development))**: Is a popular Agile methodology, although arguably less "extreme" than [Extreme Programming](http://amzn.eu/d/1vSqAWa) discussed above.  It drops [Pair Programming]() and [The On-Site Customer]() requirements and promotes a limited set of agile practices, such as frequent releases, daily meetings, a product owner and retrospectives.  This simplicity arguably reduces [Learning Curve Risk](Communication-Risk#learning-curve-risk) and probably contributes to Scrum's popularity over XP.  
+ - **[Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development))**: Is a popular Agile methodology.  Arguably, it is less "extreme" than Extreme Programming, as it drops [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming) and the always-available customer requirements, and promotes a limited set of agile practices, such as frequent releases, daily meetings, a product owner and retrospectives.  This simplicity arguably makes it [simpler to learn and adapt to](Communication-Risk#learning-curve-risk) and probably contributes to Scrum's popularity over XP.  
  
- - **[DevOps](https://en.wikipedia.org/wiki/DevOps)**: Many software systems struggle with the transition between development and production.  DevOps acknowledges this risk area and is about reducing the [Operational Risk](Operational-Risk) inherent in running software by more closely aligning the development effort with production.  It champions activities such as continuous deployment automated releases and automated monitoring.
+ - **[DevOps](https://en.wikipedia.org/wiki/DevOps)**: Many software systems struggle with the disconnect between "in development" and "in production".  DevOps is an acknowledgement of this, and is about more closely aligning the feedback loops between the developers and the production system.  It champions activities such as continuous deployment, automated releases and automated monitoring.
 
 ## Effectiveness
 
