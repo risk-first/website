@@ -5,45 +5,51 @@
   </svg:defs>
   <diagram xmlns="http://www.kite9.org/schema/adl">
 
-    <context id="c" bordered="true">
+    <context id="c" bordered="true" style="kite9-layout: down; ">
+      <group style="kite9-layout: right; ">
+        <mitigated>
+          <risk class="attendant">Rework</risk>
+        </mitigated>
+        <mitigated>
+          <risk class="attendant">Approvals
+          </risk>
+        </mitigated>
+      </group>
+      <group style="kite9-layout: right; ">
+        <mitigated>
+          <risk class="attendant">Cost
+            Overruns
+          </risk>
+        </mitigated>
+        <mitigated>
+          <risk class="attendant">Agency
+            Risks
+          </risk>
+        </mitigated>
+      </group>
 
-      <mitigated>
-        <risk class="attendant">Rework</risk>
-      </mitigated>
-      <mitigated>
-        <risk class="attendant">Approvals
-        </risk>
-      </mitigated>
-      <mitigated>
-        <risk class="attendant">Cost
-          Overruns
-        </risk>
-      </mitigated>3
-      <mitigated>
-        <risk class="attendant">Agency
-          Risks
-        </risk>
-      </mitigated>
     </context>
 
     <group style="kite9-layout: down; kite9-horizontal-align: left; ">
-      <action style="kite9-horizontal-align: left; kite9-min-width: 200pt;" >Requirements Capture</action>
-      <action style="kite9-horizontal-align: left; kite9-min-width: 200pt;" >Specification</action>
-      <action style="kite9-horizontal-align: left; kite9-min-width: 200pt;" >Fixed Price Contracts</action>
+      <action style="kite9-horizontal-align: left; kite9-min-width: 200pt;">Requirements Capture</action>
+      <action style="kite9-horizontal-align: left; kite9-min-width: 200pt;">Specification</action>
+      <action style="kite9-horizontal-align: left; kite9-min-width: 200pt;">Fixed Price Contracts</action>
     </group>
 
 
     <context id="c" bordered="true">
 
-      <risk class="attendant">Requirements 
-      Changes</risk>
+      <risk class="attendant">Requirements
+        Changes
+      </risk>
       <risk id="1" class="attendant">Late
-      Delivery</risk>
+        Delivery
+      </risk>
       <risk id="2" class="attendant">Cost
         Overruns
       </risk>
     </context>
-    
+
     <link>
       <from reference="1" />
       <to reference="2" class="arrow" />

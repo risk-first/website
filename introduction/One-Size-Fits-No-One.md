@@ -37,7 +37,7 @@ In a construction scenario, this makes a lot of sense.  But, _software projects 
 
 > "2.  Designers may not be aware of future difficulties when designing a new software product or feature. " - [Waterfall Model, _Wikipedia_](https://en.wikipedia.org/wiki/Waterfall_model#Supporting_arguments)
 
-So, the same actions Waterfall prescribes to mitigate rework and cost-overruns in the building industry do not address (and perhaps exacerbate) the two issues raised above when applied to software, as shown in the diagram above.
+So, the same actions Waterfall prescribes to mitigate rework and cost-overruns in the building industry do not address (and perhaps exacerbate) the two issues raised above when applied to software.
 
 ![Waterfall, Applied to a Software Project](images/generated/introduction/waterfall3.png)
 
