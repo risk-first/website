@@ -29,9 +29,6 @@
               Quality
             </risk>
           </mitigated>
-        </group>
-
-        <group id="g3" style="kite9-layout: right;  kite9-connection-align: 50%; ">
           <mitigated>
             <risk class="attendant">Misunderstanding
               Requirements
@@ -39,7 +36,7 @@
           </mitigated>
         </group>
 
-        <group id="g4" style="kite9-layout: right;  kite9-connection-align: 50%; ">
+        <group id="g3" style="kite9-layout: right;  kite9-connection-align: 50%; ">
           <mitigated>
             <risk class="attendant">Key-Man
               Risk
@@ -54,20 +51,19 @@
       </group>
     </context>
 
-    <group style="kite9-layout: down; kite9-horizontal-align: left;">
-      <action style="kite9-margin: 10pt; kite9-horizontal-align: left; " id="a1">Short Release Cycles</action>
-
-      <group id="a2" style="kite9-layout: down; kite9-sizing: minimize; kite9-horizontal-align: left; ">
-        <action style="kite9-margin: 10pt; kite9-horizontal-align: left;">Automated Testing</action>
-        <action style="kite9-margin: 10pt; kite9-horizontal-align: left;">Refactoring</action>
+    <group style="kite9-horizontal-align: left;">
+      <group id="a1" style="kite9-layout: down; kite9-sizing: minimize; kite9-horizontal-align: left; kite9-min-width: 200pt;">
+        <action style="kite9-margin: 10pt; kite9-horizontal-align: left; kite9-min-width: 200pt;">Short Release Cycles</action>
+      </group>
+      <group id="a2" style="kite9-layout: down; kite9-sizing: minimize; kite9-horizontal-align: left; kite9-min-width: 200pt;">
+        <action style="kite9-margin: 10pt; kite9-horizontal-align: left; kite9-min-width: 200pt;">Automated Testing</action>
+        <action style="kite9-margin: 10pt; kite9-horizontal-align: left; kite9-min-width: 200pt;">Refactoring</action>
+        <action style="kite9-margin: 10pt; kite9-horizontal-align: left; kite9-min-width: 200pt;">On-Site Customer</action>
       </group>
 
-      <action style="kite9-margin: 10pt; kite9-horizontal-align: left;" id="a3">On-Site Customer</action>
-
-      <group id="a4" style="kite9-layout: down; kite9-sizing: minimize; kite9-horizontal-align: left; ">
-
-        <action style="kite9-margin: 10pt; kite9-horizontal-align: left;">Pair Programming</action>
-        <action style="kite9-margin: 10pt; kite9-horizontal-align: left;">Collective Ownership</action>
+      <group id="a3" style="kite9-layout: down; kite9-sizing: minimize; kite9-horizontal-align: left; kite9-min-width: 200pt;">
+        <action style="kite9-margin: 10pt; kite9-horizontal-align: left; kite9-min-width: 200pt;">Pair Programming</action>
+        <action style="kite9-margin: 10pt; kite9-horizontal-align: left; kite9-min-width: 200pt;">Collective Ownership</action>
       </group>
 
 
@@ -86,11 +82,6 @@
     <link drawDirection="RIGHT" class="invisible">
       <from reference="g3" />
       <to reference="a3" />
-    </link>
-
-    <link drawDirection="RIGHT" class="invisible">
-      <from reference="g4" />
-      <to reference="a4" />
     </link>
   </diagram>
 </svg:svg>
