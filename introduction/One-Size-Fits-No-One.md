@@ -75,17 +75,17 @@ A methodology offers us a route through the [Risk Landscape](Glossary#risk-lands
  
 When we [take action](Glossary#take-action) according to a methodology, we expect the [Pay-Off](Glossary#pay-off), and if this doesn't materialise, then we feel the methodology is failing us.   But it could just be that it is inappropriate to the _type of project_ we are running.  Our [Risk Landscape](Glossary#risk-landscape) may not be the one the designers of the methodology envisaged.
 
-![Inappropriate Methodologies create their own risks](images/generated/introduction/one_size.png)
-
 For example, NASA can't do Agile when launching space craft:  there's no two-weekly launch that they can iterate over, and the the risks of losing a rocket or satellite are simply too great to allow for iteration in production.   The risk profile is just all wrong for Agile: you need to manage the risk of _losing hardware_ over the risk of _requirements changing_.  
 
 Equally, regulatory projects often require big, up-front, waterfall-style design:  keeping regulators happy is often about showing  that you have a well-planned path to achieving the regulation.  Often, the changes need to be reviewed and approved by regulators and other stakeholders in advance of their implementation.  This can't be done with an approach of "iterate for a few months".  
 
 At the other end of the spectrum, [Facebook used to have](https://mashable.com/2014/04/30/facebooks-new-mantra-move-fast-with-stability/?europe=true) an approach of "move fast and break things".  This may have been optimal when they were trying mitigate the risk of being out-innovated by competitors within the fast-evolving sphere of social networking. 
 
+![Inappropriate Methodologies create their own risks](images/generated/introduction/one_size.png)
+
 ## Choosing A Methodology
 
-There is value in adopting a methodology as a complete collection of processes:  Choosing a methodology (or any process) reduces the amount of thinking individuals have to do.  Following a process may avoid the risks, whether the implementer knows about them or not.  And, it becomes the process that is responsible for failure, not the individual.  
+There is value in adopting a methodology as a complete collection of processes:  Choosing a methodology (or any process) reduces the amount of thinking individuals have to do.  Following a process may avoid the risks, whether the implementer knows about them or not.  And, it becomes the process that is responsible for failure, not the individual (as shown in the above diagram).  
 
 If we genuinely care about our projects, then it's critical that we match the choice of methodology to the risk profile of the project.  We need to understand exactly what risks our methodology will help us with, and which it won't; where it is appropriate, and where it isn't.
 
