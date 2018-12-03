@@ -47,7 +47,7 @@ As you can see in the above diagram, some of the risks on the left _are the same
 
 ## Agile
 
-As the diagram above shows, a lot of the time, up-front requirements-capture, specification and fixed-price bids did little to manage risk on software projects.  So it's not surprising that by the 1990's, various different groups of software engineers were advocating "Agile" techniques, which did away with these actions.
+The software crisis showed that, a lot of the time, up-front requirements-capture, specification and fixed-price bids did little to manage risk on software projects.  So it's not surprising that by the 1990's, various different groups of software engineers were advocating "Agile" techniques, which did away with these actions.
 
 In "[Extreme Programming Explained](http://amzn.eu/d/1vSqAWa)", Kent Beck breaks down Extreme Programming, listing the risks he wants to address with his methodology, and the actions he proposes to address them with.
 
