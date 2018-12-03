@@ -14,11 +14,9 @@ In this section, we're going to have a brief look at some different software met
 
 > "The waterfall development model originated in the manufacturing and construction industries; where the highly structured physical environments meant that design changes became prohibitively expensive much sooner in the development process. When first adopted for software development, there were no recognized alternatives for knowledge-based creative work." - [Waterfall Model, _Wikipedia_](https://en.wikipedia.org/wiki/Waterfall_model)
 
-[Waterfall](https://en.wikipedia.org/wiki/Waterfall_model) is a linear, stepwise approach to the processes involved in delivering a software system, and it really represents a family of methodologies, such as [RUP](https://en.wikipedia.org/wiki/Rational_Unified_Process) or [SSADM](https://en.wikipedia.org/wiki/Structured_systems_analysis_and_design_method). tbd
-
 ![Waterfall Actions](images/generated/introduction/waterfall.png) 
 
-The basic idea behind Waterfall-style methodologies was that the software process is broken into distinct stages, usually including:
+[Waterfall](https://en.wikipedia.org/wiki/Waterfall_model) is a family of methodologies advocating a linear, stepwise approach to the processes involved in delivering a software system.  The basic idea behind Waterfall-style methodologies was that the software process is broken into distinct stages, usually including:
 
 - [Requirements Capture](Requirements-Capture)
 - [Specification](Big-Design-Up-Front)
@@ -29,22 +27,21 @@ The basic idea behind Waterfall-style methodologies was that the software proces
 
 Because Waterfall methodologies are borrowed from _the construction industry_, they manage the risks that you would care about in a construction project.  Specifically, minimising the risk of rework, and the risk of costs spiralling during the physical phase of the project.  For example, pouring concrete is significantly easier than digging it out again after it sets.  
 
-Construction projects are often done by tender.  This means that the supplier will bid for the job of completing the project, and deliver it to a fixed price.   This is a risk-management strategy for the client:  they are transferring the risk of construction difficulties to the supplier, and avoiding the [Agency Risk](Agency-Risk) that the supplier will "pad" the project and take longer to implement it than necessary, charging them more in the process.  In order for this to work, both sides need to have a fairly close understanding of what will be delivered, and this is why a specification is created.
-
 ![Waterfall, Specifications and Requirements Capture](images/generated/introduction/waterfall2.png)
 
-In a construction scenario, this makes a lot of sense.  But, there are two key criticisms of the Waterfall approach when applied to software:  
+Construction projects are often done by tender.  This means that the supplier will bid for the job of completing the project, and deliver it to a fixed price.   This is a risk-management strategy for the client:  they are transferring the risk of construction difficulties to the supplier, and avoiding the [Agency Risk](Agency-Risk) that the supplier will "pad" the project and take longer to implement it than necessary, charging them more in the process.  In order for this to work, both sides need to have a fairly close understanding of what will be delivered, and this is why a specification is created.
 
-> "1.  Clients may not know exactly what their requirements are before they see working software and so change their requirements, leading to redesign, redevelopment, and retesting, and increased costs."
+In a construction scenario, this makes a lot of sense.  But, _software projects are not the same as building projects_.  There are two key criticisms of the Waterfall approach when applied to software:  
+
+> "1.  Clients may not know exactly what their requirements are before they see working software and so change their requirements, leading to redesign, redevelopment, and re-testing, and increased costs."
 
 > "2.  Designers may not be aware of future difficulties when designing a new software product or feature. " - [Waterfall Model, _Wikipedia_](https://en.wikipedia.org/wiki/Waterfall_model#Supporting_arguments)
 
-The actions Waterfall prescribes to mitigate rework and cost-overruns do not address (and perhaps exacerbate) the two issues raised above. 
+So, the same actions Waterfall prescribes to mitigate rework and cost-overruns in the building industry do not address (and perhaps exacerbate) the two issues raised above when applied to software, as shown in the diagram above.
 
-rework, build-time costs -> requirements capture, specification ->  missed / incorrect requirements
-cost overruns, agency risk -> fixed-price bid, specifications -> missed deadlines, low quality
+![Waterfall, Applied to a Software Project](images/generated/introduction/waterfall2.png)
 
-As you can see in the above diagram, some of the risks on the left _are the same_ as the ones on the right:  sometimes, the actions taken to manage them made no difference (or made things worse).  The inability to manage these risks led to the identification of a "Software Crisis", in the 1970's:
+As you can see in the above diagram, some of the risks on the left _are the same_ as the ones on the right:  the actions taken to manage them made no difference (or made things worse).  The inability to manage these risks led to the identification of a "Software Crisis", in the 1970's:
 
 > "Software crisis is a term used in the early days of computing science for the difficulty of writing useful and efficient computer programs in the required time...   The software crisis was due to the rapid increases in computer power and the complexity of the problems that could not be tackled. " - [Software Crisis, _Wikipedia_](https://en.wikipedia.org/wiki/Software_crisis)
 
@@ -94,6 +91,6 @@ Having a process reduces the amount of thinking individuals have to do.  Followi
 
 diagram: personal blame -> process -> project failure?
 
-If we genuinely care about our projects, then it's critical that we match the choice of methodology to the risk profile of the project.
+If we genuinely care about our projects, then it's critical that we match the choice of methodology to the risk profile of the project.  We need to understand exactly what risks our methodology will help us with, and which it won't; where it is appropriate, and where it isn't.
 
 So different methodologies advocate different practices, and different practices manage different risks.   If we want to understand methodologies, or even choose the right practices we really need to understand the _types of risks_ we face on software projects.  On to [Part 2](Risk-Landscape)!

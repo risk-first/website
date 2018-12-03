@@ -37,5 +37,26 @@
       <action>Fixed Price Contracts</action>
     </group>
 
+
+    <context id="c" bordered="true">
+
+      <risk class="attendant">Requirements 
+      Changes</risk>
+      <risk id="1" class="attendant">Late
+      Delivery</risk>
+      <risk id="2" class="attendant">Cost
+        Overruns
+      </risk>
+
+      <label id="id_16">
+        <text>Internal Model</text>
+        <symbols />
+      </label>
+    </context>
+    
+    <link>
+      <from reference="1" />
+      <to reference="2" class="arrow" />
+    </link>
   </diagram>
 </svg:svg>
