@@ -69,11 +69,11 @@ Until then though, let's cover at a high-level the basic differences we see in s
 
 > "All methodologies are based on fear.  You try to set up habits to prevent your fears from becoming reality." - [Extreme Programming Explained, _Kent Beck_](http://amzn.eu/d/1vSqAWa)
 
-The promise of any methodology is that it will help you manage certain [Hidden Risks](Glossary#hidden-risk).  But this comes at the expense of the _effort_ you put into the practices of the methodology.  As we've said many times, a lot of the problems on a software project are [Hidden Risks](Glossary#hidden-risk), and so there is an act of faith here:  we are following an approach because it purports to avoid risks we can't know about.
+The promise of any methodology is that it will help you manage certain [Hidden Risks](Glossary#hidden-risk).  But this comes at the expense of the _effort_ you put into the practices of the methodology.  As we've said many times, a lot of the problems on a software project are [Hidden Risks](Glossary#hidden-risk), and so there is an act of faith here:  we are following a methodology because it purports to avoid risks we don't actually know about.
 
 A methodology offers us a route through the [Risk Landscape](Glossary#risk-landscape), based on the risks that the designers of the methodology care about.  When we use the methodology, it means that we are baking into our behaviour actions to avoid those risks.  
  
-When we [take action](Glossary#take-action) according to a methodology, we expect the [Pay-Off](Glossary#pay-off), and if this doesn't materialise, then we feel the methodology is failing us.   But it could just be that it is inappropriate to the _type of project_ we are running.
+When we [take action](Glossary#take-action) according to a methodology, we expect the [Pay-Off](Glossary#pay-off), and if this doesn't materialise, then we feel the methodology is failing us.   But it could just be that it is inappropriate to the _type of project_ we are running.  Our [Risk Landscape](Glossary#risk-landscape) may not be the one the designers of the methodology envisaged.
 
 ![Inappropriate Methodologies create their own risks](images/generated/introduction/one_size.png)
 
