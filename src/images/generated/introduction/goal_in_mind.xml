@@ -3,38 +3,32 @@
   <svg:defs>
     <svg:style type="text/css"> @import url("risk.css");</svg:style>
   </svg:defs>
-  <diagram xmlns="http://www.kite9.org/schema/adl" style="kite9-layout: down; ">
+  <diagram xmlns="http://www.kite9.org/schema/adl">
 
-    <group style="kite9-layout: right;">
+  <context id="c" bordered="true">
 
-      <context id="c" bordered="true">
+    <risk id="id_0" class="goal">Successful Party</risk>
 
-        <risk id="id_0" class="goal">Successful Party</risk>
-
-        <label id="id_16">
-          <text>Internal Model</text>
-          <symbols />
-        </label>
-      </context>
-
-    </group>
+    <label id="id_16">
+      <text>Internal Model</text>
+      <symbols />
+    </label>
+  </context>
 
 
+  <action>Host A Party</action>
 
+  <context id="c" bordered="true">
 
-    <action>Host A Party</action>
+    <risk id="id_0" class="attendant">Nothing To Eat</risk>
+    <risk id="id_0" class="attendant">Wrong Ingredients</risk>
+    <risk id="id_0" class="attendant">Ruin The Food</risk>
 
-    <context id="c" bordered="true">
-
-      <risk id="id_0" class="attendant">Nothing To Eat</risk>
-      <risk id="id_0" class="attendant">Wrong Ingredients</risk>
-      <risk id="id_0" class="attendant">Ruin The Food</risk>
-
-      <label id="id_16">
-        <text>Attendant Risks</text>
-        <symbols />
-      </label>
-    </context>
+    <label id="id_16">
+      <text>Attendant Risks</text>
+      <symbols />
+    </label>
+  </context>
 
   </diagram>
 </svg:svg>
