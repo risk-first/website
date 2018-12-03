@@ -85,8 +85,10 @@ At the other end of the spectrum, [Facebook used to have](https://mashable.com/2
 
 ## Choosing A Methodology
 
-There is value in adopting a methodology as a complete collection of processes.  Choosing a methodology (or any process) reduces the amount of thinking individuals have to do.  Following a process will (hopefully) avoid the risks, whether the implementer knows about them or not.  At the same time, it is the process that is responsible for failure, not the individual.  
+There is value in adopting a methodology as a complete collection of processes:  Choosing a methodology (or any process) reduces the amount of thinking individuals have to do.  Following a process may avoid the risks, whether the implementer knows about them or not.  And, it becomes the process that is responsible for failure, not the individual.  
 
 If we genuinely care about our projects, then it's critical that we match the choice of methodology to the risk profile of the project.  We need to understand exactly what risks our methodology will help us with, and which it won't; where it is appropriate, and where it isn't.
+
+An off-the-shelf methodology is unlikely to fit the risks of our project exactly.  Sometimes, we need to break down methodologies into their component practices, and apply just the practices we need.  This requires a much more fine-grained understanding of how the practices work, and what they bring.  
 
 So different methodologies advocate different practices, and different practices manage different risks.   If we want to understand methodologies, or even choose the right practices from one, we really need to understand the _types of risks_ we face on software projects.  This is where we go next in [Part 2](Risk-Landscape). 
