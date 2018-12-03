@@ -124,7 +124,7 @@ Darwin's conception of fitness was not one of athletic prowess, but how well an 
  - Expectation: What the user _expects_.
  - Reality: What they actually _get_.
 
-![Feature Risks Assembled:  Fit Risks, shown as _gaps_, as in the _Service Quality Model_](images/generated/risks/feature/all_feature_risk.png) 
+![Feature Risks Assembled:  Fit Risks, shown as _gaps_, as in the _Service Quality Model_](images/generated/risks/feature/all-feature-risk.png) 
 
 For further reading, you can check out [The Service Quality Model](http://en.wikipedia.org/SERVQUAL), which the diagram above is derived from.  This model analyses the types of _quality gaps_ in services, and how consumer expectations and perceptions of a service arise.
 
@@ -145,7 +145,7 @@ Two risks further consider how the **Fit** and **Audience** _change_: [Regressio
  - Our audience changes and evolves as it is exposed to our product and competing products.
  - The world as a whole is an evolving system within which our product exists.
  
-![Risks of Evolution/Change either of the product or the expectations of clients.](images/generated/risk/feature/all_feature_risk2.png) 
+![Risks of Evolution/Change either of the product or the expectations of clients.](images/generated/risks/feature/all-feature-risk2.png) 
  
 ## Applying Feature Risk
 

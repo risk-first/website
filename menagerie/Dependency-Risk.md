@@ -44,7 +44,7 @@ But the bus will take you to lots of in-between places you _didn't_ want to go. 
  - The feature (or now, dependency) doesn't provide all the functionality you need.  This was [Fit Risk](Feature-Risk#feature-fit-risk).  An example might be your supermarket not stocking everything you want to buy.
  - The feature / dependency provides far too much, and you have to accept more complexity than you need.  This was [Conceptual Integrity Risk](Feature-Risk#conceptual-integrity-risk).  An example of this might be the supermarket being _too big_, and you spend a lot longer navigating it than you wanted to.
  
-![Feature Fit:  A Two-Dimensional Problem (at least)](images/kite9/risks/dependency/dependency-risk-fit.png)
+![Feature Fit:  A Two-Dimensional Problem (at least)](images/generated/risks/dependency/dependency-risk-fit.png)
 
 ## Reliability Risk
 
