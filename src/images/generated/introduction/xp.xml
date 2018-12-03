@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" style="kite9-layout: right; ">
+
+    <context id="c" bordered="true">
+      <group style="kite9-layout: down; kite9-sizing: minimize; ">
+        <group id="g1" style="kite9-layout: right;  kite9-connection-align: 50%; ">
+          <mitigated>
+            <risk class="attendant">Schedule Slip</risk>
+          </mitigated>
+          <mitigated>
+            <risk class="attendant">Project
+              Cancellation
+            </risk>
+          </mitigated>
+          <mitigated>
+            <risk class="attendant">Business
+              Change
+            </risk>
+          </mitigated>
+        </group>
+
+        <group id="g2" style="kite9-layout: right;  kite9-connection-align: 50%; ">
+          <mitigated>
+            <risk class="attendant">System
+              Quality
+            </risk>
+          </mitigated>
+        </group>
+
+        <group id="g3" style="kite9-layout: right;  kite9-connection-align: 50%; ">
+          <mitigated>
+            <risk class="attendant">Misunderstanding
+              Requirements
+            </risk>
+          </mitigated>
+        </group>
+
+        <group id="g4" style="kite9-layout: right;  kite9-connection-align: 50%; ">
+          <mitigated>
+            <risk class="attendant">Key-Man
+              Risk
+            </risk>
+          </mitigated>
+          <mitigated>
+            <risk class="attendant">Staff
+              Turnover
+            </risk>
+          </mitigated>
+        </group>
+      </group>
+    </context>
+
+    <group style="kite9-layout: down; kite9-horizontal-align: left;">
+      <action style="kite9-margin: 10pt; kite9-horizontal-align: left; " id="a1">Short Release Cycles</action>
+
+      <group id="a2" style="kite9-layout: down; kite9-sizing: minimize; kite9-horizontal-align: left; ">
+        <action style="kite9-margin: 10pt; kite9-horizontal-align: left;">Automated Testing</action>
+        <action style="kite9-margin: 10pt; kite9-horizontal-align: left;">Refactoring</action>
+      </group>
+
+      <action style="kite9-margin: 10pt; kite9-horizontal-align: left;" id="a3">On-Site Customer</action>
+
+      <group id="a4" style="kite9-layout: down; kite9-sizing: minimize; kite9-horizontal-align: left; ">
+
+        <action style="kite9-margin: 10pt; kite9-horizontal-align: left;">Pair Programming</action>
+        <action style="kite9-margin: 10pt; kite9-horizontal-align: left;">Collective Ownership</action>
+      </group>
+
+
+    </group>
+
+    <link drawDirection="RIGHT" class="invisible">
+      <from reference="g1" />
+      <to reference="a1" />
+    </link>
+
+    <link drawDirection="RIGHT" class="invisible">
+      <from reference="g2" />
+      <to reference="a2" />
+    </link>
+
+    <link drawDirection="RIGHT" class="invisible">
+      <from reference="g3" />
+      <to reference="a3" />
+    </link>
+
+    <link drawDirection="RIGHT" class="invisible">
+      <from reference="g4" />
+      <to reference="a4" />
+    </link>
+  </diagram>
+</svg:svg>

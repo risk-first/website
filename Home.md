@@ -40,6 +40,7 @@ Some easy-to-digest ideas that will set the scene for examining the practices la
  - [Cadence](Cadence)
  - [De-Risking](De-Risking)
  - [A Conversation](A-Conversation)
+ - [One Size Fits No One](One-Size-Fits-No-One)
  
 ### Part 2: [The Risk Landscape](Risk-Landscape)
 

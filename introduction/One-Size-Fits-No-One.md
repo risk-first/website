@@ -39,7 +39,7 @@ In a construction scenario, this makes a lot of sense.  But, _software projects 
 
 So, the same actions Waterfall prescribes to mitigate rework and cost-overruns in the building industry do not address (and perhaps exacerbate) the two issues raised above when applied to software, as shown in the diagram above.
 
-![Waterfall, Applied to a Software Project](images/generated/introduction/waterfall2.png)
+![Waterfall, Applied to a Software Project](images/generated/introduction/waterfall3.png)
 
 As you can see in the above diagram, some of the risks on the left _are the same_ as the ones on the right:  the actions taken to manage them made no difference (or made things worse).  The inability to manage these risks led to the identification of a "Software Crisis", in the 1970's:
 
@@ -49,7 +49,7 @@ As you can see in the above diagram, some of the risks on the left _are the same
 
 As the diagram above shows, a lot of the time, up-front requirements-capture, specification and fixed-price bids did little to manage risk on software projects.  So it's not surprising that by the 1990's, various different groups of software engineers were advocating "Agile" techniques, which did away with these actions.
 
-In "Extreme Programming Explained", Kent Beck breaks down Extreme Programming, listing the risks he wants to address with his methodology, and the actions he proposes to address them with.
+In "[Extreme Programming Explained](http://amzn.eu/d/1vSqAWa)", Kent Beck breaks down Extreme Programming, listing the risks he wants to address with his methodology, and the actions he proposes to address them with.
 
 TBD diagram
 
@@ -59,11 +59,11 @@ Later in Risk-First, we will be going deeper on methodologies, examining them us
 
 Until then though, let's cover at a high-level the basic differences we see in some of the methodologies:
 
- - **[Lean](https://en.wikipedia.org/wiki/Lean_software_development)**: Applies the principles used in [Lean Manufacturing](https://en.wikipedia.org/wiki/Lean_manufacturing), which was developed at Toyota in the last century.  Lean takes the view that the biggest risk in manufacturing is from waste, where waste is inventory, over-production, work-in-progress, time spent waiting or imperfectly made product.  
+ - **[Lean](https://en.wikipedia.org/wiki/Lean_software_development)**: Applies the principles used in [Lean Manufacturing](https://en.wikipedia.org/wiki/Lean_manufacturing), which was developed at Toyota in the last century.  Lean takes the view that the biggest risk in manufacturing is from waste, where waste is inventory, over-production, work-in-progress, time spent waiting or imperfectly made product.  Applying this approach to software means minimising work-in-progress and frequent releases.  [Kanban]() as a way of organising team
 
- - **[Project Management Body Of Knowledge (PMBoK)](https://en.wikipedia.org/wiki/Project_Management_Body_of_Knowledge)**:  This is a formalisation of the project management approach of individually managing scope, schedule, resources, communications, dependencies, stakeholders etc. on the project.  Although "risk" is seen as a separate entity to be managed, all of the above areas are sources of risk within a project, as we will see in Part 2.
+ - **[Project Management Body Of Knowledge (PMBoK)](https://en.wikipedia.org/wiki/Project_Management_Body_of_Knowledge)**:  This is a formalisation of traditional project management practice.  It prescribes ways of individually managing scope, schedule, resources, communications, dependencies, stakeholders etc. on a project.  Although "risk" is seen as a separate entity to be managed, all of the above areas are sources of risk within a project, as we will see in Part 2.
 
- - **[Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development))**: Is a popular Agile methodology, although arguably less "extreme" than [Extreme Programming]() discussed above.  Scrum promotes only a few agile practices, such as frequent releases, daily meetings, a product owner and retrospectives.  This simplicity arguably reduces [Learning Curve Risk](Communication-Risk#learning-curve-risk) and probably contributes to Scrum's popularity over XP.  
+ - **[Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development))**: Is a popular Agile methodology, although arguably less "extreme" than [Extreme Programming](http://amzn.eu/d/1vSqAWa) discussed above.  It drops [Pair Programming]() and [The On-Site Customer]() requirements and promotes a limited set of agile practices, such as frequent releases, daily meetings, a product owner and retrospectives.  This simplicity arguably reduces [Learning Curve Risk](Communication-Risk#learning-curve-risk) and probably contributes to Scrum's popularity over XP.  
  
  - **[DevOps](https://en.wikipedia.org/wiki/DevOps)**: Many software systems struggle with the transition between development and production.  DevOps acknowledges this risk area and is about reducing the [Operational Risk](Operational-Risk) inherent in running software by more closely aligning the development effort with production.  It champions activities such as continuous deployment automated releases and automated monitoring.
 
@@ -71,9 +71,9 @@ Until then though, let's cover at a high-level the basic differences we see in s
 
 diagram: hidden risk -> practice  ->  time.
 
-The promise of methodology is that it will help you avoid hidden risks, but this comes at the expense of the _effort_ you put into the practices of the methodology.  
+The promise of methodology is that it will help you avoid [Hidden Risks](Glossary#hidden-risk), but this comes at the expense of the _effort_ you put into the practices of the methodology.  
 
-When we [take action](Glossary#take-action) according to a methodology, we expect the [Pay Off](Glossary#pay-off), and if this doesn't materialise, then we feel the methodology is failing us.  
+When we [take action](Glossary#take-action) according to a methodology, we expect the [Pay-Off](Glossary#pay-off), and if this doesn't materialise, then we feel the methodology is failing us.  
 
 For example, NASA can't do Agile when launching space craft:  there's no two-weekly launch that they can iterate over, and the costs of failure are high if something goes wrong.   The risk profile is just all wrong for Agile: you need to manage the risk of _losing hardware_ over the risk of _requirements changing_.  
 
