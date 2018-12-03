@@ -51,7 +51,7 @@ As the diagram above shows, a lot of the time, up-front requirements-capture, sp
 
 In "[Extreme Programming Explained](http://amzn.eu/d/1vSqAWa)", Kent Beck breaks down Extreme Programming, listing the risks he wants to address with his methodology, and the actions he proposes to address them with.
 
-TBD diagram
+![Risks, and the practices that manage them in Extreme Programming](images/generated/introduction/xp.png)
 
 ## Other Methodologies
 
@@ -67,29 +67,23 @@ Until then though, let's cover at a high-level the basic differences we see in s
  
  - **[DevOps](https://en.wikipedia.org/wiki/DevOps)**: Many software systems struggle with the transition between development and production.  DevOps acknowledges this risk area and is about reducing the [Operational Risk](Operational-Risk) inherent in running software by more closely aligning the development effort with production.  It champions activities such as continuous deployment automated releases and automated monitoring.
 
-## Horses For Courses
+## Effectiveness
 
-diagram: hidden risk -> practice  ->  time.
+> "All methodologies are based on fear.  You try to set up habits to prevent your fears from becoming reality." - [Extreme Programming Explained, _Kent Beck_](http://amzn.eu/d/1vSqAWa)
 
-The promise of methodology is that it will help you avoid [Hidden Risks](Glossary#hidden-risk), but this comes at the expense of the _effort_ you put into the practices of the methodology.  
+The promise of any methodology is that it will help you manage certain [Hidden Risks](Glossary#hidden-risk).  But this comes at the expense of the _effort_ you put into the practices of the methodology.  As we've said many times, a lot of the problems on a software project are [Hidden Risks](Glossary#hidden-risk), and so there is an act of faith here:  we are following an approach because it purports to avoid risks we can't know about.
 
-When we [take action](Glossary#take-action) according to a methodology, we expect the [Pay-Off](Glossary#pay-off), and if this doesn't materialise, then we feel the methodology is failing us.  
+A methodology offers us a route through the [Risk Landscape](Glossary#risk-landscape), based on the risks that the designers of the methodology care about.  When we use the methodology, it means that we are baking into our behaviour actions to avoid those risks.  
+ 
+When we [take action](Glossary#take-action) according to a methodology, we expect the [Pay-Off](Glossary#pay-off), and if this doesn't materialise, then we feel the methodology is failing us.   But it could just be that it is inappropriate to the _type of project_ we are running.
+
+![Inappropriate Methodologies create their own risks](images/generated/introduction/one_size.png)
 
 For example, NASA can't do Agile when launching space craft:  there's no two-weekly launch that they can iterate over, and the costs of failure are high if something goes wrong.   The risk profile is just all wrong for Agile: you need to manage the risk of _losing hardware_ over the risk of _requirements changing_.  
 
 Equally, regulatory projects often require big, up-front, waterfall-style design:  keeping regulators happy is often about showing  that you have a well-planned path to achieving the regulation.  Often, the changes need to be reviewed and approved by regulators and other stakeholders in advance of their implementation.  This can't be done with an approach of "iterate for a few months".  
 
-## Fear and Belief
-
-> "All methodologies are based on fear.  You try to set up habits to prevent your fears from becoming reality." - [Extreme Programming Explained, _Kent Beck_](http://amzn.eu/d/1vSqAWa)
-
-A methodology offers us a route through the [Risk Landscape](Glossary#risk-landscape), based on the risks that the designers of the methodology care about.  When we use the methodology, it means that we are baking into our behaviour actions to avoid those risks.  
-
-As we've said many times, a lot of the problems on a software project are [Hidden Risks](Glossary#hidden-risk), and so there is an act of faith here:  we are following an approach because it purports to avoid risks we can't know about.
-
 Having a process reduces the amount of thinking individuals have to do.  Following a process will (hopefully) avoid the risks, whether the implementer knows about them or not.  At the same time, it is the process that is responsible for failure, not the individual.  
-
-diagram: personal blame -> process -> project failure?
 
 If we genuinely care about our projects, then it's critical that we match the choice of methodology to the risk profile of the project.  We need to understand exactly what risks our methodology will help us with, and which it won't; where it is appropriate, and where it isn't.
 
