@@ -2834,11 +2834,10 @@ creative work.''
 \caption{Waterfall Actions\label{waterfall.png}}
 \end{figure}
 
-\href{https://en.wikipedia.org/wiki/Waterfall_model}{Waterfall} is a
-family of methodologies advocating a linear, stepwise approach to the
-processes involved in delivering a software system. The basic idea
-behind Waterfall-style methodologies was that the software process is
-broken into distinct stages, usually including:
+Waterfall is a family of methodologies advocating a linear, stepwise
+approach to the processes involved in delivering a software system. The
+basic idea behind Waterfall-style methodologies was that the software
+process is broken into distinct stages, usually including:
 
 \begin{itemize}
 \tightlist
@@ -2946,35 +2945,29 @@ manage risk on software projects. So it's not surprising that by the
 Programming\label{xp.png}}
 \end{figure}
 
-In ``\href{http://amzn.eu/d/1vSqAWa}{Extreme Programming Explained}'',
-Kent Beck breaks down his methodology, Extreme Programming, listing the
-risks he wants to address and the actions he proposes to address them
-with. The above diagram summarises the main risks and actions he talks
-about. These are different risks to those addressed by Waterfall, and
-unsurprisingly, this leads to different actions too.
+In \href{http://amzn.eu/d/1vSqAWa}{Extreme Programming Explained}, Kent
+Beck breaks down his methodology, Extreme Programming, listing the risks
+he wants to address and the actions he proposes to address them with.
+Figure \ref{xp.png} summarises the main risks and actions he talks
+about. These are \emph{different} risks to those addressed by Waterfall,
+and unsurprisingly, this leads to different actions too.
 
-Later in Risk-First, we will be going deeper on methodologies, examining
-them using a Risk-First perspective to understand what makes each one
-work, what they value and how they treat different risks. To get there,
-we need to have a model of the risks we face on a software project, and
-this is the subject of Part 2, in the next chapter.
-
-Until then though, let's cover at a high-level the basic differences we
-see in some of the methodologies:
+Here are some high-level differences we see in some other popular
+methodologies:
 
 \begin{itemize}
 \item
   \textbf{\href{https://en.wikipedia.org/wiki/Lean_software_development}{Lean
   Software Development}}: While Waterfall borrows from risk management
   techniques in the construction industry, Lean Software Development
-  applies the principles used in
+  applies the principles from
   \href{https://en.wikipedia.org/wiki/Lean_manufacturing}{Lean
   Manufacturing}, which was developed at Toyota in the last century.
   Lean takes the view that the biggest risk in manufacturing is from
-  waste, where waste is inventory, over-production, work-in-progress,
-  time spent waiting or defects in production. Applying this approach to
-  software means minimising work-in-progress, frequent releases and
-  continuous improvement.
+  \emph{waste}, where waste is inventory, over-production,
+  work-in-progress, time spent waiting or defects in production.
+  Applying this approach to software means minimising work-in-progress,
+  frequent releases and continuous improvement.
 \item
   \textbf{\href{https://en.wikipedia.org/wiki/Project_Management_Body_of_Knowledge}{Project
   Management Body Of Knowledge (PMBoK)}}: This is a formalisation of
@@ -2985,20 +2978,18 @@ see in some of the methodologies:
   risk within a project, as we will see in Part 2.
 \item
   \textbf{Scrum)}: Is a popular Agile methodology. Arguably, it is less
-  ``extreme'' than Extreme Programming, as it drops
-  \href{https://en.wikipedia.org/wiki/Pair_programming}{Pair
-  Programming} and the always-available customer requirements, and
-  promotes a limited set of agile practices, such as frequent releases,
+  ``extreme'' than Extreme Programming, as it promotes a limited set,
+  more achievable set of agile practices, such as frequent releases,
   daily meetings, a product owner and retrospectives. This simplicity
   arguably makes it simpler to learn and adapt to and probably
   contributes to Scrum's popularity over XP.
 \item
   \textbf{\href{https://en.wikipedia.org/wiki/DevOps}{DevOps}}: Many
-  software systems struggle with the disconnect between ``in
-  development'' and ``in production''. DevOps is an acknowledgement of
-  this, and is about more closely aligning the feedback loops between
-  the developers and the production system. It champions activities such
-  as continuous deployment, automated releases and automated monitoring.
+  software systems struggle at the boundary between ``in development''
+  and ``in production''. DevOps is an acknowledgement of this, and is
+  about more closely aligning the feedback loops between the developers
+  and the production system. It champions activities such as continuous
+  deployment, automated releases and automated monitoring.
 \end{itemize}
 
 \hypertarget{effectiveness}{%
@@ -3958,11 +3949,11 @@ a few hours' a day.
 When channels are \textbf{poor-quality}, less communication occurs.
 People will try to communicate just the most important information. But,
 it's often impossible to know a-priori what constitutes ``important''.
-This is why Extreme Programming recommends the practice of Pair
-Programming and siting all the developers together: although you don't
-know whether useful communication will happen, you are mitigating
-Channel Risk by ensuring high-quality communication channels are in
-place.
+This is why Extreme Programming recommends the practice of
+\href{https://en.wikipedia.org/wiki/Pair_programming}{Pair Programming}
+and siting all the developers together: although you don't know whether
+useful communication will happen, you are mitigating Channel Risk by
+ensuring high-quality communication channels are in place.
 
 At other times, channels are crowded, and can contain so much
 information that we can't hope to receive all the messages. In these
@@ -4957,7 +4948,7 @@ where if any single edge is removed, the graph becomes
 \emph{1-connected}.
 
 The second graph is clearly simpler than the first. And, we can show
-this by looking at the \textbf{Kolgomorov Complexity} in our little
+this by looking at the \textbf{Kolmogorov Complexity} in our little
 language:
 
 \begin{Shaded}
@@ -5624,7 +5615,7 @@ function under stated conditions for a specified period of time.''
 
 \begin{figure}
 \centering
-\includegraphics{images/generated/reliability-risk-400dpi.png}
+\includegraphics{images/generated/risks/dependency/reliability-risk-400dpi.png}
 \caption{Reliability Risk\label{reliability-risk.png}}
 \end{figure}
 
@@ -6307,6 +6298,1079 @@ each is very different:
 \end{itemize}
 
 So, these are two separate concepts, and both are useful.
+
+\hypertarget{software-dependency-risk}{%
+\chapter{Software Dependency Risk}\label{software-dependency-risk}}
+
+In this chapter, we're going to look specifically at \emph{Software}
+dependencies, although many of the concerns we'll raise here apply
+equally to all the other types of dependency we outlined in Dependency
+Risk.
+
+\hypertarget{kolmogorov-complexity-cheating}{%
+\section{Kolmogorov Complexity:
+Cheating}\label{kolmogorov-complexity-cheating}}
+
+In the earlier chapter on Complexity Risk we tackled Kolmogorov
+Complexity, and the idea that your codebase had some kind of minimal
+level of complexity based on the output it was trying to create. This is
+a neat idea, but in a way, we cheated. Let's look at how.
+
+We were trying to figure out the shortest (Javascript) program to
+generate this output:
+
+\begin{verbatim}
+abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
+\end{verbatim}
+
+And we came up with this:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{const}\NormalTok{ ABCD}\OperatorTok{=}\StringTok{"ABCD"}\OperatorTok{;}\NormalTok{                         (}\DecValTok{11}\NormalTok{ symbols)}
+
+\KeywordTok{function} \AttributeTok{out}\NormalTok{() }\OperatorTok{\{}\NormalTok{                           (}\DecValTok{7}\NormalTok{ symbols)}
+    \ControlFlowTok{return} \VariableTok{ABCD}\NormalTok{.}\AttributeTok{repeat}\NormalTok{(}\DecValTok{10}\NormalTok{)                 (}\DecValTok{7}\NormalTok{ symbols)}
+\OperatorTok{\}}\NormalTok{                                          (}\DecValTok{1}\NormalTok{ symbol)}
+\end{Highlighting}
+\end{Shaded}
+
+Which had \textbf{26} symbols in it.
+
+Now, here's the cheat: The \texttt{repeat()} function was built into
+Javascript in 2015 in
+\href{http://www.ecma-international.org/ecma-262/6.0/}{ECMAScript 6.0}.
+If we'd had to program it ourselves, we might have added this:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{function} \AttributeTok{repeat}\NormalTok{(s}\OperatorTok{,}\NormalTok{n) }\OperatorTok{\{}\NormalTok{                     (}\DecValTok{10}\NormalTok{ symbols)}
+    \KeywordTok{var}\NormalTok{ a}\OperatorTok{=}\NormalTok{[]}\OperatorTok{;}\NormalTok{                              (}\DecValTok{7}\NormalTok{ symbols)}
+    \ControlFlowTok{while}\NormalTok{(}\VariableTok{a}\NormalTok{.}\AttributeTok{length}\OperatorTok{<}\NormalTok{n)}\OperatorTok{\{}\NormalTok{                     (}\DecValTok{9}\NormalTok{ symbols)}
+        \VariableTok{a}\NormalTok{.}\AttributeTok{push}\NormalTok{(s)                          (}\DecValTok{6}\NormalTok{ symbols)}
+    \OperatorTok{\}}\NormalTok{                                      (}\DecValTok{1}\NormalTok{ symbol)}
+    \ControlFlowTok{return} \VariableTok{a}\NormalTok{.}\AttributeTok{join}\NormalTok{(}\StringTok{''}\NormalTok{)}\OperatorTok{;}\NormalTok{                     (}\DecValTok{10}\NormalTok{ symbols)}
+\OperatorTok{\}}\NormalTok{                                          (}\DecValTok{1}\NormalTok{ symbol)}
+\end{Highlighting}
+\end{Shaded}
+
+\ldots{} which would be an extra \textbf{44} symbols (in total
+\textbf{70}), and push us completely over the original string encoding
+of \textbf{53} symbols. So, \emph{encoding language is important}.
+
+Conversely, if ECMAScript 6.0 had introduced a function called
+\texttt{abcdRepeater(n)} we'd have been able to do this:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{function} \AttributeTok{out}\NormalTok{() }\OperatorTok{\{}\NormalTok{                           (}\DecValTok{7}\NormalTok{ symbols)}
+    \ControlFlowTok{return} \AttributeTok{abcdRepeater}\NormalTok{(}\DecValTok{10}\NormalTok{)                (}\DecValTok{6}\NormalTok{ symbols)}
+\OperatorTok{\}}\NormalTok{                                          (}\DecValTok{1}\NormalTok{ symbol)}
+\end{Highlighting}
+\end{Shaded}
+
+.. and re-encode to \textbf{14} symbols. Now, clearly there are some
+problems with all this:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Language Matters:} the Kolmogorov complexity is dependent on
+  the language, and the features the language has built in. 
+\item
+  \textbf{Exact Kolmogorov complexity is uncomputable anyway:} Since
+  it's the \emph{theoretical} minimum program length, it's a fairly
+  abstract idea, so we shouldn't get too hung up on this. There is no
+  function to be able to say, ``what's the Kolmogorov complexity of
+  string X''
+\item
+  \textbf{What is this new library function we've created?} Is
+  \texttt{abcdRepeater} going to be part of \emph{every} Javascript? If
+  so, then we've shifted Codebase Risk away from ourselves, but we've
+  pushed Communication Risk and Dependency Risk onto every \emph{other}
+  user of Javascript. (Why these? Because \texttt{abcdRepeater} will be
+  clogging up the documentation and other people will rely on it to
+  function correctly.)
+\item
+  \textbf{Are there equivalent functions for every single other string?}
+  If so, then compilation is no longer a tractable problem because now
+  we have a massive library of different \texttt{XXXRepeater} functions
+  to compile against to see if it is\ldots{} So, what we \emph{lose} in
+  Codebase Risk we gain in Dependency Risk.
+\item
+  \textbf{Language design, then, is about \emph{ergonomics}:} After you
+  have passed the relatively low bar of providing
+  \href{https://en.wikipedia.org/wiki/Turing_completeness}{Turing
+  Completeness}, the key is to provide \emph{useful} features that
+  enable problems to be solved, without over-burdening the user with
+  features they \emph{don't} need. And in fact, all software is about
+  this.
+\end{enumerate}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/software-dependency/ergonomics-400dpi.png}
+\caption{Software Dependency Ergonomics: finding the sweet spot between
+too many features and too few\label{ergonomics.png}}
+\end{figure}
+
+\hypertarget{ergonomics-examined}{%
+\section{Ergonomics Examined}\label{ergonomics-examined}}
+
+Have a look at some physical tools, like a hammer, or spanner. To look
+at them, they are probably \emph{simple} objects, obvious, strong and
+dependable. Their entire behaviour is encapsulated in their form. Now,
+if you have a drill or sander to hand, look at the design of this too.
+If it's well-designed, then from the outside it is simple, perhaps with
+only one or two controls. Inside, it is complex and contains a motor,
+perhaps a transformer, and is maybe made of a hundred different
+components.
+
+But outside, the form is simple, and designed for humans to use. This is
+\emph{\href{https://en.wikipedia.org/wiki/Human_factors_and_ergonomics}{ergonomics}}:
+
+\begin{quotation}
+
+``Human factors and ergonomics (commonly referred to as Human Factors),
+is the application of psychological and physiological principles to the
+(engineering and) design of products, processes, and systems. The goal
+of human factors is to reduce human error, increase productivity, and
+enhance safety and comfort with a specific focus on the interaction
+between the human and the thing of interest.''
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Human_factors_and_ergonomics}{\textemdash  Human Factors and Ergonomics, \emph{Wikipedia}}}
+\end{quotation}
+
+\hypertarget{protocols-and-ergonomics}{%
+\subsection{Protocols and Ergonomics}\label{protocols-and-ergonomics}}
+
+The \emph{interface} of a tool is the part we touch and interact with,
+via it's protocol. By striving for an ergonomic sweet spot, the protocol
+reduces Communication Risk.
+
+The interface of a system expands when you ask it to do a wide variety
+of things. An easy-to-use drill does one thing well: it turns drill-bits
+at useful levels of torque for drilling holes and sinking screws. But if
+you wanted it to also operate as a lathe, a sander or a strimmer (all
+basically mechanical things going round) you would have to sacrifice the
+conceptual integrity for a more complex protocol, probably including
+adapters, extensions, handles and so on.
+
+So, we now have split complexity into two:
+
+\begin{itemize}
+\tightlist
+\item
+  The inner complexity of the tool (how it works internally, it's own
+  internal complexity).
+\item
+  The complexity of the instructions that we need to write to make the
+  tool work, the protocol complexity, which will be a function of the
+  complexity of the tool itself..
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/software-dependency/protocol-complexity-400dpi.png}
+\caption{Types of Complexity For a Software
+Dependency\label{protocol-complexity.png}}
+\end{figure}
+
+\hypertarget{software-tools}{%
+\subsection{Software Tools}\label{software-tools}}
+
+In the same way as with a hand-tool, the bulk of the complexity of a
+software tool is hidden behind it's interface. But, the more complex the
+\emph{purpose} of the tool, the more complex the interface will be.
+
+Software is not constrained by \emph{physical} ergonomics in the same
+way as a tool is. But ideally, it should have conceptual ergonomics:
+ideally, complexity is hidden away from the user behind the \emph{User
+Interface}. This is the familiar concept of Abstraction we've already
+looked at. As we saw in Communication Risk, when we use a new protocol,
+we face Learning Curve Risk. To minimise this, we should apply the
+Principal Of Least Astonishment when designing protocols:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{The abstractions should map easily to how the user expects the
+  tool to work.} For example, I \emph{expect} the trigger on a drill to
+  start the drill turning.
+\item
+  \textbf{The abstractions should leverage existing idioms and
+  knowledge.} In a new car, I \emph{expect} to know what the symbols on
+  the dashboard mean, because I've driven other cars.
+\item
+  \textbf{The abstractions provide me with only the functions I need.}
+  Because everything else is confusing and gets in the way.
+\end{itemize}
+
+\hypertarget{types-of-software-dependencies}{%
+\section{Types Of Software
+Dependencies}\label{types-of-software-dependencies}}
+
+There are lots of ways you can depend on software. Here though, we're
+going to focus on just three main types:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Code Your Own}: write some code ourselves to meet the
+  dependency.
+\item
+  \textbf{Software Libraries}: importing code from the Internet, and
+  using it in our project. Often, libraries are Open Source (this is
+  what we'll consider here).
+\item
+  \textbf{Software as a Service}: calling a service on the Internet,
+  (probably via \texttt{http}) This is often known as
+  \href{https://en.wikipedia.org/wiki/Software_as_a_service}{SaaS, or
+  Software as a Service}.
+\end{enumerate}
+
+All 3 approaches involve a different risk-profile. Let's look at each in
+turn, from the perspective of which risks get mitigated, and which risks
+are accentuated.
+
+\hypertarget{code-your-own}{%
+\subsection{1. Code Your Own}\label{code-your-own}}
+
+Way before the Internet, this was the only game in town. Tool support
+was very thin-on-the-ground. Algorithms could be distributed as code
+snippets \emph{in magazines} which could be transcribed and run, and
+added to your program. This spirit lives on somewhat in StackOverflow
+and JSFiddle, where you are expected to ``adopt'' others' code into your
+own project. Code-your-own is still the best option if you have highly
+bespoke requirements, or are dealing with unusual environmental
+contexts.
+
+One of the hidden risks of embarking on a code-your-own approach is that
+the features you need are \emph{not} apparent from the outset. What
+might appear to be a trivial implementation of some piece of
+functionality can often turn into it's own industry as more and more
+hidden Feature Risk is uncovered. For example, as we discussed in our
+earlier treatment of Dead-End Risk, building log-in screens \emph{seemed
+like a good idea}. However, this gets out-of-hand fast when you need:
+
+\begin{itemize}
+\tightlist
+\item
+  A password reset screen
+\item
+  To email the reset links to the user
+\item
+  An email verification screen
+\item
+  A lost account screen
+\item
+  Reminders to complete the sign up process
+\item
+  \ldots{} and so on.
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/software-dependency/code-your-own-400dpi.png}
+\caption{Code-Your-Own mitigates immediate feature risk, but at the
+expense of schedule risk, complexity risk and communication risk. There
+is also a hidden risk of features you don't yet know you
+need.\label{code-your-own.png}}
+\end{figure}
+
+\hypertarget{unwritten-software}{%
+\subsection{Unwritten Software}\label{unwritten-software}}
+
+Sometimes, you will pick up Dependency Risk from \emph{unwritten
+software}. This commonly happens when work is divided amongst team
+members, or teams.
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/software-dependency/unwritten-400dpi.png}
+\caption{Sometimes, a module you're writing will depend on unwritten
+code\label{unwritten.png}}
+\end{figure}
+
+If a component \textbf{A} of our project \emph{depends} on \textbf{B}
+for some kind of processing, you might not be able to complete
+\textbf{A} before writing \textbf{B}. This makes \emph{scheduling} the
+project harder, and if component \textbf{A} is a risky part of the
+project, then the chances are you'll want to mitigate risk there first.
+
+But it also hugely increases Communication Risk because now you're being
+asked to communicate with a dependency that doesn't really exist yet,
+\emph{let alone} have any documentation.
+
+There are a couple of ways to do this:
+
+\begin{itemize}
+\item
+  \textbf{Standards}: If component \textbf{B} is a database, a queue,
+  mail gateway or something else with a standard interface, then you're
+  in luck. Write \textbf{A} to those standards, and find a cheap, simple
+  implementation to test with. This gives you time to sort out exactly
+  what implementation of \textbf{B} you're going for. This is not a
+  great long-term solution, because obviously, you're not using the
+  \emph{real} dependency- you might get surprised when the behaviour of
+  the real component is subtly different. But it can reduce Schedule
+  Risk in the short-term.
+\item
+  \textbf{Coding To Interfaces}: If standards aren't an option, but the
+  surface area of \textbf{B} that \textbf{A} uses is quite small and
+  obvious, you can write a small interface for it, and work behind that,
+  using a \href{https://en.wikipedia.org/wiki/Mock_object}{Mock} for
+  \textbf{B} while you're waiting for finished component. Write the
+  interface to cover only what \textbf{A} \emph{needs}, rather than
+  everything that \textbf{B} \emph{does} in order to minimise the risk
+  of \href{https://en.wikipedia.org/wiki/Leaky_abstraction}{Leaky
+  Abstractions}.
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/software-dependency/unwritten-mitigation-400dpi.png}
+\caption{Coding to a standard on an interface breaks the dependency on
+unwritten software\label{unwritten-mitigation.png}}
+\end{figure}
+
+\hypertarget{conways-law}{%
+\subsection{Conway's Law}\label{conways-law}}
+
+Due to channel bandwidth limitations, if the dependency is being written
+by another person, another team or in another country, Communication
+Risk will be. The tendency then is to make the interfaces between teams
+or people \emph{as simple as possible}, modularising along these
+organisational boundaries.
+
+In essence, this is
+\href{https://en.wikipedia.org/wiki/Conways_law}{Conway's Law}:
+
+\begin{quotation}
+
+\begin{quote}
+``organisations which design systems \ldots{} are constrained to produce
+designs which are copies of the communication structures of these
+organisations.'' --- M. Conway, \emph{Conway's Law}
+\end{quote}
+
+\end{quotation}
+
+\hypertarget{software-libraries}{%
+\subsection{2. Software Libraries}\label{software-libraries}}
+
+By choosing a particular software library, we are making a move on the
+Risk Landscape in the hope of moving to place with more favourable
+risks. Typically, using library code offers a Schedule Risk and
+Complexity Risk Silver Bullet - a high-speed route over the risk
+landscape to somewhere nearer where we want to be. But, in return we
+expect to pick up:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Communication Risk:} because we now have to learn how to
+  communicate with this new dependency.
+\item
+  \textbf{Boundary Risk:} - because now are limited to using the
+  functionality provided by this dependency. We have chosen it over
+  alternatives and changing to something else would be more work and
+  therefore costly.
+\end{itemize}
+
+But, it's quite possible that we could wind up in a worse place than we
+started out, by using a library that's out-of-date, riddled with bugs or
+badly supported. i.e.~Full of new, hidden Feature Risk.
+
+It's \emph{really easy} to make bad decisions about which tools to use
+because the tools don't (generally) advertise their deficiencies. After
+all, they don't generally know how \emph{you} will want to use them.
+
+\hypertarget{software-libraries---attendant-risks}{%
+\subsection{Software Libraries - Attendant
+Risks}\label{software-libraries---attendant-risks}}
+
+Currently, choosing software dependencies looks like a ``bounded
+rationality''-type process:
+
+\begin{quotation}
+
+``Bounded rationality is the idea that when individuals make decisions,
+their rationality is limited by the tractability of the decision
+problem, the cognitive limitations of their minds, and the time
+available to make the decision.''
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Bounded_rationality}{\textemdash  Bounded Rationality, \emph{Wikipedia}}}
+\end{quotation}
+
+Unfortunately, we know that most decisions \emph{don't} really get made
+this way. We have things like
+\href{https://en.wikipedia.org/wiki/Confirmation_bias}{Confirmation
+Bias} (looking for evidence to support a decision you've already made)
+and \href{https://en.wikipedia.org/wiki/Cognitive_inertia}{Cognitive
+Inertia} (ignoring evidence that would require you to change your mind)
+to contend with.
+
+But, leaving that aside, let's try to build a model of what this
+decision making process \emph{should} involve. Luckily, other authors
+have already considered the problem of choosing good software libraries,
+so let's start there.
+
+In the table below, I am summarising three different sources (linked at
+the end of the chapter), which give descriptions of which factors to
+look for when choosing open-source libraries.
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/software-dependency/software_dependency_table_1_large-400dpi.png}
+\caption{Software Library Dependencies, Attendant
+Risks\label{software_dependency_table_1_large.png}}
+\end{figure}
+
+Figure \ref{software_dependency_table_1_large.png} summarises the risks
+raised in some of the literature. Here are some take-aways:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Feature Risk is a big concern:} How can you be sure that the
+  project will do what you want it to do ahead of schedule? Will it
+  contain bugs or missing features? By looking at factors like
+  \emph{release frequency} and \emph{size of the community} you get a
+  good feel for this which is difficult to fake.
+\item
+  \textbf{Boundary Risk is also very important:} You are going to have
+  to \emph{live} with your choices for the duration of the project, so
+  it's worth spending the effort to either ensure that you're not going
+  to regret the decision, or that you can change direction later.
+\item
+  \textbf{Third is Communication Risk:} how well does the project deal
+  with it's users? If a project is ``famous'', then it has communicated
+  its usefulness to a wide, appreciative audience. Avoiding
+  Communication Risk is also a good reason to pick \emph{tools you are
+  already familiar with}.
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/software-dependency/library-400dpi.png}
+\caption{Software Libraries Risk Tradeoff\label{library.png}}
+\end{figure}
+
+\hypertarget{complexity-risk-2}{%
+\subsection{Complexity Risk?}\label{complexity-risk-2}}
+
+One thing that none of the sources in the table consider (at least from
+the outset) is the Complexity Risk of using a solution:
+
+\begin{itemize}
+\tightlist
+\item
+  Does it drag in lots of extra dependencies that seem unnecessary for
+  the job in hand? If so, you could end up in
+  \href{https://en.wikipedia.org/wiki/Dependency_hell}{Dependency Hell},
+  with multiple, conflicting versions of libraries in the project.
+\item
+  Do you already have a dependency providing this functionality? So many
+  times, I've worked on projects that import a \emph{new} dependency
+  when some existing (perhaps transitive) dependency has \emph{already
+  brought in the functionality}. For example, there are plenty of
+  libraries for \href{https://en.wikipedia.org/wiki/JSON}{JSON}
+  marshaling, but if I'm also using a web framework the chances are it
+  already has a dependency on one already.
+\item
+  Does it contain lots of functionality that isn't relevant to the task
+  you want it to accomplish? e.g.~Using Java when a shell script would
+  do (on a non-Java project)
+\end{itemize}
+
+Sometimes, the amount of complexity \emph{goes up} when you use a
+dependency for \emph{good reason}. For example, in Java, you can use
+\href{https://en.wikipedia.org/wiki/Java_Database_Connectivity}{Java
+Database Connectivity (JDBC)} to interface with various types of
+database. \href{https://en.wikipedia.org/wiki/Spring_Framework}{Spring
+Framework} (a popular Java library) provides a thing called a
+\texttt{JDBCTemplate}. This actually makes your code \emph{more}
+complex, and can prove very difficult to debug. However, it prevents
+some security issues, handles resource disposal and makes database
+access more efficient. None of those are essential to interfacing with
+the database, but not using them is Technical Debt that can bite you
+later on.
+
+To give an extreme example of this, I once worked on an application
+which used \href{https://en.wikipedia.org/wiki/Hazelcast}{Hazlecast}, an
+in-memory distributed database, to cache log-in session tokens for a 3rd
+party data-source. But, the app is only used once every month, and
+session IDs can be obtained in milliseconds. So\ldots{} why cache them?
+Although Hazlecast is an excellent choice for in-memory caching across
+multiple JVMs, it is a complex piece of software (after all, it does
+lots of stuff). Using it introduced extra dependency risk, cache
+invalidation risks, networking risks, synchronisation risks and so on,
+for actually no benefit at all\ldots{} Unless, it's about CV Building.
+(See Agency Risk.)
+
+\hypertarget{software-as-a-service}{%
+\subsection{3. Software as a Service}\label{software-as-a-service}}
+
+Businesses opt for Software as a Service (SaaS) because:
+
+\begin{itemize}
+\tightlist
+\item
+  It promises to vastly reduce the Complexity Risk they face in their
+  organisations. e.g.~managing the software or making changes to it.
+\item
+  Payment is usually based on \emph{usage}, mitigating Funding Risk.
+  e.g.~Instead of having to pay up-front for a license, and hire
+  in-house software administrators, they can leave this function to the
+  experts.
+\item
+  Potentially, you out-source the Operational Risk to a third party.
+  e.g.~ensuring availability, making sure data is secure and so on.
+\end{itemize}
+
+SaaS is now a very convenient way to provide \emph{commercial} software.
+Popular examples of SaaS might be
+\href{https://en.wikipedia.org/wiki/Salesforce.com}{SalesForce}, or
+\href{https://en.wikipedia.org/wiki/Gmail}{GMail}. Both of which follow
+the commonly-used
+\href{https://en.wikipedia.org/wiki/Freemium}{Freemium} model, where the
+basic service is provided free, but upgrading to a paid account gives
+extra benefits.
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/software-dependency/software_dependency_table_2_large-400dpi.png}
+\caption{Software As A Service
+Dependencies\label{software_dependency_table_2_large.png}}
+\end{figure}
+
+Figure \ref{software_dependency_table_2_large.png} summarises the risks
+raised in some of the available literature. Some take-aways:
+
+\begin{itemize}
+\tightlist
+\item
+  Clearly, Operational Risk is now a big concern. By depending on a
+  third-party organisation you are tying yourself to its success or
+  failure in a much bigger way than just by using a piece of open-source
+  software. What happens to data security, both in the data centre and
+  over the Internet? Although you might choose a SaaS solution to
+  mitigate \emph{internal} Operational Risk, you might just be
+  ``throwing it over the wall'' to a third party, who might do a worse
+  job.
+\item
+  With Feature Risk you now have to contend with the fact that the
+  software will be upgraded \emph{outside your control}, and you may
+  have limited control over which features get added or changed.
+\item
+  Boundary Risk is a also a different proposition: you are tied to the
+  software provider by \emph{a contract}. If the service changes in the
+  future, or isn't to your liking, you can't simply fork the code (like
+  you could with an open source project).
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/software-dependency/saas-400dpi.png}
+\caption{Risk Tradeoff From Using Software as a Service
+(SaaS)\label{saas.png}}
+\end{figure}
+
+\hypertarget{a-matrix-of-options}{%
+\section{A Matrix of Options}\label{a-matrix-of-options}}
+
+We've looked at just 3 different ways of providing a software
+dependency: Code-Your-Own, Libaries and SaaS.
+
+But these are not the only ways to do it, and there's clearly no one
+\emph{right} way. Although here we have looked just at ``Commercial
+SaaS'' and ``Free Open Source'', in reality, these are just points in a
+two-dimensional space involving \emph{Pricing} and \emph{Hosting}.
+
+Let's expand this view slightly and look at where different pieces of
+software sit on these axes:
+
+\begin{sidewaysfigure}
+\centering
+\includegraphics{images/generated/risks/software-dependency/software_dependency_table_3_sideways-400dpi.png}
+\caption{Software Dependencies, Pricing, Delivery Matrix Risk Profiles}
+\end{sidewaysfigure}
+
+\begin{itemize}
+\tightlist
+\item
+  Where there is value in \textbf{the
+  \href{https://en.wikipedia.org/wiki/Network_effect}{Network Effect}:},
+  it's often a sign that the software will be free, or open source:
+  programming languages and Linux are the obvious examples of this. Bugs
+  are easier to find when there are lots of eyes looking, and learning
+  the skill to use the software has less Boundary Risk if you know
+  you'll be able to use it at any point in the future.
+\item
+  At the other end of the spectrum, clients will happily pay for
+  software if it clearly \textbf{reduces Operational Risk}. Take
+  \href{https://en.wikipedia.org/wiki/Amazon_Web_Services}{Amazon Web
+  Services (AWS)}. The essential trade here is that you substitute the
+  complexity of hosting and maintaining various pieces of hardware, in
+  exchange for metered payments (Funding Risk for you). Since the AWS
+  \emph{interfaces} are specific to Amazon, there is significant
+  Boundary Risk in choosing this option.
+\item
+  In the middle there are lots of \textbf{substitute options} and
+  therefore high competition. Because of this, prices are pushed towards
+  zero, and and therefore often advertising is used to monetarise the
+  product. \href{https://en.wikipedia.org/wiki/Angry_Birds}{Angry Birds}
+  is a classic example: initially, it had demo and paid versions,
+  however
+  \href{https://en.wikipedia.org/wiki/Rovio_Entertainment}{Rovio}
+  discovered there was much more money to be made through advertising
+  than from the
+  \href{https://www.deconstructoroffun.com/blog/2017/6/11/how-angry-birds-2-multiplied-quadrupled-revenue-in-a-year}{paid-for
+  app}.
+\end{itemize}
+
+\hypertarget{software-dependencies-as-features}{%
+\section{Software Dependencies as
+Features}\label{software-dependencies-as-features}}
+
+So far, we've looked at different \emph{approaches} to software
+dependencies, and the risk profiles they present. But the category is
+less important than the specifics: we are choosing specific tools for
+specific tasks. Software Dependencies allows us to construct dependency
+networks to give us all kinds of features and mitigate all kinds of
+risk. That is, the features we are looking for in a dependency \emph{are
+to mitigate some kind of risk}.
+
+For example, I might start using
+\href{https://en.wikipedia.org/wiki/WhatsApp}{WhatsApp} because I want
+to be able to send my friends photos and text messages. However, it's
+likely that those same features allow us to mitigate Coordination Risk
+when we're next trying to meet up.
+
+Let's look at some:
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+\begin{minipage}[b]{0.40\columnwidth}\raggedright
+Risk\strut
+\end{minipage} & \begin{minipage}[b]{0.55\columnwidth}\raggedright
+Examples of Software Mitigating That Risk\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.40\columnwidth}\raggedright
+Coordination Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedright
+Calendar tools, Bug Tracking, Distributed Databases\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.40\columnwidth}\raggedright
+Map-And-Territory-Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedright
+The Internet, generally. Excel, Google, ``Big Data'', Reporting
+tools\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.40\columnwidth}\raggedright
+Schedule-Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedright
+Planning Software, Project Management Software\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.40\columnwidth}\raggedright
+Communication-Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedright
+Email, Chat tools, CRM tools like SalesForce, Forums, Twitter,
+Protocols\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.40\columnwidth}\raggedright
+Process-Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedright
+Reporting tools, online forms, process tracking tools\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.40\columnwidth}\raggedright
+Agency-Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedright
+Auditing tools, transaction logs, Time-Sheet software, HR Software\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.40\columnwidth}\raggedright
+Operational-Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedright
+Support tools like ZenDesk, Grafana, InfluxDB, Geneos, Security
+Tools\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.40\columnwidth}\raggedright
+Feature-Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.55\columnwidth}\raggedright
+Every piece of software you use!\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{choice}{%
+\section{Choice}\label{choice}}
+
+\emph{Choosing} dependencies can be extremely difficult. As we discussed
+above, the usefulness of any tool depends on its fit for purpose, it's
+\emph{ergonomics within a given context}. It's all too easy to pick a
+good tool for the wrong job:
+
+\begin{quotation}
+
+``I suppose it is tempting, if the only tool you have is a hammer, to
+treat everything as if it were a nail.''
+
+\sourceatright{\href{https://en.wiktionary.org/wiki/if_all_you_have_is_a_hammer,_everything_looks_like_a_nail}{\textemdash  Abraham Maslow, \emph{Toward a Psychology of Being}} <!-- tweet-end -->}
+\end{quotation}
+
+Having chosen a dependency, whether or not you end up in a more
+favourable position risk-wise is going to depend heavily on the quality
+of the execution and the skill of the implementor. With software
+dependencies, we often have to live with the decisions we make for a
+long time. In my experience, given the Boundary Risks associated with
+getting this wrong, not enough time is spent really thinking about this
+in advance.
+
+Let's take a closer look at this problem in the next chapter, Boundary
+Risk.
+
+\hypertarget{sources}{%
+\section{Sources}\label{sources}}
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{sd1}: Defending your code against dependency problems.
+  https://www.software.ac.uk/resources/guides/defending-your-code-against-dependency-problems
+\item
+  \texttt{sd2}: How to choose an open source library.
+  https://stackoverflow.com/questions/2960371/how-to-choose-an-open-source-library
+\item
+  \texttt{sd3}: Open Source - To use or not to use.
+  https://www.forbes.com/sites/forbestechcouncil/2017/07/20/open-source-to-use-or-not-to-use-and-how-to-choose/2/\#39e67e445a8c
+\item
+  \texttt{sd4}: SaaS Checklist - Nine Factors to Consider.
+  https://www.zdnet.com/article/saas-checklist-nine-factors-to-consider-when-selecting-a-vendor/
+\item
+  \texttt{sd5}: How to Evaluate SaaS Vendors.
+  http://sandhill.com/article/how-to-evaluate-saas-vendors-five-key-considerations/
+\end{itemize}
+
+\hypertarget{agency-risk}{%
+\chapter{Agency Risk}\label{agency-risk}}
+
+Coordinating a team is difficult enough when everyone on the team has a
+single Goal. But, people have their own goals, too. Sometimes, their
+goals harmlessly co-exist with the team's goal, but other times they
+don't.
+
+This is Agency Risk. This term comes from finance and refers to the
+situation where you (the ``principal'') entrust your money to someone
+(the ``agent'') in order to invest it, but they don't necessarily have
+your best interests at heart. They may instead elect to invest the money
+in ways that help them, or outright steal it.
+
+\begin{quotation}
+
+``This dilemma exists in circumstances where agents are motivated to act
+in their own best interests, which are contrary to those of their
+principals, and is an example of moral hazard.''
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Principal–agent_problem}{\textemdash  Principal-Agent Problem, \emph{Wikipedia}}}
+\end{quotation}
+
+The less visibility you have of the agent's activities, the bigger the
+risk. However, the whole point of giving the money to the agent was that
+you would have to spend less time and effort managing it.
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/agency/agency-risk-400dpi.png}
+\caption{Mitigating Agency Risk Through
+Monitoring\label{agency-risk.png}}
+\end{figure}
+
+Agency Risk clearly includes the behaviour of
+\href{https://en.wiktionary.org/wiki/bad_actor}{Bad Actors}. But, that's
+too strict a definition: In software development, we're not lending each
+other money, but we are being paid by the project sponsor, so they are
+assuming Agency Risk by employing us.
+
+As we saw in the previous chapter on Process Risk, Agency Risk doesn't
+just apply to people: it can apply to \emph{running software} or
+\emph{whole teams} - anything which has agency over it's actions.
+
+\begin{quotation}
+
+``Agency is the capacity of an actor to act in a given
+environment\ldots{} Agency may either be classified as unconscious,
+involuntary behaviour, or purposeful, goal directed activity
+(intentional action).''
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Agency_(philosophy}{\textemdash  Agency, \emph{Wikipedia}}) }
+\end{quotation}
+
+Let's look at some examples of borderline Agency Risk situations, in
+order to sketch out where the domain of this risk lies.
+
+\hypertarget{personal-lives}{%
+\section{Personal Lives}\label{personal-lives}}
+
+We can't (shouldn't) expect people on a project to sacrifice their
+personal lives for the success of the project, right? Except that
+\href{https://en.wikipedia.org/wiki/Video_game_developer\#\%22Crunch_time\%22}{``Crunch
+Time''} is exactly how some software companies work:
+
+\begin{quotation}
+
+``Game development\ldots{} requires long working hours and dedication
+from their employees. Some video game developers (such as Electronic
+Arts) have been accused of the excessive invocation of''crunch
+time``.''Crunch time" is the point at which the team is thought to be
+failing to achieve milestones needed to launch a game on schedule. "
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Video_game_developer\#"Crunch_time"}{\textemdash  Crunch Time, \emph{Wikipedia}}}
+\end{quotation}
+
+People taking time off, going to funerals, looking after sick relatives
+and so on are all acceptable forms of Agency Risk. They are the
+Attendant Risk of having \emph{staff} rather than \emph{slaves}.
+
+\hypertarget{the-hero}{%
+\section{The Hero}\label{the-hero}}
+
+\begin{quotation}
+
+``The one who stays later than the others is a hero.''
+
+\sourceatright{\href{http://wiki.c2.com/?HeroCulture}{\textemdash  Hero Culture, \emph{Ward's Wiki}} <!-- tweet-end -->}
+\end{quotation}
+
+Heroes put in more hours and try to rescue projects single-handedly,
+often cutting corners like team communication and process in order to
+get there.
+
+Sometimes, projects don't get done without heroes. But other times, the
+hero has an alternative agenda than just getting the project done:
+
+\begin{itemize}
+\tightlist
+\item
+  A need for control, and for their own vision.
+\item
+  A preference to work alone.
+\item
+  A desire for recognition and acclaim from colleagues.
+\item
+  For the job security of being a
+  \href{https://en.wikipedia.org/wiki/Key_person_insurance}{Key Man}.
+\end{itemize}
+
+A team \emph{can} make use of heroism, but it's a double-edged sword.
+The hero can becomes a bottleneck to work getting done, and because want
+to solve all the problems themselves, they under-communicate.
+
+\hypertarget{consultancies}{%
+\section{Consultancies}\label{consultancies}}
+
+When you work with an external consultancy, there is \emph{always} more
+Agency Risk than with a direct employee. This is because as well as your
+goals and the employee's goals, there is also the consultancy's goals.
+
+This is a good argument for avoiding consultancies, but sometimes the
+technical expertise they bring can outweigh this risk.
+
+\hypertarget{cv-building}{%
+\section{CV Building}\label{cv-building}}
+
+CV Building is when someone decides that the project needs a dose of
+``Some Technology X'', but in actual fact, this is either completely
+unhelpful to the project (incurring large amounts of Complexity Risk),
+or merely a poor alternative to something else.
+
+It's very easy to spot CV building: look for choices of technology that
+are incongruently complex compared to the problem they solve, and then
+challenge by suggesting a simpler alternative.
+
+\hypertarget{devil-makes-work}{%
+\section{Devil Makes Work}\label{devil-makes-work}}
+
+Heroes can be useful, but \emph{underused} project members are a
+nightmare. The problem is, people who are not fully occupied begin to
+worry that actually, the team would be better off without them, and then
+wonder if their jobs are at risk.
+
+Even if they don't worry about their jobs, sometimes they need ways to
+stave off \emph{boredom}. The solution to this is ``busy-work'': finding
+tasks that, at first sight, look useful, and then delivering them in an
+over-elaborate way (Gold Plating)) that'll keep them occupied. This will
+leave you with more Complexity Risk than you had in the first place.
+
+\hypertarget{pet-projects}{%
+\section{Pet Projects}\label{pet-projects}}
+
+\begin{quote}
+A project, activity or goal pursued as a personal favourite, rather than
+because it is generally accepted as necessary or important. -
+\href{https://en.wiktionary.org/wiki/pet_project}{Pet Project,
+\emph{Wiktionary}}
+\end{quote}
+
+Sometimes, budget-holders have projects they value more than others
+without reference to the value placed on them by the business. Perhaps
+the project has a goal that aligns closely with the budget holder's
+passions, or its related to work they were previously responsible for.
+
+Working on a pet project usually means you get lots of attention (and
+more than enough budget), but it can fall apart very quickly under
+scrutiny.
+
+\hypertarget{morale-risk}{%
+\section{Morale Risk}\label{morale-risk}}
+
+\begin{quote}
+Morale, also known as Esprit de Corps is the capacity of a group's
+members to retain belief in an institution or goal, particularly in the
+face of opposition or hardship -
+\href{https://en.wikipedia.org/wiki/Morale}{Morale, \emph{Wikipedia}}
+\end{quote}
+
+Sometimes, the morale of the team or individuals within it dips, leading
+to lack of motivation. Morale Risk is a kind of Agency Risk because it
+really means that a team member or the whole team isn't committed to the
+Goal, may decide their efforts are best spent elsewhere. Morale Risk
+might be caused by:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{External Factors:} Perhaps the employees' dog has died, or
+  they're simply tired of the industry, or are not feeling challenged.
+\item
+  \textbf{The goal feels unachievable:} in this case, people won't
+  commit their full effort to it. This might be due to to a difference
+  in the evaluation of the risks on the project between the team members
+  and the leader. In military science, a second meaning of morale is how
+  well supplied and equipped a unit is. This would also seem like a
+  useful reference point for IT projects. If teams are under-staffed or
+  under-equipped, this will impact on motivation too.
+\item
+  \textbf{The goal isn't sufficiently worthy}, or the team doesn't feel
+  sufficiently valued.
+\end{itemize}
+
+\hypertarget{software-processes-and-teams}{%
+\section{Software Processes And
+Teams}\label{software-processes-and-teams}}
+
+There is significant Agency Risk in running software \emph{at all}.
+Since computer systems follow rules we set for them, we shouldn't be
+surprised when those rules have exceptions that lead to disaster. For
+example:
+
+\begin{itemize}
+\tightlist
+\item
+  A process continually writing log files until the disks fill up,
+  crashing the system.
+\item
+  Bugs causing data to get corrupted, causing financial loss.
+\item
+  Malware infecting a system, and sending your passwords and data to
+  undesirables.
+\end{itemize}
+
+Agency Risk applies to \emph{whole teams} too. It's perfectly possible
+that a team within an organisation develops Goals that don't align with
+those of the overall organisation. For example:
+
+\begin{itemize}
+\tightlist
+\item
+  A team introduces excessive Bureaucracy in order to avoid work it
+  doesn't like.
+\item
+  A team gets obsessed with a particular technology, or their own
+  internal process improvement, at the expense of delivering business
+  value.
+\item
+  A marginalised team forces their services on other teams in the name
+  of ``consistency''. (This can happen a lot with ``Architecture'',
+  ``Branding'' and ``Testing'' teams, sometimes for the better,
+  sometimes for the worse.)
+\end{itemize}
+
+\hypertarget{security-risk}{%
+\section{Security Risk}\label{security-risk}}
+
+As shown in the above diagram, to mitigate Agency Risk \emph{within} a
+system, we can apply monitoring and goal-alignment. Where the Agency
+Risk is from an unwanted actors \emph{outside} the system, we can apply
+security. That is, ensuring that the environment we work in is
+\emph{safe} for the good actors to operate in, by keeping out the bad
+actors.
+
+Interestingly, security is handled in very similar ways in all kinds of
+systems, whether biological, human or organisational.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Walls}: defences \emph{around} the complex system, to protect
+  it's parts from the external environment.
+\item
+  \textbf{Doors}: ways to get \emph{in} and \emph{out} of the complex
+  system, possibly with \emph{locks}.
+\item
+  \textbf{Guards}: to make sure only the right things go in and out.
+  (i.e.~to try and keep out \emph{Bad Actors}).
+\item
+  \textbf{Police}: to defend from \emph{within} the system, against
+  internal Agency Risk.
+\item
+  \textbf{Subterfuge}: Hiding, camouflage, disguises, pretending to be
+  something else.
+\end{itemize}
+
+These work various levels in our own bodies: our \emph{cells} have
+\emph{cell walls} around them, and \emph{cell membranes} that act as the
+guards to allow things in and out. Our \emph{bodies} have \emph{skin} to
+keep the world out, and we have \emph{mouths}, \emph{eyes}, \emph{pores}
+and so on to allow things in and out. We have an \emph{immune system} to
+act as the police.
+
+Our societies work in similar ways: in medieval times, a city would have
+walls, guards and doors to keep out intruders. Nowadays, we have customs
+control, borders and passports.
+
+We're waking up to the realisation that our software systems need to
+work the same way: we have
+\href{https://en.wikipedia.org/wiki/Firewall_(computing)}{Firewalls} to
+protect our organisations, we lock down \emph{ports} on servers to
+ensure there are the minimum number of doors to guard and we
+\emph{police} the servers ourselves with monitoring tools and anti-virus
+software and we \emph{guard} access using passwords and other
+identification approaches.
+
+Both Security Risk and Agency Risk thrive on complexity. The more
+complex the systems we create, the more opportunities there are for bad
+actors to insert themselves and extract their own value. Security Risk
+is also a major determinant of Operational Risk, which we will review in
+a couple of chapters time.
+
+\hypertarget{its-about-goals}{%
+\section{It's About Goals}\label{its-about-goals}}
+
+We've looked here at some illustrative examples of Agency Risk. But as
+we stated at the beginning, Agency Risk at any level comes down to
+differences of Goals between the different agents, whether they are
+\emph{people}, \emph{teams} or \emph{software}.
+
+So, having looked at agents \emph{individually}, it's time to look more
+closely at Goals, and the Attendant Risks when aligning them amongst
+multiple agents.
+
+On to Coordination Risk\ldots{}
 
 \part{Application}
 
@@ -7141,5 +8205,9 @@ be a huge regulatory problem. \emph{Start work on the things you can't
 miss.}
 
 This is the essence of De-Risking.
+
+\backmatter
+
+supporting/Glossary.md
 
 \end{document}  
