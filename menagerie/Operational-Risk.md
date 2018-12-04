@@ -1,5 +1,8 @@
 ![For Review](images/state/for-review.png)
 
+
+basel definition tbd.
+
 In this section we're going to start considering the realities of running software systems in the real world.  
 
 Here, we're going to set the scene by looking at what constitutes an [Operational Risk](Operational-Risk), and then look at the related discipline of [Operations Management](#operations-management).  Following this background, we'll apply the Risk-First model and dive into the various mitigations for [Operational Risk](Operational-Risk).  
