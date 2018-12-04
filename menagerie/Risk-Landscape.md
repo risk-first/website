@@ -4,17 +4,27 @@ In [the previous section](One-Size-Fits-No-One), we saw how _Lean Software Devel
 
 One key activity of Risk Management we haven't discussed yet is _categorizing_ risks.  Thus, Part 2 of Risk-First is all about developing categories of risks for use in Software Development.
 
+## The Risk Landscape Again
+
+In [Meeting Reality](Meeting-Reality), we looked at the concept of the [Risk Landscape](Risk-Landscape), and how a software project tries to _navigate_ across this landscape, testing the way as it goes, and trying to get to a position of _more favourable risk_.
+
+It's tempting to think of our [Risk Landscape](Risk-Landscape) as being like a [Fitness Landscape](https://en.wikipedia.org/wiki/Fitness_landscape).  That is, you have a "cost function" which is your height above the landscape, and you try and optimise by moving downhill in a [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent) fashion.  
+
+However, there's a problem with this:  As we said in [Evaluating Risk](Evaluating-Risk), we don't have a cost function.  We can only guess at what risks there are.  And, we have to go on our _experience_. For this reason, I prefer to think of the [Risk Landscape](Risk-Landscape) as a terrain which contains _fauna_ and _obstacles_ (or, specifically [_Boundaries_](Boundary-Risk)).
+
+Just as I can tell you that the landscape outside your window will probably will have some roads, trees, fields, forests, buildings, and that the buildings are likely to be joined together by roads, we can make generalisations about risks too.
+
 ## Why Should We Categorise The Risks?
 
-A lot of knowledge and understanding of the world starts by naming and categorizing things.  
+A lot of knowledge and understanding of the world starts by naming and categorising things.  
 
 If we were studying insects, this might be a guide giving you a description and a picture of each insect, telling you where to find it and what it does.  <!-- tweet-end --> That doesn't mean that this is _all_ there is to know.  Just as a scientist could spend her entire life studying a particular species of bee, each of the risks we'll look at really has a whole sub-discipline of Computer Science attached to it, which we can't possibly hope to cover in any great depth.  
 
 As software developers, we can't hope to know the detailed specifics of the whole discipline of [Complexity Theory](https://en.wikipedia.org/wiki/Complexity_theory), or [Concurrency Theory](https://en.wikipedia.org/wiki/Concurrency_(computer_science)).  But, we're still required to operate in a world where these things exist.  So, we may as well get used to them, and ensure that we respect their primacy.  We are operating in _their_ world, so we need to know the rules.
 
-Once we can spot and name different types of risk, we can then think about their characteristics, and how to manage them.  In each of the following sections, we'll be looking at a different category of risk, some of it's characteristics and sometimes suggesting actions for managing the risk.
+Once we can spot and name different types of risk, we can then think about their characteristics, and how to manage or avoid them.  In each of the following sections, we'll be looking at a different category of risk, some of it's characteristics and sometimes suggesting actions to take to deal with it.
 
-But foremost, this is a "spotters' guide" to risks, not handbook for dealing with them.  <!-- tweet-end -->
+But foremost, this is a "spotters' guide" to software risks, and where to find them.  <!-- tweet-end -->
 
 ## Our Tour Itinerary
 
@@ -37,24 +47,14 @@ Below is a table outlining the different risks we'll see.  There _is_ an order t
        
 On each page we'll start by looking at the category of the risk _in general_, and then break this down into some specific sub-types.  At the end, in [Staging and Classifying](Staging-And-Classifying) we'll have a recap about what we've seen and make some guesses about how things fit together.  
 
-## The Risk Landscape Again
-
-In [Meeting Reality](Meeting-Reality), we looked at the concept of the [Risk Landscape](Risk-Landscape), and how a software project tries to _navigate_ across this landscape, testing the way as it goes, and trying to get to a position of _more favourable risk_.
-
-It's tempting to think of our [Risk Landscape](Risk-Landscape) as being like a [Fitness Landscape](https://en.wikipedia.org/wiki/Fitness_landscape).  That is, you have a "cost function" which is your height above the landscape, and you try and optimise by moving downhill in a [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent) fashion.  
-
-However, there's a problem with this:  As we said in [Evaluating Risk](Evaluating-Risk), we don't have a cost function.  We can only guess at what risks there are.  And, we have to go on our _experience_. For this reason, I prefer to think of the [Risk Landscape](Risk-Landscape) as a terrain which contains _fauna_ and _obstacles_ (or, specifically [Boundaries](Boundary-Risk)).
-
-Just as I can tell you that the landscape outside your window will probably will have some roads, trees, fields, forests, buildings, and that the buildings are likely to be joined together by roads, I can tell you some general things about risks too.
-
-In fact, we're going to try and categorise the kinds of things we see on this [Risk Landscape](Risk-Landscape).  But, this isn't going to be perfect: 
-
- - One risk can "blend" into another just like sometimes a "field" is also a "car-park" or a building might contain some trees (but isn't a forest).
- - There is _correlation_ between different risks:  one risk may cause another, or two risks may be due to the same underlying cause.
- - As we saw in [Part 1](Home#Part-1-Introduction), mitigating one risk can give rise to another, so risks are often _inversely correlated_.
-  
 ## Correlation & Causation
 
+Although we're going to try and categorise the kinds of things we see on this [Risk Landscape](Risk-Landscape), this isn't going to be perfect: 
+
+ - One risk can "blend" into another just like sometimes a "field" is also a "car-park" or a building might contain some trees (but isn't a forest).
+ - As we know from [Part 1](Home#Part-1-Introduction), mitigating one risk probably means accepting another.
+ - There is _correlation_ between different risks:  one risk may cause another, or two risks may be due to the same underlying cause.
+  
 Risk is messy.  It's not always easy to tease apart the different components of risk and look at them individually.<!-- tweet-end -->  Let's look at a high-profile recent example to see why.
 
 In the [Financial Services](https://en.wikipedia.org/wiki/Financial_services) industry, whole _departments_ exist to calculate things like:
