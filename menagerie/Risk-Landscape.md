@@ -73,7 +73,7 @@ All the [Risks](Glossary#Risk) were [correlated](https://www.investopedia.com/te
 
 ![Causation shown on a Risk-First Diagram: More complexity is likely to lead to more Operational Risk](images/generated/risks/landscape/causation.png)
 
-It's like this with software risks, too, sadly.  For example, [Operational Risk](Operational-Risk) is going to be heavily correlated with [Complexity Risk](Complexity-Risk): the more complex your operation, the more risky it will be.  In Risk-First diagrams, we will sometimes show correlation / causation with an arrow, like in the diagram above).
+It's like this with software risks, too, sadly.  For example, [Operational Risk](Operational-Risk) is going to be heavily correlated with [Complexity Risk](Complexity-Risk): the more complex your operation, the more risky it will be.  In the Risk-First diagrams, we will sometimes show correlation or causation with an arrow, like in the diagram above.
 
 ## We're all Naturalists Now
 
