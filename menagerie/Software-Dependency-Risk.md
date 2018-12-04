@@ -109,7 +109,7 @@ One of the hidden risks of embarking on a code-your-own approach is that the fea
  - Reminders to complete the sign up process
  - ... and so on.
 
-![Code-Your-Own mitigates immediate feature risk, but at the expense of schedule risk, complexity risk and communication risk.  There is also a hidden risk of features you don't yet know you need.](images/kite9/software-dependency-code-your-own.png) 
+![Code-Your-Own mitigates immediate feature risk, but at the expense of schedule risk, complexity risk and communication risk.  There is also a hidden risk of features you don't yet know you need.](images/generated/risks/software-dependency/code-your-own.png) 
 
 ### Unwritten Software
 
