@@ -2,7 +2,7 @@
 
 In [the previous section](One-Size-Fits-No-One), we saw how _Lean Software Development_ owed its existence to production-line manufacturing techniques developed at Toyota.  And, we saw that the _Waterfall_ approach originally came from engineering.  If Risk-First is anything, it's about applying the techniques of _Risk Management_ to the discipline of _Software Development_ (there's nothing new under the sun, after all).  
 
-One key activity of risk management we haven't discussed yet is _categorizing_ risks.  Thus, Part 2 of Risk-First is all about developing categories of risks for use in Software Development.
+One key activity of Risk Management we haven't discussed yet is _categorizing_ risks.  Thus, Part 2 of Risk-First is all about developing categories of risks for use in Software Development.
 
 ## Why Should We Categorise The Risks?
 
@@ -12,7 +12,9 @@ If we were studying insects, this might be a guide giving you a description and 
 
 As software developers, we can't hope to know the detailed specifics of the whole discipline of [Complexity Theory](https://en.wikipedia.org/wiki/Complexity_theory), or [Concurrency Theory](https://en.wikipedia.org/wiki/Concurrency_(computer_science)).  But, we're still required to operate in a world where these things exist.  So, we may as well get used to them, and ensure that we respect their primacy.  We are operating in _their_ world, so we need to know the rules.
 
-So, this is a "spotters' guide" to risks, not an in-depth encyclopedia.  <!-- tweet-end -->
+Once we can spot and name different types of risk, we can then think about their characteristics, and how to manage them.  In each of the following sections, we'll be looking at a different category of risk, some of it's characteristics and sometimes suggesting actions for managing the risk.
+
+But foremost, this is a "spotters' guide" to risks, not handbook for dealing with them.  <!-- tweet-end -->
 
 ## Our Tour Itinerary
 
