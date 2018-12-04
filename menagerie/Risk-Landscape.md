@@ -12,7 +12,7 @@ It's tempting to think of our [Risk Landscape](Risk-Landscape) as being like a [
 
 However, there's a problem with this:  As we said in [Evaluating Risk](Evaluating-Risk), we don't have a cost function.  We can only guess at what risks there are.  And, we have to go on our _experience_. For this reason, I prefer to think of the [Risk Landscape](Risk-Landscape) as a terrain which contains _fauna_ and _obstacles_ (or, specifically [_Boundaries_](Boundary-Risk)).
 
-Just as I can tell you that the landscape outside your window will probably will have some roads, trees, fields, forests, buildings, and that the buildings are likely to be joined together by roads, we can make generalisations about risks too.
+Just as I can tell you that the landscape outside your window will probably will have some trees, fields and buildings, and that the buildings are likely to be joined together by roads, we can make generalisations about risks too.
 
 ## Why Should We Categorise The Risks?
 
