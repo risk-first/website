@@ -246,16 +246,6 @@ Having chosen a dependency, whether or not you end up in a more favourable posit
 
 Let's take a closer look at this problem in the next section, [Boundary Risk](Boundary-Risk).
 
-
-|Sources          |
-|-----------------|
-| [sd1 - Defending your code against dependency problems](https://www.software.ac.uk/resources/guides/defending-your-code-against-dependency-problems)
-| [sd2 - How to choose an open source library](https://stackoverflow.com/questions/2960371/how-to-choose-an-open-source-library)
-| [sd3 - Open Source - To use or not to use](https://www.forbes.com/sites/forbestechcouncil/2017/07/20/open-source-to-use-or-not-to-use-and-how-to-choose/2/#39e67e445a8c)
-| [sd4 - SaaS Checklist - Nine Factors to Consider](https://www.zdnet.com/article/saas-checklist-nine-factors-to-consider-when-selecting-a-vendor/) |
-| [sd5 - How to Evaluate SaaS Vendors](http://sandhill.com/article/how-to-evaluate-saas-vendors-five-key-considerations/) |
-
-
 ## Sources
 
  - `sd1`: Defending your code against dependency problems.  https://www.software.ac.uk/resources/guides/defending-your-code-against-dependency-problems
