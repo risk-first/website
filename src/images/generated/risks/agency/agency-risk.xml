@@ -5,34 +5,34 @@
   </svg:defs>
   <diagram xmlns="http://www.kite9.org/schema/adl"  id="diagram-113" name="Goal In Mind" style="kite9-min-width: 900pt;">
 
-  <context id="c" bordered="true" style="kite9-layout: down; ">
-
-    <mitigated>
-      <risk class="agency" />
-    </mitigated>
+  <context id="c" bordered="true">
+    <group  style="kite9-layout: down; ">
+       <mitigated>
+        <risk class="agency" />
+      </mitigated>
+      
+      <description>Risks due to the fact that things you depend on often have agency, and pursue their own goals.</description>
+    </group>
     
-    <description>Risks due to the fact that things you depend on have agency, and they have their own goals to pursue.</description>
-
-    <label  id="id_16">
-      <text>Internal Model</text>
-      <symbols />
-    </label>
+     <group  style="kite9-layout: down; ">
+       <mitigated>
+        <risk class="security" />
+      </mitigated>
+      
+      <description>Agency Risks due to actors from outside the system.</description>
+    </group>
   </context>
 
   <group style="kite9-layout: down; kite9-horizontal-align: left;">
     <action style="kite9-horizontal-align: left;">Monitoring</action>
     <action style="kite9-horizontal-align: left;">Goal-Alignment</action>
+    <action style="kite9-horizontal-align: left;">Security</action>
   </group>
   
   <context id="d" style="kite9-sizing: maximize; ">
   
     <risk class="complexity" />
     <risk class="schedule" />
-  
-    <label  id="id_16">
-      <text>Attendant Risks</text>
-      <symbols />
-    </label>
   </context>
 
 
