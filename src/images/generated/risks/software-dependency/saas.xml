@@ -8,19 +8,32 @@
   <context id="c" bordered="true">
 
     <mitigated>
-      <risk class="feature" />
+      <risk class="operational" />
+    </mitigated>
+    
+     <mitigated>
+      <risk class="complexity" />
+    </mitigated>
+    
+     <mitigated>
+      <risk class="funding" />
     </mitigated>
   </context>
 
   <group style="kite9-layout: down; ">
-    <action>Code-Your-Own</action>
+    <action>SaaS Dependency</action>
   </group>
 
-  <context id="c" bordered="true">
-    <risk class="schedule" />
-    <risk class="implementation" />
-    <risk class="codebase" />
-    <risk class="communication" />
+  <context id="c" bordered="true" style="kite9-layout: down;">
+    <group>
+      <risk class="communication" />
+      <risk class="feature" />
+      <risk class="boundary" />
+    </group>
+    <group>
+      <risk class="funding" />
+      <risk class="operational" />
+    </group>
   </context>
 
   </diagram>
