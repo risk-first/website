@@ -2784,6 +2784,310 @@ individual experience and talent.
 In the next chapter, we are going to briefly look at software
 methodology, and how it comes up short in when addressing risk.
 
+\hypertarget{one-size-fits-no-one}{%
+\chapter{One Size Fits No One}\label{one-size-fits-no-one}}
+
+In All Risk Management we made the case that any action you take on a
+software project is to do with managing risk, and the last chapter, A
+Conversation was an example of this happening.
+
+Therefore, it stands to reason that software methodologies are all about
+risk management too. Since they are prescribing a particular day-to-day
+process, or set of actions to take, they are also prescribing a
+particular approach to managing the risks on the project.
+
+Back in the Development Process chapter, we introduced an example
+software methodology that a development team might follow when building
+software. It included steps like \emph{analysis}, \emph{coding} and
+\emph{testing}. And, we looked at how each of these actions reduces risk
+in the software delivery process.
+
+We looked at how following a process would expose risks that might be
+hidden to the members of the team: it doesn't matter if a developer
+doesn't know that he's going to break ``Feature Y'', because the
+\emph{Integration Testing} part of the process will mitigate this risk
+in the testing stage, rather than in production (where it becomes more
+expensive).
+
+In this chapter, we're going to have a brief look at some different
+software methodologies, and see how different methodologies prioritise
+different risks.
+
+\hypertarget{waterfall}{%
+\section{Waterfall}\label{waterfall}}
+
+\begin{quotation}
+
+``The waterfall development model originated in the manufacturing and
+construction industries; where the highly structured physical
+environments meant that design changes became prohibitively expensive
+much sooner in the development process. When first adopted for software
+development, there were no recognized alternatives for knowledge-based
+creative work.''
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Waterfall_model}{\textemdash  Waterfall Model, \emph{Wikipedia}}}
+\end{quotation}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/introduction/waterfall-400dpi.png}
+\caption{Waterfall Actions\label{waterfall.png}}
+\end{figure}
+
+\href{https://en.wikipedia.org/wiki/Waterfall_model}{Waterfall} is a
+family of methodologies advocating a linear, stepwise approach to the
+processes involved in delivering a software system. The basic idea
+behind Waterfall-style methodologies was that the software process is
+broken into distinct stages, usually including:
+
+\begin{itemize}
+\tightlist
+\item
+  Requirements Capture
+\item
+  Specification
+\item
+  Implementation
+\item
+  Verification
+\item
+  Delivery and Operations
+\item
+  Sign Offs at each stage
+\end{itemize}
+
+Because Waterfall methodologies are borrowed from \emph{the construction
+industry}, they manage the risks that you would care about in a
+construction project. Specifically, minimising the risk of rework, and
+the risk of costs spiralling during the physical phase of the project.
+For example, pouring concrete is significantly easier than digging it
+out again after it sets.
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/introduction/waterfall2-400dpi.png}
+\caption{Waterfall, Specifications and Requirements
+Capture\label{waterfall2.png}}
+\end{figure}
+
+Construction projects are often done by tender. This means that the
+supplier will bid for the job of completing the project, and deliver it
+to a fixed price. This is a risk-management strategy for the client:
+they are transferring the risk of construction difficulties to the
+supplier, and avoiding the Agency Risk that the supplier will ``pad''
+the project and take longer to implement it than necessary, charging
+them more in the process. In order for this to work, both sides need to
+have a fairly close understanding of what will be delivered, and this is
+why a specification is created.
+
+In a construction scenario, this makes a lot of sense. But,
+\emph{software projects are not the same as building projects}. There
+are two key criticisms of the Waterfall approach when applied to
+software:
+
+\begin{quotation}
+
+\begin{quote}
+``1. Clients may not know exactly what their requirements are before
+they see working software and so change their requirements, leading to
+redesign, redevelopment, and re-testing, and increased costs.''
+\end{quote}
+
+\end{quotation}
+
+\begin{quotation}
+
+``2. Designers may not be aware of future difficulties when designing a
+new software product or feature.''
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Waterfall_model\#Supporting_arguments}{\textemdash  Waterfall Model, \emph{Wikipedia}}}
+\end{quotation}
+
+So, the same actions Waterfall prescribes to mitigate rework and
+cost-overruns in the building industry do not address (and perhaps
+exacerbate) the two issues raised above when applied to software.
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/introduction/waterfall3-400dpi.png}
+\caption{Waterfall, Applied to a Software Project\label{waterfall3.png}}
+\end{figure}
+
+As you can see in the above diagram, some of the risks on the left
+\emph{are the same} as the ones on the right: the actions taken to
+manage them made no difference (or made things worse). The inability to
+manage these risks led to the identification of a ``Software Crisis'',
+in the 1970's:
+
+\begin{quotation}
+
+``Software crisis is a term used in the early days of computing science
+for the difficulty of writing useful and efficient computer programs in
+the required time\ldots{} The software crisis was due to the rapid
+increases in computer power and the complexity of the problems that
+could not be tackled.''
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Software_crisis}{\textemdash  Software Crisis, \emph{Wikipedia}}}
+\end{quotation}
+
+\hypertarget{alternative-methodologies}{%
+\section{Alternative Methodologies}\label{alternative-methodologies}}
+
+The software crisis showed that, a lot of the time, up-front
+requirements-capture, specification and fixed-price bids did little to
+manage risk on software projects. So it's not surprising that by the
+1990's, various different groups of software engineers were advocating
+``Agile'' techniques, which did away with these actions.
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/introduction/xp-400dpi.png}
+\caption{Risks, and the practices that manage them in Extreme
+Programming\label{xp.png}}
+\end{figure}
+
+In ``\href{http://amzn.eu/d/1vSqAWa}{Extreme Programming Explained}'',
+Kent Beck breaks down his methodology, Extreme Programming, listing the
+risks he wants to address and the actions he proposes to address them
+with. The above diagram summarises the main risks and actions he talks
+about. These are different risks to those addressed by Waterfall, and
+unsurprisingly, this leads to different actions too.
+
+Later in Risk-First, we will be going deeper on methodologies, examining
+them using a Risk-First perspective to understand what makes each one
+work, what they value and how they treat different risks. To get there,
+we need to have a model of the risks we face on a software project, and
+this is the subject of Part 2, in the next chapter.
+
+Until then though, let's cover at a high-level the basic differences we
+see in some of the methodologies:
+
+\begin{itemize}
+\item
+  \textbf{\href{https://en.wikipedia.org/wiki/Lean_software_development}{Lean
+  Software Development}}: While Waterfall borrows from risk management
+  techniques in the construction industry, Lean Software Development
+  applies the principles used in
+  \href{https://en.wikipedia.org/wiki/Lean_manufacturing}{Lean
+  Manufacturing}, which was developed at Toyota in the last century.
+  Lean takes the view that the biggest risk in manufacturing is from
+  waste, where waste is inventory, over-production, work-in-progress,
+  time spent waiting or defects in production. Applying this approach to
+  software means minimising work-in-progress, frequent releases and
+  continuous improvement.
+\item
+  \textbf{\href{https://en.wikipedia.org/wiki/Project_Management_Body_of_Knowledge}{Project
+  Management Body Of Knowledge (PMBoK)}}: This is a formalisation of
+  traditional project management practice. It prescribes best practices
+  for managing scope, schedule, resources, communications, dependencies,
+  stakeholders etc. on a project. Although ``risk'' is seen as a
+  separate entity to be managed, all of the above areas are sources of
+  risk within a project, as we will see in Part 2.
+\item
+  \textbf{Scrum)}: Is a popular Agile methodology. Arguably, it is less
+  ``extreme'' than Extreme Programming, as it drops
+  \href{https://en.wikipedia.org/wiki/Pair_programming}{Pair
+  Programming} and the always-available customer requirements, and
+  promotes a limited set of agile practices, such as frequent releases,
+  daily meetings, a product owner and retrospectives. This simplicity
+  arguably makes it simpler to learn and adapt to and probably
+  contributes to Scrum's popularity over XP.
+\item
+  \textbf{\href{https://en.wikipedia.org/wiki/DevOps}{DevOps}}: Many
+  software systems struggle with the disconnect between ``in
+  development'' and ``in production''. DevOps is an acknowledgement of
+  this, and is about more closely aligning the feedback loops between
+  the developers and the production system. It champions activities such
+  as continuous deployment, automated releases and automated monitoring.
+\end{itemize}
+
+\hypertarget{effectiveness}{%
+\section{Effectiveness}\label{effectiveness}}
+
+\begin{quotation}
+
+``All methodologies are based on fear. You try to set up habits to
+prevent your fears from becoming reality.''
+
+\sourceatright{\href{http://amzn.eu/d/1vSqAWa}{\textemdash  Extreme Programming Explained, \emph{Kent Beck}}}
+\end{quotation}
+
+The promise of any methodology is that it will help you manage certain
+Hidden Risks. But this comes at the expense of the \emph{effort} you put
+into the practices of the methodology. As we've said many times, a lot
+of the problems on a software project are Hidden Risks, and so there is
+an act of faith here: we are following a methodology because it purports
+to avoid risks we don't actually know about.
+
+A methodology offers us a route through the Risk Landscape, based on the
+risks that the designers of the methodology care about. When we use the
+methodology, it means that we are baking into our behaviour actions to
+avoid those risks.
+
+When we take action according to a methodology, we expect the Pay-Off,
+and if this doesn't materialise, then we feel the methodology is failing
+us. But it could just be that it is inappropriate to the \emph{type of
+project} we are running. Our Risk Landscape may not be the one the
+designers of the methodology envisaged. For example:
+
+\begin{itemize}
+\item
+  NASA can't do Agile when launching space craft: there's no two-weekly
+  launch that they can iterate over, and the the risks of losing a
+  rocket or satellite are simply too great to allow for iteration in
+  production. The risk profile is just all wrong for Agile: you need to
+  manage the risk of \emph{losing hardware} over the risk of
+  \emph{requirements changing}.
+\item
+  Equally, regulatory projects often require big, up-front,
+  waterfall-style design: keeping regulators happy is often about
+  showing that you have a well-planned path to achieving the regulation.
+  Often, the changes need to be reviewed and approved by regulators and
+  other stakeholders in advance of their implementation. This can't be
+  done with an approach of ``iterate for a few months''.
+\item
+  At the other end of the spectrum,
+  \href{https://mashable.com/2014/04/30/facebooks-new-mantra-move-fast-with-stability/?europe=true}{Facebook
+  used to have} an approach of ``move fast and break things''. This may
+  have been optimal when they were trying mitigate the risk of being
+  out-innovated by competitors within the fast-evolving sphere of social
+  networking.
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/introduction/one_size-400dpi.png}
+\caption{Inappropriate Methodologies create their own
+risks\label{one_size.png}}
+\end{figure}
+
+\hypertarget{choosing-a-methodology}{%
+\section{Choosing A Methodology}\label{choosing-a-methodology}}
+
+There is value in adopting a methodology as a complete collection of
+processes: Choosing a methodology (or any process) reduces the amount of
+thinking individuals have to do. Following a process may avoid the
+risks, whether the implementer knows about them or not. And, it becomes
+the process that is responsible for failure, not the individual (as
+shown in the above diagram).
+
+If we genuinely care about our projects, then it's critical that we
+match the choice of methodology to the risk profile of the project. We
+need to understand exactly what risks our methodology will help us with,
+and which it won't; where it is appropriate, and where it isn't.
+
+An off-the-shelf methodology is unlikely to fit the risks of our project
+exactly. Sometimes, we need to break down methodologies into their
+component practices, and apply just the practices we need. This requires
+a much more fine-grained understanding of how the practices work, and
+what they bring.
+
+So different methodologies advocate different practices, and different
+practices manage different risks. If we want to understand
+methodologies, or even choose the right practices from one, we really
+need to understand the \emph{types of risks} we face on software
+projects. This is where we go next in Part 2.
+
 \part{Risk}
 
 \hypertarget{risk-landscape}{%
@@ -3654,11 +3958,11 @@ a few hours' a day.
 When channels are \textbf{poor-quality}, less communication occurs.
 People will try to communicate just the most important information. But,
 it's often impossible to know a-priori what constitutes ``important''.
-This is why Extreme Programming recommends the practice of
-\href{https://en.wikipedia.org/wiki/Pair_programming}{Pair Programming}
-and siting all the developers together: although you don't know whether
-useful communication will happen, you are mitigating Channel Risk by
-ensuring high-quality communication channels are in place.
+This is why Extreme Programming recommends the practice of Pair
+Programming and siting all the developers together: although you don't
+know whether useful communication will happen, you are mitigating
+Channel Risk by ensuring high-quality communication channels are in
+place.
 
 At other times, channels are crowded, and can contain so much
 information that we can't hope to receive all the messages. In these
@@ -5573,9 +5877,8 @@ Much like Reliability Risk, there is science for it:
   And \href{https://en.wikipedia.org/wiki/Project_management}{Project
   Management} is in large part about ensuring the right resources are
   available at the right times. We'll be taking a closer look at that in
-  Risk-First Part 3 chapters on Prioritisation and the
-  \href{https://en.wikipedia.org/wiki/Project_Management_Body_of_Knowledge}{Project
-  Management Body Of Knowledge}.
+  Risk-First Part 3 chapters on Prioritisation and the Project
+  Management Body Of Knowledge.
 \end{itemize}
 
 \hypertarget{funding-risk}{%
@@ -6015,6 +6318,8 @@ So, these are two separate concepts, and both are useful.
 \item
   preview of what's to come in part 3.
 \end{itemize}
+
+part 3 is in the next book.
 
 The point of part 2 is to give a taxonomy for talking about risk.
 
