@@ -58,6 +58,8 @@ Although we're going to try and categorise the kinds of things we see on this [R
   
 Risk is messy.  It's not always easy to tease apart the different components of risk and look at them individually.<!-- tweet-end -->  Let's look at a high-profile recent example to see why.
 
+### The Financial Crisis
+
 In the [Financial Services](https://en.wikipedia.org/wiki/Financial_services) industry, whole _departments_ exist to calculate things like:
 
 - **[Market Risk](https://en.wikipedia.org/wiki/Market_risk):**  the risk that the amount some asset is going to change in value.
