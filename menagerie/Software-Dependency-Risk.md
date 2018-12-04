@@ -113,7 +113,7 @@ One of the hidden risks of embarking on a code-your-own approach is that the fea
 
 ### Unwritten Software
 
-Sometimes, you will pick up a dependency on _unwritten software_.  This commonly happens when work is divided amongst team members, or teams.  <!-- tweet-end -->
+Sometimes, you will pick up [Dependency Risk](Dependency-Risk) from _unwritten software_.  This commonly happens when work is divided amongst team members, or teams.  <!-- tweet-end -->
 
 ![Sometimes, a module you're writing will depend on unwritten code](images/generated/risks/software-dependency/unwritten.png)
 
@@ -123,14 +123,15 @@ But it also hugely increases [Communication Risk](Communication-Risk) because no
 
 There are a couple of ways to do this:
 
-- **Standards**:  If component **B** is a database, a queue, mail gateway or something else with a standard interface, then you're in luck.   Write **A** to those standards, and find a cheap, simple implementation to test with.  This gives you time to sort out exactly what implementation of **B** you're going for.  This is not a great long-term solution, because obviously, you're not using the _real_ dependency- you might get surprised when the behaviour of the real component is subtly different.  But it can reduce [Schedule Risk](Scarcity-Risk#schedule-risk) in the short-term.
-- **Coding To Interfaces**:  If standards aren't an option, but the surface area of **B** that **A** uses is quite small and obvious, you can write a small interface for it, and work behind that, using a [Mock](https://en.wikipedia.org/wiki/Mock_object) for **B** while you're waiting for finished component.  Write the interface to cover only what **A** _needs_, rather than everything that **B** _does_ in order to minimise the risk of [Leaky Abstractions](https://en.wikipedia.org/wiki/Leaky_abstraction).
+ - **Standards**:  If component **B** is a database, a queue, mail gateway or something else with a standard interface, then you're in luck.   Write **A** to those standards, and find a cheap, simple implementation to test with.  This gives you time to sort out exactly what implementation of **B** you're going for.  This is not a great long-term solution, because obviously, you're not using the _real_ dependency- you might get surprised when the behaviour of the real component is subtly different.  But it can reduce [Schedule Risk](Scarcity-Risk#schedule-risk) in the short-term.
 
-![Coding to a standard on an interface breaks the dependency on unwritten software](images/kite9/software-dependency-unwritten-2.png)
+ - **Coding To Interfaces**:  If standards aren't an option, but the surface area of **B** that **A** uses is quite small and obvious, you can write a small interface for it, and work behind that, using a [Mock](https://en.wikipedia.org/wiki/Mock_object) for **B** while you're waiting for finished component.  Write the interface to cover only what **A** _needs_, rather than everything that **B** _does_ in order to minimise the risk of [Leaky Abstractions](https://en.wikipedia.org/wiki/Leaky_abstraction).
+
+![Coding to a standard on an interface breaks the dependency on unwritten software](images/generated/risks/software-dependency/unwritten-mitigation.png)
 
 ### Conway's Law
 
-If the dependency is being written by another person, another team or in another country, communication risks pile up.<!-- tweet-end -->  When this happens, you will want to minimise _as much as possible_ the interface complexity, since the more complex the interface, the worse the [Communication Risk](Communication-Risk) will be.  The tendency then is to make the interfaces between teams or people _as simple as possible_, modularising along these organisational boundaries.
+Due to channel bandwidth limitations, if the dependency is being written by another person, another team or in another country, [Communication Risk](Communication-Risk] piles up.<!-- tweet-end -->  When this happens, you will want to minimise the interface complexity _as much as possible_, since the more complex the interface, the worse the [Communication Risk](Communication-Risk) will be.  The tendency then is to make the interfaces between teams or people _as simple as possible_, modularising along these organisational boundaries.
 
 In essence, this is [Conway's Law](https://en.wikipedia.org/wiki/Conways_law):
 
@@ -138,15 +139,16 @@ In essence, this is [Conway's Law](https://en.wikipedia.org/wiki/Conways_law):
 
 ### 2.  Software Libraries
 
-By choosing a particular software library, we are making a move on the [Risk Landscape](Risk-Landscape) in the hope of moving to place with more favourable risks. <!-- tweet-end --> Typically, using library code offers a [Schedule Risk](Scarcity-Risk#schedule-risk) and [Complexity Risk](Complexity-Risk) [Silver Bullet](Silver-Bullets).  But, in return we expect to pick up:
-- [Communication Risk](Communication-Risk): because we now have to learn how to communicate with this new dependency.
-- [Boundary Risk](Boundary-Risk) - because now are limited to using the functionality provided by this dependency.  We have chosen it over alternatives and changing to something else would be more work and therefore costly.   
+By choosing a particular software library, we are making a move on the [Risk Landscape](Risk-Landscape) in the hope of moving to place with more favourable risks. <!-- tweet-end --> Typically, using library code offers a [Schedule Risk](Scarcity-Risk#schedule-risk) and [Complexity Risk](Complexity-Risk) [Silver Bullet](Silver-Bullets) - a high-speed route over the risk landscape to somewhere nearer where we want to be.  But, in return we expect to pick up:
+
+- **[Communication Risk](Communication-Risk):** because we now have to learn how to communicate with this new dependency.
+- **[Boundary Risk](Boundary-Risk):** - because now are limited to using the functionality provided by this dependency.  We have chosen it over alternatives and changing to something else would be more work and therefore costly.   
 
 But, it's quite possible that we could wind up in a worse place than we started out, by using a library that's out-of-date, riddled with bugs or badly supported.  i.e. Full of new, hidden [Feature Risk](Feature-Risk).  
 
 It's _really easy_ to make bad decisions about which tools to use because the tools don't (generally) advertise their deficiencies. <!-- tweet-end --> After all, they don't generally know how _you_ will want to use them.  
 
-### Software Libraries - Hidden Risks
+### Software Libraries - Attendant Risks
 
 Currently, choosing software dependencies looks like a "bounded rationality"-type process:
 
@@ -158,53 +160,51 @@ But, leaving that aside, let's try to build a model of what this decision making
 
 In the table below, I am summarising three different sources (linked at the end of the section), which give descriptions of which factors to look for when choosing open-source libraries.
 
-![Software Dependencies](images/generated/software_dependency_table_1_large.png)
+![Software Library Dependencies, Attendant Risks](images/generated/risks/software-dependency/software_dependency_table_1_large.png)
 
-Some take-aways:
+The diagram above summarises the risks raised in some of the literature.  Here are some take-aways:
 
- - [Feature Risk](Feature-Risk) is a big concern.   How can you be sure that the project will do what you want it to do ahead of schedule?  Will it contain bugs or missing features?  By looking at factors like _release frequency_ and _size of the community_ you get a good feel for this which is difficult to fake.
- - [Boundary Risk](Boundary-Risk) is also very important.  You are going to have to _live_ with your choices for the duration of the project, so it's worth spending the effort to either ensure that you're not going to regret the decision, or that you can change direction later.
- - Third is [Communication Risk](Communication-Risk):  how well does the project deal with it's users?  If a project is "famous", then it has communicated its usefulness to a wide, appreciative audience.  Avoiding [Communication Risk](Communication-Risk) is also a good reason to pick _tools you are already familiar with_.
+ - **[Feature Risk](Feature-Risk) is a big concern:**   How can you be sure that the project will do what you want it to do ahead of schedule?  Will it contain bugs or missing features?  By looking at factors like _release frequency_ and _size of the community_ you get a good feel for this which is difficult to fake.
+ - **[Boundary Risk](Boundary-Risk) is also very important:**  You are going to have to _live_ with your choices for the duration of the project, so it's worth spending the effort to either ensure that you're not going to regret the decision, or that you can change direction later.
+ - **Third is [Communication Risk](Communication-Risk):**  how well does the project deal with it's users?  If a project is "famous", then it has communicated its usefulness to a wide, appreciative audience.  Avoiding [Communication Risk](Communication-Risk) is also a good reason to pick _tools you are already familiar with_.
   
+![Software Libraries Risk Tradeoff](images/generated/risks/software-dependency/software-dependency-library.png) 
+    
 ### Complexity Risk? 
  
-One thing that none of the sources consider (at least from the outset) is the [Complexity Risk](Complexity-Risk) of using a solution:    
+One thing that none of the sources in the table consider (at least from the outset) is the [Complexity Risk](Complexity-Risk) of using a solution:   
+ 
  - Does it drag in lots of extra dependencies that seem unnecessary for the job in hand?  If so, you could end up in [Dependency Hell](https://en.wikipedia.org/wiki/Dependency_hell), with multiple, conflicting versions of libraries in the project.
  - Do you already have a dependency providing this functionality?  So many times, I've worked on projects that import a _new_ dependency when some existing (perhaps transitive) dependency has _already brought in the functionality_.  For example, there are plenty of libraries for [JSON](https://en.wikipedia.org/wiki/JSON) marshaling, but if I'm also using a web framework the chances are it already has a dependency on one already.
  - Does it contain lots of functionality that isn’t relevant to the task you want it to accomplish?  e.g. Using Java when a shell script would do (on a non-Java project)
  
-To give an extreme example of this, I once worked on an application which used [Hazlecast](https://en.wikipedia.org/wiki/Hazelcast) to cache log-in session tokens for a 3rd party data-source.  But, the app is only used once every month, and session IDs can be obtained in milliseconds.   So... why cache them?  Although Hazlecast is an excellent choice for in-memory caching across multiple JVMs, it is a complex piece of software (after all, it does lots of stuff).  By doing this, you have introduced extra dependency risk, cache invalidation risks, networking risks, synchronisation risks and so on, for actually no benefit at all...  Unless, it’s about [CV Building](Agency-Risk#CV-building).  
-
-Sometimes, the amount of complexity _goes up_ when you use a dependency for _good reason_.  <!-- tweet-end --> For example, in Java, you can use [Java Database Connectivity (JDBC)](https://en.wikipedia.org/wiki/Java_Database_Connectivity) to interface with various types of database.  [Spring Framework](https://en.wikipedia.org/wiki/Spring_Framework) (a popular Java library) provides a thing called a `JDBCTemplate`.  This actually makes your code _more_ complex, and can prove very difficult to debug.  However, it prevents some security issues, handles resource disposal and makes database access more efficient.  None of those are essential to interfacing with the database, but not using them is [Technical Debt](Complexity-Risk#technical-debt) that can bite you later on.  
-
-![Software Libraries Risk Tradeoff](images/kite9/software-dependency-library.png) 
+Sometimes, the amount of complexity _goes up_ when you use a dependency for _good reason_.  <!-- tweet-end --> For example, in Java, you can use [Java Database Connectivity (JDBC)](https://en.wikipedia.org/wiki/Java_Database_Connectivity) to interface with various types of database.  [Spring Framework](https://en.wikipedia.org/wiki/Spring_Framework) (a popular Java library) provides a thing called a `JDBCTemplate`.  This actually makes your code _more_ complex, and can prove very difficult to debug.  However, it prevents some security issues, handles resource disposal and makes database access more efficient.  None of those are essential to interfacing with the database, but not using them is [Technical Debt](Complexity-Risk#technical-debt) that can bite you later on.   
+ 
+To give an extreme example of this, I once worked on an application which used [Hazlecast](https://en.wikipedia.org/wiki/Hazelcast), an in-memory distributed database, to cache log-in session tokens for a 3rd party data-source.  But, the app is only used once every month, and session IDs can be obtained in milliseconds.   So... why cache them?  Although Hazlecast is an excellent choice for in-memory caching across multiple JVMs, it is a complex piece of software (after all, it does lots of stuff).  Using it introduced extra dependency risk, cache invalidation risks, networking risks, synchronisation risks and so on, for actually no benefit at all...  Unless, it’s about CV Building. (See [Agency Risk](Agency-Risk#CV-building).)  
 
 ### 3.  Software as a Service
 
 Businesses opt for Software as a Service (SaaS) because:
-- It vastly reduces the [Complexity Risk](Complexity-Risk) they face in their organisations. e.g. managing the software or making changes to it.
-- Payment is usually based on _usage_, mitigating [Schedule Risk](Scarcity-Risk#schedule-risk).  e.g. Instead of having to pay for in-house software administrators, they can leave this function to the experts.
+
+- It promises to vastly reduce the [Complexity Risk](Complexity-Risk) they face in their organisations. e.g. managing the software or making changes to it.
+- Payment is usually based on _usage_, mitigating [Funding Risk](Scarcity-Risk#funding-risk).  e.g. Instead of having to pay up-front for a license, and hire in-house software administrators, they can leave this function to the experts.
 - Potentially, you out-source the [Operational Risk](Operational-Risk) to a third party. e.g. ensuring availability, making sure data is secure and so on.
 
 SaaS is now a very convenient way to provide _commercial_ software.   Popular examples of SaaS might be [SalesForce](https://en.wikipedia.org/wiki/Salesforce.com), or [GMail](https://en.wikipedia.org/wiki/Gmail).  Both of which follow the commonly-used [Freemium](https://en.wikipedia.org/wiki/Freemium) model, where the basic service is provided free, but upgrading to a paid account gives extra benefits.  
 
-By providing the software on their own servers, the commercial organisation has a defence against _piracy_, as well as being able to control the [Complexity Risk](Complexity-Risk) of the their environment (e.g. not having to support _every_ version of the software that's ever been released).
+![Software As A Service Dependencies](images/generated/risks/software-dependency/software_dependency_table_2_large.png)
 
-Let's again recap the risks raised in some of the available literature:
+The diagram above summarises the risks raised in some of the available literature.  Some take-aways:
 
-![Software As A Service Dependencies](images/generated/software_dependency_table_2_large.png)
-
-Some take-aways:
-
-- Clearly, [Operational Risk](Operational-Risk) is now a big concern.  By depending on a third-party organisation you are tying yourself to its success or failure in a much bigger way than just by using a piece of open-source software.   What happens to data security, both in the data centre and over the Internet?   
+- Clearly, [Operational Risk](Operational-Risk) is now a big concern.  By depending on a third-party organisation you are tying yourself to its success or failure in a much bigger way than just by using a piece of open-source software.   What happens to data security, both in the data centre and over the Internet?  Although you might choose a SaaS solution to mitigate _internal_ [Operational Risk](Operational-Risk), you might just be "throwing it over the wall" to a third party, who might do a worse job.
 - With [Feature Risk](Feature-Risk) you now have to contend with the fact that the software will be upgraded _outside your control_, and you may have limited control over which features get added or changed. 
 - [Boundary Risk](Boundary-Risk) is a also a different proposition: you are tied to the software provider by _a contract_.  If the service changes in the future, or isn't to your liking, you can't simply fork the code (like you could with an open source project).
 
-![Risk Tradeoff From Using _Software as a Service (SaaS)](images/kite9/software-dependency-saas.png)
+![Risk Tradeoff From Using Software as a Service (SaaS)](images/kite9/software-dependency-saas.png)
 
 ## A Matrix of Options
 
-We've looked at just 3 different ways of providing a software dependency: SaaS, Libraries and code-your-own.<!-- tweet-end -->
+We've looked at just 3 different ways of providing a software dependency: Code-Your-Own, Libaries and SaaS.<!-- tweet-end -->
 
 But these are not the only ways to do it, and there's clearly no one _right_ way.   Although here we have looked just at "Commercial SaaS" and "Free Open Source", in reality, these are just points in a two-dimensional space involving _Pricing_ and _Hosting_.   
 
@@ -212,45 +212,43 @@ Let's expand this view slightly and look at where different pieces of software s
 
 ![Software Dependencies, Pricing, Delivery Matrix Risk Profiles](images/generated/software_dependency_table_3_sideways.png)
 
-- Where there is value in the [Network Effect](https://en.wikipedia.org/wiki/Network_effect), it's often a sign that the software will be free, or open source<!-- tweet-end -->:  programming languages and Linux are the obvious examples of this.  Bugs are easier to find when there are lots of eyes looking, and learning the skill to use the software has less [Boundary Risk](Boundary-Risk) if you know you'll be able to use it at any point in the future.
-- At the other end of the spectrum, clients will happily pay for software if it clearly **reduces complexity**.  Take [Amazon Web Services (AWS)](https://en.wikipedia.org/wiki/Amazon_Web_Services).  The essential trade here is that you substitute the complexity of hosting and maintaining various pieces of software, in exchange for monthly payments ([Funding Risk](Scarcity-Risk#Funding-Risk) for you).  Since the AWS _interfaces_ are specific to Amazon, there is significant [Boundary Risk](Boundary-Risk) in choosing this option.
+- Where there is value in **the [Network Effect](https://en.wikipedia.org/wiki/Network_effect):**, it's often a sign that the software will be free, or open source<!-- tweet-end -->:  programming languages and Linux are the obvious examples of this.  Bugs are easier to find when there are lots of eyes looking, and learning the skill to use the software has less [Boundary Risk](Boundary-Risk) if you know you'll be able to use it at any point in the future.
+- At the other end of the spectrum, clients will happily pay for software if it clearly **reduces [Operational Risk](Operational-Risk)**.  Take [Amazon Web Services (AWS)](https://en.wikipedia.org/wiki/Amazon_Web_Services).  The essential trade here is that you substitute the complexity of hosting and maintaining various pieces of hardware, in exchange for metered payments ([Funding Risk](Scarcity-Risk#Funding-Risk) for you).  Since the AWS _interfaces_ are specific to Amazon, there is significant [Boundary Risk](Boundary-Risk) in choosing this option.
 - In the middle there are lots of **substitute options** and therefore high competition.  Because of this, prices are pushed towards zero, and and therefore often advertising is used to monetarise the product.  [Angry Birds](https://en.wikipedia.org/wiki/Angry_Birds) is a classic example:  initially, it had demo and paid versions, however [Rovio](https://en.wikipedia.org/wiki/Rovio_Entertainment) discovered there was much more money to be made through advertising than from the [paid-for app](https://www.deconstructoroffun.com/blog/2017/6/11/how-angry-birds-2-multiplied-quadrupled-revenue-in-a-year).
 
-### Managing Risks
+## Software Dependencies as Features
 
-So far, we've considered only how the different approaches to [Software Dependencies](Software-Dependency-Risk) change the landscape of risks we face to mitigate some [Feature Risk](Feature-Risk) or other.  
+So far, we've looked at different _approaches_ to software dependencies, and the risk profiles they present.  But the category is less important than the specifics:  we are choosing specific tools for specific tasks.  [Software Dependencies](Software-Dependency-Risk) allows us to construct dependency networks to give us all kinds of features and mitigate all kinds of risk.  That is, the features we are looking for in a dependency _are to mitigate some kind of risk_.
 
-But with [Software Dependencies](Software-Dependency-Risk) we can construct dependency networks to give us all kinds of features and mitigate all kinds of risk.  That is, _the features we are looking for are to mitigate some kind of risk_.
-
-For example, I might start using [WhatsApp](https://en.wikipedia.org/wiki/WhatsApp) for example, because I want to be able to send my friends photos and text messages.  However, it's likely that those same features are going to allow us to mitigate [Communication Risk](Communication-Risk) and [Coordination Risk](Coordination-Risk) when we're next trying to meet up. 
+For example, I might start using [WhatsApp](https://en.wikipedia.org/wiki/WhatsApp) because I want to be able to send my friends photos and text messages.  However, it's likely that those same features allow us to mitigate [Coordination Risk](Coordination-Risk) when we're next trying to meet up. 
 
 Let's look at some:
 
-|Risk                                                 |Examples of Software Mitigating That Risk                                |
-|-----------------------------------------------------|-------------------------------------------------------------------------|
-|[Coordination Risk](Coordination-Risk)               |Calendar tools,  Bug Tracking, Distributed Databases                     |
-|[Map-And-Territory-Risk](Map-And-Territory-Risk)     |The Internet, generally.  Excel, Google, "Big Data", Reporting tools     |
-|[Schedule-Risk](Scarcity-Risk#schedule-risk)                       |Planning Software, Project Management Software                            |
-|[Communication-Risk](Communication-Risk)             |Email, Chat tools, CRM tools like SalesForce, Forums, Twitter, Protocols |
-|[Process-Risk](Process-Risk)                         |Reporting tools, online forms, process tracking tools                    |
+|Risk                                                 |Examples of Software Mitigating That Risk                                 |
+|-----------------------------------------------------|------------------------------------------------------------------------- |
+|[Coordination Risk](Coordination-Risk)               |Calendar tools,  Bug Tracking, Distributed Databases                      |
+|[Map-And-Territory-Risk](Map-And-Territory-Risk)     |The Internet, generally.  Excel, Google, "Big Data", Reporting tools      |
+|[Schedule-Risk](Scarcity-Risk#schedule-risk)         |Planning Software, Project Management Software                            |
+|[Communication-Risk](Communication-Risk)             |Email, Chat tools, CRM tools like SalesForce, Forums, Twitter, Protocols  |
+|[Process-Risk](Process-Risk)                         |Reporting tools, online forms, process tracking tools                     |
 |[Agency-Risk](Agency-Risk)                           |Auditing tools, transaction logs, Time-Sheet software, HR Software        |  
-|[Operational-Risk](Operational-Risk)                 |Support tools like ZenDesk, Grafana, InfluxDB, Geneos                    |
-|[Feature-Risk](Feature-Risk)                         |Every piece of software you use!                                         |
+|[Operational-Risk](Operational-Risk)                 |Support tools like ZenDesk, Grafana, InfluxDB, Geneos, Security Tools     |
+|[Feature-Risk](Feature-Risk)                         |Every piece of software you use!                                          |
   
-## Back To Ergonomics
+## Choice
 
-What's clear from this analysis is that software dependencies don't _conquer_ any risk - the moves they make on the [Risk Landscape](Risk-Landscape) are _subtle_.  Whether or not you end up in a more favourable position risk-wise is going to depend heavily on the quality of the execution and the skill of the implementor.  
-
-In particular, _choosing_ dependencies can be extremely difficult.  As we discussed above, the usefulness of any tool depends on its fit for purpose, it's _ergonomics within a given context_.  It's all too easy to pick a good tool for the wrong job:  
+_Choosing_ dependencies can be extremely difficult.  As we discussed above, the usefulness of any tool depends on its fit for purpose, it's _ergonomics within a given context_.  It's all too easy to pick a good tool for the wrong job:  
 
 > "I suppose it is tempting, if the only tool you have is a hammer, to treat everything as if it were a nail." - [Abraham Maslow, _Toward a Psychology of Being_](https://en.wiktionary.org/wiki/if_all_you_have_is_a_hammer,_everything_looks_like_a_nail) <!-- tweet-end -->
+
+And, having chosen a dependency, whether or not you end up in a more favourable position risk-wise is going to depend heavily on the quality of the execution and the skill of the implementor.  
 
 With software dependencies, we often have to live with the decisions we make for a long time. <!-- tweet-end --> In my experience, given the [Boundary Risks](Boundary-Risk) associated with getting this wrong, not enough time is spent really thinking about this in advance.  
 
 Let's take a closer look at this problem in the next section, [Boundary Risk](Boundary-Risk).
 
-|Sources          |
-|-----------------|
+|Source     | Title  | Url  
+|-----------|--------|-----------------------
 | [sd1 - Defending your code against dependency problems](https://www.software.ac.uk/resources/guides/defending-your-code-against-dependency-problems)
 | [sd2 - How to choose an open source library](https://stackoverflow.com/questions/2960371/how-to-choose-an-open-source-library)
 | [sd3 - Open Source - To use or not to use](https://www.forbes.com/sites/forbestechcouncil/2017/07/20/open-source-to-use-or-not-to-use-and-how-to-choose/2/#39e67e445a8c)

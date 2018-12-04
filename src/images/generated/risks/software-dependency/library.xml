@@ -8,19 +8,27 @@
   <context id="c" bordered="true">
 
     <mitigated>
-      <risk class="feature" />
+      <risk class="complexity" />
+    </mitigated>
+    
+     <mitigated>
+      <risk class="operational" />
+    </mitigated>
+    
+     <mitigated>
+      <risk class="schedule" />
     </mitigated>
   </context>
 
   <group style="kite9-layout: down; ">
-    <action>Code-Your-Own</action>
+    <action>Use Software Library</action>
   </group>
 
   <context id="c" bordered="true">
-    <risk class="schedule" />
-    <risk class="implementation" />
-    <risk class="codebase" />
     <risk class="communication" />
+    <risk class="feature-fit" />
+    <risk class="boundary" />
+    <risk class="complexity" />
   </context>
 
   </diagram>
