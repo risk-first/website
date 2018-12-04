@@ -168,7 +168,7 @@ The diagram above summarises the risks raised in some of the literature.  Here a
  - **[Boundary Risk](Boundary-Risk) is also very important:**  You are going to have to _live_ with your choices for the duration of the project, so it's worth spending the effort to either ensure that you're not going to regret the decision, or that you can change direction later.
  - **Third is [Communication Risk](Communication-Risk):**  how well does the project deal with it's users?  If a project is "famous", then it has communicated its usefulness to a wide, appreciative audience.  Avoiding [Communication Risk](Communication-Risk) is also a good reason to pick _tools you are already familiar with_.
   
-![Software Libraries Risk Tradeoff](images/generated/risks/software-dependency/software-dependency-library.png) 
+![Software Libraries Risk Tradeoff](images/generated/risks/software-dependency/library.png) 
     
 ### Complexity Risk? 
  
@@ -200,7 +200,7 @@ The diagram above summarises the risks raised in some of the available literatur
 - With [Feature Risk](Feature-Risk) you now have to contend with the fact that the software will be upgraded _outside your control_, and you may have limited control over which features get added or changed. 
 - [Boundary Risk](Boundary-Risk) is a also a different proposition: you are tied to the software provider by _a contract_.  If the service changes in the future, or isn't to your liking, you can't simply fork the code (like you could with an open source project).
 
-![Risk Tradeoff From Using Software as a Service (SaaS)](images/kite9/software-dependency-saas.png)
+![Risk Tradeoff From Using Software as a Service (SaaS)](images/generated/risks/software-dependency/saas.png)
 
 ## A Matrix of Options
 
@@ -210,7 +210,7 @@ But these are not the only ways to do it, and there's clearly no one _right_ way
 
 Let's expand this view slightly and look at where different pieces of software sit on these axes:
 
-![Software Dependencies, Pricing, Delivery Matrix Risk Profiles](images/generated/software_dependency_table_3_sideways.png)
+![Software Dependencies, Pricing, Delivery Matrix Risk Profiles](images/generated/risks/software-dependency/software_dependency_table_3_sideways.png)
 
 - Where there is value in **the [Network Effect](https://en.wikipedia.org/wiki/Network_effect):**, it's often a sign that the software will be free, or open source<!-- tweet-end -->:  programming languages and Linux are the obvious examples of this.  Bugs are easier to find when there are lots of eyes looking, and learning the skill to use the software has less [Boundary Risk](Boundary-Risk) if you know you'll be able to use it at any point in the future.
 - At the other end of the spectrum, clients will happily pay for software if it clearly **reduces [Operational Risk](Operational-Risk)**.  Take [Amazon Web Services (AWS)](https://en.wikipedia.org/wiki/Amazon_Web_Services).  The essential trade here is that you substitute the complexity of hosting and maintaining various pieces of hardware, in exchange for metered payments ([Funding Risk](Scarcity-Risk#Funding-Risk) for you).  Since the AWS _interfaces_ are specific to Amazon, there is significant [Boundary Risk](Boundary-Risk) in choosing this option.
