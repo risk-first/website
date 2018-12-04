@@ -119,7 +119,7 @@ Let's remove some of those extra links:
 
 In this graph, I've removed 6 of the edges.  Now, we're in a situation where if any single edge is removed, the graph becomes _unconnected_.  That is, it's broken into distinct chunks.  So, it's _1-connected_.  
 
-The second graph is clearly simpler than the first.  And, we can show this by looking at the **Kolgomorov Complexity** in our little language:
+The second graph is clearly simpler than the first.  And, we can show this by looking at the **Kolmogorov Complexity** in our little language:
 
 ```javascript
 a: d,g

@@ -16,7 +16,7 @@ In this section, we're going to have a brief look at some different software met
 
 ![Waterfall Actions](images/generated/introduction/waterfall.png) 
 
-[Waterfall](https://en.wikipedia.org/wiki/Waterfall_model) is a family of methodologies advocating a linear, stepwise approach to the processes involved in delivering a software system.  The basic idea behind Waterfall-style methodologies was that the software process is broken into distinct stages, usually including:
+Waterfall is a family of methodologies advocating a linear, stepwise approach to the processes involved in delivering a software system.  The basic idea behind Waterfall-style methodologies was that the software process is broken into distinct stages, usually including:
 
 - [Requirements Capture](Requirements-Capture)
 - [Specification](Big-Design-Up-Front)
@@ -51,19 +51,17 @@ The software crisis showed that, a lot of the time, up-front requirements-captur
 
 ![Risks, and the practices that manage them in Extreme Programming](images/generated/introduction/xp.png)
 
-In "[Extreme Programming Explained](http://amzn.eu/d/1vSqAWa)", Kent Beck breaks down his methodology, Extreme Programming, listing the risks he wants to address and the actions he proposes to address them with.  The above diagram summarises the main risks and actions he talks about.   These are different risks to those addressed by Waterfall, and unsurprisingly, this leads to different actions too.
+In [Extreme Programming Explained](http://amzn.eu/d/1vSqAWa), Kent Beck breaks down his methodology, Extreme Programming, listing the risks he wants to address and the actions he proposes to address them with.  The diagram above summarises the main risks and actions he talks about.   These are _different_ risks to those addressed by Waterfall, and unsurprisingly, this leads to different actions too.
 
-Later in Risk-First, we will be going deeper on methodologies, examining them using a Risk-First perspective to understand what makes each one work, what they value and how they treat different risks.  To get there, we need to have a model of the risks we face on a software project, and this is the subject of Part 2, in the next section.  
+Here are some high-level differences we see in some other popular methodologies:
 
-Until then though, let's cover at a high-level the basic differences we see in some of the methodologies:
-
- - **[Lean Software Development](https://en.wikipedia.org/wiki/Lean_software_development)**: While Waterfall borrows from risk management techniques in the construction industry, Lean Software Development applies the principles used in [Lean Manufacturing](https://en.wikipedia.org/wiki/Lean_manufacturing), which was developed at Toyota in the last century.  Lean takes the view that the biggest risk in manufacturing is from waste, where waste is inventory, over-production, work-in-progress, time spent waiting or defects in production.  Applying this approach to software means minimising work-in-progress, frequent releases and continuous improvement.  
+ - **[Lean Software Development](https://en.wikipedia.org/wiki/Lean_software_development)**: While Waterfall borrows from risk management techniques in the construction industry, Lean Software Development applies the principles from [Lean Manufacturing](https://en.wikipedia.org/wiki/Lean_manufacturing), which was developed at Toyota in the last century.  Lean takes the view that the biggest risk in manufacturing is from _waste_, where waste is inventory, over-production, work-in-progress, time spent waiting or defects in production.  Applying this approach to software means minimising work-in-progress, frequent releases and continuous improvement.  
 
  - **[Project Management Body Of Knowledge (PMBoK)](https://en.wikipedia.org/wiki/Project_Management_Body_of_Knowledge)**:  This is a formalisation of traditional project management practice.  It prescribes best practices for managing scope, schedule, resources, communications, dependencies, stakeholders etc. on a project.  Although "risk" is seen as a separate entity to be managed, all of the above areas are sources of risk within a project, as we will see in Part 2.
 
- - **[Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development))**: Is a popular Agile methodology.  Arguably, it is less "extreme" than Extreme Programming, as it drops [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming) and the always-available customer requirements, and promotes a limited set of agile practices, such as frequent releases, daily meetings, a product owner and retrospectives.  This simplicity arguably makes it [simpler to learn and adapt to](Communication-Risk#learning-curve-risk) and probably contributes to Scrum's popularity over XP.  
+ - **[Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development))**: Is a popular Agile methodology.  Arguably, it is less "extreme" than Extreme Programming, as it promotes a limited set, more achievable set of agile practices, such as frequent releases, daily meetings, a product owner and retrospectives.  This simplicity arguably makes it [simpler to learn and adapt to](Communication-Risk#learning-curve-risk) and probably contributes to Scrum's popularity over XP.  
  
- - **[DevOps](https://en.wikipedia.org/wiki/DevOps)**: Many software systems struggle with the disconnect between "in development" and "in production".  DevOps is an acknowledgement of this, and is about more closely aligning the feedback loops between the developers and the production system.  It champions activities such as continuous deployment, automated releases and automated monitoring.
+ - **[DevOps](https://en.wikipedia.org/wiki/DevOps)**: Many software systems struggle at the boundary between "in development" and "in production".  DevOps is an acknowledgement of this, and is about more closely aligning the feedback loops between the developers and the production system.  It champions activities such as continuous deployment, automated releases and automated monitoring.
 
 ## Effectiveness
 
@@ -80,7 +78,7 @@ When we [take action](Glossary#take-action) according to a methodology, we expec
  - Equally, regulatory projects often require big, up-front, waterfall-style design:  keeping regulators happy is often about showing  that you have a well-planned path to achieving the regulation.  Often, the changes need to be reviewed and approved by regulators and other stakeholders in advance of their implementation.  This can't be done with an approach of "iterate for a few months".  
 
  - At the other end of the spectrum, [Facebook used to have](https://mashable.com/2014/04/30/facebooks-new-mantra-move-fast-with-stability/?europe=true) an approach of "move fast and break things".  This may have been optimal when they were trying mitigate the risk of being out-innovated by competitors within the fast-evolving sphere of social networking. 
-
+ 
 ![Inappropriate Methodologies create their own risks](images/generated/introduction/one_size.png)
 
 ## Choosing A Methodology

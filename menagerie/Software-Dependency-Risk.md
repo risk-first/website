@@ -47,13 +47,13 @@ function out() {                           (7 symbols)
 
 .. and re-encode to **14** symbols.  Now, clearly there are some problems with all this:
 
-1.  Clearly, _language matters_:  the Kolmogorov complexity is dependent on the language, and the features the language has built in. <!-- tweet-end --> 
-2.  The exact Kolmogorov complexity is uncomputable anyway (it's the _theoretical_ minimum program length).  It's just a fairly abstract idea, so we shouldn't get too hung up on this.  There is no function to be able to say, "what's the Kolmogorov complexity of string X"
-3.  What is this new library function we've created?   Is `abcdRepeater` going to be part of _every_ Javascript?  If so, then we've shifted [Codebase Risk](Complexity-Risk) away from ourselves, but we've pushed [Communication Risk](Communication-Risk) and [Dependency Risk](Dependency-Risk) onto every _other_ user of Javascript. (Why these?  Because `abcdRepeater` will be clogging up the documentation and other people will rely on it to function correctly.)
-4.  Are there equivalent functions for every single other string?  If so, then compilation is no longer a tractable problem: is `return abcdRepeater(10)` correct code?  Well, now we have a massive library of different `XXXRepeater` functions to compile against to see if it is...  So, what we _lose_ in [Kolmogorov Complexity](Complexity-Risk) we gain in [Runtime Complexity](Complexity-Risk#space-and-time-complexity).
-5.  Language design, then, is about _ergonomics_. <!-- tweet-end --> After you have passed the relatively low bar of providing [Turing Completeness](https://en.wikipedia.org/wiki/Turing_completeness), the key is to provide _useful_ features that enable problems to be solved, without over-burdening the user with features they _don't_ need.  And in fact, all software is about this.
+1.  **Language Matters:**  the Kolmogorov complexity is dependent on the language, and the features the language has built in. <!-- tweet-end --> 
+2.  **Exact Kolmogorov complexity is uncomputable anyway:**  Since it's the _theoretical_ minimum program length, it's a fairly abstract idea, so we shouldn't get too hung up on this.  There is no function to be able to say, "what's the Kolmogorov complexity of string X"
+3.  **What is this new library function we've created?**   Is `abcdRepeater` going to be part of _every_ Javascript?  If so, then we've shifted [Codebase Risk](Complexity-Risk) away from ourselves, but we've pushed [Communication Risk](Communication-Risk) and [Dependency Risk](Dependency-Risk) onto every _other_ user of Javascript. (Why these?  Because `abcdRepeater` will be clogging up the documentation and other people will rely on it to function correctly.)
+4.  **Are there equivalent functions for every single other string?**  If so, then compilation is no longer a tractable problem because now we have a massive library of different `XXXRepeater` functions to compile against to see if it is...  So, what we _lose_ in [Codebase Risk](Complexity-Risk#codebase-risk) we gain in [Dependency Risk](Dependency-Risk#space-and-time-complexity).
+5.  **Language design, then, is about _ergonomics_:** <!-- tweet-end --> After you have passed the relatively low bar of providing [Turing Completeness](https://en.wikipedia.org/wiki/Turing_completeness), the key is to provide _useful_ features that enable problems to be solved, without over-burdening the user with features they _don't_ need.  And in fact, all software is about this.
 
-![Software Dependency Ergonomics:  finding the sweet spot between too many features and too few](images/kite9/software-dependency-ergonomics.png)
+![Software Dependency Ergonomics:  finding the sweet spot between too many features and too few](images/generated/risks/software-dependency/ergonomics.png)
 
 ## Ergonomics Examined
 
@@ -63,36 +63,33 @@ But outside, the form is simple, and designed for humans to use.   This is _[erg
 
 > "Human factors and ergonomics (commonly referred to as Human Factors), is the application of psychological and physiological principles to the (engineering and) design of products, processes, and systems. The goal of human factors is to reduce human error, increase productivity, and enhance safety and comfort with a specific focus on the interaction between the human and the thing of interest."  - [Human Factors and Ergonomics, _Wikipedia_](https://en.wikipedia.org/wiki/Human_factors_and_ergonomics)
 
-### Interfaces
+### Protocols and Ergonomics
 
-The interface of a tool is the part we touch and interact with.  By striving for simplicity, the interface reduces [Communication Risk](Communication-Risk).  <!-- tweet-end -->
+The _interface_ of a tool is the part we touch and interact with, via it's protocol.  By striving for an ergonomic sweet spot, the protocol reduces [Communication Risk](Communication-Risk).  <!-- tweet-end -->
 
-The interface of a system expands when you ask it to do a wide variety of things. <!-- tweet-end -->  An easy-to-use drill does one thing well: it turns drill-bits at useful levels of torque for drilling holes and sinking screws.  But if you wanted it to also operate as a lathe, a sander or a strimmer (all basically mechanical things going round) you would have to sacrifice the ergonomic simplicity for a more complex interface, probably including adapters, extensions, handles and so on.
+The interface of a system expands when you ask it to do a wide variety of things. <!-- tweet-end -->  An easy-to-use drill does one thing well: it turns drill-bits at useful levels of torque for drilling holes and sinking screws.  But if you wanted it to also operate as a lathe, a sander or a strimmer (all basically mechanical things going round) you would have to sacrifice the conceptual integrity for a more complex protocol, probably including adapters, extensions, handles and so on.
 
 So, we now have split complexity into two:
- - The inner complexity of the tool (how it works internally, it's own [Kolmogorov Complexity](Complexity-Risk#Kolmogorov-Complexity)).
- - The complexity of the instructions that we need to write to make the tool work (the interface [Kolmogorov Complexity](Complexity-Risk#Kolmogorov-Complexity)). 
- 
-![Types of Complexity For a Software Dependency](images/kite9/software-dependency-complexity.png)
 
+ - The inner complexity of the tool (how it works internally, it's own [internal complexity](Complexity-Risk#Kolmogorov-Complexity)).
+ - The complexity of the instructions that we need to write to make the tool work, [the protocol complexity](Communication-Riks#protocol-risk), which will be a function of the complexity of the tool itself..
+ 
+![Types of Complexity For a Software Dependency](images/generated/risks/software-dependency/protocol-complexity.png)
 
 ### Software Tools
 
 In the same way as with a hand-tool, the bulk of the complexity of a software tool is hidden behind it's interface.<!-- tweet-end -->  But, the more complex the _purpose_ of the tool, the more complex the interface will be.
 
-Software is not constrained by _physical_ ergonomics in the same way as a tool is. <!-- tweet-end --> But ideally, it should have conceptual ergonomics:  ideally, complexity is hidden away from the user behind the [Application Programming Interface (API)](https://en.wikipedia.org/wiki/Application_programming_interface).  This is the familiar concept of [Abstraction](Glossary#abstraction) we've already looked at.   
-
-That is, <!-- tweet-start -->the tool should be as simple to use and understand as possible.<!-- tweet-end -->  This is the [Principal Of Least Astonishment](https://en.wikipedia.org/wiki/Principle_of_least_astonishment):
+Software is not constrained by _physical_ ergonomics in the same way as a tool is. <!-- tweet-end --> But ideally, it should have conceptual ergonomics:  ideally, complexity is hidden away from the user behind the _User Interface_.  This is the familiar concept of [Abstraction](Glossary#abstraction) we've already looked at.  As we saw in [Communication Risk](Communication-Risk#learning-curve-risk), when we use a new protocol, we face [Learning Curve Risk](Communication-Risk#learning-curve-risk).  To minimise this, we should apply the [Principal Of Least Astonishment](https://en.wikipedia.org/wiki/Principle_of_least_astonishment) when designing protocols: 
 
  - **The abstractions should map easily to how the user expects the tool to work.** For example, I _expect_ the trigger on a drill to start the drill turning.  
  - **The abstractions should leverage existing idioms and knowledge.** In a new car, I _expect_ to know what the symbols on the dashboard mean, because I've driven other cars.
  - **The abstractions provide me with only the functions I need.** Because everything else is confusing and gets in the way.  
 
-The way to win, then, is to allow a language to be extensible as-needed with features written by third parties.  By supplying mechanisms for extension a language can provide insurances against the [Boundary Risk](Boundary-Risk) of adopting it. 
-
 ## Types Of Software Dependencies
 
 There are lots of ways you can depend on software.  Here though, we're going to focus on just three main types:  
+
  1. **Code Your Own**: write some code ourselves to meet the dependency.
  2. **Software Libraries**:  importing code from the Internet, and using it in our project.  Often, libraries are Open Source (this is what we'll consider here).
  3. **Software as a Service**: calling a service on the Internet, (probably via `http`)  This is often known as [SaaS, or Software as a Service](https://en.wikipedia.org/wiki/Software_as_a_service).
@@ -101,11 +98,10 @@ All 3 approaches involve a different risk-profile.  Let's look at each in turn, 
  
 ### 1. Code Your Own
 
-Initially, writing our own code was the only game in town:  when I started programming, you had a user guide, BASIC and that was pretty much it.  Tool support was very thin-on-the-ground.  Programs and libraries could be distributed as code snippets _in magazines_ which could be transcribed and run, and added to your program.  This spirit lives on somewhat in StackOverflow and JSFiddle, where you are expected to "adopt" others' code into your own project.  
+Way before the Internet, this was the only game in town.  Tool support was very thin-on-the-ground.  Algorithms could be distributed as code snippets _in magazines_ which could be transcribed and run, and added to your program.  This spirit lives on somewhat in StackOverflow and JSFiddle, where you are expected to "adopt" others' code into your own project. Code-your-own is still the best option if you have highly bespoke requirements, or are dealing with unusual environmental contexts.
 
-One of the hidden risks of embarking on a code-your-own approach is that the features you need are _not_ apparent from the outset.  What might appear to be a trivial implementation of some piece of functionality can often turn into it's own industry as more and more hidden [Feature Risk](Feature-Risk) is uncovered.  
+One of the hidden risks of embarking on a code-your-own approach is that the features you need are _not_ apparent from the outset.  What might appear to be a trivial implementation of some piece of functionality can often turn into it's own industry as more and more hidden [Feature Risk](Feature-Risk) is uncovered.  For example, as we discussed in our earlier treatment of [Dead-End Risk](Complexity-Risk#dead-end-risk), building log-in screens _seemed like a good idea_.  However, this gets out-of-hand fast when you need:
 
-For example, as we discussed in our earlier treatment of [Dead-End Risk](Complexity-Risk#dead-end-risk), building log-in screens _seemed like a good idea_.  However, this gets out-of-hand fast when you need:
  - A password reset screen
  - To email the reset links to the user
  - An email verification screen
@@ -119,7 +115,7 @@ For example, as we discussed in our earlier treatment of [Dead-End Risk](Complex
 
 Sometimes, you will pick up a dependency on _unwritten software_.  This commonly happens when work is divided amongst team members, or teams.  <!-- tweet-end -->
 
-![Sometimes, a module you're writing will depend on unwritten code](images/kite9/software-dependency-unwritten-1.png)
+![Sometimes, a module you're writing will depend on unwritten code](images/generated/risks/software-dependency/unwritten.png)
 
 If a component **A** of our project _depends_ on **B** for some kind of processing, you might not be able to complete **A** before writing **B**.   This makes _scheduling_ the project harder, and if component **A** is a risky part of the project, then the chances are you'll want to mitigate risk there first.  
 

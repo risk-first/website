@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-157" name="SD Interface / Implementation">
+
+    <context style="kite9-sizing: maximize;">
+      <risk id="p" class="protocol" />
+
+      <risk id="c" class="complexity" />
+    </context>
+
+    <users id="id_1">User</users>
+
+
+
+    <group id="g">
+      <back style='kite9-usage: decal; kite9-type: svg; '>
+        <svg:rect x='0' y='0' width='#{$width}' height='#{$height}' style='fill: #EEEEEE; stroke: none ' />
+      </back>
+      <interface id="id_0">Interface</interface>
+      <component id="id_2">Part</component>
+      <component id="id_3">Part</component>
+      <component id="id_11">Part</component>
+      
+       <label id="id_16">
+      <text>Internal Complexity</text>
+      <symbols />
+    </label>
+    </group>
+
+    <link class="dotted">
+      <from reference="p" />
+      <to reference="id_1" />
+    </link>
+
+    <link class="dotted">
+      <from reference="c" />
+      <to reference="g" />
+    </link>
+    
+    <link>
+      <from reference="p" class="arrow" />
+      <to reference="c" />
+    </link>
+
+
+    <link id="id_16" shape="NORMAL" style="" drawDirection="RIGHT">
+      <from reference="id_1" />
+      <to reference="id_0" />
+    </link>
+    <link id="id_20" class="grey" drawDirection="RIGHT">
+      <from reference="id_0" />
+      <to reference="id_3" />
+    </link>
+    <link id="id_21" class="grey">
+      <from reference="id_0" />
+      <to reference="id_11" />
+    </link>
+    <link id="id_13" class="grey" drawDirection="LEFT">
+      <from reference="id_2" />
+      <to reference="id_11" />
+    </link>
+    <link id="id_8" class="grey">
+      <from reference="id_3" />
+      <to reference="id_2" />
+    </link>
+    <link id="id_12"  class="grey" drawDirection="LEFT">
+      <from reference="id_11" />
+      <to reference="id_3" />
+    </link>
+  </diagram>
+</svg:svg>
