@@ -3,12 +3,14 @@
   <svg:defs>
     <svg:style type="text/css"> @import url("risk.css");</svg:style>
   </svg:defs>
-  <diagram xmlns="http://www.kite9.org/schema/adl"  id="diagram-113" name="Goal In Mind" style="kite9-min-width: 800pt;">
+  <diagram xmlns="http://www.kite9.org/schema/adl"  id="diagram-113" name="Goal In Mind" style="kite9-min-width: 900pt;">
 
   <context id="c" bordered="true" style="kite9-layout: down; ">
 
-    <risk class="agency" />
-
+    <mitigated>
+      <risk class="agency" />
+    </mitigated>
+    
     <description>Risks due to the fact that things you depend on have agency, and they have their own goals to pursue.</description>
 
     <label  id="id_16">
@@ -18,11 +20,11 @@
   </context>
 
   <group style="kite9-layout: down; kite9-horizontal-align: left;">
-    <action>Monitoring</action>
-    <action>Goal-Alignment</action>
+    <action style="kite9-horizontal-align: left;">Monitoring</action>
+    <action style="kite9-horizontal-align: left;">Goal-Alignment</action>
   </group>
   
-  <context id="d">
+  <context id="d" style="kite9-sizing: maximize; ">
   
     <risk class="complexity" />
     <risk class="schedule" />
