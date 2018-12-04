@@ -52,7 +52,7 @@ One of the criticisms of the [Risk Register](Evaluating-Risk#risk-registers) app
 
 In the preceding discussions, I have been careful to point out the existence of [Hidden Risks](Glossary#hidden-risk) for that very reason. Or, to put another way:
 
-> "What we don't know is what usually gets us killed" - Petyr Baelish, _Game of Thrones_
+> "What we don't know is what usually gets us killed" - [Petyr Baelish, _Game of Thrones_](https://medium.com/@TanyaMardi/petyr-baelishs-best-quotes-on-game-of-thrones-1ea92968db5c)
 
 Donald Rumsfeld's famous [Known Knowns](https://en.wikipedia.org/wiki/There_are_known_knowns) is also a helpful conceptualisation:  
 

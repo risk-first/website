@@ -239,7 +239,7 @@ Let's look at some:
 
 _Choosing_ dependencies can be extremely difficult.  As we discussed above, the usefulness of any tool depends on its fit for purpose, it's _ergonomics within a given context_.  It's all too easy to pick a good tool for the wrong job:  
 
-> "I suppose it is tempting, if the only tool you have is a hammer, to treat everything as if it were a nail." - [Abraham Maslow, _Toward a Psychology of Being_](https://en.wiktionary.org/wiki/if_all_you_have_is_a_hammer,_everything_looks_like_a_nail) <!-- tweet-end -->
+> "I suppose it is tempting, if the only tool you have is a hammer, to treat everything as if it were a nail." - [Abraham Maslow, _Toward a Psychology of Being_](https://en.wiktionary.org/wiki/if_all_you_have_is_a_hammer,_everything_looks_like_a_nail)
 
 Having chosen a dependency, whether or not you end up in a more favourable position risk-wise is going to depend heavily on the quality of the execution and the skill of the implementor.  With software dependencies, we often have to live with the decisions we make for a long time. <!-- tweet-end --> In my experience, given the [Boundary Risks](Boundary-Risk) associated with getting this wrong, not enough time is spent really thinking about this in advance.  
 
@@ -247,8 +247,17 @@ Let's take a closer look at this problem in the next section, [Boundary Risk](Bo
 
 ## Sources
 
- - `sd1`: Defending your code against dependency problems.  https://www.software.ac.uk/resources/guides/defending-your-code-against-dependency-problems
- - `sd2`: How to choose an open source library.  https://stackoverflow.com/questions/2960371/how-to-choose-an-open-source-library
- - `sd3`: Open Source - To use or not to use.  https://www.forbes.com/sites/forbestechcouncil/2017/07/20/open-source-to-use-or-not-to-use-and-how-to-choose/2/#39e67e445a8c
- - `sd4`: SaaS Checklist - Nine Factors to Consider.  https://www.zdnet.com/article/saas-checklist-nine-factors-to-consider-when-selecting-a-vendor/
- - `sd5`: How to Evaluate SaaS Vendors.  http://sandhill.com/article/how-to-evaluate-saas-vendors-five-key-considerations/
+ - `sd1`: Defending your code against dependency problems.  
+ https://www.software.ac.uk/resources/guides/defending-your-code-against-dependency-problems
+
+ - `sd2`: How to choose an open source library.  
+ https://stackoverflow.com/questions/2960371/how-to-choose-an-open-source-library
+
+ - `sd3`: Open Source - To use or not to use.  
+ https://www.forbes.com/sites/forbestechcouncil/2017/07/20/open-source-to-use-or-not-to-use-and-how-to-choose/2/#39e67e445a8c
+
+ - `sd4`: SaaS Checklist - Nine Factors to Consider.  
+ https://www.zdnet.com/article/saas-checklist-nine-factors-to-consider-when-selecting-a-vendor/
+
+ - `sd5`: How to Evaluate SaaS Vendors.  
+ http://sandhill.com/article/how-to-evaluate-saas-vendors-five-key-considerations/
