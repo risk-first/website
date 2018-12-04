@@ -16,7 +16,6 @@ As we saw in the previous section on [Process Risk](Process-Risk), <!-- tweet-st
 
 > "Agency is the capacity of an actor to act in a given environment... Agency may either be classified as unconscious, involuntary behaviour, or purposeful, goal directed activity (intentional action). " - [Agency, _Wikipedia_](https://en.wikipedia.org/wiki/Agency_(philosophy)) 
 
-
 Let's look at some examples of borderline [Agency Risk](Agency-Risk) situations, in order to sketch out where the domain of this risk lies.
 
 ## Personal Lives
@@ -93,34 +92,25 @@ There is significant [Agency Risk](Agency-Risk) in running software _at all_.  S
  - A team gets obsessed with a particular technology, or their own internal process improvement, at the expense of delivering business value.
  - A marginalised team forces their services on other teams in the name of "consistency".   (This can happen a lot with "Architecture", "Branding" and "Testing" teams, sometimes for the better, sometimes for the worse.)
 
-### Security
+## Security Risk
 
-Intersecting both the internal and external environments are security concerns.   
+As shown in the above diagram, to mitigate [Agency Risk](Agency-Risk) _within_ a system, we can apply monitoring and goal-alignment.  Where the [Agency Risk](Agency-Risk) is from an unwanted actors _outside_ the system, we can apply security.  That is, ensuring that the environment we work in is _safe_ for the good actors to operate in, by keeping out the bad actors.
 
-Interestingly, security is handled in very similar ways at all sorts of levels:
+Interestingly, security is handled in very similar ways in all kinds of systems, whether biological, human or organisational.  
 
 - **Walls**: defences _around_ the complex system, to protect it's parts from the external environment.  
 - **Doors**: ways to get _in_ and _out_ of the complex system, possibly with _locks_.
 - **Guards**: to make sure only the right things go in and out.  (i.e. to try and keep out _Bad Actors_).
-- **Police**: to defend from _within_ the system, against [Agency Risk](Agency-Risk) and _invaders_.
-- **Subterfuge**: Hiding, camouflage, disguises, pretending to be something else. tbd   
+- **Police**: to defend from _within_ the system, against internal [Agency Risk](Agency-Risk).
+- **Subterfuge**: Hiding, camouflage, disguises, pretending to be something else. 
 
 These work various levels in our own bodies:  our _cells_ have _cell walls_ around them, and _cell membranes_ that act as the guards to allow things in and out.  Our _bodies_ have _skin_ to keep the world out, and we have _mouths_, _eyes_, _pores_ and so on to allow things in and out.  We have an _immune system_ to act as the police.
 
 Our societies work in similar ways: in medieval times, a city would have walls, guards and doors to keep out intruders.  Nowadays, we have customs control, borders and passports.
 
-We're waking up to the realisation that our software systems need to work the same way:  we have [Firewalls](https://en.wikipedia.org/wiki/Firewall_(computing)) to protect our organisations, we lock down _ports_ on servers to ensure there are the minimum number of doors to guard and we _police_ the servers ourselves with monitoring tools and anti-virus software.  
+We're waking up to the realisation that our software systems need to work the same way:  we have [Firewalls](https://en.wikipedia.org/wiki/Firewall_(computing)) to protect our organisations, we lock down _ports_ on servers to ensure there are the minimum number of doors to guard and we _police_ the servers ourselves with monitoring tools and anti-virus software and we _guard_ access using passwords and other identification approaches. 
 
-    - Security Risk
-      - Hacking
-      - Denial Of Service
-      - Security, Trust and Complexity 
-      - oWASp
-      
-tbd, How much do compilers do for you?   Now, they prevent many kinds of security error.  Libraries too.  
-
-Security risk thrives on complexity.  As does Agency Risk generally.
-
+Both [Security Risk](Agency-Risk#security-risk) and [Agency Risk](Agency-Risk) thrive on complexity.  The more complex the systems we create, the more opportunities there are for bad actors to insert themselves and extract their own value.   [Security Risk](Agency-Risk#security-risk) is also a major determinant of [Operational Risk](Operational-Risk), which we will review in a couple of sections time.
 
 ## It's About Goals 
 
