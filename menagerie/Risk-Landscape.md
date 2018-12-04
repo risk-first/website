@@ -24,7 +24,7 @@ As software developers, we can't hope to know the detailed specifics of the whol
 
 Once we can spot and name different types of risk, we can then think about their characteristics, and how to manage or avoid them.  In each of the following sections, we'll be looking at a different category of risk, some of it's characteristics and sometimes suggesting actions to take to deal with it.
 
-But foremost, this is a "spotters' guide" to software risks, and where to find them.  <!-- tweet-end -->
+But foremost, this is a "spotters' guide" to software risks and where to find them.  <!-- tweet-end -->
 
 ## Our Tour Itinerary
 
