@@ -247,7 +247,7 @@ Let's take a closer look at this problem in the next section, [Boundary Risk](Bo
 
 ## Sources
 
- - `sd1`: Defending your code against dependency problems.  
+ - `sd1`: Defending your code against dependency problems.  <br />
  https://www.software.ac.uk/resources/guides/defending-your-code-against-dependency-problems
 
  - `sd2`: How to choose an open source library.  
