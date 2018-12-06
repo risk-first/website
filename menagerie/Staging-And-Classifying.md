@@ -71,9 +71,9 @@ Our problems compound when we try to [Coordinate](Coordination-Risk) with the de
  - Communication Risk also means [Complexity Risk](Complexity-Risk), because now we have built a communication [graph](Complexity-Risk#connectivity) (and we saw how to calculate how complex that is). 
  - [Boundary Risk](Boundary-Risk), this is at a confluence of [Dependency Risk](Dependency-Risk), [Communication Risk](Communication-Risk) and [Complexity Risk](Complexity-Risk).
  
-The way this plays out is depicted in <!--replace diagram ref{origin-of-risk.png} --> the diagram below<!--endreplace -->.
- 
 ![Causes Of Risk](images/generated/staging-and-classifying/origin-of-risk.png)
+
+The way this plays out is depicted in the diagram above. 
 
 ## Towards A "Periodic Table" Of Risks
 

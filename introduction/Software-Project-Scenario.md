@@ -73,7 +73,7 @@ So, _evaluating risks against one another other_ allows us to determine what act
 
 Which actions give us the biggest benefit in terms of mitigating [Attendant Risk](Glossary#attendant-risk)?
 
-For example, it's worth considering that if we're just starting this project, risks 1-4 in our diagram above are _negligible_.   It makes complete sense from a risk-evaluation perspective that we're only going to spend time building functionality or improving our understanding of the market. 
+For example, it's worth considering that if we're just starting this project, risks 1-4 in the diagram above are _negligible_.   It makes complete sense from a risk-evaluation perspective that we're only going to spend time building functionality or improving our understanding of the market. 
 
 ## Tacit and Explicit Modelling
 
