@@ -80,7 +80,7 @@ Where the **saturation** and **knowledge** grow more evenly together, there is n
 
 ## Evolution
 
-![Spread of information between Internal Models](images/generated/communication_marketing.png)
+![Spread of information between Internal Models](images/generated/risks/communication/communication_marketing.png)
 
 The section on [Communication Risk](Communication-Risk) introduced the above diagram for the spread of ideas.  But what happens next?   As we saw in [Boundary Risk](Boundary-Risk), the **Peter Principle** applies, people will use dependencies up to the point when they start breaking down.  
 
@@ -109,6 +109,9 @@ But _correlation_ doesn't imply _causation_.  The _cause_ might be different:
  - Quality and number of releases might both be down to the simplicity of the product.
  - User satisfaction and SLOC might both be down to the calibre of the developers.
  - Response time and revenue might both be down to clever team planning.
+ 
+![Evolution Feature Risks, as manifested in the Internal Model](images/generated/risks/map-and-territory/map_and_territory_table_3.png)
+ 
 
 Metrics are seductive because they simplify reality and are easily communicated.  But they _inherently_ contain [Map and Territory Risk](Map-and-territory-risk): By relying _only_ on the metrics, you're not really _seeing_ the reality.  
 
