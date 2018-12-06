@@ -41,7 +41,9 @@ artifact,
 users,
 computer, 
 interface,
-component {
+component,
+channel,
+internal-model {
 	kite9-type: container;
 	kite9-margin: 10pt;
 	kite9-link-inset: 10pt;
@@ -60,6 +62,14 @@ users {
 
 interface {
 	kite9-template: url(template.svg#interface);
+}
+
+internal-model {
+	kite9-template: url(template.svg#internal-model);
+}
+
+channel {
+	kite9-template: url(template.svg#channel);
 }
 
 component {

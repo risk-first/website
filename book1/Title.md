@@ -7,9 +7,9 @@
 
 \centering
 
-{\Huge\bfseries\textsc{Risk-First}}\\[2\baselineskip]
+{\Huge\bfseries\textsc{Risk-First}}\\[1\baselineskip]
 
-{\Huge\bfseries\textsc{Software Development}}\\[1\baselineskip]
+{\Huge\bfseries\textsc{Software Development}}\\[2\baselineskip]
 
 {\Huge\textit{Volume 1: The Menagerie}}\\[4\baselineskip]
 

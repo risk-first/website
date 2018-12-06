@@ -137,9 +137,9 @@
 
 \centering
 
-{\Huge\bfseries\textsc{Risk-First}}\\[2\baselineskip]
+{\Huge\bfseries\textsc{Risk-First}}\\[1\baselineskip]
 
-{\Huge\bfseries\textsc{Software Development}}\\[1\baselineskip]
+{\Huge\bfseries\textsc{Software Development}}\\[2\baselineskip]
 
 {\Huge\textit{Volume 1: The Menagerie}}\\[4\baselineskip]
 
@@ -1093,7 +1093,7 @@ anticipated state \emph{after} taking the action.
 
 The round-cornered rectangles represent our Internal Model, and these
 contain our view of Risk, whether the risks we face right now, or the
-Attendant Risks expected after taking the action. In figure
+Attendant Risks expected after taking the action. In Figure
 \ref{development_process_code.png}, taking the action of ``coding and
 unit testing'' is expected to mitigate the risks of ``Developer
 Misimplementation'' and ``Duplicating Functionality''.
@@ -1879,11 +1879,9 @@ existence of Hidden Risks for that very reason. Or, to put another way:
 
 \begin{quotation}
 
-\begin{quote}
-``What we don't know is what usually gets us killed'' - Petyr Baelish,
-\emph{Game of Thrones}
-\end{quote}
+``What we don't know is what usually gets us killed''
 
+\sourceatright{\href{https://medium.com/@TanyaMardi/petyr-baelishs-best-quotes-on-game-of-thrones-1ea92968db5c}{\textemdash  Petyr Baelish, \emph{Game of Thrones}}}
 \end{quotation}
 
 Donald Rumsfeld's famous Known Knowns is also a helpful
@@ -3084,103 +3082,20 @@ projects. This is where we go next in Part 2.
 \hypertarget{risk-landscape}{%
 \chapter{Risk Landscape}\label{risk-landscape}}
 
-\hypertarget{why-should-we-categorise-the-risks}{%
-\section{Why Should We Categorise The
-Risks?}\label{why-should-we-categorise-the-risks}}
+In the previous chapter, we saw how \emph{Lean Software Development}
+owed its existence to production-line manufacturing techniques developed
+at Toyota. And, we saw that the \emph{Waterfall} approach originally
+came from engineering. If Risk-First is anything, it's about applying
+the techniques of \emph{Risk Management} to the discipline of
+\emph{Software Development} (there's nothing new under the sun, after
+all).
 
-This is a ``spotters' guide'' to risks, not an in-depth encyclopedia.
-
-If we were studying insects, this might be a guide giving you a
-description and a picture of each insect, telling you where to find it
-and what it does. That doesn't mean that this is \emph{all} there is to
-know. Just as a scientist could spend her entire life studying a
-particular species of bee, each of the risks we'll look at really has a
-whole sub-discipline of Computer Science attached to it, which we can't
-possibly hope to cover all of.
-
-As software developers, we can't hope to know the detailed specifics of
-the whole discipline of
-\href{https://en.wikipedia.org/wiki/Complexity_theory}{Complexity
-Theory}, or
-\href{https://en.wikipedia.org/wiki/Concurrency_(computer_science)}{Concurrency
-Theory}. But, we're still required to operate in a world where these
-things exist. So, we may as well get used to them, and ensure that we
-respect their primacy. We are operating in \emph{their} world, so we
-need to know the rules.
-
-Risk is messy. It's not always easy to tease apart the different
-components of risk and look at them individually. Let's look at a
-high-profile recent example to see why.
-
-\hypertarget{the-financial-crisis}{%
-\section{The Financial Crisis}\label{the-financial-crisis}}
-
-In the \href{https://en.wikipedia.org/wiki/Financial_services}{Financial
-Services} industry, whole \emph{departments} exist to calculate things
-like:
-
-\begin{itemize}
-\tightlist
-\item
-  \href{https://en.wikipedia.org/wiki/Market_risk}{Market Risk}: the
-  risk that the amount some asset you hold/borrow/have loaned is going
-  to change in value.
-\item
-  \href{https://en.wikipedia.org/wiki/Credit_risk}{Credit Risk}: the
-  risk that someone who owes you a payment at a specific point in time
-  might not pay it back.
-\item
-  \href{https://en.wikipedia.org/wiki/Liquidity_risk}{Liquidity Risk}:
-  the risk that you can't find a market to sell/buy something, usually
-  leading to a shortage of ready cash.
-\end{itemize}
-
-\ldots{} and so on. But, we don't need to know the details exactly to
-understand this story.
-
-They get expressed in ways like this:
-
-\begin{quotation}
-
-\begin{quote}
-``we have a 95\% chance that today we'll lose less than \pounds100''
-\end{quote}
-
-\end{quotation}
-
-In the financial crisis, though, these models of risk didn't turn out to
-be much use. Although there are lots of conflicting explanations of what
-happened, one way to look at it is this:
-
-\begin{itemize}
-\tightlist
-\item
-  Liquidity difficulties (i.e.~amount of cash you have for day-to-day
-  running of the bank) caused some banks to not be able to cover their
-  interest payments.
-\item
-  This caused credit defaults (the thing that Credit Risk measures were
-  meant to guard against) even though the banks \emph{technically} were
-  solvent.
-\item
-  That meant that, in time, banks got bailed out, share prices crashed
-  and there was lots of
-  \href{https://en.wikipedia.org/wiki/Quantitative_easing}{Quantitative
-  Easing}.
-\item
-  All of which had massive impacts on the markets in ways that none of
-  the Market Risk models foresaw.
-\end{itemize}
-
-All the Risks were
-\href{https://www.investopedia.com/terms/c/correlation.asp}{correlated}.
-That is, they were affected by the \emph{same underlying events}, or
-\emph{each other}.
+One key activity of Risk Management we haven't discussed yet is
+\emph{categorizing} risks. Thus, Part 2 of Risk-First is all about
+developing categories of risks for use in Software Development.
 
 \hypertarget{the-risk-landscape-again}{%
 \section{The Risk Landscape Again}\label{the-risk-landscape-again}}
-
-It's like this with software risks, too, sadly.
 
 In Meeting Reality, we looked at the concept of the Risk Landscape, and
 how a software project tries to \emph{navigate} across this landscape,
@@ -3194,46 +3109,50 @@ above the landscape, and you try and optimise by moving downhill in a
 \href{https://en.wikipedia.org/wiki/Gradient_descent}{Gradient Descent}
 fashion.
 
-However, there's a problem with this: As we said in Risk Theory, we
+However, there's a problem with this: As we said in Evaluating Risk, we
 don't have a cost function. We can only guess at what risks there are.
 And, we have to go on our \emph{experience}. For this reason, I prefer
 to think of the Risk Landscape as a terrain which contains \emph{fauna}
-and \emph{obstacles} (or, specifically Boundaries).
+and \emph{obstacles} (or, specifically \emph{Boundaries}).
 
-I am going to try and show you some of the fauna of the Risk Landscape.
-We know every project is different, so every Risk Landscape is also
-different. But, just as I can tell you that the landscape outside your
-window will probably will have some roads, trees, fields, forests,
-buildings, and that the buildings are likely to be joined together by
-roads, I can tell you some general things about risks too.
+Just as I can tell you that the landscape outside your window will
+probably will have some trees, fields and buildings, and that the
+buildings are likely to be joined together by roads, we can make
+generalisations about risks too.
 
-In fact, we're going to try and categorise the kinds of things we see on
-this Risk Landscape. But, this isn't going to be perfect:
+\hypertarget{why-should-we-categorise-the-risks}{%
+\section{Why Should We Categorise The
+Risks?}\label{why-should-we-categorise-the-risks}}
 
-\begin{itemize}
-\tightlist
-\item
-  One risk can ``blend'' into another just like sometimes a ``field'' is
-  also a ``car-park'' or a building might contain some trees (but isn't
-  a forest).
-\item
-  There is \emph{correlation} between different risks: one risk may
-  cause another, or two risks may be due to the same underlying cause.
-\item
-  As we saw in Part 1, mitigating one risk can give rise to another, so
-  risks are often \emph{inversely correlated}.
-\end{itemize}
+A lot of knowledge and understanding of the world starts by naming and
+categorising things.
 
-\hypertarget{were-all-naturalists-now}{%
-\section{We're all Naturalists Now}\label{were-all-naturalists-now}}
+If we were studying insects, this might be a guide giving you a
+description and a picture of each insect, telling you where to find it
+and what it does. That doesn't mean that this is \emph{all} there is to
+know. Just as a scientist could spend her entire life studying a
+particular species of bee, each of the risks we'll look at really has a
+whole sub-discipline of Computer Science attached to it, which we can't
+possibly hope to cover in any great depth.
 
-This is a new adventure. There's a long way to go. Just as naturalists
-are able to head out and find new species of insects and plants, we
-should expect to do the same. This is by no means a complete picture -
-it's barely a sketch.
+As software developers, we can't hope to know the detailed specifics of
+the whole discipline of
+\href{https://en.wikipedia.org/wiki/Complexity_theory}{Complexity
+Theory}, or
+\href{https://en.wikipedia.org/wiki/Concurrency_(computer_science)}{Concurrency
+Theory}. But, we're still required to operate in a world where these
+things exist. So, we may as well get used to them, and ensure that we
+respect their primacy. We are operating in \emph{their} world, so we
+need to know the rules.
 
-It's a big, crazy, evolving world of software. Help to fill in the
-details. Report back what you find.
+Once we can spot and name different types of risk, we can then think
+about their characteristics, and how to manage or avoid them. In each of
+the following chapters, we'll be looking at a different category of
+risk, some of it's characteristics and sometimes suggesting actions to
+take to deal with it.
+
+But foremost, this is a ``spotters' guide'' to software risks and where
+to find them.
 
 \hypertarget{our-tour-itinerary}{%
 \section{Our Tour Itinerary}\label{our-tour-itinerary}}
@@ -3279,14 +3198,18 @@ like\ldots{}\strut
 \begin{minipage}[t]{0.36\columnwidth}\raggedright
 Scarcity Risk\strut
 \end{minipage} & \begin{minipage}[t]{0.58\columnwidth}\raggedright
-Risks associated with having a dependency on time, money or some other
-limited resource.\strut
+Risks associated with having limited time, money or some other
+resource.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.36\columnwidth}\raggedright
+Deadline Risk\strut
+\end{minipage} & \begin{minipage}[t]{0.58\columnwidth}\raggedright
+The risk of having a date to hit.\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.36\columnwidth}\raggedright
 Software Dependency Risk\strut
 \end{minipage} & \begin{minipage}[t]{0.58\columnwidth}\raggedright
-When you choose to depend on a software library, service or
-function.\strut
+The risk of depending on a software library, service or function.\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.36\columnwidth}\raggedright
 Process Risk\strut
@@ -3335,6 +3258,100 @@ On each page we'll start by looking at the category of the risk \emph{in
 general}, and then break this down into some specific sub-types. At the
 end, in Staging and Classifying we'll have a recap about what we've seen
 and make some guesses about how things fit together.
+
+\hypertarget{correlation-causation}{%
+\section{Correlation \& Causation}\label{correlation-causation}}
+
+Although we're going to try and categorise the kinds of things we see on
+this Risk Landscape, this isn't going to be perfect:
+
+\begin{itemize}
+\tightlist
+\item
+  One risk can ``blend'' into another just like sometimes a ``field'' is
+  also a ``car-park'' or a building might contain some trees (but isn't
+  a forest).
+\item
+  As we know from Part 1, mitigating one risk probably means accepting
+  another.
+\item
+  There is \emph{correlation} between different risks: one risk may
+  cause another, or two risks may be due to the same underlying cause.
+\end{itemize}
+
+Risk is messy. It's not always easy to tease apart the different
+components of risk and look at them individually. Let's look at a
+high-profile recent example to see why.
+
+\hypertarget{the-financial-crisis}{%
+\subsection{The Financial Crisis}\label{the-financial-crisis}}
+
+In the \href{https://en.wikipedia.org/wiki/Financial_services}{Financial
+Services} industry, whole \emph{departments} exist to calculate things
+like:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{\href{https://en.wikipedia.org/wiki/Market_risk}{Market
+  Risk}:} the risk that the amount some asset is going to change in
+  value.
+\item
+  \textbf{\href{https://en.wikipedia.org/wiki/Credit_risk}{Credit
+  Risk}:} the risk that someone who owes you a payment at a specific
+  point in time might not pay it back.
+\item
+  \textbf{\href{https://en.wikipedia.org/wiki/Liquidity_risk}{Liquidity
+  Risk}:} the risk that you can't find a market to sell/buy something,
+  usually leading to a shortage of ready cash.
+\end{itemize}
+
+In the financial crisis of 2007, these models of risk didn't turn out to
+be much use. Although there are lots of conflicting explanations of what
+happened, one way to look at it is this:
+
+\begin{itemize}
+\tightlist
+\item
+  Liquidity difficulties (i.e.~amount of cash you have for day-to-day
+  running of the bank) caused some banks to not be able to cover their
+  short term payment obligations.
+\item
+  This caused credit defaults (the thing that Credit Risk measures were
+  meant to guard against) even though the banks \emph{technically} were
+  solvent.
+\item
+  Once credit defaults started, this worried investors in the banks,
+  which had massive Market Risk impacts that none of the models foresaw.
+\end{itemize}
+
+All the Risks were
+\href{https://www.investopedia.com/terms/c/correlation.asp}{correlated}.
+That is, they were affected by the \emph{same underlying events}, or
+\emph{each other}.
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/landscape/causation-400dpi.png}
+\caption{Causation shown on a Risk-First Diagram: More complexity is
+likely to lead to more Operational Risk\label{causation.png}}
+\end{figure}
+
+It's like this with software risks, too, sadly. For example, Operational
+Risk is going to be heavily correlated with Complexity Risk: the more
+complex your operation, the more risky it will be. In the Risk-First
+diagrams, we will sometimes show correlation or causation with an arrow,
+like in Figure \ref{causation.png}.
+
+\hypertarget{were-all-naturalists-now}{%
+\section{We're all Naturalists Now}\label{were-all-naturalists-now}}
+
+Just as naturalists are able to head out and find new species of insects
+and plants, we should expect to do the same. Risk-First is by no means a
+complete picture - it's barely a sketch.
+
+It's a big, crazy, evolving world of software. Help to fill in the
+details. Report back what you find.
 
 So, let's get started with Feature Risk.
 
@@ -3660,7 +3677,7 @@ the \emph{Service Quality Model}\label{all-feature-risk.png}}
 
 For further reading, you can check out
 \href{http://en.wikipedia.org/SERVQUAL}{The Service Quality Model},
-which figure \ref{all-feature-risk.png} is derived from. This model
+which Figure \ref{all-feature-risk.png} is derived from. This model
 analyses the types of \emph{quality gaps} in services, and how consumer
 expectations and perceptions of a service arise.
 
@@ -3777,7 +3794,7 @@ point.''
 \sourceatright{\href{https://en.wikipedia.org/wiki/A_Mathematical_Theory_of_Communication}{\textemdash  A Mathematical Theory Of Communication, \emph{Claude Shannon}}  <!-- tweet-end -->}
 \end{quotation}
 
-And from this same paper, we get figure \ref{communication_1.png}: We
+And from this same paper, we get Figure \ref{communication_1.png}: We
 move from top-left (``I want to send a message to someone'') to bottom
 left, clockwise, where we hope the message has been understood and
 believed. (I've added this last box to Shannon's original diagram.)
@@ -4002,7 +4019,7 @@ which would really useful in my software:
 \end{figure}
 
 Internal Models don't magically get populated with the information they
-need: they fill up gradually, as shown in figure
+need: they fill up gradually, as shown in Figure
 \ref{communication_marketing.png}. Popular products and ideas
 \emph{spread}, by word-of-mouth or other means. Part of the job of being
 a good technologist is to keep track of new \textbf{Ideas},
@@ -4052,7 +4069,7 @@ the point of view of who-depends-on-who. That is, Clients and Suppliers.
 In order that a web browser (a \textbf{client}) can load a web-page from
 a \textbf{server}, they both need to communicate with shared protocols.
 In this example, this is going to involve (at least) six separate
-protocols, as shown in figure \ref{communication_protocols.png}.
+protocols, as shown in Figure \ref{communication_protocols.png}.
 
 Let's examine each protocol in turn when I try to load the web page at
 the following address using a web browser:
@@ -4720,7 +4737,7 @@ Risks\label{communication_internal_model_risks.png}}
 \end{figure}
 
 In this chapter, we've looked at Communication Risk itself, and broken
-it down into six sub-types of risk, as shown in figure
+it down into six sub-types of risk, as shown in Figure
 \ref{communication_3.png}. Again, we are calling out \emph{patterns}
 here: you can equally classify communication risks in other ways.
 However, concepts like Learning-Curve Risk and Invisibility Risk we will
@@ -4899,7 +4916,7 @@ To see this in action, have a look at the below graph:
 
 It has 10 vertices, labelled \textbf{a} to \textbf{j}, and it has 15
 edges (or links) connecting the vertices together. If any single edge
-were removed from figure \ref{connectivity_1.png}, the 10 vertices would
+were removed from Figure \ref{connectivity_1.png}, the 10 vertices would
 still be linked together. Because of this, we can say that the graph is
 \emph{2-connected}. That is, to disconnect any single vertex, you'd have
 to remove \emph{at least} two edges.
@@ -5897,7 +5914,7 @@ to get the product to ``take-off'' (become profitable) before the runway
 ends.
 
 Startups often spend a lot of time courting investors in order to get
-funding and mitigate this type of Schedule Risk. But, as shown in figure
+funding and mitigate this type of Schedule Risk. But, as shown in Figure
 \ref{funding-risk.png}, this activity usually comes at the expense of
 Opportunity Risk and Feature Risk, as usually the same people are trying
 to raise funds as build the project itself.
@@ -7020,7 +7037,7 @@ good tool for the wrong job:
 ``I suppose it is tempting, if the only tool you have is a hammer, to
 treat everything as if it were a nail.''
 
-\sourceatright{\href{https://en.wiktionary.org/wiki/if_all_you_have_is_a_hammer,_everything_looks_like_a_nail}{\textemdash  Abraham Maslow, \emph{Toward a Psychology of Being}} <!-- tweet-end -->}
+\sourceatright{\href{https://en.wiktionary.org/wiki/if_all_you_have_is_a_hammer,_everything_looks_like_a_nail}{\textemdash  Abraham Maslow, \emph{Toward a Psychology of Being}}}
 \end{quotation}
 
 Having chosen a dependency, whether or not you end up in a more
@@ -7038,7 +7055,6 @@ Risk.
 \section{Sources}\label{sources}}
 
 \begin{itemize}
-\tightlist
 \item
   \texttt{sd1}: Defending your code against dependency problems.
   https://www.software.ac.uk/resources/guides/defending-your-code-against-dependency-problems
@@ -7372,38 +7388,552 @@ multiple agents.
 
 On to Coordination Risk\ldots{}
 
-\part{Application}
+\hypertarget{map-and-territory-risk}{%
+\chapter{Map And Territory Risk}\label{map-and-territory-risk}}
 
-\hypertarget{coming-next}{%
-\chapter{Coming Next}\label{coming-next}}
+As we discussed in the Communication Risk chapter, our understanding of
+the world is informed by the names we give things and the abstractions
+we create.
+
+In the same way, Risk-First is about naming risks within software
+development and calling them out.
+
+Our Internal Models of the world based on these abstractions, and their
+relationships.
+
+So there is a translation going on here: observations about the
+arrangement of \emph{atoms} in the world get turned into patterns of
+\emph{information} (measured in bits and bytes).
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/map-and-territory/communication-400dpi.png}
+\caption{Maps and Territories, and Communication happening between
+them\label{communication.png}}
+\end{figure}
+
+Like Trust \& Belief Risk and Learning-Curve Risk, Map And Territory
+Risk is an Internal Model Risk, and is the risk we face because we base
+our behaviour on our Internal Models rather than reality itself. It
+comes from the expression ``Confusing the Map for the Territory'',
+attributed to Alfred Korzybski:
+
+\begin{quotation}
+
+``Polish-American scientist and philosopher Alfred Korzybski remarked
+that''the map is not the territory" and that ``the word is not the
+thing'', encapsulating his view that an abstraction derived from
+something, or a reaction to it, is not the thing itself. Korzybski held
+that many people \emph{do} confuse maps with territories, that is,
+confuse models of reality with reality itself."
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Map–territory_relation}{\textemdash  Map-Territory Relation, \emph{Wikipedia}}}
+\end{quotation}
+
+In this chapter, we're going to make a case for analysing Map and
+Territory Risk along the same axes we introduced for Feature Risk, that
+is \textbf{Fitness}, \textbf{Audience} and \textbf{Evolution}. After
+that, we are going to widen the scope by looking at Map and Territory
+Risk within the context of \textbf{machines}, \textbf{people},
+\textbf{hierarchies} and \textbf{markets}.
+
+\hypertarget{fitness}{%
+\section{Fitness}\label{fitness}}
+
+\begin{figure}
+\centering
+\includegraphics{images/sat_nav.png}
+\caption{Sat Nav Blunder Sends Asda Van Crashing Narrow Footpath -
+Telegraph Newspaper\label{sat_nav.png}}
+\end{figure}
+
+In the headline above, taken from
+\href{https://www.telegraph.co.uk/news/newstopics/howaboutthat/6413887/Asda-van-crashes-after-sat-nav-sends-driver-to-narrow-footpath.html}{the
+Telegraph newspaper}, the driver \emph{trusted} the SatNav to such an
+extent that he didn't pay attention to the road-signs around him, and
+ended up getting stuck.
+
+This wasn't borne of stupidity, but experience: SatNavs are pretty
+reliable. \emph{So many times} the SatNav had been right, that the
+driver stopped \emph{questioning its fallibility}.
+
+So, there are two Map and Territory Risks here:
 
 \begin{itemize}
 \tightlist
 \item
-  preview of what's to come in part 3.
+  The Internal Model of the \emph{SatNav} contained information that was
+  wrong: the track had been marked up as a road, rather than a path.
+\item
+  The Internal Model of the \emph{driver} was wrong: his abstraction of
+  ``the SatNav is always right'' turned out to be only \emph{mostly}
+  accurate.
 \end{itemize}
 
-part 3 is in the next book.
+We've already looked in detail at the Dependency Risks involved in
+relying on something like a SatNav, in the Software Dependency Risk
+chapter. But here, we are really looking at the \emph{Internal Models
+themselves} as a source of Dependency Risk too.
 
-The point of part 2 is to give a taxonomy for talking about risk.
+You could argue that the SatNav and the Driver's Internal Model had bugs
+in them. That is, they both suffer the Feature Implementation Risk we
+saw in the Feature Risk chapter. If a SatNav has too much of this, you'd
+end up not trusting it, and getting a new one. With your \emph{personal}
+Internal Model, you can't buy a new one, but you may learn to
+\emph{trust your assumptions less}.
 
-Bad to leave on the failure notes, let's talk about some successes.
+In the Feature Risk chapter, we broke down Feature Risk on three axes:
+\textbf{Fitness}, \textbf{Evolution} and \textbf{Audience}.
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{2}
-\tightlist
-\item
-  What's To Come
-\end{enumerate}
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/map-and-territory/map_and_territory_table_1-400dpi.png}
+\caption{Feature Risk, as manifested in the Internal
+Model\label{map_and_territory_table_1.png}}
+\end{figure}
+
+Figure \ref{map_and_territory_table_1.png} does this again, showing how
+type of Feature Fit Risk can manifest in the Internal Model.
+
+\hypertarget{audience}{%
+\section{Audience}\label{audience}}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/map-and-territory/map_and_territory_table_2-400dpi.png}
+\caption{Audience Feature Risks, as manifested in the Internal
+Model\label{map_and_territory_table_2.png}}
+\end{figure}
+
+We already know a lot about Internal Models and Audience, as these have
+been the subject of previous chapters:
 
 \begin{itemize}
 \tightlist
 \item
-  risk based debugging.
+  We know from looking at Communication Risk that communication allows
+  us to \emph{share} information between Internal Models.
 \item
-  risk based coding.
+  We know from Coordination Risk the difficulties inherent in aligning
+  Internal Models so that they cooperate.
+\item
+  Job markets show us that there is demand for people with certain
+  \emph{skills}. This demonstrates to us that Market Risk is as
+  applicable to Internal Models containing certain information as it is
+  to products containing Features. This was the focus of the Ecosystem
+  discussion in Boundary Risk.
 \end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{images/google-trends.png}
+\caption{Relative popularity of ``Machine Learning'' and ``Big Data'' as
+search terms on \href{https://trends.google.com}{Google Trends},
+2011-2018}
+\end{figure}
+
+Therefore, we should be able to track the rise-and-fall of \emph{ideas}
+much as we can track stock prices. And in effect, this is what Google
+Trends does. In Figure \ref{map_and_territory_table_2.png}, we can see
+the relative popularity of two search terms over time. This is probably
+as good an indicator as any of the audience for an abstraction at any
+point in time.
+
+\hypertarget{example-hype-cycles}{%
+\subsection{Example: Hype Cycles}\label{example-hype-cycles}}
+
+Most ideas (and most products) have a slow, hard climb to wide-scale
+adoption. But some ideas seem to disperse much more rapidly and are
+picked up quickly because they are exciting and promising, having
+greater ``memetic potential'' within society. One way this evolution
+manifests itself in the world is though the
+\href{https://en.wikipedia.org/wiki/Hype_cycle}{Hype Cycle}:
+
+\begin{quotation}
+
+``The hype cycle is a branded graphical presentation developed and used
+by the American research, advisory and information technology firm
+Gartner, for representing the maturity, adoption and social application
+of specific technologies. The hype cycle provides a graphical and
+conceptual presentation of the maturity of emerging technologies through
+five phases.''
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Hype_cycle}{\textemdash  Hype Cycle, \emph{Wikipedia}}}
+\end{quotation}
+
+\begin{figure}
+\centering
+\includegraphics{images/numbers/hype1.png}
+\caption{Hype Cycle, along with Map \& Territory Risk\label{hype1.png}}
+\end{figure}
+
+The five phases (and the ``Hype'' itself as the thick black line) are
+shown in Figure \ref{hype1.png}. We start off at the ``Technology
+Trigger'', moving to the ``Peak of Inflated Expectations'', then to the
+``Trough of Disillusionment'' and finally to the ``Plateau of
+Productivity''.
+
+The concept of Map and Territory Risk actually helps explain why this
+curve has the shape it does. Figure \ref{hype1.png} also shows where the
+hype originates:
+
+\begin{itemize}
+\tightlist
+\item
+  The \textbf{awareness} of the idea within the audience as a dotted
+  line.
+\item
+  The \textbf{knowledge} of the idea by the audience (a Learning Curve,
+  if you will) as a dashed line.
+\end{itemize}
+
+Both of these are modelled with
+\href{https://en.wikipedia.org/wiki/Cumulative_distribution_function\#Use_in_statistical_analysis}{Cumulative
+Distribution} curves, which are often used for modelling the spread of a
+phenomena (disease, product uptake, idea) within a population. From
+these two things, we can figure out where our maximum Map and Territory
+Risk lies: it's the point where awareness of an idea is farthest from
+the understanding of it.
+
+This Map and Territory Risk acts as a ``brake'' on the \textbf{hype}
+around the idea. In the diagram, our ``hype'' curve is calculated as
+being the same as the ``saturation'' line, with a subtraction due to Map
+and Territory Risk. As you can see, ``hype'' drops fastest at the point
+where Map and Territory Risk is at it's greatest, and we end up in the
+``Trough of Disillusionment''.
+
+\begin{figure}
+\centering
+\includegraphics{images/numbers/hype2.png}
+\caption{Hype Cycle 2: More even growth of means no ``Trough of
+Disillusionment''\label{hype2.png}}
+\end{figure}
+
+As you might expect, the ``Trough of Disillusionment'' exists because
+the ``saturation'' of the idea and the ``amount known'' about it
+increase at different rates.
+
+Where the \textbf{saturation} and \textbf{knowledge} grow more evenly
+together, there is no spike in Map and Territory Risk and we don't see
+the corresponding ``Trough of Disillusionment'' at all, as shown in the
+above chart.
+
+\hypertarget{evolution}{%
+\section{Evolution}\label{evolution}}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/communication/communication_marketing-400dpi.png}
+\caption{Spread of information between Internal
+Models\label{communication_marketing.png}}
+\end{figure}
+
+The chapter on Communication Risk introduced the above diagram for the
+spread of ideas. But what happens next? As we saw in Boundary Risk, the
+\textbf{Peter Principle} applies, people will use dependencies up to the
+point when they start breaking down.
+
+\hypertarget{example-metrics}{%
+\subsection{Example: Metrics}\label{example-metrics}}
+
+Let's dive into a specific example now: someone finds a useful new
+metric that helps in evaluating performance.
+
+It might be:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Source Lines Of Code (SLOC)}: i.e.~the number of lines of code
+  each developer writes per day/week whatever.
+\item
+  \textbf{Function Points}: the number of function points a person on
+  the team completes, each sprint.
+\item
+  \textbf{Code Coverage}: the number of lines of code exercised by unit
+  tests.
+\item
+  \textbf{Response Time}: the time it takes to respond to an emergency
+  call, say, or to go from a feature request to production.
+\item
+  \textbf{Release cadence}: number of releases a team performs, per
+  month, say.
+\end{itemize}
+
+With some skill, they may be able to \emph{correlate} this metric
+against some other more abstract measure of success. For example:
+
+\begin{itemize}
+\tightlist
+\item
+  ``quality is correlated with more releases''
+\item
+  ``user-satisfaction is correlated with SLOC''
+\item
+  ``revenue is correlated with response time''
+\end{itemize}
+
+Because the \emph{thing on the right} is easier to measure than
+\emph{the thing on the left}, it becomes used as a proxy (or, Map) for
+the thing they are really interested in (the Territory). At this point,
+it's \emph{easy} to communicate this idea with the rest of the team, and
+\emph{the market value of the idea is high}: it is a useful
+representation of reality, which is shown to be accurate at a particular
+point in time.
+
+But \emph{correlation} doesn't imply \emph{causation}. The \emph{cause}
+might be different:
+
+\begin{itemize}
+\tightlist
+\item
+  Quality and number of releases might both be down to the simplicity of
+  the product.
+\item
+  User satisfaction and SLOC might both be down to the calibre of the
+  developers.
+\item
+  Response time and revenue might both be down to clever team planning.
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/map-and-territory/map_and_territory_table_3-400dpi.png}
+\caption{Evolution Feature Risks, as manifested in the Internal
+Model\label{map_and_territory_table_3.png}}
+\end{figure}
+
+Metrics are seductive because they simplify reality and are easily
+communicated. But they \emph{inherently} contain Map and Territory Risk:
+By relying \emph{only} on the metrics, you're not really \emph{seeing}
+the reality.
+
+The devil is in the detail.
+
+\hypertarget{reality-evolves}{%
+\subsection{Reality Evolves}\label{reality-evolves}}
+
+In the same way that markets evolve to demand more features, our
+behaviour evolves to incorporate new ideas. The more popular an idea is,
+the more people will modify their behaviour as a result of it, and the
+more the world will change.
+
+In the case of metrics, this is where they start being used for more
+than just indicators, but as measures of performance or targets:
+
+\begin{itemize}
+\tightlist
+\item
+  If a team is \emph{told} to do lots of releases, they will perform
+  lots of releases \emph{at the expense of something else}.
+\item
+  If team members are promoted according to SLOC, they will make sure
+  their code takes up as many lines as possible.
+\item
+  In the UK, ambulances were asked to wait before admitting patients to
+  Emergency wards, in order that hospitals could
+  \href{https://en.wikipedia.org/wiki/NHS_targets}{meet their targets}.
+\end{itemize}
+
+Some of this seems obvious: \emph{Of course} SLOC is a terrible measure
+performance! We're not that stupid anymore. The problem is, it's not so
+much the \emph{choice} of metric, but the fact that \emph{all} metrics
+merely approximate reality with a few numbers. The map is \emph{always}
+simpler than the territory, therefore there can be no perfect metrics.
+
+Will the idea still be useful as the world adapts? Although the Hype
+Cycle model doesn't cover it, ideas and products all eventually have
+their day and decline in usefulness.
+
+\hypertarget{bad-ideas}{%
+\subsection{Bad Ideas}\label{bad-ideas}}
+
+There are plenty of ideas which \emph{seem a really good idea at the
+time} but then end up being terrible. It's only as we \emph{improve our
+internal model} and realize the hidden risks that we stop using them.
+While SLOC is a minor offender,
+\href{https://en.wikipedia.org/wiki/Chlorofluorocarbon}{CFCs} or
+\href{https://en.wikipedia.org/wiki/Tetraethyllead}{Leaded Petrol} are
+more significant examples.
+
+\begin{figure}
+\centering
+\includegraphics{images/numbers/hype3.png}
+\caption{Hype Cycle for something that turns out to be a \emph{bad}
+idea\label{hype3.png}}
+\end{figure}
+
+The above chart shows an initially promising idea that turns out to be
+terrible, and there is a ``Period of Inoculation'' where the population
+realise their mistake. There is ``negative hype'' as they work to phase
+out the offending idea.
+
+SLOC is not on it's own a \emph{bad idea}, but using it as a metric for
+developer productivity \emph{is}:
+
+\begin{quotation}
+
+``Measuring programming progress by lines of code is like measuring
+aircraft building progress by weight.''
+
+\sourceatright{\href{https://www.goodreads.com/quotes/536587}{Bill Gates}}
+\end{quotation}
+
+\hypertarget{humans-and-machines}{%
+\section{Humans and Machines}\label{humans-and-machines}}
+
+In the example of the SatNav, we saw how the \emph{quality} of Map and
+Territory Risk is different for \emph{people} and \emph{machines}.
+Whereas people \emph{should} be expected show skepticism to new
+(unlikely) information, our databases accept it unquestioningly.
+\emph{Forgetting} is an everyday, usually benign part of our human
+Internal Model, but for software systems it is a production crisis
+involving 3am calls and backups.
+
+For Humans, Map and Territory Risk is exacerbated by
+\href{https://en.wikipedia.org/wiki/List_of_cognitive_biases}{cognitive
+biases}:
+
+\begin{quotation}
+
+``Cognitive biases are systematic patterns of deviation from norm or
+rationality in judgement, and are often studied in psychology and
+behavioural economics.''
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/List_of_cognitive_biases}{\textemdash  Cognitive Bias, \emph{Wikipedia}}}
+\end{quotation}
+
+There are \emph{lots} of cognitive biases. But let's just look at a
+couple that are relevant to Map and Territory Risk:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Availability Heuristic}: People overestimate the importance of
+  knowledge they have been exposed to.
+\item
+  \textbf{The Ostrich Effect}: Which is where dangerous information is
+  ignored or avoided because of the emotions it will evoke.
+\item
+  \textbf{Bandwagon Effect}: People like to believe things that other
+  people believe. (Could this be a factor in the existence of the Hype
+  Cycle?)
+\end{itemize}
+
+\hypertarget{hierarchical-organisations}{%
+\section{Hierarchical Organisations}\label{hierarchical-organisations}}
+
+Map And Territory Risk ``trickles down'' through an organisation. The
+higher levels have an out-sized ability to pervert the incentives at
+lower levels because once an organisation begins to pursue a ``bullshit
+objective'', the whole company can align to this.
+
+\href{https://www.huffingtonpost.com/otto-scharmer/the-fish-rots-from-the-he_b_8208652.html}{The
+Huffington Post} paints a brilliant picture of how Volkswagen managed to
+get caught faking their emissions tests. As they point out:
+
+\begin{quotation}
+
+``The leadership culture of VW probably amplified the problem by
+disconnecting itself from the values and trajectory of society, by
+entrenching in what another executive in the auto industry once called a
+``bullshit-castle''\ldots{} No engineer wakes up in the morning and
+thinks: OK, today I want to build devices that deceive our customers and
+destroy our planet. Yet it happened. Why? Because of hubris at the
+top.''
+
+\sourceatright{\href{https://www.huffingtonpost.com/otto-scharmer/the-fish-rots-from-the-he_b_8208652.html}{\textemdash  Otto Scharmer, \emph{Huffington Post}}.}
+\end{quotation}
+
+This article identifies the following process:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{De-sensing}: VW Executives ignored \emph{The Territory}
+  society around them (such as the green movement), ensuring their maps
+  were out of date. The top-down culture made it hard for reality to
+  propagate back up the hierarchy.
+\item
+  \textbf{Hubris/Absencing}: They pursued their own metrics of
+  \emph{volume} and \emph{cost}, rather than seeking out others (a la
+  the Availability Heuristic Bias). That is, focusing on their own
+  \emph{Map}, which is \emph{easier} than checking the \emph{Territory}.
+\item
+  \textbf{Deception}: Backed into a corner, engineers had no choice but
+  to find ``creative'' ways to meet the metrics.
+\item
+  \textbf{Destruction}: Eventually, the truth comes out, to the
+  detriment of the company, the environment and the shareholders. As the
+  article's title summarizes ``A fish rots from the head down''.
+\end{itemize}
+
+\hypertarget{markets}{%
+\section{Markets}\label{markets}}
+
+So far, we've considered Map and Territory Risk for individuals, teams
+and organisations. \href{https://equilibriabook.com}{Inadequate
+Equilibria} by Eleizer Yudkovsky, looks at how perverse incentive
+mechanisms break not just departments, but entire societal systems. He
+highlights one example involving \emph{academics} and \emph{grantmakers}
+in academia:
+
+\begin{itemize}
+\tightlist
+\item
+  It's not very apparent which academics are more worthy of funding.
+\item
+  One proxy is what they've published (scientific papers) and where
+  they've published (journals).
+\item
+  Universities want to attract research grants, and the best way to do
+  this is to have the best academics.
+\item
+  Because ``best'' isn't measurable, they use the publications proxy.
+\item
+  Therefore, immense power rests in the hands of the journals, since
+  they can control this metric.
+\item
+  Therefore, journals are able to charge large amounts of money to
+  universities for subscriptions.
+\end{itemize}
+
+\begin{quotation}
+
+``Now consider the system of scientific journals\ldots{} Some journals
+are prestigious. So university hiring committees pay the most attention
+to publications in that journal. So people with the best, most
+interesting-looking publications try to send them to that journal. So if
+a university hiring committee paid an equal amount of attention to
+publications in lower-prestige journals, they'd end up granting tenure
+to less prestigious people. Thus, the whole system is a stable
+equilibrium that nobody can unilaterally defy except at cost to
+themselves.''
+
+\sourceatright{\href{https://equilibriabook.com/molochs-toolbox/}{\textemdash  Inadequate Equilibria, \emph{Eleizer Yudkovsky}}}
+\end{quotation}
+
+As the book points out, while everyone \emph{persists} in using an
+inadequate abstraction, the system is broken. However, Coordination
+would be required for everyone to \emph{stop} doing it this way, which
+is hard work. (At least within a top-down hierarchy, Maps can get
+fixed.)
+
+This is a \emph{small example} from a larger, closely argued book
+investigating lots of examples of this kind. It's worth taking the time
+to read a couple of the chapters on this interesting topic. (Like
+Risk-First, it is available to read online).
+
+As usual, this chapter forms a grab-bag of examples in a complex topic.
+But it's time to move on as there is one last stop we have to make on
+the Risk Landscape, and that is to look at Operational Risk.
+
+The Hype Cycle model is available in \textbf{Numbers} format
+{[}here{]}(https://github.com/risk-first/website/blob/master/RiskMatrix.numbers.
+
+Now, on to the last risk in our tour, Operational Risk.
+
+\part{Tools \& Practices}
 
 \hypertarget{estimates}{%
 \chapter{Estimates}\label{estimates}}
