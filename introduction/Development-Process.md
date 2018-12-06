@@ -52,9 +52,9 @@ Let's look at how our process should act to prevent these risks materializing by
 - Actually, this functionality is mainly served by **Feature Z**...
 - which is already there but hard to find.
 
-The diagram below shows how this plays out.
-
 ![Development Process - Exposing Hidden Risks](images/generated/introduction/development_process_3.png)
+
+The diagram above shows how this plays out.
 
 This is a slightly contrived example, as you'll see.  But let's follow our feature through the process and see how it meets reality slowly, and the [Hidden Risks](Glossary#hidden-risk) are discovered:
 
@@ -90,7 +90,7 @@ At this point, let's stop and discuss the visual grammar of the Risk-First Diagr
 
 The round-cornered rectangles represent our [Internal Model](Glossary#internal-model), and these contain our view of [Risk](Glossary#Risk), whether the risks we face right now, or the [Attendant Risks](Glossary#attendant-risk) expected after taking the action.  In the diagram above, taking the action of "coding and unit testing" is expected to mitigate the risks of "Developer Misimplementation" and "Duplicating Functionality".
 
-Beneath the internal models, we are also showing real-world tangible artifacts.  That is, the physical change we would expect to see as a result of taking action.  In this diagram, the action will result in "New Code" being added to the project, needed for the next steps of the development process. 
+Beneath the internal models, we are also showing real-world tangible artifacts.  That is, the physical change we would expect to see as a result of taking action.  In the diagram above, the action will result in "New Code" being added to the project, needed for the next steps of the development process. 
 
 ### Integration
 

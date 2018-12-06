@@ -48,13 +48,13 @@ Let's look at a software example now.
 
 As discussed in [Software Dependency Risk](Software-Dependency-Risk), if we are going to use a software tool as a dependency, we have to accept the complexity of it's [Interface](Software-Dependency-Risk#interfaces), and learn the [protocol](Communication-Risk#protocols) of that interface.  If you want to work with it, you have to use it's protocol, it won't come to you.   
 
-Let's take a look at a hypothetical system structure, in the accompanying diagram.  In this design, we have are transforming data from the `input` to the `output`.  But how should we do it?
+![Our System receives data from the `input`, translates it and sends it to the `output`.  But which dependency should we use for the translation, if any?](images/kite9/boundary-risk-ps.png)
+
+Let's take a look at a hypothetical system structure, in the diagram above.  In this design, we have are transforming data from the `input` to the `output`.  But how should we do it?
 
  - We could go via `a`, using the [Protocols](Communication-Risk#protocol-risk) of `a`, and having a dependency on `a`.
  - We could go via `b`, using the [Protocols](Communication-Risk#protocol-risk) of `b`, and having a dependency on `b`. 
  - We could choose the middle route, and avoid the dependency, but potentially pick up lots more [Complexity Risk](Complexity-Risk) and [Schedule Risk](Scarcity-Risk#schedule-risk).
- 
-![Our System receives data from the `input`, translates it and sends it to the `output`.  But which dependency should we use for the translation, if any?](images/kite9/boundary-risk-ps.png)
 
 This is a basic **Translation** job from `input` to `output`. Since we are talking about **Translation**, we are clearly talking about [Communication Risk](Communication-Risk) again:  our task in **Integrating** all of these components is _to get them to talk to each other_.
 
@@ -183,7 +183,7 @@ Each new version has a greater functional scope than the one before (pushing bac
 
 ![The Peter Principle:  Backward Compatibility + Extension leads to complexity and learning curve risk](images/kite9/boundary-risk-peter-principle.png)
 
-You can see in the diagram the Peter Principle at play:  as more responsibility is given to a dependency, the more complex it gets, and the greater the learning curve to work with it.  Large ecosystems like Java react to [Learning Curve Risk](Communication-Risk#learning-curve-risk) by having copious amounts of literature to read or buy to help, but it is still off-putting.
+You can see in the diagram above the Peter Principle at play:  as more responsibility is given to a dependency, the more complex it gets, and the greater the learning curve to work with it.  Large ecosystems like Java react to [Learning Curve Risk](Communication-Risk#learning-curve-risk) by having copious amounts of literature to read or buy to help, but it is still off-putting.
 
 Because [Complexity is Mass](Complexity-Risk#complexity-as-mass), large ecosystems can't respond quickly to [Feature Drift](Feature-Risk#feature-drift-risk).  This means that when the world changes, _new_ systems will come along to plug the gaps. 
 

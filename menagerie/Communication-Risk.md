@@ -31,7 +31,7 @@ But it's not just transmission.  [Communication Risk](Communication-Risk) exists
 
 ## Approach To Communication Risk
 
-There is a symmetry about the steps going on in Shannon's diagram, and we're going to exploit this in order to break down [Communication Risk](Communication-Risk) into it's main types.  <!-- tweet-end -->
+There is a symmetry about the steps going on in the diagram above, and we're going to exploit this in order to break down [Communication Risk](Communication-Risk) into it's main types.  <!-- tweet-end -->
 
 ![Communication Risk 2](images/generated/risks/communication/communication_2.png)
 

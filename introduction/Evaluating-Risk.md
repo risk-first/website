@@ -143,9 +143,9 @@ The problem is, we now need to take a call on whether to do something that is _u
 
 [Net Present Value](https://en.wikipedia.org/wiki/Net_present_value) allows us to discount value in the future, which offers us a way to reconcile these two variables.  The further in the future the value is realised, the bigger the discount.  This is done because payment _now_ is better than payment in the future:  there is the risk that something will happen to prevent that future payment.  This is why we have _interest rates_ on loan payments.
 
-In <!--replace diagram ref{npv.png} -->the diagram<!--endreplace -->, you can see two future payments, Payment **A** of £100 due in one year, and Payment **B** of £150 due in 10 years.  By discounting at a given rate (here at a high rate of 20% per year) we can compare their worth _now_.  At this discount rate, Payment **A**,  - arriving next year - has a far greater value.  
-
 ![Net Present Value Discounting](images/numbers/npv.png)
+
+In the diagram above, you can see two future payments, Payment **A** of £100 due in one year, and Payment **B** of £150 due in 10 years.  By discounting at a given rate (here at a high rate of 20% per year) we can compare their worth _now_.  At this discount rate, Payment **A**,  - arriving next year - has a far greater value.  
 
 Can we do the same thing with risk?  Let's introduce the concept of [Net Present Risk](Evaluating-Risk#Net-Present-Risk), or NPR:
 

@@ -38,9 +38,9 @@ Which risks we know about depends on our **knowledge** and **experience**, then.
 
 As the dinner party gets closer, we make our preparations, and the inadequacies of the [Internal Model](Glossary#Internal-Model) become apparent.  We learn what we didn't know and the [Hidden Risks](Glossary#hidden-risk) reveal themselves.  Other things we were worried about don't materialise.  Things we thought would be minor risks turn out to be greater.   
 
-Our model is forced to [Meet Reality](Glossary#meet-reality), and the model changes,  forcing us to deal with these risks, as shown in <!--replace diagram ref{model_vs_reality.png} -->this diagram<!--endreplace -->.  Whenever we try to _do something_ about a risk, it is called [Taking Action](Glossary#taking-action).  [Taking Action](Glossary#taking-action) _changes_ reality, and with it your [Internal Model](Glossary#internal-model) of the risks you're facing.  That's because it's only by interacting with the world that we add knowledge to our [Internal Model](Glossary#internal-model) about what works and what doesn't.  Even something as passive as _checking the shop opening times_ is an action, and it improves on our [Internal Model](Glossary#internal-model) of the world.
-
 ![How Taking Action affects Reality, and also changes your Internal Model](images/generated/introduction/model_vs_reality.png)
+
+Our model is forced to [Meet Reality](Glossary#meet-reality), and the model changes,  forcing us to deal with these risks, as shown in the diagram above.  Whenever we try to _do something_ about a risk, it is called [Taking Action](Glossary#taking-action).  [Taking Action](Glossary#taking-action) _changes_ reality, and with it your [Internal Model](Glossary#internal-model) of the risks you're facing.  That's because it's only by interacting with the world that we add knowledge to our [Internal Model](Glossary#internal-model) about what works and what doesn't.  Even something as passive as _checking the shop opening times_ is an action, and it improves on our [Internal Model](Glossary#internal-model) of the world.
 
 If we had a good [Internal Model](Glossary#Internal-Model), and took the right actions, we should see positive outcomes.  If we failed to manage the risks, or took inappropriate actions, we'll probably see negative outcomes.
 

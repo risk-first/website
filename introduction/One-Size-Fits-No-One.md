@@ -41,7 +41,7 @@ So, the same actions Waterfall prescribes to mitigate rework and cost-overruns i
 
 ![Waterfall, Applied to a Software Project](images/generated/introduction/waterfall3.png)
 
-As you can see in the above diagram, some of the risks on the left _are the same_ as the ones on the right:  the actions taken to manage them made no difference (or made things worse).  The inability to manage these risks led to the identification of a "Software Crisis", in the 1970's:
+As you can see in the diagram above, some of the risks on the left _are the same_ as the ones on the right:  the actions taken to manage them made no difference (or made things worse).  The inability to manage these risks led to the identification of a "Software Crisis", in the 1970's:
 
 > "Software crisis is a term used in the early days of computing science for the difficulty of writing useful and efficient computer programs in the required time...   The software crisis was due to the rapid increases in computer power and the complexity of the problems that could not be tackled. " - [Software Crisis, _Wikipedia_](https://en.wikipedia.org/wiki/Software_crisis)
 
