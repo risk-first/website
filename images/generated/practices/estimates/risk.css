@@ -37,7 +37,13 @@ action.left {
 	kite9-template: url(template.svg#action-left)	
 }
 
-artifact {
+artifact, 
+users,
+computer, 
+interface,
+component,
+channel-artifact,
+internal-model-artifact {
 	kite9-type: container;
 	kite9-margin: 10pt;
 	kite9-link-inset: 10pt;
@@ -51,22 +57,30 @@ artifact {
 }
 
 users {
-	kite9-type: container;
-	kite9-margin: 10pt;
-	kite9-link-inset: 10pt;
-	kite9-link-gutter: 10pt;
-	kite9-type: container;
-	kite9-layout: vertical;	
 	kite9-template: url(template.svg#users);
-	kite9-padding: 10pt; 
-	kite9-connection-align: 50%;
-	kite9-min-size: 110pt 140pt;	
+}
+
+interface {
+	kite9-template: url(template.svg#interface);
+}
+
+internal-model-artifact {
+	kite9-template: url(template.svg#internal-model-artifact);
+}
+
+channel-artifact {
+	kite9-template: url(template.svg#channel-artifact);
+}
+
+component {
+	kite9-template: url(template.svg#component);
 }
 
 mitigated {
 	kite9-type: container;
 	kite9-template: url(template.svg#mitigated);
 }
+
 
 hidden {
 	kite9-type: container;
@@ -301,6 +315,9 @@ risk.security {
 	kite9-template: url(template.svg#security);
 }
 
+risk.methdology {
+	kite9-template: url(template.svg#methodology);
+}
 
 
 risk-box {
@@ -445,6 +462,7 @@ glyph {
 	kite9-margin: 10pt;
 	kite9-connection-align: 50%;
 	kite9-min-height: 30pt;
+	kite9-sizing: minimize;
 }
 
 diagram glyph label {
@@ -453,7 +471,7 @@ diagram glyph label {
 	kite9-template: url(template.svg#glyph-label-text);
 	kite9-vertical-align: center;
 	kite9-margin: 5pt;
-	kite9-min-width: 600pt; 
+	kite9-min-width: 60pt; 
 	
 }
 
@@ -485,12 +503,22 @@ link {
 	fill: none;
 }
 
+.grey-link {
+	stroke: #666666;
+	stroke-width: 1pt;
+	fill: none;
+}
+
 link.invisible {
 	kite9-template: url(template.svg#invisible-link);
 }
 
 link.dotted {
 	kite9-template: url(template.svg#dotted-link);
+}
+
+link.grey {
+	kite9-template: url(template.svg#grey-link);
 }
 
 from,
@@ -535,6 +563,10 @@ context {
 	kite9-link-inset: 12pt;
 }
 
+context.dotted {
+	kite9-template: url(template.svg#context-dotted);
+}
+
 group {
 	kite9-type: container;
 	kite9-sizing: maximize;
@@ -545,6 +577,13 @@ group {
 	fill: none;
 	stroke: black;
 	stroke-width: 1pt;
+}
+
+.context-dotted {
+	fill: none;
+	stroke: black;
+	stroke-width: 1pt;
+	stroke-dasharray: 4 4;	
 }
 
 context > label,
@@ -699,9 +738,14 @@ cell {
 	kite9-type: container;
 }
 
-.shaded {
-	background-color: #EEEEEE;	
+cell.shaded {
+	kite9-template: url(template.svg#shaded);
 }
+
+cell.shaded-tab {
+	kite9-template: url(template.svg#shaded-tab);
+}
+
 
 celltext.center {
 	kite9-horizontal-align: center;
