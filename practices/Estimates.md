@@ -105,7 +105,7 @@ Focusing on the three variables of the iron triangle isn't enough.  You can game
 
 We've already looked at Parkinson's Law in the section on [Agency Risk](Process-Risk#bureaucracy-risk), but lets recap:
 
-> "Parkinson's law is the adage that 'work expands so as to fill the time available for its completion'." [Parkinson's Law, _Wikipedia_](https://en.wikipedia.org/wiki/Parkinsons_law)  
+> "Parkinson's law is the adage that 'work expands so as to fill the time available for its completion'." - [Parkinson's Law, _Wikipedia_](https://en.wikipedia.org/wiki/Parkinsons_law)  
 
 Let's leave aside the [Agency Risk](Agency-Risk) concerns this time.  Instead, let's consider this from a Risk-First perspective.  _Of course_ work would expand to fill the time available:  _Time available_ is an _absence of [Schedule Risk](Scarcity-Risk#schedule-risk)_, it's always going to be sensible to exchange free time to reduce more serious risks.  
 
@@ -115,7 +115,7 @@ This is why projects will _always_ take at least as long as is budgeted for them
 
 Let's look at a quick example of this in action, taken from [Rapid Development by Steve McConnell](http://amzn.eu/d/eTWKOsK).  At the point of this excerpt, Carl (the Project Manager) is discussing the schedule with Bill, the project sponsor: 
 
-> "I think it will take about 9 months, but that's just a rough estimate at this point," Carl said. "That's not going to work," Bill said. "I was hoping you'd say 3 or 4 months. We absolutely need to bring that system in within 6 months. Can you do it in 6?" `(1)`
+> "I think it will take about 9 months, but that's just a rough estimate at this point," Carl said. "That's not going to work," Bill said. "I was hoping you'd say 3 or 4 months. We absolutely need to bring that system in within 6 months. Can you do it in 6?"   `(1)`
 
 Later in the story, the schedule has slipped twice and is about to slip again:
 
