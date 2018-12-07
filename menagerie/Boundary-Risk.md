@@ -1,44 +1,24 @@
 ![Draft](images/state/draft.png)
 
-
----imported
-
-## Dead-End Risk and Boundary Risk
-
-When you choose something to depend on, you can't be certain that it's going to work out in your favour.  Sometimes, the path from your starting point to your goal on the [Risk Landscape](Risk-Landscape) will take you to dead ends:  places where the only way towards your destination is to lose something, and do it again another way.  This is [Dead End Risk](Complexity-Risk#Dead-End-Risk), which we looked at before. 
-
-[Boundary Risk](Boundary-Risk) is another feature of the [Risk Landscape](Risk-Landscape):  when you make a decision to use one dependency over another, you are picking a path on the risk landscape that _precludes_ other choices.  After all, there's not really much cost in a [Dead End](Complexity-Risk#Dead-End-Risk) if you've not had to follow a path to get to it.  
-
-We're also going to look at [Boundary Risk](Boundary-Risk) in more detail later, but I want to introduce it here. Here are some examples:
- 
-- If I choose to program some software in Java, I will find it hard to integrate libraries from other languages.  The dependencies available to Java software are different to those in Javascript, or C#.  Having gone down a Java route, there are _higher risks_ associated with choosing incompatible technologies.  Yes, I can pick dependencies that use C# (still), but I am now facing greater complexity risk than if I'd just chosen to do everything in C# in the first place.
-- If I choose one database over another, I am _limited to the features of that database_.  This is not the same as a dead-end:  I can probably build what I want to build, but the solution will be "bounded" by the dependency choices I make.    One of the reasons we have standards like [Java Database Connectivity (JDBC)](https://en.wikipedia.org/wiki/Java_Database_Connectivity) is to mitigate [Dead End Risk](Complexity-Risk#dead-end-risk) around databases, so that we can move to a different database later.
-- If I choose to buy a bus ticket, I've made a decision not to travel by train, even though later on it might turn out that the train was a better option.  Buying the bus ticket is [Boundary Risk](Boundary-Risk):  I may be able to get a refund, but having chosen the dependency I've set down a path on the risk landscape.
-
----
-
-
-In the previous few sections on [Dependency Risk](Dependency-Risk) we've touched on [Boundary Risk](Boundary-Risk) several times, but now it's time to tackle it head-on and discuss this important type of risk.  
+In the previous sections on [Dependency Risk](Dependency-Risk) we've touched on [Boundary Risk](Boundary-Risk) several times, but now it's time to tackle it head-on and discuss this important type of risk.  
 
 In terms of the [Risk Landscape](Risk-Landscape), [Boundary Risk](Boundary-Risk) is exactly as it says:  a _boundary_, _wall_ or other kind of obstacle in your way to making a move you want to make.   This changes the nature of the [Risk Landscape](Glossary#risk-landscape), and introduces a maze-like component to it.  It also means that we have to make _decisions_ about which way to go, knowing that our future paths are constrained by the decisions we make.
 
-![Boundary Risk](images/generated/risks/boundary/boundary-risk.png)
-
-And, as we discussed in [Complexity Risk](Complexity-Risk), there is always the chance we end up at a [Dead End](Complexity-Risk#dead-end-risk), and we've done work that we need to throw away.  In this case, we'll have to head back and make a different decision.
+As we discussed in [Complexity Risk](Complexity-Risk), there is always the chance we end up at a [Dead End](Complexity-Risk#dead-end-risk), and we've done work that we need to throw away.  In this case, we'll have to head back and make a different decision.
 
 ## Emergence Through Choice
 
 [Boundary Risk](Boundary-Risk) is an emergent risk, which exists at the intersection of [Complexity Risk](Complexity-Risk), [Dependency Risk](Dependency-Risk) and [Communication Risk](Communication-Risk).  Because of that, it's going to take a bit of time to pick it apart and understand it, so we're going to build up to this in stages.
 
-Let's start with an obvious example: Musical Instruments.  Let's say you want to learn to play some music.  There are a _multitude_ of options available to you, and you might choose an _uncommon_ instrument like a [Balalaika](https://en.wikipedia.org/wiki/Balalaika) or a [Theremin](https://en.wikipedia.org/wiki/Theremin), or you might choose a _common_ one like a piano or guitar.   In any case, once you start learning this instrument, you have picked up the three risks above:  
+Let's start with an obvious example:  Say you want to learn to play some music.  There are a _multitude_ of options available to you, and you might choose an _uncommon_ instrument like a [Balalaika](https://en.wikipedia.org/wiki/Balalaika), or you might choose a _common_ one like a piano or guitar.   In any case, once you start learning this instrument, you have picked up the three risks from the diagram above:  
 
- - [Dependency Risk](Dependency-Risk) You have a _physical_ [Dependency](Dependency-Risk) on it in order to play music, so get to the music shop and buy one.
- - [Communication Risk](Communication-Risk):  You have to _communicate_ with the instrument in order to get it to make the sounds you want.  And you have [Learning Curve Risk](Communication-Risk#learning-curve-risk) in order to be able to do that.
- - [Complexity Risk](Complexity-Risk): As _a music playing system_, you now have an extra component (the instrument), with all the attendant complexity of looking after that instrument, tuning it, and so on.
+ - **[Dependency Risk](Dependency-Risk):** You have a _physical_ [Dependency](Dependency-Risk) on it in order to play music, so get to the music shop and buy one.
+ - **[Communication Risk](Communication-Risk):**  You have to _communicate_ with the instrument in order to get it to make the sounds you want.  And you have [Learning Curve Risk](Communication-Risk#learning-curve-risk) in order to be able to do that.
+ - **[Complexity Risk](Complexity-Risk):** As _a music playing system_, you now have an extra component (the instrument), with all the attendant complexity of looking after that instrument, tuning it, and so on.
 
-Those risks are true for _any_ instrument you choose.  However, if you choose the _uncommon_ instrument like the [Balalaika](https://en.wikipedia.org/wiki/Balalaika), you have _worse_ [Boundary Risk](Boundary-Risk), because the _ecosystem_ for the balalaika is smaller.   It might be hard to find a tutor, or a band needing a balalaika.  You're unlikely to find one in a friend's house (compared to the piano, say).  
+Those risks are true for _any_ instrument you choose.  However, if you choose the _uncommon_ instrument you have _worse_ [Boundary Risk](Boundary-Risk), because the _ecosystem_ is smaller.   It might be hard to find a tutor, or a band needing a balalaika, and you're unlikely to find one in a friend's house (compared to the guitar, say).  
 
-Even choosing the Piano has [Boundary Risk](Boundary-Risk).  By spending your time learning to play the piano, you're mitigating [Communication Risk](Communication-Risk) issues, but _mostly_, your skills won't be transferable to playing the guitar.  Your decision to choose one instrument over another cements the [Boundary Risk](Boundary-Risk): you're following a path on the [Risk Landscape](Risk-Landscape) and changing to a different path is _expensive_.
+If you spend time learning to play the piano, you're mitigating [Communication Risk](Communication-Risk) issues, but _mostly_, your skills won't be transferable to playing the guitar.  Your decision to choose one instrument over another cements the [Boundary Risk](Boundary-Risk): you're following a path on the [Risk Landscape](Risk-Landscape) and changing to a different path is _expensive_.
 
 Also, it stands to reason that making _any_ choice is better than making _no_ choice, because you can't try and learn _all_ the instruments.  Doing that, you'd make no meaningful progress on any of them.
 
@@ -46,51 +26,50 @@ Also, it stands to reason that making _any_ choice is better than making _no_ ch
 
 Let's look at a software example now.
 
-As discussed in [Software Dependency Risk](Software-Dependency-Risk), if we are going to use a software tool as a dependency, we have to accept the complexity of it's [Interface](Software-Dependency-Risk#interfaces), and learn the [protocol](Communication-Risk#protocols) of that interface.  If you want to work with it, you have to use it's protocol, it won't come to you.   
+As discussed in [Software Dependency Risk](Software-Dependency-Risk), if we are going to use a software tool as a dependency, we have to accept the complexity of it's [protocols](Communication-Risk#protocols).  You have to use it's protocol: it won't come to you.   
 
 ![Our System receives data from the `input`, translates it and sends it to the `output`.  But which dependency should we use for the translation, if any?](images/kite9/boundary-risk-ps.png)
 
 Let's take a look at a hypothetical system structure, in the diagram above.  In this design, we have are transforming data from the `input` to the `output`.  But how should we do it?
 
- - We could go via `a`, using the [Protocols](Communication-Risk#protocol-risk) of `a`, and having a dependency on `a`.
- - We could go via `b`, using the [Protocols](Communication-Risk#protocol-risk) of `b`, and having a dependency on `b`. 
- - We could choose the middle route, and avoid the dependency, but potentially pick up lots more [Complexity Risk](Complexity-Risk) and [Schedule Risk](Scarcity-Risk#schedule-risk).
+ - We could use library 'a', using the [Protocols](Communication-Risk#protocol-risk) of 'a', and having a dependency on 'a'.
+ - We could use library 'b', using the [Protocols](Communication-Risk#protocol-risk) of 'b', and having a dependency on 'b'. 
+ - We could use neither, and avoid the dependency, but potentially pick up lots more [Codebase Risk](Complexity-Risk#codebase-risk) and [Schedule Risk](Scarcity-Risk#schedule-risk) because we have to code our own alternative to 'a' and 'b'.
 
-This is a basic **Translation** job from `input` to `output`. Since we are talking about **Translation**, we are clearly talking about [Communication Risk](Communication-Risk) again:  our task in **Integrating** all of these components is _to get them to talk to each other_.
+The choice of approach presents us with [Boundary Risk](Boundary-Risk), because we don't know that we'll necessarily be successful with any of these options.
 
-From a [Cyclomatic Complexity](Complexity-Risk#cyclomatic-complexity) point of view, this is a very simple structure, with low [Complexity](Complexity-Risk).  But the choice of approach presents us with [Boundary Risk](Boundary-Risk), because we don't know that we'll be able to make them _talk to each other_ properly:
-
- - Maybe `a` outputs dates in a strange calendar format that we won't understand.
- - Maybe `b` works on some streaming API basis, that is incompatible with the input protocol.
- - Maybe `a` runs on Windows, whereas our code runs on Linux.
+ - Maybe 'a' has some undocumented drawbacks that are going to hold us up.
+ - Maybe 'b' works on some streaming API basis, that is incompatible with the input protocol.
+ - Maybe 'a' runs on Windows, whereas our code runs on Linux.
  
 ... and so on.
 
 ## Boundary Risk Pinned Down
 
-Wherever we integrate dependencies with complex [Protocols](Communication-Risk#protocol-risk), we potentially have [Boundary Risk](Boundary-Risk).  The more complex the systems being integrated, the higher the risk.  When we choose software tools or libraries to help us build our systems, we are trading [Complexity Risk](Complexity-Risk) for [Boundary Risk](Boundary-Risk). It is:
+Wherever we integrate dependencies with complex protocols, we potentially have [Boundary Risk](Boundary-Risk).  The more complex the dependencies being integrated, the higher the risk.  When we choose software tools, languages or libraries to help us build our systems, we are trading [Complexity Risk](Complexity-Risk) for [Boundary Risk](Boundary-Risk). It could include:
 
  - The _sunk cost_ of the [Learning Curve](Communication-Risk#learning-curve-risk) we've overcome to integrate the dependency, when it fails to live up to expectations.
- - The likelihood of, and costs of changing in the future.  
- - The rarity of alternatives (or, conversely, the risk of [Lock In](#vendor-lock-in)). 
+ - The likelihood of, and costs of changing to something else in the future.  
+ - The risk of [Lock In](#vendor-lock-in).
  
-![The tradeoff for using a library](images/kite9/software-dependency-library.png)
+![The tradeoff for using a library](images/generated/risks/software-dependency/library.png)
 
 As we saw in [Software Dependency Risk](Software-Dependency-Risk), [Boundary Risk](Boundary-Risk) is a big factor in choosing libraries and services.  However, it can apply to any kind of dependency:
 
  - If you're depending on a [Process or Organisation](Process-Risk), they might change their products or quality, making the effort you put into the relationship worthless.
  - If you're depending on [Staff](Scarcity-Risk#staff-risk), they might leave, meaning your efforts on training them don't pay back as well as you hoped.
  - If you're depending on an [Event](Scarcity-Risk#schedule-risk) occurring at a particular time, you might have a lot of work to reorganise your life if it changes time or place.
+ - If you are tied into a contract, you might have to pay for something despite no longer using it.
 
-## Avoiding Boundary Risk Now...
+## Boundary Risk and Sunk Costs
 
 Because of [Boundary Risk](Boundary-Risk)'s relationship to [Learning Curve Risk](Communication-Risk#learning-curve-risk), we can avoid accreting it by choose the _simplest_ and _fewest_ dependencies for any job.  Let's look at some examples:
 
 - `mkdirp` is an [npm](https://www.npmjs.com) module defining a single function.  This function takes a single string parameter and recursively creating directories.  Because the [protocol](Communication-Risk) is so simple, there is almost no [Boundary Risk](Boundary-Risk).
-- Using a database with a [JDBC](https://en.wikipedia.org/wiki/Java_Database_Connectivity) driver comes with _some_ [Boundary Risk](Boundary-Risk):  but the boundary is specified by a standard.  Although the standard doesn't cover every aspect of the behaviour of the database, it does minimise risk, because if you are familiar with one JDBC driver, you'll be familiar with them all, and swapping one for another is relatively easy.
+- Using a particular brand of database with a [JDBC](https://en.wikipedia.org/wiki/Java_Database_Connectivity) driver comes with _some_ [Boundary Risk](Boundary-Risk):  but the boundary is specified by a standard.  Although the standard doesn't cover every aspect of the behaviour of the database, it does minimise risk, because if you are familiar with one JDBC driver, you'll be familiar with them all, and swapping one for another is relatively easy.
 - Using a framework like [Spring](https://spring.io), [Redux](https://redux.js.org) or [Angular](https://angularjs.org) comes with higher [Boundary Risk](Boundary-Risk):  you are expected to yield to the framework's way of behaving throughout your application.  You cannot separate the concern easily, and swapping out the framework for another is likely to leave you with a whole new set of assumptions and interfaces to deal with.
 
-## ... And In The Future
+## Likelihood Of Change
 
 Unless your project _ends_, you can never be completely sure that [Boundary Risk](Boundary-Risk) _isn't_ going to stop you making a move you want.  For example:
 
@@ -370,4 +349,22 @@ tbd diagram.
 Although our discipline is a young one, we should probably expect to see "Software Archaeology" in the same way as we see it for biological organisms.  Already we can see the dead-ends in the software evolutionary tree:  COBOL and BASIC languages, CASE systems.  Languages like FORTH live on in PostScript, SQL is still embedded in everything
 
 Boundary risk is _inside_ and _outside_
+
+
+
+---imported
+
+## Dead-End Risk and Boundary Risk
+
+When you choose something to depend on, you can't be certain that it's going to work out in your favour.  Sometimes, the path from your starting point to your goal on the [Risk Landscape](Risk-Landscape) will take you to dead ends:  places where the only way towards your destination is to lose something, and do it again another way.  This is [Dead End Risk](Complexity-Risk#Dead-End-Risk), which we looked at before. 
+
+[Boundary Risk](Boundary-Risk) is another feature of the [Risk Landscape](Risk-Landscape):  when you make a decision to use one dependency over another, you are picking a path on the risk landscape that _precludes_ other choices.  After all, there's not really much cost in a [Dead End](Complexity-Risk#Dead-End-Risk) if you've not had to follow a path to get to it.  
+
+We're also going to look at [Boundary Risk](Boundary-Risk) in more detail later, but I want to introduce it here. Here are some examples:
+ 
+- If I choose to program some software in Java, I will find it hard to integrate libraries from other languages.  The dependencies available to Java software are different to those in Javascript, or C#.  Having gone down a Java route, there are _higher risks_ associated with choosing incompatible technologies.  Yes, I can pick dependencies that use C# (still), but I am now facing greater complexity risk than if I'd just chosen to do everything in C# in the first place.
+- If I choose one database over another, I am _limited to the features of that database_.  This is not the same as a dead-end:  I can probably build what I want to build, but the solution will be "bounded" by the dependency choices I make.    One of the reasons we have standards like [Java Database Connectivity (JDBC)](https://en.wikipedia.org/wiki/Java_Database_Connectivity) is to mitigate [Dead End Risk](Complexity-Risk#dead-end-risk) around databases, so that we can move to a different database later.
+- If I choose to buy a bus ticket, I've made a decision not to travel by train, even though later on it might turn out that the train was a better option.  Buying the bus ticket is [Boundary Risk](Boundary-Risk):  I may be able to get a refund, but having chosen the dependency I've set down a path on the risk landscape.
+
+---
 

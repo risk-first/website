@@ -35,17 +35,17 @@ Why is it so bad?  The problem with a developer answering a question such as:
 
 > "How long will it take to deliver X?"
 
-Is the following:
+Seems to be the following:
 
  - The developer and the client likely don't agree on exactly what X is, and any description of it is inadequate anyway ([Invisibility Risk](Communication-Risk#invisibility-risk)).
- - The developer has a less-than-complete understanding of the environment he will be delivering X in ([Complexity Risk](Complexity-Risk) and [Map And Territory Risk](Map-And-Territory-Risk).
- - The developer has some vague ideas about how to do X, but he'll need to try out various approaches until he finds exactly the right one ([Boundary Risk](Boundary-Risk) and [Learning-Curve Risk](Communication-Risk#learning-curve-risk)).
+ - The developer has a less-than-complete understanding of the environment he will be delivering X in ([Complexity Risk](Complexity-Risk) and [Map And Territory Risk](Map-And-Territory-Risk)).
+ - The developer has some vague ideas about how to do X, but he'll need to try out various approaches until he finds something that works ([Boundary Risk](Boundary-Risk) and [Learning-Curve Risk](Communication-Risk#learning-curve-risk)).
  - The developer has no idea what [Hidden Risk](Glossary#hidden-risk) will surface when he starts work on it.
  - The developer has no idea what will happen if he takes too long and misses the date by a day/week/month/year ([Schedule Risk](Scarcity-Risk#schedule-risk)).
 
 ... and so on.  
 
-The reason the estimate of _time_ is wrong is because [All Activity Is About Mitigating Risk](All-Risk-Management) and the estimate of _risk_ is wrong.
+The reason the estimate of _time_ is wrong is because [every action attempts to mitigate risk](All-Risk-Management) and the estimate of _risk_ is wrong.
 
 So what are we to do?  It's a problem as old as software itself, and in deference to that, let's examine the estimating problem via some "Old Saws".
 
@@ -62,7 +62,7 @@ Let's try and pull this apart:
  - The "10X" developer _must_ also leave behind less of these kind of risks too.
  - That means that the "10X Developer" isn't merely faster, but _taking different actions_.  They are able to use their talent and experience to see actions with greater pay-off than the 1X Developer.  
  
-![1x Task vs 10X Task](images/generated/practices/estimates/1x-10x.png)
+![1X Task vs 10X Task](images/generated/practices/estimates/1x-10x.png)
 
 Does the "10X Developer" even exist?  Crucially, it would seem that such a thing would be predicated on the existence of the "1X Developer", who gets "1X" worth of work done each day.  It's not clear that there is any such thing as an average developer who is mitigating risk at an average rate.  
 
@@ -72,7 +72,7 @@ Even good developers have bad days, weeks or projects.  [Taking Action](Glossary
  - A crucial use-case of the problem turns out to change the shape of the solution entirely, leading to lots of rework.
  - An assumption about how network security is configured turns out to be wrong, leading to a lengthy engagement with the infrastructure team.
 
-The easiest way to be the "10X developer" is to have _done the job before_.  If you're coding in a familiar language, with familiar libraries and tools, delivering a cookie-cutter solution to a problem in the same manner you've done several times before, then you will be a "10X Developer" compared to _you doing it the first time_:
+The easiest way to be the "10X developer" is to have _done the job before_.  If you're coding in a familiar language, with familiar libraries and tools, delivering a cookie-cutter solution to a problem in the same manner you've done several times before, then you will be a "10X Developer" compared to _you doing it the first time_ because:
 
  - There's no [Learning Curve Risk](Communication-Risk#learning-curve-risk), because you already learnt everything.
  - There's no [Dead End Risk](Complexity-Risk#dead-end-risk) because you already know all the right choices to make.     
@@ -87,8 +87,8 @@ The easiest way to be the "10X developer" is to have _done the job before_.  If 
 
 From a Risk-First perspective, we can now see that this is an over-simplification.  If _quality_ is a [Feature Fit](Feature-Risk) metric, _deadlines_ is [Schedule Risk](Scarcity-Risk#schedule-risk) and _budget_ refers to [Funding Risk](Scarcity-Risk#funding-risk) then that leaves us with a lot of risks unaccounted for:
 
- - I can deliver a project in very short order by building a bunch of screens that _do nothing_ (accruing _stunning levels of [Implementation Risk](Feature-Risk#implementation-risk) as I go). 
- - Or, by assuming a lottery win, the project's budget is fine.  (Although I would have _huge_ [Funding Risk](Scarcity-Risk#funding-risk) because _what are the chances of winning the lottery?_.  
+ - I can deliver a project in very short order by building a bunch of screens that _do nothing_ (accruing _stunning_ levels of [Implementation Risk](Feature-Risk#implementation-risk) as I go). 
+ - Or, by assuming a lottery win, the project's budget is fine.  (Although I would have _huge_ [Funding Risk](Scarcity-Risk#funding-risk) because _what are the chances of winning the lottery?_.)  
  - Brooks' Law contradicts this by saying you can't trade budget for deadlines:
  
 > "Brooks' law is an observation about software project management according to which "adding human resources to a late software project makes it later". - [Brooks Law, _Wikipedia_](https://en.wikipedia.org/wiki/Brooks_law)

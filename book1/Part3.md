@@ -1,5 +1,7 @@
 # Coming Next
 
+Part 3 of Risk-First is a separate book: *Risk-First: Tools and Techniques
+
 - preview of what's to come in part 3.  
 
 part 3 is in the next book.
