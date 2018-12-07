@@ -79,10 +79,10 @@ The easiest way to be the "10X developer" is to have _done the job before_.  If 
 
 ## Old Saw No. 2: Quality, Speed, Cost: Pick Any Two
 
-> "The Project Management Triangle (called also the Triple Constraint, Iron Triangle and Project Triangle) is a model of the constraints of project management. While its origins are unclear, it has been used since at least the 1950s.  It contends that:
-> - The quality of work is constrained by the project's budget, deadlines and scope (features).
-> - The project manager can trade between constraints.
-> - Changes in one constraint necessitate changes in others to compensate or quality will suffer."
+> "The Project Management Triangle (called also the Triple Constraint, Iron Triangle and Project Triangle) is a model of the constraints of project management. While its origins are unclear, it has been used since at least the 1950s.  It contends that: 
+> 1. The quality of work is constrained by the project's budget, deadlines and scope (features).
+> 2. The project manager can trade between constraints.
+> 3. Changes in one constraint necessitate changes in others to compensate or quality will suffer."
 >    - [Project Management Triangle, _Wikipedia_](https://en.wikipedia.org/wiki/Project_management_triangle)
 
 From a Risk-First perspective, we can now see that this is an over-simplification.  If _quality_ is a [Feature Fit](Feature-Risk) metric, _deadlines_ is [Schedule Risk](Scarcity-Risk#schedule-risk) and _budget_ refers to [Funding Risk](Scarcity-Risk#funding-risk) then that leaves us with a lot of risks unaccounted for:
@@ -230,7 +230,7 @@ As we saw from the "10X Developer" Saw, [Learning Curve Risk](Communication-Risk
 Let's get back to Bill and Carl.  What went wrong between points `(1)` and `(2)`?   Let's break it down:
 
  - **Bill _wants_ the system in 3-4 months.**  It doesn't happen.  
- - **He says it "must be delivered in 6 months", but this doesn't happen either.**  However, the world (and the project) doesn't end: _it carries on_.   What does this mean about the truth of his statement?  Was he deliberately lying, or just espousing his view on the [Schedule Risk](Scarcity-Risk#schedule-risk)?
+ - **He says it "must be delivered in 6 months", but this doesn't happen either.**  However, the world (and the project) doesn't end: _it carries on_.   What does this mean about the truth of his statement?  Was he deliberately lying about the end date, or just espousing his view on the [Schedule Risk](Scarcity-Risk#schedule-risk)?
  - **Carl's original estimate was 9 months.**   Was he working to this all along?  Did the initial brow-beating over deadlines at point `(1)` contribute to [Agency Risk](Agency-Risk) in a way that _didn't_ happen at point `(2)`?
  - **Why _did_ Bill get so angry?**  His understanding of the [Schedule Risk](Scarcity-Risk#schedule-risk) was, if anything, _worse_ than Carl's.  It's not stated in the account, but it's likely the [Trust Risk](Communication-Risk#trust--belief-risk) moved upwards:  Did his superiors stop trusting him?  Was his job at stake?
  - **How could including this risk in the discussion have improved the planning process?**  Could the conversation have started like this instead?
