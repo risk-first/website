@@ -3,7 +3,8 @@
   <svg:defs>
     <svg:style type="text/css"> @import url("risk.css");</svg:style>
   </svg:defs>
-  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-116" name="Development Process 1" style="kite9-layout: right; kite9-min-width: 900pt;">
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-116" name="Development Process 1"
+    style="kite9-layout: right; kite9-min-width: 900pt;">
 
 
     <context id="c" bordered="true">
@@ -25,13 +26,18 @@
     <context id="d">
       <risk class="coordination" />
       <risk class="learning-curve" />
-      <risk class="communication" />
+      <risk id="1" class="communication" />
+      <risk id="2" class="schedule" />
       <label id="4">
         <text>Attendant Risks (Worse)</text>
         <symbols />
       </label>
     </context>
 
+    <link>
+      <from reference="1" />
+      <to reference="2" class="arrow" />
+    </link>
 
 
   </diagram>
