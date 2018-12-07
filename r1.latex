@@ -469,8 +469,8 @@ risk. This means that in \textbf{Book Two} (Risk-First: Tools and
 Practices), we can properly analyse Extreme Programming (and Scrum,
 Waterfall, Lean and all the others) and \emph{understand} what drives
 them. Since they are designed to deliver successful software projects,
-they must be about mitigate risks, and we will uncover \emph{exactly
-which risks are mitigated} and \emph{how they do it}.
+they must be about managing risks, and we will uncover \emph{exactly
+which risks} and \emph{how they do it}.
 
 \hypertarget{where}{%
 \section{Where}\label{where}}
@@ -823,22 +823,22 @@ didn't know and the Hidden Risks reveal themselves. Other things we were
 worried about don't materialise. Things we thought would be minor risks
 turn out to be greater.
 
-Our model is forced to Meet Reality, and the model changes, forcing us
-to deal with these risks, as shown in diagram
-ref\{model\_vs\_reality.png\} . Whenever we try to \emph{do something}
-about a risk, it is called Taking Action. Taking Action \emph{changes}
-reality, and with it your Internal Model of the risks you're facing.
-That's because it's only by interacting with the world that we add
-knowledge to our Internal Model about what works and what doesn't. Even
-something as passive as \emph{checking the shop opening times} is an
-action, and it improves on our Internal Model of the world.
-
 \begin{figure}
 \centering
 \includegraphics{images/generated/introduction/model_vs_reality-400dpi.png}
 \caption{How Taking Action affects Reality, and also changes your
 Internal Model\label{model_vs_reality.png}}
 \end{figure}
+
+Our model is forced to Meet Reality, and the model changes, forcing us
+to deal with these risks, as shown in Figure \ref{model_vs_reality.png}.
+Whenever we try to \emph{do something} about a risk, it is called Taking
+Action. Taking Action \emph{changes} reality, and with it your Internal
+Model of the risks you're facing. That's because it's only by
+interacting with the world that we add knowledge to our Internal Model
+about what works and what doesn't. Even something as passive as
+\emph{checking the shop opening times} is an action, and it improves on
+our Internal Model of the world.
 
 If we had a good Internal Model, and took the right actions, we should
 see positive outcomes. If we failed to manage the risks, or took
@@ -995,14 +995,14 @@ to the software. It's logged as a new feature request, but:
   which is already there but hard to find.
 \end{itemize}
 
-The diagram below shows how this plays out.
-
 \begin{figure}
 \centering
 \includegraphics{images/generated/introduction/development_process_3-400dpi.png}
 \caption{Development Process - Exposing Hidden
 Risks\label{development_process_3.png}}
 \end{figure}
+
+Figure \ref{development_process_3.png} shows how this plays out.
 
 This is a slightly contrived example, as you'll see. But let's follow
 our feature through the process and see how it meets reality slowly, and
@@ -1100,9 +1100,9 @@ Misimplementation'' and ``Duplicating Functionality''.
 
 Beneath the internal models, we are also showing real-world tangible
 artifacts. That is, the physical change we would expect to see as a
-result of taking action. In this diagram, the action will result in
-``New Code'' being added to the project, needed for the next steps of
-the development process.
+result of taking action. In Figure \ref{development_process_code.png},
+the action will result in ``New Code'' being added to the project,
+needed for the next steps of the development process.
 
 \hypertarget{integration}{%
 \subsection{Integration}\label{integration}}
@@ -2133,18 +2133,18 @@ because payment \emph{now} is better than payment in the future: there
 is the risk that something will happen to prevent that future payment.
 This is why we have \emph{interest rates} on loan payments.
 
-In diagram ref\{npv.png\} , you can see two future payments, Payment
-\textbf{A} of \pounds100 due in one year, and Payment \textbf{B} of
-\pounds150 due in 10 years. By discounting at a given rate (here at a
-high rate of 20\% per year) we can compare their worth \emph{now}. At
-this discount rate, Payment \textbf{A}, - arriving next year - has a far
-greater value.
-
 \begin{figure}
 \centering
 \includegraphics{images/numbers/npv.png}
 \caption{Net Present Value Discounting\label{npv.png}}
 \end{figure}
+
+In Figure \ref{npv.png}, you can see two future payments, Payment
+\textbf{A} of \pounds100 due in one year, and Payment \textbf{B} of
+\pounds150 due in 10 years. By discounting at a given rate (here at a
+high rate of 20\% per year) we can compare their worth \emph{now}. At
+this discount rate, Payment \textbf{A}, - arriving next year - has a far
+greater value.
 
 Can we do the same thing with risk? Let's introduce the concept of Net
 Present Risk, or NPR:
@@ -2910,8 +2910,8 @@ exacerbate) the two issues raised above when applied to software.
 \caption{Waterfall, Applied to a Software Project\label{waterfall3.png}}
 \end{figure}
 
-As you can see in the above diagram, some of the risks on the left
-\emph{are the same} as the ones on the right: the actions taken to
+As you can see in Figure \ref{waterfall3.png}, some of the risks on the
+left \emph{are the same} as the ones on the right: the actions taken to
 manage them made no difference (or made things worse). The inability to
 manage these risks led to the identification of a ``Software Crisis'',
 in the 1970's:
@@ -2975,12 +2975,13 @@ methodologies:
   separate entity to be managed, all of the above areas are sources of
   risk within a project, as we will see in Part 2.
 \item
-  \textbf{Scrum)}: Is a popular Agile methodology. Arguably, it is less
-  ``extreme'' than Extreme Programming, as it promotes a limited set,
-  more achievable set of agile practices, such as frequent releases,
-  daily meetings, a product owner and retrospectives. This simplicity
-  arguably makes it simpler to learn and adapt to and probably
-  contributes to Scrum's popularity over XP.
+  \textbf{\href{https://en.wikipedia.org/wiki/Scrum}{Scrum}}: Is a
+  popular Agile methodology. Arguably, it is less ``extreme'' than
+  Extreme Programming, as it promotes a limited set, more achievable set
+  of agile practices, such as frequent releases, daily meetings, a
+  product owner and retrospectives. This simplicity arguably makes it
+  simpler to learn and adapt to and probably contributes to Scrum's
+  popularity over XP.
 \item
   \textbf{\href{https://en.wikipedia.org/wiki/DevOps}{DevOps}}: Many
   software systems struggle at the boundary between ``in development''
@@ -3058,7 +3059,7 @@ processes: Choosing a methodology (or any process) reduces the amount of
 thinking individuals have to do. Following a process may avoid the
 risks, whether the implementer knows about them or not. And, it becomes
 the process that is responsible for failure, not the individual (as
-shown in the above diagram).
+shown in Figure \ref{one_size.png}).
 
 If we genuinely care about our projects, then it's critical that we
 match the choice of methodology to the risk profile of the project. We
@@ -3876,9 +3877,9 @@ information into his Internal Model and act on it? Perhaps not, if
 \section{Approach To Communication
 Risk}\label{approach-to-communication-risk}}
 
-There is a symmetry about the steps going on in Shannon's diagram, and
-we're going to exploit this in order to break down Communication Risk
-into it's main types.
+There is a symmetry about the steps going on in Figure
+\ref{communication_1.png}, and we're going to exploit this in order to
+break down Communication Risk into it's main types.
 
 \begin{figure}
 \centering
@@ -7319,12 +7320,12 @@ those of the overall organisation. For example:
 \hypertarget{security-risk}{%
 \section{Security Risk}\label{security-risk}}
 
-As shown in the above diagram, to mitigate Agency Risk \emph{within} a
-system, we can apply monitoring and goal-alignment. Where the Agency
-Risk is from an unwanted actors \emph{outside} the system, we can apply
-security. That is, ensuring that the environment we work in is
-\emph{safe} for the good actors to operate in, by keeping out the bad
-actors.
+As shown in Figure \ref{agency-risk.png}, to mitigate Agency Risk
+\emph{within} a system, we can apply monitoring and goal-alignment.
+Where the Agency Risk is from an unwanted actors \emph{outside} the
+system, we can apply security. That is, ensuring that the environment we
+work in is \emph{safe} for the good actors to operate in, by keeping out
+the bad actors.
 
 Interestingly, security is handled in very similar ways in all kinds of
 systems, whether biological, human or organisational.
@@ -7628,10 +7629,11 @@ above chart.
 Models\label{communication_marketing.png}}
 \end{figure}
 
-The chapter on Communication Risk introduced the above diagram for the
-spread of ideas. But what happens next? As we saw in Boundary Risk, the
-\textbf{Peter Principle} applies, people will use dependencies up to the
-point when they start breaking down.
+The chapter on Communication Risk introduced Figure
+\ref{communication_marketing.png} for the spread of ideas. But what
+happens next? As we saw in Boundary Risk, the \textbf{Peter Principle}
+applies, people will use dependencies up to the point when they start
+breaking down.
 
 \hypertarget{example-metrics}{%
 \subsection{Example: Metrics}\label{example-metrics}}
