@@ -6,51 +6,30 @@
   <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-113" name="Goal In Mind" style="kite9-min-width: 800pt;">
 
     <context id="c" bordered="true">
-
-      <group style="kite9-layout: down;">
-        <risk id="1" class="complexity" />
-        <risk id="2" class="dependency" />
-        <risk id="3" class="communication" />
+      <group style="kite9-layout: right">
+        <risk id="1" class="boundary" />
+        <risk id="2" class="protocol" />
+        <risk id="3" class="feature" />
       </group>
-
-        <risk id="bd" class="boundary" />
-
-        <description>Risks due to the choices we make around dependencies, and the limitations they place on our ability to change.</description>
--=
-      <label id="id_16">
-        <text>Internal Model</text>
-        <symbols />
-      </label>
     </context>
 
     <group style="kite9-layout: down; kite9-horizontal-align: left;">
-      <action>Careful Evaluation</action>
-      <action>Migration Projects</action>
+      <action>Extension 
+      (with backward compatibility)</action>
     </group>
 
     <context id="d">
 
       <risk class="complexity" />
-      <risk class="schedule" />
-
-      <label id="id_16">
-        <text>Attendant Risks</text>
-        <symbols />
-      </label>
+      <risk id="c1" class="conceptual-integrity" />
+      <risk id="c2" class="learning-curve" />
     </context>
 
-    <link>
-      <from reference="1" />
-      <to reference="bd" class="arrow"/>
-    </link>
-    <link drawDirection="RIGHT">
-      <from reference="2" />
-      <to reference="bd"  class="arrow"/>
-    </link>
-    <link>
-      <from reference="3" />
-      <to reference="bd"  class="arrow"/>
-    </link>
+  <link>
+    <from reference="c1" />
+    <to reference="c2" class="arrow"/>
+  </link>
+
 
   </diagram>
 </svg:svg>
