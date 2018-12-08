@@ -161,11 +161,11 @@ I find, a lot of code I write is of this nature:  trying to write the _glue code
 |Protocol Risk From A         |Protocol Risk        From B |Resulting Bridge Complexity  |Example                                                  |
 |-----------------------------|----------------------------|-----------------------------|---------------------------------------------------------|
 |Low                          |Low                         |Simple                       |Changing from one date format to another.                |
-|High                         |Low                         |Moderate                     |Status Dashboard, tbd                                    |
-|High                         |High                        |Complex                      |Object-Relational Mapping (ORM) Tools, (see below)       |
+|High                         |Low                         |Moderate                     |Status Dashboard.                                        |
+|High                         |High                        |Complex                      |Object-Relational Mapping (ORM) Tools.                   |
 |High + Evolving              |Low                         |Moderate, Versioned          |Simple Phone App, e.g. note-taker or calculator          |
 |Evolving                     |High                        |Complex                      |Modern browser (see below)                               |
-|Evolving                     |Evolving                    |Very Complex                 |Google Search, Scala (see below)                         |
+|Evolving                     |Evolving                    |Very Complex                 |Google Search, Scala                                     |
 
 <!--latex\end{sidewaystable} -->
 
@@ -212,7 +212,7 @@ Although ecosystems are one very pernicious type of boundary in software develop
 - **Integration Testing**:  Building a unit test is easy.  You are generally testing some code you have written, aided with a testing framework.  Your code and the framework are both written in the same language, which means low boundary risk.  But, to _integration test_ you need to step outside this boundary and so it becomes much harder.  This is true whether you are integrating with other systems (providing or supplying them with data) or parts of your own system (say testing the client-side and server parts together).  
 - **User Interface Testing**:  If you are supplying a user-interface, then the interface with the user is already a complex, under-specified risky [protocol](Communication-Risk#protocol-risk).  Although tools exist to automate UI testing (such as [Selenium](https://en.wikipedia.org/wiki/Selenium_(software)), these rarely satisfactorily mitigate this [protocol risk](Communication-Risk#protocol-risk):  can you be sure that the screen hasn't got strange glitches, that the mouse moves correctly, that the proportions on the screen are correct on all browsers?  
 - **Jobs**:  When you pick a new technology to learn and add to your CV, it's worth keeping in mind how useful this will be to you in the future.   It's career-limiting to be stuck in a dying ecosystem and need to retrain.
-- **Teams**:  if you're given license to build a new product within an existing team, are you creating [Boundary Risk](Boundary-Risk) by using tools that the team aren't familiar with?
+- **Teams**:  if you're asked to build a new tool for an existing team, are you creating [Boundary Risk](Boundary-Risk) by using tools that the team aren't familiar with?
 - **Organisations**: Getting teams or departments to work with each other often involves breaking down [Boundary Risk](Boundary-Risk).  Often the departments use different tool-sets or processes, and have different goals making the translation harder. 
 
 ## Likelihood of Change
