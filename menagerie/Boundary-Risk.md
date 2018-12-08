@@ -1,4 +1,4 @@
-![Draft](images/state/draft.png)
+![Draft](images/state/for-review.png)
 
 In the previous sections on [Dependency Risk](Dependency-Risk) we've touched on [Boundary Risk](Boundary-Risk) several times, but now it's time to tackle it head-on and discuss this important type of risk.  
 
@@ -7,6 +7,8 @@ In terms of the [Risk Landscape](Risk-Landscape), [Boundary Risk](Boundary-Risk)
 As we discussed in [Complexity Risk](Complexity-Risk), there is always the chance we end up at a [Dead End](Complexity-Risk#dead-end-risk), and we've done work that we need to throw away.  In this case, we'll have to head back and make a different decision.
 
 ## Emergence Through Choice
+
+![Boundary Risk is due to Complexity Risk, Dependency Risk and Communication Risk](images/generated/risks/boundary/boundary-risk.png)
 
 [Boundary Risk](Boundary-Risk) is an emergent risk, which exists at the intersection of [Complexity Risk](Complexity-Risk), [Dependency Risk](Dependency-Risk) and [Communication Risk](Communication-Risk).  Because of that, it's going to take a bit of time to pick it apart and understand it, so we're going to build up to this in stages.
 
