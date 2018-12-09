@@ -30,7 +30,7 @@ Let's look at a software example now.
 
 As discussed in [Software Dependency Risk](Software-Dependency-Risk), if we are going to use a software tool as a dependency, we have to accept the complexity of it's [protocols](Communication-Risk#protocols).  You have to use it's protocol: it won't come to you.   
 
-![Our System receives data from the `input`, translates it and sends it to the `output`.  But which dependency should we use for the translation, if any?](images/kite9/boundary-risk-ps.png)
+![Our System receives data from the `input`, translates it and sends it to the `output`.  But which dependency should we use for the translation, if any?](images/generated/risks/boundary/choices.png)
 
 Let's take a look at a hypothetical system structure, in the diagram above.  In this design, we have are transforming data from the `input` to the `output`.  But how should we do it?
 
@@ -115,7 +115,7 @@ But, by now, if they _are_ to be compared side-by-side, WordPress _should be bet
  - Creating features.
  - Improving the core platform.
  
-Is bigger always better? There are four further factors to consider...
+Is bigger always better? There are five further factors to consider...
 
 #### 1.  The Peter Principle
 

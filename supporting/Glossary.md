@@ -1,15 +1,13 @@
 ![Under Construction](images/state/uc.png)
 
 
-##### Abstraction
+## Abstraction
 
 The process of removing physical, spatial, or temporal details or attributes in the study of objects or systems in order to more closely attend to other details of interest.
 
 ## Feedback Loop
 
 ## Internal Model
-
-## Taking Action
 
 The most common use for [Internal Model](#internal-model) is to refer to the model of reality that you or I carry around in our heads.   You can regard the concept of [Internal Model](#internal-model) as being what you _know_ and what you _think_ about a certain situation.
 
@@ -21,6 +19,9 @@ Alternatively, we can use the term [Internal Model](#internal-model) to consider
 - A codebase is a team's [Internal Model](#internal-model) written down and encoded as software.
 
 An internal model _represents_ reality:  reality is made of atoms, whereas the internal model is information.
+
+## Taking Action
+
 
 ## Meet Reality
 

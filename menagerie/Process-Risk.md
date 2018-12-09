@@ -8,20 +8,70 @@ In the software development world (and the business world generally) processes c
 
 ## The Purpose Of Process
 
-Process exists to mitigate other kinds of risk, and for this reason, we'll be looking at them again in [Part 3: Practices](Process), where we'll look at how you can design processes to mitigate risks on your own project.
+Process exists to mitigate other kinds of risk.  For example:
 
-Until we get there, let's look at some examples of how process can mitigate other risks:
-
- - [Coordination Risk](Coordination-Risk):   You can often use process to help people coordinate.  For example, a [Production Line](https://en.wikipedia.org/wiki/Production_line) is a process where work being done by one person is pushed to the next person when it's done.  A meeting booking process ensures that people will all attend a meeting together at the same place and time, and that a room is available for it. 
- - [Dependency Risk](Dependency-Risk): You can use processes to make dependencies explicit and mitigate dependency risk.  For example, a process for hiring a car will make sure there is a car available at the time you need it.  Alternatively, if we're processing a loan application, we might need evidence of income or bank statements.  We can push this [Dependency Risk](Dependency-Risk) onto the person asking for the loan, by making it part of the process and not accepting the application until this has been provided.
- - [Complexity Risk](Complexity-Risk): Working _within a process_ can reduce the amount of [Complexity](Complexity-Risk) you have to deal with.  We accept that processes are going to slow us down, but we appreciate the reduction in risk this brings.  (They allow us to trade [Complexity](Complexity-Risk) for [Schedule risk](Scarcity-Risk#schedule-risk)).  For example, setting up a server might be complex, but filling in a form to do the job might simplify things.  Clearly, the complexity hasn't gone away, but it's hidden within the process.  Process therefore can provide [Abstraction](Glossary#Abstraction).    mcdonalds.  tbd
+ - **[Coordination Risk](Coordination-Risk):**   You can often use process to help people coordinate.  For example, a [Production Line](https://en.wikipedia.org/wiki/Production_line) is a process where work being done by one person is pushed to the next person when it's done.  A meeting booking process is designed to efficiently allocate meeting rooms. 
  - [Operational Risk](Operational-Risk):  [Operational Risk](Operational-Risk) encompasses the risk of people _not doing their job properly_.  But, by having a process, (and asking, did this person follow the process?) you can draw a distinction between a process failure and a personnel failure.  For example, making a loan to a money launderer _could_ be a failure of the loan agent.   But, if they followed the _process_, it's a failure of the [Process](Process-Risk) itself. 
+ - [Complexity Risk](Complexity-Risk): Working _within a process_ can reduce the amount of [Complexity](Complexity-Risk) you have to think about.  We accept that processes are going to slow us down, but we appreciate the reduction in risk this brings.  Clearly, the complexity hasn't gone away, but it's hidden within the process.  Process therefore can provide [Abstraction](Glossary#Abstraction).  [McDonalds](https://en.wikipedia.org/wiki/McDonald's) tries to design its operation so that preparing each food item is a simple process to follow, reducing complexity (and training time) for the staff.
 
 ![Introducing process can mitigate many risks for a team, but there are attendant process risks created.](images/kite9/process-risk-introduction.png)
+
+These are all examples of [Risk Mitigation](Glossary#Mitigated-risk) for the _owners_ of the process.  But the _consumers_ of the process end up picking up [Process Risks](Process-Risk) too:
+
+ - **[Invisibility Risk](Communication-Risk#invisibility-risk):** It's often not possible to see how far along a process is to completion.  Sometimes, you can do this to an extent.  For example, when I send a package for delivery, I can see roughly how far it's got on the tracking website.  But, this is still less-than-complete information, and is a representation of reality.    
+ - **[Feature Fit Risk](Feature-Risk#feature-fit-risk):** You have to be careful to match the process to the outcome you want.  Sometimes, it's easy to waste time on the wrong process, for example filling out a
+ - **[Dead-End Risk](Complexity-Risk#dead-end-risk):** Even if you have the right process, initiating a process has no guarantee that your efforts won't be wasted and you'll be back where you started from.  The chances of this happening increase as you get further from the standard use-case for the process, and the sunk cost increases with the length of time the process takes to complete.
+ - **[Feature Access Risk](Feature-Risk#feature-access-risk):** Processes generally handle the common stuff, but ignore the edge cases.  If the exceptional cases are not dealt with in 
+
+### Processes And Invisibility Risk
+
+Processes tend to work well for the common cases, because *practice makes perfect*.  but they are really tested when unusual situations occur.  Expanding processes to deal with edge-cases incurs [Complexity Risk](Complexity-Risk), so often it's better to try and have clear boundaries of what is "in" and "out" of the process' domain.
+
+Sometimes, processes are _not_ used commonly.  How can we rely on them anyway?  Usually, the answer is to build in extra [feedback loops](Glossary#feedback-loop) anyway:
+
+- Testing that backups work, even when no backup is needed.
+- Running through a disaster recovery scenario at the weekend.
+- Increasing the release cadence, so that we practice the release process more.
+
+The feedback loops allow us to perform [Retrospectives and Reviews](Review) to improve our processes. 
  
-These are all examples of [Risk Mitigation](Glossary#Mitigated-risk) for the _owners_ of the process.  The _consumers_ of the process end up picking up most of the [Process Risks](Process-Risk).  Let's see how this comes about.
+### Bureaucracy Risk
+
+Where we've talked about process evolution above, the actors involved have been acting in good faith:   they are working to mitigate risk in the organisation.  The [Process Risk](Process-Risk) that accretes along the way is an _unintended consequence_:  There is no guarantee that the process that arises will be humane and intuitive.  Many organisational processes end up being baroque or Kafka-esque, forcing unintuitive behaviour on their users.  This is partly because process design is _hard_, and it's difficult to anticipate all the various ways a process will be used ahead-of-time.  So, some of [Bureaucracy Risk](Process-Risk#bureaucracy-risk) is due to [Complexity](Complexity-Risk).
+
+But [Parkinson's Law](https://en.wikipedia.org/wiki/Parkinsons_law) takes this one step further:  the human actors shaping the organisation will abuse their positions of power in order to further their own careers (this is [Agency Risk](Agency-Risk), which we will come to in a future section):
+
+> "Parkinson's law is the adage that "work expands so as to fill the time available for its completion". It is sometimes applied to the growth of bureaucracy in an organisation... He explains this growth by two forces: (1) 'An official wants to multiply subordinates, not rivals' and (2) 'Officials make work for each other.'" - [Parkinson's Law, _Wikipedia_](https://en.wikipedia.org/wiki/Parkinsons_law)  
+
+This implies that there is a tendency for organisations to end up with _needless levels of [Bureaucratic Risk](Process-Risk#bureaucracy-risk)_.
+ 
+
+
+### Sign-Offs
+
+Often, Processes will include sign-off steps.  The [Sign-Off](Sign-Off) is an interesting mechanism:  
+ - By signing off on something for the business, people are usually in some part staking their reputation on something being right. 
+ - Therefore, you would expect that sign-off involves a lot of [Agency Risk](Agency-Risk):  people don't want to expose themselves in career-limiting ways.  
+ - Therefore, the bigger the risk they are being asked to swallow, the more cumbersome and protracted the sign off process.  
+ 
+Often, [Sign Offs](Sign-Off) boil down to a balance of risk for the signer:  on the one hand, _personal, career risk_ from signing off, on the other, the risk of upsetting the rest of the staff waiting for the sign-off, and the [Dead End Risk](Complexity-Risk#dead-end-risk) of all the effort gone into getting the sign off if they don't.  
+
+This is a nasty situation, but there are a couple of ways to de-risk this: 
+ - break [Sign Offs](Sign-Off) down into bite-size chunks of risk that are acceptable to those doing the sign-off.  
+ - Agree far-in-advance the sign-off criteria.  As discussed in [Risk Theory](Evaluating-Risk), people have a habit of heavily discounting future risk, and it's much easier to get agreement on the _criteria_ than it is to get the sign-off. 
+
+### Software Processes
+
+tbd
+
+
+tbd. processes as a response to legal environment.
 
 ## Evolution Of Business Process
+
+
+
+
 
 Before we get to examining what constitutes [Process Risks](Process-Risk), let's consider how processes _form_.  Specifically, we're going to look at [Business Process](https://en.wikipedia.org/wiki/Business_process):
 
@@ -85,73 +135,4 @@ For many years I have worked in the Finance Industry, and it's given me time to 
 
 ... and so on.  
 
-## Process Risks
-
-![Process Risk](images/generated/risks/process/process-risk.png)
-
-**Process Risk**, then, is a type of [Dependency Risk](Dependency-Risk), where you are relying on a process.  In a way, it's no different from any other kind of [Dependency Risk](Dependency-Risk).   But [Process Risk](Process-Risk) manifests itself in fairly predictable ways:
-
- - [Reliability Risk](Dependency-Risk#reliability-risk): If _people_ are part of the process, there's the chance that they forget to follow the process itself, and miss steps or forget your request completely.  The reliability is related to the amount of [Complexity Risk](Complexity-Risk) the process is covering.
- - [Invisibility Risk](Communication-Risk#invisibility-risk): Usually, processes (like other dependencies) trade [Complexity Risk](Complexity-Risk) for visibility:  it's often not possible to see how far along a process is to completion.  Sometimes, you can do this to an extent.  For example, when I send a package for delivery, I can see roughly how far it's got on the tracking website.  But, this is still less-than-complete information, and is a representation of reality.    
- - [Fit Risk](Feature-Risk#feature-fit-risk): You have to be careful to match the process to the outcome you want.  Sometimes, it's easy to waste time on the wrong process.
- - [Dead-End Risk](Complexity-Risk#dead-end-risk): Even if you have the right process, initiating a process has no guarantee that your efforts won't be wasted and you'll be back where you started from.  The chances of this happening increase as you get further from the standard use-case for the process, and the sunk cost increases with the length of time the process takes to report back.
- - [Agency Risk](Agency-Risk): Due to Parkinson's Law, see below.
- - [Operational Risk](Operational-Risk): Where processes fail, this is often called [Operational Risk](Operational-Risk), which we'll address further in it's own section.
- - [Credit Risk](Process-Risk#credit-risk): Where you pay for something to be done, but then end up without the outcome you want.  Let's look at that in more detail.
-
-### Processes And Invisibility Risk
-
-Processes tend to work well for the common cases, because *practice makes perfect*.  but they are really tested when unusual situations occur.  Expanding processes to deal with edge-cases incurs [Complexity Risk](Complexity-Risk), so often it's better to try and have clear boundaries of what is "in" and "out" of the process' domain.
-
-Sometimes, processes are _not_ used commonly.  How can we rely on them anyway?  Usually, the answer is to build in extra [feedback loops](Glossary#feedback-loop) anyway:
-
-- Testing that backups work, even when no backup is needed.
-- Running through a disaster recovery scenario at the weekend.
-- Increasing the release cadence, so that we practice the release process more.
-
-The feedback loops allow us to perform [Retrospectives and Reviews](Review) to improve our processes. 
- 
-### Bureaucracy Risk
-
-Where we've talked about process evolution above, the actors involved have been acting in good faith:   they are working to mitigate risk in the organisation.  The [Process Risk](Process-Risk) that accretes along the way is an _unintended consequence_:  There is no guarantee that the process that arises will be humane and intuitive.  Many organisational processes end up being baroque or Kafka-esque, forcing unintuitive behaviour on their users.  This is partly because process design is _hard_, and it's difficult to anticipate all the various ways a process will be used ahead-of-time.  So, some of [Bureaucracy Risk](Process-Risk#bureaucracy-risk) is due to [Complexity](Complexity-Risk).
-
-But [Parkinson's Law](https://en.wikipedia.org/wiki/Parkinsons_law) takes this one step further:  the human actors shaping the organisation will abuse their positions of power in order to further their own careers (this is [Agency Risk](Agency-Risk), which we will come to in a future section):
-
-> "Parkinson's law is the adage that "work expands so as to fill the time available for its completion". It is sometimes applied to the growth of bureaucracy in an organisation... He explains this growth by two forces: (1) 'An official wants to multiply subordinates, not rivals' and (2) 'Officials make work for each other.'" - [Parkinson's Law, _Wikipedia_](https://en.wikipedia.org/wiki/Parkinsons_law)  
-
-This implies that there is a tendency for organisations to end up with _needless levels of [Bureaucratic Risk](Process-Risk#bureaucracy-risk)_.
- 
-### Credit Risk
-
-Where the process you depend on is being run by a third-party organisation, (or that party depends on you) you are looking at [Credit Risk](Process-Risk#credit-risk) (also known as [Counterparty Risk](Process-Risk#credit-risk)):
-
-> "A credit risk is the risk of default on a debt that may arise from a borrower failing to make required payments... For example... A business or consumer does not pay a trade invoice when due [or] A business does not pay an employee's earned wages when due" - [Credit Risk, _Wikipedia_](https://en.wikipedia.org/wiki/Credit_risk)
-
-Money is _changing hands_ between you and the supplier of the process, and often, the money doesn't transfer _at the same time_ as the process is performed.  Let's look at an example:  Instead of hosting my website on a server in my office, I could choose to host my software project with an online provider.   I am trading [Complexity Risk](Complexity-Risk) for [Credit Risk](Process-Risk#credit-risk), because now, I have to care that the supplier is solvent.  
-
-There's a couple of ways this could go wrong:  They may _take my payment_, but then turn off my account.  Or, they could go bankrupt, and leave me with the costs of moving to another provider (this is also [Dead-End Risk](Complexity-Risk#dead-end-risk)).  
-
-Mechanisms like [insurance](https://en.wikipedia.org/wiki/Insurance_policy), [contracts](https://en.wikipedia.org/wiki/Contract) and [guarantees](https://en.wikipedia.org/wiki/Guarantee) help mitigate this risk at the cost of complexity and expense.
-
-![Credit Risk](images/generated/risks/process/credit-risk.png)
-
-### Sign-Offs
-
-Often, Processes will include sign-off steps.  The [Sign-Off](Sign-Off) is an interesting mechanism:  
- - By signing off on something for the business, people are usually in some part staking their reputation on something being right. 
- - Therefore, you would expect that sign-off involves a lot of [Agency Risk](Agency-Risk):  people don't want to expose themselves in career-limiting ways.  
- - Therefore, the bigger the risk they are being asked to swallow, the more cumbersome and protracted the sign off process.  
- 
-Often, [Sign Offs](Sign-Off) boil down to a balance of risk for the signer:  on the one hand, _personal, career risk_ from signing off, on the other, the risk of upsetting the rest of the staff waiting for the sign-off, and the [Dead End Risk](Complexity-Risk#dead-end-risk) of all the effort gone into getting the sign off if they don't.  
-
-This is a nasty situation, but there are a couple of ways to de-risk this: 
- - break [Sign Offs](Sign-Off) down into bite-size chunks of risk that are acceptable to those doing the sign-off.  
- - Agree far-in-advance the sign-off criteria.  As discussed in [Risk Theory](Evaluating-Risk), people have a habit of heavily discounting future risk, and it's much easier to get agreement on the _criteria_ than it is to get the sign-off. 
-
-### Software Processes
-
-tbd
-
-
-tbd. processes as a response to legal environment.
 
