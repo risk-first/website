@@ -14,7 +14,7 @@ Process exists to mitigate other kinds of risk.  For example:
  - **[Operational Risk](Operational-Risk):**  This encompasses the risk of people _not doing their job properly_.  But, by having a process, (and asking, did this person follow the process?) you can draw a distinction between a process failure and a personnel failure.  For example, making a loan to a money launderer _could_ be a failure of the loan agent.   But, if they followed the _process_, it's a failure of the [Process](Process-Risk) itself. 
  - **[Complexity Risk](Complexity-Risk):** Working _within a process_ can reduce the amount of [Complexity](Complexity-Risk) you have to think about.  We accept that processes are going to slow us down, but we appreciate the reduction in risk this brings.  Clearly, the complexity hasn't gone away, but it's hidden within the process.  Process therefore can provide [Abstraction](Glossary#Abstraction).  [McDonalds](https://en.wikipedia.org/wiki/McDonald's) tries to design its operation so that preparing each food item is a simple process to follow, reducing complexity (and training time) for the staff.
 
-![Introducing process can mitigate many risks for a team, but there are attendant process risks created.](images/kite9/process-risk-introduction.png)
+![Introducing process can mitigate many risks for a team, but there are attendant process risks created.](images/generated/risks/process/process-risk-introduction.png)
 
 These are all examples of [Risk Mitigation](Glossary#Mitigated-risk) for the _owners_ of the process.  But the _consumers_ of the process end up picking up [Process Risks](Process-Risk) too:
 
