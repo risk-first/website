@@ -12,7 +12,7 @@ Process exists to mitigate other kinds of risk.  For example:
 
  - **[Coordination Risk](Coordination-Risk):**   You can often use process to help people coordinate.  For example, a [Production Line](https://en.wikipedia.org/wiki/Production_line) is a process where work being done by one person is pushed to the next person when it's done.  A meeting booking process is designed to efficiently allocate meeting rooms. 
  - **[Operational Risk](Operational-Risk):**  This encompasses the risk of people _not doing their job properly_.  But, by having a process, (and asking, did this person follow the process?) you can draw a distinction between a process failure and a personnel failure.  For example, making a loan to a money launderer _could_ be a failure of the loan agent.   But, if they followed the _process_, it's a failure of the [Process](Process-Risk) itself. 
- - **[Complexity Risk](Complexity-Risk):** Working _within a process_ can reduce the amount of [Complexity](Complexity-Risk) you have to think about.  We accept that processes are going to slow us down, but we appreciate the reduction in risk this brings.  Clearly, the complexity hasn't gone away, but it's hidden within the process.  Process therefore can provide [Abstraction](Glossary#Abstraction).  [McDonalds](https://en.wikipedia.org/wiki/McDonald's) tries to design its operation so that preparing each food item is a simple process to follow, reducing complexity (and training time) for the staff.
+ - **[Complexity Risk](Complexity-Risk):** Working _within a process_ can reduce the amount of [Complexity](Complexity-Risk) you have to think about.  We accept that processes are going to slow us down, but we appreciate the reduction in risk this brings.  Clearly, the complexity hasn't gone away, but it's hidden within design of the process.  For example, [McDonalds](https://en.wikipedia.org/wiki/McDonald's) tries to design its operation so that preparing each food item is a simple process to follow, reducing complexity (and training time) for the staff.
 
 ![Introducing process can mitigate many risks for a team, but there are attendant process risks created.](images/generated/risks/process/process-risk-introduction.png)
 
@@ -67,21 +67,19 @@ tbd
 
 tbd. processes as a response to legal environment.
 
-## Evolution Of Business Process
+## Evolution Of Process
 
+Why do we build processes?  I am going to argue that the main reason this happens is due to risk mitigation.  Processes form because of a desire to mitigate risk.  And, when we follow that desire, we end up in an evolutionary or gradient-descent style scenario of risk reduction.
 
-
-
-
-Before we get to examining what constitutes [Process Risks](Process-Risk), let's consider how processes _form_.  Specifically, we're going to look at [Business Process](https://en.wikipedia.org/wiki/Business_process):
+Here, we are going to look at how a [Business Process](https://en.wikipedia.org/wiki/Business_process) might mature within an organisation.
 
 > "**Business Process** or **Business Method** is a collection of related, structured activities or tasks that in a specific sequence produces a service or product (serves a particular business goal) for a particular customer or customers." - [Business Process, _Wikipedia_](https://en.wikipedia.org/wiki/Business_process)
 
-Business Processes often arise in response to an unmet need within an organisation.  And, as we said above, they are usually there to mitigate other risks.  Let's look at an example life-cycle of how that can happen.
+Let's look at an example life-cycle of how that can happen in a step-wise way.
 
-![Step 0: Clients `C` need `A` to do their jobs](images/kite9/process-risk-0.png)
+![Step 0: Clients `C` need `A` to do their jobs](images/generated/risks/process/step1.png)
 
-0.  Let's say, there exists a group of people inside a company `C`, which need a certain something `A` in order to get their jobs done.  It might be a producing a resource, or dealing with some source of complexity, or whatever.
+1.  As the above diagram shows, there exists a group of people inside a company `C`, which need a certain something `A` in order to get their jobs done.  Because they need `A` to do their jobs, they have [Dependency Risk](Dependency-Risk) on it.  The harder it is for them to secure `A`, the higher the risk.
 
 ![Step 1: Person B doing A for company C](images/kite9/process-risk-1.png)
 

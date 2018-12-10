@@ -1,10 +1,11 @@
 ![For Review](images/state/for-review.png)
 
-[Coordination Risk](Coordination-Risk) is the risk that, a group of people (or processes), maybe with a similar [Goal In Mind](Glossary#Goal-In-Mind) they can fail to coordinate on a way to meet this goal and end up making things worse.  [Coordination Risk](Coordination-Risk) is embodied in the phrase "Too Many Cooks Spoil The Broth":  more people, opinions or agents often make results worse.
+As in [Agency Risk](Agency-Risk), we are going to use the term _agent_, which refers to anything with [agency](https://github.com/risk-first/website/wiki/Agency-Risk#software-processes-and-teams) in a system to decide it's own fate.  That is, an agent has an [Internal Model](Glossary#Internal-Model),  and can [take actions](Glossary#taking-action) based on it.  Here, we leave aside [Agency Risk](Agency-Risk) and work on the assumption that the agents _are_ working towards a common [Goal](Glossary#Goal-In-Mind), even though in reality it's not always the case, as we saw in the section on [Agency Risk](Agency-Risk).
 
-As in [Agency Risk](Agency-Risk), we are going to use the term _agent_, which refers to anything with [agency](https://github.com/risk-first/website/wiki/Agency-Risk#software-processes-and-teams) in a system to decide it's own fate.  That is, an agent has an [Internal Model](Glossary#Internal-Model),  and can [take actions](Glossary#taking-action) based on it.  Here, we're going to work on the assumption that the agents _are_ working towards a common [Goal](Glossary#Goal-In-Mind), even though in reality it's not always the case, as we saw in the section on [Agency Risk](Agency-Risk).
+[Coordination Risk](Coordination-Risk) is the risk that, a group of people or processes, maybe with a common [Goal In Mind](Glossary#Goal-In-Mind), can fail to coordinate to meet this goal and end up making things worse.  [Coordination Risk](Coordination-Risk) is embodied in the phrase "Too Many Cooks Spoil The Broth":  more people, opinions or _agents_ often make results worse.
 
- In this section, we'll first build up [A Model Of Coordination Risk](#a-model-of-coordination-risk) and what exactly coordination means and why we do it.  Then, we'll look at some classic [Problems of Coordination](#problems-of-coordination).  Then, we're going to consider agency at several different levels (because of [Scale Invariance](Evaluating-Risk#invariances-2-scale-invariance)) .  We'll look at:
+In this section, we'll first build up [a model of Coordination Risk](#a-model-of-coordination-risk) and what exactly coordination means and why we do it.  Then, we'll look at some classic [problems of coordination](#problems-of-coordination).  Then, we're going to consider agency at several different levels (because of [Scale Invariance](Evaluating-Risk#invariances-2-scale-invariance)) .  We'll look at:
+
  - [Team Decision Making](#team-decision-making),
  - [Living Organisms](#in-living-organisms),
  - [Larger Organisations](#large-organisations) and the staff within them,
@@ -16,13 +17,9 @@ But for now, let's crack on and examine where [Coordination Risk](Coordination-R
 
 ## A Model Of Coordination Risk
 
-Earlier, in [Dependency Risk](Dependency-Risk), we looked at various resources (time, money, people, events etc) and showed how we could [Depend On Them](Dependency-Risk), taking on risk.  Here, however, we're looking at the situation where there is _competition for those dependencies_, that is, [Scarcity Risk](Scarcity-Risk):   other parties want to use them in a different way.  
+Earlier, in [Dependency Risk](Dependency-Risk), we looked at various resources (time, money, people, events etc) and showed how we could [depend On them](Dependency-Risk), taking on risk.  Here, however, we're looking at the situation where there is _competition for those dependencies_, that is, [Scarcity Risk](Scarcity-Risk):   other parties want to use them in a different way.  
 
-### Competition
-
-The basic problem of [Coordination Risk](Coordination-Risk), then, is _competition_.  Sometimes, competition is desireable (such as in sports and in markets), but sometimes competition is a waste and cooperation would be more efficient.   Without coordination, we would deliberately or accidentally compete for the same [Dependencies](Dependency-Risk), which is wasteful.  
-
-Why is this wasteful?  
+### Law Of Diminishing Returns
 
 One argument could come from [Diminishing Returns](https://en.wikipedia.org/wiki/Diminishing_returns), which says that the earlier units of a resource (say, chocolate bars) give you more benefit than later ones.  
 
