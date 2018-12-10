@@ -77,46 +77,27 @@ Here, we are going to look at how a [Business Process](https://en.wikipedia.org/
 
 Let's look at an example life-cycle of how that can happen in a step-wise way.
 
-![Step 0: Clients `C` need `A` to do their jobs](images/generated/risks/process/step1.png)
+![Step 1: Clients `C` need `A` to do their jobs](images/generated/risks/process/step1.png)
 
-1.  As the above diagram shows, there exists a group of people inside a company `C`, which need a certain something `A` in order to get their jobs done.  Because they need `A` to do their jobs, they have [Dependency Risk](Dependency-Risk) on it.  The harder it is for them to secure `A`, the higher the risk.
+1.  As the above diagram shows, there exists a group of people inside a company `C`, which need a certain something `A` in order to get their jobs done.  Because they are organising, providing and creating `A` to do their jobs, they are responsible for all the [Complexity Risk](Complexity-Risk) of `A`.  The harder it is for them to secure `A`, the higher the risk.
 
-![Step 1: Person B doing A for company C](images/kite9/process-risk-1.png)
+![Step 2: Team `B` doing `A` for clients `C`](images/generated/risks/process/step2.png)
 
-1.  Person `B` in a company starts producing `A` _as a service to others_.  This is really useful! It makes the the lives of clients in `C` much easier as they have an easier path to `A` than before.  `B` gets busy keeping `C` happy.  No one cares.  But then, `B` goes on holiday.  `A` doesn't get done, and people now care:  the [Dependency Risk](Dependency-Risk) is suddenly apparent. 
+2.  Because `A` is so complex, a new team (`B`) is spun up to deal with the [Complexity Risk](Complexity-Risk), and let `C` get on with their "proper" jobs.  As shown in the diagram above, this is really useful:  It makes `C`'s job much easier (reduced [Complexity Risk](Complexity-Risk) as they have an easier path to `A` than before.  But the risk for `A` hasn't really gone - they're now just dependent on `B` instead.  When members of `B` fail to deliver, this is [Staff Risk](Scarcity-Risk#staff-risk) for `C`.   
 
-![Step 2: Team T is created to do A for Company C](images/kite9/process-risk-2.png)
+![Step 3: Team `B` formalises the arrangement with a Process](images/generated/risks/process/step3.png)
 
-2.  Either, `B` co-opts other people to help, gets given a team (`T`), or someone else forms a team `T` containing `B` to get the job done "properly".  
- - `T` is responsible for doing `A`, but it needs to supply the company with `A` reliably and responsibly, otherwise there will be trouble, so they try and please all of their clients as far as possible.  
- - This is a good deal for their clients within `C`, but because there is a lot of variation in what the clients ask for, `T` end up absorbing a lot of [Complexity Risk](Complexity-Risk) and are overworked.  
- - This is attendant [Schedule Risk](Scarcity-Risk#schedule-risk): They either need to streamline what they are doing, or get a larger budget, because all this extra [Complexity](Complexity-Risk) impacts their ability to reliably deliver `A`.  
+3. In order to standardize the response from `B`, and also to reduce scope-creep in requests from `C`, `B` organises bureaucratically, so that there is a controlled process (`P`) by which `A` can be accessed.  Members of teams `B` and `C` now interact via some request mechanism like forms (or another protocol).  
 
-![Team T protects itself from complexity with a process, P](images/kite9/process-risk-3.png)
-
-3. `T` organises bureaucratically, so that there is a controlled process (`P`) by which `A` can be accessed.  Like a cell, they have arranged a protective barrier around themselves, the strength of which depends on the power conferred to them by control of `A`. 
-  - `P` probably involves filling in a form (or following some other [Protocol](Communication-Risk)).  
-  - `T` can now deal with requests on a first-come-first-served basis and deal with them all in the same way: [Complexity Risks](Complexity-Risk) are now the problem of the form-filler in `C`.  
-  - `T` has mitigated [Schedule Risk](Scarcity-Risk#schedule-risk) issues by drawing a line around the amount of [Complexity Risk](Complexity-Risk) they are willing to take on.
-  - `C` now has [Process Risk](Process-Risk):  will their requirements for `A` be met by `T`?  They have to submit to the process to find out... 
-
-![Team T protects itself from Coordination issues with sign-offs or other barriers](images/kite9/process-risk-4.png)
-
-4.   But it's hard to make sure the right clients get access to `A` at the right times, and it's necessary to synchronise access across company `C`.  (A [Coordination Risk](Coordination-Risk) issue.)  
-   - `T` reacts and sets up sign-off, authorisation or monetary barriers around `A`, moving the [Coordination Risk](Coordination-Risk) issue out of their team.
-   - But, for `C`, this _again_ increases the [Process Risk](Process-Risk) involved in using `A`. 
-   
-![Team T increases bureaucratic load, and pushes Process Risk onto C](images/kite9/process-risk-5.png)
-
-5.  But, there are abuses of `A`: people either misuse it, or use it too much.  (These are [Operational Risks](Operational-Risk)).  
- - `T` reacts by _increasing_ the amount of _process_ to use `A`, mitigating [Operational Risk](Operational-Risk) within their team, but...  
- - This corresponds to greater [Process Risk](Process-Risk) for clients in company `C`.
+  - Since this is [Abstraction](Glossary#abstraction), `C` now has [Invisibility Risk](Communication-Risk#invisibility-risk) since it can't access team `B` and see how it works.
+  - As shown in the above diagram, because of `P`, `B` can now deal with requests on a first-come-first-served basis and deal with them all in the same way: the more unusual requests from `C` might not fit the model.  These [Complexity Risks](Complexity-Risk) are now the problem of the form-filler in `C`.   
+  - Team `B` may also use `P` to introduce other bureaucracy like authorisation and sign-off steps or payment barriers.   All of this increases complexity for team C. 
 
 ![Person D acts as a middleman for customers needing some variant of `A`](images/kite9/process-risk-6.png)
 
-6.  Person `D`, who has experience working with team `T` acts as a middleman for customers requiring some variant of `A` for a subset of `C`.  They are able to help navigate the bureaucratic process (handle with [Process Risk](Process-Risk)).  The cycle potentially starts again: will `D` end up becoming a new team, with a new process? 
+4.  Teams like `B` can sometimes end up in "Monopoly" positions within a business.  This means that clients like `C` are forced to deal with whatever process `B` wishes to enforce.  Although they are unable to affect process `P`, `C` still have risks they want to transfer.  In the above diagram, Person `D`, who has experience working with team `B` acts as a middleman for some of `C`, requiring some variant of `A` .  They are able to help navigate the bureaucratic process (handle with [Process Risk](Process-Risk)).  The cycle potentially starts again: will `D` end up becoming a new team, with a new process? 
 
-In this example, you can see how the organisation evolves to mitigate risk around the use (and misuse) of `A`:  First, [Complexity Risk](Complexity-Risk), then [Coordination Risk](Coordination-Risk), then [Dependency Risk](Dependency-Risk) and finally, the [Process Risk](Process-Risk) was created to mitigate everything else.  This is an example of _Process following Strategy_: 
+In this example, you can see how the organisation evolves to mitigate risk around the use (and misuse) of `A`:  First, [Complexity Risk](Complexity-Risk), then [Coordination Risk](Coordination-Risk), then [Staff Risk](Scarcity-Risk#staff-risk) and finally, the [Process Risk](Process-Risk) was created to mitigate everything else.  This is an example of _Process following Strategy_: 
 
 > In this conception, you can see how the structure of an organisation (the teams and processes within it, the hierarchy of control) will 'evolve' from the resources of the organisation and the strategy it pursues.  Processes evolve to meet the needs of the organisation." - [Minzberg, _Strategy Safari_](http://www.mintzberg.org/books/strategy-safari)
 

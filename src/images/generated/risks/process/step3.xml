@@ -7,20 +7,29 @@
 
     <group style="kite9-layout: down;">
       <context>
-        <hidden>
-          <risk class="staff" />
-        </hidden>
         <mitigated>
-          <risk class="complexity" />
+          <risk class="staff" />
         </mitigated>
+        <hidden>
+          <risk class="invisibility" />
+        </hidden>
+        <hidden>
+          <risk class="complexity" />
+        </hidden>
       </context>
 
       <users id="c">C</users>
     </group>
+    
+    <group style="kite9-layout: down;">
+      <protocol-artifact id="p">P</protocol-artifact>
+    </group>
 
     <group style="kite9-layout: down;">
       <context>
-        <risk class="complexity" />
+        <mitigated>
+          <risk class="complexity" />
+        </mitigated>
       </context>
 
       <users id="b">B</users>
@@ -34,7 +43,15 @@
       <fromLabel>
         <text>Uses</text>
       </fromLabel>
-      <to reference="b" class="arrow" />
+      <to reference="p" class="arrow" />
+    </link>
+    
+    <link drawDirection="LEFT">
+      <from reference="b" />
+      <fromLabel>
+        <text>Introduces</text>
+      </fromLabel>
+      <to reference="p" class="arrow" />
     </link>
 
     <link drawDirection="RIGHT">

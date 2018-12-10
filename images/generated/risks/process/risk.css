@@ -43,7 +43,8 @@ computer,
 interface,
 component,
 channel-artifact,
-internal-model-artifact {
+internal-model-artifact,
+protocol-artifact {
 	kite9-type: container;
 	kite9-margin: 10pt;
 	kite9-link-inset: 10pt;
@@ -74,6 +75,10 @@ channel-artifact {
 
 component {
 	kite9-template: url(template.svg#component);
+}
+
+protocol-artifact {
+	kite9-template: url(template.svg#protocol-artifact);
 }
 
 mitigated {
