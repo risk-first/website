@@ -3,37 +3,40 @@
   <svg:defs>
     <svg:style type="text/css"> @import url("risk.css");</svg:style>
   </svg:defs>
-  <diagram xmlns="http://www.kite9.org/schema/adl"  id="diagram-113" name="Goal In Mind" style="kite9-min-width: 800pt;">
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-113" name="Goal In Mind" style="kite9-min-width: 800pt;">
 
-  <context id="c" bordered="true" style="kite9-layout: down; ">
+    <context id="c" bordered="true" style="kite9-layout: right; kite9-vertical-align: top;">
+      <group style="kite9-layout: down; kite9-vertical-align: top;">
+        <risk id="a" class="agency" />
 
-    <risk class="process" />
+        <description>Risks due to the fact that things you depend on have agency, and they have their own goals to pursue.</description>
 
-    <description>Risks due to the fact that when dealing with a dependency, we have to follow a particular protocol of communication, which may not work out the way we want.</description>
+      </group>
+      <group style="kite9-layout: down; ">
+        <risk id="p" class="process" />
 
-    <label  id="id_16">
-      <text>Internal Model</text>
-      <symbols />
-    </label>
-  </context>
+        <description>Risks due to the fact that when dealing with a dependency, we have to follow a particular protocol of communication, which may
+          not work out the way we want.
+        </description>
 
-  <group style="kite9-layout: down; kite9-horizontal-align: left;">
-    <action>Monitoring</action>
-    <action>Training</action>
-    <action>Guides</action>
-  </group>
-  
-  <context id="d">
-  
-    <risk class="complexity" />
-    <risk class="schedule" />
-  
-    <label  id="id_16">
-      <text>Attendant Risks</text>
-      <symbols />
-    </label>
-  </context>
+      </group>
 
+      <group style="kite9-layout: right; ">
+        <risk id="i" class="invisibility" />
+        <risk class="dead-end" />
+        <risk class="feature-access" />
+      </group>
+
+    </context>
+    
+    <link>
+      <from reference="p" />
+      <to reference="i" class="arrow "/>
+    </link>
+     <link class="invisible">
+      <from reference="p" />
+      <to reference="a" />
+    </link>
 
   </diagram>
 </svg:svg>
