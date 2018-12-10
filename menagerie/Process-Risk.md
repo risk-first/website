@@ -24,7 +24,7 @@ These are all examples of [Risk Mitigation](Glossary#Mitigated-risk) for the _ow
  
 ![Process Risk, and it's consequences, compared with Agency Risk](images/generated/risks/process/process-risk.png) 
  
-When we talk about "[Process Risk](Process-Risk)" we are really referring to these types of risks, arising from "following a set of instructions."  Compare this with  [Agency Risk](Agency-Risk), which is risks due to _not_ following the instructions, as shown in the above diagram (which we will review in a forthcoming section).
+When we talk about "[Process Risk](Process-Risk)" we are really referring to these types of risks, arising from "following a set of instructions."  Compare this with  [Agency Risk](Agency-Risk), which is risks due to _not_ following the instructions, as shown in the above diagram (which we will review in a forthcoming section).  Let's look at two examples, how [Process Risk](Process-Risk) can lead to [Invisibility Risks](Communication-Risk#invisibility-risk) and [Agency Risk](Agency-Risk).
 
 ### Processes And Invisibility Risk
 
