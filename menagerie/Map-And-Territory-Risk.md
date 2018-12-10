@@ -126,6 +126,8 @@ In the case of metrics, this is where they start being used for more than just i
  - If a team is _told_ to do lots of releases, they will perform lots of releases *at the expense of something else*.
  - If team members are promoted according to SLOC, they will make sure their code takes up as many lines as possible.
  - In the UK, ambulances were asked to wait before admitting patients to Emergency wards, in order that hospitals could [meet their targets](https://en.wikipedia.org/wiki/NHS_targets).
+ 
+> "Any observed statistical regularity will tend to collapse once pressure is placed upon it for control purposes." - [Goodhart's Law, _Wikipedia](https://en.wikipedia.org/wiki/Goodhart's_law)
   
 Some of this seems obvious:  _Of course_ SLOC is a terrible measure performance!  We're not that stupid anymore.  The problem is, it's not so much the _choice_ of metric, but the fact that _all_ metrics merely approximate reality with a few numbers.  The map is _always_ simpler than the territory, therefore there can be no perfect metrics.
 

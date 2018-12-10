@@ -102,11 +102,11 @@ Two key take-aways from this:
 For many years I have worked in the Finance Industry, and it's given me time to observe how, across an entire industry, process can evolve, both in response to regulatory pressure but also because of organisational maturity, and mitigating risks:
 
 1. Initially, I could release software by logging onto the production accounts with a shared password that everyone knew, and deploy software or change data in the database.  
-2. The first issue with this is [Agency Risk from bad actors](Agency-Risk):  How could you know that the numbers weren't being altered in the databases? Production auditing came in so that at least you could tell what was being changed and when, in order to point the blame later.
+2. The first issue with this is [Agency Risk from bad actors](Agency-Risk):  How could you know that the numbers weren't being altered in the databases? _Production Auditing_ was introduced so that at least you could tell what was being changed and when, in order to point the blame later.
 3. But, there was still plenty of scope for deliberate or accidental [Dead-End Risk](Complexity-Risk#dead-end-risk) damage.  Next, passwords were taken out of the hands of developers and you needed approval to "break glass" to get onto production.  
 4. The increasing complexity (and therefore [Complexity Risk](Complexity-Risk)) in production environments meant that sometimes, changes collided with each other, or were performed at inopportune times.  Change Requests were introduced.  This is an approval process which asks you to describe what you want to change in production, and why you want to change it.  
 5. The change request software is generally awful, making the job of raising change requests tedious and time-consuming.  Therefore, developers would _automate_ the processes for release, sometimes including the process to write the change request.  This allowed them to improve release cadence, at the expense of owning more code.
-6. Auditors didn't like the fact that this automation existed, because effectively, that meant that developers could get access to production with the press of a button, effectively taking you back to step 1.   So auditing of Change Requests had to happen.
+6. Auditors didn't like the fact that this automation existed, because effectively, that meant that developers could get access to production with the press of a button, effectively taking you back to step 1...
 
 ## Parkinson's Law
 
