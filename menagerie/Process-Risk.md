@@ -75,7 +75,7 @@ Here, we are going to look at how a [Business Process](https://en.wikipedia.org/
 
 > "**Business Process** or **Business Method** is a collection of related, structured activities or tasks that in a specific sequence produces a service or product (serves a particular business goal) for a particular customer or customers." - [Business Process, _Wikipedia_](https://en.wikipedia.org/wiki/Business_process)
 
-Let's look at an example life-cycle of how that can happen in a step-wise way.
+Let's look at an example of how that can happen in a step-wise way.
 
 ![Step 1: Clients `C` need `A` to do their jobs](images/generated/risks/process/step1.png)
 
@@ -83,11 +83,11 @@ Let's look at an example life-cycle of how that can happen in a step-wise way.
 
 ![Step 2: Team `B` doing `A` for clients `C`](images/generated/risks/process/step2.png)
 
-2.  Because `A` is so complex, a new team (`B`) is spun up to deal with the [Complexity Risk](Complexity-Risk), and let `C` get on with their "proper" jobs.  As shown in the diagram above, this is really useful:  It makes `C`'s job much easier (reduced [Complexity Risk](Complexity-Risk) as they have an easier path to `A` than before.  But the risk for `A` hasn't really gone - they're now just dependent on `B` instead.  When members of `B` fail to deliver, this is [Staff Risk](Scarcity-Risk#staff-risk) for `C`.   
+2.  Because `A` is so complex, a new team (`B`) is spun up to deal with the [Complexity Risk](Complexity-Risk), which lets `C` get on with their "proper" jobs.  As shown in the diagram above, this is really useful:  It makes `C`'s job much easier (reduced [Complexity Risk](Complexity-Risk)) as they have an easier path to `A` than before.  But the risk for `A` hasn't really gone - they're now just dependent on `B` instead.  When members of `B` fail to deliver, this is [Staff Risk](Scarcity-Risk#staff-risk) for `C`.   
 
 ![Step 3: Team `B` formalises the arrangement with a Process](images/generated/risks/process/step3.png)
 
-3. In order to standardize the response from `B`, and also to reduce scope-creep in requests from `C`, `B` organises bureaucratically, so that there is a controlled process (`P`) by which `A` can be accessed.  Members of teams `B` and `C` now interact via some request mechanism like forms (or another protocol).  
+3. Problems are likely to occur eventually in the `B`/`C` relationship.  Perhaps some members of the `B` team give better service than others, or deal with more variety in requests.   In order to standardize the response from `B`, and also to reduce scope-creep in requests from `C`, `B` organises bureaucratically, so that there is a controlled process (`P`) by which `A` can be accessed.  Members of teams `B` and `C` now interact via some request mechanism like forms (or another protocol).  
 
   - Since this is [Abstraction](Glossary#abstraction), `C` now has [Invisibility Risk](Communication-Risk#invisibility-risk) since it can't access team `B` and see how it works.
   - As shown in the above diagram, because of `P`, `B` can now deal with requests on a first-come-first-served basis and deal with them all in the same way: the more unusual requests from `C` might not fit the model.  These [Complexity Risks](Complexity-Risk) are now the problem of the form-filler in `C`.   
