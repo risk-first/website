@@ -1,4 +1,4 @@
-![Draft](images/state/draft.png)
+![For Review](images/state/for-review.png)
 
 [Process Risk](Process-Risk), as we will see, is the risk you take on whenever you embark on completing a _process_. 
 
