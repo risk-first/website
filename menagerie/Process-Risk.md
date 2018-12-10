@@ -21,6 +21,10 @@ These are all examples of [Risk Mitigation](Glossary#Mitigated-risk) for the _ow
  - **[Invisibility Risk](Communication-Risk#invisibility-risk):** It's often not possible to see how far along a process is to completion.  Sometimes, you can do this to an extent.  For example, when I send a package for delivery, I can see roughly how far it's got on the tracking website.  But, this is still less-than-complete information, and is a representation of reality.    
  - **[Dead-End Risk](Complexity-Risk#dead-end-risk):** Even if you have the right process, initiating a process has no guarantee that your efforts won't be wasted and you'll be back where you started from.  The chances of this happening increase as you get further from the standard use-case for the process, and the sunk cost increases with the length of time the process takes to complete.
  - **[Feature Access Risk](Feature-Risk#feature-access-risk):** Processes generally handle the common stuff, but ignore the edge cases.  For example, a form on a website might not be designed to be accessible to disabled people, or might only cater to some common subset of use-cases.
+ 
+![Process Risk, and it's consequences, compared with Agency Risk](images/generated/risks/process/process-risk.png) 
+ 
+When we talk about "[Process Risk](Process-Risk)" we are really referring to these types of risks, arising from "following a set of instructions."  Compare this with  [Agency Risk](Agency-Risk), which is risks due to _not_ following the instructions, as shown in the above diagram (which we will review in a forthcoming section).
 
 ### Processes And Invisibility Risk
 
@@ -47,13 +51,6 @@ This is a nasty situation, but there are a couple of ways to de-risk this:
 
  - break [Sign Offs](Sign-Off) down into bite-size chunks of risk that are acceptable to those doing the sign-off.  
  - Agree far-in-advance the sign-off criteria.  As discussed in [Risk Theory](Evaluating-Risk), people have a habit of heavily discounting future risk, and it's much easier to get agreement on the _criteria_ than it is to get the sign-off. 
-
-### Software Processes
-
-tbd
-
-
-tbd. processes as a response to legal environment.
  
 ## Evolution Of Process
 
