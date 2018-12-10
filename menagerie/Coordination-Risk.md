@@ -17,84 +17,82 @@ But for now, let's crack on and examine where [Coordination Risk](Coordination-R
 
 ## A Model Of Coordination Risk
 
-Earlier, in [Dependency Risk](Dependency-Risk), we looked at various resources (time, money, people, events etc) and showed how we could [depend On them](Dependency-Risk), taking on risk.  Here, however, we're looking at the situation where there is _competition for those dependencies_, that is, [Scarcity Risk](Scarcity-Risk):   other parties want to use them in a different way.  
+Earlier, in [Dependency Risk](Dependency-Risk), we looked at various resources (time, money, people, events etc) and showed how we could [depend on them](Dependency-Risk), taking on risk.  Here, however, we're looking at the situation where there is _competition for those dependencies_, that is, [Scarcity Risk](Scarcity-Risk):   other parties want to use them in a different way.  
 
 ### Law Of Diminishing Returns
 
+![Sharing Resources.  5 units are available, and the X axis shows A's consumption of the resource.  B gets whatever remains.  Total benefit is maximised somewhere in the middle](images/numbers/sharing.png)
+
 One argument could come from [Diminishing Returns](https://en.wikipedia.org/wiki/Diminishing_returns), which says that the earlier units of a resource (say, chocolate bars) give you more benefit than later ones.  
 
-We can see this in the graph below.  Let's say A and B compete over a resource, of which there are 5 units available.  For every extra A takes, B loses one.  The X axis shows A's consumption of the resource, so the biggest benefit to A is in the consumption of the first unit. 
-
-![Sharing Resources.  5 units are available, and the X axis shows A's consumption of the resource.  B gets whatever remains.  Total benefit is maximised somewhere in the middle](images/sharing.png)
+We can see this in the chart above.  Let's say A and B compete over a resource, of which there are 5 units available.  For every extra A takes, B loses one.  The X axis shows A's consumption of the resource, so the biggest benefit to A is in the consumption of the first unit. 
 
 As you can see, by _sharing_, it's possible that the _total benefit_ is greater than it can be for either individual.  But sharing requires coordination.  Further, the more competitors involved, the _worse_ a winner-take-all outcome is for total benefit.
 
 Just two things are needed for competition to occur:
 
- - Individual agents, trying to achieve [Goals](Glossary#Goal-In-Mind).
+ - Multiple, Individual agents, trying to achieve [Goals](Glossary#Goal-In-Mind).
  - Scarce Resources, which the agents want to use as [Dependencies](Dependency-Risk).
- 
-![A model of competition:  scarce resources, and individual agents competing for them.](images/kite9/coordination-2.png)
 
 ### Coordination via Communication
 
 The only way that the agents can move away from competition towards coordination is via [Communication](Communication-Risk), and this is where their coordination problems begin.  
 
-You might think, therefore, that this is just another type of [Communication Risk](Communication-Risk) problem, and that's often a part of it, but even with synchronized [Internal Models](Glossary#Internal-Model), coordination risk can occur.  Imagine the example of people all trying to madly leave a burning building.  They all have the same information (the building is on fire).  If they coordinate, and leave in an orderly fashion, they might all get out.  If they don't, and there's a scramble for the door, more people might die.
+[Coordination Risk](Coordination-Risk) commonly occurs where people have different ideas about how to achieve a [goal](Glossary#Goal-In-Mind), and they have different ideas because they have different [Internal Models](Glossary#internal-model).  As we saw in the section on [Communication Risk](Communication-Risk), we can only hope to synchronise [Internal Models](Glossary#Internal-Model) if there are high-bandwidth [Channels](Communication-Risk#channels) available for communication. 
 
-But commonly, [Coordination Risk](Coordination-Risk) occurs where people have different ideas about how to achieve a [goal](Glossary#Goal-In-Mind), and they have different ideas because they have different evaluations of the [Attendant Risk](Glossary#attendant-risk).  As we saw in the section on [Communication Risk](Communication-Risk), we can only hope to synchronize [Internal Models](Glossary#Internal-Model) if there are high-bandwidth [Channels](Communication-Risk#channels) available for communication. 
+You might think, therefore, that this is just another type of [Communication Risk](Communication-Risk) problem, and that's often a part of it, but even with synchronized [Internal Models](Glossary#Internal-Model), coordination risk can occur.  Imagine the example of people all trying to madly leave a burning building.  They all have the same information (the building is on fire).  If they coordinate, and leave in an orderly fashion, they might all get out.  If they don't, and there's a scramble for the door, more people might die.
 
 ![Coordination Risk - Mitigated by Communication](images/generated/risks/coordination/coordination-risk.png)
 
 ## Problems Of Coordination
 
-Let's unpack this idea, and review some classic problems of coordination, none of which can be addressed without good communication:
+Let's unpack this idea, and review some classic problems of coordination, none of which can be addressed without good communication.  Here are some examples:
 
-1. **Merging Data**.  If you are familiar with the source code control system, [Git](https://en.wikipedia.org/wiki/Git), you will know that this is a _distributed_ version control system.  That means that two or more people can propose changes to the same files without knowing about each other.  This means that at some later time, [Git](https://en.wikipedia.org/wiki/Git) then has to merge (or reconcile) these changes together.  Git is very good at doing this automatically, but sometimes, different people can independently change the same lines of code and these will have to be merged manually.  In this case, a human arbitrator "resolves" the difference, either by combining the two changes or picking a winner.
+1. **Merging Data:**  If you are familiar with the source code control system, [Git](https://en.wikipedia.org/wiki/Git), you will know that this is a _distributed_ version control system.  That means that two or more people can propose changes to the same files without knowing about each other.  This means that at some later time, [Git](https://en.wikipedia.org/wiki/Git) then has to merge (or reconcile) these changes together.  Git is very good at doing this automatically, but sometimes, different people can independently change the same lines of code and these will have to be merged manually.  In this case, a human arbitrator "resolves" the difference, either by combining the two changes or picking a winner.
 
-2. **Consensus**.  Making group decisions (as in elections) is often decided by votes.  But having a vote is a coordination issue, and requires that everyone has been told the rules:
+2. **Consensus:**  Making group decisions (as in elections) is often decided by votes.  But having a vote is a coordination issue, and requires that everyone has been told the rules:
   - Where will the vote be held?  
   - How long do you provide for the vote?  
   - What do you do about absentees?  
   - What if people change their minds in the light of new information?
   - How do you ensure everyone has enough information to make a good decision?
   
-3. **Factions**.  Sometimes, it's hard to coordinate large groups at the same time, and "factions" can occur.  That the world isn't a single big country is probably partly a testament to this:  countries are frequently separated by geographic features that prevent the easy flow of communication (and force).   We can also see this in distributed systems, with the ["split brain"](https://en.wikipedia.org/wiki/Split-brain_(computing)) problem.   This is where a network of processes becomes disconnected (usually due to a network failure between data centers), and you end up with two, smaller networks with different knowledge.  We'll address in more depth later.
+3. **Factions:** Sometimes, it's hard to coordinate large groups at the same time, and "factions" can occur.  That the world isn't a single big country is probably partly a testament to this:  countries are frequently separated by geographic features that prevent the easy flow of communication (and force).   We can also see this in distributed systems, with the ["split brain"](https://en.wikipedia.org/wiki/Split-brain_(computing)) problem.   This is where a network of processes becomes disconnected (usually due to a network failure between data centers), and you end up with two, smaller networks with different knowledge.  We'll address in more depth later.
 
-4. [Resource Allocation](https://en.wikipedia.org/wiki/Resource_allocation):  Ensuring that the right people are doing the right work, or the right resources are given to the right people is a coordination issue.  On a grand scale, we have [Logistics](https://en.wikipedia.org/wiki/Logistics), and [Economic Systems](https://en.wikipedia.org/wiki/Economic_system).  On a small scale, the office's _room booking system_ solves the coordination issue of who gets a meeting room using a first-come-first-served booking algorithm.  
+4. **[Resource Allocation](https://en.wikipedia.org/wiki/Resource_allocation):**  Ensuring that the right people are doing the right work, or the right resources are given to the right people is a coordination issue.  On a grand scale, we have [Logistics](https://en.wikipedia.org/wiki/Logistics), and [Economic Systems](https://en.wikipedia.org/wiki/Economic_system).  On a small scale, the office's _room booking system_ solves the coordination issue of who gets a meeting room using a first-come-first-served booking algorithm.  
 
-5. [Deadlock](https://en.wikipedia.org/wiki/Deadlock):  Deadlock refers to a situation where, in an environment where multiple parallel processes are running, the processing stops and no-one can make progress because the resources each process needs are being reserved by another process.  This is a specific issue in [Resource Allocation](https://en.wikipedia.org/wiki/Resource_allocation), but it's one we're familiar with in the computer science industry.  Compare with [Gridlock](https://en.wikipedia.org/wiki/Gridlock), where traffic can't move because other traffic is occupying the space it wants to move to already. 
+5. **[Deadlock](https://en.wikipedia.org/wiki/Deadlock):**  Deadlock refers to a situation where, in an environment where multiple parallel processes are running, the processing stops and no-one can make progress because the resources each process needs are being reserved by another process.  This is a specific issue in [Resource Allocation](https://en.wikipedia.org/wiki/Resource_allocation), but it's one we're familiar with in the computer science industry.  Compare with [Gridlock](https://en.wikipedia.org/wiki/Gridlock), where traffic can't move because other traffic is occupying the space it wants to move to already. 
 
-6.  [Race Conditions](https://en.wikipedia.org/wiki/Race_condition):  A race condition is where we can't be sure of the result of a calculation, because it is dependent on the ordering of events within a system.  For example, two separate threads writing the same memory at the same time (one ignoring and over-writing the work of the other) is a race.  
+6.  **[Race Conditions](https://en.wikipedia.org/wiki/Race_condition):**  A race condition is where we can't be sure of the result of a calculation, because it is dependent on the ordering of events within a system.  For example, two separate threads writing the same memory at the same time (one ignoring and over-writing the work of the other) is a race.  
 
-7.  **Contention**: Where there is [Scarcity Risk](Scarcity-Risk) for a [Dependency](Dependency-Risk), we might want to make sure that everyone gets fair use of it, by taking turns, booking, queueing and so on.  As we saw in [Scarcity Risk](Scarcity-risk), sometimes, this is handled for us by the [Dependency](Dependency-Risk) itself.  However if it isn't, it's the _users_ of the dependency who'll need to coordinate to use the resource fairly, again, by communicating with each other.
+7.  **Contention**: Where there is [Scarcity Risk](Scarcity-Risk) for a [dependency](Dependency-Risk), we might want to make sure that everyone gets fair use of it, by taking turns, booking, queueing and so on.  As we saw in [Scarcity Risk](Scarcity-risk), sometimes, this is handled for us by the [Dependency](Dependency-Risk) itself.  However if it isn't, it's the _users_ of the dependency who'll need to coordinate to use the resource fairly, again, by communicating with each other.
 
-## Team Decision Making
+## Decision Making
 
 Within a team, [Coordination Risk](Coordination-Risk) is at it's core about resolving [Internal Model](Glossary#Internal-Model) conflicts in order that everyone can agree on a [Goal In Mind](Glossary#Goal-In-Mind) and cooperate on getting it done.  Therefore, [Coordination Risk](Coordination-Risk) is worse on projects with more members, and worse in organizations with more staff.  
 
-If you are engaged in a solo project, do you suffer from [Coordination Risk](Coordination-Risk) at all?  Maybe:  sometimes, you can feel "conflicted" about the best way to solve a problem.  And weirdly, usually _not thinking about it_ helps.  Sleeping too.  (Rich Hickey calls this "[Hammock Driven Development](https://www.youtube.com/watch?v=f84n5oFoZBc)").  This is probably because, unbeknownst to you, your subconscious is furiously communicating internally, trying to resolve these conflicts itself, and will let you know when it's come to a resolution.  
+As an individual, do you suffer from [Coordination Risk](Coordination-Risk) at all?  Maybe:  sometimes, you can feel "conflicted" about the best way to solve a problem.  And weirdly, usually _not thinking about it_ helps.  Sleeping too.  (Rich Hickey calls this "[Hammock Driven Development](https://www.youtube.com/watch?v=f84n5oFoZBc)").  This is probably because, unbeknownst to you, your subconscious is furiously communicating internally, trying to resolve these conflicts itself, and will let you know when it's come to a resolution.  
 
-[Vroom and Yetton](https://en.wikipedia.org/wiki/Vroom-Yetton_decision_model) introduced a model of group decision making which delineated five different styles of decision making within a team. These are summarised in the table below (**AI, AII, CI, CII, GII**).  To this, I have added a sixth (**UI**), which is the _uncoordinated_ option, where everyone competes.   In the accompanying diagrams I have adopted the following convention:
+![Vroom And Yetton Decision Making Styles.  "d" indicates authority in making a decision.  Thin lines with arrow-heads show information flow, whilst thick lines show _opinions_ being passed around.](images/kite9/vroom-yetton.png)
+
+[Vroom and Yetton](https://en.wikipedia.org/wiki/Vroom-Yetton_decision_model) introduced a model of group decision making which delineated five different styles of decision making within a team. These are summarised in the table below (**AI, AII, CI, CII, GII**).  To this, I have added a sixth (**UI**), which is the _uncoordinated_ option, where everyone competes.   The diagram above illustrates these, with the following conventions:
+
  - Thin lines with arrow-heads show a flow of _information_, either one-way or two-way.
  - Thick lines show a flow of _opinion_.
  - Boxes with corners are _decision makers_, whereas curved corners don't have a part in the decision.
 
-![Vroom And Yetton Decision Making Styles.  "d" indicates authority in making a decision.  Thin lines with arrow-heads show information flow, whilst thick lines show _opinions_ being passed around.](images/kite9/vroom-yetton.png)
-
 <!--latex\begin{sidewaystable} -->
 
-|Type           |People Involved In Decision|Opinions         |Channels Of Communication                             |Coordination Risk                |Description                                |
-|---------------|---------------------------|-----------------|------------------------------------------------------|---------------------------------|-------------------------------------------|
-|**UI**         |1                          |1                |0                                                     |Competition                      |_No Coordination_|
-|**AI**         |1                          |1                |**s** (One message to each **subordinate**)           |Maximum Coordination Risk|Autocratic, top-down|
-|**AII**        |1                          |1                |2 x **s** (Messages from/to each **subordinate**)     |                                 |Autocratic, with information flow up.|
-|**CI**         |1                          |1 + **s**        |> 2 x **s**                                           |                                 |Individual Consultations|
-|**CII**        |1                          |1 + **s**        |> **s**<sup>2</sup>                                   |                                 |Group Consultation|
-|**GII**        |1 + **s**                  |1 + **s**        |> **s**<sup>2</sup>                                   |Maximum Communication Risk, Schedule Risk|Group Consultation with voting|
+| Type    | Description                               | Decision Makers | Opinions  | Channels Of Communication                        | Coordination Risk                         |
+|---------|-------------------------------------------|-----------------|-----------|--------------------------------------------------|-------------------------------------------|
+| **UI**  | Uncoordinated                             | 1               | 1         | 0                                                | Competition                               |
+| **AI**  | Autocratic                                | 1               | 1         | s                                                | Maximum Coordination Risk                 |
+| **AII** | Autocratic (with upward information flow) | 1               | 1         | s                                                |                                           |
+| **CI**  | Consultative (Individual)                 | 1               | 1 + **s** | 2s                                               |                                           |
+| **CII** | Consultative (Group)                      | 1               | 1 + **s** | <!--replace $s^2$ -->**s**²<!--endreplace -->    |                                           |
+| **GII** | Group Consultation and Voting             | 1 + **s**       | 1 + **s** | <!--replace $s^2$ -->**s**²<!--endreplace -->    | Maximum Communication Risk, Schedule Risk |
 
 <!--latex\end{sidewaystable} -->
-
 
 At the top, you have the _least_ consultative styles, and at the bottom, the _most_.   At the top, decisions are made with just the leader's [Internal Model](Glossary#Internal-Model) but moving down, the [Internal Models](Glossary#Internal-Model) of the rest of the team are increasingly brought into play.  
 
