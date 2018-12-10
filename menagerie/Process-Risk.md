@@ -8,13 +8,13 @@ Processes commonly involve _forms_:  If you're filling out a form (whether on pa
 
 ## The Purpose Of Process
 
-Process exists to mitigate other kinds of risk.  For example:
+![Introducing process can mitigate many risks](images/generated/risks/process/process-risk-introduction.png)
+
+As the above diagram shows, process exists to mitigate other kinds of risk.  For example:
 
  - **[Coordination Risk](Coordination-Risk):**   You can often use process to help people coordinate.  For example, a [Production Line](https://en.wikipedia.org/wiki/Production_line) is a process where work being done by one person is pushed to the next person when it's done.  A meeting booking process is designed to efficiently allocate meeting rooms. 
  - **[Operational Risk](Operational-Risk):**  This encompasses the risk of people _not doing their job properly_.  But, by having a process, (and asking, did this person follow the process?) you can draw a distinction between a process failure and a personnel failure.  For example, making a loan to a money launderer _could_ be a failure of the loan agent.   But, if they followed the _process_, it's a failure of the [Process](Process-Risk) itself. 
  - **[Complexity Risk](Complexity-Risk):** Working _within a process_ can reduce the amount of [Complexity](Complexity-Risk) you have to think about.  We accept that processes are going to slow us down, but we appreciate the reduction in risk this brings.  Clearly, the complexity hasn't gone away, but it's hidden within design of the process.  For example, [McDonalds](https://en.wikipedia.org/wiki/McDonald's) tries to design its operation so that preparing each food item is a simple process to follow, reducing complexity (and training time) for the staff.
-
-![Introducing process can mitigate many risks for a team, but there are attendant process risks created.](images/generated/risks/process/process-risk-introduction.png)
 
 These are all examples of [Risk Mitigation](Glossary#Mitigated-risk) for the _owners_ of the process.  But often the _consumers_ of the process end up picking up [Process Risks](Process-Risk) as a result:
 
@@ -24,7 +24,7 @@ These are all examples of [Risk Mitigation](Glossary#Mitigated-risk) for the _ow
  
 ![Process Risk, and it's consequences, compared with Agency Risk](images/generated/risks/process/process-risk.png) 
  
-When we talk about "[Process Risk](Process-Risk)" we are really referring to these types of risks, arising from "following a set of instructions."  Compare this with  [Agency Risk](Agency-Risk), which is risks due to _not_ following the instructions, as shown in the above diagram (which we will review in a forthcoming section).  Let's look at two examples, how [Process Risk](Process-Risk) can lead to [Invisibility Risks](Communication-Risk#invisibility-risk) and [Agency Risk](Agency-Risk).
+When we talk about "[Process Risk](Process-Risk)" we are really referring to these types of risks, arising from "following a set of instructions."  Compare this with  [Agency Risk](Agency-Risk) (which we will review in a forthcoming section), which is risks due to _not_ following the instructions, as shown in the above diagram .  Let's look at two examples, how [Process Risk](Process-Risk) can lead to [Invisibility Risks](Communication-Risk#invisibility-risk) and [Agency Risk](Agency-Risk).
 
 ### Processes And Invisibility Risk
 
@@ -55,7 +55,7 @@ This is a nasty situation, but there are a couple of ways to de-risk this:
  
 ## Evolution Of Process
 
-Why do we build processes?  I am going to argue that the main reason this happens is due to risk mitigation.  Processes form because of a desire to mitigate risk.  And, when we follow that desire, we end up in an evolutionary or gradient-descent style scenario of risk reduction.
+Writing software and designing processes are often overlapping activities.  Often, we build processes when we are writing software.  Since designing a process is an activity like any other on a project, you can expect that the Risk-First explanation for why we do this is _risk management_.  Processes arise because of a desire to mitigate risk.  And, when whole organisations follow that desire independently, we end up in an evolutionary or gradient-descent style scenario of risk reduction (as we will see below).
 
 Here, we are going to look at how a [Business Process](https://en.wikipedia.org/wiki/Business_process) might mature within an organisation.
 
@@ -73,7 +73,7 @@ Let's look at an example of how that can happen in a step-wise way.
 
 ![Step 3: Team `B` formalises the arrangement with a Process](images/generated/risks/process/step3.png)
 
-3. Problems are likely to occur eventually in the `B`/`C` relationship.  Perhaps some members of the `B` team give better service than others, or deal with more variety in requests.   In order to standardize the response from `B`, and also to reduce scope-creep in requests from `C`, `B` organises bureaucratically, so that there is a controlled process (`P`) by which `A` can be accessed.  Members of teams `B` and `C` now interact via some request mechanism like forms (or another protocol).  
+3. Problems are likely to occur eventually in the `B`/`C` relationship.  Perhaps some members of the `B` team give better service than others, or deal with more variety in requests.   In order to standardise the response from `B`, and also to reduce scope-creep in requests from `C`, `B` organises bureaucratically, so that there is a controlled process (`P`) by which `A` can be accessed.  Members of teams `B` and `C` now interact via some request mechanism like forms (or another protocol).  
 
   - As shown in the above diagram, because of `P`, `B` can now deal with requests on a first-come-first-served basis and deal with them all in the same way: the more unusual requests from `C` might not fit the model.  These [Complexity Risks](Complexity-Risk) are now the problem of the form-filler in `C`.   
   - Since this is [Abstraction](Glossary#abstraction), `C` now has [Invisibility Risk](Communication-Risk#invisibility-risk) since it can't access team `B` and see how it works.

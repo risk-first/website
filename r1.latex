@@ -3069,7 +3069,7 @@ methodologies, or even choose the right practices from one, we really
 need to understand the \emph{types of risks} we face on software
 projects. This is where we go next in Part 2.
 
-\part{Risk}
+\part{The Risk Landscape}
 
 \hypertarget{risk-landscape}{%
 \chapter{Risk Landscape}\label{risk-landscape}}
@@ -7092,6 +7092,427 @@ Risk.
   http://sandhill.com/article/how-to-evaluate-saas-vendors-five-key-considerations/
 \end{itemize}
 
+\hypertarget{process-risk}{%
+\chapter{Process Risk}\label{process-risk}}
+
+Process Risk, as we will see, is the risk you take on whenever you
+embark on completing a \emph{process}.
+
+\begin{quotation}
+
+``\textbf{Process:} A process is a set of activities that interact to
+achieve a result.''
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Process}{\textemdash  Process, \emph{Wikipedia}}}
+\end{quotation}
+
+Processes commonly involve \emph{forms}: If you're filling out a form
+(whether on paper or on a computer) then you're involved in a process of
+some sort, whether an ``Account Registration'' process, ``Loan
+Application'' process or ``Consumer Satisfaction Survey'' process.
+Sometimes, they involve events occurring: a
+\href{https://en.wikipedia.org/wiki/Software_build}{build process} might
+start after you commit some code, for example. And, the \emph{code we
+write} is usually describing some kind of process we want performed.
+
+\hypertarget{the-purpose-of-process}{%
+\section{The Purpose Of Process}\label{the-purpose-of-process}}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/process/process-risk-introduction-400dpi.png}
+\caption{Introducing process can mitigate many
+risks\label{process-risk-introduction.png}}
+\end{figure}
+
+As Figure \ref{process-risk-introduction.png} shows, process exists to
+mitigate other kinds of risk. For example:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Coordination Risk:} You can often use process to help people
+  coordinate. For example, a
+  \href{https://en.wikipedia.org/wiki/Production_line}{Production Line}
+  is a process where work being done by one person is pushed to the next
+  person when it's done. A meeting booking process is designed to
+  efficiently allocate meeting rooms.
+\item
+  \textbf{Operational Risk:} This encompasses the risk of people
+  \emph{not doing their job properly}. But, by having a process, (and
+  asking, did this person follow the process?) you can draw a
+  distinction between a process failure and a personnel failure. For
+  example, making a loan to a money launderer \emph{could} be a failure
+  of the loan agent. But, if they followed the \emph{process}, it's a
+  failure of the Process itself.
+\item
+  \textbf{Complexity Risk:} Working \emph{within a process} can reduce
+  the amount of Complexity you have to think about. We accept that
+  processes are going to slow us down, but we appreciate the reduction
+  in risk this brings. Clearly, the complexity hasn't gone away, but
+  it's hidden within design of the process. For example,
+  \href{https://en.wikipedia.org/wiki/McDonald's}{McDonalds} tries to
+  design its operation so that preparing each food item is a simple
+  process to follow, reducing complexity (and training time) for the
+  staff.
+\end{itemize}
+
+These are all examples of Risk Mitigation for the \emph{owners} of the
+process. But often the \emph{consumers} of the process end up picking up
+Process Risks as a result:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Invisibility Risk:} It's often not possible to see how far
+  along a process is to completion. Sometimes, you can do this to an
+  extent. For example, when I send a package for delivery, I can see
+  roughly how far it's got on the tracking website. But, this is still
+  less-than-complete information, and is a representation of reality.
+\item
+  \textbf{Dead-End Risk:} Even if you have the right process, initiating
+  a process has no guarantee that your efforts won't be wasted and
+  you'll be back where you started from. The chances of this happening
+  increase as you get further from the standard use-case for the
+  process, and the sunk cost increases with the length of time the
+  process takes to complete.
+\item
+  \textbf{Feature Access Risk:} Processes generally handle the common
+  stuff, but ignore the edge cases. For example, a form on a website
+  might not be designed to be accessible to disabled people, or might
+  only cater to some common subset of use-cases.
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/process/process-risk-400dpi.png}
+\caption{Process Risk, and it's consequences, compared with Agency
+Risk\label{process-risk.png}}
+\end{figure}
+
+When we talk about ``Process Risk'' we are really referring to these
+types of risks, arising from ``following a set of instructions.''
+Compare this with Agency Risk (which we will review in a forthcoming
+chapter), which is risks due to \emph{not} following the instructions,
+as shown in Figure \ref{process-risk.png} . Let's look at two examples,
+how Process Risk can lead to Invisibility Risks and Agency Risk.
+
+\hypertarget{processes-and-invisibility-risk}{%
+\subsection{Processes And Invisibility
+Risk}\label{processes-and-invisibility-risk}}
+
+Processes tend to work well for the common cases, because \emph{practice
+makes perfect}. but they are really tested when unusual situations
+occur. Expanding processes to deal with edge-cases incurs Complexity
+Risk, so often it's better to try and have clear boundaries of what is
+``in'' and ``out'' of the process' domain.
+
+Sometimes, processes are \emph{not} used commonly. How can we rely on
+them anyway? Usually, the answer is to build in extra feedback loops
+anyway:
+
+\begin{itemize}
+\tightlist
+\item
+  Testing that backups work, even when no backup is needed.
+\item
+  Running through a disaster recovery scenario at the weekend.
+\item
+  Increasing the release cadence, so that we practice the release
+  process more.
+\end{itemize}
+
+The feedback loops allow us to perform Retrospectives and Reviews to
+improve our processes.
+
+\hypertarget{processes-sign-offs-and-agency-risk}{%
+\subsection{Processes, Sign-Offs and Agency
+Risk}\label{processes-sign-offs-and-agency-risk}}
+
+Often, Processes will include sign-off steps. The Sign-Off is an
+interesting mechanism:
+
+\begin{itemize}
+\tightlist
+\item
+  By signing off on something for the business, people are usually in
+  some part staking their reputation on something being right.
+\item
+  Therefore, you would expect that sign-off involves a lot of Agency
+  Risk: people don't want to expose themselves in career-limiting ways.
+\item
+  Therefore, the bigger the risk they are being asked to swallow, the
+  more cumbersome and protracted the sign off process.
+\end{itemize}
+
+Often, Sign Offs boil down to a balance of risk for the signer: on the
+one hand, \emph{personal, career risk} from signing off, on the other,
+the risk of upsetting the rest of the staff waiting for the sign-off,
+and the Dead End Risk of all the effort gone into getting the sign off
+if they don't.
+
+This is a nasty situation, but there are a couple of ways to de-risk
+this:
+
+\begin{itemize}
+\tightlist
+\item
+  Break Sign Offs down into bite-size chunks of risk that are acceptable
+  to those doing the sign-off.
+\item
+  Agree far-in-advance the sign-off criteria. As discussed in Risk
+  Theory, people have a habit of heavily discounting future risk, and
+  it's much easier to get agreement on the \emph{criteria} than it is to
+  get the sign-off.
+\end{itemize}
+
+\hypertarget{evolution-of-process}{%
+\section{Evolution Of Process}\label{evolution-of-process}}
+
+Writing software and designing processes are often overlapping
+activities. Often, we build processes when we are writing software.
+Since designing a process is an activity like any other on a project,
+you can expect that the Risk-First explanation for why we do this is
+\emph{risk management}. Processes arise because of a desire to mitigate
+risk. And, when whole organisations follow that desire independently, we
+end up in an evolutionary or gradient-descent style scenario of risk
+reduction (as we will see below).
+
+Here, we are going to look at how a
+\href{https://en.wikipedia.org/wiki/Business_process}{Business Process}
+might mature within an organisation.
+
+\begin{quotation}
+
+``\textbf{Business Process} or \textbf{Business Method} is a collection
+of related, structured activities or tasks that in a specific sequence
+produces a service or product (serves a particular business goal) for a
+particular customer or customers.''
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Business_process}{\textemdash  Business Process, \emph{Wikipedia}}}
+\end{quotation}
+
+Let's look at an example of how that can happen in a step-wise way.
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/process/step1-400dpi.png}
+\caption{Step 1: Clients \texttt{C} need \texttt{A} to do their
+jobs\label{step1.png}}
+\end{figure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  As Figure \ref{step1.png} shows, there exists a group of people inside
+  a company \texttt{C}, which need a certain something \texttt{A} in
+  order to get their jobs done. Because they are organising, providing
+  and creating \texttt{A} to do their jobs, they are responsible for all
+  the Complexity Risk of \texttt{A}. The harder it is for them to secure
+  \texttt{A}, the higher the risk.
+\end{enumerate}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/process/step2-400dpi.png}
+\caption{Step 2: Team \texttt{B} doing \texttt{A} for clients
+\texttt{C}\label{step2.png}}
+\end{figure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Because \texttt{A} is so complex, a new team (\texttt{B}) is spun up
+  to deal with the Complexity Risk, which lets \texttt{C} get on with
+  their ``proper'' jobs. As shown in Figure \ref{step2.png}, this is
+  really useful: It makes \texttt{C}'s job much easier (reduced
+  Complexity Risk) as they have an easier path to \texttt{A} than
+  before. But the risk for \texttt{A} hasn't really gone - they're now
+  just dependent on \texttt{B} instead. When members of \texttt{B} fail
+  to deliver, this is Staff Risk for \texttt{C}.
+\end{enumerate}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/process/step3-400dpi.png}
+\caption{Step 3: Team \texttt{B} formalises the arrangement with a
+Process\label{step3.png}}
+\end{figure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Problems are likely to occur eventually in the \texttt{B}/\texttt{C}
+  relationship. Perhaps some members of the \texttt{B} team give better
+  service than others, or deal with more variety in requests. In order
+  to standardize the response from \texttt{B}, and also to reduce
+  scope-creep in requests from \texttt{C}, \texttt{B} organises
+  bureaucratically, so that there is a controlled process (\texttt{P})
+  by which \texttt{A} can be accessed. Members of teams \texttt{B} and
+  \texttt{C} now interact via some request mechanism like forms (or
+  another protocol).
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  As shown in Figure \ref{step3.png}, because of \texttt{P}, \texttt{B}
+  can now deal with requests on a first-come-first-served basis and deal
+  with them all in the same way: the more unusual requests from
+  \texttt{C} might not fit the model. These Complexity Risks are now the
+  problem of the form-filler in \texttt{C}.
+\item
+  Since this is Abstraction, \texttt{C} now has Invisibility Risk since
+  it can't access team \texttt{B} and see how it works.
+\item
+  Team \texttt{B} may also use \texttt{P} to introduce other bureaucracy
+  like authorisation and sign-off steps or payment barriers. All of this
+  increases complexity for team C.
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/process/step4-400dpi.png}
+\caption{Person D acts as a middleman for customers needing some variant
+of \texttt{A}\label{step4.png}}
+\end{figure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Teams like \texttt{B} can sometimes end up in ``Monopoly'' positions
+  within a business. This means that clients like \texttt{C} are forced
+  to deal with whatever process \texttt{B} wishes to enforce. Although
+  they are unable to affect process \texttt{P}, \texttt{C} still have
+  risks they want to transfer. In Figure \ref{step4.png}, Person
+  \texttt{D}, who has experience working with team \texttt{B} acts as a
+  middleman for some of \texttt{C}, requiring some variant of \texttt{A}
+  . They are able to help navigate the bureaucratic process (handle with
+  Process Risk). The cycle potentially starts again: will \texttt{D} end
+  up becoming a new team, with a new process?
+\end{enumerate}
+
+In this example, you can see how the organisation evolves process to
+mitigate risk around the use (and misuse) of \texttt{A}. This is an
+example of \emph{Process following Strategy}:
+
+\begin{quotation}
+
+In this conception, you can see how the structure of an organisation
+(the teams and processes within it, the hierarchy of control) will
+`evolve' from the resources of the organisation and the strategy it
+pursues. Processes evolve to meet the needs of the organisation."
+
+\sourceatright{\href{http://www.mintzberg.org/books/strategy-safari}{\textemdash  Minzberg, \emph{Strategy Safari}}}
+\end{quotation}
+
+Two key take-aways from this:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{The Process Gets More Complex:} With different teams working
+  to mitigate different risks in different ways, we end up with a more
+  complex situation than we started in. Although we've \emph{evolved} in
+  this direction by mitigating risks, it's not necessarily the case that
+  the end result is \emph{more efficient}. In fact, as we will see in
+  Map-And-Territory Risk, this evolution can lead to some very
+  inadequate (but nonetheless stable) systems.
+\item
+  \textbf{Organisational structure evolves to mitigate risk:} Just as
+  we've shown that actions are about mitigating risk, we've now seen
+  that these actions get taken in an evolutionary way. That is, there is
+  ``pressure'' on our internal processes to reduce risk. The people
+  maintaining these processes feel the risk, and modify their processes
+  in response. Let's look at a real-life example:
+\end{itemize}
+
+\hypertarget{an-example---release-processes}{%
+\section{An Example - Release
+Processes}\label{an-example---release-processes}}
+
+For many years I have worked in the Finance Industry, and it's given me
+time to observe how, across an entire industry, process can evolve, both
+in response to regulatory pressure but also because of organisational
+maturity, and mitigating risks:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Initially, I could release software by logging onto the production
+  accounts with a shared password that everyone knew, and deploy
+  software or change data in the database.
+\item
+  The first issue with this is Agency Risk from bad actors: How could
+  you know that the numbers weren't being altered in the databases?
+  Production auditing came in so that at least you could tell what was
+  being changed and when, in order to point the blame later.
+\item
+  But, there was still plenty of scope for deliberate or accidental
+  Dead-End Risk damage. Next, passwords were taken out of the hands of
+  developers and you needed approval to ``break glass'' to get onto
+  production.
+\item
+  The increasing complexity (and therefore Complexity Risk) in
+  production environments meant that sometimes, changes collided with
+  each other, or were performed at inopportune times. Change Requests
+  were introduced. This is an approval process which asks you to
+  describe what you want to change in production, and why you want to
+  change it.
+\item
+  The change request software is generally awful, making the job of
+  raising change requests tedious and time-consuming. Therefore,
+  developers would \emph{automate} the processes for release, sometimes
+  including the process to write the change request. This allowed them
+  to improve release cadence, at the expense of owning more code.
+\item
+  Auditors didn't like the fact that this automation existed, because
+  effectively, that meant that developers could get access to production
+  with the press of a button, effectively taking you back to step 1. So
+  auditing of Change Requests had to happen.
+\end{enumerate}
+
+\hypertarget{parkinsons-law}{%
+\section{Parkinson's Law}\label{parkinsons-law}}
+
+Where we've talked about process evolution above, the actors involved
+have been acting in good faith: they are working to mitigate risk in the
+organisation. The Process Risk that accretes along the way is an
+\emph{unintended consequence}: There is no guarantee that the process
+that arises will be humane and intuitive. Many organisational processes
+end up being baroque or Kafka-esque, forcing unintuitive behaviour on
+their users. This is partly because process design is \emph{hard}, and
+it's difficult to anticipate all the various ways a process will be used
+ahead-of-time.
+
+But \href{https://en.wikipedia.org/wiki/Parkinsons_law}{Parkinson's Law}
+takes this one step further: the human actors shaping the organisation
+will abuse their positions of power in order to further their own
+careers (this is Agency Risk, which we will come to in a future
+chapter):
+
+\begin{quotation}
+
+``Parkinson's law is the adage that''work expands so as to fill the time
+available for its completion``. It is sometimes applied to the growth of
+bureaucracy in an organisation\ldots{} He explains this growth by two
+forces: (1) `An official wants to multiply subordinates, not rivals' and
+(2) `Officials make work for each other.'\,''
+
+\sourceatright{\href{https://en.wikipedia.org/wiki/Parkinsons_law}{\textemdash  Parkinson's Law, \emph{Wikipedia}}  }
+\end{quotation}
+
+This implies that there is a tendency for organisations to end up with
+\emph{needless levels of Process Risk}.
+
 \hypertarget{boundary-risk}{%
 \chapter{Boundary Risk}\label{boundary-risk}}
 
@@ -7178,16 +7599,15 @@ protocols. You have to use it's protocol: it won't come to you.
 
 \begin{figure}
 \centering
-\includegraphics{images/kite9/boundary-risk-ps.png}
+\includegraphics{images/generated/risks/boundary/choices-400dpi.png}
 \caption{Our System receives data from the \texttt{input}, translates it
 and sends it to the \texttt{output}. But which dependency should we use
-for the translation, if any?\label{boundary-risk-ps.png}}
+for the translation, if any?\label{choices.png}}
 \end{figure}
 
 Let's take a look at a hypothetical system structure, in Figure
-\ref{boundary-risk-ps.png}. In this design, we have are transforming
-data from the \texttt{input} to the \texttt{output}. But how should we
-do it?
+\ref{choices.png}. In this design, we have are transforming data from
+the \texttt{input} to the \texttt{output}. But how should we do it?
 
 \begin{itemize}
 \tightlist
@@ -7435,7 +7855,7 @@ ecosystem who are\ldots{}
   Improving the core platform.
 \end{itemize}
 
-Is bigger always better? There are four further factors to
+Is bigger always better? There are five further factors to
 consider\ldots{}
 
 \hypertarget{the-peter-principle}{%
@@ -9826,7 +10246,7 @@ This is the essence of De-Risking.
 \chapter{Glossary}\label{glossary}}
 
 \hypertarget{abstraction-1}{%
-\paragraph{Abstraction}\label{abstraction-1}}
+\section{Abstraction}\label{abstraction-1}}
 
 The process of removing physical, spatial, or temporal details or
 attributes in the study of objects or systems in order to more closely
@@ -9837,9 +10257,6 @@ attend to other details of interest.
 
 \hypertarget{internal-model}{%
 \section{Internal Model}\label{internal-model}}
-
-\hypertarget{taking-action}{%
-\section{Taking Action}\label{taking-action}}
 
 The most common use for Internal Model is to refer to the model of
 reality that you or I carry around in our heads. You can regard the
@@ -9860,6 +10277,9 @@ and encoded as software.
 
 An internal model \emph{represents} reality: reality is made of atoms,
 whereas the internal model is information.
+
+\hypertarget{taking-action}{%
+\section{Taking Action}\label{taking-action}}
 
 \hypertarget{meet-reality}{%
 \section{Meet Reality}\label{meet-reality}}

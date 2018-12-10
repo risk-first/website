@@ -1,17 +1,7 @@
 # Coming Next
 
-Part 3 of Risk-First is a separate book: *Risk-First: Tools and Techniques
+This is nearly the end of _Risk-First: The Menagerie_.  But, it's not the full picture.   We've had Part 1 (The Introduction) and Part 2 (The Risk Landscape), but you're yet to read parts 3 & 4.  These are to be published together in the next book, _Risk-First: Tools and Techniques_, but are also available at `https://riskfirst.org`.
 
-- preview of what's to come in part 3.  
+But it feels a shame to end with Part 2, which is just a long list of all the troubles you'll face on a software project.  So in order to improve the tone somewhat, here we have a single chapter from Part 3 .
 
-part 3 is in the next book.
-
-
-The point of part 2 is to give a taxonomy for talking about risk.  
-
-Bad to leave on the failure notes, let's talk about some successes.
-
-
-3.  What's To Come
-  - risk based debugging.
-  - risk based coding.
+As an encore, if you will.
