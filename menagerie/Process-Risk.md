@@ -34,20 +34,8 @@ Sometimes, processes are _not_ used commonly.  How can we rely on them anyway?  
 - Increasing the release cadence, so that we practice the release process more.
 
 The feedback loops allow us to perform [Retrospectives and Reviews](Review) to improve our processes. 
- 
-### Bureaucracy Risk
 
-Where we've talked about process evolution above, the actors involved have been acting in good faith:   they are working to mitigate risk in the organisation.  The [Process Risk](Process-Risk) that accretes along the way is an _unintended consequence_:  There is no guarantee that the process that arises will be humane and intuitive.  Many organisational processes end up being baroque or Kafka-esque, forcing unintuitive behaviour on their users.  This is partly because process design is _hard_, and it's difficult to anticipate all the various ways a process will be used ahead-of-time.  So, some of [Bureaucracy Risk](Process-Risk#bureaucracy-risk) is due to [Complexity](Complexity-Risk).
-
-But [Parkinson's Law](https://en.wikipedia.org/wiki/Parkinsons_law) takes this one step further:  the human actors shaping the organisation will abuse their positions of power in order to further their own careers (this is [Agency Risk](Agency-Risk), which we will come to in a future section):
-
-> "Parkinson's law is the adage that "work expands so as to fill the time available for its completion". It is sometimes applied to the growth of bureaucracy in an organisation... He explains this growth by two forces: (1) 'An official wants to multiply subordinates, not rivals' and (2) 'Officials make work for each other.'" - [Parkinson's Law, _Wikipedia_](https://en.wikipedia.org/wiki/Parkinsons_law)  
-
-This implies that there is a tendency for organisations to end up with _needless levels of [Bureaucratic Risk](Process-Risk#bureaucracy-risk)_.
- 
-
-
-### Sign-Offs
+## Sign-Offs
 
 Often, Processes will include sign-off steps.  The [Sign-Off](Sign-Off) is an interesting mechanism:  
  - By signing off on something for the business, people are usually in some part staking their reputation on something being right. 
@@ -57,6 +45,7 @@ Often, Processes will include sign-off steps.  The [Sign-Off](Sign-Off) is an in
 Often, [Sign Offs](Sign-Off) boil down to a balance of risk for the signer:  on the one hand, _personal, career risk_ from signing off, on the other, the risk of upsetting the rest of the staff waiting for the sign-off, and the [Dead End Risk](Complexity-Risk#dead-end-risk) of all the effort gone into getting the sign off if they don't.  
 
 This is a nasty situation, but there are a couple of ways to de-risk this: 
+
  - break [Sign Offs](Sign-Off) down into bite-size chunks of risk that are acceptable to those doing the sign-off.  
  - Agree far-in-advance the sign-off criteria.  As discussed in [Risk Theory](Evaluating-Risk), people have a habit of heavily discounting future risk, and it's much easier to get agreement on the _criteria_ than it is to get the sign-off. 
 
@@ -66,7 +55,7 @@ tbd
 
 
 tbd. processes as a response to legal environment.
-
+ 
 ## Evolution Of Process
 
 Why do we build processes?  I am going to argue that the main reason this happens is due to risk mitigation.  Processes form because of a desire to mitigate risk.  And, when we follow that desire, we end up in an evolutionary or gradient-descent style scenario of risk reduction.
@@ -104,7 +93,7 @@ In this example, you can see how the organisation evolves process to mitigate ri
 Two key take-aways from this:
 
  - **The Process Gets More Complex:** With different teams working to mitigate different risks in different ways, we end up with a more complex situation than we started in.  Although we've _evolved_ in this direction by mitigating risks, it's not necessarily the case that the end result is _more efficient_.  In fact, as we will see in [Map-And-Territory Risk](Map-And-Territory-Risk#markets), this evolution can lead to some very inadequate (but nonetheless stable) systems.
- - Just as we've shown that [actions are about mitigating risk](All-About-Risk), we've now seen that organisational structure evolves to mitigate risk.  Let's look at a real-life example: 
+ - **Organisational structure evolves to mitigate risk:** Just as we've shown that [actions are about mitigating risk](All-About-Risk), we've now seen that these actions get taken in an evolutionary way.  Let's look at a real-life example: 
 
 ## An Example - Release Processes
 
@@ -117,6 +106,13 @@ For many years I have worked in the Finance Industry, and it's given me time to 
 5. The change request software is generally awful, making the job of raising change requests tedious and time-consuming.  Therefore, developers would _automate_ the processes for release, sometimes including the process to write the change request.  This allowed them to improve release cadence, at the expense of owning more code.
 6. Auditors didn't like the fact that this automation existed, because effectively, that meant that developers could get access to production with the press of a button, effectively taking you back to step 1.   So auditing of Change Requests had to happen.
 
-... and so on.  
+## Parkinson's Law
 
+Where we've talked about process evolution above, the actors involved have been acting in good faith:   they are working to mitigate risk in the organisation.  The [Process Risk](Process-Risk) that accretes along the way is an _unintended consequence_:  There is no guarantee that the process that arises will be humane and intuitive.  Many organisational processes end up being baroque or Kafka-esque, forcing unintuitive behaviour on their users.  This is partly because process design is _hard_, and it's difficult to anticipate all the various ways a process will be used ahead-of-time.  
 
+But [Parkinson's Law](https://en.wikipedia.org/wiki/Parkinsons_law) takes this one step further:  the human actors shaping the organisation will abuse their positions of power in order to further their own careers (this is [Agency Risk](Agency-Risk), which we will come to in a future section):
+
+> "Parkinson's law is the adage that "work expands so as to fill the time available for its completion". It is sometimes applied to the growth of bureaucracy in an organisation... He explains this growth by two forces: (1) 'An official wants to multiply subordinates, not rivals' and (2) 'Officials make work for each other.'" - [Parkinson's Law, _Wikipedia_](https://en.wikipedia.org/wiki/Parkinsons_law)  
+
+This implies that there is a tendency for organisations to end up with _needless levels of [Process Risk](Process-Risk)_.
+ 
