@@ -97,18 +97,23 @@ Let's look at an example of how that can happen in a step-wise way.
 
 4.  Teams like `B` can sometimes end up in "Monopoly" positions within a business.  This means that clients like `C` are forced to deal with whatever process `B` wishes to enforce.  Although they are unable to affect process `P`, `C` still have risks they want to transfer.  In the above diagram, Person `D`, who has experience working with team `B` acts as a middleman for some of `C`, requiring some variant of `A` .  They are able to help navigate the bureaucratic process (handle with [Process Risk](Process-Risk)).  The cycle potentially starts again: will `D` end up becoming a new team, with a new process? 
 
-In this example, you can see how the organisation evolves to mitigate risk around the use (and misuse) of `A`:  First, [Complexity Risk](Complexity-Risk), then [Coordination Risk](Coordination-Risk), then [Staff Risk](Scarcity-Risk#staff-risk) and finally, the [Process Risk](Process-Risk) was created to mitigate everything else.  This is an example of _Process following Strategy_: 
+In this example, you can see how the organisation evolves process to mitigate risk around the use (and misuse) of `A`.  This is an example of _Process following Strategy_: 
 
 > In this conception, you can see how the structure of an organisation (the teams and processes within it, the hierarchy of control) will 'evolve' from the resources of the organisation and the strategy it pursues.  Processes evolve to meet the needs of the organisation." - [Minzberg, _Strategy Safari_](http://www.mintzberg.org/books/strategy-safari)
 
-## An Example - Release Process
+Two key take-aways from this:
+
+ - **The Process Gets More Complex:** With different teams working to mitigate different risks in different ways, we end up with a more complex situation than we started in.  Although we've _evolved_ in this direction by mitigating risks, it's not necessarily the case that the end result is _more efficient_.  In fact, as we will see in [Map-And-Territory Risk](Map-And-Territory-Risk#markets), this evolution can lead to some very inadequate (but nonetheless stable) systems.
+ - Just as we've shown that [actions are about mitigating risk](All-About-Risk), we've now seen that organisational structure evolves to mitigate risk.  Let's look at a real-life example: 
+
+## An Example - Release Processes
 
 For many years I have worked in the Finance Industry, and it's given me time to observe how, across an entire industry, process can evolve, both in response to regulatory pressure but also because of organisational maturity, and mitigating risks:
 
-1. Initially, I could release software by logging onto the production accounts with a password that everyone knew, and deploy software or change data in the database.  
-2. The first issue with this is [bad actors](Agency-Risk):  How could you know that the numbers weren't being altered in the databases? Production auditing came in so that at least you could tell _who was changing what_, in order to point the blame later.
-3. But, there was still plenty of scope for deliberate or accidental damage.  I personally managed to wipe production data on one occasion by mistaking it for a development environment. Eventually, passwords were taken out of the hands of developers and you needed approval to "break glass" to get onto production.  
-4. Change Requests were introduced.  This is another approval process which asks you to describe what you want to change in production, and why you want to change it.  In most places, this was quite an onerous process, so the unintended consequence was that release cadence was reduced.
+1. Initially, I could release software by logging onto the production accounts with a shared password that everyone knew, and deploy software or change data in the database.  
+2. The first issue with this is [Agency Risk from bad actors](Agency-Risk):  How could you know that the numbers weren't being altered in the databases? Production auditing came in so that at least you could tell what was being changed and when, in order to point the blame later.
+3. But, there was still plenty of scope for deliberate or accidental [Dead-End Risk](Complexity-Risk#dead-end-risk) damage.  Next, passwords were taken out of the hands of developers and you needed approval to "break glass" to get onto production.  
+4. The increasing complexity (and therefore [Complexity Risk](Complexity-Risk)) in production environments meant that sometimes, changes collided with each other, or were performed at inopportune times.  Change Requests were introduced.  This is an approval process which asks you to describe what you want to change in production, and why you want to change it.  
 5. The change request software is generally awful, making the job of raising change requests tedious and time-consuming.  Therefore, developers would _automate_ the processes for release, sometimes including the process to write the change request.  This allowed them to improve release cadence, at the expense of owning more code.
 6. Auditors didn't like the fact that this automation existed, because effectively, that meant that developers could get access to production with the press of a button, effectively taking you back to step 1.   So auditing of Change Requests had to happen.
 
