@@ -89,8 +89,8 @@ Let's look at an example of how that can happen in a step-wise way.
 
 3. Problems are likely to occur eventually in the `B`/`C` relationship.  Perhaps some members of the `B` team give better service than others, or deal with more variety in requests.   In order to standardize the response from `B`, and also to reduce scope-creep in requests from `C`, `B` organises bureaucratically, so that there is a controlled process (`P`) by which `A` can be accessed.  Members of teams `B` and `C` now interact via some request mechanism like forms (or another protocol).  
 
-  - Since this is [Abstraction](Glossary#abstraction), `C` now has [Invisibility Risk](Communication-Risk#invisibility-risk) since it can't access team `B` and see how it works.
   - As shown in the above diagram, because of `P`, `B` can now deal with requests on a first-come-first-served basis and deal with them all in the same way: the more unusual requests from `C` might not fit the model.  These [Complexity Risks](Complexity-Risk) are now the problem of the form-filler in `C`.   
+  - Since this is [Abstraction](Glossary#abstraction), `C` now has [Invisibility Risk](Communication-Risk#invisibility-risk) since it can't access team `B` and see how it works.
   - Team `B` may also use `P` to introduce other bureaucracy like authorisation and sign-off steps or payment barriers.   All of this increases complexity for team C. 
 
 ![Person D acts as a middleman for customers needing some variant of `A`](images/kite9/process-risk-6.png)
