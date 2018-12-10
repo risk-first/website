@@ -4,7 +4,7 @@
 
 > "**Process:** A process is a set of activities that interact to achieve a result." - [Process, _Wikipedia_](https://en.wikipedia.org/wiki/Process)
 
-In the software development world (and the business world generally) processes commonly involve _forms_:  If you're filling out a form (whether on paper or on a computer) then you're involved in a process of some sort, whether an "Account Registration" process, "Loan Application" process or "Consumer Satisfaction Survey" process.  But sometimes, they involve events occurring:  a [build process](https://en.wikipedia.org/wiki/Software_build) might start after you commit some code, for example.
+Processes commonly involve _forms_:  If you're filling out a form (whether on paper or on a computer) then you're involved in a process of some sort, whether an "Account Registration" process, "Loan Application" process or "Consumer Satisfaction Survey" process.  Sometimes, they involve events occurring:  a [build process](https://en.wikipedia.org/wiki/Software_build) might start after you commit some code, for example.  And, the _code we write_ is usually describing some kind of process we want performed.
 
 ## The Purpose Of Process
 
@@ -16,12 +16,12 @@ Process exists to mitigate other kinds of risk.  For example:
 
 ![Introducing process can mitigate many risks for a team, but there are attendant process risks created.](images/generated/risks/process/process-risk-introduction.png)
 
-These are all examples of [Risk Mitigation](Glossary#Mitigated-risk) for the _owners_ of the process.  But the _consumers_ of the process end up picking up [Process Risks](Process-Risk) too:
+These are all examples of [Risk Mitigation](Glossary#Mitigated-risk) for the _owners_ of the process.  But often the _consumers_ of the process end up picking up [Process Risks](Process-Risk) as a result:
 
  - **[Invisibility Risk](Communication-Risk#invisibility-risk):** It's often not possible to see how far along a process is to completion.  Sometimes, you can do this to an extent.  For example, when I send a package for delivery, I can see roughly how far it's got on the tracking website.  But, this is still less-than-complete information, and is a representation of reality.    
  - **[Feature Fit Risk](Feature-Risk#feature-fit-risk):** You have to be careful to match the process to the outcome you want.  Sometimes, it's easy to waste time on the wrong process, for example filling out a
  - **[Dead-End Risk](Complexity-Risk#dead-end-risk):** Even if you have the right process, initiating a process has no guarantee that your efforts won't be wasted and you'll be back where you started from.  The chances of this happening increase as you get further from the standard use-case for the process, and the sunk cost increases with the length of time the process takes to complete.
- - **[Feature Access Risk](Feature-Risk#feature-access-risk):** Processes generally handle the common stuff, but ignore the edge cases.  If the exceptional cases are not dealt with in 
+ - **[Feature Access Risk](Feature-Risk#feature-access-risk):** Processes generally handle the common stuff, but ignore the edge cases.  For example, a form on a website might not be designed to be accessible to disabled people, or might only cater to some common subset of use-cases.
 
 ### Processes And Invisibility Risk
 
