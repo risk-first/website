@@ -55,7 +55,9 @@ This is a nasty situation, but there are a couple of ways to de-risk this:
  
 ## Evolution Of Process
 
-Writing software and designing processes are often overlapping activities.  Often, we build processes when we are writing software.  Since designing a process is an activity like any other on a project, you can expect that the Risk-First explanation for why we do this is _risk management_.  Processes arise because of a desire to mitigate risk.  And, when whole organisations follow that desire independently, we end up in an evolutionary or gradient-descent style scenario of risk reduction (as we will see below).
+Writing software and designing processes are often overlapping activities.  Often, we build processes when we are writing software.  Since designing a process is an activity like any other on a project, you can expect that the Risk-First explanation for why we do this is _risk management_.  
+
+Processes arise because of a desire to mitigate risk.  When whole organisations follow that desire independently, we end up in an evolutionary or gradient-descent style scenario of risk reduction (as we will see below).
 
 Here, we are going to look at how a [Business Process](https://en.wikipedia.org/wiki/Business_process) might mature within an organisation.
 
@@ -81,7 +83,10 @@ Let's look at an example of how that can happen in a step-wise way.
 
 ![Person D acts as a middleman for customers needing some variant of `A`](images/generated/risks/process/step4.png)
 
-4.  Teams like `B` can sometimes end up in "Monopoly" positions within a business.  This means that clients like `C` are forced to deal with whatever process `B` wishes to enforce.  Although they are unable to affect process `P`, `C` still have risks they want to transfer.  In the above diagram, Person `D`, who has experience working with team `B` acts as a middleman for some of `C`, requiring some variant of `A` .  They are able to help navigate the bureaucratic process (handle with [Process Risk](Process-Risk)).  The cycle potentially starts again: will `D` end up becoming a new team, with a new process? 
+4.  Teams like `B` can sometimes end up in "Monopoly" positions within a business.  This means that clients like `C` are forced to deal with whatever process `B` wishes to enforce.  Although they are unable to affect process `P`, `C` still have risks they want to transfer.  
+
+ - In the above diagram, Person `D`, who has experience working with team `B` acts as a middleman for some of `C`, requiring some variant of `A` .  They are able to help navigate the bureaucratic process (handle with [Process Risk](Process-Risk)).  
+ - The cycle potentially starts again: will `D` end up becoming a new team, with a new process? 
 
 In this example, you can see how the organisation evolves process to mitigate risk around the use (and misuse) of `A`.  This is an example of _Process following Strategy_: 
 
@@ -90,7 +95,7 @@ In this example, you can see how the organisation evolves process to mitigate ri
 Two key take-aways from this:
 
  - **The Process Gets More Complex:** With different teams working to mitigate different risks in different ways, we end up with a more complex situation than we started in.  Although we've _evolved_ in this direction by mitigating risks, it's not necessarily the case that the end result is _more efficient_.  In fact, as we will see in [Map-And-Territory Risk](Map-And-Territory-Risk#markets), this evolution can lead to some very inadequate (but nonetheless stable) systems.
- - **Organisational structure evolves to mitigate risk:** Just as we've shown that [actions are about mitigating risk](All-About-Risk), we've now seen that these actions get taken in an evolutionary way.  That is, there is "pressure" on our internal processes to reduce risk.  The people maintaining these processes feel the risk, and modify their processes in response.  Let's look at a real-life example: 
+ - **Organisational process evolves to mitigate risk:** Just as we've shown that [actions are about mitigating risk](All-About-Risk), we've now seen that these actions get taken in an evolutionary way.  That is, there is "pressure" on our internal processes to reduce risk.  The people maintaining these processes feel the risk, and modify their processes in response.  Let's look at a real-life example: 
 
 ## An Example - Release Processes
 
@@ -112,4 +117,9 @@ But [Parkinson's Law](https://en.wikipedia.org/wiki/Parkinsons_law) takes this o
 > "Parkinson's law is the adage that "work expands so as to fill the time available for its completion". It is sometimes applied to the growth of bureaucracy in an organisation... He explains this growth by two forces: (1) 'An official wants to multiply subordinates, not rivals' and (2) 'Officials make work for each other.'" - [Parkinson's Law, _Wikipedia_](https://en.wikipedia.org/wiki/Parkinsons_law)  
 
 This implies that there is a tendency for organisations to end up with _needless levels of [Process Risk](Process-Risk)_.
- 
+
+To fix this, design needs to happen at a higher level.  In our code, we would [Refactor](Complexity-Risk#refactoring) these processes to remove the unwanted complexity.  In an business, it requires re-organisation at a higher level to redefine the boundaries and responsibilities between the teams.  
+
+Next in the tour of [Dependency Risks](Dependency-Risk), it's time to look at [Boundary Risk](Boundary-Risk).
+
+
