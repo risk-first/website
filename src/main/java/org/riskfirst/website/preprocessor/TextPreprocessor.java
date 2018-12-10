@@ -5,7 +5,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -42,7 +44,7 @@ public class TextPreprocessor {
 		while (line != null) {
 			if (line.trim().equals("```include")) {
 				processIncludes(br, origin);
-			} else if (line.trim().startsWith("> \"")) {
+			} else if (line.trim().startsWith("> ")) {
 				outputQuote(line, lineNo);
 			} else if (line.trim().startsWith("<!--latex")) {
 				outputRawLatex(line);
@@ -55,13 +57,18 @@ public class TextPreprocessor {
 			lineNo++;
 		}
 	}
+	
+	private static final List<String> REFERENCES = Arrays.asList("The diagram above", "the diagram above", "The chart above",
+			"the chart above", "The picture above", "the picture above",
+			"the above diagram", "The above diagram");
 
 	private static String handleReplace(String line) {
 		line = line.replaceAll("\\s+$", "");	// trim end of line
 		line = line.replaceAll(" section", " chapter"); // section -> chapter
 		
-		line = line.replaceAll("The diagram above", "Figure \\\\ref{"+lastFigureRef+"}");
-		line = line.replaceAll("the diagram above", "figure \\\\ref{"+lastFigureRef+"}");
+		for (String string : REFERENCES) {
+			line = line.replaceAll(string, "Figure \\\\ref{"+lastFigureRef+"}");
+		}
 		
 		int replace = line.indexOf("<!--replace ");
 		if (replace > -1) {
@@ -94,7 +101,7 @@ public class TextPreprocessor {
 				quotation = line.substring(2, qs); 
 				source = line.substring(qs+2);
 			} else {
-				quotation = line;
+				quotation = line.substring(2);
 				source = null;
 			}
 			quotation = handleReplace(quotation);

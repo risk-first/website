@@ -79,7 +79,7 @@
   
   <template id="action-left">
     <back style='kite9-usage: decal; kite9-type: svg; '>
-      <svg:polygon points='0 #{$height div 2}, 15 0, #{$width} 0, #{$width} #{$height}, 15 #{$height} 0, #{$height div 2}' style='fill: url(#risk-background); stroke: black; stroke-width: 1pt;' />
+      <svg:polygon points='0 #{$height div 2}, #{15 * $pt} 0, #{$width} 0, #{$width} #{$height}, #{15 * $pt} #{$height} 0, #{$height div 2}' style='fill: url(#risk-background); stroke: black; stroke-width: 1pt;' />
     </back>
     <front style="kite9-usage: regular; kite9-type: container; kite9-layout: down; 	kite9-padding: 10pt; kite9-padding-left: 40pt; ">
       <title>
@@ -91,6 +91,34 @@
   <template id="artifact">
     <image style="kite9-vertical-align: center; kite9-min-size: 80pt 80pt;">
         <image-content style="kite9-template: url(noun_documents_1013544_000000.svg)" />
+    </image>
+    <title><contents /></title>
+  </template>
+  
+  <template id="interface">
+    <image style="kite9-vertical-align: center; kite9-min-size: 80pt 80pt;">
+        <image-content style="kite9-template: url(noun_interface_221170_000000.svg)" />
+    </image>
+    <title><contents /></title>
+  </template>
+  
+   <template id="internal-model-artifact">
+    <image style="kite9-vertical-align: center; kite9-min-size: 80pt 80pt;">
+        <image-content style="kite9-template: url(noun_232241.svg)" />
+    </image>
+    <title><contents /></title>
+  </template>
+  
+   <template id="channel-artifact">
+    <image style="kite9-vertical-align: center; kite9-min-size: 80pt 80pt;">
+        <image-content style="kite9-template: url(noun_98162.svg)" />
+    </image>
+    <title><contents /></title>
+  </template>
+  
+  <template id="component">
+    <image style="kite9-vertical-align: center; kite9-min-size: 80pt 80pt;">
+        <image-content style="kite9-template: url(noun_cogs_2071715_000000.svg)" />
     </image>
     <title><contents /></title>
   </template>
@@ -161,6 +189,14 @@
       <svg:path d="#{$path}" class="link" style="marker-start: #{$markerstart}; marker-end: #{$markerend}" />
     </link-body>
   </template>
+
+  <template id="grey-link">
+    <contents />
+    <link-body style="kite9-type: svg; kite9-usage: decal;">
+      <svg:path d="#{$path}" class="grey-link" style="marker-start: #{$markerstart}; marker-end: #{$markerend}" />
+    </link-body>
+  </template>
+
   
   <template id="dotted-link">
     <contents />
@@ -903,5 +939,13 @@
       <svg:rect x='0' y='0' width='#{$width}' height='#{$height}' class="glyph-back" />
     </back>   
     <contents />
+  </template>
+  
+  <template id='connection-label'>
+    <svg:g class="container-label-front">
+      <front style="kite9-type: text; ">
+        <contents />
+      </front>
+    </svg:g>
   </template>
 </svg:svg>
