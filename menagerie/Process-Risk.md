@@ -93,7 +93,7 @@ Let's look at an example of how that can happen in a step-wise way.
   - Since this is [Abstraction](Glossary#abstraction), `C` now has [Invisibility Risk](Communication-Risk#invisibility-risk) since it can't access team `B` and see how it works.
   - Team `B` may also use `P` to introduce other bureaucracy like authorisation and sign-off steps or payment barriers.   All of this increases complexity for team C. 
 
-![Person D acts as a middleman for customers needing some variant of `A`](images/kite9/process-risk-6.png)
+![Person D acts as a middleman for customers needing some variant of `A`](mages/generated/risks/process/step4.png)
 
 4.  Teams like `B` can sometimes end up in "Monopoly" positions within a business.  This means that clients like `C` are forced to deal with whatever process `B` wishes to enforce.  Although they are unable to affect process `P`, `C` still have risks they want to transfer.  In the above diagram, Person `D`, who has experience working with team `B` acts as a middleman for some of `C`, requiring some variant of `A` .  They are able to help navigate the bureaucratic process (handle with [Process Risk](Process-Risk)).  The cycle potentially starts again: will `D` end up becoming a new team, with a new process? 
 
