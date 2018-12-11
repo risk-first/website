@@ -4,6 +4,10 @@
 
 The process of removing physical, spatial, or temporal details or attributes in the study of objects or systems in order to more closely attend to other details of interest.
 
+## Agent
+
+Agency is the capacity of an actor to act in a given environment.  We use the term _agent_ to refer to any process, person, system or organisation with agency.
+
 ## Feedback Loop
 
 The process of testing an [Internal Model](#internal-model) by testing it, through [taking action](#taking-action) to [Meet Reality](#meet-reality).  Typically, we talk about short or long feedback loops, depending on the intervals between [Meeting Reality](#meet-reality).
