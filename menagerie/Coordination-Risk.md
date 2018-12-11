@@ -104,8 +104,6 @@ The trick is to be able to tell which approach is suitable at which time.   Ever
 
  - Is the [Coordination Risk](Coordination-Risk) greater?   Are we going to suffer [Dead End Risk](Complexity-Risk) if the decision is made wrongly?  What if people don't agree with it?  Poor leadership has an impact on [Morale](Agency-Risk#morale-risk) too.  
  - Is the [Schedule Risk](Scarcity-Risk#schedule-risk) greater?  If you have a 1-hour meeting with eight people to decide a decision, that's _one man day_ gone right there:  group decision making is _expensive_.  
-
-![Coordination Risk traded for Complexity Risk, Schedule Risk and Communication Risk](images/kite9/coordination-1.png)
  
 Hopefully, this model shows how _organisation_ can reduce [Coordination Risk](Coordination-Risk).  But, to make this work, we need more _communication_, and this has attendant complexity and time costs.  So, we can draw diagram above of our move on the [Risk Landscape](Risk-Landscape):
 
@@ -204,7 +202,7 @@ Here, we are going to consider what happens when communication breaks down betwe
 
 #### With an CP System
 
-![In an CP system, the User B won't get anything back for X, because Agent 2 can't be sure it has the latest value](images/kite9/coordination-cap-cp.png).  
+![In an CP system, the User B won't get anything back for X, because Agent 2 can't be sure it has the latest value](images/generated/risks/coordination/cap-cp.png).  
 
 To be consistent, Agent 2 needs to check with Agent 1 to make sure it has the latest value for X.  Where Agent 2 is left waiting for Agent 1 to re-appear, we are _blocked_.  So CP systems will block when partitioned.
 
