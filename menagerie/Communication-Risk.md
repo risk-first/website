@@ -266,13 +266,13 @@ A second aspect of [Protocol Risk](Communication-Risk#protocol-risk) exists in h
 
 Although Shannon's Communication Theory is about transmitting **Messages**, messages are really encoded **Ideas** and **Concepts**, from an **Internal Model**. <!-- tweet-end -->  Let's break down some of the risks associated with this:
 
-### Internal Model Assumption Risk
+### Internal Model Risk
 
 When we construct messages in a conversation, we have to make judgements about what the other person already knows.  For example, if I want to tell you about a new [JDBC Driver](https://en.wikipedia.org/wiki/JDBC_driver), this pre-assumes that you know what JDBC is:  the message has a dependency on prior knowledge.  Or, When talking to children, it's often hard work because they _assume_ that you have knowledge of everything they do.  
 
 This is called [Theory Of Mind](https://en.wikipedia.org/wiki/Theory_of_mind): the appreciation that your knowledge is different to other people's, and adjusting you messages accordingly.  When teaching, this is called [The Curse Of Knowledge](https://en.wikipedia.org/wiki/Curse_of_knowledge):  teachers have difficulty understanding students' problems _because they already understand the subject_.  
 
-### Message Dependency Risk  
+### Message Risk  
 
 A second, related problem is actually [Dependency Risk](Dependency-Risk), which is covered more thoroughly in a later section.  Often, to understand a new message, you have to have followed everything up to that point already.
 

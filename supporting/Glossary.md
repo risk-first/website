@@ -68,7 +68,7 @@ Refers to any activity in the project.  Actions are usually in order to manage s
 |------------------|---------------|
 |[Boundary](Boundary-Risk)|Risks due to the choices we make around dependencies, and the limitations they place on our ability to change.|
 |[Agency](Agency-Risk)|Risks due to the fact that things you depend on have agency, and they have their own goals to pursue.|
-|[Channel](Communication-Risk#channel-risks)|Risks due to the inadequacy of the physical channel used to communicate our messages. e.g. noise, loss, interception, corruption.|
+|[Channel](Communication-Risk#channel-risk)|Risks due to the inadequacy of the physical channel used to communicate our messages. e.g. noise, loss, interception, corruption.|
 |[Communication](Communication-Risk)|Risks due to the difficulty of communicating with other entities, be they people, software, processes etc.|
 |[Complexity](Complexity-Risk)|Risks caused by the weight of complexity in the systems we create, and their resistance to change and comprehension.|
 |[Conceptual-integrity](Feature-Risk#conceptual-integrity-risk)|Risk that the software you provide is too complex, or doesn't match the expectations of your clients' internal models.|
@@ -98,4 +98,4 @@ Refers to any activity in the project.  Actions are usually in order to manage s
 |[Scarcity](Scarcity-Risk)|Risk of not being able to access a dependency in a timely fashion due to it's scarcity.|
 |[Schedule](Scarcity-Risk#schedule-risk)|The aspect of dependency risk related to time.|
 |[Staff](Scarcity-Risk#staff-risk)|The aspect of dependency risks related to employing people.|
-|[Trust-And-Belief](Communication-Risk#trust-and-belief-risk)|Risk that a party we are communicating with can't be trusted, as it has agency or is unreliable in some other way.  |
+|[Trust-And-Belief](Communication-Risk#trust---belief-risk)|Risk that a party we are communicating with can't be trusted, as it has agency or is unreliable in some other way.  |
