@@ -232,7 +232,7 @@ Second, [git](https://en.wikipedia.org/wiki/Git) is a (mainly) write-only ledger
 
 The [Coordination Risk](Coordination-Risk) just _doesn't go away_.  
 
-Since multiple users can make all the changes they like locally, and merge them later, Git is an `AP` system:  individual users may have _wildly_ different ideas about what the source looks like until the merge is complete.
+Since multiple users can make all the changes they like locally, and merge them later, Git is an `AP` system where everyone's opinion counts (**GII**):  individual users may have _wildly_ different ideas about what the source looks like until the merge is complete.
 
 #### Bitcoin
 
@@ -245,8 +245,6 @@ For this reason, BTC agents [coordinate](Coordination-Risk) into [mining consort
 This in itself is a problem, because the whole _point_ of BTC is that it's competitive, and no one entity has control.  So, mining pools  tend to stop growing before they reach 50% of the BTC network's processing power.  Taking control would be [politically disastrous](https://www.reddit.com/r/Bitcoin/comments/5fe9vz/in_the_last_24hrs_three_mining_pools_have_control/) and confidence in the currency (such as there is) would likely be lost.
 
 ## Communication Is For Coordination
-
-![Coordination Risk - Mitigated by Software Tools](images/generated/risks/coordination/coordination-risk-2.png)
 
 CAP theory gives us a fundamental limit on how much [Coordination Risk](Coordination-Risk) we can mitigate.  We've looked at different organisational structures used to manage [Coordination Risk](Coordination-Risk) within teams of people, organisations or living organisms, so it's the case in software.   
 
