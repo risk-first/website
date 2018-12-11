@@ -34,7 +34,7 @@ Any moment where we test an [Internal Model](#internal-model) by exposing it's p
 
 ## Pay-Off
 
-Pay-Off refers to the _value_ of the [actions we take](#taking action).  When we decide on a course of action, we have in mind a risk we wish to manage.  If the action is likely to have a big positive effect on the risk of a project, we say it has a promising pay off, whereas if the action fails to manage the risk, then it hasn't _paid off_.  
+Pay-Off refers to the _value_ of the [actions we take](#taking-action).  When we decide on a course of action, we have in mind a risk we wish to manage.  If the action is likely to have a big positive effect on the risk of a project, we say it has a promising pay off, whereas if the action fails to manage the risk, then it hasn't _paid off_.  
 
 ## Risk
 
@@ -102,4 +102,4 @@ Refers to any activity in the project.  Actions are usually in order to manage s
 |[Scarcity](Scarcity-Risk)|Risk of not being able to access a dependency in a timely fashion due to it's scarcity.|
 |[Schedule](Scarcity-Risk#schedule-risk)|The aspect of dependency risk related to time.|
 |[Staff](Scarcity-Risk#staff-risk)|The aspect of dependency risks related to employing people.|
-|[Trust-And-Belief](Communication-Risk#trust---belief-risk)|Risk that a party we are communicating with can't be trusted, as it has agency or is unreliable in some other way.  |
+|[Trust-And-Belief](Communication-Risk#trust--belief-risk)|Risk that a party we are communicating with can't be trusted, as it has agency or is unreliable in some other way.  |
