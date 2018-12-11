@@ -50,7 +50,7 @@ function out() {                           (7 symbols)
 1.  **Language Matters:**  the Kolmogorov complexity is dependent on the language, and the features the language has built in. <!-- tweet-end --> 
 2.  **Exact Kolmogorov complexity is uncomputable anyway:**  Since it's the _theoretical_ minimum program length, it's a fairly abstract idea, so we shouldn't get too hung up on this.  There is no function to be able to say, "what's the Kolmogorov complexity of string X"
 3.  **What is this new library function we've created?**   Is `abcdRepeater` going to be part of _every_ Javascript?  If so, then we've shifted [Codebase Risk](Complexity-Risk) away from ourselves, but we've pushed [Communication Risk](Communication-Risk) and [Dependency Risk](Dependency-Risk) onto every _other_ user of Javascript. (Why these?  Because `abcdRepeater` will be clogging up the documentation and other people will rely on it to function correctly.)
-4.  **Are there equivalent functions for every single other string?**  If so, then compilation is no longer a tractable problem because now we have a massive library of different `XXXRepeater` functions to compile against to see if it is...  So, what we _lose_ in [Codebase Risk](Complexity-Risk#codebase-risk) we gain in [Dependency Risk](Dependency-Risk#space-and-time-complexity).
+4.  **Are there equivalent functions for every single other string?**  If so, then compilation is no longer a tractable problem because now we have a massive library of different `XXXRepeater` functions to compile against to see if it is...  So, what we _lose_ in [Codebase Risk](Complexity-Risk#codebase-risk) we gain in [Dependency Risk](Complexity-Risk#space-and-time-complexity).
 5.  **Language design, then, is about _ergonomics_:** <!-- tweet-end --> After you have passed the relatively low bar of providing [Turing Completeness](https://en.wikipedia.org/wiki/Turing_completeness), the key is to provide _useful_ features that enable problems to be solved, without over-burdening the user with features they _don't_ need.  And in fact, all software is about this.
 
 ![Software Dependency Ergonomics:  finding the sweet spot between too many features and too few](images/generated/risks/software-dependency/ergonomics.png)
@@ -72,7 +72,7 @@ The interface of a system expands when you ask it to do a wide variety of things
 So, we now have split complexity into two:
 
  - The inner complexity of the tool (how it works internally, it's own [internal complexity](Complexity-Risk#Kolmogorov-Complexity)).
- - The complexity of the instructions that we need to write to make the tool work, [the protocol complexity](Communication-Riks#protocol-risk), which will be a function of the complexity of the tool itself..
+ - The complexity of the instructions that we need to write to make the tool work, [the protocol complexity](Communication-Risk#protocol-risk), which will be a function of the complexity of the tool itself..
  
 ![Types of Complexity For a Software Dependency](images/generated/risks/software-dependency/protocol-complexity.png)
 
@@ -131,7 +131,7 @@ There are a couple of ways to do this:
 
 ### Conway's Law
 
-Due to channel bandwidth limitations, if the dependency is being written by another person, another team or in another country, [Communication Risk](Communication-Risk] piles up.<!-- tweet-end -->  When this happens, you will want to minimise the interface complexity _as much as possible_, since the more complex the interface, the worse the [Communication Risk](Communication-Risk) will be.  The tendency then is to make the interfaces between teams or people _as simple as possible_, modularising along these organisational boundaries.
+Due to channel bandwidth limitations, if the dependency is being written by another person, another team or in another country, [Communication Risk](Communication-Risk) piles up.<!-- tweet-end -->  When this happens, you will want to minimise the interface complexity _as much as possible_, since the more complex the interface, the worse the [Communication Risk](Communication-Risk) will be.  The tendency then is to make the interfaces between teams or people _as simple as possible_, modularising along these organisational boundaries.
 
 In essence, this is [Conway's Law](https://en.wikipedia.org/wiki/Conways_law):
 

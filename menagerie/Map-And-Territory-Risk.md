@@ -47,7 +47,7 @@ We already know a lot about [Internal Models](Glossary#internal-model) and Audie
 
  - We know from looking at [Communication Risk](Communication-Risk) that communication allows us to _share_ information between [Internal Models](Glossary#internal-model). 
  - We know from [Coordination Risk](Coordination-Risk) the difficulties inherent in aligning [Internal Models](Glossary#internal-model) so that they cooperate.
- - Job markets show us that there is demand for people with certain _skills_.  This demonstrates to us that [Market Risk](Feature-Risk#market-risk) is as applicable to [Internal Models](Glossary#internal-model) containing certain information as it is to products containing [Features](Feature-Risk).  This was the focus of the [Ecosystem](boundary-risk#ecosystems-and-systems) discussion in [Boundary Risk](Boundary-Risk).
+ - Job markets show us that there is demand for people with certain _skills_.  This demonstrates to us that [Market Risk](Feature-Risk#market-risk) is as applicable to [Internal Models](Glossary#internal-model) containing certain information as it is to products containing [Features](Feature-Risk).  This was the focus of the [Ecosystem](boundary-risk#Lock-In) discussion in [Boundary Risk](Boundary-Risk).
  
 ![Relative popularity of "Machine Learning" and "Big Data" as search terms on [Google Trends](https://trends.google.com), 2011-2018 ](images/google-trends.png)
  

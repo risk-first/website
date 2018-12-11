@@ -183,7 +183,7 @@ Our second graph has a **Cyclomatic Complexity** of 1 (the minimum), but we can 
 
 Here, we've spotted that the structure of subgraphs **P1** and **P2** are the same:  we can have the same functions there to assemble those.  Noticing and exploiting patterns of repetition is one of the fundamental tools we have in the fight against [Complexity Risk](Complexity-Risk).
 
-So, we've looked at some measures of software structure complexity, in order that we can say "this is more complex than this".  However, we've not really said why complexity entails [Risk](Glossary#Attendant-Risk).  So let's address that now by looking at two analogies, [Mass](Complexity-Risk#Complexity-as-mass) and [Technical Debt](Complexity-Risk#technical-debt).  
+So, we've looked at some measures of software structure complexity, in order that we can say "this is more complex than this".  However, we've not really said why complexity entails [Risk](Glossary#Attendant-Risk).  So let's address that now by looking at two analogies, [Mass](Complexity-Risk#Complexity-is-mass) and [Technical Debt](Complexity-Risk#technical-debt).  
 
 ## Complexity is Mass
 

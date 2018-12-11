@@ -108,7 +108,7 @@ For many years I have worked in the Finance Industry, and it's given me time to 
 5. The change request software is generally awful, making the job of raising change requests tedious and time-consuming.  Therefore, developers would _automate_ the processes for release, sometimes including the process to write the change request.  This allowed them to improve release cadence, at the expense of owning more code.
 6. Auditors didn't like the fact that this automation existed, because effectively, that meant that developers could get access to production with the press of a button, effectively taking you back to step 1...
 
-## Parkinson's Law
+## Bureaucracy Risk
 
 Where we've talked about process evolution above, the actors involved have been acting in good faith:   they are working to mitigate risk in the organisation.  The [Process Risk](Process-Risk) that accretes along the way is an _unintended consequence_:  There is no guarantee that the process that arises will be humane and intuitive.  Many organisational processes end up being baroque or Kafka-esque, forcing unintuitive behaviour on their users.  This is partly because process design is _hard_, and it's difficult to anticipate all the various ways a process will be used ahead-of-time.  
 
@@ -118,7 +118,7 @@ But [Parkinson's Law](https://en.wikipedia.org/wiki/Parkinsons_law) takes this o
 
 This implies that there is a tendency for organisations to end up with _needless levels of [Process Risk](Process-Risk)_.
 
-To fix this, design needs to happen at a higher level.  In our code, we would [Refactor](Complexity-Risk#refactoring) these processes to remove the unwanted complexity.  In an business, it requires re-organisation at a higher level to redefine the boundaries and responsibilities between the teams.  
+To fix this, design needs to happen at a higher level.  In our code, we would [Refactor](Complexity-Risk#Technical-Debt) these processes to remove the unwanted complexity.  In an business, it requires re-organisation at a higher level to redefine the boundaries and responsibilities between the teams.  
 
 Next in the tour of [Dependency Risks](Dependency-Risk), it's time to look at [Boundary Risk](Boundary-Risk).
 

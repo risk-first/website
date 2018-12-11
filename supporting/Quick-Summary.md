@@ -14,7 +14,7 @@ A key question then is: **how do we select the right tools for the job?**
 
 One way to examine the project in-flight is by looking at the risks it faces. 
 
-Commonly, tools such as [RAID logs]() and [RAG status]() reporting are used.  These techniques should be familiar to project managers and developers everywhere.   
+Commonly, tools such as [RAID logs](https://www.projectmanager.com/blog/raid-log-use-one) and [RAG status](https://pmtips.net/blog-new/what-does-rag-status-mean) reporting are used.  These techniques should be familiar to project managers and developers everywhere.   
 
 However, the Risk-First view is that we can go much further:  that each item of work being done on the project is to manage a particular risk.  Risk isn't something that just appears in a report, it actually drives *everything we do*.  
 

@@ -6,7 +6,7 @@ As in [Agency Risk](Agency-Risk), we are going to use the term _agent_, which re
 
 In this section, we'll first build up [a model of Coordination Risk](#a-model-of-coordination-risk) and what exactly coordination means and why we do it.  Then, we'll look at some classic [problems of coordination](#problems-of-coordination).  Then, we're going to consider agency at several different levels (because of [Scale Invariance](Evaluating-Risk#invariances-2-scale-invariance)) .  We'll look at:
 
- - [Team Decision Making](#team-decision-making),
+ - [Team Decision Making](#decision-making),
  - [Living Organisms](#in-living-organisms),
  - [Larger Organisations](#large-organisations) and the staff within them,
  - and [Software Processes](#in-software-processes).
