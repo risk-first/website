@@ -54,7 +54,7 @@ Wherever we integrate dependencies with complex protocols, we potentially have [
 
  - The _sunk cost_ of the [Learning Curve](Communication-Risk#learning-curve-risk) we've overcome to integrate the dependency, when it fails to live up to expectations.
  - The likelihood of, and costs of changing to something else in the future.  
- - The risk of [Lock In](#vendor-lock-in).
+ - The risk of [Lock In](#lock-in).
 
 As we saw in [Software Dependency Risk](Software-Dependency-Risk), [Boundary Risk](Boundary-Risk) is a big factor in choosing libraries and services.  However, it can apply to any kind of dependency:
 
@@ -71,7 +71,7 @@ Because of [Boundary Risk](Boundary-Risk)'s relationship to [Learning Curve Risk
 - Using a particular brand of database with a [JDBC](https://en.wikipedia.org/wiki/Java_Database_Connectivity) driver comes with _some_ [Boundary Risk](Boundary-Risk):  but the boundary is specified by a standard.  Although the standard doesn't cover every aspect of the behaviour of the database, it does minimise risk, because if you are familiar with one JDBC driver, you'll be familiar with them all, and swapping one for another is relatively easy.
 - Choosing a language or framework comes with higher [Boundary Risk](Boundary-Risk):  you are expected to yield to the framework's way of behaving throughout your application.  You cannot separate the concern easily, and swapping out the framework for another is likely to leave you with a whole new set of assumptions and interfaces to deal with.
 
-## Lock-In & Ecosystems
+## Lock-In
 
 Sometimes, one choice leads to another, and you're forced to "double down" on your original choice, and head further down the path of commitment.  
 
@@ -141,7 +141,7 @@ Each new version has a greater functional scope than the one before (pushing bac
 
 You can see in the diagram above the Peter Principle at play:  as more responsibility is given to a dependency, the more complex it gets, and the greater the learning curve to work with it.  Large ecosystems like Java react to [Learning Curve Risk](Communication-Risk#learning-curve-risk) by having copious amounts of literature to read or buy to help, but it is still off-putting.
 
-Because [Complexity is Mass](Complexity-Risk#complexity-as-mass), large ecosystems can't respond quickly to [Feature Drift](Feature-Risk#feature-drift-risk).  This means that when the world changes, _new_ systems will come along to plug the gaps. 
+Because [Complexity is Mass](Complexity-Risk#complexity-is-mass), large ecosystems can't respond quickly to [Feature Drift](Feature-Risk#feature-drift-risk).  This means that when the world changes, _new_ systems will come along to plug the gaps. 
 
 This implies a trade-off:  
 - Sometimes it's better to accept the [Boundary Risk](Boundary-Risk) innate in a smaller system than try to work within the bigger, more complex system.

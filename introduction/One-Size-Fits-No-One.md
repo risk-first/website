@@ -19,11 +19,11 @@ In this section, we're going to have a brief look at some different software met
 Waterfall is a family of methodologies advocating a linear, stepwise approach to the processes involved in delivering a software system.  The basic idea behind Waterfall-style methodologies was that the software process is broken into distinct stages, usually including:
 
 - [Requirements Capture](Requirements-Capture)
-- [Specification](Big-Design-Up-Front)
+- [Specification](Design)
 - [Implementation](Development)
 - [Verification](Testing)
 - [Delivery](Delivery) and [Operations](Support)
-- [Sign Offs](Sign-Offs) at each stage
+- [Sign Offs](Sign-Off) at each stage
 
 Because Waterfall methodologies are borrowed from _the construction industry_, they manage the risks that you would care about in a construction project.  Specifically, minimising the risk of rework, and the risk of costs spiralling during the physical phase of the project.  For example, pouring concrete is significantly easier than digging it out again after it sets.  
 
@@ -71,7 +71,7 @@ The promise of any methodology is that it will help you manage certain [Hidden R
 
 A methodology offers us a route through the [Risk Landscape](Glossary#risk-landscape), based on the risks that the designers of the methodology care about.  When we use the methodology, it means that we are baking into our behaviour actions to avoid those risks.  
  
-When we [take action](Glossary#take-action) according to a methodology, we expect the [Pay-Off](Glossary#pay-off), and if this doesn't materialise, then we feel the methodology is failing us.   But it could just be that it is inappropriate to the _type of project_ we are running.  Our [Risk Landscape](Glossary#risk-landscape) may not be the one the designers of the methodology envisaged.   For example:
+When we [take action](Glossary#taking-action) according to a methodology, we expect the [Pay-Off](Glossary#pay-off), and if this doesn't materialise, then we feel the methodology is failing us.   But it could just be that it is inappropriate to the _type of project_ we are running.  Our [Risk Landscape](Glossary#risk-landscape) may not be the one the designers of the methodology envisaged.   For example:
 
  - NASA can't do Agile when launching space craft:  there's no two-weekly launch that they can iterate over, and the the risks of losing a rocket or satellite are simply too great to allow for iteration in production.   The risk profile is just all wrong for Agile: you need to manage the risk of _losing hardware_ over the risk of _requirements changing_.  
 
