@@ -196,9 +196,9 @@ In the above diagram, you can already see that there is a _race condition_:  if 
 
 #### With an AP System
 
-Here, we are going to consider what happens when communication breaks down between Agents 1 and 2.  That is, they are _isolated_ from communicating with each other.  As shown in the above diagram, in an `AP` system, we have a database that is able to survive partitioning, and always returns a response, but may not be consistent.  The value `B` will get back will depend on whether they talk with Agent 1 or Agent 2.  
-
 ![In an AP system, the User B may get back a _stale value_ for X](images/generated/risks/coordination/cap-ap.png)
+
+Here, we are going to consider what happens when communication breaks down between Agents 1 and 2.  That is, they are _isolated_ from communicating with each other.  As shown in the above diagram, in an `AP` system, we have a database that is able to survive partitioning, and always returns a response, but may not be consistent.  The value `B` will get back will depend on whether they talk with Agent 1 or Agent 2.  
 
 #### With an CP System
 
