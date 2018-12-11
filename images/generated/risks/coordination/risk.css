@@ -44,7 +44,8 @@ interface,
 component,
 channel-artifact,
 internal-model-artifact,
-protocol-artifact {
+protocol-artifact,
+agent-artifact {
 	kite9-type: container;
 	kite9-margin: 10pt;
 	kite9-link-inset: 10pt;
@@ -55,6 +56,10 @@ protocol-artifact {
 	kite9-padding: 10pt; 
 	kite9-connection-align: 50%;
 	kite9-min-size: 110pt 140pt;	
+}
+
+agent-artifact {
+	kite9-template: url(template.svg#agent-artifact);
 }
 
 users {

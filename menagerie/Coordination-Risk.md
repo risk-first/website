@@ -160,59 +160,57 @@ This means that there is a deal:  _most_ of the cells in our body accede control
  
 ## Large Organisations
 
-Working in a large organisation often feels like being a cell in a larger organism.  Just as cells live and die, but the organism goes on, in the same way, workers come and go from a large company but the organisation goes on.  By working in an organisation, we give up self-control and competition and accept **AI** and **AII** power structures above us, but we trust that there is symbiotic value creation on both sides of the employment deal.
+Working in a large organisation often feels like being a cell in a larger organism.  Cells live and die and the organism goes on.  Workers come and go from a large company but the organisation goes on.  By working in an organisation, we give up self-control and competition and accept **AI** and **AII** power structures above us, but we trust that there is symbiotic value creation on both sides of the employment deal.
  
-_Less_ consultative decision making styles are more appropriate then when we don't have the luxury of high-bandwidth channels for discussion, or when the number of parties rises above a room-full of people.   As you can see from the table above, for **CII** and **GII** decision-making styles, the amount of communication increases non-linearly with the number of participants, so we need something simpler.  As we saw in the [Complexity Risk](Complexity-Risk) section, hierarchies are an excellent way of economizing on number of different communication channels, and we use these frequently when there are lots of parties to coordinate.
+_Less_ consultative decision making styles are more appropriate then when we don't have the luxury of high-bandwidth channels for discussion. When the number of parties rises above a room-full of people it's not possible to hear everyone's voice.   As you can see from the table above, for **CII** and **GII** decision-making styles, the amount of communication increases non-linearly with the number of participants, so we need something simpler.  
 
-![Hierarchy of Function in an Organisation](images/kite9/coordination-organisation-temp.png)
+As we saw in the [Complexity Risk](Complexity-Risk) section, hierarchies are an excellent way of economising on number of different communication channels, and we use these frequently when there are lots of parties to coordinate.
 
-In large organisations, teams are created and leaders chosen for those teams precisely to mitigate [Communication Risk](Communication-Risk).  We're all familiar with this: control of the team is ceded to the leader, who takes on the role of 'handing down' direction from above, but also 'reporting up' issues that cannot be resolved within the team.   In Vroom and Yetton's model, this is moving from a **GII** or **CII** to an **AI** or **AII** style of leadership.  
-
-As shown in the diagram above, we end up with a hierarchy of groups, each having it's own decision-making style.  The team leader at the bottom level is a _decision maker_ within his team, but moving up, doesn't have decision making power in the next team up.. and so on.  
-
-Sometimes, parts of an organisation are encouraged _not_ to coordinate, but to compete.   In the diagram above, we have an [M-Form](https://en.wikipedia.org/wiki/Multi-divisional_form) organisation, composed of _competing divisions_.  
+In large organisations, teams are created and leaders chosen for those teams precisely to mitigate this [Communication Risk](Communication-Risk).  We're all familiar with this: control of the team is ceded to the leader, who takes on the role of 'handing down' direction from above, but also 'reporting up' issues that cannot be resolved within the team.   In Vroom and Yetton's model, this is moving from a **GII** or **CII** to an **AI** or **AII** style of leadership.  
 
 Clearly, this is just a _model_, it's not set in stone and decision making styles usually change from day-to-day and decision to decision.  The same is not true in our software - _rules are rules_.
 
 ## In Software Processes
 
-It should be pretty clear that we are applying the [Scale Invariance](Evaluating-Risk#invariances-2-scale-invariance) rule to [Coordination Risk](Coordination-Risk):  all of the problems we've described as affecting teams, also affect software, although the scale and terrain are different.  Software processes have limited _agency_ - in most cases they follow fixed rules set down by the programmers, rather than self-organising like people can (so far).
+It should be pretty clear that we are applying our [Scale Invariance](Evaluating-Risk#invariances-2-scale-invariance) rule to [Coordination Risk](Coordination-Risk):  all of the problems we've described as affecting teams and organisations also affect software, although the scale and terrain are different.  Software processes have limited _agency_ - in most cases they follow fixed rules set down by the programmers, rather than self-organising like people can (so far).
 
-As before, in order to face [Coordination Risk](Coordination-Risk) in software, we need multiple agents all working together. [Coordination Risks](Coordination-Risk) (such as race conditions or deadlock) only really occurs where _more than one thing is happening at a time_.  This means we are considering _at least_ multi-threaded software and anything above that (multiple CPUs, servers, data-centres and so on).  
+As before, in order to face [Coordination Risk](Coordination-Risk) in software, we need multiple agents all working together. [Coordination Risks](Coordination-Risk) (such as race conditions or deadlock) only really occur where _more than one agent working at the same time_.  This means we are considering _at least_ multi-threaded software, and anything above that (multiple CPUs, servers, data-centres and so on).  
 
 ### CAP Theorem
 
-The [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem) has a lot to say about [Coordination Risk](Coordination-Risk).  Imagine talking to a distributed database, where your request (_read_ or _write_) can be handled by one of many agents.
+Imagine talking to a distributed database, where your request (_read_ or _write_) can be handled by one of many agents.
 
-![User A and User B are both using a distributed database, managed by Agents 1 and 2, whom each have their own Internal Model](images/kite9/coordination-cap-1.png)
+![User A and User B are both using a distributed database, managed by Agents 1 and 2, whom each have their own Internal Model](images/generated/risks/coordination/cap1.png)
 
 In the diagram above, we have just two agents `1` and `2`, in order to keep things simple.  `User A` _writes something_ to the database, then `User B` _reads it back_ afterwards.     
 
 According to the [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem), there are three properties we could desire in such a system:
 
-- **Consistency**: Every read receives the most recent value from the last write.
-- **Availability**: Every request receives a response.
-- **Partition tolerance**: The system can operate despite the isolation (lack of communication with) some of it's agents.
+- **Consistency (C)**: Every read receives the most recent value from the last write.
+- **Availability (A)**: Every request receives a response.
+- **Partition tolerance (P)**: The system can operate despite the isolation (lack of communication with) some of it's agents.
 
 The [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem) states that this is a [Trilemma](https://en.wikipedia.org/wiki/Trilemma).  That is, you can only have two out of the three properties.   
 
-There are plenty of resources on the internet that discuss this in depth, but let's just illustrate with some diagrams to show how this plays out.  In our diagram example, we'll say that _any_ agent can receive the read or write.  So this might be a **GII** decision making system, because all the agents are going to need to coordinate to figure out what the right value is to return for a read, and what the last value written was.  In these, the last write (setting X to 1) was sent to Agent 1 which then becomes _isolated_, and can't be communicated with, due to network failure.  What will User B get back?
+There are plenty of resources on the Internet that discuss this in depth, but let's just illustrate with some diagrams to show how this plays out.  In the diagram above, we can see a 2-agent distributed database.   Either agent can receive a read or write.  So this might be a **GII** decision making system, because all the agents are going to need to coordinate to figure out what the right value is to return for a read, and what the last value written was.  
+
+In the above diagram, you can already see that there is a _race condition_:  if A and B both make their requests at the same time, what will B get back?   The original value of X, or the new value?
 
 #### With an AP System
 
-![In an AP system, the User B will get back a _stale value_ for X](images/kite9/coordination-cap-ap.png)
+Here, we are going to consider what happens when communication breaks down between Agents 1 and 2.  That is, they are _isolated_ from communicating with each other.  As shown in the above diagram, in an `AP` system, we have a database that is able to survive partitioning, and always returns a response, but may not be consistent.  The value `B` will get back will depend on whether they talk with Agent 1 or Agent 2.  
 
-With `AP`, you can see that `User B` is getting back a _stale value_.  `AP` scenarios lead to [Race Conditions](https://en.wikipedia.org/wiki/Race_condition):  `Agent 1`s availability determines what value `User B` gets back.  
+![In an AP system, the User B may get back a _stale value_ for X](images/generated/risks/coordination/cap-ap.png)
 
 #### With an CP System
 
 ![In an CP system, the User B won't get anything back for X, because Agent 2 can't be sure it has the latest value](images/kite9/coordination-cap-cp.png).  
 
-Where Agent 2 is left waiting for Agent 1 to re-appear, we are _blocked_.  So CP systems lead to [Deadlock](https://en.wikipedia.org/wiki/Deadlock) scenarios.  
+To be consistent, Agent 2 needs to check with Agent 1 to make sure it has the latest value for X.  Where Agent 2 is left waiting for Agent 1 to re-appear, we are _blocked_.  So CP systems will block when partitioned.
 
 #### With an CA System
 
-![In an CA system, we can't have partition tolerance, so in order to be consistent a single Agent has to do all the work](images/kite9/coordination-cap-ca.png)
+![In an CA system, we can't have partition tolerance, so in order to be consistent a single Agent has to do all the work](images/generated/risks/coordination/cap-ca.png)
 
 Finally, if we have a CA system, we are essentially saying that _only one agent is doing the work_.  (You can't partition a single agent, after all).  But this leads to [Resource Allocation](https://en.wikipedia.org/wiki/Resource_allocation) and **Contention** around use of the scarce resource of `Agent 2`'s attention. (Both [Coordination Risk](Coordination-Risk) issues we met earlier.)  
 
@@ -224,11 +222,11 @@ Let's look at some real-life examples of how this manifests in software.
 
 #### ZooKeeper
 
-First, [ZooKeeper](https://zookeeper.apache.org) is an Open-Source datastore, which is used a lot for coordinating a distributed systems, and storing things like configuration information across them.  If the configuration of a distributed system gets changed, it's important that _all of the agents in the system know about it_, otherwise... disaster.
+First, [ZooKeeper](https://zookeeper.apache.org) is an Open-Source datastore, which is used in building distributed systems (like the one above) and ensuring things like configuration information are consistent across all agents.  
 
 This _seems_ trivial, but it quickly gets out-of-hand:  what happens if only some of the agents receive the new information? What happens if a datacentre gets disconnected while the update is happening?  There are lots of edge-cases.  
 
-ZooKeeper handles this by communicating inter-agent with it's own protocol.  It elects a **master agent** (via voting), turning it into an **AI**-style team.  If the master is lost for some reason, a new leader is elected.  _Writes_ are then coordinated via the **master agent** who makes sure that a _majority of agents_ have received and stored the configuration change before telling the user that the transaction is complete.  Therefore, ZooKeeper is a `CP` system.  
+ZooKeeper handles this by communicating inter-agent with it's own protocol.  It elects a **master agent** (via **GII**-style voting), turning it into an **AI**-style team.  If the master is lost for some reason, a new leader is elected.  _Writes_ are then coordinated via the **master agent** who makes sure that a _majority of agents_ have received and stored the configuration change before telling the user that the transaction is complete.  Therefore, ZooKeeper is a `CP` system.  
 
 #### Git
 
@@ -240,19 +238,21 @@ Since multiple users can make all the changes they like locally, and merge them 
 
 #### Bitcoin
 
-Finally, [Bitcoin (BTC)](https://en.wikipedia.org/wiki/Bitcoin) is a write-only [distributed ledger](https://en.wikipedia.org/wiki/Distributed_ledger), where agents _compete_ to mine BTC, but also at the same time record transactions on the ledger.  BTC is also `AP`, in a similar way to Git.  But new changes can only be appended if you have the latest version of the ledger.  If you append to an out-of-date ledger, your work will be lost.  
+Finally, [Bitcoin (BTC)](https://en.wikipedia.org/wiki/Bitcoin) is a write-only [distributed ledger](https://en.wikipedia.org/wiki/Distributed_ledger), where agents _compete_ to mine BTC (a **UI** style organisation), but also at the same time record transactions on the ledger.  BTC is also `AP`, in a similar way to Git.  But new changes can only be appended if you have the latest version of the ledger.  If you append to an out-of-date ledger, your work will be lost.  
 
 Because it's based on outright competition, if someone beats you to completing a mining task, then your work is wasted.  So, there is  _huge_ [Coordination Risk](Coordination-Risk).
 
-For this reason, BTC agents [coordinate](Coordination-Risk) into [mining consortia](https://en.bitcoin.it/wiki/Comparison_of_mining_pools), so they can avoid working on the same tasks at the same time.  But this in itself is a problem, because the whole _point_ of BTC is that it's competitive, and no one entity has control.  So, mining pools  tend to stop growing before they reach 50% of the BTC network's processing power.  Taking control would be [politically disastrous](https://www.reddit.com/r/Bitcoin/comments/5fe9vz/in_the_last_24hrs_three_mining_pools_have_control/) and confidence in the currency (such as there is) would likely be lost.
+For this reason, BTC agents [coordinate](Coordination-Risk) into [mining consortia](https://en.bitcoin.it/wiki/Comparison_of_mining_pools), so they can avoid working on the same tasks at the same time, turning it into a **CI**-type organisation.  
+
+This in itself is a problem, because the whole _point_ of BTC is that it's competitive, and no one entity has control.  So, mining pools  tend to stop growing before they reach 50% of the BTC network's processing power.  Taking control would be [politically disastrous](https://www.reddit.com/r/Bitcoin/comments/5fe9vz/in_the_last_24hrs_three_mining_pools_have_control/) and confidence in the currency (such as there is) would likely be lost.
 
 ## Communication Is For Coordination
 
 ![Coordination Risk - Mitigated by Software Tools](images/generated/risks/coordination/coordination-risk-2.png)
 
-So, now we have a fundamental limit on how much [Coordination Risk](Coordination-Risk) we can mitigate.  And, just as there are plenty of ways to mitigate [Coordination Risk](Coordination-Risk) within teams of people, organisations or living organisms, so it's the case in software.   
+CAP theory gives us a fundamental limit on how much [Coordination Risk](Coordination-Risk) we can mitigate.  We've looked at different organisational structures used to manage [Coordination Risk](Coordination-Risk) within teams of people, organisations or living organisms, so it's the case in software.   
 
-Earlier in this section, we questioned whether [Coordination Risk](Coordination-Risk) was just another type of [Communication Risk](Communication-Risk).  However, it should be clear after looking at the examples of competition, cellular life and Vroom and Yetton's Model that this is exactly _backwards_:  
+At the start of this section, we questioned whether [Coordination Risk](Coordination-Risk) was just another type of [Communication Risk](Communication-Risk).  However, it should be clear after looking at the examples of competition, cellular life and Vroom and Yetton's Model that this is exactly _backwards_:  
 
 - Most single-celled life has no need for communication: it simply competes for the available resources.  If it lacks anything it needs, it dies.  
 - There are _no_ lines of communication on the **UI** decision-type.  It's only when we want to avoid competition, by sharing resources and working towards common goals that we need to communicate.  
