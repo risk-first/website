@@ -33,28 +33,28 @@ When building software, it's tempting to take a very narrow view of the dependen
    - Employees trying to steal from the company (bad actors).
    - Other crime, such as hackers stealing data.
 
-.. basically, a long laundry-list of everything that can go wrong due to operating in "The Real World".  Although we've spent a lot of time looking at the varieties of [Dependency Risk](Dependency-Risk) on a software project, with [Operational Risk](Operational-Risk) we have to consider that these dependencies will fail in any number of unusual ways, and we can't be ready for all of them.  Nevertheless, preparing for this comes under the umbrella of [Operations Management](#operations-management)
+.. basically, a long laundry-list of everything that can go wrong due to operating in "The Real World".  Although we've spent a lot of time looking at the varieties of [Dependency Risk](Dependency-Risk) on a software project, with [Operational Risk](Operational-Risk) we have to consider that these dependencies will fail in any number of unusual ways, and we can't be ready for all of them.  Nevertheless, preparing for this comes under the umbrella of [Operations Management](#operations-management).
 
 ## Operations Management
 
 ![A Risk-First Model of Operations Management, inspired by the work of Slack _et al._](images/generated/risks/operational/slack.png)
 
-If we are designing a software system to "live" in the real world, we have to be mindful of the environment we're working in, and craft our software and processes accordingly.   This view of the "wider" system is the discipline of Operations Management.  
+If we are designing a software system to "live" in the real world, we have to be mindful of the Operational Context we're working in, and craft our software and processes accordingly.   This view of the "wider" system is the discipline of Operations Management.  
 
-The diagram above is a Risk-First interpretation of [Slack _et al._'s model of Operations Management.](http://amzn.eu/d/b6ZjuMu)) It breaks down some of the concerns of this discipline: a **Transform Process** (the **Operation** itself) is embedded in the wider **Operational Context**, which supplies it with three key dependencies:
+The diagram above is a Risk-First interpretation of [Slack _et al_'s model of Operations Management](http://amzn.eu/d/b6ZjuMu).  This model breaks down some of the key abstractions of the discipline: a **Transform Process** (the **Operation** itself) is embedded in the wider **Operational Context**, which supplies it with three key dependencies:
   
  - **Resources**:  Whether _transformed_ resources (like electricity or information, say) or _transforming_ resources (like staff or equipment).  
  - **Customers**: Which supply it with money in return for goods and services.
  - **Operational Strategy**: The goals and objectives of the operation, informed by the reality of the environment it operates in.
  
-We have looked at processes like the **Transform Process** in the section on [Process Risk](Process-Risk).  The healthy functioning of this process is the domain of [Operations Management](#operations-management), and (as per Slack _et al._) this involves the following actions:
+We have looked at processes like the **Transform Process** in the section on [Process Risk](Process-Risk).  The healthy functioning of this process is the domain of [Operations Management](#operations-management), and (as per Slack _et al._) this involves the following types of actions:
 
  - **Control**:  Ensuring that the Operation is working according to it's targets.  This includes day-to-day quality control and monitoring of the Transform Process. 
  - **Planning**: This covers aspects such as capacity planning, forecasting and project planning.   This is about making sure the transform process has targets to meet and the resources to meet them.
  - **Design**:  Ensuring that the design of the product and the transform process itself fulfils an **Operational Strategy**.
  - **Improvement**:  Improving the operation in response to changes in the **Environment** and the **Operational Strategy**, detecting failure and recovering from it.
 
-Let's look at each of these in turn.
+Let's look at each of these actions in turn.
 
 
 ## Control
