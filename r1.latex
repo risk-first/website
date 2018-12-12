@@ -88,849 +88,243 @@
 
 \frontmatter
 
+\hypertarget{quick-summary}{%
+\chapter{Quick Summary}\label{quick-summary}}
+
+\hypertarget{there-are-lots-of-ways-of-running-software-projects}{%
+\section{1. There are Lots of Ways of Running Software
+Projects}\label{there-are-lots-of-ways-of-running-software-projects}}
+
+There are lots of different ways to look at a project in-flight. For
+example, metrics such as ``number of open tickets'', ``story points'',
+``code coverage'' or ``release cadence'' give us a numerical feel for
+how things are going and what needs to happen next. We also judge the
+health of projects by the practices used on them, such as Continuous
+Integration, Unit Testing or Pair Programming.
+
+Software methodologies, then, are collections of tools and practices:
+``Agile'', ``Waterfall'', ``Lean'' or ``Phased Delivery'' all prescribe
+different approaches to running a project, and are opinionated about the
+way they think projects should be done and the tools that should be
+used.
+
+None of these is necessarily more ``right'' than another- they are
+suitable on different projects at different times.
+
+A key question then is: \textbf{how do we select the right tools for the
+job?}
+
+\hypertarget{we-can-look-at-projects-in-terms-of-risks}{%
+\section{2. We can Look at Projects in Terms of
+Risks}\label{we-can-look-at-projects-in-terms-of-risks}}
+
+One way to examine the project in-flight is by looking at the risks it
+faces.
+
+Commonly, tools such as
+\href{https://www.projectmanager.com/blog/raid-log-use-one}{RAID logs}
+and \href{https://pmtips.net/blog-new/what-does-rag-status-mean}{RAG
+status} reporting are used. These techniques should be familiar to
+project managers and developers everywhere.
+
+However, the Risk-First view is that we can go much further: that each
+item of work being done on the project is to manage a particular risk.
+Risk isn't something that just appears in a report, it actually drives
+\emph{everything we do}.
+
+For example:
+
+\begin{itemize}
+\tightlist
+\item
+  A story about improving the user login screen can be seen as reducing
+  \emph{the risk of users not signing up}.
+\item
+  A task about improving the health indicators could be seen as
+  mitigating \emph{the risk of the application failing and no-one
+  reacting to it}.
+\item
+  Even a task as basic as implementing a new function in the application
+  is mitigating \emph{the risk that users are dissatisfied and go
+  elsewhere}.
+\end{itemize}
+
+One assertion of Risk-First is that \textbf{every action you take on a
+project is to manage a risk.}
+
+\hypertarget{we-can-break-down-risks-on-a-project-methodically}{%
+\section{3. We Can Break Down Risks on a Project
+Methodically}\label{we-can-break-down-risks-on-a-project-methodically}}
+
+Although risk is usually complicated and messy, other industries have
+found value in breaking down the types of risks that affect them and
+addressing them individually.
+
+For example:
+
+\begin{itemize}
+\tightlist
+\item
+  In manufacturing, \emph{tolerances} allow for calculating the
+  likelihood of defects in production.
+\item
+  In finance, projects and teams are structured around monitoring risks
+  like \emph{credit risk}, \emph{market risk} and \emph{liquidity risk}.
+\item
+  \emph{Insurance} is founded on identifying particular risks and
+  providing financial safety-nets for when they occur, such as death,
+  injury, accident and so on.
+\end{itemize}
+
+Software risks are difficult to quantify, and mostly, the effort
+involved in doing so \emph{exactly} would outweigh the benefit.
+Nevertheless, there is value in spending time building
+\emph{classifications of risk for software}. That's what Risk-First
+does: it describes a set of \emph{risk patterns} we see every day on
+software projects.
+
+With this in place, we can:
+
+\begin{itemize}
+\tightlist
+\item
+  Talk about the types of risks we face on our projects, using an
+  appropriate language.
+\item
+  Anticipate Hidden Risks that we hadn't considered before.
+\item
+  Weigh the risks against each other, and decide which order to tackle
+  them.
+\end{itemize}
+
+\hypertarget{we-can-analyse-tools-and-techniques-in-terms-of-how-they-manage-risk}{%
+\section{4. We can Analyse Tools and Techniques in Terms of how they
+Manage
+Risk}\label{we-can-analyse-tools-and-techniques-in-terms-of-how-they-manage-risk}}
+
+If we accept the assertion above that \emph{all} the actions we take on
+a project are about mitigating risks, then it stands to reason that the
+tools and techniques available to us on a project are there for
+mitigating different types of risks.
+
+For example:
+
+\begin{itemize}
+\tightlist
+\item
+  If we do a Code Review, we are partly trying to minimise the risks of
+  bugs slipping through into production, and also manage the Key-Man
+  Risk of knowledge not being widely-enough shared.
+\item
+  If we write Unit Tests, we're addressing the risk of bugs going to
+  production, but we're also mitigating against the risk of
+  \emph{regression}, and future changes breaking our existing
+  functionality.
+\item
+  If we enter into a contract with a supplier, we are mitigating the
+  risk of the supplier vanishing and leaving us exposed. With the
+  contract in place, we have legal recourse against this risk.
+\end{itemize}
+
+From the above examples, it's clear that \textbf{different tools are
+appropriate for managing different types of risks.}
+
+\hypertarget{different-methodologies-are-for-different-risk-profiles}{%
+\section{5. Different Methodologies are for Different Risk
+Profiles}\label{different-methodologies-are-for-different-risk-profiles}}
+
+In the same way that our tools and techniques are appropriate to dealing
+with different risks, the same is true of the methodologies we use on
+our projects. We can use a Risk-First approach to examine the different
+methodologies, and see which risks they address.
+
+For example:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Agile} methodologies prioritise the risk that requirements
+  capture is complicated, error-prone and that requirements change
+  easily.
+\item
+  \textbf{Waterfall} takes the view that development effort is an
+  expensive risk, and that we should build plans up-front to avoid
+  re-work.
+\item
+  \textbf{Lean} takes the view that risk lies in incomplete work and
+  wasted work, and aims to minimise that.
+\end{itemize}
+
+Although many developers have a methodology-of-choice, the argument here
+is that there are tradeoffs with all of these choices.
+
+\begin{quotation}
+
+``Methodologies are like \emph{bicycles}, rather than \emph{religions}.
+Rather than simply \emph{believing}, we can take them apart and see how
+they work. ''
+
+\end{quotation}
+
+\hypertarget{we-can-drive-development-with-a-risk-first-perspective}{%
+\section{6. We can Drive Development With a Risk-First
+Perspective}\label{we-can-drive-development-with-a-risk-first-perspective}}
+
+We have described a model of risk within software projects, looking
+something like this:
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/executive-summary/pattern_language-400dpi.png}
+\caption{Methodologies, Risks, Practices\label{pattern_language.png}}
+\end{figure}
+
+How do we take this further?
+
+One idea explored is the \emph{Risk Landscape}: Although the software
+team can't remove risk from their project, they can take actions that
+move them to a place in the Risk Landscape where the risks on the
+project are more favourable than where they started.
+
+From there, we examine basic risk archetypes you will encounter on the
+software project, to build up a Taxonomy of Software Risk, and look at
+which specific tools you can use to mitigate each kind of risk.
+
+Then, we look at different software practices, and how they manage
+various risks. Beyond this we examine the question: \emph{how can a
+Risk-First approach inform the use of this practice?}
+
+For example:
+
+\begin{itemize}
+\tightlist
+\item
+  If we are introducing a \textbf{Sign-Off} in our process, we have to
+  balance the risks it \emph{mitigates} (coordination of effort, quality
+  control, information sharing) with the risks it \emph{introduces}
+  (delays and process bottlenecks).
+\item
+  If we build in \textbf{Redundancy}, this mitigates the risk of a
+  \emph{single point of failure}, but introduces risks around
+  \emph{synchronizing data} and \emph{communication} between the
+  systems.
+\item
+  If we introduce \textbf{Process}, this may make it easier to
+  \emph{coordinate as a team} and \emph{measure performance} but may
+  lead to bureaucracy, focusing on the wrong goals or over-rigid
+  interfaces to those processes.
+\end{itemize}
+
+Risk-First aims to provide a framework in which we can \emph{analyse
+these actions} and weigh up \emph{accepting} versus \emph{mitigating}
+risks.
+
+\textbf{Still interested? Then dive into reading the introduction.}
+
 \mainmatter
 \part{Introduction}
 
 \part{The Risk Landscape}
-
-\hypertarget{coordination-risk}{%
-\chapter{Coordination Risk}\label{coordination-risk}}
-
-As in Agency Risk, we are going to use the term \emph{agent}, which
-refers to anything with
-\href{https://github.com/risk-first/website/wiki/Agency-Risk\#software-processes-and-teams}{agency}
-in a system to decide it's own fate. That is, an agent has an Internal
-Model, and can take actions based on it. Here, we leave aside Agency
-Risk and work on the assumption that the agents \emph{are} working
-towards a common Goal, even though in reality it's not always the case,
-as we saw in the chapter on Agency Risk.
-
-Coordination Risk is the risk that, a group of people or processes,
-maybe with a common Goal In Mind, can fail to coordinate to meet this
-goal and end up making things worse. Coordination Risk is embodied in
-the phrase ``Too Many Cooks Spoil The Broth'': more people, opinions or
-\emph{agents} often make results worse.
-
-In this chapter, we'll first build up a model of Coordination Risk and
-what exactly coordination means and why we do it. Then, we'll look at
-some classic problems of coordination. Then, we're going to consider
-agency at several different levels (because of Scale Invariance) . We'll
-look at:
-
-\begin{itemize}
-\tightlist
-\item
-  Team Decision Making,
-\item
-  Living Organisms,
-\item
-  Larger Organisations and the staff within them,
-\item
-  and Software Processes.
-\end{itemize}
-
-\ldots{} and we'll consider how Coordination Risk is a problem at each
-scale.
-
-But for now, let's crack on and examine where Coordination Risk comes
-from.
-
-\hypertarget{a-model-of-coordination-risk}{%
-\section{A Model Of Coordination
-Risk}\label{a-model-of-coordination-risk}}
-
-Earlier, in Dependency Risk, we looked at various resources (time,
-money, people, events etc) and showed how we could depend on them,
-taking on risk. Here, however, we're looking at the situation where
-there is \emph{competition for those dependencies}, that is, Scarcity
-Risk: other parties want to use them in a different way.
-
-\hypertarget{law-of-diminishing-returns}{%
-\subsection{Law Of Diminishing
-Returns}\label{law-of-diminishing-returns}}
-
-\begin{figure}
-\centering
-\includegraphics{images/numbers/sharing.png}
-\caption{Sharing Resources. 5 units are available, and the X axis shows
-A's consumption of the resource. B gets whatever remains. Total benefit
-is maximised somewhere in the middle\label{sharing.png}}
-\end{figure}
-
-One argument could come from
-\href{https://en.wikipedia.org/wiki/Diminishing_returns}{Diminishing
-Returns}, which says that the earlier units of a resource (say,
-chocolate bars) give you more benefit than later ones.
-
-We can see this in Figure \ref{sharing.png}. Let's say A and B compete
-over a resource, of which there are 5 units available. For every extra A
-takes, B loses one. The X axis shows A's consumption of the resource, so
-the biggest benefit to A is in the consumption of the first unit.
-
-As you can see, by \emph{sharing}, it's possible that the \emph{total
-benefit} is greater than it can be for either individual. But sharing
-requires coordination. Further, the more competitors involved, the
-\emph{worse} a winner-take-all outcome is for total benefit.
-
-Just two things are needed for competition to occur:
-
-\begin{itemize}
-\tightlist
-\item
-  Multiple, Individual agents, trying to achieve Goals.
-\item
-  Scarce Resources, which the agents want to use as Dependencies.
-\end{itemize}
-
-\hypertarget{coordination-via-communication}{%
-\subsection{Coordination via
-Communication}\label{coordination-via-communication}}
-
-The only way that the agents can move away from competition towards
-coordination is via Communication, and this is where their coordination
-problems begin.
-
-Coordination Risk commonly occurs where people have different ideas
-about how to achieve a goal, and they have different ideas because they
-have different Internal Models. As we saw in the chapter on
-Communication Risk, we can only hope to synchronise Internal Models if
-there are high-bandwidth Channels available for communication.
-
-You might think, therefore, that this is just another type of
-Communication Risk problem, and that's often a part of it, but even with
-synchronized Internal Models, coordination risk can occur. Imagine the
-example of people all trying to madly leave a burning building. They all
-have the same information (the building is on fire). If they coordinate,
-and leave in an orderly fashion, they might all get out. If they don't,
-and there's a scramble for the door, more people might die.
-
-\begin{figure}
-\centering
-\includegraphics{images/generated/risks/coordination/coordination-risk-400dpi.png}
-\caption{Coordination Risk - Mitigated by
-Communication\label{coordination-risk.png}}
-\end{figure}
-
-\hypertarget{problems-of-coordination}{%
-\section{Problems Of Coordination}\label{problems-of-coordination}}
-
-Let's unpack this idea, and review some classic problems of
-coordination, none of which can be addressed without good communication.
-Here are some examples:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  \textbf{Merging Data:} If you are familiar with the source code
-  control system, \href{https://en.wikipedia.org/wiki/Git}{Git}, you
-  will know that this is a \emph{distributed} version control system.
-  That means that two or more people can propose changes to the same
-  files without knowing about each other. This means that at some later
-  time, Git then has to merge (or reconcile) these changes together. Git
-  is very good at doing this automatically, but sometimes, different
-  people can independently change the same lines of code and these will
-  have to be merged manually. In this case, a human arbitrator
-  ``resolves'' the difference, either by combining the two changes or
-  picking a winner.
-\item
-  \textbf{Consensus:} Making group decisions (as in elections) is often
-  decided by votes. But having a vote is a coordination issue, and
-  requires that everyone has been told the rules:
-\end{enumerate}
-
-\begin{itemize}
-\tightlist
-\item
-  Where will the vote be held?
-\item
-  How long do you provide for the vote?
-\item
-  What do you do about absentees?
-\item
-  What if people change their minds in the light of new information?
-\item
-  How do you ensure everyone has enough information to make a good
-  decision?
-\end{itemize}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{2}
-\item
-  \textbf{Factions:} Sometimes, it's hard to coordinate large groups at
-  the same time, and ``factions'' can occur. That the world isn't a
-  single big country is probably partly a testament to this: countries
-  are frequently separated by geographic features that prevent the easy
-  flow of communication (and force). We can also see this in distributed
-  systems, with the
-  \href{https://en.wikipedia.org/wiki/Split-brain_(computing)}{``split
-  brain''} problem. This is where a network of processes becomes
-  disconnected (usually due to a network failure between data centers),
-  and you end up with two, smaller networks with different knowledge.
-  We'll address in more depth later.
-\item
-  \textbf{\href{https://en.wikipedia.org/wiki/Resource_allocation}{Resource
-  Allocation}:} Ensuring that the right people are doing the right work,
-  or the right resources are given to the right people is a coordination
-  issue. On a grand scale, we have
-  \href{https://en.wikipedia.org/wiki/Logistics}{Logistics}, and
-  \href{https://en.wikipedia.org/wiki/Economic_system}{Economic
-  Systems}. On a small scale, the office's \emph{room booking system}
-  solves the coordination issue of who gets a meeting room using a
-  first-come-first-served booking algorithm.
-\item
-  \textbf{\href{https://en.wikipedia.org/wiki/Deadlock}{Deadlock}:}
-  Deadlock refers to a situation where, in an environment where multiple
-  parallel processes are running, the processing stops and no-one can
-  make progress because the resources each process needs are being
-  reserved by another process. This is a specific issue in Resource
-  Allocation, but it's one we're familiar with in the computer science
-  industry. Compare with
-  \href{https://en.wikipedia.org/wiki/Gridlock}{Gridlock}, where traffic
-  can't move because other traffic is occupying the space it wants to
-  move to already.
-\item
-  \textbf{\href{https://en.wikipedia.org/wiki/Race_condition}{Race
-  Conditions}:} A race condition is where we can't be sure of the result
-  of a calculation, because it is dependent on the ordering of events
-  within a system. For example, two separate threads writing the same
-  memory at the same time (one ignoring and over-writing the work of the
-  other) is a race.
-\item
-  \textbf{Contention}: Where there is Scarcity Risk for a dependency, we
-  might want to make sure that everyone gets fair use of it, by taking
-  turns, booking, queueing and so on. As we saw in Scarcity Risk,
-  sometimes, this is handled for us by the Dependency itself. However if
-  it isn't, it's the \emph{users} of the dependency who'll need to
-  coordinate to use the resource fairly, again, by communicating with
-  each other.
-\end{enumerate}
-
-\hypertarget{decision-making}{%
-\section{Decision Making}\label{decision-making}}
-
-Within a team, Coordination Risk is at it's core about resolving
-Internal Model conflicts in order that everyone can agree on a Goal In
-Mind and cooperate on getting it done. Therefore, Coordination Risk is
-worse on projects with more members, and worse in organizations with
-more staff.
-
-As an individual, do you suffer from Coordination Risk at all? Maybe:
-sometimes, you can feel ``conflicted'' about the best way to solve a
-problem. And weirdly, usually \emph{not thinking about it} helps.
-Sleeping too. (Rich Hickey calls this
-``\href{https://www.youtube.com/watch?v=f84n5oFoZBc}{Hammock Driven
-Development}''). This is probably because, unbeknownst to you, your
-subconscious is furiously communicating internally, trying to resolve
-these conflicts itself, and will let you know when it's come to a
-resolution.
-
-\begin{figure}
-\centering
-\includegraphics{images/kite9/vroom-yetton.png}
-\caption{Vroom And Yetton Decision Making Styles. ``d'' indicates
-authority in making a decision, circles are subordinates. Thin lines
-with arrow-heads show information flow, whilst thick lines show
-\emph{opinions} being passed around.\label{vroom-yetton.png}}
-\end{figure}
-
-\href{https://en.wikipedia.org/wiki/Vroom-Yetton_decision_model}{Vroom
-and Yetton} introduced a model of group decision making which delineated
-five different styles of decision making within a team. These are
-summarised in the table below (\textbf{AI, AII, CI, CII, GII}). To this,
-I have added a sixth (\textbf{UI}), which is the \emph{uncoordinated}
-option, where everyone competes. Figure \ref{vroom-yetton.png}
-illustrates these, with the following conventions:
-
-\begin{itemize}
-\tightlist
-\item
-  Thin lines with arrow-heads show a flow of \emph{information}, either
-  one-way or two-way.
-\item
-  Thick lines show a flow of \emph{opinion}.
-\item
-  Boxes with corners are \emph{decision makers}, whereas curved corners
-  don't have a part in the decision.
-\end{itemize}
-
-\begin{sidewaystable} 
-
-\begin{longtable}[]{@{}llllll@{}}
-\toprule
-\begin{minipage}[b]{0.06\columnwidth}\raggedright
-Type\strut
-\end{minipage} & \begin{minipage}[b]{0.27\columnwidth}\raggedright
-Description\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedright
-Decision Makers\strut
-\end{minipage} & \begin{minipage}[b]{0.07\columnwidth}\raggedright
-Opinions\strut
-\end{minipage} & \begin{minipage}[b]{0.07\columnwidth}\raggedright
-Channels\strut
-\end{minipage} & \begin{minipage}[b]{0.27\columnwidth}\raggedright
-Coordination Risk\strut
-\end{minipage}\tabularnewline
-\midrule
-\endhead
-\begin{minipage}[t]{0.06\columnwidth}\raggedright
-\textbf{UI}\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
-Uncoordinated\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-1\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-1\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-0\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
-Competition\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.06\columnwidth}\raggedright
-\textbf{AI}\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
-Autocratic\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-1\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-1\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-\textbf{s}\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
-Maximum Coordination Risk\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.06\columnwidth}\raggedright
-\textbf{AII}\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
-Autocratic (with upward information flow)\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-1\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-1\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-\textbf{s}\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.06\columnwidth}\raggedright
-\textbf{CI}\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
-Consultative (Individual)\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-1\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-1 + \textbf{s}\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-2\textbf{s}\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.06\columnwidth}\raggedright
-\textbf{CII}\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
-Consultative (Group)\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-1\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-1 + \textbf{s}\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-\(\mathbf{s}^2\)\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.06\columnwidth}\raggedright
-\textbf{GII}\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
-Group Consultation and Voting\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-1 + \textbf{s}\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-1 + \textbf{s}\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-\(\mathbf{s}^2\)\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
-Maximum Communication Risk, Schedule Risk\strut
-\end{minipage}\tabularnewline
-\bottomrule
-\end{longtable}
-
-\textbf{s} = subordinate
-
-\end{sidewaystable} 
-
-At the top, you have the \emph{least} consultative styles, and at the
-bottom, the \emph{most}. At the top, decisions are made with just the
-leader's Internal Model but moving down, the Internal Models of the
-\emph{subordinates} are increasingly brought into play.
-
-The decisions at the top are faster, but don't do much for mitigating
-\textbf{Coordination Risk}. The ones below take longer, (incurring
-Schedule Risk) but mitigate more \textbf{Coordination Risk}. Group
-decision-making inevitably involves everyone \emph{learning}, and
-improving their Internal Models.
-
-The trick is to be able to tell which approach is suitable at which
-time. Everyone is expected to make decisions \emph{within their realm of
-expertise}: you can't have developers continually calling meetings to
-discuss whether they should be using an
-\href{https://en.wikipedia.org/wiki/Abstract_factory_pattern}{Abstract
-Factory} or a
-\href{https://en.wikipedia.org/wiki/Factory_method_pattern}{Factory
-Method}, this would waste time. The critical question is therefore,
-``what's the biggest risk?''
-
-\begin{itemize}
-\tightlist
-\item
-  Is the Coordination Risk greater? Are we going to suffer Dead End Risk
-  if the decision is made wrongly? What if people don't agree with it?
-  Poor leadership has an impact on Morale too.
-\item
-  Is the Schedule Risk greater? If you have a 1-hour meeting with eight
-  people to decide a decision, that's \emph{one man day} gone right
-  there: group decision making is \emph{expensive}.
-\end{itemize}
-
-\begin{figure}
-\centering
-\includegraphics{images/kite9/coordination-1.png}
-\caption{Coordination Risk traded for Complexity Risk, Schedule Risk and
-Communication Risk\label{coordination-1.png}}
-\end{figure}
-
-Hopefully, this model shows how \emph{organisation} can reduce
-Coordination Risk. But, to make this work, we need more
-\emph{communication}, and this has attendant complexity and time costs.
-So, we can draw diagram above of our move on the Risk Landscape:
-
-\hypertarget{staff-as-agents}{%
-\subsection{Staff As Agents}\label{staff-as-agents}}
-
-Staff in a team have a dual nature: they are \textbf{Agents} and
-\textbf{Resources} at the same time. The team depends on staff for their
-resource of \emph{labour}, but they're also part of the decision making
-process of the team, because they have \emph{agency} over their own
-actions.
-
-Part of Coordination Risk is about trying to mitigate differences in
-Internal Models. So it's worth considering how varied people's models
-can be:
-
-\begin{itemize}
-\tightlist
-\item
-  Different skill levels
-\item
-  Different experiences
-\item
-  Expertise in different areas
-\item
-  Preferences
-\item
-  Personalities
-\end{itemize}
-
-The job of harmonising this on a project would seem to fall to the team
-leader, but actually people are self-organising to some extent. This
-process is called
-\href{https://en.wikipedia.org/wiki/Tuckmans_stages_of_group_development}{Team
-Development}:
-
-\begin{quotation}
-
-``The forming--storming--norming--performing model of group development
-was first proposed by Bruce Tuckman in 1965, who said that these phases
-are all necessary and inevitable in order for the team to grow, face up
-to challenges, tackle problems, find solutions, plan work, and deliver
-results.''
-
-\sourceatright{\href{https://en.wikipedia.org/wiki/Tuckmans_stages_of_group_development}{\textemdash  Tuckman's Stages Of Group Development, \emph{Wikipedia}}}
-\end{quotation}
-
-Specifically, this describes a process whereby a new group will form and
-then be required to work together. In the process, they will have many
-\emph{disputes}. Ideally, the group will resolve these disputes
-internally and emerge as a team, with a common Goal In Mind.
-
-They can be encouraged with orthogonal practices such as
-\href{https://en.wikipedia.org/wiki/Team_building}{team-building
-exercises} (generally, submitting everyone to extreme experiences in
-order to bond them together). With enough communication bandwidth and
-detente, a motivated team will self-organise code reviews, information
-exchange and improve their practices.
-
-As described above, the job of Coordination is Resource Allocation, and
-so the skills of staff can potentially be looked at as resources to
-allocate. This means handling Coordination Risk issues like:
-
-\begin{itemize}
-\tightlist
-\item
-  People leaving, taking their Internal Models and expertise with them
-  Key Man Risk.
-\item
-  People requiring external training, to understand new tools and
-  techniques Learning-Curve Risk.
-\item
-  People being protective about their knowledge in order to protect
-  their jobs Agency Risk.
-\item
-  Where there are mixed ability levels, senior developers not helping
-  juniors as it ``slows them down''.
-\item
-  People not getting on and not helping each other.
-\end{itemize}
-
-\begin{quotation}
-
-``As a rough rule, three programmers organised into a team can do only
-twice the work of a single programmer of the same ability - because of
-time spent on coordination problems.''
-
-\sourceatright{\href{https://en.wikipedia.org/wiki/Gerald_Weinberg}{\textemdash  Gerald Wienberg, \emph{The Psychology of Computer Programming}} }
-\end{quotation}
-
-\hypertarget{in-living-organisms}{%
-\section{In Living Organisms}\label{in-living-organisms}}
-
-Vroom and Yetton's organisational style isn't relevant to just teams of
-people. We can see it in the natural world too. Although \emph{the
-majority} of cellular life on earth (by weight) is
-\href{http://www.stephenjaygould.org/library/gould_bacteria.html}{single
-celled organisms}, the existence of \emph{humans} (to pick a single
-example) demonstrates that sometimes it's better to try to mitigate
-Coordination Risk and work as a team, accepting the Complexity Risk and
-Communication Risk this entails. As soon as cells start working
-together, they either need to pass \emph{resources} between them, or
-\emph{control} and \emph{feedback}.
-
-For example, in the human body, we have:
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Various
-  \href{https://en.wikipedia.org/wiki/List_of_systems_of_the_human_body}{systems}:}
-  such as the
-  \href{https://en.wikipedia.org/wiki/Respiratory_system}{Respiratory
-  System} or the
-  \href{https://en.wikipedia.org/wiki/Human_digestive_system}{Digestive
-  System}. Each of these systems contains\ldots{}
-\item
-  \textbf{Organs}, such as the heart or lungs, which contain..
-\item
-  \textbf{Tissues}, which contain\ldots{}
-\item
-  \textbf{Cells} of different types. (Even cells are complex systems
-  containing multiple different, communicating sub-systems.)
-\end{itemize}
-
-There is huge attendant Communication Risk to running the human body,
-but, given the success of humanity as a species, you must conclude that
-these steps on the \emph{evolutionary} Risk Landscape have benefited us
-in our ecological niche.
-
-\hypertarget{decision-making-1}{%
-\subsection{Decision Making}\label{decision-making-1}}
-
-The key observation from looking at biology is this: most of the cells
-in the human body \emph{don't get a vote}. Muscles in the motor system
-have an \textbf{AI} or \textbf{AII} relationship with the brain - they
-do what they are told, but there are often nerves to report pain back.
-The only place where \textbf{CII} or \textbf{GII} \emph{could} occur is
-in our brains, when we try to make a decision and weigh up the pros and
-cons.
-
-This means that there is a deal: \emph{most} of the cells in our body
-accede control of their destiny to ``the system''. Living within the
-system of the human body is a better option than going it alone as a
-single-celled organism. Occasionally, due to mutation, we can end up
-with \href{https://en.wikipedia.org/wiki/Cancer}{Cancer}, which is where
-one cell genetically ``forgets'' its purpose in the whole system and
-goes back to selfish individual self-replication (\textbf{UI}). We have
-\href{https://en.wikipedia.org/wiki/White_blood_cell}{White Blood Cells}
-in the body to shut down this kind of behaviour and try to kill the
-rogue cells. In the same way, societies have police forces to stop
-undesirable behaviour amongst their citizens.
-
-\hypertarget{large-organisations}{%
-\section{Large Organisations}\label{large-organisations}}
-
-Working in a large organisation often feels like being a cell in a
-larger organism. Just as cells live and die, but the organism goes on,
-in the same way, workers come and go from a large company but the
-organisation goes on. By working in an organisation, we give up
-self-control and competition and accept \textbf{AI} and \textbf{AII}
-power structures above us, but we trust that there is symbiotic value
-creation on both sides of the employment deal.
-
-\emph{Less} consultative decision making styles are more appropriate
-then when we don't have the luxury of high-bandwidth channels for
-discussion, or when the number of parties rises above a room-full of
-people. As you can see from the table above, for \textbf{CII} and
-\textbf{GII} decision-making styles, the amount of communication
-increases non-linearly with the number of participants, so we need
-something simpler. As we saw in the Complexity Risk chapter, hierarchies
-are an excellent way of economizing on number of different communication
-channels, and we use these frequently when there are lots of parties to
-coordinate.
-
-\begin{figure}
-\centering
-\includegraphics{images/kite9/coordination-organisation-temp.png}
-\caption{Hierarchy of Function in an
-Organisation\label{coordination-organisation-temp.png}}
-\end{figure}
-
-In large organisations, teams are created and leaders chosen for those
-teams precisely to mitigate Communication Risk. We're all familiar with
-this: control of the team is ceded to the leader, who takes on the role
-of `handing down' direction from above, but also `reporting up' issues
-that cannot be resolved within the team. In Vroom and Yetton's model,
-this is moving from a \textbf{GII} or \textbf{CII} to an \textbf{AI} or
-\textbf{AII} style of leadership.
-
-As shown in Figure \ref{coordination-organisation-temp.png}, we end up
-with a hierarchy of groups, each having it's own decision-making style.
-The team leader at the bottom level is a \emph{decision maker} within
-his team, but moving up, doesn't have decision making power in the next
-team up.. and so on.
-
-Sometimes, parts of an organisation are encouraged \emph{not} to
-coordinate, but to compete. In Figure
-\ref{coordination-organisation-temp.png}, we have an
-\href{https://en.wikipedia.org/wiki/Multi-divisional_form}{M-Form}
-organisation, composed of \emph{competing divisions}.
-
-Clearly, this is just a \emph{model}, it's not set in stone and decision
-making styles usually change from day-to-day and decision to decision.
-The same is not true in our software - \emph{rules are rules}.
-
-\hypertarget{in-software-processes}{%
-\section{In Software Processes}\label{in-software-processes}}
-
-It should be pretty clear that we are applying the Scale Invariance rule
-to Coordination Risk: all of the problems we've described as affecting
-teams, also affect software, although the scale and terrain are
-different. Software processes have limited \emph{agency} - in most cases
-they follow fixed rules set down by the programmers, rather than
-self-organising like people can (so far).
-
-As before, in order to face Coordination Risk in software, we need
-multiple agents all working together. Coordination Risks (such as race
-conditions or deadlock) only really occurs where \emph{more than one
-thing is happening at a time}. This means we are considering \emph{at
-least} multi-threaded software and anything above that (multiple CPUs,
-servers, data-centres and so on).
-
-\hypertarget{cap-theorem}{%
-\subsection{CAP Theorem}\label{cap-theorem}}
-
-The \href{https://en.wikipedia.org/wiki/CAP_theorem}{CAP Theorem} has a
-lot to say about Coordination Risk. Imagine talking to a distributed
-database, where your request (\emph{read} or \emph{write}) can be
-handled by one of many agents.
-
-\begin{figure}
-\centering
-\includegraphics{images/kite9/coordination-cap-1.png}
-\caption{User A and User B are both using a distributed database,
-managed by Agents 1 and 2, whom each have their own Internal
-Model\label{coordination-cap-1.png}}
-\end{figure}
-
-In Figure \ref{coordination-cap-1.png}, we have just two agents
-\texttt{1} and \texttt{2}, in order to keep things simple.
-\texttt{User\ A} \emph{writes something} to the database, then
-\texttt{User\ B} \emph{reads it back} afterwards.
-
-According to the CAP Theorem, there are three properties we could desire
-in such a system:
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Consistency}: Every read receives the most recent value from
-  the last write.
-\item
-  \textbf{Availability}: Every request receives a response.
-\item
-  \textbf{Partition tolerance}: The system can operate despite the
-  isolation (lack of communication with) some of it's agents.
-\end{itemize}
-
-The CAP Theorem states that this is a
-\href{https://en.wikipedia.org/wiki/Trilemma}{Trilemma}. That is, you
-can only have two out of the three properties.
-
-There are plenty of resources on the internet that discuss this in
-depth, but let's just illustrate with some diagrams to show how this
-plays out. In our diagram example, we'll say that \emph{any} agent can
-receive the read or write. So this might be a \textbf{GII} decision
-making system, because all the agents are going to need to coordinate to
-figure out what the right value is to return for a read, and what the
-last value written was. In these, the last write (setting X to 1) was
-sent to Agent 1 which then becomes \emph{isolated}, and can't be
-communicated with, due to network failure. What will User B get back?
-
-\hypertarget{with-an-ap-system}{%
-\subsubsection{With an AP System}\label{with-an-ap-system}}
-
-\begin{figure}
-\centering
-\includegraphics{images/kite9/coordination-cap-ap.png}
-\caption{In an AP system, the User B will get back a \emph{stale value}
-for X\label{coordination-cap-ap.png}}
-\end{figure}
-
-With \texttt{AP}, you can see that \texttt{User\ B} is getting back a
-\emph{stale value}. \texttt{AP} scenarios lead to Race Conditions:
-\texttt{Agent\ 1}s availability determines what value \texttt{User\ B}
-gets back.
-
-\hypertarget{with-an-cp-system}{%
-\subsubsection{With an CP System}\label{with-an-cp-system}}
-
-\includegraphics{images/kite9/coordination-cap-cp.png} .
-
-Where Agent 2 is left waiting for Agent 1 to re-appear, we are
-\emph{blocked}. So CP systems lead to Deadlock scenarios.
-
-\hypertarget{with-an-ca-system}{%
-\subsubsection{With an CA System}\label{with-an-ca-system}}
-
-\begin{figure}
-\centering
-\includegraphics{images/kite9/coordination-cap-ca.png}
-\caption{In an CA system, we can't have partition tolerance, so in order
-to be consistent a single Agent has to do all the
-work\label{coordination-cap-ca.png}}
-\end{figure}
-
-Finally, if we have a CA system, we are essentially saying that
-\emph{only one agent is doing the work}. (You can't partition a single
-agent, after all). But this leads to Resource Allocation and
-\textbf{Contention} around use of the scarce resource of
-\texttt{Agent\ 2}'s attention. (Both Coordination Risk issues we met
-earlier.)
-
-\hypertarget{some-real-life-examples}{%
-\subsection{Some Real-Life Examples}\label{some-real-life-examples}}
-
-This sets an upper bound on Coordination Risk: we \emph{can't} get rid
-of it completely in a software system, -or- a system on any other scale.
-Fundamentally, coordination problems are inescapable at some level. The
-best we can do is mitigate it by agreeing on protocols and doing lots of
-communication.
-
-Let's look at some real-life examples of how this manifests in software.
-
-\hypertarget{zookeeper}{%
-\subsubsection{ZooKeeper}\label{zookeeper}}
-
-First, \href{https://zookeeper.apache.org}{ZooKeeper} is an Open-Source
-datastore, which is used a lot for coordinating a distributed systems,
-and storing things like configuration information across them. If the
-configuration of a distributed system gets changed, it's important that
-\emph{all of the agents in the system know about it}, otherwise\ldots{}
-disaster.
-
-This \emph{seems} trivial, but it quickly gets out-of-hand: what happens
-if only some of the agents receive the new information? What happens if
-a datacentre gets disconnected while the update is happening? There are
-lots of edge-cases.
-
-ZooKeeper handles this by communicating inter-agent with it's own
-protocol. It elects a \textbf{master agent} (via voting), turning it
-into an \textbf{AI}-style team. If the master is lost for some reason, a
-new leader is elected. \emph{Writes} are then coordinated via the
-\textbf{master agent} who makes sure that a \emph{majority of agents}
-have received and stored the configuration change before telling the
-user that the transaction is complete. Therefore, ZooKeeper is a
-\texttt{CP} system.
-
-\hypertarget{git}{%
-\subsubsection{Git}\label{git}}
-
-Second, git is a (mainly) write-only ledger of source changes. However,
-as we already discussed above, where different agents make incompatible
-changes, someone has to decide how to resolve the conflicts so that we
-have a single source of truth.
-
-The Coordination Risk just \emph{doesn't go away}.
-
-Since multiple users can make all the changes they like locally, and
-merge them later, Git is an \texttt{AP} system: individual users may
-have \emph{wildly} different ideas about what the source looks like
-until the merge is complete.
-
-\hypertarget{bitcoin}{%
-\subsubsection{Bitcoin}\label{bitcoin}}
-
-Finally, \href{https://en.wikipedia.org/wiki/Bitcoin}{Bitcoin (BTC)} is
-a write-only
-\href{https://en.wikipedia.org/wiki/Distributed_ledger}{distributed
-ledger}, where agents \emph{compete} to mine BTC, but also at the same
-time record transactions on the ledger. BTC is also \texttt{AP}, in a
-similar way to Git. But new changes can only be appended if you have the
-latest version of the ledger. If you append to an out-of-date ledger,
-your work will be lost.
-
-Because it's based on outright competition, if someone beats you to
-completing a mining task, then your work is wasted. So, there is
-\emph{huge} Coordination Risk.
-
-For this reason, BTC agents coordinate into
-\href{https://en.bitcoin.it/wiki/Comparison_of_mining_pools}{mining
-consortia}, so they can avoid working on the same tasks at the same
-time. But this in itself is a problem, because the whole \emph{point} of
-BTC is that it's competitive, and no one entity has control. So, mining
-pools tend to stop growing before they reach 50\% of the BTC network's
-processing power. Taking control would be
-\href{https://www.reddit.com/r/Bitcoin/comments/5fe9vz/in_the_last_24hrs_three_mining_pools_have_control/}{politically
-disastrous} and confidence in the currency (such as there is) would
-likely be lost.
-
-\hypertarget{communication-is-for-coordination}{%
-\section{Communication Is For
-Coordination}\label{communication-is-for-coordination}}
-
-\begin{figure}
-\centering
-\includegraphics{images/generated/risks/coordination/coordination-risk-2-400dpi.png}
-\caption{Coordination Risk - Mitigated by Software
-Tools\label{coordination-risk-2.png}}
-\end{figure}
-
-So, now we have a fundamental limit on how much Coordination Risk we can
-mitigate. And, just as there are plenty of ways to mitigate Coordination
-Risk within teams of people, organisations or living organisms, so it's
-the case in software.
-
-Earlier in this chapter, we questioned whether Coordination Risk was
-just another type of Communication Risk. However, it should be clear
-after looking at the examples of competition, cellular life and Vroom
-and Yetton's Model that this is exactly \emph{backwards}:
-
-\begin{itemize}
-\tightlist
-\item
-  Most single-celled life has no need for communication: it simply
-  competes for the available resources. If it lacks anything it needs,
-  it dies.
-\item
-  There are \emph{no} lines of communication on the \textbf{UI}
-  decision-type. It's only when we want to avoid competition, by sharing
-  resources and working towards common goals that we need to
-  communicate.
-\item
-  Therefore, the whole point of communication \emph{is for
-  coordination}.
-\end{itemize}
-
-In the next chapter, Map And Territory Risk, we're going to look at some
-new ways in which systems can fail, despite their attempts to
-coordinate.
 
 \part{Tools \& Practices}
 
@@ -940,66 +334,341 @@ coordinate.
 \chapter{Glossary}\label{glossary}}
 
 \hypertarget{abstraction}{%
-\section{Abstraction}\label{abstraction}}
+\subsection{Abstraction}\label{abstraction}}
 
 The process of removing physical, spatial, or temporal details or
 attributes in the study of objects or systems in order to more closely
 attend to other details of interest.
 
+\hypertarget{agent}{%
+\subsection{Agent}\label{agent}}
+
+Agency is the capacity of an actor to act in a given environment. We use
+the term \emph{agent} to refer to any process, person, system or
+organisation with agency.
+
 \hypertarget{feedback-loop}{%
-\section{Feedback Loop}\label{feedback-loop}}
+\subsection{Feedback Loop}\label{feedback-loop}}
+
+The process of testing an Internal Model by testing it, through taking
+action to Meet Reality. Typically, we talk about short or long feedback
+loops, depending on the intervals between Meeting Reality.
+
+\hypertarget{goal-in-mind}{%
+\subsection{Goal In Mind}\label{goal-in-mind}}
+
+A picture of the future that an individual or team carries within their
+Internal Model; An imagined destination on the Risk Landscape.
 
 \hypertarget{internal-model}{%
-\section{Internal Model}\label{internal-model}}
+\subsection{Internal Model}\label{internal-model}}
 
-The most common use for Internal Model is to refer to the model of
-reality that you or I carry around in our heads. You can regard the
-concept of Internal Model as being what you \emph{know} and what you
-\emph{think} about a certain situation.
+The model of reality held by an individual, team, software system or
+other Agent. You can regard the concept of Internal Model as being what
+you \emph{know} and what you \emph{think} about a certain situation. An
+internal model \emph{represents} reality: reality is made of matter,
+whereas the internal model is information.
 
 Obviously, because we've all had different experiences, and our brains
 are wired up differently, everyone will have a different Internal Model
 of reality.
 
-Alternatively, we can use the term Internal Model to consider other
-viewpoints: - Within an organisation, we might consider the Internal
-Model of a \emph{team of people} to be the shared knowledge, values and
-working practices of that team. - Within a software system, we might
-consider the Internal Model of a single processor, and what knowledge it
-has of the world. - A codebase is a team's Internal Model written down
-and encoded as software.
-
-An internal model \emph{represents} reality: reality is made of atoms,
-whereas the internal model is information.
-
-\hypertarget{taking-action}{%
-\section{Taking Action}\label{taking-action}}
+\begin{itemize}
+\tightlist
+\item
+  Within an organisation, we might consider the Internal Model of a
+  \emph{team of people} to be the shared knowledge, values and working
+  practices of that team.
+\item
+  Within a software system, we might consider the Internal Model of a
+  single server, and what knowledge it has of the world.
+\item
+  A codebase is a team's Internal Model written down and encoded as
+  software.
+\end{itemize}
 
 \hypertarget{meet-reality}{%
-\section{Meet Reality}\label{meet-reality}}
+\subsection{Meet Reality}\label{meet-reality}}
+
+Any moment where we test an Internal Model by exposing it's predictive
+power against reality. Note that ``Reality'' might be limited in some
+way, for example, a trial period or test users.
 
 \hypertarget{pay-off}{%
-\section{Pay-Off}\label{pay-off}}
+\subsection{Pay-Off}\label{pay-off}}
+
+Pay-Off refers to the \emph{value} of the actions we take. When we
+decide on a course of action, we have in mind a risk we wish to manage.
+If the action is likely to have a big positive effect on the risk of a
+project, we say it has a promising pay off, whereas if the action fails
+to manage the risk, then it hasn't \emph{paid off}.
 
 \hypertarget{risk}{%
-\section{Risk}\label{risk}}
+\subsection{Risk}\label{risk}}
+
+A possibility of loss or cost. Anything that \emph{can} go wrong on a
+project, or is \emph{going} wrong, but so far hasn't been quantified. We
+talk about risk because we wish to recognise both the range of
+possibilities and the range of cost.
+
+Usually broken down into:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Attendant Risk}: A Risk you expect to face as the result of
+  Taking Action.
+\item
+  \textbf{Hidden Risk}: Risks you aren't aware of when you consider
+  Taking Action. i.e.~an \emph{unknown unknown}.
+\item
+  \textbf{Mitigated Risk}: Risks that, as a result of Taking Action have
+  been minimized.
+\item
+  \textbf{Upside Risk}: The possibility of things going well, and
+  leaving us with a benefit. We may take action to maximize the
+  likelihood and return of upside risks.
+\end{itemize}
 
 \hypertarget{risk-landscape}{%
-\section{Risk Landscape}\label{risk-landscape}}
+\subsection{Risk Landscape}\label{risk-landscape}}
 
-\hypertarget{goal-in-mind}{%
-\subsection{Goal In Mind}\label{goal-in-mind}}
+A hypothetical landscape on which risks can be placed. Taking Action
+means making a move on the Risk Landscape to reposition a project so
+that it has a different profile of Attendant Risks.
 
-\hypertarget{initial-risk}{%
-\subsection{Initial Risk}\label{initial-risk}}
+\hypertarget{taking-action}{%
+\subsection{Taking Action}\label{taking-action}}
 
-\hypertarget{attendant-risk}{%
-\subsection{Attendant Risk}\label{attendant-risk}}
+Refers to any activity in the project. Actions are usually in order to
+manage some kind of risk. At the same time, Taking Action usually means
+interacting with reality and updating the Internal Model.
 
-\hypertarget{hidden-risk}{%
-\subsection{Hidden Risk}\label{hidden-risk}}
+\hypertarget{glossary-of-risk-types}{%
+\section{Glossary Of Risk Types}\label{glossary-of-risk-types}}
 
-\hypertarget{mitigated-risk}{%
-\subsection{Mitigated Risk}\label{mitigated-risk}}
+\small 
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+\begin{minipage}[b]{0.24\columnwidth}\raggedright
+Risk\strut
+\end{minipage} & \begin{minipage}[b]{0.70\columnwidth}\raggedright
+Definition\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Boundary\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+Risks due to the choices we make around dependencies, and the
+limitations they place on our ability to change.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Agency\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+Risks due to the fact that things you depend on have agency, and they
+have their own goals to pursue.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Channel\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+Risks due to the inadequacy of the physical channel used to communicate
+our messages. e.g.~noise, loss, interception, corruption.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Communication\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+Risks due to the difficulty of communicating with other entities, be
+they people, software, processes etc.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Codebase\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+The specific risks to a project of having a large, complex codebase to
+manage.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Complexity\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+Risks caused by the weight of complexity in the systems we create, and
+their resistance to change and comprehension.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Conceptual-integrity\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+Risk that the software you provide is too complex, or doesn't match the
+expectations of your clients' internal models.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Coordination\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+Risks that a group of agents cannot work together in a mutually
+beneficial way, and their behaviour devolves into competition.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Dead-End\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+The risk that a particular approach to a change will fail. Caused by the
+fact that at some level, our internal models are not a complete
+reflection of reality.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Deadline\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+Where the use of a dependency has some kind of deadline, which can be
+missed.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Dependency\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+Risks faced by depending on something else. e.g.~an event, process,
+person, piece of software or an organisation.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Feature-Access\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+Risks due to some clients not having access to some or all of the
+features in your product.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Feature-Drift\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+Risk that the features required by clients will change and evolve over
+time.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Feature\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+Risks you face when providing features for your clients.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Feature-Fit\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+Risk that the needs of the client don't coincide with services provided
+by the supplier.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Funding\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+A particular scarcity risk, due to lack of funding.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Implementation\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+Risk that the functionality you are providing doesn't match the features
+the client is expecting, due to poor or partial implementation.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Internal-Model\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+Risks to communication caused by the fact that the internal models of
+the participants are semantically incompatible in some way.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Invisibility\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+Risks caused by the choice of abstractions we use in
+communication.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Learning-Curve\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+Risks due to the difficulty faced in updating an internal model.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Map-And-Territory\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+Risks due to the differences between reality and the internal model of
+reality, and the assumption that they are equivalent.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Market\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+Risk that the value your clients place on the features you supply will
+change, over time.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Message\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+Risks caused by the difficulty of composing and interpreting messages in
+the communication process.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Operational\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+Risks of losses or reputational damage caused by failing processes or
+real-world events.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Opportunity\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+Risk that a particular set of market conditions.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Process\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+Risks due to the fact that when dealing with a dependency, we have to
+follow a particular protocol of communication, which may not work out
+the way we want.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Protocol\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+Risks due to the failure of encoding or decoding messages between two
+parties in communication.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Red-Queen\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+The general risk that the competitive environment we operate within
+changes over time.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Regression\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+Risk that the functionality you provide changes for the worse, over
+time.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Reliability\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+Risks of not getting benefit from a dependency due to it's
+reliability.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Scarcity\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+Risk of not being able to access a dependency in a timely fashion due to
+it's scarcity.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Schedule\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+The aspect of dependency risk related to time.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Security\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+Agency Risks due to actors from outside the system.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Software Dependency\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+Dependency Risk due to software dependencies.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Staff\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+The aspect of dependency risks related to employing people.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Trust-And-Belief\strut
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+Risk that a party we are communicating with can't be trusted, as it has
+agency or is unreliable in some other way.\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
 
 \end{document}  

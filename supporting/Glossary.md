@@ -18,15 +18,13 @@ A picture of the future that an individual or team carries within their [Interna
 
 ### Internal Model
 
-The model of reality held by an individual, team, software system or other [Agent](#agent).   You can regard the concept of [Internal Model](#internal-model) as being what you _know_ and what you _think_ about a certain situation.
+The model of reality held by an individual, team, software system or other [Agent](#agent).   You can regard the concept of [Internal Model](#internal-model) as being what you _know_ and what you _think_ about a certain situation.  An internal model _represents_ reality:  reality is made of matter, whereas the internal model is information.
 
 Obviously, because we've all had different experiences, and our brains are wired up differently, everyone will have a different [Internal Model](#internal-model) of reality.  
 
 - Within an organisation, we might consider the [Internal Model](#internal-model) of a _team of people_ to be the shared knowledge, values and working practices of that team.
-- Within a software system, we might consider the [Internal Model](#internal-model) of a single processor, and what knowledge it has of the world.
+- Within a software system, we might consider the [Internal Model](#internal-model) of a single server, and what knowledge it has of the world.
 - A codebase is a team's [Internal Model](#internal-model) written down and encoded as software.
-
-An internal model _represents_ reality:  reality is made of atoms, whereas the internal model is information.
 
 ### Meet Reality
 
@@ -68,8 +66,10 @@ Refers to any activity in the project.  Actions are usually in order to manage s
 
 ## Glossary Of Risk Types
 
-| Risk             | Definition    |
-|------------------|---------------|
+<!--latex\small -->
+
+| Risk             | Definition                                                               |
+|------------------|--------------------------------------------------------------------------|
 |[Boundary](Boundary-Risk)|Risks due to the choices we make around dependencies, and the limitations they place on our ability to change.|
 |[Agency](Agency-Risk)|Risks due to the fact that things you depend on have agency, and they have their own goals to pursue.|
 |[Channel](Communication-Risk#channel-risk)|Risks due to the inadequacy of the physical channel used to communicate our messages. e.g. noise, loss, interception, corruption.|
