@@ -3,35 +3,29 @@
   <svg:defs>
     <svg:style type="text/css"> @import url("risk.css");</svg:style>
   </svg:defs>
-  <diagram xmlns="http://www.kite9.org/schema/adl"  id="diagram-113" name="Goal In Mind" style="kite9-min-width: 800pt;">
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-113" name="Goal In Mind" style="kite9-min-width: 800pt;">
 
-  <context id="c" bordered="true" style="kite9-layout: right; ">
+    <context id="c" bordered="true" style="kite9-layout: right; ">
 
-    <risk class="schedule" />
-    <risk class="funding" />
-    <risk class="opportunity" />
-    
-    <label  id="id_16">
-      <text>Internal Model</text>
-      <symbols />
-    </label>
-  </context>
+      <mitigated>
+        <risk class="schedule" />
+      </mitigated>
+      <mitigated>
+        <risk class="funding" />
+      </mitigated>
+      <mitigated>
+        <risk class="opportunity" />
+      </mitigated>
+    </context>
 
-  <group style="kite9-layout: down; kite9-horizontal-align: left;">
-    <action>Delivery</action>
-  </group>
-  
-  <context id="d">
-  
-    <risk class="reputation" />  
-    <risk class="operational" />
-    <risk class="feature" />
-  
-    <label  id="id_16">
-      <text>Attendant Risks</text>
-      <symbols />
-    </label>
-  </context>
-  
+    <group style="kite9-layout: down; kite9-horizontal-align: left;">
+      <action>Delivery</action>
+    </group>
+
+    <context id="d">
+      <risk class="trust" />
+      <risk class="operational" />
+    </context>
+
   </diagram>
 </svg:svg>

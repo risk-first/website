@@ -118,7 +118,7 @@ Once exposed to the real world, no system is perfect.  This means we must design
 
 Our production systems are [Meeting Reality](Glossary#meet-reality) all the time, and in order to mitigate [Operational Risk](Operational-Risk) we need to take the most advantage of this as possible.  However, conversely, [Operational Risk](Operational-Risk) includes **Reputational Risk**, which gives us pause:  we don't want to destroy good will created for our organisation, this is very hard to rebuild.  
 
-So there is a tension between "you only get one chance to make a first impression" and "gilding the lilly" (perfectionism).  In the past I've seen this stated as:
+So there is a tension between "you only get one chance to make a first impression" and "gilding the lily" (perfectionism).  In the past I've seen this stated as:
 
 > "Pressure to ship vs pressure to improve"
 
