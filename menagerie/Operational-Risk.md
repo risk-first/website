@@ -109,8 +109,6 @@ In recent years, the "DevOps" movement has brought this [Boundary Risk](Boundary
 
 ## Improvement
 
-![Taking action against Operational Risk by Meeting Reality](images/generated/risks/operational/meeting-reality.png)
-
 Once exposed to the real world, no system is perfect: we will want to improve it over time.  However, conversely, [Operational Risk](Operational-Risk) includes an element of [Trust & Belief Risk](Communication-Risk#trust--belief-risk): our _reputation_ and the good will of our customers.  This gives us pause:  we don't want to destroy good will created for our software, this is very hard to rebuild.  
 
 So there is a tension between "you only get one chance to make a first impression" and "gilding the lily" (perfectionism).  In the past I've seen this stated as:
