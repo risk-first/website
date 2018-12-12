@@ -8,7 +8,7 @@ Here, we're going to set the scene by looking at what constitutes an [Operationa
 
 ## Operational Risks
 
-When building software, it's tempting to take a very narrow view of the dependencies of a system, but [Operational Risks](Operational-Risk) are often caused by dependencies we _don't_ consider - i.e. the _context_ within which the system is operating.  Here are some examples:  
+When building software, it's tempting to take a very narrow view of the dependencies of a system, but [Operational Risks](Operational-Risk) are often caused by dependencies we _don't_ consider - i.e. the **Operational Context** within which the system is operating.  Here are some examples:  
 
  - **[Staff Risks](Scarcity-Risk#staff-risk):** 
    - Freak weather conditions affecting ability of staff to get to work, interrupting the development and support teams. 
@@ -41,7 +41,7 @@ When building software, it's tempting to take a very narrow view of the dependen
 
 If we are designing a software system to "live" in the real world, we have to be mindful of the environment we're working in, and craft our software and processes accordingly.   This view of the "wider" system is the discipline of Operations Management.  
 
-The diagram above is a Risk-First interpretation of [Slack _et al._'s model of Operations Management.](http://amzn.eu/d/b6ZjuMu)) It breaks down some of the concerns of this discipline: a **Transform Process** (the **Operation** itself) is embedded in the wider **Environment**, which supplies it with three key dependencies:
+The diagram above is a Risk-First interpretation of [Slack _et al._'s model of Operations Management.](http://amzn.eu/d/b6ZjuMu)) It breaks down some of the concerns of this discipline: a **Transform Process** (the **Operation** itself) is embedded in the wider **Operational Context**, which supplies it with three key dependencies:
   
  - **Resources**:  Whether _transformed_ resources (like electricity or information, say) or _transforming_ resources (like staff or equipment).  
  - **Customers**: Which supply it with money in return for goods and services.
