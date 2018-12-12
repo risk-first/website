@@ -76,7 +76,7 @@ As we saw in [Map and Territory Risk](Map-and-Territory-Risk), it's very easy to
 
 ### The Operational Context
 
-There are plenty of [Hidden Risks](Glossary#hidden-risk) within the environment the operation exists within, and these change all the time in response to economic or political change.  In order to manage a risk, you have to uncover it, so part of [Operations Management](Operations-Management) is to look for trouble:
+There are plenty of [Hidden Risks](Glossary#hidden-risk) within the environment the operation exists within, and these change all the time in response to economic or political change.  In order to manage a risk, you have to uncover it, so part of [Operations Management](#Operations-Management) is to look for trouble:
 
 - **Environmental Scanning** is all about trying to determine which changes in the environment are going to impact your operation.   Here, we are trying to determine the level of [Dependency Risk](Dependency-Risk) we face for external dependencies, such as _suppliers_, _customers_ and _markets_.  Tools like [PEST](https://en.wikipedia.org/wiki/PEST_analysis) are relevant here, as is 
 - **[Penetration Testing](https://en.wikipedia.org/wiki/Penetration_test)** is looking for security weaknesses within the operation.  See [OWASP](https://en.wikipedia.org/wiki/OWASP) for examples.
@@ -88,7 +88,7 @@ There are plenty of [Hidden Risks](Glossary#hidden-risk) within the environment 
 
 In order to _control_ an operation, we need targets and plans to _control against_.  For a system to run well, it needs to carefully manage unreliable dependencies, and ensure their safety and availability.  In the example of the humans, say, it's the difference between [Hunter-Gathering](https://en.wikipedia.org/wiki/Hunter-gatherer) (picking up food where we find it) and [Agriculture](https://en.wikipedia.org/wiki/Agriculture) (controlling the environment and the resources to grown crops).
 
-As the diagram above shows, we can bring [Forecasting and Planning](#forecasting-and-planning) to bear on dependency management, and this usually falls to the more human end of the operation.
+As the diagram above shows, we can bring [Planning](#planning) to bear on dependency management, and this usually falls to the more human end of the operation.
 
 ## Design
 
@@ -98,7 +98,7 @@ Since our operation exists in a world of risks like [Red Queen Risk](Scarcity-Ri
 
 While _planning_ is a day-to-day operational feedback loop, _design_ is a longer feedback loop which is changing not just the parameters of the operation, but the operation itself.
 
-You might think that for an IT operation, tasks like [Design](#design-and-change) belong within the Development function within an organisation.  Often, this is the case.  However separating Development from Operation implies [Boundary Risk](Boundary-Risk) between these two functions.  For example, the developers might employ different tools, equipment and processes to the operations team, resulting in a mismatch when software is delivered.
+You might think that for an IT operation, tasks like [Design](#design) belong within the Development function within an organisation.  Often, this is the case.  However separating Development from Operation implies [Boundary Risk](Boundary-Risk) between these two functions.  For example, the developers might employ different tools, equipment and processes to the operations team, resulting in a mismatch when software is delivered.
 
 In recent years, the "DevOps" movement has brought this [Boundary Risk](Boundary-Risk) into sharper focus.  This specifically means:
  

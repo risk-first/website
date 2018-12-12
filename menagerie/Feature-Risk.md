@@ -33,7 +33,7 @@ At this point, it's worth pointing out that sometimes, _the user expects the wro
 
 [Regression Risk](Feature-Risk#regression-risk) is the risk of breaking existing features in your software when you add new ones.  <!-- tweet-end -->As with the previous risks, the eventual result is the same; customers don't have the features they expect.  This can become a problem as your code-base [gains Complexity](Complexity-Risk), as it becomes impossible to keep a complete [Internal Model](Glossary#Internal-Model) of the whole thing in your head.
 
-Delivering new features can delight your customers, breaking existing ones will annoy them.  This is something we'll come back to in [Reputation Risk](Operational-Risk#reputational-risk).
+Delivering new features can delight your customers, breaking existing ones will annoy them.  This is something we'll come back to in [Operational Risk](Operational-Risk).
 
 ## Conceptual Integrity Risk
 
