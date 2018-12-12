@@ -61,7 +61,7 @@ Let's look at each of these actions in turn.
 
 ![Control, Monitoring And Detection](images/generated/risks/operational/monitoring-detection.png)
 
-Since Humans and machines have different areas of expertise, and because [Operational Risks](Operational-Risk) are often novel, it's often not optimal to try and automate everything.  A good operation will consist of a mix of human and machine actors, each playing to their strengths (see the table below). 
+Since humans and machines have different areas of expertise, and because [Operational Risks](Operational-Risk) are often novel, it's often not optimal to try and automate everything.  A good operation will consist of a mix of human and machine actors, each playing to their strengths (see the table below). 
 
 |Humans Are...                |Machines Are...              |
 |-----------------------------|-----------------------------|
@@ -84,7 +84,7 @@ There are plenty of [Hidden Risks](Glossary#hidden-risk) within the environment 
 
 ## Planning
 
-![Forecasting and Planning Actions](images/generated/risks/operational/forecasting-planning.png).
+![Forecasting and Planning Actions](images/generated/risks/operational/forecasting-planning.png)
 
 In order to _control_ an operation, we need targets and plans to _control against_.  For a system to run well, it needs to carefully manage unreliable dependencies, and ensure their safety and availability.  In the example of the humans, say, it's the difference between [Hunter-Gathering](https://en.wikipedia.org/wiki/Hunter-gatherer) (picking up food where we find it) and [Agriculture](https://en.wikipedia.org/wiki/Agriculture) (controlling the environment and the resources to grown crops).
 
@@ -96,7 +96,7 @@ As the diagram above shows, we can bring [Planning](#planning) to bear on depend
 
 Since our operation exists in a world of risks like [Red Queen Risk](Scarcity-Risk#red-queen-risk) and [Feature Drift Risk](Feature-Risk#feature-drift-risk), we would expect that the output of our [Planning](#planning) actions would result in changes to our operation.  
 
-While _planning_ is a day-to-day operational feedback loop, _design_ is a longer feedback loop which is changing not just the parameters of the operation, but the operation itself.
+While _planning_ is a day-to-day operational feedback loop, _design_ is a longer feedback loop changing not just the parameters of the operation, but the operation itself.
 
 You might think that for an IT operation, tasks like [Design](#design) belong within the Development function within an organisation.  Often, this is the case.  However separating Development from Operation implies [Boundary Risk](Boundary-Risk) between these two functions.  For example, the developers might employ different tools, equipment and processes to the operations team, resulting in a mismatch when software is delivered.
 
@@ -104,6 +104,8 @@ In recent years, the "DevOps" movement has brought this [Boundary Risk](Boundary
  
   - Using code to automate previously manual Operations functions, like monitoring and releasing.
   - Involving Operations in the planning and design, so that the delivered software is optimised for the environment it runs in.
+  
+DevOps heavily borrows from the Agile movement, both of which will be covered in more detail in Part 4.  
 
 ![DevOps Activities:  Development and Operations activities overlap one-another (Credit: Kharnagy, Wikipedia)](images/devops.png)
 
@@ -119,7 +121,7 @@ So there is a tension between "you only get one chance to make a first impressio
 
 A Risk-First re-framing of this might be the balance between:
 
-- The perceived Reputational Risk, [Feature Risk](Feature-Risk) and [Operational Risk](Operational-Risk) of going to production (pressure to improve).
+- The perceived [Trust & Belief Risk](Communication-Risk#trust--belief-risk), [Feature Risk](Feature-Risk) and [Operational Risk](Operational-Risk) of going to production (pressure to improve).
 - The perceived [Scarcity Risks](Scarcity-Risk) (such as funding, time available, etc) of staying in development (pressure to ship).
 
 The "should we ship?" decision is therefore a complex one.  In [Meeting Reality](Meeting-Reality), we discussed that it's better to do this "sooner, more frequently, in smaller chunks and with feedback".  We can meet [Operational Risk](Operational-Risk) _on our own terms_ by doing so: 
@@ -133,7 +135,7 @@ The "should we ship?" decision is therefore a complex one.  In [Meeting Reality]
 
 ## End Of The Road
 
-In a way, actions like **Design** and **Improvement** bring us right back to where we started from: identifying [Dependency Risks](Dependency-Risk), [Feature Risks](Feature-Risk) and [Complexity Risks](Complexity-Risk) that hinders our operation, and mitigating them through actions like _software development_.  
+In a way, actions like **Design** and **Improvement** bring us right back to where we started from: identifying [Dependency Risks](Dependency-Risk), [Feature Risks](Feature-Risk) and [Complexity Risks](Complexity-Risk) that hinder our operation, and mitigating them through actions like _software development_.  
 
 Our safari of risk is finally complete, it's time to look back and what we've seen in [Staging and Classifying](Staging-and-Classifying).  
  
