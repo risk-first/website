@@ -72,7 +72,7 @@ Since Humans and machines have different areas of expertise, and because [Operat
 
 The aim is to build a human-machine operational system that is [_Homeostatic_](https://en.wikipedia.org/wiki/Homeostasis).  This is the property of living things to try and maintain an equilibrium (for example, body temperature or blood glucose levels), but also applies to systems at any scale.  The key to homeostasis is to build systems with feedback loops, even though this leads to more complex systems overall. The diagram above shows some of the actions involved in these kind of feedback loops. 
 
-As we saw in [Map and Territory Risk](Map-and-Territory-Risk), it's very easy to fool yourself, especially around [Key Performance Indicators (KPIs)](https://en.wikipedia.org/wiki/Performance_indicator) and metrics.  Good [Operations Management](#operations-management) is about going beyond this and looking for trouble.  Large organisations have [Audit](https://en.wikipedia.org/wiki/Audit) functions precisely to guard against their own internal failing [processes](Process-Risk) and [Agency Risk](Agency-Risk).  Audits could be around software tools, processes, practices, quality and so on.  Practices such as [Continuous Improvement](https://en.wikipedia.org/wiki/Continual_improvement_process) and [Total Quality Management](https://en.wikipedia.org/wiki/Total_quality_management) also figure here.
+As we saw in [Map and Territory Risk](Map-and-Territory-Risk), it's very easy to fool yourself, especially around [Key Performance Indicators (KPIs)](https://en.wikipedia.org/wiki/Performance_indicator) and metrics. Large organisations have [Audit](https://en.wikipedia.org/wiki/Audit) functions precisely to guard against their own internal failing [processes](Process-Risk) and [Agency Risk](Agency-Risk).  Audits could be around software tools, processes, practices, quality and so on.  Practices such as [Continuous Improvement](https://en.wikipedia.org/wiki/Continual_improvement_process) and [Total Quality Management](https://en.wikipedia.org/wiki/Total_quality_management) also figure here.
 
 ### The Operational Context
 
@@ -94,9 +94,11 @@ As the diagram above shows, we can bring [Forecasting and Planning](#forecasting
 
 ![Design and Change Activities](images/generated/risks/operational/design-change.png)
 
+Since our operation exists in a world of risks like [Red Queen Risk](Scarcity-Risk#red-queen-risk) and [Feature Drift Risk](Feature-Risk#feature-drift-risk), we would expect that the output of our [Planning](#planning) actions would result in changes to our operation.  
+
 While _planning_ is a day-to-day operational feedback loop, _design_ is a longer feedback loop which is changing not just the parameters of the operation, but the operation itself.
 
-You might think that for an IT operation, tasks like [Design](#design-and-change) belong within the Development function within an organisation.  Often, this is the case.  However separating design from operation implies [Boundary Risk](Boundary-Risk) between these two functions.  For example, the developers might employ different tools, equipment and processes to the operations team, resulting in a mismatch when software is delivered.
+You might think that for an IT operation, tasks like [Design](#design-and-change) belong within the Development function within an organisation.  Often, this is the case.  However separating Development from Operation implies [Boundary Risk](Boundary-Risk) between these two functions.  For example, the developers might employ different tools, equipment and processes to the operations team, resulting in a mismatch when software is delivered.
 
 In recent years, the "DevOps" movement has brought this [Boundary Risk](Boundary-Risk) into sharper focus.  This specifically means:
  
@@ -105,31 +107,22 @@ In recent years, the "DevOps" movement has brought this [Boundary Risk](Boundary
 
 ![DevOps Activities:  Development and Operations activities overlap one-another (Credit: Kharnagy, Wikipedia)](images/devops.png)
 
-Since our operation exists in a world of risks like [Red Queen Risk](Scarcity-Risk#red-queen-risk) and [Feature Drift Risk](Feature-Risk#feature-drift-risk), we would expect that the output of our [Forecasting and Planning](#forecasting-and-planning) activities would result in changes to our operation.  
-
-
-
 ## Improvement
 
 ![Taking action against Operational Risk by Meeting Reality](images/generated/risks/operational/meeting-reality.png)
 
-Once exposed to the real world, no system is perfect.  This means we must design-in ways in which the systems we build can improve and change.  Since we don't have a perfect understanding of the world, most of the [Operational Risk](Operational-Risk) we face is [Hidden Risks](Glossary#hidden-risk).  
-
-
-### Reputational Risk
-
-Our production systems are [Meeting Reality](Glossary#meet-reality) all the time, and in order to mitigate [Operational Risk](Operational-Risk) we need to take the most advantage of this as possible.  However, conversely, [Operational Risk](Operational-Risk) includes **Reputational Risk**, which gives us pause:  we don't want to destroy good will created for our organisation, this is very hard to rebuild.  
+Once exposed to the real world, no system is perfect: we will want to improve it over time.  However, conversely, [Operational Risk](Operational-Risk) includes an element of [Trust & Belief Risk](Communication-Risk#trust--belief-risk): our _reputation_ and the good will of our customers.  This gives us pause:  we don't want to destroy good will created for our software, this is very hard to rebuild.  
 
 So there is a tension between "you only get one chance to make a first impression" and "gilding the lily" (perfectionism).  In the past I've seen this stated as:
 
 > "Pressure to ship vs pressure to improve"
 
+![Balance of Risks from Delivering Software](images/generated/risks/operational/ship-it.png)
+
 A Risk-First re-framing of this might be the balance between:
 
 - The perceived Reputational Risk, [Feature Risk](Feature-Risk) and [Operational Risk](Operational-Risk) of going to production (pressure to improve).
 - The perceived [Scarcity Risks](Scarcity-Risk) (such as funding, time available, etc) of staying in development (pressure to ship).
-
-![Balance of Risks from Delivering Software](images/generated/risks/operational/ship-it.png)
 
 The "should we ship?" decision is therefore a complex one.  In [Meeting Reality](Meeting-Reality), we discussed that it's better to do this "sooner, more frequently, in smaller chunks and with feedback".  We can meet [Operational Risk](Operational-Risk) _on our own terms_ by doing so: 
 
@@ -140,16 +133,9 @@ The "should we ship?" decision is therefore a complex one.  In [Meeting Reality]
 |**In Smaller Chunks**             |Modular Releases, Microservices, Feature Toggles, Trial Populations   |
 |**With Feedback**                 |User Communities, Support Groups, Monitoring, Logging, Analytics|
 
+## End Of The Road
 
+In a way, actions like **Design** and **Improvement** bring us right back to where we started from: identifying [Dependency Risk](Dependency-Risk), [Feature Risk](Feature-Risk) and [Complexity Risk](Complexity-Risk) that hinders our operation, and mitigating it through tasks like _software development_.  
 
-
-
-
-
-
-
-
-
-
- In a way, we are now back to where we started from: identifying [Dependency Risk](Dependency-Risk), [Feature Risk](Feature-Risk) and [Complexity Risk](Complexity-Risk) that hinders our operation, and mitigating it through tasks like _software development_.  Our safari of risk is finally complete, it's time to look back and what we've seen in [Staging and Classifying](Staging-and-Classifying).  
+Our safari of risk is finally complete, it's time to look back and what we've seen in [Staging and Classifying](Staging-and-Classifying).  
  
