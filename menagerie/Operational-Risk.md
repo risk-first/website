@@ -76,6 +76,8 @@ As we saw in [Map and Territory Risk](Map-and-Territory-Risk), it's very easy to
 
 ### The Operational Context
 
+There are plenty of [Hidden Risks](Glossary#hidden-risk) within the environment the operation exists within, and these change all the time in response to economic or political change.  In order to manage a risk, you have to uncover it, so part of [Operations Management](Operations-Management) is to look for trouble:
+
 - **Environmental Scanning** is all about trying to determine which changes in the environment are going to impact your operation.   Here, we are trying to determine the level of [Dependency Risk](Dependency-Risk) we face for external dependencies, such as _suppliers_, _customers_ and _markets_.  Tools like [PEST](https://en.wikipedia.org/wiki/PEST_analysis) are relevant here, as is 
 - **[Penetration Testing](https://en.wikipedia.org/wiki/Penetration_test)** is looking for security weaknesses within the operation.  See [OWASP](https://en.wikipedia.org/wiki/OWASP) for examples.
 - **[Vulnerability Management](https://en.wikipedia.org/wiki/Vulnerability_management)** is keeping up-to-date with vulnerabilities in [Software Dependencies](Software-Dependency-Risk).
