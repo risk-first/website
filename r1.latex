@@ -326,349 +326,404 @@ risks.
 
 \part{The Risk Landscape}
 
-\part{Tools \& Practices}
+\hypertarget{operational-risk}{%
+\chapter{Operational Risk}\label{operational-risk}}
 
-\backmatter
+\begin{quotation}
 
-\hypertarget{glossary}{%
-\chapter{Glossary}\label{glossary}}
+``The risk of loss resulting from inadequate or failed internal
+processes, people and systems or from external events.''
 
-\hypertarget{abstraction}{%
-\subsection{Abstraction}\label{abstraction}}
+\sourceatright{\href{https://en.wikipedia.org/wiki/Operational_risk\#Definition}{\textemdash  Operational Risk, \emph{Wikipedia}}}
+\end{quotation}
 
-The process of removing physical, spatial, or temporal details or
-attributes in the study of objects or systems in order to more closely
-attend to other details of interest.
+In this chapter we're going to start considering the realities of
+running software systems in the real world.
 
-\hypertarget{agent}{%
-\subsection{Agent}\label{agent}}
+Here, we're going to set the scene by looking at what constitutes an
+Operational Risk, and then look at the related discipline of Operations
+Management. Following this background, we'll apply the Risk-First model
+and dive into the various mitigations for Operational Risk.
 
-Agency is the capacity of an actor to act in a given environment. We use
-the term \emph{agent} to refer to any process, person, system or
-organisation with agency.
+\hypertarget{operational-risks}{%
+\section{Operational Risks}\label{operational-risks}}
 
-\hypertarget{feedback-loop}{%
-\subsection{Feedback Loop}\label{feedback-loop}}
-
-The process of testing an Internal Model by testing it, through taking
-action to Meet Reality. Typically, we talk about short or long feedback
-loops, depending on the intervals between Meeting Reality.
-
-\hypertarget{goal-in-mind}{%
-\subsection{Goal In Mind}\label{goal-in-mind}}
-
-A picture of the future that an individual or team carries within their
-Internal Model; An imagined destination on the Risk Landscape.
-
-\hypertarget{internal-model}{%
-\subsection{Internal Model}\label{internal-model}}
-
-The model of reality held by an individual, team, software system or
-other Agent. You can regard the concept of Internal Model as being what
-you \emph{know} and what you \emph{think} about a certain situation. An
-internal model \emph{represents} reality: reality is made of matter,
-whereas the internal model is information.
-
-Obviously, because we've all had different experiences, and our brains
-are wired up differently, everyone will have a different Internal Model
-of reality.
+When building software, it's tempting to take a very narrow view of the
+dependencies of a system, but Operational Risks are often caused by
+dependencies we \emph{don't} consider - i.e.~the \textbf{Operational
+Context} within which the system is operating. Here are some examples:
 
 \begin{itemize}
 \tightlist
 \item
-  Within an organisation, we might consider the Internal Model of a
-  \emph{team of people} to be the shared knowledge, values and working
-  practices of that team.
+  \textbf{Staff Risks:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Freak weather conditions affecting ability of staff to get to work,
+    interrupting the development and support teams.
+  \item
+    Reputational damage caused when staff are rude to the customers.
+  \end{itemize}
 \item
-  Within a software system, we might consider the Internal Model of a
-  single server, and what knowledge it has of the world.
+  \textbf{Reliability Risks:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    A data-centre going off-line, causing your customers to lose access.
+  \item
+    A power cut causing backups to fail.
+  \item
+    Not having enough desks for everyone to sit at.
+  \end{itemize}
 \item
-  A codebase is a team's Internal Model written down and encoded as
-  software.
+  \textbf{Process Risks:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Regulatory change, which means you have to adapt your business
+    model.
+  \item
+    Insufficient controls which means you don't notice when some
+    transactions are failing, leaving you out-of-pocket.
+  \item
+    Data loss because of bugs introduced during an untested release.
+  \end{itemize}
+\item
+  \textbf{Software Dependency Risk:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Hackers exploit weaknesses in a piece of 3rd party software,
+    bringing your service down.
+  \end{itemize}
+\item
+  \textbf{Agency Risk:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Suppliers deciding to stop supplying you with something you need.
+  \item
+    Workers going on strike.
+  \item
+    Employees trying to steal from the company (bad actors).
+  \item
+    Other crime, such as hackers stealing data.
+  \end{itemize}
 \end{itemize}
 
-\hypertarget{meet-reality}{%
-\subsection{Meet Reality}\label{meet-reality}}
+.. basically, a long laundry-list of everything that can go wrong due to
+operating in ``The Real World''. Although we've spent a lot of time
+looking at the varieties of Dependency Risk on a software project, with
+Operational Risk we have to consider that these dependencies will fail
+in any number of unusual ways, and we can't be ready for all of them.
+Nevertheless, preparing for this comes under the umbrella of Operations
+Management.
 
-Any moment where we test an Internal Model by exposing it's predictive
-power against reality. Note that ``Reality'' might be limited in some
-way, for example, a trial period or test users.
+\hypertarget{operations-management}{%
+\section{Operations Management}\label{operations-management}}
 
-\hypertarget{pay-off}{%
-\subsection{Pay-Off}\label{pay-off}}
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/operational/slack-400dpi.png}
+\caption{A Risk-First Model of Operations Management, inspired by the
+work of Slack \emph{et al.}\label{slack.png}}
+\end{figure}
 
-Pay-Off refers to the \emph{value} of the actions we take. When we
-decide on a course of action, we have in mind a risk we wish to manage.
-If the action is likely to have a big positive effect on the risk of a
-project, we say it has a promising pay off, whereas if the action fails
-to manage the risk, then it hasn't \emph{paid off}.
+If we are designing a software system to ``live'' in the real world, we
+have to be mindful of the Operational Context we're working in, and
+craft our software and processes accordingly. This view of the ``wider''
+system is the discipline of Operations Management.
 
-\hypertarget{risk}{%
-\subsection{Risk}\label{risk}}
-
-A possibility of loss or cost. Anything that \emph{can} go wrong on a
-project, or is \emph{going} wrong, but so far hasn't been quantified. We
-talk about risk because we wish to recognise both the range of
-possibilities and the range of cost.
-
-Usually broken down into:
+Figure \ref{slack.png} is a Risk-First interpretation of
+\href{http://amzn.eu/d/b6ZjuMu}{Slack \emph{et al}'s model of Operations
+Management}. This model breaks down some of the key abstractions of the
+discipline: a \textbf{Transform Process} (the \textbf{Operation} itself)
+is embedded in the wider \textbf{Operational Context}, which supplies it
+with three key dependencies:
 
 \begin{itemize}
 \tightlist
 \item
-  \textbf{Attendant Risk}: A Risk you expect to face as the result of
-  Taking Action.
+  \textbf{Resources}: Whether \emph{transformed} resources (like
+  electricity or information, say) or \emph{transforming} resources
+  (like staff or equipment).
 \item
-  \textbf{Hidden Risk}: Risks you aren't aware of when you consider
-  Taking Action. i.e.~an \emph{unknown unknown}.
+  \textbf{Customers}: Which supply it with money in return for goods and
+  services.
 \item
-  \textbf{Mitigated Risk}: Risks that, as a result of Taking Action have
-  been minimized.
-\item
-  \textbf{Upside Risk}: The possibility of things going well, and
-  leaving us with a benefit. We may take action to maximize the
-  likelihood and return of upside risks.
+  \textbf{Operational Strategy}: The goals and objectives of the
+  operation, informed by the reality of the environment it operates in.
 \end{itemize}
 
-\hypertarget{risk-landscape}{%
-\subsection{Risk Landscape}\label{risk-landscape}}
+We have looked at processes like the \textbf{Transform Process} in the
+chapter on Process Risk. The healthy functioning of this process is the
+domain of Operations Management, and (as per Slack \emph{et al.}) this
+involves the following types of actions:
 
-A hypothetical landscape on which risks can be placed. Taking Action
-means making a move on the Risk Landscape to reposition a project so
-that it has a different profile of Attendant Risks.
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Control}: Ensuring that the Operation is working according to
+  it's targets. This includes day-to-day quality control and monitoring
+  of the Transform Process.
+\item
+  \textbf{Planning}: This covers aspects such as capacity planning,
+  forecasting and project planning. This is about making sure the
+  transform process has targets to meet and the resources to meet them.
+\item
+  \textbf{Design}: Ensuring that the design of the product and the
+  transform process itself fulfils an \textbf{Operational Strategy}.
+\item
+  \textbf{Improvement}: Improving the operation in response to changes
+  in the \textbf{Environment} and the \textbf{Operational Strategy},
+  detecting failure and recovering from it.
+\end{itemize}
 
-\hypertarget{taking-action}{%
-\subsection{Taking Action}\label{taking-action}}
+Let's look at each of these actions in turn.
 
-Refers to any activity in the project. Actions are usually in order to
-manage some kind of risk. At the same time, Taking Action usually means
-interacting with reality and updating the Internal Model.
+\hypertarget{control}{%
+\section{Control}\label{control}}
 
-\hypertarget{glossary-of-risk-types}{%
-\section{Glossary Of Risk Types}\label{glossary-of-risk-types}}
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/operational/monitoring-detection-400dpi.png}
+\caption{Control, Monitoring And
+Detection\label{monitoring-detection.png}}
+\end{figure}
 
-\small 
+Since humans and machines have different areas of expertise, and because
+Operational Risks are often novel, it's often not optimal to try and
+automate everything. A good operation will consist of a mix of human and
+machine actors, each playing to their strengths (see the table below).
 
 \begin{longtable}[]{@{}ll@{}}
 \toprule
-\begin{minipage}[b]{0.24\columnwidth}\raggedright
-Risk\strut
-\end{minipage} & \begin{minipage}[b]{0.70\columnwidth}\raggedright
-Definition\strut
+Humans Are\ldots{} & Machines Are\ldots{}\tabularnewline
+\midrule
+\endhead
+Good at novel situations & Good at repetitive situations\tabularnewline
+Good at adaptation & Good at consistency\tabularnewline
+Expensive at scale & Cheap at scale\tabularnewline
+Reacting and Anticipating & Recording\tabularnewline
+\bottomrule
+\end{longtable}
+
+The aim is to build a human-machine operational system that is
+\href{https://en.wikipedia.org/wiki/Homeostasis}{\emph{Homeostatic}}.
+This is the property of living things to try and maintain an equilibrium
+(for example, body temperature or blood glucose levels), but also
+applies to systems at any scale. The key to homeostasis is to build
+systems with feedback loops, even though this leads to more complex
+systems overall. Figure \ref{monitoring-detection.png} shows some of the
+actions involved in these kind of feedback loops.
+
+As we saw in Map and Territory Risk, it's very easy to fool yourself,
+especially around
+\href{https://en.wikipedia.org/wiki/Performance_indicator}{Key
+Performance Indicators (KPIs)} and metrics. Large organisations have
+\href{https://en.wikipedia.org/wiki/Audit}{Audit} functions precisely to
+guard against their own internal failing processes and Agency Risk.
+Audits could be around software tools, processes, practices, quality and
+so on. Practices such as
+\href{https://en.wikipedia.org/wiki/Continual_improvement_process}{Continuous
+Improvement} and
+\href{https://en.wikipedia.org/wiki/Total_quality_management}{Total
+Quality Management} also figure here.
+
+\hypertarget{the-operational-context}{%
+\subsection{The Operational Context}\label{the-operational-context}}
+
+There are plenty of Hidden Risks within the environment the operation
+exists within, and these change all the time in response to economic or
+political change. In order to manage a risk, you have to uncover it, so
+part of Operations Management is to look for trouble:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Environmental Scanning} is all about trying to determine which
+  changes in the environment are going to impact your operation. Here,
+  we are trying to determine the level of Dependency Risk we face for
+  external dependencies, such as \emph{suppliers}, \emph{customers} and
+  \emph{markets}. Tools like
+  \href{https://en.wikipedia.org/wiki/PEST_analysis}{PEST} are relevant
+  here, as is
+\item
+  \textbf{\href{https://en.wikipedia.org/wiki/Penetration_test}{Penetration
+  Testing}} is looking for security weaknesses within the operation. See
+  \href{https://en.wikipedia.org/wiki/OWASP}{OWASP} for examples.
+\item
+  \textbf{\href{https://en.wikipedia.org/wiki/Vulnerability_management}{Vulnerability
+  Management}} is keeping up-to-date with vulnerabilities in Software
+  Dependencies.
+\end{itemize}
+
+\hypertarget{planning}{%
+\section{Planning}\label{planning}}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/operational/forecasting-planning-400dpi.png}
+\caption{Forecasting and Planning
+Actions\label{forecasting-planning.png}}
+\end{figure}
+
+In order to \emph{control} an operation, we need targets and plans to
+\emph{control against}. For a system to run well, it needs to carefully
+manage unreliable dependencies, and ensure their safety and
+availability. In the example of the humans, say, it's the difference
+between
+\href{https://en.wikipedia.org/wiki/Hunter-gatherer}{Hunter-Gathering}
+(picking up food where we find it) and
+\href{https://en.wikipedia.org/wiki/Agriculture}{Agriculture}
+(controlling the environment and the resources to grown crops).
+
+As Figure \ref{forecasting-planning.png} shows, we can bring Planning to
+bear on dependency management, and this usually falls to the more human
+end of the operation.
+
+\hypertarget{design}{%
+\section{Design}\label{design}}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/operational/design-change-400dpi.png}
+\caption{Design and Change Activities\label{design-change.png}}
+\end{figure}
+
+Since our operation exists in a world of risks like Red Queen Risk and
+Feature Drift Risk, we would expect that the output of our Planning
+actions would result in changes to our operation.
+
+While \emph{planning} is a day-to-day operational feedback loop,
+\emph{design} is a longer feedback loop changing not just the parameters
+of the operation, but the operation itself.
+
+You might think that for an IT operation, tasks like Design belong
+within the Development function within an organisation. Often, this is
+the case. However separating Development from Operation implies Boundary
+Risk between these two functions. For example, the developers might
+employ different tools, equipment and processes to the operations team,
+resulting in a mismatch when software is delivered.
+
+In recent years, the ``DevOps'' movement has brought this Boundary Risk
+into sharper focus. This specifically means:
+
+\begin{itemize}
+\tightlist
+\item
+  Using code to automate previously manual Operations functions, like
+  monitoring and releasing.
+\item
+  Involving Operations in the planning and design, so that the delivered
+  software is optimised for the environment it runs in.
+\end{itemize}
+
+DevOps heavily borrows from the Agile movement, both of which will be
+covered in more detail in Part 4.
+
+\begin{figure}
+\centering
+\includegraphics{images/devops.png}
+\caption{DevOps Activities: Development and Operations activities
+overlap one-another (Credit: Kharnagy, Wikipedia)\label{devops.png}}
+\end{figure}
+
+\hypertarget{improvement}{%
+\section{Improvement}\label{improvement}}
+
+Once exposed to the real world, no system is perfect: we will want to
+improve it over time. However, conversely, Operational Risk includes an
+element of Trust \& Belief Risk: our \emph{reputation} and the good will
+of our customers. This gives us pause: we don't want to destroy good
+will created for our software, this is very hard to rebuild.
+
+So there is a tension between ``you only get one chance to make a first
+impression'' and ``gilding the lily'' (perfectionism). In the past I've
+seen this stated as:
+
+\begin{quotation}
+
+``Pressure to ship vs pressure to improve''
+
+\end{quotation}
+
+\begin{figure}
+\centering
+\includegraphics{images/generated/risks/operational/ship-it-400dpi.png}
+\caption{Balance of Risks from Delivering Software\label{ship-it.png}}
+\end{figure}
+
+A Risk-First re-framing of this might be the balance between:
+
+\begin{itemize}
+\tightlist
+\item
+  The perceived Trust \& Belief Risk, Feature Risk and Operational Risk
+  of going to production (pressure to improve).
+\item
+  The perceived Scarcity Risks (such as funding, time available, etc) of
+  staying in development (pressure to ship).
+\end{itemize}
+
+The ``should we ship?'' decision is therefore a complex one. In Meeting
+Reality, we discussed that it's better to do this ``sooner, more
+frequently, in smaller chunks and with feedback''. We can meet
+Operational Risk \emph{on our own terms} by doing so:
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+\begin{minipage}[b]{0.36\columnwidth}\raggedright
+Meet Reality\ldots{}\strut
+\end{minipage} & \begin{minipage}[b]{0.58\columnwidth}\raggedright
+Techniques\strut
 \end{minipage}\tabularnewline
 \midrule
 \endhead
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Boundary\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-Risks due to the choices we make around dependencies, and the
-limitations they place on our ability to change.\strut
+\begin{minipage}[t]{0.36\columnwidth}\raggedright
+\textbf{Sooner}\strut
+\end{minipage} & \begin{minipage}[t]{0.58\columnwidth}\raggedright
+Quality Control Processes, Limited Early-Access Programs, Beta Programs,
+Soft Launches, Business Continuity Testing\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Agency\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-Risks due to the fact that things you depend on have agency, and they
-have their own goals to pursue.\strut
+\begin{minipage}[t]{0.36\columnwidth}\raggedright
+\textbf{More Frequently}\strut
+\end{minipage} & \begin{minipage}[t]{0.58\columnwidth}\raggedright
+Continuous Delivery, Sprints\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Channel\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-Risks due to the inadequacy of the physical channel used to communicate
-our messages. e.g.~noise, loss, interception, corruption.\strut
+\begin{minipage}[t]{0.36\columnwidth}\raggedright
+\textbf{In Smaller Chunks}\strut
+\end{minipage} & \begin{minipage}[t]{0.58\columnwidth}\raggedright
+Modular Releases, Microservices, Feature Toggles, Trial
+Populations\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Communication\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-Risks due to the difficulty of communicating with other entities, be
-they people, software, processes etc.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Codebase\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-The specific risks to a project of having a large, complex codebase to
-manage.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Complexity\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-Risks caused by the weight of complexity in the systems we create, and
-their resistance to change and comprehension.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Conceptual-integrity\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-Risk that the software you provide is too complex, or doesn't match the
-expectations of your clients' internal models.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Coordination\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-Risks that a group of agents cannot work together in a mutually
-beneficial way, and their behaviour devolves into competition.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Dead-End\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-The risk that a particular approach to a change will fail. Caused by the
-fact that at some level, our internal models are not a complete
-reflection of reality.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Deadline\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-Where the use of a dependency has some kind of deadline, which can be
-missed.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Dependency\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-Risks faced by depending on something else. e.g.~an event, process,
-person, piece of software or an organisation.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Feature-Access\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-Risks due to some clients not having access to some or all of the
-features in your product.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Feature-Drift\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-Risk that the features required by clients will change and evolve over
-time.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Feature\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-Risks you face when providing features for your clients.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Feature-Fit\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-Risk that the needs of the client don't coincide with services provided
-by the supplier.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Funding\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-A particular scarcity risk, due to lack of funding.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Implementation\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-Risk that the functionality you are providing doesn't match the features
-the client is expecting, due to poor or partial implementation.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Internal-Model\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-Risks to communication caused by the fact that the internal models of
-the participants are semantically incompatible in some way.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Invisibility\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-Risks caused by the choice of abstractions we use in
-communication.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Learning-Curve\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-Risks due to the difficulty faced in updating an internal model.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Map-And-Territory\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-Risks due to the differences between reality and the internal model of
-reality, and the assumption that they are equivalent.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Market\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-Risk that the value your clients place on the features you supply will
-change, over time.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Message\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-Risks caused by the difficulty of composing and interpreting messages in
-the communication process.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Operational\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-Risks of losses or reputational damage caused by failing processes or
-real-world events.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Opportunity\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-Risk that a particular set of market conditions.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Process\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-Risks due to the fact that when dealing with a dependency, we have to
-follow a particular protocol of communication, which may not work out
-the way we want.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Protocol\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-Risks due to the failure of encoding or decoding messages between two
-parties in communication.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Red-Queen\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-The general risk that the competitive environment we operate within
-changes over time.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Regression\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-Risk that the functionality you provide changes for the worse, over
-time.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Reliability\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-Risks of not getting benefit from a dependency due to it's
-reliability.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Scarcity\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-Risk of not being able to access a dependency in a timely fashion due to
-it's scarcity.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Schedule\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-The aspect of dependency risk related to time.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Security\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-Agency Risks due to actors from outside the system.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Software Dependency\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-Dependency Risk due to software dependencies.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Staff\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-The aspect of dependency risks related to employing people.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.24\columnwidth}\raggedright
-Trust-And-Belief\strut
-\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
-Risk that a party we are communicating with can't be trusted, as it has
-agency or is unreliable in some other way.\strut
+\begin{minipage}[t]{0.36\columnwidth}\raggedright
+\textbf{With Feedback}\strut
+\end{minipage} & \begin{minipage}[t]{0.58\columnwidth}\raggedright
+User Communities, Support Groups, Monitoring, Logging, Analytics\strut
 \end{minipage}\tabularnewline
 \bottomrule
 \end{longtable}
+
+\hypertarget{end-of-the-road}{%
+\section{End Of The Road}\label{end-of-the-road}}
+
+In a way, actions like \textbf{Design} and \textbf{Improvement} bring us
+right back to where we started from: identifying Dependency Risks,
+Feature Risks and Complexity Risks that hinders our operation, and
+mitigating them through actions like \emph{software development}.
+
+Our safari of risk is finally complete, it's time to look back and what
+we've seen in Staging and Classifying.
+
+\part{Tools \& Practices}
+
+\backmatter
 
 \end{document}  
