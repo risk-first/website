@@ -74,7 +74,7 @@ The aim is to build a human-machine operational system that is [_Homeostatic_](h
 
 As we saw in [Map and Territory Risk](Map-and-Territory-Risk), it's very easy to fool yourself, especially around [Key Performance Indicators (KPIs)](https://en.wikipedia.org/wiki/Performance_indicator) and metrics. Large organisations have [Audit](https://en.wikipedia.org/wiki/Audit) functions precisely to guard against their own internal failing [processes](Process-Risk) and [Agency Risk](Agency-Risk).  Audits could be around software tools, processes, practices, quality and so on.  Practices such as [Continuous Improvement](https://en.wikipedia.org/wiki/Continual_improvement_process) and [Total Quality Management](https://en.wikipedia.org/wiki/Total_quality_management) also figure here.
 
-### The Operational Context
+### Scanning The Operational Context
 
 There are plenty of [Hidden Risks](Glossary#hidden-risk) within the environment the operation exists within, and these change all the time in response to economic or political change.  In order to manage a risk, you have to uncover it, so part of [Operations Management](#Operations-Management) is to look for trouble:
 
@@ -111,7 +111,7 @@ DevOps heavily borrows from the Agile movement, both of which will be covered in
 
 ## Improvement
 
-Once exposed to the real world, no system is perfect: we will want to improve it over time.  However, conversely, [Operational Risk](Operational-Risk) includes an element of [Trust & Belief Risk](Communication-Risk#trust--belief-risk): our _reputation_ and the good will of our customers.  This gives us pause:  we don't want to destroy good will created for our software, this is very hard to rebuild.  
+No system can be perfect, and after it meets the real world, we will want to improve it over time.  But [Operational Risk](Operational-Risk) includes an element of [Trust & Belief Risk](Communication-Risk#trust--belief-risk): we have a  _reputation_ and the good will of our customers to consider when we make improvements.  Because this is very hard to rebuild, we should consider this before releasing software that might not live up to expectations.    
 
 So there is a tension between "you only get one chance to make a first impression" and "gilding the lily" (perfectionism).  In the past I've seen this stated as:
 
