@@ -33,7 +33,7 @@ When building software, it's tempting to take a very narrow view of the dependen
    - Employees trying to steal from the company (bad actors).
    - Other crime, such as hackers stealing data.
 
-.. basically, a long laundry-list of everything that can go wrong due to operating in "The Real World".   We've spent a lot of time looking at the varieties of [Dependency Risk](Dependency-Risk) on a software project.  But in the "real world" of [Operational Risk](Operational-Risk) we have to consider that these dependencies will fail in any number of unusual ways, and we can't be ready for all of them.  Nevertheless, managing them comes under the umbrella of [Operations Management](#operations-management)
+.. basically, a long laundry-list of everything that can go wrong due to operating in "The Real World".  Although we've spent a lot of time looking at the varieties of [Dependency Risk](Dependency-Risk) on a software project, with [Operational Risk](Operational-Risk) we have to consider that these dependencies will fail in any number of unusual ways, and we can't be ready for all of them.  Nevertheless, preparing for this comes under the umbrella of [Operations Management](#operations-management)
 
 ## Operations Management
 
