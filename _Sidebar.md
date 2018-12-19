@@ -3,7 +3,7 @@
 ## Start Here
 
 - **[Home](Home)**
-- **[Executive Summary](Executive-Summary)**
+- **[Quick Summary](Quick-Summary)**
 - **[Contributing](Contributing)**
 - **[A Simple Scenario](A-Simple-Scenario)**
 - **[The Risk Landscape](Risk-Landscape)**
