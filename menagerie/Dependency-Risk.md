@@ -1,6 +1,6 @@
 ![Draft](images/state/for-review.png)
 
-[Dependency Risk](Dependency-Risk) is the risk you take on whenever you have a dependency on something (or someone) else.   
+[Dependency Risk](Dependency-Risk) is the risk you take on whenever you have a dependency on something (or someone) else.   <!-- tweet-end -->
 
 One simple example could be that the software service you write might depend on hardware to run on:  If the server goes down, the service goes down too.  In turn, the server depends on electricity from a supplier, as well as a network connection from a provider.  If either of these dependencies aren't met, the service is out of commission.
 

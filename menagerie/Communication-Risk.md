@@ -10,7 +10,7 @@ But, people are not all-knowing oracles.  We rely on our _senses_ to improve our
 
 In 1948, Claude Shannon proposed this definition of communication:
 
-> "The fundamental problem of communication is that of reproducing at one point, either exactly or approximately, a message selected at another point." - [A Mathematical Theory Of Communication, _Claude Shannon_](https://en.wikipedia.org/wiki/A_Mathematical_Theory_of_Communication)  <!-- tweet-end -->
+> "The fundamental problem of communication is that of reproducing at one point, either exactly or approximately, a message selected at another point." - [A Mathematical Theory Of Communication, _Claude Shannon_](https://en.wikipedia.org/wiki/A_Mathematical_Theory_of_Communication)  
 
 And from this same paper, we get the diagram above:  We move from top-left ("I want to send a message to someone") to bottom left, clockwise, where we hope the message has been understood and believed.  (I've added this last box to Shannon's original diagram.)
 
@@ -142,17 +142,17 @@ This all means that the browser can forget about all the details of packet order
 If we examine what is being sent on the TCP connection, we see something like this:
 
 ```bash
-> GET /preferences HTTP/1.1     
-> Host: google.com              
-> Accept: */*                   
->                               
+ > GET /preferences HTTP/1.1     
+ > Host: google.com              
+ > Accept: */*                   
+ >
 ```
 
 This is now the HTTP protocol proper, and these 4 lines are sending information _over the connection_ to the Google server, to ask it for the page.  Finally, Google's server gets to respond:
 
 ```bash
-< HTTP/1.1 301 Moved Permanently                                      
-< Location: http://www.google.com/preferences
+ < HTTP/1.1 301 Moved Permanently                                      
+ < Location: http://www.google.com/preferences
 ... 
 ```
 
@@ -203,7 +203,7 @@ Then, **a** will instantly have a problem calling it and there will be an error 
 
 [Protocol Risk](Communication-Risk#protocol-risk) also occurs when we use [Data Types](https://en.wikipedia.org/wiki/Data_type):  whenever we change the data type, we need to correct the usages of that type.  Note above, I've given the `JavaScript` example, but I'm going to switch to `TypeScript` now:
 
-```typescript
+```javascript
 interface BInput {
     a: string,
     b: string, 
@@ -216,7 +216,7 @@ function b(in: BInput): string {
 }
 
 function a() {
-	var bOut = b({a: 1, b: 2, c: 3);		// new parameter d missing
+	var bOut = b({a: 1, b: 2, c: 3); // new parameter d missing
 	return "something "+bOut;		
 }
 ```

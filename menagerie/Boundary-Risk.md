@@ -2,7 +2,7 @@
 
 In the previous sections on [Dependency Risk](Dependency-Risk) we've touched on [Boundary Risk](Boundary-Risk) several times, but now it's time to tackle it head-on and discuss this important type of risk.  
 
-In terms of the [Risk Landscape](Risk-Landscape), [Boundary Risk](Boundary-Risk) is exactly as it says:  a _boundary_, _wall_ or other kind of obstacle in your way to making a move you want to make.   This changes the nature of the [Risk Landscape](Glossary#risk-landscape), and introduces a maze-like component to it.  It also means that we have to make _decisions_ about which way to go, knowing that our future paths are constrained by the decisions we make.
+In terms of the [Risk Landscape](Risk-Landscape), [Boundary Risk](Boundary-Risk) is exactly as it says:  a _boundary_, _wall_ or other kind of obstacle in your way to making a move you want to make. <!-- tweet-end -->  This changes the nature of the [Risk Landscape](Glossary#risk-landscape), and introduces a maze-like component to it.  It also means that we have to make _decisions_ about which way to go, knowing that our future paths are constrained by the decisions we make.
 
 As we discussed in [Complexity Risk](Complexity-Risk), there is always the chance we end up at a [Dead End](Complexity-Risk#dead-end-risk), and we've done work that we need to throw away.  In this case, we'll have to head back and make a different decision.
 
@@ -20,7 +20,7 @@ Let's start with an obvious example:  Say you want to learn to play some music. 
 
 Those risks are true for _any_ instrument you choose.  However, if you choose the _uncommon_ instrument you have _worse_ [Boundary Risk](Boundary-Risk), because the _ecosystem_ is smaller.   It might be hard to find a tutor, or a band needing a balalaika, and you're unlikely to find one in a friend's house (compared to the guitar, say).  
 
-If you spend time learning to play the piano, you're mitigating [Communication Risk](Communication-Risk) issues, but _mostly_, your skills won't be transferable to playing the guitar.  Your decision to choose one instrument over another cements the [Boundary Risk](Boundary-Risk): you're following a path on the [Risk Landscape](Risk-Landscape) and changing to a different path is _expensive_.
+If you spend time learning to play the piano, you're mitigating [Communication Risk](Communication-Risk) issues, but _mostly_, your skills won't be transferable to playing the guitar.  Your decision to choose one instrument over another cements the [Boundary Risk](Boundary-Risk): <!-- tweet-end -->you're following a path on the [Risk Landscape](Risk-Landscape) and changing to a different path is _expensive_.
 
 Also, it stands to reason that making _any_ choice is better than making _no_ choice, because you can't try and learn _all_ the instruments.  Doing that, you'd make no meaningful progress on any of them.
 
@@ -154,11 +154,7 @@ Sometimes, technology comes along that allows us to cross boundaries, like a _br
 
 I find, a lot of code I write is of this nature:  trying to write the _glue code_ to join together two different _ecosystems_.  
 
-
-
-<!--latex\begin{sidewaystable} -->
-
-|Protocol Risk From A         |Protocol Risk        From B |Resulting Bridge Complexity  |Example                                                  |
+|Protocol Risk From A         |Protocol Risk From B        |Resulting Bridge Complexity  |Example                                                  |
 |-----------------------------|----------------------------|-----------------------------|---------------------------------------------------------|
 |Low                          |Low                         |Simple                       |Changing from one date format to another.                |
 |High                         |Low                         |Moderate                     |Status Dashboard.                                        |
@@ -167,11 +163,9 @@ I find, a lot of code I write is of this nature:  trying to write the _glue code
 |Evolving                     |High                        |Complex                      |Modern browser (see below)                               |
 |Evolving                     |Evolving                    |Very Complex                 |Google Search, Scala                                     |
 
-<!--latex\end{sidewaystable} -->
-
 As shown in the above diagram, mitigating [Boundary Risk](Boundary-Risk) involves taking on complexity.  The more [Protocol Complexity](Communication-Risk#protocol-risk) there is to bridge the two ecosystems, the more [Complex](Complexity-Risk) the bridge will necessarily be.  The above table shows some examples of this.
 
-From examining the [Protocol Risk][Communication-Risk#protocol-risk] at each end of the bridge you are creating, you can get a rough idea of how complex the endeavour will be:
+From examining the [Protocol Risk](Communication-Risk#protocol-risk) at each end of the bridge you are creating, you can get a rough idea of how complex the endeavour will be:
 
  - If it's low-risk at both ends, you're probably going to be able to knock it out easily.  Like translating a date, or converting one file format to another.
  - Where one of the protocols is _evolving_, you're definitely going to need to keep releasing new versions.   The functionality of a `Calculator` app on my phone remains the same, but new versions have to be released as the phone APIs change, screens change resolution and so on.

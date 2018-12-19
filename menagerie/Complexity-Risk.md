@@ -1,6 +1,6 @@
 ![For Review](images/state/for-review.png)
 
-[Complexity Risk](Complexity-Risk) are the risks to your project due to its underlying "complexity".  Over the next few sections, we'll break down exactly what we mean by complexity, looking at [Dependency Risk](Dependency-Risk) and [Boundary Risk](Boundary-Risk) as two particular sub-types of [Complexity Risk](Complexity-Risk).  
+[Complexity Risk](Complexity-Risk) are the risks to your project due to its underlying "complexity". <!-- tweet-end -->  Over the next few sections, we'll break down exactly what we mean by complexity, looking at [Dependency Risk](Dependency-Risk) and [Boundary Risk](Boundary-Risk) as two particular sub-types of [Complexity Risk](Complexity-Risk).  
 
 ## Codebase Risk
 
@@ -66,7 +66,7 @@ By applying abstraction, we can improve in the direction of the Kolmogorov limit
 
 ### Trade-Off
 
-Generally, the more complex a piece of software is, the more difficulty users will have understanding it, and the more difficulty developers will have changing it.  We should prefer the third version of our code over either the first or second because of it's brevity.
+Generally, the more complex a piece of software is, the more difficulty users will have understanding it, and the more difficulty developers will have changing it. <!-- tweet-end --> We should prefer the third version of our code over either the first or second because of it's brevity.
 
 But we could go further down into [Code Golf](https://en.wikipedia.org/wiki/Code_golf) territory.  This javascript program plays [FizzBuzz](https://en.wikipedia.org/wiki/Fizz_buzz) up to 100, but is less readable than you might hope:
 
@@ -187,7 +187,7 @@ So, we've looked at some measures of software structure complexity, in order tha
 
 ## Complexity is Mass
 
-The first way to look at complexity is as **Mass** :  a software project with more complexity has greater mass than one with less complexity.  Newton's Second Law states:
+The first way to look at complexity is as **Mass** :  a software project with more complexity has greater mass than one with less complexity. <!-- tweet-end --> Newton's Second Law states:
 
 > F = _m_**a**,    ( Force = Mass x Acceleration )
 
@@ -201,7 +201,7 @@ But there is actually some underlying sense in which this is true in the real, p
 
 I'm not an expert in physics, _at all_, and so there is every chance that I am pushing this analogy too hard.  But, substituting quarks and gluons for pieces of software we can (in a very handwaving-y way) say that more complex software has more **interactions** going on, and therefore has more mass than simple software. 
 
-If we want to move _fast_ we need simple codebases.
+If we want to move _fast_ we need simple codebases. <!-- tweet-end -->
 
 At a basic level, [Complexity Risk](Complexity-Risk) heavily impacts on [Schedule Risk](Scarcity-Risk#schedule-risk):  more complexity means you need more force to get things done, which takes longer.
 
@@ -223,7 +223,7 @@ But, having mitigated the [Feature Risk](Feature-Risk), you are now carrying mor
 
 It’s often hard to make the case for minimising [Technical Debt](Complexity-Risk#technical-debt): it often feels that there are more important priorities, especially when technical debt can be “swept under the carpet” and forgotten about until later.  (See [Discounting The Future](Evaluating-Risk#discounting-the-future-to-zero).)
 
-One helpful analogy I have found is to imagine your code-base is a kitchen.   After preparing a meal (i.e. delivering the first implementation), _you need to tidy up the kitchen_.  This is just something everyone does as a matter of _basic sanitation_.
+One helpful analogy I have found is to imagine your code-base is a kitchen.   After preparing a meal (i.e. delivering the first implementation), _you need to tidy up the kitchen_.  This is just something everyone does as a matter of _basic sanitation_. <!-- tweet-end -->
 
 Now of course, you could carry on with the messy kitchen.  When tomorrow comes and you need to make another meal, you find yourself needing to wash up saucepans as you go, or working around the mess by using different surfaces to chop on.  
 
@@ -319,7 +319,7 @@ An important lesson here is that choice of language can reduce complexity: and w
  
 ### Networking / Security
 
-There are plenty of [Complexity Risk](Complexity-Risk) perils in _anything_ to do with networked code, chief amongst them being error handling and (again) [protocol evolution](Communication-Risk#protocol-risk).  
+There are plenty of [Complexity Risk](Complexity-Risk) perils in _anything_ to do with networked code, chief amongst them being error handling and (again) [protocol evolution](Communication-Risk#protocol-risk).  <!-- tweet-end -->
 
 In the case of security considerations, exploits _thrive_ on the complexity of your code, and the weaknesses that occur because of it.  In particular, Schneier's Law says, never implement your own cryptographic scheme:
 

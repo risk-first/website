@@ -62,9 +62,7 @@ These relationships of features/dependencies are the basis of [Supply Chains](ht
 
 ## Original Risk
 
-As we discussed in [Dependency Risk](Dependency-Risk), _depending on things_ is necessary for life, whether it is oxygen, food or sunlight.  Minimising [Dependency-Risk](Dependency-Risk) is therefore the goal of all life. 
-
-Our problems compound when we try to [Coordinate](Coordination-Risk) with the dependencies themselves or each other.  
+As we discussed in [Dependency Risk](Dependency-Risk), _depending on things_ is necessary for life, whether it is oxygen, food or sunlight.  Our problems compound when we try to [Coordinate](Coordination-Risk) with the dependencies themselves or each other.  
 
  - Coordination is the root of [Communication Risk](Communication-Risk), as without coordination, we don't have to care about what the world is trying to tell us, or what we are trying to tell the world.
  - Communication Risk then begets [Map and Territory Risk](Map-And-Territory-Risk), because 
