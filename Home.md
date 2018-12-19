@@ -61,7 +61,6 @@ Risks are often very similar across different software projects.   And, if you k
  - [Map And Territory Risk](Map-And-Territory-Risk)
  - [Operational Risk](Operational-Risk)
  - [Staging And Classifying](Staging-And-Classifying)
- - [Stories Of Failure](Stories-Of-Failure)
  
 ### Part 3: [Practices](Practices)
 
@@ -108,6 +107,7 @@ A more light-hearted collection of blog posts related to the software developmen
  - [Issue Tracking](Issue-Tracking)
  - Surfacing Risks
  - [Silver Bullets](Silver-Bullets)
+ - [Stories Of Failure](Stories-Of-Failure)
 
 ### Glossary Of Terms
 
