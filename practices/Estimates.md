@@ -4,7 +4,7 @@ In this section, we're going to put a Risk-First spin on the process of [Estimat
 
 ## The Purpose Of Estimating
 
-Why bother estimating at all?   There are two reasons why estimates are useful:
+Why bother estimating at all?   There are two reasons why estimates are useful:<!-- tweet-end -->
 
 1.  **To allow for the creation of _events_.**  As we saw in [Deadline Risk](Deadline-Risk), if we can put a date on something, we can mitigate lots of [Coordination Risk](Coordination-Risk). Having a _release date_ for a product allows whole teams of people to coordinate their activities in ways that hugely reduce the need for [Communication](Communication-Risk).  "Attack at dawn" allows disparate army units to avoid the [Coordination Risk](Coordination-Risk) inherent in "attack on my signal".  This is a _good reason for estimating_, because by using events you are mitigating [Coordination Risk](Coordination-Risk).  This is often called a _hard deadline_.
 
@@ -109,7 +109,7 @@ We've already looked at Parkinson's Law in the section on [Agency Risk](Process-
 
 Let's leave aside the [Agency Risk](Agency-Risk) concerns this time.  Instead, let's consider this from a Risk-First perspective.  _Of course_ work would expand to fill the time available:  _Time available_ is an _absence of [Schedule Risk](Scarcity-Risk#schedule-risk)_, it's always going to be sensible to exchange free time to reduce more serious risks.  
 
-This is why projects will _always_ take at least as long as is budgeted for them.   
+This is why projects will _always_ take at least as long as is budgeted for them.   <!-- tweet-end -->
 
 ### A Case Study
 
@@ -141,7 +141,7 @@ Despite this being a fictional (or fictionalised) example, it rings true for man
  
 ## Agile Estimation
 
-One alternative approach, must espoused in DevOps/Agile is to pick a short-enough period of time (say, two days or two weeks), and figure out what the most meaningful step towards achieving an objective would be in that time.   By fixing the time period, we remove [Schedule Risk](Scarcity-Risk#schedule-risk) from the equation, don't we?
+One alternative approach, must espoused in DevOps/Agile is to pick a short-enough period of time (say, two days or two weeks), and figure out what the most meaningful step towards achieving an objective would be in that time.   <!-- tweet-end --> By fixing the time period, we remove [Schedule Risk](Scarcity-Risk#schedule-risk) from the equation, don't we?
 
 Well, no.  First, how to choose the time period? [Schedule Risk](Scarcity-Risk#schedule-risk) tends to creep back in, in the form of something like [Man-Hours](https://en.wikipedia.org/wiki/Man-hour) or [Story Points](https://www.atlassian.com/agile/project-management/estimation): 
 

@@ -2,7 +2,7 @@
 
 As in [Agency Risk](Agency-Risk), we are going to use the term _agent_, which refers to anything with [agency](https://github.com/risk-first/website/wiki/Agency-Risk#software-processes-and-teams) in a system to decide it's own fate.  That is, an agent has an [Internal Model](Glossary#Internal-Model),  and can [take actions](Glossary#taking-action) based on it.  Here, we leave aside [Agency Risk](Agency-Risk) and work on the assumption that the agents _are_ working towards a common [Goal](Glossary#Goal-In-Mind), even though in reality it's not always the case, as we saw in the section on [Agency Risk](Agency-Risk).
 
-[Coordination Risk](Coordination-Risk) is the risk that, a group of people or processes, maybe with a common [Goal In Mind](Glossary#Goal-In-Mind), can fail to coordinate to meet this goal and end up making things worse.  [Coordination Risk](Coordination-Risk) is embodied in the phrase "Too Many Cooks Spoil The Broth":  more people, opinions or _agents_ often make results worse.
+[Coordination Risk](Coordination-Risk) is the risk that, a group of people or processes, maybe with a common [Goal In Mind](Glossary#Goal-In-Mind), can fail to coordinate to meet this goal and end up making things worse.<!-- tweet-end -->  [Coordination Risk](Coordination-Risk) is embodied in the phrase "Too Many Cooks Spoil The Broth":  more people, opinions or _agents_ often make results worse.
 
 In this section, we'll first build up [a model of Coordination Risk](#a-model-of-coordination-risk) and what exactly coordination means and why we do it.  Then, we'll look at some classic [problems of coordination](#problems-of-coordination).  Then, we're going to consider agency at several different levels (because of [Scale Invariance](Evaluating-Risk#invariances-2-scale-invariance)) .  We'll look at:
 
@@ -17,7 +17,7 @@ But for now, let's crack on and examine where [Coordination Risk](Coordination-R
 
 ## A Model Of Coordination Risk
 
-Earlier, in [Dependency Risk](Dependency-Risk), we looked at various resources (time, money, people, events etc) and showed how we could [depend on them](Dependency-Risk), taking on risk.  Here, however, we're looking at the situation where there is _competition for those dependencies_, that is, [Scarcity Risk](Scarcity-Risk):   other parties want to use them in a different way.  
+Earlier, in [Dependency Risk](Dependency-Risk), we looked at various resources (time, money, people, events etc) and showed how we could [depend on them](Dependency-Risk), taking on risk.<!-- tweet-end -->  Here, however, we're looking at the situation where there is _competition for those dependencies_, that is, [Scarcity Risk](Scarcity-Risk):   other parties want to use them in a different way.  
 
 ### Law Of Diminishing Returns
 
@@ -81,20 +81,15 @@ As an individual, do you suffer from [Coordination Risk](Coordination-Risk) at a
  - Thick lines show a flow of _opinion_.
  - Boxes with corners are _decision makers_, whereas curved corners don't have a part in the decision.
 
-<!--latex\begin{sidewaystable} -->
-
-| Type    | Description                               | Decision Makers | Opinions  | Channels   | Coordination Risk                         |
-|---------|-------------------------------------------|-----------------|-----------|------------|-------------------------------------------|
-| **UI**  | Uncoordinated                             | 1               | 1         | 0                                                     | Competition                               |
-| **AI**  | Autocratic                                | 1               | 1         | **s**                                                 | Maximum Coordination Risk                 |
-| **AII** | Autocratic (with upward information flow) | 1               | 1         | **s**                                                 |                                           |
-| **CI**  | Consultative (Individual)                 | 1               | 1 + **s** | 2**s**                                                |                                           |
-| **CII** | Consultative (Group)                      | 1               | 1 + **s** | <!--replace $\mathbf{s}^2$ -->**s**²<!--endreplace -->|                                           |
-| **GII** | Group Consultation and Voting             | 1 + **s**       | 1 + **s** | <!--replace $\mathbf{s}^2$ -->**s**²<!--endreplace -->| Maximum Communication Risk, Schedule Risk |
-
+| Type    | Description                  | Decision Makers | Opinions  | Channels     | Risk                                      |
+|---------|------------------------------|-----------------|-----------|--------------|-------------------------------------------|
+| **UI**  | Uncoordinated                             | 1               | 1         | 0                                                      | Competition                               |
+| **AI**  | Autocratic                                | 1               | 1         | **s**                                                  | Maximum Coordination Risk                 |
+| **AII** | Autocratic (with upward information flow) | 1               | 1         | **s**                                                  |                                           |
+| **CI**  | Consultative (Individual)                 | 1               | 1 + **s** | 2**s**                                                 |                                           |
+| **CII** | Consultative (Group)                      | 1               | 1 + **s** | <!--replace $\mathbf{s}^2$ -->**s**²<!--endreplace --> |                                           |
+| **GII** | Group Consultation and Voting             | 1 + **s**       | 1 + **s** | <!--replace $\mathbf{s}^2$ -->**s**²<!--endreplace --> | Maximum Communication Risk, Schedule Risk |
 **s** = subordinate
-
-<!--latex\end{sidewaystable} -->
 
 At the top, you have the _least_ consultative styles, and at the bottom, the _most_.   At the top, decisions are made with just the leader's [Internal Model](Glossary#Internal-Model) but moving down, the [Internal Models](Glossary#Internal-Model) of the _subordinates_ are increasingly brought into play.  
 

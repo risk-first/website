@@ -1,12 +1,12 @@
 ![Draft](images/state/draft.png)
 
-As we discussed in the [Communication Risk](Communication-Risk#misinterpretation-risk) section, our understanding of the world is informed by the names we give things and the abstractions we create.  
+As we discussed in the [Communication Risk](Communication-Risk#misinterpretation-risk) section, our understanding of the world is informed by the names we give things and the abstractions we create.  <!-- tweet-end -->
 
-In the same way, Risk-First is about naming risks within software development and calling them out.
+In the same way, <!-- tweet-start -->Risk-First is about naming risks within software development and calling them out.<!-- tweet-end -->
 
 Our [Internal Models](Glossary#internal-model)  of the world based on these abstractions, and their relationships.
 
-So there is a translation going on here: observations about the arrangement of _atoms_ in the world get turned into patterns of _information_ (measured in bits and bytes).  
+So there is a translation going on here: observations about the arrangement of _atoms_ in the world get turned into patterns of _information_ (measured in bits and bytes). <!-- tweet-end --> 
 
 ![Maps and Territories, and Communication happening between them](images/generated/risks/map-and-territory/communication.png) 
 

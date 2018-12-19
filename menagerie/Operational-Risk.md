@@ -4,11 +4,11 @@
 
 In this section we're going to start considering the realities of running software systems in the real world.  
 
-Here, we're going to set the scene by looking at what constitutes an [Operational Risk](Operational-Risk), and then look at the related discipline of [Operations Management](#operations-management).  Following this background, we'll apply the Risk-First model and dive into the various mitigations for [Operational Risk](Operational-Risk).  
+There is a lot to this subject, so this section is really offers just a taster: We're going to set the scene by looking at what constitutes an [Operational Risk](Operational-Risk), and then look at the related discipline of [Operations Management](#operations-management).  Following this background, we'll apply the Risk-First model and have a high-level look at the various mitigations for [Operational Risk](Operational-Risk).  
 
 ## Operational Risks
 
-When building software, it's tempting to take a very narrow view of the dependencies of a system, but [Operational Risks](Operational-Risk) are often caused by dependencies we _don't_ consider - i.e. the **Operational Context** within which the system is operating.  Here are some examples:  
+When building software, it's tempting to take a very narrow view of the dependencies of a system, but [Operational Risks](Operational-Risk) are often caused by dependencies we _don't_ consider - i.e. the **Operational Context** within which the system is operating.<!-- tweet-end -->  Here are some examples:  
 
  - **[Staff Risks](Scarcity-Risk#staff-risk):** 
    - Freak weather conditions affecting ability of staff to get to work, interrupting the development and support teams. 
@@ -63,14 +63,14 @@ Let's look at each of these actions in turn.
 
 Since humans and machines have different areas of expertise, and because [Operational Risks](Operational-Risk) are often novel, it's often not optimal to try and automate everything.  A good operation will consist of a mix of human and machine actors, each playing to their strengths (see the table below). 
 
+The aim is to build a human-machine operational system that is [_Homeostatic_](https://en.wikipedia.org/wiki/Homeostasis).  This is the property of living things to try and maintain an equilibrium (for example, body temperature or blood glucose levels), but also applies to systems at any scale.  The key to homeostasis is to build systems with feedback loops, even though this leads to more complex systems overall. The diagram above shows some of the actions involved in these kind of feedback loops. 
+
 |Humans Are...                |Machines Are...              |
 |-----------------------------|-----------------------------|
 |Good at novel situations     |Good at repetitive situations|
 |Good at adaptation           |Good at consistency          |
 |Expensive at scale           |Cheap at scale               |
 |Reacting and Anticipating    |Recording                    |
-
-The aim is to build a human-machine operational system that is [_Homeostatic_](https://en.wikipedia.org/wiki/Homeostasis).  This is the property of living things to try and maintain an equilibrium (for example, body temperature or blood glucose levels), but also applies to systems at any scale.  The key to homeostasis is to build systems with feedback loops, even though this leads to more complex systems overall. The diagram above shows some of the actions involved in these kind of feedback loops. 
 
 As we saw in [Map and Territory Risk](Map-and-Territory-Risk), it's very easy to fool yourself, especially around [Key Performance Indicators (KPIs)](https://en.wikipedia.org/wiki/Performance_indicator) and metrics. Large organisations have [Audit](https://en.wikipedia.org/wiki/Audit) functions precisely to guard against their own internal failing [processes](Process-Risk) and [Agency Risk](Agency-Risk).  Audits could be around software tools, processes, practices, quality and so on.  Practices such as [Continuous Improvement](https://en.wikipedia.org/wiki/Continual_improvement_process) and [Total Quality Management](https://en.wikipedia.org/wiki/Total_quality_management) also figure here.
 

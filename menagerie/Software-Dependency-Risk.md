@@ -169,6 +169,12 @@ The diagram above summarises the risks raised in some of the literature.  Here a
  - **Third is [Communication Risk](Communication-Risk):**  how well does the project deal with it's users?  If a project is "famous", then it has communicated its usefulness to a wide, appreciative audience.  Avoiding [Communication Risk](Communication-Risk) is also a good reason to pick _tools you are already familiar with_.
   
 ![Software Libraries Risk Tradeoff](images/generated/risks/software-dependency/library.png) 
+
+#### Sources
+
+ - `sd1`: [Defending your code against dependency problems](https://www.software.ac.uk/resources/guides/defending-your-code-against-dependency-problems)
+ - `sd2`: [How to choose an open source library](https://stackoverflow.com/questions/2960371/how-to-choose-an-open-source-library)
+ - `sd3`: [Open Source - To use or not to use](https://www.forbes.com/sites/forbestechcouncil/2017/07/20/open-source-to-use-or-not-to-use-and-how-to-choose)
     
 ### Complexity Risk? 
  
@@ -192,7 +198,7 @@ Businesses opt for Software as a Service (SaaS) because:
 
 SaaS is now a very convenient way to provide _commercial_ software.   Popular examples of SaaS might be [SalesForce](https://en.wikipedia.org/wiki/Salesforce.com), or [GMail](https://en.wikipedia.org/wiki/Gmail).  Both of which follow the commonly-used [Freemium](https://en.wikipedia.org/wiki/Freemium) model, where the basic service is provided free, but upgrading to a paid account gives extra benefits.  
 
-![Software As A Service Dependencies](images/generated/risks/software-dependency/software_dependency_table_2_large.png)
+![Software-as-a-Service (SaaS) Attendant Risks](images/generated/risks/software-dependency/software_dependency_table_2_large.png)
 
 The diagram above summarises the risks raised in some of the available literature.  Some take-aways:
 
@@ -201,6 +207,11 @@ The diagram above summarises the risks raised in some of the available literatur
 - [Boundary Risk](Boundary-Risk) is a also a different proposition: you are tied to the software provider by _a contract_.  If the service changes in the future, or isn't to your liking, you can't simply fork the code (like you could with an open source project).
 
 ![Risk Tradeoff From Using Software as a Service (SaaS)](images/generated/risks/software-dependency/saas.png)
+
+#### Sources
+
+ - `sd4`: [SaaS Checklist - Nine Factors to Consider](https://www.zdnet.com/article/saas-checklist-nine-factors-to-consider-when-selecting-a-vendor)
+ - `sd5`: [How to Evaluate SaaS Vendors.](http://sandhill.com/article/how-to-evaluate-saas-vendors-five-key-considerations)
 
 ## A Matrix of Options
 
@@ -244,20 +255,3 @@ _Choosing_ dependencies can be extremely difficult.  As we discussed above, the 
 Having chosen a dependency, whether or not you end up in a more favourable position risk-wise is going to depend heavily on the quality of the execution and the skill of the implementor.  With software dependencies, we often have to live with the decisions we make for a long time. <!-- tweet-end --> In my experience, given the [Boundary Risks](Boundary-Risk) associated with getting this wrong, not enough time is spent really thinking about this in advance.  
 
 Let's take a closer look at this problem in the next section, [Boundary Risk](Boundary-Risk).
-
-## Sources
-
- - `sd1`: Defending your code against dependency problems.  <br />
- https://www.software.ac.uk/resources/guides/defending-your-code-against-dependency-problems
-
- - `sd2`: How to choose an open source library.  
- https://stackoverflow.com/questions/2960371/how-to-choose-an-open-source-library
-
- - `sd3`: Open Source - To use or not to use.  
- https://www.forbes.com/sites/forbestechcouncil/2017/07/20/open-source-to-use-or-not-to-use-and-how-to-choose/2/#39e67e445a8c
-
- - `sd4`: SaaS Checklist - Nine Factors to Consider.  
- https://www.zdnet.com/article/saas-checklist-nine-factors-to-consider-when-selecting-a-vendor/
-
- - `sd5`: How to Evaluate SaaS Vendors.  
- http://sandhill.com/article/how-to-evaluate-saas-vendors-five-key-considerations/

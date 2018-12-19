@@ -48,4 +48,4 @@ There is no compulsion to buy a print or digital version of the book, but we'd r
 
 Where possible, references are to the [Wikipedia](https://wikipedia.org) website.  Wikipedia is not perfect. There is a case for linking to the original articles and papers, but by using Wikipedia references are free and easy for everyone to access, and hopefully will exist for a long time into the future.
 
-On to [The Executive Summary](Executive-Summary)
+On to [The Quick Summary](Quick-Summary)

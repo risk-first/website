@@ -33,8 +33,6 @@
 \usepackage{rotating}
 \usepackage[margin=10pt,font=small,labelfont=bf]{caption}
 \captionsetup[figure]{labelfont={bf,it},textfont={bf,it}}
- \setfloatlocations{figure}{thpb}
-
 
 % Links
 \usepackage[hyphens]{url}
@@ -150,6 +148,32 @@
 
 \end{titlingpage}
 
+\begin{titlingpage}
+
+\hspace{0.1\textwidth}
+
+\begin{quotation}
+
+``You never change things by fighting the existing reality.
+To change something, build a new model that makes the existing model obsolete.''
+
+\sourceatright{\textemdash  Buckminster Fuller}
+\end{quotation}
+
+\hspace{0.1\textwidth}
+
+\begin{quotation}
+
+``We’ve survived 200,000 years as humans.  Don’t you think there’s a reason why we survived? We’re good at risk management.''
+
+\sourceatright{\textemdash  Nassim Nicholas Taleb}
+\end{quotation}
+
+
+\end{titlingpage}
+
+\small
+
 \hypertarget{risk-first-the-menagerie}{%
 \section{Risk-First: The Menagerie}\label{risk-first-the-menagerie}}
 
@@ -215,6 +239,8 @@ Kite9 Ltd.
 Colchester
 CO6 4AR
 \end{verbatim}
+
+\normalsize
 
 \newpage
 \setcounter{tocdepth}{0}
@@ -491,7 +517,7 @@ perfect. There is a case for linking to the original articles and
 papers, but by using Wikipedia references are free and easy for everyone
 to access, and hopefully will exist for a long time into the future.
 
-On to The Executive Summary
+On to The Quick Summary
 
 \hypertarget{quick-summary}{%
 \chapter{Quick Summary}\label{quick-summary}}
@@ -2760,13 +2786,12 @@ At this point, you might be wondering what all the fuss is about. This
 stuff is all obvious! It's what we do anyway! Perhaps. Risk management
 \emph{is} what we do anyway:
 
-\begin{quotation}
-
+\begin{quote}
 ``We've survived 200,000 years as humans. Don't you think there's a
-reason why we survived? We're good at risk management.''
-
-\sourceatright{\href{https://www.zerohedge.com/news/2018-03-13/taleb-best-thing-society-bankruptcy-goldman-sachs}{\textemdash  Nassim Nicholas Taleb, author of \emph{The Black Swan}}}
-\end{quotation}
+reason why we survived? We're good at risk management.'' -
+\href{https://www.zerohedge.com/news/2018-03-13/taleb-best-thing-society-bankruptcy-goldman-sachs}{Nassim
+Nicholas Taleb, author of \emph{The Black Swan}}
+\end{quote}
 
 The problem is that although all this \emph{is} obvious, it appears to
 have largely escaped codification within the literature, practices and
@@ -3516,13 +3541,10 @@ particular asset.
 \caption{Market Risk\label{market-risk.png}}
 \end{figure}
 
-\begin{quotation}
-
+\begin{quote}
 ``Market risk is the risk of losses in positions arising from movements
-in market prices.''
-
-\sourceatright{\href{https://en.wikipedia.org/wiki/Market_risk}{\textemdash  Market Risk, \emph{Wikipedia}}}
-\end{quotation}
+in market prices.'' - Market Risk, \emph{Wikipedia}
+\end{quote}
 
 I face market risk when I own (i.e.~have a \emph{position} in) some
 \href{http://apple.com}{Apple} stock. Apple's's stock price will decline
@@ -3635,15 +3657,14 @@ Let's examine each in turn.
 \hypertarget{fit}{%
 \subsection{Fit}\label{fit}}
 
-\begin{quotation}
-
+\begin{quote}
 ``This preservation, during the battle for life, of varieties which
 possess any advantage in structure, constitution, or instinct, I have
 called Natural Selection; and Mr.~Herbert Spencer has well expressed the
-same idea by the Survival of the Fittest''
-
-\sourceatright{\href{https://en.wikipedia.org/wiki/Survival_of_the_fittest}{\textemdash  Charles Darwin (Survival of the Fittest), \emph{Wikipedia}}.}
-\end{quotation}
+same idea by the Survival of the Fittest'' -
+\href{https://en.wikipedia.org/wiki/Survival_of_the_fittest}{Charles
+Darwin (Survival of the Fittest), \emph{Wikipedia}}.
+\end{quote}
 
 Darwin's conception of fitness was not one of athletic prowess, but how
 well an organism worked within the landscape, with the goal of
@@ -3786,7 +3807,7 @@ In 1948, Claude Shannon proposed this definition of communication:
 point, either exactly or approximately, a message selected at another
 point.''
 
-\sourceatright{\href{https://en.wikipedia.org/wiki/A_Mathematical_Theory_of_Communication}{\textemdash  A Mathematical Theory Of Communication, \emph{Claude Shannon}}  <!-- tweet-end -->}
+\sourceatright{\href{https://en.wikipedia.org/wiki/A_Mathematical_Theory_of_Communication}{\textemdash  A Mathematical Theory Of Communication, \emph{Claude Shannon}}  }
 \end{quotation}
 
 And from this same paper, we get Figure \ref{communication_1.png}: We
@@ -4157,31 +4178,14 @@ Protocol}\label{http---hypertext-transfer-protocol}}
 If we examine what is being sent on the TCP connection, we see something
 like this:
 
-bash
-
-\begin{quotation}
-```
-GET /preferences HTTP/1.1
-```{=latex}
-\end{quotation}
-
-```
-
-\begin{quotation}
-
-Host: google.com
-
-\end{quotation}
-
-\begin{quotation}
-
-Accept: \emph{/}
-
-\end{quotation}
-
-\begin{quote}
-```
-\end{quote}
+\begin{Shaded}
+\begin{Highlighting}[]
+ \OperatorTok{>} \ExtensionTok{GET}\NormalTok{ /preferences HTTP/1.1}
+ \OperatorTok{>} \ExtensionTok{Host}\NormalTok{: google.com}
+ \OperatorTok{>} \ExtensionTok{Accept}\NormalTok{: */*}
+ \OperatorTok{>}
+\end{Highlighting}
+\end{Shaded}
 
 This is now the HTTP protocol proper, and these 4 lines are sending
 information \emph{over the connection} to the Google server, to ask it
@@ -4189,8 +4193,8 @@ for the page. Finally, Google's server gets to respond:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\OperatorTok{<} \ExtensionTok{HTTP/1.1}\NormalTok{ 301 Moved Permanently}
-\OperatorTok{<} \ExtensionTok{Location}\NormalTok{: http://www.google.com/preferences}
+ \OperatorTok{<} \ExtensionTok{HTTP/1.1}\NormalTok{ 301 Moved Permanently}
+ \OperatorTok{<} \ExtensionTok{Location}\NormalTok{: http://www.google.com/preferences}
 \ExtensionTok{...}
 \end{Highlighting}
 \end{Shaded}
@@ -4305,23 +4309,25 @@ change the data type, we need to correct the usages of that type. Note
 above, I've given the \texttt{JavaScript} example, but I'm going to
 switch to \texttt{TypeScript} now:
 
-\begin{verbatim}
-interface BInput {
-    a: string,
-    b: string,
-    c: string,
-    d: string
-}
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{interface}\NormalTok{ BInput }\OperatorTok{\{}
+    \DataTypeTok{a}\OperatorTok{:}\NormalTok{ string}\OperatorTok{,}
+    \DataTypeTok{b}\OperatorTok{:}\NormalTok{ string}\OperatorTok{,}
+    \DataTypeTok{c}\OperatorTok{:}\NormalTok{ string}\OperatorTok{,}
+    \DataTypeTok{d}\OperatorTok{:}\NormalTok{ string}
+\OperatorTok{\}}
 
-function b(in: BInput): string {
-    return in.a + in.b + in.c + in.d;
-}
+\KeywordTok{function} \AttributeTok{b}\NormalTok{(}\KeywordTok{in}\OperatorTok{:}\NormalTok{ BInput)}\OperatorTok{:}\NormalTok{ string }\OperatorTok{\{}
+    \ControlFlowTok{return} \KeywordTok{in}\NormalTok{.}\AttributeTok{a} \OperatorTok{+} \KeywordTok{in}\NormalTok{.}\AttributeTok{b} \OperatorTok{+} \KeywordTok{in}\NormalTok{.}\AttributeTok{c} \OperatorTok{+} \KeywordTok{in}\NormalTok{.}\AttributeTok{d}\OperatorTok{;}
+\OperatorTok{\}}
 
-function a() {
-    var bOut = b({a: 1, b: 2, c: 3);        // new parameter d missing
-    return "something "+bOut;
-}
-\end{verbatim}
+\KeywordTok{function} \AttributeTok{a}\NormalTok{() }\OperatorTok{\{}
+    \KeywordTok{var}\NormalTok{ bOut }\OperatorTok{=} \AttributeTok{b}\NormalTok{(}\OperatorTok{\{}\DataTypeTok{a}\OperatorTok{:} \DecValTok{1}\OperatorTok{,} \DataTypeTok{b}\OperatorTok{:} \DecValTok{2}\OperatorTok{,} \DataTypeTok{c}\OperatorTok{:} \DecValTok{3}\NormalTok{)}\OperatorTok{;} \CommentTok{// new parameter d missing}
+    \ControlFlowTok{return} \StringTok{"something "}\OperatorTok{+}\NormalTok{bOut}\OperatorTok{;}
+\OperatorTok{\}}
+\end{Highlighting}
+\end{Shaded}
 
 By using a
 \href{https://en.wikipedia.org/wiki/Type_system\#Static_type_checking}{static
@@ -6765,9 +6771,8 @@ look for when choosing open-source libraries.
 
 \begin{figure}
 \centering
-\includegraphics{images/generated/risks/software-dependency/software_dependency_table_1_large-400dpi.png}
-\caption{Software Library Dependencies, Attendant
-Risks\label{software_dependency_table_1_large.png}}
+\Oldincludegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/generated/risks/software-dependency/software_dependency_table_1_large-400dpi.png}
+\caption{Software Library Dependencies, Attendant Risks}
 \end{figure}
 
 Figure \ref{software_dependency_table_1_large.png} summarises the risks
@@ -6799,6 +6804,25 @@ raised in some of the literature. Here are some take-aways:
 \includegraphics{images/generated/risks/software-dependency/library-400dpi.png}
 \caption{Software Libraries Risk Tradeoff\label{library.png}}
 \end{figure}
+
+\hypertarget{sources}{%
+\subsubsection{Sources}\label{sources}}
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{sd1}:
+  \href{https://www.software.ac.uk/resources/guides/defending-your-code-against-dependency-problems}{Defending
+  your code against dependency problems}
+\item
+  \texttt{sd2}:
+  \href{https://stackoverflow.com/questions/2960371/how-to-choose-an-open-source-library}{How
+  to choose an open source library}
+\item
+  \texttt{sd3}:
+  \href{https://www.forbes.com/sites/forbestechcouncil/2017/07/20/open-source-to-use-or-not-to-use-and-how-to-choose}{Open
+  Source - To use or not to use}
+\end{itemize}
 
 \hypertarget{complexity-risk-1}{%
 \subsection{Complexity Risk?}\label{complexity-risk-1}}
@@ -6883,9 +6907,8 @@ extra benefits.
 
 \begin{figure}
 \centering
-\includegraphics{images/generated/risks/software-dependency/software_dependency_table_2_large-400dpi.png}
-\caption{Software As A Service
-Dependencies\label{software_dependency_table_2_large.png}}
+\Oldincludegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/generated/risks/software-dependency/software_dependency_table_2_large-400dpi.png}
+\caption{Software-as-a-Service (SaaS) Attendant Risks}
 \end{figure}
 
 Figure \ref{software_dependency_table_2_large.png} summarises the risks
@@ -6919,6 +6942,21 @@ raised in some of the available literature. Some take-aways:
 \caption{Risk Tradeoff From Using Software as a Service
 (SaaS)\label{saas.png}}
 \end{figure}
+
+\hypertarget{sources-1}{%
+\subsubsection{Sources}\label{sources-1}}
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{sd4}:
+  \href{https://www.zdnet.com/article/saas-checklist-nine-factors-to-consider-when-selecting-a-vendor}{SaaS
+  Checklist - Nine Factors to Consider}
+\item
+  \texttt{sd5}:
+  \href{http://sandhill.com/article/how-to-evaluate-saas-vendors-five-key-considerations}{How
+  to Evaluate SaaS Vendors.}
+\end{itemize}
 
 \hypertarget{a-matrix-of-options}{%
 \section{A Matrix of Options}\label{a-matrix-of-options}}
@@ -7074,27 +7112,6 @@ in advance.
 
 Let's take a closer look at this problem in the next chapter, Boundary
 Risk.
-
-\hypertarget{sources}{%
-\section{Sources}\label{sources}}
-
-\begin{itemize}
-\item
-  \texttt{sd1}: Defending your code against dependency problems.
-  https://www.software.ac.uk/resources/guides/defending-your-code-against-dependency-problems
-\item
-  \texttt{sd2}: How to choose an open source library.
-  https://stackoverflow.com/questions/2960371/how-to-choose-an-open-source-library
-\item
-  \texttt{sd3}: Open Source - To use or not to use.
-  https://www.forbes.com/sites/forbestechcouncil/2017/07/20/open-source-to-use-or-not-to-use-and-how-to-choose/2/\#39e67e445a8c
-\item
-  \texttt{sd4}: SaaS Checklist - Nine Factors to Consider.
-  https://www.zdnet.com/article/saas-checklist-nine-factors-to-consider-when-selecting-a-vendor/
-\item
-  \texttt{sd5}: How to Evaluate SaaS Vendors.
-  http://sandhill.com/article/how-to-evaluate-saas-vendors-five-key-considerations/
-\end{itemize}
 
 \hypertarget{process-risk}{%
 \chapter{Process Risk}\label{process-risk}}
@@ -7974,8 +7991,6 @@ Analytics} functionality inside WordPress.
 I find, a lot of code I write is of this nature: trying to write the
 \emph{glue code} to join together two different \emph{ecosystems}.
 
-\begin{sidewaystable} 
-
 \begin{longtable}[]{@{}llll@{}}
 \toprule
 \begin{minipage}[b]{0.18\columnwidth}\raggedright
@@ -8046,17 +8061,13 @@ Google Search, Scala\strut
 \bottomrule
 \end{longtable}
 
-\end{sidewaystable} 
-
 As shown in Figure \ref{boundary-risk3.png}, mitigating Boundary Risk
 involves taking on complexity. The more Protocol Complexity there is to
 bridge the two ecosystems, the more Complex the bridge will necessarily
 be. The above table shows some examples of this.
 
-From examining the {[}Protocol
-Risk{]}{[}Communication-Risk\#protocol-risk{]} at each end of the bridge
-you are creating, you can get a rough idea of how complex the endeavour
-will be:
+From examining the Protocol Risk at each end of the bridge you are
+creating, you can get a rough idea of how complex the endeavour will be:
 
 \begin{itemize}
 \tightlist
@@ -8915,109 +8926,105 @@ illustrates these, with the following conventions:
   don't have a part in the decision.
 \end{itemize}
 
-\begin{sidewaystable} 
-
 \begin{longtable}[]{@{}llllll@{}}
 \toprule
 \begin{minipage}[b]{0.06\columnwidth}\raggedright
 Type\strut
-\end{minipage} & \begin{minipage}[b]{0.27\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{0.20\columnwidth}\raggedright
 Description\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{0.11\columnwidth}\raggedright
 Decision Makers\strut
 \end{minipage} & \begin{minipage}[b]{0.07\columnwidth}\raggedright
 Opinions\strut
-\end{minipage} & \begin{minipage}[b]{0.07\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{0.09\columnwidth}\raggedright
 Channels\strut
-\end{minipage} & \begin{minipage}[b]{0.27\columnwidth}\raggedright
-Coordination Risk\strut
+\end{minipage} & \begin{minipage}[b]{0.29\columnwidth}\raggedright
+Risk\strut
 \end{minipage}\tabularnewline
 \midrule
 \endhead
 \begin{minipage}[t]{0.06\columnwidth}\raggedright
 \textbf{UI}\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
 Uncoordinated\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright
 1\strut
 \end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
 1\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
 0\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.29\columnwidth}\raggedright
 Competition\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.06\columnwidth}\raggedright
 \textbf{AI}\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
 Autocratic\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright
 1\strut
 \end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
 1\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
 \textbf{s}\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.29\columnwidth}\raggedright
 Maximum Coordination Risk\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.06\columnwidth}\raggedright
 \textbf{AII}\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
 Autocratic (with upward information flow)\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright
 1\strut
 \end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
 1\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
 \textbf{s}\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.29\columnwidth}\raggedright
 \strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.06\columnwidth}\raggedright
 \textbf{CI}\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
 Consultative (Individual)\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright
 1\strut
 \end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
 1 + \textbf{s}\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
 2\textbf{s}\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.29\columnwidth}\raggedright
 \strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.06\columnwidth}\raggedright
 \textbf{CII}\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
 Consultative (Group)\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright
 1\strut
 \end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
 1 + \textbf{s}\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
 \(\mathbf{s}^2\)\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.29\columnwidth}\raggedright
 \strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.06\columnwidth}\raggedright
 \textbf{GII}\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
 Group Consultation and Voting\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright
 1 + \textbf{s}\strut
 \end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
 1 + \textbf{s}\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
 \(\mathbf{s}^2\)\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.29\columnwidth}\raggedright
 Maximum Communication Risk, Schedule Risk\strut
 \end{minipage}\tabularnewline
 \bottomrule
 \end{longtable}
 
 \textbf{s} = subordinate
-
-\end{sidewaystable} 
 
 At the top, you have the \emph{least} consultative styles, and at the
 bottom, the \emph{most}. At the top, decisions are made with just the
@@ -10035,10 +10042,12 @@ processes, people and systems or from external events.''
 In this chapter we're going to start considering the realities of
 running software systems in the real world.
 
-Here, we're going to set the scene by looking at what constitutes an
+There is a lot to this subject, so this chapter is really offers just a
+taster: We're going to set the scene by looking at what constitutes an
 Operational Risk, and then look at the related discipline of Operations
 Management. Following this background, we'll apply the Risk-First model
-and dive into the various mitigations for Operational Risk.
+and have a high-level look at the various mitigations for Operational
+Risk.
 
 \hypertarget{operational-risks}{%
 \section{Operational Risks}\label{operational-risks}}
@@ -10197,6 +10206,15 @@ Operational Risks are often novel, it's often not optimal to try and
 automate everything. A good operation will consist of a mix of human and
 machine actors, each playing to their strengths (see the table below).
 
+The aim is to build a human-machine operational system that is
+\href{https://en.wikipedia.org/wiki/Homeostasis}{\emph{Homeostatic}}.
+This is the property of living things to try and maintain an equilibrium
+(for example, body temperature or blood glucose levels), but also
+applies to systems at any scale. The key to homeostasis is to build
+systems with feedback loops, even though this leads to more complex
+systems overall. Figure \ref{monitoring-detection.png} shows some of the
+actions involved in these kind of feedback loops.
+
 \begin{longtable}[]{@{}ll@{}}
 \toprule
 Humans Are\ldots{} & Machines Are\ldots{}\tabularnewline
@@ -10209,15 +10227,6 @@ Reacting and Anticipating & Recording\tabularnewline
 \bottomrule
 \end{longtable}
 
-The aim is to build a human-machine operational system that is
-\href{https://en.wikipedia.org/wiki/Homeostasis}{\emph{Homeostatic}}.
-This is the property of living things to try and maintain an equilibrium
-(for example, body temperature or blood glucose levels), but also
-applies to systems at any scale. The key to homeostasis is to build
-systems with feedback loops, even though this leads to more complex
-systems overall. Figure \ref{monitoring-detection.png} shows some of the
-actions involved in these kind of feedback loops.
-
 As we saw in Map and Territory Risk, it's very easy to fool yourself,
 especially around Key Performance Indicators (KPIs) and metrics. Large
 organisations have \href{https://en.wikipedia.org/wiki/Audit}{Audit}
@@ -10229,8 +10238,9 @@ Improvement} and
 \href{https://en.wikipedia.org/wiki/Total_quality_management}{Total
 Quality Management} also figure here.
 
-\hypertarget{the-operational-context}{%
-\subsection{The Operational Context}\label{the-operational-context}}
+\hypertarget{scanning-the-operational-context}{%
+\subsection{Scanning The Operational
+Context}\label{scanning-the-operational-context}}
 
 There are plenty of Hidden Risks within the environment the operation
 exists within, and these change all the time in response to economic or
@@ -10331,11 +10341,12 @@ overlap one-another (Credit: Kharnagy, Wikipedia)\label{devops.png}}
 \hypertarget{improvement}{%
 \section{Improvement}\label{improvement}}
 
-Once exposed to the real world, no system is perfect: we will want to
-improve it over time. However, conversely, Operational Risk includes an
-element of Trust \& Belief Risk: our \emph{reputation} and the good will
-of our customers. This gives us pause: we don't want to destroy good
-will created for our software, this is very hard to rebuild.
+No system can be perfect, and after it meets the real world, we will
+want to improve it over time. But Operational Risk includes an element
+of Trust \& Belief Risk: we have a \emph{reputation} and the good will
+of our customers to consider when we make improvements. Because this is
+very hard to rebuild, we should consider this before releasing software
+that might not live up to expectations.
 
 So there is a tension between ``you only get one chance to make a first
 impression'' and ``gilding the lily'' (perfectionism). In the past I've
@@ -10604,11 +10615,9 @@ managing our dependencies.
 \section{Original Risk}\label{original-risk}}
 
 As we discussed in Dependency Risk, \emph{depending on things} is
-necessary for life, whether it is oxygen, food or sunlight. Minimising
-Dependency-Risk is therefore the goal of all life.
-
-Our problems compound when we try to Coordinate with the dependencies
-themselves or each other.
+necessary for life, whether it is oxygen, food or sunlight. Our problems
+compound when we try to Coordinate with the dependencies themselves or
+each other.
 
 \begin{itemize}
 \tightlist
@@ -10647,8 +10656,8 @@ what the risks are, and what we expect to do about them.
 
 \begin{figure}
 \centering
-\includegraphics{images/generated/staging-and-classifying/periodic-table-large-400dpi.png}
-\caption{Periodic Table of Risks\label{periodic-table-large.png}}
+\Oldincludegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/generated/staging-and-classifying/periodic-table-large-400dpi.png}
+\caption{Periodic Table of Risks}
 \end{figure}
 
 Figure \ref{periodic-table-large.png} compiles all of the risks we've
@@ -11606,5 +11615,18 @@ that it has a different profile of Attendant Risks.
 Refers to any activity in the project. Actions are usually in order to
 manage some kind of risk. At the same time, Taking Action usually means
 interacting with reality and updating the Internal Model.
+
+\hypertarget{index}{%
+\chapter{Index}\label{index}}
+
+Index Page 1.
+
+\pagebreak
+
+Index Page 2
+
+\pagebreak
+
+Index Page 3
 
 \end{document}  
