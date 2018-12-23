@@ -44,7 +44,7 @@ public class TextPreprocessor {
 		while (line != null) {
 			if (line.trim().equals("```include")) {
 				processIncludes(br, origin);
-			} else if (line.trim().startsWith("> ")) {
+			} else if (line.startsWith("> ")) {
 				outputQuote(line, lineNo);
 			} else if (line.trim().startsWith("<!--latex")) {
 				outputRawLatex(line);
@@ -210,7 +210,16 @@ public class TextPreprocessor {
 					System.out.println("\\caption{"+text+"}");
 					System.out.println("\\end{sidewaysfigure}");
 					System.out.println("```");
-
+				} else if (url.contains("large")) {
+					System.out.println("```{=latex}");
+					System.out.println("\\begin{figure}");
+					System.out.println("\\centering");
+					System.out.print("\\Oldincludegraphics[width=\\textwidth,height=\\textheight,keepaspectratio]{");
+					System.out.print(url);
+					System.out.println("}");
+					System.out.println("\\caption{"+text+"}");
+					System.out.println("\\end{figure}");
+					System.out.println("```");
 				} else {
 					System.out.println("!["+text+"\\label{"+label+"}]("+url+")");
 				}					
