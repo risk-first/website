@@ -10,7 +10,7 @@ Hopefully, after reading through some of the articles here, you'll come away wit
 
 - An appreciation of how risk underpins everything we do as developers, whether we want it to or not.
 - A framework for evaluating [software methodologies](https://en.wikipedia.org/wiki/Software_development_process#Methodologies) and choosing the right one for the task-at-hand.
-- A recontextualization of the software process as being an exercise in mitigating different kinds of risk.
+- A new way to look at the software development process: it's an exercise in managing different kinds of risk.
 - The tools to help you decide when a methodology is _letting you down_, and the vocabulary to argue for when it's a good idea to deviate from it.
 
 ## Questions Answered
@@ -117,4 +117,3 @@ A more light-hearted collection of blog posts related to the software developmen
 <hr />
 
 **[Discuss](https://github.com/risk-first/website/issues/1)**
-
