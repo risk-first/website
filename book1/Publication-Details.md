@@ -2,7 +2,7 @@
 
 \small
 
-## Risk-First: The Menagerie
+## Volume 1: The Menagerie
 By Rob Moffat
 
 ```{=latex}
