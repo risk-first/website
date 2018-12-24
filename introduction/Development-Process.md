@@ -4,7 +4,7 @@ In the [previous section](A-Simple-Scenario) we introduced some terms for talkin
 
 Now, let's look at the everyday process of developing _a new feature_ on a software project, and see how our risk model informs it.
 
-## An Example Process
+## A Toy Process
 
 Let's ignore for now the specifics of what methodology is being used - we'll come to that later.  Let's say your team have settled for a process something like the following:
 
@@ -50,7 +50,7 @@ Two reasons:
 1.  You're [Meeting Reality](Glossary#meet-reality) all-in-one-go:  All of these risks materialize at the same time, and you have to deal with them all at once.
 2.  Because of this, at the point you put code into the hands of your users, your [Internal Model](Glossary#Internal-Model) is at its least-developed.  All the [Hidden Risks](Glossary#hidden-risk) now need to be dealt with at the same time, in production.
 
-## Applying the Model
+## Applying the Process
 
 Let's look at how our process should act to prevent these risks materializing by considering an unhappy path, one where at the outset, we have lots of [Hidden Risks](Glossary#hidden-risk).  Let's say a particularly vocal user rings up someone in the office and asks for new **Feature X** to be added to the software.  It's logged as a new feature request, but:
   
