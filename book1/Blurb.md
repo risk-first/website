@@ -20,5 +20,8 @@ Volume one of the Risk-First series argues the case for viewing _all_ of the act
 
 The book aims to develop a _Pattern Language_ for understanding software risk, and develop a practical framework for discussing how the activities we take on a project change the balance of the risks we are exposed to.
 
-Available for pre-order soon from Amazon.
+## Get It
+
+- [Pre-Order Kindle Edition on Amazon](http://a.co/d/hmpmYl2)
+- Print Edition available 21st Feb 2019
  
