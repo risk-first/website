@@ -96,7 +96,7 @@ her [Internal Model](Glossary#Internal-Model) will develop.
 
 At this point, let's stop and discuss the visual grammar of the Risk-First Diagrams we've been looking at.  A Risk-First diagram shows what you expect to happen when you [Take Action](Glossary#taking-action).  The action itself is represented by the shaded, sign-post-shaped box in the middle.  On the left, we have the current state of the world, on the right is the anticipated state _after_ taking the action.
 
-The round-cornered rectangles represent our [Internal Model](Glossary#internal-model), and these contain our view of [Risk](Glossary#Risk), whether the risks we face right now, or the [Attendant Risks](Glossary#attendant-risk) expected after taking the action.  In the diagram above, taking the action of "coding and unit testing" is expected to mitigate the risks of "Developer Misimplementation" and "Duplicating Functionality".
+The round-cornered rectangles represent our [Internal Model](Glossary#internal-model), and these contain our view of [Risk](Glossary#Risk), whether the risks we face right now, or the [Attendant Risks](Glossary#attendant-risk) expected after taking the action.  In the diagram above, taking the action of "coding and unit testing" is expected to mitigate the risks of "Incorrect Implementation" and "Duplicating Functionality".
 
 Beneath the internal models, we are also showing real-world tangible artifacts.  That is, the physical change we would expect to see as a result of taking action.  In the diagram above, the action will result in "New Code" being added to the project, needed for the next steps of the development process. 
 
