@@ -36,7 +36,7 @@ Pay-Off refers to the _value_ of the [actions we take](#taking-action).  When we
 
 ### Risk
 
-A possibility of loss or cost.  Anything that _can_ go wrong on a project, or is _going_ wrong, but so far hasn't been quantified.  We talk about risk because we wish to recognise both the range of possibilities and the range of cost.  
+A possibility of loss or cost.  Anything that _can_ go wrong on a project, or is _going_ wrong, but resists exact realization.  We talk about risk because we wish to recognise both the range of possibilities and the range of cost.  
 
 Usually broken down into: 
 
