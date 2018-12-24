@@ -16,11 +16,17 @@ Let's ignore for now the specifics of what methodology is being used - we'll com
 
 ![A Simple Development Process](images/generated/introduction/development_process_1.png)
 
-Now, the _methodology_ being used might be Waterfall, it might be Agile.  We're not going to commit to specifics at this stage.   Also we don't need to consider whether this is particularly a _good_ process: you could add code review, a pilot phase, integration testing, whatever.  It's probably not perfect, but let's just assume that _it works for this project_ and everyone is reasonably happy with it. 
+### Can't We Improve This?
+
+Is this a _good_ process?  Probably, it's not that great: you could add code review, a pilot phase, integration testing, whatever. 
+
+Also, the _methodology_ being used might be Waterfall, it might be Agile.  We're not going to commit to specifics at this stage.    
+
+For now though, let's just assume that _it works for this project_ and everyone is reasonably happy with it. 
 
 We're just doing some analysis of _what process gives us_.  
 
-## Minimizing Risks - Overview
+### Minimising Risks - Overview
 
 I am going to argue that this entire process is _informed by software risk_:
 
@@ -28,6 +34,8 @@ I am going to argue that this entire process is _informed by software risk_:
 2.  We _write unit tests_ to minimize the risk that our code **isn't doing what we expected, and that it matches the specifications**.
 3.  We _integrate our code_ to minimize the risk that it's **inconsistent with the other, existing code on the project**.  
 4.  We have _acceptance testing_ and quality gates generally to **minimize the risk of breaking production**, somehow.
+
+### A Much Simpler Process
 
 We could skip all those steps above and just do this: 
 
