@@ -12,4 +12,4 @@
 
 - **[Click here for details.](Blurb)**
 
-[![Book](images/Cover_Image_Bordered.png)](Blurb)
+[![Book](images/Cover_Image_Bordered.png)](http://a.co/d/eESl9HH)
