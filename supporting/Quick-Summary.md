@@ -10,7 +10,7 @@ None of these is necessarily more “right” than another- they are suitable on
 
 A key question then is: **how do we select the right tools for the job?**
 
-## 2.  We can Look at Projects in Terms of Risks
+## 2.  We Can Look at Projects in Terms of Risks
 
 One way to examine the project in-flight is by looking at the [risks](Glossary#risk) it faces. 
 
