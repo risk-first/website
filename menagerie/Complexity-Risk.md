@@ -1,6 +1,6 @@
 ![For Review](images/state/for-review.png)
 
-[Complexity Risks](Complexity-Risk) are the risks to your project due to its underlying "complexity". <!-- tweet-end --> This section will break down exactly what we mean by complexity, and where it can hide on a software project, and look at some ways in which we can manage this important [risk](Glossary#risk).
+[Complexity Risks](Complexity-Risk) are the [risks](Glossary#risk) to your project due to its underlying "complexity". <!-- tweet-end --> This section will break down exactly what we mean by complexity, and where it can hide on a software project, and look at some ways in which we can manage this important risk.
 
 ## Codebase Risk
 
