@@ -163,7 +163,7 @@ As a tool to battle complexity, we don't just see this in software, but everywhe
  
 The great complexity-reducing mechanism of modularisation is that _you only have to consider your local environment_.  
 
-So, we've looked at some measures of software structure complexity.  We can say "this is more complex than this" for a given piece of code or structure.  We've also looked at two ways to manage it:  [Abstrction](Glosssary#abstraction) and [Modularization](#Hierarchies-and-Modularisation).  However, we've not really said why complexity entails [Risk](Glossary#Attendant-Risk).  So let's address that now by looking at two analogies, [Mass](Complexity-Risk#Complexity-is-mass) and [Technical Debt](Complexity-Risk#technical-debt).  
+So, we've looked at some measures of software structure complexity.  We can say "this is more complex than this" for a given piece of code or structure.  We've also looked at two ways to manage it:  [Abstraction](Glossary#abstraction) and [Modularisation](#Hierarchies-and-Modularisation).  However, we've not really said why complexity entails [Risk](Glossary#Attendant-Risk).  So let's address that now by looking at two analogies, [Mass](Complexity-Risk#Complexity-is-mass) and [Technical Debt](Complexity-Risk#technical-debt).  
 
 ## Complexity is Mass
 
@@ -193,11 +193,11 @@ The most common way we talk about unnecessary complexity in software is as [Tech
 
 Building a low-complexity first-time solution is often a waste:  In the first version, we're usually interested in reducing [Feature RIsk](Feature-Risk) as fast as possible. That is, putting working software in front of users to get [feedback](Meeting-Reality).  We would rather carry [Complexity Risk](Complexity-Risk) than take on more attendant [Schedule Risk](Scarcity-Risk#schedule-risk).
 
-That is, a quick-and-dirty, over-complex implementation mitigates the same [Feature Risk](Feature-Risk) and allows you to [Meet Reality](Meeting-Reality) faster.  
+So a quick-and-dirty, over-complex implementation mitigates the same [Feature Risk](Feature-Risk) and allows you to [Meet Reality](Meeting-Reality) faster.  
 
 ![Complexity Risk and some mitigations](images/generated/risks/complexity/complexity-risk2.png)
 
-Having mitigated the [Feature Risk](Feature-Risk) this way, you are likely exposed to more [Complexity Risk](Complexity-Risk) than you necessarily need.  As the above diagram shows, one of the ways to mitigate [Complexity Risk](Complexity-Risk) is by [Refactoring](https://en.wikipedia.org/wiki/Code_refactoring) the software.  That is, using the tools of abstraction and modularisation. 
+But having mitigated the [Feature Risk](Feature-Risk) this way, you are likely exposed to more [Complexity Risk](Complexity-Risk) than you necessarily need.  As the above diagram shows, one of the ways to mitigate [Complexity Risk](Complexity-Risk) is by [Refactoring](https://en.wikipedia.org/wiki/Code_refactoring) the software.  That is, using the tools of abstraction and modularisation. 
 
 ## Kitchen Analogy
 
