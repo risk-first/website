@@ -46,7 +46,7 @@ function out() {                                      (7 )
 }                                                     (1 )
 ```
 
-With this version, we now have **41 symbols** (**ABCD** is a single symbol, because we could have called it anything).  And with this version:
+With this version, we now have **41 symbols** (`ABCD` is a single symbol - it's just a name).  And with this version:
 
 ```javascript
 const ABCD="ABCD";                                    (11)
