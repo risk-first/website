@@ -236,7 +236,7 @@ Sometimes, feature-creep happens because either managers feel they need to keep 
 
 [Dead-End Risk](Complexity-Risk#dead-end-risk) is where you take an action that you _think_ is useful, only to find out later that actually, it was a dead-end, and your efforts were wasted.  Here, we'll see that [Complexity Risk](Complexity-Risk) is a big cause of this (as the above diagram shows).
 
-For example, imagine a complex software system composed of many sub-systems.  let's say that the Accounting sub-system needed password protection (so you built this).  Then the team realised that you needed a way to _change the password_ (so you built that).   Then, that you needed to have more than one user of the Accounting system so they would all need passwords (OK, fine).  
+For example, imagine a complex software system composed of many sub-systems.  Let's say that the Accounting sub-system needed password protection (so you built this).  Then the team realised that you needed a way to _change the password_ (so you built that).   Then, that you needed to have more than one user of the Accounting system so they would all need passwords (OK, fine).  
 
 Finally, the team realises that actually authentication would be something that all the sub-systems would need, and that it had already been implemented more thoroughly by the Approvals sub-system.   
 
@@ -248,7 +248,7 @@ At this point, you realise you're in a **Dead End**:
 
 > There’s a subtle reason that programmers always want to throw away the code and start over. The reason is that they think the old code is a mess. And here is the interesting observation: they are probably wrong. The reason that they think the old code is a mess is because of a cardinal, fundamental law of programming:  _It’s harder to read code than to write it._    - [Things You Should Never Do, Part 1, _Joel Spolsky_](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)
 
-This is a [Dead End](#dead-end-risk) because with hindsight, it would probably have been better to do authentication in a common way _once_.  But it's hard to see these dead-ends up-front because of the complexity of the choices in front of you.
+Whichever option you choose, this is a [Dead End](#dead-end-risk) because with hindsight, it would probably have been better to do authentication in a common way _once_.  But it's hard to see these dead-ends up-front because of the complexity of the choices in front of you.
  
 Sometimes, the path across the [Risk Landscape](Risk-Landscape) will take you to dead ends, and the only benefit to be gained is experience.  No one deliberately chooses a dead end - often you can take an action that doesn't pay off, but frequently the dead end appears from nowhere:  it's a [Hidden Risk](Glossary#hidden-risk).  The source of a lot of this hidden risk is the complexity of the [risk landscape](Glossary#risk-landscape).
 
