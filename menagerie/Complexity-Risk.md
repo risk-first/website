@@ -8,7 +8,7 @@ We're going to start by looking at _code you write_: the size of your code-base,
 
 ![Complexity Risk and Codebase Risk](images/generated/risks/complexity/complexity-risk.png)
 
-You could think of this as  [Codebase Risk](Complexity-Risk#codebase-risk), being a specific type of [Complexity Risk](Complexity-Risk).  We'll look at three separate measures of codebase complexity and talk about [Technical Debt](Complexity-Risk#technical-debt), before looking at areas in which [Complexity Risk](Complexity-Risk) is at it's greatest.
+You could think of this as  [Codebase Risk](Complexity-Risk#codebase-risk), being a specific type of [Complexity Risk](Complexity-Risk).  We'll look at three separate measures of codebase complexity and talk about [Technical Debt](Complexity-Risk#technical-debt) and [Feature Creep](#feature-creep).
 
 ## Kolmogorov Complexity
 
