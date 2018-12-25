@@ -187,7 +187,7 @@ At a basic level, [Complexity Risk](Complexity-Risk) heavily impacts on [Schedul
 
 ## Technical Debt
 
-The most common way we talk about unnecessary complexity in software is as [Technical Debt](Complexity-Risk#technical-debt):
+The most common way we talk about [Complexity Risk](Complexity-Risk) in software is as [Technical Debt](Complexity-Risk#technical-debt):
 
 > "Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite... The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organisations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise." - [Ward Cunningham, 1992, _Wikipedia: Technical Debt_](https://en.wikipedia.org/wiki/Technical_debt)
 
@@ -197,7 +197,7 @@ So a quick-and-dirty, over-complex implementation mitigates the same [Feature Ri
 
 ![Complexity Risk and some mitigations](images/generated/risks/complexity/complexity-risk2.png)
 
-But having mitigated the [Feature Risk](Feature-Risk) this way, you are likely exposed to more [Complexity Risk](Complexity-Risk) than you necessarily need.  As the above diagram shows, one of the ways to mitigate [Complexity Risk](Complexity-Risk) is by [Refactoring](https://en.wikipedia.org/wiki/Code_refactoring) the software.  That is, using the tools of abstraction and modularisation. 
+But having mitigated the [Feature Risk](Feature-Risk) this way, you are likely exposed to more [Complexity Risk](Complexity-Risk) than you necessarily need.  As the above diagram shows, one of the ways to mitigate [Complexity Risk](Complexity-Risk) is by [Refactoring](https://en.wikipedia.org/wiki/Code_refactoring) the software, which means using the tools of abstraction and modularisation. 
 
 ## Kitchen Analogy
 
