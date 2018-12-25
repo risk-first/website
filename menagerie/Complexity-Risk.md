@@ -291,7 +291,7 @@ Although type checking helps mitigate [Protocol Risk](Communication-Risk#protoco
 
 ### Concurrency / Mutability
 
-Although modern languages include plenty of concurrency primitives, (such as the [java.util.concurrent](https://docs.oracle.com/javase/9/docs/api/java/util/concurrent/package-summary.html) libraries), concurrency is _still_ hard to get right.  
+Although modern languages include plenty of concurrency primitives (such as the [java.util.concurrent](https://docs.oracle.com/javase/9/docs/api/java/util/concurrent/package-summary.html) libraries), concurrency is _still_ hard to get right.  
 
 [Race conditions](https://en.wikipedia.org/wiki/Race_condition) and [Deadlocks](https://en.wikipedia.org/wiki/Deadlock) abound in over-complicated concurrency designs:  complexity issues are magnified by concurrency concerns, and are also hard to test and debug.  
 
