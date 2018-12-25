@@ -234,7 +234,7 @@ Sometimes, feature-creep happens because either managers feel they need to keep 
 
 ![Dead-End Risk](images/generated/risks/complexity/dead-end-risk.png) 
 
-[Dead-End Risk](Complexity-Risk#dead-end-risk) is where you take an action that you _think_ is useful, only to find out later that actually, it was a dead-end, and your efforts were wasted.  Here, we'll see that (as the above diagram shows) [Complexity Risk](Complexity-Risk) is a big cause of this.
+[Dead-End Risk](Complexity-Risk#dead-end-risk) is where you take an action that you _think_ is useful, only to find out later that actually, it was a dead-end, and your efforts were wasted.  Here, we'll see that [Complexity Risk](Complexity-Risk) is a big cause of this (as the above diagram shows).
 
 For example, imagine a complex software system composed of many sub-systems.  let's say that the Accounting sub-system needed password protection (so you built this).  Then the team realised that you needed a way to _change the password_ (so you built that).   Then, that you needed to have more than one user of the Accounting system so they would all need passwords (OK, fine).  
 
