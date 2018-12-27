@@ -48,7 +48,7 @@ public class Tweeter {
 		potentialRetweets.addAll(retweets);
 
 		RetweetSource searchSource = new SavedSearchRetweetSource(twitter);
-		retweets = searchSource.getRandomTweets(amount("searches", 2));
+		retweets = searchSource.getRandomTweets(amount("searches", 4));
 		potentialRetweets.addAll(retweets);
 		
 		for (StatusUpdate statusUpdate : potentialTweets) {
