@@ -46,6 +46,6 @@ public class ArticleTweetSource extends AbstractRiskFirstWikiTweetSource {
 				link -> sb.append(link.getText()+" ("+baseUri.toString()+link.getUrl()+")"), 
 				t ->sb.append(t), a);
 		 
-		return sb.toString()+randomHashtags(2);
+		return sb.toString()+suffix(2);
 	}
 }
