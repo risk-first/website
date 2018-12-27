@@ -34,7 +34,7 @@ public class ImageTweetSource extends AbstractRiskFirstWikiTweetSource implement
 	
 	private StatusUpdate convertToStatusUpdate(Link l) {
 		String articleUrl = l.getArticle().getUrl(baseUri.toString());
-		StatusUpdate out = new StatusUpdate("\""+ l.getText()+"\" "+randomHashtags(4)+"- from "+articleUrl+" ");
+		StatusUpdate out = new StatusUpdate("\""+ l.getText()+"\" "+suffix(4)+"- from "+articleUrl+" ");
 		
 		out.setMedia(getImageFile(l.getUrl()));
 		return out;
