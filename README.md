@@ -27,7 +27,8 @@ The book aims to develop a _Pattern Language_ for understanding software risk, a
 
 ![Cover Image](images/Cover_Book_image.jpg)
 
-Available to order on Amazon soon...
+- [Pre-Order Kindle Edition on Amazon](http://a.co/d/hmpmYl2)
+- Print Edition available 21st Feb 2019
 
 
  
