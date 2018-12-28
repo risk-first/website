@@ -76,6 +76,8 @@ This part is a discussion of the different practices within Software Development
  - [On-Site-Customer](On-Site-Customer)
  - [Prioritisation](Prioritisation)
  - [Requirements Capture](Requirements-Capture)
+ - Real Options
+ - Research Spike
  - Review
  - Standards
  - Support
