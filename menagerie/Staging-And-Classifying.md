@@ -1,4 +1,4 @@
-![Under Construction](images/state/uc.png)
+![For Review](images/state/for-review.png)
 
 Our tour is complete.  
 

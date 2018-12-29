@@ -4,7 +4,7 @@ In [All Risk Management](All-Risk-Management) we made the case that [any action 
 
 Therefore, it stands to reason that software methodologies are all about risk management too.  Since they are prescribing a particular day-to-day process, or set of actions to take, they are also prescribing a particular approach to managing the risks on the project.  
 
-Back in the [Development Process](Development-Process) section, we introduced an example software methodology that a development team might follow when building software.  It included steps like _analysis_, _coding_ and _testing_.  And, we looked at how each of these actions reduces risk in the software delivery process.  
+Back in the [Development Process](Development-Process) section, we introduced a toy software methodology that a development team might follow when building software.  It included steps like _analysis_, _coding_ and _testing_.  And, we looked at how each of these actions reduces risk in the software delivery process.  
 
 We looked at how following a process would expose risks that might be hidden to the members of the team:  it doesn't matter if a developer doesn't know that he's going to break "Feature Y", because the _Integration Testing_ part of the process will mitigate this risk in the testing stage, rather than in production (where it becomes more expensive).  
 
