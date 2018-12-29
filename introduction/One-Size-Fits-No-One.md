@@ -1,14 +1,22 @@
-![Under Construction](images/state/uc.png)
+![For Review](images/state/uc.png)
 
-In [All Risk Management](All-Risk-Management) we made the case that [any action you take](Glossary#taking-action) on a software project is to do with managing risk, and the last section, [A Conversation](A-Conversation) was an example of this happening. 
+Why are [Software Methodologies](https://en.wikipedia.org/wiki/Software_development_process) all different? 
+
+In [All Risk Management](All-Risk-Management) we made the case that [any action you take](Glossary#taking-action) on a software project is to do with managing [risk](Glossary#risk), and the last section, [A Conversation](A-Conversation) was an example of this happening. 
 
 Therefore, it stands to reason that software methodologies are all about risk management too.  Since they are prescribing a particular day-to-day process, or set of actions to take, they are also prescribing a particular approach to managing the risks on the project.  
 
-Back in the [Development Process](Development-Process) section, we introduced a toy software methodology that a development team might follow when building software.  It included steps like _analysis_, _coding_ and _testing_.  And, we looked at how each of these actions reduces risk in the software delivery process.  
+## Why Have a Methodology At All?
 
-We looked at how following a process would expose risks that might be hidden to the members of the team:  it doesn't matter if a developer doesn't know that he's going to break "Feature Y", because the _Integration Testing_ part of the process will mitigate this risk in the testing stage, rather than in production (where it becomes more expensive).  
+Back in the [Development Process](Development-Process) section, we introduced a toy software methodology that a development team might follow when building software.  It included steps like _analysis_, _coding_ and _testing_.  And, we looked at how the purpose of each of these actions was to manage risk in the software delivery process.  
 
-In this section, we're going to have a brief look at some different software methodologies, and see how different methodologies prioritise different risks.
+For example, it doesn't matter if a developer doesn't know that he's going to break "Feature Y", because the _Integration Testing_ part of the methodology will expose this [hidden risk](Glossary#hidden-risk) in the testing stage, rather than in let it surface in production (where it becomes more expensive).  
+
+But, following a methodology means that you are trusting something _other_ than your own judgement to make decisions on what actions to take: perhaps the methodology recommends some activity which wastes time, money or introduces some new risk?
+
+So following a software methodology is therefore an act of _trust_.  But why should we place trust in any _one_ methodology, given there are so many alternatives, and they all recommend different actions?  Should there not be more agreement between them, and if not, why not?
+
+In this section, we're going to have a brief look at some different software methodologies, and try to explain why they are different.
 
 ## Waterfall
 
