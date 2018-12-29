@@ -16,7 +16,7 @@ But, following a methodology means that you are trusting something _other_ than 
 
 So following a software methodology is therefore an act of _trust_.  But why should we place trust in any _one_ methodology, given there are so many alternatives, and they all recommend different actions?  Should there not be more agreement between them, and if not, why not?
 
-In this section, we're going to have a brief look at some different software methodologies, and try to explain why they are different.
+In this section, we're going to have a brief look at some different software methodologies, and try to explain why they are different.  Let's start with Waterfall.
 
 ## Waterfall
 
@@ -53,13 +53,15 @@ As you can see in the diagram above, some of the risks on the left _are the same
 
 > "Software crisis is a term used in the early days of computing science for the difficulty of writing useful and efficient computer programs in the required time...   The software crisis was due to the rapid increases in computer power and the complexity of the problems that could not be tackled. " - [Software Crisis, _Wikipedia_](https://en.wikipedia.org/wiki/Software_crisis)
 
-## Alternative Methodologies
+## Agile
 
 The software crisis showed that, a lot of the time, up-front requirements-capture, specification and fixed-price bids did little to manage risk on software projects.  So it's not surprising that by the 1990's, various different groups of software engineers were advocating "Agile" techniques, which did away with these actions.
 
 ![Risks, and the practices that manage them in Extreme Programming](images/generated/introduction/xp.png)
 
 In [Extreme Programming Explained](http://amzn.eu/d/1vSqAWa), Kent Beck breaks down his methodology, Extreme Programming, listing the risks he wants to address and the actions he proposes to address them with.  The diagram above summarises the main risks and actions he talks about.   These are _different_ risks to those addressed by Waterfall, and unsurprisingly, this leads to different actions too.
+
+## Different Methodologies For Different Risks
 
 Here are some high-level differences we see in some other popular methodologies:
 
