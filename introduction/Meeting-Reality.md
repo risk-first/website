@@ -8,13 +8,13 @@ In [A Simple Scenario](A-Simple-Scenario), we looked at a basic model for how **
 
 And, in [Development Process](Development-Process) we looked at how we can meet with reality in _different forms_:  Analysis, Testing, Integration and so on, and saw how the model could work in each stage of a project.
 
-It should be no surprise to see that there is a _recursive_ nature about this:   The actions we take each day have consequences:  they expose new [hidden risks](Glossary#hidden-risk)**, which inform our [Internal Model](Glossary#Internal-Model), and at the same time, they change reality in some way.  As a result, we then have to take _new actions_ to deal with these new risks.  
+It should be no surprise to see that there is a _recursive_ nature about this:   The actions we take each day have consequences:  they expose new [hidden risks](Glossary#hidden-risk), which inform our [Internal Model](Glossary#Internal-Model), and at the same time, they change reality in some way.  As a result, we then have to take _new actions_ to deal with these new risks.  
 
 So, let's see how this kind of recursion looks on our model.
 
 ![Taking actions changes reality, but changes your model of the risks too](images/generated/introduction/model_vs_reality_2.png).
 
-## "Navigating the [Risk Landscape](Risk-Landscape)"
+## Navigating the "[Risk Landscape](Risk-Landscape)"
 
 The diagram above shows _just one possible action_, in reality, you'll have choices.  We often have multiple ways of achieving a [Goal In Mind](Glossary#Goal-In-Mind).  
 
@@ -38,7 +38,7 @@ For example, _automating processes_ is very tempting: it _should_ save time, and
 
 ### Another Example: MongoDB
 
-On a recent project in a Bank, we had a requirement to store a modest amount of data and we needed to be able to retrieve it fast.  The developer chose to use [MongoDB](https://www.mongodb.com) for this.  At the time, others pointed out that other teams in the bank had had lots of difficulty deploying MongoDB internally, due to licensing issues and other factors internal to the bank.
+On a recent project in a bank, we had a requirement to store a modest amount of data and we needed to be able to retrieve it fast.  The developer chose to use [MongoDB](https://www.mongodb.com) for this.  At the time, others pointed out that other teams in the bank had had lots of difficulty deploying MongoDB internally, due to licensing issues and other factors internal to the bank.
 
 Other options were available, but the developer chose MongoDB because of their _existing familiarity_ with it:   therefore, they felt that the [Hidden Risks](Glossary#hidden-risk) of MongoDB were _lower_ than the other options, and disregarded the others' opinions.
 
@@ -50,7 +50,7 @@ This is not a criticism of MongoDB: it's simply a demonstration that sometimes, 
 
 We can't know in advance how well any action we take will work out.  Therefore, [Taking Action](Glossary#taking-action) is a lot like placing a bet.  
 
-**[Pay Off](Glossary#pay-off)** then is our judgement about whether we expect an action to be worthwhile:  Are the risks we escape _worth_ the attendant risks we will encounter?  We should be able to _weigh these separate risks in our hands_ and figure out whether the (Glossary#pay-off) makes a given [Action](Glossary#taking-action) worthwhile.  
+**[Pay Off](Glossary#pay-off)** then is our judgement about whether we expect an action to be worthwhile:  Are the risks we escape _worth_ the attendant risks we will encounter?  We should be able to _weigh these separate risks in our hands_ and figure out whether the [Pay off](Glossary#pay-off) makes a given [Action](Glossary#taking-action) worthwhile.  
 
 The fruits of this gambling are revealed when we [meet reality](Glossary#meet-reality), and we can see whether our bets were worthwhile. 
 
