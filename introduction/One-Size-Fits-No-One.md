@@ -107,8 +107,8 @@ There is value in adopting a methodology as a complete collection of processes: 
 
 It's nice to lay the blame somewhere else.  But, if we genuinely care about our projects, then it's critical that we match the choice of methodology to the risk profile of the project.  We need to understand exactly what risks our methodology will help us with, and which it won't; where it is appropriate, and where it isn't.
 
-An off-the-shelf methodology is unlikely to fit the risks of our project exactly.  Sometimes, we need to break down methodologies into their component practices, and apply just the practices we need.  This requires a much more fine-grained understanding of how the practices work, and what they bring.  
-
 > "Given any rule, however 'fundamental' or 'necessary' for science, there are always circumstances when it is advisable not only to ignore the rule, but to adopt its opposite." - [Paul Feyerabend](https://www.azquotes.com/author/4773-Paul_Feyerabend)
+
+An off-the-shelf methodology is unlikely to fit the risks of our project exactly.  Sometimes, we need to break down methodologies into their component practices, and apply just the practices we need.  This requires a much more fine-grained understanding of how the practices work, and what they bring.  
 
 So different methodologies advocate different practices, and different practices manage different risks.   If we want to understand methodologies, or even choose the right practices from one, we really need to understand the _types of risks_ we face on software projects.  This is where we go next in [Part 2](Risk-Landscape). 
