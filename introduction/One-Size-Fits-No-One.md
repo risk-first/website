@@ -6,11 +6,11 @@ Why are [Software Methodologies](https://en.wikipedia.org/wiki/Software_developm
 
 Therefore, it stands to reason that software methodologies are all about handling risk too.  Since they are prescribing a particular day-to-day process, or set of actions to take, they are also prescribing a particular approach to managing the risks on software projects.  
 
-## Why Have a Methodology At All?
+## Methodologies Surface Hidden Risks...
 
-Back in the [Development Process](Development-Process) section, we introduced a toy software methodology that a development team might follow when building software.  It included steps like _analysis_, _coding_ and _testing_.  And, we looked at how the purpose of each of these actions was to manage risk in the software delivery process.  
+Back in the [Development Process](Development-Process) section, we introduced a toy software methodology that a development team might follow when building software.  It included steps like _analysis_, _coding_ and _testing_.  And, we looked at how the purpose of each of these actions was to manage risk in the software delivery process.  For example, it doesn't matter if a developer doesn't know that he's going to break "Feature Y", because the _Integration Testing_ part of the methodology will expose this [hidden risk](Glossary#hidden-risk) in the testing stage, rather than in let it surface in production (where it becomes more expensive).  
 
-For example, it doesn't matter if a developer doesn't know that he's going to break "Feature Y", because the _Integration Testing_ part of the methodology will expose this [hidden risk](Glossary#hidden-risk) in the testing stage, rather than in let it surface in production (where it becomes more expensive).  
+### ... But Replace Judgement
 
 But, following a methodology means that you are trusting something _other_ than your own judgement to make decisions on what actions to take: perhaps the methodology recommends some activity which wastes time, money or introduces some new risk?
 
@@ -97,7 +97,7 @@ When we [take action](Glossary#taking-action) according to a methodology, we exp
 
  - Equally, regulatory projects often require big, up-front, waterfall-style design:  keeping regulators happy is often about showing that you have a well-planned path to achieving the regulation.  Often, the changes need to be reviewed and approved by regulators and other stakeholders in advance of their implementation.  This can't be done with an approach of "iterate for a few months".  
 
- - At the other end of the spectrum, [Facebook used to have](https://mashable.com/2014/04/30/facebooks-new-mantra-move-fast-with-stability/?europe=true) an approach of "move fast and break things".  This may have been optimal when they were trying mitigate the risk of being out-innovated by competitors within the fast-evolving sphere of social networking. 
+ - At the other end of the spectrum, [Facebook used to have](https://mashable.com/2014/04/30/facebooks-new-mantra-move-fast-with-stability/?europe=true) an approach of "move fast and break things".  This may have been optimal when they were trying mitigate the risk of being out-innovated by competitors within the fast-evolving sphere of social networking.  _Used to have_, because now they have modified this to ["move fast with stable infrastructure"](https://www.cnet.com/news/zuckerberg-move-fast-and-break-things-isnt-how-we-operate-anymore/), perhaps as a reflection of the fact that their biggest risk isn't competition, but bad publicity.    
 
 ## Choosing A Methodology
 
