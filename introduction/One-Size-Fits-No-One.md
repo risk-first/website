@@ -10,7 +10,7 @@ Therefore, it stands to reason that software methodologies are all about handlin
 
 Back in the [Development Process](Development-Process) section, we introduced a toy software methodology that a development team might follow when building software.  It included steps like _analysis_, _coding_ and _testing_.  And, we looked at how the purpose of each of these actions was to manage risk in the software delivery process.  For example, it doesn't matter if a developer doesn't know that he's going to break "Feature Y", because the _Integration Testing_ part of the methodology will expose this [hidden risk](Glossary#hidden-risk) in the testing stage, rather than in let it surface in production (where it becomes more expensive).  
 
-### ... But Replace Judgement
+## ... But Replace Judgement
 
 But, following a methodology means that you are trusting something _other_ than your own judgement to make decisions on what actions to take: perhaps the methodology recommends some activity which wastes time, money or introduces some new risk?
 
