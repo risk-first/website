@@ -111,6 +111,6 @@ It's nice to lay the blame somewhere else.  But, if we genuinely care about our 
 
 An off-the-shelf methodology is unlikely to fit the risks of any project exactly.  Sometimes, we need to break down methodologies into their component practices, and apply just the practices we need.  This requires a much more fine-grained understanding of how the individual practices work, and what they bring.  
 
-[Methodologies, Actions, Risks, Goals](images/generated/executive-summary/pattern_language.png)
+![Methodologies, Actions, Risks, Goals](images/generated/executive-summary/pattern_language.png)
 
 As the above diagram shows, different methodologies advocate different practices, and different practices manage different risks.   If we want to understand methodologies, or even choose the right practices from one, we really need to understand the _types of risks_ we face on software projects.  This is where we go next in [Part 2](Risk-Landscape). 
