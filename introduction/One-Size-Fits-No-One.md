@@ -2,9 +2,9 @@
 
 Why are [Software Methodologies](https://en.wikipedia.org/wiki/Software_development_process) all different? 
 
-In [All Risk Management](All-Risk-Management) we made the case that [any action you take](Glossary#taking-action) on a software project is to do with managing [risk](Glossary#risk), and the last section, [A Conversation](A-Conversation) was an example of this happening. 
+[Previously](All-Risk-Management), we made the case that [any action you take](Glossary#taking-action) on a software project is to do with managing [risk](Glossary#risk), and the last section, [A Conversation](A-Conversation) was an example of this happening. 
 
-Therefore, it stands to reason that software methodologies are all about risk management too.  Since they are prescribing a particular day-to-day process, or set of actions to take, they are also prescribing a particular approach to managing the risks on the project.  
+Therefore, it stands to reason that software methodologies are all about handling risk too.  Since they are prescribing a particular day-to-day process, or set of actions to take, they are also prescribing a particular approach to managing the risks on software projects.  
 
 ## Why Have a Methodology At All?
 
@@ -14,9 +14,13 @@ For example, it doesn't matter if a developer doesn't know that he's going to br
 
 But, following a methodology means that you are trusting something _other_ than your own judgement to make decisions on what actions to take: perhaps the methodology recommends some activity which wastes time, money or introduces some new risk?
 
-So following a software methodology is therefore an act of _trust_.  But why should we place trust in any _one_ methodology, given there are so many alternatives, and they all recommend different actions?  Should there not be more agreement between them, and if not, why not?
+Following a software methodology is therefore an act of _trust_:  
 
-In this section, we're going to have a brief look at some different software methodologies, and try to explain why they are different.  Let's start with Waterfall.
+- Why should we place trust in any _one_ methodology, given there are so many alternatives?  
+- Should there not be more agreement between them, and if not, why not?
+- How can a methodology _possibly_ take into account the risks on _my_ project?
+
+In this section, we're going to have a brief look at some different software methodologies, and try to explain _why_ they are different.  Let's start with Waterfall.
 
 ## Waterfall
 
@@ -38,6 +42,8 @@ Because Waterfall methodologies are borrowed from _the construction industry_, t
 ![Waterfall, Specifications and Requirements Capture](images/generated/introduction/waterfall2.png)
 
 Construction projects are often done by tender.  This means that the supplier will bid for the job of completing the project, and deliver it to a fixed price.   This is a risk-management strategy for the client:  they are transferring the risk of construction difficulties to the supplier, and avoiding the [Agency Risk](Agency-Risk) that the supplier will "pad" the project and take longer to implement it than necessary, charging them more in the process.  In order for this to work, both sides need to have a fairly close understanding of what will be delivered, and this is why a specification is created.
+
+### The Wrong Risks?
 
 In a construction scenario, this makes a lot of sense.  But, _software projects are not the same as building projects_.  There are two key criticisms of the Waterfall approach when applied to software:  
 
@@ -67,11 +73,13 @@ Here are some high-level differences we see in some other popular methodologies:
 
  - **[Lean Software Development](https://en.wikipedia.org/wiki/Lean_software_development)**: While Waterfall borrows from risk management techniques in the construction industry, Lean Software Development applies the principles from [Lean Manufacturing](https://en.wikipedia.org/wiki/Lean_manufacturing), which was developed at Toyota in the last century.  Lean takes the view that the biggest risk in manufacturing is from _waste_, where waste is inventory, over-production, work-in-progress, time spent waiting or defects in production.  Applying this approach to software means minimising work-in-progress, frequent releases and continuous improvement.  
 
- - **[Project Management Body Of Knowledge (PMBoK)](https://en.wikipedia.org/wiki/Project_Management_Body_of_Knowledge)**:  This is a formalisation of traditional project management practice.  It prescribes best practices for managing scope, schedule, resources, communications, dependencies, stakeholders etc. on a project.  Although "risk" is seen as a separate entity to be managed, all of the above areas are sources of risk within a project, as we will see in Part 2.
+ - **[Project Management Body Of Knowledge (PMBoK)](https://en.wikipedia.org/wiki/Project_Management_Body_of_Knowledge)**:  This is a formalisation of traditional project management practice.  It prescribes best practices for managing scope, schedule, resources, communications, dependencies, stakeholders etc. on a project.  Although "risk" is seen as a separate entity to be managed, all of the above areas are sources of risk within a project, as we will see in [Part 2](PMBoK).
 
- - **[Scrum](https://en.wikipedia.org/wiki/Scrum)**: Is a popular Agile methodology.  Arguably, it is less "extreme" than Extreme Programming, as it promotes a limited set, more achievable set of agile practices, such as frequent releases, daily meetings, a product owner and retrospectives.  This simplicity arguably makes it [simpler to learn and adapt to](Communication-Risk#learning-curve-risk) and probably contributes to Scrum's popularity over XP.  
+ - **[Scrum](https://en.wikipedia.org/wiki/Scrum)**: Is a popular Agile methodology.  Arguably, it is less "extreme" than Extreme Programming, as it promotes a limited set, more achievable set of agile practices, such as frequent releases, daily meetings, a product owner and retrospectives.  This simplicity arguably makes it [simpler to learn and adapt to](Communication-Risk#learning-curve-risk) and probably contributes to Scrum's popularity over XP. 
  
  - **[DevOps](https://en.wikipedia.org/wiki/DevOps)**: Many software systems struggle at the boundary between "in development" and "in production".  DevOps is an acknowledgement of this, and is about more closely aligning the feedback loops between the developers and the production system.  It champions activities such as continuous deployment, automated releases and automated monitoring.
+
+While this is a limited set of examples, you should be able to observe that the [actions](Glossary#take-action) promoted by a methodology are contingent on the risks it considers important.
 
 ## Effectiveness
 
@@ -80,23 +88,27 @@ Here are some high-level differences we see in some other popular methodologies:
 The promise of any methodology is that it will help you manage certain [Hidden Risks](Glossary#hidden-risk).  But this comes at the expense of the _effort_ you put into the practices of the methodology.  As we've said many times, a lot of the problems on a software project are [Hidden Risks](Glossary#hidden-risk), and so there is an act of faith here:  we are following a methodology because it purports to avoid risks we don't actually know about.
 
 A methodology offers us a route through the [Risk Landscape](Glossary#risk-landscape), based on the risks that the designers of the methodology care about.  When we use the methodology, it means that we are baking into our behaviour actions to avoid those risks.  
+
+### Methodological Failure
  
 When we [take action](Glossary#taking-action) according to a methodology, we expect the [Pay-Off](Glossary#pay-off), and if this doesn't materialise, then we feel the methodology is failing us.   But it could just be that it is inappropriate to the _type of project_ we are running.  Our [Risk Landscape](Glossary#risk-landscape) may not be the one the designers of the methodology envisaged.   For example:
 
- - NASA can't do Agile when launching space craft:  there's no two-weekly launch that they can iterate over, and the the risks of losing a rocket or satellite are simply too great to allow for iteration in production.   The risk profile is just all wrong for Agile: you need to manage the risk of _losing hardware_ over the risk of _requirements changing_.  
+ - [NASA](https://standards.nasa.gov/standard/nasa/nasa-std-87398) don't follow an agile methodology when launching space craft:  there's no two-weekly launch that they can iterate over, and the the risks of losing a rocket or satellite are simply too great to allow for iteration in production.   The risk profile is just all wrong: you need to manage the risk of _losing hardware_ over the risk of _requirements changing_.  
 
- - Equally, regulatory projects often require big, up-front, waterfall-style design:  keeping regulators happy is often about showing  that you have a well-planned path to achieving the regulation.  Often, the changes need to be reviewed and approved by regulators and other stakeholders in advance of their implementation.  This can't be done with an approach of "iterate for a few months".  
+ - Equally, regulatory projects often require big, up-front, waterfall-style design:  keeping regulators happy is often about showing that you have a well-planned path to achieving the regulation.  Often, the changes need to be reviewed and approved by regulators and other stakeholders in advance of their implementation.  This can't be done with an approach of "iterate for a few months".  
 
  - At the other end of the spectrum, [Facebook used to have](https://mashable.com/2014/04/30/facebooks-new-mantra-move-fast-with-stability/?europe=true) an approach of "move fast and break things".  This may have been optimal when they were trying mitigate the risk of being out-innovated by competitors within the fast-evolving sphere of social networking. 
- 
-![Inappropriate Methodologies create their own risks](images/generated/introduction/one_size.png)
 
 ## Choosing A Methodology
 
-There is value in adopting a methodology as a complete collection of processes:  Choosing a methodology (or any process) reduces the amount of thinking individuals have to do.  Following a process may avoid the risks, whether the implementer knows about them or not.  And, it becomes the process that is responsible for failure, not the individual (as shown in the above diagram).  
+![Inappropriate Methodologies create their own risks](images/generated/introduction/one_size.png)
 
-If we genuinely care about our projects, then it's critical that we match the choice of methodology to the risk profile of the project.  We need to understand exactly what risks our methodology will help us with, and which it won't; where it is appropriate, and where it isn't.
+There is value in adopting a methodology as a complete collection of processes:  Choosing a methodology (or any process) reduces the amount of thinking individuals have to do, and it becomes _the process_ that is responsible for failure, not the individual (as shown in the above diagram).  
+
+It's nice to lay the blame somewhere else.  But, if we genuinely care about our projects, then it's critical that we match the choice of methodology to the risk profile of the project.  We need to understand exactly what risks our methodology will help us with, and which it won't; where it is appropriate, and where it isn't.
 
 An off-the-shelf methodology is unlikely to fit the risks of our project exactly.  Sometimes, we need to break down methodologies into their component practices, and apply just the practices we need.  This requires a much more fine-grained understanding of how the practices work, and what they bring.  
+
+> "Given any rule, however 'fundamental' or 'necessary' for science, there are always circumstances when it is advisable not only to ignore the rule, but to adopt its opposite." - [Paul Feyerabend](https://www.azquotes.com/author/4773-Paul_Feyerabend)
 
 So different methodologies advocate different practices, and different practices manage different risks.   If we want to understand methodologies, or even choose the right practices from one, we really need to understand the _types of risks_ we face on software projects.  This is where we go next in [Part 2](Risk-Landscape). 
