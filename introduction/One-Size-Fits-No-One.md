@@ -61,7 +61,7 @@ As you can see in the diagram above, some of the risks on the left _are the same
 
 ## Agile
 
-The software crisis showed that, a lot of the time, up-front requirements-capture, specification and fixed-price bids did little to manage risk on software projects.  So it's not surprising that by the 1990's, various different groups of software engineers were advocating "Agile" techniques, which did away with these actions.
+The Software Crisis showed that, a lot of the time, up-front requirements-capture, specification and fixed-price bids did little to manage cost and schedule risks on software projects.  So it's not surprising that by the 1990's, various different groups of software engineers were advocating "Agile" techniques, which did away with those actions.
 
 ![Risks, and the practices that manage them in Extreme Programming](images/generated/introduction/xp.png)
 
@@ -77,7 +77,7 @@ Here are some high-level differences we see in some other popular methodologies:
 
  - **[Scrum](https://en.wikipedia.org/wiki/Scrum)**: Is a popular Agile methodology.  Arguably, it is less "extreme" than Extreme Programming, as it promotes a limited set, more achievable set of agile practices, such as frequent releases, daily meetings, a product owner and retrospectives.  This simplicity arguably makes it [simpler to learn and adapt to](Communication-Risk#learning-curve-risk) and probably contributes to Scrum's popularity over XP. 
  
- - **[DevOps](https://en.wikipedia.org/wiki/DevOps)**: Many software systems struggle at the boundary between "in development" and "in production".  DevOps is an acknowledgement of this, and is about more closely aligning the feedback loops between the developers and the production system.  It champions activities such as continuous deployment, automated releases and automated monitoring.
+ - **[DevOps](https://en.wikipedia.org/wiki/DevOps)**: Many software systems struggle at the [boundary](Boundary-Risk) between "in development" and "in production".  DevOps is an acknowledgement of this, and is about more closely aligning the feedback loops between the developers and the production system.  It champions activities such as continuous deployment, automated releases and automated monitoring.
 
 While this is a limited set of examples, you should be able to observe that the [actions](Glossary#take-action) promoted by a methodology are contingent on the risks it considers important.
 
@@ -85,19 +85,19 @@ While this is a limited set of examples, you should be able to observe that the 
 
 > "All methodologies are based on fear.  You try to set up habits to prevent your fears from becoming reality." - [Extreme Programming Explained, _Kent Beck_](http://amzn.eu/d/1vSqAWa)
 
-The promise of any methodology is that it will help you manage certain [Hidden Risks](Glossary#hidden-risk).  But this comes at the expense of the _effort_ you put into the practices of the methodology.  As we've said many times, a lot of the problems on a software project are [Hidden Risks](Glossary#hidden-risk), and so there is an act of faith here:  we are following a methodology because it purports to avoid risks we don't actually know about.
+The promise of any methodology is that it will help you manage certain [Hidden Risks](Glossary#hidden-risk).  But this comes at the expense of the _effort_ you put into the practices of the methodology. 
 
 A methodology offers us a route through the [Risk Landscape](Glossary#risk-landscape), based on the risks that the designers of the methodology care about.  When we use the methodology, it means that we are baking into our behaviour actions to avoid those risks.  
 
 ### Methodological Failure
  
-When we [take action](Glossary#taking-action) according to a methodology, we expect the [Pay-Off](Glossary#pay-off), and if this doesn't materialise, then we feel the methodology is failing us.   But it could just be that it is inappropriate to the _type of project_ we are running.  Our [Risk Landscape](Glossary#risk-landscape) may not be the one the designers of the methodology envisaged.   For example:
+When we [take action](Glossary#taking-action) according to a methodology, we expect the [Pay-Off](Glossary#pay-off), and if this doesn't materialise, then we feel the methodology is failing us.   It could just be that it is inappropriate to the _type of project_ we are running.  Our [Risk Landscape](Glossary#risk-landscape) may not be the one the designers of the methodology envisaged.   For example:
 
- - [NASA](https://standards.nasa.gov/standard/nasa/nasa-std-87398) don't follow an agile methodology when launching space craft:  there's no two-weekly launch that they can iterate over, and the the risks of losing a rocket or satellite are simply too great to allow for iteration in production.   The risk profile is just all wrong: you need to manage the risk of _losing hardware_ over the risk of _requirements changing_.  
+ - NASA [don't follow an agile methodology](https://standards.nasa.gov/standard/nasa/nasa-std-87398) when launching space craft:  there's no two-weekly launch that they can iterate over, and the the risks of losing a rocket or satellite are simply too great to allow for iteration in production.   The risk profile is just all wrong: you need to manage the risk of _losing hardware_ over the risk of _requirements changing_.  
 
  - Equally, regulatory projects often require big, up-front, waterfall-style design:  keeping regulators happy is often about showing that you have a well-planned path to achieving the regulation.  Often, the changes need to be reviewed and approved by regulators and other stakeholders in advance of their implementation.  This can't be done with an approach of "iterate for a few months".  
 
- - At the other end of the spectrum, [Facebook used to have](https://mashable.com/2014/04/30/facebooks-new-mantra-move-fast-with-stability/?europe=true) an approach of "move fast and break things".  This may have been optimal when they were trying mitigate the risk of being out-innovated by competitors within the fast-evolving sphere of social networking.  _Used to have_, because now they have modified this to ["move fast with stable infrastructure"](https://www.cnet.com/news/zuckerberg-move-fast-and-break-things-isnt-how-we-operate-anymore/), perhaps as a reflection of the fact that their biggest risk isn't competition, but bad publicity.    
+ - At the other end of the spectrum, [Facebook used to have](https://mashable.com/2014/04/30/facebooks-new-mantra-move-fast-with-stability/?europe=true) an approach of "move fast and break things".  This may have been optimal when they were trying mitigate the risk of being out-innovated by competitors within the fast-evolving sphere of social networking.  _Used to have_, because now they have modified this to ["move fast with stable infrastructure"](https://www.cnet.com/news/zuckerberg-move-fast-and-break-things-isnt-how-we-operate-anymore/), perhaps as a reflection of the fact that their biggest risk is no longer competition, but bad publicity.    
 
 ## Choosing A Methodology
 
@@ -109,6 +109,8 @@ It's nice to lay the blame somewhere else.  But, if we genuinely care about our 
 
 > "Given any rule, however 'fundamental' or 'necessary' for science, there are always circumstances when it is advisable not only to ignore the rule, but to adopt its opposite." - [Paul Feyerabend](https://www.azquotes.com/author/4773-Paul_Feyerabend)
 
-An off-the-shelf methodology is unlikely to fit the risks of our project exactly.  Sometimes, we need to break down methodologies into their component practices, and apply just the practices we need.  This requires a much more fine-grained understanding of how the practices work, and what they bring.  
+An off-the-shelf methodology is unlikely to fit the risks of any project exactly.  Sometimes, we need to break down methodologies into their component practices, and apply just the practices we need.  This requires a much more fine-grained understanding of how the individual practices work, and what they bring.  
 
-So different methodologies advocate different practices, and different practices manage different risks.   If we want to understand methodologies, or even choose the right practices from one, we really need to understand the _types of risks_ we face on software projects.  This is where we go next in [Part 2](Risk-Landscape). 
+[Methodologies, Actions, Risks, Goals](images/generated/executive-summary/pattern_language.png)
+
+As the above diagram shows, different methodologies advocate different practices, and different practices manage different risks.   If we want to understand methodologies, or even choose the right practices from one, we really need to understand the _types of risks_ we face on software projects.  This is where we go next in [Part 2](Risk-Landscape). 
