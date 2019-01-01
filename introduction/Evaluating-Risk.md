@@ -194,7 +194,7 @@ Enough with the numbers and the theory:  Risk-First is an attempt to provide a p
 - First, there isn't enough scientific evidence for an approach like this.  We _can_ look at collected data about IT projects, but techniques and tools advance rapidly.
 - Second,  IT projects have too many confounding factors, such as experience of the teams, 
 technologies used etc.  That is, the risks faced by IT projects are _too diverse_ and _hard to quantify_ to allow for meaningful comparison from one to the next.
-- Third, as soon as you _publish a date_ it changes the expectations of the project (see [Student Syndrome](Scarcity-Risk#schedule-risk)).
+- Third, as soon as you _publish a date_ it changes the expectations of the project (see [Student Syndrome](Scarcity-Risk#student-syndrome)).
 - Fourth, metrics get [misused](Map-And-Territory-Risk) and [gamed](Agency-Risk) (as we will see in a later chapter).
 
 Reality is messy.  Dressing it up with numbers doesn't change that and you risk [fooling yourself](Map-And-Territory-Risk).  If this is the case, is there any hope at all in what we're doing?  Yes:   _forget precision_.  You should, with experience be able to hold up two separate risks and answer the question, "is this one bigger than this one?"  
