@@ -43,7 +43,7 @@ We could skip all those steps above and just do this:
 
 ![A Dangerous Development Process](images/generated/introduction/development_process_2.png)
 
-We can all see this would be a disaster, but why?
+We can all see this might end in disaster, but why?
 
 Two reasons: 
 
