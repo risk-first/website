@@ -26,6 +26,8 @@ If you feel something important is missing, or you spot a mistake, [we need help
 
 Although this is a [Wiki](https://en.wikipedia.org/wiki/Wiki), it's not meant to be an open-ended discussion of software techniques like [Ward's Wiki](http://wiki.c2.com).  In order to be concise and useful, discussions need to be carried out by [Opening an Issue](https://github.com/risk-first/website/issues).
 
+ - [Contributors](Contributors)
+
 ## Table of Contents
 
 ### Part 1: Introduction
@@ -115,6 +117,7 @@ A more light-hearted collection of blog posts related to the software developmen
 
  - [Glossary](Glossary)
  - [Glossary Of Risk Types](Glossary-Of-Risk-Types]
+ 
   
 <hr />
 
