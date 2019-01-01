@@ -116,7 +116,7 @@ A more light-hearted collection of blog posts related to the software developmen
 ### Glossary Of Terms
 
  - [Glossary](Glossary)
- - [Glossary Of Risk Types](Glossary-Of-Risk-Types]
+ - [Glossary Of Risk Types](Glossary-Of-Risk-Types)
  
   
 <hr />
