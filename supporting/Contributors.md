@@ -1,4 +1,4 @@
-People who have helped so far with ideas and proof-reading:
+People who have helped so far with ideas, issues and proof-reading:
 
 - [Michael Geary](https://github.com/geary)
 - [Ian Obermiller](https://github.com/ianobermiller)
