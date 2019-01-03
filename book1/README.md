@@ -1,1 +1,0 @@
-Just files to do with packaging the site as a book.
