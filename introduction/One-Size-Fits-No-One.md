@@ -79,7 +79,7 @@ Here are some high-level differences we see in some other popular methodologies:
  
  - **[DevOps](https://en.wikipedia.org/wiki/DevOps)**: Many software systems struggle at the [boundary](Boundary-Risk) between "in development" and "in production".  DevOps is an acknowledgement of this, and is about more closely aligning the feedback loops between the developers and the production system.  It champions activities such as continuous deployment, automated releases and automated monitoring.
 
-While this is a limited set of examples, you should be able to observe that the [actions](Glossary#take-action) promoted by a methodology are contingent on the risks it considers important.
+While this is a limited set of examples, you should be able to observe that the [actions](Glossary#taking-action) promoted by a methodology are contingent on the risks it considers important.
 
 ## Effectiveness
 
