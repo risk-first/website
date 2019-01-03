@@ -1,6 +1,6 @@
 ## Help Wanted!
 
-Risk-First is turning out to be a big undertaking, and any help would be greatfully appreciated.  
+Risk-First is turning out to be a big undertaking, and any help would be gratefully appreciated.  
 
 ## Seen Something Wrong?
 
@@ -16,7 +16,7 @@ Means this is probably a placeholder page, and needs fleshing out.  If you have 
 
 ![Draft](images/state/draft.png)
 
-Most of the text is correct, but there are likely to be placeholders.   Open issues if there are glaring omissions/inaccuracies.
+Most of the text is correct, but there are likely to be place-holders.   Open issues if there are glaring omissions/inaccuracies.
 
 ![For Review](images/state/for-review.png)
 
@@ -45,7 +45,9 @@ Alternatively, if you are git-savvy you can clone the repo:
 git@github.com:risk-first/website.wiki.git
 ``` 
 
-And then submit pull-requests to get your work merged into the `master` branch for everyone to see.
+~~And then submit pull-requests to get your work merged into the `master` branch for everyone to see.~~
+
+**Note:** Github doesn't support pull-requests for wiki pages (yet).  Instead raise an issue on this project and give details of your clone within github so that we can pull from it.
 
 ## Credit
 
