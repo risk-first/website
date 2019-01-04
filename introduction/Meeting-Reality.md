@@ -50,7 +50,7 @@ This is not a criticism of MongoDB: it's simply a demonstration that sometimes, 
 
 We can't know in advance how well any action we take will work out.  Therefore, [Taking Action](Glossary#taking-action) is a lot like placing a bet.  
 
-**[Payoff](Glossary#payoff)** then is our judgement about whether we expect an action to be worthwhile:  are the risks we escape _worth_ the attendant risks we will encounter?  We should be able to _weigh these separate risks in our hands_ and figure out whether the [Pay off](Glossary#payoff) makes a given [Action](Glossary#taking-action) worthwhile.  
+**[Payoff](Glossary#payoff)** then is our judgement about whether we expect an action to be worthwhile:  are the risks we escape _worth_ the attendant risks we will encounter?  We should be able to _weigh these separate risks in our hands_ and figure out whether the [Payoff](Glossary#payoff) makes a given [Action](Glossary#taking-action) worthwhile.  
 
 The fruits of this gambling are revealed when we [meet reality](Glossary#meet-reality), and we can see whether our bets were worthwhile. 
 
