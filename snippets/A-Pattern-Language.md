@@ -3,16 +3,16 @@ Hopefully, after reading this, you'll come away with:
 
 - An appreciation of how risk underpins everything we do as developers, whether we want it to or not.
 - A framework for evaluating methodologies, tools and practices and choosing the right one for the task-at-hand.
-- A recontextualization of the software process as being an exercise in mitigating different kinds of risk.
+- A new way to look at the software development process: it's an exercise in managing different kinds of risk.
 - The tools to help you decide when a methodology or tool is _letting you down_, and the vocabulary to argue for when it's a good idea to deviate from it.
 
-This is not intended to be a rigorously scientific work: I don't believe it's possible to objectively analyze a field like software development in any meaningful, statistically significant way.  (For one, things just change [too fast](Silver-Bullets).) 
+This is not intended to be a rigorously scientific work: I don't believe it's possible to objectively analyze a field like software development in any meaningful, statistically significant way (things just change [too fast](Silver-Bullets)). 
 
 > "I have this Pattern" - [Attributed to Ward Cunningham, _Have This Pattern, C2 Wiki_](http://c2.com/ppr/wiki/WikiPagesAboutWhatArePatterns/HaveThisPattern.html)
 
-Does that diminish it?   If you have visited the [TVTropes](https://tvtropes.org) website, you'll know that it's a set of web-pages describing _common patterns_ of narrative, production, character design etc. to do with fiction.  For example:
+Does that diminish it?   If you have visited the [TVTropes](https://tvtropes.org) website, you'll know that it's a set of web-pages describing _common patterns_ of narrative, production, character design etc. to do with fiction. 
 
-> "Sometimes, at the end of a Dream Sequence or an All Just a Dream episode, after the character in question has woken up and demonstrated any [lesson] that the dream might have been communicating, there's some small hint that it wasn't a dream after all, even though it quite obviously was... right?. " - [Or Was It a Dream?, _TVTropes_](https://tvtropes.org/pmwiki/pmwiki.php/Main/OrWasItADream)
+> "Sometimes, at the end of a 'Dream Sequence' or an 'All Just a Dream' episode, after the character in question has woken up and demonstrated any '[lesson]' that the dream might have been communicating, there's some small hint that it wasn't a dream after all, even though it quite obviously was... right?. " - [Or Was It a Dream?, _TVTropes_](https://tvtropes.org/pmwiki/pmwiki.php/Main/OrWasItADream)
 
 Is it scientific?  No.  Is it correct?  Almost certainly.  TVTropes is a set of _empirical patterns_ for how stories on TV and other media work.  It's really useful, and a lot of fun.  (Warning:  it's also incredibly addictive).
 
@@ -34,8 +34,6 @@ In the latter chapters of "The Menagerie" we try to assemble these risk patterns
 
 ### What This is Not
 
-This is not intended to be a rigorously scientific work: I don't believe it's possible to objectively analyze a field like software development in any meaningful, statistically significant way.  (For one, things just change [too fast](Silver-Bullets).) 
+Risk-First isn't an exhaustive guide to every possible software development practice and methodology.  That would just be too long and tedious.  
 
-Neither is this site isn't going to be an exhaustive guide of every possible software development practice and methodology.  That would just be too long and tedious.  
-
-Neither is this really a practitioner's guide to using any particular methodology:  If you've come here to learn the best way to do [Retrospectives](Review), then you're in the wrong place.  There are plenty of places you can find that information already.  Where possible, this site will link to or reference concepts on Wikipedia or the wider internet for further reading on each subject.
+Neither is this a practitioner's guide to using any particular methodology:  If you've come here to learn the best way to do [Retrospectives](Review), then you're in the wrong place.  There are plenty of places you can find that information already.  Where possible, this site will link to or reference concepts on Wikipedia or the wider Internet for further reading on each subject.
