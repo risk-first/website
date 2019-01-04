@@ -12,7 +12,7 @@ In 1948, Claude Shannon proposed this definition of communication:
 
 > "The fundamental problem of communication is that of reproducing at one point, either exactly or approximately, a message selected at another point." - [A Mathematical Theory Of Communication, _Claude Shannon_](https://en.wikipedia.org/wiki/A_Mathematical_Theory_of_Communication)  
 
-And from this same paper, we get the diagram above:  We move from top-left ("I want to send a message to someone") to bottom left, clockwise, where we hope the message has been understood and believed.  (I've added this last box to Shannon's original diagram.)
+And from this same paper, we get the diagram above:  we move from top-left ("I want to send a message to someone") to bottom left, clockwise, where we hope the message has been understood and believed.  (I've added this last box to Shannon's original diagram.)
 
 One of the chief concerns in Shannon's paper is the risk of error between **Transmission** and **Reception**.  He creates a theory of information (measured in **bits**), the upper-bounds of information that can be communicated over a channel and ways in which [Communication Risk](Communication-Risk) between these processes can be mitigated by clever **Encoding** and **Decoding** steps.
 
@@ -39,7 +39,7 @@ To get inside [Communication Risk](Communication-Risk), we need to understand **
  
  - **[Channels](https://en.wikipedia.org/wiki/Communication_channel)**: the medium via which the communication is happening.
  - **[Protocols](https://en.wikipedia.org/wiki/Communication_protocol)**:  the systems of rules that allow two or more entities of a communications system to transmit information.
- - **[Messages](https://en.wikipedia.org/wiki/Message)**: The information we want to convey.
+ - **[Messages](https://en.wikipedia.org/wiki/Message)**: the information we want to convey.
  - **[Internal Models](Glossary#Internal-Model)**: the sources and destinations for the messages.  Updating internal models (whether in our heads or machines) is the reason why we're communicating.
  
 And, as we look at these four areas, we'll consider the [Attendant Risks](Glossary#attendant-risk) of each.
@@ -156,7 +156,7 @@ This is now the HTTP protocol proper, and these 4 lines are sending information 
 ... 
 ```
 
-In this case, Google's server is telling us that the web page has changed address.    The `301` is a status code meaning the page has moved:  Instead of `http://google.com/preferences`, we want `http://www.google.com/preferences`.
+In this case, Google's server is telling us that the web page has changed address.    The `301` is a status code meaning the page has moved:  instead of `http://google.com/preferences`, we want `http://www.google.com/preferences`.
 
 ### Summary
 
@@ -170,7 +170,7 @@ By having a stack of protocols, we are able to apply [Separation Of Concerns](ht
 |`IP`                  |"Packets" with addresses and payloads.           |
 |`WiFi`                |"Networks", 802.11 flavours, Transmitters, Antennas, error correction codes.| 
 
-`HTTP` "stands on the shoulders of giants":  Not only does it get to use pre-existing protocols like `TCP` and `DNS` to make it's life easier, it got `802.11` "for free" when this came along and plugged into the existing `IP` protocol.<!-- tweet-end -->  This is the key value of abstraction:  you get to piggy-back on _existing_ patterns, and use them yourself. 
+`HTTP` "stands on the shoulders of giants":  not only does it get to use pre-existing protocols like `TCP` and `DNS` to make it's life easier, it got `802.11` "for free" when this came along and plugged into the existing `IP` protocol.<!-- tweet-end -->  This is the key value of abstraction:  you get to piggy-back on _existing_ patterns, and use them yourself. 
 
 ## Protocol Risk
 
@@ -223,7 +223,7 @@ function a() {
 
 By using a [static type checker](https://en.wikipedia.org/wiki/Type_system#Static_type_checking), we can identify issues like this, but there is a tradeoff:  we mitigate [Protocol Risk](Communication-Risk#protocol-risk), because we define the protocols _once only_ in the program, and ensure that usages all match the specification.  But the tradeoff is (as we can see in the TypeScript code) more _finger-typing_, which means [Codebase Risk](Complexity-Risk#codebase-risk) in some circumstances. 
 
-Nevertheless, static type checking is so prevalent in software that clearly in most cases, the trade-off has been worth it: Even languages like [Clojure](https://clojure.org) have been retro-fitted with [type checkers](http://clojure-doc.org/articles/ecosystem/core_typed/home.html).
+Nevertheless, static type checking is so prevalent in software that clearly in most cases, the trade-off has been worth it: even languages like [Clojure](https://clojure.org) have been retro-fitted with [type checkers](http://clojure-doc.org/articles/ecosystem/core_typed/home.html).
 
 Let's look at some further types of [Protocol Risk](Communication-Risk#protocol-risk):
  
@@ -322,7 +322,7 @@ Invisibility Risk is everywhere in software.  Let's consider what happens when, 
  - Second, **f** _supplies_ functionality to clients, so we have created a client-supplier relationship.
  - Third, these parties now need to communicate, and this will require a protocol.  In a programming language, this protocol is the arguments passed to **f**, and the response _back_ from **f**. 
  
-But something else also happens:  By creating **f**, you are saying “I now have this operation. The details, I won’t mention again, but from now on, it’s called **f**”  Suddenly, the implementation of “**f**” hides and it is working invisibly.  Things go on in **f** that people don’t necessarily need to understand.   There may be some documentation, or tacit knowledge around what **f** is, and what it does, but it’s not necessarily right.  
+But something else also happens:  by creating **f**, you are saying “I now have this operation. The details, I won’t mention again, but from now on, it’s called **f**”  Suddenly, the implementation of “**f**” hides and it is working invisibly.  Things go on in **f** that people don’t necessarily need to understand.   There may be some documentation, or tacit knowledge around what **f** is, and what it does, but it’s not necessarily right.  
 
 _Referring to **f** is a much simpler job than understanding **f**._
 
@@ -348,9 +348,9 @@ Although protocols can sometimes handle security features of communication (such
  
 Even if the receiver trusts the communicator, they may not believe the message.  Let's look at some reasons for that:
 
-- [Weltanschauung (World View)](https://en.wikipedia.org/wiki/World_view): The ethics, values and beliefs in the receiver's [Internal Model](Glossary#Internal-Model) may be incompatible to those from the sender.
-- [Relativism](https://en.wikipedia.org/wiki/Relativism) is the concept that there are no universal truths.  Every truth is from a frame of reference.  For example, what constitutes _offensive language_ is dependent on the listener.
-- [Psycholinguistics](https://en.wikipedia.org/wiki/Psycholinguistics) is the study of humans aquire languages.  There are different languages and dialects, (and _industry dialects_), and we all understand language in different ways, take different meanings and apply different contexts to the messages.
+- **[Weltanschauung (World View)](https://en.wikipedia.org/wiki/World_view)**: the ethics, values and beliefs in the receiver's [Internal Model](Glossary#Internal-Model) may be incompatible to those from the sender.
+- **[Relativism](https://en.wikipedia.org/wiki/Relativism)** is the concept that there are no universal truths.  Every truth is from a frame of reference.  For example, what constitutes _offensive language_ is dependent on the listener.
+- **[Psycholinguistics](https://en.wikipedia.org/wiki/Psycholinguistics)** is the study of humans aquire languages.  There are different languages and dialects, (and _industry dialects_), and we all understand language in different ways, take different meanings and apply different contexts to the messages.
   
 From the point-of-view of [Marketing Communications](Communication-Risk#Marketing-Communications), choosing the right message is part of the battle.  You are trying to communicate your idea in such a way as to mitigate Trust & Belief Risk.
 

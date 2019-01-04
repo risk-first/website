@@ -17,7 +17,7 @@ Let's try and put the following [Risk](Glossary#risk) into the RAID Log:
  - So, is this an **action**?   Certainly.  There's definitely something for Debbie to do here. 
  - Is it an **issue**?  Yes, because it's holding up the screen-areas sizing thing. 
  - Is it a **decision**?  Well, clearly, it's a decision for someone.
- - Is it a **risk**?  Probably:  Debbie might go to the client and they _still_ don't make a decision.  What then?
+ - Is it a **risk**?  Probably.  Debbie might go to the client and they _still_ don't make a decision.  What then?
 
 ## Let's Go Again
 
@@ -50,7 +50,7 @@ And, as we saw in the [Introduction](A-Simple-Scenario), even something _mundane
 - And fixing an issue is an action... 
 - Which, as we just saw also carry risk.
 
-One retort to this might be to say:  "An issue is a problem I have now, whereas a risk is a problem that _might_ occur. "  I am going to try and break that mind-set in the coming pages, but I'll just start with this:
+One retort to this might be to say:  "an issue is a problem I have now, whereas a risk is a problem that _might_ occur. "  I am going to try and break that mind-set in the coming pages, but I'll just start with this:
 
 - Do you know _exactly_ how much damage this issue will do?
 - Can you be sure that the issue might not somehow go away?  
@@ -83,7 +83,7 @@ Psychologically, humans are very goal-driven:  they like to know where they're g
 - And, making a decision takes time, which could add risk to your schedule.
 - And what's the risk if the decision doesn't get made?
 
-Sometimes, there will be multiple moves available on the [Risk Landscape](Glossary#risk-landscape) and you have to choose.  Let's take a hypothetical example:  You're on a project and you're faced with the decision - release now or do more testing?  
+Sometimes, there will be multiple moves available on the [Risk Landscape](Glossary#risk-landscape) and you have to choose.  Let's take a hypothetical example:  you're on a project and you're faced with the decision - release now or do more testing?  
 
 Obviously, in the ideal world, we want to get to the place on the [Risk Landscape](Glossary#risk-landscape) where we have a tested, bug-free system in production.  But we're not there yet, and we have funding pressure to get the software into the hands of some paying customers.  The table below shows an example: 
 
@@ -96,7 +96,7 @@ This is (a simplification of) the dilemma on lots of software projects - _test f
 
 In the above table, it _appears_ to be better to do the "Go Live" action, as there is a greater [Pay Off](Glossary#pay-off).  The problem is, actions are not _commutative_, i.e. the order you do them in counts.
 
-![UAT or Go Live: Where will you end up?](images/generated/introduction/risk_landscape_3_moves.png)
+![UAT or Go Live: where will you end up?](images/generated/introduction/risk_landscape_3_moves.png)
 
 The diagram above shows our decision as _moves on the [Risk Landscape](Glossary#risk-landscape)_.  Whether you "Go Live" first, or "UAT" first makes a difference to where you will end up.  Is there a further action you can take to get you from the "Dead End" to the "Goal"?  Perhaps.
 
@@ -108,6 +108,6 @@ Usually, we mean we've failed to achieve a goal, and since _goals are risks_, it
  
 ## What To Do?
 
-It makes it much easier to tackle the RAID log if there's only one list.  But you still have to choose a _strategy_:   Do you tackle the _most important_ risk on the list, or the _most urgent_, or take the action with the biggest [Pay Off](Glossary#pay-off) and deal with it?
+It makes it much easier to tackle the RAID log if there's only one list.  But you still have to choose a _strategy_:  do you tackle the _most important_ risk on the list, or the _most urgent_, or take the action with the biggest [Pay Off](Glossary#pay-off) and deal with it?
 
 In the next section, [Evaluating Risk](Evaluating-Risk) we'll look at some approaches to choosing what to do. 

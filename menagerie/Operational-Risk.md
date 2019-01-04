@@ -4,30 +4,30 @@
 
 In this section we're going to start considering the realities of running software systems in the real world.  
 
-There is a lot to this subject, so this section is really offers just a taster: We're going to set the scene by looking at what constitutes an [Operational Risk](Operational-Risk), and then look at the related discipline of [Operations Management](#operations-management).  Following this background, we'll apply the Risk-First model and have a high-level look at the various mitigations for [Operational Risk](Operational-Risk).  
+There is a lot to this subject, so this section is really offers just a taster: we're going to set the scene by looking at what constitutes an [Operational Risk](Operational-Risk), and then look at the related discipline of [Operations Management](#operations-management).  Following this background, we'll apply the Risk-First model and have a high-level look at the various mitigations for [Operational Risk](Operational-Risk).  
 
 ## Operational Risks
 
 When building software, it's tempting to take a very narrow view of the dependencies of a system, but [Operational Risks](Operational-Risk) are often caused by dependencies we _don't_ consider - i.e. the **Operational Context** within which the system is operating.<!-- tweet-end -->  Here are some examples:  
 
- - **[Staff Risks](Scarcity-Risk#staff-risk):** 
+ - **[Staff Risks](Scarcity-Risk#staff-risk)**: 
    - Freak weather conditions affecting ability of staff to get to work, interrupting the development and support teams. 
    - Reputational damage caused when staff are rude to the customers.
  
- - **[Reliability Risks](Dependency-Risk#reliability-risk):**
+ - **[Reliability Risks](Dependency-Risk#reliability-risk)**:
    - A data-centre going off-line, causing your customers to lose access.
    - A power cut causing backups to fail.
    - Not having enough desks for everyone to sit at.
    
- - **[Process Risks](Process-Risk):**
+ - **[Process Risks](Process-Risk)**:
    - Regulatory change, which means you have to adapt your business model.
    - Insufficient controls which means you don't notice when some transactions are failing, leaving you out-of-pocket.
    - Data loss because of bugs introduced during an untested release.
  
- - **[Software Dependency Risk](Software-Dependency-Risk):**
+ - **[Software Dependency Risk](Software-Dependency-Risk)**:
    - Hackers exploit weaknesses in a piece of 3rd party software, bringing your service down.
  
- - **[Agency Risk](Agency-Risk):**
+ - **[Agency Risk](Agency-Risk)**:
    - Suppliers deciding to stop supplying you with something you need.
    - Workers going on strike.
    - Employees trying to steal from the company (bad actors).
@@ -43,16 +43,16 @@ If we are designing a software system to "live" in the real world, we have to be
 
 The diagram above is a Risk-First interpretation of [Slack _et al_'s model of Operations Management](http://amzn.eu/d/b6ZjuMu).  This model breaks down some of the key abstractions of the discipline: a **Transform Process** (the **Operation** itself) is embedded in the wider **Operational Context**, which supplies it with three key dependencies:
   
- - **Resources**:  Whether _transformed_ resources (like electricity or information, say) or _transforming_ resources (like staff or equipment).  
- - **Customers**: Which supply it with money in return for goods and services.
- - **Operational Strategy**: The goals and objectives of the operation, informed by the reality of the environment it operates in.
+ - **Resources**:  whether _transformed_ resources (like electricity or information, say) or _transforming_ resources (like staff or equipment).  
+ - **Customers**: which supply it with money in return for goods and services.
+ - **Operational Strategy**: the goals and objectives of the operation, informed by the reality of the environment it operates in.
  
 We have looked at processes like the **Transform Process** in the section on [Process Risk](Process-Risk).  The healthy functioning of this process is the domain of [Operations Management](#operations-management), and (as per Slack _et al._) this involves the following types of actions:
 
- - **Control**:  Ensuring that the Operation is working according to it's targets.  This includes day-to-day quality control and monitoring of the Transform Process. 
- - **Planning**: This covers aspects such as capacity planning, forecasting and project planning.   This is about making sure the transform process has targets to meet and the resources to meet them.
- - **Design**:  Ensuring that the design of the product and the transform process itself fulfils an **Operational Strategy**.
- - **Improvement**:  Improving the operation in response to changes in the **Environment** and the **Operational Strategy**, detecting failure and recovering from it.
+ - **Control**:  ensuring that the Operation is working according to it's targets.  This includes day-to-day quality control and monitoring of the Transform Process. 
+ - **Planning**: this covers aspects such as capacity planning, forecasting and project planning.   This is about making sure the transform process has targets to meet and the resources to meet them.
+ - **Design**:  ensuring that the design of the product and the transform process itself fulfils an **Operational Strategy**.
+ - **Improvement**:  improving the operation in response to changes in the **Environment** and the **Operational Strategy**, detecting failure and recovering from it.
 
 Let's look at each of these actions in turn.
 

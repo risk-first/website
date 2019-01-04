@@ -8,7 +8,7 @@ In [A Simple Scenario](A-Simple-Scenario), we looked at a basic model for how **
 
 And, in [Development Process](Development-Process) we looked at how we can meet with reality in _different forms_:  Analysis, Testing, Integration and so on, and saw how the model could work in each stage of a project.
 
-It should be no surprise to see that there is a _recursive_ nature about this:   The actions we take each day have consequences:  they expose new [hidden risks](Glossary#hidden-risk), which inform our [Internal Model](Glossary#Internal-Model), and at the same time, they change reality in some way.  As a result, we then have to take _new actions_ to deal with these new risks.  
+It should be no surprise to see that there is a _recursive_ nature about this:   the actions we take each day have consequences, they expose new [hidden risks](Glossary#hidden-risk) which inform our [Internal Model](Glossary#Internal-Model) and at the same time change reality in some way.  As a result, we then have to take _new actions_ to deal with these new risks.  
 
 So, let's see how this kind of recursion looks on our model.
 
@@ -50,7 +50,7 @@ This is not a criticism of MongoDB: it's simply a demonstration that sometimes, 
 
 We can't know in advance how well any action we take will work out.  Therefore, [Taking Action](Glossary#taking-action) is a lot like placing a bet.  
 
-**[Pay Off](Glossary#pay-off)** then is our judgement about whether we expect an action to be worthwhile:  Are the risks we escape _worth_ the attendant risks we will encounter?  We should be able to _weigh these separate risks in our hands_ and figure out whether the [Pay off](Glossary#pay-off) makes a given [Action](Glossary#taking-action) worthwhile.  
+**[Pay Off](Glossary#pay-off)** then is our judgement about whether we expect an action to be worthwhile:  are the risks we escape _worth_ the attendant risks we will encounter?  We should be able to _weigh these separate risks in our hands_ and figure out whether the [Pay off](Glossary#pay-off) makes a given [Action](Glossary#taking-action) worthwhile.  
 
 The fruits of this gambling are revealed when we [meet reality](Glossary#meet-reality), and we can see whether our bets were worthwhile. 
 
@@ -67,8 +67,8 @@ All of these steps take a lot of effort and time.   But you don't have to meet t
 
 In all, to de-risk, you should try and meet reality:
 
-- **Sooner**, so you have time to mitigate the hidden risks it uncovers
-- **More Frequently**: so the hidden risks don't hit you all at once
+- **Sooner**: so you have time to mitigate the hidden risks it uncovers.
+- **More Frequently**: so the hidden risks don't hit you all at once.
 - **In Smaller Chunks**: so you're not over-burdened by hidden risks all in one go.
 - **With Feedback**: if you don't collect feedback from the experience of meeting reality, hidden risks _stay hidden_.
 

@@ -10,7 +10,7 @@ In [Meeting Reality](Meeting-Reality), we looked at the concept of the [Risk Lan
 
 It's tempting to think of our [Risk Landscape](Risk-Landscape) as being like a [Fitness Landscape](https://en.wikipedia.org/wiki/Fitness_landscape).  That is, you have a "cost function" which is your height above the landscape, and you try and optimise by moving downhill in a [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent) fashion.  
 
-However, there's a problem with this:  As we said in [Evaluating Risk](Evaluating-Risk), we don't have a cost function.  We can only guess at what risks there are.  And, we have to go on our _experience_. For this reason, I prefer to think of the [Risk Landscape](Risk-Landscape) as a terrain which contains _fauna_ and _obstacles_ (or, specifically [_Boundaries_](Boundary-Risk)).
+However, there's a problem with this:  as we said in [Evaluating Risk](Evaluating-Risk), we don't have a cost function.  We can only guess at what risks there are.  And, we have to go on our _experience_. For this reason, I prefer to think of the [Risk Landscape](Risk-Landscape) as a terrain which contains _fauna_ and _obstacles_ (or, specifically [_Boundaries_](Boundary-Risk)).
 
 Just as I can tell you that the landscape outside your window will probably will have some trees, fields and buildings, and that the buildings are likely to be joined together by roads, we can make generalisations about risks too.
 
@@ -62,9 +62,9 @@ Risk is messy.  It's not always easy to tease apart the different components of 
 
 In the [Financial Services](https://en.wikipedia.org/wiki/Financial_services) industry, whole _departments_ exist to calculate things like:
 
-- **[Market Risk](https://en.wikipedia.org/wiki/Market_risk):**  the risk that the amount some asset is going to change in value.
-- **[Credit Risk](https://en.wikipedia.org/wiki/Credit_risk):**  the risk that someone who owes you a payment at a specific point in time might not pay it back.
-- **[Liquidity Risk](https://en.wikipedia.org/wiki/Liquidity_risk):** the risk that you can't find a market to sell/buy something, usually leading to a shortage of ready cash.
+- **[Market Risk](https://en.wikipedia.org/wiki/Market_risk)**:  the risk that the amount some asset is going to change in value.
+- **[Credit Risk](https://en.wikipedia.org/wiki/Credit_risk)**:  the risk that someone who owes you a payment at a specific point in time might not pay it back.
+- **[Liquidity Risk](https://en.wikipedia.org/wiki/Liquidity_risk)**: the risk that you can't find a market to sell/buy something, usually leading to a shortage of ready cash.
 
 In the financial crisis of 2007, these models of risk didn't turn out to be much use.   Although there are lots of conflicting explanations of what happened, one way to look at it is this:
 
@@ -74,7 +74,7 @@ In the financial crisis of 2007, these models of risk didn't turn out to be much
 
 All the [Risks](Glossary#Risk) were [correlated](https://www.investopedia.com/terms/c/correlation.asp).  That is, they were affected by the _same underlying events_, or _each other_.
 
-![Causation shown on a Risk-First Diagram: More complexity is likely to lead to more Operational Risk](images/generated/risks/landscape/causation.png)
+![Causation shown on a Risk-First Diagram: more complexity is likely to lead to more Operational Risk](images/generated/risks/landscape/causation.png)
 
 It's like this with software risks, too, sadly.  For example, [Operational Risk](Operational-Risk) is going to be heavily correlated with [Complexity Risk](Complexity-Risk): the more complex your operation, the more risky it will be.  In the Risk-First diagrams, we will sometimes show correlation or causation with an arrow, like in the diagram above.
 

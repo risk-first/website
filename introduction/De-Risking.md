@@ -37,7 +37,7 @@ In part 2, we'll see how **Transfer** of risk is an essential feature of [Softwa
 
 **Accepting** a risk is to deal with it when it arises.   One example is the [Key-Man Risk](Scarcity-Risk#staff-risk) involved in having a super-star programmer on the team.  Although there would be fallout if they left, they are often mitigating more risk than they cause.  
 
-Another example is using particular software dependencies:   Building a mobile application which requires a Facebook account to log in might give rise to the risk that people without Facebook accounts can't log in, but might simplify the software to such an extent that it's worthwhile.
+Another example is using particular software dependencies:   building a mobile application which requires a Facebook account to log in might give rise to the risk that people without Facebook accounts can't log in, but might simplify the software to such an extent that it's worthwhile.
 
 Whereas **Accepting** a risk seems to imply an eyes-wide-open examination, **Ignoring** seems to imply that either the risk is so insignificant it doesn't warrant evaluation, or so daunting that it can't be stared down.  Either way, **Ignoring** a risk amounts to the same thing as **Accepting** it, since you're not doing anything about it. 
 
@@ -84,7 +84,7 @@ Let's look at the journey so far:
 
  - Then, generalizing the lessons of the Development Process article, we examined the idea that [Meeting Reality](Meeting-Reality) frequently helps flush out [Hidden Risks](Glossary#hidden-risk) and improve your [Internal Model](Glossary#Internal-Model).
  
- - In [It's All Risk Management](All-Risk-Management) we took a leap of faith:  Could _everything_ we do just be risk management?  And we looked at the RAID log and thought that maybe it could be.   
+ - In [It's All Risk Management](All-Risk-Management) we took a leap of faith: could _everything_ we do just be risk management?  And we looked at the RAID log and thought that maybe it could be.   
  
  - Next, in [A Software Project Scenario](Software-Project-Scenario) we looked at how you could treat the project-as-a-whole as a risk management exercise, and treat the goals from one day to the next as activities to mitigate risk.
  

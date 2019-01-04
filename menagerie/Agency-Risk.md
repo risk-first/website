@@ -74,8 +74,8 @@ Working on a pet project usually means you get lots of attention (and more than 
 
 Sometimes, the morale of the team or individuals within it dips, leading to lack of motivation.  [Morale Risk](Agency-Risk#morale-risk) is a kind of [Agency Risk](Agency-Risk) because it really means that a team member or the whole team isn't committed to the [Goal](Glossary#Goal-In-Mind), may decide their efforts are best spent elsewhere.  [Morale Risk](Agency-Risk#morale-risk) might be caused by:
 
- - **External Factors:**  Perhaps the employees' dog has died, or they're simply tired of the industry, or are not feeling challenged.
- - **The goal feels unachievable:**  in this case, people won't commit their full effort to it.  This might be due to to a difference in the evaluation of the risks on the project between the team members and the leader.  In military science, a second meaning of morale is how well supplied and equipped a unit is.  This would also seem like a useful reference point for IT projects.  If teams are under-staffed or under-equipped, this will impact on motivation too.
+ - **External Factors**:  Perhaps the employees' dog has died, or they're simply tired of the industry, or are not feeling challenged.
+ - **The goal feels unachievable**:  in this case, people won't commit their full effort to it.  This might be due to to a difference in the evaluation of the risks on the project between the team members and the leader.  In military science, a second meaning of morale is how well supplied and equipped a unit is.  This would also seem like a useful reference point for IT projects.  If teams are under-staffed or under-equipped, this will impact on motivation too.
  - **The goal isn't sufficiently worthy**, or the team doesn't feel sufficiently valued.
 
 ## Software Processes And Teams
@@ -102,7 +102,7 @@ Interestingly, security is handled in very similar ways in all kinds of systems,
 - **Doors**: ways to get _in_ and _out_ of the complex system, possibly with _locks_.
 - **Guards**: to make sure only the right things go in and out.  (i.e. to try and keep out _Bad Actors_).
 - **Police**: to defend from _within_ the system, against internal [Agency Risk](Agency-Risk).
-- **Subterfuge**: Hiding, camouflage, disguises, pretending to be something else. 
+- **Subterfuge**: hiding, camouflage, disguises, pretending to be something else. 
 
 These work various levels in our own bodies:  our _cells_ have _cell walls_ around them, and _cell membranes_ that act as the guards to allow things in and out.  Our _bodies_ have _skin_ to keep the world out, and we have _mouths_, _eyes_, _pores_ and so on to allow things in and out.  We have an _immune system_ to act as the police.
 

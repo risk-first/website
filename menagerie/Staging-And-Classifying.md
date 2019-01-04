@@ -16,10 +16,10 @@ Let's now _generalize_ what is happening with abstraction.  To do this, we'll co
 
 ### Using An Existing Abstraction means:
 
- - **Mitigating [Feature Risk](Feature-Risk):** Because the abstraction is providing you with something _useful_.  For example, using the word "London" allows you to refer to a whole existing (but slightly non-specific) geographic area.
- - **Accepting [Communication Risk](Communication-Risk).** : Because if you are using the abstraction in conversation, the people you are using it with _need to understand it too_.
- - **Accepting [Map and Territory Risk](Map-And-Territory-Risk)**: Because the abstraction is a simplification, and not the actual thing itself.
- - **Living with [Dependency Risk](Dependency-Risk):**  We depend on a word in our language (or a function in our library, or a service on the Internet).  But words are _unreliable_.  They might not communicate what you want them to, or be understood by the audience.  Language _changes_ and _evolves_, and the words you are using now might not always mean what you want them to mean.  (Software too changes and evolves:  We've seen this in [Red Queen Risk](Scarcity-Risk#red-queen-risk) and [Feature Drift Risk](Feature-Risk#feature-drift-risk).)
+ - **Mitigating [Feature Risk](Feature-Risk)**: because the abstraction is providing you with something _useful_.  For example, using the word "London" allows you to refer to a whole existing (but slightly non-specific) geographic area.
+ - **Accepting [Communication Risk](Communication-Risk)** : because if you are using the abstraction in conversation, the people you are using it with _need to understand it too_.
+ - **Accepting [Map and Territory Risk](Map-And-Territory-Risk)**: because the abstraction is a simplification, and not the actual thing itself.
+ - **Living with [Dependency Risk](Dependency-Risk)**:  we depend on a word in our language (or a function in our library, or a service on the Internet).  But words are _unreliable_.  They might not communicate what you want them to, or be understood by the audience.  Language _changes_ and _evolves_, and the words you are using now might not always mean what you want them to mean.  (Software too changes and evolves:  We've seen this in [Red Queen Risk](Scarcity-Risk#red-queen-risk) and [Feature Drift Risk](Feature-Risk#feature-drift-risk).)
  
 ![Depending on an Abstraction](images/generated/staging-and-classifying/depending-abstraction.png)
 
