@@ -8,11 +8,9 @@ While **Book Two** is all about _how to succeed_, this book is all about how pro
 
 So, if you are interested in _avoiding your project failing_, this is probably going to be useful knowledge.  
 
-### For Developers, Testers and Business Analysts
+### For Team Members
 
-Risk-First is a tool you can deploy to immediately improve your ability to plan your work.  
-
-Frequently, we find software methodologies "done to us" from above.  Risk-First is a toolkit to help _take apart_ methodologies like [Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development)), [Lean](https://en.wikipedia.org/wiki/Lean_software_development) and [Prince2](https://en.wikipedia.org/wiki/PRINCE2), and understand them.  
+Risk-First is a toolkit you can deploy to immediately improve your ability to plan your work and avoid pitfalls.  But that's not the only goal.  Frequently, we find software methodologies "done to us" from above.  Risk-First is a toolkit to help _take apart_ methodologies like Scrum, Lean or Prince2, and understand them.  
 
 Methodologies are _bicycles_, rather than _religions_.  Rather than simply _believing_, we can take them apart and see how they work.
 
