@@ -77,7 +77,7 @@ There is a certain "interplay" between the concepts of risks, actions and goals.
 
 Psychologically, humans are very goal-driven:  they like to know where they're going, and are good at organising around a goal.  However, by focusing on goals ("solutionizing") it's easy to ignore alternatives.  By focusing on "Risk-First", we don't ignore the reasons we're doing something.  
 
-## Every Decision is About Pay-Off.  
+## Every Decision is About Payoff.  
 
 - By the very nature of having to make a decision, there's the risk you'll decide wrongly.
 - And, making a decision takes time, which could add risk to your schedule.
@@ -87,14 +87,14 @@ Sometimes, there will be multiple moves available on the [Risk Landscape](Glossa
 
 Obviously, in the ideal world, we want to get to the place on the [Risk Landscape](Glossary#risk-landscape) where we have a tested, bug-free system in production.  But we're not there yet, and we have funding pressure to get the software into the hands of some paying customers.  The table below shows an example: 
 
-|Risk Managed          |Action               |Attendant Risk                           |Pay-Off            | 
+|Risk Managed          |Action               |Attendant Risk                           |Payoff            | 
 |----------------------|---------------------|-----------------------------------------|-------------------|
 |Funding Risk          |Go Live              |Reputational Risk, Operational Risk      |MEDIUM             |
 |Implementation Risk   |User Acceptance Test |Worse Funding Risk, Operational Risk     |LOW                |
 
 This is (a simplification of) the dilemma on lots of software projects - _test further_, to reduce the risk of users discovering bugs ([Implementation Risk](Feature-Risk#implementation-risk)) which would cause us reputational damage, or _get the release done_ and reduce our [Funding Risk](Scarcity-Risk#funding-risk) by getting paying clients sooner. 
 
-In the above table, it _appears_ to be better to do the "Go Live" action, as there is a greater [Pay Off](Glossary#pay-off).  The problem is, actions are not _commutative_, i.e. the order you do them in counts.
+In the above table, it _appears_ to be better to do the "Go Live" action, as there is a greater [Payoff](Glossary#payoff).  The problem is, actions are not _commutative_, i.e. the order you do them in counts.
 
 ![UAT or Go Live: where will you end up?](images/generated/introduction/risk_landscape_3_moves.png)
 
@@ -104,10 +104,10 @@ The diagram above shows our decision as _moves on the [Risk Landscape](Glossary#
 
 So, when we talk about a project "failing", what do we mean?  
 
-Usually, we mean we've failed to achieve a goal, and since _goals are risks_, it is simply the scenario where we are overwhelmed by [Attendant Risks](Glossary#attendant-risk): there is _no_ action to take that has a good-enough [Pay Off](Glossary#pay-off) to get us out of our hole.    
+Usually, we mean we've failed to achieve a goal, and since _goals are risks_, it is simply the scenario where we are overwhelmed by [Attendant Risks](Glossary#attendant-risk): there is _no_ action to take that has a good-enough [Payoff](Glossary#payoff) to get us out of our hole.    
  
 ## What To Do?
 
-It makes it much easier to tackle the RAID log if there's only one list.  But you still have to choose a _strategy_:  do you tackle the _most important_ risk on the list, or the _most urgent_, or take the action with the biggest [Pay Off](Glossary#pay-off) and deal with it?
+It makes it much easier to tackle the RAID log if there's only one list.  But you still have to choose a _strategy_:  do you tackle the _most important_ risk on the list, or the _most urgent_, or take the action with the biggest [Payoff](Glossary#payoff) and deal with it?
 
 In the next section, [Evaluating Risk](Evaluating-Risk) we'll look at some approaches to choosing what to do. 

@@ -42,9 +42,9 @@ A risk matrix presents a graphical view on where risks exist.  Here is an exampl
 
 ![Risk Register of Dinner Party Risks](images/generated/introduction/risk_matrix.png)
 
-This type of graphic is _helpful_ in deciding what to do next, although alternatively, you can graph the overall **Risk Score** against the [Pay-Off](Glossary#pay-off).  Easily mitigated risk (on the right), and worse risks (at the top) can therefore be dealt with first (hopefully).
+This type of graphic is _helpful_ in deciding what to do next, although alternatively, you can graph the overall **Risk Score** against the [Payoff](Glossary#payoff).  Easily mitigated risk (on the right), and worse risks (at the top) can therefore be dealt with first (hopefully).
 
-![Risk Register of Dinner Party Risks, Considering Pay-Off](images/generated/introduction/risk_matrix_2.png)
+![Risk Register of Dinner Party Risks, Considering Payoff](images/generated/introduction/risk_matrix_2.png)
 
 ## Unknown Unknowns
 
@@ -114,8 +114,8 @@ If the methodology _fails at a particular scale_, this tells you something about
 
 "Upside Risk" isn't a commonly used term:  industry tends to prefer "value", as in "Is this a value-add project?".  There is plenty of theory surrounding **Value**, such as Porter's [Value Chain](https://en.wikipedia.org/wiki/Value_chain) and [Net Present Value](https://en.wikipedia.org/wiki/Net_present_value).  This is all fine so long as we remember:
 
- - **The probability of [Pay-Off](Glossary#pay-off) is risky**. Since the value is created in the future, we can't be certain about it happening - we should never consider it a done-deal.  **Future Value** is always at risk.  In finance, for example, we account for this in our future cash-flows by discounting them according to the risk of default.
- - **The Pay-Off amount is risky**.  Additionally, whereas in a financial transaction (like a loan, say), we might know the size of a future payment, in IT projects we can rarely be sure that they will deliver a certain return.  On some fixed-contract projects this sometimes is not true: there may be a date when the payment-for-delivery gets made, but mostly we'll be expecting an uncertain pay-off. 
+ - **The probability of [Payoff](Glossary#payoff) is risky**. Since the value is created in the future, we can't be certain about it happening - we should never consider it a done-deal.  **Future Value** is always at risk.  In finance, for example, we account for this in our future cash-flows by discounting them according to the risk of default.
+ - **The Payoff amount is risky**.  Additionally, whereas in a financial transaction (like a loan, say), we might know the size of a future payment, in IT projects we can rarely be sure that they will deliver a certain return.  On some fixed-contract projects this sometimes is not true: there may be a date when the payment-for-delivery gets made, but mostly we'll be expecting an uncertain Payoff. 
  - Humans tend to be optimists (especially when there are lots of [Hidden Risks](Glossary#hidden-risk)), hence our focus on Downside Risk.  Sometimes though, it's good to stand back and look at a scenario and think:  am I capturing all the Upside Risk here?
 
 ### Speed

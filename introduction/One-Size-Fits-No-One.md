@@ -91,7 +91,7 @@ A methodology offers us a route through the [Risk Landscape](Glossary#risk-lands
 
 ### Methodological Failure
  
-When we [take action](Glossary#taking-action) according to a methodology, we expect the [Pay-Off](Glossary#pay-off), and if this doesn't materialise, then we feel the methodology is failing us.   It could just be that it is inappropriate to the _type of project_ we are running.  Our [Risk Landscape](Glossary#risk-landscape) may not be the one the designers of the methodology envisaged.   For example:
+When we [take action](Glossary#taking-action) according to a methodology, we expect the [Payoff](Glossary#payoff), and if this doesn't materialise, then we feel the methodology is failing us.   It could just be that it is inappropriate to the _type of project_ we are running.  Our [Risk Landscape](Glossary#risk-landscape) may not be the one the designers of the methodology envisaged.   For example:
 
  - NASA [don't follow an agile methodology](https://standards.nasa.gov/standard/nasa/nasa-std-87398) when launching space craft:  there's no two-weekly launch that they can iterate over, and the the risks of losing a rocket or satellite are simply too great to allow for iteration in production.   The risk profile is just all wrong: you need to manage the risk of _losing hardware_ over the risk of _requirements changing_.  
 
