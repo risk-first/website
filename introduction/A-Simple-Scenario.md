@@ -24,7 +24,7 @@ How much effort we expend on these [Attendant Risks](Glossary#attendant-risk) de
 
 ## Hidden Risks
 
-There are also **[Hidden Risks](Glossary#attendant-risk)** that you _don't_ know about: if you're poaching eggs for dinner, perhaps you don't know that fresh eggs poach best.  The difference is, [Attendant Risks](Glossary#attendant-risk) are risks you are aware of, but can't be sure of the amount they will impact you.  [Hidden Risks](Glossary#attendant-risk) are ones you are unaware of.  Donald Rumsfeld famously called these "Unknown Unknowns":
+There are also **[Hidden Risks](Glossary#attendant-risk)** that you _don't_ know about: if you're poaching eggs for dinner, perhaps you don't know that fresh eggs poach best.  The difference is, [Attendant Risks](Glossary#attendant-risk) are risks you are aware of.  You may not be able to exactly _quantify_ them, but you know they exist.  But [Hidden Risks](Glossary#attendant-risk) are ones you are unaware of.  Donald Rumsfeld famously called these "Unknown Unknowns":
 
 > "Reports that say that something hasn't happened are always interesting to me, because as we know, there are known knowns; there are things we know we know. We also know there are known unknowns; that is to say we know there are some things we do not know. But there are also unknown unknowns—the ones we don't know we don't know. And if one looks throughout the history of our country and other free countries, it is the latter category that tend to be the difficult ones." - [Donald Rumsfeld, _Wikipedia_](https://en.wikipedia.org/wiki/There_are_known_knowns)
 
