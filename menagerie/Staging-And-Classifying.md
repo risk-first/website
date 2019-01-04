@@ -34,7 +34,7 @@ Let's now _generalize_ what is happening with abstraction.  To do this, we'll co
 
 ### Choosing Between Abstractions means:
 
- - **Overcoming a [Learning Curve](Communication-Risk#learning-curve-risk)**:  Because you have to _learn_ a name in order to use it (whether a function, a dog, or the name of someone at a party).
+ - **Overcoming a [Learning Curve](Communication-Risk#learning-curve-risk)**: because you have to _learn_ a name in order to use it (whether a function, a dog, or the name of someone at a party).
  - **Accepting [Boundary Risks](Boundary-Risk).**  Just using _a single word_ means accepting the whole _ecosystem_ of the language the word is in.  Using _French words_ means the [Boundary Risk](Boundary-Risk) of the French Language. 
  - **Accepting [Map And Territory Risk](Map-And-Territory-Risk).** Because the word refers to the _concept_ of the thing, and _not the thing itself_.
 

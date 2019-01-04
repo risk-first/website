@@ -51,7 +51,7 @@ Some easy-to-digest ideas that will set the scene for examining the practices la
 
 Risks are often very similar across different software projects.   And, if you know about them, you can look for them.  This section attempts to break them down for you:
 
- - [The Risk landscape](Risk-Landscape)
+ - [The Risk Landscape](Risk-Landscape)
  - [Feature Risk](Feature-Risk)
  - [Communication Risk](Communication-Risk)
  - [Complexity Risk](Complexity-Risk)
