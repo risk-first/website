@@ -189,9 +189,9 @@ At a basic level, [Complexity Risk](Complexity-Risk) heavily impacts on [Schedul
 
 The most common way we talk about [Complexity Risk](Complexity-Risk) in software is as [Technical Debt](Complexity-Risk#technical-debt):
 
-> "Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite... The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organisations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise." - [Ward Cunningham, 1992, _Wikipedia: Technical Debt_](https://en.wikipedia.org/wiki/Technical_debt)
+> "Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite... The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organisations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise." - [Ward Cunningham, 1992, _Wikipedia, Technical Debt_](https://en.wikipedia.org/wiki/Technical_debt)
 
-Building a low-complexity first-time solution is often a waste:  In the first version, we're usually interested in reducing [Feature RIsk](Feature-Risk) as fast as possible. That is, putting working software in front of users to get [feedback](Meeting-Reality).  We would rather carry [Complexity Risk](Complexity-Risk) than take on more attendant [Schedule Risk](Scarcity-Risk#schedule-risk).
+Building a low-complexity first-time solution is often a waste:  in the first version, we're usually interested in reducing [Feature RIsk](Feature-Risk) as fast as possible. That is, putting working software in front of users to get [feedback](Meeting-Reality).  We would rather carry [Complexity Risk](Complexity-Risk) than take on more attendant [Schedule Risk](Scarcity-Risk#schedule-risk).
 
 So a quick-and-dirty, over-complex implementation mitigates the same [Feature Risk](Feature-Risk) and allows you to [Meet Reality](Meeting-Reality) faster.  
 
@@ -244,7 +244,7 @@ At this point, you realise you're in a **Dead End**:
   
  - **Option 1: Continue.** You carry on making minor incremental improvements to the accounting authentication system (carrying the extra [Complexity Risk](Complexity-Risk) of the duplicated functionality).
  - **Option 2: Merge.** You rip out the accounting authentication system, and merge in the Approvals authentication system, consuming lots of development time in the process, due to the difficulty in migrating users from the old to new way of working.  There is [Implementation Risk](Feature-Risk#implementation-risk) here.
- - **Option 3: Remove** You start again, trying to take into account both sets of requirements at the same time, again, possibly surfacing new hidden [Complexity Risk](Complexity-Risk) due to the combined approach.  Rewriting code or a whole project can _seem_ like a way to mitigate [Complexity Risk](Complexity-Risk), but it usually doesn't work out too well.  As Joel Spolsky says:
+ - **Option 3: Remove.** You start again, trying to take into account both sets of requirements at the same time, again, possibly surfacing new hidden [Complexity Risk](Complexity-Risk) due to the combined approach.  Rewriting code or a whole project can _seem_ like a way to mitigate [Complexity Risk](Complexity-Risk), but it usually doesn't work out too well.  As Joel Spolsky says:
 
 > There’s a subtle reason that programmers always want to throw away the code and start over. The reason is that they think the old code is a mess. And here is the interesting observation: they are probably wrong. The reason that they think the old code is a mess is because of a cardinal, fundamental law of programming:  _It’s harder to read code than to write it._    - [Things You Should Never Do, Part 1, _Joel Spolsky_](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)
 

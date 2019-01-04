@@ -58,7 +58,7 @@ Let's try and pull this apart:
  - How do we measure this "productivity"?  In Risk-First terms, this is about taking action to _transform_ our current position on the [Risk Landscape](Glossary#risk-landscape) to a position of more favourable risk.  A "10X Developer" then must be able to take actions that have much higher [Pay-Off](Glossary#pay-off) than a "1X Developer".  That is, mitigating more [existing risk](Glossary#risk), and generating less [Attendant Risk](Glossary#attendant-risk).  
  - It stands to reason then, that someone [taking action](Glossary#taking-action) _faster_ will leaving us with less [Schedule Risk](Scarcity-Risk#schedule-risk).
  - However, if they are _more expensive_, they may leave us with greater [Funding Risk](Scarcity-Risk#funding-risk) afterwards.
- - But, [Schedule Risk](Scarcity-Risk#schedule-risk) isn't the only risk being transformed:   The result might be bugs, expensive new dependencies or spaghetti-code complexity.
+ - But, [Schedule Risk](Scarcity-Risk#schedule-risk) isn't the only risk being transformed:   the result might be bugs, expensive new dependencies or spaghetti-code complexity.
  - The "10X" developer _must_ also leave behind less of these kind of risks too.
  - That means that the "10X Developer" isn't merely faster, but _taking different actions_.  They are able to use their talent and experience to see actions with greater pay-off than the 1X Developer.  
  
@@ -149,16 +149,16 @@ Well, no.  First, how to choose the time period? [Schedule Risk](Scarcity-Risk#s
 
 Second, the strategy of picking the two-day action with the greatest [Pay-Off](Glossary#pay-off) is _often good_.  (After all, this is just [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent), and that's a perfectly good way for training [Machine Learning](https://en.wikipedia.org/wiki/Machine_learning) systems.)  However, just like following a river downhill from the top of a mountain will _often_ get you to the sea, it probably won't take the shortest path, and sometimes you'll get stuck at a lake.  
 
-The choice of using gradient descent means that you have given up on [Goals](Glossary#goal-in-mind):  Essentially, we have here the difference between "Walking towards a destination" and "Walking downhill".  Or, if you like, a planned economy and a market economy.  But, we don't live in _either_: everyone lives in some mixture of the two:  our governments _have plans_ for big things like roads and hospitals, and taxes.  Other stuff, they leave to the whims of supply and demand.   A project ends up being the same.
+The choice of using gradient descent means that you have given up on [Goals](Glossary#goal-in-mind):  essentially, we have here the difference between "Walking towards a destination" and "Walking downhill".  Or, if you like, a planned economy and a market economy.  But, we don't live in _either_: everyone lives in some mixture of the two:  our governments _have plans_ for big things like roads and hospitals, and taxes.  Other stuff, they leave to the whims of supply and demand.   A project ends up being the same.
 
 ## Risk-First Estimating
 
 Let's figure out what we can take away from the above experiences:
 
- - **From the "10X Developer" Saw:** the difference made by experience implies that a lot of the effort on a project comes from [Learning Curve Risk](Communication-Risk#learning-curve-risk) and [Dead End Risk](Complexity-Risk#dead-end-risk).  
- - **From "Quality, Speed, Cost":** we need to be considering _all_ risks, not just some arbitrary milestones on a project plan.  Project plans can always be gamed, and you can always leave risks unaccounted for in order to hit the goals.
- - **From the Parkinson's Law:** giving people a _time budget_, you absolve them from [Schedule Risk](Scarcity-Risk#schedule-risk)... at least until they realise they're going to overrun.   This gives them one less dimension of risk to worry about, but means they end up taking all the time you give them, because they are optimising over the remaining risks.
- - Finally, the lesson from Agile Estimation is that _just iterating_ is sometimes not as efficient as _using your intuition and experience_ to find a more optimal path.  
+ - **From the "10X Developer" Saw**: the difference made by experience implies that a lot of the effort on a project comes from [Learning Curve Risk](Communication-Risk#learning-curve-risk) and [Dead End Risk](Complexity-Risk#dead-end-risk).  
+ - **From "Quality, Speed, Cost"**: we need to be considering _all_ risks, not just some arbitrary milestones on a project plan.  Project plans can always be gamed, and you can always leave risks unaccounted for in order to hit the goals.
+ - **From the Parkinson's Law**: giving people a _time budget_, you absolve them from [Schedule Risk](Scarcity-Risk#schedule-risk)... at least until they realise they're going to overrun.   This gives them one less dimension of risk to worry about, but means they end up taking all the time you give them, because they are optimising over the remaining risks.
+ - Finally, the lesson from **Agile Estimation** is that _just iterating_ is sometimes not as efficient as _using your intuition and experience_ to find a more optimal path.  
  
 How can we synthesise this knowledge, along with what we've learned into something that makes more sense?
 
@@ -245,7 +245,7 @@ Let's get back to Bill and Carl.  What went wrong between points `(1)` and `(2)`
 
 #### Tip #5: Picture Worrying Futures
 
-The Bill/Carl problem is somewhat trivial (not to mention likely fictional).  How about one from real life?  On a project I was working on in November some years ago, we had two pieces of functionality we needed: Bulk Uploads and Spock Integration.  (It doesn't really matter what these are).  The bulk uploads would be useful _now_.  But, the Spock Integration wasn't due until January.  In the Spock estimation meeting I wrote the following note:
+The Bill/Carl problem is somewhat trivial (not to mention likely fictional).  How about one from real life?  On a project I was working on in November some years ago, we had two pieces of functionality we needed: "Bulk Uploads" and "Spock Integration".  (It doesn't really matter what these are).  The bulk uploads would be useful _now_.  But, the Spock Integration wasn't due until January.  In the Spock estimation meeting I wrote the following note:
 
 > "Spock estimates were 4, 11 and 22 until we broke it down into tasks.  Now, estimates are above 55 for the whole piece.  And worryingly, we probably don’t have all the tasks.  We know we need bulk uploads in November.  Spock is January.  So, do bulk uploads? "
 

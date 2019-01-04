@@ -12,11 +12,11 @@ As we discussed in [Complexity Risk](Complexity-Risk), there is always the chanc
 
 [Boundary Risk](Boundary-Risk) is an emergent risk, which exists at the intersection of [Complexity Risk](Complexity-Risk), [Dependency Risk](Dependency-Risk) and [Communication Risk](Communication-Risk).  Because of that, it's going to take a bit of time to pick it apart and understand it, so we're going to build up to this in stages.
 
-Let's start with an obvious example:  Say you want to learn to play some music.  There are a _multitude_ of options available to you, and you might choose an _uncommon_ instrument like a [Balalaika](https://en.wikipedia.org/wiki/Balalaika), or you might choose a _common_ one like a piano or guitar.   In any case, once you start learning this instrument, you have picked up the three risks from the diagram above:  
+Let's start with an obvious example:  say you want to learn to play some music.  There are a _multitude_ of options available to you, and you might choose an _uncommon_ instrument like a [Balalaika](https://en.wikipedia.org/wiki/Balalaika), or you might choose a _common_ one like a piano or guitar.   In any case, once you start learning this instrument, you have picked up the three risks from the diagram above:  
 
- - **[Dependency Risk](Dependency-Risk):** You have a _physical_ [Dependency](Dependency-Risk) on it in order to play music, so get to the music shop and buy one.
- - **[Communication Risk](Communication-Risk):**  You have to _communicate_ with the instrument in order to get it to make the sounds you want.  And you have [Learning Curve Risk](Communication-Risk#learning-curve-risk) in order to be able to do that.
- - **[Complexity Risk](Complexity-Risk):** As _a music playing system_, you now have an extra component (the instrument), with all the attendant complexity of looking after that instrument, tuning it, and so on.
+ - **[Dependency Risk](Dependency-Risk)**: You have a _physical_ [Dependency](Dependency-Risk) on it in order to play music, so get to the music shop and buy one.
+ - **[Communication Risk](Communication-Risk)**:  You have to _communicate_ with the instrument in order to get it to make the sounds you want.  And you have [Learning Curve Risk](Communication-Risk#learning-curve-risk) in order to be able to do that.
+ - **[Complexity Risk](Complexity-Risk)**: As _a music playing system_, you now have an extra component (the instrument), with all the attendant complexity of looking after that instrument, tuning it, and so on.
 
 Those risks are true for _any_ instrument you choose.  However, if you choose the _uncommon_ instrument you have _worse_ [Boundary Risk](Boundary-Risk), because the _ecosystem_ is smaller.   It might be hard to find a tutor, or a band needing a balalaika, and you're unlikely to find one in a friend's house (compared to the guitar, say).  
 
@@ -137,7 +137,7 @@ Each new version has a greater functional scope than the one before (pushing bac
 
 #### 3.   Focus vs Over-Reach
 
-![The Peter Principle:  Backward Compatibility + Extension leads to complexity and learning curve risk](images/generated/risks/boundary/boundary-risk2.png)
+![The Peter Principle.  Backward Compatibility + Extension leads to complexity and learning curve risk](images/generated/risks/boundary/boundary-risk2.png)
 
 You can see in the diagram above the Peter Principle at play:  as more responsibility is given to a dependency, the more complex it gets, and the greater the learning curve to work with it.  Large ecosystems like Java react to [Learning Curve Risk](Communication-Risk#learning-curve-risk) by having copious amounts of literature to read or buy to help, but it is still off-putting.
 
@@ -176,7 +176,7 @@ Standards allow us to achieve the same thing, in one of two ways:
 
 1.  **Abstract over the ecosystems.**  Provide a _standard_ protocol (a _lingua franca_) which can be converted down into the protocol of any of a number of competing ecosystems.
 
- - [C](https://en.wikipedia.org/wiki/C_(programming_language)): The C programming language provided a way to get the same programs compiled against different CPU instruction sets, therefore providing some _portability_ to code.  The problem was, each different operating system would still have it's own libraries, and so to support multiple operating systems, you'd have to write code against multiple different libraries. 
+ - The [C](https://en.wikipedia.org/wiki/C_(programming_language)) programming language provided a way to get the same programs compiled against different CPU instruction sets, therefore providing some _portability_ to code.  The problem was, each different operating system would still have it's own libraries, and so to support multiple operating systems, you'd have to write code against multiple different libraries. 
 
  - [Java](https://en.wikipedia.org/wiki/Java_(programming_language)) took what C did and went one step further, providing interoperability at the library level. Java code could run anywhere where Java was installed. 
 
@@ -184,7 +184,7 @@ Standards allow us to achieve the same thing, in one of two ways:
 
  - [ASCII](https://en.wikipedia.org/wiki/ASCII): fixed the different-character-sets boundary risk by being a standard that others could adopt.  Before everyone agreed on ASCII, copying data from one computer system to another was a massive pain, and would involve some kind of translation.  [Unicode](https://en.wikipedia.org/wiki/Unicode) continues this work. 
 
- - [Internet Protocol](https://en.wikipedia.org/wiki/Internet_Protocol): As we saw in [Communication Risk](Communication-Risk#protocol-risk), the Internet Protocol (IP) is the _lingua franca_ of the modern Internet.  However, at one period of time, there were many competing standards.  and IP was the ecosystem that "won", and was subsequently standardised by the [IETF](https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force).  This is actually an example of _both_ approaches:  as we saw in [Communication Risk](Communication-Risk), Internet Protocol is also an abstraction over lower-level protocols.
+ - [Internet Protocol](https://en.wikipedia.org/wiki/Internet_Protocol).  As we saw in [Communication Risk](Communication-Risk#protocol-risk), the Internet Protocol (IP) is the _lingua franca_ of the modern Internet.  However, at one period of time, there were many competing standards.  and IP was the ecosystem that "won", and was subsequently standardised by the [IETF](https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force).  This is actually an example of _both_ approaches:  as we saw in [Communication Risk](Communication-Risk), Internet Protocol is also an abstraction over lower-level protocols.
  
 ## Boundary Risk Cycle
 
@@ -202,12 +202,12 @@ Boundary Risk seems to progress in cycles.  As a piece of technology becomes mor
 
 Although ecosystems are one very pernicious type of boundary in software development, it's worth pointing out that [Boundary Risk](Boundary-Risk) occurs all the time.  Let's look at some ways:
 
-- **Configuration**:  When software has to be deployed onto a server, there has to be configuration (usually on the command line, or via configuration property files) in order to bridge the boundary between the _environment it's running in_ and the _software being run_.  Often, this is setting up file locations, security keys and passwords, and telling it where to find other files and services.  
-- **Integration Testing**:  Building a unit test is easy.  You are generally testing some code you have written, aided with a testing framework.  Your code and the framework are both written in the same language, which means low boundary risk.  But, to _integration test_ you need to step outside this boundary and so it becomes much harder.  This is true whether you are integrating with other systems (providing or supplying them with data) or parts of your own system (say testing the client-side and server parts together).  
-- **User Interface Testing**:  If you are supplying a user-interface, then the interface with the user is already a complex, under-specified risky [protocol](Communication-Risk#protocol-risk).  Although tools exist to automate UI testing (such as [Selenium](https://en.wikipedia.org/wiki/Selenium_(software)), these rarely satisfactorily mitigate this [protocol risk](Communication-Risk#protocol-risk):  can you be sure that the screen hasn't got strange glitches, that the mouse moves correctly, that the proportions on the screen are correct on all browsers?  
-- **Jobs**:  When you pick a new technology to learn and add to your CV, it's worth keeping in mind how useful this will be to you in the future.   It's career-limiting to be stuck in a dying ecosystem and need to retrain.
-- **Teams**:  if you're asked to build a new tool for an existing team, are you creating [Boundary Risk](Boundary-Risk) by using tools that the team aren't familiar with?
-- **Organisations**: Getting teams or departments to work with each other often involves breaking down [Boundary Risk](Boundary-Risk).  Often the departments use different tool-sets or processes, and have different goals making the translation harder. 
+- **Configuration**.  When software has to be deployed onto a server, there has to be configuration (usually on the command line, or via configuration property files) in order to bridge the boundary between the _environment it's running in_ and the _software being run_.  Often, this is setting up file locations, security keys and passwords, and telling it where to find other files and services.  
+- **Integration Testing**.  Building a unit test is easy.  You are generally testing some code you have written, aided with a testing framework.  Your code and the framework are both written in the same language, which means low boundary risk.  But, to _integration test_ you need to step outside this boundary and so it becomes much harder.  This is true whether you are integrating with other systems (providing or supplying them with data) or parts of your own system (say testing the client-side and server parts together).  
+- **User Interface Testing**.  If you are supplying a user-interface, then the interface with the user is already a complex, under-specified risky [protocol](Communication-Risk#protocol-risk).  Although tools exist to automate UI testing (such as [Selenium](https://en.wikipedia.org/wiki/Selenium_(software)), these rarely satisfactorily mitigate this [protocol risk](Communication-Risk#protocol-risk):  can you be sure that the screen hasn't got strange glitches, that the mouse moves correctly, that the proportions on the screen are correct on all browsers?  
+- **Jobs**.  When you pick a new technology to learn and add to your CV, it's worth keeping in mind how useful this will be to you in the future.   It's career-limiting to be stuck in a dying ecosystem and need to retrain.
+- **Teams**.  if you're asked to build a new tool for an existing team, are you creating [Boundary Risk](Boundary-Risk) by using tools that the team aren't familiar with?
+- **Organisations**. Getting teams or departments to work with each other often involves breaking down [Boundary Risk](Boundary-Risk).  Often the departments use different tool-sets or processes, and have different goals making the translation harder. 
 
 ## Likelihood of Change
 
@@ -227,9 +227,9 @@ This third point is perhaps the most interesting aspect of [Boundary Risk](Bound
 
 In [Feature Risk](Feature-Risk#feature-drift-risk), we saw that the features people need change over time.  Let's get more specific about this: 
  
-- **Human need is [Fractal](https://en.wikipedia.org/wiki/Fractal):**  This means that over time, software products have evolved to more closely map to human needs.   Software that would have delighted us ten years ago lacks the sophistication we expect today.
-- **Software and hardware are both improving with time:** due to evolution and the ability to support greater and greater levels of complexity.
-- **Abstractions accrete too:**  As we saw in [Process Risk](Process-Risk), we _encapsulate_ earlier abstractions in order to build later ones.
+- **Human need is [Fractal](https://en.wikipedia.org/wiki/Fractal)**:  This means that over time, software products have evolved to more closely map to human needs.   Software that would have delighted us ten years ago lacks the sophistication we expect today.
+- **Software and hardware are both improving with time**: due to evolution and the ability to support greater and greater levels of complexity.
+- **Abstractions accrete too**:  As we saw in [Process Risk](Process-Risk), we _encapsulate_ earlier abstractions in order to build later ones.
 
 The only thing we can expect in the future is that the lifespan of any ecosystem will follow the arc shown in the above diagram, through creation, adoption, growth, use and finally either be abstracted over or abandoned.  
 

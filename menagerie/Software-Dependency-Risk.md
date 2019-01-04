@@ -24,7 +24,7 @@ function out() {                           (7 symbols)
 
 Which had **26** symbols in it.  
 
-Now, here's the cheat:  The `repeat()` function was built into Javascript in 2015 in [ECMAScript 6.0](http://www.ecma-international.org/ecma-262/6.0/).  If we'd had to program it ourselves, we might have added this:
+Now, here's the cheat:  the `repeat()` function was built into Javascript in 2015 in [ECMAScript 6.0](http://www.ecma-international.org/ecma-262/6.0/).  If we'd had to program it ourselves, we might have added this:
 
 ```javascript
 function repeat(s,n) {                     (10 symbols)
@@ -47,7 +47,7 @@ function out() {                           (7 symbols)
 
 .. and re-encode to **14** symbols.  Now, clearly there are some problems with all this:
 
-1.  **Language Matters:**  the Kolmogorov complexity is dependent on the language, and the features the language has built in. <!-- tweet-end --> 
+1.  **Language Matters**:  the Kolmogorov complexity is dependent on the language, and the features the language has built in. <!-- tweet-end --> 
 2.  **Exact Kolmogorov complexity is uncomputable anyway:**  Since it's the _theoretical_ minimum program length, it's a fairly abstract idea, so we shouldn't get too hung up on this.  There is no function to be able to say, "what's the Kolmogorov complexity of string X"
 3.  **What is this new library function we've created?**   Is `abcdRepeater` going to be part of _every_ Javascript?  If so, then we've shifted [Codebase Risk](Complexity-Risk) away from ourselves, but we've pushed [Communication Risk](Communication-Risk) and [Dependency Risk](Dependency-Risk) onto every _other_ user of Javascript. (Why these?  Because `abcdRepeater` will be clogging up the documentation and other people will rely on it to function correctly.)
 4.  **Are there equivalent functions for every single other string?**  If so, then compilation is no longer a tractable problem because now we have a massive library of different `XXXRepeater` functions to compile against to see if it is...  So, what we _lose_ in [Codebase Risk](Complexity-Risk#codebase-risk) we gain in [Dependency Risk](Complexity-Risk#space-and-time-complexity).
@@ -123,9 +123,9 @@ But it also hugely increases [Communication Risk](Communication-Risk) because no
 
 There are a couple of ways to do this:
 
- - **Standards**:  If component **B** is a database, a queue, mail gateway or something else with a standard interface, then you're in luck.   Write **A** to those standards, and find a cheap, simple implementation to test with.  This gives you time to sort out exactly what implementation of **B** you're going for.  This is not a great long-term solution, because obviously, you're not using the _real_ dependency- you might get surprised when the behaviour of the real component is subtly different.  But it can reduce [Schedule Risk](Scarcity-Risk#schedule-risk) in the short-term.
+ - **Standards**:  if component **B** is a database, a queue, mail gateway or something else with a standard interface, then you're in luck.   Write **A** to those standards, and find a cheap, simple implementation to test with.  This gives you time to sort out exactly what implementation of **B** you're going for.  This is not a great long-term solution, because obviously, you're not using the _real_ dependency- you might get surprised when the behaviour of the real component is subtly different.  But it can reduce [Schedule Risk](Scarcity-Risk#schedule-risk) in the short-term.
 
- - **Coding To Interfaces**:  If standards aren't an option, but the surface area of **B** that **A** uses is quite small and obvious, you can write a small interface for it, and work behind that, using a [Mock](https://en.wikipedia.org/wiki/Mock_object) for **B** while you're waiting for finished component.  Write the interface to cover only what **A** _needs_, rather than everything that **B** _does_ in order to minimise the risk of [Leaky Abstractions](https://en.wikipedia.org/wiki/Leaky_abstraction).
+ - **Coding To Interfaces**:  if standards aren't an option, but the surface area of **B** that **A** uses is quite small and obvious, you can write a small interface for it, and work behind that, using a [Mock](https://en.wikipedia.org/wiki/Mock_object) for **B** while you're waiting for finished component.  Write the interface to cover only what **A** _needs_, rather than everything that **B** _does_ in order to minimise the risk of [Leaky Abstractions](https://en.wikipedia.org/wiki/Leaky_abstraction).
 
 ![Coding to a standard on an interface breaks the dependency on unwritten software](images/generated/risks/software-dependency/unwritten-mitigation.png)
 
@@ -141,8 +141,8 @@ In essence, this is [Conway's Law](https://en.wikipedia.org/wiki/Conways_law):
 
 By choosing a particular software library, we are making a move on the [Risk Landscape](Risk-Landscape) in the hope of moving to place with more favourable risks. <!-- tweet-end --> Typically, using library code offers a [Schedule Risk](Scarcity-Risk#schedule-risk) and [Complexity Risk](Complexity-Risk) [Silver Bullet](Silver-Bullets) - a high-speed route over the risk landscape to somewhere nearer where we want to be.  But, in return we expect to pick up:
 
-- **[Communication Risk](Communication-Risk):** because we now have to learn how to communicate with this new dependency.
-- **[Boundary Risk](Boundary-Risk):** - because now are limited to using the functionality provided by this dependency.  We have chosen it over alternatives and changing to something else would be more work and therefore costly.   
+- **[Communication Risk](Communication-Risk)**: because we now have to learn how to communicate with this new dependency.
+- **[Boundary Risk](Boundary-Risk)**: - because now are limited to using the functionality provided by this dependency.  We have chosen it over alternatives and changing to something else would be more work and therefore costly.   
 
 But, it's quite possible that we could wind up in a worse place than we started out, by using a library that's out-of-date, riddled with bugs or badly supported.  i.e. Full of new, hidden [Feature Risk](Feature-Risk).  
 
@@ -164,9 +164,9 @@ In the table below, I am summarising three different sources (linked at the end 
 
 The diagram above summarises the risks raised in some of the literature.  Here are some take-aways:
 
- - **[Feature Risk](Feature-Risk) is a big concern:**   How can you be sure that the project will do what you want it to do ahead of schedule?  Will it contain bugs or missing features?  By looking at factors like _release frequency_ and _size of the community_ you get a good feel for this which is difficult to fake.
- - **[Boundary Risk](Boundary-Risk) is also very important:**  You are going to have to _live_ with your choices for the duration of the project, so it's worth spending the effort to either ensure that you're not going to regret the decision, or that you can change direction later.
- - **Third is [Communication Risk](Communication-Risk):**  how well does the project deal with it's users?  If a project is "famous", then it has communicated its usefulness to a wide, appreciative audience.  Avoiding [Communication Risk](Communication-Risk) is also a good reason to pick _tools you are already familiar with_.
+ - **[Feature Risk](Feature-Risk) is a big concern**:   How can you be sure that the project will do what you want it to do ahead of schedule?  Will it contain bugs or missing features?  By looking at factors like _release frequency_ and _size of the community_ you get a good feel for this which is difficult to fake.
+ - **[Boundary Risk](Boundary-Risk) is also very important**:  You are going to have to _live_ with your choices for the duration of the project, so it's worth spending the effort to either ensure that you're not going to regret the decision, or that you can change direction later.
+ - **Third is [Communication Risk](Communication-Risk)**:  how well does the project deal with it's users?  If a project is "famous", then it has communicated its usefulness to a wide, appreciative audience.  Avoiding [Communication Risk](Communication-Risk) is also a good reason to pick _tools you are already familiar with_.
   
 ![Software Libraries Risk Tradeoff](images/generated/risks/software-dependency/library.png) 
 
@@ -215,7 +215,7 @@ The diagram above summarises the risks raised in some of the available literatur
 
 ## A Matrix of Options
 
-We've looked at just 3 different ways of providing a software dependency: Code-Your-Own, Libaries and SaaS.<!-- tweet-end -->
+We've looked at just 3 different ways of providing a software dependency: Code-Your-Own, Libraries and SaaS.<!-- tweet-end -->
 
 But these are not the only ways to do it, and there's clearly no one _right_ way.   Although here we have looked just at "Commercial SaaS" and "Free Open Source", in reality, these are just points in a two-dimensional space involving _Pricing_ and _Hosting_.   
 
@@ -223,7 +223,7 @@ Let's expand this view slightly and look at where different pieces of software s
 
 ![Software Dependencies, Pricing, Delivery Matrix Risk Profiles](images/generated/risks/software-dependency/software_dependency_table_3_sideways.png)
 
-- Where there is value in **the [Network Effect](https://en.wikipedia.org/wiki/Network_effect):**, it's often a sign that the software will be free, or open source<!-- tweet-end -->:  programming languages and Linux are the obvious examples of this.  Bugs are easier to find when there are lots of eyes looking, and learning the skill to use the software has less [Boundary Risk](Boundary-Risk) if you know you'll be able to use it at any point in the future.
+- Where there is value in **the [Network Effect](https://en.wikipedia.org/wiki/Network_effect)**:, it's often a sign that the software will be free, or open source<!-- tweet-end -->:  programming languages and Linux are the obvious examples of this.  Bugs are easier to find when there are lots of eyes looking, and learning the skill to use the software has less [Boundary Risk](Boundary-Risk) if you know you'll be able to use it at any point in the future.
 - At the other end of the spectrum, clients will happily pay for software if it clearly **reduces [Operational Risk](Operational-Risk)**.  Take [Amazon Web Services (AWS)](https://en.wikipedia.org/wiki/Amazon_Web_Services).  The essential trade here is that you substitute the complexity of hosting and maintaining various pieces of hardware, in exchange for metered payments ([Funding Risk](Scarcity-Risk#Funding-Risk) for you).  Since the AWS _interfaces_ are specific to Amazon, there is significant [Boundary Risk](Boundary-Risk) in choosing this option.
 - In the middle there are lots of **substitute options** and therefore high competition.  Because of this, prices are pushed towards zero, and and therefore often advertising is used to monetarise the product.  [Angry Birds](https://en.wikipedia.org/wiki/Angry_Birds) is a classic example:  initially, it had demo and paid versions, however [Rovio](https://en.wikipedia.org/wiki/Rovio_Entertainment) discovered there was much more money to be made through advertising than from the [paid-for app](https://www.deconstructoroffun.com/blog/2017/6/11/how-angry-birds-2-multiplied-quadrupled-revenue-in-a-year).
 

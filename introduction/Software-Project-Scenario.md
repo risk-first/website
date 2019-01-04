@@ -59,7 +59,7 @@ In 2016, Ashley Maddison, a website specialising in aiding extra-marital affairs
 Can our risk model explain what happened here?
 
 - It's possible that for the developers in question, security concerns were a [Hidden Risk](Glossary#Hidden-Risk): they were not aware of the dangers of being hacked.
-- It's possible that _at the time of setting up the security arrangements_, stronger security was considered, but the evaluation of the risk was low:  Perhaps, the risk of not shipping quickly was deemed greater.  And so they ignored this concern.
+- It's possible that _at the time of setting up the security arrangements_, stronger security was considered, but the evaluation of the risk was low:  perhaps, the risk of not shipping quickly was deemed greater.  And so they ignored this concern.
 - It's also possible that _for Ashley Maddison_ the perceived impact of any data-breach was considered low.  The impact is on the _customers_, rather than the _company_.
 - But, as the number of users of the sites increased, the risk increased too, but there was (apparently) no re-evaluation of the risk otherwise they would have addressed it.  This was a costly _failure to update the [Internal Model](Glossary#Internal-Model)_.
 

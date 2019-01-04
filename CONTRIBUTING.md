@@ -47,7 +47,7 @@ git@github.com:risk-first/website.wiki.git
 
 ~~And then submit pull-requests to get your work merged into the `master` branch for everyone to see.~~
 
-**Note:** Github doesn't support pull-requests for wiki pages (yet).  Instead raise an issue on this project and give details of your clone within github so that we can pull from it.
+**Note**: Github doesn't support pull-requests for wiki pages (yet).  Instead raise an issue on this project and give details of your clone within github so that we can pull from it.
 
 ## Credit
 

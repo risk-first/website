@@ -54,7 +54,7 @@ At this point, you might be wondering what all the fuss is about.   This stuff i
  
  > "We’ve survived 200,000 years as humans.  Don’t you think there’s a reason why we survived? We’re good at risk management. " - [Nassim Nicholas Taleb, author of _The Black Swan_](https://www.zerohedge.com/news/2018-03-13/taleb-best-thing-society-bankruptcy-goldman-sachs)
  
-The problem is that although all this _is_ obvious, it appears to have largely escaped codification within the literature, practices and methodologies of software development.  Further, while it is obvious, there is a huge hole:   Successful De-Risking depends heavily on individual experience and talent.  
+The problem is that although all this _is_ obvious, it appears to have largely escaped codification within the literature, practices and methodologies of software development.  Further, while it is obvious, there is a huge hole:   successful De-Risking depends heavily on individual experience and talent.  
 
 In the [next section](One-Size-Fits-No-One), we are going to briefly look at software methodology, and how it comes up short in when addressing risk.
 

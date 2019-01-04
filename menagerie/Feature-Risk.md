@@ -21,7 +21,7 @@ Feature risks are mitigated by talking to clients and building things, which lea
  
 ## Implementation Risk
 
-[Feature Risk](Feature-Risk) also includes things that don't work as expected<!-- tweet-end -->: That is to say, [bugs](https://en.wikipedia.org/wiki/Software_bug).   Although the distinction between "a missing feature" and "a broken feature" might be worth making in the development team, we can consider these both the same kind of risk:  _the software doesn't do what the user expects_.
+[Feature Risk](Feature-Risk) also includes things that don't work as expected<!-- tweet-end -->: that is to say, [bugs](https://en.wikipedia.org/wiki/Software_bug).   Although the distinction between "a missing feature" and "a broken feature" might be worth making in the development team, we can consider these both the same kind of risk:  _the software doesn't do what the user expects_.
 
 ![Implementation Risk](images/generated/risks/feature/feature-implementation-risk.png) 
 
@@ -106,9 +106,9 @@ So far in this section, we've simply seen a bunch of different types of [Feature
 
 The [Feature Risks](Feature-Risk) identified here basically exist in a space with at least 3 dimensions:
 
- - **Fit**: How well the features fit for a particular client.
- - **Audience**:  The range of clients (the _market_) that may be able to use this feature.
- - **Evolution**:  The way the fit and the audience changes and evolves as time goes by. 
+ - **Fit**: how well the features fit for a particular client.
+ - **Audience**:  the range of clients (the _market_) that may be able to use this feature.
+ - **Evolution**:  the way the fit and the audience changes and evolves as time goes by. 
  
 Let's examine each in turn.
  
@@ -120,11 +120,11 @@ Darwin's conception of fitness was not one of athletic prowess, but how well an 
 
 [Feature Fit Risk](#feature-fit-risk), [Conceptual Integrity Risk](#conceptual-integrity-risk) and [Implementation Risk](#implementation-risk) all hint at different aspects of this "fitness".   We can conceive of them as the gaps between the following entities:
  
- - Perceived Need:  What the developers _think_ the users want.
- - Expectation: What the user _expects_.
- - Reality: What they actually _get_.
+ - **Perceived Need**:  what the developers _think_ the users want.
+ - **Expectation**: what the user _expects_.
+ - **Reality**: what they actually _get_.
 
-![Feature Risks Assembled:  Fit Risks, shown as _gaps_, as in the _Service Quality Model_](images/generated/risks/feature/all-feature-risk.png) 
+![Feature Risks Assembled - Fit Risks, shown as _gaps_, as in the _Service Quality Model_](images/generated/risks/feature/all-feature-risk.png) 
 
 For further reading, you can check out [The Service Quality Model](http://en.wikipedia.org/SERVQUAL), which the diagram above is derived from.  This model analyses the types of _quality gaps_ in services, and how consumer expectations and perceptions of a service arise.
 

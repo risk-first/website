@@ -8,10 +8,10 @@ Now, let's look at the everyday process of developing _a new feature_ on a softw
 
 Let's ignore for now the specifics of what methodology is being used - we'll come to that later.  Let's say your team have settled for a process something like the following:
 
-1.  **Specification**: A new feature is requested somehow, and a business analyst works to specify it.
-2.  **Code And Unit Test**: A developer writes some code, and some unit tests.
-3.  **Integration**: They integrate their code into the code base.
-4.  **UAT**: They put the code into a User Acceptance Test (UAT) environment, and user(s) test it.
+1.  **Specification**: a new feature is requested somehow, and a business analyst works to specify it.
+2.  **Code And Unit Test**: a developer writes some code, and some unit tests.
+3.  **Integration**: they integrate their code into the code base.
+4.  **UAT**: they put the code into a User Acceptance Test (UAT) environment, and user(s) test it.
 5.  ... All being well, the code is **Released to Production**.
 
 ![A Simple Development Process](images/generated/introduction/development_process_1.png)
@@ -47,7 +47,7 @@ We can all see this might end in disaster, but why?
 
 Two reasons: 
 
-1.  You're [Meeting Reality](Glossary#meet-reality) all-in-one-go:  All of these risks materialize at the same time, and you have to deal with them all at once.
+1.  You're [Meeting Reality](Glossary#meet-reality) all-in-one-go:  all of these risks materialize at the same time, and you have to deal with them all at once.
 2.  Because of this, at the point you put code into the hands of your users, your [Internal Model](Glossary#Internal-Model) is at its least-developed.  All the [Hidden Risks](Glossary#hidden-risk) now need to be dealt with at the same time, in production.
 
 ## Applying the Process

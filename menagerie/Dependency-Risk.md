@@ -2,7 +2,7 @@
 
 [Dependency Risk](Dependency-Risk) is the risk you take on whenever you have a dependency on something (or someone) else.   <!-- tweet-end -->
 
-One simple example could be that the software service you write might depend on hardware to run on:  If the server goes down, the service goes down too.  In turn, the server depends on electricity from a supplier, as well as a network connection from a provider.  If either of these dependencies aren't met, the service is out of commission.
+One simple example could be that the software service you write might depend on hardware to run on:  if the server goes down, the service goes down too.  In turn, the server depends on electricity from a supplier, as well as a network connection from a provider.  If either of these dependencies aren't met, the service is out of commission.
 
 Dependencies can be on _events_, _people_, _teams_, _work_, _processes_, _software_, _services_, _money_ and pretty much _any resource_, and while every project will need some of those, they also _add risk_ to any project because the reliability of the project itself is now a function involving the reliability of the dependency.  
 
@@ -58,7 +58,7 @@ This points at the problem that when we use an external dependency, we are at th
 
 Unreliability manifests itself when a dependency fails you under certain sets of circumstances.  It's easy to think about reliability for something like a bus:  sometimes, it's late due to weather, or cancelled due to driver sickness, or the route changes unexpectedly due to road works.  
 
-In software, it's no different:  Unreliability is the flip-side of [Feature Implementation Risk](Feature-risk#implementation-risk).  It's caused in the gap between the real behaviour of the software and the expectations for it.
+In software, it's no different:  _unreliability_ is the flip-side of [Feature Implementation Risk](Feature-risk#implementation-risk).  It's caused in the gap between the real behaviour of the software and the expectations for it.
 
 There is an upper bound on the reliability of the software you write, and this is based on the dependencies you use and (in turn) the reliability of those dependencies:
   

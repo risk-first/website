@@ -114,8 +114,8 @@ If the methodology _fails at a particular scale_, this tells you something about
 
 "Upside Risk" isn't a commonly used term:  industry tends to prefer "value", as in "Is this a value-add project?".  There is plenty of theory surrounding **Value**, such as Porter's [Value Chain](https://en.wikipedia.org/wiki/Value_chain) and [Net Present Value](https://en.wikipedia.org/wiki/Net_present_value).  This is all fine so long as we remember:
 
- - **The probability of [Pay-Off](Glossary#pay-off) is risky**: Since the value is created in the future, we can't be certain about it happening - we should never consider it a done-deal.  **Future Value** is always at risk.  In finance, for example, we account for this in our future cash-flows by discounting them according to the risk of default.
- - **The Pay-Off amount is risky**:  Additionally, whereas in a financial transaction (like a loan, say), we might know the size of a future payment, in IT projects we can rarely be sure that they will deliver a certain return.  On some fixed-contract projects this sometimes is not true: there may be a date when the payment-for-delivery gets made, but mostly we'll be expecting an uncertain pay-off. 
+ - **The probability of [Pay-Off](Glossary#pay-off) is risky**. Since the value is created in the future, we can't be certain about it happening - we should never consider it a done-deal.  **Future Value** is always at risk.  In finance, for example, we account for this in our future cash-flows by discounting them according to the risk of default.
+ - **The Pay-Off amount is risky**.  Additionally, whereas in a financial transaction (like a loan, say), we might know the size of a future payment, in IT projects we can rarely be sure that they will deliver a certain return.  On some fixed-contract projects this sometimes is not true: there may be a date when the payment-for-delivery gets made, but mostly we'll be expecting an uncertain pay-off. 
  - Humans tend to be optimists (especially when there are lots of [Hidden Risks](Glossary#hidden-risk)), hence our focus on Downside Risk.  Sometimes though, it's good to stand back and look at a scenario and think:  am I capturing all the Upside Risk here?
 
 ### Speed
@@ -174,8 +174,8 @@ Under the 20% regime, neither are worth mitigating.  The 20% Discount Rate may r
 
 I have worked in teams sometimes where the blinkers go down, and the only thing that matters is _now_.    Anything with a horizon over a week is irrelevant.   Regimes of such [hyper-inflation](https://en.wikipedia.org/wiki/Hyperinflation) are a sure sign that something has _really broken down_ within a project.  Consider in this case a Discount Factor of 60% per day, and the following risks:
 
-- Risk A: £10 cost, happening _tomorrow_
-- Risk B: £70 cost, happening in _5 days_.  
+- Risk A, £10 cost, happening _tomorrow_
+- Risk B, £70 cost, happening in _5 days_.  
 
 Risk B is almost irrelevant under this regime, as this graph shows:
 
@@ -192,7 +192,7 @@ Under these circumstances, we often see _Pooh-Bear Procrastination_:
 Enough with the numbers and the theory:  Risk-First is an attempt to provide a practical framework, rather than a scientifically rigorous analysis.  For software development, you should probably _give up_ on trying to compute risk numerically.  You _can't_ work out how long a software project will take based purely on an analysis of (say) _function points_.  (Whatever you define them to be).
 
 - First, there isn't enough scientific evidence for an approach like this.  We _can_ look at collected data about IT projects, but techniques and tools advance rapidly.
-- Second,  IT projects have too many confounding factors, such as experience of the teams, 
+- Second, IT projects have too many confounding factors, such as experience of the teams, 
 technologies used etc.  That is, the risks faced by IT projects are _too diverse_ and _hard to quantify_ to allow for meaningful comparison from one to the next.
 - Third, as soon as you _publish a date_ it changes the expectations of the project (see [Student Syndrome](Scarcity-Risk#student-syndrome)).
 - Fourth, metrics get [misused](Map-And-Territory-Risk) and [gamed](Agency-Risk) (as we will see in a later chapter).

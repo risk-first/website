@@ -72,7 +72,7 @@ Both of these are modelled with [Cumulative Distribution](https://en.wikipedia.o
 
 This [Map and Territory Risk](Map-And-Territory-Risk) acts as a "brake" on the **hype** around the idea.  In the diagram, our "hype" curve is calculated as being the same as the "saturation" line, with a subtraction due to [Map and Territory Risk](Map-And-Territory-Risk).  As you can see, "hype" drops fastest at the point where [Map and Territory Risk](Map-And-Territory-Risk) is at it's greatest, and we end up in the "Trough of Disillusionment". 
 
-![Hype Cycle 2: More even growth of  means no "Trough of Disillusionment"](images/numbers/hype2.png)
+![Hype Cycle 2: more even growth of  means no "Trough of Disillusionment"](images/numbers/hype2.png)
 
 As you might expect, the "Trough of Disillusionment" exists because the "saturation" of the idea and the "amount known" about it increase at different rates.
  
@@ -113,7 +113,7 @@ But _correlation_ doesn't imply _causation_.  The _cause_ might be different:
 ![Evolution Feature Risks, as manifested in the Internal Model](images/generated/risks/map-and-territory/map_and_territory_table_3.png)
  
 
-Metrics are seductive because they simplify reality and are easily communicated.  But they _inherently_ contain [Map and Territory Risk](Map-and-territory-risk): By relying _only_ on the metrics, you're not really _seeing_ the reality.  
+Metrics are seductive because they simplify reality and are easily communicated.  But they _inherently_ contain [Map and Territory Risk](Map-and-territory-risk): by relying _only_ on the metrics, you're not really _seeing_ the reality.  
 
 The devil is in the detail.
 
@@ -155,9 +155,9 @@ For Humans, [Map and Territory Risk](Map-And-Territory-Risk) is exacerbated by [
 
 There are _lots_ of cognitive biases.  But let's just look at a couple that are relevant to [Map and Territory Risk](Map-And-Territory-Risk):
 
-- **Availability Heuristic**: People overestimate the importance of knowledge they have been exposed to. 
-- **The Ostrich Effect**:  Which is where dangerous information is ignored or avoided because of the emotions it will evoke.
-- **Bandwagon Effect**:  People like to believe things that other people believe.  (Could this be a factor in the existence of the Hype Cycle?)
+- **Availability Heuristic**: people overestimate the importance of knowledge they have been exposed to. 
+- **The Ostrich Effect**:  which is where dangerous information is ignored or avoided because of the emotions it will evoke.
+- **Bandwagon Effect**:  people like to believe things that other people believe.  (Could this be a factor in the existence of the Hype Cycle?)
 
 ## Hierarchical Organisations
 
@@ -170,9 +170,9 @@ There are _lots_ of cognitive biases.  But let's just look at a couple that are 
 This article identifies the following process:
 
 - **De-sensing**: VW Executives ignored _The Territory_ society around them (such as the green movement), ensuring their maps were out of date.  The top-down culture made it hard for reality to propagate back up the hierarchy.  
-- **Hubris/Absencing**:  They pursued their own metrics of _volume_ and _cost_, rather than seeking out others (a la the Availability Heuristic Bias).  That is, focusing on their own _Map_, which is _easier_ than checking the _Territory_. 
-- **Deception**:  Backed into a corner, engineers had no choice but to find "creative" ways to meet the metrics.
-- **Destruction**: Eventually, the truth comes out, to the detriment of the company, the environment and the shareholders.  As the article's title summarizes "A fish rots from the head down".
+- **Hubris/Absencing**:  they pursued their own metrics of _volume_ and _cost_, rather than seeking out others (a la the Availability Heuristic Bias).  That is, focusing on their own _Map_, which is _easier_ than checking the _Territory_. 
+- **Deception**:  backed into a corner, engineers had no choice but to find "creative" ways to meet the metrics.
+- **Destruction**: eventually, the truth comes out, to the detriment of the company, the environment and the shareholders.  As the article's title summarizes "A fish rots from the head down".
 
 ## Markets
 
