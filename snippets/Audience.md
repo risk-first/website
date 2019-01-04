@@ -2,10 +2,6 @@ This work is intended to be read by people who work on software projects, and es
 
 If you work collaboratively with other people in a software process, you should find Risk-First a useful lexicon of terms to help describe the risks you face.
 
-But here's a warning: this is going to be a depressing book to read.  It is book one of a two-book series, but in **Book One** you only get to meet the bad guy.  
-
-While **Book Two** is all about _how to succeed_, this book is all about how projects _fail_.   In it, we're going to try and put together a framework for understanding the risk of failure, in order that we can reconstruct our understanding of our activities on a project based on avoiding it. 
-
 So, if you are interested in _avoiding your project failing_, this is probably going to be useful knowledge.  
 
 ### For Team Members
