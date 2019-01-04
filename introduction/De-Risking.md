@@ -35,7 +35,7 @@ In part 2, we'll see how **Transfer** of risk is an essential feature of [Softwa
 
 ## Ignore / Accept
 
-**Accepting** a risk is to deal with it when it arises.   One example is the [Key-Man Risk](Scarcity-Risk#staff-risk) involved in having a super-star programmer on the team.  Although there would be fallout if they left, they are often mitigating more risk than they cause.  
+**Accepting** a risk is to deal with it when it arises.   One example is the [Key-Person Risk](Scarcity-Risk#staff-risk) involved in having a super-star programmer on the team.  Although there would be fallout if they left, they are often mitigating more risk than they cause.  
 
 Another example is using particular software dependencies:   building a mobile application which requires a Facebook account to log in might give rise to the risk that people without Facebook accounts can't log in, but might simplify the software to such an extent that it's worthwhile.
 

@@ -124,7 +124,7 @@ They can be encouraged with orthogonal practices such as [team-building exercise
 
 As described above, the job of [Coordination](Coordination-Risk) is [Resource Allocation](Coordination-Risk#problems-of-coordination), and so the skills of staff can potentially be looked at as resources to allocate.  This means handling [Coordination Risk](Coordination-Risk) issues like:
 
- - People leaving, taking their [Internal Models](Glossary#Internal-Model) and expertise with them [Key Man Risk](Scarcity-Risk#Staff-Risk).
+ - People leaving, taking their [Internal Models](Glossary#Internal-Model) and expertise with them [Key Person Risk](Scarcity-Risk#Staff-Risk).
  - People requiring external training, to understand new tools and techniques [Learning-Curve Risk](Communication-Risk#learning-curve-risk).
  - People being protective about their knowledge in order to protect their jobs [Agency Risk](Agency-Risk). 
  - Where there are mixed ability levels, senior developers not helping juniors as it "slows them down".
