@@ -8,7 +8,7 @@ Why bother estimating at all?   There are two reasons why estimates are useful:<
 
 1.  **To allow for the creation of _events_.**  As we saw in [Deadline Risk](Deadline-Risk), if we can put a date on something, we can mitigate lots of [Coordination Risk](Coordination-Risk). Having a _release date_ for a product allows whole teams of people to coordinate their activities in ways that hugely reduce the need for [Communication](Communication-Risk).  "Attack at dawn" allows disparate army units to avoid the [Coordination Risk](Coordination-Risk) inherent in "attack on my signal".  This is a _good reason for estimating_, because by using events you are mitigating [Coordination Risk](Coordination-Risk).  This is often called a _hard deadline_.
 
-2.  **To allow for the estimation of the [Pay-Off](Glossary#pay-off) of an [action](Glossary#taking-action).**  This is a _bad reason for estimating_, as we will discuss in detail below.  But briefly, the main issue is that [Pay-Off](Glossary#pay-off) isn't just about figuring out [Schedule Risk](Scarcity-Risk#schedule-risk) - you should be looking at all the other [Attendant Risks](Glossary#attendant-risk) of the action too.  
+2.  **To allow for the estimation of the [Payoff](Glossary#payoff) of an [action](Glossary#taking-action).**  This is a _bad reason for estimating_, as we will discuss in detail below.  But briefly, the main issue is that [Payoff](Glossary#payoff) isn't just about figuring out [Schedule Risk](Scarcity-Risk#schedule-risk) - you should be looking at all the other [Attendant Risks](Glossary#attendant-risk) of the action too.  
 
 ## How Estimates Fail
 
@@ -55,18 +55,18 @@ So what are we to do?  It's a problem as old as software itself, and in deferenc
 
 Let's try and pull this apart:
 
- - How do we measure this "productivity"?  In Risk-First terms, this is about taking action to _transform_ our current position on the [Risk Landscape](Glossary#risk-landscape) to a position of more favourable risk.  A "10X Developer" then must be able to take actions that have much higher [Pay-Off](Glossary#pay-off) than a "1X Developer".  That is, mitigating more [existing risk](Glossary#risk), and generating less [Attendant Risk](Glossary#attendant-risk).  
+ - How do we measure this "productivity"?  In Risk-First terms, this is about taking action to _transform_ our current position on the [Risk Landscape](Glossary#risk-landscape) to a position of more favourable risk.  A "10X Developer" then must be able to take actions that have much higher [Payoff](Glossary#payoff) than a "1X Developer".  That is, mitigating more [existing risk](Glossary#risk), and generating less [Attendant Risk](Glossary#attendant-risk).  
  - It stands to reason then, that someone [taking action](Glossary#taking-action) _faster_ will leaving us with less [Schedule Risk](Scarcity-Risk#schedule-risk).
  - However, if they are _more expensive_, they may leave us with greater [Funding Risk](Scarcity-Risk#funding-risk) afterwards.
  - But, [Schedule Risk](Scarcity-Risk#schedule-risk) isn't the only risk being transformed:   the result might be bugs, expensive new dependencies or spaghetti-code complexity.
  - The "10X" developer _must_ also leave behind less of these kind of risks too.
- - That means that the "10X Developer" isn't merely faster, but _taking different actions_.  They are able to use their talent and experience to see actions with greater pay-off than the 1X Developer.  
+ - That means that the "10X Developer" isn't merely faster, but _taking different actions_.  They are able to use their talent and experience to see actions with greater Payoff than the 1X Developer.  
  
 ![1X Task vs 10X Task](images/generated/practices/estimates/1x-10x.png)
 
 Does the "10X Developer" even exist?  Crucially, it would seem that such a thing would be predicated on the existence of the "1X Developer", who gets "1X" worth of work done each day.  It's not clear that there is any such thing as an average developer who is mitigating risk at an average rate.  
 
-Even good developers have bad days, weeks or projects.  [Taking Action](Glossary#taking-action) is like placing a bet.  Sometimes you lose and the [Pay-Off](Glossary#pay-off) doesn't appear:
+Even good developers have bad days, weeks or projects.  [Taking Action](Glossary#taking-action) is like placing a bet.  Sometimes you lose and the [Payoff](Glossary#payoff) doesn't appear:
 
  - The Open-Source software you're trying to apply to a problem doesn't solve it in the way you need.
  - A crucial use-case of the problem turns out to change the shape of the solution entirely, leading to lots of rework.
@@ -147,7 +147,7 @@ Well, no.  First, how to choose the time period? [Schedule Risk](Scarcity-Risk#s
 
 > "Story points rate the relative effort of work in a Fibonacci-like format: 0, 0.5, 1, 2, 3, 5, 8, 13, 20, 40, 100. It may sound counter-intuitive, but that abstraction is actually helpful because it pushes the team to make tougher decisions around the difficulty of work. " - [Story Points, _Atlassian_](https://www.atlassian.com/agile/project-management/estimation)
 
-Second, the strategy of picking the two-day action with the greatest [Pay-Off](Glossary#pay-off) is _often good_.  (After all, this is just [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent), and that's a perfectly good way for training [Machine Learning](https://en.wikipedia.org/wiki/Machine_learning) systems.)  However, just like following a river downhill from the top of a mountain will _often_ get you to the sea, it probably won't take the shortest path, and sometimes you'll get stuck at a lake.  
+Second, the strategy of picking the two-day action with the greatest [Payoff](Glossary#payoff) is _often good_.  (After all, this is just [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent), and that's a perfectly good way for training [Machine Learning](https://en.wikipedia.org/wiki/Machine_learning) systems.)  However, just like following a river downhill from the top of a mountain will _often_ get you to the sea, it probably won't take the shortest path, and sometimes you'll get stuck at a lake.  
 
 The choice of using gradient descent means that you have given up on [Goals](Glossary#goal-in-mind):  essentially, we have here the difference between "Walking towards a destination" and "Walking downhill".  Or, if you like, a planned economy and a market economy.  But, we don't live in _either_: everyone lives in some mixture of the two:  our governments _have plans_ for big things like roads and hospitals, and taxes.  Other stuff, they leave to the whims of supply and demand.   A project ends up being the same.
 
@@ -162,7 +162,7 @@ Let's figure out what we can take away from the above experiences:
  
 How can we synthesise this knowledge, along with what we've learned into something that makes more sense?
 
-#### Tip #1: Estimating Should be About _Estimating [Pay Off](Glossary#pay-off)_
+#### Tip #1: Estimating Should be About _Estimating [Payoff](Glossary#payoff)_
 
 For a given [action](Glossary#taking-action) / road-map / business strategy, what [Attendant Risks](Glossary#attendant-risk) are we going to have: 
 
@@ -213,7 +213,7 @@ Although you might have to make the steps of a journey in some order, you can st
 
 The _sensible_ approach would be to test the steps _in order from weakest to strongest_.  This means working out how to meet reality for each risk in turn, in order from biggest risk to smallest.
 
-Often, a _strategy_ will be broken up into multiple actions.  _Which are the riskiest actions?_  Figure this out, using the Risk-First vocabulary and the best experience you can bring to bear, then, perform the actions which [Pay Off](Glossary#pay-off) the biggest risks first.  
+Often, a _strategy_ will be broken up into multiple actions.  _Which are the riskiest actions?_  Figure this out, using the Risk-First vocabulary and the best experience you can bring to bear, then, perform the actions which [Payoff](Glossary#payoff) the biggest risks first.  
 
 As we saw from the "10X Developer" Saw, [Learning Curve Risk](Communication-Risk#learning-curve-risk) and [Dead End Risk](Complexity-Risk#dead-end-risk), are likely to be the biggest risks.  How can we front-load this and tackle these earlier?   
 

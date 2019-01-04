@@ -46,11 +46,11 @@ This turned out to be a mistake:  The internal bureacracy eventually proved too 
 
 This is not a criticism of MongoDB: it's simply a demonstration that sometimes, the cure is worse than the disease.  Successful projects are _always_ trying to _reduce_ [Attendant Risks](Glossary#attendant-risk).  
 
-## Pay-Off
+## Payoff
 
 We can't know in advance how well any action we take will work out.  Therefore, [Taking Action](Glossary#taking-action) is a lot like placing a bet.  
 
-**[Pay Off](Glossary#pay-off)** then is our judgement about whether we expect an action to be worthwhile:  are the risks we escape _worth_ the attendant risks we will encounter?  We should be able to _weigh these separate risks in our hands_ and figure out whether the [Pay off](Glossary#pay-off) makes a given [Action](Glossary#taking-action) worthwhile.  
+**[Payoff](Glossary#payoff)** then is our judgement about whether we expect an action to be worthwhile:  are the risks we escape _worth_ the attendant risks we will encounter?  We should be able to _weigh these separate risks in our hands_ and figure out whether the [Pay off](Glossary#payoff) makes a given [Action](Glossary#taking-action) worthwhile.  
 
 The fruits of this gambling are revealed when we [meet reality](Glossary#meet-reality), and we can see whether our bets were worthwhile. 
 
@@ -88,12 +88,12 @@ But, there is always the opposite opinion:  [You _Are_ Gonna Need It](http://wik
 
 ### Which is right?
 
-Now, we can say:  do the work _if there is a worthwhile [Pay-Off](Glossary#pay-off)_.  
+Now, we can say:  do the work _if there is a worthwhile [Payoff](Glossary#payoff)_.  
 
  - Logging statements are _good_, because otherwise, you're increasing the risk that in production, no one will be able to understand _how the software went wrong_.
  - However, adding them takes time, which might introduce [Schedule Risk](Scarcity-Risk#schedule-risk).
  
-So, it's a trade-off: continue adding logging statements so long as you feel that overall, the activity pays-off reducing overall risk.
+So, it's a trade-off: continue adding logging statements so long as you feel that overall, the activity pays off reducing overall risk.
 
 ## Practice 2: Do The Simplest Thing That Could Possibly Work
 
@@ -104,12 +104,12 @@ Our risk-centric view of this strategy would be:
 - Every action you take on a project has it's own [Attendant Risks](Glossary#attendant-risk).
 - The bigger or more complex the action, the more [Attendant Risk](Glossary#attendant-risk) it'll have.
 - The reason you're taking action _at all_ is because you're trying to reduce risk elsewhere on the project 
-- Therefore, the biggest [Pay-Off](Glossary#pay-off) is likely to be the one with the least [Attendant Risk](Glossary#attendant-risk).
+- Therefore, the biggest [Payoff](Glossary#payoff) is likely to be the one with the least [Attendant Risk](Glossary#attendant-risk).
 - So, usually this is going to be the simplest thing.
 
 So, "Do The Simplest Thing That Could Possibly Work" is really a helpful guideline for Navigating the [Risk Landscape](Risk-Landscape), but this analysis shows clearly where it's left wanting:
 
- - _Don't_ do the simplest thing if there are other things with a better [Pay-Off](Glossary#pay-off) available. 
+ - _Don't_ do the simplest thing if there are other things with a better [Payoff](Glossary#payoff) available. 
 
 ## Summary
 

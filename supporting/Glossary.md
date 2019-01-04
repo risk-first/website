@@ -30,9 +30,9 @@ Obviously, because we've all had different experiences, and our brains are wired
 
 Any moment where we test an [Internal Model](#internal-model) by exposing it's predictive power against reality.  Note that "Reality" might be limited in some way, for example, a trial period or test users.  
 
-### Pay-Off
+### Payoff
 
-Pay-Off refers to the _value_ of the [actions we take](#taking-action).  When we decide on a course of action, we have in mind a risk we wish to manage.  If the action is likely to have a big positive effect on the risk of a project, we say it has a promising pay off, whereas if the action fails to manage the risk, then it hasn't _paid off_.  
+Payoff refers to the _value_ of the [actions we take](#taking-action).  When we decide on a course of action, we have in mind a risk we wish to manage.  If the action is likely to have a big positive effect on the risk of a project, we say it has a promising pay off, whereas if the action fails to manage the risk, then it hasn't _paid off_.  
 
 ### Risk
 
