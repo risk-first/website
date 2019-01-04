@@ -37,7 +37,7 @@ Sometimes, projects don't get done without heroes.  But other times, the hero ha
 - A need for control, and for their own vision.
 - A preference to work alone.
 - A desire for recognition and acclaim from colleagues.
-- For the job security of being a [Key Man](https://en.wikipedia.org/wiki/Key_person_insurance).
+- For the job security of being a [Key Person](https://en.wikipedia.org/wiki/Key_person_insurance).
 
 A team _can_ make use of heroism, but it's a double-edged sword.  The hero can becomes [a bottleneck](Coordination-Risk) to work getting done, and because want to solve all the problems themselves, they [under-communicate](Communication-Risk).  
 
