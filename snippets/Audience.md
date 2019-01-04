@@ -14,6 +14,6 @@ Methodologies are _bicycles_, rather than _religions_.  Rather than simply _beli
 
 All too often, Project Managers don't have a full grasp of the technical details of their projects.  And this is perfectly normal, as the specialisation belongs below them.  However, projects fail because risks materialize, and risks materialize because the devil is in those details.  
 
-This seems like a lost cause, but there is hope:  the way in which risks materialize on technical projects is the same every time.  With Risk-First we are attempting to name each of these types of risk, which allows for a dialog with developers about which risks they face, and the order they should be tackled.    
+This seems like a lost cause, but there is hope:  the way in which risks materialize on technical projects is the same every time.  With Risk-First we attempt to name each of these types of risk, which allows for a dialog with developers about which risks they face, and the order in which they should be tackled.    
 
 Risk-First allows a project manager to pry open the black box of development and talk with developers about their work, and how it will affect the project.  It is another tool in the (limited) arsenal of techniques a project manager can bring to bear on the task of delivering a successful project.

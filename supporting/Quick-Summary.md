@@ -1,12 +1,12 @@
 ![For Review](images/state/for-review.png)
 
-## 1.  There are Lots of Ways of Running Software Projects
+## 1.  There are Lots of Ways to Run Software Projects
 
-There are lots of different ways to look at a project in-flight.  For example, metrics such as “number of open tickets”, “story points”, “code coverage" or "release cadence" give us a numerical feel for how things are going and what needs to happen next.  We also judge the health of projects by the practices used on them, such as [Continuous Integration](Testing#continuous-integration), [Unit Testing](Testing) or [Pair Programming](Coding).  
+There are lots of ways to look at a project in-flight.  For example, metrics such as “number of open tickets”, “story points”, “code coverage" or "release cadence" give us a numerical feel for how things are going and what needs to happen next.  We also judge the health of projects by the practices used on them, such as [Continuous Integration](Testing#continuous-integration), [Unit Testing](Testing) or [Pair Programming](Coding).  
 
 Software methodologies, then, are collections of tools and practices:  “Agile”, “Waterfall”, “Lean” or “Phased Delivery” all prescribe different approaches to running a project, and are opinionated about the way they think projects should be done and the tools that should be used.    
 
-None of these is necessarily more “right” than another- they are suitable on different projects at different times.
+None of these is necessarily more “right” than another: they are suitable on different projects at different times.
 
 A key question then is: **how do we select the right tools for the job?**
 
@@ -44,9 +44,9 @@ With this in place, we can:
 - Anticipate [Hidden Risks](Glossary#hidden-risk) that we hadn't considered before.
 - Weigh the risks against each other, and decide which order to tackle them.   
 
-## 4.  We can Analyse Tools and Techniques in Terms of how they Manage Risk
+## 4.  We Can Analyse Tools and Techniques in Terms of how they Manage Risk
 
-If we accept the assertion above that _all_ the actions we take on a project are about mitigating risks, then it stands to reason that the tools and techniques available to us on a project are there for mitigating different types of risks.  
+If we accept the assertion that _all_ the actions we take on a project are about mitigating risks, then it stands to reason that the tools and techniques available to us on a project are there for mitigating different types of risks.  
 
 For example:
 
@@ -58,7 +58,7 @@ From the above examples, it's clear that **different tools are appropriate for m
 
 ## 5.  Different Methodologies are for Different Risk Profiles
 
-In the same way that our tools and techniques are appropriate to dealing with different risks, the same is true of the methodologies we use on our projects.  We can use a Risk-First approach to examine the different methodologies, and see which risks they address.  
+In the same way that our tools and techniques are appropriate for dealing with different risks, the same is true of the methodologies we use on our projects.  We can use a Risk-First approach to examine the different methodologies, and see which risks they address.  
 
 For example:
 
@@ -66,7 +66,7 @@ For example:
 - **Waterfall** takes the view that development effort is an expensive risk, and that we should build plans up-front to avoid re-work.  
 - **Lean** takes the view that risk lies in incomplete work and wasted work, and aims to minimise that.
 
-Although many developers have a methodology-of-choice, the argument here is that there are tradeoffs with all of these choices.  
+Although many developers have a methodology-of-choice, the argument here is that there are trade-offs with all of these choices.  
 
 > "<!-- tweet-start -->Methodologies are like _bicycles_, rather than _religions_.  Rather than simply _believing_, we can take them apart and see how they work. <!-- tweet-end -->"
 
@@ -82,7 +82,7 @@ One idea explored is the _[Risk Landscape](Risk-Landscape)_:  although the softw
 
 From there, we examine basic risk archetypes you will encounter on the software project, to build up a [Taxonomy of Software Risk](Staging-And-Classifying), and look at which specific tools you can use to mitigate each kind of risk.  
 
-Then, we look at different software practices, and how they manage various risks.  Beyond this we examine the question:  _how can a Risk-First approach inform the use of this practice?_  
+Then, we look at software practices, and how they manage various risks.  Beyond this we examine the question:  _how can a Risk-First approach inform the use of this practice?_  
 
 For example:
 

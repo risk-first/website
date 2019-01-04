@@ -2,7 +2,7 @@
 
 In this section, I'm going to introduce some terms for thinking about risk.
 
-Lets for a moment forget about software completely, and think about _any endeavour at all_ in life.  It could be passing a test, mowing the lawn or going on holiday.  Choose something now.   I'll discuss from the point of view of "cooking a meal for some friends", but you can play along with your own example.  
+For a moment forget about software completely, and think about _any endeavour at all_ in life.  It could be passing a test, mowing the lawn or going on holiday.  Choose something now.   I'll discuss from the point of view of "cooking a meal for some friends", but you can play along with your own example.  
 
 ## Goal In Mind
 
@@ -14,19 +14,19 @@ If we do nothing, our friends will turn up and maybe there's nothing in the hous
 
 ## Attendant Risk
 
-These _nagging doubts_ that are going through your head I'll call the [Attendant Risks](Glossary#attendant-risk):  they're the ones that will occur to you as you start to think about what will happen. 
+These _nagging doubts_ that are going through your head are what I'll call the [Attendant Risks](Glossary#attendant-risk):  they're the ones that will occur to you as you start to think about what will happen. 
 
 ![Goal In Mind, with the risks you know about](images/generated/introduction/goal_in_mind.png)
 
-When we go about preparing this wonderful evening, we can choose to deal with these risks:  shop for the ingredients in advance, prepare parts of the meal, maybe practice the cooking in advance.  Or, we can wing it, and sometimes we'll get lucky.
+When we go about preparing for this wonderful evening, we can choose to deal with these risks:  shop for the ingredients in advance, prepare parts of the meal and maybe practice the cooking in advance.  Or, we can wing it, and sometimes we'll get lucky.
 
 How much effort we expend on these [Attendant Risks](Glossary#attendant-risk) depends on how big we think they are.  For example, if you know there's a 24-hour shop, you'll probably not worry too much about getting the ingredients well in advance (although, the shop _could still be closed_).
 
 ## Hidden Risks
 
-There are also **[Hidden Risks](Glossary#attendant-risk)** that you _don't_ know about: if you're poaching eggs for dinner, perhaps you don't know that fresh eggs poach best.  The difference is, [Attendant Risks](Glossary#attendant-risk) are risks you are aware of, but can't be sure of the amount they will impact you.  [Hidden Risks](Glossary#attendant-risk) are ones you are unaware of.  
+There are also **[Hidden Risks](Glossary#attendant-risk)** that you _don't_ know about: if you're poaching eggs for dinner, perhaps you don't know that fresh eggs poach best.  The difference is, [Attendant Risks](Glossary#attendant-risk) are risks you are aware of, but can't be sure of the amount they will impact you.  [Hidden Risks](Glossary#attendant-risk) are ones you are unaware of.  Donald Rumsfeld famously called these "Unknown Unknowns":
 
-[Donald Rumsfeld](https://en.wikipedia.org/wiki/There_are_known_knowns) famously called these "Unknown Unknowns".  
+> "Reports that say that something hasn't happened are always interesting to me, because as we know, there are known knowns; there are things we know we know. We also know there are known unknowns; that is to say we know there are some things we do not know. But there are also unknown unknowns—the ones we don't know we don't know. And if one looks throughout the history of our country and other free countries, it is the latter category that tend to be the difficult ones." - [Donald Rumsfeld, _Wikipedia_](https://en.wikipedia.org/wiki/There_are_known_knowns)
 
 ![Goal In Mind, the risks you know about and the ones you don't](images/generated/introduction/hidden_risks.png)
 
