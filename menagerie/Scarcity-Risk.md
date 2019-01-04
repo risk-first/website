@@ -45,7 +45,7 @@ Since the workforce is a scarce resource, it stands to reason that if a startup 
   - **Founder Cash**:  the **Runway** for a founder, before they run out of money and can't afford their rent.
   - **Team Cash**:  the **Runway** for team members, who may not have the same appetite for risk as the founders do.
   
-You need to consider how long your staff are going to be around, especially if you have [Key Man Risk](https://en.wikipedia.org/wiki/Key_person_insurance#Key_person_definition) on some of them.  <!-- tweet-end -->People like to have new challenges, or move on to live in new places, or simply get bored, and replacing staff can be highly risky.
+You need to consider how long your staff are going to be around, especially if you have [Key Person Risk](https://en.wikipedia.org/wiki/Key_person_insurance#Key_person_definition) on some of them.  <!-- tweet-end -->People like to have new challenges, or move on to live in new places, or simply get bored, and replacing staff can be highly risky.
 
 The longer your project goes on for, the more [Staff Risk](Scarcity-Risk#staff-risk) you will have to endure, and you can't rely on getting the [best staff for failing projects](Agency-Risk).
 
