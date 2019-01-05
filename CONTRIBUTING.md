@@ -37,17 +37,9 @@ i.e. Ready for consumption, enjoy!
 
 ## Want To Write Something?
 
-Either [Join the Risk-First Organisation](https://github.com/risk-first) by emailing [a member](https://github.com/robmoffat), and begin editing pages.  (You'll need to be somewhat familiar with [Markdown](https://github.github.com/gfm/).)
-
-Alternatively, if you are git-savvy you can clone the repo:
-
-```
-git@github.com:risk-first/website.wiki.git
-``` 
-
-~~And then submit pull-requests to get your work merged into the `master` branch for everyone to see.~~
-
-**Note:** Github doesn't support pull-requests for wiki pages (yet).  Instead raise an issue on this project and give details of your clone within github so that we can pull from it.
+- If you "Star" the project in github you will receive an invite to [Join the Risk-First Organisation](https://github.com/risk-first).
+- Alternatively, fork the repo and issue a pull request in the usual way.
+- Feel free to raise issues on the project to ask for corrections / improvements.
 
 ## Credit
 
