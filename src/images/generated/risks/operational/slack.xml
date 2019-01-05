@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-113" style="kite9-min-width: 800pt;">
+
+    <group style="kite9-layout: down; ">
+
+      <group style="kite9-layout: right; ">
+        <context id="co">
+          <description>Risks of losses or reputational damage caused by failing processes or real-world events.</description>
+          <mitigated>
+            <risk class="operational" />
+          </mitigated>
+          <risk id="goal" class="goal">Operations
+            Strategy
+          </risk>
+        </context>
+        <group style="kite9-layout: down; ">
+
+          <action style="kite9-margin: 10pt; kite9-horizontal-align: left;">Control</action>
+          <action style="kite9-margin: 10pt; kite9-horizontal-align: left;">Planning</action>
+          <action style="kite9-margin: 10pt; kite9-horizontal-align: left; ">Design</action>
+          <action style="kite9-margin: 10pt; kite9-horizontal-align: left;">Improvement</action>
+        </group>
+      </group>
+
+      <context style="kite9-layout: right; " class="dotted">
+
+        <artifact id="a1">Transformed
+          Resources
+        </artifact>
+
+        <artifact id="a2">Transforming
+          Resources
+        </artifact>
+
+        <component id="c">Transform
+          Process
+        </component>
+
+        <artifact id="o1">Output Products
+          &amp; Services</artifact>
+
+        <users id="cu">Customers</users>
+
+        <label><text>Operational Context</text></label>
+      </context>
+
+    </group>
+
+
+
+    <link drawDirection="RIGHT">
+      <from reference="a2" />
+      <to reference="c" class="arrow" />
+    </link>
+
+    <link drawDirection="RIGHT">
+      <from reference="c" />
+      <to reference="o1" class="arrow" />
+    </link>
+
+    <link drawDirection="RIGHT">
+      <from reference="o1" />
+      <to reference="cu" class="arrow" />
+    </link>
+
+    <link drawDirection="RIGHT" class="invisible">
+      <from reference="a1" />
+      <to reference="a2" />
+    </link>
+
+    <link drawDirection="DOWN" class="dotted">
+      <from reference="co" />
+      <to reference="c" class="arrow"/>
+    </link>
+
+  </diagram>
+</svg:svg>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-113" name="Goal In Mind" style="kite9-min-width: 900pt; ">
+
+    <context bordered="true" style="kite9-layout: right; kite9-sizing: minimize; kite9-margin-left: 200pt; kite9-margin-right: 200pt;">
+
+      <group style="kite9-layout: down;">
+        <risk id="c" class="complexity" style="kite9-vertical-align: top; " />
+        <description>Risks caused by the weight of complexity in the systems we create, and their resistance to change and comprehension.
+        </description>
+      </group>
+
+      <group style="kite9-layout: down">
+        <risk id="o" class="operational" style="kite9-vertical-align: top; "/>
+        <description>Risks of losses or reputational damage caused by failing processes or real-world events.</description>
+      </group>
+    </context>
+    
+    <link>
+      <from reference="c" />
+      <to reference="o" class="arrow" />
+    </link>
+  </diagram>
+</svg:svg>
