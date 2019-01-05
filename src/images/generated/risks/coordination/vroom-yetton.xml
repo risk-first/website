@@ -1,0 +1,245 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-150" name="VroomYetton">
+
+    <table>
+      <cell style="kite9-occupies: 0 0; ">
+        <context layout="RIGHT" bordered="true" style='kite9-sizing: maximize; kite9-margin: 5pt; '>
+          <glyph id="id_11" class="rect" />
+          <glyph id="id_8" class="rect" />
+          <glyph id="id_9" class="rect" />
+          <glyph id="id_10" class="rect" />
+          <label id="id_1">
+            <text>UI</text>
+            <symbols />
+          </label>
+        </context>
+      </cell>
+
+      <cell style="kite9-occupies: 1 0; ">
+        <context bordered="true" style='kite9-sizing: maximize;kite9-margin: 5pt; '>
+          <glyph id="id_18" class="circle" />
+          <glyph id="id_17" class="circle" />
+          <glyph id="id_12" class="rect" />
+          <glyph id="id_14" class="circle" />
+          <label id="id_3">
+            <text>AI</text>
+            <symbols />
+          </label>
+        </context>
+
+      </cell>
+
+      <cell style="kite9-occupies: 2 0; ">
+        <context bordered="true" style='kite9-sizing: maximize;kite9-margin: 5pt; '>
+          <glyph id="id_117" class="circle" />
+          <glyph id="id_114" class="circle" />
+          <glyph id="id_112" class="rect" />
+          <glyph id="id_118" class="circle" />
+          <label id="id_3.2">
+            <text>AII</text>
+            <symbols />
+          </label>
+        </context>
+
+      </cell>
+
+      <cell style="kite9-occupies: 0 1; ">
+        <context bordered="true" style='kite9-sizing: maximize;kite9-margin: 5pt; '>
+          <glyph id="id_218" class="circle" />
+          <glyph id="id_217" class="circle" />
+          <glyph id="id_212" class="rect" />
+          <glyph id="id_214" class="circle" />
+          <label id="id_3.4">
+            <text>CI</text>
+            <symbols />
+          </label>
+        </context>
+      </cell>
+
+      <cell style="kite9-occupies: 1 1; ">
+        <context bordered="true" style='kite9-sizing: maximize;kite9-margin: 5pt; '>
+          <glyph id="id_318" class="circle" />
+          <glyph id="id_317" class="circle" />
+          <glyph id="id_312" class="rect" />
+          <glyph id="id_314" class="circle" />
+
+          <label id="id_3.5">
+
+
+            <text>CII</text>
+            <symbols />
+          </label>
+        </context>
+      </cell>
+
+      <cell style="kite9-occupies: 2 1; ">
+        <context bordered="true" style='kite9-sizing: maximize; kite9-margin: 5pt; '>
+
+
+          <glyph id="id_40" class="rect" />
+
+          <glyph id="id_39" class="rect" />
+
+          <glyph id="id_512" class="rect" />
+
+          <glyph id="id_38" class="rect" />
+
+          <label id="id_3.6">
+
+
+            <text>GII</text>
+            <symbols />
+          </label>
+        </context>
+      </cell>
+
+
+    </table>
+
+
+    <link id="id_47" class="thick">
+
+      <from reference="id_212" />
+      <to reference="id_218" />
+    </link>
+    <link id="id_28" class="thick" drawDirection="UP">
+
+      <from reference="id_217" />
+      <to reference="id_212" />
+    </link>
+
+    <link id="id_48" class="thick">
+
+      <from reference="id_212" />
+      <to reference="id_214" />
+    </link>
+
+    <link id="id_32" class="thick" drawDirection="LEFT">
+
+      <from reference="id_317" />
+      <to reference="id_318" />
+    </link>
+    <link id="id_49" class="thick">
+
+      <from reference="id_318" />
+      <to reference="id_314" />
+    </link>
+    <link id="id_50" class="thick">
+
+      <from reference="id_312" />
+      <to reference="id_318" />
+    </link>
+    <link id="id_31" class="thick" drawDirection="UP">
+
+      <from reference="id_317" />
+      <to reference="id_312" />
+    </link>
+    <link id="id_37" class="thick" drawDirection="RIGHT">
+
+      <from reference="id_317" />
+      <to reference="id_314" />
+    </link>
+    <link id="id_51" class="thick">
+
+      <from reference="id_312" />
+      <to reference="id_314" />
+    </link>
+
+    <link id="id_22" shape="NORMAL" style="">
+
+      <from reference="id_12" class="arrow" />
+      <to reference="id_18" />
+    </link>
+    <link id="id_19" shape="NORMAL" style="" drawDirection="DOWN">
+
+      <from reference="id_12" class="arrow" />
+      <to reference="id_17"  />
+    </link>
+    <link id="id_21.1" class="invisible" drawDirection="RIGHT">
+
+      <from reference="id_17" />
+      <to reference="id_14" />
+    </link>
+    <link id="id_23" shape="NORMAL" style="">
+
+      <from reference="id_12" class="arrow" />
+      <to reference="id_14" />
+    </link>
+    <link id="id_26" class="invisible" drawDirection="LEFT">
+
+      <from reference="id_114" />
+      <to reference="id_117" />
+    </link>
+    
+  
+    <link id="id_r2" class="invisible" drawDirection="RIGHT">
+
+      <from reference="id_18" />
+      <to reference="id_17" />
+    </link>
+    
+    <link id="id_r3" class="invisible" drawDirection="RIGHT">
+
+      <from reference="id_218" />
+      <to reference="id_217" />
+    </link>
+    <link id="id_r4" class="invisible" drawDirection="RIGHT">
+
+      <from reference="id_217" />
+      <to reference="id_214" />
+    </link>
+
+    <link id="id_33" shape="NORMAL" style="">
+      <from reference="id_112" class="arrow" />
+      <to reference="id_117" class="arrow" />
+    </link>
+    <link id="id_25" shape="NORMAL" style="" drawDirection="UP">
+      <from reference="id_114" class="arrow" />
+      <to reference="id_112" class="arrow" />
+    </link>
+    <link id="id_27" class="invisible" drawDirection="RIGHT">
+
+      <from reference="id_114" />
+      <to reference="id_118" />
+    </link>
+    <link id="id_34" shape="NORMAL" style="">
+
+      <from reference="id_112" class="arrow" />
+      <to reference="id_118" class="arrow" />
+    </link>
+    <link id="id_41" class="thick" drawDirection="RIGHT">
+
+      <from reference="id_40" />
+      <to reference="id_39" />
+    </link>
+    <link id="id_44" class="thick">
+
+      <from reference="id_512" />
+      <to reference="id_40" />
+    </link>
+    <link id="id_46" class="thick">
+
+      <from reference="id_40" />
+      <to reference="id_38" />
+    </link>
+    <link id="id_42" class="thick" drawDirection="RIGHT">
+
+      <from reference="id_39" />
+      <to reference="id_38" />
+    </link>
+    <link id="id_43" class="thick" drawDirection="UP">
+
+      <from reference="id_39" />
+      <to reference="id_512" />
+    </link>
+    <link id="id_45" class="thick">
+
+      <from reference="id_512" />
+      <to reference="id_38" />
+    </link>
+  </diagram>
+</svg:svg>

@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink'  zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs><diagram xmlns="http://www.kite9.org/schema/adl"  id="diagram-141" name="Communication - Protocols">
+ 
+   <glyph id="id_21">
+    <label>Message</label>
+   </glyph>
+
+ <context id="auto:176064" class="dotted">
+  <glyph id="id_2">
+   <label>HTTP</label>
+  </glyph>
+  <glyph id="id_9">
+   <label>DNS</label>
+  </glyph>
+  <glyph id="id_4">
+   <label>TCP</label>
+  </glyph>
+  <glyph id="id_6">
+   <label>IP</label>
+  </glyph>
+  <glyph id="id_8">
+   <label>802.11b</label>
+  </glyph>
+  <label  id="id_19">
+   <text>Protocols</text>
+   <symbols/>
+  </label>
+ </context>
+ 
+ <glyph id="id_23">
+  
+  
+  <stereotype/>
+  <label>Channel</label>
+  <text-lines/>
+  <symbols/>
+ </glyph>
+ 
+  <link id="id_20" shape="NORMAL" style="" drawDirection="LEFT">
+   
+   <from  reference="id_2"/>
+   <to  reference="id_21"/>
+
+
+  </link>
+  <link id="id_15" shape="NORMAL" style="">
+   
+   <from  reference="id_2"/>
+   <to  reference="id_9"/>
+
+
+  </link>
+  <link id="id_16" shape="NORMAL" style="">
+   
+   <from  reference="id_9"/>
+   <to  reference="id_4"/>
+
+
+  </link>
+  <link id="id_17" shape="NORMAL" style="">
+   
+   <from  reference="id_4"/>
+   <to  reference="id_6"/>
+
+
+  </link>
+  <link id="id_18" shape="NORMAL" style="">
+   
+   <from  reference="id_6"/>
+   <to  reference="id_8"/>
+
+
+  </link>
+  <link id="id_22" shape="NORMAL" style="" drawDirection="RIGHT">
+   
+   <from  reference="id_8"/>
+   <to  reference="id_23"/>
+
+
+  </link>
+  </diagram></svg:svg>
