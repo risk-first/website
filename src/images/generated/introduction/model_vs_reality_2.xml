@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl"  id="diagram-113" name="Goal In Mind">
+    
+    <group style="kite9-layout: right; ">
+      
+      <context id="c" bordered="true" style=" kite9-connection-align: 50%;">
+  
+        <risk id="id_0" class="goal">Successful Party</risk>
+        <risk id="id_1" class="attendant">Risk 1</risk>
+        <risk id="id_2" class="attendant">Risk 2</risk>
+         
+  
+        <label  id="id_16">
+          <text>Internal Model</text>
+          <symbols />
+        </label>
+      </context>
+      
+      <action id="a">Mitigating Steps</action>
+      
+      <context id="d" style=" kite9-connection-align: 50%;">
+      
+        <hidden>
+         <risk id="id_4" class="attendant"  style="kite9-traversal: always, none, none none;" >New Hidden Risk</risk>
+        </hidden>
+        <risk id="id_3" class="attendant">Expected
+         Attendant Risk</risk>
+        <label  id="4">
+          <text>Attendant Risks</text>
+          <symbols />
+        </label>
+      </context>
+      
+    </group>
+
+    <arrow id="ar1"><label>Feedback</label></arrow>
+
+  
+    <link style="stroke-width: 2pt; ">
+       <from reference="d"/>
+       <to reference="ar1"/>
+    </link>  
+    
+      <link class="invisible" drawDirection="UP">
+       <from reference="a"/>
+       <to reference="ar1"/>
+    </link>  
+    
+    <link style="stroke-width: 2pt; ">
+       <from reference="ar1"/>
+       <to reference="c" class="arrow"/>
+    </link>  
+
+  </diagram>
+</svg:svg>

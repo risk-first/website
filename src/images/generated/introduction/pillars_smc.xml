@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" name="Pillars">
+
+    <plinth id="p">Best Possible Schedule</plinth>
+
+    <group style="stroke-dasharray: 4 4; kite9-padding: 10pt; ">
+      <back style='kite9-usage: decal; kite9-type: svg;  '>
+        <svg:rect x='0' y='0' width='#{$width}' height='#{$height}' rx='12pt' ry='12pt' class="context-back" stroke-dasharray="4 4" />
+      </back>
+
+      <leg id="l1">
+        Classic
+        Mistake
+        Avoidance
+      </leg>
+
+      <leg id="l2">
+        Development
+        Fundamentals
+      </leg>
+
+      <leg id="l3">
+        Risk
+        Management
+      </leg>
+      
+        <label  id="4">
+          <text>Efficient Development</text>
+          <symbols />
+        </label>
+
+    </group>
+
+    <leg id="l4">
+      Schedule
+      Oriented
+      Practices
+    </leg>
+
+    <link class="invisible" style="kite9-link-minimum-length: 0px; " drawDirection="DOWN">
+      <from reference="p" />
+      <to reference="l1" />
+    </link>
+    <link class="invisible" drawDirection="DOWN">
+      <from reference="p" />
+      <to reference="l2" />
+    </link>
+    <link class="invisible" drawDirection="DOWN">
+      <from reference="p" />
+      <to reference="l3" />
+    </link>
+    <link class="invisible" drawDirection="DOWN">
+      <from reference="p" />
+      <to reference="l4" />
+    </link>
+
+    <link class="invisible" drawDirection="RIGHT" style="kite9-link-minimum-length: 0px; ">
+      <from reference="l1" />
+      <to reference="l2" />
+    </link>
+    <link class="invisible" drawDirection="RIGHT" style="kite9-link-minimum-length: 0px; ">
+      <from reference="l2" />
+      <to reference="l3" />
+    </link>
+    <link class="invisible" drawDirection="RIGHT" style="kite9-link-minimum-length: 0px; ">
+      <from reference="l3" />
+      <to reference="l4" />
+    </link>
+
+
+  </diagram>
+</svg:svg>

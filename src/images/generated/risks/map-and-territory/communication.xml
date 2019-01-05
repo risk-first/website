@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-138" name="Communication - Model" style="kite9-layout: down; ">
+      <context style='kite9-sizing: maximize;'>
+        <risk class="map-and-territory" />
+        <description>Risks due to the differences between reality and the internal model of reality, and the assumption that they are equivalent. 
+        </description>
+      </context>
+    <group style="kite9-layout: right;" >
+    
+
+      <context class="dotted" id="auto:159560" style="kite9-sizing: maximize; kite9-layout: down;">
+        <action class="left" id="id_29" style="kite9-margin: 20pt; kite9-min-size: 120pt 40pt;">
+          <label>Reconciliation</label>
+        </action>
+        <internal-model-artifact>The Map
+        (Bits / Information)</internal-model-artifact>
+        <label id="id_19">
+          <text>Internal Model</text>
+          <symbols />
+        </label>
+      </context>
+      <context id="auto:152870" style="kite9-sizing: maximize;" class="dotted">
+        <action class="left" id="id_14" style="kite9-margin: 20pt; ">
+          <label>Interpretation</label>
+        </action>
+        <label id="id_6">
+          <text>Message</text>
+          <symbols />
+        </label>
+      </context>
+      <context id="auto:157513" style="kite9-sizing: maximize;" class="dotted">
+        <action class="left" id="id_10" style="kite9-margin: 20pt; ">
+          <label>Decoding</label>
+        </action>
+        <label id="id_11">
+          <text>Protocol</text>
+          <symbols />
+        </label>
+      </context>
+      <context id="auto:158001" style="kite9-sizing: maximize; kite9-layout: right; " class="dotted">
+        <group style="kite9-layout: down">
+          <action class="left" id="id_8" style="kite9-margin: 20pt; ">
+            <label>Reception</label>
+          </action>
+          <channel-artifact>Territory
+            (Atoms / Electrons)
+          </channel-artifact>
+        </group>
+        <label id="id_13">
+          <text>Channel</text>
+          <symbols />
+        </label>
+      </context>
+    </group>
+
+    <link id="id_15" shape="NORMAL" style="" drawDirection="LEFT">
+      <from reference="id_14" />
+      <to reference="id_29" class="arrow" />
+    </link>
+    <link id="id_20" shape="NORMAL" style="">
+      <from reference="id_10" />
+      <to reference="id_14" class="arrow" />
+    </link>
+    <link id="id_9" shape="NORMAL" style="" drawDirection="LEFT">
+      <from reference="id_8" />
+      <to reference="id_10" class="arrow" />
+    </link>
+  </diagram>
+</svg:svg>                                                                                                                                                   
