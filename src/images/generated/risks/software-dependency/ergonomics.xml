@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl">
+
+  <context id="c" bordered="true">
+
+    <risk class="codebase" />
+    <risk class="complexity" />
+    <risk class="feature-fit" />
+
+    <label id="id_16">
+      <text>Simplicity</text>
+      <symbols />
+    </label>
+  </context>
+
+  <group style="kite9-layout: down; ">
+    <action class="left">Reduced Functionality</action>
+    <action>Increased Functionality</action>
+  </group>
+
+  <context id="c" bordered="true">
+
+    <risk class="dependency" />
+    <risk class="learning-curve" />
+    <risk class="communication" />
+
+    <label id="id_16">
+      <text>Complexity</text>
+      <symbols />
+    </label>
+  </context>
+
+  </diagram>
+</svg:svg>

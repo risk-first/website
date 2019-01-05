@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" style="kite9-min-width: 900pt;">
+
+    <context id="c" bordered="true">
+
+      <risk id="id_0" class="goal">Successful Party</risk>
+      <mitigated>
+        <risk id="id_0" class="attendant">Attendant Risk 1</risk>
+      </mitigated>
+
+      <label  id="id_16">
+        <text>Internal Model</text>
+        <symbols />
+      </label>
+    </context>
+    
+    <action>Meeting Reality</action>
+
+    <context id="c" bordered="true">
+
+      <risk id="id_0" class="attendant">New Attendant Risk</risk>
+      
+      <label  id="4">
+        <text>Attendant Risks</text>
+        <symbols />
+      </label>
+    </context>
+    
+    <context id="d" bordered="true">
+
+      <hidden>
+        <risk id="id_0" class="attendant">New Hidden Risk</risk>
+      </hidden>
+      
+      <label  id="4">
+        <text>Hidden Risks</text>
+        <symbols />
+      </label>
+    </context>
+
+  </diagram>
+</svg:svg>

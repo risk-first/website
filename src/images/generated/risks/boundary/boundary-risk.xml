@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-113" name="Goal In Mind" style="kite9-min-width: 800pt;">
+
+    <context id="c" bordered="true" style="kite9-layout: right;">
+
+      <risk id="1" class="complexity" />
+      <risk id="2" class="dependency" />
+      <risk id="3" class="communication" />
+
+
+      <risk id="bd" class="boundary" />
+
+      <description>Risks due to the choices we make around dependencies, and the limitations they place on our ability to change.</description>
+    </context>
+
+    <link>
+      <from reference="3" />
+      <to reference="bd" class="arrow" />
+    </link>
+
+  </diagram>
+</svg:svg>
