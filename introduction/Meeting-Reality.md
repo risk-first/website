@@ -119,7 +119,7 @@ So, here we've looked at Meeting Reality, which basically boils down to taking a
 - Each Action exposes new [Hidden Risks](Glossary#hidden-risk), changing your [Internal Model](Glossary#Internal-Model).
 - Ideally, each action should reduce the overall [Attendant Risk](Glossary#attendant-risk) on the project (that is, puts it in a better place on the [Risk Landscape](Glossary#risk-landscape)
 
-Could it be that _everything_ you do on a software project is risk management? <!-- tweet-end --> This is an idea explored in [the next section](All-Risk-Management).
+Could it be that _everything_ you do on a software project is risk management? <!-- tweet-end --> This is an idea explored in [the next section](Just-Risk).
 
 
 

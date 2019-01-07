@@ -74,7 +74,7 @@ This was applied on NASA missions, and then in the 1970's to car design followin
 
 ## Proxies For Reliability
 
-Because of [Trust Risk](Communication-Risk#trust--belief-risk) and [Invisibility Risk](Communication-Risk#invisibility-risk), we cannot always establish reliability for a dependency, and this is a huge area of concern in software when choosing dependencies, as we will see in the section on [Software Dependency Risk](Software-Dependency-Risk).
+Because of [Trust & Belief Risk](Communication-Risk#trust--belief-risk) and [Invisibility Risk](Communication-Risk#invisibility-risk), we cannot always establish reliability for a dependency, and this is a huge area of concern in software when choosing dependencies, as we will see in the section on [Software Dependency Risk](Software-Dependency-Risk).
 
 In the [Communication Risk](Communication-Risk) section we looked at [Marketing Communications](Communication-Risk#Marketing-Communications) and talked about the levels of awareness that you could have with a dependency. 
 

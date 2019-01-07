@@ -2,7 +2,7 @@
 
 In this section, I am going to propose the idea that everything you do on a software project is Risk Management.
 
-In the [last section](Development-Process), we observed that all the activities in a simple methodology had a part to play in exposing different risks.  They worked to manage risk prior to them creating bigger problems in production.
+In the [Development Process](Development-Process) section, we observed that all the activities in a simple methodology had a part to play in exposing different risks.  They worked to manage risk prior to them creating bigger problems in production.
 
 Here, we'll look at one of the tools in the Project Manager's tool-box, the [RAID Log](http://pmtips.net/blog-new/raid-logs-introduction), and observe how risk-centric it is.
 
@@ -33,7 +33,7 @@ The reason you are _taking_ an action is to mitigate a risk.  For example:
  - If you're getting a business sign-off for something, this is mitigating the risk of everone not agreeing on a course of action (a [Coordination Risk](Coordination-Risk)).  
  - If you're writing a specification, that's mitigating the type of "Incorrect Implementation Risk" we saw in the last section. 
 
-## Every Action Has Attendant Risk.  
+## Every Action Has Attendant Risk
 
 - How do you know if the action will get completed?  
 - Will it overrun, or be on time?  
@@ -77,7 +77,7 @@ There is a certain "interplay" between the concepts of risks, actions and goals.
 
 Psychologically, humans are very goal-driven:  they like to know where they're going, and are good at organising around a goal.  However, by focusing on goals ("solutionizing") it's easy to ignore alternatives.  By focusing on "Risk-First", we don't ignore the reasons we're doing something.  
 
-## Every Decision is About Payoff.  
+## Every Decision is About Payoff  
 
 - By the very nature of having to make a decision, there's the risk you'll decide wrongly.
 - And, making a decision takes time, which could add risk to your schedule.

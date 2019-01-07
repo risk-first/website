@@ -40,7 +40,7 @@ Some easy-to-digest ideas that will set the scene for examining the practices la
  - [A Simple Scenario](A-Simple-Scenario)
  - [Development Process](Development-Process)
  - [Meeting Reality](Meeting-Reality)
- - [It's All Risk Management](All-Risk-Management)
+ - [It's Just Risk](Just-Risk)
  - [Evaluating Risk](Evaluating-Risk)
  - [Cadence](Cadence)
  - [De-Risking](De-Risking)

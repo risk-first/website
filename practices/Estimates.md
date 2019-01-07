@@ -45,7 +45,7 @@ Seems to be the following:
 
 ... and so on.  
 
-The reason the estimate of _time_ is wrong is because [every action attempts to mitigate risk](All-Risk-Management) and the estimate of _risk_ is wrong.
+The reason the estimate of _time_ is wrong is because [every action attempts to manage risk](Just-Risk) and the estimate of _risk_ is wrong.
 
 So what are we to do?  It's a problem as old as software itself, and in deference to that, let's examine the estimating problem via some "Old Saws".
 

@@ -2,7 +2,7 @@
 
 Why are [Software Methodologies](https://en.wikipedia.org/wiki/Software_development_process) all different? 
 
-[Previously](All-Risk-Management), we made the case that [any action you take](Glossary#taking-action) on a software project is to do with managing [risk](Glossary#risk), and the last section, [A Conversation](A-Conversation) was an example of this happening. 
+[Previously](Just-Risk), we made the case that [any action you take](Glossary#taking-action) on a software project is to do with managing [risk](Glossary#risk), and the last section, [A Conversation](A-Conversation) was an example of this happening. 
 
 Therefore, it stands to reason that software methodologies are all about handling risk too.  Since they are prescribing a particular day-to-day process, or set of actions to take, they are also prescribing a particular approach to managing the risks on software projects.  
 
