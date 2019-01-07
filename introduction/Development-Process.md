@@ -89,7 +89,7 @@ This process of evolving the feature request into a requirement is the BA's job.
 
 The next stage for our feature, **Feature X** is that it gets coded and some tests get written.  Let's look at how our [Goal In Mind](Glossary#Goal-In-Mind) meets a new reality:   this time it's the reality of a pre-existing codebase, which has it's own internal logic.
 
-As the developer begins coding the feature in the software, she will start with an [Internal Model](Glossary#Internal-Model) of the software, and how the code fits into it.  But, in the process of implementing it, she is likely to learn about the codebase, and 
+As the developer begins coding the feature in the software, they will start with an [Internal Model](Glossary#Internal-Model) of the software, and how the code fits into it.  But, in the process of implementing it, she is likely to learn about the codebase, and 
 her [Internal Model](Glossary#Internal-Model) will develop.  
 
 ![Coding Process:  exposing more hidden risks as you code](images/generated/introduction/development_process_code.png)
