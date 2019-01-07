@@ -2,7 +2,7 @@
 
 In this section, I am going to propose the idea that everything you do on a software project is Risk Management.
 
-In the [last section](Development-Process), we observed that all the activities in a simple methodology had a part to play in exposing different risks.  They worked to manage risk prior to them creating bigger problems in production.
+In the [Development Process](Development-Process) section, we observed that all the activities in a simple methodology had a part to play in exposing different risks.  They worked to manage risk prior to them creating bigger problems in production.
 
 Here, we'll look at one of the tools in the Project Manager's tool-box, the [RAID Log](http://pmtips.net/blog-new/raid-logs-introduction), and observe how risk-centric it is.
 
