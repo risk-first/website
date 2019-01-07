@@ -1,4 +1,4 @@
-![Under Construction](images/state/uc.png)
+![Under Construction](../images/state/uc.png)
 
 [Waterfall](https://en.wikipedia.org/wiki/Waterfall_model) is a linear, stepwise approach to the processes involved in delivering a software system, and it really represents a family of methodologies, such as [RUP](https://en.wikipedia.org/wiki/Rational_Unified_Process) or [SSADM](https://en.wikipedia.org/wiki/Structured_systems_analysis_and_design_method).
 

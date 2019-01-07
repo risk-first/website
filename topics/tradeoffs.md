@@ -1,4 +1,4 @@
-![Under Construction](images/state/uc.png)
+![Under Construction](../images/state/uc.png)
 
 A gradient-descent approach to minimizing software risk, seen in the wild.
 

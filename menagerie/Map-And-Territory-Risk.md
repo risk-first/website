@@ -1,4 +1,4 @@
-![For Review](images/state/for-review.png)
+![For Review](../images/state/for-review.png)
 
 As we discussed in the [Communication Risk](Communication-Risk#misinterpretation-risk) section, our understanding of the world is informed by the names we give things and the abstractions we create.  <!-- tweet-end -->
 

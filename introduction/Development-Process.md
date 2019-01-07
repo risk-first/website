@@ -1,4 +1,4 @@
-![For Review](images/state/for-review.png)
+![For Review](../images/state/for-review.png)
 
 In the [previous section](A-Simple-Scenario) we introduced some terms for talking about risk (such as [Attendant Risk](Glossary#attendant-risk), [Hidden Risk](Glossary#attendant-risk) and [Internal Model](Glossary#Internal-model)) via a simple scenario.
 

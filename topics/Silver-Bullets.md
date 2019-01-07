@@ -1,4 +1,4 @@
-![Draft](images/state/draft.png)
+![Draft](../images/state/draft.png)
 
 In the original “Mythical Man-Month”, 1975, Fred Brooks (who said many very insightful things also) posited:
 

@@ -1,4 +1,4 @@
-![For Review](images/state/for-review.png)
+![For Review](../images/state/for-review.png)
 
 Why are [Software Methodologies](https://en.wikipedia.org/wiki/Software_development_process) all different? 
 

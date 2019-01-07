@@ -1,4 +1,4 @@
-![Under Construction](images/state/uc.png)
+![Under Construction](../images/state/uc.png)
 
 
 80 - 20 rule

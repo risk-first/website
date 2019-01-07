@@ -1,4 +1,4 @@
-![For Review](images/state/for-review.png)
+![For Review](../images/state/for-review.png)
 
 In this section, I'm going to introduce some terms for thinking about risk.
 

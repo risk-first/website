@@ -1,4 +1,4 @@
-![Draft](images/state/draft.png)
+![Draft](../images/state/draft.png)
 
 ## What Is It?
 

@@ -1,4 +1,4 @@
-![For Review](images/state/for-review.png)
+![For Review](../images/state/for-review.png)
 
 [Coordinating a team](Coordination-Risk) is difficult enough when everyone on the team has a single [Goal](Glossary#Goal-In-Mind). <!-- tweet-end --> But, people have their own goals, too.  Sometimes, their goals harmlessly co-exist with the team's goal, but other times they don't.
 
