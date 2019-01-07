@@ -23,7 +23,7 @@ https://en.wikipedia.org/wiki/Program_evaluation_and_review_technique
 
 So managing **Schedule Risk** due to **Student Syndrome** is very important.  [Goldratt's Critical Chain](https://en.wikipedia.org/wiki/Critical_chain_project_management) addresses exactly this concern.   Briefly, the idea of this is:
 
-### 1. Identify the system constraint.
+### 1. Identify the system constraint
 
 2. Exploit the system constraint.
 

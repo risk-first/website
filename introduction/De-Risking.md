@@ -84,7 +84,7 @@ Let's look at the journey so far:
 
  - Then, generalizing the lessons of the Development Process article, we examined the idea that [Meeting Reality](Meeting-Reality) frequently helps flush out [Hidden Risks](Glossary#hidden-risk) and improve your [Internal Model](Glossary#Internal-Model).
  
- - In [It's All Risk Management](All-Risk-Management) we took a leap of faith: could _everything_ we do just be risk management?  And we looked at the RAID log and thought that maybe it could be.   
+ - In [Just Risk](Just-Risk) we took a leap of faith: could _everything_ we do just be risk management?  And we looked at the RAID log and thought that maybe it could be.   
  
  - Next, in [A Software Project Scenario](Software-Project-Scenario) we looked at how you could treat the project-as-a-whole as a risk management exercise, and treat the goals from one day to the next as activities to mitigate risk.
  
