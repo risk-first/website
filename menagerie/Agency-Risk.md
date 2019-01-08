@@ -16,7 +16,7 @@ As we saw in the previous section on [Process Risk](Process-Risk), <!-- tweet-st
 
 ### Personal Lives
 
-We can't (shouldn't) expect people on a project to sacrifice their personal lives for the success of the project, right?  <!-- tweet-end --> Except that ["Crunch Time"](https://en.wikipedia.org/wiki/Video_game_developer#"Crunch_time") is exactly how some software companies work:
+We shouldn't expect people on a project to sacrifice their personal lives for the success of the project, right?  <!-- tweet-end --> Except that ["Crunch Time"](https://en.wikipedia.org/wiki/Video_game_developer#"Crunch_time") is exactly how some software companies work:
 
 > "Game development... requires long working hours and dedication from their employees.  Some video game developers (such as Electronic Arts) have been accused of the excessive invocation of "crunch time".  "Crunch time" is the point at which the team is thought to be failing to achieve milestones needed to launch a game on schedule. " - [Crunch Time, _Wikipedia_](https://en.wikipedia.org/wiki/Video_game_developer#"Crunch_time")
 
@@ -28,7 +28,7 @@ People taking time off, going to funerals, looking after sick relatives and so o
 
 Heroes put in more hours and try to rescue projects single-handedly, often cutting corners like team communication and process in order to get there.   
 
-Sometimes, projects don't get done without heroes.  But other times, the hero has an alternative agenda than just getting the project done:
+Sometimes, projects don't get done without heroes.  But other times, the hero has an alternative agenda to just getting the project done:
 
 - A need for control, and for their own vision.
 - A preference to work alone.
@@ -73,7 +73,7 @@ There is significant [Agency Risk](Agency-Risk) in running software _at all_.  S
 
  - A process continually writing log files until the disks fill up, crashing the system.
  - Bugs causing data to get corrupted, causing financial loss.
- - Malware infecting a system, and sending your passwords and data to undesirables.
+ - Malware exploiting weaknesses in a system, exposing sensitive data.
 
 ### Teams
 
@@ -99,7 +99,7 @@ A the core of the Principal-Agent Problem is the issue that we _want_ our agents
 
 As a result (and as shown in the above diagram), we need to _Monitor_ the agents.  The price of mitigating [Agency Risk](Agency-Risk) this way is that we have to spend time doing the monitoring ([Schedule Risk](Scarcity-Risk#schedule-risk)) and we have to understand what the agents are doing ([Complexity Risk](Complexity-Risk)).  
 
-Monitoring of _software process_ agents is an important part of designing reliable systems, and it makes perfect sense that this would also apply to _human_ agents too.  But for people, the _knowledge of being monitored_ is itself enough to instil corrective behaviour.  This is known as the Hawthorne Effect:
+Monitoring of _software process_ agents is an important part of designing reliable systems, and it makes perfect sense that this would also apply to _human_ agents too.  But for people, the _knowledge of being monitored_ can instil corrective behaviour.  This is known as the Hawthorne Effect:
 
 > "The Hawthorne effect (also referred to as the observer effect) is a type of reactivity in which individuals modify an aspect of their behaviour in response to their awareness of being observed." - [Hawthorne Effect, _Wikipedia_](https://en.wikipedia.org/wiki/Hawthorne_effect)
 
@@ -107,19 +107,21 @@ Monitoring of _software process_ agents is an important part of designing reliab
 
 ![Security as a mitigation for Agency Risk](images/generated/risks/agency/security-risk.png)
 
-Security is all about _setting limits_ on the agency of actors - both within and outside a system.  _Within_ a system we may wish to prevent our actors from causing accidental harm, but we also have [Agency Risk](Agency-Risk) from unwanted actors _outside_ the system.  So security is also about ensuring that the environment we work in is _safe_ for the good actors to operate in, while keeping out the bad actors.
+Security is all about _setting limits_ on agency - both within and outside a system.  
 
-Interestingly, security is handled in very similar ways in all kinds of systems, whether biological, human or organisational: 
+_Within_ a system we may wish to prevent our agents from causing accidental harm, but we also have [Agency Risk](Agency-Risk) from unwanted agents _outside_ the system.  So security is also about ensuring that the environment we work in is _safe_ for the good actors to operate in, while keeping out the bad actors.
 
-- **Walls**: defences _around_ the complex system, to protect it's parts from the external environment.  
-- **Doors**: ways to get _in_ and _out_ of the complex system, possibly with _locks_.
+Interestingly, security is handled in very similar ways in all kinds of systems, whether biological, human or institutional: 
+
+- **Walls**: defences _around_ the system, to protect it's parts from the external environment.  
+- **Doors**: ways to get _in_ and _out_ of the system, possibly with _locks_.
 - **Guards**: to make sure only the right things go in and out.  (i.e. to try and keep out _bad actors_).
 - **Police**: to defend from _within_ the system, against internal [Agency Risk](Agency-Risk).
 - **Subterfuge**: hiding, camouflage, disguises, pretending to be something else. 
 
 These work various levels in **our own bodies**:  our _cells_ have _cell walls_ around them, and _cell membranes_ that act as the guards to allow things in and out.  Our _bodies_ have _skin_ to keep the world out, and we have _mouths_, _eyes_, _pores_ and so on to allow things in and out.  We have an _immune system_ to act as the police.
 
-**Our societies** work in similar ways: in medieval times, a city would have walls, guards and doors to keep out intruders.  Nowadays, we have customs control, borders and passports.
+**Our societies** work in similar ways: in medieval times, a city would have walls, guards and gates to keep out intruders.  Nowadays, we have customs control, borders and passports.
 
 We're waking up to the realisation that our software systems need to work the same way:  we have [Firewalls](https://en.wikipedia.org/wiki/Firewall_(computing)) to protect our organisations, we lock down _ports_ on servers to ensure there are the minimum number of doors to guard, we _police_ the servers with monitoring tools and we _guard_ access using passwords and other identification approaches. 
 
@@ -129,7 +131,7 @@ We're waking up to the realisation that our software systems need to work the sa
 
 As we stated at the beginning, [Agency Risk](Agency-Risk) at any level comes down to differences of [Goals](Glossary#goal-in-mind) between the different agents, whether they are _people_, _teams_ or _software_.  
 
-So, if you can _align the goals_ of the actors involved, you can mitigate [Agency Risk](Agency-Risk).  Nassim Nicholas Taleb calls this "skin in the game": that is, the agent is exposed to the same risks as the principal.
+So, if you can _align the goals_ of the agents involved, you can mitigate [Agency Risk](Agency-Risk).  Nassim Nicholas Taleb calls this "skin in the game": that is, the agent is exposed to the same risks as the principal.
 
 > "Which brings us to the largest fragilizer of society, and greatest generator of crises, absence of 'skin in the game.' Some become antifragile at the expense of others by getting the upside (or gains) from volatility, variations, and disorder and exposing others to the downside risks of losses or harm." - [Nassim Nicholas Taleb, _Antifragile_](http://a.co/d/07LfBTI)
 
@@ -141,9 +143,7 @@ So one mitigation for [Agency Risk](Agency-Risk) is therefore to use these extri
 
 > "One key to success in a mission is establishing clear lines of blame." - [Henshaw's Law, _Akin's Laws Of Spacecraft Design_](https://spacecraft.ssl.umd.edu/akins_laws.html)
 
-But _extrinsic motivation_ is a complex, difficult to apply tool.  In [Map And Territory Risk](Map-And-Territory-Risk) we will come back to this and look at the various ways in which it can run awry.
-
-#### Collective Code Ownership
+But _extrinsic motivation_ is a complex, difficult-to-apply tool.  In [Map And Territory Risk](Map-And-Territory-Risk) we will come back to this and look at the various ways in which it can go awry.
 
 ![Collective Code Ownership, Individual Responsibility](images/generated/risks/agency/cco.png)
 
