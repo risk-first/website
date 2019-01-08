@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-113" name="Goal In Mind" style="kite9-min-width: 900pt;">
+
+    <context id="c" bordered="true">
+      <mitigated>
+        <risk class="agency" style="kite9-vertical-align: top; " />
+      </mitigated>
+
+      <group style="kite9-layout: down; ">
+        <mitigated>
+          <risk class="security" />
+        </mitigated>
+
+        <description>Risks due to bad actors from outside the system.</description>
+      </group>
+    </context>
+
+    <group style="kite9-layout: down; kite9-horizontal-align: left;">
+      <action style="kite9-horizontal-align: left;">Security</action>
+    </group>
+
+    <context id="d" style="kite9-sizing: maximize; ">
+      <risk class="complexity" />
+    </context>
+
+
+  </diagram>
+</svg:svg>

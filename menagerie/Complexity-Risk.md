@@ -211,7 +211,7 @@ It's not long before someone comes down with food poisoning.
 
 ![Complexity Risk and it's implications](images/generated/risks/complexity/complexity-risk-impact.png)
 
-We wouldn't tolerate this behaviour in a restaurant kitchen, so why put up with it in a software project?  This state-of-affairs is illustrated in the above diagram: [Complexity Risk](Complexity-Risk) can be a cause of [Operational Risks](Operational-Risk) and [Security Risks](Agency-Risk#security-risk).
+We wouldn't tolerate this behaviour in a restaurant kitchen, so why put up with it in a software project?  This state-of-affairs is illustrated in the above diagram: [Complexity Risk](Complexity-Risk) can be a cause of [Operational Risks](Operational-Risk) and [Security Risks](Agency-Risk#security).
 
 ## Feature Creep
 

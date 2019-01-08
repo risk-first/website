@@ -43,7 +43,9 @@ computer,
 interface,
 component,
 channel-artifact,
-internal-model-artifact {
+internal-model-artifact,
+protocol-artifact,
+agent-artifact {
 	kite9-type: container;
 	kite9-margin: 10pt;
 	kite9-link-inset: 10pt;
@@ -54,6 +56,10 @@ internal-model-artifact {
 	kite9-padding: 10pt; 
 	kite9-connection-align: 50%;
 	kite9-min-size: 110pt 140pt;	
+}
+
+agent-artifact {
+	kite9-template: url(template.svg#agent-artifact);
 }
 
 users {
@@ -74,6 +80,10 @@ channel-artifact {
 
 component {
 	kite9-template: url(template.svg#component);
+}
+
+protocol-artifact {
+	kite9-template: url(template.svg#protocol-artifact);
 }
 
 mitigated {
@@ -143,40 +153,12 @@ risk.agency {
 	kite9-template: url(template.svg#agency);
 }
 
-risk.morale {
-	kite9-template: url(template.svg#morale);
-}
-
 risk.channel {
 	kite9-template: url(template.svg#channel);
 }
 
 risk.protocol {
 	kite9-template: url(template.svg#protocol);
-}
-
-risk.protocol-incompatibility {
-	kite9-template: url(template.svg#protocol-incompatibility);
-}
-
-risk.protocol-implementation {
-	kite9-template: url(template.svg#protocol-implementation);
-}
-
-risk.protocol-versioning {
-	kite9-template: url(template.svg#protocol-versioning);
-}
-
-risk.model-assumption {
-	kite9-template: url(template.svg#model-assumption);
-}
-
-risk.message-dependency {
-	kite9-template: url(template.svg#message-dependency);
-}
-
-risk.misinterpretation {
-	kite9-template: url(template.svg#misinterpretation);
 }
 
 risk.trust {
@@ -237,18 +219,6 @@ risk.dead-end {
 
 risk.abstraction {
 	kite9-template: url(template.svg#abstraction);
-}
-
-risk.channel-capacity {
-	kite9-template: url(template.svg#channel-capacity);
-}
-
-risk.channel-fit {
-	kite9-template: url(template.svg#channel-fit);
-}
-
-risk.noise {
-	kite9-template: url(template.svg#noise);
 }
 
 risk.reliability {
@@ -315,7 +285,7 @@ risk.security {
 	kite9-template: url(template.svg#security);
 }
 
-risk.methdology {
+risk.methodology {
 	kite9-template: url(template.svg#methodology);
 }
 
@@ -465,6 +435,15 @@ glyph {
 	kite9-sizing: minimize;
 }
 
+glyph.rect {
+	kite9-template: url(template.svg#glyph-rect);
+}
+
+glyph.circle {
+	kite9-template: url(template.svg#glyph-circle);
+	kite9-min-size: 20pt 20pt;
+}
+
 diagram glyph label {
 	kite9-type: container;
 	kite9-sizing: minimize;
@@ -515,6 +494,10 @@ link.invisible {
 
 link.dotted {
 	kite9-template: url(template.svg#dotted-link);
+}
+
+link.thick {
+	kite9-template: url(template.svg#thick-link);
 }
 
 link.grey {
@@ -693,10 +676,15 @@ celltext {
 	kite9-padding: 10pt;
 	kite9-vertical-align: center;
 	kite9-horizontal-align: left;
+	kite9-sizing: minimize;
 	font-size: 40pt;
 	fill: black;
 	font-family: "gothic";
 	stroke: none;
+}
+
+celltext text-label {
+	kite9-horizontal-align: left;
 }
 
 bulleted {
@@ -747,7 +735,8 @@ cell.shaded-tab {
 }
 
 
-celltext.center {
+celltext.center, 
+celltext.center text-label {
 	kite9-horizontal-align: center;
 }
 
@@ -842,4 +831,15 @@ keydesc {
 	font-family: "gothic";
 	kite9-padding: 10pt;
 }
+
+toLabel, 
+fromLabel {
+	kite9-usage: label;
+	kite9-type: container; 
+	kite9-padding: 4px; 
+	kite9-sizing: minimize;
+	kite9-template: url(template.svg#connection-label);
+	kite9-margin: 4px;	
+}
+
 

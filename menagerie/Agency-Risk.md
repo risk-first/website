@@ -6,9 +6,7 @@ This is [Agency Risk](Agency-Risk).   This term comes from finance and refers to
 
 > "This dilemma exists in circumstances where agents are motivated to act in their own best interests, which are contrary to those of their principals, and is an example of moral hazard." - [Principal-Agent Problem, _Wikipedia_](https://en.wikipedia.org/wiki/Principal–agent_problem)
 
-The less visibility you have of the agent's activities, the bigger the risk.  However, the whole point of giving the money to the agent was that you would have to spend less time and effort managing it.  
-
-![Mitigating Agency Risk Through Monitoring](images/generated/risks/agency/agency-risk.png)
+The less visibility you have of the agent's activities, the bigger the risk.  However, the _whole point_ of giving the money to the agent was that you would have to spend less time and effort managing it, hence the dilemma.
 
 [Agency Risk](Agency-Risk) clearly includes the behaviour of [Bad Actors](https://en.wiktionary.org/wiki/bad_actor).  But, that's too strict a definition:   <!-- tweet-start -->In software development, we're not lending each other money, but we are being paid by the project sponsor, so they are assuming [Agency Risk](Agency-Risk) by employing us.   <!-- tweet-end -->
 
@@ -16,9 +14,9 @@ As we saw in the previous section on [Process Risk](Process-Risk), <!-- tweet-st
 
 > "Agency is the capacity of an actor to act in a given environment... Agency may either be classified as unconscious, involuntary behaviour, or purposeful, goal directed activity (intentional action). " - [Agency, _Wikipedia_](https://en.wikipedia.org/wiki/Agency_(philosophy)) 
 
-Let's look at some examples of borderline [Agency Risk](Agency-Risk) situations, in order to sketch out where the domain of this risk lies.
+Here, we will look at some examples of [Agency Risk](Agency-Risk) situations, in order to sketch out where the domain of this risk lies, before looking at three common ways to mitigate it.
 
-## Personal Lives
+### Personal Lives
 
 We can't (shouldn't) expect people on a project to sacrifice their personal lives for the success of the project, right?  <!-- tweet-end --> Except that ["Crunch Time"](https://en.wikipedia.org/wiki/Video_game_developer#"Crunch_time") is exactly how some software companies work:
 
@@ -26,7 +24,7 @@ We can't (shouldn't) expect people on a project to sacrifice their personal live
 
 People taking time off, going to funerals, looking after sick relatives and so on are all acceptable forms of [Agency Risk](Agency-Risk). <!-- tweet-end --> They are the [Attendant Risk](Glossary#attendant-risk) of having _staff_ rather than _slaves_.
 
-## The Hero
+### The Hero
 
 > "The one who stays later than the others is a hero. " - [Hero Culture, _Ward's Wiki_](http://wiki.c2.com/?HeroCulture) <!-- tweet-end -->
 
@@ -39,28 +37,21 @@ Sometimes, projects don't get done without heroes.  But other times, the hero ha
 - A desire for recognition and acclaim from colleagues.
 - For the job security of being a [Key Person](https://en.wikipedia.org/wiki/Key_person_insurance).
 
-A team _can_ make use of heroism, but it's a double-edged sword.  The hero can becomes [a bottleneck](Coordination-Risk) to work getting done, and because want to solve all the problems themselves, they [under-communicate](Communication-Risk).  
+A team _can_ make use of heroism, but it's a double-edged sword.  The hero can becomes [a bottleneck](Coordination-Risk) to work getting done and because they want to solve all the problems themselves, they [under-communicate](Communication-Risk).  
 
-## Consultancies
-
-When you work with an external consultancy, there is *always* more [Agency Risk](Agency-Risk) than with a direct employee.  This is because as well as your goals and the employee's goals, there is also the consultancy's goals.  
-
-This is a good argument for avoiding consultancies, but sometimes the technical expertise they bring can outweigh this risk.
-
-## CV Building
+### CV Building
 
 CV Building is when someone decides that the project needs a dose of "Some Technology X", but in actual fact, this is either completely unhelpful to the project (incurring large amounts of [Complexity Risk](Complexity-Risk)), or merely a poor alternative to something else.  
 
 It's very easy to spot CV building:  look for choices of technology that are incongruently complex compared to the problem they solve, and then challenge by suggesting a simpler alternative.
 
-## Devil Makes Work
+### Devil Makes Work
 
 Heroes can be useful, but _underused_ project members are a nightmare.   The problem is, people who are not fully occupied begin to worry that actually, the team would be better off without them, and then wonder if their jobs are at risk.
 
 Even if they don't worry about their jobs, sometimes they need ways to stave off _boredom_.  The solution to this is "busy-work":  finding tasks that, at first sight, look useful, and then delivering them in an over-elaborate way ([Gold Plating](https://en.wikipedia.org/wiki/Gold_plating_(software_engineering))) that'll keep them occupied.  This will leave you with more [Complexity Risk](Complexity-Risk) than you had in the first place.
 
-
-## Pet Projects
+### Pet Projects
 
 > A project, activity or goal pursued as a personal favourite, rather than because it is generally accepted as necessary or important.  - [Pet Project, _Wiktionary_](https://en.wiktionary.org/wiki/pet_project)
 
@@ -68,7 +59,7 @@ Sometimes, budget-holders have projects they value more than others without refe
 
 Working on a pet project usually means you get lots of attention (and more than enough budget), but it can fall apart very quickly under scrutiny.
 
-## Morale Risk
+### Morale Risk
 
 > Morale, also known as Esprit de Corps is the capacity of a group's members to retain belief in an institution or goal, particularly in the face of opposition or hardship - [Morale, _Wikipedia_](https://en.wikipedia.org/wiki/Morale) 
 
@@ -78,7 +69,7 @@ Sometimes, the morale of the team or individuals within it dips, leading to lack
  - **The goal feels unachievable**:  in this case, people won't commit their full effort to it.  This might be due to to a difference in the evaluation of the risks on the project between the team members and the leader.  In military science, a second meaning of morale is how well supplied and equipped a unit is.  This would also seem like a useful reference point for IT projects.  If teams are under-staffed or under-equipped, this will impact on motivation too.
  - **The goal isn't sufficiently worthy**, or the team doesn't feel sufficiently valued.
 
-## Software Processes And Teams
+### Software Processes
 
 There is significant [Agency Risk](Agency-Risk) in running software _at all_.  Since computer systems follow rules we set for them, we shouldn't be surprised when those rules have exceptions that lead to disaster.  For example:
 
@@ -86,21 +77,47 @@ There is significant [Agency Risk](Agency-Risk) in running software _at all_.  S
  - Bugs causing data to get corrupted, causing financial loss.
  - Malware infecting a system, and sending your passwords and data to undesirables.
 
+### Teams
+
 [Agency Risk](Agency-Risk) applies to _whole teams_ too.  It's perfectly possible that a team within an organisation develops [Goals](Glossary#Goal-In-Mind) that don't align with those of the overall organisation.  For example:
 
  - A team introduces excessive [Bureaucracy](Process-Risk#bureaucracy-risk) in order to avoid work it doesn't like.
  - A team gets obsessed with a particular technology, or their own internal process improvement, at the expense of delivering business value.
  - A marginalised team forces their services on other teams in the name of "consistency".   (This can happen a lot with "Architecture", "Branding" and "Testing" teams, sometimes for the better, sometimes for the worse.)
 
-## Security Risk
+When you work with an external consultancy, there is *always* more [Agency Risk](Agency-Risk) than with a direct employee.  This is because as well as your goals and the employee's goals, there is also the consultancy's goals.  
 
-As shown in the above diagram, to mitigate [Agency Risk](Agency-Risk) _within_ a system, we can apply monitoring and goal-alignment.  Where the [Agency Risk](Agency-Risk) is from an unwanted actors _outside_ the system, we can apply security.  That is, ensuring that the environment we work in is _safe_ for the good actors to operate in, by keeping out the bad actors.
+This is a good argument for avoiding consultancies, but sometimes the technical expertise they bring can outweigh this risk. 
 
-Interestingly, security is handled in very similar ways in all kinds of systems, whether biological, human or organisational.  
+## Mitigating Agency Risk
+
+Let's look at three common ways to mitigate [Agency Risk](Agency-Risk):  [Monitoring](#monitoring), [Security](#security).  and [Goal Alignment](#goal-alignment).  Let's start with Monitoring.
+
+### Monitoring
+
+![Mitigating Agency Risk Through Monitoring](images/generated/risks/agency/agency-risk.png)
+
+A the core of the Principal-Agent Problem is the issue that we _want_ our agents to do work for us so we don't have the responsibility of doing it ourselves.  However, we pick up the second-order responsibility of managing the agents instead.  
+
+As a result (and as shown in the above diagram), we need to _Monitor_ the agents.  The price of mitigating [Agency Risk](Agency-Risk) this way is that we have to spend time ([Schedule Risk](Scarcity-Risk#schedule-risk)) doing the monitoring, and we have to understand what the agents are doing ([Complexity Risk](Complexity-Risk)).  
+
+Monitoring of _software process_ agents is an important part of designing reliable systems, and it makes perfect sense that this would also apply to _human_ agents too.  But 
+
+This is known as the Hawthorne Effect:
+
+> "The Hawthorne effect (also referred to as the observer effect) is a type of reactivity in which individuals modify an aspect of their behaviour in response to their awareness of being observed." - [Hawthorne Effect, _Wikipedia_](https://en.wikipedia.org/wiki/Hawthorne_effect)
+
+### Security
+
+![Security as a mitigation for Agency Risk](images/generated/risks/agency/security-risk.png)
+
+Security is all about _setting limits_ on the agency of actors - both within and outside a system.  _Within_ a system we may wish to prevent our actors from causing accidental harm.   We also have [Agency Risk](Agency-Risk) from unwanted actors _outside_ the system, so security is also about ensuring that the environment we work in is _safe_ for the good actors to operate in, by keeping out the bad actors.
+
+Interestingly, security is handled in very similar ways in all kinds of systems, whether biological, human or organisational: 
 
 - **Walls**: defences _around_ the complex system, to protect it's parts from the external environment.  
 - **Doors**: ways to get _in_ and _out_ of the complex system, possibly with _locks_.
-- **Guards**: to make sure only the right things go in and out.  (i.e. to try and keep out _Bad Actors_).
+- **Guards**: to make sure only the right things go in and out.  (i.e. to try and keep out _bad actors_).
 - **Police**: to defend from _within_ the system, against internal [Agency Risk](Agency-Risk).
 - **Subterfuge**: hiding, camouflage, disguises, pretending to be something else. 
 
@@ -110,13 +127,41 @@ Our societies work in similar ways: in medieval times, a city would have walls, 
 
 We're waking up to the realisation that our software systems need to work the same way:  we have [Firewalls](https://en.wikipedia.org/wiki/Firewall_(computing)) to protect our organisations, we lock down _ports_ on servers to ensure there are the minimum number of doors to guard and we _police_ the servers ourselves with monitoring tools and anti-virus software and we _guard_ access using passwords and other identification approaches. 
 
-Both [Security Risk](Agency-Risk#security-risk) and [Agency Risk](Agency-Risk) thrive on complexity.  The more complex the systems we create, the more opportunities there are for bad actors to insert themselves and extract their own value.   [Security Risk](Agency-Risk#security-risk) is also a major determinant of [Operational Risk](Operational-Risk), which we will review in a couple of sections time.
+[Agency Risk](Agency-Risk) and [Security Risk](Agency-Risk#security-risk) thrive on complexity:  the more complex the systems we create, the more opportunities there are for bad actors to insert themselves and extract their own value.  The problem is, _increasing security_ means increasing [Complexity Risk](Complexity-Risk).  Secure systems are necessarily more complex than insecure ones.
 
-## It's About Goals 
+  is also a major determinant of [Operational Risk](Operational-Risk), which we will review in a couple of sections time.
+
+### Goal Alignment
 
 We've looked here at some illustrative examples of [Agency Risk](Agency-Risk).  But as we stated at the beginning, [Agency Risk](Agency-Risk) at any level comes down to differences of [Goals](Glossary#goal-in-mind) between the different agents, whether they are _people_, _teams_ or _software_.  
- 
-So, having looked at agents _individually_, it's time to look more closely at [Goals](Glossary#goal-in-mind), and the [Attendant Risks](Glossary#attendant-risk) when aligning them amongst multiple agents.   
+
+So, if you can _align the goals_ of the actors involved, you can mitigate [Agency Risk](Agency-Risk).  Nassim Nicholas Taleb calls this "skin in the game", that is, the Agent is exposed to the same risks as the Principal:
+
+> "Which brings us to the largest fragilizer of society, and greatest generator of crises, absence of 'skin in the game.' Some become antifragile at the expense of others by getting the upside (or gains) from volatility, variations, and disorder and exposing others to the downside risks of losses or harm." - [Nassim Nicholas Taleb, _Antifragile_](http://a.co/d/07LfBTI)
+
+This kind of financial exposure isn't very common on software projects.  [Fixed Price Contracts](One-Size-Fits-No-One#waterfall) and [Employee Stock Options](https://en.wikipedia.org/wiki/Employee_stock_option) are two exceptions.  
+
+#### Motivational Theory
+
+> "The two-factor theory (also known as Herzberg's motivation-hygiene theory and dual-factor theory) states that there are certain factors in the workplace that cause job satisfaction, while a separate set of factors cause dissatisfaction." - [Two-Factor Theory, _Wikipedia_](https://en.wikipedia.org/wiki/Two-factor_theory)
+
+Frederick Herzberg's two-factor theory suggests that there are other kinds of skin-in-the-game: the intrinsic interest in the work being done, or extrinsic factors such as the recognition, achievement, or personal growth derived from it. 
+
+So one mitigation for [Agency Risk](Agency-Risk) is therefore to use these extrinsic factors.  By making individuals responsible, and rewarded for the success or failure of projects, we motivate them beyond their internal goals.  
+
+> "One key to success in a mission is establishing clear lines of blame." - [Henshaw's Law, _Akin's Laws Of Spacecraft Design_](https://spacecraft.ssl.umd.edu/akins_laws.html)
+
+But _extrinsic motivation_ is a complex, difficult to apply tool.  In [Map And Territory Risk](Map-And-Territory-Risk) we will come back to this and look at the various ways in which it can run awry.
+
+#### Collective Code Ownership
+
+![Collective Code Ownership, Individual Responsibility](images/generated/risks/agency/cco.png)
+
+Tools like [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming) and [Collective Code Ownership](https://en.wikipedia.org/wiki/Collective_ownership) are about mitigating [Staff Risks](Scarcity-Risk#staff-risk) like [Key Person Risk](https://en.wikipedia.org/wiki/Key_person_insurance#Key_person_definition) and [Learning-Curve Risk](Comunication-Risk#learning-curve-risk), but these push in the opposite direction to _individual responsibility_.   
+
+This is an important consideration:  in adopting those tools, you are necessarily accepting more [Agency Risk](Agency-Risk) as a result.
+
+Having looked at agents _individually_, it's time to look more closely at [Goals](Glossary#goal-in-mind), and the [Attendant Risks](Glossary#attendant-risk) when aligning them amongst multiple agents.   
 
 On to [Coordination Risk](Coordination-Risk)...
 
