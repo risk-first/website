@@ -99,7 +99,7 @@ A the core of the Principal-Agent Problem is the issue that we _want_ our agents
 
 As a result (and as shown in the above diagram), we need to _Monitor_ the agents.  The price of mitigating [Agency Risk](Agency-Risk) this way is that we have to spend time doing the monitoring ([Schedule Risk](Scarcity-Risk#schedule-risk)) and we have to understand what the agents are doing ([Complexity Risk](Complexity-Risk)).  
 
-Monitoring of _software process_ agents is an important part of designing reliable systems, and it makes perfect sense that this would also apply to _human_ agents too.  But for people, the _knowledge of being monitored_ can instil corrective behaviour.  This is known as the Hawthorne Effect:
+Monitoring of _software process_ agents is an important part of designing reliable systems and it makes perfect sense that this would also apply to _human_ agents too.  But for people, the _knowledge of being monitored_ can instil corrective behaviour.  This is known as the Hawthorne Effect:
 
 > "The Hawthorne effect (also referred to as the observer effect) is a type of reactivity in which individuals modify an aspect of their behaviour in response to their awareness of being observed." - [Hawthorne Effect, _Wikipedia_](https://en.wikipedia.org/wiki/Hawthorne_effect)
 
@@ -109,7 +109,7 @@ Monitoring of _software process_ agents is an important part of designing reliab
 
 Security is all about _setting limits_ on agency - both within and outside a system.  
 
-_Within_ a system we may wish to prevent our agents from causing accidental harm, but we also have [Agency Risk](Agency-Risk) from unwanted agents _outside_ the system.  So security is also about ensuring that the environment we work in is _safe_ for the good actors to operate in, while keeping out the bad actors.
+_Within_ a system we may wish to prevent our agents from causing accidental (or deliberate) harm, but we also have [Agency Risk](Agency-Risk) from unwanted agents _outside_ the system.  So security is also about ensuring that the environment we work in is _safe_ for the good actors to operate in, while keeping out the bad actors.
 
 Interestingly, security is handled in very similar ways in all kinds of systems, whether biological, human or institutional: 
 
@@ -123,7 +123,7 @@ These work various levels in **our own bodies**:  our _cells_ have _cell walls_ 
 
 **Our societies** work in similar ways: in medieval times, a city would have walls, guards and gates to keep out intruders.  Nowadays, we have customs control, borders and passports.
 
-We're waking up to the realisation that our software systems need to work the same way:  we have [Firewalls](https://en.wikipedia.org/wiki/Firewall_(computing)) to protect our organisations, we lock down _ports_ on servers to ensure there are the minimum number of doors to guard, we _police_ the servers with monitoring tools and we _guard_ access using passwords and other identification approaches. 
+We're waking up to the realisation that our software systems need to work the same way:  we have [Firewalls](https://en.wikipedia.org/wiki/Firewall_(computing)) and we lock down _ports_ on servers to ensure there are the minimum number of _doors_ to guard.  We _police_ the servers with monitoring tools and we _guard_ access using passwords and other identification approaches. 
 
 [Agency Risk](Agency-Risk) and [Security Risk](Agency-Risk#security-risk) thrive on complexity:  the more complex the systems we create, the more opportunities there are for bad actors to insert themselves and extract their own value.  The dilemma is, _increasing security_ means increasing [Complexity Risk](Complexity-Risk).  Secure systems are necessarily more complex than insecure ones.
 
