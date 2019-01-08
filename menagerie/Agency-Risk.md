@@ -139,7 +139,7 @@ This kind of financial exposure isn't very common on software projects.  [Fixed 
 
 > "Need theory... proposed by psychologist David McClelland, is a motivational model that attempts to explain how the needs for achievement, power, and affiliation affect the actions of people from a managerial context... McClelland stated that we all have these three types of motivation regardless of age, sex, race, or culture. The type of motivation by which each individual is driven derives from their life experiences and the opinions of their culture. " - [Need Theory, _Wikipedia_](https://en.wikipedia.org/wiki/Need_theory)
 
-So one mitigation for [Agency Risk](Agency-Risk) is therefore to employ these extrinsic factors.  By making individuals responsible and rewarded for the success or failure of projects, we can align their personal motivations with those of the project.  
+So one mitigation for [Agency Risk](Agency-Risk) is therefore to employ these extrinsic factors.  For example, by making individuals responsible and rewarded for the success or failure of projects, we can align their personal motivations with those of the project.  
 
 > "One key to success in a mission is establishing clear lines of blame." - [Henshaw's Law, _Akin's Laws Of Spacecraft Design_](https://spacecraft.ssl.umd.edu/akins_laws.html)
 
