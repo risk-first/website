@@ -149,9 +149,11 @@ But _extrinsic motivation_ is a complex, difficult-to-apply tool.  In [Map And T
 
 Tools like [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming) and [Collective Code Ownership](https://en.wikipedia.org/wiki/Collective_ownership) are about mitigating [Staff Risks](Scarcity-Risk#staff-risk) like [Key Person Risk](https://en.wikipedia.org/wiki/Key_person_insurance#Key_person_definition) and [Learning-Curve Risk](Communication-Risk#learning-curve-risk), but these push in the opposite direction to _individual responsibility_.   
 
-This is an important consideration:  in adopting those tools, you are necessarily accepting more [Agency Risk](Agency-Risk) as a result.
+This is an important consideration:  in adopting _those_ tools, you are necessarily setting aside ways to manage [Agency Risk](Agency-Risk) as a result.
 
-Having looked at agents _individually_, it's time to look more closely at [Goals](Glossary#goal-in-mind), and the [Attendant Risks](Glossary#attendant-risk) when aligning them amongst multiple agents.   
+We've looked at various different shades of [Agency Risk](Agency-Risk), and at three different mitigations for it.  But [Agency Risk](Agency-Risk) is a concern at the level of _individual agents_, whether they are processes, people, systems or teams.  
+
+So having looked at agents _individually_, it's time to look more closely at [Goals](Glossary#goal-in-mind), and the [Attendant Risks](Glossary#attendant-risk) when aligning them amongst multiple agents. 
 
 On to [Coordination Risk](Coordination-Risk)...
 
