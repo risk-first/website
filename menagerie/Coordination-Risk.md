@@ -1,10 +1,10 @@
 ![For Review](images/state/for-review.png)
 
-As in [Agency Risk](Agency-Risk), we are going to use the term _agent_, which refers to anything with [agency](Agency-Risk#software-processes) in a system to decide it's own fate.  That is, an agent has an [Internal Model](Glossary#Internal-Model),  and can [take actions](Glossary#taking-action) based on it.  Here, we leave aside [Agency Risk](Agency-Risk) and work on the assumption that the agents _are_ working towards a common [Goal](Glossary#Goal-In-Mind), even though in reality it's not always the case, as we saw in the section on [Agency Risk](Agency-Risk).
+As in [Agency Risk](Agency-Risk), we are going to use the term _agent_, which refers to anything with [agency](Agency-Risk#software-processes) in a system to decide it's own fate.  That is, an agent has an [Internal Model](Glossary#Internal-Model),  and can [take actions](Glossary#taking-action) based on it.  Here, we work on the assumption that the agents _are_ working towards a common [Goal](Glossary#Goal-In-Mind), even though in reality it's not always the case, as we saw in the section on [Agency Risk](Agency-Risk).
 
-[Coordination Risk](Coordination-Risk) is the risk that, a group of people or processes, maybe with a common [Goal In Mind](Glossary#Goal-In-Mind), can fail to coordinate to meet this goal and end up making things worse.<!-- tweet-end -->  [Coordination Risk](Coordination-Risk) is embodied in the phrase "Too Many Cooks Spoil The Broth":  more people, opinions or _agents_ often make results worse.
+[Coordination Risk](Coordination-Risk) is the risk that a group of people or processes -maybe with a common [Goal In Mind](Glossary#Goal-In-Mind)- can fail to coordinate to meet this goal and end up making things worse.<!-- tweet-end -->  [Coordination Risk](Coordination-Risk) is embodied in the phrase "Too Many Cooks Spoil The Broth":  more people, opinions or _agents_ often make results worse.
 
-In this section, we'll first build up [a model of Coordination Risk](#a-model-of-coordination-risk) and what exactly coordination means and why we do it.  Then, we'll look at some classic [problems of coordination](#problems-of-coordination).  Then, we're going to consider agency at several different levels (because of [Scale Invariance](Evaluating-Risk#invariances-2-scale-invariance)) .  We'll look at:
+In this section, we'll first build up [a model of Coordination Risk](#a-model-of-coordination-risk), describing exactly coordination means and why we do it.  Then, we'll look at some classic [problems of coordination](#problems-of-coordination).  Then, we're going to consider agency at several different levels (because of [Scale Invariance](Evaluating-Risk#invariances-2-scale-invariance)) .  We'll look at:
 
  - [Team Decision Making](#decision-making),
  - [Living Organisms](#in-living-organisms),
@@ -23,7 +23,7 @@ Earlier, in [Dependency Risk](Dependency-Risk), we looked at various resources (
 
 ![Sharing Resources.  5 units are available, and the X axis shows A's consumption of the resource.  B gets whatever remains.  Total benefit is maximised somewhere in the middle](images/numbers/sharing.png)
 
-One argument could come from [Diminishing Returns](https://en.wikipedia.org/wiki/Diminishing_returns), which says that the earlier units of a resource (say, chocolate bars) give you more benefit than later ones.  
+One argument for coordination could come from [Diminishing Returns](https://en.wikipedia.org/wiki/Diminishing_returns), which says that the earlier units of a resource (say, chocolate bars) give you more benefit than later ones.  
 
 We can see this in the chart above.  Let's say A and B compete over a resource, of which there are 5 units available.  For every extra A takes, B loses one.  The X axis shows A's consumption of the resource, so the biggest benefit to A is in the consumption of the first unit. 
 
@@ -57,7 +57,7 @@ Let's unpack this idea, and review some classic problems of coordination, none o
   - What if people change their minds in the light of new information?
   - How do you ensure everyone has enough information to make a good decision?
   
-3. **Factions**: sometimes, it's hard to coordinate large groups at the same time, and "factions" can occur.  That the world isn't a single big country is probably partly a testament to this:  countries are frequently separated by geographic features that prevent the easy flow of communication (and force).   We can also see this in distributed systems, with the ["split brain"](https://en.wikipedia.org/wiki/Split-brain_(computing)) problem.   This is where a network of processes becomes disconnected (usually due to a network failure between data centers), and you end up with two, smaller networks with different knowledge.  We'll address in more depth later.
+3. **Factions**: sometimes, it's hard to coordinate large groups at the same time, and "factions" can occur.  That the world isn't a single big country is probably partly a testament to this:  countries are frequently separated by geographic features that prevent the easy flow of communication (and force).   We can also see this in distributed systems, with the ["split brain"](https://en.wikipedia.org/wiki/Split-brain_(computing)) problem.   This is where subset of the total system becomes disconnected (usually due to a network failure), and you end up with two, smaller networks with different knowledge.  We'll address in more depth later.
 
 4. **[Resource Allocation](https://en.wikipedia.org/wiki/Resource_allocation)**:  ensuring that the right people are doing the right work, or the right resources are given to the right people is a coordination issue.  On a grand scale, we have [Logistics](https://en.wikipedia.org/wiki/Logistics), and [Economic Systems](https://en.wikipedia.org/wiki/Economic_system).  On a small scale, the office's _room booking system_ solves the coordination issue of who gets a meeting room using a first-come-first-served booking algorithm.  
 
@@ -98,9 +98,9 @@ The decisions at the top are faster, but don't do much for mitigating **Coordina
 The trick is to be able to tell which approach is suitable at which time.   Everyone is expected to make decisions _within their realm of expertise_: you can't have developers continually calling meetings to discuss whether they should be using an [Abstract Factory](https://en.wikipedia.org/wiki/Abstract_factory_pattern) or a [Factory Method](https://en.wikipedia.org/wiki/Factory_method_pattern), this would waste time.  The critical question is therefore, "what's the biggest risk?"
 
  - Is the [Coordination Risk](Coordination-Risk) greater?   Are we going to suffer [Dead End Risk](Complexity-Risk) if the decision is made wrongly?  What if people don't agree with it?  Poor leadership has an impact on [Morale](Agency-Risk#morale-risk) too.  
- - Is the [Schedule Risk](Scarcity-Risk#schedule-risk) greater?  If you have a 1-hour meeting with eight people to decide a decision, that's _one man day_ gone right there:  group decision making is _expensive_.  
+ - Is the [Schedule Risk](Scarcity-Risk#schedule-risk) greater?  If you have a 1-hour meeting with eight people to decide a decision, that's _one person day_ gone right there:  group decision making is _expensive_.  
  
-Hopefully, this model shows how _organisation_ can reduce [Coordination Risk](Coordination-Risk).  But, to make this work, we need more _communication_, and this has attendant complexity and time costs.  So, we can draw diagram above of our move on the [Risk Landscape](Risk-Landscape):
+So _organisation_ can reduce [Coordination Risk](Coordination-Risk) but to make this work we need more _communication_, and this has attendant complexity and time costs.  
 
 ### Staff As Agents
 
@@ -120,30 +120,24 @@ The job of harmonising this on a project would seem to fall to the team leader, 
 
 Specifically, this describes a process whereby a new group will form and then be required to work together. In the process, they will have many _disputes_.  Ideally, the group will resolve these disputes internally and emerge as a team, with a common [Goal In Mind](Glossary#goal-in-mind).
 
-They can be encouraged with orthogonal practices such as [team-building exercises](https://en.wikipedia.org/wiki/Team_building) (generally, submitting everyone to extreme experiences in order to bond them together).  With enough communication bandwidth and detente, a motivated team will self-organise code reviews, information exchange and improve their practices. 
-
-As described above, the job of [Coordination](Coordination-Risk) is [Resource Allocation](Coordination-Risk#problems-of-coordination), and so the skills of staff can potentially be looked at as resources to allocate.  This means handling [Coordination Risk](Coordination-Risk) issues like:
+Since [Coordination](Coordination-Risk) is about[Resource Allocation](Coordination-Risk#problems-of-coordination) the skills of staff can potentially be looked at as resources to allocate.  This means handling [Coordination Risk](Coordination-Risk) issues like:
 
  - People leaving, taking their [Internal Models](Glossary#Internal-Model) and expertise with them [Key Person Risk](Scarcity-Risk#Staff-Risk).
  - People requiring external training, to understand new tools and techniques [Learning-Curve Risk](Communication-Risk#learning-curve-risk).
- - People being protective about their knowledge in order to protect their jobs [Agency Risk](Agency-Risk). 
- - Where there are mixed ability levels, senior developers not helping juniors as it "slows them down".
- - People not getting on and not helping each other.
+ - People being protective about their knowledge in order to protect their jobs ([Agency Risk](Agency-Risk)). 
  
 > "As a rough rule, three programmers organised into a team can do only twice the work of a single programmer of the same ability - because of time spent on coordination problems." - [Gerald Wienberg, _The Psychology of Computer Programming_](https://en.wikipedia.org/wiki/Gerald_Weinberg) 
  
 ## In Living Organisms
 
-Vroom and Yetton's organisational style isn't relevant to just teams of people.  We can see it in the natural world too.  Although _the majority_ of cellular life on earth (by weight) is [single celled organisms](http://www.stephenjaygould.org/library/gould_bacteria.html), the existence of _humans_ (to pick a single example) demonstrates that sometimes it's better to try to mitigate [Coordination Risk](Coordination-Risk) and work as a team, accepting the [Complexity Risk](Complexity-Risk) and [Communication Risk](Communication-Risk) this entails.  As soon as cells start working together, they either need to pass _resources_ between them, or _control_ and _feedback_.  
-
-For example, in the human body, we have:
+Vroom and Yetton's organisational model isn't relevant to just teams of people.  We can see it in the natural world too.  Although _the majority_ of cellular life on earth (by weight) is [single celled organisms](http://www.stephenjaygould.org/library/gould_bacteria.html), the existence of _humans_ (to pick a single example) demonstrates that sometimes it's better to try to mitigate [Coordination Risk](Coordination-Risk) and work as a team, accepting the [Complexity Risk](Complexity-Risk) and [Communication Risk](Communication-Risk) this entails.  For example, in the human body, we have:
 
  - **Various [systems](https://en.wikipedia.org/wiki/List_of_systems_of_the_human_body)**: such as the [Respiratory System](https://en.wikipedia.org/wiki/Respiratory_system) or the [Digestive System](https://en.wikipedia.org/wiki/Human_digestive_system).  Each of these systems contains...
  - **Organs**, such as the heart or lungs, which contain..
  - **Tissues**, which contain...
  - **Cells** of different types.  (Even cells are complex systems containing multiple different, communicating sub-systems.)  
  
-There is huge attendant [Communication Risk](Communication-Risk) to running the human body, but, given the success of humanity as a species, you must conclude that these steps on the _evolutionary_ [Risk Landscape](Risk-Landscape) have benefited us in our ecological niche.
+There is huge attendant [Coordination Risk](Coordination-Risk) to running a complex multi-cellular system like the human body, but given the success of humanity as a species, you must conclude that these steps on the _evolutionary_ [Risk Landscape](Risk-Landscape) have benefited us in our ecological niche.
 
 ### Decision Making
 
@@ -209,7 +203,7 @@ Finally, if we have a CA system, we are essentially saying that _only one agent 
 
 ### Some Real-Life Examples
 
-This sets an upper bound on [Coordination Risk](Coordination-Risk):  we _can't_ get rid of it completely in a software system, -or- a system on any other scale. Fundamentally, coordination problems are inescapable at some level.  The best we can do is mitigate it by agreeing on protocols and doing lots of communication.   
+This sets a lower bound on [Coordination Risk](Coordination-Risk):  we _can't_ get rid of it completely in a software system, -or- a system on any other scale. Fundamentally, coordination problems are inescapable at some level.  The best we can do is mitigate it by agreeing on protocols and doing lots of communication.   
 
 Let's look at some real-life examples of how this manifests in software.
 
