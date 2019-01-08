@@ -34,7 +34,7 @@
 |[Reliability](Dependency-Risk#reliability-risk)|Risks of not getting benefit from a dependency due to it's reliability.|
 |[Scarcity](Scarcity-Risk)|Risk of not being able to access a dependency in a timely fashion due to it's scarcity.|
 |[Schedule](Scarcity-Risk#schedule-risk)|The aspect of dependency risk related to time.|
-|[Security](Agency-Risk#security-risk)|Agency Risks due to actors from outside the system.|
+|[Security](Agency-Risk#security)|Agency Risks due to actors from outside the system.|
 |[Software Dependency](Software-Dependency-Risk)|Dependency Risk due to software dependencies.|
 |[Staff](Scarcity-Risk#staff-risk)|The aspect of dependency risks related to employing people.|
 |[Trust-And-Belief](Communication-Risk#trust--belief-risk)|Risk that a party we are communicating with can't be trusted, as it has agency or is unreliable in some other way.  |

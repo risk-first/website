@@ -125,7 +125,7 @@ These work various levels in **our own bodies**:  our _cells_ have _cell walls_ 
 
 We're waking up to the realisation that our software systems need to work the same way:  we have [Firewalls](https://en.wikipedia.org/wiki/Firewall_(computing)) and we lock down _ports_ on servers to ensure there are the minimum number of _doors_ to guard.  We _police_ the servers with monitoring tools and we _guard_ access using passwords and other identification approaches. 
 
-[Agency Risk](Agency-Risk) and [Security Risk](Agency-Risk#security-risk) thrive on complexity:  the more complex the systems we create, the more opportunities there are for bad actors to insert themselves and extract their own value.  The dilemma is, _increasing security_ also means increasing [Complexity Risk](Complexity-Risk), because secure systems are necessarily more complex than insecure ones.
+[Agency Risk](Agency-Risk) and [Security Risk](Agency-Risk#security) thrive on complexity:  the more complex the systems we create, the more opportunities there are for bad actors to insert themselves and extract their own value.  The dilemma is, _increasing security_ also means increasing [Complexity Risk](Complexity-Risk), because secure systems are necessarily more complex than insecure ones.
 
 ### Goal Alignment
 
@@ -137,7 +137,7 @@ So, if you can _align the goals_ of the agents involved, you can mitigate [Agenc
 
 This kind of financial exposure isn't very common on software projects.  [Fixed Price Contracts](One-Size-Fits-No-One#waterfall) and [Employee Stock Options](https://en.wikipedia.org/wiki/Employee_stock_option) are two exceptions.  But  David McClelland's Needs Theory suggests that there are other kinds of skin-in-the-game: the intrinsic interest in the work being done, or extrinsic factors such as the recognition, achievement, or personal growth derived from it.   
 
-> "Need theory, ...proposed by psychologist David McClelland, is a motivational model that attempts to explain how the needs for achievement, power, and affiliation affect the actions of people from a managerial context... McClelland stated that we all have these three types of motivation regardless of age, sex, race, or culture. The type of motivation by which each individual is driven derives from their life experiences and the opinions of their culture. " - [Need Theory, _Wikipedia_](https://en.wikipedia.org/wiki/Need_theory)
+> "Need theory... proposed by psychologist David McClelland, is a motivational model that attempts to explain how the needs for achievement, power, and affiliation affect the actions of people from a managerial context... McClelland stated that we all have these three types of motivation regardless of age, sex, race, or culture. The type of motivation by which each individual is driven derives from their life experiences and the opinions of their culture. " - [Need Theory, _Wikipedia_](https://en.wikipedia.org/wiki/Need_theory)
 
 So one mitigation for [Agency Risk](Agency-Risk) is therefore to employ these extrinsic factors.  By making individuals responsible and rewarded for the success or failure of projects, we can align their personal motivations with those of the project.  
 
@@ -147,7 +147,7 @@ But _extrinsic motivation_ is a complex, difficult-to-apply tool.  In [Map And T
 
 ![Collective Code Ownership, Individual Responsibility](images/generated/risks/agency/cco.png)
 
-Tools like [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming) and [Collective Code Ownership](https://en.wikipedia.org/wiki/Collective_ownership) are about mitigating [Staff Risks](Scarcity-Risk#staff-risk) like [Key Person Risk](https://en.wikipedia.org/wiki/Key_person_insurance#Key_person_definition) and [Learning-Curve Risk](Comunication-Risk#learning-curve-risk), but these push in the opposite direction to _individual responsibility_.   
+Tools like [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming) and [Collective Code Ownership](https://en.wikipedia.org/wiki/Collective_ownership) are about mitigating [Staff Risks](Scarcity-Risk#staff-risk) like [Key Person Risk](https://en.wikipedia.org/wiki/Key_person_insurance#Key_person_definition) and [Learning-Curve Risk](Communication-Risk#learning-curve-risk), but these push in the opposite direction to _individual responsibility_.   
 
 This is an important consideration:  in adopting those tools, you are necessarily accepting more [Agency Risk](Agency-Risk) as a result.
 

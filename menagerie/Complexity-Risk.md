@@ -313,7 +313,7 @@ This is a strong argument for the use of libraries.  But, when should you use a 
 
 ### The Environment
 
-The complexity of software tends to reflect the complexity of the environment it runs in, and complex software environments are more difficult to reason about, and more susceptible to [Operational Risk](Operational-Risk) and [Security-Risk](Agency-Risk#security-risk).  
+The complexity of software tends to reflect the complexity of the environment it runs in, and complex software environments are more difficult to reason about, and more susceptible to [Operational Risk](Operational-Risk) and [Security-Risk](Agency-Risk#security).  
 
 In particular, when we talk about the environment, we are talking about the number of dependencies that the software has, and the risks we face when relying on those dependencies.  
 
