@@ -125,7 +125,7 @@ These work various levels in **our own bodies**:  our _cells_ have _cell walls_ 
 
 We're waking up to the realisation that our software systems need to work the same way:  we have [Firewalls](https://en.wikipedia.org/wiki/Firewall_(computing)) and we lock down _ports_ on servers to ensure there are the minimum number of _doors_ to guard.  We _police_ the servers with monitoring tools and we _guard_ access using passwords and other identification approaches. 
 
-[Agency Risk](Agency-Risk) and [Security Risk](Agency-Risk#security-risk) thrive on complexity:  the more complex the systems we create, the more opportunities there are for bad actors to insert themselves and extract their own value.  The dilemma is, _increasing security_ means increasing [Complexity Risk](Complexity-Risk).  Secure systems are necessarily more complex than insecure ones.
+[Agency Risk](Agency-Risk) and [Security Risk](Agency-Risk#security-risk) thrive on complexity:  the more complex the systems we create, the more opportunities there are for bad actors to insert themselves and extract their own value.  The dilemma is, _increasing security_ also means increasing [Complexity Risk](Complexity-Risk), because secure systems are necessarily more complex than insecure ones.
 
 ### Goal Alignment
 
