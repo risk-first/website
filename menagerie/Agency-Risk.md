@@ -14,7 +14,7 @@ As we saw in the previous section on [Process Risk](Process-Risk), <!-- tweet-st
 
 > "Agency is the capacity of an actor to act in a given environment... Agency may either be classified as unconscious, involuntary behaviour, or purposeful, goal directed activity (intentional action). " - [Agency, _Wikipedia_](https://en.wikipedia.org/wiki/Agency_(philosophy)) 
 
-Here, we will look at some examples of [Agency Risk](Agency-Risk) situations, in order to sketch out where the domain of this risk lies, before looking at three common ways to mitigate it.
+Here, we will look at some examples of [Agency Risk](Agency-Risk) situations, in order to sketch out where the domain of this risk lies, before looking at three common ways to mitigate it: monitoring, security and goal alignment.
 
 ### Personal Lives
 
@@ -99,11 +99,9 @@ Let's look at three common ways to mitigate [Agency Risk](Agency-Risk):  [Monito
 
 A the core of the Principal-Agent Problem is the issue that we _want_ our agents to do work for us so we don't have the responsibility of doing it ourselves.  However, we pick up the second-order responsibility of managing the agents instead.  
 
-As a result (and as shown in the above diagram), we need to _Monitor_ the agents.  The price of mitigating [Agency Risk](Agency-Risk) this way is that we have to spend time ([Schedule Risk](Scarcity-Risk#schedule-risk)) doing the monitoring, and we have to understand what the agents are doing ([Complexity Risk](Complexity-Risk)).  
+As a result (and as shown in the above diagram), we need to _Monitor_ the agents.  The price of mitigating [Agency Risk](Agency-Risk) this way is that we have to spend time doing the monitoring ([Schedule Risk](Scarcity-Risk#schedule-risk)) and we have to understand what the agents are doing ([Complexity Risk](Complexity-Risk)).  
 
-Monitoring of _software process_ agents is an important part of designing reliable systems, and it makes perfect sense that this would also apply to _human_ agents too.  But 
-
-This is known as the Hawthorne Effect:
+Monitoring of _software process_ agents is an important part of designing reliable systems, and it makes perfect sense that this would also apply to _human_ agents too.  But for people, the _knowledge of being monitored_ is itself enough to instil corrective behaviour.  This is known as the Hawthorne Effect:
 
 > "The Hawthorne effect (also referred to as the observer effect) is a type of reactivity in which individuals modify an aspect of their behaviour in response to their awareness of being observed." - [Hawthorne Effect, _Wikipedia_](https://en.wikipedia.org/wiki/Hawthorne_effect)
 
@@ -111,7 +109,7 @@ This is known as the Hawthorne Effect:
 
 ![Security as a mitigation for Agency Risk](images/generated/risks/agency/security-risk.png)
 
-Security is all about _setting limits_ on the agency of actors - both within and outside a system.  _Within_ a system we may wish to prevent our actors from causing accidental harm.   We also have [Agency Risk](Agency-Risk) from unwanted actors _outside_ the system, so security is also about ensuring that the environment we work in is _safe_ for the good actors to operate in, by keeping out the bad actors.
+Security is all about _setting limits_ on the agency of actors - both within and outside a system.  _Within_ a system we may wish to prevent our actors from causing accidental harm, but we also have [Agency Risk](Agency-Risk) from unwanted actors _outside_ the system.  So security is also about ensuring that the environment we work in is _safe_ for the good actors to operate in, while keeping out the bad actors.
 
 Interestingly, security is handled in very similar ways in all kinds of systems, whether biological, human or organisational: 
 
@@ -121,33 +119,27 @@ Interestingly, security is handled in very similar ways in all kinds of systems,
 - **Police**: to defend from _within_ the system, against internal [Agency Risk](Agency-Risk).
 - **Subterfuge**: hiding, camouflage, disguises, pretending to be something else. 
 
-These work various levels in our own bodies:  our _cells_ have _cell walls_ around them, and _cell membranes_ that act as the guards to allow things in and out.  Our _bodies_ have _skin_ to keep the world out, and we have _mouths_, _eyes_, _pores_ and so on to allow things in and out.  We have an _immune system_ to act as the police.
+These work various levels in **our own bodies**:  our _cells_ have _cell walls_ around them, and _cell membranes_ that act as the guards to allow things in and out.  Our _bodies_ have _skin_ to keep the world out, and we have _mouths_, _eyes_, _pores_ and so on to allow things in and out.  We have an _immune system_ to act as the police.
 
-Our societies work in similar ways: in medieval times, a city would have walls, guards and doors to keep out intruders.  Nowadays, we have customs control, borders and passports.
+**Our societies** work in similar ways: in medieval times, a city would have walls, guards and doors to keep out intruders.  Nowadays, we have customs control, borders and passports.
 
-We're waking up to the realisation that our software systems need to work the same way:  we have [Firewalls](https://en.wikipedia.org/wiki/Firewall_(computing)) to protect our organisations, we lock down _ports_ on servers to ensure there are the minimum number of doors to guard and we _police_ the servers ourselves with monitoring tools and anti-virus software and we _guard_ access using passwords and other identification approaches. 
+We're waking up to the realisation that our software systems need to work the same way:  we have [Firewalls](https://en.wikipedia.org/wiki/Firewall_(computing)) to protect our organisations, we lock down _ports_ on servers to ensure there are the minimum number of doors to guard, we _police_ the servers with monitoring tools and we _guard_ access using passwords and other identification approaches. 
 
-[Agency Risk](Agency-Risk) and [Security Risk](Agency-Risk#security-risk) thrive on complexity:  the more complex the systems we create, the more opportunities there are for bad actors to insert themselves and extract their own value.  The problem is, _increasing security_ means increasing [Complexity Risk](Complexity-Risk).  Secure systems are necessarily more complex than insecure ones.
-
-  is also a major determinant of [Operational Risk](Operational-Risk), which we will review in a couple of sections time.
+[Agency Risk](Agency-Risk) and [Security Risk](Agency-Risk#security-risk) thrive on complexity:  the more complex the systems we create, the more opportunities there are for bad actors to insert themselves and extract their own value.  The dilemma is, _increasing security_ means increasing [Complexity Risk](Complexity-Risk).  Secure systems are necessarily more complex than insecure ones.
 
 ### Goal Alignment
 
-We've looked here at some illustrative examples of [Agency Risk](Agency-Risk).  But as we stated at the beginning, [Agency Risk](Agency-Risk) at any level comes down to differences of [Goals](Glossary#goal-in-mind) between the different agents, whether they are _people_, _teams_ or _software_.  
+As we stated at the beginning, [Agency Risk](Agency-Risk) at any level comes down to differences of [Goals](Glossary#goal-in-mind) between the different agents, whether they are _people_, _teams_ or _software_.  
 
-So, if you can _align the goals_ of the actors involved, you can mitigate [Agency Risk](Agency-Risk).  Nassim Nicholas Taleb calls this "skin in the game", that is, the Agent is exposed to the same risks as the Principal:
+So, if you can _align the goals_ of the actors involved, you can mitigate [Agency Risk](Agency-Risk).  Nassim Nicholas Taleb calls this "skin in the game": that is, the agent is exposed to the same risks as the principal.
 
 > "Which brings us to the largest fragilizer of society, and greatest generator of crises, absence of 'skin in the game.' Some become antifragile at the expense of others by getting the upside (or gains) from volatility, variations, and disorder and exposing others to the downside risks of losses or harm." - [Nassim Nicholas Taleb, _Antifragile_](http://a.co/d/07LfBTI)
 
-This kind of financial exposure isn't very common on software projects.  [Fixed Price Contracts](One-Size-Fits-No-One#waterfall) and [Employee Stock Options](https://en.wikipedia.org/wiki/Employee_stock_option) are two exceptions.  
-
-#### Motivational Theory
+This kind of financial exposure isn't very common on software projects.  [Fixed Price Contracts](One-Size-Fits-No-One#waterfall) and [Employee Stock Options](https://en.wikipedia.org/wiki/Employee_stock_option) are two exceptions.  But Frederick Herzberg's two-factor theory suggests that there are other kinds of skin-in-the-game: the intrinsic interest in the work being done, or extrinsic factors such as the recognition, achievement, or personal growth derived from it.   
 
 > "The two-factor theory (also known as Herzberg's motivation-hygiene theory and dual-factor theory) states that there are certain factors in the workplace that cause job satisfaction, while a separate set of factors cause dissatisfaction." - [Two-Factor Theory, _Wikipedia_](https://en.wikipedia.org/wiki/Two-factor_theory)
 
-Frederick Herzberg's two-factor theory suggests that there are other kinds of skin-in-the-game: the intrinsic interest in the work being done, or extrinsic factors such as the recognition, achievement, or personal growth derived from it. 
-
-So one mitigation for [Agency Risk](Agency-Risk) is therefore to use these extrinsic factors.  By making individuals responsible, and rewarded for the success or failure of projects, we motivate them beyond their internal goals.  
+So one mitigation for [Agency Risk](Agency-Risk) is therefore to use these extrinsic factors.  By making individuals responsible and rewarded for the success or failure of projects, we motivate them beyond their internal goals.  
 
 > "One key to success in a mission is establishing clear lines of blame." - [Henshaw's Law, _Akin's Laws Of Spacecraft Design_](https://spacecraft.ssl.umd.edu/akins_laws.html)
 
