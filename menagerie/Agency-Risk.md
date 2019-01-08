@@ -151,7 +151,7 @@ Tools like [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming) an
 
 This is an important consideration:  in adopting _those_ tools, you are necessarily setting aside certain tools to manage [Agency Risk](Agency-Risk) as a result.
 
-We've looked at various different shades of [Agency Risk](Agency-Risk), and at three different mitigations for it.  But [Agency Risk](Agency-Risk) is a concern at the level of _individual agents_, whether they are processes, people, systems or teams.  
+We've looked at various different shades of [Agency Risk](Agency-Risk) and three different mitigations for it.  But [Agency Risk](Agency-Risk) is a concern at the level of _individual agents_, whether they are processes, people, systems or teams.  
 
 So having looked at agents _individually_, it's time to look more closely at [Goals](Glossary#goal-in-mind), and the [Attendant Risks](Glossary#attendant-risk) when aligning them amongst multiple agents. 
 
