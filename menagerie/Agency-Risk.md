@@ -137,9 +137,9 @@ So, if you can _align the goals_ of the actors involved, you can mitigate [Agenc
 
 This kind of financial exposure isn't very common on software projects.  [Fixed Price Contracts](One-Size-Fits-No-One#waterfall) and [Employee Stock Options](https://en.wikipedia.org/wiki/Employee_stock_option) are two exceptions.  But Frederick Herzberg's two-factor theory suggests that there are other kinds of skin-in-the-game: the intrinsic interest in the work being done, or extrinsic factors such as the recognition, achievement, or personal growth derived from it.   
 
-> "The two-factor theory (also known as Herzberg's motivation-hygiene theory and dual-factor theory) states that there are certain factors in the workplace that cause job satisfaction, while a separate set of factors cause dissatisfaction." - [Two-Factor Theory, _Wikipedia_](https://en.wikipedia.org/wiki/Two-factor_theory)
+> "The two-factor theory ... states that there are certain factors in the workplace that cause job satisfaction, while a separate set of factors cause dissatisfaction." - [Two-Factor Theory, _Wikipedia_](https://en.wikipedia.org/wiki/Two-factor_theory)
 
-So one mitigation for [Agency Risk](Agency-Risk) is therefore to use these extrinsic factors.  By making individuals responsible and rewarded for the success or failure of projects, we motivate them beyond their internal goals.  
+So one mitigation for [Agency Risk](Agency-Risk) is therefore to use these extrinsic factors.  By making individuals responsible and rewarded for the success or failure of projects, we can align their personal motivations with those of the project.  
 
 > "One key to success in a mission is establishing clear lines of blame." - [Henshaw's Law, _Akin's Laws Of Spacecraft Design_](https://spacecraft.ssl.umd.edu/akins_laws.html)
 
