@@ -30,7 +30,7 @@ Below is a table outlining the different risks we'll see.  There _is_ an order t
 
 |Risk            |          Description           |      
 |----------------|--------------------------|
-|[Feature Risk](Feature-Risk)                        |When you haven't built features the market needs, or they contain bugs, or the market changes underneath you.  <br />     |
+|[Feature Risk](Feature-Risk)                        |When you haven't built features the market needs, or the features you have built contain bugs, or the market changes underneath you.    |
 |[Communication Risk](Communication-Risk)            |Risks associated with getting messages heard and understood.|             
 |[Complexity Risk](Complexity-Risk)                  |Your software is so complex it makes it hard to change, understand or run.             |        
 |[Dependency Risk](Dependency-Risk)                  |Risks of depending on other people, products, software, functions, etc. This is a general look at dependencies, before diving into specifics like...|  
@@ -44,15 +44,15 @@ Below is a table outlining the different risks we'll see.  There _is_ an order t
 |[Map And Territory Risk](Map-And-Territory-Risk)    |Risks due to the fact that people don't see the world as it really is. (After all, they're working off different, imperfect [Internal Models](Glossary#internal-model).)|  
 |[Operational Risk](Operational-Risk)                |Software is embedded in a system containing people, buildings, machines and other services.  Operational risk considers this wider picture of risk associated with running a software service or business in the real world.|
        
-On each page we'll start by looking at the category of the risk _in general_, and then break this down into some specific sub-types.  At the end, in [Staging and Classifying](Staging-And-Classifying) we'll have a recap about what we've seen and make some guesses about how things fit together.  
+After each stop on the tour, in [Staging and Classifying](Staging-And-Classifying) we'll have a recap about what we've seen and make some guesses about how things fit together.  
 
-## Correlation & Causation
+## Causation & Correlation 
 
 Although we're going to try and categorise the kinds of things we see on this [Risk Landscape](Risk-Landscape), this isn't going to be perfect: 
 
  - One risk can "blend" into another just like sometimes a "field" is also a "car-park" or a building might contain some trees (but isn't a forest).
  - As we know from [Part 1](Home#Part-1-Introduction), mitigating one risk probably means accepting another.
- - There is _correlation_ between different risks:  one risk may cause another, or two risks may be due to the same underlying cause.
+ - There is _causation_ and _correlation_ between different risks:  one risk may cause another, or two risks might have the same underlying cause.
   
 Risk is messy.  It's not always easy to tease apart the different components of risk and look at them individually.<!-- tweet-end -->  Let's look at a high-profile recent example to see why.
 
