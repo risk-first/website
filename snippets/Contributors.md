@@ -1,5 +1,6 @@
 Ideas, issues and proof-reading:
 
+- [Gustavo Andrade](https://github.com/gandrade)
 - [George Bashi](https://github.com/georgebashi)
 - [Michael Geary](https://github.com/geary)
 - [Jan Hovancik](https://github.com/hovancik)
