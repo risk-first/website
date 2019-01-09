@@ -1,6 +1,6 @@
 ![For Review](images/state/for-review.png)
 
-In [the previous section](One-Size-Fits-No-One), we saw how _Lean Software Development_ owed its existence to production-line manufacturing techniques developed at Toyota.  And, we saw that the _Waterfall_ approach originally came from engineering.  If Risk-First is anything, it's about applying the techniques of _Risk Management_ to the discipline of _Software Development_ (there's nothing new under the sun, after all).  
+In [the previous section](One-Size-Fits-No-One), we saw how _Lean Software Development_ owed its existence to production-line manufacturing techniques developed at Toyota.  And we saw that the _Waterfall_ approach originally came from engineering.  If Risk-First is anything, it's about applying the techniques of _Risk Management_ to the discipline of _Software Development_ (there's nothing new under the sun, after all).  
 
 One key activity of Risk Management we haven't discussed yet is _categorizing_ risks.  Thus, Part 2 of Risk-First is all about developing categories of risks for use in Software Development.
 
@@ -10,7 +10,7 @@ In [Meeting Reality](Meeting-Reality), we looked at the concept of the [Risk Lan
 
 It's tempting to think of our [Risk Landscape](Risk-Landscape) as being like a [Fitness Landscape](https://en.wikipedia.org/wiki/Fitness_landscape).  That is, you have a "cost function" which is your height above the landscape, and you try and optimise by moving downhill in a [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent) fashion.  
 
-However, there's a problem with this:  as we said in [Evaluating Risk](Evaluating-Risk), we don't have a cost function.  We can only guess at what risks there are.  And, we have to go on our _experience_. For this reason, I prefer to think of the [Risk Landscape](Risk-Landscape) as a terrain which contains _fauna_ and _obstacles_ (or, specifically [_Boundaries_](Boundary-Risk)).
+However, there's a problem with this:  as we said in [Evaluating Risk](Evaluating-Risk), we don't have a cost function.  We can only _guess_ at what risks there are.  We have to go on our _experience_. For this reason, I prefer to think of the [Risk Landscape](Risk-Landscape) as a terrain which contains _fauna_ and _obstacles_ (or, specifically [_Boundaries_](Boundary-Risk)).
 
 Just as I can tell you that the landscape outside your window will probably will have some trees, fields and buildings, and that the buildings are likely to be joined together by roads, we can make generalisations about risks too.
 
@@ -18,13 +18,11 @@ Just as I can tell you that the landscape outside your window will probably will
 
 A lot of knowledge and understanding of the world starts by naming and categorising things.  
 
-If we were studying insects, this might be a guide giving you a description and a picture of each insect, telling you where to find it and what it does.  <!-- tweet-end --> That doesn't mean that this is _all_ there is to know.  Just as a scientist could spend her entire life studying a particular species of bee, each of the risks we'll look at really has a whole sub-discipline of Computer Science attached to it, which we can't possibly hope to cover in any great depth.  
+If we were studying insects, this might be a guide giving you a description and a picture of each insect, telling you where to find it and how it lives.  <!-- tweet-end --> That doesn't mean that this is _all_ there is to know.  Just as a scientist could spend an entire lifetime studying a particular species of bee, each of the risks we'll look at really has a whole sub-discipline of Computer Science attached to it, which we can't possibly hope to cover in any great depth.  
 
-As software developers, we can't hope to know the detailed specifics of the whole discipline of [Complexity Theory](https://en.wikipedia.org/wiki/Complexity_theory), or [Concurrency Theory](https://en.wikipedia.org/wiki/Concurrency_(computer_science)).  But, we're still required to operate in a world where these things exist.  So, we may as well get used to them, and ensure that we respect their primacy.  We are operating in _their_ world, so we need to know the rules.
+As software developers, we can't hope to know the specifics of the whole discipline of [Complexity Theory](https://en.wikipedia.org/wiki/Complexity_theory), or [Concurrency Theory](https://en.wikipedia.org/wiki/Concurrency_(computer_science)).  But, we're still required to operate in a world where these things exist.  So, we may as well get used to them and ensure that we respect their primacy.  We are operating in _their_ world, so we need to know the rules.
 
-Once we can spot and name different types of risk, we can then think about their characteristics, and how to manage or avoid them.  In each of the following sections, we'll be looking at a different category of risk, some of it's characteristics and sometimes suggesting actions to take to deal with it.
-
-But foremost, this is a "spotters' guide" to software risks and where to find them.  <!-- tweet-end -->
+Once we can spot and name different types of risk we can then think about their characteristics and how to manage or avoid them.  Over the following pages, we're going to take a tour of various different categories of risks, exploring their characteristics and sometimes suggesting actions to take to deal with them.  <!-- tweet-start -->But foremost, this is a "spotters' guide" to software risks and where to find them.  <!-- tweet-end -->
 
 ## Our Tour Itinerary
 
