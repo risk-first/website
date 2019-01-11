@@ -1,23 +1,25 @@
 ![For Review](images/state/for-review.png)
 
-[Feature Risks](Feature-Risk) are risks to do with functionality that you need to have in your software.  
+[Feature Risks](Feature-Risk) are risks to do with functionality that you need to have in the software you're building.  
 
-As a simple example, <!-- tweet-start -->if your needs are served perfectly by Microsoft Excel, then you don't have any [Feature Risk](Feature-Risk).<!-- tweet-end -->  However, the day you find Microsoft Excel wanting, and decide to build an Add-On is the day when you first appreciate some [Feature Risk](Feature-Risk).
+As a simple example, <!-- tweet-start -->if your needs are served perfectly by Microsoft Excel, then you don't have any [Feature Risk](Feature-Risk).<!-- tweet-end -->  However, the day you find Microsoft Excel wanting, and decide to build an Add-On is the day when you first appreciate some [Feature Risk](Feature-Risk). _You're_ now a customer:  does the Add-On you build satisfy the requirements you have?
 
-In a way, [Feature Risk](Feature-Risk) is very fundamental:  if there were _no_ feature risk, the job would be done already, either by you, or by another product, and the product would be perfect!
+[Feature Risk](Feature-Risk) is very fundamental:  if there were _no_ [Feature Risk](Feature-Risk), the job would be done by Excel already and it would be perfect!  
+
+As we will explore below, [Feature Risk](Feature-Risk) exists in the gaps between what users want, and what they are given.
 
 Not considering [Feature Risk](Feature-Risk) means that you might be building the wrong functionality, for the wrong audience or at the wrong time.  And eventually, this will come down to lost money, business, acclaim, or whatever else reason you are doing your project for.  So let's unpack this concept into some of it's variations.
 
 ## Feature Fit Risk
 
-![Feature Risk](images/generated/risks/feature/feature-fit-risk.png) 
+![Feature Fit Risk](images/generated/risks/feature/feature-fit-risk.png) 
 
-This is the one we've just discussed above - the feature that you (or your clients) want to use in the software _isn't there_: 
+This is the one we've just discussed above - the feature that clients want to use in the software _isn't there_: 
 
  - This might manifest itself as complete _absence_ of something you need, e.g "Why is there no word count in this editor?"
  - It could be that the implementation isn't complete enough, e.g "why can't I add really long numbers in this calculator?"
  
-Feature risks are mitigated by talking to clients and building things, which leads on to...
+[Feature Fit Risks](#feature-fit-risk) are mitigated by talking to clients and building things, which leads on to...
  
 ## Implementation Risk
 
@@ -25,7 +27,7 @@ Feature risks are mitigated by talking to clients and building things, which lea
 
 ![Implementation Risk](images/generated/risks/feature/feature-implementation-risk.png) 
 
-At this point, it's worth pointing out that sometimes, _the user expects the wrong thing_.  This is a different but related risk, which could be down to [training](Training), [documentation](Documentation) or simply a [poor user interface](Communication-Risk).   We'll look at that more in [Communication Risk](Communication-Risk).
+At this point, it's worth pointing out that sometimes, _the user expects the wrong thing_.  This is a different but related risk, which could be down to [training](Training), [documentation](Documentation) or simply a [poor user interface](Communication-Risk) (We'll look at that more in [Communication Risk](Communication-Risk).)
 
 ## Regression Risk
 
