@@ -76,9 +76,11 @@ Even good developers have bad days, weeks or projects.  [Taking Action](Glossary
 The easiest way to be the "10X developer" is to have _done the job before_.  If you're coding in a familiar language, with familiar libraries and tools, delivering a cookie-cutter solution to a problem in the same manner you've done several times before, then you will be a "10X Developer" compared to _you doing it the first time_ because:
 
  - There's no [Learning Curve Risk](Communication-Risk#learning-curve-risk), because you already learnt everything.
- - There's no [Dead End Risk](Complexity-Risk#dead-end-risk) because you already know all the right choices to make.     
+ - There's no [Dead End Risk](Complexity-Risk#dead-end-risk) because you already know all the right choices to make and all the right paths to take on the [Risk Landscape](Glossary#risk-landscape).     
 
 ## Old Saw No. 2: Quality, Speed, Cost: Pick Any Two
+
+![Brooks' Law, Risk-First Style](images/generated/practices/estimates/brooks.png)
 
 > "The Project Management Triangle (called also the Triple Constraint, Iron Triangle and Project Triangle) is a model of the constraints of project management. While its origins are unclear, it has been used since at least the 1950s.  It contends that: 
 > 1. The quality of work is constrained by the project's budget, deadlines and scope (features).
@@ -90,11 +92,9 @@ From a Risk-First perspective, we can now see that this is an over-simplificatio
 
  - I can deliver a project in very short order by building a bunch of screens that _do nothing_ (accruing _stunning_ levels of [Implementation Risk](Feature-Risk#implementation-risk) as I go). 
  - Or, by assuming a lottery win, the project's budget is fine.  (Although I would have _huge_ [Funding Risk](Scarcity-Risk#funding-risk) because _what are the chances of winning the lottery?_.)  
- - Brooks' Law contradicts this by saying you can't trade budget for deadlines:
+ - Brooks' Law (see diagram above) contradicts this by saying you can't trade budget for deadlines:
  
 > "Brooks' law is an observation about software project management according to which "adding human resources to a late software project makes it later". - [Brooks Law, _Wikipedia_](https://en.wikipedia.org/wiki/Brooks_law)
-
-![Brooks' Law, Risk-First Style](images/generated/practices/estimates/brooks.png)
 
 Focusing on the three variables of the iron triangle isn't enough.  You can game these variables by sacrificing others:  we need to be looking at the project's risk _holistically_.
 
