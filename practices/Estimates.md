@@ -35,6 +35,8 @@ Why is it so bad?  The problem with a developer answering a question such as:
 
 > "How long will it take to deliver X?"
 
+![Estimates:  Attendant Risks](images/generated/practices/estimates/estimation.png)
+
 Seems to be the following:
 
  - The developer and the client likely don't agree on exactly what X is, and any description of it is inadequate anyway ([Invisibility Risk](Communication-Risk#invisibility-risk)).
@@ -42,8 +44,9 @@ Seems to be the following:
  - The developer has some vague ideas about how to do X, but he'll need to try out various approaches until he finds something that works ([Boundary Risk](Boundary-Risk) and [Learning Curve Risk](Communication-Risk#learning-curve-risk)).
  - The developer has no idea what [Hidden Risk](Glossary#hidden-risk) will surface when he starts work on it.
  - The developer has no idea what will happen if he takes too long and misses the date by a day/week/month/year ([Schedule Risk](Scarcity-Risk#schedule-risk)).
+ - The developer now has a [Deadline](Deadline-Risk).
 
-... and so on.  
+... and so on.  This is summarised in the above diagram.  It's no wonder people hate estimating: the treatment is worse than the disease.
 
 The reason the estimate of _time_ is wrong is because [every action attempts to manage risk](Just-Risk) and the estimate of _risk_ is wrong.
 
