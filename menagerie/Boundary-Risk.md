@@ -213,7 +213,7 @@ Although ecosystems are one very pernicious type of boundary in software develop
 
 Unless your project _ends_, you can never be completely sure that [Boundary Risk](Boundary-Risk) _isn't_ going to stop you making a move you want.  For example:
 
- - `mkdirp` might not work on a new device's Operating System, forcing you to swap it out.
+ - `mkdirp` might not work on a new device's operating system, forcing you to swap it out.
  - You might discover that the database you chose satisfied all the features you needed at the start of the project, but came up short when the requirements changed later on.
  - The front-end framework you chose might go out-of-fashion, and it might be hard to find developers interested in working on the project because of it.
  
