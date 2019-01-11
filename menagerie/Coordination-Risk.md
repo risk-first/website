@@ -123,7 +123,7 @@ Specifically, this describes a process whereby a new group will form and then be
 Since [Coordination](Coordination-Risk) is about[Resource Allocation](Coordination-Risk#problems-of-coordination) the skills of staff can potentially be looked at as resources to allocate.  This means handling [Coordination Risk](Coordination-Risk) issues like:
 
  - People leaving, taking their [Internal Models](Glossary#Internal-Model) and expertise with them [Key Person Risk](Scarcity-Risk#Staff-Risk).
- - People requiring external training, to understand new tools and techniques [Learning-Curve Risk](Communication-Risk#learning-curve-risk).
+ - People requiring external training, to understand new tools and techniques [Learning Curve Risk](Communication-Risk#learning-curve-risk).
  - People being protective about their knowledge in order to protect their jobs ([Agency Risk](Agency-Risk)). 
  
 > "As a rough rule, three programmers organised into a team can do only twice the work of a single programmer of the same ability - because of time spent on coordination problems." - [Gerald Wienberg, _The Psychology of Computer Programming_](https://en.wikipedia.org/wiki/Gerald_Weinberg) 

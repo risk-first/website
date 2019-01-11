@@ -19,7 +19,7 @@ Let's look at some common strategies for De-Risking.
 
 ## Avoid
 
-**Avoiding** risk, means taking a route on the [Risk Landscape](Glossary#risk-landscape) _around_ the risk.  For example, if you are working in a team which has no experience of relational databases, then _storing data in files_ might be a way to avoid the [Learning-Curve Risk](Communication-Risk#learning-curve-risk) associated with this technology.  
+**Avoiding** risk, means taking a route on the [Risk Landscape](Glossary#risk-landscape) _around_ the risk.  For example, if you are working in a team which has no experience of relational databases, then _storing data in files_ might be a way to avoid the [Learning Curve Risk](Communication-Risk#learning-curve-risk) associated with this technology.  
 
 Of course, you may pick up other, more serious [Attendant Risks](Glossary#attendant-risk) as a result: Relational Databases are software solutions to many kinds of [Coordination Risk](Coordination-Risk) problem.
 

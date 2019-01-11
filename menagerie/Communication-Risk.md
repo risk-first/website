@@ -354,7 +354,7 @@ Even if the receiver trusts the communicator, they may not believe the message. 
   
 From the point-of-view of [Marketing Communications](Communication-Risk#Marketing-Communications), choosing the right message is part of the battle.  You are trying to communicate your idea in such a way as to mitigate Trust & Belief Risk.
 
-### Learning-Curve Risk
+### Learning Curve Risk
 
 If the messages we are receiving force us to update our [Internal Model](Glossary#Internal-Model) too much, we can suffer from the problem of "too steep a [Learning Curve](https://en.wikipedia.org/wiki/Learning_curve)" or "[Information Overload](https://en.wikipedia.org/wiki/Information_overload)", where the messages force us to adapt our [Internal Model](Glossary#Internal-Model) too quickly for our brains to keep up.  
 
@@ -380,7 +380,7 @@ But now we should be able to see the reasons it's harder to read than write too:
 
 ![Communication Marketing](images/generated/risks/communication/communication_3.png)
 
-In this section, we've looked at [Communication Risk](Communication-Risk) itself, and broken it down into six sub-types of risk, as shown in the diagram above.  Again, we are calling out _patterns_ here:  you can equally classify communication risks in other ways.  However, concepts like [Learning-Curve Risk](#Learning-Curve-Risk) and [Invisibility Risk](#Invisibility-Risk) we will need again.  Also, note how these risks are, in a sense, opposite: 
+In this section, we've looked at [Communication Risk](Communication-Risk) itself, and broken it down into six sub-types of risk, as shown in the diagram above.  Again, we are calling out _patterns_ here:  you can equally classify communication risks in other ways.  However, concepts like [Learning Curve Risk](#Learning-Curve-Risk) and [Invisibility Risk](#Invisibility-Risk) we will need again.  Also, note how these risks are, in a sense, opposite: 
 
  - The higher the level of abstraction you use, the less you need to learn, but at the expense of extra invisibility. 
  - The more you peel back abstractions, the more you expose, but the more complex things are to understand.
