@@ -2,11 +2,11 @@
 
 [Feature Risks](Feature-Risk) are risks to do with functionality that you need to have in the software you're building.  
 
-As a simple example, <!-- tweet-start -->if your needs are served perfectly by Microsoft Excel, then you don't have any [Feature Risk](Feature-Risk).<!-- tweet-end -->  However, the day you find Microsoft Excel wanting, and decide to build an Add-On is the day when you first appreciate some [Feature Risk](Feature-Risk). _You're_ now a customer:  does the Add-On you build satisfy the requirements you have?
+As a simple example, <!-- tweet-start -->if your needs are served perfectly by Microsoft Excel, then you don't have any [Feature Risk](Feature-Risk).<!-- tweet-end -->  However, the day you find Microsoft Excel wanting, and decide to build an Add-On is the day when you first appreciate some [Feature Risk](Feature-Risk). Now _you're_ a customer:  does the Add-On you build satisfy the requirements you have?
 
 [Feature Risk](Feature-Risk) is very fundamental:  if there were _no_ [Feature Risk](Feature-Risk), the job would be done by Excel already and it would be perfect!  
 
-As we will explore below, [Feature Risk](Feature-Risk) exists in the gaps between what users want, and what they are given.
+As we will explore below, [Feature Risk](Feature-Risk) exists in the gaps between what users _want_, and what they _are given_.
 
 Not considering [Feature Risk](Feature-Risk) means that you might be building the wrong functionality, for the wrong audience or at the wrong time.  And eventually, this will come down to lost money, business, acclaim, or whatever else reason you are doing your project for.  So let's unpack this concept into some of it's variations.
 
