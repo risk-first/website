@@ -14,7 +14,7 @@ In 1948, Claude Shannon proposed this definition of communication:
 
 And from this same paper, we get the diagram above:  we move from top-left ("I want to send a message to someone") to bottom left, clockwise, where we hope the message has been understood and believed.  (I've added this last box to Shannon's original diagram.)
 
-One of the chief concerns in Shannon's paper is the risk of error between **Transmission** and **Reception**.  He creates a theory of information (measured in **bits**), the upper-bounds of information that can be communicated over a channel and ways in which [Communication Risk](Communication-Risk) between these processes can be mitigated by clever **Encoding** and **Decoding** steps.
+One of the chief concerns in Shannon's paper is the risk of error between **Transmission** and **Reception**.  He creates a theory of _information_ (measured in _bits_), the upper-bounds of information that can be communicated over a channel, and ways in which [Communication Risk](Communication-Risk) between these processes can be mitigated by clever **Encoding** and **Decoding** steps.
 
 But it's not just transmission.  [Communication Risk](Communication-Risk) exists at each of these steps.  Let's imagine a human example, where someone, **Alice** is trying to send a simple message to **Bob**:
 
