@@ -161,7 +161,7 @@ Let's figure out what we can take away from the above experiences:
  - **From the "10X Developer" Saw**: the difference made by experience implies that a lot of the effort on a project comes from [Learning Curve Risk](Communication-Risk#learning-curve-risk) and [Dead End Risk](Complexity-Risk#dead-end-risk).  
  - **From "Quality, Speed, Cost"**: we need to be considering _all_ risks, not just some arbitrary milestones on a project plan.  Project plans can always be gamed, and you can always leave risks unaccounted for in order to hit the goals.
  - **From "Parkinson's Law"**: giving people a _time budget_, you absolve them from [Schedule Risk](Scarcity-Risk#schedule-risk)... at least until they realise they're going to overrun.   This gives them one less dimension of risk to worry about, but means they end up taking all the time you give them, because they are optimising over the remaining risks.
- - Finally, the lesson from **Agile Estimation** is that _just iterating_ is sometimes not as efficient as _using your intuition and experience_ to find a more optimal path.  
+ - Finally, the lesson from **Agile Estimation** is that _just iterating_ is sometimes not as efficient as _using your intuition and experience_ to plan a more optimal path.  
  
 How can we synthesise this knowledge, along with what we've learned into something that makes more sense?
 
@@ -173,13 +173,15 @@ For a given [action](Glossary#taking-action) / road-map / business strategy, wha
   - What [Communication Risk](Communication-Risk) will we face explaining our product to people?
   - What [Feature Fit](Feature-Risk#feature-fit-risk) risks are we likely to have when we get there?
   - What [Complexity Risks](Complexity-Risk) will we face building our software?  How can we avoid it ending up as a [Big Ball Of Mud](Complexity-Risk#Protocols-And-Types)?
-  - Where are we likely to face [Boundary Risks](Boundary-Risk) and [Dead End Risks](Complexity-Risk#dead-end-risk)
+  - Where are we likely to face [Boundary Risks](Boundary-Risk) and [Dead End Risks](Complexity-Risk#dead-end-risk)?
 
 Instead of the Agile Estimation being about picking out a story-point number based on some idealised amount of typing that needs to be done, it should be about surfacing and weighing up risks.  e.g:
 
  - "Adding this new database is problematic because it's going to massively increase our [Dependency Risk](Dependency-Risk)."
  - "I don't think we should have component A interacting with component B because it'll introduce extra [Communication Risk](Communication-Risk) which we will always be tripping over."
  - "I worry we might not understand what the sales team want and are facing [Feature Implementation Risk](Feature-Risk#implementation-risk).  How about we try and get agreement on a specification?"  
+ 
+Essentially, this is what we are trying to capture in the [Risk-First Diagrams](Just-Risk#goals-are-risks-too) like those we've seen above.
  
 #### Tip #2: The Risk Landscape is Increasingly Complex: Utilise This
 
