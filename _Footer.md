@@ -1,3 +1,3 @@
 
-* Please head to the [Issues](https://github.com/risk-first/website/issues) section to open a discussion on this page.
-* Alternatively, Watch/Star this project to be invited to join the Risk-First team.
+* Discuss [here](https://github.com/orgs/risk-first/teams/risk-first-team).
+* **Watch/Star this project to be invited to join the Risk-First team.**
