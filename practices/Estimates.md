@@ -266,7 +266,7 @@ Missing Bulk Uploads wouldn't be a show-stopper, but missing Spock would be a hu
 
 Let's recap those again, in reverse order:
 
-- **Tip #5: Picture Worrying Futures**:  For some given future point in time, work out which risks you _don't_ want to be facing.
+- **Tip #5: Picture Worrying Futures**:  For some given future point in time, try considering which risks you _don't_ want to be facing.
 - **Tip #4: Talk Frankly About All The Risks**:  Apply the Risk-First vocabulary to help.  
 - **Tip #3: Meet Reality Early on the Biggest Risks**.
 - **Tip #2: The Risk Landscape is Increasingly Complex**:  This means you have a wide variety of possible [actions to take](Glossary#taking-action), so consider all the options.
