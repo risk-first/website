@@ -29,7 +29,7 @@ _Not_ launching an online service _avoids_ the [Operational Risk](Operational-Ri
 
 **Transferring** risk means _making it someone else's problem_.  For example, when I buy home insurance, the impact of my house burning down is reduced.  It hasn't gone away completely, but at least the financial element of it is handled by the insurance company.
 
-In part 2, we'll see how **Transfer** of risk is an essential feature of [Software as a Service](Software-Dependency-Risk).  Inside organisations, **Transfer** of risk can become a political game:
+In part 2, we'll see how **Transfer** of risk is an essential feature of [Software-as-a-Service (SaaS)](Software-Dependency-Risk).  Inside organisations, **Transfer** of risk can become a political game:
 
 > "... ownership results in ‘one throat to choke’ for audit functions [and] from ownership comes responsibility. A lot of the political footwork in an enterprise revolves around trying to not own technologies. Who wants to be responsible for Java usage across a technology function of dozens of thousands of staff, any of whom might be doing crazy stuff? You first, mate. " - [Why Are Enterprises So Slow?, _zwischenzugs.com_](https://zwischenzugs.com/2018/10/02/why-are-enterprises-so-slow/)
 
