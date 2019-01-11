@@ -27,7 +27,7 @@ This is the one we've just discussed above - the feature that clients want to us
 
 ![Implementation Risk](images/generated/risks/feature/feature-implementation-risk.png) 
 
-At this point, it's worth pointing out that sometimes, _the user expects the wrong thing_.  This is a different but related risk, which could be down to [training](Training), [documentation](Documentation) or simply a [poor user interface](Communication-Risk) (We'll look at that more in [Communication Risk](Communication-Risk).)
+At this point, it's worth pointing out that sometimes, _the user expects the wrong thing_.  This is a different but related risk, which could be down to [training](Training), [documentation](Documentation) or simply a [poor user interface](Communication-Risk) (and we'll look at that more in [Communication Risk](Communication-Risk).)
 
 ## Regression Risk
 
@@ -59,7 +59,7 @@ Sometimes, features can work for some people and not others:  this could be down
 
 You could argue that the choice of _platform_ is also going to limit access:  <!-- tweet-start -->writing code for XBox-only leaves PlayStation owners out in the cold.   This is _largely_ [Feature Access Risk](Feature-Risk#feature-access-risk), though [Dependency Risk](Dependency-Risk) is related here.<!-- tweet-end -->
 
-In Marketing, minimising [Feature Access Risk](#feature-access-risk) is all about [Segmentation](https://en.wikipedia.org/wiki/Market_segmentation):  trying to work out _who_ your product is for, and tailoring it to that particular market.  For developers, increasing [Feature Access](#feature-access-risk) means increasing complexity:  you have to deliver the software on more platforms, localised in more languages, with different configurations of features.  Mitigating [Feature Access Risk](#feature-access-risk) therefore means increased effort and complexity (which we'll come to later).
+In marketing terms, minimising [Feature Access Risk](#feature-access-risk) is all about [Segmentation](https://en.wikipedia.org/wiki/Market_segmentation):  trying to work out _who_ your product is for, and tailoring it to that particular market.  For developers, increasing [Feature Access](#feature-access-risk) means increasing complexity:  you have to deliver the software on more platforms, localised in more languages, with different configurations of features.  Mitigating [Feature Access Risk](#feature-access-risk) therefore means increased effort and complexity (which we'll come to later).
 
 ### Market Risk
 
@@ -128,7 +128,7 @@ Darwin's conception of fitness was not one of athletic prowess, but how well an 
 
 ![Feature Risks Assembled - Fit Risks, shown as _gaps_, as in the _Service Quality Model_](images/generated/risks/feature/all-feature-risk.png) 
 
-For further reading, you can check out [The Service Quality Model](http://en.wikipedia.org/SERVQUAL), which the diagram above is derived from.  This model analyses the types of _quality gaps_ in services, and how consumer expectations and perceptions of a service arise.
+For further reading, you can check out [The Service Quality Model](http://en.wikipedia.org/SERVQUAL), which the diagram above is derived from.  This model analyses the types of _quality gaps_ in services and how consumer expectations and perceptions of a service arise.
 
 In the [Staging And Classifying](Staging-And-Classifying) section, we'll come back and build on this model further. 
 
@@ -143,7 +143,7 @@ Two risks, [Feature Access Risk](Feature-Risk#feature-access-risk) and [Market R
 
 Two risks further consider how the **Fit** and **Audience** _change_: [Regression Risk](#regression-risk) and [Feature Drift Risk](#feature-drift-risk).  We call this _evolution_ in the sense that:
 
- - Our product's features _evolve_ with time, and changes made by the development team.
+ - Our product's features _evolve_ with time and changes made by the development team.
  - Our audience changes and evolves as it is exposed to our product and competing products.
  - The world as a whole is an evolving system within which our product exists.
  
@@ -160,4 +160,4 @@ Next time you are grooming the backlog, why not apply this:
   
 In the next section, we are going to unpack this last point further.  Somewhere between "what the customer wants" and "what you give them" is a _dialog_.  In using a software product, users are engaging in a _dialog_ with its features.  If the features don't exist, hopefully they will engage in a dialog with the development team to get them added.  
 
-These dialogs are prone to risk, and this is the subject of the next section, [Communication Risk](Communication-Risk).
+These dialogs are prone to risk and this is the subject of the next section, [Communication Risk](Communication-Risk).
