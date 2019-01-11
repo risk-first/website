@@ -7,6 +7,7 @@
 - **[Contributing](Contributing)**
 - **[A Simple Scenario](A-Simple-Scenario)**
 - **[The Risk Landscape](Risk-Landscape)**
+- **[Discussion](https://github.com/orgs/risk-first/teams/risk-first-team)**
 
 ## The Menagerie
 
