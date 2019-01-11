@@ -262,7 +262,15 @@ The team _wanted_ to start Bulk Uploads work.  After all, from these estimates i
 
 Missing Bulk Uploads wouldn't be a show-stopper, but missing Spock would be a huge regulatory problem.  _Start work on the things you can't miss._ 
 
-This is the essence of De-Risking.  
+## In Summary...
+
+Let's recap those again, in reverse order:
+
+- **Tip #5: Picture Worrying Futures**:  For some given future point in time, work out which risks you _don't_ want to be facing.
+- **Tip #4: Talk Frankly About All The Risks**:  Using the Risk-First categories.  
+- **Tip #3: Meet Reality Early on the Biggest Risks**:  Work out which risks you want to deal with first.
+- **Tip #2: The Risk Landscape is Increasingly Complex**:  This means you have a wide variety of possible [actions to take](Glossary#taking-action), so consider all the options.
+- **Tip #1: Estimating Should be About _Estimating [Payoff](Glossary#payoff)_**:  For your action, don't just get stuck on [Schedule Risk](Scarcity-Risk#schedule-risk).  Consider [the whole cast](Staging-And-Classifying#towards-a-periodic-table-of-risks).
 
 
 
