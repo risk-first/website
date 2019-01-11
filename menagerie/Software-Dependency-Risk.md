@@ -92,7 +92,7 @@ There are lots of ways you can depend on software.  Here though, we're going to 
 
  1. **Code Your Own**: write some code ourselves to meet the dependency.
  2. **Software Libraries**:  importing code from the Internet, and using it in our project.  Often, libraries are Open Source (this is what we'll consider here).
- 3. **Software as a Service**: calling a service on the Internet, (probably via `http`)  This is often known as [SaaS, or Software as a Service](https://en.wikipedia.org/wiki/Software_as_a_service).
+ 3. **Software-as-a-Service (SaaS)**: calling a service on the Internet, (probably via `http`)  This is often known as [SaaS, or Software as a Service](https://en.wikipedia.org/wiki/Software_as_a_service).
  
 All 3 approaches involve a different risk-profile.  Let's look at each in turn, from the perspective of which risks get mitigated, and which risks are accentuated. 
  
@@ -188,9 +188,9 @@ Sometimes, the amount of complexity _goes up_ when you use a dependency for _goo
  
 To give an extreme example of this, I once worked on an application which used [Hazlecast](https://en.wikipedia.org/wiki/Hazelcast), an in-memory distributed database, to cache log-in session tokens for a 3rd party data-source.  But, the app is only used once every month, and session IDs can be obtained in milliseconds.   So... why cache them?  Although Hazlecast is an excellent choice for in-memory caching across multiple JVMs, it is a complex piece of software (after all, it does lots of stuff).  Using it introduced extra dependency risk, cache invalidation risks, networking risks, synchronisation risks and so on, for actually no benefit at all...  Unless, it’s about CV Building. (See [Agency Risk](Agency-Risk#CV-building).)  
 
-### 3.  Software as a Service
+### 3.  Software-as-a-Service
 
-Businesses opt for Software as a Service (SaaS) because:
+Businesses opt for Software-as-a-Service (SaaS) because:
 
 - It promises to vastly reduce the [Complexity Risk](Complexity-Risk) they face in their organisations. e.g. managing the software or making changes to it.
 - Payment is usually based on _usage_, mitigating [Funding Risk](Scarcity-Risk#funding-risk).  e.g. Instead of having to pay up-front for a license, and hire in-house software administrators, they can leave this function to the experts.
