@@ -20,14 +20,17 @@
 
     <action style="kite9-horizontal-align: left;">Estimation</action>
 
-    <context id="d" style="kite9-sizing: maximize; ">
-
+    <context id="d" style="kite9-sizing: maximize; kite9-layout: vertical; ">
+    <group style="kite9-layout: horizontal; ">
       <risk class="invisibility" />
       <risk class="complexity" />
-      <risk class="map-and-territory" />
+      <risk class="map-and-territory" />    
+    </group>
+    <group style="kite9-layout: horizontal; ">
       <risk class="boundary" />
       <risk class="learning-curve" />
-      <risk class="deadline" />
+      <risk class="deadline" />    
+    </group>
 
       <label id="id_16">
         <text>Attendant Risks</text>
