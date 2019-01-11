@@ -128,9 +128,11 @@ At point `(2)`, Carl's has tried to mitigate [Feature Risk](Feature-Risk) by inc
 
 > Carl began to feel that his job was on the line. Coding proceeded fairly well, but a few areas needed redesign and reimplementation. The team hadn't coordinated design details in those areas well, and some of their implementations conflicted. At the 11-month oversight-committee meeting, Carl announced the fourth schedule slip— to 13 months. Bill became livid. "Do you have any idea what you're doing?" he yelled. "You obviously don't have any idea! You obviously don't have any idea when the project is going to be done! I'll tell you when it's going to be done! It's going to be done by the 13-month mark, or you're going to be out of a job! I'm tired of being jerked around by you software guys! You and your team are going to work 60 hours a week until you deliver!"  `(3)`
 
-At point `(3)`, the schedule has slipped again, and Bill has threatened Carl's job.  Why did he do this?  Because _he doesn't trust Carl's evaluation of the [Schedule Risk](Scarcity-Risk#schedule-risk)_.  By telling Carl that it's his job on the line, he makes sure Carl appreciates the [Schedule Risk](Scarcity-Risk#schedule-risk). However, forcing staff to do overtime is a dangerous ploy:  it could disenfranchise the staff, or cause corners to be cut:
+At point `(3)` in McConnell's Case Study, the schedule has slipped again, and Bill has threatened Carl's job.  Why did he do this?  Because _he doesn't trust Carl's evaluation of the [Schedule Risk](Scarcity-Risk#schedule-risk)_.  By telling Carl that it's his job on the line, he makes sure Carl appreciates the [Schedule Risk](Scarcity-Risk#schedule-risk). 
 
 ![Bill's Ultimatum](images/generated/practices/estimates/bill1.png)
+
+However, forcing staff to do overtime is a dangerous ploy:  it could disenfranchise the staff, or cause corners to be cut, as shown in the diagram above.
 
 > Carl felt his blood pressure rise, especially since Bill had backed him into an unrealistic schedule in the first place. But he knew that with four schedule slips under his belt, he had no credibility left. He felt that he had to knuckle under to the mandatory overtime or he would lose his job. Carl told his team about the meeting. They worked hard and managed to deliver the software in just over 13 months. Additional implementation uncovered additional design flaws, but with everyone working 60 hours a week, they delivered the product through sweat and sheer willpower. " `(4)` - [McConnell, Steve, _Rapid Development_](http://amzn.eu/d/eTWKOsK)
 
