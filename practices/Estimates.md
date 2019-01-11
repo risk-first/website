@@ -140,7 +140,7 @@ At point `(4)`, we see that Bill's gamble worked (for him at least):  the projec
 
 ![Team Response](images/generated/practices/estimates/team1.png)
 
-Despite this being a fictional (or fictionalised) example, it rings true for many projects.  What _should_ have happened at point `(1)`?  Both Carl and Bill estimated incorrectly...  Or did they? 
+The diagram above shows the [action taken](Glossary#take-action), _working overtime_.  Despite this being a fictional (or fictionalised) example, it rings true for many projects.  What _should_ have happened at point `(1)`?  Both Carl and Bill estimated incorrectly...  Or did they?   Was this just Parkinson's Law in operation?
  
 ## Agile Estimation
 
@@ -160,7 +160,7 @@ Let's figure out what we can take away from the above experiences:
 
  - **From the "10X Developer" Saw**: the difference made by experience implies that a lot of the effort on a project comes from [Learning Curve Risk](Communication-Risk#learning-curve-risk) and [Dead End Risk](Complexity-Risk#dead-end-risk).  
  - **From "Quality, Speed, Cost"**: we need to be considering _all_ risks, not just some arbitrary milestones on a project plan.  Project plans can always be gamed, and you can always leave risks unaccounted for in order to hit the goals.
- - **From the Parkinson's Law**: giving people a _time budget_, you absolve them from [Schedule Risk](Scarcity-Risk#schedule-risk)... at least until they realise they're going to overrun.   This gives them one less dimension of risk to worry about, but means they end up taking all the time you give them, because they are optimising over the remaining risks.
+ - **From "Parkinson's Law"**: giving people a _time budget_, you absolve them from [Schedule Risk](Scarcity-Risk#schedule-risk)... at least until they realise they're going to overrun.   This gives them one less dimension of risk to worry about, but means they end up taking all the time you give them, because they are optimising over the remaining risks.
  - Finally, the lesson from **Agile Estimation** is that _just iterating_ is sometimes not as efficient as _using your intuition and experience_ to find a more optimal path.  
  
 How can we synthesise this knowledge, along with what we've learned into something that makes more sense?
