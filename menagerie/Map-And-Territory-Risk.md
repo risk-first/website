@@ -10,7 +10,7 @@ So there is a translation going on here: observations about the arrangement of _
 
 ![Maps and Territories, and Communication happening between them](images/generated/risks/map-and-territory/communication.png) 
 
-Like [Trust & Belief Risk](Communication-Risk#trust--belief-risk) and [Learning-Curve Risk](Communication-Risk#learning-curve-risk), [Map And Territory Risk](Map-And-Territory-Risk) is an [Internal Model Risk](Communication-Risk#internal-models), and is the risk we face because we base our behaviour on our [Internal Models](Glossary#internal-model) rather than reality itself.  It comes from the expression "Confusing the Map for the Territory", attributed to Alfred Korzybski:
+Like [Trust & Belief Risk](Communication-Risk#trust--belief-risk) and [Learning Curve Risk](Communication-Risk#learning-curve-risk), [Map And Territory Risk](Map-And-Territory-Risk) is an [Internal Model Risk](Communication-Risk#internal-models), and is the risk we face because we base our behaviour on our [Internal Models](Glossary#internal-model) rather than reality itself.  It comes from the expression "Confusing the Map for the Territory", attributed to Alfred Korzybski:
 
 > "Polish-American scientist and philosopher Alfred Korzybski remarked that "the map is not the territory"  and that "the word is not the thing", encapsulating his view that an abstraction derived from something, or a reaction to it, is not the thing itself. Korzybski held that many people _do_ confuse maps with territories, that is, confuse models of reality with reality itself." - [Map-Territory Relation, _Wikipedia_](https://en.wikipedia.org/wiki/Map–territory_relation)
 
