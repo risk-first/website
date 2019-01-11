@@ -125,4 +125,4 @@ A more light-hearted collection of blog posts related to the software developmen
   
 <hr />
 
-**[Discuss](https://github.com/risk-first/website/issues/1)**
+**[Discuss](https://github.com/orgs/risk-first/teams/risk-first-team)**
