@@ -181,7 +181,9 @@ Instead of the Agile Estimation being about picking out a story-point number bas
  - "I don't think we should have component A interacting with component B because it'll introduce extra [Communication Risk](Communication-Risk) which we will always be tripping over."
  - "I worry we might not understand what the sales team want and are facing [Feature Implementation Risk](Feature-Risk#implementation-risk).  How about we try and get agreement on a specification?"  
  
-Essentially, this is what we are trying to capture in the [Risk-First Diagrams](Just-Risk#goals-are-risks-too) like those we've seen above.
+![Risk-First Diagram Language](images/generated/introduction/all_risk_management_language.png)
+ 
+Essentially, this is what we are trying to capture with [Risk-First Diagrams](Just-Risk#goals-are-risks-too) (the diagram above being the template for this).
  
 #### Tip #2: The Risk Landscape is Increasingly Complex: Utilise This
 
