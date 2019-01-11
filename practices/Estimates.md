@@ -124,8 +124,7 @@ Later in the story, the schedule has slipped twice and is about to slip again:
 
 ![Carl's Schedule Slip increases Trust and Belief Risks](images/generated/practices/estimates/carl1.png)
 
-At point `(2)`, Carl's has tried to mitigate [Feature Risk](Feature-Risk) by increasing [Schedule Risk](Scarcity-Risk#Schedule-Risk), although he knows that Bill will trust him less for doing this, as shown in the diagram above.
-
+At point `(2)`, Carl's has tried to mitigate [Feature Risk](Feature-Risk) by increasing [Schedule Risk](Scarcity-Risk#Schedule-Risk), although he knows that Bill will trust him less for doing this, as shown in the diagram above.  Let's continue...
 
 > Carl began to feel that his job was on the line. Coding proceeded fairly well, but a few areas needed redesign and reimplementation. The team hadn't coordinated design details in those areas well, and some of their implementations conflicted. At the 11-month oversight-committee meeting, Carl announced the fourth schedule slip— to 13 months. Bill became livid. "Do you have any idea what you're doing?" he yelled. "You obviously don't have any idea! You obviously don't have any idea when the project is going to be done! I'll tell you when it's going to be done! It's going to be done by the 13-month mark, or you're going to be out of a job! I'm tired of being jerked around by you software guys! You and your team are going to work 60 hours a week until you deliver!"  `(3)`
 
