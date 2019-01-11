@@ -108,7 +108,7 @@ We've already looked at Parkinson's Law in the section on [Agency Risk](Process-
 
 > "Parkinson's law is the adage that 'work expands so as to fill the time available for its completion'." - [Parkinson's Law, _Wikipedia_](https://en.wikipedia.org/wiki/Parkinsons_law)  
 
-Let's leave aside the [Agency Risk](Agency-Risk) concerns this time.  Instead, let's consider this from a Risk-First perspective.  _Of course_ work would expand to fill the time available:  _Time available_ is an _absence of [Schedule Risk](Scarcity-Risk#schedule-risk)_, it's always going to be sensible to exchange free time to reduce more serious risks.  
+Let's leave aside the [Agency Risk](Agency-Risk) concerns this time.  Instead, let's consider this from a Risk-First perspective.  _Of course_ work would expand to fill the time available:  _Time available_ is an _absence of [Schedule Risk](Scarcity-Risk#schedule-risk)_.  It's always going to be sensible to exchange free time to reduce more serious risks.  
 
 This is why projects will _always_ take at least as long as is budgeted for them.   <!-- tweet-end -->
 
@@ -120,11 +120,12 @@ Let's look at a quick example of this in action, taken from [Rapid Development b
 
 Later in the story, the schedule has slipped twice and is about to slip again:
 
-> ... At the 9-month mark, the team had completed detailed design, but coding still hadn't begun on some modules. It was clear that Carl couldn't make the 10-month schedule either. He announced the third schedule slip number— to 12 months. Bill's face turned red when Carl announced the slip, and the pressure from him became more intense.   `(2)`
-
-At point `(2)`, Carl's tries to mitigate [Feature Risk](Feature-Risk) by increasing [Schedule Risk](Scarcity-Risk#Schedule-Risk), although he knows that Bill will trust him less for doing this, as shown below:
+> ... At the 9-month mark, the team had completed detailed design, but coding still hadn't begun on some modules. It was clear that Carl couldn't make the 10-month schedule either. He announced the _third schedule slip_ to 12 months. Bill's face turned red when Carl announced the slip, and the pressure from him became more intense.   `(2)`
 
 ![Carl's Schedule Slip increases Trust and Belief Risks](images/generated/practices/estimates/carl1.png)
+
+At point `(2)`, Carl's has tried to mitigate [Feature Risk](Feature-Risk) by increasing [Schedule Risk](Scarcity-Risk#Schedule-Risk), although he knows that Bill will trust him less for doing this, as shown in the diagram above.
+
 
 > Carl began to feel that his job was on the line. Coding proceeded fairly well, but a few areas needed redesign and reimplementation. The team hadn't coordinated design details in those areas well, and some of their implementations conflicted. At the 11-month oversight-committee meeting, Carl announced the fourth schedule slip— to 13 months. Bill became livid. "Do you have any idea what you're doing?" he yelled. "You obviously don't have any idea! You obviously don't have any idea when the project is going to be done! I'll tell you when it's going to be done! It's going to be done by the 13-month mark, or you're going to be out of a job! I'm tired of being jerked around by you software guys! You and your team are going to work 60 hours a week until you deliver!"  `(3)`
 
