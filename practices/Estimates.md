@@ -31,11 +31,11 @@ The anchor mattered more than experience, how formal the estimation method, or _
 
 ## Is Risk To Blame?
 
+![Estimates:  Attendant Risks](images/generated/practices/estimates/estimation.png)
+
 Why is it so bad?  The problem with a developer answering a question such as:
 
 > "How long will it take to deliver X?"
-
-![Estimates:  Attendant Risks](images/generated/practices/estimates/estimation.png)
 
 Seems to be the following:
 
@@ -47,8 +47,6 @@ Seems to be the following:
  - The developer now has a [Deadline](Deadline-Risk).
 
 ... and so on.  This is summarised in the above diagram.  It's no wonder people hate estimating: the treatment is worse than the disease.
-
-The reason the estimate of _time_ is wrong is because [every action attempts to manage risk](Just-Risk) and the estimate of _risk_ is wrong.
 
 So what are we to do?  It's a problem as old as software itself, and in deference to that, let's examine the estimating problem via some "Old Saws".
 
