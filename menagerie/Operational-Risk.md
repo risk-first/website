@@ -28,7 +28,6 @@ When building software, it's tempting to take a very narrow view of the dependen
    - Hackers exploit weaknesses in a piece of 3rd party software, bringing your service down.
  
  - **[Agency Risk](Agency-Risk)**:
-   - Suppliers deciding to stop supplying you with something you need.
    - Workers going on strike.
    - Employees trying to steal from the company (bad actors).
    - Other crime, such as hackers stealing data.
@@ -127,8 +126,8 @@ So there is a tension between "you only get one chance to make a first impressio
 
 A Risk-First re-framing of this (as shown in the diagram above) might be the balance between:
 
-- The perceived [Trust & Belief Risk](Communication-Risk#trust--belief-risk), [Feature Risk](Feature-Risk) and [Operational Risk](Operational-Risk) of going to production (pressure to improve).
 - The perceived [Scarcity Risks](Scarcity-Risk) (such as funding, time available, etc) of staying in development (pressure to ship).
+- The perceived [Trust & Belief Risk](Communication-Risk#trust--belief-risk), [Feature Risk](Feature-Risk) and [Operational Risk](Operational-Risk) of going to production (pressure to improve).
 
 The "should we ship?" decision is therefore a complex one.  In [Meeting Reality](Meeting-Reality), we discussed that it's better to do this "sooner, more frequently, in smaller chunks and with feedback".  We can meet [Operational Risk](Operational-Risk) _on our own terms_ by doing so: 
 
@@ -141,7 +140,7 @@ The "should we ship?" decision is therefore a complex one.  In [Meeting Reality]
 
 ## End Of The Road
 
-In a way, actions like **Design** and **Improvement** bring us right back to where we started from: identifying [Dependency Risks](Dependency-Risk), [Feature Risks](Feature-Risk) and [Complexity Risks](Complexity-Risk) that hinder our operation, and mitigating them through actions like _software development_.  
+In a way, [actions](Glossary#taking-action) like **Design** and **Improvement** bring us right back to where we started from: identifying [Dependency Risks](Dependency-Risk), [Feature Risks](Feature-Risk) and [Complexity Risks](Complexity-Risk) that hinder our operation, and mitigating them through actions like _software development_.  
 
 Our safari of risk is finally complete, it's time to look back and what we've seen in [Staging and Classifying](Staging-and-Classifying).  
  
