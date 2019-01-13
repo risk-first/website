@@ -32,7 +32,7 @@ Below is a table outlining the different risks we'll see.  There _is_ an order t
 |----------------|--------------------------|
 |[Feature Risk](Feature-Risk)                        |When you haven't built features the market needs, or the features you have built contain bugs, or the market changes underneath you.    |
 |[Communication Risk](Communication-Risk)            |Risks associated with getting messages heard and understood.|             
-|[Complexity Risk](Complexity-Risk)                  |Your software is so complex it makes it hard to change, understand or run.             |        
+|[Complexity Risk](Complexity-Risk)                  |Your software is so complex it makes it hard to change, understand, or run.             |        
 |[Dependency Risk](Dependency-Risk)                  |Risks of depending on other people, products, software, functions, etc. This is a general look at dependencies, before diving into specifics like...|  
 |[Scarcity Risk](Scarcity-Risk)                      |Risks associated with having limited time, money or some other resource.|    
 |[Deadline Risk](Deadline-Risk)                      |The risk of having a date to hit.|
@@ -48,7 +48,7 @@ After each stop on the tour, in [Staging and Classifying](Staging-And-Classifyin
 
 ## Causation & Correlation 
 
-Although we're going to try and categorise the kinds of things we see on this [Risk Landscape](Risk-Landscape), this isn't going to be perfect: 
+Although we're going to try and categorise the kinds of things we see on this [Risk Landscape](Risk-Landscape), this isn't going to be perfect, because: 
 
  - One risk can "blend" into another just like sometimes a "field" is also a "car-park" or a building might contain some trees (but isn't a forest).
  - As we know from [Part 1](Home#Part-1-Introduction), mitigating one risk probably means accepting another.
@@ -58,7 +58,7 @@ Risk is messy.  It's not always easy to tease apart the different components of 
 
 ### The Financial Crisis
 
-In the [Financial Services](https://en.wikipedia.org/wiki/Financial_services) industry, whole _departments_ exist to calculate things like:
+In the [Financial Services](https://en.wikipedia.org/wiki/Financial_services) industry, whole departments exist to calculate things like:
 
 - **[Market Risk](https://en.wikipedia.org/wiki/Market_risk)**:  the risk that the amount some asset is going to change in value.
 - **[Credit Risk](https://en.wikipedia.org/wiki/Credit_risk)**:  the risk that someone who owes you a payment at a specific point in time might not pay it back.
