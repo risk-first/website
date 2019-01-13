@@ -56,7 +56,7 @@ The **Operational Context** supplies the **Transform Process** with three key de
  
 ![Risk-First Operations Management:  Taking Action, inspired by the work of Slack _et al._](images/generated/risks/operational/operational-risk.png)
  
-We have looked at processes like the **Transform Process** in the section on [Process Risk](Process-Risk).  The healthy functioning of this process is the domain of [Operations Management](#operations-management), which means _managing [Operational Risk](Operational-Risk)_.  As the above diagram shows (again, modified from Slack _et al._) this involves the following types of actions:
+We have looked at processes like the **Transform Process** in the section on [Process Risk](Process-Risk).  The healthy functioning of this process is the domain of [Operations Management](#operations-management).  As the above diagram shows (again, modified from Slack _et al._) this involves the following types of actions:
 
  - **Control**:  ensuring that the Operation is working according to it's targets.  This includes day-to-day quality control and monitoring of the Transform Process. 
  - **Planning**: this covers aspects such as capacity planning, forecasting and project planning.   This is about making sure the transform process has targets to meet and the resources to meet them.
