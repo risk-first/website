@@ -57,7 +57,7 @@ The **Operational Context** supplies the **Transform Process** with three key de
  
 ![Risk-First Operations Management:  Taking Action, inspired by the work of Slack _et al._](images/generated/risks/operational/operational-risk.png)
  
-We have looked at processes like the **Transform Process** in the section on [Process Risk](Process-Risk).  The healthy functioning of this process is the domain of [Operations Management](#operations-management), which means _managing [Operational Risk](Operational-Risk).  As the above diagram shows (again, modified from Slack _et al._) this involves the following types of actions:
+We have looked at processes like the **Transform Process** in the section on [Process Risk](Process-Risk).  The healthy functioning of this process is the domain of [Operations Management](#operations-management), which means _managing [Operational Risk](Operational-Risk)_.  As the above diagram shows (again, modified from Slack _et al._) this involves the following types of actions:
 
  - **Control**:  ensuring that the Operation is working according to it's targets.  This includes day-to-day quality control and monitoring of the Transform Process. 
  - **Planning**: this covers aspects such as capacity planning, forecasting and project planning.   This is about making sure the transform process has targets to meet and the resources to meet them.
@@ -108,7 +108,7 @@ Since our operation exists in a world of risks like [Red Queen Risk](Scarcity-Ri
 
 While _planning_ is a day-to-day operational feedback loop, _design_ is a longer feedback loop changing not just the parameters of the operation, but the operation itself.
 
-You might think that for an IT operation, tasks like [Design](#design) belong within the Development function within an organisation.  Often, this is the case.  However separating Development from Operation implies [Boundary Risk](Boundary-Risk) between these two functions.  For example, the developers might employ different tools, equipment and processes to the operations team, resulting in a mismatch when software is delivered.
+You might think that for an IT operation, tasks like [Design](#design) belong within a separate "Development" function within an organisation.  Traditionally, this might have been the case.  However separating Development from Operation implies [Boundary Risk](Boundary-Risk) between these two functions.  For example, the developers might employ different tools, equipment and processes to the operations team, resulting in a mismatch when software is delivered.
 
 In recent years, the "DevOps" movement has brought this [Boundary Risk](Boundary-Risk) into sharper focus.  This specifically means:
  
