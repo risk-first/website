@@ -37,11 +37,11 @@ When building software, it's tempting to take a very narrow view of the dependen
 
 ## Operations Management
 
-![Model of Operations Management, inspired by the work of Slack _et al._](images/generated/risks/operational/slack.png)
-
 If we are designing a software system to "live" in the real world, we have to be mindful of the **Operational Context** we're working in, and craft our software and processes accordingly.   This view of the "wider" system is the discipline of Operations Management.  
 
 > "Operations management is an area of management concerned with designing and controlling the process of production and redesigning business operations in the production of goods or services.[1] It involves the responsibility of ensuring that business operations are efficient in terms of using as few resources as needed and effective in terms of meeting customer requirements. " - [Operations Management, _Wikipedia_](https://en.wikipedia.org/wiki/Operations_management)
+
+![Model of Operations Management, inspired by the work of Slack _et al._](images/generated/risks/operational/slack.png)
 
 The diagram above is a Risk-First interpretation of [Slack _et al_'s model of Operations Management](http://amzn.eu/d/b6ZjuMu).  This model breaks down some of the key abstractions of the discipline: 
 
