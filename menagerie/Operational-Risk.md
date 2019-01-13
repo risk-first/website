@@ -125,7 +125,7 @@ So there is a tension between "you only get one chance to make a first impressio
 
 ![Balance of Risks from Delivering Software](images/generated/risks/operational/ship-it.png)
 
-A Risk-First re-framing of this might be the balance between:
+A Risk-First re-framing of this (as shown in the diagram above) might be the balance between:
 
 - The perceived [Trust & Belief Risk](Communication-Risk#trust--belief-risk), [Feature Risk](Feature-Risk) and [Operational Risk](Operational-Risk) of going to production (pressure to improve).
 - The perceived [Scarcity Risks](Scarcity-Risk) (such as funding, time available, etc) of staying in development (pressure to ship).
