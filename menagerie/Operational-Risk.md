@@ -110,13 +110,11 @@ While _planning_ is a day-to-day operational feedback loop, _design_ is a longer
 
 You might think that for an IT operation, tasks like [Design](#design) belong within a separate "Development" function within an organisation.  Traditionally, this might have been the case.  However separating Development from Operation implies [Boundary Risk](Boundary-Risk) between these two functions.  For example, the developers might employ different tools, equipment and processes to the operations team, resulting in a mismatch when software is delivered.
 
-In recent years, the "DevOps" movement has brought this [Boundary Risk](Boundary-Risk) into sharper focus.  This specifically means:
+In recent years, the [DevOps](https://en.wikipedia.org/wiki/DevOps) movement has brought this [Boundary Risk](Boundary-Risk) into sharper focus.  This specifically means:
  
   - Using code to automate previously manual Operations functions, like monitoring and releasing.
   - Involving Operations in the planning and design, so that the delivered software is optimised for the environment it runs in.
   
-DevOps heavily borrows from the Agile movement, both of which will be covered in more detail in Part 4.  
-
 ![DevOps Activities:  Development and Operations activities overlap one-another (Credit: Kharnagy, Wikipedia)](images/devops.png)
 
 ## Improvement
