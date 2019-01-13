@@ -140,7 +140,7 @@ At point `(4)`, we see that Bill's gamble worked (for him at least):  the projec
 
 ![Team Response](images/generated/practices/estimates/team1.png)
 
-The diagram above shows the [action taken](Glossary#take-action), _working overtime_.  Despite this being a fictional (or fictionalised) example, it rings true for many projects.  What _should_ have happened at point `(1)`?  Both Carl and Bill estimated incorrectly...  Or did they?   Was this just Parkinson's Law in operation?
+The diagram above shows the [action taken](Glossary#taking-action), _working overtime_.  Despite this being a fictional (or fictionalised) example, it rings true for many projects.  What _should_ have happened at point `(1)`?  Both Carl and Bill estimated incorrectly...  Or did they?   Was this just Parkinson's Law in operation?
  
 ## Agile Estimation
 
