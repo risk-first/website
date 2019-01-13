@@ -39,9 +39,17 @@ When building software, it's tempting to take a very narrow view of the dependen
 
 ![A Risk-First Model of Operations Management, inspired by the work of Slack _et al._](images/generated/risks/operational/slack.png)
 
-If we are designing a software system to "live" in the real world, we have to be mindful of the Operational Context we're working in, and craft our software and processes accordingly.   This view of the "wider" system is the discipline of Operations Management.  
+If we are designing a software system to "live" in the real world, we have to be mindful of the **Operational Context** we're working in, and craft our software and processes accordingly.   This view of the "wider" system is the discipline of Operations Management.  
 
-The diagram above is a Risk-First interpretation of [Slack _et al_'s model of Operations Management](http://amzn.eu/d/b6ZjuMu).  This model breaks down some of the key abstractions of the discipline: a **Transform Process** (the **Operation** itself) is embedded in the wider **Operational Context**, which supplies it with three key dependencies:
+> "Operations management is an area of management concerned with designing and controlling the process of production and redesigning business operations in the production of goods or services.[1] It involves the responsibility of ensuring that business operations are efficient in terms of using as few resources as needed and effective in terms of meeting customer requirements. " - [Operations Management, _Wikipedia_](https://en.wikipedia.org/wiki/Operations_management)
+
+The diagram above is a Risk-First interpretation of [Slack _et al_'s model of Operations Management](http://amzn.eu/d/b6ZjuMu).  This model breaks down some of the key abstractions of the discipline: 
+
+ - **A Transform Process** (the **Operation** itself), which tries to achieve an...
+ - **Operational Strategy** (the objectives of the operation) and is embedded in the wider...
+ - **Operational Context**.  
+
+The **Operational Context** supplies the **Transform Process** with three key dependencies:
   
  - **Resources**:  whether _transformed_ resources (like electricity or information, say) or _transforming_ resources (like staff or equipment).  
  - **Customers**: which supply it with money in return for goods and services.
