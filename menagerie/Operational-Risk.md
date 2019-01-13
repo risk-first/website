@@ -115,8 +115,6 @@ In recent years, the [DevOps](https://en.wikipedia.org/wiki/DevOps) movement has
   - Using code to automate previously manual Operations functions, like monitoring and releasing.
   - Involving Operations in the planning and design, so that the delivered software is optimised for the environment it runs in.
   
-![DevOps Activities:  Development and Operations activities overlap one-another (Credit: Kharnagy, Wikipedia)](images/devops.png)
-
 ## Improvement
 
 No system can be perfect, and after it meets the real world, we will want to improve it over time.  But [Operational Risk](Operational-Risk) includes an element of [Trust & Belief Risk](Communication-Risk#trust--belief-risk): we have a  _reputation_ and the good will of our customers to consider when we make improvements.  Because this is very hard to rebuild, we should consider this before releasing software that might not live up to expectations.    
