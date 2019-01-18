@@ -69,29 +69,9 @@ This kind of stuff is encapsulated in the science of [Reliability Engineering](h
 
 > "...was one of the first highly structured, systematic techniques for failure analysis. It was developed by reliability engineers in the late 1950s to study problems that might arise from malfunctions of military systems. " - [FEMA, _Wikipedia_](https://en.wikipedia.org/wiki/Failure_mode_and_effects_analysis)
 
-This was applied on NASA missions, and then in the 1970's to car design following the [Ford Pinto exploding car](https://en.wikipedia.org/wiki/Ford_Pinto#Design_flaws_and_ensuing_lawsuits) affair.  But establishing the reliability of software dependencies like this would be _hard_ and _expensive_.  So, we often rely on _proxies for reliability_, instead.
+This was applied on NASA missions, and then in the 1970's to car design following the [Ford Pinto exploding car](https://en.wikipedia.org/wiki/Ford_Pinto#Design_flaws_and_ensuing_lawsuits) affair.  
 
-## Proxies For Reliability
-
-Because of [Trust & Belief Risk](Communication-Risk#trust--belief-risk) and [Invisibility Risk](Communication-Risk#invisibility-risk), we cannot always establish reliability for a dependency, and this is a huge area of concern in software when choosing dependencies, as we will see in the section on [Software Dependency Risk](Software-Dependency-Risk).
-
-In the [Communication Risk](Communication-Risk) section we looked at [Marketing Communications](Communication-Risk#Marketing-Communications) and talked about the levels of awareness that you could have with a dependency. 
-
-Let's apply this to our Bus scenario:
-
- - Am I aware that there is public transport in my area?
- - How do I find out about the different options?
- - How do I choose between buses, taxis, cars etc.
- - How do I understand the timetable, and apply it to my problem?
- - Is it a reliable enough solution?
- 
-### Silo Mentality
- 
-Finding out about bus schedules is easy.  But in a large company, [Communication Risk](Communication-Risk) and especially [Invisibility Risk](Communication-Risk#invisibility-risk) are huge problems.  This tends to get called "[Silo Mentality](https://en.wikipedia.org/wiki/Information_silo#Silo_mentality)", that is, ignoring what else is going on in other divisions of the company or ["not invented here"](https://en.wikipedia.org/wiki/Not_invented_here) syndrome:
-
-> "In management the term silo mentality often refers to information silos in organisations. Silo mentality is caused by divergent goals of different organisational units." - [Silo Mentality, _Wikipedia_](https://en.wikipedia.org/wiki/Information_silo#Silo_mentality)
-
-Ironically, _more communication_ might not be the answer, because even with more communication you still cannot determine reliability.  If channels are provided to discover functionality in other teams you can still run into [Trust Risk](Communication-Risk#trust--belief-risk) (why should I believe in the quality of this dependency?) or [Agency Risk](Agency-Risk) (unwarranted self-promotion).  
+But establishing the reliability of software dependencies like this would be _hard_ and _expensive_.  So, we often rely on _proxies for reliability_, instead.  We'll look at these proxies (and the way in which software projects signal their reliability) in much more detail in the section on [Software Dependency Risk](Software-Dependency-Risk).
 
 ## Invisibility Risk
 
