@@ -58,7 +58,7 @@ The **Operational Context** supplies the **Transform Process** with three key de
  
 We have looked at processes like the **Transform Process** in the section on [Process Risk](Process-Risk).  The healthy functioning of this process is the domain of [Operations Management](#operations-management).  As the above diagram shows (again, modified from Slack _et al._) this involves the following types of actions:
 
- - **Control**:  ensuring that the Operation is working according to it's targets.  This includes day-to-day quality control and monitoring of the Transform Process. 
+ - **Control**:  ensuring that the Operation is working according to its targets.  This includes day-to-day quality control and monitoring of the Transform Process. 
  - **Planning**: this covers aspects such as capacity planning, forecasting and project planning.   This is about making sure the transform process has targets to meet and the resources to meet them.
  - **Design**:  ensuring that the design of the product and the transform process itself fulfils an **Operational Strategy**.
  - **Improvement**:  improving the operation in response to changes in the **Environment** and the **Operational Strategy**, detecting failure and recovering from it.

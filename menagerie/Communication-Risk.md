@@ -31,7 +31,7 @@ But it's not just transmission.  [Communication Risk](Communication-Risk) exists
 
 ## Approach To Communication Risk
 
-There is a symmetry about the steps going on in the diagram above, and we're going to exploit this in order to break down [Communication Risk](Communication-Risk) into it's main types.  <!-- tweet-end -->
+There is a symmetry about the steps going on in the diagram above, and we're going to exploit this in order to break down [Communication Risk](Communication-Risk) into its main types.  <!-- tweet-end -->
 
 ![Communication Risk 2](images/generated/risks/communication/communication_2.png)
 
@@ -170,7 +170,7 @@ By having a stack of protocols, we are able to apply [Separation Of Concerns](ht
 |`IP`                  |"Packets" with addresses and payloads.           |
 |`WiFi`                |"Networks", 802.11 flavours, Transmitters, Antennas, error correction codes.| 
 
-`HTTP` "stands on the shoulders of giants":  not only does it get to use pre-existing protocols like `TCP` and `DNS` to make it's life easier, it got `802.11` "for free" when this came along and plugged into the existing `IP` protocol.<!-- tweet-end -->  This is the key value of abstraction:  you get to piggy-back on _existing_ patterns, and use them yourself. 
+`HTTP` "stands on the shoulders of giants":  not only does it get to use pre-existing protocols like `TCP` and `DNS` to make its life easier, it got `802.11` "for free" when this came along and plugged into the existing `IP` protocol.<!-- tweet-end -->  This is the key value of abstraction:  you get to piggy-back on _existing_ patterns, and use them yourself. 
 
 ## Protocol Risk
 
@@ -330,7 +330,7 @@ We try to mitigate this via (for the most part) documentation, but this is a ter
 
 [Invisibility Risk](Communication-Risk#invisibility-risk) is mainly [Hidden Risk](Glossary#Hidden-Risk).  (Mostly, _you don't know what you don't know_.)  But you can carelessly _hide things from yourself_ with software<!-- tweet-end -->:
 
- - Adding a thread to an application that doesn't report whether it's worked, failed, or is running out of control and consuming all the cycles of the CPU.
+ - Adding a thread to an application that doesn't report whether it worked, failed, or is running out of control and consuming all the cycles of the CPU.
  - Redundancy can increase reliability, but only if you know when servers fail, and fix them quickly.   Otherwise, you only see problems when the last server fails.
  - When building a web-service, can you assume that it's working for the users in the way you want it to?
 
@@ -362,7 +362,7 @@ Commonly, the easiest option is just to ignore the information channel completel
 
 ### Reading Code
 
-It's often been said that code is _harder to read than to write_:  
+It has often been said that code is _harder to read than to write_:  
 
 > "If you ask a software developer what they spend their time doing, they'll tell you that they spend most of their time writing code.  However, if you actually observe what software developers spend their time doing, you'll find that they spend most of their time trying to understand code. " -  [When Understanding Means Rewriting, _Coding Horror_](https://blog.codinghorror.com/when-understanding-means-rewriting/)
 

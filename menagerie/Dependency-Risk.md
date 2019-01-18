@@ -22,7 +22,7 @@ Luckily for us, the things we depend on in life are, for the most part, abundant
 
 This isn't even lucky though: life has adapted to build dependencies on things that it can _rely_ on.  
 
-Although life exists at the bottom of the ocean around [hydrothermal vents](https://en.wikipedia.org/wiki/Hydrothermal_vent), it is a very different kind of life to us, and has a different set of dependencies given it's circumstances. 
+Although life exists at the bottom of the ocean around [hydrothermal vents](https://en.wikipedia.org/wiki/Hydrothermal_vent), it is a very different kind of life to us and has a different set of dependencies given its circumstances. 
 
 This tells us a lot about [Dependency Risk](Dependency-Risk) right here:
 

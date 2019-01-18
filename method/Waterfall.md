@@ -43,7 +43,7 @@ Additionally, by putting in the work at the planning and design stage, hopefully
 
 ### 4.  [Agency Risk](Agency-Risk)
 
-Because of it's step-wise delivery and reduction in visibility risk, Waterfall documentation can be used as the basis for [contracted delivery](Contract), and this is useful in situations where you are employing 3rd parties or putting work to tender.  
+Because of its step-wise delivery and reduction in visibility risk, Waterfall documentation can be used as the basis for [contracted delivery](Contract), and this is useful in situations where you are employing 3rd parties or putting work to tender.  
 
 This is very different from the way [Agency Risk](Agency-Risk) is mitigated in, say [Scrum](Scrum), which relies on the [On Site Customer](On-Site-Customer) to police the implementation team.
 

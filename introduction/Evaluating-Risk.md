@@ -24,7 +24,7 @@ It's also going to be useful _in conversation_, and this is where the value of t
 
 **Probability** is how likely something is to happen, whilst **Impact** is the cost (usually financial) when it does happen.
 
-In a financial context (or a gambling one), we can consider the overall **Risk Score** as being the sum of the **Impact** of each outcome multiplied by it's **Probability**.  For example, if you buy a 1-Euro ticket in a raffle, there are two outcomes:  win or lose.  The impact of _winning_ would be (say) a hundred Euros, but the **probability** might be 1 in 200.  The impact of _losing_ would be the loss of 1 Euro, with 
+In a financial context (or a gambling one), we can consider the overall **Risk Score** as being the sum of the **Impact** of each outcome multiplied by its **Probability**.  For example, if you buy a 1-Euro ticket in a raffle, there are two outcomes:  win or lose.  The impact of _winning_ would be (say) a hundred Euros, but the **probability** might be 1 in 200.  The impact of _losing_ would be the loss of 1 Euro, with 
 
 
 |Outcome        |Impact         |Probabilty        |Risk Score    |
@@ -122,7 +122,7 @@ If the methodology _fails at a particular scale_, this tells you something about
 
 ![Pillars, From Rapid Development By Steve McConnell](images/generated/introduction/pillars_smc.png)  
 
-The diagram above reproduces a figure from [Rapid Development](http://a.co/d/ddWGTB2) by Steve McConnell.  This is _fine_, McConnell is structuring the process from the perspective of _delivering as quickly as possible_.  However, here, I want to turn this on it's head.  Software Development from a risk-first perspective is an under-explored technique, and I believe it offers some useful insights.   So the aim here is to present the case for viewing software development like this:
+The diagram above reproduces a figure from [Rapid Development](http://a.co/d/ddWGTB2) by Steve McConnell.  This is _fine_, McConnell is structuring the process from the perspective of _delivering as quickly as possible_.  However, here, I want to turn this on its head.  Software Development from a risk-first perspective is an under-explored technique, and I believe it offers some useful insights.   So the aim here is to present the case for viewing software development like this:
 
 ![Pillars, re-arranged](images/generated/introduction/pillars_kite9.png)
 
