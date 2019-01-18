@@ -55,7 +55,7 @@ This points at the problem that when we use an external dependency, we are at th
 
 ![Reliability Risk](images/generated/risks/dependency/reliability-risk.png) 
 
-Unreliability manifests itself when a dependency fails you under certain sets of circumstances.  It's easy to think about reliability for something like a bus:  sometimes, it's late due to weather, or cancelled due to driver sickness, or the route changes unexpectedly due to road works.  
+It's easy to think about reliability for something like a bus:  sometimes, it's late due to weather, or cancelled due to driver sickness, or the route changes unexpectedly due to road works.  
 
 In software, it's no different:  _unreliability_ is the flip-side of [Feature Implementation Risk](Feature-risk#implementation-risk).  It's caused in the gap between the real behaviour of the software and the expectations for it.
 
@@ -69,7 +69,7 @@ This kind of stuff is encapsulated in the science of [Reliability Engineering](h
 
 > "...was one of the first highly structured, systematic techniques for failure analysis. It was developed by reliability engineers in the late 1950s to study problems that might arise from malfunctions of military systems. " - [FEMA, _Wikipedia_](https://en.wikipedia.org/wiki/Failure_mode_and_effects_analysis)
 
-This was applied on NASA missions, and then in the 1970's to car design following the [Ford Pinto exploding car](https://en.wikipedia.org/wiki/Ford_Pinto#Design_flaws_and_ensuing_lawsuits) affair.
+This was applied on NASA missions, and then in the 1970's to car design following the [Ford Pinto exploding car](https://en.wikipedia.org/wiki/Ford_Pinto#Design_flaws_and_ensuing_lawsuits) affair.  But establishing the reliability of software dependencies like this would be _hard_ and _expensive_.  So, we often rely on _proxies for reliability_, instead.
 
 ## Proxies For Reliability
 
