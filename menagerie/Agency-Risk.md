@@ -8,7 +8,7 @@ This is [Agency Risk](Agency-Risk).   This term comes from finance and refers to
 
 The less visibility you have of the agent's activities, the bigger the risk.  However, the _whole point_ of giving the money to the agent was that you would have to spend less time and effort managing it, hence the dilemma.  <!-- tweet-start -->In software development, we're not lending each other money, but we _are_ being paid by the project sponsor, so they are assuming [Agency Risk](Agency-Risk) by employing us.   <!-- tweet-end -->
 
-As we saw in the previous section on [Process Risk](Process-Risk), <!-- tweet-start -->[Agency Risk](Agency-Risk) doesn't just apply to people: it can apply to _running software_ or _whole teams_  <!-- tweet-end -->- anything which has agency over it's actions.  
+As we saw in the previous section on [Process Risk](Process-Risk), <!-- tweet-start -->[Agency Risk](Agency-Risk) doesn't just apply to people: it can apply to _running software_ or _whole teams_  <!-- tweet-end -->- anything which has agency over its actions.  
 
 > "Agency is the capacity of an actor to act in a given environment... Agency may either be classified as unconscious, involuntary behaviour, or purposeful, goal directed activity (intentional action). " - [Agency, _Wikipedia_](https://en.wikipedia.org/wiki/Agency_(philosophy)) 
 
@@ -113,7 +113,7 @@ _Within_ a system we may wish to prevent our agents from causing accidental (or 
 
 Interestingly, security is handled in very similar ways in all kinds of systems, whether biological, human or institutional: 
 
-- **Walls**: defences _around_ the system, to protect it's parts from the external environment.  
+- **Walls**: defences _around_ the system, to protect its parts from the external environment.  
 - **Doors**: ways to get _in_ and _out_ of the system, possibly with _locks_.
 - **Guards**: to make sure only the right things go in and out.  (i.e. to try and keep out _bad actors_).
 - **Police**: to defend from _within_ the system, against internal [Agency Risk](Agency-Risk).

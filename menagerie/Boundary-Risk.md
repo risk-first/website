@@ -28,7 +28,7 @@ Also, it stands to reason that making _any_ choice is better than making _no_ ch
 
 Let's look at a software example now.
 
-As discussed in [Software Dependency Risk](Software-Dependency-Risk), if we are going to use a software tool as a dependency, we have to accept the complexity of it's [protocols](Communication-Risk#protocols).  You have to use it's protocol: it won't come to you.   
+As discussed in [Software Dependency Risk](Software-Dependency-Risk), if we are going to use a software tool as a dependency, we have to accept the complexity of its [protocols](Communication-Risk#protocols).  You have to use its protocol: it won't come to you.   
 
 ![Our System receives data from the `input`, translates it and sends it to the `output`.  But which dependency should we use for the translation, if any?](images/generated/risks/boundary/choices.png)
 
@@ -176,7 +176,7 @@ Standards allow us to achieve the same thing, in one of two ways:
 
 1.  **Abstract over the ecosystems.**  Provide a _standard_ protocol (a _lingua franca_) which can be converted down into the protocol of any of a number of competing ecosystems.
 
- - The [C](https://en.wikipedia.org/wiki/C_(programming_language)) programming language provided a way to get the same programs compiled against different CPU instruction sets, therefore providing some _portability_ to code.  The problem was, each different operating system would still have it's own libraries, and so to support multiple operating systems, you'd have to write code against multiple different libraries. 
+ - The [C](https://en.wikipedia.org/wiki/C_(programming_language)) programming language provided a way to get the same programs compiled against different CPU instruction sets, therefore providing some _portability_ to code.  The problem was, each different operating system would still have its own libraries, and so to support multiple operating systems, you'd have to write code against multiple different libraries. 
 
  - [Java](https://en.wikipedia.org/wiki/Java_(programming_language)) took what C did and went one step further, providing interoperability at the library level. Java code could run anywhere where Java was installed. 
 

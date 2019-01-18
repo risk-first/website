@@ -70,7 +70,7 @@ The concept of [Map and Territory Risk](Map-And-Territory-Risk) actually helps e
  
 Both of these are modelled with [Cumulative Distribution](https://en.wikipedia.org/wiki/Cumulative_distribution_function#Use_in_statistical_analysis) curves, which are often used for modelling the spread of a phenomena (disease, product uptake, idea) within a population.  From these two things, we can figure out where our maximum [Map and Territory Risk](Map-And-Territory-Risk) lies:  it's the point where awareness of an idea is farthest from the understanding of it.  
 
-This [Map and Territory Risk](Map-And-Territory-Risk) acts as a "brake" on the **hype** around the idea.  In the diagram, our "hype" curve is calculated as being the same as the "saturation" line, with a subtraction due to [Map and Territory Risk](Map-And-Territory-Risk).  As you can see, "hype" drops fastest at the point where [Map and Territory Risk](Map-And-Territory-Risk) is at it's greatest, and we end up in the "Trough of Disillusionment". 
+This [Map and Territory Risk](Map-And-Territory-Risk) acts as a "brake" on the **hype** around the idea.  In the diagram, our "hype" curve is calculated as being the same as the "saturation" line, with a subtraction due to [Map and Territory Risk](Map-And-Territory-Risk).  As you can see, "hype" drops fastest at the point where [Map and Territory Risk](Map-And-Territory-Risk) is at its greatest, and we end up in the "Trough of Disillusionment". 
 
 ![Hype Cycle 2: more even growth of  means no "Trough of Disillusionment"](images/numbers/hype2.png)
 
@@ -141,7 +141,7 @@ There are plenty of ideas which _seem a really good idea at the time_ but then e
 
 The above chart shows an initially promising idea that turns out to be terrible, and there is a "Period of Inoculation" where the population realise their mistake.  There is "negative hype" as they work to phase out the offending idea.
 
-SLOC is not on it's own a _bad idea_, but using it as a metric for developer productivity _is_:
+SLOC is not on its own a _bad idea_, but using it as a metric for developer productivity _is_:
 
 > "Measuring programming progress by lines of code is like measuring aircraft building progress by weight.” - [Bill Gates](https://www.goodreads.com/quotes/536587)
 

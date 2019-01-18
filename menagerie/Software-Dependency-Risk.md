@@ -65,20 +65,20 @@ But outside, the form is simple, and designed for humans to use.   This is _[erg
 
 ### Protocols and Ergonomics
 
-The _interface_ of a tool is the part we touch and interact with, via it's protocol.  By striving for an ergonomic sweet spot, the protocol reduces [Communication Risk](Communication-Risk).  <!-- tweet-end -->
+The _interface_ of a tool is the part we touch and interact with, via its protocol.  By striving for an ergonomic sweet spot, the protocol reduces [Communication Risk](Communication-Risk).  <!-- tweet-end -->
 
 The interface of a system expands when you ask it to do a wide variety of things. <!-- tweet-end -->  An easy-to-use drill does one thing well: it turns drill-bits at useful levels of torque for drilling holes and sinking screws.  But if you wanted it to also operate as a lathe, a sander or a strimmer (all basically mechanical things going round) you would have to sacrifice the conceptual integrity for a more complex protocol, probably including adapters, extensions, handles and so on.
 
 So, we now have split complexity into two:
 
- - The inner complexity of the tool (how it works internally, it's own [internal complexity](Complexity-Risk#Kolmogorov-Complexity)).
+ - The inner complexity of the tool (how it works internally, its own [internal complexity](Complexity-Risk#Kolmogorov-Complexity)).
  - The complexity of the instructions that we need to write to make the tool work, [the protocol complexity](Communication-Risk#protocol-risk), which will be a function of the complexity of the tool itself..
  
 ![Types of Complexity For a Software Dependency](images/generated/risks/software-dependency/protocol-complexity.png)
 
 ### Software Tools
 
-In the same way as with a hand-tool, the bulk of the complexity of a software tool is hidden behind it's interface.<!-- tweet-end -->  But, the more complex the _purpose_ of the tool, the more complex the interface will be.
+In the same way as with a hand-tool, the bulk of the complexity of a software tool is hidden behind its interface.<!-- tweet-end -->  But, the more complex the _purpose_ of the tool, the more complex the interface will be.
 
 Software is not constrained by _physical_ ergonomics in the same way as a tool is. <!-- tweet-end --> But ideally, it should have conceptual ergonomics:  ideally, complexity is hidden away from the user behind the _User Interface_.  This is the familiar concept of [Abstraction](Glossary#abstraction) we've already looked at.  As we saw in [Communication Risk](Communication-Risk#learning-curve-risk), when we use a new protocol, we face [Learning Curve Risk](Communication-Risk#learning-curve-risk).  To minimise this, we should apply the [Principal Of Least Astonishment](https://en.wikipedia.org/wiki/Principle_of_least_astonishment) when designing protocols: 
 
@@ -100,7 +100,7 @@ All 3 approaches involve a different risk-profile.  Let's look at each in turn, 
 
 Way before the Internet, this was the only game in town.  Tool support was very thin-on-the-ground.  Algorithms could be distributed as code snippets _in magazines_ which could be transcribed and run, and added to your program.  This spirit lives on somewhat in StackOverflow and JSFiddle, where you are expected to "adopt" others' code into your own project. Code-your-own is still the best option if you have highly bespoke requirements, or are dealing with unusual environmental contexts.
 
-One of the hidden risks of embarking on a code-your-own approach is that the features you need are _not_ apparent from the outset.  What might appear to be a trivial implementation of some piece of functionality can often turn into it's own industry as more and more hidden [Feature Risk](Feature-Risk) is uncovered.  For example, as we discussed in our earlier treatment of [Dead-End Risk](Complexity-Risk#dead-end-risk), building log-in screens _seemed like a good idea_.  However, this gets out-of-hand fast when you need:
+One of the hidden risks of embarking on a code-your-own approach is that the features you need are _not_ apparent from the outset.  What might appear to be a trivial implementation of some piece of functionality can often turn into its own industry as more and more hidden [Feature Risk](Feature-Risk) is uncovered.  For example, as we discussed in our earlier treatment of [Dead-End Risk](Complexity-Risk#dead-end-risk), building log-in screens _seemed like a good idea_.  However, this gets out-of-hand fast when you need:
 
  - A password reset screen
  - To email the reset links to the user
@@ -166,7 +166,7 @@ The diagram above summarises the risks raised in some of the literature.  Here a
 
  - **[Feature Risk](Feature-Risk) is a big concern**:   How can you be sure that the project will do what you want it to do ahead of schedule?  Will it contain bugs or missing features?  By looking at factors like _release frequency_ and _size of the community_ you get a good feel for this which is difficult to fake.
  - **[Boundary Risk](Boundary-Risk) is also very important**:  You are going to have to _live_ with your choices for the duration of the project, so it's worth spending the effort to either ensure that you're not going to regret the decision, or that you can change direction later.
- - **Third is [Communication Risk](Communication-Risk)**:  how well does the project deal with it's users?  If a project is "famous", then it has communicated its usefulness to a wide, appreciative audience.  Avoiding [Communication Risk](Communication-Risk) is also a good reason to pick _tools you are already familiar with_.
+ - **Third is [Communication Risk](Communication-Risk)**:  how well does the project deal with its users?  If a project is "famous", then it has communicated its usefulness to a wide, appreciative audience.  Avoiding [Communication Risk](Communication-Risk) is also a good reason to pick _tools you are already familiar with_.
   
 ![Software Libraries Risk Tradeoff](images/generated/risks/software-dependency/library.png) 
 
@@ -248,7 +248,7 @@ Let's look at some:
   
 ## Choice
 
-_Choosing_ dependencies can be extremely difficult.  As we discussed above, the usefulness of any tool depends on its fit for purpose, it's _ergonomics within a given context_.  It's all too easy to pick a good tool for the wrong job:  
+_Choosing_ dependencies can be extremely difficult.  As we discussed above, the usefulness of any tool depends on its fit for purpose, its _ergonomics within a given context_.  It's all too easy to pick a good tool for the wrong job:  
 
 > "I suppose it is tempting, if the only tool you have is a hammer, to treat everything as if it were a nail." - [Abraham Maslow, _Toward a Psychology of Being_](https://en.wiktionary.org/wiki/if_all_you_have_is_a_hammer,_everything_looks_like_a_nail)
 

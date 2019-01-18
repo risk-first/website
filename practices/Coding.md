@@ -31,7 +31,7 @@ As with any [Practice](Practices), we are coding to minimize [Attendant Risks](G
 
 ... and so on.   As usual, the advice is to _reduce risk_ in the most meaningful way possible, all the time.  This might involve coding _or it might not_.
 
-## Where It's Used
+## Where Its Used
 
 Since the focus of this site is on _software methodologies_, you shouldn't be surprised to learn that _all_ of the methodologies use **Coding** as a central focus.  
 
@@ -58,7 +58,7 @@ Users often have trouble _conceiving_ of what they want in software, let alone _
 Let's look at how that can happen.  
 
 Imagine for a moment, that there was such a thing as **The Perfect Product**, and a **User** wants to build it with a **Coder**:
- - The **Perfect Product** might be _conceptually elusive_, and it might take several attempts for the **User** to find it's form. _[Conceptual Integrity Risk](Feature-Risk)_
+ - The **Perfect Product** might be _conceptually elusive_, and it might take several attempts for the **User** to find its form. _[Conceptual Integrity Risk](Feature-Risk)_
  - It might be hard for the **User** to _communicate_ the idea of it in writing or words:  where do the buttons go? What do they do?  What are the key abstractions?  _[Communication Risk](Communication-Risk)_
  - It might be hard too, for the **Coder** to work with this description.  Since his [Internal Model](Glossary#Internal-Model) is different from the **User**'s, they have different ideas about the _meaning_ of what the **User** is communicating.  _[Communication Risk](Communication-Risk)_
  - Then, implementing the idea of whatever is in the **Coder**'s [Internal Model](Glossary#Internal-Model) takes _effort_, and therefore involves [Schedule Risk](Scarcity-Risk#schedule-risk).
@@ -179,7 +179,7 @@ You can see that this law is founded in an appreciation of [Coordination Risk](C
 
 Sometimes, you have _too many developers_ on a project.  This is not a blessing.   As with [Student Syndrome](Scarcity-Risk#schedule-risk), having too many resources means that: 
 
-> "Work expands so as to fill the time available for it's completion" - [Parkinson's Law]()
+> "Work expands so as to fill the time available for its completion" - [Parkinson's Law]()
 
 One of the reasons for this is that _Developers love to develop_ and it is, after all, their job.  If they _aren't_ developing, then are they still needed?  This is [Agency Risk](Agency-Risk):  people who are worried about their jobs will often try to _look busy_, and if that means creating some drama on the project, then so be it.
 

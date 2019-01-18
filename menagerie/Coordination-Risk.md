@@ -1,6 +1,6 @@
 ![For Review](images/state/for-review.png)
 
-As in [Agency Risk](Agency-Risk), we are going to use the term _agent_, which refers to anything with [agency](Agency-Risk#software-processes) in a system to decide it's own fate.  That is, an agent has an [Internal Model](Glossary#Internal-Model),  and can [take actions](Glossary#taking-action) based on it.  Here, we work on the assumption that the agents _are_ working towards a common [Goal](Glossary#Goal-In-Mind), even though in reality it's not always the case, as we saw in the section on [Agency Risk](Agency-Risk).
+As in [Agency Risk](Agency-Risk), we are going to use the term _agent_, which refers to anything with [agency](Agency-Risk#software-processes) in a system to decide its own fate.  That is, an agent has an [Internal Model](Glossary#Internal-Model),  and can [take actions](Glossary#taking-action) based on it.  Here, we work on the assumption that the agents _are_ working towards a common [Goal](Glossary#Goal-In-Mind), even though in reality it's not always the case, as we saw in the section on [Agency Risk](Agency-Risk).
 
 [Coordination Risk](Coordination-Risk) is the risk that a group of people or processes -maybe with a common [Goal In Mind](Glossary#Goal-In-Mind)- can fail to coordinate to meet this goal and end up making things worse.<!-- tweet-end -->  [Coordination Risk](Coordination-Risk) is embodied in the phrase "Too Many Cooks Spoil The Broth":  more people, opinions or _agents_ often make results worse.
 
@@ -69,9 +69,9 @@ Let's unpack this idea, and review some classic problems of coordination, none o
 
 ## Decision Making
 
-Within a team, [Coordination Risk](Coordination-Risk) is at it's core about resolving [Internal Model](Glossary#Internal-Model) conflicts in order that everyone can agree on a [Goal In Mind](Glossary#Goal-In-Mind) and cooperate on getting it done.  Therefore, [Coordination Risk](Coordination-Risk) is worse on projects with more members, and worse in organizations with more staff.  
+Within a team, [Coordination Risk](Coordination-Risk) is at its core about resolving [Internal Model](Glossary#Internal-Model) conflicts in order that everyone can agree on a [Goal In Mind](Glossary#Goal-In-Mind) and cooperate on getting it done.  Therefore, [Coordination Risk](Coordination-Risk) is worse on projects with more members, and worse in organizations with more staff.  
 
-As an individual, do you suffer from [Coordination Risk](Coordination-Risk) at all?  Maybe:  sometimes, you can feel "conflicted" about the best way to solve a problem.  And weirdly, usually _not thinking about it_ helps.  Sleeping too.  (Rich Hickey calls this "[Hammock Driven Development](https://www.youtube.com/watch?v=f84n5oFoZBc)").  This is probably because, unbeknownst to you, your subconscious is furiously communicating internally, trying to resolve these conflicts itself, and will let you know when it's come to a resolution.  
+As an individual, do you suffer from [Coordination Risk](Coordination-Risk) at all?  Maybe:  sometimes, you can feel "conflicted" about the best way to solve a problem.  And weirdly, usually _not thinking about it_ helps.  Sleeping too.  (Rich Hickey calls this "[Hammock Driven Development](https://www.youtube.com/watch?v=f84n5oFoZBc)").  This is probably because, unbeknownst to you, your subconscious is furiously communicating internally, trying to resolve these conflicts itself, and will let you know when it has come to a resolution.  
 
 ![Vroom And Yetton Decision Making Styles.  "d" indicates authority in making a decision, circles are subordinates.  Thin lines with arrow-heads show information flow, whilst thick lines show _opinions_ being passed around.](images/generated/risks/coordination/vroom-yetton.png)
 
@@ -175,7 +175,7 @@ According to the [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem), there
 
 - **Consistency (C)**: Every read receives the most recent value from the last write.
 - **Availability (A)**: Every request receives a response.
-- **Partition tolerance (P)**: The system can operate despite the isolation (lack of communication with) some of it's agents.
+- **Partition tolerance (P)**: The system can operate despite the isolation (lack of communication with) some of its agents.
 
 The [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem) states that this is a [Trilemma](https://en.wikipedia.org/wiki/Trilemma).  That is, you can only have two out of the three properties.   
 
@@ -213,7 +213,7 @@ First, [ZooKeeper](https://zookeeper.apache.org) is an Open-Source datastore, wh
 
 This _seems_ trivial, but it quickly gets out-of-hand:  what happens if only some of the agents receive the new information? What happens if a datacentre gets disconnected while the update is happening?  There are lots of edge-cases.  
 
-ZooKeeper handles this by communicating inter-agent with it's own protocol.  It elects a **master agent** (via **GII**-style voting), turning it into an **AI**-style team.  If the master is lost for some reason, a new leader is elected.  _Writes_ are then coordinated via the **master agent** who makes sure that a _majority of agents_ have received and stored the configuration change before telling the user that the transaction is complete.  Therefore, ZooKeeper is a `CP` system.  
+ZooKeeper handles this by communicating inter-agent with its own protocol.  It elects a **master agent** (via **GII**-style voting), turning it into an **AI**-style team.  If the master is lost for some reason, a new leader is elected.  _Writes_ are then coordinated via the **master agent** who makes sure that a _majority of agents_ have received and stored the configuration change before telling the user that the transaction is complete.  Therefore, ZooKeeper is a `CP` system.  
 
 #### Git
 

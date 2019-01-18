@@ -99,7 +99,7 @@ From a Risk-First perspective, we can now see that this is an over-simplificatio
 So the conclusion is:  **Focusing on the three risks of the iron triangle isn't enough.**  You can game these risks by sacrificing others:  we need to be looking at the project's risk _holistically_.
 
  - There's no point in calling a project complete if the dependencies you are using are [unreliable](Dependency-Risk) or [undergoing rapid change](Scarcity-Risk#red-queen-risk) 
- - There's no point in delivering the project on time if it's an [Operational Risk](Operational-Risk) nightmare, and requires constant round-the-clock support and will cost a fortune to _run_.  (Working on a project that "hits it's delivery date" but is nonetheless a broken mess once in production is too common a sight.)
+ - There's no point in delivering the project on time if it's an [Operational Risk](Operational-Risk) nightmare, and requires constant round-the-clock support and will cost a fortune to _run_.  (Working on a project that "hits its delivery date" but is nonetheless a broken mess once in production is too common a sight.)
  - There's no point in delivering a project on-budget if [the market has moved on](Feature-Risk#market-risk) and [needs different features](Feature-Risk#feature-drift-risk).  
 
 ### Old Saw No. 3: Parkinson's Law

@@ -8,7 +8,7 @@ As a simple example, <!-- tweet-start -->if your needs are served perfectly by M
 
 As we will explore below, [Feature Risk](Feature-Risk) exists in the gaps between what users _want_, and what they _are given_.
 
-Not considering [Feature Risk](Feature-Risk) means that you might be building the wrong functionality, for the wrong audience or at the wrong time.  And eventually, this will come down to lost money, business, acclaim, or whatever else reason you are doing your project for.  So let's unpack this concept into some of it's variations.
+Not considering [Feature Risk](Feature-Risk) means that you might be building the wrong functionality, for the wrong audience or at the wrong time.  And eventually, this will come down to lost money, business, acclaim, or whatever else reason you are doing your project for.  So let's unpack this concept into some of its variations.
 
 ## Feature Fit Risk
 

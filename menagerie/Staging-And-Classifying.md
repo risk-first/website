@@ -44,7 +44,7 @@ Abstraction (like any other action) is everywhere and seems to be at the heart o
 
 _Naming_ something seems innocuous, a small thing.  Consider all the classes, variables, products and systems in software development that have names.  Do all of these names "factor" correctly to things in the real world?  Or do they introduce arbitrary classification?  (For example, you might classify water as "hot" or "cold" while really there is just temperature.)   
 
-Abstraction _is_ a small thing, but it's effects compound massively.
+Abstraction _is_ a small thing, but its effects compound massively.
 
 ## Your Feature Risk is Someone Else's Dependency Risk
 
@@ -54,7 +54,7 @@ However, over the rest of the [Dependency Risk](Dependency-Risk) sections, we lo
 
 So [Feature Risk](Feature-Risk) and [Dependency Risk](Dependency-Risk) are _two sides of the same coin_.  You face [Dependency Risk](Dependency-Risk) when you’re a client, [Feature Risk](Feature-Risk) when you’re the supplier.   
 
-To _use_ a dependency requires the client and the supplier to communicate, and this entails [Communication Risk](Communication-Risk).    You have to learn to use a dependency.  Maybe it's supplier learns something from you.  This changes internal models.  
+To _use_ a dependency requires the client and the supplier to communicate, and this entails [Communication Risk](Communication-Risk).    You have to learn to use a dependency.  Maybe its supplier learns something from you.  This changes internal models.  
 
 ![Features And Dependencies](images/generated/staging-and-classifying/features-and-dependencies.png)
 

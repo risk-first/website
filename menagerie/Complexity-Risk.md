@@ -66,7 +66,7 @@ By applying abstraction, we can improve in the direction of the Kolmogorov limit
 
 ### Trade-Off
 
-Generally, the more complex a piece of software is, the more difficulty users will have [understanding it](Feature-Risk#conceptual-integrity-risk), and the more work developers will have changing it.  We should prefer the third version of our code over either the first or second because of it's brevity.
+Generally, the more complex a piece of software is, the more difficulty users will have [understanding it](Feature-Risk#conceptual-integrity-risk), and the more work developers will have changing it.  We should prefer the third version of our code over either the first or second because of its brevity.
 
 But we could go further down into [Code Golf](https://en.wikipedia.org/wiki/Code_golf) territory.  This javascript program plays [FizzBuzz](https://en.wikipedia.org/wiki/Fizz_buzz) up to 100, but is less readable than you might hope:
 
@@ -117,7 +117,7 @@ Let's remove some of those extra links:
 
 ![Graph 2, 1-Connected](images/generated/risks/complexity/connectivity_2.png)
 
-In this graph, I've removed 6 of the edges.  Now, we're in a situation where if any single edge is removed, the graph becomes _unconnected_.  That is, it's broken into distinct chunks.  So, it's _1-connected_.  
+In this graph, I've removed 6 of the edges.  Now, we're in a situation where if any single edge is removed, the graph becomes _unconnected_.  That is, it's broken into distinct chunks.  So, it is _1-connected_.  
 
 The second graph is clearly simpler than the first.  And, we can show this by looking at the **Kolmogorov Complexity** in our little language:
 
@@ -173,7 +173,7 @@ The first way to look at complexity is as **Mass** :  a software project with mo
 
 That is, in order to move your project _somewhere new_, and make it do new things, you need to give it a push, and the more mass it has, the more **Force** you'll need to move (accelerate) it.  
 
-You could stop here and say that the more lines of code a project contains, the higher it's mass.  And, that makes sense, because in order to get it to do something new, you're likely to need to change more lines.  
+You could stop here and say that the more lines of code a project contains, the greater its mass.  And, that makes sense, because in order to get it to do something new, you're likely to need to change more lines.  
 
 But there is actually some underlying sense in which this is true in the real, physical world too, as discussed in this [Veritasium](https://www.youtube.com/user/1veritasium) video.  To paraphrase:
 
@@ -209,7 +209,7 @@ Now of course, you could carry on with the messy kitchen.  When tomorrow comes a
 
 It's not long before someone comes down with food poisoning.   
 
-![Complexity Risk and it's implications](images/generated/risks/complexity/complexity-risk-impact.png)
+![Complexity Risk and its implications](images/generated/risks/complexity/complexity-risk-impact.png)
 
 We wouldn't tolerate this behaviour in a restaurant kitchen, so why put up with it in a software project?  This state-of-affairs is illustrated in the above diagram: [Complexity Risk](Complexity-Risk) can be a cause of [Operational Risks](Operational-Risk) and [Security Risks](Agency-Risk#security).
 
@@ -269,7 +269,7 @@ So far, we've focused mainly on [Codebase Risk](Complexity-Risk#codebase-risk), 
 
 There is a whole branch of complexity theory devoted to how the software _runs_, namely [Big O Complexity](https://en.wikipedia.org/wiki/Big_O_notation).  
 
-Once running, an algorithm or data structure will consume space or runtime dependent on it's performance characteristics, which may well have an impact on the [Operational Risk](Operational-Risk) of the software.  Using off-the-shelf data structures and algorithms helps, but you still need to know their performance characteristics. 
+Once running, an algorithm or data structure will consume space or runtime dependent on its performance characteristics, which may well have an impact on the [Operational Risk](Operational-Risk) of the software.  Using off-the-shelf data structures and algorithms helps, but you still need to know their performance characteristics. 
 
 The [Big O Cheat Sheet](http://bigocheatsheet.com) is a wonderful resource to investigate this further.  
 
