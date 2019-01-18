@@ -22,7 +22,7 @@ Luckily for us, the things we depend on in life are, for the most part, abundant
 
 This isn't even lucky though: life has adapted to build dependencies on things that it can _rely_ on.  
 
-Although life exists at the bottom of the ocean around [hydrothermal vents](https://en.wikipedia.org/wiki/Hydrothermal_vent), it is a very different kind of life to us and has a different set of dependencies given its circumstances. 
+Although life exists at the bottom of the ocean around [hydrothermal vents](https://en.wikipedia.org/wiki/Hydrothermal_vent), it is a very different kind of life to ours and has a different set of dependencies given its circumstances. 
 
 This tells us a lot about [Dependency Risk](Dependency-Risk) right here:
 
@@ -41,12 +41,11 @@ In order to illustrate some of the different [Dependency Risks](Dependency-Risk)
 
 Normally, we'll use the same dependency each day.  This speaks to the fact that each of these approaches has different [Feature Fit Risk](Feature-Risk#feature-fit-risk).   Perhaps you choose going by bus over going by car because of the risk that owning the car is expensive, or that you might not be able to find somewhere to park it.
 
-But the bus will take you to lots of in-between places you _didn't_ want to go.   This is also [Feature Fit Risk](Feature-Risk#feature-fit-risk) and we saw this already in the section on [Feature Risk](Feature-Risk).  There, we considered two problems:
-
- - The feature (or now, dependency) doesn't provide all the functionality you need.  This was [Feature Fit Risk](Feature-Risk#feature-fit-risk).  An example might be your supermarket not stocking everything you want to buy.
- - The feature / dependency provides far too much, and you have to accept more complexity than you need.  This was [Conceptual Integrity Risk](Feature-Risk#conceptual-integrity-risk).  An example of this might be the supermarket being _too big_, and you spend a lot longer navigating it than you wanted to.
- 
 ![Two-Dimensions of Feature Fit for the bus-ride](images/generated/risks/dependency/dependency-risk-fit.png)
+
+But there are a couple of problems with buses you don't have with your own car, as shown in the above diagram. A bus might take you to lots of in-between places you _didn't_ want to go, which is [Conceptual Integrity Risk](Feature-Risk#conceptual-integrity-risk) and we saw this already in the section on [Feature Risk](Feature-Risk).  Also, it might not go at the time you want it to, which is [Feature-Fit-Risk](Feature-Risk#feature-fit-risk).  
+
+What this shows us is that [Fit Risks](Feature-Risk#feature-fit-risk) are as much a problem for the suppliers of the dependency (the people running the bus service) as they are for the people (like you or I) _using_ the dependency.
 
 ## Reliability Risk
 
