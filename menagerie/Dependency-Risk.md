@@ -69,17 +69,17 @@ This kind of stuff is encapsulated in the science of [Reliability Engineering](h
 
 > "...was one of the first highly structured, systematic techniques for failure analysis. It was developed by reliability engineers in the late 1950s to study problems that might arise from malfunctions of military systems. " - [FEMA, _Wikipedia_](https://en.wikipedia.org/wiki/Failure_mode_and_effects_analysis)
 
-This was applied on NASA missions, and then in the 1970's to car design following the [Ford Pinto exploding car](https://en.wikipedia.org/wiki/Ford_Pinto#Design_flaws_and_ensuing_lawsuits) affair.  
-
-But establishing the reliability of software dependencies like this would be _hard_ and _expensive_.  So, we often rely on _proxies for reliability_, instead.  We'll look at these proxies (and the way in which software projects signal their reliability) in much more detail in the section on [Software Dependency Risk](Software-Dependency-Risk).
+This was applied on NASA missions, and then in the 1970's to car design following the [Ford Pinto exploding car](https://en.wikipedia.org/wiki/Ford_Pinto#Design_flaws_and_ensuing_lawsuits) affair.  But establishing the reliability of software dependencies like this would be _hard_ and _expensive_.  So, we often rely on _proxies for reliability_, instead.  We'll look at these proxies (and the way in which software projects signal their reliability) in much more detail in the section on [Software Dependency Risk](Software-Dependency-Risk).
 
 ## Invisibility Risk
 
-While dependencies (like the bus, or the supermarket) make life simpler for you, they do this by taking on complexity for you.
+While dependencies (like the bus) make life simpler for you, they do this by taking on complexity for you.
 
-In our software, Dependencies are a way to manage [Complexity Risk](Complexity-Risk), and we'll investigate that in much more detail in [Software Dependency Risk](Software-Dependency-Risk).  The reason for this is that a dependency gives you an [abstraction](Glossary#abstraction): you no longer need to know _how_ to do something, (that's the job of the dependency), you just need to interact with the dependency properly to get the job done.  Buses are _perfect_ for people who can't drive, after all.
+In software, dependencies are a way to manage [Complexity Risk](Complexity-Risk).  The reason for this is that a dependency gives you an [abstraction](Glossary#abstraction): you no longer need to know _how_ to do something, (that's the job of the dependency), you just need to interact with the dependency properly to get the job done.  Buses are _perfect_ for people who can't drive, after all.
 
-But this means that all of the issues of abstractions that we covered in [Communication Risk](Communication-Risk) apply.  For example, there is [Invisibility Risk](Communication-Risk#invisibility-risk) because you probably don't have a full view of what the dependency is doing.  Nowadays, bus stops have a digital "arrivals" board which gives you details of when the bus will arrive, and shops publish their opening hours online.  But, abstraction always means the loss of some detail - the bus might be two minutes away but could already be full.
+![Dependencies help with complexity risk, but come with their own attendant risks](images/generated/risks/dependency/dependency-risk.png)
+
+But (as shown in the above diagram) this means that all of the issues of abstractions that we covered in [Communication Risk](Communication-Risk) apply.  For example, there is [Invisibility Risk](Communication-Risk#invisibility-risk) because you probably don't have a full view of what the dependency is doing.  Nowadays, bus stops have a digital "arrivals" board which gives you details of when the bus will arrive, and shops publish their opening hours online.  But, abstraction always means the loss of some detail - the bus might be two minutes away but could already be full.
 
 ## Dependencies Are Complex
 
