@@ -83,13 +83,13 @@ In software, dependencies are a way to manage [Complexity Risk](Complexity-Risk)
 
 But (as shown in the above diagram) this means that all of the issues of abstractions that we covered in [Communication Risk](Communication-Risk) apply.  For example, there is [Invisibility Risk](Communication-Risk#invisibility-risk) because you probably don't have a full view of what the dependency is doing.  Nowadays, bus stops have a digital "arrivals" board which gives you details of when the bus will arrive, and shops publish their opening hours online.  But, abstraction always means the loss of detail (the bus might be two minutes away but could already be full).
 
-## Dependencies Are Complex
+## Dependencies And Complexity
 
 In Rich Hickey's talk, [Simple Made Easy](https://www.infoq.com/presentations/Simple-Made-Easy) he discusses the difference between _simple_ software systems and _easy_ (to use) ones, heavily stressing the virtues of simple over easy.  It's an incredible talk and well worth watching.  
 
 But: living systems are not simple.  Not anymore.  They evolved in the direction of increasing complexity because life was _easier_ that way.  In the "simpler" direction, life is first _harder_ and then _impossible_, and then an evolutionary dead-end.  
 
-Depending on things makes _your job easier_.  It's just [division of labour](https://en.wikipedia.org/wiki/Division_of_labour) and dependency hierarchies, as we saw in [Complexity Risk](Complexity-Risk#Hierarchies-and-Modularisation).
+Depending on things makes _your job easier_.  But the [Complexity Risk](Complexity-Risk) hasn't gone away: it's just _transferred_ to the dependency.  It's just [division of labour](https://en.wikipedia.org/wiki/Division_of_labour) and dependency hierarchies, as we saw in [Complexity Risk](Complexity-Risk#Hierarchies-and-Modularisation).
 
 Our economic system and our software systems exhibit the same tendency-towards-complexity.  For example, the television in my house now is _vastly more complicated_ than the one in my home when I was a child.  But, it contains much more functionality and consumes much less power and space.  
 
