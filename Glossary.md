@@ -1,4 +1,4 @@
-![Under Construction](images/state/uc.png)
+# Glossary
 
 ### Abstraction
 

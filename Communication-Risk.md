@@ -1,4 +1,4 @@
-
+# Communication Risk
 
 If we all had identical knowledge, there would be no need to do any communicating at all, and therefore and also no [Communication Risk](Communication-Risk).  
 

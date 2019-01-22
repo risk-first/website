@@ -1,4 +1,4 @@
-
+# Just Risk
 
 In this section, I am going to propose the idea that everything you do on a software project is Risk Management.
 
