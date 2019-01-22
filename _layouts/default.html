@@ -18,13 +18,14 @@
       <header>
       	<img src="images/R1_logo_black.svg" alt="Risk First Logo" />
 
+        <p class="sitedescription">{{ site.description | default: site.github.project_tagline }}</p>
+
         <div class="buttons">
 			<a class="github-button" href="https://github.com/risk-first/website/subscription" data-icon="octicon-eye" data-show-count="true" aria-label="Watch risk-first/website on GitHub">Watch</a>
 			<a class="github-button" href="https://github.com/risk-first/website" data-icon="octicon-star" data-show-count="true" aria-label="Star risk-first/website on GitHub">Star</a>
 			<a class="github-button" href="https://github.com/risk-first/website/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork risk-first/website on GitHub">Fork</a>      
 		</div>
 
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
 
         <a href="Home">Contents Page</a>
         <br>
