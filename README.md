@@ -22,7 +22,7 @@ Hopefully, after reading through some of the articles here, you'll come away wit
 
 ### Contributing
 
-If you feel something important is missing, or you spot a mistake, [we need help](Contributing).
+If you feel something important is missing, or you spot a mistake, [we need help](https://github.com/risk-first/website/blob/master/CONTRIBUTING.md).
 
 Although this is a [Wiki](https://en.wikipedia.org/wiki/Wiki), it's not meant to be an open-ended discussion of software techniques like [Ward's Wiki](http://wiki.c2.com).  In order to be concise and useful, discussions need to be carried out by either:
 
