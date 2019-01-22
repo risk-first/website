@@ -87,7 +87,7 @@ Sometimes, there will be multiple moves available on the [Risk Landscape](Glossa
 
 Obviously, in the ideal world, we want to get to the place on the [Risk Landscape](Glossary#risk-landscape) where we have a tested, bug-free system in production.  But we're not there yet, and we have funding pressure to get the software into the hands of some paying customers.  The table below shows an example: 
 
-|Risk Managed          |Action               |Attendant Risk                           |Payoff            | 
+|Risk Managed          |Action               |Attendant Risk                           |Payoff             | 
 |----------------------|---------------------|-----------------------------------------|-------------------|
 |Funding Risk          |Go Live              |Reputational Risk, Operational Risk      |MEDIUM             |
 |Implementation Risk   |User Acceptance Test |Worse Funding Risk, Operational Risk     |LOW                |
