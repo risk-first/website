@@ -1,4 +1,4 @@
-![For Review](images/state/for-review.png)
+
 
 Our tour is complete.  
 

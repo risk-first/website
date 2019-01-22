@@ -18,7 +18,7 @@ Means this is probably a placeholder page, and needs fleshing out.  If you have 
 
 Most of the text is correct, but there are likely to be place-holders.   Open issues if there are glaring omissions/inaccuracies.
 
-![For Review](images/state/for-review.png)
+
 
 In this state if:
  - It's written

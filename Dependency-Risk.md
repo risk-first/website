@@ -1,4 +1,4 @@
-![For Review](images/state/for-review.png)
+
 
 [Dependency Risk](Dependency-Risk) is the risk you take on whenever you have a dependency on something (or someone) else.   <!-- tweet-end -->
 

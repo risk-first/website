@@ -1,4 +1,4 @@
-![For Review](images/state/for-review.png)
+
 
 As in [Agency Risk](Agency-Risk), we are going to use the term _agent_, which refers to anything with [agency](Agency-Risk#software-processes) in a system to decide its own fate.  That is, an agent has an [Internal Model](Glossary#Internal-Model),  and can [take actions](Glossary#taking-action) based on it.  Here, we work on the assumption that the agents _are_ working towards a common [Goal](Glossary#Goal-In-Mind), even though in reality it's not always the case, as we saw in the section on [Agency Risk](Agency-Risk).
 
