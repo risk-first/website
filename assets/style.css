@@ -1,22 +1,4 @@
 @font-face {
-	font-family: 'Noto Sans';
-	font-weight: 400;
-	font-style: normal;
-	src: url("../fonts/Noto-Sans-regular/Noto-Sans-regular.eot");
-	src: url("../fonts/Noto-Sans-regular/Noto-Sans-regular.eot?#iefix")
-		format("embedded-opentype"), local("Noto Sans"),
-		local("Noto-Sans-regular"),
-		url("../fonts/Noto-Sans-regular/Noto-Sans-regular.woff2")
-		format("woff2"),
-		url("../fonts/Noto-Sans-regular/Noto-Sans-regular.woff")
-		format("woff"),
-		url("../fonts/Noto-Sans-regular/Noto-Sans-regular.ttf")
-		format("truetype"),
-		url("../fonts/Noto-Sans-regular/Noto-Sans-regular.svg#NotoSans")
-		format("svg")
-}
-
-@font-face {
     font-family: 'geomanistregular';
     src: url('../fonts/geomanist-regular-webfont.eot');
     src: url('../fonts/geomanist-regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -37,60 +19,10 @@
          url('geomanist-bold-webfont.woff') format('woff'),
          url('geomanist-bold-webfont.ttf') format('truetype'),
          url('geomanist-bold-webfont.svg#geomanistregular') format('svg');
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
 
 }
-
-@font-face {
-	font-family: 'Noto Sans';
-	font-weight: 700;
-	font-style: normal;
-	src: url("../fonts/Noto-Sans-700/Noto-Sans-700.eot");
-	src: url("../fonts/Noto-Sans-700/Noto-Sans-700.eot?#iefix")
-		format("embedded-opentype"), local("Noto Sans Bold"),
-		local("Noto-Sans-700"),
-		url("../fonts/Noto-Sans-700/Noto-Sans-700.woff2") format("woff2"),
-		url("../fonts/Noto-Sans-700/Noto-Sans-700.woff") format("woff"),
-		url("../fonts/Noto-Sans-700/Noto-Sans-700.ttf") format("truetype"),
-		url("../fonts/Noto-Sans-700/Noto-Sans-700.svg#NotoSans") format("svg")
-}
-
-@font-face {
-	font-family: 'Noto Sans';
-	font-weight: 400;
-	font-style: italic;
-	src: url("../fonts/Noto-Sans-italic/Noto-Sans-italic.eot");
-	src: url("../fonts/Noto-Sans-italic/Noto-Sans-italic.eot?#iefix")
-		format("embedded-opentype"), local("Noto Sans Italic"),
-		local("Noto-Sans-italic"),
-		url("../fonts/Noto-Sans-italic/Noto-Sans-italic.woff2")
-		format("woff2"),
-		url("../fonts/Noto-Sans-italic/Noto-Sans-italic.woff") format("woff"),
-		url("../fonts/Noto-Sans-italic/Noto-Sans-italic.ttf")
-		format("truetype"),
-		url("../fonts/Noto-Sans-italic/Noto-Sans-italic.svg#NotoSans")
-		format("svg")
-}
-
-@font-face {
-	font-family: 'Noto Sans';
-	font-weight: 700;
-	font-style: italic;
-	src: url("../fonts/Noto-Sans-700italic/Noto-Sans-700italic.eot");
-	src: url("../fonts/Noto-Sans-700italic/Noto-Sans-700italic.eot?#iefix")
-		format("embedded-opentype"), local("Noto Sans Bold Italic"),
-		local("Noto-Sans-700italic"),
-		url("../fonts/Noto-Sans-700italic/Noto-Sans-700italic.woff2")
-		format("woff2"),
-		url("../fonts/Noto-Sans-700italic/Noto-Sans-700italic.woff")
-		format("woff"),
-		url("../fonts/Noto-Sans-700italic/Noto-Sans-700italic.ttf")
-		format("truetype"),
-		url("../fonts/Noto-Sans-700italic/Noto-Sans-700italic.svg#NotoSans")
-		format("svg")
-}
-
 .highlight table td {
 	padding: 5px
 }
@@ -370,47 +302,48 @@
 body {
 	background-color: #fff;
 	padding: 50px;
-	font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial,
-		sans-serif;
-	color: #727272;
-	font-weight: 400
+  font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color:#595959;
+  font-weight:400;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	color: #222;
-	margin: 0 0 20px
+	margin: 0 0 20px;
 }
 
 p, ul, ol, table, pre, dl {
-	margin: 0 0 20px
+	margin: 0 0 20px;
 }
 
 h1, h2, h3 {
-	line-height: 1.1
+	line-height: 1.1;
 }
 
 h1 {
 	font-size: 28px;
-	font-weight: bold;
+	font-weight: 700;
 	font-family: geomanistregular;
 	text-transform: uppercase;
 	color: rgb(245, 62, 121);
 }
 
 h2 {
-	color: #393939
+  color:#393939;
+  font-weight: 500;
 }
 
 h3, h4, h5, h6 {
-	color: #494949
+  color:#494949;
+  font-weight: 500;
 }
 
 a {
-	color: #267CB9;
-	text-decoration: none
+  color:#39c;
+  text-decoration:none;
 }
 
-a:hover, a:focus {
+a:hover {
 	color: #069;
 }
 
@@ -418,16 +351,16 @@ a small {
 	font-size: 11px;
 	color: #777;
 	margin-top: -0.3em;
-	display: block
+	display: block;
 }
 
 a:hover small {
-	color: #777
+	color: #777;
 }
 
 .wrapper {
 	width: 860px;
-	margin: 0 auto
+	margin: 0 auto;
 }
 
 blockquote {
@@ -440,7 +373,7 @@ blockquote {
 code, pre {
 	font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal,
 		Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
-	color: #333
+	color: #333;
 }
 
 pre {
@@ -448,38 +381,38 @@ pre {
 	background: #f8f8f8;
 	border-radius: 5px;
 	border: 1px solid #e5e5e5;
-	overflow-x: auto
+	overflow-x: auto;
 }
 
 table {
 	width: 100%;
-	border-collapse: collapse
+	border-collapse: collapse;
 }
 
 th, td {
 	text-align: left;
 	padding: 5px 10px;
-	border-bottom: 1px solid #e5e5e5
+	border-bottom: 1px solid #e5e5e5;
 }
 
 dt {
 	color: #444;
-	font-weight: 700
+	font-weight: 700;
 }
 
 th {
-	color: #444
+	color: #444;
 }
 
 img {
-	max-width: 100%
+	max-width: 100%;
 }
 
 header {
 	width: 270px;
 	float: left;
 	position: fixed;
-	-webkit-font-smoothing: subpixel-antialiased
+	-webkit-font-smoothing: subpixel-antialiased;
 }
 
 header ul {
@@ -489,139 +422,138 @@ header ul {
 	background: #f4f4f4;
 	border-radius: 5px;
 	border: 1px solid #e0e0e0;
-	width: 270px
+	width: 270px;
 }
 
 header li {
 	width: 89px;
 	float: left;
 	border-right: 1px solid #e0e0e0;
-	height: 40px
+	height: 40px;
 }
 
 header li:first-child a {
-	border-radius: 5px 0 0 5px
+	border-radius: 5px 0 0 5px;
 }
 
 header li:last-child a {
-	border-radius: 0 5px 5px 0
+	border-radius: 0 5px 5px 0;
 }
 
 header ul a {
 	line-height: 1;
 	font-size: 11px;
-	color: #676767;
+  	color:#999;
 	display: block;
 	text-align: center;
 	padding-top: 6px;
-	height: 34px
+	height: 34px;
 }
 
-header ul a:hover, header ul a:focus {
-	color: #675C5C;
-	font-weight: bold
+header ul a:hover {
+  color:#999;
 }
 
 header ul a:active {
-	background-color: #f0f0f0
+	background-color: #f0f0f0;
 }
 
 strong {
 	color: #222;
-	font-weight: 700
+	font-weight: 500;
 }
 
 header ul li+li+li {
 	border-right: none;
-	width: 89px
+	width: 89px;
 }
 
 header ul a strong {
 	font-size: 14px;
 	display: block;
-	color: #222
+	color: #222;
 }
 
 section {
 	width: 500px;
 	float: right;
-	padding-bottom: 50px
+	padding-bottom: 50px;
 }
 
 small {
-	font-size: 11px
+	font-size: 11px;
 }
 
 hr {
 	border: 0;
 	background: #e5e5e5;
 	height: 1px;
-	margin: 0 0 20px
+	margin: 0 0 20px;
 }
 
 footer {
-	width: 100%;
+  	width:270px;
 	float: left;
 	position: fixed;
 	bottom: 0px;
 	background-color: white;
-	padding: 10px;
+	padding-top: 10px;
 	-webkit-font-smoothing: subpixel-antialiased
 }
 
 @media print , screen and (max-width: 960px) {
 	div.wrapper {
 		width: auto;
-		margin: 0
+		margin: 0;
 	}
 	header, section, footer {
 		float: none;
 		position: static;
-		width: auto
+		width: auto;
 	}
 	header {
-		padding-right: 320px
+		padding-right: 320px;
 	}
 	section {
 		border: 1px solid #e5e5e5;
 		border-width: 1px 0;
 		padding: 20px 0;
-		margin: 0 0 20px
+		margin: 0 0 20px;
 	}
 	header a small {
-		display: inline
+		display: inline;
 	}
 	header ul {
 		position: absolute;
 		right: 50px;
-		top: 52px
+		top: 52px;
 	}
 }
 
 @media print , screen and (max-width: 720px) {
 	body {
-		word-wrap: break-word
+		word-wrap: break-word;
 	}
 	header {
-		padding: 0
+		padding: 0;
 	}
 	header ul, header p.view {
-		position: static
+		position: static;
 	}
 	pre, code {
-		word-wrap: normal
+		word-wrap: normal;
 	}
 }
 
 @media print , screen and (max-width: 480px) {
 	body {
-		padding: 15px
+		padding: 15px;
 	}
 	header ul {
-		width: 99%
+		width: 99%;
 	}
 	header li, header ul li+li+li {
-		width: 33%
+		width: 33%;
 	}
 }
 
@@ -629,7 +561,7 @@ footer {
 	body {
 		padding: 0.4in;
 		font-size: 12pt;
-		color: #444
+		color: #444;
 	}
 }
 
