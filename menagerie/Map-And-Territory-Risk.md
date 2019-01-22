@@ -193,6 +193,6 @@ This is a _small example_ from a larger, closely argued book investigating lots 
 
 As usual, this section forms a grab-bag of examples in a complex topic.  But it's time to move on as there is one last stop we have to make on the [Risk Landscape](Glossary#risk-landscape), and that is to look at [Operational Risk](Operational-Risk).  
 
-The Hype Cycle model is available in **Numbers** format [here](https://github.com/risk-first/website/blob/master/RiskMatrix.numbers. 
+The Hype Cycle model is available in **Numbers** format [here](https://github.com/risk-first/website/blob/master/RiskMatrix.numbers). 
 
 Now, on to the last risk in our tour, [Operational Risk](Operational-Risk).
