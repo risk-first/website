@@ -1,4 +1,4 @@
-![For Review](images/state/for-review.png)
+
 
 After so much theory, it seems like it's time to look at how we can apply these principles in the real world.
 

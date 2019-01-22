@@ -1,4 +1,4 @@
-![For Review](images/state/for-review.png)
+
 
 In this section, we will look at how exposing your [Internal Model](Glossary#Internal-Model) to reality is in itself a good risk management technique.
 

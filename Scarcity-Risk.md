@@ -1,4 +1,4 @@
-![For Review](images/state/for-review.png)
+
 
 While [Reliability Risk](Dependency-Risk#reliability-risk) (which we met in the previous section) considers what happens when a _single dependency_ is unreliable, scarcity is about _quantities_ of a dependency, and specifically, _not having enough_.  <!-- tweet-end -->
 

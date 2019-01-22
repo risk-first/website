@@ -1,4 +1,3 @@
-![For Review](images/state/for-review.png)
 
 ## 1.  There are Lots of Ways to Run Software Projects
 

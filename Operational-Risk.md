@@ -1,4 +1,4 @@
-![For Review](images/state/for-review.png)
+
 
 > "The risk of loss resulting from inadequate or failed internal processes, people and systems or from external events." - [Operational Risk, _Wikipedia_](https://en.wikipedia.org/wiki/Operational_risk#Definition)
 

@@ -1,4 +1,4 @@
-![For Review](images/state/for-review.png)
+
 
 In this section, I am going to propose the idea that everything you do on a software project is Risk Management.
 

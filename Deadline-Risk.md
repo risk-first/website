@@ -1,4 +1,4 @@
-![For Review](images/state/for-review.png)
+
 
 Let's examine dependencies on _events_.  
 
