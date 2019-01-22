@@ -353,6 +353,7 @@ h1 {
 	font-family: geomanist;
 	text-transform: uppercase;
 	color: rgb(245, 62, 121);
+	letter-spacing: 3px;
 }
 
 h2 {
@@ -438,7 +439,6 @@ img {
 header {
 	width: 270px;
 	float: left;
-	position: fixed;
 	-webkit-font-smoothing: subpixel-antialiased;
 }
 
@@ -595,4 +595,8 @@ footer {
 .sitedescription,
 .buttons {
 	text-align: center;
+}
+
+.github-fork-ribbon:before {
+	background-color: black;	
 }
