@@ -1,3 +1,5 @@
+# Contributors
+
 Ideas, issues and proof-reading:
 
 - [Gustavo Andrade](https://github.com/gandrade)

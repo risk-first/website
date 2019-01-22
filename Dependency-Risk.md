@@ -1,4 +1,4 @@
-
+# Dependency Risk
 
 [Dependency Risk](Dependency-Risk) is the risk you take on whenever you have a dependency on something (or someone) else.   <!-- tweet-end -->
 
@@ -27,11 +27,11 @@ Although life exists at the bottom of the ocean around [hydrothermal vents](http
 This tells us a lot about [Dependency Risk](Dependency-Risk) right here:
 
  - On the one hand, _depending on something_ is very often helpful, and quite often essential.  (For example, all life seem to depend on water).
- - However, as soon as you have dependencies, you need to take into account of their _reliability_. (Living near a river or stream gives you access to fresh water, for example).
  - Successful organisms _adapt_ to the dependencies available to them (like the thermal vent creatures).
+ - However, as soon as you have dependencies, you need to take into account of their _reliability_. (Living near a river or stream gives you access to fresh water, for example).
+So, dependencies are a trade-off.  They give with one hand and take with the other.  Our modern lives are full of dependency (just think of the chains of dependency needed for putting a packet of biscuits on a supermarket shelf, for example), but we accept this risk because it makes life _easier_. 
  - There is likely to be _competition_ for a dependency when it is scarce (think of droughts and famine).
 
-So, dependencies are a trade-off.  They give with one hand and take with the other.  Our modern lives are full of dependency (just think of the chains of dependency needed for putting a packet of biscuits on a supermarket shelf, for example), but we accept this risk because it makes life _easier_. 
 
 Let's look at four types of risk that apply to every dependency:  Fit, Reliability, Invisibility and Complexity.
 

@@ -1,4 +1,4 @@
-
+# A Simple Scenario
 
 In this section, I'm going to introduce some terms for thinking about risk.
 

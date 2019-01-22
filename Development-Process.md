@@ -1,4 +1,4 @@
-
+# Development Process
 
 In the [previous section](A-Simple-Scenario) we introduced some terms for talking about risk (such as [Attendant Risk](Glossary#attendant-risk), [Hidden Risk](Glossary#attendant-risk) and [Internal Model](Glossary#Internal-model)) via a simple scenario.
 
