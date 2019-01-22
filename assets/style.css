@@ -23,6 +23,20 @@
     font-style: normal;
 
 }
+
+@font-face {
+    font-family: 'geomanistregular';
+    src: url('../fonts/geomanist-medium-webfont.eot');
+    src: url('../fonts/geomanist-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/geomanist-medium-webfont.woff2') format('woff2'),
+         url('../fonts/geomanist-medium-webfont.woff') format('woff'),
+         url('../fonts/geomanist-medium-webfont.ttf') format('truetype'),
+         url('../fonts/geomanist-medium-webfont.svg#geomanistregular') format('svg');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
 .highlight table td {
 	padding: 5px
 }
@@ -321,8 +335,8 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size: 28px;
-	font-weight: 700;
+	font-size: 75px;
+	font-weight: 500;
 	font-family: geomanistregular;
 	text-transform: uppercase;
 	color: rgb(245, 62, 121);
