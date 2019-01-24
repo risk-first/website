@@ -1,4 +1,4 @@
-# All About Risk
+# It's All About Risk
 
 One of the original proponents of the [Agile Manifesto](https://en.wikipedia.org/wiki/Agile_software_development#The_Agile_Manifesto), Kent Beck states in his book:
 
