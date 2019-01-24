@@ -51,7 +51,7 @@ After each stop on the tour, in [Staging and Classifying](Staging-And-Classifyin
 Although we're going to try and categorise the kinds of things we see on this [Risk Landscape](Risk-Landscape), this isn't going to be perfect, because: 
 
  - One risk can "blend" into another just like sometimes a "field" is also a "car-park" or a building might contain some trees (but isn't a forest).
- - As we know from [Part 1](Home#Part-1-Introduction), mitigating one risk probably means accepting another.
+ - As we know from [Part 1](Meeting-Reality), mitigating one risk probably means accepting another.
  - There is _causation_ and _correlation_ between different risks:  one risk may cause another, or two risks might have the same underlying cause.
   
 Risk is messy.  It's not always easy to tease apart the different components of risk and look at them individually.<!-- tweet-end -->  Let's look at a high-profile recent example to see why.
