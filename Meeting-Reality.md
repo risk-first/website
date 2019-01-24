@@ -24,7 +24,7 @@ I would argue that the best way is the one which mitigates the most existing ris
 
 Ideally, when you take an action, you are trading off a big risk for a smaller one.  Take Unit Testing for example.  Clearly, writing Unit Tests adds to the amount of development work, so on its own, it adds [Schedule Risk](Scarcity-Risk#schedule-risk).   However, if you write _just enough_ of the right Unit Tests, you should be short-cutting the time spent finding issues in the User Acceptance Testing (UAT) stage, so you're hopefully trading off a larger [Schedule Risk](Scarcity-Risk#schedule-risk) from UAT and adding a smaller [Schedule Risk](Scarcity-Risk#schedule-risk) to Development.  There are other benefits of Unit Testing too:  once written, a suite of unit tests is almost cost-free to run repeatedly, whereas repeating a UAT is costly as it involves people's time.
 
-You can think of [Taking Action](Glossary#taking-action) as moving your project on a "[Risk Landscape](Risk-Landscape)":  ideally, when you take an action, you move to some place with worse risk to somewhere more favourable.
+You can think of [Taking Action](Glossary#taking-action) as moving your project on a "[Risk Landscape](Risk-Landscape)":  ideally, when you take an action, you move from some place with worse risk to somewhere more favourable.
 
 ![Navigating The Risk Landscape](images/generated/introduction/risk_landscape_1.png)
 
