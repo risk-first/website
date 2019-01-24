@@ -18,17 +18,17 @@ Means this is probably a placeholder page, and needs fleshing out.  If you have 
 
 Most of the text is correct, but there are likely to be place-holders.   Open issues if there are glaring omissions/inaccuracies.
 
-
-
 In this state if:
  - It's written
  - It's proofed on the wiki
  - It's proofed in the PDF
  - All images are present
  
-Get involved!  Please help by reviewing the page and letting us know what you think!
+![For Review](images/state/for-review.png)
+ 
+Get involved!  Please help by reviewing the page and letting us know what you think!  
 
-![Reviewed](images/state/reviewed.png)
+If there is no status banner, the page is published:
 
 - Has been reviewed by 3rd party for grammatical or spelling errors
 - Has been up for public readership for some time
