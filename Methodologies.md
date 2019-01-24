@@ -23,7 +23,7 @@ _themselves_ in terms of how their practices mitigate risk, and change the balan
 
 With that in mind, we are going to examine several methodologies, and break them down into their key _practices_.  For each practice, we will look at which [Attendant Risks](Glossary#attendant-risk) it mitigates, and what [Attendant Risks](Glossary#attendant-risk) it incurs.
 
-!Show similarity between pattern and practice
+Show similarity between pattern and practice
 
 
 
