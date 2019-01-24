@@ -17,7 +17,7 @@ The **Risk-First** perspective is that all of these practices and methodologies 
 
 **Risk-First** makes the case that better understanding the nature of these risks is critical to building software in the complex, interconnected domain we work in.  
 
-[Continue Reading Here](https://github.com/risk-first/website/wiki)
+[Continue Reading Here](https://riskfirst.org)
 
 ## About _The Menagerie_
 
@@ -25,7 +25,7 @@ This book is volume one of the **Risk-First** series, introducing the  case for 
 
 The book aims to develop a _Pattern Language_ for understanding software risk, and develop a practical framework for discussing how the activities we take on a project change the balance of the risks we are exposed to.
 
-![Cover Image](images/Cover_Book_image.jpg)
+![Cover Image](https://riskfirst.org/images/Cover_Book_image.jpg)
 
 - [Pre-Order Kindle Edition on Amazon](http://a.co/d/hmpmYl2)
 - Print Edition available 21st Feb 2019
