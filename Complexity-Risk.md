@@ -177,7 +177,7 @@ You could stop here and say that the more lines of code a project contains, the 
 
 But there is actually some underlying sense in which this is true in the real, physical world too, as discussed in this [Veritasium](https://www.youtube.com/user/1veritasium) video.  To paraphrase:
 
-> "Most of your mass you owe due to <!--replace $E=mc^2$ -->E=mc²<!--endreplace -->, you owe to the fact that your mass is packed with energy, because of the **interactions** between these quarks and gluon fluctuations in the gluon field... what we think of as ordinarily empty space... that turns out to be the thing that gives us most of our mass." - [Your Mass is NOT From the Higgs Boson, _Veritasium_](https://www.youtube.com/watch?annotation_id=annotation_3771848421&feature=iv&src_vid=Xo232kyTsO0&v=Ztc6QPNUqls)
+> "Most of your mass you owe due to <!--replace $E=mc^2$ -->E=mc²<!--endreplace -->, you owe to the fact that your mass is packed with energy because of the **interactions** between these quarks and gluon fluctuations in the gluon field... what we think of as ordinarily empty space... that turns out to be the thing that gives us most of our mass." - [Your Mass is NOT From the Higgs Boson, _Veritasium_](https://www.youtube.com/watch?annotation_id=annotation_3771848421&feature=iv&src_vid=Xo232kyTsO0&v=Ztc6QPNUqls)
 
 I'm not an expert in physics, _at all_, and so there is every chance that I am pushing this analogy too hard.  But, substituting quarks and gluons for pieces of software we can (in a very handwaving-y way) say that more connected software has more **interactions** going on, and therefore has more mass than simple software. 
 
@@ -309,7 +309,7 @@ In the case of security considerations, exploits _thrive_ on the complexity of y
 
 Luckily, most good languages include cryptographic libraries that you can include to mitigate these [Complexity Risks](Complexity-Risk) from your own code-base.  
 
-This is a strong argument for the use of libraries.  But, when should you use a library and when should you implement yourself?  This is again covered in the section on [Software Dependency Risk](Software-Dependency-Risk).  
+This is a strong argument for the use of libraries.  But, when should you use a library and when should you code-your-own?  This is again covered in the section on [Software Dependency Risk](Software-Dependency-Risk).  
 
 ### The Environment
 

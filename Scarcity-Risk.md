@@ -8,22 +8,6 @@ Any resource (such as disk space, oxygen, concert tickets, time or pizza) that y
 
 ![Scarcity Risk and its variations](images/generated/risks/scarcity/scarcity-risks.png)
 
-Here are a selection of mitigations:
-
- - **Buffers**: smoothing out peaks and troughs in utilisation.
- - **Reservation Systems**: giving clients information _ahead_ of the dependency usage about whether the resource will be available to them.
- - **Graceful degradation**: ensuring _some_ service in the event of over-subscription.  It would be no use allowing people to cram onto the bus until it can't move.
- - **Demand Management**:  having different prices during busy periods helps to reduce demand.  Having "first class" seats means that higher-paying clients can get service even when the train is full.  [Uber](https://www.uber.com) adjust prices in real-time by so-called [Surge Pricing](https://www.uber.com/en-GB/drive/partner-app/how-surge-works/).  This is basically turning [Scarcity Risk](Scarcity-Risk) into a [Market Risk](Feature-Risk#market-risk) problem.
- - **Queues**: these provide a "fair" way of dealing with scarcity by exposing some mechanism for prioritising use of the resource.  Buses operate a first-come-first-served system, whereas emergency departments in hospitals triage according to need.
- - **Pools**: reserving parts of a resource for a group of customers, and sharing within that group.
- - **Horizontal Scaling**: allowing a scarce resource to flexibly scale according to how much demand there is.   (For example, putting on extra buses when the trains are on strike, or opening extra check-outs at the supermarket.)
- 
-Much like [Reliability Risk](Dependency-Risk#Reliability-risk), there is science for it:
-
- - **[Queue Theory](https://en.wikipedia.org/wiki/Queueing_theory)** is all about building mathematical models of buffers, queues, pools and so forth.
- - **[Logistics](https://en.wikipedia.org/wiki/Logistics)** is the practical organisation of the flows of materials and goods around things like [Supply Chains](https://en.wikipedia.org/wiki/Supply_chain),
- - and **[Project Management](https://en.wikipedia.org/wiki/Project_management)** is in large part about ensuring the right resources are available at the right times.  We'll be taking a closer look at that in Risk-First Part 3 sections on Prioritisation and the [Project Management Body Of Knowledge](https://en.wikipedia.org/wiki/Project_Management_Body_of_Knowledge).
-
 
 ## Funding Risk
 
@@ -39,7 +23,7 @@ Startups often spend a lot of time courting investors in order to get funding an
 
 ## Staff Risk
 
-Since the workforce is a scarce resource, it stands to reason that if a startup has a "Runway", then the chances are that the founders and staff do too<!-- tweet-end -->, as this article [explores](https://www.entrepreneur.com/article/223135).  It identifies the following risks:
+Since the workforce is a scarce resource, it stands to reason that if a startup has a "Runway", then the chances are that the founders and staff do too<!-- tweet-end -->, as [this article by Entrepreneur.com explores](https://www.entrepreneur.com/article/223135).  It identifies the following risks:
 
   - **Company Cash**:  the **Runway** of the startup itself
   - **Founder Cash**:  the **Runway** for a founder, before they run out of money and can't afford their rent.
@@ -112,8 +96,27 @@ The problem with software projects is that tools and techniques change _really f
 
 Now, they didn't _deliberately_ take 15 years to build this game (lots of things went wrong).  But, the longer it took, the more their existing design and code-base were a liability rather than an asset. 
 
-Personally, I have suffered the pain on project teams where we've had to cope with legacy code and databases because the cost of changing them was too high.  And any team who is stuck using [Visual Basic 6.0](https://en.wikipedia.org/wiki/Visual_Basic) is here.   It's possible to ignore [Red Queen Risk](Scarcity-Risk#red-queen-risk) for a time, but this is just another form of [Technical Debt](Complexity-Risk) which eventually comes due.
-
 ![Red Queen Risk](images/generated/risks/scarcity/red-queen-risk.png)
+
+Personally, I have suffered the pain on project teams where we've had to cope with legacy code and databases because the cost of changing them was too high.  This is shown in the above diagram:  mitigating [Red Queen Risk](#red-queen-risk) by _keeping up-to-date_ has the [Attendant Risk](Glossary#attendant-risk) of costing time and money, which might not seem worth it.  Any team who is stuck using [Visual Basic 6.0](https://en.wikipedia.org/wiki/Visual_Basic) is here.   It's possible to ignore [Red Queen Risk](Scarcity-Risk#red-queen-risk) for a time, but this is just another form of [Technical Debt](Complexity-Risk) which eventually comes due.  
+
+
+## Mitigations
+
+Here are a selection of mitigations for [Scarcity Risk](Scarcity-Risk) in general:
+
+ - **Buffers**: smoothing out peaks and troughs in utilisation.
+ - **Reservation Systems**: giving clients information _ahead_ of the dependency usage about whether the resource will be available to them.
+ - **Graceful degradation**: ensuring _some_ service in the event of over-subscription.  It would be no use allowing people to cram onto the bus until it can't move.
+ - **Demand Management**:  having different prices during busy periods helps to reduce demand.  Having "first class" seats means that higher-paying clients can get service even when the train is full.  [Uber](https://www.uber.com) adjust prices in real-time by so-called [Surge Pricing](https://www.uber.com/en-GB/drive/partner-app/how-surge-works/).  This is basically turning [Scarcity Risk](Scarcity-Risk) into a [Market Risk](Feature-Risk#market-risk) problem.
+ - **Queues**: these provide a "fair" way of dealing with scarcity by exposing some mechanism for prioritising use of the resource.  Buses operate a first-come-first-served system, whereas emergency departments in hospitals triage according to need.
+ - **Pools**: reserving parts of a resource for a group of customers, and sharing within that group.
+ - **Horizontal Scaling**: allowing a scarce resource to flexibly scale according to how much demand there is.   (For example, putting on extra buses when the trains are on strike, or opening extra check-outs at the supermarket.)
+ 
+Much like [Reliability Risk](Dependency-Risk#Reliability-risk), there is science for it:
+
+ - **[Queue Theory](https://en.wikipedia.org/wiki/Queueing_theory)** is all about building mathematical models of buffers, queues, pools and so forth.
+ - **[Logistics](https://en.wikipedia.org/wiki/Logistics)** is the practical organisation of the flows of materials and goods around things like [Supply Chains](https://en.wikipedia.org/wiki/Supply_chain),
+ - and **[Project Management](https://en.wikipedia.org/wiki/Project_management)** is in large part about ensuring the right resources are available at the right times.  We'll be taking a closer look at that in Risk-First Part 3 sections on Prioritisation and the [Project Management Body Of Knowledge](https://en.wikipedia.org/wiki/Project_Management_Body_of_Knowledge).
 
 In this section, we've looked at various risks to do with scarcity of time, as a quantity we can spend like money.  But frequently, we have a dependency on a specific _event_.  On to [Deadline Risk](Deadline-Risk).

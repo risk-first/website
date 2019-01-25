@@ -38,7 +38,13 @@ action.left {
 }
 
 artifact, 
-users {
+users,
+interface,
+component,
+channel-artifact,
+internal-model-artifact,
+protocol-artifact,
+agent-artifact {
 	kite9-type: container;
 	kite9-margin: 10pt;
 	kite9-link-inset: 10pt;
@@ -51,14 +57,39 @@ users {
 	kite9-min-size: 110pt 140pt;	
 }
 
+agent-artifact {
+	kite9-template: url(template.svg#agent-artifact);
+}
+
 users {
 	kite9-template: url(template.svg#users);
+}
+
+interface {
+	kite9-template: url(template.svg#interface);
+}
+
+internal-model-artifact {
+	kite9-template: url(template.svg#internal-model-artifact);
+}
+
+channel-artifact {
+	kite9-template: url(template.svg#channel-artifact);
+}
+
+component {
+	kite9-template: url(template.svg#component);
+}
+
+protocol-artifact {
+	kite9-template: url(template.svg#protocol-artifact);
 }
 
 mitigated {
 	kite9-type: container;
 	kite9-template: url(template.svg#mitigated);
 }
+
 
 hidden {
 	kite9-type: container;
@@ -121,40 +152,12 @@ risk.agency {
 	kite9-template: url(template.svg#agency);
 }
 
-risk.morale {
-	kite9-template: url(template.svg#morale);
-}
-
 risk.channel {
 	kite9-template: url(template.svg#channel);
 }
 
 risk.protocol {
 	kite9-template: url(template.svg#protocol);
-}
-
-risk.protocol-incompatibility {
-	kite9-template: url(template.svg#protocol-incompatibility);
-}
-
-risk.protocol-implementation {
-	kite9-template: url(template.svg#protocol-implementation);
-}
-
-risk.protocol-versioning {
-	kite9-template: url(template.svg#protocol-versioning);
-}
-
-risk.model-assumption {
-	kite9-template: url(template.svg#model-assumption);
-}
-
-risk.message-dependency {
-	kite9-template: url(template.svg#message-dependency);
-}
-
-risk.misinterpretation {
-	kite9-template: url(template.svg#misinterpretation);
 }
 
 risk.trust {
@@ -215,18 +218,6 @@ risk.dead-end {
 
 risk.abstraction {
 	kite9-template: url(template.svg#abstraction);
-}
-
-risk.channel-capacity {
-	kite9-template: url(template.svg#channel-capacity);
-}
-
-risk.channel-fit {
-	kite9-template: url(template.svg#channel-fit);
-}
-
-risk.noise {
-	kite9-template: url(template.svg#noise);
 }
 
 risk.reliability {
@@ -293,7 +284,7 @@ risk.security {
 	kite9-template: url(template.svg#security);
 }
 
-risk.methdology {
+risk.methodology {
 	kite9-template: url(template.svg#methodology);
 }
 
@@ -440,6 +431,16 @@ glyph {
 	kite9-margin: 10pt;
 	kite9-connection-align: 50%;
 	kite9-min-height: 30pt;
+	kite9-sizing: minimize;
+}
+
+glyph.rect {
+	kite9-template: url(template.svg#glyph-rect);
+}
+
+glyph.circle {
+	kite9-template: url(template.svg#glyph-circle);
+	kite9-min-size: 20pt 20pt;
 }
 
 diagram glyph label {
@@ -448,7 +449,7 @@ diagram glyph label {
 	kite9-template: url(template.svg#glyph-label-text);
 	kite9-vertical-align: center;
 	kite9-margin: 5pt;
-	kite9-min-width: 600pt; 
+	kite9-min-width: 60pt; 
 	
 }
 
@@ -480,12 +481,26 @@ link {
 	fill: none;
 }
 
+.grey-link {
+	stroke: #666666;
+	stroke-width: 1pt;
+	fill: none;
+}
+
 link.invisible {
 	kite9-template: url(template.svg#invisible-link);
 }
 
 link.dotted {
 	kite9-template: url(template.svg#dotted-link);
+}
+
+link.thick {
+	kite9-template: url(template.svg#thick-link);
+}
+
+link.grey {
+	kite9-template: url(template.svg#grey-link);
 }
 
 from,
@@ -530,6 +545,10 @@ context {
 	kite9-link-inset: 12pt;
 }
 
+context.dotted {
+	kite9-template: url(template.svg#context-dotted);
+}
+
 group {
 	kite9-type: container;
 	kite9-sizing: maximize;
@@ -540,6 +559,13 @@ group {
 	fill: none;
 	stroke: black;
 	stroke-width: 1pt;
+}
+
+.context-dotted {
+	fill: none;
+	stroke: black;
+	stroke-width: 1pt;
+	stroke-dasharray: 4 4;	
 }
 
 context > label,
@@ -605,7 +631,7 @@ glyph stereotype {
 
 .glyph-stereotype-text {
 	font-family: "gothic-bold";
-	font-size: 12pt;
+	font-size: 10pt;
 	fill: black;
 	stroke: none;
 	kite9-padding: 2pt; 
@@ -649,10 +675,15 @@ celltext {
 	kite9-padding: 10pt;
 	kite9-vertical-align: center;
 	kite9-horizontal-align: left;
+	kite9-sizing: minimize;
 	font-size: 40pt;
 	fill: black;
 	font-family: "gothic";
 	stroke: none;
+}
+
+celltext text-label {
+	kite9-horizontal-align: left;
 }
 
 bulleted {
@@ -703,12 +734,14 @@ cell.shaded-tab {
 }
 
 
-celltext.center {
+celltext.center, 
+celltext.center text-label {
 	kite9-horizontal-align: center;
 }
 
 celltext.bold {
 	font-family: "gothic-bold";
+	font-size: 36pt;
 }
 
 tick {
@@ -798,4 +831,15 @@ keydesc {
 	font-family: "gothic";
 	kite9-padding: 10pt;
 }
+
+toLabel, 
+fromLabel {
+	kite9-usage: label;
+	kite9-type: container; 
+	kite9-padding: 4px; 
+	kite9-sizing: minimize;
+	kite9-template: url(template.svg#connection-label);
+	kite9-margin: 4px;	
+}
+
 

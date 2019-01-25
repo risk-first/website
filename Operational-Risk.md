@@ -142,5 +142,5 @@ The "should we ship?" decision is therefore a complex one.  In [Meeting Reality]
 
 In a way, [actions](Glossary#taking-action) like **Design** and **Improvement** bring us right back to where we started from: identifying [Dependency Risks](Dependency-Risk), [Feature Risks](Feature-Risk) and [Complexity Risks](Complexity-Risk) that hinder our operation, and mitigating them through actions like _software development_.  
 
-Our safari of risk is finally complete, it's time to look back and what we've seen in [Staging and Classifying](Staging-and-Classifying).  
+Our safari of risk is finally complete. It's time to reflect on what we've seen in the next section, [Staging and Classifying](Staging-and-Classifying).  
  
