@@ -5,9 +5,14 @@
   </svg:defs>
   <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-113" name="Goal In Mind" style="kite9-min-width: 800pt;">
 
-    <group style="kite9-layout: down;"> 
+    <group style="kite9-layout: down;">
       <context>
         <risk class="complexity" />
+
+        <label id="id_16">
+          <text>Internal Model</text>
+          <symbols />
+        </label>
       </context>
 
       <users id="c">C</users>
@@ -16,10 +21,12 @@
 
     <artifact id="a">A</artifact>
 
-  
+
     <link drawDirection="RIGHT">
       <from reference="c" />
-      <fromLabel><text>Uses</text></fromLabel>
+      <fromLabel>
+        <text>Uses</text>
+      </fromLabel>
       <to reference="a" class="arrow" />
     </link>
   </diagram>

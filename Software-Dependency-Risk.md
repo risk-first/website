@@ -48,12 +48,10 @@ function out() {                           (7 symbols)
 .. and re-encode to **14** symbols.  Now, clearly there are some problems with all this:
 
 1.  **Language Matters**:  the Kolmogorov complexity is dependent on the language, and the features the language has built in. <!-- tweet-end --> 
-2.  **Exact Kolmogorov complexity is uncomputable anyway:**  Since it's the _theoretical_ minimum program length, it's a fairly abstract idea, so we shouldn't get too hung up on this.  There is no function to be able to say, "what's the Kolmogorov complexity of string X"
-3.  **What is this new library function we've created?**   Is `abcdRepeater` going to be part of _every_ Javascript?  If so, then we've shifted [Codebase Risk](Complexity-Risk) away from ourselves, but we've pushed [Communication Risk](Communication-Risk) and [Dependency Risk](Dependency-Risk) onto every _other_ user of Javascript. (Why these?  Because `abcdRepeater` will be clogging up the documentation and other people will rely on it to function correctly.)
+2.  **Exact Kolmogorov complexity is uncomputable anyway:**  Since it's the _theoretical_ minimum program length, it's a fairly abstract idea, so we shouldn't get too hung up on this.  There is no function to be able to say, "What's the Kolmogorov complexity of string X?"
+3.  **What is this new library function we've created?**   Is `abcdRepeater` going to be part of _every_ Javascript?  If so, then we've shifted [Codebase Risk](Complexity-Risk) away from ourselves, but we've pushed [Communication Risk](Communication-Risk) and [Dependency Risk](Dependency-Risk) onto every _other_ user of Javascript. (Why these?  Because `abcdRepeater` will be clogging up the JavaScript documentation for everyone, and other people will rely on it to function correctly.)
 4.  **Are there equivalent functions for every single other string?**  If so, then compilation is no longer a tractable problem because now we have a massive library of different `XXXRepeater` functions to compile against to see if it is...  So, what we _lose_ in [Codebase Risk](Complexity-Risk#codebase-risk) we gain in [Dependency Risk](Complexity-Risk#space-and-time-complexity).
 5.  **Language design, then, is about _ergonomics_:** <!-- tweet-end --> After you have passed the relatively low bar of providing [Turing Completeness](https://en.wikipedia.org/wiki/Turing_completeness), the key is to provide _useful_ features that enable problems to be solved, without over-burdening the user with features they _don't_ need.  And in fact, all software is about this.
-
-![Software Dependency Ergonomics:  finding the sweet spot between too many features and too few](images/generated/risks/software-dependency/ergonomics.png)
 
 ## Ergonomics Examined
 
@@ -65,7 +63,9 @@ But outside, the form is simple, and designed for humans to use.   This is _[erg
 
 ### Protocols and Ergonomics
 
-The _interface_ of a tool is the part we touch and interact with, via its protocol.  By striving for an ergonomic sweet spot, the protocol reduces [Communication Risk](Communication-Risk).  <!-- tweet-end -->
+![Software Dependency Ergonomics:  finding the sweet spot between too many features and too few](images/generated/risks/software-dependency/ergonomics.png)
+
+The _interface_ of a tool is the part we touch and interact with, via its protocol.  By striving for an ergonomic sweet spot, the protocol reduces [Communication Risk](Communication-Risk).  <!-- tweet-end -->  You can see this trade-off in the diagram above.
 
 The interface of a system expands when you ask it to do a wide variety of things. <!-- tweet-end -->  An easy-to-use drill does one thing well: it turns drill-bits at useful levels of torque for drilling holes and sinking screws.  But if you wanted it to also operate as a lathe, a sander or a strimmer (all basically mechanical things going round) you would have to sacrifice the conceptual integrity for a more complex protocol, probably including adapters, extensions, handles and so on.
 
@@ -98,7 +98,7 @@ All 3 approaches involve a different risk-profile.  Let's look at each in turn, 
  
 ### 1. Code Your Own
 
-Way before the Internet, this was the only game in town.  Tool support was very thin-on-the-ground.  Algorithms could be distributed as code snippets _in magazines_ which could be transcribed and run, and added to your program.  This spirit lives on somewhat in StackOverflow and JSFiddle, where you are expected to "adopt" others' code into your own project. Code-your-own is still the best option if you have highly bespoke requirements, or are dealing with unusual environmental contexts.
+Way before the Internet, this was the only game in town.  Tool support was very thin-on-the-ground.  Algorithms could be distributed as code snippets _in books and magazines_ which could be transcribed and run, and added to your program.  This spirit lives on somewhat in StackOverflow and JSFiddle, where you are expected to "adopt" others' code into your own project. Code-your-own is still the best option if you have highly bespoke requirements, or are dealing with unusual environmental contexts.
 
 One of the hidden risks of embarking on a code-your-own approach is that the features you need are _not_ apparent from the outset.  What might appear to be a trivial implementation of some piece of functionality can often turn into its own industry as more and more hidden [Feature Risk](Feature-Risk) is uncovered.  For example, as we discussed in our earlier treatment of [Dead-End Risk](Complexity-Risk#dead-end-risk), building log-in screens _seemed like a good idea_.  However, this gets out-of-hand fast when you need:
 
@@ -184,7 +184,7 @@ One thing that none of the sources in the table consider (at least from the outs
  - Do you already have a dependency providing this functionality?  So many times, I've worked on projects that import a _new_ dependency when some existing (perhaps transitive) dependency has _already brought in the functionality_.  For example, there are plenty of libraries for [JSON](https://en.wikipedia.org/wiki/JSON) marshaling, but if I'm also using a web framework the chances are it already has a dependency on one already.
  - Does it contain lots of functionality that isn’t relevant to the task you want it to accomplish?  e.g. Using Java when a shell script would do (on a non-Java project)
  
-Sometimes, the amount of complexity _goes up_ when you use a dependency for _good reason_.  <!-- tweet-end --> For example, in Java, you can use [Java Database Connectivity (JDBC)](https://en.wikipedia.org/wiki/Java_Database_Connectivity) to interface with various types of database.  [Spring Framework](https://en.wikipedia.org/wiki/Spring_Framework) (a popular Java library) provides a thing called a `JDBCTemplate`.  This actually makes your code _more_ complex, and can prove very difficult to debug.  However, it prevents some security issues, handles resource disposal and makes database access more efficient.  None of those are essential to interfacing with the database, but not using them is [Technical Debt](Complexity-Risk#technical-debt) that can bite you later on.   
+Sometimes, the amount of complexity _goes up_ when you use a dependency for _good reason_.  <!-- tweet-end --> For example, in Java, you can use [Java Database Connectivity (JDBC)](https://en.wikipedia.org/wiki/Java_Database_Connectivity) to interface with various types of database.  [Spring Framework](https://en.wikipedia.org/wiki/Spring_Framework) (a popular Java library) provides a thing called a `JDBCTemplate`.  This actually makes your code _more_ complex, and can prove very difficult to debug.  However, it prevents some security issues, handles resource disposal and makes database access more efficient.  None of those are essential to interfacing with the database, but not having them is [Operational Risk](Operational-Risk) that can bite you later on.   
  
 To give an extreme example of this, I once worked on an application which used [Hazlecast](https://en.wikipedia.org/wiki/Hazelcast), an in-memory distributed database, to cache log-in session tokens for a 3rd party data-source.  But, the app is only used once every month, and session IDs can be obtained in milliseconds.   So... why cache them?  Although Hazlecast is an excellent choice for in-memory caching across multiple JVMs, it is a complex piece of software (after all, it does lots of stuff).  Using it introduced extra dependency risk, cache invalidation risks, networking risks, synchronisation risks and so on, for actually no benefit at all...  Unless, it’s about CV Building. (See [Agency Risk](Agency-Risk#CV-building).)  
 

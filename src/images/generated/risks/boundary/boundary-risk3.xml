@@ -6,16 +6,28 @@
   <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-113" name="Goal In Mind" style="kite9-min-width: 900pt;">
 
     <context id="c" bordered="true" style="kite9-layout: right;">
-      <risk id="bd" class="boundary" />
+      <mitigated>
+        <risk id="bd" class="boundary" />
+      </mitigated>
+      <label id="id_16">
+        <text>Internal Model</text>
+        <symbols />
+      </label>
     </context>
 
-    <action><label>Ecosystem Bridges</label></action>
-    
+    <action>
+      <label>Ecosystem Bridges</label>
+    </action>
+
     <context id="c" bordered="true" style="kite9-layout: right;">
       <risk class="complexity" />
       <risk class="schedule" />
       <risk class="invisibility" />
+      <label id="id_16">
+        <text>Attendant Risks</text>
+        <symbols />
+      </label>
     </context>
-  
+
   </diagram>
 </svg:svg>

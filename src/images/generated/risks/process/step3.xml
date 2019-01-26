@@ -16,11 +16,16 @@
         <hidden>
           <risk class="complexity" />
         </hidden>
+
+        <label id="id_16">
+          <text>Internal Model</text>
+          <symbols />
+        </label>
       </context>
 
       <users id="c">C</users>
     </group>
-    
+
     <group style="kite9-layout: down;">
       <protocol-artifact id="p">P</protocol-artifact>
     </group>
@@ -30,6 +35,11 @@
         <mitigated>
           <risk class="complexity" />
         </mitigated>
+
+        <label id="id_16">
+          <text>Internal Model</text>
+          <symbols />
+        </label>
       </context>
 
       <users id="b">B</users>
@@ -45,7 +55,7 @@
       </fromLabel>
       <to reference="p" class="arrow" />
     </link>
-    
+
     <link drawDirection="LEFT">
       <from reference="b" />
       <fromLabel>

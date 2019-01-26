@@ -7,15 +7,26 @@
 
     <context id="c" bordered="true">
       <group style="kite9-layout: right">
-        <risk id="1" class="boundary" />
-        <risk id="2" class="protocol" />
-        <risk id="3" class="feature" />
+        <mitigated>
+          <risk id="1" class="boundary" />
+        </mitigated>
+        <mitigated>
+          <risk id="2" class="protocol" />
+        </mitigated>
+        <mitigated>
+          <risk id="3" class="feature" />
+        </mitigated>
       </group>
+      <label id="id_16">
+        <text>Internal Model</text>
+        <symbols />
+      </label>
     </context>
 
     <group style="kite9-layout: down; kite9-horizontal-align: left;">
-      <action>Extension 
-      (with backward compatibility)</action>
+      <action>Extension
+        (with backward compatibility)
+      </action>
     </group>
 
     <context id="d">
@@ -23,12 +34,17 @@
       <risk class="complexity" />
       <risk id="c1" class="conceptual-integrity" />
       <risk id="c2" class="learning-curve" />
+
+      <label id="id_16">
+        <text>Attendant Risks</text>
+        <symbols />
+      </label>
     </context>
 
-  <link>
-    <from reference="c1" />
-    <to reference="c2" class="arrow"/>
-  </link>
+    <link>
+      <from reference="c1" />
+      <to reference="c2" class="arrow" />
+    </link>
 
 
   </diagram>

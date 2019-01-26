@@ -3,36 +3,36 @@
   <svg:defs>
     <svg:style type="text/css"> @import url("risk.css");</svg:style>
   </svg:defs>
-  <diagram xmlns="http://www.kite9.org/schema/adl"  id="diagram-113" name="Goal In Mind" style="kite9-min-width: 800pt;">
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-113" name="Goal In Mind" style="kite9-min-width: 800pt;">
 
-  <context id="c" bordered="true" style="kite9-layout: down; ">
+    <context id="c" bordered="true" style="kite9-layout: down; ">
+      <mitigated>
+        <risk class="regression" />
+      </mitigated>
+      <description>Risk that the functionality you provide changes for the worse, over time.</description>
 
-    <risk class="regression" />
+      <label id="id_16">
+        <text>Internal Model</text>
+        <symbols />
+      </label>
+    </context>
 
-    <description>Risk that the functionality you provide changes for the worse, over time.</description>
+    <group style="kite9-layout: down; kite9-horizontal-align: left;">
+      <action style="kite9-horizontal-align: left;">Testing</action>
+      <action style="kite9-horizontal-align: left;">Specification</action>
+    </group>
 
-    <label  id="id_16">
-      <text>Internal Model</text>
-      <symbols />
-    </label>
-  </context>
 
-  <group style="kite9-layout: down; kite9-horizontal-align: left;">
-    <action>Testing</action>
-    <action>Specification</action>
-  </group>
-  
-  
-  <context id="d">
-  
-    <risk class="schedule" />  
-    <risk class="complexity" />  
-  
-    <label  id="id_16">
-      <text>Attendant Risks</text>
-      <symbols />
-    </label>
-  </context>
+    <context id="d">
+
+      <risk class="schedule" />
+      <risk class="complexity" />
+
+      <label id="id_16">
+        <text>Attendant Risks</text>
+        <symbols />
+      </label>
+    </context>
 
 
   </diagram>
