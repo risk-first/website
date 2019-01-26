@@ -1,4 +1,4 @@
-![Welcome to Risk First](https://riskfirst.org/images/risk_first_pink.png)
+![Welcome to Risk-First](https://riskfirst.org/images/risk_first_pink.png)
 
 The software development world is crowded with different practices, metrics, methodologies, tools and techniques.  
 
