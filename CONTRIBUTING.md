@@ -10,11 +10,11 @@ The basic route to feedback is simply to [Open An Issue](https://github.com/risk
 
 At the top of each page, there's an image in to show what kind state the page is in.  
 
-![Under Construction](images/state/uc.png)
+![Under Construction](https://riskfirst.org/images/state/uc.png)
 
 Means this is probably a placeholder page, and needs fleshing out.  If you have ideas, please submit them in an issue|
 
-![Draft](images/state/draft.png)
+![Draft](https://riskfirst.org/images/state/draft.png)
 
 Most of the text is correct, but there are likely to be place-holders.   Open issues if there are glaring omissions/inaccuracies.
 
@@ -24,7 +24,7 @@ In this state if:
  - It's proofed in the PDF
  - All images are present
  
-![For Review](images/state/for-review.png)
+![For Review](https://riskfirst.org/images/state/for-review.png)
  
 Get involved!  Please help by reviewing the page and letting us know what you think!  
 
