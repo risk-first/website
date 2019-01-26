@@ -6,9 +6,10 @@
   <diagram xmlns="http://www.kite9.org/schema/adl"  id="diagram-113" name="Goal In Mind" style="kite9-min-width: 800pt;">
 
   <context id="c" bordered="true" style="kite9-layout: down; ">
-
-    <risk class="feature-drift" />
-
+    <mitigated>
+      <risk class="feature-drift" />
+    </mitigated>
+    
     <description>Risk that the features required by clients will change and evolve over time. </description>
 
     <label  id="id_16">
@@ -17,10 +18,10 @@
     </label>
   </context>
 
-  <group style="kite9-layout: down; kite9-horizontal-align: left;">
-    <action>Development</action>
-    <action>Design</action>
-    <action>Disruptive Innovation</action>
+  <group style="kite9-layout: down; ">
+    <action style="kite9-horizontal-align: left;">Development</action>
+    <action style="kite9-horizontal-align: left;">Design</action>
+    <action style="kite9-horizontal-align: left;">Disruptive Innovation</action>
   </group>
   
   

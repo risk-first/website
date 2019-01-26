@@ -6,9 +6,10 @@
   <diagram xmlns="http://www.kite9.org/schema/adl"  id="diagram-113" name="Goal In Mind" style="kite9-min-width: 800pt;">
 
   <context id="c" bordered="true" style="kite9-layout: down; ">
-
-    <risk class="feature-access" />
-
+    <mitigated>
+      <risk class="feature-access" />
+    </mitigated>
+    
     <description>Risks due to some clients not having access to some or all of the features in your product.</description>
 
     <label  id="id_16">
@@ -17,10 +18,10 @@
     </label>
   </context>
 
-  <group style="kite9-layout: down; kite9-horizontal-align: left;">
-    <action>Requirements Capture</action>
-    <action>Market Segmentation</action>
-    <action>Development</action>
+  <group style="kite9-layout: down; ">
+    <action style="kite9-horizontal-align: left;">Requirements Capture</action>
+    <action style="kite9-horizontal-align: left;">Market Segmentation</action>
+    <action style="kite9-horizontal-align: left;">Development</action>
   </group>
   
   <context id="d">

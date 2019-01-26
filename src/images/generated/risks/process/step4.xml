@@ -13,19 +13,29 @@
         <mitigated>
           <risk class="invisibility" />
         </mitigated>
+
+        <label id="id_16">
+          <text>Internal Model</text>
+          <symbols />
+        </label>
       </context>
 
       <users id="c">C</users>
     </group>
-    
+
     <group style="kite9-layout: down;">
       <context>
         <risk class="complexity" />
+
+        <label id="id_16">
+          <text>Internal Model</text>
+          <symbols />
+        </label>
       </context>
 
       <users id="d">D</users>
     </group>
-    
+
     <group style="kite9-layout: down;">
       <protocol-artifact id="p">P</protocol-artifact>
     </group>
@@ -44,7 +54,7 @@
       </fromLabel>
       <to reference="d" class="arrow" />
     </link>
-    
+
     <link drawDirection="RIGHT">
       <from reference="d" />
       <fromLabel>
@@ -52,7 +62,7 @@
       </fromLabel>
       <to reference="p" class="arrow" />
     </link>
-    
+
     <link drawDirection="LEFT">
       <from reference="b" />
       <to reference="p" class="arrow" />

@@ -71,7 +71,7 @@ As a successful author, Douglas Adams _didn't really care_ about the deadlines h
  - [Schedule Risk](Scarcity-Risk#schedule-risk) is _continuous_, like money.  i.e. You want to waste as little of it as possible.  Every extra day you take compounds [Schedule Risk](Scarcity-Risk#schedule-risk) additively, and a day wasted at the start of the project is much the same as a day wasted at the end.
  - [Deadline Risk](Deadline-Risk) is _binary_.  The impact of [Deadline Risk](Deadline-Risk) is either zero (you make it in time) or one (you are late and miss the flight).  You don't particularly get a reward for being early.
  
-So, these are two separate concepts, and both are useful.  
+So, these are two separate concepts, generally useful in software development and other fields.   Next up, something more specific: [Software Dependency Risk](Software-Dependency-Risk).
  
  
 

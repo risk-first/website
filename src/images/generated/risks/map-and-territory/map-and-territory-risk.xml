@@ -7,8 +7,10 @@
 
   <context id="c" bordered="true" style="kite9-layout: down; ">
 
-    <risk class="map-and-territory" />
-
+    <mitigated>
+      <risk class="map-and-territory" />
+    </mitigated>  
+    
     <description>Risks due to the differences between reality and the internal model of reality, and the assumption that they are equivalent. </description>
 
     <label  id="id_16">
@@ -18,8 +20,8 @@
   </context>
 
   <group style="kite9-layout: down; kite9-horizontal-align: left;">
-    <action>Learning</action>
-    <action>Meeting Reality</action>
+    <action style="kite9-horizontal-align: left;">Learning</action>
+    <action style="kite9-horizontal-align: left;">Meeting Reality</action>
   </group>
   
   <context id="d">

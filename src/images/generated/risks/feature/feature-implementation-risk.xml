@@ -6,9 +6,10 @@
   <diagram xmlns="http://www.kite9.org/schema/adl"  id="diagram-113" name="Goal In Mind" style="kite9-min-width: 800pt;">
 
   <context id="c" bordered="true" style="kite9-layout: down; ">
-
-    <risk class="implementation" />
-
+    <mitigated>
+      <risk class="implementation" />
+    </mitigated>
+    
     <description>Risk that the functionality you are providing doesn't match the features the client is expecting, due to poor or partial implementation.</description>
 
     <label  id="id_16">
@@ -18,9 +19,9 @@
   </context>
 
   <group style="kite9-layout: down; kite9-horizontal-align: left;">
-    <action>Development</action>
-    <action>User Feedback</action>
-    <action>Testing</action>
+    <action style="kite9-horizontal-align: left;">Development</action>
+    <action style="kite9-horizontal-align: left;">User Feedback</action>
+    <action style="kite9-horizontal-align: left;">Testing</action>
   </group>
   
   
