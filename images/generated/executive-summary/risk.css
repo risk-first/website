@@ -1,16 +1,19 @@
 @font-face {
-	font-family: "gothic";
-	src: url('geomanist-regular-webfont.ttf') format('truetype');
+	font-family: "gothic-bold";
+	src: url('geomanist-medium-webfont.ttf') format('ttf');
+	font-weight: 400;
 }
 
 @font-face {
-	font-family: "gothic-bold";
-	src: url('geomanist-medium-webfont.ttf') format('truetype');
+	font-family: "gothic";
+	src: url('geomanist-regular-webfont.svg') format('svg');
 }
+
 
 @font-face {
 	font-family: "gothic-italic";
-	src: url('geomanist-regular-italic-webfont.ttf') format('truetype');
+	src: url('geomanist-regular-italic-webfont.svg') format('svg');
+	font-style: italic;
 }
 
 /*
@@ -565,7 +568,7 @@ group {
 	fill: none;
 	stroke: black;
 	stroke-width: 1pt;
-	stroke-dasharray: 4 4;	
+	stroke-dasharray: 4pt 4pt;	
 }
 
 context > label,
@@ -771,6 +774,7 @@ description {
 	kite9-template: url(template.svg#description);
 	font-size: 14pt;
 	font-family: "gothic-italic";
+	font-style: italic;
 	kite9-padding: 10pt;
 }
 

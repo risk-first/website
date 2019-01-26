@@ -89,6 +89,7 @@ As an individual, do you suffer from [Coordination Risk](Coordination-Risk) at a
 | **CI**  | Consultative (Individual)                 | 1               | 1 + **s** | 2**s**                                                 |                                           |
 | **CII** | Consultative (Group)                      | 1               | 1 + **s** | <!--replace $\mathbf{s}^2$ -->**s**²<!--endreplace --> |                                           |
 | **GII** | Group Consultation and Voting             | 1 + **s**       | 1 + **s** | <!--replace $\mathbf{s}^2$ -->**s**²<!--endreplace --> | Maximum Communication Risk, Schedule Risk |
+
 **s** = subordinate
 
 At the top, you have the _least_ consultative styles, and at the bottom, the _most_.   At the top, decisions are made with just the leader's [Internal Model](Glossary#Internal-Model) but moving down, the [Internal Models](Glossary#Internal-Model) of the _subordinates_ are increasingly brought into play.  
