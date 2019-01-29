@@ -8,7 +8,7 @@ Most developers are familiar with recording issues in an issue tracker.  For all
 
  - The **name** of the risk, or other identifier.
  - A **categories** to which the risk belongs (this is the focus of the [Risk Landscape](Risk-Landscape) section in Part 2).
- - A **brief description** or name of the risk to make the risk easy to discuss
+ - A **brief description** or name of the risk to make the risk easy to discuss.
  - Some estimate for the **Impact**, **Probability** or **Risk Score** of the risk.
  - Proposed actions and a log of the progress made to manage the risk.
 
@@ -61,7 +61,7 @@ Donald Rumsfeld's famous [Known Knowns](https://en.wikipedia.org/wiki/There_are_
 
 ## Risk And Uncertainty
 
-Arguably, this site uses the term 'Risk' wrongly:  most literature suggests [risk can be measured](https://keydifferences.com/difference-between-risk-and-uncertainty.html) whereas uncertainty represents things that cannot.  
+Arguably, Risk-First uses the term 'Risk' wrongly:  most literature suggests [risk can be measured](https://keydifferences.com/difference-between-risk-and-uncertainty.html) whereas uncertainty represents things that cannot.  
 
 I am using **risk** everywhere because later we will talk about specific risks (e.g. [Boundary Risk](Boundary-Risk) or [Complexity Risk](Complexity-Risk)), and it doesn't feel grammatically correct to talk about those as **uncertainties**, especially given the pre-existing usage in Banking of terms like [Operational Risk](https://en.wikipedia.org/wiki/Operational_risk) or [Reputational risk](https://www.investopedia.com/terms/r/reputational-risk.asp) which are also not really a-priori measurable.
 
@@ -73,7 +73,7 @@ Let's look at the classic description of Risk Management:
 
 This is not how Risk-First sees it:  
 
-First, we have the notion that Risks are discrete events, again.  Some risks _are_ (like gambling on a horse race), but most _aren't_.  In the [Dinner Party](A-Simple-Scenario), for example, bad preparation is going to mean a _worse_ time for everyone, but how good a time you're having is a spectrum, it doesn't divide neatly into just "good" or "bad".  
+First, we have the notion that Risks are discrete events.  Some risks _are_ (like gambling on a horse race), but most _aren't_.  In the [Dinner Party](A-Simple-Scenario), for example, bad preparation is going to mean a _worse_ time for everyone, but how good a time you're having is a spectrum, it doesn't divide neatly into just "good" or "bad".  
 
 Second, the opposite of "Risk Management" (or trying to minimise the "Down-side") is either "Upside Risk Management", (trying to maximise the good things happening), or it's trying to make as many bad things happen as possible.  
 
@@ -83,7 +83,7 @@ Yes, it's fine to say "we're in crisis", but to assume there is a different stra
 
 ## Invariances #1: Panic Invariance
 
-You would expect then, that any methods for managing software delivery should be _invariant_ to the level of crisis in the project.  If, for example, a project proceeds using [Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development)) for eight months, and then the deadline looms and everyone agrees to throw Scrum out of the window and start hacking, then _this implies there is a problem with Scrum_, and that it is not _Panic Invariant_.  In fact, many tools like Scrum don't consider this:
+You would expect that any methods for managing software delivery should be _invariant_ to the degree of crisis in the project.  If, for example, a project proceeds using [Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development)) for eight months, and then the deadline looms and everyone agrees to throw Scrum out of the window and start hacking, then _this implies there is a problem with Scrum_, and that it is not **Panic Invariant**.  In fact, many tools like Scrum don't consider this:
 
 - If there is a production outage during the working week, we don't wait for the next Scrum Sprint to fix it.
 - Although a 40-hour work-week _is a great idea_, this goes out of the window if the databases all crash on a Saturday morning.
@@ -94,19 +94,19 @@ This is **Panic Invariance**:  your methodology shouldn't need to change given t
 
 ## Invariances #2: Scale Invariance
 
-Another test of a methodology is that it shouldn't fall down when applied at different _scales_.   Because, if it does, this implies that there is something wrong with the methodology.   The same is true of physical laws:  if they don't apply under all circumstances,  then that implies something is wrong.  For example, Newton's Laws of Motion fail to calculate the orbital period of Mercury, which led to Einstein trying to improve on them with the [Theory of Relativity](https://en.wikipedia.org/wiki/Theory_of_relativity).
+We are used to the idea that physical laws work at _any scale_: if they don't apply equally to big and small scenarios then that implies something is wrong.  For example, Newton's Laws of Motion work fine for artillery shells but fail to calculate the orbital period of Mercury, which led to Einstein trying to improve on them with the [Theory of Relativity](https://en.wikipedia.org/wiki/Theory_of_relativity).  
 
-Some methodologies are designed for certain scales:  [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) is designed for small, co-located teams.  And, that's useful.  But the fact it doesn't scale tells us something about it:  chiefly, that it considers certain _kinds_ of risk, while ignoring others.  At small scales, that works ok, but at larger scales, other risks (such as team [Coordination Risk](Coordination-Risk)) increase too fast for it to work.
-
-So ideally, a methodology should be applicable at _any_ scale: 
+Ideally, a methodology should be applicable at _any_ scale too: 
  
- - A single class or function
- - A collection of functions, or a library
- - A project team
- - A department
- - An entire organisation
+ - A single class or function.
+ - A collection of functions, or a library.
+ - A project team.
+ - A department.
+ - An entire organisation.
 
-If the methodology _fails at a particular scale_, this tells you something about the risks that the methodology isn't addressing.  It's fine to have methodologies that work at different scales, and on different problems.   One of the things Risk-First explores is trying to place methodologies and practices within a framework to say _when_ they are applicable.
+In practice, however, we usually find methodologies are tuned for certain scales.  For example, [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) is designed for small, co-located teams.  And, that's useful.  But the fact it doesn't scale tells us something about it:  chiefly, that it considers certain _kinds_ of risk, while ignoring others.  At small scales, that works ok, but at larger scales, other risks (such as team [Coordination Risk](Coordination-Risk)) increase too fast for it to work.
+
+If the methodology _fails at a particular scale_, this tells you something about the risks that the methodology isn't addressing.    One of the things Risk-First explores is trying to place methodologies and practices within a framework to say _when_ they are applicable.
 
 ## Value vs Speed
 
@@ -122,7 +122,7 @@ If the methodology _fails at a particular scale_, this tells you something about
 
 ![Pillars, From Rapid Development By Steve McConnell](images/generated/introduction/pillars_smc.png)  
 
-The diagram above reproduces a figure from [Rapid Development](http://a.co/d/ddWGTB2) by Steve McConnell.  This is _fine_, McConnell is structuring the process from the perspective of _delivering as quickly as possible_.  However, here, I want to turn this on its head.  Software Development from a risk-first perspective is an under-explored technique, and I believe it offers some useful insights.   So the aim here is to present the case for viewing software development like this:
+The diagram above reproduces a figure from [Rapid Development](http://a.co/d/ddWGTB2) by Steve McConnell.  This is _fine_: McConnell is structuring the process from the perspective of _delivering as quickly as possible_.  However, here, I want to turn this on its head.  Software Development from a risk-first perspective is an under-explored technique, and I believe it offers some useful insights.   So the aim here is to present the case for viewing software development like this:
 
 ![Pillars, re-arranged](images/generated/introduction/pillars_kite9.png)
 
@@ -137,7 +137,7 @@ Eisenhower's Box is a simple model allowing us to consider _two_ aspects of risk
  - How valuable the work is (Importance, Value).
  - How soon it is needed (Urgency, Time).
 
-The problem is, we now need to take a call on whether to do something that is _urgent_ or something that is _important_.
+The problem is, we now need to choose whether to do something that is _urgent_ or something that is _important_.
 
 ## Discounting
 
@@ -145,7 +145,7 @@ The problem is, we now need to take a call on whether to do something that is _u
 
 ![Net Present Value Discounting](images/numbers/npv.png)
 
-In the diagram above, you can see two future payments, Payment **A** of £100 due in one year, and Payment **B** of £150 due in 10 years.  By discounting at a given rate (here at a high rate of 20% per year) we can compare their worth _now_.  At this discount rate, Payment **A**,  - arriving next year - has a far greater value.  
+In the diagram above, you can see two future payments: Payment **A** of £100 due in one year, and Payment **B** of £150 due in 10 years.  By discounting at a given rate (here at a high rate of 20% per year) we can compare their worth _now_.  At this discount rate, Payment **A**  - arriving next year - has a far greater value.  
 
 Can we do the same thing with risk?  Let's introduce the concept of **Net Present Risk**, or NPR:
 
@@ -153,18 +153,16 @@ Can we do the same thing with risk?  Let's introduce the concept of **Net Presen
 
 Let's look at a quick example to see how this could work out.  Let's say you had the following risks:
 
-- Risk **A**, which will cost you £50 in 5 day's time.
-- Risk **B**, which will cost you £70 in 8 day's time.
-
-Which has the biggest NPR?  Well, it depends on the discount rate that you apply.  Let's assume we are discounting at 6% per _day_.  A graph of the discounted risks looks like this:
+- Risk **A**, which will cost you £50 in 5 days' time.
+- Risk **B**, which will cost you £70 in 8 days' time.
 
 ![Net Present Risk, 6% Discount Rate](images/numbers/npr1.png)
 
-On this basis, the biggest NPR is **B**, at about £45.  If we increase the discount factor to 20%, we get a different result:
+Which has the biggest NPR?  Well, it depends on the discount rate that you apply.  The graph above  assumes we are discounting at 6% per _day_.  On this basis, the biggest NPR is **B**, at about £45. 
 
 ![Net Present Risk, 20% Discount Rate](images/numbers/npr2.png)
 
-Now, risk **A** is bigger.  
+However, the graph above increases the discount factor to 20% and we get a different result:  Now, risk **A** is bigger.  
 
 Because this is _Net_ Present Risk, we can also use it to make decisions about whether or not to mitigate risks.   Let's assume the cost of mitigating any risk _right now_ is £40.  Under the 6% regime, only Risk **B** is worth mitigating today, because you spend £40 today to get rid of £45 of risk (today).  
 
@@ -189,7 +187,7 @@ Under these circumstances, we often see _Pooh-Bear Procrastination_:
 
 ## Is This Scientific?
 
-Enough with the numbers and the theory:  Risk-First is an attempt to provide a practical framework, rather than a scientifically rigorous analysis.  For software development, you should probably _give up_ on trying to compute risk numerically.  You _can't_ work out how long a software project will take based purely on an analysis of (say) _function points_.  (Whatever you define them to be).
+Enough with the numbers and the theory:  we need a practical framework, rather than a scientifically rigorous analysis.  For software development, you should probably _give up_ on trying to compute risk numerically.  You _can't_ work out how long a software project will take based purely on an analysis of (say) _function points_.  (Whatever you define them to be).
 
 - First, there isn't enough scientific evidence for an approach like this.  We _can_ look at collected data about IT projects, but techniques and tools advance rapidly.
 - Second, IT projects have too many confounding factors, such as experience of the teams, 
@@ -197,8 +195,8 @@ technologies used etc.  That is, the risks faced by IT projects are _too diverse
 - Third, as soon as you _publish a date_ it changes the expectations of the project (see [Student Syndrome](Scarcity-Risk#student-syndrome)).
 - Fourth, metrics get [misused](Map-And-Territory-Risk) and [gamed](Agency-Risk) (as we will see in a later chapter).
 
-Reality is messy.  Dressing it up with numbers doesn't change that and you risk [fooling yourself](Map-And-Territory-Risk).  If this is the case, is there any hope at all in what we're doing?  Yes:   _forget precision_.  You should, with experience be able to hold up two separate risks and answer the question, "is this one bigger than this one?"  
+Reality is messy.  Dressing it up with numbers doesn't change that and you risk [fooling yourself](Map-And-Territory-Risk).  If this is the case, is there any hope at all in what we're doing?  Yes:   _forget precision_.  You should, with experience, be able to hold up two separate risks and answer the question, "is this one bigger than this one?"  
 
 
-With that in mind, let's look at how we can meet reality [as fast and often as possible](Cadence).
+With that in mind, let's look at how we can meet reality [as fast and as often as possible](Cadence).
 
