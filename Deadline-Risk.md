@@ -14,7 +14,7 @@ In the first example, you can't _start_ something until a particular event happe
 Having an event occur in a fixed time and place is [mitigating risk](Glossary#Mitigated-Risk):
 
 - By taking the bus, we are mitigating our own [Schedule Risk](Scarcity-Risk#schedule-risk):  we're (hopefully) reducing the amount of time we're going to spend on the activity of getting to work.  It's not entirely necessary to even take the bus:  you could walk, or go by another form of transport.  But, effectively, this just swaps one dependency for another:  if you walk, this might well take longer and use more energy, so you're just picking up [Schedule Risk](Scarcity-Risk#schedule-risk) in another way.
-- Events are a mitigation for [Coordination Risk](Coordination-Risk): a bus needn't necessarily _have_ a fixed timetable: it could wait for each passenger until they turned up, and then go.  (A bit like ride-sharing works).  This would be a total disaster from a [Coordination Risk](Coordination-Risk) perspective, as one person could cause everyone else to be really really late.  Having a fixed time for doing something mitigates [Coordination Risk](Coordination-Risk) by turning it into [Schedule Risk](Scarcity-Risk#schedule-risk).  Agreeing a date for a product launch, for example, allows lots of teams to coordinate their activities.
+- Events are a mitigation for [Coordination Risk](Coordination-Risk): a bus needn't necessarily _have_ a fixed timetable. It could wait for each passenger until they turned up, and then go.  (A bit like ride-sharing works).  This would be a total disaster from a [Coordination Risk](Coordination-Risk) perspective, as one person could cause everyone else to be really really late.  Having a fixed time for doing something mitigates [Coordination Risk](Coordination-Risk) by turning it into [Schedule Risk](Scarcity-Risk#schedule-risk).  Agreeing a date for a product launch, for example, allows lots of teams to coordinate their activities.
 -  If you drive, you have a dependency on your car instead.  So, there is often an _opportunity cost_ with dependencies.  Using the bus might be a cheap way to travel.  You're therefore imposing less [Dependency Risk](Dependency-Risk) on a different scarce resource - your money.
 
 ## But, Events Lead To Attendant Risk
@@ -34,13 +34,13 @@ Each party can mitigate [Deadline Risk](Deadline-Risk) with _slack_.  That is, e
  - Don't build into your plans a _need_ to start shopping at 9am.
  - Arrive at the bus-stop _early_.
 
-The amount of slack you build into the schedule is likely dependent on the level of risk you face:  I tend to arrive a few minutes early for a bus, because the risk is _low_ (there'll be another bus along soon), however I try to arrive over an hour early for a flight, because I can't simply get on the next flight straight away, and I've already paid for it, so the risk is _high_.
+The amount of slack you build into the schedule is likely dependent on the level of risk you face:  I tend to arrive a few minutes early for a bus, because the risk is _low_ (there'll be another bus along soon).  However, I try to arrive over an hour early for a flight, because I can't simply get on the next flight straight away and I've already paid for it, so the risk is _high_.
  
 [Deadline Risk](Deadline-Risk) becomes very hard to manage when you have to coordinate actions with lots of tightly-constrained events.  So what else can give?  We can reduce the number of _parties_ involved in the event, which reduces risk, or, we can make sure all the parties are in the same _place_ to begin with.  
 
 ## Deadlines
 
-Often when running a software project, you're given a team of people and told to get something delivered by a certain date.  i.e. you have an artificially-imposed deadline on delivery.
+Often when running a software project you're given a team of people and told to get something delivered by a certain date, i.e. you have an artificially-imposed deadline on delivery.
 
 What happens if you miss the deadline?  It could be:
 
@@ -52,7 +52,7 @@ What happens if you miss the deadline?  It could be:
 
 [Deadline Risk](Deadline-Risk) can be introduced by an authority in order to _sharpen focus_ and reduce [Coordination Risk](Coordination-Risk).  This is how we arrive at tools like [SMART Objectives](https://en.wikipedia.org/wiki/SMART_criteria) and [KPI's (Key Performance Indicators)](https://en.wikipedia.org/wiki/Performance_indicator).  
 
-Deadlines change the way we evaluate goals, and the solutions we choose because they force us to reckon with [Deadline Risk](Deadline-Risk).  For example, in JFK's quote:
+Deadlines change the way we evaluate goals and the solutions we choose because they force us to reckon with [Deadline Risk](Deadline-Risk).  For example, in JFK's quote:
 
 > "First, I believe that this nation should commit itself to achieving the goal, before this decade is out, of landing a man on the moon and returning him safely to the Earth." -  John F. Kennedy, 1961
 
@@ -68,10 +68,10 @@ As a successful author, Douglas Adams _didn't really care_ about the deadlines h
 
 [Schedule Risk](Scarcity-Risk#schedule-risk) and [Deadline Risk](Deadline-Risk) are clearly related: they both refer to the risk of running out of time.  However, the _risk profile_ of each is very different:
 
- - [Schedule Risk](Scarcity-Risk#schedule-risk) is _continuous_, like money.  i.e. You want to waste as little of it as possible.  Every extra day you take compounds [Schedule Risk](Scarcity-Risk#schedule-risk) additively, and a day wasted at the start of the project is much the same as a day wasted at the end.
+ - [Schedule Risk](Scarcity-Risk#schedule-risk) is _continuous_, like money.  i.e. you want to waste as little of it as possible.  Every extra day you take compounds [Schedule Risk](Scarcity-Risk#schedule-risk) additively, and a day wasted at the start of the project is much the same as a day wasted at the end.
  - [Deadline Risk](Deadline-Risk) is _binary_.  The impact of [Deadline Risk](Deadline-Risk) is either zero (you make it in time) or one (you are late and miss the flight).  You don't particularly get a reward for being early.
  
-So, these are two separate concepts, generally useful in software development and other fields.   Next up, something more specific: [Software Dependency Risk](Software-Dependency-Risk).
+So, these are two separate concepts, both useful in software development and other fields.   Next up, something more specific: [Software Dependency Risk](Software-Dependency-Risk).
  
  
 
