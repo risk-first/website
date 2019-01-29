@@ -1,6 +1,6 @@
 # Cadence
 
-Let's go back to the model again, introduced in [Meeting Reality](Meeting-Reality):
+Let's go back to the model again, introduced in [Meeting Reality](Meeting-Reality).
 
 ![Meeting Reality: reality is changed and so is your internal model.](images/generated/introduction/model_vs_reality_2.png)
 
@@ -30,13 +30,13 @@ Imagine for a second that you had a special time-travelling machine.  With it, y
 
 That'd be neat, eh?  If you did have this, would there be any point at all in a compiler?   Probably not, right?  
 
-The whole _reason_ we have tools like compilers is because they give us a short-cut way to get some limited experience of reality _faster_ than would otherwise be possible.  Because, cadence is really important:  the faster we test our ideas, the more quickly we'll find out if they're correct or not.
+The whole _reason_ we have tools like compilers is because they give us a short-cut way to get some limited experience of reality _faster_ than would otherwise be possible.  Because cadence is really important:  the faster we test our ideas, the more quickly we'll find out if they're correct or not.
 
 ### Development Cycle Time
 
-Developers often ignore the fast feedback loops at the bottom of the list above, because the ones nearer the top _will do_.   In the worst cases, changing two lines of code, running the build script, deploying and then manually testing out a feature.  And then repeating.
+Developers often ignore the fast feedback loops at the bottom of the list above because the ones nearer the top _will do_.   
 
-If you're doing it over and over, this is a terrible waste of time.  And, you get none of the benefit of a permanent suite of tests to run again in the future.  
+In the worst cases this means changing two lines of code, running the build script, deploying and then manually testing out a feature.  And then repeating.  Doing this over and over is a terrible waste of time because the feedback loop is so long and you get none of the benefit of a permanent suite of tests to run again in the future.  
 
 The [Testing Pyramid](http://www.agilenutshell.com/episodes/41-testing-pyramid) hints at this truth: 
 
@@ -52,8 +52,8 @@ You could take this section to mean that [Continuous Delivery](https://en.wikipe
 
 Yes, CD will give you faster feedback loops, but even getting things into production is not the whole story:   the feedback loop isn't complete until people have used the code, and reported back to the development team.  
 
-The right answer is to use multiple feedback loops:
-
 ![Different actions have different feedback loops](images/generated/introduction/cadence.png)
+
+The right answer is to use multiple feedback loops, as shown in the diagram above.
 
 In the next section [De-Risking](De-Risking) we're going to introduce a few more useful terms for thinking about risk.

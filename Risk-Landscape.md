@@ -44,35 +44,35 @@ Below is a table outlining the different risks we'll see.  There _is_ an order t
 |[Map And Territory Risk](Map-And-Territory-Risk)    |Risks due to the fact that people don't see the world as it really is. (After all, they're working off different, imperfect [Internal Models](Glossary#internal-model).)|  
 |[Operational Risk](Operational-Risk)                |Software is embedded in a system containing people, buildings, machines and other services.  Operational risk considers this wider picture of risk associated with running a software service or business in the real world.|
        
-After each stop on the tour, in [Staging and Classifying](Staging-And-Classifying) we'll have a recap about what we've seen and make some guesses about how things fit together.  
+After the last stop on the tour, in [Staging and Classifying](Staging-And-Classifying) we'll have a recap about what we've seen and make some guesses about how things fit together.  
 
 ## Causation & Correlation 
 
 Although we're going to try and categorise the kinds of things we see on this [Risk Landscape](Risk-Landscape), this isn't going to be perfect, because: 
 
- - One risk can "blend" into another just like sometimes a "field" is also a "car-park" or a building might contain some trees (but isn't a forest).
+ - One risk can "blend" into another just like sometimes a "field" is also a "car-park", or a building might contain some trees (but isn't a forest).
  - As we know from [Part 1](Meeting-Reality), mitigating one risk probably means accepting another.
- - There is _causation_ and _correlation_ between different risks:  one risk may cause another, or two risks might have the same underlying cause.
+ - There can be _causation_ and _correlation_ between different risks:  one risk may cause another, or two risks might have the same underlying cause.
   
 Risk is messy.  It's not always easy to tease apart the different components of risk and look at them individually.<!-- tweet-end -->  Let's look at a high-profile recent example to see why.
 
 ### The Financial Crisis
 
-In the [Financial Services](https://en.wikipedia.org/wiki/Financial_services) industry, whole departments exist to calculate things like:
+In the [Financial Services](https://en.wikipedia.org/wiki/Financial_services) industry, whole departments exist to calculate different risks like:
 
-- **[Market Risk](https://en.wikipedia.org/wiki/Market_risk)**:  the risk that the amount some asset is going to change in value.
-- **[Credit Risk](https://en.wikipedia.org/wiki/Credit_risk)**:  the risk that someone who owes you a payment at a specific point in time might not pay it back.
-- **[Liquidity Risk](https://en.wikipedia.org/wiki/Liquidity_risk)**: the risk that you can't find a market to sell/buy something, usually leading to a shortage of ready cash.
+- **[Market Risk](https://en.wikipedia.org/wiki/Market_risk)**, the risk that the amount some asset is going to change in value.
+- **[Credit Risk](https://en.wikipedia.org/wiki/Credit_risk)**, the risk that someone who owes you a payment at a specific point in time might not pay it back.
+- **[Liquidity Risk](https://en.wikipedia.org/wiki/Liquidity_risk)**, the risk that you can't find a market to sell/buy something, usually leading to a shortage of ready cash.
 
 In the financial crisis of 2007, these models of risk didn't turn out to be much use.   Although there are lots of conflicting explanations of what happened, one way to look at it is this:
 
- - Liquidity difficulties (i.e. amount of cash you have for day-to-day running of the bank) caused some banks to not be able to cover their short term payment obligations.
+ - Liquidity difficulties (i.e. amount of cash you have for the day-to-day running of the bank) caused some banks to not be able to cover their short term payment obligations.
  - This caused credit defaults (the thing that [Credit Risk](https://en.wikipedia.org/wiki/Credit_risk) measures were meant to guard against) even though the banks _technically_ were solvent.
  - Once credit defaults started, this worried investors in the banks, which had massive [Market Risk](https://en.wikipedia.org/wiki/Market_risk) impacts that none of the models foresaw.
 
 All the [Risks](Glossary#Risk) were [correlated](https://www.investopedia.com/terms/c/correlation.asp).  That is, they were affected by the _same underlying events_, or _each other_.
 
-![Causation shown on a Risk-First Diagram: more complexity is likely to lead to more Operational Risk](images/generated/risks/landscape/causation.png)
+![Causation shown on a Risk-First Diagram.  More complexity is likely to lead to more Operational Risk](images/generated/risks/landscape/causation.png)
 
 It's like this with software risks, too, sadly.  For example, [Operational Risk](Operational-Risk) is going to be heavily correlated with [Complexity Risk](Complexity-Risk): the more complex your operation, the more risky it will be.  In the Risk-First diagrams, we will sometimes show correlation or causation with an arrow, like in the diagram above.
 

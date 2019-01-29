@@ -27,7 +27,7 @@ _Not_ launching an online service _avoids_ the [Operational Risk](Operational-Ri
 
 ## Transfer
 
-**Transferring** risk means _making it someone else's problem_.  For example, when I buy home insurance, the impact of my house burning down is reduced.  It hasn't gone away completely, but at least the financial element of it is handled by the insurance company.
+**Transferring** risk means _making it someone else's problem_.  For example, when I buy home insurance, the personal consequence of my house burning down is reduced.  It hasn't gone away completely, but at least the financial element of it is handled by the insurance company.
 
 In part 2, we'll see how **Transfer** of risk is an essential feature of [Software-as-a-Service (SaaS)](Software-Dependency-Risk).  Inside organisations, **Transfer** of risk can become a political game:
 
@@ -39,7 +39,7 @@ In part 2, we'll see how **Transfer** of risk is an essential feature of [Softwa
 
 Another example is using particular software dependencies:   building a mobile application which requires a Facebook account to log in might give rise to the risk that people without Facebook accounts can't log in, but might simplify the software to such an extent that it's worthwhile.
 
-Whereas **Accepting** a risk seems to imply an eyes-wide-open examination, **Ignoring** seems to imply that either the risk is so insignificant it doesn't warrant evaluation, or so daunting that it can't be stared down.  Either way, **Ignoring** a risk amounts to the same thing as **Accepting** it, since you're not doing anything about it. 
+Whereas **Accepting** a risk seems to imply an eyes-wide-open examination; **Ignoring** seems to imply that either the risk is so insignificant it doesn't warrant evaluation, or so daunting that it can't be stared down.  Either way, **Ignoring** a risk amounts to the same thing as **Accepting** it, since you're not doing anything about it. 
 
 **Accepting** a risk has to occur _before_ we can **Mitigate** it.  
 
@@ -54,7 +54,7 @@ Applying this kind of logic at the start of a project leads you towards building
 
 ### Learned Helplessness
 
-Sometimes, risks just go away on their own.  [Learned Helplessness](https://en.wikipedia.org/wiki/Learned_helplessness) on the other hand, is where we _could_ do something about the risk, but fail to see that as an option:
+Sometimes risks just go away on their own.  [Learned Helplessness](https://en.wikipedia.org/wiki/Learned_helplessness), on the other hand, is where we _could_ do something about the risk, but fail to see that as an option:
 
 > "Learned helplessness is behaviour typical of animals, and in rare cases humans, that occurs when the subject endures repeatedly painful or otherwise aversive stimuli which it is unable to escape or avoid. After such experience, the organism often fails to learn or accept "escape" or "avoidance" in new situations where such behavior would likely be effective. " - [Learned Helplessness, _Wikipedia_](https://en.wikipedia.org/wiki/Learned_helplessness)
 
@@ -76,7 +76,7 @@ Later, in the section on [Process Risk](Process-Risk) we'll be looking at how **
 
 ## Re-cap
 
-Let's look at the journey so far:
+Let's look at the journey so far.
 
  - In [A Simple Scenario](A-Simple-Scenario) we looked at how risk pervades every goal we have in life, big or small.  We saw that risk stems from the fact that our [Internal Model](Glossary#Internal-Model) of the world couldn't capture everything about reality, and so some things were down to chance.  
  
@@ -90,7 +90,7 @@ Let's look at the journey so far:
  
  - [Evaluating Risk](Evaluating-Risk) was an aside, looking at some terminology and the useful concept of a Risk Register.
  
- - We looked at [Cadence](Cadence), and how feedback loops allow you Navigate the [Risk Landscape](Glossary#risk-landscape) more effectively, by showing you more quickly when you're going wrong.
+ - We looked at [Cadence](Cadence) and how feedback loops allow you to navigate the [Risk Landscape](Glossary#risk-landscape) more effectively, by showing you more quickly when you're going wrong.
  
 What this has been building towards is supplying us with a vocabulary with which to communicate to our team-mates about which Risks are important to us, which actions we believe are the right ones, and which tools we should use.
 

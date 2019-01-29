@@ -2,7 +2,7 @@
 
 After so much theory, it seems like it's time to look at how we can apply these principles in the real world.
 
-The following is based the summary of a real issue around the time of writing.  It's heavily edited and anonymized, and I've tried to add the Risk-First vocabulary along the way, but otherwise, it's real.
+The following is based on a summary of a real issue around the time of writing.  It's heavily edited and anonymized, and I've tried to add the Risk-First vocabulary along the way, but otherwise, it's real.
 
 Some background:  **Synergy** is an online service with an app-store, and **Eve** and **Bob** are developers working for **Large Corporation LTD**, which wants to have an application accepted into Synergy's app-store.  
 
@@ -16,7 +16,7 @@ Synergy's release process means that the app-store submission must happen in a f
 
 **Eve**:  Well, you know Synergy did their review and asked us to upgrade our Web Server to only allow TLS version 1.1 and greater?  
 
-**Bob**:  Yes, I remember:   We discussed it as a team and thought the simplest thing would be to change the security settings on the Web Server, but we all felt it was pretty risky.  We decided that in order to flush out [Hidden Risk](Glossary#hidden-risk), we'd upgrade our entire production site to use it _now_, rather than wait for the app launch.
+**Bob**:  Yes, I remember:   we discussed it as a team and thought the simplest thing would be to change the security settings on the Web Server, but we all felt it was pretty risky.  We decided that in order to flush out [Hidden Risk](Glossary#hidden-risk), we'd upgrade our entire production site to use it _now_, rather than wait for the app launch.
 
 **Eve**:  Right, and it _did_ flush out [Hidden Risk](Glossary#hidden-risk): some of our existing software broke on Windows 7, which sadly we still need to support.  So, we had to back it out.
 
@@ -54,7 +54,7 @@ At this point, you might be wondering what all the fuss is about.   This stuff i
  
  > "We’ve survived 200,000 years as humans.  Don’t you think there’s a reason why we survived? We’re good at risk management. " - [Nassim Nicholas Taleb, author of _The Black Swan_](https://www.zerohedge.com/news/2018-03-13/taleb-best-thing-society-bankruptcy-goldman-sachs)
  
-The problem is that although all this _is_ obvious, it appears to have largely escaped codification within the literature, practices and methodologies of software development.  Further, while it is obvious, there is a huge hole:   successful De-Risking depends heavily on individual experience and talent.  
+The problem is that although all this _is_ obvious, it appears to have largely escaped codification within the literature, practices and methodologies of software development.  Further, while it is obvious, there is a huge hole: successful De-Risking depends heavily on individual experience and talent.  
 
 In the [next section](One-Size-Fits-No-One), we are going to briefly look at software methodology, and how it comes up short in when addressing risk.
 

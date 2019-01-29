@@ -8,7 +8,7 @@ Therefore, it stands to reason that software methodologies are all about handlin
 
 ## Methodologies Surface Hidden Risks...
 
-Back in the [Development Process](Development-Process) section, we introduced a toy software methodology that a development team might follow when building software.  It included steps like _analysis_, _coding_ and _testing_.  And, we looked at how the purpose of each of these actions was to manage risk in the software delivery process.  For example, it doesn't matter if a developer doesn't know that he's going to break "Feature Y", because the _Integration Testing_ part of the methodology will expose this [hidden risk](Glossary#hidden-risk) in the testing stage, rather than in let it surface in production (where it becomes more expensive).  
+Back in the [Development Process](Development-Process) section we introduced a toy software methodology that a development team might follow when building software.  It included steps like _analysis_, _coding_ and _testing_.  We looked at how the purpose of each of these actions was to manage risk in the software delivery process.  For example, it doesn't matter if a developer doesn't know that he's going to break "Feature Y", because the _Integration Testing_ part of the methodology will expose this [hidden risk](Glossary#hidden-risk) in the testing stage, rather than in let it surface in production (where it becomes more expensive).  
 
 ## ... But Replace Judgement
 
@@ -28,7 +28,7 @@ In this section, we're going to have a brief look at some different software met
 
 ![Waterfall Actions](images/generated/introduction/waterfall.png) 
 
-Waterfall is a family of methodologies advocating a linear, stepwise approach to the processes involved in delivering a software system.  The basic idea behind Waterfall-style methodologies was that the software process is broken into distinct stages, usually including:
+Waterfall is a family of methodologies advocating a linear, stepwise approach to the processes involved in delivering a software system.  The basic idea behind Waterfall-style methodologies is that the software process is broken into distinct stages, as shown in the diagram above.  These usually include:
 
 - [Requirements Capture](Requirements-Capture)
 - [Specification](Design)
@@ -37,15 +37,15 @@ Waterfall is a family of methodologies advocating a linear, stepwise approach to
 - [Delivery](Delivery) and [Operations](Support)
 - [Sign Offs](Sign-Off) at each stage
 
-Because Waterfall methodologies are borrowed from _the construction industry_, they manage the risks that you would care about in a construction project.  Specifically, minimising the risk of rework, and the risk of costs spiralling during the physical phase of the project.  For example, pouring concrete is significantly easier than digging it out again after it sets.  
+Because Waterfall methodologies are borrowed from _the construction industry_, they manage the risks that you would care about in a construction project, specifically, minimising the risk of rework, and the risk of costs spiralling during the physical phase of the project.  For example, pouring concrete is significantly easier than digging it out again after it sets.  
 
 ![Waterfall, Specifications and Requirements Capture](images/generated/introduction/waterfall2.png)
 
-Construction projects are often done by tender.  This means that the supplier will bid for the job of completing the project, and deliver it to a fixed price.   This is a risk-management strategy for the client:  they are transferring the risk of construction difficulties to the supplier, and avoiding the [Agency Risk](Agency-Risk) that the supplier will "pad" the project and take longer to implement it than necessary, charging them more in the process.  In order for this to work, both sides need to have a fairly close understanding of what will be delivered, and this is why a specification is created.
+Construction projects are often done by tender which means that the supplier will bid for the job of completing the project, and deliver it to a fixed price.   This is a risk-management strategy for the client:  they are transferring the risk of construction difficulties to the supplier, and avoiding the [Agency Risk](Agency-Risk) that the supplier will "pad" the project and take longer to implement it than necessary, charging them more in the process.  In order for this to work, both sides need to have a fairly close understanding of what will be delivered, and this is why a specification is created.
 
 ### The Wrong Risks?
 
-In a construction scenario, this makes a lot of sense.  But, _software projects are not the same as building projects_.  There are two key criticisms of the Waterfall approach when applied to software:  
+In construction this makes a lot of sense.  But _software projects are not the same as building projects_.  There are two key criticisms of the Waterfall approach when applied to software:  
 
 > "1.  Clients may not know exactly what their requirements are before they see working software and so change their requirements, leading to redesign, redevelopment, and re-testing, and increased costs."
 
@@ -61,11 +61,11 @@ As you can see in the diagram above, some of the risks on the left _are the same
 
 ## Agile
 
-The Software Crisis showed that, a lot of the time, up-front requirements-capture, specification and fixed-price bids did little to manage cost and schedule risks on software projects.  So it's not surprising that by the 1990's, various different groups of software engineers were advocating "Agile" techniques, which did away with those actions.
+The Software Crisis showed that, a lot of the time, up-front requirements-capture, specification and fixed-price bids did little to manage cost and schedule risks on software projects.  So it's not surprising that by the 1990's, various different groups of software engineers were advocating "Agile" techniques which did away with those actions.
 
 ![Risks, and the practices that manage them in Extreme Programming](images/generated/introduction/xp.png)
 
-In [Extreme Programming Explained](http://amzn.eu/d/1vSqAWa), Kent Beck breaks down his methodology, Extreme Programming, listing the risks he wants to address and the actions he proposes to address them with.  The diagram above summarises the main risks and actions he talks about.   These are _different_ risks to those addressed by Waterfall, and unsurprisingly, this leads to different actions too.
+In [Extreme Programming Explained](http://amzn.eu/d/1vSqAWa), Kent Beck breaks down his methodology, 'Extreme Programming', listing the risks he wants to address and the actions with which he proposes to address them.  The diagram above summarises the main risks and actions he talks about.   These are _different_ risks to those addressed by Waterfall, so unsurprisingly, they lead to different actions.
 
 ## Different Methodologies For Different Risks
 
@@ -105,7 +105,7 @@ When we [take action](Glossary#taking-action) according to a methodology, we exp
 
 There is value in adopting a methodology as a complete collection of processes:  choosing a methodology (or any process) reduces the amount of thinking individuals have to do, and it becomes _the process_ that is responsible for failure, not the individual (as shown in the above diagram).  
 
-It's nice to lay the blame somewhere else.  But, if we genuinely care about our projects, then it's critical that we match the choice of methodology to the risk profile of the project.  We need to understand exactly what risks our methodology will help us with, and which it won't; where it is appropriate, and where it isn't.
+It's nice to lay the blame somewhere else.  But, if we genuinely care about our projects, then it's critical that we match the choice of methodology to the risk profile of the project.  We need to understand exactly what risks our methodology will help us with, which it won't, where it is appropriate, and where it isn't.
 
 > "Given any rule, however 'fundamental' or 'necessary' for science, there are always circumstances when it is advisable not only to ignore the rule, but to adopt its opposite." - [Paul Feyerabend](https://www.azquotes.com/author/4773-Paul_Feyerabend)
 
@@ -113,4 +113,4 @@ An off-the-shelf methodology is unlikely to fit the risks of any project exactly
 
 ![Methodologies, Actions, Risks, Goals](images/generated/executive-summary/pattern_language.png)
 
-As the above diagram shows, different methodologies advocate different practices, and different practices manage different risks.   If we want to understand methodologies, or even choose the right practices from one, we really need to understand the _types of risks_ we face on software projects.  This is where we go next in [Part 2](Risk-Landscape). 
+As the above diagram shows, different methodologies advocate different practices, and different practices manage different risks.   If we want to understand methodologies, or choose practices from one, we really need to understand the _types of risks_ we face on software projects.  This is where we go next in [Part 2](Risk-Landscape). 
