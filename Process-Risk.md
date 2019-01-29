@@ -1,10 +1,10 @@
 # Process Risk
 
-[Process Risk](Process-Risk), as we will see, is the risk you take on whenever you embark on completing a _process_. <!-- tweet-end -->
+[Process Risk](Process-Risk) is the risk you take on whenever you embark on completing a _process_. <!-- tweet-end -->
 
 > "**Process**: a process is a set of activities that interact to achieve a result." - [Process, _Wikipedia_](https://en.wikipedia.org/wiki/Process)
 
-Processes commonly involve _forms_:  if you're filling out a form (whether on paper or on a computer) then you're involved in a process of some sort, whether an "Account Registration" process, "Loan Application" process or "Consumer Satisfaction Survey" process.  Sometimes, they involve events occurring:  a [build process](https://en.wikipedia.org/wiki/Software_build) might start after you commit some code, for example.  And, the _code we write_ is usually describing some kind of process we want performed.
+Processes commonly involve _forms_:  if you're filling out a form (whether on paper or on a computer) then you're involved in a process of some sort, whether an "Account Registration" process, "Loan Application" process or "Consumer Satisfaction Survey" process.  Sometimes, they involve events occurring:  a [build process](https://en.wikipedia.org/wiki/Software_build) might start after you commit some code, for example.  The _code we write_ is usually describing some kind of process we want performed.
 
 ## The Purpose Of Process
 
@@ -12,13 +12,13 @@ Processes commonly involve _forms_:  if you're filling out a form (whether on pa
 
 As the above diagram shows, process exists to mitigate other kinds of risk.  For example:
 
- - **[Coordination Risk](Coordination-Risk)**:  you can often use process to help people coordinate.  For example, a [Production Line](https://en.wikipedia.org/wiki/Production_line) is a process where work being done by one person is pushed to the next person when it's done.  A meeting booking process is designed to efficiently allocate meeting rooms. 
- - **[Operational Risk](Operational-Risk)**:  this encompasses the risk of people _not doing their job properly_.  But, by having a process, (and asking, did this person follow the process?) you can draw a distinction between a process failure and a personnel failure.  For example, making a loan to a money launderer _could_ be a failure of the loan agent.   But, if they followed the _process_, it's a failure of the [Process](Process-Risk) itself. 
+ - **[Coordination Risk](Coordination-Risk)**:  you can often use process to help people coordinate.  For example, a [Production Line](https://en.wikipedia.org/wiki/Production_line) is a process where work being done by one person is pushed to the next person when it's done.  A room booking process is designed to efficiently allocate meeting rooms. 
+ - **[Operational Risk](Operational-Risk)**:  this encompasses the risk of people _not doing their job properly_.  But, by having a process, (and asking, did this person follow the process?) you can draw a distinction between a process failure and a personnel failure.  For example, accepting funds from a money launderer _could_ be a failure of a bank employee.   But, if they followed the _process_, it's a failure of the [Process](Process-Risk) itself. 
  - **[Complexity Risk](Complexity-Risk)**: working _within a process_ can reduce the amount of [Complexity](Complexity-Risk) you have to think about.  We accept that processes are going to slow us down, but we appreciate the reduction in risk this brings.  Clearly, the complexity hasn't gone away, but it's hidden within design of the process.  For example, [McDonalds](https://en.wikipedia.org/wiki/McDonald's) tries to design its operation so that preparing each food item is a simple process to follow, reducing complexity (and training time) for the staff.
 
 These are all examples of [Risk Mitigation](Glossary#Mitigated-risk) for the _owners_ of the process.  But often the _consumers_ of the process end up picking up [Process Risks](Process-Risk) as a result:
 
- - **[Invisibility Risk](Communication-Risk#invisibility-risk)**: it's often not possible to see how far along a process is to completion.  Sometimes, you can do this to an extent.  For example, when I send a package for delivery, I can see roughly how far it's got on the tracking website.  But, this is still less-than-complete information, and is a representation of reality.    
+ - **[Invisibility Risk](Communication-Risk#invisibility-risk)**: it's often not possible to see how far along a process is to completion.  Sometimes, you can do this to an extent.  For example, when I send a package for delivery, I can see roughly how far it's got on the tracking website.  But this is still less-than-complete information and is a representation of reality.    
  - **[Dead-End Risk](Complexity-Risk#dead-end-risk)**: even if you have the right process, initiating a process has no guarantee that your efforts won't be wasted and you'll be back where you started from.  The chances of this happening increase as you get further from the standard use-case for the process, and the sunk cost increases with the length of time the process takes to complete.
  - **[Feature Access Risk](Feature-Risk#feature-access-risk)**: processes generally handle the common stuff, but ignore the edge cases.  For example, a form on a website might not be designed to be accessible to disabled people, or might only cater to some common subset of use-cases.
  
@@ -28,7 +28,7 @@ When we talk about "[Process Risk](Process-Risk)" we are really referring to the
 
 ### Processes And Invisibility Risk
 
-Processes tend to work well for the common cases, because *practice makes perfect*.  but they are really tested when unusual situations occur.  Expanding processes to deal with edge-cases incurs [Complexity Risk](Complexity-Risk), so often it's better to try and have clear boundaries of what is "in" and "out" of the process' domain.
+Processes tend to work well for the common cases because *practice makes perfect*,  but they are really tested when unusual situations occur.  Expanding processes to deal with edge-cases incurs [Complexity Risk](Complexity-Risk), so often it's better to try and have clear boundaries of what is "in" and "out" of the process' domain.
 
 Sometimes, processes are _not_ used commonly.  How can we rely on them anyway?  Usually, the answer is to build in extra [feedback loops](Glossary#feedback-loop) anyway:
 
@@ -55,9 +55,9 @@ This is a nasty situation, but there are a couple of ways to de-risk this:
  
 ## Evolution Of Process
 
-Writing software and designing processes are often overlapping activities.  Often, we build processes when we are writing software.  Since designing a process is an activity like any other on a project, you can expect that the Risk-First explanation for why we do this is _risk management_.  
+Writing software and designing processes are often overlapping activities.  Often we build processes when we are writing software.  Since designing a process is an activity like any other on a project, you can expect that the Risk-First explanation for why we do this is _risk management_.  
 
-Processes arise because of a desire to mitigate risk.  When whole organisations follow that desire independently, we end up in an evolutionary or gradient-descent style scenario of risk reduction (as we will see below).
+Processes arise because of a desire to mitigate risk.  When whole organisations follow that desire independently, they end up following an evolutionary or gradient-descent approach to risk reduction (as we will see below).
 
 Here, we are going to look at how a [Business Process](https://en.wikipedia.org/wiki/Business_process) might mature within an organisation.
 
@@ -65,21 +65,21 @@ Here, we are going to look at how a [Business Process](https://en.wikipedia.org/
 
 Let's look at an example of how that can happen in a step-wise way.
 
-![Step 1: clients `C` need `A` to do their jobs](images/generated/risks/process/step1.png)
+![Step 1: clients `C` need `A` to do their jobs, incurring Complexity Risk.](images/generated/risks/process/step1.png)
 
-1.  As the above diagram shows, there exists a group of people inside a company `C`, which need a certain something `A` in order to get their jobs done.  Because they are organising, providing and creating `A` to do their jobs, they are responsible for all the [Complexity Risk](Complexity-Risk) of `A`.  The harder it is for them to secure `A`, the higher the risk.
+1.  As the above diagram shows, there exists a group of people inside a company `C`, which need a certain something `A` in order to get their jobs done.  Because they are organising, providing and creating `A` to do their jobs, they are responsible for all the [Complexity Risk](Complexity-Risk) of `A`. 
 
-![Step 2: team `B` doing `A` for clients `C`](images/generated/risks/process/step2.png)
+![Step 2: team `B` doing `A` for clients `C`.  Complexity Risk is transferred to B, but C pick up Staff Risk.](images/generated/risks/process/step2.png)
 
-2.  Because `A` is so complex, a new team (`B`) is spun up to deal with the [Complexity Risk](Complexity-Risk), which lets `C` get on with their "proper" jobs.  As shown in the diagram above, this is really useful:  It makes `C`'s job much easier (reduced [Complexity Risk](Complexity-Risk)) as they have an easier path to `A` than before.  But the risk for `A` hasn't really gone - they're now just dependent on `B` instead.  When members of `B` fail to deliver, this is [Staff Risk](Scarcity-Risk#staff-risk) for `C`.   
+2.  Because `A` is risky, a new team (`B`) is spun up to deal with the [Complexity Risk](Complexity-Risk), which might let `C` get on with their "proper" jobs.  As shown in the diagram above, this is really useful:  `C`'s is job much easier (reduced [Complexity Risk](Complexity-Risk)) as they have an easier path to `A` than before.  But the risk for `A` hasn't really gone - they're now just dependent on `B` instead.  When members of `B` fail to deliver, this is [Staff Risk](Scarcity-Risk#staff-risk) for `C`.   
 
-![Step 3: team `B` formalises the arrangement with a Process](images/generated/risks/process/step3.png)
+![Step 3: team `B` formalises the dependency with a Process](images/generated/risks/process/step3.png)
 
 3. Problems are likely to occur eventually in the `B`/`C` relationship.  Perhaps some members of the `B` team give better service than others, or deal with more variety in requests.   In order to standardise the response from `B`, and also to reduce scope-creep in requests from `C`, `B` organises bureaucratically, so that there is a controlled process (`P`) by which `A` can be accessed.  Members of teams `B` and `C` now interact via some request mechanism like forms (or another protocol).  
 
-  - As shown in the above diagram, because of `P`, `B` can now deal with requests on a first-come-first-served basis and deal with them all in the same way: the more unusual requests from `C` might not fit the model.  These [Complexity Risks](Complexity-Risk) are now the problem of the form-filler in `C`.   
+  - As shown in the above diagram, because of `P`, `B` can now process requests on a first-come-first-served basis and deal with them all in the same way: the more unusual requests from `C` might not fit the model.  These [Process Risks](Process-Risk) are now the problem of the form-filler in `C`.   
   - Since this is [Abstraction](Glossary#abstraction), `C` now has [Invisibility Risk](Communication-Risk#invisibility-risk) since it can't access team `B` and see how it works.
-  - Team `B` may also use `P` to introduce other bureaucracy like authorisation and sign-off steps or payment barriers.   All of this increases complexity for team C. 
+  - Team `B` may also use `P` to introduce other bureaucracy like authorisation and sign-off steps or payment barriers.   All of this increases [Process Risk](Process-Risk) for team C. 
 
 ![Person D acts as a middleman for customers needing some variant of `A`](images/generated/risks/process/step4.png)
 
@@ -94,17 +94,17 @@ In this example, you can see how the organisation evolves process to mitigate ri
 
 Two key take-aways from this:
 
- - **The Process Gets More Complex**: with different teams working to mitigate different risks in different ways, we end up with a more complex situation than we started in.  Although we've _evolved_ in this direction by mitigating risks, it's not necessarily the case that the end result is _more efficient_.  In fact, as we will see in [Map-And-Territory Risk](Map-And-Territory-Risk#markets), this evolution can lead to some very inadequate (but nonetheless stable) systems.
+ - **The System Gets More Complex**: with different teams working to mitigate different risks in different ways, we end up with a more complex situation than when we started.  Although we've _evolved_ in this direction by mitigating risks, it's not necessarily the case that the end result is _more efficient_.  In fact, as we will see in [Map-And-Territory Risk](Map-And-Territory-Risk#markets), this evolution can lead to some very inadequate (but nonetheless stable) systems.
  - **Organisational process evolves to mitigate risk**: just as we've shown that [actions are about mitigating risk](All-About-Risk), we've now seen that these actions get taken in an evolutionary way.  That is, there is "pressure" on our internal processes to reduce risk.  The people maintaining these processes feel the risk, and modify their processes in response.  Let's look at a real-life example: 
 
 ## An Example - Release Processes
 
-For many years I have worked in the Finance Industry, and it's given me time to observe how, across an entire industry, process can evolve, both in response to regulatory pressure but also because of organisational maturity, and mitigating risks:
+Over the years I have worked in the Finance Industry it's given me time to observe how, across an entire industry, process can evolve, both in response to regulatory pressure but also because of organisational maturity, and mitigating risks:
 
 1. Initially, I could release software by logging onto the production accounts with a shared password that everyone knew, and deploy software or change data in the database.  
 2. The first issue with this is [Agency Risk from bad actors](Agency-Risk):  how could you know that the numbers weren't being altered in the databases? _Production Auditing_ was introduced so that at least you could tell what was being changed and when, in order to point the blame later.
-3. But, there was still plenty of scope for deliberate or accidental [Dead-End Risk](Complexity-Risk#dead-end-risk) damage.  Next, passwords were taken out of the hands of developers and you needed approval to "break glass" to get onto production.  
-4. The increasing complexity (and therefore [Complexity Risk](Complexity-Risk)) in production environments meant that sometimes, changes collided with each other, or were performed at inopportune times.  Change Requests were introduced.  This is an approval process which asks you to describe what you want to change in production, and why you want to change it.  
+3. But there was still plenty of scope for deliberate or accidental [Dead-End Risk](Complexity-Risk#dead-end-risk) damage.  Next, passwords were taken out of the hands of developers and you needed approval to "break glass" to get onto production.  
+4. The increasing complexity (and therefore [Complexity Risk](Complexity-Risk)) in production environments meant that sometimes changes collided with each other, or were performed at inopportune times.  Change Requests were introduced.  This is an approval process which asks you to describe what you want to change in production, and why you want to change it.  
 5. The change request software is generally awful, making the job of raising change requests tedious and time-consuming.  Therefore, developers would _automate_ the processes for release, sometimes including the process to write the change request.  This allowed them to improve release cadence, at the expense of owning more code.
 6. Auditors didn't like the fact that this automation existed, because effectively, that meant that developers could get access to production with the press of a button, effectively taking you back to step 1...
 
