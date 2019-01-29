@@ -2,18 +2,17 @@
 
 While [Reliability Risk](Dependency-Risk#reliability-risk) (which we met in the previous section) considers what happens when a _single dependency_ is unreliable, scarcity is about _quantities_ of a dependency, and specifically, _not having enough_.  <!-- tweet-end -->
 
-In the previous section, we talked about the _reliability_ of the bus:  it will either arrive or it wont.  But what if, when it arrives, it's already full of passengers?  There is a _scarcity of seats_:  you don't much care which seat you get on the bus, you just need one.  Let's term this, [Scarcity Risk](Scarcity-Risk) _the  risk of not being able to access a dependency in a timely fashion due to its scarcity_.  
+In the previous section we talked about the _reliability_ of the bus:  it will either arrive or it wont.  But what if, when it arrives, it's already full of passengers?  There is a _scarcity of seats_:  you don't much care which seat you get on the bus, you just need one.  Let's term this [Scarcity Risk](Scarcity-Risk), _the risk of not being able to access a dependency in a timely fashion due to its scarcity_.  
 
 Any resource (such as disk space, oxygen, concert tickets, time or pizza) that you depend on can suffer from _scarcity_,  and here, we're going to look at five particular types, relevant to software.<!-- tweet-end -->
 
 ![Scarcity Risk and its variations](images/generated/risks/scarcity/scarcity-risks.png)
 
-
 ## Funding Risk
 
 ![Funding Risk](images/generated/risks/scarcity/funding-risk.png)
 
-On a lot of software projects, you are "handed down" deadlines from above, and told to deliver by a certain date or face the consequences. <!-- tweet-end --> But sometimes you're given a budget instead, which really just adds another layer of abstraction to the [Schedule Risk](Scarcity-Risk#schedule-risk):   That is, do I have enough funds to cover the team for as long as I need them?
+On a lot of software projects you are "handed down" deadlines from above and told to deliver by a certain date or face the consequences. <!-- tweet-end --> But sometimes you're given a budget instead, which really just adds another layer of abstraction to the [Schedule Risk](Scarcity-Risk#schedule-risk).  That is, do I have enough funds to cover the team for as long as I need them?
 
 This grants you some leeway as now you have two variables to play with: the _size_ of the team, and _how long_ you can run it for.  The larger the team, the shorter the time you can afford to pay for it.
 
@@ -23,13 +22,13 @@ Startups often spend a lot of time courting investors in order to get funding an
 
 ## Staff Risk
 
-Since the workforce is a scarce resource, it stands to reason that if a startup has a "Runway", then the chances are that the founders and staff do too<!-- tweet-end -->, as [this article by Entrepreneur.com explores](https://www.entrepreneur.com/article/223135).  It identifies the following risks:
+Since staff are a scarce resource, it stands to reason that if a startup has a "Runway", then the chances are that the founders and staff do too<!-- tweet-end -->, as [this article by Entrepreneur.com explores](https://www.entrepreneur.com/article/223135).  It identifies the following risks:
 
   - **Company Cash**:  the **Runway** of the startup itself
   - **Founder Cash**:  the **Runway** for a founder, before they run out of money and can't afford their rent.
   - **Team Cash**:  the **Runway** for team members, who may not have the same appetite for risk as the founders do.
   
-You need to consider how long your staff are going to be around, especially if you have [Key Person Risk](https://en.wikipedia.org/wiki/Key_person_insurance#Key_person_definition) on some of them.  <!-- tweet-end -->People like to have new challenges, or move on to live in new places, or simply get bored, and replacing staff can be highly risky.
+You need to consider how long your staff are going to be around, especially if you have [Key Person Risk](https://en.wikipedia.org/wiki/Key_person_insurance#Key_person_definition) on some of them.  <!-- tweet-end -->People like to have new challenges, move on to live in new places, or simply get bored.  Replacing staff can be highly risky.
 
 The longer your project goes on for, the more [Staff Risk](Scarcity-Risk#staff-risk) you will have to endure, and you can't rely on getting the [best staff for failing projects](Agency-Risk).
 
@@ -37,7 +36,7 @@ The longer your project goes on for, the more [Staff Risk](Scarcity-Risk#staff-r
 
 [Schedule Risk](Scarcity-Risk#schedule-risk) is very pervasive, and really underlies _everything_ we do.  People _want_ things, but they _want them at a certain time_.   We need to eat and drink every day, for example.  We might value having a great meal, but not if we have to wait three weeks for it.  
 
-And let's go completely philosophical for a second:  were you to attain immortality, you'd probably not feel the need to buy _anything_.  You'd clearly have no _needs_, and anything you wanted, you could create yourself within your infinite time-budget.  Rocks don't need money, after all.
+And let's go completely philosophical for a second:  were you to attain immortality, you'd probably not feel the need to buy _anything_.  You'd clearly have no _needs_. Anything you wanted, you could create yourself within your infinite time-budget.  Rocks don't need money, after all.
 
 In the section on [Feature Risk](Feature-Risk) we looked at [Market Risk](Feature-Risk), the idea that the value of your product is itself at risk from the morés of the market, share prices being the obvious example of that effect.  In Finance, we measure this using _money_, and we can put together probability models based on how much money you might make or lose.
 
