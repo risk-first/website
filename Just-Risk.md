@@ -31,7 +31,7 @@ The reason you are _taking_ an action is to mitigate a risk.  For example:
 
  - If you're coding up new features in the software, this is mitigating [Feature Risk](Feature-Risk) (which we'll explore in more detail later).  
  - If you're getting a business sign-off for something, this is mitigating the risk of everone not agreeing on a course of action (a [Coordination Risk](Coordination-Risk)).  
- - If you're writing a specification, that's mitigating the type of "Incorrect Implementation Risk" we saw in the last section. 
+ - If you're writing a specification, then that's mitigating the type of "Incorrect Implementation Risk" we saw in the last section. 
 
 ## Every Action Has Attendant Risk
 
@@ -48,18 +48,18 @@ And, as we saw in the [Introduction](A-Simple-Scenario), even something _mundane
 
 - Because issues need to be fixed...  
 - And fixing an issue is an action... 
-- Which, as we just saw also carry risk.
+- Which, as we just saw also carries risk.
 
 One retort to this might be to say:  "an issue is a problem I have now, whereas a risk is a problem that _might_ occur. "  I am going to try and break that mind-set in the coming pages, but I'll just start with this:
 
-- Do you know _exactly_ how much damage this issue will do?
+- Do you know _exactly_ how much damage this will do?
 - Can you be sure that the issue might not somehow go away?  
 
 _Issues_ then, just seem more "definite" and "now" than _risks_, right?  This classification is arbitrary:  they're all just part of the same spectrum, they all have inherent uncertainty, so there should be no need to agonise over which column to put them in.
 
 ## Goals Are Risks Too
 
-In the previous sections, we've introduced something of a "diagram language" of risk.  Let's review it:
+In the previous sections, we introduced something of a "diagram language" of risk.  Let's review it:
 
 ![Risk-First Diagram Language](images/generated/introduction/all_risk_management_language.png)
  
@@ -79,11 +79,13 @@ Psychologically, humans are very goal-driven:  they like to know where they're g
 
 ## Every Decision is About Payoff  
 
-- By the very nature of having to make a decision, there's the risk you'll decide wrongly.
+Sometimes, there will be multiple moves available on the [Risk Landscape](Glossary#risk-landscape) and you have to choose one. 
+
+- There's the risk you'll decide wrongly.
 - And, making a decision takes time, which could add risk to your schedule.
 - And what's the risk if the decision doesn't get made?
 
-Sometimes, there will be multiple moves available on the [Risk Landscape](Glossary#risk-landscape) and you have to choose.  Let's take a hypothetical example:  you're on a project and you're faced with the decision - release now or do more testing?  
+Let's take a hypothetical example:  you're on a project and you're faced with the decision - release now or do more testing?  
 
 Obviously, in the ideal world, we want to get to the place on the [Risk Landscape](Glossary#risk-landscape) where we have a tested, bug-free system in production.  But we're not there yet, and we have funding pressure to get the software into the hands of some paying customers.  The table below shows an example: 
 
@@ -92,7 +94,7 @@ Obviously, in the ideal world, we want to get to the place on the [Risk Landscap
 |Funding Risk          |Go Live              |Reputational Risk, Operational Risk      |MEDIUM             |
 |Implementation Risk   |User Acceptance Test |Worse Funding Risk, Operational Risk     |LOW                |
 
-This is (a simplification of) the dilemma on lots of software projects - _test further_, to reduce the risk of users discovering bugs ([Implementation Risk](Feature-Risk#implementation-risk)) which would cause us reputational damage, or _get the release done_ and reduce our [Funding Risk](Scarcity-Risk#funding-risk) by getting paying clients sooner. 
+This is (a simplification of) the dilemma of lots of software projects - _test further_, to reduce the risk of users discovering bugs ([Implementation Risk](Feature-Risk#implementation-risk)) which would cause us reputational damage, or _get the release done_ and reduce our [Funding Risk](Scarcity-Risk#funding-risk) by getting paying clients sooner. 
 
 In the above table, it _appears_ to be better to do the "Go Live" action, as there is a greater [Payoff](Glossary#payoff).  The problem is, actions are not _commutative_, i.e. the order you do them in counts.
 
