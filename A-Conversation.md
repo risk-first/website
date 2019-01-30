@@ -1,7 +1,6 @@
 ---
 title: A Conversation
 description: A conversation about software development using Risk-First vocabulary.
-canonical_url: 'https://riskfirst.org/A-Conversation'
 ---
 
 
