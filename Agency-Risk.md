@@ -1,3 +1,8 @@
+---
+title: Agency Risk
+description: Description and examples of Agency Risk and three common ways to mitigate it: monitoring, security and goal alignment."
+---
+
 # Agency Risk
 
 [Coordinating a team](Coordination-Risk) is difficult enough when everyone on the team has a single [Goal](Glossary#Goal-In-Mind). <!-- tweet-end --> But, people have their own goals, too.  Sometimes, their goals harmlessly co-exist with the team's goal, but other times they don't.
