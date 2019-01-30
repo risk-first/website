@@ -1,5 +1,5 @@
 ---
-title: index.html
+title: Risk-First
 description: Introduction and Contents page for Risk-First wiki.
 ---
 
