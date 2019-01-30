@@ -1,3 +1,8 @@
+---
+title: A Pattern Language
+description: Explanation of how Risk-First comprises a pattern language of risk patterns for use in software projects.
+---
+
 # A Pattern Language
 
 Hopefully, after reading this, you'll come away with:
