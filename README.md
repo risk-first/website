@@ -1,7 +1,7 @@
 ---
 title: Risk-First
 description: Introduction and Contents page for Risk-First wiki.
-permalink: /index.html
+permalink: /:categories/:year/:month/:day/:title:output_ext
 ---
 
 # Risk-First
