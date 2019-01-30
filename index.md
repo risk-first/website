@@ -1,7 +1,6 @@
 ---
 title: Risk-First
 description: Introduction and Contents page for Risk-First wiki.
-permalink: https://riskfirst.org
 ---
 
 # Risk-First
