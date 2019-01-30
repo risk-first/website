@@ -1,3 +1,8 @@
+---
+title: Boundary Risk
+description: Risk due to the choices we make around dependencies, and the limitations they place on our ability to change.
+---
+
 # Boundary Risk
 
 In the previous sections on [Dependency Risk](Dependency-Risk) we've touched on [Boundary Risk](Boundary-Risk) several times, but now it's time to tackle it head-on and discuss this important type of risk.  

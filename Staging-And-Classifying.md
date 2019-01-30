@@ -1,3 +1,8 @@
+---
+title: Staging and Classifying
+description: Making sense of risks faced by software projects.
+---
+
 # Staging and Classifying
 
 Our tour is complete.  

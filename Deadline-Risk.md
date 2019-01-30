@@ -1,3 +1,8 @@
+---
+title: Deadline Risk
+description: Risks due to coordinating via imposed deadlines.
+---
+
 # Deadline Risk
 
 Let's examine dependencies on _events_.  

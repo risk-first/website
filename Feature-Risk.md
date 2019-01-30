@@ -1,3 +1,8 @@
+---
+title: Feature Risk
+description: Risks you face when providing features for your clients.
+---
+
 # Feature Risk
 
 [Feature Risks](Feature-Risk) are risks to do with functionality that you need to have in the software you're building.  

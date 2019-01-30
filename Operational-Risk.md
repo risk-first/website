@@ -1,3 +1,8 @@
+---
+title: Operational Risk
+description: Risks of losses or reputational damage caused by failing processes or real-world events.
+---
+
 # Operational Risk
 
 > "The risk of loss resulting from inadequate or failed internal processes, people and systems or from external events." - [Operational Risk, _Wikipedia_](https://en.wikipedia.org/wiki/Operational_risk#Definition)

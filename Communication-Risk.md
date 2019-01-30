@@ -1,3 +1,8 @@
+---
+title: Communication Risk
+description: Risks due to the difficulty of communicating with other entities, be they people, software, processes etc.
+---
+
 # Communication Risk
 
 If we all had identical knowledge, there would be no need to do any communicating at all, and therefore no [Communication Risk](Communication-Risk).  

@@ -1,3 +1,9 @@
+---
+title: Silver Bullets
+description: A critique of Fred Brooks' 1975 essay on improvements to software engineering.
+---
+
+
 # Silver Bullets
 
 In the original “Mythical Man-Month”, 1975, Fred Brooks (who said many very insightful things also) posited:

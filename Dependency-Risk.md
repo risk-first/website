@@ -1,3 +1,8 @@
+---
+title: Dependency Risk
+description: Risks faced by depending on something else,  e.g. an event, process, person, piece of software or an organisation. 
+---
+
 # Dependency Risk
 
 [Dependency Risk](Dependency-Risk) is the risk you take on whenever you have a dependency on something (or someone) else.   <!-- tweet-end -->

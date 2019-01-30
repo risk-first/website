@@ -1,6 +1,6 @@
 ---
 title: Scarcity Risk
-description: While Reliability Risk considers what happens when a single dependency is unreliable, scarcity is about quantities of a dependency, and specifically, not having enough.
+description: Scarcity Risk is about quantities of a dependency, and specifically, not having enough.
 ---
 
 # Scarcity Risk

@@ -1,3 +1,9 @@
+---
+title: Glossary of Risk Types
+description: List of all types of risk discussed in Risk-First.
+---
+
+
 # Glossary of Risk Types
 
 | Risk             | Definition                                                               |

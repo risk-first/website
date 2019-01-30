@@ -1,3 +1,8 @@
+---
+title: Complexity Risk
+description: Risks caused by the weight of complexity in the systems we create, and their resistance to change and comprehension.
+---
+
 # Complexity Risk
 
 [Complexity Risks](Complexity-Risk) is the [risks](Glossary#risk) to your project due to its underlying "complexity". <!-- tweet-end --> This section will break down exactly what we mean by complexity, and where it can hide on a software project, and look at some ways in which we can manage this important risk.
