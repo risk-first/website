@@ -1,3 +1,8 @@
+---
+title: Just Risk
+description: An argument that all tasks in software development are focused on managing risks.
+---
+
 # Just Risk
 
 In this section, I am going to propose the idea that everything you do on a software project is Risk Management.

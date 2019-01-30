@@ -1,3 +1,8 @@
+---
+title: De-Risking
+description: Terms to use when talking about risk on a project.
+---
+
 # De-Risking
 
 It's important not only to consider the [Attendant Risks](Glossary#attendant-risk) you're trying to mitigate, but the ones you're likely to pick up in the process.  This means picking a careful path through the [Risk Landscape](Glossary#risk-landscape).  This is the essence of _De-Risking_. 

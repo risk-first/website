@@ -1,3 +1,8 @@
+---
+title: Map And Territory Risk
+description: Risks due to the differences between reality and the internal model of reality, and the assumption that they are equivalent. 
+---
+
 # Map And Territory Risk
 
 As we discussed in the [Communication Risk](Communication-Risk#misinterpretation-risk) section, our understanding of the world is informed by the names we give things and the abstractions we create.  <!-- tweet-end -->

@@ -1,3 +1,8 @@
+---
+title: Evaluating Risk
+description: Risk management theory around evaluating risk, e.g. Eisenhower's box, NPV, Discounting.
+---
+
 # Evaluating Risk
 
 Here, I am going to re-cap on some pre-existing risk management theory in order to set the scene for the next section which heads back to looking at risk on software projects.  

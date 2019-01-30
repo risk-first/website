@@ -1,3 +1,8 @@
+---
+title: Process Risk
+description: Risks due to the following a particular protocol of communication with a dependency, which may not work out the way we want.
+---
+
 # Process Risk
 
 [Process Risk](Process-Risk) is the risk you take on whenever you embark on completing a _process_. <!-- tweet-end -->

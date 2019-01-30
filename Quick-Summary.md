@@ -1,3 +1,8 @@
+---
+title: Quick Summary
+description: A quick summary of the underlying theory behind Risk-First
+---
+
 # Quick Summary
 
 ## 1.  There are Lots of Ways to Run Software Projects

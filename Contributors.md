@@ -1,3 +1,8 @@
+---
+title: Contributors
+description: List of contributors for the Risk-First wiki and other materials.
+---
+
 # Contributors
 
 Ideas, issues and proof-reading:
