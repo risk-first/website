@@ -1,3 +1,8 @@
+---
+title: A Simple Scenario
+description: An introduction to the concept that managing risk underpins all activity on projects.
+---
+
 # A Simple Scenario
 
 In this section, I'm going to introduce some terms for thinking about risk.
