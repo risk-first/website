@@ -1,6 +1,6 @@
 ---
 title: Agency Risk
-description: Description and examples of Agency Risk and three common ways to mitigate it: monitoring, security and goal alignment.
+description: Description and examples of Agency Risk and three common ways to mitigate it through monitoring, security and goal alignment.
 ---
 
 # Agency Risk
