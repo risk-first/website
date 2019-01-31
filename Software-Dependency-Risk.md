@@ -77,7 +77,7 @@ The interface of a system expands when you ask it to do a wide variety of things
 So, we now have split complexity into two:
 
  - The inner complexity of the tool (how it works internally, its own [internal complexity](Complexity-Risk#Kolmogorov-Complexity)).
- - The complexity of the instructions that we need to write to make the tool work, [the protocol complexity](Communication-Risk#protocol-risk), which will be a function of the complexity of the tool itself..
+ - The complexity of the instructions that we need to write to make the tool work, [the protocol complexity](Communication-Risk#protocol-risk), which will be a function of the complexity of the tool itself.
  
 ![Types of Complexity For a Software Dependency](images/generated/risks/software-dependency/protocol-complexity.png)
 
@@ -88,7 +88,7 @@ In the same way as with a hand-tool, the bulk of the complexity of a software to
 Software is not constrained by _physical_ ergonomics in the same way as a tool is. <!-- tweet-end --> But ideally, it should have conceptual ergonomics:  ideally, complexity is hidden away from the user behind the _User Interface_.  This is the familiar concept of [Abstraction](Glossary#abstraction) we've already looked at.  As we saw in [Communication Risk](Communication-Risk#learning-curve-risk), when we use a new protocol, we face [Learning Curve Risk](Communication-Risk#learning-curve-risk).  To minimise this, we should apply the [Principal Of Least Astonishment](https://en.wikipedia.org/wiki/Principle_of_least_astonishment) when designing protocols: 
 
  - **The abstractions should map easily to how the user expects the tool to work.** For example, I _expect_ the trigger on a drill to start the drill turning.  
- - **The abstractions should leverage existing idioms and knowledge.** In a new car, I _expect_ to know what the symbols on the dashboard mean, because I've driven other cars.
+ - **The abstractions should leverage existing idioms and knowledge.** In a new car I _expect_ to know what the symbols on the dashboard mean because I've driven other cars.
  - **The abstractions provide me with only the functions I need.** Because everything else is confusing and gets in the way.  
 
 ## Types Of Software Dependencies
@@ -99,7 +99,7 @@ There are lots of ways you can depend on software.  Here though, we're going to 
  2. **Software Libraries**:  importing code from the Internet, and using it in our project.  Often, libraries are Open Source (this is what we'll consider here).
  3. **Software-as-a-Service (SaaS)**: calling a service on the Internet, (probably via `http`)  This is often known as [SaaS, or Software as a Service](https://en.wikipedia.org/wiki/Software_as_a_service).
  
-All 3 approaches involve a different risk-profile.  Let's look at each in turn, from the perspective of which risks get mitigated, and which risks are accentuated. 
+All 3 approaches involve a different risk-profile.  Let's look at each in turn, from the perspective of which risks get mitigated, and which risks are exacerbated. 
  
 ### 1. Code Your Own
 
@@ -163,11 +163,9 @@ Unfortunately, we know that most decisions _don't_ really get made this way.  We
 
 But, leaving that aside, let's try to build a model of what this decision making process _should_ involve.  Luckily, other authors have already considered the problem of choosing good software libraries, so let's start there.
 
-In the table below, I am summarising three different sources (linked at the end of the section), which give descriptions of which factors to look for when choosing open-source libraries.
-
 ![Software Library Dependencies, Attendant Risks](images/generated/risks/software-dependency/software_dependency_table_1_large.png)
 
-The diagram above summarises the risks raised in some of the literature.  Here are some take-aways:
+In the table above, I am summarising three different sources (linked at the end of the section), which give descriptions of which factors to look for when choosing open-source libraries.  Here are some take-aways:
 
  - **[Feature Risk](Feature-Risk) is a big concern**:   How can you be sure that the project will do what you want it to do ahead of schedule?  Will it contain bugs or missing features?  By looking at factors like _release frequency_ and _size of the community_ you get a good feel for this which is difficult to fake.
  - **[Boundary Risk](Boundary-Risk) is also very important**:  You are going to have to _live_ with your choices for the duration of the project, so it's worth spending the effort to either ensure that you're not going to regret the decision, or that you can change direction later.
@@ -199,11 +197,11 @@ Businesses opt for Software-as-a-Service (SaaS) because:
 - Payment is usually based on _usage_, mitigating [Funding Risk](Scarcity-Risk#funding-risk).  e.g. Instead of having to pay up-front for a license and hire in-house software administrators, they can leave this function to the experts.
 - Potentially, you out-source the [Operational Risk](Operational-Risk) to a third party. e.g. ensuring availability, making sure data is secure and so on.
 
-SaaS is now a very convenient way to provide _commercial_ software.   Popular examples of SaaS might be [SalesForce](https://en.wikipedia.org/wiki/Salesforce.com), or [GMail](https://en.wikipedia.org/wiki/Gmail).  Both of which follow the commonly-used [Freemium](https://en.wikipedia.org/wiki/Freemium) model, where the basic service is provided free, but upgrading to a paid account gives extra benefits.  
+SaaS is now a very convenient way to provide _commercial_ software.   Popular examples of SaaS might be [SalesForce](https://en.wikipedia.org/wiki/Salesforce.com), or [GMail](https://en.wikipedia.org/wiki/Gmail).  Both of which follow the commonly-used [Freemium](https://en.wikipedia.org/wiki/Freemium) model, where the basic service is provided free but upgrading to a paid account gives extra benefits.  
 
 ![Software-as-a-Service (SaaS) Attendant Risks](images/generated/risks/software-dependency/software_dependency_table_2_large.png)
 
-The diagram above summarises the risks raised in some of the available literature.  Some take-aways:
+The diagram above summarises the risks raised in some of the available literature (sources below).  Some take-aways:
 
 - Clearly, [Operational Risk](Operational-Risk) is now a big concern.  By depending on a third-party organisation you are tying yourself to its success or failure in a much bigger way than just by using a piece of open-source software.   What happens to data security, both in the data centre and over the Internet?  Although you might choose a SaaS solution to mitigate _internal_ [Operational Risk](Operational-Risk), you might just be "throwing it over the wall" to a third party, who might do a worse job.
 - With [Feature Risk](Feature-Risk) you now have to contend with the fact that the software will be upgraded _outside your control_, and you may have limited control over which features get added or changed. 
@@ -250,10 +248,10 @@ Let's look at some more examples:
   
 ## Choice
 
-_Choosing_ dependencies can be extremely difficult.  As we discussed above, the usefulness of any tool depends on its fit for purpose, its _ergonomics within a given context_.  It's all too easy to pick a good tool for the wrong job:  
+Choosing dependencies can be extremely difficult.  As we discussed above, the usefulness of any tool depends on its fit for purpose, its _ergonomics within a given context_.  It's all too easy to pick a good tool for the wrong job:  
 
 > "I suppose it is tempting, if the only tool you have is a hammer, to treat everything as if it were a nail." - [Abraham Maslow, _Toward a Psychology of Being_](https://en.wiktionary.org/wiki/if_all_you_have_is_a_hammer,_everything_looks_like_a_nail)
 
-Having chosen a dependency, whether or not you end up in a more favourable position risk-wise is going to depend heavily on the quality of the execution and the skill of the implementor.  With software dependencies, we often have to live with the decisions we make for a long time: _choosing_ the software dependency is far easier than _changing it later_.
+Having chosen a dependency, whether or not you end up in a more favourable position risk-wise is going to depend heavily on the quality of the execution and the skill of the implementor.  With software dependencies we often have to live with the decisions we make for a long time: _choosing_ the software dependency is far easier than _changing it later_.
 
 Let's take a closer look at this problem in the next section, [Boundary Risk](Boundary-Risk).
