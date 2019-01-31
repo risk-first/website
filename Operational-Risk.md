@@ -9,7 +9,7 @@ description: Risks of losses or reputational damage caused by failing processes 
 
 In this section we're going to start considering the realities of running software systems in the real world.  
 
-There is a lot to this subject, so this section is really offers just a taster: we're going to set the scene by looking at what constitutes an [Operational Risk](Operational-Risk), and then look at the related discipline of [Operations Management](#operations-management).  Following this background, we'll apply the Risk-First model and have a high-level look at the various mitigations for [Operational Risk](Operational-Risk).  
+There is a lot to this subject, so this section is just a taster: we're going to set the scene by looking at what constitutes an [Operational Risk](Operational-Risk), and then look at the related discipline of [Operations Management](#operations-management).  Following this background, we'll apply the Risk-First model and have a high-level look at the various mitigations for [Operational Risk](Operational-Risk).  
 
 ## Operational Risks
 
@@ -45,7 +45,7 @@ If we are designing a software system to "live" in the real world, we have to be
 
 > "Operations management is an area of management concerned with designing and controlling the process of production and redesigning business operations in the production of goods or services.  It involves the responsibility of ensuring that business operations are efficient in terms of using as few resources as needed and effective in terms of meeting customer requirements. " - [Operations Management, _Wikipedia_](https://en.wikipedia.org/wiki/Operations_management)
 
-![Model of Operations Management, inspired by the work of Slack _et al._](images/generated/risks/operational/slack.png)
+![Model of Operations Management, adapted from Slack _et al._](images/generated/risks/operational/slack.png)
 
 The diagram above is a Risk-First interpretation of [Slack _et al_'s model of Operations Management](http://amzn.eu/d/b6ZjuMu).  This model breaks down some of the key abstractions of the discipline: 
 
@@ -90,11 +90,11 @@ As we saw in [Map and Territory Risk](Map-and-Territory-Risk), it's very easy to
 
 ### Scanning The Operational Context
 
-There are plenty of [Hidden Risks](Glossary#hidden-risk) within the environment the operation exists within, and these change all the time in response to economic, legal or political change.  In order to manage a risk, you have to uncover it, so part of [Operations Management](#Operations-Management) is to look for trouble:
+There are plenty of [Hidden Risks](Glossary#hidden-risk) within the operation's environment. These change all the time in response to economic, legal or political change.  In order to manage a risk, you have to uncover it, so part of [Operations Management](#Operations-Management) is to look for trouble.
 
-- **Environmental Scanning** is all about trying to determine which changes in the environment are going to impact your operation.   Here, we are trying to determine the level of [Dependency Risk](Dependency-Risk) we face for external dependencies, such as suppliers, customers, markets and regulation.  Tools like [PEST](https://en.wikipedia.org/wiki/PEST_analysis) are relevant here, as is 
-- **[Penetration Testing](https://en.wikipedia.org/wiki/Penetration_test)** is looking for security weaknesses within the operation.  See [OWASP](https://en.wikipedia.org/wiki/OWASP) for examples.
-- **[Vulnerability Management](https://en.wikipedia.org/wiki/Vulnerability_management)** is keeping up-to-date with vulnerabilities in [Software Dependencies](Software-Dependency-Risk).
+- **Environmental Scanning** is all about trying to determine which changes in the environment are going to impact your operation.   Here we are trying to determine the level of [Dependency Risk](Dependency-Risk) we face for external dependencies, such as suppliers, customers, markets and regulation.  Tools like [PEST](https://en.wikipedia.org/wiki/PEST_analysis) are relevant, as is 
+- **[Penetration Testing](https://en.wikipedia.org/wiki/Penetration_test)**: looking for security weaknesses within the operation.  See [OWASP](https://en.wikipedia.org/wiki/OWASP) for examples.
+- **[Vulnerability Management](https://en.wikipedia.org/wiki/Vulnerability_management)** is about keeping up-to-date with vulnerabilities in [Software Dependencies](Software-Dependency-Risk).
 
 ## Planning
 
@@ -114,7 +114,7 @@ While _planning_ is a day-to-day operational feedback loop, _design_ is a longer
 
 You might think that for an IT operation, tasks like [Design](#design) belong within a separate "Development" function within an organisation.  Traditionally, this might have been the case.  However separating Development from Operation implies [Boundary Risk](Boundary-Risk) between these two functions.  For example, the developers might employ different tools, equipment and processes to the operations team, resulting in a mismatch when software is delivered.
 
-In recent years, the [DevOps](https://en.wikipedia.org/wiki/DevOps) movement has brought this [Boundary Risk](Boundary-Risk) into sharper focus.  This specifically means:
+In recent years the [DevOps](https://en.wikipedia.org/wiki/DevOps) movement has brought this [Boundary Risk](Boundary-Risk) into sharper focus.  This specifically means:
  
   - Using code to automate previously manual Operations functions, like monitoring and releasing.
   - Involving Operations in the planning and design, so that the delivered software is optimised for the environment it runs in.
@@ -147,5 +147,5 @@ The "should we ship?" decision is therefore a complex one.  In [Meeting Reality]
 
 In a way, [actions](Glossary#taking-action) like **Design** and **Improvement** bring us right back to where we started from: identifying [Dependency Risks](Dependency-Risk), [Feature Risks](Feature-Risk) and [Complexity Risks](Complexity-Risk) that hinder our operation, and mitigating them through actions like _software development_.  
 
-Our safari of risk is finally complete. It's time to reflect on what we've seen in the next section, [Staging and Classifying](Staging-And-Classifying).  
+Our safari of risk is finally complete: it's time to reflect on what we've seen in the next section, [Staging and Classifying](Staging-And-Classifying).  
  
