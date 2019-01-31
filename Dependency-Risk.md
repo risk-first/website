@@ -80,7 +80,7 @@ Additionally, we often rely on _proxies for reliability_.  We'll look at these p
 
 ## Invisibility Risk
 
-While dependencies (like the bus) make life simpler for you, they do this by taking on complexity for you.
+Dependencies (like the bus) make life simpler for you by taking on complexity for you.
 
 In software, dependencies are a way to manage [Complexity Risk](Complexity-Risk).  The reason for this is that a dependency gives you an [abstraction](Glossary#abstraction): you no longer need to know _how_ to do something, (that's the job of the dependency), you just need to interact with the dependency properly to get the job done.  Buses are _perfect_ for people who can't drive, after all.
 
