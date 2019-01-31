@@ -23,7 +23,7 @@ This grants you some leeway as now you have two variables to play with: the _siz
 
 In startup circles, this "amount of time you can afford it" is called the ["Runway"](https://en.wiktionary.org/wiki/runway):  you have to get the product to "take-off" (become profitable) before the runway ends. 
 
-Startups often spend a lot of time courting investors in order to get funding and mitigate this type of [Schedule Risk](Scarcity-Risk#schedule-risk).<!-- tweet-end -->  But, as shown in the diagram above, this activity usually comes at the expense of [Opportunity Risk](Scarcity-Risk#opportunity-risk) and [Feature Risk](Feature-Risk), as usually the same people are trying to raise funds as build the project itself.  
+Startups often spend a lot of time courting investors in order to get funding and mitigate this type of [Schedule Risk](Scarcity-Risk#schedule-risk).<!-- tweet-end -->  But, as shown in the diagram above, this activity usually comes at the expense of [Opportunity Risk](Scarcity-Risk#opportunity-risk) and [Feature Risk](Feature-Risk), as usually the same people are diverted into raise funds instead of building the project itself.  
 
 ## Staff Risk
 
@@ -41,9 +41,9 @@ The longer your project goes on for, the more [Staff Risk](Scarcity-Risk#staff-r
 
 [Schedule Risk](Scarcity-Risk#schedule-risk) is very pervasive, and really underlies _everything_ we do.  People _want_ things, but they _want them at a certain time_.   We need to eat and drink every day, for example.  We might value having a great meal, but not if we have to wait three weeks for it.  
 
-And let's go completely philosophical for a second:  were you to attain immortality, you'd probably not feel the need to buy _anything_.  You'd clearly have no _needs_. Anything you wanted, you could create yourself within your infinite time-budget.  Rocks don't need money, after all.
+And let's go completely philosophical for a second:  were you to attain immortality, you'd probably not feel the need to buy _anything_.  You'd clearly have no _needs_. Anything you wanted, you could create yourself within your infinite time-budget.  _Rocks don't need money_, after all.
 
-In the section on [Feature Risk](Feature-Risk) we looked at [Market Risk](Feature-Risk), the idea that the value of your product is itself at risk from the morés of the market, share prices being the obvious example of that effect.  In Finance, we measure this using _money_, and we can put together probability models based on how much money you might make or lose.
+In the section on [Feature Risk](Feature-Risk) we looked at [Market Risk](Feature-Risk), the idea that the value of your product is itself at risk from the morés of the market, share prices being the obvious example of that effect.  In Finance, we measure this using _price_, and we can put together probability models based on how much _money_ you might make or lose.
 
 With [Schedule Risk](Scarcity-Risk#schedule-risk), the underlying measure is _time_:  
 
@@ -80,7 +80,7 @@ For example, let's look at the [iPad](https://en.wikipedia.org/wiki/History_of_t
 
 This was not the first tablet computer.  Apple had already tried to introduce the [Newton](https://en.wikipedia.org/wiki/Apple_Newton) in 1989, and Microsoft had released the [Tablet PC](https://en.wikipedia.org/wiki/Microsoft_Tablet_PC) in 1999.  But somehow, they both missed the [Window Of Opportunity](https://en.wikipedia.org/wiki/Window_of_opportunity).  Possibly, the window existed because Apple had changed the market with their release of the iPhone, which left people open to the idea of a tablet being "just a bigger iPhone".
 
-But maybe now, the iPad's window is closing?   We have more _wearable computers_ like the [Apple Watch](https://en.wikipedia.org/wiki/Apple_Watch), and voice-controlled devices like [Alexa](https://en.wikipedia.org/wiki/Amazon_Alexa) or [Siri](https://en.wikipedia.org/wiki/Siri).  Peak iPad was in 2014, according to [this graph](https://www.statista.com/statistics/269915/global-apple-ipad-sales-since-q3-2010/).   tbd add graph.
+But maybe now, the iPad's window is closing?   We have more _wearable computers_ like the [Apple Watch](https://en.wikipedia.org/wiki/Apple_Watch), and voice-controlled devices like [Alexa](https://en.wikipedia.org/wiki/Amazon_Alexa) or [Siri](https://en.wikipedia.org/wiki/Siri).  Peak iPad was in 2014 (according to [this graph at statista.com](https://www.statista.com/statistics/269915/global-apple-ipad-sales-since-q3-2010/)).   
 
 So, it seems Apple timed the iPad to hit the peak of the Window of Opportunity.  
 
