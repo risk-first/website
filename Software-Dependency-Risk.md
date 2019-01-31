@@ -254,4 +254,4 @@ Choosing dependencies can be extremely difficult.  As we discussed above, the us
 
 Having chosen a dependency, whether or not you end up in a more favourable position risk-wise is going to depend heavily on the quality of the execution and the skill of the implementor.  With software dependencies we often have to live with the decisions we make for a long time: _choosing_ the software dependency is far easier than _changing it later_.
 
-Let's take a closer look at this problem in the next section, [Boundary Risk](Boundary-Risk).
+Let's take a closer look at this problem in the section on [Boundary Risk](Boundary-Risk).  But first, lets looks at [processes](Process-Risk).
