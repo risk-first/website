@@ -62,8 +62,8 @@ The healthy functioning of the **Transform Process** is the domain of [Operation
 
  - **Control**:  ensuring that the Transform Process is working according to its targets.  This includes day-to-day quality control and monitoring . 
  - **Planning**: this covers aspects such as capacity planning, forecasting and project planning.   This is about making sure the transform process has targets to meet and the resources to meet them.
- - **Design**:  ensuring that the design of the product and the transform process itself fulfils an **Operational Strategy**.
- - **Improvement**:  improving the operation in response to changes in the **Environment** and the **Operational Strategy**, detecting failure and recovering from it.
+ - **Design**:  ensuring that the design of the product and the transform process itself fulfils an Operational Strategy.
+ - **Improvement**:  improving the operation in response to changes in the **Environment** and the Operational Strategy, detecting failure and recovering from it.
 
 Let's look at each of these actions in turn.
 
@@ -74,7 +74,7 @@ Let's look at each of these actions in turn.
 
 Since humans and machines have different areas of expertise, and because [Operational Risks](Operational-Risk) are often novel, it's often not optimal to try and automate everything.  A good operation will consist of a mix of human and machine actors, each playing to their strengths (see the table below). 
 
-The aim is to build a human-machine operational system that is [_Homeostatic_](https://en.wikipedia.org/wiki/Homeostasis).  This is the property of living things to try and maintain an equilibrium (for example, body temperature or blood glucose levels), but also applies to systems at any scale.  The key to homeostasis is to build systems with feedback loops, even though this leads to more complex systems overall. The diagram above shows some of the actions involved in these kind of feedback loops. 
+The aim is to build a human-machine operational system that is [_Homeostatic_](https://en.wikipedia.org/wiki/Homeostasis).  This is the property of living things to try and maintain an equilibrium (for example, body temperature or blood glucose levels), but also applies to systems at any scale.  The key to homeostasis is to build systems with feedback loops, even though this leads to more complex systems overall. The diagram above shows some of the actions involved in these kind of feedback loops within IT operations. 
 
 |Humans Are...                |Machines Are...              |
 |-----------------------------|-----------------------------|
@@ -109,7 +109,7 @@ Since our operation exists in a world of risks like [Red Queen Risk](Scarcity-Ri
 
 While _planning_ is a day-to-day operational feedback loop, _design_ is a longer feedback loop changing not just the parameters of the operation, but the operation itself.
 
-You might think that for an IT operation, tasks like [Design](#design) belong within a separate "Development" function within an organisation.  Traditionally, this might have been the case.  However separating Development from Operation implies [Boundary Risk](Boundary-Risk) between these two functions.  For example, the developers might employ different tools, equipment and processes to the operations team, resulting in a mismatch when software is delivered.
+You might think that for an IT operation, tasks like [Design](#design) belong within a separate "Development" function within an organisation.  Traditionally, this might have been the case.  However separating Development from Operations implies [Boundary Risk](Boundary-Risk) between these two functions.  For example, the developers might employ different tools, equipment and processes to the Operations team resulting in a mismatch when software is delivered.
 
 In recent years the [DevOps](https://en.wikipedia.org/wiki/DevOps) movement has brought this [Boundary Risk](Boundary-Risk) into sharper focus.  This specifically means:
  
