@@ -24,13 +24,14 @@ Having an event occur in a fixed time and place is [mitigating risk](Glossary#Mi
 
 ## But, Events Lead To Attendant Risk
 
-By _deciding to use the bus_ we've [Taken Action](Glossary#Taking-Action).  By agreeing a _time_ and _place_ for something to happen, you're introducing [Deadline Risk](Deadline-Risk).  Miss the deadline, and you miss the bus.
+![Action Diagram showing risks mitigated by having an _event_](images/generated/risks/deadline/dependency-risk-event.png)
+
+As you can see in the diagram above, by _deciding to use the bus_ we've [Taken Action](Glossary#Taking-Action).  By agreeing a _time_ and _place_ for something to happen, you're introducing [Deadline Risk](Deadline-Risk).  Miss the deadline, and you miss the bus.
 
 As discussed above, _schedules_ (such as bus timetables) exist so that _two or more parties can coordinate_<!-- tweet-end -->, and [Deadline Risk](Deadline-Risk) is on _all_ of the parties.  While there's a risk I am late, there's also a risk the bus is late.  I might miss the start of a concert, or the band might keep everyone waiting.
 
 In software development, deadlines are set in order to _coordinate work between teams_.  For example, having a product ready in production at the same time as the marketing campaign starts.  Fixing on an agreed deadline mitigates inter-team [Coordination Risk](Coordination-Risk).
 
-![Action Diagram showing risks mitigated by having an _event_](images/generated/risks/deadline/dependency-risk-event.png)
 
 ## Slack
 

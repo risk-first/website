@@ -196,7 +196,7 @@ Sometimes, the amount of complexity _goes up_ when you use a dependency for _goo
 Businesses opt for Software-as-a-Service (SaaS) because:
 
 - It promises to vastly reduce the [Complexity Risk](Complexity-Risk) they face in their organisations. e.g. managing the software or making changes to it.
-- Payment is usually based on _usage_, mitigating [Funding Risk](Scarcity-Risk#funding-risk).  e.g. Instead of having to pay up-front for a license, and hire in-house software administrators, they can leave this function to the experts.
+- Payment is usually based on _usage_, mitigating [Funding Risk](Scarcity-Risk#funding-risk).  e.g. Instead of having to pay up-front for a license and hire in-house software administrators, they can leave this function to the experts.
 - Potentially, you out-source the [Operational Risk](Operational-Risk) to a third party. e.g. ensuring availability, making sure data is secure and so on.
 
 SaaS is now a very convenient way to provide _commercial_ software.   Popular examples of SaaS might be [SalesForce](https://en.wikipedia.org/wiki/Salesforce.com), or [GMail](https://en.wikipedia.org/wiki/Gmail).  Both of which follow the commonly-used [Freemium](https://en.wikipedia.org/wiki/Freemium) model, where the basic service is provided free, but upgrading to a paid account gives extra benefits.  
@@ -232,7 +232,7 @@ Let's expand this view slightly and look at where different pieces of software s
 
 ## Software Dependencies as Features
 
-So far we've looked at different _approaches_ to software dependencies and the risk profiles they present.  But the category is less important than the specifics:  we are choosing specific tools for specific tasks.  [Software Dependencies](Software-Dependency-Risk) allows us to construct dependency networks to give us all kinds of features and mitigate all kinds of risk.  That is, the features we are looking for in a dependency _are to mitigate some kind of risk_.
+So far we've looked at different _approaches_ to software dependencies and the risk profiles they present.  But the category is less important than the specifics:  we are choosing _specific tools for specific tasks_.  [Software Dependencies](Software-Dependency-Risk) allows us to construct dependency networks to give us all kinds of features and mitigate all kinds of risk.  That is, the features we are looking for in a dependency _are to mitigate some kind of risk_.
 
 For example, I might start using [WhatsApp](https://en.wikipedia.org/wiki/WhatsApp) because I want to be able to send my friends photos and text messages.  However, it's likely that those same features allow us to mitigate [Coordination Risk](Coordination-Risk) when we're next trying to meet up. 
 
@@ -241,7 +241,6 @@ Let's look at some more examples:
 |Risk                                                 |Software Mitigating That Risk                                             |
 |-----------------------------------------------------|------------------------------------------------------------------------- |
 |[Coordination Risk](Coordination-Risk)               |Calendar tools,  Bug Tracking, Distributed Databases                      |
-|[Map-And-Territory-Risk](Map-And-Territory-Risk)     |The Internet, generally.  Excel, Google, "Big Data", Reporting tools      |
 |[Schedule-Risk](Scarcity-Risk#schedule-risk)         |Planning Software, Project Management Software                            |
 |[Communication-Risk](Communication-Risk)             |Email, Chat tools, CRM tools like SalesForce, Forums, Twitter, Protocols  |
 |[Process-Risk](Process-Risk)                         |Reporting tools, online forms, process tracking tools                     |
@@ -255,6 +254,6 @@ _Choosing_ dependencies can be extremely difficult.  As we discussed above, the 
 
 > "I suppose it is tempting, if the only tool you have is a hammer, to treat everything as if it were a nail." - [Abraham Maslow, _Toward a Psychology of Being_](https://en.wiktionary.org/wiki/if_all_you_have_is_a_hammer,_everything_looks_like_a_nail)
 
-Having chosen a dependency, whether or not you end up in a more favourable position risk-wise is going to depend heavily on the quality of the execution and the skill of the implementor.  With software dependencies, we often have to live with the decisions we make for a long time. <!-- tweet-end --> In my experience, given the [Boundary Risks](Boundary-Risk) associated with getting this wrong, not enough time is spent really thinking about this in advance.  
+Having chosen a dependency, whether or not you end up in a more favourable position risk-wise is going to depend heavily on the quality of the execution and the skill of the implementor.  With software dependencies, we often have to live with the decisions we make for a long time: _choosing_ the software dependency is far easier than _changing it later_.
 
 Let's take a closer look at this problem in the next section, [Boundary Risk](Boundary-Risk).
