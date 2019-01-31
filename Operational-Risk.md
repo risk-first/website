@@ -37,11 +37,11 @@ When building software, it's tempting to take a very narrow view of the dependen
    - Employees trying to steal from the company (bad actors).
    - Other crime, such as hackers stealing data.
 
-This is a long laundry-list of everything that can go wrong due to operating in "The Real World".  Although we've spent a lot of time looking at the varieties of [Dependency Risk](Dependency-Risk) on a software project, with [Operational Risk](Operational-Risk) we have to consider that these dependencies will fail in any number of unusual ways, and we can't be ready for all of them.  Nevertheless, preparing for this comes under the umbrella of [Operations Management](#operations-management).
+This is a long laundry-list of everything that can go wrong due to operating in "The Real World".  Although we've spent a lot of time looking at the varieties of [Dependency Risk](Dependency-Risk) on a software project, with [Operational Risk](Operational-Risk) we have to consider that these dependencies will fail in any number of unusual ways, and we can't be ready for all of them.  Preparing for this comes under the umbrella of [Operations Management](#operations-management).
 
 ## Operations Management
 
-If we are designing a software system to "live" in the real world, we have to be mindful of the **Operational Context** we're working in, and craft our software and processes accordingly.   This view of the "wider" system is the discipline of Operations Management.  
+If we are designing a software system to "live" in the real world we have to be mindful of the **Operational Context** we're working in and craft our software and processes accordingly.   This view of the "wider" system is the discipline of Operations Management.  
 
 > "Operations management is an area of management concerned with designing and controlling the process of production and redesigning business operations in the production of goods or services.  It involves the responsibility of ensuring that business operations are efficient in terms of using as few resources as needed and effective in terms of meeting customer requirements. " - [Operations Management, _Wikipedia_](https://en.wikipedia.org/wiki/Operations_management)
 
@@ -51,19 +51,16 @@ The diagram above is a Risk-First interpretation of [Slack _et al_'s model of Op
 
  - **A Transform Process** (the **Operation** itself), which tries to achieve an...
  - **Operational Strategy** (the objectives of the operation) and is embedded in the wider...
- - **Operational Context**.  
-
-The **Operational Context** supplies the **Transform Process** with three key dependencies:
-  
+ - **Operational Context**, which supplies the **Transform Process** with three key dependencies.  These are... 
  - **Resources**:  whether _transformed_ resources (like electricity or information, say) or _transforming_ resources (like staff or equipment).  
  - **Customers**: which supply it with money in return for goods and services.
  - **Operational Strategy**: the goals and objectives of the operation, informed by the reality of the environment it operates in.
  
 ![Risk-First Operations Management:  Taking Action, inspired by the work of Slack _et al._](images/generated/risks/operational/operational-risk.png)
  
-We have looked at processes like the **Transform Process** in the section on [Process Risk](Process-Risk).  The healthy functioning of this process is the domain of [Operations Management](#operations-management).  As the above diagram shows (again, modified from Slack _et al._) this involves the following types of actions:
+The healthy functioning of the **Transform Process** is the domain of [Operations Management](#operations-management).  As the above diagram shows (again, modified from Slack _et al._) this involves the following types of actions.
 
- - **Control**:  ensuring that the Operation is working according to its targets.  This includes day-to-day quality control and monitoring of the Transform Process. 
+ - **Control**:  ensuring that the Transform Process is working according to its targets.  This includes day-to-day quality control and monitoring . 
  - **Planning**: this covers aspects such as capacity planning, forecasting and project planning.   This is about making sure the transform process has targets to meet and the resources to meet them.
  - **Design**:  ensuring that the design of the product and the transform process itself fulfils an **Operational Strategy**.
  - **Improvement**:  improving the operation in response to changes in the **Environment** and the **Operational Strategy**, detecting failure and recovering from it.
