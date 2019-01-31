@@ -102,7 +102,9 @@ Now, they didn't _deliberately_ take 15 years to build this game (lots of things
 
 ![Red Queen Risk](images/generated/risks/scarcity/red-queen-risk.png)
 
-Personally, I have suffered the pain on project teams where we've had to cope with legacy code and databases because the cost of changing them was too high.  This is shown in the above diagram:  mitigating [Red Queen Risk](#red-queen-risk) by _keeping up-to-date_ has the [Attendant Risk](Glossary#attendant-risk) of costing time and money, which might not seem worth it.  Any team who is stuck using [Visual Basic 6.0](https://en.wikipedia.org/wiki/Visual_Basic) is here.   It's possible to ignore [Red Queen Risk](Scarcity-Risk#red-queen-risk) for a time, but this is just another form of [Technical Debt](Complexity-Risk) which eventually comes due.  
+Personally, I have suffered the pain on project teams where we've had to cope with legacy code and databases because the cost of changing them was too high.  This is shown in the above diagram:  mitigating [Red Queen Risk](#red-queen-risk) (by _keeping up-to-date_) has the [Attendant Risk](Glossary#attendant-risk) of costing time and money, which might not seem worth it.  Any team who is stuck using [Visual Basic 6.0](https://en.wikipedia.org/wiki/Visual_Basic) is here.   
+
+It's possible to ignore [Red Queen Risk](Scarcity-Risk#red-queen-risk) for a time, but this is just another form of [Technical Debt](Complexity-Risk) which eventually comes due.  
 
 
 ## Mitigations
@@ -121,6 +123,6 @@ Much like [Reliability Risk](Dependency-Risk#Reliability-risk), there is science
 
  - **[Queue Theory](https://en.wikipedia.org/wiki/Queueing_theory)** is all about building mathematical models of buffers, queues, pools and so forth.
  - **[Logistics](https://en.wikipedia.org/wiki/Logistics)** is the practical organisation of the flows of materials and goods around things like [Supply Chains](https://en.wikipedia.org/wiki/Supply_chain),
- - and **[Project Management](https://en.wikipedia.org/wiki/Project_management)** is in large part about ensuring the right resources are available at the right times.  We'll be taking a closer look at that in Risk-First Part 3 sections on Prioritisation and the [Project Management Body Of Knowledge](https://en.wikipedia.org/wiki/Project_Management_Body_of_Knowledge).
-
+ - and **[Project Management](https://en.wikipedia.org/wiki/Project_management)** is in large part about ensuring the right resources are available at the right times.  
+ 
 In this section, we've looked at various risks to do with scarcity of time, as a quantity we can spend like money.  But frequently, we have a dependency on a specific _event_.  On to [Deadline Risk](Deadline-Risk).
