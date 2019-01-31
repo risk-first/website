@@ -44,19 +44,17 @@ The amount of slack you build into the schedule is likely dependent on the level
  
 [Deadline Risk](Deadline-Risk) becomes very hard to manage when you have to coordinate actions with lots of tightly-constrained events.  So what else can give?  We can reduce the number of _parties_ involved in the event, which reduces risk, or, we can make sure all the parties are in the same _place_ to begin with.  
 
-## Deadlines
+## Focus
 
 Often when running a software project you're given a team of people and told to get something delivered by a certain date, i.e. you have an artificially-imposed deadline on delivery.
 
 What happens if you miss the deadline?  It could be:
 
  - The funding on the project runs out, and it gets cancelled.
- - You have to go back to a budgeting committee, and get more money.
- - The team gets replaced, because of lack of faith.
+ - You have to go back to a budgeting committee to get more money.
+ - Members of the team get replaced because of lack of faith.
  
-.. or something else.
-
-[Deadline Risk](Deadline-Risk) can be introduced by an authority in order to _sharpen focus_ and reduce [Coordination Risk](Coordination-Risk).  This is how we arrive at tools like [SMART Objectives](https://en.wikipedia.org/wiki/SMART_criteria) and [KPI's (Key Performance Indicators)](https://en.wikipedia.org/wiki/Performance_indicator).  
+.. or something else.  So [Deadline Risk](Deadline-Risk) can be introduced by an authority in order to _sharpen focus_.  This is how we arrive at tools like [SMART Objectives](https://en.wikipedia.org/wiki/SMART_criteria) and [KPI's (Key Performance Indicators)](https://en.wikipedia.org/wiki/Performance_indicator).  
 
 Deadlines change the way we evaluate goals and the solutions we choose because they force us to reckon with [Deadline Risk](Deadline-Risk).  For example, in JFK's quote:
 
@@ -74,7 +72,7 @@ As a successful author, Douglas Adams _didn't really care_ about the deadlines h
 
 [Schedule Risk](Scarcity-Risk#schedule-risk) and [Deadline Risk](Deadline-Risk) are clearly related: they both refer to the risk of running out of time.  However, the _risk profile_ of each is very different:
 
- - [Schedule Risk](Scarcity-Risk#schedule-risk) is _continuous_, like money.  i.e. you want to waste as little of it as possible.  Every extra day you take compounds [Schedule Risk](Scarcity-Risk#schedule-risk) additively, and a day wasted at the start of the project is much the same as a day wasted at the end.
+ - [Schedule Risk](Scarcity-Risk#schedule-risk) is _continuous_, like money.  i.e. you want to waste as little of it as possible.  Every extra day you take compounds [Schedule Risk](Scarcity-Risk#schedule-risk) additively. A day wasted at the start of the project is much the same as a day wasted at the end.
  - [Deadline Risk](Deadline-Risk) is _binary_.  The impact of [Deadline Risk](Deadline-Risk) is either zero (you make it in time) or one (you are late and miss the flight).  You don't particularly get a reward for being early.
  
 So, these are two separate concepts, both useful in software development and other fields.   Next up, something more specific: [Software Dependency Risk](Software-Dependency-Risk).
