@@ -5,7 +5,7 @@ description: Explanation of Agency Risk and ways to mitigate it through monitori
 
 # Agency Risk
 
-[Coordinating a team](Coordination-Risk) is difficult enough when everyone on the team has a single [Goal](Glossary#Goal-In-Mind). <!-- tweet-end --> But, people have their own goals, too.  Sometimes, their goals harmlessly co-exist with the team's goal, but other times they don't.
+[Coordinating a team](Coordination-Risk) is difficult enough when everyone on the team has a single [Goal](Glossary#Goal-In-Mind). <!-- tweet-end --> But people have their own goals too.  Sometimes their goals harmlessly co-exist with the team's goal, but other times they don't.
 
 This is [Agency Risk](Agency-Risk).   This term comes from finance and refers to the situation where you (the "principal") entrust your money to someone (the "agent") in order to invest it, but they don't necessarily have your best interests at heart.  They may instead elect to invest the money in ways that help them, or outright steal it.  
 
@@ -33,14 +33,14 @@ People taking time off, going to funerals, looking after sick relatives and so o
 
 Heroes put in more hours and try to rescue projects single-handedly, often cutting corners like team communication and process in order to get there.   
 
-Sometimes, projects don't get done without heroes.  But other times, the hero has an alternative agenda to just getting the project done:
+Sometimes projects don't get done without heroes.  But other times, the hero has an alternative agenda to just getting the project done:
 
 - A need for control, and for their own vision.
 - A preference to work alone.
 - A desire for recognition and acclaim from colleagues.
 - For the job security of being a [Key Person](https://en.wikipedia.org/wiki/Key_person_insurance).
 
-A team _can_ make use of heroism, but it's a double-edged sword.  The hero can becomes [a bottleneck](Coordination-Risk) to work getting done and because they want to solve all the problems themselves, they [under-communicate](Communication-Risk).  
+A team _can_ make use of heroism but it's a double-edged sword.  The hero can become [a bottleneck](Coordination-Risk) to work getting done and because they want to solve all the problems themselves, they [under-communicate](Communication-Risk).  
 
 ### CV Building
 
@@ -50,7 +50,7 @@ It's very easy to spot CV building:  look for choices of technology that are inc
 
 ### Devil Makes Work
 
-Heroes can be useful, but _underused_ project members are a nightmare.   The problem is, people who are not fully occupied begin to worry that actually, the team would be better off without them, and then wonder if their jobs are at risk.
+Heroes can be useful, but _underused_ project members are a nightmare.   The problem is, people who are not fully occupied begin to worry that actually the team would be better off without them, and then wonder if their jobs are at risk.
 
 Even if they don't worry about their jobs, sometimes they need ways to stave off _boredom_.  The solution to this is "busy-work":  finding tasks that, at first sight, look useful, and then delivering them in an over-elaborate way ([Gold Plating](https://en.wikipedia.org/wiki/Gold_plating_(software_engineering))) that'll keep them occupied.  This will leave you with more [Complexity Risk](Complexity-Risk) than you had in the first place.
 
@@ -58,18 +58,18 @@ Even if they don't worry about their jobs, sometimes they need ways to stave off
 
 > A project, activity or goal pursued as a personal favourite, rather than because it is generally accepted as necessary or important.  - [Pet Project, _Wiktionary_](https://en.wiktionary.org/wiki/pet_project)
 
-Sometimes, budget-holders have projects they value more than others without reference to the value placed on them by the business.  Perhaps the project has a goal that aligns closely with the budget holder's passions, or its related to work they were previously responsible for.  
+Sometimes budget-holders have projects they value more than others without reference to the value placed on them by the business.  Perhaps the project has a goal that aligns closely with the budget holder's passions, or it's related to work they were previously responsible for.  
 
 Working on a pet project usually means you get lots of attention (and more than enough budget), but it can fall apart very quickly under scrutiny.
 
 ### Morale Risk
 
-> Morale, also known as Esprit de Corps is the capacity of a group's members to retain belief in an institution or goal, particularly in the face of opposition or hardship - [Morale, _Wikipedia_](https://en.wikipedia.org/wiki/Morale) 
+> Morale, also known as Esprit de Corps, is the capacity of a group's members to retain belief in an institution or goal, particularly in the face of opposition or hardship - [Morale, _Wikipedia_](https://en.wikipedia.org/wiki/Morale) 
 
-Sometimes, the morale of the team or individuals within it dips, leading to lack of motivation.  [Morale Risk](Agency-Risk#morale-risk) is a kind of [Agency Risk](Agency-Risk) because it really means that a team member or the whole team isn't committed to the [Goal](Glossary#Goal-In-Mind), may decide their efforts are best spent elsewhere.  [Morale Risk](Agency-Risk#morale-risk) might be caused by:
+Sometimes the morale of the team or individuals within it dips, leading to lack of motivation.  [Morale Risk](Agency-Risk#morale-risk) is a kind of [Agency Risk](Agency-Risk) because it really means that a team member or the whole team isn't committed to the [Goal](Glossary#Goal-In-Mind) and may decide their efforts are best spent elsewhere.  [Morale Risk](Agency-Risk#morale-risk) might be caused by:
 
- - **External Factors**:  Perhaps the employees' dog has died, or they're simply tired of the industry, or are not feeling challenged.
- - **The goal feels unachievable**:  in this case, people won't commit their full effort to it.  This might be due to to a difference in the evaluation of the risks on the project between the team members and the leader.  In military science, a second meaning of morale is how well supplied and equipped a unit is.  This would also seem like a useful reference point for IT projects.  If teams are under-staffed or under-equipped, this will impact on motivation too.
+ - **External Factors**:  Perhaps the employee's dog has died, or they're simply tired of the industry, or are not feeling challenged.
+ - **The goal feels unachievable**:  in this case people won't commit their full effort to it.  This might be due to a difference in the evaluation of the risks on the project between the team members and the leader.  In military science, a second meaning of morale is how well supplied and equipped a unit is.  This would also seem like a useful reference point for IT projects.  If teams are under-staffed or under-equipped, it will impact on motivation too.
  - **The goal isn't sufficiently worthy**, or the team doesn't feel sufficiently valued.
 
 ### Software Processes
@@ -114,7 +114,7 @@ Monitoring of _software process_ agents is an important part of designing reliab
 
 Security is all about _setting limits_ on agency - both within and outside a system.  
 
-_Within_ a system we may wish to prevent our agents from causing accidental (or deliberate) harm, but we also have [Agency Risk](Agency-Risk) from unwanted agents _outside_ the system.  So security is also about ensuring that the environment we work in is _safe_ for the good actors to operate in, while keeping out the bad actors.
+_Within_ a system we may wish to prevent our agents from causing accidental (or deliberate) harm but we also have [Agency Risk](Agency-Risk) from unwanted agents _outside_ the system.  So security is also about ensuring that the environment we work in is _safe_ for the good actors to operate in while keeping out the bad actors.
 
 Interestingly, security is handled in very similar ways in all kinds of systems, whether biological, human or institutional: 
 
@@ -124,11 +124,11 @@ Interestingly, security is handled in very similar ways in all kinds of systems,
 - **Police**: to defend from _within_ the system, against internal [Agency Risk](Agency-Risk).
 - **Subterfuge**: hiding, camouflage, disguises, pretending to be something else. 
 
-These work various levels in **our own bodies**:  our _cells_ have _cell walls_ around them, and _cell membranes_ that act as the guards to allow things in and out.  Our _bodies_ have _skin_ to keep the world out, and we have _mouths_, _eyes_, _pores_ and so on to allow things in and out.  We have an _immune system_ to act as the police.
+These work at various levels in **our own bodies**:  our _cells_ have _cell walls_ around them, and _cell membranes_ that act as the guards to allow things in and out.  Our _bodies_ have _skin_ to keep the world out, and we have _mouths_, _eyes_, _pores_ and so on to allow things in and out.  We have an _immune system_ to act as the police.
 
 **Our societies** work in similar ways: in medieval times, a city would have walls, guards and gates to keep out intruders.  Nowadays, we have customs control, borders and passports.
 
-We're waking up to the realisation that our software systems need to work the same way:  we have [Firewalls](https://en.wikipedia.org/wiki/Firewall_(computing)) and we lock down _ports_ on servers to ensure there are the minimum number of _doors_ to guard.  We _police_ the servers with monitoring tools and we _guard_ access using passwords and other identification approaches. 
+We're waking up to the realisation that our software systems need to work the same way:  we have [Firewalls](https://en.wikipedia.org/wiki/Firewall_(computing)) and we lock down _ports_ on servers to ensure there are the minimum number of _doors_ to guard,  we _police_ the servers with monitoring tools, and we _guard_ access using passwords and other identification approaches. 
 
 [Agency Risk](Agency-Risk) and [Security Risk](Agency-Risk#security) thrive on complexity:  the more complex the systems we create, the more opportunities there are for bad actors to insert themselves and extract their own value.  The dilemma is, _increasing security_ also means increasing [Complexity Risk](Complexity-Risk), because secure systems are necessarily more complex than insecure ones.
 
