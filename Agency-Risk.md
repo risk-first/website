@@ -5,7 +5,7 @@ description: Explanation of Agency Risk and ways to mitigate it through monitori
 
 # Agency Risk
 
-[Coordinating a team](Coordination-Risk) is difficult enough when everyone on the team has a single [Goal](Glossary#Goal-In-Mind). <!-- tweet-end --> But people have their own goals too.  Sometimes their goals harmlessly co-exist with the team's goal, but other times they don't.
+[Coordinating a team](Coordination-Risk) is difficult enough when everyone on the team has a single [Goal](Glossary#Goal-In-Mind). <!-- tweet-end --> But people have their own goals too.  Sometimes their goals harmlessly co-exist with the team's goal, other times they don't.
 
 This is [Agency Risk](Agency-Risk).   This term comes from finance and refers to the situation where you (the "principal") entrust your money to someone (the "agent") in order to invest it, but they don't necessarily have your best interests at heart.  They may instead elect to invest the money in ways that help them, or outright steal it.  
 
@@ -23,7 +23,7 @@ As we saw in the previous section on [Process Risk](Process-Risk), <!-- tweet-st
 
 We shouldn't expect people on a project to sacrifice their personal lives for the success of the project, right?  <!-- tweet-end --> Except that ["Crunch Time"](https://en.wikipedia.org/wiki/Video_game_developer#"Crunch_time") is exactly how some software companies work:
 
-> "Game development... requires long working hours and dedication from their employees.  Some video game developers (such as Electronic Arts) have been accused of the excessive invocation of "crunch time".  "Crunch time" is the point at which the team is thought to be failing to achieve milestones needed to launch a game on schedule. " - [Crunch Time, _Wikipedia_](https://en.wikipedia.org/wiki/Video_game_developer#"Crunch_time")
+> "Game development... requires long working hours and dedication...  Some video game developers (such as Electronic Arts) have been accused of the excessive invocation of "crunch time".  "Crunch time" is the point at which the team is thought to be failing to achieve milestones needed to launch a game on schedule. " - [Crunch Time, _Wikipedia_](https://en.wikipedia.org/wiki/Video_game_developer#"Crunch_time")
 
 People taking time off, going to funerals, looking after sick relatives and so on are all acceptable forms of [Agency Risk](Agency-Risk). <!-- tweet-end --> They are the [Attendant Risk](Glossary#attendant-risk) of having _staff_ rather than _slaves_.
 
@@ -35,7 +35,7 @@ Heroes put in more hours and try to rescue projects single-handedly, often cutti
 
 Sometimes projects don't get done without heroes.  But other times, the hero has an alternative agenda to just getting the project done:
 
-- A need for control, and for their own vision.
+- A need for control and for their own vision.
 - A preference to work alone.
 - A desire for recognition and acclaim from colleagues.
 - For the job security of being a [Key Person](https://en.wikipedia.org/wiki/Key_person_insurance).
