@@ -123,7 +123,6 @@ But _correlation_ doesn't imply _causation_.  The _cause_ might be different:
  - Response time and revenue might both be down to clever team planning.
  
 ![Evolution Feature Risks, as manifested in the Internal Model](images/generated/risks/map-and-territory/map_and_territory_table_3.png)
- 
 
 Metrics are seductive because they simplify reality and are easily communicated.  But they _inherently_ contain [Map and Territory Risk](Map-and-territory-risk): by relying _only_ on the metrics, you're not really _seeing_ the reality.  
 
@@ -133,7 +132,7 @@ The devil is in the detail.
 
 In the same way that [markets evolve to demand more features](Scarcity-Risk#red-queen-risk), our behaviour evolves to incorporate new ideas.  The more popular an idea is, the more people will modify their behaviour as a result of it, and the more the world will change.   
 
-In the case of metrics, this is where they start being used for more than just indicators, but as measures of performance or targets:
+In the case of metrics this is where they start being used for more than just indicators but as measures of performance or targets:
 
  - If a team is _told_ to do lots of releases, they will perform lots of releases *at the expense of something else*.
  - If team members are promoted according to SLOC, they will make sure their code takes up as many lines as possible.
@@ -151,7 +150,7 @@ There are plenty of ideas which _seem a really good idea at the time_ but then e
 
 ![Hype Cycle for something that turns out to be a _bad_ idea](images/numbers/hype3.png)
 
-The above chart shows an initially promising idea that turns out to be terrible, and there is a "Period of Inoculation" where the population realise their mistake.  There is "negative hype" as they work to phase out the offending idea.
+The above chart shows an initially promising idea that turns out to be terrible.  That is, the **Knowledge** value of it ends up being significantly less than the **Map and Territory Risk** of using it.  Hence, there is a "Period of Inoculation" where the population realise their mistake - there is "negative hype" as they work to phase out the offending idea.
 
 SLOC is not on its own a _bad idea_, but using it as a metric for developer productivity _is_:
 
