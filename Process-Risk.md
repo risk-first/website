@@ -35,7 +35,7 @@ When we talk about "[Process Risk](Process-Risk)" we are really referring to the
 
 Processes tend to work well for the common cases because *practice makes perfect*,  but they are really tested when unusual situations occur.  Expanding processes to deal with edge-cases incurs [Complexity Risk](Complexity-Risk), so often it's better to try and have clear boundaries of what is "in" and "out" of the process' domain.
 
-Sometimes, processes are _not_ used commonly.  How can we rely on them anyway?  Usually, the answer is to build in extra [feedback loops](Glossary#feedback-loop) anyway:
+Sometimes, processes are _not_ used commonly.  How can we rely on them anyway?  Usually, the answer is to build in extra [feedback loops](Glossary#feedback-loop):
 
 - Testing that backups work, even when no backup is needed.
 - Running through a disaster recovery scenario at the weekend.
@@ -49,13 +49,13 @@ Often, Processes will include sign-off steps.  The [Sign-Off](Sign-Off) is an in
 
  - By signing off on something for the business, people are usually in some part staking their reputation on something being right. 
  - Therefore, you would expect that sign-off involves a lot of [Agency Risk](Agency-Risk):  people don't want to expose themselves in career-limiting ways.  
- - Therefore, the bigger the risk they are being asked to swallow, the more cumbersome and protracted the sign off process.  
+ - Therefore, the bigger the risk they are being asked to swallow, the more cumbersome and protracted the sign-off process.  
  
-Often, [Sign Offs](Sign-Off) boil down to a balance of risk for the signer:  on the one hand, _personal, career risk_ from signing off, on the other, the risk of upsetting the rest of the staff waiting for the sign-off, and the [Dead End Risk](Complexity-Risk#dead-end-risk) of all the effort gone into getting the sign off if they don't.  
+Often, [Sign-Offs](Sign-Off) boil down to a balance of risk for the signer:  on the one hand, _personal, career risk_ from signing off, on the other, the risk of upsetting the rest of the staff waiting for the sign-off, and the [Dead End Risk](Complexity-Risk#dead-end-risk) of all the effort gone into getting the sign-off if they don't.  
 
 This is a nasty situation, but there are a couple of ways to de-risk this: 
 
- - Break [Sign Offs](Sign-Off) down into bite-size chunks of risk that are acceptable to those doing the sign-off.  
+ - Break [Sign-Offs](Sign-Off) down into bite-size chunks of risk that are acceptable to those doing the signing-off.  
  - Agree far-in-advance the sign-off criteria.  As discussed in [Risk Theory](Evaluating-Risk), people have a habit of heavily discounting future risk, and it's much easier to get agreement on the _criteria_ than it is to get the sign-off. 
  
 ## Evolution Of Process
@@ -80,7 +80,7 @@ Let's look at an example of how that can happen in a step-wise way.
 
 ![Step 3: team `B` formalises the dependency with a Process](images/generated/risks/process/step3.png)
 
-3. Problems are likely to occur eventually in the `B`/`C` relationship.  Perhaps some members of the `B` team give better service than others, or deal with more variety in requests.   In order to standardise the response from `B`, and also to reduce scope-creep in requests from `C`, `B` organises bureaucratically, so that there is a controlled process (`P`) by which `A` can be accessed.  Members of teams `B` and `C` now interact via some request mechanism like forms (or another protocol).  
+3. Problems are likely to occur eventually in the `B`/`C` relationship.  Perhaps some members of the `B` team give better service than others, or deal with more variety in requests?   In order to standardise the response from `B` and also to reduce scope-creep in requests from `C`, `B` organises bureaucratically so that there is a controlled process (`P`) by which `A` can be accessed.  Members of teams `B` and `C` now interact via some request mechanism like forms (or another protocol).  
 
   - As shown in the above diagram, because of `P`, `B` can now process requests on a first-come-first-served basis and deal with them all in the same way: the more unusual requests from `C` might not fit the model.  These [Process Risks](Process-Risk) are now the problem of the form-filler in `C`.   
   - Since this is [Abstraction](Glossary#abstraction), `C` now has [Invisibility Risk](Communication-Risk#invisibility-risk) since it can't access team `B` and see how it works.
@@ -104,18 +104,18 @@ Two key take-aways from this:
 
 ## An Example - Release Processes
 
-Over the years I have worked in the Finance Industry it's given me time to observe how, across an entire industry, process can evolve, both in response to regulatory pressure but also because of organisational maturity, and mitigating risks:
+Over the years I have worked in the Finance Industry it's given me time to observe how, across an entire industry, process can evolve both in response to regulatory pressure, organisational maturity and mitigating risk:
 
 1. Initially, I could release software by logging onto the production accounts with a shared password that everyone knew, and deploy software or change data in the database.  
 2. The first issue with this is [Agency Risk from bad actors](Agency-Risk):  how could you know that the numbers weren't being altered in the databases? _Production Auditing_ was introduced so that at least you could tell what was being changed and when, in order to point the blame later.
 3. But there was still plenty of scope for deliberate or accidental [Dead-End Risk](Complexity-Risk#dead-end-risk) damage.  Next, passwords were taken out of the hands of developers and you needed approval to "break glass" to get onto production.  
 4. The increasing complexity (and therefore [Complexity Risk](Complexity-Risk)) in production environments meant that sometimes changes collided with each other, or were performed at inopportune times.  Change Requests were introduced.  This is an approval process which asks you to describe what you want to change in production, and why you want to change it.  
-5. The change request software is generally awful, making the job of raising change requests tedious and time-consuming.  Therefore, developers would _automate_ the processes for release, sometimes including the process to write the change request.  This allowed them to improve release cadence, at the expense of owning more code.
+5. The change request software is generally awful, making the job of raising change requests tedious and time-consuming.  Therefore, developers would _automate_ the processes for release, sometimes including the process to write the change request.  This allowed them to improve release cadence at the expense of owning more code.
 6. Auditors didn't like the fact that this automation existed, because effectively, that meant that developers could get access to production with the press of a button, effectively taking you back to step 1...
 
 ## Bureaucracy Risk
 
-Where we've talked about process evolution above, the actors involved have been acting in good faith:   they are working to mitigate risk in the organisation.  The [Process Risk](Process-Risk) that accretes along the way is an _unintended consequence_:  There is no guarantee that the process that arises will be humane and intuitive.  Many organisational processes end up being baroque or Kafka-esque, forcing unintuitive behaviour on their users.  This is partly because process design is _hard_, and it's difficult to anticipate all the various ways a process will be used ahead-of-time.  
+Where we've talked about process evolution above, the actors involved have been acting in good faith:   they are working to mitigate risk in the organisation.  The [Process Risk](Process-Risk) that accretes along the way is an _unintended consequence_:  There is no guarantee that the process that arises will be humane and intuitive.  Many organisational processes end up being baroque or Kafka-esque, forcing unintuitive behaviour on their users.  This is partly because process design is _hard_ and it's difficult to anticipate all the various ways a process will be used ahead-of-time.  
 
 But [Parkinson's Law](https://en.wikipedia.org/wiki/Parkinsons_law) takes this one step further:  the human actors shaping the organisation will abuse their positions of power in order to further their own careers (this is [Agency Risk](Agency-Risk), which we will come to in a future section):
 
