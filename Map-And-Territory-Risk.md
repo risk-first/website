@@ -91,9 +91,10 @@ The diagram above shows how Audience-type [Feature Risks](Feature-Risk) can mani
 
 ## Evolution
 
-![Spread of information between Internal Models](images/generated/risks/communication/communication_marketing.png)
+So concepts and abstractions spread through an audience.  But what happens next?   
 
-The section on [Communication Risk](Communication-Risk) introduced the above diagram for the spread of ideas.  But what happens next?   As we saw in [Boundary Risk](Boundary-Risk), the **Peter Principle** applies: people will use dependencies up to the point when they start breaking down.  
+ - As we saw above people will use and abuse new ideas up to the point when they start breaking down. (We also discussed this as the **Peter Principle** in [Boundary Risk](Boundary-Risk).)  
+ - At the same time, reality itself _evolves_ in response to the idea:  the new idea displaces old ones,  behaviour changes, and the idea itself can change. 
 
 ### Example: Metrics
 
