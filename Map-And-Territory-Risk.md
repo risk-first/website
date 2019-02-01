@@ -122,8 +122,6 @@ But _correlation_ doesn't imply _causation_.  The _cause_ might be different:
  - User satisfaction and SLOC might both be down to the calibre of the developers.
  - Response time and revenue might both be down to clever team planning.
  
-![Evolution Feature Risks, as manifested in the Internal Model](images/generated/risks/map-and-territory/map_and_territory_table_3.png)
-
 Metrics are seductive because they simplify reality and are easily communicated.  But they _inherently_ contain [Map and Territory Risk](Map-and-territory-risk): by relying _only_ on the metrics, you're not really _seeing_ the reality.  
 
 The devil is in the detail.
@@ -152,13 +150,17 @@ There are plenty of ideas which _seem a really good idea at the time_ but then e
 
 The above chart shows an initially promising idea that turns out to be terrible.  That is, the **Knowledge** value of it ends up being significantly less than the **Map and Territory Risk** of using it.  Hence, there is a "Period of Inoculation" where the population realise their mistake - there is "negative hype" as they work to phase out the offending idea.
 
-SLOC is not on its own a _bad idea_, but using it as a metric for developer productivity _is_:
+SLOC is not on its own a _bad idea_, but using it as a metric for developer productivity _is_.
 
 > "Measuring programming progress by lines of code is like measuring aircraft building progress by weight.” - [Bill Gates](https://www.goodreads.com/quotes/536587)
 
+![Evolution Feature Risks, as manifested in the Internal Model](images/generated/risks/map-and-territory/map_and_territory_table_3.png)
+
+The diagram above shows how Evolution-type [Feature Risks](Feature-Risk) can manifest in the Internal Model.
+
 ## Humans and Machines
 
-In the example of the SatNav, we saw how the _quality_ of [Map and Territory Risk](Map-And-Territory-Risk) is different for _people_ and _machines_.   Whereas people _should_ be expected show skepticism to new (unlikely) information, our databases accept it unquestioningly.  _Forgetting_ is an everyday, usually benign part of our human [Internal Model](Glossary#internal-model), but for software systems it is a production crisis involving 3am calls and backups.  
+In the example of the SatNav, we saw how the _quality_ of [Map and Territory Risk](Map-And-Territory-Risk) is different for _people_ and _machines_.   Whereas people _should_ be expected show skepticism for new (unlikely) information our databases accept it unquestioningly.  _Forgetting_ is an everyday, usually benign part of our human [Internal Model](Glossary#internal-model), but for software systems it is a production crisis involving 3am calls and backups.  
 
 For Humans, [Map and Territory Risk](Map-And-Territory-Risk) is exacerbated by [cognitive biases](https://en.wikipedia.org/wiki/List_of_cognitive_biases):
 
