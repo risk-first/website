@@ -205,5 +205,3 @@ As the book points out, while everyone _persists_ in using an inadequate abstrac
 Scientific journals are a single example taken from a closely argued book investigating lots of cases of this kind.  It's worth taking the time to read a couple of the chapters on this interesting topic.  (Like Risk-First it is available to read online).
 
 As usual, this section forms a grab-bag of examples in a complex topic.  But it's time to move on as there is one last stop we have to make on the [Risk Landscape](Glossary#risk-landscape), and that is to look at [Operational Risk](Operational-Risk).  
-
-Now, on to the last risk in our tour, [Operational Risk](Operational-Risk).
