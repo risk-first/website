@@ -19,7 +19,7 @@ We face [Map And Territory Risk](Map-And-Territory-Risk) because we base our beh
 
 > "Polish-American scientist and philosopher Alfred Korzybski remarked that "the map is not the territory"  and that "the word is not the thing", encapsulating his view that an abstraction derived from something, or a reaction to it, is not the thing itself. Korzybski held that many people _do_ confuse maps with territories, that is, confuse models of reality with reality itself." - [Map-Territory Relation, _Wikipedia_](https://en.wikipedia.org/wiki/Map–territory_relation)
 
-[Map And Territory Risk defined](images/generated/risks/map-and-territory/map-and-territory.png)
+![Map And Territory Risk defined](images/generated/risks/map-and-territory/map-and-territory.png)
 
 As the above diagram shows, there are two parts to this risk, which we are going to examine consecutively in this section:  
 
