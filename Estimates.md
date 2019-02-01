@@ -141,7 +141,7 @@ However, forcing staff to do overtime is a dangerous ploy:  it could disenfranch
 
 > Carl felt his blood pressure rise, especially since Bill had backed him into an unrealistic schedule in the first place. But he knew that with four schedule slips under his belt, he had no credibility left. He felt that he had to knuckle under to the mandatory overtime or he would lose his job. Carl told his team about the meeting. They worked hard and managed to deliver the software in just over 13 months. Additional implementation uncovered additional design flaws, but with everyone working 60 hours a week, they delivered the product through sweat and sheer willpower. " `(4)` - [McConnell, Steve, _Rapid Development_](http://amzn.eu/d/eTWKOsK)
 
-At point `(4)`, we see that Bill's gamble worked (for him at least):  the project was delivered on time by the team working overtime for two months.  This was lucky - it seems unlikely that no-one quit and that the code didn't descend into a mess in that time.  
+At point `(4)`, we see that Bill's gamble worked (for him at least):  the project was delivered by the team working overtime for two months.  This was lucky - it seems unlikely that no-one quit and that the code didn't descend into a mess in that time.  
 
 ![Team Response](images/generated/practices/estimates/team1.png)
 
@@ -244,8 +244,8 @@ Let's get back to Bill and Carl.  What went wrong between points `(1)` and `(2)`
  - **Bill _wants_ the system in 3-4 months.**  It doesn't happen.  
  - **He says it "must be delivered in 6 months", but this doesn't happen either.**  However, the world (and the project) doesn't end: _it carries on_.   What does this mean about the truth of his statement?  Was he deliberately lying about the end date, or just espousing his view on the [Schedule Risk](Scarcity-Risk#schedule-risk)?
  - **Carl's original estimate was 9 months.**   Was he working to this all along?  Did the initial brow-beating over deadlines at point `(1)` contribute to [Agency Risk](Agency-Risk) in a way that _didn't_ happen at point `(2)`?
- - **Why _did_ Bill get so angry?**  His understanding of the [Schedule Risk](Scarcity-Risk#schedule-risk) was, if anything, _worse_ than Carl's.  It's not stated in the account, but it's likely the [Trust Risk](Communication-Risk#trust--belief-risk) moved upwards:  Did his superiors stop trusting him?  Was his job at stake?
- - **How could including this risk in the discussion have improved the planning process?**  Could the conversation have started like this instead?
+ - **Why _did_ Bill get so angry?**  His understanding of the [Schedule Risk](Scarcity-Risk#schedule-risk) was, if anything, _worse_ than Carl's.  It's not stated in the account, but it's likely the [Trust Risk](Communication-Risk#trust--belief-risk) moved up the hierarchy:  Did his superiors stop trusting him?  Was his job at stake?
+ - **How could including this risk in the discussion have improved the planning process?**  Maybe the conversation have started like this instead:
 
 > "I think it will take about 9 months, but that's just a rough estimate at this point," Carl said. "That's not going to work," Bill said. "I was hoping you'd say 3 or 4 months.  I need to show the board something by then or I'm worried they will lose confidence in me and this project".  
 
@@ -271,11 +271,11 @@ Missing Bulk Uploads wouldn't be a show-stopper, but missing Spock would be a hu
 
 Let's recap those again, in reverse order:
 
-- **Tip #5: Picture Worrying Futures**:  For some given future point in time, try considering which risks you _don't_ want to be facing.
-- **Tip #4: Talk Frankly About All The Risks**:  Apply the Risk-First vocabulary to help.  
+- **Tip #5: Picture Worrying Futures**.  For some given future point in time, try considering which risks you _don't_ want to be facing.
+- **Tip #4: Talk Frankly About All The Risks**.  Apply the Risk-First vocabulary to help.  
 - **Tip #3: Meet Reality Early on the Biggest Risks**.
 - **Tip #2: The Risk Landscape is Increasingly Complex**:  This means you have a wide variety of possible [actions to take](Glossary#taking-action), so consider all the options.
-- **Tip #1: Estimating Should be About _Estimating [Payoff](Glossary#payoff)_**:  For your action, don't just get stuck on [Schedule Risk](Scarcity-Risk#schedule-risk).  Consider [the whole cast](Staging-And-Classifying#towards-a-periodic-table-of-risks).
+- **Tip #1: Estimating Should be About _Estimating [Payoff](Glossary#payoff)_**.  For your action, don't just get stuck on [Schedule Risk](Scarcity-Risk#schedule-risk).  Consider [the whole cast](Staging-And-Classifying#towards-a-periodic-table-of-risks).
 
 
 
