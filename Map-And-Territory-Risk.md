@@ -5,11 +5,11 @@ description: Risks due to the differences between reality and the internal model
 
 # Map And Territory Risk
 
-As we discussed in the [Communication Risk](Communication-Risk#misinterpretation-risk) section, our understanding of the world is informed by abstractions we create, and the names we give them.  <!-- tweet-end -->
+As we discussed in the [Communication Risk](Communication-Risk#misinterpretation-risk) section, our understanding of the world is informed by abstractions we create and the names we give them.  <!-- tweet-end -->
 
 For example, <!-- tweet-start -->Risk-First is about naming _risks_ within software development, so we can discuss and understand them better.<!-- tweet-end -->
 
-Our [Internal Models](Glossary#internal-model) of the world are constructed from these abstractions, and their relationships.
+Our [Internal Models](Glossary#internal-model) of the world are constructed from these abstractions and their relationships.
 
 ![Maps and Territories, and Communication happening between them](images/generated/risks/map-and-territory/communication.png) 
 
@@ -21,10 +21,10 @@ We face [Map And Territory Risk](Map-And-Territory-Risk) because we base our beh
 
 ![Map And Territory Risk defined](images/generated/risks/map-and-territory/map-and-territory-risk.png)
 
-As the above diagram shows, there are two parts to this risk, which we are going to examine consecutively in this section:  
+As the above diagram shows, there are two parts to this risk, which we are going to examine in this section:  
 
- - **The model is insufficient** which leads to issues along the same axes we introduced in [Feature Risk](Feature-Risk) (that is Fitness, Audience and Evolution).  We'll look at the examples of SatNavs, Software Metrics and Hype-Cycles along the way.
- - **The assumption that the model is right.** We'll examine [Map and Territory Risk](Map-And-Territory-Risk) within the contexts of **machines**, **people**, **hierarchies** and **markets**.
+ - **The internal model may be insufficient.** This leads to issues along the same axes we introduced in [Feature Risk](Feature-Risk) (that is Fitness, Audience and Evolution).  We'll look at the examples of SatNavs, Software Metrics and Hype-Cycles along the way to illustrate this.
+ - **The assumption that the model is right.** We're going to look at [Map and Territory Risk](Map-And-Territory-Risk) within the contexts of **machines**, **people**, **hierarchies** and **markets**.
 
 ## Fitness
 
