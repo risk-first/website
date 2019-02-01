@@ -68,7 +68,7 @@ Working on a pet project usually means you get lots of attention (and more than 
 
 Sometimes the morale of the team or individuals within it dips, leading to lack of motivation.  [Morale Risk](Agency-Risk#morale-risk) is a kind of [Agency Risk](Agency-Risk) because it really means that a team member or the whole team isn't committed to the [Goal](Glossary#Goal-In-Mind) and may decide their efforts are best spent elsewhere.  [Morale Risk](Agency-Risk#morale-risk) might be caused by:
 
- - **External Factors**:  Perhaps the employee's dog has died, or they're simply tired of the industry, or are not feeling challenged.
+ - **External Factors**:  perhaps the employee's dog has died, or they're simply tired of the industry, or are not feeling challenged.
  - **The goal feels unachievable**:  in this case people won't commit their full effort to it.  This might be due to a difference in the evaluation of the risks on the project between the team members and the leader.  In military science, a second meaning of morale is how well supplied and equipped a unit is.  This would also seem like a useful reference point for IT projects.  If teams are under-staffed or under-equipped, it will impact on motivation too.
  - **The goal isn't sufficiently worthy**, or the team doesn't feel sufficiently valued.
 
