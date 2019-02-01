@@ -15,7 +15,7 @@ Agency is the capacity of an actor to act in a given environment.  We use the te
 
 ### Feedback Loop
 
-The process of testing an [Internal Model](#internal-model) by testing it, through [taking action](#taking-action) to [Meet Reality](#meet-reality).  Typically, we talk about short or long feedback loops, depending on the intervals between [Meeting Reality](#meet-reality).
+The process of testing an [Internal Model](#internal-model), through [taking action](#taking-action) to [Meet Reality](#meet-reality).  Typically, we talk about short or long feedback loops, depending on the intervals between [Meeting Reality](#meet-reality).
 
 ### Goal In Mind
 
@@ -25,7 +25,7 @@ A picture of the future that an individual or team carries within their [Interna
 
 The model of reality held by an individual, team, software system or other [Agent](#agent).   You can regard the concept of [Internal Model](#internal-model) as being what you _know_ and what you _think_ about a certain situation.  An internal model _represents_ reality:  reality is made of matter, whereas the internal model is information.
 
-Obviously, because we've all had different experiences, and our brains are wired up differently, everyone will have a different [Internal Model](#internal-model) of reality.  
+Obviously, because we've all had different experiences, and our brains are wired up differently: everyone will have a different [Internal Model](#internal-model) of reality.  
 
 - Within an organisation, we might consider the [Internal Model](#internal-model) of a _team of people_ to be the shared knowledge, values and working practices of that team.
 - Within a software system, we might consider the [Internal Model](#internal-model) of a single server, and what knowledge it has of the world.
@@ -67,4 +67,4 @@ A hypothetical landscape on which risks can be placed.  [Taking Action](#taking-
 
 ### Taking Action
 
-Refers to any activity in the project.  Actions are usually in order to manage some kind of risk.  At the same time, [Taking Action](#taking-action) usually means interacting with reality and updating the [Internal Model](#internal-model).
+Refers to any activity in the project.  Actions are taken in order to manage some risk.  At the same time, [Taking Action](#taking-action) usually means interacting with reality and updating the [Internal Model](#internal-model).
