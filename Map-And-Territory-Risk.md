@@ -28,7 +28,7 @@ As the above diagram shows, there are two parts to this risk, which we are going
 
 ## Fitness
 
-In the [Feature Risk](Feature-Risk) section we looked at ways in which our software project might have risks due to having the wrong features ([Feature Fit Risk](Feature-Risk#feature-fit-risk)), _broken_ features ([Feature Implementation Risk](Feature-Risk#implementation-risk)) or _the wrong_ features ([Conceptual Integrity Risk](Feature-Risk#conceptual-integrity-risk)).  Let's see how these same categories also apply to [Internal Models](Glossary#internal-model).
+In the [Feature Risk](Feature-Risk) section we looked at ways in which our software project might have risks due to having _inappropriate_ features ([Feature Fit Risk](Feature-Risk#feature-fit-risk)), _broken_ features ([Feature Implementation Risk](Feature-Risk#implementation-risk)) or _too many of the wrong_ features ([Conceptual Integrity Risk](Feature-Risk#conceptual-integrity-risk)).  Let's see how these same categories also apply to [Internal Models](Glossary#internal-model).
 
 ### Example: The SatNav
 
@@ -51,7 +51,7 @@ The diagram above shows how types of [Feature Fit Risk](Feature-Risk) can manife
 
 ## Audience
 
-Communication allows us to _share_ information between [Internal Models](Glossary#internal-model) with a whole audience of people.  The [Communication Risk](Communication-Risk) and [Coordination Risk](Coordination-Risk) sections covered the difficulties inherent in aligning [Internal Models](Glossary#internal-model) so that they cooperate.
+Communication allows us to _share_ information between [Internal Models](Glossary#internal-model) of a whole audience of people.  The [Communication Risk](Communication-Risk) and [Coordination Risk](Coordination-Risk) sections covered the difficulties inherent in aligning [Internal Models](Glossary#internal-model) so that they cooperate.
 
 ![Relative popularity of "Machine Learning" and "Big Data" as search terms on [Google Trends](https://trends.google.com), 2011-2018 ](images/google-trends.png)
  
@@ -148,7 +148,7 @@ There are plenty of ideas which _seem a really good idea at the time_ but then e
 
 ![Hype Cycle for something that turns out to be a _bad_ idea](images/numbers/hype3.png)
 
-The above chart shows an initially promising idea that turns out to be terrible.  That is, the **Knowledge** value of it ends up being significantly less than the **Map and Territory Risk** of using it.  Hence, there is a "Period of Inoculation" where the population realise their mistake - there is "negative hype" as they work to phase out the offending idea.
+The above chart shows an initially promising idea that turns out to be terrible.  That is, the **Knowledge** value of it ends up being significantly less than the **Map and Territory Risk** of using it.  Hence, there is a "Period of Inoculation" where the population realise their mistake - there is "negative hype" as they work to phase out the offending idea until it's forgotten.
 
 SLOC is not on its own a _bad idea_, but using it as a metric for developer productivity _is_.
 
@@ -182,7 +182,7 @@ There are _lots_ of cognitive biases.  But let's just mention some that are rele
 
 This article identifies the following process:
 
-- **De-sensing**: VW Executives ignored _The Territory_, i.e. society around them (such as the green movement), ensuring their maps were out of date.  The top-down culture made it hard for reality to propagate back up the hierarchy.  
+- **De-sensing**: VW Executives ignored _The Territory_ of society around them (such as the green movement), ensuring their maps were out of date.  The top-down culture made it hard for reality to propagate back up the hierarchy.  
 - **Hubris/Absencing**:  they pursued their own metrics of _volume_ and _cost_, rather than seeking out others (a la the Availability Heuristic Bias).  That is, focusing on their own _Map_, which is _easier_ than checking the _Territory_. 
 - **Deception**:  backed into a corner, engineers had no choice but to find "creative" ways to meet the metrics.
 - **Destruction**: eventually, the truth comes out, to the detriment of the company, the environment and the shareholders.  As the article's title summarizes "A fish rots from the head down".
@@ -200,7 +200,7 @@ We've considered [Map and Territory Risk](Map-And-Territory-Risk) for individual
  
 > "Now consider the system of scientific journals... Some journals are prestigious. So university hiring committees pay the most attention to publications in that journal. So people with the best, most interesting-looking publications try to send them to that journal. So if a university hiring committee paid an equal amount of attention to publications in lower-prestige journals, they’d end up granting tenure to less prestigious people. Thus, the whole system is a stable equilibrium that nobody can unilaterally defy except at cost to themselves." - [Inadequate Equilibria, _Eleizer Yudkovsky_](https://equilibriabook.com/molochs-toolbox/)
 
-As the book points out, while everyone _persists_ in using an inadequate abstraction, the system is broken.  However, [Coordination](Coordination-Risk) would be required for everyone to _stop_ doing it this way, which is hard work.  (At least within a top-down hierarchy, Maps can get fixed.)
+As the book points out, while everyone _persists_ in using an inadequate abstraction, the system is broken.  However, [Coordination](Coordination-Risk) would be required for everyone to _stop_ doing it this way, which is hard work.  (Maps are easier to fix in a top-down hierarchy.)
 
 Scientific journals are a single example taken from a closely argued book investigating lots of cases of this kind.  It's worth taking the time to read a couple of the chapters on this interesting topic.  (Like Risk-First it is available to read online).
 
