@@ -5,7 +5,7 @@ description: Some suggestions for improving estimating in software projects, by 
 
 # Estimates
 
-In this section, we're going to put a Risk-First spin on the process of [Estimating](Estimates).  But in order to get there, we first need to start with understanding _why_ we estimate.  We're going to look at some "Old Saws" of software estimation and what we can learn from them.  Finally, we'll bring our Risk-First menagerie to bear on de-risking the estimation process.
+In this section, we're going to put a Risk-First spin on the process of [Estimating](Estimates).  But in order to get there, we first need to start with understanding _why_ we estimate.  We're going to look at some "Old Saws" of software estimation and what we can learn from them.  Finally, we'll bring our Risk-First [menagerie](Risk-Landscape) to bear on de-risking the estimation process.
 
 ## The Purpose Of Estimating
 
@@ -107,7 +107,7 @@ So the conclusion is:  **Focusing on the three risks of the iron triangle isn't 
  - There's no point in delivering the project on time if it's an [Operational Risk](Operational-Risk) nightmare, and requires constant round-the-clock support and will cost a fortune to _run_.  (Working on a project that "hits its delivery date" but is nonetheless a broken mess once in production is too common a sight.)
  - There's no point in delivering a project on-budget if [the market has moved on](Feature-Risk#market-risk) and [needs different features](Feature-Risk#feature-drift-risk).  
 
-### Old Saw No. 3: Parkinson's Law
+## Old Saw No. 3: Parkinson's Law
 
 We've already looked at Parkinson's Law in the section on [Agency Risk](Process-Risk#bureaucracy-risk), but lets recap:
 
