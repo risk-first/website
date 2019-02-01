@@ -47,7 +47,7 @@ You could argue that both the SatNav and the Driver's _[Internal Model](Glossary
 
 ![Some examples of Feature Fit Risks, as manifested in the Internal Model](images/generated/risks/map-and-territory/map_and_territory_table_1.png)
 
-The diagram above shows how types of [Feature Risk](Feature-Risk) can manifest in the [Internal Model](Glossary#internal-model). 
+The diagram above shows how types of [Feature Fit Risk](Feature-Risk) can manifest in the [Internal Model](Glossary#internal-model). 
 
 ## Audience
 
@@ -87,7 +87,7 @@ Where the **Awareness** and **Knowledge** grow more evenly together, there is no
 
 ![Audience Feature Risks, as manifested in the Internal Model](images/generated/risks/map-and-territory/map_and_territory_table_2.png)
 
-(The Hype Cycle model is available in **Numbers** format [here](https://github.com/risk-first/website/blob/master/RiskMatrix.numbers).)
+The diagram above shows how Audience-type [Feature Risks](Feature-Risk) can manifest in the Internal Model. (The Hype Cycle model is available in **Numbers** format [here](https://github.com/risk-first/website/blob/master/RiskMatrix.numbers).)
 
 ## Evolution
 
