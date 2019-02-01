@@ -34,7 +34,7 @@ In the [Feature Risk](Feature-Risk) section we looked at ways in which our softw
 
 ![Sat Nav Blunder Sends Asda Van Crashing Narrow Footpath - Telegraph Newspaper](images/sat_nav.png)
 
-In the headline above, taken from [the Telegraph newspaper](https://www.telegraph.co.uk/news/newstopics/howaboutthat/6413887/Asda-van-crashes-after-sat-nav-sends-driver-to-narrow-footpath.html), the driver _trusted_ the SatNav to such an extent that he didn't pay attention to the road-signs around him, and ended up getting stuck.  
+In the headline above, taken from [the Telegraph newspaper](https://www.telegraph.co.uk/news/newstopics/howaboutthat/6413887/Asda-van-crashes-after-sat-nav-sends-driver-to-narrow-footpath.html), the driver _trusted_ the SatNav to such an extent that he didn't pay attention to the road-signs around him and ended up getting stuck.  
 
 This wasn't borne of stupidity, but experience:  SatNavs are pretty reliable. _So many times_ the SatNav had been right, that the driver stopped _questioning its fallibility_.  
 
@@ -53,11 +53,11 @@ The diagram above shows how types of [Feature Risk](Feature-Risk) can manifest i
 
 ![Audience Feature Risks, as manifested in the Internal Model](images/generated/risks/map-and-territory/map_and_territory_table_2.png)
 
-Communication allows us to _share_ information between [Internal Models](Glossary#internal-model) with a whole audience of people, and the [Communication Risk](Communication-Risk) and [Coordination Risk](Coordination-Risk) sections covered the difficulties inherent in aligning [Internal Models](Glossary#internal-model) so that they cooperate.
+Communication allows us to _share_ information between [Internal Models](Glossary#internal-model) with a whole audience of people.  The [Communication Risk](Communication-Risk) and [Coordination Risk](Coordination-Risk) sections covered the difficulties inherent in aligning [Internal Models](Glossary#internal-model) so that they cooperate.
 
 ![Relative popularity of "Machine Learning" and "Big Data" as search terms on [Google Trends](https://trends.google.com), 2011-2018 ](images/google-trends.png)
  
-But how does [Map and Territory Risk](Map-And-Territory-Risk) apply across a population of [Internal Models](Glossary#internal-model)?   Can we track the rise-and-fall of _ideas_ much as we can track stock prices.  In effect, this is what [Google Trends](https://trends.google.com) does.  In the chart above, we can see the relative popularity of two search terms over time.  This is probably as good an indicator as any of the audience for an abstraction at any point in time.
+But how does [Map and Territory Risk](Map-And-Territory-Risk) apply across a population of [Internal Models](Glossary#internal-model)?   Can we track the rise-and-fall of _ideas_ like we track stock prices?  In effect, this is what [Google Trends](https://trends.google.com) does.  In the chart above, we can see the relative popularity of two search terms over time.  This is probably as good an indicator as any of the changing popularity of an abstraction within an audience.
 
 ### Example: Map And Territory Risk Drives The Hype Cycle
 
@@ -67,9 +67,9 @@ Most ideas (and most products) have a slow, hard climb to wide-scale adoption.  
 
 ![Hype Cycle, along with Map & Territory Risk](images/numbers/hype1.png)
 
-The five phases (and the "Hype" itself as the thick black line) are shown in the chart above.  We start off at the "Technology Trigger", moving to the "Peak of Inflated Expectations", then to the "Trough of Disillusionment" and finally to the "Plateau of Productivity".  
+The five phases (and the "Hype" itself as the thick black line) are shown in the chart above.  We start off at the "Technology Trigger", moving to the "Peak of Inflated Expectations", then to the "Trough of Disillusionment" and finally up the "Slope of Enlightenment" to the "Plateau of Productivity".  
 
-The concept of [Map and Territory Risk](Map-And-Territory-Risk) actually helps explain why this curve has the shape it does, as the chart above demonstrates.  Let's consider each line in turn:
+The concept of [Map and Territory Risk](Map-And-Territory-Risk) actually helps explain why this curve has the shape it does.  To see why, let's consider each line in turn:
 
  - The **Awareness** (or enthusiasm for) the idea within the population is the dotted line.
  
@@ -77,13 +77,15 @@ The concept of [Map and Territory Risk](Map-And-Territory-Risk) actually helps e
 
  - **Map And Territory Risk** is the difference between **Awareness** and **Knowledge**.  It's highest point is where the **Awareness** of the idea is farthest from the **Knowledge** of it.  
 
- - **Hype** is calculated here as being the **Awareness** line with a subtraction due to [Map and Territory Risk](Map-And-Territory-Risk).  As the population appreciates more [Map and Territory Risk](Map-And-Territory-Risk), **hype** decreases.   At the point where [Map and Territory Risk](Map-And-Territory-Risk) is at its greatest we end up in the "Trough of Disillusionment".  Eventually, we escape the trough as knowledge and understanding of the idea increases and reduces [Map and Territory Risk](Map-And-Territory-Risk).
+ - **Hype** is calculated here as being the **Awareness** line, subtracting **Map and Territory Risk** from a point lagging behind the current time (since it takes time to appreciate this risk).  As the population appreciates more [Map and Territory Risk](Map-And-Territory-Risk), **Hype** decreases.   At the point where the effect of [Map and Territory Risk](Map-And-Territory-Risk) is at its greatest we end up in the "Trough of Disillusionment".  Eventually, we escape the trough as **Knowledge** and understanding of the idea increases, reducing [Map and Territory Risk](Map-And-Territory-Risk).
  
 ![Hype Cycle 2: more even growth of Awareness and Knowledge means no "Trough of Disillusionment"](images/numbers/hype2.png)
 
 As you might expect, the "Trough of Disillusionment" exists because the **Awareness** of the idea and the **Knowledge** about it increase at different rates.
  
 Where the **Awareness** and **Knowledge** grow more evenly together, there is no spike in [Map and Territory Risk](Map-And-Territory-Risk) and we don't see the corresponding "Trough of Disillusionment" at all, as shown in the above chart.
+
+(The Hype Cycle model is available in **Numbers** format [here](https://github.com/risk-first/website/blob/master/RiskMatrix.numbers).)
 
 ## Evolution
 
