@@ -5,23 +5,34 @@ description: Risks due to the differences between reality and the internal model
 
 # Map And Territory Risk
 
-As we discussed in the [Communication Risk](Communication-Risk#misinterpretation-risk) section, our understanding of the world is informed by the names we give things and the abstractions we create.  <!-- tweet-end -->
+As we discussed in the [Communication Risk](Communication-Risk#misinterpretation-risk) section, our understanding of the world is informed by abstractions we create, and the names we give them.  <!-- tweet-end -->
 
-In the same way, <!-- tweet-start -->Risk-First is about naming risks within software development and calling them out.<!-- tweet-end -->
+For example, <!-- tweet-start -->Risk-First is about naming _risks_ within software development, so we can discuss and understand them better.<!-- tweet-end -->
 
-Our [Internal Models](Glossary#internal-model)  of the world based on these abstractions, and their relationships.
-
-So there is a translation going on here: observations about the arrangement of _atoms_ in the world get turned into patterns of _information_ (measured in bits and bytes). <!-- tweet-end --> 
+Our [Internal Models](Glossary#internal-model) of the world are constructed from these abstractions, and their relationships.
 
 ![Maps and Territories, and Communication happening between them](images/generated/risks/map-and-territory/communication.png) 
 
-Like [Trust & Belief Risk](Communication-Risk#trust--belief-risk) and [Learning Curve Risk](Communication-Risk#learning-curve-risk), [Map And Territory Risk](Map-And-Territory-Risk) is an [Internal Model Risk](Communication-Risk#internal-models), and is the risk we face because we base our behaviour on our [Internal Models](Glossary#internal-model) rather than reality itself.  It comes from the expression "Confusing the Map for the Territory", attributed to Alfred Korzybski:
+As the diagram above shows, there is a translation going on here: observations about the arrangement of _atoms_ in the world are _communicated_ to our [Internal Models](Glossary#internal-model) and stored as patterns of _information_ (measured in bits and bytes). <!-- tweet-end --> 
+
+We face [Map And Territory Risk](Map-And-Territory-Risk) because we base our behaviour on our [Internal Models](Glossary#internal-model) rather than reality itself.  It comes from the expression "Confusing the Map for the Territory", attributed to Alfred Korzybski:
 
 > "Polish-American scientist and philosopher Alfred Korzybski remarked that "the map is not the territory"  and that "the word is not the thing", encapsulating his view that an abstraction derived from something, or a reaction to it, is not the thing itself. Korzybski held that many people _do_ confuse maps with territories, that is, confuse models of reality with reality itself." - [Map-Territory Relation, _Wikipedia_](https://en.wikipedia.org/wiki/Map–territory_relation)
 
-In this section, we're going to make a case for analysing [Map and Territory Risk](Map-And-Territory-Risk) along the same axes we introduced for [Feature Risk](Feature-Risk), that is **Fitness**, **Audience** and **Evolution**.  After that, we are going to widen the scope by looking at [Map and Territory Risk](Map-And-Territory-Risk) within the context of **machines**, **people**, **hierarchies** and **markets**.
+[Map And Territory Risk defined](images/generated/risks/map-and-territory/map-and-territory.png)
+
+As the above diagram shows, there are two parts to this risk, which we are going to examine consecutively in this section:  
+
+ - First, **the insufficiency of the model** using the same axes we introduced for [Feature Risk](Feature-Risk) (that is **Fitness**, **Audience** and **Evolution**), looking at SatNavs, Software Metrics and Hype-Cycles along the way.
+ - **Second, the assumption that the model is right**. We'll examine [Map and Territory Risk](Map-And-Territory-Risk) within the contexts of **machines**, **people**, **hierarchies** and **markets**.
 
 ## Fitness
+
+In the [Feature Risk](Feature-Risk) section we looked at ways in which our software project might have risks due to having the wrong features ([Feature Fit Risk](Feature-Risk#feature-fit-risk), _broken_ features ([Feature Implementation Risk](Feature-Risk#implementation-risk) or _the wrong_ features ([Conceptual Integrity Risk](Feature-Risk#conceptual-integrity-risk).  
+
+Let's see how these same categories _also_ apply to [Internal Models](Glossary#internal-model).
+
+### Example: The SatNav
 
 ![Sat Nav Blunder Sends Asda Van Crashing Narrow Footpath - Telegraph Newspaper](images/sat_nav.png)
 
@@ -29,38 +40,30 @@ In the headline above, taken from [the Telegraph newspaper](https://www.telegrap
 
 This wasn't borne of stupidity, but experience:  SatNavs are pretty reliable. _So many times_ the SatNav had been right, that the driver stopped _questioning its fallibility_.  
 
-So, there are two [Map and Territory Risks](Map-And-Territory-Risk) here:
+There are two [Map and Territory Risks](Map-And-Territory-Risk) here:
 
 - The [Internal Model](Glossary#internal-model) of the _SatNav_ contained information that was wrong:  the track had been marked up as a road, rather than a path.  
 - The [Internal Model](Glossary#internal-model) of the _driver_ was wrong:   his abstraction of "the SatNav is always right" turned out to be only _mostly_ accurate.  
 
-We've already looked in detail at the [Dependency Risks](Dependency-Risk) involved in relying on something like a SatNav, in the [Software Dependency Risk](Software-Dependency-Risk) section.  But here, we are really looking at the _[Internal Models](Glossary#internal-model) themselves_ as a source of [Dependency Risk](Dependency-Risk) too.
+You could argue that both the SatNav and the Driver's _[Internal Model](Glossary#internal-model)_ had bugs in them.  That is, they both suffer the [Feature Implementation Risk](Feature-Risk#implementation-risk) we saw in the [Feature Risk](Feature-Risk) section.  If a SatNav has too much of this, you'd end up not trusting it, and getting a new one.  With your _personal_ [Internal Model](Glossary#internal-model), you can't buy a new one, but you may learn to _trust your assumptions less_.
 
-You could argue that the SatNav and the Driver's [Internal Model](Glossary#internal-model) had bugs in them.  That is, they both suffer the [Feature Implementation Risk](Feature-Risk#implementation-risk) we saw in the [Feature Risk](Feature-Risk) section.  If a SatNav has too much of this, you'd end up not trusting it, and getting a new one.  With your _personal_ [Internal Model](Glossary#internal-model), you can't buy a new one, but you may learn to _trust your assumptions less_.
+![Some examples of Feature Fit Risks, as manifested in the Internal Model](images/generated/risks/map-and-territory/map_and_territory_table_1.png)
 
-In the [Feature Risk](Feature-Risk) section, we broke down [Feature Risk](Feature-Risk) on three axes:  **Fitness**, **Evolution** and **Audience**.  
-
-![Feature Risk, as manifested in the Internal Model](images/generated/risks/map-and-territory/map_and_territory_table_1.png)
-
-The diagram above does this again, showing how type of [Feature Fit Risk](Feature-Risk) can manifest in the [Internal Model](Glossary#internal-model). 
+The diagram above shows how types of [Feature Risk](Feature-Risk) can manifest in the [Internal Model](Glossary#internal-model). 
 
 ## Audience
 
 ![Audience Feature Risks, as manifested in the Internal Model](images/generated/risks/map-and-territory/map_and_territory_table_2.png)
 
-We already know a lot about [Internal Models](Glossary#internal-model) and Audience, as these have been the subject of previous sections:
+Communication allows us to _share_ information between [Internal Models](Glossary#internal-model) with a whole audience of people, and the [Communication Risk](Communication-Risk) and [Coordination Risk](Coordination-Risk) sections covered the difficulties inherent in aligning [Internal Models](Glossary#internal-model) so that they cooperate.
 
- - We know from looking at [Communication Risk](Communication-Risk) that communication allows us to _share_ information between [Internal Models](Glossary#internal-model). 
- - We know from [Coordination Risk](Coordination-Risk) the difficulties inherent in aligning [Internal Models](Glossary#internal-model) so that they cooperate.
- - Job markets show us that there is demand for people with certain _skills_.  This demonstrates to us that [Market Risk](Feature-Risk#market-risk) is as applicable to [Internal Models](Glossary#internal-model) containing certain information as it is to products containing [Features](Feature-Risk).  This was the focus of the [Ecosystem](boundary-risk#Lock-In) discussion in [Boundary Risk](Boundary-Risk).
- 
 ![Relative popularity of "Machine Learning" and "Big Data" as search terms on [Google Trends](https://trends.google.com), 2011-2018 ](images/google-trends.png)
  
-Therefore, we should be able to track the rise-and-fall of _ideas_ much as we can track stock prices.  And in effect, this is what [Google Trends](https://trends.google.com) does.  In the chart above, we can see the relative popularity of two search terms over time.  This is probably as good an indicator as any of the audience for an abstraction at any point in time.
+But how does [Map and Territory Risk](Map-And-Territory-Risk) apply across a population of [Internal Models](Glossary#internal-model)?   Can we track the rise-and-fall of _ideas_ much as we can track stock prices.  In effect, this is what [Google Trends](https://trends.google.com) does.  In the chart above, we can see the relative popularity of two search terms over time.  This is probably as good an indicator as any of the audience for an abstraction at any point in time.
 
-### Example: Hype Cycles
+### Example: Map And Territory Risk Drives The Hype Cycle
 
-Most ideas (and most products) have a slow, hard climb to wide-scale adoption.  But some ideas seem to disperse much more rapidly and are picked up quickly because they are exciting and promising, having greater "memetic potential" within society.  One way this evolution manifests itself in the world is though the [Hype Cycle](https://en.wikipedia.org/wiki/Hype_cycle):
+Most ideas (and most products) have a slow, hard climb to wide-scale adoption.  But some ideas seem to disperse much more rapidly and are picked up quickly because they are exciting, having greater "memetic potential" within a population.  One way this evolution manifests itself in the world is though the [Hype Cycle](https://en.wikipedia.org/wiki/Hype_cycle):
 
 > "The hype cycle is a branded graphical presentation developed and used by the American research, advisory and information technology firm Gartner, for representing the maturity, adoption and social application of specific technologies. The hype cycle provides a graphical and conceptual presentation of the maturity of emerging technologies through five phases." - [Hype Cycle, _Wikipedia_](https://en.wikipedia.org/wiki/Hype_cycle)
 
@@ -68,20 +71,21 @@ Most ideas (and most products) have a slow, hard climb to wide-scale adoption.  
 
 The five phases (and the "Hype" itself as the thick black line) are shown in the chart above.  We start off at the "Technology Trigger", moving to the "Peak of Inflated Expectations", then to the "Trough of Disillusionment" and finally to the "Plateau of Productivity".  
 
-The concept of [Map and Territory Risk](Map-And-Territory-Risk) actually helps explain why this curve has the shape it does.  The chart above also shows where the hype originates:
+The concept of [Map and Territory Risk](Map-And-Territory-Risk) actually helps explain why this curve has the shape it does, as the chart above demonstrates.  Let's consider each line in turn:
 
- - The **awareness** of the idea within the audience as a dotted line.
- - The **knowledge** of the idea by the audience (a [Learning Curve](Communication-risk#learning-curve-risk), if you will) as a dashed line.
+ - The **Awareness** (or enthusiasm for) the idea within the population is the dotted line.
  
-Both of these are modelled with [Cumulative Distribution](https://en.wikipedia.org/wiki/Cumulative_distribution_function#Use_in_statistical_analysis) curves, which are often used for modelling the spread of a phenomena (disease, product uptake, idea) within a population.  From these two things, we can figure out where our maximum [Map and Territory Risk](Map-And-Territory-Risk) lies:  it's the point where awareness of an idea is farthest from the understanding of it.  
+ - The **Knowledge** (or _understanding_) of the idea within the audience (a [Learning Curve](Communication-risk#learning-curve-risk), if you will) is the dashed line.  Both of these are modelled with [Cumulative Distribution](https://en.wikipedia.org/wiki/Cumulative_distribution_function#Use_in_statistical_analysis) functions which are often used for modelling the spread of a phenomena (disease, product uptake, idea) within a population.  As you would expect, **Knowledge** increases less rapidly than **Awareness**. 
 
-This [Map and Territory Risk](Map-And-Territory-Risk) acts as a "brake" on the **hype** around the idea.  In the diagram, our "hype" curve is calculated as being the same as the "saturation" line, with a subtraction due to [Map and Territory Risk](Map-And-Territory-Risk).  As you can see, "hype" drops fastest at the point where [Map and Territory Risk](Map-And-Territory-Risk) is at its greatest, and we end up in the "Trough of Disillusionment". 
+ - **Map And Territory Risk** is the difference between **Awareness** and **Knowledge**.  It's highest point is where the **Awareness** of the idea is farthest from the **Knowledge** of it.  
 
-![Hype Cycle 2: more even growth of  means no "Trough of Disillusionment"](images/numbers/hype2.png)
-
-As you might expect, the "Trough of Disillusionment" exists because the "saturation" of the idea and the "amount known" about it increase at different rates.
+ - **Hype** is calculated here as being the **Awareness** line with a subtraction due to [Map and Territory Risk](Map-And-Territory-Risk).  As the population appreciates more [Map and Territory Risk](Map-And-Territory-Risk), **hype** decreases.   At the point where [Map and Territory Risk](Map-And-Territory-Risk) is at its greatest we end up in the "Trough of Disillusionment".  Eventually, we escape the trough as knowledge and understanding of the idea increases and reduces [Map and Territory Risk](Map-And-Territory-Risk).
  
-Where the **saturation** and **knowledge** grow more evenly together, there is no spike in [Map and Territory Risk](Map-And-Territory-Risk) and we don't see the corresponding "Trough of Disillusionment" at all, as shown in the above chart.
+![Hype Cycle 2: more even growth of Awareness and Knowledge means no "Trough of Disillusionment"](images/numbers/hype2.png)
+
+As you might expect, the "Trough of Disillusionment" exists because the **Awareness** of the idea and the **Knowledge** about it increase at different rates.
+ 
+Where the **Awareness** and **Knowledge** grow more evenly together, there is no spike in [Map and Territory Risk](Map-And-Territory-Risk) and we don't see the corresponding "Trough of Disillusionment" at all, as shown in the above chart.
 
 ## Evolution
 

@@ -25,7 +25,7 @@ description: List of all types of risk discussed in Risk-First.
 |[Feature-Fit](Feature-Risk#feature-fit-risk)|Risk that the needs of the client don't coincide with services provided by the supplier.|
 |[Funding](Scarcity-Risk#funding-risk)|A particular scarcity risk, due to lack of funding.|
 |[Implementation](Feature-Risk#implementation-risk)|Risk that the functionality you are providing doesn't match the features the client is expecting, due to poor or partial implementation.|
-|[Internal-Model](Communication-Risk#internal-model-risk)|Risks to communication caused by the fact that the internal models of the participants are semantically incompatible in some way.  |
+|[Internal-Model](Communication-Risk#internal-model-risk)|Risks arising from insufficient or erroneous internal models of reality.|
 |[Invisibility](Communication-Risk#invisibility-risk)|Risks caused by the choice of abstractions we use in communication.|
 |[Learning-Curve](Communication-Risk#learning-curve-risk)|Risks due to the difficulty faced in updating an internal model.|
 |[Map-And-Territory](Map-And-Territory-Risk)|Risks due to the differences between reality and the internal model of reality, and the assumption that they are equivalent. |
