@@ -4,24 +4,28 @@
   </svg:defs>
   <diagram xmlns="http://www.kite9.org/schema/adl" id="The Diagram" style="kite9-layout: down;">
     <table>
-      <celltext style="kite9-occupies: 1 1; kite9-horizontal-align: center;" class="bold top">Dimension</celltext>
-      <celltext style="kite9-occupies: 2 1; kite9-horizontal-align: center;" class="bold top">Feature Risk</celltext>
-      <celltext style="kite9-occupies: 3 1; kite9-horizontal-align: center;" class="bold top">Examples</celltext>
+      <celltext style="kite9-occupies: 1 1;" class="bold top center">Audience Risk</celltext>
+      <celltext style="kite9-occupies: 2 1;" class="bold top center">Examples</celltext>
       
-      <celltext style="kite9-occupies: 1 3; ">Evolution</celltext>
-    
-      <cell style="kite9-occupies: 2 3; ">
-        <risk class="feature-access"/>
-        <risk class="market"/>
+      <cell style="kite9-occupies: 1 2; ">
+        <risk class="feature-access" />
       </cell>
-    
-      <cell style="kite9-occupies: 3 3; kite9-layout: vertical; kite9-padding: 20pt; ">
-        <bulleted>Knowing outdated tools.</bulleted>
-        <bulleted>Writing last year’s date on the cheque. </bulleted>
-        <bulleted>The bank sending letters to your old address.</bulleted>
-        <bulleted>Forgetting things</bulleted>
+
+      <cell style="kite9-occupies: 1 3; ">
+        <risk class="market" />
       </cell>
-     
+
+    
+      <cell style="kite9-occupies: 2 2; kite9-layout: vertical; kite9-padding: 20pt; ">
+        <bulleted>Memes, echo-chambers.</bulleted>
+        <bulleted>Ideas going “out of fashion”.</bulleted>
+      </cell>
+      
+      <cell style="kite9-occupies: 2 3; kite9-layout: vertical; kite9-padding: 20pt; ">
+        <bulleted>Demand for courses and skills. </bulleted>
+        <bulleted>Popularity of a given technology.</bulleted>
+      </cell>
+      
     </table>
   </diagram>
 </svg:svg>

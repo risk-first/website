@@ -51,8 +51,6 @@ The diagram above shows how types of [Feature Risk](Feature-Risk) can manifest i
 
 ## Audience
 
-![Audience Feature Risks, as manifested in the Internal Model](images/generated/risks/map-and-territory/map_and_territory_table_2.png)
-
 Communication allows us to _share_ information between [Internal Models](Glossary#internal-model) with a whole audience of people.  The [Communication Risk](Communication-Risk) and [Coordination Risk](Coordination-Risk) sections covered the difficulties inherent in aligning [Internal Models](Glossary#internal-model) so that they cooperate.
 
 ![Relative popularity of "Machine Learning" and "Big Data" as search terms on [Google Trends](https://trends.google.com), 2011-2018 ](images/google-trends.png)
@@ -77,7 +75,9 @@ The concept of [Map and Territory Risk](Map-And-Territory-Risk) actually helps e
 
  - **Map And Territory Risk** is the difference between **Awareness** and **Knowledge**.  It's highest point is where the **Awareness** of the idea is farthest from the **Knowledge** of it.  
 
- - **Hype** is calculated here as being the **Awareness** line, subtracting **Map and Territory Risk** from a point lagging behind the current time (since it takes time to appreciate this risk).  As the population appreciates more [Map and Territory Risk](Map-And-Territory-Risk), **Hype** decreases.   At the point where the effect of [Map and Territory Risk](Map-And-Territory-Risk) is at its greatest we end up in the "Trough of Disillusionment".  Eventually, we escape the trough as **Knowledge** and understanding of the idea increases, reducing [Map and Territory Risk](Map-And-Territory-Risk).
+ - **Hype** is calculated here as being the **Awareness** line, subtracting **Map and Territory Risk** from a point lagging behind the current time (since it takes time to appreciate this risk).  As the population appreciates more [Map and Territory Risk](Map-And-Territory-Risk), **Hype** decreases.   
+ 
+At the point where the effect of [Map and Territory Risk](Map-And-Territory-Risk) is at its greatest we end up in the "Trough of Disillusionment".  Eventually, we escape the trough as **Knowledge** and understanding of the idea increases, reducing [Map and Territory Risk](Map-And-Territory-Risk).
  
 ![Hype Cycle 2: more even growth of Awareness and Knowledge means no "Trough of Disillusionment"](images/numbers/hype2.png)
 
@@ -85,13 +85,15 @@ As you might expect, the "Trough of Disillusionment" exists because the **Awaren
  
 Where the **Awareness** and **Knowledge** grow more evenly together, there is no spike in [Map and Territory Risk](Map-And-Territory-Risk) and we don't see the corresponding "Trough of Disillusionment" at all, as shown in the above chart.
 
+![Audience Feature Risks, as manifested in the Internal Model](images/generated/risks/map-and-territory/map_and_territory_table_2.png)
+
 (The Hype Cycle model is available in **Numbers** format [here](https://github.com/risk-first/website/blob/master/RiskMatrix.numbers).)
 
 ## Evolution
 
 ![Spread of information between Internal Models](images/generated/risks/communication/communication_marketing.png)
 
-The section on [Communication Risk](Communication-Risk) introduced the above diagram for the spread of ideas.  But what happens next?   As we saw in [Boundary Risk](Boundary-Risk), the **Peter Principle** applies, people will use dependencies up to the point when they start breaking down.  
+The section on [Communication Risk](Communication-Risk) introduced the above diagram for the spread of ideas.  But what happens next?   As we saw in [Boundary Risk](Boundary-Risk), the **Peter Principle** applies: people will use dependencies up to the point when they start breaking down.  
 
 ### Example: Metrics
 
@@ -103,7 +105,7 @@ It might be:
 - **Function Points**: the number of function points a person on the team completes, each sprint.
 - **Code Coverage**: the number of lines of code exercised by unit tests.
 - **Response Time**: the time it takes to respond to an emergency call, say, or to go from a feature request to production.
-- **Release cadence**:  number of releases a team performs, per month, say.
+- **Release Cadence**:  number of releases a team performs, per month, say.
 
 With some skill, they may be able to _correlate_ this metric against some other more abstract measure of success.  For example:
 
