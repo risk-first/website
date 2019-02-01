@@ -1,8 +1,9 @@
 <?xml version="1.0"?>
-<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink'  zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
   <svg:defs>
     <svg:style type="text/css"> @import url("risk.css");</svg:style>
-  </svg:defs><diagram xmlns="http://www.kite9.org/schema/adl"  id="diagram-144" name="Communication - Model">
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-144" name="Communication - Model">
 
 
     <group style="kite9-layout: down">
@@ -18,23 +19,33 @@
     <context id="c" bordered="true" style="kite9-layout: right; ">
       <group style="kite9-layout: down;  kite9-vertical-align: top;">
 
-        <risk class="internal-model" />
+        <risk class="internal-model" style="kite9-vertical-align: top; "/>
 
-        <description>Risks to communication caused by the fact that the internal models of the participants are semantically incompatible in some way.  
+        <description style="kite9-vertical-align: bottom;">Risks to communication caused by the fact that the internal models of the participants are semantically incompatible in some way.
         </description>
+      </group>
+
+      <group style="kite9-layout: down; kite9-vertical-align: top; ">
+        <risk class="learning-curve" style="kite9-vertical-align: top; "/>
+
+        <description style="kite9-vertical-align: bottom;">Risks due to the difficulty faced in updating an internal model.
+        </description>
+
+      </group>
+      <group style="kite9-layout: down; kite9-vertical-align: top; ">
+        <risk class="trust" style="kite9-vertical-align: top; "/>
+
+        <description style="kite9-vertical-align: bottom;">Risk that a party we are communicating with can't be trusted, as it has agency or is unreliable in some other way.
+        </description>
+
       </group>
 
       <label id="id_16">
         <text>Attendant Risks</text>
         <symbols />
       </label>
-      <group style="kite9-layout: down; kite9-vertical-align: top; ">
-        <risk class="learning-curve" />
 
-        <description>Risks due to the difficulty faced in updating an internal model.
-        </description>
-
-      </group>
     </context>
 
-  </diagram></svg:svg>
+  </diagram>
+</svg:svg>
