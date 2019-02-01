@@ -23,14 +23,12 @@ We face [Map And Territory Risk](Map-And-Territory-Risk) because we base our beh
 
 As the above diagram shows, there are two parts to this risk, which we are going to examine consecutively in this section:  
 
- - First, **the insufficiency of the model** using the same axes we introduced for [Feature Risk](Feature-Risk) (that is **Fitness**, **Audience** and **Evolution**), looking at SatNavs, Software Metrics and Hype-Cycles along the way.
- - **Second, the assumption that the model is right**. We'll examine [Map and Territory Risk](Map-And-Territory-Risk) within the contexts of **machines**, **people**, **hierarchies** and **markets**.
+ - **The model is insufficient** which leads to issues along the same axes we introduced in [Feature Risk](Feature-Risk) (that is Fitness, Audience and Evolution).  We'll look at the examples of SatNavs, Software Metrics and Hype-Cycles along the way.
+ - **The assumption that the model is right.** We'll examine [Map and Territory Risk](Map-And-Territory-Risk) within the contexts of **machines**, **people**, **hierarchies** and **markets**.
 
 ## Fitness
 
-In the [Feature Risk](Feature-Risk) section we looked at ways in which our software project might have risks due to having the wrong features ([Feature Fit Risk](Feature-Risk#feature-fit-risk), _broken_ features ([Feature Implementation Risk](Feature-Risk#implementation-risk) or _the wrong_ features ([Conceptual Integrity Risk](Feature-Risk#conceptual-integrity-risk).  
-
-Let's see how these same categories _also_ apply to [Internal Models](Glossary#internal-model).
+In the [Feature Risk](Feature-Risk) section we looked at ways in which our software project might have risks due to having the wrong features ([Feature Fit Risk](Feature-Risk#feature-fit-risk)), _broken_ features ([Feature Implementation Risk](Feature-Risk#implementation-risk)) or _the wrong_ features ([Conceptual Integrity Risk](Feature-Risk#conceptual-integrity-risk)).  Let's see how these same categories also apply to [Internal Models](Glossary#internal-model).
 
 ### Example: The SatNav
 
