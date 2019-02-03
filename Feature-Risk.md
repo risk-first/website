@@ -66,7 +66,7 @@ You could argue that the choice of _platform_ is also going to limit access:  <!
 
 In marketing terms, minimising [Feature Access Risk](#feature-access-risk) is all about [Segmentation](https://en.wikipedia.org/wiki/Market_segmentation):  trying to work out _who_ your product is for, and tailoring it to that particular market.  As shown in the diagram above, mitigating [Feature Access Risk](#feature-access-risk) means increasing complexity:  you have to deliver the software on more platforms, localised in more languages, with different configurations of features.  It also means increased development effort.
 
-### Market Risk
+## Market Risk
 
 [Feature Access Risk](#feature-access-risk) is related to [Market Risk](Feature-Risk#market-risk), which I introduced in the [Risk Landscape](Risk-Landscape) section as being the value that the market places on a particular asset.  <!-- tweet-end -->
 
