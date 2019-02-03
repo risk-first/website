@@ -120,9 +120,7 @@ In recent years the [DevOps](https://en.wikipedia.org/wiki/DevOps) movement has 
 
 No system can be perfect, and after it meets the real world, we will want to improve it over time.  But [Operational Risk](Operational-Risk) includes an element of [Trust & Belief Risk](Communication-Risk#trust--belief-risk): we have a  _reputation_ and the good will of our customers to consider when we make improvements.  Because this is very hard to rebuild, we should consider this before releasing software that might not live up to expectations.    
 
-So there is a tension between "you only get one chance to make a first impression" and "gilding the lily" (perfectionism).  In the past I've seen this stated as:
-
-> "Pressure to ship vs pressure to improve"
+So there is a tension between "you only get one chance to make a first impression" and "gilding the lily" (perfectionism).  In the past I've seen this stated as _pressure to ship vs pressure to improve_.
 
 ![Balance of Risks from Delivering Software](images/generated/risks/operational/ship-it.png)
 
@@ -135,13 +133,14 @@ The "should we ship?" decision is therefore a complex one.  In [Meeting Reality]
 
 |Meet Reality...             |Techniques                                                            | 
 |----------------------------|----------------------------------------------------------------------|
-|**Sooner**                  |Quality Control Processes, Limited Early-Access Programs, Beta Programs, Soft Launches, Business Continuity Testing    |
+|**Sooner**                  |Beta Testing, Soft Launches, Business Continuity Testing              |
 |**More Frequently**         |Continuous Delivery, Sprints                                          |
 |**In Smaller Chunks**       |Modular Releases, Microservices, Feature Toggles, Trial Populations   |
 |**With Feedback**           |User Communities, Support Groups, Monitoring, Logging, Analytics      |
 
+<!--latex \pagebreak -->
 
-## End Of The Road
+## The End Of The Road
 
 In a way, [actions](Glossary#taking-action) like **Design** and **Improvement** bring us right back to where we started from: identifying [Dependency Risks](Dependency-Risk), [Feature Risks](Feature-Risk) and [Complexity Risks](Complexity-Risk) that hinder our operation, and mitigating them through actions like _software development_.  
 
