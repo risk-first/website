@@ -5,9 +5,9 @@ description: Risks that a group of agents cannot work together and their behavio
 
 # Coordination Risk
 
-As in [Agency Risk](Agency-Risk), we are going to use the term _agent_, which refers to anything with [agency](Agency-Risk#software-processes) in a system to decide its own fate.  That is, an agent has an [Internal Model](Glossary#Internal-Model),  and can [take actions](Glossary#taking-action) based on it.  Here, we work on the assumption that the agents _are_ working towards a common [Goal](Glossary#Goal-In-Mind), even though in reality it's not always the case, as we saw in the section on [Agency Risk](Agency-Risk).
+As in [Agency Risk](Agency-Risk), we are going to use the term _agent_, which refers to anything with [agency](Agency-Risk#software-processes) in a system to make decisions:  that is, an agent has an [Internal Model](Glossary#Internal-Model) and can [take actions](Glossary#taking-action) based on it.  Here, we work on the assumption that the agents _are_ working towards a common [Goal](Glossary#Goal-In-Mind), even though in reality it's not always the case, as we saw in the section on [Agency Risk](Agency-Risk).
 
-[Coordination Risk](Coordination-Risk) is the risk that a group of people or processes -maybe with a common [Goal In Mind](Glossary#Goal-In-Mind)- can fail to coordinate to meet this goal and end up making things worse.<!-- tweet-end -->  [Coordination Risk](Coordination-Risk) is embodied in the phrase "Too Many Cooks Spoil The Broth":  more people, opinions or _agents_ often make results worse.
+[Coordination Risk](Coordination-Risk) is the risk that agents can fail to coordinate to meet their common goal and end up making things worse.<!-- tweet-end -->  [Coordination Risk](Coordination-Risk) is embodied in the phrase "Too Many Cooks Spoil The Broth":  more people, opinions or _agents_ often make results worse.
 
 In this section, we'll first build up [a model of Coordination Risk](#a-model-of-coordination-risk), describing exactly coordination means and why we do it.  Then, we'll look at some classic [problems of coordination](#problems-of-coordination).  Then, we're going to consider agency at several different levels (because of [Scale Invariance](Evaluating-Risk#invariances-2-scale-invariance)) .  We'll look at:
 
@@ -16,13 +16,13 @@ In this section, we'll first build up [a model of Coordination Risk](#a-model-of
  - [Larger Organisations](#large-organisations) and the staff within them,
  - and [Software Processes](#in-software-processes).
  
-... and we'll consider how [Coordination Risk](Coordination-Risk) is a problem at each scale.
+... and we'll consider how [Coordination Risk](Coordination-Risk) is a problem at each of these scales.
 
 But for now, let's crack on and examine where [Coordination Risk](Coordination-Risk) comes from.
 
 ## A Model Of Coordination Risk
 
-Earlier, in [Dependency Risk](Dependency-Risk), we looked at various resources (time, money, people, events etc) and showed how we could [depend on them](Dependency-Risk), taking on risk.<!-- tweet-end -->  Here, however, we're looking at the situation where there is _competition for those dependencies_, that is, [Scarcity Risk](Scarcity-Risk):   other parties want to use them in a different way.  
+Earlier, in [Dependency Risk](Dependency-Risk), we looked at various resources (time, money, people, events etc) and showed how we could [depend on them](Dependency-Risk) taking on risk.<!-- tweet-end -->  Here, let's consider the situation where there is _competition for those dependencies_ due to [Scarcity Risk](Scarcity-Risk):   other agents want to use them in a different way.  
 
 ### Law Of Diminishing Returns
 
@@ -30,7 +30,7 @@ Earlier, in [Dependency Risk](Dependency-Risk), we looked at various resources (
 
 One argument for coordination could come from [Diminishing Returns](https://en.wikipedia.org/wiki/Diminishing_returns), which says that the earlier units of a resource (say, chocolate bars) give you more benefit than later ones.  
 
-We can see this in the chart above.  Let's say A and B compete over a resource, of which there are 5 units available.  For every extra A takes, B loses one.  The X axis shows A's consumption of the resource, so the biggest benefit to A is in the consumption of the first unit. 
+We can see this in the chart above.  Let's say A and B compete over a resource, of which there are 5 units available.  For every extra A takes, B loses one.  The X axis shows A's consumption of the resource. While the biggest benefit to A is in taking _all_ of the resources, the greatest _increase_ in benefit comes from the consumption of the first unit. 
 
 As you can see, by _sharing_, it's possible that the _total benefit_ is greater than it can be for either individual.  But sharing requires coordination.  Further, the more competitors involved, the _worse_ a winner-take-all outcome is for total benefit.
 
@@ -53,28 +53,28 @@ You might think, therefore, that this is just another type of [Communication Ris
 
 Let's unpack this idea, and review some classic problems of coordination, none of which can be addressed without good communication.  Here are some examples:
 
-1. **Merging Data**:  if you are familiar with the source code control system, [Git](https://en.wikipedia.org/wiki/Git), you will know that this is a _distributed_ version control system.  That means that two or more people can propose changes to the same files without knowing about each other.  This means that at some later time, [Git](https://en.wikipedia.org/wiki/Git) then has to merge (or reconcile) these changes together.  Git is very good at doing this automatically, but sometimes, different people can independently change the same lines of code and these will have to be merged manually.  In this case, a human arbitrator "resolves" the difference, either by combining the two changes or picking a winner.
+1. **Merging Data**:  if you are familiar with the source code control system, [Git](https://en.wikipedia.org/wiki/Git), you will know that this is a _distributed_ version control system.  That means that two or more people can propose changes to the same files without knowing about each other.  This means that at some later time, [Git](https://en.wikipedia.org/wiki/Git) then has to merge (or reconcile) these changes together.  Git is very good at doing this automatically, but sometimes different people can independently change the same lines of code and these will have to be merged manually.  In this case, a human arbitrator "resolves" the difference, either by combining the two changes or picking a winner.
 
-2. **Consensus**:  making group decisions (as in elections) is often decided by votes.  But having a vote is a coordination issue, and requires that everyone has been told the rules:
+2. **Consensus**:  making group decisions (as in elections) is often decided by votes.  But having a vote is a coordination issue and requires that everyone has been told the rules:
   - Where will the vote be held?  
   - How long do you provide for the vote?  
   - What do you do about absentees?  
   - What if people change their minds in the light of new information?
   - How do you ensure everyone has enough information to make a good decision?
   
-3. **Factions**: sometimes, it's hard to coordinate large groups at the same time, and "factions" can occur.  That the world isn't a single big country is probably partly a testament to this:  countries are frequently separated by geographic features that prevent the easy flow of communication (and force).   We can also see this in distributed systems, with the ["split brain"](https://en.wikipedia.org/wiki/Split-brain_(computing)) problem.   This is where subset of the total system becomes disconnected (usually due to a network failure), and you end up with two, smaller networks with different knowledge.  We'll address in more depth later.
+3. **Factions**: sometimes, it's hard to coordinate large groups at the same time and "factions" can occur.  That the world isn't a single big country is probably partly a testament to this:  countries are frequently separated by geographic features that prevent the easy flow of communication (and force).   We can also see this in distributed systems, with the ["split brain"](https://en.wikipedia.org/wiki/Split-brain_(computing) problem.   This is where subset of the total system becomes disconnected (usually due to a network failure) and you end up with two, smaller networks with different knowledge.  We'll address in more depth later.
 
-4. **[Resource Allocation](https://en.wikipedia.org/wiki/Resource_allocation)**:  ensuring that the right people are doing the right work, or the right resources are given to the right people is a coordination issue.  On a grand scale, we have [Logistics](https://en.wikipedia.org/wiki/Logistics), and [Economic Systems](https://en.wikipedia.org/wiki/Economic_system).  On a small scale, the office's _room booking system_ solves the coordination issue of who gets a meeting room using a first-come-first-served booking algorithm.  
+4. **[Resource Allocation](https://en.wikipedia.org/wiki/Resource_allocation)**:  ensuring that the right people are doing the right work, or the right resources are given to the right people is a coordination issue.  On a grand scale we have [Logistics](https://en.wikipedia.org/wiki/Logistics) and [Economic Systems](https://en.wikipedia.org/wiki/Economic_system).  On a small scale the office's _room booking system_ solves the coordination issue of who gets a meeting room using a first-come-first-served booking algorithm.  
 
 5. **[Deadlock](https://en.wikipedia.org/wiki/Deadlock)** refers to a situation where, in an environment where multiple parallel processes are running, the processing stops and no-one can make progress because the resources each process needs are being reserved by another process.  This is a specific issue in [Resource Allocation](https://en.wikipedia.org/wiki/Resource_allocation), but it's one we're familiar with in the computer science industry.  Compare with [Gridlock](https://en.wikipedia.org/wiki/Gridlock), where traffic can't move because other traffic is occupying the space it wants to move to already. 
 
 6. **[Race Conditions](https://en.wikipedia.org/wiki/Race_condition)** are where we can't be sure of the result of a calculation, because it is dependent on the ordering of events within a system.  For example, two separate threads writing the same memory at the same time (one ignoring and over-writing the work of the other) is a race.  
 
-7. **Contention**: where there is [Scarcity Risk](Scarcity-Risk) for a [dependency](Dependency-Risk), we might want to make sure that everyone gets fair use of it, by taking turns, booking, queueing and so on.  As we saw in [Scarcity Risk](Scarcity-risk), sometimes, this is handled for us by the [Dependency](Dependency-Risk) itself.  However if it isn't, it's the _users_ of the dependency who'll need to coordinate to use the resource fairly, again, by communicating with each other.
+7. **Contention**: where there is [Scarcity Risk](Scarcity-Risk) for a [dependency](Dependency-Risk), we might want to make sure that everyone gets fair use of it, by taking turns, booking, queueing and so on.  As we saw in [Scarcity Risk](Scarcity-risk), sometimes this is handled for us by the [Dependency](Dependency-Risk) itself.  However if it isn't, it's the _users_ of the dependency who'll need to coordinate to use the resource fairly, again, by communicating with each other.
 
 ## Decision Making
 
-Within a team, [Coordination Risk](Coordination-Risk) is at its core about resolving [Internal Model](Glossary#Internal-Model) conflicts in order that everyone can agree on a [Goal In Mind](Glossary#Goal-In-Mind) and cooperate on getting it done.  Therefore, [Coordination Risk](Coordination-Risk) is worse on projects with more members, and worse in organizations with more staff.  
+Within a team, [Coordination Risk](Coordination-Risk) is at its core about resolving [Internal Model](Glossary#Internal-Model) conflicts in order that everyone can agree on a [Goal In Mind](Glossary#Goal-In-Mind) and cooperate on getting it done.  Therefore, [Coordination Risk](Coordination-Risk) is worse on projects with more members, and worse in organisations with more staff.  
 
 As an individual, do you suffer from [Coordination Risk](Coordination-Risk) at all?  Maybe:  sometimes, you can feel "conflicted" about the best way to solve a problem.  And weirdly, usually _not thinking about it_ helps.  Sleeping too.  (Rich Hickey calls this "[Hammock Driven Development](https://www.youtube.com/watch?v=f84n5oFoZBc)").  This is probably because, unbeknownst to you, your subconscious is furiously communicating internally, trying to resolve these conflicts itself, and will let you know when it has come to a resolution.  
 
@@ -97,11 +97,11 @@ As an individual, do you suffer from [Coordination Risk](Coordination-Risk) at a
 
 **s** = subordinate
 
-At the top, you have the _least_ consultative styles, and at the bottom, the _most_.   At the top, decisions are made with just the leader's [Internal Model](Glossary#Internal-Model) but moving down, the [Internal Models](Glossary#Internal-Model) of the _subordinates_ are increasingly brought into play.  
+At the top, you have the _least_ consultative styles, and at the bottom, the _most_.   At the top, decisions are made with just the leader's [Internal Model](Glossary#Internal-Model), but moving down, the [Internal Models](Glossary#Internal-Model) of the _subordinates_ are increasingly brought into play.  
 
-The decisions at the top are faster, but don't do much for mitigating **Coordination Risk**.  The ones below take longer, (incurring [Schedule Risk](Scarcity-Risk#schedule-risk)) but mitigate more **Coordination Risk**.   Group decision-making inevitably involves everyone _learning_, and improving their [Internal Models](Glossary#Internal-Model).   
+The decisions at the top are faster, but don't do much for mitigating [Coordination Risk](Coordination-Risk).  The ones below take longer (incurring [Schedule Risk](Scarcity-Risk#schedule-risk)) but mitigate more [Coordination Risk](Coordination-Risk).   Group decision-making inevitably involves everyone _learning_ and improving their [Internal Models](Glossary#Internal-Model).   
 
-The trick is to be able to tell which approach is suitable at which time.   Everyone is expected to make decisions _within their realm of expertise_: you can't have developers continually calling meetings to discuss whether they should be using an [Abstract Factory](https://en.wikipedia.org/wiki/Abstract_factory_pattern) or a [Factory Method](https://en.wikipedia.org/wiki/Factory_method_pattern), this would waste time.  The critical question is therefore, "what's the biggest risk?"
+The trick is to be able to tell which approach is suitable at which time.   Everyone is expected to make decisions _within their realm of expertise_: you can't have developers continually calling meetings to discuss whether they should be using an [Abstract Factory](https://en.wikipedia.org/wiki/Abstract_factory_pattern) or a [Factory Method](https://en.wikipedia.org/wiki/Factory_method_pattern): it would waste time.  The critical question is therefore, "what's the biggest risk?"
 
  - Is the [Coordination Risk](Coordination-Risk) greater?   Are we going to suffer [Dead End Risk](Complexity-Risk) if the decision is made wrongly?  What if people don't agree with it?  Poor leadership has an impact on [Morale](Agency-Risk#morale-risk) too.  
  - Is the [Schedule Risk](Scarcity-Risk#schedule-risk) greater?  If you have a 1-hour meeting with eight people to decide a decision, that's _one person day_ gone right there:  group decision making is _expensive_.  
@@ -124,19 +124,19 @@ The job of harmonising this on a project would seem to fall to the team leader, 
 
 > "The forming–storming–norming–performing model of group development was first proposed by Bruce Tuckman in 1965, who said that these phases are all necessary and inevitable in order for the team to grow, face up to challenges, tackle problems, find solutions, plan work, and deliver results." - [Tuckman's Stages Of Group Development, _Wikipedia_](https://en.wikipedia.org/wiki/Tuckmans_stages_of_group_development)
 
-Specifically, this describes a process whereby a new group will form and then be required to work together. In the process, they will have many _disputes_.  Ideally, the group will resolve these disputes internally and emerge as a team, with a common [Goal In Mind](Glossary#goal-in-mind).
+Specifically this describes a process whereby a new group will form and then be required to work together. In the process, they will have many _disputes_.  Ideally, the group will resolve these disputes internally and emerge as a team, with a common [Goal In Mind](Glossary#goal-in-mind).
 
-Since [Coordination](Coordination-Risk) is about[Resource Allocation](Coordination-Risk#problems-of-coordination) the skills of staff can potentially be looked at as resources to allocate.  This means handling [Coordination Risk](Coordination-Risk) issues like:
+Since [Coordination](Coordination-Risk) is about [Resource Allocation](Coordination-Risk#problems-of-coordination) the skills of staff can potentially be looked at as resources to allocate.  This means handling [Coordination Risk](Coordination-Risk) issues like:
 
- - People leaving, taking their [Internal Models](Glossary#Internal-Model) and expertise with them [Key Person Risk](Scarcity-Risk#Staff-Risk).
- - People requiring external training, to understand new tools and techniques [Learning Curve Risk](Communication-Risk#learning-curve-risk).
+ - People leaving, taking their [Internal Models](Glossary#Internal-Model) and expertise with them ([Key Person Risk](Scarcity-Risk#Staff-Risk)).
+ - People requiring external training, to understand new tools and techniques ([Learning Curve Risk](Communication-Risk#learning-curve-risk)).
  - People being protective about their knowledge in order to protect their jobs ([Agency Risk](Agency-Risk)). 
  
 > "As a rough rule, three programmers organised into a team can do only twice the work of a single programmer of the same ability - because of time spent on coordination problems." - [Gerald Wienberg, _The Psychology of Computer Programming_](https://en.wikipedia.org/wiki/Gerald_Weinberg) 
  
 ## In Living Organisms
 
-Vroom and Yetton's organisational model isn't relevant to just teams of people.  We can see it in the natural world too.  Although _the majority_ of cellular life on earth (by weight) is [single celled organisms](http://www.stephenjaygould.org/library/gould_bacteria.html), the existence of _humans_ (to pick a single example) demonstrates that sometimes it's better to try to mitigate [Coordination Risk](Coordination-Risk) and work as a team, accepting the [Complexity Risk](Complexity-Risk) and [Communication Risk](Communication-Risk) this entails.  For example, in the human body, we have:
+Vroom and Yetton's organisational model isn't relevant to just teams of people.  We can see it in the natural world too.  Although _the majority_ of cellular life on earth (by weight) is [single celled organisms](http://www.stephenjaygould.org/library/gould_bacteria.html), the existence of _humans_ (to pick a single example) demonstrates that sometimes it's better for cells to try to mitigate [Coordination Risk](Coordination-Risk) and work as a team, accepting the [Complexity Risk](Complexity-Risk) and [Communication Risk](Communication-Risk) this entails.  For example, in the human body, we have:
 
  - **Various [systems](https://en.wikipedia.org/wiki/List_of_systems_of_the_human_body)**: such as the [Respiratory System](https://en.wikipedia.org/wiki/Respiratory_system) or the [Digestive System](https://en.wikipedia.org/wiki/Human_digestive_system).  Each of these systems contains...
  - **Organs**, such as the heart or lungs, which contain..
@@ -161,7 +161,7 @@ As we saw in the [Complexity Risk](Complexity-Risk) section, hierarchies are an 
 
 In large organisations, teams are created and leaders chosen for those teams precisely to mitigate this [Communication Risk](Communication-Risk).  We're all familiar with this: control of the team is ceded to the leader, who takes on the role of 'handing down' direction from above, but also 'reporting up' issues that cannot be resolved within the team.   In Vroom and Yetton's model, this is moving from a **GII** or **CII** to an **AI** or **AII** style of leadership.  
 
-Clearly, this is just a _model_, it's not set in stone and decision making styles usually change from day-to-day and decision to decision.  The same is not true in our software - _rules are rules_.
+Clearly, this is just a _model_, it's not set in stone and decision making styles usually change from day-to-day and decision-to-decision.  The same is not true in our software - _rules are rules_.
 
 ## In Software Processes
 
@@ -223,7 +223,7 @@ ZooKeeper handles this by communicating inter-agent with its own protocol.  It e
 
 #### Git
 
-Second, [git](https://en.wikipedia.org/wiki/Git) is a (mainly) write-only ledger of source changes.  However, as we already discussed above, where different agents make incompatible changes, someone has to decide how to resolve the conflicts so that we have a single source of truth.  
+Second, [Git](https://en.wikipedia.org/wiki/Git) is a (mainly) write-only ledger of source changes.  However, as we already discussed above, where different agents make incompatible changes, someone has to decide how to resolve the conflicts so that we have a single source of truth.  
 
 The [Coordination Risk](Coordination-Risk) just _doesn't go away_.  
 
@@ -237,13 +237,13 @@ Because it's based on outright competition, if someone beats you to completing a
 
 For this reason, BTC agents [coordinate](Coordination-Risk) into [mining consortia](https://en.bitcoin.it/wiki/Comparison_of_mining_pools), so they can avoid working on the same tasks at the same time, turning it into a **CI**-type organisation.  
 
-This in itself is a problem, because the whole _point_ of BTC is that it's competitive, and no one entity has control.  So, mining pools  tend to stop growing before they reach 50% of the BTC network's processing power.  Taking control would be [politically disastrous](https://www.reddit.com/r/Bitcoin/comments/5fe9vz/in_the_last_24hrs_three_mining_pools_have_control/) and confidence in the currency (such as there is) would likely be lost.
+This in itself is a problem because the whole _point_ of BTC is that it's competitive and no one entity has control.  So, mining pools  tend to stop growing before they reach 50% of the BTC network's processing power.  Taking control would be [politically disastrous](https://www.reddit.com/r/Bitcoin/comments/5fe9vz/in_the_last_24hrs_three_mining_pools_have_control/) and confidence in the currency (such as there is) would likely be lost.
 
 ## Communication Is For Coordination
 
 CAP theory gives us a fundamental limit on how much [Coordination Risk](Coordination-Risk) we can mitigate.  We've looked at different organisational structures used to manage [Coordination Risk](Coordination-Risk) within teams of people, organisations or living organisms, so it's the case in software.   
 
-At the start of this section, we questioned whether [Coordination Risk](Coordination-Risk) was just another type of [Communication Risk](Communication-Risk).  However, it should be clear after looking at the examples of competition, cellular life and Vroom and Yetton's Model that this is exactly _backwards_:  
+At the start of this section, we questioned whether [Coordination Risk](Coordination-Risk) was just another type of [Communication Risk](Communication-Risk).  However, it should be clear after looking at the examples of competition, cellular life and Vroom and Yetton's Model that this is exactly _backwards_.  
 
 - Most single-celled life has no need for communication: it simply competes for the available resources.  If it lacks anything it needs, it dies.  
 - There are _no_ lines of communication on the **UI** decision-type.  It's only when we want to avoid competition, by sharing resources and working towards common goals that we need to communicate.  
