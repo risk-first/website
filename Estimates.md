@@ -206,7 +206,7 @@ If you were doing this same journey on foot, it's a very direct route, but would
  
 In the software development past, _building it yourself_ was the only way to get anything done.  It was like London _before road and rail_.   Nowadays, you are bombarded with choices.  It's actually _worse than London_ because it's not even a two-dimensional geographic space and there are multitudes of different routes and acceptable destinations.  Journey planning on the software [Risk Landscape](Glossary#risk-landscape) is an optimisation problem _par excellence_. 
 
-![Possible Moves On The Risk Landscape](images/generated/practices/estimates/risk-landscape.png)
+![Possible Moves On The Risk Landscape](images/generated/practices/estimates/risk-landscape_sideways.png)
 
 Because the modern [Risk Landscape](Glossary#risk-landscape) is so complex:
 
@@ -275,7 +275,7 @@ Let's recap those again, in reverse order:
 - **Tip #4: Talk Frankly About All The Risks**.  Apply the Risk-First vocabulary to help.  
 - **Tip #3: Meet Reality Early on the Biggest Risks**.
 - **Tip #2: The Risk Landscape is Increasingly Complex**:  This means you have a wide variety of possible [actions to take](Glossary#taking-action), so consider all the options.
-- **Tip #1: Estimating Should be About _Estimating [Payoff](Glossary#payoff)_**.  For your action, don't just get stuck on [Schedule Risk](Scarcity-Risk#schedule-risk).  Consider [the whole cast](Staging-And-Classifying#towards-a-periodic-table-of-risks).
+- **Tip #1: Estimating Should be About _Estimating [Payoff](Glossary#payoff)_**.  For your action, don't just get stuck on [Schedule Risk](Scarcity-Risk#schedule-risk).  Consider [the whole cast](Staging-And-Classifying).
 
 
 

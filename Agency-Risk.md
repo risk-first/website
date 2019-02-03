@@ -121,8 +121,8 @@ Interestingly, security is handled in very similar ways in all kinds of systems,
 - **Walls**: defences _around_ the system, to protect its parts from the external environment.  
 - **Doors**: ways to get _in_ and _out_ of the system, possibly with _locks_.
 - **Guards**: to make sure only the right things go in and out.  (i.e. to try and keep out _bad actors_).
-- **Police**: to defend from _within_ the system, against internal [Agency Risk](Agency-Risk).
-- **Subterfuge**: hiding, camouflage, disguises, pretending to be something else. 
+- **Police**: to defend from _within_ the system against internal [Agency Risk](Agency-Risk).
+- **Subterfuge**: hiding, camouflage, disguises, pretending to be something else.
 
 These work at various levels in **our own bodies**:  our _cells_ have _cell walls_ around them, and _cell membranes_ that act as the guards to allow things in and out.  Our _bodies_ have _skin_ to keep the world out, and we have _mouths_, _eyes_, _pores_ and so on to allow things in and out.  We have an _immune system_ to act as the police.
 
