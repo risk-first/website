@@ -133,12 +133,13 @@ A Risk-First re-framing of this (as shown in the diagram above) might be the bal
 
 The "should we ship?" decision is therefore a complex one.  In [Meeting Reality](Meeting-Reality), we discussed that it's better to do this "sooner, more frequently, in smaller chunks and with feedback".  We can meet [Operational Risk](Operational-Risk) _on our own terms_ by doing so: 
 
-|Meet Reality...                   |Techniques                                             | 
-|----------------------------------|-------------------------------------------------------|
-|**Sooner**                        |Quality Control Processes, Limited Early-Access Programs, Beta Programs, Soft Launches, Business Continuity Testing    |
-|**More Frequently**               |Continuous Delivery, Sprints                              |
-|**In Smaller Chunks**             |Modular Releases, Microservices, Feature Toggles, Trial Populations   |
-|**With Feedback**                 |User Communities, Support Groups, Monitoring, Logging, Analytics|
+|Meet Reality...             |Techniques                                                            | 
+|----------------------------|----------------------------------------------------------------------|
+|**Sooner**                  |Quality Control Processes, Limited Early-Access Programs, Beta Programs, Soft Launches, Business Continuity Testing    |
+|**More Frequently**         |Continuous Delivery, Sprints                                          |
+|**In Smaller Chunks**       |Modular Releases, Microservices, Feature Toggles, Trial Populations   |
+|**With Feedback**           |User Communities, Support Groups, Monitoring, Logging, Analytics      |
+
 
 ## End Of The Road
 
