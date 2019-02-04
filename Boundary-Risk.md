@@ -12,13 +12,11 @@ In the previous sections on [Dependency Risk](Dependency-Risk) we've touched on 
 As shown in the above diagram, [Boundary Risk](Boundary-Risk) is the risk we face due to _commitments_ around dependencies and the limitations they place on our ability to change.  To illustrate, lets consider two examples:
  
 - Although I eat cereals for breakfast, I don't have [Boundary Risk](Boundary-Risk) on them.  If the supermarket runs out of cereals when I go, I can just buy some other food and eat that.
-- However, the hot water system in my house uses gas.  If that's not available, I can't just switch to using oil or solar until it's available again.  Luckily, [Boundary Risk](Boundary-Risk) is low because the supply of gas is plentiful, and seems like it will stay that way.
+- However, the hot water system in my house uses gas.  If that's not available, I can't just switch to using oil or solar without cost.  This is [Boundary Risk](Boundary-Risk), but it's low because the supply of gas is plentiful and seems like it will stay that way.
 
-In this second example, the [Boundary Risk](Boundary-Risk) is created because of the need to commitment to gas over other options that were available.
+In terms of the [Risk Landscape](Risk-Landscape), [Boundary Risk](Boundary-Risk) is exactly as it says:  a _boundary_, _wall_ or other kind of obstacle in your way to making a move you want to make. <!-- tweet-end -->  This changes the nature of the [Risk Landscape](Glossary#risk-landscape), and introduces a maze-like component to it.  It also means that we have to make _commitments_ about which way to go, knowing that our future paths are constrained by the decisions we make.
 
-In terms of the [Risk Landscape](Risk-Landscape), [Boundary Risk](Boundary-Risk) is exactly as it says:  a _boundary_, _wall_ or other kind of obstacle in your way to making a move you want to make. <!-- tweet-end -->  This changes the nature of the [Risk Landscape](Glossary#risk-landscape), and introduces a maze-like component to it.  It also means that we have to make _decisions_ about which way to go, knowing that our future paths are constrained by the decisions we make.
-
-As we discussed in [Complexity Risk](Complexity-Risk), there is always the chance we end up at a [Dead End](Complexity-Risk#dead-end-risk), and we've done work that we need to throw away.  In this case, we'll have to head back and make a different decision.
+As we discussed in [Complexity Risk](Complexity-Risk), there is always the chance we end up at a [Dead End](Complexity-Risk#dead-end-risk), having done work that we need to throw away.  In this case, we'll have to head back and make a different decision.
 
 ## In Software Development
 
@@ -42,7 +40,7 @@ The choice of approach presents us with [Boundary Risk](Boundary-Risk) because w
  
 ... and so on.
 
-This is a toy example, but in real life this dilemma occurs when we choose between database vendors, cloud hosting platforms, operating systems, software libraries and so on, and it was a big factor in [Software Dependency Risk](Software-Dependency-Risk).
+This is a toy example, but in real life this dilemma occurs when we choose between database vendors, cloud hosting platforms, operating systems, software libraries etc. and it was a big factor in our analysis of [Software Dependency Risk](Software-Dependency-Risk).
 
 ## Factors In Boundary Risk
  
@@ -53,7 +51,7 @@ The degree of [Boundary Risk](Boundary-Risk) is dependent on a number of factors
  - **The level of [Lock In](#ecosystems-and-lock-in)**, where the cost of switching to a new dependency in the future is some function of the level of commitment to the current dependency.  As an example, consider the level of commitment you have to your mother tongue.  If you have spent your entire life committed to learning and communicating in English, there is a massive level of lock-in.  Overcoming this to become fluent in Chinese may be an overwhelming task.
  - **Future needs**: will the dependency satisfy your expanding requirements going forward? (_cf._ [Feature Drift Risk](Feature-Risk#feature-drift-risk))
  - **Ownership changes:**  Microsoft buys [GitHub](https://en.wikipedia.org/wiki/GitHub).  What will happen to the ecosystem around GitHub now?
- - **Licensing changes:**  (e.g. [Oracle](http://oracle.com) buys **Tangosol** who make [Coherence](https://en.wikipedia.org/wiki/Oracle_Coherence) for example).  Having done this, they increase the licensing costs of Tangosol to huge levels, milking the [Cash Cow](https://en.wikipedia.org/wiki/Cash_cow) of the installed user-base, but ensuring no-one else is likely to commit to it in the future.
+ - **Licensing changes:**  (e.g. [Oracle](http://oracle.com) buys Tangosol who make [Coherence](https://en.wikipedia.org/wiki/Oracle_Coherence) for example).  Having done this, they increase the licensing costs of Coherence to huge levels, milking the [Cash Cow](https://en.wikipedia.org/wiki/Cash_cow) of the installed user-base, but ensuring no-one else is likely to commit to it in the future.
   
 ## Ecosystems and Lock-In
 
@@ -61,10 +59,10 @@ Sometimes, one choice leads to another, and you're forced to "double down" on yo
 
 On the face of it, [WordPress](https://en.wikipedia.org/wiki/WordPress) and [Drupal](https://en.wikipedia.org/wiki/Drupal) _should_ be very similar:
 
- - They are both [Content Management Systems](https://en.wikipedia.org/wiki/Content_management_system)
- - They both use a [LAMP (Linux, Apache, MySql, PHP) Stack](https://en.wikipedia.org/wiki/LAMP_(software_bundle))
- - They were both started around the same time (2001 for Drupal, 2003 for WordPress)
- - They are both Open-Source, and have a wide variety of [Plugins](https://en.wikipedia.org/wiki/Plug-in_(computing)), t3hat is, ways for other programmers to extend the functionality in new directions.  
+ - They are both [Content Management Systems](https://en.wikipedia.org/wiki/Content_management_system).
+ - They both use a [LAMP (Linux, Apache, MySql, PHP) Stack](https://en.wikipedia.org/wiki/LAMP_(software_bundle)).
+ - They were both started around the same time (2001 for Drupal, 2003 for WordPress).
+ - They are both Open-Source, and have a wide variety of [Plugins](https://en.wikipedia.org/wiki/Plug-in_(computing)), that is, ways for other programmers to extend the functionality in new directions.  
 
 In practice, they are very different, as we will see.  The quality, and choice of plugins for a given platform, along with factors such as community and online documentation is often called its [_ecosystem_](https://en.wikipedia.org/wiki/Software_ecosystem):
 
@@ -77,11 +75,11 @@ Ecosystem size is one key determinant of [Boundary Risk](Boundary-Risk):
 - **A large ecosystem** has a large boundary circumference.  [Boundary Risk](Boundary-Risk) is lower in a large ecosystem because your moves on the [Risk Landscape](Glossary#risk-landscape) are unlikely to collide with it.  The boundary _got large_ because other developers before you hit the boundary and did the work building the software equivalents of bridges and roads and pushing it back so that the boundary didn't get in their way.  
 - In **a small ecosystem**, you are much more likely to come into contact with the edges of the boundary.  _You_ will have to be the developer that pushes back the frontier and builds the roads for the others.  This is hard work.
 
-### Big Ecosystems Get Bigger...
+### Big Ecosystems Get Bigger
 
 In the real world, there is a tendency for _big cities to get bigger_.  The more people that live there, the more services they provide, and therefore, the more immigrants they attract.  And, it's the same in the software world.  In both cases, this is due to the [Network Effect](https://en.wikipedia.org/wiki/Network_effect):
 
-> "A network effect (also called network externality or demand-side economies of scale) is the positive effect described in economics and business that an additional user of a good or service has on the value of that product to others. When a network effect is present, the value of a product or service increases according to the number of others using it." - [Network Effect, _Wikipedia_](https://en.wikipedia.org/wiki/Network_effect)
+> "... the positive effect described in economics and business that an additional user of a good or service has on the value of that product to others. When a network effect is present, the value of a product or service increases according to the number of others using it." - [Network Effect, _Wikipedia_](https://en.wikipedia.org/wiki/Network_effect)
 
 ![WordPress vs Drupal adoption over 8 years, according to [w3techs.com](https://w3techs.com/technologies/history_overview/content_management/all/y)](images/numbers/wordpress-drupal-chart.png)
 
@@ -102,7 +100,7 @@ But, by now, if they _are_ to be compared side-by-side, WordPress _should be bet
   
 Is bigger always better? Perhaps not.  
 
-### ... But Are More Complex
+### Big Ecosystems Are More Complex
 
 When a tool or platform is popular, it is under pressure to increase in complexity.  This is because people are attracted to something useful, and want to extend it to new purposes.  This is known as _The Peter Principle_:  
 
@@ -112,7 +110,7 @@ Although designed for _people_, it can just as easily be applied to any other de
 
 ![Java Public Classes By Version (3-9)](images/numbers/java_classes_by_version.png)
 
-The above chart is an example of this: look at how the number of public classes (a good proxy for the boundary) has increased with each release.   
+The above chart is an example of this: look at how the number of public classes in Java (a good proxy for the boundary) has increased with each release.   
 
 #### Backward Compatibility
 
@@ -124,7 +122,7 @@ Each new version has a greater functional scope than the one before (pushing bac
 
 You can see in the diagram above the Peter Principle at play:  as more responsibility is given to a dependency, the more complex it gets and the greater the learning curve to work with it.  Large ecosystems like Java react to [Learning Curve Risk](Communication-Risk#learning-curve-risk) by having copious amounts of literature to read or buy to help, but it is still off-putting.
 
-Because [Complexity is Mass](Complexity-Risk#complexity-is-mass), large ecosystems can't respond quickly to [Feature Drift](Feature-Risk#feature-drift-risk).  This means that when the world changes, _new_ systems will come along to plug the gaps. 
+Because [Complexity is Mass](Complexity-Risk#complexity-is-mass), large ecosystems can't respond quickly to [Feature Drift](Feature-Risk#feature-drift-risk).  This means that when the world changes, new ecosystems are likely to appear to fill gaps, rather than old ones moving in.
 
 ## Managing Boundary Risk
 
@@ -153,11 +151,11 @@ From examining the [Protocol Risk](Communication-Risk#protocol-risk) at each end
 
 ### Standards
 
-Standards reduce [Boundary Risk](Boundary-Risk) in one of two ways:
+Standards mitigate [Boundary Risk](Boundary-Risk) in one of two ways:
 
 1.  **Abstract over the ecosystems.**  Provide a _standard_ protocol (a _lingua franca_) which can be converted down into the protocol of any of a number of competing ecosystems.
 
- - The [C](https://en.wikipedia.org/wiki/C_(programming_language)) programming language provided a way to get the same programs compiled against different CPU instruction sets, therefore providing some _portability_ to code.  The problem was, each different operating system would still have its own libraries, and so to support multiple operating systems, you'd have to write code against multiple different libraries. 
+ - The [C](https://en.wikipedia.org/wiki/C_(programming_language)) programming language provided a way to get the same programs compiled against different CPU instruction sets, therefore providing some _portability_ to code.  
 
  - [Java](https://en.wikipedia.org/wiki/Java_(programming_language)) took what C did and went one step further, providing interoperability at the library level. Java code could run anywhere where Java was installed. 
 

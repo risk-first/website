@@ -8,7 +8,7 @@ description: List of all types of risk discussed in Risk-First.
 
 | Risk             | Definition                                                               |
 |------------------|--------------------------------------------------------------------------|
-|[Boundary](Boundary-Risk)|Risks due to the choices we make around dependencies, and the limitations they place on our ability to change.|
+|[Boundary](Boundary-Risk)|Risks due to the commitments we make around dependencies, and the limitations they place on our ability to change.|
 |[Agency](Agency-Risk)|Risks due to the fact that things you depend on have agency, and they have their own goals to pursue.|
 |[Channel](Communication-Risk#channel-risk)|Risks due to the inadequacy of the physical channel used to communicate our messages. e.g. noise, loss, interception, corruption.|
 |[Communication](Communication-Risk)|Risks due to the difficulty of communicating with other entities, be they people, software, processes etc.|
