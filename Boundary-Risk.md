@@ -12,7 +12,7 @@ In the previous sections on [Dependency Risk](Dependency-Risk) we've touched on 
 As shown in the above diagram, [Boundary Risk](Boundary-Risk) is the risk we face due to _commitments_ around dependencies and the limitations they place on our ability to change.  To illustrate, lets consider two examples:
  
 - Although I eat cereals for breakfast, I don't have [Boundary Risk](Boundary-Risk) on them.  If the supermarket runs out of cereals when I go, I can just buy some other food and eat that.
-- However, the hot water system in my house uses gas.  If that's not available, I can't just switch to using oil or solar without cost.  This is [Boundary Risk](Boundary-Risk), but it's low because the supply of gas is plentiful and seems like it will stay that way.
+- However the hot water system in my house uses gas.  If that's not available I can't just switch to using oil or solar without cost.  There is [Boundary Risk](Boundary-Risk), but it's low because the supply of gas is plentiful and seems like it will stay that way.
 
 In terms of the [Risk Landscape](Risk-Landscape), [Boundary Risk](Boundary-Risk) is exactly as it says:  a _boundary_, _wall_ or other kind of obstacle in your way to making a move you want to make. <!-- tweet-end -->  This changes the nature of the [Risk Landscape](Glossary#risk-landscape), and introduces a maze-like component to it.  It also means that we have to make _commitments_ about which way to go, knowing that our future paths are constrained by the decisions we make.
 
@@ -20,7 +20,7 @@ As we discussed in [Complexity Risk](Complexity-Risk), there is always the chanc
 
 ## In Software Development
 
-In software development, although we might face [Boundary Risk](Boundary-Risk) choosing staff or offices, most of the everyday dependency commitments we have to make are around _abstractions_.  Let's look at a software example now.
+In software development, although we might face [Boundary Risk](Boundary-Risk) choosing staff or offices, most of the everyday dependency commitments we have to make are around _abstractions_. 
 
 As discussed in [Software Dependency Risk](Software-Dependency-Risk), if we are going to use a software tool as a dependency, we have to accept the complexity of its [protocols](Communication-Risk#protocols).  You have to use its protocol: it won't come to you.   
 
@@ -28,7 +28,7 @@ As discussed in [Software Dependency Risk](Software-Dependency-Risk), if we are 
 
 Let's take a look at a hypothetical system structure, in the diagram above.  In this design, we are transforming data from the `input` to the `output`.  But how should we do it?
 
- - We could use library 'a', using the [Protocols](Communication-Risk#protocol-risk) of 'a', and having a dependency on 'a'.
+ - We could transform via library 'a', using the [Protocols](Communication-Risk#protocol-risk) of 'a', and having a dependency on 'a'.
  - We could use library 'b', using the [Protocols](Communication-Risk#protocol-risk) of 'b', and having a dependency on 'b'. 
  - We could use neither, and avoid the dependency, but potentially pick up lots more [Codebase Risk](Complexity-Risk#codebase-risk) and [Schedule Risk](Scarcity-Risk#schedule-risk) because we have to code our own alternative to 'a' and 'b'.
 
@@ -62,9 +62,9 @@ On the face of it, [WordPress](https://en.wikipedia.org/wiki/WordPress) and [Dru
  - They are both [Content Management Systems](https://en.wikipedia.org/wiki/Content_management_system).
  - They both use a [LAMP (Linux, Apache, MySql, PHP) Stack](https://en.wikipedia.org/wiki/LAMP_(software_bundle)).
  - They were both started around the same time (2001 for Drupal, 2003 for WordPress).
- - They are both Open-Source, and have a wide variety of [Plugins](https://en.wikipedia.org/wiki/Plug-in_(computing)), that is, ways for other programmers to extend the functionality in new directions.  
+ - They are both Open-Source, and have a wide variety of [_plugins_](https://en.wikipedia.org/wiki/Plug-in_(computing)), that is, ways for other programmers to extend the functionality in new directions.  
 
-In practice, they are very different, as we will see.  The quality, and choice of plugins for a given platform, along with factors such as community and online documentation is often called its _ecosystem_:
+But crucially, the underlying abstractions of WordPress and Drupal are different, so the plugins available for each are different.  The quality and choice of plugins for a given platform, along with factors such as community and online documentation, is often called its _ecosystem_:
 
 > "... a set of businesses functioning as a unit and interacting with a shared market for software and services, together with relationships among them. These relationships are frequently underpinned by a common technological platform and operate through the exchange of information, resources, and artifacts." - [Software Ecosystem, _Wikipedia_](https://en.wikipedia.org/wiki/Software_ecosystem)
 
@@ -77,7 +77,7 @@ Ecosystem size is one key determinant of [Boundary Risk](Boundary-Risk):
 
 ### Big Ecosystems Get Bigger
 
-In the real world, there is a tendency for _big cities to get bigger_.  The more people that live there, the more services they provide, and therefore, the more immigrants they attract.  And, it's the same in the software world.  In both cases, this is due to the [Network Effect](https://en.wikipedia.org/wiki/Network_effect):
+In the real world, there is a tendency for _big cities to get bigger_.  The more people that live there, the more services they provide and need, and therefore, the more immigrants they attract.  It's the same in the software world too.  In both cases, this is due to the [_Network Effect_](https://en.wikipedia.org/wiki/Network_effect):
 
 > "... the positive effect described in economics and business that an additional user of a good or service has on the value of that product to others. When a network effect is present, the value of a product or service increases according to the number of others using it." - [Network Effect, _Wikipedia_](https://en.wikipedia.org/wiki/Network_effect)
 
@@ -87,7 +87,7 @@ You can see the same effect in the software ecosystems with the adoption rates o
 
 Did WordPress gain this march because it was always _better_ than Drupal?  That's arguable.  Certainly, they're not different enough that WordPress is 16x better.  That it's this way round could be _entirely accidental_, and a result of [Network Effect](https://en.wikipedia.org/wiki/Network_effect).
 
-But, by now, if they _are_ to be compared side-by-side, WordPress _should be better_ due to the sheer number of people in this ecosystem who are...
+But, by now, if they _are_ to be compared side-by-side, WordPress _might be better_ due to the sheer number of people in this ecosystem who are...
 
  - Creating web sites.
  - Using those sites.
@@ -98,11 +98,11 @@ But, by now, if they _are_ to be compared side-by-side, WordPress _should be bet
  - Creating features.
  - Improving the core platform.
   
-Is bigger always better? Perhaps not.  
+But is bigger always better? Perhaps not.  
 
 ### Big Ecosystems Are More Complex
 
-When a tool or platform is popular, it is under pressure to increase in complexity.  This is because people are attracted to something useful, and want to extend it to new purposes.  This is known as _The Peter Principle_:  
+When a tool or platform is popular, it is under pressure to increase in complexity.  This is because people are attracted to something useful and want to extend it to new purposes.  This is known as _The Peter Principle_:  
 
 > "The Peter principle is a concept in management developed by Laurence J. Peter, which observes that people in a hierarchy tend to rise to their 'level of incompetence'." - [The Peter Principle, _Wikipedia_](https://en.wikipedia.org/wiki/Peter_principle)
 
@@ -136,13 +136,15 @@ Sometimes, technology comes along that allows us to cross boundaries, like a _br
 
 I find, a lot of code I write is of this nature:  trying to write the _glue code_ to join together two different _ecosystems_.  
 
+As shown in the above diagram, mitigating [Boundary Risk](Boundary-Risk) involves taking on complexity.  The more [Protocol Complexity](Communication-Risk#protocol-risk) there is on either side of the two ecosystems, the more [Complex](Complexity-Risk) the bridge will necessarily be.  The below table shows some examples of this.
+
 |Protocol Risk From A         |Protocol Risk From B        |Resulting Bridge Complexity  |Example                                                  |
 |-----------------------------|----------------------------|-----------------------------|---------------------------------------------------------|
 |Low                          |Low                         |Simple                       |Changing from one date format to another.                |
 |High                         |Low                         |Moderate                     |Status Dashboard.                                        |
 |High                         |High                        |Complex                      |Object-Relational Mapping (ORM) Tools.                   |
 
-As shown in the above diagram, mitigating [Boundary Risk](Boundary-Risk) involves taking on complexity.  The more [Protocol Complexity](Communication-Risk#protocol-risk) there is on either side of the two ecosystems, the more [Complex](Complexity-Risk) the bridge will necessarily be.  The above table shows some examples of this.
+<!--latex \pagebreak -->
 
 From examining the [Protocol Risk](Communication-Risk#protocol-risk) at each end of the bridge you are creating, you can get a rough idea of how complex the endeavour will be:
 
@@ -169,7 +171,7 @@ Standards mitigate [Boundary Risk](Boundary-Risk) in one of two ways:
 
 ![Boundary Risk Decreases With Bridges and Standards](images/generated/risks/boundary/cycle.png) 
 
-[Boundary Risk](Boundary-Risk) seems to progress in cycles.  As a piece of technology becomes more mature, there are more standards and bridges, and [Boundary Risk](Boundary-Risk) is lower.  Once [Boundary Risk](Boundary-Risk) is low and a particular approach is proven, there will be innovation upon this, giving rise to new opportunities for [Boundary Risk](Boundary-Risk) (see diagram above).  Here are some examples:
+[Boundary Risk](Boundary-Risk) seems to progress in cycles.  As a piece of technology becomes more mature, there are more standards and bridges, and [Boundary Risk](Boundary-Risk) is lower.  Once [Boundary Risk](Boundary-Risk) is low and a particular approach is proven, there will be innovation upon this, giving rise to new opportunities for [Boundary Risk](Boundary-Risk) (see the diagram above).  Here are some examples:
 
  - **Processor Chips.**  By providing features (instructions) on their processors that other vendors didn't have, manufacturers made their processors more attractive to system integrators.  However, since the instructions were different on different chips, this created [Boundary Risk](Boundary-Risk) for the integrators.  Intel and Microsoft were able to use this fact to build a big ecosystem around Windows running on Intel chips (so called, WinTel).  The Intel instruction set is nowadays a _de-facto_ standard for PCs.
 
@@ -177,7 +179,7 @@ Standards mitigate [Boundary Risk](Boundary-Risk) in one of two ways:
 
  - **Mobile Operating Systems.** We currently have just two main _mobile_ ecosystems (although there used to be many more):  [Apple's iOS](https://en.wikipedia.org/wiki/IOS) and [Google's Android](https://en.wikipedia.org/wiki/Android_(operating_system)), which are both _very_ different and complex ecosystems with large, complex boundaries.  They are both innovating as fast as possible to keep users happy with their features.  Bridging tools like [Xamarin](https://en.wikipedia.org/wiki/Xamarin) exist which allow you to build applications sharing code over both platforms.
 
- - **Cloud Computing.** [Amazon Web Services (AWS)](https://en.wikipedia.org/wiki/Amazon_Web_Services) are competing with [Microsoft Azure](https://en.wikipedia.org/wiki/Microsoft_Azure) and [Google Cloud Platform](https://en.wikipedia.org/wiki/Google_Cloud_Platform) over building tools for [Platform as a Service (PaaS)](https://en.wikipedia.org/wiki/Platform_as_a_service) (running software in the cloud).  They are both racing to build new functionality, but at the same time it's hard to move from one vendor to another as there is no standardisation on the tools.
+ - **Cloud Computing.** [Amazon Web Services (AWS)](https://en.wikipedia.org/wiki/Amazon_Web_Services) are competing with [Microsoft Azure](https://en.wikipedia.org/wiki/Microsoft_Azure) and [Google Cloud Platform](https://en.wikipedia.org/wiki/Google_Cloud_Platform) over building tools for [Platform as a Service (PaaS)](https://en.wikipedia.org/wiki/Platform_as_a_service) (running software in the cloud).  They are both racing to build new functionality, but it's hard to move from one vendor to another as there is no standardisation on the tools.
  
 
 ## Everyday Boundary Risks
