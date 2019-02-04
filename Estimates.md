@@ -97,7 +97,7 @@ From a Risk-First perspective, we can now see that this is an over-simplificatio
 
  - I can deliver a project in very short order by building a bunch of screens that _do nothing_ (accruing _stunning_ levels of [Implementation Risk](Feature-Risk#implementation-risk) as I go). 
  - Or, by assuming a lottery win, the project's budget is fine.  (Although I would have _huge_ [Funding Risk](Scarcity-Risk#funding-risk) because _what are the chances of winning the lottery?_)  
- - Brooks' Law (see diagram above) contradicts this by saying you can't trade budget for deadlines:
+ - Brooks' Law (see the diagram above) contradicts this by saying you can't trade budget for deadlines:
  
 > "Brooks' law is an observation about software project management according to which 'adding human resources to a late software project makes it later'. - [Brooks Law, _Wikipedia_](https://en.wikipedia.org/wiki/Brooks_law)
 
