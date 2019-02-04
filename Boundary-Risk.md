@@ -64,7 +64,7 @@ On the face of it, [WordPress](https://en.wikipedia.org/wiki/WordPress) and [Dru
  - They were both started around the same time (2001 for Drupal, 2003 for WordPress).
  - They are both Open-Source, and have a wide variety of [Plugins](https://en.wikipedia.org/wiki/Plug-in_(computing)), that is, ways for other programmers to extend the functionality in new directions.  
 
-In practice, they are very different, as we will see.  The quality, and choice of plugins for a given platform, along with factors such as community and online documentation is often called its [_ecosystem_](https://en.wikipedia.org/wiki/Software_ecosystem):
+In practice, they are very different, as we will see.  The quality, and choice of plugins for a given platform, along with factors such as community and online documentation is often called its _ecosystem_:
 
 > "... a set of businesses functioning as a unit and interacting with a shared market for software and services, together with relationships among them. These relationships are frequently underpinned by a common technological platform and operate through the exchange of information, resources, and artifacts." - [Software Ecosystem, _Wikipedia_](https://en.wikipedia.org/wiki/Software_ecosystem)
 
@@ -161,7 +161,7 @@ Standards mitigate [Boundary Risk](Boundary-Risk) in one of two ways:
 
 2.  **Force adoption.** All of the ecosystems start using the standard for fear of being left out in the cold.  Sometimes, a standards body is involved, but other times a "de facto" standard emerges that everyone adopts.
 
- - [ASCII](https://en.wikipedia.org/wiki/ASCII): fixed the different-character-sets boundary risk by being a standard that others could adopt.  Before everyone agreed on ASCII, copying data from one computer system to another was a massive pain, and would involve some kind of translation.  [Unicode](https://en.wikipedia.org/wiki/Unicode) continues this work. 
+ - [ASCII](https://en.wikipedia.org/wiki/ASCII): fixed the different-character-sets [Boundary Risk](Boundary-Risk) by being a standard that others could adopt.  Before everyone agreed on ASCII, copying data from one computer system to another was a massive pain, and would involve some kind of translation.  [Unicode](https://en.wikipedia.org/wiki/Unicode) continues this work. 
 
  - [Internet Protocol](https://en.wikipedia.org/wiki/Internet_Protocol).  As we saw in [Communication Risk](Communication-Risk#protocol-risk), the Internet Protocol (IP) is the _lingua franca_ of the modern Internet.  However, at one period of time, there were many competing standards.  and IP was the ecosystem that "won", and was subsequently standardised by the [IETF](https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force).  This is actually an example of _both_ approaches:  as we saw in [Communication Risk](Communication-Risk), Internet Protocol is also an abstraction over lower-level protocols.
  
@@ -169,7 +169,7 @@ Standards mitigate [Boundary Risk](Boundary-Risk) in one of two ways:
 
 ![Boundary Risk Decreases With Bridges and Standards](images/generated/risks/boundary/cycle.png) 
 
-Boundary Risk seems to progress in cycles.  As a piece of technology becomes more mature, there are more standards and bridges, and boundary risk is lower.  Once Boundary Risk is low and a particular approach is proven, there will be innovation upon this, giving rise to new opportunities for Boundary Risk (see diagram above).  Here are some examples:
+[Boundary Risk](Boundary-Risk) seems to progress in cycles.  As a piece of technology becomes more mature, there are more standards and bridges, and [Boundary Risk](Boundary-Risk) is lower.  Once [Boundary Risk](Boundary-Risk) is low and a particular approach is proven, there will be innovation upon this, giving rise to new opportunities for [Boundary Risk](Boundary-Risk) (see diagram above).  Here are some examples:
 
  - **Processor Chips.**  By providing features (instructions) on their processors that other vendors didn't have, manufacturers made their processors more attractive to system integrators.  However, since the instructions were different on different chips, this created [Boundary Risk](Boundary-Risk) for the integrators.  Intel and Microsoft were able to use this fact to build a big ecosystem around Windows running on Intel chips (so called, WinTel).  The Intel instruction set is nowadays a _de-facto_ standard for PCs.
 
@@ -186,7 +186,7 @@ Although ecosystems are one very pernicious type of boundary in software develop
 
 - **Configuration**.  When software has to be deployed onto a server, there has to be configuration (usually on the command line, or via configuration property files) in order to bridge the boundary between the _environment it's running in_ and the _software being run_.  Often this is setting up file locations, security keys and passwords, and telling it where to find other files and services.  
 
-- **Integration Testing**.  Building a unit test is easy.  You are generally testing some code you have written, aided with a testing framework.  Your code and the framework are both written in the same language, which means low boundary risk.  But to _integration test_ you need to step outside this boundary and so it becomes much harder.  This is true whether you are integrating with other systems (providing or supplying them with data) or parts of your own system (say testing the client-side and server parts together).  
+- **Integration Testing**.  Building a unit test is easy.  You are generally testing some code you have written, aided with a testing framework.  Your code and the framework are both written in the same language, which means low [Boundary Risk](Boundary-Risk).  But to _integration test_ you need to step outside this boundary and so it becomes much harder.  This is true whether you are integrating with other systems (providing or supplying them with data) or parts of your own system (say testing the client-side and server parts together).  
 
 - **User Interface Testing**.  If you are supplying a user-interface, then the interface with the user is already a complex, under-specified risky [protocol](Communication-Risk#protocol-risk).  Although tools exist to automate UI testing (such as [Selenium](https://en.wikipedia.org/wiki/Selenium_(software)), these rarely satisfactorily mitigate this [protocol risk](Communication-Risk#protocol-risk):  can you be sure that the screen hasn't got strange glitches, that the mouse moves correctly, that the proportions on the screen are correct on all browsers?  
 
