@@ -33,7 +33,7 @@ _Naming_ something seems innocuous, a small thing.  Consider all the classes, va
 
 ![Using A Known Abstraction](images/generated/staging-and-classifying/depending-abstraction.png)
 
-As shown in the above diagram, _using a known abstraction_ means:
+As shown in the above diagram, _using an abstraction you already know_ means:
 
  - **Mitigating [Feature Risk](Feature-Risk)**: because the abstraction is providing you with something _useful_.  For example, using the word "London" allows you to refer to a whole (but slightly non-specific) geographic area.
  - **Accepting [Communication Risk](Communication-Risk)** : because if you are using the abstraction in conversation, the people you are using it with _need to understand it too_.
@@ -46,19 +46,19 @@ As shown in the above diagram, _using a known abstraction_ means:
 
 As shown in the above diagram, _inventing a new abstraction_ means:
 
-- **Mitigating [Feature Risk](Feature-Risk).**  By _giving a name to something_ (perhaps a new product, or a way of working) you are offering up something that someone else can use in conversation.  This should mitigate [Features](Feature-Risk) in the sense that other people can choose to use your name, if it fits their requirements.  
+- **Mitigating [Feature Risk](Feature-Risk).**  By _giving a name to something_ (perhaps a new product, or a way of working) you are offering up something that someone else can use in conversation.  This should mitigate [Feature Risk](Feature-Risk) in the sense that other people can choose to use your name, if it fits their requirements.  
 - **Creating a [Protocol](Communication-Risk#protocols).**  Introducing _new words to a language_ creates [Protocol Risk](Communication-Risk#protocol-risk):  what if the person we are communicating with _doesn't_ know this word?  
 - **Increasing [Complexity Risk](Complexity-Risk).** Because, the more words we have, the more complex the language is.
-- **Creating the opportunity for [Boundary Risk](Boundary-Risk).**  By naming something, you _implicitly_ create a boundary, because the world is now divided into "things which _are_ X" and "things which _are not_ X".   Sometimes, this abstraction may literally end up having a physical boundary to enforce this division (such as the fence separating "My Property" from  "Not My Property"). _Boundary Risk arises as the result of abstractions._
+- **Creating the opportunity for [Boundary Risk](Boundary-Risk).**  By naming something, you _implicitly_ create a boundary, because the world is now divided into "things which _are_ X" and "things which _are not_ X".  _Boundary Risk arises from abstractions._
     
-### Choosing A New Abstractions
+### Learning A New Abstractions
 
-![Choosing Between Abstractions](images/generated/staging-and-classifying/choosing-abstraction.png)
+![Learning a New Abstraction](images/generated/staging-and-classifying/choosing-abstraction.png)
 
-As shown in the above diagram, _choosing a new abstraction_ means:
+As shown in the above diagram, learning a new abstraction_ means:
 
  - **Overcoming a [Learning Curve](Communication-Risk#learning-curve-risk)**: because you have to _learn_ a name in order to use it (whether a function, a dog, or the name of someone at a party).
- - **Accepting [Boundary Risks](Boundary-Risk).**  At some level, the commitment to this choice of abstraction over others means that you have the opportunity costs of other abstractions that you could have used.
+ - **Accepting [Boundary Risks](Boundary-Risk).**  Commitment to this abstraction over others means that you have the opportunity cost of other abstractions that you could have used.
  - **Accepting [Map And Territory Risk](Map-And-Territory-Risk).** Because the word refers to the _concept_ of the thing, and _not the thing itself_.
 
 Abstraction (like any other action) is everywhere and seems to be at the heart of what our brains do.  But clearly, there is a trade-off with abstraction: as you can see above, there are risks on both sides of the action.   
@@ -79,7 +79,7 @@ These relationships of features/dependencies are the basis of [Supply Chains](ht
 
 ## The Work Continues
 
-On this journey around the [Risk Landscape](Risk-Landscape) we've collected a (hopefully) good, representative sample of [Risks](Glossary#Risk) and where to find them.  But there are more out there.  What is missing?  What is wrong?
+On this journey around the [Risk Landscape](Risk-Landscape) we've collected a (hopefully) good, representative sample of [Risks](Glossary#Risk) and where to find them. But there are more out there.   How many of these have you seen on your projects?  What is missing?  What is wrong?
 
 Please help by reporting back what you find.
 
