@@ -27,8 +27,6 @@ If you've been reading closely, you'll notice that a number of themes come up ag
 
 Let's now _generalize_ what is happening with abstraction.  To do this, we'll consider the simplest example of abstraction:  _naming a pattern_ of behaviour we see in the real world, such as "Binge Watching" or "Remote Working", or naming a category of insects as "Beetles".
 
-_Naming_ something seems innocuous, a small thing.  Consider all the classes, variables, products and systems in software development that have names.  Do all of these names "factor" correctly to things in the real world?  Or do they introduce arbitrary classification?  (For example, you might classify water as "hot" or "cold" while really there is just temperature.)   
-
 ### Using A Known Abstraction
 
 ![Using A Known Abstraction](images/generated/staging-and-classifying/depending-abstraction.png)
@@ -51,7 +49,7 @@ As shown in the above diagram, _inventing a new abstraction_ means:
 - **Increasing [Complexity Risk](Complexity-Risk).** Because, the more words we have, the more complex the language is.
 - **Creating the opportunity for [Boundary Risk](Boundary-Risk).**  By naming something, you _implicitly_ create a boundary, because the world is now divided into "things which _are_ X" and "things which _are not_ X".  _Boundary Risk arises from abstractions._
     
-### Learning A New Abstractions
+### Learning A New Abstraction
 
 ![Learning a New Abstraction](images/generated/staging-and-classifying/choosing-abstraction.png)
 
