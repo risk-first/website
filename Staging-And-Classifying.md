@@ -5,21 +5,21 @@ description: Making sense of risks faced by software projects.
 
 # Staging and Classifying
 
-Our tour is complete.  
-
 ![Staged and Classified Beetle Collection, (Credit: Fir0002, Wikipedia)](images/Beetle_collection_short.jpg)
+
+Our tour is complete.  
 
 But if we are good collectors, then before we finish we should _[Stage](https://en.wikipedia.org/wiki/Entomological_equipment_for_mounting_and_storage)_ our specimens and do some work in classifying what we've seen.
 
 ## Towards A "Periodic Table" Of Risks
 
-As we said [at the start](A-Pattern-Language), Risk-First is all about developing _A Pattern Language_.  We can use the terms like "[Feature Risk](Feature-Risk)"_ or "[Learning Curve Risk](Communication-Risk#learning-curve-risk)" to _explain_ phenomena we see on software projects.   If we want to [De-Risk](De-Risking) our work, we need to be able to explain what the risks are, and what we expect to do about them.
+As we said [at the start](A-Pattern-Language), Risk-First is all about developing _A Pattern Language_.  We can use the terms like "[Feature Risk](Feature-Risk)" or "[Learning Curve Risk](Communication-Risk#learning-curve-risk)" to explain phenomena we see on software projects.   If we want to [De-Risk](De-Risking) our work, we need this power of explanation so we can talk about how to go about it.
 
 ![Periodic Table of Risks](images/generated/staging-and-classifying/periodic-table-large.png)
 
-The diagram above compiles all of the risks we've seen so far on the journey across the risk landscape.  Just like a periodic table, there are perhaps others left to discover.   _Unlike_ a periodic table, these risks are not completely distinct: they mix like paint and blend into one another.  
+The diagram above compiles all of the risks we've seen so far on our tour across the [Risk Landscape](Risk-Landscape).  Just like a periodic table, there are perhaps others left to discover.   _Unlike_ a periodic table, these risks are not completely distinct: they mix like paint and blend into one another.  
 
-If you've been reading closely, you'll notice that a number of themes come up again and again within the different sections.   Concepts like **Abstraction**, **Evolution** and **Fit**.  Although we've been looking at patterns of risk across software projects, it's time to look at the _patterns within the patterns_. 
+If you've been reading closely, you'll notice that a number of themes come up again and again within the different sections.   It's time to look at the _patterns within the patterns_. 
 
 ## The Power Of Abstractions
 
@@ -27,40 +27,41 @@ If you've been reading closely, you'll notice that a number of themes come up ag
 
 Let's now _generalize_ what is happening with abstraction.  To do this, we'll consider the simplest example of abstraction:  _naming a pattern_ of behaviour we see in the real world, such as "Binge Watching" or "Remote Working", or naming a category of insects as "Beetles".
 
-### Using An Existing Abstraction
+_Naming_ something seems innocuous, a small thing.  Consider all the classes, variables, products and systems in software development that have names.  Do all of these names "factor" correctly to things in the real world?  Or do they introduce arbitrary classification?  (For example, you might classify water as "hot" or "cold" while really there is just temperature.)   
 
-![Using An Existing Abstraction](images/generated/staging-and-classifying/depending-abstraction.png)
+### Using A Known Abstraction
 
-As shown in the above diagram, this means:
+![Using A Known Abstraction](images/generated/staging-and-classifying/depending-abstraction.png)
 
- - **Mitigating [Feature Risk](Feature-Risk)**: because the abstraction is providing you with something _useful_.  For example, using the word "London" allows you to refer to a whole existing (but slightly non-specific) geographic area.
+As shown in the above diagram, _using a known abstraction_ means:
+
+ - **Mitigating [Feature Risk](Feature-Risk)**: because the abstraction is providing you with something _useful_.  For example, using the word "London" allows you to refer to a whole (but slightly non-specific) geographic area.
  - **Accepting [Communication Risk](Communication-Risk)** : because if you are using the abstraction in conversation, the people you are using it with _need to understand it too_.
  - **Accepting [Map and Territory Risk](Map-And-Territory-Risk)**: because the abstraction is a simplification, and not the actual thing itself.
- - **Living with [Dependency Risk](Dependency-Risk)**:  we depend on a word in our language (or a function in our library, or a service on the Internet).  But words are _unreliable_.  They might not communicate what you want them to, or be understood by the audience.  Language _changes_ and _evolves_, and the words you are using now might not always mean what you want them to mean.  (Software too changes and evolves:  We've seen this in [Red Queen Risk](Scarcity-Risk#red-queen-risk) and [Feature Drift Risk](Feature-Risk#feature-drift-risk).)
+ - **Living with [Dependency Risk](Dependency-Risk)**:  we depend on a word in our language (or a function in our library, or a service on the Internet).  But words are _unreliable_.  Language _changes_ and _evolves_, and the words you are using now might not always mean what you want them to mean.  (Software too changes and evolves:  We've seen this in [Red Queen Risk](Scarcity-Risk#red-queen-risk) and [Feature Drift Risk](Feature-Risk#feature-drift-risk).)
  
 ### Inventing A New Abstraction  
 
 ![Inventing A New Abstraction](images/generated/staging-and-classifying/inventing-abstraction.png)
 
-As shown in the above diagram, this means:
+As shown in the above diagram, _inventing a new abstraction_ means:
 
 - **Mitigating [Feature Risk](Feature-Risk).**  By _giving a name to something_ (perhaps a new product, or a way of working) you are offering up something that someone else can use in conversation.  This should mitigate [Features](Feature-Risk) in the sense that other people can choose to use your name, if it fits their requirements.  
-- **Creating a [Protocol](Communication-Risk#protocols).**  At the very simplest level (again), this is just introducing _new words to a language_.   Therefore, we create [Protocol Risk](Communication-Risk#protocol-risk):  what if the person we are communicating with _doesn't_ know this word?  
+- **Creating a [Protocol](Communication-Risk#protocols).**  Introducing _new words to a language_ creates [Protocol Risk](Communication-Risk#protocol-risk):  what if the person we are communicating with _doesn't_ know this word?  
 - **Increasing [Complexity Risk](Complexity-Risk).** Because, the more words we have, the more complex the language is.
-- **Creating [Boundary Risk](Boundary-Risk).**  By naming something, you _implicitly_ create a boundary, because the world is now divided into "things which _are_ X" and "things which _are not_ X".   Sometimes, this abstraction may literally end up having a physical boundary to enforce this division (such as the fence separating "My Property" from  "Not My Property"). _Boundary Risk is a result of abstractions._
+- **Creating the opportunity for [Boundary Risk](Boundary-Risk).**  By naming something, you _implicitly_ create a boundary, because the world is now divided into "things which _are_ X" and "things which _are not_ X".   Sometimes, this abstraction may literally end up having a physical boundary to enforce this division (such as the fence separating "My Property" from  "Not My Property"). _Boundary Risk arises as the result of abstractions._
     
-### Choosing Between Abstractions
+### Choosing A New Abstractions
 
 ![Choosing Between Abstractions](images/generated/staging-and-classifying/choosing-abstraction.png)
 
-As shown in the above diagram, this means:
+As shown in the above diagram, _choosing a new abstraction_ means:
+
  - **Overcoming a [Learning Curve](Communication-Risk#learning-curve-risk)**: because you have to _learn_ a name in order to use it (whether a function, a dog, or the name of someone at a party).
- - **Accepting [Boundary Risks](Boundary-Risk).**  Just using _a single word_ means accepting the whole _ecosystem_ of the language the word is in.  Using _French words_ means the [Boundary Risk](Boundary-Risk) of the French Language. 
+ - **Accepting [Boundary Risks](Boundary-Risk).**  At some level, the commitment to this choice of abstraction over others means that you have the opportunity costs of other abstractions that you could have used.
  - **Accepting [Map And Territory Risk](Map-And-Territory-Risk).** Because the word refers to the _concept_ of the thing, and _not the thing itself_.
 
 Abstraction (like any other action) is everywhere and seems to be at the heart of what our brains do.  But clearly, there is a trade-off with abstraction: as you can see above, there are risks on both sides of the action.   
-
-_Naming_ something seems innocuous, a small thing.  Consider all the classes, variables, products and systems in software development that have names.  Do all of these names "factor" correctly to things in the real world?  Or do they introduce arbitrary classification?  (For example, you might classify water as "hot" or "cold" while really there is just temperature.)   
 
 Abstraction _is_ a small thing, but its effects compound massively.
 

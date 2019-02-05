@@ -11,8 +11,6 @@
       <risk id="d0"  class="dependency" />
     </context>
     
-    <arrow id="c"><label>Communication Risk</label></arrow>
-
     <context style="kite9-layout: right; kite9-sizing: minimize;">
       <risk id="f1" class="feature" />
       <risk id="d1"  class="dependency" />
@@ -32,11 +30,7 @@
     
     <link id="l1">
       <from reference="d0" />
-      <to reference="c" />
-    </link>
-    <link id="l2">
-      <from reference="c" />
-      <to reference="f2" class="arrow" />
+      <to reference="f2" class="arrow"/>
     </link>
     <link id="l3">
       <from reference="d0" />
