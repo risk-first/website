@@ -34,8 +34,8 @@ Let's now _generalize_ what is happening with abstraction.  To do this, we'll co
 As shown in the above diagram, _using an abstraction you already know_ means:
 
  - **Mitigating [Feature Risk](Feature-Risk)**: because the abstraction is providing you with something _useful_.  For example, using the word "London" allows you to refer to a whole (but slightly non-specific) geographic area.
- - **Accepting [Communication Risk](Communication-Risk)** : because if you are using the abstraction in conversation, the people you are using it with _need to understand it too_.
- - **Accepting [Map and Territory Risk](Map-And-Territory-Risk)**: because the abstraction is a simplification, and not the actual thing itself.
+ - **Accepting [Communication Risk](Communication-Risk)**: because if you are using the abstraction in conversation the people you are using it with _need to understand it too_.
+ - **Accepting [Map and Territory Risk](Map-And-Territory-Risk)**: because the abstraction is a simplification and not the actual thing itself.
  - **Living with [Dependency Risks](Dependency-Risk)**:  we depend on a word in our language (or a function in our library, or a service on the Internet).  But words are [unreliable](Dependency-Risk#reliability-risk).  Language _changes_ and _evolves_, and the words you are using now might not always mean what you want them to mean.  (Software too changes and evolves:  We've seen this in [Red Queen Risk](Scarcity-Risk#red-queen-risk) and [Feature Drift Risk](Feature-Risk#feature-drift-risk).)
  
 ### Inventing A New Abstraction  
@@ -55,25 +55,23 @@ As shown in the above diagram, _inventing a new abstraction_ means:
 
 As shown in the above diagram, _learning a new abstraction_ means:
 
- - **Overcoming a [Learning Curve](Communication-Risk#learning-curve-risk)**: because you have to _learn_ a name in order to use it (whether a function, a dog, or the name of someone at a party).
- - **Accepting [Boundary Risks](Boundary-Risk).**  Commitment to this abstraction over others means that you have the opportunity cost of other abstractions that you could have used.
+ - **Overcoming a [Learning Curve](Communication-Risk#learning-curve-risk)**: because you have to _learn_ a name in order to use it (whether it is the name of a function, a dog, or someone at a party).
+ - **Accepting [Boundary Risks](Boundary-Risk).**  Commitment to one abstraction over another means that you have the opportunity cost of the other abstractions that you could have used.
  - **Accepting [Map And Territory Risk](Map-And-Territory-Risk).** Because the word refers to the _concept_ of the thing, and _not the thing itself_.
 
-Abstraction (like any other action) is everywhere and seems to be at the heart of what our brains do.  But clearly, there is always trade-off with risk.   
-
-Abstraction _is_ a small thing, but its effects compound massively.
+Abstraction is everywhere and seems to be at the heart of what our brains do.  But clearly, like [taking any other action](Glossary#taking-action) there is always trade-off in terms of risk.   
 
 ## Your Feature Risk is Someone Else's Dependency Risk
 
 ![Features And Dependencies](images/generated/staging-and-classifying/features-and-dependencies.png)
 
-In the [Feature Risk](Feature-Risk) section, we looked at the problems of _supplying something for a client to use as a dependency_:  you've got to satisfy a demand ([Market Risk](Feature-Risk#market-risk)), and service a segment of the user community ([Feature Access Risk](Feature-Risk#feature-access-risk)).    
+In the [Feature Risk](Feature-Risk) section, we looked at the problems of _supplying something for a client to use as a dependency_:  you've got to satisfy a demand ([Market Risk](Feature-Risk#market-risk)) and service a segment of the user community ([Feature Access Risk](Feature-Risk#feature-access-risk)).    
 
-However, over the rest of the [Dependency Risk](Dependency-Risk) sections, we looked at this from the point of view of _being a client of someone else_:  you want to find trustworthy, reliable dependencies that don't give up when you least want them to.
+However over the rest of the [Dependency Risk](Dependency-Risk) sections we looked at this from the point of view of _being a client of someone else_:  you want to find trustworthy, reliable dependencies that don't give up when you least want them to.
 
 So [Feature Risk](Feature-Risk) and [Dependency Risk](Dependency-Risk) are _two sides of the same coin_, they capture the risks in _demand_ and _supply_.   
 
-These relationships of features/dependencies are the basis of [Supply Chains](https://en.wikipedia.org/wiki/Supply_chain) and the world-wide network of goods and services that forms the modern economy.  The incredible complexity of this network mean incredible [Complexity Risk](Complexity-Risk), too.  Humans are masters at [coordinating](Coordination-Risk) and managing our dependencies. 
+As shown in the diagram above, relationships of features/dependencies are the basis of [Supply Chains](https://en.wikipedia.org/wiki/Supply_chain) and the world-wide network of goods and services that forms the modern economy.  The incredible complexity of this network mean incredible [Complexity Risk](Complexity-Risk), too.  Humans are masters at [coordinating](Coordination-Risk) and managing our dependencies. 
 
 ## The Work Continues
 
