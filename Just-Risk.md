@@ -35,7 +35,7 @@ This _hints_ at the fact that at some level it's all about risk:
 The reason you are _taking_ an action is to mitigate a risk.  For example: 
 
  - If you're coding up new features in the software, this is mitigating [Feature Risk](Feature-Risk) (which we'll explore in more detail later).  
- - If you're getting a business sign-off for something, this is mitigating the risk of everone not agreeing on a course of action (a [Coordination Risk](Coordination-Risk)).  
+ - If you're getting a business sign-off for something, this is mitigating the risk of everyone not agreeing on a course of action (a [Coordination Risk](Coordination-Risk)).  
  - If you're writing a specification, then that's mitigating the type of "Incorrect Implementation Risk" we saw in the last section. 
 
 ## Every Action Has Attendant Risk
