@@ -44,8 +44,8 @@ As shown in the above diagram, _using an abstraction you already know_ means:
 
 As shown in the above diagram, _inventing a new abstraction_ means:
 
-- **Mitigating [Feature Risk](Feature-Risk).**  By _giving a name to something_ (perhaps a new product, or a way of working) you are offering up something that someone else can use in conversation.  This should mitigate [Feature Risk](Feature-Risk) in the sense that other people can choose to use your name, if it fits their requirements.  
-- **Creating a [Protocol](Communication-Risk#protocols).**  Introducing _new words to a language_ creates [Protocol Risk](Communication-Risk#protocol-risk):  what if the person we are communicating with _doesn't_ know this word?  
+- **Mitigating [Feature Risk](Feature-Risk).**  By _giving a name to something_ (or building a new product, or a way of working) you are offering up something that someone else can use.  This should mitigate [Feature Risk](Feature-Risk) in the sense that other people can choose to use your it, if it fits their requirements.  
+- **Creating a [Protocol](Communication-Risk#protocols).**  Introducing _new words to a language_ creates [Protocol Risk](Communication-Risk#protocol-risk) as most people won't know what it means. 
 - **Increasing [Complexity Risk](Complexity-Risk).** Because, the more words we have, the more complex the language is.
 - **Creating the opportunity for [Boundary Risk](Boundary-Risk).**  By naming something, you _implicitly_ create a boundary, because the world is now divided into "things which _are_ X" and "things which _are not_ X".  _Boundary Risk arises from abstractions._
     
@@ -53,13 +53,13 @@ As shown in the above diagram, _inventing a new abstraction_ means:
 
 ![Learning a New Abstraction](images/generated/staging-and-classifying/choosing-abstraction.png)
 
-As shown in the above diagram, learning a new abstraction_ means:
+As shown in the above diagram, _learning a new abstraction_ means:
 
  - **Overcoming a [Learning Curve](Communication-Risk#learning-curve-risk)**: because you have to _learn_ a name in order to use it (whether a function, a dog, or the name of someone at a party).
  - **Accepting [Boundary Risks](Boundary-Risk).**  Commitment to this abstraction over others means that you have the opportunity cost of other abstractions that you could have used.
  - **Accepting [Map And Territory Risk](Map-And-Territory-Risk).** Because the word refers to the _concept_ of the thing, and _not the thing itself_.
 
-Abstraction (like any other action) is everywhere and seems to be at the heart of what our brains do.  But clearly, there is a trade-off with abstraction: as you can see above, there are risks on both sides of the action.   
+Abstraction (like any other action) is everywhere and seems to be at the heart of what our brains do.  But clearly, there is always trade-off with risk.   
 
 Abstraction _is_ a small thing, but its effects compound massively.
 
