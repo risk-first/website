@@ -43,7 +43,7 @@ The longer your project goes on for, the more [Staff Risk](Scarcity-Risk#staff-r
 
 And let's go completely philosophical for a second:  were you to attain immortality, you'd probably not feel the need to buy _anything_.  You'd clearly have no _needs_. Anything you wanted, you could create yourself within your infinite time-budget.  _Rocks don't need money_, after all.
 
-In the section on [Feature Risk](Feature-Risk) we looked at [Market Risk](Feature-Risk), the idea that the value of your product is itself at risk from the morés of the market, share prices being the obvious example of that effect.  In Finance, we measure this using _price_, and we can put together probability models based on how much _money_ you might make or lose.
+In the section on [Feature Risk](Feature-Risk) we looked at [Market Risk](Feature-Risk), the idea that the value of your product is itself at risk from the whims of the market, share prices being the obvious example of that effect.  In Finance, we measure this using _price_, and we can put together probability models based on how much _money_ you might make or lose.
 
 With [Schedule Risk](Scarcity-Risk#schedule-risk), the underlying measure is _time_:  
 

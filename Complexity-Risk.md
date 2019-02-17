@@ -65,7 +65,7 @@ function out() {                                      (7 )
 
 ### Abstraction
 
-What's happening here is that we're _exploiting a pattern_: we noticed that `ABCD` occurs several times, so we defined it a single time and then used it over and over, like a stamp.  This is called [abstraction](Glossary#abstraction).
+What's happening here is that we're _exploiting a pattern_: we noticed that `abcd` occurs several times, so we defined it a single time and then used it over and over, like a stamp.  This is called [abstraction](Glossary#abstraction).
 
 By applying abstraction, we can improve in the direction of the Kolmogorov lower bound.  By allowing ourselves to say that _symbols_ (like `out` and `ABCD`) are worth one complexity point, we've allowed that we can be descriptive in naming `function` and `const`.  Naming things is an important part of abstraction, because to use something, you have to be able to refer to it.
 
@@ -192,7 +192,7 @@ The most common way we talk about [Complexity Risk](Complexity-Risk) in software
 
 > "Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite... The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organisations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise." - [Ward Cunningham, 1992, _Wikipedia, Technical Debt_](https://en.wikipedia.org/wiki/Technical_debt)
 
-Building a low-complexity first-time solution is often a waste:  in the first version, we're usually interested in reducing [Feature RIsk](Feature-Risk) as fast as possible. That is, putting working software in front of users to get [feedback](Meeting-Reality).  We would rather carry [Complexity Risk](Complexity-Risk) than take on more attendant [Schedule Risk](Scarcity-Risk#schedule-risk).
+Building a low-complexity first-time solution is often a waste:  in the first version, we're usually interested in reducing [Feature Risk](Feature-Risk) as fast as possible. That is, putting working software in front of users to get [feedback](Meeting-Reality).  We would rather carry [Complexity Risk](Complexity-Risk) than take on more attendant [Schedule Risk](Scarcity-Risk#schedule-risk).
 
 So a quick-and-dirty, over-complex implementation mitigates the same [Feature Risk](Feature-Risk) and allows you to [Meet Reality](Meeting-Reality) faster.  
 
@@ -202,7 +202,7 @@ But having mitigated the [Feature Risk](Feature-Risk) this way, you are likely e
 
 ## Kitchen Analogy
 
-It’s often hard to make the case for minimising [Technical Debt](Complexity-Risk#technical-debt): it often feels that there are more important priorities, especially when technical debt can be “swept under the carpet” and forgotten about until later.  (See [Discounting The Future](Evaluating-Risk#discounting-the-future-to-zero).)
+It’s often hard to make the case for minimising [Technical Debt](Complexity-Risk#technical-debt): it often feels that there are more important priorities, especially when technical debt can be “swept under the carpet” and forgotten about until later.  (See [Discounting](Evaluating-Risk#discounting-the-future-to-zero).)
 
 One helpful analogy I have found is to imagine your code-base is a kitchen.   After preparing a meal (i.e. delivering the first implementation), _you need to tidy up the kitchen_.  This is just something everyone does as a matter of _basic sanitation_. <!-- tweet-end -->
 
@@ -235,7 +235,7 @@ Sometimes, feature-creep happens because either managers feel they need to keep 
 
 ![Dead-End Risk](images/generated/risks/complexity/dead-end-risk.png) 
 
-[Dead-End Risk](Complexity-Risk#dead-end-risk) is where you take an action that you _think_ is useful, only to find out later that actually, it was a dead-end, and your efforts were wasted.  Here, we'll see that [Complexity Risk](Complexity-Risk) is a big cause of this (as the above diagram shows).
+[Dead-End Risk](Complexity-Risk#dead-end-risk) is where you take an action that you _think_ is useful, only to find out later that actually it was a dead-end and your efforts were wasted.  Here, we'll see that [Complexity Risk](Complexity-Risk) is a big cause of this (as the above diagram shows).
 
 For example, imagine a complex software system composed of many sub-systems.  Let's say that the Accounting sub-system needed password protection (so you built this).  Then the team realised that you needed a way to _change the password_ (so you built that).   Then, you needed to have more than one user of the Accounting system so they would all need passwords (OK, fine).  
 

@@ -86,11 +86,11 @@ Let's look at an example of how that can happen in a step-wise way.
   - Since this is [Abstraction](Glossary#abstraction), `C` now has [Invisibility Risk](Communication-Risk#invisibility-risk) since it can't access team `B` and see how it works.
   - Team `B` may also use `P` to introduce other bureaucracy like authorisation and sign-off steps or payment barriers.   All of this increases [Process Risk](Process-Risk) for team C. 
 
-![Person D acts as a middleman for customers needing some variant of `A`](images/generated/risks/process/step4.png)
+![Person D acts as a middleman for customers needing some variant of `A`, transferring Complexity Risk](images/generated/risks/process/step4.png)
 
 4.  Teams like `B` can sometimes end up in "Monopoly" positions within a business.  This means that clients like `C` are forced to deal with whatever process `B` wishes to enforce.  Although they are unable to affect process `P`, `C` still have risks they want to transfer.  
 
- - In the above diagram, Person `D`, who has experience working with team `B` acts as a middleman for some of `C`, requiring some variant of `A` .  They are able to help navigate the bureaucratic process (handle with [Process Risk](Process-Risk)).  
+ - In the above diagram, Person `D`, who has experience working with team `B` acts as a middleman for some of `C`, requiring some variant of `A` .  They are able to help navigate the bureaucracy (handle with [Process Risk](Process-Risk)).  
  - The cycle potentially starts again: will `D` end up becoming a new team, with a new process? 
 
 In this example, you can see how the organisation evolves process to mitigate risk around the use (and misuse) of `A`.  This is an example of _Process following Strategy_: 
@@ -113,7 +113,7 @@ Over the years I have worked in the Finance Industry it's given me time to obser
 5. The change request software is generally awful, making the job of raising change requests tedious and time-consuming.  Therefore, developers would _automate_ the processes for release, sometimes including the process to write the change request.  This allowed them to improve release cadence at the expense of owning more code.
 6. Auditors didn't like the fact that this automation existed, because effectively, that meant that developers could get access to production with the press of a button, taking you back to step 1...
 
-## Bureaucracy Risk
+## Bureaucracy
 
 Where we've talked about process evolution above, the actors involved have been acting in good faith:   they are working to mitigate risk in the organisation.  The [Process Risk](Process-Risk) that accretes along the way is an _unintended consequence_:  There is no guarantee that the process that arises will be humane and intuitive.  Many organisational processes end up being baroque or Kafka-esque, forcing unintuitive behaviour on their users.  This is partly because process design is _hard_ and it's difficult to anticipate all the various ways a process will be used ahead-of-time.  
 

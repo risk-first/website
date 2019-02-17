@@ -38,7 +38,7 @@ But it's not just transmission.  [Communication Risk](Communication-Risk) exists
 
 There is a symmetry about the steps going on in the diagram above, and we're going to exploit this in order to break down [Communication Risk](Communication-Risk) into its main types.  <!-- tweet-end -->
 
-![Communication Risk 2](images/generated/risks/communication/communication_2.png)
+![Communication Risk, broken into four areas](images/generated/risks/communication/communication_2.png)
 
 To get inside [Communication Risk](Communication-Risk), we need to understand **Communication** itself, whether between _machines_, _people_ or _products_:   we'll look at each in turn.  In order to do that, we're going to examine four basic concepts in each of these settings:
  
@@ -84,7 +84,7 @@ This works both ways.  Let's looks at some of the **Channel Risks** from the poi
  - I've chosen **D**, I now need to persuade my team that **D** is the correct solution...
  - ... and then they also need to understand **D** to do their job too.
 
-![Communication Marketing](images/generated/risks/communication/communication_marketing.png)
+![Marketing Communication](images/generated/risks/communication/communication_marketing.png)
 
 [Internal Models](Glossary#Internal-Model) don't magically get populated with the information they need:  they fill up gradually, as shown in the diagram above.  Popular products and ideas _spread_, by word-of-mouth or other means.  Part of the job of being a good technologist is to keep track of new **Ideas**, **Concepts** and **Options**, so as to use them as [Dependencies](Dependency-Risk) when needed.
 
@@ -183,7 +183,7 @@ By having a stack of protocols we are able to apply [Separation Of Concerns](htt
 
 ![Communication Protocols Risks](images/generated/risks/communication/communication_protocol_risks.png)
 
-Hopefully, the above example gives an indication of the usefulness of protocols within software.  But for every protocol we use, we have [Protocol Risk](Communication-Risk#protocol-risk).  This is a problem in human communication protocols, but it's really common in computer communication because we create protocols _all the time_ in software. 
+Hopefully, the above example gives an indication of the usefulness of protocols within software.  But for every protocol we use, we have [Protocol Risk](Communication-Risk#protocol-risk).  While this is a problem in human communication protocols, it's really common in computer communication because we create protocols _all the time_ in software. 
 
 For example, as soon as we define a Javascript function (called **b** here), we are creating a protocol for other functions (**a** here) to use it: 
 
@@ -252,8 +252,8 @@ Backwards Compatibility mitigates [Protocol Versioning Risk](Communication-Risk#
  - Clients use `/api/v1/something`.
  - Supplier publishes `/api/v2/something`.
  - Clients start using `/api/v2/something`.
- - Clients (eventually) stop using `/api/v2/something`.
- - Supplier retires `/api/v2/something` API. 
+ - Clients (eventually) stop using `/api/v1/something`.
+ - Supplier retires `/api/v1/something` API. 
 
 #### Forward Compatibility
 
@@ -333,7 +333,7 @@ But something else also happens:  by creating **f**, you are saying “I have th
 
 _Referring to **f** is a much simpler job than understanding **f**._
 
-We try to mitigate this via documentation but this is a terrible deal:  documentation is necessarily a simplified explanation of the abstraction, so will still suffer from invisibility risk.
+We try to mitigate this via documentation but this is a terrible deal:  documentation is necessarily a simplified explanation of the abstraction, so will still suffer from [Invisibility Risk](Communication-Risk#invisibility-risk).
 
 [Invisibility Risk](Communication-Risk#invisibility-risk) is mainly [Hidden Risk](Glossary#Hidden-Risk).  (Mostly, _you don't know what you don't know_.)  But you can carelessly _hide things from yourself_ with software<!-- tweet-end -->:
 
