@@ -73,7 +73,7 @@ This is a slightly contrived example, as you'll see.  But let's follow our featu
 
 ### Specification
 
-The first stage of the journey for the feature is that it meets the Business Analyst (BA).  The _purpose_ of the BA is to examine new goals for the project and try to integrate them with _reality as they understands it_.  A good BA might take a feature request and vet it against his [Internal Model](Glossary#internal-model), saying something like: 
+The first stage of the journey for the feature is that it meets the Business Analyst (BA).  The _purpose_ of the BA is to examine new goals for the project and try to integrate them with _reality as they understand it_.  A good BA might take a feature request and vet it against his [Internal Model](Glossary#internal-model), saying something like: 
 
 - "This feature doesn't belong on the User screen, it belongs on the New Account screen"
 - "90% of this functionality is already present in the Document Merge Process" 
@@ -94,14 +94,13 @@ This process of evolving the feature request into a requirement is the BA's job.
 
 The next stage for our feature, **Feature X** is that it gets coded and some tests get written.  Let's look at how our [Goal In Mind](Glossary#Goal-In-Mind) meets a new reality:   this time it's the reality of a pre-existing codebase, which has it's own internal logic.
 
-As the developer begins coding the feature in the software, they will start with an [Internal Model](Glossary#Internal-Model) of the software, and how the code fits into it.  But, in the process of implementing it, she is likely to learn about the codebase, and 
-her [Internal Model](Glossary#Internal-Model) will develop.  
+As the developer begins coding the feature in the software, they will start with an [Internal Model](Glossary#Internal-Model) of the software, and how the code fits into it.  But, in the process of implementing it, they are likely to learn about the codebase, and their [Internal Model](Glossary#Internal-Model) will develop.  
 
 ![Coding Process:  exposing more hidden risks as you code](images/generated/introduction/development_process_code.png)
 
 At this point, let's stop and discuss the visual grammar of the Risk-First Diagrams we've been looking at.  A Risk-First diagram shows what you expect to happen when you [Take Action](Glossary#taking-action).  The action itself is represented by the shaded, sign-post-shaped box in the middle.  On the left, we have the current state of the world, on the right is the anticipated state _after_ taking the action.
 
-The round-cornered rectangles represent our [Internal Model](Glossary#internal-model), and these contain our view of [Risk](Glossary#Risk), whether the risks we face right now, or the [Attendant Risks](Glossary#attendant-risk) expected after taking the action.  In the diagram above, taking the action of "coding and unit testing" is expected to mitigate the risks of "Incorrect Implementation" and "Duplicating Functionality".
+The round-cornered rectangles represent our [Internal Model](Glossary#internal-model), and these contain our view of [Risk](Glossary#Risk), whether the risks we face right now, or the [Attendant Risks](Glossary#attendant-risk) expected after taking the action.  In the diagram above, taking the action of "coding and unit testing" is expected to mitigate the risk of "Duplicating Functionality".
 
 Beneath the internal models, we are also showing real-world tangible artifacts.  That is, the physical change we would expect to see as a result of taking action.  In the diagram above, the action will result in "New Code" being added to the project, needed for the next steps of the development process. 
 

@@ -74,7 +74,7 @@ In marketing terms, minimising [Feature Access Risk](#feature-access-risk) is al
 
  > "Market risk is the risk of losses in positions arising from movements in market prices." - [Market Risk, _Wikipedia_](https://en.wikipedia.org/wiki/Market_risk)
 
-I face market risk when I own (i.e. have a _position_ in) some [Apple](http://apple.com) stock. <!-- tweet-end --> [Apple's](http://apple.com)'s stock price will decline if a competitor brings out an amazing product, or if fashions change and people don't want their products any more.
+I face market risk when I own (i.e. have a _position_ in) some [Apple](http://apple.com) stock. <!-- tweet-end --> [Apple's](http://apple.com) stock price will decline if a competitor brings out an amazing product, or if fashions change and people don't want their products any more.
 
 Since the product you are building is your asset, it makes sense that you'll face [Market Risk](Feature-Risk#market-risk) on it: the _market_ decides what it is prepared to pay and it tends to be outside your control.     
 
