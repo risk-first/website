@@ -54,7 +54,6 @@ The diagram above is a Risk-First interpretation of [Slack _et al_'s model of Op
  - **Operational Context**, which supplies the **Transform Process** with three key dependencies.  These are... 
  - **Resources**:  whether _transformed_ resources (like electricity or information, say) or _transforming_ resources (like staff or equipment).  
  - **Customers**: which supply it with money in return for goods and services.
- - **Operational Strategy**: the goals and objectives of the operation, informed by the reality of the environment it operates in.
  
 ![Risk-First Operations Management:  Taking Action, inspired by the work of Slack _et al._](images/generated/risks/operational/operational-risk.png)
  
