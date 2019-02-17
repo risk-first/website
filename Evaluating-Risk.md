@@ -37,15 +37,15 @@ In a financial context (or a gambling one), we can consider the overall **Risk S
 |Win            |+ 99 EUR       |1 in 200          |.5 EUR        |
 |Lose           |-  1 EUR       |199 in 200        |-.99 EUR      |
 
-Risk Management in the finance industry _starts_ here, and gets more complex, but often (especially on a software project), it's better to skip all this, and just figure out a Risk Score.  This is because if you think about "impact", it implies a definite, discrete event occurring, or not occurring, and asks you then to consider the probability of that occurring. 
+Risk Management in the finance industry _starts_ here and gets more complex.  But often (especially on a software project), it's better to skip all this, and just figure out a Risk Score.  This is because if you think about "impact", it implies a definite, discrete event occurring (or not occurring) and asks you then to consider the probability of that. 
 
 Risk-First takes a view that risks are a continuous quantity, more like _money_ or _water_:  by taking an action before delivering a project you might add a degree of [Schedule Risk](Scarcity-Risk#schedule-risk), but decrease the [Operational Risk](Operational-Risk) later on by a greater amount.   
 
 ## Risk Matrix
 
-A risk matrix presents a graphical view on where risks exist.  Here is an example, showing the risks from the dinner party in the [A Simple Scenario](A-Simple-Scenario) section:
-
 ![Risk Register of Dinner Party Risks](images/generated/introduction/risk_matrix.png)
+
+A risk matrix presents a graphical view on where risks exist.  The diagram above is an example, showing the risks from the dinner party in the [A Simple Scenario](A-Simple-Scenario) section:
 
 This type of graphic is _helpful_ in deciding what to do next, although alternatively, you can graph the overall **Risk Score** against the [Payoff](Glossary#payoff).  Easily mitigated risk (on the right), and worse risks (at the top) can therefore be dealt with first (hopefully).
 
@@ -72,7 +72,7 @@ I am using **risk** everywhere because later we will talk about specific risks (
 
 ## The Opposite Of Risk Management
 
-Let's look at the classic description of Risk Management:
+Let's look at a classic description of Risk Management:
 
 > "Risk Management is the process of thinking out corrective actions before a problem occurs, while it's still an abstraction.  The opposite of risk management is crisis management, trying to figure out what to do about the problem after it happens." - [Waltzing With Bears, _De Marco, Lister_](http://amzn.eu/d/i0IDFA2)
 
@@ -109,9 +109,9 @@ Ideally, a methodology should be applicable at _any_ scale too:
  - A department.
  - An entire organisation.
 
-In practice, however, we usually find methodologies are tuned for certain scales.  For example, [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) is designed for small, co-located teams.  And, that's useful.  But the fact it doesn't scale tells us something about it:  chiefly, that it considers certain _kinds_ of risk, while ignoring others.  At small scales, that works ok, but at larger scales, other risks (such as team [Coordination Risk](Coordination-Risk)) increase too fast for it to work.
+In practice, however, we usually find methodologies are tuned for certain scales.  For example, [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) is designed for small, co-located teams.  And, that's useful.  But the fact it doesn't scale tells us something about it:  chiefly, that it considers certain _kinds_ of risk, while ignoring others.  At small scales that works ok, but at larger scales other risks (such as team [Coordination Risk](Coordination-Risk)) increase too fast for it to work.
 
-If the methodology _fails at a particular scale_, this tells you something about the risks that the methodology isn't addressing.    One of the things Risk-First explores is trying to place methodologies and practices within a framework to say _when_ they are applicable.
+If the methodology _fails at a particular scale_ this tells you something about the risks that the methodology isn't addressing.    One of the things Risk-First explores is trying to place methodologies and practices within a framework to say _when_ they are applicable.
 
 ## Value vs Speed
 
@@ -140,13 +140,13 @@ As we will see, _Speed_ (or [Schedule Risk](Scarcity-Risk#schedule-risk) as we w
 Eisenhower's Box is a simple model allowing us to consider _two_ aspects of risk at the same time:
 
  - How valuable the work is (Importance, Value).
- - How soon it is needed (Urgency, Time).
+ - How soon it is needed (Urgency, Time, Speed).
 
 The problem is, we now need to choose whether to do something that is _urgent_ or something that is _important_.
 
 ## Discounting
 
-[Net Present Value](https://en.wikipedia.org/wiki/Net_present_value) allows us to discount value in the future, which offers us a way to reconcile these two variables.  The further in the future the value is realised, the bigger the discount.  This is done because payment _now_ is better than payment in the future:  there is the risk that something will happen to prevent that future payment.  This is why we have _interest rates_ on loan payments.
+We can use [Net Present Value](https://en.wikipedia.org/wiki/Net_present_value) to discount value in the future, which offers us a way to reconcile these two variables.  The further in the future the value is realised, the bigger the discount.  This is done because payment _now_ is better than payment in the future:  there is the risk that something will happen to prevent that future payment.  This is why we have _interest rates_ on loan payments.
 
 ![Net Present Value Discounting](images/numbers/npv.png)
 

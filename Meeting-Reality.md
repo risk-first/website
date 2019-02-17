@@ -89,7 +89,7 @@ As a flavour of what's to come, let's look at YAGNI, an acronym for You Aren't G
 
 The idea makes sense:  if you take on extra work that you don't need, _of course_ you'll be accreting [Attendant Risks](Glossary#attendant-risk).
 
-But, there is always the opposite opinion:  [You _Are_ Gonna Need It](http://wiki.c2.com/?YouAreGonnaNeedIt).  As a simple example, we often add log statements in our code as we write it (so we can trace what happened when things go wrong), though strictly following YAGNI strictly says we shouldn't.  
+But, there is always the opposite opinion:  [You _Are_ Gonna Need It](http://wiki.c2.com/?YouAreGonnaNeedIt).  As a simple example, we often add log statements in our code as we write it (so we can trace what happened when things go wrong), though following YAGNI strictly says we shouldn't.  
 
 ### Which is right?
 

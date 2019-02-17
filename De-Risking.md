@@ -20,7 +20,7 @@ Let's look at some common strategies for De-Risking.
 
 ## Mitigate
 
-**Mitigating** risk is taking steps towards minimising either its likelihood or impact (as we discussed in the [Evaluating Risk](Evaluating-Risk) section).  This is the main approach we will be looking at in Part 2.   We'll break down risk into its different types and look at the general mitigations for each.  The examples above of De-Risking were all mitigations.  (Safety-nets, for example, mitigate the impact of hitting the ground.)  
+**Mitigating** risk is taking steps towards minimising either its likelihood or impact (as we discussed in the [Evaluating Risk](Evaluating-Risk) section).  Safety-nets, for example, mitigate the impact of hitting the ground.  This is the main approach we will be looking at in Part 2.   We'll break down risk into its different types and look at the general mitigations for each.  
 
 ## Avoid
 
@@ -91,7 +91,7 @@ Let's look at the journey so far.
  
  - In [Just Risk](Just-Risk) we took a leap of faith: could _everything_ we do just be risk management?  And we looked at the RAID log and thought that maybe it could be.   
  
- - Next, in [A Software Project Scenario](Software-Project-Scenario) we looked at how you could treat the project-as-a-whole as a risk management exercise, and treat the goals from one day to the next as activities to mitigate risk.
+ - Next, in [A Software Project Scenario](Software-Project-Scenario) we looked at how you could treat the project-as-a-whole as a risk management exercise, and treat the goals from one day to the next as activities to manage risk.
  
  - [Evaluating Risk](Evaluating-Risk) was an aside, looking at some terminology and the useful concept of a Risk Register.
  
