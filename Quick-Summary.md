@@ -85,7 +85,7 @@ How do we take this further?
 
 One idea explored is the _[Risk Landscape](Risk-Landscape)_:  although the software team can't remove risk from their project, they can take actions that move them to a place in the [Risk Landscape](Risk-Landscape) where the risks on the project are more favourable than where they started.  
 
-From there, we examine basic risk archetypes you will encounter on the software project, to build up a [Taxonomy of Software Risk](Staging-And-Classifying), and look at which specific tools you can use to mitigate each kind of risk.  
+From there, we examine basic risk archetypes you will encounter on the software project, to build up a [vocabulary of Software Risk](Staging-And-Classifying), and look at which specific tools you can use to mitigate each kind of risk.  
 
 Then, we look at software practices, and how they manage various risks.  Beyond this we examine the question:  _how can a Risk-First approach inform the use of this practice?_  
 
