@@ -136,7 +136,7 @@ Sometimes, technology comes along that allows us to cross boundaries, like a _br
 
 I find, a lot of code I write is of this nature:  trying to write the _glue code_ to join together two different _ecosystems_.  
 
-As shown in the above diagram, mitigating [Boundary Risk](Boundary-Risk) involves taking on complexity.  The more [Protocol Complexity](Communication-Risk#protocol-risk) there is on either side of the two ecosystems, the more [Complex](Complexity-Risk) the bridge will necessarily be.  The below table shows some examples of this.
+As shown in the above diagram, mitigating [Boundary Risk](Boundary-Risk) involves taking on complexity.  The more [Protocol Complexity](Communication-Risk#protocol-risk) there is on either side of the two ecosystems, the more [complex](Complexity-Risk) the bridge will necessarily be.  The below table shows some examples of this.
 
 |Protocol Risk From A         |Protocol Risk From B        |Resulting Bridge Complexity  |Example                                                  |
 |-----------------------------|----------------------------|-----------------------------|---------------------------------------------------------|
@@ -165,7 +165,7 @@ Standards mitigate [Boundary Risk](Boundary-Risk) in one of two ways:
 
  - [ASCII](https://en.wikipedia.org/wiki/ASCII): fixed the different-character-sets [Boundary Risk](Boundary-Risk) by being a standard that others could adopt.  Before everyone agreed on ASCII, copying data from one computer system to another was a massive pain, and would involve some kind of translation.  [Unicode](https://en.wikipedia.org/wiki/Unicode) continues this work. 
 
- - [Internet Protocol](https://en.wikipedia.org/wiki/Internet_Protocol).  As we saw in [Communication Risk](Communication-Risk#protocol-risk), the Internet Protocol (IP) is the _lingua franca_ of the modern Internet.  However, at one period of time, there were many competing standards.  and IP was the ecosystem that "won", and was subsequently standardised by the [IETF](https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force).  This is actually an example of _both_ approaches:  as we saw in [Communication Risk](Communication-Risk), Internet Protocol is also an abstraction over lower-level protocols.
+ - [Internet Protocol](https://en.wikipedia.org/wiki/Internet_Protocol).  As we saw in [Communication Risk](Communication-Risk#protocol-risk), the Internet Protocol (IP) is the _lingua franca_ of the modern Internet.  However, at one period of time, there were many competing standards.  IP was the ecosystem that "won", and was subsequently standardised by the [IETF](https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force).  This is actually an example of _both_ approaches:  as we saw in [Communication Risk](Communication-Risk), Internet Protocol is also an abstraction over lower-level protocols.
  
 ## Boundary Risk Cycle
 
@@ -190,7 +190,7 @@ Although ecosystems are one very pernicious type of boundary in software develop
 
 - **Integration Testing**.  Building a unit test is easy.  You are generally testing some code you have written, aided with a testing framework.  Your code and the framework are both written in the same language, which means low [Boundary Risk](Boundary-Risk).  But to _integration test_ you need to step outside this boundary and so it becomes much harder.  This is true whether you are integrating with other systems (providing or supplying them with data) or parts of your own system (say testing the client-side and server parts together).  
 
-- **User Interface Testing**.  If you are supplying a user-interface, then the interface with the user is already a complex, under-specified risky [protocol](Communication-Risk#protocol-risk).  Although tools exist to automate UI testing (such as [Selenium](https://en.wikipedia.org/wiki/Selenium_(software)), these rarely satisfactorily mitigate this [protocol risk](Communication-Risk#protocol-risk):  can you be sure that the screen hasn't got strange glitches, that the mouse moves correctly, that the proportions on the screen are correct on all browsers?  
+- **User Interface Testing**.  The interface with the user is a complex, under-specified risky [protocol](Communication-Risk#protocol-risk).  Although tools exist to automate UI testing (such as [Selenium](https://en.wikipedia.org/wiki/Selenium_(software)), these rarely satisfactorily mitigate this [protocol risk](Communication-Risk#protocol-risk):  can you be sure that the screen hasn't got strange glitches, that the mouse moves correctly, that the proportions on the screen are correct on all browsers?  
 
 - **Jobs**.  When you pick a new technology to learn and add to your CV, it's worth keeping in mind how useful this will be to you in the future.   It's career-limiting to be stuck in a dying ecosystem with the need to retrain.
 

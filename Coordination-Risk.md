@@ -84,13 +84,13 @@ As an individual, do you suffer from [Coordination Risk](Coordination-Risk) at a
 
  - Thin lines with arrow-heads show a flow of _information_, either one-way or two-way.
  - Thick lines show a flow of _opinion_.
- - Boxes with corners are _decision makers_, whereas curved corners don't have a part in the decision.
+ - "d" boxes are _decision makers_, whereas circles don't have a part in the decision.
 
-| Type    | Description                  | Decision Makers | Opinions  | Channels     | Risk                                      |
-|---------|------------------------------|-----------------|-----------|--------------|-------------------------------------------|
+| Type    | Description                  | Decision Makers | Opinions    | Channels       | Risk                                      |
+|---------|------------------------------|-----------------|-------------|----------------|-------------------------------------------|
 | **UI**  | Uncoordinated                             | 1               | 1         | 0                                                      | Competition                               |
-| **AI**  | Autocratic                                | 1               | 1         | **s**                                                  | Maximum Coordination Risk                 |
-| **AII** | Autocratic (with upward information flow) | 1               | 1         | **s**                                                  |                                           |
+| **AI**  | Autocratic (with upward information flow) | 1               | 1         | **s**                                                  | Maximum Coordination Risk                 |
+| **AII** | Autocratic (up and down information flow) | 1               | 1         | **s**                                                  |                                           |
 | **CI**  | Consultative (Individual)                 | 1               | 1 + **s** | 2**s**                                                 |                                           |
 | **CII** | Consultative (Group)                      | 1               | 1 + **s** | <!--replace $\mathbf{s}^2$ -->**s**²<!--endreplace --> |                                           |
 | **GII** | Group Consultation and Voting             | 1 + **s**       | 1 + **s** | <!--replace $\mathbf{s}^2$ -->**s**²<!--endreplace --> | Maximum Communication Risk, Schedule Risk |
