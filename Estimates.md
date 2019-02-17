@@ -49,7 +49,7 @@ Seems to be the following:
  - The developer has some vague ideas about how to do X, but he'll need to try out various approaches until he finds something that works ([Boundary Risk](Boundary-Risk) and [Learning Curve Risk](Communication-Risk#learning-curve-risk)).
  - The developer has no idea what [Hidden Risk](Glossary#hidden-risk) will surface when he starts work on it.
  - The developer has no idea what will happen if he takes too long and misses the date by a day/week/month/year ([Schedule Risk](Scarcity-Risk#schedule-risk)).
- - The developer now has a [Deadline](Deadline-Risk),
+ - The developer now has a [Deadline](Deadline-Risk)
 
 ... and so on.  This is summarised in the above diagram.  It's no wonder people hate estimating: the treatment is worse than the disease.
 
@@ -97,7 +97,7 @@ From a Risk-First perspective, we can now see that this is an over-simplificatio
 
  - I can deliver a project in very short order by building a bunch of screens that _do nothing_ (accruing _stunning_ levels of [Implementation Risk](Feature-Risk#implementation-risk) as I go). 
  - Or, by assuming a lottery win, the project's budget is fine.  (Although I would have _huge_ [Funding Risk](Scarcity-Risk#funding-risk) because _what are the chances of winning the lottery?_)  
- - Brooks' Law (see the diagram above) contradicts this by saying you can't trade budget for deadlines:
+ - Brooks' Law (see the diagram above) contradicts the iron triangle by saying you can't trade budget for deadlines:
  
 > "Brooks' law is an observation about software project management according to which 'adding human resources to a late software project makes it later'. - [Brooks Law, _Wikipedia_](https://en.wikipedia.org/wiki/Brooks_law)
 
@@ -109,11 +109,9 @@ So the conclusion is:  **Focusing on the three risks of the iron triangle isn't 
 
 ## Old Saw No. 3: Parkinson's Law
 
-We've already looked at Parkinson's Law in the section on [Agency Risk](Process-Risk#bureaucracy-risk), but lets recap:
-
 > "Parkinson's law is the adage that 'work expands so as to fill the time available for its completion'." - [Parkinson's Law, _Wikipedia_](https://en.wikipedia.org/wiki/Parkinsons_law)  
 
-Let's leave aside the [Agency Risk](Agency-Risk) concerns this time.  Instead, let's consider this from a Risk-First perspective.  _Of course_ work would expand to fill the time available:  _Time available_ is an _absence of [Schedule Risk](Scarcity-Risk#schedule-risk)_.  It's always going to be sensible to exchange free time to reduce more serious risks.  
+Let's leave aside the [Devil Makes Work-style Agency Risk](Agency-Risk#devil-makes-work) concerns this time.  Instead, let's consider this from a Risk-First perspective.  _Of course_ work would expand to fill the time available:  _Time available_ is an _absence of [Schedule Risk](Scarcity-Risk#schedule-risk)_.  It's always going to be sensible to exchange free time to reduce more serious risks.  
 
 This is why projects will _always_ take at least as long as is budgeted for them.   <!-- tweet-end -->
 
@@ -200,7 +198,7 @@ If you were travelling across London from Ealing (in the West) to Stratford (in 
 
 In terms of risk, they all have different profiles.  You're often delayed in the car, by some amount.  The tube is _generally_ reliable, but when it breaks down or is being repaired it might end up quicker to walk.  
 
-If you were doing this same journey on foot, it's a very direct route, but would take five times longer.  However, if you were making this journey a hundred years ago, that might be the way you chose (horseback might be a bit faster).
+If you were doing this same journey on foot, it's a very direct route, but would take five times longer.  However, if you were making this journey a hundred years ago that might be the only choice (horseback might be a bit faster).
 
 ![Journey on Foot](images/estimates/foot.png)
  
