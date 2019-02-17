@@ -6,7 +6,7 @@ description: Argument that software development is all about risk, as originally
 
 # It's All About Risk
 
-One of the original proponents of the [Agile Manifesto](https://en.wikipedia.org/wiki/Agile_software_development#The_Agile_Manifesto), Kent Beck states in his book:
+One of the original authors of the [Agile Manifesto](https://en.wikipedia.org/wiki/Agile_software_development#The_Agile_Manifesto), Kent Beck states in his book:
 
 > "It's all about risk" - [Kent Beck, _Extreme Programming Explained_](http://amzn.eu/d/gUQjnbF)
 
