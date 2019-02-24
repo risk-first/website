@@ -138,9 +138,9 @@ There are a couple of ways of doing this:
 
 Due to channel bandwidth limitations, if the dependency is being written by another person, another team or in another country, [Communication Risk](Communication-Risk) piles up.<!-- tweet-end -->  When this happens, you will want to minimise the interface complexity _as much as possible_, since the more complex the interface, the worse the [Communication Risk](Communication-Risk) will be.  The tendency then is to make the interfaces between teams or people _as simple as possible_, modularising along these organisational boundaries.
 
-In essence, this is [Conway's Law](https://en.wikipedia.org/wiki/Conways_law):
+In essence, this is Conway's Law:
 
-> "organisations which design systems ... are constrained to produce designs which are copies of the communication structures of these organisations." — [Melvin Conway, _Conway's Law_](https://en.wikipedia.org/wiki/Conways_law) <!-- tweet-end -->
+> "organisations which design systems ... are constrained to produce designs which are copies of the communication structures of these organisations." - [Melvin Conway, _Conway's Law_](https://en.wikipedia.org/wiki/Conways_law)
 
 ### 2.  Software Libraries
 

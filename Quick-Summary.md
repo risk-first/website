@@ -29,7 +29,7 @@ For example:
 - A task about improving the health indicators could be seen as mitigating _the risk of the application failing and no-one reacting to it_. 
 - Even a task as basic as implementing a new function in the application is mitigating _the risk that users are dissatisfied and go elsewhere_.  
 
-One assertion of [Risk-First](Home) is that **every action you take on a project is to manage a [risk](Glossary#risk).**
+One assertion of Risk-First is that **every action you take on a project is to manage a [risk](Glossary#risk).**
 
 ## 3.  We Can Break Down Risks on a Project Methodically
 
