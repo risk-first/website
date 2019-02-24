@@ -15,6 +15,6 @@ The book aims to develop a _Pattern Language_ for understanding software risk, a
 
 ## Get It
 
-- [Pre-Order Kindle Edition on Amazon](http://a.co/d/hmpmYl2)
-- Print Edition available 21st Feb 2019
+- [Kindle Edition](http://a.co/d/hmpmYl2)
+- [Print Edition](https://www.amazon.com/Risk-First-Software-Development-1-Menagerie/dp/1717491855/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1551000696&sr=8-1)
  

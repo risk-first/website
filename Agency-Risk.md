@@ -15,7 +15,7 @@ The less visibility you have of the agent's activities, the bigger the risk.  Ho
 
 As we saw in the previous section on [Process Risk](Process-Risk), <!-- tweet-start -->[Agency Risk](Agency-Risk) doesn't just apply to people: it can apply to _running software_ or _whole teams_  <!-- tweet-end -->- anything which has agency over its actions.  
 
-> "Agency is the capacity of an actor to act in a given environment... Agency may either be classified as unconscious, involuntary behaviour, or purposeful, goal directed activity (intentional action). " - [Agency, _Wikipedia_](https://en.wikipedia.org/wiki/Agency_(philosophy%29) 
+> "Agency is the capacity of an actor to act in a given environment... Agency may either be classified as unconscious, involuntary behaviour, or purposeful, goal directed activity (intentional action). " - [Agency, _Wikipedia_](https://en.wikipedia.org/wiki/Agency_(philosophy)) 
 
 [Agency Risk](Agency-Risk) clearly includes the behaviour of [Bad Actors](https://en.wiktionary.org/wiki/bad_actor) but is not limited to them:  there are various "shades of grey" involved.   So first, we will look at some examples of [Agency Risk](Agency-Risk), in order to sketch out where the domain of this risk lies, before looking at three common ways to mitigate it: monitoring, security and goal alignment.
 
@@ -52,7 +52,7 @@ It's very easy to spot CV building:  look for choices of technology that are inc
 
 Heroes can be useful, but _underused_ project members are a nightmare.   The problem is, people who are not fully occupied begin to worry that actually the team would be better off without them, and then wonder if their jobs are at risk.
 
-Even if they don't worry about their jobs, sometimes they need ways to stave off _boredom_.  The solution to this is "busy-work":  finding tasks that, at first sight, look useful, and then delivering them in an over-elaborate way ([Gold Plating](https://en.wikipedia.org/wiki/Gold_plating_(software_engineering%29)) that'll keep them occupied.  This will leave you with more [Complexity Risk](Complexity-Risk) than you had in the first place.
+Even if they don't worry about their jobs, sometimes they need ways to stave off _boredom_.  The solution to this is "busy-work":  finding tasks that, at first sight, look useful, and then delivering them in an over-elaborate way that'll keep them occupied.  This is also known as [_Gold Plating_](https://en.wikipedia.org/wiki/Gold_plating_(software_engineering).  This will leave you with more [Complexity Risk](Complexity-Risk) than you had in the first place. 
 
 ### Pet Projects
 
