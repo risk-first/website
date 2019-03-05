@@ -63,7 +63,7 @@ Risks are often very similar across different software projects.   And, if you k
  - [Feature Risk](Feature-Risk)
  - [Communication Risk](Communication-Risk)
  - [Complexity Risk](Complexity-Risk)
- - [Dependency Risk](Dependency-Risk)
+ - [Dependency Risk](Dependency-Risk.md)
  - [Scarcity Risk](Scarcity-Risk)
  - [Deadline Risk](Deadline-Risk)
  - [Software Dependency Risk](Software-Dependency-Risk)

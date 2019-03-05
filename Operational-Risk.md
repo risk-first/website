@@ -19,7 +19,7 @@ When building software, it's tempting to take a very narrow view of the dependen
    - Freak weather conditions affecting ability of staff to get to work, interrupting the development and support teams. 
    - Reputational damage caused when staff are rude to the customers.
  
- - **[Reliability Risks](Dependency-Risk#reliability-risk)**:
+ - **[Reliability Risks](Dependency-Risk.md#reliability-risk)**:
    - A data-centre going off-line, causing your customers to lose access.
    - A power cut causing backups to fail.
    - Not having enough desks for everyone to sit at.
@@ -37,7 +37,7 @@ When building software, it's tempting to take a very narrow view of the dependen
    - Employees trying to steal from the company (bad actors).
    - Other crime, such as hackers stealing data.
 
-This is a long laundry-list of everything that can go wrong due to operating in "The Real World".  Although we've spent a lot of time looking at the varieties of [Dependency Risk](Dependency-Risk) on a software project, with [Operational Risk](Operational-Risk) we have to consider that these dependencies will fail in any number of unusual ways, and we can't be ready for all of them.  Preparing for this comes under the umbrella of [Operations Management](#operations-management).
+This is a long laundry-list of everything that can go wrong due to operating in "The Real World".  Although we've spent a lot of time looking at the varieties of [Dependency Risk](Dependency-Risk.md) on a software project, with [Operational Risk](Operational-Risk) we have to consider that these dependencies will fail in any number of unusual ways, and we can't be ready for all of them.  Preparing for this comes under the umbrella of [Operations Management](#operations-management).
 
 ## Operations Management
 
@@ -88,7 +88,7 @@ As we saw in [Map and Territory Risk](Map-and-Territory-Risk), it's very easy to
 
 There are plenty of [Hidden Risks](Glossary#hidden-risk) within the operation's environment. These change all the time in response to economic, legal or political change.  In order to manage a risk, you have to uncover it, so part of [Operations Management](#Operations-Management) is to look for trouble.
 
-- **Environmental Scanning** is all about trying to determine which changes in the environment are going to impact your operation.   Here we are trying to determine the level of [Dependency Risk](Dependency-Risk) we face for external dependencies, such as suppliers, customers, markets and regulation.  Tools like [PEST](https://en.wikipedia.org/wiki/PEST_analysis) are relevant, as is 
+- **Environmental Scanning** is all about trying to determine which changes in the environment are going to impact your operation.   Here we are trying to determine the level of [Dependency Risk](Dependency-Risk.md) we face for external dependencies, such as suppliers, customers, markets and regulation.  Tools like [PEST](https://en.wikipedia.org/wiki/PEST_analysis) are relevant, as is 
 - **[Penetration Testing](https://en.wikipedia.org/wiki/Penetration_test)**: looking for security weaknesses within the operation.  See [OWASP](https://en.wikipedia.org/wiki/OWASP) for examples.
 - **[Vulnerability Management](https://en.wikipedia.org/wiki/Vulnerability_management)** is about keeping up-to-date with vulnerabilities in [Software Dependencies](Software-Dependency-Risk).
 
@@ -141,7 +141,7 @@ The "should we ship?" decision is therefore a complex one.  In [Meeting Reality]
 
 ## The End Of The Road
 
-In a way, [actions](Glossary#taking-action) like **Design** and **Improvement** bring us right back to where we started from: identifying [Dependency Risks](Dependency-Risk), [Feature Risks](Feature-Risk) and [Complexity Risks](Complexity-Risk) that hinder our operation, and mitigating them through actions like _software development_.  
+In a way, [actions](Glossary#taking-action) like **Design** and **Improvement** bring us right back to where we started from: identifying [Dependency Risks](Dependency-Risk.md), [Feature Risks](Feature-Risk) and [Complexity Risks](Complexity-Risk) that hinder our operation, and mitigating them through actions like _software development_.  
 
 Our safari of risk is finally complete: it's time to reflect on what we've seen in the next section, [Staging and Classifying](Staging-And-Classifying).  
  

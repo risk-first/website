@@ -5,7 +5,7 @@ description: Risk due to the choices we make around dependencies, and the limita
 
 # Boundary Risk
 
-In the previous sections on [Dependency Risk](Dependency-Risk) we've touched on [Boundary Risk](Boundary-Risk) several times, but now it's time to tackle it head-on and discuss this important type of risk.  
+In the previous sections on [Dependency Risk](Dependency-Risk.md) we've touched on [Boundary Risk](Boundary-Risk) several times, but now it's time to tackle it head-on and discuss this important type of risk.  
 
 ![Boundary Risk is due to Dependency Risk and commitment](images/generated/risks/boundary/boundary-risk.png)
 
@@ -210,5 +210,5 @@ The only thing we can expect in the future is that the lifespan of any ecosystem
 
 Although our discipline is a young one, we should probably expect to see "Software Archaeology" in the same way as we see it for biological organisms.  Already we can see the dead-ends in the software evolutionary tree:  COBOL and BASIC languages, CASE systems.  Languages like FORTH live on in PostScript, SQL is still embedded in everything
 
-Let's move on now to the last [Dependency Risk](Dependency-Risk) section, and look at [Agency Risk](Agency-Risk).
+Let's move on now to the last [Dependency Risk](Dependency-Risk.md) section, and look at [Agency Risk](Agency-Risk).
 

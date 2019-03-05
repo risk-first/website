@@ -103,7 +103,7 @@ From a Risk-First perspective, we can now see that this is an over-simplificatio
 
 So the conclusion is:  **Focusing on the three risks of the iron triangle isn't enough.**  You can game these risks by sacrificing others:  we need to be looking at the project's risk _holistically_.
 
- - There's no point in calling a project complete if the dependencies you are using are [unreliable](Dependency-Risk) or [undergoing rapid change](Scarcity-Risk#red-queen-risk) 
+ - There's no point in calling a project complete if the dependencies you are using are [unreliable](Dependency-Risk.md) or [undergoing rapid change](Scarcity-Risk#red-queen-risk) 
  - There's no point in delivering the project on time if it's an [Operational Risk](Operational-Risk) nightmare, and requires constant round-the-clock support and will cost a fortune to _run_.  (Working on a project that "hits its delivery date" but is nonetheless a broken mess once in production is too common a sight.)
  - There's no point in delivering a project on-budget if [the market has moved on](Feature-Risk#market-risk) and [needs different features](Feature-Risk#feature-drift-risk).  
 
@@ -180,7 +180,7 @@ For a given [action](Glossary#taking-action) / road-map / business strategy, wha
 
 Instead of the Agile Estimation being about picking out a story-point number based on some idealised amount of work that needs to be done, it should be about surfacing and weighing up risks.  e.g:
 
- - "Adding this new database is problematic because it's going to massively increase our [Dependency Risk](Dependency-Risk)."
+ - "Adding this new database is problematic because it's going to massively increase our [Dependency Risk](Dependency-Risk.md)."
  - "I don't think we should have component A interacting with component B because it'll introduce extra [Communication Risk](Communication-Risk) which we will always be tripping over."
  - "I worry we might not understand what the sales team want and are facing [Feature Implementation Risk](Feature-Risk#implementation-risk).  How about we try and get agreement on a specification?"  
  

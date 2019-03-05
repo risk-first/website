@@ -318,5 +318,5 @@ The complexity of software tends to reflect the complexity of the environment it
 
 In particular, when we talk about the environment, we are talking about the number of dependencies that the software has, and the risks we face when relying on those dependencies.  
 
-So the next stop in the tour is a closer look at [Dependency Risk](Dependency-Risk).
+So the next stop in the tour is a closer look at [Dependency Risk](Dependency-Risk.md).
 

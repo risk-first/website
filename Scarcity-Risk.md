@@ -5,7 +5,7 @@ description: Scarcity Risk is about quantities of a dependency, and specifically
 
 # Scarcity Risk
 
-While [Reliability Risk](Dependency-Risk#reliability-risk) (which we met in the previous section) considers what happens when a _single dependency_ is unreliable, scarcity is about _quantities_ of a dependency, and specifically, _not having enough_.  <!-- tweet-end -->
+While [Reliability Risk](Dependency-Risk.md#reliability-risk) (which we met in the previous section) considers what happens when a _single dependency_ is unreliable, scarcity is about _quantities_ of a dependency, and specifically, _not having enough_.  <!-- tweet-end -->
 
 In the previous section we talked about the _reliability_ of the bus:  it will either arrive or it wont.  But what if, when it arrives, it's already full of passengers?  There is a _scarcity of seats_:  you don't much care which seat you get on the bus, you just need one.  Let's term this [Scarcity Risk](Scarcity-Risk), _the risk of not being able to access a dependency in a timely fashion due to its scarcity_.  
 
@@ -119,7 +119,7 @@ Here are a selection of mitigations for [Scarcity Risk](Scarcity-Risk) in genera
  - **Pools**: reserving parts of a resource for a group of customers, and sharing within that group.
  - **Horizontal Scaling**: allowing a scarce resource to flexibly scale according to how much demand there is.   (For example, putting on extra buses when the trains are on strike, or opening extra check-outs at the supermarket.)
  
-Much like [Reliability Risk](Dependency-Risk#Reliability-risk), there is science for it:
+Much like [Reliability Risk](Dependency-Risk.md#Reliability-risk), there is science for it:
 
  - **[Queue Theory](https://en.wikipedia.org/wiki/Queueing_theory)** is all about building mathematical models of buffers, queues, pools and so forth.
  - **[Logistics](https://en.wikipedia.org/wiki/Logistics)** is the practical organisation of the flows of materials and goods around things like [Supply Chains](https://en.wikipedia.org/wiki/Supply_chain),

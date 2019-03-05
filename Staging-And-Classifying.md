@@ -36,7 +36,7 @@ As shown in the above diagram, _using an abstraction you already know_ means:
  - **Mitigating [Feature Risk](Feature-Risk)**: because the abstraction is providing you with something _useful_.  For example, using the word "London" allows you to refer to a whole (but slightly non-specific) geographic area.
  - **Accepting [Communication Risk](Communication-Risk)**: because if you are using the abstraction in conversation the people you are using it with _need to understand it too_.
  - **Accepting [Map and Territory Risk](Map-And-Territory-Risk)**: because the abstraction is a simplification and not the actual thing itself.
- - **Living with [Dependency Risks](Dependency-Risk)**:  we depend on a word in our language (or a function in our library, or a service on the Internet).  But words are [unreliable](Dependency-Risk#reliability-risk).  Language _changes_ and _evolves_, and the words you are using now might not always mean what you want them to mean.  (Software too changes and evolves:  We've seen this in [Red Queen Risk](Scarcity-Risk#red-queen-risk) and [Feature Drift Risk](Feature-Risk#feature-drift-risk).)
+ - **Living with [Dependency Risks](Dependency-Risk.md)**:  we depend on a word in our language (or a function in our library, or a service on the Internet).  But words are [unreliable](Dependency-Risk.md#reliability-risk).  Language _changes_ and _evolves_, and the words you are using now might not always mean what you want them to mean.  (Software too changes and evolves:  We've seen this in [Red Queen Risk](Scarcity-Risk#red-queen-risk) and [Feature Drift Risk](Feature-Risk#feature-drift-risk).)
  
 ### Inventing A New Abstraction  
 
@@ -67,9 +67,9 @@ Abstraction is everywhere and seems to be at the heart of what our brains do.  B
 
 In the [Feature Risk](Feature-Risk) section, we looked at the problems of _supplying something for a client to use as a dependency_:  you've got to satisfy a demand ([Market Risk](Feature-Risk#market-risk)) and service a segment of the user community ([Feature Access Risk](Feature-Risk#feature-access-risk)).    
 
-However over the rest of the [Dependency Risk](Dependency-Risk) sections we looked at this from the point of view of _being a client of someone else_:  you want to find trustworthy, reliable dependencies that don't give up when you least want them to.
+However over the rest of the [Dependency Risk](Dependency-Risk.md) sections we looked at this from the point of view of _being a client of someone else_:  you want to find trustworthy, reliable dependencies that don't give up when you least want them to.
 
-So [Feature Risk](Feature-Risk) and [Dependency Risk](Dependency-Risk) are _two sides of the same coin_, they capture the risks in _demand_ and _supply_.   
+So [Feature Risk](Feature-Risk) and [Dependency Risk](Dependency-Risk.md) are _two sides of the same coin_, they capture the risks in _demand_ and _supply_.   
 
 As shown in the diagram above, relationships of features/dependencies are the basis of [Supply Chains](https://en.wikipedia.org/wiki/Supply_chain) and the world-wide network of goods and services that forms the modern economy.  The incredible complexity of this network mean incredible [Complexity Risk](Complexity-Risk), too.  Humans are masters at [coordinating](Coordination-Risk) and managing our dependencies. 
 

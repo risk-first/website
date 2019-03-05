@@ -22,7 +22,7 @@ But for now, let's crack on and examine where [Coordination Risk](Coordination-R
 
 ## A Model Of Coordination Risk
 
-Earlier, in [Dependency Risk](Dependency-Risk), we looked at various resources (time, money, people, events etc) and showed how we could [depend on them](Dependency-Risk) taking on risk.<!-- tweet-end -->  Here, let's consider the situation where there is _competition for those dependencies_ due to [Scarcity Risk](Scarcity-Risk):   other agents want to use them in a different way.  
+Earlier, in [Dependency Risk](Dependency-Risk.md), we looked at various resources (time, money, people, events etc) and showed how we could [depend on them](Dependency-Risk.md) taking on risk.<!-- tweet-end -->  Here, let's consider the situation where there is _competition for those dependencies_ due to [Scarcity Risk](Scarcity-Risk):   other agents want to use them in a different way.  
 
 ### Law Of Diminishing Returns
 
@@ -37,7 +37,7 @@ As you can see, by _sharing_, it's possible that the _total benefit_ is greater 
 Just two things are needed for competition to occur:
 
  - Multiple, Individual agents, trying to achieve [Goals](Glossary#Goal-In-Mind).
- - Scarce Resources, which the agents want to use as [Dependencies](Dependency-Risk).
+ - Scarce Resources, which the agents want to use as [Dependencies](Dependency-Risk.md).
 
 ### Coordination via Communication
 
@@ -70,7 +70,7 @@ Let's unpack this idea, and review some classic problems of coordination, none o
 
 6. **[Race Conditions](https://en.wikipedia.org/wiki/Race_condition)** are where we can't be sure of the result of a calculation, because it is dependent on the ordering of events within a system.  For example, two separate threads writing the same memory at the same time (one ignoring and over-writing the work of the other) is a race.  
 
-7. **Contention**: where there is [Scarcity Risk](Scarcity-Risk) for a [dependency](Dependency-Risk), we might want to make sure that everyone gets fair use of it, by taking turns, booking, queueing and so on.  As we saw in [Scarcity Risk](Scarcity-risk), sometimes this is handled for us by the [Dependency](Dependency-Risk) itself.  However if it isn't, it's the _users_ of the dependency who'll need to coordinate to use the resource fairly, again, by communicating with each other.
+7. **Contention**: where there is [Scarcity Risk](Scarcity-Risk) for a [dependency](Dependency-Risk.md), we might want to make sure that everyone gets fair use of it, by taking turns, booking, queueing and so on.  As we saw in [Scarcity Risk](Scarcity-risk), sometimes this is handled for us by the [Dependency](Dependency-Risk.md) itself.  However if it isn't, it's the _users_ of the dependency who'll need to coordinate to use the resource fairly, again, by communicating with each other.
 
 ## Decision Making
 
@@ -110,7 +110,7 @@ So _organisation_ can reduce [Coordination Risk](Coordination-Risk) but to make 
 
 ### Staff As Agents
 
-Staff in a team have a dual nature:  they are **Agents** and **Resources** at the same time.  The team [depends](Dependency-Risk) on staff for their resource of _labour_, but they're also part of the decision making process of the team, because they have [_agency_](Agency-Risk) over their own actions.  
+Staff in a team have a dual nature:  they are **Agents** and **Resources** at the same time.  The team [depends](Dependency-Risk.md) on staff for their resource of _labour_, but they're also part of the decision making process of the team, because they have [_agency_](Agency-Risk) over their own actions.  
 
 Part of [Coordination Risk](Coordination-Risk) is about trying to mitigate differences in [Internal Models](Glossary#Internal-Model). So it's worth considering how varied people's models can be:
 

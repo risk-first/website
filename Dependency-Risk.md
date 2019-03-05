@@ -5,7 +5,7 @@ description: Risks faced by depending on something else,  e.g. an event, process
 
 # Dependency Risk
 
-[Dependency Risk](Dependency-Risk) is the risk you take on whenever you have a dependency on something (or someone) else.   <!-- tweet-end -->
+[Dependency Risk](Dependency-Risk.md) is the risk you take on whenever you have a dependency on something (or someone) else.   <!-- tweet-end -->
 
 One simple example could be that the software service you write might depend on hardware to run on:  if the server goes down, the service goes down too.  In turn, the server depends on electricity from a supplier, as well as a network connection from a provider.  If either of these dependencies aren't met, the service is out of commission.
 
@@ -13,11 +13,11 @@ Dependencies can be on _events_, _people_, _teams_, _work_, _processes_, _softwa
 
 In order to avoid repetition, and also to break down this large topic, we're going to look at this over 7 sections:   
 
- - This first section will look at dependencies _in general_, and some of the variations of [Dependency Risk](Dependency-Risk).
+ - This first section will look at dependencies _in general_, and some of the variations of [Dependency Risk](Dependency-Risk.md).
  - Next, we'll look at [Scarcity Risk](Scarcity-Risk), because time, money and staff are scarce resources in every project.
  - We'll cover [Deadline Risk](Deadline-Risk), and discuss the purpose of Events and Deadlines, and how they enable us to coordinate around dependency use.
  - Then, we'll move on to look specifically at [Software Dependency Risk](Software-Dependency-Risk), covering using libraries, software services and building on top of the work of others.
- - Then, we'll take a look at [Process Risk](Process-Risk), which is still [Dependency Risk](Dependency-Risk), but we'll be considering more organisational factors and how bureaucracy comes into the picture.
+ - Then, we'll take a look at [Process Risk](Process-Risk), which is still [Dependency Risk](Dependency-Risk.md), but we'll be considering more organisational factors and how bureaucracy comes into the picture.
  - After that, we'll take a closer look at [Boundary Risk](Boundary-Risk) and [Dead-End Risk](Complexity-Risk#dead-end-risk).  These are the risks you face in making choices about what to depend on.
  - Finally, we'll wrap up this analysis with a look at some of the specific problems around depending on other people or businesses in [Agency Risk](Agency-Risk).
   
@@ -29,7 +29,7 @@ This isn't even lucky though: life has adapted to build dependencies on things t
 
 Although life exists at the bottom of the ocean around [hydrothermal vents](https://en.wikipedia.org/wiki/Hydrothermal_vent), it is a very different kind of life to ours and has a different set of dependencies given its circumstances. 
 
-This tells us a lot about [Dependency Risk](Dependency-Risk) right here:
+This tells us a lot about [Dependency Risk](Dependency-Risk.md) right here:
 
  - On the one hand, _depending on something_ is very often helpful, and quite often essential.  (For example, all life seem to depend on water).
  - Successful organisms _adapt_ to the dependencies available to them (like the thermal vent creatures).
@@ -42,7 +42,7 @@ Let's look at four types of risk that apply to every dependency:  Fit, Reliabili
 
 ## Fit Risk
 
-In order to illustrate some of the different [Dependency Risks](Dependency-Risk), let's introduce a running example:  trying to get to work each day.  There are probably a few alternative ways to make your journey each day, such as _by car_, _walking_ or _by bus_.  These are all alternative dependencies but give you the same _feature_: they'll get you there.
+In order to illustrate some of the different [Dependency Risks](Dependency-Risk.md), let's introduce a running example:  trying to get to work each day.  There are probably a few alternative ways to make your journey each day, such as _by car_, _walking_ or _by bus_.  These are all alternative dependencies but give you the same _feature_: they'll get you there.
 
 Normally, we'll use the same dependency each day.  This speaks to the fact that each of these approaches has different [Feature Fit Risk](Feature-Risk#feature-fit-risk).   Perhaps you choose going by bus over going by car because of the risk that owning the car is expensive, or that you might not be able to find somewhere to park it.
 
@@ -100,7 +100,7 @@ Our economic system and our software systems exhibit the same tendency-towards-c
 
 ## Managing Dependency Risk
 
-Arguably, managing [Dependency Risk](Dependency-Risk) is _what Project Managers do_.  Their job is to meet the project's [Goal](Glossary#goal-in-mind) by organising the available dependencies into some kind of useful order.  
+Arguably, managing [Dependency Risk](Dependency-Risk.md) is _what Project Managers do_.  Their job is to meet the project's [Goal](Glossary#goal-in-mind) by organising the available dependencies into some kind of useful order.  
 
 There are some tools for managing dependency risk:  [Gantt Charts](https://en.wikipedia.org/wiki/Gantt_chart) for example, arrange work according to the capacity of the resources (i.e. dependencies) available, but also the _dependencies between the tasks_.   If task **B** requires the outputs of task **A**, then clearly task **A** comes first and task **B** starts after it finishes.  We'll look at this more in [Process Risk](Process-Risk). 
 
