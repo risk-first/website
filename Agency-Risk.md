@@ -5,7 +5,7 @@ description: Explanation of Agency Risk and ways to mitigate it through monitori
 
 # Agency Risk
 
-[Coordinating a team](Coordination-Risk.md) is difficult enough when everyone on the team has a single [Goal](Glossary#Goal-In-Mind). <!-- tweet-end --> But people have their own goals too.  Sometimes their goals harmlessly co-exist with the team's goal, other times they don't.
+[Coordinating a team](Coordination-Risk.md) is difficult enough when everyone on the team has a single [Goal](Glossary.md#Goal-In-Mind). <!-- tweet-end --> But people have their own goals too.  Sometimes their goals harmlessly co-exist with the team's goal, other times they don't.
 
 This is [Agency Risk](Agency-Risk.md).   This term comes from finance and refers to the situation where you (the "principal") entrust your money to someone (the "agent") in order to invest it, but they don't necessarily have your best interests at heart.  They may instead elect to invest the money in ways that help them, or outright steal it.  
 
@@ -25,7 +25,7 @@ We shouldn't expect people on a project to sacrifice their personal lives for th
 
 > "Game development... requires long working hours and dedication...  Some video game developers (such as Electronic Arts) have been accused of the excessive invocation of 'crunch time'.  'Crunch time' is the point at which the team is thought to be failing to achieve milestones needed to launch a game on schedule. " - [Crunch Time, _Wikipedia_](https://en.wikipedia.org/wiki/Video_game_developer#"Crunch_time")
 
-People taking time off, going to funerals, looking after sick relatives and so on are all acceptable forms of [Agency Risk](Agency-Risk.md). <!-- tweet-end --> They are the [Attendant Risk](Glossary#attendant-risk) of having _staff_ rather than _slaves_.
+People taking time off, going to funerals, looking after sick relatives and so on are all acceptable forms of [Agency Risk](Agency-Risk.md). <!-- tweet-end --> They are the [Attendant Risk](Glossary.md#attendant-risk) of having _staff_ rather than _slaves_.
 
 ### The Hero
 
@@ -66,7 +66,7 @@ Working on a pet project usually means you get lots of attention (and more than 
 
 > "Morale, also known as Esprit de Corps, is the capacity of a group's members to retain belief in an institution or goal, particularly in the face of opposition or hardship" - [Morale, _Wikipedia_](https://en.wikipedia.org/wiki/Morale) 
 
-Sometimes the morale of the team or individuals within it dips, leading to lack of motivation.  [Morale Risk](Agency-Risk.md#morale-risk) is a kind of [Agency Risk](Agency-Risk.md) because it really means that a team member or the whole team isn't committed to the [Goal](Glossary#Goal-In-Mind) and may decide their efforts are best spent elsewhere.  [Morale Risk](Agency-Risk.md#morale-risk) might be caused by:
+Sometimes the morale of the team or individuals within it dips, leading to lack of motivation.  [Morale Risk](Agency-Risk.md#morale-risk) is a kind of [Agency Risk](Agency-Risk.md) because it really means that a team member or the whole team isn't committed to the [Goal](Glossary.md#Goal-In-Mind) and may decide their efforts are best spent elsewhere.  [Morale Risk](Agency-Risk.md#morale-risk) might be caused by:
 
  - **External Factors**:  perhaps the employee's dog has died, or they're simply tired of the industry, or are not feeling challenged.
  - **The goal feels unachievable**:  in this case people won't commit their full effort to it.  This might be due to a difference in the evaluation of the risks on the project between the team members and the leader.  In military science, a second meaning of morale is how well supplied and equipped a unit is.  This would also seem like a useful reference point for IT projects.  If teams are under-staffed or under-equipped, it will impact on motivation too.
@@ -82,7 +82,7 @@ There is significant [Agency Risk](Agency-Risk.md) in running software _at all_.
 
 ### Teams
 
-[Agency Risk](Agency-Risk.md) applies to _whole teams_ too.  It's perfectly possible that a team within an organisation develops [Goals](Glossary#Goal-In-Mind) that don't align with those of the overall organisation.  For example:
+[Agency Risk](Agency-Risk.md) applies to _whole teams_ too.  It's perfectly possible that a team within an organisation develops [Goals](Glossary.md#Goal-In-Mind) that don't align with those of the overall organisation.  For example:
 
  - A team introduces excessive [Bureaucracy](Process-Risk#bureaucracy-risk) in order to avoid work it doesn't like.
  - A team gets obsessed with a particular technology, or their own internal process improvement, at the expense of delivering business value.
@@ -134,7 +134,7 @@ We're waking up to the realisation that our software systems need to work the sa
 
 ### Goal Alignment
 
-As we stated at the beginning, [Agency Risk](Agency-Risk.md) at any level comes down to differences of [Goals](Glossary#goal-in-mind) between the different agents, whether they are _people_, _teams_ or _software_.  
+As we stated at the beginning, [Agency Risk](Agency-Risk.md) at any level comes down to differences of [Goals](Glossary.md#goal-in-mind) between the different agents, whether they are _people_, _teams_ or _software_.  
 
 So, if you can _align the goals_ of the agents involved, you can mitigate [Agency Risk](Agency-Risk.md).  Nassim Nicholas Taleb calls this "skin in the game": that is, the agent is exposed to the same risks as the principal.
 
@@ -158,7 +158,7 @@ This is an important consideration:  in adopting _those_ tools, you are necessar
 
 We've looked at various different shades of [Agency Risk](Agency-Risk.md) and three different mitigations for it. [Agency Risk](Agency-Risk.md) is a concern at the level of _individual agents_, whether they are processes, people, systems or teams.  
 
-So having looked at agents _individually_, it's time to look more closely at [Goals](Glossary#goal-in-mind), and the [Attendant Risks](Glossary#attendant-risk) when aligning them amongst multiple agents. 
+So having looked at agents _individually_, it's time to look more closely at [Goals](Glossary.md#goal-in-mind), and the [Attendant Risks](Glossary.md#attendant-risk) when aligning them amongst multiple agents. 
 
 On to [Coordination Risk](Coordination-Risk.md)...
 

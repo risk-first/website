@@ -5,7 +5,7 @@ description: Terms to use when talking about risk on a project.
 
 # De-Risking
 
-It's important not only to consider the [Attendant Risks](Glossary#attendant-risk) you're trying to mitigate, but the ones you're likely to pick up in the process.  This means picking a careful path through the [Risk Landscape](Glossary#risk-landscape).  This is the essence of _De-Risking_. 
+It's important not only to consider the [Attendant Risks](Glossary.md#attendant-risk) you're trying to mitigate, but the ones you're likely to pick up in the process.  This means picking a careful path through the [Risk Landscape](Glossary.md#risk-landscape).  This is the essence of _De-Risking_. 
 
 > "To take steps to make (something) less risky or less likely to involve a financial loss." - [De-Risk,_OxfordDictionaries.com_](https://en.oxforddictionaries.com/definition/de-risk)
 
@@ -20,13 +20,13 @@ Let's look at some common strategies for De-Risking.
 
 ## Mitigate
 
-**Mitigating** risk is taking steps towards minimising either its likelihood or impact (as we discussed in the [Evaluating Risk](Evaluating-Risk) section).  Safety-nets, for example, mitigate the impact of hitting the ground.  This is the main approach we will be looking at in Part 2.   We'll break down risk into its different types and look at the general mitigations for each.  
+**Mitigating** risk is taking steps towards minimising either its likelihood or impact (as we discussed in the [Evaluating Risk](Evaluating-Risk.md) section).  Safety-nets, for example, mitigate the impact of hitting the ground.  This is the main approach we will be looking at in Part 2.   We'll break down risk into its different types and look at the general mitigations for each.  
 
 ## Avoid
 
-**Avoiding** risk, means taking a route on the [Risk Landscape](Glossary#risk-landscape) _around_ the risk.  For example, if you are working in a team which has no experience of relational databases, then _storing data in files_ might be a way to avoid the [Learning Curve Risk](Communication-Risk.md#learning-curve-risk) associated with this technology.  
+**Avoiding** risk, means taking a route on the [Risk Landscape](Glossary.md#risk-landscape) _around_ the risk.  For example, if you are working in a team which has no experience of relational databases, then _storing data in files_ might be a way to avoid the [Learning Curve Risk](Communication-Risk.md#learning-curve-risk) associated with this technology.  
 
-Of course, you may pick up other, more serious [Attendant Risks](Glossary#attendant-risk) as a result: Relational Databases are software solutions to many kinds of [Coordination Risk](Coordination-Risk.md) problem.
+Of course, you may pick up other, more serious [Attendant Risks](Glossary.md#attendant-risk) as a result: Relational Databases are software solutions to many kinds of [Coordination Risk](Coordination-Risk.md) problem.
 
 _Not_ launching an online service _avoids_ the [Operational Risk](Operational-Risk) involved in running one.  Although you avoid the upsides too.
 
@@ -65,7 +65,7 @@ Sometimes risks just go away on their own.  [Learned Helplessness](https://en.wi
 
 ## Contain
 
-**Containing** risks means setting aside sufficient time or money to deal with them if they occur.  This is an excellent approach for [Hidden Risk](Glossary#hidden-risk) or entire sets of minor [Attendant Risks](Glossary#attendant-risk).  
+**Containing** risks means setting aside sufficient time or money to deal with them if they occur.  This is an excellent approach for [Hidden Risk](Glossary.md#hidden-risk) or entire sets of minor [Attendant Risks](Glossary.md#attendant-risk).  
 
 Whenever a project-manager builds slack into a project plan, this is **Containment**.   "Time-Boxing" is also containment: this is where you give a piece of work a week (say) to prove itself.  If it can't be done in this time, we move on and try a different approach.
 
@@ -83,19 +83,19 @@ Later, in the section on [Process Risk](Process-Risk) we'll be looking at how **
 
 Let's look at the journey so far.
 
- - In [A Simple Scenario](A-Simple-Scenario.md) we looked at how risk pervades every goal we have in life, big or small.  We saw that risk stems from the fact that our [Internal Model](Glossary#Internal-Model) of the world couldn't capture everything about reality, and so some things were down to chance.  
+ - In [A Simple Scenario](A-Simple-Scenario.md) we looked at how risk pervades every goal we have in life, big or small.  We saw that risk stems from the fact that our [Internal Model](Glossary.md#Internal-Model) of the world couldn't capture everything about reality, and so some things were down to chance.  
  
  - In the [Development Process](Development-Process.md) we looked at how common software engineering conventions like Unit Testing, User Acceptance Testing and Integration could help us manage the risk of taking an idea to production, by _gradually_ introducing it to reality in stages.
 
- - Then, generalizing the lessons of the Development Process article, we examined the idea that [Meeting Reality](Meeting-Reality) frequently helps flush out [Hidden Risks](Glossary#hidden-risk) and improve your [Internal Model](Glossary#Internal-Model).
+ - Then, generalizing the lessons of the Development Process article, we examined the idea that [Meeting Reality](Meeting-Reality) frequently helps flush out [Hidden Risks](Glossary.md#hidden-risk) and improve your [Internal Model](Glossary.md#Internal-Model).
  
  - In [Just Risk](Just-Risk) we took a leap of faith: could _everything_ we do just be risk management?  And we looked at the RAID log and thought that maybe it could be.   
  
  - Next, in [A Software Project Scenario](Software-Project-Scenario) we looked at how you could treat the project-as-a-whole as a risk management exercise, and treat the goals from one day to the next as activities to manage risk.
  
- - [Evaluating Risk](Evaluating-Risk) was an aside, looking at some terminology and the useful concept of a Risk Register.
+ - [Evaluating Risk](Evaluating-Risk.md) was an aside, looking at some terminology and the useful concept of a Risk Register.
  
- - We looked at [Cadence](Cadence.md) and how feedback loops allow you to navigate the [Risk Landscape](Glossary#risk-landscape) more effectively, by showing you more quickly when you're going wrong.
+ - We looked at [Cadence](Cadence.md) and how feedback loops allow you to navigate the [Risk Landscape](Glossary.md#risk-landscape) more effectively, by showing you more quickly when you're going wrong.
  
 What this has been building towards is supplying us with a vocabulary with which to communicate to our team-mates about which Risks are important to us, which actions we believe are the right ones, and which tools we should use.
 

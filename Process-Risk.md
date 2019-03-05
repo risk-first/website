@@ -21,11 +21,11 @@ As the above diagram shows, process exists to mitigate other kinds of risk.  For
  - **[Operational Risk](Operational-Risk)**:  this encompasses the risk of people _not doing their job properly_.  But, by having a process, (and asking, did this person follow the process?) you can draw a distinction between a process failure and a personnel failure.  For example, accepting funds from a money launderer _could_ be a failure of a bank employee.   But, if they followed the _process_, it's a failure of the [Process](Process-Risk) itself. 
  - **[Complexity Risk](Complexity-Risk.md)**: working _within a process_ can reduce the amount of [Complexity](Complexity-Risk.md) you have to think about.  We accept that processes are going to slow us down, but we appreciate the reduction in risk this brings.  Clearly, the complexity hasn't gone away, but it's hidden within design of the process.  For example, [McDonalds](https://en.wikipedia.org/wiki/McDonald's) tries to design its operation so that preparing each food item is a simple process to follow, reducing complexity (and training time) for the staff.
 
-These are all examples of [Risk Mitigation](Glossary#Mitigated-risk) for the _owners_ of the process.  But often the _consumers_ of the process end up picking up [Process Risks](Process-Risk) as a result:
+These are all examples of [Risk Mitigation](Glossary.md#Mitigated-risk) for the _owners_ of the process.  But often the _consumers_ of the process end up picking up [Process Risks](Process-Risk) as a result:
 
  - **[Invisibility Risk](Communication-Risk.md#invisibility-risk)**: it's often not possible to see how far along a process is to completion.  Sometimes, you can do this to an extent.  For example, when I send a package for delivery, I can see roughly how far it's got on the tracking website.  But this is still less-than-complete information and is a representation of reality.    
  - **[Dead-End Risk](Complexity-Risk.md#dead-end-risk)**: even if you have the right process, initiating a process has no guarantee that your efforts won't be wasted and you'll be back where you started from.  The chances of this happening increase as you get further from the standard use-case for the process, and the sunk cost increases with the length of time the process takes to complete.
- - **[Feature Access Risk](Feature-Risk#feature-access-risk)**: processes generally handle the common stuff, but ignore the edge cases.  For example, a form on a website might not be designed to be accessible to disabled people, or might only cater to some common subset of use-cases.
+ - **[Feature Access Risk](Feature-Risk.md#feature-access-risk)**: processes generally handle the common stuff, but ignore the edge cases.  For example, a form on a website might not be designed to be accessible to disabled people, or might only cater to some common subset of use-cases.
  
 ![Process Risk, and its consequences, compared with Agency Risk](images/generated/risks/process/process-risk.png) 
  
@@ -35,7 +35,7 @@ When we talk about "[Process Risk](Process-Risk)" we are really referring to the
 
 Processes tend to work well for the common cases because *practice makes perfect*,  but they are really tested when unusual situations occur.  Expanding processes to deal with edge-cases incurs [Complexity Risk](Complexity-Risk.md), so often it's better to try and have clear boundaries of what is "in" and "out" of the process' domain.
 
-Sometimes, processes are _not_ used commonly.  How can we rely on them anyway?  Usually, the answer is to build in extra [feedback loops](Glossary#feedback-loop):
+Sometimes, processes are _not_ used commonly.  How can we rely on them anyway?  Usually, the answer is to build in extra [feedback loops](Glossary.md#feedback-loop):
 
 - Testing that backups work, even when no backup is needed.
 - Running through a disaster recovery scenario at the weekend.
@@ -56,7 +56,7 @@ Often, [Sign-Offs](Sign-Off) boil down to a balance of risk for the signer:  on 
 This is a nasty situation, but there are a couple of ways to de-risk this: 
 
  - Break [Sign-Offs](Sign-Off) down into bite-size chunks of risk that are acceptable to those doing the signing-off.  
- - Agree far-in-advance the sign-off criteria.  As discussed in [Risk Theory](Evaluating-Risk), people have a habit of heavily discounting future risk, and it's much easier to get agreement on the _criteria_ than it is to get the sign-off. 
+ - Agree far-in-advance the sign-off criteria.  As discussed in [Risk Theory](Evaluating-Risk.md), people have a habit of heavily discounting future risk, and it's much easier to get agreement on the _criteria_ than it is to get the sign-off. 
  
 ## Evolution Of Process
 
@@ -83,7 +83,7 @@ Let's look at an example of how that can happen in a step-wise way.
 3. Problems are likely to occur eventually in the `B`/`C` relationship.  Perhaps some members of the `B` team give better service than others, or deal with more variety in requests?   In order to standardise the response from `B` and also to reduce scope-creep in requests from `C`, `B` organises bureaucratically so that there is a controlled process (`P`) by which `A` can be accessed.  Members of teams `B` and `C` now interact via some request mechanism like forms (or another protocol).  
 
   - As shown in the above diagram, because of `P`, `B` can now process requests on a first-come-first-served basis and deal with them all in the same way: the more unusual requests from `C` might not fit the model.  These [Process Risks](Process-Risk) are now the problem of the form-filler in `C`.   
-  - Since this is [Abstraction](Glossary#abstraction), `C` now has [Invisibility Risk](Communication-Risk.md#invisibility-risk) since it can't access team `B` and see how it works.
+  - Since this is [Abstraction](Glossary.md#abstraction), `C` now has [Invisibility Risk](Communication-Risk.md#invisibility-risk) since it can't access team `B` and see how it works.
   - Team `B` may also use `P` to introduce other bureaucracy like authorisation and sign-off steps or payment barriers.   All of this increases [Process Risk](Process-Risk) for team C. 
 
 ![Person D acts as a middleman for customers needing some variant of `A`, transferring Complexity Risk](images/generated/risks/process/step4.png)

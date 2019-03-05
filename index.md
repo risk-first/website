@@ -49,7 +49,7 @@ Some easy-to-digest ideas that will set the scene for examining the practices la
  - [Development Process](Development-Process.md)
  - [Meeting Reality](Meeting-Reality)
  - [It's Just Risk](Just-Risk)
- - [Evaluating Risk](Evaluating-Risk)
+ - [Evaluating Risk](Evaluating-Risk.md)
  - [Cadence](Cadence.md)
  - [De-Risking](De-Risking)
  - [A Conversation](A-Conversation.md)
@@ -60,7 +60,7 @@ Some easy-to-digest ideas that will set the scene for examining the practices la
 Risks are often very similar across different software projects.   And, if you know about them, you can look for them.  This section attempts to break them down for you:
 
  - [The Risk Landscape](Risk-Landscape)
- - [Feature Risk](Feature-Risk)
+ - [Feature Risk](Feature-Risk.md)
  - [Communication Risk](Communication-Risk.md)
  - [Complexity Risk](Complexity-Risk.md)
  - [Dependency Risk](Dependency-Risk.md)
@@ -127,6 +127,6 @@ A more light-hearted collection of blog posts related to the software developmen
 
 ### Glossary Of Terms
 
- - [Glossary](Glossary)
- - [Glossary Of Risk Types](Glossary-Of-Risk-Types)
+ - [Glossary](Glossary.md)
+ - [Glossary Of Risk Types](Glossary.md-Of-Risk-Types.md)
  

@@ -15,7 +15,7 @@ In [Meeting Reality](Meeting-Reality), we looked at the concept of the [Risk Lan
 
 It's tempting to think of our [Risk Landscape](Risk-Landscape) as being like a [Fitness Landscape](https://en.wikipedia.org/wiki/Fitness_landscape).  That is, you have a "cost function" which is your height above the landscape, and you try and optimise by moving downhill in a [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent) fashion.  
 
-However, there's a problem with this:  as we said in [Evaluating Risk](Evaluating-Risk), we don't have a cost function.  We can only _guess_ at what risks there are.  We have to go on our _experience_. For this reason, I prefer to think of the [Risk Landscape](Risk-Landscape) as a terrain which contains _fauna_ and _obstacles_ (or, specifically [_Boundaries_](Boundary-Risk)).
+However, there's a problem with this:  as we said in [Evaluating Risk](Evaluating-Risk.md), we don't have a cost function.  We can only _guess_ at what risks there are.  We have to go on our _experience_. For this reason, I prefer to think of the [Risk Landscape](Risk-Landscape) as a terrain which contains _fauna_ and _obstacles_ (or, specifically [_Boundaries_](Boundary-Risk)).
 
 Just as I can tell you that the landscape outside your window will probably will have some trees, fields and buildings, and that the buildings are likely to be joined together by roads, we can make generalisations about risks too.
 
@@ -35,7 +35,7 @@ Below is a table outlining the different risks we'll see.  There _is_ an order t
 
 |Risk            |          Description           |      
 |----------------|--------------------------|
-|[Feature Risk](Feature-Risk)                        |When you haven't built features the market needs, or the features you have built contain bugs, or the market changes underneath you.    |
+|[Feature Risk](Feature-Risk.md)                        |When you haven't built features the market needs, or the features you have built contain bugs, or the market changes underneath you.    |
 |[Communication Risk](Communication-Risk.md)            |Risks associated with getting messages heard and understood.|             
 |[Complexity Risk](Complexity-Risk.md)                  |Your software is so complex it makes it hard to change, understand, or run.             |        
 |[Dependency Risk](Dependency-Risk.md)                  |Risks of depending on other people, products, software, functions, etc. This is a general look at dependencies, before diving into specifics like...|  
@@ -44,9 +44,9 @@ Below is a table outlining the different risks we'll see.  There _is_ an order t
 |[Software Dependency Risk](Software-Dependency-Risk)|The risk of depending on a software library, service or function.|    
 |[Process Risk](Process-Risk)                        |When you depend on a business process, or human process to give you something you need.|
 |[Boundary Risk](Boundary-Risk)                      |Risks due to making decisions that limit your choices later on.  Sometimes, you go the wrong way on the [Risk Landscape](Risk-Landscape) and it's hard to get back to where you want to be.|            
-|[Agency Risk](Agency-Risk.md)                          |Risks that staff have their own [Goals](Glossary#goal-in-mind), which might not align with those of the project or team.|
+|[Agency Risk](Agency-Risk.md)                          |Risks that staff have their own [Goals](Glossary.md#goal-in-mind), which might not align with those of the project or team.|
 |[Coordination Risk](Coordination-Risk.md)              |Risks due to the fact that systems contain multiple agents, which need to work together.|       
-|[Map And Territory Risk](Map-And-Territory-Risk)    |Risks due to the fact that people don't see the world as it really is. (After all, they're working off different, imperfect [Internal Models](Glossary#internal-model).)|  
+|[Map And Territory Risk](Map-And-Territory-Risk)    |Risks due to the fact that people don't see the world as it really is. (After all, they're working off different, imperfect [Internal Models](Glossary.md#internal-model).)|  
 |[Operational Risk](Operational-Risk)                |Software is embedded in a system containing people, buildings, machines and other services.  Operational risk considers this wider picture of risk associated with running a software service or business in the real world.|
        
 After the last stop on the tour, in [Staging and Classifying](Staging-And-Classifying) we'll have a recap about what we've seen and make some guesses about how things fit together.  
@@ -75,7 +75,7 @@ In the financial crisis of 2007, these models of risk didn't turn out to be much
  - This caused credit defaults (the thing that [Credit Risk](https://en.wikipedia.org/wiki/Credit_risk) measures were meant to guard against) even though the banks _technically_ were solvent.
  - Once credit defaults started, this worried investors in the banks, which had massive [Market Risk](https://en.wikipedia.org/wiki/Market_risk) impacts that none of the models foresaw.
 
-All the [Risks](Glossary#Risk) were [correlated](https://www.investopedia.com/terms/c/correlation.asp).  That is, they were affected by the _same underlying events_, or _each other_.
+All the [Risks](Glossary.md#Risk) were [correlated](https://www.investopedia.com/terms/c/correlation.asp).  That is, they were affected by the _same underlying events_, or _each other_.
 
 ![Causation shown on a Risk-First Diagram.  More complexity is likely to lead to more Operational Risk](images/generated/risks/landscape/causation.png)
 
@@ -88,4 +88,4 @@ Just as naturalists are able to head out and find new species of insects and pla
 It's a big, crazy, evolving world of software.  Help to fill in the details.   Report back what you find.<!-- tweet-end -->
                                                       
 
-So, let's get started with [Feature Risk](Feature-Risk).
+So, let's get started with [Feature Risk](Feature-Risk.md).

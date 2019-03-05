@@ -85,7 +85,7 @@ So, we now have split complexity into two:
 
 In the same way as with a hand-tool, the bulk of the complexity of a software tool is hidden behind its interface.<!-- tweet-end -->  But, the more complex the _purpose_ of the tool, the more complex the interface will be.
 
-Software is not constrained by _physical_ ergonomics in the same way as a tool is. <!-- tweet-end --> But ideally, it should have conceptual ergonomics: complexity is hidden away from the user behind the _User Interface_.  This is the familiar concept of [Abstraction](Glossary#abstraction) we've already looked at.  As we saw in [Communication Risk](Communication-Risk.md#learning-curve-risk), when we use a new protocol, we face [Learning Curve Risk](Communication-Risk.md#learning-curve-risk).  To minimise this, we should apply the [Principal Of Least Astonishment](https://en.wikipedia.org/wiki/Principle_of_least_astonishment) when designing protocols: 
+Software is not constrained by _physical_ ergonomics in the same way as a tool is. <!-- tweet-end --> But ideally, it should have conceptual ergonomics: complexity is hidden away from the user behind the _User Interface_.  This is the familiar concept of [Abstraction](Glossary.md#abstraction) we've already looked at.  As we saw in [Communication Risk](Communication-Risk.md#learning-curve-risk), when we use a new protocol, we face [Learning Curve Risk](Communication-Risk.md#learning-curve-risk).  To minimise this, we should apply the [Principal Of Least Astonishment](https://en.wikipedia.org/wiki/Principle_of_least_astonishment) when designing protocols: 
 
  - **The abstractions should map easily to how the user expects the tool to work.** For example, I _expect_ the trigger on a drill to start the drill turning.  
  - **The abstractions should leverage existing idioms and knowledge.** In a new car I _expect_ to know what the symbols on the dashboard mean because I've driven other cars.
@@ -105,7 +105,7 @@ All 3 approaches involve a different risk-profile.  Let's look at each in turn, 
 
 Way before the Internet, this was the only game in town.  Tool support was very thin-on-the-ground.  Algorithms could be distributed as code snippets _in books and magazines_ which could be transcribed and run, and added to your program.  This spirit lives on somewhat in StackOverflow and JSFiddle, where you are expected to "adopt" others' code into your own project. Code-your-own is still the best option if you have highly bespoke requirements, or are dealing with unusual environmental contexts.
 
-One of the hidden risks of embarking on a code-your-own approach is that the features you need are _not_ apparent from the outset.  What might appear to be a trivial implementation of some piece of functionality can often turn into its own industry as more and more hidden [Feature Risk](Feature-Risk) is uncovered.  For example, as we discussed in our earlier treatment of [Dead-End Risk](Complexity-Risk.md#dead-end-risk), building log-in screens _seemed like a good idea_.  However, this gets out-of-hand fast when you need:
+One of the hidden risks of embarking on a code-your-own approach is that the features you need are _not_ apparent from the outset.  What might appear to be a trivial implementation of some piece of functionality can often turn into its own industry as more and more hidden [Feature Risk](Feature-Risk.md) is uncovered.  For example, as we discussed in our earlier treatment of [Dead-End Risk](Complexity-Risk.md#dead-end-risk), building log-in screens _seemed like a good idea_.  However, this gets out-of-hand fast when you need:
 
  - A password reset screen
  - To email the reset links to the user
@@ -149,7 +149,7 @@ By choosing a particular software library, we are making a move on the [Risk Lan
 - **[Communication Risk](Communication-Risk.md)**: because we now have to learn how to communicate with this new dependency.
 - **[Boundary Risk](Boundary-Risk)**: - because now are limited to using the functionality provided by this dependency.  We have chosen it over alternatives and changing to something else would be more work and therefore costly.   
 
-But, it's quite possible that we could wind up in a worse place than we started out, by using a library that's out-of-date, riddled with bugs or badly supported.  i.e. full of new, hidden [Feature Risk](Feature-Risk).  
+But, it's quite possible that we could wind up in a worse place than we started out, by using a library that's out-of-date, riddled with bugs or badly supported.  i.e. full of new, hidden [Feature Risk](Feature-Risk.md).  
 
 It's _really easy_ to make bad decisions about which tools to use because the tools don't (generally) advertise their deficiencies. <!-- tweet-end --> After all, they don't generally know how _you_ will want to use them.  
 
@@ -167,7 +167,7 @@ But, leaving that aside, let's try to build a model of what this decision making
 
 In the table above, I am summarising three different sources (linked at the end of the section), which give descriptions of which factors to look for when choosing open-source libraries.  Here are some take-aways:
 
- - **[Feature Risk](Feature-Risk) is a big concern**:   How can you be sure that the project will do what you want it to do ahead of schedule?  Will it contain bugs or missing features?  By looking at factors like _release frequency_ and _size of the community_ you get a good feel for this which is difficult to fake.
+ - **[Feature Risk](Feature-Risk.md) is a big concern**:   How can you be sure that the project will do what you want it to do ahead of schedule?  Will it contain bugs or missing features?  By looking at factors like _release frequency_ and _size of the community_ you get a good feel for this which is difficult to fake.
  - **[Boundary Risk](Boundary-Risk) is also very important**:  You are going to have to _live_ with your choices for the duration of the project, so it's worth spending the effort to either ensure that you're not going to regret the decision, or that you can change direction later.
  - **Third is [Communication Risk](Communication-Risk.md)**:  how well does the project deal with its users?  If a project is "famous", then it has communicated its usefulness to a wide, appreciative audience.  Avoiding [Communication Risk](Communication-Risk.md) is also a good reason to pick _tools you are already familiar with_.
   
@@ -204,7 +204,7 @@ SaaS is now a very convenient way to provide _commercial_ software.   Popular ex
 The diagram above summarises the risks raised in some of the available literature (sources below).  Some take-aways:
 
 - Clearly, [Operational Risk](Operational-Risk) is now a big concern.  By depending on a third-party organisation you are tying yourself to its success or failure in a much bigger way than just by using a piece of open-source software.   What happens to data security, both in the data centre and over the Internet?  Although you might choose a SaaS solution to mitigate _internal_ [Operational Risk](Operational-Risk), you might just be "throwing it over the wall" to a third party, who might do a worse job.
-- With [Feature Risk](Feature-Risk) you now have to contend with the fact that the software will be upgraded _outside your control_, and you may have limited control over which features get added or changed. 
+- With [Feature Risk](Feature-Risk.md) you now have to contend with the fact that the software will be upgraded _outside your control_, and you may have limited control over which features get added or changed. 
 - [Boundary Risk](Boundary-Risk) is also a different proposition: you are tied to the software provider by _a contract_.  If the service changes in the future, or isn't to your liking, you can't simply fork the code (like you could with an open source project).
 
 ![Risk Tradeoff From Using Software as a Service (SaaS)](images/generated/risks/software-dependency/saas.png)
@@ -244,7 +244,7 @@ Let's look at some more examples:
 |[Process-Risk](Process-Risk)                         |Reporting tools, online forms, process tracking tools                     |
 |[Agency-Risk](Agency-Risk.md)                           |Auditing tools, transaction logs, Time-Sheet software, HR Software        |  
 |[Operational-Risk](Operational-Risk)                 |Support tools like ZenDesk, Grafana, InfluxDB, Geneos, Security Tools     |
-|[Feature-Risk](Feature-Risk)                         |Every piece of software you use!                                          |
+|[Feature-Risk](Feature-Risk.md)                         |Every piece of software you use!                                          |
   
 ## Choice
 

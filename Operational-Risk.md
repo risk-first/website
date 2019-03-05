@@ -86,7 +86,7 @@ As we saw in [Map and Territory Risk](Map-and-Territory-Risk), it's very easy to
 
 ### Scanning The Operational Context
 
-There are plenty of [Hidden Risks](Glossary#hidden-risk) within the operation's environment. These change all the time in response to economic, legal or political change.  In order to manage a risk, you have to uncover it, so part of [Operations Management](#Operations-Management) is to look for trouble.
+There are plenty of [Hidden Risks](Glossary.md#hidden-risk) within the operation's environment. These change all the time in response to economic, legal or political change.  In order to manage a risk, you have to uncover it, so part of [Operations Management](#Operations-Management) is to look for trouble.
 
 - **Environmental Scanning** is all about trying to determine which changes in the environment are going to impact your operation.   Here we are trying to determine the level of [Dependency Risk](Dependency-Risk.md) we face for external dependencies, such as suppliers, customers, markets and regulation.  Tools like [PEST](https://en.wikipedia.org/wiki/PEST_analysis) are relevant, as is 
 - **[Penetration Testing](https://en.wikipedia.org/wiki/Penetration_test)**: looking for security weaknesses within the operation.  See [OWASP](https://en.wikipedia.org/wiki/OWASP) for examples.
@@ -104,7 +104,7 @@ As the diagram above shows, we can bring [Planning](#planning) to bear on depend
 
 ![Design and Change Activities](images/generated/risks/operational/design-change.png)
 
-Since our operation exists in a world of risks like [Red Queen Risk](Scarcity-Risk#red-queen-risk) and [Feature Drift Risk](Feature-Risk#feature-drift-risk), we would expect that the output of our [Planning](#planning) actions would result in changes to our operation.  
+Since our operation exists in a world of risks like [Red Queen Risk](Scarcity-Risk#red-queen-risk) and [Feature Drift Risk](Feature-Risk.md#feature-drift-risk), we would expect that the output of our [Planning](#planning) actions would result in changes to our operation.  
 
 While _planning_ is a day-to-day operational feedback loop, _design_ is a longer feedback loop changing not just the parameters of the operation, but the operation itself.
 
@@ -126,7 +126,7 @@ So there is a tension between "you only get one chance to make a first impressio
 A Risk-First re-framing of this (as shown in the diagram above) might be the balance between:
 
 - The perceived [Scarcity Risks](Scarcity-Risk) (such as funding, time available, etc) of staying in development (pressure to ship).
-- The perceived [Trust & Belief Risk](Communication-Risk.md#trust--belief-risk), [Feature Risk](Feature-Risk) and [Operational Risk](Operational-Risk) of going to production (pressure to improve).
+- The perceived [Trust & Belief Risk](Communication-Risk.md#trust--belief-risk), [Feature Risk](Feature-Risk.md) and [Operational Risk](Operational-Risk) of going to production (pressure to improve).
 
 The "should we ship?" decision is therefore a complex one.  In [Meeting Reality](Meeting-Reality), we discussed that it's better to do this "sooner, more frequently, in smaller chunks and with feedback".  We can meet [Operational Risk](Operational-Risk) _on our own terms_ by doing so: 
 
@@ -141,7 +141,7 @@ The "should we ship?" decision is therefore a complex one.  In [Meeting Reality]
 
 ## The End Of The Road
 
-In a way, [actions](Glossary#taking-action) like **Design** and **Improvement** bring us right back to where we started from: identifying [Dependency Risks](Dependency-Risk.md), [Feature Risks](Feature-Risk) and [Complexity Risks](Complexity-Risk.md) that hinder our operation, and mitigating them through actions like _software development_.  
+In a way, [actions](Glossary.md#taking-action) like **Design** and **Improvement** bring us right back to where we started from: identifying [Dependency Risks](Dependency-Risk.md), [Feature Risks](Feature-Risk.md) and [Complexity Risks](Complexity-Risk.md) that hinder our operation, and mitigating them through actions like _software development_.  
 
 Our safari of risk is finally complete: it's time to reflect on what we've seen in the next section, [Staging and Classifying](Staging-And-Classifying).  
  

@@ -7,7 +7,7 @@ description: Risks due to the difficulty of communicating with other entities, b
 
 If we all had identical knowledge, there would be no need to do any communicating at all, and therefore no [Communication Risk](Communication-Risk.md).  
 
-But people are not all-knowing oracles.  We rely on our _senses_ to improve our [Internal Models](Glossary#Internal-Model) of the world. There is [Communication Risk](Communication-Risk.md) here - we might overlook something vital (like an on-coming truck) or mistake something someone says (like "Don't cut the green wire").  
+But people are not all-knowing oracles.  We rely on our _senses_ to improve our [Internal Models](Glossary.md#Internal-Model) of the world. There is [Communication Risk](Communication-Risk.md) here - we might overlook something vital (like an on-coming truck) or mistake something someone says (like "Don't cut the green wire").  
 
 ## A Model Of Communication
 
@@ -32,7 +32,7 @@ But it's not just transmission.  [Communication Risk](Communication-Risk.md) exi
 |Reception             | **Bob** doesn't hear the message clearly (maybe there is background noise). |
 |Decoding              | **Bob** might not decode what was said into a meaningful sentence. |
 |Interpretation        | Assuming **Bob** _has_ heard, will he correctly **interpret**  which type of chips (or chops) **Alice** was talking about? |
-|Reconciliation        | Does **Bob** believe the message?  Will he **reconcile** the information into his [Internal Model](Glossary#Internal-Model) and act on it?  Perhaps not, if **Bob** thinks that there are chips at home already.|
+|Reconciliation        | Does **Bob** believe the message?  Will he **reconcile** the information into his [Internal Model](Glossary.md#Internal-Model) and act on it?  Perhaps not, if **Bob** thinks that there are chips at home already.|
 
 ## Approach To Communication Risk
 
@@ -45,9 +45,9 @@ To get inside [Communication Risk](Communication-Risk.md), we need to understand
  - **[Channels](https://en.wikipedia.org/wiki/Communication_channel)**: the medium via which the communication is happening.
  - **[Protocols](https://en.wikipedia.org/wiki/Communication_protocol)**:  the systems of rules that allow two or more entities of a communications system to transmit information.
  - **[Messages](https://en.wikipedia.org/wiki/Message)**: the information we want to convey.
- - **[Internal Models](Glossary#Internal-Model)**: the sources and destinations for the messages.  Updating internal models (whether in our heads or machines) is the reason why we're communicating.
+ - **[Internal Models](Glossary.md#Internal-Model)**: the sources and destinations for the messages.  Updating internal models (whether in our heads or machines) is the reason why we're communicating.
  
-And, as we look at these four areas, we'll consider the [Attendant Risks](Glossary#attendant-risk) of each.
+And, as we look at these four areas, we'll consider the [Attendant Risks](Glossary.md#attendant-risk) of each.
 
 ## Channels
 
@@ -86,15 +86,15 @@ This works both ways.  Let's looks at some of the **Channel Risks** from the poi
 
 ![Marketing Communication](images/generated/risks/communication/communication_marketing.png)
 
-[Internal Models](Glossary#Internal-Model) don't magically get populated with the information they need:  they fill up gradually, as shown in the diagram above.  Popular products and ideas _spread_, by word-of-mouth or other means.  Part of the job of being a good technologist is to keep track of new **Ideas**, **Concepts** and **Options**, so as to use them as [Dependencies](Dependency-Risk.md) when needed.
+[Internal Models](Glossary.md#Internal-Model) don't magically get populated with the information they need:  they fill up gradually, as shown in the diagram above.  Popular products and ideas _spread_, by word-of-mouth or other means.  Part of the job of being a good technologist is to keep track of new **Ideas**, **Concepts** and **Options**, so as to use them as [Dependencies](Dependency-Risk.md) when needed.
 
 ## Protocols
 
 > "A communication protocol is a system of rules that allow two or more entities of a communications system to transmit information. " - [Communication Protocol, Wikipedia](https://en.wikipedia.org/wiki/Communication_protocol)
 
-In this section I want to examine the concept of [Communication Protocols](https://en.wikipedia.org/wiki/Communication_protocol) and how they relate to [Abstraction](Glossary#abstraction), which is implicated over and over again in different types of risk we will be looking at. 
+In this section I want to examine the concept of [Communication Protocols](https://en.wikipedia.org/wiki/Communication_protocol) and how they relate to [Abstraction](Glossary.md#abstraction), which is implicated over and over again in different types of risk we will be looking at. 
 
-[Abstraction](Glossary#abstraction) means separating the _definition_ of something from the _use_ of something.  It's a widely applicable concept, but our example below will be specific to communication, and looking at the abstractions involved in loading a web page. 
+[Abstraction](Glossary.md#abstraction) means separating the _definition_ of something from the _use_ of something.  It's a widely applicable concept, but our example below will be specific to communication, and looking at the abstractions involved in loading a web page. 
 
 First we need to broaden our terminology.  Although so far we've talked about **Senders** and **Receivers**, we now need to talk from the point of view of who-depends-on-who.  That is, Clients and Suppliers.
 
@@ -115,7 +115,7 @@ http://google.com/preferences
 
 The first thing that happens is that the name `google.com` is _resolved_ by DNS.  This means that the browser looks up the domain name `google.com` and gets back an IP address.  
 
-This is some [Abstraction](Glossary#abstraction):  instead of using the machine's [IP Address](https://en.wikipedia.org/wiki/IP_address) on the network, `216.58.204.78`, I can use a human-readable address, `google.com`.   
+This is some [Abstraction](Glossary.md#abstraction):  instead of using the machine's [IP Address](https://en.wikipedia.org/wiki/IP_address) on the network, `216.58.204.78`, I can use a human-readable address, `google.com`.   
 
 The address `google.com` doesn't necessarily resolve to that same address each time:  _They have multiple IP addresses for `google.com`_, but as a user, I don't have to worry about this detail.
 
@@ -128,7 +128,7 @@ Each packet consists of two things:
 - An **IP Address**, which tells the network components (such as routers and gateways) where to send the packet, much like you'd write the address on the outside of a parcel.
 - The **Payload**, the stream of bytes for processing at the destination, like the contents of the parcel.
 
-But even this concept of "packets" is an [Abstraction](Glossary#abstraction).  Although all the components of the network understand this protocol, we might be using Wired Ethernet cables, or WiFi, 4G or _something else_ beneath that.
+But even this concept of "packets" is an [Abstraction](Glossary.md#abstraction).  Although all the components of the network understand this protocol, we might be using Wired Ethernet cables, or WiFi, 4G or _something else_ beneath that.
 
 ### 3. 802.11 - WiFi Protocol
 
@@ -138,7 +138,7 @@ And WiFi is just the first hop.  After the WiFi receiver, there will be protocol
 
 ### 4. TCP - Transmission Control Protocol
 
-Another [Abstraction](Glossary#abstraction) going on here is that my browser believes it has a  "connection" to the server.  This is provided by the TCP protocol. 
+Another [Abstraction](Glossary.md#abstraction) going on here is that my browser believes it has a  "connection" to the server.  This is provided by the TCP protocol. 
 
 But this is a fiction - my "connection" is built on the IP protocol, which as we saw above is just packets of data on the network.  So there are lots of packets floating around which say "this connection is still alive" and "I'm message 5 in the sequence" and so on in order to maintain this fiction.  
 
@@ -301,19 +301,19 @@ For people, nothing exists unless we have a name for it. <!-- tweet-end --> The 
 
 > "The famous pipe. How people reproached me for it! And yet, could you stuff my pipe? No, it's just a representation, is it not? So if I had written on my picture “This is a pipe”, I'd have been lying!" - [Rene Magritte, of _The Treachery of Images_](https://en.wikipedia.org/wiki/The_Treachery_of_Images)
 
-People don't rely on rigorous definitions of abstractions like computers do; we make do with fuzzy definitions of concepts and ideas.  We rely on [Abstraction](Glossary#abstraction) to move between the name of a thing and the _idea of a thing_.
+People don't rely on rigorous definitions of abstractions like computers do; we make do with fuzzy definitions of concepts and ideas.  We rely on [Abstraction](Glossary.md#abstraction) to move between the name of a thing and the _idea of a thing_.
 
 This brings about [Misinterpretation Risk](Communication-Risk.md#misinterpretation-risk): names are not _precise_, and concepts mean different things to different people.  We can't be sure that other people have the same meaning for a name that we have.  
 
 ### Invisibility Risk
  
-Another cost of [Abstraction](Glossary#abstraction) is [Invisibility Risk](Communication-Risk.md#invisibility-risk).  While abstraction is a massively powerful technique, (as we saw above, [Protocols](Communication-Risk.md#protocols) allow things like the Internet to happen) it lets the function of a thing hide behind the layers of abstraction and become invisible.  
+Another cost of [Abstraction](Glossary.md#abstraction) is [Invisibility Risk](Communication-Risk.md#invisibility-risk).  While abstraction is a massively powerful technique, (as we saw above, [Protocols](Communication-Risk.md#protocols) allow things like the Internet to happen) it lets the function of a thing hide behind the layers of abstraction and become invisible.  
 
 #### Invisibility Risk In Conversation
 
 [Invisibility Risk](Communication-Risk.md#invisibility-risk) is risk due to information not sent.  Because humans don't need a complete understanding of a concept to use it, we can cope with some [Invisibility Risk](Communication-Risk.md#invisibility-risk) in communication and this saves us time when we're talking.   It would be _painful_ to have conversations if, say, the other person needed to understand everything about how cars worked in order to discuss cars.  
 
-For people, [Abstraction](Glossary#abstraction) is a tool that we can use to refer to other concepts, without necessarily knowing how the concepts work. <!-- tweet-end --> This divorcing of "what" from "how" is the essence of abstraction and is what makes language useful.   
+For people, [Abstraction](Glossary.md#abstraction) is a tool that we can use to refer to other concepts, without necessarily knowing how the concepts work. <!-- tweet-end --> This divorcing of "what" from "how" is the essence of abstraction and is what makes language useful.   
 
 The debt of [Invisibility Risk](Communication-Risk.md#invisibility-risk) comes due when you realise that _not_ being given the details _prevents_ you from reasoning about it effectively.<!-- tweet-end -->  Let's think about this in the context of a project status meeting, for example:
  
@@ -335,7 +335,7 @@ _Referring to **f** is a much simpler job than understanding **f**._
 
 We try to mitigate this via documentation but this is a terrible deal:  documentation is necessarily a simplified explanation of the abstraction, so will still suffer from [Invisibility Risk](Communication-Risk.md#invisibility-risk).
 
-[Invisibility Risk](Communication-Risk.md#invisibility-risk) is mainly [Hidden Risk](Glossary#Hidden-Risk).  (Mostly, _you don't know what you don't know_.)  But you can carelessly _hide things from yourself_ with software<!-- tweet-end -->:
+[Invisibility Risk](Communication-Risk.md#invisibility-risk) is mainly [Hidden Risk](Glossary.md#Hidden-Risk).  (Mostly, _you don't know what you don't know_.)  But you can carelessly _hide things from yourself_ with software<!-- tweet-end -->:
 
  - Adding a thread to an application that doesn't report whether it worked, failed, or is running out of control and consuming all the cycles of the CPU.
  - Redundancy can increase reliability, but only if you know when servers fail, and fix them quickly.   Otherwise, you only see problems when the last server fails.
@@ -355,7 +355,7 @@ Although protocols can sometimes handle security features of communication (such
  
 Even if the receiver trusts the communicator, they may not believe the message.  Let's look at some reasons for that:
 
-- **[Weltanschauung (World View)](https://en.wikipedia.org/wiki/World_view)**: the ethics, values and beliefs in the receiver's [Internal Model](Glossary#Internal-Model) may be incompatible to those from the sender.
+- **[Weltanschauung (World View)](https://en.wikipedia.org/wiki/World_view)**: the ethics, values and beliefs in the receiver's [Internal Model](Glossary.md#Internal-Model) may be incompatible to those from the sender.
 - **[Relativism](https://en.wikipedia.org/wiki/Relativism)** is the concept that there are no universal truths.  Every truth is from a frame of reference.  For example, what constitutes _offensive language_ is dependent on the listener.
 - **[Psycholinguistics](https://en.wikipedia.org/wiki/Psycholinguistics)** is the study of how humans acquire languages.  There are different languages, dialects, and _industry dialects_.  We all understand language in different ways, take different meanings and apply different contexts to the messages.
   
@@ -363,7 +363,7 @@ From the point-of-view of [Marketing Communications](Communication-Risk.md#Marke
 
 ### Learning Curve Risk
 
-If the messages we are receiving force us to update our [Internal Model](Glossary#Internal-Model) too much, we can suffer from the problem of "too steep a [Learning Curve](https://en.wikipedia.org/wiki/Learning_curve)" or "[Information Overload](https://en.wikipedia.org/wiki/Information_overload)", where the messages force us to adapt our [Internal Model](Glossary#Internal-Model) too quickly for our brains to keep up.  
+If the messages we are receiving force us to update our [Internal Model](Glossary.md#Internal-Model) too much, we can suffer from the problem of "too steep a [Learning Curve](https://en.wikipedia.org/wiki/Learning_curve)" or "[Information Overload](https://en.wikipedia.org/wiki/Information_overload)", where the messages force us to adapt our [Internal Model](Glossary.md#Internal-Model) too quickly for our brains to keep up.  
 
 Commonly, the easiest option is just to ignore the information channel completely in these cases.
 
@@ -377,8 +377,8 @@ By now it should be clear that it's going to be _both_ quite hard to read and wr
 
 But now we should be able to see the reason why it's harder to read than write too: 
  
- - When reading code, you are having to shift your [Internal Model](Glossary#Internal-Model) to wherever the code is, accepting decisions that you might not agree with and accepting counter-intuitive logical leaps.  i.e. [Learning Curve Risk](Communication-Risk.md#learning-curve-risk). _(cf. [Principle of Least Surprise](https://en.wikipedia.org/wiki/Principle_of_least_astonishment))_
- - There is no [Feedback Loop](Glossary#Feedback-Loop) between your [Internal Model](Glossary#Internal-Model) and the [Reality](Glossary#Meet-Reality) of the code, opening you up to [Misinterpretation Risk](Communication-Risk.md#misinterpretation-risk).  When you write code, your compiler and tests give you this.
+ - When reading code, you are having to shift your [Internal Model](Glossary.md#Internal-Model) to wherever the code is, accepting decisions that you might not agree with and accepting counter-intuitive logical leaps.  i.e. [Learning Curve Risk](Communication-Risk.md#learning-curve-risk). _(cf. [Principle of Least Surprise](https://en.wikipedia.org/wiki/Principle_of_least_astonishment))_
+ - There is no [Feedback Loop](Glossary.md#Feedback-Loop) between your [Internal Model](Glossary.md#Internal-Model) and the [Reality](Glossary.md#Meet-Reality) of the code, opening you up to [Misinterpretation Risk](Communication-Risk.md#misinterpretation-risk).  When you write code, your compiler and tests give you this.
  - While reading code _takes less time_ than writing it, this also means the [Learning Curve](Communication-Risk.md#learning-curve-risk) is steeper.
 
 ## Communication Risk Wrap Up

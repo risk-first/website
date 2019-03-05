@@ -13,7 +13,7 @@ Why bother estimating at all?   There are two reasons why estimates are useful:<
 
 1.  **To allow for the creation of _events_.**  As we saw in [Deadline Risk](Deadline-Risk), if we can put a date on something, we can mitigate lots of [Coordination Risk](Coordination-Risk.md). Having a _release date_ for a product allows whole teams of people to coordinate their activities in ways that hugely reduce the need for [Communication](Communication-Risk.md).  "Attack at dawn" allows disparate army units to avoid the [Coordination Risk](Coordination-Risk.md) inherent in "attack on my signal".  This is a _good reason for estimating_ because by using events you are mitigating [Coordination Risk](Coordination-Risk.md).  This is often called a _hard deadline_.
 
-2.  **To allow for the estimation of the [Payoff](Glossary#payoff) of an [action](Glossary#taking-action).**  This is a _bad reason for estimating_ as we will discuss in detail below.  But briefly the main issue is that [Payoff](Glossary#payoff) isn't just about figuring out [Schedule Risk](Scarcity-Risk#schedule-risk) - you should be looking at all the other [Attendant Risks](Glossary#attendant-risk) of the action too.  
+2.  **To allow for the estimation of the [Payoff](Glossary.md#payoff) of an [action](Glossary.md#taking-action).**  This is a _bad reason for estimating_ as we will discuss in detail below.  But briefly the main issue is that [Payoff](Glossary.md#payoff) isn't just about figuring out [Schedule Risk](Scarcity-Risk#schedule-risk) - you should be looking at all the other [Attendant Risks](Glossary.md#attendant-risk) of the action too.  
 
 ## How Estimates Fail
 
@@ -47,7 +47,7 @@ Seems to be the following:
  - The developer and the client likely don't agree on exactly what X is, and any description of it is inadequate anyway ([Invisibility Risk](Communication-Risk.md#invisibility-risk)).
  - The developer has a less-than-complete understanding of the environment he will be delivering X in ([Complexity Risk](Complexity-Risk.md) and [Map And Territory Risk](Map-And-Territory-Risk)).
  - The developer has some vague ideas about how to do X, but he'll need to try out various approaches until he finds something that works ([Boundary Risk](Boundary-Risk) and [Learning Curve Risk](Communication-Risk.md#learning-curve-risk)).
- - The developer has no idea what [Hidden Risk](Glossary#hidden-risk) will surface when he starts work on it.
+ - The developer has no idea what [Hidden Risk](Glossary.md#hidden-risk) will surface when he starts work on it.
  - The developer has no idea what will happen if he takes too long and misses the date by a day/week/month/year ([Schedule Risk](Scarcity-Risk#schedule-risk)).
  - The developer now has a [Deadline](Deadline-Risk)
 
@@ -61,8 +61,8 @@ So what are we to do?  It's a problem as old as software itself, and in deferenc
 
 Let's try and pull this apart:
 
- - How do we measure this "productivity"?  In Risk-First terms, this is about taking action to change our current position on the [Risk Landscape](Glossary#risk-landscape) to a position of more favourable risk.  A "10X Developer" then must be able to take actions that have much higher [Payoff](Glossary#payoff) than a "1X Developer".  That is, mitigating more [existing risk](Glossary#risk), and generating less [Attendant Risk](Glossary#attendant-risk).  
- - It stands to reason then, that someone [taking action](Glossary#taking-action) _faster_ will be leaving us with less [Schedule Risk](Scarcity-Risk#schedule-risk).
+ - How do we measure this "productivity"?  In Risk-First terms, this is about taking action to change our current position on the [Risk Landscape](Glossary.md#risk-landscape) to a position of more favourable risk.  A "10X Developer" then must be able to take actions that have much higher [Payoff](Glossary.md#payoff) than a "1X Developer".  That is, mitigating more [existing risk](Glossary.md#risk), and generating less [Attendant Risk](Glossary.md#attendant-risk).  
+ - It stands to reason then, that someone [taking action](Glossary.md#taking-action) _faster_ will be leaving us with less [Schedule Risk](Scarcity-Risk#schedule-risk).
  - However, if they are _more expensive_, they may leave us with greater [Funding Risk](Scarcity-Risk#funding-risk) afterwards.
  - But [Schedule Risk](Scarcity-Risk#schedule-risk) isn't the only risk being transformed:   the result might be bugs, expensive new dependencies or spaghetti-code complexity.
  - The "10X" developer _must_ also leave behind less of these kind of risks too.
@@ -72,7 +72,7 @@ Let's try and pull this apart:
 
 Does the "10X Developer" even exist?  Crucially, it would seem that such a thing would be predicated on the existence of the "1X Developer", who gets "1X" worth of work done each day.  It's not clear that there is any such thing as an average developer who is mitigating risk at an average rate.  
 
-Even good developers have bad days, weeks or projects.  [Taking Action](Glossary#taking-action) is like placing a bet.  Sometimes you lose and the [Payoff](Glossary#payoff) doesn't appear:
+Even good developers have bad days, weeks or projects.  [Taking Action](Glossary.md#taking-action) is like placing a bet.  Sometimes you lose and the [Payoff](Glossary.md#payoff) doesn't appear:
 
  - The Open-Source software you're trying to apply to a problem doesn't solve it in the way you need.
  - A crucial use-case of the problem turns out to change the shape of the solution entirely, leading to lots of rework.
@@ -81,7 +81,7 @@ Even good developers have bad days, weeks or projects.  [Taking Action](Glossary
 The easiest way to be the "10X developer" is to have _done the job before_.  If you're coding in a familiar language, with familiar libraries and tools, delivering a cookie-cutter solution to a problem in the same manner you've done several times before, then you will be a "10X Developer" compared to _you doing it the first time_ because:
 
  - There's no [Learning Curve Risk](Communication-Risk.md#learning-curve-risk), because you have already learnt everything.
- - There's no [Dead End Risk](Complexity-Risk.md#dead-end-risk) because you already know all the right choices to make and all the right paths to take on the [Risk Landscape](Glossary#risk-landscape).     
+ - There's no [Dead End Risk](Complexity-Risk.md#dead-end-risk) because you already know all the right choices to make and all the right paths to take on the [Risk Landscape](Glossary.md#risk-landscape).     
 
 ## Old Saw No. 2: Quality, Speed, Cost: Pick Any Two
 
@@ -93,9 +93,9 @@ The easiest way to be the "10X developer" is to have _done the job before_.  If 
 > 3. Changes in one constraint necessitate changes in others to compensate or quality will suffer."
 >    - [Project Management Triangle, _Wikipedia_](https://en.wikipedia.org/wiki/Project_management_triangle)
 
-From a Risk-First perspective, we can now see that this is an over-simplification.  If _quality_ is a [Feature Fit](Feature-Risk) metric, _deadlines_ is [Schedule Risk](Scarcity-Risk#schedule-risk) and _budget_ refers to [Funding Risk](Scarcity-Risk#funding-risk) then that leaves us with a lot of risks unaccounted for:
+From a Risk-First perspective, we can now see that this is an over-simplification.  If _quality_ is a [Feature Fit](Feature-Risk.md) metric, _deadlines_ is [Schedule Risk](Scarcity-Risk#schedule-risk) and _budget_ refers to [Funding Risk](Scarcity-Risk#funding-risk) then that leaves us with a lot of risks unaccounted for:
 
- - I can deliver a project in very short order by building a bunch of screens that _do nothing_ (accruing _stunning_ levels of [Implementation Risk](Feature-Risk#implementation-risk) as I go). 
+ - I can deliver a project in very short order by building a bunch of screens that _do nothing_ (accruing _stunning_ levels of [Implementation Risk](Feature-Risk.md#implementation-risk) as I go). 
  - Or, by assuming a lottery win, the project's budget is fine.  (Although I would have _huge_ [Funding Risk](Scarcity-Risk#funding-risk) because _what are the chances of winning the lottery?_)  
  - Brooks' Law (see the diagram above) contradicts the iron triangle by saying you can't trade budget for deadlines:
  
@@ -105,7 +105,7 @@ So the conclusion is:  **Focusing on the three risks of the iron triangle isn't 
 
  - There's no point in calling a project complete if the dependencies you are using are [unreliable](Dependency-Risk.md) or [undergoing rapid change](Scarcity-Risk#red-queen-risk) 
  - There's no point in delivering the project on time if it's an [Operational Risk](Operational-Risk) nightmare, and requires constant round-the-clock support and will cost a fortune to _run_.  (Working on a project that "hits its delivery date" but is nonetheless a broken mess once in production is too common a sight.)
- - There's no point in delivering a project on-budget if [the market has moved on](Feature-Risk#market-risk) and [needs different features](Feature-Risk#feature-drift-risk).  
+ - There's no point in delivering a project on-budget if [the market has moved on](Feature-Risk.md#market-risk) and [needs different features](Feature-Risk.md#feature-drift-risk).  
 
 ## Old Saw No. 3: Parkinson's Law
 
@@ -127,7 +127,7 @@ Later in the story, the schedule has slipped twice and is about to slip again:
 
 ![Carl's Schedule Slip increases Trust and Belief Risks](images/generated/practices/estimates/carl1.png)
 
-At point `(2)`, Carl has tried to mitigate [Feature Risk](Feature-Risk) by increasing [Schedule Risk](Scarcity-Risk#Schedule-Risk), although he knows that Bill will trust him less for doing this, as shown in the diagram above.  Let's continue...
+At point `(2)`, Carl has tried to mitigate [Feature Risk](Feature-Risk.md) by increasing [Schedule Risk](Scarcity-Risk#Schedule-Risk), although he knows that Bill will trust him less for doing this, as shown in the diagram above.  Let's continue...
 
 > Carl began to feel that his job was on the line. Coding proceeded fairly well, but a few areas needed redesign and reimplementation. The team hadn't coordinated design details in those areas well, and some of their implementations conflicted. At the 11-month oversight-committee meeting, Carl announced the fourth schedule slip— to 13 months. Bill became livid. "Do you have any idea what you're doing?" he yelled. "You obviously don't have any idea! You obviously don't have any idea when the project is going to be done! I'll tell you when it's going to be done! It's going to be done by the 13-month mark, or you're going to be out of a job! I'm tired of being jerked around by you software guys! You and your team are going to work 60 hours a week until you deliver!"  `(3)`
 
@@ -143,7 +143,7 @@ At point `(4)`, we see that Bill's gamble worked (for him at least):  the projec
 
 ![Team Response](images/generated/practices/estimates/team1.png)
 
-The diagram above shows the [action taken](Glossary#taking-action), _working overtime_.  Despite this being a fictional (or fictionalised) example, it rings true for many projects.  What _should_ have happened at point `(1)`?  Both Carl and Bill estimated incorrectly...  Or did they?   Was this just Parkinson's Law in operation?
+The diagram above shows the [action taken](Glossary.md#taking-action), _working overtime_.  Despite this being a fictional (or fictionalised) example, it rings true for many projects.  What _should_ have happened at point `(1)`?  Both Carl and Bill estimated incorrectly...  Or did they?   Was this just Parkinson's Law in operation?
  
 ## Agile Estimation
 
@@ -153,9 +153,9 @@ Well, no.  First, how to choose the time period? [Schedule Risk](Scarcity-Risk#s
 
 > "Story points rate the relative effort of work in a Fibonacci-like format: 0, 0.5, 1, 2, 3, 5, 8, 13, 20, 40, 100. It may sound counter-intuitive, but that abstraction is actually helpful because it pushes the team to make tougher decisions around the difficulty of work. " - [Story Points, _Atlassian_](https://www.atlassian.com/agile/project-management/estimation)
 
-Second, the strategy of picking the two-day action with the greatest [Payoff](Glossary#payoff) is _often good_.  (After all, this is just [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent) and that's a perfectly good way for training [Machine Learning](https://en.wikipedia.org/wiki/Machine_learning) systems.)  However, just like following a river downhill from the top of a mountain will _often_ get you to the sea, it probably won't take the shortest path and sometimes you'll get stuck at a lake.  
+Second, the strategy of picking the two-day action with the greatest [Payoff](Glossary.md#payoff) is _often good_.  (After all, this is just [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent) and that's a perfectly good way for training [Machine Learning](https://en.wikipedia.org/wiki/Machine_learning) systems.)  However, just like following a river downhill from the top of a mountain will _often_ get you to the sea, it probably won't take the shortest path and sometimes you'll get stuck at a lake.  
 
-The choice of using gradient descent means that you have given up on [Goals](Glossary#goal-in-mind):  essentially, we have here the difference between "Walking towards a destination" and "Walking downhill".  Or, if you like, a planned economy and a market economy.  But, we don't live in _either_: everyone lives in some mixture of the two:  our governments _have plans_ for big things like roads and hospitals, and taxes.  Other stuff, they leave to the whims of supply and demand.   A project ends up being the same.
+The choice of using gradient descent means that you have given up on [Goals](Glossary.md#goal-in-mind):  essentially, we have here the difference between "Walking towards a destination" and "Walking downhill".  Or, if you like, a planned economy and a market economy.  But, we don't live in _either_: everyone lives in some mixture of the two:  our governments _have plans_ for big things like roads and hospitals, and taxes.  Other stuff, they leave to the whims of supply and demand.   A project ends up being the same.
 
 ## Risk-First Estimating
 
@@ -168,13 +168,13 @@ Let's figure out what we can take away from the above experiences:
  
 How can we synthesise this knowledge, along with what we've learned into something that makes more sense?
 
-#### Tip #1: Estimating Should be About _Estimating [Payoff](Glossary#payoff)_
+#### Tip #1: Estimating Should be About _Estimating [Payoff](Glossary.md#payoff)_
 
-For a given [action](Glossary#taking-action) / road-map / business strategy, what [Attendant Risks](Glossary#attendant-risk) are we going to have? 
+For a given [action](Glossary.md#taking-action) / road-map / business strategy, what [Attendant Risks](Glossary.md#attendant-risk) are we going to have? 
 
-  - What bets are we making about where the [market](Feature-Risk#market-risk) will be?
+  - What bets are we making about where the [market](Feature-Risk.md#market-risk) will be?
   - What [Communication Risk](Communication-Risk.md) will we face explaining our product to people?
-  - What [Feature Fit](Feature-Risk#feature-fit-risk) risks are we likely to have when we get there?
+  - What [Feature Fit](Feature-Risk.md#feature-fit-risk) risks are we likely to have when we get there?
   - What [Complexity Risks](Complexity-Risk.md) will we face building our software?  How can we avoid it ending up as a [Big Ball Of Mud](Complexity-Risk.md#Protocols-And-Types)?
   - Where are we likely to face [Boundary Risks](Boundary-Risk) and [Dead End Risks](Complexity-Risk.md#dead-end-risk)?
 
@@ -182,7 +182,7 @@ Instead of the Agile Estimation being about picking out a story-point number bas
 
  - "Adding this new database is problematic because it's going to massively increase our [Dependency Risk](Dependency-Risk.md)."
  - "I don't think we should have component A interacting with component B because it'll introduce extra [Communication Risk](Communication-Risk.md) which we will always be tripping over."
- - "I worry we might not understand what the sales team want and are facing [Feature Implementation Risk](Feature-Risk#implementation-risk).  How about we try and get agreement on a specification?"  
+ - "I worry we might not understand what the sales team want and are facing [Feature Implementation Risk](Feature-Risk.md#implementation-risk).  How about we try and get agreement on a specification?"  
  
 ![Risk-First Diagram Language](images/generated/introduction/all_risk_management_language.png)
  
@@ -202,11 +202,11 @@ If you were doing this same journey on foot, it's a very direct route, but would
 
 ![Journey on Foot](images/estimates/foot.png)
  
-In the software development past, _building it yourself_ was the only way to get anything done.  It was like London _before road and rail_.   Nowadays, you are bombarded with choices.  It's actually _worse than London_ because it's not even a two-dimensional geographic space and there are multitudes of different routes and acceptable destinations.  Journey planning on the software [Risk Landscape](Glossary#risk-landscape) is an optimisation problem _par excellence_. 
+In the software development past, _building it yourself_ was the only way to get anything done.  It was like London _before road and rail_.   Nowadays, you are bombarded with choices.  It's actually _worse than London_ because it's not even a two-dimensional geographic space and there are multitudes of different routes and acceptable destinations.  Journey planning on the software [Risk Landscape](Glossary.md#risk-landscape) is an optimisation problem _par excellence_. 
 
 ![Possible Moves On The Risk Landscape](images/generated/practices/estimates/risk-landscape_sideways.png)
 
-Because the modern [Risk Landscape](Glossary#risk-landscape) is so complex:
+Because the modern [Risk Landscape](Glossary.md#risk-landscape) is so complex:
 
  - There can be orders of magnitude difference in _time_, with very little difference in destination.
  - If it's [Schedule Risk](Scarcity-Risk#schedule-risk) you're worried about, _Code Yourself_ isn't a great solution (for the whole thing, anyway).  "Take the tube" and at least partly use something someone built already.  There are probably multiple alternatives you can consider.
@@ -217,13 +217,13 @@ Because the modern [Risk Landscape](Glossary#risk-landscape) is so complex:
    
 #### Tip #3: Meet Reality Early on the Biggest Risks
 
-In getting from A to B on the [Risk Landscape](Glossary#risk-landscape) imagine that all the [Attendant Risks](Glossary#attendant-risk) are the stages of a journey.  Some might be on foot, train, car and so on.  In order for your course of action to work all the stages in the journey have to succeed.  
+In getting from A to B on the [Risk Landscape](Glossary.md#risk-landscape) imagine that all the [Attendant Risks](Glossary.md#attendant-risk) are the stages of a journey.  Some might be on foot, train, car and so on.  In order for your course of action to work all the stages in the journey have to succeed.  
 
 Although you might have to make the steps of a journey in some order, you can still mitigate risk in a different order.   For example, checking the trains are running, making sure your bike is working, booking tickets and taxis, and so on.  
 
 The _sensible_ approach would be to test the steps _in order from weakest to strongest_.  This means working out how to meet reality for each risk in turn, in order from biggest risk to smallest.
 
-Often, a _strategy_ will be broken up into multiple actions.  _Which are the riskiest actions?_  Figure this out, using the Risk-First vocabulary and the best experience you can bring to bear, then, perform the actions which [Payoff](Glossary#payoff) the biggest risks first.  
+Often, a _strategy_ will be broken up into multiple actions.  _Which are the riskiest actions?_  Figure this out, using the Risk-First vocabulary and the best experience you can bring to bear, then, perform the actions which [Payoff](Glossary.md#payoff) the biggest risks first.  
 
 As we saw from the "10X Developer" Saw, [Learning Curve Risk](Communication-Risk.md#learning-curve-risk) and [Dead End Risk](Complexity-Risk.md#dead-end-risk), are likely to be the biggest risks.  How can we front-load this and tackle these earlier?   
 
@@ -231,9 +231,9 @@ As we saw from the "10X Developer" Saw, [Learning Curve Risk](Communication-Risk
  - Build mock-ups:  
    - UI wireframes allow us to bottom out the [Communication Risk](Communication-Risk.md) of the interfaces we build.  
    - [Spike Solutions](Coding#spike) allow us to de-risk algorithms and approaches before making them part of the main development.
-   - Test the market with these and [meet reality](Glossary#meet-reality) early.
+   - Test the market with these and [meet reality](Glossary.md#meet-reality) early.
  - Don't pick delivery dates far in the future.  Collectively work out the biggest risks with your clients, and then arrange the next possible date to demonstrate the mitigation.  
- - Do actions _early_ that are _simple_ but are nevertheless show-stoppers.  They are as much a source of [Hidden Risk](Glossary#hidden-risk) as more obviously tricky actions. 
+ - Do actions _early_ that are _simple_ but are nevertheless show-stoppers.  They are as much a source of [Hidden Risk](Glossary.md#hidden-risk) as more obviously tricky actions. 
 
 #### Tip #4: Talk Frankly About All The Risks
 
@@ -247,7 +247,7 @@ Let's get back to Bill and Carl.  What went wrong between points `(1)` and `(2)`
 
 > "I think it will take about 9 months, but that's just a rough estimate at this point," Carl said. "That's not going to work," Bill said. "I was hoping you'd say 3 or 4 months.  I need to show the board something by then or I'm worried they will lose confidence in me and this project".  
 
-> "OK," said Carl.  "But I'm really concerned we have huge [Feature Fit Risk](Feature-Risk#feature-fit-risk).  The task of understanding the requirements and doing the design is massive."
+> "OK," said Carl.  "But I'm really concerned we have huge [Feature Fit Risk](Feature-Risk.md#feature-fit-risk).  The task of understanding the requirements and doing the design is massive."
 
 > "Well, in my head it's actually pretty simple, " said Bill. "Maybe I don't have the full picture, or maybe your idea of what to build is more complex than I think it needs to be.  That's a massive risk right there and I think we should try and mitigate it right now before things progress.  Maybe I'll need to go back to the board if it's worse than I think. "
 
@@ -272,8 +272,8 @@ Let's recap those again, in reverse order:
 - **Tip #5: Picture Worrying Futures**.  For some given future point in time, try considering which risks you _don't_ want to be facing.
 - **Tip #4: Talk Frankly About All The Risks**.  Apply the Risk-First vocabulary to help.  
 - **Tip #3: Meet Reality Early on the Biggest Risks**.
-- **Tip #2: The Risk Landscape is Increasingly Complex**:  This means you have a wide variety of possible [actions to take](Glossary#taking-action), so consider all the options.
-- **Tip #1: Estimating Should be About _Estimating [Payoff](Glossary#payoff)_**.  For your action, don't just get stuck on [Schedule Risk](Scarcity-Risk#schedule-risk).  Consider [the whole cast](Staging-And-Classifying).
+- **Tip #2: The Risk Landscape is Increasingly Complex**:  This means you have a wide variety of possible [actions to take](Glossary.md#taking-action), so consider all the options.
+- **Tip #1: Estimating Should be About _Estimating [Payoff](Glossary.md#payoff)_**.  For your action, don't just get stuck on [Schedule Risk](Scarcity-Risk#schedule-risk).  Consider [the whole cast](Staging-And-Classifying).
 
 
 
