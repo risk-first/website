@@ -125,6 +125,6 @@ This implies that there is a tendency for organisations to end up with _needless
 
 To fix this, design needs to happen at a higher level.  In our code, we would [Refactor](Complexity-Risk#Technical-Debt) these processes to remove the unwanted complexity.  In a business, it requires re-organisation at a higher level to redefine the boundaries and responsibilities between the teams.  
 
-Next in the tour of [Dependency Risks](Dependency-Risk), it's time to look at [Boundary Risk](Boundary-Risk).
+Next in the tour of [Dependency Risks](Dependency-Risk.md), it's time to look at [Boundary Risk](Boundary-Risk).
 
 

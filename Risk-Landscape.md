@@ -38,7 +38,7 @@ Below is a table outlining the different risks we'll see.  There _is_ an order t
 |[Feature Risk](Feature-Risk)                        |When you haven't built features the market needs, or the features you have built contain bugs, or the market changes underneath you.    |
 |[Communication Risk](Communication-Risk)            |Risks associated with getting messages heard and understood.|             
 |[Complexity Risk](Complexity-Risk)                  |Your software is so complex it makes it hard to change, understand, or run.             |        
-|[Dependency Risk](Dependency-Risk)                  |Risks of depending on other people, products, software, functions, etc. This is a general look at dependencies, before diving into specifics like...|  
+|[Dependency Risk](Dependency-Risk.md)                  |Risks of depending on other people, products, software, functions, etc. This is a general look at dependencies, before diving into specifics like...|  
 |[Scarcity Risk](Scarcity-Risk)                      |Risks associated with having limited time, money or some other resource.|    
 |[Deadline Risk](Deadline-Risk)                      |The risk of having a date to hit.|
 |[Software Dependency Risk](Software-Dependency-Risk)|The risk of depending on a software library, service or function.|    

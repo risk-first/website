@@ -86,7 +86,7 @@ This works both ways.  Let's looks at some of the **Channel Risks** from the poi
 
 ![Marketing Communication](images/generated/risks/communication/communication_marketing.png)
 
-[Internal Models](Glossary#Internal-Model) don't magically get populated with the information they need:  they fill up gradually, as shown in the diagram above.  Popular products and ideas _spread_, by word-of-mouth or other means.  Part of the job of being a good technologist is to keep track of new **Ideas**, **Concepts** and **Options**, so as to use them as [Dependencies](Dependency-Risk) when needed.
+[Internal Models](Glossary#Internal-Model) don't magically get populated with the information they need:  they fill up gradually, as shown in the diagram above.  Popular products and ideas _spread_, by word-of-mouth or other means.  Part of the job of being a good technologist is to keep track of new **Ideas**, **Concepts** and **Options**, so as to use them as [Dependencies](Dependency-Risk.md) when needed.
 
 ## Protocols
 
@@ -281,7 +281,7 @@ This is called [Theory Of Mind](https://en.wikipedia.org/wiki/Theory_of_mind): t
 
 ### Message Risk  
 
-A second, related problem is actually [Dependency Risk](Dependency-Risk), which is covered more thoroughly in a later section.  Often, to understand a new message, you have to have followed everything up to that point already.
+A second, related problem is actually [Dependency Risk](Dependency-Risk.md), which is covered more thoroughly in a later section.  Often, to understand a new message, you have to have followed everything up to that point already.
 
 The same **Message Dependency Risk** exists for computer software:  if there is replication going on between instances of an application and one of the instances misses some messages, you end up with a "[Split Brain](https://en.wikipedia.org/wiki/Split-brain_(computing))" scenario, where later messages can't be processed because they refer to an application state that doesn't exist.  For example, a message saying:
 

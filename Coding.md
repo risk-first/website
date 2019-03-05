@@ -25,7 +25,7 @@ As with any [Practice](Practices), we are coding to minimize [Attendant Risks](G
 
 - **To Build** or improve some features which our clients will find useful. - _[Feature Risk](Feature-Risk)_
 - **To Automate** some process that takes too long or is too arduous.  - _[Process Risk](Process-Risk)_
-- **To Explore** how our tools, systems or dependencies work (also called [Hacking](https://en.wikipedia.org/wiki/Hacking)). -  _[Dependency Risk](Dependency-Risk)_ internal model risk
+- **To Explore** how our tools, systems or dependencies work (also called [Hacking](https://en.wikipedia.org/wiki/Hacking)). -  _[Dependency Risk](Dependency-Risk.md)_ internal model risk
 - **To Refactor** our codebase, to reduce complexity. - _[Complexity Risk](Complexity-Risk)_
 - **To Clarify** our product, making our software more _presentable_ and _easier to understand_.  -  _[Communication Risk](Communication-Risk)_
 
@@ -209,7 +209,7 @@ You are making a bet that acting now will pay off in decreased [Process Risk](Pr
 In general, unless the problem is somehow _specific to your circumstances_ it may well be better to skip direct coding and pick up some new tools to help with the job.  
 
 Tools are a different trade off to automation.  You are mitigating [Process Risk](Process-Risk) or [Feature Risk](Feature-Risk) in return for:
- - New [Dependency Risk](Dependency-Risk) on the new tool.
+ - New [Dependency Risk](Dependency-Risk.md) on the new tool.
  - [Communication Risk](Communication-Risk) because now the team has to understand the tool.
  - [Schedule Risk](Scarcity-Risk#schedule-risk) in the time it takes to learn and integrate the tool.
  - [Complexity Risk](Complexity-Risk) because your project necessarily becomes more complex for the addition of the tool.
@@ -227,7 +227,7 @@ But, this is a low bar -  some tools offer _amazing_ returns on investment.  The
 
 A _really good tool_ offers such advantages that not using it becomes _unthinkable_:  Linux is heading towards this point.   For Java developers, the JVM is there already.  
 
-Picking new tools and libraries should be done **very carefully**:  you may be stuck with your choices for some time.  Here is a [short guide that might help](Dependency-Risk).
+Picking new tools and libraries should be done **very carefully**:  you may be stuck with your choices for some time.  Here is a [short guide that might help](Dependency-Risk.md).
 
 ### Refactoring
 

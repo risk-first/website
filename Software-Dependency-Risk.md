@@ -5,7 +5,7 @@ description: Specific dependency risks due to relying on software.
 
 # Software Dependency Risk
 
-In this section, we're going to look specifically at _Software_ dependencies, although many of the concerns we'll raise here apply equally to all the other types of dependency we outlined in [Dependency Risk](Dependency-Risk). 
+In this section, we're going to look specifically at _Software_ dependencies, although many of the concerns we'll raise here apply equally to all the other types of dependency we outlined in [Dependency Risk](Dependency-Risk.md). 
 
 ## Kolmogorov Complexity: Cheating
 
@@ -54,7 +54,7 @@ function out() {                           (7 symbols)
 
 1.  **Language Matters**:  the Kolmogorov complexity is dependent on the language, and the features the language has built in. <!-- tweet-end --> 
 2.  **Exact Kolmogorov complexity is uncomputable anyway:**  Since it's the _theoretical_ minimum program length, it's a fairly abstract idea, so we shouldn't get too hung up on this.  There is no function to be able to say, "What's the Kolmogorov complexity of string X?"
-3.  **What is this new library function we've created?**   Is `abcdRepeater` going to be part of _every_ Javascript?  If so, then we've shifted [Codebase Risk](Complexity-Risk) away from ourselves, but we've pushed [Communication Risk](Communication-Risk) and [Dependency Risk](Dependency-Risk) onto every _other_ user of Javascript. (Why these?  Because `abcdRepeater` will be clogging up the JavaScript documentation for everyone, and other people will rely on it to function correctly.)
+3.  **What is this new library function we've created?**   Is `abcdRepeater` going to be part of _every_ Javascript?  If so, then we've shifted [Codebase Risk](Complexity-Risk) away from ourselves, but we've pushed [Communication Risk](Communication-Risk) and [Dependency Risk](Dependency-Risk.md) onto every _other_ user of Javascript. (Why these?  Because `abcdRepeater` will be clogging up the JavaScript documentation for everyone, and other people will rely on it to function correctly.)
 4.  **Are there equivalent functions for every single other string?**  If so, then compilation is no longer a tractable problem because now we have a massive library of different `XXXRepeater` functions to compile against.   So, what we _lose_ in [Codebase Risk](Complexity-Risk#codebase-risk) we gain in [Dependency Risk](Complexity-Risk#space-and-time-complexity).
 5.  **Language design, then, is about _ergonomics_:** <!-- tweet-end --> After you have passed the relatively low bar of providing [Turing Completeness](https://en.wikipedia.org/wiki/Turing_completeness), the key is to provide _useful_ features that enable problems to be solved, without over-burdening the user with features they _don't_ need.  And in fact, all software is about this.
 
@@ -118,7 +118,7 @@ One of the hidden risks of embarking on a code-your-own approach is that the fea
 
 ### Unwritten Software
 
-Sometimes you will pick up [Dependency Risk](Dependency-Risk) from _unwritten software_.  This commonly happens when work is divided amongst team members, or teams.  <!-- tweet-end -->
+Sometimes you will pick up [Dependency Risk](Dependency-Risk.md) from _unwritten software_.  This commonly happens when work is divided amongst team members, or teams.  <!-- tweet-end -->
 
 ![Sometimes, a module you're writing will depend on unwritten code](images/generated/risks/software-dependency/unwritten.png)
 

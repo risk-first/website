@@ -18,7 +18,7 @@ description: List of all types of risk discussed in Risk-First.
 |[Coordination](Coordination-Risk)|Risks that a group of agents cannot work together in a mutually beneficial way, and their behaviour devolves into competition.|
 |[Dead-End](Complexity-Risk#dead-end-risk)|The risk that a particular approach to a change will fail.  Caused by the fact that at some level, our internal models are not a complete reflection of reality.|
 |[Deadline](Deadline-Risk)|Where the use of a dependency has some kind of deadline, which can be missed.|
-|[Dependency](Dependency-Risk)|Risks faced by depending on something else.  e.g. an event, process, person, piece of software or an organisation.   |
+|[Dependency](Dependency-Risk.md)|Risks faced by depending on something else.  e.g. an event, process, person, piece of software or an organisation.   |
 |[Feature-Access](Feature-Risk#feature-access-risk)|Risks due to some clients not having access to some or all of the features in your product.|
 |[Feature-Drift](Feature-Risk#feature-drift-risk)|Risk that the features required by clients will change and evolve over time.   |
 |[Feature](Feature-Risk)|Risks you face when providing features for your clients.|
@@ -37,7 +37,7 @@ description: List of all types of risk discussed in Risk-First.
 |[Protocol](Communication-Risk#protocol-risk)|Risks due to the failure of encoding or decoding messages between two parties in communication.  |
 |[Red-Queen](Scarcity-Risk#red-queen-risk)|The general risk that the competitive environment we operate within changes over time.|
 |[Regression](Feature-Risk#regression-risk)|Risk that the functionality you provide changes for the worse, over time.|
-|[Reliability](Dependency-Risk#reliability-risk)|Risks of not getting benefit from a dependency due to it's reliability.|
+|[Reliability](Dependency-Risk.md#reliability-risk)|Risks of not getting benefit from a dependency due to it's reliability.|
 |[Scarcity](Scarcity-Risk)|Risk of not being able to access a dependency in a timely fashion due to it's scarcity.|
 |[Schedule](Scarcity-Risk#schedule-risk)|The aspect of dependency risk related to time.|
 |[Security](Agency-Risk#security)|Agency Risks due to actors from outside the system.|
