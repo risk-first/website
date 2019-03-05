@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-116" name="Development Process 1" style="kite9-min-width: 900pt;">
+
+
+
+    <context id="c" bordered="true">
+
+      <risk id="id_0" class="goal">Feature X</risk>
+
+      <label id="id_16">
+        <text>Internal Model</text>
+        <symbols />
+      </label>
+    </context>
+
+    <action>Write Specification</action>
+
+    <group style="kite9-layout: down">
+      <context id="d">
+        <hidden>
+          <risk class="attendant">Incorrect
+            Implementation
+          </risk>
+        </hidden>
+        <hidden>
+          <risk class="attendant">Duplicates
+            Functionality
+          </risk>
+        </hidden>
+        <label id="4">
+          <text>Hidden Risks</text>
+          <symbols />
+        </label>
+      </context>
+
+      <artifact>Specification</artifact>
+    </group>
+
+
+  </diagram>
+</svg:svg>

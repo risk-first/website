@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl">
+
+    <context id="c" bordered="true" style="kite9-sizing: minimize;">
+
+      <mitigated>
+        <risk class="funding" />
+      </mitigated>
+      
+      <label  id="id_16">
+        <text>Internal Model</text>
+        <symbols />
+      </label>
+    </context>
+
+
+    <action>Launch Online Service</action>
+
+    <context id="c" bordered="true">
+      <group style="kite9-layout: down">
+        <group style="kite9-layout: right">
+          <risk class="attendant">User Access</risk>
+          <risk class="attendant">Data Loss</risk>
+          <risk class="attendant">Data Corruption</risk>
+
+        </group>
+        <group style="kite9-layout: right">
+          <risk class="attendant">Security
+            Compromised
+          </risk>
+          <risk class="attendant">Missing
+            Functionality
+          </risk>
+          <risk class="attendant">Wrong
+            Functionality
+          </risk>
+        </group>
+      </group>
+
+      <label  id="id_16">
+        <text>Internal Model</text>
+        <symbols />
+      </label>
+    </context>
+
+  </diagram>
+</svg:svg>

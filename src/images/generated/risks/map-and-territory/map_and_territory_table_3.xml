@@ -1,0 +1,31 @@
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="The Diagram" style="kite9-layout: down;">
+    <table>
+      <celltext style="kite9-occupies: 1 1; " class="bold top center">Evolution Risk</celltext>
+      <celltext style="kite9-occupies: 2 1; " class="bold top center">Examples</celltext>
+
+      <cell style="kite9-occupies: 1 2; ">
+        <risk class="regression" />
+      </cell>
+
+      <cell style="kite9-occupies: 1 3; ">
+        <risk class="feature-drift" />
+      </cell>
+
+      <cell style="kite9-occupies: 2 2; kite9-layout: vertical; kite9-padding: 20pt; ">
+        <bulleted>Stories and ideas that evolve over time, such as religions or urban legends.</bulleted>
+      </cell>
+      
+      
+      <cell style="kite9-occupies: 2 3; kite9-layout: vertical; kite9-padding: 20pt; ">
+        <bulleted>Banning harmful products, such as CFCs.</bulleted>
+        <bulleted>Gaming metrics.</bulleted>
+        <bulleted>Goodhart's Law.</bulleted>
+      </cell>
+
+    </table>
+  </diagram>
+</svg:svg>
