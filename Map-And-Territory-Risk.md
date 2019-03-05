@@ -5,7 +5,7 @@ description: Risks due to the differences between reality and the internal model
 
 # Map And Territory Risk
 
-As we discussed in the [Communication Risk](Communication-Risk#misinterpretation-risk) section, our understanding of the world is informed by abstractions we create and the names we give them.  <!-- tweet-end -->
+As we discussed in the [Communication Risk](Communication-Risk.md#misinterpretation-risk) section, our understanding of the world is informed by abstractions we create and the names we give them.  <!-- tweet-end -->
 
 For example, <!-- tweet-start -->Risk-First is about naming _risks_ within software development, so we can discuss and understand them better.<!-- tweet-end -->
 
@@ -51,7 +51,7 @@ The diagram above shows how types of [Feature Fit Risk](Feature-Risk) can manife
 
 ## Audience
 
-Communication allows us to _share_ information between [Internal Models](Glossary#internal-model) of a whole audience of people.  The [Communication Risk](Communication-Risk) and [Coordination Risk](Coordination-Risk) sections covered the difficulties inherent in aligning [Internal Models](Glossary#internal-model) so that they cooperate.
+Communication allows us to _share_ information between [Internal Models](Glossary#internal-model) of a whole audience of people.  The [Communication Risk](Communication-Risk.md) and [Coordination Risk](Coordination-Risk) sections covered the difficulties inherent in aligning [Internal Models](Glossary#internal-model) so that they cooperate.
 
 ![Relative popularity of "Machine Learning" and "Big Data" as search terms on [Google Trends](https://trends.google.com), 2011-2018 ](images/google-trends.png)
  
@@ -71,7 +71,7 @@ The concept of [Map and Territory Risk](Map-And-Territory-Risk) actually helps e
 
  - The **Awareness** (or enthusiasm for) the idea within the population is the dotted line.
  
- - The **Knowledge** (or _understanding_) of the idea within the audience (a [Learning Curve](Communication-risk#learning-curve-risk), if you will) is the dashed line.  Both of these are modelled with [Cumulative Distribution](https://en.wikipedia.org/wiki/Cumulative_distribution_function#Use_in_statistical_analysis) functions which are often used for modelling the spread of a phenomena (disease, product uptake, idea) within a population.  As you would expect, **Knowledge** increases less rapidly than **Awareness**. 
+ - The **Knowledge** (or _understanding_) of the idea within the audience (a [Learning Curve](Communication-Risk.md#learning-curve-risk), if you will) is the dashed line.  Both of these are modelled with [Cumulative Distribution](https://en.wikipedia.org/wiki/Cumulative_distribution_function#Use_in_statistical_analysis) functions which are often used for modelling the spread of a phenomena (disease, product uptake, idea) within a population.  As you would expect, **Knowledge** increases less rapidly than **Awareness**. 
 
  - **Map And Territory Risk** is the difference between **Awareness** and **Knowledge**.  It's highest point is where the **Awareness** of the idea is farthest from the **Knowledge** of it.  
 

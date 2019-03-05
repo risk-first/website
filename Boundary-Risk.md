@@ -16,21 +16,21 @@ As shown in the above diagram, [Boundary Risk](Boundary-Risk) is the risk we fac
 
 In terms of the [Risk Landscape](Risk-Landscape), [Boundary Risk](Boundary-Risk) is exactly as it says:  a _boundary_, _wall_ or other kind of obstacle in your way to making a move you want to make. <!-- tweet-end -->  This changes the nature of the [Risk Landscape](Glossary#risk-landscape), and introduces a maze-like component to it.  It also means that we have to make _commitments_ about which way to go, knowing that our future paths are constrained by the decisions we make.
 
-As we discussed in [Complexity Risk](Complexity-Risk), there is always the chance we end up at a [Dead End](Complexity-Risk#dead-end-risk), having done work that we need to throw away.  In this case, we'll have to head back and make a different decision.
+As we discussed in [Complexity Risk](Complexity-Risk.md), there is always the chance we end up at a [Dead End](Complexity-Risk.md#dead-end-risk), having done work that we need to throw away.  In this case, we'll have to head back and make a different decision.
 
 ## In Software Development
 
 In software development, although we might face [Boundary Risk](Boundary-Risk) choosing staff or offices, most of the everyday dependency commitments we have to make are around _abstractions_. 
 
-As discussed in [Software Dependency Risk](Software-Dependency-Risk), if we are going to use a software tool as a dependency, we have to accept the complexity of its [protocols](Communication-Risk#protocols).  You have to use its protocol: it won't come to you.   
+As discussed in [Software Dependency Risk](Software-Dependency-Risk), if we are going to use a software tool as a dependency, we have to accept the complexity of its [protocols](Communication-Risk.md#protocols).  You have to use its protocol: it won't come to you.   
 
 ![Our System receives data from the `input`, translates it and sends it to the `output`.  But which dependency should we use for the translation, if any?](images/generated/risks/boundary/choices.png)
 
 Let's take a look at a hypothetical system structure, in the diagram above.  In this design, we are transforming data from the `input` to the `output`.  But how should we do it?
 
- - We could transform via library 'a', using the [Protocols](Communication-Risk#protocol-risk) of 'a', and having a dependency on 'a'.
- - We could use library 'b', using the [Protocols](Communication-Risk#protocol-risk) of 'b', and having a dependency on 'b'. 
- - We could use neither, and avoid the dependency, but potentially pick up lots more [Codebase Risk](Complexity-Risk#codebase-risk) and [Schedule Risk](Scarcity-Risk#schedule-risk) because we have to code our own alternative to 'a' and 'b'.
+ - We could transform via library 'a', using the [Protocols](Communication-Risk.md#protocol-risk) of 'a', and having a dependency on 'a'.
+ - We could use library 'b', using the [Protocols](Communication-Risk.md#protocol-risk) of 'b', and having a dependency on 'b'. 
+ - We could use neither, and avoid the dependency, but potentially pick up lots more [Codebase Risk](Complexity-Risk.md#codebase-risk) and [Schedule Risk](Scarcity-Risk#schedule-risk) because we have to code our own alternative to 'a' and 'b'.
 
 The choice of approach presents us with [Boundary Risk](Boundary-Risk) because we don't know that we'll necessarily be successful with any of these options until we _go down the path_ of committing to one:
 
@@ -46,7 +46,7 @@ This is a toy example, but in real life this dilemma occurs when we choose betwe
  
 The degree of [Boundary Risk](Boundary-Risk) is dependent on a number of factors:
 
- - **The Sunk Cost** of the [Learning Curve](Communication-Risk#learning-curve-risk) we've overcome to integrate the dependency, which may fail to live up to expectations (_cf._ [Feature Fit Risks](Feature-Risk#feature-fit-risk)).   We can avoid accreting this by choosing the _simplest_ and _fewest_ dependencies for any task, and trying to [Meet Reality](Meeting-Reality) quickly.
+ - **The Sunk Cost** of the [Learning Curve](Communication-Risk.md#learning-curve-risk) we've overcome to integrate the dependency, which may fail to live up to expectations (_cf._ [Feature Fit Risks](Feature-Risk#feature-fit-risk)).   We can avoid accreting this by choosing the _simplest_ and _fewest_ dependencies for any task, and trying to [Meet Reality](Meeting-Reality) quickly.
  - **Life Expectancy**:  libraries and products come and go.  A choice that was popular when it was made may be superseded in the future by something better.  (_cf._ [Market Risk](Feature-Risk#market-risk)).  This may not be a problem until you try to renew a support contract, or try to do an operating system update. Although no-one can predict how long a technology will last, [The Lindy Effect](https://en.wikipedia.org/wiki/Lindy_effect) suggests that _future life expectancy is proportional to current age_.  So, you might expect a technology that has been around for ten years to be around for a further ten.
  - **The level of [Lock In](#ecosystems-and-lock-in)**, where the cost of switching to a new dependency in the future is some function of the level of commitment to the current dependency.  As an example, consider the level of commitment you have to your mother tongue.  If you have spent your entire life committed to learning and communicating in English, there is a massive level of lock-in.  Overcoming this to become fluent in Chinese may be an overwhelming task.
  - **Future needs**: will the dependency satisfy your expanding requirements going forward? (_cf._ [Feature Drift Risk](Feature-Risk#feature-drift-risk))
@@ -106,7 +106,7 @@ When a tool or platform is popular, it is under pressure to increase in complexi
 
 > "The Peter principle is a concept in management developed by Laurence J. Peter, which observes that people in a hierarchy tend to rise to their 'level of incompetence'." - [The Peter Principle, _Wikipedia_](https://en.wikipedia.org/wiki/Peter_principle)
 
-Although designed for _people_, it can just as easily be applied to any other dependency you can think of.  This means when things get popular, there is a tendency towards [Conceptual Integrity Risk](Feature-Risk#conceptual-integrity-risk) and [Complexity Risk](Complexity-Risk).  
+Although designed for _people_, it can just as easily be applied to any other dependency you can think of.  This means when things get popular, there is a tendency towards [Conceptual Integrity Risk](Feature-Risk#conceptual-integrity-risk) and [Complexity Risk](Complexity-Risk.md).  
 
 ![Java Public Classes By Version (3-9)](images/numbers/java_classes_by_version.png)
 
@@ -114,15 +114,15 @@ The above chart is an example of this: look at how the number of public classes 
 
 #### Backward Compatibility
 
-As we saw in [Software Dependency Risk](Software-Dependency-Risk), The art of good design is to afford the greatest increase in functionality with the smallest increase in  complexity possible, and this usually means [Refactoring](https://en.wikipedia.org/wiki/Refactoring).  But, this is at odds with [Backward Compatibility](Communication-Risk#backward-compatibility).
+As we saw in [Software Dependency Risk](Software-Dependency-Risk), The art of good design is to afford the greatest increase in functionality with the smallest increase in  complexity possible, and this usually means [Refactoring](https://en.wikipedia.org/wiki/Refactoring).  But, this is at odds with [Backward Compatibility](Communication-Risk.md#backward-compatibility).
 
-Each new version has a greater functional scope than the one before (pushing back [Boundary Risk](Boundary-Risk)), making the platform more attractive to build solutions in.   But this increases the [Complexity Risk](Complexity-Risk) as there is more functionality to deal with.  
+Each new version has a greater functional scope than the one before (pushing back [Boundary Risk](Boundary-Risk)), making the platform more attractive to build solutions in.   But this increases the [Complexity Risk](Complexity-Risk.md) as there is more functionality to deal with.  
 
 ![Tradeoff between large and small ecosystems](images/generated/risks/boundary/boundary-risk2.png)
 
-You can see in the diagram above the Peter Principle at play:  as more responsibility is given to a dependency, the more complex it gets and the greater the learning curve to work with it.  Large ecosystems like Java react to [Learning Curve Risk](Communication-Risk#learning-curve-risk) by having copious amounts of literature to read or buy to help, but it is still off-putting.
+You can see in the diagram above the Peter Principle at play:  as more responsibility is given to a dependency, the more complex it gets and the greater the learning curve to work with it.  Large ecosystems like Java react to [Learning Curve Risk](Communication-Risk.md#learning-curve-risk) by having copious amounts of literature to read or buy to help, but it is still off-putting.
 
-Because [Complexity is Mass](Complexity-Risk#complexity-is-mass), large ecosystems can't respond quickly to [Feature Drift](Feature-Risk#feature-drift-risk).  This means that when the world changes, new ecosystems are likely to appear to fill gaps, rather than old ones moving in.
+Because [Complexity is Mass](Complexity-Risk.md#complexity-is-mass), large ecosystems can't respond quickly to [Feature Drift](Feature-Risk#feature-drift-risk).  This means that when the world changes, new ecosystems are likely to appear to fill gaps, rather than old ones moving in.
 
 ## Managing Boundary Risk
 
@@ -136,7 +136,7 @@ Sometimes, technology comes along that allows us to cross boundaries, like a _br
 
 I find, a lot of code I write is of this nature:  trying to write the _glue code_ to join together two different _ecosystems_.  
 
-As shown in the above diagram, mitigating [Boundary Risk](Boundary-Risk) involves taking on complexity.  The more [Protocol Complexity](Communication-Risk#protocol-risk) there is on either side of the two ecosystems, the more [complex](Complexity-Risk) the bridge will necessarily be.  The below table shows some examples of this.
+As shown in the above diagram, mitigating [Boundary Risk](Boundary-Risk) involves taking on complexity.  The more [Protocol Complexity](Communication-Risk.md#protocol-risk) there is on either side of the two ecosystems, the more [complex](Complexity-Risk.md) the bridge will necessarily be.  The below table shows some examples of this.
 
 |Protocol Risk From A         |Protocol Risk From B        |Resulting Bridge Complexity  |Example                                                  |
 |-----------------------------|----------------------------|-----------------------------|---------------------------------------------------------|
@@ -146,7 +146,7 @@ As shown in the above diagram, mitigating [Boundary Risk](Boundary-Risk) involve
 
 <!--latex \pagebreak -->
 
-From examining the [Protocol Risk](Communication-Risk#protocol-risk) at each end of the bridge you are creating, you can get a rough idea of how complex the endeavour will be:
+From examining the [Protocol Risk](Communication-Risk.md#protocol-risk) at each end of the bridge you are creating, you can get a rough idea of how complex the endeavour will be:
 
  - If it's low-risk at both ends, you're probably going to be able to knock it out easily.  Like translating a date, or converting one file format to another.
  - Where one of the protocols is _evolving_, you're definitely going to need to keep releasing new versions.   The functionality of a `Calculator` app on my phone remains the same, but new versions have to be released as the phone APIs change, screens change resolution and so on.
@@ -165,7 +165,7 @@ Standards mitigate [Boundary Risk](Boundary-Risk) in one of two ways:
 
  - [ASCII](https://en.wikipedia.org/wiki/ASCII): fixed the different-character-sets [Boundary Risk](Boundary-Risk) by being a standard that others could adopt.  Before everyone agreed on ASCII, copying data from one computer system to another was a massive pain, and would involve some kind of translation.  [Unicode](https://en.wikipedia.org/wiki/Unicode) continues this work. 
 
- - [Internet Protocol](https://en.wikipedia.org/wiki/Internet_Protocol).  As we saw in [Communication Risk](Communication-Risk#protocol-risk), the Internet Protocol (IP) is the _lingua franca_ of the modern Internet.  However, at one period of time, there were many competing standards.  IP was the ecosystem that "won", and was subsequently standardised by the [IETF](https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force).  This is actually an example of _both_ approaches:  as we saw in [Communication Risk](Communication-Risk), Internet Protocol is also an abstraction over lower-level protocols.
+ - [Internet Protocol](https://en.wikipedia.org/wiki/Internet_Protocol).  As we saw in [Communication Risk](Communication-Risk.md#protocol-risk), the Internet Protocol (IP) is the _lingua franca_ of the modern Internet.  However, at one period of time, there were many competing standards.  IP was the ecosystem that "won", and was subsequently standardised by the [IETF](https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force).  This is actually an example of _both_ approaches:  as we saw in [Communication Risk](Communication-Risk.md), Internet Protocol is also an abstraction over lower-level protocols.
  
 ## Boundary Risk Cycle
 
@@ -190,7 +190,7 @@ Although ecosystems are one very pernicious type of boundary in software develop
 
 - **Integration Testing**.  Building a unit test is easy.  You are generally testing some code you have written, aided with a testing framework.  Your code and the framework are both written in the same language, which means low [Boundary Risk](Boundary-Risk).  But to _integration test_ you need to step outside this boundary and so it becomes much harder.  This is true whether you are integrating with other systems (providing or supplying them with data) or parts of your own system (say testing the client-side and server parts together).  
 
-- **User Interface Testing**.  The interface with the user is a complex, under-specified risky [protocol](Communication-Risk#protocol-risk).  Although tools exist to automate UI testing (such as [Selenium](https://en.wikipedia.org/wiki/Selenium_(software)), these rarely satisfactorily mitigate this [protocol risk](Communication-Risk#protocol-risk):  can you be sure that the screen hasn't got strange glitches, that the mouse moves correctly, that the proportions on the screen are correct on all browsers?  
+- **User Interface Testing**.  The interface with the user is a complex, under-specified risky [protocol](Communication-Risk.md#protocol-risk).  Although tools exist to automate UI testing (such as [Selenium](https://en.wikipedia.org/wiki/Selenium_(software)), these rarely satisfactorily mitigate this [protocol risk](Communication-Risk.md#protocol-risk):  can you be sure that the screen hasn't got strange glitches, that the mouse moves correctly, that the proportions on the screen are correct on all browsers?  
 
 - **Jobs**.  When you pick a new technology to learn and add to your CV, it's worth keeping in mind how useful this will be to you in the future.   It's career-limiting to be stuck in a dying ecosystem with the need to retrain.
 
@@ -210,5 +210,5 @@ The only thing we can expect in the future is that the lifespan of any ecosystem
 
 Although our discipline is a young one, we should probably expect to see "Software Archaeology" in the same way as we see it for biological organisms.  Already we can see the dead-ends in the software evolutionary tree:  COBOL and BASIC languages, CASE systems.  Languages like FORTH live on in PostScript, SQL is still embedded in everything
 
-Let's move on now to the last [Dependency Risk](Dependency-Risk.md) section, and look at [Agency Risk](Agency-Risk).
+Let's move on now to the last [Dependency Risk](Dependency-Risk.md) section, and look at [Agency Risk](Agency-Risk.md).
 

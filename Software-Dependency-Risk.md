@@ -9,7 +9,7 @@ In this section, we're going to look specifically at _Software_ dependencies, al
 
 ## Kolmogorov Complexity: Cheating
 
-In the earlier section on [Complexity Risk](Complexity-Risk) we tackled [Kolmogorov Complexity](Complexity-Risk#Kolmogorov-Complexity), and the idea that your codebase had some kind of minimal level of complexity based on the output it was trying to create.  This is a neat idea, but in a way, we cheated.  Let's look at how.
+In the earlier section on [Complexity Risk](Complexity-Risk.md) we tackled [Kolmogorov Complexity](Complexity-Risk.md#Kolmogorov-Complexity), and the idea that your codebase had some kind of minimal level of complexity based on the output it was trying to create.  This is a neat idea, but in a way, we cheated.  Let's look at how.
 
 We were trying to figure out the shortest (Javascript) program to generate this output:
 
@@ -54,8 +54,8 @@ function out() {                           (7 symbols)
 
 1.  **Language Matters**:  the Kolmogorov complexity is dependent on the language, and the features the language has built in. <!-- tweet-end --> 
 2.  **Exact Kolmogorov complexity is uncomputable anyway:**  Since it's the _theoretical_ minimum program length, it's a fairly abstract idea, so we shouldn't get too hung up on this.  There is no function to be able to say, "What's the Kolmogorov complexity of string X?"
-3.  **What is this new library function we've created?**   Is `abcdRepeater` going to be part of _every_ Javascript?  If so, then we've shifted [Codebase Risk](Complexity-Risk) away from ourselves, but we've pushed [Communication Risk](Communication-Risk) and [Dependency Risk](Dependency-Risk.md) onto every _other_ user of Javascript. (Why these?  Because `abcdRepeater` will be clogging up the JavaScript documentation for everyone, and other people will rely on it to function correctly.)
-4.  **Are there equivalent functions for every single other string?**  If so, then compilation is no longer a tractable problem because now we have a massive library of different `XXXRepeater` functions to compile against.   So, what we _lose_ in [Codebase Risk](Complexity-Risk#codebase-risk) we gain in [Dependency Risk](Complexity-Risk#space-and-time-complexity).
+3.  **What is this new library function we've created?**   Is `abcdRepeater` going to be part of _every_ Javascript?  If so, then we've shifted [Codebase Risk](Complexity-Risk.md) away from ourselves, but we've pushed [Communication Risk](Communication-Risk.md) and [Dependency Risk](Dependency-Risk.md) onto every _other_ user of Javascript. (Why these?  Because `abcdRepeater` will be clogging up the JavaScript documentation for everyone, and other people will rely on it to function correctly.)
+4.  **Are there equivalent functions for every single other string?**  If so, then compilation is no longer a tractable problem because now we have a massive library of different `XXXRepeater` functions to compile against.   So, what we _lose_ in [Codebase Risk](Complexity-Risk.md#codebase-risk) we gain in [Dependency Risk](Complexity-Risk.md#space-and-time-complexity).
 5.  **Language design, then, is about _ergonomics_:** <!-- tweet-end --> After you have passed the relatively low bar of providing [Turing Completeness](https://en.wikipedia.org/wiki/Turing_completeness), the key is to provide _useful_ features that enable problems to be solved, without over-burdening the user with features they _don't_ need.  And in fact, all software is about this.
 
 ## Ergonomics Examined
@@ -70,14 +70,14 @@ But outside, the form is simple, and designed for humans to use.   This is _[erg
 
 ![Software Dependency Ergonomics:  finding the sweet spot between too many features and too few](images/generated/risks/software-dependency/ergonomics.png)
 
-The _interface_ of a tool is the part we touch and interact with, via its protocol.  By striving for an ergonomic sweet spot, the protocol reduces [Communication Risk](Communication-Risk).  <!-- tweet-end -->  You can see this trade-off in the diagram above.
+The _interface_ of a tool is the part we touch and interact with, via its protocol.  By striving for an ergonomic sweet spot, the protocol reduces [Communication Risk](Communication-Risk.md).  <!-- tweet-end -->  You can see this trade-off in the diagram above.
 
 The interface of a system expands when you ask it to do a wide variety of things. <!-- tweet-end -->  An easy-to-use drill does one thing well: it turns drill-bits at useful levels of torque for drilling holes and sinking screws.  But if you wanted it to also operate as a lathe, a sander or a strimmer (all basically mechanical things going round) you would have to sacrifice the conceptual integrity for a more complex protocol, probably including adapters, extensions, handles and so on.
 
 So, we now have split complexity into two:
 
- - The inner complexity of the tool (how it works internally, its own [internal complexity](Complexity-Risk#Kolmogorov-Complexity)).
- - The complexity of the instructions that we need to write to make the tool work, [the protocol complexity](Communication-Risk#protocol-risk), which will be a function of the complexity of the tool itself.
+ - The inner complexity of the tool (how it works internally, its own [internal complexity](Complexity-Risk.md#Kolmogorov-Complexity)).
+ - The complexity of the instructions that we need to write to make the tool work, [the protocol complexity](Communication-Risk.md#protocol-risk), which will be a function of the complexity of the tool itself.
  
 ![Types of Complexity For a Software Dependency](images/generated/risks/software-dependency/protocol-complexity.png)
 
@@ -85,7 +85,7 @@ So, we now have split complexity into two:
 
 In the same way as with a hand-tool, the bulk of the complexity of a software tool is hidden behind its interface.<!-- tweet-end -->  But, the more complex the _purpose_ of the tool, the more complex the interface will be.
 
-Software is not constrained by _physical_ ergonomics in the same way as a tool is. <!-- tweet-end --> But ideally, it should have conceptual ergonomics: complexity is hidden away from the user behind the _User Interface_.  This is the familiar concept of [Abstraction](Glossary#abstraction) we've already looked at.  As we saw in [Communication Risk](Communication-Risk#learning-curve-risk), when we use a new protocol, we face [Learning Curve Risk](Communication-Risk#learning-curve-risk).  To minimise this, we should apply the [Principal Of Least Astonishment](https://en.wikipedia.org/wiki/Principle_of_least_astonishment) when designing protocols: 
+Software is not constrained by _physical_ ergonomics in the same way as a tool is. <!-- tweet-end --> But ideally, it should have conceptual ergonomics: complexity is hidden away from the user behind the _User Interface_.  This is the familiar concept of [Abstraction](Glossary#abstraction) we've already looked at.  As we saw in [Communication Risk](Communication-Risk.md#learning-curve-risk), when we use a new protocol, we face [Learning Curve Risk](Communication-Risk.md#learning-curve-risk).  To minimise this, we should apply the [Principal Of Least Astonishment](https://en.wikipedia.org/wiki/Principle_of_least_astonishment) when designing protocols: 
 
  - **The abstractions should map easily to how the user expects the tool to work.** For example, I _expect_ the trigger on a drill to start the drill turning.  
  - **The abstractions should leverage existing idioms and knowledge.** In a new car I _expect_ to know what the symbols on the dashboard mean because I've driven other cars.
@@ -105,7 +105,7 @@ All 3 approaches involve a different risk-profile.  Let's look at each in turn, 
 
 Way before the Internet, this was the only game in town.  Tool support was very thin-on-the-ground.  Algorithms could be distributed as code snippets _in books and magazines_ which could be transcribed and run, and added to your program.  This spirit lives on somewhat in StackOverflow and JSFiddle, where you are expected to "adopt" others' code into your own project. Code-your-own is still the best option if you have highly bespoke requirements, or are dealing with unusual environmental contexts.
 
-One of the hidden risks of embarking on a code-your-own approach is that the features you need are _not_ apparent from the outset.  What might appear to be a trivial implementation of some piece of functionality can often turn into its own industry as more and more hidden [Feature Risk](Feature-Risk) is uncovered.  For example, as we discussed in our earlier treatment of [Dead-End Risk](Complexity-Risk#dead-end-risk), building log-in screens _seemed like a good idea_.  However, this gets out-of-hand fast when you need:
+One of the hidden risks of embarking on a code-your-own approach is that the features you need are _not_ apparent from the outset.  What might appear to be a trivial implementation of some piece of functionality can often turn into its own industry as more and more hidden [Feature Risk](Feature-Risk) is uncovered.  For example, as we discussed in our earlier treatment of [Dead-End Risk](Complexity-Risk.md#dead-end-risk), building log-in screens _seemed like a good idea_.  However, this gets out-of-hand fast when you need:
 
  - A password reset screen
  - To email the reset links to the user
@@ -124,7 +124,7 @@ Sometimes you will pick up [Dependency Risk](Dependency-Risk.md) from _unwritten
 
 If a component **A** of our project _depends_ on **B** for some kind of processing, you might not be able to complete **A** before writing **B**.   This makes _scheduling_ the project harder, and if component **A** is a risky part of the project, then the chances are you'll want to mitigate risk there first.  
 
-But it also hugely increases [Communication Risk](Communication-Risk) because now you're being asked to communicate with a dependency that doesn't really exist yet, _let alone_ have any documentation.
+But it also hugely increases [Communication Risk](Communication-Risk.md) because now you're being asked to communicate with a dependency that doesn't really exist yet, _let alone_ have any documentation.
 
 There are a couple of ways of doing this:
 
@@ -136,7 +136,7 @@ There are a couple of ways of doing this:
 
 ### Conway's Law
 
-Due to channel bandwidth limitations, if the dependency is being written by another person, another team or in another country, [Communication Risk](Communication-Risk) piles up.<!-- tweet-end -->  When this happens, you will want to minimise the interface complexity _as much as possible_, since the more complex the interface, the worse the [Communication Risk](Communication-Risk) will be.  The tendency then is to make the interfaces between teams or people _as simple as possible_, modularising along these organisational boundaries.
+Due to channel bandwidth limitations, if the dependency is being written by another person, another team or in another country, [Communication Risk](Communication-Risk.md) piles up.<!-- tweet-end -->  When this happens, you will want to minimise the interface complexity _as much as possible_, since the more complex the interface, the worse the [Communication Risk](Communication-Risk.md) will be.  The tendency then is to make the interfaces between teams or people _as simple as possible_, modularising along these organisational boundaries.
 
 In essence, this is Conway's Law:
 
@@ -144,9 +144,9 @@ In essence, this is Conway's Law:
 
 ### 2.  Software Libraries
 
-By choosing a particular software library, we are making a move on the [Risk Landscape](Risk-Landscape) in the hope of moving to a place with more favourable risks. <!-- tweet-end --> Typically, using library code offers a [Schedule Risk](Scarcity-Risk#schedule-risk) and [Complexity Risk](Complexity-Risk) [Silver Bullet](Silver-Bullets) - a high-speed route over the risk landscape to somewhere nearer where we want to be.  But, in return we expect to pick up:
+By choosing a particular software library, we are making a move on the [Risk Landscape](Risk-Landscape) in the hope of moving to a place with more favourable risks. <!-- tweet-end --> Typically, using library code offers a [Schedule Risk](Scarcity-Risk#schedule-risk) and [Complexity Risk](Complexity-Risk.md) [Silver Bullet](Silver-Bullets) - a high-speed route over the risk landscape to somewhere nearer where we want to be.  But, in return we expect to pick up:
 
-- **[Communication Risk](Communication-Risk)**: because we now have to learn how to communicate with this new dependency.
+- **[Communication Risk](Communication-Risk.md)**: because we now have to learn how to communicate with this new dependency.
 - **[Boundary Risk](Boundary-Risk)**: - because now are limited to using the functionality provided by this dependency.  We have chosen it over alternatives and changing to something else would be more work and therefore costly.   
 
 But, it's quite possible that we could wind up in a worse place than we started out, by using a library that's out-of-date, riddled with bugs or badly supported.  i.e. full of new, hidden [Feature Risk](Feature-Risk).  
@@ -169,7 +169,7 @@ In the table above, I am summarising three different sources (linked at the end 
 
  - **[Feature Risk](Feature-Risk) is a big concern**:   How can you be sure that the project will do what you want it to do ahead of schedule?  Will it contain bugs or missing features?  By looking at factors like _release frequency_ and _size of the community_ you get a good feel for this which is difficult to fake.
  - **[Boundary Risk](Boundary-Risk) is also very important**:  You are going to have to _live_ with your choices for the duration of the project, so it's worth spending the effort to either ensure that you're not going to regret the decision, or that you can change direction later.
- - **Third is [Communication Risk](Communication-Risk)**:  how well does the project deal with its users?  If a project is "famous", then it has communicated its usefulness to a wide, appreciative audience.  Avoiding [Communication Risk](Communication-Risk) is also a good reason to pick _tools you are already familiar with_.
+ - **Third is [Communication Risk](Communication-Risk.md)**:  how well does the project deal with its users?  If a project is "famous", then it has communicated its usefulness to a wide, appreciative audience.  Avoiding [Communication Risk](Communication-Risk.md) is also a good reason to pick _tools you are already familiar with_.
   
 ![Software Libraries Risk Tradeoff](images/generated/risks/software-dependency/library.png) 
 
@@ -181,7 +181,7 @@ In the table above, I am summarising three different sources (linked at the end 
     
 ### Complexity Risk? 
  
-One thing that none of the sources in the table consider (at least from the outset) is the [Complexity Risk](Complexity-Risk) of using a solution:   
+One thing that none of the sources in the table consider (at least from the outset) is the [Complexity Risk](Complexity-Risk.md) of using a solution:   
  
  - Does it drag in lots of extra dependencies that seem unnecessary for the job in hand?  If so, you could end up in [Dependency Hell](https://en.wikipedia.org/wiki/Dependency_hell), with multiple, conflicting versions of libraries in the project.
  - Do you already have a dependency providing this functionality?  So many times, I've worked on projects that import a _new_ dependency when some existing (perhaps transitive) dependency has _already brought in the functionality_.  For example, there are plenty of libraries for [JSON](https://en.wikipedia.org/wiki/JSON) marshalling, but if I'm also using a web framework the chances are it already has a dependency on one already.
@@ -193,7 +193,7 @@ Sometimes, the amount of complexity _goes up_ when you use a dependency for _goo
 
 Businesses opt for Software-as-a-Service (SaaS) because:
 
-- It promises to vastly reduce the [Complexity Risk](Complexity-Risk) they face in their organisations. e.g. managing the software or making changes to it.
+- It promises to vastly reduce the [Complexity Risk](Complexity-Risk.md) they face in their organisations. e.g. managing the software or making changes to it.
 - Payment is usually based on _usage_, mitigating [Funding Risk](Scarcity-Risk#funding-risk).  e.g. Instead of having to pay up-front for a license and hire in-house software administrators, they can leave this function to the experts.
 - Potentially, you out-source the [Operational Risk](Operational-Risk) to a third party. e.g. ensuring availability, making sure data is secure and so on.
 
@@ -240,9 +240,9 @@ Let's look at some more examples:
 |-----------------------------------------------------|------------------------------------------------------------------------- |
 |[Coordination Risk](Coordination-Risk)               |Calendar tools,  Bug Tracking, Distributed Databases                      |
 |[Schedule-Risk](Scarcity-Risk#schedule-risk)         |Planning Software, Project Management Software                            |
-|[Communication-Risk](Communication-Risk)             |Email, Chat tools, CRM tools like SalesForce, Forums, Twitter, Protocols  |
+|[Communication-Risk](Communication-Risk.md)             |Email, Chat tools, CRM tools like SalesForce, Forums, Twitter, Protocols  |
 |[Process-Risk](Process-Risk)                         |Reporting tools, online forms, process tracking tools                     |
-|[Agency-Risk](Agency-Risk)                           |Auditing tools, transaction logs, Time-Sheet software, HR Software        |  
+|[Agency-Risk](Agency-Risk.md)                           |Auditing tools, transaction logs, Time-Sheet software, HR Software        |  
 |[Operational-Risk](Operational-Risk)                 |Support tools like ZenDesk, Grafana, InfluxDB, Geneos, Security Tools     |
 |[Feature-Risk](Feature-Risk)                         |Every piece of software you use!                                          |
   

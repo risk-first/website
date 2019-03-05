@@ -18,8 +18,8 @@ In order to avoid repetition, and also to break down this large topic, we're goi
  - We'll cover [Deadline Risk](Deadline-Risk), and discuss the purpose of Events and Deadlines, and how they enable us to coordinate around dependency use.
  - Then, we'll move on to look specifically at [Software Dependency Risk](Software-Dependency-Risk), covering using libraries, software services and building on top of the work of others.
  - Then, we'll take a look at [Process Risk](Process-Risk), which is still [Dependency Risk](Dependency-Risk.md), but we'll be considering more organisational factors and how bureaucracy comes into the picture.
- - After that, we'll take a closer look at [Boundary Risk](Boundary-Risk) and [Dead-End Risk](Complexity-Risk#dead-end-risk).  These are the risks you face in making choices about what to depend on.
- - Finally, we'll wrap up this analysis with a look at some of the specific problems around depending on other people or businesses in [Agency Risk](Agency-Risk).
+ - After that, we'll take a closer look at [Boundary Risk](Boundary-Risk) and [Dead-End Risk](Complexity-Risk.md#dead-end-risk).  These are the risks you face in making choices about what to depend on.
+ - Finally, we'll wrap up this analysis with a look at some of the specific problems around depending on other people or businesses in [Agency Risk](Agency-Risk.md).
   
 ## Why Have Dependencies?
 
@@ -82,11 +82,11 @@ Additionally, we often rely on _proxies for reliability_.  We'll look at these p
 
 Dependencies (like the bus) make life simpler for you by taking on complexity for you.
 
-In software, dependencies are a way to manage [Complexity Risk](Complexity-Risk).  The reason for this is that a dependency gives you an [abstraction](Glossary#abstraction): you no longer need to know _how_ to do something, (that's the job of the dependency), you just need to interact with the dependency properly to get the job done.  Buses are _perfect_ for people who can't drive, after all.
+In software, dependencies are a way to manage [Complexity Risk](Complexity-Risk.md).  The reason for this is that a dependency gives you an [abstraction](Glossary#abstraction): you no longer need to know _how_ to do something, (that's the job of the dependency), you just need to interact with the dependency properly to get the job done.  Buses are _perfect_ for people who can't drive, after all.
 
 ![Dependencies help with complexity risk, but come with their own attendant risks](images/generated/risks/dependency/dependency-risk.png)
 
-But (as shown in the above diagram) this means that all of the issues of abstractions that we covered in [Communication Risk](Communication-Risk) apply.  For example, there is [Invisibility Risk](Communication-Risk#invisibility-risk) because you probably don't have a full view of what the dependency is doing.  Nowadays, bus stops have a digital "arrivals" board which gives you details of when the bus will arrive, and shops publish their opening hours online.  But, abstraction always means the loss of detail (the bus might be two minutes away but could already be full).
+But (as shown in the above diagram) this means that all of the issues of abstractions that we covered in [Communication Risk](Communication-Risk.md) apply.  For example, there is [Invisibility Risk](Communication-Risk.md#invisibility-risk) because you probably don't have a full view of what the dependency is doing.  Nowadays, bus stops have a digital "arrivals" board which gives you details of when the bus will arrive, and shops publish their opening hours online.  But, abstraction always means the loss of detail (the bus might be two minutes away but could already be full).
 
 ## Dependencies And Complexity
 
@@ -94,7 +94,7 @@ In Rich Hickey's talk, [Simple Made Easy](https://www.infoq.com/presentations/Si
 
 But: living systems are not simple.  Not anymore.  They evolved in the direction of increasing complexity because life was _easier_ that way.  In the "simpler" direction, life is first _harder_ and then _impossible_, and then an evolutionary dead-end.  
 
-Depending on things makes _your job easier_.  But the [Complexity Risk](Complexity-Risk) hasn't gone away: it's just _transferred_ to the dependency.  It's just [division of labour](https://en.wikipedia.org/wiki/Division_of_labour) and dependency hierarchies, as we saw in [Complexity Risk](Complexity-Risk#Hierarchies-and-Modularisation).
+Depending on things makes _your job easier_.  But the [Complexity Risk](Complexity-Risk.md) hasn't gone away: it's just _transferred_ to the dependency.  It's just [division of labour](https://en.wikipedia.org/wiki/Division_of_labour) and dependency hierarchies, as we saw in [Complexity Risk](Complexity-Risk.md#Hierarchies-and-Modularisation).
 
 Our economic system and our software systems exhibit the same tendency-towards-complexity.  For example, the television in my house now is _vastly more complicated_ than the one in my home when I was a child.  But, it contains much more functionality and consumes much less power and space.  
 

@@ -5,9 +5,9 @@ description: Risks due to the difficulty of communicating with other entities, b
 
 # Communication Risk
 
-If we all had identical knowledge, there would be no need to do any communicating at all, and therefore no [Communication Risk](Communication-Risk).  
+If we all had identical knowledge, there would be no need to do any communicating at all, and therefore no [Communication Risk](Communication-Risk.md).  
 
-But people are not all-knowing oracles.  We rely on our _senses_ to improve our [Internal Models](Glossary#Internal-Model) of the world. There is [Communication Risk](Communication-Risk) here - we might overlook something vital (like an on-coming truck) or mistake something someone says (like "Don't cut the green wire").  
+But people are not all-knowing oracles.  We rely on our _senses_ to improve our [Internal Models](Glossary#Internal-Model) of the world. There is [Communication Risk](Communication-Risk.md) here - we might overlook something vital (like an on-coming truck) or mistake something someone says (like "Don't cut the green wire").  
 
 ## A Model Of Communication
 
@@ -19,9 +19,9 @@ In 1948, Claude Shannon proposed this definition of communication:
 
 And from this same paper we get the diagram above:  we move from top-left ("I want to send a message to someone"), clockwise to bottom left where we hope the message has been understood and believed.  (I've added this last box to Shannon's original diagram.)
 
-One of the chief concerns in Shannon's paper is the risk of error between **Transmission** and **Reception**.  He creates a theory of _information_ (measured in _bits_), sets the upper-bounds of information that can be communicated over a channel, and describes ways in which [Communication Risk](Communication-Risk) between these processes can be mitigated by clever **Encoding** and **Decoding** steps.
+One of the chief concerns in Shannon's paper is the risk of error between **Transmission** and **Reception**.  He creates a theory of _information_ (measured in _bits_), sets the upper-bounds of information that can be communicated over a channel, and describes ways in which [Communication Risk](Communication-Risk.md) between these processes can be mitigated by clever **Encoding** and **Decoding** steps.
 
-But it's not just transmission.  [Communication Risk](Communication-Risk) exists at each of these steps.  Let's imagine a human example, where someone, **Alice** is trying to send a simple message to **Bob**.
+But it's not just transmission.  [Communication Risk](Communication-Risk.md) exists at each of these steps.  Let's imagine a human example, where someone, **Alice** is trying to send a simple message to **Bob**.
 
 |Step                  |Potential Risk                                           |
 |----------------------|---------------------------------------------------------|
@@ -36,11 +36,11 @@ But it's not just transmission.  [Communication Risk](Communication-Risk) exists
 
 ## Approach To Communication Risk
 
-There is a symmetry about the steps going on in the diagram above, and we're going to exploit this in order to break down [Communication Risk](Communication-Risk) into its main types.  <!-- tweet-end -->
+There is a symmetry about the steps going on in the diagram above, and we're going to exploit this in order to break down [Communication Risk](Communication-Risk.md) into its main types.  <!-- tweet-end -->
 
 ![Communication Risk, broken into four areas](images/generated/risks/communication/communication_2.png)
 
-To get inside [Communication Risk](Communication-Risk), we need to understand **Communication** itself, whether between _machines_, _people_ or _products_:   we'll look at each in turn.  In order to do that, we're going to examine four basic concepts in each of these settings:
+To get inside [Communication Risk](Communication-Risk.md), we need to understand **Communication** itself, whether between _machines_, _people_ or _products_:   we'll look at each in turn.  In order to do that, we're going to examine four basic concepts in each of these settings:
  
  - **[Channels](https://en.wikipedia.org/wiki/Communication_channel)**: the medium via which the communication is happening.
  - **[Protocols](https://en.wikipedia.org/wiki/Communication_protocol)**:  the systems of rules that allow two or more entities of a communications system to transmit information.
@@ -65,15 +65,15 @@ Shannon discusses that no channel is perfect:  there is always the **risk of noi
 
 ![Communication Channel Risk](images/generated/risks/communication/communication_channel_risks.png) 
 
-But channel risk goes wider than just this mathematical example:  messages might be delayed or delivered in the wrong order, or not be acknowledged when they do arrive.  Sometimes, a channel is just an inappropriate way of communicating.  When you work in a different time-zone to someone else on your team, there is _automatic_ [Channel Risk](Communication-Risk#channel-risk), because instantaneous communication is only available for a few hours a day. 
+But channel risk goes wider than just this mathematical example:  messages might be delayed or delivered in the wrong order, or not be acknowledged when they do arrive.  Sometimes, a channel is just an inappropriate way of communicating.  When you work in a different time-zone to someone else on your team, there is _automatic_ [Channel Risk](Communication-Risk.md#channel-risk), because instantaneous communication is only available for a few hours a day. 
 
-When channels are **poor-quality**, less communication occurs.  People will try to communicate just the most important information.  But, it's often impossible to know a-priori what constitutes "important".   This is why [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) recommends the practice of [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming) and siting all the developers together: although you don't know whether useful communication will happen, you are mitigating [Channel Risk](Communication-Risk#channel-risk) by ensuring high-quality communication channels are in place.
+When channels are **poor-quality**, less communication occurs.  People will try to communicate just the most important information.  But, it's often impossible to know a-priori what constitutes "important".   This is why [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) recommends the practice of [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming) and siting all the developers together: although you don't know whether useful communication will happen, you are mitigating [Channel Risk](Communication-Risk.md#channel-risk) by ensuring high-quality communication channels are in place.
 
 At other times, channels are crowded, and can contain so much information that we can't hope to receive all the messages.  In these cases, we don't even observe the whole channel, just parts of it. 
 
 #### Marketing Communications
 
-When we are talking about a product or a brand, mitigating [Channel Risk](Communication-Risk#channel-risk) is the domain of [Marketing Communications](https://en.wikipedia.org/wiki/Marketing_communications).  <!-- tweet-end --> How do you ensure that the information about your (useful) project makes it to the right people?  How do you address the right channels? 
+When we are talking about a product or a brand, mitigating [Channel Risk](Communication-Risk.md#channel-risk) is the domain of [Marketing Communications](https://en.wikipedia.org/wiki/Marketing_communications).  <!-- tweet-end --> How do you ensure that the information about your (useful) project makes it to the right people?  How do you address the right channels? 
 
 This works both ways.  Let's looks at some of the **Channel Risks** from the point of view of a hypothetical software tool, **D**, which would really useful in my software: 
 
@@ -183,7 +183,7 @@ By having a stack of protocols we are able to apply [Separation Of Concerns](htt
 
 ![Communication Protocols Risks](images/generated/risks/communication/communication_protocol_risks.png)
 
-Hopefully, the above example gives an indication of the usefulness of protocols within software.  But for every protocol we use, we have [Protocol Risk](Communication-Risk#protocol-risk).  While this is a problem in human communication protocols, it's really common in computer communication because we create protocols _all the time_ in software. 
+Hopefully, the above example gives an indication of the usefulness of protocols within software.  But for every protocol we use, we have [Protocol Risk](Communication-Risk.md#protocol-risk).  While this is a problem in human communication protocols, it's really common in computer communication because we create protocols _all the time_ in software. 
 
 For example, as soon as we define a Javascript function (called **b** here), we are creating a protocol for other functions (**a** here) to use it: 
 
@@ -208,7 +208,7 @@ function b(a, b, c, d /* new parameter */) {
 
 Then, **a** will instantly have a problem calling it and there will be an error of some sort.
 
-[Protocol Risk](Communication-Risk#protocol-risk) also occurs when we use [Data Types](https://en.wikipedia.org/wiki/Data_type):  whenever we change the data type, we need to correct the usages of that type.  Note above, I've given the `JavaScript` example, but I'm going to switch to `TypeScript` now:
+[Protocol Risk](Communication-Risk.md#protocol-risk) also occurs when we use [Data Types](https://en.wikipedia.org/wiki/Data_type):  whenever we change the data type, we need to correct the usages of that type.  Note above, I've given the `JavaScript` example, but I'm going to switch to `TypeScript` now:
 
 ```javascript
 interface BInput {
@@ -228,11 +228,11 @@ function a() {
 }
 ```
 
-By using a [static type checker](https://en.wikipedia.org/wiki/Type_system#Static_type_checking), we can identify issues like this, but there is a trade-off:  we mitigate [Protocol Risk](Communication-Risk#protocol-risk), because we define the protocols _once only_ in the program, and ensure that usages all match the specification.  But the tradeoff is (as we can see in the TypeScript code) more _finger-typing_, which means [Codebase Risk](Complexity-Risk#codebase-risk) in some circumstances. 
+By using a [static type checker](https://en.wikipedia.org/wiki/Type_system#Static_type_checking), we can identify issues like this, but there is a trade-off:  we mitigate [Protocol Risk](Communication-Risk.md#protocol-risk), because we define the protocols _once only_ in the program, and ensure that usages all match the specification.  But the tradeoff is (as we can see in the TypeScript code) more _finger-typing_, which means [Codebase Risk](Complexity-Risk.md#codebase-risk) in some circumstances. 
 
 Nevertheless, static type checking is so prevalent in software that clearly in most cases, the trade-off has been worth it: even languages like [Clojure](https://clojure.org) have been retro-fitted with [type checkers](http://clojure-doc.org/articles/ecosystem/core_typed/home.html).
 
-Let's look at some further types of [Protocol Risk](Communication-Risk#protocol-risk).
+Let's look at some further types of [Protocol Risk](Communication-Risk.md#protocol-risk).
  
 ### Protocol Incompatibility Risk
 
@@ -246,7 +246,7 @@ Even when systems are talking the same protocol there can be problems. <!-- twee
 
 #### Backward Compatibility
 
-Backwards Compatibility mitigates [Protocol Versioning Risk](Communication-Risk#protocol-versioning-risk).  This means supporting the old protocol until it falls out of use.  If a supplier is pushing for a change in protocol it either must ensure that it is Backwards Compatible with the clients it is communicating with, or make sure they are upgraded concurrently.  When building [web services](https://en.wikipedia.org/wiki/Web_service), for example, it's common practice to version all API's so that you can manage the migration.  Something like this:
+Backwards Compatibility mitigates [Protocol Versioning Risk](Communication-Risk.md#protocol-versioning-risk).  This means supporting the old protocol until it falls out of use.  If a supplier is pushing for a change in protocol it either must ensure that it is Backwards Compatible with the clients it is communicating with, or make sure they are upgraded concurrently.  When building [web services](https://en.wikipedia.org/wiki/Web_service), for example, it's common practice to version all API's so that you can manage the migration.  Something like this:
 
  - Supplier publishes `/api/v1/something`.
  - Clients use `/api/v1/something`.
@@ -257,7 +257,7 @@ Backwards Compatibility mitigates [Protocol Versioning Risk](Communication-Risk#
 
 #### Forward Compatibility
 
-`HTML` and `HTTP` provide "graceful failure" to mitigate [Protocol Risk](Communication-Risk#protocol-risk)<!-- tweet-end -->:  while it's expected that all clients can parse the syntax of `HTML` and `HTTP`, it's not necessary for them to be able to handle all of the tags, attributes and rules they see.  The specification for both these standards is that if you don't understand something, ignore it.  Designing with this in mind means that old clients can always at least cope with new features, but it's not always possible.  
+`HTML` and `HTTP` provide "graceful failure" to mitigate [Protocol Risk](Communication-Risk.md#protocol-risk)<!-- tweet-end -->:  while it's expected that all clients can parse the syntax of `HTML` and `HTTP`, it's not necessary for them to be able to handle all of the tags, attributes and rules they see.  The specification for both these standards is that if you don't understand something, ignore it.  Designing with this in mind means that old clients can always at least cope with new features, but it's not always possible.  
 
 `JavaScript` _can't_ support this:  because the meaning of the next instruction will often depend on the result of the previous one.  
 
@@ -265,7 +265,7 @@ Do human languages support this?  To some extent!  New words are added to our la
 
 ### Protocol Implementation Risk
 
-A second aspect of [Protocol Risk](Communication-Risk#protocol-risk) exists in heterogeneous computing environments where protocols have been independently implemented based on standards.  For example, there are now so many different browsers, all supporting variations of `HTTP`, `HTML` and `JavaScript` that it becomes impossible to test comprehensively over all the different versions.  To mitigate as much [Protocol Risk](Communication-Risk#protocol-risk) as possible, generally we test web sites in a subset of browsers, and use a lowest-common-denominator approach to choosing protocol and language features.
+A second aspect of [Protocol Risk](Communication-Risk.md#protocol-risk) exists in heterogeneous computing environments where protocols have been independently implemented based on standards.  For example, there are now so many different browsers, all supporting variations of `HTTP`, `HTML` and `JavaScript` that it becomes impossible to test comprehensively over all the different versions.  To mitigate as much [Protocol Risk](Communication-Risk.md#protocol-risk) as possible, generally we test web sites in a subset of browsers, and use a lowest-common-denominator approach to choosing protocol and language features.
 
 ## Messages
 
@@ -303,19 +303,19 @@ For people, nothing exists unless we have a name for it. <!-- tweet-end --> The 
 
 People don't rely on rigorous definitions of abstractions like computers do; we make do with fuzzy definitions of concepts and ideas.  We rely on [Abstraction](Glossary#abstraction) to move between the name of a thing and the _idea of a thing_.
 
-This brings about [Misinterpretation Risk](Communication-Risk#misinterpretation-risk): names are not _precise_, and concepts mean different things to different people.  We can't be sure that other people have the same meaning for a name that we have.  
+This brings about [Misinterpretation Risk](Communication-Risk.md#misinterpretation-risk): names are not _precise_, and concepts mean different things to different people.  We can't be sure that other people have the same meaning for a name that we have.  
 
 ### Invisibility Risk
  
-Another cost of [Abstraction](Glossary#abstraction) is [Invisibility Risk](Communication-Risk#invisibility-risk).  While abstraction is a massively powerful technique, (as we saw above, [Protocols](Communication-Risk#protocols) allow things like the Internet to happen) it lets the function of a thing hide behind the layers of abstraction and become invisible.  
+Another cost of [Abstraction](Glossary#abstraction) is [Invisibility Risk](Communication-Risk.md#invisibility-risk).  While abstraction is a massively powerful technique, (as we saw above, [Protocols](Communication-Risk.md#protocols) allow things like the Internet to happen) it lets the function of a thing hide behind the layers of abstraction and become invisible.  
 
 #### Invisibility Risk In Conversation
 
-[Invisibility Risk](Communication-Risk#invisibility-risk) is risk due to information not sent.  Because humans don't need a complete understanding of a concept to use it, we can cope with some [Invisibility Risk](Communication-Risk#invisibility-risk) in communication and this saves us time when we're talking.   It would be _painful_ to have conversations if, say, the other person needed to understand everything about how cars worked in order to discuss cars.  
+[Invisibility Risk](Communication-Risk.md#invisibility-risk) is risk due to information not sent.  Because humans don't need a complete understanding of a concept to use it, we can cope with some [Invisibility Risk](Communication-Risk.md#invisibility-risk) in communication and this saves us time when we're talking.   It would be _painful_ to have conversations if, say, the other person needed to understand everything about how cars worked in order to discuss cars.  
 
 For people, [Abstraction](Glossary#abstraction) is a tool that we can use to refer to other concepts, without necessarily knowing how the concepts work. <!-- tweet-end --> This divorcing of "what" from "how" is the essence of abstraction and is what makes language useful.   
 
-The debt of [Invisibility Risk](Communication-Risk#invisibility-risk) comes due when you realise that _not_ being given the details _prevents_ you from reasoning about it effectively.<!-- tweet-end -->  Let's think about this in the context of a project status meeting, for example:
+The debt of [Invisibility Risk](Communication-Risk.md#invisibility-risk) comes due when you realise that _not_ being given the details _prevents_ you from reasoning about it effectively.<!-- tweet-end -->  Let's think about this in the context of a project status meeting, for example:
  
 - Can you be sure that the status update contains all the details you need to know?
 - Is the person giving the update wrong or lying?
@@ -333,15 +333,15 @@ But something else also happens:  by creating **f**, you are saying “I have th
 
 _Referring to **f** is a much simpler job than understanding **f**._
 
-We try to mitigate this via documentation but this is a terrible deal:  documentation is necessarily a simplified explanation of the abstraction, so will still suffer from [Invisibility Risk](Communication-Risk#invisibility-risk).
+We try to mitigate this via documentation but this is a terrible deal:  documentation is necessarily a simplified explanation of the abstraction, so will still suffer from [Invisibility Risk](Communication-Risk.md#invisibility-risk).
 
-[Invisibility Risk](Communication-Risk#invisibility-risk) is mainly [Hidden Risk](Glossary#Hidden-Risk).  (Mostly, _you don't know what you don't know_.)  But you can carelessly _hide things from yourself_ with software<!-- tweet-end -->:
+[Invisibility Risk](Communication-Risk.md#invisibility-risk) is mainly [Hidden Risk](Glossary#Hidden-Risk).  (Mostly, _you don't know what you don't know_.)  But you can carelessly _hide things from yourself_ with software<!-- tweet-end -->:
 
  - Adding a thread to an application that doesn't report whether it worked, failed, or is running out of control and consuming all the cycles of the CPU.
  - Redundancy can increase reliability, but only if you know when servers fail, and fix them quickly.   Otherwise, you only see problems when the last server fails.
  - When building a web-service, can you assume that it's working for the users in the way you want it to?
 
-When you build a software service, or even implement a thread, ask yourself:  "How will I know next week that this is working properly?"  <!-- tweet-end -->If the answer involves manual work and investigation, then your implementation has just cost you in [Invisibility Risk](Communication-Risk#invisibility-risk).
+When you build a software service, or even implement a thread, ask yourself:  "How will I know next week that this is working properly?"  <!-- tweet-end -->If the answer involves manual work and investigation, then your implementation has just cost you in [Invisibility Risk](Communication-Risk.md#invisibility-risk).
 
 ## Internal Models
 
@@ -351,7 +351,7 @@ The communication process so far has been fraught with risks, but now let's look
 
 ### Trust & Belief Risk
 
-Although protocols can sometimes handle security features of communication (such as [Authentication](https://en.wikipedia.org/wiki/Authentication) and preventing [man-in-the-middle attacks](https://en.wikipedia.org/wiki/Man-in-the-middle_attack)), trust goes further than this, it is the flip-side of [Agency Risk](Agency-Risk), which we will look at later:  can you be sure that the other party in the communication is acting in your best interests?
+Although protocols can sometimes handle security features of communication (such as [Authentication](https://en.wikipedia.org/wiki/Authentication) and preventing [man-in-the-middle attacks](https://en.wikipedia.org/wiki/Man-in-the-middle_attack)), trust goes further than this, it is the flip-side of [Agency Risk](Agency-Risk.md), which we will look at later:  can you be sure that the other party in the communication is acting in your best interests?
  
 Even if the receiver trusts the communicator, they may not believe the message.  Let's look at some reasons for that:
 
@@ -359,7 +359,7 @@ Even if the receiver trusts the communicator, they may not believe the message. 
 - **[Relativism](https://en.wikipedia.org/wiki/Relativism)** is the concept that there are no universal truths.  Every truth is from a frame of reference.  For example, what constitutes _offensive language_ is dependent on the listener.
 - **[Psycholinguistics](https://en.wikipedia.org/wiki/Psycholinguistics)** is the study of how humans acquire languages.  There are different languages, dialects, and _industry dialects_.  We all understand language in different ways, take different meanings and apply different contexts to the messages.
   
-From the point-of-view of [Marketing Communications](Communication-Risk#Marketing-Communications), choosing the right message is part of the battle.  You are trying to communicate your idea in such a way as to mitigate Trust & Belief Risk.
+From the point-of-view of [Marketing Communications](Communication-Risk.md#Marketing-Communications), choosing the right message is part of the battle.  You are trying to communicate your idea in such a way as to mitigate Trust & Belief Risk.
 
 ### Learning Curve Risk
 
@@ -377,14 +377,14 @@ By now it should be clear that it's going to be _both_ quite hard to read and wr
 
 But now we should be able to see the reason why it's harder to read than write too: 
  
- - When reading code, you are having to shift your [Internal Model](Glossary#Internal-Model) to wherever the code is, accepting decisions that you might not agree with and accepting counter-intuitive logical leaps.  i.e. [Learning Curve Risk](Communication-Risk#learning-curve-risk). _(cf. [Principle of Least Surprise](https://en.wikipedia.org/wiki/Principle_of_least_astonishment))_
- - There is no [Feedback Loop](Glossary#Feedback-Loop) between your [Internal Model](Glossary#Internal-Model) and the [Reality](Glossary#Meet-Reality) of the code, opening you up to [Misinterpretation Risk](Communication-Risk#misinterpretation-risk).  When you write code, your compiler and tests give you this.
- - While reading code _takes less time_ than writing it, this also means the [Learning Curve](Communication-Risk#learning-curve-risk) is steeper.
+ - When reading code, you are having to shift your [Internal Model](Glossary#Internal-Model) to wherever the code is, accepting decisions that you might not agree with and accepting counter-intuitive logical leaps.  i.e. [Learning Curve Risk](Communication-Risk.md#learning-curve-risk). _(cf. [Principle of Least Surprise](https://en.wikipedia.org/wiki/Principle_of_least_astonishment))_
+ - There is no [Feedback Loop](Glossary#Feedback-Loop) between your [Internal Model](Glossary#Internal-Model) and the [Reality](Glossary#Meet-Reality) of the code, opening you up to [Misinterpretation Risk](Communication-Risk.md#misinterpretation-risk).  When you write code, your compiler and tests give you this.
+ - While reading code _takes less time_ than writing it, this also means the [Learning Curve](Communication-Risk.md#learning-curve-risk) is steeper.
 
 ## Communication Risk Wrap Up
 
 ![Communication Risks, Summarised](images/generated/risks/communication/communication_3.png)
 
-In this section, we've looked at [Communication Risk](Communication-Risk) itself and broken it down into six sub-types of risk as shown in the diagram above.  Again, we are calling out _patterns_ here. You could classify communication risks in other ways, but concepts like [Learning Curve Risk](#Learning-Curve-Risk) and [Invisibility Risk](#Invisibility-Risk) we will be using again in again in Risk-First.
+In this section, we've looked at [Communication Risk](Communication-Risk.md) itself and broken it down into six sub-types of risk as shown in the diagram above.  Again, we are calling out _patterns_ here. You could classify communication risks in other ways, but concepts like [Learning Curve Risk](#Learning-Curve-Risk) and [Invisibility Risk](#Invisibility-Risk) we will be using again in again in Risk-First.
 
-In the next section we will address complexity head-on and understand how [Complexity Risk](Complexity-Risk) manifests in software projects.
+In the next section we will address complexity head-on and understand how [Complexity Risk](Complexity-Risk.md) manifests in software projects.

@@ -13,7 +13,7 @@ But if we are good collectors, then before we finish we should _[Stage](https://
 
 ## Towards A "Periodic Table" Of Risks
 
-As we said [at the start](A-Pattern-Language), Risk-First is all about developing _A Pattern Language_.  We can use the terms like "[Feature Risk](Feature-Risk)" or "[Learning Curve Risk](Communication-Risk#learning-curve-risk)" to explain phenomena we see on software projects.   If we want to [De-Risk](De-Risking) our work, we need this power of explanation so we can talk about how to go about it.
+As we said [at the start](A-Pattern-Language.md), Risk-First is all about developing _A Pattern Language_.  We can use the terms like "[Feature Risk](Feature-Risk)" or "[Learning Curve Risk](Communication-Risk.md#learning-curve-risk)" to explain phenomena we see on software projects.   If we want to [De-Risk](De-Risking) our work, we need this power of explanation so we can talk about how to go about it.
 
 ![Periodic Table of Risks](images/generated/staging-and-classifying/periodic-table-large.png)
 
@@ -23,7 +23,7 @@ If you've been reading closely, you'll notice that a number of themes come up ag
 
 ## The Power Of Abstractions
 
-[Abstraction](Glossary#abstraction) appears as a concept continually: in [Communication Risk](Communication-Risk), [Complexity Metrics](Complexity-Risk#kolmogorov-complexity), [Map and Territory Risk](Map-And-Territory-Risk) or how it causes [Boundary Risk](Boundary-Risk).  We've looked at some complicated examples of abstractions, such as [network protocols](Communication-Risk#protocols), [dependencies on technology](Software-Dependency-Risk#software-tools) or [Business Processes](Process-Risk#the-purpose-of-process).
+[Abstraction](Glossary#abstraction) appears as a concept continually: in [Communication Risk](Communication-Risk.md), [Complexity Metrics](Complexity-Risk.md#kolmogorov-complexity), [Map and Territory Risk](Map-And-Territory-Risk) or how it causes [Boundary Risk](Boundary-Risk).  We've looked at some complicated examples of abstractions, such as [network protocols](Communication-Risk.md#protocols), [dependencies on technology](Software-Dependency-Risk#software-tools) or [Business Processes](Process-Risk#the-purpose-of-process).
 
 Let's now _generalize_ what is happening with abstraction.  To do this, we'll consider the simplest example of abstraction:  _naming a pattern_ of behaviour we see in the real world, such as "Binge Watching" or "Remote Working", or naming a category of insects as "Beetles".
 
@@ -34,7 +34,7 @@ Let's now _generalize_ what is happening with abstraction.  To do this, we'll co
 As shown in the above diagram, _using an abstraction you already know_ means:
 
  - **Mitigating [Feature Risk](Feature-Risk)**: because the abstraction is providing you with something _useful_.  For example, using the word "London" allows you to refer to a whole (but slightly non-specific) geographic area.
- - **Accepting [Communication Risk](Communication-Risk)**: because if you are using the abstraction in conversation the people you are using it with _need to understand it too_.
+ - **Accepting [Communication Risk](Communication-Risk.md)**: because if you are using the abstraction in conversation the people you are using it with _need to understand it too_.
  - **Accepting [Map and Territory Risk](Map-And-Territory-Risk)**: because the abstraction is a simplification and not the actual thing itself.
  - **Living with [Dependency Risks](Dependency-Risk.md)**:  we depend on a word in our language (or a function in our library, or a service on the Internet).  But words are [unreliable](Dependency-Risk.md#reliability-risk).  Language _changes_ and _evolves_, and the words you are using now might not always mean what you want them to mean.  (Software too changes and evolves:  We've seen this in [Red Queen Risk](Scarcity-Risk#red-queen-risk) and [Feature Drift Risk](Feature-Risk#feature-drift-risk).)
  
@@ -45,8 +45,8 @@ As shown in the above diagram, _using an abstraction you already know_ means:
 As shown in the above diagram, _inventing a new abstraction_ means:
 
 - **Mitigating [Feature Risk](Feature-Risk).**  By _giving a name to something_ (or building a new product, or a way of working) you are offering up something that someone else can use.  This should mitigate [Feature Risk](Feature-Risk) in the sense that other people can choose to use your it, if it fits their requirements.  
-- **Creating a [Protocol](Communication-Risk#protocols).**  Introducing _new words to a language_ creates [Protocol Risk](Communication-Risk#protocol-risk) as most people won't know what it means. 
-- **Increasing [Complexity Risk](Complexity-Risk).** Because, the more words we have, the more complex the language is.
+- **Creating a [Protocol](Communication-Risk.md#protocols).**  Introducing _new words to a language_ creates [Protocol Risk](Communication-Risk.md#protocol-risk) as most people won't know what it means. 
+- **Increasing [Complexity Risk](Complexity-Risk.md).** Because, the more words we have, the more complex the language is.
 - **Creating the opportunity for [Boundary Risk](Boundary-Risk).**  By naming something, you _implicitly_ create a boundary, because the world is now divided into "things which _are_ X" and "things which _are not_ X".  _Boundary Risk arises from abstractions._
     
 ### Learning A New Abstraction
@@ -55,7 +55,7 @@ As shown in the above diagram, _inventing a new abstraction_ means:
 
 As shown in the above diagram, _learning a new abstraction_ means:
 
- - **Overcoming a [Learning Curve](Communication-Risk#learning-curve-risk)**: because you have to _learn_ a name in order to use it (whether it is the name of a function, a dog, or someone at a party).
+ - **Overcoming a [Learning Curve](Communication-Risk.md#learning-curve-risk)**: because you have to _learn_ a name in order to use it (whether it is the name of a function, a dog, or someone at a party).
  - **Accepting [Boundary Risks](Boundary-Risk).**  Commitment to one abstraction over another means that you have the opportunity cost of the other abstractions that you could have used.
  - **Accepting [Map And Territory Risk](Map-And-Territory-Risk).** Because the word refers to the _concept_ of the thing, and _not the thing itself_.
 
@@ -71,7 +71,7 @@ However over the rest of the [Dependency Risk](Dependency-Risk.md) sections we l
 
 So [Feature Risk](Feature-Risk) and [Dependency Risk](Dependency-Risk.md) are _two sides of the same coin_, they capture the risks in _demand_ and _supply_.   
 
-As shown in the diagram above, relationships of features/dependencies are the basis of [Supply Chains](https://en.wikipedia.org/wiki/Supply_chain) and the world-wide network of goods and services that forms the modern economy.  The incredible complexity of this network mean incredible [Complexity Risk](Complexity-Risk), too.  Humans are masters at [coordinating](Coordination-Risk) and managing our dependencies. 
+As shown in the diagram above, relationships of features/dependencies are the basis of [Supply Chains](https://en.wikipedia.org/wiki/Supply_chain) and the world-wide network of goods and services that forms the modern economy.  The incredible complexity of this network mean incredible [Complexity Risk](Complexity-Risk.md), too.  Humans are masters at [coordinating](Coordination-Risk) and managing our dependencies. 
 
 ## The Work Continues
 

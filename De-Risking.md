@@ -24,7 +24,7 @@ Let's look at some common strategies for De-Risking.
 
 ## Avoid
 
-**Avoiding** risk, means taking a route on the [Risk Landscape](Glossary#risk-landscape) _around_ the risk.  For example, if you are working in a team which has no experience of relational databases, then _storing data in files_ might be a way to avoid the [Learning Curve Risk](Communication-Risk#learning-curve-risk) associated with this technology.  
+**Avoiding** risk, means taking a route on the [Risk Landscape](Glossary#risk-landscape) _around_ the risk.  For example, if you are working in a team which has no experience of relational databases, then _storing data in files_ might be a way to avoid the [Learning Curve Risk](Communication-Risk.md#learning-curve-risk) associated with this technology.  
 
 Of course, you may pick up other, more serious [Attendant Risks](Glossary#attendant-risk) as a result: Relational Databases are software solutions to many kinds of [Coordination Risk](Coordination-Risk) problem.
 
@@ -83,7 +83,7 @@ Later, in the section on [Process Risk](Process-Risk) we'll be looking at how **
 
 Let's look at the journey so far.
 
- - In [A Simple Scenario](A-Simple-Scenario) we looked at how risk pervades every goal we have in life, big or small.  We saw that risk stems from the fact that our [Internal Model](Glossary#Internal-Model) of the world couldn't capture everything about reality, and so some things were down to chance.  
+ - In [A Simple Scenario](A-Simple-Scenario.md) we looked at how risk pervades every goal we have in life, big or small.  We saw that risk stems from the fact that our [Internal Model](Glossary#Internal-Model) of the world couldn't capture everything about reality, and so some things were down to chance.  
  
  - In the [Development Process](Development-Process) we looked at how common software engineering conventions like Unit Testing, User Acceptance Testing and Integration could help us manage the risk of taking an idea to production, by _gradually_ introducing it to reality in stages.
 
@@ -95,10 +95,10 @@ Let's look at the journey so far.
  
  - [Evaluating Risk](Evaluating-Risk) was an aside, looking at some terminology and the useful concept of a Risk Register.
  
- - We looked at [Cadence](Cadence) and how feedback loops allow you to navigate the [Risk Landscape](Glossary#risk-landscape) more effectively, by showing you more quickly when you're going wrong.
+ - We looked at [Cadence](Cadence.md) and how feedback loops allow you to navigate the [Risk Landscape](Glossary#risk-landscape) more effectively, by showing you more quickly when you're going wrong.
  
 What this has been building towards is supplying us with a vocabulary with which to communicate to our team-mates about which Risks are important to us, which actions we believe are the right ones, and which tools we should use.
 
-In the next section we will see [an example of this in action](A-Conversation).
+In the next section we will see [an example of this in action](A-Conversation.md).
 
 

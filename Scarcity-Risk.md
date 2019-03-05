@@ -35,7 +35,7 @@ Since staff are a scarce resource, it stands to reason that if a startup has a "
   
 You need to consider how long your staff are going to be around, especially if you have [Key Person Risk](https://en.wikipedia.org/wiki/Key_person_insurance#Key_person_definition) on some of them.  <!-- tweet-end -->People like to have new challenges, move on to live in new places, or simply get bored.  Replacing staff can be highly risky.
 
-The longer your project goes on for, the more [Staff Risk](Scarcity-Risk#staff-risk) you will have to endure, and you can't rely on getting the [best staff for failing projects](Agency-Risk).
+The longer your project goes on for, the more [Staff Risk](Scarcity-Risk#staff-risk) you will have to endure, and you can't rely on getting the [best staff for failing projects](Agency-Risk.md).
 
 ## Schedule Risk
 
@@ -104,7 +104,7 @@ Now, they didn't _deliberately_ take 15 years to build this game (lots of things
 
 Personally, I have suffered the pain on project teams where we've had to cope with legacy code and databases because the cost of changing them was too high.  This is shown in the above diagram:  mitigating [Red Queen Risk](#red-queen-risk) (by _keeping up-to-date_) has the [Attendant Risk](Glossary#attendant-risk) of costing time and money, which might not seem worth it.  Any team who is stuck using [Visual Basic 6.0](https://en.wikipedia.org/wiki/Visual_Basic) is here.   
 
-It's possible to ignore [Red Queen Risk](Scarcity-Risk#red-queen-risk) for a time, but this is just another form of [Technical Debt](Complexity-Risk) which eventually comes due.  
+It's possible to ignore [Red Queen Risk](Scarcity-Risk#red-queen-risk) for a time, but this is just another form of [Technical Debt](Complexity-Risk.md) which eventually comes due.  
 
 
 ## Mitigations

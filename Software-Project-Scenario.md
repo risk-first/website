@@ -6,7 +6,7 @@ Where do the risks of the project lie? <!-- tweet-end -->
 
 How do we decide what _needs to be done today_ on a software project? <!-- tweet-end --> 
 
-Let's look again at the simple risk framework from the [introduction](A-Simple-Scenario) and try to apply it at the level of the _entire project_.
+Let's look again at the simple risk framework from the [introduction](A-Simple-Scenario.md) and try to apply it at the level of the _entire project_.
 
 ![Taking action changes reality, but it changes your perception of the attendant risks too](images/generated/introduction/model_vs_reality.png)
 
@@ -79,6 +79,6 @@ For example, it's worth considering that if we're just starting this project, ri
 
 ## Tacit and Explicit Modelling
 
-As we saw in the example of the [Dinner Party](A-Simple-Scenario), creating an internal model is something _we just do_<!-- tweet-end -->:  we have this functionality in our brains already.  When we scale this up to a whole project team, we can expect the individuals on the project to continue to do this, but we might also want to consider _explicitly_ creating a [risk register for the whole project](Evaluating-Risk).  
+As we saw in the example of the [Dinner Party](A-Simple-Scenario.md), creating an internal model is something _we just do_<!-- tweet-end -->:  we have this functionality in our brains already.  When we scale this up to a whole project team, we can expect the individuals on the project to continue to do this, but we might also want to consider _explicitly_ creating a [risk register for the whole project](Evaluating-Risk).  
 
 In the next section, we're going to take a quick aside into looking at some [risk theory](Evaluating-Risk) around this.
