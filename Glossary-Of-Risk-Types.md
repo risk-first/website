@@ -28,12 +28,12 @@ description: List of all types of risk discussed in Risk-First.
 |[Internal-Model](Communication-Risk.md#internal-model-risk)|Risks arising from insufficient or erroneous internal models of reality.|
 |[Invisibility](Communication-Risk.md#invisibility-risk)|Risks caused by the choice of abstractions we use in communication.|
 |[Learning-Curve](Communication-Risk.md#learning-curve-risk)|Risks due to the difficulty faced in updating an internal model.|
-|[Map-And-Territory](Map-And-Territory-Risk)|Risks due to the differences between reality and the internal model of reality, and the assumption that they are equivalent. |
+|[Map-And-Territory](Map-And-Territory-Risk.md)|Risks due to the differences between reality and the internal model of reality, and the assumption that they are equivalent. |
 |[Market](Feature-Risk.md#market-risk)|Risk that the value your clients place on the features you supply will change, over time.|
 |[Message](Communication-Risk.md#message-risk)|Risks caused by the difficulty of composing and interpreting messages in the communication process.|
-|[Operational](Operational-Risk)|Risks of losses or reputational damage caused by failing processes or real-world events.|
+|[Operational](Operational-Risk.md)|Risks of losses or reputational damage caused by failing processes or real-world events.|
 |[Opportunity](Scarcity-Risk#opportunity-risk)|Risk that a particular set of market conditions.|
-|[Process](Process-Risk)|Risks due to the fact that when dealing with a dependency, we have to follow a particular protocol of communication, which may not work out the way we want.|
+|[Process](Process-Risk.md)|Risks due to the fact that when dealing with a dependency, we have to follow a particular protocol of communication, which may not work out the way we want.|
 |[Protocol](Communication-Risk.md#protocol-risk)|Risks due to the failure of encoding or decoding messages between two parties in communication.  |
 |[Red-Queen](Scarcity-Risk#red-queen-risk)|The general risk that the competitive environment we operate within changes over time.|
 |[Regression](Feature-Risk.md#regression-risk)|Risk that the functionality you provide changes for the worse, over time.|

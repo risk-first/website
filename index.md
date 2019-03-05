@@ -22,7 +22,7 @@ Hopefully, after reading through some of the articles here, you'll come away wit
 - [Risk-First is a Pattern Language (think Design Patterns, or TVTropes)](A-Pattern-Language.md)
 - ["Software Development Is All About Risk" - Kent Beck](All-About-Risk.md)
 - [Who Is This For?](Audience.md)
-- [Quick, High-Level Summary](Quick-Summary)
+- [Quick, High-Level Summary](Quick-Summary.md)
 
 ### Contributing
 
@@ -47,13 +47,13 @@ Some easy-to-digest ideas that will set the scene for examining the practices la
 
  - [A Simple Scenario](A-Simple-Scenario.md)
  - [Development Process](Development-Process.md)
- - [Meeting Reality](Meeting-Reality)
- - [It's Just Risk](Just-Risk)
+ - [Meeting Reality](Meeting-Reality.md)
+ - [It's Just Risk](Just-Risk.md)
  - [Evaluating Risk](Evaluating-Risk.md)
  - [Cadence](Cadence.md)
  - [De-Risking](De-Risking)
  - [A Conversation](A-Conversation.md)
- - [One Size Fits No One](One-Size-Fits-No-One)
+ - [One Size Fits No One](One-Size-Fits-No-One.md)
  
 ### Part 2: [The Risk Landscape](Risk-Landscape)
 
@@ -67,12 +67,12 @@ Risks are often very similar across different software projects.   And, if you k
  - [Scarcity Risk](Scarcity-Risk)
  - [Deadline Risk](Deadline-Risk)
  - [Software Dependency Risk](Software-Dependency-Risk)
- - [Process Risk](Process-Risk)
+ - [Process Risk](Process-Risk.md)
  - [Boundary Risk](Boundary-Risk)
  - [Agency Risk](Agency-Risk.md) 
  - [Coordination Risk](Coordination-Risk.md)
- - [Map And Territory Risk](Map-And-Territory-Risk)
- - [Operational Risk](Operational-Risk)
+ - [Map And Territory Risk](Map-And-Territory-Risk.md)
+ - [Operational Risk](Operational-Risk.md)
  - [Staging And Classifying](Staging-And-Classifying)
  
 ### Part 3: [Practices](Practices)

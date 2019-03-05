@@ -9,11 +9,11 @@ description: Risks of losses or reputational damage caused by failing processes 
 
 In this section we're going to start considering the realities of running software systems in the real world.  
 
-There is a lot to this subject, so this section is just a taster: we're going to set the scene by looking at what constitutes an [Operational Risk](Operational-Risk), and then look at the related discipline of [Operations Management](#operations-management).  Following this background, we'll apply the Risk-First model and have a high-level look at the various mitigations for [Operational Risk](Operational-Risk).  
+There is a lot to this subject, so this section is just a taster: we're going to set the scene by looking at what constitutes an [Operational Risk](Operational-Risk.md), and then look at the related discipline of [Operations Management](#operations-management).  Following this background, we'll apply the Risk-First model and have a high-level look at the various mitigations for [Operational Risk](Operational-Risk.md).  
 
 ## Operational Risks
 
-When building software, it's tempting to take a very narrow view of the dependencies of a system, but [Operational Risks](Operational-Risk) are often caused by dependencies we _don't_ consider - i.e. the **Operational Context** within which the system is operating.<!-- tweet-end -->  Here are some examples:  
+When building software, it's tempting to take a very narrow view of the dependencies of a system, but [Operational Risks](Operational-Risk.md) are often caused by dependencies we _don't_ consider - i.e. the **Operational Context** within which the system is operating.<!-- tweet-end -->  Here are some examples:  
 
  - **[Staff Risks](Scarcity-Risk#staff-risk)**: 
    - Freak weather conditions affecting ability of staff to get to work, interrupting the development and support teams. 
@@ -24,7 +24,7 @@ When building software, it's tempting to take a very narrow view of the dependen
    - A power cut causing backups to fail.
    - Not having enough desks for everyone to sit at.
    
- - **[Process Risks](Process-Risk)**:
+ - **[Process Risks](Process-Risk.md)**:
    - Regulatory change, which means you have to adapt your business model.
    - Insufficient controls which means you don't notice when some transactions are failing, leaving you out-of-pocket.
    - Data loss because of bugs introduced during an untested release.
@@ -37,7 +37,7 @@ When building software, it's tempting to take a very narrow view of the dependen
    - Employees trying to steal from the company (bad actors).
    - Other crime, such as hackers stealing data.
 
-This is a long laundry-list of everything that can go wrong due to operating in "The Real World".  Although we've spent a lot of time looking at the varieties of [Dependency Risk](Dependency-Risk.md) on a software project, with [Operational Risk](Operational-Risk) we have to consider that these dependencies will fail in any number of unusual ways, and we can't be ready for all of them.  Preparing for this comes under the umbrella of [Operations Management](#operations-management).
+This is a long laundry-list of everything that can go wrong due to operating in "The Real World".  Although we've spent a lot of time looking at the varieties of [Dependency Risk](Dependency-Risk.md) on a software project, with [Operational Risk](Operational-Risk.md) we have to consider that these dependencies will fail in any number of unusual ways, and we can't be ready for all of them.  Preparing for this comes under the umbrella of [Operations Management](#operations-management).
 
 ## Operations Management
 
@@ -71,7 +71,7 @@ Let's look at each of these actions in turn.
 
 ![Control, Monitoring And Detection](images/generated/risks/operational/monitoring-detection.png)
 
-Since humans and machines have different areas of expertise, and because [Operational Risks](Operational-Risk) are often novel, it's often not optimal to try and automate everything.  A good operation will consist of a mix of human and machine actors, each playing to their strengths (see the table below). 
+Since humans and machines have different areas of expertise, and because [Operational Risks](Operational-Risk.md) are often novel, it's often not optimal to try and automate everything.  A good operation will consist of a mix of human and machine actors, each playing to their strengths (see the table below). 
 
 The aim is to build a human-machine operational system that is [_Homeostatic_](https://en.wikipedia.org/wiki/Homeostasis).  This is the property of living things to try and maintain an equilibrium (for example, body temperature or blood glucose levels), but also applies to systems at any scale.  The key to homeostasis is to build systems with feedback loops, even though this leads to more complex systems overall. The diagram above shows some of the actions involved in these kind of feedback loops within IT operations. 
 
@@ -82,7 +82,7 @@ The aim is to build a human-machine operational system that is [_Homeostatic_](h
 |Expensive at scale           |Cheap at scale               |
 |Reacting and Anticipating    |Recording                    |
 
-As we saw in [Map and Territory Risk](Map-and-Territory-Risk), it's very easy to fool yourself, especially around [Key Performance Indicators (KPIs)](https://en.wikipedia.org/wiki/Performance_indicator) and metrics. Large organisations have [Audit](https://en.wikipedia.org/wiki/Audit) functions precisely to guard against their own internal failing [processes](Process-Risk) and [Agency Risk](Agency-Risk.md).  Audits could be around software tools, processes, practices, quality and so on.  Practices such as [Continuous Improvement](https://en.wikipedia.org/wiki/Continual_improvement_process) and [Total Quality Management](https://en.wikipedia.org/wiki/Total_quality_management) also figure here.
+As we saw in [Map and Territory Risk](Map-And-Territory-Risk.md), it's very easy to fool yourself, especially around [Key Performance Indicators (KPIs)](https://en.wikipedia.org/wiki/Performance_indicator) and metrics. Large organisations have [Audit](https://en.wikipedia.org/wiki/Audit) functions precisely to guard against their own internal failing [processes](Process-Risk.md) and [Agency Risk](Agency-Risk.md).  Audits could be around software tools, processes, practices, quality and so on.  Practices such as [Continuous Improvement](https://en.wikipedia.org/wiki/Continual_improvement_process) and [Total Quality Management](https://en.wikipedia.org/wiki/Total_quality_management) also figure here.
 
 ### Scanning The Operational Context
 
@@ -117,7 +117,7 @@ In recent years the [DevOps](https://en.wikipedia.org/wiki/DevOps) movement has 
   
 ## Improvement
 
-No system can be perfect, and after it meets the real world, we will want to improve it over time.  But [Operational Risk](Operational-Risk) includes an element of [Trust & Belief Risk](Communication-Risk.md#trust--belief-risk): we have a  _reputation_ and the good will of our customers to consider when we make improvements.  Because this is very hard to rebuild, we should consider this before releasing software that might not live up to expectations.    
+No system can be perfect, and after it meets the real world, we will want to improve it over time.  But [Operational Risk](Operational-Risk.md) includes an element of [Trust & Belief Risk](Communication-Risk.md#trust--belief-risk): we have a  _reputation_ and the good will of our customers to consider when we make improvements.  Because this is very hard to rebuild, we should consider this before releasing software that might not live up to expectations.    
 
 So there is a tension between "you only get one chance to make a first impression" and "gilding the lily" (perfectionism).  In the past I've seen this stated as _pressure to ship vs pressure to improve_.
 
@@ -126,9 +126,9 @@ So there is a tension between "you only get one chance to make a first impressio
 A Risk-First re-framing of this (as shown in the diagram above) might be the balance between:
 
 - The perceived [Scarcity Risks](Scarcity-Risk) (such as funding, time available, etc) of staying in development (pressure to ship).
-- The perceived [Trust & Belief Risk](Communication-Risk.md#trust--belief-risk), [Feature Risk](Feature-Risk.md) and [Operational Risk](Operational-Risk) of going to production (pressure to improve).
+- The perceived [Trust & Belief Risk](Communication-Risk.md#trust--belief-risk), [Feature Risk](Feature-Risk.md) and [Operational Risk](Operational-Risk.md) of going to production (pressure to improve).
 
-The "should we ship?" decision is therefore a complex one.  In [Meeting Reality](Meeting-Reality), we discussed that it's better to do this "sooner, more frequently, in smaller chunks and with feedback".  We can meet [Operational Risk](Operational-Risk) _on our own terms_ by doing so: 
+The "should we ship?" decision is therefore a complex one.  In [Meeting Reality](Meeting-Reality.md), we discussed that it's better to do this "sooner, more frequently, in smaller chunks and with feedback".  We can meet [Operational Risk](Operational-Risk.md) _on our own terms_ by doing so: 
 
 |Meet Reality...             |Techniques                                                            | 
 |----------------------------|----------------------------------------------------------------------|

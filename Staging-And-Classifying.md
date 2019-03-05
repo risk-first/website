@@ -23,7 +23,7 @@ If you've been reading closely, you'll notice that a number of themes come up ag
 
 ## The Power Of Abstractions
 
-[Abstraction](Glossary.md#abstraction) appears as a concept continually: in [Communication Risk](Communication-Risk.md), [Complexity Metrics](Complexity-Risk.md#kolmogorov-complexity), [Map and Territory Risk](Map-And-Territory-Risk) or how it causes [Boundary Risk](Boundary-Risk).  We've looked at some complicated examples of abstractions, such as [network protocols](Communication-Risk.md#protocols), [dependencies on technology](Software-Dependency-Risk#software-tools) or [Business Processes](Process-Risk#the-purpose-of-process).
+[Abstraction](Glossary.md#abstraction) appears as a concept continually: in [Communication Risk](Communication-Risk.md), [Complexity Metrics](Complexity-Risk.md#kolmogorov-complexity), [Map and Territory Risk](Map-And-Territory-Risk.md) or how it causes [Boundary Risk](Boundary-Risk).  We've looked at some complicated examples of abstractions, such as [network protocols](Communication-Risk.md#protocols), [dependencies on technology](Software-Dependency-Risk#software-tools) or [Business Processes](Process-Risk.md#the-purpose-of-process).
 
 Let's now _generalize_ what is happening with abstraction.  To do this, we'll consider the simplest example of abstraction:  _naming a pattern_ of behaviour we see in the real world, such as "Binge Watching" or "Remote Working", or naming a category of insects as "Beetles".
 
@@ -35,7 +35,7 @@ As shown in the above diagram, _using an abstraction you already know_ means:
 
  - **Mitigating [Feature Risk](Feature-Risk.md)**: because the abstraction is providing you with something _useful_.  For example, using the word "London" allows you to refer to a whole (but slightly non-specific) geographic area.
  - **Accepting [Communication Risk](Communication-Risk.md)**: because if you are using the abstraction in conversation the people you are using it with _need to understand it too_.
- - **Accepting [Map and Territory Risk](Map-And-Territory-Risk)**: because the abstraction is a simplification and not the actual thing itself.
+ - **Accepting [Map and Territory Risk](Map-And-Territory-Risk.md)**: because the abstraction is a simplification and not the actual thing itself.
  - **Living with [Dependency Risks](Dependency-Risk.md)**:  we depend on a word in our language (or a function in our library, or a service on the Internet).  But words are [unreliable](Dependency-Risk.md#reliability-risk).  Language _changes_ and _evolves_, and the words you are using now might not always mean what you want them to mean.  (Software too changes and evolves:  We've seen this in [Red Queen Risk](Scarcity-Risk#red-queen-risk) and [Feature Drift Risk](Feature-Risk.md#feature-drift-risk).)
  
 ### Inventing A New Abstraction  
@@ -57,7 +57,7 @@ As shown in the above diagram, _learning a new abstraction_ means:
 
  - **Overcoming a [Learning Curve](Communication-Risk.md#learning-curve-risk)**: because you have to _learn_ a name in order to use it (whether it is the name of a function, a dog, or someone at a party).
  - **Accepting [Boundary Risks](Boundary-Risk).**  Commitment to one abstraction over another means that you have the opportunity cost of the other abstractions that you could have used.
- - **Accepting [Map And Territory Risk](Map-And-Territory-Risk).** Because the word refers to the _concept_ of the thing, and _not the thing itself_.
+ - **Accepting [Map And Territory Risk](Map-And-Territory-Risk.md).** Because the word refers to the _concept_ of the thing, and _not the thing itself_.
 
 Abstraction is everywhere and seems to be at the heart of what our brains do.  But clearly, like [taking any other action](Glossary.md#taking-action) there is always trade-off in terms of risk.   
 

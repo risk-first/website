@@ -45,7 +45,7 @@ Why is it so bad?  The problem with a developer answering a question such as:
 Seems to be the following:
 
  - The developer and the client likely don't agree on exactly what X is, and any description of it is inadequate anyway ([Invisibility Risk](Communication-Risk.md#invisibility-risk)).
- - The developer has a less-than-complete understanding of the environment he will be delivering X in ([Complexity Risk](Complexity-Risk.md) and [Map And Territory Risk](Map-And-Territory-Risk)).
+ - The developer has a less-than-complete understanding of the environment he will be delivering X in ([Complexity Risk](Complexity-Risk.md) and [Map And Territory Risk](Map-And-Territory-Risk.md)).
  - The developer has some vague ideas about how to do X, but he'll need to try out various approaches until he finds something that works ([Boundary Risk](Boundary-Risk) and [Learning Curve Risk](Communication-Risk.md#learning-curve-risk)).
  - The developer has no idea what [Hidden Risk](Glossary.md#hidden-risk) will surface when he starts work on it.
  - The developer has no idea what will happen if he takes too long and misses the date by a day/week/month/year ([Schedule Risk](Scarcity-Risk#schedule-risk)).
@@ -104,7 +104,7 @@ From a Risk-First perspective, we can now see that this is an over-simplificatio
 So the conclusion is:  **Focusing on the three risks of the iron triangle isn't enough.**  You can game these risks by sacrificing others:  we need to be looking at the project's risk _holistically_.
 
  - There's no point in calling a project complete if the dependencies you are using are [unreliable](Dependency-Risk.md) or [undergoing rapid change](Scarcity-Risk#red-queen-risk) 
- - There's no point in delivering the project on time if it's an [Operational Risk](Operational-Risk) nightmare, and requires constant round-the-clock support and will cost a fortune to _run_.  (Working on a project that "hits its delivery date" but is nonetheless a broken mess once in production is too common a sight.)
+ - There's no point in delivering the project on time if it's an [Operational Risk](Operational-Risk.md) nightmare, and requires constant round-the-clock support and will cost a fortune to _run_.  (Working on a project that "hits its delivery date" but is nonetheless a broken mess once in production is too common a sight.)
  - There's no point in delivering a project on-budget if [the market has moved on](Feature-Risk.md#market-risk) and [needs different features](Feature-Risk.md#feature-drift-risk).  
 
 ## Old Saw No. 3: Parkinson's Law
@@ -186,7 +186,7 @@ Instead of the Agile Estimation being about picking out a story-point number bas
  
 ![Risk-First Diagram Language](images/generated/introduction/all_risk_management_language.png)
  
-Essentially, this is what we are trying to capture with [Risk-First Diagrams](Just-Risk#goals-are-risks-too) (the diagram above being the template for this).
+Essentially, this is what we are trying to capture with [Risk-First Diagrams](Just-Risk.md#goals-are-risks-too) (the diagram above being the template for this).
  
 #### Tip #2: The Risk Landscape is Increasingly Complex: Utilise This
 

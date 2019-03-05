@@ -13,7 +13,7 @@ This is [Agency Risk](Agency-Risk.md).   This term comes from finance and refers
 
 The less visibility you have of the agent's activities, the bigger the risk.  However, the _whole point_ of giving the money to the agent was that you would have to spend less time and effort managing it, hence the dilemma.  <!-- tweet-start -->In software development, we're not lending each other money, but we _are_ being paid by the project sponsor, so they are assuming [Agency Risk](Agency-Risk.md) by employing us.   <!-- tweet-end -->
 
-As we saw in the previous section on [Process Risk](Process-Risk), <!-- tweet-start -->[Agency Risk](Agency-Risk.md) doesn't just apply to people: it can apply to _running software_ or _whole teams_  <!-- tweet-end -->- anything which has agency over its actions.  
+As we saw in the previous section on [Process Risk](Process-Risk.md), <!-- tweet-start -->[Agency Risk](Agency-Risk.md) doesn't just apply to people: it can apply to _running software_ or _whole teams_  <!-- tweet-end -->- anything which has agency over its actions.  
 
 > "Agency is the capacity of an actor to act in a given environment... Agency may either be classified as unconscious, involuntary behaviour, or purposeful, goal directed activity (intentional action). " - [Agency, _Wikipedia_](https://en.wikipedia.org/wiki/Agency_(philosophy)) 
 
@@ -84,7 +84,7 @@ There is significant [Agency Risk](Agency-Risk.md) in running software _at all_.
 
 [Agency Risk](Agency-Risk.md) applies to _whole teams_ too.  It's perfectly possible that a team within an organisation develops [Goals](Glossary.md#Goal-In-Mind) that don't align with those of the overall organisation.  For example:
 
- - A team introduces excessive [Bureaucracy](Process-Risk#bureaucracy-risk) in order to avoid work it doesn't like.
+ - A team introduces excessive [Bureaucracy](Process-Risk.md#bureaucracy-risk) in order to avoid work it doesn't like.
  - A team gets obsessed with a particular technology, or their own internal process improvement, at the expense of delivering business value.
  - A marginalised team forces their services on other teams in the name of "consistency".   (This can happen a lot with "Architecture", "Branding" and "Testing" teams, sometimes for the better, sometimes for the worse.)
 
@@ -140,7 +140,7 @@ So, if you can _align the goals_ of the agents involved, you can mitigate [Agenc
 
 > "Which brings us to the largest fragilizer of society, and greatest generator of crises, absence of 'skin in the game.' Some become antifragile at the expense of others by getting the upside (or gains) from volatility, variations, and disorder and exposing others to the downside risks of losses or harm." - [Nassim Nicholas Taleb, _Antifragile_](http://a.co/d/07LfBTI)
 
-This kind of financial exposure isn't very common on software projects.  [Fixed Price Contracts](One-Size-Fits-No-One#waterfall) and [Employee Stock Options](https://en.wikipedia.org/wiki/Employee_stock_option) are two exceptions.  But  David McClelland's Needs Theory suggests that there are other kinds of skin-in-the-game: the intrinsic interest in the work being done, or extrinsic factors such as the recognition, achievement, or personal growth derived from it.   
+This kind of financial exposure isn't very common on software projects.  [Fixed Price Contracts](One-Size-Fits-No-One.md#waterfall) and [Employee Stock Options](https://en.wikipedia.org/wiki/Employee_stock_option) are two exceptions.  But  David McClelland's Needs Theory suggests that there are other kinds of skin-in-the-game: the intrinsic interest in the work being done, or extrinsic factors such as the recognition, achievement, or personal growth derived from it.   
 
 > "Need theory... proposed by psychologist David McClelland, is a motivational model that attempts to explain how the needs for achievement, power, and affiliation affect the actions of people from a managerial context... McClelland stated that we all have these three types of motivation regardless of age, sex, race, or culture. The type of motivation by which each individual is driven derives from their life experiences and the opinions of their culture. " - [Need Theory, _Wikipedia_](https://en.wikipedia.org/wiki/Need_theory)
 
@@ -148,7 +148,7 @@ So one mitigation for [Agency Risk](Agency-Risk.md) is therefore to employ these
 
 > "One key to success in a mission is establishing clear lines of blame." - [Henshaw's Law, _Akin's Laws Of Spacecraft Design_](https://spacecraft.ssl.umd.edu/akins_laws.html)
 
-But _extrinsic motivation_ is a complex, difficult-to-apply tool.  In [Map And Territory Risk](Map-And-Territory-Risk) we will come back to this and look at the various ways in which it can go awry.
+But _extrinsic motivation_ is a complex, difficult-to-apply tool.  In [Map And Territory Risk](Map-And-Territory-Risk.md) we will come back to this and look at the various ways in which it can go awry.
 
 ![Collective Code Ownership, Individual Responsibility](images/generated/risks/agency/cco.png)
 
