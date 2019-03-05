@@ -34,13 +34,13 @@ _Not_ launching an online service _avoids_ the [Operational Risk](Operational-Ri
 
 **Transferring** risk means _making it someone else's problem_.  For example, when I buy home insurance, the personal consequence of my house burning down is reduced.  It hasn't gone away completely, but at least the financial element of it is handled by the insurance company.
 
-In part 2, we'll see how **Transfer** of risk is an essential feature of [Software-as-a-Service (SaaS)](Software-Dependency-Risk).  Inside organisations, **Transfer** of risk can become a political game:
+In part 2, we'll see how **Transfer** of risk is an essential feature of [Software-as-a-Service (SaaS)](Software-Dependency-Risk.md).  Inside organisations, **Transfer** of risk can become a political game:
 
 > "... ownership results in ‘one throat to choke’ for audit functions [and] from ownership comes responsibility. A lot of the political footwork in an enterprise revolves around trying to not own technologies. Who wants to be responsible for Java usage across a technology function of dozens of thousands of staff, any of whom might be doing crazy stuff? You first, mate. " - [Why Are Enterprises So Slow?, _zwischenzugs.com_](https://zwischenzugs.com/2018/10/02/why-are-enterprises-so-slow/)
 
 ## Ignore / Accept
 
-**Accepting** risk is to deal with it when it arises.   One example is the [Key Person Risk](Scarcity-Risk#staff-risk) involved in having a super-star programmer on the team.  Although there would be fallout if they left, they are often mitigating more risk than they cause.  
+**Accepting** risk is to deal with it when it arises.   One example is the [Key Person Risk](Scarcity-Risk.md#staff-risk) involved in having a super-star programmer on the team.  Although there would be fallout if they left, they are often mitigating more risk than they cause.  
 
 Another example is using particular software dependencies:   building a mobile application which requires a Facebook account to log in might give rise to the risk that people without Facebook accounts can't log in, but might simplify the software to such an extent that it's worthwhile.
 
@@ -69,7 +69,7 @@ Sometimes risks just go away on their own.  [Learned Helplessness](https://en.wi
 
 Whenever a project-manager builds slack into a project plan, this is **Containment**.   "Time-Boxing" is also containment: this is where you give a piece of work a week (say) to prove itself.  If it can't be done in this time, we move on and try a different approach.
 
-In the section on [Schedule Risk](Scarcity-Risk#schedule-risk) we are going to look in detail at how this works. 
+In the section on [Schedule Risk](Scarcity-Risk.md#schedule-risk) we are going to look in detail at how this works. 
 
 ## Exploit
 
@@ -90,8 +90,6 @@ Let's look at the journey so far.
  - Then, generalizing the lessons of the Development Process article, we examined the idea that [Meeting Reality](Meeting-Reality.md) frequently helps flush out [Hidden Risks](Glossary.md#hidden-risk) and improve your [Internal Model](Glossary.md#Internal-Model).
  
  - In [Just Risk](Just-Risk.md) we took a leap of faith: could _everything_ we do just be risk management?  And we looked at the RAID log and thought that maybe it could be.   
- 
- - Next, in [A Software Project Scenario](Software-Project-Scenario) we looked at how you could treat the project-as-a-whole as a risk management exercise, and treat the goals from one day to the next as activities to manage risk.
  
  - [Evaluating Risk](Evaluating-Risk.md) was an aside, looking at some terminology and the useful concept of a Risk Register.
  

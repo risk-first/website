@@ -5,9 +5,9 @@
 
 ## Dead-End Risk and Boundary Risk
 
-When you choose something to depend on, you can't be certain that it's going to work out in your favour.  Sometimes, the path from your starting point to your goal on the [Risk Landscape](Risk-Landscape) will take you to dead ends:  places where the only way towards your destination is to lose something, and do it again another way.  This is [Dead End Risk](Complexity-Risk.md#Dead-End-Risk), which we looked at before. 
+When you choose something to depend on, you can't be certain that it's going to work out in your favour.  Sometimes, the path from your starting point to your goal on the [Risk Landscape](Risk-Landscape.md) will take you to dead ends:  places where the only way towards your destination is to lose something, and do it again another way.  This is [Dead End Risk](Complexity-Risk.md#Dead-End-Risk), which we looked at before. 
 
-[Boundary Risk](Boundary-Risk) is another feature of the [Risk Landscape](Risk-Landscape):  when you make a decision to use one dependency over another, you are picking a path on the risk landscape that _precludes_ other choices.  After all, there's not really much cost in a [Dead End](Complexity-Risk.md#Dead-End-Risk) if you've not had to follow a path to get to it.  
+[Boundary Risk](Boundary-Risk) is another feature of the [Risk Landscape](Risk-Landscape.md):  when you make a decision to use one dependency over another, you are picking a path on the risk landscape that _precludes_ other choices.  After all, there's not really much cost in a [Dead End](Complexity-Risk.md#Dead-End-Risk) if you've not had to follow a path to get to it.  
 
 We're also going to look at [Boundary Risk](Boundary-Risk) in more detail later, but I want to introduce it here. Here are some examples:
  

@@ -68,7 +68,7 @@ In marketing terms, minimising [Feature Access Risk](#feature-access-risk) is al
 
 ## Market Risk
 
-[Feature Access Risk](#feature-access-risk) is related to [Market Risk](Feature-Risk.md#market-risk), which I introduced in the [Risk Landscape](Risk-Landscape) section as being the value that the market places on a particular asset.  <!-- tweet-end -->
+[Feature Access Risk](#feature-access-risk) is related to [Market Risk](Feature-Risk.md#market-risk), which I introduced in the [Risk Landscape](Risk-Landscape.md) section as being the value that the market places on a particular asset.  <!-- tweet-end -->
 
 ![Market Risk](images/generated/risks/feature/market-risk.png) 
 

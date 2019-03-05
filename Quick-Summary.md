@@ -55,7 +55,7 @@ If we accept the assertion that _all_ the actions we take on a project are about
 
 For example:
 
- - If we do a [Code Review](Review), we are partly trying to minimise the risks of bugs slipping through into production, and also manage the [Key Person Risk](Scarcity-Risk#staff-risk) of knowledge not being widely-enough shared. 
+ - If we do a [Code Review](Review), we are partly trying to minimise the risks of bugs slipping through into production, and also manage the [Key Person Risk](Scarcity-Risk.md#staff-risk) of knowledge not being widely-enough shared. 
  - If we write [Unit Tests](Testing), we’re addressing the risk of bugs going to production, but we’re also mitigating against the risk of _regression_, and future changes breaking our existing functionality.   
  - If we enter into a [contract with a supplier](Contract), we are mitigating the risk of the supplier vanishing and leaving us exposed.  With the contract in place, we have legal recourse against this risk.
 
@@ -83,7 +83,7 @@ We have described a model of risk within software projects, looking something li
 
 How do we take this further?
 
-One idea explored is the _[Risk Landscape](Risk-Landscape)_:  although the software team can't remove risk from their project, they can take actions that move them to a place in the [Risk Landscape](Risk-Landscape) where the risks on the project are more favourable than where they started.  
+One idea explored is the _[Risk Landscape](Risk-Landscape.md)_:  although the software team can't remove risk from their project, they can take actions that move them to a place in the [Risk Landscape](Risk-Landscape.md) where the risks on the project are more favourable than where they started.  
 
 From there, we examine basic risk archetypes you will encounter on the software project, to build up a [vocabulary of Software Risk](Staging-And-Classifying), and look at which specific tools you can use to mitigate each kind of risk.  
 

@@ -15,7 +15,7 @@ There is a lot to this subject, so this section is just a taster: we're going to
 
 When building software, it's tempting to take a very narrow view of the dependencies of a system, but [Operational Risks](Operational-Risk.md) are often caused by dependencies we _don't_ consider - i.e. the **Operational Context** within which the system is operating.<!-- tweet-end -->  Here are some examples:  
 
- - **[Staff Risks](Scarcity-Risk#staff-risk)**: 
+ - **[Staff Risks](Scarcity-Risk.md#staff-risk)**: 
    - Freak weather conditions affecting ability of staff to get to work, interrupting the development and support teams. 
    - Reputational damage caused when staff are rude to the customers.
  
@@ -29,7 +29,7 @@ When building software, it's tempting to take a very narrow view of the dependen
    - Insufficient controls which means you don't notice when some transactions are failing, leaving you out-of-pocket.
    - Data loss because of bugs introduced during an untested release.
  
- - **[Software Dependency Risk](Software-Dependency-Risk)**:
+ - **[Software Dependency Risk](Software-Dependency-Risk.md)**:
    - Hackers exploit weaknesses in a piece of 3rd party software, bringing your service down.
  
  - **[Agency Risk](Agency-Risk.md)**:
@@ -90,7 +90,7 @@ There are plenty of [Hidden Risks](Glossary.md#hidden-risk) within the operation
 
 - **Environmental Scanning** is all about trying to determine which changes in the environment are going to impact your operation.   Here we are trying to determine the level of [Dependency Risk](Dependency-Risk.md) we face for external dependencies, such as suppliers, customers, markets and regulation.  Tools like [PEST](https://en.wikipedia.org/wiki/PEST_analysis) are relevant, as is 
 - **[Penetration Testing](https://en.wikipedia.org/wiki/Penetration_test)**: looking for security weaknesses within the operation.  See [OWASP](https://en.wikipedia.org/wiki/OWASP) for examples.
-- **[Vulnerability Management](https://en.wikipedia.org/wiki/Vulnerability_management)** is about keeping up-to-date with vulnerabilities in [Software Dependencies](Software-Dependency-Risk).
+- **[Vulnerability Management](https://en.wikipedia.org/wiki/Vulnerability_management)** is about keeping up-to-date with vulnerabilities in [Software Dependencies](Software-Dependency-Risk.md).
 
 ## Planning
 
@@ -104,7 +104,7 @@ As the diagram above shows, we can bring [Planning](#planning) to bear on depend
 
 ![Design and Change Activities](images/generated/risks/operational/design-change.png)
 
-Since our operation exists in a world of risks like [Red Queen Risk](Scarcity-Risk#red-queen-risk) and [Feature Drift Risk](Feature-Risk.md#feature-drift-risk), we would expect that the output of our [Planning](#planning) actions would result in changes to our operation.  
+Since our operation exists in a world of risks like [Red Queen Risk](Scarcity-Risk.md#red-queen-risk) and [Feature Drift Risk](Feature-Risk.md#feature-drift-risk), we would expect that the output of our [Planning](#planning) actions would result in changes to our operation.  
 
 While _planning_ is a day-to-day operational feedback loop, _design_ is a longer feedback loop changing not just the parameters of the operation, but the operation itself.
 
@@ -125,7 +125,7 @@ So there is a tension between "you only get one chance to make a first impressio
 
 A Risk-First re-framing of this (as shown in the diagram above) might be the balance between:
 
-- The perceived [Scarcity Risks](Scarcity-Risk) (such as funding, time available, etc) of staying in development (pressure to ship).
+- The perceived [Scarcity Risks](Scarcity-Risk.md) (such as funding, time available, etc) of staying in development (pressure to ship).
 - The perceived [Trust & Belief Risk](Communication-Risk.md#trust--belief-risk), [Feature Risk](Feature-Risk.md) and [Operational Risk](Operational-Risk.md) of going to production (pressure to improve).
 
 The "should we ship?" decision is therefore a complex one.  In [Meeting Reality](Meeting-Reality.md), we discussed that it's better to do this "sooner, more frequently, in smaller chunks and with feedback".  We can meet [Operational Risk](Operational-Risk.md) _on our own terms_ by doing so: 

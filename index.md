@@ -37,7 +37,7 @@ Although this is a collaborative Github project, it's not meant to be an open-en
 
 ### Print Version
 
-[About _The Menagerie_](The-Menagerie)
+[About _The Menagerie_](The-Menagerie.md)
 
 ## Table of Contents
 
@@ -55,18 +55,18 @@ Some easy-to-digest ideas that will set the scene for examining the practices la
  - [A Conversation](A-Conversation.md)
  - [One Size Fits No One](One-Size-Fits-No-One.md)
  
-### Part 2: [The Risk Landscape](Risk-Landscape)
+### Part 2: [The Risk Landscape](Risk-Landscape.md)
 
 Risks are often very similar across different software projects.   And, if you know about them, you can look for them.  This section attempts to break them down for you:
 
- - [The Risk Landscape](Risk-Landscape)
+ - [The Risk Landscape](Risk-Landscape.md)
  - [Feature Risk](Feature-Risk.md)
  - [Communication Risk](Communication-Risk.md)
  - [Complexity Risk](Complexity-Risk.md)
  - [Dependency Risk](Dependency-Risk.md)
- - [Scarcity Risk](Scarcity-Risk)
+ - [Scarcity Risk](Scarcity-Risk.md)
  - [Deadline Risk](Deadline-Risk)
- - [Software Dependency Risk](Software-Dependency-Risk)
+ - [Software Dependency Risk](Software-Dependency-Risk.md)
  - [Process Risk](Process-Risk.md)
  - [Boundary Risk](Boundary-Risk)
  - [Agency Risk](Agency-Risk.md) 
@@ -122,7 +122,7 @@ A more light-hearted collection of blog posts related to the software developmen
  - Minimizing The Downside
  - [Issue Tracking](Issue-Tracking)
  - Surfacing Risks
- - [Silver Bullets](Silver-Bullets)
+ - [Silver Bullets](Silver-Bullets.md)
  - [Stories Of Failure](Stories-Of-Failure)
 
 ### Glossary Of Terms

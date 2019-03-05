@@ -14,9 +14,9 @@ Dependencies can be on _events_, _people_, _teams_, _work_, _processes_, _softwa
 In order to avoid repetition, and also to break down this large topic, we're going to look at this over 7 sections:   
 
  - This first section will look at dependencies _in general_, and some of the variations of [Dependency Risk](Dependency-Risk.md).
- - Next, we'll look at [Scarcity Risk](Scarcity-Risk), because time, money and staff are scarce resources in every project.
+ - Next, we'll look at [Scarcity Risk](Scarcity-Risk.md), because time, money and staff are scarce resources in every project.
  - We'll cover [Deadline Risk](Deadline-Risk), and discuss the purpose of Events and Deadlines, and how they enable us to coordinate around dependency use.
- - Then, we'll move on to look specifically at [Software Dependency Risk](Software-Dependency-Risk), covering using libraries, software services and building on top of the work of others.
+ - Then, we'll move on to look specifically at [Software Dependency Risk](Software-Dependency-Risk.md), covering using libraries, software services and building on top of the work of others.
  - Then, we'll take a look at [Process Risk](Process-Risk.md), which is still [Dependency Risk](Dependency-Risk.md), but we'll be considering more organisational factors and how bureaucracy comes into the picture.
  - After that, we'll take a closer look at [Boundary Risk](Boundary-Risk) and [Dead-End Risk](Complexity-Risk.md#dead-end-risk).  These are the risks you face in making choices about what to depend on.
  - Finally, we'll wrap up this analysis with a look at some of the specific problems around depending on other people or businesses in [Agency Risk](Agency-Risk.md).
@@ -76,7 +76,7 @@ This kind of stuff is encapsulated in the science of [Reliability Engineering](h
 
 This was applied on NASA missions, and then in the 1970's to car design following the [Ford Pinto exploding car](https://en.wikipedia.org/wiki/Ford_Pinto#Design_flaws_and_ensuing_lawsuits) affair.  But establishing the reliability of software dependencies like this would be _hard_ and _expensive_.  We are more likely to mitigate [Reliability Risk](#reliability-risk) in software using _testing_, _redundancy_ and _reserves_, as shown in the diagram above.  
 
-Additionally, we often rely on _proxies for reliability_.  We'll look at these proxies (and the way in which software projects signal their reliability) in much more detail in the section on [Software Dependency Risk](Software-Dependency-Risk).
+Additionally, we often rely on _proxies for reliability_.  We'll look at these proxies (and the way in which software projects signal their reliability) in much more detail in the section on [Software Dependency Risk](Software-Dependency-Risk.md).
 
 ## Invisibility Risk
 
@@ -104,7 +104,7 @@ Arguably, managing [Dependency Risk](Dependency-Risk.md) is _what Project Manage
 
 There are some tools for managing dependency risk:  [Gantt Charts](https://en.wikipedia.org/wiki/Gantt_chart) for example, arrange work according to the capacity of the resources (i.e. dependencies) available, but also the _dependencies between the tasks_.   If task **B** requires the outputs of task **A**, then clearly task **A** comes first and task **B** starts after it finishes.  We'll look at this more in [Process Risk](Process-Risk.md). 
 
-We'll look in more detail at project management in Part 3, later.   But now, let's get into specifics with [Scarcity Risk](Scarcity-Risk).
+We'll look in more detail at project management in Part 3, later.   But now, let's get into specifics with [Scarcity Risk](Scarcity-Risk.md).
 
 
 

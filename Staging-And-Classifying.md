@@ -17,13 +17,13 @@ As we said [at the start](A-Pattern-Language.md), Risk-First is all about develo
 
 ![Periodic Table of Risks](images/generated/staging-and-classifying/periodic-table-large.png)
 
-The diagram above compiles all of the risks we've seen so far on our tour across the [Risk Landscape](Risk-Landscape).  Just like a periodic table, there are perhaps others left to discover.   _Unlike_ a periodic table, these risks are not completely distinct: they mix like paint and blend into one another.  
+The diagram above compiles all of the risks we've seen so far on our tour across the [Risk Landscape](Risk-Landscape.md).  Just like a periodic table, there are perhaps others left to discover.   _Unlike_ a periodic table, these risks are not completely distinct: they mix like paint and blend into one another.  
 
 If you've been reading closely, you'll notice that a number of themes come up again and again within the different sections.   It's time to look at the _patterns within the patterns_. 
 
 ## The Power Of Abstractions
 
-[Abstraction](Glossary.md#abstraction) appears as a concept continually: in [Communication Risk](Communication-Risk.md), [Complexity Metrics](Complexity-Risk.md#kolmogorov-complexity), [Map and Territory Risk](Map-And-Territory-Risk.md) or how it causes [Boundary Risk](Boundary-Risk).  We've looked at some complicated examples of abstractions, such as [network protocols](Communication-Risk.md#protocols), [dependencies on technology](Software-Dependency-Risk#software-tools) or [Business Processes](Process-Risk.md#the-purpose-of-process).
+[Abstraction](Glossary.md#abstraction) appears as a concept continually: in [Communication Risk](Communication-Risk.md), [Complexity Metrics](Complexity-Risk.md#kolmogorov-complexity), [Map and Territory Risk](Map-And-Territory-Risk.md) or how it causes [Boundary Risk](Boundary-Risk).  We've looked at some complicated examples of abstractions, such as [network protocols](Communication-Risk.md#protocols), [dependencies on technology](Software-Dependency-Risk.md#software-tools) or [Business Processes](Process-Risk.md#the-purpose-of-process).
 
 Let's now _generalize_ what is happening with abstraction.  To do this, we'll consider the simplest example of abstraction:  _naming a pattern_ of behaviour we see in the real world, such as "Binge Watching" or "Remote Working", or naming a category of insects as "Beetles".
 
@@ -36,7 +36,7 @@ As shown in the above diagram, _using an abstraction you already know_ means:
  - **Mitigating [Feature Risk](Feature-Risk.md)**: because the abstraction is providing you with something _useful_.  For example, using the word "London" allows you to refer to a whole (but slightly non-specific) geographic area.
  - **Accepting [Communication Risk](Communication-Risk.md)**: because if you are using the abstraction in conversation the people you are using it with _need to understand it too_.
  - **Accepting [Map and Territory Risk](Map-And-Territory-Risk.md)**: because the abstraction is a simplification and not the actual thing itself.
- - **Living with [Dependency Risks](Dependency-Risk.md)**:  we depend on a word in our language (or a function in our library, or a service on the Internet).  But words are [unreliable](Dependency-Risk.md#reliability-risk).  Language _changes_ and _evolves_, and the words you are using now might not always mean what you want them to mean.  (Software too changes and evolves:  We've seen this in [Red Queen Risk](Scarcity-Risk#red-queen-risk) and [Feature Drift Risk](Feature-Risk.md#feature-drift-risk).)
+ - **Living with [Dependency Risks](Dependency-Risk.md)**:  we depend on a word in our language (or a function in our library, or a service on the Internet).  But words are [unreliable](Dependency-Risk.md#reliability-risk).  Language _changes_ and _evolves_, and the words you are using now might not always mean what you want them to mean.  (Software too changes and evolves:  We've seen this in [Red Queen Risk](Scarcity-Risk.md#red-queen-risk) and [Feature Drift Risk](Feature-Risk.md#feature-drift-risk).)
  
 ### Inventing A New Abstraction  
 
@@ -75,7 +75,7 @@ As shown in the diagram above, relationships of features/dependencies are the ba
 
 ## The Work Continues
 
-On this journey around the [Risk Landscape](Risk-Landscape) we've collected a (hopefully) good, representative sample of [Risks](Glossary.md#Risk) and where to find them. But there are more out there.   How many of these have you seen on your projects?  What is missing?  What is wrong?
+On this journey around the [Risk Landscape](Risk-Landscape.md) we've collected a (hopefully) good, representative sample of [Risks](Glossary.md#Risk) and where to find them. But there are more out there.   How many of these have you seen on your projects?  What is missing?  What is wrong?
 
 Please help by reporting back what you find.
 

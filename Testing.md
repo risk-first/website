@@ -68,7 +68,7 @@ For example, ensuring the UI "looks ok and doesn't glitch" is entirely _subjecti
 
 Since manual tests carry much higher per-use cost to run, there is a tendency to want to save this cost by doing _fewer releases_.  After all, fewer releases means less manual testing, but this may increase [Process Risk](Process-Risk.md).
 
-How do you decide whether to keep a test manual, or automate?  The more _automated_ a test is, the more cheaply it can be re-used.  However, the process of automation can take longer, and so adds [Schedule Risk](Scarcity-Risk#schedule-risk).  Whether or not it's worth automating is to some extend going to depend on how much you [value future time](Evaluating-Risk.md).
+How do you decide whether to keep a test manual, or automate?  The more _automated_ a test is, the more cheaply it can be re-used.  However, the process of automation can take longer, and so adds [Schedule Risk](Scarcity-Risk.md#schedule-risk).  Whether or not it's worth automating is to some extend going to depend on how much you [value future time](Evaluating-Risk.md).
 
 ### White-Box and Black-Box Testing
 
@@ -91,7 +91,7 @@ Finally, since manual tests are run by people (who are comparatively slow and co
 
 ### Testing Team
 
-Sometimes, testing is handled by external teams (possibly in other locales).  This is often done as a [cost-saving measure](Scarcity-Risk#schedule-risk), but comes with some penalties such as:
+Sometimes, testing is handled by external teams (possibly in other locales).  This is often done as a [cost-saving measure](Scarcity-Risk.md#schedule-risk), but comes with some penalties such as:
  - Increased [Bureacratic Risk](Bureaucratic-Risk) in terms of having to engage with an external company.
  - [Agency Risk](Agency-Risk.md) because the testing team are a _business in their own right_, who might be more interested in the goal of making money from you than shipping your product.
  - Obvious [Coordination Risk](Coordination-Risk.md) in trying to arrange work in other teams, buildings, timezones or countries, and not having control on exactly which staff are dealing with your product.
