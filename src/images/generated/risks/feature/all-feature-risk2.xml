@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-113" name="Goal In Mind" style="kite9-min-width: 800pt;">
+
+    <artifact id="pr">
+      Delivered
+      Product
+    </artifact>
+    <artifact id="ex">Client
+    Expectation</artifact>
+    
+    <context style="kite9-sizing: minimize; kite9-layout: horizontal; ">
+      <risk class="regression" id="pr2" />
+      <arrow id="pr1" />
+      <arrow id="ex1" />
+      <risk class="feature-drift" id="ex2" />
+      <label  id="id_16">
+      <text>Evolution Risks</text>
+      <symbols />
+      </label>
+    </context>
+    
+    <link class="dotted"  drawDirection="DOWN"><from reference="pr" /><to reference="pr1" /></link>
+    <link class="dotted"  drawDirection="DOWN"><from reference="ex" /><to reference="ex1" /></link>
+
+    <link drawDirection="RIGHT" class="invisible">
+      <from reference="ex"/>
+      <to reference="pr" />
+    </link>
+
+    <link drawDirection="RIGHT">
+      <from reference="pr1" />
+      <to reference="pr2" class="arrow" />
+    </link>
+
+    <link drawDirection="LEFT">
+      <from reference="ex1" />
+      <to reference="ex2" class="arrow" />
+    </link>
+
+  </diagram>
+</svg:svg>

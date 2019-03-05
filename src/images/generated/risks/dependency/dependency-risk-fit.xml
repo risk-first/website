@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-113" name="Goal In Mind">
+
+    <group style="kite9-horizontal-align: center; kite9-sizing: minimize;">
+
+
+      <glyph style="kite9-min-size: 200pt 50pt; " id="1" >
+        <label >Perfect Bus</label>
+      </glyph>
+
+      <glyph style="kite9-min-size: 200pt  50pt ; " id="2">
+        <stereotype>Feature Fit Risk</stereotype>
+        <label>Not Leaving at exactly 
+        the time you want
+        </label>
+      </glyph>
+
+      <glyph style="kite9-min-size: 200pt 50pt; " id="3">
+        <stereotype>Conceptual Integrity Risk</stereotype>
+        <label>Stopping at too many places
+        </label>
+      </glyph>
+
+      <glyph  style="kite9-min-size: 200pt 50pt; " id="4">
+        <stereotype>Conceptual Integrity Risk
+          Feature Fit Risk
+        </stereotype>
+
+        <label style="kite9-minimum-width: 250pt; "> Real Bus</label>
+      </glyph>
+      </group>
+
+      <link>
+        <from reference="1" />
+        <to reference="2" class="arrow" />
+      </link>
+
+      <link>
+        <from reference="2" />
+        <to reference="4" class="arrow" />
+      </link>
+
+      <link>
+        <from reference="1" />
+        <to reference="3" class="arrow" />
+      </link>
+
+      <link>
+        <from reference="3" />
+        <to reference="4" class="arrow" />
+      </link>
+
+
+  </diagram>
+</svg:svg>

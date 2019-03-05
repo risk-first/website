@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-113" name="Goal In Mind" style="kite9-min-width: 800pt;">
+
+    <context id="c" bordered="true" style="kite9-layout: right; ">
+
+      <risk id="r1" class="complexity" />
+
+      <group style="kite9-layout: down">
+        <risk id="r2" class="dead-end" />
+
+        <description>The risk that a particular approach to a change will fail. Caused by the fact that at some level, our internal models are not a
+          complete reflection of reality.</description>
+
+      </group>
+      <label id="id_16">
+        <text>Internal Model</text>
+        <symbols />
+      </label>
+    </context>
+
+    <group style="kite9-layout: down; kite9-horizontal-align: left;">
+      <action>Backups</action>
+      <action>Versioning</action>
+      <action>Source Control</action>
+    </group>
+
+    <context id="d">
+
+      <risk class="complexity" />
+      <risk class="schedule" />
+
+      <label id="id_16">
+        <text>Attendant Risks</text>
+        <symbols />
+      </label>
+    </context>
+
+    <link>
+      <from reference="r1" />
+      <to reference="r2" class="arrow" />
+    </link>
+
+  </diagram>
+</svg:svg>
