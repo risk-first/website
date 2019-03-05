@@ -232,13 +232,13 @@ Let's expand this view slightly and look at where different pieces of software s
 
 So far we've looked at different _approaches_ to software dependencies and the risk profiles they present.  But the category is less important than the specifics:  we are choosing _specific tools for specific tasks_.  [Software Dependencies](Software-Dependency-Risk) allows us to construct dependency networks to give us all kinds of features and mitigate all kinds of risk.  That is, the features we are looking for in a dependency _are to mitigate some kind of risk_.
 
-For example, I might start using [WhatsApp](https://en.wikipedia.org/wiki/WhatsApp) because I want to be able to send my friends photos and text messages.  However, it's likely that those same features allow us to mitigate [Coordination Risk](Coordination-Risk) when we're next trying to meet up. 
+For example, I might start using [WhatsApp](https://en.wikipedia.org/wiki/WhatsApp) because I want to be able to send my friends photos and text messages.  However, it's likely that those same features allow us to mitigate [Coordination Risk](Coordination-Risk.md) when we're next trying to meet up. 
 
 Let's look at some more examples:
 
 |Risk                                                 |Software Mitigating That Risk                                             |
 |-----------------------------------------------------|------------------------------------------------------------------------- |
-|[Coordination Risk](Coordination-Risk)               |Calendar tools,  Bug Tracking, Distributed Databases                      |
+|[Coordination Risk](Coordination-Risk.md)               |Calendar tools,  Bug Tracking, Distributed Databases                      |
 |[Schedule-Risk](Scarcity-Risk#schedule-risk)         |Planning Software, Project Management Software                            |
 |[Communication-Risk](Communication-Risk.md)             |Email, Chat tools, CRM tools like SalesForce, Forums, Twitter, Protocols  |
 |[Process-Risk](Process-Risk)                         |Reporting tools, online forms, process tracking tools                     |

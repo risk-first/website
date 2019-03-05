@@ -36,7 +36,7 @@ Also, when Waterfall was originally conceived, automated testing techniques were
 
 But, while _in principle_, Waterfall aims to _contain_ the cost of implementation.  However, in practice, because of [Requirements Drift](Feature-Risk), [Student Syndrome](Scarcity-Risk#schedule-risk) and [Complexity Risk](Complexity-Risk.md), the schedules get more inaccurate the larger the project.
 
-### 2.  [Lots Of Stakeholders](Coordination-Risk)
+### 2.  [Lots Of Stakeholders](Coordination-Risk.md)
 
 In any construction project, there are likely to be lots of stakeholders - landowners, neighbours, government, clients and so on.   
 

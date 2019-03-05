@@ -26,7 +26,7 @@ Let's look at some common strategies for De-Risking.
 
 **Avoiding** risk, means taking a route on the [Risk Landscape](Glossary#risk-landscape) _around_ the risk.  For example, if you are working in a team which has no experience of relational databases, then _storing data in files_ might be a way to avoid the [Learning Curve Risk](Communication-Risk.md#learning-curve-risk) associated with this technology.  
 
-Of course, you may pick up other, more serious [Attendant Risks](Glossary#attendant-risk) as a result: Relational Databases are software solutions to many kinds of [Coordination Risk](Coordination-Risk) problem.
+Of course, you may pick up other, more serious [Attendant Risks](Glossary#attendant-risk) as a result: Relational Databases are software solutions to many kinds of [Coordination Risk](Coordination-Risk.md) problem.
 
 _Not_ launching an online service _avoids_ the [Operational Risk](Operational-Risk) involved in running one.  Although you avoid the upsides too.
 
@@ -85,7 +85,7 @@ Let's look at the journey so far.
 
  - In [A Simple Scenario](A-Simple-Scenario.md) we looked at how risk pervades every goal we have in life, big or small.  We saw that risk stems from the fact that our [Internal Model](Glossary#Internal-Model) of the world couldn't capture everything about reality, and so some things were down to chance.  
  
- - In the [Development Process](Development-Process) we looked at how common software engineering conventions like Unit Testing, User Acceptance Testing and Integration could help us manage the risk of taking an idea to production, by _gradually_ introducing it to reality in stages.
+ - In the [Development Process](Development-Process.md) we looked at how common software engineering conventions like Unit Testing, User Acceptance Testing and Integration could help us manage the risk of taking an idea to production, by _gradually_ introducing it to reality in stages.
 
  - Then, generalizing the lessons of the Development Process article, we examined the idea that [Meeting Reality](Meeting-Reality) frequently helps flush out [Hidden Risks](Glossary#hidden-risk) and improve your [Internal Model](Glossary#Internal-Model).
  

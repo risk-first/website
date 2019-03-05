@@ -7,7 +7,7 @@ description: An argument that all tasks in software development are focused on m
 
 In this section, I am going to propose the idea that everything you do on a software project is Risk Management.
 
-In the [Development Process](Development-Process) section, we observed that all the activities in a simple methodology had a part to play in exposing different risks.  They worked to manage risk prior to them creating bigger problems in production.
+In the [Development Process](Development-Process.md) section, we observed that all the activities in a simple methodology had a part to play in exposing different risks.  They worked to manage risk prior to them creating bigger problems in production.
 
 Here, we'll look at one of the tools in the Project Manager's tool-box, the [RAID Log](http://pmtips.net/blog-new/raid-logs-introduction), and observe how risk-centric it is.
 
@@ -35,7 +35,7 @@ This _hints_ at the fact that at some level it's all about risk:
 The reason you are _taking_ an action is to mitigate a risk.  For example: 
 
  - If you're coding up new features in the software, this is mitigating [Feature Risk](Feature-Risk) (which we'll explore in more detail later).  
- - If you're getting a business sign-off for something, this is mitigating the risk of everyone not agreeing on a course of action (a [Coordination Risk](Coordination-Risk)).  
+ - If you're getting a business sign-off for something, this is mitigating the risk of everyone not agreeing on a course of action (a [Coordination Risk](Coordination-Risk.md)).  
  - If you're writing a specification, then that's mitigating the type of "Incorrect Implementation Risk" we saw in the last section. 
 
 ## Every Action Has Attendant Risk
@@ -45,7 +45,7 @@ The reason you are _taking_ an action is to mitigate a risk.  For example:
 - Will it lead to yet more actions?
 - What [Hidden Risk](Glossary#hidden-risk) will it uncover?
 
-Consider _coding a feature_ (as we did in the earlier [Development Process](Development-Process) section).  We saw here how the whole process of coding was an exercise in learning what we didn't know about the world, uncovering problems and improving our [Internal Model](Glossary#Internal-Model).  That is, flushing out the [Attendant Risk](Glossary#attendant-risk) of the [Goal In Mind](Glossary#Goal-In-Mind).
+Consider _coding a feature_ (as we did in the earlier [Development Process](Development-Process.md) section).  We saw here how the whole process of coding was an exercise in learning what we didn't know about the world, uncovering problems and improving our [Internal Model](Glossary#Internal-Model).  That is, flushing out the [Attendant Risk](Glossary#attendant-risk) of the [Goal In Mind](Glossary#Goal-In-Mind).
 
 And, as we saw in the [Introduction](A-Simple-Scenario.md), even something _mundane_ like the Dinner Party had risks. 
 

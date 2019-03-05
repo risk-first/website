@@ -19,7 +19,7 @@ In the first example, you can't _start_ something until a particular event happe
 Having an event occur in a fixed time and place is [mitigating risk](Glossary#Mitigated-Risk):
 
 - By taking the bus, we are mitigating our own [Schedule Risk](Scarcity-Risk#schedule-risk):  we're (hopefully) reducing the amount of time we're going to spend on the activity of getting to work.  It's not entirely necessary to even take the bus:  you could walk, or go by another form of transport.  But, effectively, this just swaps one dependency for another:  if you walk, this might well take longer and use more energy, so you're just picking up [Schedule Risk](Scarcity-Risk#schedule-risk) in another way.
-- Events are a mitigation for [Coordination Risk](Coordination-Risk): a bus needn't necessarily _have_ a fixed timetable. It could wait for each passenger until they turned up, and then go.  (A bit like ride-sharing works).  This would be a total disaster from a [Coordination Risk](Coordination-Risk) perspective, as one person could cause everyone else to be really really late.  
+- Events are a mitigation for [Coordination Risk](Coordination-Risk.md): a bus needn't necessarily _have_ a fixed timetable. It could wait for each passenger until they turned up, and then go.  (A bit like ride-sharing works).  This would be a total disaster from a [Coordination Risk](Coordination-Risk.md) perspective, as one person could cause everyone else to be really really late.  
 -  If you drive, you have a dependency on your car instead.  So, there is often an _opportunity cost_ with dependencies.  Using the bus might be a cheaper way to travel, so you're picking up less [Fuding Risk](Scarcity-Risk#funding-risk) by using it.
 
 ## But, Events Lead To Attendant Risk
@@ -30,7 +30,7 @@ By _deciding to use the bus_ we've [Taken Action](Glossary#Taking-Action).  By a
 
 As discussed above, _schedules_ (such as bus timetables) exist so that _two or more parties can coordinate_<!-- tweet-end -->, and [Deadline Risk](Deadline-Risk) is on _all_ of the parties.  While there's a risk I am late, there's also a risk the bus is late.  I might miss the start of a concert, or the band might keep everyone waiting.
 
-In software development, deadlines are set in order to _coordinate work between teams_.  For example, having a product ready in production at the same time as the marketing campaign starts.  Fixing on an agreed deadline mitigates inter-team [Coordination Risk](Coordination-Risk).
+In software development, deadlines are set in order to _coordinate work between teams_.  For example, having a product ready in production at the same time as the marketing campaign starts.  Fixing on an agreed deadline mitigates inter-team [Coordination Risk](Coordination-Risk.md).
 
 
 ## Slack

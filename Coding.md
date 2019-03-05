@@ -10,7 +10,7 @@ Often, this can be called "programming", "hacking" or "development", although th
 
 ## How It Works
 
-In [Development Process](Development-Process) we introduced the following diagram to show what is happening when we do some coding.  Let's generalize a bit from this diagram:
+In [Development Process](Development-Process.md) we introduced the following diagram to show what is happening when we do some coding.  Let's generalize a bit from this diagram:
 
 - We start with a [Goal In Mind](Glossary#Goal-In-Mind) to implement _something_.
 - We build an [Internal Model](Glossary#Internal-Model) of how we're going to meet this goal (though coding, naturally)
@@ -39,7 +39,7 @@ Since the focus of this site is on _software methodologies_, you shouldn't be su
 
 ### Building Features
 
-Most commonly, the reason we are **Coding** is same as the one in the [Development Process](Development-Process) page: we want to put features in the hands of our customers.   
+Most commonly, the reason we are **Coding** is same as the one in the [Development Process](Development-Process.md) page: we want to put features in the hands of our customers.   
 
 That is, we believe our clients don't have the features they need to see in the software, and we have [Feature Risk](Feature-Risk). 
 
@@ -88,13 +88,13 @@ The idea here is _again_ to minimize the length of the feedback loop, and focus 
 
 To give some idea of the [Conceptual Integrity Risk](Feature-Risk) involved, initially, the team were building a _tablet_ using the multi-touch technology that the iPhone introduced to the world, but pivoted towards the phones after the failure of the "Apple Phone" collaboration with Motorola.
 
-Scott Forstall picked a small, secret team from within the ranks of Apple.  By doing this, he mitigated [Communication Risk](Communication-Risk.md) and [Coordination Risk](Coordination-Risk) _within his team_, but having fewer people in the room meant more [Throughput Risk](Scarcity-Risk#schedule-risk).
+Scott Forstall picked a small, secret team from within the ranks of Apple.  By doing this, he mitigated [Communication Risk](Communication-Risk.md) and [Coordination Risk](Coordination-Risk.md) _within his team_, but having fewer people in the room meant more [Throughput Risk](Scarcity-Risk#schedule-risk).
 
 By having more people involved, the feedback loop will be longer than the two-man prototyping team, but that's the tradeoff you get for mitigating those other risks.
 
 ### Specialization
 
-One of the problems with a **SkunkWorks** approach is that you end up with more [Coordination Risk](Coordination-Risk) than you'd like, as your different skunk-teams end up with different [Internal Models](Glossary#Internal-Model) and different [Goals](Glossary#Goal-In-Mind).  
+One of the problems with a **SkunkWorks** approach is that you end up with more [Coordination Risk](Coordination-Risk.md) than you'd like, as your different skunk-teams end up with different [Internal Models](Glossary#Internal-Model) and different [Goals](Glossary#Goal-In-Mind).  
 
 In large companies, this is called [Silo Mentality](https://en.wikipedia.org/wiki/Information_silo) - the tendency for lines of business to stop communicating and sharing with one another.  As you can imagine, this leads to a more [Complex](Complexity-Risk.md) and [bureaucratic](Process-Risk#bureaucratic-risk) structure than would be optimal.
 
@@ -104,7 +104,7 @@ This is _perfectly normal_:  we _need_ people to have different opinions and poi
 
 The reason for this is explained again by the first diagram in this section:  the closer our [Internal Model](Glossary#Internal-Model) matches [Reality](Glossary#Meet-Reality), the fewer [Hidden Risks](Glossary#hidden-risk) we will meet, and the easier we'll have it.
 
-The downside of specialization is [Coordination Risk](Coordination-Risk):  
+The downside of specialization is [Coordination Risk](Coordination-Risk.md):  
  - If your payroll expert is off ill for a week, progress on that stops. 
  - Work is rarely evenly spread out amongst the different components of a project for long. 
  - If work temporarily dries up on a specific component, what do the component owners do in the meantime? 
@@ -112,22 +112,22 @@ The downside of specialization is [Coordination Risk](Coordination-Risk):
 
 ### Pair Programming / Mob Programming
 
-In the main, [Review](Review) is the main way to mitigate [Coordination Risk](Coordination-Risk). For example:
+In the main, [Review](Review) is the main way to mitigate [Coordination Risk](Coordination-Risk.md). For example:
  - [Code Reviews](Review)
  - [Stand Up Meetings](Review)
  - [Presentations & Demos](Review)
  - [Training](Review)
  
 **Pair Programming** however _combines_ the review with the process of coding: there are now two heads at each terminal.  What does this achieve?  
- - Clearly, we mitigate [Key-Man Risk](Coordination-Risk) as we've got two people doing every job.  
- - Knowledge is transferred at the same time, too, mitigating [Specialist Risk](Coordination-Risk).  
+ - Clearly, we mitigate [Key-Man Risk](Coordination-Risk.md) as we've got two people doing every job.  
+ - Knowledge is transferred at the same time, too, mitigating [Specialist Risk](Coordination-Risk.md).  
  - Proponents also argue that this mitigates [Complexity Risk](Complexity-Risk.md), as the software will be better quality.
  - Since the pair spend _so much time together_, the communication is very _high bandwidth_, so this mitigates [Communication Risk](Communication-Risk.md)
  
 But, conversely, there is a cost to **Pair Programming**:
  - Having two people doing the job _one person could do_ intimates [Schedule Risk](Scarcity-Risk#schedule-risk).
  - Could the same [Complexity Risk](Complexity-Risk.md) be mitigated just with more regular [Code Reviews](Review)?
- - Sometimes, asking members of a team to work so closely together is a recipe for disaster.  [Team Risk](Coordination-Risk)
+ - Sometimes, asking members of a team to work so closely together is a recipe for disaster.  [Team Risk](Coordination-Risk.md)
  - Not every pair programmer "shares" the keyboard time evenly, especially if ability levels aren't the same.
  - There is only one **Feedback loop**, so despite the fact you have two people, you can only [Meet Reality](Meeting-Reality) serially.  
    
@@ -135,13 +135,13 @@ But, conversely, there is a cost to **Pair Programming**:
  
 ### Offshoring / Remote Teams
 
-**Pairing** and **Mobbing** as mitigations to [Coordination Risk](Coordination-Risk) are easiest when developers are together in the same room.  But it doesn't always work out like this.   Teams spread in different locations and timezones naturally don't have the same [communication bandwidth](Communication-Risk.md) and you _will_ have more issues with [Coordination Risk](Coordination-Risk).  
+**Pairing** and **Mobbing** as mitigations to [Coordination Risk](Coordination-Risk.md) are easiest when developers are together in the same room.  But it doesn't always work out like this.   Teams spread in different locations and timezones naturally don't have the same [communication bandwidth](Communication-Risk.md) and you _will_ have more issues with [Coordination Risk](Coordination-Risk.md).  
 
 In the extreme, I've seen situations where the team at one location has decided to "suck up" the extra development effort themselves rather than spend time trying to bring a new remote team up-to-speed.  More common is for one location to do the development, while another gets the [Support](Support) duties.  
 
-When this happens, it's because somehow the team feel that [Coordination Risk](Coordination-Risk) is more unmanageable than [Schedule Risk](Scarcity-Risk#schedule-risk).
+When this happens, it's because somehow the team feel that [Coordination Risk](Coordination-Risk.md) is more unmanageable than [Schedule Risk](Scarcity-Risk#schedule-risk).
 
-There are some mitigations here:  video-chat, moving staff from location-to-location for face-time, frequent [show-and-tell](Review), or simply modularizing accross geographic boundaries, in respect of [Conway's Law](Coordination-Risk):
+There are some mitigations here:  video-chat, moving staff from location-to-location for face-time, frequent [show-and-tell](Review), or simply modularizing accross geographic boundaries, in respect of [Conway's Law](Coordination-Risk.md):
 
 > "organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations."  - _[M. Conway](https://en.wikipedia.org/wiki/Conways_law)_
 
@@ -149,9 +149,9 @@ When we add **Outsourcing** into the mix, we also have to consider [Agency Risk]
 
 ### Team Size
 
-As team sizes grow, [Coordination Risk](Coordination-Risk) grows fast.  
+As team sizes grow, [Coordination Risk](Coordination-Risk.md) grows fast.  
 
-To see this, let's consider a made-up situation where all the developers are equal, and we can mitigate [Coordination Risk](Coordination-Risk) at the cost of a 1-hour presentation each per week.  
+To see this, let's consider a made-up situation where all the developers are equal, and we can mitigate [Coordination Risk](Coordination-Risk.md) at the cost of a 1-hour presentation each per week.  
 
 How many man-hours of presentations do we need?
 
@@ -173,7 +173,7 @@ This is why we get [Brooks' Law](https://en.wikipedia.org/wiki/Brooks_law):
 
 > "adding human resources to a late software project makes it later".  - [Fred Brooks, _The Mythical Man-Month_](https://en.wikipedia.org/wiki/Brooks_law)
 
-You can see that this law is founded in an appreciation of [Coordination Risk](Coordination-Risk).  But the argument from [Coordination Risk](Coordination-Risk) _adds nuance_, and explains when this is true and when it isn't.
+You can see that this law is founded in an appreciation of [Coordination Risk](Coordination-Risk.md).  But the argument from [Coordination Risk](Coordination-Risk.md) _adds nuance_, and explains when this is true and when it isn't.
 
 ### Too Many Cooks
 
@@ -183,9 +183,9 @@ Sometimes, you have _too many developers_ on a project.  This is not a blessing.
 
 One of the reasons for this is that _Developers love to develop_ and it is, after all, their job.  If they _aren't_ developing, then are they still needed?  This is [Agency Risk](Agency-Risk.md):  people who are worried about their jobs will often try to _look busy_, and if that means creating some drama on the project, then so be it.
 
-Sadly, this usually occurs when a successful project is nearing delivery.  Ideally, you want to be _decreasing_ the amount of change on a project as it gets closer to key [Delivery Dates](Coordination-Risk).  This is because the risk of [Missing the Date](Coordination-Risk) is greater than the risk of [some features not being ready](Feature-Risk).
+Sadly, this usually occurs when a successful project is nearing delivery.  Ideally, you want to be _decreasing_ the amount of change on a project as it gets closer to key [Delivery Dates](Coordination-Risk.md).  This is because the risk of [Missing the Date](Coordination-Risk.md) is greater than the risk of [some features not being ready](Feature-Risk).
 
-In the past, I've found it helpful to down-size the team by temporarily moving developers into other less-fortunate teams, reducing both [Coordination Risk](Coordination-Risk) and [Agency Risk](Agency-Risk.md) at the same time.  
+In the past, I've found it helpful to down-size the team by temporarily moving developers into other less-fortunate teams, reducing both [Coordination Risk](Coordination-Risk.md) and [Agency Risk](Agency-Risk.md) at the same time.  
 
 This can require some guts to do:  you have to overcome your own ego (wanting to run a big team) for the sake of your project.
 

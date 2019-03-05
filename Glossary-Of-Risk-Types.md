@@ -15,7 +15,7 @@ description: List of all types of risk discussed in Risk-First.
 |[Codebase](Complexity-Risk.md#codebase-risk)|The specific risks to a project of having a large, complex codebase to manage.|
 |[Complexity](Complexity-Risk.md)|Risks caused by the weight of complexity in the systems we create, and their resistance to change and comprehension.|
 |[Conceptual-integrity](Feature-Risk#conceptual-integrity-risk)|Risk that the software you provide is too complex, or doesn't match the expectations of your clients' internal models.|
-|[Coordination](Coordination-Risk)|Risks that a group of agents cannot work together in a mutually beneficial way, and their behaviour devolves into competition.|
+|[Coordination](Coordination-Risk.md)|Risks that a group of agents cannot work together in a mutually beneficial way, and their behaviour devolves into competition.|
 |[Dead-End](Complexity-Risk.md#dead-end-risk)|The risk that a particular approach to a change will fail.  Caused by the fact that at some level, our internal models are not a complete reflection of reality.|
 |[Deadline](Deadline-Risk)|Where the use of a dependency has some kind of deadline, which can be missed.|
 |[Dependency](Dependency-Risk.md)|Risks faced by depending on something else.  e.g. an event, process, person, piece of software or an organisation.   |
