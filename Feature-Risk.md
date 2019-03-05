@@ -32,13 +32,13 @@ This is the one we've just discussed above - the feature that clients want to us
 
 [Feature Risk](Feature-Risk) also includes things that don't work as expected<!-- tweet-end -->, that is to say, [bugs](https://en.wikipedia.org/wiki/Software_bug).   Although the distinction between "a missing feature" and "a broken feature" might be worth making in the development team, we can consider these both the same kind of risk:  _the software doesn't do what the user expects_.  As shown in the above diagram, we can mitigate this risk with _feedback_ from users, as well as further _development_ and _testing_.
 
-It's worth pointing out that sometimes, _the user expects the wrong thing_.  This is a different but related risk, which could be down to [training](Training), [documentation](Documentation) or simply a [poor user interface](Communication-Risk) (and we'll look at that more in [Communication Risk](Communication-Risk).)
+It's worth pointing out that sometimes, _the user expects the wrong thing_.  This is a different but related risk, which could be down to [training](Training), [documentation](Documentation) or simply a [poor user interface](Communication-Risk.md) (and we'll look at that more in [Communication Risk](Communication-Risk.md).)
 
 ## Regression Risk
 
 ![Regression Risk](images/generated/risks/feature/feature-regression-risk.png) 
 
-[Regression Risk](Feature-Risk#regression-risk) is the risk of breaking existing features in your software when you add new ones.  <!-- tweet-end -->As with the previous risks, the eventual result is the same: customers don't have the features they expect.  This can become a problem as your code-base [gains Complexity](Complexity-Risk) and as it becomes impossible to keep a complete [Internal Model](Glossary#Internal-Model) of the whole thing in your head.
+[Regression Risk](Feature-Risk#regression-risk) is the risk of breaking existing features in your software when you add new ones.  <!-- tweet-end -->As with the previous risks, the eventual result is the same: customers don't have the features they expect.  This can become a problem as your code-base [gains Complexity](Complexity-Risk.md) and as it becomes impossible to keep a complete [Internal Model](Glossary#Internal-Model) of the whole thing in your head.
 
 Delivering new features can delight your customers, breaking existing ones will annoy them.  This is something we'll come back to in [Operational Risk](Operational-Risk).
 
@@ -94,7 +94,7 @@ The point is:  [Requirements captured](Requirements-Capture) _today_ might not m
 
 ## Fashion
 
-Fashion plays a big part in IT.  By being _fashionable_, web-sites are communicating:   _this is a new thing_, _this is relevant_, _this is not terrible_.  All of which is mitigating a [Communication Risk](Communication-Risk).  <!-- tweet-start -->Users are all-too-aware that the Internet is awash with terrible, abandon-ware sites that are going to waste their time.  How can you communicate that you're not one of them to your users? <!-- tweet-end -->
+Fashion plays a big part in IT.  By being _fashionable_, web-sites are communicating:   _this is a new thing_, _this is relevant_, _this is not terrible_.  All of which is mitigating a [Communication Risk](Communication-Risk.md).  <!-- tweet-start -->Users are all-too-aware that the Internet is awash with terrible, abandon-ware sites that are going to waste their time.  How can you communicate that you're not one of them to your users? <!-- tweet-end -->
 
 ## Delight
 
@@ -163,4 +163,4 @@ Next time you are grooming the backlog, why not apply this:
   
 In the next section, we are going to unpack this last point further.  Somewhere between "what the customer wants" and "what you give them" is a _dialogue_.  In using a software product, users are engaging in a _dialogue_ with its features.  If the features don't exist, hopefully they will engage in a dialogue with the development team to get them added.  
 
-These dialogues are prone to risk and this is the subject of the next section, [Communication Risk](Communication-Risk).
+These dialogues are prone to risk and this is the subject of the next section, [Communication Risk](Communication-Risk.md).

@@ -45,7 +45,7 @@ Risk-First takes a view that risks are a continuous quantity, more like _money_ 
 
 ![Risk Register of Dinner Party Risks](images/generated/introduction/risk_matrix.png)
 
-A risk matrix presents a graphical view on where risks exist.  The diagram above is an example, showing the risks from the dinner party in the [A Simple Scenario](A-Simple-Scenario) section:
+A risk matrix presents a graphical view on where risks exist.  The diagram above is an example, showing the risks from the dinner party in the [A Simple Scenario](A-Simple-Scenario.md) section:
 
 This type of graphic is _helpful_ in deciding what to do next, although alternatively, you can graph the overall **Risk Score** against the [Payoff](Glossary#payoff).  Easily mitigated risk (on the right), and worse risks (at the top) can therefore be dealt with first (hopefully).
 
@@ -68,7 +68,7 @@ Donald Rumsfeld's famous [Known Knowns](https://en.wikipedia.org/wiki/There_are_
 
 Arguably, Risk-First uses the term 'Risk' wrongly:  most literature suggests [risk can be measured](https://keydifferences.com/difference-between-risk-and-uncertainty.html) whereas uncertainty represents things that cannot.  
 
-I am using **risk** everywhere because later we will talk about specific risks (e.g. [Boundary Risk](Boundary-Risk) or [Complexity Risk](Complexity-Risk)), and it doesn't feel grammatically correct to talk about those as **uncertainties**, especially given the pre-existing usage in Banking of terms like [Operational Risk](https://en.wikipedia.org/wiki/Operational_risk) or [Reputational risk](https://www.investopedia.com/terms/r/reputational-risk.asp) which are also not really a-priori measurable.
+I am using **risk** everywhere because later we will talk about specific risks (e.g. [Boundary Risk](Boundary-Risk) or [Complexity Risk](Complexity-Risk.md)), and it doesn't feel grammatically correct to talk about those as **uncertainties**, especially given the pre-existing usage in Banking of terms like [Operational Risk](https://en.wikipedia.org/wiki/Operational_risk) or [Reputational risk](https://www.investopedia.com/terms/r/reputational-risk.asp) which are also not really a-priori measurable.
 
 ## The Opposite Of Risk Management
 
@@ -78,7 +78,7 @@ Let's look at a classic description of Risk Management:
 
 This is not how Risk-First sees it:  
 
-First, we have the notion that Risks are discrete events.  Some risks _are_ (like gambling on a horse race), but most _aren't_.  In the [Dinner Party](A-Simple-Scenario), for example, bad preparation is going to mean a _worse_ time for everyone, but how good a time you're having is a spectrum, it doesn't divide neatly into just "good" or "bad".  
+First, we have the notion that Risks are discrete events.  Some risks _are_ (like gambling on a horse race), but most _aren't_.  In the [Dinner Party](A-Simple-Scenario.md), for example, bad preparation is going to mean a _worse_ time for everyone, but how good a time you're having is a spectrum, it doesn't divide neatly into just "good" or "bad".  
 
 Second, the opposite of "Risk Management" (or trying to minimise the "Down-side") is either "Upside Risk Management", (trying to maximise the good things happening), or it's trying to make as many bad things happen as possible.  
 
@@ -198,10 +198,10 @@ Enough with the numbers and the theory:  we need a practical framework, rather t
 - Second, IT projects have too many confounding factors, such as experience of the teams, 
 technologies used etc.  That is, the risks faced by IT projects are _too diverse_ and _hard to quantify_ to allow for meaningful comparison from one to the next.
 - Third, as soon as you _publish a date_ it changes the expectations of the project (see [Student Syndrome](Scarcity-Risk#student-syndrome)).
-- Fourth, metrics get [misused](Map-And-Territory-Risk) and [gamed](Agency-Risk) (as we will see in a later chapter).
+- Fourth, metrics get [misused](Map-And-Territory-Risk) and [gamed](Agency-Risk.md) (as we will see in a later chapter).
 
 Reality is messy.  Dressing it up with numbers doesn't change that and you risk [fooling yourself](Map-And-Territory-Risk).  If this is the case, is there any hope at all in what we're doing?  Yes:   _forget precision_.  You should, with experience, be able to hold up two separate risks and answer the question, "is this one bigger than this one?"  
 
 
-With that in mind, let's look at how we can meet reality [as fast and as often as possible](Cadence).
+With that in mind, let's look at how we can meet reality [as fast and as often as possible](Cadence.md).
 

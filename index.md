@@ -20,8 +20,8 @@ Hopefully, after reading through some of the articles here, you'll come away wit
 ### Questions Answered
 
 - [Risk-First is a Pattern Language (think Design Patterns, or TVTropes)](A-Pattern-Language.md)
-- ["Software Development Is All About Risk" - Kent Beck](All-About-Risk)
-- [Who Is This For?](Audience)
+- ["Software Development Is All About Risk" - Kent Beck](All-About-Risk.md)
+- [Who Is This For?](Audience.md)
 - [Quick, High-Level Summary](Quick-Summary)
 
 ### Contributing
@@ -45,14 +45,14 @@ Although this is a collaborative Github project, it's not meant to be an open-en
 
 Some easy-to-digest ideas that will set the scene for examining the practices later.
 
- - [A Simple Scenario](A-Simple-Scenario)
+ - [A Simple Scenario](A-Simple-Scenario.md)
  - [Development Process](Development-Process)
  - [Meeting Reality](Meeting-Reality)
  - [It's Just Risk](Just-Risk)
  - [Evaluating Risk](Evaluating-Risk)
- - [Cadence](Cadence)
+ - [Cadence](Cadence.md)
  - [De-Risking](De-Risking)
- - [A Conversation](A-Conversation)
+ - [A Conversation](A-Conversation.md)
  - [One Size Fits No One](One-Size-Fits-No-One)
  
 ### Part 2: [The Risk Landscape](Risk-Landscape)
@@ -61,15 +61,15 @@ Risks are often very similar across different software projects.   And, if you k
 
  - [The Risk Landscape](Risk-Landscape)
  - [Feature Risk](Feature-Risk)
- - [Communication Risk](Communication-Risk)
- - [Complexity Risk](Complexity-Risk)
+ - [Communication Risk](Communication-Risk.md)
+ - [Complexity Risk](Complexity-Risk.md)
  - [Dependency Risk](Dependency-Risk.md)
  - [Scarcity Risk](Scarcity-Risk)
  - [Deadline Risk](Deadline-Risk)
  - [Software Dependency Risk](Software-Dependency-Risk)
  - [Process Risk](Process-Risk)
  - [Boundary Risk](Boundary-Risk)
- - [Agency Risk](Agency-Risk) 
+ - [Agency Risk](Agency-Risk.md) 
  - [Coordination Risk](Coordination-Risk)
  - [Map And Territory Risk](Map-And-Territory-Risk)
  - [Operational Risk](Operational-Risk)

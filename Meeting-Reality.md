@@ -9,7 +9,7 @@ In this section, we will look at how exposing your [Internal Model](Glossary#Int
 
 ## Revisiting the Model
 
-In [A Simple Scenario](A-Simple-Scenario), we looked at a basic model for how **Reality** and our [Internal Model](Glossary#Internal-Model) interacted with each other:  we take action based on out [Internal Model](Glossary#Internal-Model), hoping to **change Reality** with some positive outcome.
+In [A Simple Scenario](A-Simple-Scenario.md), we looked at a basic model for how **Reality** and our [Internal Model](Glossary#Internal-Model) interacted with each other:  we take action based on out [Internal Model](Glossary#Internal-Model), hoping to **change Reality** with some positive outcome.
 
 And, in [Development Process](Development-Process) we looked at how we can meet with reality in _different forms_:  Analysis, Testing, Integration and so on, and saw how the model could work in each stage of a project.
 

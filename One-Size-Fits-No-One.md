@@ -7,7 +7,7 @@ description: Explanation of why there can't be a perfect software methodology.
 
 Why are [Software Methodologies](https://en.wikipedia.org/wiki/Software_development_process) all different? 
 
-[Previously](Just-Risk), we made the case that [any action you take](Glossary#taking-action) on a software project is to do with managing [risk](Glossary#risk), and the last section, [A Conversation](A-Conversation) was an example of this happening. 
+[Previously](Just-Risk), we made the case that [any action you take](Glossary#taking-action) on a software project is to do with managing [risk](Glossary#risk), and the last section, [A Conversation](A-Conversation.md) was an example of this happening. 
 
 Therefore, it stands to reason that software methodologies are all about handling risk too.  Since they are prescribing a particular day-to-day process, or set of actions to take, they are also prescribing a particular approach to managing the risks on software projects.  
 
@@ -46,7 +46,7 @@ Because Waterfall methodologies are borrowed from _the construction industry_, t
 
 ![Waterfall, Specifications and Requirements Capture](images/generated/introduction/waterfall2.png)
 
-Construction projects are often done by tender which means that the supplier will bid for the job of completing the project, and deliver it to a fixed price.   This is a risk-management strategy for the client:  they are transferring the risk of construction difficulties to the supplier, and avoiding the [Agency Risk](Agency-Risk) that the supplier will "pad" the project and take longer to implement it than necessary, charging them more in the process.  In order for this to work, both sides need to have a fairly close understanding of what will be delivered, and this is why a specification is created.
+Construction projects are often done by tender which means that the supplier will bid for the job of completing the project, and deliver it to a fixed price.   This is a risk-management strategy for the client:  they are transferring the risk of construction difficulties to the supplier, and avoiding the [Agency Risk](Agency-Risk.md) that the supplier will "pad" the project and take longer to implement it than necessary, charging them more in the process.  In order for this to work, both sides need to have a fairly close understanding of what will be delivered, and this is why a specification is created.
 
 ### The Wrong Risks?
 
@@ -80,7 +80,7 @@ Here are some high-level differences we see in some other popular methodologies:
 
  - **[Project Management Body Of Knowledge (PMBoK)](https://en.wikipedia.org/wiki/Project_Management_Body_of_Knowledge)**.  This is a formalisation of traditional project management practice.  It prescribes best practices for managing scope, schedule, resources, communications, dependencies, stakeholders etc. on a project.  Although "risk" is seen as a separate entity to be managed, all of the above areas are sources of risk within a project, as we will see in [Part 2](PMBoK).
 
- - **[Scrum](https://en.wikipedia.org/wiki/Scrum)**. Is a popular Agile methodology.  Arguably, it is less "extreme" than Extreme Programming, as it promotes a limited set, more achievable set of agile practices, such as frequent releases, daily meetings, a product owner and retrospectives.  This simplicity arguably makes it [simpler to learn and adapt to](Communication-Risk#learning-curve-risk) and probably contributes to Scrum's popularity over XP. 
+ - **[Scrum](https://en.wikipedia.org/wiki/Scrum)**. Is a popular Agile methodology.  Arguably, it is less "extreme" than Extreme Programming, as it promotes a limited set, more achievable set of agile practices, such as frequent releases, daily meetings, a product owner and retrospectives.  This simplicity arguably makes it [simpler to learn and adapt to](Communication-Risk.md#learning-curve-risk) and probably contributes to Scrum's popularity over XP. 
  
  - **[DevOps](https://en.wikipedia.org/wiki/DevOps)**. Many software systems struggle at the [boundary](Boundary-Risk) between "in development" and "in production".  DevOps is an acknowledgement of this, and is about more closely aligning the feedback loops between the developers and the production system.  It champions activities such as continuous deployment, automated releases and automated monitoring.
 

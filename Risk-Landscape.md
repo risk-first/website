@@ -36,15 +36,15 @@ Below is a table outlining the different risks we'll see.  There _is_ an order t
 |Risk            |          Description           |      
 |----------------|--------------------------|
 |[Feature Risk](Feature-Risk)                        |When you haven't built features the market needs, or the features you have built contain bugs, or the market changes underneath you.    |
-|[Communication Risk](Communication-Risk)            |Risks associated with getting messages heard and understood.|             
-|[Complexity Risk](Complexity-Risk)                  |Your software is so complex it makes it hard to change, understand, or run.             |        
+|[Communication Risk](Communication-Risk.md)            |Risks associated with getting messages heard and understood.|             
+|[Complexity Risk](Complexity-Risk.md)                  |Your software is so complex it makes it hard to change, understand, or run.             |        
 |[Dependency Risk](Dependency-Risk.md)                  |Risks of depending on other people, products, software, functions, etc. This is a general look at dependencies, before diving into specifics like...|  
 |[Scarcity Risk](Scarcity-Risk)                      |Risks associated with having limited time, money or some other resource.|    
 |[Deadline Risk](Deadline-Risk)                      |The risk of having a date to hit.|
 |[Software Dependency Risk](Software-Dependency-Risk)|The risk of depending on a software library, service or function.|    
 |[Process Risk](Process-Risk)                        |When you depend on a business process, or human process to give you something you need.|
 |[Boundary Risk](Boundary-Risk)                      |Risks due to making decisions that limit your choices later on.  Sometimes, you go the wrong way on the [Risk Landscape](Risk-Landscape) and it's hard to get back to where you want to be.|            
-|[Agency Risk](Agency-Risk)                          |Risks that staff have their own [Goals](Glossary#goal-in-mind), which might not align with those of the project or team.|
+|[Agency Risk](Agency-Risk.md)                          |Risks that staff have their own [Goals](Glossary#goal-in-mind), which might not align with those of the project or team.|
 |[Coordination Risk](Coordination-Risk)              |Risks due to the fact that systems contain multiple agents, which need to work together.|       
 |[Map And Territory Risk](Map-And-Territory-Risk)    |Risks due to the fact that people don't see the world as it really is. (After all, they're working off different, imperfect [Internal Models](Glossary#internal-model).)|  
 |[Operational Risk](Operational-Risk)                |Software is embedded in a system containing people, buildings, machines and other services.  Operational risk considers this wider picture of risk associated with running a software service or business in the real world.|
@@ -79,7 +79,7 @@ All the [Risks](Glossary#Risk) were [correlated](https://www.investopedia.com/te
 
 ![Causation shown on a Risk-First Diagram.  More complexity is likely to lead to more Operational Risk](images/generated/risks/landscape/causation.png)
 
-It's like this with software risks, too, sadly.  For example, [Operational Risk](Operational-Risk) is going to be heavily correlated with [Complexity Risk](Complexity-Risk): the more complex your operation, the more risky it will be.  In the Risk-First diagrams, we will sometimes show correlation or causation with an arrow, like in the diagram above.
+It's like this with software risks, too, sadly.  For example, [Operational Risk](Operational-Risk) is going to be heavily correlated with [Complexity Risk](Complexity-Risk.md): the more complex your operation, the more risky it will be.  In the Risk-First diagrams, we will sometimes show correlation or causation with an arrow, like in the diagram above.
 
 ## We're all Naturalists Now
 

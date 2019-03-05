@@ -5,7 +5,7 @@ description: An example of how a development process reduces risk on a software 
 
 # Development Process
 
-In the [previous section](A-Simple-Scenario) we introduced some terms for talking about risk (such as [Attendant Risk](Glossary#attendant-risk), [Hidden Risk](Glossary#attendant-risk) and [Internal Model](Glossary#Internal-model)) via a simple scenario.
+In the [previous section](A-Simple-Scenario.md) we introduced some terms for talking about risk (such as [Attendant Risk](Glossary#attendant-risk), [Hidden Risk](Glossary#attendant-risk) and [Internal Model](Glossary#Internal-model)) via a simple scenario.
 
 Now, let's look at the everyday process of developing _a new feature_ on a software project, and see how our risk model informs it.
 

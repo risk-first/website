@@ -5,7 +5,7 @@ description: Risks that a group of agents cannot work together and their behavio
 
 # Coordination Risk
 
-As in [Agency Risk](Agency-Risk), we are going to use the term _agent_, which refers to anything with [agency](Agency-Risk#software-processes) in a system to make decisions:  that is, an agent has an [Internal Model](Glossary#Internal-Model) and can [take actions](Glossary#taking-action) based on it.  Here, we work on the assumption that the agents _are_ working towards a common [Goal](Glossary#Goal-In-Mind), even though in reality it's not always the case, as we saw in the section on [Agency Risk](Agency-Risk).
+As in [Agency Risk](Agency-Risk.md), we are going to use the term _agent_, which refers to anything with [agency](Agency-Risk.md#software-processes) in a system to make decisions:  that is, an agent has an [Internal Model](Glossary#Internal-Model) and can [take actions](Glossary#taking-action) based on it.  Here, we work on the assumption that the agents _are_ working towards a common [Goal](Glossary#Goal-In-Mind), even though in reality it's not always the case, as we saw in the section on [Agency Risk](Agency-Risk.md).
 
 [Coordination Risk](Coordination-Risk) is the risk that agents can fail to coordinate to meet their common goal and end up making things worse.<!-- tweet-end -->  [Coordination Risk](Coordination-Risk) is embodied in the phrase "Too Many Cooks Spoil The Broth":  more people, opinions or _agents_ often make results worse.
 
@@ -41,11 +41,11 @@ Just two things are needed for competition to occur:
 
 ### Coordination via Communication
 
-The only way that the agents can move away from competition towards coordination is via [Communication](Communication-Risk), and this is where their coordination problems begin.  
+The only way that the agents can move away from competition towards coordination is via [Communication](Communication-Risk.md), and this is where their coordination problems begin.  
 
-[Coordination Risk](Coordination-Risk) commonly occurs where people have different ideas about how to achieve a [goal](Glossary#Goal-In-Mind), and they have different ideas because they have different [Internal Models](Glossary#internal-model).  As we saw in the section on [Communication Risk](Communication-Risk), we can only hope to synchronise [Internal Models](Glossary#Internal-Model) if there are high-bandwidth [Channels](Communication-Risk#channels) available for communication. 
+[Coordination Risk](Coordination-Risk) commonly occurs where people have different ideas about how to achieve a [goal](Glossary#Goal-In-Mind), and they have different ideas because they have different [Internal Models](Glossary#internal-model).  As we saw in the section on [Communication Risk](Communication-Risk.md), we can only hope to synchronise [Internal Models](Glossary#Internal-Model) if there are high-bandwidth [Channels](Communication-Risk.md#channels) available for communication. 
 
-You might think, therefore, that this is just another type of [Communication Risk](Communication-Risk) problem, and that's often a part of it, but even with synchronized [Internal Models](Glossary#Internal-Model), coordination risk can occur.  Imagine the example of people all trying to madly leave a burning building.  They all have the same information (the building is on fire).  If they coordinate, and leave in an orderly fashion, they might all get out.  If they don't, and there's a scramble for the door, more people might die.
+You might think, therefore, that this is just another type of [Communication Risk](Communication-Risk.md) problem, and that's often a part of it, but even with synchronized [Internal Models](Glossary#Internal-Model), coordination risk can occur.  Imagine the example of people all trying to madly leave a burning building.  They all have the same information (the building is on fire).  If they coordinate, and leave in an orderly fashion, they might all get out.  If they don't, and there's a scramble for the door, more people might die.
 
 ![Coordination Risk - Mitigated by Communication](images/generated/risks/coordination/coordination-risk.png)
 
@@ -103,14 +103,14 @@ The decisions at the top are faster, but don't do much for mitigating [Coordinat
 
 The trick is to be able to tell which approach is suitable at which time.   Everyone is expected to make decisions _within their realm of expertise_: you can't have developers continually calling meetings to discuss whether they should be using an [Abstract Factory](https://en.wikipedia.org/wiki/Abstract_factory_pattern) or a [Factory Method](https://en.wikipedia.org/wiki/Factory_method_pattern): it would waste time.  The critical question is therefore, "what's the biggest risk?"
 
- - Is the [Coordination Risk](Coordination-Risk) greater?   Are we going to suffer [Dead End Risk](Complexity-Risk) if the decision is made wrongly?  What if people don't agree with it?  Poor leadership has an impact on [Morale](Agency-Risk#morale-risk) too.  
+ - Is the [Coordination Risk](Coordination-Risk) greater?   Are we going to suffer [Dead End Risk](Complexity-Risk.md) if the decision is made wrongly?  What if people don't agree with it?  Poor leadership has an impact on [Morale](Agency-Risk.md#morale-risk) too.  
  - Is the [Schedule Risk](Scarcity-Risk#schedule-risk) greater?  If you have a 1-hour meeting with eight people to decide a decision, that's _one person day_ gone right there:  group decision making is _expensive_.  
  
 So _organisation_ can reduce [Coordination Risk](Coordination-Risk) but to make this work we need more _communication_, and this has attendant complexity and time costs.  
 
 ### Staff As Agents
 
-Staff in a team have a dual nature:  they are **Agents** and **Resources** at the same time.  The team [depends](Dependency-Risk.md) on staff for their resource of _labour_, but they're also part of the decision making process of the team, because they have [_agency_](Agency-Risk) over their own actions.  
+Staff in a team have a dual nature:  they are **Agents** and **Resources** at the same time.  The team [depends](Dependency-Risk.md) on staff for their resource of _labour_, but they're also part of the decision making process of the team, because they have [_agency_](Agency-Risk.md) over their own actions.  
 
 Part of [Coordination Risk](Coordination-Risk) is about trying to mitigate differences in [Internal Models](Glossary#Internal-Model). So it's worth considering how varied people's models can be:
 
@@ -129,14 +129,14 @@ Specifically this describes a process whereby a new group will form and then be 
 Since [Coordination](Coordination-Risk) is about [Resource Allocation](Coordination-Risk#problems-of-coordination) the skills of staff can potentially be looked at as resources to allocate.  This means handling [Coordination Risk](Coordination-Risk) issues like:
 
  - People leaving, taking their [Internal Models](Glossary#Internal-Model) and expertise with them ([Key Person Risk](Scarcity-Risk#Staff-Risk)).
- - People requiring external training, to understand new tools and techniques ([Learning Curve Risk](Communication-Risk#learning-curve-risk)).
- - People being protective about their knowledge in order to protect their jobs ([Agency Risk](Agency-Risk)). 
+ - People requiring external training, to understand new tools and techniques ([Learning Curve Risk](Communication-Risk.md#learning-curve-risk)).
+ - People being protective about their knowledge in order to protect their jobs ([Agency Risk](Agency-Risk.md)). 
  
 > "As a rough rule, three programmers organised into a team can do only twice the work of a single programmer of the same ability - because of time spent on coordination problems." - [Gerald Wienberg, _The Psychology of Computer Programming_](https://en.wikipedia.org/wiki/Gerald_Weinberg) 
  
 ## In Living Organisms
 
-Vroom and Yetton's organisational model isn't relevant to just teams of people.  We can see it in the natural world too.  Although _the majority_ of cellular life on earth (by weight) is [single celled organisms](http://www.stephenjaygould.org/library/gould_bacteria.html), the existence of _humans_ (to pick a single example) demonstrates that sometimes it's better for cells to try to mitigate [Coordination Risk](Coordination-Risk) and work as a team, accepting the [Complexity Risk](Complexity-Risk) and [Communication Risk](Communication-Risk) this entails.  For example, in the human body, we have:
+Vroom and Yetton's organisational model isn't relevant to just teams of people.  We can see it in the natural world too.  Although _the majority_ of cellular life on earth (by weight) is [single celled organisms](http://www.stephenjaygould.org/library/gould_bacteria.html), the existence of _humans_ (to pick a single example) demonstrates that sometimes it's better for cells to try to mitigate [Coordination Risk](Coordination-Risk) and work as a team, accepting the [Complexity Risk](Complexity-Risk.md) and [Communication Risk](Communication-Risk.md) this entails.  For example, in the human body, we have:
 
  - **Various [systems](https://en.wikipedia.org/wiki/List_of_systems_of_the_human_body)**: such as the [Respiratory System](https://en.wikipedia.org/wiki/Respiratory_system) or the [Digestive System](https://en.wikipedia.org/wiki/Human_digestive_system).  Each of these systems contains...
  - **Organs**, such as the heart or lungs, which contain..
@@ -157,9 +157,9 @@ Working in a large organisation often feels like being a cell in a larger organi
  
 _Less_ consultative decision making styles are more appropriate then when we don't have the luxury of high-bandwidth channels for discussion. When the number of parties rises above a room-full of people it's not possible to hear everyone's voice.   As you can see from the table above, for **CII** and **GII** decision-making styles, the amount of communication increases non-linearly with the number of participants, so we need something simpler.  
 
-As we saw in the [Complexity Risk](Complexity-Risk) section, hierarchies are an excellent way of economising on number of different communication channels, and we use these frequently when there are lots of parties to coordinate.
+As we saw in the [Complexity Risk](Complexity-Risk.md) section, hierarchies are an excellent way of economising on number of different communication channels, and we use these frequently when there are lots of parties to coordinate.
 
-In large organisations, teams are created and leaders chosen for those teams precisely to mitigate this [Communication Risk](Communication-Risk).  We're all familiar with this: control of the team is ceded to the leader, who takes on the role of 'handing down' direction from above, but also 'reporting up' issues that cannot be resolved within the team.   In Vroom and Yetton's model, this is moving from a **GII** or **CII** to an **AI** or **AII** style of leadership.  
+In large organisations, teams are created and leaders chosen for those teams precisely to mitigate this [Communication Risk](Communication-Risk.md).  We're all familiar with this: control of the team is ceded to the leader, who takes on the role of 'handing down' direction from above, but also 'reporting up' issues that cannot be resolved within the team.   In Vroom and Yetton's model, this is moving from a **GII** or **CII** to an **AI** or **AII** style of leadership.  
 
 Clearly, this is just a _model_, it's not set in stone and decision making styles usually change from day-to-day and decision-to-decision.  The same is not true in our software - _rules are rules_.
 
@@ -243,7 +243,7 @@ This in itself is a problem because the whole _point_ of BTC is that it's compet
 
 CAP theory gives us a fundamental limit on how much [Coordination Risk](Coordination-Risk) we can mitigate.  We've looked at different organisational structures used to manage [Coordination Risk](Coordination-Risk) within teams of people, organisations or living organisms, so it's the case in software.   
 
-At the start of this section, we questioned whether [Coordination Risk](Coordination-Risk) was just another type of [Communication Risk](Communication-Risk).  However, it should be clear after looking at the examples of competition, cellular life and Vroom and Yetton's Model that this is exactly _backwards_.  
+At the start of this section, we questioned whether [Coordination Risk](Coordination-Risk) was just another type of [Communication Risk](Communication-Risk.md).  However, it should be clear after looking at the examples of competition, cellular life and Vroom and Yetton's Model that this is exactly _backwards_.  
 
 - Most single-celled life has no need for communication: it simply competes for the available resources.  If it lacks anything it needs, it dies.  
 - There are _no_ lines of communication on the **UI** decision-type.  It's only when we want to avoid competition, by sharing resources and working towards common goals that we need to communicate.  

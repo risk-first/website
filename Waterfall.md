@@ -34,7 +34,7 @@ It's likely that the Waterfall-Style methodologies were inspired by the construc
 
 Also, when Waterfall was originally conceived, automated testing techniques were not well established.  If you expect to perform a large [manual testing cycle](Testing) for each release, then clearly, doing fewer releases looks cheaper on paper.  
 
-But, while _in principle_, Waterfall aims to _contain_ the cost of implementation.  However, in practice, because of [Requirements Drift](Feature-Risk), [Student Syndrome](Scarcity-Risk#schedule-risk) and [Complexity Risk](Complexity-Risk), the schedules get more inaccurate the larger the project.
+But, while _in principle_, Waterfall aims to _contain_ the cost of implementation.  However, in practice, because of [Requirements Drift](Feature-Risk), [Student Syndrome](Scarcity-Risk#schedule-risk) and [Complexity Risk](Complexity-Risk.md), the schedules get more inaccurate the larger the project.
 
 ### 2.  [Lots Of Stakeholders](Coordination-Risk)
 
@@ -44,11 +44,11 @@ Waterfall tries to mitigate this risk by getting [Sign-Offs](Sign-Off) as it goe
 
 Additionally, by putting in the work at the planning and design stage, hopefully this means lots of staff can work together and not interfere with each other when the time for construction comes.
 
-### 4.  [Agency Risk](Agency-Risk)
+### 4.  [Agency Risk](Agency-Risk.md)
 
 Because of its step-wise delivery and reduction in visibility risk, Waterfall documentation can be used as the basis for [contracted delivery](Contract), and this is useful in situations where you are employing 3rd parties or putting work to tender.  
 
-This is very different from the way [Agency Risk](Agency-Risk) is mitigated in, say [Scrum](Scrum), which relies on the [On Site Customer](On-Site-Customer) to police the implementation team.
+This is very different from the way [Agency Risk](Agency-Risk.md) is mitigated in, say [Scrum](Scrum), which relies on the [On Site Customer](On-Site-Customer) to police the implementation team.
 
 ### 5.  [Bureaucratic Risk](Bureaucratic-Risk)
 
@@ -58,7 +58,7 @@ Additionally, because a [plan](Delivery-Plan) can be based on the [Design](Desig
 
 ## Attendant Risks
 
-### 1. [Complexity Risk](Complexity-Risk)
+### 1. [Complexity Risk](Complexity-Risk.md)
 
 One of the biggest problems in sticking to a [Design](Design), rather than letting the design evolve, is that you are not going to be practicing [Refactoring](Refactoring) in order to keep down 
 

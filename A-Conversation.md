@@ -34,7 +34,7 @@ Synergy's release process means that the app-store submission must happen in a f
 
 **Eve**:  How about we run two web-servers?  One for the existing content, and one for our new Synergy app?  We'd have to get a new external IP address, handle DNS setup, change the firewalls, and then deploy a new version of the Web Server software on the production boxes.
 
-**Bob**:  This feels like there'd be a lot of [Attendant Risk](Glossary#attendant-risk):  we're adding [Complexity Risk](Complexity-Risk) to our estate, and all of this needs to be handled by the Networking Team, so we're picking up a lot of [Process Risk](Process-Risk).  I'm also worried that there are too many steps here, and we're going to discover loads of [Hidden Risks](Glossary#hidden-risk) as we go.
+**Bob**:  This feels like there'd be a lot of [Attendant Risk](Glossary#attendant-risk):  we're adding [Complexity Risk](Complexity-Risk.md) to our estate, and all of this needs to be handled by the Networking Team, so we're picking up a lot of [Process Risk](Process-Risk).  I'm also worried that there are too many steps here, and we're going to discover loads of [Hidden Risks](Glossary#hidden-risk) as we go.
 
 **Eve**:  Well, you're correct on the first one.  But, I've done this before not that long ago for a Chinese project, so I know the process - we shouldn't run into any new [Hidden Risk](Glossary#hidden-risk).
 

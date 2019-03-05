@@ -97,4 +97,4 @@ For example:
 
 Risk-First aims to provide a framework in which we can _analyse these actions_ and weigh up _accepting_ versus _mitigating_ risks.
 
-**Still interested?  Then dive into reading [the introduction](A-Simple-Scenario).**
+**Still interested?  Then dive into reading [the introduction](A-Simple-Scenario.md).**
