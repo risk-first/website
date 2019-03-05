@@ -5,7 +5,7 @@ description: Explanation of Agency Risk and ways to mitigate it through monitori
 
 # Agency Risk
 
-[Coordinating a team](Coordination-Risk) is difficult enough when everyone on the team has a single [Goal](Glossary#Goal-In-Mind). <!-- tweet-end --> But people have their own goals too.  Sometimes their goals harmlessly co-exist with the team's goal, other times they don't.
+[Coordinating a team](Coordination-Risk.md) is difficult enough when everyone on the team has a single [Goal](Glossary#Goal-In-Mind). <!-- tweet-end --> But people have their own goals too.  Sometimes their goals harmlessly co-exist with the team's goal, other times they don't.
 
 This is [Agency Risk](Agency-Risk.md).   This term comes from finance and refers to the situation where you (the "principal") entrust your money to someone (the "agent") in order to invest it, but they don't necessarily have your best interests at heart.  They may instead elect to invest the money in ways that help them, or outright steal it.  
 
@@ -40,7 +40,7 @@ Sometimes projects don't get done without heroes.  But other times, the hero has
 - A desire for recognition and acclaim from colleagues.
 - For the job security of being a [Key Person](https://en.wikipedia.org/wiki/Key_person_insurance).
 
-A team _can_ make use of heroism but it's a double-edged sword.  The hero can become [a bottleneck](Coordination-Risk) to work getting done and because they want to solve all the problems themselves, they [under-communicate](Communication-Risk.md).  
+A team _can_ make use of heroism but it's a double-edged sword.  The hero can become [a bottleneck](Coordination-Risk.md) to work getting done and because they want to solve all the problems themselves, they [under-communicate](Communication-Risk.md).  
 
 ### CV Building
 
@@ -160,7 +160,7 @@ We've looked at various different shades of [Agency Risk](Agency-Risk.md) and th
 
 So having looked at agents _individually_, it's time to look more closely at [Goals](Glossary#goal-in-mind), and the [Attendant Risks](Glossary#attendant-risk) when aligning them amongst multiple agents. 
 
-On to [Coordination Risk](Coordination-Risk)...
+On to [Coordination Risk](Coordination-Risk.md)...
 
 
  

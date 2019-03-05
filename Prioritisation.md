@@ -36,7 +36,7 @@ By prioritising, you get to [Meet Reality](Meeting-Reality) _sooner_ and _more f
 
 This one way in which a particular prioritisation [Meets Reality](Meeting-Reality)
 
-- Developers might tell you that the ordering incurs [Dependency Risk](Dependency-Risk.md) or [Coordination Risk](Coordination-Risk) if everyone is going to end up working on the same components.
+- Developers might tell you that the ordering incurs [Dependency Risk](Dependency-Risk.md) or [Coordination Risk](Coordination-Risk.md) if everyone is going to end up working on the same components.
 - Product Owners might tell you that you're not tackling the right [Feature Risk](Feature-Risk).
 - If you're trying to work out what the [MVP]() is, prioritisation might help your investors determine whether the project is worth [funding](Scarcity-Risk#schedule-risk).
 

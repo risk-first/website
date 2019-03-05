@@ -109,7 +109,7 @@ Ideally, a methodology should be applicable at _any_ scale too:
  - A department.
  - An entire organisation.
 
-In practice, however, we usually find methodologies are tuned for certain scales.  For example, [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) is designed for small, co-located teams.  And, that's useful.  But the fact it doesn't scale tells us something about it:  chiefly, that it considers certain _kinds_ of risk, while ignoring others.  At small scales that works ok, but at larger scales other risks (such as team [Coordination Risk](Coordination-Risk)) increase too fast for it to work.
+In practice, however, we usually find methodologies are tuned for certain scales.  For example, [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) is designed for small, co-located teams.  And, that's useful.  But the fact it doesn't scale tells us something about it:  chiefly, that it considers certain _kinds_ of risk, while ignoring others.  At small scales that works ok, but at larger scales other risks (such as team [Coordination Risk](Coordination-Risk.md)) increase too fast for it to work.
 
 If the methodology _fails at a particular scale_ this tells you something about the risks that the methodology isn't addressing.    One of the things Risk-First explores is trying to place methodologies and practices within a framework to say _when_ they are applicable.
 

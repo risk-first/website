@@ -11,7 +11,7 @@ In this section, we will look at how exposing your [Internal Model](Glossary#Int
 
 In [A Simple Scenario](A-Simple-Scenario.md), we looked at a basic model for how **Reality** and our [Internal Model](Glossary#Internal-Model) interacted with each other:  we take action based on out [Internal Model](Glossary#Internal-Model), hoping to **change Reality** with some positive outcome.
 
-And, in [Development Process](Development-Process) we looked at how we can meet with reality in _different forms_:  Analysis, Testing, Integration and so on, and saw how the model could work in each stage of a project.
+And, in [Development Process](Development-Process.md) we looked at how we can meet with reality in _different forms_:  Analysis, Testing, Integration and so on, and saw how the model could work in each stage of a project.
 
 It should be no surprise to see that there is a _recursive_ nature about this:   the actions we take each day have consequences, they expose new [hidden risks](Glossary#hidden-risk) which inform our [Internal Model](Glossary#Internal-Model) and at the same time change reality in some way.  As a result, we then have to take _new actions_ to deal with these new risks.  
 
@@ -77,7 +77,7 @@ In all, to de-risk, you should try and meet reality:
 - **In Smaller Chunks**: so you're not over-burdened by hidden risks all in one go.
 - **With Feedback**: if you don't collect feedback from the experience of meeting reality, hidden risks _stay hidden_.
 
-In [Development Process](Development-Process), we performed a UAT in order to [Meet Reality](Glossary#Meet-Reality) more cheaply and sooner.  The _cost_ of this is that we delayed the release to do it, adding risk to the schedule.  
+In [Development Process](Development-Process.md), we performed a UAT in order to [Meet Reality](Glossary#Meet-Reality) more cheaply and sooner.  The _cost_ of this is that we delayed the release to do it, adding risk to the schedule.  
 
 ![Testing flushes out Hidden Risk, but increases Schedule Risk](images/generated/introduction/meeting_reality_testing.png)
 

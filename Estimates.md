@@ -5,13 +5,13 @@ description: Some suggestions for improving estimating in software projects, by 
 
 # Estimates
 
-In this section, we're going to put a Risk-First spin on the process of [Estimating](Estimates).  But in order to get there, we first need to start with understanding _why_ we estimate.  We're going to look at some "Old Saws" of software estimation and what we can learn from them.  Finally, we'll bring our Risk-First [menagerie](Risk-Landscape) to bear on de-risking the estimation process.
+In this section, we're going to put a Risk-First spin on the process of [Estimating](Estimates.md).  But in order to get there, we first need to start with understanding _why_ we estimate.  We're going to look at some "Old Saws" of software estimation and what we can learn from them.  Finally, we'll bring our Risk-First [menagerie](Risk-Landscape) to bear on de-risking the estimation process.
 
 ## The Purpose Of Estimating
 
 Why bother estimating at all?   There are two reasons why estimates are useful:<!-- tweet-end -->
 
-1.  **To allow for the creation of _events_.**  As we saw in [Deadline Risk](Deadline-Risk), if we can put a date on something, we can mitigate lots of [Coordination Risk](Coordination-Risk). Having a _release date_ for a product allows whole teams of people to coordinate their activities in ways that hugely reduce the need for [Communication](Communication-Risk.md).  "Attack at dawn" allows disparate army units to avoid the [Coordination Risk](Coordination-Risk) inherent in "attack on my signal".  This is a _good reason for estimating_ because by using events you are mitigating [Coordination Risk](Coordination-Risk).  This is often called a _hard deadline_.
+1.  **To allow for the creation of _events_.**  As we saw in [Deadline Risk](Deadline-Risk), if we can put a date on something, we can mitigate lots of [Coordination Risk](Coordination-Risk.md). Having a _release date_ for a product allows whole teams of people to coordinate their activities in ways that hugely reduce the need for [Communication](Communication-Risk.md).  "Attack at dawn" allows disparate army units to avoid the [Coordination Risk](Coordination-Risk.md) inherent in "attack on my signal".  This is a _good reason for estimating_ because by using events you are mitigating [Coordination Risk](Coordination-Risk.md).  This is often called a _hard deadline_.
 
 2.  **To allow for the estimation of the [Payoff](Glossary#payoff) of an [action](Glossary#taking-action).**  This is a _bad reason for estimating_ as we will discuss in detail below.  But briefly the main issue is that [Payoff](Glossary#payoff) isn't just about figuring out [Schedule Risk](Scarcity-Risk#schedule-risk) - you should be looking at all the other [Attendant Risks](Glossary#attendant-risk) of the action too.  
 

@@ -51,7 +51,7 @@ The diagram above shows how types of [Feature Fit Risk](Feature-Risk) can manife
 
 ## Audience
 
-Communication allows us to _share_ information between [Internal Models](Glossary#internal-model) of a whole audience of people.  The [Communication Risk](Communication-Risk.md) and [Coordination Risk](Coordination-Risk) sections covered the difficulties inherent in aligning [Internal Models](Glossary#internal-model) so that they cooperate.
+Communication allows us to _share_ information between [Internal Models](Glossary#internal-model) of a whole audience of people.  The [Communication Risk](Communication-Risk.md) and [Coordination Risk](Coordination-Risk.md) sections covered the difficulties inherent in aligning [Internal Models](Glossary#internal-model) so that they cooperate.
 
 ![Relative popularity of "Machine Learning" and "Big Data" as search terms on [Google Trends](https://trends.google.com), 2011-2018 ](images/google-trends.png)
  
@@ -200,7 +200,7 @@ We've considered [Map and Territory Risk](Map-And-Territory-Risk) for individual
  
 > "Now consider the system of scientific journals... Some journals are prestigious. So university hiring committees pay the most attention to publications in that journal. So people with the best, most interesting-looking publications try to send them to that journal. So if a university hiring committee paid an equal amount of attention to publications in lower-prestige journals, they’d end up granting tenure to less prestigious people. Thus, the whole system is a stable equilibrium that nobody can unilaterally defy except at cost to themselves." - [Inadequate Equilibria, _Eleizer Yudkovsky_](https://equilibriabook.com/molochs-toolbox/)
 
-As the book points out, while everyone _persists_ in using an inadequate abstraction, the system is broken.  However, [Coordination](Coordination-Risk) would be required for everyone to _stop_ doing it this way, which is hard work.  (Maps are easier to fix in a top-down hierarchy.)
+As the book points out, while everyone _persists_ in using an inadequate abstraction, the system is broken.  However, [Coordination](Coordination-Risk.md) would be required for everyone to _stop_ doing it this way, which is hard work.  (Maps are easier to fix in a top-down hierarchy.)
 
 Scientific journals are a single example taken from a closely argued book investigating lots of cases of this kind.  It's worth taking the time to read a couple of the chapters on this interesting topic.  (Like Risk-First it is available to read online).
 

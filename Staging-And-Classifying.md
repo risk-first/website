@@ -71,7 +71,7 @@ However over the rest of the [Dependency Risk](Dependency-Risk.md) sections we l
 
 So [Feature Risk](Feature-Risk) and [Dependency Risk](Dependency-Risk.md) are _two sides of the same coin_, they capture the risks in _demand_ and _supply_.   
 
-As shown in the diagram above, relationships of features/dependencies are the basis of [Supply Chains](https://en.wikipedia.org/wiki/Supply_chain) and the world-wide network of goods and services that forms the modern economy.  The incredible complexity of this network mean incredible [Complexity Risk](Complexity-Risk.md), too.  Humans are masters at [coordinating](Coordination-Risk) and managing our dependencies. 
+As shown in the diagram above, relationships of features/dependencies are the basis of [Supply Chains](https://en.wikipedia.org/wiki/Supply_chain) and the world-wide network of goods and services that forms the modern economy.  The incredible complexity of this network mean incredible [Complexity Risk](Complexity-Risk.md), too.  Humans are masters at [coordinating](Coordination-Risk.md) and managing our dependencies. 
 
 ## The Work Continues
 

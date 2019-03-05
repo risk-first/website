@@ -46,7 +46,7 @@ Although this is a collaborative Github project, it's not meant to be an open-en
 Some easy-to-digest ideas that will set the scene for examining the practices later.
 
  - [A Simple Scenario](A-Simple-Scenario.md)
- - [Development Process](Development-Process)
+ - [Development Process](Development-Process.md)
  - [Meeting Reality](Meeting-Reality)
  - [It's Just Risk](Just-Risk)
  - [Evaluating Risk](Evaluating-Risk)
@@ -70,7 +70,7 @@ Risks are often very similar across different software projects.   And, if you k
  - [Process Risk](Process-Risk)
  - [Boundary Risk](Boundary-Risk)
  - [Agency Risk](Agency-Risk.md) 
- - [Coordination Risk](Coordination-Risk)
+ - [Coordination Risk](Coordination-Risk.md)
  - [Map And Territory Risk](Map-And-Territory-Risk)
  - [Operational Risk](Operational-Risk)
  - [Staging And Classifying](Staging-And-Classifying)
@@ -85,7 +85,7 @@ This part is a discussion of the different practices within Software Development
  - Delivery
  - [Design](Design)
  - Documentation
- - [Estimation](Estimates)
+ - [Estimation](Estimates.md)
  - [On-Site-Customer](On-Site-Customer)
  - [Prioritisation](Prioritisation)
  - [Requirements Capture](Requirements-Capture)
