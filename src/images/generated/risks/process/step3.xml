@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-113" name="Goal In Mind" style="kite9-min-width: 800pt;">
+
+    <group style="kite9-layout: down;">
+      <context>
+        <mitigated>
+          <risk class="staff" />
+        </mitigated>
+        <hidden>
+          <risk class="invisibility" />
+        </hidden>
+        <hidden>
+          <risk class="process" />
+        </hidden>
+
+        <label id="id_16">
+          <text>Internal Model</text>
+          <symbols />
+        </label>
+      </context>
+
+      <users id="c">C</users>
+    </group>
+
+    <group style="kite9-layout: down;">
+      <protocol-artifact id="p">P</protocol-artifact>
+    </group>
+
+    <group style="kite9-layout: down;">
+      <context>
+        <mitigated>
+          <risk class="complexity" />
+        </mitigated>
+
+        <label id="id_16">
+          <text>Internal Model</text>
+          <symbols />
+        </label>
+      </context>
+
+      <users id="b">B</users>
+    </group>
+
+    <artifact id="a">A</artifact>
+
+
+    <link drawDirection="RIGHT">
+      <from reference="c" />
+      <fromLabel>
+        <text>Uses</text>
+      </fromLabel>
+      <to reference="p" class="arrow" />
+    </link>
+
+    <link drawDirection="LEFT">
+      <from reference="b" />
+      <fromLabel>
+        <text>Introduces</text>
+      </fromLabel>
+      <to reference="p" class="arrow" />
+    </link>
+
+    <link drawDirection="RIGHT">
+      <from reference="b" />
+      <fromLabel>
+        <text>Provides</text>
+      </fromLabel>
+      <to reference="a" class="arrow" />
+    </link>
+  </diagram>
+</svg:svg>

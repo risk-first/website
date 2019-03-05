@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-145" name="Communication - Model">
+
+    <risk class="communication" />
+    <group style="kite9-layout: right; ">
+      <context style="kite9-layout: down ">
+        <risk class="internal-model" />
+        <risk class="trust" />
+        <risk class="learning-curve" id="learning-curve" />
+        <label>
+          <text>Internal Model</text>
+          <symbols />
+        </label>
+      </context>
+
+      <context style="kite9-layout: down; kite9-sizing: maximize; ">
+        <risk class="message" />
+        <risk class="invisibility" id="invisibility" />
+        <label>
+          <text>Message</text>
+          <symbols />
+        </label>
+      </context>
+
+      <context style="kite9-layout: down; kite9-sizing: maximize; ">
+        <risk class="protocol" id="protocol" />
+        <label>
+          <text>Protocol</text>
+          <symbols />
+        </label>
+      </context>
+      <context style="kite9-layout: down; kite9-sizing: maximize;">
+
+        <risk class="channel" id="channel" />
+
+        <label>
+          <text>Channel</text>
+          <symbols />
+        </label>
+
+      </context>
+    </group>
+
+  </diagram>
+</svg:svg>

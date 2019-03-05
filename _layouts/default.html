@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>{{ page.title | default: site.github.repository_name }} by {{ site.github.owner_name }}</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css" />
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    {% seo %}
+  </head>
+  <body>
+    <a class="github-fork-ribbon" href="https://github.com/risk-first/website" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a> 
+    <div class="wrapper">
+      <header>
+      	<img src="images/R1_logo_black.svg" alt="Risk First Logo" />
+
+        <p class="sitedescription">Home of Risk-First Software Development</p>
+
+        <div class="buttons">
+			<a class="github-button" href="https://github.com/risk-first/website/subscription" data-icon="octicon-eye" data-show-count="true" aria-label="Watch risk-first/website on GitHub">Watch</a>
+			<a class="github-button" href="https://github.com/risk-first/website/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork risk-first/website on GitHub">Fork</a>      
+			<a title="Please star this project in github to be invited to join the Risk First organisation" class="github-button" href="https://github.com/risk-first/website/stargazers" data-icon="octicon-star" aria-label="Stargazers risk-first/website on GitHub">Stars</a>
+		</div>
+
+        <br>
+        <br>
+		<h3>Start Here</h3>
+		<hr>
+        <a href="/">Home</a>
+        <br>
+        <a href="https://github.com/risk-first/website/blob/master/CONTRIBUTING.md">Contributing</a>
+        <br>
+        <a href="Quick-Summary">Quick Summary</a>
+        <br>
+        <a href="A-Simple-Scenario">A Simple Scenario</a>
+        <br>
+        <a href="Risk-Landscape">The Risk Landscape</a>
+        <br>
+        <br>
+		<h3>Discuss</h3>
+  		<hr>
+  		Please <a href="https://github.com/risk-first/website/stargazers">star</a> 
+  		this project in <a href="https://github.com">GitHub</a> 
+  		to be invited to join the 
+  		<a href="https://github.com/orgs/risk-first/teams/risk-first-team">Risk First Organisation</a>.
+        <br>
+        <br>
+        <h3>Publications</h3>
+  		<hr>
+  		<a href="http://a.co/d/eESl9HH"><img width="120px" src="images/Cover_Image_Bordered.png" title="book" /></a>
+        <br>
+        <a href="The-Menagerie">Click Here For Details</a>
+        <br>
+        <br>
+        <br>
+      </header>
+      <section>
+
+     	 {{ content }}
+     	 
+     	 <p><small>Found this interesting?  Please <a href="https://github.com/risk-first/website/stargazers">add your star</a> on GitHub, thanks. </small>
+
+      </section>
+      <footer>
+        <p>
+        	<small>Maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a> on Github Pages.</small>
+        	<br />
+       		<small>Theme derived from minimal by <a href="https://github.com/orderedlist">orderedlist</a></small>
+       		<br />
+       		<small><a href="https://github.com/risk-first/website/blob/master/COPYRIGHT.md">Copyright</a></small>
+       	</p>
+      </footer>
+    </div>
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-11589584-7"></script>
+    <script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'UA-11589584-7');
+    </script>
+
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+  </body>
+</html>

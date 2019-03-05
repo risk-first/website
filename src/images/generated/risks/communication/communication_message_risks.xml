@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-143" name="Communication - Model">
+
+    <group style="kite9-layout: down">
+      <action id="id_24" style="kite9-margin: 20pt; kite9-horizontal-align: left; ">
+        <label>Interpretation</label>
+      </action>
+      <action id="id_8" style="kite9-margin: 20pt; kite9-horizontal-align: left; ">
+        <label>Composition</label>
+      </action>
+    </group>
+
+
+    <context id="c" bordered="true" style="kite9-layout: right; ">
+      <group style="kite9-layout: down">
+
+        <risk class="message" />
+
+        <description>Risks caused by composing and interpreting messages in the communication process.
+        </description>
+      </group>
+
+      <label id="id_16">
+        <text>Attendant Risks</text>
+        <symbols />
+      </label>
+      <group style="kite9-layout: down">
+        <risk class="invisibility" />
+
+        <description>Risks caused by the choice of abstractions we use in communication.
+        </description>
+
+      </group>
+    </context>
+
+  </diagram>
+</svg:svg>

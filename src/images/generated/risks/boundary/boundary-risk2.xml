@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-113" name="Goal In Mind" style="kite9-min-width: 900pt;">
+
+    <context id="c" bordered="true">
+      <group style="kite9-layout: right">
+        <mitigated>
+          <risk id="1" class="boundary" />
+        </mitigated>
+        <mitigated>
+          <risk id="2" class="protocol" />
+        </mitigated>
+        <mitigated>
+          <risk id="3" class="feature" />
+        </mitigated>
+      </group>
+      <label id="id_16">
+        <text>Small Ecosystem</text>
+        <symbols />
+      </label>
+    </context>
+
+    <group style="kite9-layout: down; kite9-horizontal-align: left;">
+      <action>Extension
+        (with backward compatibility)
+      </action>
+    </group>
+
+    <context id="d">
+
+      <risk class="complexity" />
+      <risk id="c1" class="conceptual-integrity" />
+      <risk id="c2" class="learning-curve" />
+
+      <label id="id_16">
+        <text>Large Ecosystem</text>
+        <symbols />
+      </label>
+    </context>
+
+  </diagram>
+</svg:svg>
