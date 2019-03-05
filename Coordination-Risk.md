@@ -22,7 +22,7 @@ But for now, let's crack on and examine where [Coordination Risk](Coordination-R
 
 ## A Model Of Coordination Risk
 
-Earlier, in [Dependency Risk](Dependency-Risk.md), we looked at various resources (time, money, people, events etc) and showed how we could [depend on them](Dependency-Risk.md) taking on risk.<!-- tweet-end -->  Here, let's consider the situation where there is _competition for those dependencies_ due to [Scarcity Risk](Scarcity-Risk):   other agents want to use them in a different way.  
+Earlier, in [Dependency Risk](Dependency-Risk.md), we looked at various resources (time, money, people, events etc) and showed how we could [depend on them](Dependency-Risk.md) taking on risk.<!-- tweet-end -->  Here, let's consider the situation where there is _competition for those dependencies_ due to [Scarcity Risk](Scarcity-Risk.md):   other agents want to use them in a different way.  
 
 ### Law Of Diminishing Returns
 
@@ -70,7 +70,7 @@ Let's unpack this idea, and review some classic problems of coordination, none o
 
 6. **[Race Conditions](https://en.wikipedia.org/wiki/Race_condition)** are where we can't be sure of the result of a calculation, because it is dependent on the ordering of events within a system.  For example, two separate threads writing the same memory at the same time (one ignoring and over-writing the work of the other) is a race.  
 
-7. **Contention**: where there is [Scarcity Risk](Scarcity-Risk) for a [dependency](Dependency-Risk.md), we might want to make sure that everyone gets fair use of it, by taking turns, booking, queueing and so on.  As we saw in [Scarcity Risk](Scarcity-risk), sometimes this is handled for us by the [Dependency](Dependency-Risk.md) itself.  However if it isn't, it's the _users_ of the dependency who'll need to coordinate to use the resource fairly, again, by communicating with each other.
+7. **Contention**: where there is [Scarcity Risk](Scarcity-Risk.md) for a [dependency](Dependency-Risk.md), we might want to make sure that everyone gets fair use of it, by taking turns, booking, queueing and so on.  As we saw in [Scarcity Risk](Scarcity-Risk.md), sometimes this is handled for us by the [Dependency](Dependency-Risk.md) itself.  However if it isn't, it's the _users_ of the dependency who'll need to coordinate to use the resource fairly, again, by communicating with each other.
 
 ## Decision Making
 
@@ -99,12 +99,12 @@ As an individual, do you suffer from [Coordination Risk](Coordination-Risk.md) a
 
 At the top, you have the _least_ consultative styles, and at the bottom, the _most_.   At the top, decisions are made with just the leader's [Internal Model](Glossary.md#Internal-Model), but moving down, the [Internal Models](Glossary.md#Internal-Model) of the _subordinates_ are increasingly brought into play.  
 
-The decisions at the top are faster, but don't do much for mitigating [Coordination Risk](Coordination-Risk.md).  The ones below take longer (incurring [Schedule Risk](Scarcity-Risk#schedule-risk)) but mitigate more [Coordination Risk](Coordination-Risk.md).   Group decision-making inevitably involves everyone _learning_ and improving their [Internal Models](Glossary.md#Internal-Model).   
+The decisions at the top are faster, but don't do much for mitigating [Coordination Risk](Coordination-Risk.md).  The ones below take longer (incurring [Schedule Risk](Scarcity-Risk.md#schedule-risk)) but mitigate more [Coordination Risk](Coordination-Risk.md).   Group decision-making inevitably involves everyone _learning_ and improving their [Internal Models](Glossary.md#Internal-Model).   
 
 The trick is to be able to tell which approach is suitable at which time.   Everyone is expected to make decisions _within their realm of expertise_: you can't have developers continually calling meetings to discuss whether they should be using an [Abstract Factory](https://en.wikipedia.org/wiki/Abstract_factory_pattern) or a [Factory Method](https://en.wikipedia.org/wiki/Factory_method_pattern): it would waste time.  The critical question is therefore, "what's the biggest risk?"
 
  - Is the [Coordination Risk](Coordination-Risk.md) greater?   Are we going to suffer [Dead End Risk](Complexity-Risk.md) if the decision is made wrongly?  What if people don't agree with it?  Poor leadership has an impact on [Morale](Agency-Risk.md#morale-risk) too.  
- - Is the [Schedule Risk](Scarcity-Risk#schedule-risk) greater?  If you have a 1-hour meeting with eight people to decide a decision, that's _one person day_ gone right there:  group decision making is _expensive_.  
+ - Is the [Schedule Risk](Scarcity-Risk.md#schedule-risk) greater?  If you have a 1-hour meeting with eight people to decide a decision, that's _one person day_ gone right there:  group decision making is _expensive_.  
  
 So _organisation_ can reduce [Coordination Risk](Coordination-Risk.md) but to make this work we need more _communication_, and this has attendant complexity and time costs.  
 
@@ -128,7 +128,7 @@ Specifically this describes a process whereby a new group will form and then be 
 
 Since [Coordination](Coordination-Risk.md) is about [Resource Allocation](Coordination-Risk.md#problems-of-coordination) the skills of staff can potentially be looked at as resources to allocate.  This means handling [Coordination Risk](Coordination-Risk.md) issues like:
 
- - People leaving, taking their [Internal Models](Glossary.md#Internal-Model) and expertise with them ([Key Person Risk](Scarcity-Risk#Staff-Risk)).
+ - People leaving, taking their [Internal Models](Glossary.md#Internal-Model) and expertise with them ([Key Person Risk](Scarcity-Risk.md#Staff-Risk)).
  - People requiring external training, to understand new tools and techniques ([Learning Curve Risk](Communication-Risk.md#learning-curve-risk)).
  - People being protective about their knowledge in order to protect their jobs ([Agency Risk](Agency-Risk.md)). 
  
@@ -143,7 +143,7 @@ Vroom and Yetton's organisational model isn't relevant to just teams of people. 
  - **Tissues**, which contain...
  - **Cells** of different types.  (Even cells are complex systems containing multiple different, communicating sub-systems.)  
  
-There is huge attendant [Coordination Risk](Coordination-Risk.md) to running a complex multi-cellular system like the human body, but given the success of humanity as a species, you must conclude that these steps on the _evolutionary_ [Risk Landscape](Risk-Landscape) have benefited us in our ecological niche.
+There is huge attendant [Coordination Risk](Coordination-Risk.md) to running a complex multi-cellular system like the human body, but given the success of humanity as a species, you must conclude that these steps on the _evolutionary_ [Risk Landscape](Risk-Landscape.md) have benefited us in our ecological niche.
 
 ### Decision Making
 

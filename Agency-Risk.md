@@ -102,7 +102,7 @@ Let's look at three common ways to mitigate [Agency Risk](Agency-Risk.md):  [Mon
 
 A the core of the Principal-Agent Problem is the issue that we _want_ our agents to do work for us so we don't have the responsibility of doing it ourselves.  However, we pick up the second-order responsibility of managing the agents instead.  
 
-As a result (and as shown in the above diagram), we need to _Monitor_ the agents.  The price of mitigating [Agency Risk](Agency-Risk.md) this way is that we have to spend time doing the monitoring ([Schedule Risk](Scarcity-Risk#schedule-risk)) and we have to understand what the agents are doing ([Complexity Risk](Complexity-Risk.md)).  
+As a result (and as shown in the above diagram), we need to _Monitor_ the agents.  The price of mitigating [Agency Risk](Agency-Risk.md) this way is that we have to spend time doing the monitoring ([Schedule Risk](Scarcity-Risk.md#schedule-risk)) and we have to understand what the agents are doing ([Complexity Risk](Complexity-Risk.md)).  
 
 Monitoring of _software process_ agents is an important part of designing reliable systems and it makes perfect sense that this would also apply to _human_ agents too.  But for people, the _knowledge of being monitored_ can instil corrective behaviour.  This is known as the Hawthorne Effect:
 
@@ -152,7 +152,7 @@ But _extrinsic motivation_ is a complex, difficult-to-apply tool.  In [Map And T
 
 ![Collective Code Ownership, Individual Responsibility](images/generated/risks/agency/cco.png)
 
-Tools like [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming) and [Collective Code Ownership](https://en.wikipedia.org/wiki/Collective_ownership) are about mitigating [Staff Risks](Scarcity-Risk#staff-risk) like [Key Person Risk](https://en.wikipedia.org/wiki/Key_person_insurance#Key_person_definition) and [Learning Curve Risk](Communication-Risk.md#learning-curve-risk), but these push in the opposite direction to _individual responsibility_.   
+Tools like [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming) and [Collective Code Ownership](https://en.wikipedia.org/wiki/Collective_ownership) are about mitigating [Staff Risks](Scarcity-Risk.md#staff-risk) like [Key Person Risk](https://en.wikipedia.org/wiki/Key_person_insurance#Key_person_definition) and [Learning Curve Risk](Communication-Risk.md#learning-curve-risk), but these push in the opposite direction to _individual responsibility_.   
 
 This is an important consideration:  in adopting _those_ tools, you are necessarily setting aside certain tools to manage [Agency Risk](Agency-Risk.md) as a result.
 

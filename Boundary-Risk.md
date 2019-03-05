@@ -14,7 +14,7 @@ As shown in the above diagram, [Boundary Risk](Boundary-Risk) is the risk we fac
 - Although I eat cereals for breakfast, I don't have [Boundary Risk](Boundary-Risk) on them.  If the supermarket runs out of cereals when I go, I can just buy some other food and eat that.
 - However the hot water system in my house uses gas.  If that's not available I can't just switch to using oil or solar without cost.  There is [Boundary Risk](Boundary-Risk), but it's low because the supply of gas is plentiful and seems like it will stay that way.
 
-In terms of the [Risk Landscape](Risk-Landscape), [Boundary Risk](Boundary-Risk) is exactly as it says:  a _boundary_, _wall_ or other kind of obstacle in your way to making a move you want to make. <!-- tweet-end -->  This changes the nature of the [Risk Landscape](Glossary.md#risk-landscape), and introduces a maze-like component to it.  It also means that we have to make _commitments_ about which way to go, knowing that our future paths are constrained by the decisions we make.
+In terms of the [Risk Landscape](Risk-Landscape.md), [Boundary Risk](Boundary-Risk) is exactly as it says:  a _boundary_, _wall_ or other kind of obstacle in your way to making a move you want to make. <!-- tweet-end -->  This changes the nature of the [Risk Landscape](Glossary.md#risk-landscape), and introduces a maze-like component to it.  It also means that we have to make _commitments_ about which way to go, knowing that our future paths are constrained by the decisions we make.
 
 As we discussed in [Complexity Risk](Complexity-Risk.md), there is always the chance we end up at a [Dead End](Complexity-Risk.md#dead-end-risk), having done work that we need to throw away.  In this case, we'll have to head back and make a different decision.
 
@@ -22,7 +22,7 @@ As we discussed in [Complexity Risk](Complexity-Risk.md), there is always the ch
 
 In software development, although we might face [Boundary Risk](Boundary-Risk) choosing staff or offices, most of the everyday dependency commitments we have to make are around _abstractions_. 
 
-As discussed in [Software Dependency Risk](Software-Dependency-Risk), if we are going to use a software tool as a dependency, we have to accept the complexity of its [protocols](Communication-Risk.md#protocols).  You have to use its protocol: it won't come to you.   
+As discussed in [Software Dependency Risk](Software-Dependency-Risk.md), if we are going to use a software tool as a dependency, we have to accept the complexity of its [protocols](Communication-Risk.md#protocols).  You have to use its protocol: it won't come to you.   
 
 ![Our System receives data from the `input`, translates it and sends it to the `output`.  But which dependency should we use for the translation, if any?](images/generated/risks/boundary/choices.png)
 
@@ -30,7 +30,7 @@ Let's take a look at a hypothetical system structure, in the diagram above.  In 
 
  - We could transform via library 'a', using the [Protocols](Communication-Risk.md#protocol-risk) of 'a', and having a dependency on 'a'.
  - We could use library 'b', using the [Protocols](Communication-Risk.md#protocol-risk) of 'b', and having a dependency on 'b'. 
- - We could use neither, and avoid the dependency, but potentially pick up lots more [Codebase Risk](Complexity-Risk.md#codebase-risk) and [Schedule Risk](Scarcity-Risk#schedule-risk) because we have to code our own alternative to 'a' and 'b'.
+ - We could use neither, and avoid the dependency, but potentially pick up lots more [Codebase Risk](Complexity-Risk.md#codebase-risk) and [Schedule Risk](Scarcity-Risk.md#schedule-risk) because we have to code our own alternative to 'a' and 'b'.
 
 The choice of approach presents us with [Boundary Risk](Boundary-Risk) because we don't know that we'll necessarily be successful with any of these options until we _go down the path_ of committing to one:
 
@@ -40,7 +40,7 @@ The choice of approach presents us with [Boundary Risk](Boundary-Risk) because w
  
 ... and so on.
 
-This is a toy example, but in real life this dilemma occurs when we choose between database vendors, cloud hosting platforms, operating systems, software libraries etc. and it was a big factor in our analysis of [Software Dependency Risk](Software-Dependency-Risk).
+This is a toy example, but in real life this dilemma occurs when we choose between database vendors, cloud hosting platforms, operating systems, software libraries etc. and it was a big factor in our analysis of [Software Dependency Risk](Software-Dependency-Risk.md).
 
 ## Factors In Boundary Risk
  
@@ -68,7 +68,7 @@ But crucially, the underlying abstractions of WordPress and Drupal are different
 
 > "... a set of businesses functioning as a unit and interacting with a shared market for software and services, together with relationships among them. These relationships are frequently underpinned by a common technological platform and operate through the exchange of information, resources, and artifacts." - [Software Ecosystem, _Wikipedia_](https://en.wikipedia.org/wiki/Software_ecosystem)
 
-You can think of the ecosystem as being like the footprint of a town or a city, consisting of the buildings, transport network and the people that live there.  Within the city, and because of the transport network and the amenities available, it's easy to make rapid, useful moves on the [Risk Landscape](Risk-Landscape).  In a software ecosystem it's the same: the ecosystem has gathered together to provide a way to mitigate various different [Feature Risks](Feature-Risk.md) in a common way.
+You can think of the ecosystem as being like the footprint of a town or a city, consisting of the buildings, transport network and the people that live there.  Within the city, and because of the transport network and the amenities available, it's easy to make rapid, useful moves on the [Risk Landscape](Risk-Landscape.md).  In a software ecosystem it's the same: the ecosystem has gathered together to provide a way to mitigate various different [Feature Risks](Feature-Risk.md) in a common way.
 
 Ecosystem size is one key determinant of [Boundary Risk](Boundary-Risk):
   
@@ -114,7 +114,7 @@ The above chart is an example of this: look at how the number of public classes 
 
 #### Backward Compatibility
 
-As we saw in [Software Dependency Risk](Software-Dependency-Risk), The art of good design is to afford the greatest increase in functionality with the smallest increase in  complexity possible, and this usually means [Refactoring](https://en.wikipedia.org/wiki/Refactoring).  But, this is at odds with [Backward Compatibility](Communication-Risk.md#backward-compatibility).
+As we saw in [Software Dependency Risk](Software-Dependency-Risk.md), The art of good design is to afford the greatest increase in functionality with the smallest increase in  complexity possible, and this usually means [Refactoring](https://en.wikipedia.org/wiki/Refactoring).  But, this is at odds with [Backward Compatibility](Communication-Risk.md#backward-compatibility).
 
 Each new version has a greater functional scope than the one before (pushing back [Boundary Risk](Boundary-Risk)), making the platform more attractive to build solutions in.   But this increases the [Complexity Risk](Complexity-Risk.md) as there is more functionality to deal with.  
 

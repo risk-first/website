@@ -184,7 +184,7 @@ I'm not an expert in physics _at all_, and so there is every chance that I am pu
 
 If we want to move _fast_ we need simple codebases. <!-- tweet-end -->
 
-At a basic level, [Complexity Risk](Complexity-Risk.md) heavily impacts on [Schedule Risk](Scarcity-Risk#schedule-risk):  more complexity means you need more force to get things done, which takes longer.
+At a basic level, [Complexity Risk](Complexity-Risk.md) heavily impacts on [Schedule Risk](Scarcity-Risk.md#schedule-risk):  more complexity means you need more force to get things done, which takes longer.
 
 ## Technical Debt
 
@@ -192,7 +192,7 @@ The most common way we talk about [Complexity Risk](Complexity-Risk.md) in softw
 
 > "Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite... The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organisations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise." - [Ward Cunningham, 1992, _Wikipedia, Technical Debt_](https://en.wikipedia.org/wiki/Technical_debt)
 
-Building a low-complexity first-time solution is often a waste:  in the first version, we're usually interested in reducing [Feature Risk](Feature-Risk.md) as fast as possible. That is, putting working software in front of users to get [feedback](Meeting-Reality.md).  We would rather carry [Complexity Risk](Complexity-Risk.md) than take on more attendant [Schedule Risk](Scarcity-Risk#schedule-risk).
+Building a low-complexity first-time solution is often a waste:  in the first version, we're usually interested in reducing [Feature Risk](Feature-Risk.md) as fast as possible. That is, putting working software in front of users to get [feedback](Meeting-Reality.md).  We would rather carry [Complexity Risk](Complexity-Risk.md) than take on more attendant [Schedule Risk](Scarcity-Risk.md#schedule-risk).
 
 So a quick-and-dirty, over-complex implementation mitigates the same [Feature Risk](Feature-Risk.md) and allows you to [Meet Reality](Meeting-Reality.md) faster.  
 
@@ -251,7 +251,7 @@ At this point, you realise you're in a **Dead End**:
 
 Whichever option you choose, this is a [Dead End](#dead-end-risk) because with hindsight, it would probably have been better to do authentication in a common way _once_.  But it's hard to see these dead-ends up-front because of the complexity of the system in front of you.
  
-Sometimes, the path across the [Risk Landscape](Risk-Landscape) will take you to dead ends, and the only benefit to be gained is experience.  No one deliberately chooses a dead end - often you can take an action that doesn't pay off, but frequently the dead end appears from nowhere:  it's a [Hidden Risk](Glossary.md#hidden-risk).  The source of a lot of this hidden risk is the complexity of the [risk landscape](Glossary.md#risk-landscape).
+Sometimes, the path across the [Risk Landscape](Risk-Landscape.md) will take you to dead ends, and the only benefit to be gained is experience.  No one deliberately chooses a dead end - often you can take an action that doesn't pay off, but frequently the dead end appears from nowhere:  it's a [Hidden Risk](Glossary.md#hidden-risk).  The source of a lot of this hidden risk is the complexity of the [risk landscape](Glossary.md#risk-landscape).
 
 [Version Control Systems](https://en.wikipedia.org/wiki/Version_control) like [Git](https://en.wikipedia.org/wiki/Git) are a useful mitigation of [Dead-End Risk](Complexity-Risk.md#dead-end-risk), because using them means that at least you can _go back_ to the point where you made the bad decision and go a different way.  Additionally, they provide you with backups against the often inadvertent [Dead-End Risk](Complexity-Risk.md#dead-end-risk) of someone wiping the hard-disk.
 
@@ -298,7 +298,7 @@ Although modern languages include plenty of concurrency primitives (such as the 
 
 Recently, languages such as [Clojure](https://clojure.org) have introduced [persistent collections](https://en.wikipedia.org/wiki/Persistent_data_structure) to alleviate concurrency issues.  The basic premise is that any time you want to _change_ the contents of a collection, you get given back a _new collection_.  So, any collection instance is immutable once created.  The trade-off is again speed to mitigate [Complexity Risk](Complexity-Risk.md).  
 
-An important lesson here is that choice of language can reduce complexity: and we'll come back to this in [Software Dependency Risk](Software-Dependency-Risk).
+An important lesson here is that choice of language can reduce complexity: and we'll come back to this in [Software Dependency Risk](Software-Dependency-Risk.md).
  
 ### Networking / Security
 
@@ -310,7 +310,7 @@ In the case of security considerations, exploits _thrive_ on the complexity of y
 
 Luckily, most good languages include cryptographic libraries that you can include to mitigate these [Complexity Risks](Complexity-Risk.md) from your own code-base.  
 
-This is a strong argument for the use of libraries.  But when should you use a library and when should you code-your-own?  This is again covered in the section on [Software Dependency Risk](Software-Dependency-Risk).  
+This is a strong argument for the use of libraries.  But when should you use a library and when should you code-your-own?  This is again covered in the section on [Software Dependency Risk](Software-Dependency-Risk.md).  
 
 ### The Environment
 

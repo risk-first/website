@@ -76,7 +76,7 @@ Let's look at an example of how that can happen in a step-wise way.
 
 ![Step 2: team `B` doing `A` for clients `C`.  Complexity Risk is transferred to B, but C pick up Staff Risk.](images/generated/risks/process/step2.png)
 
-2.  Because `A` is risky, a new team (`B`) is spun up to deal with the [Complexity Risk](Complexity-Risk.md), which might let `C` get on with their "proper" jobs.  As shown in the diagram above, this is really useful:  `C`'s is job much easier (reduced [Complexity Risk](Complexity-Risk.md)) as they have an easier path to `A` than before.  But the risk for `A` hasn't really gone - they're now just dependent on `B` instead.  When members of `B` fail to deliver, this is [Staff Risk](Scarcity-Risk#staff-risk) for `C`.   
+2.  Because `A` is risky, a new team (`B`) is spun up to deal with the [Complexity Risk](Complexity-Risk.md), which might let `C` get on with their "proper" jobs.  As shown in the diagram above, this is really useful:  `C`'s is job much easier (reduced [Complexity Risk](Complexity-Risk.md)) as they have an easier path to `A` than before.  But the risk for `A` hasn't really gone - they're now just dependent on `B` instead.  When members of `B` fail to deliver, this is [Staff Risk](Scarcity-Risk.md#staff-risk) for `C`.   
 
 ![Step 3: team `B` formalises the dependency with a Process](images/generated/risks/process/step3.png)
 

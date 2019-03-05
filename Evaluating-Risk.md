@@ -12,7 +12,7 @@ Here, I am going to re-cap on some pre-existing risk management theory in order 
 Most developers are familiar with recording issues in an issue tracker.  For all of the same reasons, it's good practice to record the risks you face running a project or an operation in a [Risk Register](https://en.wikipedia.org/wiki/Risk_register).  Typically, this will include for each risk:
 
  - The **name** of the risk, or other identifier.
- - A **categories** to which the risk belongs (this is the focus of the [Risk Landscape](Risk-Landscape) section in Part 2).
+ - A **categories** to which the risk belongs (this is the focus of the [Risk Landscape](Risk-Landscape.md) section in Part 2).
  - A **brief description** or name of the risk to make the risk easy to discuss.
  - Some estimate for the **Impact**, **Probability** or **Risk Score** of the risk.
  - Proposed actions and a log of the progress made to manage the risk.
@@ -39,7 +39,7 @@ In a financial context (or a gambling one), we can consider the overall **Risk S
 
 Risk Management in the finance industry _starts_ here and gets more complex.  But often (especially on a software project), it's better to skip all this, and just figure out a Risk Score.  This is because if you think about "impact", it implies a definite, discrete event occurring (or not occurring) and asks you then to consider the probability of that. 
 
-Risk-First takes a view that risks are a continuous quantity, more like _money_ or _water_:  by taking an action before delivering a project you might add a degree of [Schedule Risk](Scarcity-Risk#schedule-risk), but decrease the [Operational Risk](Operational-Risk.md) later on by a greater amount.   
+Risk-First takes a view that risks are a continuous quantity, more like _money_ or _water_:  by taking an action before delivering a project you might add a degree of [Schedule Risk](Scarcity-Risk.md#schedule-risk), but decrease the [Operational Risk](Operational-Risk.md) later on by a greater amount.   
 
 ## Risk Matrix
 
@@ -131,7 +131,7 @@ The diagram above reproduces a figure from [Rapid Development](http://a.co/d/ddW
 
 ![Pillars, re-arranged](images/generated/introduction/pillars_kite9.png)
 
-As we will see, _Speed_ (or [Schedule Risk](Scarcity-Risk#schedule-risk) as we will term it) is one risk amongst others that need to be considered from a risk-management perspective.  There's no point in prioritising _speed_ if the software fails in production due to [Operational Risk](Operational-Risk.md) issues and damages trust in the product.
+As we will see, _Speed_ (or [Schedule Risk](Scarcity-Risk.md#schedule-risk) as we will term it) is one risk amongst others that need to be considered from a risk-management perspective.  There's no point in prioritising _speed_ if the software fails in production due to [Operational Risk](Operational-Risk.md) issues and damages trust in the product.
 
 ### Eisenhower's Box
 
@@ -197,7 +197,7 @@ Enough with the numbers and the theory:  we need a practical framework, rather t
 - First, there isn't enough scientific evidence for an approach like this.  We _can_ look at collected data about IT projects, but techniques and tools advance rapidly.
 - Second, IT projects have too many confounding factors, such as experience of the teams, 
 technologies used etc.  That is, the risks faced by IT projects are _too diverse_ and _hard to quantify_ to allow for meaningful comparison from one to the next.
-- Third, as soon as you _publish a date_ it changes the expectations of the project (see [Student Syndrome](Scarcity-Risk#student-syndrome)).
+- Third, as soon as you _publish a date_ it changes the expectations of the project (see [Student Syndrome](Scarcity-Risk.md#student-syndrome)).
 - Fourth, metrics get [misused](Map-And-Territory-Risk.md) and [gamed](Agency-Risk.md) (as we will see in a later chapter).
 
 Reality is messy.  Dressing it up with numbers doesn't change that and you risk [fooling yourself](Map-And-Territory-Risk.md).  If this is the case, is there any hope at all in what we're doing?  Yes:   _forget precision_.  You should, with experience, be able to hold up two separate risks and answer the question, "is this one bigger than this one?"  

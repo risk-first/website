@@ -19,7 +19,7 @@ So, let's see how this kind of recursion looks on our model.
 
 ![Taking actions changes reality, but changes your model of the risks too](images/generated/introduction/model_vs_reality_2.png).
 
-## Navigating the "[Risk Landscape](Risk-Landscape)"
+## Navigating the "[Risk Landscape](Risk-Landscape.md)"
 
 The diagram above shows _just one possible action_, in reality, you'll have choices.  We often have multiple ways of achieving a [Goal In Mind](Glossary.md#Goal-In-Mind).  
 
@@ -27,9 +27,9 @@ What's the best way?
 
 I would argue that the best way is the one which mitigates the most existing risk while accruing the least attendant risk to get it done.  
 
-Ideally, when you take an action, you are trading off a big risk for a smaller one.  Take Unit Testing for example.  Clearly, writing Unit Tests adds to the amount of development work, so on its own, it adds [Schedule Risk](Scarcity-Risk#schedule-risk).   However, if you write _just enough_ of the right Unit Tests, you should be short-cutting the time spent finding issues in the User Acceptance Testing (UAT) stage, so you're hopefully trading off a larger [Schedule Risk](Scarcity-Risk#schedule-risk) from UAT and adding a smaller [Schedule Risk](Scarcity-Risk#schedule-risk) to Development.  There are other benefits of Unit Testing too:  once written, a suite of unit tests is almost cost-free to run repeatedly, whereas repeating a UAT is costly as it involves people's time.
+Ideally, when you take an action, you are trading off a big risk for a smaller one.  Take Unit Testing for example.  Clearly, writing Unit Tests adds to the amount of development work, so on its own, it adds [Schedule Risk](Scarcity-Risk.md#schedule-risk).   However, if you write _just enough_ of the right Unit Tests, you should be short-cutting the time spent finding issues in the User Acceptance Testing (UAT) stage, so you're hopefully trading off a larger [Schedule Risk](Scarcity-Risk.md#schedule-risk) from UAT and adding a smaller [Schedule Risk](Scarcity-Risk.md#schedule-risk) to Development.  There are other benefits of Unit Testing too:  once written, a suite of unit tests is almost cost-free to run repeatedly, whereas repeating a UAT is costly as it involves people's time.
 
-You can think of [Taking Action](Glossary.md#taking-action) as moving your project on a "[Risk Landscape](Risk-Landscape)":  ideally, when you take an action, you move from some place with worse risk to somewhere more favourable.
+You can think of [Taking Action](Glossary.md#taking-action) as moving your project on a "[Risk Landscape](Risk-Landscape.md)":  ideally, when you take an action, you move from some place with worse risk to somewhere more favourable.
 
 ![Navigating The Risk Landscape](images/generated/introduction/risk_landscape_1.png)
 
@@ -96,7 +96,7 @@ But, there is always the opposite opinion:  [You _Are_ Gonna Need It](http://wik
 Now, we can say:  do the work _if there is a worthwhile [Payoff](Glossary.md#payoff)_.  
 
  - Logging statements are _good_, because otherwise, you're increasing the risk that in production, no one will be able to understand _how the software went wrong_.
- - However, adding them takes time, which might introduce [Schedule Risk](Scarcity-Risk#schedule-risk).
+ - However, adding them takes time, which might introduce [Schedule Risk](Scarcity-Risk.md#schedule-risk).
  
 So, it's a trade-off: continue adding logging statements so long as you feel that overall, the activity pays off reducing overall risk.
 
@@ -112,7 +112,7 @@ Our risk-centric view of this strategy would be:
 - Therefore, the biggest [Payoff](Glossary.md#payoff) is likely to be the one with the least [Attendant Risk](Glossary.md#attendant-risk).
 - So, usually this is going to be the simplest thing.
 
-So, "Do The Simplest Thing That Could Possibly Work" is really a helpful guideline for Navigating the [Risk Landscape](Risk-Landscape), but this analysis shows clearly where it's left wanting:
+So, "Do The Simplest Thing That Could Possibly Work" is really a helpful guideline for Navigating the [Risk Landscape](Risk-Landscape.md), but this analysis shows clearly where it's left wanting:
 
  - _Don't_ do the simplest thing if there are other things with a better [Payoff](Glossary.md#payoff) available. 
 

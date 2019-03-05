@@ -23,7 +23,7 @@ description: List of all types of risk discussed in Risk-First.
 |[Feature-Drift](Feature-Risk.md#feature-drift-risk)|Risk that the features required by clients will change and evolve over time.   |
 |[Feature](Feature-Risk.md)|Risks you face when providing features for your clients.|
 |[Feature-Fit](Feature-Risk.md#feature-fit-risk)|Risk that the needs of the client don't coincide with services provided by the supplier.|
-|[Funding](Scarcity-Risk#funding-risk)|A particular scarcity risk, due to lack of funding.|
+|[Funding](Scarcity-Risk.md#funding-risk)|A particular scarcity risk, due to lack of funding.|
 |[Implementation](Feature-Risk.md#implementation-risk)|Risk that the functionality you are providing doesn't match the features the client is expecting, due to poor or partial implementation.|
 |[Internal-Model](Communication-Risk.md#internal-model-risk)|Risks arising from insufficient or erroneous internal models of reality.|
 |[Invisibility](Communication-Risk.md#invisibility-risk)|Risks caused by the choice of abstractions we use in communication.|
@@ -32,15 +32,15 @@ description: List of all types of risk discussed in Risk-First.
 |[Market](Feature-Risk.md#market-risk)|Risk that the value your clients place on the features you supply will change, over time.|
 |[Message](Communication-Risk.md#message-risk)|Risks caused by the difficulty of composing and interpreting messages in the communication process.|
 |[Operational](Operational-Risk.md)|Risks of losses or reputational damage caused by failing processes or real-world events.|
-|[Opportunity](Scarcity-Risk#opportunity-risk)|Risk that a particular set of market conditions.|
+|[Opportunity](Scarcity-Risk.md#opportunity-risk)|Risk that a particular set of market conditions.|
 |[Process](Process-Risk.md)|Risks due to the fact that when dealing with a dependency, we have to follow a particular protocol of communication, which may not work out the way we want.|
 |[Protocol](Communication-Risk.md#protocol-risk)|Risks due to the failure of encoding or decoding messages between two parties in communication.  |
-|[Red-Queen](Scarcity-Risk#red-queen-risk)|The general risk that the competitive environment we operate within changes over time.|
+|[Red-Queen](Scarcity-Risk.md#red-queen-risk)|The general risk that the competitive environment we operate within changes over time.|
 |[Regression](Feature-Risk.md#regression-risk)|Risk that the functionality you provide changes for the worse, over time.|
 |[Reliability](Dependency-Risk.md#reliability-risk)|Risks of not getting benefit from a dependency due to it's reliability.|
-|[Scarcity](Scarcity-Risk)|Risk of not being able to access a dependency in a timely fashion due to it's scarcity.|
-|[Schedule](Scarcity-Risk#schedule-risk)|The aspect of dependency risk related to time.|
+|[Scarcity](Scarcity-Risk.md)|Risk of not being able to access a dependency in a timely fashion due to it's scarcity.|
+|[Schedule](Scarcity-Risk.md#schedule-risk)|The aspect of dependency risk related to time.|
 |[Security](Agency-Risk.md#security)|Agency Risks due to actors from outside the system.|
-|[Software Dependency](Software-Dependency-Risk)|Dependency Risk due to software dependencies.|
-|[Staff](Scarcity-Risk#staff-risk)|The aspect of dependency risks related to employing people.|
+|[Software Dependency](Software-Dependency-Risk.md)|Dependency Risk due to software dependencies.|
+|[Staff](Scarcity-Risk.md#staff-risk)|The aspect of dependency risks related to employing people.|
 |[Trust-And-Belief](Communication-Risk.md#trust--belief-risk)|Risk that a party we are communicating with can't be trusted, as it has agency or is unreliable in some other way.  |

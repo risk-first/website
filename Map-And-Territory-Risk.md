@@ -128,7 +128,7 @@ The devil is in the detail.
 
 ### Reality Evolves
 
-In the same way that [markets evolve to demand more features](Scarcity-Risk#red-queen-risk), our behaviour evolves to incorporate new ideas.  The more popular an idea is, the more people will modify their behaviour as a result of it, and the more the world will change.   
+In the same way that [markets evolve to demand more features](Scarcity-Risk.md#red-queen-risk), our behaviour evolves to incorporate new ideas.  The more popular an idea is, the more people will modify their behaviour as a result of it, and the more the world will change.   
 
 In the case of metrics this is where they start being used for more than just indicators but as measures of performance or targets:
 

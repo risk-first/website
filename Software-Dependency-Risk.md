@@ -128,7 +128,7 @@ But it also hugely increases [Communication Risk](Communication-Risk.md) because
 
 There are a couple of ways of doing this:
 
- - **Standards**:  if component **B** is a database, a queue, mail gateway or something else with a standard interface, then you're in luck.   Write **A** to those standards, and find a cheap, simple implementation to test with.  This gives you time to sort out exactly what implementation of **B** you're going for.  This is not a great long-term solution, because obviously, you're not using the _real_ dependency- you might get surprised when the behaviour of the real component is subtly different.  But it can reduce [Schedule Risk](Scarcity-Risk#schedule-risk) in the short-term.
+ - **Standards**:  if component **B** is a database, a queue, mail gateway or something else with a standard interface, then you're in luck.   Write **A** to those standards, and find a cheap, simple implementation to test with.  This gives you time to sort out exactly what implementation of **B** you're going for.  This is not a great long-term solution, because obviously, you're not using the _real_ dependency- you might get surprised when the behaviour of the real component is subtly different.  But it can reduce [Schedule Risk](Scarcity-Risk.md#schedule-risk) in the short-term.
 
  - **Coding To Interfaces**:  if standards aren't an option, but the surface area of **B** that **A** uses is quite small and obvious, you can write a small interface for it, and work behind that, using a [Mock](https://en.wikipedia.org/wiki/Mock_object) for **B** while you're waiting for finished component.  Write the interface to cover only what **A** _needs_, rather than everything that **B** _does_ in order to minimise the risk of [Leaky Abstractions](https://en.wikipedia.org/wiki/Leaky_abstraction).
 
@@ -144,7 +144,7 @@ In essence, this is Conway's Law:
 
 ### 2.  Software Libraries
 
-By choosing a particular software library, we are making a move on the [Risk Landscape](Risk-Landscape) in the hope of moving to a place with more favourable risks. <!-- tweet-end --> Typically, using library code offers a [Schedule Risk](Scarcity-Risk#schedule-risk) and [Complexity Risk](Complexity-Risk.md) [Silver Bullet](Silver-Bullets) - a high-speed route over the risk landscape to somewhere nearer where we want to be.  But, in return we expect to pick up:
+By choosing a particular software library, we are making a move on the [Risk Landscape](Risk-Landscape.md) in the hope of moving to a place with more favourable risks. <!-- tweet-end --> Typically, using library code offers a [Schedule Risk](Scarcity-Risk.md#schedule-risk) and [Complexity Risk](Complexity-Risk.md) [Silver Bullet](Silver-Bullets.md) - a high-speed route over the risk landscape to somewhere nearer where we want to be.  But, in return we expect to pick up:
 
 - **[Communication Risk](Communication-Risk.md)**: because we now have to learn how to communicate with this new dependency.
 - **[Boundary Risk](Boundary-Risk)**: - because now are limited to using the functionality provided by this dependency.  We have chosen it over alternatives and changing to something else would be more work and therefore costly.   
@@ -194,7 +194,7 @@ Sometimes, the amount of complexity _goes up_ when you use a dependency for _goo
 Businesses opt for Software-as-a-Service (SaaS) because:
 
 - It promises to vastly reduce the [Complexity Risk](Complexity-Risk.md) they face in their organisations. e.g. managing the software or making changes to it.
-- Payment is usually based on _usage_, mitigating [Funding Risk](Scarcity-Risk#funding-risk).  e.g. Instead of having to pay up-front for a license and hire in-house software administrators, they can leave this function to the experts.
+- Payment is usually based on _usage_, mitigating [Funding Risk](Scarcity-Risk.md#funding-risk).  e.g. Instead of having to pay up-front for a license and hire in-house software administrators, they can leave this function to the experts.
 - Potentially, you out-source the [Operational Risk](Operational-Risk.md) to a third party. e.g. ensuring availability, making sure data is secure and so on.
 
 SaaS is now a very convenient way to provide _commercial_ software.   Popular examples of SaaS might be [SalesForce](https://en.wikipedia.org/wiki/Salesforce.com), or [GMail](https://en.wikipedia.org/wiki/Gmail).  Both of which follow the commonly-used [Freemium](https://en.wikipedia.org/wiki/Freemium) model, where the basic service is provided free but upgrading to a paid account gives extra benefits.  
@@ -225,12 +225,12 @@ Let's expand this view slightly and look at where different pieces of software s
 ![Software Dependencies, Pricing, Delivery Matrix Risk Profiles](images/generated/risks/software-dependency/software_dependency_table_3_sideways.png)
 
 - Where there is value in **the [Network Effect](https://en.wikipedia.org/wiki/Network_effect)** it's often a sign that the software will be free, or open source<!-- tweet-end -->:  programming languages and Linux are the obvious examples of this.  Bugs are easier to find when there are lots of eyes looking, and learning the skill to use the software has less [Boundary Risk](Boundary-Risk) if you know you'll be able to use it at any point in the future.
-- At the other end of the spectrum, clients will happily pay for software if it clearly **reduces [Operational Risk](Operational-Risk.md)**.  Take [Amazon Web Services (AWS)](https://en.wikipedia.org/wiki/Amazon_Web_Services).  The essential trade here is that you substitute the complexity of hosting and maintaining various pieces of hardware, in exchange for metered payments ([Funding Risk](Scarcity-Risk#Funding-Risk) for you).  Since the AWS _interfaces_ are specific to Amazon, there is significant [Boundary Risk](Boundary-Risk) in choosing this option.
+- At the other end of the spectrum, clients will happily pay for software if it clearly **reduces [Operational Risk](Operational-Risk.md)**.  Take [Amazon Web Services (AWS)](https://en.wikipedia.org/wiki/Amazon_Web_Services).  The essential trade here is that you substitute the complexity of hosting and maintaining various pieces of hardware, in exchange for metered payments ([Funding Risk](Scarcity-Risk.md#Funding-Risk) for you).  Since the AWS _interfaces_ are specific to Amazon, there is significant [Boundary Risk](Boundary-Risk) in choosing this option.
 - In the middle there are lots of **substitute options** and therefore high competition.  Because of this prices are pushed towards zero and therefore often advertising is used to monetise the product.  [Angry Birds](https://en.wikipedia.org/wiki/Angry_Birds) is a classic example:  initially, it had demo and paid versions, however [Rovio](https://en.wikipedia.org/wiki/Rovio_Entertainment) discovered there was much more money to be made through advertising than from the [paid-for app](https://www.deconstructoroffun.com/blog/2017/6/11/how-angry-birds-2-multiplied-quadrupled-revenue-in-a-year).
 
 ## Software Dependencies as Features
 
-So far we've looked at different _approaches_ to software dependencies and the risk profiles they present.  But the category is less important than the specifics:  we are choosing _specific tools for specific tasks_.  [Software Dependencies](Software-Dependency-Risk) allows us to construct dependency networks to give us all kinds of features and mitigate all kinds of risk.  That is, the features we are looking for in a dependency _are to mitigate some kind of risk_.
+So far we've looked at different _approaches_ to software dependencies and the risk profiles they present.  But the category is less important than the specifics:  we are choosing _specific tools for specific tasks_.  [Software Dependencies](Software-Dependency-Risk.md) allows us to construct dependency networks to give us all kinds of features and mitigate all kinds of risk.  That is, the features we are looking for in a dependency _are to mitigate some kind of risk_.
 
 For example, I might start using [WhatsApp](https://en.wikipedia.org/wiki/WhatsApp) because I want to be able to send my friends photos and text messages.  However, it's likely that those same features allow us to mitigate [Coordination Risk](Coordination-Risk.md) when we're next trying to meet up. 
 
@@ -239,7 +239,7 @@ Let's look at some more examples:
 |Risk                                                 |Software Mitigating That Risk                                             |
 |-----------------------------------------------------|------------------------------------------------------------------------- |
 |[Coordination Risk](Coordination-Risk.md)               |Calendar tools,  Bug Tracking, Distributed Databases                      |
-|[Schedule-Risk](Scarcity-Risk#schedule-risk)         |Planning Software, Project Management Software                            |
+|[Schedule-Risk](Scarcity-Risk.md#schedule-risk)         |Planning Software, Project Management Software                            |
 |[Communication-Risk](Communication-Risk.md)             |Email, Chat tools, CRM tools like SalesForce, Forums, Twitter, Protocols  |
 |[Process-Risk](Process-Risk.md)                         |Reporting tools, online forms, process tracking tools                     |
 |[Agency-Risk](Agency-Risk.md)                           |Auditing tools, transaction logs, Time-Sheet software, HR Software        |  

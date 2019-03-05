@@ -99,7 +99,7 @@ Obviously, in the ideal world, we want to get to the place on the [Risk Landscap
 |Funding Risk          |Go Live              |Reputational Risk, Operational Risk      |MEDIUM             |
 |Implementation Risk   |User Acceptance Test |Worse Funding Risk, Operational Risk     |LOW                |
 
-This is (a simplification of) the dilemma of lots of software projects - _test further_, to reduce the risk of users discovering bugs ([Implementation Risk](Feature-Risk.md#implementation-risk)) which would cause us reputational damage, or _get the release done_ and reduce our [Funding Risk](Scarcity-Risk#funding-risk) by getting paying clients sooner. 
+This is (a simplification of) the dilemma of lots of software projects - _test further_, to reduce the risk of users discovering bugs ([Implementation Risk](Feature-Risk.md#implementation-risk)) which would cause us reputational damage, or _get the release done_ and reduce our [Funding Risk](Scarcity-Risk.md#funding-risk) by getting paying clients sooner. 
 
 In the above table, it _appears_ to be better to do the "Go Live" action, as there is a greater [Payoff](Glossary.md#payoff).  The problem is, actions are not _commutative_, i.e. the order you do them in counts.
 

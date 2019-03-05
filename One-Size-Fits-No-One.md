@@ -118,4 +118,4 @@ An off-the-shelf methodology is unlikely to fit the risks of any project exactly
 
 ![Methodologies, Actions, Risks, Goals](images/generated/executive-summary/pattern_language.png)
 
-As the above diagram shows, different methodologies advocate different practices, and different practices manage different risks.   If we want to understand methodologies, or choose practices from one, we really need to understand the _types of risks_ we face on software projects.  This is where we go next in [Part 2](Risk-Landscape). 
+As the above diagram shows, different methodologies advocate different practices, and different practices manage different risks.   If we want to understand methodologies, or choose practices from one, we really need to understand the _types of risks_ we face on software projects.  This is where we go next in [Part 2](Risk-Landscape.md). 
