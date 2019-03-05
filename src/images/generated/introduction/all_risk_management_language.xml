@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl"  id="diagram-116"
+    name="Development Process 1" style="kite9-layout: right;">
+
+
+    <group style="kite9-layout: down">
+
+      <context id="c" bordered="true">
+
+        <risk id="id_0" class="goal">Feature X</risk>
+        <mitigated>
+          <risk class="attendant">Attendant Risk 1</risk>
+        </mitigated>
+        <mitigated>
+          <risk class="attendant">Attendant Risk 2</risk>
+        </mitigated>
+
+        <label  id="id_16">
+          <text>Initial Internal Model</text>
+          <symbols />
+        </label>
+      </context>
+
+      <group id="reality" style="kite9-layout: right">
+        <artifact>Artifact 1</artifact>
+        <artifact>Artifact 2</artifact>
+      </group>
+
+    </group>
+
+    <action>Taking Action</action>
+
+    <group style="kite9-layout: down">
+
+      <context id="d">
+        <risk class="attendant">Discovered Risk</risk>
+        <hidden>
+          <risk class="attendant">Hidden Risk</risk>
+        </hidden>
+        <label id="4">
+          <text>Resulting Internal Model</text>
+          <symbols />
+        </label>
+      </context>
+
+      <artifact>Results</artifact>
+    </group>
+
+  </diagram>
+</svg:svg>
