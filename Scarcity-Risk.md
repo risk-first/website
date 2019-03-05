@@ -23,7 +23,7 @@ This grants you some leeway as now you have two variables to play with: the _siz
 
 In startup circles, this "amount of time you can afford it" is called the ["Runway"](https://en.wiktionary.org/wiki/runway):  you have to get the product to "take-off" (become profitable) before the runway ends. 
 
-Startups often spend a lot of time courting investors in order to get funding and mitigate this type of [Schedule Risk](Scarcity-Risk#schedule-risk).<!-- tweet-end -->  But, as shown in the diagram above, this activity usually comes at the expense of [Opportunity Risk](Scarcity-Risk#opportunity-risk) and [Feature Risk](Feature-Risk), as usually the same people are diverted into raise funds instead of building the project itself.  
+Startups often spend a lot of time courting investors in order to get funding and mitigate this type of [Schedule Risk](Scarcity-Risk#schedule-risk).<!-- tweet-end -->  But, as shown in the diagram above, this activity usually comes at the expense of [Opportunity Risk](Scarcity-Risk#opportunity-risk) and [Feature Risk](Feature-Risk.md), as usually the same people are diverted into raise funds instead of building the project itself.  
 
 ## Staff Risk
 
@@ -43,7 +43,7 @@ The longer your project goes on for, the more [Staff Risk](Scarcity-Risk#staff-r
 
 And let's go completely philosophical for a second:  were you to attain immortality, you'd probably not feel the need to buy _anything_.  You'd clearly have no _needs_. Anything you wanted, you could create yourself within your infinite time-budget.  _Rocks don't need money_, after all.
 
-In the section on [Feature Risk](Feature-Risk) we looked at [Market Risk](Feature-Risk), the idea that the value of your product is itself at risk from the whims of the market, share prices being the obvious example of that effect.  In Finance, we measure this using _price_, and we can put together probability models based on how much _money_ you might make or lose.
+In the section on [Feature Risk](Feature-Risk.md) we looked at [Market Risk](Feature-Risk.md), the idea that the value of your product is itself at risk from the whims of the market, share prices being the obvious example of that effect.  In Finance, we measure this using _price_, and we can put together probability models based on how much _money_ you might make or lose.
 
 With [Schedule Risk](Scarcity-Risk#schedule-risk), the underlying measure is _time_:  
 
@@ -60,15 +60,15 @@ With [Schedule Risk](Scarcity-Risk#schedule-risk), the underlying measure is _ti
 
 Arguably, there is good psychological, evolutionary and risk-based reasoning behind procrastination:  if there is apparently a lot of time to get a job done, then [Schedule Risk](Scarcity-Risk#Schedule-risk) is low.  If we're only ever mitigating our _biggest risks_, then managing [Schedule Risk](Scarcity-risk#schedule-risk) in the future doesn't matter so much.  Putting efforts into mitigating future risks that _might not arise_ is wasted effort.
 
-Or at least, that's the argument:  if you're [Discounting the Future To Zero](Evaluating-Risk) then you'll be pulling all-nighters in order to deliver any assignment.   
+Or at least, that's the argument:  if you're [Discounting the Future To Zero](Evaluating-Risk.md) then you'll be pulling all-nighters in order to deliver any assignment.   
 
-So, the problem with [Student Syndrome](#student-syndrome) is that the _very mitigation_ for [Schedule Risk](Scarcity-Risk#schedule-risk) (allowing more time) is an [Attendant Risk](Glossary#attendant-risk) that _causes_ [Schedule Risk](Scarcity-Risk#schedule-risk):   you'll work within the more generous time allocation more slowly and you'll end up revealing [Hidden Risk](Glossary#Hidden-Risk) _later_.  And, discovering these hidden risks later causes you to end up being late because of them.
+So, the problem with [Student Syndrome](#student-syndrome) is that the _very mitigation_ for [Schedule Risk](Scarcity-Risk#schedule-risk) (allowing more time) is an [Attendant Risk](Glossary.md#attendant-risk) that _causes_ [Schedule Risk](Scarcity-Risk#schedule-risk):   you'll work within the more generous time allocation more slowly and you'll end up revealing [Hidden Risk](Glossary.md#Hidden-Risk) _later_.  And, discovering these hidden risks later causes you to end up being late because of them.
 
 ## Opportunity Risk
 
 [Opportunity Risk](Scarcity-Risk#opportunity-risk) is really the concern that whatever we do, we have to do it _in time_.  If we wait too long, we'll miss the [Window Of Opportunity](https://en.wikipedia.org/wiki/Window_of_opportunity) for our product or service.   
 
-Any product idea is necessarily of its time:  the [Goal In Mind](Glossary#Goal-In-Mind) will be based on observations from a particular [Internal Model](Glossary#Internal-Model), reflecting a view on reality at a specific _point in time_.  
+Any product idea is necessarily of its time:  the [Goal In Mind](Glossary.md#Goal-In-Mind) will be based on observations from a particular [Internal Model](Glossary.md#Internal-Model), reflecting a view on reality at a specific _point in time_.  
 
 How long will that remain true for?  This is your _opportunity_:  it exists apart from any deadlines you set yourself, or funding options.  It's purely, "how long will this idea be worth doing?"  
 
@@ -102,7 +102,7 @@ Now, they didn't _deliberately_ take 15 years to build this game (lots of things
 
 ![Red Queen Risk](images/generated/risks/scarcity/red-queen-risk.png)
 
-Personally, I have suffered the pain on project teams where we've had to cope with legacy code and databases because the cost of changing them was too high.  This is shown in the above diagram:  mitigating [Red Queen Risk](#red-queen-risk) (by _keeping up-to-date_) has the [Attendant Risk](Glossary#attendant-risk) of costing time and money, which might not seem worth it.  Any team who is stuck using [Visual Basic 6.0](https://en.wikipedia.org/wiki/Visual_Basic) is here.   
+Personally, I have suffered the pain on project teams where we've had to cope with legacy code and databases because the cost of changing them was too high.  This is shown in the above diagram:  mitigating [Red Queen Risk](#red-queen-risk) (by _keeping up-to-date_) has the [Attendant Risk](Glossary.md#attendant-risk) of costing time and money, which might not seem worth it.  Any team who is stuck using [Visual Basic 6.0](https://en.wikipedia.org/wiki/Visual_Basic) is here.   
 
 It's possible to ignore [Red Queen Risk](Scarcity-Risk#red-queen-risk) for a time, but this is just another form of [Technical Debt](Complexity-Risk.md) which eventually comes due.  
 
@@ -114,7 +114,7 @@ Here are a selection of mitigations for [Scarcity Risk](Scarcity-Risk) in genera
  - **Buffers**: smoothing out peaks and troughs in utilisation.
  - **Reservation Systems**: giving clients information _ahead_ of the dependency usage about whether the resource will be available to them.
  - **Graceful degradation**: ensuring _some_ service in the event of over-subscription.  It would be no use allowing people to cram onto the bus until it can't move.
- - **Demand Management**:  having different prices during busy periods helps to reduce demand.  Having "first class" seats means that higher-paying clients can get service even when the train is full.  [Uber](https://www.uber.com) adjust prices in real-time by so-called [Surge Pricing](https://www.uber.com/en-GB/drive/partner-app/how-surge-works/).  This is basically turning [Scarcity Risk](Scarcity-Risk) into a [Market Risk](Feature-Risk#market-risk) problem.
+ - **Demand Management**:  having different prices during busy periods helps to reduce demand.  Having "first class" seats means that higher-paying clients can get service even when the train is full.  [Uber](https://www.uber.com) adjust prices in real-time by so-called [Surge Pricing](https://www.uber.com/en-GB/drive/partner-app/how-surge-works/).  This is basically turning [Scarcity Risk](Scarcity-Risk) into a [Market Risk](Feature-Risk.md#market-risk) problem.
  - **Queues**: these provide a "fair" way of dealing with scarcity by exposing some mechanism for prioritising use of the resource.  Buses operate a first-come-first-served system, whereas emergency departments in hospitals triage according to need.
  - **Pools**: reserving parts of a resource for a group of customers, and sharing within that group.
  - **Horizontal Scaling**: allowing a scarce resource to flexibly scale according to how much demand there is.   (For example, putting on extra buses when the trains are on strike, or opening extra check-outs at the supermarket.)

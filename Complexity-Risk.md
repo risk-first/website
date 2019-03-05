@@ -5,7 +5,7 @@ description: Risks caused by the weight of complexity in the systems we create, 
 
 # Complexity Risk
 
-[Complexity Risk](Complexity-Risk.md) is the [risks](Glossary#risk) to your project due to its underlying "complexity". <!-- tweet-end --> This section will break down exactly what we mean by complexity, and where it can hide on a software project, and look at some ways in which we can manage this important risk.
+[Complexity Risk](Complexity-Risk.md) is the [risks](Glossary.md#risk) to your project due to its underlying "complexity". <!-- tweet-end --> This section will break down exactly what we mean by complexity, and where it can hide on a software project, and look at some ways in which we can manage this important risk.
 
 ## Codebase Risk
 
@@ -65,13 +65,13 @@ function out() {                                      (7 )
 
 ### Abstraction
 
-What's happening here is that we're _exploiting a pattern_: we noticed that `abcd` occurs several times, so we defined it a single time and then used it over and over, like a stamp.  This is called [abstraction](Glossary#abstraction).
+What's happening here is that we're _exploiting a pattern_: we noticed that `abcd` occurs several times, so we defined it a single time and then used it over and over, like a stamp.  This is called [abstraction](Glossary.md#abstraction).
 
 By applying abstraction, we can improve in the direction of the Kolmogorov lower bound.  By allowing ourselves to say that _symbols_ (like `out` and `ABCD`) are worth one complexity point, we've allowed that we can be descriptive in naming `function` and `const`.  Naming things is an important part of abstraction, because to use something, you have to be able to refer to it.
 
 ### Trade-Off
 
-Generally, the more complex a piece of software is, the more difficulty users will have [understanding it](Feature-Risk#conceptual-integrity-risk), and the more work developers will have changing it.  We should prefer the third version of our code over either the first or second because of its brevity.
+Generally, the more complex a piece of software is, the more difficulty users will have [understanding it](Feature-Risk.md#conceptual-integrity-risk), and the more work developers will have changing it.  We should prefer the third version of our code over either the first or second because of its brevity.
 
 But we could go further down into [Code Golf](https://en.wikipedia.org/wiki/Code_golf) territory.  The following javascript program plays [FizzBuzz](https://en.wikipedia.org/wiki/Fizz_buzz) up to 100, but is less readable than you might hope.
 
@@ -164,7 +164,7 @@ As a tool to battle complexity, we don't just see this in software, but everywhe
  
 The great complexity-reducing mechanism of modularisation is that _you only have to consider your local environment_.  
 
-So, we've looked at some measures of software structure complexity.  We can say "this is more complex than this" for a given piece of code or structure.  We've also looked at two ways to manage it:  [Abstraction](Glossary#abstraction) and [Modularisation](#Hierarchies-and-Modularisation).  However, we've not really said why complexity entails [Risk](Glossary#Attendant-Risk).  So let's address that now by looking at two analogies, [Mass](Complexity-Risk.md#Complexity-is-mass) and [Technical Debt](Complexity-Risk.md#technical-debt).  
+So, we've looked at some measures of software structure complexity.  We can say "this is more complex than this" for a given piece of code or structure.  We've also looked at two ways to manage it:  [Abstraction](Glossary.md#abstraction) and [Modularisation](#Hierarchies-and-Modularisation).  However, we've not really said why complexity entails [Risk](Glossary.md#Attendant-Risk).  So let's address that now by looking at two analogies, [Mass](Complexity-Risk.md#Complexity-is-mass) and [Technical Debt](Complexity-Risk.md#technical-debt).  
 
 ## Complexity is Mass
 
@@ -192,17 +192,17 @@ The most common way we talk about [Complexity Risk](Complexity-Risk.md) in softw
 
 > "Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite... The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organisations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise." - [Ward Cunningham, 1992, _Wikipedia, Technical Debt_](https://en.wikipedia.org/wiki/Technical_debt)
 
-Building a low-complexity first-time solution is often a waste:  in the first version, we're usually interested in reducing [Feature Risk](Feature-Risk) as fast as possible. That is, putting working software in front of users to get [feedback](Meeting-Reality).  We would rather carry [Complexity Risk](Complexity-Risk.md) than take on more attendant [Schedule Risk](Scarcity-Risk#schedule-risk).
+Building a low-complexity first-time solution is often a waste:  in the first version, we're usually interested in reducing [Feature Risk](Feature-Risk.md) as fast as possible. That is, putting working software in front of users to get [feedback](Meeting-Reality).  We would rather carry [Complexity Risk](Complexity-Risk.md) than take on more attendant [Schedule Risk](Scarcity-Risk#schedule-risk).
 
-So a quick-and-dirty, over-complex implementation mitigates the same [Feature Risk](Feature-Risk) and allows you to [Meet Reality](Meeting-Reality) faster.  
+So a quick-and-dirty, over-complex implementation mitigates the same [Feature Risk](Feature-Risk.md) and allows you to [Meet Reality](Meeting-Reality) faster.  
 
 ![Complexity Risk and some mitigations](images/generated/risks/complexity/complexity-risk2.png)
 
-But having mitigated the [Feature Risk](Feature-Risk) this way, you are likely exposed to more [Complexity Risk](Complexity-Risk.md) than you necessarily need.  As the above diagram shows, one of the ways to mitigate [Complexity Risk](Complexity-Risk.md) is by [Refactoring](https://en.wikipedia.org/wiki/Code_refactoring) the software, which means using the tools of abstraction and modularisation. 
+But having mitigated the [Feature Risk](Feature-Risk.md) this way, you are likely exposed to more [Complexity Risk](Complexity-Risk.md) than you necessarily need.  As the above diagram shows, one of the ways to mitigate [Complexity Risk](Complexity-Risk.md) is by [Refactoring](https://en.wikipedia.org/wiki/Code_refactoring) the software, which means using the tools of abstraction and modularisation. 
 
 ## Kitchen Analogy
 
-It’s often hard to make the case for minimising [Technical Debt](Complexity-Risk.md#technical-debt): it often feels that there are more important priorities, especially when technical debt can be “swept under the carpet” and forgotten about until later.  (See [Discounting](Evaluating-Risk#discounting-the-future-to-zero).)
+It’s often hard to make the case for minimising [Technical Debt](Complexity-Risk.md#technical-debt): it often feels that there are more important priorities, especially when technical debt can be “swept under the carpet” and forgotten about until later.  (See [Discounting](Evaluating-Risk.md#discounting-the-future-to-zero).)
 
 One helpful analogy I have found is to imagine your code-base is a kitchen.   After preparing a meal (i.e. delivering the first implementation), _you need to tidy up the kitchen_.  This is just something everyone does as a matter of _basic sanitation_. <!-- tweet-end -->
 
@@ -223,7 +223,7 @@ In Brooks' essay "No Silver Bullet - Essence and Accident in Software Engineerin
 
 The problem with this definition is that we are accepting features of our software as _essential_.  
 
-Applying Risk-First, if you want to mitigate some [Feature Risk](Feature-Risk) then you have to pick up [Complexity Risk](Complexity-Risk.md) as a result.  But, that's a _choice you get to make_.  
+Applying Risk-First, if you want to mitigate some [Feature Risk](Feature-Risk.md) then you have to pick up [Complexity Risk](Complexity-Risk.md) as a result.  But, that's a _choice you get to make_.  
 
 ![Mitigating Feature Fit Risk (from Feature Risk)](images/generated/risks/feature/feature-fit-risk.png)
 
@@ -244,14 +244,14 @@ Finally, the team realises that actually authentication would be something that 
 At this point, you realise you're in a **Dead End**:
   
  - **Option 1: Continue.** You carry on making minor incremental improvements to the accounting authentication system (carrying the extra [Complexity Risk](Complexity-Risk.md) of the duplicated functionality).
- - **Option 2: Merge.** You rip out the accounting authentication system and merge in the Approvals authentication system, consuming lots of development time in the process, due to the difficulty in migrating users from the old to new way of working.  There is [Implementation Risk](Feature-Risk#implementation-risk) here.
+ - **Option 2: Merge.** You rip out the accounting authentication system and merge in the Approvals authentication system, consuming lots of development time in the process, due to the difficulty in migrating users from the old to new way of working.  There is [Implementation Risk](Feature-Risk.md#implementation-risk) here.
  - **Option 3: Remove.** You start again, trying to take into account both sets of requirements at the same time, again, possibly surfacing new hidden [Complexity Risk](Complexity-Risk.md) due to the combined approach.  Rewriting code can _seem_ like a way to mitigate [Complexity Risk](Complexity-Risk.md) but it usually doesn't work out too well.  As Joel Spolsky says:
 
 > There’s a subtle reason that programmers always want to throw away the code and start over. The reason is that they think the old code is a mess. And here is the interesting observation: they are probably wrong. The reason that they think the old code is a mess is because of a cardinal, fundamental law of programming:  _It’s harder to read code than to write it._    - [Things You Should Never Do, Part 1, _Joel Spolsky_](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)
 
 Whichever option you choose, this is a [Dead End](#dead-end-risk) because with hindsight, it would probably have been better to do authentication in a common way _once_.  But it's hard to see these dead-ends up-front because of the complexity of the system in front of you.
  
-Sometimes, the path across the [Risk Landscape](Risk-Landscape) will take you to dead ends, and the only benefit to be gained is experience.  No one deliberately chooses a dead end - often you can take an action that doesn't pay off, but frequently the dead end appears from nowhere:  it's a [Hidden Risk](Glossary#hidden-risk).  The source of a lot of this hidden risk is the complexity of the [risk landscape](Glossary#risk-landscape).
+Sometimes, the path across the [Risk Landscape](Risk-Landscape) will take you to dead ends, and the only benefit to be gained is experience.  No one deliberately chooses a dead end - often you can take an action that doesn't pay off, but frequently the dead end appears from nowhere:  it's a [Hidden Risk](Glossary.md#hidden-risk).  The source of a lot of this hidden risk is the complexity of the [risk landscape](Glossary.md#risk-landscape).
 
 [Version Control Systems](https://en.wikipedia.org/wiki/Version_control) like [Git](https://en.wikipedia.org/wiki/Git) are a useful mitigation of [Dead-End Risk](Complexity-Risk.md#dead-end-risk), because using them means that at least you can _go back_ to the point where you made the bad decision and go a different way.  Additionally, they provide you with backups against the often inadvertent [Dead-End Risk](Complexity-Risk.md#dead-end-risk) of someone wiping the hard-disk.
 

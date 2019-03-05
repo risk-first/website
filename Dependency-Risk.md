@@ -44,13 +44,13 @@ Let's look at four types of risk that apply to every dependency:  Fit, Reliabili
 
 In order to illustrate some of the different [Dependency Risks](Dependency-Risk.md), let's introduce a running example:  trying to get to work each day.  There are probably a few alternative ways to make your journey each day, such as _by car_, _walking_ or _by bus_.  These are all alternative dependencies but give you the same _feature_: they'll get you there.
 
-Normally, we'll use the same dependency each day.  This speaks to the fact that each of these approaches has different [Feature Fit Risk](Feature-Risk#feature-fit-risk).   Perhaps you choose going by bus over going by car because of the risk that owning the car is expensive, or that you might not be able to find somewhere to park it.
+Normally, we'll use the same dependency each day.  This speaks to the fact that each of these approaches has different [Feature Fit Risk](Feature-Risk.md#feature-fit-risk).   Perhaps you choose going by bus over going by car because of the risk that owning the car is expensive, or that you might not be able to find somewhere to park it.
 
 ![Two-Dimensions of Feature Fit for the bus-ride](images/generated/risks/dependency/dependency-risk-fit.png)
 
-But there are a couple of problems with buses you don't have with your own car, as shown in the above diagram. A bus might take you to lots of in-between places you _didn't_ want to go, which is [Conceptual Integrity Risk](Feature-Risk#conceptual-integrity-risk) and we saw this already in the section on [Feature Risk](Feature-Risk).  Also, it might not go at the time you want it to, which is [Feature-Fit-Risk](Feature-Risk#feature-fit-risk).  
+But there are a couple of problems with buses you don't have with your own car, as shown in the above diagram. A bus might take you to lots of in-between places you _didn't_ want to go, which is [Conceptual Integrity Risk](Feature-Risk.md#conceptual-integrity-risk) and we saw this already in the section on [Feature Risk](Feature-Risk.md).  Also, it might not go at the time you want it to, which is [Feature-Fit-Risk](Feature-Risk.md#feature-fit-risk).  
 
-What this shows us is that [Fit Risks](Feature-Risk#feature-fit-risk) are as much a problem for the suppliers of the dependency (the people running the bus service) as they are for the people (like you or I) _using_ the dependency.
+What this shows us is that [Fit Risks](Feature-Risk.md#feature-fit-risk) are as much a problem for the suppliers of the dependency (the people running the bus service) as they are for the people (like you or I) _using_ the dependency.
 
 ## Reliability Risk
 
@@ -62,7 +62,7 @@ This points to the problem that when we use an external dependency, we are at th
 
 It's easy to think about reliability for something like a bus:  sometimes, it's late due to weather, or cancelled due to driver sickness, or the route changes unexpectedly due to road works.  
 
-In software, it's no different:  _unreliability_ is the flip-side of [Feature Implementation Risk](Feature-risk#implementation-risk).  It's caused in the gap between the real behaviour of the software and the expectations for it.
+In software, it's no different:  _unreliability_ is the flip-side of [Feature Implementation Risk](Feature-Risk.md#implementation-risk).  It's caused in the gap between the real behaviour of the software and the expectations for it.
 
 There is an upper bound on the reliability of the software you write, and this is based on the dependencies you use and (in turn) the reliability of those dependencies:
   
@@ -82,7 +82,7 @@ Additionally, we often rely on _proxies for reliability_.  We'll look at these p
 
 Dependencies (like the bus) make life simpler for you by taking on complexity for you.
 
-In software, dependencies are a way to manage [Complexity Risk](Complexity-Risk.md).  The reason for this is that a dependency gives you an [abstraction](Glossary#abstraction): you no longer need to know _how_ to do something, (that's the job of the dependency), you just need to interact with the dependency properly to get the job done.  Buses are _perfect_ for people who can't drive, after all.
+In software, dependencies are a way to manage [Complexity Risk](Complexity-Risk.md).  The reason for this is that a dependency gives you an [abstraction](Glossary.md#abstraction): you no longer need to know _how_ to do something, (that's the job of the dependency), you just need to interact with the dependency properly to get the job done.  Buses are _perfect_ for people who can't drive, after all.
 
 ![Dependencies help with complexity risk, but come with their own attendant risks](images/generated/risks/dependency/dependency-risk.png)
 
@@ -100,7 +100,7 @@ Our economic system and our software systems exhibit the same tendency-towards-c
 
 ## Managing Dependency Risk
 
-Arguably, managing [Dependency Risk](Dependency-Risk.md) is _what Project Managers do_.  Their job is to meet the project's [Goal](Glossary#goal-in-mind) by organising the available dependencies into some kind of useful order.  
+Arguably, managing [Dependency Risk](Dependency-Risk.md) is _what Project Managers do_.  Their job is to meet the project's [Goal](Glossary.md#goal-in-mind) by organising the available dependencies into some kind of useful order.  
 
 There are some tools for managing dependency risk:  [Gantt Charts](https://en.wikipedia.org/wiki/Gantt_chart) for example, arrange work according to the capacity of the resources (i.e. dependencies) available, but also the _dependencies between the tasks_.   If task **B** requires the outputs of task **A**, then clearly task **A** comes first and task **B** starts after it finishes.  We'll look at this more in [Process Risk](Process-Risk). 
 

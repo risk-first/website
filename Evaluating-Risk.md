@@ -47,22 +47,22 @@ Risk-First takes a view that risks are a continuous quantity, more like _money_ 
 
 A risk matrix presents a graphical view on where risks exist.  The diagram above is an example, showing the risks from the dinner party in the [A Simple Scenario](A-Simple-Scenario.md) section:
 
-This type of graphic is _helpful_ in deciding what to do next, although alternatively, you can graph the overall **Risk Score** against the [Payoff](Glossary#payoff).  Easily mitigated risk (on the right), and worse risks (at the top) can therefore be dealt with first (hopefully).
+This type of graphic is _helpful_ in deciding what to do next, although alternatively, you can graph the overall **Risk Score** against the [Payoff](Glossary.md#payoff).  Easily mitigated risk (on the right), and worse risks (at the top) can therefore be dealt with first (hopefully).
 
 ![Risk Register of Dinner Party Risks, Considering Payoff](images/generated/introduction/risk_matrix_2.png)
 
 ## Unknown Unknowns
 
-One of the criticisms of the [Risk Register](Evaluating-Risk#risk-registers) approach is that of [mistaking the map for the territory](Map-And-Territory-Risk).  That is, mistakenly believing that what's on the Risk Register _is all there is_.  
+One of the criticisms of the [Risk Register](Evaluating-Risk.md#risk-registers) approach is that of [mistaking the map for the territory](Map-And-Territory-Risk).  That is, mistakenly believing that what's on the Risk Register _is all there is_.  
 
-In the preceding discussions, I have been careful to point out the existence of [Hidden Risks](Glossary#hidden-risk) for that very reason. Or, to put another way:
+In the preceding discussions, I have been careful to point out the existence of [Hidden Risks](Glossary.md#hidden-risk) for that very reason. Or, to put another way:
 
 > "What we don't know is what usually gets us killed" - [Petyr Baelish, _Game of Thrones_](https://medium.com/@TanyaMardi/petyr-baelishs-best-quotes-on-game-of-thrones-1ea92968db5c)
 
 Donald Rumsfeld's famous [Known Knowns](https://en.wikipedia.org/wiki/There_are_known_knowns) is also a helpful conceptualisation:  
 
- - **A _known_ unknown** is an [Attendant Risk](Glossary#attendant-risk).  i.e. something you are aware of, but where the precise degree of threat can't be established.
- - **An _unknown_ unknown** is a [Hidden Risk](Glossary#hidden-risk). i.e a risk you haven't even thought to exist yet.
+ - **A _known_ unknown** is an [Attendant Risk](Glossary.md#attendant-risk).  i.e. something you are aware of, but where the precise degree of threat can't be established.
+ - **An _unknown_ unknown** is a [Hidden Risk](Glossary.md#hidden-risk). i.e a risk you haven't even thought to exist yet.
 
 ## Risk And Uncertainty
 
@@ -119,9 +119,9 @@ If the methodology _fails at a particular scale_ this tells you something about 
 
 "Upside Risk" isn't a commonly used term:  industry tends to prefer "value", as in "Is this a value-add project?".  There is plenty of theory surrounding **Value**, such as Porter's [Value Chain](https://en.wikipedia.org/wiki/Value_chain) and [Net Present Value](https://en.wikipedia.org/wiki/Net_present_value).  This is all fine so long as we remember:
 
- - **The probability of [Payoff](Glossary#payoff) is risky**. Since the value is created in the future, we can't be certain about it happening - we should never consider it a done-deal.  **Future Value** is always at risk.  In finance, for example, we account for this in our future cash-flows by discounting them according to the risk of default.
+ - **The probability of [Payoff](Glossary.md#payoff) is risky**. Since the value is created in the future, we can't be certain about it happening - we should never consider it a done-deal.  **Future Value** is always at risk.  In finance, for example, we account for this in our future cash-flows by discounting them according to the risk of default.
  - **The Payoff amount is risky**.  Additionally, whereas in a financial transaction (like a loan, say), we might know the size of a future payment, in IT projects we can rarely be sure that they will deliver a certain return.  On some fixed-contract projects this sometimes is not true: there may be a date when the payment-for-delivery gets made, but mostly we'll be expecting an uncertain Payoff. 
- - Humans tend to be optimists (especially when there are lots of [Hidden Risks](Glossary#hidden-risk)), hence our focus on Downside Risk.  Sometimes though, it's good to stand back and look at a scenario and think:  am I capturing all the Upside Risk here?
+ - Humans tend to be optimists (especially when there are lots of [Hidden Risks](Glossary.md#hidden-risk)), hence our focus on Downside Risk.  Sometimes though, it's good to stand back and look at a scenario and think:  am I capturing all the Upside Risk here?
 
 ### Speed
 

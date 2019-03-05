@@ -15,11 +15,11 @@
 
 ## How It Works
 
-Whatever exact methodology you are using, the aim is to meet **stakeholders** and try to capture their [Internal Models](Glossary#Internal-Model) in written form.  This has a few effects:
+Whatever exact methodology you are using, the aim is to meet **stakeholders** and try to capture their [Internal Models](Glossary.md#Internal-Model) in written form.  This has a few effects:
 
-- The [Internal Models](Glossary#Internal-Model) of the development team can be enriched with this new information.
+- The [Internal Models](Glossary.md#Internal-Model) of the development team can be enriched with this new information.
 - You are capturing at a moment-in-time what people _thought_.  
--  As with any [Documentation](Documentation), you can to some extent reconcile the [Internal Models](Glossary#Internal-Model) of a wide variety of stakeholders and implementers.
+-  As with any [Documentation](Documentation), you can to some extent reconcile the [Internal Models](Glossary.md#Internal-Model) of a wide variety of stakeholders and implementers.
 
 
 
@@ -38,9 +38,9 @@ See also: [Terms Of Reference](Terms-Of-Reference)
 
 Requirements Capture is itself a process of [Meeting Reality](), and in a limited way:  rather than speculatively building a piece of software and trying it out on the world, Requirements Capture allows us, cheaply, to go and see what the world _thinks_ it wants, which is much _cheaper_, but perhaps less accurate.
 
-### [Feature-Risk](Feature-Risk)
+### [Feature-Risk](Feature-Risk.md)
 
-_Asking people what they want_ is often a way to reduce [Feature Risk](Feature-Risk) by stopping you building the wrong thing.  
+_Asking people what they want_ is often a way to reduce [Feature Risk](Feature-Risk.md) by stopping you building the wrong thing.  
 
 ### [
 

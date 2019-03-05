@@ -34,7 +34,7 @@ It's likely that the Waterfall-Style methodologies were inspired by the construc
 
 Also, when Waterfall was originally conceived, automated testing techniques were not well established.  If you expect to perform a large [manual testing cycle](Testing) for each release, then clearly, doing fewer releases looks cheaper on paper.  
 
-But, while _in principle_, Waterfall aims to _contain_ the cost of implementation.  However, in practice, because of [Requirements Drift](Feature-Risk), [Student Syndrome](Scarcity-Risk#schedule-risk) and [Complexity Risk](Complexity-Risk.md), the schedules get more inaccurate the larger the project.
+But, while _in principle_, Waterfall aims to _contain_ the cost of implementation.  However, in practice, because of [Requirements Drift](Feature-Risk.md), [Student Syndrome](Scarcity-Risk#schedule-risk) and [Complexity Risk](Complexity-Risk.md), the schedules get more inaccurate the larger the project.
 
 ### 2.  [Lots Of Stakeholders](Coordination-Risk.md)
 

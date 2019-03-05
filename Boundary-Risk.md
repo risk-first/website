@@ -14,7 +14,7 @@ As shown in the above diagram, [Boundary Risk](Boundary-Risk) is the risk we fac
 - Although I eat cereals for breakfast, I don't have [Boundary Risk](Boundary-Risk) on them.  If the supermarket runs out of cereals when I go, I can just buy some other food and eat that.
 - However the hot water system in my house uses gas.  If that's not available I can't just switch to using oil or solar without cost.  There is [Boundary Risk](Boundary-Risk), but it's low because the supply of gas is plentiful and seems like it will stay that way.
 
-In terms of the [Risk Landscape](Risk-Landscape), [Boundary Risk](Boundary-Risk) is exactly as it says:  a _boundary_, _wall_ or other kind of obstacle in your way to making a move you want to make. <!-- tweet-end -->  This changes the nature of the [Risk Landscape](Glossary#risk-landscape), and introduces a maze-like component to it.  It also means that we have to make _commitments_ about which way to go, knowing that our future paths are constrained by the decisions we make.
+In terms of the [Risk Landscape](Risk-Landscape), [Boundary Risk](Boundary-Risk) is exactly as it says:  a _boundary_, _wall_ or other kind of obstacle in your way to making a move you want to make. <!-- tweet-end -->  This changes the nature of the [Risk Landscape](Glossary.md#risk-landscape), and introduces a maze-like component to it.  It also means that we have to make _commitments_ about which way to go, knowing that our future paths are constrained by the decisions we make.
 
 As we discussed in [Complexity Risk](Complexity-Risk.md), there is always the chance we end up at a [Dead End](Complexity-Risk.md#dead-end-risk), having done work that we need to throw away.  In this case, we'll have to head back and make a different decision.
 
@@ -46,10 +46,10 @@ This is a toy example, but in real life this dilemma occurs when we choose betwe
  
 The degree of [Boundary Risk](Boundary-Risk) is dependent on a number of factors:
 
- - **The Sunk Cost** of the [Learning Curve](Communication-Risk.md#learning-curve-risk) we've overcome to integrate the dependency, which may fail to live up to expectations (_cf._ [Feature Fit Risks](Feature-Risk#feature-fit-risk)).   We can avoid accreting this by choosing the _simplest_ and _fewest_ dependencies for any task, and trying to [Meet Reality](Meeting-Reality) quickly.
- - **Life Expectancy**:  libraries and products come and go.  A choice that was popular when it was made may be superseded in the future by something better.  (_cf._ [Market Risk](Feature-Risk#market-risk)).  This may not be a problem until you try to renew a support contract, or try to do an operating system update. Although no-one can predict how long a technology will last, [The Lindy Effect](https://en.wikipedia.org/wiki/Lindy_effect) suggests that _future life expectancy is proportional to current age_.  So, you might expect a technology that has been around for ten years to be around for a further ten.
+ - **The Sunk Cost** of the [Learning Curve](Communication-Risk.md#learning-curve-risk) we've overcome to integrate the dependency, which may fail to live up to expectations (_cf._ [Feature Fit Risks](Feature-Risk.md#feature-fit-risk)).   We can avoid accreting this by choosing the _simplest_ and _fewest_ dependencies for any task, and trying to [Meet Reality](Meeting-Reality) quickly.
+ - **Life Expectancy**:  libraries and products come and go.  A choice that was popular when it was made may be superseded in the future by something better.  (_cf._ [Market Risk](Feature-Risk.md#market-risk)).  This may not be a problem until you try to renew a support contract, or try to do an operating system update. Although no-one can predict how long a technology will last, [The Lindy Effect](https://en.wikipedia.org/wiki/Lindy_effect) suggests that _future life expectancy is proportional to current age_.  So, you might expect a technology that has been around for ten years to be around for a further ten.
  - **The level of [Lock In](#ecosystems-and-lock-in)**, where the cost of switching to a new dependency in the future is some function of the level of commitment to the current dependency.  As an example, consider the level of commitment you have to your mother tongue.  If you have spent your entire life committed to learning and communicating in English, there is a massive level of lock-in.  Overcoming this to become fluent in Chinese may be an overwhelming task.
- - **Future needs**: will the dependency satisfy your expanding requirements going forward? (_cf._ [Feature Drift Risk](Feature-Risk#feature-drift-risk))
+ - **Future needs**: will the dependency satisfy your expanding requirements going forward? (_cf._ [Feature Drift Risk](Feature-Risk.md#feature-drift-risk))
  - **Ownership changes:**  Microsoft buys [GitHub](https://en.wikipedia.org/wiki/GitHub).  What will happen to the ecosystem around GitHub now?
  - **Licensing changes:**  (e.g. [Oracle](http://oracle.com) buys Tangosol who make [Coherence](https://en.wikipedia.org/wiki/Oracle_Coherence) for example).  Having done this, they increase the licensing costs of Coherence to huge levels, milking the [Cash Cow](https://en.wikipedia.org/wiki/Cash_cow) of the installed user-base, but ensuring no-one else is likely to commit to it in the future.
   
@@ -68,11 +68,11 @@ But crucially, the underlying abstractions of WordPress and Drupal are different
 
 > "... a set of businesses functioning as a unit and interacting with a shared market for software and services, together with relationships among them. These relationships are frequently underpinned by a common technological platform and operate through the exchange of information, resources, and artifacts." - [Software Ecosystem, _Wikipedia_](https://en.wikipedia.org/wiki/Software_ecosystem)
 
-You can think of the ecosystem as being like the footprint of a town or a city, consisting of the buildings, transport network and the people that live there.  Within the city, and because of the transport network and the amenities available, it's easy to make rapid, useful moves on the [Risk Landscape](Risk-Landscape).  In a software ecosystem it's the same: the ecosystem has gathered together to provide a way to mitigate various different [Feature Risks](Feature-Risk) in a common way.
+You can think of the ecosystem as being like the footprint of a town or a city, consisting of the buildings, transport network and the people that live there.  Within the city, and because of the transport network and the amenities available, it's easy to make rapid, useful moves on the [Risk Landscape](Risk-Landscape).  In a software ecosystem it's the same: the ecosystem has gathered together to provide a way to mitigate various different [Feature Risks](Feature-Risk.md) in a common way.
 
 Ecosystem size is one key determinant of [Boundary Risk](Boundary-Risk):
   
-- **A large ecosystem** has a large boundary circumference.  [Boundary Risk](Boundary-Risk) is lower in a large ecosystem because your moves on the [Risk Landscape](Glossary#risk-landscape) are unlikely to collide with it.  The boundary _got large_ because other developers before you hit the boundary and did the work building the software equivalents of bridges and roads and pushing it back so that the boundary didn't get in their way.  
+- **A large ecosystem** has a large boundary circumference.  [Boundary Risk](Boundary-Risk) is lower in a large ecosystem because your moves on the [Risk Landscape](Glossary.md#risk-landscape) are unlikely to collide with it.  The boundary _got large_ because other developers before you hit the boundary and did the work building the software equivalents of bridges and roads and pushing it back so that the boundary didn't get in their way.  
 - In **a small ecosystem**, you are much more likely to come into contact with the edges of the boundary.  _You_ will have to be the developer that pushes back the frontier and builds the roads for the others.  This is hard work.
 
 ### Big Ecosystems Get Bigger
@@ -106,7 +106,7 @@ When a tool or platform is popular, it is under pressure to increase in complexi
 
 > "The Peter principle is a concept in management developed by Laurence J. Peter, which observes that people in a hierarchy tend to rise to their 'level of incompetence'." - [The Peter Principle, _Wikipedia_](https://en.wikipedia.org/wiki/Peter_principle)
 
-Although designed for _people_, it can just as easily be applied to any other dependency you can think of.  This means when things get popular, there is a tendency towards [Conceptual Integrity Risk](Feature-Risk#conceptual-integrity-risk) and [Complexity Risk](Complexity-Risk.md).  
+Although designed for _people_, it can just as easily be applied to any other dependency you can think of.  This means when things get popular, there is a tendency towards [Conceptual Integrity Risk](Feature-Risk.md#conceptual-integrity-risk) and [Complexity Risk](Complexity-Risk.md).  
 
 ![Java Public Classes By Version (3-9)](images/numbers/java_classes_by_version.png)
 
@@ -122,7 +122,7 @@ Each new version has a greater functional scope than the one before (pushing bac
 
 You can see in the diagram above the Peter Principle at play:  as more responsibility is given to a dependency, the more complex it gets and the greater the learning curve to work with it.  Large ecosystems like Java react to [Learning Curve Risk](Communication-Risk.md#learning-curve-risk) by having copious amounts of literature to read or buy to help, but it is still off-putting.
 
-Because [Complexity is Mass](Complexity-Risk.md#complexity-is-mass), large ecosystems can't respond quickly to [Feature Drift](Feature-Risk#feature-drift-risk).  This means that when the world changes, new ecosystems are likely to appear to fill gaps, rather than old ones moving in.
+Because [Complexity is Mass](Complexity-Risk.md#complexity-is-mass), large ecosystems can't respond quickly to [Feature Drift](Feature-Risk.md#feature-drift-risk).  This means that when the world changes, new ecosystems are likely to appear to fill gaps, rather than old ones moving in.
 
 ## Managing Boundary Risk
 
@@ -200,7 +200,7 @@ Although ecosystems are one very pernicious type of boundary in software develop
 
 ## Patterns In Boundary Risk
 
-In [Feature Risk](Feature-Risk#feature-drift-risk), we saw that the features people need change over time.  Let's get more specific about this: 
+In [Feature Risk](Feature-Risk.md#feature-drift-risk), we saw that the features people need change over time.  Let's get more specific about this: 
  
 - **Human need is [Fractal](https://en.wikipedia.org/wiki/Fractal)**:  this means that over time, software products have evolved to more closely map human needs.   Software that would have delighted us ten years ago lacks the sophistication we expect today.
 - **Software and hardware are both improving with time**: due to evolution and the ability to support greater and greater levels of complexity.

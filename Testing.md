@@ -5,12 +5,12 @@
 Most forms of testing are about isolating a particular _characteristic_ of your system, and exploring it from a risk perspective.  It could be:
 
 - **Performance Testing** addresses the risk of [not being able to support all the users](Production-Risk)
-- **Usability Testing** tries to see whether people struggle to make sense of your software, usually because the assumptions of their [Internal Models](Glossary#Internal-Model) differ from those embedded in the system, or that the system isn't adequately [transparent](Visibility-Risk) about it's own model.
+- **Usability Testing** tries to see whether people struggle to make sense of your software, usually because the assumptions of their [Internal Models](Glossary.md#Internal-Model) differ from those embedded in the system, or that the system isn't adequately [transparent](Visibility-Risk) about it's own model.
 - **Security Testing** addresses the risk that your software could be used against you or its users [by hackers](Production-Risk).
 - **Integration Testing**:  Where we test how the software works as-a-whole, and test that it will work [with other systems](Dependency-Risk.md) 
 - **Corridor Testing**:  Asking a few, random people to use the system-under-test, in order to see [if it confuses them, or not](Visibility-Risk).
-- **User Acceptance Testing**:  Asking users to review new features, and make sure that they actually [do what is required](Feature-Risk)
-- **Regression Testing**: Making sure changes in new versions of the system haven't [broken functionality](Feature-Risk)
+- **User Acceptance Testing**:  Asking users to review new features, and make sure that they actually [do what is required](Feature-Risk.md)
+- **Regression Testing**: Making sure changes in new versions of the system haven't [broken functionality](Feature-Risk.md)
 
 ## How It Works
 
@@ -32,7 +32,7 @@ This should work at _every level_ within a project.  If you are building a new f
 - Is it going to connect to third-party systems?  If so, I should build [System Integration Tests](https://en.wikipedia.org/wiki/System_integration_testing) to cover the [Dependency Risk](Dependency-Risk.md) associated with this, and the chance that in the future, the interface will change. 
 - Does my code do what I expect?  I probably should build a [Unit Test](https://en.wikipedia.org/wiki/Unit_testing) to mitigate [Complexity Risk](Complexity-Risk.md). 
 - Will users understand the software I build for them?  I should probably do some [Beta Testing](https://en.wikipedia.org/wiki/Software_testing#Beta_testing) or [Corridor Testing](https://www.usability.gov/what-and-why/glossary/corridor-testing.html) to mitigate [Visiblity Risk](Visibility-Risk).
-- To go live, am I going to need some piece of real-world paperwork?  Test the process ahead-of-time to expose all the [Hidden Risks](Glossary#hidden-risk) 
+- To go live, am I going to need some piece of real-world paperwork?  Test the process ahead-of-time to expose all the [Hidden Risks](Glossary.md#hidden-risk) 
 
 ## Where It's Used
 
@@ -56,7 +56,7 @@ A useful way to think about automated testing is that it turns the **System Unde
 
 Getting complex systems to behave as pure functions can be costly, but there are techniques to help with this such as [Mocking](https://en.wikipedia.org/wiki/Mock_object).  However, if you try to devise as much of your software in a pure-functional way to start with, automated testing is much easier.
 
-**Automated Testing** has an interesting effect on managing [Complexity Risk](Complexity-Risk.md):  Although you may initially write a Unit Test (say) to mitigate the risk of [having implemented a feature wrongly](Feature-Risk), you are also given insurance against future change breaking that feature.   That is to say, they are _regression tests_.  However, implementing tests like this is better than building regression tests, [as discussed here](Regression-Testing).
+**Automated Testing** has an interesting effect on managing [Complexity Risk](Complexity-Risk.md):  Although you may initially write a Unit Test (say) to mitigate the risk of [having implemented a feature wrongly](Feature-Risk.md), you are also given insurance against future change breaking that feature.   That is to say, they are _regression tests_.  However, implementing tests like this is better than building regression tests, [as discussed here](Regression-Testing).
 
 -- how do automated tests mitigate complexity risk? tbd
 
@@ -68,7 +68,7 @@ For example, ensuring the UI "looks ok and doesn't glitch" is entirely _subjecti
 
 Since manual tests carry much higher per-use cost to run, there is a tendency to want to save this cost by doing _fewer releases_.  After all, fewer releases means less manual testing, but this may increase [Process Risk](Process-Risk).
 
-How do you decide whether to keep a test manual, or automate?  The more _automated_ a test is, the more cheaply it can be re-used.  However, the process of automation can take longer, and so adds [Schedule Risk](Scarcity-Risk#schedule-risk).  Whether or not it's worth automating is to some extend going to depend on how much you [value future time](Evaluating-Risk).
+How do you decide whether to keep a test manual, or automate?  The more _automated_ a test is, the more cheaply it can be re-used.  However, the process of automation can take longer, and so adds [Schedule Risk](Scarcity-Risk#schedule-risk).  Whether or not it's worth automating is to some extend going to depend on how much you [value future time](Evaluating-Risk.md).
 
 ### White-Box and Black-Box Testing
 
@@ -107,9 +107,9 @@ Additionally, by having test _fail_ before they _pass_, you mitigate the risk of
 
 Code Coverage tools are a useful way of showing you which parts of your software might contain bugs due to lack of testing, which is really useful in the **Risk Evaluation** phase of test-planning.  
 
-Sometimes code coverage spawns its own [Map And Territory Risks](Map-And-Territory-Risk) though, where people forget that the goal should be mitigating overall project risk (via delivering functionality and so forth) and start to believe that the goal is delivering 100% code coverage.  Writing tests to cover every `get()` method is a fools' errand which increases the overall [codebase complexity](Complexity-Risk.md) for no real reduction in [Feature Risk](Feature-Risk).
+Sometimes code coverage spawns its own [Map And Territory Risks](Map-And-Territory-Risk) though, where people forget that the goal should be mitigating overall project risk (via delivering functionality and so forth) and start to believe that the goal is delivering 100% code coverage.  Writing tests to cover every `get()` method is a fools' errand which increases the overall [codebase complexity](Complexity-Risk.md) for no real reduction in [Feature Risk](Feature-Risk.md).
 
-Worse still is that having 100% code coverage does not guarantee an absence of bugs, or that the code will do what the users wanted it to do.  [Feature Risk](Feature-Risk) is always there.
+Worse still is that having 100% code coverage does not guarantee an absence of bugs, or that the code will do what the users wanted it to do.  [Feature Risk](Feature-Risk.md) is always there.
 
 ## Risks Mitigated
 
@@ -121,7 +121,7 @@ There are so many different types of testing and this guide is not meant to be e
 |[Dependency Risk](Dependency-Risk.md)|Integration Testing<br />System Integration Testing|
 |[Production Risk](Production-Risk)  |Performance Testing / Load Testing<br />Non-Functional Testing<br />Disaster Recovery Testing<br />Security esting<br />Smoke / Sanity Testing|
 |[Software Risk](Software-Risk)|Unit Testing<br />Component Testing<br />End-To-End Testing<br />Functional Testing|
-|[Feature Risk](Feature-Risk)|Browser-Based Testing<br />Accessibility Testing<br />Acceptance Testing (UAT)<br />Beta Testing|
+|[Feature Risk](Feature-Risk.md)|Browser-Based Testing<br />Accessibility Testing<br />Acceptance Testing (UAT)<br />Beta Testing|
 |[Visibility Risk](Visibility-Risk)|Usability Testing<br />Corridor Testing|
 |[Complexity Risk](Complexity-Risk.md)|Unit Testing<br />Automated Acceptance testing<br />Integration Testing|
 
@@ -133,7 +133,7 @@ Firstly, it can be easy to fool yourself with tests:  just because your tests pa
 - Can you be sure you haven't written a "null test", one that passes when it should fail?
 - Have you covered the "cracks" between the different parts of the system?  Just because all the _components_ of a bicycle are fine, it doesn't mean that the _bike itself will work_.
 
-Second, Testing is a double-edged sword.  While it allows you to mitigate various [Feature Risks](Feature-Risk), by adding test-code to your project you are necessarily increasing the [complexity](Complexity-Risk.md).  Maintaining tests is hard work, and if you're not careful, _running_ tests can take time and slow down builds and add delay through [Process Risk](Process-Risk). 
+Second, Testing is a double-edged sword.  While it allows you to mitigate various [Feature Risks](Feature-Risk.md), by adding test-code to your project you are necessarily increasing the [complexity](Complexity-Risk.md).  Maintaining tests is hard work, and if you're not careful, _running_ tests can take time and slow down builds and add delay through [Process Risk](Process-Risk). 
 
 Third, if you are [exploring functionality](Prototyping) in order to flush out requirements, understand user behaviour or figure out performance characteristics, then there is _no point in building tests_ yet: what you are doing is exploratory at best and the extra code will [slow you down](Complexity-Risk.md).
 

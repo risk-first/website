@@ -68,7 +68,7 @@ If none of the other issues warn you against regression testing, this should be 
 
 One of the biggest problems is that, eventually, it’s probably too much trouble.  You have to get both systems up and running at the same time, with the same input data, and deterministic services, and you might have to access the production systems for this, and then get the data out of them, and then run the diff tool and eyeball the numbers.  You’ll probably have to clone databases so that A* has the same data as A.  You’ll probably have to do that every time you run it as A is a live system...
 
-Regression testing _seems like_ it's going to be a big win.  Sometimes, if you're lucky, it might be.  But at least now you can see some of the [Hidden Risks](Glossary#hidden-risk) associated with it.  
+Regression testing _seems like_ it's going to be a big win.  Sometimes, if you're lucky, it might be.  But at least now you can see some of the [Hidden Risks](Glossary.md#hidden-risk) associated with it.  
 
 Although [Acceptance Tests](Testing) seem like a harder option, they are much easier to debug, and are probably what you really need:   what they tend to do though is surface problems in the original system that you didn't want to fix.  But, is that a bad thing?
 
