@@ -19,7 +19,7 @@ Hopefully, after reading through some of the articles here, you'll come away wit
 
 ### Questions Answered
 
-- [Risk-First is a Pattern Language (think Design Patterns, or TVTropes)](A-Pattern-Language)
+- [Risk-First is a Pattern Language (think Design Patterns, or TVTropes)](A-Pattern-Language.md)
 - ["Software Development Is All About Risk" - Kent Beck](All-About-Risk)
 - [Who Is This For?](Audience)
 - [Quick, High-Level Summary](Quick-Summary)
