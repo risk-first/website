@@ -5,13 +5,13 @@ description: An introduction to the risks faced by software projects.
 
 # The Risk Landscape
 
-In [the previous section](One-Size-Fits-No-One), we saw how _Lean Software Development_ owed its existence to production-line manufacturing techniques developed at Toyota.  And we saw that the _Waterfall_ approach originally came from engineering.  If Risk-First is anything, it's about applying the techniques of _Risk Management_ to the discipline of _Software Development_ (there's nothing new under the sun, after all).  
+In [the previous section](One-Size-Fits-No-One.md), we saw how _Lean Software Development_ owed its existence to production-line manufacturing techniques developed at Toyota.  And we saw that the _Waterfall_ approach originally came from engineering.  If Risk-First is anything, it's about applying the techniques of _Risk Management_ to the discipline of _Software Development_ (there's nothing new under the sun, after all).  
 
 One key activity of Risk Management we haven't discussed yet is _categorizing_ risks.  Thus, Part 2 of Risk-First is all about developing categories of risks for use in Software Development.
 
 ## The Risk Landscape Again
 
-In [Meeting Reality](Meeting-Reality), we looked at the concept of the [Risk Landscape](Risk-Landscape), and how a software project tries to _navigate_ across this landscape, testing the way as it goes, and trying to get to a position of _more favourable risk_.
+In [Meeting Reality](Meeting-Reality.md), we looked at the concept of the [Risk Landscape](Risk-Landscape), and how a software project tries to _navigate_ across this landscape, testing the way as it goes, and trying to get to a position of _more favourable risk_.
 
 It's tempting to think of our [Risk Landscape](Risk-Landscape) as being like a [Fitness Landscape](https://en.wikipedia.org/wiki/Fitness_landscape).  That is, you have a "cost function" which is your height above the landscape, and you try and optimise by moving downhill in a [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent) fashion.  
 
@@ -42,12 +42,12 @@ Below is a table outlining the different risks we'll see.  There _is_ an order t
 |[Scarcity Risk](Scarcity-Risk)                      |Risks associated with having limited time, money or some other resource.|    
 |[Deadline Risk](Deadline-Risk)                      |The risk of having a date to hit.|
 |[Software Dependency Risk](Software-Dependency-Risk)|The risk of depending on a software library, service or function.|    
-|[Process Risk](Process-Risk)                        |When you depend on a business process, or human process to give you something you need.|
+|[Process Risk](Process-Risk.md)                        |When you depend on a business process, or human process to give you something you need.|
 |[Boundary Risk](Boundary-Risk)                      |Risks due to making decisions that limit your choices later on.  Sometimes, you go the wrong way on the [Risk Landscape](Risk-Landscape) and it's hard to get back to where you want to be.|            
 |[Agency Risk](Agency-Risk.md)                          |Risks that staff have their own [Goals](Glossary.md#goal-in-mind), which might not align with those of the project or team.|
 |[Coordination Risk](Coordination-Risk.md)              |Risks due to the fact that systems contain multiple agents, which need to work together.|       
-|[Map And Territory Risk](Map-And-Territory-Risk)    |Risks due to the fact that people don't see the world as it really is. (After all, they're working off different, imperfect [Internal Models](Glossary.md#internal-model).)|  
-|[Operational Risk](Operational-Risk)                |Software is embedded in a system containing people, buildings, machines and other services.  Operational risk considers this wider picture of risk associated with running a software service or business in the real world.|
+|[Map And Territory Risk](Map-And-Territory-Risk.md)    |Risks due to the fact that people don't see the world as it really is. (After all, they're working off different, imperfect [Internal Models](Glossary.md#internal-model).)|  
+|[Operational Risk](Operational-Risk.md)                |Software is embedded in a system containing people, buildings, machines and other services.  Operational risk considers this wider picture of risk associated with running a software service or business in the real world.|
        
 After the last stop on the tour, in [Staging and Classifying](Staging-And-Classifying) we'll have a recap about what we've seen and make some guesses about how things fit together.  
 
@@ -56,7 +56,7 @@ After the last stop on the tour, in [Staging and Classifying](Staging-And-Classi
 Although we're going to try and categorise the kinds of things we see on this [Risk Landscape](Risk-Landscape), this isn't going to be perfect, because: 
 
  - One risk can "blend" into another just like sometimes a "field" is also a "car-park", or a building might contain some trees (but isn't a forest).
- - As we know from [Part 1](Meeting-Reality), mitigating one risk probably means accepting another.
+ - As we know from [Part 1](Meeting-Reality.md), mitigating one risk probably means accepting another.
  - There can be _causation_ and _correlation_ between different risks:  one risk may cause another, or two risks might have the same underlying cause.
   
 Risk is messy.  It's not always easy to tease apart the different components of risk and look at them individually.<!-- tweet-end -->  Let's look at a high-profile recent example to see why.
@@ -79,7 +79,7 @@ All the [Risks](Glossary.md#Risk) were [correlated](https://www.investopedia.com
 
 ![Causation shown on a Risk-First Diagram.  More complexity is likely to lead to more Operational Risk](images/generated/risks/landscape/causation.png)
 
-It's like this with software risks, too, sadly.  For example, [Operational Risk](Operational-Risk) is going to be heavily correlated with [Complexity Risk](Complexity-Risk.md): the more complex your operation, the more risky it will be.  In the Risk-First diagrams, we will sometimes show correlation or causation with an arrow, like in the diagram above.
+It's like this with software risks, too, sadly.  For example, [Operational Risk](Operational-Risk.md) is going to be heavily correlated with [Complexity Risk](Complexity-Risk.md): the more complex your operation, the more risky it will be.  In the Risk-First diagrams, we will sometimes show correlation or causation with an arrow, like in the diagram above.
 
 ## We're all Naturalists Now
 

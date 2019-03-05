@@ -46,7 +46,7 @@ This is a toy example, but in real life this dilemma occurs when we choose betwe
  
 The degree of [Boundary Risk](Boundary-Risk) is dependent on a number of factors:
 
- - **The Sunk Cost** of the [Learning Curve](Communication-Risk.md#learning-curve-risk) we've overcome to integrate the dependency, which may fail to live up to expectations (_cf._ [Feature Fit Risks](Feature-Risk.md#feature-fit-risk)).   We can avoid accreting this by choosing the _simplest_ and _fewest_ dependencies for any task, and trying to [Meet Reality](Meeting-Reality) quickly.
+ - **The Sunk Cost** of the [Learning Curve](Communication-Risk.md#learning-curve-risk) we've overcome to integrate the dependency, which may fail to live up to expectations (_cf._ [Feature Fit Risks](Feature-Risk.md#feature-fit-risk)).   We can avoid accreting this by choosing the _simplest_ and _fewest_ dependencies for any task, and trying to [Meet Reality](Meeting-Reality.md) quickly.
  - **Life Expectancy**:  libraries and products come and go.  A choice that was popular when it was made may be superseded in the future by something better.  (_cf._ [Market Risk](Feature-Risk.md#market-risk)).  This may not be a problem until you try to renew a support contract, or try to do an operating system update. Although no-one can predict how long a technology will last, [The Lindy Effect](https://en.wikipedia.org/wiki/Lindy_effect) suggests that _future life expectancy is proportional to current age_.  So, you might expect a technology that has been around for ten years to be around for a further ten.
  - **The level of [Lock In](#ecosystems-and-lock-in)**, where the cost of switching to a new dependency in the future is some function of the level of commitment to the current dependency.  As an example, consider the level of commitment you have to your mother tongue.  If you have spent your entire life committed to learning and communicating in English, there is a massive level of lock-in.  Overcoming this to become fluent in Chinese may be an overwhelming task.
  - **Future needs**: will the dependency satisfy your expanding requirements going forward? (_cf._ [Feature Drift Risk](Feature-Risk.md#feature-drift-risk))
@@ -204,7 +204,7 @@ In [Feature Risk](Feature-Risk.md#feature-drift-risk), we saw that the features 
  
 - **Human need is [Fractal](https://en.wikipedia.org/wiki/Fractal)**:  this means that over time, software products have evolved to more closely map human needs.   Software that would have delighted us ten years ago lacks the sophistication we expect today.
 - **Software and hardware are both improving with time**: due to evolution and the ability to support greater and greater levels of complexity.
-- **Abstractions accrete too**:  as we saw in [Process Risk](Process-Risk), we _encapsulate_ earlier abstractions in order to build later ones.
+- **Abstractions accrete too**:  as we saw in [Process Risk](Process-Risk.md), we _encapsulate_ earlier abstractions in order to build later ones.
 
 The only thing we can expect in the future is that the lifespan of any ecosystem will follow the arc shown in the above diagram, through creation, adoption, growth, use and finally either be abstracted over or abandoned.  
 

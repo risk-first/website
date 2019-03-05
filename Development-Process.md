@@ -135,7 +135,7 @@ Next, User Acceptance Testing (UAT) is where our new feature meets another reali
 
 **Fourth**, hopefully you can see from the above that really _all this work is risk management_, and _all work is testing ideas against reality_.   
 
-In the next section, we're going to look at the concept of [Meeting Reality](Meeting-Reality) in a bit more depth.
+In the next section, we're going to look at the concept of [Meeting Reality](Meeting-Reality.md) in a bit more depth.
 
 
 

@@ -28,13 +28,13 @@ There are several ways you can prioritise work:
 - **Biggest Win**:  What's the best thing we can do right now to reduce [Attendant Risk](Glossary.md#attendant-risk) for least additional [Schedule-Risk](Scarcity-Risk#schedule-risk)?  (i.e. simply considering how much *work* is likely to be involved)
 - **Dependency Order**:  Sometimes, you can't build Feature A until Feature B is complete.   Prioritisation helps to identify and mitigate [Dependency Risk](Dependency-Risk.md).
 
-By prioritising, you get to [Meet Reality](Meeting-Reality) _sooner_ and _more frequently_ and in _small chunks_.
+By prioritising, you get to [Meet Reality](Meeting-Reality.md) _sooner_ and _more frequently_ and in _small chunks_.
 
 ## Feedback Loops & Risks Mitigated
 
 ### [Review](Sign-Off) 
 
-This one way in which a particular prioritisation [Meets Reality](Meeting-Reality)
+This one way in which a particular prioritisation [Meets Reality](Meeting-Reality.md)
 
 - Developers might tell you that the ordering incurs [Dependency Risk](Dependency-Risk.md) or [Coordination Risk](Coordination-Risk.md) if everyone is going to end up working on the same components.
 - Product Owners might tell you that you're not tackling the right [Feature Risk](Feature-Risk.md).
@@ -44,7 +44,7 @@ This one way in which a particular prioritisation [Meets Reality](Meeting-Realit
 
 Breaking a large delivery down into lots of small releases has an impact on [Production Risk](Production-Risk):
 
- - Usually, lots of small releases allows you to _practice_ the release process while the project is relatively unimportant.  This experience allows you to figure out automation and reduce the [Process Risk](Process-Risk) of releasing too.
+ - Usually, lots of small releases allows you to _practice_ the release process while the project is relatively unimportant.  This experience allows you to figure out automation and reduce the [Process Risk](Process-Risk.md) of releasing too.
  - Smaller, higher-cadence releases also reduce [Visibility Risk](Visibility-Risk), because users don't have large amounts of change to get accustomed to all-in-one-go.   
  
 ### [Schedule Risk](Scarcity-Risk#schedule-risk)

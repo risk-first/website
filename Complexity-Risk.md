@@ -192,9 +192,9 @@ The most common way we talk about [Complexity Risk](Complexity-Risk.md) in softw
 
 > "Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite... The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organisations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise." - [Ward Cunningham, 1992, _Wikipedia, Technical Debt_](https://en.wikipedia.org/wiki/Technical_debt)
 
-Building a low-complexity first-time solution is often a waste:  in the first version, we're usually interested in reducing [Feature Risk](Feature-Risk.md) as fast as possible. That is, putting working software in front of users to get [feedback](Meeting-Reality).  We would rather carry [Complexity Risk](Complexity-Risk.md) than take on more attendant [Schedule Risk](Scarcity-Risk#schedule-risk).
+Building a low-complexity first-time solution is often a waste:  in the first version, we're usually interested in reducing [Feature Risk](Feature-Risk.md) as fast as possible. That is, putting working software in front of users to get [feedback](Meeting-Reality.md).  We would rather carry [Complexity Risk](Complexity-Risk.md) than take on more attendant [Schedule Risk](Scarcity-Risk#schedule-risk).
 
-So a quick-and-dirty, over-complex implementation mitigates the same [Feature Risk](Feature-Risk.md) and allows you to [Meet Reality](Meeting-Reality) faster.  
+So a quick-and-dirty, over-complex implementation mitigates the same [Feature Risk](Feature-Risk.md) and allows you to [Meet Reality](Meeting-Reality.md) faster.  
 
 ![Complexity Risk and some mitigations](images/generated/risks/complexity/complexity-risk2.png)
 
@@ -212,7 +212,7 @@ It's not long before someone comes down with food poisoning.
 
 ![Complexity Risk and its implications](images/generated/risks/complexity/complexity-risk-impact.png)
 
-We wouldn't tolerate this behaviour in a restaurant kitchen, so why put up with it in a software project?  This state-of-affairs is illustrated in the above diagram: [Complexity Risk](Complexity-Risk.md) can be a cause of [Operational Risks](Operational-Risk) and [Security Risks](Agency-Risk.md#security).
+We wouldn't tolerate this behaviour in a restaurant kitchen, so why put up with it in a software project?  This state-of-affairs is illustrated in the above diagram: [Complexity Risk](Complexity-Risk.md) can be a cause of [Operational Risks](Operational-Risk.md) and [Security Risks](Agency-Risk.md#security).
 
 ## Feature Creep
 
@@ -270,7 +270,7 @@ So far, we've focused mainly on [Codebase Risk](Complexity-Risk.md#codebase-risk
 
 There is a whole branch of complexity theory devoted to how the software _runs_, namely [Big O Complexity](https://en.wikipedia.org/wiki/Big_O_notation).  
 
-Once running, an algorithm or data structure will consume space or runtime dependent on its performance characteristics, which may well have an impact on the [Operational Risk](Operational-Risk) of the software.  Using off-the-shelf data structures and algorithms helps, but you still need to know their performance characteristics. 
+Once running, an algorithm or data structure will consume space or runtime dependent on its performance characteristics, which may well have an impact on the [Operational Risk](Operational-Risk.md) of the software.  Using off-the-shelf data structures and algorithms helps, but you still need to know their performance characteristics. 
 
 The [Big O Cheat Sheet](http://bigocheatsheet.com) is a wonderful resource to investigate this further.  
 
@@ -280,7 +280,7 @@ Memory Management (and more generally, all resource management in software) is a
 
 > "Memory leaks are a common error in programming, especially when using languages that have no built in automatic garbage collection, such as C and C++." - [Memory Leak, _Wikipedia_](https://en.wikipedia.org/wiki/Memory_leak)
 
-[Garbage Collectors](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)) (as found in Javascript or Java) offer you the deal that they will mitigate the [Complexity Risk](Complexity-Risk.md) of you having to manage your own memory, but in return perhaps give you fewer guarantees about the _performance_ of your software.  Again, there are times when you can't accommodate this [Operational Risk](Operational-Risk), but these are rare and usually only affect a small portion of an entire software-system.  
+[Garbage Collectors](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)) (as found in Javascript or Java) offer you the deal that they will mitigate the [Complexity Risk](Complexity-Risk.md) of you having to manage your own memory, but in return perhaps give you fewer guarantees about the _performance_ of your software.  Again, there are times when you can't accommodate this [Operational Risk](Operational-Risk.md), but these are rare and usually only affect a small portion of an entire software-system.  
  
 ### Protocols And Types
 
@@ -314,7 +314,7 @@ This is a strong argument for the use of libraries.  But when should you use a l
 
 ### The Environment
 
-The complexity of software tends to reflect the complexity of the environment it runs in, and complex software environments are more difficult to reason about, and more susceptible to [Operational Risk](Operational-Risk) and [Security-Risk](Agency-Risk.md#security).  
+The complexity of software tends to reflect the complexity of the environment it runs in, and complex software environments are more difficult to reason about, and more susceptible to [Operational Risk](Operational-Risk.md) and [Security-Risk](Agency-Risk.md#security).  
 
 In particular, when we talk about the environment, we are talking about the number of dependencies that the software has, and the risks we face when relying on those dependencies.  
 

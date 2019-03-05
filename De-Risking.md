@@ -28,7 +28,7 @@ Let's look at some common strategies for De-Risking.
 
 Of course, you may pick up other, more serious [Attendant Risks](Glossary.md#attendant-risk) as a result: Relational Databases are software solutions to many kinds of [Coordination Risk](Coordination-Risk.md) problem.
 
-_Not_ launching an online service _avoids_ the [Operational Risk](Operational-Risk) involved in running one.  Although you avoid the upsides too.
+_Not_ launching an online service _avoids_ the [Operational Risk](Operational-Risk.md) involved in running one.  Although you avoid the upsides too.
 
 ## Transfer
 
@@ -77,7 +77,7 @@ In the section on [Schedule Risk](Scarcity-Risk#schedule-risk) we are going to l
 
 Going back to the example of home insurance, the Insurance company is **exploiting** the risk of my house burning down by selling me insurance.  This is a common pattern:  wherever there is risk, there is likely to be a way to profit from it.  
 
-Later, in the section on [Process Risk](Process-Risk) we'll be looking at how **exploiting risk** can happen organically within a company. 
+Later, in the section on [Process Risk](Process-Risk.md) we'll be looking at how **exploiting risk** can happen organically within a company. 
 
 ## Re-cap
 
@@ -87,9 +87,9 @@ Let's look at the journey so far.
  
  - In the [Development Process](Development-Process.md) we looked at how common software engineering conventions like Unit Testing, User Acceptance Testing and Integration could help us manage the risk of taking an idea to production, by _gradually_ introducing it to reality in stages.
 
- - Then, generalizing the lessons of the Development Process article, we examined the idea that [Meeting Reality](Meeting-Reality) frequently helps flush out [Hidden Risks](Glossary.md#hidden-risk) and improve your [Internal Model](Glossary.md#Internal-Model).
+ - Then, generalizing the lessons of the Development Process article, we examined the idea that [Meeting Reality](Meeting-Reality.md) frequently helps flush out [Hidden Risks](Glossary.md#hidden-risk) and improve your [Internal Model](Glossary.md#Internal-Model).
  
- - In [Just Risk](Just-Risk) we took a leap of faith: could _everything_ we do just be risk management?  And we looked at the RAID log and thought that maybe it could be.   
+ - In [Just Risk](Just-Risk.md) we took a leap of faith: could _everything_ we do just be risk management?  And we looked at the RAID log and thought that maybe it could be.   
  
  - Next, in [A Software Project Scenario](Software-Project-Scenario) we looked at how you could treat the project-as-a-whole as a risk management exercise, and treat the goals from one day to the next as activities to manage risk.
  

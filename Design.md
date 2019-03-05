@@ -14,7 +14,7 @@ Although it's fallen out of favour in Agile methodologies, there are benefits to
 
 ## How It Works  
 
-As we saw in [Meet Reality](Meeting-Reality), "Navigating the [Risk Landscape](Risk-Landscape)", meant going from a position of high risk, to a position of lower risk.  [Agile Design](Agile) is much like [Gradient Descent](): each day, one small step after another _downwards in risk_ on the [Risk Landscape](Risk-Landscape).
+As we saw in [Meet Reality](Meeting-Reality.md), "Navigating the [Risk Landscape](Risk-Landscape)", meant going from a position of high risk, to a position of lower risk.  [Agile Design](Agile) is much like [Gradient Descent](): each day, one small step after another _downwards in risk_ on the [Risk Landscape](Risk-Landscape).
 
 But the problem with this is you can get trapped in a [Local Minima](), where there are _no_ easy steps to take to get you to where you want to be.  Here is a [real life example](Tradeoffs).  This is [Dead End Risk](Dead-End-Risk).
 

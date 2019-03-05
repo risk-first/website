@@ -15,7 +15,7 @@ Our [Internal Models](Glossary.md#internal-model) of the world are constructed f
 
 As the diagram above shows, there is a translation going on here: observations about the arrangement of _atoms_ in the world are _communicated_ to our [Internal Models](Glossary.md#internal-model) and stored as patterns of _information_ (measured in bits and bytes). <!-- tweet-end --> 
 
-We face [Map And Territory Risk](Map-And-Territory-Risk) because we base our behaviour on our [Internal Models](Glossary.md#internal-model) rather than reality itself.  It comes from the expression "Confusing the Map for the Territory", attributed to Alfred Korzybski:
+We face [Map And Territory Risk](Map-And-Territory-Risk.md) because we base our behaviour on our [Internal Models](Glossary.md#internal-model) rather than reality itself.  It comes from the expression "Confusing the Map for the Territory", attributed to Alfred Korzybski:
 
 > "Polish-American scientist and philosopher Alfred Korzybski remarked that "the map is not the territory"  and that "the word is not the thing", encapsulating his view that an abstraction derived from something, or a reaction to it, is not the thing itself. Korzybski held that many people _do_ confuse maps with territories, that is, confuse models of reality with reality itself." - [Map-Territory Relation, _Wikipedia_](https://en.wikipedia.org/wiki/Map–territory_relation)
 
@@ -24,7 +24,7 @@ We face [Map And Territory Risk](Map-And-Territory-Risk) because we base our beh
 As the above diagram shows, there are two parts to this risk, which we are going to examine in this section:  
 
  - **The internal model may be insufficient.** This leads to issues along the same axes we introduced in [Feature Risk](Feature-Risk.md) (that is Fitness, Audience and Evolution).  We'll look at the examples of SatNavs, Software Metrics and Hype-Cycles along the way to illustrate this.
- - **The assumption that the model is right.** We're going to look at [Map and Territory Risk](Map-And-Territory-Risk) within the contexts of **machines**, **people**, **hierarchies** and **markets**.
+ - **The assumption that the model is right.** We're going to look at [Map and Territory Risk](Map-And-Territory-Risk.md) within the contexts of **machines**, **people**, **hierarchies** and **markets**.
 
 ## Fitness
 
@@ -38,7 +38,7 @@ In the headline above, taken from [the Telegraph newspaper](https://www.telegrap
 
 This wasn't borne of stupidity, but experience:  SatNavs are pretty reliable. _So many times_ the SatNav had been right, that the driver stopped _questioning its fallibility_.  
 
-There are two [Map and Territory Risks](Map-And-Territory-Risk) here:
+There are two [Map and Territory Risks](Map-And-Territory-Risk.md) here:
 
 - The [Internal Model](Glossary.md#internal-model) of the _SatNav_ contained information that was wrong:  the track had been marked up as a road, rather than a path.  
 - The [Internal Model](Glossary.md#internal-model) of the _driver_ was wrong:   his abstraction of "the SatNav is always right" turned out to be only _mostly_ accurate.  
@@ -55,7 +55,7 @@ Communication allows us to _share_ information between [Internal Models](Glossar
 
 ![Relative popularity of "Machine Learning" and "Big Data" as search terms on [Google Trends](https://trends.google.com), 2011-2018 ](images/google-trends.png)
  
-But how does [Map and Territory Risk](Map-And-Territory-Risk) apply across a population of [Internal Models](Glossary.md#internal-model)?   Can we track the rise-and-fall of _ideas_ like we track stock prices?  In effect, this is what [Google Trends](https://trends.google.com) does.  In the chart above, we can see the relative popularity of two search terms over time.  This is probably as good an indicator as any of the changing popularity of an abstraction within an audience.
+But how does [Map and Territory Risk](Map-And-Territory-Risk.md) apply across a population of [Internal Models](Glossary.md#internal-model)?   Can we track the rise-and-fall of _ideas_ like we track stock prices?  In effect, this is what [Google Trends](https://trends.google.com) does.  In the chart above, we can see the relative popularity of two search terms over time.  This is probably as good an indicator as any of the changing popularity of an abstraction within an audience.
 
 ### Example: Map And Territory Risk Drives The Hype Cycle
 
@@ -67,7 +67,7 @@ Most ideas (and most products) have a slow, hard climb to wide-scale adoption.  
 
 The five phases (and the "Hype" itself as the thick black line) are shown in the chart above.  We start off at the "Technology Trigger", moving to the "Peak of Inflated Expectations", then to the "Trough of Disillusionment" and finally up the "Slope of Enlightenment" to the "Plateau of Productivity".  
 
-The concept of [Map and Territory Risk](Map-And-Territory-Risk) actually helps explain why this curve has the shape it does.  To see why, let's consider each line in turn:
+The concept of [Map and Territory Risk](Map-And-Territory-Risk.md) actually helps explain why this curve has the shape it does.  To see why, let's consider each line in turn:
 
  - The **Awareness** (or enthusiasm for) the idea within the population is the dotted line.
  
@@ -75,15 +75,15 @@ The concept of [Map and Territory Risk](Map-And-Territory-Risk) actually helps e
 
  - **Map And Territory Risk** is the difference between **Awareness** and **Knowledge**.  It's highest point is where the **Awareness** of the idea is farthest from the **Knowledge** of it.  
 
- - **Hype** is calculated here as being the **Awareness** line, subtracting **Map and Territory Risk** from a point lagging behind the current time (since it takes time to appreciate this risk).  As the population appreciates more [Map and Territory Risk](Map-And-Territory-Risk), **Hype** decreases.   
+ - **Hype** is calculated here as being the **Awareness** line, subtracting **Map and Territory Risk** from a point lagging behind the current time (since it takes time to appreciate this risk).  As the population appreciates more [Map and Territory Risk](Map-And-Territory-Risk.md), **Hype** decreases.   
  
-At the point where the effect of [Map and Territory Risk](Map-And-Territory-Risk) is at its greatest we end up in the "Trough of Disillusionment".  Eventually, we escape the trough as **Knowledge** and understanding of the idea increases, reducing [Map and Territory Risk](Map-And-Territory-Risk).
+At the point where the effect of [Map and Territory Risk](Map-And-Territory-Risk.md) is at its greatest we end up in the "Trough of Disillusionment".  Eventually, we escape the trough as **Knowledge** and understanding of the idea increases, reducing [Map and Territory Risk](Map-And-Territory-Risk.md).
  
 ![Hype Cycle 2: more even growth of Awareness and Knowledge means no "Trough of Disillusionment"](images/numbers/hype2.png)
 
 As you might expect, the "Trough of Disillusionment" exists because the **Awareness** of the idea and the **Knowledge** about it increase at different rates.
  
-Where the **Awareness** and **Knowledge** grow more evenly together, there is no spike in [Map and Territory Risk](Map-And-Territory-Risk) and we don't see the corresponding "Trough of Disillusionment" at all, as shown in the above chart.
+Where the **Awareness** and **Knowledge** grow more evenly together, there is no spike in [Map and Territory Risk](Map-And-Territory-Risk.md) and we don't see the corresponding "Trough of Disillusionment" at all, as shown in the above chart.
 
 ![Audience Feature Risks, as manifested in the Internal Model](images/generated/risks/map-and-territory/map_and_territory_table_2.png)
 
@@ -122,7 +122,7 @@ But _correlation_ doesn't imply _causation_.  The _cause_ might be different:
  - User satisfaction and SLOC might both be down to the calibre of the developers.
  - Response time and revenue might both be down to clever team planning.
  
-Metrics are seductive because they simplify reality and are easily communicated.  But they _inherently_ contain [Map and Territory Risk](Map-and-territory-risk): by relying _only_ on the metrics, you're not really _seeing_ the reality.  
+Metrics are seductive because they simplify reality and are easily communicated.  But they _inherently_ contain [Map and Territory Risk](Map-And-Territory-Risk.md): by relying _only_ on the metrics, you're not really _seeing_ the reality.  
 
 The devil is in the detail.
 
@@ -160,13 +160,13 @@ The diagram above shows how Evolution-type [Feature Risks](Feature-Risk.md) can 
 
 ## Humans and Machines
 
-In the example of the SatNav, we saw how the _quality_ of [Map and Territory Risk](Map-And-Territory-Risk) is different for _people_ and _machines_.   Whereas people _should_ be expected show skepticism for new (unlikely) information our databases accept it unquestioningly.  _Forgetting_ is an everyday, usually benign part of our human [Internal Model](Glossary.md#internal-model), but for software systems it is a production crisis involving 3am calls and backups.  
+In the example of the SatNav, we saw how the _quality_ of [Map and Territory Risk](Map-And-Territory-Risk.md) is different for _people_ and _machines_.   Whereas people _should_ be expected show skepticism for new (unlikely) information our databases accept it unquestioningly.  _Forgetting_ is an everyday, usually benign part of our human [Internal Model](Glossary.md#internal-model), but for software systems it is a production crisis involving 3am calls and backups.  
 
-For Humans, [Map and Territory Risk](Map-And-Territory-Risk) is exacerbated by [cognitive biases](https://en.wikipedia.org/wiki/List_of_cognitive_biases):
+For Humans, [Map and Territory Risk](Map-And-Territory-Risk.md) is exacerbated by [cognitive biases](https://en.wikipedia.org/wiki/List_of_cognitive_biases):
 
 > "Cognitive biases are systematic patterns of deviation from norm or rationality in judgement, and are often studied in psychology and behavioural economics." - [Cognitive Bias, _Wikipedia_](https://en.wikipedia.org/wiki/List_of_cognitive_biases)
 
-There are _lots_ of cognitive biases.  But let's just mention some that are relevant to [Map and Territory Risk](Map-And-Territory-Risk):
+There are _lots_ of cognitive biases.  But let's just mention some that are relevant to [Map and Territory Risk](Map-And-Territory-Risk.md):
 
 - **Availability Heuristic**: people overestimate the importance of knowledge they have been exposed to. 
 - **The Ostrich Effect**:  which is where dangerous information is ignored or avoided because of the emotions it will evoke.
@@ -174,7 +174,7 @@ There are _lots_ of cognitive biases.  But let's just mention some that are rele
 
 ## Hierarchical Organisations
 
-[Map And Territory Risk](Map-And-Territory-Risk) "trickles down" through an organisation.  The higher levels have an out-sized ability to pervert the incentives at lower levels because once an organisation begins to pursue a "bullshit objective" the whole company can align to this.  
+[Map And Territory Risk](Map-And-Territory-Risk.md) "trickles down" through an organisation.  The higher levels have an out-sized ability to pervert the incentives at lower levels because once an organisation begins to pursue a "bullshit objective" the whole company can align to this.  
 
 [The Huffington Post](https://www.huffingtonpost.com/otto-scharmer/the-fish-rots-from-the-he_b_8208652.html) paints a brilliant picture of how Volkswagen managed to get caught faking their emissions tests.  As they point out:
 
@@ -189,7 +189,7 @@ This article identifies the following process:
 
 ## Markets
 
-We've considered [Map and Territory Risk](Map-And-Territory-Risk) for individuals, teams and organisations.  [Inadequate Equilibria](https://equilibriabook.com) by Eleizer Yudkovsky, looks at how perverse incentive mechanisms break not just departments, but entire societal systems.  He highlights one example involving _academics_ and _grantmakers_ in academia:
+We've considered [Map and Territory Risk](Map-And-Territory-Risk.md) for individuals, teams and organisations.  [Inadequate Equilibria](https://equilibriabook.com) by Eleizer Yudkovsky, looks at how perverse incentive mechanisms break not just departments, but entire societal systems.  He highlights one example involving _academics_ and _grantmakers_ in academia:
 
  - It's not very apparent which academics are more worthy of funding.
  - One proxy is what they've published (scientific papers) and where they've published (journals).
@@ -204,4 +204,4 @@ As the book points out, while everyone _persists_ in using an inadequate abstrac
 
 Scientific journals are a single example taken from a closely argued book investigating lots of cases of this kind.  It's worth taking the time to read a couple of the chapters on this interesting topic.  (Like Risk-First it is available to read online).
 
-As usual, this section forms a grab-bag of examples in a complex topic.  But it's time to move on as there is one last stop we have to make on the [Risk Landscape](Glossary.md#risk-landscape), and that is to look at [Operational Risk](Operational-Risk).  
+As usual, this section forms a grab-bag of examples in a complex topic.  But it's time to move on as there is one last stop we have to make on the [Risk Landscape](Glossary.md#risk-landscape), and that is to look at [Operational Risk](Operational-Risk.md).  

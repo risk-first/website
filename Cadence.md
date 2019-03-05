@@ -5,7 +5,7 @@ description: Explanation of the importance of feedback loops for managing risk.
 
 # Cadence
 
-Let's go back to the model again, introduced in [Meeting Reality](Meeting-Reality).
+Let's go back to the model again, introduced in [Meeting Reality](Meeting-Reality.md).
 
 ![Meeting Reality: reality is changed and so is your internal model.](images/generated/introduction/model_vs_reality_2.png)
 
@@ -16,7 +16,7 @@ How _fast_ should we go round this loop?  The longer you leave your [goal in min
 Testing your [goals in mind](Glossary.md#Goal-In-Mind) against reality early and safely is how you'll manage risk effectively, and to do this, you need to set up **Feedback Loops**. <!-- tweet-end --> e.g.
 
  - **Bug Reports and Feature Requests** tell you how the users are getting on with the software.
- - **[Monitoring Tools and Logs](Operational-Risk)** allow you to find out how your software is doing in reality.
+ - **[Monitoring Tools and Logs](Operational-Risk.md)** allow you to find out how your software is doing in reality.
  - **Dog-Fooding** i.e using the software you write yourself might be faster than talking to users.
  - **[Continuous Delivery](https://en.wikipedia.org/wiki/Continuous_delivery)** is about putting software into production as soon as it's written.   
  - **Integration Testing** is a faster way of meeting _some_ reality than continually deploying code and re-testing it manually.

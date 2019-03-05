@@ -24,7 +24,7 @@ In [Development Process](Development-Process.md) we introduced the following dia
 As with any [Practice](Practices), we are coding to minimize [Attendant Risks](Glossary.md#attendant-risk).  We might want...
 
 - **To Build** or improve some features which our clients will find useful. - _[Feature Risk](Feature-Risk.md)_
-- **To Automate** some process that takes too long or is too arduous.  - _[Process Risk](Process-Risk)_
+- **To Automate** some process that takes too long or is too arduous.  - _[Process Risk](Process-Risk.md)_
 - **To Explore** how our tools, systems or dependencies work (also called [Hacking](https://en.wikipedia.org/wiki/Hacking)). -  _[Dependency Risk](Dependency-Risk.md)_ internal model risk
 - **To Refactor** our codebase, to reduce complexity. - _[Complexity Risk](Complexity-Risk.md)_
 - **To Clarify** our product, making our software more _presentable_ and _easier to understand_.  -  _[Communication Risk](Communication-Risk.md)_
@@ -96,7 +96,7 @@ By having more people involved, the feedback loop will be longer than the two-ma
 
 One of the problems with a **SkunkWorks** approach is that you end up with more [Coordination Risk](Coordination-Risk.md) than you'd like, as your different skunk-teams end up with different [Internal Models](Glossary.md#Internal-Model) and different [Goals](Glossary.md#Goal-In-Mind).  
 
-In large companies, this is called [Silo Mentality](https://en.wikipedia.org/wiki/Information_silo) - the tendency for lines of business to stop communicating and sharing with one another.  As you can imagine, this leads to a more [Complex](Complexity-Risk.md) and [bureaucratic](Process-Risk#bureaucratic-risk) structure than would be optimal.
+In large companies, this is called [Silo Mentality](https://en.wikipedia.org/wiki/Information_silo) - the tendency for lines of business to stop communicating and sharing with one another.  As you can imagine, this leads to a more [Complex](Complexity-Risk.md) and [bureaucratic](Process-Risk.md#bureaucratic-risk) structure than would be optimal.
 
 But this can happen within a single coding team, too:  by splitting up and working on different pieces of functionality within a project, the team _specialises_ and becomes expert in the parts it has worked on.  This means the team members have different [Internal Models](Glossary.md#Internal-Model) of the codebase.
 
@@ -129,7 +129,7 @@ But, conversely, there is a cost to **Pair Programming**:
  - Could the same [Complexity Risk](Complexity-Risk.md) be mitigated just with more regular [Code Reviews](Review)?
  - Sometimes, asking members of a team to work so closely together is a recipe for disaster.  [Team Risk](Coordination-Risk.md)
  - Not every pair programmer "shares" the keyboard time evenly, especially if ability levels aren't the same.
- - There is only one **Feedback loop**, so despite the fact you have two people, you can only [Meet Reality](Meeting-Reality) serially.  
+ - There is only one **Feedback loop**, so despite the fact you have two people, you can only [Meet Reality](Meeting-Reality.md) serially.  
    
  **Mob Programming** goes one stage further and suggests that we can write better software with _even more people around the keyboard_.  So, what's the right number?  Clearly, the usual trade-off applies:  are you _mitigating_ more risk than you're _gaining_?   
  
@@ -194,12 +194,12 @@ This can require some guts to do:  you have to overcome your own ego (wanting to
 
 One of the key ways to measure whether your team is doing _useful work_ is to look at whether, in fact, it can be automated.  And this is the spirit of [DevOps](DevOps) - the idea that people in general are poor at repeatable tasks, and anything people do repeatedly _should_ be automated.  
 
-Repetitive work of any kind is a [Process Risk](Process-Risk), and can be mitigated at the expense of attendant [Complexity Risk](Complexity-Risk.md) and [Schedule Risk](Scarcity-Risk#schedule-risk).
+Repetitive work of any kind is a [Process Risk](Process-Risk.md), and can be mitigated at the expense of attendant [Complexity Risk](Complexity-Risk.md) and [Schedule Risk](Scarcity-Risk#schedule-risk).
 
-Since this is a trade-off, you have to be careful about how you _weigh_ the [Process Risk](Process-Risk):  clearly, it exists _into the future_.  
+Since this is a trade-off, you have to be careful about how you _weigh_ the [Process Risk](Process-Risk.md):  clearly, it exists _into the future_.  
 
-You are making a bet that acting now will pay off in decreased [Process Risk](Process-Risk) over the lifetime of the project.  This is a hard thing to judge:
- - How much [Process Risk](Process-Risk) are we carrying, week-to-week?  (A good way to answer this is to look at past failures).
+You are making a bet that acting now will pay off in decreased [Process Risk](Process-Risk.md) over the lifetime of the project.  This is a hard thing to judge:
+ - How much [Process Risk](Process-Risk.md) are we carrying, week-to-week?  (A good way to answer this is to look at past failures).
  - How much [Complexity Risk](Complexity-Risk.md) will we pick up?
  - How much [Schedule Risk](Scarcity-Risk#schedule-risk) (in spent developer effort) will we pick up?
  - How long will the mitigation last before the process changes again?
@@ -208,7 +208,7 @@ You are making a bet that acting now will pay off in decreased [Process Risk](Pr
  
 In general, unless the problem is somehow _specific to your circumstances_ it may well be better to skip direct coding and pick up some new tools to help with the job.  
 
-Tools are a different trade off to automation.  You are mitigating [Process Risk](Process-Risk) or [Feature Risk](Feature-Risk.md) in return for:
+Tools are a different trade off to automation.  You are mitigating [Process Risk](Process-Risk.md) or [Feature Risk](Feature-Risk.md) in return for:
  - New [Dependency Risk](Dependency-Risk.md) on the new tool.
  - [Communication Risk](Communication-Risk.md) because now the team has to understand the tool.
  - [Schedule Risk](Scarcity-Risk#schedule-risk) in the time it takes to learn and integrate the tool.

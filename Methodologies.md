@@ -18,7 +18,7 @@ When it sticks, a methodology embeds a set of practices in a team to such an ext
 
 ![A Pattern Language](images/generated/pattern_language.png)
 
-It stands to reason that if [all software is about risk management](Just-Risk), then we can examine methodologies 
+It stands to reason that if [all software is about risk management](Just-Risk.md), then we can examine methodologies 
 _themselves_ in terms of how their practices mitigate risk, and change the balance of risk on projects.  
 
 With that in mind, we are going to examine several methodologies, and break them down into their key _practices_.  For each practice, we will look at which [Attendant Risks](Glossary.md#attendant-risk) it mitigates, and what [Attendant Risks](Glossary.md#attendant-risk) it incurs.

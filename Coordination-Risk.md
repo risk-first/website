@@ -249,6 +249,6 @@ At the start of this section, we questioned whether [Coordination Risk](Coordina
 - There are _no_ lines of communication on the **UI** decision-type.  It's only when we want to avoid competition, by sharing resources and working towards common goals that we need to communicate.  
 - Therefore, the whole point of communication _is for coordination_.  
 
-In the next section, [Map And Territory Risk](Map-And-Territory-Risk), we're going to look at some new ways in which systems can fail, despite their attempts to coordinate.
+In the next section, [Map And Territory Risk](Map-And-Territory-Risk.md), we're going to look at some new ways in which systems can fail, despite their attempts to coordinate.
  
  
