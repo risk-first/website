@@ -61,4 +61,4 @@ Yes, CD will give you faster feedback loops, but even getting things into produc
 
 The right answer is to use multiple feedback loops, as shown in the diagram above.
 
-In the next section [De-Risking](De-Risking) we're going to introduce a few more useful terms for thinking about risk.
+In the next section [De-Risking](De-Risking.md) we're going to introduce a few more useful terms for thinking about risk.

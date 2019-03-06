@@ -93,7 +93,7 @@ The diagram above shows how Audience-type [Feature Risks](Feature-Risk.md) can m
 
 So concepts and abstractions spread through an audience.  But what happens next?   
 
- - People will use and abuse new ideas up to the point when they start breaking down. (We also discussed this as the **Peter Principle** in [Boundary Risk](Boundary-Risk).)  
+ - People will use and abuse new ideas up to the point when they start breaking down. (We also discussed this as the **Peter Principle** in [Boundary Risk](Boundary-Risk.md).)  
  - At the same time, reality itself _evolves_ in response to the idea:  the new idea displaces old ones,  behaviour changes, and the idea itself can change. 
 
 ### Example: Metrics

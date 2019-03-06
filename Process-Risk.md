@@ -41,21 +41,21 @@ Sometimes, processes are _not_ used commonly.  How can we rely on them anyway?  
 - Running through a disaster recovery scenario at the weekend.
 - Increasing the release cadence, so that we practice the release process more.
 
-The feedback loops allow us to perform [Retrospectives and Reviews](Review) to improve our processes. 
+The feedback loops allow us to perform [Retrospectives and Reviews](Review.md) to improve our processes. 
 
 ### Processes, Sign-Offs and Agency Risk
 
-Often, Processes will include sign-off steps.  The [Sign-Off](Sign-Off) is an interesting mechanism:  
+Often, Processes will include sign-off steps.  The [Sign-Off](Sign-Off.md) is an interesting mechanism:  
 
  - By signing off on something for the business, people are usually in some part staking their reputation on something being right. 
  - Therefore, you would expect that sign-off involves a lot of [Agency Risk](Agency-Risk.md):  people don't want to expose themselves in career-limiting ways.  
  - Therefore, the bigger the risk they are being asked to swallow, the more cumbersome and protracted the sign-off process.  
  
-Often, [Sign-Offs](Sign-Off) boil down to a balance of risk for the signer:  on the one hand, _personal, career risk_ from signing off, on the other, the risk of upsetting the rest of the staff waiting for the sign-off, and the [Dead End Risk](Complexity-Risk.md#dead-end-risk) of all the effort gone into getting the sign-off if they don't.  
+Often, [Sign-Offs](Sign-Off.md) boil down to a balance of risk for the signer:  on the one hand, _personal, career risk_ from signing off, on the other, the risk of upsetting the rest of the staff waiting for the sign-off, and the [Dead End Risk](Complexity-Risk.md#dead-end-risk) of all the effort gone into getting the sign-off if they don't.  
 
 This is a nasty situation, but there are a couple of ways to de-risk this: 
 
- - Break [Sign-Offs](Sign-Off) down into bite-size chunks of risk that are acceptable to those doing the signing-off.  
+ - Break [Sign-Offs](Sign-Off.md) down into bite-size chunks of risk that are acceptable to those doing the signing-off.  
  - Agree far-in-advance the sign-off criteria.  As discussed in [Risk Theory](Evaluating-Risk.md), people have a habit of heavily discounting future risk, and it's much easier to get agreement on the _criteria_ than it is to get the sign-off. 
  
 ## Evolution Of Process
@@ -125,6 +125,6 @@ This implies that there is a tendency for organisations to end up with _needless
 
 To fix this, design needs to happen at a higher level.  In our code, we would [Refactor](Complexity-Risk.md#Technical-Debt) these processes to remove the unwanted complexity.  In a business, it requires re-organisation at a higher level to redefine the boundaries and responsibilities between the teams.  
 
-Next in the tour of [Dependency Risks](Dependency-Risk.md), it's time to look at [Boundary Risk](Boundary-Risk).
+Next in the tour of [Dependency Risks](Dependency-Risk.md), it's time to look at [Boundary Risk](Boundary-Risk.md).
 
 

@@ -117,7 +117,7 @@ There are so many different types of testing and this guide is not meant to be e
 
 |Risk|Mitigation|
 |----|----------|
-|[Boundary Risk](Boundary-Risk)             |System Integration Testing<br />CI Deployment<br />User Acceptance Testing|
+|[Boundary Risk](Boundary-Risk.md)             |System Integration Testing<br />CI Deployment<br />User Acceptance Testing|
 |[Dependency Risk](Dependency-Risk.md)|Integration Testing<br />System Integration Testing|
 |[Production Risk](Production-Risk)  |Performance Testing / Load Testing<br />Non-Functional Testing<br />Disaster Recovery Testing<br />Security esting<br />Smoke / Sanity Testing|
 |[Software Risk](Software-Risk)|Unit Testing<br />Component Testing<br />End-To-End Testing<br />Functional Testing|

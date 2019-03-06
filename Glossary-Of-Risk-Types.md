@@ -8,7 +8,7 @@ description: List of all types of risk discussed in Risk-First.
 
 | Risk             | Definition                                                               |
 |------------------|--------------------------------------------------------------------------|
-|[Boundary](Boundary-Risk)|Risks due to the commitments we make around dependencies, and the limitations they place on our ability to change.|
+|[Boundary](Boundary-Risk.md)|Risks due to the commitments we make around dependencies, and the limitations they place on our ability to change.|
 |[Agency](Agency-Risk.md)|Risks due to the fact that things you depend on have agency, and they have their own goals to pursue.|
 |[Channel](Communication-Risk.md#channel-risk)|Risks due to the inadequacy of the physical channel used to communicate our messages. e.g. noise, loss, interception, corruption.|
 |[Communication](Communication-Risk.md)|Risks due to the difficulty of communicating with other entities, be they people, software, processes etc.|
@@ -17,7 +17,7 @@ description: List of all types of risk discussed in Risk-First.
 |[Conceptual-integrity](Feature-Risk.md#conceptual-integrity-risk)|Risk that the software you provide is too complex, or doesn't match the expectations of your clients' internal models.|
 |[Coordination](Coordination-Risk.md)|Risks that a group of agents cannot work together in a mutually beneficial way, and their behaviour devolves into competition.|
 |[Dead-End](Complexity-Risk.md#dead-end-risk)|The risk that a particular approach to a change will fail.  Caused by the fact that at some level, our internal models are not a complete reflection of reality.|
-|[Deadline](Deadline-Risk)|Where the use of a dependency has some kind of deadline, which can be missed.|
+|[Deadline](Deadline-Risk.md)|Where the use of a dependency has some kind of deadline, which can be missed.|
 |[Dependency](Dependency-Risk.md)|Risks faced by depending on something else.  e.g. an event, process, person, piece of software or an organisation.   |
 |[Feature-Access](Feature-Risk.md#feature-access-risk)|Risks due to some clients not having access to some or all of the features in your product.|
 |[Feature-Drift](Feature-Risk.md#feature-drift-risk)|Risk that the features required by clients will change and evolve over time.   |

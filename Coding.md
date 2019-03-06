@@ -6,7 +6,7 @@
 
 > "...actual writing of source code." -- [Wikipedia, _Computer Programming_](https://en.wikipedia.org/wiki/Computer_programming)
 
-Often, this can be called "programming", "hacking" or "development", although that latter term tends to connotate more than just programming work, such as [Requirements Capture](Requirements-Capture) or [Documentation](Documentation), but we're considering those separately on different pages.
+Often, this can be called "programming", "hacking" or "development", although that latter term tends to connotate more than just programming work, such as [Requirements Capture](Requirements-Capture) or [Documentation](Documentation.md), but we're considering those separately on different pages.
 
 ## How It Works
 
@@ -21,7 +21,7 @@ In [Development Process](Development-Process.md) we introduced the following dia
 
 ## Examples
 
-As with any [Practice](Practices), we are coding to minimize [Attendant Risks](Glossary.md#attendant-risk).  We might want...
+As with any [Practice](Practices.md), we are coding to minimize [Attendant Risks](Glossary.md#attendant-risk).  We might want...
 
 - **To Build** or improve some features which our clients will find useful. - _[Feature Risk](Feature-Risk.md)_
 - **To Automate** some process that takes too long or is too arduous.  - _[Process Risk](Process-Risk.md)_
@@ -74,7 +74,7 @@ The problem here is that this is a very _protracted feedback loop_.  This is mit
  
 One assumption of Prototyping is that **Users** can iterate towards **The Perfect Product**.  But it might not be so:   the Conceptual gap between their own ideas and what they really _need_ might prove too great.  
 
-After all, bridging this gap is the job of the [Designer](Design):
+After all, bridging this gap is the job of the [Designer](Design.md):
 
 > “It's really hard to design products by focus groups. A lot of times, people don't know what they want until you show it to them.” — Steve Jobs 
 
@@ -84,7 +84,7 @@ The [SkunkWorks](https://en.wikipedia.org/wiki/Skunk_Works) approach is one smal
 
 >  A group within an organization given a high degree of autonomy and unhampered by bureaucracy, with the task of working on advanced or secret projects
 
-The idea here is _again_ to minimize the length of the feedback loop, and focus on [Design](Design) to combat [Conceptual Integrity Risk](Feature-Risk.md).  It was in this kind of small, secret team that the [iPhone was invented](https://www.networkworld.com/article/2159873/smartphones/apple-s-iphone--the-untold-story.html).  
+The idea here is _again_ to minimize the length of the feedback loop, and focus on [Design](Design.md) to combat [Conceptual Integrity Risk](Feature-Risk.md).  It was in this kind of small, secret team that the [iPhone was invented](https://www.networkworld.com/article/2159873/smartphones/apple-s-iphone--the-untold-story.html).  
 
 To give some idea of the [Conceptual Integrity Risk](Feature-Risk.md) involved, initially, the team were building a _tablet_ using the multi-touch technology that the iPhone introduced to the world, but pivoted towards the phones after the failure of the "Apple Phone" collaboration with Motorola.
 
@@ -112,11 +112,11 @@ The downside of specialization is [Coordination Risk](Coordination-Risk.md):
 
 ### Pair Programming / Mob Programming
 
-In the main, [Review](Review) is the main way to mitigate [Coordination Risk](Coordination-Risk.md). For example:
- - [Code Reviews](Review)
- - [Stand Up Meetings](Review)
- - [Presentations & Demos](Review)
- - [Training](Review)
+In the main, [Review](Review.md)) is the main way to mitigate [Coordination Risk](Coordination-Risk.md). For example:
+ - [Code Reviews](Review.md)
+ - [Stand Up Meetings](Review.md)
+ - [Presentations & Demos](Review.md)
+ - [Training](Review.md)
  
 **Pair Programming** however _combines_ the review with the process of coding: there are now two heads at each terminal.  What does this achieve?  
  - Clearly, we mitigate [Key-Man Risk](Coordination-Risk.md) as we've got two people doing every job.  
@@ -126,7 +126,7 @@ In the main, [Review](Review) is the main way to mitigate [Coordination Risk](Co
  
 But, conversely, there is a cost to **Pair Programming**:
  - Having two people doing the job _one person could do_ intimates [Schedule Risk](Scarcity-Risk.md#schedule-risk).
- - Could the same [Complexity Risk](Complexity-Risk.md) be mitigated just with more regular [Code Reviews](Review)?
+ - Could the same [Complexity Risk](Complexity-Risk.md) be mitigated just with more regular [Code Reviews](Review.md)?
  - Sometimes, asking members of a team to work so closely together is a recipe for disaster.  [Team Risk](Coordination-Risk.md)
  - Not every pair programmer "shares" the keyboard time evenly, especially if ability levels aren't the same.
  - There is only one **Feedback loop**, so despite the fact you have two people, you can only [Meet Reality](Meeting-Reality.md) serially.  
@@ -141,7 +141,7 @@ In the extreme, I've seen situations where the team at one location has decided 
 
 When this happens, it's because somehow the team feel that [Coordination Risk](Coordination-Risk.md) is more unmanageable than [Schedule Risk](Scarcity-Risk.md#schedule-risk).
 
-There are some mitigations here:  video-chat, moving staff from location-to-location for face-time, frequent [show-and-tell](Review), or simply modularizing accross geographic boundaries, in respect of [Conway's Law](Coordination-Risk.md):
+There are some mitigations here:  video-chat, moving staff from location-to-location for face-time, frequent [show-and-tell](Review.md), or simply modularizing accross geographic boundaries, in respect of [Conway's Law](Coordination-Risk.md):
 
 > "organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations."  - _[M. Conway](https://en.wikipedia.org/wiki/Conways_law)_
 

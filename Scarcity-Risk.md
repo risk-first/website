@@ -125,4 +125,4 @@ Much like [Reliability Risk](Dependency-Risk.md#Reliability-risk), there is scie
  - **[Logistics](https://en.wikipedia.org/wiki/Logistics)** is the practical organisation of the flows of materials and goods around things like [Supply Chains](https://en.wikipedia.org/wiki/Supply_chain),
  - and **[Project Management](https://en.wikipedia.org/wiki/Project_management)** is in large part about ensuring the right resources are available at the right times.  
  
-In this section, we've looked at various risks to do with scarcity of time, as a quantity we can spend like money.  But frequently, we have a dependency on a specific _event_.  On to [Deadline Risk](Deadline-Risk).
+In this section, we've looked at various risks to do with scarcity of time, as a quantity we can spend like money.  But frequently, we have a dependency on a specific _event_.  On to [Deadline Risk](Deadline-Risk.md).
