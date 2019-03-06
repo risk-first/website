@@ -68,7 +68,7 @@ Donald Rumsfeld's famous [Known Knowns](https://en.wikipedia.org/wiki/There_are_
 
 Arguably, Risk-First uses the term 'Risk' wrongly:  most literature suggests [risk can be measured](https://keydifferences.com/difference-between-risk-and-uncertainty.html) whereas uncertainty represents things that cannot.  
 
-I am using **risk** everywhere because later we will talk about specific risks (e.g. [Boundary Risk](Boundary-Risk) or [Complexity Risk](Complexity-Risk.md)), and it doesn't feel grammatically correct to talk about those as **uncertainties**, especially given the pre-existing usage in Banking of terms like [Operational Risk](https://en.wikipedia.org/wiki/Operational_risk) or [Reputational risk](https://www.investopedia.com/terms/r/reputational-risk.asp) which are also not really a-priori measurable.
+I am using **risk** everywhere because later we will talk about specific risks (e.g. [Boundary Risk](Boundary-Risk.md) or [Complexity Risk](Complexity-Risk.md)), and it doesn't feel grammatically correct to talk about those as **uncertainties**, especially given the pre-existing usage in Banking of terms like [Operational Risk](https://en.wikipedia.org/wiki/Operational_risk) or [Reputational risk](https://www.investopedia.com/terms/r/reputational-risk.asp) which are also not really a-priori measurable.
 
 ## The Opposite Of Risk Management
 

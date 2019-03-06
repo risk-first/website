@@ -108,9 +108,9 @@ Since our operation exists in a world of risks like [Red Queen Risk](Scarcity-Ri
 
 While _planning_ is a day-to-day operational feedback loop, _design_ is a longer feedback loop changing not just the parameters of the operation, but the operation itself.
 
-You might think that for an IT operation, tasks like [Design](#design) belong within a separate "Development" function within an organisation.  Traditionally, this might have been the case.  However separating Development from Operations implies [Boundary Risk](Boundary-Risk) between these two functions.  For example, the developers might employ different tools, equipment and processes to the Operations team resulting in a mismatch when software is delivered.
+You might think that for an IT operation, tasks like [Design](#design) belong within a separate "Development" function within an organisation.  Traditionally, this might have been the case.  However separating Development from Operations implies [Boundary Risk](Boundary-Risk.md) between these two functions.  For example, the developers might employ different tools, equipment and processes to the Operations team resulting in a mismatch when software is delivered.
 
-In recent years the [DevOps](https://en.wikipedia.org/wiki/DevOps) movement has brought this [Boundary Risk](Boundary-Risk) into sharper focus.  This specifically means:
+In recent years the [DevOps](https://en.wikipedia.org/wiki/DevOps) movement has brought this [Boundary Risk](Boundary-Risk.md) into sharper focus.  This specifically means:
  
   - Using code to automate previously manual Operations functions, like monitoring and releasing.
   - Involving Operations in the planning and design, so that the delivered software is optimised for the environment it runs in.
@@ -143,5 +143,5 @@ The "should we ship?" decision is therefore a complex one.  In [Meeting Reality]
 
 In a way, [actions](Glossary.md#taking-action) like **Design** and **Improvement** bring us right back to where we started from: identifying [Dependency Risks](Dependency-Risk.md), [Feature Risks](Feature-Risk.md) and [Complexity Risks](Complexity-Risk.md) that hinder our operation, and mitigating them through actions like _software development_.  
 
-Our safari of risk is finally complete: it's time to reflect on what we've seen in the next section, [Staging and Classifying](Staging-And-Classifying).  
+Our safari of risk is finally complete: it's time to reflect on what we've seen in the next section, [Staging and Classifying](Staging-And-Classifying.md).  
  

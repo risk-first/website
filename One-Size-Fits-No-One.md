@@ -35,12 +35,12 @@ In this section, we're going to have a brief look at some different software met
 
 Waterfall is a family of methodologies advocating a linear, stepwise approach to the processes involved in delivering a software system.  The basic idea behind Waterfall-style methodologies is that the software process is broken into distinct stages, as shown in the diagram above.  These usually include:
 
-- [Requirements Capture](Requirements-Capture)
-- [Specification](Design)
-- [Implementation](Development)
-- [Verification](Testing)
-- [Delivery](Delivery) and [Operations](Support)
-- [Sign Offs](Sign-Off) at each stage
+- [Requirements Capture](Requirements-Capture.md)
+- [Specification](Design.md)
+- [Implementation](Development.md)
+- [Verification](Testing.md)
+- [Delivery](Delivery.md) and [Operations](Support.md)
+- [Sign Offs](Sign-Off.md) at each stage
 
 Because Waterfall methodologies are borrowed from _the construction industry_, they manage the risks that you would care about in a construction project, specifically, minimising the risk of rework, and the risk of costs spiralling during the physical phase of the project.  For example, pouring concrete is significantly easier than digging it out again after it sets.  
 
@@ -78,11 +78,11 @@ Here are some high-level differences we see in some other popular methodologies:
 
  - **[Lean Software Development](https://en.wikipedia.org/wiki/Lean_software_development)**. While Waterfall borrows from risk management techniques in the construction industry, Lean Software Development applies the principles from [Lean Manufacturing](https://en.wikipedia.org/wiki/Lean_manufacturing), which was developed at Toyota in the last century.  Lean takes the view that the biggest risk in manufacturing is from _waste_, where waste is inventory, over-production, work-in-progress, time spent waiting or defects in production.  Applying this approach to software means minimising work-in-progress, frequent releases and continuous improvement.  
 
- - **[Project Management Body Of Knowledge (PMBoK)](https://en.wikipedia.org/wiki/Project_Management_Body_of_Knowledge)**.  This is a formalisation of traditional project management practice.  It prescribes best practices for managing scope, schedule, resources, communications, dependencies, stakeholders etc. on a project.  Although "risk" is seen as a separate entity to be managed, all of the above areas are sources of risk within a project, as we will see in [Part 2](PMBoK).
+ - **[Project Management Body Of Knowledge (PMBoK)(https://en.wikipedia.org/wiki/Project_Management_Body_of_Knowledge)**.  This is a formalisation of traditional project management practice.  It prescribes best practices for managing scope, schedule, resources, communications, dependencies, stakeholders etc. on a project.  Although "risk" is seen as a separate entity to be managed, all of the above areas are sources of risk within a project, as we will see in [Part 2](PMBoK.md).
 
  - **[Scrum](https://en.wikipedia.org/wiki/Scrum)**. Is a popular Agile methodology.  Arguably, it is less "extreme" than Extreme Programming, as it promotes a limited set, more achievable set of agile practices, such as frequent releases, daily meetings, a product owner and retrospectives.  This simplicity arguably makes it [simpler to learn and adapt to](Communication-Risk.md#learning-curve-risk) and probably contributes to Scrum's popularity over XP. 
  
- - **[DevOps](https://en.wikipedia.org/wiki/DevOps)**. Many software systems struggle at the [boundary](Boundary-Risk) between "in development" and "in production".  DevOps is an acknowledgement of this, and is about more closely aligning the feedback loops between the developers and the production system.  It champions activities such as continuous deployment, automated releases and automated monitoring.
+ - **[DevOps](https://en.wikipedia.org/wiki/DevOps)**. Many software systems struggle at the [boundary](Boundary-Risk.md) between "in development" and "in production".  DevOps is an acknowledgement of this, and is about more closely aligning the feedback loops between the developers and the production system.  It champions activities such as continuous deployment, automated releases and automated monitoring.
 
 While this is a limited set of examples, you should be able to observe that the [actions](Glossary.md#taking-action) promoted by a methodology are contingent on the risks it considers important.
 

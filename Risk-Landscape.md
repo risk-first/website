@@ -15,7 +15,7 @@ In [Meeting Reality](Meeting-Reality.md), we looked at the concept of the [Risk 
 
 It's tempting to think of our [Risk Landscape](Risk-Landscape.md) as being like a [Fitness Landscape](https://en.wikipedia.org/wiki/Fitness_landscape).  That is, you have a "cost function" which is your height above the landscape, and you try and optimise by moving downhill in a [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent) fashion.  
 
-However, there's a problem with this:  as we said in [Evaluating Risk](Evaluating-Risk.md), we don't have a cost function.  We can only _guess_ at what risks there are.  We have to go on our _experience_. For this reason, I prefer to think of the [Risk Landscape](Risk-Landscape.md) as a terrain which contains _fauna_ and _obstacles_ (or, specifically [_Boundaries_](Boundary-Risk)).
+However, there's a problem with this:  as we said in [Evaluating Risk](Evaluating-Risk.md), we don't have a cost function.  We can only _guess_ at what risks there are.  We have to go on our _experience_. For this reason, I prefer to think of the [Risk Landscape](Risk-Landscape.md) as a terrain which contains _fauna_ and _obstacles_ (or, specifically [_Boundaries_](Boundary-Risk.md)).
 
 Just as I can tell you that the landscape outside your window will probably will have some trees, fields and buildings, and that the buildings are likely to be joined together by roads, we can make generalisations about risks too.
 
@@ -40,16 +40,16 @@ Below is a table outlining the different risks we'll see.  There _is_ an order t
 |[Complexity Risk](Complexity-Risk.md)                  |Your software is so complex it makes it hard to change, understand, or run.             |        
 |[Dependency Risk](Dependency-Risk.md)                  |Risks of depending on other people, products, software, functions, etc. This is a general look at dependencies, before diving into specifics like...|  
 |[Scarcity Risk](Scarcity-Risk.md)                      |Risks associated with having limited time, money or some other resource.|    
-|[Deadline Risk](Deadline-Risk)                      |The risk of having a date to hit.|
+|[Deadline Risk](Deadline-Risk.md)                      |The risk of having a date to hit.|
 |[Software Dependency Risk](Software-Dependency-Risk.md)|The risk of depending on a software library, service or function.|    
 |[Process Risk](Process-Risk.md)                        |When you depend on a business process, or human process to give you something you need.|
-|[Boundary Risk](Boundary-Risk)                      |Risks due to making decisions that limit your choices later on.  Sometimes, you go the wrong way on the [Risk Landscape](Risk-Landscape.md) and it's hard to get back to where you want to be.|            
+|[Boundary Risk](Boundary-Risk.md)                      |Risks due to making decisions that limit your choices later on.  Sometimes, you go the wrong way on the [Risk Landscape](Risk-Landscape.md) and it's hard to get back to where you want to be.|            
 |[Agency Risk](Agency-Risk.md)                          |Risks that staff have their own [Goals](Glossary.md#goal-in-mind), which might not align with those of the project or team.|
 |[Coordination Risk](Coordination-Risk.md)              |Risks due to the fact that systems contain multiple agents, which need to work together.|       
 |[Map And Territory Risk](Map-And-Territory-Risk.md)    |Risks due to the fact that people don't see the world as it really is. (After all, they're working off different, imperfect [Internal Models](Glossary.md#internal-model).)|  
 |[Operational Risk](Operational-Risk.md)                |Software is embedded in a system containing people, buildings, machines and other services.  Operational risk considers this wider picture of risk associated with running a software service or business in the real world.|
        
-After the last stop on the tour, in [Staging and Classifying](Staging-And-Classifying) we'll have a recap about what we've seen and make some guesses about how things fit together.  
+After the last stop on the tour, in [Staging and Classifying](Staging-And-Classifying.md) we'll have a recap about what we've seen and make some guesses about how things fit together.  
 
 ## Causation & Correlation 
 

@@ -11,7 +11,7 @@ In this section, we're going to put a Risk-First spin on the process of [Estimat
 
 Why bother estimating at all?   There are two reasons why estimates are useful:<!-- tweet-end -->
 
-1.  **To allow for the creation of _events_.**  As we saw in [Deadline Risk](Deadline-Risk), if we can put a date on something, we can mitigate lots of [Coordination Risk](Coordination-Risk.md). Having a _release date_ for a product allows whole teams of people to coordinate their activities in ways that hugely reduce the need for [Communication](Communication-Risk.md).  "Attack at dawn" allows disparate army units to avoid the [Coordination Risk](Coordination-Risk.md) inherent in "attack on my signal".  This is a _good reason for estimating_ because by using events you are mitigating [Coordination Risk](Coordination-Risk.md).  This is often called a _hard deadline_.
+1.  **To allow for the creation of _events_.**  As we saw in [Deadline Risk](Deadline-Risk.md), if we can put a date on something, we can mitigate lots of [Coordination Risk](Coordination-Risk.md). Having a _release date_ for a product allows whole teams of people to coordinate their activities in ways that hugely reduce the need for [Communication](Communication-Risk.md).  "Attack at dawn" allows disparate army units to avoid the [Coordination Risk](Coordination-Risk.md) inherent in "attack on my signal".  This is a _good reason for estimating_ because by using events you are mitigating [Coordination Risk](Coordination-Risk.md).  This is often called a _hard deadline_.
 
 2.  **To allow for the estimation of the [Payoff](Glossary.md#payoff) of an [action](Glossary.md#taking-action).**  This is a _bad reason for estimating_ as we will discuss in detail below.  But briefly the main issue is that [Payoff](Glossary.md#payoff) isn't just about figuring out [Schedule Risk](Scarcity-Risk.md#schedule-risk) - you should be looking at all the other [Attendant Risks](Glossary.md#attendant-risk) of the action too.  
 
@@ -46,10 +46,10 @@ Seems to be the following:
 
  - The developer and the client likely don't agree on exactly what X is, and any description of it is inadequate anyway ([Invisibility Risk](Communication-Risk.md#invisibility-risk)).
  - The developer has a less-than-complete understanding of the environment he will be delivering X in ([Complexity Risk](Complexity-Risk.md) and [Map And Territory Risk](Map-And-Territory-Risk.md)).
- - The developer has some vague ideas about how to do X, but he'll need to try out various approaches until he finds something that works ([Boundary Risk](Boundary-Risk) and [Learning Curve Risk](Communication-Risk.md#learning-curve-risk)).
+ - The developer has some vague ideas about how to do X, but he'll need to try out various approaches until he finds something that works ([Boundary Risk](Boundary-Risk.md) and [Learning Curve Risk](Communication-Risk.md#learning-curve-risk)).
  - The developer has no idea what [Hidden Risk](Glossary.md#hidden-risk) will surface when he starts work on it.
  - The developer has no idea what will happen if he takes too long and misses the date by a day/week/month/year ([Schedule Risk](Scarcity-Risk.md#schedule-risk)).
- - The developer now has a [Deadline](Deadline-Risk)
+ - The developer now has a [Deadline](Deadline-Risk.md)
 
 ... and so on.  This is summarised in the above diagram.  It's no wonder people hate estimating: the treatment is worse than the disease.
 
@@ -176,7 +176,7 @@ For a given [action](Glossary.md#taking-action) / road-map / business strategy, 
   - What [Communication Risk](Communication-Risk.md) will we face explaining our product to people?
   - What [Feature Fit](Feature-Risk.md#feature-fit-risk) risks are we likely to have when we get there?
   - What [Complexity Risks](Complexity-Risk.md) will we face building our software?  How can we avoid it ending up as a [Big Ball Of Mud](Complexity-Risk.md#Protocols-And-Types)?
-  - Where are we likely to face [Boundary Risks](Boundary-Risk) and [Dead End Risks](Complexity-Risk.md#dead-end-risk)?
+  - Where are we likely to face [Boundary Risks](Boundary-Risk.md) and [Dead End Risks](Complexity-Risk.md#dead-end-risk)?
 
 Instead of the Agile Estimation being about picking out a story-point number based on some idealised amount of work that needs to be done, it should be about surfacing and weighing up risks.  e.g:
 
@@ -230,7 +230,7 @@ As we saw from the "10X Developer" Saw, [Learning Curve Risk](Communication-Risk
  - _Having a vocabulary_ (like the one Risk-First provides) allows us to _at least talk about these_.  e.g. "I believe there is a [Dead End Risk](Complexity-Risk.md#dead-end-risk) that we might not be able to get this software to run on Linux."
  - Build mock-ups:  
    - UI wireframes allow us to bottom out the [Communication Risk](Communication-Risk.md) of the interfaces we build.  
-   - [Spike Solutions](Coding#spike) allow us to de-risk algorithms and approaches before making them part of the main development.
+   - [Spike Solutions](Coding.md#spike) allow us to de-risk algorithms and approaches before making them part of the main development.
    - Test the market with these and [meet reality](Glossary.md#meet-reality) early.
  - Don't pick delivery dates far in the future.  Collectively work out the biggest risks with your clients, and then arrange the next possible date to demonstrate the mitigation.  
  - Do actions _early_ that are _simple_ but are nevertheless show-stoppers.  They are as much a source of [Hidden Risk](Glossary.md#hidden-risk) as more obviously tricky actions. 
@@ -273,7 +273,7 @@ Let's recap those again, in reverse order:
 - **Tip #4: Talk Frankly About All The Risks**.  Apply the Risk-First vocabulary to help.  
 - **Tip #3: Meet Reality Early on the Biggest Risks**.
 - **Tip #2: The Risk Landscape is Increasingly Complex**:  This means you have a wide variety of possible [actions to take](Glossary.md#taking-action), so consider all the options.
-- **Tip #1: Estimating Should be About _Estimating [Payoff](Glossary.md#payoff)_**.  For your action, don't just get stuck on [Schedule Risk](Scarcity-Risk.md#schedule-risk).  Consider [the whole cast](Staging-And-Classifying).
+- **Tip #1: Estimating Should be About _Estimating [Payoff](Glossary.md#payoff)_**.  For your action, don't just get stuck on [Schedule Risk](Scarcity-Risk.md#schedule-risk).  Consider [the whole cast](Staging-And-Classifying.md).
 
 
 

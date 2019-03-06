@@ -32,7 +32,7 @@ This is the one we've just discussed above - the feature that clients want to us
 
 [Feature Risk](Feature-Risk.md) also includes things that don't work as expected<!-- tweet-end -->, that is to say, [bugs](https://en.wikipedia.org/wiki/Software_bug).   Although the distinction between "a missing feature" and "a broken feature" might be worth making in the development team, we can consider these both the same kind of risk:  _the software doesn't do what the user expects_.  As shown in the above diagram, we can mitigate this risk with _feedback_ from users, as well as further _development_ and _testing_.
 
-It's worth pointing out that sometimes, _the user expects the wrong thing_.  This is a different but related risk, which could be down to [training](Training), [documentation](Documentation) or simply a [poor user interface](Communication-Risk.md) (and we'll look at that more in [Communication Risk](Communication-Risk.md).)
+It's worth pointing out that sometimes, _the user expects the wrong thing_.  This is a different but related risk, which could be down to [training](Training.md), [documentation](Documentation.md) or simply a [poor user interface](Communication-Risk.md) (and we'll look at that more in [Communication Risk](Communication-Risk.md).)
 
 ## Regression Risk
 
@@ -46,13 +46,13 @@ Delivering new features can delight your customers, breaking existing ones will 
 
 ![Conceptual Integrity Risk](images/generated/risks/feature/conceptual-integrity-risk.png) 
 
-Sometimes users _swear blind_ that they need some feature or other, but it runs at odds with the design of the system, and plain _doesn't make sense_.   Often the development team can spot this kind of conceptual failure as soon as it enters the [Backlog](Prioritisation). Usually it's in coding that this becomes apparent.  
+Sometimes users _swear blind_ that they need some feature or other, but it runs at odds with the design of the system, and plain _doesn't make sense_.   Often the development team can spot this kind of conceptual failure as soon as it enters the [Backlog](Prioritisation.md). Usually it's in coding that this becomes apparent.  
 
 Sometimes it can go for a lot longer.  I once worked on some software that was built as a score-board within a chat application.  However, after we'd added much-asked-for commenting and reply features to our score-board, we realised we'd implemented a chat application _within a chat application_, and had wasted our time enormously.  
 
 [Feature Phones](https://en.wikipedia.org/wiki/Feature_phone) are a real-life example:  although it _seemed_ like the market wanted more and more features added to their phones, [Apple's iPhone](https://en.wikipedia.org/wiki/IPhone) was able to steal huge market share by presenting a much more enjoyable, more coherent user experience, despite being more expensive and having fewer features.  Feature Phones had been drowning in increasing [Conceptual Integrity Risk](Feature-Risk.md#Conceptual-integrity-risk) without realising it.
 
-This is a particularly pernicious kind of [Feature Risk](Feature-Risk.md) which can only be mitigated by good [Design](Design).  Human needs are fractal in nature: the more you examine them, the more complexity you can find.  The aim of a product is to capture some needs at a *general* level:  you can't hope to anticipate everything.  
+This is a particularly pernicious kind of [Feature Risk](Feature-Risk.md) which can only be mitigated by good [Design](Design.md).  Human needs are fractal in nature: the more you examine them, the more complexity you can find.  The aim of a product is to capture some needs at a *general* level:  you can't hope to anticipate everything.  
 
 [Conceptual Integrity Risk](Feature-Risk.md#conceptual-integrity-risk) is the risk that chasing after features leaves the product making no sense, and therefore pleasing no-one.   
 
@@ -84,7 +84,7 @@ Since the product you are building is your asset, it makes sense that you'll fac
 
 **Feature Drift** is the tendency that the features people need _change over time_.   For example, at one point in time, supporting IE6 was right up there for website developers, but it's not really relevant anymore.  <!-- tweet-end -->  The continual improvements we see in processor speeds and storage capacity of our computers is another example:  the [Wii](https://en.wikipedia.org/wiki/Wii) was hugely popular in the early 2000's, but expectations have moved on now.        
 
-The point is:  [Requirements captured](Requirements-Capture) _today_ might not make it to _tomorrow_, especially in the fast-paced world of IT, partly because the market _evolves_ and becomes more discerning.  This happens in several ways:
+The point is:  [Requirements captured](Requirements-Capture.md) _today_ might not make it to _tomorrow_, especially in the fast-paced world of IT, partly because the market _evolves_ and becomes more discerning.  This happens in several ways:
 
  - Features present in competitors' versions of the software become _the baseline_, and they're expected to be available in your version.
  - Certain ways of interacting become the norm (e.g. [querty](https://en.wikipedia.org/wiki/QWERTY) keyboards, or the control layout in cars: these don't change with time).
@@ -133,7 +133,7 @@ Darwin's conception of fitness was not one of athletic prowess, but how well an 
 
 For further reading, you can check out [The Service Quality Model](http://en.wikipedia.org/SERVQUAL) which the diagram above is derived from.  This model analyses the types of _quality gaps_ in services and how consumer expectations and perceptions of a service arise.
 
-In the [Staging And Classifying](Staging-And-Classifying) section we'll come back and build on this model further. 
+In the [Staging And Classifying](Staging-And-Classifying.md) section we'll come back and build on this model further. 
 
 ### Fit and Audience
 

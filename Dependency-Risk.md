@@ -15,10 +15,10 @@ In order to avoid repetition, and also to break down this large topic, we're goi
 
  - This first section will look at dependencies _in general_, and some of the variations of [Dependency Risk](Dependency-Risk.md).
  - Next, we'll look at [Scarcity Risk](Scarcity-Risk.md), because time, money and staff are scarce resources in every project.
- - We'll cover [Deadline Risk](Deadline-Risk), and discuss the purpose of Events and Deadlines, and how they enable us to coordinate around dependency use.
+ - We'll cover [Deadline Risk](Deadline-Risk.md), and discuss the purpose of Events and Deadlines, and how they enable us to coordinate around dependency use.
  - Then, we'll move on to look specifically at [Software Dependency Risk](Software-Dependency-Risk.md), covering using libraries, software services and building on top of the work of others.
  - Then, we'll take a look at [Process Risk](Process-Risk.md), which is still [Dependency Risk](Dependency-Risk.md), but we'll be considering more organisational factors and how bureaucracy comes into the picture.
- - After that, we'll take a closer look at [Boundary Risk](Boundary-Risk) and [Dead-End Risk](Complexity-Risk.md#dead-end-risk).  These are the risks you face in making choices about what to depend on.
+ - After that, we'll take a closer look at [Boundary Risk](Boundary-Risk.md) and [Dead-End Risk](Complexity-Risk.md#dead-end-risk).  These are the risks you face in making choices about what to depend on.
  - Finally, we'll wrap up this analysis with a look at some of the specific problems around depending on other people or businesses in [Agency Risk](Agency-Risk.md).
   
 ## Why Have Dependencies?

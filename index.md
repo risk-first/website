@@ -33,7 +33,7 @@ Although this is a collaborative Github project, it's not meant to be an open-en
 - **[Opening an Issue](https://github.com/risk-first/website/issues).**
 - **"Star"ing the project**: this will cause you to be invited to join the Risk-First organisation
 
-[List of Contributors](Contributors)
+[List of Contributors](Contributors.md)
 
 ### Print Version
 
@@ -51,7 +51,7 @@ Some easy-to-digest ideas that will set the scene for examining the practices la
  - [It's Just Risk](Just-Risk.md)
  - [Evaluating Risk](Evaluating-Risk.md)
  - [Cadence](Cadence.md)
- - [De-Risking](De-Risking)
+ - [De-Risking](De-Risking.md)
  - [A Conversation](A-Conversation.md)
  - [One Size Fits No One](One-Size-Fits-No-One.md)
  
@@ -65,46 +65,46 @@ Risks are often very similar across different software projects.   And, if you k
  - [Complexity Risk](Complexity-Risk.md)
  - [Dependency Risk](Dependency-Risk.md)
  - [Scarcity Risk](Scarcity-Risk.md)
- - [Deadline Risk](Deadline-Risk)
+ - [Deadline Risk](Deadline-Risk.md)
  - [Software Dependency Risk](Software-Dependency-Risk.md)
  - [Process Risk](Process-Risk.md)
- - [Boundary Risk](Boundary-Risk)
+ - [Boundary Risk](Boundary-Risk.md)
  - [Agency Risk](Agency-Risk.md) 
  - [Coordination Risk](Coordination-Risk.md)
  - [Map And Territory Risk](Map-And-Territory-Risk.md)
  - [Operational Risk](Operational-Risk.md)
- - [Staging And Classifying](Staging-And-Classifying)
+ - [Staging And Classifying](Staging-And-Classifying.md)
  
-### Part 3: [Practices](Practices)
+### Part 3: [Practices](Practices.md)
 
 This part is a discussion of the different practices within Software Development, and how they mitigate and accentuate the different risks.
 
  - Analysis
- - [Coding](Coding)
+ - [Coding](Coding.md)
  - Contract
  - Delivery
- - [Design](Design)
+ - [Design](Design.md)
  - Documentation
  - [Estimation](Estimates.md)
- - [On-Site-Customer](On-Site-Customer)
- - [Prioritisation](Prioritisation)
- - [Requirements Capture](Requirements-Capture)
+ - [On-Site-Customer](On-Site-Customer.md)
+ - [Prioritisation](Prioritisation.md)
+ - [Requirements Capture](Requirements-Capture.md)
  - Real Options
  - Research Spike
  - Review
  - Standards
  - Support
  - Terms-Of-Reference
- - [Testing](Testing)
- - [Tracking](Tracking)
+ - [Testing](Testing.md)
+ - Tracking
  - Training
  
-### Part 4: [Methodologies](Methodologies)
+### Part 4: [Methodologies](Methodologies.md)
 
 A more in-depth look at software methodologies and how their chosen practices reflect their position on what the most critical risks are. 
 
- - [Introduction](Methodologies)
- - [Waterfall](Waterfall)
+ - [Introduction](Methodologies.md)
+ - [Waterfall](Waterfall.md)
  - Extreme Programming
  - Scrum
  - Lean
@@ -118,15 +118,15 @@ A more in-depth look at software methodologies and how their chosen practices re
 A more light-hearted collection of blog posts related to the software development process, aiming to use what we've learnt in real-life contexts.
 
  - Case Study
- - [Regression Testing](Regression-Testing)
+ - [Regression Testing](Regression-Testing.md)
  - Minimizing The Downside
- - [Issue Tracking](Issue-Tracking)
+ - [Issue Tracking](Issue-Tracking.md)
  - Surfacing Risks
  - [Silver Bullets](Silver-Bullets.md)
- - [Stories Of Failure](Stories-Of-Failure)
+ - [Stories Of Failure](Stories-Of-Failure.md)
 
 ### Glossary Of Terms
 
  - [Glossary](Glossary.md)
- - [Glossary Of Risk Types](Glossary.md-Of-Risk-Types.md)
+ - [Glossary Of Risk Types](Glossary-Of-Risk-Types.md)
  
