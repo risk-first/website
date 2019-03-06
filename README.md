@@ -17,7 +17,7 @@ The **Risk-First** perspective is that all of these practices and methodologies 
 
 **Risk-First** makes the case that better understanding the nature of these risks is critical to building software in the complex, interconnected domain we work in.  
 
-[Continue Reading Here](https://riskfirst.org)
+[Continue Reading at RiskFirst.org](https://riskfirst.org)
 
 ## About _The Menagerie_
 
