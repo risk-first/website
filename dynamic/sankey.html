@@ -1,0 +1,148 @@
+<html>
+	<head>
+	
+		<style>
+			@font-face {
+				font-family: "geomanist";
+				src: url('geomanist-medium-webfont.ttf') format('ttf');
+				font-weight: 400;
+			}
+			
+			html {
+				font-family: geomanist;
+			}
+		</style>
+	
+	</head>
+	
+	<body>
+	
+		<div id="chart"></div>
+		
+		<script src="https://unpkg.com/d3@5"></script>
+		<script src="https://unpkg.com/d3-array@1"></script>
+		<script src="https://unpkg.com/d3-collection@1"></script>
+		<script src="https://unpkg.com/d3-path@1"></script>
+		<script src="https://unpkg.com/d3-shape@1"></script>
+		<script src="https://unpkg.com/d3-sankey@0"></script>
+		<script>
+		
+		svg = d3.select("#chart").append("svg")
+
+		var width=800;
+		var height = 400;
+
+		
+		svg.style("width", width+"px").style("height", height+"px");
+		
+		var example = '#EEEEBB';
+		var risk = '#DD4444';
+		var fix = '#BBBBBB';
+		  
+		  
+		data =  {
+			  nodes: [
+			  {id: 1,  name: "Broken Features", depth: 0, color: example},	 
+			  {id: 2,  name: "Missing Features", depth: 0, color: example},
+			  {id: 3,  name: "Unhappy Users", depth: 0, color: example},
+			  
+			  {id: "M-FIR", name: "Feature Implementation Risk", depth: 1, color: risk, width: 100},
+			  {id: "M-FR", name: "Feature Fit Risk", depth: 1, color: risk},
+			  
+			  {id: "specification", name: "Specification", depth: 2, color: fix},
+			  
+			  {id: "A-SR", name: "Schedule Risk", depth: 3, color: risk},
+			  {id: "A-AR", name: "Agency Risk", depth: 3, color: risk},
+			  
+			  {id: "time", name: "Lost Time on the Project", depth: 4, color: example},
+			  {id: "heroism", name: "Heroism", depth: 5, color: example},
+			  {id: "crunch", name: "Crunch Time", depth: 5, color: example}
+			],
+			  links: [
+				   {source: 1, target: "M-FIR", value: 1 },
+				   {source: 2, target: "M-FIR", value: 1 },
+				   {source: 3, target: "M-FR" , value: 1},
+			   	   {source: "M-FIR", target: "specification", value: 2},
+			   	   {source: "M-FR", target: "specification", value: 1},
+			   	{source: "specification", target: "A-SR", value: 1},
+			   	{source: "specification", target: "A-AR", value: 2},
+			   	{source: "A-AR", target: "heroism", value: 1},
+			   	{source: "A-AR", target: "crunch", value: 1},
+			   	{source: "A-SR", target: "time", value: 1},
+				         	   
+			]
+			}
+		
+		var color = "#dddddd";
+		
+		var sankey = d3.sankey() 
+			.nodeId(d => d.id)
+	    	.nodeWidth(15)
+	    	.nodePadding(60)
+	    	.size([width, height])
+		
+		var {nodes, links} = sankey(data);
+		
+		svg.append("g")
+	    .selectAll("rect")
+	    .data(nodes)
+	    .join("rect")
+	      .attr("x", d => d.x0 + 1)
+	      .attr("y", d => d.y0)
+	      .attr("height", d => d.y1 - d.y0)
+	      .attr("width", d => d.x1 - d.x0 - 2)
+	      .attr("fill", d => d3.color(d.color))
+	    .append("title")
+	      .text(d => d.name);
+
+	  const link = svg.append("g")
+	      .attr("fill", "none")
+	    .selectAll("g")
+	    .data(links)
+	    .join("g")
+	      .attr("stroke", d => d3.color(d.color) || color)
+	      .style("mix-blend-mode", "multiply");
+
+	  link.append("path")
+	      .attr("d", d3.sankeyLinkHorizontal())
+	      .attr("stroke-width", d => Math.max(1, d.width))
+	  	  .attr("stroke", d => "url('#" + (d.source.id)+"-"+(d.target.id)+"')")
+	  	  .attr("stroke-opacity", .5)
+
+	  link.append("title")
+	      .text(d => "bob");
+	  
+	  const gradient = link.append("linearGradient")
+      .attr("id", d => d.source.id+"-"+d.target.id)
+      .attr("gradientUnits", "userSpaceOnUse")
+      .attr("x1", d => d.source.x1)
+      .attr("x2", d => d.target.x0);
+
+  		gradient.append("stop")
+      .attr("offset", "0%")
+      .attr("stop-color", d => d3.color(d.source.color));
+
+  		gradient.append("stop")
+      .attr("offset", "100%")
+      .attr("stop-color", d => d3.color(d.target.color));
+ 
+	  
+	  svg.append("g")
+	      .style("font", "10px geomanist")
+	    .selectAll("text")
+	    .data(nodes)
+	    .join("text")
+	      .attr("x", d => d.x0 < width / 2 ? d.x1 + 6 : d.x0 - 6)
+	      .attr("y", d => (d.y1 + d.y0) / 2)
+	      .attr("dy", "0.35em")
+	      .attr("text-anchor", d => d.x0 < width / 2 ? "start" : "end")
+	      .text(d => d.name)
+	    .append("tspan")
+	      .attr("fill-opacity", 0.7);
+//	      .text(d => d.name);
+		
+      </script>
+	</body>
+
+</html>
+
