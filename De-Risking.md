@@ -1,6 +1,7 @@
 ---
 title: De-Risking
 description: Terms to use when talking about risk on a project.
+url: https://riskfirst.org/De-Risking
 ---
 
 # De-Risking

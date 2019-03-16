@@ -1,6 +1,7 @@
 ---
 title: Communication Risk
 description: Risks due to the difficulty of communicating with other entities, be they people, software, processes etc.
+url: https://riskfirst.org/Communication-Risk
 ---
 
 # Communication Risk

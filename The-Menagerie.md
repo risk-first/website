@@ -1,6 +1,7 @@
 ---
 title: The Menagerie
 description: Description of Risk-First Software Development Volume 1 The Menagerie
+url: https://riskfirst.org/The-Menagerie
 ---
 
 # The Menagerie

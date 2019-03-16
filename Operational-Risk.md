@@ -1,6 +1,7 @@
 ---
 title: Operational Risk
 description: Risks of losses or reputational damage caused by failing processes or real-world events.
+url: https://riskfirst.org/Operational-Risk
 ---
 
 # Operational Risk
