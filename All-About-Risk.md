@@ -1,6 +1,7 @@
 ---
 title: All About Risk
 description: Argument that software development is all about risk, as originally made by Kent Beck.
+url: https://riskfirst.org/All-About-Risk
 ---
 
 

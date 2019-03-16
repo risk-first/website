@@ -1,6 +1,7 @@
 ---
 title: Glossary of Terms
 description: List of terms used to discuss risks on Risk-First.
+url: https://riskfirst.org/Glossary
 ---
 
 # Glossary

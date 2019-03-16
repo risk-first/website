@@ -1,6 +1,7 @@
 ---
 title: Glossary of Risk Types
 description: List of all types of risk discussed in Risk-First.
+url: https://riskfirst.org/Glossary-Of-Risk-Types
 ---
 
 
