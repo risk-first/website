@@ -2,6 +2,7 @@
 title: Meeting Reality
 description: The risk mitigating strategy of testing your ideas against reality.
 url: https://riskfirst.org/Meeting-Reality
+image: /images/generated/titles/Meeting-Reality.png
 ---
 
 # Meeting Reality

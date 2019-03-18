@@ -2,6 +2,7 @@
 title: Contributors
 description: List of contributors for the Risk-First wiki and other materials.
 url: https://riskfirst.org/Contributors
+image: /images/generated/titles/Contributors.png
 ---
 # Contributors
 

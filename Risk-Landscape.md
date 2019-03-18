@@ -2,6 +2,7 @@
 title: The Risk Landscape
 description: An introduction to the risks faced by software projects.
 url: https://riskfirst.org/Risk-Landscape
+image: /images/generated/titles/Risk-Landscape.png
 ---
 
 # The Risk Landscape
