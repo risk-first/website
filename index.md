@@ -1,7 +1,7 @@
 ---
 title: Risk-First
 url: https://riskfirst.org
-description: Risk-First is a wiki about applying risk theory and practice to Software Development.  It presents a pattern language of risks that are applicable in software development.image: /images/generated/titles/A-Conversation.png
+description: Risk-First is a wiki about applying risk theory and practice to Software Development.  It presents a pattern language of risks that are applicable in software development.
 image: /images/generated/titles/index.png
 ---
 
