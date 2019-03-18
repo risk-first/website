@@ -2,6 +2,7 @@
 title: Staging and Classifying
 description: Making sense of risks faced by software projects.
 url: https://riskfirst.org/Staging-And-Classifying
+image: /images/generated/titles/Staging-And-Classifying.png
 ---
 
 # Staging and Classifying
