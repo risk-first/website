@@ -2,6 +2,7 @@
 title: Process Risk
 description: Risks due to the following a particular protocol of communication with a dependency, which may not work out the way we want.
 url: https://riskfirst.org/Process-Risk
+image: /images/generated/titles/Process-Risk.png
 ---
 
 # Process Risk
