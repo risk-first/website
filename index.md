@@ -1,5 +1,5 @@
 ---
-title: Risk-First
+title: Risk-First Software Development
 url: https://riskfirst.org
 description: Risk-First is about applying risk theory and practice to Software Development, building a pattern language of useful risk terms.
 image: /images/generated/titles/index.png
