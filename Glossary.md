@@ -15,6 +15,10 @@ The process of removing physical, spatial, or temporal details or attributes in 
 
 Agency is the capacity of an actor to act in a given environment.  We use the term _agent_ to refer to any process, person, system or organisation with agency.
 
+## Balance Of Risk
+
+The distribution of possible returns, given the set of risks you face from your position on the [Risk Landscape](#risk-landscape).  
+
 ### Feedback Loop
 
 The process of testing an [Internal Model](#internal-model), through [taking action](#taking-action) to [Meet Reality](#meet-reality).  Typically, we talk about short or long feedback loops, depending on the intervals between [Meeting Reality](#meet-reality).
