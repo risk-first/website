@@ -3,20 +3,22 @@
 
 ---
 title: The Purpose of the Development Team
-description: Making sense of contradictory definitions.
+description: Making sense of contradictory objectives.
 url: https://riskfirst.org/Purpose-Development-Team
 image: /images/generated/titles/Purpose-Development-Team.png
 ---
 
-## Case 1
+## Case 1: Lean
 
 A manager I used to work with, Kevin, used to say that the purpose of the Development Team was "Sustainably Deliver Value Quickly."  Which apparently he got from a Lean handbook (maybe something like [this one](https://leankit.com/learn/lean/lean-business-development/)). It always seemed to me to be _approximately right_, except it bugged me and eventually, I was able to put my finger on _why_.
 
-First, "sustainably" and "quickly" are somewhat at odds with each other.  Much like cars aren’t optimised for both "energy efficiency" and "speed", it’s a trade-off between the two.  Runners are either fast over short distances or long distances - it’s not both.  My laptop makes trade-offs between battery life and weight: either extreme is bad, somewhere in the middle is useful.  So "sustainably" and "quickly" implies that there is a balance to be achieved - what happens when you are forced to choose between the two? How do you choose?  
+- **First, "sustainably" and "quickly" are somewhat at odds with each other. ** Much like cars aren’t optimised for both "energy efficiency" and "speed", it’s a trade-off between the two.  Runners are either fast over short distances or long distances - it’s not both.  My laptop makes trade-offs between battery life and weight: either extreme is bad, somewhere in the middle is useful.  So "sustainably" and "quickly" implies that there is a balance to be achieved - what happens when you are forced to choose between the two? How do you choose?  
 
-Second, my conception of value is that it is something you can sell:  producing a product that customers value at (say) £100-per-year means that we can sell it for somewhere less than that (say £80-per-year), and the development cost must come in at somewhere less than that to allow the company to make a profit (say £50-per-year).  But again, _value_ didn't seem like the whole story either.  Aren't there things to worry about _besides_ value?
+- **Second, my conception of value is that it is something you can sell.** Producing a product that customers value (at say £100-per-year) means that we can sell it for somewhere less than that (say £80-per-year), and the development cost must come in at somewhere less than (say £50-per-year) that to allow the company to make a profit.  But again, _value_ didn't seem like the whole story either.  
 
-## Case 2
+Aren't there things to worry about _besides_ value?
+
+## Case 2: Scrum
 
 On a project not so long ago, we chose to use [Scrum](https://en.wikipedia.org/wiki/Scrum), which advocates development being broken into "sprints" of maybe a few weeks long, commencing with planning and ending in a release. This worked out pretty well for a while, until one day there was a major outage in a critical piece of our infrastructure.  We could have washed our hands of it, because there was a specific team for managing the infrastructure, but it seemed much more sensible that we abandon the sprint we were on and roll up our sleeves to help.   After all, our product was dead-in-the-water without the infrastructure, and this was impacting our user-base.
 
@@ -24,7 +26,7 @@ Had we stuck to Scrum religiously (following the rules, but not in an agile way)
 
 Scrum's rule about working-to-a-sprint is well-meaning, but not always applicable.  How do we decide when to follow it, and when not to?
 
-## Case 3
+## Case 3: Agile Manifesto
 
 The first statement of the Agile Manifesto is:
 
@@ -36,7 +38,7 @@ Is this helpful?  Is such a relative statement telling us anything we previously
 
 But how do I choose?
 
-## Case 4
+## Case 4: Technical Debt
 
 Sometimes, I am faced with a conflict over whether to pay off [technical debt](Complexity-Risk.md#technical-debt) or build new functionality.  Sometimes the conflict will be with people in my team, or with stake-holders, but sometimes it is an internal, personal conflict.  Paying off technical debt is sometimes the right thing to do when there is lots of unnecessary complexity in the code-base, but sometimes, it can be [premature optimisation](), and the shape of the software gets changed by new functionality so much that the work I put into clearing the technical debt is wasted.
 
@@ -46,11 +48,16 @@ What should I do?
 
 All of these definitions are problematic!  Are we missing something?
 
-So, above I’ve given several cases of contradictory tensions within development.  You can probably think of some more.  In all of these, we are forced to use our common sense to try and steer a path between unreasonable extremes - a “virtue between the vices” as the [Greeks](tbd) termed it.  But could there be a “general theory” somehow that avoids these contradictions? What would it look like?  I am going to suggest one here:
+So, above I’ve given several cases of contradictory tensions within development.  You can probably think of some more.  In all of these, we are forced to use our common sense to try and steer a path between unreasonable extremes - a “virtue between the vices” as Aristotle termed it:  
 
-> "The purpose of the development team is to improve the balance of risk for the business as much as possible."
+> "In ancient Greek philosophy, especially that of Aristotle, the golden mean or golden middle way is the desirable middle between two extremes, one of excess and the other of deficiency." - [Golden Mean, _Wikipedia_](https://en.wikipedia.org/wiki/Golden_mean(philosophy)
+
+But could there be a “general theory” somehow that avoids these contradictions? What would it look like?  I am going to suggest one here:
+
+> "The purpose of the development team is to improve the balance of risk for the business goal as much as possible."
 
 Now clearly, the troublesome clause in this statement is “balance of risk”.  So, before we apply this razor to the cases above, let’s cover that concept in some detail, by exploring three toy examples: the roulette table, buying stocks, and cycling to work. 
+
 
 ## Example 1: The Roulette Table
 
@@ -122,6 +129,7 @@ Any time a person is added to an organisation, the hope is that it will improve 
 - bring our skills to bear whatever the risk.
 - cf. with evolution.
 - and people:  people are naturally risk-averse.
+- investment banking, kelly bets
 
 
 How does this help?
