@@ -10,13 +10,11 @@ image: /images/generated/titles/Purpose-Development-Team.png
 
 ## Case 1
 
-A manager I used to work with, Kevin, used to say that the purpose of the Development Team was "Sustainably deliver value quickly.”  Deliver software that works correctly and quickly.  It always seemed to me to be approximately right.  
+A manager I used to work with, Kevin, used to say that the purpose of the Development Team was "Sustainably Deliver Value Quickly."  Which apparently he got from a Lean handbook (maybe something like [this one](https://leankit.com/learn/lean/lean-business-development/)). It always seemed to me to be _approximately right_, except it bugged me and eventually, I was able to put my finger on _why_.
 
-Do X and Y: implies that there is a balance to be achieved - what happens when you are forced to choose between A and B? How do you choose?  What about C…
+First, "sustainably" and "quickly" are somewhat at odds with each other.  Much like cars aren’t optimised for both "energy efficiency" and "speed", it’s a trade-off between the two.  Runners are either fast over short distances or long distances - it’s not both.  My laptop makes trade-offs between battery life and weight: either extreme is bad, somewhere in the middle is useful.  So "sustainably" and "quickly" implies that there is a balance to be achieved - what happens when you are forced to choose between the two? How do you choose?  
 
-Cars aren’t optimised for energy efficiency and speed, it’s a trade-off between the two.  Runners are either fast over short distances or long distances - it’s not both.  My laptop makes trade-offs between battery life and weight: either extreme is bad, somewhere in the middle is useful.
-
-This is all very well, but how does one resolve these apparently contradictory demands?  Why do we need contradictory demands?  Can’t we restate the goal of the development team without recourse to tbd
+Second, my conception of value is that it is something you can sell:  producing a product that customers value at (say) £100-per-year means that we can sell it for somewhere less than that (say £80-per-year), and the development cost must come in at somewhere less than that to allow the company to make a profit (say £50-per-year).  But again, _value_ didn't seem like the whole story either.  Aren't there things to worry about _besides_ value?
 
 ## Case 2
 
@@ -60,9 +58,9 @@ Let’s talk about “risk” for a bit.  First, we’re going to consider the g
 
 ![Distribution of Returns on the roulette table, when we bet on "12"](images/numbers/roulette.png) 
 
-The above graph shows the distribution of returns for this bet.  Which hole the ball lands in (entirely randomly) is the independent variable on the x-axis.  The return is on the y-axis.   Most of the time, it’s a small loss, but there’s that one big win on the 12.  For clarity, in all the graphs, I’ve arranged the x-axis in order of “worst outcome” to “best outcome”, but it doesn’t necessarily have to be arranged like this.
+The above chart shows the distribution of returns for this bet.  Which hole the ball lands in (entirely randomly) is the independent variable on the x-axis.  The return is on the y-axis.   Most of the time, it’s a small loss, but there’s that one big win on the 12.  For clarity, in all the charts, I’ve arranged the x-axis in order of “worst outcome” to “best outcome”, but it doesn’t necessarily have to be arranged like this.
 
-In roulette, then, the balance of risk is against us:  if we integrate to find the area under this graph, it comes out -1 chips.   You could get lucky, but over time the house wins, and it’s (fairly) transparent that this is the case when you enter the game, so people are clearly not playing roulette with the rational goal of maximising chips.
+In roulette, then, the balance of risk is against us:  if we integrate to find the area under this chart, it comes out -1 chips.   You could get lucky, but over time the house wins, and it’s (fairly) transparent that this is the case when you enter the game, so people are clearly not playing roulette with the rational goal of maximising chips.
 
 ## Example 2: Buying Stocks
 
@@ -74,31 +72,36 @@ First, a roulette table presents us with a set of very discrete outcomes.  Real 
 
 The chart above shows the returns-per-quarter of Ford and Berkshire Hathaway stocks over a number of years, with worst-performing quarters on the left and best-performing on the right.   
 
-Second, while you know ahead-of-time the chances of winning at roulette, you can only guess at the balance of risk for owning Berkshire Hathaway stock for the next quarter, even if you are armed with the above graph.  That’s because past performance is no indication of future performance. 
+Second, while you know ahead-of-time the chances of winning at roulette, you can only guess at the balance of risk for owning Berkshire Hathaway stock for the next quarter, even if you are armed with the above chart.  Generally, owning shares has a net-positive balance-of-risk, especially over the long run.   You're more likely to make money than lose money.  But it's not guaranteed - past performance is no indication of future performance. 
 
-That means that when we consider buying a stock, we are going to build a model of the balance of risks (perhaps on a spreadsheet, or in our heads).  This will be dependent on our own preferences and experience (our [Internal Model](Glossary.md#internal-model) if you will).
+Another question relating to this graph might be:  which firm is generating the most value?  Certainly, the area under the Berkshire Hathaway curve is more, but there is a bigger downside too.  Is it possible that Berkshire Hathaway generates more value while taking on more risk?
+
+When we consider buying a stock, we are going to build a model of the balance of risks (perhaps on a spreadsheet, or in our heads).  This will be dependent on our own preferences and experience (our [Internal Model](Glossary.md#internal-model) if you will).
 
 ## Example 3: Cycling To Work
 
-Although gambling is all about chips, and buying stock is all about money, that’s just a way of keeping score.  In reality, our actions have a trade off, some things get better while others get worse. 
+Gambling is all about winning _chips_, and buying stock is all about winning _money_. Those are just ways of keeping score but often there is no exact score.  Let's look at an example of that.
 
-![Cycling To Work:  Three Distributions of Returns - Time, Cost and Health](images/numbers/cycling_to_work.png)
-  
-In the above graph, we have three different scores - Time, Cost and Health of cycling to work.  There are times when cycling could work out more expensive than the bus:  maybe the bike breaks and you end up with a costly bill to fix it.  If you cycle in a busy city, the chances are you’re often getting into scrapes with other road users, which might impact your health. 
+![Cycling To Work:  Distributions of Returns - Time and Health](images/numbers/cycling_to_work.png)
 
-It seems like it’s human nature to over-estimate the likelihood of the bad things happening, while under-estimating the good.  Probably in reality, accidents are much less likely than the above graph implies.  But it’s human nature to be cautious, probably something baked into us by evolution.
+In the above chart, we have two risk profiles for cycling to work.  On the left, we have the time taken.  There's a very objective measure of time, and after a few week's cycling, we can probably start to build up a good [Internal Model](Glossary.md#internal-model) of what this distribution looks like.   On the right, we have _health_.  There probably _isn't_ an objective measure for this.  We might look at our weight, or resting heart-rate or something, or just generally have a good feeling that cycling is making us fitter.  But, there's probably a worry about having an accident built into this, and again, there is no objective measure for judging how badly that might come off.
 
-The risks to time, cost and health have to be weighed against each other. Whether you are time-poor or cash-poor is likely to factor into this.  Everyone is going to have a different view on the aggregate return profile.
+So we have two issues:  it's hard to judge exactly how likely an accident is (the width of the bar) and also how costly it will be (the depth of the bar).  Everyone judges this differently, and there's lots of evidence to suggest even the same person will judge this differently at different _ages_.
 
+If we want to reduce the time it takes to get to work, maybe by cycling faster, or going by a busier route, it's probably going to have a knock-on effect on the health risks.  Whether this is worth it will depend on your appetite for health risks, against wanting to save time.  
 
-Getting rid of the numbers.
+So, we've gone from the Roulette Table example (where the whole risk profile is known in advance) to the Cycling example, where the risk profile is hidden from us.  Regardless, we will have our own [Internal Model](Glossary.md#internal-model) of the distribution of risks which we use to make judgement calls.
 
 ## Back To Software
 
-A decision over whether to cycle to work or not changes the Balance Of Risks.  So it goes in software development:
+A decision over how or whether to cycle to work changes the Balance Of Risks, and the actions and decisions we make in software development have the same quality.  
 
- - If I decide to suspend the current sprint to fix an outage, then that’s because I’ve decided that the risk of lost business, or the damage to reputation is greater than the risk that customers will walk away because we didn’t complete the implementation of feature X.  tbd balance of risk
-- When the Agile Manifesto stresses _Individuals and Interactions_ over _Processes and Tools_, it’s because it's view is that focusing on processes and tools leads to more risk.  Specifically, agile is about _responding to change_ and trying to avoid building the wrong product ([Feature-Fit Risk](Feature-Risk.md#feature-fit-risk)).  They are therefore sacrificing straight-line speed and efficiency in order to try and build the _right_ thing.  
+The difference is, while the above example was chosen to be quite _finely balanced_, in software development we should be looking for actions to take where the upside _considerably_ defeats the downside.  That is, improving the Balance of Risks _as much as possible_.   We don't want to just do work that merely shifts us from having one big risk to another, we want to do work that swaps out a large risk for maybe a couple of tiny ones.   
+
+Let's go back to our original cases:
+
+ - If I decide to suspend the current sprint to fix an outage, then that’s because I’ve decided that the risk of lost business, or the damage to reputation is much greater than the risk of customers walking because we didn’t complete feature X.  
+- When the Agile Manifesto stresses _Individuals and Interactions_ over _Processes and Tools_, it’s because it's view is that focusing on processes and tools leads to much greater risk.  Specifically, agile is about _responding to change_ and trying to avoid building the wrong product ([Feature-Fit Risk](Feature-Risk.md#feature-fit-risk)).  They are therefore sacrificing straight-line speed and efficiency in order to try and build the _right_ thing.  Agile is a statement that the gre
 - When we argue for fixing technical debt against shipping a new feature, what we are really doing is expressing differences in our models of the balance of risks from taking these actions.   My boss and I might both be trying to minimise the risk of customers defecting to another product, but he might believe this is best achieved by [adding new features](Feature-Risk.md) in the short term, whilst I might believe that clearing technical debt allows us to get features delivered faster in the long term.
 - How do we optimise Kevin's example tbd.
 
@@ -127,3 +130,4 @@ How does this help?
  - with planning work
  - with development
 
+real options
