@@ -15,9 +15,7 @@ A manager I used to work with, Kevin, used to say that the purpose of the Develo
 
 ![Sustainably vs Quickly](images/numbers/sustainably-quickly.png)
 
-- **Second, my conception of value is that it is something you can sell.** Producing a product that customers value (at say £100-per-year) means that we can sell it for somewhere less than that (say £80-per-year), and the development cost must come in at somewhere less than (say £50-per-year) that to allow the company to make a profit.  But again, _value_ didn't seem like the whole story either.  
-
-Aren't there things to worry about _besides_ value?
+- **Second, my conception of value is that it is something you can sell.** Producing a product that customers value (at say £100-per-year) means that we can sell it for somewhere less than that (say £80-per-year), and the development cost must come in at somewhere less than (say £50-per-year) that to allow the company to make a profit.  But again, _value_ didn't seem like the whole story either.  Aren't there things to worry about _besides_ value?
 
 ## Case 2: Scrum
 
@@ -43,7 +41,7 @@ But how do I choose?
 
 ## Case 4: Technical Debt
 
-Sometimes, I am faced with a conflict over whether to pay off [technical debt](Complexity-Risk.md#technical-debt) or build new functionality.  Sometimes the conflict will be with people in my team, or with stake-holders, but sometimes it is an internal, personal conflict.  Paying off technical debt is sometimes the right thing to do when there is lots of unnecessary complexity in the code-base, but sometimes, it can be [premature optimisation](), and the shape of the software gets changed by new functionality so much that the work I put into clearing the technical debt is wasted.
+Sometimes, I am faced with a conflict over whether to pay off [technical debt](Complexity-Risk.md#technical-debt) or build new functionality.  Sometimes the conflict will be with people in my team, or with stake-holders, but sometimes it is an internal, personal conflict.  Paying off technical debt is sometimes the right thing to do when there is lots of unnecessary complexity in the code-base, but sometimes, it can be [premature optimisation](https://en.wikipedia.org/wiki/Program_optimization#When_to_optimize), and the shape of the software gets changed by new functionality so much that the work I put into clearing the technical debt is wasted.
 
 ![Technical Debt vs Building Features](images/generated/practices/purpose/technical-debt.png)
 
@@ -55,13 +53,13 @@ All of these definitions are problematic!  Are we missing something?
 
 So, above I’ve given several cases of contradictory tensions within development.  You can probably think of some more.  In all of these, we are forced to use our common sense to try and steer a path between unreasonable extremes - a “virtue between the vices” as Aristotle termed it:  
 
-> "In ancient Greek philosophy, especially that of Aristotle, the golden mean or golden middle way is the desirable middle between two extremes, one of excess and the other of deficiency." - [Golden Mean, _Wikipedia_](https://en.wikipedia.org/wiki/Golden_mean(philosophy)
+> "In ancient Greek philosophy, especially that of Aristotle, the golden mean or golden middle way is the desirable middle between two extremes, one of excess and the other of deficiency." - [Golden Mean, _Wikipedia_](https://en.wikipedia.org/wiki/Golden_mean(philosophy))
 
 But could there be a “general theory” somehow that avoids these contradictions? What would it look like?  I am going to suggest one here:
 
-> "The purpose of the development team is to improve the balance of risk for the business goal as much as possible."
+> "The purpose of the development team is to improve the [balance of risk](Glossary.md#balance-of-risk) of achieving the business goal as much as possible."
 
-Now clearly, the troublesome clause in this statement is “balance of risk”.  So, before we apply this razor to the cases above, let’s cover that concept in some detail, by exploring three toy examples: the roulette table, buying stocks, and cycling to work. 
+Now clearly, the troublesome clause in this statement is “[balance of risk](Glossary.md#balance-of-risk)”.  So, before we apply this razor to the cases above, let’s cover that concept in some detail, by exploring three toy examples: the roulette table, buying stocks, and cycling to work. 
 
 
 ## Example 1: The Roulette Table
@@ -72,7 +70,7 @@ Let’s talk about “risk” for a bit.  First, we’re going to consider the g
 
 The above chart shows the distribution of returns for this bet.  Which hole the ball lands in (entirely randomly) is the independent variable on the x-axis.  The return is on the y-axis.   Most of the time, it’s a small loss, but there’s that one big win on the 12.  For clarity, in all the charts, I’ve arranged the x-axis in order of “worst outcome” to “best outcome”, but it doesn’t necessarily have to be arranged like this.
 
-In roulette, then, the balance of risk is against us:  if we integrate to find the area under this chart, it comes out -1 chips.   You could get lucky, but over time the house wins, and it’s (fairly) transparent that this is the case when you enter the game, so people are clearly not playing roulette with the rational goal of maximising chips.
+In roulette, then, the [balance of risk]](Glossary.md#balance-of-risk) is against us:  if we integrate to find the area under this chart, it comes out -1 chips.   You could get lucky, but over time the house wins, and it’s (fairly) transparent that this is the case when you enter the game, so people are clearly not playing roulette with the rational goal of maximising chips.
 
 ## Example 2: Buying Stocks
 
@@ -80,15 +78,15 @@ In real-life, the distribution of returns differs in two key ways from roulette.
 
 First, a roulette table presents us with a set of very discrete outcomes.  Real life isn’t like that so much: there’s usually a sliding scale from “complete success” to “complete failure”, with a large middle-ground of so-so performance. 
 
-![Ford and Berkshire Hathaway, Monthly Returns Distribution (from tbd) ](http://slideplayer.com/slide/4348697/14/images/26/Berkshire+Hathaway+versus+Ford+Foundation,+monthly+returns+distribution,+January+1977+to+April+2000.jpg)
+[![Ford and Berkshire Hathaway, Monthly Returns Distribution](images/berkshire-hathaway-ford.png)(http://slideplayer.com/slide/4348697/14/images/26/Berkshire+Hathaway+versus+Ford+Foundation,+monthly+returns+distribution,+January+1977+to+April+2000.jpg)
 
 The chart above shows the returns-per-quarter of Ford and Berkshire Hathaway stocks over a number of years, with worst-performing quarters on the left and best-performing on the right.   
 
-Second, while you know ahead-of-time the chances of winning at roulette, you can only guess at the balance of risk for owning Berkshire Hathaway stock for the next quarter, even if you are armed with the above chart.  Generally, owning shares has a net-positive balance-of-risk, especially over the long run.   You're more likely to make money than lose money.  But it's not guaranteed - past performance is no indication of future performance. 
+Second, while you know ahead-of-time the chances of winning at roulette, you can only guess at the [balance of risk](Glossary.md#balance-of-risk) for owning Berkshire Hathaway stock for the next quarter, even if you are armed with the above chart.  Generally, owning shares has a net-positive balance-of-risk, especially over the long run.   You're more likely to make money than lose money.  But it's not guaranteed - past performance is no indication of future performance. 
 
 Another question relating to this graph might be:  which firm is generating the most value?  Certainly, the area under the Berkshire Hathaway curve is more, but there is a bigger downside too.  Is it possible that Berkshire Hathaway generates more value while taking on more risk?
 
-When we consider buying a stock, we are going to build a model of the balance of risks (perhaps on a spreadsheet, or in our heads).  This will be dependent on our own preferences and experience (our [Internal Model](Glossary.md#internal-model) if you will).
+When we consider buying a stock, we are going to build a model of the [balance of risks](Glossary.md#balance-of-risk) (perhaps on a spreadsheet, or in our heads).  This will be dependent on our own preferences and experience (our [Internal Model](Glossary.md#internal-model) if you will).
 
 ## Example 3: Cycling To Work
 
@@ -106,15 +104,15 @@ So, we've gone from the Roulette Table example (where the whole risk profile is 
 
 ## Back To Software
 
-A decision over how or whether to cycle to work changes the Balance Of Risks, and the actions and decisions we make in software development have the same quality.  
+A decision over how or whether to cycle to work changes the [balance of risk](Glossary.md#balance-of-risk), and the actions and decisions we make in software development have the same quality.  
 
-The difference is, while the above example was chosen to be quite _finely balanced_, in software development we should be looking for actions to take where the upside _considerably_ defeats the downside.  That is, improving the Balance of Risks _as much as possible_.   We don't want to just do work that merely shifts us from having one big risk to another, we want to do work that swaps out a large risk for maybe a couple of tiny ones.   
+The difference is, while the above example was chosen to be quite _finely balanced_, in software development we should be looking for actions to take where the upside _considerably_ defeats the downside.  That is, improving the [balance of risk](Glossary.md#balance-of-risk) _as much as possible_.   We don't want to just do work that merely shifts us from having one big risk to another, we want to do work that swaps out a large risk for maybe a couple of tiny ones.   
 
 Let's go back to our original cases:
 
  - If I decide to suspend the current sprint to fix an outage, then that’s because I’ve decided that the risk of lost business, or the damage to reputation is much greater than the risk of customers walking because we didn’t complete feature X.  
 - When the Agile Manifesto stresses _Individuals and Interactions_ over _Processes and Tools_, it’s because it's view is that focusing on processes and tools leads to much greater risk.  Specifically, agile is about _responding to change_ and trying to avoid building the wrong product ([Feature-Fit Risk](Feature-Risk.md#feature-fit-risk)).  They are therefore sacrificing straight-line speed and efficiency in order to try and build the _right_ thing.  Agile is a statement that the gre
-- When we argue for fixing technical debt against shipping a new feature, what we are really doing is expressing differences in our models of the balance of risks from taking these actions.   My boss and I might both be trying to minimise the risk of customers defecting to another product, but he might believe this is best achieved by [adding new features](Feature-Risk.md) in the short term, whilst I might believe that clearing technical debt allows us to get features delivered faster in the long term.
+- When we argue for fixing technical debt against shipping a new feature, what we are really doing is expressing differences in our models of the [balance of risk](Glossary.md#balance-of-risk) from taking these actions.   My boss and I might both be trying to minimise the risk of customers defecting to another product, but he might believe this is best achieved by [adding new features](Feature-Risk.md) in the short term, whilst I might believe that clearing technical debt allows us to get features delivered faster in the long term.
 - How do we optimise Kevin's example tbd.
 
 ## Zooming Out
@@ -124,7 +122,7 @@ In a way, this is not just about development teams.  The development team are ex
  - The finance team are there to ensure that you don't run out of money ([Funding Risk](Scarcity-Risks.md#funding-risk) and that the bills get paid (avoiding [Legal Risks](Operational-Risk.md)).
  - The Human Resources team are there to make sure staff are hired on, managed and leave properly.  Doing this avoids [Reputation Damage](), [Morale Issues](Agency-Risk.md#morale) and [Legal Risks](Operational-Risk.md).
  - The best doctors are the ones with the 
- - Part of [Operations Management](Operational-Risk.md#operations-management) is to ensure that the organisation is aware of its internal state, and the world around it, to ensure they are aware of the balance of risks.
+ - Part of [Operations Management](Operational-Risk.md#operations-management) is to ensure that the organisation is aware of its internal state, and the world around it, to ensure they are aware of the [balance of risk](Glossary.md#balance-of-risk).
 
 Any time a person is added to an organisation, the hope is that it will improve the balance of risk for that organisation.  The way to do this is to try and _improve the balance of risks_:  encouraging the upside risks while preventing the downside risks.  The most useful change agents are therefore the ones with the best [Internal Models](Glossary.md#internal-model), since they can both _diagnose_ the current balance of risk, and know the best levers to pull to improve it.
 
@@ -135,7 +133,7 @@ Any time a person is added to an organisation, the hope is that it will improve 
 - cf. with evolution.
 - and people:  people are naturally risk-averse.
 - investment banking, kelly bets
-- 
+- development bets
 
 
 How does this help?
