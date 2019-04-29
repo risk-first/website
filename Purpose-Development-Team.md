@@ -1,6 +1,5 @@
 ![Under Construction](images/state/uc.png)
 
-
 ---
 title: The Purpose of the Development Team
 description: Making sense of contradictory objectives.
@@ -14,15 +13,19 @@ A manager I used to work with, Kevin, used to say that the purpose of the Develo
 
 - **First, "sustainably" and "quickly" are somewhat at odds with each other. ** Much like cars aren’t optimised for both "energy efficiency" and "speed", it’s a trade-off between the two.  Runners are either fast over short distances or long distances - it’s not both.  My laptop makes trade-offs between battery life and weight: either extreme is bad, somewhere in the middle is useful.  So "sustainably" and "quickly" implies that there is a balance to be achieved - what happens when you are forced to choose between the two? How do you choose?  
 
+![Sustainably vs Quickly](images/numbers/sustainably-quickly.png)
+
 - **Second, my conception of value is that it is something you can sell.** Producing a product that customers value (at say £100-per-year) means that we can sell it for somewhere less than that (say £80-per-year), and the development cost must come in at somewhere less than (say £50-per-year) that to allow the company to make a profit.  But again, _value_ didn't seem like the whole story either.  
 
 Aren't there things to worry about _besides_ value?
 
 ## Case 2: Scrum
 
-On a project not so long ago, we chose to use [Scrum](https://en.wikipedia.org/wiki/Scrum), which advocates development being broken into "sprints" of maybe a few weeks long, commencing with planning and ending in a release. This worked out pretty well for a while, until one day there was a major outage in a critical piece of our infrastructure.  We could have washed our hands of it, because there was a specific team for managing the infrastructure, but it seemed much more sensible that we abandon the sprint we were on and roll up our sleeves to help.   After all, our product was dead-in-the-water without the infrastructure, and this was impacting our user-base.
+On a project not so long ago, we chose to use [Scrum](https://en.wikipedia.org/wiki/Scrum), which advocates development being broken into "sprints" of maybe a few weeks long, commencing with planning and ending in a release. This worked out pretty well for a while, until one day there was a major outage in a critical piece of our infrastructure.  
 
-Had we stuck to Scrum religiously (following the rules, but not in an agile way), we might have waited until the end of the sprint, and then considered whether to help the infrastructure team during the planning phase of the next sprint.   But of course, that would be a crazy interpretation of what it means to be agile.
+We could have washed our hands of it, because there was a specific team for managing the infrastructure, but it seemed much more sensible that we abandon the sprint we were on and roll up our sleeves to help.   After all, our product was dead-in-the-water without the infrastructure, and this was impacting our users.
+
+Had we stuck to Scrum religiously (following the _rules_, but not in an agile way), we might have waited until the end of the sprint, and then considered whether to help the infrastructure team during the planning phase of the next sprint.   But of course, that would be a crazy interpretation of what it means to be agile.
 
 Scrum's rule about working-to-a-sprint is well-meaning, but not always applicable.  How do we decide when to follow it, and when not to?
 
@@ -130,6 +133,7 @@ Any time a person is added to an organisation, the hope is that it will improve 
 - cf. with evolution.
 - and people:  people are naturally risk-averse.
 - investment banking, kelly bets
+- 
 
 
 How does this help?
