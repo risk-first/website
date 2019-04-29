@@ -11,7 +11,7 @@ image: /images/generated/titles/Purpose-Development-Team.png
 
 A manager I used to work with, Kevin, used to say that the purpose of the Development Team was "Sustainably Deliver Value Quickly."  Which apparently he got from a Lean handbook (maybe something like [this one](https://leankit.com/learn/lean/lean-business-development/)). It always seemed to me to be _approximately right_, except it bugged me and eventually, I was able to put my finger on _why_.
 
-- **First, "sustainably" and "quickly" are somewhat at odds with each other. ** Much like cars aren’t optimised for both "energy efficiency" and "speed", it’s a trade-off between the two.  Runners are either fast over short distances or long distances - it’s not both.  My laptop makes trade-offs between battery life and weight: either extreme is bad, somewhere in the middle is useful.  So "sustainably" and "quickly" implies that there is a balance to be achieved - what happens when you are forced to choose between the two? How do you choose?  
+- **First, "sustainably" and "quickly" are somewhat at odds with each other.** Much like cars aren’t optimised for both "energy efficiency" and "speed", it’s a trade-off between the two.  Runners are either fast over short distances or long distances - it’s not both.  My laptop makes trade-offs between battery life and weight: either extreme is bad, somewhere in the middle is useful.  So "sustainably" and "quickly" implies that there is a balance to be achieved - what happens when you are forced to choose between the two? How do you choose?  
 
 ![Sustainably vs Quickly](images/numbers/sustainably-quickly.png)
 
@@ -44,6 +44,8 @@ But how do I choose?
 ## Case 4: Technical Debt
 
 Sometimes, I am faced with a conflict over whether to pay off [technical debt](Complexity-Risk.md#technical-debt) or build new functionality.  Sometimes the conflict will be with people in my team, or with stake-holders, but sometimes it is an internal, personal conflict.  Paying off technical debt is sometimes the right thing to do when there is lots of unnecessary complexity in the code-base, but sometimes, it can be [premature optimisation](), and the shape of the software gets changed by new functionality so much that the work I put into clearing the technical debt is wasted.
+
+![Technical Debt vs Building Features](images/generated/practices/purpose/technical-debt.png)
 
 What should I do?
 
