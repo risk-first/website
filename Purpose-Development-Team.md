@@ -5,6 +5,8 @@ url: https://riskfirst.org/Purpose-Development-Team
 image: /images/generated/titles/Purpose-Development-Team.png
 ---
 
+# The Purpose Of The Development Team
+
 Let's jump straight in.
 
 ## Case 1: Lean
@@ -144,6 +146,4 @@ Ok, how does this change how we work in the development team?  Hopefully, we're 
 - **Add Log Statements**.  Again, they're insurance for when things go wrong and you need to work out why.
 - **Worry about [ACID](https://en.wikipedia.org/wiki/ACID_(computer_science)) transactions**.  They slow things down, but they increase [reliability](Reliability-Risk.md).
 
-But actually, it goes further than this.   
-
-In the next article **Coding and Testing (tbd)**, I am going to show how knowledge of the [balance of risk](Glossary.md#balance-of-risk) concept can inform the way we go about our day-to-day work as developers...
+But actually, it goes much further than this.  In the next article **Coding and Testing (tbd)**, I am going to show how knowledge of the [balance of risk](Glossary.md#balance-of-risk) concept can inform the way we go about our day-to-day work as developers...
