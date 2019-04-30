@@ -123,17 +123,17 @@ Let's go back to our original cases:
 - When we argue for **fixing technical debt against shipping a new feature**, what we are really doing is expressing differences in our models of the [balance of risk](Glossary.md#balance-of-risk) from taking these actions.   My boss and I might both be trying to minimise the risk of customers defecting to another product, but he might believe this is best achieved by [adding new features](Feature-Risk.md) in the short term, whilst I might believe that [clearing technical debt](Complexity-Risk.md#technical-debt) allows us to get features delivered faster in the long term.
 - In the example of **Sustainably vs Quickly**, it's clear that what we should be doing is trying to avoid altering the balance of risks in a way that sacrifices too much Sustainability or Speed.  To do this requires judgement in the form of an accurate [Internal Model](Glossary.md#internal-model) of the [balance of risks](Glossary.md#balance-of-risk).
 
-## Zooming Out
+### Other Teams
 
-In a way, this is not just about development teams.  The development team are experts in improving the balance of technical risks, but other teams have other specialities:
+In a way, this is not just about development teams.  Any time a person is added to an organisation, the hope is that it will improve the [balance of risk](Glossary.md#balance-of-risk) for that organisation.  The development team are experts in improving the balance of [technical risks](Risk-Landscape.md), but other teams have other specialities:
  
- - The finance team are there to ensure that you don't run out of money ([Funding Risk](Scarcity-Risks.md#funding-risk) and that the bills get paid (avoiding [Legal Risks](Operational-Risk.md)).
- - The Human Resources team are there to make sure staff are hired on, managed and leave properly.  Doing this avoids [Reputation Damage](), [Morale Issues](Agency-Risk.md#morale) and [Legal Risks](Operational-Risk.md).
- - The best doctors are the ones with the 
- - Part of [Operations Management](Operational-Risk.md#operations-management) is to ensure that the organisation is aware of its internal state, and the world around it, to ensure they are aware of the [balance of risk](Glossary.md#balance-of-risk).
+ - The finance team are there to ensure that you don't [run out of money](Scarcity-Risks.md#funding-risk) and that the bills get paid (avoiding [Legal Risks](Operational-Risk.md)).
+ - The Human Resources team are there to make sure staff are hired on, managed and leave properly.  Doing this avoids [Reputation Damage](Communication-Risk#trust--belief-risk), [Morale Issues](Agency-Risk.md#morale) and [Legal Risks](Operational-Risk.md).
+ - The best doctors are the ones with the best [Internal Models](Glossary.md#internal-model). They can diagnose the illnesses, and figure out treatments that improve the patient's [balance of risk](Glossary.md#balance-of-risk).  Medical Students are all taught to 'first, do no harm':
 
-Any time a person is added to an organisation, the hope is that it will improve the balance of risk for that organisation.  The way to do this is to try and _improve the balance of risks_:  encouraging the upside risks while preventing the downside risks.  The most useful change agents are therefore the ones with the best [Internal Models](Glossary.md#internal-model), since they can both _diagnose_ the current balance of risk, and know the best levers to pull to improve it.
+> "given an existing problem, it may be better not to do something, or even to do nothing, than to risk causing more harm than good." - [Primum non nocere, _Wikipedia_](https://en.wikipedia.org/wiki/Primum_non_nocere).
 
+## Impact
 
 
 - explain balance of risks - probably lose, probably win. & integration.   after example 2.
