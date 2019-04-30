@@ -1,8 +1,6 @@
-![Under Construction](images/state/uc.png)
-
 ---
 title: The Purpose of the Development Team
-description: Making sense of contradictory objectives.
+description: Making sense of contradictory objectives with the "Balance of Risk"
 url: https://riskfirst.org/Purpose-Development-Team
 image: /images/generated/titles/Purpose-Development-Team.png
 ---
