@@ -7,9 +7,11 @@ url: https://riskfirst.org/Purpose-Development-Team
 image: /images/generated/titles/Purpose-Development-Team.png
 ---
 
+Let's jump straight in.
+
 ## Case 1: Lean
 
-A manager I used to work with, Kevin, used to say that the purpose of the Development Team was "Sustainably Deliver Value Quickly."  Which apparently he got from a Lean handbook (maybe something like [this one](https://leankit.com/learn/lean/lean-business-development/)). It always seemed to me to be _approximately right_, except it bugged me and eventually, I was able to put my finger on _why_.
+A manager I used to work with, Kevin, used to say that the purpose of the Development Team was **"Sustainably Deliver Value Quickly."**  Which apparently he got from a Lean handbook (maybe something like [this one](https://leankit.com/learn/lean/lean-business-development/)). It always seemed to me to be _approximately right_, except it bugged me and eventually, I was able to put my finger on _why_.
 
 - **First, "sustainably" and "quickly" are somewhat at odds with each other.** Much like cars aren’t optimised for both "energy efficiency" and "speed", it’s a trade-off between the two.  Runners are either fast over short distances or long distances - it’s not both.  My laptop makes trade-offs between battery life and weight: either extreme is bad, somewhere in the middle is useful.  So "sustainably" and "quickly" implies that there is a balance to be achieved - what happens when you are forced to choose between the two? How do you choose?  
 
@@ -27,19 +29,7 @@ Had we stuck to Scrum religiously (following the _rules_, but not in an agile wa
 
 Scrum's rule about working-to-a-sprint is well-meaning, but not always applicable.  How do we decide when to follow it, and when not to?
 
-## Case 3: Agile Manifesto
-
-The first statement of the Agile Manifesto is:
-
-> "Individuals and Interactions over Processes and Tools." - [Agile Manifesto](https://agilemanifesto.org)
-
-What does this mean?   I don't think it means "Individuals and Interactions are always more important than Processes and Tools” and it certainly doesn’t mean “throw away all your tools”.  It is basically saying “previously, we’ve steered too much towards the right.  We should steer a bit more towards the left”.  
-
-Is this helpful?  Is such a relative statement telling us anything we previously didn't know?  Usefully, perhaps, this describes a tautology that we may have been previously unaware of.  I might have thought, "Individuals and Interactions? Processes and Tools?  More of both, please!"  But this statement is telling me that _I can't_ have both, there is a trade-off, and I will have to choose.
-
-But how do I choose?
-
-## Case 4: Technical Debt
+## Case 3: Technical Debt
 
 Sometimes, I am faced with a conflict over whether to pay off [technical debt](Complexity-Risk.md#technical-debt) or build new functionality.  Sometimes the conflict will be with people in my team, or with stake-holders, but sometimes it is an internal, personal conflict.  
 
@@ -48,6 +38,18 @@ Sometimes, I am faced with a conflict over whether to pay off [technical debt](C
 As the above diagram shows, paying off technical debt is sometimes the right thing to do when there is lots of unnecessary complexity in the code-base, but sometimes, it can be [premature optimisation](https://en.wikipedia.org/wiki/Program_optimization#When_to_optimize), and the shape of the software gets changed by new functionality so much that the work I put into clearing the technical debt is wasted.
 
 What should I do?
+
+## Case 4: Agile Manifesto
+
+The first statement of the [Agile Manifesto](https://agilemanifesto.org) is:
+
+> "Individuals and Interactions over Processes and Tools." - [Agile Manifesto](https://agilemanifesto.org)
+
+What does this mean?   I don't think it means "Individuals and Interactions are always more important than Processes and Tools” and it certainly doesn’t mean “throw away all your tools”.  It is basically saying “previously, we’ve steered too much towards the right.  We should steer a bit more towards the left”.  
+
+Is this helpful?  Is such a relative statement telling us anything we previously didn't know?  Usefully, perhaps, this describes a tautology that we may have been previously unaware of.  I might have thought, "Individuals and Interactions? Processes and Tools?  More of both, please!"  But this statement is telling me that _I can't_ have both, there is a trade-off, and I will have to choose.
+
+But how do I choose?
 
 ## A Virtue Between Two Vices
 
@@ -98,7 +100,7 @@ Gambling is all about winning _chips_, and buying stock is all about winning _mo
 
 In the above chart, we have two risk profiles for cycling to work.  On the left, we have the time taken.  After a few week's cycling, we can probably start to build up a good [Internal Model](Glossary.md#internal-model) of what this distribution looks like. 
 
-On the right, we have _health_.  There probably _isn't_ an objective measure for this.  We might look at our weight, or resting heart-rate or something, or just generally have a good feeling that cycling is making us fitter.  But, there's probably a worry about having an accident built into this (the steep drop on the left), and again, there is no objective measure for judging how badly that might come off.
+On the right, we have _health_.  There _isn't_ a good objective measure for this.  We might look at our weight, or resting heart-rate or something, or just generally have a good feeling that cycling is making us fitter.  But, there's probably a worry about having an accident built into this (the steep drop on the left), and again, there is no objective measure for judging how badly that might come off.
 
 So we have three issues with health:  
 
@@ -119,7 +121,7 @@ We don't want to just do work that merely shifts us from having one big risk to 
 Let's go back to our original cases:
 
  - If I decide to **suspend the current sprint** to fix an outage, then that’s because I’ve decided that the risk of lost business, or the damage to reputation is much greater than the risk of customers walking because we didn’t complete the planned features.  
-- When the **Agile Manifesto** stresses _Individuals and Interactions_ over _Processes and Tools_, it’s because it's view is that focusing on processes and tools leads to much greater risk.  Specifically, agile is about _responding to change_ and trying to avoid [building the wrong product](Feature-Risk.md#feature-fit-risk).  They are therefore sacrificing straight-line speed and efficiency in order to try and build the _right_ thing.  
+- When the Agile Manifesto stresses **Individuals and Interactions over Processes and Tools**, it’s because it's view is that focusing on processes and tools leads to much greater risk.  Specifically, agile is about _responding to change_ and trying to avoid [building the wrong product](Feature-Risk.md#feature-fit-risk).  The experience that led them to write this statement was that following strict formal processes led to _massively_ worse outcomes than avoiding them.
 - When we argue for **fixing technical debt against shipping a new feature**, what we are really doing is expressing differences in our models of the [balance of risk](Glossary.md#balance-of-risk) from taking these actions.   My boss and I might both be trying to minimise the risk of customers defecting to another product, but he might believe this is best achieved by [adding new features](Feature-Risk.md) in the short term, whilst I might believe that [clearing technical debt](Complexity-Risk.md#technical-debt) allows us to get features delivered faster in the long term.
 - In the example of **Sustainably vs Quickly**, it's clear that what we should be doing is trying to avoid altering the balance of risks in a way that sacrifices too much Sustainability or Speed.  To do this requires judgement in the form of an accurate [Internal Model](Glossary.md#internal-model) of the [balance of risks](Glossary.md#balance-of-risk).
 
@@ -127,27 +129,23 @@ Let's go back to our original cases:
 
 In a way, this is not just about development teams.  Any time a person is added to an organisation, the hope is that it will improve the [balance of risk](Glossary.md#balance-of-risk) for that organisation.  The development team are experts in improving the balance of [technical risks](Risk-Landscape.md), but other teams have other specialities:
  
- - The finance team are there to ensure that you don't [run out of money](Scarcity-Risks.md#funding-risk) and that the bills get paid (avoiding [Legal Risks](Operational-Risk.md)).
- - The Human Resources team are there to make sure staff are hired on, managed and leave properly.  Doing this avoids [Reputation Damage](Communication-Risk#trust--belief-risk), [Morale Issues](Agency-Risk.md#morale) and [Legal Risks](Operational-Risk.md).
+ - The Finance team are there to ensure that you don't [run out of money](Scarcity-Risks.md#funding-risk) and that the bills get paid (avoiding [Legal Risks](Operational-Risk.md)).
+ - The Human Resources team are there to make sure staff are hired, managed and leave properly.  Doing this avoids [inefficiency](Scarcity-Risk.md#Schedule-Risk), [Reputation Damage](Communication-Risk#trust--belief-risk), [Morale Issues](Agency-Risk.md#morale) and [Legal Risks](Operational-Risk.md).
  - The best doctors are the ones with the best [Internal Models](Glossary.md#internal-model). They can diagnose the illnesses, and figure out treatments that improve the patient's [balance of risk](Glossary.md#balance-of-risk).  Medical Students are all taught to 'first, do no harm':
 
 > "given an existing problem, it may be better not to do something, or even to do nothing, than to risk causing more harm than good." - [Primum non nocere, _Wikipedia_](https://en.wikipedia.org/wiki/Primum_non_nocere).
 
+As we saw above with Berkshire Hathaway and Ford, the riskier the investment, the more return (or value) you're likely to deliver, though the risk of going losing everything increases.  This is why banks are required to [hold capital against risky investments](https://en.wikipedia.org/wiki/Basel_III#Leverage_ratio).   
+
 ## Impact
 
+Ok, how does this change how we work in the development team?  Hopefully, we're moving away from the idea of merely delivering value.  If we were just delivering value, we might not:
 
-- explain balance of risks - probably lose, probably win. & integration.   after example 2.
-- bring our skills to bear whatever the risk.
-- cf. with evolution.
-- and people:  people are naturally risk-averse.
-- investment banking, kelly bets
-- development bets
+- **Build Unit Tests**.  After all, these add nothing to the customer experience.  They merely provide insurance against the risk of us breaking things in production.
+- **Keep Backups**.  Backups minimize the downside of storage failure.  Sure, when it happens there is still a negative, but it's not as deep.  
+- **Add Log Statements**.  Again, they're insurance for when things go wrong and you need to work out why.
+- **Worry about [ACID](https://en.wikipedia.org/wiki/ACID_(computer_science)) transactions**.  They slow things down, but they increase [reliability](Reliability-Risk.md).
 
+But actually, it goes further than this.   
 
-How does this help?
-
- - with debugging
- - with planning work
- - with development
-
-real options
+In the next article **Coding and Testing (tbd)**, I am going to show how knowledge of the [balance of risk](Glossary.md#balance-of-risk) concept can inform the way we go about our day-to-day work as developers...

@@ -82,6 +82,7 @@ Risks are often very similar across different software projects.   And, if you k
 
 This part is a discussion of the different practices within Software Development, and how they mitigate and accentuate the different risks.
 
+ - [The Purpose Of The Development Team](Purpose-Development-Team.md)
  - Analysis
  - [Coding](Coding.md)
  - Contract

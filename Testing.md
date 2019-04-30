@@ -148,3 +148,28 @@ For these reasons, focus on writing the _smallest number of tests that mitigates
 ## Continuous Integration
 
 referred to.
+
+
+### Risk-Adjusted Value
+
+
+ 
+
+Actually, this 
+
+
+
+- bring our skills to bear whatever the risk.
+- cf. with evolution.
+- and people:  people are naturally risk-averse.
+- investment banking, kelly bets
+- development bets
+
+
+How does this help?
+
+ - with debugging
+ - with planning work
+ - with development
+
+real options
