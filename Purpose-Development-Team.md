@@ -82,7 +82,7 @@ First, a roulette table presents us with a set of very discrete outcomes.  Real 
 
 [![Ford and Berkshire Hathaway, Monthly Returns Distribution](images/berkshire-hathaway-ford.png)](http://slideplayer.com/slide/4348697/14/images/26/Berkshire+Hathaway+versus+Ford+Foundation,+monthly+returns+distribution,+January+1977+to+April+2000.jpg)
 
-The chart above shows the returns-per-quarter of Ford and Berkshire Hathaway stocks over a number of years, with worst-performing quarters on the left and best-performing on the right.   
+The chart above (from [William T Ziemba](http://www.williamtziemba.com)) shows the returns-per-quarter of Ford and Berkshire Hathaway stocks over a number of years, with worst-performing quarters on the left and best-performing on the right.   
 
 Second, while you know ahead-of-time the chances of winning at roulette, you can only guess at the [balance of risk](Glossary.md#balance-of-risk) for owning Berkshire Hathaway stock for the next quarter, even if you are armed with the above chart.  Generally, owning shares has a net-positive [balance of risk](Glossary.md#balance-of-risk), especially over the long run.   You're more likely to make money than lose money.  But it's not guaranteed - past performance is no indication of future performance. 
 
