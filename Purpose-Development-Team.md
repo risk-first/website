@@ -47,7 +47,6 @@ Sometimes, I am faced with a conflict over whether to pay off [technical debt](C
 
 As the above diagram shows, paying off technical debt is sometimes the right thing to do when there is lots of unnecessary complexity in the code-base, but sometimes, it can be [premature optimisation](https://en.wikipedia.org/wiki/Program_optimization#When_to_optimize), and the shape of the software gets changed by new functionality so much that the work I put into clearing the technical debt is wasted.
 
-
 What should I do?
 
 ## A Virtue Between Two Vices
@@ -62,7 +61,7 @@ But could there be a “general theory” somehow that avoids these contradictio
 
 > "The purpose of the development team is to improve the [balance of risk](Glossary.md#balance-of-risk) for achieving business goals as much as possible."
 
-Now clearly, the troublesome clause in this statement is “[balance of risk](Glossary.md#balance-of-risk)”.  So, before we apply this razor to the cases above, let’s cover that concept in some detail, by exploring three toy examples: the roulette table, buying stocks, and cycling to work. 
+Now clearly, the troublesome clause in this statement is “[balance of risk](Glossary.md#balance-of-risk)”.  So, before we apply this  to the cases above, let’s explain this concept in some detail by exploring three toy examples: the roulette table, buying stocks, and cycling to work.  Finally, we'll see how this impacts the work we do in software development more generally.
 
 
 ## Example 1: The Roulette Table
@@ -99,24 +98,28 @@ Gambling is all about winning _chips_, and buying stock is all about winning _mo
 
 In the above chart, we have two risk profiles for cycling to work.  On the left, we have the time taken.  There's a very objective measure of time, and after a few week's cycling, we can probably start to build up a good [Internal Model](Glossary.md#internal-model) of what this distribution looks like.   On the right, we have _health_.  There probably _isn't_ an objective measure for this.  We might look at our weight, or resting heart-rate or something, or just generally have a good feeling that cycling is making us fitter.  But, there's probably a worry about having an accident built into this, and again, there is no objective measure for judging how badly that might come off.
 
-So we have two issues:  it's hard to judge exactly how likely an accident is (the width of the bar) and also how costly it will be (the depth of the bar).  Everyone judges this differently, and there's lots of evidence to suggest even the same person will judge this differently at different _ages_.
+So we have three issues with health:  
 
-If we want to reduce the time it takes to get to work, maybe by cycling faster, or going by a busier route, it's probably going to have a knock-on effect on the health risks.  Whether this is worth it will depend on your appetite for health risks, against wanting to save time.  
-
-So, we've gone from the Roulette Table example (where the whole risk profile is known in advance) to the Cycling example, where the risk profile is hidden from us.  Regardless, we will have our own [Internal Model](Glossary.md#internal-model) of the distribution of risks which we use to make judgement calls.
+ - **It's hard to judge exactly how likely an accident is** (the width of the bar) because they don't happen often, and
+ - **it's hard to judge how costly it will be** (the depth of the bar).  Everyone judges this differently, and there's lots of evidence to suggest even the same person will judge this differently [at different ages](https://en.wikipedia.org/wiki/Risk#Risk_attitude,_appetite_and_tolerance).
+ - **It's hard to weigh it against time.**  If we want to reduce the time it takes to get to work, maybe by cycling faster, or going by a busier route, it's probably going to have a knock-on effect on the health risks.  Whether this is worth it will depend on your appetite for health risks, against wanting to save time.  
 
 ## Back To Software
 
-A decision over how or whether to cycle to work changes the [balance of risk](Glossary.md#balance-of-risk), and the actions and decisions we make in software development have the same quality.  
+So, we've gone from the Roulette Table example (where the whole risk profile is completely known in advance) to the Cycling example, where the risk profile is hidden from us, and unknowable.  Regardless, we will have our own [Internal Model](Glossary.md#internal-model) of the balance of risks which we use to make judgement calls.
 
-The difference is, while the above example was chosen to be quite _finely balanced_, in software development we should be looking for actions to take where the upside _considerably_ defeats the downside.  That is, improving the [balance of risk](Glossary.md#balance-of-risk) _as much as possible_.   We don't want to just do work that merely shifts us from having one big risk to another, we want to do work that swaps out a large risk for maybe a couple of tiny ones.   
+Just as a decision over how fast to cycle to work changes the [balance of risk](Glossary.md#balance-of-risk), the actions and decisions we make in software development do too.  
+
+The difference is, while the cycling example was chosen to be quite _finely balanced_, in software development we should be looking for actions to take where the upside _considerably_ defeats the downside.  That is, improving the [balance of risk](Glossary.md#balance-of-risk) _as much as possible_.   
+
+We don't want to just do work that merely shifts us from having one big risk to another, we want to do work that swaps out a large risk for maybe a couple of tiny ones.   
 
 Let's go back to our original cases:
 
  - If I decide to suspend the current sprint to fix an outage, then that’s because I’ve decided that the risk of lost business, or the damage to reputation is much greater than the risk of customers walking because we didn’t complete feature X.  
-- When the Agile Manifesto stresses _Individuals and Interactions_ over _Processes and Tools_, it’s because it's view is that focusing on processes and tools leads to much greater risk.  Specifically, agile is about _responding to change_ and trying to avoid building the wrong product ([Feature-Fit Risk](Feature-Risk.md#feature-fit-risk)).  They are therefore sacrificing straight-line speed and efficiency in order to try and build the _right_ thing.  Agile is a statement that the gre
-- When we argue for fixing technical debt against shipping a new feature, what we are really doing is expressing differences in our models of the [balance of risk](Glossary.md#balance-of-risk) from taking these actions.   My boss and I might both be trying to minimise the risk of customers defecting to another product, but he might believe this is best achieved by [adding new features](Feature-Risk.md) in the short term, whilst I might believe that clearing technical debt allows us to get features delivered faster in the long term.
-- How do we optimise Kevin's example tbd.
+- When the Agile Manifesto stresses _Individuals and Interactions_ over _Processes and Tools_, it’s because it's view is that focusing on processes and tools leads to much greater risk.  Specifically, agile is about _responding to change_ and trying to avoid [building the wrong product](Feature-Risk.md#feature-fit-risk).  They are therefore sacrificing straight-line speed and efficiency in order to try and build the _right_ thing.  
+- When we argue for fixing technical debt against shipping a new feature, what we are really doing is expressing differences in our models of the [balance of risk](Glossary.md#balance-of-risk) from taking these actions.   My boss and I might both be trying to minimise the risk of customers defecting to another product, but he might believe this is best achieved by [adding new features](Feature-Risk.md) in the short term, whilst I might believe that [clearing technical debt](Complexity-Risk.md#technical-debt) allows us to get features delivered faster in the long term.
+- In the example of "Sustainably" vs "Quickly", it's clear that what we should be doing is trying to avoid risks that cause us to sacrifice Sustainability or Speed, and yes, this is going to require judgement in the form of an accurate [Internal Model](Glossary.md#internal-model) of the [balance of risks](Glossary.md#balance-of-risk).
 
 ## Zooming Out
 
