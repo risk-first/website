@@ -95,7 +95,7 @@ When we consider buying a stock, we are going to build a model of the [balance o
 
 Gambling is all about winning _chips_, and buying stock is all about winning _money_. Those are just ways of keeping score.   But often, there is no exact score.  Let's look at an example of that.
 
-![Cycling To Work:  Distributions of Returns - Time and Health](images/numbers/cycling_to_work.png)
+![Cycling To Work:  Distributions of Returns - Time and Health](images/numbers/cycling-to-work.png)
 
 In the above chart, we have two risk profiles for cycling to work.  On the left, we have the time taken.  There's a very objective measure of time, and after a few week's cycling, we can probably start to build up a good [Internal Model](Glossary.md#internal-model) of what this distribution looks like.   On the right, we have _health_.  There probably _isn't_ an objective measure for this.  We might look at our weight, or resting heart-rate or something, or just generally have a good feeling that cycling is making us fitter.  But, there's probably a worry about having an accident built into this, and again, there is no objective measure for judging how badly that might come off.
 
