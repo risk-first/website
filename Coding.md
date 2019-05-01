@@ -269,3 +269,6 @@ tbd
 - Examine Boundary Risk and Dead End Risk issues:  is this decision going to limit you 
 
 ## Spike
+
+
+SIZING BETS

@@ -112,17 +112,18 @@ So, we've gone from the Roulette Table example where the whole risk profile is c
 
 Just as a decision over how fast to cycle to work changes the [balance of risk](Glossary.md#balance-of-risk), the actions and decisions we make in software development do too.  
 
-
 The difference is, while the cycling example was chosen to be quite _finely balanced_, in software development we should be looking for actions to take where the upside _considerably_ defeats the downside.  That is, improving the [balance of risk](Glossary.md#balance-of-risk) _as much as possible_.   
 
 ![Good and Not-So-Good Actions](images/numbers/good-not-so-good-actions.png)
 
-This is shown in the above chart:  although both actions have a similar downside (maybe they take a similar time to complete, and this what is lost if the action doesn't work out), the action on the left has _significantly_ greater upside.  We don't want to just do work that merely shifts us from having one big risk to another, we want to do work that swaps out a large risk for maybe a couple of tiny ones.   
+This is shown in the above chart.  Let's say you have two possible pieces of development, both with a similar downside (maybe they take a similar time to complete and this what is lost if it doesn't work out).  However, the action on the left _significantly_ improves the [balance of risk](Glossary.md#balance-of-risk) for the project.  Therefore, all else being equal, we should take that bet.
+
+We don't want to just do work that merely shifts us from having one big risk to another, we want to do work that swaps out a large risk for maybe a couple of tiny ones.   
 
 Let's go back to our original cases:
 
  - If I decide to **suspend the current sprint** to fix an outage, then that’s because I’ve decided that the risk of lost business, or the damage to reputation is much greater than the risk of customers walking because we didn’t complete the planned features.  
-- When the Agile Manifesto stresses **Individuals and Interactions over Processes and Tools**, it’s because it's view is that focusing on processes and tools leads to much greater risk.  Specifically, agile is about _responding to change_ and trying to avoid [building the wrong product](Feature-Risk.md#feature-fit-risk).  The experience that led them to write this statement was that following strict formal processes led to _massively_ worse outcomes than avoiding them.
+- When the Agile Manifesto stresses **Individuals and Interactions over Processes and Tools**, it’s because it's view is that focusing on processes and tools leads to much greater risk.  Their experience is that while focusing on individuals and interactions may be a less efficient way to build software, following strict formal processes massively increases the much worse risk of [building the wrong product](Feature-Risk.md#feature-fit-risk). 
 - When we argue for **fixing technical debt against shipping a new feature**, what we are really doing is expressing differences in our models of the [balance of risk](Glossary.md#balance-of-risk) from taking these actions.   My boss and I might both be trying to minimise the risk of customers defecting to another product but he might believe this is best achieved by [adding new features](Feature-Risk.md) in the short term, whilst I might believe that [clearing technical debt](Complexity-Risk.md#technical-debt) allows us to get features delivered faster in the long term.
 - In the example of **Sustainably vs Quickly**, it's clear that what we should be doing is trying to avoid altering the balance of risks in a way that sacrifices too much Sustainability or Speed.  To do this requires judgement in the form of an accurate [Internal Model](Glossary.md#internal-model) of the [balance of risks](Glossary.md#balance-of-risk).
 
