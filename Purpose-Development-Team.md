@@ -123,17 +123,17 @@ Let's go back to our original cases:
 - When we argue for **fixing technical debt against shipping a new feature**, what we are really doing is expressing differences in our models of the [balance of risk](Glossary.md#balance-of-risk) from taking these actions.   My boss and I might both be trying to minimise the risk of customers defecting to another product but he might believe this is best achieved by [adding new features](Feature-Risk.md) in the short term, whilst I might believe that [clearing technical debt](Complexity-Risk.md#technical-debt) allows us to get features delivered faster in the long term.
 - In the example of **Sustainably vs Quickly**, it's clear that what we should be doing is trying to avoid altering the balance of risks in a way that sacrifices too much Sustainability or Speed.  To do this requires judgement in the form of an accurate [Internal Model](Glossary.md#internal-model) of the [balance of risks](Glossary.md#balance-of-risk).
 
-### Other Teams
+### Other Scenarios
 
 In a way, this is not just about development teams.  Any time a person is added to an organisation, the hope is that it will improve the [balance of risk](Glossary.md#balance-of-risk) for that organisation.  The development team are experts in improving the balance of [technical risks](Risk-Landscape.md) but other teams have other specialities:
  
  - The Finance team are there to avoid the risk of [running out of money](Scarcity-Risks.md#funding-risk) and ensuring that the bills get paid (avoiding [Legal Risks](Operational-Risk.md)).
  - The Human Resources team are there to make sure staff are hired, managed and leave properly.  Doing this avoids [inefficiency](Scarcity-Risk.md#Schedule-Risk), [Reputation Damage](Communication-Risk#trust--belief-risk), [Morale Issues](Agency-Risk.md#morale) and [Legal Risks](Operational-Risk.md).
- - The best doctors are the ones with the best [Internal Models](Glossary.md#internal-model). They can diagnose the illnesses, and figure out treatments that improve the patient's [balance of risk](Glossary.md#balance-of-risk).  Medical Students are all taught to 'first, do no harm':
+ - The best doctors are the ones with the best [Internal Models](Glossary.md#internal-model). They can best diagnose the illnesses and figure out treatments that improve the patient's [balance of risk](Glossary.md#balance-of-risk).  Medical Students are all taught to 'first, do no harm':
 
 > "given an existing problem, it may be better not to do something, or even to do nothing, than to risk causing more harm than good." - [Primum non nocere, _Wikipedia_](https://en.wikipedia.org/wiki/Primum_non_nocere).
 
-As we saw above,  Berkshire Hathaway is a riskier investment than Ford: the returns are likely to be higher, but so are the losses. Generally, by _taking on risk_, the more return (or value) you're likely to deliver, though the risk of going losing everything increases.  This is why banks are required to [hold capital against their risky investments](https://en.wikipedia.org/wiki/Basel_III#Leverage_ratio).   
+As we saw above,  Berkshire Hathaway is a riskier investment than Ford: the returns are likely to be higher, but so are the losses. Generally, by _taking on risk_, the more return (or value) you're likely to deliver, though the risk of going losing everything increases.  This is why banks are required to [hold capital against their risky investments](https://en.wikipedia.org/wiki/Basel_III#Leverage_ratio): regulators want their contribution to the economic system to improve the balance of risks, not worsen it.  
 
 ## Impact
 
