@@ -112,9 +112,12 @@ So, we've gone from the Roulette Table example where the whole risk profile is c
 
 Just as a decision over how fast to cycle to work changes the [balance of risk](Glossary.md#balance-of-risk), the actions and decisions we make in software development do too.  
 
+
 The difference is, while the cycling example was chosen to be quite _finely balanced_, in software development we should be looking for actions to take where the upside _considerably_ defeats the downside.  That is, improving the [balance of risk](Glossary.md#balance-of-risk) _as much as possible_.   
 
-We don't want to just do work that merely shifts us from having one big risk to another, we want to do work that swaps out a large risk for maybe a couple of tiny ones.   
+![Good and Not-So-Good Actions](images/numbers/good-not-so-good-actions.png)
+
+This is shown in the above chart:  although both actions have a similar downside (maybe they take a similar time to complete, and this what is lost if the action doesn't work out), the action on the left has _significantly_ greater upside.  We don't want to just do work that merely shifts us from having one big risk to another, we want to do work that swaps out a large risk for maybe a couple of tiny ones.   
 
 Let's go back to our original cases:
 
@@ -137,11 +140,14 @@ As we saw above,  Berkshire Hathaway is a riskier investment than Ford: the retu
 
 ## Impact
 
-Ok, how does this change how we work in the development team?  Hopefully, we're moving away from the idea of merely delivering value.  If we were just delivering value, we might not:
+So how does this affect how we work in the development team?  Clearly we're not merely delivering value.  If we were just delivering value, we might not:
 
-- **Build Unit Tests**.  After all, these add nothing to the customer experience.  They merely provide insurance against the risk of us breaking things in production.
-- **Keep Backups**.  Backups minimize the downside of storage failure.  Sure, when it happens there is still a negative but it's not as deep.  
-- **Add Log Statements**.  Again, they're insurance for when things go wrong and you need to work out why.
-- **Worry about [ACID](https://en.wikipedia.org/wiki/ACID_(computer_science)) transactions**.  They slow things down, but they increase [reliability](Reliability-Risk.md).
+- **Build Unit Tests**.  After all, these add nothing to the customer experience. 
+- **Keep Backups**.  Backups minimise the downside of storage failure.  
+- **Add log statements**.  When things go wrong, these help you to work out why.
+- **Worry about [ACID](https://en.wikipedia.org/wiki/ACID_(computer_science)) transactions.**  They slow things down, but they increase [reliability](Reliability-Risk.md).
+- **Work to minimise dependencies**.  Each dependency carries a risk that it might fail, causing problems in your software.
 
-But actually it goes much further than this.  In [Estimates](Estimates.md) I apply this idea to software estimating, and in **Coding and Testing (tbd)**, I am going to show how knowledge of the [balance of risk](Glossary.md#balance-of-risk) concept can inform the way we go about our day-to-day work as developers...
+All of these actions are about _insurance_, which is about limiting downside-risk.   None of them are of value _per se_ to the client.
+
+But actually it goes much further than this.  In [Estimates](Estimates.md) I apply this idea to software estimating, and the next article, "Coding and Testing", I am going to show how knowledge of the [balance of risk](Glossary.md#balance-of-risk) concept can inform the way we go about our day-to-day work as developers...
