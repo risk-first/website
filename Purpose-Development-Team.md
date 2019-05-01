@@ -17,21 +17,21 @@ A manager I used to work with, Kevin, used to say that the purpose of the Develo
 
 ![Sustainably vs Quickly](images/numbers/sustainably-quickly.png)
 
-- **Second, my conception of value is that it is something you can sell.** Producing a product that customers value (at say £100-per-year) means that we can sell it for somewhere less than that (say £80-per-year), and the development cost must come in at somewhere less than (say £50-per-year) that to allow the company to make a profit.  But again, _value_ didn't seem like the whole story either.  Aren't there things to worry about _besides_ value?
+- **Second, my conception of value is that it is something you can make a sale on.** Producing a product that customers value (at say £100-per-year) means that we can sell it for somewhere less than that (say £80-per-year). Therefore the development cost must come in at somewhere less than (say £50-per-year) that to allow the company to make a profit.  But again, _value_ didn't seem like the whole story either.  Aren't there things to worry about _besides_ value?
 
 ## Case 2: Scrum
 
 On a project not so long ago, we chose to use [Scrum](https://en.wikipedia.org/wiki/Scrum), which advocates development being broken into "sprints" of maybe a few weeks long, commencing with planning and ending in a release. This worked out pretty well for a while, until one day there was a major outage in a critical piece of our infrastructure.  
 
-We could have washed our hands of it, because there was a specific team for managing the infrastructure, but it seemed much more sensible that we abandon the sprint we were on and roll up our sleeves to help.   After all, our product was dead-in-the-water without the infrastructure, and this was impacting our users.
+We could have washed our hands of it, because there was a specific team for managing the infrastructure but it seemed much more sensible that we abandon the sprint we were on and roll up our sleeves to help.   After all, our product was dead-in-the-water without the infrastructure and this was impacting our users.
 
-Had we stuck to Scrum religiously (following the _rules_, but not in an agile way), we might have waited until the end of the sprint, and then considered whether to help the infrastructure team during the planning phase of the next sprint.   But of course, that would be a crazy interpretation of what it means to be agile.
+Had we stuck to Scrum religiously (following the _rules_, but not in an agile way), we might have waited until the end of the sprint and then considered whether to help the infrastructure team during the planning phase of the next sprint.   But of course that would be a crazy interpretation of what it means to be agile.
 
-Scrum's rule about working-to-a-sprint is well-meaning, but not always applicable.  How do we decide when to follow it, and when not to?
+Scrum's rule about working-to-a-sprint is well-meaning but not always applicable.  How do we decide when to follow it and when not to?
 
 ## Case 3: Technical Debt
 
-Sometimes, I am faced with a conflict over whether to pay off [technical debt](Complexity-Risk.md#technical-debt) or build new functionality.  Sometimes the conflict will be with people in my team, or with stake-holders, but sometimes it is an internal, personal conflict.  
+Sometimes, I am faced with a conflict over whether to pay off [technical debt](Complexity-Risk.md#technical-debt) or build new functionality.  Sometimes the conflict will be with people in my team, or with stake-holders but sometimes it is an internal, personal conflict.  
 
 ![Technical Debt vs Building Features](images/generated/practices/purpose/technical-debt.png)
 
@@ -122,12 +122,12 @@ Let's go back to our original cases:
 
  - If I decide to **suspend the current sprint** to fix an outage, then that’s because I’ve decided that the risk of lost business, or the damage to reputation is much greater than the risk of customers walking because we didn’t complete the planned features.  
 - When the Agile Manifesto stresses **Individuals and Interactions over Processes and Tools**, it’s because it's view is that focusing on processes and tools leads to much greater risk.  Specifically, agile is about _responding to change_ and trying to avoid [building the wrong product](Feature-Risk.md#feature-fit-risk).  The experience that led them to write this statement was that following strict formal processes led to _massively_ worse outcomes than avoiding them.
-- When we argue for **fixing technical debt against shipping a new feature**, what we are really doing is expressing differences in our models of the [balance of risk](Glossary.md#balance-of-risk) from taking these actions.   My boss and I might both be trying to minimise the risk of customers defecting to another product, but he might believe this is best achieved by [adding new features](Feature-Risk.md) in the short term, whilst I might believe that [clearing technical debt](Complexity-Risk.md#technical-debt) allows us to get features delivered faster in the long term.
+- When we argue for **fixing technical debt against shipping a new feature**, what we are really doing is expressing differences in our models of the [balance of risk](Glossary.md#balance-of-risk) from taking these actions.   My boss and I might both be trying to minimise the risk of customers defecting to another product but he might believe this is best achieved by [adding new features](Feature-Risk.md) in the short term, whilst I might believe that [clearing technical debt](Complexity-Risk.md#technical-debt) allows us to get features delivered faster in the long term.
 - In the example of **Sustainably vs Quickly**, it's clear that what we should be doing is trying to avoid altering the balance of risks in a way that sacrifices too much Sustainability or Speed.  To do this requires judgement in the form of an accurate [Internal Model](Glossary.md#internal-model) of the [balance of risks](Glossary.md#balance-of-risk).
 
 ### Other Teams
 
-In a way, this is not just about development teams.  Any time a person is added to an organisation, the hope is that it will improve the [balance of risk](Glossary.md#balance-of-risk) for that organisation.  The development team are experts in improving the balance of [technical risks](Risk-Landscape.md), but other teams have other specialities:
+In a way, this is not just about development teams.  Any time a person is added to an organisation, the hope is that it will improve the [balance of risk](Glossary.md#balance-of-risk) for that organisation.  The development team are experts in improving the balance of [technical risks](Risk-Landscape.md) but other teams have other specialities:
  
  - The Finance team are there to ensure that you don't [run out of money](Scarcity-Risks.md#funding-risk) and that the bills get paid (avoiding [Legal Risks](Operational-Risk.md)).
  - The Human Resources team are there to make sure staff are hired, managed and leave properly.  Doing this avoids [inefficiency](Scarcity-Risk.md#Schedule-Risk), [Reputation Damage](Communication-Risk#trust--belief-risk), [Morale Issues](Agency-Risk.md#morale) and [Legal Risks](Operational-Risk.md).
@@ -142,7 +142,7 @@ As we saw above with Berkshire Hathaway and Ford, the riskier the investment, th
 Ok, how does this change how we work in the development team?  Hopefully, we're moving away from the idea of merely delivering value.  If we were just delivering value, we might not:
 
 - **Build Unit Tests**.  After all, these add nothing to the customer experience.  They merely provide insurance against the risk of us breaking things in production.
-- **Keep Backups**.  Backups minimize the downside of storage failure.  Sure, when it happens there is still a negative, but it's not as deep.  
+- **Keep Backups**.  Backups minimize the downside of storage failure.  Sure, when it happens there is still a negative but it's not as deep.  
 - **Add Log Statements**.  Again, they're insurance for when things go wrong and you need to work out why.
 - **Worry about [ACID](https://en.wikipedia.org/wiki/ACID_(computer_science)) transactions**.  They slow things down, but they increase [reliability](Reliability-Risk.md).
 
