@@ -11,9 +11,9 @@ Let's jump straight in.
 
 ## Case 1: Lean
 
-A manager I used to work with, Kevin, used to say that the Purpose of the Development Team was **"Sustainably Deliver Value Quickly."**  Which apparently he got from a Lean handbook (maybe something like [this one](https://leankit.com/learn/lean/lean-business-development/)). It always seemed to me to be _approximately right_, except it bugged me and eventually, I was able to put my finger on _why_.
+A manager I used to work with, Kevin, used to say that the Purpose of the Development Team was **"Sustainably Deliver Value Quickly."**  Which apparently he got from a Lean handbook (maybe something like [this one](https://leankit.com/learn/lean/lean-business-development/)). It always seemed to me to be _approximately right_, except it bugged me.  Eventually, I was able to put my finger on _why_:
 
-- **First, "sustainably" and "quickly" are somewhat at odds with each other.** Much like cars aren’t optimised for both "energy efficiency" and "speed", it’s a trade-off between the two.  Runners are either fast over short distances or long distances - it’s not both.  My laptop makes trade-offs between battery life and weight: either extreme is bad, somewhere in the middle is useful.  So "sustainably" and "quickly" implies that there is a balance to be achieved - what happens when you are forced to choose between the two? How do you choose?  
+- **First, "sustainably" and "quickly" are somewhat at odds with each other.** Cars aren’t optimised for both "energy efficiency" and "speed" and runners are either fast over short distances or long distances.  My laptop makes trade-offs between battery life and weight: either extreme is bad, somewhere in the middle is useful.  So "sustainably" and "quickly" implies that there is a balance to be achieved - what happens when you are forced to choose between the two? How do you choose?  
 
 ![Sustainably vs Quickly](images/numbers/sustainably-quickly.png)
 
@@ -21,7 +21,7 @@ A manager I used to work with, Kevin, used to say that the Purpose of the Develo
 
 ## Case 2: Scrum
 
-On a project not so long ago we chose to use [Scrum](https://en.wikipedia.org/wiki/Scrum, which advocates development being broken into "sprints" of maybe a few weeks long, commencing with planning and ending in a release. This worked out pretty well for a while, until one day there was a major outage in a critical piece of our infrastructure.  
+On a project not so long ago we chose to use [Scrum](https://en.wikipedia.org/wiki/Scrum), which advocates development being broken into "sprints" of maybe a few weeks long, commencing with planning and ending in a release. This worked out pretty well for a while, until one day there was a major outage in a critical piece of our infrastructure.  
 
 We could have washed our hands of it because there was a specific team for managing the infrastructure, but it seemed much more sensible that we abandon the sprint we were on and roll up our sleeves to help.   After all, our product was dead-in-the-water without the infrastructure and this was impacting our users.
 
@@ -61,7 +61,7 @@ But could there be a “general theory” somehow that avoids these contradictio
 
 > "The purpose of the development team is to improve the [balance of risk](Glossary.md#balance-of-risk) for achieving business goals as much as possible."
 
-Now clearly, the troublesome clause in this statement is “[balance of risk](Glossary.md#balance-of-risk)”.  So, before we apply this  to the cases above, let’s explain this concept in some detail by exploring three toy examples: the roulette table, buying stocks, and cycling to work.  Then we'll see how this impacts the work we do in software development more generally.
+Now clearly, the troublesome clause in this statement is “[balance of risk](Glossary.md#balance-of-risk)”.  So, before we apply this  to the cases above, let’s explain this concept in some detail by exploring three toy examples: the roulette table, buying stocks and cycling to work.  Then we'll see how this impacts the work we do in software development more generally.
 
 
 ## Example 1: The Roulette Table
@@ -86,7 +86,7 @@ The chart above (from [William T Ziemba](http://www.williamtziemba.com)) shows t
 
 Second, while you know ahead-of-time the chances of winning at roulette, you can only guess at the [balance of risk](Glossary.md#balance-of-risk) for owning Berkshire Hathaway stock for the next quarter, even if you are armed with the above chart.  Generally, owning shares has a net-positive [balance of risk](Glossary.md#balance-of-risk):  on average you're more likely to make money than lose money, but it's not guaranteed - past performance is no indication of future performance. 
 
-Another question relating to this graph might be:  which firm is generating the most value?  Certainly, the area under the Berkshire Hathaway curve is more, but there is a bigger downside too.  Is it possible that Berkshire Hathaway generates more value while taking on more risk?
+Another question relating to this graph might be:  which firm is generating the most value?  Certainly, the area under the Berkshire Hathaway curve is larger but there is a bigger downside too.  Is it possible that Berkshire Hathaway generates more value while taking on more risk?
 
 When we consider buying a stock, we are going to build a model of the [balance of risks](Glossary.md#balance-of-risk) (perhaps on a spreadsheet, or in our heads).  This will be dependent on our own preferences and experience (our [Internal Model](Glossary.md#internal-model) if you will).
 
@@ -112,7 +112,7 @@ So, we've gone from the Roulette Table example where the whole risk profile is c
 
 Just as a decision over how fast to cycle to work changes the [balance of risk](Glossary.md#balance-of-risk), the actions and decisions we make in software development do too.  
 
-The difference is, while the cycling example was chosen to be quite _finely balanced_, in software development we should be looking for actions to take where the upside _considerably_ defeats the downside.  That is, improving the [balance of risk](Glossary.md#balance-of-risk) _as much as possible_.   
+The difference is, while the cycling example was chosen to be quite _finely balanced_, in software development we should be looking for actions to take which improve the upside _considerably_ more than they worsen the downside.  That is, improving the [balance of risk](Glossary.md#balance-of-risk) _as much as possible_.   
 
 ![Good and Not-So-Good Actions](images/numbers/good-not-so-good-actions.png)
 
@@ -133,7 +133,7 @@ In a way, this is not just about development teams.  Any time a person is added 
  
  - The Finance team are there to avoid the risk of [running out of money](Scarcity-Risks.md#funding-risk) and ensuring that the bills get paid (avoiding [Legal Risks](Operational-Risk.md)).
  - The Human Resources team are there to make sure staff are hired, managed and leave properly.  Doing this avoids [inefficiency](Scarcity-Risk.md#Schedule-Risk), [Reputation Damage](Communication-Risk#trust--belief-risk), [Morale Issues](Agency-Risk.md#morale) and [Legal Risks](Operational-Risk.md).
- - The best doctors are the ones with the best [Internal Models](Glossary.md#internal-model). They can best diagnose the illnesses and figure out treatments that improve the patient's [balance of risk](Glossary.md#balance-of-risk).  Medical Students are all taught to 'first, do no harm':
+ - The best doctors have accurate [Internal Models](Glossary.md#internal-model). They can best diagnose the illnesses and figure out treatments that improve the patient's [balance of risk](Glossary.md#balance-of-risk).  Medical Students are all taught to 'first, do no harm':
 
 > "given an existing problem, it may be better not to do something, or even to do nothing, than to risk causing more harm than good." - [Primum non nocere, _Wikipedia_](https://en.wikipedia.org/wiki/Primum_non_nocere).
 
@@ -143,7 +143,7 @@ As we saw above,  Berkshire Hathaway is a riskier investment than Ford: the retu
 
 So how does this affect how we work in the development team?  Clearly we're not merely delivering value.  If we were just delivering value, we might not:
 
-- **Build Unit Tests**.  After all, these add nothing to the customer experience. 
+- **Build Unit Tests**.  After all, these add nothing directly to the customer experience. 
 - **Keep Backups**.  Backups minimise the downside of storage failure.  
 - **Add log statements**.  When things go wrong, these help you to work out why.
 - **Worry about [ACID](https://en.wikipedia.org/wiki/ACID_(computer_science)) transactions.**  They slow things down, but they increase [reliability](Reliability-Risk.md).
@@ -151,4 +151,4 @@ So how does this affect how we work in the development team?  Clearly we're not 
 
 All of these actions are about _insurance_, which is about limiting downside-risk.   None of them are of value _per se_ to the client.
 
-But actually it goes much further than this.  In [Estimates](Estimates.md) I apply this idea to software estimating, and the next article, "Coding and Testing", I am going to show how knowledge of the [balance of risk](Glossary.md#balance-of-risk) concept can inform the way we go about our day-to-day work as developers...
+This is just a few simple examples and actually it goes much further than this.  In [Estimates](Estimates.md) I apply this idea to software estimating, and the next article, "Coding and Testing", I am going to show how knowledge of the [balance of risk](Glossary.md#balance-of-risk) concept can inform the way we go about our day-to-day work as developers...
