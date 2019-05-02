@@ -131,8 +131,8 @@ Let's go back to our original cases:
 
 In a way, this is not just about development teams.  Any time a person is added to an organisation, the hope is that it will improve the [balance of risk](Glossary.md#balance-of-risk) for that organisation.  The development team are experts in improving the balance of [technical risks](Risk-Landscape.md) but other teams have other specialities:
  
- - The Finance team are there to avoid the risk of [running out of money](Scarcity-Risks.md#funding-risk) and ensuring that the bills get paid (avoiding [Legal Risks](Operational-Risk.md)).
- - The Human Resources team are there to make sure staff are hired, managed and leave properly.  Doing this avoids [inefficiency](Scarcity-Risk.md#Schedule-Risk), [Reputation Damage](Communication-Risk#trust--belief-risk), [Morale Issues](Agency-Risk.md#morale) and [Legal Risks](Operational-Risk.md).
+ - The Finance team are there to avoid the risk of [running out of money](Scarcity-Risk.md#funding-risk) and ensuring that the bills get paid (avoiding [Legal Risks](Operational-Risk.md)).
+ - The Human Resources team are there to make sure staff are hired, managed and leave properly.  Doing this avoids [inefficiency](Scarcity-Risk.md#Schedule-Risk), [Reputation Damage](Communication-Risk.md#trust--belief-risk), [Morale Issues](Agency-Risk.md#morale-risk) and [Legal Risks](Operational-Risk.md).
  - The best doctors have accurate [Internal Models](Glossary.md#internal-model). They can best diagnose the illnesses and figure out treatments that improve the patient's [balance of risk](Glossary.md#balance-of-risk).  Medical Students are all taught to 'first, do no harm':
 
 > "given an existing problem, it may be better not to do something, or even to do nothing, than to risk causing more harm than good." - [Primum non nocere, _Wikipedia_](https://en.wikipedia.org/wiki/Primum_non_nocere).
@@ -141,12 +141,14 @@ As we saw above,  Berkshire Hathaway is a riskier investment than Ford: the retu
 
 ## Impact
 
-So how does this affect how we work in the development team?  Clearly we're not merely delivering value.  If we were just delivering value, we might not:
+So how does this affect how we work in the development team?  Clearly we're not merely delivering value.  Value/Return is a scalar (or single) quantity, and we should be thinking about a vector (or a profile) of possible returns.
+
+If we were just delivering value, we might not:
 
 - **Build Unit Tests**.  After all, these add nothing directly to the customer experience. 
 - **Keep Backups**.  Backups minimise the downside of storage failure.  
 - **Add log statements**.  When things go wrong, these help you to work out why.
-- **Worry about [ACID](https://en.wikipedia.org/wiki/ACID_(computer_science)) transactions.**  They slow things down, but they increase [reliability](Reliability-Risk.md).
+- **Worry about [ACID](https://en.wikipedia.org/wiki/ACID_(computer_science)) transactions.**  They slow things down, but they increase [reliability](Dependency-Risk.md#Reliability-Risk).
 - **Work to minimise dependencies**.  Each dependency carries a risk that it might fail, causing problems in your software.
 
 All of these actions are about _insurance_, which is about limiting downside-risk.   None of them are of value _per se_ to the client.
