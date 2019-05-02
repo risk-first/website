@@ -141,7 +141,7 @@ As we saw above,  Berkshire Hathaway is a riskier investment than Ford: the retu
 
 ## Impact
 
-So how does this affect how we work in the development team?  Clearly we're not merely delivering value.  Value/Return is a scalar (or single) quantity, and we should be thinking about a vector (or a profile) of possible returns.
+So how does this affect how we work in the development team?  Clearly we're not merely delivering value.  _Value_ is a scalar (or single) quantity but we should be thinking about a vector (or a profile) of possible values.
 
 If we were just delivering value, we might not:
 
