@@ -153,4 +153,8 @@ If we were just delivering value, we might not:
 
 All of these actions are about _insurance_, which is about limiting downside-risk.   None of them are of value _per se_ to the client.
 
+## Bottom Line
+
+If you are faced with a choice between extremes...
+
 This is just a few simple examples and actually it goes much further than this.  In [Estimates](Estimates.md) I apply this idea to software estimating, and the next article, "Coding and Testing", I am going to show how knowledge of the [balance of risk](Glossary.md#balance-of-risk) concept can inform the way we go about our day-to-day work as developers...
