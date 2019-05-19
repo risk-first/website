@@ -108,7 +108,7 @@ This was just a few examples, but this idea is _generally_ applicable.  Look at 
  - What is the Pay Off?
  - Is the bet worth it?  Sometimes, the stakes and the payoff are _a given_, but the bet still isn't worth the time.
  
-How can you maximize the stakes while minimizing pay-off?  
+How can you maximize the stakes while minimizing pay-off?  How long will it take for the pay-off to be worthwhile?
 
 Are you making a long bet, or lots of small short bets?  (Split work up, then do the riskiest part first)
 
