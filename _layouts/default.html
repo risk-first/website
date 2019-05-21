@@ -51,6 +51,15 @@
   		to be invited to join the 
   		<a href="https://github.com/orgs/risk-first/teams/risk-first-team">Risk First Organisation</a>.
         <br>
+        <h3>Blog</h3>
+  		<hr>
+        <ul>
+		  {% for post in site.posts %}
+		    <li>
+		      <a href="{{ post.url }}">{{ post.title }}</a>
+		    </li>
+		  {% endfor %}
+		</ul>
         <br>
         <h3>Publications</h3>
   		<hr>

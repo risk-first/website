@@ -1,3 +1,10 @@
+---
+title: Twitter Cards
+description: How to create Twitter/LinkedIn cards for Posts.
+url: https://riskfirst.org/A-Conversation
+image: /images/generated/titles/2019-03-22-Twitter-Cards.png
+---
+
 # Twitter Cards
 
 I'm not the best at Social Media... like a lot of people I'm giving Facebook the swerve completely these days.  However, I set up a Twitter account [@risk_first](https://twitter.com/risk_first) to post articles, and I've also been posting on LinkedIn and Hacker News.  
