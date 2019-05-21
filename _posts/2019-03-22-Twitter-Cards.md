@@ -5,8 +5,6 @@ url: https://riskfirst.org/2019/03/22/Twitter-Cards
 image: /images/generated/titles/2019-03-22-Twitter-Cards.png
 ---
 
-# Twitter Cards
-
 I'm not the best at Social Media... like a lot of people I'm giving Facebook the swerve completely these days.  However, I set up a Twitter account [@risk_first](https://twitter.com/risk_first) to post articles, and I've also been posting on LinkedIn and Hacker News.  
 
 Turns out, there's quite a lot you can do to improve the presentation of posts on Twitter.  Now, when you post a Risk First article on there, it'll use the Twitter Card to display a summary of the post, which looks like this:
