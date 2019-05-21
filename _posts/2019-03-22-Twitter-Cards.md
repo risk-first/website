@@ -1,7 +1,7 @@
 ---
 title: Twitter Cards
 description: How to create Twitter/LinkedIn cards for Posts.
-url: https://riskfirst.org/A-Conversation
+url: https://riskfirst.org/2019/03/22/Twitter-Cards
 image: /images/generated/titles/2019-03-22-Twitter-Cards.png
 ---
 
