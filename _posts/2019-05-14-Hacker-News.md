@@ -5,9 +5,6 @@ url: https://riskfirst.org/2019/05/14/Hacker-News
 image: /images/generated/titles/2019-05-14-Hacker-News.png
 ---
 
-
-# A New Way To Consume Hacker News?
-
 Like many developers, I like to read [Hacker News](https://news.ycombinator.com), which aggregates user-submitted news stories with a technology bias. 
 
 Every now and again, I'll post a [Risk-First](https://riskfirst.org) article on there.  Sometimes, they gain traction and make it to the front page, but mostly they don't.  This can depend on a lot of things such as time-of-posting, subject or title (this article builds really cool [Neural Network for Rating Your Hacker News Title](https://intoli.com/blog/hacker-news-title-tool/).  Short of putting "has died" somewhere in the title, there's no sure-fire route to success).
