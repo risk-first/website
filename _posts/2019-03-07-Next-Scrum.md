@@ -1,7 +1,7 @@
 ---
 title: Next: Scrum?
 description: Where to head next on developing Risk-First
-url: https://riskfirst.org/A-Conversation
+url: https://riskfirst.org/2019/03/07/Next-Scrum
 image: /images/generated/titles/2019-03-07-Next-Scrum.png
 ---
 

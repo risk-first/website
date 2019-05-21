@@ -1,7 +1,7 @@
 ---
 title: Consuming Hacker News
 description: A New Way to Consume Hacker News?
-url: https://riskfirst.org/A-Conversation
+url: https://riskfirst.org/2019/05/14/Hacker-News
 image: /images/generated/titles/2019-05-14-Hacker-News.png
 ---
 
