@@ -1,3 +1,11 @@
+---
+title: Consuming Hacker News
+description: A New Way to Consume Hacker News?
+url: https://riskfirst.org/A-Conversation
+image: /images/generated/titles/2019-05-14-Hacker-News.png
+---
+
+
 # A New Way To Consume Hacker News?
 
 Like many developers, I like to read [Hacker News](https://news.ycombinator.com), which aggregates user-submitted news stories with a technology bias. 

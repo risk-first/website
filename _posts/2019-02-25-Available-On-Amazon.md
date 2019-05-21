@@ -1,3 +1,10 @@
+---
+title: Available On Amazon
+description: Risk-First Volume 1 Available to Buy
+url: https://riskfirst.org/A-Conversation
+image: /images/generated/titles/2019-02-25-Available-On-Amazon.png
+---
+
 # Available On Amazon
 
 You can buy Risk First Software Development Volume 1: The Menagerie on Amazon now:
