@@ -55,7 +55,7 @@
         <h3>Blog</h3>
   		<hr>
 		{% for post in site.posts %}
-	      <a href="{{ post.url }}">{{ post.title }}</a>
+	      <a href="{{ post.url }}">{{ post.title }}</a> <small>{{ page.date | date: "%-d %B %Y" }}</small>
 	      <br>
 	 	{% endfor %}
         <br>
