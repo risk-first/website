@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-113" name="Goal In Mind">
+
+    <context id="d" style="kite9-sizing: maximize; kite9-layout: vertical; ">
+      <mitigated>
+        <risk class="market-risk" />
+      </mitigated>
+    
+      <description>Building a new product might help discover a new, profitable market...</description>
+   
+      <label id="id_16">
+        <text>Payoff</text>
+      </label>
+    </context>
+    
+    <action style="kite9-horizontal-align: left;">MVP</action>
+
+    <context id="c" bordered="true"  style="kite9-sizing: maximize; kite9-layout: vertical; ">
+      <risk class="schedule" />
+      <hidden>
+        <risk class="complexity" />
+      </hidden>
+      <description>... but may just end up in the bin.</description>
+    
+      <label id="id_17">
+        <text>Stake</text>
+      </label>
+    </context>
+
+  </diagram>
+</svg:svg>
