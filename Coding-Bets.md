@@ -12,14 +12,15 @@ _Making our codebase easier to reason about is worth the outlay of time_
 
 Technical Debt is excess complexity in your code.  The bet here is that you can trade some time on the schedule to move to a place of lower complexity risk.  It looks like this:
 
-Stake:  Schedule Risk  
-PayOff: Reduced Complexity Risk (making us more agile in the future)
+![Stake and Reward for Fixing Technical Debt](images/generated/practices/coding/refactoring.png)
 
-To reduce technical debt there usually has to be some simplifying realisation:
+To reduce technical debt there usually has to be some _simplifying realisation_:
 
-"We don't need this extra parameter to this function"
-"Class A and Class B are actually different implementations of the same functionality"
-"We can encapsulate more behaviour by introducing the command pattern".
+> "We don't need this extra parameter to this function"
+
+> "Class A and Class B are actually different implementations of the same functionality"
+
+> "We can encapsulate more behaviour by introducing the command pattern".
 
 When it goes right, the codebase is easier to think about.  When it goes wrong, either the complexity risk improvement is less than you hoped, or it takes longer to achieve, or the complexity returns in some other way, or it just doesn't work at all, and you're back to where you started from with the loss of time.
 
