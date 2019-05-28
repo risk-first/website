@@ -2,13 +2,13 @@
 
 # Coding Bets
 
-When you start an assignment or a piece of development, how sure are you that it will pay off?  Often when we do some work on a software project, we're asked "How Long Will It Take?"  This is essentially trying to establish what the _Stakes of the bet are_.   However, it's also worth considering _What the [Pay Off]() will be_.    
+Any time you accept a new ticket, or start coding a new feature, or hunting for a bug on a software project, you're actually making a bet.  
 
-For example:
+Let's look at some examples...
 
 ## Refactoring: The Technical Debt Bet
 
-_Making our codebase easier to reason about is worth the outlay of time_
+##### "Making our codebase easier to reason about is worth the outlay of time."
 
 Technical Debt is excess complexity in your code.  The bet here is that you can trade some time on the schedule to move to a place of lower complexity risk.  It looks like this:
 
@@ -28,7 +28,7 @@ When it goes right, the codebase is easier to think about.  When it goes wrong, 
 
 ## Spike Solutions: The New Technology Bet
 
-_A New Technology is a better fit for our problem than the one we're currently using_.
+##### "A New technology is a better fit for our problem than the one we're currently using."
 
 Quite often, someone will suggest using a new technology to either replace a poorly-performing existing technology, homegrown solution or gap in the functionality.  But will the new technology fit?  The answer is to try to "prove" the bet as quickly as possible using a "Spike Solution".
 
@@ -57,7 +57,7 @@ Reduce the stakes by:
 
 ## New Feature Bets
 
-_This new feature may be exactly what our users are looking for_
+##### "This new feature may be exactly what our users are looking for."
 
 Sometimes it's impossible to know exactly how the user base will feel about a new feature without building it.  So, build the feature, and test it with a trial population.
 
@@ -85,7 +85,7 @@ Reduce the stakes by:
 
 ## MVP: The New Market Bet
 
-_Building a Minimum Viable Product proves you can, but also proves the market_
+##### "Building a Minimum Viable Product is a bet on the market"
 
 The idea of a Minimum Viable Product is to make a bet that a market exists for a certain product, _and that there's money to be made from it_. 
 
