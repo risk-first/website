@@ -10,7 +10,7 @@ Let's look at some examples...
 
 ##### "Making our codebase easier to reason about is worth the outlay of time."
 
-Technical Debt is excess complexity in your code.  The bet here is that you can trade some time on the schedule to move to a place of lower complexity risk.  It looks like this:
+Technical Debt is excess complexity in your code.  And project agility is some function of codebase complexity and embedded talent.  The bet here is that you can trade some time on the schedule to move to a place of lower complexity risk.  It looks like this:
 
 ![Stake and Reward for Fixing Technical Debt](images/generated/practices/coding/refactoring.png)
 
@@ -22,15 +22,21 @@ To reduce technical debt there usually has to be some _simplifying realisation_:
 
 > "We can encapsulate more behaviour by introducing the command pattern".
 
-When it goes right, the codebase is easier to think about.  When it goes wrong, either the complexity risk improvement is less than you hoped, or it takes longer to achieve, or the complexity returns in some other way, or it just doesn't work at all, and you're back to where you started from with the loss of time.
-
-"Project speed is a function of codebase complexity and available talent". 
+**When you win:**
+ - The codebase is easier to think about.  
+ 
+**When you lose:** 
+- The complexity risk improvement is less than you hoped,
+- Or, it takes longer than expected, 
+- Or it just doesn't work at all so you back it out and you've lost a week.
 
 ## Spike Solutions: The New Technology Bet
 
 ##### "A New technology is a better fit for our problem than the one we're currently using."
 
-Quite often, someone will suggest using a new technology to either replace a poorly-performing existing technology, homegrown solution or gap in the functionality.  But will the new technology fit?  The answer is to try to "prove" the bet as quickly as possible using a "Spike Solution".
+Quite often, someone will suggest using a new technology to either replace a poorly-performing existing technology, home-grown solution or gap in the functionality.  
+
+But will the new technology fit?  The answer is to try to "prove" the bet as quickly as possible using a time-boxed "Spike Solution".
 
 ![Stake and Reward for A Spike Solution](images/generated/practices/coding/spike.png)
 
@@ -40,17 +46,15 @@ Quite often, someone will suggest using a new technology to either replace a poo
 
 > "Let's use JSON here instead of XML".
 
-This can go right in the following ways:
-
+**When you win:**
  - The spike solution demonstrates that the technology will fit for all of the use cases needed.
  - The spike solution demonstrates that the technology is definitely not a good fit, for clear reasons that weren't apparent before starting. 
  
-But it can go wrong in the following ways:
-
+**When you lose:** 
  - The developer can't get the spike solution working in the given time.  Does this prove that the technology is no good, or too complex, or that the developer needed more time, or that they're not skilled enough?
  - The developer gets the spike solution working for a specific use case, which is taken as success.  However, it later proves problematic in production, or in fitting to other use-cases.
  
-Reduce the stakes by:
+**Reduce the stakes by:**
 
  - Tackling the hardest use-case first
  - Skipping writing tests: if it doesn't work out, they're waste.
@@ -69,17 +73,18 @@ Sometimes it's impossible to know exactly how the user base will feel about a ne
 
 > "We need a global search because people spend too much time menu-diving"
 
-Outcomes:
-
- - If done correctly, the users welcome the change with open arms.  The bigger the bet, the more delight the users may experience.  This might create new possibilities for marketing.
+**When you win:**
+ - The users welcome the change with open arms.  The bigger the bet, the more delight the users may experience.  
+ - New markets open up.
  - Sometimes, the bet is obvious, low-hanging fruit, and the users are pleased but ultimately it was a necessary, expected change.
- - Sometimes, the feature doesn't make much impact.  It's used often enough to not be removed, but adds Complexity Risk to the codebase.
- - Sometimes, you build the feature _almost right_, and no-one notices that it could've been a lot better.
- - Sometimes, the feature is a diversion from the main purpose of the project, and a waste of time.  
-
-Reduce the stakes by:
  
- - Asking the users first.
+**When you lose:**  
+ - The feature doesn't make much impact.  It's used often enough to not be removed, but adds Complexity Risk to the codebase.
+ - You might build the feature _almost right_, and no-one notices that it could've been a lot better.
+ - The feature is a diversion from the main purpose of the project, and a waste of time.  
+
+**Reduce the stakes by:** 
+ - Thoroughly triaging.
  - Building mock-ups.
  - Listening to feedback
 
@@ -97,8 +102,15 @@ The idea of a Minimum Viable Product is to make a bet that a market exists for a
 
 > "Bots are the future: let's write one for the insurance business"
 
-Reduce the stakes by:
+**When you win:**
+ - You start a new business
+ 
+**When you lose:**  
+ - Loss of credibility.
+ - Funding dries up.
+ 
 
+**Reduce the stakes by:** 
 - Failing fast.  Implement the riskiest functionality first.
 - Doing things that don't scale.  You can prove the market by doing a lot of processes manually.
 - Relying on Dependencies:  for everything that isn't completely unique.
