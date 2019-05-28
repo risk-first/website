@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-113" name="Goal In Mind">
+
+    <context id="d" style="kite9-sizing: maximize; kite9-layout: vertical; ">
+      <mitigated>
+        <risk class="complexity" />
+      </mitigated>
+      <mitigated>
+        <risk class="feature-fit" />
+      </mitigated>
+    
+      <description>Introducing a new technology can 
+      simplify your software product or provide it with
+      new functionality...</description>
+   
+      <label id="id_16">
+        <text>Payoff</text>
+      </label>
+    </context>
+    
+    <action style="kite9-horizontal-align: left;">Refactoring</action>
+
+    <context id="c" bordered="true"  style="kite9-sizing: maximize; kite9-layout: vertical; ">
+      <risk class="schedule" />
+      <hidden>
+        <risk class="complexity" />
+      </hidden>
+      <description>... but costs time and may 
+      actually end up making your software 
+      more complex than it needs to be.</description>
+    
+      <label id="id_17">
+        <text>Stake</text>
+      </label>
+    </context>
+
+  </diagram>
+</svg:svg>

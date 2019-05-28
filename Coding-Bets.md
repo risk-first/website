@@ -32,8 +32,8 @@ _A New Technology is a better fit for our problem than the one we're currently u
 
 Quite often, someone will suggest using a new technology to either replace a poorly-performing existing technology, homegrown solution or gap in the functionality.  But will the new technology fit?  The answer is to try to "prove" the bet as quickly as possible using a "Spike Solution".
 
-Stake:  Schedule Risk, Complexity Risk
-PayOff: Reduced Feature Fit Risk
+![Stake and Reward for A Spike Solution](images/generated/practices/coding/spike.png)
+
 
 "Let's replace all our uses of java.util.Date with DateTime, as it's less buggy".
 "Let's use ElasticSearch for searching instead of SQL Statements"
