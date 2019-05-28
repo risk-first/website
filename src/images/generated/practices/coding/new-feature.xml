@@ -7,27 +7,25 @@
 
     <context id="d" style="kite9-sizing: maximize; kite9-layout: vertical; ">
       <mitigated>
-        <risk class="complexity" />
-      </mitigated>
-      <mitigated>
         <risk class="feature-fit" />
       </mitigated>
     
-      <description>Introducing a new technology can simplify your software product or provide it with new functionality...</description>
+      <description>Adding new features to your software can make it fit the users' needs better...</description>
    
       <label id="id_16">
         <text>Payoff</text>
       </label>
     </context>
     
-    <action style="kite9-horizontal-align: left;">Spike Solution</action>
+    <action style="kite9-horizontal-align: left;">New Feature</action>
 
     <context id="c" bordered="true"  style="kite9-sizing: maximize; kite9-layout: vertical; ">
+      <group>
       <risk class="schedule" />
-      <hidden>
-        <risk class="complexity" />
-      </hidden>
-      <description>... but costs time and may actually end up making your software more complex than it needs to be.</description>
+      <risk class="complexity" />
+      <risk class="conceptual-integrity" />
+      </group>
+      <description>... but costs time, adds complexity, and may make the software harder to understand.</description>
     
       <label id="id_17">
         <text>Stake</text>

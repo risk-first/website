@@ -34,10 +34,11 @@ Quite often, someone will suggest using a new technology to either replace a poo
 
 ![Stake and Reward for A Spike Solution](images/generated/practices/coding/spike.png)
 
+> "Let's replace all our uses of java.util.Date with DateTime, as it's less buggy".
 
-"Let's replace all our uses of java.util.Date with DateTime, as it's less buggy".
-"Let's use ElasticSearch for searching instead of SQL Statements"
-"Let's use JSON here instead of XML".
+> "Let's use ElasticSearch for searching instead of SQL Statements"
+
+> "Let's use JSON here instead of XML".
 
 This can go right in the following ways:
 
@@ -54,15 +55,13 @@ Reduce the stakes by:
  - Tackling the hardest use-case first
  - Skipping writing tests: if it doesn't work out, they're waste.
 
- 
 ## New Feature Bets
 
 _This new feature may be exactly what our users are looking for_
 
 Sometimes it's impossible to know exactly how the user base will feel about a new feature without building it.  So, build the feature, and test it with a trial population.
 
-Stake: Schedule Risk, Complexity Risk, Conceptual Integrity Risk 
-PayOff: Feature Fit Risk
+![Stake and Reward for Adding New Features](images/generated/practices/coding/new-feature.png)
 
 "We need to provide an export-to-Excel function, as our competitors have one"
 "Users need to be able to customize the workflow, otherwise they'll go elsewhere"
