@@ -63,9 +63,11 @@ Sometimes it's impossible to know exactly how the user base will feel about a ne
 
 ![Stake and Reward for Adding New Features](images/generated/practices/coding/new-feature.png)
 
-"We need to provide an export-to-Excel function, as our competitors have one"
-"Users need to be able to customize the workflow, otherwise they'll go elsewhere"
-"We need a global search because people spend too much time menu-diving"
+> "We need to provide an export-to-Excel function, as our competitors have one"
+
+> "Users need to be able to customize the workflow, otherwise they'll go elsewhere"
+
+> "We need a global search because people spend too much time menu-diving"
 
 Outcomes:
 
@@ -87,12 +89,13 @@ _Building a Minimum Viable Product proves you can, but also proves the market_
 
 The idea of a Minimum Viable Product is to make a bet that a market exists for a certain product, _and that there's money to be made from it_. 
 
-Stake:  Funding Risk
-Payoff:  Market Risk
+![New Market Bet](images/generated/practices/coding/new-market.png)
 
 "People will use the search engine and we can monetize it with advertising".
-"People will buy pet food online"
-"Bots are the future: let's write one for the insurance business"
+
+> "People will buy pet food online"
+
+> "Bots are the future: let's write one for the insurance business"
 
 Reduce the stakes by:
 
