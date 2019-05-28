@@ -91,7 +91,7 @@ The idea of a Minimum Viable Product is to make a bet that a market exists for a
 
 ![New Market Bet](images/generated/practices/coding/new-market.png)
 
-"People will use the search engine and we can monetize it with advertising".
+> "People will use the search engine and we can monetize it with advertising".
 
 > "People will buy pet food online"
 
