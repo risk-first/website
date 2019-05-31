@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" style="kite9-layout: right; ">
+
+    <context id="c" bordered="true">
+        <mitigated>
+          <risk id="g1" class="attendant">Credit Risks</risk>
+        </mitigated>
+        <mitigated>
+          <risk id="g2" class="attendant">Market Risks</risk>
+        </mitigated>
+        <mitigated>
+          <risk id="g3" class="attendant">Operational Risks</risk>
+        </mitigated>
+    </context>
+
+    <group style="kite9-horizontal-align: left;">
+      <group id="a1" style="kite9-layout: down; kite9-sizing: minimize; kite9-horizontal-align: left; kite9-min-width: 200pt;">
+        <action style="kite9-margin: 10pt; kite9-horizontal-align: left; kite9-min-width: 200pt;">Credit Risk Regulations</action>
+      </group>
+      <group id="a2" style="kite9-layout: down; kite9-sizing: minimize; kite9-horizontal-align: left; kite9-min-width: 200pt;">
+        <action style="kite9-margin: 10pt; kite9-horizontal-align: left; kite9-min-width: 200pt;">Market Risk Regulations</action>
+      </group>
+
+      <group id="a3" style="kite9-layout: down; kite9-sizing: minimize; kite9-horizontal-align: left; kite9-min-width: 200pt;">
+        <action style="kite9-margin: 10pt; kite9-horizontal-align: left; kite9-min-width: 200pt;">Operational Risk Regulations</action>
+      </group>
+
+
+    </group>
+
+    <link drawDirection="RIGHT" class="invisible">
+      <from reference="g1" />
+      <to reference="a1" />
+    </link>
+
+    <link drawDirection="RIGHT" class="invisible">
+      <from reference="g2" />
+      <to reference="a2" />
+    </link>
+
+    <link drawDirection="RIGHT" class="invisible">
+      <from reference="g3" />
+      <to reference="a3" />
+    </link>
+  </diagram>
+</svg:svg>
