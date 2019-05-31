@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" style="kite9-layout: right; kite9-min-width: 900pt; ">
+
+    <context id="c" bordered="true" style="kite9-layout: down;">
+      <group id="g1" style="kite9-layout: right;  kite9-connection-align: 50%; ">
+        <mitigated>
+          <risk class="feature-fit">Uncertain
+            Requirements
+          </risk>
+        </mitigated>
+        <mitigated>
+          <risk class="feature-drift">Requirements
+            Change
+          </risk>
+        </mitigated>
+
+      </group>
+        <description>Sprints address the risk of uncertain requirements that change with time... </description>
+
+      <label id="id_16">
+        <text>Payoff</text>
+      </label>
+    </context>
+
+    <group>
+      <action style="kite9-margin: 10pt; kite9-horizontal-align: left; kite9-min-width: 200pt;">Timeboxed 
+      Sprints</action>
+    </group>
+    
+    <context id="c" bordered="true" style="kite9-layout: down; ">
+      <risk class="coordination" />
+
+      <description>... but this means everyone has to complete work before the Sprint ends. </description>
+
+      <label id="id_16">
+        <text>Stake</text>
+      </label>
+
+    </context>
+  </diagram>
+</svg:svg>

@@ -84,7 +84,7 @@ This part is a discussion of the different practices within Software Development
 
  - [The Purpose Of The Development Team](Purpose-Development-Team.md)
  - Analysis
- - [Coding](Coding.md)
+ - [Coding (Bets)](Coding-Bets.md)
  - Contract
  - Delivery
  - [Design](Design.md)
