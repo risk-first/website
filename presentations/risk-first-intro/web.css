@@ -1,0 +1,36 @@
+/* Layout for simple output 
+   ========================================================================== */
+
+.slide {
+  padding: 2em 0;
+}
+
+.slide-image {
+  margin-bottom: 2em;
+}
+
+.slide .slide-notes p:first-child {
+  margin-top: 0;
+}
+
+@media (min-width: 800px) {
+
+  .slide {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .slide .slide-image {
+    width: 48%;
+    margin-bottom: 0;
+  }
+
+  .slide .slide-notes {
+    width: 48%;
+  }
+
+}
+
+.credits {
+  opacity: 0.5;
+}
