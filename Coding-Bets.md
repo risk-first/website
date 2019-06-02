@@ -112,7 +112,7 @@ New features might help sell your software to new markets and please existing po
 
 ##### "Building a Minimum Viable Product is a bet on the market"
 
-A product may not necessarily be a set of individual features that can be delivered one-at-a-time.   Sometimes there are multiple parts that only make sense as a whole.  You can't prove the parts individually, but you can prove a _minimal set of them_.  
+A product may not necessarily be a set of individual features that can be delivered one-at-a-time.   Sometimes there are multiple parts that only make sense as a whole.  You can't prove the parts individually, but you can prove a _minimal set of them_:
 
 > "A minimum viable product (MVP) is a product with just enough features to satisfy early customers, and to provide feedback for future product development." - [Minimum Viable Product, _Wikipedia_](https://en.wikipedia.org/wiki/Minimum_viable_product)
 
@@ -133,24 +133,31 @@ The idea here is to make a bet that a market exists for a certain product, _and 
  - Loss of credibility.
  - Funding dries up.
  
-
 **Reduce the stakes by:** 
 - Failing fast.  Implement the riskiest functionality first.
 - Doing things that don't scale.  You can prove the market by doing a lot of processes manually.
 - Relying on Dependencies:  for everything that isn't completely unique.
 
-## Conclusion
+## Thoughts
 
-We're used to the idea of entrepreneurs taking risks on new business ideas.   B
+We're used to the idea of entrepreneurs taking risks on new business ideas (like in the MVP example, above).  But it's not really so different when you are building in a team, or on a personal project.  
 
-This was just a few examples, but this idea is _generally_ applicable.  Look at the next piece of code you're about to write:
+If you start by taking the view that every piece of work you do is a bet then it really helps to put into perspective what is at stake and what is to gain.  
+
+Look at the next piece of code you're about to write:
 
  - What are the likely stakes?
  - What is the [Payoff](Glossary.md#payoff)?
  - Is the bet worth it?  Sometimes, the stakes and the payoff are _a given_, but the bet still isn't worth the time.
- 
-How can you maximize the stakes while minimizing pay-off?  How long will it take for the pay-off to be worthwhile?
+ - How can you maximise the stakes while minimising pay-off?  How long will it take for the pay-off to be worthwhile?
+ - Are you making a long bet, or lots of small short bets?  You can reduce the overall stakes by splitting work up and doing the riskiest part first.
 
-Are you making a long bet, or lots of small short bets?  (Split work up, then do the riskiest part first)
- De-Risking
+## Raising The Stakes
 
+A lot of businesses thrive by minimising the bet.  For example, the houses being constructed near me aren't all _exactly_ the same, but there are about eight or so variations.  By doing the same thing over and over, they really minimise the risk of doing it wrong.
+
+But software isn't like this.  Largely, we aren't building the exact same thing over and over.  If we were, there would be a library for it, and we would be out of a job.  Programmers are there for the novelty, and the novelty is the source of uncertainty and therefore risk.
+
+What if you _are_ building the same cookie-cutter things over-and-over?   Perhaps it's time to change the bet?   By using new tools or techniques you would increase the risk, but also the reward would be to learn something new.  
+
+[The Purpose Of The Development Team](Purpose-Development-Team) article takes this idea further: that everything we do in development is about managing a balance of risks.
