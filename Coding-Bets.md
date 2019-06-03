@@ -15,7 +15,7 @@ Let's look at some examples...
 
 ##### "Making our codebase easier to reason about is worth the outlay of time."
 
-[Complexity Risk](Complexity-Risk.md) is risk due to the weight of complexity in the codebase, and its resistance to change and comprehension.  Fred Brooks' calls this mode of failure _the tar pit_:
+[Complexity Risk](Complexity-Risk.md) is the risk of your project failing due to the weight of complexity in the codebase, and its resistance to change and comprehension.  Fred Brooks' calls this mode of failure _the tar pit_:
 
 > " Large and small, massive or wiry, team after team has become entangled in the tar. No one thing seems to cause the difficulty - any particular paw can be pulled away. But the accumulation of simultaneous and interacting factors brings slower and slower motion. " - [Frederick P. Brooks, _The Mythical Man-Month_](https://www.amazon.com/Mythical-Man-Month-Software-Engineering-Anniversary/dp/0201835959)
 
@@ -33,13 +33,11 @@ It looks like this:
 
 ![Stake and Reward for Fixing Technical Debt](images/generated/practices/coding/refactoring.png)
 
-**When you win:**
- - The codebase is easier to think about.  
- 
-**When you lose:** 
-- The [Complexity Risk](Complexity-Risk.md) improvement is less than you hoped,
-- Or, it takes longer than expected, 
-- Or the _simplifying realisation_ doesn't pan out and you've lost a week.
+|**When you win**               |**When you lose**                 |**Lower The stakes by**   |
+|-------------------------------|----------------------------------|--------------------------|
+| - The codebase is easier to think about.   |- The [Complexity Risk](Complexity-Risk.md) improvement is less than you hoped |   |
+|| - Or, it takes longer than expected ||
+||- Or the _simplifying realisation_ doesn't pan out and you've lost a week. ||
 
 ## Spike Solutions: A New Technology Bet
 
@@ -47,7 +45,7 @@ It looks like this:
 
 > "Sometimes a user story is generated that cannot be well estimated until the development team does some actual work to resolve a technical question or a design problem. The solution is to create a “spike,” which is some work whose purpose is to provide the answer or solution. " - [Spike Solution, _Agile Dictionary_](http://agiledictionary.com/209/spike/) 
 
-You might want to use a Spike Solution to test out a badly-fitting technology for a more appropriate one.  That is, trying to solve a [Software Dependency Risk](Software-Dependency-Risk.md) issue.  For example:
+You might want to use a Spike Solution to test out replacing a badly-fitting technology for a more appropriate one.  That is, trying to solve a [Software Dependency Risk](Software-Dependency-Risk.md) issue.  For example:
 
 > "Let's try replacing all this configuration with some [YAML](https://en.wikipedia.org/wiki/YAML) files."
 
@@ -138,13 +136,11 @@ The idea here is to make a bet that a market exists for a certain product, _and 
 - Doing things that don't scale.  You can prove the market by doing a lot of processes manually.
 - Relying on Dependencies:  for everything that isn't completely unique.
 
-## Thoughts
+## Entrepreneurship
 
 We're used to the idea of entrepreneurs taking risks on new business ideas (like in the MVP example, above).  But it's not really so different when you are building in a team, or on a personal project.  
 
 If you start by taking the view that every piece of work you do is a bet then it really helps to put into perspective what is at stake and what is to gain.  
-
-Look at the next piece of code you're about to write:
 
  - What are the likely stakes?
  - What is the [Payoff](Glossary.md#payoff)?
