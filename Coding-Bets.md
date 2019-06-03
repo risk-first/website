@@ -33,11 +33,9 @@ It looks like this:
 
 ![Stake and Reward for Fixing Technical Debt](images/generated/practices/coding/refactoring.png)
 
-|**When you win**               |**When you lose**                 |**Lower The stakes by**   |
-|-------------------------------|----------------------------------|--------------------------|
-| - The codebase is easier to think about.   |- The [Complexity Risk](Complexity-Risk.md) improvement is less than you hoped |   |
-|| - Or, it takes longer than expected ||
-||- Or the _simplifying realisation_ doesn't pan out and you've lost a week. ||
+**When you win** the codebase becomes easier to think about.  
+ 
+When you lose, the [Complexity Risk](Complexity-Risk.md) improvement is less than you hoped, it takes longer than expected, or the _simplifying realisation_ doesn't pan out and you've lost a week.
 
 ## Spike Solutions: A New Technology Bet
 
@@ -61,13 +59,9 @@ But will the new technology fit?  The answer is to try to "prove" the bet as qui
 
 ![Stake and Reward for A Spike Solution](images/generated/practices/coding/spike.png)
 
-**When you win:**
- - The spike solution demonstrates that the technology will fit for all of the use cases needed.
- - The spike solution demonstrates that the technology is definitely not a good fit, for clear reasons that weren't apparent before starting. 
+**When you win**, either the spike solution demonstrates that the technology will fit for all of the use cases needed or it demonstrates that it's definitely not a good fit, for reasons that weren't apparent before starting. 
  
-**When you lose:** 
- - The developer can't get the spike solution working in the given time.  Does this prove that the technology is no good, or too complex, or that the developer needed more time, or that they're not skilled enough?
- - The developer gets the spike solution working for a specific use case, which is taken as success.  Later, though, other down-sides appear, and it's apparent that the solution is more trouble than it's worth.
+**When you lose** the developer can't get the spike solution working in the given time.  Does this prove that the technology is no good, or too complex, or that the developer needed more time, or that they're not skilled enough?  Alternatively, they get the spike solution working for a specific use case, which is taken as success, but later other down-sides appear and it's apparent that the solution is more trouble than it's worth.
  
 **Reduce the stakes by:**
  - Searching the Internet for stories of teams who've made the same bet.
@@ -83,22 +77,17 @@ Often you get user-stories like these:
 
 > "We need to provide an export-to-Excel function, as our competitors have one."
 
-> "Users need to be able to customize the workflow, otherwise they'll go elsewhere."
+> "Users need to be able to customise the workflow, otherwise they'll go elsewhere."
 
 > "We need a global search because people spend too much time menu-diving."
 
-New features might help sell your software to new markets and please existing power users.  But too many features confuse users, obscuring the essential purpose of the software.  This is [Conceptual Integrity Risk](Feature-Risk#conceptual-integrity-risk) - trying to please everyone means you please no-one.  
+New features might help sell your software to new markets and please existing power users.  But too many features confuse users, obscuring the essential purpose of the software.  This is [Conceptual Integrity Risk](Feature-Risk.md#conceptual-integrity-risk) - trying to please everyone means you please no-one.  
 
 ![Stake and Reward for Adding New Features](images/generated/practices/coding/new-feature.png)
 
-**When you win:**
- - Existing users welcome the change with open arms.  
- - New markets open up.
+**When you win** existing users welcome the change with open arms and maybe new markets open up.
  
-**When you lose:**  
- - The feature is a diversion from the main purpose of the project, and a waste of time.  
- - The feature doesn't make much impact, is used often enough to not be removed, but adds [Complexity Risk](Complexity-Risk.md) to the codebase.
- - The feature confuses the user-base, and leads to increased support costs and dissatisfaction.
+**When you lose** the feature is just a diversion from the main purpose of the project, or it makes little impact. It might be used often enough to remain, but adds [Complexity Risk](Complexity-Risk.md) to the codebase.  A worse scenario is that excessive features confuse the user-base and lead to dissatisfaction.
 
 **Reduce the stakes by:** 
  - Thoroughly triaging new features.
@@ -118,18 +107,15 @@ The idea here is to make a bet that a market exists for a certain product, _and 
 
 ![New Market Bet](images/generated/practices/coding/new-market.png)
 
-> "People will use the search engine and we can monetize it with advertising".
+> "People will use the search engine and we can monetise it with advertising".
 
 > "People will buy pet food online"
 
 > "Bots are the future: let's write one for the insurance business"
 
-**When you win:**
- - You start a new business
+**When you win** a new business is started.
  
-**When you lose:**  
- - Loss of credibility.
- - Funding dries up.
+**When you lose**  you suffer a loss of credibility, and funding dries up.
  
 **Reduce the stakes by:** 
 - Failing fast.  Implement the riskiest functionality first.
@@ -150,10 +136,10 @@ If you start by taking the view that every piece of work you do is a bet then it
 
 ## Raising The Stakes
 
-A lot of businesses thrive by minimising the bet.  For example, the houses being constructed near me aren't all _exactly_ the same, but there are about eight or so variations.  By doing the same thing over and over, they really minimise the risk of doing it wrong.
+A lot of businesses thrive by lowering the stakes.  For example, the houses being constructed near me have only eight or so different basic models.  By building the same thing over and over they really minimise the risk of doing it wrong.  _Novelty_ is a source of risk.
 
-But software isn't like this.  Largely, we aren't building the exact same thing over and over.  If we were, there would be a library for it, and we would be out of a job.  Programmers are there for the novelty, and the novelty is the source of uncertainty and therefore risk.
+But software isn't like this.  Largely, we aren't building the exact same thing over and over.  Computers handle the repetition - coders are there for the novelty.  
 
-What if you _are_ building the same cookie-cutter things over-and-over?   Perhaps it's time to change the bet?   By using new tools or techniques you would increase the risk, but also the reward would be to learn something new.  
+What if you _are_ building the same cookie-cutter things over-and-over?   Perhaps it's time to change the bet?   By using new tools or techniques you would increase the risk, but also the reward would be to learn something new.  Alternatively, _build the library_ that automates the drudge-work so you can re-focus on the areas of risk.
 
-[The Purpose Of The Development Team](Purpose-Development-Team) article takes this idea further: that everything we do in development is about managing a balance of risks.
+[The Purpose Of The Development Team](Purpose-Development-Team.md) article takes this idea further: that everything we do in a development team is about managing a balance of risks across the portfolio of an entire team's efforts.
