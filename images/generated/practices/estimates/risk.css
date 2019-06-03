@@ -9,6 +9,11 @@
 	src: url('geomanist-regular-webfont.svg') format('svg');
 }
 
+@font-face {
+	font-family: "gothic-light";
+	src: url('geomanist-extralight-webfont.svg') format('svg');
+	font-weight: 100;
+}
 
 @font-face {
 	font-family: "gothic-italic";
@@ -769,7 +774,8 @@ table celltext.top {
 
 /* Risk Descriptions */
 
-description {
+description,
+.description {
 	kite9-type: container;	
 	kite9-template: url(template.svg#description);
 	font-size: 14pt;

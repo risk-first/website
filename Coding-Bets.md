@@ -35,7 +35,7 @@ It looks like this:
 
 **When you win** the codebase becomes easier to think about.  
  
-When you lose, the [Complexity Risk](Complexity-Risk.md) improvement is less than you hoped, it takes longer than expected, or the _simplifying realisation_ doesn't pan out and you've lost a week.
+**When you lose** the [Complexity Risk](Complexity-Risk.md) improvement is less than you hoped, it takes longer than expected, or the _simplifying realisation_ doesn't pan out and you've lost a week.
 
 ## Spike Solutions: A New Technology Bet
 
@@ -51,9 +51,7 @@ You might want to use a Spike Solution to test out replacing a badly-fitting tec
 
 Alternatively, someone will suggest using an existing technology to eradicate lots of home-grown code.  Devoting parts of your code-base to solving problems that are already solved elsewhere is a source of [Complexity Risk](Complexity-Risk.md), because that code needs maintaining.
 
-> "Let's throw away all these scripts and start using [Kubernetes](https://en.wikipedia.org/wiki/Kubernetes) to deploy our components."
-
-> "Let's re-write these modules using [Clojure](https://en.wikipedia.org/wiki/Clojure)."
+> "Let's throw away all these scripts and start using [Kubernetes](https://en.wikipedia.org/wiki/Kubernetes) to manage our components."
 
 But will the new technology fit?  The answer is to try to "prove" the bet as quickly as possible using a time-boxed "Spike Solution".
 
