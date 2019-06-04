@@ -7,9 +7,11 @@ image: /images/generated/titles/Coding-Bets.png
 
 # Coding Bets
 
-The argument here is that any time you start coding a new feature, accept a new task, or go hunting for a bug on a software project, you're actually making a bet.  
+As developers, it might seem surprising that entrepreneurship and risk-taking are embedded in the work we do.  Any time you start coding a new feature, accept a new task, or go hunting for a bug on a software project, you're actually gambling on achieving a certain outcome.
 
-Let's look at some examples...
+To make this case we'll look at just three different types of coding you can do (there are probably lots of others),  examining the nature of the stakes and the rewards for each type of bet.  Then, we'll look at how this insight might inform the development process.
+
+So let's look at some examples...
 
 ## Refactoring: The Technical Debt Bet
 
@@ -120,15 +122,16 @@ The idea here is to make a bet that a market exists for a certain product, _and 
 
 ## Entrepreneurship
 
-We're used to the idea of entrepreneurs taking risks on new business ideas (like in the MVP example, above).  But it's not really so different when you are building in a team, or on a personal project.  
+We're used to the idea of entrepreneurs taking risks on new business ideas (like in the MVP example, above).  But it's not really so different when you are building in a team, or on a personal project.  So if you start by taking the view that every piece of work you do is a bet then it really helps to put into perspective what is at stake and what is to gain.  
 
-If you start by taking the view that every piece of work you do is a bet then it really helps to put into perspective what is at stake and what is to gain.  
+The best gamblers (the ones who win over time) don't necessarily take bets they'll always win.  But they are always judging risk, stake and reward.  They try to place bets where the [Balance of Risk](Glossary.md£balance-of-risk) is in their favour.   As developers, we should adopt the same mind-set:
 
  - What are the likely stakes?
  - What is the [Payoff](Glossary.md#payoff)?
- - Is the bet worth it?  Sometimes, the stakes and the payoff are _a given_, but the bet still isn't worth the time.
+ - What are the odds?
+ - Is the bet worth it?  Do the stakes justify the [Payoff](Glossary.md#payoff)?
  - How can you maximise the stakes while minimising pay-off?  How long will it take for the pay-off to be worthwhile?
- - Are you making a long bet, or lots of small short bets?  You can reduce the overall stakes by splitting work up and doing the riskiest part first.
+ - Are you making a long bet, or lots of small, short bets?  You can reduce the overall stakes by splitting work up and doing the riskiest part first.
 
 ## Raising The Stakes
 
