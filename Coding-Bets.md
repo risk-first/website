@@ -33,7 +33,7 @@ It looks like this:
 
 ![Stake and Reward for Fixing Technical Debt](images/generated/practices/coding/refactoring.png)
 
-**When you win** the codebase becomes easier to think about.  
+**When you win** the codebase becomes easier to think about, and you delay the tar-pit.  
  
 **When you lose** the [Complexity Risk](Complexity-Risk.md) improvement is less than you hoped, it takes longer than expected, or the _simplifying realisation_ doesn't pan out and you've lost a week.
 
@@ -43,9 +43,7 @@ It looks like this:
 
 > "Sometimes a user story is generated that cannot be well estimated until the development team does some actual work to resolve a technical question or a design problem. The solution is to create a “spike,” which is some work whose purpose is to provide the answer or solution. " - [Spike Solution, _Agile Dictionary_](http://agiledictionary.com/209/spike/) 
 
-You might want to use a Spike Solution to test out replacing a badly-fitting technology for a more appropriate one.  That is, trying to solve a [Software Dependency Risk](Software-Dependency-Risk.md) issue.  For example:
-
-> "Let's try replacing all this configuration with some [YAML](https://en.wikipedia.org/wiki/YAML) files."
+You might want to use a Spike Solution to test out replacing a badly-fitting technology for a more appropriate one.  That is, addressing [Software Dependency](Software-Dependency-Risk.md) problems.  For example:
 
 > "Let's explore using [ElasticSearch](https://en.wikipedia.org/wiki/Elasticsearch) for searching instead of SQL Statements."
 
@@ -57,9 +55,9 @@ But will the new technology fit?  The answer is to try to "prove" the bet as qui
 
 ![Stake and Reward for A Spike Solution](images/generated/practices/coding/spike.png)
 
-**When you win**, either the spike solution demonstrates that the technology will fit for all of the use cases needed or it demonstrates that it's definitely not a good fit, for reasons that weren't apparent before starting. 
+**When you win**, either the spike solution demonstrates clearly that it's definitely a good fit, or definitely _isn't_, for reasons that weren't apparent before starting.  The team learns something in the process. 
  
-**When you lose** the developer can't get the spike solution working in the given time.  Does this prove that the technology is no good, or too complex, or that the developer needed more time, or that they're not skilled enough?  Alternatively, they get the spike solution working for a specific use case, which is taken as success, but later other down-sides appear and it's apparent that the solution is more trouble than it's worth.
+**When you lose** the developer can't get the spike solution working in the given time.  It won't be clear whether the technology is no good, too complex, the developer needed more time, or that they're not skilled enough?  Alternatively, they get the spike solution working for a specific use case, which is taken as success, but later other down-sides appear and it's apparent that the solution is more trouble than it's worth.
  
 **Reduce the stakes by:**
  - Searching the Internet for stories of teams who've made the same bet.
@@ -103,8 +101,6 @@ A product may not necessarily be a set of individual features that can be delive
 
 The idea here is to make a bet that a market exists for a certain product, _and that there's money to be made from it_. 
 
-![New Market Bet](images/generated/practices/coding/new-market.png)
-
 > "People will use the search engine and we can monetise it with advertising".
 
 > "People will buy pet food online"
@@ -114,6 +110,8 @@ The idea here is to make a bet that a market exists for a certain product, _and 
 **When you win** a new business is started.
  
 **When you lose**  you suffer a loss of credibility, and funding dries up.
+
+![New Market Bet](images/generated/practices/coding/new-market.png)
  
 **Reduce the stakes by:** 
 - Failing fast.  Implement the riskiest functionality first.
