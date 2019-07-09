@@ -70,7 +70,7 @@ Even Ken Schwaber (one of the original authors of Scrum) has begun to jump on th
 
 > "They are touting their processes and tools this week at Agile 2013 in Nashville... When the signers of the Agile Manifesto got together in 2001, we wanted to share our ideas about software development... The very first tenet of it is:  'Individual and Interactions over Processes and Tools'. "  - [Ken Schwaber, _UnSAFe At Any Speed_](https://kenschwaber.wordpress.com/2013/08/06/unsafe-at-any-speed/)
 
-## 4.  Failure Mode
+## 5.  Failure Mode
 
 So, what has gone wrong here?   A simple explanation is _money_, which tends to corrupt even the most well-meant ideas.  
 
@@ -97,7 +97,7 @@ For him, the emergent behaviours highlighted above are totally at odds with the 
  
 > "You Either Die A Hero, Or You Live Long Enough To See Yourself Become The Villain" - [Harvey Dent, _The Dark Knight_](https://en.wikipedia.org/wiki/The_Dark_Knight_(film)) 
 
-## 5.  After The Trough of Disillusionment
+## 6.  After The Trough of Disillusionment
 
 Right now, it's easy to sell courses and certifications in Agile because it's marketed as the new silver bullet.  It's over-sold, and peoples' expectations are sky-high.  
 
