@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl"  id="diagram-113" name="Goal In Mind">
+
+  <context id="c" bordered="true">
+    <group  style="kite9-layout: down; ">
+      <mitigated>
+        <risk class="feature-fit" style="kite9-horizontal-align: left;"/>
+        <risk class="schedule" style="kite9-horizontal-align: left;"/>
+      </mitigated>
+      
+      <description>DevOps is essentially the idea that improved automation and testing will reduce operational risk
+      and increase value to customers...</description>
+    </group>
+  </context>
+
+  <group style="kite9-layout: down; kite9-horizontal-align: down;">
+    <action style="kite9-horizontal-align: left;">Automation</action>
+    <action style="kite9-horizontal-align: left;">Automated Tests</action>
+  </group>
+  
+  <context id="d" style="kite9-sizing: maximize; kite9-layout: down; ">
+  
+    <group  style="kite9-layout: right; ">
+      <risk class="agency" />
+    </group>
+    
+    <description>.. but automation usually requires reducing or removing controls, giving developers more agency.</description>
+
+  </context>
+
+
+  </diagram>
+</svg:svg>
