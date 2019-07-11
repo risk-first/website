@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+    <svg:style>
+
+      action {
+      kite9-horizontal-align: left;
+      kite9-margin: 40pt;
+      }
+     
+      cell {
+      kite9-layout: down;
+      kite9-margin: 20pt;
+      }
+      
+      description.left {
+      kite9-horizontal-align: left;
+      }
+
+
+    </svg:style>
+  </svg:defs>
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="dia" style="kite9-layout: down; ">
+
+    <container style="kite9-layout: grid; ">
+     
+      <cell style="kite9-occupies: 0 0;">
+        <description>Risk</description>
+      </cell>
+      <cell style="kite9-occupies: 1 0;">
+        <description>Success Means...</description>
+      </cell>
+      <cell style="kite9-occupies: 2 0;">
+        <description>Waterfall</description>
+      </cell>
+      <cell style="kite9-occupies: 3 0;">
+        <description>Agile</description>
+      </cell>
+
+      <cell style="kite9-occupies: 0 1; ">
+        <risk class="dependency" />
+      </cell>
+      <cell style="kite9-occupies: 1 1; ">
+        <description class="left">Having what 
+        you need to deliver</description>
+      </cell>
+      <cell style="kite9-occupies: 2 1 ;">
+        <action>Specification</action>
+        <action>Contracts</action>
+      </cell>
+      <cell style="kite9-occupies: 3 1;">
+        <action>Iteration</action>
+        <action>Frequent Delivery</action>
+      </cell>
+   
+      <cell style="kite9-occupies: 0 2; ">
+        <risk class="feature" />
+      </cell>
+      <cell style="kite9-occupies: 1 2; ">
+        <description class="left">Building the Right 
+        thing</description>
+      </cell>
+      <cell style="kite9-occupies: 2 2;">
+        <action>Specification</action>
+        <action>Verification</action>
+      </cell>
+      <cell style="kite9-occupies: 3 2;">
+        <action>Responding To Change</action>
+        <action>Face-To-Face Communication</action>
+      </cell>
+      
+      <cell style="kite9-occupies:  0 3; ">
+        <risk class="communication" />
+      </cell>
+      <cell style="kite9-occupies: 1 2; ">
+        <description class="left">Effective
+        Control &amp; Feedback</description>
+      </cell>
+      <cell style="kite9-occupies: 2 3;">
+        <action>Specification</action>
+        <action>Documentation</action>
+      </cell>
+      <cell style="kite9-occupies: 3 3;">
+        <action>Working Together</action>
+        <action>Face-To-Face Communication</action>
+      </cell>
+      
+     <cell style="kite9-occupies: 0 4; ">
+        <risk class="coordination" />
+      </cell>
+      <cell style="kite9-occupies: 1 4; ">
+        <description class="left">Pulling In The 
+        Same Direction</description>
+      </cell>
+      <cell style="kite9-occupies: 2 4;">
+        <action>Specification</action>
+        <action>Sign-Offs</action>
+      </cell>
+      <cell style="kite9-occupies: 3 4;">
+        <action>Responding To Change</action>
+        <action>Self-Organisation</action>
+      </cell>
+
+      <cell style="kite9-occupies: 0 5; ">
+        <risk class="agency" />
+      </cell>
+      <cell style="kite9-occupies: 1 5; ">
+        <description class="left">Putting Aside 
+        Individual Goals</description>
+      </cell>
+      <cell style="kite9-occupies: 2 5;">
+        <action>Contracts</action>
+        <action>Project Plans</action>
+      </cell>
+      <cell style="kite9-occupies: 3 5;">
+        <action>Working Together</action>
+        <action>Organising Around Motivated Individuals</action>
+      </cell>
+      
+     <cell style="kite9-occupies: 0 6; ">
+        <risk class="complexity" />
+      </cell>
+      <cell style="kite9-occupies: 1 6; ">
+        <description class="left">Avoiding the Tar-Pit</description>
+      </cell>
+      <cell style="kite9-occupies: 2 6;">
+        <action>Up-Front Analysis</action>
+        <action>Good Design</action>
+      </cell>
+      <cell style="kite9-occupies: 3 6;">
+        <action>Simplicity</action>
+        <action>Code over Documentation</action>
+      </cell>
+
+    </container>
+  
+    <long-description>Addressing software risks:  Waterfall practices compared to the Agile Manifesto</long-description>
+
+  </diagram>
+</svg:svg>
