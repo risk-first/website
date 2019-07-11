@@ -42,13 +42,14 @@ Larry Cooper and Jen Stone, authors of [Agile Value Delivery](https://leanpub.co
  
 > "When people develop an almost religious devotion to practices they fail to see the limitations of those practices, these devotees, who Larry has named “Method Lemmings,” don’t apply the essential “inspect and adapt” concept to their practices, and they don’t connect those practices with how their organizations create value. For them inspect and adapt only applies to their outputs but not to the practices they use every day. " - [Larry Cooper and Jen Stone, _InfoQ_](https://www.infoq.com/articles/agile-value-delivery/)
 
-This is [Enforced Cargo Culting](https://en.wikipedia.org/wiki/Cargo_cult_programming#Cargo_cult_software_engineering) of Agile:  making people adopt Agile whether they want to or not.  Forcing people to adopt certain approaches is a sure-fire way to invite failure.  
-
 But Agile is now so main-stream that project managers and business analysts everywhere are having to re-train and update their CVs to stay relevant.   On the face of it, this should be a good thing:  there is always value in learning something new.  However, there is a big difference between accepting a change in behaviour wholeheartedly and being forced into it because that's what your employers want to see.
 
 Jonathan Kohl blogs about this too:
 
 > "I have also seen people on Agile teams get marginalized because they aren’t Agile enough... I have seen people be pushed out of projects because they 'didn’t get Agile'. I have seen good solutions turned away because they weren’t in the white book (Extreme Programming Explained). I’ve also seen reckless, unthinking behavior justified because it was 'Agile'." - [Jonathan Kohl, Post Agilism Process Skepticism](http://www.kohl.ca/2006/post-agilism-process-skepticism/)
+
+This is [Enforced Cargo Culting](https://en.wikipedia.org/wiki/Cargo_cult_programming#Cargo_cult_software_engineering) of Agile:  making people adopt Agile whether they want to or not.  Forcing people to adopt certain approaches is a sure-fire way to invite failure.  
+
 
 ## Criticism 3: Proscriptive Norms
 
