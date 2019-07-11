@@ -79,7 +79,7 @@ Even Ken Schwaber (one of the original authors of Scrum) has begun to jump on th
 
 So, what has gone wrong here?   A simple explanation is _money_, which tends to corrupt even the most well-meant ideas.  
 
-![Practices espoused by the Agile Manifesto, vs the Waterfall method](images/generated/methdology/agile/agile.png)
+![Practices espoused by the Agile Manifesto, vs the Waterfall method](images/generated/methodology/agile/agile.png)
 
 As the diagram above shows, the Agile Manifesto suggested a radically different set of practices for addressing software risks to the ones prevalent in 2001.  Consequently, as Agile gathered momentum this meant that the market for tools and techniques built around traditional practices eroded.  
 
