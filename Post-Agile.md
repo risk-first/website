@@ -108,7 +108,7 @@ Right now, it's easy to sell courses and certifications in Agile because it's ma
 
 But the backlash is the next phase of the hype-cycle: the existence of Post-Agile is a sign-post for the Trough of Disillusionment.  Reality _will_ catch up and expectations will be reset.
 
-As with all the other hype-cycles, this too will pass.  Once Agile techniques become a mundane component of the software development tool-box, the salesmen will move onto something new, and we can get back to applying our judgement to using the _right tools where they're appropriate_.
+As with all the other hype-cycles, this too will pass.  Once Agile techniques become a mundane component of the software development tool-box, the salesmen will move onto something new, and we can get back to applying our judgement to using _good tools where they're appropriate_.
 
 To close, perhaps Post-Agile as a concept is perhaps best summarised by Woody Zuill who says:
 
