@@ -34,7 +34,7 @@ Zealotry occurs where people see Agile as a solution to all problems, blindly fo
 
 > "How does the first line of the Agile Manifesto begin? No peeking. Don’t know? That’s fine. It doesn’t matter. It says, “We are uncovering better ways of developing software….” Stop. Notice it says, “developing software.” It does not say, “leaning out your org,” “paying down transformation debt,” “cutting it out with this command-and-control crap,” “focusing on outcomes and getting better at discovery work,” “fixing your medieval budgeting system,” or any of the other far more value-adding things people have tried to glom onto it. But the thing is, when people say that Agile pertains to the whole org, it’s revisionist history. It’s dishonest." - [Charles Lambdin, _Dear Agile, I’m Tired of Pretending_](https://medium.com/columbus-egg/dear-agile-im-tired-of-pretending-d39ab6a12003).
 
-This is, in fact, [The Peter Principle](https://en.wikipedia.org/wiki/Peter_principle) _applied to ideas_: promoting them beyond their level of competence.  
+This zealotry is [The Peter Principle](https://en.wikipedia.org/wiki/Peter_principle) _applied to ideas_: promoting them beyond their level of competence.  
 
 ## Criticism 2:  Back To Process  
 
