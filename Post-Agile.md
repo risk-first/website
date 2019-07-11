@@ -81,7 +81,7 @@ So, what has gone wrong here?   A simple explanation is _money_, which tends to 
 
 ![Practices espoused by the Agile Manifesto, vs the Waterfall method](images/generated/methodology/agile/agile.png)
 
-As the diagram above shows, the Agile Manifesto suggested a radically different set of practices for addressing software risks to the ones prevalent in 2001.  Consequently, as Agile gathered momentum this meant that the market for tools and techniques built around traditional practices eroded.  
+As the diagram above shows, the Agile Manifesto suggested a radically different set of practices for addressing software development risks to the ones prevalent in 2001.  Consequently, as Agile gathered momentum this meant that the market for tools and techniques built around traditional practices eroded.  
 
 That's a problem for vendors and consultants:  Many of the Agile practices (e.g. 'self-organisation' or 'face-to-face communication') would seem to be tool-proof.  Tools are easy to sell.  Processes are easy to sell.  'Responding to change'... not so much.
 
@@ -108,7 +108,7 @@ Right now, it's easy to sell courses and certifications in Agile because it's ma
 
 But the backlash is the next phase of the hype-cycle: the existence of Post-Agile is a sign-post for the Trough of Disillusionment.  Reality _will_ catch up and expectations will be reset.
 
-As with all the other hype-cycles, this too will pass.  Once Agile techniques become a mundane component of the software development tool-box, the salesmen will move onto something new, and we can get back to applying our judgement to using the _right tools where they're appropriate_, as [Risk-First](index.md) strongly advocates.
+As with all the other hype-cycles, this too will pass.  Once Agile techniques become a mundane component of the software development tool-box, the salesmen will move onto something new, and we can get back to applying our judgement to using the _right tools where they're appropriate_.
 
 To close, perhaps Post-Agile as a concept is perhaps best summarised by Woody Zuill who says:
 
