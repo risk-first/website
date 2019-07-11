@@ -11,6 +11,8 @@ image: /images/generated/titles/Post-Agile.png
 
 It's been a while since the [Agile Manifesto](http://agilemanifesto.org) was signed in 2001.  In that time, software development has seen these ideas go from being niche and hard-to-sell to completely main-stream.  
 
+![A Hype Cycle](images/numbers/hype4.png)
+
 It's taken nearly 20 years, but it seems like Agile has finally crested the [Hype-Cycle](https://riskfirst.org/Map-And-Territory-Risk#audience).
 
 Corporate Management (with a capital-M) has finally bought into Agile techniques and industrial acceptance of Agile is everywhere.  Partly, these ideas have stood the test of time, but it's also because it has taken a _whole generation_ for software developers who learnt about Agile 20 years ago to arrive in positions of responsibility in large organisations.  
@@ -74,13 +76,19 @@ Even Ken Schwaber (one of the original authors of Scrum) has begun to jump on th
 
 So, what has gone wrong here?   A simple explanation is _money_, which tends to corrupt even the most well-meant ideas.  
 
-Agile started off by addressing certain software development risks:
+![Practices espoused by the Agile Manifesto, vs the Waterfall method](images/generated/methdology/agile/agile.png)
 
-----
+As the diagram above shows, the Agile Manifesto suggested a very different set of practices for addressing software risks to the ones prevalent in 2001.  Consequently, as agile gathered momentum this meant that the market for tools and techniques built around traditional practices would erode.  
 
-Tools can be sold.  Processes can be sold.  "Think for yourself" can’t be sold.
+That's a problem for vendors and consultants:  Many of the Agile practices (e.g. 'self-organisation' or 'face-to-face communication') would seem to be tool-proof.  Tools are easy to sell.  Processes are easy to sell.  'Responding to change' not so much.
 
-But, this _obliterated_ a lot of the tools and processes that software vendors sell.  So, the solution was for those vendors to _rebrand_ their tools and processes so that they were Agile.  This is akin to ["Embrace, Extend and Extinguish"](https://en.wikipedia.org/wiki/Embrace,_extend,_and_extinguish), Microsoft's 1995 strategy to...
+So, the solution was for those vendors to move their tools and processes in the direction of Agile, but at the same time, move the definition of Agile in the direction of the tools and processes.  
+
+Ron Jeffries, another co-author of the Agile Manifesto, says:
+
+> "Agile has become big business. Led, no doubt, by the Scrum Alliance’s successful Certified ScrumMaster offering, we now see hundreds, perhaps thousands of so-called “Agile” coaches and trainers, and many competing frameworks and methods. We see “Agile” leadership training, “Agile” project management offerings, and on and on... I really am coming to think that software developers of all stripes should have no adherence to any “Agile” method of any kind. As those methods manifest on the ground, they are far too commonly the enemy of good software development rather than its friend." - [Ron Jeffries, _Developers Should Abandon Agile_](https://ronjeffries.com/articles/018-01ff/abandon-1/)
+
+For him, the emergent behaviours highlighted above are totally at odds with the original vision of Agile, and a cure worse than the disease.  This is akin to ["Embrace, Extend and Extinguish"](https://en.wikipedia.org/wiki/Embrace,_extend,_and_extinguish), Microsoft's 1995 strategy to...
 
 > "kill HTML by extending it" - [Embrace, Extend and Extinguish, _Wikipedia_](https://en.wikipedia.org/wiki/Embrace,_extend,_and_extinguish)
 
@@ -89,19 +97,15 @@ Good ideas tend to suffer in this way:
  - **Democracy** is an excellent idea, [constantly under attack](https://en.wikipedia.org/wiki/Political_corruption) from the corrupting influence of money via bribes, nepotism and cronyism.  
  - **Christianity** started off with some great ideas, but [became big business](https://en.wikipedia.org/wiki/Indulgence) and led to the [reformation](https://en.wikipedia.org/wiki/Reformation).   
 
-So are we due a reformation in the Agile world?  Fowler, Schwaber and Cockburn (quoted above, and _original signatories of the Agile Manifesto_) think so.   Ron Jeffries (also a signatory) calls for nothing less than abandoning Agile completely:
+So are we due a reformation in the Agile world?  Fowler, Schwaber and Cockburn (quoted above, co-authors of the Agile Manifesto) think so.  
 
-> "Agile has become big business. Led, no doubt, by the Scrum Alliance’s successful Certified ScrumMaster offering, we now see hundreds, perhaps thousands of so-called “Agile” coaches and trainers, and many competing frameworks and methods. We see “Agile” leadership training, “Agile” project management offerings, and on and on... I really am coming to think that software developers of all stripes should have no adherence to any “Agile” method of any kind. As those methods manifest on the ground, they are far too commonly the enemy of good software development rather than its friend." - [Ron Jeffries, _Developers Should Abandon Agile_](https://ronjeffries.com/articles/018-01ff/abandon-1/)
-
-For him, the emergent behaviours highlighted above are totally at odds with the original vision of Agile, and a cure worse than the disease.
- 
 > "You Either Die A Hero, Or You Live Long Enough To See Yourself Become The Villain" - [Harvey Dent, _The Dark Knight_](https://en.wikipedia.org/wiki/The_Dark_Knight_(film)) 
 
 ## 6.  After The Trough of Disillusionment
 
 Right now, it's easy to sell courses and certifications in Agile because it's marketed as the new silver bullet.  It's over-sold, and peoples' expectations are sky-high.  
 
-But the backlash is a function of the hype: Post-Agile is a sign-post for the Trough of Disillusionment.
+But the backlash is a function of the hype: the existence of Post-Agile is a sign-post for the Trough of Disillusionment.
 
 Reality _will_ catch up.  It always does.
 
