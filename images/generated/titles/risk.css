@@ -775,6 +775,7 @@ table celltext.top {
 /* Risk Descriptions */
 
 description,
+long-description,
 .description {
 	kite9-type: container;	
 	kite9-template: url(template.svg#description);
@@ -783,6 +784,11 @@ description,
 	font-style: italic;
 	kite9-padding: 10pt;
 }
+
+long-description {
+	kite9-template: url(template.svg#long-description);
+}
+
 
 /* Steve McConnell Stuff */
 
