@@ -13,13 +13,9 @@ title: Home
     </div>
     <div class="row">
 
-    {% for post in site.posts %}
+    {% for post in site.categories.Introduction %}
 
-        {% if post.featured == true %}
-
-            {% include featuredbox.html %}
-
-        {% endif %}
+        {% include featuredbox.html %}
 
     {% endfor %}
 
@@ -34,7 +30,7 @@ title: Home
 
     <div class="section-title">
 
-        <h2><span>All Stories</span></h2>
+        <h2><span>Recent Articles</span></h2>
 
     </div>
 

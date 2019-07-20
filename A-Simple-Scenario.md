@@ -3,6 +3,7 @@ title: A Simple Scenario
 description: An introduction to the concept that managing risk underpins all activity on projects.
 url: https://riskfirst.org/A-Simple-Scenario
 image: /images/generated/titles/A-Simple-Scenario.png
+categories: Introduction, Book
 ---
 
 # A Simple Scenario
