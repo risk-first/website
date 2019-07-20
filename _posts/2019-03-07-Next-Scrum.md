@@ -4,6 +4,7 @@ description: Where to head next on developing Risk-First
 url: https://riskfirst.org/2019/03/07/Next-Scrum
 image: /images/generated/titles/2019-03-07-Next-Scrum.png
 author: Rob Moffat
+date: 07-03-2019
 ---
 
 I'm not sure exactly how people are finding Risk-First on the internet.  Seems like I get a lot of traffic referred from Github.   For some reason, even fairly specific searches don't make much of an impact in Google.  
