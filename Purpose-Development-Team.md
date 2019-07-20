@@ -5,6 +5,9 @@ url: https://riskfirst.org/Purpose-Development-Team
 image: /images/generated/titles/Purpose-Development-Team.png
 date: 12-05-2019
 featuredimage: images/generated/single/backgrounds/trianglify-lowres.png
+categories:
+ - Book
+ - Thinking
 ---
 
 # The Purpose Of The Development Team

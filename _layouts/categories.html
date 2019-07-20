@@ -6,19 +6,23 @@ permalink: "/categories.html"
 
 <div class="row listrecent">
 	{% for category in site.category_list %}
-		<div class="section-title col-md-12 mt-4">
-			<h2 id="{{ category[0] | replace: "","-" }}">
-				Category: <span class="text-capitalize">{{ category }}</span>
-			</h2>
-		</div>
+		
+		{%if category == page.category || page.category == null %}
 	
-		{% for post in site.pages %} 
-			{% for pc in post.categories %} 
-				{% if pc == category %} 
-					{% include postbox.html %} 
-				{% endif %} 
+			<div class="section-title col-md-12 mt-4">
+				<h2 id="{{ category[0] | replace: "","-" }}">
+					Category: <span class="text-capitalize">{{ category }}</span>
+				</h2>
+			</div>
+		
+			{% for post in site.pages %} 
+				{% for pc in post.categories %} 
+					{% if pc == category %} 
+						{% include postbox.html %} 
+					{% endif %} 
+				{% endfor %}
 			{% endfor %}
-		{% endfor %}
+		{% endif %}
 	{% endfor %}
 	
 </div>
