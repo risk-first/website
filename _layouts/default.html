@@ -1,104 +1,208 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>{{ page.title | default: site.github.repository_name }} by {{ site.github.owner_name }}</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css" />
-    <link rel="stylesheet" href="/assets/style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+<link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">
+
+<title>{{ page.title }} | {{site.name}}</title>
+
+{% seo %}
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
-    {% seo %}
-  </head>
-  <body>
-    <a class="github-fork-ribbon" href="https://github.com/risk-first/website" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a> 
-    <div class="wrapper">
-      <header>
-      	<img src="/images/R1_logo_black.svg" alt="Risk First Logo" />
+<link href="{{ site.baseurl }}/assets/css/screen.css" rel="stylesheet">
 
-        <p class="sitedescription">Home of Risk-First Software Development</p>
+<link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
 
-        <div class="buttons">
-			<a class="github-button" href="https://github.com/risk-first/website/subscription" data-icon="octicon-eye" data-show-count="true" aria-label="Watch risk-first/website on GitHub">Watch</a>
-			<a class="github-button" href="https://github.com/risk-first/website/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork risk-first/website on GitHub">Fork</a>      
-			<a title="Please star this project in github to be invited to join the Risk First organisation" class="github-button" href="https://github.com/risk-first/website/stargazers" data-icon="octicon-star" aria-label="Stargazers risk-first/website on GitHub">Stars</a>
-		</div>
+<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
 
-        <br>
-        <br>
-		<h3>Start Here</h3>
-		<hr>
-        <a href="/">Home</a>
-        <br>
-        <a href="https://github.com/risk-first/website/blob/master/CONTRIBUTING.md">Contributing</a>
-        <br>
-        <a href="Quick-Summary">Quick Summary</a>
-        <br>
-        <a href="A-Simple-Scenario">A Simple Scenario</a>
-        <br>
-        <a href="Risk-Landscape">The Risk Landscape</a>
-        <br>
-        <br>
-		<h3>Discuss</h3>
-  		<hr>
-  		Please <a href="https://github.com/risk-first/website/stargazers">star</a> 
-  		this project in <a href="https://github.com">GitHub</a> 
-  		to be invited to join the 
-  		<a href="https://github.com/orgs/risk-first/teams/risk-first-team">Risk First Organisation</a>.
-        <br>
-        <br>
-        <h3>Blog</h3>
-  		<hr>
-		{% for post in site.posts %}
-	      <a href="{{ post.url }}">{{ post.title }}</a> <small>{{ post.date | date: "%-d %B %Y" }}</small>
-	      <br>
-	 	{% endfor %} 
-        <br>
-        <h3>Publications</h3>
-  		<hr>
-  		<a href="http://a.co/d/eESl9HH"><img width="120px" src="/images/Cover_Image_Bordered.png" title="book" /></a>
-        <br>
-        <a href="The-Menagerie">Click Here For Details</a>
-        <br>
-        <br>
-        <br>
-      </header>
-      <section>
+</head>
 
-     	 {{ content }}
-     	 
-     	 <p><em><strong>Found this interesting?</strong>  Please <a href="https://github.com/risk-first/website/stargazers">add your star</a> on GitHub to be
-     	  invited to join the Risk-First GitHub group. </em></p>
+{% if jekyll.environment == 'production' %}
+<!-- change your GA id in _config.yml -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', '{{site.google_analytics}}', 'auto');
+ga('send', 'pageview');
+</script>
+{% endif %}
 
-      </section>
-      <footer>
-        <p>
-        	<small>Maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a> on Github Pages.</small>
-        	<br />
-       		<small>Theme derived from minimal by <a href="https://github.com/orderedlist">orderedlist</a></small>
-       		<br />
-       		<small><a href="https://github.com/risk-first/website/blob/master/COPYRIGHT.md">Copyright</a></small>
-       	</p>
-      </footer>
+{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
+<body class="{{layout}}">
+	<!-- defer loading of font and font awesome -->
+	<noscript id="deferred-styles">
+		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	</noscript>
+
+
+<!-- Begin Menu Navigation
+================================================== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+
+    <div class="container pr-0">
+
+    <!-- Begin Logo -->
+    <a class="navbar-brand" href="{{ site.baseurl }}/">
+    <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
+    </a>
+    <!-- End Logo -->
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMediumish">
+
+        <!-- Begin Menu -->
+
+            <ul class="navbar-nav ml-auto">
+
+                {% if page.url == "/" %}
+                <li class="nav-item active">
+                {% else %}
+                <li class="nav-item">
+                {% endif %}
+                <a class="nav-link" href="{{ site.baseurl }}/index.html">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
+                </li>
+
+                <li class="nav-item">
+                <a target="_blank" class="nav-link" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/"> Docs</a>
+                </li>
+
+                <li class="nav-item">
+                <a target="_blank" class="nav-link" href="https://www.wowthemes.net/themes/mediumish-wordpress/"><i class="fab fa-wordpress-simple"></i> WP Version</a>
+                </li>
+
+                <li class="nav-item">
+                <a target="_blank" class="nav-link" href="https://www.wowthemes.net/themes/mediumish-ghost/"><i class="fab fa-snapchat-ghost"></i> Ghost Version</a>
+                </li>
+
+                <li class="nav-item">
+                <a target="_blank" class="nav-link" href="https://github.com/wowthemesnet/mediumish-theme-jekyll"><i class="fab fa-github"></i> Fork on Github</a>
+                </li>
+
+                {% include search-lunr.html %}
+
+            </ul>
+
+        <!-- End Menu -->
+
     </div>
-    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
 
+    </div>
+</nav>
+<!-- End Navigation
+================================================== -->
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-11589584-7"></script>
-    <script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	
-	  gtag('config', 'UA-11589584-7');
-    </script>
+<div class="site-content">
 
-	<script async defer src="https://buttons.github.io/buttons.js"></script>
-  </body>
+<div class="container">
+
+<!-- Site Title
+================================================== -->
+<div class="mainheading">
+    <h1 class="sitetitle">{{ site.name }}</h1>
+    <p class="lead">
+        {{ site.description }}
+    </p>
+</div>
+
+<!-- Content
+================================================== -->
+<div class="main-content">
+    {{ content }}
+</div>
+
+{% if site.mailchimp-list %}
+<!-- Bottom Alert Bar
+================================================== -->
+<div class="alertbar">
+	<div class="container text-center">
+		<span><img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{site.title}}"> &nbsp; Never miss a <b>story</b> from us, subscribe to our newsletter</span>
+        <form action="{{site.mailchimp-list}}" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="_blank" novalidate>
+            <div class="mc-field-group">
+            <input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on" required>
+            <input type="submit" value="Subscribe" name="subscribe" class="heart">
+            </div>
+        </form>
+	</div>
+</div>
+{% endif %}
+    
+</div>
+
+<!-- Categories Jumbotron
+================================================== -->
+<div class="jumbotron fortags">
+	<div class="d-md-flex h-100">
+		<div class="col-md-4 transpdark align-self-center text-center h-100">
+            <div class="d-md-flex align-items-center justify-content-center h-100">
+                <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
+            </div>
+		</div>
+		<div class="col-md-8 p-5 align-self-center text-center">
+            {% assign categories_list = site.categories %}
+            {% if categories_list.first[0] == null %}
+                {% for category in categories_list %}
+                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a>
+                {% endfor %}
+            {% else %}
+                {% for category in categories_list %}
+                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a>
+                {% endfor %}
+            {% endif %}
+            {% assign categories_list = nil %}
+		</div>
+	</div>
+</div>
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                Copyright © {{ site.time | date: "%Y" }} {{ site.name }} 
+            </div>
+            <div class="col-md-6 col-sm-6 text-center text-lg-right">    
+                <a target="_blank" href="https://www.wowthemes.net/mediumish-free-jekyll-template/">Mediumish Jekyll Theme</a> by WowThemes.net
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer
+================================================== -->
+
+</div> <!-- /.site-content -->
+
+<!-- Scripts
+================================================== -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script src="{{ site.baseurl }}/assets/js/mediumish.js"></script>
+
+{% if site.lazyimages == "enabled" %}
+<script src="{{ site.baseurl }}/assets/js/lazyload.js"></script>
+{% endif %}
+
+<script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script> 
+
+{% if page.layout == 'post' %}
+<script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
+{% endif %}
+
+</body>
 </html>
