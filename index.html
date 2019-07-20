@@ -7,26 +7,23 @@ title: Home
 
 <!-- Featured
 ================================================== -->
-	{% for c in site.categories %}
 <section class="featured-posts">
     <div class="section-title">
-        <h2><span>Start Here</span></h2>
+        <h2><span>Start Here!</span></h2>
     </div>
     <div class="row">
-
-
-    {% for post in c %}
-
-        {% include postbox.html %}
-
+	{% for post in site.pages %}
+      	{% for pc in post.categories %}
+      		{% if pc == 'Introduction' %}
+    		    {% include postbox.html %}
+    		{% endif %}
+    	{% endfor %}
     {% endfor %}
 
     </div>
 </section>
 
 {% endif %}
-
- {% endfor %}
 
 <!-- Posts Index
 ================================================== -->
@@ -40,7 +37,7 @@ title: Home
 
     <div class="row listrecent">
 
-        {% for post in paginator.posts %}
+        {% for post in paginator.pages %}
 
         {% include postbox.html %}
 
@@ -49,6 +46,8 @@ title: Home
     </div>
 
 </section>
+
+
 
 <!-- Pagination
 ================================================== -->
