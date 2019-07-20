@@ -3,6 +3,7 @@ title: A Conversation
 description: A conversation about software development using Risk-First vocabulary.
 url: https://riskfirst.org/A-Conversation
 image: /images/generated/titles/A-Conversation.png
+categories: Thinking, Book
 ---
 
 
