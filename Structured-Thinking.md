@@ -3,6 +3,9 @@ title: Structured Thinking
 description: A handy approach for getting serious thinking done, despite the distractions of the modern world.
 url: https://riskfirst.org/Structured-Thinking
 image: /images/generated/titles/Structured-Thinking.png
+categories:
+ - Front
+ - Thinking
 ---
 
 # Structured Thinking

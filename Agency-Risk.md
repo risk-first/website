@@ -3,6 +3,8 @@ title: Agency Risk
 description: Explanation of Agency Risk and ways to mitigate it through monitoring, security and goal alignment.
 url: https://riskfirst.org/Agency-Risk
 image: /images/generated/titles/Agency-Risk.png
+categories:
+ - Risk
 ---
 
 # Agency Risk

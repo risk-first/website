@@ -3,6 +3,9 @@ title: A Pattern Language
 description: Explanation of how Risk-First comprises a pattern language of risk patterns for use in software projects.
 url: https://riskfirst.org/A-Pattern-Language
 image: /images/generated/titles/A-Pattern-Language.png
+categories: 
+ - Front
+ - Thinking
 ---
 
 # A Pattern Language

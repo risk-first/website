@@ -3,6 +3,9 @@ title: Cadence
 description: Explanation of the importance of feedback loops for managing risk.
 url: https://riskfirst.org/Cadence
 image: /images/generated/titles/Cadence.png
+categories:
+ - Book
+ - Thinking
 ---
 
 # Cadence

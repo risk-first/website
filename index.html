@@ -7,7 +7,7 @@ title: Home
 
 <!-- Featured
 ================================================== -->
-<section class="featured-posts">
+<section class="featured-articles">
     <div class="section-title">
         <h2><span>Start Here!</span></h2>
     </div>
@@ -28,33 +28,34 @@ title: Home
 <!-- Posts Index
 ================================================== -->
 <section class="recent-posts">
-
     <div class="section-title">
-
-        <h2><span>Recent Articles</span></h2>
-
+        <h2><span>News</span></h2>
     </div>
 
     <div class="row listrecent">
-
-        {% for post in paginator.pages %}
-
-        {% include postbox.html %}
-
+        {% for post in site.posts %}
+	        {% include postbox.html %}
         {% endfor %}
-
     </div>
 
 </section>
 
-
-
-<!-- Pagination
+<!-- Articles
 ================================================== -->
-<div class="bottompagination">
-<div class="pointerup"><i class="fa fa-caret-up"></i></div>
-<span class="navigation" role="navigation">
-    {% include pagination.html %}
-</span>
-</div>
+<section class="recent-articles">
+    <div class="section-title">
+        <h2><span>Recent Articles</span></h2>
+    </div>
+    <div class="row">
+	{% for post in site.pages | sort: "date" %}
+      	{% for pc in post.categories %}
+      		{% if pc == 'Front' %}
+   		   	 	{% include postbox.html %}
+   		   	{% endif %}
+    	{% endfor %}
+    {% endfor %}
+
+    </div>
+</section>
+
 

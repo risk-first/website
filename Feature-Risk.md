@@ -3,6 +3,9 @@ title: Feature Risk
 description: Risks you face when providing features for your clients.
 url: https://riskfirst.org/Feature-Risk
 image: /images/generated/titles/Feature-Risk.png
+categories:
+ - Book
+ - Risk
 ---
 
 # Feature Risk
