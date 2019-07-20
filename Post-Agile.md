@@ -3,7 +3,6 @@ title: Post-Agile
 description: Examination of the Post-Agile Movement
 url: https://riskfirst.org/Post-Agile
 image: /images/generated/titles/Post-Agile.png
-layout: "default"
 ---
 
 # Post-Agile
