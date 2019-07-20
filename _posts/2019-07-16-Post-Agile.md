@@ -4,6 +4,7 @@ description: Examination of the Post-Agile Movement
 url: https://riskfirst.org/2019/07/16/Post-Agile
 image: /images/generated/titles/2019-07-16-Post-Agile.png
 author: Rob Moffat
+date: 16-07-2019
 ---
 
 I've just finished writing this article about the state of Agile, and the emerging "Post-Agile" movement.  
