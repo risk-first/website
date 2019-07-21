@@ -3,6 +3,7 @@ title: Software Dependency Risk
 description: Specific dependency risks due to relying on software.
 url: https://riskfirst.org/Software-Dependency-Risk
 image: /images/generated/titles/Software-Dependency-Risk.png
+featuredimage: images/generated/single/Software-Dependency-Risk.png
 categories:
  - Book
  - Risk

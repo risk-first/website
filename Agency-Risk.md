@@ -5,6 +5,7 @@ url: https://riskfirst.org/Agency-Risk
 image: /images/generated/titles/Agency-Risk.png
 categories:
  - Risk
+featuredimage: images/generated/single/Agency-Risk.png
 ---
 
 # Agency Risk

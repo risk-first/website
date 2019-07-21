@@ -6,6 +6,7 @@ image: /images/generated/titles/Estimates.png
 categories:
  - Book
  - Practices
+featuredimage: images/generated/single/Estimates.png
 ---
 
 # Estimates

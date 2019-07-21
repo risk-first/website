@@ -3,6 +3,7 @@ title: Deadline Risk
 description: Risks due to coordinating via imposed deadlines.
 url: https://riskfirst.org/Deadline-Risk
 image: /images/generated/titles/Deadline-Risk.png
+featuredimage: images/generated/single/Deadline-Risk.png
 categories:
  - Book
  - Risk

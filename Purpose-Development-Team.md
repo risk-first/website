@@ -4,7 +4,7 @@ description: Making sense of contradictory objectives with the "Balance of Risk"
 url: https://riskfirst.org/Purpose-Development-Team
 image: /images/generated/titles/Purpose-Development-Team.png
 date: 12-05-2019
-featuredimage: images/generated/single/backgrounds/trianglify-lowres.png
+featuredimage: images/generated/single/Purpose-Development-Team.png
 categories:
  - Book
  - Thinking
