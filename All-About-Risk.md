@@ -6,6 +6,7 @@ image: /images/generated/titles/All-About-Risk.png
 categories: 
  - Book
  - Front
+order: 1
 featuredimage: images/generated/single/All-About-Risk.png
 ---
 

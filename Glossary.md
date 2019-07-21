@@ -6,7 +6,8 @@ image: /images/generated/titles/Glossary.png
 featuredimage: images/generated/single/Glossary.png
 categories:
  - Book
- - Front
+ - Introduction
+order: 9
 ---
 
 # Glossary

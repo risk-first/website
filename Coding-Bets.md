@@ -3,10 +3,11 @@ title: Coding Bets
 description: How Coding, Investing and Gambling are similar undertakings.
 url: https://riskfirst.org/Coding-Bets
 image: /images/generated/titles/Coding-Bets.png
-date: 04-06-2019
+date: 2019-06-04 16:32:03 +0000
 featuredimage: images/generated/single/Coding-Bets.png
 categories:
  - Practices
+ - News
 ---
 
 # Coding Bets

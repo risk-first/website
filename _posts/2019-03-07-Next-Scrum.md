@@ -5,6 +5,8 @@ url: https://riskfirst.org/2019/03/07/Next-Scrum
 image: /images/generated/titles/2019-03-07-Next-Scrum.png
 author: rob
 date: 07-03-2019
+categories:
+ - News
 ---
 
 # Next: Scrum?

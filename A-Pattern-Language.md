@@ -7,6 +7,7 @@ featuredimage: images/generated/single/A-Pattern-Language.png
 categories: 
  - Book
  - Front
+order: 3
 ---
 
 # A Pattern Language

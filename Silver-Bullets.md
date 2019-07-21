@@ -5,7 +5,6 @@ url: https://riskfirst.org/Silver-Bullets
 image: /images/generated/titles/Silver-Bullets.png
 featuredimage: images/generated/single/Silver-Bullets.png
 categories:
- - Front
  - Practices
 ---
 

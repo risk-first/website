@@ -6,15 +6,21 @@ layout: post
 	
 {{ content }}
 
+<section class="featured-articles">
+    <div class="section-title">
+        <h2>Category: <span class="text-capitalize">{{ page.cat }}</span></h2>
+    </div>
+    
+	<div class="row listrecent">
 
-<div class="row listrecent">
-	{% assign sorted_pages = site.pages | sort:"order" %}
-	{% for post in sorted_pages  %} 
-		{% for pc in post.categories %} 
-			{% if pc == page.cat %} 
-				{% include postbox.html %} 
-			{% endif %} 
+		{% assign sorted_pages = site.pages | sort:"order" %}
+		{% for post in sorted_pages  %} 
+			{% for pc in post.categories %} 
+				{% if pc == page.cat %} 
+					{% include postbox.html %} 
+				{% endif %} 
+			{% endfor %}
 		{% endfor %}
-	{% endfor %}
 	
-</div>
+	</div>
+</section>
