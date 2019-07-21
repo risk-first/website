@@ -5,8 +5,8 @@ url: https://riskfirst.org/A-Pattern-Language
 image: /images/generated/titles/A-Pattern-Language.png
 featuredimage: images/generated/single/A-Pattern-Language.png
 categories: 
+ - Book
  - Front
- - Thinking
 ---
 
 # A Pattern Language

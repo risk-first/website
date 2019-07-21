@@ -4,10 +4,9 @@ description: An introduction to the risks faced by software projects.
 url: https://riskfirst.org/Risk-Landscape
 image: /images/generated/titles/Risk-Landscape.png
 featuredimage: images/generated/single/Risk-Landscape.png
-order: 1
+date: 1-1-2018
 categories:
  - Book
- - Thinking
  - Risk
 ---
 

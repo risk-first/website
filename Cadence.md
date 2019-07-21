@@ -6,7 +6,8 @@ image: /images/generated/titles/Cadence.png
 featuredimage: images/generated/single/Cadence.png
 categories:
  - Book
- - Thinking
+ - Introduction
+order: 6
 ---
 
 # Cadence

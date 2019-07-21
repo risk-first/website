@@ -6,8 +6,7 @@ image: /images/generated/titles/Coding-Bets.png
 date: 04-06-2019
 featuredimage: images/generated/single/Coding-Bets.png
 categories:
- - Front
- - Thinking
+ - Practices
 ---
 
 # Coding Bets

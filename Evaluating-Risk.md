@@ -6,7 +6,8 @@ image: /images/generated/titles/Evaluating-Risk.png
 featuredimage: images/generated/single/Evaluating-Risk.png
 categories:
  - Book
- - Thinking
+ - Introduction
+order: 5
 ---
 
 # Evaluating Risk

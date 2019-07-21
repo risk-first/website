@@ -6,8 +6,7 @@ image: /images/generated/titles/Post-Agile.png
 featuredimage: images/generated/single/Post-Agile.png
 date: 16-07-2019
 categories:
- - Book
- - Thinking
+ - Practices
 ---
 
 # Post-Agile

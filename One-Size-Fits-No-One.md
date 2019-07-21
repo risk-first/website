@@ -6,7 +6,8 @@ image: /images/generated/titles/One-Size-Fits-No-One.png
 featuredimage: images/generated/single/One-Size-Fits-No-One.png
 categories:
  - Book
- - Thinking
+ - Introduction
+order: 8
 ---
 
 # One Size Fits No-One

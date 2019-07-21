@@ -1,12 +1,10 @@
 ---
-title: FAQ
+title: "Risk-First: Introduction"
 description: Some basic orientation to get you started with Risk-First.
 url: https://riskfirst.org/Introduction
 image: /images/generated/titles/Introduction.png
 categories:
  - Book
- - Introduction
- - Thinking
 featuredimage: images/generated/single/Introduction.png
 layout: categories
 cat: Introduction
@@ -48,4 +46,6 @@ Although this is a collaborative Github project, it's not meant to be an open-en
 
 ### Print Version
 
-[About _The Menagerie_](The-Menagerie.md)
+You can read all the material available here on Kindle or in Paperback.  [About _The Menagerie_](The-Menagerie.md)
+
+## Articles

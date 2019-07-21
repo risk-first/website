@@ -5,8 +5,7 @@ url: https://riskfirst.org/Structured-Thinking
 image: /images/generated/titles/Structured-Thinking.png
 featuredimage: images/generated/single/Structured-Thinking.png
 categories:
- - Front
- - Thinking
+ - Practices
 ---
 
 # Structured Thinking

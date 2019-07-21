@@ -4,7 +4,6 @@ description: A quick summary of the underlying theory behind Risk-First
 url: https://riskfirst.org/Quick-Summary
 image: /images/generated/titles/Quick-Summary.png
 categories: 
- - Introduction
  - Book
 featuredimage: images/generated/single/Quick-Summary.png
 ---

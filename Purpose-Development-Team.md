@@ -6,8 +6,7 @@ image: /images/generated/titles/Purpose-Development-Team.png
 date: 12-05-2019
 featuredimage: images/generated/single/Purpose-Development-Team.png
 categories:
- - Book
- - Thinking
+ - Practices
 ---
 
 # The Purpose Of The Development Team
