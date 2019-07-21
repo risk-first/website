@@ -4,6 +4,7 @@ description: Risks faced by depending on something else,  e.g. an event, process
 url: https://riskfirst.org/Dependency-Risk
 image: /images/generated/titles/Dependency-Risk.png
 featuredimage: images/generated/single/Dependency-Risk.png
+order: 5
 categories:
  - Book
  - Risk

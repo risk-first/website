@@ -1,26 +1,20 @@
 --- 
 title: "Categories" 
-layout: default 
+layout: post 
 ---
 
+	
+{{ content }}
+
+
 <div class="row listrecent">
-	{% for category in site.category_list %}
-		{% if (category == page.cat) %}
-			<div class="section-title col-md-12 mt-4">
-				<h2 id="{{ category[0] | replace: "","-" }}">
-					Category: <span class="text-capitalize">{{ category }}</span>
-				</h2>
-			</div>
-		
-			{% for post in site.pages %} 
+
+	{% for post in site.pages | sort: "order" %} 
+		{% for pc in post.categories %} 
+			{% if pc == page.cat %} 
 				{% include postbox.html %} 
-				{% for pc in post.categories %} 
-		
-						
-						
-				{% endfor %}
-			{% endfor %}
-		{% endif %}
+			{% endif %} 
+		{% endfor %}
 	{% endfor %}
 	
 </div>

@@ -4,6 +4,7 @@ description: Risks of losses or reputational damage caused by failing processes 
 url: https://riskfirst.org/Operational-Risk
 image: /images/generated/titles/Operational-Risk.png
 featuredimage: images/generated/single/Operational-Risk.png
+order: 14
 categories:
  - Book
  - Risk
