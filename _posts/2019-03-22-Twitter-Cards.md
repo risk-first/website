@@ -5,6 +5,8 @@ url: https://riskfirst.org/2019/03/22/Twitter-Cards
 image: /images/generated/titles/2019-03-22-Twitter-Cards.png
 author: rob
 date: 22-03-2019
+categories:
+ - News
 ---
 
 # Twitter Cards

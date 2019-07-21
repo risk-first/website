@@ -7,7 +7,9 @@ featuredimage: images/generated/single/One-Size-Fits-No-One.png
 categories:
  - Book
  - Introduction
+ - News
 order: 8
+date: 2019-01-22 16:32:03 +0000
 ---
 
 # One Size Fits No-One

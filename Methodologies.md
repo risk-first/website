@@ -25,6 +25,26 @@ With that in mind, we are going to examine several methodologies, and break them
 
 Show similarity between pattern and practice
 
+80 - 20 rule
+
+Doing work up front, thinking ahead - see my evernote article
+
+- image in email
+
+- always consider what risks there are 
+- try and mitigate the biggest risks first for the least effort (ie..e value)
+
+Turning one risk into another.
+
+e.g. planning mitigates one thing , gives you something else.
+
+
+Sign offs mitigate communication risk - back to protocols and interpretation again.
+
+Good-fast-cheap triangle
+
+
+risks beget other risks
 
 
 
@@ -64,4 +84,18 @@ Waterfall is a bunch of features.
 But, a lot of the practices end up being the same.
 
 
+
+### Part 4: [Methodologies](Methodologies.md)
+
+A more in-depth look at software methodologies and how their chosen practices reflect their position on what the most critical risks are. 
+
+ - [Introduction](Methodologies.md)
+ - [Waterfall](Waterfall.md)
+ - Extreme Programming
+ - Scrum
+ - Lean
+ - PMBoK and Prince2
+ - Programming, Motherf
+ - DevOps
+ - 12 Factor
 

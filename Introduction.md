@@ -32,6 +32,8 @@ Hopefully, after reading through some of the articles here, you'll come away wit
 - ["Software Development Is All About Risk" - Kent Beck](All-About-Risk.md)
 - [Who Is This For?](Audience.md)
 - [Quick, High-Level Summary](Quick-Summary.md)
+- [About _The Menagerie_](The-Menagerie.md) (Print & Kindle Editions)
+
 
 ### Contributing
 
@@ -43,9 +45,5 @@ Although this is a collaborative Github project, it's not meant to be an open-en
 - **["Star"ing the project](https://github.com/risk-first/website/stargazers)**: this will cause you to be invited to join the Risk-First organisation
 
 [List of Contributors](Contributors.md)
+[Authors](Authors.md)
 
-### Print Version
-
-You can read all the material available here on Kindle or in Paperback.  [About _The Menagerie_](The-Menagerie.md)
-
-## Articles
