@@ -8,8 +8,8 @@ layout: post
 
 
 <div class="row listrecent">
-
-	{% for post in site.pages | sort: "order" %} 
+	{% assign sorted_pages = site.pages | sort:"order" %}
+	{% for post in sorted_pages  %} 
 		{% for pc in post.categories %} 
 			{% if pc == page.cat %} 
 				{% include postbox.html %} 

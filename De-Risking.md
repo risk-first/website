@@ -6,7 +6,8 @@ image: /images/generated/titles/De-Risking.png
 featuredimage: images/generated/single/De-Risking.png
 categories:
  - Book
- - Thinking
+ - Introduction
+order: 6
 ---
 
 # De-Risking

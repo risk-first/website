@@ -7,6 +7,7 @@ categories:
  - Introduction
  - Book
 featuredimage: images/generated/single/A-Simple-Scenario.png
+order: 1
 ---
 
 # A Simple Scenario

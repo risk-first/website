@@ -6,7 +6,8 @@ image: /images/generated/titles/Meeting-Reality.png
 featuredimage: images/generated/single/Meeting-Reality.png
 categories:
  - Book
- - Thinking
+ - Introduction
+order: 3
 ---
 
 # Meeting Reality

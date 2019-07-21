@@ -6,7 +6,8 @@ image: /images/generated/titles/Just-Risk.png
 featuredimage: images/generated/single/Just-Risk.png
 categories:
  - Book
- - Thinking
+ - Introduction
+order: 4
 ---
 
 # Just Risk
