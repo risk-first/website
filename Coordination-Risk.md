@@ -4,6 +4,7 @@ description: Risks that a group of agents cannot work together and their behavio
 url: https://riskfirst.org/Coordination-Risk
 image: /images/generated/titles/Coordination-Risk.png
 featuredimage: images/generated/single/Coordination-Risk.png
+order: 12
 categories:
  - Book
  - Risk

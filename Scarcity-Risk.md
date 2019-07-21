@@ -4,6 +4,7 @@ description: Scarcity Risk is about quantities of a dependency, and specifically
 url: https://riskfirst.org/Scarcity-Risk
 image: /images/generated/titles/Scarcity-Risk.png
 featuredimage: images/generated/single/Scarcity-Risk.png
+order: 6
 categories:
  - Book
  - Risk

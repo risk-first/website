@@ -4,6 +4,7 @@ description: Risks due to the following a particular protocol of communication w
 url: https://riskfirst.org/Process-Risk
 image: /images/generated/titles/Process-Risk.png
 featuredimage: images/generated/single/Process-Risk.png
+order: 9
 categories:
  - Book
  - Risk

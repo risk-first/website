@@ -1,17 +1,19 @@
 ---
 title: FAQ
 description: Some basic orientation to get you started with Risk-First.
-url: https://riskfirst.org/FAQ
-image: /images/generated/titles/FAQ.png
+url: https://riskfirst.org/Introduction
+image: /images/generated/titles/Introduction.png
 categories:
  - Book
  - Introduction
  - Thinking
-featuredimage: images/generated/single/FAQ.png
+featuredimage: images/generated/single/Introduction.png
+layout: categories
+cat: Introduction
 ---
 
 
-# Risk-First: An FAQ
+# Risk-First: Introduction
 
 Scrum, Waterfall, Lean, Prince2, DevOps:  what do they all have in common?  
 

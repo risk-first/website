@@ -4,6 +4,7 @@ description: Risks caused by the weight of complexity in the systems we create, 
 url: https://riskfirst.org/Complexity-Risk
 image: /images/generated/titles/Complexity-Risk.png
 featuredimage: images/generated/single/Complexity-Risk.png
+order: 4
 categories:
  - Book
  - Risk
