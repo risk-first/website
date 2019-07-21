@@ -6,7 +6,7 @@ image: /images/generated/titles/A-Simple-Scenario.png
 categories: 
  - Introduction
  - Book
-featuredimage: images/generated/single/backgrounds/trianglify-lowres.png
+featuredimage: images/generated/single/A-Simple-Scenario.png
 ---
 
 # A Simple Scenario

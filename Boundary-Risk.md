@@ -3,6 +3,7 @@ title: Boundary Risk
 description: Risk due to the choices we make around dependencies, and the limitations they place on our ability to change.
 url: https://riskfirst.org/Boundary-Risk
 image: /images/generated/titles/Boundary-Risk.png
+featuredimage: images/generated/single/Boundary-Risk.png
 categories:
  - Book
  - Risk

@@ -6,6 +6,7 @@ image: /images/generated/titles/All-About-Risk.png
 categories: 
  - Thinking
  - Front
+featuredimage: images/generated/single/All-About-Risk.png
 ---
 
 

@@ -3,6 +3,7 @@ title: Development Process
 description: An example of how a development process reduces risk on a software project. 
 url: https://riskfirst.org/Development-Process
 image: /images/generated/titles/Development-Process.png
+featuredimage: images/generated/single/Development-Process.png
 categories:
  - Book
  - Thinking

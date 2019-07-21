@@ -5,6 +5,7 @@ url: https://riskfirst.org/Audience
 image: /images/generated/titles/Audience.png
 categories: 
  - Front
+featuredimage: images/generated/single/Audience.png
 ---
 
 # Audience 

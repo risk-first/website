@@ -4,6 +4,7 @@ description: How Coding, Investing and Gambling are similar undertakings.
 url: https://riskfirst.org/Coding-Bets
 image: /images/generated/titles/Coding-Bets.png
 date: 04-06-2019
+featuredimage: images/generated/single/Coding-Bets.png
 categories:
  - Front
  - Thinking

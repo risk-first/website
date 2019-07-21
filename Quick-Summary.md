@@ -6,7 +6,7 @@ image: /images/generated/titles/Quick-Summary.png
 categories: 
  - Introduction
  - Book
-featuredimage: images/generated/single/backgrounds/trianglify-lowres.png 
+featuredimage: images/generated/single/Quick-Summary.png
 ---
 
 # Quick Summary

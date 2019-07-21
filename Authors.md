@@ -5,6 +5,7 @@ url: https://riskfirst.org/Authors
 image: /images/generated/titles/Authors.png
 categories:
  - Front
+featuredimage: images/generated/single/Authors.png
 ---
 
 Currently, all articles authored by [Rob Moffat](https://github.com/robmoffat)

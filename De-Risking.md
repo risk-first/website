@@ -3,6 +3,7 @@ title: De-Risking
 description: Terms to use when talking about risk on a project.
 url: https://riskfirst.org/De-Risking
 image: /images/generated/titles/De-Risking.png
+featuredimage: images/generated/single/De-Risking.png
 categories:
  - Book
  - Thinking
