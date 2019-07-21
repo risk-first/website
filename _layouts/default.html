@@ -65,32 +65,24 @@ ga('send', 'pageview');
 
             <ul class="navbar-nav ml-auto">
 
-                {% if page.url == "/" %}
-                <li class="nav-item active">
-                {% else %}
                 <li class="nav-item">
-                {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/index.html">Blog</a>
+                <a target="_blank" class="nav-link" href="/FAQ"><i class="fas fa-play-circle"></i> Intro</a>
+                </li>
+
+                <li class="nav-item nav-item-black">
+                <a target="_blank" class="nav-link" href="/categories/Risks"><i class="fas fa-exclamation-triangle"></i> Risks</a>
+                </li>
+
+                <li class="nav-item nav-item-black">
+                <a target="_blank" class="nav-link" href="/categories/Practices"><i class="fas fa-lightbulb"></i> Thinking</a>
                 </li>
 
                 <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
-                </li>
-
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/"> Docs</a>
-                </li>
-
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://www.wowthemes.net/themes/mediumish-wordpress/"><i class="fab fa-wordpress-simple"></i> WP Version</a>
-                </li>
-
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://www.wowthemes.net/themes/mediumish-ghost/"><i class="fab fa-snapchat-ghost"></i> Ghost Version</a>
-                </li>
-
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://github.com/wowthemesnet/mediumish-theme-jekyll"><i class="fab fa-github"></i> Fork on Github</a>
+	                <div class="buttons nav-link github-buttons">
+						<a class="github-button" data-size="large" href="https://github.com/risk-first/website/subscription" data-icon="octicon-eye" data-show-count="true" aria-label="Watch risk-first/website on GitHub">Watch</a>
+						<a class="github-button" data-size="large"  href="https://github.com/risk-first/website/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork risk-first/website on GitHub">Fork</a>      
+						<a data-size="large"  title="Please star this project in github to be invited to join the Risk First organisation" class="github-button" href="https://github.com/risk-first/website/stargazers" data-icon="octicon-star" aria-label="Stargazers risk-first/website on GitHub">Stars</a>
+					</div>
                 </li>
 
                 {% include search-lunr.html %}
@@ -180,6 +172,8 @@ ga('send', 'pageview');
 {% if page.layout == 'post' %}
 <script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
 {% endif %}
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
 
 </body>
 </html>
