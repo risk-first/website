@@ -11,7 +11,7 @@ categories:
 
 # Complexity Risk
 
-[Complexity Risk](Complexity-Risk.md) is the [risks](Glossary.md#risk) to your project due to its underlying "complexity". <!-- tweet-end --> This section will break down exactly what we mean by complexity, and where it can hide on a software project, and look at some ways in which we can manage this important risk.
+[Complexity Risk](Complexity-Risk.md) is the [risk](Glossary.md#risk) to your project due to its underlying "complexity". <!-- tweet-end --> This section will break down exactly what we mean by complexity, and where it can hide on a software project, and look at some ways in which we can manage this important risk.
 
 ## Codebase Risk
 

@@ -7,6 +7,7 @@ author: rob
 date: 14-5-2019
 categories:
  - News
+featuredimage: images/generated/single/News.png
 ---
 
 # Consuming Hacker News
