@@ -72,9 +72,11 @@ post_class: post-template
                 	{% if page.categories %}
 	                    {% assign sortedCategories = page.categories | sort %}
 	                    {% for category in sortedCategories %}
+	                    {% if category != 'Post' %}
 	                    <li>
 	                        <a class="smoothscroll" href="{{site.baseurl}}/{{ category | replace: " ","-" }}">{{ category }}</a>
 	                    </li>
+	                    {% endif %}
 	                    {% endfor %}
 	                {% endif %}
                 </ul>
