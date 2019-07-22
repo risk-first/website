@@ -5,7 +5,6 @@ url: https://riskfirst.org/Glossary-Of-Risk-Types
 image: /images/generated/titles/Glossary-Of-Risk-Types.png
 featuredimage: images/generated/single/Glossary-Of-Risk-Types.png
 categories:
- - Book
  - Risk
 order: 16
 ---

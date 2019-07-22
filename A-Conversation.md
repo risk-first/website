@@ -6,7 +6,6 @@ image: /images/generated/titles/A-Conversation.png
 featuredimage: images/generated/single/A-Conversation.png
 categories: 
  - Introduction
- - Book
 order: 7
 ---
 

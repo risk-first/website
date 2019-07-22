@@ -5,7 +5,6 @@ url: https://riskfirst.org/A-Simple-Scenario
 image: /images/generated/titles/A-Simple-Scenario.png
 categories: 
  - Introduction
- - Book
 featuredimage: images/generated/single/A-Simple-Scenario.png
 order: 1
 ---

@@ -5,7 +5,6 @@ url: https://riskfirst.org/Cadence
 image: /images/generated/titles/Cadence.png
 featuredimage: images/generated/single/Cadence.png
 categories:
- - Book
  - Introduction
 order: 6
 ---

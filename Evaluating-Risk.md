@@ -5,7 +5,6 @@ url: https://riskfirst.org/Evaluating-Risk
 image: /images/generated/titles/Evaluating-Risk.png
 featuredimage: images/generated/single/Evaluating-Risk.png
 categories:
- - Book
  - Introduction
 order: 5
 ---

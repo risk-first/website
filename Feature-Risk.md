@@ -6,7 +6,6 @@ image: /images/generated/titles/Feature-Risk.png
 featuredimage: images/generated/single/Feature-Risk.png
 order: 2
 categories:
- - Book
  - Risk
 ---
 

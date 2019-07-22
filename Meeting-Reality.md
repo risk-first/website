@@ -5,7 +5,6 @@ url: https://riskfirst.org/Meeting-Reality
 image: /images/generated/titles/Meeting-Reality.png
 featuredimage: images/generated/single/Meeting-Reality.png
 categories:
- - Book
  - Introduction
 order: 3
 ---

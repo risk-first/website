@@ -6,7 +6,6 @@ image: /images/generated/titles/Deadline-Risk.png
 featuredimage: images/generated/single/Deadline-Risk.png
 order: 7
 categories:
- - Book
  - Risk
 ---
 

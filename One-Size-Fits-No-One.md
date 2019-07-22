@@ -5,7 +5,6 @@ url: https://riskfirst.org/One-Size-Fits-No-One
 image: /images/generated/titles/One-Size-Fits-No-One.png
 featuredimage: images/generated/single/One-Size-Fits-No-One.png
 categories:
- - Book
  - Introduction
  - News
 order: 8

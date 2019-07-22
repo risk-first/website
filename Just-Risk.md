@@ -5,7 +5,6 @@ url: https://riskfirst.org/Just-Risk
 image: /images/generated/titles/Just-Risk.png
 featuredimage: images/generated/single/Just-Risk.png
 categories:
- - Book
  - Introduction
 order: 4
 ---
