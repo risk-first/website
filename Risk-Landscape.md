@@ -6,7 +6,6 @@ image: /images/generated/titles/Risk-Landscape.png
 featuredimage: images/generated/single/Risk-Landscape.png
 date: 1-1-2018
 categories:
- - Book
  - Risk
 ---
 

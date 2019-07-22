@@ -3,8 +3,6 @@ title: "Risk-First: Introduction"
 description: Some basic orientation to get you started with Risk-First.
 url: https://riskfirst.org/Introduction
 image: /images/generated/titles/Introduction.png
-categories:
- - Book
 featuredimage: images/generated/single/Introduction.png
 layout: categories
 cat: Introduction

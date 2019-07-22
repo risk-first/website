@@ -5,7 +5,8 @@ url: https://riskfirst.org/The-Menagerie
 image: /images/generated/titles/The-Menagerie.png
 featuredimage: images/cover_image_featured.png
 categories: 
- - Book
+ - Front
+order: 6
 ---
 
 # The Menagerie

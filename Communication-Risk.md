@@ -6,7 +6,6 @@ image: /images/generated/titles/Communication-Risk.png
 featuredimage: images/generated/single/Communication-Risk.png
 order: 3
 categories:
- - Book
  - Risk
 ---
 

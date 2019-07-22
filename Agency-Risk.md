@@ -5,7 +5,6 @@ url: https://riskfirst.org/Agency-Risk
 image: /images/generated/titles/Agency-Risk.png
 categories:
  - Risk
- - Book
 featuredimage: images/generated/single/Agency-Risk.png
 order: 11
 ---
