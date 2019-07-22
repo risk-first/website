@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Home
 ---
 
@@ -11,7 +11,7 @@ title: Home
     <div class="section-title">
         <h2><span>Start Here!</span></h2>
     </div>
-    <div class="row">
+    <div class="row listrecent">
     {% assign sorted_pages = site.pages | sort:"order" %}
 	{% for post in sorted_pages %}
       	{% for pc in post.categories %}
@@ -45,7 +45,7 @@ title: Home
         <h2><span>Recent Articles</span></h2>
     </div>
     
-    <div class="row">
+    <div class="row listrecent">
 	{% for post in sorted_pages %}
     	{% include postbox.html %}
     {% endfor %}

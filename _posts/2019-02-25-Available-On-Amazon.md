@@ -7,6 +7,7 @@ author: rob
 date: 25-2-2019
 categories:
  - News
+featuredimage: images/generated/single/News.png
 ---
 
 # Available On Amazon

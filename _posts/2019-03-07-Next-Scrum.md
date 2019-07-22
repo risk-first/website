@@ -7,6 +7,7 @@ author: rob
 date: 07-03-2019
 categories:
  - News
+featuredimage: images/generated/single/News.png
 ---
 
 # Next: Scrum?

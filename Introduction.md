@@ -39,9 +39,10 @@ If you feel something important is missing, or you spot a mistake, [we need help
 
 Although this is a collaborative Github project, it's not meant to be an open-ended discussion of software techniques like [Ward's Wiki](http://wiki.c2.com).  In order to be concise and useful, discussions need to be carried out by either:
 
-- **[Opening an Issue](https://github.com/risk-first/website/issues).**
-- **["Star"ing the project](https://github.com/risk-first/website/stargazers)**: this will cause you to be invited to join the Risk-First organisation
+ - **[Opening an Issue](https://github.com/risk-first/website/issues).**
+ - **["Star"ing the project](https://github.com/risk-first/website/stargazers)**: this will cause you to be invited to join the Risk-First organisation
 
-[List of Contributors](Contributors.md)
-[Authors](Authors.md)
+
+ - [List of Contributors](Contributors.md)
+ - [Authors](Authors.md)
 
