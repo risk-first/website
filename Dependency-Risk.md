@@ -6,7 +6,6 @@ image: /images/generated/titles/Dependency-Risk.png
 featuredimage: images/generated/single/Dependency-Risk.png
 order: 5
 categories:
-
  - Risk
 ---
 

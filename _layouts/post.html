@@ -56,6 +56,13 @@ post_class: post-template
                 {{content}}
             </div>
 
+            <p>
+            <i>
+            If you would like more Risk-First news please <a href="https://github.com/risk-first/website/stargazers">Add Your Star <i class="fas fa-star"></i> On GitHub</a> to receive a team invite.
+            </i>
+            </p>
+
+
             <!-- Post Date -->
             <p>
             <small>
@@ -73,9 +80,11 @@ post_class: post-template
 	                    {% assign sortedCategories = page.categories | sort %}
 	                    {% for category in sortedCategories %}
 	                    {% if category != 'Post' %}
+	                    {% if category != 'News' %}
 	                    <li>
 	                        <a class="smoothscroll" href="{{site.baseurl}}/{{ category | replace: " ","-" }}">{{ category }}</a>
 	                    </li>
+	                    {% endif %}
 	                    {% endif %}
 	                    {% endfor %}
 	                {% endif %}
@@ -109,6 +118,8 @@ post_class: post-template
             <div class="clearfix"></div>
             </div>
             <!-- End Categories -->
+            
+
 
         </div>
         <!-- End Post -->
