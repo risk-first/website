@@ -52,7 +52,8 @@ component,
 channel-artifact,
 internal-model-artifact,
 protocol-artifact,
-agent-artifact {
+agent-artifact,
+image-artifact {
 	kite9-type: container;
 	kite9-margin: 10pt;
 	kite9-link-inset: 10pt;
@@ -63,6 +64,10 @@ agent-artifact {
 	kite9-padding: 10pt; 
 	kite9-connection-align: 50%;
 	kite9-min-size: 110pt 140pt;	
+}
+
+image-artifact {
+	kite9-template: url(template.svg#image-artifact);
 }
 
 agent-artifact {
@@ -296,13 +301,13 @@ risk.methodology {
 	kite9-template: url(template.svg#methodology);
 }
 
-book1 {
+big-image {
 	kite9-margin: 10pt;
 	kite9-link-inset: 10pt;
 	kite9-link-gutter: 10pt;
 	kite9-type: container;
 	kite9-layout: vertical;	
-	kite9-template: url(template.svg#book1);
+	kite9-template: url(template.svg#big-image);
 	kite9-padding: 10pt; 
 	kite9-connection-align: 50%;
 	kite9-min-size: 110pt 140pt;
