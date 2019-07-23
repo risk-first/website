@@ -7,7 +7,7 @@ categories:
  - Front
 order: 1
 featuredimage: images/generated/single/All-About-Risk.png
-next.url: /A-Pattern-Language.md
+next: A-Pattern-Language
 ---
 
 

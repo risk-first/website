@@ -106,14 +106,28 @@ post_class: post-template
                 </ul>
             </div>
             <!-- End Tags -->
-
             <!-- Prev/Next -->
+            
+            {% assign matchcat = page.categories[0] %} 
+	        {% assign prevno = page.order | minus: 1 %}
+            {% assign nextno = page.order | plus: 1 %}
+            {% for page in site.pages %}
+            	{% if page.categories contains matchcat %}
+            		{% if page.order == prevno %}
+            			{% assign previous = page %}
+            		{% endif %}
+            		{% if page.order == nextno %}
+            			{% assign next = page %}
+            		{% endif %}
+            	{% endif %}
+            {% endfor %}
+                   
             <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
-            {% if page.previous.url %}
-            <a class="prev d-block col-md-6" href="{{ site.baseurl }}/{{page.previous.url}}"> &laquo; {{page.previous.title}}</a>
+            {% if previous %}
+            <a class="prev d-block col-md-6" href="{{ site.baseurl }}{{previous.url}}"> &laquo; {{previous.title}}</a>
             {% endif %}
-            {% if page.next.url %}
-            <a class="next d-block col-md-6 text-lg-right" href="{{ site.baseurl }}/{{page.next.url}}">{{page.next.title}} &raquo; </a>
+            {% if next %}
+            <a class="next d-block col-md-6 text-lg-right" href="{{ site.baseurl }}{{next.url}}">{{next.title}} &raquo; </a>
             {% endif %}
             <div class="clearfix"></div>
             </div>
