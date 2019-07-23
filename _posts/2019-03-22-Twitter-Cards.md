@@ -7,7 +7,7 @@ author: rob
 date: 22-03-2019
 categories:
  - News
-featuredimage: images/generated/single/News.png
+featuredimage: images/generated/single/Twitter-Cards.png
 ---
 
 # Twitter Cards

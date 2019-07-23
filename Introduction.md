@@ -6,6 +6,9 @@ image: /images/generated/titles/Introduction.png
 featuredimage: images/generated/single/Introduction.png
 layout: categories
 cat: Introduction
+categories:
+ - Front
+order: 5
 ---
 
 
