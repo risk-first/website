@@ -3,7 +3,7 @@ title: The Menagerie
 description: Description of Risk-First Software Development Volume 1 The Menagerie
 url: https://riskfirst.org/The-Menagerie
 image: /images/generated/titles/The-Menagerie.png
-featuredimage: images/cover_image_featured.png
+featuredimage: images/generated/single/The-Menagerie.png
 categories: 
  - Front
 order: 6
