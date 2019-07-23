@@ -71,10 +71,11 @@ Risks are often very similar across different software projects.   And, if you k
 ### Glossary
 
  - [Glossary Of Risk Types](Glossary-Of-Risk-Types.md)
- - [Glossary Of Terms](Glossary-Of-Terms.md)
+ - [Glossary Of Terms](Glossary.md)
  
 ## What's Next?
 
+Look forward to **Risk-First Software Development Volume 2: Tools & Practices** in 2020...
 
 
  
