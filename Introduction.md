@@ -1,6 +1,6 @@
 ---
 title: "Risk-First: Introduction"
-description: Some basic orientation to get you started with Risk-First.
+description: The main concepts and ideas underlying Risk-First
 url: https://riskfirst.org/Introduction
 image: /images/generated/titles/Introduction.png
 featuredimage: images/generated/single/Introduction.png
