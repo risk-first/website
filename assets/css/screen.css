@@ -940,7 +940,49 @@ table th {
 	border: 1px solid black;
 }
 
-@media (min-width: 1200px) {
-    .container-inner {
-        max-width: 970px;
-    }
+/** Added by Rob For Slides */
+
+/* Layout for simple output 
+   ========================================================================== */
+
+.slide {
+  padding: 2em 0;
+}
+
+.slide-image {
+  margin-bottom: 2em;
+}
+
+.slide .slide-notes p:first-child {
+  margin-top: 0;
+}
+
+@media (min-width: 800px) {
+
+  .slide {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .slide .slide-image {
+    width: 48%;
+    margin-bottom: 0;
+  }
+
+  .slide .slide-notes {
+    width: 48%;
+  }
+
+}
+
+.credits {
+  opacity: 0.5;
+}
+
+.slide--bordered {
+  border-bottom: 1px solid #CCC;
+}
+
+.slide-image img {
+  border: 1px solid rgba(0,0,0,0.1);
+}
