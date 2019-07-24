@@ -52,7 +52,8 @@ component,
 channel-artifact,
 internal-model-artifact,
 protocol-artifact,
-agent-artifact {
+agent-artifact,
+image-artifact {
 	kite9-type: container;
 	kite9-margin: 10pt;
 	kite9-link-inset: 10pt;
@@ -63,6 +64,10 @@ agent-artifact {
 	kite9-padding: 10pt; 
 	kite9-connection-align: 50%;
 	kite9-min-size: 110pt 140pt;	
+}
+
+image-artifact {
+	kite9-template: url(template.svg#image-artifact);
 }
 
 agent-artifact {
@@ -296,6 +301,17 @@ risk.methodology {
 	kite9-template: url(template.svg#methodology);
 }
 
+big-image {
+	kite9-margin: 10pt;
+	kite9-link-inset: 10pt;
+	kite9-link-gutter: 10pt;
+	kite9-type: container;
+	kite9-layout: vertical;	
+	kite9-template: url(template.svg#big-image);
+	kite9-padding: 10pt; 
+	kite9-connection-align: 50%;
+	kite9-min-size: 110pt 140pt;
+}
 
 risk-box {
 	kite9-margin: 10pt;
@@ -322,31 +338,15 @@ diagram {
 }
 
 diagram.bg1 {
-	kite9-template: url(template.svg#diagram-image) 'blue-3';
+	kite9-template: url(template.svg#diagram-image) 'vecteezy-5.jpg';
 }
 
 diagram.bg2 {
-	kite9-template: url(template.svg#diagram-image) 'blue-2';
+	kite9-template: url(template.svg#diagram-image) 'vecteezy-1.jpg';
 }
 
 diagram.bg3 {
-	kite9-template: url(template.svg#diagram-image) 'grey-1';
-}
-
-diagram.bg4 {
-	kite9-template: url(template.svg#diagram-image) 'grue-2';
-}
-
-diagram.bg5 {
-	kite9-template: url(template.svg#diagram-image) 'pink-2';
-}
-
-diagram.bg6 {
-	kite9-template: url(template.svg#diagram-image) 'yellow-2';
-}
-
-diagram.ow {
-	kite9-template: url(template.svg#diagram-image) 'ow-1';
+	kite9-template: url(template.svg#diagram-image) 'vecteezy-3.jpg';
 }
 
 image {
