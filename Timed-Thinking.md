@@ -39,7 +39,7 @@ Now, this may well be obvious to a lot of people already, a critiscm you could l
  - You’re training yourself to think constantly on a single topic for 30 minutes without recourse to the internet.
  - By writing down everything as you go, you’re creating a feedback loop with the “supervisory” parts of your brain. They'll notice when you stop paying attention and get you back on track.
  - When your imagination suggests some crazy idea, the only way you can test this idea is against your Internal Model.  The great thing about only relying on this is that the feedback loop is instant: you can write down a statement and immediately pick it apart.   In Risk-First, we talk about Unit Tests having a short feedback loop, but  honestly this is as short as it gets.   
- - Because of that, you can cover a lot of ground, and reduce the state-space very quickly.   It’s all very well working on a project and trying out some [Spike Solutions]() to decide which way to go, but quite often you can trim the search space just by thinking really hard around the subject.
+ - Because of that, you can cover a lot of ground, and reduce the state-space very quickly.   It’s all very well working on a project and trying out some [Spike Solutions](Coding-Bets.md#spike-solutions-a-new-technology-bet) to decide which way to go, but quite often you can trim the search space just by thinking really hard around the subject.
 
 ## Examples
 
@@ -55,11 +55,11 @@ Ideally, you'll want to perform debugging experiments that -whatever the outcome
 
 ### Designing
 
-As you might expect, a [Risk-First]() approach to software design would be one where you don't introduce unnecessary risk to your project, be it in the form of [Dependency Risks]() (try not to add them), [Complexity Risks]() (keep the codebase nice and tight), [Feature Risks]() (make sure you're building the right thing) and so on.  
+As you might expect, a [Risk-First](https://riskfirst.org) approach to software design would be one where you don't introduce unnecessary risk to your project, be it in the form of [Dependency Risks](Dependency-Risk.md) (try not to add them), [Complexity Risks](Complexity-Risk.md) (keep the codebase nice and tight), [Feature Risks](Feature-Risk.md) (make sure you're building the right thing) and so on.  
 
 It's tempting to just throw code together and then hammer out the issues as you go.  Maybe even, this is how some people think Agile should work.   
 
-But you can do a lot of work up-front with Timed Thinking.  Take your design.   Think hard about it using the above technique.  Consider all the [Risks]() from the Risk-First collection.  Work out which ones are going to sink you.  Can you re-design to avoid them entirely?  Probably you can.
+But you can do a lot of work up-front with Timed Thinking.  Take your design.   Think hard about it using the above technique.  Consider all the [Risks](Risk-Landscape.md) from the Risk-First collection.  Work out which ones are going to sink you.  Can you re-design to avoid them entirely?  Probably you can.
 
 You can also think about this from a constraints point-of-view.  Start the session by enumerating all the constraints you are under.  Then, start to try and design within the space that's left.   Or, start with the design _you already have in mind_ and subject it to all the constraints you can think of.  Even within half an hour, this can be tremendously insightful.
 
@@ -73,7 +73,7 @@ The reason I get paralysed is that none of that is enumerated on the to-do list 
 
 Timed Thinking is a relatively organised approach to thinking.  Maybe its even "forcing" a process that happens naturally.   
 
-As Rich Hickey discusses in [Hammock-Based Development](), sleeping is a great way of problem solving.  I frequently find myself knowing the solution to problems first-thing in the morning.  
+As Rich Hickey discusses in [Hammock-Driven Development](https://www.youtube.com/watch?v=f84n5oFoZBc), sleeping is a great way of problem solving.  I frequently find myself knowing the solution to problems first-thing in the morning.  
 
 Another strategy I find particularly useful is "goofing-off".  When faced with a development problem which doesn't yield to the usual approach of everyday hammering-at-the-keyboard, I'll usually just goof-off for about ten minutes, checking out a website or texting.  
 
@@ -83,6 +83,6 @@ Somehow, this is often enough time for my subconscious brain to solve the proble
 
 - This shares a lot of the hallmarks of [Brainstorming](https://en.wikipedia.org/wiki/Brainstorming), where people throw ideas at a white-board in a room, or [Brainwriting](https://en.wikipedia.org/wiki/6-3-5-Brainwriting) where people _write_ their ideas down and share them on paper, in order to avoid the problem of certain dominant personalities taking over the process.  Timed Thinking (as I practice it) is a solo pursuit - how you would handle reporting back results, or combining the inputs of a whole team is an open question.
 
-- Agile de-prioritises planning and strategy in favour of, well, agility. "Responding to change over following a plan" as the [Agile Manifesto]() has it.  But, a lot of the complaints I hear within the teams I am in is that people in positions of responsibility _aren't doing enough deep thinking_, possibly because their calendars are chock-full of meetings.   Is there a case for making thinking time an Agile practice?  And using Timed Thinking as a way to make sure it happens?   There doesn't seem to be any Practice like Timed Thinking.   Could we improve our process by incorporating sessions like this?
+- Agile de-prioritises planning and strategy in favour of, well, agility. "Responding to change over following a plan" as the [Agile Manifesto](https://agilemanifesto.org) has it.  But, a lot of the complaints I hear within the teams I am in is that people in positions of responsibility _aren't doing enough deep thinking_, possibly because their calendars are chock-full of meetings.   Is there a case for making thinking time an Agile practice?  And using Timed Thinking as a way to make sure it happens?   There doesn't seem to be any Practice like Timed Thinking.   Could we improve our process by incorporating sessions like this?
 
 
