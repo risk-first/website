@@ -1,22 +1,24 @@
 ---
-title: Structured Thinking
+title: Timed Thinking
 description: A handy approach for getting serious thinking done, despite the distractions of the modern world.
-url: https://riskfirst.org/Structured-Thinking
-image: /images/generated/titles/Structured-Thinking.png
-featuredimage: images/generated/single/Structured-Thinking.png
+url: https://riskfirst.org/Timed-Thinking
+image: /images/generated/titles/Timed-Thinking.png
+featuredimage: images/generated/single/Timed-Thinking.png
 categories:
  - Practices
+ - News
+date: 2019-07-25 16:32:03 +0000
 ---
 
-# Structured Thinking
+# Timed Thinking
 
 This isn’t a normal [Risk-First](https://risk-first.org) article, but I wanted to get this out there anyway, because I’ve not seen this discussed much before, and actually, it has a big impact on the way I develop software, so you might find some use out of it too.
 
-I want to discuss a method which I’m going to call “Structured Thinking” (really just the first term that came into my head) an approach I’ve used over the last few years along with regular journal-keeping and creating to-do lists to organise my thoughts and my time.  I find it especially useful in times of anxiety or indecision, or when trying to prune design-space for some software I want to build.
+I want to discuss a method which I’m going to call “Timed Thinking” (really just the first term that came into my head) an approach I’ve used over the last few years along with regular journal-keeping and creating to-do lists to organise my thoughts and my time.  I find it especially useful in times of anxiety or indecision, or when trying to prune design-space for some software I want to build.
 
 Now, this may well be obvious to a lot of people already, a critiscm you could level at much of the content on [Risk-First](https://risk-first.org).  There's no huge innovation or insight here, but after a bit of searching, I couldn't find documentation on anything like this.  (Aside:  [MindTools.com](https://www.mindtools.com) seems to be a fairly exhaustive list of tools-for-thinking).  So if people can get excited about something as mundane as [Getting Things Done (GTD)](http://gettingthingsdone.com) then perhaps people can find value in this.
 
-## How To Do Structured-Thinking
+## How To Do Timed Thinking
 
 1. Get a large pad of paper and a pencil.
 2. Create a time-box of 30 minutes (set a time on your phone).  Remove all distractions such as the Internet (i.e. aeroplane mode), family, pets etc.  Don't be at your desk.  
@@ -57,7 +59,7 @@ As you might expect, a [Risk-First]() approach to software design would be one w
 
 It's tempting to just throw code together and then hammer out the issues as you go.  Maybe even, this is how some people think Agile should work.   
 
-But you can do a lot of work up-front with structured thinking.  Take your design.   Think hard about it using the above technique.  Consider all the [Risks]() from the Risk-First collection.  Work out which ones are going to sink you.  Can you re-design to avoid them entirely?  Probably you can.
+But you can do a lot of work up-front with Timed Thinking.  Take your design.   Think hard about it using the above technique.  Consider all the [Risks]() from the Risk-First collection.  Work out which ones are going to sink you.  Can you re-design to avoid them entirely?  Probably you can.
 
 You can also think about this from a constraints point-of-view.  Start the session by enumerating all the constraints you are under.  Then, start to try and design within the space that's left.   Or, start with the design _you already have in mind_ and subject it to all the constraints you can think of.  Even within half an hour, this can be tremendously insightful.
 
@@ -65,22 +67,22 @@ You can also think about this from a constraints point-of-view.  Start the sessi
 
 I keep a to-do list at work, but I find it quite easy to get caught in a position of not knowing what to do next:   there are things that take a long time, things that are urgent, things that are important, things that depend on other things, things that look like they might be important but actually aren't, things that I look forward to doing and things that I don't, things that I could delegate and things that need to be done at certain times.
 
-The reason I get paralysed is that none of that is enumerated on the to-do list itself.  Even if it were, I would need to load the whole thing explicitly into short-term memory in order to manipulate the graph and untangle it.   Which is a lot of work in itself, but is totally tractable within a half-hour focused "Structured Thinking" session.
+The reason I get paralysed is that none of that is enumerated on the to-do list itself.  Even if it were, I would need to load the whole thing explicitly into short-term memory in order to manipulate the graph and untangle it.   Which is a lot of work in itself, but is totally tractable within a half-hour focused Timed Thinking session.
 
 ## Other Types of Thinking
 
-"Structured Thinking" is a very organised approach to thinking.  Maybe its even "forcing" a process that happens naturally.   
+Timed Thinking is a relatively organised approach to thinking.  Maybe its even "forcing" a process that happens naturally.   
 
 As Rich Hickey discusses in [Hammock-Based Development](), sleeping is a great way of problem solving.  I frequently find myself knowing the solution to problems first-thing in the morning.  
 
 Another strategy I find particularly useful is "goofing-off".  When faced with a development problem which doesn't yield to the usual approach of everyday hammering-at-the-keyboard, I'll usually just goof-off for about ten minutes, checking out a website or texting.  
 
-Somehow, this is often enough time for my subconscious brain to solve the problem for me.   In fact, goofing-off is my go-to approach because it's a lot more relaxed than Structured Thinking.  That's something I tend to roll out only when goofing-off has definitely failed me.
+Somehow, this is often enough time for my subconscious brain to solve the problem for me.   In fact, goofing-off is my go-to approach because it's a lot more relaxed than Timed Thinking.  That's something I tend to roll out only when goofing-off has definitely failed me.
 
 ## Open Questions
 
-- This shares a lot of the hallmarks of [Brainstorming](https://en.wikipedia.org/wiki/Brainstorming), where people throw ideas at a white-board in a room, or [Brainwriting](https://en.wikipedia.org/wiki/6-3-5-Brainwriting) where people _write_ their ideas down and share them on paper, in order to avoid the problem of certain dominant personalities taking over the process.  Structured Thinking (as I practice it) is a solo pursuit - how you would handle reporting back results, or combining the inputs of a whole team is an open question.
+- This shares a lot of the hallmarks of [Brainstorming](https://en.wikipedia.org/wiki/Brainstorming), where people throw ideas at a white-board in a room, or [Brainwriting](https://en.wikipedia.org/wiki/6-3-5-Brainwriting) where people _write_ their ideas down and share them on paper, in order to avoid the problem of certain dominant personalities taking over the process.  Timed Thinking (as I practice it) is a solo pursuit - how you would handle reporting back results, or combining the inputs of a whole team is an open question.
 
-- Agile de-prioritises planning and strategy in favour of, well, agility. "Responding to change over following a plan" as the [Agile Manifesto]() has it.  But, a lot of the complaints I hear within the teams I am in is that people in positions of responsibility _aren't doing enough deep thinking_, possibly because their calendars are chock-full of meetings.   Is there a case for making thinking time an Agile practice?  And using Structured Thinking as a way to make sure it happens?   There doesn't seem to be any Practice like Structured Thinking.   Could we improve our process by incorporating sessions like this?
+- Agile de-prioritises planning and strategy in favour of, well, agility. "Responding to change over following a plan" as the [Agile Manifesto]() has it.  But, a lot of the complaints I hear within the teams I am in is that people in positions of responsibility _aren't doing enough deep thinking_, possibly because their calendars are chock-full of meetings.   Is there a case for making thinking time an Agile practice?  And using Timed Thinking as a way to make sure it happens?   There doesn't seem to be any Practice like Timed Thinking.   Could we improve our process by incorporating sessions like this?
 
 
