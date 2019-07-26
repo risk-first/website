@@ -4,58 +4,53 @@ title: Home
 ---
 
 <div class="container container-inner">
-    <div class="row">
+	    
+	<!-- Featured
+	================================================== -->
+	<section class="featured-articles">
+	    <div class="section-title">
+	        <h2><span>Start Here!</span></h2>
+	    </div>
+	    <div class="row listrecent">
+	    {% assign sorted_pages = site.pages | sort:"order" %}
+		{% for post in sorted_pages %}
+	      	{% for pc in post.categories %}
+	      		{% if pc == 'Front' %}
+	    		    {% include postbox.html %}
+	    		{% endif %}
+	    	{% endfor %}
+	    {% endfor %}
+	
+	    </div>
+	</section>
 
 
-<!-- Featured
-================================================== -->
-<section class="featured-articles">
-    <div class="section-title">
-        <h2><span>Start Here!</span></h2>
-    </div>
-    <div class="row listrecent">
-    {% assign sorted_pages = site.pages | sort:"order" %}
-	{% for post in sorted_pages %}
-      	{% for pc in post.categories %}
-      		{% if pc == 'Front' %}
-    		    {% include postbox.html %}
-    		{% endif %}
-    	{% endfor %}
-    {% endfor %}
 
-    </div>
-</section>
-
-</div>
-    <div class="row">
-
-
-<!-- Articles
-================================================== -->
-{% assign news = site.categories.News %}
-
-{% for page in site.pages %}
-	{% for pc in page.categories %} 
-		{% if pc == 'News' %} 
-			{% assign news = news | push:page %}
-		{% endif %} 
+	<!-- Articles
+	================================================== -->
+	{% assign news = site.categories.News %}
+	
+	{% for page in site.pages %}
+		{% for pc in page.categories %} 
+			{% if pc == 'News' %} 
+				{% assign news = news | push:page %}
+			{% endif %} 
+		{% endfor %}
 	{% endfor %}
-{% endfor %}
+	
+	{% assign sorted_pages = news | sort: 'date' | reverse %}
+	
+	<section class="recent-articles">
+	    <div class="section-title">
+	        <h2><span>Recent Articles</span></h2>
+	    </div>
+	    
+	    <div class="row listrecent">
+		{% for post in sorted_pages %}
+	    	{% include postbox.html %}
+	    {% endfor %}
+	
+	    </div>
+	</section>
 
-{% assign sorted_pages = news | sort: 'date' | reverse %}
-
-<section class="recent-articles">
-    <div class="section-title">
-        <h2><span>Recent Articles</span></h2>
-    </div>
-    
-    <div class="row listrecent">
-	{% for post in sorted_pages %}
-    	{% include postbox.html %}
-    {% endfor %}
-
-    </div>
-</section>
-
-</div>
 </div>
