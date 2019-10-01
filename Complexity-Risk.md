@@ -6,7 +6,7 @@ image: /images/generated/titles/Complexity-Risk.png
 featuredimage: images/generated/single/Complexity-Risk.png
 order: 4
 categories:
- - Risk
+ - Risks
 ---
 
 # Complexity Risk

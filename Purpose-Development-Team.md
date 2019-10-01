@@ -8,6 +8,7 @@ featuredimage: images/generated/single/Purpose-Development-Team.png
 categories:
  - Practices
  - News
+order: 1
 ---
 
 # The Purpose Of The Development Team

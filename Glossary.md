@@ -5,7 +5,7 @@ url: https://riskfirst.org/Glossary
 image: /images/generated/titles/Glossary.png
 featuredimage: images/generated/single/Glossary.png
 categories:
- - Introduction
+ - Thinking Risk-First
 order: 9
 ---
 

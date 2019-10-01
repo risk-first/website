@@ -5,7 +5,7 @@ url: https://riskfirst.org/Meeting-Reality
 image: /images/generated/titles/Meeting-Reality.png
 featuredimage: images/generated/single/Meeting-Reality.png
 categories:
- - Introduction
+ - Thinking Risk-First
 order: 3
 ---
 

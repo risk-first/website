@@ -1,5 +1,13 @@
 jQuery(document).ready(function($){
 
+	// tool tips
+	 $('.ttip').tooltipster({
+		 animation: 'fade',
+		 delay: 0,
+		 theme: 'tooltipster-shadow',
+		 side: ['right']
+	 });
+	
     //fix for stupid ie object cover
     if (document.documentMode || /Edge/.test(navigator.userAgent)) {
       jQuery('.featured-box-img-cover').each(function(){

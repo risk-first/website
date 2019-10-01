@@ -6,7 +6,7 @@ image: /images/generated/titles/Scarcity-Risk.png
 featuredimage: images/generated/single/Scarcity-Risk.png
 order: 6
 categories:
- - Risk
+ - Risks
 ---
 
 # Scarcity Risk

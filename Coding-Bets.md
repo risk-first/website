@@ -8,6 +8,7 @@ featuredimage: images/generated/single/Coding-Bets.png
 categories:
  - Practices
  - News
+order: 2
 ---
 
 # Coding Bets

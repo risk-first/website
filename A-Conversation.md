@@ -5,7 +5,7 @@ url: https://riskfirst.org/A-Conversation
 image: /images/generated/titles/A-Conversation.png
 featuredimage: images/generated/single/A-Conversation.png
 categories: 
- - Introduction
+ - Thinking Risk-First
 order: 7
 ---
 

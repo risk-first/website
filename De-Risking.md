@@ -5,7 +5,7 @@ url: https://riskfirst.org/De-Risking
 image: /images/generated/titles/De-Risking.png
 featuredimage: images/generated/single/De-Risking.png
 categories:
- - Introduction
+ - Thinking Risk-First
 order: 6
 ---
 

@@ -4,7 +4,7 @@ description: Risk-First is for software development teams, including software de
 url: https://riskfirst.org/Audience
 image: /images/generated/titles/Audience.png
 categories: 
- - Front
+ - Overview
 featuredimage: images/generated/single/Audience.png
 order: 3
 ---

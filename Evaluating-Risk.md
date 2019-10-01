@@ -5,7 +5,7 @@ url: https://riskfirst.org/Evaluating-Risk
 image: /images/generated/titles/Evaluating-Risk.png
 featuredimage: images/generated/single/Evaluating-Risk.png
 categories:
- - Introduction
+ - Thinking Risk-First
 order: 5
 ---
 

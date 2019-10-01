@@ -6,7 +6,7 @@ image: /images/generated/titles/Software-Dependency-Risk.png
 featuredimage: images/generated/single/Software-Dependency-Risk.png
 order: 8
 categories:
- - Risk
+ - Risks
 ---
 
 # Software Dependency Risk
@@ -54,7 +54,7 @@ Conversely, if ECMAScript 6.0 had introduced a function called `abcdRepeater(n)`
 function out() {                           (7 symbols)
     return abcdRepeater(10)                (6 symbols)
 }                                          (1 symbol)
-``` 
+```
 
 .. and re-encode to **14** symbols.  Now, clearly there are some problems with all this:
 

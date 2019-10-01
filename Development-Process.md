@@ -6,7 +6,7 @@ image: /images/generated/titles/Development-Process.png
 featuredimage: images/generated/single/Development-Process.png
 order: 2
 categories:
- - Introduction
+ - Thinking Risk-First
 ---
 
 # Development Process
