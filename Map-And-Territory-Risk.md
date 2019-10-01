@@ -6,7 +6,7 @@ image: /images/generated/titles/Map-And-Territory-Risk.png
 featuredimage: images/generated/single/Map-And-Territory-Risk.png
 order: 13
 categories:
- - Risk
+ - Risks
 ---
 
 # Map And Territory Risk

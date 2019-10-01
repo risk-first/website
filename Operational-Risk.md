@@ -6,7 +6,7 @@ image: /images/generated/titles/Operational-Risk.png
 featuredimage: images/generated/single/Operational-Risk.png
 order: 14
 categories:
- - Risk
+ - Risks
 ---
 
 # Operational Risk

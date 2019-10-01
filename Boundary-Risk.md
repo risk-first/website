@@ -6,7 +6,7 @@ image: /images/generated/titles/Boundary-Risk.png
 featuredimage: images/generated/single/Boundary-Risk.png
 order: 10
 categories:
- - Risk
+ - Risks
 ---
 
 # Boundary Risk

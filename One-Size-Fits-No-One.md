@@ -5,7 +5,7 @@ url: https://riskfirst.org/One-Size-Fits-No-One
 image: /images/generated/titles/One-Size-Fits-No-One.png
 featuredimage: images/generated/single/One-Size-Fits-No-One.png
 categories:
- - Introduction
+ - Thinking Risk-First
  - News
 order: 8
 date: 2019-01-22 16:32:03 +0000

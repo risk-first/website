@@ -1,0 +1,44 @@
+{% if page.layout != 'categories' %}
+	{% assign sortedCategories = page.categories | sort %}
+	
+	{% for category in sortedCategories %}
+	{% if category != 'Post' %}
+	{% if category != 'News' %}
+		
+    <p>
+        {{ category }}
+    </p>
+    <ul class="ml-1 mr-1">
+    
+    	{% assign sorted_pages = site.pages | sort:"order" %}
+		{% for post in sorted_pages  %} 
+			{% for pc in post.categories %} 
+				{% if pc == category %} 
+        <a href="{{ site.baseurl }}{{ post.url }}" >
+			{% if post.url == page.url  %}		
+			<li class="nav-bullet-current ttip " title="{{ post.title }}">
+			{% else %}
+		    <li class="nav-bullet ttip" title="{{ post.title }}">
+			{% endif %}
+            	{{ post.order }}   
+        	</li>
+        </a>
+		{% endif %} 
+		{% endfor %}
+		{% endfor %}
+       
+    </ul>
+    <div class="sep">
+    </div>
+    
+    {% endif %}
+	{% endif %}
+	{% endfor %}
+    
+	
+	        
+{% endif %}
+
+
+
+

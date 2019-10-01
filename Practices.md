@@ -10,6 +10,7 @@ cat: Practices
 
 This part is a discussion of the different practices within Software Development, and how they mitigate and accentuate the different risks.
 
+_This is in progress_
 
 <!-- 
 

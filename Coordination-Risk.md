@@ -6,7 +6,7 @@ image: /images/generated/titles/Coordination-Risk.png
 featuredimage: images/generated/single/Coordination-Risk.png
 order: 12
 categories:
- - Risk
+ - Risks
 ---
 
 # Coordination Risk

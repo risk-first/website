@@ -5,7 +5,7 @@ url: https://riskfirst.org/Just-Risk
 image: /images/generated/titles/Just-Risk.png
 featuredimage: images/generated/single/Just-Risk.png
 categories:
- - Introduction
+ - Thinking Risk-First
 order: 4
 ---
 

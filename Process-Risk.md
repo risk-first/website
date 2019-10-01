@@ -6,7 +6,7 @@ image: /images/generated/titles/Process-Risk.png
 featuredimage: images/generated/single/Process-Risk.png
 order: 9
 categories:
- - Risk
+ - Risks
 ---
 
 # Process Risk

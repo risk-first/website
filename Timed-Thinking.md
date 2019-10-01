@@ -5,9 +5,9 @@ url: https://riskfirst.org/Timed-Thinking
 image: /images/generated/titles/Timed-Thinking.png
 featuredimage: images/generated/single/Timed-Thinking.png
 categories:
- - Practices
  - News
 date: 2019-07-25 16:32:03 +0000
+order: 4
 ---
 
 # Timed Thinking

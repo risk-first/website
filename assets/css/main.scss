@@ -13,3 +13,28 @@
 	"syntax",
     "starsnonscss"
 ;
+
+
+.nav-bullet {
+	border: 1px solid;
+	width: 20px;
+	margin: auto;
+	border-radius: 10px;
+	font-size: 12px;
+    transition: all 0.2s;
+}
+
+.nav-bullet:hover,
+.nav-bullet:hover a {
+	color: black;
+	background-color: rgba(0,0,0,0.439216);
+}
+
+.nav-bullet-current {
+	border: 1px solid;
+	width: 20px;
+	margin: auto;
+	border-radius: 10px;
+	font-size: 12px;
+	background-color: rgba(0,0,0,0.439216);
+}

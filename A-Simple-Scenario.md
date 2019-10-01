@@ -4,7 +4,7 @@ description: An introduction to the concept that managing risk underpins all act
 url: https://riskfirst.org/A-Simple-Scenario
 image: /images/generated/titles/A-Simple-Scenario.png
 categories: 
- - Introduction
+ - Thinking Risk-First
 featuredimage: images/generated/single/A-Simple-Scenario.png
 order: 1
 ---

@@ -4,7 +4,7 @@ description: Explanation of Agency Risk and ways to mitigate it through monitori
 url: https://riskfirst.org/Agency-Risk
 image: /images/generated/titles/Agency-Risk.png
 categories:
- - Risk
+ - Risks
 featuredimage: images/generated/single/Agency-Risk.png
 order: 11
 ---

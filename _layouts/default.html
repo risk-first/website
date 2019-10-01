@@ -9,7 +9,6 @@
 <title>{{ page.title }} | {{site.name}}</title>
 
 
-{% seo %}
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
@@ -18,6 +17,8 @@
 <link href="{{ site.baseurl }}/assets/fonts/geomanist/stylesheet.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
 <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/tooltipster.bundle.min.css" />
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/tooltipster-sideTip-shadow.min.css" />
 
 <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
 
@@ -37,7 +38,7 @@
 
 {% if jekyll.environment == 'production' %}
 <!-- change your GA id in _config.yml -->
-<script>
+<script async>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -79,7 +80,11 @@ ga('send', 'pageview');
             <ul class="navbar-nav ml-auto">
 
                 <li class="nav-item">
-                <a class="nav-link" href="/Introduction"><i class="fas fa-play-circle"></i> Introduction</a>
+                <a class="nav-link" href="/Overview"><i class="fas fa-play-circle"></i> Overview</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="/Thinking-Risk-First"><i class="fas fa-play-circle"></i> Thinking R1</a>
                 </li>
 
                 <li class="nav-item nav-item-black">
@@ -155,23 +160,19 @@ ga('send', 'pageview');
 <!-- Scripts
 ================================================== -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
-<script src="{{ site.baseurl }}/assets/js/mediumish.js"></script>
 
 {% if site.lazyimages == "enabled" %}
-<script src="{{ site.baseurl }}/assets/js/lazyload.js"></script>
+<script async src="{{ site.baseurl }}/assets/js/lazyload.js"></script>
 {% endif %}
 
-<script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script> 
-
-{% if page.layout == 'post' %}
-<script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
-{% endif %}
+<script async src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script> 
 
 <script async defer src="https://buttons.github.io/buttons.js"></script>
-
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/tooltipster.bundle.min.js"></script>
+<script async src="{{ site.baseurl }}/assets/js/mediumish.js"></script>
 </body>
 </html>
