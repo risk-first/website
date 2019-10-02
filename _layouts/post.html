@@ -36,7 +36,15 @@ post_class: post-template
                 {{content}}
             </div>
             
-            <div class="mainheading">
+      
+
+            <p>
+            <i>
+            <a href="https://github.com/risk-first/website/stargazers">Add Your Star <i class="fas fa-star"></i> On GitHub</a> to receive an invite to the GitHub Risk-First team.
+            </i>
+            </p>
+
+     		 <div class="mainheading">
 
                 <!-- Author Box -->
                 {% if page.author %}
@@ -56,14 +64,6 @@ post_class: post-template
                 {% endif %}
 
             </div>
-
-            <p>
-            <i>
-            <a href="https://github.com/risk-first/website/stargazers">Add Your Star <i class="fas fa-star"></i> On GitHub</a> to receive an invite to the GitHub Risk-First team.
-            </i>
-            </p>
-
-
             <!-- Post Date -->
             <p>
             <small>
@@ -73,25 +73,6 @@ post_class: post-template
                 {% endif %}
                 </small>
             </p>
-
-            <!-- Post Categories -->
-            <div class="after-post-cats">
-                <ul class="tags mb-4">
-                	{% if page.categories %}
-	                    {% assign sortedCategories = page.categories | sort %}
-	                    {% for category in sortedCategories %}
-	                    {% if category != 'Post' %}
-	                    {% if category != 'News' %}
-	                    <li>
-	                        <a class="smoothscroll" href="{{site.baseurl}}/{{ category | replace: " ","-" }}">{{ category }}</a>
-	                    </li>
-	                    {% endif %}
-	                    {% endif %}
-	                    {% endfor %}
-	                {% endif %}
-                </ul>
-            </div>
-            <!-- End Categories -->
 
             <!-- Post Tags -->
             <div class="after-post-tags">

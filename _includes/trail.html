@@ -6,7 +6,9 @@
 	{% if category != 'News' %}
 		
     <p>
-        {{ category }}
+    	<a href="{{site.baseurl}}/{{ category | replace: " ","-" }}" >
+	        {{ category }}
+    	</a>
     </p>
     <ul class="ml-1 mr-1">
     
