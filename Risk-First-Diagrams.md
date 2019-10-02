@@ -44,7 +44,7 @@ In the middle, we see the actions you could take against the risk.  So for the p
 
 _Nothing comes for free_.  On the right, you can see the downside of the action you've taken:  [Attendant Risks](Glossary.md#attendant-risk) are the _new_ risks you now have as a result of trying to deal with the first one.
 
-In the diagram, the _refactoring_ and _simplification_ actions lead to [Schedule Risk](Scarcity-Risk.md#schedule-risk) (because they'll take time to do), [Feature-Fit Risk](Feature-Risk.md#feature-fit-risk) (because a simpler product might not meet the user's needs so well).
+In the first diagram, the _refactoring_ and _simplification_ actions lead to [Schedule Risk](Scarcity-Risk.md#schedule-risk) (because they'll take time to do), [Feature-Fit Risk](Feature-Risk.md#feature-fit-risk) (because a simpler product might not meet the user's needs so well).
 
 Meanwhile using new _libraries_ and _languages_ leads to [Dependency Risk](Dependency-Risk.md) (because these libraries are new points of failure) and [Boundary Risk](Boundary-Risk.md) (in the form of lock-in).
 
