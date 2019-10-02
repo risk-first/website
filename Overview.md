@@ -19,6 +19,6 @@ Risk-First is split into three main parts:
  
 However, if you want a brief overview of what this is all about, the articles in this section give you a short taster.  
 
-In particular, if you're after a very high-level summary, please check out the [Quick Summary](Quick-Summary.md) article.
+In particular, if you're after a very high-level summary, please check out the [Quick Summary](Quick-Summary.md) article below.
 
 If you like what you've read here, then dive into [Part 1](Thinking-Risk-First.md)
