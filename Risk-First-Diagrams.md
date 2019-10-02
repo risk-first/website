@@ -1,3 +1,16 @@
+---
+title: Risk-First Diagrams Explained
+description: A quick primer to help parse a Risk-First diagram. 
+url: https://riskfirst.org/All-About-Risk
+image: /images/generated/titles/Risk-First-Diagrams.png
+categories: 
+ - Overview
+ - News
+order: 6
+featuredimage: images/generated/single/Risk-First-Diagrams.png
+date: 2019-10-02 16:32:03 +0000
+---
+
 
 # Risk-First Diagrams Explained
 
@@ -11,19 +24,19 @@ What’s going on here?  Let’s work left-to right.
 
 ## On The Left
 
-![Codebase Risk](images/generated/single/Codebase.png)
+![Codebase Risk](images/generated/summary/risk.png)
 
 On the left, we can see [Codebase Risk](Complexity-Risk.md#codebase-risk), which is _The risk to a project of having a large, complex codebase to manage_.
 
-Is a Risk you’ve identified in your project / work / life / whatever.  It’s something you want to fix.
+Codebase Risk is an example - it could be any risk you’ve identified in your project / work / life / whatever.  It’s something you want to fix.
 
-There are all kinds of risks we face in life, and we attach different value or _criticality_ to them.  Most people will want to take action against the worst risks they face in their lives, and maybe put up with some of the lesser ones.
+There are [all kinds of risks](Risk-Landscape.md) we face in life, and we attach different value or _criticality_ to them.  Most people will want to take action against the worst risks they face in their lives, and maybe put up with some of the lesser ones.
 
 ## In The Middle
 
-![Refactoring](images/generated/single/Refactoring.png)
+![Refactoring](images/generated/summary/action.png)
 
-In the middle, we see the actions you could take against the risk.  So for the problem of an unweildy codebase we could try and reduce our codebase with some refactoring, or alternatively, maybe replace the whole codebase with a commercial or open-source library.  
+In the middle, we see the actions you could take against the risk.  So for the problem of an unweildy codebase we could try and reduce the size of our codebase with some refactoring, or alternatively,  replace the whole codebase with a commercial or open-source library.  
 
 ## On The Right
 
@@ -31,15 +44,13 @@ In the middle, we see the actions you could take against the risk.  So for the p
 
 _Nothing comes for free_.  On the right, you can see the downside of the action you've taken:  [Attendant Risks](Glossary.md#attendant-risk) are the _new_ risks you now have as a result of trying to deal with the first one.
 
-It's worth pointing out that sometimes _the cure is worse than the disease_.  By [Taking Action](Glossary.md#taking-action) you might end up in a worse predicament than you started.  
+It's worth pointing out that sometimes _the cure is worse than the disease_.  
 
-For example, cutting your legs off _would definitely cure your in-growing toenail_.  
-
-We have to use our judgement to decide on the right course of action!
+By [Taking Action](Glossary.md#taking-action) you might end up in a worse predicament than you started.  For example, cutting your legs off _would definitely cure your in-growing toenail_.  We have to use our judgement to decide on the right course of action!
 
 ## Containers For _Internal Models_
 
-The risks on the left and right are in containers.  That's because risks live in our [Internal Models](Glossary.md#internal-model) - they're not real-world things you can reach out and touch.
+The risks on the left and right are contained in rounded-boxes.  That's because risks live in our [Internal Models](Glossary.md#internal-model) - they're not real-world things you can reach out and touch.  They're _contained_ in things like brains and spreadsheets.  
 
 ![Blame Game](images/generated/summary/blame.png)
 
