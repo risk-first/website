@@ -36,7 +36,7 @@ There are [all kinds of risks](Risk-Landscape.md) we face in life, and we attach
 
 ![Refactoring](images/generated/summary/action.png)
 
-In the middle, we see the actions you could take against the risk.  So for the problem of an unweildy codebase we could try and reduce the size of our codebase with some refactoring, or alternatively,  replace the whole codebase with a commercial or open-source library.  
+In the middle, we see the actions you could take against the risk.  So for the problem of an unwieldy codebase we could try and reduce the size of our codebase with some refactoring, or alternatively,  replace the whole codebase with a commercial or open-source library.  
 
 ## On The Right
 
