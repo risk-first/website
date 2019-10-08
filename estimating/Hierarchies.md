@@ -1,9 +1,19 @@
+---
+title: Hierarchies
+description: Part 4 of the 'Estimating' Risk-First Series.
+url: https://riskfirst.org/Hierarchies
+--image: /images/generated/titles/Just-Risk.png
+--featuredimage: images/generated/single/Just-Risk.png
+categories:
+ - Practices
+order: 13
+---
 
-# On Hierarchy
+# Hierarchies
 
-Have you noticed just how prevalent the idea of _heirarchy_ is in software?  By hierarchy, I mean a general pattern of _connectedness_, where a _parent_ has some _children_, who, in turn, may each have some further children, and so on.
+Having looked at three different approaches to estimating, it's time to take a brief but important aside: have you noticed just how prevalent the idea of _heirarchy_ is in software?  By hierarchy, I mean a general pattern of _connectedness_, where a _parent_ has some _children_, who, in turn, may each have some further children, and so on.
 
-In this article, I'm going to look at a whole bunch of examples, and then try to examine exactly why this is such a popular pattern.
+In this section, I'm going to look at a whole bunch of examples, and then try to examine exactly why this is such a popular pattern.  This will be a useful tool in our arsenal for estimation in the next section.
 
 ## A Javascript Example
 
@@ -111,7 +121,7 @@ Wikipedia calls this a _compositional containment hierarchy_:
 
 Unfortunately, hierarchies _break down_ when you look too closely.  You see that Javascript syntax tree?  Unfortunately, we are passing things from one part of the hierarchy to another in the form of the variables, `temp`, `num`, `a` and `b`.   
 
-We see this in the human example above, too:  _veins_ belong in the circulatory system, but connect with all of the systems, as do _nerves_ which are part of the nervous system.  Although biological pressure seems to have led to a hierarchical organisation, it knows when to break it's rule. 
+We see this in the human example above, too:  _veins_ belong in the [Circulatory System](), but connect with all of the systems, as do _nerves_ which are part of the nervous system.  Although biological pressure seems to have led to a hierarchical organisation, it knows when to break it's rule. 
 
 That's because on their own, hierarchies are _too simple_ to express _complexity_.  (For a graph-centric look at how we can measure complexity, please review [Complexity Risk](Complexity-Risk).) 
 
@@ -128,7 +138,11 @@ The other type of hierarchy we come across both in software and everywhere else 
 
 So the problem comes down to the fact that, on one hand, we want a nice classification of the eight or nine largest objects orbiting our sun, rather than a messy classification of hundreds.  
 
-A second problem with classification is that, unlike containment, 
+## Multiarchy
+
+A second problem with classification is that, unlike containment, you can classify things along many axes.  For example, a cup might fit into the classifications "drinking receptacle", "kitchenware" and "Star-Wars memorabilia" all at the same time.
+
+Nevertheless, a lot of the power of _Interfaces_ in programming languages comes from being able to do this.   
 
 Why is this?   Why would we _want_ to just have a nice, small collection of things? 
 

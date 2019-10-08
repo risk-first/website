@@ -1,12 +1,12 @@
 ---
 title: Kitchen-Cabinet Estimating
-description: Looking at an alternative way to estimate development effort
-url: https://riskfirst.org/Just-Risk
-image: /images/generated/titles/Just-Risk.png
-featuredimage: images/generated/single/Just-Risk.png
+description: Part 1 of the 'Estimating' Risk-First Series.
+url: https://riskfirst.org/Kitchen-Cabinet
+--image: /images/generated/titles/Just-Risk.png
+--featuredimage: images/generated/single/Just-Risk.png
 categories:
  - Practices
-order: 4
+order: 11
 ---
 
 # Kitchen Cabinet
