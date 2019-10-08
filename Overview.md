@@ -11,6 +11,10 @@ categories:
 order: 1
 ---
 
+The software development world is crowded with different practices, metrics, methodologies, tools and techniques.  But what unites them all?
+
+The Risk-First perspective is that all of these practices and methodologies have at their heart the job of managing different _software development risks_.  Risk isn't something that just appears in a report, it actually drives everything we do.  
+
 Risk-First is split into three main parts:
 
  - [Part 1: Thinking Risk-First](Thinking-Risk-First.md)
