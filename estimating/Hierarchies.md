@@ -123,9 +123,9 @@ Wikipedia calls this a _compositional containment hierarchy_:
 
 ## An Essential Problem
 
-Unfortunately, hierarchies _break down_ when you look too closely.  
+Unfortunately, containment hierarchies _break down_ when you look too closely.  
 
-You see that Javascript syntax tree?  Unfortunately, we are passing things from one part of the hierarchy to another in the form of the variables, `temp`, `num`, `a` and `b`.   
+You see that Javascript syntax tree?  Unfortunately, we are passing things from one part of the hierarchy to another in the form of the variables (`temp`, `num`, `a` and `b` here) or named functions.
 
 You see those _veins_ in the [Circulatory System](https://en.wikipedia.org/wiki/Circulatory_system)?  They connect with all of the bodily systems, as do _nerves_ which are part of the [Nervous System](https://en.wikipedia.org/wiki/Nervous_system).  
 
@@ -134,6 +134,13 @@ Where does one system end and another begin?
 Although biological pressure seems to have led to a hierarchical organisation, it knows when to break it's own rule. 
 
 That's because on their own, hierarchies are _too simple_ to express _complexity_.  (For a graph-centric look at how we can measure complexity, please review [Complexity Risk](Complexity-Risk).) 
+
+## Goto Considered Harmful
+
+On the other hand, where would we be without hierarchy in our software code?  It's not impossible to imagine:  
+
+ - We could write code in a stack-less, `goto`-oriented way, but such programs are extremely hard to reason about, as discussed in E.W. Dijkstra's seminal paper [Goto Considered Harmful](https://homepages.cwi.nl/~storm/teaching/reader/Dijkstra68.pdf).
+ - [Turing Machines](https://en.wikipedia.org/wiki/Turing_machine) and the [BrainFuck](https://en.wikipedia.org/wiki/Brainfuck) language both manage without any kind of hierarchy, and are [Turing Complete](https://en.wikipedia.org/wiki/Turing_completeness), meaning that you can do _any kind of computing in them_.  Although, they're both very hard to reason about.
 
 ## Classification Hierarchy  
 
@@ -148,34 +155,46 @@ The other type of hierarchy we come across both in software and everywhere else 
 
 So the problem comes down to the fact that, on one hand, we want a nice classification of the eight or nine largest objects orbiting our sun, rather than a messy classification of hundreds.  
 
-## Multiarchy
+### Multiarchies and Typing
 
-A second problem with classification is that, unlike containment, you can classify things along many axes.  For example, a cup might fit into the classifications "drinking receptacle", "kitchenware" and "Star-Wars memorabilia" all at the same time.
+A second problem with classification hierarchies is that, unlike containment, you can classify things along many axes.  For example, a cup might fit into the classifications "drinking receptacle", "kitchenware" and "Star-Wars memorabilia" all at the same time.
 
-Nevertheless, a lot of the power of _Interfaces_ in programming languages comes from being able to do this.   
+Nevertheless, a lot of the power of _Interfaces_ in programming languages comes from being able to do this.  
 
-Why is this?   Why would we _want_ to just have a nice, small collection of things? 
+[Type Systems](https://en.wikipedia.org/wiki/Type_system) are invariably built on the concept of classification hierarchies.  And this leads to a really interesting point:  whenever we "reach out" of the containment hierarchy of a software program to call another piece of code (via calling a function or a variable) we _fall back_ to using the classification hierarchy to determine whether that connection is a valid one.
 
-**Some examples of hierarchy in software**.
+In a strongly-typed language like Java, for example we might have this:
 
-But software is an **inconsistent** hierarchy:  we have a basic hierarchy, but we allow for references from one part to another.  This is because of the essential complexity of software.   A hierarchy has *no* complexity,(I think?), whereas other graphs have greater complexity.
+```java
+public class Numbers {
+    public static void main(String[] args) {
+        System.out.print("Square root of 4 is: " + Math.sqrt(4));
+    }
+}
+```
 
-Programming tries to ameliorate this with:
+The compositional hierarchy you might draw like this:
 
- - Specific points you can link to (you can't just link to *anywhere*)
- - **Typing**: if you link from a to b, you must match the type.
- 
-A lot of the hierarchy of a program is specifying execution order, which (as fp shows) isn't actually all that critical.  What does the hierarchy look like without this? 
- 
-- Show hierarchy of js program to do fib. sequence.
- 
-- Can we remove that?  _Show this hierarchy too_.
- 
- **Limitations of Hierarchy**
- 
-- Software is an obvious example. 
-- Double-diamond, cf. java.
+But there are three places where we _leave_ the compositional hierarchy to call static functions in other packages:  `Math.sqrt`,  `System.out.println` and `+` (string concatenation). In these cases, we rely on the _classification hierarchy_ of the Java Type System to determine whether the call is acceptable:
 
-Runtime hierarchy is different - the stack.    Can we even conceive of a language without the stack?
+ - `Math.sqrt`: _takes_ a `float`, _returns_ a `float`.
+ - `System.out.println`: _takes_ a `String`.
+ - `+`: _takes_ a `String` and something that can be converted to a `String`, _returns_ a `String`.
 
-GOTO Considered Harmful
+## Summary
+
+This has been a somewhat rambling introduction to two key types of hierarchy:
+
+**_Containment_ hierarchies** are used _everywhere_ in software development: _files_ in _disks_ in _servers_, _methods_ and _functions_ in _packages_ and _namespaces_ etc.  Good programming languages attempt to capture as much of the program's complexity as possible within the containment hierarchy.  
+
+People understand hierarchies because they're baked into (and invented by) our brains.  When I look outside at a car, I can see that it is a containment hierarchy of windows, wheels and metal panels.  When I think about my house, I think about different objects being contained within different rooms within a structure of bricks.  But none of that exists:  it's all in my head.  Everything is really just a bunch of atoms.
+
+**_Classification_ hierarchies** are also used everywhere in software development: _strings_, _numbers_, _records_, _classes_, _types_, _schemas_.   A key ability for a programmer is often to be able to abstract from multiple areas and say "this is like this".  
+
+When we create type systems (or set up databases) we are classifying things.   Having a field for "Marital Status", "Address" or "Planet / Not a Planet" is just something we've invented for the purposes of us processing data.
+
+(Aside:  it's interesting that Machine Learning is all about _classification_ rather than _containment_.  Surely a more robust approach would be to build the two together?).
+
+At this point, you're probably wondering what any of this has to do with estimating in software development, so let's continue...
+
+
