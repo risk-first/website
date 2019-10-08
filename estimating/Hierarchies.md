@@ -1,7 +1,7 @@
 ---
 title: Hierarchies
 description: Part 4 of the 'Estimating' Risk-First Series.
-url: https://riskfirst.org/Hierarchies
+url: https://riskfirst.org/estimating/Hierarchies
 --image: /images/generated/titles/Just-Risk.png
 --featuredimage: images/generated/single/Just-Risk.png
 categories:
@@ -75,7 +75,11 @@ We've got...
  - And the `Chart` constructor is defined in a different `package`, which is a collection of `file`s in a repository (maybe [npm]() or [jsdelivr]().
  - Some hierarchy is _indicated_ using indentation of the code.  Some isn't.
  
-What is the take-away from this?  _We heavily use syntax to indicate different types of hierarchies within software_.  Just look at all the different ways it happens above:  brackets, single-quotes, curly brackets, angle-brackets and tags, square brackets, double-quotes, commas and semi-colons.  
+What is the take-away from this? 
+
+_We heavily use syntax to indicate different types of hierarchies within software_.  
+
+Just look at all the different ways it happens above:  brackets, single-quotes, curly brackets, angle-brackets and tags, square brackets, double-quotes, commas and semi-colons.  
 
 ## Syntax Trees
 
@@ -99,13 +103,13 @@ function fibonacci(num){
 
 When the Javascript parser goes to work, it builds an internal [Abstract Syntax Tree](https://en.wikipedia.org/wiki/Abstract_syntax_tree) from the code, looking something like this:
 
-![Abstract Syntax Tree, Rendered By [viswesh](https://viswesh.github.io/astVisualizer/)](images/estimates/ast.png)
+![Abstract Syntax Tree, Rendered By [viswesh](https://viswesh.github.io/astVisualizer/)](/images/estimates/ast.png)
 
 Now, the syntax tree generated for Javascript is _different_ to the way the code looks.  In other languages, like [Lisp](), the syntax tree and the code structure are the same, and this is called [homoiconicity](https://en.wikipedia.org/wiki/Homoiconicity).
 
 ## Human Systems
 
-We build hierarchies not just into our programming languages, but all over our societies.  They seem fundamental to how we understand things.   As well as family trees and org charts, we use hierarchies everywhere.  For example, people often break down the complexity of the human body like this:
+We build hierarchies not just into our programming languages, but all over our societies.  They seem fundamental to how we understand things.   As well as [Family Trees](https://en.wikipedia.org/wiki/Family_tree) and [Organisation Charts](https://en.wikipedia.org/wiki/Organizational_chart), we use hierarchies everywhere.  For example, biologists often break down the complexity of the human body like this:
 
  - **Organelles** - such as [Mitochondria](https://en.wikipedia.org/wiki/Mitochondrion), contained in...
  - **Cells** - such as blood cells, nerve cells, skin cells in the [Human Body](https://en.wikipedia.org/wiki/List_of_distinct_cell_types_in_the_adult_human_body), inside...
@@ -119,9 +123,15 @@ Wikipedia calls this a _compositional containment hierarchy_:
 
 ## An Essential Problem
 
-Unfortunately, hierarchies _break down_ when you look too closely.  You see that Javascript syntax tree?  Unfortunately, we are passing things from one part of the hierarchy to another in the form of the variables, `temp`, `num`, `a` and `b`.   
+Unfortunately, hierarchies _break down_ when you look too closely.  
 
-We see this in the human example above, too:  _veins_ belong in the [Circulatory System](), but connect with all of the systems, as do _nerves_ which are part of the nervous system.  Although biological pressure seems to have led to a hierarchical organisation, it knows when to break it's rule. 
+You see that Javascript syntax tree?  Unfortunately, we are passing things from one part of the hierarchy to another in the form of the variables, `temp`, `num`, `a` and `b`.   
+
+You see those _veins_ in the [Circulatory System](https://en.wikipedia.org/wiki/Circulatory_system)?  They connect with all of the bodily systems, as do _nerves_ which are part of the [Nervous System](https://en.wikipedia.org/wiki/Nervous_system).  
+
+Where does one system end and another begin?
+
+Although biological pressure seems to have led to a hierarchical organisation, it knows when to break it's own rule. 
 
 That's because on their own, hierarchies are _too simple_ to express _complexity_.  (For a graph-centric look at how we can measure complexity, please review [Complexity Risk](Complexity-Risk).) 
 
@@ -131,8 +141,8 @@ The other type of hierarchy we come across both in software and everywhere else 
 
 - The Greeks coined _asteres planetai_ to be the class of objects in the sky that moved separately from the rest of the body of stars.   Possibly including moons, comets and asteroids. [1](https://en.wikipedia.org/wiki/Definition_of_planet#Planets_in_antiquity).
 - However, after the [Copernican Revolution](https://en.wikipedia.org/wiki/Definition_of_planet#Satellites) made the moon a satellite of earth, the defintion of planets seemed to be _bodies orbiting the sun_, and there were just 9 of them: Mercury, Mars, Earth, Venus, Saturn, Jupiter, Uranus, Neptune and Pluto.
-- In 2005, [The Discovery of Eris](https://en.wikipedia.org/wiki/Definition_of_planet#Pluto), a body larger than Pluto orbiting in a trans-Neptunian orbit meant that [potentially hundreds of objects](https://en.wikipedia.org/wiki/Trans-Neptunian_object#/media/File:TheTransneptunians_73AU.svg) deserved the term planet.
-- In response, Pluto was demoted to being a _dwarf planet_.  In order to do this, the definition of planet was changed to include the clause that it had "cleared its neighbourhood" of most other orbiting bodies".  This excluded Kuiper-Belt objects such as pluto, but is _still problematic_, as Alan Stern discusses below.
+- In 2005, [The Discovery of Eris](https://en.wikipedia.org/wiki/Definition_of_planet#Pluto), a body _larger_ than Pluto orbiting in a trans-Neptunian orbit meant that [potentially hundreds of objects](https://en.wikipedia.org/wiki/Trans-Neptunian_object#/media/File:TheTransneptunians_73AU.svg) deserved the term planet.
+- In response, Pluto was demoted to being a _dwarf planet_.  In order to do this, the definition of planet was changed to include the clause that it had "cleared its neighbourhood" of most other orbiting bodies".  This excluded Kuiper-Belt objects such as Pluto, but is _still problematic_, as Alan Stern discusses below.
 
 > "I and many other planetary scientists — like the almost 400 that signed a petition against the IAU in 2006 — have a problem with the IAU definition because the implications of it are just nonsensical.  Here's why. The IAU's "zone-clearing" criteria, when worked out mathematically, means that to qualify as a planet at larger and larger distances from the sun, a body has to have more and more mass than it would in a closer orbit. This is in part because the zones get larger (like distance cubed, or volume) as you go outward; it's also in part because orbital speeds are slower further out, so zone-clearing takes longer." - [Alan Stern, _Fighting for Pluto's Planet Title_](https://www.space.com/9594-fighting-pluto-planet-title-planetary-scientist-alan-stern.html)
 
