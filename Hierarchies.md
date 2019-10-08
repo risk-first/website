@@ -1,4 +1,5 @@
 
+# On Hierarchy
 
 Have you noticed just how prevalent the idea of _heirarchy_ is in software?  By hierarchy, I mean a general pattern of _connectedness_, where a _parent_ has some _children_, who, in turn, may each have some further children, and so on.
 
@@ -64,46 +65,59 @@ We've got...
  - And the `Chart` constructor is defined in a different `package`, which is a collection of `file`s in a repository (maybe [npm]() or [jsdelivr]().
  - Some hierarchy is _indicated_ using indentation of the code.  Some isn't.
  
-In fact parsing code is all about building a hierarchy.  The meaning of symbols like `[` and `{` depends largely on what comes before and after it.  _Parsing_ code like Javascript means turning a sequence of characters into a hierarchical _parse tree_ like the one below:
+What is the take-away from this?  _We heavily use syntax to indicate different types of hierarchies within software_.  Just look at all the different ways it happens above:  brackets, single-quotes, curly brackets, angle-brackets and tags, square brackets, double-quotes, commas and semi-colons.  
 
+## Syntax Trees
 
-## Another Example 
+Here is another piece of Javascript, a function to calculate a [Fibonacci Sequence](https://medium.com/developers-writing/fibonacci-sequence-algorithm-in-javascript-b253dc7e320e):
 
-Computers
- 
-Lisp.
- 
-## Types of Hierarchy
+```javascript
 
-is-a
-has-a 
- 
- 
+function fibonacci(num){
+  var a = 1, b = 0, temp;
+
+  while (num >= 0){
+    temp = a;
+    a = a + b;
+    b = temp;
+    num--;
+  }
+
+  return b;
+}
+```
+
+When the Javascript parser goes to work, it builds an internal [Abstract Syntax Tree](https://en.wikipedia.org/wiki/Abstract_syntax_tree) from the code, looking something like this:
+
+![Abstract Syntax Tree, Rendered By [viswesh](https://viswesh.github.io/astVisualizer/)](images/estimates/ast.png)
+
+Now, the syntax tree generated for Javascript is _different_ to the way the code looks.  In other languages, like [Lisp](), the syntax tree and the code structure are the same, and this is called [homoiconicity](https://en.wikipedia.org/wiki/Homoiconicity).
+
 ## Human Systems
 
-As well as family trees and org charts, we use hierarchies everywhere.  For example, people often break down the complexity of the human body like this:
+We build hierarchies not just into our programming languages, but all over our societies.  They seem fundamental to how we understand things.   As well as family trees and org charts, we use hierarchies everywhere.  For example, people often break down the complexity of the human body like this:
 
  - **Organelles** - such as [Mitochondria](https://en.wikipedia.org/wiki/Mitochondrion), contained in...
  - **Cells** - such as blood cells, nerve cells, skin cells in the [Human Body](https://en.wikipedia.org/wiki/List_of_distinct_cell_types_in_the_adult_human_body), inside...
  - **Organs** - like hearts livers, brains etc, held within...
+ - **Organ Systems** - like the circulatory system, the immune system, the respiratory system, contained in...
  - **Organisms** - like you and me.
  
 Wikipedia calls this a _compositional containment hierarchy_:
 
 > "The compositional hierarchy that every person encounters at every moment is the hierarchy of life. Every person can be reduced to organ systems, which are composed of organs, which are composed of tissues, which are composed of cells, which are composed of molecules, which are composed of atoms. In fact, the last two levels apply to all matter, at least at the macroscopic scale. Moreover, each of these levels inherit all the properties of their children. " - [Hierarchy, _Wikipedia_](https://en.wikipedia.org/wiki/Hierarchy#Nested_hierarchy)
- 
+
+## An Essential Problem
+
+Unfortunately, hierarchies _break down_ when you look too closely.  You see that Javascript syntax tree?  Unfortunately, we are passing things from one part of the hierarchy to another in the form of the variables, `temp`, `num`, `a` and `b`.   
+
+We see this in the human example above, too:  _veins_ belong in the circulatory system, but connect with all of the systems, as do _nerves_ which are part of the nervous system.  Although biological pressure seems to have led to a hierarchical organisation, it knows when to break it's rule. 
+
+That's because on their own, hierarchies are _too simple_ to express _complexity_.  (For a graph-centric look at how we can measure complexity, please review [Complexity Risk](Complexity-Risk).) 
+
 ## Classification Hierarchy  
 
-In discussing these organs, medical literature adds another layer of hierarchy: [Systems Within The Human Body](https://en.wikipedia.org/wiki/List_of_systems_of_the_human_body).  So we have the [Circulatory System](), [Immune System]() and [Nervous System]() for example.  Wikipedia has a list of a (manageable) 12 systems.  
-
-But, all of this stuff is just _atoms_, it's all connected together.  So we have to disambiguate:
-
- - **Evolutionary pressure**, which is creating a [Compositional Containment Hierarchy](https://en.wikipedia.org/wiki/Hierarchy#Compositional_containment_hierarchy) (like that above) and
- - **Human Systematising**, which seems to be a natural tendency to _divide things into categories_.
- 
-## Planets
-
-As an example of the latter, let's consider _planets_. The definition of a planet is quite bogus, and has changed over time:
+The other type of hierarchy we come across both in software and everywhere else in the human experience is the _classification hierarchy_.   As an example of this, let's consider _planets_. The definition of a planet is quite bogus, and has changed over time:
 
 - The Greeks coined _asteres planetai_ to be the class of objects in the sky that moved separately from the rest of the body of stars.   Possibly including moons, comets and asteroids. [1](https://en.wikipedia.org/wiki/Definition_of_planet#Planets_in_antiquity).
 - However, after the [Copernican Revolution](https://en.wikipedia.org/wiki/Definition_of_planet#Satellites) made the moon a satellite of earth, the defintion of planets seemed to be _bodies orbiting the sun_, and there were just 9 of them: Mercury, Mars, Earth, Venus, Saturn, Jupiter, Uranus, Neptune and Pluto.
@@ -113,6 +127,8 @@ As an example of the latter, let's consider _planets_. The definition of a plane
 > "I and many other planetary scientists — like the almost 400 that signed a petition against the IAU in 2006 — have a problem with the IAU definition because the implications of it are just nonsensical.  Here's why. The IAU's "zone-clearing" criteria, when worked out mathematically, means that to qualify as a planet at larger and larger distances from the sun, a body has to have more and more mass than it would in a closer orbit. This is in part because the zones get larger (like distance cubed, or volume) as you go outward; it's also in part because orbital speeds are slower further out, so zone-clearing takes longer." - [Alan Stern, _Fighting for Pluto's Planet Title_](https://www.space.com/9594-fighting-pluto-planet-title-planetary-scientist-alan-stern.html)
 
 So the problem comes down to the fact that, on one hand, we want a nice classification of the eight or nine largest objects orbiting our sun, rather than a messy classification of hundreds.  
+
+A second problem with classification is that, unlike containment, 
 
 Why is this?   Why would we _want_ to just have a nice, small collection of things? 
 
@@ -138,3 +154,4 @@ A lot of the hierarchy of a program is specifying execution order, which (as fp 
 
 Runtime hierarchy is different - the stack.    Can we even conceive of a language without the stack?
 
+GOTO Considered Harmful

@@ -21,6 +21,7 @@ Although this is a collaborative Github project, it's not meant to be an open-en
 
 Ideas, issues and proof-reading:
 
+- [Ali Abbas](https://github.com/realabbas)
 - [Gustavo Andrade](https://github.com/gandrade)
 - [George Bashi](https://github.com/georgebashi)
 - [Michael Geary](https://github.com/geary)
