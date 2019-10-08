@@ -3,7 +3,7 @@ title: The Menagerie
 description: "Risk-First Software Development Volume 1: The Menagerie.  Available to read online, on Kindle and to buy at Amazon"
 url: https://riskfirst.org/The-Menagerie
 image: /images/generated/titles/The-Menagerie.png
-featuredimage: images/generated/single/The-Menagerie.png
+featuredimage: images/generated/single/the-menagerie.png
 categories: 
  - Front
 order: 3
