@@ -1,3 +1,13 @@
+---
+title: Fractals
+description: Part 3 of the 'Estimating' Risk-First Series.
+url: https://riskfirst.org/Fractals
+--image: /images/generated/titles/Just-Risk.png
+--featuredimage: images/generated/single/Just-Risk.png
+categories:
+ - Practices
+order: 13
+---
 
 # Fractals
 

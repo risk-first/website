@@ -1,3 +1,14 @@
+---
+title: Fill-The-Bucket
+description: Part 1 of the 'Estimating' Risk-First Series.
+url: https://riskfirst.org/Fill-The-Bucket
+--image: /images/generated/titles/Just-Risk.png
+--featuredimage: images/generated/single/Just-Risk.png
+categories:
+ - Practices
+order: 10
+---
+
 
 # Fill-The-Bucket
 
