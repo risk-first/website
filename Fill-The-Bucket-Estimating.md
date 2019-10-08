@@ -14,7 +14,7 @@ The key to Fill-The-Bucket style estimation is that:
  - The work can be measured in units.   
  - Each unit is pretty much the same as another.  
  
-This is our starting-off point.  It should be pretty clear that these assertions _don't_ hold true for a lot of software development.
+This is our starting-off point.  It should be pretty clear that these assertions _don't_ hold true for a lot of software development, but let's examine this style of estimating anyway.
 
 ## Distribution
 

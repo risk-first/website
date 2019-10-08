@@ -1,14 +1,24 @@
+---
+title: Kitchen-Cabinet Estimating
+description: Looking at an alternative way to estimate development effort
+url: https://riskfirst.org/Just-Risk
+image: /images/generated/titles/Just-Risk.png
+featuredimage: images/generated/single/Just-Risk.png
+categories:
+ - Practices
+order: 4
+---
 
 # Kitchen Cabinet
 
-Imagine this scenario:
+Imagine a scenario where you're helping a friend pack up their kitchen:
 
- - You're asked to help move house.  Specifically, help a friend pack up their kitchen.
- - Each cabinet in the kitchen will take _one hour_. 
- - There are ten cabinets in the kitchen (and nothing else).
- - However, kitchens _may_ be nested in cabinets.  And on ad infinitum.
+ - The kitchen contains 10 cabinets.
+ - A cabinet takes one hour to pack.
+ - However, each cabinet may have a further cabinet nested within it.  And on ad infinitum.
+ - There is a 1:5 chance of a cabinet containing another cabinet.
  
-If there is a 1:5 chance of a cabinet containing another kitchen, how long should you estimate for the job?   (The answer is below)
+How long should you estimate for the job?   (The answer is below)
 
 This was suggested in a [Hacker News]() comment discussing software estimation, and struck a chord with many readers.  It's clear that we are no longer in the [Fill-The-Bucket](Fill-The-Bucket.md) domain anymore; our original intuitions about how long things might take are not going to work here.
 
@@ -23,20 +33,110 @@ As a developer, this 'feels' more real to me than [Fill-The-Bucket](Fill-The-Buc
 
 All-in-all, it just may not have been possible for me to test that CSS change the way I wanted to.  Every task had a further, worse sub-task embedded within it.
 
+<div id="simulation" />
+
+<script type="text/javascript">
+
+function runSim(model, its) {
+	var out=[];
+	
+	for(var i = 0; i <its; i++) {
+		var size = model.cabinets.value;
+		var day = 0;
+		while ((day < model.time.value) && (size > 0)) {
+			var r = Math.random();
+			if (r<model.chance.value) {
+				size += 1;
+			}	
+			
+			size --;
+			day ++;
+		}
+		
+		out[day] = out[day] ? out[day]+1 : 1;
+	}
+	
+	return out;
+}
+
+doChart('simulation', 
+ {
+   'cabinets' : { min: 1, max: 30, value: 10, name: 'Initial Cabinets', step: 1 },
+   'chance' : { min: 0, max: 1, value: .2, name: 'Chance Of Nesting', step: .01 },
+   'time' : { min: 30, max:200, value: 30, name: 'Duration', step: 1}
+ },
+ [ model => { return {
+    type: 'bar',
+    data: {
+        labels: [...range(0, model.time.value, 1), model.time.value+"+"],
+        datasets: [{
+            label: 'Simulations taking',
+            data: runSim(model, 1000),
+            borderWidth: 1
+        }]
+    },
+    options: {
+        maintainAspectRatio: false,
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+}}
+]);
+
+</script>
+
 ## Distribution
 
--- simulator for this
 
-There is no _guaranteed_ end-point for this work, but in the case described above, you could end up moving 70 cabinets if you were unlucky.  Have a play with the simulator here, and see how different numbers of cabinets and probabilities work out.
+There is no _guaranteed_ end-point for this work, but in the case described above, you could end up moving 70 cabinets if you were unlucky.  Have a play with the simulator here, and see how different numbers of cabinets and probabilities work out.  In particular, what happens when:
 
-This is an example of the [Exponential Distribution](https://en.wikipedia.org/wiki/Exponential_distribution), and it works in a way similar to radioactive decay.  That is, we might best be able to talk about moving kitchens in terms of their half-lives.  That is, given a bunch of infinity kitchens (or cabinets), we could say how long it would usually take for _half_ of them to be completed.  Then, it'll be the same again for the next half, and so on.
+ - You have a _single_ cabinet in the original kitchen?
+ - You have _thirty_ cabinets in the original kitchen?
+ 
+When the number of initial cabinets is low, the distribution tends towards the [Exponential Distribution](https://en.wikipedia.org/wiki/Exponential_distribution), and it works in a way similar to radioactive decay.  That is, we might best be able to talk about moving kitchens in terms of their half-lives.  That is, given a bunch of infinity-cabinets, we could say how long it would usually take for _half_ of them to be completed.  Then, it'll be the same again for the next half, and so on.
 
 Whereas [Fill-The-Bucket](Fill-The-Bucket.md) was defined with a _mean_ and _variance_, the exponential distribution is modelled with a single parameter, lambda (λ).
 
-Y = e^-λx
+$$ Y = e^-λx $$
 
--- playing with lambda, simulator
+{% raw %}
+  $$a^2 + b^2 = c^2$$ --> note that all equations between these tags will not need escaping! 
+{% endraw %}
 
+<div id="lambda" />
+
+<script type="text/javascript">
+
+doChart('lambda', 
+ {
+   'lambda' : { min: 0, max: 1, value: .5, name: 'Lambda', step: 0.01 },
+   'units' : { min: 1, max: 25, value: 5, name: 'Units', step: 1 }
+ },
+ [
+ model => { return {
+    type: 'line',
+    data: {
+      labels: range(0, 20, 1),
+      datasets: [{
+      	label: '',
+      	backgroundColor: [ 'rgba(255, 99, 132, 0.2)' ],
+      	borderColor: [ 'rgba(255, 99, 132, 1)' ],
+      	data: range(0, 20, 1).map(i => model.units.value * Math.exp(-i * model.lambda.value))
+      },
+      ]
+    }
+  }
+ 
+ }
+ 
+]);
+
+</script>
 
 ## Risk In An Exponential World
 
@@ -67,6 +167,11 @@ As a project manager, you're much more likely to put your own interests ahead of
 Nevertheless, you would expect them to estimate things in a way that benefits their own risk profile, over the company's.  
 
 Also, this offers some explanation of [Aranda and Easterbrook's Result](Fill-The-Bucket.md#perverted).
+
+## A Trick
+
+Offering an estimate transfers risk.  
+
 
 
 ## Next Destination

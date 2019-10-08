@@ -40,11 +40,13 @@ How can we think about estimating in such a domain?  There are clearly a number 
 
 ## Back To Software
 
-So, we now have a third type of estimating.  Again, very different from the first two.  But again, there are obvious similarities with what we do in the world of software.  
+So, we now have a third type of estimating.  Again, very different from the [first](Fill-The-Bucket-Estimating.md) [two](Kitchen-Cabinet-Estimating.md).  But again, there are obvious similarities with what we do in the world of software.  
 
 I've been on projects where a team has toiled long-and-hard to get a database working, only to find out that there was a better, different one available that would do the job for them.  I've watched people struggle to build their own languages and compilers, only to realise later that actually all they needed was to use the ones that were there already.  It's easy to head off on-foot _by accident_, overlooking the fact that someone has _built the motorway_.
 
 In fact, my argument is that, in a world of _millions of open-source projects_, the art of software development is to a large extent to be able to stitch together a selection of pre-written components in much the same way as I might stitch a journey plan together from a series of pre-existing travel options.
+
+## Applying Risk
 
 Estimating then becomes the art of:
 
@@ -53,6 +55,8 @@ Estimating then becomes the art of:
 - Working out how long it'll take to glue them all together
 - Not being wrong about the feasibility of the plan in the first place.
 
-But, there is _yet another_ way of looking at what's needed to estimate: [Fractal-Estimation](Fractal-Estimation.md).
+To achieve point (4), once an estimate is in place, the Risk-First way to proceed would then be to tackle each part in order, from the riskiest and most-likely-to-fail, to the most reliable.  This approach front-loads finding out if the plan is suspect. 
+
+But, there is _yet another_ way of looking at what's needed to estimate: [Fractal-Estimating](Fractal-Estimating.md).
 
  
