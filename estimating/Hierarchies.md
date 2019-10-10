@@ -181,6 +181,19 @@ But there are three places where we _leave_ the compositional hierarchy to call 
  - `System.out.println`: _takes_ a `String`.
  - `+`: _takes_ a `String` and something that can be converted to a `String`, _returns_ a `String`.
 
+![Compositional hierarchies on a larger project:  methods, classes, packages, directories, projects](images/estimating/containment.png)
+
+In Eclipse (my Java IDE) I can therefore view _both_ these types of hierarchy.  In the above screen-grab, you can see some more compositional hierarchy _methods_, _classes_, _packages_, _directories_ and _projects_.  
+  
+![Classification hierarchy of the Resource class from Spring](images/classfication.png)
+
+Whereas in this screen grab, I can view the hierarchy of a _class_ within Java (here the `Resource` class from [Spring](https://spring.io/projects/spring-hateoas)).
+
+Although this is an Object-Oriented example, the same classification system exists within functional languages, too.  
+
+tbd.
+
+
 ## Summary
 
 This has been a somewhat rambling introduction to two key types of hierarchy:
