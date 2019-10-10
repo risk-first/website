@@ -5,7 +5,7 @@ url: https://riskfirst.org/estimating/Fractals
 --image: /images/generated/titles/Just-Risk.png
 --featuredimage: images/generated/single/Just-Risk.png
 categories:
- - Practices
+ - Estimating
 order: 13
 ---
 

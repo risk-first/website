@@ -5,7 +5,7 @@ url: https://riskfirst.org/estimating/Kitchen-Cabinet
 --image: /images/generated/titles/Just-Risk.png
 --featuredimage: images/generated/single/Just-Risk.png
 categories:
- - Estimates
+ - Estimating
 order: 2
 ---
 
