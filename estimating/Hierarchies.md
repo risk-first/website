@@ -5,7 +5,7 @@ url: https://riskfirst.org/estimating/Hierarchies
 --image: /images/generated/titles/Just-Risk.png
 --featuredimage: images/generated/single/Just-Risk.png
 categories:
- - Practices
+ - Estimating
 order: 13
 ---
 
@@ -185,7 +185,7 @@ But there are three places where we _leave_ the compositional hierarchy to call 
 
 In Eclipse (my Java IDE) I can therefore view _both_ these types of hierarchy.  In the above screen-grab, you can see some more compositional hierarchy _methods_, _classes_, _packages_, _directories_ and _projects_.  
   
-![Classification hierarchy of the Resource class from Spring](images/classfication.png)
+![Classification hierarchy of the Resource class from Spring](/images/estimates/classfication.png)
 
 Whereas in this screen grab, I can view the hierarchy of a _class_ within Java (here the `Resource` class from [Spring](https://spring.io/projects/spring-hateoas)).
 
@@ -205,8 +205,6 @@ People understand hierarchies because they're baked into (and invented by) our b
 **_Classification_ hierarchies** are also used everywhere in software development: _strings_, _numbers_, _records_, _classes_, _types_, _schemas_.   A key ability for a programmer is often to be able to abstract from multiple areas and say "this is like this".  
 
 When we create type systems (or set up databases) we are classifying things.   Having a field for "Marital Status", "Address" or "Planet / Not a Planet" is just something we've invented for the purposes of us processing data.
-
-(Aside:  it's interesting that Machine Learning is all about _classification_ rather than _containment_.  Surely a more robust approach would be to build the two together?).
 
 At this point, you're probably wondering what any of this has to do with estimating in software development, so let's continue...
 
