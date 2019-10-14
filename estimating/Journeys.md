@@ -23,17 +23,17 @@ After that, we use every trick in the book called "product development" to get t
 
 ## A London Example
 
-![Journey via the Central Line](images/estimates/central-line.png)
+![Journey via the Central Line](/images/estimates/central-line.png)
 
 If you were travelling across London from Ealing (in the West) to Stratford (in the East) the _fastest_ route might be to take the Central Line.  You could do it via the A406 road, which would take a _bit_ longer.  It would _feel_ like you're mainly going in completely the wrong direction doing that, but it's much faster than cutting straight through London and you don't pay the congestion charge.
 
-![Journey by Car](images/estimates/car.png)
+![Journey by Car](/images/estimates/car.png)
 
 In terms of risk, they all have different profiles.  You're often delayed in the car, by some amount.  The tube is _generally_ reliable, but when it breaks down or is being repaired it might end up quicker to walk.  
 
 If you were doing this same journey on foot, it's a very direct route, but would take five times longer.  However, if you were making this journey a hundred years ago that might be the only choice (horseback might be a bit faster).
 
-![Journey on Foot](images/estimates/foot.png)
+![Journey on Foot](/images/estimates/foot.png)
 
 ## Journey Risks
  
