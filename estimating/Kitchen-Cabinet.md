@@ -1,12 +1,12 @@
 ---
 title: Kitchen-Cabinet Estimating
-description: Part 1 of the 'Estimating' Risk-First Series.
+description: Part 3 of the 'Estimating' Risk-First Series.
 url: https://riskfirst.org/estimating/Kitchen-Cabinet
 --image: /images/generated/titles/Just-Risk.png
 --featuredimage: images/generated/single/Just-Risk.png
 categories:
  - Estimating
-order: 2
+order: 3
 ---
 
 # Kitchen Cabinet

@@ -1,3 +1,13 @@
+---
+title: Coordination
+description: Part 7 of the 'Estimating' Risk-First Series.
+url: https://riskfirst.org/estimating/Fill-The-Bucket
+--image: /images/generated/titles/Just-Risk.png
+--featuredimage: images/generated/single/Just-Risk.png
+categories:
+ - Estimating
+order: 7
+---
 
 # Coordination
 
@@ -10,7 +20,7 @@ Imagine you had a network of elements like the one below.
 
 
 
-
+jsfiddle.net/vfu78/16/
 
 Let's consider some scenarios for what this could represent:
 

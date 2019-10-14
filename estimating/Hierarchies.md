@@ -1,12 +1,12 @@
 ---
 title: Hierarchies
-description: Part 4 of the 'Estimating' Risk-First Series.
+description: Part 6 of the 'Estimating' Risk-First Series.
 url: https://riskfirst.org/estimating/Hierarchies
 --image: /images/generated/titles/Just-Risk.png
 --featuredimage: images/generated/single/Just-Risk.png
 categories:
  - Estimating
-order: 13
+order: 6
 ---
 
 # Hierarchies
