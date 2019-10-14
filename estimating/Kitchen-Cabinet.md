@@ -15,23 +15,25 @@ Imagine a scenario where you're helping a friend pack up their kitchen:
 
  - The kitchen contains 10 cabinets.
  - A cabinet takes one hour to pack.
- - However, each cabinet may have a further cabinet nested within it.  And on ad infinitum.
+ - However, each cabinet may have a further cabinet nested within it.  And on _ad infinitum_.
  - There is a 1:5 chance of a cabinet containing another cabinet.
  
 How long should you estimate for the job?   (The answer is below)
 
 This was suggested in a [Hacker News]() comment discussing software estimation, and struck a chord with many readers.  It's clear that we are no longer in the [Fill-The-Bucket](Fill-The-Bucket.md) domain anymore; our original intuitions about how long things might take are not going to work here.
 
-As a developer, this 'feels' more real to me than [Fill-The-Bucket](Fill-The-Bucket.md).  _Any_ task I take on has an outside chance of telescoping into something _much worse_.  Here's a recent example.  
+As a developer, this 'feels' more real to me than [Fill-The-Bucket](Fill-The-Bucket.md).  _Any_ task I take on has an outside chance of telescoping into something _much worse_.  Here's a recent example:  
 
- - I wanted to test out a css change to my website site (1 hour?)...
- - but in order to avoid wrecking the live version, I would need to do this offline, in [Jekyll](https://jekyllrb.com).. (2 hours?)
- - However, this meant getting Jekyll working locally on my mac (again). (3 hours)
- - However, Jekyll didn't install, because it used a later version of [Ruby](https://www.ruby-lang.org/en/) than the one I had.  (4 hours?)
- - The Ruby version Manager (RVM) I had was out-of-date, and needed updating... (5 hours)
- - and I couldn’t update it because [brew](https://brew.sh) has been disabled by an update to my OS-X installation.  (I think).
+ - I wanted to test out a CSS change to my website site. _1 hour?_
+ - But in order to avoid wrecking the live version, I would need to test this offline, with [Jekyll](https://jekyllrb.com). _2 hours?_
+ - However, this meant getting Jekyll working locally on my mac (again). _3 hours_
+ - However, Jekyll didn't install, because it used a later version of [Ruby](https://www.ruby-lang.org/en/) than the one I had.  _4 hours?_
+ - The Ruby version Manager (RVM) I had was out-of-date, and needed updating. _5 hours?_
+ - And I couldn’t update it because [brew](https://brew.sh) has been disabled by an update to my OS-X installation.  _??? hours_
 
 All-in-all, it just may not have been possible for me to test that CSS change the way I wanted to.  Every task had a further, worse sub-task embedded within it.
+
+_Cabinets within cabinets._
 
 <div id="simulation" />
 

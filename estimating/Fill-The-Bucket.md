@@ -107,7 +107,9 @@ Suddenly, the choice is no longer a sliding scale:  we don't have control of the
 
 ## Perverted
 
-Estimates are easily perverted by the risks, as you can see above.  Let's look at [Aranda and Easterbrook, 2005](http://www.cs.toronto.edu/%7Esme/papers/2005/ESEC-FSE-05-Aranda.pdf) again.  In their research they asked developers split into three groups (A, B and Control) to give individual estimates on how long a piece of software would take to build.   They were each given the same specification.  However:
+Estimates are easily perverted by the risks, as you can see above.  Although [we've discussed it before](Estimates.md), Let's look at [Aranda and Easterbrook, 2005](http://www.cs.toronto.edu/%7Esme/papers/2005/ESEC-FSE-05-Aranda.pdf) again.  
+
+In their research they asked developers split into three groups (A, B and Control) to give individual estimates on how long a piece of software would take to build.   They were each given the same specification.  However:
 
 - Group A was given the hint: "I admit I have no experience with software, but I guess it will take about two months to finish".
 - Group B were given the same hint, except with _20_ months.
@@ -136,4 +138,4 @@ But here, we've seen that the long-term benefits of good estimates are sacrifice
 
 Estimating as a technique then is already suspect, even within Fill-The-Bucket domain.  However, as all developers are painfully aware, building software is _not_ like Fill-The-Bucket.  
 
-Let's have a look at how things get a lot worse.
+Let's have a look at how things [get a lot worse](estimating/Kitchen-Cabinet.md).
