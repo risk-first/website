@@ -234,7 +234,7 @@ This is the [binary chop algorithm](), in which the number of remaining search-s
 
 So Fill-The-Bucket is _still_ an appropriate way of estimating for these algorithms, but your bucket-size might require a calculation of it's own.  tbd.
 
-## Estimating And Risk
+## Estimating With Risk
 
 Let's say we have a problem in the Fill-The-Bucket domain.  How can we use this with respect to risk?
 
@@ -242,16 +242,124 @@ Let's set up a simple scenario, which we've agreed by contract with a client:
 
 - The client will pay us £10,000 to process 500 client records.
 - The client wants the records completed in 20 days.  We can agree extra time in advance, but this costs £300 per day from the contracted price.
-- If we miss our delivery date, it will cost us £1,000 per day until the project is complete.
-- It takes 1-3 hours to process a client record, and we have 3 staff working 8 hours per day.  Let's model this with a mean of 2 hours and standard deviation of 1 hour.
+- If we miss our delivery date, we pay a penalty of £1,000 per day until the project is complete.
+- It takes 1-3 hours to process a client record, and we have 4 staff working 8 hours per day.  Let's model this with a mean of 2 hours and standard deviation of 1 hour.
 
 Let's ignore _all other risks_ and just focus on these monetary ones.  What is the best time to suggest to the client?
 
--- simulation showing delivery dates.
+<div id="simulation3" />
 
-What's the best price to quote for this work?  A straightforward analysis should lead you to ...
+<script type="text/javascript">
+function stddev(range, mean, variance) {
+	const factor = 1 / (Math.sqrt(2* 3.141592 * variance));
+	return range.map(r => {
+		const num= ((r - mean)*(r - mean));
+		const denom = 2 * variance;
+		const fact = num / denom;
+
+		return factor * Math.exp(-fact);
+	});
+}
+
+var days = 60;
+var mean = 2;
+var variance = 1;
+
+doChart('simulation3', 
+ {
+	'estimate': { min: 20, max: 80, value: 20, name: 'Estimate', step: 1 },
+	'records' : { min: 100, max: 700, value: 500, name: 'Records', step: 1 },
+	'mean' : { min: 1, max: 3, value: 2, name: 'Mean', step: .1 },
+	'variance' : { min: .5, max: 3, value: 1, name: 'Variance', step: .1 },
+	'staff' : { min: 1, max: 10, value: 4, name: 'Staff', step: 1 },
+	'hours' : { min: 1, max: 17, value: 8, name: 'Hours Per Day', step: 1 },
+	
+ },
+ [
+	 model => { 
+		 
+		 var meanEffort = model.records.value * model.mean.value;
+		 var varEffort = model.records.value * model.variance.value;
+		 var manPower = model.staff.value * model.hours.value;
+		 var daysPDF = stddev(range(0,days,1), meanEffort / manPower, varEffort / manPower);
+		 
+	 return {
+		    type: 'line',
+		    data: {
+		        labels: range(0, days, 1),
+		        datasets: [{
+		        	label: 'Days To Complete',
+		        	backgroundColor: [ 'rgba(255, 99, 132, 0.2)' ],
+			      	borderColor: [ 'rgba(255, 99, 132, 1)' ],
+		        	data: daysPDF
+		        }
+		        ]
+		    },
+		   
+		}},
+		
+		model => {
+			var penalty = (model.estimate.value - 20) * 300;
+			var returns = range(0, days, 1).map(d => 10000 - penalty - (Math.max(0, d - model.estimate.value) * 1000));
+
+			return {
+			    type: 'line',
+			    data: {
+			        labels: range(0, days, 1),
+			        datasets: [{
+			        	label: 'Return',
+			        	backgroundColor: [ 'rgba(132, 99, 255, 0.2)' ],
+				      	borderColor: [ 'rgba(132, 99, 255, 1)' ],
+			        	data: returns
+			        }
+			        ]
+			    },
+			   
+			}
+			
+			
+		},
+		model => {
+			var penalty = (model.estimate.value - 20) * 300;
+			var returns = range(0, days, 1).map(d => 10000 - penalty - (Math.max(0, d - model.estimate.value) * 1000));
+			var meanEffort = model.records.value * model.mean.value;
+			var varEffort = model.records.value * model.variance.value;
+			var manPower = model.staff.value * model.hours.value;
+			var daysPDF = stddev(range(0,days,1), meanEffort / manPower, varEffort / manPower);
+			var riskAdjustedReturn = daysPDF.map((v, i) => v * returns[i]);
+			
+			return {
+			    type: 'line',
+			    data: {
+			        labels: range(0, days, 1),
+			        datasets: [{
+			        	label: 'Risk-Adjusted Return',
+			        	backgroundColor: [ 'rgba(255, 132, 99, 0.2)' ],
+				      	borderColor: [ 'rgba(255, 132, 99, 1)' ],
+			        	data: riskAdjustedReturn
+			        }
+			        ]
+			    },
+			   
+			}
+			
+			
+		}
+		]);
+
+</script>
 
 ## Analysis
+
+There are three graphs above:
+
+ - The top (red) graph is showing the probability distribution function for us completing the work.  Our actual completion time is one point chosen randomly from the area in red. So, we're probably looking at around 32 days.
+ - The middle (blue) graph shows our return.  As you can see, it starts sliding down after 20 days, eventually ending up in negative territory.  Leaving the estimate at 20 days gives us the _highest possible_ payout of £10,000, increasing our estimate reduces this maximum.  
+ - The bottom (orange) graph multiplies these two together to give us a measure of [monetary risk](Scarcity-Risk.md#funding-risk). Without doing anything else, we're more likely to lose than win.
+ 
+Are you a gambler?  If you can just make everyone work a couple of extra hours' overtime, you'll be much more likely to make the big bucks.  But without cheating like this, it's probably best to give an estimate around 30 days or more.  
+
+## Meta-Analysis
 
 Now, in reality, life isn't really like this.  First, we might be able to work nights to get the project done, or hire more staff, or give bonuses for overtime _or something_.  In fact, in [Pressure]() we'll come back and look at some of these factors.
 
