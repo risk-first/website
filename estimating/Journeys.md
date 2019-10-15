@@ -11,11 +11,13 @@ order: 4
 
 # Journeys
 
-A third way to conceive of software development is as a _journey_ on the [Risk Landscape](Glossary.md#risk-landscape).  We start at a place where we have no product, no customers and some funding.  We go on a journey of discovery and end up in a place where hopefully we _have_ a product, customers and an income stream.
+A third way to conceive of software development is as a _journey_ on the [Risk Landscape](Glossary.md#risk-landscape). For example, in a startup we might start at a place where we have no product, no customers and some funding.  We go on a journey of discovery and end up in a place where hopefully we _have_ a product, customers and an income stream.
 
 There are many ways we could do this journey, and many destinations.  The idea of "pivoting" your startup idea feels very true to the [Journey](Journey.md) analogy, because that literally means changing direction.  _The place where we were headed sucked, lets go over here_.  
 
 What does this journey look like in Risk-First terms?
+
+tbd diagram.
 
 As this diagram shows, at the start we have plenty of [Feature Fit Risk](Feature-Risk#feature-fit-risk):  if we have _no_ product, then it definitely doesn't fit our customer's needs!  Also we have some amount of [Funding Risk](Scarcity-Risk#funding-risk), as at some point the money will run out.
 
@@ -50,9 +52,11 @@ How can we think about estimating in such a domain?  There are clearly a number 
 
 ## Back To Software
 
-So, we now have a third type of estimating.  Again, very different from the [first](Fill-The-Bucket-Estimating.md) [two](Kitchen-Cabinet-Estimating.md).  But again, there are obvious similarities with what we do in the world of software.  
+So, we now have a third type of estimating.  Again, very different from the [first](Fill-The-Bucket.md) [two](Kitchen-Cabinet.md).  But again, there are obvious similarities with what we do in the world of software, because it's so easy to _go the wrong way_ or _overlook a short-cut_.  
 
-I've been on projects where a team has toiled long-and-hard to get a database working, only to find out that there was a better, different one available that would do the job for them.  I've watched people struggle to build their own languages and compilers, only to realise later that actually all they needed was to use the ones that were there already.  It's easy to head off on-foot _by accident_, overlooking the fact that someone has _built the motorway_.
+I've been on projects where a team has toiled long-and-hard to get a database working, only to find out that there was a better, different one available that would do the job for them.  I've watched people struggle to build their own languages and compilers, only to realise later that actually all they needed was to use the ones that were there already.  
+
+In software, it's easy to head off on-foot _by accident_, overlooking the fact that someone has _built the motorway_.
 
 In fact, my argument is that, in a world of _millions of open-source projects_, the art of software development is to a large extent to be able to stitch together a selection of pre-written components in much the same way as I might stitch a journey plan together from a series of pre-existing travel options.
 
@@ -67,6 +71,6 @@ Estimating then becomes the art of:
 
 To achieve point (4), once an estimate is in place, the Risk-First way to proceed would then be to tackle each part in order, from the riskiest and most-likely-to-fail, to the most reliable.  This approach front-loads finding out if the plan is suspect. 
 
-But, there is _yet another_ way of looking at what's needed to estimate: [Fractal-Estimating](Fractal-Estimating.md).
+But, there is _yet another_ way of looking at what's needed to estimate: [Fractals](Fractals.md).
 
  

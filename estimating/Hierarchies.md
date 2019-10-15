@@ -11,7 +11,7 @@ order: 6
 
 # Hierarchies
 
-Having looked at three different approaches to estimating, it's time to take a brief but important aside: have you noticed just how prevalent the idea of _heirarchy_ is in software?  By hierarchy, I mean a general pattern of _connectedness_, where a _parent_ has some _children_, who, in turn, may each have some further children, and so on.
+Having looked at four different approaches to estimating, it's time to take a brief but important aside: have you noticed just how prevalent the idea of _heirarchy_ is in software?  By hierarchy, I mean a general pattern of _connectedness_, where a _parent_ has some _children_, who, in turn, may each have some further children, and so on.
 
 In this section, I'm going to look at a whole bunch of examples, and then try to examine exactly why this is such a popular pattern.  This will be a useful tool in our arsenal for estimation in the next section.
 
@@ -48,15 +48,6 @@ var myChart = new Chart(ctx, {
             ],
             borderWidth: 1
         }]
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
-        }
     }
 });
 </script>
@@ -181,11 +172,11 @@ But there are three places where we _leave_ the compositional hierarchy to call 
  - `System.out.println`: _takes_ a `String`.
  - `+`: _takes_ a `String` and something that can be converted to a `String`, _returns_ a `String`.
 
-![Compositional hierarchies on a larger project:  methods, classes, packages, directories, projects](images/estimating/containment.png)
+![Compositional hierarchies on a larger project:  methods, classes, packages, directories, projects](/images/estimates/containment.png)
 
 In Eclipse (my Java IDE) I can therefore view _both_ these types of hierarchy.  In the above screen-grab, you can see some more compositional hierarchy _methods_, _classes_, _packages_, _directories_ and _projects_.  
   
-![Classification hierarchy of the Resource class from Spring](/images/estimates/classfication.png)
+![Classification hierarchy of the Resource class from Spring](/images/estimates/classification.png)
 
 Whereas in this screen grab, I can view the hierarchy of a _class_ within Java (here the `Resource` class from [Spring](https://spring.io/projects/spring-hateoas)).
 
@@ -200,12 +191,18 @@ This has been a somewhat rambling introduction to two key types of hierarchy:
 
 **_Containment_ hierarchies** are used _everywhere_ in software development: _files_ in _disks_ in _servers_, _methods_ and _functions_ in _packages_ and _namespaces_ etc.  Good programming languages attempt to capture as much of the program's complexity as possible within the containment hierarchy.  
 
-People understand hierarchies because they're baked into (and invented by) our brains.  When I look outside at a car, I can see that it is a containment hierarchy of windows, wheels and metal panels.  When I think about my house, I think about different objects being contained within different rooms within a structure of bricks.  But none of that exists:  it's all in my head.  Everything is really just a bunch of atoms.
+People understand containment hierarchies because they're baked into (and invented by) our brains.  When I look outside at a car, I can see that it is a containment hierarchy of windows, wheels and metal panels.  When I think about my house, I think about different objects being contained within different rooms within a structure of bricks.  But none of that exists:  it's all in my head.  Everything is really just a bunch of atoms.
 
 **_Classification_ hierarchies** are also used everywhere in software development: _strings_, _numbers_, _records_, _classes_, _types_, _schemas_.   A key ability for a programmer is often to be able to abstract from multiple areas and say "this is like this".  
 
-When we create type systems (or set up databases) we are classifying things.   Having a field for "Marital Status", "Address" or "Planet / Not a Planet" is just something we've invented for the purposes of us processing data.
+Classification hierarchies are also baked into our brains:  looking at my car, the windows and wheels, these are all classifications of objects that exist in my head.  But everything is really just a bunch of atoms.
 
-At this point, you're probably wondering what any of this has to do with estimating in software development, so let's continue...
+When we create programs (or set up databases) we are classifying things.   Having a field for "Marital Status", "Address" or "Planet / Not a Planet" is just something we've invented for the purposes of us processing data.  We are copying the mental concepts we've developed for navigating the real world and pasting them into our code.  
+
+We should be cautious doing this, as we _might well be wrong_.
+
+internal model picture, copying.
+
+At this point, you're probably wondering what any of this has to do with estimating in software development, so [let's continue]...
 
 
