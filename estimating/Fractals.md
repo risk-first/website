@@ -46,13 +46,27 @@ Meanwhile, Apple would be iterating, expanding the perimeter's complexity, and t
 
 Successive iterations brought the App-Store, front-and-rear cameras, touch, bluetooth, WiFi and so on.   
 
-## Iteration
+## Iteration With Components
 
 If your problem doesn't have a defined end-goal, there is simply no way of estimating how long it will take to get there.  And, if (like the Koch snowflake) your solution will _never_ be perfect, then the only way out is to _iterate_.
 
-> "I'll build a prototype in three weeks"
+As we discussed in [Journeys](), your best bet is to try and colonise the area of value _as fast as possible_ by using as much readily available software as possible.  
 
--- risk first diagram  Fractal Problem-Space   Iteration
+-- diagram of this
+
+Maybe version one looks something like the diagram above: a few hastily-assembled components lashed together along with some rough-and-ready web pages.   Hopefully, this kind of design will give you a better idea of what the right answer looks like.
+
+-- diagram of this.
+
+The second version might fill in some of the blanks, and smooth off some raw edges.  Feedback from users will provide you with a better understanding of exactly what this fractal problem-space looks like.
+
+Where you _don't know the answer_, iteration is really the only tool in the box.   
+- risk first diagram for iteration
+
+But this comes with a warning:  there are plenty of other problem domains that we've looked at where you _do_ know the answer.  
+
+ - Don't reach for iteration as a first resort.  Make sure you're applying this technique to a relevant project.  Iteration is about scrambling together a few scratch components that may well get replaced in a later iteration.  It's clearly very different from _doing the worst parts first_ that we saw in [Journeys](Journeys.md).
+ - Iterating _takes time_.  It involves [Meeting Reality]() with your users in a [large feedback loop]().  Because large feedback loops are more costly than smaller ones, make sure you _definitely need to do this_.
 
 ## Applying Risk-First
 
@@ -62,7 +76,7 @@ Let's look at the conclusions we reached in [Boundary Risk]():
 - **Software and hardware are both improving with time**: due to evolution and the ability to support greater and greater levels of complexity.
 - **Abstractions accrete too**:  as we saw in [Process Risk](Process-Risk.md), we _encapsulate_ earlier abstractions in order to build later ones.
 
-If we accept this problem of the fractal nature of human desire, then we have to condend with the fact that our software systems are always going to get continually more complex to serve it.
+If we accept this problem of the fractal nature of human desire, then we have to contend with the fact that our software systems are always going to get continually more complex to serve it.
 
 Therefore, our next stop is to look again at complexity...
 

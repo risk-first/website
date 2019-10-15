@@ -35,7 +35,86 @@ Also, we shouldn't expect measurement in the real world to ever be exact,  we ar
 
 Where we are able to see measurements clustering-around-the-mean, this gives rise to a [Gaussian (or Normal) distribution]() of measurements.
 
--- (simulation of this)
+<div id="simulation" />
+
+<script type="text/javascript">
+
+function stddev(range, mean, variance) {
+	const factor = 1 / (Math.sqrt(2* 3.141592 * variance));
+	return range.map(r => {
+		const num= ((r - mean)*(r - mean));
+		const denom = 2 * variance;
+		const fact = num / denom;
+		
+		return factor * Math.exp(-fact);
+	});
+}
+
+doChart('simulation', 
+ {
+   'units' : { min: 1, max: 30, value: 10, name: 'Number of Units', step: 1 },
+   'mean' : { min: 20, max: 120, value: 60, name: 'Mean time to Complete Unit', step: 1 },
+   'variance' : { min: 1, max:50, value: 30, name: 'Variance In Unit Time', step: 1}
+ },
+ [
+	 model => { 
+		 var min = 0;
+		 var max = 120;
+		 
+		 return {
+	    type: 'line',
+	    data: {
+	      labels: range(min, max, 1).map(r => Math.round(r)),
+	      datasets: [{
+	      	label: 'Time To Complete A Single Unit (minutes)',
+	      	backgroundColor: [ 'rgba(255, 99, 132, 0.2)' ],
+	      	borderColor: [ 'rgba(255, 99, 132, 1)' ],
+	      	data: stddev(range(min,max,1), model.mean.value, model.variance.value)
+	      }]
+	    },
+	    options: {
+	    	scales: {
+	            yAxes : [{
+	                ticks : {
+	                	max : .3,    
+	                	min : 0
+	                }
+	            }]
+	    	}
+        }
+	  }
+	 },
+	 model => { 
+		 var min = 0;
+		 var max = 3600;
+		 
+		 return {
+		    type: 'line',
+		    data: {
+		      labels: range(min / 60, max/60, 10/60).map(r => Math.round(r)),
+		      datasets: [{
+		      	label: 'Time To Complete All Units (hours)',
+		      	backgroundColor: [ 'rgba(132, 99, 255, 0.2)' ],
+		      	borderColor: [ 'rgba(132, 99, 255, 1)' ],
+		      	data: stddev(range(min,max,10), model.mean.value*model.units.value, model.variance.value * model.units.value)
+		      }]
+		    },
+		    options: {
+		    	scales: {
+		            yAxes : [{
+		                ticks : {
+		                	max : .05,    
+		                	min : 0
+		                }
+		            }]
+		    	}
+	        }
+		  }
+		 },	 
+	 
+	]);
+
+</script>
 
 You can fairly easily add up normal distributions like this.  If you have _n_ fence panels to paint, with _m_ as the mean time to paint each panel, and _v_ as the variance, then:
  
