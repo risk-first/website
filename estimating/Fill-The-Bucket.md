@@ -121,6 +121,10 @@ You can fairly easily add up normal distributions like this.  If you have _n_ fe
   - The mean over all _n_ fence panels is _n x m_.
   - The new variance is _n x v_.
   
+This is what is going on in the above graphs.  The area under each curve is the _probability distribution_.  When you paint any given fence panel (the first, red graph), you'd expect it to be a single spot from under the graph, taken at random.  Given that there is more space under the graph around the mean, we'd expect our fence-painting times to be clustered around the mean.  
+
+The second, blue graph extrapolates the single panel distribution to show how long the whole job will take.  It the variance for a single panel is large, then the likely time to paint the whole fence could vary by _hours_.  
+  
 ## Sampling Error
 
 If you paint the first fence panel in 40 minutes, how sure can you be that this is a good mean?  What if you extrapolate from this single fence panel?  To paint all 40 might now only take 26 hours - which is a good deal shorter than the original estimate of 40 hours.  Is that fair?
@@ -131,7 +135,89 @@ After the first fence panel, you just don't know.  After you've painted two or t
 
 The more samples we make, the more exact the sample variance will be, and so the more confident we should be on our expected time to complete painting the fence.
 
--- simulation showing the sample error
+<div id="simulation2" />
+
+<script type="text/javascript">
+function stddev(range, mean, variance) {
+	const factor = 1 / (Math.sqrt(2* 3.141592 * variance));
+	return range.map(r => {
+		const num= ((r - mean)*(r - mean));
+		const denom = 2 * variance;
+		const fact = num / denom;
+
+		return factor * Math.exp(-fact);
+	});
+}
+
+function random_normal() 
+{  
+  const M_PI = 3.14159;	
+  return Math.sqrt(-2*Math.log(Math.random())) * Math.cos(2*M_PI*Math.random());
+}
+
+var mean = 11;
+var variance = 2.5
+
+const samples = range(0, 200, 1).map(i => random_normal()*variance+mean);
+
+function bucket(samples) {
+	var out = new Array(20).fill(0);
+	samples.forEach(s => {
+		var b = Math.round(s);
+		if ((b>=0) && (b<20)) {
+			out[b] ++;
+		}
+	});
+	return out;
+}
+function calcMean(s) {
+	var tot = s.reduce((a,b) => a+b);
+	var len = s.length;
+	return tot/len;
+}
+	
+function calcVar(s, mean) {
+	var tot = s.map(i => (i - mean)*(i - mean)).reduce((a, b) => a+b);
+	var len = s.length - 1;
+	return tot / len;
+}
+
+doChart('simulation2', 
+ {
+   'samples' : { min: 2, max: 200, value: 3, name: 'Individual Samples', step: 1 },
+ },
+ [
+	 model => { 
+	     var subsam = samples.slice(0, model.samples.value);
+		 var mean = calcMean(subsam);
+		 var variance = calcVar(subsam, mean);
+		 var buckets = bucket(subsam);
+	 	 var dist = stddev(range(0, 20, 1), mean, variance).map(r => r* model.samples.value);
+	 
+	 return {
+		    type: 'bar',
+		    data: {
+		        labels: range(0, 20, 1),
+		        datasets: [{
+		            label: 'Samples',
+		            data: buckets,
+		            borderWidth: 1,
+		            backgroundColor: 'rgba(132, 99, 255, 0.2)' ,
+			      	borderColor:  'rgba(132, 99, 255, 1)' ,
+		        },
+		        {
+		        	type: 'line',
+		        	label: 'Normal Distribution Fit',
+		        	backgroundColor: [ 'rgba(255, 99, 132, 0.2)' ],
+			      	borderColor: [ 'rgba(255, 99, 132, 1)' ],
+		        	data: dist
+		        }]
+		    },
+		   
+		}}]);
+
+</script>
+
 
 ## Big-O
 

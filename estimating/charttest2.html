@@ -9,7 +9,7 @@ integrity="sha256-Uv9BNBucvCPipKQ2NS9wYpJmi8DTOEfTA/nH2aoJALw=" crossorigin="ano
 <body>
 
 
-<div id="simulation2" />
+<div id="simulation" />
 
 <script type="text/javascript">
 function stddev(range, mean, variance) {
@@ -18,7 +18,7 @@ function stddev(range, mean, variance) {
 		const num= ((r - mean)*(r - mean));
 		const denom = 2 * variance;
 		const fact = num / denom;
-
+		
 		return factor * Math.exp(-fact);
 	});
 }
@@ -29,7 +29,7 @@ function random_normal()
   return Math.sqrt(-2*Math.log(Math.random())) * Math.cos(2*M_PI*Math.random());
 }
 
-var mean = 11;
+var mean = 5;
 var variance = 2.5
 
 const samples = range(0, 200, 1).map(i => random_normal()*variance+mean);
@@ -37,7 +37,7 @@ const samples = range(0, 200, 1).map(i => random_normal()*variance+mean);
 function bucket(samples) {
 	var out = new Array(20).fill(0);
 	samples.forEach(s => {
-		var b = Math.round(s);
+		var b = Math.round(s) + mean;
 		if ((b>=0) && (b<20)) {
 			out[b] ++;
 		}
@@ -49,45 +49,63 @@ function calcMean(s) {
 	var len = s.length;
 	return tot/len;
 }
-	
+
 function calcVar(s, mean) {
 	var tot = s.map(i => (i - mean)*(i - mean)).reduce((a, b) => a+b);
 	var len = s.length - 1;
 	return tot / len;
 }
 
-doChart('simulation2', 
+doChart('simulation', 
  {
-   'samples' : { min: 2, max: 200, value: 3, name: 'Individual Samples', step: 1 },
+   'samples' : { min: 1, max: 200, value: 1, name: 'Individual Samples', step: 1 },
  },
  [
 	 model => { 
-	     var subsam = samples.slice(0, model.samples.value);
+		 var subsam = samples.slice(0, model.samples.value);
 		 var mean = calcMean(subsam);
 		 var variance = calcVar(subsam, mean);
 		 var buckets = bucket(subsam);
-	 	 var dist = stddev(range(0, 20, 1), mean, variance).map(r => r* model.samples.value);
-	 
-	 return {
-		    type: 'bar',
+		 
+		 return {
 		    data: {
-		        labels: range(0, 20, 1),
+		    	type: 'bar',
+			    labels: range(0, 20, 1),
 		        datasets: [{
 		            label: 'Samples',
 		            data: buckets,
 		            borderWidth: 1,
-		            backgroundColor: 'rgba(132, 99, 255, 0.2)' ,
-			      	borderColor:  'rgba(132, 99, 255, 1)' ,
+		            type: 'bar'
 		        },
-		        {
-		        	type: 'line',
-		        	label: 'Normal Distribution Fit',
-		        	backgroundColor: [ 'rgba(255, 99, 132, 0.2)' ],
-			      	borderColor: [ 'rgba(255, 99, 132, 1)' ],
-		        	data: dist
-		        }]
+		        ]
 		    },
-		   
+		    options: {
+		        maintainAspectRatio: false,
+		        scales: {
+		            yAxes: [{
+		                ticks: {
+		                    beginAtZero: true,
+		                    max: 20,
+		                    min: 0
+		                },
+		                position: 'left'
+		            },
+		            {
+		            	ticks: {
+		                    beginAtZero: true,
+		                    max: 5,
+		                    min: 0
+		                },
+		                position: 'right'
+		            }],
+		            xAxes: [{
+		            	ticks: {
+		            		min: 0,
+		            		max: 20
+		            	},
+		            }]
+		        }
+		    }
 		}}]);
 
 </script>
