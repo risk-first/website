@@ -38,6 +38,7 @@ function doChart(elementId, model, charts) {
 	
 	var row = create("div", "row", element);
 	var controls = create("div", "col-sm", row);
+	var graphs = create("div", "col-sm", row);
 	var form = create("form", "", controls);
 	
 	$.each(model, (k, v) => {
@@ -64,8 +65,7 @@ function doChart(elementId, model, charts) {
 		var chartData = f(model);
 		
 		// create the elements
-		var chartDiv = create("div", "col-sm", row);
-		var canvas = create("canvas", "", chartDiv);
+		var canvas = create("canvas", "", graphs);
 		var ctx = canvas.getContext('2d');
 		var myChart = new Chart(ctx, chartData);
 		f.myChart = myChart;
