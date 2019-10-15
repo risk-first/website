@@ -362,6 +362,9 @@ Are you a gambler?  If you can just make everyone work a couple of extra hours' 
 ## Meta-Analysis
 
 Now, in reality, life isn't really like this.  First, we might be able to work nights to get the project done, or hire more staff, or give bonuses for overtime _or something_.  In fact, in [Pressure]() we'll come back and look at some of these factors.
+-- this is how banks price risk.  and we all know how well that worked out.
+
+
 
 Second, we've actually got a project here which _degrades gracefully_. The costs of taking longer are clearly sign-posted in advance.  In reality, the costs of missing a date might be much more disastrous:  not getting your game completed for Christmas, missing a regulatory deadline, not being ready for an important demo - these are all-or-nothing outcomes where it's a [stark contrast between in-time and missing-the-bus](Deadline-Risk).  
 

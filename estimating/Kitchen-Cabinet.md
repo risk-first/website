@@ -162,7 +162,82 @@ But being early (a too-late estimate) risks:
  - Estimate was too long, people go elsewhere          Personal
  
  
--- simulator with risks included.
+<div id="lambda2" />
+
+<script type="text/javascript">
+
+doChart('lambda2', 
+ {
+   'lambda' : { min: 0, max: 1, value: .5, name: 'Lambda', step: 0.01 },
+   'units' : { min: 1, max: 25, value: 5, name: 'Units', step: 1 },
+   'estimate' : { min: 0, max: 20, value: 5, name: 'Estimate', step: 1 },
+   'days' : { min: 20, max: 60, value: 20, name: 'Days', step: 1 },
+ },
+ [
+ model => { 
+  var lambda = 	 range(0, model.days.value, 1).map(i => model.lambda.value * Math.exp(-i * model.lambda.value))
+	 
+  return {
+    type: 'line',
+    data: {
+      labels: range(0, model.days.value, 1),
+      datasets: [{
+      	label: 'Project Completion Date',
+      	backgroundColor: [ 'rgba(255, 99, 132, 0.2)' ],
+      	borderColor: [ 'rgba(255, 99, 132, 1)' ],
+      	data: lambda
+      },
+      ]
+    }
+  }},
+  model => { 
+	  var early = range(0, model.days.value, 1).map(i => Math.max(0, model.estimate.value - i));
+	  var late = range(0, model.days.value, 1).map(i => Math.max(0, i- model.estimate.value))
+	  
+	  return {
+	    type: 'line',
+	    data: {
+	      labels: range(0, model.days.value, 1),
+	      datasets: [{
+	      	label: 'Too-Early Risks',
+	      	backgroundColor: [ 'rgba(132, 99, 255, 0.2)' ],
+	      	borderColor: [ 'rgba(132, 99, 255, 1)' ],
+	      	data: early
+	      },
+	      {
+		      	label: 'Too-Late Risks',
+		      	backgroundColor: [ 'rgba(132, 200, 99, 0.2)' ],
+		      	borderColor: [ 'rgba(132, 200, 99, 1)' ],
+		      	data: late
+		      }
+	      ]
+	    }
+	  }
+  },
+  model => { 
+	  var lambda = 	 range(0, model.days.value, 1).map(i => model.lambda.value * Math.exp(-i * model.lambda.value))
+	  var early = range(0, model.days.value, 1).map(i => Math.max(0, model.estimate.value - i));
+	  var late = range(0, model.days.value, 1).map(i => Math.max(0, i- model.estimate.value))
+	  var rar = lambda.map((v, i) => v * (early[i] + late[i]));
+	  
+	  return {
+	    type: 'line',
+	    data: {
+	      labels: range(0, model.days.value, 1),
+	      datasets: [{
+	      	label: 'Risk-Adjusted Return',
+	      	backgroundColor: [ 'rgba(255, 132, 99, 0.2)' ],
+	      	borderColor: [ 'rgba(255, 132, 99, 1)' ],
+	      	data: rar
+	      }
+	      ]
+	    }
+	  }
+},
+ 
+]);
+
+</script>
 
 As a project manager, you're much more likely to put your own interests ahead of the company.  But luckily, the goals of the company and the project manager co-incide for the most part:  managers are incentivised by pay (and maybe bonuses) to bring projects in on time, and doing so looks good on the CV.
 
