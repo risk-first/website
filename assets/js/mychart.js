@@ -36,9 +36,7 @@ function doChart(elementId, model, charts) {
 	var element = document.querySelector("#"+elementId);
 	element.setAttribute("class", "container-fluid");
 	
-	var row = create("div", "row", element);
-	var graphs = create("div", "col-sm", row);
-	
+	var row = create("div", "row", element);	
 	
 	if (model) {
 		var controls = create("div", "col-sm", row);
@@ -64,6 +62,9 @@ function doChart(elementId, model, charts) {
 		}); 
 		
 	}
+
+	var graphs = create("div", "col-sm", row);
+
 	
 	charts.forEach(function(f) {
 		// this is the info we'll use to populate the chart
