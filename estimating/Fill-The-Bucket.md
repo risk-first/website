@@ -232,9 +232,9 @@ There are plenty of algorithms too which have other efficiencies.   Let's say yo
 1.  Establish upper and lower bounds of the search space (i.e. first and last entry of the dictionary)
 2.  Find a word about half-way between the two.  Is the word you're looking for _before_ or _after_ this word, or exactly this word?  If the latter, you're done, otherwise, revise either the upper or lower bound to this word and repeat.
 
-This is the [binary chop algorithm](), in which the number of remaining search-space _halves_ each time you go round step 2.  Therefore, doubling the length of the dictionary only increases the number of operations by 1.  So this algorithm takes **O(lg2 n)** time.
+This is the [binary chop algorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm), in which the number of remaining search-space _halves_ each time you go round step 2.  Therefore, doubling the length of the dictionary only increases the number of operations by 1.  So this algorithm takes **O(lg2 _n_)** time.
 
-So Fill-The-Bucket is _still_ an appropriate way of estimating for these algorithms, but your bucket-size might require a calculation of it's own.  tbd.
+So Fill-The-Bucket is _still_ an appropriate way of estimating for these algorithms.  If you can figure out how long it takes to do steps 1 & 2, and how many times it'll have to do them, you can make a good estimate of the total time.
 
 ## Estimating With Risk
 
@@ -363,14 +363,15 @@ Are you a gambler?  If you can just make everyone work a couple of extra hours' 
 
 ## Meta-Analysis
 
-Now, in reality, life isn't really like this.  First, we might be able to work nights to get the project done, or hire more staff, or give bonuses for overtime _or something_.  In fact, in [Pressure]() we'll come back and look at some of these factors.
--- this is how banks price risk.  and we all know how well that worked out.
+This is a really contrived example, but actually this represents _most of_ how banks work out risk, simply multiplying the probability of something happening by what is lost when it does happen.  But let's look at some criticisms of this:
 
-
+Aren't there other options?  We might be able to work nights to get the project done, or hire more staff, or give bonuses for overtime _or something_.  In fact, in [Pressure](estimating/Pressure.md) we'll come back and look at some of these factors.
 
 Second, we've actually got a project here which _degrades gracefully_. The costs of taking longer are clearly sign-posted in advance.  In reality, the costs of missing a date might be much more disastrous:  not getting your game completed for Christmas, missing a regulatory deadline, not being ready for an important demo - these are all-or-nothing outcomes where it's a [stark contrast between in-time and missing-the-bus](Deadline-Risk).  
 
-Third, software development isn't generally isn't like this - as we will explore in the following sections, software development is _not_ in the Fill-The-Bucket domain, generally.
+Third, software development isn't generally isn't like this - as we will explore in the following sections, software development is _not_ in the Fill-The-Bucket domain, generally.  
+
+The problem is, because this approach works so well in banking and operations and other places, there is a _strong tendency_ for project managers to want to apply it to software anyway.  
 
 ## A Better Understanding Of Risk
 
