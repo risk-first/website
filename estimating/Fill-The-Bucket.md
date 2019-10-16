@@ -22,6 +22,7 @@ The key to Fill-The-Bucket style estimation is that:
 
  - The work can be measured in units.   
  - Each unit is pretty much the same as another.  
+ - Each unit is _independent_ to the others.
  
 This is our starting-off point.  It should be pretty clear that these assertions _don't_ hold true for a lot of software development, but let's examine this style of estimating anyway.
 
@@ -119,9 +120,9 @@ You can fairly easily add up normal distributions like this.  If you have _n_ fe
   - The mean over all _n_ fence panels is _n x m_.
   - The new variance is _n x v_.
   
-This is what is going on in the above graphs.  The area under each curve is the _probability distribution_.  When you paint any given fence panel (the first, red graph), you'd expect it to be a single spot from under the graph, taken at random.  Given that there is more space under the graph around the mean, we'd expect our fence-painting times to be clustered around the mean.  
+This is what is going on in the above graphs.  The area under each curve is the _probability distribution_.  When you paint any given fence panel (the first, red graph), you'd expect the time taken to be a single spot from under the graph, picked at random.  Given that there is more area under the graph around the mean, we'd expect our fence-painting times to be clustered around the mean.  
 
-The second, blue graph extrapolates the single panel distribution to show how long the whole job will take.  It the variance for a single panel is large, then the likely time to paint the whole fence could vary by _hours_.  
+The second, blue graph extrapolates the single panel distribution to show how long the whole job will take.  It the variance for a single panel is large and the number of panels painted is large, then the time to paint the whole fence could vary by _hours_.  
   
 ## Sampling Error
 
@@ -131,7 +132,7 @@ After the first fence panel, you just don't know.  After you've painted two or t
 
 -- (sample variance formula)
 
-The more samples we make, the more exact the sample variance will be, and so the more confident we should be on our expected time to complete painting the fence.
+The more samples we make, the more precise the sample variance will be, and so the more confident we should be on our expected time to complete painting the fence.
 
 <div id="simulation2" />
 
@@ -216,12 +217,15 @@ doChart('simulation2',
 
 </script>
 
+You should be able to see this with the above simulation:  when you move from two to three samples, the variance (the shape of the bell-curve) will probably change _a lot_.  However moving from twenty to thirty samples means it hardly changes at all.  
+
+This kind of measurement and estimating is the bread-and-butter of all kinds of [Operational Control](Operational-Risk.md) systems.
 
 ## Big-O
 
-Although software development tasks don't often fit into the Fill-The-Bucket domain, lots of things in _data processing_ do.  When talking about _algorithms_, we say fence-panel painting is **O(n)**.  That is, the number of operations taken to complete the job is a linear function _n_, the number of fence panels.
+Although software development tasks don't often fit into the Fill-The-Bucket domain, lots of things in _data processing_ do.  When talking about _algorithms_, we say fence-panel painting is **O(_n_)**.  That is, the number of operations taken to complete the job is a linear function _**n**_, the number of fence panels.
 
-The same is true for lots of other algorithms - scanning a linked-list, walking a tree, these are often **O(n)**.
+The same is true for lots of other algorithms - scanning a linked-list, walking a tree, these are often **O(_n_)**.
 
 There are plenty of algorithms too which have other efficiencies.   Let's say you use this algorithm to look up a word in a dictionary.
 
