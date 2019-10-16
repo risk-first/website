@@ -12,9 +12,7 @@ order: 2
 
 # Fill-The-Bucket
 
-> If a tap fills at a rate of 1 litre a minute, how many minutes will it take to fill a 20 litre jug?
-
-![](diagram here, bucket, squares in it)
+![/images/generated/estimating/fill_the_bucket.png](If it takes one hour to fill a 5l bucket...)
 
 The simplest type of estimation problem we might face in software development is _linear_, as in the example above.  If one developer takes one day to build a web-page for our site, how long will it take to build ten web-pages?  Well, it could be that the answer is around ten days.
 
