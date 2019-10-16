@@ -36,8 +36,49 @@ In successive years, new iPhones arrived, improving on the original.  The screen
 
 Just like the Koch snowflake, above, the designers were creating an ever-more-complex perimeter of complexity around an area of _consumer value_.  And, just like the Koch snowflake, each new version increased the _area_ of value.  
 
--- graph of area vs time for koch curve.
+<div id="koch" />
 
+<script type="text/javascript">
+
+var max = 10;
+
+doChart('koch', 
+ {
+ },
+ [
+ model => { 	 
+  return {
+    type: 'line',
+    data: {
+      labels: range(0, max, 1),
+      datasets: [{
+      	label: 'Perimeter Length',
+      	backgroundColor: [ 'rgba(255, 99, 132, 0.2)' ],
+      	borderColor: [ 'rgba(255, 99, 132, 1)' ],
+      	data: range(0, max, 1).map(i => Math.pow((4/3), i))
+      },
+      ]
+    }
+  }},
+  model => { 
+	  return {
+	    type: 'line',
+	    data: {
+	      labels: range(0, max, 1),
+	      datasets: [{
+	      	label: 'Area',
+	      	backgroundColor: [ 'rgba(255, 132, 99, 0.2)' ],
+	      	borderColor: [ 'rgba(255, 132, 99, 1)' ],
+	      	data:  range(0, max, 1).map(i => 8-3*(Math.pow(4/9, i)))
+	      }
+	      ]
+	    }
+	  }
+},
+ 
+]);
+
+</script>
 ## Competition
 
 Let's consider the competition for a second.  Because of the iPhone's huge success, it didn't take long for competitors to catch on.  Their job was easier, since they had a _target to aim at_: hitting the same _area of consumer value_ that the iPhone did, except with their own hardware.

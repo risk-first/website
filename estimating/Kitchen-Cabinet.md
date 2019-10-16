@@ -168,7 +168,7 @@ But being early (a too-late estimate) risks:
 
 doChart('lambda2', 
  {
-   'lambda' : { min: 0, max: 1, value: .5, name: 'Lambda', step: 0.01 },
+   'lambda' : { min: .01, max: 1, value: .5, name: 'Lambda', step: 0.01 },
    'units' : { min: 1, max: 25, value: 5, name: 'Units', step: 1 },
    'estimate' : { min: 0, max: 20, value: 5, name: 'Estimate', step: 1 },
    'days' : { min: 20, max: 60, value: 20, name: 'Days', step: 1 },
