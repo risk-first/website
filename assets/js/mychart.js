@@ -40,7 +40,7 @@ function doChart(elementId, model, charts) {
 	var graphs = create("div", "col-sm", row);
 	
 	
-	if (model.size > 0) {
+	if (model) {
 		var controls = create("div", "col-sm", row);
 		var form = create("form", "", controls);
 		

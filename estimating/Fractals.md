@@ -43,8 +43,7 @@ Just like the Koch snowflake, above, the designers were creating an ever-more-co
 var max = 10;
 
 doChart('koch', 
- {
- },
+ undefined,
  [
  model => { 	 
   return {
