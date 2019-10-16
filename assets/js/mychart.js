@@ -37,28 +37,33 @@ function doChart(elementId, model, charts) {
 	element.setAttribute("class", "container-fluid");
 	
 	var row = create("div", "row", element);
-	var controls = create("div", "col-sm", row);
 	var graphs = create("div", "col-sm", row);
-	var form = create("form", "", controls);
 	
-	$.each(model, (k, v) => {
-		var fg = create("div", "form-group", form);
-		var label = create("label", "", fg);
-		label.setAttribute("for", k);
-		label.textContent = v.name+": "+v.value; 
+	
+	if (model.length > 0) {
+		var controls = create("div", "col-sm", row);
+		var form = create("form", "", controls);
 		
-		var input = create("input", "form-control-range", fg);
-		input.setAttribute("type", "range");
-		input.setAttribute("name", k);
-		input.setAttribute("max", v.max);
-		input.setAttribute("min", v.min);
-		input.setAttribute("step", v.step);
-		input.setAttribute("value", v.value);
-		input.addEventListener("change", e => update(v, e, val => label.textContent = v.name+ ": "+val));
+		$.each(model, (k, v) => {
+			var fg = create("div", "form-group", form);
+			var label = create("label", "", fg);
+			label.setAttribute("for", k);
+			label.textContent = v.name+": "+v.value; 
+			
+			var input = create("input", "form-control-range", fg);
+			input.setAttribute("type", "range");
+			input.setAttribute("name", k);
+			input.setAttribute("max", v.max);
+			input.setAttribute("min", v.min);
+			input.setAttribute("step", v.step);
+			input.setAttribute("value", v.value);
+			input.addEventListener("change", e => update(v, e, val => label.textContent = v.name+ ": "+val));
+			
+			var output = create("output", "", fg);
+			output.setAttribute("name", k);
+		}); 
 		
-		var output = create("output", "", fg);
-		output.setAttribute("name", k);
-	}); 
+	}
 	
 	charts.forEach(function(f) {
 		// this is the info we'll use to populate the chart
