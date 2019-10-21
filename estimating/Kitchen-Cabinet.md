@@ -94,7 +94,6 @@ doChart('simulation',
 
 ## Distribution
 
-
 There is no _guaranteed_ end-point for this work, but in the case described above, you could end up moving 70 cabinets if you were unlucky.  Have a play with the simulator here, and see how different numbers of cabinets and probabilities work out.  In particular, what happens when:
 
  - You have a _single_ cabinet in the original kitchen?
@@ -102,13 +101,7 @@ There is no _guaranteed_ end-point for this work, but in the case described abov
  
 When the number of initial cabinets is low, the distribution tends towards the [Exponential Distribution](https://en.wikipedia.org/wiki/Exponential_distribution), and it works in a way similar to radioactive decay.  That is, we might best be able to talk about moving kitchens in terms of their half-lives.  That is, given a bunch of infinity-cabinets, we could say how long it would usually take for _half_ of them to be completed.  Then, it'll be the same again for the next half, and so on.
 
-Whereas [Fill-The-Bucket](Fill-The-Bucket.md) was defined with a _mean_ and _variance_, the exponential distribution is modelled with a single parameter, lambda (λ).
-
-$$ Y = e^-λx $$
-
-{% raw %}
-  $$a^2 + b^2 = c^2$$ --> note that all equations between these tags will not need escaping! 
-{% endraw %}
+Whereas [Fill-The-Bucket](Fill-The-Bucket.md) was defined with a _mean_ and _variance_, the exponential distribution is modelled with a single parameter, lambda (λ), which is the rate of decay.   
 
 <div id="lambda" />
 
@@ -131,6 +124,15 @@ doChart('lambda',
       	data: range(0, 20, 1).map(i => model.units.value * Math.exp(-i * model.lambda.value))
       },
       ]
+    },
+     options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
     }
   }
  
@@ -144,23 +146,13 @@ doChart('lambda',
 
 Let's assume that the exponential distribution _does_ model software development.  Where does that leave us with respect to estimating?
 
+Let's first consider that we have a good grasp on what the half-life (or lambda) might be for development in general.
+
+With any estimate, there are risks both in estimating too much time (you might not be given the work) and in too little time (you wind up missing the delivery date). 
+
 As a developer, I might (if pushed to estimate the project as a single number) pick the half-life point on the graph.  On average, half the projects would be complete before this point, and half after.  
 
 The problem with that is, the ones that finish later might finish _much, much later_.  Picking the half-life point might be a dangerous strategy.  i.e it wouldn't minimize risk.
-
-As a project manager, I might consider that being late is a bigger risk than being early. Hence the idea of padding estimates.  
-
-Being late (i.e. a too-early estimate) risks:
- - Broken Promises, Damaged Reputation [Trust Risk]()   Personal
- - Being Fired for bad management. [Funding Risk]()     Personal
- - Missing critical dates that co-ordinate with other teams. [Coordination Risk]()  Business
- - Project failure Personal, Business.
-
-But being early (a too-late estimate) risks:
- - Wasted developer time          [Funding Risk]()     Business
- - Parkinsons’ Law (Gold Plating) [Complexity Risk]()  Business
- - Estimate was too long, people go elsewhere          Personal
- 
  
 <div id="lambda2" />
 
@@ -225,7 +217,7 @@ doChart('lambda2',
 	    data: {
 	      labels: range(0, model.days.value, 1),
 	      datasets: [{
-	      	label: 'Risk-Adjusted Return',
+	      	label: 'Risk',
 	      	backgroundColor: [ 'rgba(255, 132, 99, 0.2)' ],
 	      	borderColor: [ 'rgba(255, 132, 99, 1)' ],
 	      	data: rar
@@ -239,11 +231,19 @@ doChart('lambda2',
 
 </script>
 
-As a project manager, you're much more likely to put your own interests ahead of the company.  But luckily, the goals of the company and the project manager co-incide for the most part:  managers are incentivised by pay (and maybe bonuses) to bring projects in on time, and doing so looks good on the CV.
+## Analysis
 
-Nevertheless, you would expect them to estimate things in a way that benefits their own risk profile, over the company's.  
+We have three graphs above:
 
-Also, this offers some explanation of [Aranda and Easterbrook's Result](Fill-The-Bucket.md#perverted).
+ - The top (red) graph simulates completion date.  Our eventual completion date is randomly picked from somewhere in the red area.  Clearly, tasks are likely to complete sooner, rather than later.  
+ - The middle (green and blue) graph shows the costs of getting the estimate wrong.  If you hit the date exactly, you minimize risk.  If you overrun, you pick up the green costs.  If you finish early, you pick up the blue costs.  You might question why you have costs for finishing early, but you are being penalized here because your estimate was wrong.  Maybe the product could have shipped sooner if you'd given a more accurate date?
+ - The bottom (orange) graph shows our risk profile - it's the costs from the middle multiplied by the probabilities from the top.
+
+
+
+## Meta-Analysis
+
+
 
 ## A Trick
 

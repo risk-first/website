@@ -9,104 +9,108 @@ integrity="sha256-Uv9BNBucvCPipKQ2NS9wYpJmi8DTOEfTA/nH2aoJALw=" crossorigin="ano
 <body>
 
 
-<div id="simulation" />
+<div id="lambda2" />
 
 <script type="text/javascript">
-function stddev(range, mean, variance) {
-	const factor = 1 / (Math.sqrt(2* 3.141592 * variance));
-	return range.map(r => {
-		const num= ((r - mean)*(r - mean));
-		const denom = 2 * variance;
-		const fact = num / denom;
-		
-		return factor * Math.exp(-fact);
-	});
-}
 
-function random_normal() 
-{  
-  const M_PI = 3.14159;	
-  return Math.sqrt(-2*Math.log(Math.random())) * Math.cos(2*M_PI*Math.random());
-}
+const days = 20;
 
-var mean = 5;
-var variance = 2.5
 
-const samples = range(0, 200, 1).map(i => random_normal()*variance+mean);
-
-function bucket(samples) {
-	var out = new Array(20).fill(0);
-	samples.forEach(s => {
-		var b = Math.round(s) + mean;
-		if ((b>=0) && (b<20)) {
-			out[b] ++;
-		}
-	});
-	return out;
-}
-function calcMean(s) {
-	var tot = s.reduce((a,b) => a+b);
-	var len = s.length;
-	return tot/len;
-}
-
-function calcVar(s, mean) {
-	var tot = s.map(i => (i - mean)*(i - mean)).reduce((a, b) => a+b);
-	var len = s.length - 1;
-	return tot / len;
-}
-
-doChart('simulation', 
+doChart('lambda2', 
  {
-   'samples' : { min: 1, max: 200, value: 1, name: 'Individual Samples', step: 1 },
+   'lambda' : { min: .01, max: 1, value: .5, name: 'Lambda', step: 0.01 },
+   'estimate' : { min: 0, max: 20, value: 5, name: 'Estimate', step: 1 },
  },
  [
-	 model => { 
-		 var subsam = samples.slice(0, model.samples.value);
-		 var mean = calcMean(subsam);
-		 var variance = calcVar(subsam, mean);
-		 var buckets = bucket(subsam);
-		 
-		 return {
-		    data: {
-		    	type: 'bar',
-			    labels: range(0, 20, 1),
-		        datasets: [{
-		            label: 'Samples',
-		            data: buckets,
-		            borderWidth: 1,
-		            type: 'bar'
-		        },
-		        ]
-		    },
-		    options: {
-		        maintainAspectRatio: false,
-		        scales: {
-		            yAxes: [{
-		                ticks: {
-		                    beginAtZero: true,
-		                    max: 20,
-		                    min: 0
-		                },
-		                position: 'left'
-		            },
-		            {
-		            	ticks: {
-		                    beginAtZero: true,
-		                    max: 5,
-		                    min: 0
-		                },
-		                position: 'right'
-		            }],
-		            xAxes: [{
-		            	ticks: {
-		            		min: 0,
-		            		max: 20
-		            	},
-		            }]
-		        }
-		    }
-		}}]);
+ model => { 
+  var lambda = 	 range(0, days, 1).map(i => model.lambda.value * Math.exp(-i * model.lambda.value))
+	 
+  return {
+    type: 'line',
+    data: {
+      labels: range(0, days, 1),
+      datasets: [{
+      	label: 'Project Completion Date',
+      	backgroundColor: [ 'rgba(255, 99, 132, 0.2)' ],
+      	borderColor: [ 'rgba(255, 99, 132, 1)' ],
+      	data: lambda
+      },
+      ]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+  }},
+  model => { 
+	  var early = range(0, days, 1).map(i => Math.max(0, model.estimate.value - i));
+	  var late = range(0, days, 1).map(i => Math.max(0, i- model.estimate.value))
+	  
+	  return {
+	    type: 'line',
+	    data: {
+	      labels: range(0, days, 1),
+	      datasets: [{
+	      	label: 'Too-Early Risks',
+	      	backgroundColor: [ 'rgba(132, 99, 255, 0.2)' ],
+	      	borderColor: [ 'rgba(132, 99, 255, 1)' ],
+	      	data: early
+	      },
+	      {
+		      	label: 'Too-Late Risks',
+		      	backgroundColor: [ 'rgba(132, 200, 99, 0.2)' ],
+		      	borderColor: [ 'rgba(132, 200, 99, 1)' ],
+		      	data: late
+		      }
+	      ]
+	    },
+	    options: {
+	        scales: {
+	            yAxes: [{
+	                ticks: {
+	                    beginAtZero: true
+	                }
+	            }]
+	        }
+	    }
+	  }
+  },
+  model => { 
+	  var lambda = 	 range(0, days, 1).map(i => model.lambda.value * Math.exp(-i * model.lambda.value))
+	  var early = range(0, days, 1).map(i => Math.max(0, model.estimate.value - i));
+	  var late = range(0, days, 1).map(i => Math.max(0, i- model.estimate.value))
+	  var rar = lambda.map((v, i) => v * (early[i] + late[i]));
+	  
+	  return {
+	    type: 'line',
+	    data: {
+	      labels: range(0, days, 1),
+	      datasets: [{
+	      	label: 'Risk',
+	      	backgroundColor: [ 'rgba(255, 132, 99, 0.2)' ],
+	      	borderColor: [ 'rgba(255, 132, 99, 1)' ],
+	      	data: rar
+	      }
+	      ]
+	    },
+	    options: {
+	        scales: {
+	            yAxes: [{
+	                ticks: {
+	                    beginAtZero: true
+	                }
+	            }]
+	        }
+	    }
+	  }
+},
+ 
+]);
 
 </script>
 </body>
