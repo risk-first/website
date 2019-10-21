@@ -51,7 +51,7 @@ function stddev(range, mean, variance) {
 
 doChart('simulation', 
  {
-   'units' : { min: 1, max: 30, value: 10, name: 'Number of Units', step: 1 },
+   'units' : { min: 1, max: 15, value: 10, name: 'Number of Units', step: 1 },
    'mean' : { min: 20, max: 120, value: 60, name: 'Mean time to Complete Unit', step: 1 },
    'variance' : { min: 1, max:50, value: 30, name: 'Variance In Unit Time', step: 1}
  },
@@ -85,7 +85,7 @@ doChart('simulation',
 	 },
 	 model => { 
 		 var min = 0;
-		 var max = 3600;
+		 var max = 1000;
 		 
 		 return {
 		    type: 'line',
@@ -128,10 +128,10 @@ The second, blue graph extrapolates the single panel distribution to show how lo
 
 If you paint the first fence panel in 40 minutes, how sure can you be that this is a good mean?  What if you extrapolate from this single fence panel?  To paint all 40 might now only take 26 hours - which is a good deal shorter than the original estimate of 40 hours.  Is that fair?
 
-After the first fence panel, you just don't know.  After you've painted two or three, you can start to figure out the _sample variance_, which looks like this:
+After the first fence panel, you just don't know.  After you've painted two or three, you can start to figure out the _sample variance_:
 
--- (sample variance formula)
-
+$$s^2 = \frac{\sum(x - \bar{x})^2}{n - 1}$$
+ 
 The more samples we make, the more precise the sample variance will be, and so the more confident we should be on our expected time to complete painting the fence.
 
 <div id="simulation2" />
@@ -223,22 +223,22 @@ This kind of measurement and estimating is the bread-and-butter of all kinds of 
 
 ## Big-O
 
-Although software development tasks don't often fit into the Fill-The-Bucket domain, lots of things in _data processing_ do.  When talking about _algorithms_, we say fence-panel painting is **O(_n_)**.  That is, the number of operations taken to complete the job is a linear function _**n**_, the number of fence panels.
+Although software development tasks don't often fit into the [Fill-The-Bucket](/estimating/Fill-The-Bucket.md) domain, lots of things in _data processing_ do.  When talking about _algorithms_, we say fence-panel painting is $$O(n)$$.  That is, the number of operations taken to complete the job is a linear function _**n**_, the number of fence panels.
 
-The same is true for lots of other algorithms - scanning a linked-list, walking a tree, these are often **O(_n_)**.
+The same is true for lots of other algorithms - scanning a linked-list, walking a tree, these are often $$O(n)$$.
 
 There are plenty of algorithms too which have other efficiencies.   Let's say you use this algorithm to look up a word in a dictionary.
 
 1.  Establish upper and lower bounds of the search space (i.e. first and last entry of the dictionary)
 2.  Find a word about half-way between the two.  Is the word you're looking for _before_ or _after_ this word, or exactly this word?  If the latter, you're done, otherwise, revise either the upper or lower bound to this word and repeat.
 
-This is the [binary chop algorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm), in which the number of remaining search-space _halves_ each time you go round step 2.  Therefore, doubling the length of the dictionary only increases the number of operations by 1.  So this algorithm takes **O(lg2 _n_)** time.
+This is the [binary chop algorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm), in which the number of remaining search-space _halves_ each time you go round step 2.  Therefore, doubling the length of the dictionary only increases the number of operations by 1.  So this algorithm takes $$O(log_2  n)$$ time.
 
-So Fill-The-Bucket is _still_ an appropriate way of estimating for these algorithms.  If you can figure out how long it takes to do steps 1 & 2, and how many times it'll have to do them, you can make a good estimate of the total time.
+So [Fill-The-Bucket](/estimating/Fill-The-Bucket.md) is _still_ an appropriate way of estimating for these algorithms.  If you can figure out how long it takes to do steps 1 & 2, and how many times it'll have to do them, you can make a good estimate of the total time.
 
-## Estimating With Risk
+## Estimating Risk
 
-Let's say we have a problem in the Fill-The-Bucket domain.  How can we use this with respect to risk?
+Let's say we have a problem in the [Fill-The-Bucket](/estimating/Fill-The-Bucket.md) domain.  How can we use this to estimate risk?
 
 Let's set up a simple scenario, which we've agreed by contract with a client: 
 
@@ -335,7 +335,7 @@ doChart('simulation3',
 			    data: {
 			        labels: range(0, days, 1),
 			        datasets: [{
-			        	label: 'Risk-Adjusted Return',
+			        	label: 'Financial Risk',
 			        	backgroundColor: [ 'rgba(255, 132, 99, 0.2)' ],
 				      	borderColor: [ 'rgba(255, 132, 99, 1)' ],
 			        	data: riskAdjustedReturn
@@ -357,64 +357,30 @@ There are three graphs above:
 
  - The top (red) graph is showing the probability distribution function for us completing the work.  Our actual completion time is one point chosen randomly from the area in red. So, we're probably looking at around 32 days.
  - The middle (blue) graph shows our return.  As you can see, it starts sliding down after 20 days, eventually ending up in negative territory.  Leaving the estimate at 20 days gives us the _highest possible_ payout of £10,000, increasing our estimate reduces this maximum.  
- - The bottom (orange) graph multiplies these two together to give us a measure of [monetary risk](Scarcity-Risk.md#funding-risk). Without doing anything else, we're more likely to lose than win.
+ - The bottom (orange) graph multiplies these two together to give us a measure of [financial risk](Scarcity-Risk.md#funding-risk). Without adjusting the estimate, we're more likely to lose than win.
  
 Are you a gambler?  If you can just make everyone work a couple of extra hours' overtime, you'll be much more likely to make the big bucks.  But without cheating like this, it's probably best to give an estimate around 30 days or more.  
 
 ## Meta-Analysis
 
-This is a really contrived example, but actually this represents _most of_ how banks work out risk, simply multiplying the probability of something happening by what is lost when it does happen.  But let's look at some criticisms of this:
+This is a really contrived example, but actually this represents _most of_ how banks, insurance companies, investors etc. work out risk, simply multiplying the probability of something happening by what is lost when it does happen.  But let's look at some criticisms of this:
 
-Aren't there other options?  We might be able to work nights to get the project done, or hire more staff, or give bonuses for overtime _or something_.  In fact, in [Pressure](estimating/Pressure.md) we'll come back and look at some of these factors.
+First: aren't there other options?  We might be able to work nights to get the project done, or hire more staff, or give bonuses for overtime _or something_.  In fact, in [Pressure](estimating/Pressure.md) we'll come back and look at some of these factors.
 
-Second, we've actually got a project here which _degrades gracefully_. The costs of taking longer are clearly sign-posted in advance.  In reality, the costs of missing a date might be much more disastrous:  not getting your game completed for Christmas, missing a regulatory deadline, not being ready for an important demo - these are all-or-nothing outcomes where it's a [stark contrast between in-time and missing-the-bus](Deadline-Risk).  
+Second: we've actually got a project here which _degrades gracefully_. The costs of taking longer are clearly sign-posted in advance.  In reality, the costs of missing a date might be much more disastrous:  not getting your game completed for Christmas, missing a regulatory deadline, not being ready for an important demo - these are all-or-nothing outcomes where it's a [stark contrast between in-time and missing-the-bus](Deadline-Risk).  
 
-Third, software development isn't generally isn't like this - as we will explore in the following sections, software development is _not_ in the Fill-The-Bucket domain, generally.  
+Third: software development isn't generally isn't like this - as we will explore in the following sections, software development is _not_ in the [Fill-The-Bucket](/estimating/Fill-The-Bucket.md) domain, generally.  
 
-The problem is, because this approach works so well in banking and operations and other places, there is a _strong tendency_ for project managers to want to apply it to software anyway.  
+## Failure Modes
 
-## A Better Understanding Of Risk
+The problem is, because this approach works well in banking and operations and other places, there is a _strong tendency_ for project managers to want to apply it to software development.  
 
-Risk "feeds back" into the estimation process in some unusual ways.   Let's change the model slightly.
+But there are lots of ways [Fill-The-Bucket](/estimating/Fill-The-Bucket.md) goes wrong, and this happens when you are estimating in scenarios that violate the original conditions:
 
-- The client will pay us £10,000 to process 500 client records.
-- The client wants the records completed in 20 days. **And that's it**.
-- If we hit the delivery date, great.  Otherwise, within 25 days **there's a massive argument and annoyance but we get paid eventually anyway.**
-- It takes 1-3 hours to process a client record, and we have 3 staff working 8 hours per day.  Let's model this with a mean of 2 hours and standard deviation of 1 hour.
-
-Suddenly, the choice is no longer a sliding scale:  we don't have control of the estimate anymore.  Either we accept the risk of the work, or we don't.   Which should we do?  What does it depend on, now?
-
-## Perverted
-
-Estimates are easily perverted by the risks, as you can see above.  Although [we've discussed it before](Estimates.md), Let's look at [Aranda and Easterbrook, 2005](http://www.cs.toronto.edu/%7Esme/papers/2005/ESEC-FSE-05-Aranda.pdf) again.  
-
-In their research they asked developers split into three groups (A, B and Control) to give individual estimates on how long a piece of software would take to build.   They were each given the same specification.  However:
-
-- Group A was given the hint: "I admit I have no experience with software, but I guess it will take about two months to finish".
-- Group B were given the same hint, except with _20_ months.
-
-How long would members of each group estimate the work to take?  The results were startling.  On average,
-  
-  - Group A estimated 5.1 months.
-  - The Control Group estimated 7.8 months.
-  - Group B estimated 15.4 months.
-  
-The anchor mattered more than experience, how formal the estimation method, or anything else. 
-
-What is the reason for this?  Somehow, the _expectation perverts the estimate_.  Why would developers be influenced by this expectation so much?  Here are some possible reasons:
-
- - They want the work
- - They believe their own estimates to be worse than average
- - They don't want to upset the client
+1. The work can be measured in units.   
+2. Each unit is pretty much the same as another.  
+3. Each unit is _independent_ to the others. 
  
-Even in a Fill-The-Bucket domain, estimates can be easily corrupted by outside influences.  Effectively, the _estimate itself_ is a risk-management tool.   
+In [the financial crisis](/Risk-Landscape.md/the-financial-crisis), we saw how estimates of risk failed because they violated point 3.  
 
-In [Estimates](Estimates.md) we said that the main (good) reason for estimating is:
-
-> "**To allow for the creation of _events_.**  As we saw in [Deadline Risk](Deadline-Risk.md), if we can put a date on something, we can mitigate lots of [Coordination Risk](Coordination-Risk.md). Having a _release date_ for a product allows whole teams of people to coordinate their activities in ways that hugely reduce the need for [Communication](Communication-Risk.md).  "Attack at dawn" allows disparate army units to avoid the [Coordination Risk](Coordination-Risk.md) inherent in "attack on my signal".  This is a _good reason for estimating_ because by using events you are mitigating [Coordination Risk](Coordination-Risk.md).  This is often called a _hard deadline_." -- [Estimates, _Risk First_](Estimates.md)
-
-But here, we've seen that the long-term benefits of good estimates are sacrificed for the short-term gain of a contract won or a client impressed.
-
-Estimating as a technique then is already suspect, even within Fill-The-Bucket domain.  However, as all developers are painfully aware, building software is _not_ like Fill-The-Bucket.  
-
-Let's have a look at how things [get a lot worse](estimating/Kitchen-Cabinet.md).
+Let's have a look at [other approaches to estimating](/estimating/Kitchen-Cabinet.md).
