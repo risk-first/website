@@ -94,12 +94,14 @@ doChart('simulation',
 
 ## Distribution
 
-There is no _guaranteed_ end-point for this work, but in the case described above, you could end up moving 70 cabinets if you were unlucky.  Have a play with the simulator here, and see how different numbers of cabinets and probabilities work out.  In particular, what happens when:
+Have a play with the simulator here, and see how different numbers of cabinets and probabilities work out.  In particular, what happens when:
 
  - You have a _single_ cabinet in the original kitchen?
  - You have _thirty_ cabinets in the original kitchen?
  
-When the number of initial cabinets is low, the distribution tends towards the [Exponential Distribution](https://en.wikipedia.org/wiki/Exponential_distribution), and it works in a way similar to radioactive decay.  That is, we might best be able to talk about moving kitchens in terms of their half-lives.  That is, given a bunch of infinity-cabinets, we could say how long it would usually take for _half_ of them to be completed.  Then, it'll be the same again for the next half, and so on.
+When the number of initial cabinets is high, we are in the "fill-the-bucket" world, with it's normal distribution, and variance-around-a-mean. 
+ 
+But when the number of initial cabinets is low, the distribution is "long-tailed", and tends towards the [Exponential Distribution](https://en.wikipedia.org/wiki/Exponential_distribution), which works in a way similar to [radioactive decay](https://en.wikipedia.org/wiki/Radioactive_decay).  That is, we might best be able to talk about moving kitchens in terms of their half-lives.  That is, given a bunch of infinity-cabinets, we could say how long it would usually take for _half_ of them to be completed.  Then, it'll be the same again for the next half, and so on.
 
 Whereas [Fill-The-Bucket](Fill-The-Bucket.md) was defined with a _mean_ and _variance_, the exponential distribution is modelled with a single parameter, lambda (λ), which is the rate of decay.   
 
