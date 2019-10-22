@@ -99,7 +99,7 @@ Have a play with the simulator here, and see how different numbers of cabinets a
  - You have a _single_ cabinet in the original kitchen?
  - You have _thirty_ cabinets in the original kitchen?
  
-When the number of initial cabinets is high, we are in the "fill-the-bucket" world, with it's normal distribution, and variance-around-a-mean. 
+When the number of initial cabinets is high, we are closer to the "fill-the-bucket" world, with it's normal distribution, and variance-around-a-mean. 
  
 But when the number of initial cabinets is low, the distribution is "long-tailed", and tends towards the [Exponential Distribution](https://en.wikipedia.org/wiki/Exponential_distribution), which works in a way similar to [radioactive decay](https://en.wikipedia.org/wiki/Radioactive_decay).  That is, we might best be able to talk about moving kitchens in terms of their half-lives.  That is, given a bunch of infinity-cabinets, we could say how long it would usually take for _half_ of them to be completed.  Then, it'll be the same again for the next half, and so on.
 
@@ -112,7 +112,6 @@ Whereas [Fill-The-Bucket](Fill-The-Bucket.md) was defined with a _mean_ and _var
 doChart('lambda', 
  {
    'lambda' : { min: 0, max: 1, value: .5, name: 'Lambda', step: 0.01 },
-   'units' : { min: 1, max: 25, value: 5, name: 'Units', step: 1 }
  },
  [
  model => { return {
@@ -120,10 +119,10 @@ doChart('lambda',
     data: {
       labels: range(0, 20, 1),
       datasets: [{
-      	label: '',
+      	label: 'Exponential Distribution',
       	backgroundColor: [ 'rgba(255, 99, 132, 0.2)' ],
       	borderColor: [ 'rgba(255, 99, 132, 1)' ],
-      	data: range(0, 20, 1).map(i => model.units.value * Math.exp(-i * model.lambda.value))
+      	data: range(0, 20, 1).map(i => model.lambda.value * Math.exp(-i * model.lambda.value))
       },
       ]
     },
