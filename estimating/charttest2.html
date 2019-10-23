@@ -19,7 +19,7 @@ const days = 20;
 doChart('lambda2', 
  {
    'lambda' : { min: .01, max: 1, value: .5, name: 'Lambda', step: 0.01 },
-   'estimate' : { min: 0, max: 20, value: 5, name: 'Estimate', step: 1 },
+   'estimate' : { min: 0, max: 20, value: 5, name: 'Estimate', step: .5 },
  },
  [
  model => { 
@@ -108,9 +108,28 @@ doChart('lambda2',
 	        }
 	    }
 	  }
-},
- 
-]);
+	},
+	model => {
+		var k = model.estimate.value;
+		var l = model.lambda.value;
+		
+		var early = l * (   (Math.exp(-k*l) / (l*l))   + ((k*l - 1) / (l*l)) )
+		var late = (Math.exp(-k*l) / l);
+		
+		return {
+			type: 'bar',
+		    data: {
+		        labels: ['Too Early', 'Too Late'],
+		        datasets: [{
+		            label: 'Risk',
+		            data: [early, late],
+		            borderWidth: 1,
+		            backgroundColor: [ 'rgba(132, 99, 255, 0.2)', 'rgba(132, 200, 99, 0.2)' ],
+			      	borderColor: [ 'rgba(132, 99, 255, 1)', 'rgba(132, 200, 99, 1)' ],
+		        }]
+		    },
+		}
+	}]);
 
 </script>
 </body>
