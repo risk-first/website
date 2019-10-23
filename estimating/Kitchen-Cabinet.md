@@ -279,6 +279,15 @@ doChart('lambda2',
 			      	borderColor: [ 'rgba(132, 99, 255, 1)', 'rgba(132, 200, 99, 1)' ],
 		        }]
 		    },
+		    options: {
+	        scales: {
+	            yAxes: [{
+	                ticks: {
+	                    beginAtZero: true
+	                }
+	            }]
+	        }
+	    }
 		}
 	}]);
 
