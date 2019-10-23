@@ -32,7 +32,7 @@ In reality, we should expect that different fence panels take slightly different
 
 Also, we shouldn't expect measurement in the real world to ever be exact,  we are always going to see a _distribution_ of times. 
 
-Where we are able to see measurements clustering-around-the-mean, this gives rise to a [Gaussian (or Normal) distribution]() of measurements.
+Where we are able to see measurements clustering-around-the-mean, this gives rise to the familiar [Normal Distribution](https://en.wikipedia.org/wiki/Normal_distribution) of measurements.
 
 <div id="simulation" />
 
@@ -120,13 +120,13 @@ You can fairly easily add up normal distributions like this.  If you have _n_ fe
   - The mean over all _n_ fence panels is _n x m_.
   - The new variance is _n x v_.
   
-This is what is going on in the above graphs.  The area under each curve is the _probability distribution_.  When you paint any given fence panel (the first, red graph), you'd expect the time taken to be a single spot from under the graph, picked at random.  Given that there is more area under the graph around the mean, we'd expect our fence-painting times to be clustered around the mean.  
+This is what is going on in the above graphs.  The area under each curve is the _probability density_.  When you paint any given fence panel (the first, red graph), you'd expect the time taken to be a single spot from under the graph, picked at random.  Given that there is more area under the graph around the mean, we'd expect our fence-painting times to be clustered around the mean.  
 
-The second, blue graph extrapolates the single panel distribution to show how long the whole job will take.  It the variance for a single panel is large and the number of panels painted is large, then the time to paint the whole fence could vary by _hours_.  
+The second, blue graph extrapolates the single panel density to show how long the whole job will take.  It the variance for a single panel is large and the number of panels painted is large, then the time to paint the whole fence could vary by _hours_.  
   
 ## Sampling Error
 
-If you paint the first fence panel in 40 minutes, how sure can you be that this is a good mean?  What if you extrapolate from this single fence panel?  To paint all 40 might now only take 26 hours - which is a good deal shorter than the original estimate of 40 hours.  Is that fair?
+If you paint the first fence panel in 40 minutes, how sure can you be that this is a good estimate?  What if you extrapolate from this single fence panel?  To paint all 40 might now only take 26 hours - which is a good deal shorter than the original estimate of 40 hours.  Is that fair?
 
 After the first fence panel, you just don't know.  After you've painted two or three, you can start to figure out the _sample variance_:
 
