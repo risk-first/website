@@ -17,11 +17,13 @@ There are many ways we could do this journey, and many destinations.  The idea o
 
 What does this journey look like in Risk-First terms?
 
-tbd diagram.
+![Product Development](/images/generated/estimating/journey.png)
 
 As this diagram shows, at the start we have plenty of [Feature Fit Risk](Feature-Risk#feature-fit-risk):  if we have _no_ product, then it definitely doesn't fit our customer's needs!  Also we have some amount of [Funding Risk](Scarcity-Risk#funding-risk), as at some point the money will run out.
 
-After that, we use every trick in the book called "product development" to get to a new place on the [Risk Landscape](Glossary.md#risk-landscape).  This place (hopefully) will have a better risk profile than the one we came from.
+After that, we use every trick in the book called "product development" to get to a new place on the [Risk Landscape](Glossary.md#risk-landscape).  This place (hopefully) will have a better risk profile than the one we came from.  
+
+If we're successful then yes, we'll have the [Operational Risk](/Operational-Risk.md) of running a business, but hopefully we'll be in a better position than we started.
 
 ## A London Example
 
