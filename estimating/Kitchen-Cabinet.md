@@ -128,7 +128,7 @@ doChart('lambda',
       },
       {
       	label: 'Proportion of Projects Completed',
-      	data: range(0, days, 1).map(i => 1 - Math.exp(-model.lambda.value * i))
+      	data: range(0, 20, 1).map(i => 1 - Math.exp(-model.lambda.value * i))
       },
       ]
     },
@@ -352,7 +352,9 @@ If the estimate is accepted, the supplier's [Funding Risk](/Scarcity-Risk.md/fun
 
 If the supplier is short on opportunities or funds, there is a tendency to under-estimate.  That's because the [Feature Risk](/Feature-Risk.md) is a problem for the supplier _in the future_, whereas their [Funding Risk](/Scarcity-Risk.md/funding-risk) is a problem _right now_.  
 
-You can often see suppliers under-bid on projects because of this future discounting, which we discussed before in [Evaluating-Risk](/Evaluating-Risk.md/discounting).
+You can often see suppliers under-bid on projects because of this future discounting, which we discussed before in [Evaluating-Risk](/Evaluating-Risk.md/discounting).  
+
+This analysis also suggests something else:   the process of giving and accepting estimates _transfers risk_.  This is a key point which we'll return to [later](Control.md). 
 
 ### Too-Late Risk
 
