@@ -74,6 +74,8 @@ doChart('simulation',
         datasets: [{
             label: 'Simulations taking',
             data: runSim(model, 1000),
+            backgroundColor: [ 'rgba(255, 99, 132, 0.2)' ],
+      		borderColor: [ 'rgba(255, 99, 132, 1)' ],
             borderWidth: 1
         }]
     },
@@ -123,7 +125,11 @@ doChart('lambda',
       	backgroundColor: [ 'rgba(255, 99, 132, 0.2)' ],
       	borderColor: [ 'rgba(255, 99, 132, 1)' ],
       	data: range(0, 20, 1).map(i => model.lambda.value * Math.exp(-i * model.lambda.value))
-      }
+      },
+      {
+      	label: 'Proportion of Projects Completed',
+      	data: range(0, days, 1).map(i => 1 - Math.exp(-model.lambda.value * i))
+      },
       ]
     },
      options: {
@@ -185,6 +191,10 @@ doChart('lambda2',
       	backgroundColor: [ 'rgba(255, 99, 132, 0.2)' ],
       	borderColor: [ 'rgba(255, 99, 132, 1)' ],
       	data: lambda
+      },
+      {
+      	label: 'Proportion of Projects Completed',
+      	data: range(0, days, 1).map(i => 1 - Math.exp(-model.lambda.value * i))
       },
       ]
     },

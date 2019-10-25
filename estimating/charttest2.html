@@ -24,16 +24,23 @@ doChart('lambda2',
  [
  model => { 
   var lambda = 	 range(0, days, 1).map(i => model.lambda.value * Math.exp(-i * model.lambda.value))
+  var cdf = range(0, days, 1).map(i => 1 - Math.exp(-model.lambda.value * i));
 	 
   return {
     type: 'line',
     data: {
       labels: range(0, days, 1),
       datasets: [{
-      	label: 'Project Completion Date',
+      	label: 'Project Completion Probability Density',
       	backgroundColor: [ 'rgba(255, 99, 132, 0.2)' ],
       	borderColor: [ 'rgba(255, 99, 132, 1)' ],
       	data: lambda
+      },
+      {
+      	label: 'Proportion of Projects Completed',
+	      	backgroundColor: [ 'rgba(255, 132, 99, 0.2)' ],
+	      	borderColor: [ 'rgba(255, 132, 99, 1)' ],
+      	data: cdf
       },
       ]
     },
