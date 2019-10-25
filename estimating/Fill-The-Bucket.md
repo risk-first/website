@@ -32,7 +32,7 @@ In reality, we should expect that different fence panels take slightly different
 
 Also, we shouldn't expect measurement in the real world to ever be exact,  we are always going to see a _distribution_ of times. 
 
-Where we are able to see measurements clustering-around-the-mean, this gives rise to the familiar [Normal Distribution](https://en.wikipedia.org/wiki/Normal_distribution) of measurements.
+Where we are able to see measurements clustering-around-the-mean, this gives rise to the familiar [Normal Distribution](https://en.wikipedia.org/wiki/Normal_distribution) of measurements, the so called "Bell Curve" which arises out of distributions like height, weight, test scores and so on.  
 
 <div id="simulation" />
 
@@ -115,14 +115,24 @@ doChart('simulation',
 
 </script>
 
+## Mean and Variance
+
+Normal distributions have two independent parameters: the _mean_ (the highest, middle point) and the _variance_ (a measure of the spread).  You can play with both these parameters in the simulation above.
+
 You can fairly easily add up normal distributions like this.  If you have _n_ fence panels to paint, with _m_ as the mean time to paint each panel, and _v_ as the variance, then:
  
   - The mean over all _n_ fence panels is _n x m_.
   - The new variance is _n x v_.
   
-This is what is going on in the above graphs.  The area under each curve is the _probability density_.  When you paint any given fence panel (the first, red graph), you'd expect the time taken to be a single spot from under the graph, picked at random.  Given that there is more area under the graph around the mean, we'd expect our fence-painting times to be clustered around the mean.  
+## Probability Density  
+  
+The area under each curve is the _probability density_.  
+
+When you paint any given fence panel (the first, red graph), you'd expect the time taken to be a single spot from under the graph, picked at random.  Given that there is more area under the graph around the mean, we'd expect our fence-painting times to be clustered around the mean.  
 
 The second, blue graph extrapolates the single panel density to show how long the whole job will take.  It the variance for a single panel is large and the number of panels painted is large, then the time to paint the whole fence could vary by _hours_.  
+
+The area of a _probability density_ curve is normalised to 1, so you can pick a particular interval within it, work out the area of it, and that's the probability of an event occurring within that interval. 
   
 ## Sampling Error
 
@@ -217,7 +227,9 @@ doChart('simulation2',
 
 </script>
 
-You should be able to see this with the above simulation:  when you move from two to three samples, the variance (the shape of the bell-curve) will probably change _a lot_.  However moving from twenty to thirty samples means it hardly changes at all.  
+In the aboce simulation, we are trying to fit a Normal Distribution, estimated from a number of samples.   
+
+You should be able to see that when you move from two to three samples, the variance will probably change _a lot_.  However moving from twenty to thirty samples means it hardly changes at all.  
 
 This kind of measurement and estimating is the bread-and-butter of all kinds of [Operational Control](Operational-Risk.md) systems.
 
