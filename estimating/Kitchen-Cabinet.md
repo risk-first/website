@@ -354,7 +354,7 @@ This means that clients often keep projects running for far longer than they sho
 
 ### Being On-Time
 
-There is a third option to too-early or too-late risk.  You can always choose to be _on time_.  This is definitely a choice: Just like a student can always hand _something_ in on assignment day (even if it's just a title scrawled on a piece of paper), you can always hand in whatever work you have.  
+There is an alternative to too-early or too-late risk.  You can always choose to be _on time_.  This is definitely a choice: Just like a student can always hand _something_ in on assignment day (even if it's just a title scrawled on a piece of paper), you can always hand in whatever work you have.  
 
 Then, instead of worrying about [Scarcity Risks](/Scarcity-Risk.md), you are letting [Feature Risk](/Feature-Risk.md) vary to take up the slack.
 
