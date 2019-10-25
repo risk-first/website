@@ -121,7 +121,7 @@ doChart('lambda',
     data: {
       labels: range(0, 20, 1),
       datasets: [{
-      	label: 'Exponential Distribution',
+      	label: 'Probability Density',
       	backgroundColor: [ 'rgba(255, 99, 132, 0.2)' ],
       	borderColor: [ 'rgba(255, 99, 132, 1)' ],
       	data: range(0, 20, 1).map(i => model.lambda.value * Math.exp(-i * model.lambda.value))
@@ -175,8 +175,8 @@ const days = 20;
 
 doChart('lambda2', 
  {
-   'lambda' : { min: .01, max: 1, value: .5, name: 'Lambda', step: 0.01 },
-   'estimate' : { min: 0, max: 20, value: 5, name: 'Estimate', step: .5 },
+   'lambda' : { min: .01, max: 1, value: .25, name: 'Lambda', step: 0.01 },
+   'estimate' : { min: 0, max: 20, value: 6, name: 'Estimate', step: .5 },
  },
  [
  model => { 
@@ -187,7 +187,7 @@ doChart('lambda2',
     data: {
       labels: range(0, days, 1),
       datasets: [{
-      	label: 'Project Completion Date',
+      	label: 'Probability Density',
       	backgroundColor: [ 'rgba(255, 99, 132, 0.2)' ],
       	borderColor: [ 'rgba(255, 99, 132, 1)' ],
       	data: lambda
@@ -307,28 +307,20 @@ doChart('lambda2',
 
 We have four charts above:
 
- - The top (red) graph simulates completion date.  Our eventual completion date is randomly picked from somewhere in the red area.  Clearly, tasks are likely to complete sooner, rather than later.  
+ - The top (red) chart is our exponential probability density.  Our eventual completion date is randomly picked from somewhere in the red area.  The grey overlay shows the rate at which projects are likely to be completed.  
  - The second (green and blue) graph shows the costs of getting the estimate wrong.  If you hit the date exactly, you minimize risk.  If you overrun, you pick up the green costs.  If you finish early, you pick up the blue costs.  You might question why you have costs for finishing early, but you are being penalized here because your estimate was wrong.  Maybe the product could have shipped sooner if you'd given a more accurate date?
  - The third (orange) graph shows our risk profile - it's the costs from the middle multiplied by the probabilities from the top.
  - The bottom (green and blue) graph is the area under the risk profiles from the third graph.  That is, we're providing a simple way to compare the early risk with the late risk.
-
-### Mean Time To Completion 
  
-As a developer, I might (if pushed to estimate the project as a single number) try to pick the half-life point.  That is, where the probability of completing _before_ that time is the same as completing _after_.  For a lambda of .5, this is about 1.5 days.  
+### Balancing Risk
 
-On average, half the projects would be complete before this point, and half after.  So, it would be the _mean time to complete_.
+Keeping lambda at .25, at four days, the too-early risk is the same as the too-late risk.  This might seem like a good choice for the project.   
 
-The problem with that is, the ones that finish later might finish _much, much later_, so the risk of being late is much greater than the risk of being early.
+But, it's not the point of _lowest_ risk.  
 
-So picking the mean time to completion is not minimizing risk.
+For that, you'll have to go somewhere around three days.  This is roughly the mean length of the project - with this lambda, half of all projects would be completed before this point, and half after. But the too-late risk is much greater than the too-early risk.  
 
-### Minimizing Risk
-
-Assuming a lambda of .5, at two days, the too-early risk is the same as the too-late risk.  Also, at this point, the overall risk is much lower than using the mean time to completion.   
-
-It is clearly a better strategy then to pick the point of lowest risk.  But this is going to depend heavily on knowing what your lambda is, as well as having an understanding of the too-early and too-late costs.
-
-Clearly, knowing even _roughly_ what lambda might be for your problem is going to be really important!
+So an important question at this point might be: _who bears this risk?_    In the models above, we make the simplifying assumption that too-early and too-late risks have the same cost, but in reality, missing deadlines can be damaging to your _personal_ reputation, and we'll unpack that [later](Control.md).
 
 ## Meta-Analysis
 
