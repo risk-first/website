@@ -17,23 +17,23 @@ _Estimating_ is the _bête noire_ of software development: simple to conceptuali
 
 This series starts out by categorising four different _types_ of problem, and how the structure of the problem itself affects the approach you must take to estimates.  They are:
 
- - [Fill The Bucket](Fill-The-Bucket.md)
- - [Kitchen Cabinets](Kitchen-Cabinet.md)
- - [Journeys](Journeys.md)
- - [Fractals](Fractals.md)
- - [Change](Change.md)  _not written_
- - [Games](Games.md)  _not written_
+ - [Fill The Bucket](estimating/Fill-The-Bucket.md)
+ - [Kitchen Cabinets](estimating/Kitchen-Cabinet.md)
+ - [Journeys](estimating/Journeys.md)
+ - [Fractals](estimating/Fractals.md)
+ - [Change](estimating/Change.md)  _not written_
+ - [Games](estimating/Games.md)  _not written_
 
 Next, we take a look at how complexity affects the estimation process.
 
- - [Hierarchies](Hierarchies.md)
- - [Coordination](Coordination.md)  _not written_
- - [Pressure](Pressure.md) _not written_
+ - [Hierarchies](estimating/Hierarchies.md)
+ - [Coordination](estimating/Coordination.md)  _not written_
+ - [Pressure](estimating/Pressure.md) _not written_
  
 Finally, we'll look at some of the political and economic aspects of making estimates.
  
- - [Perversion](Perversion.md) _not written_
- - [Control](Control.md) _not written_
+ - [Perversion](estimating/Perversion.md) _not written_
+ - [Control](estimating/Control.md) _not written_
  
 
  
