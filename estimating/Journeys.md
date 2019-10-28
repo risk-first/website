@@ -1,12 +1,12 @@
 ---
 title: Journeys
-description: Part 4 of the 'Estimating' Risk-First Series.
+description: Part of the 'Estimating' Risk-First Series, where we look at estimates with connected parts.
 url: https://riskfirst.org/estimating/Journeys
 --image: /images/generated/titles/Just-Risk.png
 --featuredimage: images/generated/single/Just-Risk.png
 categories:
  - Estimating
-order: 4
+order: 3
 ---
 
 # Journeys

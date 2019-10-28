@@ -1,12 +1,12 @@
 ---
 title: Fractals
-description: Part 5 of the 'Estimating' Risk-First Series.
+description: Part of the 'Estimating' Risk-First Series, where we look at estimating fractal value boundaries.
 url: https://riskfirst.org/estimating/Fractals
 --image: /images/generated/titles/Just-Risk.png
 --featuredimage: images/generated/single/Just-Risk.png
 categories:
  - Estimating
-order: 5
+order: 4
 ---
 
 # Fractals
