@@ -8,6 +8,7 @@ layout: categories
 categories:
  - Estimating
 order: 1
+cat: Estimating
 ---
 
 # Estimating And Complexity
@@ -22,18 +23,19 @@ This series starts out by categorising four different _types_ of problem, and ho
  - [Kitchen Cabinets](Kitchen-Cabinet.md)
  - [Journeys](Journeys.md)
  - [Fractals](Fractals.md)
- 
+ - [Change](Change.md)  _not written_
+ - [Games](Games.md)  _not written_
+
 Next, we take a look at how complexity affects the estimation process.
 
  - [Hierarchies](Hierarchies.md)
- - [Coordination](Coordination.md)
- - [Pressure](Pressure.md)
- - [Change](Change.md)
+ - [Coordination](Coordination.md)  _not written_
+ - [Pressure](Pressure.md) _not written_
  
 Finally, we'll look at some of the political and economic aspects of making estimates.
  
- - [Perversion](Perversion.md)
- - [Control](Control.md)
+ - [Perversion](Perversion.md) _not written_
+ - [Control](Control.md) _not written_
  
 
  
