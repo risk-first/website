@@ -5,8 +5,6 @@ url: https://riskfirst.org/estimating/Estimating-And-Complexity
 --image: /images/generated/titles/Just-Risk.png
 --featuredimage: images/generated/single/Just-Risk.png
 layout: categories
-categories:
- - Estimating
 order: 1
 cat: Estimating
 ---
