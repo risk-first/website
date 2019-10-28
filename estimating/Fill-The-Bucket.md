@@ -1,12 +1,12 @@
 ---
 title: Fill-The-Bucket
-description: Part 2 of the 'Estimating' Risk-First Series.
+description: Part of the 'Estimating' Risk-First Series, in which we look at straightforward linear estimation.
 url: https://riskfirst.org/estimating/Fill-The-Bucket
 --image: /images/generated/titles/Just-Risk.png
 --featuredimage: images/generated/single/Just-Risk.png
 categories:
  - Estimating
-order: 2
+order: 1
 ---
 
 
@@ -395,4 +395,4 @@ But there are lots of ways [Fill-The-Bucket](/estimating/Fill-The-Bucket.md) goe
  
 In [the financial crisis](/Risk-Landscape.md#the-financial-crisis), we saw how estimates of risk failed because they violated point 3.  
 
-Let's have a look at [other approaches to estimating](/estimating/Kitchen-Cabinet.md).
+Let's have a look at [other approaches to estimating](Kitchen-Cabinet.md).
