@@ -96,14 +96,18 @@ Maybe version one looks something like the diagram above: a few hastily-assemble
 
 Releasing the first version might fill in some of the blanks, and show you more detail on the [Risk Landscape](/Glossary.md#risk-landscape).  Effectively showing you a more detailed view of the coastline.   Feedback from users will provide you with a better understanding of exactly what this fractal problem-space looks like. 
 
-As you go on [Meeting Reality](../Glossary.md#meeting-reality), the shape of the problem domain comes into focus, and you're able to adjust to match it more exactly.
+![Third Version](/images/estimates/fractal4.png)
 
-Is it possible to apply _any_ estimate to problems in the Fractal Shape domain?  Probably not - but whatever effort you put in 
+As you go on [Meeting Reality](../Glossary.md#meeting-reality), the shape of the problem domain comes into focus, and you're able to _refine_ your solution to match it more exactly.
 
+Is it possible to apply _any_ estimate to problems in the Fractal Shape domain?  The best you might be able to do is to match two competing objectives:
+
+- [Meeting Reality](/Glossary.md#meet-reality):  By putting your product "out there" you find your customers and your niche in the market, and you explore the [Risk Landscape](/Glossary.md#risk-landscape).  But this takes time and effort
+- Building Product:  By building functionality you head towards your [Goal](/Glossary.md#goal-in-mind) on the [Risk Landscape](/Glossary.md#risk-landscape).  But periodically you need to come back and check you're going in the right direction by [Meeting Reality](/Glossary.md#meet-reality) again.
  
 ## Applying Risk-First
 
-Let's look at the conclusions we reached in [Boundary Risk]():
+Let's look at the conclusions we reached in [Boundary Risk](/Boundary-Risk.md):
 
 > - **Human need is [Fractal](https://en.wikipedia.org/wiki/Fractal)**:  this means that over time, software products have evolved to more closely map human needs.   Software that would have delighted us ten years ago lacks the sophistication we expect today.
 - **Software and hardware are both improving with time**: due to evolution and the ability to support greater and greater levels of complexity.
