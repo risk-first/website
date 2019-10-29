@@ -6,7 +6,7 @@ url: https://riskfirst.org/estimating/Hierarchies
 --featuredimage: images/generated/single/Just-Risk.png
 categories:
  - Estimating
-order: 7
+order: 5
 ---
 
 # Hierarchies

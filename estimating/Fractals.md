@@ -13,20 +13,17 @@ order: 4
 
 Let's summarize what we've seen so far, and introduce a _new way_ of estimating:
 
-|Approach             |Measurable Progress?       |Defined End-Point?     |Homogeneous Work     |
+|Approach             |Measurable Progress?       |Homogeneous Work       |Defined End-Point?   |
 |---------------------|---------------------------|-----------------------|---------------------|
+|_looks like:_        |_"I know how far I have to go"_|_"Results equals effort"_|_"I know when I'm done"_|
 |Fill-The-Bucket      |Yes                        |Yes                    |Yes                  |
-|Kitchen Cabinets     |Somewhat                   |Yes                    |Yes                  |
-|Journey              |Yes                        |Yes                    |No                   |
-|Fractal-Shape        |Yes                        |No                     |No                   |
+|Kitchen Cabinets     |No                         |Yes                    |Yes                  |
+|Journey              |Yes                        |No                     |Yes                  |
+|Fractal-Shape        |Yes                        |Yes                    |No                   |
 
-So what is a fractal shape?  
+So what is a fractal shape?  Let's look at something called the **Coastline Paradox**:
 
-![Koch Snowflake](https://upload.wikimedia.org/wikipedia/commons/f/fd/Von_Koch_curve.gif)
-
-The diagram above is an example of a fractal shape, taken from Wikipedia, and it's animated so that you can see how it's built up.  Wikipedia says:
-
-> "The Koch snowflake can be built up iteratively, in a sequence of stages. The first stage is an equilateral triangle, and each successive stage is formed from adding outward bends to each side of the previous stage, making smaller equilateral triangles. The areas enclosed by the successive stages in the construction of the snowflake converge to 8/5 times the area of the original triangle, while the perimeters of the successive stages increase without bound. Consequently, the snowflake encloses a finite area, but has an infinite perimeter. " - [Koch Snowflake, _Wikipedia_](https://en.wikipedia.org/wiki/Koch_snowflake)
+> "The coastline paradox is the counterintuitive observation that the coastline of a landmass does not have a well-defined length. This results from the fractal-like properties of coastlines, i.e., the fact that a coastline typically has a fractal dimension (which in fact makes the notion of length inapplicable)." - [Coastline Paradox, _Wikipedia_](https://en.wikipedia.org/wiki/Coastline_paradox)
 
 ## Relevance
 
@@ -34,7 +31,9 @@ The reason this is relevant to software (or hardware, for that matter) is that h
 
 In successive years, new iPhones arrived, improving on the original.  The screen improved, the networking improved, the software improved.  The complexity of the iPhone and it's eco-system as a whole increased massively.
 
-Just like the Koch snowflake, above, the designers were creating an ever-more-complex perimeter of complexity around an area of _consumer value_.  And, just like the Koch snowflake, each new version increased the _area_ of value.  
+[Koch Snowflake](https://upload.wikimedia.org/wikipedia/commons/f/fd/Von_Koch_curve.gif)
+
+Just like the [Koch Snowflake](https://en.wikipedia.org/wiki/Koch_snowflake), above, the designers were creating an ever-more-complex perimeter of complexity around an area of _consumer value_.  And, just like the Koch Snowflake, each new version increased the _area_ of value.  
 
 <div id="koch" />
 
@@ -78,19 +77,12 @@ doChart('koch',
 ]);
 
 </script>
-## Competition
+  
+## Continuous Refinement
 
-Let's consider the competition for a second.  Because of the iPhone's huge success, it didn't take long for competitors to catch on.  Their job was easier, since they had a _target to aim at_: hitting the same _area of consumer value_ that the iPhone did, except with their own hardware.
+If your problem doesn't have an exact, defined end-goal, there is simply no way of estimating how long it will take to get there.  And, if (like the Koch Snowflake) your solution will _never_ be perfect, then the only way out is _continuous refinement_. 
 
-Meanwhile, Apple would be iterating, expanding the perimeter's complexity, and trying to capture more value for their customers.  To sustain a competitive edge, there would need to be _areas of value_ that the iPhone covered that their less-evolved rivals didn't cover.
-
-Successive iterations brought the App-Store, front-and-rear cameras, touch, bluetooth, WiFi and so on.   
-
-## Iteration With Components
-
-If your problem doesn't have a defined end-goal, there is simply no way of estimating how long it will take to get there.  And, if (like the Koch snowflake) your solution will _never_ be perfect, then the only way out is to _iterate_.
-
-As we discussed in [Journeys](), your best bet is to try and colonise the area of value _as fast as possible_ by using as much readily available software as possible.  
+Your best bet is to try and colonise the area of value _as fast as possible_ by using as much readily available software as possible.  
 
 -- diagram of this
 
@@ -100,14 +92,13 @@ Maybe version one looks something like the diagram above: a few hastily-assemble
 
 The second version might fill in some of the blanks, and smooth off some raw edges.  Feedback from users will provide you with a better understanding of exactly what this fractal problem-space looks like.
 
-Where you _don't know the answer_, iteration is really the only tool in the box.   
-- risk first diagram for iteration
+-- diagram of this
 
-But this comes with a warning:  there are plenty of other problem domains that we've looked at where you _do_ know the answer.  
+As you go on [Meeting Reality](../Glossary.md#meeting-reality), the shape of the problem domain comes into focus, and you're able to adjust to match it more exactly.
 
- - Don't reach for iteration as a first resort.  Make sure you're applying this technique to a relevant project.  Iteration is about scrambling together a few scratch components that may well get replaced in a later iteration.  It's clearly very different from _doing the worst parts first_ that we saw in [Journeys](Journeys.md).
- - Iterating _takes time_.  It involves [Meeting Reality]() with your users in a [large feedback loop]().  Because large feedback loops are more costly than smaller ones, make sure you _definitely need to do this_.
+Is it possible to apply _any_ estimate to problems in the Fractal Shape domain?   
 
+ 
 ## Applying Risk-First
 
 Let's look at the conclusions we reached in [Boundary Risk]():
