@@ -17,9 +17,9 @@ Let's summarize what we've seen so far, and introduce a _new way_ of estimating:
 |---------------------|---------------------------|-----------------------|---------------------|
 |_looks like:_        |_"I know how far I have to go"_|_"Results equals effort"_|_"I know when I'm done"_|
 |Fill-The-Bucket      |Yes                        |Yes                    |Yes                  |
-|Kitchen Cabinets     |No                         |Yes                    |Yes                  |
-|Journey              |Yes                        |No                     |Yes                  |
-|Fractal-Shape        |Yes                        |Yes                    |No                   |
+|Kitchen Cabinets     |**No**                     |Yes                    |Yes                  |
+|Journey              |Yes                        |**No**                 |Yes                  |
+|Fractal-Shape        |Yes                        |Yes                    |**No**               |
 
 So what is a fractal shape?  Let's look at something called the **Coastline Paradox**:
 
@@ -31,7 +31,7 @@ The reason this is relevant to software (or hardware, for that matter) is that h
 
 In successive years, new iPhones arrived, improving on the original.  The screen improved, the networking improved, the software improved.  The complexity of the iPhone and it's eco-system as a whole increased massively.
 
-[Koch Snowflake](https://upload.wikimedia.org/wikipedia/commons/f/fd/Von_Koch_curve.gif)
+![Koch Snowflake](https://upload.wikimedia.org/wikipedia/commons/f/fd/Von_Koch_curve.gif)
 
 Just like the [Koch Snowflake](https://en.wikipedia.org/wiki/Koch_snowflake), above, the designers were creating an ever-more-complex perimeter of complexity around an area of _consumer value_.  And, just like the Koch Snowflake, each new version increased the _area_ of value.  
 
@@ -80,7 +80,7 @@ doChart('koch',
   
 ## Continuous Refinement
 
-If your problem doesn't have an exact, defined end-goal, there is simply no way of estimating how long it will take to get there.  And, if (like the Koch Snowflake) your solution will _never_ be perfect, then the only way out is _continuous refinement_. 
+If your problem doesn't have an exact, defined end-goal, there is simply no way of estimating how long it will take to get there _because you never will_.  And, if (like the Koch Snowflake), your solution will _never_ be perfect, then the only approach is _continuous refinement_. 
 
 Your best bet is to try and colonise the area of value _as fast as possible_ by using as much readily available software as possible.  
 
@@ -109,7 +109,7 @@ Let's look at the conclusions we reached in [Boundary Risk]():
 
 If we accept this problem of the fractal nature of human desire, then we have to contend with the fact that our software systems are always going to get continually more complex to serve it.
 
-Therefore, our next stop is to look again at complexity...
+Therefore, our next stop is to look again at [complexity](Hierarchies.md)...
 
 
 
