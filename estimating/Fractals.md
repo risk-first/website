@@ -96,7 +96,7 @@ The second version might fill in some of the blanks, and smooth off some raw edg
 
 As you go on [Meeting Reality](../Glossary.md#meeting-reality), the shape of the problem domain comes into focus, and you're able to adjust to match it more exactly.
 
-Is it possible to apply _any_ estimate to problems in the Fractal Shape domain?   
+Is it possible to apply _any_ estimate to problems in the Fractal Shape domain?  Probably not - but whatever effort you put in 
 
  
 ## Applying Risk-First
