@@ -110,10 +110,12 @@ Releasing the first version might fill in some of the blanks, and show you more 
 
 As you go on [Meeting Reality](../Glossary.md#meeting-reality), the shape of the problem domain comes into focus, and you're able to _refine_ your solution to match it more exactly.
 
-Is it possible to apply _any_ estimate to problems in the Fractal Shape domain?  The best you might be able to do is to match two competing objectives:
+Is it possible to estimate problems in the Fractal Shape domain?  The best you might be able to do is to match two competing objectives:
 
 - Building Product:  By building functionality you head towards your [Goal](/Glossary.md#goal-in-mind) on the [Risk Landscape](/Glossary.md#risk-landscape).  But how do you know this is the right goal?
 - [Meeting Reality](/Glossary.md#meet-reality):  By putting your product "out there" you find your customers and your niche in the market, and you explore the [Risk Landscape](/Glossary.md#risk-landscape).  But this takes time and effort away from _building product_.
+
+With this in mind, you estimate a useful amount of time to go round this cycle, fixing the time but letting the deliverable vary.
  
 ## Parsimonious Yachtsman 
 
@@ -121,9 +123,11 @@ The fractal nature of many software development tasks is both a blessing and a c
 
 > "Lets explore this point more by means of an extended analogy. Suppose that you wanted to start a new business as a yachting captain... This is in many ways analogous to when a startup company decides that they want to serve the fortune 500, companies that have petabytes and beyond of data. However, you as a startup founder have to operate lean, and you are only willing to spend $10,000 on a boat. If you were to walk up to the owner of the multi-million dollar yacht and say, I’ll give you $10,000 for that boat, you would be laughed off the dock. " - [Kyle Prifogle, _Dear Startup_](http://kyleprifogle.com/dear-startup/)
 
-Buying yachts is _not_ in the Fractal problem space.  It's much more [Fill-The-Bucket](Fill-The-Bucket.md): more money means more yacht.  
+Buying yachts is _not_ in the Fractal problem space.  It's much more [Fill-The-Bucket](Fill-The-Bucket.md): more money means more yacht.  So, it's not a great analogy.  But the point is that the _expectation_ is for a value-miracle to occur, simply by adopting the practice of MVP or agile development.
 
-But lots of problems _are_ in the [Fractal](Fractals.md) space, and they are generally tasks like building user interfaces, games, interactivity and usability.  This is where the curse comes in:  it's _hard to know what to build_ and _you are never done_.  
+Not all software development problems are squarely in the [Fractal](Fractals.md) space, but those that are are generally tasks like building user interfaces, games, interactivity and usability.  This is where the curse comes in:  it's _hard to know what to build_ and _you are never done_.  
+
+Although there are some high-profile wins with these types of problems, generally they are _hard_.
  
 ## Applying Risk-First
 
