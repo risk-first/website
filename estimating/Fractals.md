@@ -82,17 +82,19 @@ doChart('koch',
 
 If your problem doesn't have an exact, defined end-goal, there is simply no way of estimating how long it will take to get there _because you never will_.  And, if (like the Koch Snowflake), your solution will _never_ be perfect, then the only approach is _continuous refinement_. 
 
+![Opportunity on the Risk Landscape](/images/estimates/fractal1.png)
+
+You might have some idea (selling hats for dogs?) of some interesting area of value on the [Risk Landscape](/Glossary.md#risk-landscape)  that you want to occupy, as shown in the above diagram.  
+
 Your best bet is to try and colonise the area of value _as fast as possible_ by using as much readily available software as possible.  
 
--- diagram of this
+![First Version](images/estimates/fractal2.png)
 
 Maybe version one looks something like the diagram above: a few hastily-assembled components lashed together along with some rough-and-ready web pages.   Hopefully, this kind of design will give you a better idea of what the right answer looks like.
 
--- diagram of this.
+![Second Version](images/estimates/fractal3.png)
 
-The second version might fill in some of the blanks, and smooth off some raw edges.  Feedback from users will provide you with a better understanding of exactly what this fractal problem-space looks like.
-
--- diagram of this
+Releasing the first version might fill in some of the blanks, and show you more detail on the [Risk Landscape](/Glossary.md#risk-landscape).  Effectively showing you a more detailed view of the coastline.   Feedback from users will provide you with a better understanding of exactly what this fractal problem-space looks like. 
 
 As you go on [Meeting Reality](../Glossary.md#meeting-reality), the shape of the problem domain comes into focus, and you're able to adjust to match it more exactly.
 
