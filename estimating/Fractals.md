@@ -88,11 +88,11 @@ You might have some idea (selling hats for dogs?) of some interesting area of va
 
 Your best bet is to try and colonise the area of value _as fast as possible_ by using as much readily available software as possible.  
 
-![First Version](images/estimates/fractal2.png)
+![First Version](/images/estimates/fractal2.png)
 
 Maybe version one looks something like the diagram above: a few hastily-assembled components lashed together along with some rough-and-ready web pages.   Hopefully, this kind of design will give you a better idea of what the right answer looks like.
 
-![Second Version](images/estimates/fractal3.png)
+![Second Version](/images/estimates/fractal3.png)
 
 Releasing the first version might fill in some of the blanks, and show you more detail on the [Risk Landscape](/Glossary.md#risk-landscape).  Effectively showing you a more detailed view of the coastline.   Feedback from users will provide you with a better understanding of exactly what this fractal problem-space looks like. 
 
