@@ -25,15 +25,14 @@ So what is a fractal shape?  Let's look at something called the **Coastline Para
 
 > "The coastline paradox is the counterintuitive observation that the coastline of a landmass does not have a well-defined length. This results from the fractal-like properties of coastlines, i.e., the fact that a coastline typically has a fractal dimension (which in fact makes the notion of length inapplicable)." - [Coastline Paradox, _Wikipedia_](https://en.wikipedia.org/wiki/Coastline_paradox)
 
-## Relevance
+So, that means:
 
-The reason this is relevant to software (or hardware, for that matter) is that human value is very much like this.  Consider the iPhone.  The first version arrived in 2007, and looks much as it does today.  The design began in 2005, and the designers knew they had a short period of time to bring this totally new idea to market, with the components they had available.
-
-In successive years, new iPhones arrived, improving on the original.  The screen improved, the networking improved, the software improved.  The complexity of the iPhone and it's eco-system as a whole increased massively.
+ - The _area_ of a landmass is a fixed amount, but
+ - the _perimeter_ gets longer and longer, and more and more complex, the more accurately you measure it.
+ 
+Let's look at a simple mathematical example of a shape like this, the Koch Snowflake.
 
 ![Koch Snowflake](https://upload.wikimedia.org/wikipedia/commons/f/fd/Von_Koch_curve.gif)
-
-Just like the [Koch Snowflake](https://en.wikipedia.org/wiki/Koch_snowflake), above, the designers were creating an ever-more-complex perimeter of complexity around an area of _consumer value_.  And, just like the Koch Snowflake, each new version increased the _area_ of value.  
 
 <div id="koch" />
 
@@ -77,7 +76,18 @@ doChart('koch',
 ]);
 
 </script>
-  
+
+As the animation shows, this shape is created by adding extra triangles to each side of the existing shape.  As the number of steps increases, the _area_ settles down to 8, whilst the total _perimeter_ begins to increase more and more rapidly.
+
+## Relevance
+
+The reason this is relevant to software (or hardware, for that matter) is that human value is very much like this.  Consider the iPhone.  The first version arrived in 2007, and looks much as it does today.  The design began in 2005, and the designers knew they had a short period of time to bring this totally new idea to market, with the components they had available.
+
+In successive years, new iPhones arrived, improving on the original.  The screen improved, the networking improved, the software improved.  The complexity of the iPhone and it's eco-system as a whole increased massively.
+
+
+Just like the [Koch Snowflake](https://en.wikipedia.org/wiki/Koch_snowflake), above, the designers were creating an ever-more-complex perimeter of complexity around an area of _consumer value_.  And, just like the Koch Snowflake, each new version increased the _area_ of value.  
+
 ## Continuous Refinement
 
 If your problem doesn't have an exact, defined end-goal, there is simply no way of estimating how long it will take to get there _because you never will_.  And, if (like the Koch Snowflake), your solution will _never_ be perfect, then the only approach is _continuous refinement_. 
