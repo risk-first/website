@@ -15,7 +15,7 @@ _Estimating_ is the _bête noire_ of software development: simple to conceptuali
 
 ## Itinerary
 
-This series starts out by categorising four different _types_ of problem, and how the structure of the problem itself affects the approach you must take to estimates.  They are:
+This series starts out by categorising several different _types_ of estimation problems, and how the structure of the problem itself affects the approach you must take to estimates.  They are:
 
  - [Fill The Bucket](estimating/Fill-The-Bucket.md)
  - [Kitchen Cabinets](estimating/Kitchen-Cabinet.md)

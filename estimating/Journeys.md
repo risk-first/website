@@ -52,7 +52,58 @@ How can we think about estimating in such a domain?  There are clearly a number 
 5.  You can easily go the wrong way, or end up in a dead end.  That's going to seriously impact your schedule.
 6.  You might not be working with complete, up-to-date maps and timetables, but a general idea for the territory.
 
+## Estimating Journeys
+
+To estimate how long a journey will take really means to plan it, at some level.  As we saw above, the _unplanned_ journey (walk in the direction of your destination) can take _five times_ as long as the _planned_ version.  
+
+For this reason, planning is really important.  Generally, what planning means is that we do some kind of _hierarchical decomposition_ of the problem, breaking it down into smaller and smaller components until we're happy with both the overall structure and the individual leaf-elements.
+
+And this approach is the same as the one we would use when creating a task breakdown of a project plan, or trying to come up with an estimate for a story in a development project.
+
+### 1.   Break Down The Journey Hierarchically
+
+If I am travelling from my house in the UK to my brother's house in France, then _hierarchically_, the problem might look like:
+
+1.  The problem of getting from England to France
+   a.  The problem of travelling from my house in England.
+   b.  The problem of travelling to my brother's house in France.
+   
+The problem has been decomposed _hierarchically_, based on my understanding of geography. 
+
+### 2.   Evaluate the Alternatives
+
+Having broken down the problem, I can start at the top of the hierarchy and try and find the least risky option at that time, considering the various factors we identified above.   
+
+There are alternatives - I might fly or I might take a ferry, or I might decide to go on the train.  All of which have their pros and cons.
+
+### 3.   Move Down the Hierarchy
+
+Having figured out a plan for the top level (say, flying), I can then concentrate on the next level, getting from my house to the airport.  For this I might consider the train, but then I am left with the further problems:
+
+ - Getting from my house to the station
+ - Getting from the station to the airport.
+ 
+... and so on.  There is always the possibility that some lower-level travel-problem is _unsolveable_, and then I have to back-track up to a higher level and solve in a different way.  No trains on a Sunday?  Ok, maybe I should drive instead...
+
+### 4.  Stop 
+
+Eventually, I decide I've done enough planning.  How?   I stop at the point where I'm happy with the risks I'm taking, or unable to mitigate them further.   Perhaps I've added enough buffer-time into my plan to cater for delays on the train, and I have taxis booked, or maybe I value my time now more highly and I'm optimistic about figuring it all out on the day.
+
 ## Back To Software
+
+This should look a _fair bit_ like software architecture:  often, we sketch out the big parts of the system - the programming language, the database, the main use-cases - and figure out how these fit together.   Then, we leave the details to chance.
+
+At the other extreme, if we're estimating a single story, we can break down work like this.  For development tasks which _look like a journey_, this is what I'm doing.   _"If I build the Foo component using Spring and the Bar component in HTML, I can join them together with some Java code..."_  
+
+Further, as we solve problems in our code-base, we break them down into smaller and smaller parts.  (We'll come back to this in [Hierarchies](Hierarchies.md).
+
+So **Journey Estimating** is three things all at once:
+
+- It's **design**, because I've broken down the work into lower-level components, evaluating the risk as I go.
+- It's **a plan** of how to get from A to B, which might well turn out to be wrong, when we get stuck into the details.
+- It's **a schedule**, because I'll have an idea of how long each piece might take to do.
+
+## Meta Analysis
 
 So, we now have a third type of estimating.  Again, very different from the [first](Fill-The-Bucket.md) [two](Kitchen-Cabinet.md).  But again, there are obvious similarities with what we do in the world of software, because it's so easy to _go the wrong way_ or _overlook a short-cut_.  
 
