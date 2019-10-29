@@ -30,7 +30,7 @@ So, that means:
  - The _area_ of a landmass is a fixed amount, but
  - the _perimeter_ gets longer and longer, and more and more complex, the more accurately you measure it.
  
-Let's look at a simple mathematical example of a shape like this, the Koch Snowflake.
+Let's look at a simple mathematical example of a shape like this, the [Koch Snowflake](https://en.wikipedia.org/wiki/Koch_snowflake).
 
 ![Koch Snowflake](https://upload.wikimedia.org/wikipedia/commons/f/fd/Von_Koch_curve.gif)
 
