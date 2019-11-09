@@ -6,7 +6,7 @@ image: /images/generated/titles/Silver-Bullets.png
 featuredimage: images/generated/single/Silver-Bullets.png
 categories:
  - Practices
-order: 3
+order: 4
 ---
 
 
