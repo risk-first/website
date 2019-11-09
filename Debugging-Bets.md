@@ -35,11 +35,13 @@ To make matters worse, I was supposed to be doing a presentation on this within 
 
 So, what is supposed to happen?
 
+![Flow of Action](images/debugging_flow.png)
+
 1.  The user clicks a button in the app.
 2.  The app then makes a request to the Symphony Server for an on behalf of token.
 3.  With this token, it then makes a request to the Symphony Agent to post a message.
 4.  The Symphony Agent encrypts the message, and forwards it on to the Symphony Server.  
-5.  If that goes well, it returns a 200 response to my app, saying the message is posted. 
+5.  If that goes well, it returns a 200 response to my app, saying the message is posted, and it appears in the chat.
 
 However, things go south around step 4:   I see the token, but using with the agent fails.
 
@@ -58,7 +60,7 @@ For now, I ignored those voices in my head.  I wanted to use my limited time wis
 4.  Another part of my app was also trying to pull back details of who was in a chat room.  This was also failing with a message saying 
 
 ```
-“You need [MANAGE_ROOMS] role”
+You need [MANAGE_ROOMS] role
 ```
 
 This connected to the Symphony Server directly (not the Agent), because it didn’t need to encrypt anything.
@@ -68,6 +70,8 @@ This connected to the Symphony Server directly (not the Agent), because it didn�
 ## Hypotheses
 
 In order to figure out how to use my time, I’d need to enumerate all the hypotheses about what the problem might be, and then decide which of those hypotheses was the best use of my time to test.
+
+![Hypotheses](/images/debugging_hypotheses.png)
 
 In order to generate the hypotheses, you have to find the last-known good place, and work forward through all the steps after that that could have failed.  So this is what I came up with:
 
@@ -85,11 +89,11 @@ Were there other things that could have gone wrong?  Maybe, but they didn’t oc
 
 If we test each hypothesis, we learn something about the system.  But that has a (time) cost:  I had a limited amount of time to try and learn as much as possible.    
 
-## First Test
+### First Test
 
 Although H1 was unlikely (and therefore I probably wasn’t going to learn much) it was really easy to test.  All I needed to do was try the `curl` command again with a deliberately broken token.  What would the message be?  What came back was a 401 error - unauthorised.  So it definitely wasn’t H1.
 
-## Second Test
+### Second Test
 
 H6/7 were a fairly easy thing to check.  I could fire up the server locally and tested the code there.   I did this and discovered the certificate problem persisted.  I tinkered around a bit with the code, and eventually, it went away.  Instead, I got the `curl` “not able to obtain session” error  message.  
 
