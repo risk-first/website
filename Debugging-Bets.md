@@ -53,11 +53,17 @@ For now, I ignored those voices in my head.  I wanted to use my limited time wis
 
 2.  The error message in the app’s log pertained to certificates.  So, there was likely to be some issue with certificates.  
 
-3.  Using cur (a command line program for doing HTTP requests), I could perform the same tasks locally, connecting to the Symphony Agent from my PC.  However there, I got a message saying “not able to obtain session”.
+3.  Using `curl` (a command line program for doing HTTP requests), I could perform the same tasks locally, connecting to the Symphony Agent from my PC.  However there, I got a message saying “not able to obtain session”.
 
-4.  Another part of my app was also trying to pull back details of who was in a chat room.  This was also failing with a message saying “You need [MANAGE_ROOMS] role”. This connected to the Symphony Server directly (not the Agent), because it didn’t need to encrypt anything.
+4.  Another part of my app was also trying to pull back details of who was in a chat room.  This was also failing with a message saying 
 
-5. Two week’s prior, I had tested some other On-Behalf-Of functionality out in a different application.  And it had worked fine.  I had the logs to prove it.   But I had two hours left and disinterring these and running them again would be expensive.
+```
+“You need [MANAGE_ROOMS] role”
+```
+
+This connected to the Symphony Server directly (not the Agent), because it didn’t need to encrypt anything.
+
+5. Two week’s prior, I had tested some other On-Behalf-Of functionality out in a different application.  And it had worked fine.  I had the logs to prove it.   But I had two hours left and digging up these scripts and running them again would be expensive.
 
 ## Hypotheses
 
@@ -65,13 +71,13 @@ In order to figure out how to use my time, I’d need to enumerate all the hypot
 
 In order to generate the hypotheses, you have to find the last-known good place, and work forward through all the steps after that that could have failed.  So this is what I came up with:
 
-H1.  The security token being used was corrupted somehow, in my curl test.  (unlikely)
-H2.  Again pertaining to curl, maybe I had a very short life-span of token, and it had expired? (likely) 
-H3.  Perhaps my app didn’t have the privileges it needed to operate?  (somewhat likely)
-H4.  Maybe there was some problem with the Symphony agent?  (The symphony agent was a piece of infrastructure used to encrypt messages before they left the bank).  (very likely)
-H5.  Maybe I was somehow creating the security token wrongly?   (likely) 
-H6.  The fact that curl and my server code got different responses is suspicious.  Was my server using the wrong certificate? (quite likely)
-H 7. Alternatively, since I was running curl locally, and the server was running remotely, could it be a connection problem? (somewhat likely)
+- `H1`:  The security token being used was corrupted somehow, in my `curl` test.  (unlikely)
+- `H2`:  Again pertaining to `curl`, maybe I had a very short life-span of token, and it had expired? (likely) 
+- `H3`:  Perhaps my app didn’t have the privileges it needed to operate?  (somewhat likely)
+- `H4`:  Maybe there was some problem with the Symphony agent?  (The symphony agent was a piece of infrastructure used to encrypt messages before they left the bank).  (very likely)
+- `H5`:  Maybe I was somehow creating the security token wrongly?   (likely) 
+- `H6`:  The fact that `curl` and my server code got different responses is suspicious.  Was my server using the wrong certificate? (quite likely)
+- `H7`: Alternatively, since I was running `curl` locally, and the server was running remotely, could it be a connection problem? (somewhat likely)
 
 Were there other things that could have gone wrong?  Maybe, but they didn’t occur to me at that point in time.  Could there be multiple things going wrong?  Quite likely.
 
@@ -81,11 +87,11 @@ If we test each hypothesis, we learn something about the system.  But that has a
 
 ## First Test
 
-Although H1 was unlikely (and therefore I probably wasn’t going to learn much) it was really easy to test.  All I needed to do was try the curl command again with a deliberately broken token.  What would the message be?  What came back was a 401 error - unauthorised.  So it definitely wasn’t H1.
+Although H1 was unlikely (and therefore I probably wasn’t going to learn much) it was really easy to test.  All I needed to do was try the `curl` command again with a deliberately broken token.  What would the message be?  What came back was a 401 error - unauthorised.  So it definitely wasn’t H1.
 
 ## Second Test
 
-H6/7 were a fairly easy thing to check.  I could fire up the server locally and tested the code there.   I did this and discovered the certificate problem persisted.  I tinkered around a bit with the code, and eventually, it went away.  Instead, I got the curl “not able to obtain session” error  message.  
+H6/7 were a fairly easy thing to check.  I could fire up the server locally and tested the code there.   I did this and discovered the certificate problem persisted.  I tinkered around a bit with the code, and eventually, it went away.  Instead, I got the `curl` “not able to obtain session” error  message.  
 
 So, although I did have an issue with certificates, it wasn’t the main problem, just a sideshow.  H6 and H7 now ruled out.
 
