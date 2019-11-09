@@ -131,7 +131,14 @@ That's because on their own, hierarchies are _too simple_ to express _complexity
 On the other hand, where would we be without hierarchy in our software code?  It's not impossible to imagine:  
 
  - We could write code in a stack-less, `goto`-oriented way, but such programs are extremely hard to reason about, as discussed in E.W. Dijkstra's seminal paper [Goto Considered Harmful](https://homepages.cwi.nl/~storm/teaching/reader/Dijkstra68.pdf).
+ - [Finite State Machines](https://en.wikipedia.org/wiki/Finite-state_machine) are a pretty useful tool in the toolbox, managing state transitions, but without hierarchy.
  - [Turing Machines](https://en.wikipedia.org/wiki/Turing_machine) and the [BrainFuck](https://en.wikipedia.org/wiki/Brainfuck) language both manage without any kind of hierarchy, and are [Turing Complete](https://en.wikipedia.org/wiki/Turing_completeness), meaning that you can do _any kind of computing in them_.  Although, they're both very hard to reason about.
+ 
+```
+# Hello World, in BrainFuck
+
++[-->-[>>+>-----<<]<--<---]>-.>>>+.>>..+++[.>]<<<<.+++.------.<<-.>>>>+.
+```
 
 ## Classification Hierarchy  
 
@@ -140,7 +147,7 @@ The other type of hierarchy we come across both in software and everywhere else 
 - The Greeks coined _asteres planetai_ to be the class of objects in the sky that moved separately from the rest of the body of stars.   Possibly including moons, comets and asteroids. [1](https://en.wikipedia.org/wiki/Definition_of_planet#Planets_in_antiquity).
 - However, after the [Copernican Revolution](https://en.wikipedia.org/wiki/Definition_of_planet#Satellites) made the moon a satellite of earth, the defintion of planets seemed to be _bodies orbiting the sun_, and there were just 9 of them: Mercury, Mars, Earth, Venus, Saturn, Jupiter, Uranus, Neptune and Pluto.
 - In 2005, [The Discovery of Eris](https://en.wikipedia.org/wiki/Definition_of_planet#Pluto), a body _larger_ than Pluto orbiting in a trans-Neptunian orbit meant that [potentially hundreds of objects](https://en.wikipedia.org/wiki/Trans-Neptunian_object#/media/File:TheTransneptunians_73AU.svg) deserved the term planet.
-- In response, Pluto was demoted to being a _dwarf planet_.  In order to do this, the definition of planet was changed to include the clause that it had "cleared its neighbourhood" of most other orbiting bodies".  This excluded Kuiper-Belt objects such as Pluto, but is _still problematic_, as Alan Stern discusses below.
+- In response, Pluto was demoted to being a _dwarf planet_.  In order to do this, the definition of planet was changed to include the clause that it had "cleared its neighbourhood" of most other orbiting bodies.  This excluded Kuiper-Belt objects such as Pluto, but is _still problematic_, as Alan Stern discusses below.
 
 > "I and many other planetary scientists — like the almost 400 that signed a petition against the IAU in 2006 — have a problem with the IAU definition because the implications of it are just nonsensical.  Here's why. The IAU's "zone-clearing" criteria, when worked out mathematically, means that to qualify as a planet at larger and larger distances from the sun, a body has to have more and more mass than it would in a closer orbit. This is in part because the zones get larger (like distance cubed, or volume) as you go outward; it's also in part because orbital speeds are slower further out, so zone-clearing takes longer." - [Alan Stern, _Fighting for Pluto's Planet Title_](https://www.space.com/9594-fighting-pluto-planet-title-planetary-scientist-alan-stern.html)
 
@@ -180,7 +187,7 @@ In Eclipse (my Java IDE) I can therefore view _both_ these types of hierarchy.  
 
 Whereas in this screen grab, I can view the hierarchy of a _class_ within Java (here the `Resource` class from [Spring](https://spring.io/projects/spring-hateoas)).
 
-Although this is an Object-Oriented example, the same classification system exists within functional languages, too.  
+Although this is an Object-Oriented example, the same classification system exists within functional languages, too.  For example, [Haskell](https://en.wikibooks.org/wiki/Haskell/Classes_and_types) types have 
 
 tbd.
 
