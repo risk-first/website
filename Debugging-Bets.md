@@ -25,11 +25,11 @@ Luckily one came along today, giving me a chance to write it up and go over this
 
 ## The Problem
 
-[Symphony](https://symphony.com) is a secure chat platform used mainly by banks.  I have been writing an app ("Tables App") which runs within Symphony and allows you to share and edit tabular data with people in a chat room.    It’s a nice little piece of functionality, allowing banks and their clients to sign off on things in tables (like orders) imported from Excel.
+[Symphony](https://symphony.com) is a secure chat platform used mainly by banks.  I have been writing an app ("Tables App") which runs within Symphony and allows you to share and edit tabular data with people in a chat room.    It’s a nice little piece of functionality, allowing banks and their clients to sign off on things in tables (like purchase orders) imported from Excel.  This is way more elegant than email trails.
 
 In order to make this work, we made use of functionality within Symphony called “On-Behalf-Of”, which allows Tables App to post messages as a user, if the user has given prior authorisation.
 
-But something wasn’t working - whenever I posted the message - no table!
+But something wasn’t working - whenever I clicked "post" - no table!
 
 To make matters worse, I was supposed to be doing a presentation on this within **two hours**.  I’d need to make good use of my available time.
 
@@ -42,20 +42,20 @@ So, what is supposed to happen?
 1.  The user clicks a button in Tables App.
 2.  The app then makes a request to the Symphony Server for an On-Behalf-Of token.
 3.  With this token, Tables App then makes a request to the Symphony Agent to post a message.
-4.  The Symphony Agent encrypts the message, and forwards it on to the Symphony Server.  
+4.  The Encryption Agent encrypts the message, and forwards it on to the Symphony Server.  
 5.  If that goes well, it returns a 200 response to Tables App, saying the message is posted, and it appears in the chat.
 
-However, things go south around step 4:   I see the token, but using with the agent fails.
+However, things go south around step 4:   I see the On-Behalf-Of token in Tables App, but using with the Encryption Agent fails.
 
 ## Facts
 
 Bubbling around in my mind were a number of hypotheses about why the demo wasn’t working.  Could it be my code?  Could it be something to do with connectivity? Could it be something on the Symphony side?  
 
-For now, I ignored those voices in my head.  I wanted to use my limited time wisely, so first, I enumerated what I did know:
+For now, I ignored those voices in my head.  I wanted to use my limited time wisely, so first, I enumerated what I _did_ know:
 
-1.  I knew that I could post messages ok to the Symphony Agent.  I have a bot that does this... but it’s not doing it On-Behalf-Of anyone, it just posts messages which are _from the bot_.  
+1.  I knew the Encryption Agent worked.  I have a bot that uses it to post messages - but it’s not doing it On-Behalf-Of anyone, it just posts messages which are _from the bot_.  
 
-2.  The error message in Table App’s log pertained to certificates.  So, there was likely to be some issue with certificates.  
+2.  The error message in Table App’s log pertained to certificates.  So, there was likely to be some issue with certificates (good work, Sherlock).  
 
 3.  Using `curl` (a command line program for doing HTTP requests), I could perform the same tasks locally, connecting to the Encryption Agent from my PC.  However there, I got a message saying `not able to obtain session`.
 
@@ -74,7 +74,7 @@ In order to generate the list of hypotheses, you have to find the last-known goo
 - `H1`:  The security token being used was corrupted somehow, in my `curl` test.  (unlikely)
 - `H2`:  Again pertaining to `curl`, maybe I had a very short life-span of token, and it had expired? (likely) 
 - `H3`:  Perhaps my App didn’t have the privileges it needed to operate?  (somewhat likely)
-- `H4`:  Maybe there was some problem with the Symphony agent?  (The symphony agent was a piece of infrastructure used to encrypt messages before they left the bank).  (very likely)
+- `H4`:  Maybe there was some _new_ problem with the Encryption agent?  (very likely)
 - `H5`:  Maybe I was somehow creating the security token wrongly?   (likely) 
 - `H6`:  The fact that `curl` and my server code got different responses is suspicious.  Was my server using the wrong certificate? (quite likely)
 - `H7`: Alternatively, since I was running `curl` locally, and the server was running remotely, could it be a connection problem? (somewhat likely)
@@ -107,15 +107,20 @@ Down to just `H3`,`H4` and `H5`.  I had definitely seen On-Behalf-Of working two
 
 ![Test 3:  Post With Other App](images/generated/practices/debugging/test3.png) 
 
-This ruled out `H3`.  But there was still a chance I was creating the token wrongly (`H5`).  If I could use this token for an an On-Behalf-Of operation on the Symphony Server (rather than the Encryption Agent), it would prove the token was good, and rule out `H5`.  
 
-This was another simple thing to test, since all I had to do was call a “Room Lookup” function on the Symphony Server, something that didn’t need encryption, and therefore use the Encryption Agent.  
+This ruled out `H3`.  But there was still a chance I was creating the token wrongly (`H5`). 
+
+## Fourth Test
+
+If I could use this token for an an On-Behalf-Of operation on the Symphony Server (rather than the Encryption Agent), it would prove the token was good, and rule out `H5`.  
+
+This was another simple thing to test, since all I had to do was call a “Room Lookup” function on the Symphony Server, something that didn’t need encryption, and therefore use the Encryption Agent.  Now, although Tables App couldn't do this (fact 4), my other app could, so I could continue with the new identity and try that.
 
 ![Test 4:  On-Behalf-Of Against Server](images/generated/practices/debugging/test4.png) 
 
 ## Outcome
 
-Sadly, this meant that I’d actually had to test and rule out _all of the hypotheses_ in order to arrive at the correct one.    I guess it happens.   And the problem at this point is that I can’t fix it on my own: although I found (and fixed) a bug in my own code, this one is going to require some support calls.  So, this is a bad outcome, but I did manage to figure this all out within an hour.  
+Sadly, this meant that I’d actually had to test and rule out _all of the other hypotheses_ in order to arrive at the correct one (`H4`).    I guess it happens.   And the problem at this point is that I can’t fix it on my own: although I found (and fixed) a bug in my own code, this one is going to require some support calls.  So, this is a bad outcome, but I did manage to figure this all out within an hour.  
 
 ## Some Notes
 
