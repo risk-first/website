@@ -93,7 +93,7 @@ Although `H1` was unlikely (and therefore I probably wasn’t going to learn muc
 
 ### Second Test
 
-`H6` / `H7` were a fairly easy thing to check.  I could fire up the server locally and tested the code there.   I did this and discovered the certificate problem persisted.  I tinkered around a bit with the code, and eventually, it went away.  Instead, I got the `curl` “not able to obtain session” error  message.  
+`H6` / `H7` were a fairly easy thing to check.  I could fire up the server locally and test the code there.   I did this and discovered the certificate problem persisted.  I tinkered around a bit with the code, and eventually, it went away.  Instead, I got the `curl` “not able to obtain session” error  message.  
 
 So, although I did have an issue with certificates, it wasn’t the main problem, just a side-show.  `H6` was now ruled out.
 
