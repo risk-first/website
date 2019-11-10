@@ -41,7 +41,7 @@ So, what is supposed to happen?
 
 1.  The user clicks a button in Tables App.
 2.  The app then makes a request to the Symphony Server for an On-Behalf-Of token.
-3.  With this token, Tables App then makes a request to the Symphony Agent to post a message.
+3.  With this token, Tables App then makes a request to the Encryption Agent to post a message.
 4.  The Encryption Agent encrypts the message, and forwards it on to the Symphony Server.  
 5.  If that goes well, it returns a 200 response to Tables App, saying the message is posted, and it appears in the chat.
 
@@ -74,7 +74,7 @@ In order to generate the list of hypotheses, you have to find the last-known goo
 - `H1`:  The security token being used was corrupted somehow, in my `curl` test.  (unlikely)
 - `H2`:  Again pertaining to `curl`, maybe I had a very short life-span of token, and it had expired? (likely) 
 - `H3`:  Perhaps my App didn’t have the privileges it needed to operate?  (somewhat likely)
-- `H4`:  Maybe there was some _new_ problem with the Encryption agent?  (very likely)
+- `H4`:  Maybe there was some _new_ problem with the Encryption Agent?  (very likely)
 - `H5`:  Maybe I was somehow creating the security token wrongly?   (likely) 
 - `H6`:  The fact that `curl` and my server code got different responses is suspicious.  Was my server using the wrong certificate? (quite likely)
 - `H7`: Alternatively, since I was running `curl` locally, and the server was running remotely, could it be a connection problem? (somewhat likely)
@@ -124,14 +124,17 @@ Sadly, this meant that I’d actually had to test and rule out _all of the other
 
 ## Some Notes
 
-1.  I started by writing down all the things I knew, and all of my hypotheses.  Time was short.  But I did this because time was short.  The reason was, by having all of the facts and hypotheses to hand I was setting up my [Internal Model] of the problem, with which I could reason about the new information as I came across it.
+1.  I started by writing down all the things I knew, and all of my hypotheses.  Why?  Surely, time was short!  But I did this _because_ time was short.  The reason was, by having all of the facts and hypotheses to hand I was setting up my [Internal Model](Glossary.md#internal-model) of the problem, with which I could reason about the new information as I came across it.
+2.  I performed four tests, and ended up ruling out six different hypotheses.   That feels like good value for money.
+3.  In each case, I am trading _time_ to change the risk profile of the problem.  By reducing to zero the likelihood of some risks, I am increasing the likelihood of those left.  So a good test would:
+ - a.  Bisect probability space 50/50.  That way the information is maximised.
+ - b.  Require the least time-stake up-front in order to learn the information.
 
-2.  I performed three tests, and ended up ruling out six different hypotheses.   That feels like good value for money.
+## Suitability
 
-3.  In each case, I am trading time to change the risk profile of the problem.  By reducing to zero the likelihood of some hypotheses, I am increasing the likelihood of those left.  So a good test would:
- a.  Bisect probability space 50/50.  That way the infomation is maximised
- b.  Require the least time-stake up-front in order to learn the information.
+I have a feeling that this is really the process I use for _every_ bug, whether I am conscious of it or not:  generating hypotheses, ruling some of them out by comparing to the facts I know, and then testing the remaining ones.  However, I think most of the time (maybe as a result of being a developer for a long period) I don't have to do this consciously.  It just _happens_.
 
+Perhaps you have a different process?  Is there another one?  I'd really like to know about it if so.   Please join the GitHub Risk-First team and tell me about it!
 
 
 
