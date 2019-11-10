@@ -25,13 +25,13 @@ Luckily one came along today, giving me a chance to write it up and go over this
 
 ## The Problem
 
-Symphony is a secure chat platform used mainly by banks.  I have been writing an App which runs within Symphony and allows you to share and edit tabular data with people in a chat room.    It’s a nice little piece of functionality, allowing banks and their clients to sign off on things in tables (like orders) imported from Excel.
+[Symphony](https://symphony.com) is a secure chat platform used mainly by banks.  I have been writing an app ("Tables App") which runs within Symphony and allows you to share and edit tabular data with people in a chat room.    It’s a nice little piece of functionality, allowing banks and their clients to sign off on things in tables (like orders) imported from Excel.
 
-In order to make this work, we made use of functionality within Symphony called “On Behalf Of”, which allows our app to post messages as a user, if the user has given prior authorisation to the app.
+In order to make this work, we made use of functionality within Symphony called “On-Behalf-Of”, which allows Tables App to post messages as a user, if the user has given prior authorisation.
 
 But something wasn’t working - whenever I posted the message - no table!
 
-To make matters worse, I was supposed to be doing a presentation on this within two hours.  I’d need to make good use of my available time.
+To make matters worse, I was supposed to be doing a presentation on this within **two hours**.  I’d need to make good use of my available time.
 
 ## Flow
 
@@ -39,11 +39,11 @@ So, what is supposed to happen?
 
 ![Flow of Action](images/debugging_flow.png)
 
-1.  The user clicks a button in the app.
-2.  The app then makes a request to the Symphony Server for an on behalf of token.
-3.  With this token, it then makes a request to the Symphony Agent to post a message.
+1.  The user clicks a button in Tables App.
+2.  The app then makes a request to the Symphony Server for an On-Behalf-Of token.
+3.  With this token, Tables App then makes a request to the Symphony Agent to post a message.
 4.  The Symphony Agent encrypts the message, and forwards it on to the Symphony Server.  
-5.  If that goes well, it returns a 200 response to my app, saying the message is posted, and it appears in the chat.
+5.  If that goes well, it returns a 200 response to Tables App, saying the message is posted, and it appears in the chat.
 
 However, things go south around step 4:   I see the token, but using with the agent fails.
 
@@ -53,33 +53,27 @@ Bubbling around in my mind were a number of hypotheses about why the demo wasn�
 
 For now, I ignored those voices in my head.  I wanted to use my limited time wisely, so first, I enumerated what I did know:
 
-1.  I knew that I could post messages ok to the Symphony Agent.  I have a bot that does this... but it’s not doing it On-Behalf-Of anyone.
+1.  I knew that I could post messages ok to the Symphony Agent.  I have a bot that does this... but it’s not doing it On-Behalf-Of anyone, it just posts messages which are _from the bot_.  
 
-2.  The error message in the app’s log pertained to certificates.  So, there was likely to be some issue with certificates.  
+2.  The error message in Table App’s log pertained to certificates.  So, there was likely to be some issue with certificates.  
 
-3.  Using `curl` (a command line program for doing HTTP requests), I could perform the same tasks locally, connecting to the Symphony Agent from my PC.  However there, I got a message saying “not able to obtain session”.
+3.  Using `curl` (a command line program for doing HTTP requests), I could perform the same tasks locally, connecting to the Encryption Agent from my PC.  However there, I got a message saying `not able to obtain session`.
 
-4.  Another part of my app was also trying to pull back details of who was in a chat room.  This was also failing with a message saying 
+4.  Another part of my App was also trying to pull back details of who was in a chat room.  This was also failing with a message saying `You need [MANAGE_ROOMS] role`.  But this connected to the Symphony Server directly (not the Encryption Agent), because it didn’t need to encrypt anything.
 
-```
-You need [MANAGE_ROOMS] role
-```
-
-This connected to the Symphony Server directly (not the Agent), because it didn’t need to encrypt anything.
-
-5. Two week’s prior, I had tested some other On-Behalf-Of functionality out in a different application.  And it had worked fine.  I had the logs to prove it.   But I had two hours left and digging up these scripts and running them again would be expensive.
+5. Two week’s prior, I had tested some other On-Behalf-Of functionality out in a different application.  And it had worked fine.  I had scripts and logs to prove it.   But I had two hours left and digging up these scripts and running them again would be expensive.
 
 ## Hypotheses
 
-In order to figure out how to use my time, I’d need to enumerate all the hypotheses about what the problem might be, and then decide which of those hypotheses was the best use of my time to test.
+In order to figure out how to use my time, I’d need to enumerate all the hypotheses about what the problem might be, and then work out how best to use my time to test these hypotheses.
 
-![Hypotheses](/images/generated/practices/hypotheses.png)
+![Hypotheses](/images/generated/practices/debugging/hypotheses.png)
 
-In order to generate the hypotheses, you have to find the last-known good place, and work forward through all the steps after that that could have failed.  So this is what I came up with:
+In order to generate the list of hypotheses, you have to find the last-known good place, and work forward through all the steps after that that could have failed.  So this is what I came up with:
 
 - `H1`:  The security token being used was corrupted somehow, in my `curl` test.  (unlikely)
 - `H2`:  Again pertaining to `curl`, maybe I had a very short life-span of token, and it had expired? (likely) 
-- `H3`:  Perhaps my app didn’t have the privileges it needed to operate?  (somewhat likely)
+- `H3`:  Perhaps my App didn’t have the privileges it needed to operate?  (somewhat likely)
 - `H4`:  Maybe there was some problem with the Symphony agent?  (The symphony agent was a piece of infrastructure used to encrypt messages before they left the bank).  (very likely)
 - `H5`:  Maybe I was somehow creating the security token wrongly?   (likely) 
 - `H6`:  The fact that `curl` and my server code got different responses is suspicious.  Was my server using the wrong certificate? (quite likely)
@@ -95,7 +89,7 @@ If we test each hypothesis, we learn something about the system.  But that has a
 
 ![Test 1: Curl With Broken Token](images/generated/practices/debugging/test1.png) 
 
-Although `H1` was unlikely (and therefore I probably wasn’t going to learn much) it was really easy to test.  All I needed to do was try the `curl` command again with a deliberately broken token.  What would the message be?  What came back was a 401 error - unauthorised.  So it definitely wasn’t H1.
+Although `H1` was unlikely (and therefore I probably wasn’t going to learn much) it was really easy to test.  All I needed to do was try the `curl` command again with a deliberately broken token.  What would the message be?  What came back was a `401 error - unauthorised`.  So it definitely wasn’t `H1`.
 
 ### Second Test
 
