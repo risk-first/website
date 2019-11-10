@@ -39,7 +39,7 @@ So, what is supposed to happen?
 
 ![Flow of Action](images/debugging_flow.png)
 
-1.  The user clicks a button in Tables App.
+1.  The user clicks the "post" button in Tables App.
 2.  Tables App then makes a request to the Symphony Server for an On-Behalf-Of token.
 3.  With this token, Tables App then makes a request to the Encryption Agent to post a message.
 4.  The Encryption Agent encrypts the message, and forwards it on to the Symphony Server.  
