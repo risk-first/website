@@ -15,7 +15,7 @@ order: 3
 
 In [The Purpose Of The Development Team](Purpose-Development-Team.md) we looked at how a development team is all about trying to shift the risk profile in favour of the business.  Perhaps by removing the risk of customers not having the features they want, or not signing up, or not learning about the product.
 
-Then, in [Coding Bets](Coding-Bets.md) we considered the same thing at task level. That is, in choosing to spend time on a given task we are staking our time to improve our risk position.  And, it’s definitely a bet, because sometimes, a piece of coding simply doesn’t end up the way you want. 
+Then, in [Coding Bets](Coding-Bets.md) we considered the same thing at task level. That is, in choosing to spend time on a given task we are staking our time to improve our risk position.  And, it’s definitely a bet, because sometimes, a piece of coding simply doesn’t end up working the way you want. 
 
 ![Article Series](images/generated/practices/debugging/bets.png)
 
@@ -59,7 +59,7 @@ For now, I ignored those voices in my head.  I wanted to use my limited time wis
 
 3.  Using `curl` (a command line program for doing HTTP requests), I could perform the same tasks locally, connecting to the Encryption Agent from my PC.  However there, I got a message saying `not able to obtain session`.
 
-4.  Another part of my App was also trying to pull back details of who was in a chat room.  This was also failing with a message saying `You need [MANAGE_ROOMS] role`.  But this connected to the Symphony Server directly (not the Encryption Agent), because it didn’t need to encrypt anything.
+4.  Another part of Tables App was also trying to pull back details of who was in a chat room.  This was also failing with a message saying `You need [MANAGE_ROOMS] role`.  But this connected to the Symphony Server directly (not the Encryption Agent), because it didn’t need to encrypt anything.
 
 5. Two week’s prior, I had tested some other On-Behalf-Of functionality out in a different application.  And it had worked fine.  I had scripts and logs to prove it.   But I had two hours left and digging up these scripts and running them again would be expensive.
 
@@ -73,7 +73,7 @@ In order to generate the list of hypotheses, you have to find the last-known goo
 
 - `H1`:  The security token being used was corrupted somehow, in my `curl` test.  (unlikely)
 - `H2`:  Again pertaining to `curl`, maybe I had a very short life-span of token, and it had expired? (likely) 
-- `H3`:  Perhaps my App didn’t have the privileges it needed to operate?  (somewhat likely)
+- `H3`:  Perhaps Tables App didn’t have the privileges it needed to operate?  (somewhat likely)
 - `H4`:  Maybe there was some _new_ problem with the Encryption Agent?  (very likely)
 - `H5`:  Maybe I was somehow creating the security token wrongly?   (likely) 
 - `H6`:  The fact that `curl` and my server code got different responses is suspicious.  Was my server using the wrong certificate? (quite likely)
@@ -128,12 +128,14 @@ Sadly, this meant that I’d actually had to test and rule out _all of the other
 3.  In each case, I am trading _time_ to change the risk profile of the problem.  By reducing to zero the likelihood of some risks, I am increasing the likelihood of those left.  So a good test would:
  - a.  Bisect probability space 50/50.  That way the information is maximised.
  - b.  Require the least time-stake up-front in order to learn the information.
+4.  Could I have tested `H4` first?  It was, after all the most likely thing in the first place.  If I could have proved that straight off, it would definitely have been better, but I don't think I _could have_, since I also had the certificates issue in play.
+5.  What would have definitely been _worse_ would have been trying something long-winded out that doesn't end up proving anything.  A long-running bet which doesn't prove a hypothesis one way or the other is the biggest loss of all.
 
 ## Suitability
 
 I have a feeling that this is really the process I use for _every_ bug, whether I am conscious of it or not:  generating hypotheses, ruling some of them out by comparing to the facts I know, and then testing the remaining ones.  However, I think most of the time (maybe as a result of being a developer for a long period) I don't have to do this consciously.  It just _happens_.
 
-Also, I am super-lazy.  I'm always trying to rule of out the hypotheses with the least effort.  Usually, that means lashing together some arrangement of stuff just so see what happens (like the switching identities stuff above).  If testing a hypothesis starts to look onerous, I'll try and find some clever trick to reduce that efforts.
+Also, I am super-lazy.  I'm always trying to rule of out the hypotheses with the least effort.  Usually, that means lashing together some arrangement of stuff just so see what happens (like the switching identities stuff above).  If testing a hypothesis starts to look onerous, I'll try and find some clever trick to reduce that effort.
 
 Perhaps you have a different process?  Is there another one?  I'd really like to know about it if so.   Please join the GitHub Risk-First team and tell me about it!
 
