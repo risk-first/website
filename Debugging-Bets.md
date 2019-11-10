@@ -125,7 +125,7 @@ Sadly, this meant that I’d actually had to test and rule out _all of the other
 ## Some Notes
 
 1.  I started by writing down all the things I knew, and all of my hypotheses.  Why?  Surely, time was short!  But I did this _because_ time was short.  The reason was, by having all of the facts and hypotheses to hand I was setting up my [Internal Model](Glossary.md#internal-model) of the problem, with which I could reason about the new information as I came across it.
-2.  I performed four tests, and ended up ruling out six different hypotheses.   That feels like good value for money.
+2.  I performed four tests, and ended up ruling out six different hypotheses.   That feels like good value-for-time.
 3.  In each case, I am trading _time_ to change the risk profile of the problem.  By reducing to zero the likelihood of some risks, I am increasing the likelihood of those left.  So a good test would:
  - a.  Bisect probability space 50/50.  That way the information is maximised.
  - b.  Require the least time-stake up-front in order to learn the information.
@@ -133,6 +133,8 @@ Sadly, this meant that I’d actually had to test and rule out _all of the other
 ## Suitability
 
 I have a feeling that this is really the process I use for _every_ bug, whether I am conscious of it or not:  generating hypotheses, ruling some of them out by comparing to the facts I know, and then testing the remaining ones.  However, I think most of the time (maybe as a result of being a developer for a long period) I don't have to do this consciously.  It just _happens_.
+
+Also, I am super-lazy.  I'm always trying to rule of out the hypotheses with the least effort.  Usually, that means lashing together some arrangement of stuff just so see what happens (like the switching identities stuff above).  If testing a hypothesis starts to look onerous, I'll try and find some clever trick to reduce that efforts.
 
 Perhaps you have a different process?  Is there another one?  I'd really like to know about it if so.   Please join the GitHub Risk-First team and tell me about it!
 
