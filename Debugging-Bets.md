@@ -43,7 +43,7 @@ So, what is supposed to happen?
 2.  Tables App then makes a request to the Symphony Server for an On-Behalf-Of token.
 3.  With this token, Tables App then makes a request to the Encryption Agent to post a message.
 4.  The Encryption Agent encrypts the message, and forwards it on to the Symphony Server.  
-5.  If that goes well, it returns a 200 response to Tables App, saying the message is posted, and it appears in the chat.
+5.  If that goes well, the message is added to the chat, and is delivered from the Symphony Server to the user's screen.
 
 However, things go south around step 4:   I see the On-Behalf-Of token in Tables App, but using it with the Encryption Agent fails.
 
