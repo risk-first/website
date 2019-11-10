@@ -1,7 +1,7 @@
 ---
 title: Estimating And Complexity
 description: Part 1 of the 'Estimating' Risk-First Series.
-url: https://riskfirst.org/estimating/Estimating-And-Complexity
+url: https://riskfirst.org/Estimating
 --image: /images/generated/titles/Just-Risk.png
 --featuredimage: images/generated/single/Just-Risk.png
 layout: categories

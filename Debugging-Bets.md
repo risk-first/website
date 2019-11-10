@@ -2,9 +2,9 @@
 title: Debugging Bets
 description: Making use of risk and odds while debugging
 url: https://riskfirst.org/Debugging-Bets
-image: /images/generated/titles/Purpose-Development-Team.png
-date: 2019-11-09 16:32:03 +0000
-featuredimage: images/generated/single/Deubgging-Bets.png
+image: /images/generated/titles/Debugging-Bets.png
+date: 2019-11-10 16:32:03 +0000
+featuredimage: images/generated/single/Debugging-Bets.png
 categories:
  - Practices
  - News
@@ -17,13 +17,15 @@ In [The Purpose Of The Development Team](Purpose-Development-Team.md) we looked 
 
 Then, in [Coding Bets](Coding-Bets.md) we considered the same thing at task level. That is, in choosing to spend time on a given task we are staking our time to improve our risk position.  And, it’s definitely a bet, because sometimes, a piece of coding simply doesn’t end up the way you want. 
 
+![Article Series](images/generated/practices/debugging/bets.png)
+
 Now, we’re going to consider the exact same thing again but from the point of view of debugging. I’ve been waiting a while to write this, because I’ve wanted a really interesting bug to come along to allow me to go over how you can apply risk to cracking it.  
 
-Luckily one came along today, giving me a chance to write it up and go over this.
+Luckily one came along today, giving me a chance to write it up and go over this.  If you've not looked at Risk-First articles before, you may want to review [Risk-First Diagrams Explained](https://riskfirst.org/Risk-First-Diagrams), since there'll be lots of diagrams to demonstrate the bets I'm making.
 
 ## The Problem
 
-Symphony is a secure chat platform used mainly by banks.  I have been writing an app which runs within Symphony and allows you to share and edit tabular data with people in a chat room.    It’s a nice little piece of functionality, allowing banks and their clients to sign off on things in tables (like orders) imported from Excel.
+Symphony is a secure chat platform used mainly by banks.  I have been writing an App which runs within Symphony and allows you to share and edit tabular data with people in a chat room.    It’s a nice little piece of functionality, allowing banks and their clients to sign off on things in tables (like orders) imported from Excel.
 
 In order to make this work, we made use of functionality within Symphony called “On Behalf Of”, which allows our app to post messages as a user, if the user has given prior authorisation to the app.
 
@@ -71,7 +73,7 @@ This connected to the Symphony Server directly (not the Agent), because it didn�
 
 In order to figure out how to use my time, I’d need to enumerate all the hypotheses about what the problem might be, and then decide which of those hypotheses was the best use of my time to test.
 
-![Hypotheses](/images/debugging_hypotheses.png)
+![Hypotheses](/images/generated/practices/hypotheses.png)
 
 In order to generate the hypotheses, you have to find the last-known good place, and work forward through all the steps after that that could have failed.  So this is what I came up with:
 
@@ -91,27 +93,35 @@ If we test each hypothesis, we learn something about the system.  But that has a
 
 ### First Test
 
-Although H1 was unlikely (and therefore I probably wasn’t going to learn much) it was really easy to test.  All I needed to do was try the `curl` command again with a deliberately broken token.  What would the message be?  What came back was a 401 error - unauthorised.  So it definitely wasn’t H1.
+![Test 1: Curl With Broken Token](images/generated/practices/debugging/test1.png) 
+
+Although `H1` was unlikely (and therefore I probably wasn’t going to learn much) it was really easy to test.  All I needed to do was try the `curl` command again with a deliberately broken token.  What would the message be?  What came back was a 401 error - unauthorised.  So it definitely wasn’t H1.
 
 ### Second Test
 
-H6/7 were a fairly easy thing to check.  I could fire up the server locally and tested the code there.   I did this and discovered the certificate problem persisted.  I tinkered around a bit with the code, and eventually, it went away.  Instead, I got the `curl` “not able to obtain session” error  message.  
+`H6` / `H7` were a fairly easy thing to check.  I could fire up the server locally and tested the code there.   I did this and discovered the certificate problem persisted.  I tinkered around a bit with the code, and eventually, it went away.  Instead, I got the `curl` “not able to obtain session” error  message.  
 
-So, although I did have an issue with certificates, it wasn’t the main problem, just a sideshow.  H6 and H7 now ruled out.
+So, although I did have an issue with certificates, it wasn’t the main problem, just a side-show.  `H6` was now ruled out.
 
-Also H2 was ruled out, because the server ran really fast - there wasn’t time for the token to expire.  
+Since the code was returning the same result locally and on the server, that really ruled out `H7`.  Also `H2` was ruled out, because the server ran really fast - there wasn’t time for the token to expire.  
+
+![Test 2:  Run Locally](images/generated/practices/debugging/test2.png) 
 
 ## Third Test
 
-Down to just H3,4,5.  I had definitely seen the code working two weeks’ ago, but in another app.  A fairly quick thing to do would be to try and post the message with my other app.  It was just a case of switching identities.  I did this, and lo!  I still get the “not able to obtain session” error. 
+Down to just `H3`,`H4` and `H5`.  I had definitely seen On-Behalf-Of working two weeks’ ago, but in another app.  A fairly quick thing to do would be to try and post the message with that other app.  It was just a case of switching identities.  I did this, and lo!  I still get the “not able to obtain session” error. 
 
-This ruled out H3.  But there was still a chance I was creating the token wrongly.  If I could do an on-behalf-of operation on the Symphony Server rather than the agent, it would prove H5 was the case and not H4.  
+![Test 3:  Post With Other App](images/generated/practices/debugging/test3.png) 
 
-This was another simple thing to test, since all I had to do was call a “Room Lookup” function on the server, something that didn’t need the agent.  
+This ruled out `H3`.  But there was still a chance I was creating the token wrongly (`H5`).  If I could use this token for an an On-Behalf-Of operation on the Symphony Server (rather than the Encryption Agent), it would prove the token was good, and rule out `H5`.  
+
+This was another simple thing to test, since all I had to do was call a “Room Lookup” function on the Symphony Server, something that didn’t need encryption, and therefore use the Encryption Agent.  
+
+![Test 4:  On-Behalf-Of Against Server](images/generated/practices/debugging/test4.png) 
 
 ## Outcome
 
-Sadly, this meant that I’d actually had to test and rule out all of the hypotheses in order to arrive at the correct one.    I guess it happens.   And the problem at this point is that I can’t fix it on my own: although I found (and fixed) a bug in my own code, this one is going to require some support calls.  So, this is a bad outcome, but I did manage to figure this all out within an hour.  
+Sadly, this meant that I’d actually had to test and rule out _all of the hypotheses_ in order to arrive at the correct one.    I guess it happens.   And the problem at this point is that I can’t fix it on my own: although I found (and fixed) a bug in my own code, this one is going to require some support calls.  So, this is a bad outcome, but I did manage to figure this all out within an hour.  
 
 ## Some Notes
 
