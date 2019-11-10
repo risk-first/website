@@ -89,7 +89,7 @@ If we test each hypothesis, we learn something about the system.  But that has a
 
 ![Test 1: Curl With Broken Token](images/generated/practices/debugging/test1.png) 
 
-Although `H1` was unlikely (and therefore I probably wasn’t going to learn much) it was really easy to test.  All I needed to do was try the `curl` command again with a deliberately broken token.  What would the message be?  What came back was a `401 error - unauthorised`.  So it definitely wasn’t `H1`.
+Although `H1` was unlikely (and therefore I probably wasn’t going to learn much) it was really easy to test.  All I needed to do was try the `curl` command again with a deliberately broken token.  What would the message be?  What came back was a `401 error - unauthorised`.  So it definitely wasn’t `H1`, because the error message was different.
 
 ### Second Test
 
@@ -103,10 +103,9 @@ Since the code was returning the same result locally and on the server, that rea
 
 ## Third Test
 
-Down to just `H3`,`H4` and `H5`.  I had definitely seen On-Behalf-Of working two weeks’ ago, but in another app.  A fairly quick thing to do would be to try and post the message with that other app.  It was just a case of switching identities.  I did this, and lo!  I still get the “not able to obtain session” error. 
+Down to just `H3`,`H4` and `H5`.  I had definitely seen On-Behalf-Of working two weeks’ ago, but in that other app.  A fairly quick thing to do would be to try and post the message with that other app, but it wasn't installed.  Instead, I could try my same code out again, but _using the other app's identity_.  I did this, and lo!  I still get the “not able to obtain session” error. 
 
 ![Test 3:  Post With Other App](images/generated/practices/debugging/test3.png) 
-
 
 This ruled out `H3`.  But there was still a chance I was creating the token wrongly (`H5`). 
 
@@ -120,11 +119,11 @@ This was another simple thing to test, since all I had to do was call a “Room 
 
 ## Outcome
 
-Sadly, this meant that I’d actually had to test and rule out _all of the other hypotheses_ in order to arrive at the correct one (`H4`).    I guess it happens.   And the problem at this point is that I can’t fix it on my own: although I found (and fixed) a bug in my own code, this one is going to require some support calls.  So, this is a bad outcome, but I did manage to figure this all out within an hour.  
+Sadly, this meant that I’d actually had to test and rule out _all of the other hypotheses_ in order to arrive at the correct one (`H4`).  I guess it happens.   And the problem at this point is that I can’t fix it on my own: although I found (and fixed) a certificates-related bug in my own code, this one is going to require some support calls.  So, this is a bad outcome:  I couldn't do the presentation but _I did_ manage to figure this all out within an hour.  
 
 ## Some Notes
 
-1.  I started by writing down all the things I knew, and all of my hypotheses.  Why?  Surely, time was short!  But I did this _because_ time was short.  The reason was, by having all of the facts and hypotheses to hand I was setting up my [Internal Model](Glossary.md#internal-model) of the problem, with which I could reason about the new information as I came across it.
+1.  I started by writing down all the things I knew, and all of my hypotheses.  Why?  Surely, time was short!  I did this _because_ time was short.  The reason was, by having all of the facts and hypotheses to hand I was setting up my [Internal Model](Glossary.md#internal-model) of the problem, with which I could reason about the new information as I came across it.
 2.  I performed four tests, and ended up ruling out six different hypotheses.   That feels like good value-for-time.
 3.  In each case, I am trading _time_ to change the risk profile of the problem.  By reducing to zero the likelihood of some risks, I am increasing the likelihood of those left.  So a good test would:
  - a.  Bisect probability space 50/50.  That way the information is maximised.
@@ -138,7 +137,9 @@ Also, I am super-lazy.  I'm always trying to rule of out the hypotheses with the
 
 Perhaps you have a different process?  Is there another one?  I'd really like to know about it if so.   Please join the GitHub Risk-First team and tell me about it!
 
+## Coming Soon...
 
+In the next (currently unwritten) article, we'll bring this home by looking at testing, and look at the similarities across all of these different practices.  
 
 
  
