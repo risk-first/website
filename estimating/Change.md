@@ -9,7 +9,7 @@ So far, we've analysed problems with estimating in four different domains:
 - [Journeys]():  In this domain, work is heterogenous and interconnected.  Different parts depend on each other, and a failure in one part might mean going back to the drawing board entirely.  The way to estimate in this domain is to _know the landscape_ and to build in _buffers_.  
 - [Fractals]():  In this domain, [Parkinson's Law]() is king.  There is always more work to be done.  The best thing we can do is try and apply ourselves to the _highest value_ work at any given point, and frequently refer back to reality to find out if we're building the right thing.
 
-![Three Dimensions From Fill-The-Bucket](images/estimates/dimensions.png)
+![Three Dimensions From Fill-The-Bucket](/images/estimates/dimensions.png)
 
 In Risk-First, one of the main messages has been that it's all about your [Internal Model](/Glossary.md#internal-model).  If you have a good model of the world, then you're likely to be able to [Take Actions](/Glossary.md#take-action) in the world that lead you to positions of lower risk.
 
