@@ -29,6 +29,8 @@ Luckily one came along today, giving me a chance to write it up and go over this
 
 In order to make this work, we made use of functionality within Symphony called “On-Behalf-Of”, which allows Tables App to post messages as a user, if the user has given prior authorisation.
 
+![Table Editing In Symphony](images/tables.jpg)
+
 But something wasn’t working - whenever I clicked "post" - no table!
 
 To make matters worse, I was supposed to be doing a presentation on this within **two hours**.  I’d need to make good use of my available time.
