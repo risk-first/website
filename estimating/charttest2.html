@@ -122,17 +122,18 @@ doChart('lambda2',
 		
 		var early = l * (   (Math.exp(-k*l) / (l*l))   + ((k*l - 1) / (l*l)) )
 		var late = (Math.exp(-k*l) / l);
+		var total = early + late;
 		
 		return {
 			type: 'bar',
 		    data: {
-		        labels: ['Too Early', 'Too Late'],
+		        labels: ['Too Early', 'Too Late', 'Total'],
 		        datasets: [{
 		            label: 'Risk',
-		            data: [early, late],
+		            data: [early, late, total],
 		            borderWidth: 1,
-		            backgroundColor: [ 'rgba(132, 99, 255, 0.2)', 'rgba(132, 200, 99, 0.2)' ],
-			      	borderColor: [ 'rgba(132, 99, 255, 1)', 'rgba(132, 200, 99, 1)' ],
+		            backgroundColor: [ 'rgba(132, 99, 255, 0.2)', 'rgba(132, 200, 99, 0.2)', 'rgba(99, 99, 99, 0.2)' ],
+			      	borderColor: [ 'rgba(132, 99, 255, 1)', 'rgba(132, 200, 99, 1)', 'rgba(99, 99, 99, 1)' ],
 		        }]
 		    },
 		}

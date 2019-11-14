@@ -96,14 +96,16 @@ doChart('simulation',
 
 ## Distribution
 
-Have a play with the simulator here, and see how different numbers of cabinets and probabilities work out.  In particular, what happens when:
+The above chart simulates the kitchen cabinet scenario.  Have a play and see how different numbers of cabinets and probabilities work out.  In particular, what happens when:
 
  - You have a _single_ cabinet in the original kitchen?
  - You have _thirty_ cabinets in the original kitchen?
  
-When the number of initial cabinets is high, we are closer to the "fill-the-bucket" world, with it's normal distribution, and variance-around-a-mean. 
+When the number of initial cabinets is high, we are closer to the [Fill-The-bucket](Fill-The-Bucket.md) world, with it's normal distribution, and variance-around-a-mean. 
  
-But when the number of initial cabinets is low, the distribution is "long-tailed", and tends towards the [Exponential Distribution](https://en.wikipedia.org/wiki/Exponential_distribution), which works in a way similar to [radioactive decay](https://en.wikipedia.org/wiki/Radioactive_decay).  That is, we might best be able to talk about moving kitchens in terms of their half-lives.  That is, given a bunch of infinity-cabinets, we could say how long it would usually take for _half_ of them to be completed.  Then, it'll be the same again for the next half, and so on.
+But when the number of initial cabinets is low, the distribution is "long-tailed" and tends towards the [Exponential Distribution](https://en.wikipedia.org/wiki/Exponential_distribution), which works in a way similar to [radioactive decay](https://en.wikipedia.org/wiki/Radioactive_decay).  We might best be able to talk about moving kitchens in terms of their half-lives.  
+
+That is, given a bunch of infinity-cabinets, we could say how long it would usually take for _half_ of them to be completed.  Then, it'll be the same again for the next half, and so on.
 
 Whereas [Fill-The-Bucket](Fill-The-Bucket.md) was defined with a _mean_ and _variance_, the exponential distribution is modelled with a single parameter, lambda (λ), which is the rate of decay.   
 
@@ -161,10 +163,13 @@ Let's assume that the exponential distribution _does_ model software development
 
 With any estimate, there are risks in both under- and over- estimating: 
 
- **Too Long**: In estimating too much time,  you might not be given the work or your business might [miss the opportunity in the marketplace](/Scarcity-Risk.md#opportunity-risk).  A too cautious risk might doom a potentially successful project before it has even started.
- **Too Short**: If you estimate too little time, you might miss important coordinating dates with your marketing team, or miss the Christmas window, or run out of [runway]().  
+ - **Too Long**: In estimating too much time,  you might not be given the work or your business might [miss the opportunity in the marketplace](/Scarcity-Risk.md#opportunity-risk).  A too cautious risk might doom a potentially successful project before it has even started.
 
-For the sake of our simulation's simplicity, let's assume that being a day long on the estimate is as bad as being a day short, and that the cost is _linear_ in both directions, and see how this plays out in the following set of charts.
+ - **Too Short**: If you estimate too little time, you might miss important coordinating dates with your marketing team, or miss the Christmas window, or run out of "runway".  
+
+For the sake of our simulation's simplicity, let's assume that being a day long on the estimate is as bad as being a day short and that the cost is _linear_ in both directions. 
+
+See how this plays out in the following set of charts.
  
 <div id="lambda2" />
 
@@ -276,17 +281,18 @@ doChart('lambda2',
 		
 		var early = l * (   (Math.exp(-k*l) / (l*l))   + ((k*l - 1) / (l*l)) )
 		var late = (Math.exp(-k*l) / l);
+		var total = early + late;
 		
 		return {
 			type: 'bar',
 		    data: {
-		        labels: ['Too Early', 'Too Late'],
+		        labels: ['Too Early', 'Too Late', 'Total'],
 		        datasets: [{
 		            label: 'Risk',
-		            data: [early, late],
+		            data: [early, late, total],
 		            borderWidth: 1,
-		            backgroundColor: [ 'rgba(132, 99, 255, 0.2)', 'rgba(132, 200, 99, 0.2)' ],
-			      	borderColor: [ 'rgba(132, 99, 255, 1)', 'rgba(132, 200, 99, 1)' ],
+		            backgroundColor: [ 'rgba(132, 99, 255, 0.2)', 'rgba(132, 200, 99, 0.2)', 'rgba(99, 99, 99, 0.2)' ],
+			      	borderColor: [ 'rgba(132, 99, 255, 1)', 'rgba(132, 200, 99, 1)', 'rgba(99, 99, 99, 1)' ],
 		        }]
 		    },
 		    options: {
@@ -308,9 +314,9 @@ doChart('lambda2',
 We have four charts above:
 
  - The top (red) chart is our exponential probability density.  Our eventual completion date is randomly picked from somewhere in the red area.  The grey overlay shows the rate at which projects are likely to be completed.  
- - The second (green and blue) graph shows the costs of getting the estimate wrong.  If you hit the date exactly, you minimize risk.  If you overrun, you pick up the green costs.  If you finish early, you pick up the blue costs.  You might question why you have costs for finishing early, but you are being penalized here because your estimate was wrong.  Maybe the product could have shipped sooner if you'd given a more accurate date?
- - The third (orange) graph shows our risk profile - it's the costs from the middle multiplied by the probabilities from the top.
- - The bottom (green and blue) graph is the area under the risk profiles from the third graph.  That is, we're providing a simple way to compare the early risk with the late risk.
+ - The second (green and blue) chart shows the costs of getting the estimate wrong.  If you hit the date exactly, you minimize risk.  If you overrun, you pick up the green costs.  If you finish early, you pick up the blue costs.  You might question why you have costs for finishing early, but you are being penalized here because your estimate was wrong.  Maybe the product could have shipped sooner if you'd given a more accurate date?
+ - The third (orange) chart shows our risk profile - it's the (green and blue) costs from the middle multiplied by the probabilities (in red) from the top.
+ - The bottom (green and blue) chart is the area under the risk profiles from the third chart.  That is, we're providing a simple way to compare the early risk with the late risk.
  
 ### Balancing Risk
 
