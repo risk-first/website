@@ -367,7 +367,7 @@ doChart('simulation3',
 
 ## Analysis
 
-There are three graphs above:
+There are three charts above:
 
  - The top (red) graph is showing the probability density for us completing the work.  Our actual completion time is one point chosen randomly from the area in red. So, we're probably looking at around 32 days.
  - The middle (blue) graph shows our return distribution.  As you can see, it starts sliding down after 20 days, eventually ending up in negative territory.  Leaving the estimate at 20 days gives us the _highest possible_ payout of £10,000, increasing our estimate reduces this maximum.  
