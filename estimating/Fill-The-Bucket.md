@@ -138,7 +138,7 @@ The area of a _probability density_ curve is normalised to 1, so you can pick a 
 
 If you paint the first fence panel in 40 minutes, how sure can you be that this is a good estimate?  What if you extrapolate from this single fence panel?  To paint all 40 might now only take 26 hours - which is a good deal shorter than the original estimate of 40 hours.  Is that fair?
 
-After the first fence panel, you just don't know.  After you've painted two or three, you can start to figure out the _sample variance_ ($s^2$):
+After the first fence panel, you just don't know.  After you've painted two or three, you can start to figure out the _sample variance_ $$s^2$$:
 
 $$s^2 = \frac{\sum(x - \bar{x})^2}{n - 1}$$
  
@@ -239,6 +239,8 @@ Although software development tasks don't often fit into the [Fill-The-Bucket](F
 
 The same is true for lots of other algorithms - scanning a linked-list, walking a tree, these are often $$O(n)$$.
 
+### Binary Chop.
+
 There are plenty of algorithms too which have other efficiencies.   Let's say you use this algorithm to look up a word in a dictionary.
 
 1.  Establish upper and lower bounds of the search space (i.e. first and last entry of the dictionary)
@@ -246,7 +248,7 @@ There are plenty of algorithms too which have other efficiencies.   Let's say yo
 
 This is the [binary chop algorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm), in which the number of remaining search-space _halves_ each time you go round step 2.  Therefore, doubling the length of the dictionary only increases the number of operations by 1.  So this algorithm takes $$O(log_2  n)$$ time.
 
-So [Fill-The-Bucket](Fill-The-Bucket.md) is _still_ an appropriate way of estimating for these algorithms.  If you can figure out how long it takes to do steps 1 & 2, and how many times it'll have to do them, you can make a good estimate of the total time.
+So [Fill-The-Bucket](Fill-The-Bucket.md) is _still_ an appropriate way of estimating for these algorithms.  If you can figure out how long it takes to do steps 1 & 2, and how many times it'll have to do them, you can make a good estimate of the total time.  That is, even though the time won't be _linear_, _extrapolation_ still works.
 
 ## Estimating Risk
 
@@ -385,7 +387,7 @@ This is a really contrived example, but actually this represents _most of_ how b
 
 ## Failure Modes
 
-The problem is, because this approach works well in banking and operations and other places, there is a _strong tendency_ for project managers to want to apply it to software development.  
+The problem is, because this approach works well in insurance and operations and other places, there is a _strong tendency_ for project managers to want to apply it to software development.  
 
 But there are lots of ways [Fill-The-Bucket](/estimating/Fill-The-Bucket.md) goes wrong, and this happens when you are estimating in scenarios that violate the original conditions:
 
@@ -395,4 +397,4 @@ But there are lots of ways [Fill-The-Bucket](/estimating/Fill-The-Bucket.md) goe
  
 In [the financial crisis](/Risk-Landscape.md#the-financial-crisis), we saw how estimates of risk failed because they violated point 3.  
 
-Let's have a look at [other approaches to estimating](Kitchen-Cabinet.md).
+Let's have a look at [what happens when we relax these constraints](Kitchen-Cabinet.md).
