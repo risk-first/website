@@ -14,9 +14,9 @@ order: 1
 
 ![If it takes one hour to fill a 5l bucket...](/images/generated/estimating/fill_the_bucket.png)
 
-The simplest type of estimation problem we might face in software development is _linear_, as in the example above.  If one developer takes one day to build a web-page for our site, how long will it take to build ten web-pages?  Well, it could be that the answer is around ten days.
+The simplest type of estimation problem we might face in software development is _simple extrapolation_, as in the example above.  If one developer takes one day to build a web-page for our site, how long will it take to build ten web-pages?  Well, it could be that the answer is around ten days.
 
-You can apply this estimation approach to any _linear_ or _linear-ish_ problem:  _It takes an hour to paint one fence panel.  There are 40 fence panels. How long will the whole fence take?_
+We'll name this "estimation by extrapolation" approach "Fill-The-Bucket". It occurs in maths tests everywhere:  _It takes an hour to paint one fence panel.  There are 40 fence panels. How long will the whole fence take?_
 
 The key to Fill-The-Bucket style estimation is that:
 
@@ -32,7 +32,7 @@ In reality, we should expect that different fence panels take slightly different
 
 Also, we shouldn't expect measurement in the real world to ever be exact,  we are always going to see a _distribution_ of times. 
 
-Where we are able to see measurements clustering-around-the-mean, this gives rise to the familiar [Normal Distribution](https://en.wikipedia.org/wiki/Normal_distribution) of measurements, the so called "Bell Curve" which arises out of distributions like height, weight, test scores and so on.  
+Where we are able to see measurements clustering-around-the-mean, this gives rise to the familiar [Normal Distribution](https://en.wikipedia.org/wiki/Normal_distribution) of measurements - the so called "Bell Curve" - which arises out of distributions like height, weight, test scores and so on.  
 
 <div id="simulation" />
 
@@ -126,11 +126,11 @@ You can fairly easily add up normal distributions like this.  If you have _n_ fe
   
 ## Probability Density  
   
-The area under each curve is the _probability density_.  
+The area under those curves above is the _probability density_.  
 
-When you paint any given fence panel (the first, red graph), you'd expect the time taken to be a single spot from under the graph, picked at random.  Given that there is more area under the graph around the mean, we'd expect our fence-painting times to be clustered around the mean.  
+When you paint any given fence panel (the first, red graph), you'd expect the time taken to be a single spot from under the curve, picked at random.  Given that there is more area under the curve around the mean, we'd expect our fence-painting times to be clustered around the mean.  
 
-The second, blue graph extrapolates the single panel density to show how long the whole job will take.  It the variance for a single panel is large and the number of panels painted is large, then the time to paint the whole fence could vary by _hours_.  
+The second, blue chart extrapolates the single panel density to show how long the whole job will take.  It the variance for a single panel is large and the number of panels painted is large, then the time to paint the whole fence could vary by _hours_.  
 
 The area of a _probability density_ curve is normalised to 1, so you can pick a particular interval within it, work out the area of it, and that's the probability of an event occurring within that interval. 
   
@@ -138,7 +138,7 @@ The area of a _probability density_ curve is normalised to 1, so you can pick a 
 
 If you paint the first fence panel in 40 minutes, how sure can you be that this is a good estimate?  What if you extrapolate from this single fence panel?  To paint all 40 might now only take 26 hours - which is a good deal shorter than the original estimate of 40 hours.  Is that fair?
 
-After the first fence panel, you just don't know.  After you've painted two or three, you can start to figure out the _sample variance_:
+After the first fence panel, you just don't know.  After you've painted two or three, you can start to figure out the _sample variance_ ($s^2$):
 
 $$s^2 = \frac{\sum(x - \bar{x})^2}{n - 1}$$
  
