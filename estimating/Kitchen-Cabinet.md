@@ -65,7 +65,7 @@ doChart('simulation',
  {
    'cabinets' : { min: 1, max: 30, value: 10, name: 'Initial Cabinets', step: 1 },
    'chance' : { min: 0, max: 1, value: .2, name: 'Chance Of Nesting', step: .01 },
-   'time' : { min: 30, max:200, value: 30, name: 'Duration', step: 1}
+   'time' : { min: 30, max:200, value: 50, name: 'Duration', step: 1}
  },
  [ model => { return {
     type: 'bar',
@@ -98,8 +98,8 @@ doChart('simulation',
 
 The above chart simulates the kitchen cabinet scenario.  Have a play and see how different numbers of cabinets and probabilities work out.  In particular, what happens when:
 
- - You have a _single_ cabinet in the original kitchen?
  - You have _thirty_ cabinets in the original kitchen?
+ - You have a _single_ cabinet in the original kitchen, and say a .8 chance-of-nesting?
  
 When the number of initial cabinets is high, we are closer to the [Fill-The-bucket](Fill-The-Bucket.md) world, with it's normal distribution, and variance-around-a-mean. 
  
