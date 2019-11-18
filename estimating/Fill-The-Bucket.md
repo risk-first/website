@@ -128,7 +128,7 @@ You can fairly easily add up normal distributions like this.  If you have _n_ fe
   
 The area under those curves above is the _probability density_.  
 
-When you paint any given fence panel (the first, red graph), you'd expect the time taken to be a single spot from under the curve, picked at random.  Given that there is more area under the curve around the mean, we'd expect our fence-painting times to be clustered around the mean.  
+When you paint any given fence panel (the first, red chart), you'd expect the time taken to be a single spot from under the curve, picked at random.  Given that there is more area under the curve around the mean, we'd expect our fence-painting times to be clustered around the mean.  
 
 The second, blue chart extrapolates the single panel density to show how long the whole job will take.  It the variance for a single panel is large and the number of panels painted is large, then the time to paint the whole fence could vary by _hours_.  
 
@@ -369,9 +369,9 @@ doChart('simulation3',
 
 There are three charts above:
 
- - The top (red) graph is showing the probability density for us completing the work.  Our actual completion time is one point chosen randomly from the area in red. So, we're probably looking at around 32 days.
- - The middle (blue) graph shows our return distribution.  As you can see, it starts sliding down after 20 days, eventually ending up in negative territory.  Leaving the estimate at 20 days gives us the _highest possible_ payout of £10,000, increasing our estimate reduces this maximum.  
- - The bottom (orange) graph multiplies these two together to give us a measure of [financial risk](/Scarcity-Risk.md#funding-risk). Without adjusting the estimate, we're more likely to lose than win.
+ - The top (red) chart is showing the probability density for us completing the work.  Our actual completion time is one point chosen randomly from the area in red. So, we're probably looking at around 32 days.
+ - The middle (blue) chart shows our return distribution.  As you can see, it starts sliding down after 20 days, eventually ending up in negative territory.  Leaving the estimate at 20 days gives us the _highest possible_ payout of £10,000, increasing our estimate reduces this maximum.  
+ - The bottom (orange) chart multiplies these two together to give us a measure of [financial risk](/Scarcity-Risk.md#funding-risk). Without adjusting the estimate, we're more likely to lose than win.
  
 Are you a gambler?  If you can just make everyone work a couple of extra hours' overtime, you'll be much more likely to make the big bucks.  But without cheating like this, it's probably best to give an estimate around 30 days or more.  
 
