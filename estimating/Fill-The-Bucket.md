@@ -1,9 +1,9 @@
 ---
 title: Fill-The-Bucket
-description: Part of the 'Estimating' Risk-First Series, in which we look at straightforward linear estimation.
+description: Part of the 'Estimating' Risk-First Series, in which we look at straightforward extrapolation.
 url: https://riskfirst.org/estimating/Fill-The-Bucket
---image: /images/generated/titles/Just-Risk.png
---featuredimage: images/generated/single/Just-Risk.png
+image: /images/generated/titles/Fill-The-Bucket.png
+featuredimage: images/generated/single/Fill-The-Bucket.png
 categories:
  - Estimating
 order: 1

@@ -1,9 +1,9 @@
 ---
 title: Fractals
-description: Part of the 'Estimating' Risk-First Series, where we look at estimating fractal value boundaries.
+description: Part of the 'Estimating' Risk-First Series, where we look at estimating with uncertain boundaries.
 url: https://riskfirst.org/estimating/Fractals
---image: /images/generated/titles/Just-Risk.png
---featuredimage: images/generated/single/Just-Risk.png
+image: /images/generated/titles/Fractals.png
+featuredimage: images/generated/single/Fractals.png
 categories:
  - Estimating
 order: 4
@@ -119,11 +119,13 @@ With this in mind, you estimate a useful amount of time to go round this cycle, 
  
 ## Parsimonious Yachtsman 
 
-The fractal nature of many software development tasks is both a blessing and a curse.  It's a blessing because it means that sometimes, software developers can achieve almost-miracles of creating huge chunks of value in no time at all.  But that capability somehow ends up being _an expectation_.   The startup idea of "throwing together an MVP (Minimum Viable Product) is taken as gospel.  Kyle Prifogle pushes against this when he writes:
+The fractal nature of many software development tasks is both a blessing and a curse.  It's a blessing because it means that sometimes, software developers can achieve almost-miracles of creating huge chunks of value in no time at all.  But that capability somehow ends up being _an expectation_.   The startup idea of "throwing together an MVP (Minimum Viable Product)" is taken as gospel.  Kyle Prifogle pushes against this when he writes:
 
 > "Lets explore this point more by means of an extended analogy. Suppose that you wanted to start a new business as a yachting captain... This is in many ways analogous to when a startup company decides that they want to serve the fortune 500, companies that have petabytes and beyond of data. However, you as a startup founder have to operate lean, and you are only willing to spend $10,000 on a boat. If you were to walk up to the owner of the multi-million dollar yacht and say, I’ll give you $10,000 for that boat, you would be laughed off the dock. " - [Kyle Prifogle, _Dear Startup_](http://kyleprifogle.com/dear-startup/)
 
 Buying yachts is _not_ in the Fractal problem space.  It's much more [Fill-The-Bucket](Fill-The-Bucket.md): more money means more yacht.  So, it's not a great analogy.  But the point is that the _expectation_ is for a value-miracle to occur, simply by adopting the practice of MVP or agile development.
+
+## Where To Find Fractal Spaces
 
 Not all software development problems are squarely in the [Fractal](Fractals.md) space, but those that are are generally tasks like building user interfaces, games, interactivity and usability.  This is where the curse comes in:  it's _hard to know what to build_ and _you are never done_.  
 
@@ -139,7 +141,7 @@ Let's look at the conclusions we reached in [Boundary Risk](/Boundary-Risk.md):
 
 If we accept this problem of the fractal nature of human desire, then we have to contend with the fact that our software systems are always going to get continually more complex to serve it.
 
-Therefore, our next stop is to look again at [complexity](Hierarchies.md)...
+So that's _four_ different styles of estimating.  Time for [number five](Change.md).
 
 
 

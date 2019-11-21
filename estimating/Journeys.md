@@ -1,9 +1,9 @@
 ---
 title: Journeys
-description: Part of the 'Estimating' Risk-First Series, where we look at estimates with connected parts.
+description: Part of the 'Estimating' Risk-First Series, where we look at estimates with dependent, connected parts.
 url: https://riskfirst.org/estimating/Journeys
---image: /images/generated/titles/Just-Risk.png
---featuredimage: images/generated/single/Just-Risk.png
+image: /images/generated/titles/Journeys.png
+featuredimage: images/generated/single/Journeys.png
 categories:
  - Estimating
 order: 3
@@ -95,7 +95,7 @@ This should look a _fair bit_ like software architecture:  often, we sketch out 
 
 At the other extreme, if we're estimating a single story, we can break down work like this.  For development tasks which _look like a journey_, this is what I'm doing.   _"If I build the Foo component using Spring and the Bar component in HTML, I can join them together with some Java code..."_  
 
-Further, as we solve problems in our code-base, we break them down into smaller and smaller parts.  (We'll come back to this in [Hierarchies](Hierarchies.md).
+Further, as we solve problems in our code-base, we break them down into smaller and smaller parts.  (We'll come back to this in [Hierarchies](Hierarchies.md).)
 
 So **Journey Estimating** is three things all at once:
 
@@ -107,7 +107,7 @@ So **Journey Estimating** is three things all at once:
 
 So, we now have a third type of estimating.  Again, very different from the [first](Fill-The-Bucket.md) [two](Kitchen-Cabinet.md).  But again, there are obvious similarities with what we do in the world of software, because it's so easy to _go the wrong way_ or _overlook a short-cut_.  
 
-I've been on projects where a team has toiled long-and-hard to get a database working, only to find out that there was a better, different one available that would do the job for them.  I've watched people struggle to build their own languages and compilers, only to realise later that actually all they needed was to use the ones that were there already.  
+I've been on projects where a team has toiled long-and-hard to get a database working, only to find out that there was a better, different one available that would do the job for them with _way less effort_.  I've watched people struggle to build their own languages and compilers, only to realise later that actually all they needed was to use the ones that were there already.  
 
 In software, it's easy to head off on-foot _by accident_, overlooking the fact that someone has _built the motorway_.
 
