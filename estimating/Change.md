@@ -39,7 +39,22 @@ You get the same choices in software, pretty much:
 
 1.  **The Extension.** Add _another_ software component into your existing architecture, without changing any of the existing stuff.  Build feeds into / out of the existing software.
 2.  **Re-architect.** Make _changes_ to the existing software, removing old components and modifying existing ones.
-3.  **Re-locate
+3.  **Re-locate.** Start again from scratch, with a view towards migrating users from the old system to the new.
+
+You can get a long way with extension on it's own.  The downside of this is that you accrue _technical debt_ because none of the original code ever gets simplified.  Let's build a model of how this plays out in a simple 'business' game.
+
+ - _Functional Areas_ (FAs) are things that generate value for the user-base.  Each FA generates the same value.  It costs £20 to build a new FA, and £2 per-round to maintain an FA.  
+ - The _return_ on an FA is dependent on the size of the user base, which follows a nice, smooth gaussian curve.  
+ - You can choose _when_ to build an FA, and it'll start generating return.
+ - However, you're never allowed to shut down an FA.
+ 
+-- add the simulation here.  Parameters:  how big should the FA be before investing?
+
+Eventually, - obviously - the creation of new FAs _can't sustain the weight of the existing FAs_, and so the business will die.   
+
+Now, there are some problems with this.  
+
+Firstly, there is no _synergy_.  The existing FAs don't have an impact on the new ones.  It's always _just as hard_ to create a new FA as before.  
 
 
 
