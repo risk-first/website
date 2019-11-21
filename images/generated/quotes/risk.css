@@ -52,7 +52,8 @@ component,
 channel-artifact,
 internal-model-artifact,
 protocol-artifact,
-agent-artifact {
+agent-artifact,
+image-artifact {
 	kite9-type: container;
 	kite9-margin: 10pt;
 	kite9-link-inset: 10pt;
@@ -63,6 +64,10 @@ agent-artifact {
 	kite9-padding: 10pt; 
 	kite9-connection-align: 50%;
 	kite9-min-size: 110pt 140pt;	
+}
+
+image-artifact {
+	kite9-template: url(template.svg#image-artifact);
 }
 
 agent-artifact {
@@ -296,6 +301,17 @@ risk.methodology {
 	kite9-template: url(template.svg#methodology);
 }
 
+big-image {
+	kite9-margin: 10pt;
+	kite9-link-inset: 10pt;
+	kite9-link-gutter: 10pt;
+	kite9-type: container;
+	kite9-layout: vertical;	
+	kite9-template: url(template.svg#big-image);
+	kite9-padding: 10pt; 
+	kite9-connection-align: 50%;
+	kite9-min-size: 110pt 140pt;
+}
 
 risk-box {
 	kite9-margin: 10pt;
@@ -321,13 +337,24 @@ diagram {
 	background-color: white;
 }
 
+diagram.bg1 {
+	kite9-template: url(template.svg#diagram-image) 'vecteezy-5.jpg';
+}
+
+diagram.bg2 {
+	kite9-template: url(template.svg#diagram-image) 'vecteezy-1.jpg';
+}
+
+diagram.bg3 {
+	kite9-template: url(template.svg#diagram-image) 'vecteezy-3.jpg';
+}
+
 image {
 	kite9-type: container;
 	kite9-horizontal-align: center;
 	kite9-vertical-align: top;
 	kite9-min-size: 50pt 50pt;
-	kite9-margin: 10pt;
-	
+	kite9-margin: 10pt;	
 }
 
 image-content {
@@ -775,6 +802,7 @@ table celltext.top {
 /* Risk Descriptions */
 
 description,
+long-description,
 .description {
 	kite9-type: container;	
 	kite9-template: url(template.svg#description);
@@ -783,6 +811,11 @@ description,
 	font-style: italic;
 	kite9-padding: 10pt;
 }
+
+long-description {
+	kite9-template: url(template.svg#long-description);
+}
+
 
 /* Steve McConnell Stuff */
 

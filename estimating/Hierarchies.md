@@ -2,16 +2,16 @@
 title: Hierarchies
 description: Part of the 'Estimating' Risk-First Series, exploring complexity in hierarchies.
 url: https://riskfirst.org/estimating/Hierarchies
---image: /images/generated/titles/Just-Risk.png
---featuredimage: images/generated/single/Just-Risk.png
+image: /images/generated/titles/Hierarchies.png
+featuredimage: images/generated/single/Hierarchies.png
 categories:
  - Estimating
-order: 5
+order: 6
 ---
 
 # Hierarchies
 
-Having looked at four different approaches to estimating, it's time to take a brief but important aside: have you noticed just how prevalent the idea of _heirarchy_ is in software?  By hierarchy, I mean a general pattern of _connectedness_, where a _parent_ has some _children_, who, in turn, may each have some further children, and so on.
+Having looked at five different approaches to estimating, it's time to take a brief but important aside: have you noticed just how prevalent the idea of _heirarchy_ is in software?  By hierarchy, I mean a general pattern of _connectedness_, where a _parent_ has some _children_, who, in turn, may each have some further children, and so on.
 
 In this section, I'm going to look at a whole bunch of examples, and then try to examine exactly why this is such a popular pattern.  This will be a useful tool in our arsenal for estimation in the next section.
 

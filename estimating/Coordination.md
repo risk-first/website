@@ -4,9 +4,6 @@ description: Part 7 of the 'Estimating' Risk-First Series.
 url: https://riskfirst.org/estimating/Fill-The-Bucket
 --image: /images/generated/titles/Just-Risk.png
 --featuredimage: images/generated/single/Just-Risk.png
-categories:
- - Estimating
-order: 6
 ---
 
 # Coordination

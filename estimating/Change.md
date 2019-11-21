@@ -1,3 +1,13 @@
+---
+title: Change
+description: Part of the 'Estimating' Risk-First Series, exploring the problem of changing requirements.
+url: https://riskfirst.org/estimating/Change
+image: /images/generated/titles/Change.png
+featuredimage: images/generated/single/Change.png
+categories:
+ - Estimating
+order: 5
+---
 
 
 # Change
@@ -29,7 +39,7 @@ How does that alter the strategy we use to deal with it?  Let's consider the exa
 
 2.  **Re-architect.**   Maybe this involves demolishing some walls, or building a new facade.  Re-architecting means taking-away as well as adding new.  
 
-3.  **Re-locate. **  If the _location_ of the building is wrong, or the space to build in is insufficent, you'll end up moving.  This might mean breaking ground in a new location, as [Apple did _par excellence_ in 2017](https://www.apple.com/newsroom/2017/02/apple-park-opens-to-employees-in-april/).
+3.  **Re-locate.**  If the _location_ of the building is wrong, or the space to build in is insufficent, you'll end up moving.  This might mean breaking ground in a new location, as [Apple did _par excellence_ in 2017](https://www.apple.com/newsroom/2017/02/apple-park-opens-to-employees-in-april/).
 
 ![Apple Mothership](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftctechcrunch2011.files.wordpress.com%2F2013%2F11%2F111.jpg%3Fw%3D680%26h%3D414&f=1&nofb=1)
 
