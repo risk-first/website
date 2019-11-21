@@ -136,7 +136,7 @@ The area of a _probability density_ curve is normalised to 1, so you can pick a 
   
 ## Sampling Error
 
-If you paint the first fence panel in 40 minutes, how sure can you be that this is a good estimate?  What if you extrapolate from this single fence panel?  To paint all 40 might now only take 26 hours - which is a good deal shorter than the original estimate of 40 hours.  Is that fair?
+If you paint the first fence panel in 40 minutes, how sure can you be that this is a good estimate?  What if you extrapolate from this single fence panel?  To paint all 40 might take 26 hours.  How confident are we of this estimate?
 
 After the first fence panel, you just don't know.  After you've painted two or three, you can start to figure out the _sample variance_ $$s^2$$:
 
@@ -227,7 +227,7 @@ doChart('simulation2',
 
 </script>
 
-In the aboce simulation, we are trying to fit a Normal Distribution, estimated from a number of samples.   
+In the above simulation, we are trying to fit a Normal Distribution, estimated from a number of samples.   
 
 You should be able to see that when you move from two to three samples, the variance will probably change _a lot_.  However moving from twenty to thirty samples means it hardly changes at all.  
 
