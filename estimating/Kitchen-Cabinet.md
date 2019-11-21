@@ -1,5 +1,5 @@
 ---
-title: Kitchen-Cabinet Estimating
+title: Kitchen Cabinets
 description: Part of the 'Estimating' Risk-First Series, where we look at exponential distributions in estimates.
 url: https://riskfirst.org/estimating/Kitchen-Cabinet
 image: /images/generated/titles/Kitchen-Cabinet.png
@@ -9,7 +9,7 @@ categories:
 order: 2
 ---
 
-# Kitchen Cabinet
+# Kitchen Cabinets
 
 Imagine a scenario where you're helping a friend pack up their kitchen:
 
