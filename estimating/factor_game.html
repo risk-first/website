@@ -1,0 +1,43 @@
+  <!DOCTYPE html>
+    <head>
+          <meta charset="utf-8" />
+</head>
+<div align='center' id="d3_selectable_force_directed_graph" style="width: 960px; height: 500px; margin: auto; margin-bottom: 12px">
+    <svg />
+</div>
+
+<style>
+	#d3_selectable_force_directed_graph svg {
+	    border: 1px solid;
+	    font: 13px sans-serif;
+	    text-anchor: end;
+	}
+	
+	#d3_selectable_force_directed_graph .node {
+	  stroke: #fff;
+	  stroke-width: 1.5px;
+	}
+	
+	.node .selected {
+	  stroke: black;
+	}
+	
+	.link {
+	  stroke: #999;
+	}
+
+</style>
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="d3v4-selectable-force-directed-graph.js"></script>
+<script>
+    var svg = d3.select('#d3_selectable_force_directed_graph');
+
+    d3.json('miserables.with-ids.json', function(error, graph) {
+        if (!error) {
+            //console.log('graph', graph);
+            createV4SelectableForceDirectedGraph(svg, graph);
+        } else {
+            console.error(error);
+        }
+    });
+</script>
