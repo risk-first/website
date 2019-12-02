@@ -17,8 +17,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     // remove any previous graphs
     svg.selectAll('.g-main').remove();
 
-    var gMain = svg.append('g')
-    .classed('g-main', true);
+    var gMain = svg.append('g').classed('g-main', true);
 
     var rect = gMain.append('rect')
     .attr('width', parentWidth)
@@ -68,8 +67,8 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     
     node.append("circle")
         .attr("r", 8)
-        .attr("cx", 4)
-        .attr("cy", 4)
+        .attr("cx", 0)
+        .attr("cy", 0)
         .attr("fill", function(d) { 
             if ('color' in d)
                 return d.color;
@@ -84,6 +83,8 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 
     // add contents
     node.append("text")
+    	.attr("x", 4)
+    	.attr("y", 4)
     	.text(function (d) {
     		return "5";
     	})
@@ -131,20 +132,23 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         node.attr("transform", function(d) { return "translate(" + d.x+ ","+d.y+")"; });
     }
 
-    rect.on('click', () => {
-        node.each(function(d) {
-            d.selected = false;
-            d.previouslySelected = false;
-        });
-        node.classed("selected", false);
-    });
-
     d3v4.select('body').on('keydown', keydown);
     d3v4.select('body').on('keyup', keyup);
 
  
     function keydown() {
- 
+    	const selectedIds = graph.nodes.filter(n => n.selected).map(n => n.id);
+    	
+    	const allLinkIndexes = graph.links.map((l, i, a) => {
+    		var inFrom = selectedIds.indexOf(l.source.id) > -1;
+    		var inTo = selectedIds.indexOf(l.target.id) > -1;
+    		return (inFrom || inTo) ? i : -1;
+    	}).filter(v => v > 0).reverse();
+    	
+    	allLinkIndexes.forEach(i => {
+    		delete graph.links[i];
+    	})
+    	
     }
 
     function keyup() {
@@ -154,15 +158,10 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     function dragstarted(d) {
       if (!d3v4.event.active) simulation.alphaTarget(0.9).restart();
 
-        if (!d.selected) {
-            // if this node isn't selected, then we have to unselect every other node
-            node.classed("selected", function(p) { return p.selected =  p.previouslySelected = false; });
-        }
-
-        d3v4.select(this).classed("selected", function(p) { d.previouslySelected = d.selected; return d.selected = true; });
+        d3v4.select(this).classed("selected", function(p) { return d.selected = !d.selected; });
 
         node.filter(function(d) { return d.selected; })
-        .each(function(d) { //d.fixed |= 2; 
+        .each(function(d) {
           d.fx = d.x;
           d.fy = d.y;
         })
@@ -170,13 +169,11 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     }
 
     function dragged(d) {
-      //d.fx = d3v4.event.x;
-      //d.fy = d3v4.event.y;
-            node.filter(function(d) { return d.selected; })
-            .each(function(d) { 
-                d.fx += d3v4.event.dx;
-                d.fy += d3v4.event.dy;
-            })
+        node.filter(function(d) { return d.selected; })
+        .each(function(d) { 
+            d.fx += d3v4.event.dx;
+            d.fy += d3v4.event.dy;
+        })
     }
 
     function dragended(d) {
