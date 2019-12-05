@@ -32,13 +32,14 @@ For the rest of this article, I'm going to go out on a limb, and describe, throu
 
 ## Journeys + Cabinets = Mazes?
 
-As we discussed in [Journeys](Journeys.md), there are plenty of problems in getting from A to B.  But to help you, _maps_ are available, and the routes already exist.  Also, we get to fall back to the tried-and-tested heuristic:  the closer you are, the nearer you are to done (which is great for walking and driving, but tends to fall down somewhat when we have to wait for buses or make a detour to the airport).
+As we discussed in [Journeys](Journeys.md), there are plenty of problems in getting from A to B.  But to help you we have:
+
+- **Maps**: so we can plan our routes via those which already exist, and 
+- **Closeness**:  the closer you are, the nearer you are to done (which is great for walking and driving, but tends to fall down somewhat when we have to wait for buses or make a detour to the airport).
 
 ![Journeys Meets Cabinets](/images/estimates/dimensions-2.png)
 
-What happens when you relax those constraints?  If there is _no map_ and the _closeness_ heuristic isn't available, you're in a maze.   
-
-You can't tell how "done" you are in a maze by judging your distance to the exit point - you may be heading to a [Dead End](Complexity-Risk.md#dead-end-risk) anyway!
+What happens when you relax those constraints?  If there is _no map_ and the _closeness_ heuristic isn't available, you're in a maze.   You can't tell how "done" you are in a maze by judging your distance to the exit point - you may be heading to a [Dead End](Complexity-Risk.md#dead-end-risk) anyway!
 
 Software development is littered with dead-ends:
 
@@ -46,11 +47,11 @@ Software development is littered with dead-ends:
  - The library you thought would solve your networking problems, but turned out to be unable to work through the firewall.
  - The algorithm that promised to recognise 
 
-A _very_ famous example of this might be the "Summer Intern Computer Vision" project, outlined by Seymour Papert:
+A _very_ famous example of this might be the "Summer Intern Computer Vision" project, outlined by [Seymour Papert](https://en.wikipedia.org/wiki/Seymour_Papert) in 1966:
 
-"The summer vision project is an attempt to use our summer workers effectively in the construction of a significant part of the human visual system" - [The Summer Vision Project, _Seymour Papert_](ftp://publications.ai.mit.edu/ai-publications/pdf/AIM-100.pdf)
+> "The summer vision project is an attempt to use our summer workers effectively in the construction of a significant part of the human visual system" - [The Summer Vision Project, _Seymour Papert_](ftp://publications.ai.mit.edu/ai-publications/pdf/AIM-100.pdf)
 
-Maybe this is an unfair and perhaps apocryphal example, but we've been stuck in the "Computer Vision" maze ever since.  
+Maybe this is an unfair (and perhaps apocryphal) example but we've been stuck in the "Computer Vision" maze ever since.  
 
 ## Mazes + Fractals = Transport Networks?
 
