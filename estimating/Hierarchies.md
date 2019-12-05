@@ -11,7 +11,7 @@ order: 6
 
 # Hierarchies
 
-##### "Hierarchies are the wheel we're happy to re-invent again and again and again."
+##### "Hierarchies are the wheel we're happy to re-invent over and over and over again."
 
 Having looked at four different problems in estimating, it's time to take a brief but important aside: have you noticed just how prevalent the idea of _heirarchy_ is in software?  By hierarchy, I mean a general pattern of _connectedness_, where a _parent_ has some _children_, who, in turn, may each have some further children, and so on.
 
