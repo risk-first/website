@@ -11,6 +11,8 @@ order: 6
 
 # Hierarchies
 
+##### "Hierarchies are the wheel we're happy to re-invent again and again and again."
+
 Having looked at four different problems in estimating, it's time to take a brief but important aside: have you noticed just how prevalent the idea of _heirarchy_ is in software?  By hierarchy, I mean a general pattern of _connectedness_, where a _parent_ has some _children_, who, in turn, may each have some further children, and so on.
 
 In this section, I'm going to look at a whole bunch of examples, and then try to examine exactly why this is such a popular pattern.  This will be a useful tool in our arsenal for estimation in the next section.
@@ -124,7 +126,9 @@ Where does one system end and another begin?
 
 Although biological pressure seems to have led to a hierarchical organisation, it knows when to break it's own rule. 
 
-That's because on their own, hierarchies are _too simple_ to express _complexity_.  (For a graph-centric look at how we can measure complexity, please review [Complexity Risk](Complexity-Risk).) 
+That's because on their own, hierarchies are _too simple_ to express _complexity_.  
+
+(For a graph-centric look at how we can measure complexity, please review [Complexity Risk](Complexity-Risk).) 
 
 ## Goto Considered Harmful
 
