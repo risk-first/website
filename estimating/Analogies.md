@@ -57,13 +57,12 @@ Maybe this is an unfair (and perhaps apocryphal) example but we've been stuck in
 
 In a maze, you're trying to get from point A to point B.  However, when we throw _fractals_ back into the mix, we're wanting to get to a whole lot of different places, and there is different value in different places.
 
-This is a lot like a transport network:  large cities are connected together with efficient transport options because people are going to make that journey a lot.  Therefore, these are _high value_ routes.
+This is a lot like a country-wide transport network:  
 
-Conversely, small, far-away outposts are poorly connected to the rest of the network - maybe by dirt roads or precarious mountain passes.   
+- Large cities are connected together with efficient transport options because people are going to make that journey a lot.  Therefore, these are _high value_ routes.
+ -Small, far-away outposts are poorly connected to the rest of the network - maybe by dirt roads or precarious mountain passes.   
 
 ![Mazes Meets Fractals](/images/estimates/dimensions-3.png)
-
-Maintaining a transport network is a balancing act.  In an ideal world, every destination would be connected with every other.  In reality, we adopt hub-and-spoke architectures to minimise the cost of maintaining all the connections. 
 
 ### Metcalfe's Law
 
@@ -93,6 +92,10 @@ I am not the only person to make this observation:
 
 ## Moving On
 
-I find the _transport network_ analogy to be a useful one.  But actually it ties in nicely with where this series goes next.  If we consider our software systems to be networks (of a sort), then there is one crucial tool we can apply to understanding them.  
+I find the _transport network_ analogy to be a useful one.  But actually it ties in nicely with where this series goes next.  
+
+Maintaining a transport network is a balancing act.  In an ideal world, every destination would be connected with every other.  In reality, we adopt hub-and-spoke architectures to minimise the cost of maintaining all the connections.   In essence, turning our transport network into some kind of _heirarchy_.
+
+If we consider our software systems to be networks (of a sort), then this is a crucial tool we can apply to understanding them.  
 
 Let's look at [Hierarchies](Hierarchies.md).
