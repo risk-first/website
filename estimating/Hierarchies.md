@@ -11,7 +11,7 @@ order: 6
 
 # Hierarchies
 
-Having looked at five different approaches to estimating, it's time to take a brief but important aside: have you noticed just how prevalent the idea of _heirarchy_ is in software?  By hierarchy, I mean a general pattern of _connectedness_, where a _parent_ has some _children_, who, in turn, may each have some further children, and so on.
+Having looked at four different problems in estimating, it's time to take a brief but important aside: have you noticed just how prevalent the idea of _heirarchy_ is in software?  By hierarchy, I mean a general pattern of _connectedness_, where a _parent_ has some _children_, who, in turn, may each have some further children, and so on.
 
 In this section, I'm going to look at a whole bunch of examples, and then try to examine exactly why this is such a popular pattern.  This will be a useful tool in our arsenal for estimation in the next section.
 

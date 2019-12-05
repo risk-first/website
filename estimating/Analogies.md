@@ -11,7 +11,7 @@ order: 5
 
 # Analogies
 
-So far, this series of articles has tried to bring the problems of estimating software projects into focus by identifying different _domains_ and analogies for each domain.  Let's recap:
+So far, this series of articles has tried to bring the problems of estimating software projects into focus by identifying different _estimation domains_ and analogies for each domain.  Let's recap:
 
 - [Fill-The-Bucket](Fill-The-Bucket.md):  This is the easiest domain to work in.   All tasks are similar and uncorrelated.  We can _extrapolate_ to figure out how much time the next _n_ units will take to do.
 - [Kitchen Cabinet](Kitchen-Cabinet.md):  In this domain, there is _hidden work_.  We don't know how much there might be.  If we can break down tasks into smaller units, then by the _law of averages_ and the _central limit theorem_, we can apply some statistics to figure out when we might finish.
@@ -45,7 +45,7 @@ Software development is littered with dead-ends:
 
  - The database you thought would be a good fit, but didn't work.
  - The library you thought would solve your networking problems, but turned out to be unable to work through the firewall.
- - The algorithm that promised to recognise 
+ - The algorithm that promised to recognise faces in images only works three times out of four. 
 
 A _very_ famous example of this might be the "Summer Intern Computer Vision" project, outlined by [Seymour Papert](https://en.wikipedia.org/wiki/Seymour_Papert) in 1966:
 
@@ -59,8 +59,8 @@ In a maze, you're trying to get from point A to point B.  However, when we throw
 
 This is a lot like a country-wide transport network:  
 
-- Large cities are connected together with efficient transport options because people are going to make that journey a lot.  Therefore, these are _high value_ routes.
- -Small, far-away outposts are poorly connected to the rest of the network - maybe by dirt roads or precarious mountain passes.   
+ - Large cities are connected together with efficient transport options because people are going to make that journey a lot.  Therefore, these are _high value_ routes.
+ - Small, far-away outposts are poorly connected to the rest of the network - maybe by dirt roads or precarious mountain passes.   
 
 ![Mazes Meets Fractals](/images/estimates/dimensions-3.png)
 
@@ -74,7 +74,7 @@ This is encapsulated in Metcalfe's Law, which says the value of a network is bas
 
 ### Exploring vs. Road-Laying
 
-Building a network starts with _exploring_.  Once a connection is established, then capacity can be addressed with _engineering_.  
+Building a transport network starts with _exploring_.  Once a connection is established, then capacity can be addressed with _engineering_.  
 
 It's easy to get these two confused in software and worry up-front about capacity and design decisions, while in reality you're supposed to be exploring the space of the possible.  In essence, this is what [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) is saying with his famous quote:
 
