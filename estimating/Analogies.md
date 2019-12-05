@@ -9,8 +9,6 @@ categories:
 order: 5
 ---
 
-_under construction_
-
 # Analogies
 
 So far, this series of articles has tried to bring the problems of estimating software projects into focus by identifying different _domains_ and analogies for each domain.  Let's recap:
@@ -34,7 +32,7 @@ For the rest of this article, I'm going to go out on a limb, and describe, throu
 
 ## Journeys + Cabinets = Mazes?
 
-As we discussed in [Journeys](), there are plenty of problems in getting from A to B.  But to help you, _maps_ are available, and the routes already exist.  Also, we get to fall back to the tried-and-tested heuristic:  the closer you are, the nearer you are to done (which is great for walking and driving, but tends to fall down somewhat when we have to wait for buses or make a detour to the airport).
+As we discussed in [Journeys](Journeys.md), there are plenty of problems in getting from A to B.  But to help you, _maps_ are available, and the routes already exist.  Also, we get to fall back to the tried-and-tested heuristic:  the closer you are, the nearer you are to done (which is great for walking and driving, but tends to fall down somewhat when we have to wait for buses or make a detour to the airport).
 
 ![Journeys Meets Cabinets](/images/estimates/dimensions-2.png)
 
@@ -54,6 +52,46 @@ A _very_ famous example of this might be the "Summer Intern Computer Vision" pro
 
 Maybe this is an unfair and perhaps apocryphal example, but we've been stuck in the "Computer Vision" maze ever since.  
 
-## Mazes + Fractals = Networks In Mazes?
+## Mazes + Fractals = Transport Networks?
 
+In a maze, you're trying to get from point A to point B.  However, when we throw _fractals_ back into the mix, we're wanting to get to a whole lot of different places, and there is different value in different places.
 
+This is a lot like a transport network:  large cities are connected together with efficient transport options because people are going to make that journey a lot.  Therefore, these are _high value_ routes.
+
+Conversely, small, far-away outposts are poorly connected to the rest of the network - maybe by dirt roads or precarious mountain passes.   
+
+![Mazes Meets Fractals](/images/estimates/dimensions-3.png)
+
+Maintaining a transport network is a balancing act.  In an ideal world, every destination would be connected with every other.  In reality, we adopt hub-and-spoke architectures to minimise the cost of maintaining all the connections. 
+
+### Metcalfe's Law
+
+The total value of a network is based on the number of people (towns / machines / whatever) it connects.  This means that while connecting small out-of-the-way places might apparently not make sense from a marginal-cost perspective, it may make sense from the perspective of the total value of the network.  
+
+This is encapsulated in Metcalfe's Law, which says the value of a network is based on the square of it's size: 
+
+> "The law has often been illustrated using the example of fax machines: a single fax machine is useless, but the value of every fax machine increases with the total number of fax machines in the network, because the total number of people with whom each user may send and receive documents increases.  Likewise, in social networks, the greater number of users with the service, the more valuable the service becomes to the community. " - [Metcalfe's Law, _Wikipedia_](https://en.wikipedia.org/wiki/Metcalfe%27s_law)
+
+### Exploring vs. Road-Laying
+
+Building a network starts with _exploring_.  Once a connection is established, then capacity can be addressed with _engineering_.  
+
+It's easy to get these two confused in software, though, and worry up-front about capacity and design decisions, where in reality you're exploring the space of the possible.  In essence, this is what [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) is saying with his famous quote:
+
+> "We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. " -[Donald Knuth, _Wikipedia_](https://en.wikipedia.org/wiki/Program_optimization#When_to_optimize)
+
+So it feels to me that the _transport network_ analogy for software development is a good one.  Are you exploring, or are you engineering?  This is a critical distinction for deciding how to work on a project.
+
+Personally, when in the _exploring_ mode, I will focus on proving ideas, lashing classes together.  I know that I'm very likely to delete them, or tear them to pieces at the next revelation.  For this kind of work, I am unlikely to write unit tests - they'll just slow me down.
+
+Conversely, when in the _engineering_ mode, I am trying to create software that will survive the rigours of the users.  The ideas will have been tested, it's just a case of making the implementation good enough.  Here, I _will_ be building tests, considering Single-Points-Of-Failure and assessing bottlenecks.
+
+I am not the only person to make this observation:
+
+>  "Software projects exist on a continuum between the Lewis and Clark expedition, and laying down freeway. Knowing what kind of project you’re on can be the difference between success and failure." - [Coding styles: Are you Lewis and Clark or building an interstate?, _WanderingStan.com](http://wanderingstan.com/2019-12-01/coding-styles-are-you-lewis-and-clark-or-building-an-interstate)
+
+## Moving On
+
+I find the _transport network_ analogy to be a useful one.  But actually it ties in nicely with where this series goes next.  If we consider our software systems to be networks (of a sort), then there is one crucial tool we can apply to understanding them.  
+
+Let's look at [Hierarchies](Hierarchies.md).
