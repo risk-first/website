@@ -76,26 +76,26 @@ This is encapsulated in Metcalfe's Law, which says the value of a network is bas
 
 Building a network starts with _exploring_.  Once a connection is established, then capacity can be addressed with _engineering_.  
 
-It's easy to get these two confused in software, though, and worry up-front about capacity and design decisions, where in reality you're exploring the space of the possible.  In essence, this is what [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) is saying with his famous quote:
+It's easy to get these two confused in software and worry up-front about capacity and design decisions, while in reality you're supposed to be exploring the space of the possible.  In essence, this is what [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) is saying with his famous quote:
 
 > "We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. " -[Donald Knuth, _Wikipedia_](https://en.wikipedia.org/wiki/Program_optimization#When_to_optimize)
 
 So it feels to me that the _transport network_ analogy for software development is a good one.  Are you exploring, or are you engineering?  This is a critical distinction for deciding how to work on a project.
 
-Personally, when in the _exploring_ mode, I will focus on proving ideas, lashing classes together.  I know that I'm very likely to delete them, or tear them to pieces at the next revelation.  For this kind of work, I am unlikely to write unit tests - they'll just slow me down.
+Personally, when in the _exploring_ mode, I will focus on proving ideas, lashing classes together.  I know that I'm very likely to delete them, or tear them to pieces at the next revelation.  For this kind of work, I am unlikely to write unit tests - they'll just slow me down.  My code will be full of bugs and technical debt but it doesn't matter if I reach the enlightenment at the end of the maze.
 
-Conversely, when in the _engineering_ mode, I am trying to create software that will survive the rigours of the users.  The ideas will have been tested, it's just a case of making the implementation good enough.  Here, I _will_ be building tests, considering Single-Points-Of-Failure and assessing bottlenecks.
+Conversely, when in the _engineering_ mode, I am trying to create software that will survive the rigours of use.  The ideas will have been tested, it's just a case of making the implementation good enough.  Here, I _will_ be building tests, considering Single-Points-Of-Failure and assessing bottlenecks.
 
-I am not the only person to make this observation:
+Turns out, I am not the only person to draw this analogy:
 
->  "Software projects exist on a continuum between the Lewis and Clark expedition, and laying down freeway. Knowing what kind of project you’re on can be the difference between success and failure." - [Coding styles: Are you Lewis and Clark or building an interstate?, _WanderingStan.com](http://wanderingstan.com/2019-12-01/coding-styles-are-you-lewis-and-clark-or-building-an-interstate)
+>  "Software projects exist on a continuum between the Lewis and Clark expedition, and laying down freeway. Knowing what kind of project you’re on can be the difference between success and failure." - [Coding styles: Are you Lewis and Clark or building an interstate?, _WanderingStan.com_](http://wanderingstan.com/2019-12-01/coding-styles-are-you-lewis-and-clark-or-building-an-interstate)
 
 ## Moving On
 
-I find the _transport network_ analogy to be a useful one.  But actually it ties in nicely with where this series goes next.  
+So I find the _transport network_ analogy to be a useful one.  But actually it ties in nicely with where this series goes next.  
 
 Maintaining a transport network is a balancing act.  In an ideal world, every destination would be connected with every other.  In reality, we adopt hub-and-spoke architectures to minimise the cost of maintaining all the connections.   In essence, turning our transport network into some kind of _heirarchy_.
 
-If we consider our software systems to be networks (of a sort), then this is a crucial tool we can apply to understanding them.  
+If we consider a software system to be a sort of network, then hierarchy turns out to be a crucial tool we can apply to understanding it.  
 
 Let's look at [Hierarchies](Hierarchies.md).
