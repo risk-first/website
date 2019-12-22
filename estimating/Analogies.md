@@ -32,6 +32,8 @@ For the rest of this article, I'm going to go out on a limb, and describe, throu
 
 ## Journeys + Cabinets = Mazes?
 
+![Journey Planning](/images/estimates/fill-journey.png)
+
 As we discussed in [Journeys](Journeys.md), there are plenty of problems in getting from A to B.  But to help you we have:
 
 - **Maps**: so we can plan our routes via those which already exist, and 
@@ -40,6 +42,8 @@ As we discussed in [Journeys](Journeys.md), there are plenty of problems in gett
 ![Journeys Meets Cabinets](/images/estimates/dimensions-2.png)
 
 What happens when you relax those constraints?  If there is _no map_ and the _closeness_ heuristic isn't available, you're in a maze.   You can't tell how "done" you are in a maze by judging your distance to the exit point - you may be heading to a [Dead End](Complexity-Risk.md#dead-end-risk) anyway!
+
+![Maze Estimating](/images/estimates/mazes.png)
 
 Software development is littered with dead-ends:
 
@@ -55,14 +59,17 @@ Maybe this is an unfair (and perhaps apocryphal) example but we've been stuck in
 
 ## Mazes + Fractals = Transport Networks?
 
+
 In a maze, you're trying to get from point A to point B.  However, when we throw _fractals_ back into the mix, we're wanting to get to a whole lot of different places, and there is different value in different places.
+
+![Mazes Meets Fractals](/images/estimates/dimensions-3.png)
 
 This is a lot like a country-wide transport network:  
 
  - Large cities are connected together with efficient transport options because people are going to make that journey a lot.  Therefore, these are _high value_ routes.
  - Small, far-away outposts are poorly connected to the rest of the network - maybe by dirt roads or precarious mountain passes.   
 
-![Mazes Meets Fractals](/images/estimates/dimensions-3.png)
+![Transport Networks](/images/estimates/transport.png)
 
 ### Metcalfe's Law
 
