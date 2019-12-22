@@ -37,7 +37,7 @@ For the rest of this article, I'm going to go out on a limb, and describe, throu
 As we discussed in [Journeys](Journeys.md), there are plenty of problems in getting from A to B.  But to help you we have:
 
 - **Maps**: so we can plan our routes via those which already exist, and 
-- **Closeness**:  the closer you are, the nearer you are to done (which is great for walking and driving, but tends to fall down somewhat when we have to wait for buses or make a detour to the airport).
+- **Closeness**:  the closer you are to your destination, the nearer you are to done (which is great for walking and driving, but tends to fall down somewhat when we have to wait for buses or make a detour to the airport).
 
 ![Journeys Meets Cabinets](/images/estimates/dimensions-2.png)
 
