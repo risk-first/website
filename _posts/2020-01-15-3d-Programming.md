@@ -2,25 +2,27 @@
 title: 3D Programming
 description: How Many Dimensions Does Your Programming Language Have?
 url: https://riskfirst.org/2020/01/15/3d-Programming
-image: /images/generated/titles/2020/01/15/3d-Programming.png
+image: /images/generated/titles/2020-01-15-3d-Programming.png
 author: rob
 date: 15-01-2020
 categories:
  - News
-featuredimage: images/generated/single/3d-Programming.png
+featuredimage: images/generated/single/3D-Programming.png
 ---
 
 # 3D Programming
 
-I was watching a Minecraft video the other day with my son, in which the designers had used "Redstone" to produce a simple sorting algorithm:  you filled up a chest with items (food, weapons, building materials, for example) and then (somehow) the items got sorted into further, output chests.
+I was watching a Minecraft video the other day with my son, in which the designers had built a simple sorting algorithm:  you filled up a chest with items (food, weapons, building materials, for example) and then (somehow) the items got sorted into further, output chests.
 
-It was very clever, and whilst I have a tenuous grasp on the concepts of using Redstone, I had little idea of how it worked.  
-
-![A Sorting System Built In Minecraft](/images/posts/minecraft.jpg)
+![A Sorting System Built In Minecraft](/images/posts/minecraft/minecraft.jpg)
 
 If you want, you can follow an [Instructable and build one yourself](https://www.instructables.com/id/Minecraft-Sorting-System/)
 
-Minecraft contains a lot of the features you'd recognise in a regular programming language:
+It was very clever, and whilst I have a tenuous grasp on the concepts of using "Redstone", I had little idea of how it worked.  Redstone is Minecraft's way of constructing something akin to circuit board logic.  Here's a picture of some Redstone:
+
+![Redstone](/images/posts/minecraft/redstone.png)
+
+Redstone "programming" contains a lot of the features you'd recognise in a regular programming:
 
  - A simple system of **types**, albeit constrained to the things you'd find in the Minecraft universe, such as sheep, gold, arrows etc.
  - **Message passing** in the form of Redstone signals, which pass along tracks that you construct much like lines on a circuit board.
@@ -32,10 +34,15 @@ But Minecraft is an _awful_ environment to program in because:
  - There's no **encapsulation**, and it's easy to have different bits of Redstone affecting one another.
  - There's no concept of **abstraction**:  you can't build big things by referring to smaller things, you have to build everything over again each time you need it.
 
-Nevertheless, people have coded some quite cool things in Minecraft, such as Space Invaders:
+Nevertheless, people have coded some quite cool things in Minecraft, such as Space Invaders.  Here's the View From the Front:
 
 ![Space Invaders From The Front](/images/posts/minecraft/si_front.png)
+
+And here's how it looks at the back:
+
 ![Space Invaders From The Back](/images/posts/minecraft/si_back.png)
+
+Further, it seems Redstone is (arguably) [Turing Complete](https://en.m.wikipedia.org/wiki/Turing_completeness), meaning you can write any algorithm in it, [like building a computer, for example](https://www.quora.com/Is-Minecraft-Turing-complete).
 
 ## 2D Programming
 
