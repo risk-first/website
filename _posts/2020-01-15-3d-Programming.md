@@ -46,6 +46,8 @@ Further, it seems Redstone is (arguably) [Turing Complete](https://en.m.wikipedi
 
 ![Redstone Computer](/images/posts/minecraft/computer.jpg)
 
+Or, you can try to implement [Minecraft in Minecraft]:
+
 ## 2D Programming
 
 How many dimensions does normal programming have?  Generally speaking, when we program, we use a fixed-width font, so that we are manipulating a 2D array of text characters.  So arguably, we're 2D programming.
