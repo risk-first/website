@@ -20,7 +20,7 @@ Imagine a scenario where you're helping a friend pack up their kitchen:
  
 How long should you estimate for the job?   (The answer is below)
 
-This was suggested in a [Hacker News]() comment discussing software estimation, and struck a chord with many readers.  It's clear that we are no longer in the [Fill-The-Bucket](Fill-The-Bucket.md) domain anymore; our original intuitions about how long things might take are not going to work here.
+This was suggested in a [Hacker News](https://news.ycombinator.com) comment discussing software estimation, and struck a chord with many readers.  It's clear that we are no longer in the [Fill-The-Bucket](Fill-The-Bucket.md) domain anymore; our original intuitions about how long things might take are not going to work here.
 
 As a developer, this 'feels' more real to me than [Fill-The-Bucket](Fill-The-Bucket.md).  _Any_ task I take on has an outside chance of telescoping into something _much worse_.  Here's a recent example:  
 
@@ -344,13 +344,13 @@ This is important:  the point at which you present your estimate is the point of
 
 ![Accepting an estimate](/images/generated/estimating/accept_estimate.png)
 
-The diagram above is an example of this.   A supplier is bidding for a contract with a client.  The client has functionality they want build (or [Feature Risk](/Feature-Risk.md) as we call it on Risk-First).  The supplier needs money to keep their business going ([Funding Risk](/Scarcity-Risk.md/funding-risk) on this diagram).  
+The diagram above is an example of this.   A supplier is bidding for a contract with a client.  The client has functionality they want build (or [Feature Risk](/Feature-Risk.md) as we call it on Risk-First).  The supplier needs money to keep their business going ([Funding Risk](/Scarcity-Risk.md#funding-risk) on this diagram).  
 
-If the estimate is accepted, the supplier's [Funding Risk](/Scarcity-Risk.md/funding-risk) is transferred to the client (the requester of the estimate).  Conversely, the trade is that the client's [Feature Risk](/Feature-Risk.md) is transferred to the supplier.
+If the estimate is accepted, the supplier's [Funding Risk](/Scarcity-Risk.md#funding-risk) is transferred to the client (the requester of the estimate).  Conversely, the trade is that the client's [Feature Risk](/Feature-Risk.md) is transferred to the supplier.
 
-If the supplier is short on opportunities or funds, there is a tendency to under-estimate.  That's because the [Feature Risk](/Feature-Risk.md) is a problem for the supplier _in the future_, whereas their [Funding Risk](/Scarcity-Risk.md/funding-risk) is a problem _right now_.  
+If the supplier is short on opportunities or funds, there is a tendency to under-estimate.  That's because the [Feature Risk](/Feature-Risk.md) is a problem for the supplier _in the future_, whereas their [Funding Risk](/Scarcity-Risk.md#funding-risk) is a problem _right now_.  
 
-You can often see suppliers under-bid on projects because of this future discounting, which we discussed before in [Evaluating-Risk](/Evaluating-Risk.md/discounting).  
+You can often see suppliers under-bid on projects because of this future discounting, which we discussed before in [Evaluating Risk](/Evaluating-Risk.md#discounting).  
 
 This analysis also suggests something else:   the process of giving and accepting estimates _transfers risk_.  This is a key point which we'll return to [later](Control.md). 
 
