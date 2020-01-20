@@ -6,7 +6,6 @@ image: /images/generated/titles/The-Menagerie.png
 featuredimage: images/generated/single/the-menagerie.png
 categories: 
  - Front
-order: 3
 ---
 
 # The Menagerie
