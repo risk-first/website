@@ -11,7 +11,7 @@ categories:
 
 # Staging and Classifying
 
-![Staged and Classified Beetle Collection, (Credit: Fir0002, Wikipedia)](images/Beetle_collection_short.jpg)
+![Staged and Classified Beetle Collection, (Credit: Fir0002, Wikipedia)](/images/Beetle_collection_short.jpg)
 
 Our tour is complete.  
 

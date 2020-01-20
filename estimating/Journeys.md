@@ -11,17 +11,17 @@ order: 3
 
 # Journeys
 
-A third way to conceive of software development is as a _journey_ on the [Risk Landscape](Glossary.md#risk-landscape). For example, in a startup we might start at a place where we have no product, no customers and some funding.  We go on a journey of discovery and end up in a place where hopefully we _have_ a product, customers and an income stream.
+A third way to conceive of software development is as a _journey_ on the [Risk Landscape](/Glossary.md#risk-landscape). For example, in a startup we might start at a place where we have no product, no customers and some funding.  We go on a journey of discovery and end up in a place where hopefully we _have_ a product, customers and an income stream.
 
-There are many ways we could do this journey, and many destinations.  The idea of "pivoting" your startup idea feels very true to the [Journey](Journey.md) analogy, because that literally means changing direction.  _The place where we were headed sucked, lets go over here_.  
+There are many ways we could do this journey, and many destinations.  The idea of "pivoting" your startup idea feels very true to the [Journey](Journeys.md) analogy, because that literally means changing direction.  _The place where we were headed sucked, lets go over here_.  
 
 What does this journey look like in Risk-First terms?
 
 ![Product Development](/images/generated/estimating/journey.png)
 
-As this diagram shows, at the start we have plenty of [Feature Fit Risk](Feature-Risk#feature-fit-risk):  if we have _no_ product, then it definitely doesn't fit our customer's needs!  Also we have some amount of [Funding Risk](Scarcity-Risk#funding-risk), as at some point the money will run out.
+As this diagram shows, at the start we have plenty of [Feature Fit Risk](/Feature-Risk.md#feature-fit-risk):  if we have _no_ product, then it definitely doesn't fit our customer's needs!  Also we have some amount of [Funding Risk](/Scarcity-Risk.md#funding-risk), as at some point the money will run out.
 
-After that, we use every trick in the book called "product development" to get to a new place on the [Risk Landscape](Glossary.md#risk-landscape).  This place (hopefully) will have a better risk profile than the one we came from.  
+After that, we use every trick in the book called "product development" to get to a new place on the [Risk Landscape](/Glossary.md#risk-landscape).  This place (hopefully) will have a better risk profile than the one we came from.  
 
 If we're successful then yes, we'll have the [Operational Risk](/Operational-Risk.md) of running a business, but hopefully we'll be in a better position than we started.
 
@@ -41,11 +41,11 @@ If you were doing this same journey on foot, it's a very direct route, but would
 
 ## Journey Risks
  
-In the software development past, _building it yourself_ was the only way to get anything done.  It was like London _before road and rail_.   Nowadays, you are bombarded with choices.  It's actually _worse than London_ because it's not even a two-dimensional geographic space and there are multitudes of different routes and acceptable destinations.  Journey planning on the software [Risk Landscape](Glossary.md#risk-landscape) is an optimisation problem _par excellence_. 
+In the software development past, _building it yourself_ was the only way to get anything done.  It was like London _before road and rail_.   Nowadays, you are bombarded with choices.  It's actually _worse than London_ because it's not even a two-dimensional geographic space and there are multitudes of different routes and acceptable destinations.  Journey planning on the software [Risk Landscape](/Glossary.md#risk-landscape) is an optimisation problem _par excellence_. 
 
 How can we think about estimating in such a domain?  There are clearly a number of factors to come into play:
 
-1.  For individual _parts_ of the journey, we could use a [Fill-The-Bucket]() approach, and look at things like _expected travel time_, _mean travel time_ or  _reliability_.
+1.  For individual _parts_ of the journey, we could use a [Fill-The-Bucket](Fill-The-Bucket.md) approach, and look at things like _expected travel time_, _mean travel time_ or  _reliability_.
 2.  Chances are, we're going to need to join up several different pieces of transport: maybe some on-foot, some by road, some by rail.  
 3.  It's a really good idea to build in buffers if you're relying on services that are infrequent (like flights or trains).
 4.  Cost is a factor.

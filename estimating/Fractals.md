@@ -108,7 +108,7 @@ Releasing the first version might fill in some of the blanks, and show you more 
 
 ![Third Version](/images/estimates/fractal4.png)
 
-As you go on [Meeting Reality](../Glossary.md#meeting-reality), the shape of the problem domain comes into focus, and you're able to _refine_ your solution to match it more exactly.
+As you go on [Meeting Reality](/Glossary.md#meet-reality), the shape of the problem domain comes into focus, and you're able to _refine_ your solution to match it more exactly.
 
 Is it possible to estimate problems in the Fractal Shape domain?  The best you might be able to do is to match two competing objectives:
 
@@ -137,7 +137,7 @@ Let's look at the conclusions we reached in [Boundary Risk](/Boundary-Risk.md):
 
 > - **Human need is [Fractal](https://en.wikipedia.org/wiki/Fractal)**:  this means that over time, software products have evolved to more closely map human needs.   Software that would have delighted us ten years ago lacks the sophistication we expect today.
 - **Software and hardware are both improving with time**: due to evolution and the ability to support greater and greater levels of complexity.
-- **Abstractions accrete too**:  as we saw in [Process Risk](Process-Risk.md), we _encapsulate_ earlier abstractions in order to build later ones.
+- **Abstractions accrete too**:  as we saw in [Process Risk](/Process-Risk.md), we _encapsulate_ earlier abstractions in order to build later ones.
 
 If we accept this problem of the fractal nature of human desire, then we have to contend with the fact that our software systems are always going to get continually more complex to serve it.
 
