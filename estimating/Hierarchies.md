@@ -98,7 +98,19 @@ When the Javascript parser goes to work, it builds an internal [Abstract Syntax 
 
 ![Abstract Syntax Tree, Rendered By [viswesh](https://viswesh.github.io/astVisualizer/)](/images/estimates/ast.png)
 
-Now, the syntax tree generated for Javascript is _different_ to the way the code looks.  In other languages, like [Lisp](), the syntax tree and the code structure are the same, and this is called [homoiconicity](https://en.wikipedia.org/wiki/Homoiconicity).
+## Goto Considered Harmful
+
+Where would we be without hierarchy in our software code?  It's not impossible to imagine:  
+
+ - We could write code in a stack-less, `goto`-oriented way, but such programs are extremely hard to reason about, as discussed in E.W. Dijkstra's seminal paper [Goto Considered Harmful](https://homepages.cwi.nl/~storm/teaching/reader/Dijkstra68.pdf).
+ - [Finite State Machines](https://en.wikipedia.org/wiki/Finite-state_machine) are a pretty useful tool in the toolbox, managing state transitions, but without hierarchy.
+ - [Turing Machines](https://en.wikipedia.org/wiki/Turing_machine) and the [BrainFuck](https://en.wikipedia.org/wiki/Brainfuck) language both manage without any kind of hierarchy, and are [Turing Complete](https://en.wikipedia.org/wiki/Turing_completeness), meaning that you can do _any kind of computing in them_.  Although, they're both very hard to reason about.
+ 
+```
+# Hello World, in BrainFuck
+
++[-->-[>>+>-----<<]<--<---]>-.>>>+.>>..+++[.>]<<<<.+++.------.<<-.>>>>+.
+```
 
 ## Human Systems
 
@@ -116,9 +128,7 @@ Wikipedia calls this a _compositional containment hierarchy_:
 
 ## An Essential Problem
 
-Unfortunately, containment hierarchies _break down_ when you look too closely.  
-
-You see that Javascript syntax tree?  Unfortunately, we are passing things from one part of the hierarchy to another in the form of the variables (`temp`, `num`, `a` and `b` here) or named functions.
+Containment hierarchies _break down_ when you look too closely.  
 
 You see those _veins_ in the [Circulatory System](https://en.wikipedia.org/wiki/Circulatory_system)?  They connect with all of the bodily systems, as do _nerves_ which are part of the [Nervous System](https://en.wikipedia.org/wiki/Nervous_system).  
 
@@ -126,25 +136,15 @@ Where does one system end and another begin?
 
 Although biological pressure seems to have led to a hierarchical organisation, it knows when to break it's own rule. 
 
+You see that Javascript syntax tree?  Unfortunately, we are passing things from one part of the hierarchy to another in the form of the variables (`temp`, `num`, `a` and `b` here) or named functions.
+
 That's because on their own, hierarchies are _too simple_ to express _complexity_.  
 
 (For a graph-centric look at how we can measure complexity, please review [Complexity Risk](Complexity-Risk).) 
 
-## Goto Considered Harmful
+## Classification Hierarchies
 
-On the other hand, where would we be without hierarchy in our software code?  It's not impossible to imagine:  
-
- - We could write code in a stack-less, `goto`-oriented way, but such programs are extremely hard to reason about, as discussed in E.W. Dijkstra's seminal paper [Goto Considered Harmful](https://homepages.cwi.nl/~storm/teaching/reader/Dijkstra68.pdf).
- - [Finite State Machines](https://en.wikipedia.org/wiki/Finite-state_machine) are a pretty useful tool in the toolbox, managing state transitions, but without hierarchy.
- - [Turing Machines](https://en.wikipedia.org/wiki/Turing_machine) and the [BrainFuck](https://en.wikipedia.org/wiki/Brainfuck) language both manage without any kind of hierarchy, and are [Turing Complete](https://en.wikipedia.org/wiki/Turing_completeness), meaning that you can do _any kind of computing in them_.  Although, they're both very hard to reason about.
- 
-```
-# Hello World, in BrainFuck
-
-+[-->-[>>+>-----<<]<--<---]>-.>>>+.>>..+++[.>]<<<<.+++.------.<<-.>>>>+.
-```
-
-## Classification Hierarchy  
+![Eris, From Wikipedia (NASA, ESA, and A. Schaller (for STScI))](https://en.wikipedia.org/wiki/Eris_(dwarf_planet)#/media/File:2006-16-a-full-1-.jpg)  
 
 The other type of hierarchy we come across both in software and everywhere else in the human experience is the _classification hierarchy_.   As an example of this, let's consider _planets_. The definition of a planet is quite bogus, and has changed over time:
 
@@ -170,18 +170,39 @@ In a strongly-typed language like Java, for example we might have this:
 ```java
 public class Numbers {
     public static void main(String[] args) {
-        System.out.print("Square root of 4 is: " + Math.sqrt(4));
+         System.out.print("This is a number: " + 4);
     }
 }
 ```
 
-The compositional hierarchy you might draw like this:
+The Eclipse IDE has an _AST View_ which you can install, which allows you to see the compositional hierarchy of this Java code _as the Eclipse compiler understands it_.  This is an excerpt for the above program:
 
-But there are three places where we _leave_ the compositional hierarchy to call static functions in other packages:  `Math.sqrt`,  `System.out.println` and `+` (string concatenation). In these cases, we rely on the _classification hierarchy_ of the Java Type System to determine whether the call is acceptable:
+```
+> type binding: org.riskfirst.website.preprocessor.Numbers
+	BODY_DECLARATIONS (1)
+		> method binding: Numbers.main(String[])
+			BODY
+				STATEMENTS (1)
+					EXPRESSION
+						MethodInvocation [121+42]
+							> method binding: PrintStream.print(String)
+							EXPRESSION
+								QualifiedName [121+10]
+									> variable binding: System.out
+							ARGUMENTS (1)
+								InfixExpression [138+24]
+									> (Expression) type binding: java.lang.String
+									LEFT_OPERAND
+										StringLiteral [138+20]
+											ESCAPED_VALUE: '"This is a number: "'
+									OPERATOR: '+'
+									RIGHT_OPERAND
+										NumberLiteral [161+1]
+											TOKEN: '4'
+```
 
- - `Math.sqrt`: _takes_ a `float`, _returns_ a `float`.
- - `System.out.println`: _takes_ a `String`.
- - `+`: _takes_ a `String` and something that can be converted to a `String`, _returns_ a `String`.
+
+But there is a place where we _leave_ the compositional hierarchy to call static functions in other packages:  `System.out.println`. When this happens, we rely on the _classification hierarchy_ of the Java Type System to determine whether the call is acceptable.  `System.out.println`: _takes_ a `String` as it's argument, and it's the job of the _type checker_ to make sure that this call-outside-the-hierarchy will work.
 
 ![Compositional hierarchies on a larger project:  methods, classes, packages, directories, projects](/images/estimates/containment.png)
 
@@ -190,10 +211,6 @@ In Eclipse (my Java IDE) I can therefore view _both_ these types of hierarchy.  
 ![Classification hierarchy of the Resource class from Spring](/images/estimates/classification.png)
 
 Whereas in this screen grab, I can view the hierarchy of a _class_ within Java (here the `Resource` class from [Spring](https://spring.io/projects/spring-hateoas)).
-
-Although this is an Object-Oriented example, the same classification system exists within functional languages, too.  For example, [Haskell](https://en.wikibooks.org/wiki/Haskell/Classes_and_types) types have 
-
-tbd.
 
 
 ## Summary
