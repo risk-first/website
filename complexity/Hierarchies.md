@@ -298,14 +298,18 @@ A second example to look at is the URL.  URL paths have hierarchy built into the
 
 ```bash
 https://github.com/robmoffat/kite9-visualization/actions # Actions on one of my github projects
-https://github.com/robmoffat/kite9-visualization	 # One of my github projects
-https://github.com/robmoffat # All of my projects
-https://github.com # Top level of github
+https://github.com/robmoffat/kite9-visualization         # One of my github projects
+https://github.com/robmoffat                             # All of my projects
+https://github.com                                       # Top level of github
 ```
 
 This _usually_ works, but isn't guaranteed to (there might be some intermediate levels within the URL scheme which yield `404 - Not Found` pages).   
 
-However, going the other way (from parent to child) isn't so easy: there is no corresponding standard to say "this URL has these children".  Instead, I am presented with a screen of HTML to look at, but there is no guarantee that the links it contains will take me to _child_ pages in a hierarchy.  A poorly-adopted example of what this might look like is [HATEOAS - Hypertext As The Engine Of Application State](https://en.wikipedia.org/wiki/HATEOAS).   When you do a REST request and get a HATEOAS response, you indeed get links to all child resources.  Requesting the URL `/accounts/12345/` would return a response like:
+However, going the other way (from parent to child) isn't so easy: there is no corresponding standard to say "this URL has these children".  Instead, I am presented with a screen of HTML to look at, but there is no guarantee that the links it contains will take me to _child_ pages in a hierarchy.  
+
+### HATEOAS
+
+A poorly-adopted example of what this might look like is [HATEOAS - Hypertext As The Engine Of Application State](https://en.wikipedia.org/wiki/HATEOAS).   When you do a REST request and get a HATEOAS response, you indeed get links to all child resources.  Requesting the URL `/accounts/12345/` would return a response like:
 
 ```
 {
@@ -327,7 +331,9 @@ However, going the other way (from parent to child) isn't so easy: there is no c
 
 (Example from [Wikipedia](https://en.wikipedia.org/wiki/HATEOAS#Example))
 
-## Why Bother
+But even HATEAOS isn't really representing a compositional hierarchy here:  those `links` could point off to _anywhere_.
+
+## Why Bother?
 
 So, what are we missing out on here? Why is this a big deal?  In a word, it's about _consistency_, as with every abstraction.  In many programming languages there is the concept of the `namespace`, which ensures we have a consistent **subsumption hierarchy**.  In fact, this is what allows us to use different packages together in a project, and not end up having the types clash with each other.  
 
