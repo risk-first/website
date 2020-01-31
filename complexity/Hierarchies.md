@@ -158,26 +158,26 @@ The Eclipse IDE has an _AST View_ which you can install, which allows you to see
 
 ```
 > type binding: org.riskfirst.website.preprocessor.Numbers
-	BODY_DECLARATIONS (1)
-		> method binding: Numbers.main(String[])
-			BODY
-				STATEMENTS (1)
-					EXPRESSION
-						MethodInvocation [121+42]
-							> method binding: PrintStream.print(String)
-							EXPRESSION
-								QualifiedName [121+10]
-									> variable binding: System.out
-							ARGUMENTS (1)
-								InfixExpression [138+24]
-									> (Expression) type binding: java.lang.String
-									LEFT_OPERAND
-										StringLiteral [138+20]
-											ESCAPED_VALUE: '"This is a number: "'
-									OPERATOR: '+'
-									RIGHT_OPERAND
-										NumberLiteral [161+1]
-											TOKEN: '4'
+  BODY_DECLARATIONS (1)
+    > method binding: Numbers.main(String[])
+      BODY
+        STATEMENTS (1)
+          EXPRESSION
+            MethodInvocation [121+42]
+              > method binding: PrintStream.print(String)
+              EXPRESSION
+                QualifiedName [121+10]
+                  > variable binding: System.out
+              ARGUMENTS (1)
+                InfixExpression [138+24]
+                  > (Expression) type binding: java.lang.String
+                  LEFT_OPERAND
+                    StringLiteral [138+20]
+                      ESCAPED_VALUE: '"This is a number: "'
+                  OPERATOR: '+'
+                  RIGHT_OPERAND
+                    NumberLiteral [161+1]
+                      TOKEN: '4'
 ```
 
 So arguably, using all this different syntax helps us:
@@ -212,11 +212,19 @@ Where would we be without compositional hierarchy in our software code?  It's no
 
 > "A subsumptive containment hierarchy is a classification of object classes from the general to the specific. " - [Hierarchies, _Wikipedia_](https://en.wikipedia.org/wiki/Hierarchy#Subsumptive_containment_hierarchy)
 
-The other type of hierarchy we come across both in software and everywhere else in the human experience is the _classification hierarchy or _subsumptive hierarchy_.   For example: _people_ are a type of _mammal_ which is a type of _animal_.  This kind of thinking is embedded deeply in type systems and object-oriented programming. 
+The other type of hierarchy we come across both in software and everywhere else in the human experience is the _classification hierarchy_ or _subsumptive hierarchy_.   For example: _people_ are a type of _mammal_ which is a type of _animal_.  This kind of thinking is embedded deeply in type systems and object-oriented programming. 
 
 [Type Systems](https://en.wikipedia.org/wiki/Type_system) are built on the concept of subsumptive hierarchies.  Unlike composition, with subsumptive hierarchies, you can classify things along many axes.  For example, a cup might fit into the classifications "drinking receptacle", "kitchenware" and "Star-Wars memorabilia" all at the same time.
 
 A lot of the power of _Interfaces_ in programming languages comes from being able to do this.  This leads to a really interesting point:  whenever we "reach out" of the compositional hierarchy of a software program to call another piece of code (via calling a function or a variable) we _fall back_ to using the classification hierarchy to determine whether that connection is a valid one.
+
+```java
+public class Numbers {
+    public static void main(String[] args) {
+         System.out.print("This is a number: " + 4);
+    }
+}
+```
 
 In the above snippet of Java code, there is a place where we _leave_ the compositional hierarchy to call a static function from somewhere else:  `System.out.println`. When this happens, we rely on the _classification hierarchy_ of the Java Type System to determine whether that call is acceptable.  `System.out.println`: _takes_ a `String` as it's argument, and it's the job of the _type checker_ to make sure that this call-outside-the-hierarchy will work.
 
@@ -226,7 +234,9 @@ This is a good example of _compositional_ and _subsumptive_ hierarchies working 
 
 Subsumptive hierarchies are difficult for a couple of reasons.  The first being how to decide what's in and what's out of the category.
 
-![Eris, From Wikipedia (NASA, ESA, and A. Schaller (for STScI))](https://en.wikipedia.org/wiki/Eris_(dwarf_planet)#/media/File:2006-16-a-full-1-.jpg)  
+![Eris, From Wikipedia (NASA, ESA, and A. Schaller (for STScI))](/images/complexity/eris.png)
+
+(Eris, from [Wikipedia](https://en.wikipedia.org/wiki/Eris_(dwarf_planet)#/media/File:2006-16-a-full-1-.jpg))  
 
 As an example of this, let's consider _planets_. The definition of a planet is quite bogus, and has changed over time:
 
@@ -268,7 +278,7 @@ People understand compositional hierarchies because they're baked into (and inve
 
 ![Compositional hierarchies on a larger project:  methods, classes, packages, directories, projects](/images/estimates/containment.png)
 
-In Eclipse (my Java IDE) I can therefore view _both_ these types of hierarchy.  In the above screen-grab, you can see some more compositional hierarchy _methods_, _classes_, _packages_, _directories_ and _projects_.  
+In Eclipse (my Java IDE) I can therefore view _both_ these types of hierarchy.  In the above screen-grab, you can see some more compositional hierarchy on the left: _methods_, _classes_, _packages_, _directories_ and _projects_.  
   
 ![Classification hierarchy of the Resource class from Spring](/images/estimates/classification.png)
 
@@ -286,11 +296,11 @@ Nevertheless, there are some after-the-fact efforts to provide consistent interf
 
 A second example to look at is the URL.  URL paths have hierarchy built into them.   I can navigate upwards from from a child to successive levels of parent like so:
 
-```
+```bash
 https://github.com/robmoffat/kite9-visualization/actions # Actions on one of my github projects
-https://github.com/robmoffat/kite9-visualization			# One of my github projects
-https://github.com/robmoffat							# All of my projects
-https://github.com									# Top level of github
+https://github.com/robmoffat/kite9-visualization	 # One of my github projects
+https://github.com/robmoffat # All of my projects
+https://github.com # Top level of github
 ```
 
 This _usually_ works, but isn't guaranteed to (there might be some intermediate levels within the URL scheme which yield `404 - Not Found` pages).   
@@ -315,7 +325,7 @@ However, going the other way (from parent to child) isn't so easy: there is no c
 }
 ```
 
-(Example from [Wikipedia](https://en.wikipedia.org/wiki/HATEOAS#Example)
+(Example from [Wikipedia](https://en.wikipedia.org/wiki/HATEOAS#Example))
 
 ## Why Bother
 
