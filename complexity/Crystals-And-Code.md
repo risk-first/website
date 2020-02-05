@@ -44,6 +44,7 @@ All of these represent consistency and order in an IS, as opposed to the wider o
 Did you know that jet-engine blades are actually single crystals of metal?  
 
 ![Turbine Blade, From Wikipedia](https://upload.wikimedia.org/wikipedia/commons/f/f9/Turbinenschaufel_RB199.jpg)
+
 _Turbine Blade, From Wikipedia_
 
 Engineers at Pratt and Whitney perfected this technique because without it, the blades are prone to snapping, along the lines of [Crystallographic defects](https://en.wikipedia.org/wiki/Crystallographic_defect). 
@@ -51,6 +52,7 @@ Engineers at Pratt and Whitney perfected this technique because without it, the 
 However, in less controlled environments, crystals grow with defects baked into them, caused by smaller crystals merging together, or changing conditions perturbing their creation.
 
 ![Red Garnet Embedded Within A Diamond](https://upload.wikimedia.org/wikipedia/commons/1/1b/Garnet_inclusion_in_diamond.jpg)
+
 _Garnet inclusion within a diamond - Wikipedia_
 
 Information systems usually don't grow in isolation either:  as they grow in complexity and usefulness, their responsibilities and coverage begin to overlap with each other and it eventually becomes important that data is shared between them.  The problem is that because the systems have started in isolation, they contain different local [conceptual hierarchies](Hierarchies.md). The users of those systems also think in terms of these conceptual hierarchies.  For example, one system might have the concept of "Client", whilst another has the concept of "Legal Entity".  Are they the same?  Probably not.
@@ -116,12 +118,12 @@ Defects in the crystalline structure are effectively another way to envisage [Te
 
 What are the take-aways from this article?
 
-- **Order Is Expensive**.  Maintaining order within an IS is a battle against the [Second Law Of Thermodynamics](https://en.wikipedia.org/wiki/Second_law_of_thermodynamics).  That is, without perpetual vigilance, everything will turn to crap.
+- **Order Is Expensive**.  Maintaining order within an IS is a battle against the [Second Law Of Thermodynamics](https://en.wikipedia.org/wiki/Second_law_of_thermodynamics).  i.e. Without perpetual vigilance everything turns to crap.
 
-- **We're stuck with flawed IT**  Because of the way we build organisations, there will always be flaws along IS boundaries.  The faster the rate of change, the worse this will be.  Trying to construct a "flawless" IT system is going to prevent you from handling change in the future.
+- **We're stuck with flawed IS.**  Because of the way we build organisations, there will always be flaws along IS boundaries.  The faster the rate of change, the worse this will be.  Trying to construct a "flawless" organisation is going to prevent you from handling change in the future.
 
 - **We need to manage the flaws.** There are a few ways of dealing with the flaws - refactoring, living with them and feeds.  But it's perhaps best not to strive for perfection because...
 
-- **Destruction is just around the corner.** Change is coming, and your IS will break when it does.  So ill-matched, flawed Information Systems are here to stay.  They're a natural consequence of the fact that we live in a world where consistency is expensive, and change is constant. 
+- **Destruction is just around the corner.** Change is coming, and your IS will break when it does.  So ill-matched, flawed IS are here to stay.  They're a natural consequence of the fact that we live in a world where consistency is expensive, and change is constant. 
 
 In the next article, we're going to look more closely at the [towers of abstraction](Towers-Of-Abstraction.md) we use to build our crystal castles.
