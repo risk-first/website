@@ -11,11 +11,11 @@ order: 2
 
 # Crystals And Code
 
-In this article, we're going to look at how **Information Systems** (IS) are like **Crystals**:  strong, rigid efficient, but prone to _defects_ and _flaws_.  
+In this article, we're going to look at how **Information Systems** (IS's) are like **Crystals**:  strong, rigid efficient, but prone to _defects_ and _flaws_.  
 
-IS are super-useful for _hardening and regularising processes_ so that they follow standards, run more quickly, cheaply and smoothly and take expensive, error-prone humans out-of-the-loop.  _The downside_ is that IS are fragile in the face of change.  Just like a crystal they display strength and rigidity over flexibility.
+IS's are super-useful for _hardening and regularising processes_ so that they follow standards, run more quickly, cheaply and smoothly and take expensive, error-prone humans out-of-the-loop.  _The downside_ is that IS's are fragile in the face of change.  Just like a crystal they display strength and rigidity over flexibility.
 
-Here, we're going to explore the shared (and somewhat idealized) life-cycles of crystals and Information Systems, and draw some conclusions along the way.
+Here, we're going to explore the shared (and somewhat idealized) life-cycles of crystals and IS's, and draw some conclusions along the way.
 
 ![Crystal Stages](/images/generated/complexity/cycle.png)
 
@@ -25,19 +25,19 @@ Before crystals can grow, the conditions have to be right.  In turbulent, changi
 
 ![Slush Machines](/images/complexity/slush.jpg)
 
-The same is true of IS - it's only once things settle down that patterns of behaviour appear and we can start to build abstractions to automate and control them.  The more consistent and predictable a process is, the easier it will be to create successful IS for it.
+The same is true of an IS - it's only once things settle down that patterns of behaviour appear and we can start to build abstractions to automate and control them.  The more consistent and predictable a process is, the easier it will be to create a successful IS for it.
 
-Most information systems start small, and grow from there (eBay started with a single niche market, Facebook started with just students at Harvard).   They have to demonstrate usefulness at _every scale_.   
+Most IS's start small, and grow from there (eBay started with a single niche market, Facebook started with just students at Harvard).   They have to demonstrate usefulness at _every scale_.   
 
-What properties of IS are like the _regularity_ we see in crystals?  How about things like:
+What properties of IS's are like the _regularity_ we see in crystals?  How about things like:
 
- - **Managed Data**, with clear, consistent, interacting data-types.  In distributed systems, there will be a policy on [CAP](/Coordination-Risk.md#CAP-Theorem)
+ - **Managed Data**, with clear, consistent, interacting data-types.  In distributed systems, there will be a policy on [CAP](/Coordination-Risk.md#CAP-Theorem).  There is likely to be a high degree of data **Normalization** and a **well-Factored** design.
  - **ACID** properties, such as Atomicity, Consistency, Isolation, Durability of transactions.
  - **SLAs**:  Response times, ownership, procedures, and other _non-functional requirements_ that are clearly defined.
- - **Support Teams and Knowledge Bases**: there are procedures in place for _understanding and using_ the IS.
+ - **Support Teams and Knowledge Bases**: there are procedures in place for _understanding and using_ IS's.
  - **Roadmaps and Plans**:  development and growth are _ordered_ and _directed_ as opposed to _chaotic_ and _random_.
  
-All of these represent consistency and order in an IS, as opposed to the wider organisation they exist in, where none of these things really exist.
+All of these represent consistency and order in IS's, as opposed to the wider organisation they exist in, where none of these things really exist.
 
 ## Stage 2:  Growth
 
@@ -55,19 +55,19 @@ However, in less controlled environments, crystals grow with defects baked into 
 
 _Garnet inclusion within a diamond - Wikipedia_
 
-Information systems usually don't grow in isolation either:  as they grow in complexity and usefulness, their responsibilities and coverage begin to overlap with each other and it eventually becomes important that data is shared between them.  The problem is that because the systems have started in isolation, they contain different local [conceptual hierarchies](Hierarchies.md). The users of those systems also think in terms of these conceptual hierarchies.  For example, one system might have the concept of "Client", whilst another has the concept of "Legal Entity".  Are they the same?  Probably not.
+IS's usually don't grow in isolation either:  as they grow in complexity and usefulness, their responsibilities and coverage begin to overlap with each other and it eventually becomes important that data is shared between them.  The problem is that because the systems have started in isolation, they contain different local [conceptual hierarchies](Hierarchies.md). The users of those systems also think in terms of these conceptual hierarchies.  For example, one system might have the concept of "Client", whilst another has the concept of "Legal Entity".  Are they the same?  Probably not.
 
 In the growth stage, users will be forced to "live with" the incompatibility of the two (or more) systems, and the knowledge that the data in each of them is different, there may be gaps, and potentially contradictions.
 
 ## Stage 3:  Competition
 
-Many of the crystals we extract from the earth are flawed with defects, because of the way they have grown.  In the same way, with information systems we have to make hard decisions about how to deal with these flaws:
+Many of the crystals we extract from the earth are flawed with defects, because of the way they have grown.  In the same way, with IS's we have to make hard decisions about how to deal with these flaws:
 
 ### Live With Them
 
-We could simply "live with" the differences between information systems.   This means accepting different, contradictory views of reality, and usually a lot of copy-pasting of data from one system to the next.
+We could simply "live with" the differences between IS's.   This means accepting different, contradictory views of reality, and usually a lot of copy-pasting of data from one system to the next.
 
-Sometimes, this means hiring people who's job it is simply to _reconcile the differences manually_ between large, incompatible information systems.
+Sometimes, this means hiring people who's job it is simply to _reconcile the differences manually_ between large, incompatible IS's.
 
 ### Refactor
 
@@ -90,7 +90,7 @@ The _larger_ the scope of the change you're making the _more risky_ refactoring 
 
 Option 3 applies where you can't refactor to a single system.  Instead, you can try and resolve the discontinuities by papering over them with automated feeds.  
 
-One of the Information Systems is designated the [Golden Source]().  Any change that occurs in the world is recorded in that system.  Those changes are _fed_ to the other systems on some regular basis, perhaps using a message bus, or some kind of regular file-transfer. 
+One of the IS's is designated the "Golden Source", or master.  Any change that occurs in the world is recorded in that system.  Those changes are _fed_ to the other systems on some regular basis, perhaps using a message bus, or some kind of regular file-transfer. 
 
 There are three basic problems with this approach:
 
@@ -102,7 +102,7 @@ There are three basic problems with this approach:
 
 ## Stage 4: Destruction
 
-Crystals can only exist when the conditions are right: everything has a life-span.  Diamonds _aren't_ forever, and Information Systems even less so, since the competitive landscape on which they exist is violently evolving all the time.  How does an IS deal with change?  There are two basic ways:
+Crystals can only exist when the conditions are right: everything has a life-span.  Diamonds _aren't_ forever, and IS's even less so, since the competitive landscape on which they exist is violently evolving all the time.  How does an IS deal with change?  There are two basic ways:
 
 ### Growing The Crystal
 
@@ -120,10 +120,10 @@ What are the take-aways from this article?
 
 - **Order Is Expensive**.  Maintaining order within an IS is a battle against the [Second Law Of Thermodynamics](https://en.wikipedia.org/wiki/Second_law_of_thermodynamics).  i.e. Without perpetual vigilance everything turns to crap.
 
-- **We're stuck with flawed IS.**  Because of the way we build organisations, there will always be flaws along IS boundaries.  The faster the rate of change, the worse this will be.  Trying to construct a "flawless" organisation is going to prevent you from handling change in the future.
+- **We're stuck with flawed IS's.**  Because of the way we build organisations, there will always be flaws along IS boundaries.  The faster the rate of change, the worse this will be.  Trying to construct a "flawless" organisation is going to prevent you from handling change in the future.
 
 - **We need to manage the flaws.** There are a few ways of dealing with the flaws - refactoring, living with them and feeds.  But it's perhaps best not to strive for perfection because...
 
-- **Destruction is just around the corner.** Change is coming, and your IS will break when it does.  So ill-matched, flawed IS are here to stay.  They're a natural consequence of the fact that we live in a world where consistency is expensive, and change is constant. 
+- **Destruction is just around the corner.** Change is coming, and your IS will break when it does.  So ill-matched, flawed IS's are here to stay.  They're a natural consequence of the fact that we live in a world where consistency is expensive, and change is constant. 
 
 In the next article, we're going to look more closely at the [towers of abstraction](Towers-Of-Abstraction.md) we use to build our crystal castles.
