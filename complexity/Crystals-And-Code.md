@@ -21,7 +21,7 @@ Here, we're going to explore the shared (and somewhat idealized) life-cycles of 
 
 ## Stage 1: Chaos
 
-Before information systems, or crystals can grow, the conditions have to be right.  In turbulent, changing environments, large crystals can't grow (just think of a slush machine, continually churning the drink to keep it from turning into a block of ice).  
+Before crystals can grow, the conditions have to be right.  In turbulent, changing environments, large crystals can't grow (just think of a slush machine, continually churning the drink to keep it from turning into a block of ice).  
 
 ![Slush Machines](/images/complexity/slush.jpg)
 
@@ -33,7 +33,7 @@ What properties of IS are like the _regularity_ we see in crystals?  How about t
 
  - **Managed Data**, with clear, consistent, interacting data-types.  In distributed systems, there will be a policy on [CAP](/Coordination-Risk.md#CAP-Theorem)
  - **ACID** properties, such as Atomicity, Consistency, Isolation, Durability of transactions.
- - **SLAs**:  Response times, _non-functional requirements_ that are clearly defined.
+ - **SLAs**:  Response times, ownership, procedures, and other _non-functional requirements_ that are clearly defined.
  - **Support Teams and Knowledge Bases**: there are procedures in place for _understanding and using_ the IS.
  - **Roadmaps and Plans**:  development and growth are _ordered_ and _directed_ as opposed to _chaotic_ and _random_.
  
@@ -43,14 +43,14 @@ All of these represent consistency and order in an IS, as opposed to the wider o
 
 Did you know that jet-engine blades are actually single crystals of metal?  
 
-![Turbinw Blade, From Wikipedia](https://upload.wikimedia.org/wikipedia/commons/f/f9/Turbinenschaufel_RB199.jpg)
+![Turbine Blade, From Wikipedia](https://upload.wikimedia.org/wikipedia/commons/f/f9/Turbinenschaufel_RB199.jpg)
+_Turbine Blade, From Wikipedia_
 
 Engineers at Pratt and Whitney perfected this technique because without it, the blades are prone to snapping, along the lines of [Crystallographic defects](https://en.wikipedia.org/wiki/Crystallographic_defect). 
 
 However, in less controlled environments, crystals grow with defects baked into them, caused by smaller crystals merging together, or changing conditions perturbing their creation.
 
 ![Red Garnet Embedded Within A Diamond](https://upload.wikimedia.org/wikipedia/commons/1/1b/Garnet_inclusion_in_diamond.jpg)
-
 _Garnet inclusion within a diamond - Wikipedia_
 
 Information systems usually don't grow in isolation either:  as they grow in complexity and usefulness, their responsibilities and coverage begin to overlap with each other and it eventually becomes important that data is shared between them.  The problem is that because the systems have started in isolation, they contain different local [conceptual hierarchies](Hierarchies.md). The users of those systems also think in terms of these conceptual hierarchies.  For example, one system might have the concept of "Client", whilst another has the concept of "Legal Entity".  Are they the same?  Probably not.
