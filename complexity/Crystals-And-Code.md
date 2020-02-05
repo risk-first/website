@@ -25,6 +25,8 @@ Before crystals can grow, the conditions have to be right.  In turbulent, changi
 
 ![Slush Machines](/images/complexity/slush.jpg)
 
+_Slush Machines_
+
 The same is true of an IS - it's only once things settle down that patterns of behaviour appear and we can start to build abstractions to automate and control them.  The more consistent and predictable a process is, the easier it will be to create a successful IS for it.
 
 Most IS's start small, and grow from there (eBay started with a single niche market, Facebook started with just students at Harvard).   They have to demonstrate usefulness at _every scale_.   
