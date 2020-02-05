@@ -7,34 +7,34 @@
   <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-129" name="Pattern Language">
 
 
-    <arrow id="id_1">
+    <action id="id_1">
       <label>chaos</label>
-    </arrow>
+    </action>
     
-    <arrow id="id_2">
+    <action id="id_2">
       <label>growth</label>
-    </arrow>
+    </action>
     
-    <arrow id="id_3">
+    <action id="id_3">
       <label>competition</label>
-    </arrow>
+    </action>
     
-    <arrow id="id_4">
+    <action id="id_4">
       <label>destruction</label>
-    </arrow>
+    </action>
 
 
-    <link id="id_11" shape="NORMAL" style="" drawDirection="RIGHT">
+    <link id="id_11" shape="NORMAL" style="kite9-direction: right; " >
       <from reference="id_1" />
       <to reference="id_2" class="arrow" />
     </link>
 
-    <link id="id_12" shape="NORMAL" style="" drawDirection="RIGHT">
+    <link id="id_12" shape="NORMAL" style="kite9-direction: right; ">
       <from reference="id_2" />
       <to reference="id_3" class="arrow" />
     </link>
 
-    <link id="id_13" shape="NORMAL" style="" drawDirection="RIGHT">
+    <link id="id_13" shape="NORMAL" style="kite9-direction: right; ">
       <from reference="id_3" />
       <to reference="id_4" />
     </link>
