@@ -65,19 +65,19 @@ In the growth stage, users will be forced to "live with" the incompatibility of 
 
 Many of the crystals we extract from the earth are flawed with defects, because of the way they have grown.  In the same way, with IS's we have to make hard decisions about how to deal with these flaws:
 
-### Live With Them
+### Option 1: Live With Them
 
 We could simply "live with" the differences between IS's.   This means accepting different, contradictory views of reality, and usually a lot of copy-pasting of data from one system to the next.
 
 Sometimes, this means hiring people who's job it is simply to _reconcile the differences manually_ between large, incompatible IS's.
 
-### Refactor
+### Option 2: Refactor
 
-In Software Development, within a single code-base if we come across competing abstractions we can decide to "Refactor".  An example of which might be identifying the competing abstractions used in different areas of a code-base, and merging the functionality of both, keeping just one "winner".
+In Software Development, within a single code-base if we come across competing abstractions we can decide to _refactor_.  An example of which might be identifying the competing abstractions used in different areas of a code-base, and merging the functionality of both, keeping just one "winner".
 
 If you have type-checking and a decent suite of automated tests then refactoring can be pretty cheap.  But how about refactoring _an entire organisation_?
 
-This is not so easy.  Making any _mutative_ change on a large organisation can be unweildy:
+This is not so easy.  Making any _mutative_ change on a large organisation can be unwieldy:
 
 |Code Base                         |Whole Organisation                         |
 |----------------------------------|-------------------------------------------|
@@ -88,7 +88,7 @@ This is not so easy.  Making any _mutative_ change on a large organisation can b
 
 The _larger_ the scope of the change you're making the _more risky_ refactoring becomes.  
 
-### Feeds & Golden Sources
+### Option 3: Feeds & Golden Sources
 
 Option 3 applies where you can't refactor to a single system.  Instead, you can try and resolve the discontinuities by papering over them with automated feeds.  
 
