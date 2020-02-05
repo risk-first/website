@@ -32,3 +32,6 @@ Chat Platforms provide:
 - GDPR
 - Encryption
 - Complaince (DLP), Information BArriers
+
+
+democratized enterprise service bus: ESB knows about data (although doesn't understand it, it's agnostic).  It might know about routing.  However, it knows little about process. Also, it's a very opaque piece of software, and is not democratic in the sense that anyone can use it for any purpose.

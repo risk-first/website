@@ -9,4 +9,8 @@ Much of the content of [Risk-First](https://risk-first.org) is a collection of [
 
 Here, we're going to take you through the various types of Risk you will face on every software project.  
 
-Below is a list of the different risks we'll see.  There _is_ an order to this:  the later risks are written assuming a familiarity with the earlier ones.  Hopefully, you'll stay to the end and see everything, but you're free to choose your own tour if you want to.
+After reading this section of [Risk-First](https://risk-first.org), hopefully you will:
+
+ - Appreciate the **different kinds of risk** you face on software projects, and how to identify them.
+ - Learn a **Pattern Language**: that is, a vocabulary of terms which you can use for discussing these risks with colleagues.
+ - Know the main **actions you can take** to handle each type of risk.

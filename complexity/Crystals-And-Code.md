@@ -15,31 +15,43 @@ In this article, we're going to look at how **Information Systems** (IS) are lik
 
 IS are super-useful for _hardening and regularising processes_ so that they follow standards, run more quickly, cheaply and smoothly and take expensive, error-prone humans out-of-the-loop.  _The downside_ is that IS are fragile in the face of change.  Just like a crystal they display strength and rigidity over flexibility.
 
-Here, we're going to explore the shared life-cycles of crystals and Information Systems, and draw some conclusions along the way.
+Here, we're going to explore the shared (and somewhat idealized) life-cycles of crystals and Information Systems, and draw some conclusions along the way.
 
--- cycle.
+![Crystal Stages](/images/generated/complexity/cycle.png)
 
 ## Stage 1: Chaos
 
 Before information systems, or crystals can grow, the conditions have to be right.  In turbulent, changing environments, large crystals can't grow (just think of a slush machine, continually churning the drink to keep it from turning into a block of ice).  
 
--- slush machine image
+![Slush Machines](/images/complexity/slush.jpg)
 
 The same is true of IS - it's only once things settle down that patterns of behaviour appear and we can start to build abstractions to automate and control them.  The more consistent and predictable a process is, the easier it will be to create successful IS for it.
 
-Most information systems start small, and grow from there (eBay started with a single niche market, Facebook started with just students at Harvard).   They have to demonstrate usefulness at _every scale_. 
+Most information systems start small, and grow from there (eBay started with a single niche market, Facebook started with just students at Harvard).   They have to demonstrate usefulness at _every scale_.   
+
+What properties of IS are like the _regularity_ we see in crystals?  How about things like:
+
+ - **Managed Data**, with clear, consistent, interacting data-types.  In distributed systems, there will be a policy on [CAP](/Coordination-Risk.md#CAP-Theorem)
+ - **ACID** properties, such as Atomicity, Consistency, Isolation, Durability of transactions.
+ - **SLAs**:  Response times, _non-functional requirements_ that are clearly defined.
+ - **Support Teams and Knowledge Bases**: there are procedures in place for _understanding and using_ the IS.
+ - **Roadmaps and Plans**:  development and growth are _ordered_ and _directed_ as opposed to _chaotic_ and _random_.
+ 
+All of these represent consistency and order in an IS, as opposed to the wider organisation they exist in, where none of these things really exist.
 
 ## Stage 2:  Growth
 
 Did you know that jet-engine blades are actually single crystals of metal?  
 
--- jet engine crystal blade
+![Turbinw Blade, From Wikipedia](https://upload.wikimedia.org/wikipedia/commons/f/f9/Turbinenschaufel_RB199.jpg)
 
-Engineers at Rolls-Royce perfected this technique because without it, the blades are prone to snapping, along the lines of [Crystallographic defects](https://en.wikipedia.org/wiki/Crystallographic_defect). 
+Engineers at Pratt and Whitney perfected this technique because without it, the blades are prone to snapping, along the lines of [Crystallographic defects](https://en.wikipedia.org/wiki/Crystallographic_defect). 
 
 However, in less controlled environments, crystals grow with defects baked into them, caused by smaller crystals merging together, or changing conditions perturbing their creation.
 
--- crystals with defects image
+![Red Garnet Embedded Within A Diamond](https://upload.wikimedia.org/wikipedia/commons/1/1b/Garnet_inclusion_in_diamond.jpg)
+
+_Garnet inclusion within a diamond - Wikipedia_
 
 Information systems usually don't grow in isolation either:  as they grow in complexity and usefulness, their responsibilities and coverage begin to overlap with each other and it eventually becomes important that data is shared between them.  The problem is that because the systems have started in isolation, they contain different local [conceptual hierarchies](Hierarchies.md). The users of those systems also think in terms of these conceptual hierarchies.  For example, one system might have the concept of "Client", whilst another has the concept of "Legal Entity".  Are they the same?  Probably not.
 
@@ -80,17 +92,11 @@ One of the Information Systems is designated the [Golden Source]().  Any change 
 
 There are three basic problems with this approach:
 
-1.  There is still no "Conceptual Integrity" between the two systems.  The concept of "Legal Entity" and "Client" might have to be bent in each system in order for the data to flow.  This might be resolved by having a "Legal Entity" record for each client, even though perhaps several clients belong to the same Legal Entity.
+1.  **There is still no "Conceptual Integrity" between the two systems.**  The concept of "Legal Entity" and "Client" might have to be bent in each system in order for the data to flow.  This might be resolved by having a "Legal Entity" record for each client, even though perhaps several clients belong to the same Legal Entity.
 
--- diagram here.
+2.  **The information required by the two systems might differ.**  For example, one system might contain the client's addresses.  The other might require information about legal agreements.  If one system ends up feeding the other, then somehow, fields needed by the "downstream" system will need to be added to the "upstream" one, or, you have some situation where _some_ fields are maintained in the downstream system, and some in the upstream system.   
 
-2.  The information required by the two systems might differ.  For example, one system might contain the client's addresses.  The other might require information about legal agreements.  If one system ends up feeding the other, then somehow, fields needed by the "downstream" system will need to be added to the "upstream" one, or, you have some situation where _some_ fields are maintained in the downstream system, and some in the upstream system.   
-
--- options for fields.
-
-3.  Reconciliation becomes a thing.  Since you are effectively creating copies of the same information in multiple systems, you now need to check that all of the different copies _are the same_.  This usually involves creating a _fourth_ system, that checks the results and arbitrates on the other two.  So, you've gone from two incompatible systems to four points of failure.   
-
--- diagram here.
+3.  **Reconciliation becomes a thing.**  Since you are effectively creating copies of the same information in multiple systems, you now need to check that all of the different copies _are the same_.  This usually involves creating a _fourth_ system, that checks the results and arbitrates on the other two.  So, you've gone from two incompatible systems to four points of failure.   
 
 ## Stage 4: Destruction
 
@@ -110,10 +116,12 @@ Defects in the crystalline structure are effectively another way to envisage [Te
 
 What are the take-aways from this article?
 
-- **We're stuck with flawed IT**  Because of the way we build organisations, there will always be flaws along IT-System boundaries.  The faster the rate of change, the worse this will be.  Trying to construct a "flawless" IT system is going to prevent you from handling change in the future.
+- **Order Is Expensive**.  Maintaining order within an IS is a battle against the [Second Law Of Thermodynamics](https://en.wikipedia.org/wiki/Second_law_of_thermodynamics).  That is, without perpetual vigilance, everything will turn to crap.
+
+- **We're stuck with flawed IT**  Because of the way we build organisations, there will always be flaws along IS boundaries.  The faster the rate of change, the worse this will be.  Trying to construct a "flawless" IT system is going to prevent you from handling change in the future.
 
 - **We need to manage the flaws.** There are a few ways of dealing with the flaws - refactoring, living with them and feeds.  But it's perhaps best not to strive for perfection because...
 
 - **Destruction is just around the corner.** Change is coming, and your IS will break when it does.  So ill-matched, flawed Information Systems are here to stay.  They're a natural consequence of the fact that we live in a world where consistency is expensive, and change is constant. 
 
-In the next article, I will look at how there is a revolution occurring in the world of feeds, which makes them more powerful and 
+In the next article, we're going to look more closely at the [towers of abstraction](Towers-Of-Abstraction.md) we use to build our crystal castles.
