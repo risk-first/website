@@ -1,17 +1,19 @@
 
-In [Hierarchies]() we looked at a really common **Concept** - the Hierarchy - and discovered that there was no single implementation for this concept within the world of computing.  Instead, it was implemented over and over again, in different languages, data-formats, UIs and concepts.
+This article is about how we model **Concepts** in software.
 
-In [Crystals-And-Code]() we looked at how a well-factored Information System could be built and maintained, and in this system, concepts would be _implemented once_.  But these systems were like crystals embedded in the wider landscape of the computing environment, and required much work to maintain.
+In [Hierarchies](Hierarchies.md) we looked at a really common concept - the Hierarchy - and discovered that there was no single implementation for this concept within the world of computing.  Instead, it was implemented over and over again, in different languages, data-formats and UIs.
 
-Here, we're going to look at [Towers Of Abstraction]():  when we are modelling our concepts and building our Information Systems, we stand on the shoulders of giants, using libraries, frameworks and languages to make our lives easier.
+In [Crystals-And-Code](Crystals-And-Code.md) we looked at how a well-factored Information System could be built and maintained, and in this system, concepts would be _implemented once_.  But these systems were like crystals embedded in the wider, messy environment of the computing environment, and required hard work to maintain.
 
-But as we discussed in [Boundary Risk](/Boundary-Risk.md), using these abstractions comes at a cost:  ecosystem lock-in.  Once we have chosen our [Towers of Abstraction](), change is expensive.    
+Here, we're going to look at [Towers Of Abstraction](Towers-Of-Abstraction.md).  When we are modelling our concepts and building our Information Systems, we stand on the shoulders of giants, using libraries, frameworks and languages to make our lives easier.
+
+But as we discussed in [Boundary Risk](/Boundary-Risk.md), using these abstractions comes at a cost:  ecosystem lock-in.  Once we have chosen our Towers of Abstraction, change is expensive.    
 
 ## Conceptual Portability
 
 The problem is that because we define our **Concepts** on top of the Towers of Abstraction, we can't simply take those concepts and use them elsewhere.  Let's look at some examples:
 
- - Both GitHub and BitBucket have the concept of "User".  They are not the same.  Some of the properties of the User _are_ shared (I have a name in both).  Some of the properties are equivalent (I have a _profile picture_ in Github, and an _avatar_ in Bitbucket but they are different sizes, obviously). There are many more properties that are completely different.  Luckily, the concept of "Repo" _is_ the same in both, so I can move my code back and forth between them easily.
+ - Both [GitHub]() and [BitBucket]() have the concept of "User".  They are not the same.  Some of the properties of the User _are_ shared (I have a name in both).  Some of the properties are equivalent (I have a _profile picture_ in Github, and an _avatar_ in Bitbucket but they are different sizes, obviously). There are many more properties that are completely different.  Luckily, the concept of "Repo" _is_ the same in both, so I can move my code back and forth between them easily.
  
  - In both Java and .net there are lively open-source communities, and unit testing is a popular thing.  Most people in the Java world use [JUnit]().  Most people in the C# world use [NUnit]().  NUnit started off by porting the Junit concepts to .net, but has now diverged in it's own way.  However the basic concept of unit testing is shared, but as with "User", is subtly different across these two Towers of Abstraction.  
  
@@ -19,7 +21,7 @@ The problem is that because we define our **Concepts** on top of the Towers of A
  
  - iOS and Android both share the concepts of "Apps" in a "Marketplace"... OK you get the idea now.
  
-So conceptual portability is _hosed_ because there is no agreement on what the concepts _mean_.   
+So conceptual portability is _hosed_ because there is no agreement on what the concepts _mean_:  the concepts are defined competitively by different Towers Of Abstraction. 
  
 ## Where Complexity Starts
 
@@ -33,21 +35,29 @@ Let's look at some examples of that:
 
 - To get data out of a relational database, I am going to need to use a database driver to turn database API calls into my code.  If I want the data to be represented in the native object-form of my programming language, I'll need to go the extra mile and use some [ORM]() software.  Again, this is just mapping RDBMS concepts to OO concepts.
 
-- If I have to write data in multiple formats, I'll probably end up with some kind of ...
+- Sometimes, I end up defining the same concept twice in the same codebase, _by mistake_.  For example, adding a `Message` class, and a `Response` class, and then realizing that _responses are often messages_.  I may then end up creating something like a `MessageToResponseConverter`.  
+
+- Even more trivially, I may just end up with a string containing a number  (e.g. `"£1,000,054.23"`) and want to convert this into an _actual_ number (`1000000.23`)  so that I can do some maths on it.  Ignoring the currency symbol, the numeric _amount_ in both the string and the number are _the same concept_.
+
+-- image of this problem here.
+
+## Translation Is Hard Work
+
+The "Towers of Abstraction" problem is, of course, the "Tower Of Babel".  Just as nations are divided by different languages, so we are doomed as soon as we base our concepts on existing, partisan abstractions.
+
+##### This is where "accidental complexity" comes from.
+
+-- image of this.
 
 
 
-In [Complexity Risk](/Complexity-Risk.md) we reviewed various types of 
-
-
-
-##### The very idea of "accidental complexity" appears to be caused by the fact that we don't consistently model any of the concepts we face.
-
-
-
-
+maintaining an abstraction is difficult work.
 
 in reconciling two systems, we built two more.
+
+
+
+data lakes
 
 
 Building new abstractions on top of old is fine. The problem occurs when you want to move laterally across the 

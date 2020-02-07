@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> @import url("risk.css");</svg:style>
+  </svg:defs>
+
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-129" name="Pattern Language">
+
+
+    <component id="id_1">
+      System A
+    </component>
+    
+    <arrow id="id_2">
+      <label>feed</label>
+    </arrow>
+    
+    <component id="id_3">
+		System B
+    </component>
+    
+    <arrow id="id_4">
+      <label>reconciliation</label>
+    </arrow>
+
+
+    <link id="id_11" shape="NORMAL" style="kite9-direction: right; " >
+      <from reference="id_1" />
+      <to reference="id_2"/>
+    </link>
+
+    <link id="id_12" shape="NORMAL" style="kite9-direction: right; ">
+      <from reference="id_2" />
+      <to reference="id_3" class="arrow" />
+    </link>
+
+    <link id="id_13" shape="NORMAL">
+      <from reference="id_1" />
+      <to reference="id_4" />
+    </link>
+
+    <link id="id_14" shape="NORMAL" style="">
+      <from reference="id_3" />
+      <to reference="id_4" class="arrow" />
+    </link>
+    
+    <link id="id_14" class="invisible" style="kite9-direction: down;">
+      <from reference="id_2" />
+      <to reference="id_4" />
+    </link>
+
+  </diagram>
+</svg:svg>
