@@ -71,7 +71,7 @@ We've got...
  - Within those arrays, we have **strings**, consisting of characters, delimited by `'` here, such as `'rgba(153, 102, 255, 1)'`.
  - But actually, that's another function call, which uses brackets to separate the **name** of the function `rgba` from it's parameters. 
  - And _those_ **parameters** are separated by `,`s...
- - And the `Chart` constructor is defined in a different `package`, which is a collection of `file`s in a repository (maybe [npm]() or [jsdelivr]().
+ - And the `Chart` constructor is defined in a different `package`, which is a collection of `file`s in a repository (maybe [npm](https://www.npmjs.com) or [jsdelivr](https://www.jsdelivr.com).
  - Some hierarchy is _indicated_ using indentation of the code.  Some isn't.
  
 What is the take-away from this? **We heavily use syntax to indicate different types of hierarchies within software.**  Just look at all the different ways it happens above:  brackets, single-quotes, curly brackets, angle-brackets and tags, square brackets, double-quotes, commas and semi-colons.  
@@ -154,7 +154,7 @@ public class Numbers {
 }
 ```
 
-The Eclipse IDE has an _AST View_ which you can install, which allows you to see the compositional hierarchy of this Java code _as the Eclipse compiler understands it._  However, this is an _excerpt_ for the above program. The full hierarchical view is a lot larger ([6107 lines, in fact](ast.txt). 
+The Eclipse IDE has an _AST View_ which you can install, which allows you to see the compositional hierarchy of this Java code _as the Eclipse compiler understands it._  However, this is an _excerpt_ for the above program. The full hierarchical view is a lot larger ([6107 lines, in fact](ast.txt)). 
 
 ```
 > type binding: org.riskfirst.website.preprocessor.Numbers
