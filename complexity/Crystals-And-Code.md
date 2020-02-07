@@ -100,9 +100,12 @@ There are three basic problems with this approach:
 
 2.  **The information required by the two systems might differ.**  For example, one system might contain the client's addresses.  The other might require information about legal agreements.  If one system ends up feeding the other, then somehow, fields needed by the "downstream" system will need to be added to the "upstream" one, or, you have some situation where _some_ fields are maintained in the downstream system, and some in the upstream system.   
 
-3.  **Reconciliation becomes a thing.**  Since you are effectively creating copies of the same information in multiple systems, you now need to check that all of the different copies _are the same_.  This usually involves creating a _fourth_ system, that checks the results and arbitrates on the other two.  So, you've gone from two incompatible systems to four points of failure: the two original systems, the feed, and the thing that checks the feed.  
+3.  **Reconciliation becomes a thing.**  Since you are effectively creating copies of the same information in multiple systems, you now need to check that all of the different copies _are the same_.  This usually involves creating a _fourth_ system, that checks the results and arbitrates on the other two.  
 
 ![Feed and Reconciliation](/images/generated/complexity/feed.png)
+
+So, you've gone from two incompatible systems to four points of failure: the two original systems, the feed, and the thing that checks the feed.  
+
 
 ## Stage 4: Destruction
 
