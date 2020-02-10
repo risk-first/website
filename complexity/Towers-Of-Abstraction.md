@@ -1,4 +1,7 @@
 
+# Towers Of Abstraction
+
+
 This article is about how we model **Concepts** in software.
 
 In [Hierarchies](Hierarchies.md) we looked at a really common concept - the Hierarchy - and discovered that there was no single implementation for this concept within the world of computing.  Instead, it was implemented over and over again, in different languages, data-formats and UIs.
@@ -44,6 +47,8 @@ Let's look at some examples of that:
 ## Translation Is Hard Work
 
 The "Towers of Abstraction" problem is, of course, the "Tower Of Babel".  Just as nations are divided by different languages, so we are doomed as soon as we base our concepts on existing, partisan abstractions.
+
+
 
 ##### This is where "accidental complexity" comes from.
 
