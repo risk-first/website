@@ -94,7 +94,7 @@ Option 3 applies where you can't refactor to a single system.  Instead, you can 
 
 One of the IS's is designated the "Golden Source", or master.  Any change that occurs in the world is recorded in that system.  Those changes are _fed_ to the other systems on some regular basis, perhaps using a message bus, or some kind of regular file-transfer. 
 
-There are three basic problems with this approach:
+There are four basic problems with this approach:
 
 1.  **There is still no "Conceptual Integrity" between the two systems.**  The concept of "Legal Entity" and "Client" might have to be bent in each system in order for the data to flow.  This might be resolved by having a "Legal Entity" record for each client, even though perhaps several clients belong to the same Legal Entity.
 
