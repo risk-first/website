@@ -25,7 +25,7 @@ Let's summarize four of the big themes (with examples) before moving on:
 
 - **[Camunda](https://camunda.com/download/) (_et al_)**: _Workflow Systems_ are about creating [Hierarchies of Process](Towers-Of-Abstraction#hierarchies-of-process), and ensuring that work proceeds logically from one stage to the next.  They don't so much care about the _data underlying the work_, but making sure the right people or systems _know that they have to do something_.  Usually, these integrate with email or other notification tools.
 
-![RPA Approaches](/images/complexity-rpa-1.png)
+![RPA Approaches](/images/complexity-rpa/1.png)
 
 All of these are different -somewhat overlapping- approaches to RPA.  As shown in the above diagram, they all have slightly different focuses. 
 
@@ -74,7 +74,7 @@ Chat platforms enable feeds because they can take _data payloads_, which can be 
 
 This is a pattern we've seen before:  the [Enterprise Service Bus (ESB)](https://en.wikipedia.org/wiki/Enterprise_service_bus).  These things have been around for 20 years or so (Mule and Camel being popular examples that we discussed earlier).  The ESB was a way of connecting together a number of disparate applications within an organisation, via a bus on which they emitted and received events, translating them along the way into their own language.
 
--- diagram here.
+![Enterprise Service Bus](/images/complexity/esb.png)
 
 However, ECP's _democratise the ESB significantly by allowing _people_ to co-mingle with the communicating IS's.  They allow a level of oversight not previously possible with the ESB, and they also bring all the other features we talked about before.   The [ChatOps](https://www.pagerduty.com/blog/what-is-chatops/) dream is that IS's are able to communicate not just to each other via the ECP, but also to the developers and support teams at the same time.
 
