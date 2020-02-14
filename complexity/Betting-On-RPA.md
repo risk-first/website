@@ -9,7 +9,7 @@ categories:
 order: 4
 ---
 
-## Betting On RPA
+# Betting On RPA
 
 RPA or [Robotic Process Automation](https://en.wikipedia.org/wiki/Robotic_process_automation) is _everywhere_ at the moment.  Let's summarize four of the big themes (with examples) before moving on:
 
