@@ -23,26 +23,3 @@ The main take aways from this series is:
 
 3.  **How we can get faster at development, despite the complexity.**  Some practical tools and advice for planning in the absence of reliable estimates.
 
-## Types Of Estimating Problems
-
-This series starts out by categorising several different _types_ of estimation problems, and how the structure of the problem itself affects the approach you must take to estimates.  They are:
-
- - [Fill The Bucket](estimating/Fill-The-Bucket.md)
- - [Kitchen Cabinets](estimating/Kitchen-Cabinet.md)
- - [Journeys](estimating/Journeys.md)
- - [Fractals](estimating/Fractals.md)
- - [Analogies](estimating/Analogies.md)
- 
-## Estimates And Agency
-
-Looking at how problems with estimating affect contracts, Agency Risk, and the balance of risk between clients and suppliers.
-
-(tbd)
-
-
-## Tools and Techniques
-
-tbd. 
- 
-
- 

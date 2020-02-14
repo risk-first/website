@@ -10,10 +10,7 @@ cat: Practices
 
 _This is in progress_
 
-> "Risk Management is project management for grown-ups" -- tbd
-
-
-
+> "Risk Management is project management for grown-ups" -- Tim Lister
 
 ## Outcomes
 
@@ -22,58 +19,14 @@ _This is in progress_
 - Understand the appropriate domain for Agile and Planned methodologies.
 - Move beyond "Agile"  and "Planned" approaches, to a right-tool-for-the-job approach.
 
+## Main Areas
 
-### 1.  On Project Management
+- Agile and Project Management (tbd)
 
+- [Understanding Complexity](Complexity.md)
 
+- [Understanding Estimation Problems](Estimating.md)
 
-### 2.  On Agile
+- [Placing Bets](Purpose-Development-Team.md)
 
-tbd
-
-
-- You can't build an agile bridge
-
-### 3.  Risk-First 
-
-- Understanding Complexity
-
-- Understanding Estimation Problems
-
-- Placing Bets
-
-- Wrap Up:  How to Run a project Risk-First.
-
-
-
-
-
-
-This part is a discussion of the different practices within Software Development, and how they mitigate and accentuate the different risks.
-
-
-
-<!-- 
-
-- [The Purpose Of The Development Team](Purpose-Development-Team.md)
- - Analysis
- - [Coding (Bets)](Coding-Bets.md)
- - Contract
- - Delivery
- - [Design](Design.md)
- - Documentation
- - [Estimation](Estimates.md)
- - [On-Site-Customer](On-Site-Customer.md)
- - [Prioritisation](Prioritisation.md)
- - [Requirements Capture](Requirements-Capture.md)
- - Real Options
- - Research Spike
- - Review
- - Standards
- - Support
- - Terms-Of-Reference
- - [Testing](Testing.md)
- - Tracking
- - Training
- 
- -->
+- Wrap Up:  How to Run a project Risk-First. (tbd)
