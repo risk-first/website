@@ -6,7 +6,7 @@ image: /images/generated/titles/Betting-On-RPA.png
 featuredimage: images/generated/single/Betting-On-RPA.png
 categories:
  - Complexity
-order: 4
+order: 5
 ---
 
 # Betting On RPA
