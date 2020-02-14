@@ -11,17 +11,23 @@ order: 4
 
 # Betting On RPA
 
-RPA or [Robotic Process Automation](https://en.wikipedia.org/wiki/Robotic_process_automation) is _everywhere_ at the moment.  Let's summarize four of the big themes (with examples) before moving on:
+RPA or [Robotic Process Automation](https://en.wikipedia.org/wiki/Robotic_process_automation) is _everywhere_ at the moment.  
+
+We need this because, as we discussed before, [The Crystal Is Always Cracked](Crystals-And-Code.md):  we can never have comprehensive, consistent and wide-scale Information Systems (IS's).   You can pick any two of these, but all three at the same time is impossible.  This is because _the larger the IS, the _more difficult it is to change_.
+
+Let's summarize four of the big themes (with examples) before moving on:
 
 - **[UIPath](https://www.uipath.com) _(et al)_**:  this is a product that allows you to automate the use of a Windows desktop or web-page.  You record a macro of yourself using the application, and then you can script it to run on events, or whatever.  If you've ever tried to build tests with [Selenium](), you're probably aware that this can be awkward, brittle and time-consuming.   Nevertheless, UIPath is creating _a lot_ of value:  people need to be able to do this stuff, and they are the poster-child for RPA at the moment.
 
-- **[Microsoft Power Automate](https://us.flow.microsoft.com/en-us/), [Mule](https://www.mulesoft.com) and [Apache Camel](http://camel.apache.org)**.  The idea of all of these things is to provide _connectors_.  A connector standardises the data-feed to a wide variety of disparate systems.   If you want to send a tweet on Twitter every time you receive an email, for example, these tools allow you to do this.
+- **[Apache Camel](http://camel.apache.org), [Microsoft Power Automate](https://us.flow.microsoft.com/en-us/) and [Mule](https://www.mulesoft.com)**.  The idea of all of these things is to provide _connectors_.  A connector standardises the data-feed to a wide variety of disparate systems.   If you want to send a tweet on Twitter every time you receive an email, for example, these tools allow you to do this.
 
 - **[Microsoft Teams](https://products.office.com/en-US/microsoft-teams/group-chat-software), [Symphony](https://symphony.com), [Slack](https://slack.com)**:  These are enterprise chat-platforms (think: "WhatsApp for banks"). They allow teams of people to set up their own rooms, manage membership and so on.  However, they also allow for "bots" to be written, which _act as users_ within those rooms.  You can get the bot to tell you if a build breaks, or ask the bot to raise a change request ticket, that kind of thing.
 
 - **[Camunda](https://camunda.com/download/) (_et al_)**: _Workflow Systems_ are about creating [Hierarchies of Process](Towers-Of-Abstraction#hierarchies-of-process), and ensuring that work proceeds logically from one stage to the next.  They don't so much care about the _data underlying the work_, but making sure the right people or systems _know that they have to do something_.  Usually, these integrate with email or other notification tools.
 
-All of these are different -somewhat overlapping- approaches to RPA.  We need this because, as we discussed before, [The Crystal Is Always Cracked](Crystals-And-Code.md):  we can never have comprehensive, consistent and wide-scale Information Systems (IS's).   You can pick any two of these, but all three at the same time is impossible.  This is because _the larger the IS, the _more difficult it is to change_.
+![RPA Approaches](/images/complexity-rpa-1.png)
+
+All of these are different -somewhat overlapping- approaches to RPA.  As shown in the above diagram, they all have slightly different focuses. 
 
 ## Evolution Of Thought
 
@@ -74,13 +80,19 @@ However, ECP's _democratise the ESB significantly by allowing _people_ to co-min
 
 > "ChatOps, a term widely credited to GitHub, is all about conversation-driven development.While in a chat room, team members type commands that the chatbot is configured to execute through custom scripts and plugins. These can range from code deployments, to security event responses, to team member notifications. " - [What Is ChatOps?, _PagerDuty_](https://www.pagerduty.com/blog/what-is-chatops/)
 
-## Lot's To Do
+## Lots To Do
 
-By establishing a common [Event-Driven Paradigm](https://en.wikipedia.org/wiki/Event-driven_architecture) for both IS's and staff, you can view ECP's as Message-Buses-On-Steroids.  
+ESB's established a common [Event-Driven Paradigm](https://en.wikipedia.org/wiki/Event-driven_architecture) for IS's.  ECP's provide a common platform for running an ESB which communicates with IS's and staff.  You can view ECP's as Message-Buses-On-Steroids.  
 
-The next step is to make this _easier_.  We still have the big problem that bots are _not easy to build_, for exactly the same reason that ESB's are not easy to build:  translating events from one IS to another is a _hard task_.  
+![/images/complexity/rcp-2.png](Next Steps)
+
+Connecting all the applications to the ECP is done by way of _bots_.  We still have the big problem that bots are _not easy to build_, for exactly the same reason that ESB's are not easy to build:  translating events from one IS to another is a _hard task_.  
+
+Nevertheless, there is a clear path here to getting all of our existing legacy ESB applications working together with other types of automation on a common, democratized platform.
+
+The [Tower Of Babel](Towers-Of-Abstraction.md) problem doesn't go away - there's work to be done to translate between all of these systems - but a lot of the grunt-work (described in the _stages_ section, above) is already done on an ECP.
 
 And, we haven't even touched on _conversational bots_ yet, and the deployment of [Natural Language Processing (NLP)]() within the organisation.  That's another chapter.
 
-In the meantime, let's focus on the [translation issue]().
+In the meantime, let's focus on the [translation issue](Introducing-Same.md).
 
