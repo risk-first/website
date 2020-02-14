@@ -1,4 +1,13 @@
-
+---
+title: Betting On RPA
+description: Looking at varieties of RPA as an escape from Information Sytsem incompatibility.
+url: https://riskfirst.org/complexity/Betting-On-RPA
+image: /images/generated/titles/Betting-On-RPA.png
+featuredimage: images/generated/single/Betting-On-RPA.png
+categories:
+ - Complexity
+order: 4
+---
 
 ## Betting On RPA
 

@@ -113,3 +113,9 @@ Second, the supplier and the client can _agree on a specification_.  By doing th
 
 
 
+Bill by the hour is broken- contractors come round and milk you for as long as possible
+Bill by the job is also broken, because estimates are often shit and things could be a lot worse. 
+What’s better?  Agreement of risks.  Both sides should accept similar levels of risk.  E.g I have to manage the risk to the other party that they’re not happy. Also I want the upside risk of repeat business.  What key risks am I absorbing?  What are they absorbing?  Who owns what risk, in reality?  Can we table this up before we start?  
+
+Is this a superset of a sprint goal?
+

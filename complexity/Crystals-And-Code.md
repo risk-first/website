@@ -39,7 +39,11 @@ What properties of IS's are like the _regularity_ we see in crystals?  How about
  - **Support Teams and Knowledge Bases**: there are procedures in place for _understanding and using_ IS's.
  - **Roadmaps and Plans**:  development and growth are _ordered_ and _directed_ as opposed to _chaotic_ and _random_.
  
-All of these represent consistency and order in IS's, as opposed to the wider organisation they exist in, where none of these things really exist.
+When we see quotes like:
+
+> "**etcd** is a strongly consistent, distributed key-value store that provides a reliable way to store data that needs to be accessed by a distributed system or cluster of machines. It gracefully handles leader elections during network partitions and can tolerate machine failure, even in the leader node.  " -[Etcd Home Page, _Etcd_](https://etcd.io)
+
+We're talking about an example of a well-thought-through, consistent, carefully-designed IS, because it has _opinions_ about all of those properties... as opposed to the wider organisation they exist in, where none of these things really exist.
 
 ## Stage 2:  Growth
 
