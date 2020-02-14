@@ -1,3 +1,5 @@
+# EStimates are perverted by agency risks.
+
 As a project manager, I might consider that being late is a bigger risk than being early. Hence the idea of padding estimates.  
 
 Being late (i.e. a too-early estimate) risks:

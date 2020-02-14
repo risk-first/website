@@ -1,6 +1,6 @@
 ---
 title: Estimating And Complexity
-description: Part 1 of the 'Estimating' Risk-First Series.
+description: The 'Estimating' Risk-First Series.
 url: https://riskfirst.org/Estimating
 --image: /images/generated/titles/Just-Risk.png
 --featuredimage: images/generated/single/Just-Risk.png
@@ -9,11 +9,21 @@ order: 1
 cat: Estimating
 ---
 
-# Estimating And Complexity
+# Estimating
 
 _Estimating_ is the _bête noire_ of software development: simple to conceptualise, but a mine-field for the unwary.  There are multiple _levels_ of problems involved with estimating: _technical, theoretical, political, social, economic_, which we will touch on in our tour.
 
-## Itinerary
+## Goals
+
+The main take aways from this series is:
+
+1.  **An appreciation as to why estimating is so hard in Software Development**.   We take a step-by-step approach to understanding the nature of the problem, and why it isn't as easy as estimating other, simpler things.
+
+2.  **How difficulty estimating impacts our work**.  Estimating is practically impossible, yet it is a cornerstone of Scrum.  Alternatively, the "No Estimates" movement tries to go the other way and dismiss estimating completely.  Here we try to reframe the problem as focusing on the wrong thing.
+
+3.  **How we can get faster at development, despite the complexity.**  Some practical tools and advice for planning in the absence of reliable estimates.
+
+## Types Of Estimating Problems
 
 This series starts out by categorising several different _types_ of estimation problems, and how the structure of the problem itself affects the approach you must take to estimates.  They are:
 
@@ -21,19 +31,18 @@ This series starts out by categorising several different _types_ of estimation p
  - [Kitchen Cabinets](estimating/Kitchen-Cabinet.md)
  - [Journeys](estimating/Journeys.md)
  - [Fractals](estimating/Fractals.md)
- - [Change](estimating/Change.md)  _not written_
- - [Games](estimating/Games.md)  _not written_
-
-Next, we take a look at how complexity affects the estimation process.
-
- - [Hierarchies](estimating/Hierarchies.md)
- - [Coordination](estimating/Coordination.md)  _not written_
- - [Pressure](estimating/Pressure.md) _not written_
+ - [Analogies](estimating/Analogies.md)
  
-Finally, we'll look at some of the political and economic aspects of making estimates.
- 
- - [Perversion](estimating/Perversion.md) _not written_
- - [Control](estimating/Control.md) _not written_
+## Estimates And Agency
+
+Looking at how problems with estimating affect contracts, Agency Risk, and the balance of risk between clients and suppliers.
+
+(tbd)
+
+
+## Tools and Techniques
+
+tbd. 
  
 
  
