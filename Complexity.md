@@ -20,3 +20,7 @@ This series of articles aims to give you:
 - **Some predictions about how we will deal with complexity in the future.**
 
 - **An Introduction to SAME.** A tool designed to help with some of the complexity issues described here.
+
+## Background Reading
+
+This trail assumes familiarity with the [Risk First Risks](Risk-Landscape.md), especially [Complexity Risk](Complexity-Risk.md).
