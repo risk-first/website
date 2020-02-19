@@ -130,7 +130,7 @@ The idea here is to make a bet that a market exists for a certain product, _and 
 
 We're used to the idea of entrepreneurs taking risks on new business ideas (like in the MVP example, above).  But it's not really so different when you are developing in a team, or on a personal project.  So if you start by taking the view that every piece of work you do is a bet then it really helps to put into perspective what is at stake and what is to gain.  
 
-The best gamblers (the ones who win over time) don't necessarily take bets they'll always win.  But they are always judging risk, stake and reward.  They try to place bets where the [Balance of Risk](Glossary.md£balance-of-risk) is in their favour.   As developers, we should adopt the same mind-set:
+The best gamblers (the ones who win over time) don't necessarily take bets they'll always win.  But they are always judging risk, stake and reward.  They try to place bets where the [Balance of Risk](Glossary.md#balance-of-risk) is in their favour.   As developers, we should adopt the same mind-set:
 
  - What are the likely stakes?
  - What is the [Payoff](Glossary.md#payoff)?

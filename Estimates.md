@@ -236,7 +236,7 @@ As we saw from the "10X Developer" Saw, [Learning Curve Risk](Communication-Risk
  - _Having a vocabulary_ (like the one Risk-First provides) allows us to _at least talk about these_.  e.g. "I believe there is a [Dead End Risk](Complexity-Risk.md#dead-end-risk) that we might not be able to get this software to run on Linux."
  - Build mock-ups:  
    - UI wireframes allow us to bottom out the [Communication Risk](Communication-Risk.md) of the interfaces we build.  
-   - [Spike Solutions](Coding.md#spike) allow us to de-risk algorithms and approaches before making them part of the main development.
+   - [Spike Solutions](/practices/Coding.md#spike) allow us to de-risk algorithms and approaches before making them part of the main development.
    - Test the market with these and [meet reality](Glossary.md#meet-reality) early.
  - Don't pick delivery dates far in the future.  Collectively work out the biggest risks with your clients, and then arrange the next possible date to demonstrate the mitigation.  
  - Do actions _early_ that are _simple_ but are nevertheless show-stoppers.  They are as much a source of [Hidden Risk](Glossary.md#hidden-risk) as more obviously tricky actions. 
