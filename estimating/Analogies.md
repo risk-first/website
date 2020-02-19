@@ -105,4 +105,6 @@ Maintaining a transport network is a balancing act.  In an ideal world, every de
 
 If we consider a software system to be a sort of network, then hierarchy turns out to be a crucial tool we can apply to understanding it.  
 
-Let's look at [Hierarchies](Hierarchies.md).
+You can look more at the importance of _hierarchies_ in the [Complexity Series](/Complexity.md).
+
+However, if you're here to continue learning about _estimating_, it's time to look at [Contracts](Contracts.md).

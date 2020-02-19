@@ -48,4 +48,4 @@ In the latter chapters of "The Menagerie" we try to assemble these risk patterns
 
 Risk-First isn't an exhaustive guide to every possible software development practice and methodology.  That would just be too long and tedious.  
 
-Neither is this a practitioner's guide to using any particular methodology:  if you've come here to learn the best way to do [Retrospectives](Review.md), then you're in the wrong place.  There are plenty of places you can find that information already.  Where possible, this site will link to or reference concepts on Wikipedia or the wider Internet for further reading on each subject.
+Neither is this a practitioner's guide to using any particular methodology:  if you've come here to learn the best way to do [Retrospectives](/practices/Review.md), then you're in the wrong place.  There are plenty of places you can find that information already.  Where possible, this site will link to or reference concepts on Wikipedia or the wider Internet for further reading on each subject.

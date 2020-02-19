@@ -13,7 +13,7 @@ featuredimage: images/generated/single/Quick-Summary.png
 
 ## 1.  There are Lots of Ways to Run Software Projects
 
-There are lots of ways to look at a project in-flight.  For example, metrics such as “number of open tickets”, “story points”, “code coverage" or "release cadence" give us a numerical feel for how things are going and what needs to happen next.  We also judge the health of projects by the practices used on them, such as [Continuous Integration](Testing.md#continuous-integration), [Unit Testing](Testing.md) or [Pair Programming](Coding.md).  
+There are lots of ways to look at a project in-flight.  For example, metrics such as “number of open tickets”, “story points”, “code coverage" or "release cadence" give us a numerical feel for how things are going and what needs to happen next.  We also judge the health of projects by the practices used on them, such as [Continuous Integration](/practices/Testing.md#continuous-integration), [Unit Testing](/practices/Testing.md) or [Pair Programming](/practices/Coding.md).  
 
 Software methodologies, then, are collections of tools and practices:  “Agile”, “Waterfall”, “Lean” or “Phased Delivery” all prescribe different approaches to running a project, and are opinionated about the way they think projects should be done and the tools that should be used.    
 
@@ -61,9 +61,9 @@ If we accept the assertion that _all_ the actions we take on a project are about
 
 For example:
 
- - If we do a [Code Review](Review.md), we are partly trying to minimise the risks of bugs slipping through into production, and also manage the [Key Person Risk](Scarcity-Risk.md#staff-risk) of knowledge not being widely-enough shared. 
- - If we write [Unit Tests](Testing.md), we’re addressing the risk of bugs going to production, but we’re also mitigating against the risk of _regression_, and future changes breaking our existing functionality.   
- - If we enter into a [contract with a supplier](Contract.md), we are mitigating the risk of the supplier vanishing and leaving us exposed.  With the contract in place, we have legal recourse against this risk.
+ - If we do a [Code Review](/practices/Review.md), we are partly trying to minimise the risks of bugs slipping through into production, and also manage the [Key Person Risk](Scarcity-Risk.md#staff-risk) of knowledge not being widely-enough shared. 
+ - If we write [Unit Tests](/practices/Testing.md), we’re addressing the risk of bugs going to production, but we’re also mitigating against the risk of _regression_, and future changes breaking our existing functionality.   
+ - If we enter into a [contract with a supplier](/estimating/Contracts.md), we are mitigating the risk of the supplier vanishing and leaving us exposed.  With the contract in place, we have legal recourse against this risk.
 
 From the above examples, it's clear that **different tools are appropriate for managing different types of risks.**
 
