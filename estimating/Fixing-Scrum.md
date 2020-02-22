@@ -126,7 +126,7 @@ But actually, we're now _three degrees_ away from the original problem of **tryi
 
 If the thesis that "90% of everything is waste" then Planning Poker is a waste of time, and we should devise a planning process to avoid this.  
 
-Let's consider a candidate...
+Let's consider a [candidate]...
 
 
 
