@@ -106,7 +106,9 @@ At another employer, I spent the summer building some testing tools for a good s
 
 What I am trying to say is:
 
-**It's much more important to focus on building the right thing than nickel-and-diming it over the estimate process.**  What's the point in getting an estimate right if you're building _totally the wrong thing_?
+##### It's much more important to focus on building the right thing than nickel-and-diming it over the estimate process.
+
+What's the point in getting an estimate right if you're building _totally the wrong thing_?  Am I alone in finding that 90% of everything I do goes in the bin, more-or-less straight away?
 
 ## The Key Question
 
@@ -120,7 +122,13 @@ Look above at the diagram what Scrum is trying to do to mitigate [Feature Risk](
 - We **time-box** to avoid wasting stake-holders' time (Schedule Risk).
 - We do **planning poker** to try and avoid the Coordination Risk problem of everyone needing to complete their work for the end of the Sprint.
 
-But actually, we're now _three degrees_ away from the original problem of **trying to build the right thing**.  The team is focused on figuring out _how much_ they can get done in a Sprint, not _whether they are building the right thing_.  Scrum purists might argue that this is the purpose of the **Sprint Goal**, which should be agreed 
+But actually, we're now _three degrees_ away from the original problem of **trying to build the right thing**.  The team is focused on figuring out _how much_ they can get done in a Sprint, not _whether they are building the right thing_.  Scrum purists might argue that this is the purpose of the **Sprint Goal**, which should be agreed in advance.. but actually this is usually just a bunch of items from the backlog, shoe-horned into a sprint-sized chunk of time.
+
+If the thesis that "90% of everything is waste" then Planning Poker is a waste of time, and we should devise a planning process to avoid this.  
+
+Let's consider a candidate...
+
+
 
 
 
