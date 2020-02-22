@@ -32,7 +32,7 @@ The above diagram demonstrates us mitigating [Feature Risk](/Feature-Risk.md) (t
 
 ![Schedule Risk for Stakeholders](/images/generated/estimating/scrum/scrum2.png)
 
-The above diagram shows this problem:  the _more feedback_ you are receiving, the more _interruption_ you are causing to the people giving feedback.   So you are trying to [Balance Risk](/Purpose-Development-Team.md):  while having a _daily_ review for a software project involving all stakeholders would be overkill, and waste a lot of everyone's time, having a _yearly_ review would be too-long a feedback loop.   Balancing risk here means doing the feedback loop _often enough_.
+And that risk is called [Schedule Risk](/Scarcity-Risk.md#schedule-risk).  It is shown in the diagram above: the _more feedback_ you are receiving, the more _interruption_ you are causing to the people giving feedback.   So you are trying to [Balance Risk](/Purpose-Development-Team.md):  while having a _daily_ review for a software project involving all stakeholders would be over-kill and waste a lot of everyone's time, having a _yearly_ review would be too-long a feedback loop.   Balancing risk here means doing the feedback loop _just often enough_.
 
 ## Time-Boxing To The Rescue
 
