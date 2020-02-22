@@ -71,7 +71,7 @@ Given that estimating is so problematic, does it make any sense to try to mitiga
 
 ![Schedule Risk for Stakeholders](/images/generated/estimating/scrum/scrum2.png)
 
-Let's go back a step:  isn't there another way to tackle the [Schedule Risk](/Schedule-Risk.md) problem _instead of time-boxing / huge sprint review meeting?   As we saw, this led to [Coordination Risk](/Coordination-Risk.md) issues.  Here are several other ways you could solve this problem:
+Let's go back a step:  isn't there another way to tackle the [Schedule Risk](/Schedule-Risk.md) problem _instead_ of time-boxing / huge sprint review meeting?   As we saw, this led to [Coordination Risk](/Coordination-Risk.md) issues.  Here are several other ways you could solve this problem:
 
 - **Instead of giving live demos of completed features, give video demos of software in progress.** In the film industry, this is called [Dailies or Rushes](https://en.wikipedia.org/wiki/Dailies), because they produce a reel of all the film shot that day.  Why?  Again - it's about risk management:  you're trying to find out if there are any technical issues with the film shot before shooting anything new.   Going back and shooting several weeks later can often be impossibly difficult.  (A great example being the reshoots of the film "Justice League" involving Henry Cavill, playing Superman.  Sadly, when these reshoots were done, he was filming "Mission Impossible: Fallout", and had grown a moustache, which the director of that film, Chris McQuarrie, couldn't let him shave.  So Superman's moustache was edited-out using CGI.)
 
