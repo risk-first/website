@@ -24,7 +24,7 @@ Work in Scrum is done within periods of time called _Sprints_.  Each sprint ends
 
 > "The goal of this activity is to inspect and adapt the product being built... Everyone in attendance gets clear visibility into what is occurring and has an opportunity to help guide the forthcoming development to ensure that the most business-appropriate solution is created." - Essential Scrum (p26), _Rubin_
 
-In Risk-First, we tend to call this validation step [Meeting Reality](/Glossary.md#meet-reality):  you are creating a [feedback loop](/Cadence.md) in order to minimise risk.  What is the risk you are minimising?  Essentially, we are trying to reduce the risk of the developers _building the wrong thing_, which could be due to misunderstanding of requirements, or perfectionism, or because the piece of work was ill-conceived in the first place.  In Risk First, the risk of building the wrong thing is called [Feature Risk](/Feature-Risk.md).
+In Risk-First, we tend to call this validation step [Meeting Reality](/Glossary.md#meet-reality):  you are creating a [feedback loop](/Cadence.md) in order to minimise risk.  What is the risk you are minimising?  Essentially, we are trying to reduce the risk of the developers _building the wrong thing_, which could be due to misunderstanding of requirements, or perfectionism, or because the piece of work was ill-conceived in the first place.  In Risk-First, the risk of building the wrong thing is called [Feature Risk](/Feature-Risk.md).
 
 ![Feature Risk mitigated by Meeting Reality](/images/generated/estimating/scrum/scrum1.png)
 
@@ -44,7 +44,7 @@ In order to balance the risks, Sprints are time-boxed:  rather than just request
 
 But the problem is that now the developers have to coordinate their work to be ready before the Sprint Review starts.   Even for a _development team of one_ it can be a challenge to coordinate like this:   often, development is completed a few days early, or incomplete by the day of the demo, so it might be easier to move the meeting.    
 
-As the number of developers in the team grows, the [Coordination Risk](/Coordination-Risk.md) increases:  rather than bulls-eye'ing a single feature for demo day, you're now expecting a whole team to do it.  
+As the number of developers in the team grows, the [Coordination Risk](/Coordination-Risk.md) increases:  rather than bulls-eye-ing a single feature for demo day, you're now expecting a whole team to do it.  
 
 Nevertheless, time-boxing is foundational principle of Scrum.  So in order to get time-boxing to work, this means we have to rely on planning and estimating.
 
