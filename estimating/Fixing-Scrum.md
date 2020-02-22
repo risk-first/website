@@ -20,11 +20,11 @@ Instead, we'll be looking at Sprint Planning from the archetypal description giv
 
 ## First Principles: The Sprint Review
 
-Work in Scrum is done within periods of time called _Sprints_, and end in a _Sprint Review_. 
+Work in Scrum is done within periods of time called _Sprints_.  Each sprint ends with a _Sprint Review_:
 
 > "The goal of this activity is to inspect and adapt the product being built... Everyone in attendance gets clear visibility into what is occurring and has an opportunity to help guide the forthcoming development to ensure that the most business-appropriate solution is created." - Essential Scrum (p26), _Rubin_
 
-In Risk-First, we tend to call this validation step [Meeting Reality](/Glossary.md#meet-reality):  You are creating a feedback loop in order to minimise risk.  What is the risk you are minimising?  Essentially, we are trying to reduce the risk of the developers _building the wrong thing_, which could be due to misunderstanding of requirements, or perfectionism, or because the piece of work was ill-conceived in the first place.
+In Risk-First, we tend to call this validation step [Meeting Reality](/Glossary.md#meet-reality):  you are creating a [feedback loop](/Cadence.md) in order to minimise risk.  What is the risk you are minimising?  Essentially, we are trying to reduce the risk of the developers _building the wrong thing_, which could be due to misunderstanding of requirements, or perfectionism, or because the piece of work was ill-conceived in the first place.  In Risk First, the risk of building the wrong thing is called [Feature Risk](/Feature-Risk.md).
 
 ![Feature Risk mitigated by Meeting Reality](/images/generated/estimating/scrum/scrum1.png)
 
@@ -32,7 +32,7 @@ The above diagram demonstrates us mitigating [Feature Risk](/Feature-Risk.md) (t
 
 ![Schedule Risk for Stakeholders](/images/generated/estimating/scrum/scrum2.png)
 
-The above diagram shows this problem:  the _more feedback_ you are receiving, the more _interruption_ you are causing to the people giving feedback.   So you are trying to [Balance Risk](/Purpose-Development-Team.md) (as usual).   Having a _daily_ review for a software project involving all stakeholders would be overkill, and waste a lot of everyone's time.   This time-wasting would create more problems than it solves!  (As Rubin points out, ill-attendance is one problem of Sprint Reviews: often stake-holders just don't have time for them).
+The above diagram shows this problem:  the _more feedback_ you are receiving, the more _interruption_ you are causing to the people giving feedback.   So you are trying to [Balance Risk](/Purpose-Development-Team.md):  while having a _daily_ review for a software project involving all stakeholders would be overkill, and waste a lot of everyone's time, having a _yearly_ review would be too-long a feedback loop.   Balancing risk here means doing the feedback loop _often enough_.
 
 ## Time-Boxing To The Rescue
 
@@ -40,7 +40,7 @@ The above diagram shows this problem:  the _more feedback_ you are receiving, th
 
 ![Time Boxing Causes Coordination Risk](/images/generated/estimating/scrum/scrum3.png)
 
-In order to balance this risk, Sprints are Time-boxed:  rather than just requesting feedback every five minutes or _whenever_, the idea is that the development team completes a Sprint within a fixed period of time (two weeks being common).  On the one hand, this means everyone can have a regular meeting in their diary, and agree up-front about how much of their schedule will be taken up in Sprint Reviews.  
+In order to balance this risk, Sprints are time-boxed:  rather than just requesting feedback every five minutes or _whenever_, the idea is that the development team completes a Sprint within a fixed period of time (two weeks being common).  On the one hand, this means everyone can have a regular meeting in their diary, and agree up-front about how much of their schedule will be taken up in Sprint Reviews.  
 
 But the problem is that now the development team has to coordinate it's work to be ready with completed software before the Sprint Review starts.   Even for a _development team of one_ it can be a challenge to coordinate like this:   often, development is completed a few days early, or incomplete by the day of the demo, so it might be easier to move the meeting.    
 
@@ -73,15 +73,15 @@ Given that estimating is so problematic, does it make any sense to try to mitiga
 
 Let's go back a step:  isn't there another way to tackle the [Schedule Risk](/Schedule-Risk.md) problem _instead of time-boxing / huge sprint review meeting?   As we saw, this led to [Coordination Risk](/Coordination-Risk.md) issues.  Here are several other ways you could solve this problem:
 
-- **Instead of giving live demos of completed features, give video demos of software in progress. ** In the film industry, this is called [Dailies or Rushes])(https://en.wikipedia.org/wiki/Dailies), because they produce a reel of all the film shot that day.  Why?  Again - it's about risk management:  you're trying to find out if there are any technical issues with the film shot before shooting anything new.   Going back and shooting several weeks later can often be impossibly difficult.  (A great example being the reshoots of the film "Justice League" involving Henry Cavill, playing Superman.  Sadly, when these reshoots were done, he was filming "Mission Impossible: Fallout", and had grown a moustache, which the director of that film, Chris Mcquarrie, couldn't let him shave.  So Superman's moustache was edited-out using CGI.)
+- **Instead of giving live demos of completed features, give video demos of software in progress.** In the film industry, this is called [Dailies or Rushes](https://en.wikipedia.org/wiki/Dailies), because they produce a reel of all the film shot that day.  Why?  Again - it's about risk management:  you're trying to find out if there are any technical issues with the film shot before shooting anything new.   Going back and shooting several weeks later can often be impossibly difficult.  (A great example being the reshoots of the film "Justice League" involving Henry Cavill, playing Superman.  Sadly, when these reshoots were done, he was filming "Mission Impossible: Fallout", and had grown a moustache, which the director of that film, Chris Mcquarrie, couldn't let him shave.  So Superman's moustache was edited-out using CGI.)
 
-- **Worried stakeholders won't give feedback?  ** Try and perform the reviews in a chat room for the team, involving all the stakeholders.  If you don't hear back from someone, call them out in the room.
+- **Worried stakeholders won't give feedback?** Try and perform the reviews in a chat room for the team, involving all the stakeholders.  If you don't hear back from someone, call them out in the room.
 
 - **Avoid Coordination Risk by not needing to coordinate.** If you can break down the project into smaller, still-meaningful units, then you should do that, because it means that you're reducing the size of the coordination problem, which grows quadratically with the number of actors involved.
 
 ## Planning Poker
 
-Scrum's "solution" to this conundrum is not to throw out Estimating, but to throw people at the problem:  if one developer can't come up with good estimates, surely a whole team of them can?   This is the purpose of [Planning Poker]:
+Scrum's "solution" to this conundrum is not to throw out Estimating, but to throw people at the problem:  if one developer can't come up with good estimates, surely a whole team of them can?   This is the purpose of "Planning Poker":
 
 > "In Planning Poker, we don't take averages [...].  The goal is not about compromise but instead for the development team to reach a consensus about the estimate [...] focused discussion helps obtain a shared understanding of the story." - [Essential Scrum (p133), _Rubin_]()
 
