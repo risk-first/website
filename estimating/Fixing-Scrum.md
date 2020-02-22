@@ -59,11 +59,11 @@ Now, although the above diagram _makes sense_ (estimating as a mitigation to coo
 
  - **Sometimes, it's about finesse.**  With [Fractal-Style](Fractals.md) problems you know that three days spent on icon design will yield better results than one day, but either way, there will be a set of icons to look at.  
 
- - **But sometimes, problems can telescope, as we discussed in [Kitchen Cabinets](Kitchen-Cabinets.md).**  You start thinking the problem of connecting A to B is simple, but then you realise it involves a call to C and to redesign the whole of D and introduce a new micro-service E... your estimate is toast.
+ - **But sometimes, problems can telescope, as we discussed in [Kitchen Cabinets](Kitchen-Cabinet.md).**  You start thinking the problem of connecting A to B is simple, but then you realise it involves a call to C and to redesign the whole of D and introduce a new micro-service E... your estimate is toast.
 
  - **Finally, sometimes, you'll have a problem that's like a [Journey](Journeys.md).**  Maybe you're trying to set up a new deployment pipeline?  The first step, finding servers turned out to be easy, but now you're trying to license the software to run on them, and it's taking longer.  The journey you have to take is _known_, but the steps along it are all different.   Will you hit the Sprint Review on time?  It's super-hard to say.
  
-Given that estimating is so problematic, does it make any sense to try to mitigate our [Coordination Risk]() using estimates?  
+Given that estimating is so problematic, does it make any sense to try to mitigate our [Coordination Risk](/Coordination-Risk.md) using estimates?  
 
 ##### As a tool for dealing with Coordination Risk, _Estimating_ is an unreliable foot-gun.
 
@@ -71,7 +71,7 @@ Given that estimating is so problematic, does it make any sense to try to mitiga
 
 ![Schedule Risk for Stakeholders](/images/generated/estimating/scrum/scrum2.png)
 
-Let's go back a step:  isn't there another way to tackle the [Schedule Risk](/Schedule-Risk.md) problem _instead_ of time-boxing / huge sprint review meeting?   As we saw, this led to [Coordination Risk](/Coordination-Risk.md) issues.  Here are several other ways you could solve this problem:
+Let's go back a step:  isn't there another way to tackle the [Schedule Risk](/Scarcity-Risk.md#schedule-risk) problem _instead_ of time-boxing / huge sprint review meeting?   As we saw, this led to [Coordination Risk](/Coordination-Risk.md) issues.  Here are several other ways you could solve this problem:
 
 - **Instead of giving live demos of completed features, give video demos of software in progress.** In the film industry, this is called [Dailies or Rushes](https://en.wikipedia.org/wiki/Dailies), because they produce a reel of all the film shot that day.  Why?  Again - it's about risk management:  you're trying to find out if there are any technical issues with the film shot before shooting anything new.   Going back and shooting several weeks later can often be impossibly difficult.  (A great example being the reshoots of the film "Justice League" involving Henry Cavill, playing Superman.  Sadly, when these reshoots were done, he was filming "Mission Impossible: Fallout", and had grown a moustache, which the director of that film, Chris McQuarrie, couldn't let him shave.  So Superman's moustache was edited-out using CGI.)
 
@@ -83,7 +83,7 @@ Let's go back a step:  isn't there another way to tackle the [Schedule Risk](/Sc
 
 Scrum's "solution" to this conundrum is not to throw out estimating, but to throw people at the problem:  if one developer can't come up with good estimates, surely a whole team of them can?   This is the purpose of "Planning Poker":
 
-> "In Planning Poker, we don't take averages [...].  The goal is not about compromise but instead for the development team to reach a consensus about the estimate [...] focused discussion helps obtain a shared understanding of the story." - [Essential Scrum (p133), _Rubin_]()
+> "In Planning Poker, we don't take averages [...].  The goal is not about compromise but instead for the development team to reach a consensus about the estimate [...] focused discussion helps obtain a shared understanding of the story." - Essential Scrum (p133), _Rubin_
 
 Perhaps this improves estimating, but for me there are two key problems with this:
 
