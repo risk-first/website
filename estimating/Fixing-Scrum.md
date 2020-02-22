@@ -73,7 +73,7 @@ Given that estimating is so problematic, does it make any sense to try to mitiga
 
 Let's go back a step:  isn't there another way to tackle the [Schedule Risk](/Schedule-Risk.md) problem _instead of time-boxing / huge sprint review meeting?   As we saw, this led to [Coordination Risk](/Coordination-Risk.md) issues.  Here are several other ways you could solve this problem:
 
-- **Instead of giving live demos of completed features, give video demos of software in progress.** In the film industry, this is called [Dailies or Rushes](https://en.wikipedia.org/wiki/Dailies), because they produce a reel of all the film shot that day.  Why?  Again - it's about risk management:  you're trying to find out if there are any technical issues with the film shot before shooting anything new.   Going back and shooting several weeks later can often be impossibly difficult.  (A great example being the reshoots of the film "Justice League" involving Henry Cavill, playing Superman.  Sadly, when these reshoots were done, he was filming "Mission Impossible: Fallout", and had grown a moustache, which the director of that film, Chris Mcquarrie, couldn't let him shave.  So Superman's moustache was edited-out using CGI.)
+- **Instead of giving live demos of completed features, give video demos of software in progress.** In the film industry, this is called [Dailies or Rushes](https://en.wikipedia.org/wiki/Dailies), because they produce a reel of all the film shot that day.  Why?  Again - it's about risk management:  you're trying to find out if there are any technical issues with the film shot before shooting anything new.   Going back and shooting several weeks later can often be impossibly difficult.  (A great example being the reshoots of the film "Justice League" involving Henry Cavill, playing Superman.  Sadly, when these reshoots were done, he was filming "Mission Impossible: Fallout", and had grown a moustache, which the director of that film, Chris McQuarrie, couldn't let him shave.  So Superman's moustache was edited-out using CGI.)
 
 - **Worried stakeholders won't give feedback?** Try and perform the reviews in a chat room for the team, involving all the stakeholders.  If you don't hear back from someone, call them out in the room.
 
@@ -81,13 +81,13 @@ Let's go back a step:  isn't there another way to tackle the [Schedule Risk](/Sc
 
 ## Planning Poker
 
-Scrum's "solution" to this conundrum is not to throw out Estimating, but to throw people at the problem:  if one developer can't come up with good estimates, surely a whole team of them can?   This is the purpose of "Planning Poker":
+Scrum's "solution" to this conundrum is not to throw out estimating, but to throw people at the problem:  if one developer can't come up with good estimates, surely a whole team of them can?   This is the purpose of "Planning Poker":
 
 > "In Planning Poker, we don't take averages [...].  The goal is not about compromise but instead for the development team to reach a consensus about the estimate [...] focused discussion helps obtain a shared understanding of the story." - [Essential Scrum (p133), _Rubin_]()
 
 Perhaps this improves estimating, but for me there are two key problems with this:
 
-- Every estimate is now consuming more developer time, and 
+- every estimate is now consuming more developer time, and 
 - instead of focusing on what _should_ be done, developers are focusing on _how long_ it will take to be done.
 
 ## 10X
@@ -98,11 +98,11 @@ I've written before about [how being a "10X Developer" largely comes down to hav
 
 But with the power of hindsight, it's clear that at different times, on different projects, _whole teams_ can be either 1X or 10X.  
 
-For example, when working in 2002 at an investment bank, I delivered software which is used by around a hundred people for about ten minutes each day, providing an important risk-management function.  It is still running, unchanged 18 years later (at the time of writing).   We wrote this as a team of three people for about six months.
+For example, when working in 2002 at an investment bank, I delivered software which is used by around a hundred people for about ten minutes each day, providing an important risk-management function.  It is still running, unchanged 18 years later (at the time of writing).   We wrote this as a team of three people for about six months.  With the benefit of hindsight, this was clearly high-value work. 
 
-Alternatively, at a different employer a few years' ago, I worked in a large team of about 15 developers, building a data service layer for an application, probably we worked on it for a year and a half.  At some point, things started to fall apart, and the team was disbanded, and I and a colleague re-wrote the whole thing in three months together.
+Alternatively, at a different employer a few years' ago, I worked in a large team of about 15 developers, building a data service layer for an application, probably we worked on it for a year and a half.  At some point, things started to fall apart, and the team was disbanded, and I and a colleague re-wrote the whole thing in three months together.  Again with hindsight, some of this was high-value, some very low:  the re-write was better value because it was _radically simpler_.
 
-At another employer, I spent the summer building some testing tools for a good six months, before we all decided it was a waste of time and packed it in.
+At another employer, I spent the summer building some testing tools for a good six months, before we all decided it was a waste of time and packed it in.  This was no-value.  Could we have figured that out sooner?
 
 What I am trying to say is:
 
@@ -124,11 +124,6 @@ Look above at the diagram what Scrum is trying to do to mitigate [Feature Risk](
 
 But actually, we're now _three degrees_ away from the original problem of **trying to build the right thing**.  The team is focused on figuring out _how much_ they can get done in a Sprint, not _whether they are building the right thing_.  Scrum purists might argue that this is the purpose of the **Sprint Goal**, which should be agreed in advance.. but actually this is usually just a bunch of items from the backlog, shoe-horned into a sprint-sized chunk of time.
 
-If the thesis that "90% of everything is waste" then Planning Poker is a waste of time, and we should devise a planning process to avoid this.  
+If the thesis that "90% of everything is waste" then Planning Poker is _also_ a waste, and we should devise a planning process to avoid this.  
 
-Let's consider a [candidate]...
-
-
-
-
-
+In the next article we'll look at how we might do that.
