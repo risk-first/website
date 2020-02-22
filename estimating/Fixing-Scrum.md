@@ -114,7 +114,7 @@ What's the point in getting an estimate right if you're building _totally the wr
 
 How can we, as software developers, minimise the chance of building the wrong thing?   
 
-![Schedule Risk for Stakeholders](/images/generated/estimating/scrum/scrum2.png)
+![Scrum](/images/generated/estimating/scrum/scrum4.png)
 
 Look above at the diagram what Scrum is trying to do to mitigate [Feature Risk](/Feature-Risk.md):
 
