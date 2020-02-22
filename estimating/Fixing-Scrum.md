@@ -40,9 +40,9 @@ The above diagram shows this problem:  the _more feedback_ you are receiving, th
 
 ![Time Boxing Causes Coordination Risk](/images/generated/estimating/scrum/scrum3.png)
 
-In order to balance this risk, Sprints are time-boxed:  rather than just requesting feedback every five minutes or _whenever_, the idea is that the development team completes a Sprint within a fixed period of time (two weeks being common).  On the one hand, this means everyone can have a regular meeting in their diary, and agree up-front about how much of their schedule will be taken up in Sprint Reviews.  
+In order to balance the risks, Sprints are time-boxed:  rather than just requesting feedback every five minutes or _whenever_, the idea is that the development team completes a Sprint within a fixed period of time (two weeks being common).  On the one hand, this means everyone can have a regular meeting in their diary, and agree up-front about how much of their schedule will be taken up in Sprint Reviews.  
 
-But the problem is that now the development team has to coordinate it's work to be ready with completed software before the Sprint Review starts.   Even for a _development team of one_ it can be a challenge to coordinate like this:   often, development is completed a few days early, or incomplete by the day of the demo, so it might be easier to move the meeting.    
+But the problem is that now the developers have to coordinate their work to be ready before the Sprint Review starts.   Even for a _development team of one_ it can be a challenge to coordinate like this:   often, development is completed a few days early, or incomplete by the day of the demo, so it might be easier to move the meeting.    
 
 As the number of developers in the team grows, the [Coordination Risk](/Coordination-Risk.md) increases:  rather than bulls-eye'ing a single feature for demo day, you're now expecting a whole team to do it.  
 
