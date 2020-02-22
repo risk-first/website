@@ -96,9 +96,9 @@ I've written before about [how being a "10X Developer" largely comes down to hav
 
 But with the power of hindsight, it's clear that at different times, on different projects, _whole teams_ can be either 1X or 10X.  
 
- - For example, when working in 2002 at an investment bank, I delivered software which is used by around a hundred people for about ten minutes each day, providing an important risk-management function.  It is still running, unchanged 18 years later (at the time of writing).   We wrote this as a team of three people for about six months.  With the benefit of hindsight, this was clearly high-value work. 
+ - For example, when working in 2002 at an investment bank, my team delivered software which is used by around a hundred people for about ten minutes each day, providing an important risk-management function.  It is still running, unchanged 18 years later (at the time of writing).   We wrote this as a team of three people for about six months.  With the benefit of hindsight, this was clearly high-value work. 
 
- - Alternatively, at a different employer a few years' ago, I worked in a large team of about 15 developers, building a data service layer for an application, probably we worked on it for a year and a half.  At some point, things started to fall apart, and the team was disbanded, and I and a colleague re-wrote the whole thing in three months together.  Again with hindsight, some of this was high-value, some very low:  the re-write was better value because it was _radically simpler_.
+ - Alternatively, at a different employer a few years' ago, I worked in a large team of about 15 developers, building a data service layer for an application, probably we worked on it for a year and a half.  At some point, things started to fall apart, and the team was disbanded. A colleague and I re-wrote the whole thing in three months together.  Again with hindsight, some of this was high-value, some very low:  the re-write was better value because it was _radically simpler_.  Could we have done it that way in the first place?
 
  - At another employer, I spent the summer building some testing tools for a good six months, before we all decided it was a waste of time and packed it in.  This was no-value.  Could we have figured that out sooner?
 
