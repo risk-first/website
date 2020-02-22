@@ -1,12 +1,17 @@
+---
+title: Contracts
+description: Part of the 'Estimating' Risk-First Series, looking at how risk is apportioned when contracts are agreed.
+url: https://riskfirst.org/estimating/Contracts
+image: /images/generated/titles/Contracts.png
+featuredimage: images/generated/single/Contracts.png
+categories:
+ - Estimating
+order: 6
+---
 
+# Contracts
 
-Let's consider the 
-
-
-Estimating is a key part of building a #
-
-
-
+_This page is under construction_
 
 There are basically two "extreme" positions on building a contract, Fixed-Price, and By-The-Hour.  Let's look at those more closely, and see 
 
@@ -118,4 +123,6 @@ Bill by the job is also broken, because estimates are often shit and things coul
 What’s better?  Agreement of risks.  Both sides should accept similar levels of risk.  E.g I have to manage the risk to the other party that they’re not happy. Also I want the upside risk of repeat business.  What key risks am I absorbing?  What are they absorbing?  Who owns what risk, in reality?  Can we table this up before we start?  
 
 Is this a superset of a sprint goal?
+
+
 
