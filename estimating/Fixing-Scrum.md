@@ -65,7 +65,7 @@ Now, although the above diagram _makes sense_ (estimating as a mitigation to coo
  
 Given that estimating is so problematic, does it make any sense to try to mitigate our [Coordination Risk]() using estimates?  
 
-#### As a tool for dealing with Coordination Risk, _Estimating_ is an unreliable foot-gun.
+##### As a tool for dealing with Coordination Risk, _Estimating_ is an unreliable foot-gun.
 
 ## Other Ways To Address Schedule Risk
 
