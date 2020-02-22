@@ -53,7 +53,7 @@ Nevertheless, time-boxing is foundational principle of Scrum.  So in order to ge
 
 ![Planning and Estimating to reduce Coordination Risk](/images/generated/estimating/scrum/scrum4.png)
 
-Now, although the above diagram _makes sense_ (estimating as a mitigation to coordination issues) by this point in the series we should be wary of our ability to estimate development tasks _at all_:
+Now, although the above diagram _makes sense_ (estimating as a mitigation to coordination issues) by this point in this series of articles we should be wary of our ability to estimate development tasks _at all_:
 
  - **Sometimes, tasks have a [Fill-The-Bucket](Fill-The-Bucket.md) nature.**  If you have a test plan to run through on six different platforms, and last week doing a single platform took two hours, then your estimate of two days for the lot is probably about right.  
 
