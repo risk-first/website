@@ -100,7 +100,7 @@ But with the power of hindsight, it's clear that at different times, on differen
 
  - Alternatively, at a different employer a few years' ago, I worked in a large team of about 15 developers, building a data service layer for an application, probably we worked on it for a year and a half.  At some point, things started to fall apart, and the team was disbanded. A colleague and I re-wrote the whole thing in three months together.  Again with hindsight, some of this was high-value, some very low:  the re-write was better value because it was _radically simpler_.  Could we have done it that way in the first place?
 
- - At another employer, I spent the summer building some testing tools for a good six months, before we all decided it was a waste of time and packed it in.  This was no-value.  Could we have figured that out sooner?
+ - At another employer, I spent the summer building some testing tools for a good six months before we all decided it was a waste of time and packed it in.  This was no-value.  Could we have figured that out sooner?
 
 What I am trying to say is:
 
