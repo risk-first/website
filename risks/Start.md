@@ -5,11 +5,11 @@ url: https://riskfirst.org/risks/Start
 cat: Risks
 ---
 
-Much of the content of [Risk-First](https://risk-first.org) is a collection of [Risks as Patterns](../overview/A-Pattern-Language.md).  
+Much of the content of [Risk-First](https://riskfirst.org) is a collection of [Risks as Patterns](../overview/A-Pattern-Language.md).  
 
 Here, we're going to take you through the various types of Risk you will face on every software project.  
 
-After reading this section of [Risk-First](https://risk-first.org), hopefully you will:
+After reading this section of [Risk-First](https://riskfirst.org), hopefully you will:
 
  - Appreciate the **different kinds of risk** you face on software projects, and how to identify them.
  - Learn a **Pattern Language**: that is, a vocabulary of terms which you can use for discussing these risks with colleagues.

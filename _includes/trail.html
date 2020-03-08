@@ -4,9 +4,11 @@
 	{% for category in sortedCategories %}
 	{% if category != 'Post' %}
 	{% if category != 'News' %}
-		
+	
+    {% assign shortcat = category | split: ' ' %}	
+    
     <p>
-    	<a href="{{site.baseurl}}/{{ category | replace: " ","-" }}" >
+    	<a href="{{site.baseurl}}/{{ shortcat[0] | downcase }}/Start" >
 	        {{ category }}
     	</a>
     </p>
