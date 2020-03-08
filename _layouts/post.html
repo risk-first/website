@@ -65,14 +65,16 @@ post_class: post-template
 
             </div>
             <!-- Post Date -->
+            {% if post.date %}
             <p>
-            <small>
+                <small>
                 <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
                 {% if page.last_modified_at %}
                 (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
                 {% endif %}
                 </small>
             </p>
+            {% endif %}
 
             <!-- Post Tags -->
             <div class="after-post-tags">
