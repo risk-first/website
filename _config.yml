@@ -9,21 +9,24 @@ page_lang: en-GB
 permalink: /:categories/:year/:month/:day/:title
 
 category_list: 
- - Front
- - Introduction
- - Risks
- - Thinking Risk-First
- - Practices
- - Methods
- - News
- - Estimating
- - Complexity
+  - Front
+  - Introduction
+  - Risks
+  - Thinking Risk-First
+  - Practices
+  - Methods
+  - News
+  - Estimating
+  - Complexity
  
 collections:
- - estimating
- - complexity
- - practices
- - collec
+  bob:
+    output: true
+    relative_directory: complexity
+  practices:
+    output: true
+  collec:
+    output: true
 
 # Authors
 authors:
