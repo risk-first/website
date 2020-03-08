@@ -1,7 +1,7 @@
 ---
 title: Towers Of Abstraction
 description: How we end up with incompatible software, and how to fix it.
-url: https://riskfirst.org/collec/Towers-Of-Abstraction
+url: https://riskfirst.org/complexity/Towers-Of-Abstraction
 image: /images/generated/titles/Towers-Of-Abstraction.png
 featuredimage: images/generated/single/Towers-Of-Abstraction.png
 categories:
