@@ -4,4 +4,4 @@ url: https://riskfirst.org/bob/A
 ---
 
 
-[Back Link](/Glossary.md)
+[Back Link](../Glossary.md)
