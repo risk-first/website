@@ -126,7 +126,7 @@ Part of [Coordination Risk](Coordination-Risk.md) is about trying to mitigate di
  - Preferences
  - Personalities
  
-The job of harmonising this on a project would seem to fall to the team leader, but actually people are self-organising to some extent.  This process is called [Team Development](https://en.wikipedia.org/wiki/Tuckmans_stages_of_group_development):
+The job of harmonising this on a project would seem to fall to the team leader, but actually people are self-organising to some extent.  This process is called [Team Development](https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development):
 
 > "The forming–storming–norming–performing model of group development was first proposed by Bruce Tuckman in 1965, who said that these phases are all necessary and inevitable in order for the team to grow, face up to challenges, tackle problems, find solutions, plan work, and deliver results." - [Tuckman's Stages Of Group Development, _Wikipedia_](https://en.wikipedia.org/wiki/Tuckmans_stages_of_group_development)
 

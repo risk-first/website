@@ -1,3 +1,4 @@
+
 ---
 title: Map And Territory Risk
 description: Risks due to the differences between reality and the internal model of reality, and the assumption that they are equivalent. 
@@ -93,7 +94,7 @@ Where the **Awareness** and **Knowledge** grow more evenly together, there is no
 
 ![Audience Feature Risks, as manifested in the Internal Model](/images/generated/risks/map-and-territory/map_and_territory_table_2.png)
 
-The diagram above shows how Audience-type [Feature Risks](Feature-Risk.md) can manifest in the Internal Model. (The Hype Cycle model is available in **Numbers** format [here](https://github.com/risk-first/website/blob/master/RiskMatrix.numbers).)
+The diagram above shows how Audience-type [Feature Risks](Feature-Risk.md) can manifest in the Internal Model. (The Hype Cycle model is available in **Numbers** format [here](https://github.com/risk-first/website/blob/master/numbers/RiskMatrix.numbers).)
 
 ## Evolution
 

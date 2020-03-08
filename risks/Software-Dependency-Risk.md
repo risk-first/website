@@ -146,7 +146,7 @@ Due to channel bandwidth limitations, if the dependency is being written by anot
 
 In essence, this is Conway's Law:
 
-> "organisations which design systems ... are constrained to produce designs which are copies of the communication structures of these organisations." - [Melvin Conway, _Conway's Law_](https://en.wikipedia.org/wiki/Conways_law)
+> "organisations which design systems ... are constrained to produce designs which are copies of the communication structures of these organisations." - [Melvin Conway, _Conway's Law_](https://en.wikipedia.org/wiki/Conway%27s_law)
 
 ### 2.  Software Libraries
 

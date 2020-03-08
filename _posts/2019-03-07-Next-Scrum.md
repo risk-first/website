@@ -24,13 +24,13 @@ It's got me thinking about what I want to do next on this project.  A quick reca
 
 So next, Part 3 should look at the different _techniques/practices/actions_ we use, and explain the qualities of them.  Generally, all activity boils down into something like this:
 
-![Taking Action](https://riskfirst.org/images/generated/introduction/all_risk_management_language.png)
+![Taking Action](/images/generated/introduction/all_risk_management_language.png)
 
 And Part 4 was about examining software _methodologies_ (e.g. DevOps, XP, etc) as collections of techniques.  (Some people don't like this use of the word "methodology".  I can see why, but, it's the most commonly used term for this type of thing).
 
 Put together it looks like:
 
-![Basic Model of Software Risks and Practices](https://riskfirst.org/images/generated/executive-summary/pattern_language.png)
+![Basic Model of Software Risks and Practices](/images/generated/executive-summary/pattern_language.png)
 
 I think I'm probably going to start tackling these two parts (3&4) simultaneously.  I'm going to write an article on Scrum first, looking at some of the key practices it espouses such as:
 

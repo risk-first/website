@@ -4,6 +4,8 @@
 	{% for category in sortedCategories %}
 	{% if category != 'Post' %}
 	{% if category != 'News' %}
+    {% if category != 'Front' %}
+  
 	
     {% assign shortcat = category | split: ' ' %}	
     
@@ -35,6 +37,7 @@
     <div class="sep">
     </div>
     
+    {% endif %}
     {% endif %}
 	{% endif %}
 	{% endfor %}
