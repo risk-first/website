@@ -16,11 +16,11 @@ So far, this series of articles has tried to bring the problems of estimating so
 - [Fill-The-Bucket](Fill-The-Bucket.md):  This is the easiest domain to work in.   All tasks are similar and uncorrelated.  We can _extrapolate_ to figure out how much time the next _n_ units will take to do.
 - [Kitchen Cabinet](Kitchen-Cabinet.md):  In this domain, there is _hidden work_.  We don't know how much there might be.  If we can break down tasks into smaller units, then by the _law of averages_ and the _central limit theorem_, we can apply some statistics to figure out when we might finish.
 - [Journeys](Journeys.md):  In this domain, work is heterogeneous and interconnected.  Different parts depend on each other, and a failure in one part might mean going back to the drawing board entirely.  The way to estimate in this domain is to _know the landscape_ and to build in _buffers_.  
-- [Fractals](Fractals.md):  In this domain, [Parkinson's Law](/Process-Risk.md#bureaucracy) is king.  There is always more work to be done.  The best thing we can do is try and apply ourselves to the _highest value_ work at any given point, and frequently refer back to reality to find out if we're building the right thing.
+- [Fractals](Fractals.md):  In this domain, [Parkinson's Law](../risks/Process-Risk.md#bureaucracy) is king.  There is always more work to be done.  The best thing we can do is try and apply ourselves to the _highest value_ work at any given point, and frequently refer back to reality to find out if we're building the right thing.
 
 ![Three Dimensions From Fill-The-Bucket](/images/estimates/dimensions.png)
 
-In Risk-First, one of the main messages has been that it's all about your [Internal Model](/Glossary.md#internal-model).  If you have a good model of the world, then you're likely to be able to [Take Actions](/Glossary.md#taking-action) in the world that lead you to positions of lower risk.
+In Risk-First, one of the main messages has been that it's all about your [Internal Model](../thinking/Glossary.md#internal-model).  If you have a good model of the world, then you're likely to be able to [Take Actions](../thinking/Glossary.md#taking-action) in the world that lead you to positions of lower risk.
 
 So the main reason for identifying all these different problem domains for estimation has been to improve that internal model.  
 
@@ -41,7 +41,7 @@ As we discussed in [Journeys](Journeys.md), there are plenty of problems in gett
 
 ![Journeys Meets Cabinets](/images/estimates/dimensions-2.png)
 
-What happens when you relax those constraints?  If there is _no map_ and the _closeness_ heuristic isn't available, you're in a maze.   You can't tell how "done" you are in a maze by judging your distance to the exit point - you may be heading to a [Dead End](/Complexity-Risk.md#dead-end-risk) anyway!
+What happens when you relax those constraints?  If there is _no map_ and the _closeness_ heuristic isn't available, you're in a maze.   You can't tell how "done" you are in a maze by judging your distance to the exit point - you may be heading to a [Dead End](../risks/Complexity-Risk.md#dead-end-risk) anyway!
 
 ![Maze Estimating](/images/estimates/mazes.png)
 
@@ -105,6 +105,6 @@ Maintaining a transport network is a balancing act.  In an ideal world, every de
 
 If we consider a software system to be a sort of network, then hierarchy turns out to be a crucial tool we can apply to understanding it.  
 
-You can look more at the importance of _hierarchies_ in the [Complexity Series](/Complexity.md).
+You can look more at the importance of _hierarchies_ in the [Complexity Series](../complexity/Start.md).
 
 However, if you're here to continue learning about _estimating_, it's time to look at [Contracts](Contracts.md).

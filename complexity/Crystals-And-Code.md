@@ -33,7 +33,7 @@ Most IS's start small, and grow from there (eBay started with a single niche mar
 
 What properties of IS's are like the _regularity_ we see in crystals?  How about things like:
 
- - **Managed Data**, with clear, consistent, interacting data-types.  In distributed systems, there will be a policy on [CAP](/Coordination-Risk.md#CAP-Theorem).  There is likely to be a high degree of data **Normalization** and a **well-Factored** design.
+ - **Managed Data**, with clear, consistent, interacting data-types.  In distributed systems, there will be a policy on [CAP](../risks/Coordination-Risk.md#CAP-Theorem).  There is likely to be a high degree of data **Normalization** and a **well-Factored** design.
  - **ACID** properties, such as Atomicity, Consistency, Isolation, Durability of transactions.
  - **SLAs**:  Response times, ownership, procedures, and other _non-functional requirements_ that are clearly defined.
  - **Support Teams and Knowledge Bases**: there are procedures in place for _understanding and using_ IS's.
@@ -123,7 +123,7 @@ Perhaps you can "grow" the IS (defects and all) in the direction required by the
 
 This means setting up a new team somewhere who are allowed to "iterate rapidly" building something new without the weight of history and existing defects slowing them down.  As in Stage 2, eventually, if this team are successful, there will be new defects to resolve, between the new and the old systems.  
 
-Defects in the crystalline structure are effectively another way to envisage [Technical Debt](/Complexity-Risk.md#technical-debt).
+Defects in the crystalline structure are effectively another way to envisage [Technical Debt](../risks/Complexity-Risk.md#technical-debt).
 
 ## Diamonds Aren't Forever
 

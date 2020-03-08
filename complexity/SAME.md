@@ -64,9 +64,9 @@ I am currently working on a project containing about 85 classes.  Let's break do
 
 .. plus a few sundry others.
 
-Also, I'm making use of things like [Jackson]() for turning [JSON]() into Java Objects.  And a lot of Java's standard library itself is for converting external forms to Java objects and back.  Things like the [XML Libraries for turning XML into Java objects](), [REST Libraries, for turning HTTP Requests into Java Objects]() and [JDBC and ORM Libraries, for turning relational data into Java Objects]().
+Also, I'm making use of things like [Jackson](https://github.com/FasterXML/jackson) for turning JSON into Java Objects.  And a lot of Java's standard library itself is for converting external forms to Java objects and back.  Things like the [XML Libraries for turning XML into Java objects](), [REST Libraries, for turning HTTP Requests into Java Objects]() and [JDBC and ORM Libraries, for turning relational data into Java Objects]().
 
-In actual fact, one of the main reasons for using Java _at all_ is because it has such a rich set of connectors:  whatever the format, you're almost certain to find that someone has written _some kind of converter_ for it in Java.   You don't choose Java because it's the easiest language to learn, you choose it because of it's [Ecosystem](/Boundary-Risk.md#Big-Ecosystems-Get-Bigger).
+In actual fact, one of the main reasons for using Java _at all_ is because it has such a rich set of connectors:  whatever the format, you're almost certain to find that someone has written _some kind of converter_ for it in Java.   You don't choose Java because it's the easiest language to learn, you choose it because of it's [Ecosystem](../risks/Boundary-Risk.md#Big-Ecosystems-Get-Bigger).
 
 ## Expressing Invariants
 

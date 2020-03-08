@@ -1,4 +1,4 @@
-![Under Construction](images/state/uc.png)
+![Under Construction](/images/state/uc.png)
 
 # Waterfall
 
@@ -9,7 +9,7 @@
 
 The specifics differ from one formulation to another, but generally speaking the process looks something like this:
 
-![Waterfall Methodology](images/generated/waterfall.png)
+![Waterfall Methodology](/images/generated/waterfall.png)
 
 As shown in the diagram above, the software process is broken into distinct stages, usually including:
 

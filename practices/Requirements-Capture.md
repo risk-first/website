@@ -1,4 +1,4 @@
-![Under Construction](images/state/uc.png)
+![Under Construction](/images/state/uc.png)
 
 
 ## What Is It
@@ -15,11 +15,11 @@
 
 ## How It Works
 
-Whatever exact methodology you are using, the aim is to meet **stakeholders** and try to capture their [Internal Models](Glossary.md#Internal-Model) in written form.  This has a few effects:
+Whatever exact methodology you are using, the aim is to meet **stakeholders** and try to capture their [Internal Models](../thinking/Glossary.md#Internal-Model) in written form.  This has a few effects:
 
-- The [Internal Models](Glossary.md#Internal-Model) of the development team can be enriched with this new information.
+- The [Internal Models](../thinking/Glossary.md#Internal-Model) of the development team can be enriched with this new information.
 - You are capturing at a moment-in-time what people _thought_.  
--  As with any [Documentation](Documentation), you can to some extent reconcile the [Internal Models](Glossary.md#Internal-Model) of a wide variety of stakeholders and implementers.
+-  As with any [Documentation](Documentation), you can to some extent reconcile the [Internal Models](../thinking/Glossary.md#Internal-Model) of a wide variety of stakeholders and implementers.
 
 
 

@@ -1,4 +1,4 @@
-![Under Construction](images/state/uc.png)
+![Under Construction](/images/state/uc.png)
 
 
 ## What Is It
@@ -6,7 +6,7 @@
 Design is what you do every time you think of an action to mitigate a risk.  And **Big Design Up Front** is where you do a lot of it in one go, for example:
 
  - Where you think about the design of all (or a set of) the requirements in one go, in advance.
- - Where you consider a _set of [Attendant Risks](Glossary.md#attendant-risk)_ all at the same time.
+ - Where you consider a _set of [Attendant Risks](../thinking/Glossary.md#attendant-risk)_ all at the same time.
  
 Compare with "little" design, where we consider just the _next_ requirement, or the _most pressing_ risk. 
  
@@ -18,7 +18,7 @@ As we saw in [Meet Reality](Meeting-Reality.md), "Navigating the [Risk Landscape
 
 But the problem with this is you can get trapped in a [Local Minima](), where there are _no_ easy steps to take to get you to where you want to be.  Here is a [real life example](Tradeoffs).  This is [Dead End Risk](Dead-End-Risk).
 
-In these cases, you have to _widen your horizon_ and look at where you want to go:  and this is the process of _design_.  You're not necessarily now taking steps on the [Risk Landscape](Risk-Landscape.md), but imagining a place on the [Risk Landscape](Risk-Landscape.md) where you want to be, and checking it against your [Internal Model](Glossary.md#Internal-Model) for validity.
+In these cases, you have to _widen your horizon_ and look at where you want to go:  and this is the process of _design_.  You're not necessarily now taking steps on the [Risk Landscape](Risk-Landscape.md), but imagining a place on the [Risk Landscape](Risk-Landscape.md) where you want to be, and checking it against your [Internal Model](../thinking/Glossary.md#Internal-Model) for validity.
 
 ## Examples
 

@@ -1,4 +1,4 @@
-![Under Construction](images/state/uc.png)
+![Under Construction](/images/state/uc.png)
 
 
 ## What Is It
@@ -24,8 +24,8 @@ Usually, risk is mitigated by **Prioritisation**.  But sometimes, it's not appro
 
 There are several ways you can prioritise work:
 
-- **Largest Mitigation First**:  What's the thing we can do right now to reduce our [Attendant Risk](Glossary.md#attendant-risk) most?  This is sometimes hard to quantify, given [Hidden Risk](Glossary.md#Hidden-Risk), so maybe an easier metric is...
-- **Biggest Win**:  What's the best thing we can do right now to reduce [Attendant Risk](Glossary.md#attendant-risk) for least additional [Schedule-Risk](Scarcity-Risk.md#schedule-risk)?  (i.e. simply considering how much *work* is likely to be involved)
+- **Largest Mitigation First**:  What's the thing we can do right now to reduce our [Attendant Risk](../thinking/Glossary.md#attendant-risk) most?  This is sometimes hard to quantify, given [Hidden Risk](../thinking/Glossary.md#Hidden-Risk), so maybe an easier metric is...
+- **Biggest Win**:  What's the best thing we can do right now to reduce [Attendant Risk](../thinking/Glossary.md#attendant-risk) for least additional [Schedule-Risk](Scarcity-Risk.md#schedule-risk)?  (i.e. simply considering how much *work* is likely to be involved)
 - **Dependency Order**:  Sometimes, you can't build Feature A until Feature B is complete.   Prioritisation helps to identify and mitigate [Dependency Risk](Dependency-Risk.md).
 
 By prioritising, you get to [Meet Reality](Meeting-Reality.md) _sooner_ and _more frequently_ and in _small chunks_.

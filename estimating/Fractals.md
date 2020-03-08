@@ -94,7 +94,7 @@ If your problem doesn't have an exact, defined end-goal, there is simply no way 
 
 ![Opportunity on the Risk Landscape](/images/estimates/fractal1.png)
 
-You might have some idea (selling hats for dogs?) of some interesting area of value on the [Risk Landscape](/Glossary.md#risk-landscape)  that you want to occupy, as shown in the above diagram.  
+You might have some idea (selling hats for dogs?) of some interesting area of value on the [Risk Landscape](../thinking/Glossary.md#risk-landscape)  that you want to occupy, as shown in the above diagram.  
 
 Your best bet is to try and colonise the area of value _as fast as possible_ by using as much readily available software as possible.  
 
@@ -104,16 +104,16 @@ Maybe version one looks something like the diagram above: a few hastily-assemble
 
 ![Second Version](/images/estimates/fractal3.png)
 
-Releasing the first version might fill in some of the blanks, and show you more detail on the [Risk Landscape](/Glossary.md#risk-landscape).  Effectively showing you a more detailed view of the coastline.   Feedback from users will provide you with a better understanding of exactly what this fractal problem-space looks like. 
+Releasing the first version might fill in some of the blanks, and show you more detail on the [Risk Landscape](../thinking/Glossary.md#risk-landscape).  Effectively showing you a more detailed view of the coastline.   Feedback from users will provide you with a better understanding of exactly what this fractal problem-space looks like. 
 
 ![Third Version](/images/estimates/fractal4.png)
 
-As you go on [Meeting Reality](/Glossary.md#meet-reality), the shape of the problem domain comes into focus, and you're able to _refine_ your solution to match it more exactly.
+As you go on [Meeting Reality](../thinking/Glossary.md#meet-reality), the shape of the problem domain comes into focus, and you're able to _refine_ your solution to match it more exactly.
 
 Is it possible to estimate problems in the Fractal Shape domain?  The best you might be able to do is to match two competing objectives:
 
-- Building Product:  By building functionality you head towards your [Goal](/Glossary.md#goal-in-mind) on the [Risk Landscape](/Glossary.md#risk-landscape).  But how do you know this is the right goal?
-- [Meeting Reality](/Glossary.md#meet-reality):  By putting your product "out there" you find your customers and your niche in the market, and you explore the [Risk Landscape](/Glossary.md#risk-landscape).  But this takes time and effort away from _building product_.
+- Building Product:  By building functionality you head towards your [Goal](../thinking/Glossary.md#goal-in-mind) on the [Risk Landscape](../thinking/Glossary.md#risk-landscape).  But how do you know this is the right goal?
+- [Meeting Reality](../thinking/Glossary.md#meet-reality):  By putting your product "out there" you find your customers and your niche in the market, and you explore the [Risk Landscape](../thinking/Glossary.md#risk-landscape).  But this takes time and effort away from _building product_.
 
 With this in mind, you estimate a useful amount of time to go round this cycle, fixing the time but letting the deliverable vary.
  
@@ -133,11 +133,11 @@ Although there are some high-profile wins with these types of problems, generall
  
 ## Applying Risk-First
 
-Let's look at the conclusions we reached in [Boundary Risk](/Boundary-Risk.md):
+Let's look at the conclusions we reached in [Boundary Risk](../risks/Boundary-Risk.md):
 
 > - **Human need is [Fractal](https://en.wikipedia.org/wiki/Fractal)**:  this means that over time, software products have evolved to more closely map human needs.   Software that would have delighted us ten years ago lacks the sophistication we expect today.
 - **Software and hardware are both improving with time**: due to evolution and the ability to support greater and greater levels of complexity.
-- **Abstractions accrete too**:  as we saw in [Process Risk](/Process-Risk.md), we _encapsulate_ earlier abstractions in order to build later ones.
+- **Abstractions accrete too**:  as we saw in [Process Risk](../risks/Process-Risk.md), we _encapsulate_ earlier abstractions in order to build later ones.
 
 If we accept this problem of the fractal nature of human desire, then we have to contend with the fact that our software systems are always going to get continually more complex to serve it.
 

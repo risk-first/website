@@ -24,15 +24,15 @@ Work in Scrum is done within periods of time called _Sprints_.  Each sprint ends
 
 > "The goal of this activity is to inspect and adapt the product being built... Everyone in attendance gets clear visibility into what is occurring and has an opportunity to help guide the forthcoming development to ensure that the most business-appropriate solution is created." - Essential Scrum (p26), _Rubin_
 
-In Risk-First, we tend to call this validation step [Meeting Reality](/Glossary.md#meet-reality):  you are creating a [feedback loop](/Cadence.md) in order to minimise risk.  What is the risk you are minimising?  Essentially, we are trying to reduce the risk of the developers _building the wrong thing_, which could be due to misunderstanding of requirements, or perfectionism, or because the piece of work was ill-conceived in the first place.  In Risk-First, the risk of building the wrong thing is called [Feature Risk](/Feature-Risk.md).
+In Risk-First, we tend to call this validation step [Meeting Reality](../thinking/Glossary.md#meet-reality):  you are creating a [feedback loop](../thinking/Cadence.md) in order to minimise risk.  What is the risk you are minimising?  Essentially, we are trying to reduce the risk of the developers _building the wrong thing_, which could be due to misunderstanding of requirements, or perfectionism, or because the piece of work was ill-conceived in the first place.  In Risk-First, the risk of building the wrong thing is called [Feature Risk](../risks/Feature-Risk.md).
 
 ![Feature Risk mitigated by Meeting Reality](/images/generated/estimating/scrum/scrum1.png)
 
-The above diagram demonstrates us mitigating [Feature Risk](/Feature-Risk.md) (the risk of not building the right software for our clients) by organising a Sprint Review.  But there is a downside to a Sprint Review:  _it takes time_.
+The above diagram demonstrates us mitigating [Feature Risk](../risks/Feature-Risk.md) (the risk of not building the right software for our clients) by organising a Sprint Review.  But there is a downside to a Sprint Review:  _it takes time_.
 
 ![Schedule Risk for Stakeholders](/images/generated/estimating/scrum/scrum2.png)
 
-And that risk is called [Schedule Risk](/Scarcity-Risk.md#schedule-risk).  It is shown in the diagram above: the _more feedback_ you are receiving, the more _interruption_ you are causing to the people giving feedback.   So you are trying to [Balance Risk](/Purpose-Development-Team.md):  while having a _daily_ review for a software project involving all stakeholders would be over-kill and waste a lot of everyone's time, having a _yearly_ review would be too-long a feedback loop.   Balancing risk here means doing the feedback loop _just often enough_.
+And that risk is called [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk).  It is shown in the diagram above: the _more feedback_ you are receiving, the more _interruption_ you are causing to the people giving feedback.   So you are trying to [Balance Risk](../bets/Purpose-Development-Team.md):  while having a _daily_ review for a software project involving all stakeholders would be over-kill and waste a lot of everyone's time, having a _yearly_ review would be too-long a feedback loop.   Balancing risk here means doing the feedback loop _just often enough_.
 
 ## Time-Boxing To The Rescue
 
@@ -44,7 +44,7 @@ In order to balance the risks, Sprints are time-boxed:  rather than just request
 
 But the problem is that now the developers have to coordinate their work to be ready before the Sprint Review starts.   Even for a _development team of one_ it can be a challenge to coordinate like this:   often, development is completed a few days early, or incomplete by the day of the demo, so it might be easier to move the meeting.    
 
-As the number of developers in the team grows, the [Coordination Risk](/Coordination-Risk.md) increases:  rather than bulls-eye-ing a single feature for demo day, you're now expecting a whole team to do it.  
+As the number of developers in the team grows, the [Coordination Risk](../risks/Coordination-Risk.md) increases:  rather than bulls-eye-ing a single feature for demo day, you're now expecting a whole team to do it.  
 
 Nevertheless, time-boxing is foundational principle of Scrum.  So in order to get time-boxing to work, this means we have to rely on planning and estimating.
 
@@ -63,7 +63,7 @@ Now, although the above diagram _makes sense_ (estimating as a mitigation to coo
 
  - **Finally, sometimes, you'll have a problem that's like a [Journey](Journeys.md).**  Maybe you're trying to set up a new deployment pipeline?  The first step, finding servers turned out to be easy, but now you're trying to license the software to run on them, and it's taking longer.  The journey you have to take is _known_, but the steps along it are all different.   Will you hit the Sprint Review on time?  It's super-hard to say.
  
-Given that estimating is so problematic, does it make any sense to try to mitigate our [Coordination Risk](/Coordination-Risk.md) using estimates?  
+Given that estimating is so problematic, does it make any sense to try to mitigate our [Coordination Risk](../risks/Coordination-Risk.md) using estimates?  
 
 ##### As a tool for dealing with Coordination Risk, _Estimating_ is an unreliable foot-gun.
 
@@ -71,7 +71,7 @@ Given that estimating is so problematic, does it make any sense to try to mitiga
 
 ![Schedule Risk for Stakeholders](/images/generated/estimating/scrum/scrum2.png)
 
-Let's go back a step:  isn't there another way to tackle the [Schedule Risk](/Scarcity-Risk.md#schedule-risk) problem _instead_ of time-boxing / huge sprint review meeting?   As we saw, this led to [Coordination Risk](/Coordination-Risk.md) issues.  Here are several other ways you could solve this problem:
+Let's go back a step:  isn't there another way to tackle the [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk) problem _instead_ of time-boxing / huge sprint review meeting?   As we saw, this led to [Coordination Risk](../risks/Coordination-Risk.md) issues.  Here are several other ways you could solve this problem:
 
 - **Instead of giving live demos of completed features, give video demos of software in progress.** In the film industry, this is called [Dailies or Rushes](https://en.wikipedia.org/wiki/Dailies), because they produce a reel of all the film shot that day.  Why?  Again - it's about risk management:  you're trying to find out if there are any technical issues with the film shot before shooting anything new.   Going back and shooting several weeks later can often be impossibly difficult.  (A great example being the reshoots of the film "Justice League" involving Henry Cavill, playing Superman.  Sadly, when these reshoots were done, he was filming "Mission Impossible: Fallout", and had grown a moustache, which the director of that film, Chris McQuarrie, couldn't let him shave.  So Superman's moustache was edited-out using CGI.)
 
@@ -92,7 +92,7 @@ Perhaps this improves estimating, but for me there are two key problems with thi
 
 ## 10X
 
-I've written before about [how being a "10X Developer" largely comes down to having already visited the terrain](/Estimates.md).  This implies that _at different times_ we can all be either 1X or 10X Developers.
+I've written before about [how being a "10X Developer" largely comes down to having already visited the terrain](Estimates.md).  This implies that _at different times_ we can all be either 1X or 10X Developers.
 
 But with the power of hindsight, it's clear that at different times, on different projects, _whole teams_ can be either 1X or 10X.  
 
@@ -116,9 +116,9 @@ How can we, as software developers, minimise the chance of building the wrong th
 
 ![Scrum](/images/generated/estimating/scrum/scrum4.png)
 
-Look above at the diagram what Scrum is trying to do to mitigate [Feature Risk](/Feature-Risk.md):
+Look above at the diagram what Scrum is trying to do to mitigate [Feature Risk](../risks/Feature-Risk.md):
 
-- We [Meet Reality](/Glossary.md#meet-reality) to ensure we've got a feedback loop.
+- We [Meet Reality](../thinking/Glossary.md#meet-reality) to ensure we've got a feedback loop.
 - We **time-box** to avoid wasting stake-holders' time (Schedule Risk).
 - We do **planning poker** to try and avoid the Coordination Risk problem of everyone needing to complete their work for the end of the Sprint.
 

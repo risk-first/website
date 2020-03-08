@@ -28,49 +28,49 @@ The book aims to develop a _Pattern Language_ for understanding software risk, a
 
 ### Quick Summary
  
-- [Risk-First is a Pattern Language (think Design Patterns, or TVTropes)](A-Pattern-Language.md)
-- ["Software Development Is All About Risk" - Kent Beck](All-About-Risk.md)
-- [Who Is This For?](Audience.md)
-- [Quick, High-Level Summary](Quick-Summary.md)
+- [Risk-First is a Pattern Language (think Design Patterns, or TVTropes)](overview/A-Pattern-Language.md)
+- ["Software Development Is All About Risk" - Kent Beck](overview/All-About-Risk.md)
+- [Who Is This For?](overview/Audience.md)
+- [Quick, High-Level Summary](overview/Quick-Summary.md)
 
 ### Part 1: Introduction
 
 Some easy-to-digest ideas that will set the scene for examining the practices later.
 
- - [A Simple Scenario](A-Simple-Scenario.md)
- - [Development Process](Development-Process.md)
- - [Meeting Reality](Meeting-Reality.md)
- - [It's Just Risk](Just-Risk.md)
- - [Evaluating Risk](Evaluating-Risk.md)
- - [Cadence](Cadence.md)
- - [De-Risking](De-Risking.md)
- - [A Conversation](A-Conversation.md)
- - [One Size Fits No One](One-Size-Fits-No-One.md)
+ - [A Simple Scenario](thinking/A-Simple-Scenario.md)
+ - [Development Process](thinking/Development-Process.md)
+ - [Meeting Reality](thinking/Meeting-Reality.md)
+ - [It's Just Risk](thinking/Just-Risk.md)
+ - [Evaluating Risk](thinking/Evaluating-Risk.md)
+ - [Cadence](thinking/Cadence.md)
+ - [De-Risking](thinking/De-Risking.md)
+ - [A Conversation](thinking/A-Conversation.md)
+ - [One Size Fits No One](thinking/One-Size-Fits-No-One.md)
  
-### Part 2: [The Risk Landscape](Risk-Landscape.md)
+### Part 2: [The Risk Landscape](risks/Risk-Landscape.md)
 
 Risks are often very similar across different software projects.   And, if you know about them, you can look for them.  This section attempts to break them down for you:
 
- - [The Risk Landscape](Risk-Landscape.md)
- - [Feature Risk](Feature-Risk.md)
- - [Communication Risk](Communication-Risk.md)
- - [Complexity Risk](Complexity-Risk.md)
- - [Dependency Risk](Dependency-Risk.md)
- - [Scarcity Risk](Scarcity-Risk.md)
- - [Deadline Risk](Deadline-Risk.md)
- - [Software Dependency Risk](Software-Dependency-Risk.md)
- - [Process Risk](Process-Risk.md)
- - [Boundary Risk](Boundary-Risk.md)
- - [Agency Risk](Agency-Risk.md) 
- - [Coordination Risk](Coordination-Risk.md)
- - [Map And Territory Risk](Map-And-Territory-Risk.md)
- - [Operational Risk](Operational-Risk.md)
- - [Staging And Classifying](Staging-And-Classifying.md)
+ - [The Risk Landscape](risks/Risk-Landscape.md)
+ - [Feature Risk](risks/Feature-Risk.md)
+ - [Communication Risk](risks/Communication-Risk.md)
+ - [Complexity Risk](risks/Complexity-Risk.md)
+ - [Dependency Risk](risks/Dependency-Risk.md)
+ - [Scarcity Risk](risks/Scarcity-Risk.md)
+ - [Deadline Risk](risks/Deadline-Risk.md)
+ - [Software Dependency Risk](risks/Software-Dependency-Risk.md)
+ - [Process Risk](risks/Process-Risk.md)
+ - [Boundary Risk](risks/Boundary-Risk.md)
+ - [Agency Risk](risks/Agency-Risk.md) 
+ - [Coordination Risk](risks/Coordination-Risk.md)
+ - [Map And Territory Risk](risks/Map-And-Territory-Risk.md)
+ - [Operational Risk](risks/Operational-Risk.md)
+ - [Staging And Classifying](risks/Staging-And-Classifying.md)
  
 ### Glossary
 
- - [Glossary Of Risk Types](Glossary-Of-Risk-Types.md)
- - [Glossary Of Terms](Glossary.md)
+ - [Glossary Of Risk Types](risks/Glossary-Of-Risk-Types.md)
+ - [Glossary Of Terms](thinking/Glossary.md)
  
 ## What's Next?
 
