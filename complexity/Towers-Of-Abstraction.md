@@ -11,9 +11,6 @@ order: 3
 
 _this is under construction_
 
-[Sme Link](/Glosssary.md)
-
-
 # Towers Of Abstraction
 
 
@@ -25,7 +22,7 @@ In [Crystals-And-Code](Crystals-And-Code.md) we looked at how a well-factored In
 
 Here, we're going to look at [Towers Of Abstraction](Towers-Of-Abstraction.md).  When we are modelling our concepts and building our Information Systems, we stand on the shoulders of giants, using libraries, frameworks and languages to make our lives easier.
 
-But as we discussed in [Boundary Risk](/Boundary-Risk.md), using these abstractions comes at a cost:  ecosystem lock-in.  Once we have chosen our Towers of Abstraction, change is expensive.    
+But as we discussed in [Boundary Risk](../risks/Boundary-Risk.md), using these abstractions comes at a cost:  ecosystem lock-in.  Once we have chosen our Towers of Abstraction, change is expensive.    
 
 ## Conceptual Portability
 

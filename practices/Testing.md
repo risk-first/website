@@ -1,11 +1,11 @@
-![Under Construction](images/state/uc.png)
+![Under Construction](/images/state/uc.png)
 
 ## What Is It 
 
 Most forms of testing are about isolating a particular _characteristic_ of your system, and exploring it from a risk perspective.  It could be:
 
 - **Performance Testing** addresses the risk of [not being able to support all the users](Production-Risk)
-- **Usability Testing** tries to see whether people struggle to make sense of your software, usually because the assumptions of their [Internal Models](Glossary.md#Internal-Model) differ from those embedded in the system, or that the system isn't adequately [transparent](Visibility-Risk) about it's own model.
+- **Usability Testing** tries to see whether people struggle to make sense of your software, usually because the assumptions of their [Internal Models](../thinking/Glossary.md#Internal-Model) differ from those embedded in the system, or that the system isn't adequately [transparent](Visibility-Risk) about it's own model.
 - **Security Testing** addresses the risk that your software could be used against you or its users [by hackers](Production-Risk).
 - **Integration Testing**:  Where we test how the software works as-a-whole, and test that it will work [with other systems](Dependency-Risk.md) 
 - **Corridor Testing**:  Asking a few, random people to use the system-under-test, in order to see [if it confuses them, or not](Visibility-Risk).
@@ -14,7 +14,7 @@ Most forms of testing are about isolating a particular _characteristic_ of your 
 
 ## How It Works
 
-![Testing Process](images/generated/development_process_test.png)
+![Testing Process](/images/generated/development_process_test.png)
 
 The whole purpose of testing is to [meet reality](Meeting-Reality.md) early, ahead of putting software in front of real users, where you face [Production Risks](Production-Risk), like reputation damage and financial penalties.
 
@@ -32,7 +32,7 @@ This should work at _every level_ within a project.  If you are building a new f
 - Is it going to connect to third-party systems?  If so, I should build [System Integration Tests](https://en.wikipedia.org/wiki/System_integration_testing) to cover the [Dependency Risk](Dependency-Risk.md) associated with this, and the chance that in the future, the interface will change. 
 - Does my code do what I expect?  I probably should build a [Unit Test](https://en.wikipedia.org/wiki/Unit_testing) to mitigate [Complexity Risk](Complexity-Risk.md). 
 - Will users understand the software I build for them?  I should probably do some [Beta Testing](https://en.wikipedia.org/wiki/Software_testing#Beta_testing) or [Corridor Testing](https://www.usability.gov/what-and-why/glossary/corridor-testing.html) to mitigate [Visiblity Risk](Visibility-Risk).
-- To go live, am I going to need some piece of real-world paperwork?  Test the process ahead-of-time to expose all the [Hidden Risks](Glossary.md#hidden-risk) 
+- To go live, am I going to need some piece of real-world paperwork?  Test the process ahead-of-time to expose all the [Hidden Risks](../thinking/Glossary.md#hidden-risk) 
 
 ## Where It's Used
 
@@ -50,7 +50,7 @@ Automated tests look roughly the same, irrespective of the scope they are trying
  - We have some **Input Conditions** for the test, and some **Expectations**.
  - When the test is executed, we compare the actual outputs with the expected ones, giving us **The Result**.
 
-![Testing Process](images/generated/testing_1.png)
+![Testing Process](/images/generated/testing_1.png)
 
 A useful way to think about automated testing is that it turns the **System Under Test** into a [Pure Function](https://en.wikipedia.org/wiki/Pure_function):  This means that for a specific set of inputs, the system will produce a specific output, reliably, every time.   
 
@@ -85,7 +85,7 @@ However, if possible, it's better to break open the white box and test the compo
 
 Expanding on this then, the [Testing Pyramid](https://martinfowler.com/bliki/TestPyramid.html) idea is that lower level, automated tests which run quickly should be common, while there should be fewer of the more expensive "whole system" level tests.  
 
-![Testing Pyramid](images/generated/testing_pyramid.png)
+![Testing Pyramid](/images/generated/testing_pyramid.png)
 
 Finally, since manual tests are run by people (who are comparatively slow and costly), these should be the _rarest_ kind of test.
 

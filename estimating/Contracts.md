@@ -18,9 +18,9 @@ There are basically two "extreme" positions on building a contract, Fixed-Price,
 
 ## Forming A Relationship
 
-Whenever a client employs a supplier, risk is involved.  On the one side, the client has a dependency on the supplier:  they want that supplier to deliver something of value.  There's a risk this will go south - maybe the supplier delivers shoddy work, or the wrong kind of results, or simply disappears mid-way through the contract.   We call this [Dependency Risk](/Dependency-Risk.md).
+Whenever a client employs a supplier, risk is involved.  On the one side, the client has a dependency on the supplier:  they want that supplier to deliver something of value.  There's a risk this will go south - maybe the supplier delivers shoddy work, or the wrong kind of results, or simply disappears mid-way through the contract.   We call this [Dependency Risk](../risks/Dependency-Risk.md).
 
-On the other side, the supplier now has an obligation, to supply the thing the client wants.  They take on risk too, because if the client isn't happy, there are going to be problems getting paid.  We call this [Feature Risk](/Feature-Risk.md).
+On the other side, the supplier now has an obligation, to supply the thing the client wants.  They take on risk too, because if the client isn't happy, there are going to be problems getting paid.  We call this [Feature Risk](../risks/Feature-Risk.md).
 
 diagram 1.  feature risk, dependency risk
 

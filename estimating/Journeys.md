@@ -11,7 +11,7 @@ order: 3
 
 # Journeys
 
-A third way to conceive of software development is as a _journey_ on the [Risk Landscape](/Glossary.md#risk-landscape). For example, in a startup we might start at a place where we have no product, no customers and some funding.  We go on a journey of discovery and end up in a place where hopefully we _have_ a product, customers and an income stream.
+A third way to conceive of software development is as a _journey_ on the [Risk Landscape](../thinking/Glossary.md#risk-landscape). For example, in a startup we might start at a place where we have no product, no customers and some funding.  We go on a journey of discovery and end up in a place where hopefully we _have_ a product, customers and an income stream.
 
 There are many ways we could do this journey, and many destinations.  The idea of "pivoting" your startup idea feels very true to the [Journey](Journeys.md) analogy, because that literally means changing direction.  _The place where we were headed sucked, lets go over here_.  
 
@@ -19,11 +19,11 @@ What does this journey look like in Risk-First terms?
 
 ![Product Development](/images/generated/estimating/journey.png)
 
-As this diagram shows, at the start we have plenty of [Feature Fit Risk](/Feature-Risk.md#feature-fit-risk):  if we have _no_ product, then it definitely doesn't fit our customer's needs!  Also we have some amount of [Funding Risk](/Scarcity-Risk.md#funding-risk), as at some point the money will run out.
+As this diagram shows, at the start we have plenty of [Feature Fit Risk](../risks/Feature-Risk.md#feature-fit-risk):  if we have _no_ product, then it definitely doesn't fit our customer's needs!  Also we have some amount of [Funding Risk](../risks/Scarcity-Risk.md#funding-risk), as at some point the money will run out.
 
-After that, we use every trick in the book called "product development" to get to a new place on the [Risk Landscape](/Glossary.md#risk-landscape).  This place (hopefully) will have a better risk profile than the one we came from.  
+After that, we use every trick in the book called "product development" to get to a new place on the [Risk Landscape](../thinking/Glossary.md#risk-landscape).  This place (hopefully) will have a better risk profile than the one we came from.  
 
-If we're successful then yes, we'll have the [Operational Risk](/Operational-Risk.md) of running a business, but hopefully we'll be in a better position than we started.
+If we're successful then yes, we'll have the [Operational Risk](../risks/Operational-Risk.md) of running a business, but hopefully we'll be in a better position than we started.
 
 ## A London Example
 
@@ -41,7 +41,7 @@ If you were doing this same journey on foot, it's a very direct route, but would
 
 ## Journey Risks
  
-In the software development past, _building it yourself_ was the only way to get anything done.  It was like London _before road and rail_.   Nowadays, you are bombarded with choices.  It's actually _worse than London_ because it's not even a two-dimensional geographic space and there are multitudes of different routes and acceptable destinations.  Journey planning on the software [Risk Landscape](/Glossary.md#risk-landscape) is an optimisation problem _par excellence_. 
+In the software development past, _building it yourself_ was the only way to get anything done.  It was like London _before road and rail_.   Nowadays, you are bombarded with choices.  It's actually _worse than London_ because it's not even a two-dimensional geographic space and there are multitudes of different routes and acceptable destinations.  Journey planning on the software [Risk Landscape](../thinking/Glossary.md#risk-landscape) is an optimisation problem _par excellence_. 
 
 How can we think about estimating in such a domain?  There are clearly a number of factors to come into play:
 
@@ -95,7 +95,7 @@ This should look a _fair bit_ like software architecture:  often, we sketch out 
 
 At the other extreme, if we're estimating a single story, we can break down work like this.  For development tasks which _look like a journey_, this is what I'm doing.   _"If I build the Foo component using Spring and the Bar component in HTML, I can join them together with some Java code..."_  
 
-Further, as we solve problems in our code-base, we break them down into smaller and smaller parts.  (We'll come back to this in [Hierarchies](Hierarchies.md).)
+Further, as we solve problems in our code-base, we break them down into smaller and smaller parts.  (We'll come back to this in [Hierarchies](../complexity/Hierarchies.md).)
 
 So **Journey Estimating** is three things all at once:
 

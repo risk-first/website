@@ -163,7 +163,7 @@ Let's assume that the exponential distribution _does_ model software development
 
 With any estimate, there are risks in both under- and over- estimating: 
 
- - **Too Long**: In estimating too much time,  you might not be given the work or your business might [miss the opportunity in the marketplace](/Scarcity-Risk.md#opportunity-risk).  A too cautious risk might doom a potentially successful project before it has even started.
+ - **Too Long**: In estimating too much time,  you might not be given the work or your business might [miss the opportunity in the marketplace](../risks/Scarcity-Risk.md#opportunity-risk).  A too cautious risk might doom a potentially successful project before it has even started.
 
  - **Too Short**: If you estimate too little time, you might miss important coordinating dates with your marketing team, or miss the Christmas window, or run out of "runway".  
 
@@ -336,7 +336,7 @@ Is lambda predictable on a project?  It doesn't appear that there have been any 
 
 ### When Does Risk Happen?
 
-Too-early and too-late risks are both [Scarcity Risks](/Scarcity-Risk.md): they reflect the fact that time/budget/staff/opportunity are scarce resources which you can run out of.  
+Too-early and too-late risks are both [Scarcity Risks](../risks/Scarcity-Risk.md): they reflect the fact that time/budget/staff/opportunity are scarce resources which you can run out of.  
 
 But where is the risk accrued?   If you give an estimate, you lock in a maximum too-early risk _at that point_.  From then on, the clock is ticking:  too-early risk decreases towards zero as the due-date approaches.
 
@@ -344,13 +344,13 @@ This is important:  the point at which you present your estimate is the point of
 
 ![Accepting an estimate](/images/generated/estimating/accept_estimate.png)
 
-The diagram above is an example of this.   A supplier is bidding for a contract with a client.  The client has functionality they want build (or [Feature Risk](/Feature-Risk.md) as we call it on Risk-First).  The supplier needs money to keep their business going ([Funding Risk](/Scarcity-Risk.md#funding-risk) on this diagram).  
+The diagram above is an example of this.   A supplier is bidding for a contract with a client.  The client has functionality they want build (or [Feature Risk](../risks/Feature-Risk.md) as we call it on Risk-First).  The supplier needs money to keep their business going ([Funding Risk](../risks/Scarcity-Risk.md#funding-risk) on this diagram).  
 
-If the estimate is accepted, the supplier's [Funding Risk](/Scarcity-Risk.md#funding-risk) is transferred to the client (the requester of the estimate).  Conversely, the trade is that the client's [Feature Risk](/Feature-Risk.md) is transferred to the supplier.
+If the estimate is accepted, the supplier's [Funding Risk](../risks/Scarcity-Risk.md#funding-risk) is transferred to the client (the requester of the estimate).  Conversely, the trade is that the client's [Feature Risk](../risks/Feature-Risk.md) is transferred to the supplier.
 
-If the supplier is short on opportunities or funds, there is a tendency to under-estimate.  That's because the [Feature Risk](/Feature-Risk.md) is a problem for the supplier _in the future_, whereas their [Funding Risk](/Scarcity-Risk.md#funding-risk) is a problem _right now_.  
+If the supplier is short on opportunities or funds, there is a tendency to under-estimate.  That's because the [Feature Risk](../risks/Feature-Risk.md) is a problem for the supplier _in the future_, whereas their [Funding Risk](../risks/Scarcity-Risk.md#funding-risk) is a problem _right now_.  
 
-You can often see suppliers under-bid on projects because of this future discounting, which we discussed before in [Evaluating Risk](/Evaluating-Risk.md#discounting).  
+You can often see suppliers under-bid on projects because of this future discounting, which we discussed before in [Evaluating Risk](../thinking/Evaluating-Risk.md#discounting).  
 
 This analysis also suggests something else:   the process of giving and accepting estimates _transfers risk_.  This is a key point which we'll return to [later](Control.md). 
 
@@ -366,9 +366,9 @@ This means that clients often keep projects running for far longer than they sho
 
 There is an alternative to too-early or too-late risk.  You can always choose to be _on time_.  This is definitely a choice: Just like a student can always hand _something_ in on assignment day (even if it's just a title scrawled on a piece of paper), you can always hand in whatever work you have.  
 
-Then, instead of worrying about [Scarcity Risks](/Scarcity-Risk.md), you are letting [Feature Risk](/Feature-Risk.md) vary to take up the slack.
+Then, instead of worrying about [Scarcity Risks](../risks/Scarcity-Risk.md), you are letting [Feature Risk](../risks/Feature-Risk.md) vary to take up the slack.
 
-So far, we've seen two kinds of estimate:  [Fill-The-Bucket](Fill-The-Bucket.md) and [Kitchen-Cabinet](Kitchen-Cabinet.md).  Now, it's time to review a third - estimating [Journey Style](Journeys.md), and looking at how we can minimise [Feature Risk](/Feature-Risk.md) within an available budget.
+So far, we've seen two kinds of estimate:  [Fill-The-Bucket](Fill-The-Bucket.md) and [Kitchen-Cabinet](Kitchen-Cabinet.md).  Now, it's time to review a third - estimating [Journey Style](Journeys.md), and looking at how we can minimise [Feature Risk](../risks/Feature-Risk.md) within an available budget.
 
 
  

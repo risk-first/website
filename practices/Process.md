@@ -1,4 +1,4 @@
-![Under Construction](images/state/uc.png)
+![Under Construction](/images/state/uc.png)
 
 
 Should setting up processes be a practice? I guess so...
