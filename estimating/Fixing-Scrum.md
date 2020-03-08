@@ -124,6 +124,6 @@ Look above at the diagram what Scrum is trying to do to mitigate [Feature Risk](
 
 But actually, we're now _three degrees_ away from the original problem of **trying to build the right thing**.  The team is focused on figuring out _how much_ they can get done in a Sprint, not _whether they are building the right thing_.  Scrum purists might argue that this is the purpose of the **Sprint Goal**, which should be agreed in advance.. but actually this is usually just a bunch of items from the backlog, shoe-horned into a sprint-sized chunk of time.
 
-If the thesis that "90% of everything is waste" then Planning Poker is _also_ a waste, and we should devise a planning process to avoid this.  
+If the thesis that "90% of everything is waste" is true, then Planning Poker is _also_ a waste, and we should devise a planning process to avoid this.  
 
 In the next article we'll look at how we might do that.

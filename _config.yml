@@ -7,6 +7,7 @@ favicon: favicon.ico
 author: risk_first
 page_lang: en-GB
 permalink: /:categories/:year/:month/:day/:title
+
 category_list: 
  - Front
  - Introduction
@@ -16,8 +17,12 @@ category_list:
  - Methods
  - News
  - Estimating
+ - Complexity
+ 
 collections:
  - estimating
+ - complexity
+ - practices
 
 # Authors
 authors:
@@ -61,7 +66,6 @@ defaults:
     values:
       author: rob
       layout: post
-      date: 24-02-2019
       categories: [Post]
 
 # Analytics
@@ -78,3 +82,7 @@ kramdown:
   syntax_highlighter_opts:
     block:
       line_numbers: true
+      
+relative_links:
+  enabled:     true
+  collections: true
