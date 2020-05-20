@@ -22,13 +22,22 @@ the software they need</description>
 					<label id="1-1-1">Stakeholders</label>
 				<mitigated id="1-1-3"><risk class="schedule" id="1-1-3-0">Schedule Risk</risk></mitigated></container><action id="3">Sprints 
 (Time-Boxes)</action><description style="kite9-text-bounds-width: 200px" id="1-2">But too many Sprint Reviews could waste stakeholder time...</description>
-			  </group><group style="kite9-vertical-sizing: maximize;" xmlns="http://www.kite9.org/schema/adl" id="8">
+			  </group><group xmlns="http://www.kite9.org/schema/adl" style="kite9-vertical-sizing: maximize;" id="8">
           <container style="kite9-min-size: 60px 60px" id="8-1">
 
 					<label id="8-1-1">Development Team</label>
 				<mitigated id="8-1-3"><risk class="coordination" id="8-1-3-0">Coordination Risk</risk></mitigated></container><description style="kite9-text-bounds-width: 200px" id="8-2">But now the Development Team needs to coordinate, and complete work in time for the Sprint Review</description>
 			  </group><link id="11">
 				<from reference="2" id="11-1"/>
-				<to reference="7" shape="barbed-arrow" id="11-3"/>
-			</link></diagram>
+				<to reference="7" id="11-3" shape="barbed-arrow"/>
+			</link><align drawDirection="RIGHT" id="21-0">
+				<from reference="4" id="21-0-1"/>
+				<to reference="2" id="21-0-3"/>
+			</align><align drawDirection="RIGHT" id="21-1">
+				<from reference="2" id="21-1-1"/>
+				<to reference="1-1-3-0" id="21-1-3"/>
+			</align><align drawDirection="RIGHT" id="21-2">
+				<from reference="1-1-3-0" id="21-2-1"/>
+				<to reference="3" id="21-2-3"/>
+			</align></diagram>
 </svg:svg>
