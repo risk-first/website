@@ -15,14 +15,14 @@
 				<mitigated id="5"><risk class="feature" id="4">Feature Risk</risk></mitigated></container><action id="2">Review</action><description style="kite9-text-bounds-width: 200px" id="7-1">The purpose of the Review is to
 reduce Feature Risk: the risk that
 clients don't have the features of
-the software they need</description>
+the software they need.</description>
 			  </group><group style="kite9-vertical-sizing: maximize;" id="1">
           <container style="kite9-min-size: 60px 60px" id="1-1">
 
 					<label id="1-1-1">Stakeholders</label>
 				<mitigated id="1-1-3"><risk class="schedule" id="1-1-3-0">Schedule Risk</risk></mitigated></container><action id="3">Sprints 
 (Time-Boxes)</action><description style="kite9-text-bounds-width: 200px" id="1-2">But too many Reviews could waste stakeholder time, so we divide work into Sprints, and have a review at the end of each one.</description>
-			  </group><group xmlns="http://www.kite9.org/schema/adl" style="kite9-vertical-sizing: maximize;" id="8">
+			  </group><group style="kite9-vertical-sizing: maximize;" xmlns="http://www.kite9.org/schema/adl" id="8">
           <container style="kite9-min-size: 60px 60px" id="8-1">
 
 					<label id="8-1-1">Development Team</label>
@@ -32,20 +32,20 @@ Planning Poker is the tool used for
 this.</description>
 			  </group><link id="11">
 				<from reference="2" id="11-1"/>
-				<to reference="7" id="11-3" shape="barbed-arrow"/>
-			</link><align drawDirection="RIGHT" id="21-0">
+				<to reference="7" shape="barbed-arrow" id="11-3"/>
+			</link><align id="21-0" drawDirection="RIGHT">
 				<from reference="4" id="21-0-1"/>
 				<to reference="2" id="21-0-3"/>
-			</align><align drawDirection="RIGHT" id="21-1">
+			</align><align id="21-1" drawDirection="RIGHT">
 				<from reference="2" id="21-1-1"/>
 				<to reference="1-1-3-0" id="21-1-3"/>
-			</align><align drawDirection="RIGHT" id="21-2">
+			</align><align id="21-2" drawDirection="RIGHT">
 				<from reference="1-1-3-0" id="21-2-1"/>
 				<to reference="3" id="21-2-3"/>
-			</align><align id="23-0" drawDirection="RIGHT">
+			</align><align drawDirection="RIGHT" id="23-0">
 				<from reference="3" id="23-0-1"/>
 				<to reference="8-1-3-0" id="23-0-3"/>
-			</align><align id="23-1" drawDirection="RIGHT">
+			</align><align drawDirection="RIGHT" id="23-1">
 				<from reference="8-1-3-0" id="23-1-1"/>
 				<to reference="22" id="23-1-3"/>
 			</align></diagram>
