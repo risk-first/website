@@ -24,8 +24,8 @@
 
     
 
-    <risk class="methodology" id="id_0"> Software Methodology</risk><arrow id="id_2">employs</arrow><action id="praco">Practice</action><link drawDirection="RIGHT" id="id_1">
-      <from class="space" reference="id_0" id="e1"/>
+    <risk class="methodology" id="id_0"> Software Methodology</risk><arrow id="id_2">employs</arrow><action id="praco">Practice</action><link id="id_1" drawDirection="RIGHT">
+      <from reference="id_0" class="space" id="e1"/>
       <to reference="id_2" id="e2"/>
     </link>
 
@@ -38,8 +38,8 @@
     
     
 
-  <link drawDirection="RIGHT" id="id_3">
+  <link id="id_3" drawDirection="RIGHT">
       <from reference="id_2" id="e3"/>
-      <to shape="arrow" id="e4" class="space" reference="praco"/>
+      <to shape="arrow" id="e4" reference="praco" class="space"/>
     </link></diagram>
 </svg:svg>
