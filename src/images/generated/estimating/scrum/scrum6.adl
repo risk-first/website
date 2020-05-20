@@ -24,39 +24,39 @@
 
     
 
-    <risk class="methodology" id="id_0"> Software Methodology</risk><arrow id="id_2">employs</arrow><action id="praco">Practice</action><arrow id="id_6">manages</arrow><risk class="goal" id="id_10">
+    <risk class="methodology" id="id_0"> Software Methodology</risk><arrow id="id_2">employs</arrow><action id="praco">Practice</action><risk class="goal" id="id_10">
       Project
       Goal
-    </risk><arrow id="id_9">obstructs</arrow><risk class="attendant" id="id_8">
+    </risk><risk class="attendant" id="id_8">
       Risk to 
       manage
-    </risk><link id="id_1" drawDirection="RIGHT">
-      <from reference="id_0" class="space" id="e1"/>
+    </risk><arrow id="id_9">obstructs</arrow><arrow id="id_6">manages</arrow><link drawDirection="RIGHT" id="id_1">
+      <from class="space" reference="id_0" id="e1"/>
       <to reference="id_2" id="e2"/>
     </link>
 
-    <link id="id_3" drawDirection="RIGHT">
+    <link drawDirection="RIGHT" id="id_3">
       <from reference="id_2" id="e3"/>
-      <to shape="arrow" id="e4" reference="praco" class="space"/>
+      <to shape="arrow" id="e4" class="space" reference="praco"/>
     </link>
 
-    <link id="id_5" drawDirection="RIGHT">
-      <from reference="praco" class="space" id="e5"/>
+    <link drawDirection="RIGHT" id="id_5">
+      <from class="space" reference="praco" id="e5"/>
       <to reference="id_6" id="e6"/>
     </link>
 
-    <link id="id_7" drawDirection="RIGHT">
+    <link drawDirection="RIGHT" id="id_7">
       <from reference="id_6" id="e7"/>
-      <to shape="arrow" id="e8" reference="id_8" class="space"/>
+      <to shape="arrow" id="e8" class="space" reference="id_8"/>
     </link>
 
-    <link id="id_15" drawDirection="RIGHT">
-      <from reference="id_8" class="space" id="e9"/>
+    <link drawDirection="RIGHT" id="id_15">
+      <from class="space" reference="id_8" id="e9"/>
       <to reference="id_9" id="e10"/>
     </link>
-    <link id="id_17" drawDirection="RIGHT">
+    <link drawDirection="RIGHT" id="id_17">
       <from reference="id_9" id="e11"/>
-      <to shape="arrow" id="e12" reference="id_10" class="space"/>
+      <to shape="arrow" id="e12" class="space" reference="id_10"/>
     </link>
 
   </diagram>
