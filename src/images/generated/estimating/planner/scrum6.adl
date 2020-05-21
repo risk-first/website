@@ -12,7 +12,9 @@
           <container style="kite9-min-size: 60px 60px" id="6">
 
 					<label id="6-1">Development Team</label>
-				<mitigated id="5"><risk class="feature" id="4">Feature Risk</risk></mitigated></container><action id="2">Review</action><description style="kite9-text-bounds-width: 200px" id="7-1">The purpose of the Review is to
+				<mitigated id="5"><risk class="feature" id="4">Feature Risk</risk></mitigated></container><group id="10" layout="down">
+
+      <action id="11">Development</action><action id="2">Review</action></group><description style="kite9-text-bounds-width: 200px" id="7-1">The purpose of the Review is to
 reduce Feature Risk: the risk that
 clients don't have the features of
 the software they need.</description>
@@ -30,16 +32,10 @@ the software they need.</description>
 Estimating</action><description style="kite9-text-bounds-width: 200px" id="8-2">Work needs to be coordinated to be ready fort the Sprint Review.
 Planning Poker is the tool used for
 this.</description>
-			  </group><link id="11">
+			  </group><link id="9">
 				<from reference="2" id="11-1"/>
 				<to reference="7" shape="barbed-arrow" id="11-3"/>
-			</link><align id="21-0" drawDirection="RIGHT">
-				<from reference="4" id="21-0-1"/>
-				<to reference="2" id="21-0-3"/>
-			</align><align id="21-1" drawDirection="RIGHT">
-				<from reference="2" id="21-1-1"/>
-				<to reference="1-1-3-0" id="21-1-3"/>
-			</align><align id="21-2" drawDirection="RIGHT">
+			</link><align id="21-2" drawDirection="RIGHT">
 				<from reference="1-1-3-0" id="21-2-1"/>
 				<to reference="3" id="21-2-3"/>
 			</align><align drawDirection="RIGHT" id="23-0">
@@ -48,5 +44,11 @@ this.</description>
 			</align><align drawDirection="RIGHT" id="23-1">
 				<from reference="8-1-3-0" id="23-1-1"/>
 				<to reference="22" id="23-1-3"/>
-			</align></diagram>
+			</align><link id="12">
+				<from reference="11" id="12-1"/>
+				<to reference="10" id="12-3" shape="barbed-arrow"/>
+			</link><link id="28">
+				<from reference="8-1-3-0" id="28-1"/>
+				<to reference="8-1-3" id="28-3" shape="barbed-arrow"/>
+			</link></diagram>
 </svg:svg>
