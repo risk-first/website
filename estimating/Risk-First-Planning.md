@@ -21,7 +21,7 @@ In the previous article, [Fixing Scrum](Fixing-Scrum.md), examined Scrum's idea 
 
 Analysing this behaviour using a Risk-First diagram looks like this:
 
-![Scrum](/images/generated/estimating/scrum/scrum6.png)
+[Scrum: Consequences Of Time-Boxing](/images/generated/estimating/planner/scrum6.png)
 
 From left to right in the above diagram:
 
@@ -32,31 +32,30 @@ From left to right in the above diagram:
 - But coordinating the whole development team to have working code to show _on the same day_ is risky - it's a [Coordination Risk](../risks/Coordination-Risk.md).
 - So, we do **planning poker** to try and avoid the Coordination Risk problem of everyone needing to complete their work for the end of the Sprint.
 
-
 ## Unintended Consequences
 
-But estimating is _really hard_. In this series so far we've looked at four different dimensions of the software estimation problem:
+But estimating is _really hard_:  In this series so far we've looked at four different dimensions of the software estimation problem:
 
 - [Fill-The-Bucket](Fill-The-Bucket.md):  This is the easiest domain to work in.   All tasks are similar and uncorrelated.  We can _extrapolate_ to figure out how much time the next _n_ units will take to do.
 - [Kitchen Cabinet](Kitchen-Cabinet.md):  In this domain, there is _hidden work_.  We don't know how much there might be.  If we can break down tasks into smaller units, then by the _law of averages_ and the _central limit theorem_, we can apply some statistics to figure out when we might finish.
 - [Journeys](Journeys.md):  In this domain, work is heterogeneous and interconnected.  Different parts depend on each other, and a failure in one part might mean going back to the drawing board entirely.  The way to estimate in this domain is to _know the landscape_ and to build in _buffers_.  
 - [Fractals](Fractals.md):  In this domain, [Parkinson's Law](../risks/Process-Risk.md#bureaucracy) is king.  There is always more work to be done.  The best thing we can do is try and apply ourselves to the _highest value_ work at any given point, and frequently refer back to reality to find out if we're building the right thing.
 
-As a result, Sprints can often get derailed by poor estimating.  Given that the Sprint Review is the most visible part of the development teams
+As a result, Sprints can often get derailed by poor estimating.  The _cure_ of estimating is worse than the _disease_ of wasting stakeholder time.
 
-So the unintended consequence of **planning poker** is to:
+[Scrum: Consequences Of Time-Boxing](/images/generated/estimating/planner/scrum6.png)
 
- - Focus attention on the success or failure of the Sprint
+As shown in the above diagram, the emphasis on estimating as a way to plan sprints leads to the following unintended consequences:
+
+ - Focus attention on the success or failure of the Sprint to meet it's goals (that is - 
  - Focus attention on what can be completed in a two week window.
  - Draw attention away from what _should_ be completed in the long-term.
  - Draws attention away from other concerns _aside_ from estimation.
  - Introduces a disconnect between the long-term goal and the short term sprint.
  - Relies too heavily on estimating 
 
-(diagram of this)
+## Fixing It
  
-For example:  struggling to get everything done for the end of a sprint.  What is the point of this?  At best, it is trying to make you "look good" in the short term.  How does it contribute to the long-term goals of the project.
-
 OK, so how to fix it.
 
 - Let's re-introduce into the planning game consideration for what is going on longer-term in the project.
