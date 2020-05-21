@@ -43,7 +43,7 @@ But estimating is _really hard_:  In this series so far we've looked at four dif
 
 As a result, Sprints can often get derailed by poor estimating.  The _cure_ of estimating is worse than the _disease_ of wasting stakeholder time.
 
-[Scrum: Consequences Of Time-Boxing](/images/generated/estimating/planner/scrum6.png)
+[Scrum: Consequences Of Time-Boxing](/images/generated/estimating/planner/poker.png)
 
 As shown in the above diagram, the emphasis on estimating as a way to plan sprints leads to the following unintended consequences:
 
