@@ -65,7 +65,7 @@
       <planner-cell id="pc11"><container style="kite9-min-size: 60px 60px" id="5">
 
 					<label id="5-1">Stakeholders</label>
-				<risk class="schedule" id="2">Schedule Risk</risk></container></planner-cell>
+				<mitigated id="20"><risk class="schedule" id="2">Schedule Risk</risk></mitigated></container></planner-cell>
       <planner-cell id="pc12"><action id="11">Sprints / 
 Time-Boxes</action></planner-cell>
       <planner-cell id="pc13"><risk class="coordination" id="12">Coordination Risk</risk></planner-cell>
@@ -89,12 +89,12 @@ Time-Boxes</action></planner-cell>
       
   <link id="17">
 				<from reference="14" id="17-1"/>
-				<to reference="15" shape="barbed-arrow" id="17-3"/>
+				<to reference="15" id="17-3" shape="barbed-arrow"/>
 			</link><link id="18">
 				<from reference="14" id="18-1"/>
-				<to reference="16" id="18-3" shape="barbed-arrow"/>
+				<to reference="16" shape="barbed-arrow" id="18-3"/>
 			</link><link id="19">
 				<from reference="3" id="19-1"/>
-				<to reference="9" shape="barbed-arrow" id="19-3"/>
+				<to reference="9" id="19-3" shape="barbed-arrow"/>
 			</link></diagram>
 </svg:svg>
