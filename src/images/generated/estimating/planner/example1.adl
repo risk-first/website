@@ -8,11 +8,14 @@
   </svg:defs>
 
   <diagram xmlns="http://www.kite9.org/schema/adl" k9-ui="xml" id="diagram" k9-contains="connected">
-    <action xmlns="http://www.kite9.org/schema/adl" id="1">Build A Search Function</action><action xmlns="http://www.kite9.org/schema/adl" id="2">Fix Rendering Bug</action><action xmlns="http://www.kite9.org/schema/adl" id="3">Refactor Subscriptions</action><action xmlns="http://www.kite9.org/schema/adl" id="4">FIx CI Pipeline</action><label style="kite9-label-placement: top; " class="title" id="title">Risk-First Planner</label>
+    <action xmlns="http://www.kite9.org/schema/adl" id="1">Build A Search Function</action><action xmlns="http://www.kite9.org/schema/adl" id="2">Fix Rendering Bug</action><action xmlns="http://www.kite9.org/schema/adl" id="3">Refactor Subscriptions</action><action xmlns="http://www.kite9.org/schema/adl" id="4">FIx CI Pipeline</action><label class="title" style="kite9-label-placement: top; " id="title">Risk-First Planner</label>
 
       <label style="kite9-label-placement: bottom; " id="footer">Problems with feature X</label>
-  <align drawDirection="RIGHT" id="5-0">
+  <align id="5-0" drawDirection="RIGHT">
 				<from reference="1" id="5-0-1"/>
 				<to reference="3" id="5-0-3"/>
+			</align><align drawDirection="RIGHT" id="6-0">
+				<from reference="2" id="6-0-1"/>
+				<to reference="4" id="6-0-3"/>
 			</align></diagram>
 </svg:svg>
