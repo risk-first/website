@@ -13,9 +13,12 @@
       
   <risk class="communication" id="17">Feature Access Risk</risk><risk class="funding" id="11">Funding Risk</risk><action xmlns="http://www.kite9.org/schema/adl" id="3">Refactor Subscriptions</action><risk class="goal" id="2">Profitable Business</risk><link id="5">
 				<from reference="17" id="5-1"/>
-				<to reference="11" id="5-3" shape="barbed-arrow"/>
+				<to reference="11" shape="barbed-arrow" id="5-3"/>
 			</link><link id="6">
-				<from reference="11" shape="strike" id="6-1"/>
-				<to reference="2" shape="arrow" id="6-3"/>
-			</link></diagram>
+				<from reference="11" id="6-1" shape="strike"/>
+				<to reference="2" id="6-3" shape="arrow"/>
+			</link><align drawDirection="LEFT" id="9">
+				<from reference="3" id="9-1"/>
+				<to reference="11" id="9-3"/>
+			</align></diagram>
 </svg:svg>
