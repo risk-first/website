@@ -11,17 +11,20 @@
     
 
       
-  <mitigated id="37"><risk class="communication" id="17">Feature Access Risk</risk></mitigated><action xmlns="http://www.kite9.org/schema/adl" id="3">Refactor Subscriptions</action><mitigated id="38"><risk class="funding" id="11">Funding Risk</risk></mitigated><arrow id="26">prevents</arrow><risk class="goal" id="2">Profitable Business</risk><link id="5" drawDirection="RIGHT">
+  <mitigated id="37"><risk class="communication" id="17">Feature Access Risk</risk></mitigated><action xmlns="http://www.kite9.org/schema/adl" id="3">Refactor Subscriptions</action><mitigated id="38"><risk class="funding" id="11">Funding Risk</risk></mitigated><arrow id="26">prevents</arrow><risk class="goal" id="2">Profitable Business</risk><link drawDirection="RIGHT" id="5">
 				<from reference="17" id="5-1"/>
-				<to reference="11" id="5-3" shape="barbed-arrow"/>
-			</link><link drawDirection="RIGHT" id="30">
-				<from reference="11" shape="strike" id="30-1"/>
+				<to reference="11" shape="barbed-arrow" id="5-3"/>
+			</link><link id="30" drawDirection="RIGHT">
+				<from reference="11" id="30-1" shape="strike"/>
 				
-			<to reference="26" id="30-3"/></link><link id="7" drawDirection="RIGHT">
+			<to reference="26" id="30-3"/></link><link drawDirection="RIGHT" id="7">
 				
-				<to reference="2" shape="arrow" id="1"/>
-			<from reference="26" id="4"/></link><align drawDirection="RIGHT" id="6-0">
+				<to reference="2" id="1" shape="arrow"/>
+			<from reference="26" id="4"/></link><align id="6-0" drawDirection="RIGHT">
 				<from reference="17" id="6-0-1"/>
 				<to reference="3" id="6-0-3"/>
-			</align></diagram>
+			</align><link id="32">
+				<from reference="11" id="32-1"/>
+				<to reference="38" shape="barbed-arrow" id="32-3"/>
+			</link></diagram>
 </svg:svg>
