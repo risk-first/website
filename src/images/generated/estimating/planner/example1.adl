@@ -11,14 +11,17 @@
     <action xmlns="http://www.kite9.org/schema/adl" id="2">Fix Rendering Bug</action><action xmlns="http://www.kite9.org/schema/adl" id="3">Refactor Subscriptions</action><action xmlns="http://www.kite9.org/schema/adl" id="4">FIx CI Pipeline</action>
 
       
-  <action xmlns="http://www.kite9.org/schema/adl" id="1">Build A Search Function</action><align id="7-0" drawDirection="RIGHT">
+  <action xmlns="http://www.kite9.org/schema/adl" id="1">Build A Search Function</action><align drawDirection="RIGHT" id="7-0">
 				<from reference="3" id="7-0-1"/>
 				<to reference="4" id="7-0-3"/>
-			</align><align drawDirection="UP" id="5-0">
+			</align><align id="5-0" drawDirection="UP">
 				<from reference="3" id="5-0-1"/>
 				<to reference="2" id="5-0-3"/>
-			</align><align drawDirection="LEFT" id="18">
+			</align><align id="18" drawDirection="LEFT">
 				<from reference="1" id="18-1"/>
 				<to reference="2" id="18-3"/>
+			</align><align drawDirection="DOWN" id="21">
+				<from reference="1" id="21-1"/>
+				<to reference="4" id="21-3"/>
 			</align></diagram>
 </svg:svg>
