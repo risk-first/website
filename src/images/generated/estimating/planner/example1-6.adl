@@ -14,6 +14,9 @@
   <group id="5" layout="grid">
 
       <cell style="kite9-occupies-x: 0 0;&#10;kite9-occupies-y: 1 1;&#10;" id="6-0" drawDirection="RIGHT"><group id="19">
-          <risk class="communication" id="17">Feature Access Risk</risk><description id="19-1">Drop out of 50% of users in the subscription process. </description>
-			  </group></cell><cell style="kite9-occupies-x: 1 1;&#10;kite9-occupies-y: 1 1;&#10;" id="6-4"><action xmlns="http://www.kite9.org/schema/adl" id="3">Refactor Subscriptions</action></cell><cell style="kite9-occupies-x: 2 2;&#10;kite9-occupies-y: 1 1;&#10;" id="9"/></group></diagram>
+          <risk class="communication" id="17">Feature Access Risk</risk><risk class="funding" id="11">Funding Risk</risk><description id="19-1">Drop out of 50% of users in the subscription process. </description>
+			  </group></cell><cell style="kite9-occupies-x: 1 1;&#10;kite9-occupies-y: 1 1;&#10;" id="6-4"><action xmlns="http://www.kite9.org/schema/adl" id="3">Refactor Subscriptions</action></cell><cell style="kite9-occupies-x: 2 2;&#10;kite9-occupies-y: 1 1;&#10;" id="9"><risk class="goal" id="2">Profitable Business</risk></cell></group><link id="14">
+				<from reference="17" id="14-1"/>
+				<to reference="11" id="14-3" shape="barbed-arrow"/>
+			</link></diagram>
 </svg:svg>
