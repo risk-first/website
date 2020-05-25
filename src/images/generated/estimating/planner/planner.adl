@@ -8,7 +8,7 @@
   </svg:defs>
 
   <diagram xmlns="http://www.kite9.org/schema/adl" k9-ui="xml" id="diagram" k9-contains="">
-    <label style="kite9-label-placement: top; " class="title" id="title">Risk-First Planner</label>
+    <label class="title" style="kite9-label-placement: top; " id="title">Risk-First Planner</label>
 
     <planner style="kite9-grid-size: 5 30; ">
       <planner-header style="kite9-occupies: 0 0; ">
@@ -79,12 +79,15 @@
       <label style="kite9-label-placement: bottom; " id="footer">Problems with feature X</label>
   <link id="3">
 				
-				<to reference="2" shape="barbed-arrow" id="3-3"/>
-			<from reference="c2" shape="strike" id="3-1"/></link><link id="11">
+				<to reference="2" id="3-3" shape="barbed-arrow"/>
+			<from reference="c2" id="3-1" shape="strike"/></link><link id="11">
 				<from reference="8" id="11-1"/>
-				<to reference="9" id="11-3" shape="barbed-arrow"/>
+				<to reference="9" shape="barbed-arrow" id="11-3"/>
 			</link><link id="12">
 				<from reference="4" id="12-1"/>
-				<to reference="5" shape="barbed-arrow" id="12-3"/>
+				<to reference="5" id="12-3" shape="barbed-arrow"/>
+			</link><link id="13">
+				<from reference="5" id="13-1"/>
+				<to reference="7" shape="barbed-arrow" id="13-3"/>
 			</link></diagram>
 </svg:svg>
