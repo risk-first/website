@@ -1,25 +1,24 @@
-<?xml version="1.0"?>
-<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+<?xml version="1.0" encoding="UTF-8"?><svg:svg xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" preserveAspectRatio="xMidYMid" version="1.0">
   <svg:defs>
-    <svg:style type="text/css"> 
+    <svg:style type="text/css" xml:space="preserve"> 
     @import url(/public/templates/risk-first/risk-first.css);
     @import url(/public/context/editor/editor.css);
     </svg:style>
     
   </svg:defs>
 
-  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-129" name="Pattern Language">
+  <diagram xmlns="http://www.kite9.org/schema/adl" name="Pattern Language" id="diagram-129">
 
 
-    <risk class="methodology" id="id_0"> Software Methodology</risk>
-
-    <arrow id="id_2">employs</arrow>
-
-    <action id="praco" >Practice</action>
     
-    <arrow id="id_6">manages</arrow>
 
-    <risk id="id_8" class="attendant">
+    
+
+    
+    
+    
+
+    <risk class="attendant" id="id_8">
       Risk to 
       manage
     </risk>
@@ -31,33 +30,21 @@
       Goal
     </risk>
 
-    <link id="id_1" drawDirection="RIGHT">
-      <from id="e1" reference="id_0" class="space" />
-      <to id="e2"  reference="id_2" />
-    </link>
+    
 
-    <link id="id_3" drawDirection="RIGHT">
-      <from id="e3"  reference="id_2" />
-      <to id="e4" reference="praco" shape="arrow" class="space" />
-    </link>
+    
 
-    <link id="id_5" drawDirection="RIGHT">
-      <from id="e5" reference="praco" class="space" />
-      <to id="e6" reference="id_6" />
-    </link>
+    
 
-    <link id="id_7" drawDirection="RIGHT">
-      <from id="e7" reference="id_6" />
-      <to id="e8" reference="id_8" shape="arrow" class="space" />
-    </link>
+    
 
-    <link id="id_15"  drawDirection="RIGHT">
-      <from id="e9" reference="id_8" class="space" />
-      <to id="e10"  reference="id_9" />
+    <link drawDirection="RIGHT" id="id_15">
+      <from class="space" reference="id_8" id="e9"/>
+      <to reference="id_9" id="e10"/>
     </link>
-    <link id="id_17" drawDirection="RIGHT">
-      <from id="e11" reference="id_9" />
-      <to id="e12"  reference="id_10" shape="arrow" class="space" />
+    <link drawDirection="RIGHT" id="id_17">
+      <from reference="id_9" id="e11"/>
+      <to shape="arrow" id="e12" class="space" reference="id_10"/>
     </link>
 
   </diagram>
