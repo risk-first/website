@@ -8,7 +8,7 @@
   </svg:defs>
 
   <diagram xmlns="http://www.kite9.org/schema/adl" k9-ui="xml" id="diagram" k9-contains="">
-    <label style="kite9-label-placement: top; " class="title" id="title">Risk-First Planner</label>
+    <label class="title" style="kite9-label-placement: top; " id="title">Risk-First Planner</label>
 
     <planner style="kite9-grid-size: 5 30; ">
       <planner-header style="kite9-occupies: 0 0; ">
@@ -59,7 +59,7 @@
       <planner-cell id="pc11"><risk class="trust" id="8">
 					Trust Risk
 					</risk></planner-cell>
-      <planner-cell id="pc12"><action id="9">Practice</action></planner-cell>
+      <planner-cell id="pc12"><action id="9">Fix Rendering Bug</action></planner-cell>
       <planner-cell id="pc13"/>
       <planner-cell id="pc14"/>
       <planner-cell id="pc15"/>
@@ -79,6 +79,6 @@
       <label style="kite9-label-placement: bottom; " id="footer">Problems with feature X</label>
   <link id="3">
 				
-				<to reference="2" shape="barbed-arrow" id="3-3"/>
-			<from reference="c2" shape="strike" id="3-1"/></link></diagram>
+				<to reference="2" id="3-3" shape="barbed-arrow"/>
+			<from reference="c2" id="3-1" shape="strike"/></link></diagram>
 </svg:svg>
