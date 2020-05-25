@@ -11,7 +11,7 @@ order: 8
 
 # Risk-First Planning
 
-In the previous article, [Fixing Scrum](Fixing-Scrum.md), examined Scrum's idea of "Sprints" and concluded:
+The previous article, [Fixing Scrum](Fixing-Scrum.md), examined Scrum's idea of "Sprints" and concluded:
 
 - The main purpose of a Sprint is to ensure there is a **feedback loop**.  Every two weeks (or however long the Sprint is) we have a Sprint Review, and review the code that has been completed during the Sprint.  In Risk-First parlance, we call this [Meeting Reality](../thinking/Glossary.md#meet-reality).  It is the process of _testing your ideas against reality_ to make sure they stand up. 
 
@@ -25,26 +25,29 @@ The diagram above shows this behaviour in the form of a [Risk-First Diagram](../
 
 ## Estimating Is A Poor Tool
 
-Seen like this, **Planning Poker** is a tool to avoid the [Coordination Risk]() problem of everyone needing to complete their work for the end of the Sprint.  But estimating is _really hard_:  In this series so far we've looked at three different ways in which software estimation deviates from the straightforward extrapolation we learnt about in maths classes at school:
+Seen like this, **Planning Poker** is a tool to avoid the [Coordination Risk]() problem of everyone needing to complete their work for the end of the Sprint.  But estimating is _really hard_:  In this series so far we've looked at three different ways in which software estimation deviates from the straightforward extrapolation (a.k.a, [Fill-The-Bucket](Fill-The-Bucket.md)) we learnt about in maths classes at school:
 
-- [Fill-The-Bucket](Fill-The-Bucket.md):  This is the easiest domain to work in.   All tasks are similar and uncorrelated.  We can _extrapolate_ to figure out how much time the next _n_ units will take to do.
 - [Kitchen Cabinet](Kitchen-Cabinet.md):  In this domain, there is _hidden work_.  We don't know how much there might be.  If we can break down tasks into smaller units, then by the _law of averages_ and the _central limit theorem_, we can apply some statistics to figure out when we might finish.
 - [Journeys](Journeys.md):  In this domain, work is heterogeneous and interconnected.  Different parts depend on each other, and a failure in one part might mean going back to the drawing board entirely.  The way to estimate in this domain is to _know the landscape_ and to build in _buffers_.  
 - [Fractals](Fractals.md):  In this domain, [Parkinson's Law](../risks/Process-Risk.md#bureaucracy) is king.  There is always more work to be done.  The best thing we can do is try and apply ourselves to the _highest value_ work at any given point, and frequently refer back to reality to find out if we're building the right thing.
 
-As a result, Sprints can often get derailed by poor estimating.  The _cure_ of estimating is worse than the _disease_ of wasting stakeholder time.
+![Three Dimensions From Fill-The-Bucket](/images/estimates/dimensions.png)
+
+As a result, Sprints can often get derailed by poor estimating.  
+
+##### The _cure_ of estimating is worse than the _disease_ of wasting stake-holder time.
 
 ## Unintended Consequences
 
 ![Scrum: Consequences Of Time-Boxing](/images/generated/estimating/planner/poker.png)
 
-As shown in the above diagram, the emphasis on _estimating as a way to plan sprints_ leads to the following unintended consequences:
+As shown in the above diagram, the emphasis on _estimating as a way to plan sprints_ means that our measure of success is at the mercy of our ability to estimate.  Trust in a team can be _eroded_ not by their failure to "do engineering" but their failure to meet self-imposed deadlines.  As a result, we end up with some unintended consequences, as shown in the table below. 
 
-|Planning Poker Focuses us on....                               |At the expense of...                                      |
-|---------------------------------------------------------------|----------------------------------------------------------|
-|What can we commit to in a two week window                     |Where we _should_ be headed in the long-term.             |
+|Planning Poker Focuses us on....                          |At the expense of...                                      |
+|----------------------------------------------------------|----------------------------------------------------------|
+|What can we commit to in a two-week window                |Where we _should_ be headed in the long-term.             |
 |Narrow goals, such as _what we estimated could be done in a given time_|The wider goals of the product or project in general|
-|Ability to estimate                                            |Concerns _aside_ from estimation (such as, are we making the software too complex, too hard to understand, to difficult to change).|
+|Ability to estimate                                       |Concerns _aside_ from estimation (such as, are we making the software too complex, too hard to understand, to difficult to change).|
 
 ## Fixing It
  
@@ -53,7 +56,7 @@ How can we convert a planning session away from being estimate-focused and back 
 - Consideration for what is going on longer-term in the project.
 - Consideration of risks besides how long something takes.  Sure, that's important, because it affects _value_, but it's not the only thing to worry about.
 - _Deciding what is important_ above _what can fit into a sprint_.
-- Making [Bets](../bets/Purpose-Development-Team.md):  what actions give the biggest [Payoff](../thinking/Glossary.md#payoff) for the least outlay?
+- Making [Bets](../bets/Purpose-Development-Team.md):  what actions give the biggest [Payoff](../thinking/Glossary.md#payoff) for the smallest [Stake](../thinking/Glossary.md#stake)?
 
 ## Risk-First Planning: An Example
 
@@ -80,17 +83,26 @@ For each of the tasks listed, there is some kind of [Payoff](../thinking/Glossar
 
 By fixing the rendering bug, we are trying to deal the problem that the software _demos badly_, and the risk that the potential customers don't trust that it will be worth their money.  Risk-First diagrams show chronology from left-to-right.  That is, on the left of the diagram is the world as it is now, whereas on the right is the world as it will be _after_ taking some actions.  To show that our action will eliminate some existing risk, we can strike it out by drawing a line through it.
 
-###### On a Risk-First diagram, if you are removing an existing risk by taking an action, you draw a line through the risk.
+##### On a Risk-First diagram, if you are removing an existing risk by taking an action, you draw a line through the risk.
 
 ## Question 2: What Is At Stake?
 
-Let's move on to task 2, the Search Function.  Again, there is a definite [Payoff](../thinking/Glossary.md#payoff) for implementing this:  we're going to remove some [Feature Risk](../risks/Feature-Risk.md), which is the risk (to us) that the features our product is supplying don't meet the client's (or the market's) requirements.  Writing code is all about identifying and removing [Feature Risk](../risks/Feature-Risk.md), and building products that fit the needs of their users.
+Let's move on to task 2, the **Search Function**.  
+
+Again, there is a definite [Payoff](../thinking/Glossary.md#payoff) for implementing this:  we're going to remove some [Feature Risk](../risks/Feature-Risk.md), which is the risk (to us) that the features our product is supplying don't meet the client's (or the market's) requirements.  Writing code is all about identifying and removing [Feature Risk](../risks/Feature-Risk.md), and building products that fit the needs of their users.
 
 ![Search Function](/images/generated/estimating/planner/example1-5.png)
 
-As in the Rendering Bug example, we can show [Feature Risk](../risks/Feature-Risk.md) being eliminated by showing it on the left with a strike-out line.   However, it's been established during analysis that the way to implement this feature is to introduce [ElasticSearch](https://www.elastic.co), a third-party piece of software.  This in itself is a risk:  are we going to find that easy to deploy and maintain?  What impact will this have on hosting charges?  Will it return useful results?  Will we be "tied in" to this dependency going forwards?
+As in the Rendering Bug example, we can show [Feature Risk](../risks/Feature-Risk.md) being eliminated by showing it on the left with a strike-out line.   However, it's been established during analysis that the way to implement this feature is to introduce [ElasticSearch](https://www.elastic.co), a third-party piece of software.  This in itself is a risk:  
 
-###### If an action leads to new risks, show them on the right side of the diagram.
+- Are we going to find that easy to deploy and maintain?  
+- What impact will this have on hosting charges?  
+- Will it return useful results, or require endless "tuning"?  
+- Will we be "tied in" to this dependency going forwards?
+
+##### If an action leads to new risks, show them on the right side of the diagram.
+
+To decide whether that's a bet worth taking, we need to ask the next question.
 
 ## Question 3:  What Is Our Goal?
 
@@ -110,14 +122,32 @@ In the above diagram, we are showing that by removing [Communication Risk](../ri
 
 ![Refactoring Subscriptions](/images/generated/estimating/planner/arrows.png)
 
-###### Show risks causing or preventing other risks using arrows
+##### Show risks causing or preventing other risks using arrows
 
-## Competing Goals
+## Question 4: What Has The Biggest Impact?
 
+So far, we've been looking at each task individually, and trying to model how it's going to affect the [Balance Of Risk]() on our project.  If you have plenty of spare talent and only a few tasks, then maybe that's enough and you can get to work on all the tasks that have a positive effect.   
+
+The likelihood is that you're going to have to choose the highest-impact tasks to work on. That is, those that have the greatest [Payoff]() for the least [Stake]().  
+
+
+## Objections
+
+### Hard Work?
+
+At this point, you might be thinking "this is a lot of work compared to Planning Poker, where I just have to pull a number out of my a**e every few minutes, representing how hard something is to do".  Well, yes.  I'm not going to sugar-coat this:  _product planning is actually really hard_.  What we've developed here is a way to visually represent the trade-offs in the decision making process, so that we can engage the whole team.
+
+ 
+
+
+### Competing Goals
 
 ![Goals](/images/generated/estimating/planner/goals.png)
 
-A confounding problem with goals is that _everyone has their own_.  While the business might be there to _make money_, everyone else on the project will have their own _personal_ goals (as you can see on the diagram above).  Where these are not aligned, we have the problem of [Agency Risk]().
+A confounding problem with goals is that _everyone has their own_.  While the business might be there to _make money_, everyone else on the project will have their own _personal_ goals (as you can see on the diagram above). 
+
+
+This s
 
 Let's consider the third task: refactoring the subscription model.
 
