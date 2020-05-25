@@ -1,15 +1,15 @@
 ---
-title: Risk-First Planning
-description: Part of the 'Estimating' Risk-First Series, looking at an alternative to Scrum's PLanning Poker
-url: https://riskfirst.org/estimating/Risk-First-Planning
-image: /images/generated/titles/Risk-First-Planning.png
-featuredimage: images/generated/single/Risk-First-Planning.png
+title: Risk-First Analysis
+description: Part of the 'Estimating' Risk-First Series, looking at an alternative to Scrum's Planning Poker
+url: https://riskfirst.org/estimating/Risk-First-Analysis
+image: /images/generated/titles/Risk-First-Analysis.png
+featuredimage: images/generated/single/Risk-First-Analysis.png
 categories:
  - Estimating
 order: 8
 ---
 
-# Risk-First Planning
+# Risk-First Analysis
 
 The previous article, [Fixing Scrum](Fixing-Scrum.md), examined Scrum's idea of "Sprints" and concluded:
 
@@ -130,6 +130,7 @@ So far, we've been looking at each task individually, and trying to model how it
 
 The likelihood is that you're going to have to choose the highest-impact tasks to work on. That is, those that have the greatest [Payoff]() for the least [Stake]().  
 
+In order to do this, let's put all the risks and tasks into a planner grid.
 
 ## Objections
 
@@ -137,14 +138,13 @@ The likelihood is that you're going to have to choose the highest-impact tasks t
 
 At this point, you might be thinking "this is a lot of work compared to Planning Poker, where I just have to pull a number out of my a**e every few minutes, representing how hard something is to do".  Well, yes.  I'm not going to sugar-coat this:  _product planning is actually really hard_.  What we've developed here is a way to visually represent the trade-offs in the decision making process, so that we can engage the whole team.
 
- 
-
-
 ### Competing Goals
 
 ![Goals](/images/generated/estimating/planner/goals.png)
 
 A confounding problem with goals is that _everyone has their own_.  While the business might be there to _make money_, everyone else on the project will have their own _personal_ goals (as you can see on the diagram above). 
+
+### 
 
 
 This s
