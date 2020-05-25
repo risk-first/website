@@ -144,12 +144,3 @@ Perhaps you have a different process?  Is there another one?  I'd really like to
 ## Coming Soon...
 
 In the next (currently unwritten) article, we'll bring this home by looking at testing, and look at the similarities across all of these different practices.  
-
-
- 
-
-
-
- 
-
-
