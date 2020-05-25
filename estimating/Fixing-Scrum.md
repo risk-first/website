@@ -126,4 +126,4 @@ But actually, we're now _three degrees_ away from the original problem of **tryi
 
 If the thesis that "90% of everything is waste" is true, then Planning Poker is _also_ a waste, and we should devise a planning process to avoid this.  
 
-In the [next article](Risk-First-Planning.md) we'll look at how we might do that.
+In the [next article](Risk-First-Analysis.md) we'll look at how we might do that.
