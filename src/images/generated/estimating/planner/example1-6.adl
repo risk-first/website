@@ -11,13 +11,13 @@
     
 
       
-  <mitigated id="37"><risk class="communication" id="17">Feature Access Risk</risk></mitigated><action xmlns="http://www.kite9.org/schema/adl" id="3">Refactor Subscriptions</action><risk class="goal" id="2">50K Subscribers By Q4</risk><align id="50" drawDirection="LEFT">
+  <mitigated id="37"><risk class="communication" id="17">Communication Risk</risk></mitigated><action xmlns="http://www.kite9.org/schema/adl" id="3">Refactor Subscriptions</action><risk class="goal" id="2">50K Subscribers By Q4</risk><align drawDirection="LEFT" id="50">
 				<from reference="3" id="50-1"/>
 				<to reference="17" id="50-3"/>
-			</align><link drawDirection="RIGHT" id="47">
-				<from reference="17" shape="strike" id="47-1"/>
-				<to reference="2" shape="arrow" id="47-3"/>
-			</link><align id="65" drawDirection="RIGHT">
+			</align><link id="47" drawDirection="RIGHT">
+				<from reference="17" id="47-1" shape="strike"/>
+				<to reference="2" id="47-3" shape="arrow"/>
+			</link><align drawDirection="RIGHT" id="65">
 				<from reference="3" id="65-1"/>
 				<to reference="2" id="65-3"/>
 			</align></diagram>
