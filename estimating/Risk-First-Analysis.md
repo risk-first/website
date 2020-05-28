@@ -132,6 +132,9 @@ The likelihood is that you're going to have to choose the highest-impact tasks t
 
 In order to do this, let's put all the risks and tasks into a planner grid.
 
+
+
+
 ## Objections
 
 ### Hard Work?
@@ -144,7 +147,13 @@ At this point, you might be thinking "this is a lot of work compared to Planning
 
 A confounding problem with goals is that _everyone has their own_.  While the business might be there to _make money_, everyone else on the project will have their own _personal_ goals (as you can see on the diagram above). 
 
-### 
+### The Participation Problem
+
+One argument made _for_ the planning game is that it gives everyone on the development team a voice.  In fact, this might be the biggest contribution of Planning Poker, and we definitely don't want to lose that.
+
+In fact, we've not looked at how Risk-First Analysis can be _gamified_ in the way that Planning Poker is, and that is the subject of the next article, in which we show how this process can be made _fun to do_.
+
+ 
 
 
 This s
