@@ -49,8 +49,8 @@
       <planner-cell id="pc5"><risk class="goal" id="2">50K Subscribers</risk></planner-cell>
       <planner-cell id="pc6"><mitigated id="10"><risk class="trust" id="8">
 					Trust Risk
-					</risk></mitigated><action id="9">Fix Rendering Bug</action></planner-cell>
-      <planner-cell id="pc7"/>
+					</risk></mitigated></planner-cell>
+      <planner-cell id="pc7"><action id="9">Fix Rendering Bug</action></planner-cell>
       <planner-cell id="pc8"><risk class="software-dependency" id="7">Software Dependency Risk
 					</risk></planner-cell>
       <planner-cell id="pc9"/>
@@ -76,23 +76,23 @@
       
   <link id="13">
 				<from reference="3" id="13-1"/>
-				<to reference="6" shape="barbed-arrow" id="13-3"/>
+				<to reference="6" id="13-3" shape="barbed-arrow"/>
 			</link><link id="21">
 				<from reference="6" id="21-1"/>
-				<to reference="19" shape="barbed-arrow" id="21-3"/>
-			</link><link drawDirection="RIGHT" id="22">
+				<to reference="19" id="21-3" shape="barbed-arrow"/>
+			</link><link id="22" drawDirection="RIGHT">
 				
-				<to reference="2" shape="barbed-arrow" id="22-3"/>
-			<from reference="c2" shape="strike" id="22-1"/></link><link id="15" drawDirection="RIGHT">
+				<to reference="2" id="22-3" shape="barbed-arrow"/>
+			<from reference="c2" id="22-1" shape="strike"/></link><link drawDirection="RIGHT" id="15">
 				<from reference="c2" id="15-1"/>
-				<to reference="14" id="15-3" shape="barbed-arrow"/>
+				<to reference="14" shape="barbed-arrow" id="15-3"/>
 			</link><link id="20">
 				<from reference="4" id="20-1"/>
-				<to reference="5" shape="barbed-arrow" id="20-3"/>
+				<to reference="5" id="20-3" shape="barbed-arrow"/>
 			</link><link id="24">
 				<from reference="5" id="24-1"/>
-				<to reference="7" id="24-3" shape="barbed-arrow"/>
-			</link><align drawDirection="DOWN" id="18-0">
+				<to reference="7" shape="barbed-arrow" id="24-3"/>
+			</link><align id="18-0" drawDirection="DOWN">
 				<from reference="9" id="18-0-1"/>
 				<to reference="5" id="18-0-3"/>
 			</align></diagram>
