@@ -45,8 +45,7 @@
         
       <action id="14">Refactor Subscriptions</action></planner-cell>
       
-      <planner-cell id="pc4"><risk class="software-dependency" id="7">Software Dependency Risk
-					</risk></planner-cell>
+      <planner-cell id="pc4"/>
       <planner-cell id="pc5"><risk class="goal" id="2">50K Subscribers</risk></planner-cell>
       <planner-cell id="pc6"><mitigated id="16"><risk class="feature" id="4">Feature Risk</risk></mitigated><action id="5">Build A Search Function</action></planner-cell>
       <planner-cell id="pc7"/>
@@ -57,7 +56,8 @@
 					Trust Risk
 					</risk></mitigated><action id="9">Fix Rendering Bug</action></planner-cell>
       <planner-cell id="pc12"/>
-      <planner-cell id="pc13"/>
+      <planner-cell id="pc13"><risk class="software-dependency" id="7">Software Dependency Risk
+					</risk></planner-cell>
       <planner-cell id="pc14"/>
       
       <planner-cell id="pc16"><mitigated id="17"><risk class="coordination" id="3">Coordination Risk</risk></mitigated></planner-cell>
@@ -77,9 +77,6 @@
   <align id="3-0" drawDirection="DOWN">
 				<from reference="c2" id="3-0-1"/>
 				<to reference="4" id="3-0-3"/>
-			</align><align id="3-1" drawDirection="DOWN">
-				<from reference="4" id="3-1-1"/>
-				<to reference="8" id="3-1-3"/>
 			</align><link id="13">
 				<from reference="3" id="13-1"/>
 				<to reference="6" id="13-3" shape="barbed-arrow"/>
@@ -101,8 +98,5 @@
 			</link><link id="24">
 				<from reference="5" id="24-1"/>
 				<to reference="7" shape="barbed-arrow" id="24-3"/>
-			</link><align id="11">
-				<from reference="5" id="1"/>
-				<to reference="9" id="12"/>
-			</align></diagram>
+			</link></diagram>
 </svg:svg>
