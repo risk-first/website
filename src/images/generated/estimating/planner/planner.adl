@@ -66,7 +66,7 @@
 				<mitigated id="17"><risk class="coordination" id="3">Coordination Risk</risk></mitigated></container></planner-cell>
       <planner-cell id="pc17"/>
       <planner-cell id="pc18"><action id="6">Fix CI Pipeline</action></planner-cell>
-      <planner-cell id="pc19"/>
+      
       <planner-cell id="pc20"/>
       
       <planner-cell id="pc22"/>
@@ -77,32 +77,32 @@
      
     </planner>
       
-  <align id="3-0" drawDirection="DOWN">
+  <align drawDirection="DOWN" id="3-0">
 				<from reference="c2" id="3-0-1"/>
 				<to reference="4" id="3-0-3"/>
-			</align><align id="3-1" drawDirection="DOWN">
+			</align><align drawDirection="DOWN" id="3-1">
 				<from reference="4" id="3-1-1"/>
 				<to reference="8" id="3-1-3"/>
 			</align><link id="13">
 				<from reference="3" id="13-1"/>
-				<to reference="6" id="13-3" shape="barbed-arrow"/>
+				<to reference="6" shape="barbed-arrow" id="13-3"/>
 			</link><link id="21">
 				<from reference="6" id="21-1"/>
-				<to reference="19" id="21-3" shape="barbed-arrow"/>
-			</link><link id="22" drawDirection="RIGHT">
+				<to reference="19" shape="barbed-arrow" id="21-3"/>
+			</link><link drawDirection="RIGHT" id="22">
 				
-				<to reference="2" id="22-3" shape="barbed-arrow"/>
-			<from reference="c2" id="22-1" shape="strike"/></link><align id="11-0" drawDirection="DOWN">
+				<to reference="2" shape="barbed-arrow" id="22-3"/>
+			<from reference="c2" shape="strike" id="22-1"/></link><align drawDirection="DOWN" id="11-0">
 				<from reference="8" id="11-0-1"/>
 				<to reference="3" id="11-0-3"/>
-			</align><link drawDirection="RIGHT" id="15">
+			</align><link id="15" drawDirection="RIGHT">
 				<from reference="c2" id="15-1"/>
-				<to reference="14" shape="barbed-arrow" id="15-3"/>
+				<to reference="14" id="15-3" shape="barbed-arrow"/>
 			</link><link id="20">
 				<from reference="4" id="20-1"/>
-				<to reference="5" id="20-3" shape="barbed-arrow"/>
+				<to reference="5" shape="barbed-arrow" id="20-3"/>
 			</link><link id="24">
 				<from reference="5" id="24-1"/>
-				<to reference="7" shape="barbed-arrow" id="24-3"/>
+				<to reference="7" id="24-3" shape="barbed-arrow"/>
 			</link></diagram>
 </svg:svg>
