@@ -19,7 +19,7 @@ The previous article, [Fixing Scrum](Fixing-Scrum.md), examined Scrum's idea of 
 
 - In order to meet this deadline (and because estimating is so hard) the Sprint must be planned carefully by the whole team, in a session of **Planning Poker**.
 
-![Scrum: Consequences Of Time-Boxing](/images/generated/estimating/planner/scrum6.png)
+![Scrum: Consequences Of Time-Boxing](/images/generated/estimating/planner/scrum-consequences.png)
 
 The diagram above shows this behaviour in the form of a [Risk-First Diagram](../overview/Risk-First-Diagrams.md).
 
@@ -64,7 +64,7 @@ I'm going to suggest a different approach to planning, which allows you to focus
 
 I'll walk through what this looks like by example to show how it works and then we can see if it addresses some of the issues with Scrum planning we've looked at.  
 
-![Use-Cases](/images/generated/estimating/planner/example1.png)
+![Use-Cases](/images/generated/estimating/planner/use-cases.png)
 
 In the diagram above, there are four tasks pulled off the backlog for consideration.  (Obviously, we're keeping this simple - you might be looking at plenty more than this in a big team).  We've got four simple ones for our product here:  
  
@@ -79,7 +79,7 @@ As it stands, it is impossible to say what we should be tackling next.  In order
 
 For each of the tasks listed, there is some kind of [Payoff](../thinking/Glossary.md#payoff) for performing them.   That is, our circumstances improve from doing the task.  On a Risk-First diagram, actions are shown in "sign-post" style boxes.
 
-![Rendering Bug](/images/generated/estimating/planner/example1-4.png)
+![Rendering Bug](/images/generated/estimating/planner/rendering.png)
 
 By fixing the rendering bug, we are trying to deal the problem that the software _demos badly_, and the risk that the potential customers don't trust that it will be worth their money.  Risk-First diagrams show chronology from left-to-right.  That is, on the left of the diagram is the world as it is now, whereas on the right is the world as it will be _after_ taking some actions.  To show that our action will eliminate some existing risk, we can strike it out by drawing a line through it.
 
@@ -91,7 +91,7 @@ Let's move on to task 2, the **Search Function**.
 
 Again, there is a definite [Payoff](../thinking/Glossary.md#payoff) for implementing this:  we're going to remove some [Feature Risk](../risks/Feature-Risk.md), which is the risk (to us) that the features our product is supplying don't meet the client's (or the market's) requirements.  Writing code is all about identifying and removing [Feature Risk](../risks/Feature-Risk.md), and building products that fit the needs of their users.
 
-![Search Function](/images/generated/estimating/planner/example1-5.png)
+![Search Function](/images/generated/estimating/planner/search.png)
 
 As in the Rendering Bug example, we can show [Feature Risk](../risks/Feature-Risk.md) being eliminated by showing it on the left with a strike-out line.   However, it's been established during analysis that the way to implement this feature is to introduce [ElasticSearch](https://www.elastic.co), a third-party piece of software.  This in itself is a risk:  
 
@@ -116,13 +116,29 @@ If we are a startup with some investors, they might have set us the goal themsel
 
 As you can see in this diagram _goals_ look very similar to _risks_.  This is by design:  a _goal_ is really an "upside risk":  it's a possible future, but one we'd like to _move towards_ instead of _away from_.
 
-![Refactoring Subscriptions](/images/generated/estimating/planner/example1-6.png)
+Risk-First diagrams show Actions _moving us away_ from one set of risks, and _moving to_ others on a "[Risk Landscape](../risks/Risk-Landscape.md)".
+
+![Refactoring Subscriptions](/images/generated/estimating/planner/refactoring.png)
 
 In the above diagram, we are showing that by removing [Communication Risk](../risks/Communication-Risk.md) around our product, we are _improving_ our chances of reaching the goal of 50K subscribers.  Also, we are showing in the diagram (via the arrow) that our _[Communication Risk](../risks/Communication-Risk.md)_ issues are impeding that goal.  That's a big assumption - it could well be that the users don't complete the upgrade for other reasons.  Maybe they find out the price during the upgrade and are put off, or they are being forced onto the upgrade screen by some dark patterns, but actually have no intention of upgrading the product at all.
 
 ![Refactoring Subscriptions](/images/generated/estimating/planner/arrows.png)
 
 ##### Show risks causing or preventing other risks using arrows
+
+### Competing Goals
+
+![Goals](/images/generated/estimating/planner/goals.png)
+
+A confounding problem with goals is that _everyone has their own_.  While the business might be there to _make money_, everyone else on the project will have their own _personal_ goals (as you can see on the diagram above).   
+
+Let's look at the "Fix the Continuous Integration Pipeline" task.  It might turn out that we have competing goals here:  the Development Team might want to spend time on this task, as the existing, poor CI tooling is damaging productivity and causing acrimony in the team.  No one wants to work in an unproductive environment.
+
+![Goals](/images/generated/estimating/planner/ci.png)
+
+That said, the product owners might worry about a different risk:  while diverting part of the development effort to fixing CI might help productivity _in the long term_, it might add pressure to the schedule _in the short term_, and delay other important tasks from getting done, as shown in the above diagram.    
+
+##### The rounded-corner containers with bold titles show _who a risk affects_.  
 
 ## Question 4: What Has The Biggest Impact?
 
@@ -132,6 +148,16 @@ The likelihood is that you're going to have to choose the highest-impact tasks t
 
 In order to do this, let's put all the risks and tasks into a planner grid.
 
+![Use-Cases With Risk Profiles](/images/generated/estimating/planner/planner.png)
+
+In the diagram above, we've simply put all of the actions and risks into a _planner grid_.  This two-dimensional grid allows us to sort the actions and the risks according to _when_ they will occur (horizontally) and _how important they are_ (vertically).  
+
+In the planning process, this is likely to be where most of the discussion and argument lies:  positioning risks and actions is highly subjective.   Different teams might end up with different ways of doing that:  a product owner or key stake-holder might make this decision _autocratically_, or perhaps the team will "vote" in some way for the ordering.   
+
+We've talked about [Decision Making](../risks/Coordination-Risk#decision-making) before, but we'll get into ways to approach this in more detail in the [next section]().  But for now, let's talk about in which ways this is better or worse than Planning Poker.
+
+## Advantages
+
 
 
 
@@ -140,12 +166,6 @@ In order to do this, let's put all the risks and tasks into a planner grid.
 ### Hard Work?
 
 At this point, you might be thinking "this is a lot of work compared to Planning Poker, where I just have to pull a number out of my a**e every few minutes, representing how hard something is to do".  Well, yes.  I'm not going to sugar-coat this:  _product planning is actually really hard_.  What we've developed here is a way to visually represent the trade-offs in the decision making process, so that we can engage the whole team.
-
-### Competing Goals
-
-![Goals](/images/generated/estimating/planner/goals.png)
-
-A confounding problem with goals is that _everyone has their own_.  While the business might be there to _make money_, everyone else on the project will have their own _personal_ goals (as you can see on the diagram above). 
 
 ### The Participation Problem
 
