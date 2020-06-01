@@ -7,6 +7,8 @@ categories:
  - Overview
 order: 4
 featuredimage: images/generated/single/Quick-Summary.png
+redirect_from: 
+ - /Quick-Summary
 ---
 
 # Quick Summary

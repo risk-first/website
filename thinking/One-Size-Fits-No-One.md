@@ -9,6 +9,8 @@ categories:
  - News
 order: 8
 date: 2019-01-22 16:32:03 +0000
+redirect_from: 
+ - /One-Size-Fits-No-One
 ---
 
 # One Size Fits No-One

@@ -7,6 +7,8 @@ categories:
  - Thinking Risk-First
 featuredimage: images/generated/single/A-Simple-Scenario.png
 order: 1
+redirect_from: 
+ - /A-Simple-Scenario
 ---
 
 # A Simple Scenario

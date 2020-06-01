@@ -7,6 +7,8 @@ featuredimage: images/generated/single/Evaluating-Risk.png
 categories:
  - Thinking Risk-First
 order: 5
+redirect_from: 
+ - /Evaluating-Risk
 ---
 
 # Evaluating Risk

@@ -8,6 +8,8 @@ date: 1-1-2018
 categories:
  - Risks
 order: 1
+redirect_from: 
+ - /Risk-Landscape
 ---
 
 # The Risk Landscape

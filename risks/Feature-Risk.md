@@ -7,6 +7,8 @@ featuredimage: images/generated/single/Feature-Risk.png
 order: 2
 categories:
  - Risks
+redirect_from: 
+ - /Feature-Risk
 ---
 
 # Feature Risk

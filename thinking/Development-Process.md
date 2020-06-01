@@ -7,6 +7,8 @@ featuredimage: images/generated/single/Development-Process.png
 order: 2
 categories:
  - Thinking Risk-First
+redirect_from: 
+ - /Development-Process
 ---
 
 # Development Process

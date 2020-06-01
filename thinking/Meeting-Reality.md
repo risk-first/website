@@ -7,6 +7,8 @@ featuredimage: images/generated/single/Meeting-Reality.png
 categories:
  - Thinking Risk-First
 order: 3
+redirect_from: 
+ - /Meeting-Reality
 ---
 
 # Meeting Reality

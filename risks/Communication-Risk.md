@@ -7,6 +7,8 @@ featuredimage: images/generated/single/Communication-Risk.png
 order: 3
 categories:
  - Risks
+redirect_from: 
+ - /Communication-Risk
 ---
 
 # Communication Risk
