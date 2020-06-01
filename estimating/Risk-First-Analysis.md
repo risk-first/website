@@ -158,7 +158,7 @@ We've talked about [Decision Making](../risks/Coordination-Risk#decision-making)
 
 ## Advantages
 
-
+- **We've made explicit the trade-offs for carrying out pieces of work**.  If _building the right thing_ is the most important thing we can do, then making sure the whole team are on the same page with respect to 
 
 
 ## Objections
