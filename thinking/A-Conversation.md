@@ -7,6 +7,8 @@ featuredimage: images/generated/single/A-Conversation.png
 categories: 
  - Thinking Risk-First
 order: 7
+redirect_from: 
+ - /A-Conversation
 ---
 
 

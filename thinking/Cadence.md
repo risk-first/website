@@ -7,6 +7,8 @@ featuredimage: images/generated/single/Cadence.png
 categories:
  - Thinking Risk-First
 order: 6
+redirect_from: 
+ - /Cadence
 ---
 
 # Cadence

@@ -8,6 +8,8 @@ categories:
  - Overview
 order: 5
 next: Thinking-Risk-First
+redirect_from: 
+ - /Contributors
 ---
 
 # Contributors

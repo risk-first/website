@@ -7,6 +7,8 @@ featuredimage: images/generated/single/Glossary.png
 categories:
  - Thinking Risk-First
 order: 9
+redirect_from: 
+ - /Glossary
 ---
 
 # Glossary

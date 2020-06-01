@@ -7,6 +7,8 @@ featuredimage: images/generated/single/Software-Dependency-Risk.png
 order: 8
 categories:
  - Risks
+redirect_from: 
+ - /Software-Dependency-Risk
 ---
 
 # Software Dependency Risk

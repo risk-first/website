@@ -7,6 +7,8 @@ featuredimage: images/generated/single/Operational-Risk.png
 order: 14
 categories:
  - Risks
+redirect_from: 
+ - /Operational-Risk
 ---
 
 # Operational Risk

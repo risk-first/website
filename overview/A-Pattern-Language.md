@@ -7,6 +7,8 @@ featuredimage: images/generated/single/A-Pattern-Language.png
 categories: 
  - Overview
 order: 2
+redirect_from: 
+ - /A-Pattern-Language
 ---
 
 # A Pattern Language

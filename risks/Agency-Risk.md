@@ -7,6 +7,8 @@ categories:
  - Risks
 featuredimage: images/generated/single/Agency-Risk.png
 order: 11
+redirect_from: 
+ - /Agency-Risk
 ---
 
 # Agency Risk

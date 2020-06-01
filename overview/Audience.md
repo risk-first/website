@@ -7,6 +7,8 @@ categories:
  - Overview
 featuredimage: images/generated/single/Audience.png
 order: 3
+redirect_from: 
+ - /Audience
 ---
 
 # Audience 

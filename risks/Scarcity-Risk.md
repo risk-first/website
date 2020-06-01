@@ -7,6 +7,8 @@ featuredimage: images/generated/single/Scarcity-Risk.png
 order: 6
 categories:
  - Risks
+redirect_from: 
+ - /Scarcity-Risk
 ---
 
 # Scarcity Risk

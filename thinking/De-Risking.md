@@ -7,6 +7,8 @@ featuredimage: images/generated/single/De-Risking.png
 categories:
  - Thinking Risk-First
 order: 6
+redirect_from: 
+ - /De-Risking
 ---
 
 # De-Risking

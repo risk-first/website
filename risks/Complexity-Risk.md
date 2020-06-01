@@ -7,6 +7,8 @@ featuredimage: images/generated/single/Complexity-Risk.png
 order: 4
 categories:
  - Risks
+redirect_from: 
+ - /Complexity-Risk
 ---
 
 # Complexity Risk

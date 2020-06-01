@@ -7,6 +7,8 @@ featuredimage: images/generated/single/Process-Risk.png
 order: 9
 categories:
  - Risks
+redirect_from: 
+ - /Process-Risk
 ---
 
 # Process Risk

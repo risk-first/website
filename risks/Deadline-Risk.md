@@ -7,6 +7,8 @@ featuredimage: images/generated/single/Deadline-Risk.png
 order: 7
 categories:
  - Risks
+redirect_from: 
+ - /Deadline-Risk
 ---
 
 # Deadline Risk

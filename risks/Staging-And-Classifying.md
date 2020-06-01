@@ -7,6 +7,8 @@ featuredimage: images/generated/single/Staging-And-Classifying.png
 order: 15
 categories:
  - Risks
+redirect_from: 
+ - /Staging-And-Classifying
 ---
 
 # Staging and Classifying

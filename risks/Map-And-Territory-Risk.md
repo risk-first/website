@@ -8,6 +8,8 @@ featuredimage: images/generated/single/Map-And-Territory-Risk.png
 order: 13
 categories:
  - Risks
+redirect_from: 
+ - /Map-And-Territory-Risk
 ---
 
 # Map And Territory Risk

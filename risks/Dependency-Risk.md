@@ -7,6 +7,8 @@ featuredimage: images/generated/single/Dependency-Risk.png
 order: 5
 categories:
  - Risks
+redirect_from: 
+ - /Dependency-Risk
 ---
 
 # Dependency Risk

@@ -9,6 +9,8 @@ categories:
 order: 6
 featuredimage: images/generated/single/Risk-First-Diagrams.png
 date: 2019-10-02 16:32:03 +0000
+redirect_from: 
+ - /Risk-First-Diagrams
 ---
 
 

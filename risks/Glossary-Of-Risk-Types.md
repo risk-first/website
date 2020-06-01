@@ -7,6 +7,8 @@ featuredimage: images/generated/single/Glossary-Of-Risk-Types.png
 categories:
  - Risks
 order: 16
+redirect_from: 
+ - /Glossary-Of-Risk-Types
 ---
 
 

@@ -7,6 +7,8 @@ featuredimage: images/generated/single/Boundary-Risk.png
 order: 10
 categories:
  - Risks
+redirect_from: 
+ - /Boundary-Risk
 ---
 
 # Boundary Risk
