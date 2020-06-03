@@ -54,14 +54,14 @@
       <planner-cell id="pc8"/>
       <planner-cell id="pc9"/>
       
-      <planner-cell id="pc11"><mitigated id="17"><risk id="3" votes="" class="coordination" xmlns="http://www.kite9.org/schema/adl">Coordination Risk</risk></mitigated></planner-cell>
+      <planner-cell id="pc11"><mitigated id="17"><risk id="3" votes="" class="coordination" xmlns="http://www.kite9.org/schema/adl">Coordination Risk</risk></mitigated><action id="6">Fix CI Pipeline</action></planner-cell>
       <planner-cell id="pc12"/>
       <planner-cell id="pc13"/>
       <planner-cell id="pc14"/>
       
       <planner-cell id="pc16"/>
       <planner-cell id="pc17"/>
-      <planner-cell id="pc18"><action id="6">Fix CI Pipeline</action></planner-cell>
+      <planner-cell id="pc18"/>
       
       <planner-cell id="pc20"><risk id="19" votes="" class="schedule" xmlns="http://www.kite9.org/schema/adl">Schedule Risk</risk></planner-cell>
       
@@ -76,6 +76,6 @@
       
   <link id="22">
 				
-				<to reference="2" id="22-3" shape="barbed-arrow"/>
-			<from reference="c2" id="22-1" shape="strike"/></link></diagram>
+				<to reference="2" shape="barbed-arrow" id="22-3"/>
+			<from reference="c2" shape="strike" id="22-1"/></link></diagram>
 </svg:svg>
