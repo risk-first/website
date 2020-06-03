@@ -40,13 +40,13 @@
       </planner-header>
       <planner-cell id="pc1">
         
-      <mitigated id="23"><risk id="c2" votes="" class="communication" xmlns="http://www.kite9.org/schema/adl">Communication Risk</risk></mitigated><action id="14">Refactor Subscriptions</action></planner-cell>
+      <mitigated id="23"><risk id="c2" votes="" class="communication" xmlns="http://www.kite9.org/schema/adl">Communication Risk</risk></mitigated><action id="14">Refactor Subscriptions</action><risk class="goal" id="2">50K Subscribers</risk></planner-cell>
       <planner-cell id="pc2">
         
       </planner-cell>
       
       <planner-cell id="pc4"/>
-      <planner-cell id="pc5"><risk class="goal" id="2">50K Subscribers</risk></planner-cell>
+      <planner-cell id="pc5"/>
       <planner-cell id="pc6"><mitigated id="10"><risk id="8" votes="" class="trust" xmlns="http://www.kite9.org/schema/adl">
 					Trust Risk
 					</risk></mitigated><action id="9">Fix Rendering Bug</action></planner-cell>
@@ -76,6 +76,6 @@
       
   <link id="22">
 				
-				<to reference="2" shape="barbed-arrow" id="22-3"/>
-			<from reference="c2" shape="strike" id="22-1"/></link></diagram>
+				<to reference="2" id="22-3" shape="barbed-arrow"/>
+			<from reference="c2" id="22-1" shape="strike"/></link></diagram>
 </svg:svg>
