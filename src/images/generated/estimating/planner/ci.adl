@@ -14,13 +14,10 @@
 				<group id="6">
           <action id="2">Fix CI Pipeline</action><description id="6-1">Arguments in the team due to 
 destructive merging and clashing commits</description>
-			  <mitigated id="4"><risk class="coordination" id="3">Coordination Risk</risk></mitigated></group></container><container style="kite9-min-size: 60pt 60pt" id="10">
+			  <mitigated id="4"><risk class="coordination" xmlns="http://www.kite9.org/schema/adl" id="3">Coordination Risk</risk></mitigated></group></container><container style="kite9-min-size: 60pt 60pt" id="10">
 
 				<label id="10-1">Business</label>
-				<channel-artifact id="9">Schedule Risk</channel-artifact></container><link id="12">
-				<from reference="3" id="12-1"/>
-				<to reference="9" id="12-3" shape="barbed-arrow"/>
-			</link><align id="14" drawDirection="LEFT">
+				<channel-artifact id="9">Schedule Risk</channel-artifact></container><align drawDirection="LEFT" id="14">
 				<from reference="2" id="14-1"/>
 				<to reference="9" id="14-3"/>
 			</align></diagram>
