@@ -47,15 +47,15 @@
       
       <planner-cell id="pc4"/>
       <planner-cell id="pc5"><risk class="goal" id="2">50K Subscribers</risk></planner-cell>
-      <planner-cell id="pc6"/>
+      <planner-cell id="pc6"><mitigated id="10"><risk id="8" votes="" class="trust" xmlns="http://www.kite9.org/schema/adl">
+					Trust Risk
+					</risk></mitigated></planner-cell>
       <planner-cell id="pc7"/>
       <planner-cell id="pc8"><risk id="7" votes="" class="software-dependency" xmlns="http://www.kite9.org/schema/adl">Software Dependency Risk
 					</risk></planner-cell>
       <planner-cell id="pc9"/>
       
-      <planner-cell id="pc11"><mitigated id="10"><risk id="8" votes="" class="trust" xmlns="http://www.kite9.org/schema/adl">
-					Trust Risk
-					</risk></mitigated><action id="9">Fix Rendering Bug</action></planner-cell>
+      <planner-cell id="pc11"><action id="9">Fix Rendering Bug</action></planner-cell>
       <planner-cell id="pc12"/>
       <planner-cell id="pc13"/>
       <planner-cell id="pc14"/>
@@ -76,6 +76,6 @@
       
   <link id="22">
 				
-				<to reference="2" id="22-3" shape="barbed-arrow"/>
-			<from reference="c2" id="22-1" shape="strike"/></link></diagram>
+				<to reference="2" shape="barbed-arrow" id="22-3"/>
+			<from reference="c2" shape="strike" id="22-1"/></link></diagram>
 </svg:svg>
