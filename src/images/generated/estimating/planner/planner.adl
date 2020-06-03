@@ -47,7 +47,7 @@
       
       <planner-cell id="pc4"/>
       <planner-cell id="pc5"><risk class="goal" id="2">50K Subscribers</risk></planner-cell>
-      <planner-cell id="pc6"><mitigated id="16"/></planner-cell>
+      <planner-cell id="pc6"/>
       <planner-cell id="pc7"/>
       <planner-cell id="pc8"><risk id="7" votes="" class="software-dependency" xmlns="http://www.kite9.org/schema/adl">Software Dependency Risk
 					</risk></planner-cell>
@@ -66,7 +66,7 @@
       
       <planner-cell id="pc20"><risk id="19" votes="" class="schedule" xmlns="http://www.kite9.org/schema/adl">Schedule Risk</risk></planner-cell>
       
-      <planner-cell id="pc22"><risk id="4" votes="" class="feature" xmlns="http://www.kite9.org/schema/adl">Feature Risk</risk><action id="5">Build A Search Function</action></planner-cell>
+      <planner-cell id="pc22"><risk id="4" votes="" class="feature" xmlns="http://www.kite9.org/schema/adl">Feature Risk</risk><mitigated id="16"/><action id="5">Build A Search Function</action></planner-cell>
       <planner-cell id="pc23"/>
       <planner-cell id="pc24"/>
       <planner-cell id="pc25"/>
@@ -76,6 +76,6 @@
       
   <link id="22">
 				
-				<to reference="2" shape="barbed-arrow" id="22-3"/>
-			<from reference="c2" shape="strike" id="22-1"/></link></diagram>
+				<to reference="2" id="22-3" shape="barbed-arrow"/>
+			<from reference="c2" id="22-1" shape="strike"/></link></diagram>
 </svg:svg>
