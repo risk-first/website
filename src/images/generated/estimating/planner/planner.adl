@@ -11,8 +11,6 @@
     
 
     <planner style="kite9-grid-size: 2 30; ">
-      <planner-header style="kite9-occupies: 0 0; ">
-      </planner-header>
       <planner-header style="kite9-occupies: 0 1; ">
         <label style="kite9-label-placement: left " id="l1">High</label>
       </planner-header>
@@ -48,11 +46,11 @@
       
   <link id="22">
 				
-				<to reference="2" shape="barbed-arrow" id="22-3"/>
-			<from reference="c2" shape="strike" id="22-1"/></link><align drawDirection="RIGHT" id="15-0">
+				<to reference="2" id="22-3" shape="barbed-arrow"/>
+			<from reference="c2" id="22-1" shape="strike"/></link><align id="15-0" drawDirection="RIGHT">
 				<from reference="23" id="15-0-1"/>
 				<to reference="14" id="15-0-3"/>
-			</align><align drawDirection="RIGHT" id="15-1">
+			</align><align id="15-1" drawDirection="RIGHT">
 				<from reference="14" id="15-1-1"/>
 				<to reference="2" id="15-1-3"/>
 			</align></diagram>
