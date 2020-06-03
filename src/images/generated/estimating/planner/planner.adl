@@ -40,13 +40,13 @@
       </planner-header>
       <planner-cell id="pc1">
         
-      <mitigated id="23"><risk id="c2" votes="" class="communication" xmlns="http://www.kite9.org/schema/adl">Communication Risk</risk></mitigated></planner-cell>
+      <mitigated id="23"><risk id="c2" votes="" class="communication" xmlns="http://www.kite9.org/schema/adl">Communication Risk</risk></mitigated><risk class="goal" id="2">50K Subscribers</risk></planner-cell>
       <planner-cell id="pc2">
         
       <action id="14">Refactor Subscriptions</action></planner-cell>
       
       <planner-cell id="pc4"/>
-      <planner-cell id="pc5"><risk class="goal" id="2">50K Subscribers</risk></planner-cell>
+      <planner-cell id="pc5"/>
       <planner-cell id="pc6"><mitigated id="16"><risk id="4" votes="" class="feature" xmlns="http://www.kite9.org/schema/adl">Feature Risk</risk></mitigated><action id="5">Build A Search Function</action></planner-cell>
       <planner-cell id="pc7"/>
       <planner-cell id="pc8"><risk id="7" votes="" class="software-dependency" xmlns="http://www.kite9.org/schema/adl">Software Dependency Risk
@@ -74,11 +74,11 @@
      
     </planner>
       
-  <link id="22" drawDirection="RIGHT">
+  <link drawDirection="RIGHT" id="22">
 				
-				<to reference="2" id="22-3" shape="barbed-arrow"/>
-			<from reference="c2" id="22-1" shape="strike"/></link><link drawDirection="RIGHT" id="15">
+				<to reference="2" shape="barbed-arrow" id="22-3"/>
+			<from reference="c2" shape="strike" id="22-1"/></link><link id="15" drawDirection="RIGHT">
 				<from reference="c2" id="15-1"/>
-				<to reference="14" shape="barbed-arrow" id="15-3"/>
+				<to reference="14" id="15-3" shape="barbed-arrow"/>
 			</link></diagram>
 </svg:svg>
