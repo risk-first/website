@@ -10,7 +10,9 @@
   <diagram xmlns="http://www.kite9.org/schema/adl" k9-ui="xml" id="diagram" k9-contains="">
     
 
-    <planner style="kite9-grid-size: 4 30; ">
+    <planner style="kite9-grid-size: 5 30; ">
+      <planner-header style="kite9-occupies: 0 0; ">
+      </planner-header>
       <planner-header style="kite9-occupies: 0 1; ">
         <label style="kite9-label-placement: left " id="l1">High</label>
       </planner-header>
@@ -21,6 +23,21 @@
       </planner-header>
       <planner-header style="kite9-occupies: 0 4; ">
       </planner-header>
+      <planner-header style="kite9-occupies: 0 5; ">
+       <label style="kite9-label-placement: left; " id="l3">Low</label> 
+      </planner-header>
+      <planner-header style="kite9-occupies: 2 0; ">
+        <label id="l4">Today</label>
+      </planner-header> 
+      <planner-header style="kite9-occupies: 3 0; ">
+        <label id="l5">This Week</label>
+      </planner-header>
+      <planner-header style="kite9-occupies: 4 0; ">
+        <label id="l6">This Month</label>
+      </planner-header>
+      <planner-header style="kite9-occupies: 6 0; ">
+        <label id="l8">By Q4</label>
+      </planner-header>
       <planner-cell id="pc1">
         
       <mitigated id="23"><risk class="communication" id="c2">Communication Risk</risk></mitigated></planner-cell>
@@ -28,29 +45,29 @@
         
       <action id="14">Refactor Subscriptions</action></planner-cell>
       
-      
+      <planner-cell id="pc4"/>
       <planner-cell id="pc5"><risk class="goal" id="2">50K Subscribers</risk></planner-cell>
       <planner-cell id="pc6"><mitigated id="16"><risk class="feature" id="4">Feature Risk</risk></mitigated><action id="5">Build A Search Function</action></planner-cell>
-      
+      <planner-cell id="pc7"/>
       <planner-cell id="pc8"/>
-      <planner-cell id="pc9"/>
+      <planner-cell id="pc9"><arrow id="11">Link Body</arrow></planner-cell>
       
       <planner-cell id="pc11"><mitigated id="10"/><risk class="trust" id="8">
 					Trust Risk
 					</risk><action id="9">Fix Rendering Bug</action></planner-cell>
-      
+      <planner-cell id="pc12"/>
       <planner-cell id="pc13"><risk class="software-dependency" id="7">Software Dependency Risk
 					</risk></planner-cell>
       <planner-cell id="pc14"/>
       
       <planner-cell id="pc16"><mitigated id="17"><risk class="coordination" id="3">Coordination Risk</risk></mitigated></planner-cell>
-      
+      <planner-cell id="pc17"/>
       <planner-cell id="pc18"><action id="6">Fix CI Pipeline</action></planner-cell>
       
       <planner-cell id="pc20"/>
       
       <planner-cell id="pc22"/>
-      
+      <planner-cell id="pc23"/>
       <planner-cell id="pc24"/>
       <planner-cell id="pc25"><risk class="schedule" id="19">Schedule Risk</risk></planner-cell>
        
@@ -59,21 +76,21 @@
       
   <link id="13">
 				<from reference="3" id="13-1"/>
-				<to reference="6" shape="barbed-arrow" id="13-3"/>
+				<to reference="6" id="13-3" shape="barbed-arrow"/>
 			</link><link id="21">
 				<from reference="6" id="21-1"/>
-				<to reference="19" shape="barbed-arrow" id="21-3"/>
-			</link><link drawDirection="RIGHT" id="22">
+				<to reference="19" id="21-3" shape="barbed-arrow"/>
+			</link><link id="22" drawDirection="RIGHT">
 				
-				<to reference="2" shape="barbed-arrow" id="22-3"/>
-			<from reference="c2" shape="strike" id="22-1"/></link><link id="15" drawDirection="RIGHT">
+				<to reference="2" id="22-3" shape="barbed-arrow"/>
+			<from reference="c2" id="22-1" shape="strike"/></link><link drawDirection="RIGHT" id="15">
 				<from reference="c2" id="15-1"/>
-				<to reference="14" id="15-3" shape="barbed-arrow"/>
+				<to reference="14" shape="barbed-arrow" id="15-3"/>
 			</link><link id="20">
 				<from reference="4" id="20-1"/>
-				<to reference="5" shape="barbed-arrow" id="20-3"/>
+				<to reference="5" id="20-3" shape="barbed-arrow"/>
 			</link><link id="24">
 				<from reference="5" id="24-1"/>
-				<to reference="7" id="24-3" shape="barbed-arrow"/>
+				<to reference="7" shape="barbed-arrow" id="24-3"/>
 			</link></diagram>
 </svg:svg>
