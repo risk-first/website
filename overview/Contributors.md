@@ -32,6 +32,7 @@ Ideas, issues and proof-reading:
 - Richard Moffat
 - [Ilja Neumann](https://github.com/IljaN)
 - [Ian Obermiller](https://github.com/ianobermiller)
+- [Serhan Tutar](https://github.com/randomnoise)
 - [Stephan Westen](https://github.com/stephanwesten)
 
 
