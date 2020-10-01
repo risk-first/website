@@ -1,4 +1,5 @@
 ![Welcome to Risk-First](https://riskfirst.org/images/risk_first_pink.png)
+We provide modern technology solutions to Asset Owners, Consultants, Asset Managers and Insurers to help grow and improve their business.
 
 The software development world is crowded with different practices, metrics, methodologies, tools and techniques.  
 
