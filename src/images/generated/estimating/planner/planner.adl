@@ -10,9 +10,7 @@
   <diagram xmlns="http://www.kite9.org/schema/adl" k9-ui="xml" id="diagram" k9-contains="">
     
 
-    <planner style="kite9-grid-size: 5 30; ">
-      <planner-header style="kite9-occupies: 0 0; ">
-      </planner-header>
+    <planner style="kite9-grid-size: 2 30; ">
       <planner-header style="kite9-occupies: 0 1; ">
         <label style="kite9-label-placement: left " id="l1">High</label>
       </planner-header>
@@ -22,90 +20,47 @@
         <label style="kite9-label-placement: left; " id="l2">Medium</label>
       </planner-header>
       <planner-header style="kite9-occupies: 0 4; ">
-      </planner-header>
-      <planner-header style="kite9-occupies: 0 5; ">
        <label style="kite9-label-placement: left; " id="l3">Low</label> 
       </planner-header>
-      <planner-header style="kite9-occupies: 2 0; ">
-        <label id="l4">Today</label>
-      </planner-header> 
-      <planner-header style="kite9-occupies: 3 0; ">
-        <label id="l5">This Week</label>
-      </planner-header>
-      <planner-header style="kite9-occupies: 4 0; ">
-        <label id="l6">This Month</label>
-      </planner-header>
-      <planner-header style="kite9-occupies: 6 0; ">
-        <label id="l8">By Q4</label>
-      </planner-header>
+     
       <planner-cell id="pc1">
         
-      <mitigated id="23"><risk class="communication" id="c2">Communication Risk</risk></mitigated></planner-cell>
-      <planner-cell id="pc2">
-        
-      <action id="14">Refactor Subscriptions</action></planner-cell>
-      
-      <planner-cell id="pc4"/>
-      <planner-cell id="pc5"><risk class="goal" id="2">50K Subscribers</risk></planner-cell>
-      <planner-cell id="pc6"><mitigated id="10"><risk class="trust" id="8">
+      <mitigated id="23"><risk id="c2" votes="" class="communication" xmlns="http://www.kite9.org/schema/adl">Communication Risk</risk></mitigated><action id="14">Refactor
+Subscriptions</action></planner-cell>
+   
+      <planner-cell id="pc6"><mitigated id="10"><risk id="8" votes="" class="trust" xmlns="http://www.kite9.org/schema/adl">
 					Trust Risk
-					</risk></mitigated></planner-cell>
-      <planner-cell id="pc7"><action id="9">Fix Rendering Bug</action></planner-cell>
-      <planner-cell id="pc8"><risk class="software-dependency" id="7">Software Dependency Risk
+					</risk></mitigated><action id="9">Fix Rendering Bug</action></planner-cell>
+      
+      <planner-cell id="pc11"><mitigated id="17"><risk id="3" votes="" class="coordination" xmlns="http://www.kite9.org/schema/adl">Coordination Risk</risk></mitigated><action id="6">Fix CI Pipeline</action><risk id="19" votes="" class="schedule" xmlns="http://www.kite9.org/schema/adl">Schedule Risk</risk></planner-cell>
+      
+      
+      <planner-cell id="pc22"><mitigated id="16"><risk id="4" votes="" class="feature" xmlns="http://www.kite9.org/schema/adl">Feature Risk</risk></mitigated><action id="5">Build A Search Function</action><risk id="7" votes="" class="software-dependency" xmlns="http://www.kite9.org/schema/adl">Software Dependency Risk
 					</risk></planner-cell>
-      <planner-cell id="pc9"/>
       
-      <planner-cell id="pc11"><mitigated id="16"><risk class="feature" id="4">Feature Risk</risk></mitigated></planner-cell>
-      <planner-cell id="pc12"><action id="5">Build A Search Function</action></planner-cell>
-      <planner-cell id="pc13"/>
-      <planner-cell id="pc14"/>
-      
-      <planner-cell id="pc16"><mitigated id="17"><risk class="coordination" id="3">Coordination Risk</risk></mitigated></planner-cell>
-      <planner-cell id="pc17"/>
-      <planner-cell id="pc18"><action id="6">Fix CI Pipeline</action></planner-cell>
-      
-      <planner-cell id="pc20"/>
-      
-      <planner-cell id="pc22"/>
-      <planner-cell id="pc23"/>
-      <planner-cell id="pc24"/>
-      <planner-cell id="pc25"><risk class="schedule" id="19">Schedule Risk</risk></planner-cell>
-       
      
     </planner>
       
-  <link id="13">
-				<from reference="3" id="13-1"/>
-				<to reference="6" shape="barbed-arrow" id="13-3"/>
-			</link><link id="21">
-				<from reference="6" id="21-1"/>
-				<to reference="19" shape="barbed-arrow" id="21-3"/>
-			</link><link drawDirection="RIGHT" id="22">
-				
-				<to reference="2" shape="barbed-arrow" id="22-3"/>
-			<from reference="c2" shape="strike" id="22-1"/></link><link id="15" drawDirection="RIGHT">
-				<from reference="c2" id="15-1"/>
-				<to reference="14" id="15-3" shape="barbed-arrow"/>
-			</link><link id="20">
-				<from reference="4" id="20-1"/>
-				<to reference="5" shape="barbed-arrow" id="20-3"/>
-			</link><link id="24">
-				<from reference="5" id="24-1"/>
-				<to reference="7" id="24-3" shape="barbed-arrow"/>
-			</link><align drawDirection="DOWN" id="18-0">
-				<from reference="9" id="18-0-1"/>
-				<to reference="5" id="18-0-3"/>
-			</align><align id="27-0" drawDirection="DOWN">
-				<from reference="14" id="27-0-1"/>
-				<to reference="9" id="27-0-3"/>
-			</align><align drawDirection="DOWN" id="28-0">
-				<from reference="c2" id="28-0-1"/>
-				<to reference="8" id="28-0-3"/>
-			</align><align drawDirection="DOWN" id="28-1">
-				<from reference="8" id="28-1-1"/>
-				<to reference="4" id="28-1-3"/>
-			</align><align drawDirection="DOWN" id="28-2">
-				<from reference="4" id="28-2-1"/>
-				<to reference="3" id="28-2-3"/>
+  <align drawDirection="RIGHT" id="15-0">
+				<from reference="23" id="15-0-1"/>
+				<to reference="14" id="15-0-3"/>
+			</align><align id="20-0" drawDirection="DOWN">
+				<from reference="8" id="20-0-1"/>
+				<to reference="3" id="20-0-3"/>
+			</align><align id="20-1" drawDirection="DOWN">
+				<from reference="3" id="20-1-1"/>
+				<to reference="4" id="20-1-3"/>
+			</align><align drawDirection="DOWN" id="21-0">
+				<from reference="9" id="21-0-1"/>
+				<to reference="6" id="21-0-3"/>
+			</align><align drawDirection="DOWN" id="21-1">
+				<from reference="6" id="21-1-1"/>
+				<to reference="5" id="21-1-3"/>
+			</align><align id="22-0" drawDirection="DOWN">
+				<from reference="c2" id="22-0-1"/>
+				<to reference="8" id="22-0-3"/>
+			</align><align drawDirection="DOWN" id="2-0">
+				<from reference="14" id="2-0-1"/>
+				<to reference="9" id="2-0-3"/>
 			</align></diagram>
 </svg:svg>
