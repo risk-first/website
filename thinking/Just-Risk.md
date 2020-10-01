@@ -7,6 +7,8 @@ featuredimage: images/generated/single/Just-Risk.png
 categories:
  - Thinking Risk-First
 order: 4
+redirect_from: 
+ - /Just-Risk
 ---
 
 # Just Risk

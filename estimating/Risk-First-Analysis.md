@@ -134,32 +134,35 @@ A confounding problem with goals is that _everyone has their own_.  While the bu
 
 Let's look at the "Fix the Continuous Integration Pipeline" task.  It might turn out that we have competing goals here:  the Development Team might want to spend time on this task, as the existing, poor CI tooling is damaging productivity and causing acrimony in the team.  No one wants to work in an unproductive environment.
 
-![Goals](/images/generated/estimating/planner/ci.png)
+![Continuous Integration Task](/images/generated/estimating/planner/ci.png)
 
 That said, the product owners might worry about a different risk:  while diverting part of the development effort to fixing CI might help productivity _in the long term_, it might add pressure to the schedule _in the short term_, and delay other important tasks from getting done, as shown in the above diagram.    
 
 ##### The rounded-corner containers with bold titles show _who a risk affects_.  
 
-## Question 4: What Has The Biggest Impact?
+## Question 4: Judging Impact
 
-So far, we've been looking at each task individually, and trying to model how it's going to affect the [Balance Of Risk]() on our project.  If you have plenty of spare talent and only a few tasks, then maybe that's enough and you can get to work on all the tasks that have a positive effect.   
+So far, we've been looking at each task individually, working out which risks we're addressing, and which ones we're exposed to as a result.  But we need to consider the _impact_ (or size) of those risks, in order to work out whether a given action is worth our while.
 
-The likelihood is that you're going to have to choose the highest-impact tasks to work on. That is, those that have the greatest [Payoff]() for the least [Stake]().  
+![Continuous Integration Task With Impacts](/images/generated/estimating/planner/ci-impact.png)
+
+In the above diagram, I've added stars to each risk to indicate the relative impacts of risks.   Since the (probable) impact of the [Coordination Risk]() is greater than impact on our [Schedule]() from the time we'll spend on it, this task represents a positive [Payoff]().
+
+If you have plenty of spare talent and only a few tasks, then maybe that's enough and you can get to work on all the tasks that have a positive effect.   But if you're resource-constrained, then you should be hunting for the Actions with the biggest [Payoff](), and doing those.  
 
 In order to do this, let's put all the risks and tasks into a planner grid.
 
 ![Use-Cases With Risk Profiles](/images/generated/estimating/planner/planner.png)
 
-In the diagram above, we've simply put all of the actions and risks into a _planner grid_.  This two-dimensional grid allows us to sort the actions and the risks according to _when_ they will occur (horizontally) and _how important they are_ (vertically).  
+In the diagram above, we've simply put all of the actions and risks into a _planner grid_, according to which actions have the biggest [Payoff]().  
 
-In the planning process, this is likely to be where most of the discussion and argument lies:  positioning risks and actions is highly subjective.   Different teams might end up with different ways of doing that:  a product owner or key stake-holder might make this decision _autocratically_, or perhaps the team will "vote" in some way for the ordering.   
+In the planning process, this is likely to be where most of the discussion and argument lies:  judging impact is highly subjective.   Different teams might end up with different ways of doing that:  a product owner or key stake-holder might make this decision _autocratically_, or perhaps the team will "vote" in some way for the relative sizes.   
 
 We've talked about [Decision Making](../risks/Coordination-Risk#decision-making) before, but we'll get into ways to approach this in more detail in the [next section]().  But for now, let's talk about in which ways this is better or worse than Planning Poker.
 
 ## Advantages
 
 - **We've made explicit the trade-offs for carrying out pieces of work**.  If _building the right thing_ is the most important thing we can do, then making sure the whole team are on the same page with respect to 
-
 
 ## Objections
 
