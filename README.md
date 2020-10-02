@@ -1,6 +1,6 @@
 ![Welcome to Risk-First](https://riskfirst.org/images/risk_first_pink.png)
 
-The software development world is crowded with different practices, metrics, methodologies, tools and techniques.  
+The Software Development world is crowded with different practices, metrics, methodologies, tools and techniques.  
 
 For example, metrics such as “number of open tickets”, “code coverage" or "release cadence" give us a numerical feel for how things are going, and methodologies such as **Scrum**, **Waterfall** and **Lean** give us different approaches to organising.
 
