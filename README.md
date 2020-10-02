@@ -4,7 +4,7 @@ The software development world is crowded with different practices, metrics, met
 
 For example, metrics such as “number of open tickets”, “code coverage" or "release cadence" give us a numerical feel for how things are going, and methodologies such as **Scrum**, **Waterfall** and **Lean** give us different approaches to organising.
 
-But what unites them all?
+But what unites them all? loger and amazing project
 
 ## About Risk-First
 
