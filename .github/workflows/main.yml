@@ -1,6 +1,4 @@
-# This is a basic workflow to help you get started with Actions
-
-name: CI
+name: Broken Link Check
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -9,10 +7,8 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
- schedule:
+  schedule:
     - cron: 0 0 5 * * # run monthly
-
-name: Broken Link Check
 
 jobs:
   check:
