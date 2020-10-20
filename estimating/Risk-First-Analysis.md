@@ -1,5 +1,5 @@
 ---
-title: Risk-First Analysis
+title: Risk-First Analysis: An Example
 description: Part of the 'Estimating' Risk-First Series, looking at an alternative to Scrum's Planning Poker
 url: https://riskfirst.org/estimating/Risk-First-Analysis
 image: /images/generated/titles/Risk-First-Analysis.png
@@ -9,7 +9,7 @@ categories:
 order: 8
 ---
 
-# Risk-First Analysis
+# Risk-First Analysis: An Example
 
 The previous article, [Fixing Scrum](Fixing-Scrum.md), examined Scrum's idea of "Sprints" and concluded:
 
@@ -21,7 +21,9 @@ The previous article, [Fixing Scrum](Fixing-Scrum.md), examined Scrum's idea of 
 
 ![Scrum: Consequences Of Time-Boxing](/images/generated/estimating/planner/scrum-consequences.png)
 
-The diagram above shows this behaviour in the form of a [Risk-First Diagram](../overview/Risk-First-Diagrams.md).
+The diagram above shows this behaviour in the form of a [Risk-First Diagram](../overview/Risk-First-Diagrams.md).  Put briefly:  _risks_ ([Schedule Risk](), [Feature Risk]()) are addressed by actions such as "Development", "Review" or "Planning Poker".  
+
+##### On a Risk-First diagram, when you address a risk by taking an action, you draw a line through the risk.
 
 ## Estimating Is A Poor Tool
 
@@ -35,7 +37,7 @@ Seen like this, **Planning Poker** is a tool to avoid the [Coordination Risk]() 
 
 As a result, Sprints can often get derailed by poor estimating.  
 
-##### The _cure_ of estimating is worse than the _disease_ of wasting stake-holder time.
+##### Lesson 1: The _cure_ of estimating is worse than the _disease_ of wasting stake-holder time.
 
 ## Unintended Consequences
 
@@ -58,7 +60,7 @@ How can we convert a planning session away from being estimate-focused and back 
 - _Deciding what is important_ above _what can fit into a sprint_.
 - Making [Bets](../bets/Purpose-Development-Team.md):  what actions give the biggest [Payoff](../thinking/Glossary.md#payoff) for the smallest [Stake](../thinking/Glossary.md#stake)?
 
-## Risk-First Planning: An Example
+## A Scenario
 
 I'm going to suggest a different approach to planning, which allows you to focus both on short-term goals and long term ones at the same time.  
 
@@ -82,8 +84,6 @@ For each of the tasks listed, there is some kind of [Payoff](../thinking/Glossar
 ![Rendering Bug](/images/generated/estimating/planner/rendering.png)
 
 By fixing the rendering bug, we are trying to deal the problem that the software _demos badly_, and the risk that the potential customers don't trust that it will be worth their money.  Risk-First diagrams show chronology from left-to-right.  That is, on the left of the diagram is the world as it is now, whereas on the right is the world as it will be _after_ taking some actions.  To show that our action will eliminate some existing risk, we can strike it out by drawing a line through it.
-
-##### On a Risk-First diagram, if you are removing an existing risk by taking an action, you draw a line through the risk.
 
 ## Question 2: What Is At Stake?
 
@@ -114,6 +114,8 @@ Considered individually, the tasks on our backlog clearly are operations which c
 
 If we are a startup with some investors, they might have set us the goal themselves.  Perhaps the future funding of the business is predicated on our ability to generate a certain number of subscribers?  Then the business goal might look like that in the diagram above.
 
+##### The rounded-corner containers with bold titles show _who a risk affects_.  
+
 As you can see in this diagram _goals_ look very similar to _risks_.  This is by design:  a _goal_ is really an "upside risk":  it's a possible future, but one we'd like to _move towards_ instead of _away from_.
 
 Risk-First diagrams show Actions _moving us away_ from one set of risks, and _moving to_ others on a "[Risk Landscape](../risks/Risk-Landscape.md)".
@@ -125,20 +127,6 @@ In the above diagram, we are showing that by removing [Communication Risk](../ri
 ![Refactoring Subscriptions](/images/generated/estimating/planner/arrows.png)
 
 ##### Show risks causing or preventing other risks using arrows
-
-### Competing Goals
-
-![Goals](/images/generated/estimating/planner/goals.png)
-
-A confounding problem with goals is that _everyone has their own_.  While the business might be there to _make money_, everyone else on the project will have their own _personal_ goals (as you can see on the diagram above).   
-
-Let's look at the "Fix the Continuous Integration Pipeline" task.  It might turn out that we have competing goals here:  the Development Team might want to spend time on this task, as the existing, poor CI tooling is damaging productivity and causing acrimony in the team.  No one wants to work in an unproductive environment.
-
-![Continuous Integration Task](/images/generated/estimating/planner/ci.png)
-
-That said, the product owners might worry about a different risk:  while diverting part of the development effort to fixing CI might help productivity _in the long term_, it might add pressure to the schedule _in the short term_, and delay other important tasks from getting done, as shown in the above diagram.    
-
-##### The rounded-corner containers with bold titles show _who a risk affects_.  
 
 ## Question 4: Judging Impact
 

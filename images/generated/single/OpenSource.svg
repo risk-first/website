@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.0//EN'
+          'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg contentScriptType="text/ecmascript"
+	xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify"
+	contentStyleType="text/css" preserveAspectRatio="xMidYMid meet"
+	xmlns="http://www.w3.org/2000/svg" version="1.0">
+	<defs>
+		<style type="text/css" xml:space="preserve"> @import url("risk.css");</style>
+	</defs>
+
+
+	<defs>
+		<linearGradient x1="0%"
+			xmlns:xlink="http://www.w3.org/1999/xlink" y1="0%" x2="0%" y2="100%"
+			xlink:type="simple" xlink:actuate="onLoad" id="risk-background"
+			xlink:show="other">
+			<stop stop-color="#FFF" offset="0%" />
+			<stop stop-color="#DDD" offset="100%" />
+		</linearGradient>
+
+		<filter xlink:actuate="onLoad" xlink:type="simple"
+			height="130%" id="dropshadow" xlink:show="other"
+			xmlns:xlink="http://www.w3.org/1999/xlink">
+			<feGaussianBlur stdDeviation="4" in="SourceAlpha" />
+			<feOffset dx="6" dy="6" />
+			<feColorMatrix
+				values="          0 0 0 0 0                 0 0 0 0 0                 0 0 0 0 0                 0 0 0 .4 0"
+				type="matrix" />
+			<feMerge>
+				<feMergeNode />
+				<feMergeNode in="SourceGraphic" />
+			</feMerge>
+		</filter>
+
+		<marker refX="6" refY="4" orient="auto" markerHeight="7"
+			id="arrow-end-marker" preserveAspectRatio="xMidYMid meet"
+			markerWidth="7">
+			<path class="arrow-marker" d="M2,2 L6,4 L2,6" />
+		</marker>
+
+		<marker refX="2" refY="4" orient="auto" markerHeight="7"
+			id="arrow-start-marker" preserveAspectRatio="xMidYMid meet"
+			markerWidth="7">
+			<path class="arrow-marker" d="M6,2 L2,4 L6,6" />
+		</marker>
+
+		<marker refY="3" preserveAspectRatio="xMidYMid meet"
+			markerHeight="6" id="circle-marker" markerWidth="6" refX="3">
+			<circle r="2" cx="3" class="circle-marker" cy="3" />
+		</marker>
+
+	</defs>
+</svg>

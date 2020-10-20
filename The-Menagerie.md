@@ -75,7 +75,7 @@ Risks are often very similar across different software projects.   And, if you k
  
 ## What's Next?
 
-Look forward to **Risk-First Software Development Volume 2: Tools & Practices** in 2020...
+Look forward to **Risk-First Software Development Volume 2: Tools & Practices** in 2021...
 
 
  
