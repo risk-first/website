@@ -1,6 +1,6 @@
 ---
-title: Stop Estimating, Start Navigating
-description: Estimating tasks as part of your software methodology is at best value-less ceremony and at worst a form of self-harm.
+title: "Stop Estimating, Start Navigating"
+description: "Estimating tasks as part of your software methodology is often value-less ceremony and at worst a form of self-harm."
 url: https://riskfirst.org/estimating/Stop-Estimating-Start-Navigating
 categories:
  - Estimating
