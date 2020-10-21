@@ -5,7 +5,7 @@ url: https://riskfirst.org/estimating/Stop-Estimating-Start-Navigating
 categories:
  - Estimating
 order: 9
---
+---
 
 # Stop Estimating, Start Navigating
 
