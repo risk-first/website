@@ -1,3 +1,12 @@
+---
+title: Stop Estimating, Start Navigating
+description: Estimating tasks as part of your software methodology is at best value-less ceremony and at worst a form of self-harm.
+categories:
+ - Estimating
+order: 9
+---
+
+# Stop Estimating, Start Navigating
 
 ### Competing Goals
 
