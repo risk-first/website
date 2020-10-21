@@ -1,5 +1,5 @@
 ---
-title: Risk-First Analysis: An Example
+title: Risk-First Analysis
 description: Part of the 'Estimating' Risk-First Series, looking at an alternative to Scrum's Planning Poker
 url: https://riskfirst.org/estimating/Risk-First-Analysis
 image: /images/generated/titles/Risk-First-Analysis.png

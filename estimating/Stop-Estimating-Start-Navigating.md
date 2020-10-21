@@ -4,7 +4,7 @@ description: Estimating tasks as part of your software methodology is at best va
 categories:
  - Estimating
 order: 9
----
+--
 
 # Stop Estimating, Start Navigating
 

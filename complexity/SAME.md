@@ -1,5 +1,5 @@
 ---
-title: Introducing: SAME
+title: Introducing SAME
 description: An invariant-processing framework in Java
 url: https://riskfirst.org/complexity/Crystals-And-Code
 image: /images/generated/titles/Crystals-And-Code.png
