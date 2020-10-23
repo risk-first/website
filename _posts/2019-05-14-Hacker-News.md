@@ -20,7 +20,7 @@ Which is as it should be, for two reasons.   First, **there needs to be serendip
 
 ## Alerting
 
-There is a really cool tool called [AlertHN](https://alerthn.com) which allows you to get email alerts whenever someone mentions a specific search term.   This is super useful, as I wanted to know if anyone posted articles about Risk First, or commented on articles I had posted.  And, it totally works and has helped me with this.  I have no idea who wrote it, or whether it'll be there next month, but it's a great -and somewhat mysterious- service.
+There is a really cool tool called [AlertHN](https://alerthn.com) which allows you to get email alerts whenever someone mentions a specific search term.   This is super useful, as I wanted to know if anyone posted articles about Risk-First, or commented on articles I had posted.  And, it totally works and has helped me with this.  I have no idea who wrote it, or whether it'll be there next month, but it's a great -and somewhat mysterious- service.
 
 ## Unintended Consequences
 

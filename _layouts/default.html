@@ -18,8 +18,28 @@
   gtag('config', 'UA-11589584-7');
 </script>
 
-{% seo %}
+<!-- SEO Plugin Stuff - But no-longer using that -->
+{% assign author = site.authors[page.author] %}
+<meta name="generator" content="Jekyll v3.9.0">
+<meta property="og:title" content="{{ page.title }} | Risk-First">
+<meta name="author" content="{{ author.display_name }}">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="{{ page.description }}">
+<meta property="og:description" content="{{ page.description }}">
+<link rel="canonical" href="{{ page.url }}">
+<meta property="og:url" content="{{ page.url }}">
+<meta property="og:site_name" content="Risk-First Software Development">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="{{ page.title }}">
+<meta name="twitter:site" content="@risk_first">
+<meta name="twitter:creator" content="{{ author.twitter }} n">
+<meta name="google-site-verification" content="_Ah_sAWlHVd7-glADdzxCZLqt-HDlhCXLlMqlQGqLE4">
+<meta name="msvalidate.01" content="9DFE22A35BB1805E3474C158DC853AB4">
 
+<meta property="twitter:image" content="https://riskfirst.org/images/generated/titles/{{ page.path | replace: ".md", ".png" | replace: ".html", ".png" }}">
+<meta property="og:image" content="https://riskfirst.org/images/generated/titles/{{ page.path | replace: ".md", ".png" | replace: ".html", ".png" }}">
+
+<!--  end SEO -->
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     

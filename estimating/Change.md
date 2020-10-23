@@ -60,7 +60,7 @@ Firstly, there is no _synergy_.  The existing FAs don't have an impact on the ne
 
 
 Where you _don't know the answer_, iteration is really the only tool in the box.   
-- risk first diagram for iteration
+- Risk-First diagram for iteration
 
 But this comes with a warning:  there are plenty of other problem domains that we've looked at where you _do_ know the answer.  
 

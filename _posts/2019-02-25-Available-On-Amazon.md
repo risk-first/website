@@ -12,7 +12,7 @@ featuredimage: images/generated/single/Available-On-Amazon.png
 
 # Available On Amazon
 
-You can buy Risk First Software Development Volume 1: The Menagerie on Amazon now:
+You can buy Risk-First Software Development Volume 1: The Menagerie on Amazon now:
 
 <img width="691" alt="screenshot 2019-02-24 at 10 23 18" src="https://user-images.githubusercontent.com/568673/53344657-1ddda800-390b-11e9-969a-ca241a823067.png">
 

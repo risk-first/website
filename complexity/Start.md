@@ -23,4 +23,4 @@ This series of articles aims to give you:
 
 ## Background Reading
 
-This trail assumes familiarity with the [Risk First Risks](../risks/Risk-Landscape.md), especially [Complexity Risk](../risks/Complexity-Risk.md).
+This trail assumes familiarity with the [Risk-First Risks](../risks/Risk-Landscape.md), especially [Complexity Risk](../risks/Complexity-Risk.md).
