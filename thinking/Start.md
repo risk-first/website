@@ -5,7 +5,7 @@ url: https://riskfirst.org/thinking/Start
 
 featured: 
   class: bg3
-  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/scrum.svg">Fixing Scrum</image-artifact>'
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/introduction.svg">Part 1: Thinking Risk-First</image-artifact>'
 layout: categories
 cat: Thinking Risk-First
 categories:

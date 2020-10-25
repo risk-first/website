@@ -5,7 +5,7 @@ url: https://riskfirst.org/practices/Start
 
 featured: 
   class: bg1
-  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/scrum.svg">Fixing Scrum</image-artifact>'
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/introduction.svg">Part 3: Practices</image-artifact>'
 layout: categories
 cat: Practices
 ---
