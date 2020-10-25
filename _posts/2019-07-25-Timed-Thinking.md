@@ -2,8 +2,10 @@
 title: Timed Thinking
 description: A handy approach for getting serious thinking done, despite the distractions of the modern world.
 url: https://riskfirst.org/2019/07/25/Timed-Thinking
-image: /images/generated/titles/Timed-Thinking.png
-featuredimage: images/generated/single/Timed-Thinking.png
+
+featured: 
+  class: bg1
+  element: '<risk class="internal-model" />'
 categories:
  - News
 date: 2019-07-25 16:32:03 +0000

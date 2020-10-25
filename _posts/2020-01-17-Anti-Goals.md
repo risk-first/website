@@ -2,8 +2,10 @@
 title: Anti-Goals
 description:  Just focusing on your goal is not enough... 
 url: https://riskfirst.org/2020/01/17/Anti-Goals
-image: /images/generated/titles/2020-01-17-Anti-Goals.png
-featuredimage: images/generated/single/Anti-Goals.png
+
+featured: 
+  class: bg1
+  element: '<risk href="/public/templates/risk-first/redesign/risks/goal_v2.svg"><code>AG</code><title>Anti-Goal</title></risk>'
 author: rob
 date: 17-01-2020
 categories:

@@ -2,8 +2,10 @@
 title: Post-Agile
 description: Examination of the Post-Agile Movement
 url: https://riskfirst.org/2019/07/16/Post-Agile
-image: /images/generated/titles/Post-Agile.png
-featuredimage: images/generated/single/Post-Agile.png
+
+featured: 
+  class: bg1
+  element: '<risk class="complexity" />'
 categories:
  - News
 date: 2019-07-16 16:32:03 +0000

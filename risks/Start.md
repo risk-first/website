@@ -1,8 +1,12 @@
 ---
 layout: categories
 title: "Risks"
+description: "Contents page for Risk-First section on Risks"
 url: https://riskfirst.org/risks/Start
 cat: Risks
+featured: 
+  class: bg2
+  element: '<action>Risks</action>'
 ---
 
 Much of the content of [Risk-First](https://riskfirst.org) is a collection of [Risks as Patterns](../overview/A-Pattern-Language.md).  

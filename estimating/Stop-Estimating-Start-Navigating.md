@@ -5,6 +5,9 @@ url: https://riskfirst.org/estimating/Stop-Estimating-Start-Navigating
 categories:
  - Estimating
 order: 9
+featured: 
+  class: bg1
+  element: '<image-artifact imgsrc="/public/templates/risk-first/logo/R1_logo_black.svg">Stop Estimating, Start Navigating</image-artifact>'
 ---
 
 # Stop Estimating, Start Navigating

@@ -2,8 +2,10 @@
 title: Towers Of Abstraction
 description: How we end up with incompatible software, and how to fix it.
 url: https://riskfirst.org/complexity/Towers-Of-Abstraction
-image: /images/generated/titles/Towers-Of-Abstraction.png
-featuredimage: images/generated/single/Towers-Of-Abstraction.png
+
+featured: 
+  class: bg1
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/eiffel.svg">Towers Of Abstraction</image-artifact>'
 categories:
  - Complexity
 order: 3

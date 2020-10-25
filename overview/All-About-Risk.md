@@ -2,11 +2,13 @@
 title: All About Risk
 description: Argument that software development is all about risk, as originally made by Kent Beck.
 url: https://riskfirst.org/overview/All-About-Risk
-image: /images/generated/titles/All-About-Risk.png
+
 categories: 
  - Overview
 order: 1
-featuredimage: images/generated/single/All-About-Risk.png
+featured: 
+  class: bg1
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/all-about-risk.svg">About Risk</image-artifact>'
 next: A-Pattern-Language
 redirect_from: 
  - /All-About-Risk

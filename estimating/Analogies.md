@@ -2,8 +2,10 @@
 title: Analogies
 description: Part of the 'Estimating' Risk-First Series. Analogies for the problems of estimating.
 url: https://riskfirst.org/estimating/Analogies
-image: /images/generated/titles/Analogies.png
-featuredimage: images/generated/single/Analogies.png
+
+featured: 
+  class: bg1
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/knot.svg">Analogies</image-artifact>'
 categories:
  - Estimating
 order: 5

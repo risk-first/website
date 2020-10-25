@@ -2,8 +2,10 @@
 title: Thinking Risk-First
 description: Part 1 of Risk-First, learning to think about software development from the perspective of risk.
 url: https://riskfirst.org/thinking/Start
-image: /images/generated/titles/Thinking-Risk-First.png
-featuredimage: images/generated/single/Thinking-Risk-First.png
+
+featured: 
+  class: bg3
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/scrum.svg">Fixing Scrum</image-artifact>'
 layout: categories
 cat: Thinking Risk-First
 categories:

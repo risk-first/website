@@ -2,8 +2,10 @@
 title: Introducing SAME
 description: An invariant-processing framework in Java
 url: https://riskfirst.org/complexity/Crystals-And-Code
-image: /images/generated/titles/Crystals-And-Code.png
-featuredimage: images/generated/single/Crystals-And-Code.png
+
+featured: 
+  class: bg1
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/equals.svg">Introducing SAME</image-artifact>'
 categories:
  - Complexity
 order: 5

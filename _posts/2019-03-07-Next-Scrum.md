@@ -2,12 +2,14 @@
 title: Next - Scrum?
 description: Where to head next on developing Risk-First
 url: https://riskfirst.org/2019/03/07/Next-Scrum
-image: /images/generated/titles/2019-03-07-Next-Scrum.png
+
 author: rob
 date: 07-03-2019
 categories:
  - News
-featuredimage: images/generated/single/Next-Scrum.png
+featured: 
+  class: bg1
+  element: '<risk class="feature-drift" />'
 ---
 
 # Next: Scrum?

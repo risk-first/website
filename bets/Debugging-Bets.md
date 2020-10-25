@@ -2,9 +2,11 @@
 title: Debugging Bets
 description: Making use of risk and odds while debugging
 url: https://riskfirst.org/bets/Debugging-Bets
-image: /images/generated/titles/Debugging-Bets.png
+
 date: 2019-11-10 16:32:03 +0000
-featuredimage: images/generated/single/Debugging-Bets.png
+featured: 
+  class: bg1
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cards.svg">Debugging Bets</image-artifact>'
 categories:
  - Practices
  - News

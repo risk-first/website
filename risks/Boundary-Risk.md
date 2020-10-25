@@ -2,8 +2,10 @@
 title: Boundary Risk
 description: Risk due to the choices we make around dependencies, and the limitations they place on our ability to change.
 url: https://riskfirst.org/risks/Boundary-Risk
-image: /images/generated/titles/Boundary-Risk.png
-featuredimage: images/generated/single/Boundary-Risk.png
+
+featured: 
+  class: bg2
+  element: '<risk class="boundary" />'
 order: 10
 categories:
  - Risks

@@ -2,8 +2,10 @@
 title: A Conversation
 description: A conversation about software development using Risk-First vocabulary.
 url: https://riskfirst.org/thinking/A-Conversation
-image: /images/generated/titles/A-Conversation.png
-featuredimage: images/generated/single/A-Conversation.png
+
+featured: 
+  class: bg3
+  element: '<risk class="communication" />'
 categories: 
  - Thinking Risk-First
 order: 7

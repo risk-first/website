@@ -2,8 +2,10 @@
 title: Practices
 description: Discussion Of Software Development Practices
 url: https://riskfirst.org/practices/Start
-image: /images/generated/titles/Practices.png
-featuredimage: images/generated/single/Introduction.png
+
+featured: 
+  class: bg1
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/scrum.svg">Fixing Scrum</image-artifact>'
 layout: categories
 cat: Practices
 ---

@@ -2,12 +2,14 @@
 title: 3D Programming
 description: How Many Dimensions Does Your Programming Language Have?
 url: https://riskfirst.org/2020/01/15/3d-Programming
-image: /images/generated/titles/2020-01-15-3d-Programming.png
+
 author: rob
 date: 15-01-2020
 categories:
  - News
-featuredimage: images/generated/single/3D-Programming.png
+featured: 
+  class: bg1
+  element: '<interface>3D-Programming</interface>'
 ---
 
 # 3D Programming

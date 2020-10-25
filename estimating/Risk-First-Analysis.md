@@ -2,8 +2,10 @@
 title: Risk-First Analysis
 description: Part of the 'Estimating' Risk-First Series, looking at an alternative to Scrum's Planning Poker
 url: https://riskfirst.org/estimating/Risk-First-Analysis
-image: /images/generated/titles/Risk-First-Analysis.png
-featuredimage: images/generated/single/Risk-First-Analysis.png
+
+featured: 
+  class: bg1
+  element: '<image-artifact imgsrc="/public/templates/risk-first/logo/R1_logo_black.svg">Risk-First Analysis</image-artifact>'
 categories:
  - Estimating
 order: 8

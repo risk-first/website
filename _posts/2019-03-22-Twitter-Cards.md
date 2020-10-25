@@ -2,12 +2,14 @@
 title: Twitter Cards
 description: How to create Twitter/LinkedIn cards for Posts.
 url: https://riskfirst.org/2019/03/22/Twitter-Cards
-image: /images/generated/titles/2019-03-22-Twitter-Cards.png
+
 author: rob
 date: 22-03-2019
 categories:
  - News
-featuredimage: images/generated/single/Twitter-Cards.png
+featured: 
+  class: bg1
+  element: '<image-artifact imgsrc="posts/twitter.svg">Twitter</image-artifact>'
 ---
 
 # Twitter Cards

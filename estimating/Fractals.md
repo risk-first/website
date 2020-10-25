@@ -2,8 +2,10 @@
 title: Fractals
 description: Part of the 'Estimating' Risk-First Series, where we look at estimating with uncertain boundaries.
 url: https://riskfirst.org/estimating/Fractals
-image: /images/generated/titles/Fractals.png
-featuredimage: images/generated/single/Fractals.png
+
+featured: 
+  class: bg1
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/fractal.svg">Fractals</image-artifact>'
 categories:
  - Estimating
 order: 4

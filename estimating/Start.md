@@ -1,9 +1,10 @@
 ---
-title: Estimating And Complexity
+title: Estimating
 description: The 'Estimating' Risk-First Series.
 url: https://riskfirst.org/estimating/Start
---image: /images/generated/titles/Just-Risk.png
---featuredimage: images/generated/single/Just-Risk.png
+featured: 
+  class: bg1
+  element: '<action>Estimating</action>'
 layout: categories
 order: 1
 cat: Estimating

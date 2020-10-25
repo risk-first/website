@@ -2,8 +2,10 @@
 title: Kitchen Cabinets
 description: Part of the 'Estimating' Risk-First Series, where we look at exponential distributions in estimates.
 url: https://riskfirst.org/estimating/Kitchen-Cabinet
-image: /images/generated/titles/Kitchen-Cabinet.png
-featuredimage: images/generated/single/Kitchen-Cabinet.png
+
+featured: 
+  class: bg1
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cupboard.svg">Kitchen Cabinets</image-artifact>'
 categories:
  - Estimating
 order: 2

@@ -2,8 +2,10 @@
 title: Complexity Risk
 description: Risks caused by the weight of complexity in the systems we create, and their resistance to change and comprehension.
 url: https://riskfirst.org/risks/Complexity-Risk
-image: /images/generated/titles/Complexity-Risk.png
-featuredimage: images/generated/single/Complexity-Risk.png
+
+featured: 
+  class: bg2
+  element: '<risk class="complexity" />'
 order: 4
 categories:
  - Risks

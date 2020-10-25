@@ -2,8 +2,10 @@
 title: Coordination Risk
 description: Risks that a group of agents cannot work together and their behaviour devolves into competition.
 url: https://riskfirst.org/risks/Coordination-Risk
-image: /images/generated/titles/Coordination-Risk.png
-featuredimage: images/generated/single/Coordination-Risk.png
+
+featured: 
+  class: bg2
+  element: '<risk class="coordination" />'
 order: 12
 categories:
  - Risks

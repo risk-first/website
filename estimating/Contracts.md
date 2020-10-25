@@ -2,8 +2,10 @@
 title: Contracts
 description: Part of the 'Estimating' Risk-First Series, looking at how risk is apportioned when contracts are agreed.
 url: https://riskfirst.org/estimating/Contracts
-image: /images/generated/titles/Contracts.png
-featuredimage: images/generated/single/Contracts.png
+
+featured: 
+  class: bg1
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/contract.svg">Contracts</image-artifact>'
 categories:
  - Estimating
 order: 6

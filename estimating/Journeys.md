@@ -2,8 +2,10 @@
 title: Journeys
 description: Part of the 'Estimating' Risk-First Series, where we look at estimates with dependent, connected parts.
 url: https://riskfirst.org/estimating/Journeys
-image: /images/generated/titles/Journeys.png
-featuredimage: images/generated/single/Journeys.png
+
+featured: 
+  class: bg1
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/maze.svg">Journeys</image-artifact>'
 categories:
  - Estimating
 order: 3

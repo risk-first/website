@@ -2,8 +2,10 @@
 title: Crystals And Code
 description: Looking at the similarities between our information systems, and crystals
 url: https://riskfirst.org/complexity/Crystals-And-Code
-image: /images/generated/titles/Crystals-And-Code.png
-featuredimage: images/generated/single/Crystals-And-Code.png
+
+featured: 
+  class: bg1
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/crystal.svg">Crystals And Code</image-artifact>'
 categories:
  - Complexity
 order: 2

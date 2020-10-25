@@ -2,8 +2,10 @@
 title: Silver Bullets
 description: A critique of Fred Brooks' 1975 essay on improvements to software engineering.
 url: https://riskfirst.org/practices/Silver-Bullets
-image: /images/generated/titles/Silver-Bullets.png
-featuredimage: images/generated/single/Silver-Bullets.png
+
+featured: 
+  class: bg1
+  element: '<action>Silver Bullet</action>'
 categories:
  - Practices
 order: 4

@@ -2,8 +2,10 @@
 title: "Risk-First: Overview"
 description: A few short articles about what Risk-First is all about
 url: https://riskfirst.org/overview/Start
-image: /images/generated/titles/Overview.png
-featuredimage: images/generated/single/Overview.png
+
+featured: 
+  class: bg1
+  element: '<action>Overview</action>'
 layout: categories
 cat: Overview
 categories:

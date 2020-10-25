@@ -2,10 +2,12 @@
 title: A Simple Scenario
 description: An introduction to the concept that managing risk underpins all activity on projects.
 url: https://riskfirst.org/thinking/A-Simple-Scenario
-image: /images/generated/titles/A-Simple-Scenario.png
+
 categories: 
  - Thinking Risk-First
-featuredimage: images/generated/single/A-Simple-Scenario.png
+featured: 
+  class: bg3
+  element: '<risk href="/public/templates/risk-first/redesign/risks/goal_v2.svg"><code>goal</code><title>A Simple Scenario</title></risk>'
 order: 1
 redirect_from: 
  - /A-Simple-Scenario

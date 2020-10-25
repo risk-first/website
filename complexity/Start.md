@@ -2,8 +2,10 @@
 title: Complexity
 description: Risk-First Series of articles on Software Complexity.
 url: https://riskfirst.org/complexity/Start
-image: /images/generated/titles/Complexity.png
-featuredimage: images/generated/single/Complexity.png
+
+featured: 
+  class: bg1
+  element: '<action>Complexity</action>'
 layout: categories
 order: 1
 cat: Complexity

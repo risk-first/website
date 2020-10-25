@@ -2,8 +2,10 @@
 title: De-Risking
 description: Terms to use when talking about risk on a project.
 url: https://riskfirst.org/thinking/De-Risking
-image: /images/generated/titles/De-Risking.png
-featuredimage: images/generated/single/De-Risking.png
+
+featured: 
+  class: bg3
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/de-risking.svg">De-Risking</image-artifact>'
 categories:
  - Thinking Risk-First
 order: 6

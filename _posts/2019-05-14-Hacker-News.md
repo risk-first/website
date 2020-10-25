@@ -2,12 +2,14 @@
 title: Consuming Hacker News
 description: A New Way to Consume Hacker News?
 url: https://riskfirst.org/2019/05/14/Hacker-News
-image: /images/generated/titles/2019-05-14-Hacker-News.png
+
 author: rob
 date: 14-5-2019
 categories:
  - News
-featuredimage: images/generated/single/Consuming-Hacker-News.png
+featured: 
+  class: bg1
+  element: '<risk class="coordination" />'
 ---
 
 # Consuming Hacker News

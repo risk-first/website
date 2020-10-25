@@ -1,9 +1,10 @@
 ---
 title: Fixing Scrum
-description: Part of the 'Estimating' Risk-First Series, looking at the essential flaws in Scrums' time-boxing of work.
+description: "Part of the 'Estimating' Risk-First Series, looking at the essential flaws in Scrums' time-boxing of work."
 url: https://riskfirst.org/estimating/Fixing-Scrum
-image: /images/generated/titles/Fixing-Scrum.png
-featuredimage: images/generated/single/Fixing-Scrum.png
+featured: 
+  class: bg1
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/scrum.svg">Fixing Scrum</image-artifact>'
 categories:
  - Estimating
 order: 7

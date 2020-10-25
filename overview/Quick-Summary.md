@@ -2,11 +2,13 @@
 title: Quick Summary
 description: A quick summary of the underlying theory behind Risk-First
 url: https://riskfirst.org/overview/Quick-Summary
-image: /images/generated/titles/Quick-Summary.png
+
 categories: 
  - Overview
 order: 4
-featuredimage: images/generated/single/Quick-Summary.png
+featured: 
+  class: bg1
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/quick-summary.svg">Quick Summary</image-artifact>'
 redirect_from: 
  - /Quick-Summary
 ---

@@ -2,8 +2,10 @@
 title: Just Risk
 description: An argument that all tasks in software development are focused on managing risks.
 url: https://riskfirst.org/thinking/Just-Risk
-image: /images/generated/titles/Just-Risk.png
-featuredimage: images/generated/single/Just-Risk.png
+
+featured: 
+  class: bg3
+  element: '<risk class="internal-model" />'
 categories:
  - Thinking Risk-First
 order: 4

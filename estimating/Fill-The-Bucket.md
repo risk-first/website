@@ -2,8 +2,10 @@
 title: Fill-The-Bucket
 description: Part of the 'Estimating' Risk-First Series, in which we look at straightforward extrapolation.
 url: https://riskfirst.org/estimating/Fill-The-Bucket
-image: /images/generated/titles/Fill-The-Bucket.png
-featuredimage: images/generated/single/Fill-The-Bucket.png
+
+featured: 
+  class: bg1
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/bucket.svg">Fill The Bucket</image-artifact>'
 categories:
  - Estimating
 order: 1

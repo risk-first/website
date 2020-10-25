@@ -2,8 +2,10 @@
 title: Glossary of Terms
 description: List of terms used to discuss risks on Risk-First.
 url: https://riskfirst.org/thinking/Glossary
-image: /images/generated/titles/Glossary.png
-featuredimage: images/generated/single/Glossary.png
+
+featured: 
+  class: bg3
+  element: '<document>Glossary</document>'
 categories:
  - Thinking Risk-First
 order: 9

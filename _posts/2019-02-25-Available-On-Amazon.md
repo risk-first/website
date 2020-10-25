@@ -2,12 +2,14 @@
 title: Available On Amazon
 description: Risk-First Volume 1 Available to Buy
 url: https://riskfirst.org/2019/02/25/Available-On-Amazon
-image: /images/generated/titles/2019-02-25-Available-On-Amazon.png
+
 author: rob
 date: 25-2-2019
 categories:
  - News
-featuredimage: images/generated/single/Available-On-Amazon.png
+featured: 
+  class: bg1
+  element: '<risk class="scarcity" />'
 ---
 
 # Available On Amazon

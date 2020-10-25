@@ -2,12 +2,14 @@
 title: Risk-First Diagrams Explained
 description: A quick primer to help parse a Risk-First diagram. 
 url: https://riskfirst.org/overview/Risk-First-Diagrams
-image: /images/generated/titles/Risk-First-Diagrams.png
+
 categories: 
  - Overview
  - News
 order: 6
-featuredimage: images/generated/single/Risk-First-Diagrams.png
+featured: 
+  class: bg1
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/maze.svg">Risk-First Diagrams</image-artifact>'
 date: 2019-10-02 16:32:03 +0000
 redirect_from: 
  - /Risk-First-Diagrams

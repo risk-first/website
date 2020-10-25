@@ -2,8 +2,10 @@
 title: Hierarchies
 description: Hierarchies are the wheel we're happy to re-invent over and over and over again.
 url: https://riskfirst.org/complexity/Hierarchies
-image: /images/generated/titles/Hierarchies.png
-featuredimage: images/generated/single/Hierarchies.png
+
+featured: 
+  class: bg1
+  element: '<image-artifact imgsrc="/public/templates/risk-first/redesign/risks/complexity_risk.svg">Hierarchies</image-artifact>'
 categories:
  - Complexity
 order: 1
