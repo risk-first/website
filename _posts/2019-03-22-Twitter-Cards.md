@@ -9,7 +9,7 @@ categories:
  - News
 featured: 
   class: bg1
-  element: '<image-artifact imgsrc="posts/twitter.svg">Twitter</image-artifact>'
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/twitter.svg">Twitter</image-artifact>'
 ---
 
 # Twitter Cards
