@@ -4,7 +4,7 @@ description: Part 1 of Risk-First, learning to think about software development 
 url: https://riskfirst.org/thinking/Start
 
 featured: 
-  class: bg3
+  class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/introduction.svg">Part 1: Thinking Risk-First</image-artifact>'
 layout: categories
 cat: Thinking Risk-First
