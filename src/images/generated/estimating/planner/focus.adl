@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
+  <svg:defs>
+    <svg:style type="text/css"> 
+    @import url(/public/templates/risk-first/risk-first.css);
+    </svg:style>
+    
+  </svg:defs>
+
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-129" name="Pattern Language">
+
+
+    <risk id="id_0" class="generic" href="/public/templates/risk-first/redesign/artifacts/methodology_v2.svg">
+      <code id="id_0c">Method</code>
+      <title id="id_0t">Software Methodology</title>
+    </risk>
+
+    <arrow id="id_2">employs</arrow>
+
+    <action id="praco" >Practice</action>
+    
+    <arrow id="id_6">manages</arrow>
+
+    <risk id="id_8" class="generic" href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg">
+      <code id="id_8c">Attendant</code>
+      <title id="id_8t">Risk to 
+      manage</title>
+    </risk>
+
+    <arrow id="id_9">obstructs</arrow>
+
+    <risk class="generic" id="id_10" href="/public/templates/risk-first/redesign/risks/goal_v2.svg">
+      <code id="id_10g">Goal</code>
+      <title id="id10t">Project
+      Goal</title>
+    </risk>
+
+    <link id="id_1" drawDirection="RIGHT">
+      <from id="e1" reference="id_0" class="space" />
+      <to id="e2"  reference="id_2" />
+    </link>
+
+    <link id="id_3" drawDirection="RIGHT">
+      <from id="e3"  reference="id_2" />
+      <to id="e4" reference="praco" shape="arrow" class="space" />
+    </link>
+
+    <link id="id_5" drawDirection="RIGHT">
+      <from id="e5" reference="praco" class="space" />
+      <to id="e6" reference="id_6" />
+    </link>
+
+    <link id="id_7" drawDirection="RIGHT">
+      <from id="e7" reference="id_6" />
+      <to id="e8" reference="id_8" shape="arrow" class="space" />
+    </link>
+
+    <link id="id_15"  drawDirection="RIGHT">
+      <from id="e9" reference="id_8" class="space" />
+      <to id="e10"  reference="id_9" />
+    </link>
+    <link id="id_17" drawDirection="RIGHT">
+      <from id="e11" reference="id_9" />
+      <to id="e12"  reference="id_10" shape="arrow" class="space" />
+    </link>
+
+  </diagram>
+</svg:svg>
