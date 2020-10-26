@@ -87,7 +87,7 @@ On a Risk-First diagram, tasks - or actions as we call them - are shown in "sign
 
 By fixing the rendering bug, we are trying to deal the problem that the software _demos badly_ and the resulting risk that the potential customers don't trust the quality of our product.  Risk-First diagrams show chronology from left-to-right.  That is, on the left of the action is the world as it is now, whereas on the right is the world as it will be _after_ taking some action.  To show that our action will eliminate some existing risk, we can strike it out by drawing a line through it.
 
-So, this diagram enscapsulates the reason why we might fix the rendering bug:  it's about addressing potential [Trust Risk](../risks/Communcation-Risk.md#trust-belief-risk) in our product.  
+So, this diagram encapsulates the reason why we might fix the rendering bug:  it's about addressing potential [Trust Risk](../risks/Communcation-Risk.md#trust-belief-risk) in our product.  
 
 If you're new to [Risk First](https://www.riskfirst.org) then it's probably worth explaining at this point that one of the purposes of this project is to enumerate the different types of risk you could face running a software project.  You can begin to learn about them all [here](../risks/Start.md).  Suffice to say, we have icons to represent each of these kinds of risks, and the rest of this article will introduce some of them to you in passing.
 
@@ -128,7 +128,7 @@ The diagram above lays these out:  We'll work hard to _improve the probability_ 
 
 (There's a gentle introduction to the idea of _Anti-Goals_ [here](/post/news/2020/01/17/Anti-Goals.md) which might be worth the diversion).
 
-## "Refactoring Subscriptions"
+### "Refactoring Subscriptions"
 
 Risk-First diagrams show us [Taking Actions](../thinking/Glossary.md#taking-action) to _move us away_ from one set of risks, and _moving towards_ others on a "[Risk Landscape](../risks/Risk-Landscape.md)".  
 
@@ -138,7 +138,7 @@ Let's go on to the third action, **Refactoring Subscriptions** to see this in ac
 
 In the above diagram, we are showing that by removing [Communication Risk](.Spend./risks/Communication-Risk.md) around our product, we are _improving_ our chances of reaching the goal of 50K subscribers.  That's a big assumption - it could well be that the users don't complete the upgrade for other reasons.  Maybe they find out the price during the upgrade and are put off, or they are being forced onto the upgrade screen by some dark patterns, but actually have no intention of upgrading the product at all.
 
-## "Fixing The Build"
+### "Fixing The Build"
 
 Let's look at the last example:  the action to fix the build.  A lot of development teams might consider this a no-brainer:  "How can we possibly do useful work with an unreliable build process?"  Equally, a lot of product owners might feel the opposite:  "why is the development team spending time on making their own lives easier when we have a marketing event next week and there are incomplete features?"  
 
@@ -150,103 +150,46 @@ On the face of it, it's clear why the Sales Team might feel annoyed - there is a
 
 ![Fixing The Build, v2](/images/generated/estimating/planner/refactoring-2.png)
 
+The above diagram shows how this (much more complex) situation might look.  Fixing the CI Pipeline is now implicated in reducing [Staff Risk](/risks/Scarcity-Risk.md#staff-risk), [Coordination Risk](/risks/Coordination-Risk.md) and [Funding Risk](/risks/Scarcity-Risk.md#funding-risk) for the whole business.  
 
+## Judgement
 
+But is that a fair assessment?  How would you determine the [Payoff](../thinking/Glossary.md#Payoff) in this situation?  It's clear that even though we might be able to _describe_ the risks, it might not be all that easy to _quantify_ them.  
 
+![Calculating Payoff](/images/generated/estimating/planner/impact.png)
 
+Luckily, we don't really have to.   If I am trying to evaluate a single action on my own, all I really need to do is answer one question:  do I lose more risk than I gain?
 
-## Question 4: Judging Impact
+All I need to do is "weigh up" the change in risks as best as I can.  A lot of the time, the [Payoff](../thinking/Glossary.md#Payoff) will be obviously worth it, or obviously not.
 
-So far, we've been looking at each task individually, working out which risks we're addressing, and which ones we're exposed to as a result.  But we need to consider the _impact_ (or size) of those risks, in order to work out whether a given action is worth our while.
+## Ensemble
 
-![Continuous Integration Task With Impacts](/images/generated/estimating/planner/ci-impact.png)
+So far, we've been looking at each task individually, working out which risks we're addressing, and which ones we're exposed to as a result.  If you have plenty of spare talent and only a few tasks, then maybe that's enough and you can get to work on all the tasks that have a positive [Payoff](../thinking/Glossary.md#Payoff).   But if you're resource-constrained, then you should be hunting for the [actions](../thinking/Glossary.md#taking-action) with the biggest [Payoff](../thinking/Glossary.md#Payoff) and doing those first.
 
-In the above diagram, I've added stars to each risk to indicate the relative impacts of risks.   Since the (probable) impact of the [Coordination Risk]() is greater than impact on our [Schedule]() from the time we'll spend on it, this task represents a positive [Payoff]().
+Things change too when you have a whole team engaged in the planning process.  Although people will generally agree on what the risks _are_, they often will disagree on the [Probability they will occur, or the impact if they do](../thinking/Evaluating-Risk.md#Probability-And-Impact).   In cases like these, you might want to allow each stakeholder to "vote up" the risks they consider significant, or vote up the actions they consider to have high [Payoff](../thinking/Glossary.md#Payoff).  This will be covered in further detail in the [next section](Stop-Estimating-Start-Navigating.md).
 
-If you have plenty of spare talent and only a few tasks, then maybe that's enough and you can get to work on all the tasks that have a positive effect.   But if you're resource-constrained, then you should be hunting for the Actions with the biggest [Payoff](), and doing those.  
+But for now, let's talk about in which ways this is better or worse than Planning Poker.
 
-In order to do this, let's put all the risks and tasks into a planner grid.
+## Some Points To Note
 
-![Use-Cases With Risk Profiles](/images/generated/estimating/planner/planner.png)
+- **We've made explicit the trade-offs for carrying out pieces of work**.  If [building the right thing](Fixing-Scrum.md#10x) is the most important thing we can do, then making sure the whole team are on the same page with respect to 
+- **This isn't user stories**:  we're not creating a piece of work, and saying how long it'll take.  We're very clearly figuring out what the advantages and disadvantages are to attempting something.  This is fundamentally a different discussion to a Scrum planning session.
+- **Estimates are de-emphasised**:  We're not coming up with hard estimates, but we _are_ considering risks to deadlines, to budgets, to funding.  
 
-In the diagram above, we've simply put all of the actions and risks into a _planner grid_, according to which actions have the biggest [Payoff]().  
-
-In the planning process, this is likely to be where most of the discussion and argument lies:  judging impact is highly subjective.   Different teams might end up with different ways of doing that:  a product owner or key stake-holder might make this decision _autocratically_, or perhaps the team will "vote" in some way for the relative sizes.   
-
-We've talked about [Decision Making](../risks/Coordination-Risk#decision-making) before, but we'll get into ways to approach this in more detail in the [next section]().  But for now, let's talk about in which ways this is better or worse than Planning Poker.
-
-## Advantages
-
-- **We've made explicit the trade-offs for carrying out pieces of work**.  If _building the right thing_ is the most important thing we can do, then making sure the whole team are on the same page with respect to 
-
-## Objections
+## Some Objections
 
 ### Hard Work?
 
-At this point, you might be thinking "this is a lot of work compared to Planning Poker, where I just have to pull a number out of my a**e every few minutes, representing how hard something is to do".  Well, yes.  I'm not going to sugar-coat this:  _product planning is actually really hard_.  What we've developed here is a way to visually represent the trade-offs in the decision making process, so that we can engage the whole team.
+At this point, you might be thinking "this is a lot of work compared to Planning Poker, where I just have to pull a number out of my a**e every few minutes, representing how hard something is to do".  Well, yes.  I'm not going to sugar-coat this:  _product planning is actually really hard_.  What we've developed here is a way to visually represent the trade-offs in the decision making process, so that we can engage the whole team in discussing them and charting the right developmental course.
+
+### This is Just Design
+
+The model we are describing here is just _a graphic representation of a discussion_.  It doesn't represent some "ground truth" about what to develop next - it merely gets everyone onto the same page to discuss what happens next.  
 
 ### The Participation Problem
 
-One argument made _for_ the planning game is that it gives everyone on the development team a voice.  In fact, this might be the biggest contribution of Planning Poker, and we definitely don't want to lose that.
+One argument made _for_ the Scrum planning game is that it gives everyone on the development team a voice.  In fact, this might be the biggest contribution of Planning Poker, and we definitely don't want to lose that.
 
-In fact, we've not looked at how Risk-First Analysis can be _gamified_ in the way that Planning Poker is, and that is the subject of the next article, in which we show how this process can be made _fun to do_.
+In fact, we've not looked at how Risk-First Analysis can be _gamified_ in the way that Planning Poker is, and that is the subject of the [next article](Stop-Estimating-Start-Navigating.md), in which we show how this process can be made fun, and engage the whole team.
 
- 
-
-
-This s
-
-Let's consider the third task: refactoring the subscription model.
-
-
-
-![Use-Cases With Risk Profiles](/images/generated/estimating/planner/example2.png)
-
-The above diagram gives us some indication _why_ the tasks are on the backlog:
-
- - **Refactoring subscriptions** is all about the bottom line: there's a risk that the company _isn't profitable enough_.  That might translate into management being replaced, or bankruptcy, or something.
- - 
-
- - **The Search Function** addresses a risk that our _clients may go elsewhere_:  they're annoyed with the product's lack of functionality.
-
-
- 
-
-
- - Is velocity important?
- 
- Scrum is constantly a race to get stuff done and meet estimates.  Quite often, the estimates turn out to be BS.
- 
- Here's the rub: 90% of everything I've ever written has gone in the bin.
- 
- This means, if I just concentrated on doing the _useful_ stuff, I would be 10X better than I am now.
- 
-What does that mean? 
-
-> "Simplicity--the art of maximizing the amount of work not done--is essential."
-
-## Going Meta
-
-
-
-
-The problem is that estimation only addresses a single risk:  runway risk/time resource.  It says nothing about other risks that you might bump into.
-
-Why is all my code in the bin?  I guess either it was badly written (which, probably it isn't, given that it's probably not objectively worse than the 10% that is in production) or, more likely, it didn't address _Feature RIsk_ properly, or, it was useful, but people didn't find out about how amazing it was.  Or, it was built to work on top of X, but then X was decomissioned (Dependency Risk) or, the budget was cut from the department and there was no funding (Dependency Risk... but maybe caused by Feature RIsk)?
-
-No estimates says forget about trying to get the numbers right, because you can't.  What's better than that?  Let's try and focus on reducing that 90% of waste by thinking about _risks other than time_.
-
-> "Ian: Your scientists were so preoccupied with whether or not they could, they didn’t stop to think if they should. " - [Jurassic Park]().
-
-
-Risk First Planning Game:  
-
-X: time 
-Y: importance  
-
-Place risks on the board (as well as goals).   Try and mitigate risks with actions.  Consider whether 
-
-
-# This is Just Design
-
-The model we are describing here is just a graphic representation
+So let's do that now.
