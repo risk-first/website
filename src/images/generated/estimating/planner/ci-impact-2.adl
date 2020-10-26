@@ -10,19 +10,19 @@
   <container style="kite9-min-size: 60pt 60pt" id="5" layout="right">
 
 					<group id="25">
-					<mitigated id="9"><risk xmlns="http://www.kite9.org/schema/adl" href="/public/templates/risk-first/redesign/risks/staff_risk_v2.svg" id="8">
+					<mitigated id="9"><risk xmlns="http://www.kite9.org/schema/adl" id="8" href="/public/templates/risk-first/redesign/risks/staff_risk_v2.svg">
 							<code id="8-0">D-St</code>
 							<title id="8-1">Staff Risk</title>
 
-						<vote from="robmoffat" id="17"/></risk></mitigated><description id="25-0">Retention of key staff 
+						<vote id="17" from="robmoffat"/></risk></mitigated><description id="25-0">Retention of key staff 
 is a problem</description>
 				</group><label id="5-1">Development Team</label>
 				<group id="6">
           <description id="6-1">Arguments in the team due to 
 destructive merging and clashing commits</description>
-			  <mitigated id="4"><risk id="3" votes="" class="coordination" xmlns="http://www.kite9.org/schema/adl">Coordination Risk<vote from="robmoffat" id="15"/></risk></mitigated></group></container><container class="solid" id="18">
+			  <mitigated id="4"><risk id="3" votes="" class="coordination" xmlns="http://www.kite9.org/schema/adl">Coordination Risk</risk></mitigated></group></container><container class="solid" id="18">
         <group id="22">
-					<mitigated id="14"><risk id="34" href="/public/templates/risk-first/redesign/risks/dependency_funding_risk_v2.svg">
+					<mitigated id="14"><risk href="/public/templates/risk-first/redesign/risks/dependency_funding_risk_v2.svg" id="34">
 							<code id="34-0">D-Fu</code>
 							<title id="34-1">Funding Risk</title>
 
@@ -31,7 +31,7 @@ for launch, threatening funding</description>
 				</group><label id="19">Business</label></container><action id="2">Fix CI Pipeline</action><container style="kite9-min-size: 60pt 60pt" id="10">
 
 				<group id="11">
-					<risk id="7" href="/public/templates/risk-first/redesign/risks/dependency_deadline_risk_v2.svg">
+					<risk href="/public/templates/risk-first/redesign/risks/dependency_deadline_risk_v2.svg" id="7">
 						<code id="7-0">D-Dl</code>
 						<title id="7-1">Deadline Risk</title>
 
@@ -40,9 +40,9 @@ chances at the marketing event</description>
 				</group><label id="10-1">Sales Team</label>
 				</container><link id="13">
 				<from reference="8" id="13-0"/>
-				<to reference="5" shape="barbed-arrow" id="13-1"/>
+				<to reference="5" id="13-1" shape="barbed-arrow"/>
 			</link><link id="30">
 				<from reference="8" id="30-0"/>
-				<to reference="25" id="30-1" shape="barbed-arrow"/>
+				<to reference="25" shape="barbed-arrow" id="30-1"/>
 			</link></diagram>
 </svg:svg>
