@@ -23,7 +23,7 @@ Then, in [Coding Bets](Coding-Bets.md) we considered the same thing at task leve
 
 Now, we’re going to consider the exact same thing again but from the point of view of debugging. I’ve been waiting a while to write this, because I’ve wanted a really interesting bug to come along to allow me to go over how you can apply risk to cracking it.  
 
-Luckily one came along today, giving me a chance to write it up and go over this.  If you've not looked at Risk-First articles before, you may want to review [Risk-First Diagrams Explained](../overview/Risk-First-Diagrams), since there'll be lots of diagrams to demonstrate the bets I'm making.
+Luckily one came along today, giving me a chance to write it up and go over this.  If you've not looked at Risk-First articles before, you may want to review [Risk-First Diagrams Explained](../overview/Risk-First-Diagrams.md), since there'll be lots of diagrams to demonstrate the bets I'm making.
 
 ## The Problem
 

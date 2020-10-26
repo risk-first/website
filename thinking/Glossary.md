@@ -79,6 +79,10 @@ The possibility of things going well, and leaving us with a benefit.  We may [ta
 
 A hypothetical landscape on which risks can be placed.  [Taking Action](#taking-action) means making a move on the [Risk Landscape](#risk-landscape) to reposition a project so that it has a different profile of [Attendant Risks](#attendant-risk).
 
+### Stake
+
+An [Attendant Risk](#attendant-risk) of taking some [action](#taking-action), which is fairly well known up front.  Placing a bet on a horse-race is a stake because you know how much you are likely to lose.   
+
 ### Taking Action
 
 Refers to any activity in the project.  Actions are taken in order to manage some risk.  At the same time, [Taking Action](#taking-action) usually means interacting with reality and updating the [Internal Model](#internal-model).

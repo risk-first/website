@@ -23,13 +23,13 @@ The previous article, [Fixing Scrum](Fixing-Scrum.md), examined Scrum's idea of 
 
 ![Scrum: Consequences Of Time-Boxing](/images/generated/estimating/planner/scrum-consequences.png)
 
-The diagram above shows this behaviour in the form of a [Risk-First Diagram](../overview/Risk-First-Diagrams.md).  Put briefly:  _risks_ ([Schedule Risk](), [Feature Risk]()) are addressed by actions such as "Development", "Review" or "Planning Poker".  
+The diagram above shows this behaviour in the form of a [Risk-First Diagram](../overview/Risk-First-Diagrams.md).  Put briefly:  _risks_ ([Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk), [Feature Risk](../risks/Feature-Risk.md)) are addressed by actions such as "Development", "Review" or "Planning Poker".  
 
 ##### On a Risk-First diagram, when you address a risk by taking an action, you draw a line through the risk.
 
 ## Estimating Is A Poor Tool
 
-Seen like this, **Planning Poker** is a tool to avoid the [Coordination Risk]() problem of everyone needing to complete their work for the end of the Sprint.  But estimating is _really hard_:  In this series so far we've looked at three different ways in which software estimation deviates from the straightforward extrapolation (a.k.a, [Fill-The-Bucket](Fill-The-Bucket.md)) we learnt about in maths classes at school:
+Seen like this, **Planning Poker** is a tool to avoid the [Coordination Risk](../risks/Coordination-Risk.md) problem of everyone needing to complete their work for the end of the Sprint.  But estimating is _really hard_:  In this series so far we've looked at three different ways in which software estimation deviates from the straightforward extrapolation (a.k.a, [Fill-The-Bucket](Fill-The-Bucket.md)) we learnt about in maths classes at school:
 
 - [Kitchen Cabinet](Kitchen-Cabinet.md):  In this domain, there is _hidden work_.  We don't know how much there might be.  If we can break down tasks into smaller units, then by the _law of averages_ and the _central limit theorem_, we can apply some statistics to figure out when we might finish.
 - [Journeys](Journeys.md):  In this domain, work is heterogeneous and interconnected.  Different parts depend on each other, and a failure in one part might mean going back to the drawing board entirely.  The way to estimate in this domain is to _know the landscape_ and to build in _buffers_.  
@@ -87,7 +87,7 @@ On a Risk-First diagram, tasks - or actions as we call them - are shown in "sign
 
 By fixing the rendering bug, we are trying to deal the problem that the software _demos badly_ and the resulting risk that the potential customers don't trust the quality of our product.  Risk-First diagrams show chronology from left-to-right.  That is, on the left of the action is the world as it is now, whereas on the right is the world as it will be _after_ taking some action.  To show that our action will eliminate some existing risk, we can strike it out by drawing a line through it.
 
-So, this diagram encapsulates the reason why we might fix the rendering bug:  it's about addressing potential [Trust Risk](../risks/Communcation-Risk.md#trust-belief-risk) in our product.  
+So, this diagram encapsulates the reason why we might fix the rendering bug:  it's about addressing potential [Trust Risk](../risks/Communication-Risk.md#trust--belief-risk) in our product.  
 
 If you're new to [Risk First](https://www.riskfirst.org) then it's probably worth explaining at this point that one of the purposes of this project is to enumerate the different types of risk you could face running a software project.  You can begin to learn about them all [here](../risks/Start.md).  Suffice to say, we have icons to represent each of these kinds of risks, and the rest of this article will introduce some of them to you in passing.
 
@@ -124,9 +124,9 @@ And, while some projects are expressed in terms of addressing risks (e.g. instal
 
 ![Goals, Anti-Goals, Risks and Upside Risks](/images/generated/estimating/planner/focus.png)
 
-The diagram above lays these out:  We'll work hard to _improve the probability_ of [Goals](../thinking/Glossary.md#goal-in-mind) and [Upside Risks](../thinking/Glossary.md#upside-risk) occurring, whilst at the same time taking action to prevent [Anti-Goals](/post/news/2020/01/17/Anti-Goals) and [Downside Risks](../thinking/Glossary.md#downside-risk).
+The diagram above lays these out:  We'll work hard to _improve the probability_ of [Goals](../thinking/Glossary.md#goal-in-mind) and [Upside Risks](../thinking/Glossary.md#upside-risk) occurring, whilst at the same time taking action to prevent [Anti-Goals](https://riskfirst.org/post/news/2020/01/17/Anti-Goals) and [Downside Risks](../thinking/Glossary.md#risk).
 
-(There's a gentle introduction to the idea of _Anti-Goals_ [here](/post/news/2020/01/17/Anti-Goals.md) which might be worth the diversion).
+(There's a gentle introduction to the idea of _Anti-Goals_ [here](https://riskfirst.org/post/news/2020/01/17/Anti-Goals) which might be worth the diversion).
 
 ### "Refactoring Subscriptions"
 
@@ -136,7 +136,7 @@ Let's go on to the third action, **Refactoring Subscriptions** to see this in ac
 
 ![Refactoring Subscriptions](/images/generated/estimating/planner/refactoring.png)
 
-In the above diagram, we are showing that by removing [Communication Risk](.Spend./risks/Communication-Risk.md) around our product, we are _improving_ our chances of reaching the goal of 50K subscribers.  That's a big assumption - it could well be that the users don't complete the upgrade for other reasons.  Maybe they find out the price during the upgrade and are put off, or they are being forced onto the upgrade screen by some dark patterns, but actually have no intention of upgrading the product at all.
+In the above diagram, we are showing that by removing [Communication Risk](../risks/Communication-Risk.md) around our product, we are _improving_ our chances of reaching the goal of 50K subscribers.  That's a big assumption - it could well be that the users don't complete the upgrade for other reasons.  Maybe they find out the price during the upgrade and are put off, or they are being forced onto the upgrade screen by some dark patterns, but actually have no intention of upgrading the product at all.
 
 ### "Fixing The Build"
 
@@ -144,13 +144,13 @@ Let's look at the last example:  the action to fix the build.  A lot of developm
 
 ![Fixing The Build, v1](/images/generated/estimating/planner/ci-impact.png)
 
-The above diagram tries to show how this is:  on the left side, we have the [Coordination Risk](/risks/Coordination-Risk.md) experienced by the Development Team.  (Note the use of round-cornered boxes to show _who_ the risks apply to).  On the right side, we have the [Deadline Risk](/risks/Deadline-Risk.md) experienced by the Sales Team.
+The above diagram tries to show how this is:  on the left side, we have the [Coordination Risk](../risks/Coordination-Risk.md) experienced by the Development Team.  (Note the use of round-cornered boxes to show _who_ the risks apply to).  On the right side, we have the [Deadline Risk](../risks/Deadline-Risk.md) experienced by the Sales Team.
 
 On the face of it, it's clear why the Sales Team might feel annoyed - there is a transfer of risk _away_ from the Development Team _to_ them.  That's not fair!  But the Development Team Lead might counter by saying:  "Look, this issue is slowing down development, which might mean this startup runs out of funding before the product is ready for launch. Plus it's causing a loss of morale in our team and we're having trouble retaining good staff as it is".  
 
-![Fixing The Build, v2](/images/generated/estimating/planner/refactoring-2.png)
+![Fixing The Build, v2](/images/generated/estimating/planner/ci-impact-2.png)
 
-The above diagram shows how this (much more complex) situation might look.  Fixing the CI Pipeline is now implicated in reducing [Staff Risk](/risks/Scarcity-Risk.md#staff-risk), [Coordination Risk](/risks/Coordination-Risk.md) and [Funding Risk](/risks/Scarcity-Risk.md#funding-risk) for the whole business.  
+The above diagram shows how this (much more complex) situation might look.  Fixing the CI Pipeline is now implicated in reducing [Staff Risk](../risks/Scarcity-Risk.md#staff-risk), [Coordination Risk](../risks/Coordination-Risk.md) and [Funding Risk](../risks/Scarcity-Risk.md#funding-risk) for the whole business.  
 
 ## Judgement
 

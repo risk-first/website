@@ -23,7 +23,7 @@ Management (with a capital-M) has finally bought into Agile techniques and indus
 
 ![A Hype Cycle](/images/numbers/hype4.png)
 
-After 20 years, it seems like Agile has finally crested the [Hype-Cycle](../risks/Map-And-Territory-Risk#audience) and arrived at the _Peak of Inflated Expectations_.
+After 20 years, it seems like Agile has finally crested the [Hype-Cycle](../../../risks/Map-And-Territory-Risk#audience) and arrived at the _Peak of Inflated Expectations_.
   
 But many authors on the Internet have started criticising Agile in its current state.   This short article will summarise some of the recent discussion around "Post-Agile" as a movement.  
 
