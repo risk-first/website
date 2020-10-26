@@ -24,3 +24,18 @@ Let's look at the "Fix the Continuous Integration Pipeline" task.  It might turn
 
 That said, the product owners might worry about a different risk:  while diverting part of the development effort to fixing CI might help productivity _in the long term_, it might add pressure to the schedule _in the short term_, and delay other important tasks from getting done, as shown in the above diagram.    
 
+
+
+
+
+The third question you need to always be asking is:  _what is our goal?_
+
+Considered individually, the tasks on our backlog clearly are operations which change the risks we are facing, but unless we understand the _goal_ or _goals_ of the product, we're not really in a position to make judgements about whether some set of risks is better or worse.
+
+![One Goal](/images/generated/estimating/planner/one-goal.png)
+
+If we are a startup with some investors, they might have set us the goal themselves.  Perhaps the future funding of the business is predicated on our ability to generate a certain number of subscribers?  Then the business goal might look like that in the diagram above.
+
+##### The rounded-corner containers with bold titles show _who a risk affects_.  
+
+As you can see in this diagram _goals_ look very similar to _risks_.  This is by design:  a _goal_ is really an "upside risk":  it's a possible future, but one we'd like to _move towards_ instead of _away from_.

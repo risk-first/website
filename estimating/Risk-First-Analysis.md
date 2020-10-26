@@ -39,7 +39,7 @@ Seen like this, **Planning Poker** is a tool to avoid the [Coordination Risk]() 
 
 As a result, Sprints can often get derailed by poor estimating.  
 
-##### Lesson 1: The _cure_ of estimating is worse than the _disease_ of wasting stake-holder time.
+##### Lesson 1: The _"cure"_ of estimating is worse than the _"disease"_ of wasting stake-holder time.
 
 ## Unintended Consequences
 
@@ -77,58 +77,83 @@ In the diagram above, there are four tasks pulled off the backlog for considerat
  - **Refactoring the subscription** system, after some stats revealed that a lot of users don't make it all the way through the process of upgrading from the free tier to the premium tier.
  - **Fix the Continuous Integration Pipeline**:  developers are complaining that the state of the build isn't being reported correctly, and some tests are failing randomly.
  
-As it stands, it is impossible to say what we should be tackling next.  In order to get to that, we have to answer four questions first.  Let's look at those.
+As it stands, it is impossible to say what we should be tackling next.  In order to get to that, we have to answer three questions first.  Let's look at those.
 
-## Question 1: What Is The Payoff?
-
-For each of the tasks listed, there is some kind of [Payoff](../thinking/Glossary.md#payoff) for performing them.   That is, our circumstances improve from doing the task.  On a Risk-First diagram, actions are shown in "sign-post" style boxes.
+## Question 1: What Do We Lose?
 
 ![Rendering Bug](/images/generated/estimating/planner/rendering.png)
 
-By fixing the rendering bug, we are trying to deal the problem that the software _demos badly_, and the risk that the potential customers don't trust that it will be worth their money.  Risk-First diagrams show chronology from left-to-right.  That is, on the left of the diagram is the world as it is now, whereas on the right is the world as it will be _after_ taking some actions.  To show that our action will eliminate some existing risk, we can strike it out by drawing a line through it.
+On a Risk-First diagram, tasks - or actions as we call them - are shown in "sign-post" style boxes, as shown above.
 
-## Question 2: What Is At Stake?
+By fixing the rendering bug, we are trying to deal the problem that the software _demos badly_ and the resulting risk that the potential customers don't trust the quality of our product.  Risk-First diagrams show chronology from left-to-right.  That is, on the left of the action is the world as it is now, whereas on the right is the world as it will be _after_ taking some action.  To show that our action will eliminate some existing risk, we can strike it out by drawing a line through it.
 
-Let's move on to task 2, the **Search Function**.  
+So, this diagram enscapsulates the reason why we might fix the rendering bug:  it's about addressing potential [Trust Risk](../risks/Communcation-Risk.md#trust-belief-risk) in our product.  
 
-Again, there is a definite [Payoff](../thinking/Glossary.md#payoff) for implementing this:  we're going to remove some [Feature Risk](../risks/Feature-Risk.md), which is the risk (to us) that the features our product is supplying don't meet the client's (or the market's) requirements.  Writing code is all about identifying and removing [Feature Risk](../risks/Feature-Risk.md), and building products that fit the needs of their users.
+If you're new to [Risk First](https://www.riskfirst.org) then it's probably worth explaining at this point that one of the purposes of this project is to enumerate the different types of risk you could face running a software project.  You can begin to learn about them all [here](../risks/Start.md).  Suffice to say, we have icons to represent each of these kinds of risks, and the rest of this article will introduce some of them to you in passing.
+
+## Question 2: What Do We Gain?
 
 ![Search Function](/images/generated/estimating/planner/search.png)
 
-As in the Rendering Bug example, we can show [Feature Risk](../risks/Feature-Risk.md) being eliminated by showing it on the left with a strike-out line.   However, it's been established during analysis that the way to implement this feature is to introduce [ElasticSearch](https://www.elastic.co), a third-party piece of software.  This in itself is a risk:  
+Let's move on to task 2, the **Search Function**, as shown in the above diagram.
+
+As with the **Rendering Bug**, above, we lose something:  [Feature Risk](../risks/Feature-Risk.md), which is the risk (to us) that the features our product is supplying don't meet the client's (or the market's) requirements.  Writing code is all about identifying and removing [Feature Risk](../risks/Feature-Risk.md), and building products that fit the needs of their users.
+
+So as in the Rendering Bug example, we can show [Feature Risk](../risks/Feature-Risk.md) being eliminated by showing it on the left with a strike-out line.   However, it's been established during analysis that the way to implement this feature is to introduce [ElasticSearch](https://www.elastic.co), a third-party piece of software.  This in itself is an [Attendant Risk](../thinking/Glossary.md#attendant-risk) of taking that action:  
 
 - Are we going to find that easy to deploy and maintain?  
 - What impact will this have on hosting charges?  
 - Will it return useful results, or require endless "tuning"?  
 - Will we be "tied in" to this dependency going forwards?
 
-##### If an action leads to new risks, show them on the right side of the diagram.
+##### If an action leads to new risks, show them on the right side of the action.
 
-To decide whether that's a bet worth taking, we need to ask the next question.
+So, on the right side of the action, we are showing the [Attendant Risks](../thinking/Glossary.md#attendant-risk) we _gain_ from taking the action.
 
-## Question 3:  What Is Our Goal?
+## Question 3:  What Is The [Payoff](../thinking/Glossary.md#Payoff)?
 
-The third question you need to always be asking is:  _what is our goal?_
+![Calculating Payoff](/images/generated/estimating/planner/impact.png)
 
-Considered individually, the tasks on our backlog clearly are operations which change the risks we are facing, but unless we understand the _goal_ or _goals_ of the product, we're not really in a position to make judgements about whether some set of risks is better or worse.
+If we know what we lose and what we gain from each action we take, then it's simple maths to work out what the best actions to take on a project are:  simply pick the ones with the greatest impact (as shown in the above diagram).
 
-![One Goal](/images/generated/estimating/planner/one-goal.png)
+### Upside Risk
 
-If we are a startup with some investors, they might have set us the goal themselves.  Perhaps the future funding of the business is predicated on our ability to generate a certain number of subscribers?  Then the business goal might look like that in the diagram above.
+It's worth noting - not all risks are bad!  [Upside Risk](../thinking/Glossary.md#upside-risk) captures this concept well.  If I buy a lottery ticket, there's a big risk that I'll have wasted some money buying the ticket.  But, there's also the [Upside Risk](../thinking/Glossary.md#upside-risk) that I might win!  Both upside and downside risks should be captured in your analysis of [Payoff](../thinking/Glossary.md#Payoff).
 
-##### The rounded-corner containers with bold titles show _who a risk affects_.  
+And, while some projects are expressed in terms of addressing risks (e.g. installing a security system, replacing the tyres on your car) a lot are expressed in terms of _opportunities_ (e.g. create a new product market, win a competition).  It's important to consider these longer-term objectives in the [Payoff](../thinking/Glossary.md#Payoff).
 
-As you can see in this diagram _goals_ look very similar to _risks_.  This is by design:  a _goal_ is really an "upside risk":  it's a possible future, but one we'd like to _move towards_ instead of _away from_.
+![Goals, Anti-Goals, Risks and Upside Risks](/images/generated/estimating/planner/focus.png)
 
-Risk-First diagrams show Actions _moving us away_ from one set of risks, and _moving to_ others on a "[Risk Landscape](../risks/Risk-Landscape.md)".
+The diagram above lays these out:  We'll work hard to _improve the probability_ of [Goals](../thinking/Glossary.md#goal-in-mind) and [Upside Risks](../thinking/Glossary.md#upside-risk) occurring, whilst at the same time taking action to prevent [Anti-Goals](/post/news/2020/01/17/Anti-Goals) and [Downside Risks](../thinking/Glossary.md#downside-risk).
+
+(There's a gentle introduction to the idea of _Anti-Goals_ [here](/post/news/2020/01/17/Anti-Goals.md) which might be worth the diversion).
+
+## "Refactoring Subscriptions"
+
+Risk-First diagrams show us [Taking Actions](../thinking/Glossary.md#taking-action) to _move us away_ from one set of risks, and _moving towards_ others on a "[Risk Landscape](../risks/Risk-Landscape.md)".  
+
+Let's go on to the third action, **Refactoring Subscriptions** to see this in action.
 
 ![Refactoring Subscriptions](/images/generated/estimating/planner/refactoring.png)
 
-In the above diagram, we are showing that by removing [Communication Risk](../risks/Communication-Risk.md) around our product, we are _improving_ our chances of reaching the goal of 50K subscribers.  Also, we are showing in the diagram (via the arrow) that our _[Communication Risk](../risks/Communication-Risk.md)_ issues are impeding that goal.  That's a big assumption - it could well be that the users don't complete the upgrade for other reasons.  Maybe they find out the price during the upgrade and are put off, or they are being forced onto the upgrade screen by some dark patterns, but actually have no intention of upgrading the product at all.
+In the above diagram, we are showing that by removing [Communication Risk](.Spend./risks/Communication-Risk.md) around our product, we are _improving_ our chances of reaching the goal of 50K subscribers.  That's a big assumption - it could well be that the users don't complete the upgrade for other reasons.  Maybe they find out the price during the upgrade and are put off, or they are being forced onto the upgrade screen by some dark patterns, but actually have no intention of upgrading the product at all.
 
-![Refactoring Subscriptions](/images/generated/estimating/planner/arrows.png)
+## "Fixing The Build"
 
-##### Show risks causing or preventing other risks using arrows
+Let's look at the last example:  the action to fix the build.  A lot of development teams might consider this a no-brainer:  "How can we possibly do useful work with an unreliable build process?"  Equally, a lot of product owners might feel the opposite:  "why is the development team spending time on making their own lives easier when we have a marketing event next week and there are incomplete features?"  
+
+![Fixing The Build, v1](/images/generated/estimating/planner/ci-impact.png)
+
+The above diagram tries to show how this is:  on the left side, we have the [Coordination Risk](/risks/Coordination-Risk.md) experienced by the Development Team.  (Note the use of round-cornered boxes to show _who_ the risks apply to).  On the right side, we have the [Deadline Risk](/risks/Deadline-Risk.md) experienced by the Sales Team.
+
+On the face of it, it's clear why the Sales Team might feel annoyed - there is a transfer of risk _away_ from the Development Team _to_ them.  That's not fair!  But the Development Team Lead might counter by saying:  "Look, this issue is slowing down development, which might mean this startup runs out of funding before the product is ready for launch. Plus it's causing a loss of morale in our team and we're having trouble retaining good staff as it is".  
+
+![Fixing The Build, v2](/images/generated/estimating/planner/refactoring-2.png)
+
+
+
+
+
 
 ## Question 4: Judging Impact
 

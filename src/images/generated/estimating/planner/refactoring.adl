@@ -1,31 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?><svg:svg xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" preserveAspectRatio="xMidYMid" version="1.0">
-  <svg:defs>
-    <svg:style type="text/css" xml:space="preserve"> 
+<?xml version="1.0" encoding="UTF-8"?>
+<svg:svg xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns="http://www.w3.org/2000/svg" contentScriptType="text/ecmascript"
+	zoomAndPan="magnify" contentStyleType="text/css"
+	preserveAspectRatio="xMidYMid" version="1.0">
+	<svg:defs>
+		<svg:style type="text/css" xml:space="preserve"> 
     @import url(/public/templates/risk-first/risk-first.css);
         </svg:style>
-    
-  </svg:defs>
 
-  <diagram xmlns="http://www.kite9.org/schema/adl" k9-ui="xml" id="diagram" k9-contains="*">
-    
+	</svg:defs>
 
-      
-  <group id="4">
-          <description id="4-1">50% Of Users Don't
-Complete The Premium-Tier 
-Upgrade</description>
-			  <mitigated id="37"><risk class="communication" id="17">Communication Risk</risk></mitigated></group><group id="8">
-          
-			  <action xmlns="http://www.kite9.org/schema/adl" id="3">Refactor Subscriptions</action></group><group id="9">
-          
-			  <risk class="goal" id="2">50K Subscribers By Q4</risk></group><align id="10-0" drawDirection="RIGHT">
-				<from reference="3" id="10-0-1"/>
-				<to reference="2" id="10-0-3"/>
-			</align><link id="47">
-				<from reference="17" id="47-1" shape="strike"/>
-				<to reference="2" id="47-3" shape="arrow"/>
-			</link><align drawDirection="LEFT" id="14-0">
-				<from reference="3" id="14-0-1"/>
-				<to reference="17" id="14-0-3"/>
-			</align></diagram>
+	<diagram xmlns="http://www.kite9.org/schema/adl" k9-ui="xml"
+		id="diagram" k9-contains="*">
+		<group id="4">
+			<description id="4-1">50% Of Users Don't
+				Complete The Premium-Tier
+				Upgrade
+			</description>
+			<mitigated id="37">
+				<risk id="communication" href="/public/templates/risk-first/redesign/risks/communication_risk_v2.svg">
+          <code id="code">Co</code>
+          <title id="title">Communication Risk</title>
+        </risk>
+			</mitigated>
+		</group>
+		<group id="8">
+
+			<action xmlns="http://www.kite9.org/schema/adl" id="3">Refactor
+				Subscriptions</action>
+		</group>
+		<group id="9">
+			<risk class="goal" id="2" href="/public/templates/risk-first/redesign/risks/goal_v2.svg">
+			  <code id="co2">Goal</code>
+			  <title id="title2">50K Subscribers By Q4</title>
+			</risk>
+		</group>
+		
+	</diagram>
 </svg:svg>

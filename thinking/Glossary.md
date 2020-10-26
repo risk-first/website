@@ -33,7 +33,7 @@ The process of testing an [Internal Model](#internal-model), through [taking act
 
 ### Goal In Mind
 
-A picture of the future that an individual or team carries within their [Internal Model](../thinking/Glossary.md#internal-model);  An imagined destination on the [Risk Landscape](#risk-landscape).
+A picture of the future that an individual or team carries within their [Internal Model](#internal-model);  An imagined destination on the [Risk Landscape](#risk-landscape).  A specific [Upside Risk](#upside-risk) we'd like to nurture and realize.
 
 ### Internal Model
 
