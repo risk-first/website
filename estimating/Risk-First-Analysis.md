@@ -25,6 +25,8 @@ The previous article, [Fixing Scrum](Fixing-Scrum.md), examined Scrum's idea of 
 
 The diagram above shows this behaviour in the form of a [Risk-First Diagram](../overview/Risk-First-Diagrams.md).  Put briefly:  _risks_ ([Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk), [Feature Risk](../risks/Feature-Risk.md)) are addressed by actions such as "Development", "Review" or "Planning Poker".  
 
+If you're new to [Risk First](https://www.riskfirst.org) then it's probably worth explaining at this point that one of the purposes of this project is to enumerate the different types of risk you could face running a software project.  You can begin to learn about them all [here](../risks/Start.md).  Suffice to say, we have icons to represent each of these kinds of risks, and the rest of this article will introduce some of them to you in passing.
+
 ##### On a Risk-First diagram, when you address a risk by taking an action, you draw a line through the risk.
 
 ## Estimating Is A Poor Tool
@@ -32,7 +34,7 @@ The diagram above shows this behaviour in the form of a [Risk-First Diagram](../
 Seen like this, **Planning Poker** is a tool to avoid the [Coordination Risk](../risks/Coordination-Risk.md) problem of everyone needing to complete their work for the end of the Sprint.  But estimating is _really hard_:  In this series so far we've looked at three different ways in which software estimation deviates from the straightforward extrapolation (a.k.a, [Fill-The-Bucket](Fill-The-Bucket.md)) we learnt about in maths classes at school:
 
 - [Kitchen Cabinet](Kitchen-Cabinet.md):  In this domain, there is _hidden work_.  We don't know how much there might be.  If we can break down tasks into smaller units, then by the _law of averages_ and the _central limit theorem_, we can apply some statistics to figure out when we might finish.
-- [Journeys](Journeys.md):  In this domain, work is heterogeneous and interconnected.  Different parts depend on each other, and a failure in one part might mean going back to the drawing board entirely.  The way to estimate in this domain is to _know the landscape_ and to build in _buffers_.  
+- [Journeys](Journeys.md):  In this domain, work is heterogeneous and interconnected.  Different parts depend on each other, and a failure in one part might mean going right back to square one.  The way to estimate in this domain is to _know the landscape_ and to build in _buffers_.  
 - [Fractals](Fractals.md):  In this domain, [Parkinson's Law](../risks/Process-Risk.md#bureaucracy) is king.  There is always more work to be done.  The best thing we can do is try and apply ourselves to the _highest value_ work at any given point, and frequently refer back to reality to find out if we're building the right thing.
 
 ![Three Dimensions From Fill-The-Bucket](/images/estimates/dimensions.png)
@@ -89,8 +91,6 @@ By fixing the rendering bug, we are trying to deal the problem that the software
 
 So, this diagram encapsulates the reason why we might fix the rendering bug:  it's about addressing potential [Trust Risk](../risks/Communication-Risk.md#trust--belief-risk) in our product.  
 
-If you're new to [Risk First](https://www.riskfirst.org) then it's probably worth explaining at this point that one of the purposes of this project is to enumerate the different types of risk you could face running a software project.  You can begin to learn about them all [here](../risks/Start.md).  Suffice to say, we have icons to represent each of these kinds of risks, and the rest of this article will introduce some of them to you in passing.
-
 ## Question 2: What Do We Gain?
 
 ![Search Function](/images/generated/estimating/planner/search.png)
@@ -120,7 +120,7 @@ If we know what we lose and what we gain from each action we take, then it's sim
 
 It's worth noting - not all risks are bad!  [Upside Risk](../thinking/Glossary.md#upside-risk) captures this concept well.  If I buy a lottery ticket, there's a big risk that I'll have wasted some money buying the ticket.  But, there's also the [Upside Risk](../thinking/Glossary.md#upside-risk) that I might win!  Both upside and downside risks should be captured in your analysis of [Payoff](../thinking/Glossary.md#Payoff).
 
-And, while some projects are expressed in terms of addressing risks (e.g. installing a security system, replacing the tyres on your car) a lot are expressed in terms of _opportunities_ (e.g. create a new product market, win a competition).  It's important to consider these longer-term objectives in the [Payoff](../thinking/Glossary.md#Payoff).
+While some projects are expressed in terms of addressing risks (e.g. installing a security system, replacing the tyres on your car) a lot are expressed in terms of _opportunities_ (e.g. create a new product market, win a competition).  It's important to consider these longer-term objectives in the [Payoff](../thinking/Glossary.md#Payoff).
 
 ![Goals, Anti-Goals, Risks and Upside Risks](/images/generated/estimating/planner/focus.png)
 
