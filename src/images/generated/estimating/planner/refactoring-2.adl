@@ -9,7 +9,7 @@
   <diagram xmlns="http://www.kite9.org/schema/adl" name="Pattern Language" id="diagram-129">
   <container style="kite9-min-size: 60pt 60pt" id="5">
 
-					<risk id="8" href="/public/templates/risk-first/redesign/risks/staff_risk_v2.svg">
+					<risk href="/public/templates/risk-first/redesign/risks/staff_risk_v2.svg" id="8">
 							<code id="8-0">D-St</code>
 							<title id="8-1">Staff Risk</title>
 
@@ -18,10 +18,10 @@
           <description id="6-1">Arguments in the team due to 
 destructive merging and clashing commits</description>
 			  <mitigated id="4"><risk id="3" votes="" class="coordination" xmlns="http://www.kite9.org/schema/adl">Coordination Risk</risk></mitigated></group></container><container class="solid" id="18">
-        <label id="19">New Label</label></container><action id="2">Fix CI Pipeline</action><container style="kite9-min-size: 60pt 60pt" id="10">
+        <label id="19">Business</label></container><action id="2">Fix CI Pipeline</action><container style="kite9-min-size: 60pt 60pt" id="10">
 
 				<group id="11">
-					<risk href="/public/templates/risk-first/redesign/risks/dependency_deadline_risk_v2.svg" id="7">
+					<risk id="7" href="/public/templates/risk-first/redesign/risks/dependency_deadline_risk_v2.svg">
 						<code id="7-0">D-Dl</code>
 						<title id="7-1">Deadline Risk</title>
 
@@ -30,9 +30,9 @@ chances at the marketing event</description>
 				</group><label id="10-1">Sales Team</label>
 				</container><link id="13">
 				<from reference="8" id="13-0"/>
-				<to reference="5" id="13-1" shape="barbed-arrow"/>
-			</link><link drawDirection="RIGHT" id="17">
+				<to reference="5" shape="barbed-arrow" id="13-1"/>
+			</link><link id="17" drawDirection="RIGHT">
 				<from reference="3" id="17-0"/>
-				<to reference="8" shape="barbed-arrow" id="17-1"/>
+				<to reference="8" id="17-1" shape="barbed-arrow"/>
 			</link></diagram>
 </svg:svg>
