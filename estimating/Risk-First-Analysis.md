@@ -170,9 +170,11 @@ But for now, let's talk about in which ways this is better or worse than Plannin
 
 ## Some Points To Note
 
+[Instead of Estimates](images/generated/estimating/planner/estimates.png)
+
 - **We've made explicit the trade-offs for carrying out pieces of work**.  If [building the right thing](Fixing-Scrum.md#10x) is the most important thing we can do, then making sure the whole team are on the same page with respect to what the pros or cons might be.
 - **This isn't user stories**:  we're not creating a piece of work, and saying how long it'll take.  We're very clearly figuring out what the advantages and disadvantages are to attempting something.  This is fundamentally a different discussion to a Scrum planning session.
-- **Estimates are de-emphasised**:  We're not coming up with hard estimates, but we _are_ considering risks to deadlines, to budgets, to funding.  
+- **Estimates are de-emphasised**:  We're not coming up with hard estimates, but we _are_ considering risks to deadlines, to budgets, to funding.  As shown in the diagram above, there are _plenty_ of risks associated with tasks taking too long.
 - **We're not planning, so much as weighing risks**: A lot of project plans fall to pieces because they insist on certain events occurring at certain times.  By talking about risk, we're acknowledging what we don't know.
 
 ## Some Objections
