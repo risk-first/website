@@ -41,7 +41,7 @@ Seen like this, **Planning Poker** is a tool to avoid the [Coordination Risk](..
 
 As a result, Sprints can often get derailed by poor estimating.  
 
-##### Lesson 1: The _"cure"_ of estimating is worse than the _"disease"_ of wasting stake-holder time.
+##### Scrum: The _"cure"_ of estimating is worse than the _"disease"_ of wasting stake-holder time.
 
 ## Unintended Consequences
 
@@ -114,11 +114,11 @@ So, on the right side of the action, we are showing the [Attendant Risks](../thi
 
 ![Calculating Payoff](/images/generated/estimating/planner/impact.png)
 
-If we know what we lose and what we gain from each action we take, then it's simple maths to work out what the best actions to take on a project are:  simply pick the ones with the greatest impact (as shown in the above diagram).
+If we know what we lose and what we gain from each action we take, then it's simple maths to work out what the best actions to take on a project are:  simply pick the ones with the greatest Payoff (as shown in the above diagram).
 
 ### Upside Risk
 
-It's worth noting - not all risks are bad!  [Upside Risk](../thinking/Glossary.md#upside-risk) captures this concept well.  If I buy a lottery ticket, there's a big risk that I'll have wasted some money buying the ticket.  But, there's also the [Upside Risk](../thinking/Glossary.md#upside-risk) that I might win!  Both upside and downside risks should be captured in your analysis of [Payoff](../thinking/Glossary.md#Payoff).
+It's worth noting - not all risks are bad!  [Upside Risk](../thinking/Glossary.md#upside-risk) captures this concept well.  If I buy a lottery ticket, there's a big risk that I'll have wasted some money buying the ticket.  But there's also the [Upside Risk](../thinking/Glossary.md#upside-risk) that I might win!  Both upside and downside risks should be captured in your analysis of [Payoff](../thinking/Glossary.md#Payoff).
 
 While some projects are expressed in terms of addressing risks (e.g. installing a security system, replacing the tyres on your car) a lot are expressed in terms of _opportunities_ (e.g. create a new product market, win a competition).  It's important to consider these longer-term objectives in the [Payoff](../thinking/Glossary.md#Payoff).
 
@@ -136,11 +136,11 @@ Let's go on to the third action, **Refactoring Subscriptions** to see this in ac
 
 In the above diagram, we are showing that by removing [Communication Risk](../risks/Communication-Risk.md) around our product, we are _improving_ our chances of reaching the goal of 50K subscribers.  That's a big assumption - it could well be that the users don't complete the upgrade for other reasons.  Maybe they find out the price during the upgrade and are put off, or they are being forced onto the upgrade screen by some dark patterns, but actually have no intention of upgrading the product at all.
 
-### "Fixing The Build"
+### "Fix The CI Pipeline"
 
-Let's look at the last example:  the action to fix the build.  A lot of development teams might consider this a no-brainer:  "How can we possibly do useful work with an unreliable build process?"  Equally, a lot of product owners might feel the opposite:  "why is the Development Team spending time on making their own lives easier when we have a marketing event next week and there are incomplete features?"  
+Let's look at the last example:  the action to fix the Continuous Integration Pipeline.  A lot of development teams might consider this a no-brainer:  "How can we possibly do useful work with an unreliable process?"  Equally, a lot of product owners might feel the opposite:  "why is the Development Team spending time on making their own lives easier when we have a marketing event next week and there are incomplete features?"  
 
-![Fixing The Build, v1](/images/generated/estimating/planner/ci-impact.png)
+![Fixing The CI Pipeline, v1](/images/generated/estimating/planner/ci-impact.png)
 
 The above diagram tries to show how this is:  on the left side, we have the [Coordination Risk](../risks/Coordination-Risk.md) experienced by the Development Team.  (Note the use of round-cornered boxes to show _who_ the risks apply to).  On the right side, we have the [Deadline Risk](../risks/Deadline-Risk.md) experienced by the Sales Team.
 
@@ -170,10 +170,10 @@ But for now, let's talk about in which ways this is better or worse than Plannin
 
 ## Some Points To Note
 
-[Instead of Estimates](images/generated/estimating/planner/estimates.png)
+![Instead of Estimates](images/generated/estimating/planner/estimates.png)
 
 - **We've made explicit the trade-offs for carrying out pieces of work**.  If [building the right thing](Fixing-Scrum.md#10x) is the most important thing we can do, then making sure the whole team are on the same page with respect to what the pros or cons might be.
-- **This isn't user stories**:  we're not creating a piece of work, and saying how long it'll take.  We're very clearly figuring out what the advantages and disadvantages are to attempting something.  This is fundamentally a different discussion to a Scrum planning session.
+- **This isn't user stories**:  we're not describing a piece of work and asking how long it'll take.  We're very clearly figuring out what the advantages and disadvantages are to attempting something.  This is fundamentally a different discussion to a Scrum planning session.
 - **Estimates are de-emphasised**:  We're not coming up with hard estimates, but we _are_ considering risks to deadlines, to budgets, to funding.  As shown in the diagram above, there are _plenty_ of risks associated with tasks taking too long.
 - **We're not planning, so much as weighing risks**: A lot of project plans fall to pieces because they insist on certain events occurring at certain times.  By talking about risk, we're acknowledging what we don't know.
 
