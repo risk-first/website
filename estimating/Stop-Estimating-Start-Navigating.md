@@ -12,6 +12,23 @@ featured:
 
 # Stop Estimating, Start Navigating
 
+
+
+- covid
+  - sitting around a table doesn't work anymore, working from home, timezones
+  - the end of agile: pair programming, pizza teams, stand up meetings, scrum planning sessions - we have to make do in a new world
+  - working alone or with others is the new normal.
+  - what I am codifying here is the way I work.  it also just happens to be the way risk management is done _for real_
+- 
+
+
+
+
+
+
+
+
+
 ### Competing Goals
 
 ![Goals](/images/generated/estimating/planner/goals.png)

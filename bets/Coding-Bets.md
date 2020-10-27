@@ -27,7 +27,7 @@ So let's look at some examples...
 
 [Complexity Risk](../risks/Complexity-Risk.md) is the risk of your project failing due to the weight of complexity in the codebase, and its resistance to change and comprehension.  Fred Brooks' calls this mode of failure _the tar pit_:
 
-> " Large and small, massive or wiry, team after team has become entangled in the tar. No one thing seems to cause the difficulty - any particular paw can be pulled away. But the accumulation of simultaneous and interacting factors brings slower and slower motion. " - [Frederick P. Brooks, _The Mythical Man-Month_](https://www.amazon.com/Mythical-Man-Month-Software-Engineering-Anniversary/dp/0201835959)
+> "Large and small, massive or wiry, team after team has become entangled in the tar. No one thing seems to cause the difficulty - any particular paw can be pulled away. But the accumulation of simultaneous and interacting factors brings slower and slower motion." - [Frederick P. Brooks, _The Mythical Man-Month_](https://www.amazon.com/Mythical-Man-Month-Software-Engineering-Anniversary/dp/0201835959)
 
 Refactoring is the notion that we can escape the tar pit by making our codebase simpler: If _project agility_ is some function of [Complexity Risk](../risks/Complexity-Risk.md) and your team's talent, the bet here is that you can trade some time _now_ on to move to a place of lower [Complexity Risk](../risks/Complexity-Risk.md), making it easier for the developers to _get stuff done_ in the future.
 
@@ -51,7 +51,7 @@ It looks like this:
 
 ##### "This new technology is a better fit for our problem than the one we're currently using."
 
-> "Sometimes a user story is generated that cannot be well estimated until the development team does some actual work to resolve a technical question or a design problem. The solution is to create a “spike,” which is some work whose purpose is to provide the answer or solution. " - [Spike Solution, _Agile Dictionary_](http://agiledictionary.com/209/spike/) 
+> "Sometimes a user story is generated that cannot be well estimated until the development team does some actual work to resolve a technical question or a design problem. The solution is to create a 'spike,' which is some work whose purpose is to provide the answer or solution. " - [Spike Solution, _Agile Dictionary_](http://agiledictionary.com/209/spike/) 
 
 You might want to use a Spike Solution to test out replacing a badly-fitting technology for a more appropriate one.  That is, addressing [Software Dependency](../risks/Software-Dependency-Risk.md) problems.  For example:
 
@@ -149,4 +149,4 @@ But software isn't like this.  Largely, we aren't building the exact same thing 
 
 What if you _are_ building the same cookie-cutter things over-and-over?   Perhaps it's time to change the bet?   By using new tools or techniques you would increase the risk, but also the reward would be to learn something new.  Alternatively, _build the library_ that automates the drudge-work so you can re-focus on the areas of risk.
 
-[The Purpose Of The Development Team](Purpose-Development-Team.md) article takes this idea further: that everything we do in a development team is about managing a balance of risks across the portfolio of an entire team's efforts.
+[The Purpose Of The Development Team](Purpose-Development-Team.md) article expands this idea further: that everything we do in a development team is about managing a balance of risks across the portfolio of an entire team's efforts.  In the next article though, we'll zoom in more closely and see how we use risk when we make [Debugging Bets](Debugging-Bets.md). 
