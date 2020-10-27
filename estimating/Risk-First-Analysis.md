@@ -170,7 +170,7 @@ But for now, let's talk about in which ways this is better or worse than Plannin
 
 ## Some Points To Note
 
-![Instead of Estimates](images/generated/estimating/planner/estimates.png)
+![Instead of Estimates](/images/generated/estimating/planner/estimates.png)
 
 - **We've made explicit the trade-offs for carrying out pieces of work**.  If [building the right thing](Fixing-Scrum.md#10x) is the most important thing we can do, then making sure the whole team are on the same page with respect to what the pros or cons might be.
 - **This isn't user stories**:  we're not describing a piece of work and asking how long it'll take.  We're very clearly figuring out what the advantages and disadvantages are to attempting something.  This is fundamentally a different discussion to a Scrum planning session.
@@ -193,6 +193,4 @@ The model we are describing here is just _a graphic representation of a discussi
 
 One argument made _for_ the Scrum planning game is that it gives everyone on the development team a voice.  For many, this might be the biggest contribution of Planning Poker and we definitely don't want to lose that.
 
-We've not looked at how Risk-First Analysis can be _gamified_ in the way that Planning Poker is, and that is the subject of the [next article](Stop-Estimating-Start-Navigating.md), in which we show how this process can be made interactive and engage the whole team.
-
-So let's do that now.
+We've not looked at how Risk-First Analysis can be _gamified_ in the way that Planning Poker is, and that is the subject of the [next article](Stop-Estimating-Start-Navigating.md), in which we show how this process can be made interactive and engage the whole team.  Let's look at that now.
