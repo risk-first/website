@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><svg:svg xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" preserveAspectRatio="xMidYMid" version="1.0">
+  <svg:defs>
+    <svg:style type="text/css" xml:space="preserve"> 
+    @import url(/public/templates/risk-first/risk-first.css);
+    </svg:style>
+    
+  </svg:defs>
+
+  <diagram xmlns="http://www.kite9.org/schema/adl" name="Pattern Language" id="diagram-129">
+
+
+    
+
+    
+
+    <action id="praco">Too-Long Action</action>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+  <group id="6">
+					<group id="15">
+					<risk href="/public/templates/risk-first/redesign/risks/dependency_deadline_risk_v2.svg" id="5">
+						<code id="5-0">D-Dl</code>
+						<title id="5-1">Deadline Risk</title>
+
+					</risk><description id="15-0">Missing a specific event</description>
+				</group><group id="19">
+					<description id="19-0">Limited-time opportunity in 
+the market</description>
+				<risk id="4" href="/public/templates/risk-first/redesign/risks/dependency_opportunity_risk_v2.svg">
+							<code id="4-0">D-Opp</code>
+							<title id="4-1">Opportunity Risk</title>
+
+						</risk></group><group id="20">
+					<description id="20-0">Competitors racing ahead</description>
+				<risk href="/public/templates/risk-first/redesign/risks/dependency_red_queen_risk_v2.svg" id="3">
+							<code id="3-0">D-Rq</code>
+							<title id="3-1">Red Queen Risk</title>
+
+						</risk></group><group id="21">
+					<description id="21-0">Running out of funding</description>
+				<risk href="/public/templates/risk-first/redesign/risks/dependency_funding_risk_v2.svg" id="2">
+							<code id="2-0">D-Fu</code>
+							<title id="2-1">Funding Risk</title>
+
+						</risk></group><description id="6-0">Risks that development might take too long</description>
+				</group><link id="23">
+				<from reference="5" id="23-0"/>
+				<to reference="6" shape="barbed-arrow" id="23-1"/>
+			</link><align drawDirection="RIGHT" id="25-0">
+				<from reference="praco" id="25-0-0"/>
+				<to reference="5" id="25-0-1"/>
+			</align><align drawDirection="RIGHT" id="25-1">
+				<from reference="5" id="25-1-0"/>
+				<to reference="4" id="25-1-1"/>
+			</align><align drawDirection="RIGHT" id="25-2">
+				<from reference="4" id="25-2-0"/>
+				<to reference="3" id="25-2-1"/>
+			</align><align drawDirection="RIGHT" id="25-3">
+				<from reference="3" id="25-3-0"/>
+				<to reference="2" id="25-3-1"/>
+			</align></diagram>
+</svg:svg>
