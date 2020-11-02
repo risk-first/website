@@ -13,7 +13,7 @@ order: 6
 
 # Contracts
 
-_This page is under construction_
+![Under Construction](/images/state/uc.png)
 
 There are basically two "extreme" positions on building a contract, Fixed-Price, and By-The-Hour.  Let's look at those more closely, and see 
 

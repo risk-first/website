@@ -1,15 +1,7 @@
----
-title: Coordination
-description: Part 7 of the 'Estimating' Risk-First Series.
-url: https://riskfirst.org/estimating/Fill-The-Bucket
-featured: 
-  class: bg1
-  element: '<risk class="coordination" />'
----
+![Under Construction](/images/state/uc.png)
 
 # Coordination
 
-_Under construction_
 
 # A Postal Problem
 

@@ -1,14 +1,4 @@
----
-title: Change
-description: Part of the 'Estimating' Risk-First Series, exploring the problem of changing requirements.
-url: https://riskfirst.org/estimating/Change
-
-featured: 
-  class: bg1
-  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cadence.svg">Change</image-artifact>'
----
-
-_under construction_
+![Under Construction](/images/state/uc.png)
 
 # Change
 
