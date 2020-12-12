@@ -7,6 +7,7 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/scrum.svg">Fixing Scrum</image-artifact>'
 categories:
  - Estimating
+ - Popular
 order: 6
 ---
 

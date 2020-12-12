@@ -9,6 +9,7 @@ featured:
   element: '<agent-artifact>Balance Of Risk</agent-artifact>'
 categories:
  - Bets
+ - News
 order: 1
 ---
 
