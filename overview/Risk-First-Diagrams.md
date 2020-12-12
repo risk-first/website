@@ -6,7 +6,7 @@ url: https://riskfirst.org/overview/Risk-First-Diagrams
 categories: 
  - Overview
  - News
-order: 6
+order: 5
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/maze.svg">Risk-First Diagrams</image-artifact>'

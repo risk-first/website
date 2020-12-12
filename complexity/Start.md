@@ -1,17 +1,19 @@
 ---
-title: Complexity
-description: Risk-First Series of articles on Software Complexity.
+title: On Complexity
+description: Risk-First Track of articles on Software Complexity
 url: https://riskfirst.org/complexity/Start
 
 featured: 
   class: bg1
-  element: '<action>Complexity</action>'
+  element: '<image-artifact imgsrc="/public/templates/risk-first/redesign/risks/complexity_risk_v2.svg">Track 6: On Complexity</image-artifact>'
 layout: categories
-order: 1
 cat: Complexity
+categories:
+ - Front
+order: 7 
 ---
 
-# Complexity
+# On Complexity
 
 This series of articles aims to give you:
 
@@ -21,7 +23,6 @@ This series of articles aims to give you:
 
 - **Some predictions about how we will deal with complexity in the future.**
 
-- **An Introduction to SAME.** A tool designed to help with some of the complexity issues described here.
 
 ## Background Reading
 

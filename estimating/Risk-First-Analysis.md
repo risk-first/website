@@ -1,6 +1,6 @@
 ---
 title: Risk-First Analysis
-description: Part of the 'Estimating' Risk-First Series, looking at an alternative to Scrum's Planning Poker
+description: Part of the 'Estimating' Risk-First Track, looking at an alternative to Scrum's Planning Poker
 url: https://riskfirst.org/estimating/Risk-First-Analysis
 
 featured: 
@@ -8,7 +8,7 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/logo/R1_logo_black.svg">Risk-First Analysis</image-artifact>'
 categories:
  - Estimating
-order: 8
+order: 7
 ---
 
 # Risk-First Analysis: An Example
@@ -31,7 +31,7 @@ If you're new to [Risk First](https://www.riskfirst.org) then it's probably wort
 
 ## Estimating Is A Poor Tool
 
-Seen like this, **Planning Poker** is a tool to avoid the [Coordination Risk](../risks/Coordination-Risk.md) problem of everyone needing to complete their work for the end of the Sprint.  But estimating is _really hard_:  In this series so far we've looked at three different ways in which software estimation deviates from the straightforward extrapolation (a.k.a, [Fill-The-Bucket](Fill-The-Bucket.md)) we learnt about in maths classes at school:
+Seen like this, **Planning Poker** is a tool to avoid the [Coordination Risk](../risks/Coordination-Risk.md) problem of everyone needing to complete their work for the end of the Sprint.  But estimating is _really hard_:  In this track so far we've looked at three different ways in which software estimation deviates from the straightforward extrapolation (a.k.a, [Fill-The-Bucket](Fill-The-Bucket.md)) we learnt about in maths classes at school:
 
 - [Kitchen Cabinet](Kitchen-Cabinet.md):  In this domain, there is _hidden work_.  We don't know how much there might be.  If we can break down tasks into smaller units, then by the _law of averages_ and the _central limit theorem_, we can apply some statistics to figure out when we might finish.
 - [Journeys](Journeys.md):  In this domain, work is heterogeneous and interconnected.  Different parts depend on each other, and a failure in one part might mean going right back to square one.  The way to estimate in this domain is to _know the landscape_ and to build in _buffers_.  

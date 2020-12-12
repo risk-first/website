@@ -1,16 +1,16 @@
 ---
 title: Thinking Risk-First
-description: Part 1 of Risk-First, learning to think about software development from the perspective of risk.
+description: Part 1 of Risk-First, learning to think about software development from the perspective of risk
 url: https://riskfirst.org/thinking/Start
 
 featured: 
   class: bg1
-  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/introduction.svg">Part 1: Thinking Risk-First</image-artifact>'
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/bulb.svg">Track 2: Thinking Risk-First</image-artifact>'
 layout: categories
 cat: Thinking Risk-First
 categories:
  - Front
-order: 3
+order: 2
 ---
 
 

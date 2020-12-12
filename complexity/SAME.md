@@ -7,8 +7,7 @@ featured:
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/equals.svg">Introducing SAME</image-artifact>'
 categories:
- - Complexity
-order: 5
+order: 6
 ---
 
 # Introducing: SAME

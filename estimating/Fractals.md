@@ -1,6 +1,6 @@
 ---
 title: Fractals
-description: Part of the 'Estimating' Risk-First Series, where we look at estimating with uncertain boundaries.
+description: Part of the 'Estimating' Risk-First Track, where we look at estimating with uncertain boundaries.
 url: https://riskfirst.org/estimating/Fractals
 
 featured: 

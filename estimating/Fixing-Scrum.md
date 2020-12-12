@@ -1,19 +1,19 @@
 ---
 title: Fixing Scrum
-description: "Part of the 'Estimating' Risk-First Series, looking at the essential flaws in Scrums' time-boxing of work."
+description: "Part of the 'Estimating' Risk-First Track, looking at the essential flaws in Scrums' time-boxing of work."
 url: https://riskfirst.org/estimating/Fixing-Scrum
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/scrum.svg">Fixing Scrum</image-artifact>'
 categories:
  - Estimating
-order: 7
+order: 6
 ---
 
 
 # Fixing Scrum
 
-What's the worst part of Scrum?  For a lot of developers, it's the daily stand-up meeting.  However, since this is a series on _estimating_, we're going to look at what I regard the biggest problem in Scrum:  Sprint Planning.
+What's the worst part of Scrum?  For a lot of developers, it's the daily stand-up meeting.  However, since this is a track on _estimating_, we're going to look at what I regard the biggest problem in Scrum:  Sprint Planning.
 
 First, a note of caution:  whilst I've witnessed several teams who _say_ they are doing Scrum, I'm not basing this section on those experiences.  The problem is, talking about the problems of Scrum based on the _reality_ of Scrum leaves you open to the criticism that you weren't doing Scrum right in the first place.  
 
@@ -54,7 +54,7 @@ Nevertheless, time-boxing is foundational principle of Scrum.  So in order to ge
 
 ![Planning and Estimating to reduce Coordination Risk](/images/generated/estimating/scrum/scrum4.png)
 
-Now, although the above diagram _makes sense_ (estimating as a mitigation to coordination issues) by this point in this series of articles we should be wary of our ability to estimate development tasks _at all_:
+Now, although the above diagram _makes sense_ (estimating as a mitigation to coordination issues) by this point in this track of articles we should be wary of our ability to estimate development tasks _at all_:
 
  - **Sometimes, tasks have a [Fill-The-Bucket](Fill-The-Bucket.md) nature.**  If you have a test plan to run through on six different platforms, and last week doing a single platform took two hours, then your estimate of two days for the lot is probably about right.  
 

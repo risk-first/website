@@ -8,8 +8,7 @@ featured:
   class: bg1
   element: '<agent-artifact>Balance Of Risk</agent-artifact>'
 categories:
- - Practices
- - News
+ - Bets
 order: 1
 ---
 

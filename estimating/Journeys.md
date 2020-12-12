@@ -1,6 +1,6 @@
 ---
 title: Journeys
-description: Part of the 'Estimating' Risk-First Series, where we look at estimates with dependent, connected parts.
+description: Part of the 'Estimating' Risk-First Track, where we look at estimates with dependent, connected parts.
 url: https://riskfirst.org/estimating/Journeys
 
 featured: 

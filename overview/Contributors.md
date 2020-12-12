@@ -8,7 +8,7 @@ featured:
   element: '<users>Contributors</users>'
 categories: 
  - Overview
-order: 5
+order: 6
 next: Thinking-Risk-First
 redirect_from: 
  - /Contributors

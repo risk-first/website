@@ -1,6 +1,6 @@
 ---
 title: Analogies
-description: Part of the 'Estimating' Risk-First Series. Analogies for the problems of estimating.
+description: Part of the 'Estimating' Risk-First Track. Analogies for the problems of estimating.
 url: https://riskfirst.org/estimating/Analogies
 
 featured: 
@@ -13,7 +13,7 @@ order: 5
 
 # Analogies
 
-So far, this series of articles has tried to bring the problems of estimating software projects into focus by identifying different _estimation domains_ and analogies for each domain.  Let's recap:
+So far, this track of articles has tried to bring the problems of estimating software projects into focus by identifying different _estimation domains_ and analogies for each domain.  Let's recap:
 
 - [Fill-The-Bucket](Fill-The-Bucket.md):  This is the easiest domain to work in.   All tasks are similar and uncorrelated.  We can _extrapolate_ to figure out how much time the next _n_ units will take to do.
 - [Kitchen Cabinet](Kitchen-Cabinet.md):  In this domain, there is _hidden work_.  We don't know how much there might be.  If we can break down tasks into smaller units, then by the _law of averages_ and the _central limit theorem_, we can apply some statistics to figure out when we might finish.
@@ -101,12 +101,12 @@ Turns out, I am not the only person to draw this analogy:
 
 ## Moving On
 
-So I find the _transport network_ analogy to be a useful one.  But actually it ties in nicely with where this series goes next.  
+So I find the _transport network_ analogy to be a useful one.  But actually it ties in nicely with where this track goes next.  
 
 Maintaining a transport network is a balancing act.  In an ideal world, every destination would be connected with every other.  In reality, we adopt hub-and-spoke architectures to minimise the cost of maintaining all the connections.   In essence, turning our transport network into some kind of _heirarchy_.
 
 If we consider a software system to be a sort of network, then hierarchy turns out to be a crucial tool we can apply to understanding it.  
 
-You can look more at the importance of _hierarchies_ in the [Complexity Series](../complexity/Start.md).
+You can look more at the importance of _hierarchies_ in the [On Complexity Track](../complexity/Start.md).
 
 However, if you're here to continue learning about _estimating_, it's time to look at [Contracts](Contracts.md).

@@ -34,7 +34,7 @@ The problem is that because we define our **Concepts** on top of the Towers of A
  
  - In both Java and .net there are lively open-source communities, and unit testing is a popular thing.  Most people in the Java world use [JUnit](https://junit.org).  Most people in the C# world use [NUnit](https://nunit.org).  NUnit started off by porting the Junit concepts to .net, but has now diverged in it's own way.  However the basic concept of unit testing is shared, but as with "User", is subtly different across these two Towers of Abstraction.  
  
- - Slack, Symphony and Microsoft Teams are three different enterprise chat platforms.  They all share the concepts of _Rooms_, _Users_, _Bots_ and _Messages_ (as well as many other things).  However, they all have completely divergent APIs and indeed UIs for interacting with them.  The concepts are again _almost_ identical, but not exactly.  This is despite the fact that there is a now-dead standard called [IRC - Internet Relay Chat]() which could have solved this problem.
+ - Slack, Symphony and Microsoft Teams are three different enterprise chat platforms.  They all share the concepts of _Rooms_, _Users_, _Bots_ and _Messages_ (as well as many other things).  However, they all have completely divergent APIs and indeed UIs for interacting with them.  The concepts are again _almost_ identical, but not exactly.  This is despite the fact that there is a now-dead standard called [IRC - Internet Relay Chat](https://en.wikipedia.org/wiki/Internet_Relay_Chat) which could have solved this problem.
  
  - iOS and Android both share the concepts of "Apps" in a "Marketplace"... OK you get the idea now.
  
@@ -50,7 +50,7 @@ Let's look at some examples of that:
 
 - In my application, I might have the concept of a `Document`.  I might need to map this to my webserver's concept of `URL` somewhere within the application so that it can be loaded up in a browser, or to the concept of `Email` if I want to email the document to someone.
 
-- To get data out of a relational database, I am going to need to use a database driver to turn database API calls into my code.  If I want the data to be represented in the native object-form of my programming language, I'll need to go the extra mile and use some [ORM]() software.  Again, this is just mapping RDBMS concepts to OO concepts.
+- To get data out of a relational database, I am going to need to use a database driver to turn database API calls into my code.  If I want the data to be represented in the native object-form of my programming language, I'll need to go the extra mile and use some [ORM](https://en.wikipedia.org/wiki/Object–relational_mapping) software.  Again, this is just mapping RDBMS concepts to OO concepts.
 
 - Sometimes, I end up defining the same concept twice in the same codebase, _by mistake_.  For example, adding a `Message` class, and a `Response` class, and then realizing that _responses are often messages_.  I may then end up creating something like a `MessageToResponseConverter`.  
 

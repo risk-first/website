@@ -6,7 +6,6 @@ url: https://riskfirst.org/2019/03/07/Next-Scrum
 author: rob
 date: 07-03-2019
 categories:
- - News
 featured: 
   class: bg1
   element: '<risk class="feature-drift" />'

@@ -1,22 +1,25 @@
 ---
-title: Estimating
-description: The 'Estimating' Risk-First Series.
+title: On Estimating
+description: The 'Estimating' Risk-First Track.
 url: https://riskfirst.org/estimating/Start
 featured: 
   class: bg1
-  element: '<action>Estimating</action>'
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/tape-measure.svg">Track 5: On Estimating</image-artifact>'
 layout: categories
 order: 1
 cat: Estimating
+categories:
+ - Front
+order: 6
 ---
 
-# Estimating 
+# On Estimating 
 
 _Estimating_ is the _bête noire_ of software development: simple to conceptualise, but a mine-field for the unwary.  There are multiple _levels_ of problems involved with estimating: _technical, theoretical, political, social, economic_, which we will touch on in our tour.
 
 ## Goals
 
-The main take aways from this series is:
+The main take aways from this track are:
 
 1.  **An appreciation as to why estimating is so hard in Software Development**.   We take a step-by-step approach to understanding the nature of the problem, and why it isn't as easy as estimating other, simpler things.
 

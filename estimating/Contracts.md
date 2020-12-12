@@ -6,9 +6,6 @@ url: https://riskfirst.org/estimating/Contracts
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/contract.svg">Contracts</image-artifact>'
-categories:
- - Estimating
-order: 6
 ---
 
 # Contracts

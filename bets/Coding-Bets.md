@@ -8,8 +8,7 @@ featured:
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cards.svg">Coding Bets</image-artifact>'
 categories:
- - Practices
- - News
+ - Bets
 order: 2
 ---
 

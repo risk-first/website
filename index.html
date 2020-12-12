@@ -27,6 +27,25 @@ featured:
 	    </div>
 	</section>
 
+  <!-- Most Loved -->
+  
+  <section class="featured-articles">
+      <div class="section-title">
+          <h2><span>Most Popular Articles</span></h2>
+      </div>
+      <div class="row listrecent">
+  
+      {% assign sorted_pages = site.pages | sort:"order" %}
+    {% for post in sorted_pages %}
+          {% for pc in post.categories %}
+            {% if pc == 'Popular' %}
+              {% include postbox.html %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+
+   </div>
+  </section>
 
 
 	<!-- Articles

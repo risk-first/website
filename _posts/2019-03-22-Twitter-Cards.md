@@ -6,7 +6,6 @@ url: https://riskfirst.org/2019/03/22/Twitter-Cards
 author: rob
 date: 22-03-2019
 categories:
- - News
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/twitter.svg">Twitter</image-artifact>'

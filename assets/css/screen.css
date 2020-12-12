@@ -100,12 +100,14 @@ section.recent-posts {
     }
 }
 
+/* 
+  Commented out by Rob - we need the extra width
 @media (min-width:992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 0.8rem;
         padding-left: 0.8rem;
     }
-}
+} */
 
 .listfeaturedtag {
     border: 1px solid rgba(0, 0, 0, .125);
@@ -998,4 +1000,8 @@ table th {
 
 .slide-image img {
   border: 1px solid rgba(0,0,0,0.1);
+}
+
+#navbarMediumish .nav-item {
+	white-space: nowrap;
 }

@@ -154,7 +154,7 @@ In essence, this is Conway's Law:
 
 ### 2.  Software Libraries
 
-By choosing a particular software library, we are making a move on the [Risk Landscape](Risk-Landscape.md) in the hope of moving to a place with more favourable risks. <!-- tweet-end --> Typically, using library code offers a [Schedule Risk](Scarcity-Risk.md#schedule-risk) and [Complexity Risk](Complexity-Risk.md) [Silver Bullet](../practices/Silver-Bullets.md) - a high-speed route over the risk landscape to somewhere nearer where we want to be.  But, in return we expect to pick up:
+By choosing a particular software library, we are making a move on the [Risk Landscape](Risk-Landscape.md) in the hope of moving to a place with more favourable risks. <!-- tweet-end --> Typically, using library code offers a [Schedule Risk](Scarcity-Risk.md#schedule-risk) and [Complexity Risk](Complexity-Risk.md) [Silver Bullet](../complexity/Silver-Bullets.md) - a high-speed route over the risk landscape to somewhere nearer where we want to be.  But, in return we expect to pick up:
 
 - **[Communication Risk](Communication-Risk.md)**: because we now have to learn how to communicate with this new dependency.
 - **[Boundary Risk](Boundary-Risk.md)**: - because now are limited to using the functionality provided by this dependency.  We have chosen it over alternatives and changing to something else would be more work and therefore costly.   

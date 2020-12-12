@@ -8,7 +8,7 @@ featured:
   element: '<big-image imgsrc="/public/templates/risk-first/posts/book-grey.png" />'
 categories: 
  - Front
-order: 1
+order: 4
 ---
 
 # The Menagerie
