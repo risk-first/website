@@ -1,6 +1,6 @@
 ---
 title: Thinking Risk-First
-description: Part 1 of Risk-First, learning to think about software development from the perspective of risk
+description: Learning to think about software development from the perspective of risk
 url: https://riskfirst.org/thinking/Start
 
 featured: 
