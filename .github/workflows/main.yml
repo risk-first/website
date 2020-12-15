@@ -1,19 +1,10 @@
-name: Broken Link Check
+name: Check Markdown links
 
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-  schedule:
-    - cron: 0 0 5 * * # run monthly
+on: push
 
 jobs:
-  check:
-    name: Broken Link Check
+  markdown-link-check:
     runs-on: ubuntu-latest
     steps:
-      - name: Broken Link Check
-        uses: technote-space/broken-link-checker-action@v2
+    - uses: actions/checkout@master
+    - uses: gaurav-nelson/github-action-markdown-link-check@v1
