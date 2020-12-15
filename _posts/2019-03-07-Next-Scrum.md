@@ -19,15 +19,15 @@ But nevertheless, I'm still seeing a fair bit of traffic over the last couple of
 
 It's got me thinking about what I want to do next on this project.  A quick recap:
 
-- Part one of Risk-First was explaining how Software Development is really an exercise in risk management.  Although that sounds a bit dull (maybe complex even), I try to explain it really simply.  
+- [Thinking Risk-First](/thinking/Start.md) was explaining how Software Development is really an exercise in risk management.  Although that sounds a bit dull (maybe complex even), I try to explain it really simply.  
 
-- Part two looks at the types of risks we face in Software Development.  I spend a while breaking down the different types.
+- [The Risk Catalog](/risks/Start.md) looks at the types of risks we face in Software Development.  I spend a while breaking down the different types.
 
-So next, Part 3 should look at the different _techniques/practices/actions_ we use, and explain the qualities of them.  Generally, all activity boils down into something like this:
+So next, we should look at the different _techniques/practices/actions_ we use, and explain the qualities of them.  Generally, all activity boils down into something like this:
 
 ![Taking Action](/images/generated/introduction/all_risk_management_language.png)
 
-And Part 4 was about examining software _methodologies_ (e.g. DevOps, XP, etc) as collections of techniques.  (Some people don't like this use of the word "methodology".  I can see why, but, it's the most commonly used term for this type of thing).
+Finally, we need a track on software _methodologies_ (e.g. DevOps, XP, etc) as collections of techniques.  (Some people don't like this use of the word "methodology".  I can see why, but, it's the most commonly used term for this type of thing).
 
 Put together it looks like:
 
