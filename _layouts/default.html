@@ -100,30 +100,16 @@
         <!-- Begin Menu -->
 
             <ul class="navbar-nav ml-auto">
-
+            
+                {% for category in site.category_list %}
+                
+                
                 <li class="nav-item">
-                <a class="nav-link" href="/overview/Start"><i class="fas fa-play-circle"></i> Overview</a>
-                </li>
-
-                <li class="nav-item">
-                <a class="nav-link" href="/thinking/Start"><i class="fas fa-play-circle"></i> Thinking</a>
-                </li>
-
-                <li class="nav-item nav-item-black">
-                <a class="nav-link" href="/risks/Start"><i class="fas fa-play-circle"></i> Risks</a>
-                </li>
-
-                <li class="nav-item nav-item-black">
-                <a class="nav-link" href="/bets/Start"><i class="fas fa-play-circle"></i> Bets</a>
+                <a class="nav-link" href="/{{ category | split: ' ' | first | downcase }}/Start"><i class="fas fa-play-circle"></i> {{ category | split: ' ' | first }} </a>
                 </li>
                 
-                <li class="nav-item nav-item-black">
-                <a class="nav-link" href="/estimating/Start"><i class="fas fa-play-circle"></i> Estimating</a>
-                </li>
                 
-                <li class="nav-item nav-item-black">
-                <a class="nav-link" href="/complexity/Start"><i class="fas fa-play-circle"></i> Complexity</a>
-                </li>
+                {% endfor %}
 
                 <li class="nav-item">
 	                <div class="buttons nav-link github-buttons">

@@ -1,51 +1,52 @@
-{% if page.layout != 'categories' %}
-	{% assign sortedCategories = page.categories | sort %}
-	
-	{% for category in sortedCategories %}
-	{% if category != 'Post' %}
-	{% if category != 'News' %}
-    {% if category != 'Front' %}
-  
-	
-    {% assign shortcat = category | split: ' ' %}	
+	<ul class="ml-1 mr-1">
+  {% for category in site.category_list %}
     
-    <p>
-    	<a href="{{site.baseurl}}/{{ shortcat[0] | downcase }}/Start" >
-	        {{ category }}
+    {% if page.cat contains category or page.categories contains category  %}
+    
+      {% if page.cat contains category %}
+      <a href="{{site.baseurl}}/{{ category | split: ' ' | first | downcase }}/Start" >
+          <li class="nav-loz-current ">{{ category }}</li>
+      </a>
+      {% else %}
+    	<a href="{{site.baseurl}}/{{ category | split: ' ' | first | downcase }}/Start" >
+	        <li class="nav-loz-open ">{{ category }}</li>
     	</a>
-    </p>
-    <ul class="ml-1 mr-1">
-    
-    	{% assign sorted_pages = site.pages | sort:"order" %}
-		{% for post in sorted_pages  %} 
-			{% for pc in post.categories %} 
-				{% if pc == category %} 
-        <a href="{{ site.baseurl }}{{ post.url }}" >
-			{% if post.url == page.url  %}		
-			<li class="nav-bullet-current ttip " title="{{ post.title }}">
-			{% else %}
-		    <li class="nav-bullet ttip" title="{{ post.title }}">
-			{% endif %}
-            	{{ post.order }}   
+      {% endif %}
+        
+     
+      {% assign sorted_pages = site.pages | sort:"order" %}
+		  {% for post in sorted_pages  %} 
+			  {% for pc in post.categories %} 
+			  	{% if pc == category %} 
+            <a href="{{ site.baseurl }}{{ post.url }}" >
+			    {% if post.url == page.url  %}		
+			      <li class="nav-bullet-current ttip " title="{{ post.title }}">
+		    	{% else %}
+		        <li class="nav-bullet ttip" title="{{ post.title }}">
+			    {% endif %}
+          {{ post.order }}   
         	</li>
         </a>
-		{% endif %} 
-		{% endfor %}
-		{% endfor %}
+  		{% endif %} 
+  		{% endfor %}
+  		{% endfor %}
+    {% else %}
+  
+      <a href="{{site.baseurl}}/{{ category | split: ' ' | first | downcase }}/Start" >
+          <li class="nav-loz ">{{ category }}</li>
+      </a>
+  
+    {% endif %} 
        
-    </ul>
-    <div class="sep">
-    </div>
+  
     
-    {% endif %}
-    {% endif %}
-	{% endif %}
 	{% endfor %}
     
-	
-	        
-{% endif %}
+  
+   <div class="sep">
+   </div>      
 
+</ul>
 
 
 
