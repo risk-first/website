@@ -143,7 +143,7 @@ Let's look at the conclusions we reached in [Boundary Risk](../risks/Boundary-Ri
 
 If we accept this problem of the fractal nature of human desire, then we have to contend with the fact that our software systems are always going to get continually more complex to serve it.
 
-So that's _four_ different styles of estimating.  Time for [number five](Change.md).
+So that's _four_ different styles of estimating.  Let's try and put these together in [Analogies](Analogies.md)
 
 
 
