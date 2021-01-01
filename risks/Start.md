@@ -14,7 +14,7 @@ categories:
 
 # Risks
 
-Much of the content of [Risk-First](https://riskfirst.org) is a collection of [Risks as Patterns](../overview/A-Pattern-Language.md).  
+Much of the content of [Risk-First](https://riskfirst.org) is a collection of [Risks as Patterns](A-Pattern-Language.md).  
 
 Here, we're going to take you through the various types of Risk you will face on every software project.  
 

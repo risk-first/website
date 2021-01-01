@@ -110,7 +110,7 @@ In this example, you can see how the organisation evolves process to mitigate ri
 Two key take-aways from this:
 
  - **The System Gets More Complex**: with different teams working to mitigate different risks in different ways, we end up with a more complex situation than when we started.  Although we've _evolved_ in this direction by mitigating risks, it's not necessarily the case that the end result is _more efficient_.  In fact, as we will see in [Map-And-Territory Risk](Map-And-Territory-Risk.md#markets), this evolution can lead to some very inadequate (but nonetheless stable) systems.
- - **Organisational process evolves to mitigate risk**: just as we've shown that [actions are about mitigating risk](../overview/All-About-Risk.md), we've now seen that these actions get taken in an evolutionary way.  That is, there is "pressure" on our internal processes to reduce risk.  The people maintaining these processes feel the risk, and modify their processes in response.  Let's look at a real-life example: 
+ - **Organisational process evolves to mitigate risk**: just as we've shown that [actions are about mitigating risk](../thinking/Start.md), we've now seen that these actions get taken in an evolutionary way.  That is, there is "pressure" on our internal processes to reduce risk.  The people maintaining these processes feel the risk, and modify their processes in response.  Let's look at a real-life example: 
 
 ## An Example - Release Processes
 

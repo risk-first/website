@@ -23,7 +23,7 @@ But if we are good collectors, then before we finish we should _[Stage](https://
 
 ## Towards A "Periodic Table" Of Risks
 
-As we said [at the start](../overview/A-Pattern-Language.md), Risk-First is all about developing _A Pattern Language_.  We can use the terms like "[Feature Risk](Feature-Risk.md)" or "[Learning Curve Risk](Communication-Risk.md#learning-curve-risk)" to explain phenomena we see on software projects.   If we want to [De-Risk](../thinking/De-Risking.md) our work, we need this power of explanation so we can talk about how to go about it.
+As we said [at the start](A-Pattern-Language.md), Risk-First is all about developing _A Pattern Language_.  We can use the terms like "[Feature Risk](Feature-Risk.md)" or "[Learning Curve Risk](Communication-Risk.md#learning-curve-risk)" to explain phenomena we see on software projects.   If we want to [De-Risk](../thinking/De-Risking.md) our work, we need this power of explanation so we can talk about how to go about it.
 
 ![Periodic Table of Risks](/images/generated/staging-and-classifying/periodic-table-large.png)
 

@@ -27,9 +27,9 @@ In that time, software development has seen the principles and values it contain
 
 Management (with a capital-M) has finally bought into Agile techniques and industrial acceptance of Agile is everywhere.  Partly, it's because these ideas have stood the test of time, but also because it has taken a _whole generation_ of software developers who learnt about Agile 20 years ago to arrive in positions of responsibility in large organisations.
 
-![A Hype Cycle](/images/numbers/hype4.png)
+![A Hype Cycle](../images/numbers/hype4.png)
 
-After 20 years, it seems like Agile has finally crested the [Hype-Cycle](../../../risks/Map-And-Territory-Risk#audience) and arrived at the _Peak of Inflated Expectations_.
+After 20 years, it seems like Agile has finally crested the [Hype-Cycle](../risks/Map-And-Territory-Risk.md#audience) and arrived at the _Peak of Inflated Expectations_.
   
 But many authors on the Internet have started criticising Agile in its current state.   This short article will summarise some of the recent discussion around "Post-Agile" as a movement.  
 

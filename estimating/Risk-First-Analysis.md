@@ -25,7 +25,7 @@ The previous article, [Fixing Scrum](Fixing-Scrum.md), examined Scrum's idea of 
 
 ![Scrum: Consequences Of Time-Boxing](/images/generated/estimating/planner/scrum-consequences.png)
 
-The diagram above shows this behaviour in the form of a [Risk-First Diagram](../overview/Risk-First-Diagrams.md).  Put briefly:  _risks_ ([Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk), [Feature Risk](../risks/Feature-Risk.md)) are addressed by actions such as "Development", "Review" or "Planning Poker".  
+The diagram above shows this behaviour in the form of a [Risk-First Diagram](../thinking/Risk-First-Diagrams.md).  Put briefly:  _risks_ ([Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk), [Feature Risk](../risks/Feature-Risk.md)) are addressed by actions such as "Development", "Review" or "Planning Poker".  
 
 If you're new to [Risk First](https://www.riskfirst.org) then it's probably worth explaining at this point that one of the purposes of this project is to enumerate the different types of risk you could face running a software project.  You can begin to learn about them all [here](../risks/Start.md).  Suffice to say, we have icons to represent each of these kinds of risks, and the rest of this article will introduce some of them to you in passing.
 
