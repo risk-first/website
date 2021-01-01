@@ -44,7 +44,7 @@ The anchor mattered more than experience, how formal the estimation method, or a
 
 ## Is Risk To Blame?
 
-![Estimates:  Attendant Risks](/images/generated/practices/estimates/estimation.png)
+![Estimates:  Attendant Risks](../images/generated/practices/estimates/estimation.png)
 
 Why is it so bad?  The problem with a developer answering a question such as:
 
@@ -76,7 +76,7 @@ Let's try and pull this apart:
  - The "10X" developer _must_ also leave behind less of these kind of risks too.
  - That means that the "10X Developer" isn't merely faster, but _taking different actions_.  They are able to use their talent and experience to see actions with greater Payoff than the 1X Developer.  
  
-![1X Task vs 10X Task](/images/generated/practices/estimates/1x-10x.png)
+![1X Task vs 10X Task](../images/generated/practices/estimates/1x-10x.png)
 
 Does the "10X Developer" even exist?  Crucially, it would seem that such a thing would be predicated on the existence of the "1X Developer", who gets "1X" worth of work done each day.  It's not clear that there is any such thing as an average developer who is mitigating risk at an average rate.  
 
@@ -93,7 +93,7 @@ The easiest way to be the "10X developer" is to have _done the job before_.  If 
 
 ## Old Saw No. 2: Quality, Speed, Cost: Pick Any Two
 
-![Brooks' Law, Risk-First Style](/images/generated/practices/estimates/brooks.png)
+![Brooks' Law, Risk-First Style](../images/generated/practices/estimates/brooks.png)
 
 > "The Project Management Triangle (called also the Triple Constraint, Iron Triangle and Project Triangle) is a model of the constraints of project management. While its origins are unclear, it has been used since at least the 1950s.  It contends that: 
 > 1. The quality of work is constrained by the project's budget, deadlines and scope (features).
@@ -133,7 +133,7 @@ Later in the story, the schedule has slipped twice and is about to slip again:
 
 > ... at the 9-month mark, the team had completed detailed design, but coding still hadn't begun on some modules. It was clear that Carl couldn't make the 10-month schedule either. He announced the _third schedule slip_ to 12 months. Bill's face turned red when Carl announced the slip, and the pressure from him became more intense.   `(2)`
 
-![Carl's Schedule Slip increases Trust and Belief Risks](/images/generated/practices/estimates/carl1.png)
+![Carl's Schedule Slip increases Trust and Belief Risks](../images/generated/practices/estimates/carl1.png)
 
 At point `(2)`, Carl has tried to mitigate [Feature Risk](../risks/Feature-Risk.md) by increasing [Schedule Risk](../risks/Scarcity-Risk.md#Schedule-Risk), although he knows that Bill will trust him less for doing this, as shown in the diagram above.  Let's continue...
 
@@ -141,7 +141,7 @@ At point `(2)`, Carl has tried to mitigate [Feature Risk](../risks/Feature-Risk.
 
 At point `(3)` in McConnell's Case Study, the schedule has slipped again and Bill has threatened Carl's job.  Why did he do this?  Because _he doesn't trust Carl's evaluation of the [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk)_.  By telling Carl that it's his job on the line he makes sure Carl appreciates the [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk). 
 
-![Bill's Ultimatum](/images/generated/practices/estimates/bill1.png)
+![Bill's Ultimatum](../images/generated/practices/estimates/bill1.png)
 
 However, forcing staff to do overtime is a dangerous ploy:  it could disenfranchise the staff, or cause corners to be cut, as shown in the diagram above.
 
@@ -149,7 +149,7 @@ However, forcing staff to do overtime is a dangerous ploy:  it could disenfranch
 
 At point `(4)`, we see that Bill's gamble worked (for him at least):  the project was delivered by the team working overtime for two months.  This was lucky - it seems unlikely that no-one quit and that the code didn't descend into a mess in that time.  
 
-![Team Response](/images/generated/practices/estimates/team1.png)
+![Team Response](../images/generated/practices/estimates/team1.png)
 
 The diagram above shows the [action taken](../thinking/Glossary.md#taking-action), _working overtime_.  Despite this being a fictional (or fictionalised) example, it rings true for many projects.  What _should_ have happened at point `(1)`?  Both Carl and Bill estimated incorrectly...  Or did they?   Was this just Parkinson's Law in operation?
  
@@ -192,27 +192,27 @@ Instead of the Agile Estimation being about picking out a story-point number bas
  - "I don't think we should have component A interacting with component B because it'll introduce extra [Communication Risk](../risks/Communication-Risk.md) which we will always be tripping over."
  - "I worry we might not understand what the sales team want and are facing [Feature Implementation Risk](../risks/Feature-Risk.md#implementation-risk).  How about we try and get agreement on a specification?"  
  
-![Risk-First Diagram Language](/images/generated/introduction/all_risk_management_language.png)
+![Risk-First Diagram Language](../images/generated/introduction/all_risk_management_language.png)
  
 Essentially, this is what we are trying to capture with [Risk-First Diagrams](../thinking/Just-Risk.md#goals-are-risks-too) (the diagram above being the template for this).
  
 #### Tip #2: The Risk Landscape is Increasingly Complex: Utilise This
 
-![Journey via the Central Line](/images/estimates/central-line.png)
+![Journey via the Central Line](../images/estimates/central-line.png)
 
 If you were travelling across London from Ealing (in the West) to Stratford (in the East) the _fastest_ route might be to take the Central Line.  You could do it via the A406 road, which would take a _bit_ longer.  It would _feel_ like you're mainly going in completely the wrong direction doing that, but it's much faster than cutting straight through London and you don't pay the congestion charge.
 
-![Journey by Car](/images/estimates/car.png)
+![Journey by Car](../images/estimates/car.png)
 
 In terms of risk, they all have different profiles.  You're often delayed in the car, by some amount.  The tube is _generally_ reliable, but when it breaks down or is being repaired it might end up quicker to walk.  
 
 If you were doing this same journey on foot, it's a very direct route, but would take five times longer.  However, if you were making this journey a hundred years ago that might be the only choice (horseback might be a bit faster).
 
-![Journey on Foot](/images/estimates/foot.png)
+![Journey on Foot](../images/estimates/foot.png)
  
 In the software development past, _building it yourself_ was the only way to get anything done.  It was like London _before road and rail_.   Nowadays, you are bombarded with choices.  It's actually _worse than London_ because it's not even a two-dimensional geographic space and there are multitudes of different routes and acceptable destinations.  Journey planning on the software [Risk Landscape](../thinking/Glossary.md#risk-landscape) is an optimisation problem _par excellence_. 
 
-![Possible Moves On The Risk Landscape](/images/generated/practices/estimates/risk-landscape_sideways.png)
+![Possible Moves On The Risk Landscape](../images/generated/practices/estimates/risk-landscape_sideways.png)
 
 Because the modern [Risk Landscape](../thinking/Glossary.md#risk-landscape) is so complex:
 
@@ -259,7 +259,7 @@ Let's get back to Bill and Carl.  What went wrong between points `(1)` and `(2)`
 
 > "Well, in my head it's actually pretty simple, " said Bill. "Maybe I don't have the full picture, or maybe your idea of what to build is more complex than I think it needs to be.  That's a massive risk right there and I think we should try and mitigate it right now before things progress.  Maybe I'll need to go back to the board if it's worse than I think. "
 
-![Identifying The Action](/images/generated/practices/estimates/bill2.png)
+![Identifying The Action](../images/generated/practices/estimates/bill2.png)
 
 #### Tip #5: Picture Worrying Futures
 

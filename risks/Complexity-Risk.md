@@ -21,7 +21,7 @@ redirect_from:
 
 We're going to start by looking at _code you write_: the size of your code-base, the amount of code, the number of modules, the interconnectedness of the modules and how well-factored the code is.  
 
-![Complexity Risk and Codebase Risk](/images/generated/risks/complexity/complexity-risk.png)
+![Complexity Risk and Codebase Risk](../images/generated/risks/complexity/complexity-risk.png)
 
 You could think of this as  [Codebase Risk](Complexity-Risk.md#codebase-risk), being a specific type of [Complexity Risk](Complexity-Risk.md).  We'll look at two measures of codebase complexity before talking about [Technical Debt](Complexity-Risk.md#technical-debt) and [Feature Creep](#feature-creep).
 
@@ -98,7 +98,7 @@ A second, useful measure of complexity comes from graph theory, and that is the 
 
 > "...the minimum number of elements (nodes or edges) that need to be removed to disconnect the remaining nodes from each other" - [Connectivity, _Wikipedia_](https://en.wikipedia.org/wiki/Connectivity_(graph_theory))
 
-![Graph 1, 2-Connected](/images/generated/risks/complexity/connectivity_1.png)
+![Graph 1, 2-Connected](../images/generated/risks/complexity/connectivity_1.png)
 
 To see this in action, have a look at the graph above.  It has 10 vertices, labelled **a** to **j**, and it has 15 edges (or links) connecting the vertices together.  If any single edge were removed from the diagram above, the 10 vertices would still be linked together.   Because of this, we can say that the graph is _2-connected_.   That is, to disconnect any single vertex, you'd have to remove _at least_ two edges.
 
@@ -126,7 +126,7 @@ i: j
                                                       (39)
 ```
 
-![Graph 2, 1-Connected](/images/generated/risks/complexity/connectivity_2.png)
+![Graph 2, 1-Connected](../images/generated/risks/complexity/connectivity_2.png)
 
 In the graph above, I've removed 6 of the edges.  Now, we're in a situation where if any single edge is removed, the graph becomes _unconnected_.  That is, it's broken into distinct chunks.  So, it is _1-connected_.  
 
@@ -206,7 +206,7 @@ Building a low-complexity first-time solution is often a waste:  in the first ve
 
 So a quick-and-dirty, over-complex implementation mitigates the same [Feature Risk](Feature-Risk.md) and allows you to [Meet Reality](../thinking/Meeting-Reality.md) faster.  
 
-![Complexity Risk and some mitigations](/images/generated/risks/complexity/complexity-risk2.png)
+![Complexity Risk and some mitigations](../images/generated/risks/complexity/complexity-risk2.png)
 
 But having mitigated the [Feature Risk](Feature-Risk.md) this way, you are likely exposed to more [Complexity Risk](Complexity-Risk.md) than you necessarily need.  As the above diagram shows, one of the ways to mitigate [Complexity Risk](Complexity-Risk.md) is by [Refactoring](https://en.wikipedia.org/wiki/Code_refactoring) the software, which means using the tools of abstraction and modularisation. 
 
@@ -220,7 +220,7 @@ Now of course, you could carry on with the messy kitchen.  When tomorrow comes a
 
 It's not long before someone comes down with food poisoning.   
 
-![Complexity Risk and its implications](/images/generated/risks/complexity/complexity-risk-impact.png)
+![Complexity Risk and its implications](../images/generated/risks/complexity/complexity-risk-impact.png)
 
 We wouldn't tolerate this behaviour in a restaurant kitchen, so why put up with it in a software project?  This state-of-affairs is illustrated in the above diagram: [Complexity Risk](Complexity-Risk.md) can be a cause of [Operational Risks](Operational-Risk.md) and [Security Risks](Agency-Risk.md#security).
 
@@ -235,7 +235,7 @@ The problem with this definition is that we are accepting features of our softwa
 
 Applying Risk-First, if you want to mitigate some [Feature Risk](Feature-Risk.md) then you have to pick up [Complexity Risk](Complexity-Risk.md) as a result.  But, that's a _choice you get to make_.  
 
-![Mitigating Feature Fit Risk (from Feature Risk)](/images/generated/risks/feature/feature-fit-risk.png)
+![Mitigating Feature Fit Risk (from Feature Risk)](../images/generated/risks/feature/feature-fit-risk.png)
 
 Therefore, [Feature Creep](https://en.wikipedia.org/wiki/Feature_creep) (or [Gold Plating](https://en.wikipedia.org/wiki/Gold_plating_(software_engineering))) is a failure to observe this basic equation:  instead of considering this trade off, you're building _every feature possible_.  This will impact on [Complexity Risk](Complexity-Risk.md).
 
@@ -243,7 +243,7 @@ Sometimes, feature-creep happens because either managers feel they need to keep 
 
 ## Dead-End Risk
 
-![Dead-End Risk](/images/generated/risks/complexity/dead-end-risk.png) 
+![Dead-End Risk](../images/generated/risks/complexity/dead-end-risk.png) 
 
 [Dead-End Risk](Complexity-Risk.md#dead-end-risk) is where you take an action that you _think_ is useful, only to find out later that actually it was a dead-end and your efforts were wasted.  Here, we'll see that [Complexity Risk](Complexity-Risk.md) is a big cause of this (as the above diagram shows).
 

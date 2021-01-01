@@ -15,7 +15,7 @@ redirect_from:
 
 # Staging and Classifying
 
-![Staged and Classified Beetle Collection, (Credit: Fir0002, Wikipedia)](/images/Beetle_collection_short.jpg)
+![Staged and Classified Beetle Collection, (Credit: Fir0002, Wikipedia)](../images/Beetle_collection_short.jpg)
 
 Our tour is complete.  
 
@@ -25,7 +25,7 @@ But if we are good collectors, then before we finish we should _[Stage](https://
 
 As we said [at the start](A-Pattern-Language.md), Risk-First is all about developing _A Pattern Language_.  We can use the terms like "[Feature Risk](Feature-Risk.md)" or "[Learning Curve Risk](Communication-Risk.md#learning-curve-risk)" to explain phenomena we see on software projects.   If we want to [De-Risk](../thinking/De-Risking.md) our work, we need this power of explanation so we can talk about how to go about it.
 
-![Periodic Table of Risks](/images/generated/staging-and-classifying/periodic-table-large.png)
+![Periodic Table of Risks](../images/generated/staging-and-classifying/periodic-table-large.png)
 
 The diagram above compiles all of the risks we've seen so far on our tour across the [Risk Landscape](Risk-Landscape.md).  Just like a periodic table, there are perhaps others left to discover.   _Unlike_ a periodic table, these risks are not completely distinct: they mix like paint and blend into one another.  
 
@@ -39,7 +39,7 @@ Let's now _generalize_ what is happening with abstraction.  To do this, we'll co
 
 ### Using A Known Abstraction
 
-![Using A Known Abstraction](/images/generated/staging-and-classifying/depending-abstraction.png)
+![Using A Known Abstraction](../images/generated/staging-and-classifying/depending-abstraction.png)
 
 As shown in the above diagram, _using an abstraction you already know_ means:
 
@@ -50,7 +50,7 @@ As shown in the above diagram, _using an abstraction you already know_ means:
  
 ### Inventing A New Abstraction  
 
-![Inventing A New Abstraction](/images/generated/staging-and-classifying/inventing-abstraction.png)
+![Inventing A New Abstraction](../images/generated/staging-and-classifying/inventing-abstraction.png)
 
 As shown in the above diagram, _inventing a new abstraction_ means:
 
@@ -61,7 +61,7 @@ As shown in the above diagram, _inventing a new abstraction_ means:
     
 ### Learning A New Abstraction
 
-![Learning a New Abstraction](/images/generated/staging-and-classifying/choosing-abstraction.png)
+![Learning a New Abstraction](../images/generated/staging-and-classifying/choosing-abstraction.png)
 
 As shown in the above diagram, _learning a new abstraction_ means:
 
@@ -73,7 +73,7 @@ Abstraction is everywhere and seems to be at the heart of what our brains do.  B
 
 ## Your Feature Risk is Someone Else's Dependency Risk
 
-![Features And Dependencies](/images/generated/staging-and-classifying/features-and-dependencies.png)
+![Features And Dependencies](../images/generated/staging-and-classifying/features-and-dependencies.png)
 
 In the [Feature Risk](Feature-Risk.md) section, we looked at the problems of _supplying something for a client to use as a dependency_:  you've got to satisfy a demand ([Market Risk](Feature-Risk.md#market-risk)) and service a segment of the user community ([Feature Access Risk](Feature-Risk.md#feature-access-risk)).    
 

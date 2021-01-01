@@ -14,7 +14,7 @@ But being early (a too-late estimate) risks:
  - Estimate was too long, people go elsewhere          Personal
  
 
-![Risks now and later](/images/generated/estimating/early_late_risks.png)
+![Risks now and later](../images/generated/estimating/early_late_risks.png)
 
 As a project manager, you're much more likely to put your own interests ahead of the company.  But luckily, the goals of the company and the project manager co-incide for the most part:  managers are incentivised by pay (and maybe bonuses) to bring projects in on time, and doing so looks good on the CV.
 

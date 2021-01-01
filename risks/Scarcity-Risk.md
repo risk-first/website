@@ -21,11 +21,11 @@ In the previous section we talked about the _reliability_ of the bus:  it will e
 
 Any resource (such as disk space, oxygen, concert tickets, time or pizza) that you depend on can suffer from _scarcity_,  and here, we're going to look at five particular types, relevant to software.<!-- tweet-end -->
 
-![Scarcity Risk and its variations](/images/generated/risks/scarcity/scarcity-risks.png)
+![Scarcity Risk and its variations](../images/generated/risks/scarcity/scarcity-risks.png)
 
 ## Funding Risk
 
-![Funding Risk](/images/generated/risks/scarcity/funding-risk.png)
+![Funding Risk](../images/generated/risks/scarcity/funding-risk.png)
 
 On a lot of software projects you are "handed down" deadlines from above and told to deliver by a certain date or face the consequences. <!-- tweet-end --> But sometimes you're given a budget instead, which really just adds another layer of abstraction to the [Schedule Risk](Scarcity-Risk.md#schedule-risk).  That is, do I have enough funds to cover the team for as long as I need them?
 
@@ -110,7 +110,7 @@ The problem with software projects is that tools and techniques change _really f
 
 Now, they didn't _deliberately_ take 15 years to build this game (lots of things went wrong).  But, the longer it took, the more their existing design and code-base were a liability rather than an asset. 
 
-![Red Queen Risk](/images/generated/risks/scarcity/red-queen-risk.png)
+![Red Queen Risk](../images/generated/risks/scarcity/red-queen-risk.png)
 
 Personally, I have suffered the pain on project teams where we've had to cope with legacy code and databases because the cost of changing them was too high.  This is shown in the above diagram:  mitigating [Red Queen Risk](#red-queen-risk) (by _keeping up-to-date_) has the [Attendant Risk](../thinking/Glossary.md#attendant-risk) of costing time and money, which might not seem worth it.  Any team who is stuck using [Visual Basic 6.0](https://en.wikipedia.org/wiki/Visual_Basic) is here.   
 

@@ -21,13 +21,13 @@ redirect_from:
 
 I was watching a Minecraft video the other day with my son, in which the designers had built a simple sorting algorithm:  you filled up a chest with items (food, weapons, building materials, for example) and then (somehow) the items got sorted into further, output chests.
 
-![A Sorting System Built In Minecraft](/images/posts/minecraft/minecraft.jpg)
+![A Sorting System Built In Minecraft](../images/posts/minecraft/minecraft.jpg)
 
 If you want, you can follow an [Instructable and build one yourself](https://www.instructables.com/id/Minecraft-Sorting-System/)
 
 It was very clever, and whilst I have a tenuous grasp on the concepts of using "Redstone", I had little idea of how it worked.  Redstone is Minecraft's way of constructing something akin to circuit board logic.  Here's a picture of some Redstone, for reference:
 
-![Redstone](/images/posts/minecraft/redstone.png)
+![Redstone](../images/posts/minecraft/redstone.png)
 
 Redstone "programming" contains a lot of the features you'd recognise in a regular programming:
 
@@ -43,15 +43,15 @@ But Minecraft is an _awful_ environment to program in because:
 
 Nevertheless, people have coded some quite cool things in Minecraft, such as Space Invaders.  Here's the view from the front:
 
-![Space Invaders From The Front](/images/posts/minecraft/si_front.png)
+![Space Invaders From The Front](../images/posts/minecraft/si_front.png)
 
 And here's the innards view at the back:
 
-![Space Invaders From The Back](/images/posts/minecraft/si_back.png)
+![Space Invaders From The Back](../images/posts/minecraft/si_back.png)
 
 Further, it seems Redstone is (arguably) [Turing Complete](https://en.m.wikipedia.org/wiki/Turing_completeness), meaning you can write any algorithm in it, like building a computer, for example:
 
-![Redstone Computer](/images/posts/minecraft/computer.jpg)
+![Redstone Computer](../images/posts/minecraft/computer.jpg)
 
 Or, you can try to implement [Minecraft in Minecraft]:
 
@@ -63,7 +63,7 @@ There's an argument that it's _less_ than this though:  vertical positioning is 
 
 Normal programming is usually based on manipulating an AST (Abstract Syntax Tree), and trees have a [Fractal (or fractional)](https://en.wikipedia.org/wiki/Hausdorff_dimension) dimensionality, so actually it's somewhere between 1 and 2 dimensions (a [Sierpinski Gasket](https://en.wikipedia.org/wiki/Hausdorff_dimension#Examples) has 1.5 dimensions).
 
-![Oculus Go](/images/posts/minecraft/oculus.jpg)
+![Oculus Go](../images/posts/minecraft/oculus.jpg)
 
 So first open question is:  _could using more dimensions help programming?_  Could something like [The Oculus Go](https://www.oculus.com/go/) change how we program by opening up the ability to visualize our code in more dimensions?  Or would more dimensions actually make things worse?  What do you think?
 

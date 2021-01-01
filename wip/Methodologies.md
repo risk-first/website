@@ -1,4 +1,4 @@
-![Under Construction](/images/state/uc.png)
+![Under Construction](../images/state/uc.png)
 
 Thinking is hard.  And worrying about Risk constantly would be _exhausting_.
 
@@ -16,7 +16,7 @@ When it sticks, a methodology embeds a set of practices in a team to such an ext
 
 ## A Pattern Language
 
-![A Pattern Language](/images/generated/pattern_language.png)
+![A Pattern Language](../images/generated/pattern_language.png)
 
 It stands to reason that if [all software is about risk management](Just-Risk.md), then we can examine methodologies 
 _themselves_ in terms of how their practices mitigate risk, and change the balance of risk on projects.  

@@ -23,7 +23,7 @@ A lot of people and organisations have goals ("A million subscribers!", "Lose 15
 
 But it's often useful to enumerate exactly what you _don't_ want to happen, that is, Anti-Goals.
 
-![Goals On A Golf Course](/images/posts/anti-goals/golf.png)
+![Goals On A Golf Course](../images/posts/anti-goals/golf.png)
 
 ## An Example
 

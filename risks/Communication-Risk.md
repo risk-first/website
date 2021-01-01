@@ -21,7 +21,7 @@ But people are not all-knowing oracles.  We rely on our _senses_ to improve our 
 
 ## A Model Of Communication
 
-![Shannon's Communication Model](/images/generated/risks/communication/communication_1.png)
+![Shannon's Communication Model](../images/generated/risks/communication/communication_1.png)
 
 In 1948, Claude Shannon proposed this definition of communication:
 
@@ -48,7 +48,7 @@ But it's not just transmission.  [Communication Risk](Communication-Risk.md) exi
 
 There is a symmetry about the steps going on in the diagram above, and we're going to exploit this in order to break down [Communication Risk](Communication-Risk.md) into its main types.  <!-- tweet-end -->
 
-![Communication Risk, broken into four areas](/images/generated/risks/communication/communication_2.png)
+![Communication Risk, broken into four areas](../images/generated/risks/communication/communication_2.png)
 
 To get inside [Communication Risk](Communication-Risk.md), we need to understand **Communication** itself, whether between _machines_, _people_ or _products_:   we'll look at each in turn.  In order to do that, we're going to examine four basic concepts in each of these settings:
  
@@ -73,7 +73,7 @@ The channel characteristics also imply suitability for certain _kinds_ of messag
 
 Shannon discusses that no channel is perfect:  there is always the **risk of noise** corrupting the signal.  A key outcome from Shannon's paper is that there is a tradeoff:  within the capacity of the channel (the **Bandwidth**), you can either send lots of information with _higher_ risk that it is wrong, or less information with _lower_ risk of errors.
 
-![Communication Channel Risk](/images/generated/risks/communication/communication_channel_risks.png) 
+![Communication Channel Risk](../images/generated/risks/communication/communication_channel_risks.png) 
 
 But channel risk goes wider than just this mathematical example:  messages might be delayed or delivered in the wrong order, or not be acknowledged when they do arrive.  Sometimes, a channel is just an inappropriate way of communicating.  When you work in a different time-zone to someone else on your team, there is _automatic_ [Channel Risk](Communication-Risk.md#channel-risk), because instantaneous communication is only available for a few hours a day. 
 
@@ -94,7 +94,7 @@ This works both ways.  Let's looks at some of the **Channel Risks** from the poi
  - I've chosen **D**, I now need to persuade my team that **D** is the correct solution...
  - ... and then they also need to understand **D** to do their job too.
 
-![Marketing Communication](/images/generated/risks/communication/communication_marketing.png)
+![Marketing Communication](../images/generated/risks/communication/communication_marketing.png)
 
 [Internal Models](../thinking/Glossary.md#Internal-Model) don't magically get populated with the information they need:  they fill up gradually, as shown in the diagram above.  Popular products and ideas _spread_, by word-of-mouth or other means.  Part of the job of being a good technologist is to keep track of new **Ideas**, **Concepts** and **Options**, so as to use them as [Dependencies](Dependency-Risk.md) when needed.
 
@@ -111,7 +111,7 @@ First we need to broaden our terminology.  Although so far we've talked about **
  - If you're _depended on_, then you're a **"Supplier"** (or a **"Server"**, when we're talking about actual hardware).
  - If you require communication with something else, you're a **"Client"**.   
 
-![Protocol Stack](/images/generated/risks/communication/communication_protocols.png) 
+![Protocol Stack](../images/generated/risks/communication/communication_protocols.png) 
  
 In order that a web browser (a **client**) can load a web-page from a **server**, they both need to communicate with shared protocols.  In this example, this is going to involve (at least) six separate protocols, as shown in the diagram above.  
 
@@ -191,7 +191,7 @@ By having a stack of protocols we are able to apply [Separation Of Concerns](htt
 
 ## Protocol Risk
 
-![Communication Protocols Risks](/images/generated/risks/communication/communication_protocol_risks.png)
+![Communication Protocols Risks](../images/generated/risks/communication/communication_protocol_risks.png)
 
 Hopefully, the above example gives an indication of the usefulness of protocols within software.  But for every protocol we use, we have [Protocol Risk](Communication-Risk.md#protocol-risk).  While this is a problem in human communication protocols, it's really common in computer communication because we create protocols _all the time_ in software. 
 
@@ -279,7 +279,7 @@ A second aspect of [Protocol Risk](Communication-Risk.md#protocol-risk) exists i
 
 ## Messages
 
-![Message Risk](/images/generated/risks/communication/communication_message_risks.png) 
+![Message Risk](../images/generated/risks/communication/communication_message_risks.png) 
 
 Although Shannon's Communication Theory is about transmitting **Messages**, messages are really encoded **Ideas** and **Concepts**, from an **Internal Model**. <!-- tweet-end -->  Let's break down some of the risks associated with this:
 
@@ -355,7 +355,7 @@ When you build a software service, or even implement a thread, ask yourself:  "H
 
 ## Internal Models
 
-![Internal Model Risks](/images/generated/risks/communication/communication_internal_model_risks.png)
+![Internal Model Risks](../images/generated/risks/communication/communication_internal_model_risks.png)
 
 The communication process so far has been fraught with risks, but now let's look at risks specific to our internal models.
 
@@ -393,7 +393,7 @@ But now we should be able to see the reason why it's harder to read than write t
 
 ## Communication Risk Wrap Up
 
-![Communication Risks, Summarised](/images/generated/risks/communication/communication_3.png)
+![Communication Risks, Summarised](../images/generated/risks/communication/communication_3.png)
 
 In this section, we've looked at [Communication Risk](Communication-Risk.md) itself and broken it down into six sub-types of risk as shown in the diagram above.  Again, we are calling out _patterns_ here. You could classify communication risks in other ways, but concepts like [Learning Curve Risk](#Learning-Curve-Risk) and [Invisibility Risk](#Invisibility-Risk) we will be using again in again in Risk-First.
 

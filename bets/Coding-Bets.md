@@ -40,7 +40,7 @@ Refactoring requires that you have some _simplifying realisation_:
 
 It looks like this:
 
-![Stake and Reward for Fixing Technical Debt](/images/generated/practices/coding/refactoring.png)
+![Stake and Reward for Fixing Technical Debt](../images/generated/practices/coding/refactoring.png)
 
 **When you win** the codebase becomes easier to think about, and you delay the tar-pit.  
  
@@ -62,7 +62,7 @@ Alternatively, someone will suggest using an existing technology to eradicate lo
 
 But will the new technology fit?  The answer is to try to "prove" the bet as quickly as possible using a time-boxed "Spike Solution".
 
-![Stake and Reward for A Spike Solution](/images/generated/practices/coding/spike.png)
+![Stake and Reward for A Spike Solution](../images/generated/practices/coding/spike.png)
 
 **When you win**, either the spike solution demonstrates clearly that it's definitely a good fit, or definitely _isn't_, for reasons that weren't apparent before starting.  The team learns something in the process. 
  
@@ -88,7 +88,7 @@ Often you get user-stories like these:
 
 New features might help sell your software to new markets and please existing power users.  But too many features confuse users, obscuring the essential purpose of the software.  This is [Conceptual Integrity Risk](../risks/Feature-Risk.md#conceptual-integrity-risk) - trying to please everyone means you please no-one.  
 
-![Stake and Reward for Adding New Features](/images/generated/practices/coding/new-feature.png)
+![Stake and Reward for Adding New Features](../images/generated/practices/coding/new-feature.png)
 
 **When you win** existing users welcome the change with open arms and maybe new markets open up.
  
@@ -120,7 +120,7 @@ The idea here is to make a bet that a market exists for a certain product, _and 
  
 **When you lose**  you suffer a loss of credibility, and funding dries up.
 
-![New Market Bet](/images/generated/practices/coding/new-market.png)
+![New Market Bet](../images/generated/practices/coding/new-market.png)
  
 **Reduce the stakes by:** 
 - Failing fast.  Implement the riskiest functionality first.

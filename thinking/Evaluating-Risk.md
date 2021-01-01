@@ -53,13 +53,13 @@ Risk-First takes a view that risks are a continuous quantity, more like _money_ 
 
 ## Risk Matrix
 
-![Risk Register of Dinner Party Risks](/images/generated/introduction/risk_matrix.png)
+![Risk Register of Dinner Party Risks](../images/generated/introduction/risk_matrix.png)
 
 A risk matrix presents a graphical view on where risks exist.  The diagram above is an example, showing the risks from the dinner party in the [A Simple Scenario](A-Simple-Scenario.md) section:
 
 This type of graphic is _helpful_ in deciding what to do next, although alternatively, you can graph the overall **Risk Score** against the [Payoff](../thinking/Glossary.md#payoff).  Easily mitigated risk (on the right), and worse risks (at the top) can therefore be dealt with first (hopefully).
 
-![Risk Register of Dinner Party Risks, Considering Payoff](/images/generated/introduction/risk_matrix_2.png)
+![Risk Register of Dinner Party Risks, Considering Payoff](../images/generated/introduction/risk_matrix_2.png)
 
 ## Unknown Unknowns
 
@@ -135,17 +135,17 @@ If the methodology _fails at a particular scale_ this tells you something about 
 
 ### Speed
 
-![Pillars, From Rapid Development By Steve McConnell](/images/generated/introduction/pillars_smc.png)  
+![Pillars, From Rapid Development By Steve McConnell](../images/generated/introduction/pillars_smc.png)  
 
 The diagram above reproduces a figure from [Rapid Development](http://a.co/d/ddWGTB2) by Steve McConnell.  This is _fine_: McConnell is structuring the process from the perspective of _delivering as quickly as possible_.  However, here, I want to turn this on its head.  Software Development from a risk-first perspective is an under-explored technique, and I believe it offers some useful insights.   So the aim here is to present the case for viewing software development like this:
 
-![Pillars, re-arranged](/images/generated/introduction/pillars_kite9.png)
+![Pillars, re-arranged](../images/generated/introduction/pillars_kite9.png)
 
 As we will see, _Speed_ (or [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk) as we will term it) is one risk amongst others that need to be considered from a risk-management perspective.  There's no point in prioritising _speed_ if the software fails in production due to [Operational Risk](../risks/Operational-Risk.md) issues and damages trust in the product.
 
 ### Eisenhower's Box
 
-![A basic "Eisenhower box" to help evaluate urgency and importance. Items may be placed at more precise points within each quadrant.  - Adapted From [Time Management, _Wikipedia_](https://en.wikipedia.org/wiki/Time_management)](/images/generated/introduction/eisenhowers_box.png)
+![A basic "Eisenhower box" to help evaluate urgency and importance. Items may be placed at more precise points within each quadrant.  - Adapted From [Time Management, _Wikipedia_](https://en.wikipedia.org/wiki/Time_management)](../images/generated/introduction/eisenhowers_box.png)
 
 Eisenhower's Box is a simple model allowing us to consider _two_ aspects of risk at the same time:
 
@@ -158,7 +158,7 @@ The problem is, we now need to choose whether to do something that is _urgent_ o
 
 We can use [Net Present Value](https://en.wikipedia.org/wiki/Net_present_value) to discount value in the future, which offers us a way to reconcile these two variables.  The further in the future the value is realised, the bigger the discount.  This is done because payment _now_ is better than payment in the future:  there is the risk that something will happen to prevent that future payment.  This is why we have _interest rates_ on loan payments.
 
-![Net Present Value Discounting](/images/numbers/npv.png)
+![Net Present Value Discounting](../images/numbers/npv.png)
 
 In the diagram above, you can see two future payments: Payment **A** of £100 due in one year, and Payment **B** of £150 due in 10 years.  By discounting at a given rate (here at a high rate of 20% per year) we can compare their worth _now_.  At this discount rate, Payment **A**  - arriving next year - has a far greater value.  
 
@@ -171,11 +171,11 @@ Let's look at a quick example to see how this could work out.  Let's say you had
 - Risk **A**, which will cost you £50 in 5 days' time.
 - Risk **B**, which will cost you £70 in 8 days' time.
 
-![Net Present Risk, 6% Discount Rate](/images/numbers/npr1.png)
+![Net Present Risk, 6% Discount Rate](../images/numbers/npr1.png)
 
 Which has the biggest NPR?  Well, it depends on the discount rate that you apply.  The graph above  assumes we are discounting at 6% per _day_.  On this basis, the biggest NPR is **B**, at about £45. 
 
-![Net Present Risk, 20% Discount Rate](/images/numbers/npr2.png)
+![Net Present Risk, 20% Discount Rate](../images/numbers/npr2.png)
 
 However, the graph above increases the discount factor to 20% and we get a different result:  Now, risk **A** is bigger.  
 
@@ -192,7 +192,7 @@ I have worked in teams sometimes where the blinkers go down, and the only thing 
 
 Risk B is almost irrelevant under this regime, as this graph shows:
 
-![Net Present Risk, 60% Discount Rate](/images/numbers/npr3.png)
+![Net Present Risk, 60% Discount Rate](../images/numbers/npr3.png)
 
 Why do things like this happen?  Often, the people involved are under incredible job-stress:  usually they are threatened on a daily basis, and therefore feel they have to react.  In a similar way, publicly-listed companies also often apply short-term focus, because they only care about the _next annual report_, which limits their horizons and ability to consider future risk.
 

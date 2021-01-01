@@ -27,7 +27,7 @@ Not considering [Feature Risk](Feature-Risk.md) means that you might be building
 
 ## Feature Fit Risk
 
-![Feature Fit Risk](/images/generated/risks/feature/feature-fit-risk.png) 
+![Feature Fit Risk](../images/generated/risks/feature/feature-fit-risk.png) 
 
 This is the one we've just discussed above - the feature that clients want to use in the software _isn't there_.
 
@@ -38,7 +38,7 @@ This is the one we've just discussed above - the feature that clients want to us
  
 ## Implementation Risk
 
-![Implementation Risk](/images/generated/risks/feature/feature-implementation-risk.png) 
+![Implementation Risk](../images/generated/risks/feature/feature-implementation-risk.png) 
 
 [Feature Risk](Feature-Risk.md) also includes things that don't work as expected<!-- tweet-end -->, that is to say, [bugs](https://en.wikipedia.org/wiki/Software_bug).   Although the distinction between "a missing feature" and "a broken feature" might be worth making in the development team, we can consider these both the same kind of risk:  _the software doesn't do what the user expects_.  As shown in the above diagram, we can mitigate this risk with _feedback_ from users, as well as further _development_ and _testing_.
 
@@ -46,7 +46,7 @@ It's worth pointing out that sometimes, _the user expects the wrong thing_.  Thi
 
 ## Regression Risk
 
-![Regression Risk](/images/generated/risks/feature/feature-regression-risk.png) 
+![Regression Risk](../images/generated/risks/feature/feature-regression-risk.png) 
 
 [Regression Risk](Feature-Risk.md#regression-risk) is the risk of breaking existing features in your software when you add new ones.  <!-- tweet-end -->As with the previous risks, the eventual result is the same: customers don't have the features they expect.  This can become a problem as your code-base [gains Complexity](Complexity-Risk.md) and as it becomes impossible to keep a complete [Internal Model](../thinking/Glossary.md#Internal-Model) of the whole thing in your head.
 
@@ -54,7 +54,7 @@ Delivering new features can delight your customers, breaking existing ones will 
 
 ## Conceptual Integrity Risk
 
-![Conceptual Integrity Risk](/images/generated/risks/feature/conceptual-integrity-risk.png) 
+![Conceptual Integrity Risk](../images/generated/risks/feature/conceptual-integrity-risk.png) 
 
 Sometimes users _swear blind_ that they need some feature or other, but it runs at odds with the design of the system, and plain _doesn't make sense_.   Often the development team can spot this kind of conceptual failure as soon as it enters the [Backlog](../practices/Prioritisation.md). Usually it's in coding that this becomes apparent.  
 
@@ -68,7 +68,7 @@ This is a particularly pernicious kind of [Feature Risk](Feature-Risk.md) which 
 
 ## Feature Access Risk
 
-![Feature Access Risk](/images/generated/risks/feature/feature-access-risk.png) 
+![Feature Access Risk](../images/generated/risks/feature/feature-access-risk.png) 
 
 Sometimes features can work for some people and not others:  this could be down to [Accessibility](https://en.wikipedia.org/wiki/Accessibility) issues, language barriers or localisation.   <!-- tweet-end -->
 
@@ -80,7 +80,7 @@ In marketing terms, minimising [Feature Access Risk](#feature-access-risk) is al
 
 [Feature Access Risk](#feature-access-risk) is related to [Market Risk](Feature-Risk.md#market-risk), which I introduced in the [Risk Landscape](Risk-Landscape.md) section as being the value that the market places on a particular asset.  <!-- tweet-end -->
 
-![Market Risk](/images/generated/risks/feature/market-risk.png) 
+![Market Risk](../images/generated/risks/feature/market-risk.png) 
 
  > "Market risk is the risk of losses in positions arising from movements in market prices." - [Market Risk, _Wikipedia_](https://en.wikipedia.org/wiki/Market_risk)
 
@@ -90,7 +90,7 @@ Since the product you are building is your asset, it makes sense that you'll fac
 
 ## Feature Drift Risk
 
-![Feature Drift Risk](/images/generated/risks/feature/feature-drift-risk.png) 
+![Feature Drift Risk](../images/generated/risks/feature/feature-drift-risk.png) 
 
 **Feature Drift** is the tendency that the features people need _change over time_.   For example, at one point in time, supporting IE6 was right up there for website developers, but it's not really relevant anymore.  <!-- tweet-end -->  The continual improvements we see in processor speeds and storage capacity of our computers is another example:  the [Wii](https://en.wikipedia.org/wiki/Wii) was hugely popular in the early 2000's, but expectations have moved on now.        
 
@@ -139,7 +139,7 @@ Darwin's conception of fitness was not one of athletic prowess, but how well an 
  - **Expectation**, what the user _expects_.
  - **Reality**, what they actually _get_.
 
-![Feature Risks Assembled.  Fit Risks, shown as _gaps_, as in the _Service Quality Model_](/images/generated/risks/feature/all-feature-risk.png) 
+![Feature Risks Assembled.  Fit Risks, shown as _gaps_, as in the _Service Quality Model_](../images/generated/risks/feature/all-feature-risk.png) 
 
 For further reading, you can check out [The Service Quality Model](https://en.wikipedia.org/wiki/SERVQUAL) which the diagram above is derived from.  This model analyses the types of _quality gaps_ in services and how consumer expectations and perceptions of a service arise.
 
@@ -154,7 +154,7 @@ Two risks, [Feature Access Risk](Feature-Risk.md#feature-access-risk) and [Marke
 
 ### Fit, Audience and Evolution
 
-![Risks of Evolution/Change either of the product or the expectations of clients.](/images/generated/risks/feature/all-feature-risk2.png) 
+![Risks of Evolution/Change either of the product or the expectations of clients.](../images/generated/risks/feature/all-feature-risk2.png) 
 
 Two risks further consider how the **fit** and **audience** _change_: [Regression Risk](#regression-risk) and [Feature Drift Risk](#feature-drift-risk).  We call this _evolution_ in the sense that:
 

@@ -10,7 +10,7 @@ categories:
 order: 8
 ---
 
-![Under Construction](/images/state/uc.png)
+![Under Construction](../images/state/uc.png)
 
 # Stop Estimating, Start Navigating
 
@@ -64,7 +64,7 @@ The third question you need to always be asking is:  _what is our goal?_
 
 Considered individually, the tasks on our backlog clearly are operations which change the risks we are facing, but unless we understand the _goal_ or _goals_ of the product, we're not really in a position to make judgements about whether some set of risks is better or worse.
 
-![One Goal](/images/generated/estimating/planner/one-goal.png)
+![One Goal](../images/generated/estimating/planner/one-goal.png)
 
 If we are a startup with some investors, they might have set us the goal themselves.  Perhaps the future funding of the business is predicated on our ability to generate a certain number of subscribers?  Then the business goal might look like that in the diagram above.
 
@@ -80,7 +80,7 @@ Let's consider the third task: refactoring the subscription model.
 
 
 
-![Use-Cases With Risk Profiles](/images/generated/estimating/planner/example2.png)
+![Use-Cases With Risk Profiles](../images/generated/estimating/planner/example2.png)
 
 The above diagram gives us some indication _why_ the tasks are on the backlog:
 

@@ -344,7 +344,7 @@ But where is the risk accrued?   If you give an estimate, you lock in a maximum 
 
 This is important:  the point at which you present your estimate is the point of highest too-early risk.  It's also the point at which this risk is either accepted or rejected.  
 
-![Accepting an estimate](/images/generated/estimating/accept_estimate.png)
+![Accepting an estimate](../images/generated/estimating/accept_estimate.png)
 
 The diagram above is an example of this.   A supplier is bidding for a contract with a client.  The client has functionality they want build (or [Feature Risk](../risks/Feature-Risk.md) as we call it on Risk-First).  The supplier needs money to keep their business going ([Funding Risk](../risks/Scarcity-Risk.md#funding-risk) on this diagram).  
 

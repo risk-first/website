@@ -108,7 +108,7 @@ Let's look at three common ways to mitigate [Agency Risk](Agency-Risk.md):  [Mon
 
 ### Monitoring
 
-![Mitigating Agency Risk Through Monitoring](/images/generated/risks/agency/agency-risk.png)
+![Mitigating Agency Risk Through Monitoring](../images/generated/risks/agency/agency-risk.png)
 
 A the core of the Principal-Agent Problem is the issue that we _want_ our agents to do work for us so we don't have the responsibility of doing it ourselves.  However, we pick up the second-order responsibility of managing the agents instead.  
 
@@ -120,7 +120,7 @@ Monitoring of _software process_ agents is an important part of designing reliab
 
 ### Security
 
-![Security as a mitigation for Agency Risk](/images/generated/risks/agency/security-risk.png)
+![Security as a mitigation for Agency Risk](../images/generated/risks/agency/security-risk.png)
 
 Security is all about _setting limits_ on agency - both within and outside a system.  
 
@@ -160,7 +160,7 @@ So one mitigation for [Agency Risk](Agency-Risk.md) is therefore to employ these
 
 But _extrinsic motivation_ is a complex, difficult-to-apply tool.  In [Map And Territory Risk](Map-And-Territory-Risk.md) we will come back to this and look at the various ways in which it can go awry.
 
-![Collective Code Ownership, Individual Responsibility](/images/generated/risks/agency/cco.png)
+![Collective Code Ownership, Individual Responsibility](../images/generated/risks/agency/cco.png)
 
 Tools like [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming) and [Collective Code Ownership](https://en.wikipedia.org/wiki/Collective_ownership) are about mitigating [Staff Risks](Scarcity-Risk.md#staff-risk) like [Key Person Risk](https://en.wikipedia.org/wiki/Key_person_insurance#Key_person_definition) and [Learning Curve Risk](Communication-Risk.md#learning-curve-risk), but these push in the opposite direction to _individual responsibility_.   
 

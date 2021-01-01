@@ -76,7 +76,7 @@ _Issues_ then, just seem more "definite" and "now" than _risks_, right?  This cl
 
 In the previous sections, we introduced something of a "diagram language" of risk.  Let's review it:
 
-![Risk-First Diagram Language](/images/generated/introduction/all_risk_management_language.png)
+![Risk-First Diagram Language](../images/generated/introduction/all_risk_management_language.png)
  
 [Goals](../thinking/Glossary.md#goal-in-mind) live inside our [Internal Model](../thinking/Glossary.md#internal-model), just like Risks.  It turns out, that functionally, Goals and Risks are equivalent.  For example, The Goal of "Implementing Feature X" is equivalent to mitigating "Risk of Feature X not being present".
 
@@ -113,7 +113,7 @@ This is (a simplification of) the dilemma of lots of software projects - _test f
 
 In the above table, it _appears_ to be better to do the "Go Live" action, as there is a greater [Payoff](../thinking/Glossary.md#payoff).  The problem is, actions are not _commutative_, i.e. the order you do them in counts.
 
-![UAT or Go Live: where will you end up?](/images/generated/introduction/risk_landscape_3_moves.png)
+![UAT or Go Live: where will you end up?](../images/generated/introduction/risk_landscape_3_moves.png)
 
 The diagram above shows our decision as _moves on the [Risk Landscape](../thinking/Glossary.md#risk-landscape)_.  Whether you "Go Live" first, or "UAT" first makes a difference to where you will end up.  Is there a further action you can take to get you from the "Dead End" to the "Goal"?  Perhaps.
 

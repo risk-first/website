@@ -20,7 +20,7 @@ So far, this track of articles has tried to bring the problems of estimating sof
 - [Journeys](Journeys.md):  In this domain, work is heterogeneous and interconnected.  Different parts depend on each other, and a failure in one part might mean going back to the drawing board entirely.  The way to estimate in this domain is to _know the landscape_ and to build in _buffers_.  
 - [Fractals](Fractals.md):  In this domain, [Parkinson's Law](../risks/Process-Risk.md#bureaucracy) is king.  There is always more work to be done.  The best thing we can do is try and apply ourselves to the _highest value_ work at any given point, and frequently refer back to reality to find out if we're building the right thing.
 
-![Three Dimensions From Fill-The-Bucket](/images/estimates/dimensions.png)
+![Three Dimensions From Fill-The-Bucket](../images/estimates/dimensions.png)
 
 In Risk-First, one of the main messages has been that it's all about your [Internal Model](../thinking/Glossary.md#internal-model).  If you have a good model of the world, then you're likely to be able to [Take Actions](../thinking/Glossary.md#taking-action) in the world that lead you to positions of lower risk.
 
@@ -34,18 +34,18 @@ For the rest of this article, I'm going to go out on a limb, and describe, throu
 
 ## Journeys + Cabinets = Mazes?
 
-![Journey Planning](/images/estimates/fill-journey.png)
+![Journey Planning](../images/estimates/fill-journey.png)
 
 As we discussed in [Journeys](Journeys.md), there are plenty of problems in getting from A to B.  But to help you we have:
 
 - **Maps**: so we can plan our routes via those which already exist, and 
 - **Closeness**:  the closer you are to your destination, the nearer you are to done (which is great for walking and driving, but tends to fall down somewhat when we have to wait for buses or make a detour to the airport).
 
-![Journeys Meets Cabinets](/images/estimates/dimensions-2.png)
+![Journeys Meets Cabinets](../images/estimates/dimensions-2.png)
 
 What happens when you relax those constraints?  If there is _no map_ and the _closeness_ heuristic isn't available, you're in a maze.   You can't tell how "done" you are in a maze by judging your distance to the exit point - you may be heading to a [Dead End](../risks/Complexity-Risk.md#dead-end-risk) anyway!
 
-![Maze Estimating](/images/estimates/mazes.png)
+![Maze Estimating](../images/estimates/mazes.png)
 
 Software development is littered with dead-ends:
 
@@ -64,14 +64,14 @@ Maybe this is an unfair (and perhaps apocryphal) example but we've been stuck in
 
 In a maze, you're trying to get from point A to point B.  However, when we throw _fractals_ back into the mix, we're wanting to get to a whole lot of different places, and there is different value in different places.
 
-![Mazes Meets Fractals](/images/estimates/dimensions-3.png)
+![Mazes Meets Fractals](../images/estimates/dimensions-3.png)
 
 This is a lot like a country-wide transport network:  
 
  - Large cities are connected together with efficient transport options because people are going to make that journey a lot.  Therefore, these are _high value_ routes.
  - Small, far-away outposts are poorly connected to the rest of the network - maybe by dirt roads or precarious mountain passes.   
 
-![Transport Networks](/images/estimates/transport.png)
+![Transport Networks](../images/estimates/transport.png)
 
 ### Metcalfe's Law
 

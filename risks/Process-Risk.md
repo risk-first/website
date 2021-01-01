@@ -23,7 +23,7 @@ Processes commonly involve _forms_:  if you're filling out a form (whether on pa
 
 ## The Purpose Of Process
 
-![Introducing process can mitigate many risks](/images/generated/risks/process/process-risk-introduction.png)
+![Introducing process can mitigate many risks](../images/generated/risks/process/process-risk-introduction.png)
 
 As the above diagram shows, process exists to mitigate other kinds of risk.  For example:
 
@@ -37,7 +37,7 @@ These are all examples of [Risk Mitigation](../thinking/Glossary.md#Mitigated-ri
  - **[Dead-End Risk](Complexity-Risk.md#dead-end-risk)**: even if you have the right process, initiating a process has no guarantee that your efforts won't be wasted and you'll be back where you started from.  The chances of this happening increase as you get further from the standard use-case for the process, and the sunk cost increases with the length of time the process takes to complete.
  - **[Feature Access Risk](Feature-Risk.md#feature-access-risk)**: processes generally handle the common stuff, but ignore the edge cases.  For example, a form on a website might not be designed to be accessible to disabled people, or might only cater to some common subset of use-cases.
  
-![Process Risk, and its consequences, compared with Agency Risk](/images/generated/risks/process/process-risk.png) 
+![Process Risk, and its consequences, compared with Agency Risk](../images/generated/risks/process/process-risk.png) 
  
 When we talk about "[Process Risk](Process-Risk.md)" we are really referring to these types of risks, arising from "following a set of instructions."  Compare this with  [Agency Risk](Agency-Risk.md) (which we will review in a forthcoming section), which is risks due to _not_ following the instructions, <!-- tweet-end -->as shown in the above diagram .  Let's look at two examples, how [Process Risk](Process-Risk.md) can lead to [Invisibility Risks](Communication-Risk.md#invisibility-risk) and [Agency Risk](Agency-Risk.md).
 
@@ -80,15 +80,15 @@ Here, we are going to look at how a [Business Process](https://en.wikipedia.org/
 
 Let's look at an example of how that can happen in a step-wise way.
 
-![Step 1: clients `C` need `A` to do their jobs, incurring Complexity Risk.](/images/generated/risks/process/step1.png)
+![Step 1: clients `C` need `A` to do their jobs, incurring Complexity Risk.](../images/generated/risks/process/step1.png)
 
 1.  As the above diagram shows, there exists a group of people inside a company `C`, which need a certain something `A` in order to get their jobs done.  Because they are organising, providing and creating `A` to do their jobs, they are responsible for all the [Complexity Risk](Complexity-Risk.md) of `A`. 
 
-![Step 2: team `B` doing `A` for clients `C`.  Complexity Risk is transferred to B, but C pick up Staff Risk.](/images/generated/risks/process/step2.png)
+![Step 2: team `B` doing `A` for clients `C`.  Complexity Risk is transferred to B, but C pick up Staff Risk.](../images/generated/risks/process/step2.png)
 
 2.  Because `A` is risky, a new team (`B`) is spun up to deal with the [Complexity Risk](Complexity-Risk.md), which might let `C` get on with their "proper" jobs.  As shown in the diagram above, this is really useful:  `C`'s is job much easier (reduced [Complexity Risk](Complexity-Risk.md)) as they have an easier path to `A` than before.  But the risk for `A` hasn't really gone - they're now just dependent on `B` instead.  When members of `B` fail to deliver, this is [Staff Risk](Scarcity-Risk.md#staff-risk) for `C`.   
 
-![Step 3: team `B` formalises the dependency with a Process](/images/generated/risks/process/step3.png)
+![Step 3: team `B` formalises the dependency with a Process](../images/generated/risks/process/step3.png)
 
 3. Problems are likely to occur eventually in the `B`/`C` relationship.  Perhaps some members of the `B` team give better service than others, or deal with more variety in requests?   In order to standardise the response from `B` and also to reduce scope-creep in requests from `C`, `B` organises bureaucratically so that there is a controlled process (`P`) by which `A` can be accessed.  Members of teams `B` and `C` now interact via some request mechanism like forms (or another protocol).  
 
@@ -96,7 +96,7 @@ Let's look at an example of how that can happen in a step-wise way.
   - Since this is [Abstraction](../thinking/Glossary.md#abstraction), `C` now has [Invisibility Risk](Communication-Risk.md#invisibility-risk) since it can't access team `B` and see how it works.
   - Team `B` may also use `P` to introduce other bureaucracy like authorisation and sign-off steps or payment barriers.   All of this increases [Process Risk](Process-Risk.md) for team C. 
 
-![Person D acts as a middleman for customers needing some variant of `A`, transferring Complexity Risk](/images/generated/risks/process/step4.png)
+![Person D acts as a middleman for customers needing some variant of `A`, transferring Complexity Risk](../images/generated/risks/process/step4.png)
 
 4.  Teams like `B` can sometimes end up in "Monopoly" positions within a business.  This means that clients like `C` are forced to deal with whatever process `B` wishes to enforce.  Although they are unable to affect process `P`, `C` still have risks they want to transfer.  
 

@@ -22,7 +22,7 @@ Below is a piece of Java code I wrote the other day.  We're not going to look in
  - This code isn't really heavy-duty, it's pretty thrown-together.  The exception handling is _dreadful_.
  - It's fairly hard to read
  
-![Places 1](/images/complexity/places1.png)
+![Places 1](../images/complexity/places1.png)
 
 The whole purpose of this function is really to establish a _mapping_:  essentially, it is saying that _some_ `Table`s map to `Places`, and here's how you do it.  It looks like this:
 
@@ -32,7 +32,7 @@ But in order to construct the mapping from `Table`s to `Places`, we also need to
 
 Let's look at where that happens:
 
-![Places 2](/images/complexity/places2.png)
+![Places 2](../images/complexity/places2.png)
 
 So here I've highlighted where we establish these mappings:
 

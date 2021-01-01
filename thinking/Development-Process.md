@@ -29,7 +29,7 @@ Let's ignore for now the specifics of what methodology is being used - we'll com
 4.  **UAT**: they put the code into a User Acceptance Test (UAT) environment, and user(s) test it.
 5.  ... All being well, the code is **Released to Production**.
 
-![A Simple Development Process](/images/generated/introduction/development_process_1.png)
+![A Simple Development Process](../images/generated/introduction/development_process_1.png)
 
 ### Can't We Improve This?
 
@@ -56,7 +56,7 @@ We could skip all those steps above and just do this:
 
 1.  Developer gets wind of new idea from user, logs onto production and changes some code directly.
 
-![A Dangerous Development Process](/images/generated/introduction/development_process_2.png)
+![A Dangerous Development Process](../images/generated/introduction/development_process_2.png)
 
 We can all see this might end in disaster, but why?
 
@@ -75,7 +75,7 @@ Let's look at how our process should act to prevent these risks materializing by
 - Actually, this functionality is mainly served by **Feature Z**...
 - which is already there but hard to find.
 
-![Development Process - Exposing Hidden Risks](/images/generated/introduction/development_process_3.png)
+![Development Process - Exposing Hidden Risks](../images/generated/introduction/development_process_3.png)
 
 The diagram above shows how this plays out.
 
@@ -94,7 +94,7 @@ In the process of doing this, the BA is turning the simple feature request _idea
 - Trying to surface [Hidden Risks](../thinking/Glossary.md#hidden-risk)
 - Trying to evaluate [Attendant Risks](../thinking/Glossary.md#attendant-risk) and make them clear to everyone on the project.
 
-![BA Specification: exposing Hidden Risks as soon as possible](/images/generated/introduction/development_process_ba.png)
+![BA Specification: exposing Hidden Risks as soon as possible](../images/generated/introduction/development_process_ba.png)
 
 In surfacing these risks, there is another outcome:  while **Feature X** might be flawed as originally presented, the BA can "evolve" it into a specification, and tie it down sufficiently to reduce the risks.   The BA does all this by simply _thinking about it_, _talking to people_ and _writing stuff down_.
 
@@ -106,7 +106,7 @@ The next stage for our feature, **Feature X** is that it gets coded and some tes
 
 As the developer begins coding the feature in the software, they will start with an [Internal Model](../thinking/Glossary.md#Internal-Model) of the software, and how the code fits into it.  But, in the process of implementing it, they are likely to learn about the codebase, and their [Internal Model](../thinking/Glossary.md#Internal-Model) will develop.  
 
-![Coding Process:  exposing more hidden risks as you code](/images/generated/introduction/development_process_code.png)
+![Coding Process:  exposing more hidden risks as you code](../images/generated/introduction/development_process_code.png)
 
 At this point, let's stop and discuss the visual grammar of the Risk-First Diagrams we've been looking at.  A Risk-First diagram shows what you expect to happen when you [Take Action](../thinking/Glossary.md#taking-action).  The action itself is represented by the shaded, sign-post-shaped box in the middle.  On the left, we have the current state of the world, on the right is the anticipated state _after_ taking the action.
 
@@ -122,13 +122,13 @@ So, this stage is about meeting a new reality: the clean build.
 
 At this stage, we might discover the [Hidden Risk](../thinking/Glossary.md#Hidden-Risk) that we'd break **Feature Y**
 
-![Integration testing exposes Hidden Risks before you get to production](/images/generated/introduction/development_process_integration.png)
+![Integration testing exposes Hidden Risks before you get to production](../images/generated/introduction/development_process_integration.png)
 
 ### User Acceptance Test
 
 Next, User Acceptance Testing (UAT) is where our new feature meets another reality: _actual users_.   I think you can see how the process works by now.  We're just flushing out yet more [Hidden Risks](../thinking/Glossary.md#hidden-risk).
 
-![UAT - putting tame users in front of your software is better than real ones, where the risk is higher ](/images/generated/introduction/development_process_uat.png)
+![UAT - putting tame users in front of your software is better than real ones, where the risk is higher ](../images/generated/introduction/development_process_uat.png)
 
  - [Taking Action](../thinking/Glossary.md#taking-action) is the _only_ way to create change in the world.
  - It's also the only way we can _learn_ about the world, adding to our [Internal Model](../thinking/Glossary.md#internal-model). 

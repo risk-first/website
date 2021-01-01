@@ -22,7 +22,7 @@ A manager I used to work with, Kevin, used to say that the Purpose of the Develo
 
 - **First, "sustainably" and "quickly" are somewhat at odds with each other.** Cars aren’t optimised for both "energy efficiency" and "speed" and runners are either fast over short distances or long distances.  My laptop makes trade-offs between battery life and weight: either extreme is bad, somewhere in the middle is useful.  So "sustainably" and "quickly" implies that there is a balance to be achieved - what happens when you are forced to choose between the two? How do you choose?  
 
-![Sustainably vs Quickly](/images/numbers/sustainably-quickly.png)
+![Sustainably vs Quickly](../images/numbers/sustainably-quickly.png)
 
 - **Second, my conception of value is that it is something you can make a sale on.** Producing a product that customers value (at say £100-per-year) means that we can sell it for somewhere less than that (say £80-per-year). Therefore the development cost must come in at somewhere less than that (say £50-per-year) to allow the company to make a profit.  But again, _value_ didn't seem like the whole story either.  Aren't there things to worry about _besides_ value?
 
@@ -40,7 +40,7 @@ Scrum's rule about working-to-a-sprint is well-meaning but not always applicable
 
 Sometimes, I am faced with a conflict over whether to pay off [technical debt](../risks/Complexity-Risk.md#technical-debt) or build new functionality.  Sometimes the conflict will be with people in my team, or with stake-holders but sometimes it is an internal, personal conflict.  
 
-![Technical Debt vs Building Features](/images/generated/practices/purpose/technical-debt.png)
+![Technical Debt vs Building Features](../images/generated/practices/purpose/technical-debt.png)
 
 As the above diagram shows, paying off technical debt is sometimes the right thing to do when there is lots of unnecessary complexity in the code-base, but sometimes, it can be [premature optimisation](https://en.wikipedia.org/wiki/Program_optimization#When_to_optimize), and the shape of the software gets changed by new functionality so much that the work I put into clearing the technical debt is wasted.
 
@@ -75,7 +75,7 @@ Now clearly, the troublesome clause in this statement is “[balance of risk](..
 
 Let’s talk about “risk” for a bit.  First, we’re going to consider the game “roulette”.  If you bet a chip on a number (say, 12) in roulette and win, you win 35 chips (plus you get back your original chip).  However, there are 37 places the ball can stop in roulette, and any of the other 36 will result in a complete loss.  
 
-![Distribution of Returns on the roulette table, when we bet on "12"](/images/numbers/roulette.png) 
+![Distribution of Returns on the roulette table, when we bet on "12"](../images/numbers/roulette.png) 
 
 The above chart shows the distribution of returns for this bet.  Which hole the ball lands in (entirely randomly) is the independent variable on the x-axis.  The return is on the y-axis.   Most of the time, it’s a small loss, but there’s that one big win on the 12.  (For clarity, in all the charts, I’ve arranged the x-axis in order of “worst outcome” to “best outcome”, but it doesn’t necessarily have to be arranged like this.)
 
@@ -87,7 +87,7 @@ In real-life, the distribution of returns differs in two key ways from roulette.
 
 First, a roulette table presents us with a set of very discrete outcomes.  Real life isn’t like that so much: there’s usually a sliding scale from “complete success” to “complete failure”, with a large middle-ground of so-so performance. 
 
-[![Ford and Berkshire Hathaway, Monthly Returns Distribution](/images/berkshire-hathaway-ford.png)](http://slideplayer.com/slide/4348697/14/images/26/Berkshire+Hathaway+versus+Ford+Foundation,+monthly+returns+distribution,+January+1977+to+April+2000.jpg)
+[![Ford and Berkshire Hathaway, Monthly Returns Distribution](../images/berkshire-hathaway-ford.png)](http://slideplayer.com/slide/4348697/14../images/26/Berkshire+Hathaway+versus+Ford+Foundation,+monthly+returns+distribution,+January+1977+to+April+2000.jpg)
 
 The chart above (from [William T Ziemba](http://www.williamtziemba.com)) shows the returns-per-quarter of Ford and Berkshire Hathaway stocks over a number of years, with worst-performing quarters on the left and best-performing on the right.   
 
@@ -101,7 +101,7 @@ When we consider buying a stock, we are going to build a model of the [balance o
 
 Gambling is all about winning _chips_, and buying stock is all about winning _money_. Those are just ways of keeping score.   But often, there is no exact score.  Let's look at an example of that.
 
-![Cycling To Work:  Distributions of Returns - Time and Health](/images/numbers/cycling-to-work.png)
+![Cycling To Work:  Distributions of Returns - Time and Health](../images/numbers/cycling-to-work.png)
 
 In the above chart, we have two risk profiles for cycling to work.  On the left, we have the time taken.  After a few week's cycling, we can probably start to build up a good [Internal Model](../thinking/Glossary.md#internal-model) of what this distribution looks like. 
 
@@ -121,7 +121,7 @@ Just as a decision over how fast to cycle to work changes the [balance of risk](
 
 The difference is, while the cycling example was chosen to be quite _finely balanced_, in software development we should be looking for actions to take which improve the upside _considerably_ more than they worsen the downside.  That is, improving the [balance of risk](../thinking/Glossary.md#balance-of-risk) _as much as possible_.   
 
-![Good and Not-So-Good Actions](/images/numbers/good-not-so-good-actions.png)
+![Good and Not-So-Good Actions](../images/numbers/good-not-so-good-actions.png)
 
 This is shown in the above chart.  Let's say you have two possible pieces of development, both with a similar downside (maybe they take a similar time to complete and this what is lost if it doesn't work out).  However, the action on the left _significantly_ improves the [balance of risk](../thinking/Glossary.md#balance-of-risk) for the project.  Therefore, all else being equal, we should take that bet.
 

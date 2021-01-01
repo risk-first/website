@@ -100,7 +100,7 @@ Hierarchy is really managed by just three things here:
 
 On the desktop, hierarchy is also re-invented multiple times.
 
-![Navigating Hierarchies](/images/estimates/desktop.png)
+![Navigating Hierarchies](../images/estimates/desktop.png)
 
 Have a look at the image above.  Let's go through the different types of hierarchy here:
 
@@ -236,7 +236,7 @@ This is a good example of _compositional_ and _subsumptive_ hierarchies working 
 
 Subsumptive hierarchies are difficult for a couple of reasons.  The first being how to decide what's in and what's out of the category.
 
-![Eris, From Wikipedia (NASA, ESA, and A. Schaller (for STScI))](/images/complexity/eris.png)
+![Eris, From Wikipedia (NASA, ESA, and A. Schaller (for STScI))](../images/complexity/eris.png)
 
 (Eris, from [Wikipedia](https://en.wikipedia.org/wiki/Eris_(dwarf_planet)#/media/File:2006-16-a-full-1-.jpg))  
 
@@ -278,11 +278,11 @@ People understand compositional hierarchies because they're baked into (and inve
 
 **_Subsumptive_ hierarchies** are also used everywhere in software development: _strings_, _numbers_, _records_, _classes_, _types_, _schemas_.   A key ability for a programmer is often to be able to abstract from multiple areas and say "this is like this".   By noticing _patterns of classification_ we can save on the amount of code we have to write.
 
-![Compositional hierarchies on a larger project:  methods, classes, packages, directories, projects](/images/estimates/containment.png)
+![Compositional hierarchies on a larger project:  methods, classes, packages, directories, projects](../images/estimates/containment.png)
 
 In Eclipse (my Java IDE) I can therefore view _both_ these types of hierarchy.  In the above screen-grab, you can see some more compositional hierarchy on the left: _methods_, _classes_, _packages_, _directories_ and _projects_.  
   
-![Classification hierarchy of the Resource class from Spring](/images/estimates/classification.png)
+![Classification hierarchy of the Resource class from Spring](../images/estimates/classification.png)
 
 Whereas in this screen grab, I can view the hierarchy of a _class_ within Java (here the `Resource` class from [Spring](https://spring.io/projects/spring-hateoas)).
 

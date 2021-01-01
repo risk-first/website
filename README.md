@@ -1,4 +1,4 @@
-![Welcome to Risk-First](https://riskfirst.org/images/risk_first_pink.png)
+![Welcome to Risk-First](https://riskfirst.org../images/risk_first_pink.png)
 
 The software development world is crowded with different practices, metrics, methodologies, tools and techniques.  
 
@@ -25,6 +25,6 @@ This book is volume one of the **Risk-First** series, introducing the  case for 
 
 The book aims to develop a _Pattern Language_ for understanding software risk, and develop a practical framework for discussing how the activities we take on a project change the balance of the risks we are exposed to.
 
-![Cover Image](https://riskfirst.org/images/Cover_Book_image.jpg)
+![Cover Image](https://riskfirst.org../images/Cover_Book_image.jpg)
 
 - [Print and Kindle Edition on Amazon](http://a.co/d/hmpmYl2)

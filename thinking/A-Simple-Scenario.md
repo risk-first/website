@@ -31,7 +31,7 @@ If we do nothing, our friends will turn up and maybe there's nothing in the hous
 
 These _nagging doubts_ that are going through your head are what I'll call the [Attendant Risks](../thinking/Glossary.md#attendant-risk):  they're the ones that will occur to you as you start to think about what will happen. 
 
-![Goal In Mind, with the risks you know about](/images/generated/introduction/goal_in_mind.png)
+![Goal In Mind, with the risks you know about](../images/generated/introduction/goal_in_mind.png)
 
 When we go about preparing for this wonderful evening, we can choose to deal with these risks:  shop for the ingredients in advance, prepare parts of the meal and maybe practice the cooking in advance.  Or, we can wing it, and sometimes we'll get lucky.
 
@@ -43,7 +43,7 @@ How much effort we expend on these [Attendant Risks](../thinking/Glossary.md#att
 
 > "Reports that say that something hasn't happened are always interesting to me, because as we know, there are known knowns; there are things we know we know. We also know there are known unknowns; that is to say we know there are some things we do not know. But there are also unknown unknowns—the ones we don't know we don't know. And if one looks throughout the history of our country and other free countries, it is the latter category that tend to be the difficult ones." - [Donald Rumsfeld, _Wikipedia_](https://en.wikipedia.org/wiki/There_are_known_knowns)
 
-![Goal In Mind, the risks you know about and the ones you don't](/images/generated/introduction/hidden_risks.png)
+![Goal In Mind, the risks you know about and the ones you don't](../images/generated/introduction/hidden_risks.png)
 
 Different people evaluate risks differently, and they'll also _know_ about different risks.  What is an [Attendant Risk](../thinking/Glossary.md#attendant-risk) for one person is a [Hidden Risk](../thinking/Glossary.md#attendant-risk) for another.     
 
@@ -53,7 +53,7 @@ Which risks we know about depends on our **knowledge** and **experience**, then.
 
 As the dinner party gets closer, we make our preparations, and the inadequacies of the [Internal Model](../thinking/Glossary.md#Internal-Model) become apparent.  We learn what we didn't know and the [Hidden Risks](../thinking/Glossary.md#hidden-risk) reveal themselves.  Other things we were worried about don't materialise.  Things we thought would be minor risks turn out to be greater.   
 
-![How Taking Action affects Reality, and also changes your Internal Model](/images/generated/introduction/model_vs_reality.png)
+![How Taking Action affects Reality, and also changes your Internal Model](../images/generated/introduction/model_vs_reality.png)
 
 Our model is forced to [Meet Reality](../thinking/Glossary.md#meet-reality), and the model changes,  forcing us to deal with these risks, as shown in the diagram above.  Whenever we try to _do something_ about a risk, it is called [Taking Action](../thinking/Glossary.md#taking-action).  [Taking Action](../thinking/Glossary.md#taking-action) _changes_ reality, and with it your [Internal Model](../thinking/Glossary.md#internal-model) of the risks you're facing.  That's because it's only by interacting with the world that we add knowledge to our [Internal Model](../thinking/Glossary.md#internal-model) about what works and what doesn't.  Even something as passive as _checking the shop opening times_ is an action, and it improves on our [Internal Model](../thinking/Glossary.md#internal-model) of the world.
 

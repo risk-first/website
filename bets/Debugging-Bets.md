@@ -18,7 +18,7 @@ In [The Purpose Of The Development Team](Purpose-Development-Team.md) we looked 
 
 Then, in [Coding Bets](Coding-Bets.md) we considered the same thing at task level. That is, in choosing to spend time on a given task we are staking our time to improve our risk position.  And, it’s definitely a bet, because sometimes, a piece of coding simply doesn’t end up working the way you want. 
 
-![Article Series](/images/generated/practices/debugging/bets.png)
+![Article Series](../images/generated/practices/debugging/bets.png)
 
 Now, we’re going to consider the exact same thing again but from the point of view of debugging. I’ve been waiting a while to write this, because I’ve wanted a really interesting bug to come along to allow me to go over how you can apply risk to cracking it.  
 
@@ -30,7 +30,7 @@ Luckily one came along today, giving me a chance to write it up and go over this
 
 In order to make this work, we made use of functionality within Symphony called “On-Behalf-Of”, which allows Tables App to post messages as a user, if the user has given prior authorisation.
 
-![Table Editing In Symphony](/images/tables.jpg)
+![Table Editing In Symphony](../images/tables.jpg)
 
 But something wasn’t working - whenever I clicked "post" - no table!
 
@@ -40,7 +40,7 @@ To make matters worse, I was supposed to be doing a presentation on this within 
 
 So, what is supposed to happen?
 
-![Flow of Action](/images/debugging_flow.png)
+![Flow of Action](../images/debugging_flow.png)
 
 1.  The user clicks the "post" button in Tables App.
 2.  Tables App then makes a request to the Symphony Server for an On-Behalf-Of token.
@@ -70,7 +70,7 @@ For now, I ignored those voices in my head.  I wanted to use my limited time wis
 
 In order to figure out how to use my time, I’d need to enumerate all the hypotheses about what the problem might be, and then work out how best to use my time to test these hypotheses.
 
-![Hypotheses](/images/generated/practices/debugging/hypotheses.png)
+![Hypotheses](../images/generated/practices/debugging/hypotheses.png)
 
 In order to generate the list of hypotheses, you have to find the last-known good place, and work forward through all the steps after that that could have failed.  So this is what I came up with:
 
@@ -90,7 +90,7 @@ If we test each hypothesis, we learn something about the system.  But that has a
 
 ### First Test
 
-![Test 1: Curl With Broken Token](/images/generated/practices/debugging/test1.png) 
+![Test 1: Curl With Broken Token](../images/generated/practices/debugging/test1.png) 
 
 Although `H1` was unlikely (and therefore I probably wasn’t going to learn much) it was really easy to test.  All I needed to do was try the `curl` command again with a deliberately broken token.  What would the message be?  What came back was a `401 error - unauthorised`.  So it definitely wasn’t `H1`, because the error message was different.
 
@@ -102,13 +102,13 @@ So, although I did have an issue with certificates, it wasn’t the main problem
 
 Since the code was returning the same result locally and on the server, that really ruled out `H7`.  Also `H2` was ruled out, because the server ran really fast - there wasn’t time for the token to expire.  
 
-![Test 2:  Run Locally](/images/generated/practices/debugging/test2.png) 
+![Test 2:  Run Locally](../images/generated/practices/debugging/test2.png) 
 
 ## Third Test
 
 Down to just `H3`,`H4` and `H5`.  I had definitely seen On-Behalf-Of working two weeks’ ago, but in that other app.  A fairly quick thing to do would be to try and post the message with that other app, but it wasn't installed.  Instead, I could try my same code out again, but _using the other app's identity_.  I did this, and lo!  I still get the “not able to obtain session” error. 
 
-![Test 3:  Post With Other App](/images/generated/practices/debugging/test3.png) 
+![Test 3:  Post With Other App](../images/generated/practices/debugging/test3.png) 
 
 This ruled out `H3`.  But there was still a chance I was creating the token wrongly (`H5`). 
 
@@ -118,7 +118,7 @@ If I could use this token for an an On-Behalf-Of operation on the Symphony Serve
 
 This was another simple thing to test, since all I had to do was call a “Room Lookup” function on the Symphony Server, something that didn’t need encryption, and therefore use the Encryption Agent.  Now, although Tables App couldn't do this (fact 4), my other app could, so I could continue with the new identity and try that.
 
-![Test 4:  On-Behalf-Of Against Server](/images/generated/practices/debugging/test4.png) 
+![Test 4:  On-Behalf-Of Against Server](../images/generated/practices/debugging/test4.png) 
 
 ## Outcome
 

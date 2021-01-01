@@ -56,7 +56,7 @@ In order to illustrate some of the different [Dependency Risks](Dependency-Risk.
 
 Normally, we'll use the same dependency each day.  This speaks to the fact that each of these approaches has different [Feature Fit Risk](Feature-Risk.md#feature-fit-risk).   Perhaps you choose going by bus over going by car because of the risk that owning the car is expensive, or that you might not be able to find somewhere to park it.
 
-![Two-Dimensions of Feature Fit for the bus-ride](/images/generated/risks/dependency/dependency-risk-fit.png)
+![Two-Dimensions of Feature Fit for the bus-ride](../images/generated/risks/dependency/dependency-risk-fit.png)
 
 But there are a couple of problems with buses you don't have with your own car, as shown in the above diagram. A bus might take you to lots of in-between places you _didn't_ want to go, which is [Conceptual Integrity Risk](Feature-Risk.md#conceptual-integrity-risk) and we saw this already in the section on [Feature Risk](Feature-Risk.md).  Also, it might not go at the time you want it to, which is [Feature-Fit-Risk](Feature-Risk.md#feature-fit-risk).  
 
@@ -68,7 +68,7 @@ This points to the problem that when we use an external dependency, we are at th
 
 > "... Reliability describes the ability of a system or component to function under stated conditions for a specified period of time." - [Reliability Engineering, _Wikipedia_](https://en.m.wikipedia.org/wiki/Reliability_engineering)
 
-![Reliability Risk](/images/generated/risks/dependency/reliability-risk.png) 
+![Reliability Risk](../images/generated/risks/dependency/reliability-risk.png) 
 
 It's easy to think about reliability for something like a bus:  sometimes, it's late due to weather, or cancelled due to driver sickness, or the route changes unexpectedly due to road works.  
 
@@ -94,7 +94,7 @@ Dependencies (like the bus) make life simpler for you by taking on complexity fo
 
 In software, dependencies are a way to manage [Complexity Risk](Complexity-Risk.md).  The reason for this is that a dependency gives you an [abstraction](../thinking/Glossary.md#abstraction): you no longer need to know _how_ to do something, (that's the job of the dependency), you just need to interact with the dependency properly to get the job done.  Buses are _perfect_ for people who can't drive, after all.
 
-![Dependencies help with complexity risk, but come with their own attendant risks](/images/generated/risks/dependency/dependency-risk.png)
+![Dependencies help with complexity risk, but come with their own attendant risks](../images/generated/risks/dependency/dependency-risk.png)
 
 But (as shown in the above diagram) this means that all of the issues of abstractions that we covered in [Communication Risk](Communication-Risk.md) apply.  For example, there is [Invisibility Risk](Communication-Risk.md#invisibility-risk) because you probably don't have a full view of what the dependency is doing.  Nowadays, bus stops have a digital "arrivals" board which gives you details of when the bus will arrive, and shops publish their opening hours online.  But, abstraction always means the loss of detail (the bus might be two minutes away but could already be full).
 

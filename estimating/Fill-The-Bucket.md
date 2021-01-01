@@ -14,7 +14,7 @@ order: 1
 
 # Fill-The-Bucket
 
-![If it takes one hour to fill a 5l bucket...](/images/generated/estimating/fill_the_bucket.png)
+![If it takes one hour to fill a 5l bucket...](../images/generated/estimating/fill_the_bucket.png)
 
 The simplest type of estimation problem we might face in software development is _simple extrapolation_, as in the example above.  If one developer takes one day to build a web-page for our site, how long will it take to build ten web-pages?  Well, it could be that the answer is around ten days.
 

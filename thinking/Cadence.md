@@ -17,7 +17,7 @@ redirect_from:
 
 Let's go back to the model again, introduced in [Meeting Reality](Meeting-Reality.md).
 
-![Meeting Reality: reality is changed and so is your internal model.](/images/generated/introduction/model_vs_reality_2.png)
+![Meeting Reality: reality is changed and so is your internal model.](../images/generated/introduction/model_vs_reality_2.png)
 
 As you can see, it's an idealized **Feedback Loop**.  
 
@@ -59,7 +59,7 @@ The [Testing Pyramid](http://www.agilenutshell.com/episodes/41-testing-pyramid) 
 - **Integration Tests** have a slightly _slower feedback loop_, so have _few of them_.   Use them when you can't write unit tests (at the application boundaries).
 - **Manual Tests** have a _very slow feedback loop_, so have _even fewer of them_.  Use them as a last resort.
 
-![The Testing Pyramid](/images/generated/introduction/testing_pyramid.png)
+![The Testing Pyramid](../images/generated/introduction/testing_pyramid.png)
 
 ### Production
 
@@ -67,7 +67,7 @@ You could take this section to mean that [Continuous Delivery](https://en.wikipe
 
 Yes, CD will give you faster feedback loops, but even getting things into production is not the whole story:   the feedback loop isn't complete until people have used the code, and reported back to the development team.  
 
-![Different actions have different feedback loops](/images/generated/introduction/cadence.png)
+![Different actions have different feedback loops](../images/generated/introduction/cadence.png)
 
 The right answer is to use multiple feedback loops, as shown in the diagram above.
 

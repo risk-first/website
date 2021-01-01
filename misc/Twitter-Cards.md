@@ -39,7 +39,7 @@ Then, I use [Jekyll SEO Tag](https://jekyll.github.io/jekyll-seo-tag/) to set th
     <link rel="canonical" href="https://riskfirst.org/">
     <meta property="og:url" content="https://riskfirst.org/">
     <meta property="og:site_name" content="Risk-First">
-    <meta property="og:image" content="https://riskfirst.org/images/generated/titles/index.png">
+    <meta property="og:image" content="https://riskfirst.org../images/generated/titles/index.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@risk_first">
     <meta name="twitter:creator" content="@risk_first">

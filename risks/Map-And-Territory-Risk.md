@@ -22,7 +22,7 @@ For example, <!-- tweet-start -->Risk-First is about naming _risks_ within softw
 
 Our [Internal Models](../thinking/Glossary.md#internal-model) of the world are constructed from these abstractions and their relationships.
 
-![Maps and Territories, and Communication happening between them](/images/generated/risks/map-and-territory/communication.png) 
+![Maps and Territories, and Communication happening between them](../images/generated/risks/map-and-territory/communication.png) 
 
 As the diagram above shows, there is a translation going on here: observations about the arrangement of _atoms_ in the world are _communicated_ to our [Internal Models](../thinking/Glossary.md#internal-model) and stored as patterns of _information_ (measured in bits and bytes). <!-- tweet-end --> 
 
@@ -30,7 +30,7 @@ We face [Map And Territory Risk](Map-And-Territory-Risk.md) because we base our 
 
 > "Polish-American scientist and philosopher Alfred Korzybski remarked that "the map is not the territory"  and that "the word is not the thing", encapsulating his view that an abstraction derived from something, or a reaction to it, is not the thing itself. Korzybski held that many people _do_ confuse maps with territories, that is, confuse models of reality with reality itself." - [Map-Territory Relation, _Wikipedia_](https://en.wikipedia.org/wiki/Map–territory_relation)
 
-![Map And Territory Risk defined](/images/generated/risks/map-and-territory/map-and-territory-risk.png)
+![Map And Territory Risk defined](../images/generated/risks/map-and-territory/map-and-territory-risk.png)
 
 As the above diagram shows, there are two parts to this risk, which we are going to examine in this section:  
 
@@ -43,7 +43,7 @@ In the [Feature Risk](Feature-Risk.md) section we looked at ways in which our so
 
 ### Example: The SatNav
 
-![Sat Nav Blunder Sends Asda Van Crashing Narrow Footpath - Telegraph Newspaper](/images/sat_nav.png)
+![Sat Nav Blunder Sends Asda Van Crashing Narrow Footpath - Telegraph Newspaper](../images/sat_nav.png)
 
 In the headline above, taken from [the Telegraph newspaper](https://www.telegraph.co.uk/news/newstopics/howaboutthat/6413887/Asda-van-crashes-after-sat-nav-sends-driver-to-narrow-footpath.html), the driver _trusted_ the SatNav to such an extent that he didn't pay attention to the road-signs around him and ended up getting stuck.  
 
@@ -56,7 +56,7 @@ There are two [Map and Territory Risks](Map-And-Territory-Risk.md) here:
 
 You could argue that both the SatNav and the Driver's _[Internal Model](../thinking/Glossary.md#internal-model)_ had bugs in them.  That is, they both suffer the [Feature Implementation Risk](Feature-Risk.md#implementation-risk) we saw in the [Feature Risk](Feature-Risk.md) section.  If a SatNav has too much of this, you'd end up not trusting it, and getting a new one.  With your _personal_ [Internal Model](../thinking/Glossary.md#internal-model), you can't buy a new one, but you may learn to _trust your assumptions less_.
 
-![Some examples of Feature Fit Risks, as manifested in the Internal Model](/images/generated/risks/map-and-territory/map_and_territory_table_1.png)
+![Some examples of Feature Fit Risks, as manifested in the Internal Model](../images/generated/risks/map-and-territory/map_and_territory_table_1.png)
 
 The diagram above shows how types of [Feature Fit Risk](Feature-Risk.md) can manifest in the [Internal Model](../thinking/Glossary.md#internal-model). 
 
@@ -64,7 +64,7 @@ The diagram above shows how types of [Feature Fit Risk](Feature-Risk.md) can man
 
 Communication allows us to _share_ information between [Internal Models](../thinking/Glossary.md#internal-model) of a whole audience of people.  The [Communication Risk](Communication-Risk.md) and [Coordination Risk](Coordination-Risk.md) sections covered the difficulties inherent in aligning [Internal Models](../thinking/Glossary.md#internal-model) so that they cooperate.
 
-![Relative popularity of "Machine Learning" and "Big Data" as search terms on [Google Trends](https://trends.google.com), 2011-2018 ](/images/google-trends.png)
+![Relative popularity of "Machine Learning" and "Big Data" as search terms on [Google Trends](https://trends.google.com), 2011-2018 ](../images/google-trends.png)
  
 But how does [Map and Territory Risk](Map-And-Territory-Risk.md) apply across a population of [Internal Models](../thinking/Glossary.md#internal-model)?   Can we track the rise-and-fall of _ideas_ like we track stock prices?  In effect, this is what [Google Trends](https://trends.google.com) does.  In the chart above, we can see the relative popularity of two search terms over time.  This is probably as good an indicator as any of the changing popularity of an abstraction within an audience.
 
@@ -74,7 +74,7 @@ Most ideas (and most products) have a slow, hard climb to wide-scale adoption.  
 
 > "The hype cycle is a branded graphical presentation developed and used by the American research, advisory and information technology firm Gartner, for representing the maturity, adoption and social application of specific technologies. The hype cycle provides a graphical and conceptual presentation of the maturity of emerging technologies through five phases." - [Hype Cycle, _Wikipedia_](https://en.wikipedia.org/wiki/Hype_cycle)
 
-![Hype Cycle, along with Map & Territory Risk](/images/numbers/hype1.png)
+![Hype Cycle, along with Map & Territory Risk](../images/numbers/hype1.png)
 
 The five phases (and the "Hype" itself as the thick black line) are shown in the chart above.  We start off at the "Technology Trigger", moving to the "Peak of Inflated Expectations", then to the "Trough of Disillusionment" and finally up the "Slope of Enlightenment" to the "Plateau of Productivity".  
 
@@ -90,13 +90,13 @@ The concept of [Map and Territory Risk](Map-And-Territory-Risk.md) actually help
  
 At the point where the effect of [Map and Territory Risk](Map-And-Territory-Risk.md) is at its greatest we end up in the "Trough of Disillusionment".  Eventually, we escape the trough as **Knowledge** and understanding of the idea increases, reducing [Map and Territory Risk](Map-And-Territory-Risk.md).
  
-![Hype Cycle 2: more even growth of Awareness and Knowledge means no "Trough of Disillusionment"](/images/numbers/hype2.png)
+![Hype Cycle 2: more even growth of Awareness and Knowledge means no "Trough of Disillusionment"](../images/numbers/hype2.png)
 
 As you might expect, the "Trough of Disillusionment" exists because the **Awareness** of the idea and the **Knowledge** about it increase at different rates.
  
 Where the **Awareness** and **Knowledge** grow more evenly together, there is no spike in [Map and Territory Risk](Map-And-Territory-Risk.md) and we don't see the corresponding "Trough of Disillusionment" at all, as shown in the above chart.
 
-![Audience Feature Risks, as manifested in the Internal Model](/images/generated/risks/map-and-territory/map_and_territory_table_2.png)
+![Audience Feature Risks, as manifested in the Internal Model](../images/generated/risks/map-and-territory/map_and_territory_table_2.png)
 
 The diagram above shows how Audience-type [Feature Risks](Feature-Risk.md) can manifest in the Internal Model. (The Hype Cycle model is available in **Numbers** format [here](https://github.com/risk-first/website/blob/master/numbers/RiskMatrix.numbers).)
 
@@ -157,7 +157,7 @@ Will the idea still be useful as the world adapts?   Although the Hype Cycle mod
 
 There are plenty of ideas which _seem a really good idea at the time_ but then end up being terrible.  It's only as we _improve our internal model_ and realize the hidden risks that we stop using them.  While SLOC is a minor offender, [CFCs](https://en.wikipedia.org/wiki/Chlorofluorocarbon) or [Leaded Petrol](https://en.wikipedia.org/wiki/Tetraethyllead) are more significant examples.  
 
-![Hype Cycle for something that turns out to be a _bad_ idea](/images/numbers/hype3.png)
+![Hype Cycle for something that turns out to be a _bad_ idea](../images/numbers/hype3.png)
 
 The above chart shows an initially promising idea that turns out to be terrible.  That is, the **Knowledge** value of it ends up being significantly less than the **Map and Territory Risk** of using it.  Hence, there is a "Period of Inoculation" where the population realise their mistake - there is "negative hype" as they work to phase out the offending idea until it's forgotten.
 
@@ -165,7 +165,7 @@ SLOC is not on its own a _bad idea_, but using it as a metric for developer prod
 
 > "Measuring programming progress by lines of code is like measuring aircraft building progress by weight.” - [Bill Gates](https://www.goodreads.com/quotes/536587)
 
-![Evolution Feature Risks, as manifested in the Internal Model](/images/generated/risks/map-and-territory/map_and_territory_table_3.png)
+![Evolution Feature Risks, as manifested in the Internal Model](../images/generated/risks/map-and-territory/map_and_territory_table_3.png)
 
 The diagram above shows how Evolution-type [Feature Risks](Feature-Risk.md) can manifest in the Internal Model.
 

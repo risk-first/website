@@ -82,7 +82,7 @@ In the financial crisis of 2007, these models of risk didn't turn out to be much
 
 All the [Risks](../thinking/Glossary.md#Risk) were [correlated](https://www.investopedia.com/terms/c/correlation.asp).  That is, they were affected by the _same underlying events_, or _each other_.
 
-![Causation shown on a Risk-First Diagram.  More complexity is likely to lead to more Operational Risk](/images/generated/risks/landscape/causation.png)
+![Causation shown on a Risk-First Diagram.  More complexity is likely to lead to more Operational Risk](../images/generated/risks/landscape/causation.png)
 
 It's like this with software risks, too, sadly.  For example, [Operational Risk](Operational-Risk.md) is going to be heavily correlated with [Complexity Risk](Complexity-Risk.md): the more complex your operation, the more risky it will be.  In the Risk-First diagrams, we will sometimes show correlation or causation with an arrow, like in the diagram above.
 

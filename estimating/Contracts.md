@@ -10,7 +10,7 @@ featured:
 
 # Contracts
 
-![Under Construction](/images/state/uc.png)
+![Under Construction](../images/state/uc.png)
 
 There are basically two "extreme" positions on building a contract, Fixed-Price, and By-The-Hour.  Let's look at those more closely, and see 
 

@@ -1,4 +1,4 @@
-![Under Construction](/images/state/uc.png)
+![Under Construction](../images/state/uc.png)
 
 ## What Is It 
 
@@ -14,7 +14,7 @@ Most forms of testing are about isolating a particular _characteristic_ of your 
 
 ## How It Works
 
-![Testing Process](/images/generated/development_process_test.png)
+![Testing Process](../images/generated/development_process_test.png)
 
 The whole purpose of testing is to [meet reality](Meeting-Reality.md) early, ahead of putting software in front of real users, where you face [Production Risks](Production-Risk), like reputation damage and financial penalties.
 
@@ -50,7 +50,7 @@ Automated tests look roughly the same, irrespective of the scope they are trying
  - We have some **Input Conditions** for the test, and some **Expectations**.
  - When the test is executed, we compare the actual outputs with the expected ones, giving us **The Result**.
 
-![Testing Process](/images/generated/testing_1.png)
+![Testing Process](../images/generated/testing_1.png)
 
 A useful way to think about automated testing is that it turns the **System Under Test** into a [Pure Function](https://en.wikipedia.org/wiki/Pure_function):  This means that for a specific set of inputs, the system will produce a specific output, reliably, every time.   
 
@@ -85,7 +85,7 @@ However, if possible, it's better to break open the white box and test the compo
 
 Expanding on this then, the [Testing Pyramid](https://martinfowler.com/bliki/TestPyramid.html) idea is that lower level, automated tests which run quickly should be common, while there should be fewer of the more expensive "whole system" level tests.  
 
-![Testing Pyramid](/images/generated/testing_pyramid.png)
+![Testing Pyramid](../images/generated/testing_pyramid.png)
 
 Finally, since manual tests are run by people (who are comparatively slow and costly), these should be the _rarest_ kind of test.
 

@@ -28,11 +28,11 @@ Work in Scrum is done within periods of time called _Sprints_.  Each sprint ends
 
 In Risk-First, we tend to call this validation step [Meeting Reality](../thinking/Glossary.md#meet-reality):  you are creating a [feedback loop](../thinking/Cadence.md) in order to minimise risk.  What is the risk you are minimising?  Essentially, we are trying to reduce the risk of the developers _building the wrong thing_, which could be due to misunderstanding of requirements, or perfectionism, or because the piece of work was ill-conceived in the first place.  In Risk-First, the risk of building the wrong thing is called [Feature Risk](../risks/Feature-Risk.md).
 
-![Feature Risk mitigated by Meeting Reality](/images/generated/estimating/scrum/scrum1.png)
+![Feature Risk mitigated by Meeting Reality](../images/generated/estimating/scrum/scrum1.png)
 
 The above diagram demonstrates us mitigating [Feature Risk](../risks/Feature-Risk.md) (the risk of not building the right software for our clients) by organising a Sprint Review.  But there is a downside to a Sprint Review:  _it takes time_.
 
-![Schedule Risk for Stakeholders](/images/generated/estimating/scrum/scrum2.png)
+![Schedule Risk for Stakeholders](../images/generated/estimating/scrum/scrum2.png)
 
 And that risk is called [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk).  It is shown in the diagram above: the _more feedback_ you are receiving, the more _interruption_ you are causing to the people giving feedback.   So you are trying to [Balance Risk](../bets/Purpose-Development-Team.md):  while having a _daily_ review for a software project involving all stakeholders would be over-kill and waste a lot of everyone's time, having a _yearly_ review would be too-long a feedback loop.   Balancing risk here means doing the feedback loop _just often enough_.
 
@@ -40,7 +40,7 @@ And that risk is called [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk)
 
 > "Sprints are **time-boxed** so that they have a fixed start and end date, and generally they should all be of the same duration. " - Essential Scrum (p20), _Rubin_
 
-![Time Boxing Causes Coordination Risk](/images/generated/estimating/scrum/scrum3.png)
+![Time Boxing Causes Coordination Risk](../images/generated/estimating/scrum/scrum3.png)
 
 In order to balance the risks, Sprints are time-boxed:  rather than just requesting feedback every five minutes or _whenever_, the idea is that the development team completes a Sprint within a fixed period of time (two weeks being common).  On the one hand, this means everyone can have a regular meeting in their diary, and agree up-front about how much of their schedule will be taken up in Sprint Reviews.  
 
@@ -53,7 +53,7 @@ Nevertheless, time-boxing is foundational principle of Scrum.  So in order to ge
 
 ## Planning And Estimating
 
-![Planning and Estimating to reduce Coordination Risk](/images/generated/estimating/scrum/scrum4.png)
+![Planning and Estimating to reduce Coordination Risk](../images/generated/estimating/scrum/scrum4.png)
 
 Now, although the above diagram _makes sense_ (estimating as a mitigation to coordination issues) by this point in this track of articles we should be wary of our ability to estimate development tasks _at all_:
 
@@ -71,7 +71,7 @@ Given that estimating is so problematic, does it make any sense to try to mitiga
 
 ## Other Ways To Address Schedule Risk
 
-![Schedule Risk for Stakeholders](/images/generated/estimating/scrum/scrum2.png)
+![Schedule Risk for Stakeholders](../images/generated/estimating/scrum/scrum2.png)
 
 Let's go back a step:  isn't there another way to tackle the [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk) problem _instead_ of time-boxing / huge sprint review meeting?   As we saw, this led to [Coordination Risk](../risks/Coordination-Risk.md) issues.  Here are several other ways you could solve this problem:
 
@@ -116,7 +116,7 @@ What's the point in getting an estimate right if you're building _totally the wr
 
 How can we, as software developers, minimise the chance of building the wrong thing?   
 
-![Scrum](/images/generated/estimating/scrum/scrum4.png)
+![Scrum](../images/generated/estimating/scrum/scrum4.png)
 
 Look above at the diagram what Scrum is trying to do to mitigate [Feature Risk](../risks/Feature-Risk.md):
 

@@ -27,7 +27,7 @@ It should be no surprise to see that there is a _recursive_ nature about this:  
 
 So, let's see how this kind of recursion looks on our model.
 
-![Taking actions changes reality, but changes your model of the risks too](/images/generated/introduction/model_vs_reality_2.png).
+![Taking actions changes reality, but changes your model of the risks too](../images/generated/introduction/model_vs_reality_2.png).
 
 ## Navigating the "[Risk Landscape](../risks/Risk-Landscape.md)"
 
@@ -41,7 +41,7 @@ Ideally, when you take an action, you are trading off a big risk for a smaller o
 
 You can think of [Taking Action](../thinking/Glossary.md#taking-action) as moving your project on a "[Risk Landscape](../risks/Risk-Landscape.md)":  ideally, when you take an action, you move from some place with worse risk to somewhere more favourable.
 
-![Navigating The Risk Landscape](/images/generated/introduction/risk_landscape_1.png)
+![Navigating The Risk Landscape](../images/generated/introduction/risk_landscape_1.png)
 
 Sometimes, you can end up somewhere _worse_:  the actions you take to manage a risk will leave you with worse [Attendant Risks](../thinking/Glossary.md#attendant-risk) afterwards.  Almost certainly, this will have been a [Hidden Risk](../thinking/Glossary.md#hidden-risk) when you embarked on the action, otherwise you'd not have chosen it.  
 
@@ -49,7 +49,7 @@ Sometimes, you can end up somewhere _worse_:  the actions you take to manage a r
 
 For example, _automating processes_ is very tempting: it _should_ save time, and reduce the amount of boring, repetitive work on a project.  But sometimes, it turns into an industry in itself, and consumes more effort than it's worth. 
 
-![Hidden Risks of Automation](/images/generated/introduction/risk_landscape_2_automating.png)
+![Hidden Risks of Automation](../images/generated/introduction/risk_landscape_2_automating.png)
 
 ### Another Example: MongoDB
 
@@ -89,7 +89,7 @@ In all, to de-risk, you should try and meet reality:
 
 In [Development Process](Development-Process.md), we performed a UAT in order to [Meet Reality](../thinking/Glossary.md#Meet-Reality) more cheaply and sooner.  The _cost_ of this is that we delayed the release to do it, adding risk to the schedule.  
 
-![Testing flushes out Hidden Risk, but increases Schedule Risk](/images/generated/introduction/meeting_reality_testing.png)
+![Testing flushes out Hidden Risk, but increases Schedule Risk](../images/generated/introduction/meeting_reality_testing.png)
 
 ## Practice 1: YAGNI 
 

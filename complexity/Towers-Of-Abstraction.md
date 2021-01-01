@@ -11,7 +11,7 @@ categories:
 order: 3
 ---
 
-![Under Construction](/images/state/uc.png)
+![Under Construction](../images/state/uc.png)
 
 # Towers Of Abstraction
 

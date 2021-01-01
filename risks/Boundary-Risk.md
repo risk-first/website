@@ -17,7 +17,7 @@ redirect_from:
 
 In the previous sections on [Dependency Risk](Dependency-Risk.md) we've touched on [Boundary Risk](Boundary-Risk.md) several times, but now it's time to tackle it head-on and discuss this important type of risk.  
 
-![Boundary Risk is due to Dependency Risk and commitment](/images/generated/risks/boundary/boundary-risk.png)
+![Boundary Risk is due to Dependency Risk and commitment](../images/generated/risks/boundary/boundary-risk.png)
 
 As shown in the above diagram, [Boundary Risk](Boundary-Risk.md) is the risk we face due to _commitments_ around dependencies and the limitations they place on our ability to change.  To illustrate, lets consider two examples:
  
@@ -34,7 +34,7 @@ In software development, although we might face [Boundary Risk](Boundary-Risk.md
 
 As discussed in [Software Dependency Risk](Software-Dependency-Risk.md), if we are going to use a software tool as a dependency, we have to accept the complexity of its [protocols](Communication-Risk.md#protocols).  You have to use its protocol: it won't come to you.   
 
-![Our System receives data from the `input`, translates it and sends it to the `output`.  But which dependency should we use for the translation, if any?](/images/generated/risks/boundary/choices.png)
+![Our System receives data from the `input`, translates it and sends it to the `output`.  But which dependency should we use for the translation, if any?](../images/generated/risks/boundary/choices.png)
 
 Let's take a look at a hypothetical system structure, in the diagram above.  In this design, we are transforming data from the `input` to the `output`.  But how should we do it?
 
@@ -91,7 +91,7 @@ In the real world, there is a tendency for _big cities to get bigger_.  The more
 
 > "... the positive effect described in economics and business that an additional user of a good or service has on the value of that product to others. When a network effect is present, the value of a product or service increases according to the number of others using it." - [Network Effect, _Wikipedia_](https://en.wikipedia.org/wiki/Network_effect)
 
-![WordPress vs Drupal adoption over 8 years, according to [w3techs.com](https://w3techs.com/technologies/history_overview/content_management/all/y)](/images/numbers/wordpress-drupal-chart.png)
+![WordPress vs Drupal adoption over 8 years, according to [w3techs.com](https://w3techs.com/technologies/history_overview/content_management/all/y)](../images/numbers/wordpress-drupal-chart.png)
 
 You can see the same effect in the software ecosystems with the adoption rates of WordPress and Drupal, shown in the chart above.  Note: this is over _all sites on the internet_, so Drupal accounts for hundreds of thousands of sites.  In 2018, WordPress is approximately 32% of all web-sites.  For Drupal it's 2%.
 
@@ -118,7 +118,7 @@ When a tool or platform is popular, it is under pressure to increase in complexi
 
 Although designed for _people_, it can just as easily be applied to any other dependency you can think of.  This means when things get popular, there is a tendency towards [Conceptual Integrity Risk](Feature-Risk.md#conceptual-integrity-risk) and [Complexity Risk](Complexity-Risk.md).  
 
-![Java Public Classes By Version (3-9)](/images/numbers/java_classes_by_version.png)
+![Java Public Classes By Version (3-9)](../images/numbers/java_classes_by_version.png)
 
 The above chart is an example of this: look at how the number of public classes in Java (a good proxy for the boundary) has increased with each release.   
 
@@ -128,7 +128,7 @@ As we saw in [Software Dependency Risk](Software-Dependency-Risk.md), The art of
 
 Each new version has a greater functional scope than the one before (pushing back [Boundary Risk](Boundary-Risk.md)), making the platform more attractive to build solutions in.   But this increases the [Complexity Risk](Complexity-Risk.md) as there is more functionality to deal with.  
 
-![Tradeoff between large and small ecosystems](/images/generated/risks/boundary/boundary-risk2.png)
+![Tradeoff between large and small ecosystems](../images/generated/risks/boundary/boundary-risk2.png)
 
 You can see in the diagram above the Peter Principle at play:  as more responsibility is given to a dependency, the more complex it gets and the greater the learning curve to work with it.  Large ecosystems like Java react to [Learning Curve Risk](Communication-Risk.md#learning-curve-risk) by having copious amounts of literature to read or buy to help, but it is still off-putting.
 
@@ -140,7 +140,7 @@ Let's look at two ways in which we can manage [Boundary Risk](Boundary-Risk.md):
 
 ### Ecosystem Bridges
 
-![Boundary Risk is mitigated when a bridge is built between ecosystems](/images/generated/risks/boundary/boundary-risk3.png)
+![Boundary Risk is mitigated when a bridge is built between ecosystems](../images/generated/risks/boundary/boundary-risk3.png)
 
 Sometimes, technology comes along that allows us to cross boundaries, like a _bridge_ or a _road_.  This has the effect of making it easy to to go from one self-contained ecosystem to another.  Going back to WordPress, a simple example might be the [Analytics Dashboard](https://en-gb.wordpress.org/plugins/google-analytics-dashboard-for-wp/) which provides [Google Analytics](https://en.wikipedia.org/wiki/Google_Marketing_Platform) functionality inside WordPress.  
 
@@ -179,7 +179,7 @@ Standards mitigate [Boundary Risk](Boundary-Risk.md) in one of two ways:
  
 ## Boundary Risk Cycle
 
-![Boundary Risk Decreases With Bridges and Standards](/images/generated/risks/boundary/cycle.png) 
+![Boundary Risk Decreases With Bridges and Standards](../images/generated/risks/boundary/cycle.png) 
 
 [Boundary Risk](Boundary-Risk.md) seems to progress in cycles.  As a piece of technology becomes more mature, there are more standards and bridges, and [Boundary Risk](Boundary-Risk.md) is lower.  Once [Boundary Risk](Boundary-Risk.md) is low and a particular approach is proven, there will be innovation upon this, giving rise to new opportunities for [Boundary Risk](Boundary-Risk.md) (see the diagram above).  Here are some examples:
 

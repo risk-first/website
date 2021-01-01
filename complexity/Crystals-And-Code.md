@@ -19,13 +19,13 @@ IS's are super-useful for _hardening and regularising processes_ so that they fo
 
 Here, we're going to explore the shared (and somewhat idealized) life-cycles of crystals and IS's, and draw some conclusions along the way.
 
-![Crystal Stages](/images/generated/complexity/cycle.png)
+![Crystal Stages](../images/generated/complexity/cycle.png)
 
 ## Stage 1: Chaos
 
 Before crystals can grow, the conditions have to be right.  In turbulent, changing environments, large crystals can't grow (just think of a slush machine, continually churning the drink to keep it from turning into a block of ice).  
 
-![Slush Machines](/images/complexity/slush.jpg)
+![Slush Machines](../images/complexity/slush.jpg)
 
 _Slush Machines_
 
@@ -108,7 +108,7 @@ There are four basic problems with this approach:
 
 3.  **Reconciliation becomes a thing.**  Since you are effectively creating copies of the same information in multiple systems, you now need to check that all of the different copies _are the same_.  This usually involves creating a _fourth_ system, that checks the results and arbitrates on the other two.  
 
-![Feed and Reconciliation](/images/generated/complexity/feed.png)
+![Feed and Reconciliation](../images/generated/complexity/feed.png)
 
 So, you've gone from two incompatible systems to four points of failure: the two original systems, the feed, and the thing that checks the feed.  
 

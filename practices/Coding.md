@@ -1,4 +1,4 @@
-![Draft](/images/state/draft.png)
+![Draft](../images/state/draft.png)
 
 ## What Is It
 
@@ -17,7 +17,7 @@ In [Development Process](Development-Process.md) we introduced the following dia
 - Then, we find out how well our idea stands up when we [Meet Reality](../thinking/Glossary.md#Meet-Reality) and try it out in our code-test-run-debug cycle.
 - As we go, the main outcome is that we change reality, and create code, but along the way, we discover where our [Internal Model](../thinking/Glossary.md#Internal-Model) was wrong, in the form of surfacing [Hidden Risks](../thinking/Glossary.md#hidden-risk).
 
-![Coding](/images/generated/development_process_code.png)
+![Coding](../images/generated/development_process_code.png)
 
 ## Examples
 
@@ -65,7 +65,7 @@ Imagine for a moment, that there was such a thing as **The Perfect Product**, an
  - Finally, we have a feedback loop, so the **User** can improve their [Internal Model](../thinking/Glossary.md#Internal-Model) and see the previously unforeseen [Hidden Risks](../thinking/Glossary.md#hidden-risk).
  - Then, you can go round again.
 
-![Coding Communication Risks](/images/generated/perfect_product.png)
+![Coding Communication Risks](../images/generated/perfect_product.png)
 
 The problem here is that this is a very _protracted feedback loop_.  This is mitigated by prototyping, because that's all about shortening the feedback loop as far as possible:  
  - By working together, you mitigate [Communication Risk](Communication-Risk.md).
