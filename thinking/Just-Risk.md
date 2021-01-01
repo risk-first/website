@@ -8,7 +8,7 @@ featured:
   element: '<risk class="internal-model" />'
 categories:
  - Thinking Risk-First
-order: 4
+order: 5
 redirect_from: 
  - /Just-Risk
 ---

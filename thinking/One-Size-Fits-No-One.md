@@ -9,7 +9,7 @@ featured:
 categories:
  - Thinking Risk-First
  - Popular
-order: 8
+order: 9
 date: 2019-01-22 16:32:03 +0000
 redirect_from: 
  - /One-Size-Fits-No-One

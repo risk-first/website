@@ -8,7 +8,7 @@ featured:
   element: '<risk href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg"><code>Attendant</code><title>Evaluating Risk</title></risk>'
 categories:
  - Thinking Risk-First
-order: 5
+order: 6
 redirect_from: 
  - /Evaluating-Risk
 ---

@@ -14,7 +14,7 @@
       {% endif %}
         
      
-      {% assign sorted_pages = site.pages | sort:"order" %}
+      {% assign sorted_pages = site.pages | sort: "order" %}
 		  {% for post in sorted_pages  %} 
 			  {% for pc in post.categories %} 
 			  	{% if pc == category %} 

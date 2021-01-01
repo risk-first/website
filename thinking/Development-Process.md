@@ -6,7 +6,7 @@ url: https://riskfirst.org/thinking/Development-Process
 featured: 
   class: bg3
   element: '<risk href="/public/templates/risk-first/redesign/artifacts/methodology_v2.svg"><code>Method</code><title>On Process</title></risk>'
-order: 2
+order: 3
 categories:
  - Thinking Risk-First
 redirect_from: 
@@ -15,7 +15,7 @@ redirect_from:
 
 # Development Process
 
-In the [previous section](A-Simple-Scenario.md) we introduced some terms for talking about risk (such as [Attendant Risk](../thinking/Glossary.md#attendant-risk), [Hidden Risk](../thinking/Glossary.md#attendant-risk) and [Internal Model](../thinking/Glossary.md#Internal-model)) via a simple scenario.
+In [A Simple Scenario](A-Simple-Scenario.md) we introduced some terms for talking about risk (such as [Attendant Risk](../thinking/Glossary.md#attendant-risk), [Hidden Risk](../thinking/Glossary.md#attendant-risk) and [Internal Model](../thinking/Glossary.md#Internal-model)).
 
 Now, let's look at the everyday process of developing _a new feature_ on a software project, and see how our risk model informs it.
 

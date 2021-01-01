@@ -6,7 +6,7 @@ url: https://riskfirst.org/risks/Software-Dependency-Risk
 featured: 
   class: bg2
   element: '<risk class="software-dependency" />'
-order: 8
+order: 9
 categories:
  - Risks
 redirect_from: 

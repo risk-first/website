@@ -8,7 +8,7 @@ featured:
   element: '<document>Glossary</document>'
 categories:
  - Thinking Risk-First
-order: 9
+order: 10
 redirect_from: 
  - /Glossary
 ---

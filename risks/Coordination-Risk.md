@@ -6,7 +6,7 @@ url: https://riskfirst.org/risks/Coordination-Risk
 featured: 
   class: bg2
   element: '<risk class="coordination" />'
-order: 12
+order: 13
 categories:
  - Risks
 redirect_from: 

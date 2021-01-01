@@ -9,18 +9,12 @@ featured:
 date: 1-1-2018
 categories:
  - Risks
-order: 1
+order: 2
 redirect_from: 
  - /Risk-Landscape
 ---
 
 # The Risk Landscape
-
-In [the previous section](../thinking/One-Size-Fits-No-One.md), we saw how _Lean Software Development_ owed its existence to production-line manufacturing techniques developed at Toyota.  And we saw that the _Waterfall_ approach originally came from engineering.  If Risk-First is anything, it's about applying the techniques of _Risk Management_ to the discipline of _Software Development_ (there's nothing new under the sun, after all).  
-
-One key activity of Risk Management we haven't discussed yet is _categorizing_ risks.  Thus, Part 2 of Risk-First is all about developing categories of risks for use in Software Development.
-
-## The Risk Landscape Again
 
 In [Meeting Reality](../thinking/Meeting-Reality.md), we looked at the concept of the [Risk Landscape](Risk-Landscape.md), and how a software project tries to _navigate_ across this landscape, testing the way as it goes, and trying to get to a position of _more favourable risk_.
 
@@ -67,7 +61,7 @@ After the last stop on the tour, in [Staging and Classifying](Staging-And-Classi
 Although we're going to try and categorise the kinds of things we see on this [Risk Landscape](Risk-Landscape.md), this isn't going to be perfect, because: 
 
  - One risk can "blend" into another just like sometimes a "field" is also a "car-park", or a building might contain some trees (but isn't a forest).
- - As we know from [Part 1](../thinking/Meeting-Reality.md), mitigating one risk probably means accepting another.
+ - As we know from [Meeting Reality](../thinking/Meeting-Reality.md), mitigating one risk probably means accepting another.
  - There can be _causation_ and _correlation_ between different risks:  one risk may cause another, or two risks might have the same underlying cause.
   
 Risk is messy.  It's not always easy to tease apart the different components of risk and look at them individually.<!-- tweet-end -->  Let's look at a high-profile recent example to see why.

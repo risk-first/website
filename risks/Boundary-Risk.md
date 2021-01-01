@@ -6,7 +6,7 @@ url: https://riskfirst.org/risks/Boundary-Risk
 featured: 
   class: bg2
   element: '<risk class="boundary" />'
-order: 10
+order: 11
 categories:
  - Risks
 redirect_from: 

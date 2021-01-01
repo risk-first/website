@@ -1,13 +1,13 @@
 ---
 title: A Simple Scenario
-description: An introduction to the concept that managing risk underpins all activity on projects.
+description: An introduction to the idea that managing risk underpins all activity on projects.
 url: https://riskfirst.org/thinking/A-Simple-Scenario
 
 categories: 
  - Thinking Risk-First
 featured: 
   class: bg3
-  element: '<risk href="/public/templates/risk-first/redesign/risks/goal_v2.svg"><code>goal</code><title>A Simple Scenario</title></risk>'
+  element: '<risk href="/public/templates/risk-first/redesign/risks/goal_v2.svg"><code>Goal</code><title>A Simple Scenario</title></risk>'
 order: 1
 redirect_from: 
  - /A-Simple-Scenario
@@ -63,6 +63,4 @@ If we had a good [Internal Model](../thinking/Glossary.md#Internal-Model), and t
 
 Here, we've introduced some new terms that we're going to use a lot:  [Meet Reality](../thinking/Glossary.md#meet-reality), [Attendant Risk](../thinking/Glossary.md#attendant-risk), [Hidden Risk](../thinking/Glossary.md#attendant-risk), [Internal Model](../thinking/Glossary.md#Internal-model), [Taking Action](../thinking/Glossary.md#taking-action) and [Goal In Mind](../thinking/Glossary.md#Goal-In-Mind).  And, we've applied them in a simple scenario.
 
-But Risk-First is about understanding risk in software development, so let's examine the scenario of a new software project, and expand on the simple model being outlined above:  instead of a single person, we are likely to have a team, and our model will not just exist in our heads, but in the code we write.  
-
-On to [Development Process](Development-Process.md)...
+Next, we're going to take a look at the diagram form we used to illustrate these concepts here: [Risk First Diagrams](Risk-First-Diagrams.md).

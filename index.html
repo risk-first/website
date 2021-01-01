@@ -1,13 +1,10 @@
 ---
-layout: default
 title: Home
 featured: 
   class: bg1
   element: '<action>Start Here</action>'
 ---
 
-<div class="container container-inner">
-	    
 	<!-- Featured
 	================================================== -->
 	<section class="featured-articles">
@@ -50,17 +47,8 @@ featured:
 
 	<!-- Articles
 	================================================== -->
-	{% assign news = site.categories.News %}
 	
-	{% for page in site.pages %}
-		{% for pc in page.categories %} 
-			{% if pc == 'News' %} 
-				{% assign news = news | push:page %}
-			{% endif %} 
-		{% endfor %}
-	{% endfor %}
-	
-	{% assign sorted_pages = news | sort: 'date' | reverse %}
+	{% assign sorted_pages = site.pages | sort: 'date' | reverse %}
 	
 	<section class="recent-articles">
 	    <div class="section-title">
@@ -69,10 +57,10 @@ featured:
 	    
 	    <div class="row listrecent">
 		{% for post in sorted_pages %}
+      {% if forloop.index < 10 %}
 	    	{% include postbox.html %}
-	    {% endfor %}
+      {% endif %}    
+	  {% endfor %}
 	
 	    </div>
 	</section>
-
-</div>

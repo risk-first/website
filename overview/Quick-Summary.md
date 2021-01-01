@@ -5,7 +5,7 @@ url: https://riskfirst.org/overview/Quick-Summary
 
 categories: 
  - Overview
-order: 4
+order: 1
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/quick-summary.svg">Quick Summary</image-artifact>'
@@ -107,4 +107,6 @@ For example:
 
 Risk-First aims to provide a framework in which we can _analyse these actions_ and weigh up _accepting_ versus _mitigating_ risks.
 
-**Still interested?  Then dive into reading [the introduction](../thinking/A-Simple-Scenario.md).**
+## Next Steps
+
+[Tracks](Tracks.md) explains how the material on this site is structured.

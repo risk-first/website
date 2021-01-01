@@ -8,7 +8,6 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/bot.svg">Betting On RPA</image-artifact>'
 categories:
  - Complexity
- - News
 order: 4
 ---
 

@@ -9,7 +9,6 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cards.svg">Debugging Bets</image-artifact>'
 categories:
  - Bets
- - News
 order: 3
 ---
 

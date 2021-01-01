@@ -6,7 +6,7 @@ url: https://riskfirst.org/risks/Complexity-Risk
 featured: 
   class: bg2
   element: '<risk class="complexity" />'
-order: 4
+order: 5
 categories:
  - Risks
 redirect_from: 

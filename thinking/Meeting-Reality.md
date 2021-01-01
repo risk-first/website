@@ -8,7 +8,7 @@ featured:
   element: '<action>Meeting Reality</action>'
 categories:
  - Thinking Risk-First
-order: 3
+order: 4
 redirect_from: 
  - /Meeting-Reality
 ---

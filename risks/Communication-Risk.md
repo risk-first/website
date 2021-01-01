@@ -6,7 +6,7 @@ url: https://riskfirst.org/risks/Communication-Risk
 featured: 
   class: bg2
   element: '<risk class="communication" />'
-order: 3
+order: 4
 categories:
  - Risks
 redirect_from: 

@@ -8,7 +8,7 @@ featured:
   element: '<document>Glossary</document>'
 categories:
  - Risks
-order: 16
+order: 17
 redirect_from: 
  - /Glossary-Of-Risk-Types
 ---

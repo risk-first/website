@@ -7,7 +7,7 @@ url: https://riskfirst.org/risks/Map-And-Territory-Risk
 featured: 
   class: bg2
   element: '<risk class="map-and-territory" />'
-order: 13
+order: 14
 categories:
  - Risks
 redirect_from: 
