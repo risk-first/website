@@ -14,7 +14,7 @@ order: 8
 
 # Stop Estimating, Start Navigating
 
-This is the _eighth_ article in the [Risk-First](https://riskfirst.org) track on [Estimating](/estimating/Start.md).  We've come a long way:
+This is the _eighth_ article in the [Risk-First](https://riskfirst.org) track on [Estimating](Start.md).  We've come a long way:
 
 - In the first four articles, [Fill-The-Bucket](Fill-The-Bucket.md), [Kitchen Cabinet](Kitchen-Cabinet.md), [Journeys](Journeys.md) and [Fractals](Fractals.md) we looked at the various reasons why estimating is such a nightmare on software projects.  This is summarised in [Analogies](Analogies.md).  The upshot is that predictable, well understood, repeatable things can be estimated with some confidence.   However, as soon as software is predictable, repeatable and well-understood, _you're doing it wrong_.
 
@@ -78,9 +78,7 @@ This s
 
 Let's consider the third task: refactoring the subscription model.
 
-
-
-![Use-Cases With Risk Profiles](../images/generated/estimating/planner/example2.png)
+-- image dbd
 
 The above diagram gives us some indication _why_ the tasks are on the backlog:
 

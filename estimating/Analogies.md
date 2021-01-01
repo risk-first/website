@@ -97,7 +97,7 @@ Conversely, when in the _engineering_ mode, I am trying to create software that 
 
 Turns out, I am not the only person to draw this analogy:
 
->  "Software projects exist on a continuum between the Lewis and Clark expedition, and laying down freeway. Knowing what kind of project you’re on can be the difference between success and failure." - [Coding styles: Are you Lewis and Clark or building an interstate?, _WanderingStan.com_](http://wanderingstan.com/2019-12-01/coding-styles-are-you-lewis-and-clark-or-building-an-interstate)
+>  "Software projects exist on a continuum between the Lewis and Clark expedition, and laying down freeway. Knowing what kind of project you’re on can be the difference between success and failure." - [Coding styles: Are you Lewis and Clark or building an interstate?, _Stan James_](https://www.linkedin.com/pulse/coding-styles-you-lewis-clark-building-interstate-stan-james/)
 
 ## Moving On
 

@@ -72,7 +72,7 @@ Let's unpack this idea, and review some classic problems of coordination, none o
   - What if people change their minds in the light of new information?
   - How do you ensure everyone has enough information to make a good decision?
   
-3. **Factions**: sometimes, it's hard to coordinate large groups at the same time and "factions" can occur.  That the world isn't a single big country is probably partly a testament to this:  countries are frequently separated by geographic features that prevent the easy flow of communication (and force).   We can also see this in distributed systems, with the ["split brain"](https://en.wikipedia.org/wiki/Split-brain_(computing) problem.   This is where subset of the total system becomes disconnected (usually due to a network failure) and you end up with two, smaller networks with different knowledge.  We'll address in more depth later.
+3. **Factions**: sometimes, it's hard to coordinate large groups at the same time and "factions" can occur.  That the world isn't a single big country is probably partly a testament to this:  countries are frequently separated by geographic features that prevent the easy flow of communication (and force).   We can also see this in distributed systems, with the ["split brain"](https://en.wikipedia.org/wiki/Split-brain_(computing)) problem.   This is where subset of the total system becomes disconnected (usually due to a network failure) and you end up with two, smaller networks with different knowledge.  We'll address in more depth later.
 
 4. **[Resource Allocation](https://en.wikipedia.org/wiki/Resource_allocation)**:  ensuring that the right people are doing the right work, or the right resources are given to the right people is a coordination issue.  On a grand scale we have [Logistics](https://en.wikipedia.org/wiki/Logistics) and [Economic Systems](https://en.wikipedia.org/wiki/Economic_system).  On a small scale the office's _room booking system_ solves the coordination issue of who gets a meeting room using a first-come-first-served booking algorithm.  
 
@@ -132,7 +132,7 @@ Part of [Coordination Risk](Coordination-Risk.md) is about trying to mitigate di
  
 The job of harmonising this on a project would seem to fall to the team leader, but actually people are self-organising to some extent.  This process is called [Team Development](https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development):
 
-> "The forming–storming–norming–performing model of group development was first proposed by Bruce Tuckman in 1965, who said that these phases are all necessary and inevitable in order for the team to grow, face up to challenges, tackle problems, find solutions, plan work, and deliver results." - [Tuckman's Stages Of Group Development, _Wikipedia_](https://en.wikipedia.org/wiki/Tuckmans_stages_of_group_development)
+> "The forming–storming–norming–performing model of group development was first proposed by Bruce Tuckman in 1965, who said that these phases are all necessary and inevitable in order for the team to grow, face up to challenges, tackle problems, find solutions, plan work, and deliver results." - [Tuckman's Stages Of Group Development, _Wikipedia_](https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development)
 
 Specifically this describes a process whereby a new group will form and then be required to work together. In the process, they will have many _disputes_.  Ideally, the group will resolve these disputes internally and emerge as a team, with a common [Goal In Mind](../thinking/Glossary.md#goal-in-mind).
 
