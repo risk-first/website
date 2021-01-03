@@ -4,7 +4,6 @@ description: How to create Twitter/LinkedIn cards for Posts.
 url: https://riskfirst.org/misc/Twitter-Cards
 
 author: rob
-date: 22-03-2019
 categories:
  - Misc
 order: 4
