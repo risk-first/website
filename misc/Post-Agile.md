@@ -10,7 +10,6 @@ categories:
  - Popular
  - Misc
 order: 7
-date: 2019-07-16 16:32:03 +0000
 redirect_from: 
  - /post/popular/2019/07/16/Post-Agile
  - /post/news/2019/07/16/Post-Agile

@@ -4,7 +4,6 @@ description: Where to head next on developing Risk-First
 url: https://riskfirst.org/misc/Next-Scrum
 
 author: rob
-date: 07-03-2019
 categories:
  - Misc
 order: 3
