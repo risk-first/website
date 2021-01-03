@@ -4,7 +4,6 @@ description: Risk-First Volume 1 Available to Buy
 url: https://riskfirst.org/misc/Available-On-Amazon
 
 author: rob
-date: 25-2-2019
 categories:
  - Misc
 order: 2

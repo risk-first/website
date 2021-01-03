@@ -4,7 +4,6 @@ description: How Many Dimensions Does Your Programming Language Have?
 url: https://riskfirst.org/misc/3d-Programming
 
 author: rob
-date: 15-01-2020
 categories:
  - Misc
 order: 9
