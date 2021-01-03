@@ -8,7 +8,7 @@ featured:
   element: '<risk class="communication" />'
 categories: 
  - Thinking Risk-First
-order: 8
+order: 9
 redirect_from: 
  - /A-Conversation
 ---
