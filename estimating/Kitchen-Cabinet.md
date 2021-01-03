@@ -328,7 +328,7 @@ But, it's not the point of _lowest_ risk.
 
 For that, you'll have to go somewhere around three days.  This is roughly the mean length of the project - with this lambda, half of all projects would be completed before this point, and half after. But the too-late risk is much greater than the too-early risk.  
 
-So an important question at this point might be: _who bears this risk?_    In the models above, we make the simplifying assumption that too-early and too-late risks have the same cost, but in reality, missing deadlines can be damaging to your _personal_ reputation, and we'll unpack that [later](Control.md).
+So an important question at this point might be: _who bears this risk?_    In the models above, we make the simplifying assumption that too-early and too-late risks have the same cost, but in reality, missing deadlines can be damaging to your _personal_ reputation.
 
 ## Meta-Analysis
 

@@ -381,7 +381,7 @@ Are you a gambler?  If you can just make everyone work a couple of extra hours' 
 
 This is a really contrived example, but actually this represents _most of_ how banks, insurance companies, investors etc. work out risk, simply multiplying the probability of something happening by what is lost when it does happen.  But let's look at some criticisms of this:
 
-1. Aren't there other options?  We might be able to work nights to get the project done, or hire more staff, or give bonuses for overtime _or something_.  In fact, in [Pressure](Pressure.md) we'll come back and look at some of these factors.
+1. Aren't there other options?  We might be able to work nights to get the project done, or hire more staff, or give bonuses for overtime _or something_.  In fact, in [Pressure](../practices/Pressure.md) we'll  look at some of these factors.
 
 2. We've actually got a project here which _degrades gracefully_. The costs of taking longer are clearly sign-posted in advance.  In reality, the costs of missing a date might be much more disastrous:  not getting your game completed for Christmas, missing a regulatory deadline, not being ready for an important demo - these are all-or-nothing outcomes where it's a [stark contrast between in-time and missing-the-bus](../risks/Deadline-Risk.md).  
 
