@@ -15,13 +15,13 @@ redirect_from:
 
 # Meeting Reality
 
-In this section, we will look at how exposing your [Internal Model](../thinking/Glossary.md#Internal-Model) to reality is in itself a good risk management technique.
+Here we look at how exposing your [Internal Model](../thinking/Glossary.md#Internal-Model) to reality is in itself a good risk management technique.
 
 ## Revisiting the Model
 
 In [A Simple Scenario](A-Simple-Scenario.md), we looked at a basic model for how **Reality** and our [Internal Model](../thinking/Glossary.md#Internal-Model) interacted with each other:  we take action based on our [Internal Model](../thinking/Glossary.md#Internal-Model), hoping to **change Reality** with some positive outcome.
 
-And, in [Development Process](Development-Process.md) we looked at how we can meet with reality in _different forms_:  Analysis, Testing, Integration and so on, and saw how the model could work in each stage of a project.
+And, in [Development Process](Development-Process.md) we looked at how we can meet with reality in _different forms_:  Analysis, Testing, Integration and so on. We saw how the model could work in each stage of a project.
 
 It should be no surprise to see that there is a _recursive_ nature about this:   the actions we take each day have consequences, they expose new [hidden risks](../thinking/Glossary.md#hidden-risk) which inform our [Internal Model](../thinking/Glossary.md#Internal-Model) and at the same time change reality in some way.  As a result, we then have to take _new actions_ to deal with these new risks.  
 
@@ -31,33 +31,34 @@ So, let's see how this kind of recursion looks on our model.
 
 ## Navigating the "[Risk Landscape](../risks/Risk-Landscape.md)"
 
-The diagram above shows _just one possible action_, in reality, you'll have choices.  We often have multiple ways of achieving a [Goal In Mind](../thinking/Glossary.md#Goal-In-Mind).  
+The diagram above shows _just one possible action_ but really, you'll have choices.  We often have multiple ways of achieving a [Goal In Mind](../thinking/Glossary.md#Goal-In-Mind).  
 
 What's the best way?  
 
 I would argue that the best way is the one which mitigates the most existing risk while accruing the least attendant risk to get it done.  
 
-Ideally, when you take an action, you are trading off a big risk for a smaller one.  Take Unit Testing for example.  Clearly, writing Unit Tests adds to the amount of development work, so on its own, it adds [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk).   However, if you write _just enough_ of the right Unit Tests, you should be short-cutting the time spent finding issues in the User Acceptance Testing (UAT) stage, so you're hopefully trading off a larger [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk) from UAT and adding a smaller [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk) to Development.  There are other benefits of Unit Testing too:  once written, a suite of unit tests is almost cost-free to run repeatedly, whereas repeating a UAT is costly as it involves people's time.
-
-You can think of [Taking Action](../thinking/Glossary.md#taking-action) as moving your project on a "[Risk Landscape](../risks/Risk-Landscape.md)":  ideally, when you take an action, you move from some place with worse risk to somewhere more favourable.
+Ideally, when you take an action, you are trading off a big risk for a smaller one.  Take Unit Testing for example:  Clearly, writing Unit Tests adds to the amount of development work, so on its own, it adds [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk).   However, if you write _just enough_ of the right Unit Tests, you should be short-cutting the time spent finding issues in the User Acceptance Testing (UAT) stage, so you're hopefully trading off a larger [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk) from UAT and adding a smaller [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk) to Development.  
 
 ![Navigating The Risk Landscape](../images/generated/introduction/risk_landscape_1.png)
+
+You can think of [Taking Action](../thinking/Glossary.md#taking-action) as moving your project on a "[Risk Landscape](../risks/Risk-Landscape.md)":  ideally, when you take an action, you move from some place with worse risk to somewhere more favourable, as shown in the diagram above.
 
 Sometimes, you can end up somewhere _worse_:  the actions you take to manage a risk will leave you with worse [Attendant Risks](../thinking/Glossary.md#attendant-risk) afterwards.  Almost certainly, this will have been a [Hidden Risk](../thinking/Glossary.md#hidden-risk) when you embarked on the action, otherwise you'd not have chosen it.  
 
 ### An Example: Automation
 
-For example, _automating processes_ is very tempting: it _should_ save time, and reduce the amount of boring, repetitive work on a project.  But sometimes, it turns into an industry in itself, and consumes more effort than it's worth. 
-
 ![Hidden Risks of Automation](../images/generated/introduction/risk_landscape_2_automating.png)
+
+_Automating processes_ (as shown in the diagram above) is often tempting: it _should_ save time, and reduce the amount of boring, repetitive work on a project.  But sometimes, it turns into an industry in itself, consumes more effort than it'll ever pay back and needs to be maintained in the future at great expense. 
+
 
 ### Another Example: MongoDB
 
-On a recent project in a bank, we had a requirement to store a modest amount of data and we needed to be able to retrieve it fast.  The developer chose to use [MongoDB](https://www.mongodb.com) for this.  At the time, others pointed out that other teams in the bank had had lots of difficulty deploying MongoDB internally, due to licensing issues and other factors internal to the bank.
+On a previous project in a bank we had a requirement to store a modest amount of data and we needed to be able to retrieve it fast.  The developer chose to use [MongoDB](https://www.mongodb.com) for this.  At the time, others pointed out that other teams in the bank had had lots of difficulty deploying MongoDB internally, due to licensing issues and other factors internal to the bank.
 
-Other options were available, but the developer chose MongoDB because of their _existing familiarity_ with it:   therefore, they felt that the [Hidden Risks](../thinking/Glossary.md#hidden-risk) of MongoDB were _lower_ than the other options, and disregarded the others' opinions.
+Other options were available, but the developer chose MongoDB because of their _existing familiarity_ with it:   therefore, they felt that the [Hidden Risks](../thinking/Glossary.md#hidden-risk) of MongoDB were _lower_ than the other options.
 
-This turned out to be a mistake:  The internal bureacracy eventually proved too great, and MongoDB had to be abandoned after much investment of time.
+This turned out to be a mistake:  the internal bureacracy eventually proved too great and MongoDB had to be abandoned after much investment of time.
 
 This is not a criticism of MongoDB: it's simply a demonstration that sometimes, the cure is worse than the disease.  Successful projects are _always_ trying to _reduce_ [Attendant Risks](../thinking/Glossary.md#attendant-risk).  
 
@@ -65,9 +66,9 @@ This is not a criticism of MongoDB: it's simply a demonstration that sometimes, 
 
 We can't know in advance how well any action we take will work out.  Therefore, [Taking Action](../thinking/Glossary.md#taking-action) is a lot like placing a bet.  
 
-**[Payoff](../thinking/Glossary.md#payoff)** then is our judgement about whether we expect an action to be worthwhile:  are the risks we escape _worth_ the attendant risks we will encounter?  We should be able to _weigh these separate risks in our hands_ and figure out whether the [Payoff](../thinking/Glossary.md#payoff) makes a given [Action](../thinking/Glossary.md#taking-action) worthwhile.  
+[Payoff](../thinking/Glossary.md#payoff) then is our judgement about whether we expect an action to be worthwhile:  are the risks we escape _worth_ the attendant risks we will encounter?  We should be able to _weigh these separate risks in our hands_ and judge whether the [Payoff](../thinking/Glossary.md#payoff) makes a given [Action](../thinking/Glossary.md#taking-action) worthwhile.  
 
-The fruits of this gambling are revealed when we [meet reality](../thinking/Glossary.md#meet-reality), and we can see whether our bets were worthwhile. 
+The fruits of this gambling are revealed when we [meet reality](../thinking/Glossary.md#meet-reality) and we can see whether our bets were worthwhile. 
 
 ## The Cost Of Meeting Reality
 
@@ -107,18 +108,19 @@ Now, we can say:  do the work _if there is a worthwhile [Payoff](../thinking/Glo
 
  - Logging statements are _good_, because otherwise, you're increasing the risk that in production, no one will be able to understand _how the software went wrong_.
  - However, adding them takes time, which might introduce [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk).
+ - Also, we have to manage larger log files on our production systems.
  
-So, it's a trade-off: continue adding logging statements so long as you feel that overall, the activity pays off reducing overall risk.
+So, it's a trade-off: continue adding logging statements so long as you feel that overall, the activity [pays off](../thinking/Glossary.md#payoff) reducing overall risk.
 
 ## Practice 2: Do The Simplest Thing That Could Possibly Work
 
-Another mantra from Kent Beck (originator of the [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) methodology), is "Do The Simplest Thing That Could Possibly Work", which is closely related to YAGNI and is an excellent razor for avoiding over-engineering.  At the same time, by adding "Could Possibly", Kent is encouraging us to go beyond straightforward iteration, and use our brains to pick apart the simple solutions, avoiding them if we can logically determine when they would fail. 
+Another mantra from Kent Beck (originator of the [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) methodology), is "Do The Simplest Thing That Could Possibly Work", which is closely related to YAGNI and is an excellent razor for avoiding over-engineering.  At the same time, by adding "Could Possibly", Kent is encouraging us to go beyond straightforward iteration and use our brains to pick apart the simple solutions, avoiding them if we can logically determine when they would fail. 
 
 Our risk-centric view of this strategy would be:
 
 - Every action you take on a project has its own [Attendant Risks](../thinking/Glossary.md#attendant-risk).
 - The bigger or more complex the action, the more [Attendant Risk](../thinking/Glossary.md#attendant-risk) it'll have.
-- The reason you're taking action _at all_ is because you're trying to reduce risk elsewhere on the project 
+- The reason you're taking action _at all_ is because you're trying to reduce risk elsewhere on the project.
 - Therefore, the biggest [Payoff](../thinking/Glossary.md#payoff) is likely to be the one with the least [Attendant Risk](../thinking/Glossary.md#attendant-risk).
 - So, usually this is going to be the simplest thing.
 
@@ -130,11 +132,11 @@ So, "Do The Simplest Thing That Could Possibly Work" is really a helpful guideli
 
 So, here we've looked at Meeting Reality, which basically boils down to taking actions to manage risk and seeing how it turns out:
 
-- Each Action you take is a step on the Risk Landscape
+- Each Action you take is a step on the [Risk Landscape](../thinking/Glossary.md#risk-landscape).
 - Each Action exposes new [Hidden Risks](../thinking/Glossary.md#hidden-risk), changing your [Internal Model](../thinking/Glossary.md#Internal-Model).
-- Ideally, each action should reduce the overall [Attendant Risk](../thinking/Glossary.md#attendant-risk) on the project (that is, puts it in a better place on the [Risk Landscape](../thinking/Glossary.md#risk-landscape)
+- Ideally, each action should reduce the overall [Attendant Risk](../thinking/Glossary.md#attendant-risk) on the project (that is, puts it in a better place on the [Risk Landscape](../thinking/Glossary.md#risk-landscape).
 
-Could it be that _everything_ you do on a software project is risk management? <!-- tweet-end --> This is an idea explored in [the next section](Just-Risk.md).
+Could it be that _everything_ you do on a software project is risk management? <!-- tweet-end --> This is an idea explored next in [Just Risk](Just-Risk.md).
 
 
 
