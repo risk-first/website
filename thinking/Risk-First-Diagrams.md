@@ -39,7 +39,7 @@ Equally, we could have a risk that we wish to avoid, such as having nothing to e
 
 In _biological terms_ the items on the left of the diagram are the _stimulus_ part of the [Stimulus-Response Model](https://en.wikipedia.org/wiki/Stimulus–response_model).  They're the thing that makes us [Take Action](Glossary.md#taking-action) in the world.   
 
-There are [all kinds of risks](../risks/Risk-Landscape.md) we face in life, and we attach different value or _criticality_ to them.  Most people will want to take action against the worst risks they face in their lives, and maybe put up with some of the lesser ones.  Equally, we should also try and achieve our _most critical_ goals, and let the lesser ones slide (at least, from a rational standpoint). 
+There are [all kinds of risks](../risks/Risk-Landscape.md) we face in life and we attach different value or _criticality_ to them.  Most people will want to take action against the worst risks they face in their lives and maybe put up with some of the lesser ones.  Equally, we should also try and achieve our _most critical_ goals and let the lesser ones slide (at least, from a rational standpoint). 
 
 ## In The Middle
 
@@ -59,9 +59,13 @@ It's worth pointing out that sometimes _the cure is worse than the disease_.
 
 By [Taking Action](../thinking/Glossary.md#taking-action) you might end up in a worse predicament than you started.  For example, cutting your legs off _would definitely cure your in-growing toenail_.  We have to use our judgement to decide on the right course of action!
 
-So Risk-First diagrams represent a [balance of risk](../thinking/Glossary.md#balance-of-risk): whether or not you choose to take the action will depend on your evaluation of this balance.
+So Risk-First diagrams represent a [balance of risk](../thinking/Glossary.md#balance-of-risk): whether or not you choose to take the action will depend on your evaluation of this balance.  Are the things on the left worse or better than the things on the right?  
 
-As well as considering Risk First diagrams to be like the [Stimulus-Response Model](https://en.wikipedia.org/wiki/Stimulus–response_model), you could also think in terms of [functional programming](https://en.wikipedia.org/wiki/Functional_programming), which might be more familiar to us as software developers.  We are _tranforming_ an input condition into an _output_ condition by way of a function (the action we take).  
+## Functions
+
+As well as considering Risk First diagrams to be like the [Stimulus-Response Model](https://en.wikipedia.org/wiki/Stimulus–response_model), you could also think in terms of [functional programming](https://en.wikipedia.org/wiki/Functional_programming), which might be more familiar to us as software developers.  
+
+We are _tranforming_ an input condition (on the left) into an _output_ condition (on the right) by way of a function (the action we take, in the middle).  
 
 ## Containers For _Internal Models_
 
@@ -77,9 +81,7 @@ What does he do?  His [Action](../thinking/Glossary.md#taking-action) is to blam
 
 ![Mitigated and Hidden](../images/generated/introduction/hidden-mitigated.png)
 
-There are two other marks we use quite commonly.  
-
-We put the strike through the risk to show that it's been dealt with, or mitigated, and the cloud icon denotes [Hidden Risks](../thinking/Glossary.md#hidden-risk)- those _unknown unknowns_ that we couldn't have predicted in advance.
+The diagram above shows two other marks we use quite commonly:  we put a "strike" through a risk to show that it's been dealt with in some way and the "cloud" icon denotes [Hidden Risks](../thinking/Glossary.md#hidden-risk)- those _unknown unknowns_ that we couldn't have predicted in advance.
 
 # Next
 
