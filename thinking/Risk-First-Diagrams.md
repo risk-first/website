@@ -17,7 +17,7 @@ redirect_from:
 
 # Risk-First Diagrams Explained
 
-Throughout [A Simple Scenario](A-Simple-Scenario.md) and generally in Risk-First, we use Risk-First Diagrams to explain the choices we are making.  So let's dissect what is going on in these diagrams so that when we come to apply them to _software development_, they're not totally confusing.
+Throughout [A Simple Scenario](A-Simple-Scenario.md) we used diagrams to explain the risks we faced and the choices we were making.  These are called "Risk-First Diagrams".  Here, we're going to look at what is going on in these diagrams so that when we come to apply them to _software development_, they're not totally confusing.
 
 ![Goal In Mind and Attendant Risks](../images/generated/introduction/goal_in_mind.png)
 
