@@ -67,7 +67,7 @@ For example:
 
  - If we do a [Code Review](../practices/Review.md), we are partly trying to minimise the risks of bugs slipping through into production and also manage the [Key Person Risk](../risks/Scarcity-Risk.md#staff-risk) of knowledge not being widely-enough shared. 
  - If we write [Unit Tests](../practices/Testing.md), we’re addressing the risk of bugs going to production. We’re also mitigating against the risk of _regression_ and future changes breaking our existing functionality.   
- - If we enter into a [contract with a supplier](../practices/Contracts.md) then we are mitigating the risk of the supplier vanishing and leaving us exposed.  With the contract in place we have legal recourse against this risk.
+ - If we enter into a contract with a supplier then we are mitigating the risk of the supplier vanishing and leaving us exposed.  With the contract in place we have legal recourse against this risk.
 
 From the above examples, it's clear that **different tools are appropriate for managing different types of risks.**
 

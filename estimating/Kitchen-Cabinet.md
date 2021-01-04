@@ -354,7 +354,7 @@ If the supplier is short on opportunities or funds, there is a tendency to under
 
 You can often see suppliers under-bid on projects because of this future discounting, which we discussed before in [Evaluating Risk](../thinking/Evaluating-Risk.md#discounting).  
 
-This analysis also suggests something else:   the process of giving and accepting estimates _transfers risk_.  This is a key point which we'll return to [later](Control.md). 
+This analysis also suggests something else:   the process of giving and accepting estimates _transfers risk_.  This is a key point which we'll return to later. 
 
 ### Too-Late Risk
 
