@@ -15,7 +15,7 @@ redirect_from:
 
 # Just Risk
 
-In this section, I am going to propose the idea that everything you do on a software project is Risk Management.
+In this section, I am going to propose the idea that _everything_ productive you do on a software project is Risk Management.
 
 In the [Development Process](Development-Process.md) section, we observed that all the activities in a simple methodology had a part to play in exposing different risks.  They worked to manage risk prior to them creating bigger problems in production.
 
@@ -40,13 +40,13 @@ This is a completely made-up example, deliberately chosen to be hard to categori
 
 This _hints_ at the fact that at some level it's all about risk:
 
-## Every Action Attempts to Mitigate Risk
+## Every Action Attempts to Manage Risk
 
-The reason you are _taking_ an action is to mitigate a risk.  For example: 
+The reason you are _taking_ an action is to manage a risk.  For example: 
 
- - If you're coding up new features in the software, this is mitigating [Feature Risk](../risks/Feature-Risk.md) (which we'll explore in more detail later).  
- - If you're getting a business sign-off for something, this is mitigating the risk of everyone not agreeing on a course of action (a [Coordination Risk](../risks/Coordination-Risk.md)).  
- - If you're writing a specification, then that's mitigating the type of "Incorrect Implementation Risk" we saw in the last section. 
+ - If you're coding up new features in the software, this is managing [Feature Risk](../risks/Feature-Risk.md) (which we'll explore in more detail later).  
+ - If you're getting a business sign-off for something, this is managing the risk of everyone not agreeing on a course of action (a [Coordination Risk](../risks/Coordination-Risk.md)).  
+ - If you're writing a specification, then that's managing the type of "Incorrect Implementation Risk" we saw in [Development Process](Development-Process.md). 
 
 ## Every Action Has Attendant Risk
 
@@ -55,7 +55,7 @@ The reason you are _taking_ an action is to mitigate a risk.  For example:
 - Will it lead to yet more actions?
 - What [Hidden Risk](../thinking/Glossary.md#hidden-risk) will it uncover?
 
-Consider _coding a feature_ (as we did in the earlier [Development Process](Development-Process.md) section).  We saw here how the whole process of coding was an exercise in learning what we didn't know about the world, uncovering problems and improving our [Internal Model](../thinking/Glossary.md#Internal-Model).  That is, flushing out the [Attendant Risk](../thinking/Glossary.md#attendant-risk) of the [Goal In Mind](../thinking/Glossary.md#Goal-In-Mind).
+Consider _coding a feature_ (as we did in [Development Process](Development-Process.md)).  We saw here how the whole process of coding was an exercise in learning what we didn't know about the world, uncovering problems and improving our [Internal Model](../thinking/Glossary.md#Internal-Model).  That is, flushing out the [Attendant Risk](../thinking/Glossary.md#attendant-risk) of the [Goal In Mind](../thinking/Glossary.md#Goal-In-Mind).
 
 And, as we saw in the [Introduction](A-Simple-Scenario.md), even something _mundane_ like the Dinner Party had risks. 
 
