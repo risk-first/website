@@ -19,7 +19,7 @@ Here we look at how exposing your [Internal Model](../thinking/Glossary.md#Inter
 
 ## Revisiting the Model
 
-In [A Simple Scenario](A-Simple-Scenario.md), we looked at a basic model for how **Reality** and our [Internal Model](../thinking/Glossary.md#Internal-Model) interacted with each other:  we take action based on our [Internal Model](../thinking/Glossary.md#Internal-Model), hoping to **change Reality** with some positive outcome.
+In [A Simple Scenario](A-Simple-Scenario.md), we looked at a basic model for how **Reality** and our [Internal Model](../thinking/Glossary.md#Internal-Model) interacted with each other:  we [take action](../thinking/Glossary.md#taking-action) based on our [Internal Model](../thinking/Glossary.md#Internal-Model), hoping to **change Reality** with some positive outcome.
 
 And, in [Development Process](Development-Process.md) we looked at how we can meet with reality in _different forms_:  Analysis, Testing, Integration and so on. We saw how the model could work in each stage of a project.
 
