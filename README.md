@@ -27,4 +27,8 @@ The book aims to develop a _Pattern Language_ for understanding software risk, a
 
 ![Cover Image](https://riskfirst.org/images/Cover_Book_image.jpg)
 
+<!-- markdown-link-check-disable -->
+
 - [Print and Kindle Edition on Amazon](http://a.co/d/hmpmYl2)
+
+<!-- markdown-link-check-enable -->

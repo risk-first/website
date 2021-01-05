@@ -198,7 +198,11 @@ Why do things like this happen?  Often, the people involved are under incredible
 
 Under these circumstances, we often see _Pooh-Bear Procrastination_:
 
+<!-- markdown-link-check-disable -->
+
 > "Here is Edward Bear coming downstairs now, bump, bump, bump, on the back of his head, behind Christopher Robin. It is, as far as he knows, the only way of coming downstairs, but sometimes he feels that there really is another way…if only he could stop bumping for a moment and think of it!" - [A. A. Milne, _Winne-the-Pooh_](http://amzn.eu/d/acJ5a2j)
+
+<!-- markdown-link-check-enable -->
 
 ## Is This Scientific?
 

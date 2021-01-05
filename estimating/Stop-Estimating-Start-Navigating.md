@@ -18,8 +18,6 @@ This is the _eighth_ article in the [Risk-First](https://riskfirst.org) track on
 
 - In the first four articles, [Fill-The-Bucket](Fill-The-Bucket.md), [Kitchen Cabinet](Kitchen-Cabinet.md), [Journeys](Journeys.md) and [Fractals](Fractals.md) we looked at the various reasons why estimating is such a nightmare on software projects.  This is summarised in [Analogies](Analogies.md).  The upshot is that predictable, well understood, repeatable things can be estimated with some confidence.   However, as soon as software is predictable, repeatable and well-understood, _you're doing it wrong_.
 
-- Then, we looked at how [Contracts](../wip/Contracts.md) work, because they are a way of managing risks in the face of uncertain estimates and time-scales.  
-
 - In article seven, we explored how [Scrum](Fixing-Scrum.md), the popular Agile methodology, fails to understand this crucial problem with estimates (among other failings).
 
 - Then, in [Risk-First Analysis](Risk-First-Analysis.md) we look at how we can work out what to build by examining what [risks](../thinking/Glossary.md#risk) we'd like to address and which [goals](../thinking/Glossary.md#risk) or [Upside Risks](../thinking/Glossary.md#upside-risk) we'd like to see happen.  

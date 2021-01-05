@@ -109,4 +109,4 @@ If we consider a software system to be a sort of network, then hierarchy turns o
 
 You can look more at the importance of _hierarchies_ in the [On Complexity Track](../complexity/Start.md).
 
-However, if you're here to continue learning about _estimating_, it's time to look at [Contracts](Contracts.md).
+However, if you're here to continue learning about _estimating_, it's time to look at [Fixing Scrum](Fixing-Scrum.md).
