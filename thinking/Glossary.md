@@ -17,7 +17,7 @@ redirect_from:
 
 ### Abstraction
 
-The process of removing physical, spatial, or temporal details or attributes in the study of objects or systems in order to more closely attend to other details of interest.
+The process of removing physical, spatial, or temporal details or attributes in the study of objects or systems in order to more closely attend to other details of interest.  _See: [Complexity Risk](../risks/Complexity-Risk.md)_
 
 ### Agent
 
