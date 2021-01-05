@@ -36,7 +36,11 @@ Can you even get to the Goal without tackling the Anti-Goal too?
 
 The game [VVVVVV](https://en.wikipedia.org/wiki/VVVVVV)'s development was a case in point.  As Terry Cavanagh, the author, says:
 
+<!-- markdown-link-check-disable -->
+
 > "At the start of 2008 I’d taken out a loan for 15,000 euro, but that only lasted a bit over a year. I spent six months in 2009 on unemployment benefit. By November I was utterly broke – my credit card was maxed out, my bank account completely overdrawn – I was borrowing money from friends and family just to pay rent and make loan repayments. I eventually just ended up moving back in with my parents. Things were pretty bleak.  The only thing I really had going for me was VVVVVV ... I wanted to make something I could be proud of. " - [Terry Cavanagh, Distractionware.com](http://distractionware.com/blog/2011/01/stop-and-reflect/)
+ 
+<!-- markdown-link-check-enable --> 
  
 Terry _busted through_ the Anti-Goal, and eventually released VVVVVV to critical and commercial acclaim.  But how many other stories went the other way, of a project spiralling into the Anti-Goal and never coming out?   Terry's account is a great story of against-the-odds success - a clear case of [Survivorship Bias](https://en.wikipedia.org/wiki/Survivorship_bias) - _we only hear the success stories_.
 

@@ -66,7 +66,7 @@ Even if they don't worry about their jobs, sometimes they need ways to stave off
 
 ### Pet Projects
 
-> "A project, activity or goal pursued as a personal favourite, rather than because it is generally accepted as necessary or important."  - [Pet Project, _Wiktionary_](https://en.wiktionary.org/wiki/pet_project)
+> "A project, activity or goal pursued as a personal favourite, rather than because it is generally accepted as necessary or important."  - [Pet Project, _Wiktionary_](https://www.wordnik.com/words/pet%20project)
 
 Sometimes budget-holders have projects they value more than others without reference to the value placed on them by the business.  Perhaps the project has a goal that aligns closely with the budget holder's passions, or it's related to work they were previously responsible for.  
 

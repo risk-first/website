@@ -21,19 +21,19 @@ The process of removing physical, spatial, or temporal details or attributes in 
 
 ### Agent
 
-Agency is the capacity of an actor to act in a given environment.  We use the term _agent_ to refer to any process, person, system or organisation with agency. See: [Agency Risk](../risks/Agency-Risk.md)_
+Agency is the capacity of an actor to act in a given environment.  We use the term _agent_ to refer to any process, person, system or organisation with agency. _See: [Agency Risk](../risks/Agency-Risk.md)_
 
 ## Balance Of Risk
 
-The distribution of possible returns, given the set of risks you face from your position on the [Risk Landscape](#risk-landscape).  See: [The Purpose of The Development Team](../bets/Purpose-Development-Team.md) 
+The distribution of possible returns, given the set of risks you face from your position on the [Risk Landscape](#risk-landscape).  _See: [The Purpose of The Development Team](../bets/Purpose-Development-Team.md)_
 
 ### Feedback Loop
 
-The process of testing an [Internal Model](#internal-model), through [taking action](#taking-action) to [Meet Reality](#meet-reality).  Typically, we talk about short or long feedback loops, depending on the intervals between [Meeting Reality](#meet-reality).
+The process of testing an [Internal Model](#internal-model), through [taking action](#taking-action) to [Meet Reality](#meet-reality).  Typically, we talk about short or long feedback loops, depending on the intervals between [Meeting Reality](#meet-reality).  _See: [Meeting Reality](../thinking/Meeting-Reality.md)_
 
 ### Goal In Mind
 
-A picture of the future that an individual or team carries within their [Internal Model](#internal-model);  An imagined destination on the [Risk Landscape](#risk-landscape).  A specific [Upside Risk](#upside-risk) we'd like to nurture and realize.
+A picture of the future that an individual or team carries within their [Internal Model](#internal-model);  An imagined destination on the [Risk Landscape](#risk-landscape).  A specific [Upside Risk](#upside-risk) we'd like to nurture and realize. _See: [A Simple Scenario](../thinking/A-Simple-Scenario.md)_
 
 ### Internal Model
 
