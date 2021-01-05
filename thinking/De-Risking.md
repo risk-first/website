@@ -17,12 +17,12 @@ redirect_from:
 
 It's important not only to consider the [Attendant Risks](../thinking/Glossary.md#attendant-risk) you're trying to mitigate, but the ones you're likely to pick up in the process.  This means picking a careful path through the [Risk Landscape](../thinking/Glossary.md#risk-landscape).  This is the essence of _De-Risking_. 
 
-> "To take steps to make (something) less risky or less likely to involve a financial loss." - [De-Risk,_OxfordDictionaries.com_](https://en.oxforddictionaries.com/definition/de-risk)
+> "To take steps to make (something) less risky or less likely to involve a financial loss." - [De-Risk, _OxfordDictionaries.com_](https://en.oxforddictionaries.com/definition/de-risk)
 
 Some simple examples of this might be:
 
 - **Safety-nets and ropes** de-risk climbing.  But, the activity of climbing itself is otherwise much unchanged.
-- **Backups and Source-Control** de-risk the development process by reducing the impact of computer failure.  Our process is changed _slightly_ by this imposition, but we're not massively inconvenienced.
+- **Backups and Source-Control** de-risk the development process by reducing the impact of computer failure.  Our process is changed _slightly_ by this imposition but we're not massively inconvenienced.
 - **Insurance** de-risks owning a house, going on holiday or driving a car.  Usually, the payment is small enough not to impact us too much.
 - **The National Health Service (NHS)** de-risks medical expense by pooling health-care costs across the entire population.  If you were struck down with a debilitating illness, then at least you wouldn't also have to pay to get better. 
 
@@ -60,9 +60,10 @@ Whereas **Accepting** a risk seems to imply an eyes-wide-open examination; **Ign
 
 ### A Nice Problem To Have
 
-**Ignoring** or **Accepting** risks is a lot less work than **Mitigating** them, and sometimes it can feel negligent to just add them to the backlog or risk-register without doing anything immediately about them.  One useful test I have found is whether "This would be a nice problem to have".  For example:
+**Ignoring** or **Accepting** risks is a lot less work than **Mitigating** them, so sometimes it can feel negligent to just add them to the backlog or risk-register without doing anything immediately about them.  One useful test I have found is whether "This would be a nice problem to have".  For example:
 
 > "Running out of space in the database would be a nice problem to have, because it would mean we have lots of users"
+
 > "Users complaining about lacking function X would be a nice problem to have, because it would mean they were using the system"
 
 Applying this kind of logic at the start of a project leads you towards building a [Minimum Viable Product](https://en.wikipedia.org/wiki/Minimum_viable_product).
@@ -85,7 +86,7 @@ In the section on [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk) we ar
 
 **Exploiting** as a strategy usually means taking advantage of the upside of a risk.   For example, ensuring enough stock is available to mitigate the risk of a rush on sales over the Christmas period, or ensuring your website has enough bandwidth to capture all the traffic headed towards it after it's featured on television.  
 
-Going back to the example of home insurance, the Insurance company is **exploiting** the risk of my house burning down by selling me insurance.  This is a common pattern:  wherever there is risk, there is likely to be a way to profit from it.  
+Going back to the example of home insurance, the insurance company is **exploiting** the risk of my house burning down by selling me insurance.  This is a common pattern:  wherever there is risk, there is likely to be a way to profit from it.  
 
 Later, in the section on [Process Risk](../risks/Process-Risk.md) we'll be looking at how **exploiting risk** can happen organically within a company. 
 
