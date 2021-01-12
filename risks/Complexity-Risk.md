@@ -15,11 +15,11 @@ redirect_from:
 
 # Complexity Risk
 
-[Complexity Risk](Complexity-Risk.md) is the [risk](../thinking/Glossary.md#risk) to your project due to its underlying "complexity". <!-- tweet-end --> This section will break down exactly what we mean by complexity, and where it can hide on a software project, and look at some ways in which we can manage this important risk.
+[Complexity Risk](Complexity-Risk.md) is the [risk](../thinking/Glossary.md#risk) to your project due to its underlying "complexity". <!-- tweet-end --> This section will break down exactly what we mean by complexity, where it can hide on a software project and look at some ways in which we can manage this important risk.
 
 ## Codebase Risk
 
-We're going to start by looking at _code you write_: the size of your code-base, the amount of code, the number of modules, the interconnectedness of the modules and how well-factored the code is.  
+We're going to start by looking at _code you write_: the size of your codebase, the amount of code, the number of modules, the interconnectedness of the modules and how well-factored the code is.  
 
 ![Complexity Risk and Codebase Risk](../images/generated/risks/complexity/complexity-risk.png)
 
@@ -153,15 +153,15 @@ In the graph above, I've arranged it as a hierarchy which I can do trivially now
   edges = vertices - 1
 ```
 
-Note that I could pick any hierarchy here:  I don't have to start at **c** (although it has the nice property that it has two roughly even sub-trees attached to it).
+Note that I could pick any hierarchy here:  I don't have to start at **c** (although it has the nice property that it has two roughly equally-sized sub-trees attached to it).
 
-How does this help us?   Imagine if **a** - **j** were modules of a software system, and the edges of the graph showed communications between the different sub-systems.  In the first graph, we're in a worse position:  
+How does this help us?   Imagine if **a** - **j** were modules of a software system and the edges of the graph showed communications between the different sub-systems.  In the first graph, we're in a worse position:  
 
  - Who's in charge?  What deals with what?  
  - Can I isolate a component and change it safely?  
  - What happens if one component disappears?  
  
-But, in the second graph, it's easier to reason about, because of the reduced number of connections and the new hierarchy of organisation.  
+The second graph is easier to reason about because of the reduced number of connections and the new hierarchy of organisation.  
 
 On the down-side, perhaps our messages have farther to go now:  in the original, **i** could send a message straight to **j**, but now we have to go all the way via **c**.   But this is the basis of [Modularisation](https://en.wikipedia.org/wiki/Modular_programming) and [Hierarchy](https://en.wikipedia.org/wiki/Hierarchy).
 
@@ -190,7 +190,7 @@ But there is actually some underlying sense in which this is true in the real, p
 
 > "Most of your mass you owe due to <!--replace $E=mc^2$ -->E=mc²<!--endreplace -->, you owe to the fact that your mass is packed with energy because of the **interactions** between these quarks and gluon fluctuations in the gluon field... what we think of as ordinarily empty space... that turns out to be the thing that gives us most of our mass." - [Your Mass is NOT From the Higgs Boson, _Veritasium_](https://www.youtube.com/watch?annotation_id=annotation_3771848421&feature=iv&src_vid=Xo232kyTsO0&v=Ztc6QPNUqls)
 
-I'm not an expert in physics _at all_, and so there is every chance that I am pushing this analogy too hard.  But, by substituting quarks and gluons for pieces of software we can (in a very handwaving-y way) say that more connected software has more **interactions** going on, and therefore has more mass than simple software. 
+I'm not an expert in physics _at all_ so there is every chance that I am pushing this analogy too hard.  But, by substituting quarks and gluons for pieces of software we can (in a very handwaving-y way) say that more connected software has more **interactions** going on, and therefore has more mass than simple software. 
 
 If we want to move _fast_ we need simple codebases. <!-- tweet-end -->
 
@@ -282,12 +282,7 @@ There is a whole branch of complexity theory devoted to how the software _runs_,
 
 Once running, an algorithm or data structure will consume space or runtime dependent on its performance characteristics, which may well have an impact on the [Operational Risk](Operational-Risk.md) of the software.  Using off-the-shelf data structures and algorithms helps, but you still need to know their performance characteristics. 
 
-<!-- markdown-link-check-disable -->
-
 The [Big O Cheat Sheet](http://bigocheatsheet.com) is a wonderful resource to investigate this further.  
-
-<!-- markdown-link-check-enable -->
-
 
 ### Memory Management
 
@@ -325,7 +320,7 @@ In the case of security considerations, exploits _thrive_ on the complexity of y
 
 Luckily, most good languages include cryptographic libraries that you can include to mitigate these [Complexity Risks](Complexity-Risk.md) from your own code-base.  
 
-This is a strong argument for the use of libraries.  But when should you use a library and when should you code-your-own?  This is again covered in the section on [Software Dependency Risk](Software-Dependency-Risk.md).  
+This is a strong argument for the use of libraries.  But when should you use a library and when should you code-your-own?  This is covered further in the section on [Software Dependency Risk](Software-Dependency-Risk.md).  
 
 ### The Environment
 
