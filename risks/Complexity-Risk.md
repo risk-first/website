@@ -282,7 +282,7 @@ There is a whole branch of complexity theory devoted to how the software _runs_,
 
 Once running, an algorithm or data structure will consume space or runtime dependent on its performance characteristics, which may well have an impact on the [Operational Risk](Operational-Risk.md) of the software.  Using off-the-shelf data structures and algorithms helps, but you still need to know their performance characteristics. 
 
-The [Big O Cheat Sheet](http://bigocheatsheet.com) is a wonderful resource to investigate this further.  
+The [Big O Cheat Sheet](https://bigocheatsheet.com) is a wonderful resource to investigate this further.  
 
 ### Memory Management
 
