@@ -20,7 +20,7 @@ redirect_from:
 
 > "We are now in the “post-Agile” age.” - [Alistair Cockburn, _Heart of Agile_](https://heartofagile.com/post-agile-thoughts/)
 
-It's been a while since the [Agile Manifesto](http://agilemanifesto.org) was signed in 2001.  
+It's been a while since the [Agile Manifesto](https://agilemanifesto.org) was signed in 2001.  
 
 In that time, software development has seen the principles and values it contains go from being niche and hard-to-sell to completely main-stream.  
 
@@ -57,14 +57,14 @@ But Agile is now so main-stream that project managers and business analysts ever
 
 Jonathan Kohl blogs about this too:
 
-> "I have also seen people on Agile teams get marginalized because they aren’t Agile enough... I have seen people be pushed out of projects because they 'didn’t get Agile'. I have seen good solutions turned away because they weren’t in the white book (Extreme Programming Explained). I’ve also seen reckless, unthinking behavior justified because it was 'Agile'." - [Jonathan Kohl, Post Agilism Process Skepticism](http://www.kohl.ca/2006/post-agilism-process-skepticism/)
+> "I have also seen people on Agile teams get marginalized because they aren’t Agile enough... I have seen people be pushed out of projects because they 'didn’t get Agile'. I have seen good solutions turned away because they weren’t in the white book (Extreme Programming Explained). I’ve also seen reckless, unthinking behavior justified because it was 'Agile'." - [Jonathan Kohl, Post Agilism Process Skepticism](https://www.kohl.ca/2006/post-agilism-process-skepticism/)
 
 This is [Enforced Cargo Culting](https://en.wikipedia.org/wiki/Cargo_cult_programming#Cargo_cult_software_engineering) of Agile:  making people adopt Agile whether they want to or not.  Forcing people to adopt certain approaches is a sure-fire way to invite failure.  
 
 
 ## Criticism 3: Proscriptive Norms
 
-If you were in the business of selling [Scrum](https://www.scrum.org) or [XP](http://www.extremeprogramming.org) or another popular Agile approach, one thing you would worry about is _dilution of the concept_.  When people complain that "Scrum doesn't work" is that because they _genuinely_ found it didn't work, or because _actually they weren't doing it properly_?
+If you were in the business of selling [Scrum](https://www.scrum.org) or [XP](https://www.extremeprogramming.org) or another popular Agile approach, one thing you would worry about is _dilution of the concept_.  When people complain that "Scrum doesn't work" is that because they _genuinely_ found it didn't work, or because _actually they weren't doing it properly_?
 
 Certification ameliorates this problem, while also allowing a lot of money to be made along the way.  Tom Cagley makes this point:
 

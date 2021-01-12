@@ -21,7 +21,7 @@ But joining up IS's is important.  Let's summarise four of the big themes (with 
 
 - **[UIPath](https://www.uipath.com) _(et al)_**:  this is a product that allows you to automate the use of a Windows desktop or web-page, and is closest to the Wikipedia definition of RPA:  You record a macro of yourself using the application, and then you can script it to run on events, or whatever.  If you've ever tried to build tests with [Selenium](https://en.wikipedia.org/wiki/Selenium_(software)), you're probably aware that this can be awkward, brittle and time-consuming.   Nevertheless, UIPath is creating _a lot_ of value:  people need to be able to do this stuff, and they are the poster-child for RPA at the moment.
 
-- **[Apache Camel](http://camel.apache.org), [Microsoft Power Automate](https://us.flow.microsoft.com/en-us/) and [Mule](https://www.mulesoft.com)**.  The idea of all of these things is to provide lots of _connectors_.  A connector standardises the data-feed to a wide variety of disparate systems.   If you want to send a tweet on Twitter every time you receive an email, for example, these tools allow you to do this.  However, their main use-case is to hook together IS's, so that they can process event streams from one place to another.   This is a more often known as [Business Process Automation](https://en.wikipedia.org/wiki/Business_process_automation). 
+- **[Apache Camel](https://camel.apache.org), [Microsoft Power Automate](https://us.flow.microsoft.com/en-us/) and [Mule](https://www.mulesoft.com)**.  The idea of all of these things is to provide lots of _connectors_.  A connector standardises the data-feed to a wide variety of disparate systems.   If you want to send a tweet on Twitter every time you receive an email, for example, these tools allow you to do this.  However, their main use-case is to hook together IS's, so that they can process event streams from one place to another.   This is a more often known as [Business Process Automation](https://en.wikipedia.org/wiki/Business_process_automation). 
 
 - **[Microsoft Teams](https://products.office.com/en-US/microsoft-teams/group-chat-software), [Symphony](https://symphony.com), [Slack](https://slack.com)**:  These are enterprise chat-platforms (think: "WhatsApp for banks"). They allow teams of people to set up their own rooms, manage membership and so on.  However, they also allow for "bots" to be written, which _act as users_ within those rooms.  You can get the bot to tell you if a build breaks, or ask the bot to raise a change request ticket, that kind of thing.
 
@@ -66,7 +66,7 @@ Chat platforms do something similar, because they provide:
 
 ### Stage 4:  It's a Database
 
-Since chat history is maintained for _forever_, you can use it like a write-only database (and there are those, [Datomic](http://datomic.com) being the most interesting to me).  You can _index_ the content in the chat-system too because they generally contain features like `@mentions` and `#hashtags`, and you can look up all the messages with a given `@mention` or `#hashtag`.  What else do you really need?
+Since chat history is maintained for _forever_, you can use it like a write-only database (and there are those, [Datomic](https://datomic.com) being the most interesting to me).  You can _index_ the content in the chat-system too because they generally contain features like `@mentions` and `#hashtags`, and you can look up all the messages with a given `@mention` or `#hashtag`.  What else do you really need?
 
 ### Stage 5:  It's The Ultimate Feed System
 

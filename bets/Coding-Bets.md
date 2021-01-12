@@ -50,7 +50,7 @@ It looks like this:
 
 ##### "This new technology is a better fit for our problem than the one we're currently using."
 
-> "Sometimes a user story is generated that cannot be well estimated until the development team does some actual work to resolve a technical question or a design problem. The solution is to create a 'spike,' which is some work whose purpose is to provide the answer or solution. " - [Spike Solution, _Agile Dictionary_](http://agiledictionary.com/209/spike/) 
+> "Sometimes a user story is generated that cannot be well estimated until the development team does some actual work to resolve a technical question or a design problem. The solution is to create a 'spike,' which is some work whose purpose is to provide the answer or solution. " - [Spike Solution, _Agile Dictionary_](https://agiledictionary.com/209/spike/) 
 
 You might want to use a Spike Solution to test out replacing a badly-fitting technology for a more appropriate one.  That is, addressing [Software Dependency](../risks/Software-Dependency-Risk.md) problems.  For example:
 

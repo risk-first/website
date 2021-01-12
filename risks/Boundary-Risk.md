@@ -61,7 +61,7 @@ The degree of [Boundary Risk](Boundary-Risk.md) is dependent on a number of fact
  - **The level of [Lock In](#ecosystems-and-lock-in)**, where the cost of switching to a new dependency in the future is some function of the level of commitment to the current dependency.  As an example, consider the level of commitment you have to your mother tongue.  If you have spent your entire life committed to learning and communicating in English, there is a massive level of lock-in.  Overcoming this to become fluent in Chinese may be an overwhelming task.
  - **Future needs**: will the dependency satisfy your expanding requirements going forward? (_cf._ [Feature Drift Risk](Feature-Risk.md#feature-drift-risk))
  - **Ownership changes:**  Microsoft buys [GitHub](https://en.wikipedia.org/wiki/GitHub).  What will happen to the ecosystem around GitHub now?
- - **Licensing changes:**  (e.g. [Oracle](http://oracle.com) buys Tangosol who make [Coherence](https://en.wikipedia.org/wiki/Oracle_Coherence) for example).  Having done this, they increase the licensing costs of Coherence to huge levels, milking the [Cash Cow](https://en.wikipedia.org/wiki/Cash_cow) of the installed user-base, but ensuring no-one else is likely to commit to it in the future.
+ - **Licensing changes:**  (e.g. [Oracle](https://oracle.com) buys Tangosol who make [Coherence](https://en.wikipedia.org/wiki/Oracle_Coherence) for example).  Having done this, they increase the licensing costs of Coherence to huge levels, milking the [Cash Cow](https://en.wikipedia.org/wiki/Cash_cow) of the installed user-base, but ensuring no-one else is likely to commit to it in the future.
   
 ## Ecosystems and Lock-In
 

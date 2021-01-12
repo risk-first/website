@@ -28,7 +28,7 @@ But it's often useful to enumerate exactly what you _don't_ want to happen, that
 
 Let's say it is my dream to launch a SaaS business.  Startup culture would have you believe that the thing to do is to then pursue this goal with every sinew until it is achieved.   
 
-But there are [plenty](https://www.tintup.com/blog/take-break-startup-guide-avoiding-burnout/) of [stories](https://mattermark.com/startup-burnout/) about [burnout](http://www.startupburnout.com), and you don't want to end up there.  Being burnt-out, having invested five years of your life and all of your savings is an Anti-Goal.
+But there are [plenty](https://www.tintup.com/blog/take-break-startup-guide-avoiding-burnout/) of [stories](https://mattermark.com/startup-burnout/) about [burnout](https://www.startupburnout.com), and you don't want to end up there.  Being burnt-out, having invested five years of your life and all of your savings is an Anti-Goal.
 
 Can you even get to the Goal without tackling the Anti-Goal too?
 
@@ -38,7 +38,7 @@ The game [VVVVVV](https://en.wikipedia.org/wiki/VVVVVV)'s development was a case
 
 <!-- markdown-link-check-disable -->
 
-> "At the start of 2008 I’d taken out a loan for 15,000 euro, but that only lasted a bit over a year. I spent six months in 2009 on unemployment benefit. By November I was utterly broke – my credit card was maxed out, my bank account completely overdrawn – I was borrowing money from friends and family just to pay rent and make loan repayments. I eventually just ended up moving back in with my parents. Things were pretty bleak.  The only thing I really had going for me was VVVVVV ... I wanted to make something I could be proud of. " - [Terry Cavanagh, Distractionware.com](http://distractionware.com/blog/2011/01/stop-and-reflect/)
+> "At the start of 2008 I’d taken out a loan for 15,000 euro, but that only lasted a bit over a year. I spent six months in 2009 on unemployment benefit. By November I was utterly broke – my credit card was maxed out, my bank account completely overdrawn – I was borrowing money from friends and family just to pay rent and make loan repayments. I eventually just ended up moving back in with my parents. Things were pretty bleak.  The only thing I really had going for me was VVVVVV ... I wanted to make something I could be proud of. " - [Terry Cavanagh, Distractionware.com](https://distractionware.com/blog/2011/01/stop-and-reflect/)
  
 <!-- markdown-link-check-enable --> 
  

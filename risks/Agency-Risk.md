@@ -39,7 +39,7 @@ People taking time off, going to funerals, looking after sick relatives and so o
 
 ### The Hero
 
-> "The one who stays later than the others is a hero. " - [Hero Culture, _Ward's Wiki_](http://wiki.c2.com/?HeroCulture)
+> "The one who stays later than the others is a hero. " - [Hero Culture, _Ward's Wiki_](https://wiki.c2.com/?HeroCulture)
 
 Heroes put in more hours and try to rescue projects single-handedly, often cutting corners like team communication and process in order to get there.   
 
@@ -148,7 +148,7 @@ As we stated at the beginning, [Agency Risk](Agency-Risk.md) at any level comes 
 
 So, if you can _align the goals_ of the agents involved, you can mitigate [Agency Risk](Agency-Risk.md).  Nassim Nicholas Taleb calls this "skin in the game": that is, the agent is exposed to the same risks as the principal.
 
-> "Which brings us to the largest fragilizer of society, and greatest generator of crises, absence of 'skin in the game.' Some become antifragile at the expense of others by getting the upside (or gains) from volatility, variations, and disorder and exposing others to the downside risks of losses or harm." - [Nassim Nicholas Taleb, _Antifragile_](http://a.co/d/07LfBTI)
+> "Which brings us to the largest fragilizer of society, and greatest generator of crises, absence of 'skin in the game.' Some become antifragile at the expense of others by getting the upside (or gains) from volatility, variations, and disorder and exposing others to the downside risks of losses or harm." - [Nassim Nicholas Taleb, _Antifragile_](https://a.co/d/07LfBTI)
 
 This kind of financial exposure isn't very common on software projects.  [Fixed Price Contracts](../thinking/One-Size-Fits-No-One.md#waterfall) and [Employee Stock Options](https://en.wikipedia.org/wiki/Employee_stock_option) are two exceptions.  But  David McClelland's Needs Theory suggests that there are other kinds of skin-in-the-game: the intrinsic interest in the work being done, or extrinsic factors such as the recognition, achievement, or personal growth derived from it.   
 

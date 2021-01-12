@@ -125,7 +125,7 @@ This is why projects will _always_ take at least as long as is budgeted for them
 
 ### A Case Study
 
-Let's look at a quick example of this in action, taken from [Rapid Development by Steve McConnell](http://amzn.eu/d/eTWKOsK).  At the point of this excerpt, Carl (the Project Manager) is discussing the schedule with Bill, the project sponsor: 
+Let's look at a quick example of this in action, taken from [Rapid Development by Steve McConnell](https://amzn.eu/d/eTWKOsK).  At the point of this excerpt, Carl (the Project Manager) is discussing the schedule with Bill, the project sponsor: 
 
 > "I think it will take about 9 months, but that's just a rough estimate at this point," Carl said. "That's not going to work," Bill said. "I was hoping you'd say 3 or 4 months. We absolutely need to bring that system in within 6 months. Can you do it in 6?"   `(1)`
 
@@ -145,7 +145,7 @@ At point `(3)` in McConnell's Case Study, the schedule has slipped again and Bil
 
 However, forcing staff to do overtime is a dangerous ploy:  it could disenfranchise the staff, or cause corners to be cut, as shown in the diagram above.
 
-> Carl felt his blood pressure rise, especially since Bill had backed him into an unrealistic schedule in the first place. But he knew that with four schedule slips under his belt, he had no credibility left. He felt that he had to knuckle under to the mandatory overtime or he would lose his job. Carl told his team about the meeting. They worked hard and managed to deliver the software in just over 13 months. Additional implementation uncovered additional design flaws, but with everyone working 60 hours a week, they delivered the product through sweat and sheer willpower. " `(4)` - [McConnell, Steve, _Rapid Development_](http://amzn.eu/d/eTWKOsK)
+> Carl felt his blood pressure rise, especially since Bill had backed him into an unrealistic schedule in the first place. But he knew that with four schedule slips under his belt, he had no credibility left. He felt that he had to knuckle under to the mandatory overtime or he would lose his job. Carl told his team about the meeting. They worked hard and managed to deliver the software in just over 13 months. Additional implementation uncovered additional design flaws, but with everyone working 60 hours a week, they delivered the product through sweat and sheer willpower. " `(4)` - [McConnell, Steve, _Rapid Development_](https://amzn.eu/d/eTWKOsK)
 
 At point `(4)`, we see that Bill's gamble worked (for him at least):  the project was delivered by the team working overtime for two months.  This was lucky - it seems unlikely that no-one quit and that the code didn't descend into a mess in that time.  
 

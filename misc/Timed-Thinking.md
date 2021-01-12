@@ -20,7 +20,7 @@ This isn’t a normal [Risk-First](https://riskfirst.org) article, but I wanted 
 
 I want to discuss a method which I’m going to call “Timed Thinking” (really just the first term that came into my head) an approach I’ve used over the last few years along with regular journal-keeping and creating to-do lists to organise my thoughts and my time.  I find it especially useful in times of anxiety or indecision, or when trying to prune design-space for some software I want to build.
 
-Now, this may well be obvious to a lot of people already, a critiscm you could level at much of the content on [Risk-First](https://riskfirst.org).  There's no huge innovation or insight here, but after a bit of searching, I couldn't find documentation on anything like this.  (Aside:  [MindTools.com](https://www.mindtools.com) seems to be a fairly exhaustive list of tools-for-thinking).  So if people can get excited about something as mundane as [Getting Things Done (GTD)](http://gettingthingsdone.com) then perhaps people can find value in this.
+Now, this may well be obvious to a lot of people already, a critiscm you could level at much of the content on [Risk-First](https://riskfirst.org).  There's no huge innovation or insight here, but after a bit of searching, I couldn't find documentation on anything like this.  (Aside:  [MindTools.com](https://www.mindtools.com) seems to be a fairly exhaustive list of tools-for-thinking).  So if people can get excited about something as mundane as [Getting Things Done (GTD)](https://gettingthingsdone.com) then perhaps people can find value in this.
 
 ## How To Do Timed Thinking
 

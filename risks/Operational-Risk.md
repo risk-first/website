@@ -57,7 +57,7 @@ If we are designing a software system to "live" in the real world we have to be 
 
 ![Model of Operations Management, adapted from Slack _et al._](../images/generated/risks/operational/slack.png)
 
-The diagram above is a Risk-First interpretation of [Slack _et al_'s model of Operations Management](http://amzn.eu/d/b6ZjuMu).  This model breaks down some of the key abstractions of the discipline: 
+The diagram above is a Risk-First interpretation of [Slack _et al_'s model of Operations Management](https://amzn.eu/d/b6ZjuMu).  This model breaks down some of the key abstractions of the discipline: 
 
  - **A Transform Process** (the **Operation** itself), which tries to achieve an...
  - **Operational Strategy** (the objectives of the operation) and is embedded in the wider...

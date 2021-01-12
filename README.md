@@ -29,6 +29,6 @@ The book aims to develop a _Pattern Language_ for understanding software risk, a
 
 <!-- markdown-link-check-disable -->
 
-- [Print and Kindle Edition on Amazon](http://a.co/d/hmpmYl2)
+- [Print and Kindle Edition on Amazon](https://a.co/d/hmpmYl2)
 
 <!-- markdown-link-check-enable -->
