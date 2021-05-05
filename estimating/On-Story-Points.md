@@ -1,11 +1,11 @@
 ---
 title: On Story Points
-description: Part of the 'Estimating' Risk-First Track, looking at how to work without estimates.
+description: Part of the 'Estimating' Risk-First Track, about improving estimates using risk checklists.
 url: https://riskfirst.org/estimating/On-Story-Points
 
 featured: 
   class: bg1
-  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/1up.svg">On Story Points</image-artifact>'
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/box-size.svg">On Story Points</image-artifact>'
 categories:
 order: 8
 ---
@@ -24,7 +24,7 @@ So, let's look at Story Points as an _estimation tool_, and see how it stacks up
 
 ## Inputs
 
-![Story Point Diagram]()
+![Story Point Diagram](/images/generated/estimating/story-points.png)
 
 At a basic level, to calculate the number of story points for an item of work, you need the following inputs:
 
