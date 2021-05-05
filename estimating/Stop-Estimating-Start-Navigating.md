@@ -7,14 +7,14 @@ featured:
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/logo/R1_logo_black.svg">Risk-First Analysis</image-artifact>'
 categories:
-order: 8
+order: 9
 ---
 
 ![Under Construction](../images/state/uc.png)
 
 # Stop Estimating, Start Navigating
 
-This is the _eighth_ article in the [Risk-First](https://riskfirst.org) track on [Estimating](Start.md).  We've come a long way:
+This is the _ninth_ article in the [Risk-First](https://riskfirst.org) track on [Estimating](Start.md).  We've come a long way:
 
 - In the first four articles, [Fill-The-Bucket](Fill-The-Bucket.md), [Kitchen Cabinet](Kitchen-Cabinet.md), [Journeys](Journeys.md) and [Fractals](Fractals.md) we looked at the various reasons why estimating is such a nightmare on software projects.  This is summarised in [Analogies](Analogies.md).  The upshot is that predictable, well understood, repeatable things can be estimated with some confidence.   However, as soon as software is predictable, repeatable and well-understood, _you're doing it wrong_.
 

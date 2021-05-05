@@ -33,7 +33,7 @@ Some points about this description:
 
 Remember back to the Dinner Party example at the start: the Risk Register happened *entirely in your head*.  There is a continuum all the way from "in your head" through "using a spreadsheet" to dedicated Risk Management software.    
 
-It's also going to be useful _in conversation_, and this is where the value of the Risk-First approach is: providing a vocabulary to _talk about risks_ with your team.  
+It's also going to be useful _in conversation_ and this is where the value of the Risk-First approach is: providing a vocabulary to _talk about risks_ with your team.  
 
 ### Probability And Impact
 
@@ -47,7 +47,7 @@ In a financial context (or a gambling one), we can consider the overall **Risk S
 |Win            |+ 99 EUR       |1 in 200          |.5 EUR        |
 |Lose           |-  1 EUR       |199 in 200        |-.99 EUR      |
 
-Risk Management in the finance industry _starts_ here and gets more complex.  But often (especially on a software project), it's better to skip all this, and just figure out a Risk Score.  This is because if you think about "impact", it implies a definite, discrete event occurring (or not occurring) and asks you then to consider the probability of that. 
+Risk Management in the finance industry _starts_ here and gets more complex.  But often (especially on a software project), it's better to skip all this and just figure out a Risk Score.  This is because if you think about "impact", it implies a definite, discrete event occurring (or not occurring) and asks you then to consider the probability of that. 
 
 Risk-First takes a view that risks are a continuous quantity, more like _money_ or _water_:  by taking an action before delivering a project you might add a degree of [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk), but decrease the [Operational Risk](../risks/Operational-Risk.md) later on by a greater amount.   
 
@@ -57,7 +57,7 @@ Risk-First takes a view that risks are a continuous quantity, more like _money_ 
 
 A risk matrix presents a graphical view on where risks exist.  The diagram above is an example, showing the risks from the dinner party in the [A Simple Scenario](A-Simple-Scenario.md) section:
 
-This type of graphic is _helpful_ in deciding what to do next, although alternatively, you can graph the overall **Risk Score** against the [Payoff](../thinking/Glossary.md#payoff).  Easily mitigated risk (on the right), and worse risks (at the top) can therefore be dealt with first (hopefully).
+This type of graphic is _helpful_ in deciding what to do next, although alternatively, you can graph the overall **Risk Score** against the [Payoff](../thinking/Glossary.md#payoff).  Easily mitigated risk (on the right) and worse risks (at the top) can therefore be dealt with first (hopefully).
 
 ![Risk Register of Dinner Party Risks, Considering Payoff](../images/generated/introduction/risk_matrix_2.png)
 
@@ -78,7 +78,7 @@ Donald Rumsfeld's famous [Known Knowns](https://en.wikipedia.org/wiki/There_are_
 
 Arguably, Risk-First uses the term 'Risk' wrongly:  most literature suggests [risk can be measured](https://keydifferences.com/difference-between-risk-and-uncertainty.html) whereas uncertainty represents things that cannot.  
 
-I am using **risk** everywhere because later we will talk about specific risks (e.g. [Boundary Risk](../risks/Boundary-Risk.md) or [Complexity Risk](../risks/Complexity-Risk.md)), and it doesn't feel grammatically correct to talk about those as **uncertainties**, especially given the pre-existing usage in Banking of terms like [Operational Risk](https://en.wikipedia.org/wiki/Operational_risk) or [Reputational risk](https://www.investopedia.com/terms/r/reputational-risk.asp) which are also not really a-priori measurable.
+I am using **risk** everywhere because later we will talk about specific risks (e.g. [Boundary Risk](../risks/Boundary-Risk.md) or [Complexity Risk](../risks/Complexity-Risk.md)) and it doesn't feel grammatically correct to talk about those as **uncertainties**, especially given the pre-existing usage in Banking of terms like [Operational Risk](https://en.wikipedia.org/wiki/Operational_risk) or [Reputational risk](https://www.investopedia.com/terms/r/reputational-risk.asp) which are also not really a-priori measurable.
 
 ## The Opposite Of Risk Management
 
@@ -98,7 +98,7 @@ Yes, it's fine to say "we're in crisis", but to assume there is a different stra
 
 ## Invariances #1: Panic Invariance
 
-You would expect that any methods for managing software delivery should be _invariant_ to the degree of crisis in the project.  If, for example, a project proceeds using [Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development)) for eight months, and then the deadline looms and everyone agrees to throw Scrum out of the window and start hacking, then _this implies there is a problem with Scrum_, and that it is not **Panic Invariant**.  In fact, many tools like Scrum don't consider this:
+You would expect that any methods for managing software delivery should be _invariant_ to the degree of crisis in the project.  If, for example, a project proceeds using [Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development)) for eight months and then the deadline looms and everyone agrees to throw Scrum out of the window and start hacking, then _this implies there is a problem with Scrum_ and that it is not **Panic Invariant**.  In fact, many tools like Scrum don't consider this:
 
 - If there is a production outage during the working week, we don't wait for the next Scrum Sprint to fix it.
 - Although a 40-hour work-week _is a great idea_, this goes out of the window if the databases all crash on a Saturday morning.
@@ -119,7 +119,7 @@ Ideally, a methodology should be applicable at _any_ scale too:
  - A department.
  - An entire organisation.
 
-In practice, however, we usually find methodologies are tuned for certain scales.  For example, [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) is designed for small, co-located teams.  And, that's useful.  But the fact it doesn't scale tells us something about it:  chiefly, that it considers certain _kinds_ of risk, while ignoring others.  At small scales that works ok, but at larger scales other risks (such as team [Coordination Risk](../risks/Coordination-Risk.md)) increase too fast for it to work.
+In practice, however, we usually find methodologies are tuned for certain scales.  For example, [Extreme Programming (XP)](https://en.wikipedia.org/wiki/Extreme_programming) is designed for small, co-located teams and that's useful.  But the fact it doesn't scale tells us something about it:  chiefly, that it considers certain _kinds_ of risk, while ignoring others.  At small scales XP works ok, but at larger scales other risks (such as team [Coordination Risk](../risks/Coordination-Risk.md)) increase too fast for it to work.
 
 If the methodology _fails at a particular scale_ this tells you something about the risks that the methodology isn't addressing.    One of the things Risk-First explores is trying to place methodologies and practices within a framework to say _when_ they are applicable.
 
@@ -137,7 +137,7 @@ If the methodology _fails at a particular scale_ this tells you something about 
 
 ![Pillars, From Rapid Development By Steve McConnell](../images/generated/introduction/pillars_smc.png)  
 
-The diagram above reproduces a figure from [Rapid Development](http://a.co/d/ddWGTB2) by Steve McConnell.  This is _fine_: McConnell is structuring the process from the perspective of _delivering as quickly as possible_.  However, here, I want to turn this on its head.  Software Development from a risk-first perspective is an under-explored technique, and I believe it offers some useful insights.   So the aim here is to present the case for viewing software development like this:
+The diagram above reproduces a figure from [Rapid Development](http://a.co/d/ddWGTB2) by Steve McConnell.  This is _fine_: McConnell is structuring the process from the perspective of _delivering as quickly as possible_.  However, here, I want to turn this on its head.  Software Development from a risk-perspective is an under-explored technique and I believe it offers some useful insights.   So the aim here is to present the case for viewing software development like this:
 
 ![Pillars, re-arranged](../images/generated/introduction/pillars_kite9.png)
 
