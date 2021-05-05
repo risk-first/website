@@ -7,6 +7,7 @@ featured:
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/box-size.svg">On Story Points</image-artifact>'
 categories:
+  - Estimating
 order: 8
 ---
 

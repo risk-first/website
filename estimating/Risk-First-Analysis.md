@@ -195,4 +195,4 @@ The model we are describing here is just _a graphic representation of a discussi
 
 One argument made _for_ the Scrum planning game is that it gives everyone on the development team a voice.  For many, this might be the biggest contribution of Planning Poker and we definitely don't want to lose that.
 
-We've not looked at how Risk-First Analysis can be _gamified_ in the way that Planning Poker is, and that is the subject of the [next article](Stop-Estimating-Start-Navigating.md), in which we show how this process can be made interactive and engage the whole team.  Let's look at that now.
+We've not looked at how Risk-First Analysis can be _gamified_ in the way that Planning Poker is - we'll get to that.  But first, let's look in more detail at the [Story Point](On-Story-Points.md) idea and see if it can be improved.
