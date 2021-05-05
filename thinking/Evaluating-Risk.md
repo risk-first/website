@@ -185,7 +185,7 @@ Under the 20% regime, neither are worth mitigating.  The 20% Discount Rate may r
 
 ### Discounting the Future To Zero
 
-I have worked in teams sometimes where the blinkers go down, and the only thing that matters is _now_.    Anything with a horizon over a week is irrelevant.   Regimes of such [hyper-inflation](https://en.wikipedia.org/wiki/Hyperinflation) are a sure sign that something has _really broken down_ within a project.  Consider in this case a Discount Factor of 60% per day, and the following risks:
+I have worked in teams sometimes where the blinkers go down and the only thing that matters is _now_.    Anything with a horizon over a week is irrelevant.   Regimes of such [hyper-inflation](https://en.wikipedia.org/wiki/Hyperinflation) are a sure sign that something has _really broken down_ within a project.  Consider in this case a Discount Factor of 60% per day, and the following risks:
 
 - Risk A, £10 cost, happening _tomorrow_
 - Risk B, £70 cost, happening in _5 days_.  
@@ -194,11 +194,15 @@ Risk B is almost irrelevant under this regime, as this graph shows:
 
 ![Net Present Risk, 60% Discount Rate](../images/numbers/npr3.png)
 
-Why do things like this happen?  Often, the people involved are under incredible job-stress:  usually they are threatened on a daily basis, and therefore feel they have to react.  In a similar way, publicly-listed companies also often apply short-term focus, because they only care about the _next annual report_, which limits their horizons and ability to consider future risk.
+Why do things like this happen?  Often, the people involved are under incredible job-stress:  usually they are threatened on a daily basis and therefore feel they have to react.  In a similar way, publicly-listed companies also often apply short-term focus because they only care about the _next annual report_. That limits their horizons and ability to consider future risk.
 
 Under these circumstances, we often see _Pooh-Bear Procrastination_:
 
+<!-- markdown-link-check-disable -->
+
 > "Here is Edward Bear coming downstairs now, bump, bump, bump, on the back of his head, behind Christopher Robin. It is, as far as he knows, the only way of coming downstairs, but sometimes he feels that there really is another way…if only he could stop bumping for a moment and think of it!" - [A. A. Milne, _Winne-the-Pooh_](http://amzn.eu/d/acJ5a2j)
+
+<!-- markdown-link-check-enable -->
 
 ## Is This Scientific?
 
@@ -208,7 +212,7 @@ Enough with the numbers and the theory:  we need a practical framework, rather t
 - Second, IT projects have too many confounding factors, such as experience of the teams, 
 technologies used etc.  That is, the risks faced by IT projects are _too diverse_ and _hard to quantify_ to allow for meaningful comparison from one to the next.
 - Third, as soon as you _publish a date_ it changes the expectations of the project (see [Student Syndrome](../risks/Scarcity-Risk.md#student-syndrome)).
-- Fourth, metrics get [misused](../risks/Map-And-Territory-Risk.md) and [gamed](../risks/Agency-Risk.md) (as we will see in a later chapter).
+- Fourth, metrics get [misused](../risks/Map-And-Territory-Risk.md) and [gamed](../risks/Agency-Risk.md).
 
 Reality is messy.  Dressing it up with numbers doesn't change that and you risk [fooling yourself](../risks/Map-And-Territory-Risk.md).  If this is the case, is there any hope at all in what we're doing?  Yes:   _forget precision_.  You should, with experience, be able to hold up two separate risks and answer the question, "is this one bigger than this one?"  
 

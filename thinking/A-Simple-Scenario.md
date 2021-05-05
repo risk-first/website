@@ -49,7 +49,7 @@ Different people evaluate risks differently and they'll also _know_ about differ
 
 Which risks we know about depends on our **knowledge** and **experience**, then. <!-- tweet-end --> And that varies from person to person (or team to team).  
 
-## Meeting Reality
+## Taking Action and Meeting Reality
 
 As the dinner party gets closer, we make our preparations and the inadequacies of the [Internal Model](../thinking/Glossary.md#Internal-Model) become apparent.  We learn what we didn't know and the [Hidden Risks](../thinking/Glossary.md#hidden-risk) reveal themselves.  Other things we were worried about don't materialise.  Things we thought would be minor risks turn out to be greater.   
 
@@ -57,7 +57,7 @@ As the dinner party gets closer, we make our preparations and the inadequacies o
 
 Our model is forced to [Meet Reality](../thinking/Glossary.md#meet-reality), and the model changes,  forcing us to deal with these risks, as shown in the diagram above.  Whenever we try to _do something_ about a risk, it is called [Taking Action](../thinking/Glossary.md#taking-action).  [Taking Action](../thinking/Glossary.md#taking-action) _changes_ reality, and with it your [Internal Model](../thinking/Glossary.md#internal-model) of the risks you're facing.  That's because it's only by interacting with the world that we add knowledge to our [Internal Model](../thinking/Glossary.md#internal-model) about what works and what doesn't.  Even something as passive as _checking the shop opening times_ is an action, and it improves on our [Internal Model](../thinking/Glossary.md#internal-model) of the world.
 
-If we had a good [Internal Model](../thinking/Glossary.md#Internal-Model) and took the right actions, we should see positive outcomes.  If we failed to manage the risks, or took inappropriate actions, we'll probably see negative outcomes.
+If we had a good [Internal Model](../thinking/Glossary.md#Internal-Model) and [took the right actions](../thinking/Glossary.md#taking-action), we should see positive outcomes.  If we failed to manage the risks, or took inappropriate actions, we'll probably see negative outcomes.
 
 ## On To Software
 

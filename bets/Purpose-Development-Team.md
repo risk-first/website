@@ -87,9 +87,9 @@ In real-life, the distribution of returns differs in two key ways from roulette.
 
 First, a roulette table presents us with a set of very discrete outcomes.  Real life isn’t like that so much: there’s usually a sliding scale from “complete success” to “complete failure”, with a large middle-ground of so-so performance. 
 
-[![Ford and Berkshire Hathaway, Monthly Returns Distribution](../images/berkshire-hathaway-ford.png)](http://slideplayer.com/slide/4348697/14../images/26/Berkshire+Hathaway+versus+Ford+Foundation,+monthly+returns+distribution,+January+1977+to+April+2000.jpg)
+[![Ford and Berkshire Hathaway, Monthly Returns Distribution](../images/berkshire-hathaway-ford.png)](../images/bets/berkshire-hathaway-ford.png)
 
-The chart above (from [William T Ziemba](http://www.williamtziemba.com)) shows the returns-per-quarter of Ford and Berkshire Hathaway stocks over a number of years, with worst-performing quarters on the left and best-performing on the right.   
+The chart above (from [William T Ziemba](https://www.williamtziemba.com)) shows the returns-per-quarter of Ford and Berkshire Hathaway stocks over a number of years, with worst-performing quarters on the left and best-performing on the right.   
 
 Second, while you know ahead-of-time the chances of winning at roulette, you can only guess at the [balance of risk](../thinking/Glossary.md#balance-of-risk) for owning Berkshire Hathaway stock for the next quarter, even if you are armed with the above chart.  Generally, owning shares has a net-positive [balance of risk](../thinking/Glossary.md#balance-of-risk):  on average you're more likely to make money than lose money, but it's not guaranteed - past performance is no indication of future performance. 
 

@@ -54,7 +54,7 @@ Waterfall is a family of methodologies advocating a linear, stepwise approach to
 - [Delivery](../practices/Delivery.md) and [Operations](../practices/Support.md)
 - [Sign Offs](../practices/Sign-Off.md) at each stage
 
-Because Waterfall methodologies are borrowed from _the construction industry_, they manage the risks that you would care about in a construction project, specifically, minimising the risk of rework, and the risk of costs spiralling during the physical phase of the project.  For example, pouring concrete is significantly easier than digging it out again after it sets.  
+Because Waterfall methodologies are borrowed from _the construction industry_, they manage the risks that you would care about in a construction project.  Specifically, minimising the risk of rework, and the risk of costs spiralling during the physical phase of the project.  For example, pouring concrete is significantly easier than digging it out again after it sets.  
 
 ![Waterfall, Specifications and Requirements Capture](../images/generated/introduction/waterfall2.png)
 
@@ -92,7 +92,7 @@ Here are some high-level differences we see in some other popular methodologies:
 
  - **[Project Management Body Of Knowledge (PMBoK)](https://en.wikipedia.org/wiki/Project_Management_Body_of_Knowledge)**.  This is a formalisation of traditional project management practice.  It prescribes best practices for managing scope, schedule, resources, communications, dependencies, stakeholders etc. on a project.  Although "risk" is seen as a separate entity to be managed, all of the above areas are sources of risk within a project.
 
- - **[Scrum](https://en.wikipedia.org/wiki/Scrum)**. Is a popular Agile methodology.  Arguably, it is less "extreme" than Extreme Programming, as it promotes a limited set, more achievable set of agile practices, such as frequent releases, daily meetings, a product owner and retrospectives.  This simplicity arguably makes it [simpler to learn and adapt to](../risks/Communication-Risk.md#learning-curve-risk) and probably contributes to Scrum's popularity over XP. 
+ - **[Scrum](https://en.wikipedia.org/wiki/Scrum)** is a popular Agile methodology.  Arguably, it is less "extreme" than Extreme Programming, as it promotes a limited, more achievable set of agile practices, such as frequent releases, daily meetings, a product owner and retrospectives.  This simplicity arguably makes it [simpler to learn and adapt to](../risks/Communication-Risk.md#learning-curve-risk) and probably contributes to Scrum's popularity over XP. 
  
  - **[DevOps](https://en.wikipedia.org/wiki/DevOps)**. Many software systems struggle at the [boundary](../risks/Boundary-Risk.md) between "in development" and "in production".  DevOps is an acknowledgement of this, and is about more closely aligning the feedback loops between the developers and the production system.  It champions activities such as continuous deployment, automated releases and automated monitoring.
 
@@ -130,4 +130,7 @@ An off-the-shelf methodology is unlikely to fit the risks of any project exactly
 
 ![Methodologies, Actions, Risks, Goals](../images/generated/executive-summary/pattern_language.png)
 
-As the above diagram shows, different methodologies advocate different practices, and different practices manage different risks.   If we want to understand methodologies, or choose practices from one, we really need to understand the _types of risks_ we face on software projects.  This is where we go next in [Part 2](../risks/Risk-Landscape.md). 
+As the above diagram shows, different methodologies advocate different practices, and different practices manage different risks.   If we want to understand methodologies, or choose practices from one, we really need to understand the _types of risks_ we face on software projects.  This is where we [go next](../risks/Start.md).
+
+The last part of this track is the [Glossary](Glossary.md), which summarises all the new terms we've covered here.
+ 

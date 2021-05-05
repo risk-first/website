@@ -39,7 +39,7 @@ function out() {                           (7 symbols)
 
 Which had **26** symbols in it.  
 
-Now, here's the cheat:  the `repeat()` function was built into Javascript in 2015 in [ECMAScript 6.0](http://www.ecma-international.org/ecma-262/6.0/).  If we'd had to program it ourselves, we might have added this:
+Now, here's the cheat:  the `repeat()` function was built into Javascript in 2015 in [ECMAScript 6.0](https://www.ecma-international.org/ecma-262/6.0/).  If we'd had to program it ourselves, we might have added this:
 
 ```javascript
 function repeat(s,n) {                     (10 symbols)
@@ -64,8 +64,8 @@ function out() {                           (7 symbols)
 
 1.  **Language Matters**:  the Kolmogorov complexity is dependent on the language, and the features the language has built in. <!-- tweet-end --> 
 2.  **Exact Kolmogorov complexity is uncomputable anyway:**  Since it's the _theoretical_ minimum program length, it's a fairly abstract idea, so we shouldn't get too hung up on this.  There is no function to be able to say, "What's the Kolmogorov complexity of string X?"
-3.  **What is this new library function we've created?**   Is `abcdRepeater` going to be part of _every_ Javascript?  If so, then we've shifted [Codebase Risk](Complexity-Risk.md) away from ourselves, but we've pushed [Communication Risk](Communication-Risk.md) and [Dependency Risk](Dependency-Risk.md) onto every _other_ user of Javascript. (Why these?  Because `abcdRepeater` will be clogging up the JavaScript documentation for everyone, and other people will rely on it to function correctly.)
-4.  **Are there equivalent functions for every single other string?**  If so, then compilation is no longer a tractable problem because now we have a massive library of different `XXXRepeater` functions to compile against.   So, what we _lose_ in [Codebase Risk](Complexity-Risk.md#codebase-risk) we gain in [Dependency Risk](Complexity-Risk.md#space-and-time-complexity).
+3.  **What is this new library function we've created?**   Is `abcdRepeater` going to be part of _every_ Javascript?  If so, then we've shifted [Codebase Risk](Complexity-Risk.md) away from ourselves, but we've pushed [Conceptual Integrity Risk](Feature-Risk.md#conceptual-integrity-risk) onto every _other_ user of Javascript, because `abcdRepeater` will be clogging up the JavaScript documentation for everyone, despite being rarely useful.
+4.  **Are there equivalent functions for every single other string?**  If so, then compilation is no longer a tractable problem because now we have a massive library of different `XXXRepeater` functions to compile against.   So, what we _lose_ in [Codebase Risk](Complexity-Risk.md#codebase-risk) we gain in [Complexity Risk](Complexity-Risk.md#space-and-time-complexity).
 5.  **Language design, then, is about _ergonomics_:** <!-- tweet-end --> After you have passed the relatively low bar of providing [Turing Completeness](https://en.wikipedia.org/wiki/Turing_completeness), the key is to provide _useful_ features that enable problems to be solved, without over-burdening the user with features they _don't_ need.  And in fact, all software is about this.
 
 ## Ergonomics Examined
@@ -222,7 +222,7 @@ The diagram above summarises the risks raised in some of the available literatur
 #### Sources
 
  - `sd4`: [SaaS Checklist - Nine Factors to Consider](https://www.zdnet.com/article/saas-checklist-nine-factors-to-consider-when-selecting-a-vendor)
- - `sd5`: [How to Evaluate SaaS Vendors.](http://sandhill.com/article/how-to-evaluate-saas-vendors-five-key-considerations)
+ - `sd5`: [How to Evaluate SaaS Vendors.](https://sandhill.com/article/how-to-evaluate-saas-vendors-five-key-considerations)
 
 ## A Matrix of Options
 
