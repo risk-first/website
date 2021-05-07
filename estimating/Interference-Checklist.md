@@ -144,7 +144,7 @@ Download this in [PDF](Interference-Checklist.pdf) or [Numbers](Interference-Che
 |                                              | Task takes a long time                                                            |           |                 |
 |                                              | Task is unusually tedious                                                         |           |                 |
 |                                              |                                                                                   |           |                 |
-| **\- [Reliability Risk](../risks/Dependency-Risk.md#reliability-risk** | Has strict reliability / response time requirements                               |           |                 |
+| **\- [Reliability Risk](../risks/Dependency-Risk.md#reliability-risk)** | Has strict reliability / response time requirements                               |           |                 |
 |                                              | Has unusual hosting requirements                                                  |           |                 |
 |                                              | Unfamiliar hardware involved                                                      |           |                 |
 |                                              |                                                                                   |           |                 |
