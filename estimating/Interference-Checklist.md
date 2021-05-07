@@ -15,6 +15,16 @@ order: 9
 
 Here is an example "Interference Checklist", which you can use to estimate the risk on your stories / tasks.  It's meant to be used as a starting point - feel free to adapt this to the specifics of your own projects and environments.
 
+## Some Simple Instructions
+
+1.  Next time you are asked to estimate a piece of work, run through the checklist.  
+2.  Assign a "point value" of your own to any important items.  You can use numbers, S-M-L, whatever.
+3.  Total up the points.   For a _low score_ you should feel fairly happy about hitting a given end-date for a piece of work.  For a high score, you should have low confidence in your estimate.
+4.  Consider breaking up risky work into smaller units to isolate the risks individually.   
+5.  Consider removing unnecessary risk from the project. 
+6.  After, or during a piece of work, add any new risks you discover to the checklist to remind you about them next time.
+
+
 Download this in [PDF](Interference-Checklist.pdf) or [Numbers](Interference-Checklist.numbers) format.
 
 
