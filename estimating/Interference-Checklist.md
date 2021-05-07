@@ -54,7 +54,7 @@ Download this in [PDF](Interference-Checklist.pdf) or [Numbers](Interference-Che
 |                                              | Teams are required to work together                                               |           |                 |
 |                                              |                                                                                   |           |                 |
 | **[Complexity Risks](../risks/Complexity-Risk.md)** |                                                                                   |           |                 |
-| ** - [Codebase Risk](../risks/Complexity-Risk.md#codebase-risk)** | Involves refactoring                                                              |           |                 |
+| **\- [Codebase Risk](../risks/Complexity-Risk.md#codebase-risk)** | Involves refactoring                                                              |           |                 |
 |                                              | Introduces new languages / DSLs                                                   |           |                 |
 |                                              | Requires adding significant code                                                  |           |                 |
 |                                              | Can’t be easily unit-tested                                                       |           |                 |
@@ -62,18 +62,18 @@ Download this in [PDF](Interference-Checklist.pdf) or [Numbers](Interference-Che
 |                                              | Requires deleting significant code                                                |           |                 |
 |                                              | Creates new repos                                                                 |           |                 |
 |                                              |                                                                                   |           |                 |
-| ** - [Dead-End Risk](../risks/Complexity-Risk.md#dead-end-risk)** | Involves experimentation about best approach                                      |           |                 |
+| **\- [Dead-End Risk](../risks/Complexity-Risk.md#dead-end-risk)** | Involves experimentation about best approach                                      |           |                 |
 |                                              | No prior work exists in this area                                                 |           |                 |
 |                                              | Significant algorithmic innovation is required                                    |           |                 |
 |                                              |                                                                                   |           |                 |
-| ** - [Boundary Risk](../risks/Boundary-Risk.md)**   | Ecosystem choice                                                                  |           |                 |
+| **\- [Boundary Risk](../risks/Boundary-Risk.md)**   | Ecosystem choice                                                                  |           |                 |
 |                                              | Platform choice                                                                   |           |                 |
 |                                              | App stores                                                                        |           |                 |
 |                                              | Language choice                                                                   |           |                 |
 |                                              | Market choice                                                                     |           |                 |
 |                                              |                                                                                   |           |                 |
 | **[Feature Risks](../risks/Feature-Risk.md)**  |                                                                                   |           |                 |
-| ** - [Conceptual Integrity Risk](../risks/Feature-Risk.md#conceptual-integrity-risk)** | Requires new interface to be added                                                |           |                 |
+| **\- [Conceptual Integrity Risk](../risks/Feature-Risk.md#conceptual-integrity-risk)** | Requires new interface to be added                                                |           |                 |
 |                                              | Requires refactoring of existing interfaces                                       |           |                 |
 |                                              | Deprecates existing functionality                                                 |           |                 |
 |                                              | Requested by multiple stakeholders                                                |           |                 |
@@ -92,12 +92,12 @@ Download this in [PDF](Interference-Checklist.pdf) or [Numbers](Interference-Che
 | **\- [Feature-Fit](Feature-Risk.md#feature-fit-risk)**| Success criteria hard to define                                                   |           |                 |
 |                                              | Difficult-to-access user base                                                     |           |                 |
 |                                              |                                                                                   |           |                 |
-| ** - [Market Risk](../risks/Feature-Risk.md#market-risk)**  | Rapidly changing market                                                           |           |                 |
+| **\- [Market Risk](../risks/Feature-Risk.md#market-risk)**  | Rapidly changing market                                                           |           |                 |
 |                                              | Market needs are not clear                                                        |           |                 |
 |                                              | Market itself is uncertain                                                        |           |                 |
 |                                              | Product needs to find it’s market                                                 |           |                 |
 |                                              |                                                                                   |           |                 |
-| **[Agency Risks](../risks/Agency-Risk.md) / ** | 3rd Party involved                                                                |           |                 |
+| **[Agency Risks](../risks/Agency-Risk.md)** /| 3rd Party involved                                                                |           |                 |
 | **[Trust Risk](Communication-Risk.md#trust--belief-risk)** / | Competitor involvement                                                            |           |                 |
 | **[Security Risks](Agency-Risk.md#security)**| General public involved                                                           |           |                 |
 |                                              | Available on the open internet                                                    |           |                 |
@@ -110,39 +110,39 @@ Download this in [PDF](Interference-Checklist.pdf) or [Numbers](Interference-Che
 |                                              | Involves security infrastructure: firewalls, proxies, VPN etc.                    |           |                 |
 |                                              |                                                                                   |           |                 |
 | **[Dependency Risks](../risks/Dependency-Risk.md)** |                                                                                   |           |                 |
-| ** - [Software Dependency Risk](../risks/Software-Dependency-Risk.md)**| Requires the introduction of a new dependency                                     |           |                 |
+| **\- [Software Dependency Risk](../risks/Software-Dependency-Risk.md)**| Requires the introduction of a new dependency                                     |           |                 |
 |                                              | … which is immature                                                               |           |                 |
 |                                              | … which must be chosen from competing alternatives                                |           |                 |
 |                                              | … which is Open-Source                                                            |           |                 |
 |                                              | … which is In-House                                                               |           |                 |
 |                                              | … which is Commercial                                                             |           |                 |
 |                                              |                                                                                   |           |                 |
-| ** - [Scarcity Risk](../risks/Scarcity-Risk.md)**                         | Requires booking time with a 3rd party                                            |           |                 |
+| **\- [Scarcity Risk](../risks/Scarcity-Risk.md)**                         | Requires booking time with a 3rd party                                            |           |                 |
 |                                              | Requires specific licenses / approvals                                            |           |                 |
 |                                              |                                                                                   |           |                 |
-| ** - [Funding Risk](../risks/Scarcity-Risk.md#funding-risk)**  | Requires payment by a customer for completed work                                 |           |                 |
+| **\- [Funding Risk](../risks/Scarcity-Risk.md#funding-risk)**  | Requires payment by a customer for completed work                                 |           |                 |
 |                                              | Requires agreement on pricing / budget                                            |           |                 |
 |                                              |                                                                                   |           |                 |
-| ** - [Staff Risk](/risksScarcity-Risk.md#staff-risk)**  | Requires involvement from other members of staff                                  |           |                 |
+| **\- [Staff Risk](/risksScarcity-Risk.md#staff-risk)**  | Requires involvement from other members of staff                                  |           |                 |
 |                                              | Requires hiring-in new specialist skills                                          |           |                 |
 |                                              | Has dependency on key-persons                                                     |           |                 |
 |                                              |                                                                                   |           |                 |
-| ** - [Red-Queen Risk](../risks/Scarcity-Risk.md#red-queen-risk)** | Dependency on rapidly changing/unpublished standards                              |           |                 |
+| **\- [Red-Queen Risk](../risks/Scarcity-Risk.md#red-queen-risk)** | Dependency on rapidly changing/unpublished standards                              |           |                 |
 |                                              | Dependency on rapidly evolving 3rd party code                                     |           |                 |
 |                                              |                                                                                   |           |                 |
-| ** - [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk)** | Task is repetitive                                                                |           |                 |
+| **\- [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk)** | Task is repetitive                                                                |           |                 |
 |                                              | Task takes a long time                                                            |           |                 |
 |                                              | Task is unusually tedious                                                         |           |                 |
 |                                              |                                                                                   |           |                 |
-| ** - [Reliability Risk](../risks/Dependency-Risk.md#reliability-risk** | Has strict reliability / response time requirements                               |           |                 |
+| **\- [Reliability Risk](../risks/Dependency-Risk.md#reliability-risk** | Has strict reliability / response time requirements                               |           |                 |
 |                                              | Has unusual hosting requirements                                                  |           |                 |
 |                                              | Unfamiliar hardware involved                                                      |           |                 |
 |                                              |                                                                                   |           |                 |
-| ** - [Process Risk](../risks/Process-Risk.md)**       | Unfamiliar process for releasing                                                  |           |                 |
+| **\- [Process Risk](../risks/Process-Risk.md)**       | Unfamiliar process for releasing                                                  |           |                 |
 |                                              | New CI Steps Needed                                                               |           |                 |
 |                                              | Unfamiliar approvals required                                                     |           |                 |
 |                                              |                                                                                   |           |                 |
-| ** - [Deadline Risk](../risks/Deadline-Risk.md)**     | Has components that must be completed during certain time windows (e.g. weekends) |           |                 |
+| **\- [Deadline Risk](../risks/Deadline-Risk.md)**     | Has components that must be completed during certain time windows (e.g. weekends) |           |                 |
 |                                              | Has components that must be completed before drop-dead dates                      |           |                 |
 |                                              |                                                                                   |           |                 |
 | **[Operational Risk](../risks/Operational-Risk.md)**                         | Requires new or extra production support                                          |           |                 |
