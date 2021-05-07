@@ -25,7 +25,7 @@ In Scrum, the Estimation process is based on the concept of _Story Points_, so t
 
 ![Story Point Diagram](/images/generated/estimating/story-points.png)
 
-So let's look at Story Points as an _estimation tool_, and see how it stacks up.  The diagram above will guide us - let's break it down and understand how story pointing works.
+In this article we will critique Story Points as an _estimation tool_.  First, we will break it down to see how it works (the diagram above will guide us) then we'll offer some ideas for improving it.
 
 ## Inputs
 
@@ -41,17 +41,17 @@ At a basic level, to calculate the number of story points for an item of work, y
 
 ## Calculating Story Points
 
-As shown in the above diagram, you take all of these inputs, mix them together and out pops a number of Story Points.  How does that work?  How do we get from one to the other?  Scrum literature says that you should "play Planning Poker" in order to arrive at a number of story points.  In my experience, you end up with conversations like this:
+As shown in the above diagram, you take all of these inputs, mix them together and out pops a number of Story Points.  How does that work?  How do we get from one to the other?  Scrum literature says that you should "play planning poker" in order to arrive at a number of story points.  In my experience, you end up with conversations like this:
 
-"Rob, you've played an 8.  Everyone else played a 3.  What's your thinking there?"
+> "Rob, you've played an 8.  Everyone else played a 3.  What's your thinking there?"
 
-"OK, well, first, I can see that we need to mock-up a web page.  Now, it's clearly not that complex a job, but, we'll need to run it by the sales team, and they're notoriously hard to schedule meetings with... and we'll need a few of them in the meeting.  So, if we assume that there's going to be two or maybe three iterations of this, it'll soon add up into days gone by."
+> "OK, well, first, I can see that we need to mock-up a web page.  Now, it's clearly not that complex a job, but, we'll need to run it by the sales team, and they're notoriously hard to schedule meetings with... and we'll need a few of them in the meeting.  So, if we assume that there's going to be two or maybe three iterations of this, it'll soon add up into days gone by."
 
 -or- 
 
-"I'm thinking a 2 for this task."
+> "I'm thinking a 2 for this task."
 
-"I'm thinking a 5:  we're actually going to have to implement some new indexes on the database, so it's an optimisation issue.  And there could be some locking problems around the Users table if we are running this update alongside everything else".
+> "I'm thinking a 5:  we're actually going to have to implement some new indexes on the database, so it's an optimisation issue.  And there could be some locking problems around the Users table if we are running this update alongside everything else".
 
 What's happening here?  We are basically _alerting each other to the risks and tasks we think are present_ on the project.  That's the value the experience of the team and the developers brings to the table. 
 
@@ -61,11 +61,11 @@ After some back-and-forth, the team agrees on a number.  But what does this numb
 
 - **Ideal Person-Days**: An obvious interpretation is that a story point is some number of person-days.   In most of the planning sessions I've been involved in, there is either an explicit or tacit base-lining of story points so that everyone has a similar conception of how much work is involved in one, e.g. "A Story point is a morning".  The "ideal" part refers to the actual time you get to spend on a task, away from interruptions, lunches, all-hands meetings and so on.  The reason _not_ to use person days directly is that developers all work at different speeds.
 
-- **Complexity**: An alternate view is that [a story point is about _complexity_](https://www.clearvision-cm.com/blog/why-story-points-are-a-measure-of-complexity-not-effort/).  This means a Sprint is all about budgeting complexity, rather than effort.   This makes some sense - [complexity is a recurring theme in Risk-First, after all.](/Complexity/Start.md)  However, given that the sprint is measured in person-days, and the scrum leader is going to produce a report showing how many story points were completed in a sprint, it's clear that complexity really is just a weak proxy for person-days anyway.  In fact, there are lots of tasks that might be low-complexity, but take a lot of time anyway, such as updating 500 icons.  This will clearly take a lot of time, but be low-complexity, so you better give it enough story points to represent the time you'll spend on it.   
+- **Complexity**: An alternate view is that [a story point is about _complexity_](https://www.clearvision-cm.com/blog/why-story-points-are-a-measure-of-complexity-not-effort/).  This means a Sprint is all about budgeting complexity, rather than effort.   This makes some sense - [complexity is a recurring theme in Risk-First, after all.](../complexity/Start.md)  However, given that the sprint is measured in person-days, and the scrum leader is going to produce a report showing how many story points were completed in a sprint, it's clear that complexity really is just a weak proxy for person-days anyway.  In fact, there are lots of tasks that might be low-complexity, but take a lot of time anyway, such as updating 500 icons.  This will clearly take a lot of time, but be low-complexity, so you better give it enough story points to represent the time you'll spend on it.   
 
 - **Relative Sizing**: A third way of looking at it is that really, story points are just about _relative_ sizing:  it doesn't matter what they refer to or how big they are, it's all about trying to budget the right amount of work into the sprint.  For example, you can either have two one-point stories, or a two-point story, and the effect on the sprint is the same.
 
-Because there is no fixed definition of the size of a story point, you do run the risk of story-point "inflation" or "deflation".  But unless you are trying to use them to plot team productivity over time, this shouldn't really matter so much.  And we'd never make the mistake of doing that, [right](/risks/Map-And-Territory-Risk.md)?  
+Because there is no fixed definition of the size of a story point, you do run the risk of story-point "inflation" or "deflation".  But unless you are trying to use them to plot team productivity over time, this shouldn't really matter so much.  And we'd never make the mistake of doing that, [right](../risks/Map-And-Territory-Risk.md)?  
 
 ## Observations
 
