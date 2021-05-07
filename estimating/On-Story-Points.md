@@ -15,11 +15,13 @@ order: 8
 
 # On Story Points
 
-In Scrum, the idea of a _sprint_ is well named:  as a team, you are trying to complete work on a whole bunch of work items (stories) before the end-of-sprint demo deadline.
+In Scrum, the idea of a _sprint_ is well named:  as a team, you are trying to complete work on a whole bunch of work items (stories) before the end-of-sprint deadline.
 
-In a previous article in this series, [Fixing Scrum](Fixing-Scrum.md) we took against the idea of fixed time-boxes generally, because they _introduce more problems than they solve_:  as we've seen [in](Journeys.md) [multiple](Kitchen-Cabinet.md) [articles](Fractals.md), estimating is _hard_, trying to use it as a solution to anything is misguided.  You should only estimate when you absolutely need to.
+In a previous article in this series, [Fixing Scrum](Fixing-Scrum.md) we took against the idea of fixed time-boxes generally, because they _introduce more problems than they solve_:  as we've seen [in](Journeys.md) [multiple](Kitchen-Cabinet.md) [articles](Fractals.md), estimating is _hard_, trying to use it as a solution to anything is misguided.  So you should only estimate when you absolutely need to.
 
-Nevertheless, _knowing how long things will take_ is really the whole purpose of this track on [Estimating](Start.md), and sometimes, it is necessary.  In Scrum, the Estimation process is based on the concept of _Story Points_, so that will be the focus here, although the recommendations on this page are essentially relevant to anyone estimating software development.
+Nevertheless, _knowing how long things will take_ is really the whole purpose of this track on [Estimating](Start.md), and sometimes unavoidable [deadlines](../risks/Deadline-Risk.md) make it necessary.  
+
+In Scrum, the Estimation process is based on the concept of _Story Points_, so that will be the focus here, although the recommendations on this page are essentially relevant to anyone estimating software development.
 
 ![Story Point Diagram](/images/generated/estimating/story-points.png)
 
