@@ -13,13 +13,13 @@ order: 8
 
 # On Story Points
 
-In Scrum, the idea of a _sprint_ is well named:  as a team, you are trying to complete work on a whole bunch of work items (stories) before the end-of-sprint deadline.
+In Scrum, the idea of a _sprint_ is well named:  as a team, you are trying to complete work on a whole bunch of work items (stories) before a deadline.
 
 In a previous article in this series, [Fixing Scrum](Fixing-Scrum.md) we took against the idea of fixed time-boxes generally, because they _introduce more problems than they solve_:  as we've seen [in](Journeys.md) [multiple](Kitchen-Cabinet.md) [articles](Fractals.md), estimating is _hard_, trying to use it as a solution to anything is misguided.  So you should only estimate when you absolutely need to.
 
 Nevertheless, _knowing how long things will take_ is really the whole purpose of this track on [Estimating](Start.md), and sometimes unavoidable [deadlines](../risks/Deadline-Risk.md) make it necessary.  
 
-In Scrum, the Estimation process is based on the concept of _Story Points_, so that will be the focus here, although the recommendations on this page are essentially relevant to anyone estimating software development.
+In Scrum, the Estimation process is based on the concept of _story points_, so that will be the focus here, although essentially this discussion is relevant to anyone estimating software development.
 
 ![Story Point Diagram](/images/generated/estimating/story-points.png)
 
@@ -51,7 +51,7 @@ As shown in the above diagram, you take all of these inputs, mix them together a
 
 > "I'm thinking a 5:  we're actually going to have to implement some new indexes on the database, so it's an optimisation issue.  And there could be some locking problems around the Users table if we are running this update alongside everything else".
 
-What's happening here?  We are basically _alerting each other to the risks and tasks we think are present_ on the project.  That's the value the experience of the team and the developers brings to the table. 
+What's happening here?  We are basically _alerting each other to the risks and tasks we think are present_ on the story.  That's the value the experience of the team and the developers brings to the table. 
 
 ## The Story Point Estimate
 
@@ -59,15 +59,13 @@ After some back-and-forth, the team agrees on a number.  But what does this numb
 
 - **Ideal Person-Days**: An obvious interpretation is that a story point is some number of person-days.   In most of the planning sessions I've been involved in, there is either an explicit or tacit base-lining of story points so that everyone has a similar conception of how much work is involved in one, e.g. "A Story point is a morning".  The "ideal" part refers to the actual time you get to spend on a task, away from interruptions, lunches, all-hands meetings and so on.  The reason _not_ to use person days directly is that developers all work at different speeds.
 
-- **Complexity**: An alternate view is that [a story point is about _complexity_](https://www.clearvision-cm.com/blog/why-Story Points-are-a-measure-of-complexity-not-effort/).  This means a Sprint is all about budgeting complexity, rather than effort.   This makes some sense - [complexity is a recurring theme in Risk-First, after all.](../complexity/Start.md)  However, given that the sprint is measured in person-days, and the scrum leader is going to produce a report showing how many story points were completed in a sprint, it's clear that complexity really is just a weak proxy for person-days anyway.  In fact, there are lots of tasks that might be low-complexity, but take a lot of time anyway, such as updating 500 icons.  This will clearly take a lot of time, but be low-complexity, so you better give it enough story points to represent the time you'll spend on it.   
+- **Complexity**: An alternate view is that [a story point is about _complexity_](https://www.clearvision-cm.com/blog/why-Story Points-are-a-measure-of-complexity-not-effort/).  This means a Sprint is all about budgeting complexity, rather than effort.   This makes some sense - [complexity is a recurring theme in Risk-First, after all.](../complexity/Start.md)  However, given that the sprint is measured in person-days, and the scrum leader is going to produce a report showing how many story points were completed in a sprint, it's clear that complexity really is just a weak proxy for person-days anyway.  In fact, there are lots of tasks that might be low-complexity, but take a lot of time anyway, such as designing 500 icons.  This will clearly take a lot of time, but be low-complexity, so you better give it enough story points to represent the time you'll spend on it.   
 
-- **Relative Sizing**: A third way of looking at it is that really, story points are just about _relative_ sizing:  it doesn't matter what they refer to or how big they are, it's all about trying to budget the right amount of work into the sprint.  For example, you can either have two one-point stories, or a two-point story, and the effect on the sprint is the same.
-
-Because there is no fixed definition of the size of a story point, you do run the risk of story-point "inflation" or "deflation".  But unless you are trying to use them to plot team productivity over time, this shouldn't really matter so much.  And we'd never make the mistake of doing that, [right](../risks/Map-And-Territory-Risk.md)?  
+- **Relative Sizing**: A third way of looking at it is that really, story points are just about _relative_ sizing:  it doesn't matter what they refer to or how big they are, it's all about trying to budget the right amount of work into the sprint.  For example, you can either have two one-point stories, or a two-point story, and the effect on the sprint is the same.  Because there is no fixed definition of the size of a story point, you do run the risk of story-point "inflation" or "deflation".  But unless you are trying to use them to plot team productivity over time, this shouldn't really matter so much.  And we'd never make the mistake of doing that, [right](../risks/Map-And-Territory-Risk.md)?  
 
 ## Observations
 
-While all the _inputs_ seem good on this model, there is a real lack of formalism about what exactly a _story point_ is at the end of it.  This makes it very hard to say exactly what goes on inside the "Calculate Story Points" function.  Isn't there some better way than this?  Let's see if we can find some better way.
+So while all the _inputs_ seem good, there is a real lack of formalism about what exactly a _story point_ is at the end of it.  This makes it very hard to say exactly what goes on inside the "Calculate Story Points" function.  Isn't there some better way than this?  Let's see if we can make some suggestions.
 
 ### 1. Innovation Tokens
 
@@ -79,13 +77,13 @@ What he's driving at here is of course _risk_: with shiny (i.e. non-boring) tech
 
 Put this way, couldn't story points be some kind of "Innovation Token"?    
 
-When re-framed this way, it becomes a lot clearer what the function "Calculate Story Points" is really attempting to do - it's all about enumerating the risks of doing a certain task and making sure that we don't bite off more than we can chew.  If story points are simply _person-days_ then "deploy ReliableDB" and "deploy ShinyDB" take about the same time.  But, when considered from the point of view of _risk_, "deploy ShinyDB" should have a much higher story-point value.
+When re-framed this way, it becomes a lot clearer what the function "Calculate Story Points" is really attempting to do - it's all about enumerating the risks of doing a certain task and making sure that we don't bite off more than we can chew.  If story points were simply _person-days_ then "deploy ReliableDB" and "deploy ShinyDB" take about the same time.  But, when considered from the point of view of _risk_, "deploy ShinyDB" should have a much higher story-point value.
 
-Sometimes, developers provide _tolerances_ around their story-point estimates, "optimistically, 2 days, pessimistically, 4 days".  Usually, this subtlety gets lost in the planning process.  It's certainly not factored into the usual velocity calculations.
+Sometimes, developers provide _tolerances_ around their story-point estimates, "optimistically, 2 days, pessimistically, 4 days".  Usually, this subtlety gets lost in the planning process.  It's certainly not factored into the usual velocity calculations - we need something more robust.
 
 ### 2. Capturing Knowledge
 
-Another problem in Story Point estimation is bootstrapping.  It is expected that, to start with, estimates made by inexperienced teams, or inexperienced team-members, are going to be poor.  The expectation is that over time, through domain experience, the estimates improve.  This seems to happen _somewhat_ in my experience.  But nowhere near enough. 
+Another problem in Story Point estimation is bootstrapping.  It is expected that, to start with, estimates made by inexperienced teams, or inexperienced team-members, are going to be poor.  The expectation is also that over time, through domain experience, the estimates improve.  This seems to happen _somewhat_ in my experience.  But nowhere near enough. 
 
 A common complaint when tasks overrun is that the team were blind-sided by [Hidden Risk](/thinking/Glossary.md#hidden-risk), but in my experience this boils down to two things:
 
@@ -94,7 +92,7 @@ A common complaint when tasks overrun is that the team were blind-sided by [Hidd
  
 Couldn't we bootstrap the estimation process by providing an "Interference Checklist" for story points, based on the things that commonly throw spanners into the works?  
 
-Below, I've sketched out a small section of what this might look like.  The [next article](Interference-Checklist.md) contains a more complete Interference Checklist that I use and you can modify for your own purposes.
+Below, I've sketched out a small section of what this might look like.  The [next article](Interference-Checklist.md) contains a more complete Interference Checklist that I've put together and you can modify for your own purposes.
 
 | **Area**                                     | **Concern**                                                                       | **Notes** | **Point Value** |
 | -------------------------------------------- | --------------------------------------------------------------------------------- | --------- | --------------- |
@@ -107,31 +105,37 @@ Below, I've sketched out a small section of what this might look like.  The [nex
 | **\- [Feature-Fit](Feature-Risk.md#feature-fit-risk)**| Success criteria hard to define                                          |           |                 |
 |                                              | Difficult-to-access user base                                                     |           |                 |
 
-By starting discussions with an Interference Checklist, we can augment the "play planning poker" process by _prompting people on things to think about_, like "Do we know what done looks like here?", "Is this going to affect some of our completed work?", "How are we going to get it tested".  
+By starting discussions with an Interference Checklist, we can augment the "play planning poker" process by _prompting people on things to think about_, like "Do we know what done looks like here?", "Is this going to affect some of our existing functionality?", "How are we going to get it tested?".  
 
 A Checklist is a good way of asking questions in order that we can manage risk early on.  It's all about turning a [Hidden Risk](/thinking/Glossary.md#hidden-risk) into one we've thought about.  
 
-If the team runs through this list together, and then decides the task is a "five", then surely that is a better, more rigorous approach than just plucking a number out of the air, as planning poker suggests.
+If the team runs through this list together, and then decides the task is a "five-story-pointer", then surely that is a better, more rigorous approach than just plucking a number out of the air, as planning poker suggests.
 
-And, building up an Estimation Checklist shouldn't be a task done just during a retrospective:  you should be allowed to add detail to it _any time you like_:  preferably sooner, rather than waiting for a retrospective.  If you're struggling to implement some story on the project, is that because you were hit by a risk you already knew about?  Is it on the list? If not, add it right there and then! 
+And, building up an Interference Checklist shouldn't be a task done just during a retrospective.  You should be allowed to add detail to it _any time you like_ rather than waiting for a retrospective.  If you're struggling to implement some story on the project, is that because you were hit by a risk you already knew about?  Is it on the list? If not, add it right there and then! 
 
 Conversely, if the risk _is_ on the list, were you prepared for it?  Did someone correctly identify that it would come up?  If not, can you work out why it got missed?   
 
-### 3.  Sizing Work / Risk Budgets
+### 3.  Sizing Work
 
-In my opinion, one of the craziest, least well-justified elements of story point estimation is the insistence that they are sized to [Fibonacci Sequence Numbers](https://en.wikipedia.org/wiki/Fibonacci_number), (0, 1, 2, 3, 5, 8, 13, 21) which seems needlessly nerdy but also allows for an unfounded confidence in our ability to precisely estimate story sizes.  (How often can we really be sure it is an 8, not a 13?)  
+In my opinion, one of the craziest, least well-justified elements of story point estimation is the insistence that they are sized to [Fibonacci Sequence Numbers](https://en.wikipedia.org/wiki/Fibonacci_number), (0, 1, 2, 3, 5, 8, 13, 21) which seems needlessly nerdy but also suggests an unearned confidence in our ability to precisely estimate story sizes.  (How often can we really be sure it is an 8, not a 13?)  
 
 The more options we have over the size of a story, the more difficult it is to be right.  Also fewer possible sizes means we get more experience estimating work to fit that particular size.   
 
-So here, I'll stick with just three sizes, "Small", "Medium" and "Large", and we'll set bounds according to the time they'll likely take. Crucially, we'll also allocate each a risk budget:
+So here, I'll stick with just three sizes, "Small", "Medium" and "Large", and we'll set bounds according to the time they'll likely take. 
+
+You don't have to use exactly these sizes.  Use whatever works for your team, but keep the number of sizes _low_ and the maximum length _short_: anything _bigger_ than "Large" becomes unwieldy, and lacks a rapid feedback loop.  Anything shorter than "Small" doesn't really need an estimate anyway.
+
+### 4. Risk Budgets
+
+Crucially, we'll also allocate each size a risk budget:
 
  - **Small**: A couple of days' work for any member of the team, Risk Budget is 3.
  - **Medium**: Two weeks' work for a junior developer, or maybe four days work for a senior, Risk Budget is 5.
  - **Large**:  Two weeks' work for a senior developer, Risk Budget is 8.
 
-You don't have to use exactly these sizes.  Use whatever works for your team, but keep the number of sizes _low_ and the maximum length _short_: anything _bigger_ than "Large" becomes unwieldy, and lacks a rapid feedback loop.  Anything shorter than "Small" doesn't really need an estimate anyway.
+So, given a size, can you tell if a piece of work fits into it?  The next step is to run through your Interference Checklist, and come up with a Risk Score for the work.  Let's look at an example:  perhaps you are adding a new screen to your system for capturing user preferences.  It looks like it'll be a couple of days effort, so is it "Small"?  
 
-So, given a size, can you tell if a piece of work fits into it?  The next step is to run through your Interference Checklist, and come up with a Risk Score for the work.  Let's look at an example:  perhaps you are adding a new screen to your system for capturing user preferences.  It looks like it'll be a couple of days effort, so is it "Small"?  Maybe the Interference Checklist looks like this:
+Maybe the Interference Checklist for it looks like this:
 
 
 | **Area**                                     | **Concern**                                                                       | **Notes** | **Point Value** |
