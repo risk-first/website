@@ -11,8 +11,6 @@ categories:
 order: 8
 ---
 
-![Under Construction](../images/state/uc.png)
-
 # On Story Points
 
 In Scrum, the idea of a _sprint_ is well named:  as a team, you are trying to complete work on a whole bunch of work items (stories) before the end-of-sprint deadline.
@@ -23,7 +21,7 @@ Nevertheless, _knowing how long things will take_ is really the whole purpose of
 
 In Scrum, the Estimation process is based on the concept of _Story Points_, so that will be the focus here, although the recommendations on this page are essentially relevant to anyone estimating software development.
 
-![Story Point Diagram](/images/generated/estimating/Story Points.png)
+![Story Point Diagram](/images/generated/estimating/story-points.png)
 
 In this article we will critique story points as an _estimation tool_.  First, we will break it down to see how it works (the diagram above will guide us) then we'll offer some ideas for improving it.
 
