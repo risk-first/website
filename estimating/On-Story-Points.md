@@ -2,6 +2,7 @@
 title: On Story Points
 description: Part of the 'Estimating' Risk-First Track, about improving estimates using risk checklists.
 url: https://riskfirst.org/estimating/On-Story Points
+date: 2021-05-08 13:32:03 +0000
 
 featured: 
   class: bg1
