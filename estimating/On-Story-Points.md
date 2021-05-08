@@ -1,7 +1,7 @@
 ---
 title: On Story Points
 description: Part of the 'Estimating' Risk-First Track, about improving estimates using risk checklists.
-url: https://riskfirst.org/estimating/On-Story Points
+url: https://riskfirst.org/estimating/On-Story-Points
 date: 2021-05-08 13:32:03 +0000
 
 featured: 
@@ -22,7 +22,7 @@ Nevertheless, _knowing how long things will take_ is really the whole purpose of
 
 In Scrum, the Estimation process is based on the concept of _story points_, so that will be the focus here, although essentially this discussion is relevant to anyone estimating software development.
 
-![Story Point Diagram](/images/generated/estimating/story-points.png)
+![Story Point Diagram](../images/generated/estimating/story-points.png)
 
 In this article we will critique story points as an _estimation tool_.  First, we will break it down to see how it works (the diagram above will guide us) then we'll offer some ideas for improving it.
 
