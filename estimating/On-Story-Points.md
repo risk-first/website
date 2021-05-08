@@ -73,7 +73,7 @@ In his essay, "Choose Boring Technology", Dan McKinley describes a theoretical i
 
 > "Let’s say every company gets about three innovation tokens. You can spend these however you want, but the supply is fixed for a long while... If you choose to write your website in NodeJS, you just spent one of your innovation tokens. If you choose to use MongoDB, you just spent one of your innovation tokens. If you choose to use service discovery tech that’s existed for a year or less, you just spent one of your innovation tokens... there are many choices of technology that are boring and good, or at least good enough. MySQL is boring. Postgres is boring. PHP is boring. " -- [Choose Boring Technology, _Dan McKinley](https://mcfunley.com/choose-boring-technology)
 
-What he's driving at here is of course _risk_: with shiny (i.e. non-boring) technology, you pick up lots of [Hidden Risk](/thinking/Glossary.md#hidden-risk).  Innovation Tokens are paying for time spent dealing with [Hidden Risk](/thinking/Glossary.md#hidden-risk).  Dan's contention is that not only do you have the up-front costs of integrating the shiny technology, but you also have a long tail of extra running costs, as you have to manage the new technology through to maturity in your environment.
+What he's driving at here is of course _risk_: with shiny (i.e. non-boring) technology, you pick up lots of [Hidden Risk](../thinking/Glossary.md#hidden-risk).  Innovation Tokens are paying for time spent dealing with [Hidden Risk](../thinking/Glossary.md#hidden-risk).  Dan's contention is that not only do you have the up-front costs of integrating the shiny technology, but you also have a long tail of extra running costs, as you have to manage the new technology through to maturity in your environment.
 
 Put this way, couldn't story points be some kind of "Innovation Token"?    
 
@@ -85,7 +85,7 @@ Sometimes, developers provide _tolerances_ around their story-point estimates, "
 
 Another problem in Story Point estimation is bootstrapping.  It is expected that, to start with, estimates made by inexperienced teams, or inexperienced team-members, are going to be poor.  The expectation is also that over time, through domain experience, the estimates improve.  This seems to happen _somewhat_ in my experience.  But nowhere near enough. 
 
-A common complaint when tasks overrun is that the team were blind-sided by [Hidden Risk](/thinking/Glossary.md#hidden-risk), but in my experience this boils down to two things:
+A common complaint when tasks overrun is that the team were blind-sided by [Hidden Risk](../thinking/Glossary.md#hidden-risk), but in my experience this boils down to two things:
 
  - Genuine hidden risk, that no-one could have foreseen (e.g. a bug in a device driver that no-one knew about).
  - Fake hidden risks, that could have been foreseen with the appropriate up-front effort (e.g. a design approval might take a bit longer than expected due to absence).
@@ -102,12 +102,12 @@ Below, I've sketched out a small section of what this might look like.  The [nex
 |                                              | Varied user population                                                            |           |                 |
 |                                              |                                                                                   |           |                 |
 | **\- [Implementation Risk](../risks/Feature-Risk.md#implementation-risk)** | Developer unfamiliar with the requirements / system |           |                 |                                              
-| **\- [Feature-Fit](Feature-Risk.md#feature-fit-risk)**| Success criteria hard to define                                          |           |                 |
+| **\- [Feature-Fit](../risks/Feature-Risk.md#feature-fit-risk)**| Success criteria hard to define                                          |           |                 |
 |                                              | Difficult-to-access user base                                                     |           |                 |
 
 By starting discussions with an Interference Checklist, we can augment the "play planning poker" process by _prompting people on things to think about_, like "Do we know what done looks like here?", "Is this going to affect some of our existing functionality?", "How are we going to get it tested?".  
 
-A Checklist is a good way of asking questions in order that we can manage risk early on.  It's all about turning a [Hidden Risk](/thinking/Glossary.md#hidden-risk) into one we've thought about.  
+A Checklist is a good way of asking questions in order that we can manage risk early on.  It's all about turning a [Hidden Risk](../thinking/Glossary.md#hidden-risk) into one we've thought about.  
 
 If the team runs through this list together, and then decides the task is a "five-story-pointer", then surely that is a better, more rigorous approach than just plucking a number out of the air, as planning poker suggests.
 
@@ -146,7 +146,7 @@ Maybe the Interference Checklist for it looks like this:
 |                                              | Varied user population                                                            |           | 1               |
 |                                              |                                                                                   |           |                 |
 | **\- [Implementation Risk](../risks/Feature-Risk.md#implementation-risk)** | Developer unfamiliar with the requirements / system |           |                 |                                              
-| **\- [Feature-Fit](Feature-Risk.md#feature-fit-risk)**| Success criteria hard to define                                          |           |                 |
+| **\- [Feature-Fit](../risks/Feature-Risk.md#feature-fit-risk)**| Success criteria hard to define                                          |           |                 |
 |                                              | Difficult-to-access user base                                                     | Need to find a representative group | 2    |
 |                                              |                                                                                   | Total     | 5               |      
 
@@ -156,7 +156,7 @@ Note that above I just show a small sample of the full Interference Checklist.  
 
 ## Summing Up
 
-In my view, the poker planning / story point process fails to produce a reliable estimate.  Mainly, this is not entirely the fault of story points - estimating software development tasks is akin to the [Halting Problem](https://en.wikipedia.org/wiki/Halting_problem).  In this series of articles, we've looked at how software can at times have [Fractal Complexity](Fractals.md), [be like a journey of discovery](Journeys.md) or [have nested layers of complexity](Kitchen-Cabinets.md) - it is _hard_.
+In my view, the poker planning / story point process fails to produce a reliable estimate.  Mainly, this is not entirely the fault of story points - estimating software development tasks is akin to the [Halting Problem](https://en.wikipedia.org/wiki/Halting_problem).  In this series of articles, we've looked at how software can at times have [Fractal Complexity](Fractals.md), [be like a journey of discovery](Journeys.md) or [have nested layers of complexity](Kitchen-Cabinet.md) - it is _hard_.
 
 Nevertheless, experience shows us that there are common _modes of failure_ for software estimates:  things we try to estimate and fail at.  Having an Interference Checklist and Risk Budgets addresses that deficit.
 

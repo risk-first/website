@@ -13,7 +13,9 @@ order: 9
 
 # Interference Checklist
 
-Here is an example "Interference Checklist", which you can use to estimate the risk on your stories / tasks.  It's meant to be used as a starting point - feel free to adapt this to the specifics of your own projects and environments.
+Here is an example "Interference Checklist", which you can use to estimate the risk on your stories / tasks.  For an explanation of how this works, check out the previous article [On Story Points](On-Story-Points.md).
+
+This is just meant to be used as a starting point - feel free to adapt this to the specifics of your own projects and environments.
 
 ## Some Simple Instructions
 
@@ -24,10 +26,7 @@ Here is an example "Interference Checklist", which you can use to estimate the r
 5.  Consider removing unnecessary risk from the project. 
 6.  After, or during a piece of work, add any new risks you discover to the checklist to remind you about them next time.
 
-
-Download this in [PDF](Interference-Checklist.pdf) or [Numbers](Interference-Checklist.numbers) format.
-
-
+Download this in [PDF](https://riskfirst.org/estimating/Interference-Checklist.pdf) or [Numbers](https://riskfirst.org/estimating/Interference-Checklist.numbers) format.
 
 | **Area**                                     | **Concern**                                                                       | **Notes** | **Point Value** |
 | -------------------------------------------- | --------------------------------------------------------------------------------- | --------- | --------------- |
@@ -99,7 +98,7 @@ Download this in [PDF](Interference-Checklist.pdf) or [Numbers](Interference-Che
 |                                              | Known corner-cases                                                                |           |                 |
 |                                              | Home-grown protocols vs. standards                                                |           |                 |
 |                                              |                                                                                   |           |                 |
-| **\- [Feature-Fit](Feature-Risk.md#feature-fit-risk)**| Success criteria hard to define                                                   |           |                 |
+| **\- [Feature-Fit](../risks/Feature-Risk.md#feature-fit-risk)**| Success criteria hard to define                                                   |           |                 |
 |                                              | Difficult-to-access user base                                                     |           |                 |
 |                                              |                                                                                   |           |                 |
 | **\- [Market Risk](../risks/Feature-Risk.md#market-risk)**  | Rapidly changing market                                                           |           |                 |
@@ -108,8 +107,8 @@ Download this in [PDF](Interference-Checklist.pdf) or [Numbers](Interference-Che
 |                                              | Product needs to find it’s market                                                 |           |                 |
 |                                              |                                                                                   |           |                 |
 | **[Agency Risks](../risks/Agency-Risk.md)** /| 3rd Party involved                                                                |           |                 |
-| **[Trust Risk](Communication-Risk.md#trust--belief-risk)** / | Competitor involvement                                                            |           |                 |
-| **[Security Risks](Agency-Risk.md#security)**| General public involved                                                           |           |                 |
+| **[Trust Risk](../risks/Communication-Risk.md#trust--belief-risk)** / | Competitor involvement                                                            |           |                 |
+| **[Security Risks](../risks/Agency-Risk.md#security)**| General public involved                                                           |           |                 |
 |                                              | Available on the open internet                                                    |           |                 |
 |                                              | Requires authentication / authorisation schemes                                   |           |                 |
 |                                              | Requires cryptography                                                             |           |                 |
@@ -133,7 +132,7 @@ Download this in [PDF](Interference-Checklist.pdf) or [Numbers](Interference-Che
 | **\- [Funding Risk](../risks/Scarcity-Risk.md#funding-risk)**  | Requires payment by a customer for completed work                                 |           |                 |
 |                                              | Requires agreement on pricing / budget                                            |           |                 |
 |                                              |                                                                                   |           |                 |
-| **\- [Staff Risk](/risksScarcity-Risk.md#staff-risk)**  | Requires involvement from other members of staff                                  |           |                 |
+| **\- [Staff Risk](../risks/Scarcity-Risk.md#staff-risk)**  | Requires involvement from other members of staff                                  |           |                 |
 |                                              | Requires hiring-in new specialist skills                                          |           |                 |
 |                                              | Has dependency on key-persons                                                     |           |                 |
 |                                              |                                                                                   |           |                 |
