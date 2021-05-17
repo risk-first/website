@@ -15,11 +15,11 @@ order: 8
 
 # Emotional Software Development
 
-If you are reading this, then you're probably a software developer.  Hopefully, you see value in _doing software development_.  Certainly, at the time of writing, as "software is eating the world" and Google, Apple and Microsoft are some of the largest companies in existence, it seems fair to say that the markets also value software development.   
+If you are reading this, then you're probably a software developer.  Hopefully, you see value in _doing software development_.  Certainly, at the time of writing, as "software is eating the world".  Also, Google, Apple and Microsoft are some of the largest companies in existence, so it seems fair to say that the markets also value software development.   
 
-But _value_ isn't the whole story.  [Thinking Risk-First](../thinking/Start.md) was all about trying to think about value through the prism of _risk_:  we never know exactly how much value we're going to get from doing a task.
+But _value_ isn't the whole story.  [Thinking Risk-First](../thinking/Start.md) was all about trying to re-frame value via the concept of _risk_:  value is never a given, we never know exactly how much value we're going to get from doing a task, so there is always risk.
 
-In this part of Risk-First, we're going to make the bold claim that _value_ itself is actually based entirely on _emotion_.  
+In this part of Risk-First, we're going to make the bold claim that _value_ itself is actually based entirely on _emotion_.    
 
 ## Goals
 
