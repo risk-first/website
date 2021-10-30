@@ -8,9 +8,6 @@ featured:
 layout: categories
 order: 1
 cat: Emotion
-categories:
- - Front
-order: 8
 ---
 
 # Emotional Software Development
