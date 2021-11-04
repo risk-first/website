@@ -82,7 +82,7 @@ Just as human health-risks are relatively well-known and documented, an understa
  - A **Profit and Loss Statement**, showing whether the company is making or losing money from the deals it does.  Companies that consistently lose money will die, so this is a statement that helps investors know what risks they face.  This kind of transparency helps reduce [Agency Risk](../risks/Agency-Risk.md) for investors.
  - A **Cash Flow Statement**, shows the company's cash position and how much cash is entering and leaving the company.  This is important for managing [Liquidity Risk](https://en.wikipedia.org/wiki/Liquidity_risk) - the short-term requirement of cash on-hand to keep the business running.  Some companies can be hugely profitable, but nevertheless fail due to lack of cash. For example, [Northern Rock](https://en.wikipedia.org/wiki/Northern_Rock) failed in the 2007 financial crisis as it was unable to cover short-term payments.
 
-All of these are measured in monetary amounts, but each addresses a different risk.   A healthy commercial entity will be managing all of these kinds of monetary risks, as well as the [Operational Risks](../risks/Operational-Risk.md) of running.
+All of these are measured in monetary amounts, but each addresses a different risk.   A healthy commercial entity will be managing all of these kinds of monetary and [non-monetary](../risks/Operational-Risk.md) risks.
 
 #### ... For A Software Project
 
