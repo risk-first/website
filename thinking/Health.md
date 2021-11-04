@@ -91,7 +91,7 @@ On to the last example: how healthy is the United Kingdom?  It might seem unlike
  - **Impact**  This is an `A-E` scale. `A` means a risk costing < £10m and killing < 8 people.   An `E` impact (the largest), meanwhile has a > £10b cost and > 1000 deaths.  According to this reckoning, pandemics and CBRN (chemical, biological, radiological and nuclear) attacks have the greatest impact.
  - **Likelihood**: This is based on a probability out of 500, again banded into sections.  The lowest risks (1/500) only contains a major transport accident, whilst lots of terrorist attacks exist in the 25-125/500 band.
 
-![UK Government 2020 Risk Matrix](/images/thinking/uk-risk-matrix-2020.png)
+![UK Government 2020 Risk Matrix](../images/thinking/uk-risk-matrix-2020.png)
 
 Why would they produce such a report?  From their introduction:
 

@@ -146,7 +146,7 @@ Since [Coordination](Coordination-Risk.md) is about [Resource Allocation](Coordi
  
 ## In Living Organisms
 
-Vroom and Yetton's organisational model isn't relevant to just teams of people.  We can see it in the natural world too.  Although _the majority_ of cellular life on earth (by weight) is [single celled organisms](http://www.stephenjaygould.org/library/gould_bacteria.html), the existence of _humans_ (to pick a single example) demonstrates that sometimes it's better for cells to try to mitigate [Coordination Risk](Coordination-Risk.md) and work as a team, accepting the [Complexity Risk](Complexity-Risk.md) and [Communication Risk](Communication-Risk.md) this entails.  For example, in the human body, we have:
+Vroom and Yetton's organisational model isn't relevant to just teams of people.  We can see it in the natural world too.  Although _the majority_ of cellular life on earth (by weight) is [single celled organisms](http://archive.today/2012.12.05-091021/http://www.stephenjaygould.org/library/gould_bacteria.html), the existence of _humans_ (to pick a single example) demonstrates that sometimes it's better for cells to try to mitigate [Coordination Risk](Coordination-Risk.md) and work as a team, accepting the [Complexity Risk](Complexity-Risk.md) and [Communication Risk](Communication-Risk.md) this entails.  For example, in the human body, we have:
 
  - **Various [systems](https://en.wikipedia.org/wiki/List_of_systems_of_the_human_body)**: such as the [Respiratory System](https://en.wikipedia.org/wiki/Respiratory_system) or the [Digestive System](https://en.wikipedia.org/wiki/Human_digestive_system).  Each of these systems contains...
  - **Organs**, such as the heart or lungs, which contain..
