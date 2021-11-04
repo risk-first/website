@@ -7,8 +7,8 @@ featured:
   class: bg3
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/8bit-heart.svg">Health</image-artifact>'
 categories: 
- - Misc
-order: 14
+ - Thinking Risk-First
+order: 7
 redirect_from: 
  - /Health
 ---
@@ -32,7 +32,7 @@ I am going to argue in this section that _risks_ are things that affect the heal
  
  - Even **The Dinner Party** is a system - it has inputs of people and ingredients, a process whereby everyone comes together at a particular time to eat and talk.  As we saw in [A Simple Scenario](A-Simple-Scenario.md) it is very easy to damage the health of this system by not providing the right food at the right time.  
  
- - On a larger scale, **The United Kingdom** is a system, the health of which is threatened by various (TODO) risks such as climate change, nuclear war, pandemics and so on.
+ - On a larger scale, **The United Kingdom** is a system, the health of which is threatened by various existential risks such as climate change, nuclear war, pandemics and so on.
   
 ## What Is Health?
 
@@ -88,7 +88,7 @@ A complete [Pattern Language](https://riskfirst.org/risks/A-Pattern-Language) co
 
 On to the last example: how healthy is the United Kingdom?  It might seem unlikely, but as well as producing the _fitness metrics_ (such as GDP, employment, education level, health indicators for the inhabitants) the UK government also produces a [National Risk Register](https://www.gov.uk/government/publications/national-risk-register-2020), which considers various risks (flooding, fires, pandemics, nuclear attack) and produces a matrix comparing:
 
- - **Impact**  This is an `A-E` scale, where `A` means a risk costing < £10m and killing < 8 people.   An `E` impact (the largest), meanwhile has a > £10b cost and > 1000 deaths.  According to this reckoning, pandemics and CBRN (chemical, biological, radiological and nuclear) attacks have the greatest impact.
+ - **Impact**  This is an `A-E` scale. `A` means a risk costing < £10m and killing < 8 people.   An `E` impact (the largest), meanwhile has a > £10b cost and > 1000 deaths.  According to this reckoning, pandemics and CBRN (chemical, biological, radiological and nuclear) attacks have the greatest impact.
  - **Likelihood**: This is based on a probability out of 500, again banded into sections.  The lowest risks (1/500) only contains a major transport accident, whilst lots of terrorist attacks exist in the 25-125/500 band.
 
 ![UK Government 2020 Risk Matrix](/images/thinking/uk-risk-matrix-2020.png)
