@@ -1,4 +1,3 @@
-
 ---
 title: Map And Territory Risk
 description: Risks due to the differences between reality and the internal model of reality, and the assumption that they are equivalent. 

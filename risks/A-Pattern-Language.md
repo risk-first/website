@@ -29,7 +29,7 @@ In the same way, "[Design Patterns: Elements of Reusable Object-Oriented Softwar
 
 ### Patterns For Practitioners
 
-_Design Patterns_ aims to be a set of _useful_ patterns which practitioners could use in their software to achieve certain goals.  ["I have this pattern"](https://c2.com/ppr/wiki/WikiPagesAboutWhatArePatterns/HaveThisPattern.html) was a phrase used to describe how they had seen a certain set of constraints before, and how they had solved it in software.  
+_Design Patterns_ aims to be a set of _useful_ patterns which practitioners could use in their software to achieve certain goals.  ["I have this pattern"](http://c2.com/ppr/wiki/WikiPagesAboutWhatArePatterns/HaveThisPattern.html) was a phrase used to describe how they had seen a certain set of constraints before, and how they had solved it in software.  
 
 That book was a set of experts handing down their battle-tested practices for other developers to use, and, whether you like patterns or not, knowing them is an important part of being a software developer, as you will see them used everywhere you go and probably use them yourself.
 

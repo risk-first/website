@@ -216,6 +216,5 @@ technologies used etc.  That is, the risks faced by IT projects are _too diverse
 
 Reality is messy.  Dressing it up with numbers doesn't change that and you risk [fooling yourself](../risks/Map-And-Territory-Risk.md).  If this is the case, is there any hope at all in what we're doing?  Yes:   _forget precision_.  You should, with experience, be able to hold up two separate risks and answer the question, "is this one bigger than this one?"  
 
-
-With that in mind, let's look at how we can meet reality [as fast and as often as possible](Cadence.md).
+Let's move on now to talk about how risks affect [Health](Health.md)
 

@@ -43,7 +43,7 @@ Early adopters of Agile were enthusiastic pioneers, pushing into new space and c
 
 Zealotry occurs where people see Agile as a solution to all problems, blindly following agile techniques in the belief that they will bring about success _on their own_.  This behaviour is at the heart of the Hype Cycle's Peak of Inflated Expectations:
 
-> "How does the first line of the Agile Manifesto begin? No peeking. Don’t know? That’s fine. It doesn’t matter. It says, “We are uncovering better ways of developing software….” Stop. Notice it says, “developing software.” It does not say, “leaning out your org,” “paying down transformation debt,” “cutting it out with this command-and-control crap,” “focusing on outcomes and getting better at discovery work,” “fixing your medieval budgeting system,” or any of the other far more value-adding things people have tried to glom onto it. But the thing is, when people say that Agile pertains to the whole org, it’s revisionist history. It’s dishonest." - [Charles Lambdin, _Dear Agile, I’m Tired of Pretending (since removed)_](https://medium.com/columbus-egg).
+> "How does the first line of the Agile Manifesto begin? No peeking. Don’t know? That’s fine. It doesn’t matter. It says, “We are uncovering better ways of developing software….” Stop. Notice it says, “developing software.” It does not say, “leaning out your org,” “paying down transformation debt,” “cutting it out with this command-and-control crap,” “focusing on outcomes and getting better at discovery work,” “fixing your medieval budgeting system,” or any of the other far more value-adding things people have tried to glom onto it. But the thing is, when people say that Agile pertains to the whole org, it’s revisionist history. It’s dishonest." - Charles Lambdin, _Dear Agile, I’m Tired of Pretending (since removed)_
 
 This zealotry is [The Peter Principle](https://en.wikipedia.org/wiki/Peter_principle) _applied to ideas_: promoting them beyond their level of competence.  
 
@@ -57,7 +57,7 @@ But Agile is now so main-stream that project managers and business analysts ever
 
 Jonathan Kohl blogs about this too:
 
-> "I have also seen people on Agile teams get marginalized because they aren’t Agile enough... I have seen people be pushed out of projects because they 'didn’t get Agile'. I have seen good solutions turned away because they weren’t in the white book (Extreme Programming Explained). I’ve also seen reckless, unthinking behavior justified because it was 'Agile'." - [Jonathan Kohl, Post Agilism Process Skepticism](https://www.kohl.ca/2006/post-agilism-process-skepticism/)
+> "I have also seen people on Agile teams get marginalized because they aren’t Agile enough... I have seen people be pushed out of projects because they 'didn’t get Agile'. I have seen good solutions turned away because they weren’t in the white book (Extreme Programming Explained). I’ve also seen reckless, unthinking behavior justified because it was 'Agile'." - [Jonathan Kohl, Post Agilism Process Skepticism](http://www.kohl.ca/2006/post-agilism-process-skepticism/)
 
 This is [Enforced Cargo Culting](https://en.wikipedia.org/wiki/Cargo_cult_programming#Cargo_cult_software_engineering) of Agile:  making people adopt Agile whether they want to or not.  Forcing people to adopt certain approaches is a sure-fire way to invite failure.  
 
