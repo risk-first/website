@@ -3,24 +3,22 @@
 	xmlns:xslt="http://www.kite9.org/schema/xslt"
 	xmlns="http://www.kite9.org/schema/adl" name="Health" id="diagram-129">
 
-	<group id="4" style="--kite9-sizing: minimize; ">
+	<container id="4" style="--kite9-sizing: minimize; ">
 		<generic-artifact id="1"
-		  	href="/public/templates/risk-first/wip/gauge.svg">Resource
-		  	Safety</generic-artifact>
+		  	href="/public/templates/risk-first/wip/gauge.svg">Air</generic-artifact>
 		<generic-artifact id="1"
-		  	href="/public/templates/risk-first/wip/gauge.svg">Resource
-		  	Safety</generic-artifact>
+		  	href="/public/templates/risk-first/wip/gauge.svg">Water</generic-artifact>
 		<generic-artifact id="1"
-		  	href="/public/templates/risk-first/wip/gauge.svg">Resource
-		  	Safety</generic-artifact>
-		<description id="4-0">Power and Control</description>
-	</group>
-	<group id="8">
+		  	href="/public/templates/risk-first/wip/gauge.svg">Food</generic-artifact>
+		<label id="4-0">Control of Resources </label>
+	</container>
+	<container id="8">
 		<generic-artifact id="2"
-		  	href="/public/templates/risk-first/redesign/artifacts/component_v2.svg">Health</generic-artifact>
-		<description id="8-0">Survival</description>
-	</group>
-	<link id="6">
+		  	href="/public/templates/risk-first/redesign/artifacts/component_v2.svg">Organism 
+		  	Health</generic-artifact>
+		<label id="8-0">Survival</label>
+	</container>
+	<link id="6" drawDirection="RIGHT">
 		<from reference="4" id="6-0" />
 		<to reference="8" id="6-1" shape="barbed-arrow" />
 		<label id="7" end="from">determines</label>

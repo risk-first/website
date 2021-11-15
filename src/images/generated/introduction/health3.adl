@@ -3,43 +3,33 @@
 	xmlns:xslt="http://www.kite9.org/schema/xslt"
 	xmlns="http://www.kite9.org/schema/adl" name="Health" id="diagram-129">
 
-	<group id="5">
+	<container id="5">
 		<risk id="attendant" class="generic"
-					href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg">
-					<code id="att_1">Attendant</code>
-					<title id="att_2">Some Risk</title>
-				</risk>
+			href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg">
+			<code id="att_1">Attendant</code>
+			<title id="att_2">Poor Diet</title>
+		</risk>
       <risk id="attendant" class="generic"
-					href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg">
-					<code id="att_1">Attendant</code>
-					<title id="att_2">Some Risk</title>
-				</risk>
+			href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg">
+			<code id="att_1">Attendant</code>
+			<title id="att_2">High-Crime Area</title>
+		</risk>
       <risk id="attendant" class="generic"
-					href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg">
-					<code id="att_1">Attendant</code>
-					<title id="att_2">Some Risk</title>
-				</risk>
-	</group>
-
-	<group id="4" style="--kite9-sizing: minimize; ">
-		<generic-artifact id="1"
-		  	href="/public/templates/risk-first/wip/gauge.svg">Resource
-		  	Safety</generic-artifact>
-		<description id="4-0">Power and Control</description>
-	</group>
-	<group id="8">
+			href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg">
+			<code id="att_1">Attendant</code>
+			<title id="att_2">Dangerous Behaviour</title>
+		</risk>
+		<label>Health Risks</label>
+	</container>
+	<container id="8">
 		<generic-artifact id="2"
-		  	href="/public/templates/risk-first/redesign/artifacts/component_v2.svg">Health</generic-artifact>
-		<description id="8-0">Alive vs Dead</description>
-	</group>
-	<link id="6">
-		<from reference="4" id="6-0" />
-		<to reference="8" id="6-1" shape="barbed-arrow" />
-		<label id="7" end="from">determines</label>
-	</link>
-	<link id="6b" drawDirection="RIGHT">
+		  	href="/public/templates/risk-first/redesign/artifacts/component_v2.svg">Personal 
+		  	Health</generic-artifact>
+		<label id="8-0">Survival</label>
+	</container>
+	<link id="6" drawDirection="RIGHT">
 		<from reference="5" id="6-0" />
-		<to reference="4" id="6-1" shape="barbed-arrow" />
-		<label id="7" end="from">determines</label>
+		<to reference="8" id="6-1" shape="barbed-arrow" />
+		<label id="7" end="from">factors</label>
 	</link>
 </diagram>

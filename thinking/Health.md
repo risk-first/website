@@ -82,6 +82,8 @@ Simply looking at "Dead vs Alive", "Fitness" or "Resources" isn't the whole stor
 
 So, we have to go further and consider - what are the health risks I am exposed to?   What are the risks due to my environment, my diet, my behaviour?   If I live in a high-crime area, in a high-fire-risk house, engaging in lots of dangerous activities then this should be taken into account when judging my health.
 
+![Risks affecting health](/images/generated/introduction/health3.png)
+
 #### ... For A Commercial Entity
 
 It is the same for a **commercial entity** too.  Looking at metrics doesn't tell you whether your business is about to be obsoleted by a new invention, or whether your factory is about to turn into a human tragedy (such as in the [Bhopal Disaster](https://en.wikipedia.org/wiki/Bhopal_disaster)).
@@ -118,8 +120,6 @@ Why would they produce such a report?  From their introduction:
 This is about the health of a nation:  _tracking the risks you face_ and then _managing them_ are an important way to stay healthy.
 
 If we do this for _personal health_, _corporate health_ and _societal health_, is it not clear that this is a good practice to perform at the level of a software project?
-
-![Risks affecting health](/images/generated/introduction/health3.png)
 
 The next two sections focus on how to do this:  in the next section, [Cadence](Cadence.md) we will look at the importance of feedback loops on monitoring the risks you face.  Then in [De-Risking](De-Risking.md) we will look at general strategies for managing risks on software projects.
 
