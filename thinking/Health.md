@@ -24,11 +24,11 @@ I am going to argue in this section that _risks_ are things that affect the heal
 
  - **A Living Organism**, such as the human body, which is exposed to _health risks_, such as [Cardiovascular Disease](https://en.wikipedia.org/wiki/Cardiovascular_disease) or [Parkinson's Disease](https://en.wikipedia.org/wiki/Parkinson's_disease).  
  
- - **A Software Product** is a thing we interact with, built out of code.  As we saw in [Development Process](Development Process.md), the health of that software is damaged by the existence of [bugs]() and [missing features]().
+ - **A Software Product** is a thing we interact with, built out of code.  As we saw in [Development Process](Development-Process.md), the health of that software is damaged by the existence of [bugs](../risks/Feature-Risk.md#implementation-risk) and [missing features](../risks/Feature-Risk.md#feature-fit-risk).
  
  - **A Project**, like making a film or organising a [dinner party](A-Simple-Scenario.md). 
  
- - **A Commercial Entity**, such as a business, which is exposed to various [Operational Risks](../risks/Operational-Risk.md) in order to continue to function.  Businesses face different health risks than organisms:  [key staff leaving](), [reputation damage](), [running out of money]() and so on.
+ - **A Commercial Entity**, such as a business, which is exposed to various [Operational Risks](../risks/Operational-Risk.md) in order to continue to function.  Businesses face different health risks than organisms:  [key staff leaving](../risks/Agency-Risk.md#the-hero), [reputation damage](../risks/Communication-Risk.md#trust--belief-risk), [running out of money](../risks/Scarcity-Risk.md#funding-risk) and so on.
 
  - On a larger scale, **a State** is a system, the health of which is threatened by various existential risks such as revolution, climate change, nuclear war and so on.
  
@@ -46,7 +46,7 @@ The most obvious indicator of health in _living things_ is whether they're alive
 
 When a living thing is no longer exhibiting these behaviours, it is dead.  But, the same is true of our other examples too:  businesses go bust, projects get cancelled, dinner parties end.  At the larger end of this scale, we can say that a country or a project is alive so long as there are people participating in it:  to be alive, the constituent components must be alive too.
 
-The problem with "Alive vs. Dead" is that it is binary - there is no scope for "improving" or "worsening" health.  I could be involved in an accident that severely limits my capability, but leaves me alive - my health is definitely worse though.   So, let's look further.
+The problem with "Alive vs. Dead" is that it is binary - there is no scope for "improving" or "worsening" health.  I could be involved in an accident that severely limits my capability, but leaves me alive - my health is definitely worse though.
 
 ### Fitness
 
@@ -66,7 +66,7 @@ Metrics are difficult though.  Choosing the _right_ metrics, knowing their weakn
 
 ### Critical Acclaim
 
-Measuring fitness as you go along is not always possible.  For a lot of projects, like dinner parties, films, construction projects, the success or failure has to be judged subjectively on completion, and not before.  Essentially, the project is a [bet](../Glossary.md#bet) on a future outcome. 
+Measuring fitness as you go along is not always possible.  For a lot of projects, like dinner parties, films, construction projects, the success or failure has to be judged subjectively on completion, and not before.  Essentially, the project is a [bet](Glossary.md#bet) on a future outcome. 
 
 Building a new feature on a software project fits into this category:  although you can build tests, do demos and run beta-test programmes the full picture of the health of what you've built won't emerge until later.  Setting up effective feedback loops is the subject of the next section, on [cadence](Cadence.md).
 
