@@ -224,7 +224,7 @@ The diagram above summarises the risks raised in some of the available literatur
 <!-- markdown-link-check-disable -->
 
  - `sd4`: [SaaS Checklist - Nine Factors to Consider](https://www.zdnet.com/article/saas-checklist-nine-factors-to-consider-when-selecting-a-vendor)
- - `sd5`: [How to Evaluate SaaS Vendors.](https://sandhill.com/article/how-to-evaluate-saas-vendors-five-key-considerations)
+ - `sd5`: [How to Evaluate SaaS Vendors.](https://sandhill.com/article/how-to-evaluate-saas-vendors-five-key-considerations/)
  
  <!-- markdown-link-check-enable -->
 
