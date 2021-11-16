@@ -99,15 +99,15 @@ So, we have to go further and consider - what are the health risks I am exposed 
 
 #### ... For A Commercial Entity
 
-It is the same for a **commercial entity** too.  Looking at metrics doesn't tell you whether your business is about to be obsoleted by a new invention, or whether your factory is about to turn into a human tragedy (such as in the [Bhopal Disaster](https://en.wikipedia.org/wiki/Bhopal_disaster)).
-
 Just as human health-risks are relatively well-known and documented, an understanding of the risks to **commercial entities** has been built up over time. Accounting requires a certain set of measurements (all measured in monetary units), which are the same for all companies:
 
  - A **Balance Sheet**, showing what the company owns and owes.  This is used for reporting [Funding Risk](https://financial-dictionary.thefreedictionary.com/Funding+risk) - that is, does the company have too much debt, given its assets?  
  - A **Profit and Loss Statement**, showing whether the company is making or losing money from the deals it does.  This kind of transparency helps reduce [Agency Risk](../risks/Agency-Risk.md) for investors.
- - A **Cash Flow Statement**, shows the company's cash position and how much cash is entering and leaving the company.  This is important for managing [Liquidity Risk](https://en.wikipedia.org/wiki/Liquidity_risk) - the short-term requirement of cash on-hand to keep the business running.  
+ - A **Cash Flow Statement**, shows the company's cash position and how much cash is entering and leaving the company.  This is important for managing [Liquidity Risk](https://en.wikipedia.org/wiki/Liquidity_risk) - the short-term requirement of cash on-hand to keep the business running. 
+ 
+All of these are measured in monetary amounts, but each addresses a different risk.   
 
-All of these are measured in monetary amounts, but each addresses a different risk.   A healthy commercial entity will be managing all of these kinds of monetary and [non-monetary](../risks/Operational-Risk.md) risks.
+A healthy commercial entity will be managing all of these kinds of monetary and [non-monetary](../risks/Operational-Risk.md) risks: jooking at metrics doesn't tell you whether your business is about to be obsoleted by a new invention, or whether your factory is about to turn into a human tragedy (such as in the [Bhopal Disaster](https://en.wikipedia.org/wiki/Bhopal_disaster)).
 
 #### ...For A State
 
@@ -130,7 +130,9 @@ Over time, as a species, we have built up a detailed body of knowledge on the ri
 
 If all of these disparate domains are tracking health risks, it not clear that this is a good practice to perform at the level of a software project?
 
-The purpose of [Risk First](https://riskfirst.org) is to try to build that body of knowledge for software development.  Risks are in general _not_ unique on software projects - they are the same ones over and over again, such as [Communication Risk](../risks/Communication-Risk.md) or [Dependency Risk](../risks/Dependency-Risk.md).  Every project faces these.  
+The purpose of [Risk First](https://riskfirst.org) is to try to build that body of knowledge for software development.  Risks are in general _not_ unique on software projects - they are the same ones over and over again, such as [Communication Risk](../risks/Communication-Risk.md) or [Dependency Risk](../risks/Dependency-Risk.md).  
+
+Every project faces these.  
 
 A complete [Pattern Language](../risks/A-Pattern-Language.md) covering all the main categories of risks you face on a software project starts [here](https://riskfirst.org/risks/Start).
 
