@@ -66,25 +66,30 @@ Metrics are difficult though.  Choosing the _right_ metrics, knowing their weakn
 
 ### Critical Acclaim
 
-Measuring fitness as you go along is not always possible.  For a lot of projects, like dinner parties, films, construction projects, the success or failure has to be judged subjectively on completion, and not before.  Essentially, the project is a [bet](Glossary.md#bet) on a future outcome. 
+Measuring fitness as you go along is not always possible.  For a lot of projects, like dinner parties, films or construction projects, the success or failure has to be judged subjectively on completion, and not before.  Essentially, the project is a [bet](Glossary.md#bet) on a future outcome. 
 
-Building a new feature on a software project fits into this category:  although you can build tests, do demos and run beta-test programmes the full picture of the health of what you've built won't emerge until later.  Setting up effective feedback loops is the subject of the next section, on [cadence](Cadence.md).
+Building a new feature on a software project fits into this category:  although you can build tests, do demos and run beta-test programmes the full picture of the health of what you've built won't emerge until later.  
+
+Nevertheless, setting up effective, early feedback loops is important, and it's the subject of the next section, on [cadence](Cadence.md).
 
 ### Power and Safety
 
-Although you might not have visibility of the end result, sometimes it's enough to care about the health of the process itself.  So another perspective on health is that it relates to control of resources:  does the project/person/business control of the resources it needs to survive?   
+Although you might not have visibility of the _end result_, sometimes it's enough to care about _the health of the process itself_.  So a fourth perspective on health is:  does the project/person/business control the resources it needs?
 
-When we consider health in these terms, it makes sense that risk is usually measured in money, since if you have money, you can usually spend your way out of trouble.   But there are plenty of things money can't buy - if you are lost in a desert then no amount of money is going to help you find safety - your resources are limited to what is around you.  Lots of health problems _can't_ be solved just with money.  
+![Health as a product of Power and Safety](../images/generated/introduction/health2.png)   
 
 When talking about **businesses**, economists call these resources [Factors of Production](https://en.wikipedia.org/wiki/Factors_of_production), dividing them into categories like land, labour and capital.  
 
 The resources of **a state** are employed to create some kind of organisation (feed armies, build roads, create currency, run governments), whether it is a democracy or a dictatorship.  When the resources dry up or are stolen, the state can fall apart resulting in civil wars and anarchy.  Leaders of states need to understand which resources are the sources of their power.  CGP Grey's excellent [Rules for Rulers](https://www.cgpgrey.com/blog/rules-for-rulers) video explains how this works in great detail, and covers why government doesn't always do the best things for it's subjects. 
 
-![Health as a product of Power and Safety](../images/generated/introduction/health2.png)
 
 ### Risk Exposure
 
-Simply looking at "Survival, "Fitness" or "Resources" isn't the whole story of health.   Personally, I might be perfectly happy and (apparently) healthy one moment, but then fall down dead from heart failure the next due to some inherited heart condition.  Was I, in fact, healthy?  Similarly, I could live happily on an island with plenty of food, and have it all washed away overnight in a storm.  Health isn't just about considering where you are now, but also how _precarious_ the position might be.
+We've looked at health from four alternative angles: "Survival", "Fitness", "Acclaim" and "Resources". 
+
+But this still isn't the whole story of health:   Personally, I might be perfectly happy and (apparently) healthy one moment, but then fall down dead from heart failure the next due to some inherited heart condition.  Was I, in fact, healthy?  
+
+Or, I could live happily on an island with plenty of food but have it all washed away overnight in a storm.  Health isn't just about considering where you are now, but also how _precarious_ the position might be.
 
 So, we have to go further and consider - what are the health risks I am exposed to?   What are the risks due to my environment, my diet, my behaviour?   If I live in a high-crime area, in a high-fire-risk house, engaging in lots of dangerous activities then this should be taken into account when judging my health.
 
@@ -97,25 +102,17 @@ It is the same for a **commercial entity** too.  Looking at metrics doesn't tell
 Just as human health-risks are relatively well-known and documented, an understanding of the risks to **commercial entities** has been built up over time. Accounting requires a certain set of measurements (all measured in monetary units), which are the same for all companies:
 
  - A **Balance Sheet**, showing what the company owns and owes.  This is used for reporting [Funding Risk](https://financial-dictionary.thefreedictionary.com/Funding+risk) - that is, does the company have too much debt, given its assets?  
- - A **Profit and Loss Statement**, showing whether the company is making or losing money from the deals it does.  Companies that consistently lose money will die, so this is a statement that helps investors know what risks they face.  This kind of transparency helps reduce [Agency Risk](../risks/Agency-Risk.md) for investors.
- - A **Cash Flow Statement**, shows the company's cash position and how much cash is entering and leaving the company.  This is important for managing [Liquidity Risk](https://en.wikipedia.org/wiki/Liquidity_risk) - the short-term requirement of cash on-hand to keep the business running.  Some companies can be hugely profitable, but nevertheless fail due to lack of cash. For example, [Northern Rock](https://en.wikipedia.org/wiki/Northern_Rock) failed in the 2007 financial crisis as it was unable to cover short-term payments.
+ - A **Profit and Loss Statement**, showing whether the company is making or losing money from the deals it does.  This kind of transparency helps reduce [Agency Risk](../risks/Agency-Risk.md) for investors.
+ - A **Cash Flow Statement**, shows the company's cash position and how much cash is entering and leaving the company.  This is important for managing [Liquidity Risk](https://en.wikipedia.org/wiki/Liquidity_risk) - the short-term requirement of cash on-hand to keep the business running.  
 
 All of these are measured in monetary amounts, but each addresses a different risk.   A healthy commercial entity will be managing all of these kinds of monetary and [non-monetary](../risks/Operational-Risk.md) risks.
 
-#### ...For A Software Project
-
-Over time, as a species, we have built up a detailed body of knowledge on the risks that afflict _human_ health, as well as the ones that affect the health of _commercial entities_.  
-
-The purpose of [Risk First](https://riskfirst.org) is to try to build that body of knowledge for software development.  Risks are in general _not_ unique on software projects - they are the same ones over and over again, such as [Communication Risk](../risks/Communication-Risk.md) or [Dependency Risk](../risks/Dependency-Risk.md).  Every project faces these.  
-
-A complete [Pattern Language](https://riskfirst.org/risks/A-Pattern-Language) covering all the main categories of risks you face on a software project starts [here](https://riskfirst.org/risks/Start).
-
 #### ...For A State
 
-On to the last example: how healthy is the United Kingdom?  It might seem unlikely, but as well as producing the _fitness metrics_ (such as GDP, employment, education level, health indicators for the inhabitants) the UK government also produces a [National Risk Register](https://www.gov.uk/government/publications/national-risk-register-2020), which considers various risks (flooding, fires, pandemics, nuclear attack) and produces a matrix comparing:
+How healthy is the United Kingdom?  As well as producing metrics such as GDP, employment, education level, etc. the UK government also produces a [National Risk Register](https://www.gov.uk/government/publications/national-risk-register-2020), which considers various risks (flooding, fires, pandemics, nuclear attack) and produces a matrix comparing:
 
- - **Impact**  This is an `A-E` scale. `A` means a risk costing < £10m and killing < 8 people.   An `E` impact (the largest), meanwhile has a > £10b cost and > 1000 deaths.  According to this reckoning, pandemics and CBRN (chemical, biological, radiological and nuclear) attacks have the greatest impact.
- - **Likelihood**: This is based on a probability out of 500, again banded into sections.  The lowest risks (1/500) only contains a major transport accident, whilst lots of terrorist attacks exist in the 25-125/500 band.
+ - **Impact**  This is an `A-E` scale. `A` means a risk costing less than £10m and killing fewer than 8 people.   An `E` impact (the largest), meanwhile has a greater than £10b cost and more than 1000 deaths.  According to this reckoning, pandemics and CBRN (chemical, biological, radiological and nuclear) attacks have the greatest impact.
+ - **Likelihood**: This is based on a probability out of 500, again banded into sections.  
 
 ![UK Government 2020 Risk Matrix](../images/thinking/uk-risk-matrix-2020.png)
 
@@ -125,7 +122,15 @@ Why would they produce such a report?  From their introduction:
 
 This is about the health of a nation:  _tracking the risks you face_ and then _managing them_ are an important way to stay healthy.
 
-If we do this for _personal health_, _corporate health_ and _societal health_, is it not clear that this is a good practice to perform at the level of a software project?
+#### ...For Software Projects
+
+Over time, as a species, we have built up a detailed body of knowledge on the risks that afflict _human_ health, _commercial entities_ and countries like the UK have started modelling risk at _state level_.
+
+If all of these disparate domains are tracking health risks, it not clear that this is a good practice to perform at the level of a software project?
+
+The purpose of [Risk First](https://riskfirst.org) is to try to build that body of knowledge for software development.  Risks are in general _not_ unique on software projects - they are the same ones over and over again, such as [Communication Risk](../risks/Communication-Risk.md) or [Dependency Risk](../risks/Dependency-Risk.md).  Every project faces these.  
+
+A complete [Pattern Language](../risks/A-Pattern-Language.md) covering all the main categories of risks you face on a software project starts [here](https://riskfirst.org/risks/Start).
 
 The next two sections focus on how to do this:  in the next section, [Cadence](Cadence.md) we will look at the importance of feedback loops on monitoring the risks you face.  Then in [De-Risking](De-Risking.md) we will look at general strategies for managing risks on software projects.
 
