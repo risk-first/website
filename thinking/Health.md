@@ -16,11 +16,7 @@ redirect_from:
 
 # Health and Risk
 
-In [A Simple Scenario](A-Simple-Scenario.md) we looked at risks to a dinner party, before moving to risks to a software product in [Development Process](Development Process.md).  In the last section, [Evaluating Risk](Evaluating-Risk.md) we looked at various _monetary_ measures we can use for measuring risk, like discounting and NPV (Net Present Value).  
-
-Commonly, this is how people in industries like banking and insurance have thought about risk - as risk measured in _money_.  
-
-But risk isn't just money.  Life is filled with non-monetary risks:
+As we saw in the last section, [Evaluating Risk](Evaluating-Risk.md), people in industries like banking and insurance think mainly about risk measured in _money_.  But risk isn't just money.  Life is filled with non-monetary risks:
 
 > "If someone says, 'You can make it!' down a vertical mountain when you don't ski very well, think about it before launching. This can be a turning point in your life. It sure was in mine when I slammed into the mountain.   I wish I'd said, 'F'getabout it, sucka,' and gone to the Kiddie Corral. Would have saved a lot of pain and surgery.  Think about this. What are you really up for? Is the thrill worth the cost?"  — Sandy Nathan
 
@@ -28,7 +24,9 @@ I am going to argue in this section that _risks_ are things that affect the heal
 
  - **A Living Organism**, such as the human body, which is exposed to _health risks_, such as [Cardiovascular Disease](https://en.wikipedia.org/wiki/Cardiovascular_disease) or [Parkinson's Disease](https://en.wikipedia.org/wiki/Parkinson's_disease).  
  
- - **A Software Product** is a thing we interact with, built out of code.  As we saw in [Development Process](Development Process.md), the health of that software is damaged by the existence of [bugs]() and [missing features](). 
+ - **A Software Product** is a thing we interact with, built out of code.  As we saw in [Development Process](Development Process.md), the health of that software is damaged by the existence of [bugs]() and [missing features]().
+ 
+ - **A Project**, like making a film or organising a [dinner party](A-Simple-Scenario.md). 
  
  - **A Commercial Entity**, such as a business, which is exposed to various [Operational Risks](../risks/Operational-Risk.md) in order to continue to function.  Businesses face different health risks than organisms:  [key staff leaving](), [reputation damage](), [running out of money]() and so on.
 
@@ -66,9 +64,15 @@ Metrics are difficult though.  Choosing the _right_ metrics, knowing their weakn
 
 ![Measuring Fitness](/images/generated/introduction/health1.png)
 
+### Critical Acclaim
+
+Measuring fitness as you go along is not always possible.  For a lot of projects, like dinner parties, films, construction projects, the success or failure has to be judged subjectively on completion.  Building a new feature on a software project fits into this category:  although you can build tests, do demos and run beta-test programmes the full picture of the health of what you've built won't emerge until later.  Setting up effective feedback loops is the subject of the next section, on [cadence](Cadence.md).
+
 ### Power and Safety
 
-Another perspective on health is that it relates to control of resources:  do you have control of the resources you need to survive?   When we consider health in these terms, it makes sense that risk is usually measured in money, since if you have money, you can usually spend your way out of trouble.   But there are plenty of things money can't buy - if you are lost in a desert then no amount of money is going to help you find safety - your resources are limited to what is around you.  Likewise, lots of health problems _can't_ be solved just with money.  
+Although you might not have visibility of the end result, sometimes it's enough to care about the health of the process itself.  So another perspective on health is that it relates to control of resources:  does the project/person/business control of the resources it needs to survive?   
+
+When we consider health in these terms, it makes sense that risk is usually measured in money, since if you have money, you can usually spend your way out of trouble.   But there are plenty of things money can't buy - if you are lost in a desert then no amount of money is going to help you find safety - your resources are limited to what is around you.  Lots of health problems _can't_ be solved just with money.  
 
 When talking about **businesses**, economists call these resources [Factors of Production](https://en.wikipedia.org/wiki/Factors_of_production), dividing them into categories like land, labour and capital.  
 
@@ -78,7 +82,7 @@ The resources of **a state** are employed to create some kind of organisation (f
 
 ### Risk Exposure
 
-Simply looking at "Dead vs Alive", "Fitness" or "Resources" isn't the whole story of health.   Personally, I might be perfectly happy and (apparently) healthy one moment, but then fall down dead from heart failure the next due to some inherited heart condition.  Was I, in fact, healthy?  Similarly, I could live happily on an island with plenty of food, and have it all washed away overnight in a storm.  Health isn't just about considering where you are now, but also how _precarious_ the position might be.
+Simply looking at "Survival, "Fitness" or "Resources" isn't the whole story of health.   Personally, I might be perfectly happy and (apparently) healthy one moment, but then fall down dead from heart failure the next due to some inherited heart condition.  Was I, in fact, healthy?  Similarly, I could live happily on an island with plenty of food, and have it all washed away overnight in a storm.  Health isn't just about considering where you are now, but also how _precarious_ the position might be.
 
 So, we have to go further and consider - what are the health risks I am exposed to?   What are the risks due to my environment, my diet, my behaviour?   If I live in a high-crime area, in a high-fire-risk house, engaging in lots of dangerous activities then this should be taken into account when judging my health.
 
