@@ -62,7 +62,7 @@ A different approach to judging the health of a thing might be to take measureme
 
 Metrics are difficult though.  Choosing the _right_ metrics, knowing their weaknesses and being aware of what knowledge is missing is a whole other discussion which we look at in [Map And Territory Risk](https://riskfirst.org/risks/Map-And-Territory-Risk).  Taking the car plant example again, what does it mean to produce a hundred cars a day?  Is it good or bad?  Is this directly tied into how healthy our business is?  Does it matter if the cars aren't selling?
 
-![Measuring Fitness](/images/generated/introduction/health1.png)
+![Measuring Fitness](../images/generated/introduction/health1.png)
 
 ### Critical Acclaim
 
@@ -80,7 +80,7 @@ When talking about **businesses**, economists call these resources [Factors of P
 
 The resources of **a state** are employed to create some kind of organisation (feed armies, build roads, create currency, run governments), whether it is a democracy or a dictatorship.  When the resources dry up or are stolen, the state can fall apart resulting in civil wars and anarchy.  Leaders of states need to understand which resources are the sources of their power.  CGP Grey's excellent [Rules for Rulers](https://www.cgpgrey.com/blog/rules-for-rulers) video explains how this works in great detail, and covers why government doesn't always do the best things for it's subjects. 
 
-![Health as a product of Power and Safety](/images/generated/introduction/health2.png)
+![Health as a product of Power and Safety](../images/generated/introduction/health2.png)
 
 ### Risk Exposure
 
@@ -88,7 +88,7 @@ Simply looking at "Survival, "Fitness" or "Resources" isn't the whole story of h
 
 So, we have to go further and consider - what are the health risks I am exposed to?   What are the risks due to my environment, my diet, my behaviour?   If I live in a high-crime area, in a high-fire-risk house, engaging in lots of dangerous activities then this should be taken into account when judging my health.
 
-![Risks affecting health](/images/generated/introduction/health3.png)
+![Risks affecting health](../images/generated/introduction/health3.png)
 
 #### ... For A Commercial Entity
 
