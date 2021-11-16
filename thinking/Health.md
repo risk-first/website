@@ -44,6 +44,8 @@ However, in all these cases, health refers to something slightly different, perh
 
 The most obvious indicator of health in _living things_ is whether they're alive or dead.  But since there is no clear definition of exactly [what a living thing is](https://en.wikipedia.org/wiki/Life), scientists fall back to describing the _behaviours_ of living things, such as [metabolism](https://en.wikipedia.org/wiki/Metabolism) (taking in energy or other inputs, and using it to self-organise), [homeostasis](https://en.wikipedia.org/wiki/Homeostasis) (having some kind of feedback loops to maintain an internal state) or [adaptation](https://en.wikipedia.org/wiki/Cellular_adaptation) (responding to changes in the environment).
 
+![Healthy Behaviours](/images/generated/introduction/health4.png)
+
 When a living thing is no longer exhibiting these behaviours, it is dead.  But, the same is true of our other examples too:  businesses go bust, projects get cancelled, dinner parties end.  At the larger end of this scale, we can say that a country or a project is alive so long as there are people participating in it:  to be alive, the constituent components must be alive too.
 
 The problem with "Alive vs. Dead" is that it is binary - there is no scope for "improving" or "worsening" health.  I could be involved in an accident that severely limits my capability, but leaves me alive - my health is definitely worse though.
@@ -62,7 +64,7 @@ A different approach to judging the health of a thing might be to take measureme
 
 Metrics are difficult though.  Choosing the _right_ metrics, knowing their weaknesses and being aware of what knowledge is missing is a whole other discussion which we look at in [Map And Territory Risk](https://riskfirst.org/risks/Map-And-Territory-Risk).  Taking the car plant example again, what does it mean to produce a hundred cars a day?  Is it good or bad?  Is this directly tied into how healthy our business is?  Does it matter if the cars aren't selling?
 
-![Measuring Fitness](../images/generated/introduction/health1.png)
+![Measuring Fitness](/images/generated/introduction/health1.png)
 
 ### Critical Acclaim
 
@@ -76,7 +78,7 @@ Nevertheless, setting up effective, early feedback loops is important, and it's 
 
 Although you might not have visibility of the _end result_, sometimes it's enough to care about _the health of the process itself_.  So a fourth perspective on health is:  does the project/person/business control the resources it needs?
 
-![Health as a product of Power and Safety](../images/generated/introduction/health2.png)   
+![Health as a product of Power and Safety](/images/generated/introduction/health2.png)   
 
 When talking about **businesses**, economists call these resources [Factors of Production](https://en.wikipedia.org/wiki/Factors_of_production), dividing them into categories like land, labour and capital.  
 
@@ -93,7 +95,7 @@ Or, I could live happily on an island with plenty of food but have it all washed
 
 So, we have to go further and consider - what are the health risks I am exposed to?   What are the risks due to my environment, my diet, my behaviour?   If I live in a high-crime area, in a high-fire-risk house, engaging in lots of dangerous activities then this should be taken into account when judging my health.
 
-![Risks affecting health](../images/generated/introduction/health3.png)
+![Risks affecting health](/images/generated/introduction/health3.png)
 
 #### ... For A Commercial Entity
 
@@ -114,7 +116,7 @@ How healthy is the United Kingdom?  As well as producing metrics such as GDP, em
  - **Impact**  This is an `A-E` scale. `A` means a risk costing less than £10m and killing fewer than 8 people.   An `E` impact (the largest), meanwhile has a greater than £10b cost and more than 1000 deaths.  According to this reckoning, pandemics and CBRN (chemical, biological, radiological and nuclear) attacks have the greatest impact.
  - **Likelihood**: This is based on a probability out of 500, again banded into sections.  
 
-![UK Government 2020 Risk Matrix](../images/thinking/uk-risk-matrix-2020.png)
+![UK Government 2020 Risk Matrix](/images/thinking/uk-risk-matrix-2020.png)
 
 Why would they produce such a report?  From their introduction:
 
