@@ -23,9 +23,13 @@ The process of removing physical, spatial, or temporal details or attributes in 
 
 Agency is the capacity of an actor to act in a given environment.  We use the term _agent_ to refer to any process, person, system or organisation with agency. _See: [Agency Risk](../risks/Agency-Risk.md)_
 
-## Balance Of Risk
+### Balance Of Risk
 
 The distribution of possible returns, given the set of risks you face from your position on the [Risk Landscape](#risk-landscape).  _See: [The Purpose of The Development Team](../bets/Purpose-Development-Team.md)_
+
+### Bet
+
+Taking a decision to move somewhere new on the [Risk Landscape](#risk-landscape) and change the [Balance Of Risk](#balance-of-risk).  _See: [Coding Bets](../bets/Coding-Bets.md)_
 
 ### Feedback Loop
 

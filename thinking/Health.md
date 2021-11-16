@@ -32,13 +32,13 @@ I am going to argue in this section that _risks_ are things that affect the heal
 
  - On a larger scale, **a State** is a system, the health of which is threatened by various existential risks such as revolution, climate change, nuclear war and so on.
  
-These examples are all at different scales, and could be nested within each other.   You might be working on a software product for a team inside an organisation operating in a certain country.   You are probably going to have to consider the health of more than one of those things _as well as our own health_.  Sometimes, as discussed in [Agency Risk](../risks/Agency-Risk.md) these can be in conflict with one another. 
+These examples are all at different scales, and could be nested within each other.   You might be working on a software product for a team inside an organisation operating in a certain country.   You are probably going to have to consider the health of more than one of those things _as well as your own health_.  Sometimes, as discussed in [Agency Risk](../risks/Agency-Risk.md) these can be in conflict with one another. 
   
 ## What Is Health?
 
 Health is a really universal property: it seems like you can talk about the health of nearly everything: I can talk about the health of soil (how likely things are to grow in it), of a table (whether it might collapse or not), a tree (whether it looks nice and is growing) or a political party (whether it's membership is strong and growing).  
 
-However, in all these cases, health refers to something slightly different, often depending on our own point-of-view.  So, it's generally an overloaded term, so let's look at some specific meanings for health.
+However, in all these cases, health refers to something slightly different, perhaps subjective.  It's an overloaded term, so let's look at some specific meanings for health.
 
 ### Health as Survival
 
@@ -66,7 +66,9 @@ Metrics are difficult though.  Choosing the _right_ metrics, knowing their weakn
 
 ### Critical Acclaim
 
-Measuring fitness as you go along is not always possible.  For a lot of projects, like dinner parties, films, construction projects, the success or failure has to be judged subjectively on completion.  Building a new feature on a software project fits into this category:  although you can build tests, do demos and run beta-test programmes the full picture of the health of what you've built won't emerge until later.  Setting up effective feedback loops is the subject of the next section, on [cadence](Cadence.md).
+Measuring fitness as you go along is not always possible.  For a lot of projects, like dinner parties, films, construction projects, the success or failure has to be judged subjectively on completion, and not before.  Essentially, the project is a [bet](../Glossary.md#bet) on a future outcome. 
+
+Building a new feature on a software project fits into this category:  although you can build tests, do demos and run beta-test programmes the full picture of the health of what you've built won't emerge until later.  Setting up effective feedback loops is the subject of the next section, on [cadence](Cadence.md).
 
 ### Power and Safety
 
