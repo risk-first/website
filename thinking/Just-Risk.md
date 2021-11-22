@@ -11,6 +11,7 @@ categories:
 order: 5
 redirect_from: 
  - /Just-Risk
+tweet: yes
 ---
 
 # Just Risk

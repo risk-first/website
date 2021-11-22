@@ -11,6 +11,7 @@ categories:
 order: 8
 redirect_from: 
  - /Cadence
+tweet: yes
 ---
 
 # Cadence

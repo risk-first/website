@@ -13,11 +13,12 @@ featured:
 redirect_from: 
  - /post/news/2019/06/19/InfoQ
  - /2019/06/19/InfoQ
+tweet: yes
 ---
 
 # InfoQ
 
-Ben Linders at InfoQ just wrote an article about Risk-First.  
+Ben Linders at InfoQ wrote an article about Risk-First.  
 
 You can check it out [here](https://www.infoq.com/articles/book-review-risk-free-software-development/)
 

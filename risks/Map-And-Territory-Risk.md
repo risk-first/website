@@ -11,6 +11,7 @@ categories:
  - Risks
 redirect_from: 
  - /Map-And-Territory-Risk
+tweet: yes
 ---
 
 # Map And Territory Risk

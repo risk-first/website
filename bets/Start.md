@@ -12,6 +12,7 @@ cat: Bets
 categories:
  - Front
 order: 5
+tweet: yes
 ---
 
 # On Bets

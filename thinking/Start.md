@@ -13,6 +13,7 @@ categories:
 order: 2
 redirect_from:
  - /All-About-Risk
+tweet: yes
 ---
 
 

@@ -12,7 +12,7 @@ order: 6
 
 # Introducing: SAME
 
-_under construction_
+![Under Construction](../images/state/uc.png)
 
 Below is a piece of Java code I wrote the other day.  We're not going to look into it too closely (and in fact, this post isn't really even about Java _per se_), so here are the key take-aways:
    

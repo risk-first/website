@@ -12,6 +12,7 @@ featured:
 redirect_from: 
  - /Risk-First-Diagrams
  - /overview/Risk-First-Diagrams
+tweet: yes
 ---
 
 

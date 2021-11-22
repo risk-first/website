@@ -11,6 +11,7 @@ categories:
  - Thinking Risk-First
 redirect_from: 
  - /Development-Process
+tweet: yes
 ---
 
 # Development Process

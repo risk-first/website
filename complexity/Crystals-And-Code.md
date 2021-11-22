@@ -9,6 +9,7 @@ featured:
 categories:
  - Complexity
 order: 2
+tweet: yes
 ---
 
 # Crystals And Code

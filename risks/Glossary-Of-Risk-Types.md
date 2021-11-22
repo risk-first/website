@@ -11,6 +11,7 @@ categories:
 order: 17
 redirect_from: 
  - /Glossary-Of-Risk-Types
+tweet: yes
 ---
 
 

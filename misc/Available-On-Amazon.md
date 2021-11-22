@@ -13,6 +13,7 @@ featured:
 redirect_from: 
  - /post/news/2019/02/25/Available-On-Amazon
  - /2019/02/25/Available-On-Amazon
+tweet: yes
 ---
 
 # Available On Amazon

@@ -10,6 +10,7 @@ featured:
 categories:
  - Bets
 order: 3
+tweet: yes
 ---
 
 # Debugging Bets

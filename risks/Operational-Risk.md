@@ -11,6 +11,7 @@ categories:
  - Risks
 redirect_from: 
  - /Operational-Risk
+tweet: yes
 ---
 
 # Operational Risk

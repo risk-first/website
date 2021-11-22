@@ -11,6 +11,7 @@ featured:
 order: 12
 redirect_from: 
  - /Agency-Risk
+tweet: yes
 ---
 
 # Agency Risk

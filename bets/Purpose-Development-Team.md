@@ -10,6 +10,7 @@ featured:
 categories:
  - Bets
 order: 1
+tweet: yes
 ---
 
 # The Purpose Of The Development Team

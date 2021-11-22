@@ -11,6 +11,7 @@ categories:
  - Risks
 redirect_from: 
  - /Complexity-Risk
+tweet: yes
 ---
 
 # Complexity Risk

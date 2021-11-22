@@ -10,6 +10,7 @@ featured:
 categories:
  - Bets
 order: 2
+tweet: yes
 ---
 
 # Coding Bets

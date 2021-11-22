@@ -11,6 +11,7 @@ categories:
 order: 10
 redirect_from: 
  - /A-Conversation
+tweet: yes
 ---
 
 

@@ -11,6 +11,7 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/quick-summary.svg">Quick Summary</image-artifact>'
 redirect_from: 
  - /Quick-Summary
+tweet: yes
 ---
 
 # Quick Summary

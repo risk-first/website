@@ -11,6 +11,7 @@ featured:
 order: 1
 redirect_from: 
  - /A-Simple-Scenario
+tweet: yes
 ---
 
 # A Simple Scenario

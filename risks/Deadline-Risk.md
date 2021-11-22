@@ -11,6 +11,7 @@ categories:
  - Risks
 redirect_from: 
  - /Deadline-Risk
+tweet: yes
 ---
 
 # Deadline Risk

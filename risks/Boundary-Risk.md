@@ -11,6 +11,7 @@ categories:
  - Risks
 redirect_from: 
  - /Boundary-Risk
+tweet: yes
 ---
 
 # Boundary Risk

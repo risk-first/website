@@ -11,6 +11,7 @@ categories:
  - Risks
 redirect_from: 
  - /Feature-Risk
+tweet: yes
 ---
 
 # Feature Risk

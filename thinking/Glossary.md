@@ -11,6 +11,7 @@ categories:
 order: 12
 redirect_from: 
  - /Glossary
+tweet: yes
 ---
 
 # Glossary

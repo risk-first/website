@@ -11,6 +11,7 @@ categories:
  - Risks
 redirect_from: 
  - /Process-Risk
+tweet: yes
 ---
 
 # Process Risk

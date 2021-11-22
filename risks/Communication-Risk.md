@@ -11,6 +11,7 @@ categories:
  - Risks
 redirect_from: 
  - /Communication-Risk
+tweet: yes
 ---
 
 # Communication Risk

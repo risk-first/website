@@ -14,6 +14,7 @@ redirect_from:
  - /post/popular/2019/07/16/Post-Agile
  - /post/news/2019/07/16/Post-Agile
  - /2019/07/16/Post-Agile
+tweet: yes
 ---
 
 # Post-Agile

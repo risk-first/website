@@ -13,7 +13,7 @@ featured:
 redirect_from: 
  - /post/news/2020/01/15/3d-Programming
  - /2020/01/15/3d-Programming
-
+tweet: yes
 ---
 
 # 3D Programming

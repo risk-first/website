@@ -11,6 +11,7 @@ categories:
  - Risks
 redirect_from: 
  - /Staging-And-Classifying
+tweet: yes
 ---
 
 # Staging and Classifying

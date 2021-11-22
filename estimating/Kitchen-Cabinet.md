@@ -9,6 +9,7 @@ featured:
 categories:
  - Estimating
 order: 2
+tweet: yes
 ---
 
 # Kitchen Cabinets

@@ -9,6 +9,7 @@ order: 5
 featured: 
   class: bg1
   element: '<action>Estimates</action>'
+tweet: yes
 ---
 
 # Estimates

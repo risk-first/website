@@ -11,6 +11,7 @@ categories:
  - Risks
 redirect_from: 
  - /Software-Dependency-Risk
+tweet: yes
 ---
 
 # Software Dependency Risk

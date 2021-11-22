@@ -10,6 +10,7 @@ featured:
 order: 4
 categories:
   - Front
+tweet: yes
 ---
 
 # Risks

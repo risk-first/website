@@ -9,6 +9,7 @@ featured:
 categories:
  - Estimating
 order: 5
+tweet: yes
 ---
 
 # Analogies
@@ -79,7 +80,7 @@ The total value of a network is based on the number of people (towns / machines 
 
 This is encapsulated in Metcalfe's Law, which says the value of a network is based on the square of it's size: 
 
-> "The law has often been illustrated using the example of fax machines: a single fax machine is useless, but the value of every fax machine increases with the total number of fax machines in the network, because the total number of people with whom each user may send and receive documents increases.  Likewise, in social networks, the greater number of users with the service, the more valuable the service becomes to the community. " - [Metcalfe's Law, _Wikipedia_](https://en.wikipedia.org/wiki/Metcalfe%27s_law)
+> "The law has often been illustrated using the example of fax machines: a single fax machine is useless, but the value of every fax machine increases with the total number of fax machines in the network, because the total number of people with whom each user may send and receive documents increases.  Likewise, in social networks, the greater number of users with the service, the more valuable the service becomes to the community. " - [Metcalfe's Law, _Wikipedia_](https://en.wikipedia.org/wiki/Metcalfes_law)
 
 ### Exploring vs. Road-Laying
 

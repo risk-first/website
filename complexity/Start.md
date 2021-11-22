@@ -11,6 +11,7 @@ cat: Complexity
 categories:
  - Front
 order: 7 
+tweet: yes
 ---
 
 # On Complexity

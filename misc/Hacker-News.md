@@ -13,6 +13,7 @@ featured:
 redirect_from: 
  - /post/news/2019/05/14/Hacker-News
  - /2019/05/14/Hacker-News
+tweet: yes
 ---
 
 # Consuming Hacker News

@@ -11,6 +11,7 @@ categories:
 order: 1
 redirect_from: 
  - /A-Pattern-Language
+tweet: yes
 ---
 
 # A Pattern Language

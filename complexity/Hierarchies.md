@@ -9,6 +9,7 @@ featured:
 categories:
  - Complexity
 order: 1
+tweet: yes
 ---
 
 # Hierarchies

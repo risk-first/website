@@ -11,6 +11,7 @@ categories:
 order: 4
 redirect_from: 
  - /Meeting-Reality
+tweet: yes
 ---
 
 # Meeting Reality

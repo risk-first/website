@@ -11,6 +11,7 @@ categories:
  - Risks
 redirect_from: 
  - /Scarcity-Risk
+tweet: yes
 ---
 
 # Scarcity Risk

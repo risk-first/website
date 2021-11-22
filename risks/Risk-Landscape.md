@@ -11,6 +11,7 @@ categories:
  - Risks
 redirect_from: 
  - /Risk-Landscape
+tweet: yes
 ---
 
 # The Risk Landscape

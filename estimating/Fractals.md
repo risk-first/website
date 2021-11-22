@@ -9,6 +9,7 @@ featured:
 categories:
  - Estimating
 order: 4
+tweet: yes
 ---
 
 # Fractals
@@ -34,7 +35,7 @@ So, that means:
  
 Let's look at a simple mathematical example of a shape like this, the [Koch Snowflake](https://en.wikipedia.org/wiki/Koch_snowflake).
 
-![Koch Snowflake](https://upload.wikimedia.org/wikipedia/commons/f/fd/Von_Koch_curve.gif)
+<!--replace ![Koch Snowflake](../images/estimates/koch.png)-->![Koch Snowflake](https://upload.wikimedia.org/wikipedia/commons/f/fd/Von_Koch_curve.gif)<!--endreplace-->
 
 <div id="koch" />
 

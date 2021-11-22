@@ -10,6 +10,7 @@ featured:
 categories:
   - Estimating
 order: 8
+tweet: yes
 ---
 
 # On Story Points

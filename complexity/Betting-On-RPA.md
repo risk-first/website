@@ -9,6 +9,7 @@ featured:
 categories:
  - Complexity
 order: 4
+tweet: yes
 ---
 
 # Betting On RPA

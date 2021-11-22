@@ -13,6 +13,7 @@ featured:
 redirect_from: 
  - /post/2019/03/22/Twitter-Cards
  - /2019/03/22/Twitter-Cards
+tweet: yes
 ---
 
 # Twitter Cards

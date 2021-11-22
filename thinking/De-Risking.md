@@ -11,6 +11,7 @@ categories:
 order: 9
 redirect_from: 
  - /De-Risking
+tweet: yes
 ---
 
 # De-Risking

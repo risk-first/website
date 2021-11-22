@@ -11,6 +11,7 @@ categories:
 order: 6
 redirect_from: 
  - /Evaluating-Risk
+tweet: yes
 ---
 
 # Evaluating Risk
