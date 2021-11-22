@@ -1,5 +1,0 @@
-
-
-# Emotion Work
-
-In 
