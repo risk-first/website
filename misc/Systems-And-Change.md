@@ -4,7 +4,8 @@ description: How all successful systems must balance the desire for change again
 url: https://riskfirst.org/misc/Systems-And-Change
 featured: 
   class: bg1
-  element: '<risk class="process" />'
+  element: '<risk href="/public/templates/risk-first/redesign/risks/dependency_process_risk_v2.svg"><code id="s">D-Pr</code>
+					<title id="s">Systems And Change</title></risk>'
 layout: categories
 order: 1
 categories:
