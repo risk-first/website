@@ -26,7 +26,7 @@ Businesses are familiar with this push-back too.  The "New Coke" fiasco is the c
 
 Governments also find it hard to impose change, even when they have a mandate.   Another classic example is the introduction of the "Poll Tax" in the UK:
 
-> "As the amount of the poll tax began to rise and the inefficiency of local councils in their collection of the tax became apparent, large numbers of people refused to pay. Local councils tried to respond with enforcement measures, but they were largely ineffective given the huge numbers of non-payers. According to the BBC, up to 30 per cent of former ratepayers in some areas refused to pay." - Poll Tax, _Wikipedia_
+> "As the amount of the poll tax began to rise and the inefficiency of local councils in their collection of the tax became apparent, large numbers of people refused to pay. Local councils tried to respond with enforcement measures, but they were largely ineffective given the huge numbers of non-payers. According to the BBC, up to 30 per cent of former ratepayers in some areas refused to pay." - [Poll Tax, _Wikipedia_](https://en.wikipedia.org/wiki/Poll_tax_(Great_Britain))
 
 ## Preventing Unwanted Change
 
@@ -48,6 +48,6 @@ All systems have to balance two things:
 
 2) Homeostasis: ensuring that the system is in balance, and stays running.    A system that doesn't contain feedback loops and defences against change in its environment will fail quickly.  A classic example is how your body regulates temperature, but also consider how an online game bans cheats, or how a factory maintains supply levels.
 
-> "Homeostasis is brought about by a natural resistance to change when already in the optimal conditions, and equilibrium is maintained by many regulatory mechanisms. " - [Homeostasis, _Wikipedia_](https://en.wikipedia.org/wiki/Homeostasis)
+> "Homeostasis is brought about by a natural resistance to change when already in the optimal conditions, and equilibrium is maintained by many regulatory mechanisms." - [Homeostasis, _Wikipedia_](https://en.wikipedia.org/wiki/Homeostasis)
 
 These two things are in tension:  one is pushing for change, one is asking for things to stay the same.   More on this in [Agency Risk](../risks/Agency-Risk.md)
