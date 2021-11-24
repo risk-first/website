@@ -15,7 +15,7 @@ order: 14
 
 Is resistance-to-change a biological characteristic, or one that is exhibited by all systems?
 
-Software developers are all familiar with the problem of getting a new system accepted.  People are resistant to change.  Change means effort - learning, familiarisation, moving out of your comfort zone, embracing the new... all while trying to get your original job done.   It's very easy to be anti-new system, and push back against it.  Learning curves are hard!  
+Software developers are all familiar with the problem of getting a new system accepted.  People are resistant to change.  Change means effort - learning, familiarisation, moving out of your comfort zone, embracing the new... All while trying to get your original job done.   It's very easy to be anti-new system, and push back against it.  Learning curves are hard!  
 
 And new software is quite often a let-down.  So many new IT systems have been failures that it's easy to dismiss them all.    Also, the first version of anything is likely to be buggy, with lots of sharp corners.   No one wants to be the one to discover those and help smooth them out.
 
