@@ -45,7 +45,9 @@ Secondly, _Coordination beats Competition_.  Why is this?   Because of the law o
 
 ![Law Of Diminishing Returns](../images/numbers/sharing.png)
 
-The winner-takes-all model means lower average utility than sharing resources. 
+We can see this in the chart above.  Let's say A and B compete over a resource, of which there are 5 units available.  For every extra A takes, B loses one.  The X axis shows A's consumption of the resource. While the biggest benefit to A is in taking _all_ of the resources, the greatest _increase_ in benefit comes from the consumption of the first unit. 
+
+As you can see, by _sharing_, it's possible that the _total benefit_ is greater than it can be for either individual.  But sharing requires coordination.  Further, the more competitors involved, the _worse_ a winner-take-all outcome is for total benefit. 
 
 But, you might say, "this is exactly what decentralised block-chains and so on are designed to prevent!"  But currently, Cryptocurrency doesn't solve _aggregator-wins_.  Here's why:
 
