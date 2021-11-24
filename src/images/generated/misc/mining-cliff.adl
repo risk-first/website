@@ -1,0 +1,34 @@
+<diagram
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+	xmlns:xslt="http://www.kite9.org/schema/xslt"
+	xmlns="http://www.kite9.org/schema/adl" name="Mining cliff" id="diagram-129" style="--kite9-layout: RIGHT; ">
+
+	<group>
+		<risk id="1" href="/public/templates/risk-first/redesign/risks/feature_market_risk_v2.svg">
+			<code id="code">F-Ma</code>
+            <title id="title">Market Risk</title>
+		</risk>
+		<label>Competition 
+		Amongst 
+		Miners</label>
+	</group>	
+	
+	<action id="2">Create Mining Pools / 
+	Greater Coordination</action>
+	
+	<group>
+		<risk class="trust" id="3">Trust Risk</risk>
+		<label>51% Problem</label>
+	</group>
+
+	<align>
+		<from reference="1" />
+		<to reference="2" />
+	</align>
+	
+	<align>
+		<from reference="2" />
+		<to reference="3" />
+	</align>
+
+</diagram>
