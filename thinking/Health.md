@@ -1,8 +1,7 @@
 ---
 title: Health
-description: Systems can die just as easily as people can.
+description: Can a product be good with a bad team behind it?
 url: https://riskfirst.org/thinking/Health
-
 featured: 
   class: bg3
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/8bit-heart.svg">Health</image-artifact>'
@@ -137,7 +136,7 @@ A complete [Pattern Language](../risks/A-Pattern-Language.md) covering all the m
 
 ## Nested Health
 
-![Nested Health](../images/generated/thinking/health-nested.png)
+![Nested Health](../images/generated/introduction/health-nested.png)
 
 The examples we've looked at so far are all at different scales, and could be nested within each other.   
 

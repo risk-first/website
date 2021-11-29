@@ -7,14 +7,15 @@
 
 		<container id="4.1" style="--kite9-sizing: minimize; ">
 			<container id="4.2" style="--kite9-sizing: minimize; ">
-			
-			  <artifact class="agent" />
+			<generic-artifact id="2" href="/public/templates/risk-first/redesign/risks/agency_risk_v2.svg">Team Member</generic-artifact>
+			<generic-artifact id="2" href="/public/templates/risk-first/redesign/risks/agency_risk_v2.svg">Team Member</generic-artifact>
+			<generic-artifact id="2" href="/public/templates/risk-first/redesign/risks/agency_risk_v2.svg">Team Member</generic-artifact>
 			
 				<label id="4-1">Team Health</label>
 			</container>
 			<label id="4-2">Organisation Health</label>
 		</container>
-		<label id="4-0">Country Health</label>
+		<label id="4-0">State Health</label>
 	</container>
 
 	<container id="8">
@@ -24,8 +25,8 @@
 	</container>
 
 	<link id="6" drawDirection="RIGHT">
-		<from reference="4" id="6-0" />
+		<from reference="4.2" id="6-0" />
 		<to reference="8" id="6-1" shape="barbed-arrow" />
-		<label id="7" end="from">affects</label>
+		<label id="7" end="to">builds</label>
 	</link>
 </diagram>
