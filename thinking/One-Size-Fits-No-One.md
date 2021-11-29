@@ -1,6 +1,6 @@
 ---
 title: One Size Fits No-One
-description: Explanation of why there can't be a perfect software methodology.
+description: There can't be a perfect software methodology.  Here's why.
 url: https://riskfirst.org/thinking/One-Size-Fits-No-One
 
 featured: 

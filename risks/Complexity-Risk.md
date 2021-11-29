@@ -1,6 +1,6 @@
 ---
 title: Complexity Risk
-description: Risks caused by the weight of complexity in the systems we create, and their resistance to change and comprehension.
+description: A lot of advice around constructing software comes back to simplicity.  Why?
 url: https://riskfirst.org/risks/Complexity-Risk
 
 featured: 

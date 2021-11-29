@@ -1,6 +1,6 @@
 ---
 title: Communication Risk
-description: Risks due to the difficulty of communicating with other entities, be they people, software, processes etc.
+description: Why is it so hard to be understood?
 url: https://riskfirst.org/risks/Communication-Risk
 
 featured: 

@@ -1,6 +1,6 @@
 ---
 title: Evaluating Risk
-description: Risk management theory around evaluating risk, e.g. Eisenhower's box, NPV, Discounting.
+description: Eisenhower's box, NPV and Discounting explained.
 url: https://riskfirst.org/thinking/Evaluating-Risk
 
 featured: 

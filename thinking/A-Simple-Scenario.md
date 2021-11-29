@@ -1,6 +1,6 @@
 ---
 title: A Simple Scenario
-description: An introduction to the idea that managing risk underpins all activity on projects.
+description: What is the one thing every project needs to control to be successful?
 url: https://riskfirst.org/thinking/A-Simple-Scenario
 
 categories: 

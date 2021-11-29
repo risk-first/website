@@ -9,6 +9,7 @@ order: 1
 categories:
  - Misc
 order: 15
+tweet: yes
 ---
 
 # Web3
@@ -20,7 +21,7 @@ That is the problem of _aggregator-wins_.
 Let's look at a few popular examples:
 
 - **Amazon aggregating online shopping.**  Amazon are the most popular online retailer.  They aggregate other retailers and bring customers together.
-- **Linux Distros aggregating open-source software.**  Although the distributions are open-source, and consist almost entirely of open-source software, it's the distros that make the money (through support / licensing agreements etc), whereas the guy who maintains `grep` is probably doing it for the love of it.
+- **Linux Distros aggregating open-source software.**  Although the distributions are open-source, and consist almost entirely of open-source software, it's the distros that make the money (through support / licensing agreements etc).  Whereas the guy who maintains `grep`, -a vital part of that distro- is probably doing it for the love of it.
 - **Social networks aggregate audience.**  This is a well-understood problem:  the biggest social networks are the most profitable.   
 - **Google + Facebook aggregate online advertising.** They have built out a common aggregation platform so they don't need to [compete with each other](https://archive.md/wI14a).
 - **AWS "owning" ElasticSearch (et al.)**  Although ElasticSearch is a viable product, they're seeing their profits bleed away as Amazon are able to offer ElasticSearch as a SaaS option within AWS.  The aggregator wins again.
@@ -31,11 +32,9 @@ To understand this, we need to understand why it happens in the first place.   T
 
 ## The Virtuous Circle of Evolution
 
-Study the following model.  This is how the big get bigger.
-
 ![A Virtuous Circle](../images/generated/misc/virtuous-circle.png)
 
-Successful platforms beget success.   This is why we see a power-law distribution of wealth in the world, and also why platforms like Wordpress are orders of magnitude more successful than its rivals like Drupal.  As we discussed in Boundary Risk:
+As shown in the above diagram, successful platforms beget success.  This is how the big get bigger.   This is why we see a power-law distribution of wealth in the world, and also why platforms like Wordpress are orders of magnitude more successful than its rivals like Drupal.  As we discussed in Boundary Risk:
 
 > "Did WordPress gain this march because it was always _better_ than Drupal?  That's arguable.  Certainly, they're not different enough that WordPress is 16x better.  That it's this way round could be _entirely accidental_, and a result of the Network Effect." - [Boundary Risk, _Risk First_](../risks/Boundary-Risk.md)
 
