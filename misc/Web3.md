@@ -4,7 +4,7 @@ description: To be successful, Web3 still has one huge problem to solve.
 url: https://riskfirst.org/misc/Web3
 featured: 
   class: bg1
-  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cycle.svg">Web2</image-artifact>'
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cycle.svg">Web3</image-artifact>'
 order: 1
 categories:
  - Misc
