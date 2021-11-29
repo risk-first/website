@@ -1,6 +1,6 @@
 ---
 title: Meeting Reality
-description: The risk mitigating strategy of testing your ideas against reality.
+description: Are you living in an ivory tower, or do you have boots on the ground?
 url: https://riskfirst.org/thinking/Meeting-Reality
 
 featured: 

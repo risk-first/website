@@ -1,6 +1,6 @@
 ---
 title: Just Risk
-description: An argument that all tasks in software development are focused on managing risks.
+description: Are all tasks in software development just managing risk?
 url: https://riskfirst.org/thinking/Just-Risk
 
 featured: 

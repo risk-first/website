@@ -6,7 +6,6 @@ featured:
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/tape-measure.svg">Miscellaneous</image-artifact>'
 layout: categories
-order: 1
 cat: Misc
 categories:
  - None

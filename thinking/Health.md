@@ -1,6 +1,6 @@
 ---
 title: Health
-description: Looking at risks as dangers to the health of a system
+description: Systems can die just as easily as people can.
 url: https://riskfirst.org/thinking/Health
 
 featured: 
@@ -33,11 +33,9 @@ I am going to argue in this section that _risks_ are things that affect the heal
 
  - On a larger scale, **a State** is a system, the health of which is threatened by various existential risks such as revolution, climate change, nuclear war and so on.
  
-These examples are all at different scales, and could be nested within each other.   You might be working on a software product for a team inside an organisation operating in a certain country.   You are probably going to have to consider the health of more than one of those things _as well as your own health_.  Sometimes, as discussed in [Agency Risk](../risks/Agency-Risk.md) these can be in conflict with one another. 
-  
 ## What Is Health?
 
-Health is a really universal property: it seems like you can talk about the health of nearly everything: I can talk about the health of soil (how likely things are to grow in it), of a table (whether it might collapse or not), a tree (whether it looks nice and is growing) or a political party (whether it's membership is strong and growing).  
+Health is a really universal property.   I've deliberately chosen these examples to be at different _scales_, to demonstrate that health is not just something that applies to living things.  It seems like you can talk about the health of nearly everything: I can talk about the health of soil (how likely things are to grow in it), of a table (whether it might collapse or not), a tree (whether it looks nice and is growing) or a political party (whether it's membership is strong and growing).  
 
 However, in all these cases, health refers to something slightly different, perhaps subjective.  It's an overloaded term, so let's look at some specific meanings for health.
 
@@ -136,6 +134,18 @@ The purpose of [Risk First](https://riskfirst.org) is to try to build that body 
 Every project faces these.  
 
 A complete [Pattern Language](../risks/A-Pattern-Language.md) covering all the main categories of risks you face on a software project starts [here](https://riskfirst.org/risks/Start).
+
+## Nested Health
+
+![Nested Health](../images/generated/thinking/health-nested.png)
+
+The examples we've looked at so far are all at different scales, and could be nested within each other.   
+
+Sometimes, as discussed in [Agency Risk](../risks/Agency-Risk.md) these can be in conflict with one another.  For example, putting in [a heroic effort](../risks/Agency-Risk.md#the-hero) might save a project but at the expense of your personal health.  
+
+At other times, the health of the elements are going to be related:  you might be working on a software product for a team inside an organisation operating in a certain country.   You are probably going to have to consider the health of more than one of those things.  Can a team be "healthy" if the organisation it is contained within is dying?  Probably not.
+
+## Next 
 
 The next two sections focus on how to do this:  in the next section, [Cadence](Cadence.md) we will look at the importance of feedback loops on monitoring the risks you face.  Then in [De-Risking](De-Risking.md) we will look at general strategies for managing risks on software projects.
 

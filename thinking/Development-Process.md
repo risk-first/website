@@ -1,6 +1,6 @@
 ---
 title: Development Process
-description: An example of how a development process reduces risk on a software project. 
+description: Why do we even have processes in software development? 
 url: https://riskfirst.org/thinking/Development-Process
 
 featured: 

@@ -1,6 +1,6 @@
 ---
 title: De-Risking
-description: Terms to use when talking about risk on a project.
+description: What can you do with the risks on a software project?
 url: https://riskfirst.org/thinking/De-Risking
 
 featured: 

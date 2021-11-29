@@ -1,6 +1,6 @@
 ---
 title: Agency Risk
-description: Explanation of Agency Risk and ways to mitigate it through monitoring, security and goal alignment.
+description: People all have their own agendas.  What do you do about that?
 url: https://riskfirst.org/risks/Agency-Risk
 
 categories:

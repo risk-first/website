@@ -1,6 +1,6 @@
 ---
 title: Coordination Risk
-description: Risks that a group of agents cannot work together and their behaviour devolves into competition.
+description: What prevents us working as a team?  Why are distributed systems so hard?
 url: https://riskfirst.org/risks/Coordination-Risk
 
 featured: 
