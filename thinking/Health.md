@@ -118,7 +118,7 @@ How healthy is the United Kingdom?  As well as producing metrics such as GDP, em
 
 Why would they produce such a report?  From their introduction:
 
-> "The 2020 National Risk Register sets out the range of risks and challenges we face which have the potential to cause significant disruption to the UK, and explains what the government and partners are doing to mitigate these risks and how we all can prepare for and respond to them"
+> "The 2020 National Risk Register sets out the range of risks and challenges we face which have the potential to cause significant disruption to the UK, and explains what the government and partners are doing to mitigate these risks and how we all can prepare for and respond to them" - [National Risk Register 2020, _UK Government_](https://www.gov.uk/government/publications/national-risk-register-2020)
 
 This is about the health of a nation:  _tracking the risks you face_ and then _managing them_ are an important way to stay healthy.
 
