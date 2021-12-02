@@ -18,6 +18,8 @@ tweet: yes
 
 In this section, I am going to propose the idea that _everything_ productive you do on a software project is Risk Management.
 
+![Rule 1: All Work is Managing Risk](/images/generated/rules/1.png)
+
 In the [Development Process](Development-Process.md) section, we observed that all the activities in a simple methodology had a part to play in exposing different risks.  They worked to manage risk prior to them creating bigger problems in production.
 
 Here, we'll look at one of the tools in the Project Manager's tool-box, the [RAID Log](http://pmtips.net/blog-new/raid-logs-introduction), and observe how risk-centric it is.
