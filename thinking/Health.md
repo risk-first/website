@@ -16,31 +16,31 @@ tweet: yes
 
 # Health and Risk
 
-As we saw in the last section, [Evaluating Risk](Evaluating-Risk.md), people in industries like banking and insurance think mainly about risk measured in _money_.  But risk isn't just money.  Life is filled with non-monetary risks:
+People in industries like banking and insurance think mainly about risk measured in _money_.  But risk isn't just money.  Life is filled with non-monetary risks.
 
 > "If someone says, 'You can make it!' down a vertical mountain when you don't ski very well, think about it before launching. This can be a turning point in your life. It sure was in mine when I slammed into the mountain.   I wish I'd said, 'F'getabout it, sucka,' and gone to the Kiddie Corral. Would have saved a lot of pain and surgery.  Think about this. What are you really up for? Is the thrill worth the cost?" - Sandy Nathan
 
-I am going to argue in this section that _risks_ are things that affect the health of a thing, where the thing could be:
+I am going to argue here that _risks_ are things that affect the health of a thing, where the thing could be:
 
- - **A Living Organism**, such as the human body, which is exposed to _health risks_, such as [Cardiovascular Disease](https://en.wikipedia.org/wiki/Cardiovascular_disease) or [Parkinson's Disease](https://en.wikipedia.org/wiki/Parkinson's_disease).  
+ - **A Living Organism**, such as the human body, which is exposed to _health risks_, such as [Cardiovascular Disease](https://en.wikipedia.org/wiki/Cardiovascular_disease).  
  
- - **A Software Product** is a thing we interact with, built out of code.  As we saw in [Development Process](Development-Process.md), the health of that software is damaged by the existence of [bugs](../risks/Feature-Risk.md#implementation-risk) and [missing features](../risks/Feature-Risk.md#feature-fit-risk).
+ - **A Software Product** is a thing we interact with, built out of code.  As we saw in [Development Process](Development-Process.md), the health of that software is damaged by the existence of [bugs and missing features](../risks/Feature-Risk.md).
  
  - **A Project**, like making a film or organising a [dinner party](A-Simple-Scenario.md). 
  
- - **A Commercial Entity**, such as a business, which is exposed to various [Operational Risks](../risks/Operational-Risk.md) in order to continue to function.  Businesses face different health risks than organisms:  [key staff leaving](../risks/Agency-Risk.md#the-hero), [reputation damage](../risks/Communication-Risk.md#trust--belief-risk), [running out of money](../risks/Scarcity-Risk.md#funding-risk) and so on.
+ - **A Commercial Entity**, such as a business, which is exposed to various [Operational Risks](../risks/Operational-Risk.md) in order to continue to function.  Businesses face different health risks than organisms, like  key staff leaving, reputation damage or running out of money.
 
- - On a larger scale, **a State** is a system, the health of which is threatened by various existential risks such as revolution, climate change, nuclear war and so on.
+ - On a larger scale, **a State** is a system, the health of which is threatened by various existential risks such as revolution, climate change or nuclear attack.
  
 ## What Is Health?
 
-Health is a really universal property.   I've deliberately chosen these examples to be at different _scales_, to demonstrate that health is not just something that applies to living things.  It seems like you can talk about the health of nearly everything: I can talk about the health of soil (how likely things are to grow in it), of a table (whether it might collapse or not), a tree (whether it looks nice and is growing) or a political party (whether it's membership is strong and growing).  
+Health is a really universal property.   I've deliberately chosen these examples to be at different _scales_, to demonstrate that health is not just something that applies to living things.  It seems like you can talk about the health of nearly everything.  I can talk about the health of soil (how likely things are to grow in it), of a table (whether it might collapse or not), a tree (whether it looks nice and is growing) or a political party (whether it's membership is strong and growing).  
 
 However, in all these cases, health refers to something slightly different, perhaps subjective.  It's an overloaded term, so let's look at some specific meanings for health.
 
 ### Health as Survival
 
-The most obvious indicator of health in _living things_ is whether they're alive or dead.  But since there is no clear definition of exactly [what a living thing is](https://en.wikipedia.org/wiki/Life), scientists fall back to describing the _behaviours_ of living things, such as [metabolism](https://en.wikipedia.org/wiki/Metabolism) (taking in energy or other inputs, and using it to self-organise), [homeostasis](https://en.wikipedia.org/wiki/Homeostasis) (having some kind of feedback loops to maintain an internal state) or [adaptation](https://en.wikipedia.org/wiki/Cellular_adaptation) (responding to changes in the environment).
+The most obvious indicator of health in _living things_ is whether they're alive or dead.  But since there is no clear definition of exactly [what a living thing is](https://en.wikipedia.org/wiki/Life), scientists fall back to describing the _behaviours_ of living things.  For example, [metabolism](https://en.wikipedia.org/wiki/Metabolism) (taking in energy or other inputs, and using it to self-organise), [homeostasis](https://en.wikipedia.org/wiki/Homeostasis) (having some kind of feedback loops to maintain an internal state) or [adaptation](https://en.wikipedia.org/wiki/Cellular_adaptation) (responding to changes in the environment).
 
 ![Healthy Behaviours](../images/generated/introduction/health4.png)
 
@@ -50,11 +50,11 @@ The problem with "Alive vs. Dead" is that it is binary - there is no scope for "
 
 ### Fitness
 
-A different approach to judging the health of a thing might be to take measurements of it and compare it to other things.  For example, we could say the health of a battery is related to the amount of charge it contains compared to a new battery, or the health of soil by the quantity and quality of crops it produces compared to some average of other soils.  
+A different approach to judging the health of a thing might be to take measurements of it and compare it to other things.  For example, we could say the health of a battery is related to the amount of charge it contains compared to a new battery, or the health of soil by the quantity and quality of crops it produces.  
 
- - For **people**, you can measure health by looking at things like resting heart rate, blood pressure, lung capacity and so on.  Also, there are tools like the [SF-36](https://en.wikipedia.org/wiki/SF-36) which aim to capture (via survey) the general health of people, by asking them about their physical and mental functioning, emotional well-being, stress etc.
+ - For **people**, you can measure health by looking at things like resting heart rate, blood pressure or lung capacity.  Also, there are tools like the [SF-36](https://en.wikipedia.org/wiki/SF-36) which aim to capture (via survey) the general health of people, by asking them about their physical and mental functioning, emotional well-being, stress etc.
 
- - For **a business** (say, a car factory) you could create metrics for the number of cars completed, the defect rate, the number of workplace accidents per year and so on.  
+ - For **a business** (say, a car factory) you could create metrics for the number of cars completed, the defect rate, or the number of workplace accidents per year.  
 
  - For **a software product** you could look at things like number of users, licenses, downloads or some other metric.  
  
@@ -69,8 +69,6 @@ Metrics are difficult though.  Choosing the _right_ metrics, knowing their weakn
 Measuring fitness as you go along is not always possible.  For a lot of projects, like dinner parties, films or construction projects, the success or failure has to be judged subjectively on completion, and not before.  Essentially, the project is a [bet](Glossary.md#bet) on a future outcome. 
 
 Building a new feature on a software project fits into this category:  although you can build tests, do demos and run beta-test programmes the full picture of the health of what you've built won't emerge until later.  
-
-Nevertheless, setting up effective, early feedback loops is important, and it's the subject of the next section, on [cadence](Cadence.md).
 
 ### Power and Safety
 
@@ -87,9 +85,9 @@ The resources of **a state** are employed to create some kind of organisation (f
 
 We've looked at health from four alternative angles: "Survival", "Fitness", "Acclaim" and "Resources". 
 
-But this still isn't the whole story of health:   Personally, I might be perfectly happy and (apparently) healthy one moment, but then fall down dead from heart failure the next due to some inherited heart condition.  Was I, in fact, healthy?  
+But this still isn't the whole story of health:   Personally, I might be perfectly happy and (apparently) healthy one moment, but then fall down dead from heart failure the next due to some inherited heart condition.  Or, I could live happily on an island with plenty of food but have it all washed away overnight in a storm. 
 
-Or, I could live happily on an island with plenty of food but have it all washed away overnight in a storm.  Health isn't just about considering where you are now, but also how _precarious_ the position might be.
+Health isn't just about considering where you are now, but also how _precarious_ the position might be.
 
 So, we have to go further and consider - what are the health risks I am exposed to?   What are the risks due to my environment, my diet, my behaviour?   If I live in a high-crime area, in a high-fire-risk house, engaging in lots of dangerous activities then this should be taken into account when judging my health.
 
@@ -105,11 +103,11 @@ Just as human health-risks are relatively well-known and documented, an understa
  
 All of these are measured in monetary amounts, but each addresses a different risk.   
 
-A healthy commercial entity will be managing all of these kinds of monetary and [non-monetary](../risks/Operational-Risk.md) risks: jooking at metrics doesn't tell you whether your business is about to be obsoleted by a new invention, or whether your factory is about to turn into a human tragedy (such as in the [Bhopal Disaster](https://en.wikipedia.org/wiki/Bhopal_disaster)).
+A healthy commercial entity will be managing all of these kinds of monetary and [non-monetary](../risks/Operational-Risk.md) risks.  Just looking at metrics doesn't tell you whether your business is about to be obsoleted by a new invention, or whether your factory is about to turn into a human tragedy (such as in the [Bhopal Disaster](https://en.wikipedia.org/wiki/Bhopal_disaster)).
 
 #### ...For A State
 
-How healthy is the United Kingdom?  As well as producing metrics such as GDP, employment, education level, etc. the UK government also produces a [National Risk Register](https://www.gov.uk/government/publications/national-risk-register-2020), which considers various risks (flooding, fires, pandemics, nuclear attack) and produces a matrix comparing:
+How healthy is the United Kingdom?  As well as producing metrics such as GDP, employment, education level, etc., the UK government also produces a [National Risk Register](https://www.gov.uk/government/publications/national-risk-register-2020). This considers various risks (flooding, fires, pandemics, nuclear attack) and produces a matrix comparing:
 
  - **Impact**  This is an `A-E` scale. `A` means a risk costing less than £10m and killing fewer than 8 people.   An `E` impact (the largest), meanwhile has a greater than £10b cost and more than 1000 deaths.  According to this reckoning, pandemics and CBRN (chemical, biological, radiological and nuclear) attacks have the greatest impact.
  - **Likelihood**: This is based on a probability out of 500, again banded into sections.  
@@ -149,20 +147,3 @@ At other times, the health of the elements are going to be related:  you might b
 The next two sections focus on how to do this:  in the next section, [Cadence](Cadence.md) we will look at the importance of feedback loops on monitoring the risks you face.  Then in [De-Risking](De-Risking.md) we will look at general strategies for managing risks on software projects.
 
 On to [Cadence](Cadence.md)...
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
