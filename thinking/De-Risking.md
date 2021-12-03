@@ -16,6 +16,8 @@ tweet: yes
 
 # De-Risking
 
+![Track Your Risks](../images/generated/principles/8.png)
+
 It's important not only to consider the [Attendant Risks](../thinking/Glossary.md#attendant-risk) you're trying to mitigate, but the ones you're likely to pick up in the process.  This means picking a careful path through the [Risk Landscape](../thinking/Glossary.md#risk-landscape).  This is the essence of _De-Risking_. 
 
 > "To take steps to make (something) less risky or less likely to involve a financial loss." - [De-Risk, _OxfordDictionaries.com_](https://en.oxforddictionaries.com/definition/de-risk)

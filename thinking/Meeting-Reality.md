@@ -18,6 +18,8 @@ tweet: yes
 
 Here we look at how exposing your [Internal Model](../thinking/Glossary.md#Internal-Model) to reality is in itself a good risk management technique.
 
+![Meeting Reality](../images/generated/principles/1.png)
+
 ## Revisiting the Model
 
 In [A Simple Scenario](A-Simple-Scenario.md), we looked at a basic model for how **Reality** and our [Internal Model](../thinking/Glossary.md#Internal-Model) interacted with each other:  we [take action](../thinking/Glossary.md#taking-action) based on our [Internal Model](../thinking/Glossary.md#Internal-Model), hoping to **change Reality** with some positive outcome.

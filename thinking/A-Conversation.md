@@ -17,6 +17,8 @@ tweet: yes
 
 # A Conversation
 
+![Share Your Models](../images/generated/principles/9.png)
+
 After so much theory, it seems like it's time to look at how we can apply these principles in the real world.
 
 The following is based on a summary of a real issue around the time of writing.  It's heavily edited and anonymized, and I've tried to add the Risk-First vocabulary along the way, but otherwise, it's real.

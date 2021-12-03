@@ -18,7 +18,7 @@ tweet: yes
 
 In this section, I am going to propose the idea that _everything_ productive you do on a software project is Risk Management.
 
-![Rule 1: All Work is Managing Risk](/images/generated/rules/1.png)
+![All Work is Managing Risk](../images/generated/principles/2.png)
 
 In the [Development Process](Development-Process.md) section, we observed that all the activities in a simple methodology had a part to play in exposing different risks.  They worked to manage risk prior to them creating bigger problems in production.
 
@@ -96,6 +96,8 @@ There is a certain "interplay" between the concepts of risks, actions and goals.
 Psychologically, humans are very goal-driven:  they like to know where they're going, and are good at organising around a goal.  However, by focusing on goals ("solutionizing") it's easy to ignore alternatives.  By focusing on "Risk-First", we don't ignore the reasons we're doing something.  
 
 ## Every Decision is About Payoff  
+
+![What's the Payoff](/images/generated/rules/3.png)
 
 Sometimes, there will be multiple moves available on the [Risk Landscape](../thinking/Glossary.md#risk-landscape) and you have to choose one. 
 

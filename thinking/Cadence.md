@@ -38,6 +38,8 @@ Testing your [goals in mind](../thinking/Glossary.md#Goal-In-Mind) against reali
 
 ### Time / Reality Trade-Off
 
+![Multiple Feedback Loops](../images/generated/principles/6.png)
+
 This list is arranged so that at the top, we have the most visceral, most _real_ feedback loop, but at the same time, the slowest.   
 
 At the bottom, a good IDE can inform you about errors in your [Internal Model](../thinking/Glossary.md#Internal-Model) in real time, by way of highlighting compilation errors .  So, this is the fastest loop, but it's the most _limited_ reality.

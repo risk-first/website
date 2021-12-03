@@ -83,6 +83,8 @@ I am using **risk** everywhere because later we will talk about specific risks (
 
 ## The Opposite Of Risk Management
 
+![There's No Crisis](../images/generated/principles/4.png)
+
 Let's look at a classic description of Risk Management:
 
 > "Risk Management is the process of thinking out corrective actions before a problem occurs, while it's still an abstraction.  The opposite of risk management is crisis management, trying to figure out what to do about the problem after it happens." - [Waltzing With Bears, _De Marco, Lister_](http://amzn.eu/d/i0IDFA2)
@@ -156,6 +158,8 @@ Eisenhower's Box is a simple model allowing us to consider _two_ aspects of risk
 The problem is, we now need to choose whether to do something that is _urgent_ or something that is _important_.
 
 ## Discounting
+
+![Discount](../images/generated/principles/5.png)
 
 We can use [Net Present Value](https://en.wikipedia.org/wiki/Net_present_value) to discount value in the future, which offers us a way to reconcile these two variables.  The further in the future the value is realised, the bigger the discount.  This is done because payment _now_ is better than payment in the future:  there is the risk that something will happen to prevent that future payment.  This is why we have _interest rates_ on loan payments.
 

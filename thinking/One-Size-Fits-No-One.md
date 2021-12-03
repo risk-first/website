@@ -18,6 +18,8 @@ tweet: yes
 
 # One Size Fits No-One
 
+![Fit Process To Risk](../images/generated/principles/10.png)
+
 Why are [Software Methodologies](https://en.wikipedia.org/wiki/Software_development_process) all different? 
 
 [Previously](Just-Risk.md), we made the case that [any action you take](../thinking/Glossary.md#taking-action) on a software project is to do with managing [risk](../thinking/Glossary.md#risk), and the last section, [A Conversation](A-Conversation.md) was an example of this happening. 

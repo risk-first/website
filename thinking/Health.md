@@ -16,6 +16,8 @@ tweet: yes
 
 # Health and Risk
 
+![Stay Healthy](../images/generated/principles/7.png)
+
 People in industries like banking and insurance think mainly about risk measured in _money_.  But risk isn't just money.  Life is filled with non-monetary risks.
 
 > "If someone says, 'You can make it!' down a vertical mountain when you don't ski very well, think about it before launching. This can be a turning point in your life. It sure was in mine when I slammed into the mountain.   I wish I'd said, 'F'getabout it, sucka,' and gone to the Kiddie Corral. Would have saved a lot of pain and surgery.  Think about this. What are you really up for? Is the thrill worth the cost?" - Sandy Nathan
@@ -141,6 +143,8 @@ The examples we've looked at so far are all at different scales, and could be ne
 Sometimes, as discussed in [Agency Risk](../risks/Agency-Risk.md) these can be in conflict with one another.  For example, putting in [a heroic effort](../risks/Agency-Risk.md#the-hero) might save a project but at the expense of your personal health.  
 
 At other times, the health of the elements are going to be related:  you might be working on a software product for a team inside an organisation operating in a certain country.   You are probably going to have to consider the health of more than one of those things.  Can a team be "healthy" if the organisation it is contained within is dying?  Probably not.
+
+![Rule 7: Stay Healthy](/images/generated/rules/7.png)
 
 ## Next 
 
