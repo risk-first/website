@@ -97,7 +97,7 @@ Psychologically, humans are very goal-driven:  they like to know where they're g
 
 ## Every Decision is About Payoff  
 
-![What's the Payoff](/images/generated/rules/3.png)
+![What's the Payoff](/images/generated/principles/3.png)
 
 Sometimes, there will be multiple moves available on the [Risk Landscape](../thinking/Glossary.md#risk-landscape) and you have to choose one. 
 
