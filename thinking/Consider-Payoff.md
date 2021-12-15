@@ -16,7 +16,7 @@ tweet: yes
 
 How do you choose what to work on next?
 
-![What's the Payoff](/images/generated/principles/payoff.png)
+![What's the Payoff](../images/generated/principles/payoff.png)
 
 Sometimes, there will be multiple actions you could take and you have to choose one: 
 
