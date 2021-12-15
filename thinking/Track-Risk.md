@@ -5,7 +5,7 @@ url: https://riskfirst.org/thinking/Track-Risk
 
 featured: 
   class: bg3
-  element: '<risk href="/public/templates/risk-first/redesign/risks/map_and_territory_v2.svg"><code>Tracking</code><title>Tracking Risks</title></risk>'
+  element: '<risk href="/public/templates/risk-first/redesign/risks/map_and_territory_risk_v2.svg"><code>Tracking</code><title>Tracking Risks</title></risk>'
 categories:
  - Thinking Risk-First
 order: 7
