@@ -16,7 +16,7 @@ tweet: yes
 
 # Health and Risk
 
-![Stay Healthy](../images/generated/principles/health.png)
+![Stay Healthy](../images/generated/principles/stay-healthy.png)
 
 People in industries like banking and insurance think mainly about risk measured in _money_.  But risk isn't just money.  Life is filled with non-monetary risks.
 
