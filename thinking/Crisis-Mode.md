@@ -5,7 +5,7 @@ url: https://riskfirst.org/thinking/Crisis-Mode
 
 featured: 
   class: bg3
-  element: '<risk href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg"><code>Attendant</code><title>Crisis Mode</title></risk>'
+  element: '<risk href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg"><code>Panic</code><title>Crisis Mode</title></risk>'
 categories:
  - Thinking Risk-First
 order: 8
