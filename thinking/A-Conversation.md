@@ -17,17 +17,21 @@ tweet: yes
 
 # A Conversation
 
+Uniquely as a species, humans are fascinated by story-telling _precisely because_ it's a powerful way to share details about real-world risks.  
+
 ![Share Your Models](../images/generated/principles/share-models.png)
 
-After so much theory, it seems like it's time to look at how we can apply these principles in the real world.
+As humans, we all bring our own experiences to bear on the best way to solve problems.  Sometimes, experience tells us that solving a problem one way will create a new _worse_ problem.
+
+It's key that we share our experiences to improve everyone's [Internal Model](../thinking/Glossary.md#Internal-Model)s.  
+
+## A Risk Conversation
 
 The following is based on a summary of a real issue around the time of writing.  It's heavily edited and anonymized, and I've tried to add the Risk-First vocabulary along the way, but otherwise, it's real.
 
 Some background:  **Synergy** is an online service with an app-store, and **Eve** and **Bob** are developers working for **Large Corporation LTD**, which wants to have an application accepted into Synergy's app-store.  
 
 Synergy's release process means that the app-store submission must happen in a few weeks, so this is something of a hard deadline: if we miss it, the next opportunity for release will be four months away.
-
-## A Risk Conversation
 
 **Eve**:  We've got a problem with the Synergy security review.  
 

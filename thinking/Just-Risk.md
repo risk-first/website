@@ -20,9 +20,11 @@ In this section, I am going to propose the idea that _everything_ productive you
 
 ![All Work is Managing Risk](../images/generated/principles/all-work.png)
 
-In the [Development Process](Development-Process.md) section, we observed that all the activities in a simple methodology had a part to play in exposing different risks.  They worked to manage risk prior to them creating bigger problems in production.
+Think about your process at work.  Maybe it involves weekly releases, a continuous-integration system, unit-testing and beta-testing.  All these activities have a part to play in exposing different risks.  They work to manage risk _prior_ to them creating bigger problems in production.
 
-Here, we'll look at one of the tools in the Project Manager's tool-box, the [RAID Log](http://pmtips.net/blog-new/raid-logs-introduction), and observe how risk-centric it is.
+Can we go further?  Is it just those parts of our development process that manage risk, or is it actually _all_ of them?  
+
+Lets look at one of the tools in the Project Manager's tool-box, the [RAID Log](http://pmtips.net/blog-new/raid-logs-introduction), and observe how risk-centric it is.  Then, we'll generalize from there.
 
 ## RAID Log
 

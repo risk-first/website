@@ -18,7 +18,7 @@ How do you choose what to work on next?
 
 ![What's the Payoff](/images/generated/principles/payoff.png)
 
-Sometimes, there will be multiple moves available on the [Risk Landscape](../thinking/Glossary.md#risk-landscape) and you have to choose one. 
+Sometimes, there will be multiple actions you could take and you have to choose one: 
 
 - There's the risk you'll decide wrongly.
 - And, making a decision takes time, which could add risk to your schedule.

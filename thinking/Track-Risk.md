@@ -28,15 +28,15 @@ Most developers are familiar with recording issues in an issue tracker.  For all
  - Some estimate for the **Impact**, **Probability** or **Risk Score** of the risk.
  - Proposed actions and a log of the progress made to manage the risk.
 
-Some points about this description:
+Four quick points about this description:
 
-### A Continuum of Formality
+### 1. A Continuum of Formality
 
 In the [planning-a-dinner-party example](Meeting-Reality.md) the Risk Register happened *entirely in your head*.  There is a continuum all the way from "in your head" through "using a spreadsheet" to dedicated Risk Management software.    
 
 It's also going to be useful _in conversation_ and this is where the value of the Risk-First approach is: providing a vocabulary to _talk about risks_ with your team.  
 
-### Probability And Impact
+### 2. Probability And Impact
 
 **Probability** is how likely something is to happen, whilst **Impact** is the cost (usually financial) when it does happen.
 
@@ -52,13 +52,23 @@ Risk Management in the finance industry _starts_ here and gets more complex.  Bu
 
 Risk-First takes a view that risks are a continuous quantity, more like _money_ or _water_:  by taking an action before delivering a project you might add a degree of [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk), but decrease the [Operational Risk](../risks/Operational-Risk.md) later on by a greater amount.   
 
-### Risk And Uncertainty
+### 3. Risk And Uncertainty
 
 Arguably, Risk-First uses the term 'Risk' wrongly:  most literature suggests [risk can be measured](https://keydifferences.com/difference-between-risk-and-uncertainty.html) whereas uncertainty represents things that cannot.  
 
 I am using **risk** everywhere because later we will talk about specific risks (e.g. [Boundary Risk](../risks/Boundary-Risk.md) or [Complexity Risk](../risks/Complexity-Risk.md)) and it doesn't feel grammatically correct to talk about those as **uncertainties**, especially given the pre-existing usage in Banking of terms like [Operational Risk](https://en.wikipedia.org/wiki/Operational_risk) or [Reputational risk](https://www.investopedia.com/terms/r/reputational-risk.asp) which are also not really a-priori measurable.
 
 (Later, we'll dig into [Health](Health.md), which puts this on a better foundation.)
+
+### 4. A Bug Tracker Is Also A Risk Register
+
+As covered in [Just Risk](Just-Risk.md), we know that _all work_ is managing risk.  So therefore it stands to reason, if you are using a bug tracker, then actually you are tracking risks.  After all, bugs are capturing the risk that:
+
+ - your customers stop using your product
+ - someone is harmed by your product
+ - you suffer loss-of-reputation from some issue with your product
+ 
+... and so on.  Prioritising the bugs in the tracker is a prioritisation _by risk_.
 
 ## Risk Matrices
 

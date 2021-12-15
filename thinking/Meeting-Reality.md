@@ -20,13 +20,13 @@ Here we look at how exposing your [Internal Model](../thinking/Glossary.md#Inter
 
 ![Meeting Reality](../images/generated/principles/meet-reality.png)
 
-## Revisiting the Model
+## Your Model
 
-In [A Simple Scenario](A-Simple-Scenario.md), we looked at a basic model for how **Reality** and our [Internal Model](../thinking/Glossary.md#Internal-Model) interacted with each other:  we [take action](../thinking/Glossary.md#taking-action) based on our [Internal Model](../thinking/Glossary.md#Internal-Model), hoping to **change Reality** with some positive outcome.
+The world is too complex to understand at a glance and it takes years for humans to build a model of reality in our heads.  This model of reality informs all the actions we take in life.   And within a team, the model is split amongst people, documents, email, tickets, code... but it is still a model.   
 
-And, in [Development Process](Development-Process.md) we looked at how we can meet with reality in _different forms_:  Analysis, Testing, Integration and so on. We saw how the model could work in each stage of a project.
+We [take action](../thinking/Glossary.md#taking-action) based on our [Internal Model](../thinking/Glossary.md#Internal-Model), hoping to **change reality** with some positive outcome.
 
-It should be no surprise to see that there is a _recursive_ nature about this:   the actions we take each day have consequences, they expose new [hidden risks](../thinking/Glossary.md#hidden-risk) which inform our [Internal Model](../thinking/Glossary.md#Internal-Model) and at the same time change reality in some way.  As a result, we then have to take _new actions_ to deal with these new risks.  
+But there is a _recursive_ nature about this:   the actions we take each day have consequences, they expose new [hidden risks](../thinking/Glossary.md#hidden-risk) which inform our [Internal Model](../thinking/Glossary.md#Internal-Model) and at the same time change reality in some way.  As a result, we then have to take _new actions_ to deal with these new risks.  
 
 So, let's see how this kind of recursion looks on our model.
 

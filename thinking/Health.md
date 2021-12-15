@@ -1,6 +1,6 @@
 ---
 title: Health
-description: Can a product be good with a bad team behind it?
+description: How can a product be good with a bad team making it?
 url: https://riskfirst.org/thinking/Health
 featured: 
   class: bg3
@@ -26,7 +26,7 @@ I am going to argue here that _risks_ are things that affect the health of a thi
 
  - **A Living Organism**, such as the human body, which is exposed to _health risks_, such as [Cardiovascular Disease](https://en.wikipedia.org/wiki/Cardiovascular_disease).  
  
- - **A Software Product** is a thing we interact with, built out of code.  As we saw in [Development Process](Development-Process.md), the health of that software is damaged by the existence of [bugs and missing features](../risks/Feature-Risk.md).
+ - **A Software Product** is a thing we interact with, built out of code.  The health of that software is damaged by the existence of [bugs and missing features](../risks/Feature-Risk.md).
  
  - **A Project**, like making a film or organising a [dinner party](A-Simple-Scenario.md). 
  

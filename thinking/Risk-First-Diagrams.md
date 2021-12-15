@@ -38,6 +38,8 @@ On the left in the first example we can see our goal, of having a successful par
 
 Equally, we could have a risk that we wish to avoid, such as having nothing to eat at the party.  To achieve that, we _also_ need to take the right actions.
 
+## Cause and Effect
+
 In _biological terms_ the items on the left of the diagram are the _stimulus_ part of the [Stimulus-Response Model](https://en.wikipedia.org/wiki/Stimulus–response_model).  They're the thing that makes us [Take Action](Glossary.md#taking-action) in the world.   
 
 There are [all kinds of risks](../risks/Risk-Landscape.md) we face in life and we attach different value or _criticality_ to them.  Most people will want to take action against the worst risks they face in their lives and maybe put up with some of the lesser ones.  Equally, we should also try and achieve our _most critical_ goals and let the lesser ones slide (at least, from a rational standpoint). 
