@@ -20,15 +20,15 @@ tweet: yes
 
 If you want to run a successful dinner party, you have to address all the risks of it _not_ being successful.  For example:  having the right food, inviting the right people, serving the right drinks, and so on.  
 
-On the run-up to the party, as you solve problems, new, previously-hidden ones come to light.  Congratulations, you're in a feedback loop.
+On the run-up to the party, as you solve problems, new, previously-hidden ones come to light.  
+
+Congratulations, you're in a feedback loop.
 
 ![Meeting Reality: reality is changed and so is your internal model.](../images/generated/introduction/model_vs_reality_2.png)
 
-As you can see in the diagram above, it's a **Feedback Loop**.  
+As you can see in the diagram above, it's a **Feedback Loop**.   How _fast_ should we go round this loop?  The longer you procrastinate, the longer it'll be before you find out how your model of the risks you face really stacks up against reality.  
 
-How _fast_ should we go round this loop?  The longer you procrastinate, the longer it'll be before you find out how it really stacks up against reality.  
-
-So your model against reality early and safely is how you'll manage risk effectively, and to do this, you need to set up **Feedback Loops**.  e.g.
+In a software development scenario, you should also test your model against reality early and safely.  To do this, you likely need to set up multiple feedback loops, like:
 
  - **Bug Reports and Feature Requests** tell you how the users are getting on with the software.
  - **[Monitoring Tools and Logs](../risks/Operational-Risk.md)** allow you to find out how your software is doing in reality.
