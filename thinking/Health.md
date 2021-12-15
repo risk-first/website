@@ -144,8 +144,6 @@ Sometimes, as discussed in [Agency Risk](../risks/Agency-Risk.md) these can be i
 
 At other times, the health of the elements are going to be related:  you might be working on a software product for a team inside an organisation operating in a certain country.   You are probably going to have to consider the health of more than one of those things.  Can a team be "healthy" if the organisation it is contained within is dying?  Probably not.
 
-![Rule 7: Stay Healthy](/images/generated/rules/7.png)
-
 ## Next 
 
 The next two sections focus on how to do this:  in the next section, [Cadence](Cadence.md) we will look at the importance of feedback loops on monitoring the risks you face.  Then in [De-Risking](De-Risking.md) we will look at general strategies for managing risks on software projects.
