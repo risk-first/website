@@ -8,13 +8,15 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cadence.svg">Feedback Loops</image-artifact>'
 categories:
  - Thinking Risk-First
-order: 8
+order: 11
 redirect_from: 
  - /Cadence
 tweet: yes
 ---
 
 # Cadence
+
+![Multiple Feedback Loops](../images/generated/principles/cadence.png)
 
 Let's go back to the model again, introduced in [Meeting Reality](Meeting-Reality.md).
 
@@ -37,8 +39,6 @@ Testing your [goals in mind](../thinking/Glossary.md#Goal-In-Mind) against reali
 .. and so on.
 
 ### Time / Reality Trade-Off
-
-![Multiple Feedback Loops](../images/generated/principles/6.png)
 
 This list is arranged so that at the top, we have the most visceral, most _real_ feedback loop, but at the same time, the slowest.   
 

@@ -7,7 +7,7 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/8bit-heart.svg">Health</image-artifact>'
 categories: 
  - Thinking Risk-First
-order: 7
+order: 10
 redirect_from: 
  - /Health
 tweet: yes
@@ -16,7 +16,7 @@ tweet: yes
 
 # Health and Risk
 
-![Stay Healthy](../images/generated/principles/7.png)
+![Stay Healthy](../images/generated/principles/health.png)
 
 People in industries like banking and insurance think mainly about risk measured in _money_.  But risk isn't just money.  Life is filled with non-monetary risks.
 

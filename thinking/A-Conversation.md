@@ -8,7 +8,7 @@ featured:
   element: '<risk class="communication" />'
 categories: 
  - Thinking Risk-First
-order: 10
+order: 13
 redirect_from: 
  - /A-Conversation
 tweet: yes
@@ -17,7 +17,7 @@ tweet: yes
 
 # A Conversation
 
-![Share Your Models](../images/generated/principles/9.png)
+![Share Your Models](../images/generated/principles/share-models.png)
 
 After so much theory, it seems like it's time to look at how we can apply these principles in the real world.
 

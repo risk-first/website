@@ -18,7 +18,7 @@ tweet: yes
 
 In this section, I am going to propose the idea that _everything_ productive you do on a software project is Risk Management.
 
-![All Work is Managing Risk](../images/generated/principles/2.png)
+![All Work is Managing Risk](../images/generated/principles/all-work.png)
 
 In the [Development Process](Development-Process.md) section, we observed that all the activities in a simple methodology had a part to play in exposing different risks.  They worked to manage risk prior to them creating bigger problems in production.
 
@@ -93,43 +93,8 @@ Let's try and back up that assertion with a few more examples:
 
 There is a certain "interplay" between the concepts of risks, actions and goals.  After all, on the [Risk Landscape](../thinking/Glossary.md#risk-landscape) they correspond to a starting point, a movement, and a destination.  From a redundancy perspective, any one of these can be determined by knowing the other two.  
 
-Psychologically, humans are very goal-driven:  they like to know where they're going, and are good at organising around a goal.  However, by focusing on goals ("solutionizing") it's easy to ignore alternatives.  By focusing on "Risk-First", we don't ignore the reasons we're doing something.  
+Psychologically, humans are very goal-driven:  they like to know where they're going, and are good at organising around a goal.  However, by focusing on goals ("solutionizing") it's easy to ignore alternatives.  
 
-## Every Decision is About Payoff  
+By focusing on "Risk-First", we don't ignore the reasons we're doing something.  
 
-![What's the Payoff](/images/generated/principles/3.png)
-
-Sometimes, there will be multiple moves available on the [Risk Landscape](../thinking/Glossary.md#risk-landscape) and you have to choose one. 
-
-- There's the risk you'll decide wrongly.
-- And, making a decision takes time, which could add risk to your schedule.
-- And what's the risk if the decision doesn't get made?
-
-Let's take a hypothetical example:  you're on a project and you're faced with the decision - release now or do more testing?  
-
-Obviously, in the ideal world, we want to get to the place on the [Risk Landscape](../thinking/Glossary.md#risk-landscape) where we have a tested, bug-free system in production.  But we're not there yet, and we have funding pressure to get the software into the hands of some paying customers.  The table below shows an example: 
-
-|Risk Managed          |Action               |Attendant Risk                           |Payoff             | 
-|----------------------|---------------------|-----------------------------------------|-------------------|
-|Funding Risk          |Go Live              |Reputational Risk, Operational Risk      |MEDIUM             |
-|Implementation Risk   |User Acceptance Test |Worse Funding Risk, Operational Risk     |LOW                |
-
-This is (a simplification of) the dilemma of lots of software projects - _test further_, to reduce the risk of users discovering bugs ([Implementation Risk](../risks/Feature-Risk.md#implementation-risk)) which would cause us reputational damage, or _get the release done_ and reduce our [Funding Risk](../risks/Scarcity-Risk.md#funding-risk) by getting paying clients sooner. 
-
-In the above table, it _appears_ to be better to do the "Go Live" action, as there is a greater [Payoff](../thinking/Glossary.md#payoff).  The problem is, actions are not _commutative_, i.e. the order you do them in counts.
-
-![UAT or Go Live: where will you end up?](../images/generated/introduction/risk_landscape_3_moves.png)
-
-The diagram above shows our decision as _moves on the [Risk Landscape](../thinking/Glossary.md#risk-landscape)_.  Whether you "Go Live" first, or "UAT" first makes a difference to where you will end up.  Is there a further action you can take to get you from the "Dead End" to the "Goal"?  Perhaps.
-
-### Failure
-
-So, when we talk about a project "failing", what do we mean?  
-
-Usually, we mean we've failed to achieve a goal, and since _goals are risks_, it is simply the scenario where we are overwhelmed by [Attendant Risks](../thinking/Glossary.md#attendant-risk): there is _no_ action to take that has a good-enough [Payoff](../thinking/Glossary.md#payoff) to get us out of our hole.    
- 
-## What To Do?
-
-It makes it much easier to tackle the RAID log if there's only one list.  But you still have to choose a _strategy_:  do you tackle the _most important_ risk on the list, or the _most urgent_, or take the action with the biggest [Payoff](../thinking/Glossary.md#payoff) and deal with it?
-
-In the next section, [Evaluating Risk](Evaluating-Risk.md) we'll look at some approaches to choosing what to do. 
+Next, let's look at how we should [Consider Payoff](Consider-Payoff.md) when we choose what to do next.

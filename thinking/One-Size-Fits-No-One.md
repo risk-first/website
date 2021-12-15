@@ -9,7 +9,7 @@ featured:
 categories:
  - Thinking Risk-First
  - Popular
-order: 11
+order: 14
 date: 2019-01-22 16:32:03 +0000
 redirect_from: 
  - /One-Size-Fits-No-One
@@ -18,7 +18,7 @@ tweet: yes
 
 # One Size Fits No-One
 
-![Fit Process To Risk](../images/generated/principles/10.png)
+![Fit Process To Risk](../images/generated/principles/risk-leads-process.png)
 
 Why are [Software Methodologies](https://en.wikipedia.org/wiki/Software_development_process) all different? 
 

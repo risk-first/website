@@ -8,15 +8,13 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/de-risking.svg">De-Risking</image-artifact>'
 categories:
  - Thinking Risk-First
-order: 9
+order: 12
 redirect_from: 
  - /De-Risking
 tweet: yes
 ---
 
 # De-Risking
-
-![Track Your Risks](../images/generated/principles/8.png)
 
 It's important not only to consider the [Attendant Risks](../thinking/Glossary.md#attendant-risk) you're trying to mitigate, but the ones you're likely to pick up in the process.  This means picking a careful path through the [Risk Landscape](../thinking/Glossary.md#risk-landscape).  This is the essence of _De-Risking_. 
 

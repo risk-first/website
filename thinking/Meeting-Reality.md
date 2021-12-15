@@ -18,7 +18,7 @@ tweet: yes
 
 Here we look at how exposing your [Internal Model](../thinking/Glossary.md#Internal-Model) to reality is in itself a good risk management technique.
 
-![Meeting Reality](../images/generated/principles/1.png)
+![Meeting Reality](../images/generated/principles/meet-reality.png)
 
 ## Revisiting the Model
 
