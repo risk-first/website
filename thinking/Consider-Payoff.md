@@ -5,7 +5,7 @@ url: https://riskfirst.org/thinking/Consider-Payoff
 
 featured: 
   class: bg3
-  element: 'element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cash.svg">Payoff</image-artifact>'
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cash.svg">Payoff</image-artifact>'
 categories:
  - Thinking Risk-First
 order: 6
@@ -16,7 +16,7 @@ tweet: yes
 
 How do you choose what to work on next?
 
-![What's the Payoff](/images/generated/principles/consider-payoff.png)
+![What's the Payoff](/images/generated/principles/payoff.png)
 
 Sometimes, there will be multiple moves available on the [Risk Landscape](../thinking/Glossary.md#risk-landscape) and you have to choose one. 
 
