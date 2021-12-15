@@ -4,7 +4,7 @@ description: Are the machines building their own economy behind our backs?
 url: https://riskfirst.org/misc/HumanCoin
 featured: 
   class: bg1
-  element: '<risk class="complexity">Hardware Economy</image-artifact>'
+  element: '<risk class="complexity">Hardware Economy</risk>'
 categories:
  - Misc
 order: 16
