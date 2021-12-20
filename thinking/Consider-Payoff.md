@@ -18,7 +18,7 @@ How do you choose what to work on next?
 
 ![What's the Payoff](../images/generated/principles/payoff.png)
 
-Sometimes, there will be multiple actions you could take on a project and you have to choose the best one: 
+Sometimes, there will be multiple _actions_ you could take on a project and you have to choose the best one: 
 
 - There's the risk you'll decide wrongly.
 - And, making a decision takes time, which could add risk to your schedule.
@@ -38,7 +38,7 @@ As a flavour of what's to come, let's look at YAGNI, an acronym for "You Aren't 
 
 > YAGNI originally is an acronym that stands for "You Aren't Gonna Need It". It is a mantra from Extreme Programming that's often used generally in agile software teams. It's a statement that some capability we presume our software needs in the future should not be built now because "you aren't gonna need it".  - [YAGNI, _Martin Fowler_](https://www.martinfowler.com/bliki/Yagni.html)
 
-The idea makes sense:  if you take on extra work that you don't need, _of course_ you'll be accreting [Attendant Risks](../thinking/Glossary.md#attendant-risk).
+The idea makes sense:  if you take on extra work that you don't need, _of course_ you'll be accreting risk - you're taking time away from sorting out the real problems!
 
 But, there is always the opposite opinion:  [You _Are_ Gonna Need It](http://wiki.c2.com/?YouAreGonnaNeedIt).  As a simple example, we often add log statements in our code as we write it (so we can trace what happened when things go wrong), though following YAGNI strictly says we shouldn't.  
 
@@ -54,7 +54,9 @@ So, it's a trade-off: continue adding logging statements so long as you feel tha
 
 ### Example 2: Do The Simplest Thing That Could Possibly Work
 
-Another mantra from Kent Beck (originator of the [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) methodology), is "Do The Simplest Thing That Could Possibly Work", which is closely related to YAGNI and is an excellent razor for avoiding over-engineering.  At the same time, by adding "Could Possibly", Kent is encouraging us to go beyond straightforward iteration and use our brains to pick apart the simple solutions, avoiding them if we can logically determine when they would fail. 
+Another mantra from Kent Beck (originator of the [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) methodology), is "Do The Simplest Thing That Could Possibly Work", which is closely related to YAGNI and is an excellent razor for avoiding over-engineering.  
+
+At the same time, by adding "Could Possibly", Kent is encouraging us to go beyond straightforward iteration and use our brains to pick apart the simple solutions, avoiding them if we can logically determine when they would fail. 
 
 Our risk-centric view of this strategy would be:
 

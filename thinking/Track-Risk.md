@@ -48,21 +48,21 @@ In a financial context (or a gambling one), we can consider the overall **Risk S
 |Win            |+ 99 EUR       |1 in 200          |.5 EUR        |
 |Lose           |-  1 EUR       |199 in 200        |-.99 EUR      |
 
-Risk Management in the finance industry _starts_ here and gets more complex.  But often (especially on a software project), it's better to skip all this and just figure out a Risk Score.  This is because if you think about "impact", it implies a definite, discrete event occurring (or not occurring) and asks you then to consider the probability of that. 
-
-Risk-First takes a view that risks are a continuous quantity, more like _money_ or _water_:  by taking an action before delivering a project you might add a degree of [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk), but decrease the [Operational Risk](../risks/Operational-Risk.md) later on by a greater amount.   
+Risk Management in the finance industry _starts_ here and gets more complex.  But often (especially on a software project), it's better to skip all this and just estimate a Risk Score.  This is because if you think about "impact", it implies a definite, discrete event occurring (or not occurring) and asks you then to consider the probability of that. 
 
 ### 3. Risk And Uncertainty
 
 Arguably, Risk-First uses the term 'Risk' wrongly:  most literature suggests [risk can be measured](https://keydifferences.com/difference-between-risk-and-uncertainty.html) whereas uncertainty represents things that cannot.  
 
-I am using **risk** everywhere because later we will talk about specific risks (e.g. [Boundary Risk](../risks/Boundary-Risk.md) or [Complexity Risk](../risks/Complexity-Risk.md)) and it doesn't feel grammatically correct to talk about those as **uncertainties**, especially given the pre-existing usage in Banking of terms like [Operational Risk](https://en.wikipedia.org/wiki/Operational_risk) or [Reputational risk](https://www.investopedia.com/terms/r/reputational-risk.asp) which are also not really a-priori measurable.
+I am using **risk** everywhere because later we will talk about specific risks (e.g. [Boundary Risk](../risks/Boundary-Risk.md) or [Complexity Risk](../risks/Complexity-Risk.md)) and it doesn't feel grammatically correct to talk about those as **uncertainties**.  
+
+Additionally there is pre-existing usage in Banking of terms like [Operational Risk](https://en.wikipedia.org/wiki/Operational_risk) or [Reputational risk](https://www.investopedia.com/terms/r/reputational-risk.asp) which are also not really a-priori measurable.
 
 (Later, we'll dig into [Health](Health.md), which puts this on a better foundation.)
 
 ### 4. A Bug Tracker Is Also A Risk Register
 
-As covered in [Just Risk](Just-Risk.md), we know that _all work_ is managing risk.  So therefore it stands to reason, if you are using a bug tracker, then actually you are tracking risks.  After all, bugs are capturing the risk that:
+As covered in [Just Risk](Just-Risk.md), we know that _all work_ is managing risk.  So therefore it stands to reason that if you are using a bug tracker then actually you are tracking risks.  After all, bugs are capturing the risk that:
 
  - your customers stop using your product
  - someone is harmed by your product
@@ -74,7 +74,7 @@ As covered in [Just Risk](Just-Risk.md), we know that _all work_ is managing ris
 
 ![Risk Matrix of Dinner Party Risks](../images/generated/introduction/risk_matrix.png)
 
-A risk matrix presents a graphical view on where risks exist.  The diagram above is an example, showing the risks from the dinner party in the [A Simple Scenario](A-Simple-Scenario.md) section:
+A risk matrix presents a graphical view on where risks exist.  The diagram above is an example, showing the risks from the dinner party in the [A Simple Scenario](A-Simple-Scenario.md) section.
 
 This type of graphic is _helpful_ in deciding what to do next, although alternatively, you can graph the overall **Risk Score** against the [Payoff](../thinking/Glossary.md#payoff).  Easily mitigated risk (on the right) and worse risks (at the top) can therefore be dealt with first (hopefully).
 
