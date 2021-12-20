@@ -18,13 +18,59 @@ How do you choose what to work on next?
 
 ![What's the Payoff](../images/generated/principles/payoff.png)
 
-Sometimes, there will be multiple actions you could take and you have to choose one: 
+Sometimes, there will be multiple actions you could take on a project and you have to choose the best one: 
 
 - There's the risk you'll decide wrongly.
 - And, making a decision takes time, which could add risk to your schedule.
 - And what's the risk if the decision doesn't get made?
 
-Let's take a hypothetical example:  you're on a project and you're faced with the decision - release now or do more testing?  
+We can't know in advance how well any action we take will work out.  Therefore, [Taking Action](../thinking/Glossary.md#taking-action) is a lot like placing a bet.  
+
+[Payoff](../thinking/Glossary.md#payoff) then is our judgement about whether we expect an action to be worthwhile:  are the risks we escape _worth_ the attendant risks we will encounter?  We should be able to _weigh these separate risks in our hands_ and judge whether the [Payoff](../thinking/Glossary.md#payoff) makes a given [Action](../thinking/Glossary.md#taking-action) worthwhile.  
+
+The fruits of this gambling are revealed when we [meet reality](../thinking/Glossary.md#meet-reality) and we can see whether our bets were worthwhile. 
+
+## Considering Payoff: Examples
+
+### Example 1: YAGNI 
+
+As a flavour of what's to come, let's look at YAGNI, an acronym for "You Aren't Gonna Need It":
+
+> YAGNI originally is an acronym that stands for "You Aren't Gonna Need It". It is a mantra from Extreme Programming that's often used generally in agile software teams. It's a statement that some capability we presume our software needs in the future should not be built now because "you aren't gonna need it".  - [YAGNI, _Martin Fowler_](https://www.martinfowler.com/bliki/Yagni.html)
+
+The idea makes sense:  if you take on extra work that you don't need, _of course_ you'll be accreting [Attendant Risks](../thinking/Glossary.md#attendant-risk).
+
+But, there is always the opposite opinion:  [You _Are_ Gonna Need It](http://wiki.c2.com/?YouAreGonnaNeedIt).  As a simple example, we often add log statements in our code as we write it (so we can trace what happened when things go wrong), though following YAGNI strictly says we shouldn't.  
+
+#### Which is right?
+
+Now, we can say:  do the work _if there is a worthwhile [Payoff](../thinking/Glossary.md#payoff)_.  
+
+ - Logging statements are _good_, because otherwise, you're increasing the risk that in production, no one will be able to understand _how the software went wrong_.
+ - However, adding them takes time, which might introduce [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk).
+ - Also, we have to manage larger log files on our production systems.
+ 
+So, it's a trade-off: continue adding logging statements so long as you feel that overall, the activity [pays off](../thinking/Glossary.md#payoff) reducing overall risk.
+
+### Example 2: Do The Simplest Thing That Could Possibly Work
+
+Another mantra from Kent Beck (originator of the [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) methodology), is "Do The Simplest Thing That Could Possibly Work", which is closely related to YAGNI and is an excellent razor for avoiding over-engineering.  At the same time, by adding "Could Possibly", Kent is encouraging us to go beyond straightforward iteration and use our brains to pick apart the simple solutions, avoiding them if we can logically determine when they would fail. 
+
+Our risk-centric view of this strategy would be:
+
+- Every action you take on a project has its own [Attendant Risks](../thinking/Glossary.md#attendant-risk).
+- The bigger or more complex the action, the more [Attendant Risk](../thinking/Glossary.md#attendant-risk) it'll have.
+- The reason you're taking action _at all_ is because you're trying to reduce risk elsewhere on the project.
+- Therefore, the biggest [Payoff](../thinking/Glossary.md#payoff) is likely to be the one with the least [Attendant Risk](../thinking/Glossary.md#attendant-risk).
+- So, usually this is going to be the simplest thing.
+
+So, "Do The Simplest Thing That Could Possibly Work" is really a helpful guideline for Navigating the [Risk Landscape](../risks/Risk-Landscape.md), but this analysis shows clearly where it's left wanting:
+
+ - _Don't_ do the simplest thing if there are other things with a better [Payoff](../thinking/Glossary.md#payoff) available.  
+ 
+### Example 3: Continue Testing or Release?
+
+You're on a project and you're faced with the decision - release now or do more testing?  
 
 Obviously, in the ideal world, we want to get to the place on the [Risk Landscape](../thinking/Glossary.md#risk-landscape) where we have a tested, bug-free system in production.  But we're not there yet, and we have funding pressure to get the software into the hands of some paying customers.  The table below shows an example: 
 
@@ -39,24 +85,10 @@ In the above table, it _appears_ to be better to do the "Go Live" action, as the
 
 ![UAT or Go Live: where will you end up?](../images/generated/introduction/risk_landscape_3_moves.png)
 
-The diagram above shows our decision as _moves on the [Risk Landscape](../thinking/Glossary.md#risk-landscape)_.  Whether you "Go Live" first, or "UAT" first makes a difference to where you will end up.  Is there a further action you can take to get you from the "Dead End" to the "Goal"?  Perhaps.
-
-## Failure
-
-So, when we talk about a project "failing", what do we mean?  
-
-Usually, we mean we've failed to achieve a goal, and since _goals are risks_, it is simply the scenario where we are overwhelmed by [Attendant Risks](../thinking/Glossary.md#attendant-risk): there is _no_ action to take that has a good-enough [Payoff](../thinking/Glossary.md#payoff) to get us out of our hole.   
-
-## "Upside Risk"
-
-"Upside Risk" isn't a commonly used term:  industry tends to prefer "value", as in "Is this a value-add project?".  There is plenty of theory surrounding **Value**, such as Porter's [Value Chain](https://en.wikipedia.org/wiki/Value_chain) and [Net Present Value](https://en.wikipedia.org/wiki/Net_present_value).  This is all fine so long as we remember:
-
- - **The probability of [Payoff](../thinking/Glossary.md#payoff) is risky**. Since the value is created in the future, we can't be certain about it happening - we should never consider it a done-deal.  **Future Value** is always at risk.  In finance, for example, we account for this in our future cash-flows by discounting them according to the risk of default.
- - **The Payoff amount is risky**.  Additionally, whereas in a financial transaction (like a loan, say), we might know the size of a future payment, in IT projects we can rarely be sure that they will deliver a certain return.  On some fixed-contract projects this sometimes is not true: there may be a date when the payment-for-delivery gets made, but mostly we'll be expecting an uncertain Payoff. 
- - Humans tend to be optimists (especially when there are lots of [Hidden Risks](../thinking/Glossary.md#hidden-risk)), hence our focus on Downside Risk.  Sometimes though, it's good to stand back and look at a scenario and think:  am I capturing all the Upside Risk here?
+The diagram above shows our decision as _moves on the [Risk Landscape](../thinking/Glossary.md#risk-landscape)_.  Whether you "Go Live" first, or "UAT" first makes a difference to where you will end up.  Is there a further action you can take to get you from the "Dead End" to the "Goal"?  Perhaps. 
  
 ## What To Do?
 
-As a concept, payoff is made more tricky because often the actions you take might depend on one another, and the payoff might not be immediate.  
+As a concept, payoff is made more tricky because often the actions you take might depend on each other, and the payoff might not be immediate.  
 
 So, first things first, you need to make sure you're [Tracking Risk](Track-Risk.md) properly.
