@@ -42,15 +42,15 @@ I would argue that the best choice of what to do is the one which mitigates the 
 
 ![Navigating The Risk Landscape](../images/generated/introduction/risk_landscape_1.png)
 
+You can think of [Taking Action](../thinking/Glossary.md#taking-action) as moving your project on a "[Risk Landscape](../risks/Risk-Landscape.md)":  ideally, when you take an action, you move from some place with worse risk to somewhere more favourable, as shown in the diagram above.
+
+Sometimes, you can end up somewhere _worse_:  the action you took to manage a risk has made things worse.  Almost certainly, this will have been due to a hidden risk that you weren't aware of when you embarked on the action, otherwise you'd not have chosen it.  
+
 ### An Example: Unit Testing
 
 Take Unit Testing for example:  Clearly, writing Unit Tests adds to the amount of development work, so on its own, it adds [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk).   
 
 However, if you write _just enough_ of the right Unit Tests, you should be short-cutting the time spent finding issues in the User Acceptance Testing (UAT) stage, so you're hopefully trading off a larger [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk) from UAT and adding a smaller [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk) to Development.  
-
-You can think of [Taking Action](../thinking/Glossary.md#taking-action) as moving your project on a "[Risk Landscape](../risks/Risk-Landscape.md)":  ideally, when you take an action, you move from some place with worse risk to somewhere more favourable, as shown in the diagram above.
-
-Sometimes, you can end up somewhere _worse_:  the action you took to manage a risk has made things worse.  Almost certainly, this will have been due to a hidden risk that you weren't aware of when you embarked on the action, otherwise you'd not have chosen it.  
 
 ### Second Example: Automation
 
