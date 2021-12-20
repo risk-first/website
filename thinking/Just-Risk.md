@@ -20,17 +20,17 @@ In this section, I am going to propose the idea that _everything_ productive you
 
 ![All Work is Managing Risk](../images/generated/principles/all-work.png)
 
-Think about your process at work.  Maybe it involves weekly releases, a continuous-integration system, unit-testing and beta-testing.  All these activities have a part to play in exposing different risks.  They work to manage risk _prior_ to them creating bigger problems in production.
+Think about your development process at work.  Maybe it involves weekly releases, a continuous-integration system, unit-testing and beta-testing.  All these activities have a part to play in managing different risks.  They work to manage risks before they create bigger problems in production.
 
 Can we go further?  Is it just those parts of our development process that manage risk, or is it actually _all_ of them?  
 
-Lets look at one of the tools in the Project Manager's tool-box, the [RAID Log](http://pmtips.net/blog-new/raid-logs-introduction), and observe how risk-centric it is.  Then, we'll generalize from there.
+Lets look at one of the tools in the Project Manager's tool-box, the [RAID Log](http://pmtips.net/blog-new/raid-logs-introduction), and observe how risk-centric it is.  Then, we'll generalise from there.
 
 ## RAID Log
 
 Many project managers will be familiar with the [RAID Log](http://pmtips.net/blog-new/raid-logs-introduction).  It's simply four columns on a spreadsheet:  **Risks**, **Actions**, **Issues** and **Decisions**.
  
-Let's try and put the following [Risk](../thinking/Glossary.md#risk) into the RAID Log:
+Let's try and put the following item into the RAID Log:
 
 > "Debbie needs to visit the client to get them to choose the logo to use on the product, otherwise we can't size the screen areas exactly."
 
@@ -39,9 +39,7 @@ Let's try and put the following [Risk](../thinking/Glossary.md#risk) into the RA
  - Is it a **decision**?  Well, clearly, it's a decision for someone.
  - Is it a **risk**?  Probably.  Debbie might go to the client and they _still_ don't make a decision.  What then?
 
-## Let's Go Again
-
-This is a completely made-up example, deliberately chosen to be hard to categorise.  Normally, items are more one thing than another.  But often, you'll have to make a choice between two categories, if not all four.  
+This example is deliberately chosen to be hard to categorise.  Normally, items are more one thing than another.  But often, you'll have to make a choice between two categories, if not all four.  
 
 This _hints_ at the fact that at some level it's all about risk:
 
@@ -51,7 +49,7 @@ The reason you are _taking_ an action is to manage a risk.  For example:
 
  - If you're coding up new features in the software, this is managing [Feature Risk](../risks/Feature-Risk.md) (which we'll explore in more detail later).  
  - If you're getting a business sign-off for something, this is managing the risk of everyone not agreeing on a course of action (a [Coordination Risk](../risks/Coordination-Risk.md)).  
- - If you're writing a specification, then that's managing the type of "Incorrect Implementation Risk" we saw in [Development Process](Development-Process.md). 
+ - If you're writing a test, then that's managing a type of [Implementation Risk](../risks/Feature-Risk.md#implementation-risk).  
 
 ## Every Action Has Attendant Risk
 
@@ -60,7 +58,7 @@ The reason you are _taking_ an action is to manage a risk.  For example:
 - Will it lead to yet more actions?
 - What [Hidden Risk](../thinking/Glossary.md#hidden-risk) will it uncover?
 
-Consider _coding a feature_ (as we did in [Development Process](Development-Process.md)).  We saw here how the whole process of coding was an exercise in learning what we didn't know about the world, uncovering problems and improving our [Internal Model](../thinking/Glossary.md#Internal-Model).  That is, flushing out the [Attendant Risk](../thinking/Glossary.md#attendant-risk) of the [Goal In Mind](../thinking/Glossary.md#Goal-In-Mind).
+Consider _coding a feature_.  The whole process of coding is an exercise in learning what we didn't know about the world, uncovering problems and improving our [Internal Model](../thinking/Glossary.md#Internal-Model).  That is, flushing out the [Attendant Risk](../thinking/Glossary.md#attendant-risk) of the [Goal In Mind](../thinking/Glossary.md#Goal-In-Mind).
 
 And, as we saw in the [Introduction](A-Simple-Scenario.md), even something _mundane_ like the Dinner Party had risks. 
 

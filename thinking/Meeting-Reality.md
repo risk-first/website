@@ -77,7 +77,7 @@ Meeting reality _in full_ is costly.  For example, putting your software in fron
 - Getting users to use your system
 - Gathering feedback
 
-All of these steps take a lot of effort and time.   But you don't have to meet the "whole of reality" in one go.  You can meet it in a limited way which is less expensive.  This is why we have activities like User Acceptance Testing (UAT).  This gives us some flavour of reality, but more cheaply and sooner.  
+All of these steps take a lot of effort and time.   But you don't have to meet the "whole of reality" in one go.  You can meet it in a limited way which is less expensive.  This is why we have activities like User Acceptance Testing (UAT) or incremental delivery.  They give us some flavour of reality, but more cheaply and sooner.  
 
 Beta-releases and releasing to small populations of users also allow us to meet reality, but in a less risky way.
 
