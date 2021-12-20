@@ -26,9 +26,9 @@ The world is too complex to understand at a glance.  It takes years for humans t
 
 This "[Internal Model](../thinking/Glossary.md#Internal-Model)" of reality informs the actions we take in life: we take actions based on our model, hoping to change reality with some positive outcome.
 
-For example, while organising a dinner party, you might take actions to ensure there is enough food, that you've invited people enough in advance, and so on.
+For example, while organising a dinner party you'll have a model of who you expect to come.  You might take actions to ensure there is enough food, that you've got RSVPs and so on.
 
-But there is a _recursive_ nature about this:   the actions we take each day have consequences, they expose new [hidden risks](../thinking/Glossary.md#hidden-risk) and update our Internal Model, and at the same time change reality in some way.  As a result, we then have to take _new actions_ to deal with these new risks.  
+The actions we take have consequences in the real world.   Hopefully, we eliminate some known risks but we might expose new [hidden risks](../thinking/Glossary.md#hidden-risk) as we go.  There is a _recursive_ nature about this - we're left with an updated Internal Model, and we see new actions we have to take as a result.
 
 ![Taking actions changes reality, but changes your model of the risks too](../images/generated/introduction/model_vs_reality_2.png)
 
