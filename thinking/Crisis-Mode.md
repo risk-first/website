@@ -20,7 +20,7 @@ Let's look at a classic description of Risk Management:
 
 > "Risk Management is the process of thinking out corrective actions before a problem occurs, while it's still an abstraction.  The opposite of risk management is crisis management, trying to figure out what to do about the problem after it happens." - [Waltzing With Bears, _De Marco, Lister_](http://amzn.eu/d/i0IDFA2)
 
-This is not how Risk-First sees it:  
+This is not how Risk-First sees it. 
 
 First, we have the notion that Risks are discrete events.  Some risks _are_ (like gambling on a horse race), but most _aren't_.  In the [Dinner Party](A-Simple-Scenario.md), for example, bad preparation is going to mean a _worse_ time for everyone, but how good a time you're having is a spectrum, it doesn't divide neatly into just "good" or "bad".  
 
@@ -34,7 +34,7 @@ Yes, it's fine to say "we're in crisis", but to assume there is a different stra
 
 You would expect that any methods for managing software delivery should be _invariant_ to the degree of crisis in the project.  If, for example, a project proceeds using [Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development)) for eight months and then the deadline looms and everyone agrees to throw Scrum out of the window and start hacking, then _this implies there is a problem with Scrum_ and that it is not **Panic Invariant**.  In fact, many tools like Scrum don't consider this:
 
-- If there is a production outage during the working week, we don't wait for the next Scrum Sprint to fix it.
+- If there is a production outage during the working week, we don't wait for the next Scrum Sprint to plan and fix it.
 - Although a 40-hour work-week _is a great idea_, this goes out of the window if the databases all crash on a Saturday morning.
 
 In these cases, we (hopefully calmly) _evaluate the risks and Take Action_.  

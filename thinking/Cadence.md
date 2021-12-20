@@ -62,7 +62,7 @@ The [Testing Pyramid](http://www.agilenutshell.com/episodes/41-testing-pyramid) 
 
 - **Unit Tests** have a _fast feedback loop_, so have _lots of them_.
 - **Integration Tests** have a slightly _slower feedback loop_, so have _few of them_.   Use them when you can't write unit tests (at the application boundaries).
-- **Manual Tests** have a _very slow feedback loop_, so have _even fewer of them_.  Use them as a last resort.
+- **Manual Tests** have a _very slow feedback loop_, so have _even fewer of them_.  Use them as a last resort.  But note - they are essential.
 
 ![The Testing Pyramid](../images/generated/introduction/testing_pyramid.png)
 
