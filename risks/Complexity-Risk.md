@@ -310,6 +310,10 @@ At this point, you realise you're in a **Dead End**:
 > There’s a subtle reason that programmers always want to throw away the code and start over. The reason is that they think the old code is a mess. And here is the interesting observation: they are probably wrong. The reason that they think the old code is a mess is because of a cardinal, fundamental law of programming:  _It’s harder to read code than to write it._    - [Things You Should Never Do, Part 1, _Joel Spolsky_](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)
 
 Whichever option you choose, this is a [Dead End](#dead-end-risk) because with hindsight, it would probably have been better to do authentication in a common way _once_.  But it's hard to see these dead-ends up-front because of the complexity of the system in front of you.
+
+### Avoiding Dead Ends
+
+Working in a complex environment makes it harder to see developmental dead-ends.
  
 Sometimes, the path across the [Risk Landscape](Risk-Landscape.md) will take you to dead ends, and the only benefit to be gained is experience.  No one deliberately chooses a dead end - often you can take an action that doesn't pay off, but frequently the dead end appears from nowhere:  it's a [Hidden Risk](../thinking/Glossary.md#hidden-risk).  The source of a lot of this hidden risk is the complexity of the [risk landscape](../thinking/Glossary.md#risk-landscape).
 
@@ -376,7 +380,7 @@ This is a strong argument for the use of libraries.  But when should you use a l
 
 The complexity of software tends to reflect the complexity of the environment it runs in, and complex software environments are more difficult to reason about, and more susceptible to [Operational Risk](Operational-Risk.md) and [Security-Risk](Agency-Risk.md#security).  
 
-In particular, when we talk about the environment, we are talking about the number of dependencies that the software has, and the risks we face when relying on those dependencies.  
+In particular, when we talk about the environment, we are talking about the number of external dependencies that the software has, and the risks we face when relying on those dependencies.  
 
 So the next stop in the tour is a closer look at [Dependency Risk](Dependency-Risk.md).
 
