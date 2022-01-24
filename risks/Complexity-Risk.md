@@ -17,8 +17,6 @@ redirect_from:
 
 [Complexity Risk](Complexity-Risk.md) is the [risk](../thinking/Glossary.md#risk) to your project due to its underlying "complexity".   Here, we will break down exactly what we mean by complexity, look at where it can hide on a software project and discuss some ways in which we can manage this important risk.
 
-![Complexity Risk and Codebase Risk](../images/generated/risks/complexity/complexity-risk.png)
-
 Here we will:
 
  - Look at two ways in which complexity is measured, via [Kolmogorov Complexity](Complexity-Risk.md#kolmogorov-complexity) and [Graph-Connectivity](Complexity-Risk.md#connectivity).
@@ -28,6 +26,8 @@ Here we will:
  - Discuss places where Complexity Risk [manifests](Complexity-Risk.md#where-complexity-hides) in computing.  
  
 ## Codebase Risk
+
+![Complexity Risk and Codebase Risk](../images/generated/risks/complexity/complexity-risk.png)
 
 Complexity arises in software projects in a number of different ways.  We're going to start by looking at complexity in the _code you write_.  Aside from _bragging rights_, no-one is interested in having a large codebase:
 
@@ -114,9 +114,9 @@ Abstraction is therefore a key tool in the battle against [Complexity Risk](Comp
 
 Time spent replacing poor abstractions with better ones is called _refactoring_.  
 
-The above diagram demonstrates that a key practice in battling [Codebase Risk](Complexity-Risk.md#codebase-risk) is choosing **a minimal set of useful abstractions**.  
+The above diagram demonstrates that a key practice in battling [Codebase Risk](Complexity-Risk.md#codebase-risk) is choosing **a minimal set of useful abstractions**.  The attendant risk in doing that work (the downside) is the _time spent doing it_. That is, [Schedule Risk](Scarcity-Risk.md#schedule-risk).   
 
-The attendant risk in doing that work (the downside) is the _time spent doing it_. That is, [Schedule Risk](Scarcity-Risk.md#schedule-risk).   Sometimes it is better to have an ok-ish abstraction _now_ rather than a brilliant abstraction _too late_. 
+Sometimes it is better to have an ok-ish abstraction _now_ rather than a brilliant abstraction _too late_. 
 
 ### Languages and Dependencies
 
