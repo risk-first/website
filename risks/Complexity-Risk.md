@@ -35,7 +35,7 @@ Complexity arises in software projects in a number of different ways.  We're goi
 
 The size of your codebase, the amount of code, the number of modules, the interconnectedness of the modules and how well-factored the code is all contribute to [Codebase Risk](Complexity-Risk.md#codebase-risk): a specific type of [Complexity Risk](Complexity-Risk.md) meaning _the complexity of your codebase_.
 
-Before we look at the implications of this risk, let's look at some prior-art on how to establish this complexity. 
+Before we look at the implications of this risk, let's look at some prior-art on how to measure this complexity. 
 
 ## Kolmogorov Complexity
 
@@ -78,7 +78,7 @@ function out() {                                      (7 )
 With this version, we now have **41 symbols** (`ABCD` is a single symbol - it's just a name).  And with this version:
 
 ```javascript
-const ABCD="ABCD";                                    (11)
+const ABCD="abcd";                                    (11)
 
 function out() {                                      (7 )
     return ABCD.repeat(10)                            (7 )
@@ -94,9 +94,9 @@ What's happening here is that we're _exploiting a pattern_: we noticed that `abc
 
 By applying abstraction, we can improve in the direction of the Kolmogorov lower bound.  By allowing ourselves to say that _symbols_ (like `out` and `ABCD`) are worth one complexity point, we've allowed that we can be descriptive in naming `function` and `const`.  Naming things is an important part of abstraction, because to use something, you have to be able to refer to it.
 
-Generally, the more complex a piece of software is, the more difficulty users will have [understanding it](Feature-Risk.md#conceptual-integrity-risk), and the more work developers will have changing it.  We should prefer the third version of our code over either the first or second because of its brevity.
+Generally, the more complex a piece of software is, the more difficulty users will have [understanding it](Feature-Risk.md#conceptual-integrity-risk), and the more work developers will have changing it. 
 
-But we could go further down into [Code Golf](https://en.wikipedia.org/wiki/Code_golf) territory.  The following javascript program plays [FizzBuzz](https://en.wikipedia.org/wiki/Fizz_buzz) up to 100, but is less readable than you might hope.
+Although we should prefer the third version of our code over either the first or second (because of its brevity) we could go further down into [Code Golf](https://en.wikipedia.org/wiki/Code_golf) territory.  The following javascript program plays [FizzBuzz](https://en.wikipedia.org/wiki/Fizz_buzz) up to 100, but is less readable than you might hope.
 
 ```javascript
 for(i=0;i<100;)document.write(((++i%3?'':'Fizz')+     
@@ -114,11 +114,15 @@ Abstraction is therefore a key tool in the battle against [Complexity Risk](Comp
 
 Time spent replacing poor abstractions with better ones is called _refactoring_.  
 
-The above diagram demonstrates that a key practice in battling [Codebase Risk](Complexity-Risk.md#codebase-risk) is choosing a minimal set of useful abstractions.  The attendant risk in that work is the time spent doing it, as [Schedule Risk](Scarcity-Risk.md#schedule-risk).   Sometimes it is better to have an ok-ish abstraction _now_ rather than a brilliant abstraction _too late_. 
+The above diagram demonstrates that a key practice in battling [Codebase Risk](Complexity-Risk.md#codebase-risk) is choosing **a minimal set of useful abstractions**.  
+
+The attendant risk in doing that work (the downside) is the _time spent doing it_. That is, [Schedule Risk](Scarcity-Risk.md#schedule-risk).   Sometimes it is better to have an ok-ish abstraction _now_ rather than a brilliant abstraction _too late_. 
 
 ### Languages and Dependencies
 
-The above Javascript example also demonstrates a second way in which we can manage [Codebase Risk](Complexity-Risk.md#codebase-risk).  In the third iteration of the program, we used the method `.repeat()`, which allowed us to save a further 16 symbols.  
+The above Javascript example also demonstrates a second way in which we can manage [Codebase Risk](Complexity-Risk.md#codebase-risk).  
+
+In the third version of the program, we used the method `.repeat()`, which allowed us to save a further 16 symbols.  
 
 `.repeat()` is a recent addition to Javascript, added in ES6.  What this shows is that the Kolmogorov complexity of a program is actually _heavily dependent_ on the features of the programming language:  using ES6-Javascript allows us to produce simpler programs than before. 
 
@@ -183,7 +187,7 @@ This carries over into software too:  heavily connected code is more complex tha
 
 ### Hierarchies and Modularisation
 
-In the graph above, I've arranged it as a hierarchy which I can do trivially now that it's only 1-connected.  For 10 vertices, we need 9 edges to connect everything up.  It's always:
+In the second graph, I've arranged it as a hierarchy (which I can do trivially now that it's only 1-connected).  For 10 vertices, we need 9 edges to connect everything up.  It's always:
 
 ```javascript
   edges = vertices - 1
@@ -199,11 +203,15 @@ How does this help us?   Imagine if **a** - **j** were modules of a software sys
  
 The second graph is easier to reason about because of the reduced number of connections and the new hierarchy of organisation.  
 
-On the down-side, perhaps our messages have farther to go now:  in the original, **i** could send a message straight to **j**, but now we have to go all the way via **c**.   But this is the basis of [Modularisation](https://en.wikipedia.org/wiki/Modular_programming) and [Hierarchy](https://en.wikipedia.org/wiki/Hierarchy).
+On the down-side, perhaps our messages have farther to go now:  in the original, **i** could send a message straight to **j**, but now we have to go all the way via **c**.   But this is the basis of [Modularisation](https://en.wikipedia.org/wiki/Modular_programming) and [Hierarchy](https://en.wikipedia.org/wiki/Hierarchy).   
+
+Secondly, it's not apparent to **i** that **j** _even exists_: we have hidden the modules from each other.  For anything that **i** needed to send to **j**, **i** must be able to send to **c** instead.  
 
 ![Modularisation and Hierarchy](../images/generated/risks/complexity/modularisation.png)
 
-This trade-off is shown in the above diagram, and it's our third tool for battling [Codebase Risk](Complexity-Risk.md#codebase-risk).  But we don't just see this in software, it's everywhere in our lives:  societies, business, and living organisms all use this technique.  For example in our bodies we have:
+The trade-off of modularisation/hierarchy is shown in the above diagram, and it's our third tool for battling [Codebase Risk](Complexity-Risk.md#codebase-risk).  
+
+But we don't just see this in software, it's everywhere in our lives:  societies, business, and living organisms all use this technique.  For example in our bodies we have:
   
  - **Organelles** - such as [Mitochondria](https://en.wikipedia.org/wiki/Mitochondrion), contained in...
  - **Cells** - such as blood cells, nerve cells, skin cells in the [Human Body](https://en.wikipedia.org/wiki/List_of_distinct_cell_types_in_the_adult_human_body), inside...
@@ -212,19 +220,23 @@ This trade-off is shown in the above diagram, and it's our third tool for battli
  
 The great complexity-reducing mechanism of modularisation is that _you only have to consider your local environment_.  
 
+## Analogies
+
 So, we've looked at some measures of software structure complexity.  We can say "this is more complex than this" for a given piece of code or structure.  We've also looked at three ways to manage it:  [Abstraction](../thinking/Glossary.md#abstraction) and [Modularisation](Complexity-Risk.md#Hierarchies-and-Modularisation) and via [Dependencies](Complexity-Risk.md#languages-and-dependencies).  
 
 However, we've not really said why complexity entails [Risk](../thinking/Glossary.md#Attendant-Risk).  So let's address that now by looking at three analogies, [Mass](Complexity-Risk.md#Complexity-is-mass), [Technical Debt](Complexity-Risk.md#technical-debt) and [Mess](Complexity-Risk.md#kitchen-analogy)  
 
-## Complexity is Mass
+### Complexity is Mass
 
-The first way to look at complexity is as **Mass** :  a software project with more complexity has greater mass than one with less complexity.  Newton's Second Law states:
+The first way to look at complexity is as **Mass** :  a software project with more complexity has greater mass than one with less complexity.  
+
+Newton's Second Law states:
 
 > F = _m_**a**,    ( Force = Mass x Acceleration )
 
-That is, in order to move your project _somewhere new_, and make it do new things, you need to give it a push, and the more mass it has, the more **Force** you'll need to move (accelerate) it.  
+That is, in order to move your project _somewhere new_ and make it do new things, you need to give it a push.  The more mass it has the more **Force** you'll need to move (accelerate) it.  
 
-You could stop here and say that the more lines of code a project contains, the greater its mass.  And, that makes sense, because in order to get it to do something new, you're likely to need to change more lines.  
+You could stop here and say that the more lines of code a project contains, the greater its mass.  And that makes sense because in order to get it to do something new you're likely to need to change more lines.  
 
 But there is actually some underlying sense in which this is true in the real, physical world too, as discussed in a [Veritasium](https://www.youtube.com/user/1veritasium) video.  To paraphrase:
 
@@ -236,7 +248,7 @@ If we want to move _fast_ we need simple code-bases.
 
 At a basic level, [Complexity Risk](Complexity-Risk.md) heavily impacts on [Schedule Risk](Scarcity-Risk.md#schedule-risk):  more complexity means you need more force to get things done, which takes longer.
 
-## Technical Debt
+### Technical Debt
 
 The most common way we talk about [Complexity Risk](Complexity-Risk.md) in software is as [Technical Debt](Complexity-Risk.md#technical-debt):
 
@@ -248,7 +260,7 @@ So a quick-and-dirty, over-complex implementation mitigates the same [Feature Ri
 
 But having mitigated the [Feature Risk](Feature-Risk.md) this way, you are likely exposed to a higher level of [Complexity Risk](Complexity-Risk.md) than would be desirable.  This "carries forward" and means that in the future, you're going to be slower.  As in the case of a real debt, "servicing" the debt incurs a steady, regular cost.
 
-## Kitchen Analogy
+### Kitchen Analogy
 
 It’s often hard to make the case for minimising [Technical Debt](Complexity-Risk.md#technical-debt): it often feels that there are more important priorities, especially when technical debt can be “swept under the carpet” and forgotten about until later.  (See [Discounting](../thinking/Evaluating-Risk.md#discounting-the-future-to-zero).)
 
@@ -262,7 +274,7 @@ It's not long before someone comes down with food poisoning.
 
 We wouldn't tolerate this behaviour in a restaurant kitchen, so why put up with it in a software project?  This state-of-affairs is illustrated in the above diagram.  Not only does [Complexity Risk](Complexity-Risk.md) slow down future development, it can be a cause of [Operational Risks](Operational-Risk.md) and [Security Risks](Agency-Risk.md#security).
 
-## Feature Creep
+### Feature Creep
 
 In Brooks' essay "No Silver Bullet - Essence and Accident in Software Engineering", a distinction is made between:
 
