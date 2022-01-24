@@ -23,7 +23,7 @@ Here we will:
 
  - Look at two ways in which complexity is measured, via [Kolmogorov Complexity](Complexity-Risk.md#kolmogorov-complexity) and [Graph-Connectivity](Complexity-Risk.md#connectivity).
  - Define [Complexity-Risk](Complexity-Risk.md), and the related risks of [Codebase Risk](Complexity-Risk.md#codebase-risk) (complexity in your codebase) and [Dead-End Risk](Complexity-Risk.md#dead-end-risk) (risk of implementations getting "stuck").
- - Discuss ways to think about complexity:  as [mass](Complexity-Risk.md#complexity-as-mass), [technical debt](Complexity-Risk.md#technical-debt) and [mess](Complexity-Risk.md#kitchen-analogy).
+ - Discuss ways to think about complexity:  as [mass](Complexity-Risk.md#complexity-is-mass), [technical debt](Complexity-Risk.md#technical-debt) and [mess](Complexity-Risk.md#kitchen-analogy).
  - Discuss ways to manage complexity risk, such as modularisation, hierarchy, use of languages and libraries and by avoiding feature creep.
  - Discuss places where Complexity Risk [manifests](Complexity-Risk.md#where-complexity-hides) in computing.  
  
@@ -114,7 +114,7 @@ Abstraction is therefore a key tool in the battle against [Complexity Risk](Comp
 
 Time spent replacing poor abstractions with better ones is called _refactoring_.  
 
-The above diagram demonstrates that a key practice in battling [Codebase Risk](Complexity-Risk.md#codebase-risk) is choosing a minimal set of useful abstractions.  The attendant risk in that work is the time spent doing it, as [Schedule Risk](Scarcity-Risks.md#schedule-risk).   Sometimes it is better to have an ok-ish abstraction _now_ rather than a brilliant abstraction _too late_. 
+The above diagram demonstrates that a key practice in battling [Codebase Risk](Complexity-Risk.md#codebase-risk) is choosing a minimal set of useful abstractions.  The attendant risk in that work is the time spent doing it, as [Schedule Risk](Scarcity-Risk.md#schedule-risk).   Sometimes it is better to have an ok-ish abstraction _now_ rather than a brilliant abstraction _too late_. 
 
 ### Languages and Dependencies
 
