@@ -1,13 +1,16 @@
-<?xml version="1.0"?>
-<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink'  zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
-  <svg:defs>
-    <svg:style type="text/css"> @import url("/public/templates/risk-first/risk-first.css");</svg:style>
-  </svg:defs><diagram xmlns="http://www.kite9.org/schema/adl"  id="diagram-135" name="Connectivity 1"
-  style="kite9-min-width: 900pt; kite9-layout: right; ">
+<diagram 
+    xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+	xmlns:xslt="http://www.kite9.org/schema/xslt"
+	xmlns="http://www.kite9.org/schema/adl"
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+    id="diagram-113" 
+    name="Connectivity 3" 
+  style="--kite9-min-width: 900pt; --kite9-layout: right; ">
  
-  <group style="kite9-horizontal-align: left; kite9-margin-right: 150pt;">
+  <group style="--kite9-horizontal-align: left; --kite9-margin-right: 150pt;">
  
- <context id="auto:137298" bordered="true">
+ <container id="auto:137298" bordered="true">
   
   
   <glyph id="id_0">
@@ -48,8 +51,8 @@
    <text>P1</text>
    <symbols/>
   </label>
- </context>
- <context id="auto:137577" bordered="true">
+ </container>
+ <container id="auto:137577" bordered="true">
   
   
   <glyph id="id_5">
@@ -90,7 +93,7 @@
    <text>P2</text>
    <symbols/>
   </label>
- </context>
+ </container>
  <glyph id="id_2">
   
   
@@ -203,4 +206,4 @@
    <from  reference="id_8"/>
    <to  reference="id_4"/>
   </link>
-  </diagram></svg:svg>
+  </diagram>

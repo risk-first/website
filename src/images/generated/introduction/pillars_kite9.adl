@@ -8,8 +8,8 @@
 
     <plinth id="p">Risk Management</plinth>
 
-    <group style="kite9-padding: 10pt; ">
-      <back style='kite9-usage: decal; kite9-type: svg;  '>
+    <group style="--kite9-padding: 10pt; ">
+      <back style='--kite9-usage: decal; --kite9-type: svg;  '>
         <svg:rect x='0' y='0' width='#{$width}' height='#{$height}' rx='12pt' ry='12pt' class="context-back" stroke-dasharray="4 4" />
       </back>
 
@@ -37,14 +37,14 @@
 
     </group>
 
-    <cloud id="l4" style="kite9-type: text; kite9-padding: 10pt; text-align: middle; ">
+    <cloud id="l4" style="--kite9-type: text; --kite9-padding: 10pt; text-align: middle; ">
        Best
       Possible 
       Outcome
     </cloud>
  
 
-    <link class="invisible" style="kite9-link-minimum-length: 0px; " drawDirection="DOWN">
+    <link class="invisible" style="--kite9-link-minimum-length: 0px; " drawDirection="DOWN">
       <from reference="p" />
       <to reference="l1" />
     </link>
@@ -61,15 +61,15 @@
       <to reference="l4" class="arrow"/>
     </link>
 
-    <link class="invisible" drawDirection="RIGHT" style="kite9-link-minimum-length: 0px; ">
+    <link class="invisible" drawDirection="RIGHT" style="--kite9-link-minimum-length: 0px; ">
       <from reference="l1" />
       <to reference="l2" />
     </link>
-    <link class="invisible" drawDirection="RIGHT" style="kite9-link-minimum-length: 0px; ">
+    <link class="invisible" drawDirection="RIGHT" style="--kite9-link-minimum-length: 0px; ">
       <from reference="l2" />
       <to reference="l3" />
     </link>
-    <link class="invisible" drawDirection="RIGHT" style="kite9-link-minimum-length: 0px; ">
+    <link class="invisible" drawDirection="RIGHT" style="--kite9-link-minimum-length: 0px; ">
       <from reference="l3" />
       <to reference="l4" />
     </link>

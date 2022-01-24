@@ -3,16 +3,16 @@
   <svg:defs>
     <svg:style type="text/css"> @import url("/public/templates/risk-first/risk-first.css");</svg:style>
   </svg:defs>
-  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-113" name="Goal In Mind" style="kite9-min-width: 800pt;">
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-113" name="Goal In Mind" style="--kite9-min-width: 800pt;">
 
-    <context id="c" bordered="true" style="kite9-layout: right; kite9-vertical-align: top;">
-      <group style="kite9-layout: down; kite9-vertical-align: top;">
+    <context id="c" bordered="true" style="--kite9-layout: right; --kite9-vertical-align: top;">
+      <group style="--kite9-layout: down; --kite9-vertical-align: top;">
         <risk id="a" class="agency" />
 
         <description>Risks due to the fact that things you depend on have agency, and they have their own goals to pursue.</description>
 
       </group>
-      <group style="kite9-layout: down; ">
+      <group style="--kite9-layout: down; ">
         <risk id="p" class="process" />
 
         <description>Risks due to the fact that when dealing with a dependency, we have to follow a particular protocol of communication, which may
@@ -21,7 +21,7 @@
 
       </group>
 
-      <group style="kite9-layout: right; ">
+      <group style="--kite9-layout: right; ">
         <risk id="i" class="invisibility" />
         <risk class="dead-end" />
         <risk class="feature-access" />
