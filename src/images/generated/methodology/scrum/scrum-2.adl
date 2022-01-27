@@ -3,10 +3,10 @@
   <svg:defs>
     <svg:style type="text/css"> @import url("/public/templates/risk-first/risk-first.css");</svg:style>
   </svg:defs>
-  <diagram xmlns="http://www.kite9.org/schema/adl" style="kite9-layout: right; kite9-min-width: 900pt; ">
+  <diagram xmlns="http://www.kite9.org/schema/adl" style="--kite9-layout: right; --kite9-min-width: 900pt; ">
 
-    <context id="c" bordered="true" style="kite9-layout: down;">
-      <group id="g1" style="kite9-layout: right;  kite9-connection-align: 50%; ">
+    <context id="c" bordered="true" style="--kite9-layout: down;">
+      <group id="g1" style="--kite9-layout: right;  --kite9-connection-align: 50%; ">
  
         <mitigated>
            <risk class="coordination" />
@@ -20,14 +20,14 @@
       </label>
     </context>
 
-    <group style="kite9-layout: down;" >
-      <action style="kite9-margin: 10pt; kite9-horizontal-align: left; kite9-min-width: 200pt;">Retrospectives</action>
-      <action style="kite9-margin: 10pt; kite9-horizontal-align: left; kite9-min-width: 200pt;">Standups</action>
-      <action style="kite9-margin: 10pt; kite9-horizontal-align: left; kite9-min-width: 200pt;">Planning Poker</action>
-      <action style="kite9-margin: 10pt; kite9-horizontal-align: left; kite9-min-width: 200pt;">Scrum Goal</action>
+    <group style="--kite9-layout: down;" >
+      <action style="--kite9-margin: 10pt; --kite9-horizontal-align: left; --kite9-min-width: 200pt;">Retrospectives</action>
+      <action style="--kite9-margin: 10pt; --kite9-horizontal-align: left; --kite9-min-width: 200pt;">Standups</action>
+      <action style="--kite9-margin: 10pt; --kite9-horizontal-align: left; --kite9-min-width: 200pt;">Planning Poker</action>
+      <action style="--kite9-margin: 10pt; --kite9-horizontal-align: left; --kite9-min-width: 200pt;">Scrum Goal</action>
     </group>
     
-    <context id="c" bordered="true" style="kite9-layout: down; ">
+    <context id="c" bordered="true" style="--kite9-layout: down; ">
       <risk class="schedule" />
 
       <description>... but these all take time and effort from everyone in the team.</description>

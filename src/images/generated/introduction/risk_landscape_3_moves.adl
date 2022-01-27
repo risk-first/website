@@ -3,11 +3,11 @@
   <svg:defs>
     <svg:style type="text/css"> @import url("/public/templates/risk-first/risk-first.css");</svg:style>
   </svg:defs>
-  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-113" name="Goal In Mind" style="kite9-min-width: 900pt;">
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-113" name="Goal In Mind" style="--kite9-min-width: 900pt;">
 
-    <group style="kite9-layout: right;">
+    <group style="--kite9-layout: right;">
 
-      <context id="start" style="kite9-connection-align: 50%;   kite9-traversal: none; ">
+      <context id="start" style="--kite9-connection-align: 50%;   --kite9-traversal: none; ">
 
         <risk id="id_0" class="funding" />
         <risk id="id_0" class="implementation" />
@@ -22,7 +22,7 @@
         <label>Go Live</label>
       </arrow>
 
-      <context id="one" style="kite9-traversal: none; ">
+      <context id="one" style="--kite9-traversal: none; ">
 
         <risk class="operational" />
         <risk class="attendant">Reputational
@@ -38,8 +38,8 @@
     </group>
 
 
-    <group style="kite9-layout: right;">
-      <context id="two" style="kite9-connection-align: 50%; kite9-traversal: none; ">
+    <group style="--kite9-layout: right;">
+      <context id="two" style="--kite9-connection-align: 50%; --kite9-traversal: none; ">
 
         <risk id="id_0" class="funding" />
 
@@ -55,7 +55,7 @@
 
 
 
-      <context id="goal" style="kite9-connection-align: 50%; kite9-traversal: none; ">
+      <context id="goal" style="--kite9-connection-align: 50%; --kite9-traversal: none; ">
 
         <risk class="operational" />
 
@@ -65,7 +65,7 @@
         </label>
       </context>
 
-      <context id="ungoal" style="kite9-connection-align: 50%; kite9-traversal: none; ">
+      <context id="ungoal" style="--kite9-connection-align: 50%; --kite9-traversal: none; ">
 
         <risk class="operational" />
         <risk class="attendant">Reputational

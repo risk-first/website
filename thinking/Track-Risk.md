@@ -82,7 +82,7 @@ This type of graphic is _helpful_ in deciding what to do next, although alternat
 
 ## Unknown Unknowns
 
-One of the criticisms of the [Risk Register](Evaluating-Risk.md#risk-registers) approach is that of [mistaking the map for the territory](../risks/Map-And-Territory-Risk.md).  That is, mistakenly believing that what's on the Risk Register _is all there is_.  
+One of the criticisms of the [Risk Register](Track-Risk.md#risk-registers) approach is that of [mistaking the map for the territory](../risks/Map-And-Territory-Risk.md).  That is, mistakenly believing that what's on the Risk Register _is all there is_.  
 
 In the preceding discussions, I have been careful to point out the existence of [Hidden Risks](../thinking/Glossary.md#hidden-risk) for that very reason. Or, to put another way:
 

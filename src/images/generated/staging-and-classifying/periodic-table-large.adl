@@ -2,38 +2,38 @@
   <svg:defs>
     <svg:style type="text/css"> @import url("/public/templates/risk-first/risk-first.css");</svg:style>
   </svg:defs>
-  <diagram xmlns="http://www.kite9.org/schema/adl" id="The Diagram" style="kite9-layout: down; kite9-padding: 0;">
+  <diagram xmlns="http://www.kite9.org/schema/adl" id="The Diagram" style="--kite9-layout: down; --kite9-padding: 0;">
 
-    <table style="kite9-grid-size: 2 10; kite9-margin: 0; kite9-padding: 0">
-      <cell style="kite9-occupies: 0 0; " class="shaded">
+    <table style="--kite9-grid-size: 2 10; --kite9-margin: 0; --kite9-padding: 0">
+      <cell style="--kite9-occupies: 0 0; " class="shaded">
         <risk class="coordination" id="coordination" />
       </cell>
-      <cell style="kite9-occupies: 0 1;  ">
-        <risk class="feature" id="feature" style="kite9-horizontal-align: left; " />
+      <cell style="--kite9-occupies: 0 1;  ">
+        <risk class="feature" id="feature" style="--kite9-horizontal-align: left; " />
       </cell>
-      <cell style="kite9-occupies: 0 2; " class="shaded">
+      <cell style="--kite9-occupies: 0 2; " class="shaded">
         <risk class="map-and-territory" id="map-and-territory" />
       </cell>
-      <cell style="kite9-occupies: 0 3; " class="shaded">
+      <cell style="--kite9-occupies: 0 3; " class="shaded">
         <risk class="communication" id="communication" />
       </cell>
-      <cell style="kite9-occupies: 0 4; ">
-        <risk class="agency" style="kite9-horizontal-align: left; " />
+      <cell style="--kite9-occupies: 0 4; ">
+        <risk class="agency" style="--kite9-horizontal-align: left; " />
       </cell>
-      <cell style="kite9-occupies: 0 5; "  class="shaded">
-        <risk class="complexity" id="complexity" style="kite9-horizontal-align: left; " />
+      <cell style="--kite9-occupies: 0 5; "  class="shaded">
+        <risk class="complexity" id="complexity" style="--kite9-horizontal-align: left; " />
       </cell>
-      <cell style="kite9-occupies: 0 6; " class="shaded">
+      <cell style="--kite9-occupies: 0 6; " class="shaded">
         <risk class="boundary" id="boundary" />
       </cell>
-      <cell style="kite9-occupies: 0 7; kite9-layout: down; ">
+      <cell style="--kite9-occupies: 0 7; --kite9-layout: down; ">
         <risk class="dependency" id="dependency" />
-        <risk class="operational" style="kite9-horizontal-align: left; " />
+        <risk class="operational" style="--kite9-horizontal-align: left; " />
       </cell>
 
-      <cell style="kite9-occupies: 1 1 0 1; kite9-layout: right; ">
-        <context style="kite9-layout: down; kite9-sizing: maximize;">
-          <group style="kite9-layout: right; ">
+      <cell style="--kite9-occupies: 1 1 0 1; --kite9-layout: right; ">
+        <context style="--kite9-layout: down; --kite9-sizing: maximize;">
+          <group style="--kite9-layout: right; ">
             <risk class="feature-fit" />
             <risk class="implementation" />
           </group>
@@ -44,7 +44,7 @@
           </label>
         </context>
 
-        <context style="kite9-layout: down; kite9-sizing: maximize; ">
+        <context style="--kite9-layout: down; --kite9-sizing: maximize; ">
           <risk class="market" />
           <risk class="feature-access" />
 
@@ -55,7 +55,7 @@
         </context>
 
 
-        <context style="kite9-layout: down; kite9-sizing: maximize; ">
+        <context style="--kite9-layout: down; --kite9-sizing: maximize; ">
           <risk class="regression" />
           <risk class="feature-drift" />
 
@@ -67,9 +67,9 @@
       </cell>
 
 
-      <cell style="kite9-occupies: 1 1 2 3; " class="shaded">
-        <group style="kite9-layout: right; ">
-          <context style="kite9-layout: down ">
+      <cell style="--kite9-occupies: 1 1 2 3; " class="shaded">
+        <group style="--kite9-layout: right; ">
+          <context style="--kite9-layout: down ">
             <risk class="internal-model" />
             <risk class="learning-curve" id="learning-curve" />
             <label>
@@ -78,7 +78,7 @@
             </label>
           </context>
 
-          <context style="kite9-layout: down; kite9-sizing: maximize; ">
+          <context style="--kite9-layout: down; --kite9-sizing: maximize; ">
             <risk class="message" />
             <risk class="invisibility" id="invisibility" />
             <label>
@@ -87,14 +87,14 @@
             </label>
           </context>
           
-          <context style="kite9-layout: down; kite9-sizing: maximize; ">
+          <context style="--kite9-layout: down; --kite9-sizing: maximize; ">
             <risk class="protocol" id="protocol" />
             <label>
               <text>Protocol</text>
               <symbols />
             </label>
           </context>
-          <context style="kite9-layout: down; kite9-sizing: maximize;">
+          <context style="--kite9-layout: down; --kite9-sizing: maximize;">
 
             <risk class="channel" id="channel" />
 
@@ -108,24 +108,24 @@
 
       </cell>
 
-      <cell style="kite9-occupies: 1 1 4 4" >
+      <cell style="--kite9-occupies: 1 1 4 4" >
         <risk class="trust" />
         <risk class="security" />
       </cell>
 
-      <cell style="kite9-occupies: 1 1 5 5; kite9-layout: right; " class="shaded">
+      <cell style="--kite9-occupies: 1 1 5 5; --kite9-layout: right; " class="shaded">
         <risk class="codebase" id="codebase" />
         <risk class="dead-end" id="dead-end" />
       </cell>
 
-      <cell style="kite9-occupies: 1 1 6 7; kite9-layout: right; ">
-        <context style="kite9-layout: right; kite9-sizing: maximize;  ">
-          <group style="kite9-layout: down; ">
+      <cell style="--kite9-occupies: 1 1 6 7; --kite9-layout: right; ">
+        <context style="--kite9-layout: right; --kite9-sizing: maximize;  ">
+          <group style="--kite9-layout: down; ">
             <risk class="scarcity" />
             <risk class="funding" />
             <risk class="staff" />
           </group>
-          <group style="kite9-layout: down; ">
+          <group style="--kite9-layout: down; ">
             <risk class="opportunity" />
             <risk class="schedule" />
                <risk class="red-queen" />
@@ -136,11 +136,11 @@
           </label>
         </context>
 
-        <group style="kite9-layout: down; ">
+        <group style="--kite9-layout: down; ">
           <risk class="deadline" />
           <risk class="reliability" />
         </group>
-        <group style="kite9-layout: down; ">
+        <group style="--kite9-layout: down; ">
           <risk class="software-dependency" />
           <risk class="process" id="process" />
         </group>
