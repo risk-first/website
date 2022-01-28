@@ -20,7 +20,7 @@ redirect_from:
 Here we will:
 
  - Look at two ways in which complexity is measured, via [Kolmogorov Complexity](Complexity-Risk.md#kolmogorov-complexity) and [Graph-Connectivity](Complexity-Risk.md#connectivity).
- - Define [Complexity-Risk](Complexity-Risk.md), and the related risks of [Codebase Risk](Complexity-Risk.md#codebase-risk) (complexity in your codebase) and [Dead-End Risk](Complexity-Risk.md#dead-end-risk) (risk of implementations getting "stuck").
+ - Define [Complexity Risk](Complexity-Risk.md), and the related risks of [Codebase Risk](Complexity-Risk.md#codebase-risk) (complexity in your codebase) and [Dead-End Risk](Complexity-Risk.md#dead-end-risk) (risk of implementations getting "stuck").
  - Discuss ways to think about complexity:  as [mass](Complexity-Risk.md#complexity-is-mass), [technical debt](Complexity-Risk.md#technical-debt) and [mess](Complexity-Risk.md#kitchen-analogy).
  - Discuss ways to manage complexity risk, such as modularisation, hierarchy, use of languages and libraries and by avoiding feature creep.
  - Discuss places where Complexity Risk [manifests](Complexity-Risk.md#where-complexity-hides) in computing.  
