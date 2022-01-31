@@ -54,7 +54,7 @@ function stddev(range, mean, variance) {
 	});
 }
 
-document.addEventListener("load", () => {
+window.addEventListener("load", () => {
 	doChart('simulation', 
 	 {
 	   'units' : { min: 1, max: 15, value: 10, name: 'Number of Units', step: 1 },
@@ -154,7 +154,7 @@ The more samples we make, the more precise the sample variance will be, and so t
 <div id="simulation2" />
 
 <script type="text/javascript">
-document.addEventListener("load", () => {
+window.addEventListener("load", () => {
 
 function stddev(range, mean, variance) {
 	const factor = 1 / (Math.sqrt(2* 3.141592 * variance));
@@ -277,7 +277,7 @@ Let's ignore _all other risks_ and just focus on these monetary ones.  What is t
 <div id="simulation3" />
 
 <script type="text/javascript">
-document.addEventListener("load", () => {
+window.addEventListener("load", () => {
 
 function stddev(range, mean, variance) {
 	const factor = 1 / (Math.sqrt(2* 3.141592 * variance));
