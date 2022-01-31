@@ -64,7 +64,9 @@ Below is a table outlining the different risks we'll see.  There _is_ an order t
 |[Map And Territory Risk](Map-And-Territory-Risk.md)    |Risks due to the fact that people don't see the world as it really is. (After all, they're working off different, imperfect [Internal Models](../thinking/Glossary.md#internal-model).)|  
 |[Operational Risk](Operational-Risk.md)                |Software is embedded in a system containing people, buildings, machines and other services.  Operational risk considers this wider picture of risk associated with running a software service or business in the real world.|
        
-After the last stop on the tour, in [Staging and Classifying](Staging-And-Classifying.md) we'll have a recap about what we've seen and make some guesses about how things fit together.  
+After the last stop on the tour, in [Staging and Classifying](Staging-And-Classifying.md) we'll have a recap about what we've seen and make some guesses about how things fit together.
+
+Also on that page is a [periodic table](Staging-And-Classifying.md#towards-a-periodic-table-of-risks) showing a diagrammatic view of how all these risks fit together.  
 
 ## Causation & Correlation 
 
@@ -84,13 +86,13 @@ In the [Financial Services](https://en.wikipedia.org/wiki/Financial_services) in
 - **[Credit Risk](https://en.wikipedia.org/wiki/Credit_risk)**, the risk that someone who owes you a payment at a specific point in time might not pay it back.
 - **[Liquidity Risk](https://en.wikipedia.org/wiki/Liquidity_risk)**, the risk that you can't find a market to sell/buy something, usually leading to a shortage of ready cash.
 
+![Correlation of Risks in the Financial Crisis](../images/generated/risks/landscape/causation2.png)
+
 In the financial crisis of 2007, these models of risk didn't turn out to be much use.   Although there are lots of conflicting explanations of what happened, one way to look at it is this:
 
  - Liquidity difficulties (i.e. amount of cash you have for the day-to-day running of the bank) caused some banks to not be able to cover their short term payment obligations.
  - This caused credit defaults (the thing that [Credit Risk](https://en.wikipedia.org/wiki/Credit_risk) measures were meant to guard against) even though the banks _technically_ were solvent.
  - Once credit defaults started, this worried investors in the banks, which had massive [Market Risk](https://en.wikipedia.org/wiki/Market_risk) impacts that none of the models foresaw.
-
-![Correlation of Risks in the Financial Crisis](../images/generated/risks/landscape/causation2.png)
 
 All the [Risks](../thinking/Glossary.md#Risk) were [correlated](https://www.investopedia.com/terms/c/correlation.asp).  That is, they were affected by the _same underlying events_, or _each other_.
 

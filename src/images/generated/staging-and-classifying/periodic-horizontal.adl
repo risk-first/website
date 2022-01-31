@@ -1,0 +1,138 @@
+<diagram
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+	xmlns:xslt="http://www.kite9.org/schema/xslt"
+	xmlns="http://www.kite9.org/schema/adl"
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink" id="diagram-113"
+	style="--kite9-layout: down; --kite9-padding: 0;">
+
+	<table class="invisible"
+		style="--kite9-grid-size: 1 3; --kite9-margin: 0; --kite9-padding: 0">
+		<cell style="--kite9-occupies: 0 0; " class="invisible">
+			<group style="--kite9-layout: down;">
+				<risk class="operational" />
+				<group style="--kite9-layout: right; ">
+					<risk class="feature" id="feature" style="--kite9-vertical-align: top; "/>
+					<risk class="coordination" id="coordination" style="--kite9-vertical-align: top; " />
+					<risk class="communication" id="communication" style="--kite9-vertical-align: top; "/>
+					<risk class="complexity" id="complexity" style="--kite9-vertical-align: top; "/>
+					<risk class="map-and-territory" id="map-and-territory" style="--kite9-vertical-align: top; "/>
+					<risk class="dependency" id="dependency"  style="--kite9-vertical-align: top; " />
+				</group>
+			</group>
+		</cell>
+		<cell style="--kite9-occupies: 0 1; --kite9-layout:horizontal;  " class="invisible">
+			<container id="dependency-c" style="--kite9-vertical-sizing: maximize; ">
+				<group style="--kite9-layout: right; ">
+					<risk class="software-dependency" style="--kite9-vertical-align: top; " />
+					<risk class="scarcity" id="scarcity"  style="--kite9-vertical-align: top; "/>
+					<risk class="process" id="process"  style="--kite9-vertical-align: top; "/>
+					<risk class="deadline"  style="--kite9-vertical-align: top; "/>
+					<risk class="reliability"  style="--kite9-vertical-align: top; " />
+					<risk class="agency" id="agency" style="--kite9-vertical-align: top; "/>
+					<risk class="boundary" id="boundary"  style="--kite9-vertical-align: top; "/>
+				</group>
+				
+				<container id="agency-c" style="--kite9-layout: down; --kite9-vertical-sizing: maximize; ">
+					<risk class="trust" />
+					<risk class="security" />
+					<label>
+						Agency Risks
+					</label>
+				</container>
+				
+				<container id="scarcity-c" style="--kite9-layout: down; --kite9-vertical-sizing: maximize; ">
+					<group>
+						<risk class="funding" />
+						<risk class="staff" />
+						<risk class="opportunity" />
+					</group>
+					<group>
+					<risk class="schedule" />
+					<risk class="red-queen" />
+					</group>
+					<label>
+						Scarcity Risks
+					</label>
+				</container>
+				
+				<label>Dependency Risks</label>
+			</container>
+			<container id="communication-c" style="--kite9-layout: down;  --kite9-vertical-sizing: maximize; ">
+				<group>
+					<risk class="internal-model" />
+					<risk class="learning-curve" id="learning-curve" />
+					<label>Internal Model</label>
+				</group>
+
+				<group>
+					<risk class="message" />
+					<risk class="invisibility" id="invisibility" />
+					<label>Message</label>
+				</group>
+
+				<group>
+					<risk class="protocol" id="protocol" />
+					<risk class="channel" id="channel" />
+				</group>
+				<label>Communication Risks</label>
+			</container>
+			<container id="feature-c" style="--kite9-layout: down;  --kite9-vertical-sizing: maximize; ">
+				<group>
+					<risk class="feature-fit" />
+					<risk class="implementation" />
+					<risk class="conceptual-integrity" />
+					<label>Fit</label>
+				</group>
+				<group>
+					<risk class="market" />
+					<risk class="feature-access" />
+					<label>Audience</label>
+				</group>
+				<group>
+					<risk class="regression" />
+					<risk class="feature-drift" />
+					<label>Evolution</label>
+				</group>
+
+				<label>Feature Risks</label>
+			</container>
+			<container id="complexity-c" style="--kite9-layout: down;  --kite9-vertical-sizing: maximize; ">
+				<group style="--kite9-layout: down; --kite9-vertical-align: top; ">
+				<risk class="codebase" id="codebase" />
+				<risk class="dead-end" id="dead-end" />
+				</group>
+				<label>Complexity Risks</label>
+			</container>
+		</cell>
+	</table>
+	
+	<link drawDirection="DOWN">
+		<from reference="feature" />
+		<to reference="feature-c" />
+	</link>
+	<link drawDirection="DOWN">
+		<from reference="dependency" />
+		<to reference="dependency-c" />
+	</link>
+	<link drawDirection="DOWN">
+		<from reference="communication" />
+		<to reference="communication-c" />
+	</link>
+	<link drawDirection="DOWN">
+		<from reference="complexity" />
+		<to reference="complexity-c" />
+	</link>
+	<link drawDirection="DOWN">
+		<from reference="scarcity" />
+		<to reference="scarcity-c" />
+	</link>
+	<link drawDirection="DOWN">
+		<from reference="agency" />
+		<to reference="agency-c" />
+	</link>
+	<align drawDirection="RIGHT">
+		<from reference="agency-c" />
+		<to reference="scarcity-c" />
+	</align>
+</diagram>
