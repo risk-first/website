@@ -39,8 +39,8 @@ Where we are able to see measurements clustering-around-the-mean, this gives ris
 
 <div id="simulation" />
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js" integrity="sha256-Uv9BNBucvCPipKQ2NS9wYpJmi8DTOEfTA/nH2aoJALw=" crossorigin="anonymous"></script>
-<script src="{{ site.baseurl }}/assets/js/mychart.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js" integrity="sha256-Uv9BNBucvCPipKQ2NS9wYpJmi8DTOEfTA/nH2aoJALw=" crossorigin="anonymous"></script>
+<script defer src="{{ site.baseurl }}/assets/js/mychart.js"></script>
 <script type="text/javascript">
 
 function stddev(range, mean, variance) {
