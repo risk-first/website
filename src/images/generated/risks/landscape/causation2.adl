@@ -7,7 +7,10 @@
 	name="Correlation2">
 
 	<group style="--kite9-layout: down;">
-		<risk id="c" style="--kite9-vertical-align: top; ">Liquidity Risk</risk>
+		<risk id="c" class="generic" href="/public/templates/risk-first/redesign/risks/dependency_funding_risk_v2.svg">
+			<code id="att_1">L</code>
+			<title id="att_2">Liquidity Risk</title>
+		</risk>
 		<description>
 			Defaults caused problems 
 			with liquidity...
@@ -15,7 +18,10 @@
 	</group>
 
 	<group style="--kite9-layout: down;">
-		<risk id="d" style="--kite9-vertical-align: top; ">Credit Risk</risk>
+		<risk id="d" class="generic" href="/public/templates/risk-first/redesign/risks/dependency_funding_risk_v2.svg">
+			<code id="att_1">C</code>
+			<title id="att_2">Credit Risk</title>
+		</risk>
 		<description>
 			Which caused overall 
 			increase in credit risk...
@@ -23,7 +29,7 @@
 	</group>
 
 	<group style="--kite9-layout: down;">
-		<risk id="e" style="--kite9-vertical-align: top; ">Market Risk</risk>
+		<risk id="e" style="--kite9-vertical-align: top; " class="market">Market Risk</risk>
 		<description>
 			Which caused runaway 
 			market risks.
@@ -31,11 +37,11 @@
 	</group>
 	<link>
 		<from reference="c" />
-		<to reference="d" class="arrow" />
+		<to reference="d" shape="arrow" />
 	</link>
 
 	<link>
 		<from reference="d" />
-		<to reference="e" class="arrow" />
+		<to reference="e" shape="arrow" />
 	</link>
 </diagram>

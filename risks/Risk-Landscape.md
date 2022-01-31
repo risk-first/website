@@ -90,7 +90,7 @@ In the financial crisis of 2007, these models of risk didn't turn out to be much
  - This caused credit defaults (the thing that [Credit Risk](https://en.wikipedia.org/wiki/Credit_risk) measures were meant to guard against) even though the banks _technically_ were solvent.
  - Once credit defaults started, this worried investors in the banks, which had massive [Market Risk](https://en.wikipedia.org/wiki/Market_risk) impacts that none of the models foresaw.
 
-![Correlation of Risks in the Financial Crisis](../images/generated/risks/landscape/causation.png)
+![Correlation of Risks in the Financial Crisis](../images/generated/risks/landscape/causation2.png)
 
 All the [Risks](../thinking/Glossary.md#Risk) were [correlated](https://www.investopedia.com/terms/c/correlation.asp).  That is, they were affected by the _same underlying events_, or _each other_.
 

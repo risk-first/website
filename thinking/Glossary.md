@@ -50,13 +50,15 @@ Obviously, because we've all had different experiences, and our brains are wired
 - Within a software system, we might consider the [Internal Model](#internal-model) of a single server, and what knowledge it has of the world.
 - A codebase is a team's [Internal Model](#internal-model) written down and encoded as software.
 
+_See: [A Simple Scenario](A-Simple=Scenario.md)_
+
 ### Meet Reality
 
 Any moment where we test an [Internal Model](#internal-model) by exposing it's predictive power against reality.  Note that "Reality" might be limited in some way, for example, a trial period or test users.   _See: [Meeting Reality](../thinking/Meeting-Reality.md)_
 
 ### Payoff
 
-Payoff refers to the _value_ of the [actions we take](#taking-action).  When we decide on a course of action, we have in mind a risk we wish to manage.  If the action is likely to have a big positive effect on the risk of a project, we say it has a promising payoff, whereas if the action fails to manage the risk, then it hasn't _paid off_.   _See: [Meeting Reality](../thinking/Meeting-Reality.md)_
+Payoff refers to the _value_ of the [actions we take](#taking-action).  When we decide on a course of action, we have in mind a risk we wish to manage.  If the action is likely to have a big positive effect on the risk of a project, we say it has a promising payoff, whereas if the action fails to manage the risk, then it hasn't _paid off_.   _See: [Consider Payoff](../thinking/Consider-Payoff.md)_
 
 ### Risk
 
@@ -78,7 +80,7 @@ Risks that, as a result of [Taking Action](#taking-action) have been minimized. 
 
 #### Upside Risk
 
-The possibility of things going well, and leaving us with a benefit.  We may [take action](#taking-action) to maximize the likelihood and return of upside risks.  _See: [Just Risk](../thinking/Just-Risk.md)_
+The possibility of things going well, and leaving us with a benefit.  We may [take action](#taking-action) to maximize the likelihood and return of upside risks.  _See: [Risk-First Analysis](../estimating/Risk-First-Analysis.md)_
 
 ### Risk Landscape
 
