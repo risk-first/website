@@ -39,7 +39,7 @@ Where we are able to see measurements clustering-around-the-mean, this gives ris
 
 <div id="simulation" />
 
-<script type="text/javascript">
+<script defer type="text/javascript">
 
 function stddev(range, mean, variance) {
 	const factor = 1 / (Math.sqrt(2* 3.141592 * variance));
@@ -149,7 +149,7 @@ The more samples we make, the more precise the sample variance will be, and so t
 
 <div id="simulation2" />
 
-<script type="text/javascript">
+<script defer type="text/javascript">
 function stddev(range, mean, variance) {
 	const factor = 1 / (Math.sqrt(2* 3.141592 * variance));
 	return range.map(r => {
@@ -268,7 +268,7 @@ Let's ignore _all other risks_ and just focus on these monetary ones.  What is t
 
 <div id="simulation3" />
 
-<script type="text/javascript">
+<script defer type="text/javascript">
 function stddev(range, mean, variance) {
 	const factor = 1 / (Math.sqrt(2* 3.141592 * variance));
 	return range.map(r => {
