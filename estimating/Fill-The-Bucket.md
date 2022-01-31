@@ -198,6 +198,7 @@ function calcVar(s, mean) {
 	return tot / len;
 }
 
+document.addEventListener("load", () => {
 doChart('simulation2', 
  {
    'samples' : { min: 2, max: 200, value: 3, name: 'Individual Samples', step: 1 },
@@ -231,6 +232,8 @@ doChart('simulation2',
 		    },
 		   
 		}}]);
+		
+	});
 
 </script>
 
@@ -287,6 +290,8 @@ function stddev(range, mean, variance) {
 var days = 60;
 var mean = 2;
 var variance = 1;
+
+document.addEventListener("load", () => {
 
 doChart('simulation3', 
  {
@@ -369,6 +374,8 @@ doChart('simulation3',
 			
 		}
 		]);
+		
+	});
 
 </script>
 

@@ -1,3 +1,4 @@
+
 ---
 title: The Risk Landscape
 description: A way to think about the risks you face on a software project.
@@ -98,7 +99,9 @@ All the [Risks](../thinking/Glossary.md#Risk) were [correlated](https://www.inve
 
 ![Causation shown on a Risk-First Diagram.  More complexity is likely to lead to more Operational Risk](../images/generated/risks/landscape/causation.png)
 
-It's like this with software risks, too, sadly.  For example, [Operational Risk](Operational-Risk.md) is going to be heavily correlated with [Complexity Risk](Complexity-Risk.md).  Just like a machine, the more complex it is, the more likely it is that you will have problems keeping all the parts working.  In the Risk-First diagrams, we will sometimes show correlation or causation with an arrow, like in the diagram above.
+It's like this with software risks, too, sadly.  For example, [Operational Risk](Operational-Risk.md) is going to be heavily correlated with [Complexity Risk](Complexity-Risk.md).  Just like a machine, the more complex it is, the more likely it is to fail, and the more likely it will fail in some unexpected, difficult-to-diagnose way.  
+
+In the Risk-First diagrams, we will sometimes show correlation or causation with an arrow, like in the diagram above.
 
 ## We're all Naturalists Now
 
