@@ -50,7 +50,7 @@ Obviously, because we've all had different experiences, and our brains are wired
 - Within a software system, we might consider the [Internal Model](#internal-model) of a single server, and what knowledge it has of the world.
 - A codebase is a team's [Internal Model](#internal-model) written down and encoded as software.
 
-_See: [A Simple Scenario](A-Simple=Scenario.md)_
+_See: [A Simple Scenario](A-Simple-Scenario.md)_
 
 ### Meet Reality
 
