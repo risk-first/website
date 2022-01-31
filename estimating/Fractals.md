@@ -37,48 +37,50 @@ Let's look at a simple mathematical example of a shape like this, the [Koch Snow
 
 <!--replace ![Koch Snowflake](../images/estimates/koch.png)-->![Koch Snowflake](https://upload.wikimedia.org/wikipedia/commons/f/fd/Von_Koch_curve.gif)<!--endreplace-->
 
-<div id="koch" />
+<div id="koch"></div>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js" integrity="sha256-Uv9BNBucvCPipKQ2NS9wYpJmi8DTOEfTA/nH2aoJALw=" crossorigin="anonymous"></script>
-<script src="{{ site.baseurl }}/assets/js/mychart.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js" integrity="sha256-Uv9BNBucvCPipKQ2NS9wYpJmi8DTOEfTA/nH2aoJALw=" crossorigin="anonymous"></script>
+<script defer src="{{ site.baseurl }}/assets/js/mychart.js"></script>
 <script type="text/javascript">
-
-var max = 10;
-
-doChart('koch', 
- undefined,
- [
- model => { 	 
-  return {
-    type: 'line',
-    data: {
-      labels: range(0, max, 1),
-      datasets: [{
-      	label: 'Perimeter Length',
-      	backgroundColor: [ 'rgba(255, 99, 132, 0.2)' ],
-      	borderColor: [ 'rgba(255, 99, 132, 1)' ],
-      	data: range(0, max, 1).map(i => Math.pow((4/3), i))
-      },
-      ]
-    }
-  }},
-  model => { 
+window.addEventListener("load", () => {
+	var max = 10;
+	
+	doChart('koch', 
+	 undefined,
+	 [
+	 model => { 	 
 	  return {
 	    type: 'line',
 	    data: {
 	      labels: range(0, max, 1),
 	      datasets: [{
-	      	label: 'Area',
-	      	backgroundColor: [ 'rgba(255, 132, 99, 0.2)' ],
-	      	borderColor: [ 'rgba(255, 132, 99, 1)' ],
-	      	data:  range(0, max, 1).map(i => 8-3*(Math.pow(4/9, i)))
-	      }
+	      	label: 'Perimeter Length',
+	      	backgroundColor: [ 'rgba(255, 99, 132, 0.2)' ],
+	      	borderColor: [ 'rgba(255, 99, 132, 1)' ],
+	      	data: range(0, max, 1).map(i => Math.pow((4/3), i))
+	      },
 	      ]
 	    }
-	  }
-},
- 
-]);
+	  }},
+	  model => { 
+		  return {
+		    type: 'line',
+		    data: {
+		      labels: range(0, max, 1),
+		      datasets: [{
+		      	label: 'Area',
+		      	backgroundColor: [ 'rgba(255, 132, 99, 0.2)' ],
+		      	borderColor: [ 'rgba(255, 132, 99, 1)' ],
+		      	data:  range(0, max, 1).map(i => 8-3*(Math.pow(4/9, i)))
+		      }
+		      ]
+		    }
+		  }
+	},
+	 
+	]);
+
+});
 
 </script>
 

@@ -151,7 +151,7 @@ $$s^2 = \frac{\sum(x - \bar{x})^2}{n - 1}$$
  
 The more samples we make, the more precise the sample variance will be, and so the more confident we should be on our expected time to complete painting the fence.
 
-<div id="simulation2" />
+<div id="simulation2"></div>
 
 <script type="text/javascript">
 window.addEventListener("load", () => {
@@ -274,7 +274,7 @@ Let's set up a simple scenario, which we've agreed by contract with a client:
 
 Let's ignore _all other risks_ and just focus on these monetary ones.  What is the best time to suggest to the client?
 
-<div id="simulation3" />
+<div id="simulation3"></div>
 
 <script type="text/javascript">
 window.addEventListener("load", () => {
