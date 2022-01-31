@@ -1,0 +1,41 @@
+<diagram
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+	xmlns:xslt="http://www.kite9.org/schema/xslt"
+	xmlns="http://www.kite9.org/schema/adl"
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink" id="diagram-113"
+	name="Correlation2">
+
+	<group style="--kite9-layout: down;">
+		<risk id="c" style="--kite9-vertical-align: top; ">Liquidity Risk</risk>
+		<description>
+			Defaults caused problems 
+			with liquidity...
+		</description>
+	</group>
+
+	<group style="--kite9-layout: down;">
+		<risk id="d" style="--kite9-vertical-align: top; ">Credit Risk</risk>
+		<description>
+			Which caused overall 
+			increase in credit risk...
+		</description>
+	</group>
+
+	<group style="--kite9-layout: down;">
+		<risk id="e" style="--kite9-vertical-align: top; ">Market Risk</risk>
+		<description>
+			Which caused runaway 
+			market risks.
+		</description>
+	</group>
+	<link>
+		<from reference="c" />
+		<to reference="d" class="arrow" />
+	</link>
+
+	<link>
+		<from reference="d" />
+		<to reference="e" class="arrow" />
+	</link>
+</diagram>
