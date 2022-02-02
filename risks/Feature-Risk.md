@@ -18,15 +18,18 @@ tweet: yes
 
 [Feature Risks](Feature-Risk.md) are types of risks to do with functionality that you need to have in the software you're building.  
 
-![Feature Risk Family](../images/generated/risks/feature/feature-risks.png)
-
-As shown in the diagram above, [Feature Risks](Feature-Risk.md) are a family of risks you face any time you start trying to build functionality to serve a client.  In this article, we will break down and talk about the different [Feature Risks](Feature-Risk.md), how they occur and what you can do to address them.
-
 [Feature Risk](Feature-Risk.md) is very fundamental:  if your project has _no_ [Feature Risk](Feature-Risk.md) it would be perfect!  And we all know that _can't happen_.
+
+![Feature Risk Family](../images/generated/risks/feature/feature-risks.png)
 
 As a rule of thumb, [Feature Risk](Feature-Risk.md) exists in the gaps between what users _want_, and what they _are given_.
 
 Not considering [Feature Risk](Feature-Risk.md) means that you might be building the wrong functionality, for the wrong audience or at the wrong time.  Eventually, this will come down to lost money, business, acclaim, or whatever you are doing your project for.  So let's unpack this concept into some of its variations.
+
+As shown in the diagram above, [Feature Risks](Feature-Risk.md) are a family of risks you face any time you start trying to build functionality to serve a client.  In this article, we will:
+ - Break down and talk about the different [Feature Risks](Feature-Risk.md) shown in the diagram above.  
+ - Discuss how they occur and what action you can take to address them.
+ - Analyse the family of feature risks along three axes of _fit_, _audience_ and _change_.
 
 ## Feature Fit Risk
 
@@ -83,11 +86,11 @@ Conceptual Integrity Risk is a particularly pernicious kind of [Feature Risk](Fe
 
 Feature Access Risks are risks due to some clients not having access to some or all of the features in your product.
 
-Sometimes features can work for some people and not others:  this could be down to [Accessibility](https://en.wikipedia.org/wiki/Accessibility) issues, language barriers or localisation or security.
+Sometimes features can work for some people and not others:  this could be down to [Accessibility](https://en.wikipedia.org/wiki/Accessibility) issues, language barriers, localisation or security.
 
 You could argue that the choice of _platform_ is also going to limit access:  writing code for XBox-only leaves PlayStation owners out in the cold.   This is _largely_ [Feature Access Risk](Feature-Risk.md#feature-access-risk), though [Dependency Risk](Dependency-Risk.md) is related here.
 
-In marketing terms, minimising [Feature Access Risk](#feature-access-risk) is all about [Segmentation](https://en.wikipedia.org/wiki/Market_segmentation):  trying to work out _who_ your product is for, and tailoring it to that particular market.  As shown in the diagram above, mitigating [Feature Access Risk](#feature-access-risk) means increasing complexity:  you have to deliver the software on more platforms, localised in more languages, with different configurations of features.  It also means increased development effort.
+In marketing terms, minimising [Feature Access Risk](#feature-access-risk) is all about [Segmentation](https://en.wikipedia.org/wiki/Market_segmentation):  trying to work out _who_ your product is for and tailoring it to that particular market.  As shown in the diagram above, mitigating [Feature Access Risk](#feature-access-risk) means increasing complexity:  you have to deliver the software on more platforms, localised in more languages, with different configurations of features.  It also means increased development effort.
 
 ## Market Risk
 
@@ -101,7 +104,7 @@ I face market risk when I own (i.e. have a _position_ in) some [Apple](https://a
 
 This risk applies equally well when building a software product, as the software you're building is effectively your stock and its value is whatever the market places on it (i.e. what people are willing to pay).
 
-Even projects that are internal to a company are not immune:  they still need to have a value to the company, and therefore have Market Risk.
+Even projects that are internal to a company are not immune:  they still need to have a value to the company and therefore suffer Market Risk.
 
 Since the _market_ decides what it is prepared to pay, Market Risk tends to be outside your control.  Although, as shown in the diagram, you can use tools like **marketing** to try and engage with your market and get them to see the value in what you are doing. 
 
@@ -113,19 +116,23 @@ Since the _market_ decides what it is prepared to pay, Market Risk tends to be o
 
 For example, at one point in time, supporting IE6 was right up there for website developers, but it's not really relevant anymore.   The continual improvements we see in processor speeds and storage capacity of our computers is another example:  the [Wii](https://en.wikipedia.org/wiki/Wii) was hugely popular in the early 2000's, but expectations have moved on now.        
 
-The point is:  what users want _today_ might not make it to _tomorrow_, especially in the fast-paced world of IT, partly because the market _evolves_ and becomes more discerning.  This happens in several ways:
+The point is:  what users want _today_ might not make it to _tomorrow_.  This is especially true in the fast-paced world of IT. Over time, the market _evolves_ and becomes more discerning.  This happens in several ways:
 
  - Features present in competitors' versions of the software become _the baseline_, and they're expected to be available in your version.
  - Certain ways of interacting become the norm (e.g. [querty](https://en.wikipedia.org/wiki/QWERTY) keyboards, or the control layout in cars: these don't change with time).
  - Features decline in usefulness: _Printing_ is less important now than it was,  for example.
  
-As shown in the diagram, saving your project from Feature Drift Risk means **further design and development**.   But trying to keep up with users' changing demands can re-introduce [Conceptual Integrity Risk](#conceptual-integrity-risk) back into your project.  Sometimes, the only way to go is to start again with a clean sheet by some **distruptive innovation**.
+As shown in the diagram, saving your project from Feature Drift Risk means **further design and development**.   But trying to keep up with users' changing demands can re-introduce [Conceptual Integrity Risk](#conceptual-integrity-risk) back into your project.  
+
+Sometimes, the only way to go is to start again with a clean sheet by some **distruptive innovation**.
 
 [Feature Drift Risk](Feature-Risk.md#feature-drift-risk) is _not the same thing_ as **Requirements Drift**, which is the tendency projects have to expand in scope as they go along.  There are lots of reasons they do that, a key one being the [Hidden Risks](../thinking/Glossary.md#hidden-risk) uncovered on the project as it progresses.
 
 ## Fashion
 
-Fashion plays a big part in IT.  By being _fashionable_, web-sites are communicating:   _this is a new thing_, _this is relevant_, _this is not terrible_.  All of which is mitigating a [Communication Risk](Communication-Risk.md).  Users are all-too-aware that the Internet is awash with terrible, abandon-ware sites that are going to waste their time.  How can you communicate that you're not one of them to your users?
+Fashion plays a big part in IT.  By being _fashionable_, web-sites are communicating:   _this is a new thing_, _this is relevant_, _this is not terrible_.  All of which is mitigating a [Communication Risk](Communication-Risk.md).  Users are all-too-aware that the Internet is awash with terrible, abandon-ware sites that are going to waste their time.  
+
+How can you communicate that you're not one of them to your users?
 
 ## Delight
 
