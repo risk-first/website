@@ -1,23 +1,19 @@
-<?xml version="1.0"?>
-<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
-  <svg:defs>
-    <svg:style type="text/css"> @import url("/public/templates/risk-first/risk-first.css");</svg:style>
-  </svg:defs>
-  <diagram xmlns="http://www.kite9.org/schema/adl"  id="diagram-113" name="Goal In Mind" style="--kite9-min-width: 800pt;">
+<diagram
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+	xmlns:xslt="http://www.kite9.org/schema/xslt"
+	xmlns="http://www.kite9.org/schema/adl"
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink" id="diagram-113">
 
-  <context id="c" bordered="true" style="--kite9-layout: down; ">
-
-    <mitigated>
-      <risk class="conceptual-integrity" />
-    </mitigated>
+  <container id="c" bordered="true" style="--kite9-layout: down; ">
+    <risk class="conceptual-integrity" />
     
-    <description>Risk that the software you provide is too complex, or doesn't match the expectations of your clients' internal models.</description>
 
-    <label  id="id_16">
-      <text>Internal Model</text>
-      <symbols />
+    <label  id="id_16">Risk that the software you provide
+     doesn't match the expectations 
+     of your clients' internal models.
     </label>
-  </context>
+  </container>
 
   <group style="--kite9-layout: down; --kite9-horizontal-align: left;">
     <action style="--kite9-horizontal-align: left;">User Experience Testing</action>
@@ -25,16 +21,12 @@
     <action style="--kite9-horizontal-align: left;">Market Research</action>
   </group>
   
-  <context id="d">
+  <container id="d">
   
     <risk class="schedule" />  
   
-    <label  id="id_16">
-      <text>Attendant Risks</text>
-      <symbols />
-    </label>
-  </context>
+    <label  id="id_16">Attendant Risks</label>
+  </container>
 
 
   </diagram>
-</svg:svg>
