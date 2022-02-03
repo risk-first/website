@@ -8,6 +8,7 @@ featured:
   element: '<risk class="complexity" />'
 order: 5
 categories:
+ - Popular
  - Risks
 redirect_from: 
  - /Complexity-Risk
