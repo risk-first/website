@@ -1,7 +1,7 @@
 ---
 title: Encouragement
 description: Encouraging feedback for Risk-First
-url: https://riskfirst.org/overview/Encouragement
+url: https://riskfirst.org/misc/Encouragement
 
 categories:  
  - Popular
