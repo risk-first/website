@@ -1,17 +1,15 @@
 ---
 title: Encouragement
-description: Encouraging comments about Risk-First
+description: Encouraging feedback for Risk-First
 url: https://riskfirst.org/overview/Encouragement
 
-categories: 
+categories:  
+ - Popular
  - Misc
 featured: 
   class: bg1
-  element: '<users>Audience</users>'
-order: 3
-redirect_from: 
- - /Audience
- - /overview/Audience
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/thumbs-up.svg">Encouragement</image-artifact>'
+order: 16
 ---
 
 # Encouragement 
