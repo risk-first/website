@@ -31,19 +31,21 @@ I'm always surprised when people order the book, because I'm very up-front about
 
 ![Amazon 5-Star Review 1](../images/misc/endorsements/amazon2.png)
 
-![Amazon 5-Star Review 2](../images/misc/endorsements/amazon2.png)
+![Amazon 5-Star Review 2](../images/misc/endorsements/amazon3.png)
 
 ## GitHub
 
-Somehow, people find this project on Github, and they star it, and then join the Risk-First team!  The Risk-Fir This image is from January 2022.  New people find the project all the time. 
+Somehow, people find this project on GitHub, and they star it, and then join the Risk-First team!  The Risk-First team is a place on GitHub for announcing and discussing the articles.  
 
-![Github Stars](../images/misc/endorsements/github1.png)
+This image is from January 2022.  New people find the project all the time. 
 
-![Github Team](../images/misc/endorsements/github2.png)
+![GitHub Stars](../images/misc/endorsements/github1.png)
+
+![GitHub Team](../images/misc/endorsements/github2.png)
 
 ## Google!
 
-For several results, Risk-First is now the authority on that topic.  This leads to some interesting emails, as you can see!
+For several results, Risk-First is now the authority (i.e. first result) on that topic.  This leads to some interesting email, as you can see!
 
 ![Google Search for Complexity Risk](../images/misc/endorsements/google1.png)
 
@@ -53,11 +55,11 @@ For several results, Risk-First is now the authority on that topic.  This leads 
 
 ## On LinkedIn
 
-Although not my day-job, Risk-First does seem to generate leads and work opportunities...  Or at the very least dinner opportunities!  
+Although not my day-job, Risk-First does seem to generate leads and work opportunities...  Or at the very least dinner invites!  
 
 > " Hi Rob ... My colleagues and I are interested in learning more about your work on Risk-first software development, and we wondered if you would be interested to speak about that at our conference if you are available at the time? "
 
-![LinkedIn1](../images/misc/endorsements/linkedin1.png)
+![LinkedIn1](../images/misc/endorsements/linkedIn1.png)
 
 > "... I found the book by way of Hacker News, and was amazed to see there's a whole book about the ideas I've been playing with recently! You've probably saved me a couple years worth of learning the hard way, so thanks!  ... Anyway, I noticed you're in the UK and I'm flying over to spend some time in our London office next week, so if you have the time and inclination I'd love to buy you lunch, coffee or beers and hear your thoughts on "real world" software development."
 
