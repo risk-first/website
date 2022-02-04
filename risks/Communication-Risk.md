@@ -77,7 +77,7 @@ Channel characteristics are important:  in a high-bandwidth, low-latency situati
 
 The channel characteristics also imply suitability for certain _kinds_ of messages.  A documentary might be a great way of explaining some economic concept, whereas an opera might not be.  <!-- tweet-end -->
 
-## Channel Risk
+### Channel Risk
 
 Shannon discusses that no channel is perfect:  there is always the **risk of noise** corrupting the signal.  A key outcome from Shannon's paper is that there is a tradeoff:  within the capacity of the channel (the **bandwidth**), you can either send lots of information with _higher_ risk that it is wrong, or less information with _lower_ risk of errors.
 
@@ -89,7 +89,7 @@ When channels are **poor-quality**, less communication occurs.  People will try 
 
 At other times channels are crowded and can contain so much information that we can't hope to receive all the messages.  In these cases we don't even observe the whole channel, just parts of it. 
 
-#### Marketing Communications
+### Marketing Communications
 
 When we are talking about a product or a brand, mitigating [Channel Risk](Communication-Risk.md#channel-risk) is the domain of [Marketing Communications](https://en.wikipedia.org/wiki/Marketing_communications).  <!-- tweet-end --> How do you ensure that the information about your (useful) project makes it to the right people?  How do you address the right channels? 
 
@@ -207,7 +207,7 @@ By having a stack of protocols we are able to apply [Separation Of Concerns](htt
 
 `HTTP` "stands on the shoulders of giants":  not only does it get to use pre-existing protocols like `TCP` and `DNS` to make its life easier, it got `WiFi` "for free" when this came along and plugged into the existing `IP` protocol.<!-- tweet-end -->  This is the key value of **abstraction**:  you get to piggy-back on _existing_ patterns, and use them yourself. 
 
-## Protocol Risk
+### Protocol Risk
 
 ![Communication Protocols Risks](../images/generated/risks/communication/communication_protocol_risks.png)
 
@@ -265,13 +265,13 @@ Nevertheless, static type checking is so prevalent in software that clearly in m
 
 Let's look at some further types of [Protocol Risk](Communication-Risk.md#protocol-risk).
  
-### Protocol Incompatibility Risk
+#### Protocol Incompatibility
 
 The people you find it _easiest_ to communicate with are your friends and family, those closest to you.  That's because you're all familiar with the same protocols.  Someone from a foreign country, speaking a different language and having a different culture, will essentially have a completely incompatible protocol for spoken communication to you.
 
 Within software there are also competing, incompatible protocols for the same things, which is maddening when your protocol isn't supported.   For example, although the world seems to be standardising, there used to be _hundreds_ of different image formats.  Photographs often use [TIFF](https://en.wikipedia.org/wiki/TIFF), [RAW](https://en.wikipedia.org/wiki/Raw_image_format) or [JPEG](https://en.wikipedia.org/wiki/JPEG), whilst we also have [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) for vector graphics, [GIF](https://en.wikipedia.org/wiki/GIF) for images and animations and [PNG](https://en.wikipedia.org/wiki/Portable_Network_Graphics) for other bitmap graphics.   
 
-### Protocol Versioning Risk
+#### Protocol Versioning
 
 Even when systems are talking the same protocol there can be problems!  
 
@@ -298,7 +298,7 @@ Backwards Compatibility mitigates [Protocol Versioning Risk](Communication-Risk.
 
 Do human languages support forward compatibility?  To some extent!  New words are added to our languages all the time.  When we come across a new word, we can either ignore it, guess the meaning, ask or look it up.  In this way, human language has **Forward Compatibility** features built in.
 
-### Protocol Implementation Risk
+#### Protocol Implementation
 
 A second aspect of [Protocol Risk](Communication-Risk.md#protocol-risk) exists in heterogeneous computing environments where protocols have been independently implemented based on standards.  For example, there are now so many different browsers, all supporting variations of `HTTP`, `HTML` and `JavaScript` that it becomes impossible to test a website comprehensively over all the different permutations.  
 
@@ -308,7 +308,7 @@ To mitigate as much [Protocol Risk](Communication-Risk.md#protocol-risk) as poss
 
 ![Message Risk](../images/generated/risks/communication/communication_message_risks.png) 
 
-Although Shannon's Communication Theory is about transmitting **Messages**, messages are really encoded **Ideas** and **Concepts**, from an **Internal Model**. <!-- tweet-end -->  Let's break down some of the risks associated with this:
+Although Shannon's Communication Theory is about transmitting **Messages**, messages are really encoded **Ideas** and **Concepts**, from an **Internal Model**.   Let's break down some of the risks associated with this:
 
 ### Internal Model Risk
 
@@ -332,7 +332,7 @@ only makes sense if the application has previously processed the message
 Create user 53 with surname 'Smith'
 ```
 
-### Misinterpretation Risk
+#### Misinterpretation
 
 For people, nothing exists unless we have a name for it. <!-- tweet-end --> The world is just atoms, but we don't think like this.  _The name is the thing_.  
 
@@ -408,7 +408,7 @@ If the messages we are receiving force us to update our [Internal Model](../thin
 
 Commonly, the easiest option is just to ignore the information channel completely in these cases.
 
-### Reading Code
+#### Reading Code
 
 It has often been said that code is _harder to read than to write_:  
 
@@ -422,7 +422,7 @@ But now we should be able to see the reason why it's harder to read than write t
  - There is no [Feedback Loop](../thinking/Glossary.md#Feedback-Loop) between your [Internal Model](../thinking/Glossary.md#Internal-Model) and the [Reality](../thinking/Glossary.md#Meet-Reality) of the code, opening you up to [Misinterpretation Risk](Communication-Risk.md#misinterpretation-risk).  When you write code, your compiler and tests give you this.
  - While reading code _takes less time_ than writing it, this also means the [Learning Curve](Communication-Risk.md#learning-curve-risk) is steeper.
 
-## Communication Risk Wrap Up
+## Communication Risks Wrap Up
 
 ![Communication Risks, Summarised](../images/generated/risks/communication/communication_3.png)
 
