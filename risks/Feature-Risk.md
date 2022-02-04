@@ -78,7 +78,7 @@ Sometimes it can go for a lot longer.  Here's an example: I once worked on some 
 
 [Feature Phones](https://en.wikipedia.org/wiki/Feature_phone) are another example:  although it _seemed_ like the market wanted more and more features added to their phones, [Apple's iPhone](https://en.wikipedia.org/wiki/IPhone) was able to steal huge market share by presenting a much more enjoyable, more coherent user experience, despite being more expensive and having _fewer_ features.  Feature Phones had been drowning in increasing [Conceptual Integrity Risk](Feature-Risk.md#Conceptual-integrity-risk) without realising it.
 
-Conceptual Integrity Risk is a particularly pernicious kind of [Feature Risk](Feature-Risk.md) which can only be mitigated by good design and [feedback](../thinking/Cadence.md).  Human needs are [fractal in nature](../estimating/Fractals.md): the more you examine them, the more complexity you can find.  The aim of a product is to capture some needs at a *general* level:  you can't hope to anticipate everything.  As with the other risks, there is an inherent [Schedule Risk](risks/Scarcity-Risk.md#schedule-risk) as addressing these risks takes _time_.
+Conceptual Integrity Risk is a particularly pernicious kind of [Feature Risk](Feature-Risk.md) which can only be mitigated by good design and [feedback](../thinking/Cadence.md).  Human needs are [fractal in nature](../estimating/Fractals.md): the more you examine them, the more complexity you can find.  The aim of a product is to capture some needs at a *general* level:  you can't hope to anticipate everything.  As with the other risks, there is an inherent [Schedule Risk](Scarcity-Risk.md#schedule-risk) as addressing these risks takes _time_.
 
 ## Feature Access Risk
 
