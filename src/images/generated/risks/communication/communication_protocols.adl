@@ -1,43 +1,36 @@
-<?xml version="1.0"?>
-<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink'  zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
-  <svg:defs>
-    <svg:style type="text/css"> @import url("/public/templates/risk-first/risk-first.css");</svg:style>
-  </svg:defs><diagram xmlns="http://www.kite9.org/schema/adl"  id="diagram-141" name="Communication - Protocols">
- 
+<diagram 
+    xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+	xmlns:xslt="http://www.kite9.org/schema/xslt"
+	xmlns="http://www.kite9.org/schema/adl"
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+    id="diagram-113" 
+    name="Complexity Risk Family">
+    
    <glyph id="id_21">
-    <label>Message</label>
+    Message
    </glyph>
 
- <context id="auto:176064" class="dotted">
+ <container id="auto:176064" class="dotted">
   <glyph id="id_2">
-   <label>HTTP</label>
+   HTTP
   </glyph>
   <glyph id="id_9">
-   <label>DNS</label>
+   DNS
   </glyph>
   <glyph id="id_4">
-   <label>TCP</label>
+   TCP
   </glyph>
   <glyph id="id_6">
-   <label>IP</label>
+   IP
   </glyph>
   <glyph id="id_8">
-   <label>802.11b</label>
+   802.11b
   </glyph>
-  <label  id="id_19">
-   <text>Protocols</text>
-   <symbols/>
-  </label>
- </context>
+  <label  id="id_19">Protocols</label>
+ </container>
  
- <glyph id="id_23">
-  
-  
-  <stereotype/>
-  <label>Channel</label>
-  <text-lines/>
-  <symbols/>
- </glyph>
+ <glyph id="id_23">Channel</glyph>
  
   <link id="id_20" shape="NORMAL" style="" drawDirection="LEFT">
    
@@ -81,4 +74,4 @@
 
 
   </link>
-  </diagram></svg:svg>
+  </diagram>

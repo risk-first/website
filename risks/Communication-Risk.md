@@ -20,6 +20,13 @@ If we all had identical knowledge, there would be no need to do any communicatin
 
 But people are not all-knowing oracles.  We rely on our _senses_ to improve our [Internal Models](../thinking/Glossary.md#Internal-Model) of the world. There is [Communication Risk](Communication-Risk.md) here - we might overlook something vital (like an on-coming truck) or mistake something someone says (like "Don't cut the green wire").  
 
+So, we are going to go on a journey discovering Communication Risk, covering:
+
+- A look at the four different _stages_ of communication and examples of each in the world of computing.
+- Breaking down Communication Risk as it affects each stage, discussing the types of risks present for each one.
+- The many problems faced in product marketing.
+- Communication protocols and how they relate to the concept of _abstraction_ and it's associated [Invisibility Risk](#invisibility-risk). 
+
 ## A Model Of Communication
 
 ![Shannon's Communication Model](../images/generated/risks/communication/communication_1.png)
@@ -28,7 +35,7 @@ In 1948, Claude Shannon proposed this definition of communication:
 
 > "The fundamental problem of communication is that of reproducing at one point, either exactly or approximately, a message selected at another point." - [A Mathematical Theory Of Communication, _Claude Shannon_](https://en.wikipedia.org/wiki/A_Mathematical_Theory_of_Communication)  
 
-And from this same paper we get the diagram above:  we move from top-left ("I want to send a message to someone"), clockwise to bottom left where we hope the message has been understood and believed.  (I've added this last box to Shannon's original diagram.)
+And from this same paper we get the diagram above:  we move from top-left ("I want to send a message to someone"), clockwise to bottom left where we hope the message has been understood and believed.  (I've added this last box, _reconciliation_ to Shannon's original diagram.)
 
 One of the chief concerns in Shannon's paper is the risk of error between **Transmission** and **Reception**.  He creates a theory of _information_ (measured in _bits_), sets the upper-bounds of information that can be communicated over a channel, and describes ways in which [Communication Risk](Communication-Risk.md) between these processes can be mitigated by clever **Encoding** and **Decoding** steps.
 
@@ -43,26 +50,26 @@ But it's not just transmission.  [Communication Risk](Communication-Risk.md) exi
 |Reception             | **Bob** doesn't hear the message clearly (maybe there is background noise). |
 |Decoding              | **Bob** might not decode what was said into a meaningful sentence. |
 |Interpretation        | Assuming **Bob** _has_ heard, will he correctly **interpret**  which type of chips (or chops) **Alice** was talking about? |
-|Reconciliation        | Does **Bob** believe the message?  Will he **reconcile** the information into his [Internal Model](../thinking/Glossary.md#Internal-Model) and act on it?  Perhaps not, if **Bob** thinks that there are chips at home already.|
+|Reconciliation        | Does **Bob** believe the message?  Will he **reconcile** the information into his [Internal Model](../thinking/Glossary.md#Internal-Model) and act on it?  Perhaps not, if **Bob** forgets, or thinks that there are chips at home already.|
 
 ## Approach To Communication Risk
 
-There is a symmetry about the steps going on in the diagram above, and we're going to exploit this in order to break down [Communication Risk](Communication-Risk.md) into its main types.  <!-- tweet-end -->
+To get inside [Communication Risk](Communication-Risk.md), we need to understand **Communication** itself, whether between _machines_, _people_ or _products_:  although these seem very different, the process involved (and the risks) are the same for each.  
 
 ![Communication Risk, broken into four areas](../images/generated/risks/communication/communication_2.png)
 
-To get inside [Communication Risk](Communication-Risk.md), we need to understand **Communication** itself, whether between _machines_, _people_ or _products_:   we'll look at each in turn.  In order to do that, we're going to examine four basic concepts in each of these settings:
- 
+There is a symmetry about the steps going on in Shannon's model and we're going to exploit this in order to break down [Communication Risk](Communication-Risk.md) into four basic _stages_, as shown in the diagram above: 
+
  - **[Channels](https://en.wikipedia.org/wiki/Communication_channel)**: the medium via which the communication is happening.
  - **[Protocols](https://en.wikipedia.org/wiki/Communication_protocol)**:  the systems of rules that allow two or more entities of a communications system to transmit information.
  - **[Messages](https://en.wikipedia.org/wiki/Message)**: the information we want to convey.
  - **[Internal Models](../thinking/Glossary.md#Internal-Model)**: the sources and destinations for the messages.  Updating internal models (whether in our heads or machines) is the reason why we're communicating.
  
-And, as we look at these four areas, we'll consider the [Attendant Risks](../thinking/Glossary.md#attendant-risk) of each.
+As we look at these four stages we'll consider the risks of each.
 
 ## Channels
 
-There are lots of different types of media for communicating (e.g. TV, Radio, DVD, Talking, Posters, Books, Phones, The Internet, etc. ) and they all have different characteristics.  When we communicate via a given medium, it's called a *channel*.  
+There are lots of different types of media for communicating (e.g. TV, radio, talking, posters, books, phones, the Internet, etc. ) and they all have different characteristics.  When we communicate via a given medium, it's called a *channel*.  
 
 The channel _characteristics_ depend on the medium then.  Some obvious ones are cost, utilisation, number of people reached, simplex or duplex (parties can transmit and receive at the same time), persistence (a play vs a book, say), latency (how long messages take to arrive) and bandwidth (the amount of information that can be transmitted in a period of time).
 
@@ -72,21 +79,21 @@ The channel characteristics also imply suitability for certain _kinds_ of messag
 
 ## Channel Risk
 
-Shannon discusses that no channel is perfect:  there is always the **risk of noise** corrupting the signal.  A key outcome from Shannon's paper is that there is a tradeoff:  within the capacity of the channel (the **Bandwidth**), you can either send lots of information with _higher_ risk that it is wrong, or less information with _lower_ risk of errors.
+Shannon discusses that no channel is perfect:  there is always the **risk of noise** corrupting the signal.  A key outcome from Shannon's paper is that there is a tradeoff:  within the capacity of the channel (the **bandwidth**), you can either send lots of information with _higher_ risk that it is wrong, or less information with _lower_ risk of errors.
 
 ![Communication Channel Risk](../images/generated/risks/communication/communication_channel_risks.png) 
 
 But channel risk goes wider than just this mathematical example:  messages might be delayed or delivered in the wrong order, or not be acknowledged when they do arrive.  Sometimes, a channel is just an inappropriate way of communicating.  When you work in a different time-zone to someone else on your team, there is _automatic_ [Channel Risk](Communication-Risk.md#channel-risk), because instantaneous communication is only available for a few hours a day. 
 
-When channels are **poor-quality**, less communication occurs.  People will try to communicate just the most important information.  But, it's often impossible to know a-priori what constitutes "important".   This is why [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) recommends the practice of [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming) and siting all the developers together: although you don't know whether useful communication will happen, you are mitigating [Channel Risk](Communication-Risk.md#channel-risk) by ensuring high-quality communication channels are in place.
+When channels are **poor-quality**, less communication occurs.  People will try to communicate just the most important information.  But, it's often impossible to know a-priori what constitutes "important".   This is why [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) recommends the practices of [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming) and grouping all the developers together: although you don't know whether useful communication will happen, you are mitigating [Channel Risk](Communication-Risk.md#channel-risk) by ensuring high-quality communication channels are in place.
 
-At other times, channels are crowded, and can contain so much information that we can't hope to receive all the messages.  In these cases, we don't even observe the whole channel, just parts of it. 
+At other times channels are crowded and can contain so much information that we can't hope to receive all the messages.  In these cases we don't even observe the whole channel, just parts of it. 
 
 #### Marketing Communications
 
 When we are talking about a product or a brand, mitigating [Channel Risk](Communication-Risk.md#channel-risk) is the domain of [Marketing Communications](https://en.wikipedia.org/wiki/Marketing_communications).  <!-- tweet-end --> How do you ensure that the information about your (useful) project makes it to the right people?  How do you address the right channels? 
 
-This works both ways.  Let's looks at some of the **Channel Risks** from the point of view of a hypothetical software tool, **D**, which would really useful in my software: 
+This works both ways.  Let's looks at some of the **Channel Risks** from the point of view of a hypothetical software tool, **D**, which my team would find really useful: 
 
  - The concept that there is such a thing as **D** which solves my problem isn't something I'd even considered.
  - I'd like to use something like **D**, but how do I find it?
@@ -107,14 +114,20 @@ In this section I want to examine the concept of [Communication Protocols](https
 
 [Abstraction](../thinking/Glossary.md#abstraction) means separating the _definition_ of something from the _use_ of something.  It's a widely applicable concept, but our example below will be specific to communication, and looking at the abstractions involved in loading a web page. 
 
-First we need to broaden our terminology.  Although so far we've talked about **Senders** and **Receivers**, we now need to talk from the point of view of who-depends-on-who.  That is, Clients and Suppliers.
+### Clients and Servers
 
- - If you're _depended on_, then you're a **"Supplier"** (or a **"Server"**, when we're talking about actual hardware).
- - If you require communication with something else, you're a **"Client"**.   
+First we need to broaden our terminology.  Although so far we've talked about **senders** and **receivers**, we now need to talk from the point of view of who-depends-on-who.  That is, **clients** and **suppliers**.
 
-![Protocol Stack](../images/generated/risks/communication/communication_protocols.png) 
+ - If you're _depended on_, then you're a **"supplier"** (or a **"server"**, when we're talking about actual hardware).
+ - If you require communication with something else, you're a **"client"**.   
+
+### A Stack of Protocols
+
+We're going to look at the example of a web browser (a **client**) loading a web-page from a **server**.  Specifically, we're going to examine how the web browser receives the **message** from the **server** via a **channel**.  That is - we're looking at the part of Shannon's diagram where we deal with _protocol_. 
  
-In order that a web browser (a **client**) can load a web-page from a **server**, they both need to communicate with shared protocols.  In this example, this is going to involve (at least) six separate protocols, as shown in the diagram above.  
+![Protocol Stack](../images/generated/risks/communication/communication_protocols.png) 
+
+In order that the **client** can load the web-page from the **server**, they both need to communicate with _shared protocols_.  In this example, this is going to involve (at least) six separate protocols, as shown in the diagram above.  
 
 Let's examine each protocol in turn when I try to load the web page at the following address using a web browser:
 
@@ -124,32 +137,32 @@ http://google.com/preferences
 
 ### 1. DNS - Domain Name System
 
-The first thing that happens is that the name `google.com` is _resolved_ by DNS.  This means that the browser looks up the domain name `google.com` and gets back an IP address.  
+The first thing that happens is that the name `google.com` is _resolved_ by DNS.  This means that the browser looks up the domain name `google.com` and gets back an [IP Address](https://en.wikipedia.org/wiki/IP_address).  An IP Address is a bit like a postal address, but instead of being the address of a building, it is the address of a particular computer.
 
-This is some [Abstraction](../thinking/Glossary.md#abstraction):  instead of using the machine's [IP Address](https://en.wikipedia.org/wiki/IP_address) on the network, `216.58.204.78`, I can use a human-readable address, `google.com`.   
+This is an [Abstraction](../thinking/Glossary.md#abstraction):  although computers use IP addresses like `216.58.204.78`, I can use a human-readable _name_, `google.com`.   
 
-The address `google.com` doesn't necessarily resolve to that same address each time:  _They have multiple IP addresses for `google.com`_, but as a user, I don't have to worry about this detail.
+The address `google.com` doesn't even necessarily resolve to that same address each time:  Google serves a lot of traffic so there are multiple servers handling the requests and _they have multiple IP addresses for `google.com`_.   But as a user, I don't have to worry about this detail.
 
 ### 2. IP - Internet Protocol
 
-But this hints at what is beneath the abstraction:  although I'm loading a web-page, the communication to the server happens by [IP Protocol](https://en.wikipedia.org/wiki/Internet_Protocol) - it's a bunch of discrete "packets" (streams of binary digits).  You can think of a packet as being like a real-world parcel or letter.
+This hints at what is beneath the abstraction:  although I'm loading a web-page, the communication to the server happens by [IP Protocol](https://en.wikipedia.org/wiki/Internet_Protocol) - my request is sent as a bunch of discrete "packets" (streams of binary digits).  You can think of a packet as being like a real-world parcel or letter.
 
 Each packet consists of two things: 
  
-- An **IP Address**, which tells the network components (such as routers and gateways) where to send the packet, much like you'd write the address on the outside of a parcel.
-- The **Payload**, the stream of bytes for processing at the destination, like the contents of the parcel.
+- The **IP address**, which tells the network where to send the packet (again, much like you'd write the address on the outside of a parcel).
+- The **payload**, the stream of bytes for processing at the destination, like the contents of the parcel.
 
-But even this concept of "packets" is an [Abstraction](../thinking/Glossary.md#abstraction).  Although all the components of the network understand this protocol, we might be using Wired Ethernet cables, or WiFi, 4G or _something else_ beneath that.
+But even this concept of "packets" is an [abstraction](../thinking/Glossary.md#abstraction).  Although the network understands this protocol, we might be using Wired Ethernet cables, or WiFi, 4G or _something else_ beneath that.  You can think of this as analogous to the parcel being delivered on foot, by plane or by car - it doesn't matter to the sender of the parcel!
 
 ### 3. 802.11 - WiFi Protocol
 
 I ran this at home using WiFi, which uses [IEEE 802.11 Protocol](https://en.wikipedia.org/wiki/IEEE_802.11), which is another standard abstraction allowing my laptop to communicate with the router wirelessly.  But even _this_ isn't the bottom, because this is likely using [MIMO-OFDM](https://en.wikipedia.org/wiki/MIMO-OFDM), a specification about frequencies of microwave radiation, antennas, multiplexing, error-correction codes and so on.  
 
-And WiFi is just the first hop.  After the WiFi receiver, there will be protocols for delivering the packets via the telephony system.
+And WiFi is just the first hop.  After the WiFi receiver, there will be protocols for delivering the packets via the telephony system to Google's servers.
 
 ### 4. TCP - Transmission Control Protocol
 
-Another [Abstraction](../thinking/Glossary.md#abstraction) going on here is that my browser believes it has a  "connection" to the server.  This is provided by the TCP protocol. 
+Another [abstraction](../thinking/Glossary.md#abstraction) going on here is that my browser believes it has a  "connection" to the server.  This is provided by the TCP protocol. 
 
 But this is a fiction - my "connection" is built on the IP protocol, which as we saw above is just packets of data on the network.  So there are lots of packets floating around which say "this connection is still alive" and "I'm message 5 in the sequence" and so on in order to maintain this fiction.  
 
@@ -166,7 +179,11 @@ If we examine what is being sent on the TCP connection, we see something like th
  >
 ```
 
-This is now the HTTP protocol proper, and these 4 lines are sending information _over the connection_ to the `google.com` server, to ask it for the page.  Finally, the server gets to respond:
+This is now the HTTP protocol proper, and these 4 lines are sending text _over the connection_ to the `google.com` server, to ask it for the page.  
+
+Is this all in one IP packet, or several?  We don't know:  that detail is handled at a lower-level of the protocol stack, and is **abstracted** away from this level.
+
+Finally, the server gets to respond:
 
 ```bash
  < HTTP/1.1 301 Moved Permanently                                      
@@ -178,7 +195,7 @@ In this case, the server is telling us that the web page has changed address.   
 
 ### Summary
 
-By having a stack of protocols we are able to apply [Separation Of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns), each protocol handling just a few concerns<!-- tweet-end -->:
+By having a stack of protocols we are able to apply [Separation Of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns), each protocol handling just a few concerns:
 
 |Protocol              |Abstractions                                     |
 |----------------------|-------------------------------------------------|
@@ -188,13 +205,13 @@ By having a stack of protocols we are able to apply [Separation Of Concerns](htt
 |`IP`                  |"Packets" with addresses and payloads.           |
 |`WiFi`                |"Networks", 802.11 flavours, Transmitters, Antennas, error correction codes.| 
 
-`HTTP` "stands on the shoulders of giants":  not only does it get to use pre-existing protocols like `TCP` and `DNS` to make its life easier, it got `WiFi` "for free" when this came along and plugged into the existing `IP` protocol.<!-- tweet-end -->  This is the key value of abstraction:  you get to piggy-back on _existing_ patterns, and use them yourself. 
+`HTTP` "stands on the shoulders of giants":  not only does it get to use pre-existing protocols like `TCP` and `DNS` to make its life easier, it got `WiFi` "for free" when this came along and plugged into the existing `IP` protocol.<!-- tweet-end -->  This is the key value of **abstraction**:  you get to piggy-back on _existing_ patterns, and use them yourself. 
 
 ## Protocol Risk
 
 ![Communication Protocols Risks](../images/generated/risks/communication/communication_protocol_risks.png)
 
-Hopefully, the above example gives an indication of the usefulness of protocols within software.  But for every protocol we use, we have [Protocol Risk](Communication-Risk.md#protocol-risk).  While this is a problem in human communication protocols, it's really common in computer communication because we create protocols _all the time_ in software. 
+Hopefully, the above example gives an indication of the usefulness of protocols within software.  But for every protocol we use we have [Protocol Risk](Communication-Risk.md#protocol-risk).  While this is a problem in human communication protocols, it's really common in computer communication because we create protocols _all the time_ in software. 
 
 For example, as soon as we define a Javascript function (called **b** here), we are creating a protocol for other functions (**a** here) to use it: 
 
@@ -239,7 +256,10 @@ function a() {
 }
 ```
 
-By using a [static type checker](https://en.wikipedia.org/wiki/Type_system#Static_type_checking), we can identify issues like this, but there is a trade-off:  we mitigate [Protocol Risk](Communication-Risk.md#protocol-risk), because we define the protocols _once only_ in the program, and ensure that usages all match the specification.  But the tradeoff is (as we can see in the TypeScript code) more _finger-typing_, which means [Codebase Risk](Complexity-Risk.md#codebase-risk) in some circumstances. 
+By using a [static type checker](https://en.wikipedia.org/wiki/Type_system#Static_type_checking), we can identify issues like this, but there is a trade-off:  
+ 
+- we mitigate [Protocol Risk](Communication-Risk.md#protocol-risk), because we define the protocols _once only_ in the program, and ensure that usages all match the specification.  
+- but the tradeoff is more _finger-typing_, which means [Codebase Risk](Complexity-Risk.md#codebase-risk) in some circumstances. 
 
 Nevertheless, static type checking is so prevalent in software that clearly in most cases, the trade-off has been worth it: even languages like [Clojure](https://clojure.org) have been retro-fitted with [type checkers](http://clojure-doc.org/articles/ecosystem/core_typed/home.html).
 
@@ -247,13 +267,17 @@ Let's look at some further types of [Protocol Risk](Communication-Risk.md#protoc
  
 ### Protocol Incompatibility Risk
 
-The people you find it _easiest_ to communicate with are your friends and family, those closest to you. <!-- tweet-end --> That's because you're all familiar with the same protocols.  Someone from a foreign country, speaking a different language and having a different culture, will essentially have a completely incompatible protocol for spoken communication to you.
+The people you find it _easiest_ to communicate with are your friends and family, those closest to you.  That's because you're all familiar with the same protocols.  Someone from a foreign country, speaking a different language and having a different culture, will essentially have a completely incompatible protocol for spoken communication to you.
 
 Within software there are also competing, incompatible protocols for the same things, which is maddening when your protocol isn't supported.   For example, although the world seems to be standardising, there used to be _hundreds_ of different image formats.  Photographs often use [TIFF](https://en.wikipedia.org/wiki/TIFF), [RAW](https://en.wikipedia.org/wiki/Raw_image_format) or [JPEG](https://en.wikipedia.org/wiki/JPEG), whilst we also have [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) for vector graphics, [GIF](https://en.wikipedia.org/wiki/GIF) for images and animations and [PNG](https://en.wikipedia.org/wiki/Portable_Network_Graphics) for other bitmap graphics.   
 
 ### Protocol Versioning Risk
 
-Even when systems are talking the same protocol there can be problems. <!-- tweet-end --> When we have multiple, different systems owned by different parties, on their own upgrade cycles, we have **Protocol Versioning Risk**: the risk that either client or supplier could start talking in a version of the protocol that the other side hasn't learnt yet.  There are various mitigating strategies for this.  We'll look at two now: **Backwards Compatibility** and **Forwards Compatibility**.
+Even when systems are talking the same protocol there can be problems!  
+
+When we have multiple, different systems owned by different parties, on their own upgrade cycles, we have **Protocol Versioning Risk**: the risk that either client or supplier could start talking in a version of the protocol that the other side hasn't learnt yet.  
+
+There are various mitigating strategies for this.  We'll look at two now: **Backwards Compatibility** and **Forwards Compatibility**.
 
 #### Backward Compatibility
 
@@ -272,11 +296,13 @@ Backwards Compatibility mitigates [Protocol Versioning Risk](Communication-Risk.
 
 `JavaScript` _can't_ support this:  because the meaning of the next instruction will often depend on the result of the previous one.  
 
-Do human languages support this?  To some extent!  New words are added to our languages all the time.  When we come across a new word, we can either ignore it, guess the meaning, ask or look it up.  In this way, human language has **Forward Compatibility** features built in.
+Do human languages support forward compatibility?  To some extent!  New words are added to our languages all the time.  When we come across a new word, we can either ignore it, guess the meaning, ask or look it up.  In this way, human language has **Forward Compatibility** features built in.
 
 ### Protocol Implementation Risk
 
-A second aspect of [Protocol Risk](Communication-Risk.md#protocol-risk) exists in heterogeneous computing environments where protocols have been independently implemented based on standards.  For example, there are now so many different browsers, all supporting variations of `HTTP`, `HTML` and `JavaScript` that it becomes impossible to test comprehensively over all the different versions.  To mitigate as much [Protocol Risk](Communication-Risk.md#protocol-risk) as possible, generally we test web sites in a subset of browsers, and use a lowest-common-denominator approach to choosing protocol and language features.
+A second aspect of [Protocol Risk](Communication-Risk.md#protocol-risk) exists in heterogeneous computing environments where protocols have been independently implemented based on standards.  For example, there are now so many different browsers, all supporting variations of `HTTP`, `HTML` and `JavaScript` that it becomes impossible to test a website comprehensively over all the different permutations.  
+
+To mitigate as much [Protocol Risk](Communication-Risk.md#protocol-risk) as possible, generally we test web sites in a subset of browsers, and use a lowest-common-denominator approach to choosing protocol and language features.
 
 ## Messages
 
@@ -288,7 +314,7 @@ Although Shannon's Communication Theory is about transmitting **Messages**, mess
 
 When we construct messages in a conversation, we have to make judgements about what the other person already knows.  For example, if I talk to you about a new [JDBC Driver](https://en.wikipedia.org/wiki/JDBC_driver), this presumes that you know what JDBC is.  The message has a dependency on prior knowledge.  Or, when talking to children it's often hard work because they _assume_ that you have knowledge of everything they do.  
 
-This is called [Theory Of Mind](https://en.wikipedia.org/wiki/Theory_of_mind): the appreciation that your knowledge is different to other people's, and adjusting you messages accordingly.  When teaching, this is called [The Curse Of Knowledge](https://en.wikipedia.org/wiki/Curse_of_knowledge):  teachers have difficulty understanding students' problems _because they already understand the subject_.  
+This is called [Theory Of Mind](https://en.wikipedia.org/wiki/Theory_of_mind): the appreciation that your knowledge is different to other peoples', and adjusting you messages accordingly.  When teaching, this is called [The Curse Of Knowledge](https://en.wikipedia.org/wiki/Curse_of_knowledge):  teachers have difficulty understanding students' problems _because they already understand the subject_.  
 
 ### Message Risk  
 
@@ -318,15 +344,19 @@ This brings about [Misinterpretation Risk](Communication-Risk.md#misinterpretati
 
 ### Invisibility Risk
  
-Another cost of [Abstraction](../thinking/Glossary.md#abstraction) is [Invisibility Risk](Communication-Risk.md#invisibility-risk).  While abstraction is a massively powerful technique, (as we saw above, [Protocols](Communication-Risk.md#protocols) allow things like the Internet to happen) it lets the function of a thing hide behind the layers of abstraction and become invisible.  
+Another cost of [Abstraction](../thinking/Glossary.md#abstraction) is [Invisibility Risk](Communication-Risk.md#invisibility-risk).  While abstraction is a massively powerful technique, it lets the function of a thing hide behind the layers of abstraction and become invisible.  
+
+As we saw above, [Protocols](Communication-Risk.md#protocols) allow things like the Internet to happen - this is amazing! But the higher level protocols _hide_ the details of the lower ones.   HTTP _didn't know anything about_ IP packets, for example.  
+
+Abstractions hide detail, then.  But when they hide from you the details you need this is called a [leaky abstraction](https://en.wikipedia.org/wiki/Leaky_abstraction).  Since all abstractions hide information, they are all potentially leaky.
 
 #### Invisibility Risk In Conversation
 
 [Invisibility Risk](Communication-Risk.md#invisibility-risk) is risk due to information not sent.  Because humans don't need a complete understanding of a concept to use it, we can cope with some [Invisibility Risk](Communication-Risk.md#invisibility-risk) in communication and this saves us time when we're talking.   It would be _painful_ to have conversations if, say, the other person needed to understand everything about how cars worked in order to discuss cars.  
 
-For people, [Abstraction](../thinking/Glossary.md#abstraction) is a tool that we can use to refer to other concepts, without necessarily knowing how the concepts work. <!-- tweet-end --> This divorcing of "what" from "how" is the essence of abstraction and is what makes language useful.   
+For people, [Abstraction](../thinking/Glossary.md#abstraction) is a tool that we can use to refer to other concepts, without necessarily knowing how the concepts work.  This divorcing of "what" from "how" is the essence of abstraction and is what makes language useful.   
 
-The debt of [Invisibility Risk](Communication-Risk.md#invisibility-risk) comes due when you realise that _not_ being given the details _prevents_ you from reasoning about it effectively.<!-- tweet-end -->  Let's think about this in the context of a project status meeting, for example:
+The debt of [Invisibility Risk](Communication-Risk.md#invisibility-risk) comes due when you realise that _not_ being given the details _prevents_ you from reasoning about it effectively.  Let's think about this in the context of a project status meeting, for example:
  
 - Can you be sure that the status update contains all the details you need to know?
 - Is the person giving the update wrong or lying?
@@ -364,7 +394,7 @@ The communication process so far has been fraught with risks, but now let's look
 
 Although protocols can sometimes handle security features of communication (such as [Authentication](https://en.wikipedia.org/wiki/Authentication) and preventing [man-in-the-middle attacks](https://en.wikipedia.org/wiki/Man-in-the-middle_attack)), trust goes further than this, it is the flip-side of [Agency Risk](Agency-Risk.md), which we will look at later:  can you be sure that the other party in the communication is acting in your best interests?
  
-Even if the receiver trusts the communicator, they may not believe the message.  Let's look at some reasons for that:
+Even if the **receiver** trusts the **sender**, they may not _believe_ the message.  Let's look at some reasons for that:
 
 - **[Weltanschauung (World View)](https://en.wikipedia.org/wiki/World_view)**: the ethics, values and beliefs in the receiver's [Internal Model](../thinking/Glossary.md#Internal-Model) may be incompatible to those from the sender.
 - **[Relativism](https://en.wikipedia.org/wiki/Relativism)** is the concept that there are no universal truths.  Every truth is from a frame of reference.  For example, what constitutes _offensive language_ is dependent on the listener.
@@ -384,7 +414,7 @@ It has often been said that code is _harder to read than to write_:
 
 > "If you ask a software developer what they spend their time doing, they'll tell you that they spend most of their time writing code.  However, if you actually observe what software developers spend their time doing, you'll find that they spend most of their time trying to understand code. " -  [When Understanding Means Rewriting, _Coding Horror_](https://blog.codinghorror.com/when-understanding-means-rewriting/)
 
-By now it should be clear that it's going to be _both_ quite hard to read and write:  the protocol of code is actually designed for the purpose of machines communicating, not primarily for people to understand.  Making code human readable is a secondary concern to making it machine readable.
+By now it should be clear that it's going to be _both_ quite hard to read and write:  the protocol of code is actually designed for the purpose of machines communicating, not primarily for people to understand.  Making code human-readable is a secondary concern to making it machine-readable.
 
 But now we should be able to see the reason why it's harder to read than write too: 
  
@@ -396,6 +426,6 @@ But now we should be able to see the reason why it's harder to read than write t
 
 ![Communication Risks, Summarised](../images/generated/risks/communication/communication_3.png)
 
-In this section, we've looked at [Communication Risk](Communication-Risk.md) itself and broken it down into six sub-types of risk as shown in the diagram above.  Again, we are calling out _patterns_ here. You could classify communication risks in other ways, but concepts like [Learning Curve Risk](#Learning-Curve-Risk) and [Invisibility Risk](#Invisibility-Risk) we will be using again in again in Risk-First.
+In this section, we've looked at [Communication Risk](Communication-Risk.md) itself and broken it down into six sub-types of risk as shown in the diagram above.  Again, we are calling out _patterns_ here. You could classify communication risks in other ways, but concepts like [Learning Curve Risk](#learning-curve-risk) and [Invisibility Risk](#invisibility-risk) we will be using again in again in Risk-First.
 
 In the next section we will address complexity head-on and understand how [Complexity Risk](Complexity-Risk.md) manifests in software projects.
