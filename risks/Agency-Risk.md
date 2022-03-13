@@ -26,30 +26,30 @@ This is [Agency Risk](Agency-Risk.md).   This term comes from finance and refers
 
 The less visibility you have of the agent's activities, the bigger the risk.  However, the _whole point_ of giving the money to the agent was that you would have to spend less time and effort managing it, hence the dilemma.  <!-- tweet-start -->In software development, we're not lending each other money, but we _are_ being paid by the project sponsor, so they are assuming [Agency Risk](Agency-Risk.md) by employing us.   <!-- tweet-end -->
 
-As we saw in the previous section on [Process Risk](Process-Risk.md), [Agency Risk](Agency-Risk.md) doesn't just apply to people: it can apply to _running software_ or _whole teams_  - anything which has agency over its actions.  
+[Agency Risk](Agency-Risk.md) doesn't just apply to people: it can apply to _running software_ or _whole teams_  - anything which has agency over its actions.  
 
 > "Agency is the capacity of an actor to act in a given environment... Agency may either be classified as unconscious, involuntary behaviour, or purposeful, goal directed activity (intentional action). " - [Agency, _Wikipedia_](https://en.wikipedia.org/wiki/Agency_(philosophy)) 
 
 In this section, we are going to take a closer look at how [Agency Risk](Agency-Risk.md) arises, in particular we will:
 
-  - define a model for understanding Agency Risk
-  - look at some common issues in software development, and analyse how they have their roots in Agency Risk
-  - look at how Agency Risk applies to not just to people, but _whole teams_, but also _software agents_
-  - look at the various ways to mitigate Agency Risk, irrespective of what type of agent we are looking at.  (We'll specifically consider _software agents_, _humans_ and _cells in the body_.)
+  - define a model for understanding [Agency Risk](Agency-Risk.md)
+  - look at some common issues in software development, and analyse how they have their roots in [Agency Risk](Agency-Risk.md)
+  - look at how [Agency Risk](Agency-Risk.md) applies to not just to people, but _whole teams_, but also _software agents_
+  - look at the various ways to mitigate [Agency Risk](Agency-Risk.md), irrespective of what type of agent we are looking at.  (We'll specifically consider _software agents_, _humans_ and _cells in the body_.)
   
 ## A Model For Agency Risk  
   
 ![Goal Hierarchy](../images/generated/risks/agency/hierarchy.png)
 
-Although the definition of Agency Risk above pertains to looking after other people's money, this is just a single example of a wider issue which is best understood by appreciating that humans have a _hierarchy of concern_ with respect to their goals, as shown in the diagram above.  This hierarchy has arisen from generations of evolution and helps us prioritise competing goals, generally in favour of _preserving our genes_.  
+Although the definition of [Agency Risk](Agency-Risk.md) above pertains to looking after other people's money, this is just a single example of a wider issue which is best understood by appreciating that humans have a _hierarchy of concern_ with respect to their goals, as shown in the diagram above.  This hierarchy has arisen from millennia of evolution and helps us prioritise competing goals, generally in favour of _preserving our genes_.  
 
 The model above helps us explain the principal-agent problem:  when faced with the dilemma of self-interest (perhaps protecting their family) vs. their employer, they will choose their family.  But it goes further - this model explains a lot of human behaviour.  It explains why some people:
 
  - will help their friends and colleagues every day, but perhaps fail to give to charities helping people in far worse conditions.
- - love their pets (who belong in the _immediate family_ group) but eat other animals (somewhere off the bottom).
- - why people can be fiercely _nationalistic_ and tribal (supporting the goals of the third level), and be against _immigration_ (which consists of people in the fourth level).
+ - love their pets (who they consider in the _immediate family_ group) but eat other animals (somewhere off the bottom).
+ - why people can be fiercely _nationalistic_ and tribal (supporting the goals of the third level) and also be against _immigration_ (helping people in the fourth level).
 
-So while [Agency Risk](Agency-Risk.md) clearly includes the behaviour of [Bad Actors](https://en.wiktionary.org/wiki/bad_actor) but is not limited to them:  there are various "shades of grey" involved: we can often understand and sympathise with the decisions agents make based on this hierarchy.   
+[Agency Risk](Agency-Risk.md) clearly includes the behaviour of [Bad Actors](https://en.wiktionary.org/wiki/bad_actor) but is not limited to them:  there are various "shades of grey" involved.  We can often understand and sympathise with the decisions agents make based on an understanding of this hierarchy.   
 
 ## Agency Risk In Software Development
 
@@ -112,11 +112,11 @@ Sometimes the morale of the team or individuals within it dips, leading to lack 
 
 ## Agency Elsewhere
 
-In the examples above, we've looked at hierarchy of goals for _most people_.  It doesn't always play out like this and the structure is quite fluid:
+In the examples above, we've looked at hierarchy of goals for _most people_.  It doesn't always play out like this and the structure is quite fluid.  Some examples:
 
- - In 2018 As a 15-year-old, [Greta Thunberg](https://en.wikipedia.org/wiki/Greta_Thunberg) gave up her education goals to campaign outside parliament in Sweden.  
- - Steve Jobs, despite being recognised as providing some amazing gifts to the world in the form of Apple Computers, was a self-confessed [terrible father](https://en.wikipedia.org/wiki/Steve_Jobs#Family) and [failed to look after himself when diagnosed with cancer](https://en.wikipedia.org/wiki/Steve_Jobs#Health_problems).
- - Soldiers often form very close bonds due to their reliance on each other for survival, akin to family members (_brothers in arms_).  
+ - In 2018, a 15-year-old [Greta Thunberg](https://en.wikipedia.org/wiki/Greta_Thunberg) gave up her education goals to campaign outside parliament in Sweden.  She is now widely recognised as a key figure in climate activism. 
+ - Steve Jobs, despite designing amazing hardware at Apple Computers, was a self-confessed [terrible father](https://en.wikipedia.org/wiki/Steve_Jobs#Family) and [failed to look after himself when diagnosed with cancer](https://en.wikipedia.org/wiki/Steve_Jobs#Health_problems).
+ - Less specifically, soldiers often form very close bonds due to their reliance on each other for survival, akin to family members (_brothers in arms_).  
 
 ### Animals
 
@@ -124,7 +124,9 @@ Given the fluidity of the goal hierarchy for people, we shouldn't be surprised t
 
 ### Software Processes
 
-There is significant [Agency Risk](Agency-Risk.md) in running software _at all_.  Since computer systems follow rules we set for them, we shouldn't be surprised when those rules have exceptions that lead to disaster.  For example:
+![Software Goals](../images/generated/risks/agency/software.png) 
+
+Compared to humans, most software has a simple goal hierarchy, as shown in the diagram above.  Nevertheless, there is significant [Agency Risk](Agency-Risk.md) in running software _at all_.  Since computer systems follow rules we set for them, we shouldn't be surprised when those rules have exceptions that lead to disaster.  For example:
 
  - A process continually writing log files until the disks fill up, crashing the system.
  - Bugs causing data to get corrupted, causing financial loss.
@@ -132,13 +134,15 @@ There is significant [Agency Risk](Agency-Risk.md) in running software _at all_.
  
 ### Paperclips
 
-In general, we don't (yet) build software systems that try to optimise for a hierarchy of goals (like humans do).  Were we to do so, Agency Risk would rear its head as described in  [Nick Bostrom's](https://en.wikipedia.org/wiki/Nick_Bostrom) AI thought experiment:
+Building software systems that try to optimise for a hierarchy of goals (like humans do) is still a research project.  But it is something AI researchers such as [Nick Bostrom](https://en.wikipedia.org/wiki/Nick_Bostrom) worry about.  Consider his AI thought experiment:
 
 > "If you give an artificial intelligence an explicit goal – like maximizing the number of paper clips in the world – and that artificial intelligence has gotten smart enough to the point where it is capable of inventing its own super-technologies and building its own manufacturing plants, then, well, be careful what you wish for." -- [Nick Bostrom, _Wikipedia_](https://en.wikipedia.org/wiki/Universal_Paperclips#Themes)
 
 ![Universal Paperclips](../images/generated/risks/agency/paperclips.png)
 
-This problem may be a long way off and in any case it's not really in our interests to build AI systems that prioritise their own survival.  As humans, we have inherited that goal through evolution, but an AI wouldn't necessarily have this goal unless we subjected AI development to some kind of evolutionary survival-of-the-fittest process too.
+Bostrom worries that humanity would be steamrollered accidentally whilst trying to maximise the paperclip goal.  The AI need not be malevolent - it's enough that it just requres the resources that keep us alive!
+
+This problem may be a long way off.  In any case it's not really in our interests to build AI systems that prioritise their own survival.  As humans, we have inherited the survival goal through evolution: an AI wouldn't necessarily have this goal unless we subjected AI development to some kind of evolutionary survival-of-the-fittest process too.
 
 ### Teams
 
@@ -202,7 +206,9 @@ If you can _align the goals_ of the agents involved, you can mitigate [Agency Ri
 
 > "Which brings us to the largest fragilizer of society, and greatest generator of crises, absence of 'skin in the game.' Some become antifragile at the expense of others by getting the upside (or gains) from volatility, variations, and disorder and exposing others to the downside risks of losses or harm." - [Nassim Nicholas Taleb, _Antifragile_](https://a.co/d/07LfBTI)
 
-Mafia bosses understand this theory well:  in order to engender _complete loyalty_ in your soldiers, you threaten their families.  Follow the rules or your family gets whacked!  Another example of this is [The Code of Hammurabi](https://en.wikipedia.org/wiki/Code_of_Hammurabi), a Babylonian legal text composed c. 1755–1750 BC.  One law states:
+Mafia bosses understand this theory well:  in order to engender _complete loyalty_ in your soldiers, you threaten their families.  Follow the rules or your family gets whacked! 
+
+Another example of this is [The Code of Hammurabi](https://en.wikipedia.org/wiki/Code_of_Hammurabi), a Babylonian legal text composed c. 1755–1750 BC.  One law states:
 
 > "The death of a homeowner in a house collapse necessitates the death of the house's builder... if the homeowner's son died, the builder's son must die also." - [Code of Hammurabi, _Wikipedia_](https://en.wikipedia.org/wiki/Code_of_Hammurabi#Theories_of_purpose)
 
