@@ -16,7 +16,9 @@ tweet: yes
 
 # Agency Risk
 
-[Coordinating a team](Coordination-Risk.md) is difficult enough when everyone on the team has a single [Goal](../thinking/Glossary.md#Goal-In-Mind). <!-- tweet-end --> But people have their own goals too.  Sometimes their goals harmlessly co-exist with the team's goal, other times they don't.
+Coordinating a team is difficult enough when everyone on the team has a single [Goal](../thinking/Glossary.md#Goal-In-Mind).  But people have their own goals too.  Sometimes their goals harmlessly co-exist with the team's goal, other times they don't.
+
+![Agency Risk Family](../images/generated/risks/agency/agency-risks.png)
 
 This is [Agency Risk](Agency-Risk.md).   This term comes from finance and refers to the situation where you (the "principal") entrust your money to someone (the "agent") in order to invest it, but they don't necessarily have your best interests at heart.  They may instead elect to invest the money in ways that help them, or outright steal it.  
 
@@ -24,19 +26,42 @@ This is [Agency Risk](Agency-Risk.md).   This term comes from finance and refers
 
 The less visibility you have of the agent's activities, the bigger the risk.  However, the _whole point_ of giving the money to the agent was that you would have to spend less time and effort managing it, hence the dilemma.  <!-- tweet-start -->In software development, we're not lending each other money, but we _are_ being paid by the project sponsor, so they are assuming [Agency Risk](Agency-Risk.md) by employing us.   <!-- tweet-end -->
 
-As we saw in the previous section on [Process Risk](Process-Risk.md), <!-- tweet-start -->[Agency Risk](Agency-Risk.md) doesn't just apply to people: it can apply to _running software_ or _whole teams_  <!-- tweet-end -->- anything which has agency over its actions.  
+As we saw in the previous section on [Process Risk](Process-Risk.md), [Agency Risk](Agency-Risk.md) doesn't just apply to people: it can apply to _running software_ or _whole teams_  - anything which has agency over its actions.  
 
 > "Agency is the capacity of an actor to act in a given environment... Agency may either be classified as unconscious, involuntary behaviour, or purposeful, goal directed activity (intentional action). " - [Agency, _Wikipedia_](https://en.wikipedia.org/wiki/Agency_(philosophy)) 
 
-[Agency Risk](Agency-Risk.md) clearly includes the behaviour of [Bad Actors](https://en.wiktionary.org/wiki/bad_actor) but is not limited to them:  there are various "shades of grey" involved.   So first, we will look at some examples of [Agency Risk](Agency-Risk.md), in order to sketch out where the domain of this risk lies, before looking at three common ways to mitigate it: monitoring, security and goal alignment.
+In this section, we are going to take a closer look at how [Agency Risk](Agency-Risk.md) arises, in particular we will:
 
-### Personal Lives
+  - define a model for understanding Agency Risk
+  - look at some common issues in software development, and analyse how they have their roots in Agency Risk
+  - look at how Agency Risk applies to not just to people, but _whole teams_, but also _software agents_
+  - look at the various ways to mitigate Agency Risk, irrespective of what type of agent we are looking at.  (We'll specifically consider _software agents_, _humans_ and _cells in the body_.)
+  
+## A Model For Agency Risk  
+  
+![Goal Hierarchy](../images/generated/risks/agency/hierarchy.png)
 
-We shouldn't expect people on a project to sacrifice their personal lives for the success of the project, right?  <!-- tweet-end --> Except that ["Crunch Time"](https://en.wikipedia.org/wiki/Video_game_developer#"Crunch_time") is exactly how some software companies work:
+Although the definition of Agency Risk above pertains to looking after other people's money, this is just a single example of a wider issue which is best understood by appreciating that humans have a _hierarchy of concern_ with respect to their goals, as shown in the diagram above.  This hierarchy has arisen from generations of evolution and helps us prioritise competing goals, generally in favour of _preserving our genes_.  
+
+The model above helps us explain the principal-agent problem:  when faced with the dilemma of self-interest (perhaps protecting their family) vs. their employer, they will choose their family.  But it goes further - this model explains a lot of human behaviour.  It explains why some people:
+
+ - will help their friends and colleagues every day, but perhaps fail to give to charities helping people in far worse conditions.
+ - love their pets (who belong in the _immediate family_ group) but eat other animals (somewhere off the bottom).
+ - why people can be fiercely _nationalistic_ and tribal (supporting the goals of the third level), and be against _immigration_ (which consists of people in the fourth level).
+
+So while [Agency Risk](Agency-Risk.md) clearly includes the behaviour of [Bad Actors](https://en.wiktionary.org/wiki/bad_actor) but is not limited to them:  there are various "shades of grey" involved: we can often understand and sympathise with the decisions agents make based on this hierarchy.   
+
+## Agency Risk In Software Development
+
+We shouldn't expect people on a project to sacrifice their personal lives for the success of the project, right?  Except that ["Crunch Time"](https://en.wikipedia.org/wiki/Video_game_developer#"Crunch_time") is exactly how some software companies work:
 
 > "Game development... requires long working hours and dedication...  Some video game developers (such as Electronic Arts) have been accused of the excessive invocation of 'crunch time'.  'Crunch time' is the point at which the team is thought to be failing to achieve milestones needed to launch a game on schedule. " - [Crunch Time, _Wikipedia_](https://en.wikipedia.org/wiki/Video_game_developer#"Crunch_time")
 
-People taking time off, going to funerals, looking after sick relatives and so on are all acceptable forms of [Agency Risk](Agency-Risk.md). <!-- tweet-end --> They are the [Attendant Risk](../thinking/Glossary.md#attendant-risk) of having _staff_ rather than _slaves_.
+People taking time off, going to funerals, looking after sick relatives and so on are all acceptable forms of [Agency Risk](Agency-Risk.md). They are the a risk of having _staff_ rather than _slaves_.
+
+![Heroism](../images/generated/risks/agency/heroism.png)
+
+Where an agent _excessively_ prioritises their own goals over the group we term this selfishness or perhaps nepotism.  Conversely, putting the tribe's or the team's needs over your own is _heroism_.
 
 ### The Hero
 
@@ -73,15 +98,29 @@ Sometimes budget-holders have projects they value more than others without refer
 
 Working on a pet project usually means you get lots of attention (and more than enough budget), but it can fall apart very quickly under scrutiny.
 
-### Morale Risk
+### Morale Failure
+
+![Morale Failure](../images/generated/risks/agency/morale.png)
 
 > "Morale, also known as Esprit de Corps, is the capacity of a group's members to retain belief in an institution or goal, particularly in the face of opposition or hardship" - [Morale, _Wikipedia_](https://en.wikipedia.org/wiki/Morale) 
 
-Sometimes the morale of the team or individuals within it dips, leading to lack of motivation.  [Morale Risk](Agency-Risk.md#morale-risk) is a kind of [Agency Risk](Agency-Risk.md) because it really means that a team member or the whole team isn't committed to the [Goal](../thinking/Glossary.md#Goal-In-Mind) and may decide their efforts are best spent elsewhere.  [Morale Risk](Agency-Risk.md#morale-risk) might be caused by:
+Sometimes the morale of the team or individuals within it dips, leading to lack of motivation.  Losing morale is a kind of [Agency Risk](Agency-Risk.md) because it really means that a team member or the whole team isn't committed to the [Goal](../thinking/Glossary.md#Goal-In-Mind) and may decide their efforts are best spent elsewhere.  [Morale Risk](Agency-Risk.md#morale-risk) might be caused by:
 
  - **External Factors**:  perhaps the employee's dog has died, or they're simply tired of the industry, or are not feeling challenged.
  - **The goal feels unachievable**:  in this case people won't commit their full effort to it.  This might be due to a difference in the evaluation of the risks on the project between the team members and the leader.  In military science, a second meaning of morale is how well supplied and equipped a unit is.  This would also seem like a useful reference point for IT projects.  If teams are under-staffed or under-equipped, it will impact on motivation too.
  - **The goal isn't sufficiently worthy**, or the team doesn't feel sufficiently valued.
+
+## Agency Elsewhere
+
+In the examples above, we've looked at hierarchy of goals for _most people_.  It doesn't always play out like this and the structure is quite fluid:
+
+ - In 2018 As a 15-year-old, [Greta Thunberg](https://en.wikipedia.org/wiki/Greta_Thunberg) gave up her education goals to campaign outside parliament in Sweden.  
+ - Steve Jobs, despite being recognised as providing some amazing gifts to the world in the form of Apple Computers, was a self-confessed [terrible father](https://en.wikipedia.org/wiki/Steve_Jobs#Family) and [failed to look after himself when diagnosed with cancer](https://en.wikipedia.org/wiki/Steve_Jobs#Health_problems).
+ - Soldiers often form very close bonds due to their reliance on each other for survival, akin to family members (_brothers in arms_).  
+
+### Animals
+
+Given the fluidity of the goal hierarchy for people, we shouldn't be surprised that other animals don't have the same priorities.  For example, [Colobopsis Saundersi](https://en.wikipedia.org/wiki/Colobopsis_saundersi) is a species of ant that can explode suicidally and aggressively as an ultimate act of defence.  Given that individual ants are not capable of reproduction, it seems to make sense that they would sacrifice themselves for the good of the colony:  to _not_ do so would reduce the colony's chance of surviving and reproducing. 
 
 ### Software Processes
 
@@ -90,6 +129,16 @@ There is significant [Agency Risk](Agency-Risk.md) in running software _at all_.
  - A process continually writing log files until the disks fill up, crashing the system.
  - Bugs causing data to get corrupted, causing financial loss.
  - Malware exploiting weaknesses in a system, exposing sensitive data.
+ 
+### Paperclips
+
+In general, we don't (yet) build software systems that try to optimise for a hierarchy of goals (like humans do).  Were we to do so, Agency Risk would rear its head as described in  [Nick Bostrom's](https://en.wikipedia.org/wiki/Nick_Bostrom) AI thought experiment:
+
+> "If you give an artificial intelligence an explicit goal – like maximizing the number of paper clips in the world – and that artificial intelligence has gotten smart enough to the point where it is capable of inventing its own super-technologies and building its own manufacturing plants, then, well, be careful what you wish for." -- [Nick Bostrom, _Wikipedia_](https://en.wikipedia.org/wiki/Universal_Paperclips#Themes)
+
+![Universal Paperclips](../images/generated/risks/agency/paperclips.png)
+
+This problem may be a long way off and in any case it's not really in our interests to build AI systems that prioritise their own survival.  As humans, we have inherited that goal through evolution, but an AI wouldn't necessarily have this goal unless we subjected AI development to some kind of evolutionary survival-of-the-fittest process too.
 
 ### Teams
 
@@ -105,11 +154,11 @@ This is a good argument for avoiding consultancies, but sometimes the technical 
 
 ## Mitigating Agency Risk
 
-Let's look at three common ways to mitigate [Agency Risk](Agency-Risk.md):  [Monitoring](#monitoring), [Security](#security).  and [Goal Alignment](#goal-alignment).  Let's start with Monitoring.
+Let's look at three common ways to mitigate [Agency Risk](Agency-Risk.md):  [Monitoring](#monitoring), [Security](#security) and [Goal Alignment](#goal-alignment).  Let's start with Monitoring.
 
 ### Monitoring
 
-![Mitigating Agency Risk Through Monitoring](../images/generated/risks/agency/agency-risk.png)
+![Mitigating Agency Risk Through Monitoring](../images/generated/risks/agency/monitoring.png)
 
 A the core of the Principal-Agent Problem is the issue that we _want_ our agents to do work for us so we don't have the responsibility of doing it ourselves.  However, we pick up the second-order responsibility of managing the agents instead.  
 
@@ -145,13 +194,23 @@ We're waking up to the realisation that our software systems need to work the sa
 
 ### Goal Alignment
 
-As we stated at the beginning, [Agency Risk](Agency-Risk.md) at any level comes down to differences of [Goals](../thinking/Glossary.md#goal-in-mind) between the different agents, whether they are _people_, _teams_ or _software_.  
+As we stated at the beginning, [Agency Risk](Agency-Risk.md) at any level comes down to differences of [Goals](../thinking/Glossary.md#goal-in-mind) between the different agents, whether they are _people_, _teams_ or _software_. 
 
-So, if you can _align the goals_ of the agents involved, you can mitigate [Agency Risk](Agency-Risk.md).  Nassim Nicholas Taleb calls this "skin in the game": that is, the agent is exposed to the same risks as the principal.
+#### Skin In The Game 
+
+If you can _align the goals_ of the agents involved, you can mitigate [Agency Risk](Agency-Risk.md).  Nassim Nicholas Taleb calls this "skin in the game": that is, the agent is exposed to the same risks as the principal.
 
 > "Which brings us to the largest fragilizer of society, and greatest generator of crises, absence of 'skin in the game.' Some become antifragile at the expense of others by getting the upside (or gains) from volatility, variations, and disorder and exposing others to the downside risks of losses or harm." - [Nassim Nicholas Taleb, _Antifragile_](https://a.co/d/07LfBTI)
 
-This kind of financial exposure isn't very common on software projects.  [Fixed Price Contracts](../thinking/One-Size-Fits-No-One.md#waterfall) and [Employee Stock Options](https://en.wikipedia.org/wiki/Employee_stock_option) are two exceptions.  But  David McClelland's Needs Theory suggests that there are other kinds of skin-in-the-game: the intrinsic interest in the work being done, or extrinsic factors such as the recognition, achievement, or personal growth derived from it.   
+Mafia bosses understand this theory well:  in order to engender _complete loyalty_ in your soldiers, you threaten their families.  Follow the rules or your family gets whacked!  Another example of this is [The Code of Hammurabi](https://en.wikipedia.org/wiki/Code_of_Hammurabi), a Babylonian legal text composed c. 1755–1750 BC.  One law states:
+
+> "The death of a homeowner in a house collapse necessitates the death of the house's builder... if the homeowner's son died, the builder's son must die also." - [Code of Hammurabi, _Wikipedia_](https://en.wikipedia.org/wiki/Code_of_Hammurabi#Theories_of_purpose)
+
+Luckily, these kinds of exposure aren't very common on software projects!  [Fixed Price Contracts](../thinking/One-Size-Fits-No-One.md#waterfall) and [Employee Stock Options](https://en.wikipedia.org/wiki/Employee_stock_option) are two exceptions.
+
+#### Needs Theory
+
+David McClelland's Needs Theory suggests that there are two types of skin-in-the-game: the _intrinsic_ interest in the work being done and _extrinsic_ factors such as the recognition, achievement, or personal growth derived from it.   
 
 > "Need theory... proposed by psychologist David McClelland, is a motivational model that attempts to explain how the needs for achievement, power, and affiliation affect the actions of people from a managerial context... McClelland stated that we all have these three types of motivation regardless of age, sex, race, or culture. The type of motivation by which each individual is driven derives from their life experiences and the opinions of their culture. " - [Need Theory, _Wikipedia_](https://en.wikipedia.org/wiki/Need_theory)
 
@@ -165,7 +224,7 @@ But _extrinsic motivation_ is a complex, difficult-to-apply tool.  In [Map And T
 
 Tools like [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming) and [Collective Code Ownership](https://en.wikipedia.org/wiki/Collective_ownership) are about mitigating [Staff Risks](Scarcity-Risk.md#staff-risk) like [Key Person Risk](https://en.wikipedia.org/wiki/Key_person_insurance#Key_person_definition) and [Learning Curve Risk](Communication-Risk.md#learning-curve-risk), but these push in the opposite direction to _individual responsibility_.   
 
-This is an important consideration:  in adopting _those_ tools, you are necessarily setting aside certain tools to manage [Agency Risk](Agency-Risk.md) as a result.
+This is an important consideration:  in adopting _those_ tools, you are necessarily setting aside certain _other_ tools to manage [Agency Risk](Agency-Risk.md) as a result.
 
 We've looked at various different shades of [Agency Risk](Agency-Risk.md) and three different mitigations for it. [Agency Risk](Agency-Risk.md) is a concern at the level of _individual agents_, whether they are processes, people, systems or teams.  
 

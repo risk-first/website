@@ -1,0 +1,79 @@
+<diagram
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+	xmlns:xslt="http://www.kite9.org/schema/xslt"
+	xmlns="http://www.kite9.org/schema/adl"
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink" id="diagram-113">
+
+	<container
+		style="">
+		<glyph id="0"
+			style="--kite9-sizing: minimize; --kite9-min-width: 200pt;">
+			Self, Immediate Family
+		</glyph>
+		<glyph id="1"
+			style="--kite9-sizing: minimize; --kite9-min-width: 300pt; ">
+			Close Friends, Other Family
+		</glyph>
+		<glyph id="2"
+			style="--kite9-sizing: minimize; --kite9-min-width: 400pt;">
+			Community, Tribe, Colleagues
+		</glyph>
+		<glyph id="3"
+			style="--kite9-sizing: minimize; --kite9-min-width: 500pt;">
+			Other People
+		</glyph>
+		<arrow id="h">heroism</arrow>
+		<arrow id="s">selfishness</arrow>
+
+		<label>Selfishness and Heroism</label>
+	</container>
+
+	<!-- selfishness -->
+	<link>
+		<from reference="2" />
+		<to reference="s" />
+	</link>
+	<link>
+		<from reference="s" />
+		<to reference="0" shape="barbed-arrow"  />
+	</link>
+	<link drawDirection="LEFT">
+		<from reference="1" shape="barbed-arrow" />
+		<to reference="s" />
+	</link>
+	
+	<!-- heroism -->
+	<link>
+		<from reference="3" shape="barbed-arrow"/>
+		<to reference="h" />
+	</link>
+	<link>
+		<from reference="h" />
+		<to reference="0"  />
+	</link>
+ 	<link drawDirection="RIGHT">
+		<from reference="2"  shape="barbed-arrow" />
+		<to reference="h" />
+	</link> 
+
+
+	<!-- alignment -->
+	<link drawDirection="DOWN" class="invisible">
+		<from reference="0" />
+		<to reference="1" />
+	</link>
+
+
+	<link drawDirection="DOWN" class="invisible">
+		<from reference="1" />
+		<to reference="2" />
+	</link>
+
+	<link drawDirection="DOWN" class="invisible">
+		<from reference="2" />
+		<to reference="3" />
+	</link>
+
+
+</diagram>
