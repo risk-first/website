@@ -16,7 +16,9 @@ tweet: yes
 
 # Agency Risk
 
-Coordinating a team is difficult enough when everyone on the team has a single [Goal](../thinking/Glossary.md#Goal-In-Mind).  But people have their own goals too.  Sometimes their goals harmlessly co-exist with the team's goal, other times they don't.
+Coordinating a team is difficult enough when everyone on the team has a single [Goal](../thinking/Glossary.md#Goal-In-Mind).  But people have their own goals too.  Sometimes their goals harmlessly co-exist with the team's goal, other times they don't. 
+
+This is [Agency Risk](Agency-Risk.md). 
 
 ![Agency Risk](../images/generated/risks/agency/agency-risk.png)
 
