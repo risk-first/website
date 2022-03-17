@@ -281,7 +281,7 @@ There are various mitigating strategies for this.  We'll look at two now: **Back
 
 #### Backward Compatibility
 
-Backwards Compatibility mitigates [Protocol Versioning Risk](Communication-Risk.md#protocol-versioning-risk).  This means supporting the old protocol until it falls out of use.  If a supplier is pushing for a change in protocol it either must ensure that it is Backwards Compatible with the clients it is communicating with, or make sure they are upgraded concurrently.  When building [web services](https://en.wikipedia.org/wiki/Web_service), for example, it's common practice to version all API's so that you can manage the migration.  Something like this:
+Backwards Compatibility mitigates [Protocol Risk](Communication-Risk.md#protocol-risk).  This means supporting the old protocol until it falls out of use.  If a supplier is pushing for a change in protocol it either must ensure that it is Backwards Compatible with the clients it is communicating with, or make sure they are upgraded concurrently.  When building [web services](https://en.wikipedia.org/wiki/Web_service), for example, it's common practice to version all API's so that you can manage the migration.  Something like this:
 
  - Supplier publishes `/api/v1/something`.
  - Clients use `/api/v1/something`.
@@ -340,7 +340,7 @@ For people, nothing exists unless we have a name for it. <!-- tweet-end --> The 
 
 People don't rely on rigorous definitions of abstractions like computers do; we make do with fuzzy definitions of concepts and ideas.  We rely on [Abstraction](../thinking/Glossary.md#abstraction) to move between the name of a thing and the _idea of a thing_.
 
-This brings about [Misinterpretation Risk](Communication-Risk.md#misinterpretation-risk): names are not _precise_, and concepts mean different things to different people.  We can't be sure that other people have the same meaning for a name that we have.  
+This brings about [Misinterpretation](Communication-Risk.md#misinterpretation): names are not _precise_, and concepts mean different things to different people.  We can't be sure that other people have the same meaning for a name that we have.  
 
 ### Invisibility Risk
  
@@ -419,7 +419,7 @@ By now it should be clear that it's going to be _both_ quite hard to read and wr
 But now we should be able to see the reason why it's harder to read than write too: 
  
  - When reading code, you are having to shift your [Internal Model](../thinking/Glossary.md#Internal-Model) to wherever the code is, accepting decisions that you might not agree with and accepting counter-intuitive logical leaps.  i.e. [Learning Curve Risk](Communication-Risk.md#learning-curve-risk). _(cf. [Principle of Least Surprise](https://en.wikipedia.org/wiki/Principle_of_least_astonishment))_
- - There is no [Feedback Loop](../thinking/Glossary.md#Feedback-Loop) between your [Internal Model](../thinking/Glossary.md#Internal-Model) and the [Reality](../thinking/Glossary.md#Meet-Reality) of the code, opening you up to [Misinterpretation Risk](Communication-Risk.md#misinterpretation-risk).  When you write code, your compiler and tests give you this.
+ - There is no [Feedback Loop](../thinking/Glossary.md#Feedback-Loop) between your [Internal Model](../thinking/Glossary.md#Internal-Model) and the [Reality](../thinking/Glossary.md#Meet-Reality) of the code, opening you up to [misinterpretation](Communication-Risk.md#misinterpretation).  When you write code, your compiler and tests give you this.
  - While reading code _takes less time_ than writing it, this also means the [Learning Curve](Communication-Risk.md#learning-curve-risk) is steeper.
 
 ## Communication Risks Wrap Up

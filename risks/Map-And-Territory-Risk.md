@@ -16,7 +16,7 @@ tweet: yes
 
 # Map And Territory Risk
 
-As we discussed in the [Communication Risk](Communication-Risk.md#misinterpretation-risk) section, our understanding of the world is informed by abstractions we create and the names we give them.  <!-- tweet-end -->
+As we discussed in the [Communication Risk](Communication-Risk.md#misinterpretation) section, our understanding of the world is informed by abstractions we create and the names we give them.  <!-- tweet-end -->
 
 For example, <!-- tweet-start -->Risk-First is about naming _risks_ within software development, so we can discuss and understand them better.<!-- tweet-end -->
 

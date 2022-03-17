@@ -114,7 +114,7 @@ The decisions at the top are faster, but don't do much for mitigating [Coordinat
 
 The trick is to be able to tell which approach is suitable at which time.   Everyone is expected to make decisions _within their realm of expertise_: you can't have developers continually calling meetings to discuss whether they should be using an [Abstract Factory](https://en.wikipedia.org/wiki/Abstract_factory_pattern) or a [Factory Method](https://en.wikipedia.org/wiki/Factory_method_pattern): it would waste time.  The critical question is therefore, "what's the biggest risk?"
 
- - Is the [Coordination Risk](Coordination-Risk.md) greater?   Are we going to suffer [Dead End Risk](Complexity-Risk.md) if the decision is made wrongly?  What if people don't agree with it?  Poor leadership has an impact on [Morale](Agency-Risk.md#morale-risk) too.  
+ - Is the [Coordination Risk](Coordination-Risk.md) greater?   Are we going to suffer [Dead End Risk](Complexity-Risk.md) if the decision is made wrongly?  What if people don't agree with it?  Poor leadership has an impact on [morale](Agency-Risk.md#morale-failure) too.  
  - Is the [Schedule Risk](Scarcity-Risk.md#schedule-risk) greater?  If you have a 1-hour meeting with eight people to decide a decision, that's _one person day_ gone right there:  group decision making is _expensive_.  
  
 So _organisation_ can reduce [Coordination Risk](Coordination-Risk.md) but to make this work we need more _communication_, and this has attendant complexity and time costs.  
