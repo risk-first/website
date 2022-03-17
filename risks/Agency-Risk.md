@@ -18,24 +18,29 @@ tweet: yes
 
 Coordinating a team is difficult enough when everyone on the team has a single [Goal](../thinking/Glossary.md#Goal-In-Mind).  But people have their own goals too.  Sometimes their goals harmlessly co-exist with the team's goal, other times they don't.
 
-![Agency Risk Family](../images/generated/risks/agency/agency-risks.png)
+![Agency Risk](../images/generated/risks/agency/agency-risk.png)
 
-This is [Agency Risk](Agency-Risk.md).   This term comes from finance and refers to the situation where you (the "principal") entrust your money to someone (the "agent") in order to invest it, but they don't necessarily have your best interests at heart.  They may instead elect to invest the money in ways that help them, or outright steal it.  
+In this section, we are going to take a closer look at how [Agency Risk](Agency-Risk.md) arises, in particular we will:
+
+  - apply the concept of [Agency Risk](Agency-Risk.md) in software development
+  - define a model for understanding [Agency Risk](Agency-Risk.md)
+  - look at some common issues in software development, and analyse how they have their roots in [Agency Risk](Agency-Risk.md)
+  - look at how [Agency Risk](Agency-Risk.md) applies to not just to people, but _whole teams_ and _software agents_
+  - look at the various ways to mitigate [Agency Risk](Agency-Risk.md), irrespective of what type of agent we are looking at.  (We'll specifically consider _software agents_, _humans_ and _cells in the body_.)
+  
+## Agency In Software Development
+
+To introduce [Agency Risk](Agency-Risk.md), let's first look at the **Principal-Agent Dilemma**.  This term comes from finance and refers to the situation where you (the "principal") entrust your money to someone (the "agent") in order to invest it, but they don't necessarily have your best interests at heart.  They may instead elect to invest the money in ways that help them, or outright steal it.  
 
 > "This dilemma exists in circumstances where agents are motivated to act in their own best interests, which are contrary to those of their principals, and is an example of moral hazard." - [Principal-Agent Problem, _Wikipedia_](https://en.wikipedia.org/wiki/Principal–agent_problem)
 
-The less visibility you have of the agent's activities, the bigger the risk.  However, the _whole point_ of giving the money to the agent was that you would have to spend less time and effort managing it, hence the dilemma.  <!-- tweet-start -->In software development, we're not lending each other money, but we _are_ being paid by the project sponsor, so they are assuming [Agency Risk](Agency-Risk.md) by employing us.   <!-- tweet-end -->
+The less visibility you have of the agent's activities, the bigger the risk.  However, the _whole point_ of giving the money to the agent was that you would have to spend less time and effort managing it, hence the dilemma.  
+
+In software development, we're not lending each other money, but we _are_ being paid by the project sponsor, so they are assuming [Agency Risk](Agency-Risk.md) by employing us.  
 
 [Agency Risk](Agency-Risk.md) doesn't just apply to people: it can apply to _running software_ or _whole teams_  - anything which has agency over its actions.  
 
 > "Agency is the capacity of an actor to act in a given environment... Agency may either be classified as unconscious, involuntary behaviour, or purposeful, goal directed activity (intentional action). " - [Agency, _Wikipedia_](https://en.wikipedia.org/wiki/Agency_(philosophy)) 
-
-In this section, we are going to take a closer look at how [Agency Risk](Agency-Risk.md) arises, in particular we will:
-
-  - define a model for understanding [Agency Risk](Agency-Risk.md)
-  - look at some common issues in software development, and analyse how they have their roots in [Agency Risk](Agency-Risk.md)
-  - look at how [Agency Risk](Agency-Risk.md) applies to not just to people, but _whole teams_, but also _software agents_
-  - look at the various ways to mitigate [Agency Risk](Agency-Risk.md), irrespective of what type of agent we are looking at.  (We'll specifically consider _software agents_, _humans_ and _cells in the body_.)
   
 ## A Model For Agency Risk  
   
@@ -50,6 +55,8 @@ The model above helps us explain the principal-agent problem:  when faced with t
  - why people can be fiercely _nationalistic_ and tribal (supporting the goals of the third level) and also be against _immigration_ (helping people in the fourth level).
 
 [Agency Risk](Agency-Risk.md) clearly includes the behaviour of [Bad Actors](https://en.wiktionary.org/wiki/bad_actor) but is not limited to them:  there are various "shades of grey" involved.  We can often understand and sympathise with the decisions agents make based on an understanding of this hierarchy.   
+
+**NB:** Don't get hung up on the fact the diagram only has four levels.  You might want to add other levels in their depending on your personal circumstances.  The take-away is that there is a hierarchy at all, and that at the top, the people/things we care about _most_ are few in number.
 
 ## Agency Risk In Software Development
 
@@ -174,9 +181,9 @@ Monitoring of _software process_ agents is an important part of designing reliab
 
 ### Security
 
-![Security as a mitigation for Agency Risk](../images/generated/risks/agency/security-risk.png)
+Security is all about _setting limits_ on agency - both within and outside a system, so when we talk about "Security Risk" we are really talking about a failure to limit agency.
 
-Security is all about _setting limits_ on agency - both within and outside a system.  
+![Related Risks](../images/generated/risks/agency/agency-risks.png)
 
 _Within_ a system we may wish to prevent our agents from causing accidental (or deliberate) harm but we also have [Agency Risk](Agency-Risk.md) from unwanted agents _outside_ the system.  So security is also about ensuring that the environment we work in is _safe_ for the good actors to operate in while keeping out the bad actors.
 
@@ -193,6 +200,8 @@ These work at various levels in **our own bodies**:  our _cells_ have _cell wall
 **Our societies** work in similar ways: in medieval times, a city would have walls, guards and gates to keep out intruders.  Nowadays, we have customs control, borders and passports.
 
 We're waking up to the realisation that our software systems need to work the same way:  we have [Firewalls](https://en.wikipedia.org/wiki/Firewall_(computing)) and we lock down _ports_ on servers to ensure there are the minimum number of _doors_ to guard,  we _police_ the servers with monitoring tools, and we _guard_ access using passwords and other identification approaches. 
+
+![Security as a mitigation for Agency Risk](../images/generated/risks/agency/security-risk.png)
 
 [Agency Risk](Agency-Risk.md) and [Security Risk](Agency-Risk.md#security) thrive on complexity:  the more complex the systems we create, the more opportunities there are for bad actors to insert themselves and extract their own value.  The dilemma is, _increasing security_ also means increasing [Complexity Risk](Complexity-Risk.md), because secure systems are necessarily more complex than insecure ones.
 
