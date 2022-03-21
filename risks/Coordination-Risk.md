@@ -8,7 +8,7 @@ featured:
   element: '<risk class="coordination" />'
 order: 13
 categories:
- - Risksx
+ - Risks
 redirect_from: 
  - /Coordination-Risk
 tweet: yes
