@@ -1,8 +1,9 @@
-<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svg='http://www.w3.org/2000/svg'>
-  <svg:defs>
-    <svg:style type="text/css"> @import url("/public/templates/risk-first/risk-first.css");</svg:style>
-  </svg:defs>
-  <diagram xmlns="http://www.kite9.org/schema/adl" id="The Diagram" style="--kite9-layout: down;">
+<diagram
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+	xmlns:xslt="http://www.kite9.org/schema/xslt"
+	xmlns="http://www.kite9.org/schema/adl"
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink" id="diagram-113" style="--kite9-layout: down;">
     <table>
       <risk class="operational" style="--kite9-occupies: 2 1; " />
       <risk class="boundary" style="--kite9-occupies: 3 1; " />
@@ -72,4 +73,3 @@
       <celltext style="--kite9-occupies: 6 14; " class="center bold">1</celltext>
     </table>
   </diagram>
-</svg:svg>

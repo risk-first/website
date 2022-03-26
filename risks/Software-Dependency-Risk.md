@@ -18,7 +18,37 @@ tweet: yes
 
 In this section, we're going to look specifically at _Software_ dependencies, although many of the concerns we'll raise here apply equally to all the other types of dependency we outlined in [Dependency Risk](Dependency-Risk.md). 
 
-## Kolmogorov Complexity: Cheating
+![Software Dependency Risk](../images/generated/risks/software-dependency/software-dependency-risk.png)
+
+In this section we will look at:
+
+ - **How Dependencies Provide Features**.   It might seem obvious, but the purpose of adding a software dependency is to _reduce some other kind of risk_.    
+ - **Dependencies on Programming Languages**. Although you can usually write a piece of code in any language, different languages provide different features, specialising them for certain tasks.  This leads us on to consider...
+ - **Ergonomics**.  The idea that software, just like any other tool, provides an _interface_ which should be designed to make it easy to use for a particular task.
+ - **Different Types of Software Dependencies**.   In a software project there are a number of ways you could depend on _other software_.  Here, we break it down into some specific types (write-your-own, libraries and services) and look at the risk characteristics of each.
+ - Finally, we look at how software dependencies are **Funded** - that is, how they survive over time.  Here we focus on Open Source, Commercial and Ad-Supported options, and the risks introduced by each.
+
+## Software Dependencies as Features
+
+[Software Dependencies](Software-Dependency-Risk.md) allows us to construct dependency networks to give us all kinds of features and mitigate all kinds of risk.  That is, the features we are looking for in a dependency _are to mitigate some kind of risk_.
+
+For example, I might start using [WhatsApp](https://en.wikipedia.org/wiki/WhatsApp) because I want to be able to send my friends photos and text messages.  However, it's likely that those same features allow us to mitigate [Coordination Risk](Coordination-Risk.md) when we're next trying to meet up. 
+
+Let's look at some more examples:
+
+|Risk                                                 |Software Mitigating That Risk                                             |
+|-----------------------------------------------------|------------------------------------------------------------------------- |
+|[Coordination Risk](Coordination-Risk.md)               |Calendar tools,  Bug Tracking, Distributed Databases                      |
+|[Schedule-Risk](Scarcity-Risk.md#schedule-risk)         |Planning Software, Project Management Software                            |
+|[Communication-Risk](Communication-Risk.md)             |Email, Chat tools, CRM tools like SalesForce, Forums, Twitter, Protocols  |
+|[Process-Risk](Process-Risk.md)                         |Reporting tools, online forms, process tracking tools                     |
+|[Agency-Risk](Agency-Risk.md)                           |Auditing tools, transaction logs, Time-Sheet software, HR Software        |  
+|[Operational-Risk](Operational-Risk.md)                 |Support tools like ZenDesk, Grafana, InfluxDB, Geneos, Security Tools     |
+|[Feature-Risk](Feature-Risk.md)                         |Every piece of software you use!                                          |
+  
+With this in mind, we can see that adding a software dependency is a trade-off:  we reduce some risk (as in the table above), but in return we pick up [Software Dependency Risk](Software-Dependency-Risk.md) as a result.  Whether this trade-off is worth it depends entirely on how well that software dependency resolves the original risk and how onerous the new risks are that we pick up.
+
+## Programming Languages as Dependencies
 
 In the earlier section on [Complexity Risk](Complexity-Risk.md) we tackled [Kolmogorov Complexity](Complexity-Risk.md#Kolmogorov-Complexity), and the idea that your codebase had some kind of minimal level of complexity based on the output it was trying to create.  This is a neat idea, but in a way, we cheated.  Let's look at how.
 
@@ -229,7 +259,7 @@ The diagram above summarises the risks raised in some of the available literatur
  
  <!-- markdown-link-check-enable -->
 
-## A Matrix of Options
+### Funding Software Dependencies
 
 We've looked at just 3 different ways of providing a software dependency: Code-Your-Own, Libraries and SaaS.<!-- tweet-end -->
 
@@ -243,24 +273,6 @@ Let's expand this view slightly and look at where different pieces of software s
 - At the other end of the spectrum, clients will happily pay for software if it clearly **reduces [Operational Risk](Operational-Risk.md)**.  Take [Amazon Web Services (AWS)](https://en.wikipedia.org/wiki/Amazon_Web_Services).  The essential trade here is that you substitute the complexity of hosting and maintaining various pieces of hardware, in exchange for metered payments ([Funding Risk](Scarcity-Risk.md#Funding-Risk) for you).  Since the AWS _interfaces_ are specific to Amazon, there is significant [Boundary Risk](Boundary-Risk.md) in choosing this option.
 - In the middle there are lots of **substitute options** and therefore high competition.  Because of this prices are pushed towards zero and therefore often advertising is used to monetise the product.  [Angry Birds](https://en.wikipedia.org/wiki/Angry_Birds) is a classic example:  initially, it had demo and paid versions, however [Rovio](https://en.wikipedia.org/wiki/Rovio_Entertainment) discovered there was much more money to be made through advertising than from the [paid-for app](https://www.deconstructoroffun.com/blog/2017/6/11/how-angry-birds-2-multiplied-quadrupled-revenue-in-a-year).
 
-## Software Dependencies as Features
-
-So far we've looked at different _approaches_ to software dependencies and the risk profiles they present.  But the category is less important than the specifics:  we are choosing _specific tools for specific tasks_.  [Software Dependencies](Software-Dependency-Risk.md) allows us to construct dependency networks to give us all kinds of features and mitigate all kinds of risk.  That is, the features we are looking for in a dependency _are to mitigate some kind of risk_.
-
-For example, I might start using [WhatsApp](https://en.wikipedia.org/wiki/WhatsApp) because I want to be able to send my friends photos and text messages.  However, it's likely that those same features allow us to mitigate [Coordination Risk](Coordination-Risk.md) when we're next trying to meet up. 
-
-Let's look at some more examples:
-
-|Risk                                                 |Software Mitigating That Risk                                             |
-|-----------------------------------------------------|------------------------------------------------------------------------- |
-|[Coordination Risk](Coordination-Risk.md)               |Calendar tools,  Bug Tracking, Distributed Databases                      |
-|[Schedule-Risk](Scarcity-Risk.md#schedule-risk)         |Planning Software, Project Management Software                            |
-|[Communication-Risk](Communication-Risk.md)             |Email, Chat tools, CRM tools like SalesForce, Forums, Twitter, Protocols  |
-|[Process-Risk](Process-Risk.md)                         |Reporting tools, online forms, process tracking tools                     |
-|[Agency-Risk](Agency-Risk.md)                           |Auditing tools, transaction logs, Time-Sheet software, HR Software        |  
-|[Operational-Risk](Operational-Risk.md)                 |Support tools like ZenDesk, Grafana, InfluxDB, Geneos, Security Tools     |
-|[Feature-Risk](Feature-Risk.md)                         |Every piece of software you use!                                          |
-  
 ## Choice
 
 Choosing dependencies can be extremely difficult.  As we discussed above, the usefulness of any tool depends on its fit for purpose, its _ergonomics within a given context_.  It's all too easy to pick a good tool for the wrong job:  
