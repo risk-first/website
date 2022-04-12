@@ -98,6 +98,7 @@ function out() {                           (7 symbols)
 3.  **What is this new library function we've created?**   Is `abcdRepeater` going to be part of _every_ Javascript?  If so, then we've shifted [Codebase Risk](Complexity-Risk.md) away from ourselves, but we've pushed [Conceptual Integrity Risk](Feature-Risk.md#conceptual-integrity-risk) onto every _other_ user of Javascript, because `abcdRepeater` will be clogging up the JavaScript documentation for everyone, despite being rarely useful.
 4.  **Are there equivalent functions for every single other string?**  If so, then compilation is no longer a tractable problem because now we have a massive library of different `XXXRepeater` functions to compile against.   So, what we _lose_ in [Codebase Risk](Complexity-Risk.md#codebase-risk) we gain in [Complexity Risk](Complexity-Risk.md#space-and-time-complexity).
 5.  **Language design, then, is about _ergonomics_:** <!-- tweet-end --> After you have passed the relatively low bar of providing [Turing Completeness](https://en.wikipedia.org/wiki/Turing_completeness), the key is to provide _useful_ features that enable problems to be solved, without over-burdening the user with features they _don't_ need.  And in fact, all software is about this.
+6.  **Language Ecosystems _really_ matter**: all modern languages allow extensions via libraries, modules or plugins.  If your particular `abcdRepeater` isn't in the main library,   
 
 ## Ergonomics Examined
 
