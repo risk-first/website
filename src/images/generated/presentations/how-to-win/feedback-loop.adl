@@ -1,0 +1,34 @@
+<diagram 
+    xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+	xmlns:xslt="http://www.kite9.org/schema/xslt"
+	xmlns="http://www.kite9.org/schema/adl"
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+    id="diagram-113" 
+    style="--kite9-layout: right; --kite9-horizontal-align: center; --kite9-sizing: minimize; "
+    name="Complexity Risk Family">
+
+
+	<component id="c1">Subject</component>
+	<internal-model-artifact id="ima">Internal Model</internal-model-artifact>
+	
+	<action id="a">Taking Some Action</action>
+	
+	<component id="c2" style="--kit9e-arrival-side: right; ">Updated Subject</component>
+	
+	<align>
+		<from reference="c1" />
+		<to reference="a" />
+	</align>
+	
+	<align>
+		<from reference="ima" />
+		<to reference="c1" />
+	</align>
+		
+	<link>
+		<from reference="c2" />
+		<to reference="c1" shape="arrow"/>
+	</link>
+     	
+  </diagram>
