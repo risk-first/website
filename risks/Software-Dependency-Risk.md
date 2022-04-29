@@ -110,11 +110,15 @@ But outside, the form is simple, and designed for humans to use.   This is _[erg
 
 ### Protocols and Ergonomics
 
-![Software Dependency Ergonomics:  finding the sweet spot between too many features and too few](../images/generated/risks/software-dependency/ergonomics.png)
+![Software Dependency Ergonomics:  adopting simple dependencies](../images/generated/risks/software-dependency/ergonomics1.png)
 
-The _interface_ of a tool is the part we touch and interact with, via its protocol.  By striving for an ergonomic sweet spot, the protocol reduces [Communication Risk](Communication-Risk.md).  <!-- tweet-end -->  You can see this trade-off in the diagram above.
+The _interface_ of a tool is the part we touch and interact with, via its protocol.    If you adopt _simple_ dependencies (as in the diagram above) you don't accrue [Communication Risk](Communication-Risk.md), but you might have to orchestrate _more_ dependencies, picking up [Complexity Risk](Complexity-Risk.md) in your software.
 
-The interface of a system expands when you ask it to do a wide variety of things. <!-- tweet-end -->  An easy-to-use drill does one thing well: it turns drill-bits at useful levels of torque for drilling holes and sinking screws.  But if you wanted it to also operate as a lathe, a sander or a strimmer (all basically mechanical things going round) you would have to sacrifice the conceptual integrity for a more complex protocol, probably including adapters, extensions, handles and so on.
+The interface of a dependency expands when you ask it to do a wider variety of things.  An easy-to-use drill does one thing well: it turns drill-bits at useful levels of torque for drilling holes and sinking screws.  But if you wanted it to also operate as a lathe, a sander or a strimmer (all basically mechanical things going round) you would have to sacrifice the conceptual integrity for a more complex protocol, probably including adapters, extensions, handles and so on.
+
+![Software Dependency Ergonomics:  adopting complex dependencies](../images/generated/risks/software-dependency/ergonomics2.png)
+
+Adopting larger, more complex software dependencies (as shown in the diagram above) means that you are avoiding more complexity yourself.  This probably gives you a longer learning curve before you understand the tool, and you _might_ run into issues later where the tool fails to do something critical that you wanted (a [Dead End Risk](Communication-Risk.md#Dead-End-Risk)
 
 So, we now have split complexity into two:
 
@@ -125,7 +129,7 @@ So, we now have split complexity into two:
 
 ### Software Tools
 
-In the same way as with a hand-tool, the bulk of the complexity of a software tool is hidden behind its interface.<!-- tweet-end -->  But, the more complex the _purpose_ of the tool, the more complex the interface will be.
+In the same way as with a hand-tool, the bulk of the complexity of a software tool is hidden behind its interface.  But, the more complex the _purpose_ of the tool, the more complex the interface will be.
 
 Software is not constrained by _physical_ ergonomics in the same way as a tool is. <!-- tweet-end --> But ideally, it should have conceptual ergonomics: complexity is hidden away from the user behind the _User Interface_.  This is the familiar concept of [Abstraction](../thinking/Glossary.md#abstraction) we've already looked at.  As we saw in [Communication Risk](Communication-Risk.md#learning-curve-risk), when we use a new protocol, we face [Learning Curve Risk](Communication-Risk.md#learning-curve-risk).  To minimise this, we should apply the [Principal Of Least Astonishment](https://en.wikipedia.org/wiki/Principle_of_least_astonishment) when designing protocols: 
 
