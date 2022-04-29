@@ -93,11 +93,11 @@ function out() {                           (7 symbols)
 
 .. and re-encode to **14** symbols.  Now, clearly there are some problems with all this:
 
-1.  **Language Matters**:  the Kolmogorov complexity is dependent on the language, and the features the language has built in. <!-- tweet-end --> 
+1.  **Language Matters**:  the Kolmogorov complexity is dependent on the language, and the features the language has built in. 
 2.  **Exact Kolmogorov complexity is uncomputable anyway:**  Since it's the _theoretical_ minimum program length, it's a fairly abstract idea, so we shouldn't get too hung up on this.  There is no function to be able to say, "What's the Kolmogorov complexity of string X?"
 3.  **What is this new library function we've created?**   Is `abcdRepeater` going to be part of _every_ Javascript?  If so, then we've shifted [Codebase Risk](Complexity-Risk.md) away from ourselves, but we've pushed [Conceptual Integrity Risk](Feature-Risk.md#conceptual-integrity-risk) onto every _other_ user of Javascript, because `abcdRepeater` will be clogging up the JavaScript documentation for everyone, despite being rarely useful.
 4.  **Are there equivalent functions for every single other string?**  If so, then compilation is no longer a tractable problem because now we have a massive library of different `XXXRepeater` functions to compile against.   So, what we _lose_ in [Codebase Risk](Complexity-Risk.md#codebase-risk) we gain in [Complexity Risk](Complexity-Risk.md#space-and-time-complexity).
-5.  **Language design, then, is about _ergonomics_:** <!-- tweet-end --> After you have passed the relatively low bar of providing [Turing Completeness](https://en.wikipedia.org/wiki/Turing_completeness), the key is to provide _useful_ features that enable problems to be solved, without over-burdening the user with features they _don't_ need.  And in fact, all software is about this.
+5.  **Language design, then, is about _ergonomics_:** x After you have passed the relatively low bar of providing [Turing Completeness](https://en.wikipedia.org/wiki/Turing_completeness), the key is to provide _useful_ features that enable problems to be solved, without over-burdening the user with features they _don't_ need.  And in fact, all software is about this.
 6.  **Language Ecosystems _really_ matter**: all modern languages allow extensions via libraries, modules or plugins.  If your particular `abcdRepeater` isn't in the main library,   
 
 ## Ergonomics Examined
@@ -118,20 +118,22 @@ The interface of a dependency expands when you ask it to do a wider variety of t
 
 ![Software Dependency Ergonomics:  adopting complex dependencies](../images/generated/risks/software-dependency/ergonomics2.png)
 
-Adopting larger, more complex software dependencies (as shown in the diagram above) means that you are avoiding more complexity yourself.  This probably gives you a longer learning curve before you understand the tool, and you _might_ run into issues later where the tool fails to do something critical that you wanted (a [Dead End Risk](Communication-Risk.md#Dead-End-Risk)
+Adopting complex software dependencies (as shown in the diagram above) might allow you to avoid complexity in your own codebase.  However, this likely gives you a longer learning curve before you understand the tool, and you _might_ run into issues later where the tool fails to do something critical that you wanted (a [Dead End Risk](Complexity-Risk.md#Dead-End-Risk)).
 
-So, we now have split complexity into two:
+Using a software dependency allows us to split a project's complexity into two: 
 
- - The inner complexity of the tool (how it works internally, its own [internal complexity](Complexity-Risk.md#Kolmogorov-Complexity)).
+ - The inner complexity of the dependency (how it works internally, its own [internal complexity](Complexity-Risk.md#Kolmogorov-Complexity)).
  - The complexity of the instructions that we need to write to make the tool work, [the protocol complexity](Communication-Risk.md#protocol-risk), which will be a function of the complexity of the tool itself.
- 
+
 ![Types of Complexity For a Software Dependency](../images/generated/risks/software-dependency/protocol-complexity.png)
+ 
+As the above diagram shows, the bulk of the complexity of a software tool is hidden behind its interface.  The more complex the _purpose_ of the tool, the more complex the interface will need to be.
 
-### Software Tools
+### Designing Protocols
 
-In the same way as with a hand-tool, the bulk of the complexity of a software tool is hidden behind its interface.  But, the more complex the _purpose_ of the tool, the more complex the interface will be.
+Software is not constrained by _physical_ ergonomics in the same way as a tool is.  But ideally, it should have conceptual ergonomics: complexity is hidden away from the user behind the _User Interface_.  This is the familiar concept of [Abstraction](../thinking/Glossary.md#abstraction) we've already looked at.  As we saw in [Communication Risk](Communication-Risk.md#learning-curve-risk), when we use a new protocol, we face [Learning Curve Risk](Communication-Risk.md#learning-curve-risk).  
 
-Software is not constrained by _physical_ ergonomics in the same way as a tool is. <!-- tweet-end --> But ideally, it should have conceptual ergonomics: complexity is hidden away from the user behind the _User Interface_.  This is the familiar concept of [Abstraction](../thinking/Glossary.md#abstraction) we've already looked at.  As we saw in [Communication Risk](Communication-Risk.md#learning-curve-risk), when we use a new protocol, we face [Learning Curve Risk](Communication-Risk.md#learning-curve-risk).  To minimise this, we should apply the [Principal Of Least Astonishment](https://en.wikipedia.org/wiki/Principle_of_least_astonishment) when designing protocols: 
+To minimise this, we should apply the [Principal Of Least Astonishment](https://en.wikipedia.org/wiki/Principle_of_least_astonishment) when designing our own protocols: 
 
  - **The abstractions should map easily to how the user expects the tool to work.** For example, I _expect_ the trigger on a drill to start the drill turning.  
  - **The abstractions should leverage existing idioms and knowledge.** In a new car I _expect_ to know what the symbols on the dashboard mean because I've driven other cars.
@@ -164,7 +166,7 @@ One of the hidden risks of embarking on a code-your-own approach is that the fea
 
 ### Unwritten Software
 
-Sometimes you will pick up [Dependency Risk](Dependency-Risk.md) from _unwritten software_.  This commonly happens when work is divided amongst team members, or teams.  <!-- tweet-end -->
+Sometimes you will pick up [Dependency Risk](Dependency-Risk.md) from _unwritten software_.  This commonly happens when work is divided amongst team members, or teams.  
 
 ![Sometimes, a module you're writing will depend on unwritten code](../images/generated/risks/software-dependency/unwritten.png)
 
@@ -182,7 +184,7 @@ There are a couple of ways of doing this:
 
 ### Conway's Law
 
-Due to channel bandwidth limitations, if the dependency is being written by another person, another team or in another country, [Communication Risk](Communication-Risk.md) piles up.<!-- tweet-end -->  When this happens, you will want to minimise the interface complexity _as much as possible_, since the more complex the interface, the worse the [Communication Risk](Communication-Risk.md) will be.  The tendency then is to make the interfaces between teams or people _as simple as possible_, modularising along these organisational boundaries.
+Due to channel bandwidth limitations, if the dependency is being written by another person, another team or in another country, [Communication Risk](Communication-Risk.md) piles up.   When this happens, you will want to minimise the interface complexity _as much as possible_, since the more complex the interface, the worse the [Communication Risk](Communication-Risk.md) will be.  The tendency then is to make the interfaces between teams or people _as simple as possible_, modularising along these organisational boundaries.
 
 In essence, this is Conway's Law:
 
@@ -190,14 +192,14 @@ In essence, this is Conway's Law:
 
 ### 2.  Software Libraries
 
-By choosing a particular software library, we are making a move on the [Risk Landscape](Risk-Landscape.md) in the hope of moving to a place with more favourable risks. <!-- tweet-end --> Typically, using library code offers a [Schedule Risk](Scarcity-Risk.md#schedule-risk) and [Complexity Risk](Complexity-Risk.md) [Silver Bullet](../complexity/Silver-Bullets.md) - a high-speed route over the risk landscape to somewhere nearer where we want to be.  But, in return we expect to pick up:
+By choosing a particular software library, we are making a move on the [Risk Landscape](Risk-Landscape.md) in the hope of moving to a place with more favourable risks.  Typically, using library code offers a [Schedule Risk](Scarcity-Risk.md#schedule-risk) and [Complexity Risk](Complexity-Risk.md) [Silver Bullet](../complexity/Silver-Bullets.md) - a high-speed route over the risk landscape to somewhere nearer where we want to be.  But, in return we expect to pick up:
 
 - **[Communication Risk](Communication-Risk.md)**: because we now have to learn how to communicate with this new dependency.
 - **[Boundary Risk](Boundary-Risk.md)**: - because now are limited to using the functionality provided by this dependency.  We have chosen it over alternatives and changing to something else would be more work and therefore costly.   
 
 But, it's quite possible that we could wind up in a worse place than we started out, by using a library that's out-of-date, riddled with bugs or badly supported.  i.e. full of new, hidden [Feature Risk](Feature-Risk.md).  
 
-It's _really easy_ to make bad decisions about which tools to use because the tools don't (generally) advertise their deficiencies. <!-- tweet-end --> After all, they don't generally know how _you_ will want to use them.  
+It's _really easy_ to make bad decisions about which tools to use because the tools don't (generally) advertise their deficiencies.  After all, they don't generally know how _you_ will want to use them.  
 
 ### Software Libraries - Attendant Risks
 
@@ -233,7 +235,7 @@ One thing that none of the sources in the table consider (at least from the outs
  - Do you already have a dependency providing this functionality?  So many times, I've worked on projects that import a _new_ dependency when some existing (perhaps transitive) dependency has _already brought in the functionality_.  For example, there are plenty of libraries for [JSON](https://en.wikipedia.org/wiki/JSON) marshalling, but if I'm also using a web framework the chances are it already has a dependency on one already.
  - Does it contain lots of functionality that isn’t relevant to the task you want it to accomplish?  e.g. Using Java when a shell script would do (on a non-Java project)
  
-Sometimes, the amount of complexity _goes up_ when you use a dependency for _good reason_.  <!-- tweet-end --> For example, in Java you can use [Java Database Connectivity (JDBC)](https://en.wikipedia.org/wiki/Java_Database_Connectivity) to interface with various types of database.  [Spring Framework](https://en.wikipedia.org/wiki/Spring_Framework) (a popular Java library) provides a thing called a `JDBCTemplate`.  This actually makes your code _more_ complex, and can prove very difficult to debug.  However, it prevents some security issues, handles resource disposal and makes database access more efficient.  None of those are essential to interfacing with the database, but not having them is [Operational Risk](Operational-Risk.md) that can bite you later on.   
+Sometimes, the amount of complexity _goes up_ when you use a dependency for _good reason._  For example, in Java you can use [Java Database Connectivity (JDBC)](https://en.wikipedia.org/wiki/Java_Database_Connectivity) to interface with various types of database.  [Spring Framework](https://en.wikipedia.org/wiki/Spring_Framework) (a popular Java library) provides a thing called a `JDBCTemplate`.  This actually makes your code _more_ complex, and can prove very difficult to debug.  However, it prevents some security issues, handles resource disposal and makes database access more efficient.  None of those are essential to interfacing with the database, but not having them is [Operational Risk](Operational-Risk.md) that can bite you later on.   
 
 ### 3.  Software-as-a-Service
 
@@ -266,7 +268,7 @@ The diagram above summarises the risks raised in some of the available literatur
 
 ### Funding Software Dependencies
 
-We've looked at just 3 different ways of providing a software dependency: Code-Your-Own, Libraries and SaaS.<!-- tweet-end -->
+We've looked at just 3 different ways of providing a software dependency: Code-Your-Own, Libraries and SaaS.
 
 But these are not the only ways to do it, and there's clearly no one _right_ way.   Although here we have looked just at "Commercial SaaS" and "Free Open Source", in reality, these are just points in a two-dimensional space involving _Pricing_ and _Hosting_.   
 
@@ -274,7 +276,7 @@ Let's expand this view slightly and look at where different pieces of software s
 
 ![Software Dependencies, Pricing, Delivery Matrix Risk Profiles](../images/generated/risks/software-dependency/software_dependency_table_3_sideways.png)
 
-- Where there is value in **the [Network Effect](https://en.wikipedia.org/wiki/Network_effect)** it's often a sign that the software will be free, or open source<!-- tweet-end -->:  programming languages and Linux are the obvious examples of this.  Bugs are easier to find when there are lots of eyes looking, and learning the skill to use the software has less [Boundary Risk](Boundary-Risk.md) if you know you'll be able to use it at any point in the future.
+- Where there is value in **the [Network Effect](https://en.wikipedia.org/wiki/Network_effect)** it's often a sign that the software will be free, or open source:  programming languages and Linux are the obvious examples of this.  Bugs are easier to find when there are lots of eyes looking, and learning the skill to use the software has less [Boundary Risk](Boundary-Risk.md) if you know you'll be able to use it at any point in the future.
 - At the other end of the spectrum, clients will happily pay for software if it clearly **reduces [Operational Risk](Operational-Risk.md)**.  Take [Amazon Web Services (AWS)](https://en.wikipedia.org/wiki/Amazon_Web_Services).  The essential trade here is that you substitute the complexity of hosting and maintaining various pieces of hardware, in exchange for metered payments ([Funding Risk](Scarcity-Risk.md#Funding-Risk) for you).  Since the AWS _interfaces_ are specific to Amazon, there is significant [Boundary Risk](Boundary-Risk.md) in choosing this option.
 - In the middle there are lots of **substitute options** and therefore high competition.  Because of this prices are pushed towards zero and therefore often advertising is used to monetise the product.  [Angry Birds](https://en.wikipedia.org/wiki/Angry_Birds) is a classic example:  initially, it had demo and paid versions, however [Rovio](https://en.wikipedia.org/wiki/Rovio_Entertainment) discovered there was much more money to be made through advertising than from the [paid-for app](https://www.deconstructoroffun.com/blog/2017/6/11/how-angry-birds-2-multiplied-quadrupled-revenue-in-a-year).
 
