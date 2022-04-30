@@ -1,5 +1,5 @@
 ---
-title: Risk-First Presentations
+title: Presentations
 description: Presentations given about Risk-First
 url: https://riskfirst.org/presentations/Start
 
@@ -16,4 +16,6 @@ tweet: yes
 
 # Presentations
 
-Presentations about Risk-First, and related topics that I've given over the last few years.
+Presentations about Risk-First, and related topics that I've given over the last few years.  
+
+Note - there is some repetition here, I don't come up with completely new ideas for each presentation!
