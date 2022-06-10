@@ -1,5 +1,5 @@
 ---
-title: The Evolution Of open-source
+title: The Evolution Of Open-Source
 description: Looking at evolutionary feedback loops in software development
 url: https://riskfirst.org/misc/Evolution-open-source
 
@@ -12,7 +12,7 @@ order: 17
 ---
 
 
-# The Evolution Of open-source
+# The Evolution Of Open-Source
 
 In the 00's the Internet disrupted the music industry entirely.  People walked around with iPods full of songs that they had downloaded using Napster or Limewire and the era of the physical-medium began to end, taking with it the cozy business models of the record companies.
 
