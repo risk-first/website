@@ -13,7 +13,7 @@ order: 6
 
 # The End of Complexity
 
-![The Broccoli Problem](/images/complexity/broccoli.png) 
+![The Broccoli Problem](/images/complexity/broccoli.jpg) 
 
 To start with, a computer ran a program.  There was a one-to-one correspondence.  Then, people got clever, and realised they could get lots of programs running on the same machine. Lately though it's all been about creating one program to run on lots of machines.  And, not just machines of the same type:  whatever machines you want!  And whatever programs you want.  
 

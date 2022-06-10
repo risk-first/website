@@ -1,0 +1,67 @@
+<diagram
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+	xmlns:xslt="http://www.kite9.org/schema/xslt"
+	xmlns="http://www.kite9.org/schema/adl" name="Virtuous Circle"
+	id="diagram-129">
+
+
+	<container>
+
+		<block id="1">
+			More Users
+		</block>
+
+
+		<block id="2b">
+			More Issues /
+			Requirements
+		</block>
+
+
+		<container class="dotted">
+			<block id="2a">
+				More Revenue
+			</block>
+			<block id="3">
+				More Development
+			</block>
+			<label>Foundation Role</label>
+		</container>
+
+
+		<block id="4">
+			More Functionality
+		</block>
+
+
+	</container>
+	<label>Open-Source With Foundations</label>
+
+
+	<link drawDirection="RIGHT">
+		<from reference="1" />
+		<to reference="2a" shape="barbed-arrow" />
+	</link>
+	<link>
+		<from reference="1" />
+		<to reference="2b" shape="barbed-arrow" />
+	</link>
+	<link>
+		<from reference="2a" />
+		<to reference="3" shape="barbed-arrow" />
+	</link>
+	<link>
+		<from reference="2b" />
+		<to reference="3" shape="barbed-arrow" />
+	</link>
+	<link drawDirection="LEFT">
+		<from reference="3" />
+		<to reference="4" shape="barbed-arrow" />
+	</link>
+	<link drawDirection="UP">
+		<from reference="4" />
+		<to reference="1" shape="barbed-arrow" />
+	</link>
+
+
+</diagram>
