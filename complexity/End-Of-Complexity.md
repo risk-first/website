@@ -17,7 +17,7 @@ order: 6
 
 To start with, a computer ran a program.  There was a one-to-one correspondence.  Then, people got clever, and realised they could get lots of programs running on the same machine. Lately though it's all been about creating one program to run on lots of machines.  And, not just machines of the same type:  whatever machines you want!  And whatever programs you want.  
 
-The problem with this is that it is more complex.  Over time, software always gets more complex, because it's always trying to adapt and [model human needs better and better](/estimating/Fractals.md#continuous-refinement).  I call this the Broccoli Problem.  
+The problem with this is that it is more complex.  Over time, software always gets more complex, because it's always trying to adapt and [model human needs better and better](../estimating/Fractals.md#continuous-refinement).  I call this the Broccoli Problem.  
 
 This complexity was on display at KubeCon (2022).  The size of the k8s ecosystem is staggering.  There was no way to figure out all the different offerings, or understand what worked with what else.  I barely scratched the surface.  Now, a lot of this is down to money.  There is plenty of money in software right now and this is why we see so much variety.  Most of the smaller firms are lottery tickets.  
 
@@ -51,7 +51,7 @@ Although, you can skip some of the steps in the middle and move straight to the 
  
 ## Potential Solution #4:  Curation
 
-There are various efforts to create out-of-the-box solutions.  Things like [CodeAnywhere](https://codeanywhere.com), [GitHub](https://github.com) and [GitLab](https://gitlab.com) go a long way to simplifying tool choice (although you still have to choose one of those).   [AWS](https://aws.amazon.com) has a "menu" of services for you to choose from (although this too is bewildering).  Ultimately, curators are running to stand still, facing huge [Red-Queen Risk](/risks/Scarcity-Risk.md#red-queen-risk).   Their efforts to consolidate and simplify the landscape can't possibly keep up with the pace of evolution in the space they are working in.  
+There are various efforts to create out-of-the-box solutions.  Things like [CodeAnywhere](https://codeanywhere.com), [GitHub](https://github.com) and [GitLab](https://gitlab.com) go a long way to simplifying tool choice (although you still have to choose one of those).   [AWS](https://aws.amazon.com) has a "menu" of services for you to choose from (although this too is bewildering).  Ultimately, curators are running to stand still, facing huge [Red-Queen Risk](../risks/Scarcity-Risk.md#red-queen-risk).   Their efforts to consolidate and simplify the landscape can't possibly keep up with the pace of evolution in the space they are working in.  
 
 ## Potential Solution #5: AI
 
