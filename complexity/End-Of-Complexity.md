@@ -13,11 +13,13 @@ order: 6
 
 # The End of Complexity
 
-![The Broccoli Problem](/images/complexity/broccoli.jpg) 
-
 To start with, a computer ran a program.  There was a one-to-one correspondence.  Then, people got clever, and realised they could get lots of programs running on the same machine. Lately though it's all been about creating one program to run on lots of machines.  And, not just machines of the same type:  whatever machines you want!  And whatever programs you want.  
 
-The problem with this is that it is more complex.  Over time, software always gets more complex, because it's always trying to adapt and [model human needs better and better](../estimating/Fractals.md#continuous-refinement).  I call this the Broccoli Problem.  
+The problem with this is that it is more complex.  Over time, software _always_ gets more complex, because it's always trying to adapt and [model human needs better and better](../estimating/Fractals.md#continuous-refinement).  
+
+![The Broccoli Problem](/images/complexity/broccoli.jpg) 
+
+I call this the Broccoli Problem.  
 
 This complexity was on display at KubeCon (2022).  The size of the k8s ecosystem is staggering.  There was no way to figure out all the different offerings, or understand what worked with what else.  I barely scratched the surface.  Now, a lot of this is down to money.  There is plenty of money in software right now and this is why we see so much variety.  Most of the smaller firms are lottery tickets.  
 
@@ -35,7 +37,7 @@ We're kind of getting by with this - but it still gets harder all the time.  The
 
 ## Potential Solution #3:  Silver Bullets
 
-A third hope is for [a silver bullet](Silver-Bullets.md)    A _simplifying abstraction_ that sits on top of a whole load of different problems can really simplify thinking.   Containerisation is one of those abstractions.  Web pages/HTTP are another.  
+A third hope is for [a silver bullet](Silver-Bullets.md):   A _simplifying abstraction_ that sits on top of a whole load of different problems can really simplify thinking.   Containerisation is one of those abstractions.  Web pages/HTTP are another.  
 
 The problem is, the respite is temporary:  as we see with the k8s landscape, the variety we're building on top of that abstraction is bewildering.  
 
@@ -47,15 +49,22 @@ Abstractions go through a lifecycle of:
  - part of the landscape
  - obsolescence
 
-Although, you can skip some of the steps in the middle and move straight to the last one.  The problem is - these new abstractions _contribute_ to the Broccoli Problem:  this is how we ended up with Broccoli in the first place!
+(Although, you can skip some of the steps in the middle and move straight to the last one.)
+
+The problem is - these new abstractions _contribute_ to the Broccoli Problem:  this is how we ended up with Broccoli in the first place!
  
 ## Potential Solution #4:  Curation
 
-There are various efforts to create out-of-the-box solutions.  Things like [CodeAnywhere](https://codeanywhere.com), [GitHub](https://github.com) and [GitLab](https://gitlab.com) go a long way to simplifying tool choice (although you still have to choose one of those).   [AWS](https://aws.amazon.com) has a "menu" of services for you to choose from (although this too is bewildering).  Ultimately, curators are running to stand still, facing huge [Red-Queen Risk](../risks/Scarcity-Risk.md#red-queen-risk).   Their efforts to consolidate and simplify the landscape can't possibly keep up with the pace of evolution in the space they are working in.  
+There are various efforts to create out-of-the-box solutions:
+
+- Things like [CodeAnywhere](https://codeanywhere.com), [GitHub](https://github.com) and [GitLab](https://gitlab.com) go a long way to simplifying tool choice (although you still have to choose one of those).   
+- [AWS](https://aws.amazon.com) has a "menu" of services for you to choose from (although this too is bewildering).  
+
+Ultimately, curators are running to stand still, facing huge [Red-Queen Risk](../risks/Scarcity-Risk.md#red-queen-risk).   Their efforts to consolidate and simplify the landscape can't possibly keep up with the pace of evolution in the space they are working in.  
 
 ## Potential Solution #5: AI
 
-The days of human software development are probably coming to an end.   The job has changed from "building things from scratch" to "exploring, evaluating and combining pre-built components".   Since there are so many different component options, there is an n-squared problem of connecting them all up, so this work is only increasing.  
+The days of human software development are probably coming to an end:  the job has already changed from "building things from scratch" to "exploring, evaluating and combining pre-built components".   Since there are so many different component options, there is an n-squared problem of connecting them all up, so this work is only increasing with time.
 
 Similarly, the job of exploring and evaluating is getting harder all the time, as the landscape grows.
 
