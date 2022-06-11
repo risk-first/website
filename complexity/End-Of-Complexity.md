@@ -13,7 +13,7 @@ order: 6
 
 # The End of Complexity
 
-To start with, a computer ran a program.  There was a one-to-one correspondence.  Then, people got clever, and realised they could get lots of programs running on the same machine. Lately though it's all been about creating one program to run on lots of machines.  And, not just machines of the same type:  whatever machines you want!  And whatever programs you want.  
+KubeCon (2022): To start with, a computer ran a program.  There was a one-to-one correspondence.  Then, people got clever, and realised they could get lots of programs running on the same machine. Lately though it's all been about creating one program to run on lots of machines.  And, not just machines of the same type:  whatever machines you want!  And whatever programs you want.  
 
 The problem with this is that it is more complex.  Over time, software _always_ gets more complex, because it's always trying to adapt and [model human needs better and better](../estimating/Fractals.md#continuous-refinement).  
 
@@ -21,7 +21,7 @@ The problem with this is that it is more complex.  Over time, software _always_ 
 
 I call this the Broccoli Problem.  
 
-This complexity was on display at KubeCon (2022).  The size of the k8s ecosystem is staggering.  There was no way to figure out all the different offerings, or understand what worked with what else.  I barely scratched the surface.  Now, a lot of this is down to money.  There is plenty of money in software right now and this is why we see so much variety.  Most of the smaller firms are lottery tickets.  
+This complexity was on display at KubeCon.  The size of the k8s ecosystem is staggering.  There was no way to figure out all the different offerings, or understand what worked with what else.  I barely scratched the surface.  Now, a lot of this is down to money.  There is plenty of money in software right now and this is why we see so much variety.  Most of the smaller firms are lottery tickets.  
 
 ## Potential Solution #1:  Play-books
 
