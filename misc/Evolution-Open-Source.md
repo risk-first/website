@@ -36,15 +36,23 @@ Software is to some extent a living thing.
 
 Software cannot stay useful without effort:  it _has_ to change and adapt to the world around it.  This is a type of evolution, where the agent of evolution is _developer time and skill_.  The most successful software is able to attract large numbers of developers and evolve faster.  Worse software eventually becomes abandoned and dies.   
 
+There are two main reasons developers will improve some software - we'll call these "Feedback Loop A" and "Feedback Loop B".  
+
+### Feedback Loop A: Capitalism
+
 ![Proprietary Feedback Loop](/images/generated/misc/proprietary-feedback-loop.png)
 
-There are two main reasons developers will improve some software:  either they are paid to do it or they want to benefit from the improvements themselves.  Proprietary software tends to fall into the first category (the money has to come from somewhere).  
+In Feedback Loop A, developers are  paid to improve software, and _money_ is used as the signalling system to get them to do this.  Proprietary software tends to fall into the first category (the money has to come from somewhere).  
 
 This is shown in the above diagram.  When you're building proprietary software, you want to create a feedback loop wherein the software _grows_ and _evolves_.  More customers, more functionality, more developers, more money.  Or, if not that - at least something _self sustaining_.
 
+### Feedback Loop B:  Value
+
 ![open-source Feedback Loop](/images/generated/misc/open-source-feedback-loop.png)
 
-Open-source usually falls into the second category - the developers are benefiting from the improvements they make... and so does everyone else.
+In Feedback Loop B, developers improve the software because they benefit from the improvements _themselves_... and so does everyone else.
+
+Open-source usually falls into the second category.  This is shown in the above diagram:  as a piece of Open-Source software becomes more popular, it generates more value, but also picks up more issues.  Developers rally to fix those issues and the functionality increases.   More functionality, more developers, more value.
 
 But this is a dilemma because it seems you can't have it both ways:  you have to pick one.   If you want to sell your code (whether as a SaaS or with licenses) then it's dangerous to open-source it, since another company could come along and copy your business model.  
 
