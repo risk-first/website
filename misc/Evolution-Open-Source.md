@@ -46,7 +46,7 @@ In Feedback Loop A, developers are  paid to improve software, and _money_ is use
 
 This is shown in the above diagram.  When you're building proprietary software, you want to create a feedback loop wherein the software _grows_ and _evolves_.  More customers, more functionality, more developers, more money.  Or, if not that - at least something _self sustaining_.
 
-### Feedback Loop B:  Value
+### Feedback Loop B: Shared Value
 
 ![open-source Feedback Loop](../images/generated/misc/open-source-feedback-loop.png)
 
