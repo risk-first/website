@@ -22,7 +22,7 @@ Television and film are following the same way, as is commercial software, as ev
 
 ## Rug Pull
 
-![Open vs Proprietary](/images/misc/lego-open-proprietary.jpg)
+![Open vs Proprietary](../images/misc/lego-open-proprietary.jpg)
 
 But customers of commercial software have become wise to the proprietary equivalent of the [rug-pull](https://en.wiktionary.org/wiki/rug-pull), or "doing an Oracle":  woo the customer, make them depend on you, then milk the relationship for all it's worth.   
 
@@ -40,7 +40,7 @@ There are two main reasons developers will improve some software - we'll call th
 
 ### Feedback Loop A: Capitalism
 
-![Proprietary Feedback Loop](/images/generated/misc/proprietary-feedback-loop.png)
+![Proprietary Feedback Loop](../images/generated/misc/proprietary-feedback-loop.png)
 
 In Feedback Loop A, developers are  paid to improve software, and _money_ is used as the signalling system to get them to do this.  Proprietary software tends to fall into the first category (the money has to come from somewhere).  
 
@@ -48,7 +48,7 @@ This is shown in the above diagram.  When you're building proprietary software, 
 
 ### Feedback Loop B:  Value
 
-![open-source Feedback Loop](/images/generated/misc/open-source-feedback-loop.png)
+![open-source Feedback Loop](../images/generated/misc/open-source-feedback-loop.png)
 
 In Feedback Loop B, developers improve the software because they benefit from the improvements _themselves_... and so does everyone else.
 
@@ -66,7 +66,7 @@ The solution to the above dilemma is to introduce the aggregator.
 
 Just as aggregators like Spotify showed how to defeat the issue of music piracy and re-establish a feedback loop in the music industry, we need aggregators for open-source too.  Software Foundations are well-placed to fill this role.
 
-![Combined Feedback Loop](/images/generated/misc/combined-feedback-loop.png)
+![Combined Feedback Loop](../images/generated/misc/combined-feedback-loop.png)
 
 As shown in the above diagram, foundations need to step into this role and make sure they provide commercial funding and development to important open-source projects.  _Both_ feedback loops are at work here: developers can improve the open-source software via pull-requests just as before.  But, there is also the feedback loop of financial backing to ensure software stays up-to-date.  
 
