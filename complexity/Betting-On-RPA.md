@@ -1,6 +1,6 @@
 ---
 title: Betting On RPA
-description: Looking at varieties of RPA as an escape from Information Sytsem incompatibility.
+description: Looking at varieties of RPA as an escape from Information System incompatibility.
 url: https://riskfirst.org/complexity/Betting-On-RPA
 date: 2020-08-10 16:32:03 +0000
 featured: 
