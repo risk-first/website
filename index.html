@@ -27,6 +27,14 @@ featured:
 	
 	    </div>
 	</section>
+	<div class="row listrecent">
+	    {% assign sorted_pages = site.pages | sort:"order" %}
+		{% for post in sorted_pages %}
+	      	{% for pc in post.categories %}
+	      		{% if pc == 'Front' %}
+	    	
+	
+	    </div>
 
   <!-- Most Loved -->
   
