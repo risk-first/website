@@ -1,0 +1,150 @@
+<diagram xslt:template="/github/kite9-org/kite9/templates/risk-first/risk-first-template.xsl"
+  xmlns="http://www.kite9.org/schema/adl" 
+  xmlns:xslt="http://www.kite9.org/schema/xslt" 
+  name="Pattern Language"
+  id="The Diagram" 
+  style="--kite9-layout: down; --kite9-padding: 0;">
+
+  <table class="invisible" style="--kite9-grid-size: 2 10; --kite9-margin: 0; --kite9-padding: 0">
+    <cell style="--kite9-occupies: 0 0; " class="shaded">
+      <risk class="coordination" id="coordination">Coordination Risk</risk>
+    </cell>
+    <cell style="--kite9-occupies: 0 1;  ">
+      <risk class="feature" id="feature">Feature Risk</risk>
+    </cell>
+    <cell style="--kite9-occupies: 0 2; " class="shaded">
+      <risk class="map-and-territory" id="map-and-territory">Map and Territory
+        Risk
+      </risk>
+    </cell>
+    <cell style="--kite9-occupies: 0 3; " class="shaded">
+      <risk class="communication" id="communication">Communication Risk</risk>
+    </cell>
+    <cell style="--kite9-occupies: 0 4; ">
+      <risk class="agency" id="agency">Agency Risk</risk>
+    </cell>
+    <cell style="--kite9-occupies: 0 5; " class="shaded">
+      <risk class="complexity" id="complexity">Complexity Risk</risk>
+    </cell>
+    <cell style="--kite9-occupies: 0 6; " class="shaded">
+      <risk class="boundary" id="boundary">Boundary Risk</risk>
+    </cell>
+    <cell style="--kite9-occupies: 0 7; --kite9-layout: down; ">
+      <risk class="dependency" id="dependency">Dependency Risk</risk>
+      <risk class="operational" id="operational">Operational Risk</risk>
+    </cell>
+
+    <cell style="--kite9-occupies: 1 1 0 1; --kite9-layout: right; ">
+      <container style="--kite9-layout: down; --kite9-sizing: maximize;">
+        <group style="--kite9-layout: right; ">
+          <risk class="feature-fit" id="feature-fit">Feature Fit Risk</risk>
+          <risk class="implementation" id="implementation">Implementation Risk</risk>
+        </group>
+        <risk class="conceptual-integrity" id="conceptual-integrity">Conceptual
+          Integrity Risk
+        </risk>
+        <label>
+        Fit
+        </label>
+      </container>
+
+      <container style="--kite9-layout: down; --kite9-sizing: maximize; ">
+        <risk class="market" id="market">Market Risk</risk>
+        <risk class="feature-access" id="feature-access">Feature Access Risk</risk>
+
+        <label>
+          Audience
+        </label>
+      </container>
+
+
+      <container style="--kite9-layout: down; --kite9-sizing: maximize; ">
+        <risk class="regression" id="regression">Regression Risk</risk>
+        <risk class="feature-drift" id="feature-drift">Feature Drift Risk</risk>
+
+        <label>
+          Evolution
+          
+        </label>
+      </container>
+    </cell>
+
+
+    <cell style="--kite9-occupies: 1 1 2 3; " class="shaded">
+      <group style="--kite9-layout: right; ">
+        <container layout="down">
+          <risk class="internal-model" id="internal-model">Internal Model Risk</risk>
+          <risk class="learning-curve" id="learning-curve">Learning Curve Risk</risk>
+          <label>
+            Internal Model
+          </label>
+        </container>
+
+        <container layout="down" style="--kite9-sizing: maximize; ">
+          <risk class="message" id="message">Message Risk</risk>
+          <risk class="invisibility" id="invisibility">Invisibility Risk</risk>
+          <label>
+            Message
+          </label>
+        </container>
+
+        <container layout="down" style="--kite9-sizing: maximize; ">
+          <risk class="protocol" id="protocol">Protocol Risk</risk>
+          <label>
+            Protocol
+          </label>
+        </container>
+        <container layout="down" style="--kite9-sizing: maximize; ">
+
+          <risk class="channel" id="channel">Channel Risk</risk>
+
+          <label>
+            Channel
+          </label>
+
+        </container>
+      </group>
+
+    </cell>
+
+    <cell style="--kite9-occupies: 1 1 4 4">
+      <risk class="trust" id="trust">
+        Trust Risk
+      </risk>
+      <risk class="security" id="security">Security Risk</risk>
+    </cell>
+
+    <cell style="--kite9-occupies: 1 1 5 5; --kite9-layout: right; " class="shaded">
+      <risk class="codebase" id="codebase">Codebase Risk</risk>
+      <risk class="dead-end" id="dead-end">Dead-End Risk</risk>
+    </cell>
+
+
+    <cell style="--kite9-occupies: 1 1 6 7; --kite9-layout: right; ">
+      <container style="--kite9-layout: right; --kite9-sizing: maximize;  ">
+        <group style="--kite9-layout: down; ">
+          <risk class="scarcity" id="scarcity">Scarcity Risk</risk>
+          <risk class="funding" id="funding">Funding Risk</risk>
+          <risk class="staff" id="staff">Staff Risk</risk>
+        </group>
+        <group style="--kite9-layout: down; ">
+          <risk class="opportunity" id="opportunity">Opportunity Risk</risk>
+          <risk class="schedule" id="schedule">Schedule Risk</risk>
+          <risk class="red-queen" id="red-queen">Red Queen Risk</risk>
+        </group>
+        <label>Scarcity </label>
+      </container>
+
+      <group style="--kite9-layout: down; ">
+        <risk class="deadline" id-="deadline">Deadline Risk</risk>
+        <risk class="reliability" id="reliability">Reliability Risk</risk>
+      </group>
+      <group style="--kite9-layout: down; ">
+        <risk class="software-dependency" id="software-dependency">Software Dependency Risk
+        </risk>
+        <risk class="process" id="process">Process Risk</risk>
+      </group>
+    </cell>
+
+  </table>
+</diagram>

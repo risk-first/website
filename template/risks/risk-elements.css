@@ -1,0 +1,46 @@
+
+/* Risks */
+
+[k9-elem=mitigated] {
+	--kite9-min-size: 120pt 160pt;
+}
+
+
+[k9-elem=hidden] {
+	--kite9-min-size: 120pt 160pt;
+}
+
+[k9-elem=risk] {
+	--kite9-connection-align: 50%;
+	--kite9-layout: down;
+	--kite9-margin: 10pt;
+	--kite9-link-inset: 10pt;
+	--kite9-link-gutter: 10pt;
+	--kite9-padding: 10pt;
+	--kite9-min-size: 120pt 160pt;
+}
+
+
+[k9-elem=title][k9-format=text-fixed] {
+  --kite9-horizontal-align: center;
+  --kite9-vertical-align: bottom;
+  --kite9-sizing: minimize;
+  --kite9-type: text;
+  --kite9-text-bounds-width: 110pt;
+  --kite9-padding: 0pt;
+}
+
+
+[k9-elem=code][k9-format=text-fixed] {
+	--kite9-horizontal-align: center;
+	--kite9-vertical-align: top;
+	--kite9-sizing: minimize;
+	--kite9-padding: 0pt;
+	--kite9-margin: 0pt;
+	--kite9-margin-bottom: 15pt;
+}
+
+[k9-elem=risk] > [k9-format=image] {
+	--kite9-vertical-align: top;
+	--kite9-horizontal-align: center;
+}

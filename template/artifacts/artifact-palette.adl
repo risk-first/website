@@ -1,0 +1,77 @@
+<diagram xslt:template="/github/kite9-org/kite9/templates/risk-first/risk-first-template.xsl"
+         xmlns="http://www.kite9.org/schema/adl"
+         xmlns:xslt="http://www.kite9.org/schema/xslt" 
+         name="Pattern Language"
+		     id="The Diagram" 
+         style="--kite9-layout: down; --kite9-padding: 0;">
+
+		<table class="invisible"
+			style="--kite9-grid-size: 4 4; --kite9-margin: 0; --kite9-padding: 0">
+			<cell style="--kite9-occupies: 0 0; ">
+				<agent-artifact id="agent">Agent</agent-artifact>
+			</cell>
+			<cell style="--kite9-occupies: 1 0;  ">
+				<users id="users">Users</users>
+			</cell>
+			<cell style="--kite9-occupies: 2 0; ">
+				<interface id="interface">Interface</interface>
+			</cell>
+			<cell style="--kite9-occupies: 3 0; ">
+				<internal-model-artifact id="ima">Internal Model
+				</internal-model-artifact>
+			</cell>
+
+			<cell style="--kite9-occupies: 0 1; ">
+				<channel-artifact id="channel">Channel</channel-artifact>
+			</cell>
+			<cell style="--kite9-occupies: 1 1;  ">
+				<component id="component">Some component</component>
+			</cell>
+			<cell style="--kite9-occupies: 2 1; ">
+				<risk id="attendant" class="generic"
+					href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/attendant_risk_v2.svg">
+					<code id="att_1">Attendant</code>
+					<title id="att_2">Some Risk</title>
+				</risk>
+			</cell>
+			<cell style="--kite9-occupies: 2 1; ">
+				<arrow id="arrow">Link Body</arrow>
+			</cell>
+
+			<cell style="--kite9-occupies: 0 2; ">
+				<action id="praco">Practice</action>
+			</cell>
+			<cell style="--kite9-occupies: 1 2; ">
+				<action id="praco2" class="left">Practice</action>
+			</cell>
+			<cell style="--kite9-occupies: 2 2; ">
+				<generic-artifact id="ga" href="/github/kite9-org/kite9/templates/risk-first/redesign/artifacts/document_v2.svg">
+          Artifact
+				</generic-artifact>
+			</cell>
+			<cell style="--kite9-occupies: 3 2; ">
+				<container id="dottybox" class="dotted"
+					style="--kite9-min-size: 60pt 60pt">
+
+				</container>
+			</cell>
+			<cell style="--kite9-occupies: 0 3; ">
+				<group id="g1">
+					<description id="description">Description</description>
+				</group>
+			</cell>
+			<cell style="--kite9-occupies: 1 3; ">
+				<mitigated id="mitigated"></mitigated>
+			</cell>
+			<cell style="--kite9-occupies: 2 3; ">
+				<hidden id="hidden"></hidden>
+			</cell>
+			<cell style="--kite9-occupies: 3 3; ">
+				<risk id="goal" class="generic"
+					href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/goal_v2.svg">
+					<code id="goal_c">Goal</code>
+					<title id="goal_t">Some Goal</title>
+				</risk>
+			</cell>
+		</table>
+</diagram>

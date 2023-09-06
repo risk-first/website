@@ -1,0 +1,285 @@
+<diagram 
+  xslt:template="/github/kite9-org/kite9/templates/risk-first/risk-first-template.xsl"
+         xmlns="http://www.kite9.org/schema/adl"
+         xmlns:xslt="http://www.kite9.org/schema/xslt" 
+         k9-ui="label"
+
+		id="The Diagram" style="--kite9-layout: down; --kite9-padding: 0;">
+
+		<table class="invisible"
+			style="--kite9-grid-size: 2 10; --kite9-margin: 0; --kite9-padding: 0">
+			<cell style="--kite9-occupies: 0 0; " class="shaded">
+				<risk id="coordination" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/coordination_risk_v2.svg">
+					<code id="s">Cr</code>
+					<title id="s">Coordination Risk</title>
+				</risk>
+			</cell>
+			<cell style="--kite9-occupies: 0 1;  ">
+				<risk id="feature" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/feature_risk_v2.svg">
+					<code id="code">F</code>
+					<title id="title">Feature Risk</title>
+				</risk>
+			</cell>
+			<cell style="--kite9-occupies: 0 2; " class="shaded">
+				<risk id="map-and-territory" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/map_and_territory_risk_v2.svg">
+					<code id="code">MT</code>
+					<title id="title">Map And Territory Risk</title>
+				</risk>
+			</cell>
+			<cell style="--kite9-occupies: 0 3; " class="shaded">
+				<risk id="communication" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/communication_risk_v2.svg">
+					<code id="code">Co</code>
+					<title id="title">Communication Risk</title>
+				</risk>
+			</cell>
+			<cell style="--kite9-occupies: 0 4; ">
+				<risk id="agency" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/agency_risk_v2.svg">
+					<code id="code">A</code>
+					<title id="title">Agency Risk</title>
+				</risk>
+			</cell>
+			<cell style="--kite9-occupies: 0 5; " class="shaded">
+				<risk id="complexity" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/complexity_risk_v2.svg">
+					<code id="code">Cx</code>
+					<title id="title">Complexity Risk</title>
+				</risk>
+			</cell>
+			<cell style="--kite9-occupies: 0 6; " class="shaded">
+				<risk id="boundary" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/boundary_risk_v2.svg">
+					<code id="code">B</code>
+					<title id="title">Boundary Risk</title>
+				</risk>
+			</cell>
+			<cell style="--kite9-occupies: 0 7; --kite9-layout: down; ">
+				<risk id="dependency" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/dependency_risk_v2.svg">
+					<code id="code">D</code>
+					<title id="title">Dependency Risk</title>
+				</risk>
+				<risk id="operational" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/operational_risk_v2.svg">
+					<code id="code">Op</code>
+					<title id="title">Operational Risk</title>
+				</risk>
+			</cell>
+
+			<cell style="--kite9-occupies: 1 1 0 1; --kite9-layout: right; ">
+				<container
+					style="--kite9-layout: down; --kite9-sizing: maximize;">
+					<group style="--kite9-layout: right; ">
+						<risk id="feature-fit" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/feature_fit_risk_v2.svg">
+							<code id="code">F-F</code>
+							<title id="title">Feature Fit Risk</title>
+						</risk>
+						<risk id="implementation" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/feature_implementation_risk_v2.svg">
+							<code id="code">F-Im</code>
+							<title id="title">Implementation Risk</title>
+						</risk>
+					</group>
+					<risk id="conceptual-integrity" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/conceptual_integrity_risk_v2.svg">
+						<code id="code">F-Ci</code>
+						<title id="title">Conceptual Integrity Risk</title>
+					</risk>
+					<label>
+						Fit
+						
+					</label>
+				</container>
+
+				<container
+					style="--kite9-layout: down; --kite9-sizing: maximize; ">
+					<risk id="market" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/feature_market_risk_v2.svg">
+					  <code id="code">F-Ma</code>
+            <title id="title">Market Risk</title>
+					</risk>
+					<risk id="feature-access" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/feature_access_risk_v2.svg">
+						<code id="code">F-A</code>
+						<title id="title">Feature Access Risk</title>
+					</risk>
+
+					<label>
+						Audience
+					</label>
+				</container>
+
+
+				<container
+					style="--kite9-layout: down; --kite9-sizing: maximize; ">
+					<risk id="regression" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/feature_regression_risk_v2.svg">
+						<code id="code">F-R</code>
+						<title id="title">Regression Risk</title>
+					</risk>
+					<risk id="feature-drift" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/feature_drift_risk_v2.svg">
+						<code id="code">F-D</code>
+						<title id="title">Feature Drift Risk</title>
+					</risk>
+
+					<label>
+						Evolution
+						
+					</label>
+				</container>
+			</cell>
+
+
+			<cell style="--kite9-occupies: 1 1 2 3; " class="shaded">
+				<group style="--kite9-layout: right; ">
+					<container layout="down">
+						<risk id="internal-model" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/internal_model_risk_v2.svg">
+							<code id="code">Im</code>
+							<title id="title">Internal Model Risk</title>
+
+						</risk>
+						<risk id="learning-curve" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/learning_curve_risk_v2.svg">
+							<code id="code">Lc</code>
+							<title id="title">Learning Curve Risk</title>
+
+						</risk>
+						<label>
+							Internal Model
+							
+						</label>
+					</container>
+
+					<container layout="down" style="--kite9-sizing: maximize; ">
+						<risk id="message" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/message_risk_v2.svg">
+							<code id="code">M</code>
+							<title id="title">Message Risk</title>
+
+						</risk>
+						<risk id="invisibility" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/invisibility_risk_v2.svg">
+							<code id="code">I</code>
+							<title id="title">Invisibility Risk</title>
+
+						</risk>
+						<label>
+							Message
+							
+						</label>
+					</container>
+
+					<container layout="down" style="--kite9-sizing: maximize; ">
+						<risk id="protocol" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/protocol_risk_v2.svg">
+							<code id="code">Pr</code>
+							<title id="title">Protocol Risk</title>
+
+						</risk>
+						<label>
+							Protocol
+							
+						</label>
+					</container>
+					<container layout="down" style="--kite9-sizing: maximize; ">
+
+						<risk id="channel" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/channel_risk_v2.svg">
+							<code id="code">Ch</code>
+							<title id="title">Channel Risk</title>
+
+						</risk>
+
+						<label>
+							Channel
+							
+						</label>
+
+					</container>
+				</group>
+
+			</cell>
+
+			<cell style="--kite9-occupies: 1 1 4 4">
+				<risk id="trust" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/trust_belief_risk_v2.svg">
+					<code id="code">T</code>
+					<title id="title">Trust &amp; Belief Risk</title>
+				</risk>
+				<risk id="security" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/security_risk_v2.svg">
+					<code id="code">S</code>
+					<title id="title">Security Risk</title>
+
+				</risk>
+			</cell>
+
+			<cell style="--kite9-occupies: 1 1 5 5; --kite9-layout: right; "
+				class="shaded">
+				<risk id="codebase" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/codebase_risk_v2.svg">
+					<code id="code">Cb</code>
+					<title id="title">Codebase Risk</title>
+
+				</risk>
+				<risk id="dead-end" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/dead_end_risk_v2.svg">
+					<code id="code">De</code>
+					<title id="title">Dead-End Risk</title>
+
+				</risk>
+			</cell>
+
+
+			<cell style="--kite9-occupies: 1 1 6 7; --kite9-layout: right; ">
+				<container
+					style="--kite9-layout: right; --kite9-sizing: maximize;  ">
+					<group style="--kite9-layout: down; ">
+						<risk id="scarcity" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/dependency_scarcity_risk_v2.svg">
+							<code id="code">D-Sc</code>
+							<title id="title">Scarcity Risk</title>
+
+						</risk>
+						<risk id="funding" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/dependency_funding_risk_v2.svg">
+							<code id="code">D-Fu</code>
+							<title id="title">Funding Risk</title>
+
+						</risk>
+						<risk id="staff" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/staff_risk_v2.svg">
+							<code id="code">D-St</code>
+							<title id="title">Staff Risk</title>
+
+						</risk>
+					</group>
+					<group style="--kite9-layout: down; ">
+						<risk id="opportunity" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/dependency_opportunity_risk_v2.svg">
+							<code id="code">D-Opp</code>
+							<title id="title">Opportunity Risk</title>
+
+						</risk>
+						<risk id="schedule" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/dependency_schedule_risk_v2.svg">
+							<code id="code">D-Sh</code>
+							<title id="title">Schedule Risk</title>
+
+						</risk>
+						<risk id="red-queen" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/dependency_red_queen_risk_v2.svg">
+							<code id="code">D-Rq</code>
+							<title id="title">Red Queen Risk</title>
+
+						</risk>
+					</group>
+					<label>
+						Scarcity
+						
+					</label>
+				</container>
+
+				<group style="--kite9-layout: down; ">
+					<risk id="deadline" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/dependency_deadline_risk_v2.svg">
+						<code id="code">D-Dl</code>
+						<title id="title">Deadline Risk</title>
+
+					</risk>
+					<risk id="reliability" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/dependency_reliability_risk_v2.svg">
+						<code id="code">D-R</code>
+						<title id="title">Reliability Risk</title>
+
+					</risk>
+				</group>
+				<group style="--kite9-layout: down; ">
+					<risk id="software-dependency" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/dependency_software_risk_v2.svg">
+						<code id="code">D-Sw</code>
+						<title id="title">Software Dependency Risk</title>
+
+					</risk>
+					<risk id="process" href="/github/kite9-org/kite9/templates/risk-first/redesign/risks/dependency_process_risk_v2.svg">
+						<code id="code">D-Pr</code>
+						<title id="title">Process Risk</title>
+
+					</risk>
+				</group>
+			</cell>
+
+		</table>
+	</diagram>

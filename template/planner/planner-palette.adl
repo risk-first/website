@@ -1,0 +1,30 @@
+<diagram 
+  xslt:template="/github/kite9-org/kite9/templates/risk-first/risk-first-template.xsl"
+  xmlns:xslt="http://www.kite9.org/schema/xslt" 
+  xmlns="http://www.kite9.org/schema/adl"
+  xmlns:svg='http://www.w3.org/2000/svg'
+  id="p">
+
+  <svg:defs>
+    <svg:style type="text/css">
+      [k9-elem=planner-cell] {
+        --kite9-min-size: 500pt 70pt;
+      }
+    </svg:style>
+
+  </svg:defs>
+
+
+  <label id="title" style="--kite9-direction: top; --kite9-horizontal-align: center; " class="title">Risk-First Planner</label>
+
+  <planner style="--kite9-grid-size: 1 10; " id="parent">
+    <planner-cell id="cell"/>
+    <planner-cell id="pc4"/>
+    <planner-cell id="pc5"/>
+    <planner-cell id="pc6"/>
+    <planner-cell id="pc7"/>
+
+  </planner>
+  
+  <label id="footer" style="--kite9-direction: bottom; ">Problems with feature X</label>
+</diagram>

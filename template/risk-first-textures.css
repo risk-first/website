@@ -1,0 +1,128 @@
+@import url('/github/kite9-org/kite9/templates/basic/basic-textures.css');
+@import url('/github/kite9-org/kite9/templates/votes/votes-textures.css');
+
+[k9-elem=diagram][k9-texture=none] {
+	fill: white;
+	fill-opacity: 1;
+}
+
+[k9-texture] {
+	font-family: metropolis;
+	font-size: 12pt;
+}
+
+/* Artifacts */
+
+[k9-texture=artifact] {
+	fill: white;
+	fill-opacity: 0.01;
+	stroke: none;
+}
+
+[k9-texture=artifact] text {
+  font-size: 12pt;
+  font-weight: 200;
+  fill: black;
+  text-align: middle;
+  --kite9-text-bounds-width: 100pt;
+}
+
+[k9-elem=description] text {
+  font-style: italic;
+  font-size: 12pt;
+  font-weight: 200;
+  --kite9-direction: right;
+}
+
+/* Labels */
+
+[k9-elem=label-inner] > g > [k9-elem=caption] {
+	--kite9-padding: 0;
+}
+
+[k9-elem=label-inner] {
+	stroke: none;
+	font-size: 12pt;
+}
+
+[k9-elem=caption] text {
+	text-align: middle;
+}
+
+/* Arrow, Links */
+
+[k9-elem=arrow]  {
+  fill: black;  
+  fill-opacity: 1; 
+}
+
+[k9-elem=arrow] > g > [k9-elem=caption] > text {
+  fill: white;
+  fill-opacity: 1; 
+}
+
+[k9-elem=from],
+[k9-elem=to] {
+  --kite9-marker-reserve: 8pt;
+}
+
+[k9-elem=link] {
+  --kite9-link-minimum-length: 30pt;
+}
+
+/* Actions, Glyphs */
+[k9-elem=glyph][k9-texture=background] > g > rect,
+[k9-elem=action] [k9-texture=background] {
+   fill: url(#risk-background);
+   stroke: black; 
+}
+
+[k9-elem=action] > g > [k9-elem=caption] > g > text {
+  fill-opacity: 1; 
+  font-size: 12pt;
+  font-weight: 200;
+  fill: black;
+  text-align: middle;
+}
+
+
+/* Risks */
+[k9-elem=hidden],
+[k9-elem=mitigated] {
+	fill: white;
+}
+
+[k9-elem=title] {
+  font-size: 12pt;
+  font-weight: 200;
+  fill: black;
+  text-align: middle;
+}
+
+[k9-elem=code] {
+	font-size: 22pt;
+	font-weight: 300;
+	fill: black;
+	text-align: middle;
+}
+
+[k9-elem=risk][k9-texture=background],
+[k9-elem=block][k9-texture=background] {
+   fill: url(#risk-background);
+   stroke: black; 
+}
+
+/* Containers */
+
+[k9-elem=container][k9-texture=background] {
+	fill-opacity: 0.01;	
+}
+
+/* Planner */
+
+[k9-elem=planner-cell],
+[k9-elem=planner-header] {
+  stroke: #aeaeae;
+  stroke-width: 1pt;
+}
+

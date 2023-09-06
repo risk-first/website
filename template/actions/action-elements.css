@@ -1,0 +1,33 @@
+/* Actions */
+
+[k9-elem=action] {
+	--kite9-sizing: minimize;
+	--kite9-margin: 10pt;
+	--kite9-padding: 12pt;
+	--kite9-padding-right: 22pt;
+}
+
+[k9-elem=action].left {
+  --kite9-padding-left: 22pt;
+  --kite9-padding-right: 12pt;
+}
+
+[k9-elem=glyph] > g > [k9-elem=caption],
+[k9-elem=action] > g > [k9-elem=caption] {
+	--kite9-margin: 0pt;	
+	--kite9-padding: 0pt;
+}
+
+[k9-elem=glyph] {
+  --kite9-layout: down;
+  --kite9-padding-top: 6pt;
+  --kite9-padding-right: 10pt;
+  --kite9-padding-bottom: 6pt;
+  --kite9-padding-left: 10pt;
+
+  --kite9-margin-top: 10pt;
+  --kite9-margin-right: 10pt;
+  --kite9-margin-left: 10pt;
+  --kite9-margin-bottom: 10pt;
+  --kite9-connection-align: 50%;
+}

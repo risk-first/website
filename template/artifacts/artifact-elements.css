@@ -1,0 +1,52 @@
+/* Artifacts */
+
+[k9-elem=artifact], 
+[k9-elem=document],
+[k9-elem=users],
+[k9-elem=computer], 
+[k9-elem=interface],
+[k9-elem=component],
+[k9-elem=channel-artifact],
+[k9-elem=internal-model-artifact],
+[k9-elem=protocol-artifact],
+[k9-elem=agent-artifact],
+[k9-elem=image-artifact],
+[k9-elem=generic-artifact] {
+	--kite9-margin: 10pt;
+	--kite9-link-inset: 10pt;
+	--kite9-link-gutter: 10pt;
+	--kite9-layout: vertical;
+	--kite9-padding: 10pt;
+	--kite9-connection-align: 50%;
+	--kite9-min-size: 110pt 140pt;
+}
+
+
+[k9-elem=arrow],
+[k9-elem=block] {
+  --kite9-padding: 8pt 5pt 8pt 5pt;
+  --kite9-sizing: minimize;
+  --kite9-connections: separate;
+  --kite9-connection-align: 50%;
+  font-size: 14pt;
+  font-weight: 500;
+  --kite9-link-inset: 3pt;
+}
+
+[k9-elem=block] > g > [k9-elem=caption] {
+	--kite9-margin: 5pt;	
+	--kite9-padding: 5pt;
+}
+
+[k9-elem=arrow] > g > [k9-elem=caption] {
+	--kite9-margin: 0pt;	
+	--kite9-padding: 0pt;
+}
+
+
+[k9-elem=description] {
+  --kite9-padding: 10pt;
+  --kite9-usage: connected;
+  --kite9-text-bounds-width: 250pt;
+  --kite9-direction: down;
+}

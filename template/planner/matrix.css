@@ -1,0 +1,38 @@
+
+/* Risk Matrix */
+
+symbol {
+  --kite9-type: svg;
+  --kite9-margin: 0 2pt 0 2pt;
+  --kite9-sizing: minimize;
+  --kite9-link-inset: 0px;
+  --kite9-template: url(template.svg#symbol);
+}
+
+symbol.decal {
+  --kite9-usage: decal;
+  --kite9-transform: none;
+}
+
+box {
+  --kite9-type: container;
+  --kite9-template: url(template.svg#box);
+  --kite9-sizing: maximize;
+}
+
+keyitem {
+  --kite9-type: container;
+  --kite9-layout: right;
+}
+
+keyitem > * {
+  --kite9-vertical-align: center;
+}
+
+keydesc {
+  --kite9-type: container;
+  --kite9-template: url(template.svg#description);
+  font-size: 12pt;
+  font-family: "gothic";
+  --kite9-padding: 10pt;
+}

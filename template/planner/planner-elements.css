@@ -1,0 +1,21 @@
+[k9-elem=planner] {
+  --kite9-layout: grid;
+  --kite9-padding: 10pt;
+}
+
+[k9-elem=planner-cell],
+[k9-elem=planner-header]  {
+  --kite9-usage: regular;
+  --kite9-vertical-align: center;
+  --kite9-horizontal-align: center;
+  --kite9-sizing: minimize;
+  text-align: middle;
+  --kite9-min-size: 230pt 30pt;
+  --kite9-traversal: always;
+  --kite9-padding: 10pt;
+  --kite9-layout: right;
+}
+
+[k9-elem=planner-header] {
+	--kite9-min-size: 60pt 30pt;
+}

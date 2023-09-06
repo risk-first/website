@@ -1,0 +1,232 @@
+
+
+[k9-elem=celltext] {
+  --kite9-usage: regular;
+  --kite9-minimum-height: 250pt;
+  --kite9-padding: 10pt;
+  --kite9-vertical-align: center;
+  --kite9-horizontal-align: left;
+  --kite9-sizing: minimize;
+  font-size: 40pt;
+  fill: black;
+  font-family: "gothic";
+  stroke: none;
+  --kite9-text-bounds-width: 350pt;
+}
+
+[k9-elem=celltext].bold {
+	font-family: "gothic-bold";
+}
+
+[k9-elem=celltext].bottom {
+	--kite9-vertical-align: bottom;	
+}
+
+
+[k9-elem=celltext] [k9-elem=text-label] {
+  --kite9-horizontal-align: left;
+}
+
+[k9-elem=bulleted] {
+  --kite9-usage: regular;
+  --kite9-type: container;
+  --kite9-vertical-align: top;
+  --kite9-horizontal-align: left;
+  font-size: 40pt;
+  fill: black;
+  font-family: "gothic";
+  stroke: none;
+}
+
+[k9-elem=ctext] {
+  --kite9-usage: regular;
+  --kite9-vertical-align: top;
+  --kite9-horizontal-align: left;
+  font-size: 40pt;
+  fill: black;
+  font-family: "gothic";
+  stroke: none;
+  --kite9-type: text;
+}
+
+[k9-elem=btext] {
+  --kite9-usage: regular;
+  --kite9-vertical-align: top;
+  --kite9-horizontal-align: left;
+  font-size: 40pt;
+  fill: black;
+  font-family: "gothic-bold";
+  stroke: none;
+  --kite9-type: text;
+}
+
+[k9-elem=tick] {
+  --kite9-usage: regular;
+  --kite9-type:  container;
+}
+
+[k9-elem=table] [k9-elem=risk],
+[k9-elem=table] [k9-elem=tick] {
+  --kite9-horizontal-align: center;
+  --kite9-margin: 20pt;
+}
+
+[k9-elem=table] [k9-elem=celltext].bottom {
+  --kite9-vertical-align: bottom;
+}
+
+[k9-elem=table] [k9-elem=celltext].top {
+  --kite9-vertical-align: top;
+}
+
+/* Risk Descriptions */
+
+[k9-elem=description],
+[k9-elem=long-description],
+.description {
+  font-size: 14pt;
+  font-family: "gothic-italic";
+  font-style: italic;
+  --kite9-padding: 10pt;
+  --kite9-text-bounds-width: 250pt;
+}
+
+/* Steve McConnell Stuff */
+
+[k9-elem=leg] {
+  --kite9-type: container;
+  --kite9-layout: down;
+  --kite9-min-height: 110pt;
+  --kite9-min-width: 70pt;
+  --kite9-sizing: minimize;
+  --kite9-margin: 0px;
+  --kite9-vertical-align: bottom;
+}
+
+
+[k9-elem=plinth] {
+  --kite9-type: container;
+  --kite9-sizing: maximize;
+}
+
+/** Book Icon */
+
+[k9-elem=big-image] {
+  --kite9-margin: 10pt;
+  --kite9-link-inset: 10pt;
+  --kite9-link-gutter: 10pt;
+  --kite9-layout: vertical;
+  --kite9-padding: 10pt;
+  --kite9-connection-align: 50%;
+  --kite9-min-width: 110pt;
+  --kite9-min-height: 140pt;
+}
+
+
+[k9-elem=diagram].principle {
+	fill-opacity: 1; 
+	fill: white; 
+	--kite9-layout: vertical; 
+	--kite9-padding-left: 0pt; 
+	--kite9-padding-right: 0pt; 
+	--kite9-padding-top: 0pt; 
+	--kite9-padding-bottom: 0pt; 
+}
+
+[k9-elem=container].principle-top {
+	--kite9-layout: grid;
+	--kite9-grid-size: 2 2;
+	--kite9-padding: 0pt;
+	--kite9-margin: 0pt;
+	stroke: #f5f5f5;
+	stroke-width: 7pt;
+	--kite9-sizing: maximize;
+	--kite9-min-width: 1200px;
+	--kite9-min-height: 675px;
+}
+
+[k9-elem=group].principle-left-top {
+	--kite9-horizontal-sizing: minimize;
+	--kite9-vertical-sizing: minimize;
+	--kite9-layout: down;
+	--kite9-padding-top: 0;
+	--kite9-margin-top: 0pt;
+}
+
+[k9-elem=group].principle-right-top {
+	--kite9-horizontal-sizing: maximize;
+	--kite9-vertical-sizing: minimize;
+	--kite9-layout: down;
+	--kite9-padding: 0;
+	--kite9-margin: 0pt;
+	--kite9-padding-left: 30pt;
+}
+
+[k9-elem=group].principle-left-bottom {
+	--kite9-horizontal-sizing: minimize;
+	--kite9-vertical-sizing: maximize;
+	--kite9-layout: down;
+	--kite9-padding: 0;
+	--kite9-margin: 0pt;
+}
+
+[k9-elem=group].principle-right-bottom {
+	--kite9-horizontal-sizing: maximize;
+	--kite9-vertical-sizing: maximize;
+	--kite9-layout: down;
+	--kite9-padding: 0;
+	--kite9-margin: 0pt;
+	--kite9-padding-left: 30pt;
+}
+
+
+[k9-elem=risk-first-logo].principle {
+	--kite9-vertical-align: bottom;
+ 	--kite9-padding: 0;
+	--kite9-margin: 0; 
+	--kite9-margin-bottom: 0;
+}
+
+[k9-elem=page-title].principle-site {
+	font-family: Metropolis; 
+	font-size: 14pt; 
+	fill: #61a2a1; 
+	letter-spacing: 1.4;
+	font-weight: 600;
+	text-align: middle;
+	--kite9-margin-top: 0;
+}
+
+[k9-elem=page-title].number {
+	font-family: Metropolis; 
+	font-size: 60pt; 
+	fill: rgb(245, 62, 121); 
+	indent:0;   
+	font-weight: 600;
+    --kite9-padding-bottom: 0;
+    --kite9-margin-bottom: 0;
+}
+
+[k9-elem=page-title].principle {
+  font-family: Metropolis; 
+  font-size: 50pt; 
+  font-weight: 500;
+  fill: rgb(0,0,0); 
+  text-align: start;
+  --kite9-padding-bottom: 0;
+  --kite9-margin-bottom: 0;
+  --kite9-margin-right: 30pt;
+}
+
+
+[k9-elem=page-summary].principle {
+   font-family: Metropolis; 
+   font-size: 25pt;
+   --kite9-text-bounds-width: 600pt; 
+   --kite9-padding: 0pt;
+   fill: #61a2a1; 
+   indent: 0; 
+   text-align: middle;
+   font-weight: 300; 
+   font-style: italic; 
+}
