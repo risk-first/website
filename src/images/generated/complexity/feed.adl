@@ -1,50 +1,42 @@
-<?xml version="1.0"?>
-<diagram
-	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
-	xmlns="http://www.kite9.org/schema/adl"
-	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia">
-
-
-    <component id="id_1">
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram xmlns="http://www.kite9.org/schema/adl"
+         xmlns:xslt="http://www.kite9.org/schema/xslt"
+         id="dia"
+         xslt:template="/public/templates/risk-first/risk-first-template.xsl">
+   <component id="id_1">
       System A
     </component>
-    
-    <arrow id="id_2">
-      <label>feed</label>
+   <arrow id="id_2">
+      feed
     </arrow>
-    
-    <component id="id_3">
+   <component id="id_3">
 		System B
     </component>
-    
-    <arrow id="id_4">
-      <label>reconciliation</label>
+   <arrow id="id_4">
+     reconciliation
     </arrow>
-
-
-    <link id="id_11" shape="NORMAL" style="--kite9-direction: right; --kite9-link-minimum-length: 150pt;" >
-      <from reference="id_1" />
+   <link id="id_11"
+         shape="NORMAL"
+         style="--kite9-direction: right; --kite9-link-minimum-length: 150pt;">
+      <from reference="id_1"/>
       <to reference="id_2"/>
-    </link>
-
-    <link id="id_12" shape="NORMAL" style="--kite9-direction: right; --kite9-link-minimum-length: 150pt; ">
-      <from reference="id_2" />
-      <to reference="id_3" class="arrow" />
-    </link>
-
-    <link id="id_13" shape="NORMAL">
-      <from reference="id_1" />
-      <to reference="id_4" />
-    </link>
-
-    <link id="id_14" shape="NORMAL" style="">
-      <from reference="id_3" />
-      <to reference="id_4" class="arrow" />
-    </link>
-    
-    <link id="id_14" class="invisible" style="--kite9-direction: down;">
-      <from reference="id_2" />
-      <to reference="id_4" />
-    </link>
-
-  </diagram>
+   </link>
+   <link id="id_12"
+         shape="NORMAL"
+         style="--kite9-direction: right; --kite9-link-minimum-length: 150pt; ">
+      <from reference="id_2"/>
+      <to shape="arrow" reference="id_3"/>
+   </link>
+   <link id="id_13" shape="NORMAL">
+      <from reference="id_1"/>
+      <to reference="id_4"/>
+   </link>
+   <link id="id_14" shape="NORMAL" style="">
+      <from reference="id_3"/>
+      <to shape="arrow" reference="id_4"/>
+   </link>
+   <link class="invisible" id="id_14-zs" style="--kite9-direction: down;">
+      <from reference="id_2"/>
+      <to reference="id_4"/>
+   </link>
+</diagram>
