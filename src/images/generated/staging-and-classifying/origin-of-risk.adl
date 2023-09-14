@@ -21,54 +21,54 @@
     
     <link>
       <from reference="dependency" />
-      <to reference="feature" class="arrow" />
+      <to reference="feature" shape="arrow" />
     </link>
     
     <link>
       <from reference="dependency" />
-      <to reference="coordination" class="arrow" />
+      <to reference="coordination" shape="arrow" />
     </link>
 
     <link>
       <from reference="coordination" />
-      <to reference="communication" class="arrow" />
+      <to reference="communication" shape="arrow" />
     </link>
     
     <link>
       <from reference="coordination" />
-      <to reference="map-and-territory" class="arrow" />
+      <to reference="map-and-territory" shape="arrow" />
     </link>
     
     <link>
       <from reference="dependency" />
-      <to reference="map-and-territory" class="arrow" />
+      <to reference="map-and-territory" shape="arrow" />
     </link>
     
     
     <link>
       <from reference="communication" />
-      <to reference="complexity" class="arrow" />
+      <to reference="complexity" shape="arrow" />
     </link>
     
     <link>
       <from reference="coordination" />
-      <to reference="complexity" class="arrow" />
+      <to reference="complexity" shape="arrow" />
     </link>
 
    <link class="dotted">
       <from reference="communication" />
-      <to reference="boundary" class="arrow" />
+      <to reference="boundary" shape="arrow" />
     </link>
  
 
     <link class="dotted">
       <from reference="complexity" />
-      <to reference="boundary" class="arrow" />
+      <to reference="boundary" shape="arrow" />
     </link>  
     
     <link  class="dotted">
       <from reference="dependency" />
-      <to reference="boundary" class="arrow" />
+      <to reference="boundary" shape="arrow" />
     </link>   
   </diagram>
 </svg:svg>

@@ -17,29 +17,29 @@
          </label>
       </group>
       <users id="b">B</users>
-      <link drawDirection="RIGHT">
+      <link style="--kite9-direction: right;">
          <from reference="a"/>
-         <to class="arrow" reference="1"/>
+         <to shape="arrow" reference="1"/>
          <fromLabel>
             <text>writes X=1</text>
          </fromLabel>
       </link>
-      <link drawDirection="RIGHT">
-         <from class="arrow" reference="a"/>
+      <link style="--kite9-direction: right;">
+         <from shape="arrow" reference="a"/>
          <to reference="1"/>
          <toLabel>
             <text>acknowledges</text>
          </toLabel>
       </link>
-      <link drawDirection="LEFT">
+      <link style="--kite9-direction: left;">
          <from reference="b"/>
-         <to class="arrow" reference="2"/>
+         <to shape="arrow" reference="2"/>
          <fromLabel>
             <text>requests X</text>
          </fromLabel>
       </link>
-      <link drawDirection="LEFT">
-         <from class="arrow" reference="b"/>
+      <link style="--kite9-direction: left;">
+         <from shape="arrow" reference="b"/>
          <to reference="2"/>
          <toLabel>
             <text>returns 0</text>

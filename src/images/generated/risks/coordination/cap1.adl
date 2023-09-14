@@ -24,26 +24,26 @@
 
     <users id="b">B</users>
 
-  <link drawDirection="RIGHT">
+  <link style="--kite9-direction: right;">
     <from reference="a" />
-    <to reference="1" class="arrow"/>
+    <to reference="1" shape="arrow"/>
     <fromLabel><text>writes X=1</text></fromLabel>
   </link>
 
-  <link  drawDirection="RIGHT">
-    <from reference="a" class="arrow"/>
+  <link  style="--kite9-direction: right;">
+    <from reference="a" shape="arrow"/>
     <to reference="1" />
     <toLabel><text>acknowledges</text></toLabel>
   </link>
 
-  <link drawDirection="LEFT">
+  <link style="--kite9-direction: left;">
     <from reference="b" />
-    <to reference="2" class="arrow"/>
+    <to reference="2" shape="arrow"/>
     <fromLabel><text>requests X</text></fromLabel>
   </link>
 
- <link drawDirection="LEFT">
-    <from reference="b" class="arrow" />
+ <link style="--kite9-direction: left;">
+    <from reference="b" shape="arrow" />
     <to reference="2" />
     <toLabel><text>returns 1</text></toLabel>
   </link>

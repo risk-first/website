@@ -6,7 +6,7 @@
 	xmlns:xlink="http://www.w3.org/1999/xlink" id="diagram-113">
 
 	<container
-		style="">
+		>
 		<glyph id="0"
 			style="--kite9-sizing: minimize; --kite9-min-width: 200pt;">
 			Self, Immediate Family
@@ -38,7 +38,7 @@
 		<from reference="s" />
 		<to reference="0" shape="barbed-arrow"  />
 	</link>
-	<link drawDirection="LEFT">
+	<link style="--kite9-direction: left;">
 		<from reference="1" shape="barbed-arrow" />
 		<to reference="s" />
 	</link>
@@ -52,25 +52,25 @@
 		<from reference="h" />
 		<to reference="0"  />
 	</link>
- 	<link drawDirection="RIGHT">
+ 	<link style="--kite9-direction: right;">
 		<from reference="2"  shape="barbed-arrow" />
 		<to reference="h" />
 	</link> 
 
 
 	<!-- alignment -->
-	<link drawDirection="DOWN" class="invisible">
+	<link style="--kite9-direction: down;" class="invisible">
 		<from reference="0" />
 		<to reference="1" />
 	</link>
 
 
-	<link drawDirection="DOWN" class="invisible">
+	<link style="--kite9-direction: down;" class="invisible">
 		<from reference="1" />
 		<to reference="2" />
 	</link>
 
-	<link drawDirection="DOWN" class="invisible">
+	<link style="--kite9-direction: down;" class="invisible">
 		<from reference="2" />
 		<to reference="3" />
 	</link>

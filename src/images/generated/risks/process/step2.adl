@@ -29,18 +29,18 @@
          <users id="b">B</users>
       </group>
       <artifact id="a">A</artifact>
-      <link drawDirection="RIGHT">
+      <link style="--kite9-direction: right;">
          <from reference="c"/>
          <fromLabel>
             <text>Uses</text>
          </fromLabel>
-         <to class="arrow" reference="b"/>
+         <to shape="arrow" reference="b"/>
       </link>
-      <link drawDirection="RIGHT">
+      <link style="--kite9-direction: right;">
          <from reference="b"/>
          <fromLabel>
             <text>Provides</text>
          </fromLabel>
-         <to class="arrow" reference="a"/>
+         <to shape="arrow" reference="a"/>
       </link>
    </diagram>

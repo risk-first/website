@@ -26,22 +26,22 @@
         <label><text>Operational Context</text></label>
       </context>
 
-    <link drawDirection="RIGHT">
+    <link style="--kite9-direction: right;">
       <from reference="a2" />
-      <to reference="c" class="arrow" />
+      <to reference="c" shape="arrow" />
     </link>
 
-    <link drawDirection="RIGHT">
+    <link style="--kite9-direction: right;">
       <from reference="c" />
-      <to reference="o1" class="arrow" />
+      <to reference="o1" shape="arrow" />
     </link>
 
-    <link drawDirection="RIGHT">
+    <link style="--kite9-direction: right;">
       <from reference="o1" />
-      <to reference="cu" class="arrow" />
+      <to reference="cu" shape="arrow" />
     </link>
 
-    <link drawDirection="RIGHT" class="invisible">
+    <link style="--kite9-direction: right;" class="invisible">
       <from reference="a1" />
       <to reference="a2" />
     </link>

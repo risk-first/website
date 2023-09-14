@@ -67,7 +67,7 @@
       <arrow id="rep">
          UAT
       </arrow>
-      <link class="invisible" drawDirection="DOWN">
+      <link class="invisible" style="--kite9-direction: down;">
          <from reference="gl"/>
          <to reference="gl2"/>
       </link>
@@ -75,35 +75,35 @@
          <from reference="start"/>
          <to reference="gl"/>
       </link>
-      <link drawDirection="DOWN" style="stroke-width: 2pt; ">
+      <link style="--kite9-direction: down; stroke-width: 2pt; ">
          <from reference="start"/>
          <to reference="uat"/>
       </link>
-      <link drawDirection="DOWN" style="stroke-width: 2pt; ">
+      <link style="--kite9-direction: down; stroke-width: 2pt; ">
          <from reference="uat"/>
-         <to class="arrow" reference="two"/>
+         <to shape="arrow" reference="two"/>
       </link>
       <link style="stroke-width: 2pt; ">
          <from reference="gl"/>
-         <to class="arrow" reference="one"/>
+         <to shape="arrow" reference="one"/>
       </link>
-      <link drawDirection="DOWN" style="stroke-width: 2pt; ">
+      <link style="--kite9-direction: down; stroke-width: 2pt; ">
          <from reference="one"/>
          <to reference="rep"/>
       </link>
-      <link drawDirection="LEFT" style="stroke-width: 2pt; ">
+      <link style="--kite9-direction: left; stroke-width: 2pt; ">
          <to reference="two"/>
          <from reference="gl2"/>
       </link>
-      <link drawDirection="RIGHT" style="stroke-width: 2pt; ">
+      <link style="--kite9-direction: right; stroke-width: 2pt; ">
          <from reference="gl2"/>
-         <to class="arrow" reference="goal"/>
+         <to shape="arrow" reference="goal"/>
       </link>
-      <link drawDirection="DOWN" style="stroke-width: 2pt; ">
+      <link style="--kite9-direction: down; stroke-width: 2pt; ">
          <from reference="rep"/>
-         <to class="arrow" reference="ungoal"/>
+         <to shape="arrow" reference="ungoal"/>
       </link>
-      <link class="invisible" drawDirection="RIGHT">
+      <link class="invisible" style="--kite9-direction: right;">
          <from reference="goal"/>
          <to reference="ungoal"/>
       </link>

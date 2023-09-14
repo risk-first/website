@@ -27,46 +27,46 @@
     <arrow id="pn2" />
     <arrow id="pr2" />
     
-    <link class="dotted" drawDirection="DOWN"><from reference="pn" /><to reference="pn1" /></link>
-    <link class="dotted" drawDirection="DOWN"><from reference="pn1" /><to reference="pn2" /></link>
+    <link class="dotted" style="--kite9-direction: down;"><from reference="pn" /><to reference="pn1" /></link>
+    <link class="dotted" style="--kite9-direction: down;"><from reference="pn1" /><to reference="pn2" /></link>
 
-    <link class="dotted"  drawDirection="DOWN"><from reference="pr" /><to reference="pr1" /></link>
-    <link class="dotted"  drawDirection="DOWN"><from reference="pr1" /><to reference="pr2" /></link>
+    <link class="dotted"  style="--kite9-direction: down;"><from reference="pr" /><to reference="pr1" /></link>
+    <link class="dotted"  style="--kite9-direction: down;"><from reference="pr1" /><to reference="pr2" /></link>
 
 
-    <link class="dotted"  drawDirection="DOWN"><from reference="ex" /><to reference="ex1" /></link>
-    <link class="invisible"  drawDirection="DOWN"><from reference="ex1" /><to reference="ff" /></link>
+    <link class="dotted"  style="--kite9-direction: down;"><from reference="ex" /><to reference="ex1" /></link>
+    <link class="invisible"  style="--kite9-direction: down;"><from reference="ex1" /><to reference="ff" /></link>
 
 
     <risk id="ci" class="conceptual-integrity" />
     <risk id="ff" class="feature-fit" />
 
-    <link drawDirection="LEFT">
+    <link style="--kite9-direction: left;">
       <from reference="pr1" shape="arrow"/>
       <to reference="im" />
     </link>
 
-    <link drawDirection="RIGHT">
+    <link style="--kite9-direction: right;">
       <from reference="ex1" shape="arrow"/>
       <to reference="im" />
     </link>
 
-    <link drawDirection="RIGHT">
+    <link style="--kite9-direction: right;">
       <from reference="pn1" shape="arrow" />
       <to reference="ci" />
     </link>
 
-    <link drawDirection="LEFT">
+    <link style="--kite9-direction: left;">
       <from reference="ex1" shape="arrow" />
       <to reference="ci" />
     </link>
 
-    <link drawDirection="LEFT"> 
+    <link style="--kite9-direction: left;"> 
       <from reference="pr2" shape="arrow" />
       <to reference="ff" />
     </link>
 
-    <link drawDirection="RIGHT">
+    <link style="--kite9-direction: right;">
       <from reference="pn2" shape="arrow" />
       <to reference="ff" />
     </link>
@@ -76,7 +76,7 @@
       <to reference="use" />
     </link>
     
-     <link drawDirection="UP">
+     <link style="--kite9-direction: up;">
       <from reference="ex" shape="arrow" />
       <to reference="use" />
     </link>
@@ -86,12 +86,12 @@
       <to reference="use" />
     </link>
     
-    <link drawDirection="RIGHT" shape="invisible" style="--kite9-link-minimum-length: 200pt; ">
+    <link style="--kite9-direction: right; --kite9-link-minimum-length: 200pt;" shape="invisible">
       <from reference="ex" />
       <to reference="pr" />
     </link>
     
-    <link drawDirection="RIGHT" shape="invisible" style="--kite9-link-minimum-length: 200pt; ">
+    <link style="--kite9-direction: right; --kite9-link-minimum-length: 200pt; " shape="invisible">
       <from reference="pn" />
       <to reference="ex" />
     </link>

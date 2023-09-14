@@ -35,26 +35,26 @@
          <users id="b">B</users>
       </group>
       <artifact id="a">A</artifact>
-      <link drawDirection="RIGHT">
+      <link style="--kite9-direction: right;">
          <from reference="c"/>
          <fromLabel>
             <text>Uses</text>
          </fromLabel>
-         <to class="arrow" reference="d"/>
+         <to shape="arrow" reference="d"/>
       </link>
-      <link drawDirection="RIGHT">
+      <link style="--kite9-direction: right;">
          <from reference="d"/>
          <fromLabel>
             <text>Uses</text>
          </fromLabel>
-         <to class="arrow" reference="p"/>
+         <to shape="arrow" reference="p"/>
       </link>
-      <link drawDirection="LEFT">
+      <link style="--kite9-direction: left;">
          <from reference="b"/>
-         <to class="arrow" reference="p"/>
+         <to shape="arrow" reference="p"/>
       </link>
-      <link drawDirection="RIGHT">
+      <link style="--kite9-direction: right;">
          <from reference="b"/>
-         <to class="arrow" reference="a"/>
+         <to shape="arrow" reference="a"/>
       </link>
    </diagram>
