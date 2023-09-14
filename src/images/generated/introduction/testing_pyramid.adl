@@ -4,30 +4,21 @@
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia">
 
     <glyph id="id_2" style="--kite9-sizing: minimize; --kite9-min-width: 300pt;">
-      <stereotype />
-      <label>Integration Tests</label>
-      <text-lines />
-      <symbols />
+     Integration Tests
     </glyph>
     <glyph id="id_0"  style="--kite9-sizing: minimize; --kite9-min-width: 150pt; ">
-      <stereotype />
-      <label>Manual Tests</label>
-      <text-lines />
-      <symbols />
+      Manual Tests
     </glyph>
     <glyph id="id_4"  style="--kite9-sizing: minimize; --kite9-min-width: 450pt;">
-      <stereotype />
-      <label>Component / Unit Tests</label>
-      <text-lines />
-      <symbols />
+      Component / Unit Tests
     </glyph>
 
 
-    <link id="id_5" class="invisible" drawDirection="DOWN">
+    <link id="id_5" class="invisible" style="--kite9-direction: down">
       <from reference="id_0" />
       <to reference="id_2" />
     </link>
-    <link id="id_6" class="invisible" drawDirection="DOWN">
+    <link id="id_6" class="invisible" style="--kite9-direction: down">
       <from reference="id_2" />
       <to reference="id_4" />
     </link>
