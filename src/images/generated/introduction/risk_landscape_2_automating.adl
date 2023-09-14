@@ -1,38 +1,28 @@
-<?xml version="1.0"?>
-<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
-  <svg:defs>
-    <svg:style type="text/css"> @import url("/public/templates/risk-first/risk-first.css");</svg:style>
-  </svg:defs>
-  <diagram xmlns="http://www.kite9.org/schema/adl"  id="diagram-113" name="Goal In Mind" style="--kite9-min-width: 900pt;">
-
-    <context id="c" bordered="true">
-
-      <risk id="id_0" class="attendant">Wasted Time</risk>
-      <risk id="id_0" class="attendant">Morale Loss</risk>
-
-      <label  id="id_16">
-        <text>Internal Model</text>
-        <symbols />
-      </label>
-    </context>
-    
-    <action>Automate Process</action>
-
-    <context id="c" bordered="true">
-    
-      <hidden>
-        <risk class="complexity" />
-      </hidden>
-    
-      <hidden>
-        <risk class="schedule" />
-      </hidden>
-
-      <label  id="id_16">
-        <text>Hidden Risks</text>
-        <symbols />
-      </label>
-    </context>
-   
-  </diagram>
-</svg:svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+	xmlns="http://www.kite9.org/schema/adl"
+	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
+    style="--kite9-min-width: 900pt;">
+      <context bordered="true" id="c">
+         <risk class="attendant" id="id_0">Wasted Time</risk>
+         <risk class="attendant" id="id_0-vc">Morale Loss</risk>
+         <label id="id_16">
+            <text>Internal Model</text>
+            <symbols/>
+         </label>
+      </context>
+      <action>Automate Process</action>
+      <context bordered="true" id="c-hc">
+         <hidden>
+            <risk class="complexity"/>
+         </hidden>
+         <hidden>
+            <risk class="schedule"/>
+         </hidden>
+         <label id="id_16-vy">
+            <text>Hidden Risks</text>
+            <symbols/>
+         </label>
+      </context>
+   </diagram>

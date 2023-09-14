@@ -1,46 +1,38 @@
-<diagram
-	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
-	xmlns:xslt="http://www.kite9.org/schema/xslt"
-	xmlns="http://www.kite9.org/schema/adl"
-	xmlns:svg="http://www.w3.org/2000/svg"
-	xmlns:xlink="http://www.w3.org/1999/xlink" id="diagram-113">
-
-	<group>
-    <risk id="p" class="protocol" />
-
-    <risk id="c" class="complexity" />
-	</group>
-
-    <users id="id_1">User</users>
-
-    <interface id="id_0">
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram xmlns="http://www.kite9.org/schema/adl"
+         xmlns:svg="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xslt="http://www.kite9.org/schema/xslt"
+         id="diagram-113"
+         xslt:template="/public/templates/risk-first/risk-first-template.xsl">
+   <group>
+      <risk class="protocol" id="p"/>
+      <risk class="complexity" id="c"/>
+   </group>
+   <users id="id_1">User</users>
+   <interface id="id_0">
     Component
     Interface</interface>
-
-    <container id="g">
+   <container id="g">
       <component>Part</component>
       <component>Part</component>
       <component>Part</component>
       <label id="id_16">Component's Internal Complexity</label>
-    </container>
-
-    <link id="k1" drawDirection="UP" class="dotted">
-      <from reference="p" />
-      <to reference="id_0" />
-    </link>
-
-    <link id="k2" drawDirection="UP" class="dotted">
-      <from reference="c" />
-      <to reference="g" />
-    </link>
-    
-    <link id="k3" drawDirection="RIGHT">
-      <from reference="id_0" shape="arrow" />
-      <to reference="g" shape="arrow" />
-    </link>
-    
-    <link id="id_16" drawDirection="RIGHT">
+   </container>
+   <link class="dotted" drawDirection="UP" id="k1">
+      <from reference="p"/>
+      <to reference="id_0"/>
+   </link>
+   <link class="dotted" drawDirection="UP" id="k2">
+      <from reference="c"/>
+      <to reference="g"/>
+   </link>
+   <link drawDirection="RIGHT" id="k3">
+      <from reference="id_0" shape="arrow"/>
+      <to reference="g" shape="arrow"/>
+   </link>
+   <link drawDirection="RIGHT" id="id_16-yn">
       <from reference="id_1" shape="arrow"/>
-      <to reference="id_0" shape="arrow" />
-    </link>
-  </diagram>
+      <to reference="id_0" shape="arrow"/>
+   </link>
+</diagram>

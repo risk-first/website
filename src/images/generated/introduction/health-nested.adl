@@ -1,32 +1,32 @@
-<diagram
-	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
-	xmlns:xslt="http://www.kite9.org/schema/xslt"
-	xmlns="http://www.kite9.org/schema/adl" name="Health" id="diagram-129">
-
-	<container id="4" style="--kite9-sizing: minimize; ">
-
-		<container id="4.1" style="--kite9-sizing: minimize; ">
-			<container id="4.2" style="--kite9-sizing: minimize; ">
-			<generic-artifact id="2" href="/public/templates/risk-first/redesign/risks/agency_risk_v2.svg">Team Member</generic-artifact>
-			<generic-artifact id="2" href="/public/templates/risk-first/redesign/risks/agency_risk_v2.svg">Team Member</generic-artifact>
-			<generic-artifact id="2" href="/public/templates/risk-first/redesign/risks/agency_risk_v2.svg">Team Member</generic-artifact>
-			
-				<label id="4-1">Team Health</label>
-			</container>
-			<label id="4-2">Organisation Health</label>
-		</container>
-		<label id="4-0">State Health</label>
-
-		<container id="8">
-			<generic-artifact id="2"
-				href="/public/templates/risk-first/redesign/artifacts/component_v2.svg">Product</generic-artifact>
-			<label id="8-0">Product Health</label>
-		</container>
-	</container>
-
-	<link id="6" drawDirection="RIGHT">
-		<from reference="4.1" id="6-0" />
-		<to reference="8" id="6-1" shape="barbed-arrow" />
-		<label id="7" end="to">sells</label>
-	</link>
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram xmlns="http://www.kite9.org/schema/adl"
+         xmlns:xslt="http://www.kite9.org/schema/xslt"
+         id="diagram-129"
+         name="Health"
+         xslt:template="/public/templates/risk-first/risk-first-template.xsl">
+   <container id="4" style="--kite9-sizing: minimize; ">
+      <container id="4.1" style="--kite9-sizing: minimize; ">
+         <container id="4.2" style="--kite9-sizing: minimize; ">
+            <generic-artifact href="/public/templates/risk-first/redesign/risks/agency_risk_v2.svg"
+                              id="2">Team Member</generic-artifact>
+            <generic-artifact href="/public/templates/risk-first/redesign/risks/agency_risk_v2.svg"
+                              id="2-gz">Team Member</generic-artifact>
+            <generic-artifact href="/public/templates/risk-first/redesign/risks/agency_risk_v2.svg"
+                              id="2-zy">Team Member</generic-artifact>
+            <label id="4-1">Team Health</label>
+         </container>
+         <label id="4-2">Organisation Health</label>
+      </container>
+      <label id="4-0">State Health</label>
+      <container id="8">
+         <generic-artifact href="/public/templates/risk-first/redesign/artifacts/component_v2.svg"
+                           id="2-ha">Product</generic-artifact>
+         <label id="8-0">Product Health</label>
+      </container>
+   </container>
+   <link drawDirection="RIGHT" id="6">
+      <from id="6-0" reference="4.1"/>
+      <to id="6-1" reference="8" shape="barbed-arrow"/>
+      <label end="to" id="7">sells</label>
+   </link>
 </diagram>

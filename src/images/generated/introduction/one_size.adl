@@ -1,40 +1,32 @@
-<?xml version="1.0"?>
-<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
-  <svg:defs>
-    <svg:style type="text/css"> @import url("/public/templates/risk-first/risk-first.css");</svg:style>
-  </svg:defs>
-  <diagram xmlns="http://www.kite9.org/schema/adl">
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+	xmlns="http://www.kite9.org/schema/adl"
+	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia">
 
-    <context id="c" bordered="true">
-
-      <mitigated>
-        <risk id="id_0" class="attendant">Personal
+      <context bordered="true" id="c">
+         <mitigated>
+            <risk class="attendant" id="id_0">Personal
          Blame</risk>
-      </mitigated>
-      <mitigated>
-        <hidden>
-          <risk id="id_0" class="attendant">Hidden
+         </mitigated>
+         <mitigated>
+            <hidden>
+               <risk class="attendant" id="id_0-vr">Hidden
            Risks</risk>
-        </hidden>
-      </mitigated>
-    </context>
-
-    <action>Follow Methodology</action>
-
-    <context id="c" bordered="true">
-
-      <risk id="id_1" class="attendant">Inappropriate
+            </hidden>
+         </mitigated>
+      </context>
+      <action>Follow Methodology</action>
+      <context bordered="true" id="c-hp">
+         <risk class="attendant" id="id_1">Inappropriate
         Methodology
       </risk>
-      <risk id="id_2" class="attendant">Schedule /
+         <risk class="attendant" id="id_2">Schedule /
         Cost Risk
       </risk>
-    </context>
-
-    <link>
-      <from reference="id_1" />
-      <to reference="id_2" class="arrow" />
-    </link>
-
-  </diagram>
-</svg:svg>
+      </context>
+      <link>
+         <from reference="id_1"/>
+         <to class="arrow" reference="id_2"/>
+      </link>
+   </diagram>

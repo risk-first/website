@@ -1,36 +1,27 @@
-<?xml version="1.0"?>
-<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
-  <svg:defs>
-    <svg:style type="text/css"> @import url("/public/templates/risk-first/risk-first.css");</svg:style>
-  </svg:defs>
-  <diagram xmlns="http://www.kite9.org/schema/adl" id="diagram-113" name="Goal In Mind">
+<diagram
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+	xmlns="http://www.kite9.org/schema/adl"
+	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia">
 
-    <context id="c" bordered="true" style="--kite9-layout: right; ">
-
-      <mitigated>
-        <risk class="attendant">Can't Pay Mortgage</risk>
-      </mitigated>
-      
-      <description style="--kite9-vertical-align: middle;">Jim is worried that he's 
+      <context bordered="true" id="c" style="--kite9-layout: right; ">
+         <mitigated>
+            <risk class="attendant">Can't Pay Mortgage</risk>
+         </mitigated>
+         <description style="--kite9-vertical-align: middle;">Jim is worried that he's 
       going to get fired for a mistake,
        and won't be able to pay 
        the mortgage.</description>
-
-      <label id="id_16">
-        <text>Jim's Internal Model</text>
-        <symbols />
-      </label>
-    </context>
-
-    <action id="a1">Blame</action>
-
-    <context id="d1" style="--kite9-layout: right; --kite9-sizing: maximize;">
-      <risk class="attendant">Money</risk>
-      <label id="id_16">
-        <text>Bob's Attendant Risks</text>
-        <symbols />
-      </label>
-    </context>
-
-  </diagram>
-</svg:svg>
+         <label id="id_16">
+            <text>Jim's Internal Model</text>
+            <symbols/>
+         </label>
+      </context>
+      <action id="a1">Blame</action>
+      <context id="d1" style="--kite9-layout: right; --kite9-sizing: maximize;">
+         <risk class="attendant">Money</risk>
+         <label id="id_16-xc">
+            <text>Bob's Attendant Risks</text>
+            <symbols/>
+         </label>
+      </context>
+   </diagram>

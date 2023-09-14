@@ -1,43 +1,33 @@
-<diagram 
-    xslt:template="/public/templates/risk-first/risk-first-template.xsl"
-	xmlns:xslt="http://www.kite9.org/schema/xslt"
-	xmlns="http://www.kite9.org/schema/adl"
-	xmlns:svg="http://www.w3.org/2000/svg"
-	xmlns:xlink="http://www.w3.org/1999/xlink"
-    id="diagram-113" 
-    name="Feature Creep">
-
-  <container id="c" bordered="true" style="--kite9-layout: down; ">
-    <mitigated>
-      <risk class="feature-fit" />
-    </mitigated>
-   
-    <label  id="id_16">
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram xmlns="http://www.kite9.org/schema/adl"
+         xmlns:svg="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xslt="http://www.kite9.org/schema/xslt"
+         id="diagram-113"
+         name="Feature Creep"
+         xslt:template="/public/templates/risk-first/risk-first-template.xsl">
+   <container bordered="true" id="c" style="--kite9-layout: down; ">
+      <mitigated>
+         <risk class="feature-fit"/>
+      </mitigated>
+      <label id="id_16">
       Risk that the needs of the client 
       don't coincide with the functionality we provide
     </label>
-  </container>
-
-  <group style="--kite9-layout: down; --kite9-horizontal-align: left;">
-    <action style="--kite9-horizontal-align: left;">Product Development</action>
-  </group>
-  
-  
-  <container id="d">
-  
-    <group style="--kite9-layout: right; --kite9-horizontal-align: left;">
-      <risk class="operational" />
-      <risk class="schedule" />
-      <risk class="complexity" /> 
-    </group>
-    
-    <description></description>
-  
-    <label  id="id_16">
+   </container>
+   <group style="--kite9-layout: down; --kite9-horizontal-align: left;">
+      <action style="--kite9-horizontal-align: left;">Product Development</action>
+   </group>
+   <container id="d">
+      <group style="--kite9-layout: right; --kite9-horizontal-align: left;">
+         <risk class="operational"/>
+         <risk class="schedule"/>
+         <risk class="complexity"/>
+      </group>
+      <description/>
+      <label id="id_16-ub">
       Introducing functionality also adds complexity, 
       takes time and adds operational risk
     </label>
-  </container>
-
-
-  </diagram>
+   </container>
+</diagram>

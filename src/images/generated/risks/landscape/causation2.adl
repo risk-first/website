@@ -1,47 +1,48 @@
-<diagram
-	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
-	xmlns:xslt="http://www.kite9.org/schema/xslt"
-	xmlns="http://www.kite9.org/schema/adl"
-	xmlns:svg="http://www.w3.org/2000/svg"
-	xmlns:xlink="http://www.w3.org/1999/xlink" id="diagram-113"
-	name="Correlation2">
-
-	<group style="--kite9-layout: down;">
-		<risk id="c" class="generic" href="/public/templates/risk-first/redesign/risks/dependency_funding_risk_v2.svg">
-			<code id="att_1">L</code>
-			<title id="att_2">Liquidity Risk</title>
-		</risk>
-		<description>
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram xmlns="http://www.kite9.org/schema/adl"
+         xmlns:svg="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xslt="http://www.kite9.org/schema/xslt"
+         id="diagram-113"
+         name="Correlation2"
+         xslt:template="/public/templates/risk-first/risk-first-template.xsl">
+   <group style="--kite9-layout: down;">
+      <risk class="generic"
+            href="/public/templates/risk-first/redesign/risks/dependency_funding_risk_v2.svg"
+            id="c">
+         <code id="att_1">L</code>
+         <title id="att_2">Liquidity Risk</title>
+      </risk>
+      <description>
 			Defaults caused problems 
 			with liquidity...
 		</description>
-	</group>
-
-	<group style="--kite9-layout: down;">
-		<risk id="d" class="generic" href="/public/templates/risk-first/redesign/risks/dependency_funding_risk_v2.svg">
-			<code id="att_1">C</code>
-			<title id="att_2">Credit Risk</title>
-		</risk>
-		<description>
+   </group>
+   <group style="--kite9-layout: down;">
+      <risk class="generic"
+            href="/public/templates/risk-first/redesign/risks/dependency_funding_risk_v2.svg"
+            id="d">
+         <code id="att_1-ih">C</code>
+         <title id="att_2-uw">Credit Risk</title>
+      </risk>
+      <description>
 			Which caused overall 
 			increase in credit risk...
 		</description>
-	</group>
-
-	<group style="--kite9-layout: down;">
-		<risk id="e" style="--kite9-vertical-align: top; " class="market">Market Risk</risk>
-		<description>
+   </group>
+   <group style="--kite9-layout: down;">
+      <risk class="market" id="e" style="--kite9-vertical-align: top; ">Market Risk</risk>
+      <description>
 			Which caused runaway 
 			market risks.
 		</description>
-	</group>
-	<link>
-		<from reference="c" />
-		<to reference="d" shape="arrow" />
-	</link>
-
-	<link>
-		<from reference="d" />
-		<to reference="e" shape="arrow" />
-	</link>
+   </group>
+   <link>
+      <from reference="c"/>
+      <to reference="d" shape="arrow"/>
+   </link>
+   <link>
+      <from reference="d"/>
+      <to reference="e" shape="arrow"/>
+   </link>
 </diagram>

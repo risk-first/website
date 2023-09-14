@@ -1,106 +1,95 @@
-<diagram 
-    xslt:template="/public/templates/risk-first/risk-first-template.xsl"
-	xmlns:xslt="http://www.kite9.org/schema/xslt"
-	xmlns="http://www.kite9.org/schema/adl"
-	xmlns:svg="http://www.w3.org/2000/svg"
-	xmlns:xlink="http://www.w3.org/1999/xlink"
-    id="diagram-113" 
-    name="Complexity Risk Family">                                                                    
-                                                                                                                                                             
-    <container id="auto:159560" style="--kite9-sizing: maximize;" class="dotted">                                                                                               
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram xmlns="http://www.kite9.org/schema/adl"
+         xmlns:svg="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xslt="http://www.kite9.org/schema/xslt"
+         id="diagram-113"
+         name="Complexity Risk Family"
+         xslt:template="/public/templates/risk-first/risk-first-template.xsl">
+   <container class="dotted" id="auto:159560" style="--kite9-sizing: maximize;">
       <action class="left" id="id_29" style="--kite9-margin: 20pt; ">                                                                              
         Reconciliation                                                                                                                       
-      </action>                                                                                                                                               
+      </action>
       <action id="id_17" style="--kite9-margin: 20pt; ">                                                                            
         Motivation                                                                                                                            
-      </action>                                                                                                                                               
+      </action>
       <label id="id_19">                                                                                                                                     
         Internal Model                                                                                                                          
-      </label>                                                                                                                                               
-    </container>                                                                                                                                               
-    <container id="auto:152870" style="--kite9-sizing: maximize;" class="dotted">                                                                                               
+      </label>
+   </container>
+   <container class="dotted" id="auto:152870" style="--kite9-sizing: maximize;">
       <action class="left" id="id_14" style="--kite9-margin: 20pt; ">                                                                                          
         Interpretation                                                                                                                        
-      </action>                                                                                                                                              
+      </action>
       <action id="id_2" style="--kite9-margin: 20pt; ">                                                                                                        
         Composition                                                                                                                           
-      </action>                                                                                                                                              
-      <label id="id_6">Message</label>                                                                                                                                               
-    </container>                                                                                                                                               
-    <container id="auto:157513" style="--kite9-sizing: maximize;" class="dotted">                                                                                               
+      </action>
+      <label id="id_6">Message</label>
+   </container>
+   <container class="dotted" id="auto:157513" style="--kite9-sizing: maximize;">
       <action class="left" id="id_10" style="--kite9-margin: 20pt; ">                                                                                          
         Decoding                                                                                                                              
-      </action>                                                                                                                                              
+      </action>
       <action id="id_4" style="--kite9-margin: 20pt; ">                                                                                                        
         Encoding                                                                                                                              
-      </action>                                                                                                                                              
+      </action>
       <label id="id_11">                                                                                                                                     
         Protocol                                                                                                                               
-      </label>                                                                                                                                               
-    </container>                                                                                                                                               
-    <container id="auto:158001" style="--kite9-sizing: maximize; --kite9-layout: right; " class="dotted">                                                                         
-      <group style="--kite9-layout: down">                                                                                                                     
-        <action id="id_24" style="--kite9-margin: 20pt;">                                                                                                      
+      </label>
+   </container>
+   <container class="dotted"
+              id="auto:158001"
+              style="--kite9-sizing: maximize; --kite9-layout: right; ">
+      <group style="--kite9-layout: down">
+         <action id="id_24" style="--kite9-margin: 20pt;">                                                                                                      
           Transmission                                                                                                                        
-        </action>                                                                                                                                            
-        <action class="left" id="id_8" style="--kite9-margin: 20pt; ">                                                                                         
+        </action>
+         <action class="left" id="id_8" style="--kite9-margin: 20pt; ">                                                                                         
           Reception                                                                                                                           
-        </action>                                                                                                                                            
-      </group>                                                                                                                                               
+        </action>
+      </group>
       <label id="id_13">                                                                                                                                     
         Channel                                                                                                                                
-      </label>                                                                                                                                               
-    </container>                                                                                                                                               
-                                                                                                                                                             
-                                                                                                                                                             
-    <link id="id_15" shape="NORMAL" style="" drawDirection="LEFT">                                                                                           
-      <from reference="id_14" />                                                                                                                             
-      <to reference="id_29" shape="arrow" />                                                                                                                 
-    </link>                                                                                                                                                  
-    <link id="id_21" drawDirection="RIGHT" >                                                                                                                 
-      <from reference="id_17" style="--kite9-padding: 10pt; " />                                                                                               
-      <to reference="id_2" shape="arrow" />                                                                                                                  
-    </link>                                                                                                                                                  
-    <link id="id_20" shape="NORMAL" style="">                                                                                                                
-      <from reference="id_10" />                                                                                                                             
-      <to reference="id_14" shape="arrow" />                                                                                                                 
-    </link>                                                                                                                                                  
-    <link id="id_3" shape="NORMAL" style="" drawDirection="RIGHT">                                                                                           
-      <from reference="id_2" />                                                                                                                              
-      <to reference="id_4" shape="arrow" />                                                                                                                  
-    </link>                                                                                                                                                  
-    <link id="id_9" shape="NORMAL" style="" drawDirection="LEFT">                                                                                            
-      <from reference="id_8" />                                                                                                                              
-      <to reference="id_10" shape="arrow" />                                                                                                                 
-                                                                                                                                                             
-                                                                                                                                                             
-    </link>                                                                                                                                                  
- 
-    <link id="id_23" shape="NORMAL" style="" drawDirection="RIGHT">                                                                                          
-                                                                                                                                                             
-      <from reference="id_4" />                                                                                                                              
-      <to reference="id_24" shape="arrow" />                                                                                                                 
-                                                                                                                                                             
-                                                                                                                                                             
-    </link>                                                                                                                                                  
-    <link id="id_32" shape="NORMAL" style="">                                                                                                                
-                                                                                                                                                             
-      <from reference="id_24" />                                                                                                                             
-      <to reference="id_8" shape="arrow" />                                                                                                                                                                                                                                                                      
-    </link>      
-    
-    <link id="id_1" class="invisible" drawDirection="DOWN">                                                                                                  
-      <from reference="id_2" />                                                                                                                              
-      <to reference="id_14" />                                                                                                                               
-    </link>                                                                                                                                                  
-    <link id="id_1" class="invisible" drawDirection="DOWN">                                                                                                  
-      <from reference="id_17" />                                                                                                                             
-      <to reference="id_29" />                                                                                                                               
-    </link>                                                                                                                                                  
-   <link id="id_5" class="invisible" drawDirection="DOWN">                                                                                                  
-                                                                                                                                                             
-      <from reference="id_4" />                                                                                                                              
-      <to reference="id_10" />                                                                                                                               
-    </link>                                                                                                                                                                                                                                                                                                  
-                                                                                                                                                             
-  </diagram>                                                                                                                                                                                                                                                                                               
+      </label>
+   </container>
+   <link drawDirection="LEFT" id="id_15" shape="NORMAL" style="">
+      <from reference="id_14"/>
+      <to reference="id_29" shape="arrow"/>
+   </link>
+   <link drawDirection="RIGHT" id="id_21">
+      <from reference="id_17" style="--kite9-padding: 10pt; "/>
+      <to reference="id_2" shape="arrow"/>
+   </link>
+   <link id="id_20" shape="NORMAL" style="">
+      <from reference="id_10"/>
+      <to reference="id_14" shape="arrow"/>
+   </link>
+   <link drawDirection="RIGHT" id="id_3" shape="NORMAL" style="">
+      <from reference="id_2"/>
+      <to reference="id_4" shape="arrow"/>
+   </link>
+   <link drawDirection="LEFT" id="id_9" shape="NORMAL" style="">
+      <from reference="id_8"/>
+      <to reference="id_10" shape="arrow"/>
+   </link>
+   <link drawDirection="RIGHT" id="id_23" shape="NORMAL" style="">
+      <from reference="id_4"/>
+      <to reference="id_24" shape="arrow"/>
+   </link>
+   <link id="id_32" shape="NORMAL" style="">
+      <from reference="id_24"/>
+      <to reference="id_8" shape="arrow"/>
+   </link>
+   <link class="invisible" drawDirection="DOWN" id="id_1">
+      <from reference="id_2"/>
+      <to reference="id_14"/>
+   </link>
+   <link class="invisible" drawDirection="DOWN" id="id_1-sg">
+      <from reference="id_17"/>
+      <to reference="id_29"/>
+   </link>
+   <link class="invisible" drawDirection="DOWN" id="id_5">
+      <from reference="id_4"/>
+      <to reference="id_10"/>
+   </link>
+</diagram>

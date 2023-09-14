@@ -1,35 +1,31 @@
-<diagram 
-    xslt:template="/public/templates/risk-first/risk-first-template.xsl"
-	xmlns:xslt="http://www.kite9.org/schema/xslt"
-	xmlns="http://www.kite9.org/schema/adl"
-	xmlns:svg="http://www.w3.org/2000/svg"
-	xmlns:xlink="http://www.w3.org/1999/xlink"
-    id="diagram-113" 
-    name="Abstraction">
-
-    <container id="c" bordered="true" style="--kite9-layout: right; --kite9-vertical-align: center;">
-
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram xmlns="http://www.kite9.org/schema/adl"
+         xmlns:svg="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xslt="http://www.kite9.org/schema/xslt"
+         id="diagram-113"
+         name="Abstraction"
+         xslt:template="/public/templates/risk-first/risk-first-template.xsl">
+   <container bordered="true"
+              id="c"
+              style="--kite9-layout: right; --kite9-vertical-align: center;">
       <mitigated>
-        <risk class="codebase" />
+         <risk class="codebase"/>
       </mitigated>
-
       <label id="id_16">
         Internal Model
       </label>
-    </container>
-
-    <group style="--kite9-layout: down; --kite9-horizontal-align: left;">
+   </container>
+   <group style="--kite9-layout: down; --kite9-horizontal-align: left;">
       <action id="a1">Modularisation, Hierarchy</action>
-    </group>
-
-    <group style="--kite9-layout: down;">
+   </group>
+   <group style="--kite9-layout: down;">
       <container id="d1" style="--kite9-layout: right; --kite9-sizing: maximize;">
-        <risk id="r1" class="communication" />
-        <risk id="r2" class="invisibility" />
-        <label id="id_16">
+         <risk class="communication" id="r1"/>
+         <risk class="invisibility" id="r2"/>
+         <label id="id_16-ar">
           Attendant Risks
         </label>
       </container>
-    </group>
-
+   </group>
 </diagram>

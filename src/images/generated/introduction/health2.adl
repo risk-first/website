@@ -1,26 +1,27 @@
-<diagram
-	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
-	xmlns:xslt="http://www.kite9.org/schema/xslt"
-	xmlns="http://www.kite9.org/schema/adl" name="Health" id="diagram-129">
-
-	<container id="4" style="--kite9-sizing: minimize; ">
-		<generic-artifact id="1"
-		  	href="/public/templates/risk-first/redesign/artifacts/document_v2.svg">Air</generic-artifact>
-		<generic-artifact id="1"
-		  	href="/public/templates/risk-first/redesign/artifacts/document_v2.svg">Water</generic-artifact>
-		<generic-artifact id="1"
-		  	href="/public/templates/risk-first/redesign/artifacts/document_v2.svg">Food</generic-artifact>
-		<label id="4-0">Control of Resources </label>
-	</container>
-	<container id="8">
-		<generic-artifact id="2"
-		  	href="/public/templates/risk-first/redesign/artifacts/component_v2.svg">Organism 
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram xmlns="http://www.kite9.org/schema/adl"
+         xmlns:xslt="http://www.kite9.org/schema/xslt"
+         id="diagram-129"
+         name="Health"
+         xslt:template="/public/templates/risk-first/risk-first-template.xsl">
+   <container id="4" style="--kite9-sizing: minimize; ">
+      <generic-artifact href="/public/templates/risk-first/redesign/artifacts/document_v2.svg"
+                        id="1">Air</generic-artifact>
+      <generic-artifact href="/public/templates/risk-first/redesign/artifacts/document_v2.svg"
+                        id="1-fj">Water</generic-artifact>
+      <generic-artifact href="/public/templates/risk-first/redesign/artifacts/document_v2.svg"
+                        id="1-gh">Food</generic-artifact>
+      <label id="4-0">Control of Resources </label>
+   </container>
+   <container id="8">
+      <generic-artifact href="/public/templates/risk-first/redesign/artifacts/component_v2.svg"
+                        id="2">Organism 
 		  	Health</generic-artifact>
-		<label id="8-0">Survival</label>
-	</container>
-	<link id="6" drawDirection="RIGHT">
-		<from reference="4" id="6-0" />
-		<to reference="8" id="6-1" shape="barbed-arrow" />
-		<label id="7" end="from">determines</label>
-	</link>
+      <label id="8-0">Survival</label>
+   </container>
+   <link drawDirection="RIGHT" id="6">
+      <from id="6-0" reference="4"/>
+      <to id="6-1" reference="8" shape="barbed-arrow"/>
+      <label end="from" id="7">determines</label>
+   </link>
 </diagram>

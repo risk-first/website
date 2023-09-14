@@ -1,49 +1,38 @@
-<?xml version="1.0"?>
-<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink'
-	zoomAndPan="magnify" preserveAspectRatio="xMidYMid"
-	xmlns:svg='http://www.w3.org/2000/svg'>
-	<svg:defs>
-		<svg:style type="text/css"> @import
-			url("/public/templates/risk-first/risk-first.css");
-		</svg:style>
-	</svg:defs>
-	<diagram xmlns="http://www.kite9.org/schema/adl" style="--kite9-min-width: 900pt;">
-
-	 	<context id="c" bordered="true">
-
- 		<risk id="id_0" class="generic" 
-				href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg">
-				<code>Risk</code>
-				<title>Nothing To Eat</title>
-			</risk>
-
-			<label id="id_16">
-				<text>Internal Model</text>
-				<symbols />
-			</label> 
-		</context>
-
-
-		<action>Buy Snacks</action>
-
-		<context id="c" bordered="true">
-
-			<risk id="id_0" class="generic" 
-				href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg">
-				<code>Risk</code>
-				<title>Too Many Leftovers</title>
-			</risk>
-			<risk id="id_0" class="generic" 
-				href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg">
-				<code>Risk</code>
-				<title>Guests Are Unimpressed</title>
-			</risk>
-
-			<label id="id_16">
-				<text>Attendant Risks</text>
-				<symbols />
-			</label> 
-		</context>
-
-	</diagram>
-</svg:svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+	xmlns="http://www.kite9.org/schema/adl"
+	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
+    style="--kite9-min-width: 900pt;">
+      <context bordered="true" id="c">
+         <risk class="generic"
+               href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg"
+               id="id_0">
+            <code>Risk</code>
+            <title>Nothing To Eat</title>
+         </risk>
+         <label id="id_16">
+            <text>Internal Model</text>
+            <symbols/>
+         </label>
+      </context>
+      <action>Buy Snacks</action>
+      <context bordered="true" id="c-zr">
+         <risk class="generic"
+               href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg"
+               id="id_0-ae">
+            <code>Risk</code>
+            <title>Too Many Leftovers</title>
+         </risk>
+         <risk class="generic"
+               href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg"
+               id="id_0-ry">
+            <code>Risk</code>
+            <title>Guests Are Unimpressed</title>
+         </risk>
+         <label id="id_16-nm">
+            <text>Attendant Risks</text>
+            <symbols/>
+         </label>
+      </context>
+   </diagram>

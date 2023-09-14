@@ -1,35 +1,29 @@
-<?xml version="1.0"?>
-<svg:svg xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan="magnify" preserveAspectRatio="xMidYMid" xmlns:svg='http://www.w3.org/2000/svg'>
-  <svg:defs>
-    <svg:style type="text/css"> @import url("/public/templates/risk-first/risk-first.css");</svg:style>
-  </svg:defs>
-  <diagram xmlns="http://www.kite9.org/schema/adl"  id="diagram-116" name="Accept Estimate" style="--kite9-layout: right;">
-
-    <context id="c" bordered="true">
-        <risk class="feature" />
-        <risk class="funding" />
-        <risk class="opportunity" />
-        
-        <description> No product, 
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+	xmlns="http://www.kite9.org/schema/adl"
+	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
+    style="--kite9-layout: right;">
+      <context bordered="true" id="c">
+         <risk class="feature"/>
+         <risk class="funding"/>
+         <risk class="opportunity"/>
+         <description> No product, 
         no customers, 
         funding secured</description>
-      <label  id="id_16">
-        <text>Starting the project</text>
-        <symbols />
-      </label>
-    </context>
-
-    <group>
-      <action>Product Development</action>
-    </group>
-    
-      <context id="e" bordered="true">
-        <risk class="operational" />
-      <label  id="id_16">
-        <text>Working Business</text>
-        <symbols />
-      </label>
-    </context>
-    
-  </diagram>
-</svg:svg>
+         <label id="id_16">
+            <text>Starting the project</text>
+            <symbols/>
+         </label>
+      </context>
+      <group>
+         <action>Product Development</action>
+      </group>
+      <context bordered="true" id="e">
+         <risk class="operational"/>
+         <label id="id_16-cl">
+            <text>Working Business</text>
+            <symbols/>
+         </label>
+      </context>
+   </diagram>

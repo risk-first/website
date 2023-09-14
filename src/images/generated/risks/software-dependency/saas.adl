@@ -1,36 +1,29 @@
-<diagram
-	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
-	xmlns:xslt="http://www.kite9.org/schema/xslt"
-	xmlns="http://www.kite9.org/schema/adl"
-	xmlns:svg="http://www.w3.org/2000/svg"
-	xmlns:xlink="http://www.w3.org/1999/xlink" id="diagram-113">
-	
-  <container id="c" bordered="true">
-
-    <mitigated>
-      <risk class="feature" />
-    </mitigated>
-    
-    <label  id="id_16">Internal Model</label>
-  </container>
-
-  <group style="--kite9-layout: down; ">
-    <action>SaaS Dependency</action>
-  </group>
-
-  <container id="c" bordered="true" style="--kite9-layout: down;">
-    <group>
-      <risk class="communication" />
-      <risk class="feature" />
-      <risk class="boundary" />
-    </group>
-    <group>
-      <risk class="funding" />
-      <risk class="operational" />
-    </group>
-    
-    
-    <label  id="id_16">Attendant Risks</label>
-  </container>
-
-  </diagram>
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram xmlns="http://www.kite9.org/schema/adl"
+         xmlns:svg="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xslt="http://www.kite9.org/schema/xslt"
+         id="diagram-113"
+         xslt:template="/public/templates/risk-first/risk-first-template.xsl">
+   <container bordered="true" id="c">
+      <mitigated>
+         <risk class="feature"/>
+      </mitigated>
+      <label id="id_16">Internal Model</label>
+   </container>
+   <group style="--kite9-layout: down; ">
+      <action>SaaS Dependency</action>
+   </group>
+   <container bordered="true" id="c-gz" style="--kite9-layout: down;">
+      <group>
+         <risk class="communication"/>
+         <risk class="feature"/>
+         <risk class="boundary"/>
+      </group>
+      <group>
+         <risk class="funding"/>
+         <risk class="operational"/>
+      </group>
+      <label id="id_16-no">Attendant Risks</label>
+   </container>
+</diagram>
