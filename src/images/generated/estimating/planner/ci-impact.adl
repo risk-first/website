@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<diagram
-	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
-	xmlns="http://www.kite9.org/schema/adl"
-	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia">
-	<container style="--kite9-min-size: 60pt 60pt" id="5">
-
-		<label id="5-1">Development Team</label>
-		<group id="6" style="--kite9-layout: down; ">
-			<description id="6-1">Arguments in the team due to
+<diagram xmlns="http://www.kite9.org/schema/adl"
+         xmlns:xslt="http://www.kite9.org/schema/xslt"
+         id="dia"
+         xslt:template="/public/templates/risk-first/risk-first-template.xsl">
+   <container id="5" style="--kite9-min-size: 60pt 60pt">
+      <group id="6" style="--kite9-layout: down; ">
+         <description id="6-1">Arguments in the team due to
 				destructive merging and clashing commits
 			</description>
-			<mitigated id="4">
-				<risk id="3" votes="" class="coordination"
-					xmlns="http://www.kite9.org/schema/adl">Coordination Risk</risk>
-			</mitigated>
-		</group>
-	</container>
-	<action id="2">Fix CI Pipeline</action>
-	<container style="--kite9-min-size: 60pt 60pt" id="10">
-
-		<group id="11">
-			<risk id="7"
-				href="/public/templates/risk-first/redesign/risks/dependency_deadline_risk_v2.svg">
-				<code id="7-0">D-Dl</code>
-				<title id="7-1">Deadline Risk</title>
-
-			</risk>
-			<description id="11-0">Spending time on this threatens our
+         <mitigated id="4">
+            <risk class="coordination" id="3" votes="">Coordination Risk</risk>
+         </mitigated>
+      </group>
+      <label id="5-1">Development Team</label>
+   </container>
+   <action id="2">Fix CI Pipeline</action>
+   <container id="10" style="--kite9-min-size: 60pt 60pt">
+      <group id="11">
+         <risk href="/public/templates/risk-first/redesign/risks/dependency_deadline_risk_v2.svg"
+               id="7">
+            <code id="7-0">D-Dl</code>
+            <title id="7-1">Deadline Risk</title>
+         </risk>
+         <description id="11-0">Spending time on this threatens our
 				chances at the marketing event
 			</description>
-		</group>
-		<label id="10-1">Sales Team</label>
-	</container>
+      </group>
+      <label id="10-1">Sales Team</label>
+   </container>
+   <align id="12" style="--kite9-direction: left; ">
+      <from id="12-0" reference="2"/>
+      <to id="12-1" reference="6"/>
+   </align>
 </diagram>
