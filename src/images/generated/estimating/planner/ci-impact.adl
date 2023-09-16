@@ -9,11 +9,12 @@
          <mitigated id="4">
             <risk class="coordination" id="3" votes="">Coordination Risk</risk>
          </mitigated>
-         <description id="6-1" style="text-align: middle">Arguments in the team due to
+         <description id="6-1" style="text-align: center">Arguments in the team due to
 				destructive merging and clashing commits
 			</description>
       </group>
    </container>
+   <action id="2">Fix CI Pipeline</action>
    <container id="10" style="--kite9-min-size: 60pt 60pt">
       <group id="11" style="--kite9-layout: down; ">
          <risk href="/public/templates/risk-first/redesign/risks/dependency_deadline_risk_v2.svg"
@@ -27,9 +28,4 @@
       </group>
       <label id="10-1">Sales Team</label>
    </container>
-   <align id="28" style="--kite9-direction: left; ">
-      <from id="28-0" reference="10"/>
-      <to id="28-1" reference="2"/>
-   </align>
-   <action id="2">Fix CI Pipeline</action>
 </diagram>
