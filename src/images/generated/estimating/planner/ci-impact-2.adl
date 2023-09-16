@@ -16,14 +16,14 @@
          <description id="25-0">Retention of key staff 
 is a problem</description>
       </group>
-      <label id="5-1">Development Team</label>
-      <group id="6" style="--kite9-layout: down; ">
+      <group id="6">
          <description id="6-1">Arguments in the team due to 
 destructive merging and clashing commits</description>
          <mitigated id="4">
             <risk class="coordination" id="3" votes="">Coordination Risk</risk>
          </mitigated>
       </group>
+      <label id="5-1">Development Team</label>
    </container>
    <container class="solid" id="18">
       <group id="22">
@@ -57,7 +57,11 @@ chances at the marketing event</description>
       <to id="13-1" reference="5" shape="barbed-arrow"/>
    </link>
    <link id="30">
-      <from id="" reference="8"/>
+      <from id="30-0" reference="8"/>
       <to id="30-1" reference="25" shape="barbed-arrow"/>
    </link>
+   <align id="57" style="--kite9-direction: right; ">
+      <from id="57-0" reference="25"/>
+      <to id="57-1" reference="6"/>
+   </align>
 </diagram>
