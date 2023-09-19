@@ -4,14 +4,6 @@
          id="dia"
          xslt:template="/public/templates/risk-first/risk-first-template.xsl">
    <action id="2">Estimating</action>
-   <group id="5"
-          style="--kite9-text-bounds-width: 250pt; --kite9-vertical-sizing: maximize; --kite9-layout: down; ">
-      <description id="5-1">Because estimating is so hard it fails often.  These visible failures cause stakeholders to
-lose faith in the development team</description>
-      <risk class="trust" id="3">
-					Trust Risk
-					</risk>
-   </group>
    <group id="1"
           style="--kite9-text-bounds-width: 250pt; --kite9-vertical-sizing: maximize; --kite9-layout: down; ">
       <risk class="conceptual-integrity" id="4">Conceptual
@@ -19,5 +11,17 @@ lose faith in the development team</description>
 					</risk>
       <description id="1-1">Estimating sprints means we are always
 focusing on the short-term, rather than making the right long-term decisions about what the product should  do.</description>
+   </group>
+   <align id="13" style="--kite9-direction: left; ">
+      <from id="13-0" reference="1"/>
+      <to id="13-1" reference="5"/>
+   </align>
+   <group id="5"
+          style="--kite9-text-bounds-width: 250pt; --kite9-vertical-sizing: maximize; --kite9-layout: down; ">
+      <description id="5-1">Because estimating is so hard it fails often.  These visible failures cause stakeholders to
+lose faith in the development team</description>
+      <risk class="trust" id="3">
+					Trust Risk
+					</risk>
    </group>
 </diagram>
