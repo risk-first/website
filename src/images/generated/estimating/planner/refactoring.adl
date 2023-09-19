@@ -8,12 +8,6 @@
 				Complete The Premium-Tier
 				Upgrade
 			</description>
-      <risk class="generic"
-            href="/public/templates/risk-first/redesign/risks/goal_v2.svg"
-            id="2">
-         <code id="co2">Goal</code>
-         <title id="title2">50K Subscribers By Q4</title>
-      </risk>
       <mitigated id="37">
          <risk href="/public/templates/risk-first/redesign/risks/communication_risk_v2.svg"
                id="communication">
@@ -27,13 +21,19 @@
 				Subscriptions</action>
    </group>
    <group id="9">
+      <risk class="generic"
+            href="/public/templates/risk-first/redesign/risks/goal_v2.svg"
+            id="2">
+         <code id="co2">Goal</code>
+         <title id="title2">50K Subscribers By Q4</title>
+      </risk>
    </group>
    <align id="5-0" style="--kite9-direction: right;">
       <from id="5-0-0" reference="communication"/>
       <to id="5-0-1" reference="3"/>
    </align>
-   <align id="35" style="--kite9-direction: right; ">
-      <from id="35-0" reference="8"/>
-      <to id="35-1" reference="2"/>
+   <align id="5-1" style="--kite9-direction: right;">
+      <from id="5-1-0" reference="3"/>
+      <to id="5-1-1" reference="2"/>
    </align>
 </diagram>
