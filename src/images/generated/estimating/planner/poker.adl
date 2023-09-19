@@ -1,16 +1,23 @@
-<diagram
-	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
-	xmlns="http://www.kite9.org/schema/adl"
-	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia">
-
-  <action id="2">Estimating</action><group style="--kite9-text-bounds-width: 250pt; --kite9-vertical-sizing: maximize;" id="5">
-          <description id="5-1">Because estimating is so hard it fails often.  These visible failures cause stakeholders to
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram xmlns="http://www.kite9.org/schema/adl"
+         xmlns:xslt="http://www.kite9.org/schema/xslt"
+         id="dia"
+         xslt:template="/public/templates/risk-first/risk-first-template.xsl">
+   <action id="2">Estimating</action>
+   <group id="5"
+          style="--kite9-text-bounds-width: 250pt; --kite9-vertical-sizing: maximize; --kite9-layout: down; ">
+      <description id="5-1">Because estimating is so hard it fails often.  These visible failures cause stakeholders to
 lose faith in the development team</description>
-			  <risk class="trust" id="3">
+      <risk class="trust" id="3">
 					Trust Risk
-					</risk></group><group style="--kite9-text-bounds-width: 250pt;  --kite9-vertical-sizing: maximize;" xmlns="http://www.kite9.org/schema/adl" id="1">
-          <risk class="conceptual-integrity" id="4">Conceptual
+					</risk>
+   </group>
+   <group id="1"
+          style="--kite9-text-bounds-width: 250pt; --kite9-vertical-sizing: maximize; --kite9-layout: down; ">
+      <risk class="conceptual-integrity" id="4">Conceptual
 						Integrity Risk
-					</risk><description id="1-1">Estimating sprints means we are always
+					</risk>
+      <description id="1-1">Estimating sprints means we are always
 focusing on the short-term, rather than making the right long-term decisions about what the product should  do.</description>
-			  </group></diagram>
+   </group>
+</diagram>
