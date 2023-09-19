@@ -3,18 +3,18 @@
          xmlns:xslt="http://www.kite9.org/schema/xslt"
          id="dia"
          xslt:template="/public/templates/risk-first/risk-first-template.xsl">
-   <action id="1">Build A Search Function</action>
-   <group id="6">
-      <description id="6-1">ElasticSearch</description>
-      <risk class="software-dependency" id="3">Software Dependency Risk
-					</risk>
-   </group>
-   <group id="16">
+   <group id="16" style="--kite9-layout: down; ">
       <description id="16-1">Many users are asking for this feature, 
 which is available in a competitor's product </description>
       <mitigated id="2">
          <risk class="feature" id="15">Feature Risk</risk>
       </mitigated>
+   </group>
+   <action id="1">Build A Search Function</action>
+   <group id="6">
+      <description id="6-1">ElasticSearch</description>
+      <risk class="software-dependency" id="3">Software Dependency Risk
+					</risk>
    </group>
    <align id="4-0" style="--kite9-direction: right;">
       <from id="4-0-1" reference="15"/>
@@ -23,9 +23,5 @@ which is available in a competitor's product </description>
    <align id="4-1" style="--kite9-direction: right;">
       <from id="4-1-1" reference="1"/>
       <to id="4-1-3" reference="3"/>
-   </align>
-   <align id="7" style="--kite9-direction: left; ">
-      <from id="7-0" reference="1"/>
-      <to id="7-1" reference="16"/>
    </align>
 </diagram>
