@@ -1,30 +1,24 @@
-<diagram
-	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
-	xmlns="http://www.kite9.org/schema/adl"
-	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
-	 style="--kite9-layout: right;  --kite9-min-width: 900pt;">
-
-     <container xmlns="http://www.kite9.org/schema/adl" id="c" bordered="true">
-	<mitigated>
-        <risk class="feature"/>
-	</mitigated>
-
-      <label id="1">
-        <text>Development Team</text>
-        <symbols/>
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram xmlns="http://www.kite9.org/schema/adl"
+         xmlns:xslt="http://www.kite9.org/schema/xslt"
+         id="dia"
+         style="--kite9-layout: right;  --kite9-min-width: 900pt;"
+         xslt:template="/public/templates/risk-first/risk-first-template.xsl">
+   <container bordered="true" id="c">
+      <mitigated>
+         <risk class="feature"/>
+      </mitigated>
+      <label id="1">Development Team
       </label>
-    </container>
-
-    <group style="--kite9-sizing: minimize; ">
-      <action><text>Meet Reality</text></action>
-    </group>
-    
-      <container style="--kite9-horizontal-align: left; " id="e" bordered="true">
-        <risk class="schedule"/>
-      <label id="id_16">
-        <text>Stakeholders</text>
-        <symbols/>
+   </container>
+   <group style="--kite9-sizing: minimize; ">
+      <action>
+         <text>Meet Reality</text>
+      </action>
+   </group>
+   <container bordered="true" id="e" style="--kite9-horizontal-align: left; ">
+      <risk class="schedule"/>
+      <label id="id_16">Stakeholders
       </label>
-    </container>
-
- </diagram>
+   </container>
+</diagram>
