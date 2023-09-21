@@ -5,7 +5,7 @@
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
     style="--kite9-layout: right;">
     
-      <context bordered="true" id="c">
+      <container bordered="true" id="c">
          <mitigated>
             <risk class="feature"/>
          </mitigated>
@@ -13,8 +13,8 @@
             <text>Client</text>
             <symbols/>
          </label>
-      </context>
-      <context bordered="true" id="d">
+      </container>
+      <container bordered="true" id="d">
          <mitigated>
             <risk class="funding"/>
          </mitigated>
@@ -22,22 +22,22 @@
             <text>Supplier</text>
             <symbols/>
          </label>
-      </context>
+      </container>
       <group>
          <action>Accept Estimate</action>
       </group>
-      <context bordered="true" id="e">
+      <container bordered="true" id="e">
          <risk class="funding"/>
          <label id="id_16-hz">
             <text>Client</text>
             <symbols/>
          </label>
-      </context>
-      <context bordered="true" id="f">
+      </container>
+      <container bordered="true" id="f">
          <risk class="feature"/>
          <label id="id_16-dz">
             <text>Supplier</text>
             <symbols/>
          </label>
-      </context>
+      </container>
    </diagram>

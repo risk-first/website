@@ -3,7 +3,7 @@
 	xmlns="http://www.kite9.org/schema/adl"
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
     style="--kite9-min-width: 900pt;">
-      <context bordered="true" id="c">
+      <container bordered="true" id="c">
          <mitigated>
             <risk class="schedule"/>
          </mitigated>
@@ -14,9 +14,9 @@
             <text>Internal Model</text>
             <symbols/>
          </label>
-      </context>
+      </container>
       <action style="--kite9-horizontal-align: left;">Estimation</action>
-      <context id="d" style="--kite9-sizing: maximize; --kite9-layout: vertical; ">
+      <container id="d" style="--kite9-sizing: maximize; --kite9-layout: vertical; ">
          <group style="--kite9-layout: horizontal; ">
             <risk class="invisibility"/>
             <risk class="complexity"/>
@@ -31,5 +31,5 @@
             <text>Attendant Risks</text>
             <symbols/>
          </label>
-      </context>
+      </container>
    </diagram>

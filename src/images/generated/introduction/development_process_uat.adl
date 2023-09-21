@@ -5,14 +5,14 @@
     style="--kite9-layout: right; --kite9-min-width: 900pt;">
     
       <group style="--kite9-layout: down">
-         <context bordered="true" id="c">
+         <container bordered="true" id="c">
             <risk class="goal" id="id_0">Feature X</risk>
             <risk class="mitigated">Breaks Feature Y</risk>
             <label id="id_16">
                <text>Internal Model</text>
                <symbols/>
             </label>
-         </context>
+         </container>
          <group id="reality" style="--kite9-layout: right">
             <artifact>Product To Test</artifact>
             <users>Users</users>
@@ -21,14 +21,14 @@
       <action>User Acceptance</action>
       <group style="--kite9-layout: down">
          <group style="--kite9-layout: right">
-            <context id="d">
+            <container id="d">
                <risk class="attendant">Schedule Risks</risk>
                <label id="4">
                   <text>Attendant Risks</text>
                   <symbols/>
                </label>
-            </context>
-            <context id="d-uc">
+            </container>
+            <container id="d-uc">
                <hidden>
                   <risk class="attendant">Difficulty 
           Finding Feature</risk>
@@ -37,7 +37,7 @@
                   <text>Hidden Risks</text>
                   <symbols/>
                </label>
-            </context>
+            </container>
          </group>
          <artifact>Test Results</artifact>
       </group>

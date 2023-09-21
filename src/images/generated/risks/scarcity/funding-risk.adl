@@ -3,7 +3,7 @@
 	xmlns="http://www.kite9.org/schema/adl"
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
     style="--kite9-min-width: 900pt; ">
-      <context bordered="true"
+      <container bordered="true"
                id="c"
                style="--kite9-layout: right; --kite9-horizontal-align: center; --kite9-sizing: minimize; ">
          <mitigated>
@@ -13,13 +13,13 @@
             <text>Internal Model</text>
             <symbols/>
          </label>
-      </context>
+      </container>
       <group style="--kite9-layout: down; --kite9-horizontal-align: left; ">
          <action>
             <label>Raising Capital</label>
          </action>
       </group>
-      <context bordered="true"
+      <container bordered="true"
                id="c-kg"
                style="--kite9-layout: right; --kite9-horizontal-align: center; --kite9-sizing: minimize; ">
          <risk class="schedule"/>
@@ -29,5 +29,5 @@
             <text>Attendant Risks</text>
             <symbols/>
          </label>
-      </context>
+      </container>
    </diagram>

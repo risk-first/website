@@ -4,7 +4,7 @@
 	xmlns="http://www.kite9.org/schema/adl"
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia">
 
-    <context id="d" style="--kite9-sizing: maximize; --kite9-layout: vertical; ">
+    <container id="d" style="--kite9-sizing: maximize; --kite9-layout: vertical; ">
       <mitigated>
         <risk class="market" />
       </mitigated>
@@ -14,17 +14,17 @@
       <label id="id_16">
         <text>Payoff</text>
       </label>
-    </context>
+    </container>
     
     <action style="--kite9-horizontal-align: left;">MVP</action>
 
-    <context id="c" bordered="true"  style="--kite9-sizing: maximize; --kite9-layout: vertical; ">
+    <container id="c" bordered="true"  style="--kite9-sizing: maximize; --kite9-layout: vertical; ">
       <risk class="funding" />
       <description>... but the market might not exist, or competitors may beat you to it, and the bet is lost.</description>
     
       <label id="id_17">
         <text>Stake</text>
       </label>
-    </context>
+    </container>
 
   </diagram>

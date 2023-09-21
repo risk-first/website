@@ -4,7 +4,7 @@
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
     style="--kite9-min-width: 800pt;">
     <group style="--kite9-layout: down">
-    <context id="c" bordered="true" style="--kite9-layout: down; ">
+    <container id="c" bordered="true" style="--kite9-layout: down; ">
 
       <mitigated>
         <risk class="operational" />
@@ -14,7 +14,7 @@
         <text>Internal Model</text>
         <symbols />
       </label>
-    </context>
+    </container>
     
     <artifact>Operational
     Context</artifact>
@@ -31,14 +31,14 @@
 
     <group style="--kite9-layout: down">
 
-      <context id="d">
+      <container id="d">
         <risk class="complexity" />
 
         <label id="4">
           <text>Attendant Risks</text>
           <symbols />
         </label>
-      </context>
+      </container>
       <group style="--kite9-layout: right">
         <artifact>KPIs</artifact>
         <artifact>Audit Reports</artifact>

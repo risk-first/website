@@ -4,7 +4,7 @@
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
 	 style="--kite9-layout: right;  --kite9-min-width: 900pt;">
 
-     <context xmlns="http://www.kite9.org/schema/adl" id="c" bordered="true">
+     <container xmlns="http://www.kite9.org/schema/adl" id="c" bordered="true">
 	<mitigated>
         <risk class="feature"/>
 	</mitigated>
@@ -13,18 +13,18 @@
         <text>Development Team</text>
         <symbols/>
       </label>
-    </context>
+    </container>
 
     <group style="--kite9-sizing: minimize; ">
       <action><text>Meet Reality</text></action>
     </group>
     
-      <context style="--kite9-horizontal-align: left; " id="e" bordered="true">
+      <container style="--kite9-horizontal-align: left; " id="e" bordered="true">
         <risk class="schedule"/>
       <label id="id_16">
         <text>Stakeholders</text>
         <symbols/>
       </label>
-    </context>
+    </container>
 
  </diagram>

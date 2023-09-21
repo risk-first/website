@@ -4,7 +4,7 @@
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia">
       <group style="--kite9-layout: down; ">
          <group style="--kite9-layout: right; ">
-            <context id="c1"
+            <container id="c1"
                      style="--kite9-sizing: minimize; --kite9-horizontal-align: right;">
                <risk class="funding"/>
                <risk class="process"/>
@@ -13,11 +13,11 @@
                   <text>Attendant Risks</text>
                   <symbols/>
                </label>
-            </context>
+            </container>
             <action class="left" id="a1" style="--kite9-min-width: 180pt;">Commercial Solution</action>
          </group>
          <group style="--kite9-layout: right; ">
-            <context id="c2"
+            <container id="c2"
                      style="--kite9-sizing: minimize; --kite9-horizontal-align: right;">
                <risk class="boundary"/>
                <risk class="learning-curve" id="l2"/>
@@ -25,12 +25,12 @@
                   <text>Attendant Risks</text>
                   <symbols/>
                </label>
-            </context>
+            </container>
             <action class="left" id="a2" style="--kite9-min-width: 180pt;">Use Open Source
         </action>
          </group>
       </group>
-      <context bordered="true" id="c">
+      <container bordered="true" id="c">
          <mitigated>
             <risk class="attendant">Feature X
         Not Available
@@ -40,11 +40,11 @@
             <text>Internal Model</text>
             <symbols/>
          </label>
-      </context>
+      </container>
       <group style="--kite9-layout: down; ">
          <group style="--kite9-layout: right; ">
             <action id="a3" style="--kite9-min-width: 180pt;">Build it Yourself</action>
-            <context id="c3"
+            <container id="c3"
                      style="--kite9-sizing: minimize; --kite9-horizontal-align: left;">
                <risk class="implementation" id="r1"/>
                <risk class="schedule"/>
@@ -53,11 +53,11 @@
                   <text>Attendant Risks</text>
                   <symbols/>
                </label>
-            </context>
+            </container>
          </group>
          <group style="--kite9-layout: right; ">
             <action id="a4" style="--kite9-min-width: 180pt;">Employ SaaS </action>
-            <context id="c4"
+            <container id="c4"
                      style="--kite9-sizing: minimize; --kite9-horizontal-align: left;">
                <risk class="security" id="r2"/>
                <risk class="boundary"/>
@@ -66,7 +66,7 @@
                   <text>Attendant Risks</text>
                   <symbols/>
                </label>
-            </context>
+            </container>
          </group>
       </group>
    </diagram>

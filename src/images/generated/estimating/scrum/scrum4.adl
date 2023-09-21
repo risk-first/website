@@ -3,7 +3,7 @@
 	xmlns="http://www.kite9.org/schema/adl"
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
     style="--kite9-layout: right; --kite9-min-width: 900pt;">
-      <context bordered="true" id="c">
+      <container bordered="true" id="c">
          <mitigated>
             <risk class="feature"/>
          </mitigated>
@@ -11,13 +11,13 @@
             <text>Development Team</text>
             <symbols/>
          </label>
-      </context>
+      </container>
       <group>
          <action>
             <text>Meet Reality</text>
          </action>
       </group>
-      <context bordered="true" id="e">
+      <container bordered="true" id="e">
          <mitigated>
             <risk class="schedule"/>
          </mitigated>
@@ -25,13 +25,13 @@
             <text>Stakeholders</text>
             <symbols/>
          </label>
-      </context>
+      </container>
       <group>
          <action>
             <text>Time-Boxing</text>
          </action>
       </group>
-      <context bordered="true" id="e-gk">
+      <container bordered="true" id="e-gk">
          <mitigated>
             <risk class="coordination"/>
          </mitigated>
@@ -39,7 +39,7 @@
             <text>Development Team</text>
             <symbols/>
          </label>
-      </context>
+      </container>
       <group>
          <action style="--kite9-horizontal-align: left; ">
             <text>Planning Poker / 

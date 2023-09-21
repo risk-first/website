@@ -4,7 +4,7 @@
 	xmlns="http://www.kite9.org/schema/adl"
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia">
 
-      <context bordered="true" id="c" style="--kite9-layout: down; ">
+      <container bordered="true" id="c" style="--kite9-layout: down; ">
          <group style="--kite9-layout: right; ">
             <mitigated>
                <risk class="attendant">Rework</risk>
@@ -30,13 +30,13 @@
             <text>Internal Model</text>
             <symbols/>
          </label>
-      </context>
+      </container>
       <group style="--kite9-layout: down; --kite9-horizontal-align: left; ">
          <action style="--kite9-horizontal-align: left; --kite9-min-width: 200pt;">Requirements Capture</action>
          <action style="--kite9-horizontal-align: left; --kite9-min-width: 200pt;">Specification</action>
          <action style="--kite9-horizontal-align: left; --kite9-min-width: 200pt;">Fixed Price Contracts</action>
       </group>
-      <context bordered="true" id="c-ug">
+      <container bordered="true" id="c-ug">
          <risk class="attendant">Requirements
         Changes
       </risk>
@@ -50,7 +50,7 @@
             <text>Attendant Risks</text>
             <symbols/>
          </label>
-      </context>
+      </container>
       <link>
          <from reference="1"/>
          <to shape="arrow" reference="2"/>

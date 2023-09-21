@@ -7,7 +7,7 @@
 
     <group style="--kite9-layout: down">
 
-      <context id="c" bordered="true">
+      <container id="c" bordered="true">
 
         <risk id="id_0" class="goal">Feature X</risk>
         <mitigated>
@@ -21,7 +21,7 @@
           <text>Initial Internal Model</text>
           <symbols />
         </label>
-      </context>
+      </container>
 
       <group id="reality" style="--kite9-layout: right">
         <artifact>Artifact 1</artifact>
@@ -34,7 +34,7 @@
 
     <group style="--kite9-layout: down">
 
-      <context id="d">
+      <container id="d">
         <risk class="attendant">Discovered Risk</risk>
         <hidden>
           <risk class="attendant">Hidden Risk</risk>
@@ -43,7 +43,7 @@
           <text>Resulting Internal Model</text>
           <symbols />
         </label>
-      </context>
+      </container>
 
       <artifact>Results</artifact>
     </group>

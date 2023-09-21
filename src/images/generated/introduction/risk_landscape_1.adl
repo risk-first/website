@@ -4,7 +4,7 @@
 	xmlns="http://www.kite9.org/schema/adl"
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
     style="--kite9-min-width: 900pt;">
-      <context bordered="true" id="c">
+      <container bordered="true" id="c">
          <mitigated>
             <risk class="attendant" id="id_0">Worse Risks</risk>
          </mitigated>
@@ -13,9 +13,9 @@
         Before Action</text>
             <symbols/>
          </label>
-      </context>
+      </container>
       <action>Taking Action</action>
-      <context bordered="true" id="c-ui">
+      <container bordered="true" id="c-ui">
          <risk class="attendant" id="id_0-bx">Better
        Risks</risk>
          <label id="id_16-bu">
@@ -23,5 +23,5 @@
         After Action</text>
             <symbols/>
          </label>
-      </context>
+      </container>
    </diagram>

@@ -4,7 +4,7 @@
 	xmlns="http://www.kite9.org/schema/adl"
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia">
 
-      <context bordered="true" id="c" style="--kite9-sizing: minimize;">
+      <container bordered="true" id="c" style="--kite9-sizing: minimize;">
          <mitigated>
             <risk class="funding"/>
          </mitigated>
@@ -12,9 +12,9 @@
             <text>Internal Model</text>
             <symbols/>
          </label>
-      </context>
+      </container>
       <action>Launch Online Service</action>
-      <context bordered="true" id="c-do">
+      <container bordered="true" id="c-do">
          <group style="--kite9-layout: down">
             <group style="--kite9-layout: right">
                <risk class="attendant">User Access</risk>
@@ -37,5 +37,5 @@
             <text>Internal Model</text>
             <symbols/>
          </label>
-      </context>
+      </container>
    </diagram>

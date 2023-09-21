@@ -5,7 +5,7 @@
     style="--kite9-layout: right;">
       <group style="--kite9-layout: down">
          <group style="--kite9-layout: right">
-            <context bordered="true" id="c" style="--kite9-sizing: minimize;">
+            <container bordered="true" id="c" style="--kite9-sizing: minimize;">
                <mitigated>
                   <risk class="feature"/>
                </mitigated>
@@ -19,11 +19,11 @@
                   <text>Internal Model</text>
                   <symbols/>
                </label>
-            </context>
+            </container>
             <group>
                <action id="a1" style="--kite9-min-width: 150pt; ">1x Action</action>
             </group>
-            <context id="d">
+            <container id="d">
                <risk class="schedule"/>
                <risk class="complexity"/>
                <risk class="implementation"/>
@@ -32,10 +32,10 @@
                   <text>Attendant Risks</text>
                   <symbols/>
                </label>
-            </context>
+            </container>
          </group>
          <group style="--kite9-layout: right">
-            <context bordered="true"
+            <container bordered="true"
                      id="c-vc"
                      style="--kite9-sizing: minimize; --kite9-horizontal-align: right; ">
                <mitigated>
@@ -45,16 +45,16 @@
                   <text>Internal Model</text>
                   <symbols/>
                </label>
-            </context>
+            </container>
             <action id="a2" style="--kite9-min-width: 150pt; ">10x Action</action>
-            <context id="d-sf"
+            <container id="d-sf"
                      style="--kite9-horizontal-align: left; --kite9-sizing: minimize;">
                <risk class="schedule"/>
                <label id="4-tr" style="--kite9-horizontal-align: center;">
                   <text>Attendant Risks</text>
                   <symbols/>
                </label>
-            </context>
+            </container>
          </group>
       </group>
       <link class="invisible">

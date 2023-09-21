@@ -2,7 +2,7 @@
 	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
 	xmlns="http://www.kite9.org/schema/adl"
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia">
-      <context id="d" style="--kite9-sizing: maximize; --kite9-layout: down ">
+      <container id="d" style="--kite9-sizing: maximize; --kite9-layout: down ">
          <group style="kite-layout: right; ">
             <mitigated>
                <risk class="attendant">
@@ -16,10 +16,10 @@
          <label id="id_17">
             <text>Payoff</text>
          </label>
-      </context>
+      </container>
       <action style="--kite9-horizontal-align: left;">Use Other App's
 		Identity</action>
-      <context bordered="true"
+      <container bordered="true"
                id="c"
                style="--kite9-sizing: maximize; --kite9-layout: vertical; ">
          <group>
@@ -30,5 +30,5 @@
          <label id="id_17-xg">
             <text>Stake</text>
          </label>
-      </context>
+      </container>
    </diagram>

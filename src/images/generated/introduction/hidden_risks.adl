@@ -4,16 +4,16 @@
 	xmlns="http://www.kite9.org/schema/adl"
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
     style="--kite9-min-width: 900pt;">
-      <context bordered="true" id="c">
+      <container bordered="true" id="c">
          <risk class="goal" id="id_0">Successful Party</risk>
          <label id="id_16">
             <text>Internal Model</text>
             <symbols/>
          </label>
-      </context>
+      </container>
       <action>Host A Party</action>
       <group style="--kite9-layout: down; ">
-         <context bordered="true" id="c-kb" style="--kite9-layout: right; ">
+         <container bordered="true" id="c-kb" style="--kite9-layout: right; ">
             <risk class="attendant" id="id_0-wo">Nothing To Eat</risk>
             <risk class="attendant" id="id_0-lh">Wrong
           Ingredients
@@ -23,8 +23,8 @@
                <text>Attendant Risks</text>
                <symbols/>
             </label>
-         </context>
-         <context bordered="true" id="c2" style="--kite9-layout: right; ">
+         </container>
+         <container bordered="true" id="c2" style="--kite9-layout: right; ">
             <hidden>
                <risk class="attendant" id="id_0-fa">Old Eggs
             Don't Poach
@@ -37,6 +37,6 @@
                <text>Hidden Risks</text>
                <symbols/>
             </label>
-         </context>
+         </container>
       </group>
    </diagram>

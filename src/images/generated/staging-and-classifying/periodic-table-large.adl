@@ -32,7 +32,7 @@
       </cell>
 
       <cell style="--kite9-occupies: 1 1 0 1; --kite9-layout: right; ">
-        <context style="--kite9-layout: down; --kite9-sizing: maximize;">
+        <container style="--kite9-layout: down; --kite9-sizing: maximize;">
           <group style="--kite9-layout: right; ">
             <risk class="feature-fit" />
             <risk class="implementation" />
@@ -42,9 +42,9 @@
             <text>Fit</text>
             <symbols />
           </label>
-        </context>
+        </container>
 
-        <context style="--kite9-layout: down; --kite9-sizing: maximize; ">
+        <container style="--kite9-layout: down; --kite9-sizing: maximize; ">
           <risk class="market" />
           <risk class="feature-access" />
 
@@ -52,10 +52,10 @@
             <text>Audience</text>
             <symbols />
           </label>
-        </context>
+        </container>
 
 
-        <context style="--kite9-layout: down; --kite9-sizing: maximize; ">
+        <container style="--kite9-layout: down; --kite9-sizing: maximize; ">
           <risk class="regression" />
           <risk class="feature-drift" />
 
@@ -63,38 +63,38 @@
             <text>Evolution</text>
             <symbols />
           </label>
-        </context>
+        </container>
       </cell>
 
 
       <cell style="--kite9-occupies: 1 1 2 3; " class="shaded">
         <group style="--kite9-layout: right; ">
-          <context style="--kite9-layout: down ">
+          <container style="--kite9-layout: down ">
             <risk class="internal-model" />
             <risk class="learning-curve" id="learning-curve" />
             <label>
               <text>Internal Model</text>
               <symbols />
             </label>
-          </context>
+          </container>
 
-          <context style="--kite9-layout: down; --kite9-sizing: maximize; ">
+          <container style="--kite9-layout: down; --kite9-sizing: maximize; ">
             <risk class="message" />
             <risk class="invisibility" id="invisibility" />
             <label>
               <text>Message</text>
               <symbols />
             </label>
-          </context>
+          </container>
           
-          <context style="--kite9-layout: down; --kite9-sizing: maximize; ">
+          <container style="--kite9-layout: down; --kite9-sizing: maximize; ">
             <risk class="protocol" id="protocol" />
             <label>
               <text>Protocol</text>
               <symbols />
             </label>
-          </context>
-          <context style="--kite9-layout: down; --kite9-sizing: maximize;">
+          </container>
+          <container style="--kite9-layout: down; --kite9-sizing: maximize;">
 
             <risk class="channel" id="channel" />
 
@@ -103,7 +103,7 @@
               <symbols />
             </label>
 
-          </context>
+          </container>
         </group>
 
       </cell>
@@ -119,7 +119,7 @@
       </cell>
 
       <cell style="--kite9-occupies: 1 1 6 7; --kite9-layout: right; ">
-        <context style="--kite9-layout: right; --kite9-sizing: maximize;  ">
+        <container style="--kite9-layout: right; --kite9-sizing: maximize;  ">
           <group style="--kite9-layout: down; ">
             <risk class="scarcity" />
             <risk class="funding" />
@@ -134,7 +134,7 @@
             <text>Scarcity</text>
             <symbols />
           </label>
-        </context>
+        </container>
 
         <group style="--kite9-layout: down; ">
           <risk class="deadline" />

@@ -3,7 +3,7 @@
 	xmlns="http://www.kite9.org/schema/adl"
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
     style="--kite9-min-width: 900pt">
-      <context id="c">
+      <container id="c">
          <mitigated>
             <risk class="red-queen"/>
          </mitigated>
@@ -11,18 +11,18 @@
             <text>Internal Model</text>
             <symbols/>
          </label>
-      </context>
+      </container>
       <group style="--kite9-layout: down; --kite9-horizontal-align: left; ">
          <action>
             <label>Change</label>
          </action>
       </group>
-      <context id="c-cs">
+      <container id="c-cs">
          <risk class="funding"/>
          <risk class="schedule"/>
          <label id="id_16-vo">
             <text>Attendant Risk</text>
             <symbols/>
          </label>
-      </context>
+      </container>
    </diagram>

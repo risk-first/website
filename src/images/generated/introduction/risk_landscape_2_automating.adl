@@ -4,16 +4,16 @@
 	xmlns="http://www.kite9.org/schema/adl"
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
     style="--kite9-min-width: 900pt;">
-      <context bordered="true" id="c">
+      <container bordered="true" id="c">
          <risk class="attendant" id="id_0">Wasted Time</risk>
          <risk class="attendant" id="id_0-vc">Morale Loss</risk>
          <label id="id_16">
             <text>Internal Model</text>
             <symbols/>
          </label>
-      </context>
+      </container>
       <action>Automate Process</action>
-      <context bordered="true" id="c-hc">
+      <container bordered="true" id="c-hc">
          <hidden>
             <risk class="complexity"/>
          </hidden>
@@ -24,5 +24,5 @@
             <text>Hidden Risks</text>
             <symbols/>
          </label>
-      </context>
+      </container>
    </diagram>

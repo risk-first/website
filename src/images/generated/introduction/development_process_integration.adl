@@ -7,7 +7,7 @@
 
     <group style="--kite9-layout: down">
     
-      <context id="c" bordered="true" style="kite-horizontal-align: left; ">
+      <container id="c" bordered="true" style="kite-horizontal-align: left; ">
         <risk id="id_0" class="goal">Feature X</risk> 
         <mitigated>
           <risk class="mitigated">Incorrect 
@@ -21,7 +21,7 @@
           <text>Internal Model</text>
           <symbols />
         </label>
-      </context>     
+      </container>     
 
       <group id="reality" style="--kite9-layout: right">
         <artifact>Code</artifact>
@@ -33,7 +33,7 @@
     
     <group style="--kite9-layout: down">
 
-      <context id="d" style="kite-horizontal-align: right; ">
+      <container id="d" style="kite-horizontal-align: right; ">
         <hidden>
           <risk class="attendant">Breaks Feature Y</risk>
         </hidden>
@@ -41,7 +41,7 @@
           <text>Internal Model</text>
           <symbols />
         </label>
-      </context>
+      </container>
       
       <artifact>Integrated Code</artifact>
     </group>

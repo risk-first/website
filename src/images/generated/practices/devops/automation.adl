@@ -3,7 +3,7 @@
 	xmlns="http://www.kite9.org/schema/adl"
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia">
 
-  <context id="c" bordered="true">
+  <container id="c" bordered="true">
     <group  style="--kite9-layout: down; ">
       <mitigated>
         <risk class="feature-fit" style="--kite9-horizontal-align: left;"/>
@@ -13,14 +13,14 @@
       <description>DevOps is essentially the idea that improved automation and testing will reduce operational risk
       and increase value to customers...</description>
     </group>
-  </context>
+  </container>
 
   <group style="--kite9-layout: down; --kite9-horizontal-align: down;">
     <action style="--kite9-horizontal-align: left;">Automation</action>
     <action style="--kite9-horizontal-align: left;">Automated Tests</action>
   </group>
   
-  <context id="d" style="--kite9-sizing: maximize; --kite9-layout: down; ">
+  <container id="d" style="--kite9-sizing: maximize; --kite9-layout: down; ">
   
     <group  style="--kite9-layout: right; ">
       <risk class="agency" />
@@ -28,7 +28,7 @@
     
     <description>.. but automation usually requires reducing or removing controls, giving developers more agency.</description>
 
-  </context>
+  </container>
 
 
   </diagram>

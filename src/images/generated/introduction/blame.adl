@@ -3,7 +3,7 @@
 	xmlns="http://www.kite9.org/schema/adl"
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia">
 
-      <context bordered="true" id="c" style="--kite9-layout: right; ">
+      <container bordered="true" id="c" style="--kite9-layout: right; ">
          <mitigated>
             <risk class="attendant">Can't Pay Mortgage</risk>
          </mitigated>
@@ -15,13 +15,13 @@
             <text>Jim's Internal Model</text>
             <symbols/>
          </label>
-      </context>
+      </container>
       <action id="a1">Blame</action>
-      <context id="d1" style="--kite9-layout: right; --kite9-sizing: maximize;">
+      <container id="d1" style="--kite9-layout: right; --kite9-sizing: maximize;">
          <risk class="attendant">Money</risk>
          <label id="id_16-xc">
             <text>Bob's Attendant Risks</text>
             <symbols/>
          </label>
-      </context>
+      </container>
    </diagram>

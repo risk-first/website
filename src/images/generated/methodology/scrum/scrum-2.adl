@@ -4,7 +4,7 @@
 	xmlns="http://www.kite9.org/schema/adl"
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
     style="--kite9-layout: right; --kite9-min-width: 900pt; ">
-      <context bordered="true" id="c" style="--kite9-layout: down;">
+      <container bordered="true" id="c" style="--kite9-layout: down;">
          <group id="g1" style="--kite9-layout: right;  --kite9-connection-align: 50%; ">
             <mitigated>
                <risk class="coordination"/>
@@ -14,18 +14,18 @@
          <label id="id_16">
             <text>Payoff</text>
          </label>
-      </context>
+      </container>
       <group style="--kite9-layout: down;">
          <action style="--kite9-margin: 10pt; --kite9-horizontal-align: left; --kite9-min-width: 200pt;">Retrospectives</action>
          <action style="--kite9-margin: 10pt; --kite9-horizontal-align: left; --kite9-min-width: 200pt;">Standups</action>
          <action style="--kite9-margin: 10pt; --kite9-horizontal-align: left; --kite9-min-width: 200pt;">Planning Poker</action>
          <action style="--kite9-margin: 10pt; --kite9-horizontal-align: left; --kite9-min-width: 200pt;">Scrum Goal</action>
       </group>
-      <context bordered="true" id="c-qg" style="--kite9-layout: down; ">
+      <container bordered="true" id="c-qg" style="--kite9-layout: down; ">
          <risk class="schedule"/>
          <description>... but these all take time and effort from everyone in the team.</description>
          <label id="id_16-jr">
             <text>Stake</text>
          </label>
-      </context>
+      </container>
    </diagram>

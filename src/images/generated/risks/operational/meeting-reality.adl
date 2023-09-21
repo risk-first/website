@@ -4,7 +4,7 @@
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
     style="--kite9-min-width: 800pt;">
 
-  <context id="c" bordered="true" style="--kite9-layout: down; ">
+  <container id="c" bordered="true" style="--kite9-layout: down; ">
 
     <mitigated>
       <risk class="operational" />
@@ -14,7 +14,7 @@
       <text>Internal Model</text>
       <symbols />
     </label>
-  </context>
+  </container>
 
   <group style="--kite9-layout: down; --kite9-horizontal-align: left;">
     <action>Meeting Reality</action>
@@ -22,7 +22,7 @@
   
      <group style="--kite9-layout: down">
 
-      <context id="d">
+      <container id="d">
         <risk class="hidden" />
         <risk class="trust" />
 
@@ -30,7 +30,7 @@
           <text>Attendant Risks</text>
           <symbols />
         </label>
-      </context>
+      </container>
       <group style="--kite9-layout: right">
         <artifact>Releases</artifact>
         <artifact>Feedback</artifact>

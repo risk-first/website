@@ -2,7 +2,7 @@
 	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
 	xmlns="http://www.kite9.org/schema/adl"
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia">
-      <context id="d" style="--kite9-sizing: maximize; --kite9-layout: down ">
+      <container id="d" style="--kite9-sizing: maximize; --kite9-layout: down ">
          <mitigated>
             <risk class="attendant">
        H1
@@ -13,10 +13,10 @@
          <label id="id_17">
             <text>Payoff</text>
          </label>
-      </context>
+      </container>
       <action style="--kite9-horizontal-align: left;">Curl 
     	with Broken Token</action>
-      <context bordered="true"
+      <container bordered="true"
                id="c"
                style="--kite9-sizing: maximize; --kite9-layout: vertical; ">
          <group>
@@ -26,5 +26,5 @@
          <label id="id_17-mv">
             <text>Stake</text>
          </label>
-      </context>
+      </container>
    </diagram>

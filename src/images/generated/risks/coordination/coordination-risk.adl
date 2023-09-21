@@ -3,7 +3,7 @@
 	xmlns="http://www.kite9.org/schema/adl"
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
             style="--kite9-min-width: 800pt;">
-      <context bordered="true" id="c" style="--kite9-layout: down; ">
+      <container bordered="true" id="c" style="--kite9-layout: down; ">
          <mitigated>
             <risk class="coordination"/>
          </mitigated>
@@ -12,13 +12,13 @@
             <text>Internal Model</text>
             <symbols/>
          </label>
-      </context>
+      </container>
       <group style="--kite9-layout: down; --kite9-horizontal-align: left;">
          <action>Communication</action>
          <action>Rules &amp; Protocols</action>
          <action>Organisation</action>
       </group>
-      <context id="d">
+      <container id="d">
          <risk class="communication"/>
          <risk class="invisibility"/>
          <risk class="agency"/>
@@ -27,5 +27,5 @@
             <text>Attendant Risks</text>
             <symbols/>
          </label>
-      </context>
+      </container>
    </diagram>

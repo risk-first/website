@@ -4,7 +4,7 @@
 	xmlns="http://www.kite9.org/schema/adl"
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia">
 
-      <context bordered="true" id="c">
+      <container bordered="true" id="c">
          <mitigated>
             <risk class="attendant" id="id_0">Personal
          Blame</risk>
@@ -15,16 +15,16 @@
            Risks</risk>
             </hidden>
          </mitigated>
-      </context>
+      </container>
       <action>Follow Methodology</action>
-      <context bordered="true" id="c-hp">
+      <container bordered="true" id="c-hp">
          <risk class="attendant" id="id_1">Inappropriate
         Methodology
       </risk>
          <risk class="attendant" id="id_2">Schedule /
         Cost Risk
       </risk>
-      </context>
+      </container>
       <link>
          <from reference="id_1"/>
          <to shape="arrow" reference="id_2"/>

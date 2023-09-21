@@ -3,7 +3,7 @@
 	xmlns="http://www.kite9.org/schema/adl"
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia">
 
-  <context id="c" bordered="true">
+  <container id="c" bordered="true">
     <group  style="--kite9-layout: down; ">
       <mitigated>
         <risk class="regression" style="--kite9-horizontal-align: left;"/>
@@ -12,13 +12,13 @@
       
       <description>Unit tests help us avoid operational risk, and prevent regressions...</description>
     </group>
-  </context>
+  </container>
 
   <group style="--kite9-layout: down; --kite9-horizontal-align: left;">
     <action style="--kite9-horizontal-align: left;">Unit Testing</action>
   </group>
   
-  <context id="d" style="--kite9-sizing: maximize; --kite9-layout: down; ">
+  <container id="d" style="--kite9-sizing: maximize; --kite9-layout: down; ">
   
     <group  style="--kite9-layout: right; ">
       <risk class="complexity" />
@@ -27,7 +27,7 @@
     
     <description>... but require extra code and time to develop.</description>
 
-  </context>
+  </container>
 
 
   </diagram>

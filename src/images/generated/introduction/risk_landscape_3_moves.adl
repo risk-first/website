@@ -5,7 +5,7 @@
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
     style="--kite9-min-width: 900pt;">
       <group style="--kite9-layout: right;">
-         <context id="start"
+         <container id="start"
                   style="--kite9-connection-align: 50%;   --kite9-traversal: none; ">
             <risk class="funding" id="id_0"/>
             <risk class="implementation" id="id_0-ry"/>
@@ -13,11 +13,11 @@
                <text>Current Internal Model</text>
                <symbols/>
             
-         </context>
+         </container>
          <arrow id="gl">
             Go Live
          </arrow>
-         <context id="one" style="--kite9-traversal: none; ">
+         <container id="one" style="--kite9-traversal: none; ">
             <risk class="operational"/>
             <risk class="attendant">Reputational
           Risk
@@ -27,29 +27,29 @@
                <text>Future Internal Model 1</text>
                <symbols/>
             
-         </context>
+         </container>
       </group>
       <group style="--kite9-layout: right;">
-         <context id="two"
+         <container id="two"
                   style="--kite9-connection-align: 50%; --kite9-traversal: none; ">
             <risk class="funding" id="id_0-bu"/>
             <label id="id_16-ng">
                <text>Future Internal Model 2</text>
                <symbols/>
             
-         </context>
+         </container>
          <arrow id="gl2">
             Go Live
          </arrow>
-         <context id="goal"
+         <container id="goal"
                   style="--kite9-connection-align: 50%; --kite9-traversal: none; ">
             <risk class="operational"/>
             <label id="id_16-vx">
                <text>Goal</text>
                <symbols/>
             
-         </context>
-         <context id="ungoal"
+         </container>
+         <container id="ungoal"
                   style="--kite9-connection-align: 50%; --kite9-traversal: none; ">
             <risk class="operational"/>
             <risk class="attendant">Reputational
@@ -59,7 +59,7 @@
                <text>Dead End</text>
                <symbols/>
             
-         </context>
+         </container>
       </group>
       <arrow id="uat">
          UAT

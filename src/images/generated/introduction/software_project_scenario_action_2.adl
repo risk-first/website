@@ -4,7 +4,7 @@
 	xmlns="http://www.kite9.org/schema/adl"
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia">
 
-      <context bordered="true" id="c" style="--kite9-sizing: minimize;">
+      <container bordered="true" id="c" style="--kite9-sizing: minimize;">
          <mitigated>
             <risk class="attendant">Security 
         Compromised</risk>
@@ -13,9 +13,9 @@
             <text>Internal Model</text>
             <symbols/>
          </label>
-      </context>
+      </container>
       <action>Security Hardening</action>
-      <context bordered="true" id="c-xx">
+      <container bordered="true" id="c-xx">
          <risk class="attendant">Longer
            Time-To-Market</risk>
          <risk class="attendant">Reputation Damage
@@ -24,5 +24,5 @@
             <text>Attendant Risks</text>
             <symbols/>
          </label>
-      </context>
+      </container>
    </diagram>

@@ -4,7 +4,7 @@
 	xmlns="http://www.kite9.org/schema/adl"
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
     style="--kite9-min-width: 900pt;">
-      <context bordered="true" id="c">
+      <container bordered="true" id="c">
          <risk class="goal" id="id_0">Successful Party</risk>
          <mitigated>
             <risk class="attendant" id="id_0-ez">Attendant Risk 1</risk>
@@ -13,16 +13,16 @@
             <text>Internal Model</text>
             <symbols/>
          </label>
-      </context>
+      </container>
       <action>Meeting Reality</action>
-      <context bordered="true" id="c-gw">
+      <container bordered="true" id="c-gw">
          <risk class="attendant" id="id_0-ak">New Attendant Risk</risk>
          <label id="4">
             <text>Attendant Risks</text>
             <symbols/>
          </label>
-      </context>
-      <context bordered="true" id="d">
+      </container>
+      <container bordered="true" id="d">
          <hidden>
             <risk class="attendant" id="id_0-at">New Hidden Risk</risk>
          </hidden>
@@ -30,6 +30,6 @@
             <text>Hidden Risks</text>
             <symbols/>
          </label>
-      </context>
+      </container>
    </diagram>
 </svg:svg>

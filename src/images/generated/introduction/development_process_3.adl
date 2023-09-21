@@ -4,7 +4,7 @@
 	xmlns="http://www.kite9.org/schema/adl"
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia">
 
-    <context id="c" bordered="true">
+    <container id="c" bordered="true">
 
       <risk id="id_0" class="goal">Feature X</risk>
 
@@ -12,12 +12,12 @@
         <text>Internal Model</text>
         <symbols />
       </label>
-    </context>
+    </container>
 
     <action>Code</action>
     <action>Release</action>
 
-    <context id="d" style="--kite9-layout: down;">
+    <container id="d" style="--kite9-layout: down;">
 
       <group style="--kite9-layout: right">
         <hidden>
@@ -48,6 +48,6 @@
         <text>Hidden Risks</text>
         <symbols />
       </label>
-    </context>
+    </container>
 
   </diagram>

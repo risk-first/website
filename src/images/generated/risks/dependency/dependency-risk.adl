@@ -2,7 +2,7 @@
 	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
 	xmlns="http://www.kite9.org/schema/adl"
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia">
-      <context id="c">
+      <container id="c">
          <mitigated>
             <risk class="feature"/>
          </mitigated>
@@ -13,11 +13,11 @@
             <text>Internal Model</text>
             <symbols/>
          </label>
-      </context>
+      </container>
       <action style="--kite9-horizontal-align: left; ">
          <label>Using A Dependency</label>
       </action>
-      <context>
+      <container>
          <risk class="invisibility"/>
          <risk class="communication"/>
          <risk class="reliability"/>
@@ -25,5 +25,5 @@
             <text>Attendant Risk</text>
             <symbols/>
          </label>
-      </context>
+      </container>
    </diagram>
