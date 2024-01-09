@@ -20,7 +20,7 @@ In [A Simple Scenario](A-Simple-Scenario.md) we introduced some terms for talkin
 
 Now, let's look at the everyday process of developing _a new feature_ on a software project and see how our risk model informs it.
 
-## A Toy Process
+## Example: A Toy Process
 
 Let's ignore for now the specifics of what methodology is being used - we'll come to that later.  Let's say your team have settled for a process something like the following:
 

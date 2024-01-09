@@ -46,19 +46,19 @@ You can think of [Taking Action](../thinking/Glossary.md#taking-action) as movin
 
 Sometimes, you can end up somewhere _worse_:  the action you took to manage a risk has made things worse.  Almost certainly, this will have been due to a hidden risk that you weren't aware of when you embarked on the action, otherwise you'd not have chosen it.  
 
-### An Example: Unit Testing
+### Example: Unit Testing
 
 Take Unit Testing for example:  Clearly, writing Unit Tests adds to the amount of development work, so on its own, it adds [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk).   
 
 However, if you write _just enough_ of the right Unit Tests, you should be short-cutting the time spent finding issues in the User Acceptance Testing (UAT) stage, so you're hopefully trading off a larger [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk) from UAT and adding a smaller [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk) to Development.  
 
-### Second Example: Automation
+### Example: Automation
 
 ![Hidden Risks of Automation](../images/generated/introduction/risk_landscape_2_automating.png)
 
 _Automating processes_ (as shown in the diagram above) is often tempting: it _should_ save time, and reduce the amount of boring, repetitive work on a project.  But sometimes, it turns into an industry in itself, consumes more effort than it'll ever pay back and needs to be maintained in the future at great expense. 
 
-### Third Example: MongoDB
+### Example: MongoDB
 
 On a previous project in a bank we had a requirement to store a modest amount of data and we needed to be able to retrieve it fast.  The developer chose to use [MongoDB](https://www.mongodb.com) for this.  At the time, others pointed out that other teams in the bank had had lots of difficulty deploying MongoDB internally, due to licensing issues and other factors internal to the bank.
 
@@ -70,25 +70,31 @@ This is not a criticism of MongoDB: it's simply a demonstration that sometimes, 
 
 ## The Cost Of Meeting Reality
 
-Meeting reality _in full_ is costly.  For example, putting your software in front of users in production will definitely put you into contact with reality.  You'll learn a lot.  But there are lots of tasks that are _expensive_:
+Meeting reality _in full_ is costly.  There are lots of tasks that are _expensive_:
 
 - The Release Process
 - Training Users
 - Getting users to use your system
 - Gathering feedback
 
-All of these steps take a lot of effort and time.   But you don't have to meet the "whole of reality" in one go.  You can meet it in a limited way which is less expensive.  This is why we have activities like User Acceptance Testing (UAT) or incremental delivery.  They give us some flavour of reality, but more cheaply and sooner.  
+These steps take a lot of effort and time, but you don't have to meet the "whole of reality" in one go.  You can meet it in a limited way which is less expensive.  
 
-Beta-releases and releasing to small populations of users also allow us to meet reality, but in a less risky way.
-
-In all, to de-risk, you should try and meet reality:
+To de-risk these big operations, you should try to meet reality:
 
 - **Sooner**: so you have time to mitigate the hidden risks it uncovers.
 - **More Frequently**: so the hidden risks don't hit you all at once.
 - **In Smaller Chunks**: so you're not over-burdened by hidden risks all in one go.
 - **With Feedback**: if you don't collect feedback from the experience of meeting reality, hidden risks _stay hidden_.
 
+### Example: User Acceptance Testing (UAT)
+
+Putting your software in front of users in production will definitely put you into contact with reality.  You'll learn a lot. 
+ 
+Beta-releases and releasing to small populations of users also allow us to meet reality, but in a less risky way.
+
 ![Testing flushes out Hidden Risk, but increases Schedule Risk](../images/generated/introduction/meeting_reality_testing.png)
+
+Activities like User Acceptance Testing (UAT) or incremental delivery give us some flavour of reality, but more cheaply and sooner.  
 
 ## Summary
 

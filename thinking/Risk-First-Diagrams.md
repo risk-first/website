@@ -74,6 +74,8 @@ We are _tranforming_ an input condition (on the left) into an _output_ condition
 
 The risks on the left and right are contained in rounded-boxes.  That's because risks live in our [Internal Models](../thinking/Glossary.md#internal-model) - they're not real-world things you can reach out and touch.  They're _contained_ in things like brains, spreadsheets, reports and programs.  
 
+### Example: Blaming Others
+
 ![Blame Game](../images/generated/introduction/blame.png)
 
 In the above diagram, you can see how Jim is worried about his job security, probably because he's made a mistake at work.  Therefore, in his [Internal Model](../thinking/Glossary.md#internal-model) he has [Funding Risks](../risks/Scarcity-Risk.md#funding-risk), i.e. he's worried about money.
