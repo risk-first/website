@@ -32,9 +32,9 @@ Let's look at a few examples:
 
  - **Lunch**: Kent Beck and others promoted the idea of developers eating together, and working in "Two-Pizza Teams".  I haven't had lunch with my colleagues for over six months.  And half of them are on a different continent to me anyway.
 
- - **Pair Programming**:  Once the darling of [XP](), Pair Programming was never hugely popular, although was often a useful tool to have in the arsenal.  If I pair program now, it's via me sharing my screen with someone, while they watch and comment (or vice versa).  I can't gesture at a bug while my partner is in control, and I find that I call out line-numbers a lot.  This has changed, but not as much as...
+ - **Pair Programming**:  Once the darling of [XP](http://www.extremeprogramming.org), Pair Programming was never hugely popular, although was often a useful tool to have in the arsenal.  If I pair program now, it's via me sharing my screen with someone, while they watch and comment (or vice versa).  I can't gesture at a bug while my partner is in control, and I find that I call out line-numbers a lot.  This has changed, but not as much as...
  
- - **Stand-Ups**:  Stand-up meetings were already dying.  No-one liked standing up and they often got held pushed onto conference calls because people needed to dial in from home or the remote office they worked in.  Whatever remnants of the classic "Agile Stand-Up" meeting existed prior to Covid-19 died immediately at that moment.  This practice migrated to the chat windows of [Slack]() and [Teams](), and became asynchronous.  
+ - **Stand-Ups**:  Stand-up meetings were already dying.  No-one liked standing up and they often got held pushed onto conference calls because people needed to dial in from home or the remote office they worked in.  Whatever remnants of the classic "Agile Stand-Up" meeting existed prior to Covid-19 died immediately at that moment.  This practice migrated to the chat windows of [Slack](https://slack.com) and [Teams](https://teams.microsoft.com), and became asynchronous.  
  
  - **Planning Poker**: Another meeting, consigned to conference-call.  Planning meetings are invariably tedious.  It's hard to maintain the attention of all the developers when they are in the room together, let alone with the unlimited distractions of the whole Internet available right next to you.  Planning sessions and "management off-sites" are at this point, broken.
  
@@ -112,7 +112,7 @@ Why is all my code in the bin?  I guess either it was badly written (which, prob
 
 No estimates says forget about trying to get the numbers right, because you can't.  What's better than that?  Let's try and focus on reducing that 90% of waste by thinking about _risks other than time_.
 
-> "Ian: Your scientists were so preoccupied with whether or not they could, they didn’t stop to think if they should. " - [Jurassic Park]().
+> "Ian: Your scientists were so preoccupied with whether or not they could, they didn’t stop to think if they should. " - [Ian Malcolm, _Jurassic Park_](https://en.wikipedia.org/wiki/Jurassic_Park).
 
 
 Risk First Planning Game:  

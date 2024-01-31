@@ -36,7 +36,7 @@ See also: [Terms Of Reference](Terms-Of-Reference)
 
 ## Feedback Loops / Risks Mitigated
 
-Requirements Capture is itself a process of [Meeting Reality](), and in a limited way:  rather than speculatively building a piece of software and trying it out on the world, Requirements Capture allows us, cheaply, to go and see what the world _thinks_ it wants, which is much _cheaper_, but perhaps less accurate.
+Requirements Capture is itself a process of [Meeting Reality](../thinking/Meeting-Reality), and in a limited way:  rather than speculatively building a piece of software and trying it out on the world, Requirements Capture allows us, cheaply, to go and see what the world _thinks_ it wants, which is much _cheaper_, but perhaps less accurate.
 
 ### [Feature-Risk](Feature-Risk.md)
 

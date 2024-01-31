@@ -20,7 +20,7 @@ tweet: yes
 
 You can buy Risk-First Software Development Volume 1: The Menagerie on Amazon now:
 
-<img width="691" alt="screenshot 2019-02-24 at 10 23 18" src="https://user-images.githubusercontent.com/568673/53344657-1ddda800-390b-11e9-969a-ca241a823067.png">
+<img width="691" alt="screenshot 2019-02-24 at 10 23 18" src="https://user-images.githubusercontent.com/568673/53344657-1ddda800-390b-11e9-969a-ca241a823067.png" />
 
 [Amazon Link Here](https://www.amazon.co.uk/Risk-First-Software-Development-1-Menagerie/dp/1717491855/ref=sr_1_1?ie=UTF8&qid=1551105246&sr=8-1&keywords=risk+first)
 

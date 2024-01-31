@@ -14,9 +14,9 @@ Although it's fallen out of favour in Agile methodologies, there are benefits to
 
 ## How It Works  
 
-As we saw in [Meet Reality](Meeting-Reality.md), "Navigating the [Risk Landscape](Risk-Landscape.md)", meant going from a position of high risk, to a position of lower risk.  [Agile Design](Agile) is much like [Gradient Descent](): each day, one small step after another _downwards in risk_ on the [Risk Landscape](Risk-Landscape.md).
+As we saw in [Meet Reality](Meeting-Reality.md), "Navigating the [Risk Landscape](Risk-Landscape.md)", meant going from a position of high risk, to a position of lower risk.  [Agile Design](Agile) is much like [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent): each day, one small step after another _downwards in risk_ on the [Risk Landscape](Risk-Landscape.md).
 
-But the problem with this is you can get trapped in a [Local Minima](), where there are _no_ easy steps to take to get you to where you want to be.  Here is a [real life example](Tradeoffs).  This is [Dead End Risk](Dead-End-Risk).
+But the problem with this is you can get trapped in a [Local Minima](https://en.wikipedia.org/wiki/Maximum_and_minimum#Search), where there are _no_ easy steps to take to get you to where you want to be.  Here is a [real life example](Tradeoffs).  This is [Dead End Risk](Dead-End-Risk).
 
 In these cases, you have to _widen your horizon_ and look at where you want to go:  and this is the process of _design_.  You're not necessarily now taking steps on the [Risk Landscape](Risk-Landscape.md), but imagining a place on the [Risk Landscape](Risk-Landscape.md) where you want to be, and checking it against your [Internal Model](../thinking/Glossary.md#Internal-Model) for validity.
 

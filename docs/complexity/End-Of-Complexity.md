@@ -17,7 +17,7 @@ KubeCon (2022): To start with, a computer ran a program.  There was a one-to-one
 
 The problem with this is that it is more complex.  Over time, software _always_ gets more complex, because it's always trying to adapt and [model human needs better and better](../estimating/Fractals.md#continuous-refinement).  
 
-![The Broccoli Problem](/images/complexity/broccoli.jpg) 
+![The Broccoli Problem](/img/complexity/broccoli.jpg) 
 
 I call this the Broccoli Problem.  
 

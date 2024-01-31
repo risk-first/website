@@ -9,7 +9,7 @@ Prioritisation is a key process in trying to focus on building _useful_ stuff fi
  - [Phased Delivery](Waterfall): Breaking a large project into smaller-scoped projects.
  - [A Backlog](Lean): Having tasks or stories in delivery order in a queue.
  - **Task Decomposition**:  Breaking down larger units of a task into smaller items.  Often, [Requirements](Requirements-Capture) come _bundled together_ and need to be broken down so that we work on just the most vital parts, as in
- - [Identifying the MVP](): Trying to cast out _all_ non-essential functionality.    
+ - [Identifying the MVP](https://en.wikipedia.org/wiki/Minimum_viable_product): Trying to cast out _all_ non-essential functionality.    
  
 **Prioritisation** relies on not delivering all the functionality in one go.  But it tends to be a spectrum:
 
@@ -18,7 +18,7 @@ Prioritisation is a key process in trying to focus on building _useful_ stuff fi
 - **Sprints**: Delivering with a fixed cadence, e.g. every month or week.
 - [Continuous Delivery](Continous-Delivery): Delivering functionality one-piece-at-a-time.
 
-Usually, risk is mitigated by **Prioritisation**.  But sometimes, it's not appropriate:  When Finland changed from driving on the right side of the road to the left, (in order to be in line with the rest of Europe) the changeover _had_ to be **Big Bang** and the whole country changed [overnight]().
+Usually, risk is mitigated by **Prioritisation**.  But sometimes, it's not appropriate:  When Finland changed from driving on the right side of the road to the left, (in order to be in line with the rest of Europe) the changeover _had_ to be **Big Bang** and the whole country changed [overnight](https://en.wikipedia.org/wiki/Dagen_H).
 
 ## How It Works
 
@@ -38,7 +38,7 @@ This one way in which a particular prioritisation [Meets Reality](Meeting-Realit
 
 - Developers might tell you that the ordering incurs [Dependency Risk](Dependency-Risk.md) or [Coordination Risk](Coordination-Risk.md) if everyone is going to end up working on the same components.
 - Product Owners might tell you that you're not tackling the right [Feature Risk](Feature-Risk.md).
-- If you're trying to work out what the [MVP]() is, prioritisation might help your investors determine whether the project is worth [funding](Scarcity-Risk.md#schedule-risk).
+- If you're trying to work out what the [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) is, prioritisation might help your investors determine whether the project is worth [funding](Scarcity-Risk.md#schedule-risk).
 
 ### [Production Risk](Production-Risk)
 
@@ -49,7 +49,7 @@ Breaking a large delivery down into lots of small releases has an impact on [Pro
  
 ### [Schedule Risk](Scarcity-Risk.md#schedule-risk)
 
-If you're able to do [Continuous Delivery](DevOps), and have de-risked the release process, then you can eliminate some [Schedule Risk](Scarcity-Risk.md#schedule-risk), because you'll know you can hit any date with _something_.  The risks of what you deliver on that date are then [Feature Risk]() rather than [Schedule Risk](Scarcity-Risk.md#schedule-risk).
+If you're able to do [Continuous Delivery](DevOps), and have de-risked the release process, then you can eliminate some [Schedule Risk](Scarcity-Risk.md#schedule-risk), because you'll know you can hit any date with _something_.  The risks of what you deliver on that date are then [Feature Risk](Feature-Risk) rather than [Schedule Risk](Scarcity-Risk.md#schedule-risk).
 
 ## Attendant Risks
 

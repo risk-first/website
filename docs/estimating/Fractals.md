@@ -41,48 +41,7 @@ Let's look at a simple mathematical example of a shape like this, the [Koch Snow
 
 <script defer src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js" integrity="sha256-Uv9BNBucvCPipKQ2NS9wYpJmi8DTOEfTA/nH2aoJALw=" crossorigin="anonymous"></script>
 <script defer src="{{ site.baseurl }}/assets/js/mychart.js"></script>
-<script type="text/javascript">
-window.addEventListener("load", () => {
-	var max = 10;
-	
-	doChart('koch', 
-	 undefined,
-	 [
-	 model => { 	 
-	  return {
-	    type: 'line',
-	    data: {
-	      labels: range(0, max, 1),
-	      datasets: [{
-	      	label: 'Perimeter Length',
-	      	backgroundColor: [ 'rgba(255, 99, 132, 0.2)' ],
-	      	borderColor: [ 'rgba(255, 99, 132, 1)' ],
-	      	data: range(0, max, 1).map(i => Math.pow((4/3), i))
-	      },
-	      ]
-	    }
-	  }},
-	  model => { 
-		  return {
-		    type: 'line',
-		    data: {
-		      labels: range(0, max, 1),
-		      datasets: [{
-		      	label: 'Area',
-		      	backgroundColor: [ 'rgba(255, 132, 99, 0.2)' ],
-		      	borderColor: [ 'rgba(255, 132, 99, 1)' ],
-		      	data:  range(0, max, 1).map(i => 8-3*(Math.pow(4/9, i)))
-		      }
-		      ]
-		    }
-		  }
-	},
-	 
-	]);
-
-});
-
-</script>
+<script type="text/javascript" src="/js/fractals1.js"></script>
 
 As the animation shows, this shape is created by adding extra triangles to each side of the existing shape.  As the number of steps increases, the _area_ settles down to 8, whilst the total _perimeter_ begins to increase more and more rapidly.
 

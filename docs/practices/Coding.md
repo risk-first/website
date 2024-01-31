@@ -17,7 +17,7 @@ In [Development Process](Development-Process.md) we introduced the following dia
 - Then, we find out how well our idea stands up when we [Meet Reality](../thinking/Glossary.md#Meet-Reality) and try it out in our code-test-run-debug cycle.
 - As we go, the main outcome is that we change reality, and create code, but along the way, we discover where our [Internal Model](../thinking/Glossary.md#Internal-Model) was wrong, in the form of surfacing [Hidden Risks](../thinking/Glossary.md#hidden-risk).
 
-![Coding](/img/generated/development_process_code.png)
+(/img/generated/practices/coding/development_process_code.png)
 
 ## Examples
 
@@ -47,7 +47,7 @@ By coding, we are mitigating [Feature Risk](Feature-Risk.md) in exchange for [Co
 
 > “Measuring programming progress by lines of code is like measuring aircraft building progress by weight.” - Bill Gates
 
-And you can see _why_ this is true:  the more code you write, the more [Complexity Risk](Complexity-Risk.md) you now have on the project, and the more [Dead End Risk](Complexity-Risk.md) you've picked up in case it's wrong.  This is why [The Agile Manifesto]() stresses:
+And you can see _why_ this is true:  the more code you write, the more [Complexity Risk](Complexity-Risk.md) you now have on the project, and the more [Dead End Risk](Complexity-Risk.md) you've picked up in case it's wrong.  This is why [The Agile Manifesto](http://agilemanifesto.org) stresses:
 
 > "Simplicity -the art of maximizing the amount of work not done- is essential."  [Agile Manifesto](http://agilemanifesto.org/)
 
@@ -65,7 +65,7 @@ Imagine for a moment, that there was such a thing as **The Perfect Product**, an
  - Finally, we have a feedback loop, so the **User** can improve their [Internal Model](../thinking/Glossary.md#Internal-Model) and see the previously unforeseen [Hidden Risks](../thinking/Glossary.md#hidden-risk).
  - Then, you can go round again.
 
-![Coding Communication Risks](/img/generated/perfect_product.png)
+![Coding Communication Risks](/img/generated/practices/coding/perfect_product.png)
 
 The problem here is that this is a very _protracted feedback loop_.  This is mitigated by prototyping, because that's all about shortening the feedback loop as far as possible:  
  - By working together, you mitigate [Communication Risk](Communication-Risk.md).
@@ -179,7 +179,7 @@ You can see that this law is founded in an appreciation of [Coordination Risk](C
 
 Sometimes, you have _too many developers_ on a project.  This is not a blessing.   As with [Student Syndrome](Scarcity-Risk.md#schedule-risk), having too many resources means that: 
 
-> "Work expands so as to fill the time available for its completion" - [Parkinson's Law]()
+> "Work expands so as to fill the time available for its completion" - [Parkinson's Law](https://en.wikipedia.org/wiki/Parkinson's_law)
 
 One of the reasons for this is that _Developers love to develop_ and it is, after all, their job.  If they _aren't_ developing, then are they still needed?  This is [Agency Risk](Agency-Risk.md):  people who are worried about their jobs will often try to _look busy_, and if that means creating some drama on the project, then so be it.
 

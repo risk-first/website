@@ -41,86 +41,7 @@ Where we are able to see measurements clustering-around-the-mean, this gives ris
 
 <script defer src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js" integrity="sha256-Uv9BNBucvCPipKQ2NS9wYpJmi8DTOEfTA/nH2aoJALw=" crossorigin="anonymous"></script>
 <script defer src="{{ site.baseurl }}/assets/js/mychart.js"></script>
-<script type="text/javascript">
-
-function stddev(range, mean, variance) {
-	const factor = 1 / (Math.sqrt(2* 3.141592 * variance));
-	return range.map(r => {
-		const num= ((r - mean)*(r - mean));
-		const denom = 2 * variance;
-		const fact = num / denom;
-		
-		return factor * Math.exp(-fact);
-	});
-}
-
-window.addEventListener("load", () => {
-	doChart('simulation', 
-	 {
-	   'units' : { min: 1, max: 15, value: 10, name: 'Number of Units', step: 1 },
-	   'mean' : { min: 20, max: 120, value: 60, name: 'Mean time to Complete Unit', step: 1 },
-	   'variance' : { min: 1, max:50, value: 30, name: 'Variance In Unit Time', step: 1}
-	 },
-	 [
-		 model => { 
-			 var min = 0;
-			 var max = 120;
-			 
-			 return {
-		    type: 'line',
-		    data: {
-		      labels: range(min, max, 1).map(r => Math.round(r)),
-		      datasets: [{
-		      	label: 'Time To Complete A Single Unit (minutes)',
-		      	backgroundColor: [ 'rgba(255, 99, 132, 0.2)' ],
-		      	borderColor: [ 'rgba(255, 99, 132, 1)' ],
-		      	data: stddev(range(min,max,1), model.mean.value, model.variance.value)
-		      }]
-		    },
-		    options: {
-		    	scales: {
-		            yAxes : [{
-		                ticks : {
-		                	max : .3,    
-		                	min : 0
-		                }
-		            }]
-		    	}
-	        }
-		  }
-		 },
-		 model => { 
-			 var min = 0;
-			 var max = 1000;
-			 
-			 return {
-			    type: 'line',
-			    data: {
-			      labels: range(min / 60, max/60, 10/60).map(r => Math.round(r)),
-			      datasets: [{
-			      	label: 'Time To Complete All Units (hours)',
-			      	backgroundColor: [ 'rgba(132, 99, 255, 0.2)' ],
-			      	borderColor: [ 'rgba(132, 99, 255, 1)' ],
-			      	data: stddev(range(min,max,10), model.mean.value*model.units.value, model.variance.value * model.units.value)
-			      }]
-			    },
-			    options: {
-			    	scales: {
-			            yAxes : [{
-			                ticks : {
-			                	max : .05,    
-			                	min : 0
-			                }
-			            }]
-			    	}
-		        }
-			  }
-			 },	 
-		 
-		]);
-	});
-
-</script>
+<script type="text/javascript" src="/js/fill-the-bucket1.js" ></script>
 
 ## Mean and Variance
 
@@ -147,96 +68,16 @@ If you paint the first fence panel in 40 minutes, how sure can you be that this 
 
 After the first fence panel, you just don't know.  After you've painted two or three, you can start to figure out the _sample variance_ $$s^2$$:
 
-$$s^2 = \frac{\sum(x - \bar{x})^2}{n - 1}$$
+$$
+s^2 = \frac{\sum(x - \bar{x})^2}{n - 1}
+$$
  
 The more samples we make, the more precise the sample variance will be, and so the more confident we should be on our expected time to complete painting the fence.
 
 <div id="simulation2"></div>
 
-<script type="text/javascript">
-window.addEventListener("load", () => {
+<script type="text/javascript" src="/js/fill-the-bucket2.js"></script>
 
-function stddev(range, mean, variance) {
-	const factor = 1 / (Math.sqrt(2* 3.141592 * variance));
-	return range.map(r => {
-		const num= ((r - mean)*(r - mean));
-		const denom = 2 * variance;
-		const fact = num / denom;
-
-		return factor * Math.exp(-fact);
-	});
-}
-
-function random_normal() 
-{  
-  const M_PI = 3.14159;	
-  return Math.sqrt(-2*Math.log(Math.random())) * Math.cos(2*M_PI*Math.random());
-}
-
-var mean = 11;
-var variance = 2.5
-
-const samples = range(0, 200, 1).map(i => random_normal()*variance+mean);
-
-function bucket(samples) {
-	var out = new Array(20).fill(0);
-	samples.forEach(s => {
-		var b = Math.round(s);
-		if ((b>=0) && (b<20)) {
-			out[b] ++;
-		}
-	});
-	return out;
-}
-function calcMean(s) {
-	var tot = s.reduce((a,b) => a+b);
-	var len = s.length;
-	return tot/len;
-}
-	
-function calcVar(s, mean) {
-	var tot = s.map(i => (i - mean)*(i - mean)).reduce((a, b) => a+b);
-	var len = s.length - 1;
-	return tot / len;
-}
-
-doChart('simulation2', 
- {
-   'samples' : { min: 2, max: 200, value: 3, name: 'Individual Samples', step: 1 },
- },
- [
-	 model => { 
-	     var subsam = samples.slice(0, model.samples.value);
-		 var mean = calcMean(subsam);
-		 var variance = calcVar(subsam, mean);
-		 var buckets = bucket(subsam);
-	 	 var dist = stddev(range(0, 20, 1), mean, variance).map(r => r* model.samples.value);
-	 
-	 return {
-		    type: 'bar',
-		    data: {
-		        labels: range(0, 20, 1),
-		        datasets: [{
-		            label: 'Samples',
-		            data: buckets,
-		            borderWidth: 1,
-		            backgroundColor: 'rgba(132, 99, 255, 0.2)' ,
-			      	borderColor:  'rgba(132, 99, 255, 1)' ,
-		        },
-		        {
-		        	type: 'line',
-		        	label: 'Normal Distribution Fit',
-		        	backgroundColor: [ 'rgba(255, 99, 132, 0.2)' ],
-			      	borderColor: [ 'rgba(255, 99, 132, 1)' ],
-		        	data: dist
-		        }]
-		    },
-		   
-		}}]);
-		
-	});
-
-</script>
 
 In the above simulation, we are trying to fit a Normal Distribution, estimated from a number of samples.   
 
@@ -276,110 +117,7 @@ Let's ignore _all other risks_ and just focus on these monetary ones.  What is t
 
 <div id="simulation3"></div>
 
-<script type="text/javascript">
-window.addEventListener("load", () => {
-
-function stddev(range, mean, variance) {
-	const factor = 1 / (Math.sqrt(2* 3.141592 * variance));
-	return range.map(r => {
-		const num= ((r - mean)*(r - mean));
-		const denom = 2 * variance;
-		const fact = num / denom;
-
-		return factor * Math.exp(-fact);
-	});
-}
-
-var days = 60;
-var mean = 2;
-var variance = 1;
-
-
-doChart('simulation3', 
- {
-	'estimate': { min: 20, max: 80, value: 20, name: 'Estimate', step: 1 },
-	'records' : { min: 100, max: 700, value: 500, name: 'Records', step: 1 },
-	'mean' : { min: 1, max: 3, value: 2, name: 'Mean', step: .1 },
-	'variance' : { min: .5, max: 3, value: 1, name: 'Variance', step: .1 },
-	'staff' : { min: 1, max: 10, value: 4, name: 'Staff', step: 1 },
-	'hours' : { min: 1, max: 17, value: 8, name: 'Hours Per Day', step: 1 },
-	
- },
- [
-	 model => { 
-		 
-		 var meanEffort = model.records.value * model.mean.value;
-		 var varEffort = model.records.value * model.variance.value;
-		 var manPower = model.staff.value * model.hours.value;
-		 var daysPDF = stddev(range(0,days,1), meanEffort / manPower, varEffort / manPower);
-		 
-	 return {
-		    type: 'line',
-		    data: {
-		        labels: range(0, days, 1),
-		        datasets: [{
-		        	label: 'Days To Complete',
-		        	backgroundColor: [ 'rgba(255, 99, 132, 0.2)' ],
-			      	borderColor: [ 'rgba(255, 99, 132, 1)' ],
-		        	data: daysPDF
-		        }
-		        ]
-		    },
-		   
-		}},
-		
-		model => {
-			var penalty = (model.estimate.value - 20) * 300;
-			var returns = range(0, days, 1).map(d => 10000 - penalty - (Math.max(0, d - model.estimate.value) * 1000));
-
-			return {
-			    type: 'line',
-			    data: {
-			        labels: range(0, days, 1),
-			        datasets: [{
-			        	label: 'Return',
-			        	backgroundColor: [ 'rgba(132, 99, 255, 0.2)' ],
-				      	borderColor: [ 'rgba(132, 99, 255, 1)' ],
-			        	data: returns
-			        }
-			        ]
-			    },
-			   
-			}
-			
-			
-		},
-		model => {
-			var penalty = (model.estimate.value - 20) * 300;
-			var returns = range(0, days, 1).map(d => 10000 - penalty - (Math.max(0, d - model.estimate.value) * 1000));
-			var meanEffort = model.records.value * model.mean.value;
-			var varEffort = model.records.value * model.variance.value;
-			var manPower = model.staff.value * model.hours.value;
-			var daysPDF = stddev(range(0,days,1), meanEffort / manPower, varEffort / manPower);
-			var riskAdjustedReturn = daysPDF.map((v, i) => v * returns[i]);
-			
-			return {
-			    type: 'line',
-			    data: {
-			        labels: range(0, days, 1),
-			        datasets: [{
-			        	label: 'Financial Risk',
-			        	backgroundColor: [ 'rgba(255, 132, 99, 0.2)' ],
-				      	borderColor: [ 'rgba(255, 132, 99, 1)' ],
-			        	data: riskAdjustedReturn
-			        }
-			        ]
-			    },
-			   
-			}
-			
-			
-		}
-		]);
-		
-	});
-
-</script>
+<script type="text/javascript" src="/js/fill-the-bucket3.js"></script>
 
 ## Analysis
 
