@@ -1,0 +1,57 @@
+{
+  "pluginId": "default",
+  "version": "current",
+  "label": "Next",
+  "banner": null,
+  "badge": false,
+  "noIndex": false,
+  "className": "docs-version-current",
+  "isLast": true,
+  "docsSidebars": {
+    "tutorialSidebar": [
+      {
+        "type": "category",
+        "label": "Overview",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Quick Summary",
+            "href": "/overview/Quick-Summary",
+            "docId": "overview/Quick-Summary",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Tracks",
+            "href": "/overview/Tracks",
+            "docId": "overview/Tracks",
+            "unlisted": false
+          }
+        ],
+        "href": "/overview/Start"
+      }
+    ]
+  },
+  "docs": {
+    "overview/Quick-Summary": {
+      "id": "overview/Quick-Summary",
+      "title": "Quick Summary",
+      "description": "A quick summary of the underlying theory behind Risk-First",
+      "sidebar": "tutorialSidebar"
+    },
+    "overview/Start": {
+      "id": "overview/Start",
+      "title": "Overview",
+      "description": "A few short articles about what Risk-First is all about",
+      "sidebar": "tutorialSidebar"
+    },
+    "overview/Tracks": {
+      "id": "overview/Tracks",
+      "title": "Tracks",
+      "description": "Understanding the structure of the Risk-First website",
+      "sidebar": "tutorialSidebar"
+    }
+  }
+}
