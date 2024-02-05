@@ -6,7 +6,7 @@ url: https://riskfirst.org/risks/Staging-And-Classifying
 featured: 
   class: bg2
   element: '<document>Collection</document>'
-sidebar_order: 16
+sidebar_position: 16
 categories:
  - Risks
 redirect_from: 

@@ -10,7 +10,7 @@ layout: categories
 cat: Presentations
 categories:
  - Front
-sidebar_order: 8 
+sidebar_position: 8 
 tweet: yes
 ---
 

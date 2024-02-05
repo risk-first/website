@@ -10,7 +10,7 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/logo/R1_logo_black.svg">Risk-First Analysis</image-artifact>'
 categories:
  - Estimating
-sidebar_order: 7
+sidebar_position: 7
 tweet: yes
 ---
 

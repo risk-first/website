@@ -10,7 +10,7 @@ layout: categories
 cat: Thinking Risk-First
 categories:
  - Front
-sidebar_order: 2
+sidebar_position: 2
 redirect_from:
  - /All-About-Risk
 tweet: yes

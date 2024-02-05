@@ -8,7 +8,7 @@ featured:
   element: '<risk class="internal-model" />'
 categories:
  - Thinking Risk-First
-sidebar_order: 5
+sidebar_position: 5
 redirect_from: 
  - /Just-Risk
 tweet: yes

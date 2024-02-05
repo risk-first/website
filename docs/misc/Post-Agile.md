@@ -9,7 +9,7 @@ featured:
 categories:
  - Popular
  - Misc
-sidebar_order: 7
+sidebar_position: 7
 redirect_from: 
  - /post/popular/2019/07/16/Post-Agile
  - /post/news/2019/07/16/Post-Agile

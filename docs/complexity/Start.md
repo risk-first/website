@@ -10,7 +10,7 @@ layout: categories
 cat: Complexity
 categories:
  - Front
-sidebar_order: 7 
+sidebar_position: 7 
 tweet: yes
 ---
 

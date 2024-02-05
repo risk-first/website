@@ -8,7 +8,7 @@ categories:
 featured: 
   class: bg3
   element: '<risk href="/public/templates/risk-first/redesign/risks/goal_v2.svg"><code>Goal</code><title>A Simple Scenario</title></risk>'
-sidebar_order: 1
+sidebar_position: 1
 redirect_from: 
  - /A-Simple-Scenario
 tweet: yes

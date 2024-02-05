@@ -8,7 +8,7 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/stop.svg">The End of Complexity</image-artifact>'
 categories:
  - Complexity
-sidebar_order: 6
+sidebar_position: 6
 ---
 
 # The End of Complexity

@@ -8,7 +8,7 @@ categories:
 featured: 
   class: bg2
   element: '<risk class="agency" />'
-sidebar_order: 12
+sidebar_position: 12
 redirect_from: 
  - /Agency-Risk
 tweet: yes

@@ -5,7 +5,7 @@ url: https://riskfirst.org/overview/Quick-Summary
 
 categories: 
  - Overview
-sidebar_order: 1
+sidebar_position: 1
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/quick-summary.svg">Quick Summary</image-artifact>'

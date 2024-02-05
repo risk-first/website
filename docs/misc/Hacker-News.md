@@ -6,7 +6,7 @@ url: https://riskfirst.org/misc/Hacker-News
 author: rob
 categories:
  - Misc
-sidebar_order: 5
+sidebar_position: 5
 featured: 
   class: bg1
   element: '<risk class="coordination" />'

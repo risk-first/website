@@ -7,7 +7,7 @@ categories:
 featured: 
   class: bg1
   element: '<users>Authors</users>'
-sidebar_order: 12
+sidebar_position: 12
 redirect_from: 
  - /Authors
  - /overview/Authors

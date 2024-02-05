@@ -5,7 +5,7 @@ url: https://riskfirst.org/overview/Tracks
 
 categories: 
  - Overview
-sidebar_order: 2
+sidebar_position: 2
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/redesign/risks/feature_drift_risk_v2.svg">Tracks</image-artifact>'

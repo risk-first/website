@@ -8,7 +8,7 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cadence.svg">Feedback Loops</image-artifact>'
 categories:
  - Thinking Risk-First
-sidebar_order: 11
+sidebar_position: 11
 redirect_from: 
  - /Cadence
 tweet: yes

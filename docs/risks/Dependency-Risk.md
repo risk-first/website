@@ -6,7 +6,7 @@ url: https://riskfirst.org/risks/Dependency-Risk
 featured: 
   class: bg2
   element: '<risk class="dependency" />'
-sidebar_order: 6
+sidebar_position: 6
 categories:
  - Risks
 redirect_from: 

@@ -6,7 +6,7 @@ url: https://riskfirst.org/misc/3d-Programming
 author: rob
 categories:
  - Misc
-sidebar_order: 9
+sidebar_position: 9
 featured: 
   class: bg1
   element: '<interface>3D-Programming</interface>'

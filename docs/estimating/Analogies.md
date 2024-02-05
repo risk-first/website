@@ -8,7 +8,7 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/knot.svg">Analogies</image-artifact>'
 categories:
  - Estimating
-sidebar_order: 5
+sidebar_position: 5
 tweet: yes
 ---
 

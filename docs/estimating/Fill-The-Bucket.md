@@ -8,7 +8,7 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/bucket.svg">Fill The Bucket</image-artifact>'
 categories:
  - Estimating
-sidebar_order: 1
+sidebar_position: 1
 tweet: yes
 ---
 
@@ -39,7 +39,7 @@ Where we are able to see measurements clustering-around-the-mean, this gives ris
 
 <div id="simulation"></div>
 
-<script defer src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js" integrity="sha256-Uv9BNBucvCPipKQ2NS9wYpJmi8DTOEfTA/nH2aoJALw=" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js" integrity="sha256-Uv9BNBucvCPipKQ2NS9wYpJmi8DTOEfTA/nH2aoJALw=" crossOrigin="anonymous"></script>
 <script defer src="{{ site.baseurl }}/assets/js/mychart.js"></script>
 <script type="text/javascript" src="/js/fill-the-bucket1.js" ></script>
 
@@ -66,7 +66,7 @@ The area of a _probability density_ curve is normalised to 1, so you can pick a 
 
 If you paint the first fence panel in 40 minutes, how sure can you be that this is a good estimate?  What if you extrapolate from this single fence panel?  To paint all 40 might take 26 hours.  How confident are we of this estimate?
 
-After the first fence panel, you just don't know.  After you've painted two or three, you can start to figure out the _sample variance_ $$s^2$$:
+After the first fence panel, you just don't know.  After you've painted two or three, you can start to figure out the _sample variance_ $s^2$:
 
 $$
 s^2 = \frac{\sum(x - \bar{x})^2}{n - 1}

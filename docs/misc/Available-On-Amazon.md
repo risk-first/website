@@ -6,7 +6,7 @@ url: https://riskfirst.org/misc/Available-On-Amazon
 author: rob
 categories:
  - Misc
-sidebar_order: 2
+sidebar_position: 2
 featured: 
   class: bg1
   element: '<risk class="scarcity" />'

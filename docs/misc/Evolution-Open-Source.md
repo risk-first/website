@@ -8,7 +8,7 @@ categories:
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/open-source.svg">Evolution</image-artifact>'
-sidebar_order: 17
+sidebar_position: 17
 ---
 
 

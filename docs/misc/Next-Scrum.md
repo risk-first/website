@@ -6,7 +6,7 @@ url: https://riskfirst.org/misc/Next-Scrum
 author: rob
 categories:
  - Misc
-sidebar_order: 3
+sidebar_position: 3
 featured: 
   class: bg1
   element: '<risk class="feature-drift" />'

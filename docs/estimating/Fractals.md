@@ -8,7 +8,7 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/fractal.svg">Fractals</image-artifact>'
 categories:
  - Estimating
-sidebar_order: 4
+sidebar_position: 4
 tweet: yes
 ---
 

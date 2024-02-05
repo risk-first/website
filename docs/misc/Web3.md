@@ -7,7 +7,7 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cycle.svg">Web3</image-artifact>'
 categories:
  - Misc
-sidebar_order: 15
+sidebar_position: 15
 tweet: yes
 ---
 

@@ -8,7 +8,7 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/eiffel.svg">Towers Of Abstraction</image-artifact>'
 categories:
  - Complexity
-sidebar_order: 3
+sidebar_position: 3
 ---
 
 ![Under Construction](/img/state/uc.png)

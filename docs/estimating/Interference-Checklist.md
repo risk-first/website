@@ -8,7 +8,7 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/checklist.svg">Interference Checklist</image-artifact>'
 categories:
   - Estimating
-sidebar_order: 9
+sidebar_position: 9
 tweet: yes
 ---
 

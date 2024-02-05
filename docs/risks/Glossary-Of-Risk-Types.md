@@ -8,7 +8,7 @@ featured:
   element: '<document>Glossary</document>'
 categories:
  - Risks
-sidebar_order: 17
+sidebar_position: 17
 redirect_from: 
  - /Glossary-Of-Risk-Types
 tweet: yes

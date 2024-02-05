@@ -7,7 +7,7 @@ featured:
   element: '<risk href="/public/templates/risk-first/redesign/risks/dependency_process_risk_v2.svg"><code id="s">D-Pr</code><title id="s">Systems And Change</title></risk>'
 categories:
  - Misc
-sidebar_order: 14
+sidebar_position: 14
 ---
 
 # Systems and Change

@@ -6,7 +6,7 @@ url: https://riskfirst.org/risks/Operational-Risk
 featured: 
   class: bg2
   element: '<risk class="operational" />'
-sidebar_order: 15
+sidebar_position: 15
 categories:
  - Risks
 redirect_from: 

@@ -8,7 +8,7 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cupboard.svg">Kitchen Cabinets</image-artifact>'
 categories:
  - Estimating
-sidebar_order: 2
+sidebar_position: 2
 tweet: yes
 ---
 

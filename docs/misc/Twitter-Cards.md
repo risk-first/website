@@ -6,7 +6,7 @@ url: https://riskfirst.org/misc/Twitter-Cards
 author: rob
 categories:
  - Misc
-sidebar_order: 4
+sidebar_position: 4
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/twitter.svg">Twitter</image-artifact>'

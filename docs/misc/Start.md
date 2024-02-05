@@ -9,7 +9,7 @@ layout: categories
 cat: Misc
 categories:
  - None
-sidebar_order: 7
+sidebar_position: 7
 ---
 
 # Miscellaneous Articles

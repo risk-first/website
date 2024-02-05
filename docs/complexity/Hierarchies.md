@@ -8,7 +8,7 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/redesign/risks/complexity_risk.svg">Hierarchies</image-artifact>'
 categories:
  - Complexity
-sidebar_order: 1
+sidebar_position: 1
 tweet: yes
 ---
 

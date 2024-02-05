@@ -9,7 +9,7 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cards.svg">Coding Bets</image-artifact>'
 categories:
  - Bets
-sidebar_order: 2
+sidebar_position: 2
 tweet: yes
 ---
 

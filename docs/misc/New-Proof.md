@@ -6,7 +6,7 @@ url: https://riskfirst.org/misc/New-Proof
 author: rob
 categories:
  - Misc
-sidebar_order: 1
+sidebar_position: 1
 featured: 
   class: bg1
   element: '<risk class="process" />'

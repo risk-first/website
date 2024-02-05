@@ -6,7 +6,7 @@ url: https://riskfirst.org/risks/Deadline-Risk
 featured: 
   class: bg2
   element: '<risk class="deadline" />'
-sidebar_order: 8
+sidebar_position: 8
 categories:
  - Risks
 redirect_from: 

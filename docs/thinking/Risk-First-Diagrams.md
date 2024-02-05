@@ -5,7 +5,7 @@ url: https://riskfirst.org/overview/Risk-First-Diagrams
 
 categories: 
  - Thinking Risk-First
-sidebar_order: 2
+sidebar_position: 2
 featured: 
   class: bg3
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/maze.svg">Risk-First Diagrams</image-artifact>'

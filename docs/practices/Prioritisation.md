@@ -25,45 +25,45 @@ Usually, risk is mitigated by **Prioritisation**.  But sometimes, it's not appro
 There are several ways you can prioritise work:
 
 - **Largest Mitigation First**:  What's the thing we can do right now to reduce our [Attendant Risk](../thinking/Glossary.md#attendant-risk) most?  This is sometimes hard to quantify, given [Hidden Risk](../thinking/Glossary.md#Hidden-Risk), so maybe an easier metric is...
-- **Biggest Win**:  What's the best thing we can do right now to reduce [Attendant Risk](../thinking/Glossary.md#attendant-risk) for least additional [Schedule-Risk](Scarcity-Risk.md#schedule-risk)?  (i.e. simply considering how much *work* is likely to be involved)
-- **Dependency Order**:  Sometimes, you can't build Feature A until Feature B is complete.   Prioritisation helps to identify and mitigate [Dependency Risk](Dependency-Risk.md).
+- **Biggest Win**:  What's the best thing we can do right now to reduce [Attendant Risk](../thinking/Glossary.md#attendant-risk) for least additional [Schedule-Risk](../risks/Scarcity-Risk.md#schedule-risk)?  (i.e. simply considering how much *work* is likely to be involved)
+- **Dependency Order**:  Sometimes, you can't build Feature A until Feature B is complete.   Prioritisation helps to identify and mitigate [Dependency Risk](../risks/Dependency-Risk.md).
 
-By prioritising, you get to [Meet Reality](Meeting-Reality.md) _sooner_ and _more frequently_ and in _small chunks_.
+By prioritising, you get to [Meet Reality](../thinking/Meeting-Reality.md) _sooner_ and _more frequently_ and in _small chunks_.
 
 ## Feedback Loops & Risks Mitigated
 
 ### [Review](Sign-Off) 
 
-This one way in which a particular prioritisation [Meets Reality](Meeting-Reality.md)
+This one way in which a particular prioritisation [Meets Reality](../thinking/Meeting-Reality.md)
 
-- Developers might tell you that the ordering incurs [Dependency Risk](Dependency-Risk.md) or [Coordination Risk](Coordination-Risk.md) if everyone is going to end up working on the same components.
-- Product Owners might tell you that you're not tackling the right [Feature Risk](Feature-Risk.md).
-- If you're trying to work out what the [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) is, prioritisation might help your investors determine whether the project is worth [funding](Scarcity-Risk.md#schedule-risk).
+- Developers might tell you that the ordering incurs [Dependency Risk](../risks/Dependency-Risk.md) or [Coordination Risk](../risks/Coordination-Risk.md) if everyone is going to end up working on the same components.
+- Product Owners might tell you that you're not tackling the right [Feature Risk](../risks/Feature-Risk.md).
+- If you're trying to work out what the [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) is, prioritisation might help your investors determine whether the project is worth [funding](../risks/Scarcity-Risk.md#schedule-risk).
 
-### [Production Risk](Production-Risk)
+### [Operational Risk](../risks/Operational-Risk)
 
-Breaking a large delivery down into lots of small releases has an impact on [Production Risk](Production-Risk):
+Breaking a large delivery down into lots of small releases has an impact on [Operational Risk](../risks/Operational-Risk):
 
- - Usually, lots of small releases allows you to _practice_ the release process while the project is relatively unimportant.  This experience allows you to figure out automation and reduce the [Process Risk](Process-Risk.md) of releasing too.
- - Smaller, higher-cadence releases also reduce [Visibility Risk](Visibility-Risk), because users don't have large amounts of change to get accustomed to all-in-one-go.   
+ - Usually, lots of small releases allows you to _practice_ the release process while the project is relatively unimportant.  This experience allows you to figure out automation and reduce the [Process Risk](../risks/Process-Risk.md) of releasing too.
+ - Smaller, higher-cadence releases also reduce [Invisibility Risk](../Communication-Risk#Invisibility-Risk), because users don't have large amounts of change to get accustomed to all-in-one-go.   
  
-### [Schedule Risk](Scarcity-Risk.md#schedule-risk)
+### [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk)
 
-If you're able to do [Continuous Delivery](DevOps), and have de-risked the release process, then you can eliminate some [Schedule Risk](Scarcity-Risk.md#schedule-risk), because you'll know you can hit any date with _something_.  The risks of what you deliver on that date are then [Feature Risk](Feature-Risk) rather than [Schedule Risk](Scarcity-Risk.md#schedule-risk).
+If you're able to do [Continuous Delivery](DevOps), and have de-risked the release process, then you can eliminate some [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk), because you'll know you can hit any date with _something_.  The risks of what you deliver on that date are then [Feature Risk](Feature-Risk) rather than [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk).
 
 ## Attendant Risks
 
-### [Dependency Risk](Dependency-Risk.md)
+### [Dependency Risk](../risks/Dependency-Risk.md)
 
 The biggest risk to phased delivery is that you try and build functionality **now** that actually relies on things scheduled to be built **later**.  
 
-### [Schedule Risk](Scarcity-Risk.md#schedule-risk)
+### [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk)
 
 Sometimes, releases have a _cost_ associated with them in terms of time and bureaucracy to perform them.   Obviously, then, the more releases you'll do, the less time you'll spend doing _other stuff_, like building functionality.   The trick to doing frequent releases is therefore to ensure they are _low cost_, and this means [automation](DevOps).   But, building automation adds schedule risk too.
 
-### [Complexity Risk](Complexity-Risk.md)
+### [Complexity Risk](../risks/Complexity-Risk.md)
 
-If you are replacing an old system with a new one, incrementally replacing functionality is a good way to go when the system is complex.  However, this means that you're going to have two systems running at the same time, which is inevitably [more complex](Complexity-Risk.md) than just one system.  
+If you are replacing an old system with a new one, incrementally replacing functionality is a good way to go when the system is complex.  However, this means that you're going to have two systems running at the same time, which is inevitably [more complex](../risks/Complexity-Risk.md) than just one system.  
 
 
 

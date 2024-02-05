@@ -8,7 +8,7 @@ featured:
   element: '<document>Glossary</document>'
 categories:
  - Actions
-sidebar_order: 1
+sidebar_position: 1
 ---
 
 # Glossary

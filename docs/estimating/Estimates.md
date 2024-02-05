@@ -5,7 +5,7 @@ url: https://riskfirst.org/estimating/Estimates
 
 categories:
  - Practices
-sidebar_order: 5
+sidebar_position: 5
 featured: 
   class: bg1
   element: '<action>Estimates</action>'

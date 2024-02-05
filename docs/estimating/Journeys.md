@@ -8,7 +8,7 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/maze.svg">Journeys</image-artifact>'
 categories:
  - Estimating
-sidebar_order: 3
+sidebar_position: 3
 tweet: yes
 ---
 

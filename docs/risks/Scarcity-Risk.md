@@ -6,7 +6,7 @@ url: https://riskfirst.org/risks/Scarcity-Risk
 featured: 
   class: bg2
   element: '<risk class="scarcity" />'
-sidebar_order: 7
+sidebar_position: 7
 categories:
  - Risks
 redirect_from: 

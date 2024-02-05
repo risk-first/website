@@ -8,7 +8,7 @@ featured:
   element: '<protocol-artifact>Patterns</protocol-artifact>'
 categories: 
  - Risks
-sidebar_order: 1
+sidebar_position: 1
 redirect_from: 
  - /A-Pattern-Language
 tweet: yes

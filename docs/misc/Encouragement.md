@@ -9,7 +9,7 @@ categories:
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/thumbs-up.svg">Encouragement</image-artifact>'
-sidebar_order: 16
+sidebar_position: 16
 ---
 
 # Encouragement 

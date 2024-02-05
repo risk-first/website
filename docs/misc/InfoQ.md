@@ -6,7 +6,7 @@ url: https://riskfirst.org/misc/InfoQ
 author: rob
 categories:
  - Misc
-sidebar_order: 6
+sidebar_position: 6
 featured: 
   class: bg1
   element: '<interface>InfoQ</interface>'

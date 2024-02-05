@@ -8,7 +8,7 @@ featured:
   element: '<action>Meeting Reality</action>'
 categories:
  - Thinking Risk-First
-sidebar_order: 4
+sidebar_position: 4
 redirect_from: 
  - /Meeting-Reality
 tweet: yes

@@ -8,7 +8,7 @@ featured:
   element: '<risk class="internal-model" />'
 categories:
  - Misc
-sidebar_order: 8
+sidebar_position: 8
 redirect_from: 
  - /post/news/2019/07/25/Timed-Thinking
  - /2019/07/25/Timed-Thinking

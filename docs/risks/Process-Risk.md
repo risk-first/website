@@ -6,7 +6,7 @@ url: https://riskfirst.org/risks/Process-Risk
 featured: 
   class: bg2
   element: '<risk class="process" />'
-sidebar_order: 10
+sidebar_position: 10
 categories:
  - Risks
 redirect_from: 

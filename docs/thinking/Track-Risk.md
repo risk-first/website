@@ -8,7 +8,7 @@ featured:
   element: '<risk href="/public/templates/risk-first/redesign/risks/map_and_territory_risk_v2.svg"><code>Tracking</code><title>Tracking Risks</title></risk>'
 categories:
  - Thinking Risk-First
-sidebar_order: 7
+sidebar_position: 7
 tweet: yes
 ---
 

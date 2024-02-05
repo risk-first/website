@@ -9,7 +9,7 @@ featured:
 author: rob
 categories:
  - Misc
-sidebar_order: 10
+sidebar_position: 10
 redirect_from: 
  - /post/news/2020/01/17/Anti-Goals
  - /2020/01/17/Anti-Goals

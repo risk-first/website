@@ -7,7 +7,7 @@ featured:
   element: '<action>Silver Bullet</action>'
 categories:
  - Complexity
-sidebar_order: 5
+sidebar_position: 5
 tweet: yes
 ---
 

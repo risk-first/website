@@ -9,7 +9,7 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/box-size.svg">On Story Points</image-artifact>'
 categories:
   - Estimating
-sidebar_order: 8
+sidebar_position: 8
 tweet: yes
 ---
 
