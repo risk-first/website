@@ -11,6 +11,7 @@ categories:
 sidebar_position: 1
 tweet: yes
 ---
+import FillTheBucket1 from '@site/src/components/FillTheBucket1';
 
 
 # Fill-The-Bucket
@@ -78,6 +79,8 @@ The more samples we make, the more precise the sample variance will be, and so t
 
 <script type="text/javascript" src="/js/fill-the-bucket2.js"></script>
 
+
+<FillTheBucket1 />
 
 In the above simulation, we are trying to fit a Normal Distribution, estimated from a number of samples.   
 
