@@ -12,6 +12,7 @@ sidebar_position: 1
 tweet: yes
 ---
 import FillTheBucket1 from '@site/src/components/FillTheBucket1';
+import FillTheBucket2 from '@site/src/components/FillTheBucket2';
 
 
 # Fill-The-Bucket
@@ -77,8 +78,6 @@ The more samples we make, the more precise the sample variance will be, and so t
 
 <div id="simulation2"></div>
 
-<script type="text/javascript" src="/js/fill-the-bucket2.js"></script>
-
 
 <FillTheBucket1 />
 
@@ -118,9 +117,7 @@ Let's set up a simple scenario, which we've agreed by contract with a client:
 
 Let's ignore _all other risks_ and just focus on these monetary ones.  What is the best time to suggest to the client?
 
-<div id="simulation3"></div>
-
-<script type="text/javascript" src="/js/fill-the-bucket3.js"></script>
+<FillTheBucket2 />
 
 ## Analysis
 
