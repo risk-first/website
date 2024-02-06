@@ -12,6 +12,9 @@ sidebar_position: 4
 tweet: yes
 ---
 
+import Fractals1 from '@site/src/components/Fractals1';
+
+
 # Fractals
 
 Let's summarize what we've seen so far, and introduce a _new way_ of estimating:
@@ -37,11 +40,7 @@ Let's look at a simple mathematical example of a shape like this, the [Koch Snow
 
 <!--replace ![Koch Snowflake](/img/estimates/koch.png)-->![Koch Snowflake](https://upload.wikimedia.org/wikipedia/commons/f/fd/Von_Koch_curve.gif)<!--endreplace-->
 
-<div id="koch"></div>
-
-<script defer src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js" integrity="sha256-Uv9BNBucvCPipKQ2NS9wYpJmi8DTOEfTA/nH2aoJALw=" crossorigin="anonymous"></script>
-<script defer src="{{ site.baseurl }}/assets/js/mychart.js"></script>
-<script type="text/javascript" src="/js/fractals1.js"></script>
+<Fractals1 />
 
 As the animation shows, this shape is created by adding extra triangles to each side of the existing shape.  As the number of steps increases, the _area_ settles down to 8, whilst the total _perimeter_ begins to increase more and more rapidly.
 

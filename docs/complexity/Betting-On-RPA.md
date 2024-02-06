@@ -95,5 +95,3 @@ Nevertheless, there is a clear path here to getting all of our existing legacy E
 
 And, we haven't even touched on _conversational bots_ yet, the deployment of natural language processing (NLP) within the organisation and using AI to _improve_ process (so-called "[Hyperautomation](https://en.wikipedia.org/wiki/Robotic_process_automation#Hyperautomation)".  That's another day.
 
-In the meantime, let's focus on the [translation issue](SAME.md).
-

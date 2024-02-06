@@ -12,6 +12,12 @@ sidebar_position: 2
 tweet: yes
 ---
 
+import KitchenCabinet1 from '@site/src/components/KitchenCabinet1';
+import KitchenCabinet2 from '@site/src/components/KitchenCabinet2';
+import KitchenCabinet3 from '@site/src/components/KitchenCabinet3';
+
+
+
 # Kitchen Cabinets
 
 Imagine a scenario where you're helping a friend pack up their kitchen:
@@ -38,11 +44,7 @@ All-in-all, it just may not have been possible for me to test that CSS change th
 
 _Cabinets within cabinets._
 
-<div id="simulation" ></div>
-
-<script defer src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js" integrity="sha256-Uv9BNBucvCPipKQ2NS9wYpJmi8DTOEfTA/nH2aoJALw=" crossorigin="anonymous"></script>
-<script defer src="{{ site.baseurl }}/assets/js/mychart.js"></script>
-<script type="text/javascript" src="/js/kitchen-cabinet1.js"></script>
+<KitchenCabinet1 />
 
 
 ## Distribution
@@ -60,10 +62,7 @@ That is, given a bunch of infinity-cabinets, we could say how long it would usua
 
 Whereas [Fill-The-Bucket](Fill-The-Bucket.md) was defined with a _mean_ and _variance_, the exponential distribution is modelled with a single parameter, lambda (λ), which is the rate of decay.   
 
-<div id="lambda"></div>
-
-<script type="text/javascript" src="/js/kitchen-cabinet2.js"></script>
-
+<KitchenCabinet2 />
 
 As you can see from playing with the above chart, with low values of lambda, our completion time is much more likely to take longer.
 
@@ -86,9 +85,7 @@ For the sake of our simulation's simplicity, let's assume that being a day long 
 
 See how this plays out in the following set of charts.
  
-<div id="lambda2"></div>
-
-<script type="text/javascript" src="/js/kitchen-cabinet3.js"></script>
+<KitchenCabinet3 />
 
 ## Analysis
 

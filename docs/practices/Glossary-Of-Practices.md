@@ -83,7 +83,7 @@ Includes the sub-actions or motivation, composition, encoding, transmission, rec
 
 See:
 
- - [Communication Risk](./risks/Communication-Risk.md)
+ - [Communication Risk](../risks/Communication-Risk.md)
  
 ### Translation
 
