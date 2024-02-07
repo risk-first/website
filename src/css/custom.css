@@ -1,3 +1,36 @@
+
+@font-face {
+	font-family: 'Lexend';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 300;
+	src: url(/fonts/lexend/lexend-latin-300-normal.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Lexend';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 400;
+	src: url(/fonts/lexend/lexend-latin-400-normal.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Lexend';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 600;
+	src: url(/fonts/lexend/lexend-latin-600-normal.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Lexend';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 700;
+	src: url(/fonts/lexend/lexend-latin-700-normal.woff2) format('woff2');
+}
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -6,25 +39,70 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+	--ifm-color-primary: #f43d79;
+	--ifm-color-primary-dark: #f22065;
+	--ifm-color-primary-darker: #f2125b;
+	--ifm-color-primary-darkest: #ca0b4a;
+	--ifm-color-primary-light: #f65a8d;
+	--ifm-color-primary-lighter: #f66897;
+	--ifm-color-primary-lightest: #f994b5;
+	--ifm-code-font-size: 95%;
+	--ifm-font-family-base: "Lexend";
+	--docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+	--ifm-scrollbar-track-background-color: #fafafa;
+	--ifm-scrollbar-thumb-background-color: #f0f0f0;
+	--ifm-scrollbar-thumb-hover-background-color: #7a7a7a;
+	--ifm-font-weight-normal: 300;
+	--ifm-menu-color: #bbb;
+	--ifm-footer-title-color: #bbb;
+	--ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="rgba(0,0,0,0.2)" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+	--ifm-color-primary: #f43d79;
+	--ifm-color-primary-dark: #f22065;
+	--ifm-color-primary-darker: #f2125b;
+	--ifm-color-primary-darkest: #ca0b4a;
+	--ifm-color-primary-light: #f65a8d;
+	--ifm-color-primary-lighter: #f66897;
+	--ifm-color-primary-lightest: #f994b5;
+	--ifm-footer-background-color: #111;
+	--docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+html[data-theme='light'] .footer-strap {
+	font-weight: bold;
+	color: #ffffff;
+}
+
+html[data-theme='light'] .navbar-sidebar__item {
+	background-color: white;
+}
+
+html[data-theme='light'] .footer-copyright {
+	color: #dddddd;
+	font-size: smaller;
+}
+
+#__docusaurus>footer {
+	border-top: 1px solid #eee;
+}
+
+/** 
+ * Due to : https://github.com/facebook/docusaurus/issues/2692
+ */
+html[data-theme='dark'] footer {
+  background-color: black;
+}
+html[data-theme='light'] footer {
+  background-color: white;
+}
+
+html[data-theme='light'] .footer__title {
+  color: #333;
+}
+html[data-theme='light'] .footer__link-item {
+  color: #333;
+}
+
