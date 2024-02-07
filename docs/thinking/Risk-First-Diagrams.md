@@ -3,7 +3,7 @@ title: Risk-First Diagrams Explained
 description: A quick primer to help parse a Risk-First diagram. 
 url: https://riskfirst.org/overview/Risk-First-Diagrams
 
-categories: 
+tags: 
  - Thinking Risk-First
 sidebar_position: 2
 featured: 

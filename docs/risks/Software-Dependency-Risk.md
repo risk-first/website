@@ -7,7 +7,7 @@ featured:
   class: bg2
   element: '<risk class="software-dependency" />'
 sidebar_position: 9
-categories:
+tags:
  - Risks
 redirect_from: 
  - /Software-Dependency-Risk

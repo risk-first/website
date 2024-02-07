@@ -7,7 +7,7 @@ date: 2019-05-12 16:32:03 +0000
 featured: 
   class: bg1
   element: '<agent-artifact>Balance Of Risk</agent-artifact>'
-categories:
+tags:
  - Bets
 sidebar_position: 1
 tweet: yes

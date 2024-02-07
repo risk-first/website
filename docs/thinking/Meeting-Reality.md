@@ -6,7 +6,7 @@ url: https://riskfirst.org/thinking/Meeting-Reality
 featured: 
   class: bg3
   element: '<action>Meeting Reality</action>'
-categories:
+tags:
  - Thinking Risk-First
 sidebar_position: 4
 redirect_from: 

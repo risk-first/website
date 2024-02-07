@@ -6,7 +6,7 @@ url: https://riskfirst.org/actions/Glossary-Of-Practices
 featured: 
   class: bg2
   element: '<document>Glossary</document>'
-categories:
+tags:
  - Actions
 sidebar_position: 1
 ---

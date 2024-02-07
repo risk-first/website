@@ -6,7 +6,7 @@ url: https://riskfirst.org/complexity/Crystals-And-Code
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/crystal.svg">Crystals And Code</image-artifact>'
-categories:
+tags:
  - Complexity
 sidebar_position: 2
 tweet: yes

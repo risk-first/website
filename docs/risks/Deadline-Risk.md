@@ -7,7 +7,7 @@ featured:
   class: bg2
   element: '<risk class="deadline" />'
 sidebar_position: 8
-categories:
+tags:
  - Risks
 redirect_from: 
  - /Deadline-Risk

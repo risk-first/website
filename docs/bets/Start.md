@@ -8,7 +8,7 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cards.svg">Track 4: On Bets</image-artifact>'
 layout: categories
 cat: Bets
-categories:
+tags:
  - Front
 tweet: yes
 ---
@@ -25,3 +25,5 @@ This is a short sequence of articles that looks at the idea of _betting_, at dif
 - Understand risk as a _spectrum_, rather than an item on a register.
 - Understand the appropriate domain for Agile and Planned methodologies.
 - Move beyond "Agile"  and "Planned" approaches, to a right-tool-for-the-job approach.
+
+<TagList filter="bets" />

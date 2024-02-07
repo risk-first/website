@@ -6,7 +6,7 @@ url: https://riskfirst.org/thinking/One-Size-Fits-No-One
 featured: 
   class: bg3
   element: '<internal-model-artifact>One Size</internal-model-artifact>'
-categories:
+tags:
  - Thinking Risk-First
  - Popular
 sidebar_position: 14

@@ -6,7 +6,6 @@ url: https://riskfirst.org/estimating/Stop-Estimating-Start-Navigating
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/logo/R1_logo_black.svg">Risk-First Analysis</image-artifact>'
-categories:
 sidebar_position: 9
 ---
 

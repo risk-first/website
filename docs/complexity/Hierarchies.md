@@ -6,7 +6,7 @@ url: https://riskfirst.org/complexity/Hierarchies
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/redesign/risks/complexity_risk.svg">Hierarchies</image-artifact>'
-categories:
+tags:
  - Complexity
 sidebar_position: 1
 tweet: yes

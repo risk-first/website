@@ -22,8 +22,8 @@ const config = {
 
 	// GitHub pages deployment config.
 	// If you aren't using GitHub pages, you don't need these.
-	organizationName: 'facebook', // Usually your GitHub org/user name.
-	projectName: 'docusaurus', // Usually your repo name.
+	organizationName: 'risk-first', // Usually your GitHub org/user name.
+	projectName: 'website', // Usually your repo name.
 
 	onBrokenLinks: 'throw',
 	onBrokenMarkdownLinks: 'warn',
@@ -66,12 +66,13 @@ const config = {
 				title: 'Risk First',
 				logo: {
 					alt: 'Risk First Logo',
-					src: 'img/R1_logo_grue.svg',
+					src: 'img/R1_logo_round_black_small.svg',
 				},
 				items: [
 					{ to: '/overview/Start', label: 'Overview', position: 'left' },
 					{ to: '/thinking/Start', label: 'Thinking', position: 'left' },
 					{ to: '/risks/Start', label: 'Risks', position: 'left' },
+					{ to: '/bets/Start', label: 'Bets', position: 'left' },
 					{ to: '/estimating/Start', label: 'Estimating', position: 'left' },
 					{ to: '/complexity/Start', label: 'Complexity', position: 'left' },
 					{
@@ -90,6 +91,7 @@ const config = {
 							{ to: '/overview/Start', label: 'Overview', position: 'left' },
 							{ to: '/thinking/Start', label: 'Thinking', position: 'left' },
 							{ to: '/risks/Start', label: 'Risks', position: 'left' },
+							{ to: '/bets/Start', label: 'Bets', position: 'left' },
 							{ to: '/estimating/Start', label: 'Estimating', position: 'left' },
 							{ to: '/complexity/Start', label: 'Complexity', position: 'left' },
 						],
@@ -133,6 +135,7 @@ const config = {
 				darkTheme: prismThemes.dracula,
 			},
 		}),
+	plugins: ['./src/plugins/category-listing']
 };
 
 export default config;

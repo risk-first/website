@@ -7,7 +7,7 @@ date: 2021-05-08 13:32:03 +0000
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/box-size.svg">On Story Points</image-artifact>'
-categories:
+tags:
   - Estimating
 sidebar_position: 8
 tweet: yes

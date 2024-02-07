@@ -6,7 +6,7 @@ url: https://riskfirst.org/thinking/Evaluating-Risk
 featured: 
   class: bg3
   element: '<risk href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg"><code>Urgent</code><title>Evaluating Risk</title></risk>'
-categories:
+tags:
  - Thinking Risk-First
 sidebar_position: 9
 redirect_from: 

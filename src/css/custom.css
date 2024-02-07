@@ -56,6 +56,7 @@
 	--ifm-menu-color: #bbb;
 	--ifm-footer-title-color: #bbb;
 	--ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="rgba(0,0,0,0.2)" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
+	--docusaurus-tag-list-border: #eee;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -86,17 +87,17 @@ html[data-theme='light'] .footer-copyright {
 }
 
 #__docusaurus>footer {
-	border-top: 1px solid #eee;
+	border-top: 1px solid #ccc;
 }
 
 /** 
  * Due to : https://github.com/facebook/docusaurus/issues/2692
  */
-html[data-theme='dark'] footer {
-  background-color: black;
+html[data-theme='dark'] footer--dark {
+  background-color: #0a0a0a;
 }
-html[data-theme='light'] footer {
-  background-color: white;
+html[data-theme='light'] footer-dark {
+  background-color: #fdfdfd;
 }
 
 html[data-theme='light'] .footer__title {
@@ -106,3 +107,39 @@ html[data-theme='light'] .footer__link-item {
   color: #333;
 }
 
+/* Layout for simple output 
+   ========================================================================== */
+
+.slide {
+  padding: 2em 0;
+}
+
+.slide-image {
+  margin-bottom: 2em;
+}
+
+.slide .slide-notes p:first-child {
+  margin-top: 0;
+}
+
+@media (min-width: 800px) {
+
+  .slide {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .slide .slide-image {
+    width: 48%;
+    margin-bottom: 0;
+  }
+
+  .slide .slide-notes {
+    width: 48%;
+  }
+
+}
+
+.credits {
+  opacity: 0.5;
+}

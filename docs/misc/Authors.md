@@ -2,7 +2,7 @@
 title: Authors
 description: List of Risk-First authors
 url: https://riskfirst.org/Authors
-categories:
+tags:
  - Misc
 featured: 
   class: bg1

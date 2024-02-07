@@ -8,7 +8,7 @@ date: 2020-11-10 16:32:03 +0000
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/logo/R1_logo_black.svg">Risk-First Analysis</image-artifact>'
-categories:
+tags:
  - Estimating
 sidebar_position: 7
 tweet: yes

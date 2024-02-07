@@ -7,7 +7,7 @@ featured:
   class: bg2
   element: '<risk class="map-and-territory" />'
 sidebar_position: 14
-categories:
+tags:
  - Risks
 redirect_from: 
  - /Map-And-Territory-Risk

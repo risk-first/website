@@ -7,7 +7,7 @@ featured:
   class: bg1
   element: '<risk href="/public/templates/risk-first/redesign/risks/goal_v2.svg"><code>AG</code><title>Anti-Goal</title></risk>'
 author: rob
-categories:
+tags:
  - Misc
 sidebar_position: 10
 redirect_from: 

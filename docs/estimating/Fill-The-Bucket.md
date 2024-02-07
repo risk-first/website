@@ -6,7 +6,7 @@ url: https://riskfirst.org/estimating/Fill-The-Bucket
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/bucket.svg">Fill The Bucket</image-artifact>'
-categories:
+tags:
  - Estimating
 sidebar_position: 1
 tweet: yes

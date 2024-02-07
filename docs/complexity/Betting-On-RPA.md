@@ -6,7 +6,7 @@ date: 2020-08-10 16:32:03 +0000
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/bot.svg">Betting On RPA</image-artifact>'
-categories:
+tags:
  - Complexity
 sidebar_position: 4
 tweet: yes

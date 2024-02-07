@@ -8,7 +8,7 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/redesign/risks/complexity_risk_v2.svg">Track 6: On Complexity</image-artifact>'
 layout: categories
 cat: Complexity
-categories:
+tags:
  - Front
 sidebar_position: 7 
 tweet: yes
@@ -28,3 +28,5 @@ This series of articles aims to give you:
 ## Background Reading
 
 This trail assumes familiarity with the [Risk-First Risks](../risks/Risk-Landscape.md), especially [Complexity Risk](../risks/Complexity-Risk.md).
+
+<TagList filter="complexity" />

@@ -6,7 +6,7 @@ url: https://riskfirst.org/thinking/A-Conversation
 featured: 
   class: bg3
   element: '<risk class="communication" />'
-categories: 
+tags: 
  - Thinking Risk-First
 sidebar_position: 13
 redirect_from: 

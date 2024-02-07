@@ -7,7 +7,7 @@ featured:
   class: bg2
   element: '<risk class="feature" />'
 sidebar_position: 3
-categories:
+tags:
  - Risks
 redirect_from: 
  - /Feature-Risk

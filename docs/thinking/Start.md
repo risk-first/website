@@ -8,7 +8,7 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/bulb.svg">Track 2: Thinking Risk-First</image-artifact>'
 layout: categories
 cat: Thinking Risk-First
-categories:
+tags:
  - Front
 sidebar_position: 2
 redirect_from:
@@ -44,3 +44,4 @@ Hopefully, after reading through some of the articles here, you'll come away wit
 - A new way to look at the software development process: it's an exercise in managing different kinds of risk.
 - The tools to help you decide when a methodology is _letting you down_ and the vocabulary to argue for when it's a good idea to deviate from it.
 
+<TagList filter="thinking" />

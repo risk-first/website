@@ -6,7 +6,7 @@ url: https://riskfirst.org/thinking/Just-Risk
 featured: 
   class: bg3
   element: '<risk class="internal-model" />'
-categories:
+tags:
  - Thinking Risk-First
 sidebar_position: 5
 redirect_from: 

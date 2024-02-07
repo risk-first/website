@@ -6,7 +6,7 @@ url: https://riskfirst.org/thinking/Glossary
 featured: 
   class: bg3
   element: '<document>Glossary</document>'
-categories:
+tags:
  - Thinking Risk-First
 sidebar_position: 15
 redirect_from: 

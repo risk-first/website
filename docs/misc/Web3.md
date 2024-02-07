@@ -5,7 +5,7 @@ url: https://riskfirst.org/misc/Web3
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cycle.svg">Web3</image-artifact>'
-categories:
+tags:
  - Misc
 sidebar_position: 15
 tweet: yes

@@ -6,7 +6,7 @@ url: https://riskfirst.org/thinking/Track-Risk
 featured: 
   class: bg3
   element: '<risk href="/public/templates/risk-first/redesign/risks/map_and_territory_risk_v2.svg"><code>Tracking</code><title>Tracking Risks</title></risk>'
-categories:
+tags:
  - Thinking Risk-First
 sidebar_position: 7
 tweet: yes

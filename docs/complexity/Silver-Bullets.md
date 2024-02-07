@@ -5,7 +5,7 @@ url: https://riskfirst.org/complexity/Silver-Bullets
 featured: 
   class: bg1
   element: '<action>Silver Bullet</action>'
-categories:
+tags:
  - Complexity
 sidebar_position: 5
 tweet: yes

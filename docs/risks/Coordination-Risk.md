@@ -7,7 +7,7 @@ featured:
   class: bg2
   element: '<risk class="coordination" />'
 sidebar_position: 13
-categories:
+tags:
  - Risks
 redirect_from: 
  - /Coordination-Risk

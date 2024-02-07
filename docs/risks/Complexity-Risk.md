@@ -7,7 +7,7 @@ featured:
   class: bg2
   element: '<risk class="complexity" />'
 sidebar_position: 5
-categories:
+tags:
  - Popular
  - Risks
 redirect_from: 

@@ -4,7 +4,7 @@ description: A New Way to Consume Hacker News?
 url: https://riskfirst.org/misc/Hacker-News
 
 author: rob
-categories:
+tags:
  - Misc
 sidebar_position: 5
 featured: 

@@ -4,7 +4,7 @@ description: Article Published On Risk-First at InfoQ By Ben Linders.
 url: https://riskfirst.org/misc/InfoQ
 
 author: rob
-categories:
+tags:
  - Misc
 sidebar_position: 6
 featured: 

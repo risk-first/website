@@ -4,7 +4,7 @@ description: New Proof of Risk-First- The Menagerie.
 url: https://riskfirst.org/misc/New-Proof
 
 author: rob
-categories:
+tags:
  - Misc
 sidebar_position: 1
 featured: 

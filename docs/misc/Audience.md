@@ -3,7 +3,7 @@ title: Audience
 description: Risk-First is for software development teams, including software developers, managers, testers and technical leads.
 url: https://riskfirst.org/overview/Audience
 
-categories: 
+tags: 
  - Misc
 featured: 
   class: bg1

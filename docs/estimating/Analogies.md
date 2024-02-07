@@ -6,7 +6,7 @@ url: https://riskfirst.org/estimating/Analogies
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/knot.svg">Analogies</image-artifact>'
-categories:
+tags:
  - Estimating
 sidebar_position: 5
 tweet: yes

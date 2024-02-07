@@ -8,7 +8,7 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/presentation.svg">Presentations</image-artifact>'
 layout: categories
 cat: Presentations
-categories:
+tags:
  - Front
 sidebar_position: 8 
 tweet: yes
@@ -19,3 +19,5 @@ tweet: yes
 Presentations about Risk-First, and related topics that I've given over the last few years.  
 
 Note - there is some repetition here, I don't come up with completely new ideas for each presentation!
+
+<TagList filter="presentations" />

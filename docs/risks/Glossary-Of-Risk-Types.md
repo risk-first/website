@@ -6,7 +6,7 @@ url: https://riskfirst.org/risks/Glossary-Of-Risk-Types
 featured: 
   class: bg2
   element: '<document>Glossary</document>'
-categories:
+tags:
  - Risks
 sidebar_position: 17
 redirect_from: 

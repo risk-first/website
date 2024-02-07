@@ -7,7 +7,7 @@ featured:
   class: bg2
   element: '<risk class="dependency" />'
 sidebar_position: 6
-categories:
+tags:
  - Risks
 redirect_from: 
  - /Dependency-Risk

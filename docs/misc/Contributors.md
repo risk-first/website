@@ -6,7 +6,7 @@ url: https://riskfirst.org/misc/Contributors
 featured: 
   class: bg1
   element: '<users>Contributors</users>'
-categories: 
+tags: 
  - Misc
 sidebar_position: 13
 redirect_from: 

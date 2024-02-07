@@ -3,7 +3,7 @@ title: The Evolution Of Open-Source
 description: Looking at evolutionary feedback loops in software development
 url: https://riskfirst.org/misc/Evolution-open-source
 
-categories:  
+tags:  
  - Misc
 featured: 
   class: bg1

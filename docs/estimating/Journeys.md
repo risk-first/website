@@ -6,7 +6,7 @@ url: https://riskfirst.org/estimating/Journeys
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/maze.svg">Journeys</image-artifact>'
-categories:
+tags:
  - Estimating
 sidebar_position: 3
 tweet: yes

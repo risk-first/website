@@ -6,7 +6,7 @@ url: https://riskfirst.org/misc/Timed-Thinking
 featured: 
   class: bg1
   element: '<risk class="internal-model" />'
-categories:
+tags:
  - Misc
 sidebar_position: 8
 redirect_from: 

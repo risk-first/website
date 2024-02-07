@@ -3,7 +3,7 @@ title: A Simple Scenario
 description: What is the one thing every project needs to control to be successful?
 url: https://riskfirst.org/thinking/A-Simple-Scenario
 
-categories: 
+tags: 
  - Thinking Risk-First
 featured: 
   class: bg3

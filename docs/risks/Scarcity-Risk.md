@@ -7,7 +7,7 @@ featured:
   class: bg2
   element: '<risk class="scarcity" />'
 sidebar_position: 7
-categories:
+tags:
  - Risks
 redirect_from: 
  - /Scarcity-Risk

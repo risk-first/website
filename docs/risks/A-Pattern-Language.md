@@ -6,7 +6,7 @@ url: https://riskfirst.org/risks/A-Pattern-Language
 featured: 
   class: bg2
   element: '<protocol-artifact>Patterns</protocol-artifact>'
-categories: 
+tags: 
  - Risks
 sidebar_position: 1
 redirect_from: 

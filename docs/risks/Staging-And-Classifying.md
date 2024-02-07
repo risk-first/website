@@ -7,7 +7,7 @@ featured:
   class: bg2
   element: '<document>Collection</document>'
 sidebar_position: 16
-categories:
+tags:
  - Risks
 redirect_from: 
  - /Staging-And-Classifying

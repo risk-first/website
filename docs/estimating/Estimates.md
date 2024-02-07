@@ -3,7 +3,7 @@ title: Estimates
 description: Some suggestions for improving estimating in software projects, by considering risk.
 url: https://riskfirst.org/estimating/Estimates
 
-categories:
+tags:
  - Practices
 sidebar_position: 5
 featured: 

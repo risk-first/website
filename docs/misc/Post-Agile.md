@@ -6,7 +6,7 @@ url: https://riskfirst.org/misc/Post-Agile
 featured: 
   class: bg1
   element: '<risk class="complexity" />'
-categories:
+tags:
  - Popular
  - Misc
 sidebar_position: 7

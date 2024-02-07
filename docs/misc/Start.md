@@ -7,7 +7,7 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/tape-measure.svg">Miscellaneous</image-artifact>'
 layout: categories
 cat: Misc
-categories:
+tags:
  - None
 sidebar_position: 7
 ---
@@ -15,3 +15,5 @@ sidebar_position: 7
 # Miscellaneous Articles
 
 Pieces of news, and other articles that don't fit into the "tracks" structure on Risk-First.
+
+<TagList filter="misc" />

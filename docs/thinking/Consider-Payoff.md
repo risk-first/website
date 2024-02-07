@@ -6,7 +6,7 @@ url: https://riskfirst.org/thinking/Consider-Payoff
 featured: 
   class: bg3
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cash.svg">Payoff</image-artifact>'
-categories:
+tags:
  - Thinking Risk-First
 sidebar_position: 6
 tweet: yes

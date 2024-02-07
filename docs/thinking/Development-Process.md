@@ -7,7 +7,7 @@ featured:
   class: bg3
   element: '<risk href="/public/templates/risk-first/redesign/artifacts/methodology_v2.svg"><code>Method</code><title>On Process</title></risk>'
 sidebar_position: 3
-categories:
+tags:
  - Thinking Risk-First
 redirect_from: 
  - /Development-Process

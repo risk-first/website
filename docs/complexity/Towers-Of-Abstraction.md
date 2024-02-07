@@ -6,7 +6,7 @@ url: https://riskfirst.org/complexity/Towers-Of-Abstraction
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/eiffel.svg">Towers Of Abstraction</image-artifact>'
-categories:
+tags:
  - Complexity
 sidebar_position: 3
 ---

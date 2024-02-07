@@ -5,7 +5,7 @@ url: https://riskfirst.org/estimating/Fixing-Scrum
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/scrum.svg">Fixing Scrum</image-artifact>'
-categories:
+tags:
  - Estimating
  - Popular
 sidebar_position: 6

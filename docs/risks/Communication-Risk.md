@@ -7,7 +7,7 @@ featured:
   class: bg2
   element: '<risk class="communication" />'
 sidebar_position: 4
-categories:
+tags:
  - Risks
 redirect_from: 
  - /Communication-Risk

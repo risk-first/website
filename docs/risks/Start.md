@@ -8,7 +8,7 @@ featured:
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/dictionary.svg">Track 3: Risks</image-artifact>'
 sidebar_position: 4
-categories:
+tags:
   - Front
 tweet: yes
 ---
@@ -30,3 +30,5 @@ After reading this section of [Risk-First](https://riskfirst.org), hopefully you
  - Appreciate the **different kinds of risk** you face on software projects, and how to identify them.
  - Learn a **Pattern Language**: that is, a vocabulary of terms which you can use for discussing these risks with colleagues.
  - Know the main **actions you can take** to handle each type of risk.
+ 
+ <TagList filter="risks" />

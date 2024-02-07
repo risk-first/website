@@ -6,7 +6,7 @@ url: https://riskfirst.org/complexity/End-Of-Complexity
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/stop.svg">The End of Complexity</image-artifact>'
-categories:
+tags:
  - Complexity
 sidebar_position: 6
 ---

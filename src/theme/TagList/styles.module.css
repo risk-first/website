@@ -1,0 +1,40 @@
+:root {
+  --docusaurus-tag-list-border: var(--ifm-color-emphasis-300);
+}
+
+.docItem {
+  border: 1px solid var(--docusaurus-tag-list-border);
+  transition: border var(--ifm-transition-fast);
+  margin-right: 0.2rem;
+  margin-bottom: .5rem;
+  padding: 1rem;
+}
+
+.tag:hover {
+  --docusaurus-tag-list-border: var(--ifm-link-color);
+  text-decoration: none;
+}
+
+.tagRegular {
+  border-radius: var(--ifm-global-radius);
+  padding: 0.2rem 0.5rem 0.3rem;
+  font-size: 90%;
+}
+
+.columns {
+	display: flex;
+	gap: 1rem;
+}
+
+.left {
+	flex-basis: 15rem;
+	flex-shrink: 0;
+}
+
+.description {
+	color: grey;
+}
+
+.right {
+	flex-grow: 1;
+}

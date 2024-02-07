@@ -5,7 +5,7 @@ url: https://riskfirst.org/thinking/Health
 featured: 
   class: bg3
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/8bit-heart.svg">Health</image-artifact>'
-categories: 
+tags: 
  - Thinking Risk-First
 sidebar_position: 10
 redirect_from: 

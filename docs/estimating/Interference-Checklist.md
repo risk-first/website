@@ -6,7 +6,7 @@ url: https://riskfirst.org/estimating/Interference-Checklist
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/checklist.svg">Interference Checklist</image-artifact>'
-categories:
+tags:
   - Estimating
 sidebar_position: 9
 tweet: yes

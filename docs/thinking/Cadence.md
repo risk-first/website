@@ -6,7 +6,7 @@ url: https://riskfirst.org/thinking/Cadence
 featured: 
   class: bg3
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cadence.svg">Feedback Loops</image-artifact>'
-categories:
+tags:
  - Thinking Risk-First
 sidebar_position: 11
 redirect_from: 

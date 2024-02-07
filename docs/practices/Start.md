@@ -32,3 +32,5 @@ _This is in progress_
 - [Placing Bets](../bets/Purpose-Development-Team.md)
 
 - Wrap Up:  How to Run a project Risk-First. (tbd)
+
+<TagList filter="practices" />

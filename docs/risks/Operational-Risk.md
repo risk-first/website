@@ -7,7 +7,7 @@ featured:
   class: bg2
   element: '<risk class="operational" />'
 sidebar_position: 15
-categories:
+tags:
  - Risks
 redirect_from: 
  - /Operational-Risk

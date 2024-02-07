@@ -6,7 +6,7 @@ url: https://riskfirst.org/estimating/Kitchen-Cabinet
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cupboard.svg">Kitchen Cabinets</image-artifact>'
-categories:
+tags:
  - Estimating
 sidebar_position: 2
 tweet: yes

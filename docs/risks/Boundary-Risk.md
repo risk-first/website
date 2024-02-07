@@ -7,7 +7,7 @@ featured:
   class: bg2
   element: '<risk class="boundary" />'
 sidebar_position: 11
-categories:
+tags:
  - Risks
 redirect_from: 
  - /Boundary-Risk

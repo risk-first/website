@@ -7,7 +7,7 @@ date: 2019-06-04 16:32:03 +0000
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cards.svg">Coding Bets</image-artifact>'
-categories:
+tags:
  - Bets
 sidebar_position: 2
 tweet: yes
