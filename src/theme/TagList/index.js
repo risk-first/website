@@ -7,7 +7,8 @@ import styles from './styles.module.css'
 
 function DocItemImage({ doc }) {
 	const pl = doc.permalink
-	const imageLink = "/img/generated/single/" + pl + ".png"
+	const stripped = pl.endsWith('/') ? pl+"index" : pl
+	const imageLink = "/img/generated/single/" + stripped + ".png"
 
 	return (
 		<Link key={doc.permalink} to={doc.permalink}>
@@ -42,13 +43,15 @@ export default function TagList(props) {
 	const location = useLocation().pathname;
 
 	oneTag.sort((a, b) => a.order - b.order);
+	
+	console.log(oneTag[0].permalink.indexOf(location))
 
 	return (
 		<div className={styles.tagList}>
 			{
 				oneTag
 					.filter(d => d.permalink.indexOf(filter) > -1)
-					.filter(d => d.permalink.indexOf(location) == -1)
+					.filter(d => d.permalink != location)
 					.map(d => <DocItemImage key={d} doc={d} />)
 			}
 		</div>

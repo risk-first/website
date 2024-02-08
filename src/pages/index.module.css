@@ -21,3 +21,29 @@
   align-items: center;
   justify-content: center;
 }
+
+.siteHeader {
+	font-family: Geomanist;
+	font-weight: 600;
+    color: rgb(245, 62, 121);
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+.lead {
+	font-family: Geomanist;
+	font-weight: 400;
+	font-size: 1.5rem;
+}
+
+.frontPageContent {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	align-items: flex-start;
+}
+
+.frontPageContent>div {
+	flex-basis: 30rem;
+	flex-grow: 1;
+}
