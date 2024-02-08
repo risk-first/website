@@ -10,7 +10,7 @@ function DocItemImage({ doc }) {
 	const imageLink = "/img/generated/single/" + pl + ".png"
 
 	return (
-		<Link to={doc.permalink}>
+		<Link key={doc.permalink} to={doc.permalink}>
 			<article className={styles.docItem}>
 				<div className={styles.columns}>
 					<div className={styles.left}>
@@ -44,7 +44,7 @@ export default function TagList(props) {
 	oneTag.sort((a, b) => a.order - b.order);
 
 	return (
-		<div key={props.tag} className={styles.tagList}>
+		<div className={styles.tagList}>
 			{
 				oneTag
 					.filter(d => d.permalink.indexOf(filter) > -1)

@@ -47,7 +47,7 @@ const config = {
 					remarkPlugins: [remarkMath],
 					rehypePlugins: [rehypeKatex],
 					editUrl:
-						'https://github.com/risk-first/website/blon/master/',
+						'https://github.com/risk-first/website/blob/master/',
 				},
 				blog: false,
 				theme: {
