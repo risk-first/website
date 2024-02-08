@@ -10,7 +10,7 @@ layout: categories
 cat: Presentations
 tags:
  - Front
-sidebar_position: 8 
+sidebar_position: 7
 tweet: yes
 ---
 

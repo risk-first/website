@@ -31,6 +31,7 @@ const chart1 = (model) => {
 
 	return {
 		type: 'line',
+		id: "1",
 		data: {
 			labels: range(0, 20, 1),
 			datasets: [{
@@ -47,11 +48,11 @@ const chart1 = (model) => {
 		},
 		options: {
 			scales: {
-				y: [{
+				y: {
 					ticks: {
 						beginAtZero: true
 					}
-				}]
+				}
 			}
 		}
 	}

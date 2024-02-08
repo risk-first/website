@@ -38,6 +38,7 @@ const chart1 = (model) => {
 
 	return {
 		type: 'line',
+		id: "1",
 		data: {
 			labels: range(0, days, 1),
 			datasets: [{
@@ -54,11 +55,11 @@ const chart1 = (model) => {
 		},
 		options: {
 			scales: {
-				y: [{
+				y: {
 					ticks: {
 						beginAtZero: true
 					}
-				}]
+				}
 			}
 		}
 	}
@@ -70,6 +71,7 @@ const chart2 = (model) => {
 
 	return {
 		type: 'line',
+		id: "2",
 		data: {
 			labels: range(0, days, 1),
 			datasets: [{
@@ -88,11 +90,11 @@ const chart2 = (model) => {
 		},
 		options: {
 			scales: {
-				yAxes: [{
+				y: {
 					ticks: {
 						beginAtZero: true
 					}
-				}]
+				}
 			}
 		}
 	}
@@ -106,6 +108,7 @@ const chart3 = (model) => {
 
 	return {
 		type: 'line',
+		id: "3",
 		data: {
 			labels: range(0, days, 1),
 			datasets: [{
@@ -118,11 +121,11 @@ const chart3 = (model) => {
 		},
 		options: {
 			scales: {
-				yAxes: [{
+				y: {
 					ticks: {
 						beginAtZero: true
 					}
-				}]
+				}
 			}
 		}
 	}
@@ -138,6 +141,7 @@ const chart4 = (model) => {
 
 	return {
 		type: 'bar',
+		id: "4",
 		data: {
 			labels: ['Too Early', 'Too Late', 'Total'],
 			datasets: [{
@@ -150,11 +154,11 @@ const chart4 = (model) => {
 		},
 		options: {
 			scales: {
-				yAxes: [{
+				y: {
 					ticks: {
 						beginAtZero: true
 					}
-				}]
+				}
 			}
 		}
 	}

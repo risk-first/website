@@ -10,7 +10,7 @@ layout: categories
 cat: Complexity
 tags:
  - Front
-sidebar_position: 7 
+sidebar_position: 6
 tweet: yes
 ---
 

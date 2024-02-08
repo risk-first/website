@@ -79,6 +79,7 @@ const chart1 = (model) => {
 
 	return {
 		type: 'bar',
+		id: "1",
 		data: {
 			labels: range(0, 20, 1),
 			datasets: [{

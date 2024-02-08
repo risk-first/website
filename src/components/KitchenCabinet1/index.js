@@ -55,6 +55,7 @@ const chart1 = (model) => {
 
 	return {
 		type: 'bar',
+		id: "1",
 		data: {
 			labels: [...range(0, model.time.value, 1), model.time.value + "+"],
 			datasets: [{
@@ -68,11 +69,11 @@ const chart1 = (model) => {
 		options: {
 			maintainAspectRatio: false,
 			scales: {
-				y: [{
+				y: {
 					ticks: {
 						beginAtZero: true
 					}
-				}]
+				}
 			}
 		}
 	}
