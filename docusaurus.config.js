@@ -25,7 +25,6 @@ const config = {
 	// If you aren't using GitHub pages, you don't need these.
 	organizationName: 'risk-first', // Usually your GitHub org/user name.
 	projectName: 'website', // Usually your repo name.
-	deploymentBranch: 'master',
 
 	onBrokenLinks: 'throw',
 	onBrokenMarkdownLinks: 'warn',
