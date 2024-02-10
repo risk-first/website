@@ -30,11 +30,3 @@ The book aims to develop a _Pattern Language_ for understanding software risk, a
 ## Read It Here
 
 "The Menagerie" contains all of the [Overview](overview/Start.md), [Thinking Risk-First](thinking/Start.md) and [Risks](thinking/Start.md) tracks from the Risk-First website, so you can read all the material on-line here if you want to.
-
- 
-## What's Next?
-
-Look forward to **Risk-First Software Development Volume 2: Tools & Practices** in 2021...
-
-
- 

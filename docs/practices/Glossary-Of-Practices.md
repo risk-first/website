@@ -13,7 +13,7 @@ sidebar_position: 1
 
 # Glossary
 
-### Abstraction (Using)
+### Abstraction (Using)
 
 > "An abstraction" is the outcome of this process—a concept that acts as a common noun for all subordinate concepts and connects any related concepts as a group, field, or category.[1]
 
@@ -109,7 +109,7 @@ See:
 
  - [Waterfall (One Size Fits No One)](thinking/One-Size-Fits-No-One.md)
  
-### Environmental Scanning
+### Environmental Scanning
 
 Understanding the operational environment of a system in order to anticipate future problems.
 
@@ -118,7 +118,7 @@ See:
  - [Environmental Scanning](../risks/Operational-Risk.md#scanning-the-operational-context)
 
 
-### Market Segmentation
+### Market Segmentation
 
 A process by which you divide the addressable market of users for a piece of software into different types or _personas_ in order that you can tackle the requirements of a single group in isolation.
 
@@ -168,7 +168,7 @@ See:
 
 - [Reliability Risk](../risks/Dependency-Risk.md#reliability-risk)
 
-### Graceful Degredation
+### Graceful Degredation
 
 Handing lack of a scarce resource by failing in a tolerable way.
 
@@ -185,13 +185,13 @@ See:
 - [Scarcity Risk](../risks/Scarcity-Risk.md#mitigations)
 
 
-## Product Development
+### Product Development
 
 Mitigating [Feature Risk](../risks/Feature-Risk.md) by adding code to a project.  Can often be called _coding_ or _implementation_.
 
 _See: [Development Process](../thinking/Development-Process.md#example_a_toy_process)_
 
-## Integration
+### Integration
 
 Combining different versions of a codebase together to check for consistency.  Also called [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration).
 
@@ -199,7 +199,7 @@ See:
 - [Development Process](../thinking/Development-Process.md#example_a_toy_process)_
 - [Production (Cadence)](../thinking/Cadence.md#production)
 
-## User Acceptance Testing (UAT)
+### User Acceptance Testing (UAT)
 
 Completing a [Feedback Loop](../thinking/Cadence.md) in order to ascertain whether [Feature Risk](../risks/Feature-Risk.md) has been correctly addressed by new features.  Also called _verification_, _user feedback_ or _manual testing_.
 
@@ -209,7 +209,7 @@ See:
  - [Manual Testing](../thinking/Cadence.md#development-cycle-time) 
  - [Waterfall (One Size Fits No One)](thinking/One-Size-Fits-No-One.md) 
 
-## Release 
+### Release 
 
 The act of moving in-development software to being in production, so that clients can make use of it.
 
@@ -218,14 +218,14 @@ See:
 - [Consider Payoff](../thinking/Consider-Payoff.md#example-continue-testing-or-release)
 - [Production (Cadence)](../thinking/Cadence.md#production)
 
-## Testing
+### Testing
 
 See: 
 
  - [Unit testing](#unit-testing)
  - [User Acceptance Testing (UAT)](#user-acceptance-testing-uat)
  
-## Security Testing
+### Security Testing
 
 Performing tests to evaluate the security of a given system.  May include _penetration testing_, for example.
 
@@ -233,7 +233,7 @@ See:
 
 - [Penetration Testing](../risks/Operational-Risk.md#scanning-the-operational-context)
 
-## Experimentation
+### Experimentation
 
 Improving your internal model by testing (or playing with) components of the real world context.  For example, building a _spike solution_.
 
@@ -241,7 +241,7 @@ See:
 
 - [Spike Solution (Coding Bets)](../bets/Coding-Bets.md#spike-solutions-a-new-technology-bet)
 
-## Unit Testing
+### Unit Testing
 
 Writing extra (test) code in the project which can automatically check that the (main, business logic) code works correctly.  Used to mitigate [Regression Risk](../risks/Feature-Risk.md#regression-risk) and [Implementation Risk](../risks/Feature-Risk.md#implementation-risk) in a short-cycle feedback loop.
 
@@ -249,7 +249,7 @@ See:
  - [Development Process](../thinking/Development-Process.md#example_a_toy_process)
  - [Unit Testing (Meeting Reality)](../thinking/Meeting-Reality.md#example-unit-testing)
 
-## Operation / Maintenance
+### Operation / Maintenance
 
 Maintaining running software in production so that it is available for clients to use.
 
@@ -257,7 +257,7 @@ See:
  - [Operational Risk](../risks/Operational-Risk.md)
  - [Waterfall (One Size Fits No One)](thinking/One-Size-Fits-No-One.md)
 
-## Sign-Off
+### Sign-Off
 
 The act of introducing a human-controlled approval step into a [Process](../risks/Process-Risk.md) in order to mitigate [Operational Risks](../risks/Operational-Risk.md).
 

@@ -53,6 +53,10 @@ const config = {
 				theme: {
 					customCss: './src/css/custom.css',
 				},
+				gtag: {
+					trackingID: '_Ah_sAWlHVd7-glADdzxCZLqt-HDlhCXLlMqlQGqLE4',
+					anonymizeIP: true,
+				},
 			}),
 		],
 	],
@@ -62,19 +66,25 @@ const config = {
 		({
 			// Replace with your project's social card
 			image: 'img/docusaurus-social-card.jpg',
+			metadata: [
+					
+			],
 			navbar: {
 				title: 'Risk First',
 				logo: {
 					alt: 'Risk First Logo',
-					src: 'img/R1_logo_round_black_small.svg',
+					src: 'img/R1_logo_round_white.svg',
 				},
 				items: [
 					{ to: '/overview/Start', label: 'Overview', position: 'left' },
 					{ to: '/thinking/Start', label: 'Thinking', position: 'left' },
+					{ to: '/The-Menagerie', label: 'Book', position: 'left' },
 					{ to: '/risks/Start', label: 'Risks', position: 'left' },
 					{ to: '/bets/Start', label: 'Bets', position: 'left' },
 					{ to: '/estimating/Start', label: 'Estimating', position: 'left' },
 					{ to: '/complexity/Start', label: 'Complexity', position: 'left' },
+					{ to: '/presentations/Start', label: 'Presentations', position: 'left' },
+					{ to: '/misc/Start', label: 'Misc', position: 'left' },
 					{
 						href: 'https://github.com/risk-first/website',
 						label: 'GitHub',
@@ -84,6 +94,11 @@ const config = {
 			},
 			footer: {
 				style: 'dark',
+				 logo: {
+					alt: 'Meta Open Source Logo',
+					src: 'img/R1_logo_round_black.svg',
+					width: '100px',
+				},
 				links: [
 					{
 						title: 'Docs',
