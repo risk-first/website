@@ -131,7 +131,7 @@ See:
 The process of evolving a product to better manage existing or newly discovered [Feature Risk](../risks/Feature-Risk.md).  Also called _evolution_ (often when talking about ecosystems or organisms), _extension_ (when applied to standards or protocols) or _improvement_.
 
 See:
- - [Feature Drift Risk](../risks/Feature-Risk.md#Feature-Drift-Risk)
+ - [Feature Drift Risk](../risks/Feature-Risk.md#feature-drift-risk)
   
  
 ### Marketing
@@ -142,7 +142,7 @@ The process of trying to make your product visible and attractive to potential c
 
 See:
 
- - [Market Risk](../risks/Feature-Risk.md#Market-Risk)
+ - [Market Risk](../risks/Feature-Risk.md#market-risk)
 
 ### Specification 
 

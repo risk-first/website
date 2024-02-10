@@ -12,10 +12,10 @@ Often, this can be called "programming", "hacking" or "development", although th
 
 In [Development Process](../thinking/Development-Process.md) we introduced the following diagram to show what is happening when we do some coding.  Let's generalize a bit from this diagram:
 
-- We start with a [Goal In Mind](../thinking/Glossary.md#Goal-In-Mind) to implement _something_.
-- We build an [Internal Model](../thinking/Glossary.md#Internal-Model) of how we're going to meet this goal (though coding, naturally)
-- Then, we find out how well our idea stands up when we [Meet Reality](../thinking/Glossary.md#Meet-Reality) and try it out in our code-test-run-debug cycle.
-- As we go, the main outcome is that we change reality, and create code, but along the way, we discover where our [Internal Model](../thinking/Glossary.md#Internal-Model) was wrong, in the form of surfacing [Hidden Risks](../thinking/Glossary.md#hidden-risk).
+- We start with a [Goal In Mind](../thinking/Glossary.md#goal-in-mind) to implement _something_.
+- We build an [Internal Model](../thinking/Glossary.md#internal-model) of how we're going to meet this goal (though coding, naturally)
+- Then, we find out how well our idea stands up when we [Meet Reality](../thinking/Glossary.md#meet-reality) and try it out in our code-test-run-debug cycle.
+- As we go, the main outcome is that we change reality, and create code, but along the way, we discover where our [Internal Model](../thinking/Glossary.md#internal-model) was wrong, in the form of surfacing [Hidden Risks](../thinking/Glossary.md#hidden-risk).
 
 (/img/generated/practices/coding/development_process_code.png)
 
@@ -60,9 +60,9 @@ Let's look at how that can happen.
 Imagine for a moment, that there was such a thing as **The Perfect Product**, and a **User** wants to build it with a **Coder**:
  - The **Perfect Product** might be _conceptually elusive_, and it might take several attempts for the **User** to find its form. _[Conceptual Integrity Risk](../risks/Feature-Risk.md)_
  - It might be hard for the **User** to _communicate_ the idea of it in writing or words:  where do the buttons go? What do they do?  What are the key abstractions?  _[Communication Risk](../risks/Communication-Risk.md)_
- - It might be hard too, for the **Coder** to work with this description.  Since his [Internal Model](../thinking/Glossary.md#Internal-Model) is different from the **User**'s, they have different ideas about the _meaning_ of what the **User** is communicating.  _[Communication Risk](../risks/Communication-Risk.md)_
- - Then, implementing the idea of whatever is in the **Coder**'s [Internal Model](../thinking/Glossary.md#Internal-Model) takes _effort_, and therefore involves [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk).
- - Finally, we have a feedback loop, so the **User** can improve their [Internal Model](../thinking/Glossary.md#Internal-Model) and see the previously unforeseen [Hidden Risks](../thinking/Glossary.md#hidden-risk).
+ - It might be hard too, for the **Coder** to work with this description.  Since his [Internal Model](../thinking/Glossary.md#internal-mModel) is different from the **User**'s, they have different ideas about the _meaning_ of what the **User** is communicating.  _[Communication Risk](../risks/Communication-Risk.md)_
+ - Then, implementing the idea of whatever is in the **Coder**'s [Internal Model](../thinking/Glossary.md#internal-model) takes _effort_, and therefore involves [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk).
+ - Finally, we have a feedback loop, so the **User** can improve their [Internal Model](../thinking/Glossary.md#internal-model) and see the previously unforeseen [Hidden Risks](../thinking/Glossary.md#hidden-risk).
  - Then, you can go round again.
 
 ![Coding Communication Risks](/img/generated/practices/coding/perfect_product.png)
@@ -94,15 +94,15 @@ By having more people involved, the feedback loop will be longer than the two-ma
 
 ### Specialization
 
-One of the problems with a **SkunkWorks** approach is that you end up with more [Coordination Risk](../risks/Coordination-Risk.md) than you'd like, as your different skunk-teams end up with different [Internal Models](../thinking/Glossary.md#Internal-Model) and different [Goals](../thinking/Glossary.md#Goal-In-Mind).  
+One of the problems with a **SkunkWorks** approach is that you end up with more [Coordination Risk](../risks/Coordination-Risk.md) than you'd like, as your different skunk-teams end up with different [Internal Models](../thinking/Glossary.md#internal-model) and different [Goals](../thinking/Glossary.md#goal-in-mind).  
 
 In large companies, this is called [Silo Mentality](https://en.wikipedia.org/wiki/Information_silo) - the tendency for lines of business to stop communicating and sharing with one another.  As you can imagine, this leads to a more [Complex](../risks/Complexity-Risk.md) and [bureaucratic](../risks/Process-Risk.md#bureaucratic-risk) structure than would be optimal.
 
-But this can happen within a single coding team, too:  by splitting up and working on different pieces of functionality within a project, the team _specialises_ and becomes expert in the parts it has worked on.  This means the team members have different [Internal Models](../thinking/Glossary.md#Internal-Model) of the codebase.
+But this can happen within a single coding team, too:  by splitting up and working on different pieces of functionality within a project, the team _specialises_ and becomes expert in the parts it has worked on.  This means the team members have different [Internal Models](../thinking/Glossary.md#internal-model) of the codebase.
 
 This is _perfectly normal_:  we _need_ people to have different opinions and points-of-view.  We _need_ specialisation, it's how humanity has [ended up on top](https://en.wikipedia.org/wiki/Division_of_labour).  It's better to have a team who, between them all, know a codebase really well, than a group of people who know it poorly.   
 
-The reason for this is explained again by the first diagram in this section:  the closer our [Internal Model](../thinking/Glossary.md#Internal-Model) matches [Reality](../thinking/Glossary.md#Meet-Reality), the fewer [Hidden Risks](../thinking/Glossary.md#hidden-risk) we will meet, and the easier we'll have it.
+The reason for this is explained again by the first diagram in this section:  the closer our [Internal Model](../thinking/Glossary.md#internal-model) matches [Reality](../thinking/Glossary.md#meet-reality), the fewer [Hidden Risks](../thinking/Glossary.md#hidden-risk) we will meet, and the easier we'll have it.
 
 The downside of specialization is [Coordination Risk](../risks/Coordination-Risk.md):  
  - If your payroll expert is off ill for a week, progress on that stops. 

@@ -23,7 +23,7 @@ The book aims to develop a _Pattern Language_ for understanding software risk, a
 
 ## Get It
 
-- [Download a Sample](the-menagerie-sample.pdf)
+- [Download a Sample](/the-menagerie-sample.pdf)
 - [Kindle Edition](https://a.co/d/hmpmYl2)
 - [Print Edition](https://www.amazon.com/Risk-First-Software-Development-1-Menagerie/dp/1717491855)
 

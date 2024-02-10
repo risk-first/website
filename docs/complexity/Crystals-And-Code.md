@@ -36,7 +36,7 @@ Most IS's start small, and grow from there (eBay started with a single niche mar
 
 What properties of IS's are like the _regularity_ we see in crystals?  How about things like:
 
- - **Managed Data**, with clear, consistent, interacting data-types.  In distributed systems, there will be a policy on [CAP](../risks/Coordination-Risk.md#CAP-Theorem).  There is likely to be a high degree of data **Normalization** and a **well-Factored** design.
+ - **Managed Data**, with clear, consistent, interacting data-types.  In distributed systems, there will be a policy on [CAP](../risks/Coordination-Risk.md#cap-theorem).  There is likely to be a high degree of data **Normalization** and a **well-Factored** design.
  - **ACID** properties, such as Atomicity, Consistency, Isolation, Durability of transactions.
  - **SLAs**:  Response times, ownership, procedures, and other _non-functional requirements_ that are clearly defined.
  - **Support Teams and Knowledge Bases**: there are procedures in place for _understanding and using_ IS's.

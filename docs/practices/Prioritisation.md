@@ -16,7 +16,7 @@ Prioritisation is a key process in trying to focus on building _useful_ stuff fi
 - **Big Bang**:  Delivering all the functionality in a single go.
 - **Cycles, or Phases**:  Splitting a large project into smaller chunks.
 - **Sprints**: Delivering with a fixed cadence, e.g. every month or week.
-- [Continuous Delivery](Continous-Delivery): Delivering functionality one-piece-at-a-time.
+- [Continuous Delivery](DevOps): Delivering functionality one-piece-at-a-time.
 
 Usually, risk is mitigated by **Prioritisation**.  But sometimes, it's not appropriate:  When Finland changed from driving on the right side of the road to the left, (in order to be in line with the rest of Europe) the changeover _had_ to be **Big Bang** and the whole country changed [overnight](https://en.wikipedia.org/wiki/Dagen_H).
 
@@ -45,11 +45,11 @@ This one way in which a particular prioritisation [Meets Reality](../thinking/Me
 Breaking a large delivery down into lots of small releases has an impact on [Operational Risk](../risks/Operational-Risk):
 
  - Usually, lots of small releases allows you to _practice_ the release process while the project is relatively unimportant.  This experience allows you to figure out automation and reduce the [Process Risk](../risks/Process-Risk.md) of releasing too.
- - Smaller, higher-cadence releases also reduce [Invisibility Risk](../Communication-Risk#Invisibility-Risk), because users don't have large amounts of change to get accustomed to all-in-one-go.   
+ - Smaller, higher-cadence releases also reduce [Invisibility Risk](../risks/Communication-Risk#Invisibility-Risk), because users don't have large amounts of change to get accustomed to all-in-one-go.   
  
 ### [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk)
 
-If you're able to do [Continuous Delivery](DevOps), and have de-risked the release process, then you can eliminate some [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk), because you'll know you can hit any date with _something_.  The risks of what you deliver on that date are then [Feature Risk](Feature-Risk) rather than [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk).
+If you're able to do [Continuous Delivery](DevOps), and have de-risked the release process, then you can eliminate some [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk), because you'll know you can hit any date with _something_.  The risks of what you deliver on that date are then [Feature Risk](../risks/Feature-Risk) rather than [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk).
 
 ## Attendant Risks
 

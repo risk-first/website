@@ -5,7 +5,7 @@
 Most forms of testing are about isolating a particular _characteristic_ of your system, and exploring it from a risk perspective.  It could be:
 
 - **Performance Testing** addresses the risk of [not being able to support all the users](../risks/Operational-Risk)
-- **Usability Testing** tries to see whether people struggle to make sense of your software, usually because the assumptions of their [Internal Models](../thinking/Glossary.md#Internal-Model) differ from those embedded in the system, or that the system isn't adequately [transparent](Visibility-Risk) about it's own model.
+- **Usability Testing** tries to see whether people struggle to make sense of your software, usually because the assumptions of their [Internal Models](../thinking/Glossary.md#Internal-Model) differ from those embedded in the system, or that the system isn't adequately [transparent](../risks/Communication-Risk.md#invisibility-risk) about it's own model.
 - **Security Testing** addresses the risk that your software could be used against you or its users [by hackers](../risks/Operational-Risk).
 - **Integration Testing**:  Where we test how the software works as-a-whole, and test that it will work [with other systems](../risks/Dependency-Risk.md) 
 - **Corridor Testing**:  Asking a few, random people to use the system-under-test, in order to see [if it confuses them, or not](../risks/Communication-Risk#learning-curve-risk).
@@ -16,7 +16,7 @@ Most forms of testing are about isolating a particular _characteristic_ of your 
 
 (/img/generated/development_process_test.png)
 
-The whole purpose of testing is to [meet reality](../thinking/Meeting-Reality.md) early, ahead of putting software in front of real users, where you face [Production Risks](Production-Risk), like reputation damage and financial penalties.
+The whole purpose of testing is to [meet reality](../thinking/Meeting-Reality.md) early, ahead of putting software in front of real users, where you face [Operational Risks](../risks/Operational-Risk), like reputation damage and financial penalties.
 
 Given this, the best approach to test planning should be risk-based: consider which risks you want to mitigate, and test accordingly:
 
@@ -31,7 +31,7 @@ This should work at _every level_ within a project.  If you are building a new f
 
 - Is it going to connect to third-party systems?  If so, I should build [System Integration Tests](https://en.wikipedia.org/wiki/System_integration_testing) to cover the [Dependency Risk](../risks/Dependency-Risk.md) associated with this, and the chance that in the future, the interface will change. 
 - Does my code do what I expect?  I probably should build a [Unit Test](https://en.wikipedia.org/wiki/Unit_testing) to mitigate [Complexity Risk](../risks/Complexity-Risk.md). 
-- Will users understand the software I build for them?  I should probably do some [Beta Testing](https://en.wikipedia.org/wiki/Software_testing#Beta_testing) or [Corridor Testing](https://www.usability.gov/what-and-why/glossary/corridor-testing.html) to mitigate [Visiblity Risk](Visibility-Risk).
+- Will users understand the software I build for them?  I should probably do some [Beta Testing](https://en.wikipedia.org/wiki/Software_testing#Beta_testing) or [Corridor Testing](https://www.usability.gov/what-and-why/glossary/corridor-testing.html) to mitigate [Invisibility Risk](../risks/Communication-Risk#Invisibility-Risk).
 - To go live, am I going to need some piece of real-world paperwork?  Test the process ahead-of-time to expose all the [Hidden Risks](../thinking/Glossary.md#hidden-risk) 
 
 ## Where It's Used
@@ -92,14 +92,14 @@ Finally, since manual tests are run by people (who are comparatively slow and co
 ### Testing Team
 
 Sometimes, testing is handled by external teams (possibly in other locales).  This is often done as a [cost-saving measure](../risks/Scarcity-Risk.md#schedule-risk), but comes with some penalties such as:
- - Increased [Bureacratic Risk](Bureaucratic-Risk) in terms of having to engage with an external company.
+ - Increased [Communication Risk](../risks/Communication-Risk) in terms of having to engage with an external company.
  - [Agency Risk](../risks/Agency-Risk.md) because the testing team are a _business in their own right_, who might be more interested in the goal of making money from you than shipping your product.
  - Obvious [Coordination Risk](../risks/Coordination-Risk.md) in trying to arrange work in other teams, buildings, timezones or countries, and not having control on exactly which staff are dealing with your product.
- - [Visibility Risk](Visibility-Risk) because at some level, the testing team need to understand _what your software is for_.
+ - [Invisibility Risk](../risks/Communication-Risk.md#invisibility-risk) because at some level, the testing team need to understand _what your software is for_.
 
 ### Test-Driven Development
 
-Also called test-first development, the idea here (from [Extreme Programming](Extreme-Programming)) is that you write the tests before the code, in order that you think up-front about the requirements of the software you are writing.  The aim of this is to minimize [Complexity Risk](../risks/Complexity-Risk.md) via preventing developers from [Gold Plating](https://en.wikipedia.org/wiki/Gold_plating_(software_engineering)), and getting them to do [The Simplest Thing That Can Possibly Work](../thinking/Meeting-Reality.md).
+Also called test-first development, the idea here (from [Extreme Programming](Agile#Extreme-Programming)) is that you write the tests before the code, in order that you think up-front about the requirements of the software you are writing.  The aim of this is to minimize [Complexity Risk](../risks/Complexity-Risk.md) via preventing developers from [Gold Plating](https://en.wikipedia.org/wiki/Gold_plating_(software_engineering)), and getting them to do [The Simplest Thing That Can Possibly Work](../thinking/Meeting-Reality.md).
 
 Additionally, by having test _fail_ before they _pass_, you mitigate the risk of writing a "null" test (see below).
 
