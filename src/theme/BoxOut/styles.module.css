@@ -1,0 +1,60 @@
+.boxout {
+	border: 1px solid lightgray;
+	border-radius: 1rem;
+	margin: 2rem 0rem;
+}
+
+.header {
+	display: flex;
+	padding-bottom: 1rem;
+	align-items: center;
+	margin: 0.3rem;
+	border-top-left-radius: 0.9rem;
+	border-top-right-radius: 0.9rem;
+	padding: 2rem;
+	background-color: #1d1d1d;
+}
+
+
+html[data-theme='light'] .header {
+	background-color: #fcfcfc;
+}
+
+.header h3 {
+	padding: 0;
+	padding-left: 2rem;
+	margin: 0;
+}
+
+.contents {
+	padding: 1rem 2rem;
+}
+
+
+.footer {
+	padding-right: 1rem;
+	padding-bottom: 0.5rem;
+}
+
+.icon {
+	width: 5rem;
+	padding: 0rem;
+	margin: 0rem;
+}
+
+.footer p {
+	text-align: right;
+}
+
+.link {
+	padding: 1rem;
+	border-radius: 1rem;
+	text-decoration: underline;
+	background-color: #1d1d1d;
+
+}
+
+html[data-theme='light'] .link {
+	background-color: #fdfdfd;
+	color: black;
+}

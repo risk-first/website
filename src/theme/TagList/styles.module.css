@@ -1,0 +1,35 @@
+:root {
+  --docusaurus-tag-list-border: var(--ifm-color-emphasis-300);
+}
+
+.docItem {
+  border: 1px solid var(--docusaurus-tag-list-border);
+  transition: border var(--ifm-transition-fast);
+  margin-bottom: .5rem;
+}
+
+.columns {
+	display: flex;
+	gap: 1rem;
+}
+
+.left {
+	flex-basis: 15rem;
+	flex-shrink: 0;
+	flex-grow: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.left img {
+	padding: 0;
+}
+
+.description {
+	color: grey;
+}
+
+.right {
+	flex-grow: .7;  
+	padding: 1rem;
+}

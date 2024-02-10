@@ -1,0 +1,27 @@
+.chart {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}
+
+.controls {
+ 	flex-basis: 50%;	
+ 	align-items: end;
+ 	padding: 3rem;
+}
+
+.charts {
+	flex-grow: 0;
+	flex-basis: 50%;
+}
+
+.controls label {
+	display: inline-block;
+	margin-bottom: .5rem;
+}
+
+.controls input {
+	display: block;
+	width: 100%;
+	margin-bottom: 1rem;
+}
