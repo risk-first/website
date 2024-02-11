@@ -15,7 +15,7 @@
 
 .left {
 	flex-basis: 15rem;
-	flex-shrink: 0;
+	flex-shrink: .5;
 	flex-grow: 0;
 	padding: 0;
 	margin: 0;
@@ -30,6 +30,8 @@
 }
 
 .right {
+	flex-basis: 15rem;
 	flex-grow: .7;  
+	flex-shrink: .5;
 	padding: 1rem;
 }
