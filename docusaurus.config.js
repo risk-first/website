@@ -68,7 +68,8 @@ const config = {
 			// Replace with your project's social card
 			image: 'img/docusaurus-social-card.jpg',
 			metadata: [
-					
+				{name: 'google-site-verification', content: 'pML_gUXpSsWQXD9-qSAcKKMiG9lc22iMCnzW2WB_ZnY'},
+				{name: 'msvalidate.01', content: "3D19A6D7C17D82567867CF4238511ED1"}
 			],
 			navbar: {
 				title: 'Risk First',
