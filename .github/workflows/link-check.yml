@@ -10,6 +10,6 @@ jobs:
     - uses: actions/checkout@master
     - uses: gaurav-nelson/github-action-markdown-link-check@v1
       with:
-        folder-path: 'docs'
+        folder-path: 'docs, static'
         max-depth: 1
         use-quiet-mode: yes
