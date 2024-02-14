@@ -8,6 +8,16 @@ import { themes as prismThemes } from 'prism-react-renderer';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 
+const navLinks =  [	{ to: '/overview/Start', label: 'Overview', position: 'left' },
+					{ to: '/thinking/Start', label: 'Thinking', position: 'left' },
+					{ to: '/The-Menagerie', label: 'Book', position: 'left' },
+					{ to: '/risks/Start', label: 'Risks', position: 'left' },
+					{ to: '/bets/Start', label: 'Bets', position: 'left' },
+					{ to: '/estimating/Start', label: 'Estimating', position: 'left' },
+					{ to: '/complexity/Start', label: 'Complexity', position: 'left' },
+					{ to: '/presentations/Start', label: 'Presentations', position: 'left' },
+					{ to: '/misc/Start', label: 'Misc', position: 'left' } ]
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
 	title: 'Risk First',
@@ -77,15 +87,7 @@ const config = {
 					src: 'img/R1_logo_round_white.svg',
 				},
 				items: [
-					{ to: '/overview/Start', label: 'Overview', position: 'left' },
-					{ to: '/thinking/Start', label: 'Thinking', position: 'left' },
-					{ to: '/The-Menagerie', label: 'Book', position: 'left' },
-					{ to: '/risks/Start', label: 'Risks', position: 'left' },
-					{ to: '/bets/Start', label: 'Bets', position: 'left' },
-					{ to: '/estimating/Start', label: 'Estimating', position: 'left' },
-					{ to: '/complexity/Start', label: 'Complexity', position: 'left' },
-					{ to: '/presentations/Start', label: 'Presentations', position: 'left' },
-					{ to: '/misc/Start', label: 'Misc', position: 'left' },
+					...navLinks,
 					{
 						href: 'https://github.com/risk-first/website',
 						label: 'GitHub',
@@ -103,14 +105,7 @@ const config = {
 				links: [
 					{
 						title: 'Docs',
-						items: [
-							{ to: '/overview/Start', label: 'Overview', position: 'left' },
-							{ to: '/thinking/Start', label: 'Thinking', position: 'left' },
-							{ to: '/risks/Start', label: 'Risks', position: 'left' },
-							{ to: '/bets/Start', label: 'Bets', position: 'left' },
-							{ to: '/estimating/Start', label: 'Estimating', position: 'left' },
-							{ to: '/complexity/Start', label: 'Complexity', position: 'left' },
-						],
+						items: navLinks,
 					},
 					{
 						title: 'Further Info',
@@ -152,12 +147,8 @@ const config = {
 			},
 			algolia: {
 				appId: 'P1W8LCRYQS',
-				apiKey: '8c4ab433a05e447dc9e74b96074890a1',
+				apiKey: '28516b430d4426535a30d5ce61cd0e7d',
 				indexName: 'riskfirst',
-				replaceSearchResultPathname: {
-					from: '/docs/', // or as RegExp: /\/docs\//
-					to: '/',
-				},
 				searchPagePath: 'search',
 			},
 		}),
