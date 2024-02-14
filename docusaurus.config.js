@@ -68,8 +68,7 @@ const config = {
 			// Replace with your project's social card
 			image: 'img/docusaurus-social-card.jpg',
 			metadata: [
-				{name: 'google-site-verification', content: 'pML_gUXpSsWQXD9-qSAcKKMiG9lc22iMCnzW2WB_ZnY'},
-				{name: 'msvalidate.01', content: "3D19A6D7C17D82567867CF4238511ED1"}
+				{ name: 'msvalidate.01', content: "3D19A6D7C17D82567867CF4238511ED1" }
 			],
 			navbar: {
 				title: 'Risk First',
@@ -96,7 +95,7 @@ const config = {
 			},
 			footer: {
 				style: 'dark',
-				 logo: {
+				logo: {
 					alt: 'Meta Open Source Logo',
 					src: 'img/R1_logo_round_black.svg',
 					width: '100px',
@@ -150,6 +149,16 @@ const config = {
 			prism: {
 				theme: prismThemes.github,
 				darkTheme: prismThemes.dracula,
+			},
+			algolia: {
+				appId: 'P1W8LCRYQS',
+				apiKey: '8c4ab433a05e447dc9e74b96074890a1',
+				indexName: 'riskfirst',
+				replaceSearchResultPathname: {
+					from: '/docs/', // or as RegExp: /\/docs\//
+					to: '/',
+				},
+				searchPagePath: 'search',
 			},
 		}),
 	plugins: ['./src/plugins/category-listing']
