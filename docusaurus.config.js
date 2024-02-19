@@ -150,6 +150,8 @@ const config = {
 				apiKey: '28516b430d4426535a30d5ce61cd0e7d',
 				indexName: 'riskfirst',
 				searchPagePath: 'search',
+				contextualSearch: false,
+				searchParameters: {}
 			},
 		}),
 	plugins: ['./src/plugins/category-listing']
