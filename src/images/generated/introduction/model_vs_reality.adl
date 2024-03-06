@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<diagram xmlns="http://www.kite9.org/schema/adl"
-         xmlns:xslt="http://www.kite9.org/schema/xslt"
-         id="dia"
-         style="--kite9-min-width: 900pt;"
-         xslt:template="/public/templates/risk-first/risk-first-template.xsl">
-   <container bordered="true" id="c" style="--kite9-layout: right; ">
-      <risk class="goal" id="id_0">Successful Party</risk>
-      <label id="id_16" style="--kite9-direction: down; ">I deal with one risk...
+<diagram
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+	xmlns="http://www.kite9.org/schema/adl"
+	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
+	style="--kite9-min-width: 900pt;">
+	<container bordered="true" id="c" style="--kite9-layout: right; ">
+		<group>
+			<risk class="goal" id="id_0">Successful Party</risk>
+			<mitigated id="mm">
+				<risk class="attendant" id="id_0-ez">Attendant Risk 1</risk>
+			</mitigated>
+		</group>
+		<label id="id_16">I deal with one risk...
 		</label>
-   </container>
-   <action>Meeting Reality</action>
-   <container bordered="true" id="c-gw" style="--kite9-layout: right; ">
-      <risk class="attendant" id="id_0-ak">New Attendant Risk</risk>
-      <hidden>
-         <risk class="attendant" id="id_0-at">New Hidden Risk</risk>
-      </hidden>
-      <label id="4">
+	</container>
+	<action>Meeting Reality</action>
+	<container bordered="true" id="c-gw">
+		<group>
+			<risk class="attendant" id="id_0-ak">New Attendant Risk</risk>
+			<hidden id="hh">
+				<risk class="attendant" id="id_0-at">New Hidden Risk</risk>
+			</hidden>
+		</group>
+		<label id="4">
 			But my actions expose me to new risks
 		</label>
-   </container>
+	</container>
 </diagram>
