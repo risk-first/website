@@ -1,25 +1,52 @@
-<?xml version="1.0"?>
-<diagram
-	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
-	xmlns="http://www.kite9.org/schema/adl"
+<diagram xmlns="http://www.kite9.org/schema/adl"
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
-    name="Development Process 1" style="--kite9-layout: right; --kite9-min-width: 900pt;">
-   
-    <action>Integration</action>
-    
-    <group style="--kite9-layout: down">
+	name="Development Process 1"
+	style="--kite9-layout: right; --kite9-min-width: 900pt;"
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl">
+	<group style="--kite9-layout: down">
+		<container bordered="true" id="c"
+			style="kite-horizontal-align: left; ">
+			<risk class="goal" id="id_0">Feature X</risk>
+			<mitigated>
+				<risk class="attendant">Incorrect
+					Implementation
+				</risk>
+			</mitigated>
+			<mitigated>
+				<risk class="attendant">Duplicates
+					Functionality
+				</risk>
+			</mitigated>
+			<label id="id_16">
+				Internal Model
 
-      <container id="d" style="kite-horizontal-align: right; ">
-        <hidden>
-          <risk class="attendant">Breaks Feature Y</risk>
-        </hidden>
-        <label  id="4">
-          Internal Model
-          
-        </label>
-      </container>
-      
-      <artifact>Integrated Code</artifact>
-    </group>
+			</label>
+		</container>
+		<group id="reality" style="--kite9-layout: right">
+			<artifact>Code</artifact>
+		</group>
+	</group>
+	<action id="inte">Integration</action>
+	<group style="--kite9-layout: down">
+		<container id="d" style="kite-horizontal-align: right; ">
+			<hidden>
+				<risk class="attendant">Breaks Feature Y</risk>
+			</hidden>
+			<label id="4">
+				Internal Model
 
-  </diagram>
+			</label>
+		</container>
+		<group id="ic" style="--kite9-layout: right">
+			<artifact>Integrated Code</artifact>
+		</group>
+	</group>
+	<align id="2-0" style="--kite9-direction: right; ">
+		<from id="2-0-0" reference="c" />
+		<to id="2-0-1" reference="inte" />
+	</align>
+	<align id="2-1" style="--kite9-direction: right; ">
+		<from id="2-1-0" reference="inte" />
+		<to id="2-1-1" reference="d" />
+	</align>
+</diagram>

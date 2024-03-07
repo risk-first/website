@@ -1,57 +1,50 @@
-<?xml version="1.0"?>
-<diagram
-	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
-	xmlns="http://www.kite9.org/schema/adl"
-	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
-    style="--kite9-min-width: 900pt;">
+<diagram xmlns="http://www.kite9.org/schema/adl" xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia" style="--kite9-min-width: 900pt;" xslt:template="/public/templates/risk-first/risk-first-template.xsl">
+   <group style="--kite9-layout: down">
+      <container bordered="true" id="c">
+         <risk class="goal" id="id_0">Feature X</risk>
+         <mitigated>
+            <risk class="attendant">Incorrect
+					Implementation
+				</risk>
+         </mitigated>
+         <mitigated>
+            <risk class="attendant">Duplicating
+					Functionality
+				</risk>
+         </mitigated>
+         <label id="id_16">
+				Internal Model
 
-    <group style="--kite9-layout: down">
-
-      <container id="c" bordered="true">
-
-        <risk id="id_0" class="goal">Feature X</risk>
-        <mitigated>
-          <risk class="mitigated">Incorrect
-            Implementation
-          </risk>        
-        </mitigated>
-        <mitigated>
-          <risk class="attendant">Duplicating
-            Functionality
-          </risk>
-        </mitigated>
-        <label id="id_16">
-          Internal Model
-          
-        </label>
+			</label>
       </container>
-      <group style="--kite9-layout: right">
-        <artifact>Specification</artifact>
-        <artifact>Existing Code</artifact>
+      <group id="v" style="--kite9-layout: right">
+         <artifact>Specification</artifact>
+         <artifact>Existing Code</artifact>
       </group>
-
-    </group>
-
-
-
-
-    <action>Code and Unit Test</action>
-
-    <group style="--kite9-layout: down">
-
+   </group>
+   <action id="cat">Code and Unit Test</action>
+   <group style="--kite9-layout: down">
       <container id="d">
-        <hidden>
-          <risk class="attendant">Development
-            Difficulties
-          </risk>
-        </hidden>
-        <label id="4">
-          Hidden Risks
-          
-        </label>
+         <hidden>
+            <risk class="attendant">Development
+					Difficulties
+				</risk>
+         </hidden>
+         <label id="4">
+				Hidden Risks
+
+			</label>
       </container>
-
-      <artifact>New Code</artifact>
-    </group>
-
-  </diagram>
+      <group id="ic" style="--kite9-layout: right">
+         <artifact>New Code</artifact>
+      </group>
+   </group>
+   <align id="2-0" style="--kite9-direction: right; ">
+      <from id="2-0-0" reference="c"/>
+      <to id="2-0-1" reference="cat"/>
+   </align>
+   <align id="2-1" style="--kite9-direction: right; ">
+      <from id="2-1-0" reference="cat"/>
+      <to id="2-1-1" reference="d"/>
+   </align>
+</diagram>
