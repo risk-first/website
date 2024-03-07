@@ -16,8 +16,8 @@
     </container>
     
       <label id="id_16">
-        <text>Distributed Database</text>
-        <symbols />
+        Distributed Database
+        
       </label>
     
     </group>
@@ -27,25 +27,25 @@
   <link style="--kite9-direction: right;">
     <from reference="a" />
     <to reference="1" shape="arrow"/>
-    <fromLabel><text>writes X=1</text></fromLabel>
+    <fromLabel>writes X=1</fromLabel>
   </link>
 
   <link  style="--kite9-direction: right;">
     <from reference="a" shape="arrow"/>
     <to reference="1" />
-    <toLabel><text>acknowledges</text></toLabel>
+    <toLabel>acknowledges</toLabel>
   </link>
 
   <link style="--kite9-direction: left;">
     <from reference="b" />
     <to reference="2" shape="arrow"/>
-    <fromLabel><text>requests X</text></fromLabel>
+    <fromLabel>requests X</fromLabel>
   </link>
 
  <link style="--kite9-direction: left;">
     <from reference="b" shape="arrow" />
     <to reference="2" />
-    <toLabel><text>returns 1</text></toLabel>
+    <toLabel>returns 1</toLabel>
   </link>
 
   </diagram>

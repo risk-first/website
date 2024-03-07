@@ -12,7 +12,7 @@
             <agent-artifact id="2">Agent 2</agent-artifact>
          </container>
          <label id="id_16">
-            <text>Distributed Database</text>
+            Distributed Database
             <symbols/>
          </label>
       </group>
@@ -21,28 +21,28 @@
          <from reference="a"/>
          <to shape="arrow" reference="2"/>
          <fromLabel>
-            <text>writes X=1</text>
+            writes X=1
          </fromLabel>
       </link>
       <link style="--kite9-direction: right;">
          <from shape="arrow" reference="a"/>
          <to reference="2"/>
          <toLabel>
-            <text>acknowledges</text>
+            acknowledges
          </toLabel>
       </link>
       <link style="--kite9-direction: left;">
          <from reference="b"/>
          <to shape="arrow" reference="2"/>
          <fromLabel>
-            <text>requests X</text>
+            requests X
          </fromLabel>
       </link>
       <link style="--kite9-direction: left;">
          <from shape="arrow" reference="b"/>
          <to reference="2"/>
          <toLabel>
-            <text>returns 1</text>
+            returns 1
          </toLabel>
       </link>
    </diagram>
