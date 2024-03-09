@@ -13,6 +13,7 @@ tags:
  - Risk Landscape
  - Bet
  - Payoff
+ - Balance Of Risk
 sidebar_position: 6
 tweet: yes
 ---
