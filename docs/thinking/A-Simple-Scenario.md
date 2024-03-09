@@ -5,6 +5,12 @@ url: https://riskfirst.org/thinking/A-Simple-Scenario
 
 tags: 
  - Thinking Risk-First
+ - Taking Action
+ - Internal Model
+ - Goal
+ - Attendant Risk
+ - Hidden Risk
+ - Meeting Reality
 featured: 
   class: bg3
   element: '<risk href="/public/templates/risk-first/redesign/risks/goal_v2.svg"><code>Goal</code><title>A Simple Scenario</title></risk>'
@@ -56,7 +62,9 @@ As the dinner party gets closer, we make our preparations and the inadequacies o
 
 ![How Taking Action affects Reality, and also changes your Internal Model](/img/generated/introduction/model_vs_reality.png)
 
-Our model is forced to [Meet Reality](../thinking/Glossary.md#meet-reality), and the model changes,  forcing us to deal with these risks, as shown in the diagram above.  Whenever we try to _do something_ about a risk, it is called [Taking Action](../thinking/Glossary.md#taking-action).  [Taking Action](../thinking/Glossary.md#taking-action) _changes_ reality, and with it your [Internal Model](../thinking/Glossary.md#internal-model) of the risks you're facing.  That's because it's only by interacting with the world that we add knowledge to our [Internal Model](../thinking/Glossary.md#internal-model) about what works and what doesn't.  Even something as passive as _checking the shop opening times_ is an action, and it improves on our [Internal Model](../thinking/Glossary.md#internal-model) of the world.
+Our model is forced to [Meet Reality](../thinking/Glossary.md#meet-reality), and the model changes,  forcing us to deal with these risks, as shown in the diagram above.  
+
+In Risk-First, whenever we try to _do something_ about a risk, it is called [Taking Action](../thinking/Glossary.md#taking-action).  [Taking Action](../thinking/Glossary.md#taking-action) _changes_ reality, and with it your [Internal Model](../thinking/Glossary.md#internal-model) of the risks you're facing.  That's because it's only by interacting with the world that we add knowledge to our [Internal Model](../thinking/Glossary.md#internal-model) about what works and what doesn't.  Even something as passive as _checking the shop opening times_ is an action, and it improves on our [Internal Model](../thinking/Glossary.md#internal-model) of the world.
 
 If we had a good [Internal Model](../thinking/Glossary.md#Internal-Model) and [took the right actions](../thinking/Glossary.md#taking-action), we should see positive outcomes.  If we failed to manage the risks, or took inappropriate actions, we'll probably see negative outcomes.
 

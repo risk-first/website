@@ -9,6 +9,9 @@ featured:
 sidebar_position: 3
 tags:
  - Thinking Risk-First
+ - Attendant Risk
+ - Meet Reality
+ - Hidden Risk
 redirect_from: 
  - /Development-Process
 tweet: yes

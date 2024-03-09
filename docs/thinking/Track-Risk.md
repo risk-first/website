@@ -8,6 +8,8 @@ featured:
   element: '<risk href="/public/templates/risk-first/redesign/risks/map_and_territory_risk_v2.svg"><code>Tracking</code><title>Tracking Risks</title></risk>'
 tags:
  - Thinking Risk-First
+ - Attendant Risk
+ - Hidden Risk
 sidebar_position: 7
 tweet: yes
 ---

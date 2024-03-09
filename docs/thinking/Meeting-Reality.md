@@ -8,6 +8,9 @@ featured:
   element: '<action>Meeting Reality</action>'
 tags:
  - Thinking Risk-First
+ - Feedback Loop
+ - Take Action
+ - Risk Landscape
 sidebar_position: 4
 redirect_from: 
  - /Meeting-Reality

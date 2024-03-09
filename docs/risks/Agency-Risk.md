@@ -5,6 +5,7 @@ url: https://riskfirst.org/risks/Agency-Risk
 
 tags:
  - Risks
+ - Goal
 featured: 
   class: bg2
   element: '<risk class="agency" />'

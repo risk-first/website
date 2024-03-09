@@ -5,6 +5,9 @@ url: https://riskfirst.org/estimating/Estimates
 
 tags:
  - Practices
+ - Attendant Risk
+ - Meet Reality
+ - Hidden Risk
 sidebar_position: 5
 featured: 
   class: bg1

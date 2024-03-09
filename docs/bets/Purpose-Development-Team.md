@@ -9,6 +9,7 @@ featured:
   element: '<agent-artifact>Balance Of Risk</agent-artifact>'
 tags:
  - Bets
+ - Balance Of Risk
 sidebar_position: 1
 tweet: yes
 ---

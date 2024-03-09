@@ -10,6 +10,8 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/logo/R1_logo_black.svg">Risk-First Analysis</image-artifact>'
 tags:
  - Estimating
+ - Feedback Loop
+ - Attendant Risk
 sidebar_position: 7
 tweet: yes
 ---
