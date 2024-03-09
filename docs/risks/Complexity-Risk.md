@@ -223,9 +223,9 @@ The great complexity-reducing mechanism of modularisation is that _you only have
 
 ## Analogies
 
-So, we've looked at some measures of software structure complexity.  We can say "this is more complex than this" for a given piece of code or structure.  We've also looked at three ways to manage it:  [Abstraction](../thinking/Glossary.md#abstraction) and [Modularisation](Complexity-Risk.md#Hierarchies-and-Modularisation) and via [Dependencies](Complexity-Risk.md#languages-and-dependencies).  
+So, we've looked at some measures of software structure complexity.  We can say "this is more complex than this" for a given piece of code or structure.  We've also looked at three ways to manage it:  [Abstraction](../thinking/Glossary.md#abstraction) and [Modularisation](Complexity-Risk.md#hierarchies-and-modularisation) and via [Dependencies](Complexity-Risk.md#languages-and-dependencies).  
 
-However, we've not really said why complexity entails [Risk](../thinking/Glossary.md#Attendant-Risk).  So let's address that now by looking at three analogies, [Mass](Complexity-Risk.md#Complexity-is-mass), [Technical Debt](Complexity-Risk.md#technical-debt) and [Mess](Complexity-Risk.md#kitchen-analogy)  
+However, we've not really said why complexity entails [Risk](../thinking/Glossary.md#attendant-risk).  So let's address that now by looking at three analogies, [Mass](Complexity-Risk.md#complexity-is-mass), [Technical Debt](Complexity-Risk.md#technical-debt) and [Mess](Complexity-Risk.md#kitchen-analogy)  
 
 ### Complexity is Mass
 

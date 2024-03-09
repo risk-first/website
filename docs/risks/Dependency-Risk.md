@@ -105,7 +105,7 @@ In Rich Hickey's talk, [Simple Made Easy](https://www.infoq.com/presentations/Si
 
 But: living systems are not simple.  Not anymore.  They evolved in the direction of increasing complexity because life was _easier_ that way.  In the "simpler" direction, life is first _harder_ and then _impossible_, and then an evolutionary dead-end.  
 
-Depending on things makes _your job easier_.  But the [Complexity Risk](Complexity-Risk.md) hasn't gone away: it's just _transferred_ to the dependency.  It's just [division of labour](https://en.wikipedia.org/wiki/Division_of_labour) and dependency hierarchies, as we saw in [Complexity Risk](Complexity-Risk.md#Hierarchies-and-Modularisation).
+Depending on things makes _your job easier_.  But the [Complexity Risk](Complexity-Risk.md) hasn't gone away: it's just _transferred_ to the dependency.  It's just [division of labour](https://en.wikipedia.org/wiki/Division_of_labour) and dependency hierarchies, as we saw in [Complexity Risk](Complexity-Risk.md#hierarchies-and-modularisation).
 
 Our economic system and our software systems exhibit the same tendency-towards-complexity.  For example, the television in my house now is _vastly more complicated_ than the one in my home when I was a child.  But, it contains much more functionality and consumes much less power and space.  
 

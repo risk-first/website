@@ -19,7 +19,7 @@ tweet: yes
 
 # Development Process
 
-In [A Simple Scenario](A-Simple-Scenario.md) we introduced some terms for talking about risk (such as [Attendant Risk](../thinking/Glossary.md#attendant-risk), [Hidden Risk](../thinking/Glossary.md#attendant-risk) and [Internal Model](../thinking/Glossary.md#Internal-model)).
+In [A Simple Scenario](A-Simple-Scenario.md) we introduced some terms for talking about risk (such as [Attendant Risk](../thinking/Glossary.md#attendant-risk), [Hidden Risk](../thinking/Glossary.md#attendant-risk) and [Internal Model](../thinking/Glossary.md#internal-model)).
 
 Now, let's look at the everyday process of developing _a new feature_ on a software project and see how our risk model informs it.
 
@@ -67,7 +67,7 @@ We can all see this might end in disaster, but why?
 Two reasons: 
 
 1.  You're [Meeting Reality](../thinking/Glossary.md#meet-reality) all-in-one-go:  all of these risks materialize at the same time, and you have to deal with them all at once.
-2.  Because of this, at the point you put code into the hands of your users, your [Internal Model](../thinking/Glossary.md#Internal-Model) is at its least-developed.  All the [Hidden Risks](../thinking/Glossary.md#hidden-risk) now need to be dealt with at the same time, in production.
+2.  Because of this, at the point you put code into the hands of your users, your [Internal Model](../thinking/Glossary.md#internal-model) is at its least-developed.  All the [Hidden Risks](../thinking/Glossary.md#hidden-risk) now need to be dealt with at the same time, in production.
 
 ## Applying the Process
 
@@ -93,7 +93,7 @@ The first stage of the journey for the feature is that it meets the Business Ana
 - "90% of this functionality is already present in the Document Merge Process" 
 - "We need a control on the form that allows the user to select between Internal and External projects"
 
-In the process of doing this, the BA is turning the simple feature request _idea_ into a more consistent, well-explained _specification_ or _requirement_ which the developer can pick up.  But why is this a useful step in our simple methodology?  From the perspective of our [Internal Model](../thinking/Glossary.md#Internal-Model), we can say that the BA is responsible for:
+In the process of doing this, the BA is turning the simple feature request _idea_ into a more consistent, well-explained _specification_ or _requirement_ which the developer can pick up.  But why is this a useful step in our simple methodology?  From the perspective of our [Internal Model](../thinking/Glossary.md#internal-model), we can say that the BA is responsible for:
 
 - Trying to surface [Hidden Risks](../thinking/Glossary.md#hidden-risk)
 - Trying to evaluate [Attendant Risks](../thinking/Glossary.md#attendant-risk) and make them clear to everyone on the project.
@@ -106,15 +106,15 @@ This process of evolving the feature request into a requirement is the BA's job.
 
 ### Code And Unit Test
 
-The next stage for our feature, **Feature X** is that it gets coded and some tests get written.  Let's look at how our [Goal In Mind](../thinking/Glossary.md#Goal-In-Mind) meets a new reality:   this time it's the reality of a pre-existing codebase, which has it's own internal logic.
+The next stage for our feature, **Feature X** is that it gets coded and some tests get written.  Let's look at how our [Goal In Mind](../thinking/Glossary.md#goal-in-mind) meets a new reality:   this time it's the reality of a pre-existing codebase, which has it's own internal logic.
 
-As the developer begins coding the feature in the software, they will start with an [Internal Model](../thinking/Glossary.md#Internal-Model) of the software, and how the code fits into it.  But, in the process of implementing it, they are likely to learn about the codebase, and their [Internal Model](../thinking/Glossary.md#Internal-Model) will develop.  
+As the developer begins coding the feature in the software, they will start with an [Internal Model](../thinking/Glossary.md#internal-model) of the software, and how the code fits into it.  But, in the process of implementing it, they are likely to learn about the codebase, and their [Internal Model](../thinking/Glossary.md#internal-model) will develop.  
 
 ![Coding Process:  exposing more hidden risks as you code](/img/generated/introduction/development_process_code.png)
 
 At this point, let's review the visual grammar of the diagram above.  Here, we're showing how the balance of risks will change if the developer [Takes Action](../thinking/Glossary.md#taking-action) and writes some code.  On the left, we have the current state of the world, on the right is the anticipated state _after_ taking the action.
 
-The round-cornered rectangles represent our [Internal Model](../thinking/Glossary.md#internal-model), and these contain our view of [Risk](../thinking/Glossary.md#Risk), whether the risks we face right now, or the [Attendant Risks](../thinking/Glossary.md#attendant-risk) expected after taking the action.  We're not at the stage where taking this actions is _completing_ the goal.  In fact, arguably, we're facing _worse_ risks after taking action than before, since we now have _development difficulties_ to contend with!  
+The round-cornered rectangles represent our [Internal Model](../thinking/Glossary.md#internal-model), and these contain our view of [Risk](../thinking/Glossary.md#risk), whether the risks we face right now, or the [Attendant Risks](../thinking/Glossary.md#attendant-risk) expected after taking the action.  We're not at the stage where taking this actions is _completing_ the goal.  In fact, arguably, we're facing _worse_ risks after taking action than before, since we now have _development difficulties_ to contend with!  
 
 But at least, taking the action of "coding and unit testing" is expected to mitigate the risk of "Duplicating Functionality".
 
@@ -128,7 +128,7 @@ So, this stage is about meeting a new reality: the clean build.
 
 ![Integration testing exposes Hidden Risks before you get to production](/img/generated/introduction/development_process_integration.png)
 
-As shown in the diagram above, at this stage we might discover the [Hidden Risk](../thinking/Glossary.md#Hidden-Risk) that we'd break **Feature Y**
+As shown in the diagram above, at this stage we might discover the [Hidden Risk](../thinking/Glossary.md#hidden-risk) that we'd break **Feature Y**
 
 ### User Acceptance Test
 

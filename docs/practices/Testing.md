@@ -5,7 +5,7 @@
 Most forms of testing are about isolating a particular _characteristic_ of your system, and exploring it from a risk perspective.  It could be:
 
 - **Performance Testing** addresses the risk of [not being able to support all the users](../risks/Operational-Risk)
-- **Usability Testing** tries to see whether people struggle to make sense of your software, usually because the assumptions of their [Internal Models](../thinking/Glossary.md#Internal-Model) differ from those embedded in the system, or that the system isn't adequately [transparent](../risks/Communication-Risk.md#invisibility-risk) about it's own model.
+- **Usability Testing** tries to see whether people struggle to make sense of your software, usually because the assumptions of their [Internal Models](../thinking/Glossary.md#internal-model) differ from those embedded in the system, or that the system isn't adequately [transparent](../risks/Communication-Risk.md#invisibility-risk) about it's own model.
 - **Security Testing** addresses the risk that your software could be used against you or its users [by hackers](../risks/Operational-Risk).
 - **Integration Testing**:  Where we test how the software works as-a-whole, and test that it will work [with other systems](../risks/Dependency-Risk.md) 
 - **Corridor Testing**:  Asking a few, random people to use the system-under-test, in order to see [if it confuses them, or not](../risks/Communication-Risk#learning-curve-risk).
@@ -31,13 +31,13 @@ This should work at _every level_ within a project.  If you are building a new f
 
 - Is it going to connect to third-party systems?  If so, I should build [System Integration Tests](https://en.wikipedia.org/wiki/System_integration_testing) to cover the [Dependency Risk](../risks/Dependency-Risk.md) associated with this, and the chance that in the future, the interface will change. 
 - Does my code do what I expect?  I probably should build a [Unit Test](https://en.wikipedia.org/wiki/Unit_testing) to mitigate [Complexity Risk](../risks/Complexity-Risk.md). 
-- Will users understand the software I build for them?  I should probably do some [Beta Testing](https://en.wikipedia.org/wiki/Software_testing#Beta_testing) or [Corridor Testing](https://www.usability.gov/what-and-why/glossary/corridor-testing.html) to mitigate [Invisibility Risk](../risks/Communication-Risk#Invisibility-Risk).
+- Will users understand the software I build for them?  I should probably do some [Beta Testing](https://en.wikipedia.org/wiki/Software_testing#Beta_testing) or [Corridor Testing](https://www.usability.gov/what-and-why/glossary/corridor-testing.html) to mitigate [Invisibility Risk](../risks/Communication-Risk#invisibility-risk).
 - To go live, am I going to need some piece of real-world paperwork?  Test the process ahead-of-time to expose all the [Hidden Risks](../thinking/Glossary.md#hidden-risk) 
 
 ## Where It's Used
 
 - [Waterfall](Waterfall) initially was conceived with a long, manual testing phase to be performed on the _whole system_ after development
-- [Extreme Programming](Agile) championed the use of [Unit Tests](https://en.wikipedia.org/wiki/Unit_testing) in order to test individual subsystems, as well as having an [On-Site Customer](On-Site-Customer) to act as a testing resource when needed.
+- [Extreme Programming](Agile#extreme-programming) championed the use of [Unit Tests](https://en.wikipedia.org/wiki/Unit_testing) in order to test individual subsystems, as well as having an [On-Site Customer](On-Site-Customer) to act as a testing resource when needed.
 
 ## Variations
 
@@ -99,7 +99,7 @@ Sometimes, testing is handled by external teams (possibly in other locales).  Th
 
 ### Test-Driven Development
 
-Also called test-first development, the idea here (from [Extreme Programming](Agile#Extreme-Programming)) is that you write the tests before the code, in order that you think up-front about the requirements of the software you are writing.  The aim of this is to minimize [Complexity Risk](../risks/Complexity-Risk.md) via preventing developers from [Gold Plating](https://en.wikipedia.org/wiki/Gold_plating_(software_engineering)), and getting them to do [The Simplest Thing That Can Possibly Work](../thinking/Meeting-Reality.md).
+Also called test-first development, the idea here (from [Extreme Programming](Agile#extreme-programming)) is that you write the tests before the code, in order that you think up-front about the requirements of the software you are writing.  The aim of this is to minimize [Complexity Risk](../risks/Complexity-Risk.md) via preventing developers from [Gold Plating](https://en.wikipedia.org/wiki/Gold_plating_(software_engineering)), and getting them to do [The Simplest Thing That Can Possibly Work](../thinking/Meeting-Reality.md).
 
 Additionally, by having test _fail_ before they _pass_, you mitigate the risk of writing a "null" test (see below).
 

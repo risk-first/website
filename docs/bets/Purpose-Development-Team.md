@@ -157,7 +157,7 @@ If we were just delivering value, we might not:
 - **Build Unit Tests**.  After all, these add nothing directly to the customer experience. 
 - **Keep Backups**.  Backups minimise the downside of storage failure.  
 - **Add log statements**.  When things go wrong, these help you to work out why.
-- **Worry about [ACID](https://en.wikipedia.org/wiki/ACID_(computer_science)) transactions.**  They slow things down, but they increase [reliability](../risks/Dependency-Risk.md#Reliability-Risk).
+- **Worry about [ACID](https://en.wikipedia.org/wiki/ACID_(computer_science)) transactions.**  They slow things down, but they increase [reliability](../risks/Dependency-Risk.md#reliability-risk).
 - **Work to minimise dependencies**.  Each dependency carries a risk that it might fail, causing problems in your software.
 
 All of these actions are about _insurance_, which is about limiting downside-risk.   None of them are of value _per se_ to the client.

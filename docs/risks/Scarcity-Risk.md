@@ -69,17 +69,17 @@ With [Schedule Risk](Scarcity-Risk.md#schedule-risk), the underlying measure is 
 
 > "Student syndrome refers to planned procrastination, when, for example, a student will only start to apply themselves to an assignment at the last possible moment before its deadline."   - _[Wikipedia](https://en.wikipedia.org/wiki/Student_syndrome)_
 
-Arguably, there is good psychological, evolutionary and risk-based reasoning behind procrastination:  if there is apparently a lot of time to get a job done, then [Schedule Risk](Scarcity-Risk.md#Schedule-risk) is low.  If we're only ever mitigating our _biggest risks_, then managing [Schedule Risk](Scarcity-Risk.md#schedule-risk) in the future doesn't matter so much.  Putting efforts into mitigating future risks that _might not arise_ is wasted effort.
+Arguably, there is good psychological, evolutionary and risk-based reasoning behind procrastination:  if there is apparently a lot of time to get a job done, then [Schedule Risk](Scarcity-Risk.md#schedule-risk) is low.  If we're only ever mitigating our _biggest risks_, then managing [Schedule Risk](Scarcity-Risk.md#schedule-risk) in the future doesn't matter so much.  Putting efforts into mitigating future risks that _might not arise_ is wasted effort.
 
 Or at least, that's the argument:  if you're [Discounting the Future To Zero](../thinking/Evaluating-Risk.md) then you'll be pulling all-nighters in order to deliver any assignment.   
 
-So, the problem with [Student Syndrome](#student-syndrome) is that the _very mitigation_ for [Schedule Risk](Scarcity-Risk.md#schedule-risk) (allowing more time) is an [Attendant Risk](../thinking/Glossary.md#attendant-risk) that _causes_ [Schedule Risk](Scarcity-Risk.md#schedule-risk):   you'll work within the more generous time allocation more slowly and you'll end up revealing [Hidden Risk](../thinking/Glossary.md#Hidden-Risk) _later_.  And, discovering these hidden risks later causes you to end up being late because of them.
+So, the problem with [Student Syndrome](#student-syndrome) is that the _very mitigation_ for [Schedule Risk](Scarcity-Risk.md#schedule-risk) (allowing more time) is an [Attendant Risk](../thinking/Glossary.md#attendant-risk) that _causes_ [Schedule Risk](Scarcity-Risk.md#schedule-risk):   you'll work within the more generous time allocation more slowly and you'll end up revealing [Hidden Risk](../thinking/Glossary.md#hidden-risk) _later_.  And, discovering these hidden risks later causes you to end up being late because of them.
 
 ## Opportunity Risk
 
 [Opportunity Risk](Scarcity-Risk.md#opportunity-risk) is really the concern that whatever we do, we have to do it _in time_.  If we wait too long, we'll miss the [Window Of Opportunity](https://en.wikipedia.org/wiki/Window_of_opportunity) for our product or service.   
 
-Any product idea is necessarily of its time:  the [Goal In Mind](../thinking/Glossary.md#Goal-In-Mind) will be based on observations from a particular [Internal Model](../thinking/Glossary.md#Internal-Model), reflecting a view on reality at a specific _point in time_.  
+Any product idea is necessarily of its time:  the [Goal In Mind](../thinking/Glossary.md#goal-in-mind) will be based on observations from a particular [Internal Model](../thinking/Glossary.md#internal-model), reflecting a view on reality at a specific _point in time_.  
 
 How long will that remain true for?  This is your _opportunity_:  it exists apart from any deadlines you set yourself, or funding options.  It's purely, "how long will this idea be worth doing?"  
 
@@ -130,7 +130,7 @@ Here are a selection of mitigations for [Scarcity Risk](Scarcity-Risk.md) in gen
  - **Pools**: reserving parts of a resource for a group of customers, and sharing within that group.
  - **Horizontal Scaling**: allowing a scarce resource to flexibly scale according to how much demand there is.   (For example, putting on extra buses when the trains are on strike, or opening extra check-outs at the supermarket.)
  
-Much like [Reliability Risk](Dependency-Risk.md#Reliability-risk), there is science for it:
+Much like [Reliability Risk](Dependency-Risk.md#reliability-risk), there is science for it:
 
  - **[Queue Theory](https://en.wikipedia.org/wiki/Queueing_theory)** is all about building mathematical models of buffers, queues, pools and so forth.
  - **[Logistics](https://en.wikipedia.org/wiki/Logistics)** is the practical organisation of the flows of materials and goods around things like [Supply Chains](https://en.wikipedia.org/wiki/Supply_chain),

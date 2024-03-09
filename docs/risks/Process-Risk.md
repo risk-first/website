@@ -32,7 +32,7 @@ As the above diagram shows, process exists to mitigate other kinds of risk.  For
  - **[Operational Risk](Operational-Risk.md)**:  this encompasses the risk of people _not doing their job properly_.  But, by having a process, (and asking, did this person follow the process?) you can draw a distinction between a process failure and a personnel failure.  For example, accepting funds from a money launderer _could_ be a failure of a bank employee.   But, if they followed the _process_, it's a failure of the [Process](Process-Risk.md) itself. 
  - **[Complexity Risk](Complexity-Risk.md)**: working _within a process_ can reduce the amount of [Complexity](Complexity-Risk.md) you have to think about.  We accept that processes are going to slow us down, but we appreciate the reduction in risk this brings.  Clearly, the complexity hasn't gone away, but it's hidden within design of the process.  For example, [McDonalds](https://en.wikipedia.org/wiki/McDonald's) tries to design its operation so that preparing each food item is a simple process to follow, reducing complexity (and training time) for the staff.
 
-These are all examples of [Risk Mitigation](../thinking/Glossary.md#Mitigated-risk) for the _owners_ of the process.  But often the _consumers_ of the process end up picking up [Process Risks](Process-Risk.md) as a result:
+These are all examples of [Risk Mitigation](../thinking/Glossary.md#mitigated-risk) for the _owners_ of the process.  But often the _consumers_ of the process end up picking up [Process Risks](Process-Risk.md) as a result:
 
  - **[Invisibility Risk](Communication-Risk.md#invisibility-risk)**: it's often not possible to see how far along a process is to completion.  Sometimes, you can do this to an extent.  For example, when I send a package for delivery, I can see roughly how far it's got on the tracking website.  But this is still less-than-complete information and is a representation of reality.    
  - **[Dead-End Risk](Complexity-Risk.md#dead-end-risk)**: even if you have the right process, initiating a process has no guarantee that your efforts won't be wasted and you'll be back where you started from.  The chances of this happening increase as you get further from the standard use-case for the process, and the sunk cost increases with the length of time the process takes to complete.
@@ -134,7 +134,7 @@ But [Parkinson's Law](https://en.wikipedia.org/wiki/Parkinsons_law) takes this o
 
 This implies that there is a tendency for organisations to end up with _needless levels of [Process Risk](Process-Risk.md)_.
 
-To fix this, design needs to happen at a higher level.  In our code, we would [Refactor](Complexity-Risk.md#Technical-Debt) these processes to remove the unwanted complexity.  In a business, it requires re-organisation at a higher level to redefine the boundaries and responsibilities between the teams.  
+To fix this, design needs to happen at a higher level.  In our code, we would [Refactor](Complexity-Risk.md#technical-debt) these processes to remove the unwanted complexity.  In a business, it requires re-organisation at a higher level to redefine the boundaries and responsibilities between the teams.  
 
 Next in the tour of [Dependency Risks](Dependency-Risk.md), it's time to look at [Boundary Risk](Boundary-Risk.md).
 

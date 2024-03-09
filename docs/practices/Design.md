@@ -16,9 +16,9 @@ Although it's fallen out of favour in Agile methodologies, there are benefits to
 
 As we saw in [Meet Reality](../thinking/Meeting-Reality.md), "Navigating the [Risk Landscape](../risks/Risk-Landscape.md)", meant going from a position of high risk, to a position of lower risk.  [Agile Design](Agile) is much like [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent): each day, one small step after another _downwards in risk_ on the [Risk Landscape](../risks/Risk-Landscape.md).
 
-But the problem with this is you can get trapped in a [Local Minima](https://en.wikipedia.org/wiki/Maximum_and_minimum#Search), where there are _no_ easy steps to take to get you to where you want to be.  Here is a [real life example](Tradeoffs).  This is [Dead End Risk](../risks/Complexity-Risk.md#Dead-End-Risk).
+But the problem with this is you can get trapped in a [Local Minima](https://en.wikipedia.org/wiki/Maximum_and_minimum#Search), where there are _no_ easy steps to take to get you to where you want to be.  Here is a [real life example](Tradeoffs).  This is [Dead End Risk](../risks/Complexity-Risk.md#dead-end-risk).
 
-In these cases, you have to _widen your horizon_ and look at where you want to go:  and this is the process of _design_.  You're not necessarily now taking steps on the [Risk Landscape](../risks/Risk-Landscape.md), but imagining a place on the [Risk Landscape](../risks/Risk-Landscape.md) where you want to be, and checking it against your [Internal Model](../thinking/Glossary.md#Internal-Model) for validity.
+In these cases, you have to _widen your horizon_ and look at where you want to go:  and this is the process of _design_.  You're not necessarily now taking steps on the [Risk Landscape](../risks/Risk-Landscape.md), but imagining a place on the [Risk Landscape](../risks/Risk-Landscape.md) where you want to be, and checking it against your [Internal Model](../thinking/Glossary.md#internal-model) for validity.
 
 ## Examples
 
@@ -32,7 +32,7 @@ The feedback loop for any design is [Review and Sign Off](Sign-Off).
 
 By allowing lots of stakeholders to review and [agree to a design](Sign-Off), or select from alternatives, we try to reconcile the needs of lots of stakeholders _early on_ in a project.
 
-### [Invisibility Risk](../risks/Communication-Risk.md#Invisibility-Risk) 
+### [Invisibility Risk](../risks/Communication-Risk.md#invisibility-risk) 
 
 To allow for _discussion and understanding_ of the project between multiple parties.  This may extend to design being _marketing material_ to help explain the project to potential clients or budget-holders.
 
@@ -50,7 +50,7 @@ Building architects appreciate that their _plans might change_:  Roman ruins mig
 
  - The design might itself take a long time to complete [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk).
  - People _stop thinking_ [once they have a design](../risks/Map-And-Territory-Risk.md), even when reality _obviously_ deviates from what the design assumed.  But the whole point of a plan is that it's easier to change than the thing you are doing the plan for.  
- - If your plan starts to become as detailed as the code would be (but doesn't run) then you've made the mistake of _overspecification_, and you are creating [Technical Debt](../risks/Complexity-Risk.md#Technical-Debt).  
+ - If your plan starts to become as detailed as the code would be (but doesn't run) then you've made the mistake of _overspecification_, and you are creating [Technical Debt](../risks/Complexity-Risk.md#technical-debt).  
  
 > Everyone has a great plan until they get hit in the nose - Mike Tyson
 > Fail to plan and you plan to fail - Eisenhower?

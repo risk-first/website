@@ -115,7 +115,7 @@ So as in the Rendering Bug example, we can show [Feature Risk](../risks/Feature-
 
 So, on the right side of the action, we are showing the [Attendant Risks](../thinking/Glossary.md#attendant-risk) we _gain_ from taking the action.
 
-## Question 3:  What Is The [Payoff](../thinking/Glossary.md#Payoff)?
+## Question 3:  What Is The [Payoff](../thinking/Glossary.md#payoff)?
 
 ![Calculating Payoff](/img/generated/estimating/planner/impact.png)
 
@@ -123,9 +123,9 @@ If we know what we lose and what we gain from each action we take, then it's sim
 
 ### Upside Risk
 
-It's worth noting - not all risks are bad!  [Upside Risk](../thinking/Glossary.md#upside-risk) captures this concept well.  If I buy a lottery ticket, there's a big risk that I'll have wasted some money buying the ticket.  But there's also the [Upside Risk](../thinking/Glossary.md#upside-risk) that I might win!  Both upside and downside risks should be captured in your analysis of [Payoff](../thinking/Glossary.md#Payoff).
+It's worth noting - not all risks are bad!  [Upside Risk](../thinking/Glossary.md#upside-risk) captures this concept well.  If I buy a lottery ticket, there's a big risk that I'll have wasted some money buying the ticket.  But there's also the [Upside Risk](../thinking/Glossary.md#upside-risk) that I might win!  Both upside and downside risks should be captured in your analysis of [Payoff](../thinking/Glossary.md#payoff).
 
-While some projects are expressed in terms of addressing risks (e.g. installing a security system, replacing the tyres on your car) a lot are expressed in terms of _opportunities_ (e.g. create a new product market, win a competition).  It's important to consider these longer-term objectives in the [Payoff](../thinking/Glossary.md#Payoff).
+While some projects are expressed in terms of addressing risks (e.g. installing a security system, replacing the tyres on your car) a lot are expressed in terms of _opportunities_ (e.g. create a new product market, win a competition).  It's important to consider these longer-term objectives in the [Payoff](../thinking/Glossary.md#payoff).
 
 ![Goals, Anti-Goals, Risks and Upside Risks](/img/generated/estimating/planner/focus.png)
 
@@ -153,23 +153,23 @@ On the face of it, it's clear why the Sales Team might feel annoyed - there is a
 
 ![Fixing The Build, v2](/img/generated/estimating/planner/ci-impact-2.png)
 
-The above diagram models that.  Fixing the CI Pipeline is now implicated in reducing [Staff Risk](../risks/Scarcity-Risk.md#staff-risk), [Coordination Risk](../risks/Coordination-Risk.md) and [Funding Risk](../risks/Scarcity-Risk.md#funding-risk) for the whole business and therefore seems like it might have a better [Payoff](../thinking/Glossary.md#Payoff).
+The above diagram models that.  Fixing the CI Pipeline is now implicated in reducing [Staff Risk](../risks/Scarcity-Risk.md#staff-risk), [Coordination Risk](../risks/Coordination-Risk.md) and [Funding Risk](../risks/Scarcity-Risk.md#funding-risk) for the whole business and therefore seems like it might have a better [Payoff](../thinking/Glossary.md#payoff).
 
 ## Judgement
 
-But is that a fair assessment?  How would you determine the [Payoff](../thinking/Glossary.md#Payoff) in this situation?  It's clear that even though we might be able to _describe_ the risks, it might not be all that easy to _quantify_ them.  
+But is that a fair assessment?  How would you determine the [Payoff](../thinking/Glossary.md#payoff) in this situation?  It's clear that even though we might be able to _describe_ the risks, it might not be all that easy to _quantify_ them.  
 
 ![Calculating Payoff](/img/generated/estimating/planner/impact.png)
 
 Luckily, we don't really have to.   If I am trying to evaluate a single action on my own, all I really need to do is answer one question:  do I lose more risk than I gain?
 
-All I need to do is "weigh up" the change in risks as best as I can.  A lot of the time, the [Payoff](../thinking/Glossary.md#Payoff) will be obviously worth it, or obviously not.
+All I need to do is "weigh up" the change in risks as best as I can.  A lot of the time, the [Payoff](../thinking/Glossary.md#payoff) will be obviously worth it, or obviously not.
 
 ## Ensemble
 
-So far, we've been looking at each task individually, working out which risks we're addressing, and which ones we're exposed to as a result.  If you have plenty of spare talent and only a few tasks, then maybe that's enough and you can get to work on all the tasks that have a positive [Payoff](../thinking/Glossary.md#Payoff).   But if you're constrained, then you should be hunting for the [actions](../thinking/Glossary.md#taking-action) with the biggest [Payoff](../thinking/Glossary.md#Payoff) and doing those first.
+So far, we've been looking at each task individually, working out which risks we're addressing, and which ones we're exposed to as a result.  If you have plenty of spare talent and only a few tasks, then maybe that's enough and you can get to work on all the tasks that have a positive [Payoff](../thinking/Glossary.md#payoff).   But if you're constrained, then you should be hunting for the [actions](../thinking/Glossary.md#taking-action) with the biggest [Payoff](../thinking/Glossary.md#payoff) and doing those first.
 
-Things change too when you have a whole team engaged in the planning process.  Although people will generally agree on what the risks _are_, they often will disagree on the [Probability they will occur, or the impact if they do](../thinking/Track-Risk.md#risk-registers).   In cases like these, you might want to allow each stakeholder to "vote up" the risks they consider significant, or vote up the actions they consider to have high [Payoff](../thinking/Glossary.md#Payoff).  This will be covered in further detail in the [next section](Stop-Estimating-Start-Navigating.md).
+Things change too when you have a whole team engaged in the planning process.  Although people will generally agree on what the risks _are_, they often will disagree on the [Probability they will occur, or the impact if they do](../thinking/Track-Risk.md#risk-registers).   In cases like these, you might want to allow each stakeholder to "vote up" the risks they consider significant, or vote up the actions they consider to have high [Payoff](../thinking/Glossary.md#payoff).  This will be covered in further detail in the [next section](Stop-Estimating-Start-Navigating.md).
 
 But for now, let's talk about in which ways this is better or worse than Planning Poker.
 

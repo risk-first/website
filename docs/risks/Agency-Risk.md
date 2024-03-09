@@ -17,7 +17,7 @@ tweet: yes
 
 # Agency Risk
 
-Coordinating a team is difficult enough when everyone on the team has a single [Goal](../thinking/Glossary.md#Goal-In-Mind).  But people have their own goals too.  Sometimes their goals harmlessly co-exist with the team's goal, other times they don't. 
+Coordinating a team is difficult enough when everyone on the team has a single [Goal](../thinking/Glossary.md#goal-in-mind).  But people have their own goals too.  Sometimes their goals harmlessly co-exist with the team's goal, other times they don't. 
 
 This is [Agency Risk](Agency-Risk.md). 
 
@@ -114,7 +114,7 @@ Working on a pet project usually means you get lots of attention (and more than 
 
 > "Morale, also known as Esprit de Corps, is the capacity of a group's members to retain belief in an institution or goal, particularly in the face of opposition or hardship" - [Morale, _Wikipedia_](https://en.wikipedia.org/wiki/Morale) 
 
-Sometimes the morale of the team or individuals within it dips, leading to lack of motivation.  Losing morale is a kind of [Agency Risk](Agency-Risk.md) because it really means that a team member or the whole team isn't committed to the [Goal](../thinking/Glossary.md#Goal-In-Mind) and may decide their efforts are best spent elsewhere.  Morale failure might be caused by:
+Sometimes the morale of the team or individuals within it dips, leading to lack of motivation.  Losing morale is a kind of [Agency Risk](Agency-Risk.md) because it really means that a team member or the whole team isn't committed to the [Goal](../thinking/Glossary.md#goal-in-mind) and may decide their efforts are best spent elsewhere.  Morale failure might be caused by:
 
  - **External Factors**:  perhaps the employee's dog has died, or they're simply tired of the industry, or are not feeling challenged.
  - **The goal feels unachievable**:  in this case people won't commit their full effort to it.  This might be due to a difference in the evaluation of the risks on the project between the team members and the leader.  In military science, a second meaning of morale is how well supplied and equipped a unit is.  This would also seem like a useful reference point for IT projects.  If teams are under-staffed or under-equipped, it will impact on motivation too.
@@ -156,7 +156,7 @@ This problem may be a long way off.  In any case it's not really in our interest
 
 ### Teams
 
-[Agency Risk](Agency-Risk.md) applies to _whole teams_ too.  It's perfectly possible that a team within an organisation develops [Goals](../thinking/Glossary.md#Goal-In-Mind) that don't align with those of the overall organisation.  For example:
+[Agency Risk](Agency-Risk.md) applies to _whole teams_ too.  It's perfectly possible that a team within an organisation develops [Goals](../thinking/Glossary.md#goal-in-mind) that don't align with those of the overall organisation.  For example:
 
  - A team introduces excessive [Bureaucracy](Process-Risk.md#bureaucracy) in order to avoid work it doesn't like.
  - A team gets obsessed with a particular technology, or their own internal process improvement, at the expense of delivering business value.

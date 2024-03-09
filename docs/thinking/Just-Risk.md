@@ -62,7 +62,7 @@ The reason you are _taking_ an action is to manage a risk.  For example:
 - Will it lead to yet more actions?
 - What [Hidden Risk](../thinking/Glossary.md#hidden-risk) will it uncover?
 
-Consider _coding a feature_.  The whole process of coding is an exercise in learning what we didn't know about the world, uncovering problems and improving our [Internal Model](../thinking/Glossary.md#Internal-Model).  That is, flushing out the [Attendant Risk](../thinking/Glossary.md#attendant-risk) of the [Goal In Mind](../thinking/Glossary.md#Goal-In-Mind).
+Consider _coding a feature_.  The whole process of coding is an exercise in learning what we didn't know about the world, uncovering problems and improving our [Internal Model](../thinking/Glossary.md#internal-model).  That is, flushing out the [Attendant Risk](../thinking/Glossary.md#attendant-risk) of the [Goal In Mind](../thinking/Glossary.md#goal-in-mind).
 
 And, as we saw in the [Introduction](A-Simple-Scenario.md), even something _mundane_ like the Dinner Party had risks. 
 

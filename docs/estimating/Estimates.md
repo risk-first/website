@@ -138,7 +138,7 @@ Later in the story, the schedule has slipped twice and is about to slip again:
 
 ![Carl's Schedule Slip increases Trust and Belief Risks](/img/generated/practices/estimates/carl1.png)
 
-At point `(2)`, Carl has tried to mitigate [Feature Risk](../risks/Feature-Risk.md) by increasing [Schedule Risk](../risks/Scarcity-Risk.md#Schedule-Risk), although he knows that Bill will trust him less for doing this, as shown in the diagram above.  Let's continue...
+At point `(2)`, Carl has tried to mitigate [Feature Risk](../risks/Feature-Risk.md) by increasing [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk), although he knows that Bill will trust him less for doing this, as shown in the diagram above.  Let's continue...
 
 > Carl began to feel that his job was on the line. Coding proceeded fairly well, but a few areas needed redesign and reimplementation. The team hadn't coordinated design details in those areas well, and some of their implementations conflicted. At the 11-month oversight-committee meeting, Carl announced the fourth schedule slip— to 13 months. Bill became livid. "Do you have any idea what you're doing?" he yelled. "You obviously don't have any idea! You obviously don't have any idea when the project is going to be done! I'll tell you when it's going to be done! It's going to be done by the 13-month mark, or you're going to be out of a job! I'm tired of being jerked around by you software guys! You and your team are going to work 60 hours a week until you deliver!"  `(3)`
 
@@ -186,7 +186,7 @@ For a given [action](../thinking/Glossary.md#taking-action) / road-map / busines
   - What bets are we making about where the [market](../risks/Feature-Risk.md#market-risk) will be?
   - What [Communication Risk](../risks/Communication-Risk.md) will we face explaining our product to people?
   - What [Feature Fit](../risks/Feature-Risk.md#feature-fit-risk) risks are we likely to have when we get there?
-  - What [Complexity Risks](../risks/Complexity-Risk.md) will we face building our software?  How can we avoid it ending up as a [Big Ball Of Mud](../risks/Complexity-Risk.md#Protocols-And-Types)?
+  - What [Complexity Risks](../risks/Complexity-Risk.md) will we face building our software?  How can we avoid it ending up as a [Big Ball Of Mud](../risks/Complexity-Risk.md#protocols-and-types)?
   - Where are we likely to face [Boundary Risks](../risks/Boundary-Risk.md) and [Dead End Risks](../risks/Complexity-Risk.md#dead-end-risk)?
 
 Instead of the Agile Estimation being about picking out a story-point number based on some idealised amount of work that needs to be done, it should be about surfacing and weighing up risks.  e.g:

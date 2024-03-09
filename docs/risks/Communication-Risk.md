@@ -18,7 +18,7 @@ tweet: yes
 
 If we all had identical knowledge, there would be no need to do any communicating at all, and therefore no [Communication Risk](Communication-Risk.md).  
 
-But people are not all-knowing oracles.  We rely on our _senses_ to improve our [Internal Models](../thinking/Glossary.md#Internal-Model) of the world. There is [Communication Risk](Communication-Risk.md) here - we might overlook something vital (like an on-coming truck) or mistake something someone says (like "Don't cut the green wire").  
+But people are not all-knowing oracles.  We rely on our _senses_ to improve our [Internal Models](../thinking/Glossary.md#internal-model) of the world. There is [Communication Risk](Communication-Risk.md) here - we might overlook something vital (like an on-coming truck) or mistake something someone says (like "Don't cut the green wire").  
 
 So, we are going to go on a journey discovering Communication Risk, covering:
 
@@ -50,7 +50,7 @@ But it's not just transmission.  [Communication Risk](Communication-Risk.md) exi
 |Reception             | **Bob** doesn't hear the message clearly (maybe there is background noise). |
 |Decoding              | **Bob** might not decode what was said into a meaningful sentence. |
 |Interpretation        | Assuming **Bob** _has_ heard, will he correctly **interpret**  which type of chips (or chops) **Alice** was talking about? |
-|Reconciliation        | Does **Bob** believe the message?  Will he **reconcile** the information into his [Internal Model](../thinking/Glossary.md#Internal-Model) and act on it?  Perhaps not, if **Bob** forgets, or thinks that there are chips at home already.|
+|Reconciliation        | Does **Bob** believe the message?  Will he **reconcile** the information into his [Internal Model](../thinking/Glossary.md#internal-model) and act on it?  Perhaps not, if **Bob** forgets, or thinks that there are chips at home already.|
 
 ## Approach To Communication Risk
 
@@ -63,7 +63,7 @@ There is a symmetry about the steps going on in Shannon's model and we're going 
  - **[Channels](https://en.wikipedia.org/wiki/Communication_channel)**: the medium via which the communication is happening.
  - **[Protocols](https://en.wikipedia.org/wiki/Communication_protocol)**:  the systems of rules that allow two or more entities of a communications system to transmit information.
  - **[Messages](https://en.wikipedia.org/wiki/Message)**: the information we want to convey.
- - **[Internal Models](../thinking/Glossary.md#Internal-Model)**: the sources and destinations for the messages.  Updating internal models (whether in our heads or machines) is the reason why we're communicating.
+ - **[Internal Models](../thinking/Glossary.md#internal-model)**: the sources and destinations for the messages.  Updating internal models (whether in our heads or machines) is the reason why we're communicating.
  
 As we look at these four stages we'll consider the risks of each.
 
@@ -104,7 +104,7 @@ This works both ways.  Let's looks at some of the **Channel Risks** from the poi
 
 ![Marketing Communication](/img/generated/risks/communication/communication_marketing.png)
 
-[Internal Models](../thinking/Glossary.md#Internal-Model) don't magically get populated with the information they need:  they fill up gradually, as shown in the diagram above.  Popular products and ideas _spread_, by word-of-mouth or other means.  Part of the job of being a good technologist is to keep track of new **Ideas**, **Concepts** and **Options**, so as to use them as [Dependencies](Dependency-Risk.md) when needed.
+[Internal Models](../thinking/Glossary.md#internal-model) don't magically get populated with the information they need:  they fill up gradually, as shown in the diagram above.  Popular products and ideas _spread_, by word-of-mouth or other means.  Part of the job of being a good technologist is to keep track of new **Ideas**, **Concepts** and **Options**, so as to use them as [Dependencies](Dependency-Risk.md) when needed.
 
 ## Protocols
 
@@ -376,7 +376,7 @@ _Referring to **f** is a much simpler job than understanding **f**._
 
 We try to mitigate this via documentation but this is a terrible deal:  documentation is necessarily a simplified explanation of the abstraction, so will still suffer from [Invisibility Risk](Communication-Risk.md#invisibility-risk).
 
-[Invisibility Risk](Communication-Risk.md#invisibility-risk) is mainly [Hidden Risk](../thinking/Glossary.md#Hidden-Risk).  (Mostly, _you don't know what you don't know_.)  But you can carelessly _hide things from yourself_ with software<!-- tweet-end -->:
+[Invisibility Risk](Communication-Risk.md#invisibility-risk) is mainly [Hidden Risk](../thinking/Glossary.md#hidden-risk).  (Mostly, _you don't know what you don't know_.)  But you can carelessly _hide things from yourself_ with software<!-- tweet-end -->:
 
  - Adding a thread to an application that doesn't report whether it worked, failed, or is running out of control and consuming all the cycles of the CPU.
  - Redundancy can increase reliability, but only if you know when servers fail, and fix them quickly.   Otherwise, you only see problems when the last server fails.
@@ -396,15 +396,15 @@ Although protocols can sometimes handle security features of communication (such
  
 Even if the **receiver** trusts the **sender**, they may not _believe_ the message.  Let's look at some reasons for that:
 
-- **[Weltanschauung (World View)](https://en.wikipedia.org/wiki/World_view)**: the ethics, values and beliefs in the receiver's [Internal Model](../thinking/Glossary.md#Internal-Model) may be incompatible to those from the sender.
+- **[Weltanschauung (World View)](https://en.wikipedia.org/wiki/World_view)**: the ethics, values and beliefs in the receiver's [Internal Model](../thinking/Glossary.md#internal-model) may be incompatible to those from the sender.
 - **[Relativism](https://en.wikipedia.org/wiki/Relativism)** is the concept that there are no universal truths.  Every truth is from a frame of reference.  For example, what constitutes _offensive language_ is dependent on the listener.
 - **[Psycholinguistics](https://en.wikipedia.org/wiki/Psycholinguistics)** is the study of how humans acquire languages.  There are different languages, dialects, and _industry dialects_.  We all understand language in different ways, take different meanings and apply different contexts to the messages.
   
-From the point-of-view of [Marketing Communications](Communication-Risk.md#Marketing-Communications), choosing the right message is part of the battle.  You are trying to communicate your idea in such a way as to mitigate Trust & Belief Risk.
+From the point-of-view of [Marketing Communications](Communication-Risk.md#marketing-communications), choosing the right message is part of the battle.  You are trying to communicate your idea in such a way as to mitigate Trust & Belief Risk.
 
 ### Learning Curve Risk
 
-If the messages we are receiving force us to update our [Internal Model](../thinking/Glossary.md#Internal-Model) too much, we can suffer from the problem of "too steep a [Learning Curve](https://en.wikipedia.org/wiki/Learning_curve)" or "[Information Overload](https://en.wikipedia.org/wiki/Information_overload)", where the messages force us to adapt our [Internal Model](../thinking/Glossary.md#Internal-Model) too quickly for our brains to keep up.  
+If the messages we are receiving force us to update our [Internal Model](../thinking/Glossary.md#internal-model) too much, we can suffer from the problem of "too steep a [Learning Curve](https://en.wikipedia.org/wiki/Learning_curve)" or "[Information Overload](https://en.wikipedia.org/wiki/Information_overload)", where the messages force us to adapt our [Internal Model](../thinking/Glossary.md#internal-model) too quickly for our brains to keep up.  
 
 Commonly, the easiest option is just to ignore the information channel completely in these cases.
 
@@ -418,8 +418,8 @@ By now it should be clear that it's going to be _both_ quite hard to read and wr
 
 But now we should be able to see the reason why it's harder to read than write too: 
  
- - When reading code, you are having to shift your [Internal Model](../thinking/Glossary.md#Internal-Model) to wherever the code is, accepting decisions that you might not agree with and accepting counter-intuitive logical leaps.  i.e. [Learning Curve Risk](Communication-Risk.md#learning-curve-risk). _(cf. [Principle of Least Surprise](https://en.wikipedia.org/wiki/Principle_of_least_astonishment))_
- - There is no [Feedback Loop](../thinking/Glossary.md#Feedback-Loop) between your [Internal Model](../thinking/Glossary.md#Internal-Model) and the [Reality](../thinking/Glossary.md#Meet-Reality) of the code, opening you up to [misinterpretation](Communication-Risk.md#misinterpretation).  When you write code, your compiler and tests give you this.
+ - When reading code, you are having to shift your [Internal Model](../thinking/Glossary.md#internal-model) to wherever the code is, accepting decisions that you might not agree with and accepting counter-intuitive logical leaps.  i.e. [Learning Curve Risk](Communication-Risk.md#learning-curve-risk). _(cf. [Principle of Least Surprise](https://en.wikipedia.org/wiki/Principle_of_least_astonishment))_
+ - There is no [Feedback Loop](../thinking/Glossary.md#feedback-loop) between your [Internal Model](../thinking/Glossary.md#internal-model) and the [Reality](../thinking/Glossary.md#meet-reality) of the code, opening you up to [misinterpretation](Communication-Risk.md#misinterpretation).  When you write code, your compiler and tests give you this.
  - While reading code _takes less time_ than writing it, this also means the [Learning Curve](Communication-Risk.md#learning-curve-risk) is steeper.
 
 ## Communication Risks Wrap Up
