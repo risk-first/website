@@ -8,6 +8,8 @@ featured:
 tags:
  - Estimating
  - Popular
+ - Feedback Loop
+ - Meet Reality
 sidebar_position: 6
 tweet: yes
 ---

@@ -8,6 +8,9 @@ featured:
   element: '<action>Meeting Reality</action>'
 tags:
  - Thinking Risk-First
+ - Feedback Loop
+ - Take Action
+ - Risk Landscape
 sidebar_position: 4
 redirect_from: 
  - /Meeting-Reality
@@ -24,7 +27,7 @@ Here we look at how exposing your "Internal Model" to reality is in itself a goo
 
 The world is too complex to understand at a glance.  It takes years for humans to build a model of reality in our heads.  And within a team, the model is split amongst people, documents, email, tickets, code... but it is still a model.  
 
-This "[Internal Model](../thinking/Glossary.md#Internal-Model)" of reality informs the actions we take in life: we take actions based on our model, hoping to change reality with some positive outcome.
+This "[Internal Model](../thinking/Glossary.md#internal-model)" of reality informs the actions we take in life: we take actions based on our model, hoping to change reality with some positive outcome.
 
 For example, while organising a dinner party you'll have a model of who you expect to come.  You might take actions to ensure there is enough food, that you've got RSVPs and so on.
 
@@ -101,7 +104,7 @@ Activities like User Acceptance Testing (UAT) or incremental delivery give us so
 So, here we've looked at Meeting Reality, which basically boils down to taking actions to expose yourself to hidden risks and seeing how it turns out:
 
 - Each Action you take is a step on the [Risk Landscape](../thinking/Glossary.md#risk-landscape).
-- Each Action exposes new [Hidden Risks](../thinking/Glossary.md#hidden-risk), changing your [Internal Model](../thinking/Glossary.md#Internal-Model).
+- Each Action exposes new [Hidden Risks](../thinking/Glossary.md#hidden-risk), changing your [Internal Model](../thinking/Glossary.md#internal-model).
 - Ideally, each action should reduce the overall [Attendant Risk](../thinking/Glossary.md#attendant-risk) on the project (that is, puts it in a better place on the [Risk Landscape](../thinking/Glossary.md#risk-landscape).
 
 Could it be that _everything_ you do on a software project is risk management? This is an idea explored next in [Just Risk](Just-Risk.md).

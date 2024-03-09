@@ -60,7 +60,7 @@ Let's look at how that can happen.
 Imagine for a moment, that there was such a thing as **The Perfect Product**, and a **User** wants to build it with a **Coder**:
  - The **Perfect Product** might be _conceptually elusive_, and it might take several attempts for the **User** to find its form. _[Conceptual Integrity Risk](../risks/Feature-Risk.md)_
  - It might be hard for the **User** to _communicate_ the idea of it in writing or words:  where do the buttons go? What do they do?  What are the key abstractions?  _[Communication Risk](../risks/Communication-Risk.md)_
- - It might be hard too, for the **Coder** to work with this description.  Since his [Internal Model](../thinking/Glossary.md#internal-mModel) is different from the **User**'s, they have different ideas about the _meaning_ of what the **User** is communicating.  _[Communication Risk](../risks/Communication-Risk.md)_
+ - It might be hard too, for the **Coder** to work with this description.  Since his [Internal Model](../thinking/Glossary.md#internal-model) is different from the **User**'s, they have different ideas about the _meaning_ of what the **User** is communicating.  _[Communication Risk](../risks/Communication-Risk.md)_
  - Then, implementing the idea of whatever is in the **Coder**'s [Internal Model](../thinking/Glossary.md#internal-model) takes _effort_, and therefore involves [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk).
  - Finally, we have a feedback loop, so the **User** can improve their [Internal Model](../thinking/Glossary.md#internal-model) and see the previously unforeseen [Hidden Risks](../thinking/Glossary.md#hidden-risk).
  - Then, you can go round again.
@@ -96,7 +96,7 @@ By having more people involved, the feedback loop will be longer than the two-ma
 
 One of the problems with a **SkunkWorks** approach is that you end up with more [Coordination Risk](../risks/Coordination-Risk.md) than you'd like, as your different skunk-teams end up with different [Internal Models](../thinking/Glossary.md#internal-model) and different [Goals](../thinking/Glossary.md#goal-in-mind).  
 
-In large companies, this is called [Silo Mentality](https://en.wikipedia.org/wiki/Information_silo) - the tendency for lines of business to stop communicating and sharing with one another.  As you can imagine, this leads to a more [Complex](../risks/Complexity-Risk.md) and [bureaucratic](../risks/Process-Risk.md#bureaucratic-risk) structure than would be optimal.
+In large companies, this is called [Silo Mentality](https://en.wikipedia.org/wiki/Information_silo) - the tendency for lines of business to stop communicating and sharing with one another.  As you can imagine, this leads to a more [Complex](../risks/Complexity-Risk.md) and [bureaucratic](../risks/Process-Risk.md#bureaucracy) structure than would be optimal.
 
 But this can happen within a single coding team, too:  by splitting up and working on different pieces of functionality within a project, the team _specialises_ and becomes expert in the parts it has worked on.  This means the team members have different [Internal Models](../thinking/Glossary.md#internal-model) of the codebase.
 

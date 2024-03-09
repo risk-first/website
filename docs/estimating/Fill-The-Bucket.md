@@ -149,6 +149,6 @@ But there are lots of ways [Fill-The-Bucket](Fill-The-Bucket.md) goes wrong, and
 2. Each unit is pretty much the same as another.  
 3. Each unit is _independent_ to the others. 
  
-In [the financial crisis](../risks/Risk-Landscape.md#the-financial-crisis), we saw how estimates of risk failed because they violated point 3.  
+In [the financial crisis](../risks/Risk-Landscape.md#example-the-financial-crisis), we saw how estimates of risk failed because they violated point 3.  
 
 Let's have a look at [what happens when we relax these constraints](Kitchen-Cabinet.md).

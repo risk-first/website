@@ -8,6 +8,9 @@ featured:
   element: '<risk class="communication" />'
 tags: 
  - Thinking Risk-First
+ - Internal Model
+ - Hidden Risk
+ - Attendant Risk
 sidebar_position: 13
 redirect_from: 
  - /A-Conversation
@@ -23,7 +26,7 @@ Uniquely as a species, humans are fascinated by story-telling _precisely because
 
 As humans, we all bring our own experiences to bear on the best way to solve problems.  Sometimes, experience tells us that solving a problem one way will create a new _worse_ problem.
 
-It's key that we share our experiences to improve everyone's [Internal Model](../thinking/Glossary.md#Internal-Model)s.  
+It's key that we share our experiences to improve everyone's [Internal Model](../thinking/Glossary.md#internal-model)s.  
 
 ## A Risk Conversation
 

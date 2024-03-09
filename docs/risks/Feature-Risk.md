@@ -60,7 +60,7 @@ Delivering new features can delight your customers, but breaking existing ones w
 
 [Regression Risk](Feature-Risk.md#regression-risk) is the risk of breaking existing features in your software when you add new ones.   As with other feature risks, the eventual result is the same: customers don't have the features they expect.  
 
-Regression Risks increase as your code-base [gains Complexity](Complexity-Risk.md).  That's because it becomes impossible to keep a complete [Internal Model](../thinking/Glossary.md#Internal-Model) of the whole thing in your head, and also your software gains "corner cases" or "edge conditions" which don't get tested very often.
+Regression Risks increase as your code-base [gains Complexity](Complexity-Risk.md).  That's because it becomes impossible to keep a complete [Internal Model](../thinking/Glossary.md#internal-model) of the whole thing in your head, and also your software gains "corner cases" or "edge conditions" which don't get tested very often.
 
 As shown in the above diagram, you can address Regression Risk with **specification** (defining clearly what the expected behaviour is) and **testing** (both manual and automated), but this takes time and will add extra complexity to your project (either in the form of code for automated tests, written specifications or a more elaborate process for releases).  
 
@@ -76,7 +76,7 @@ Sometimes users _swear blind_ that they need some feature or other, but it runs 
 
 Sometimes it can go for a lot longer.  Here's an example: I once worked on some software that was built as a score-board within a chat application.  However, after we'd added much-asked-for commenting and reply features to our score-board, we realised we'd implemented a chat application _within a chat application_, and had wasted our time enormously.  
 
-[Feature Phones](https://en.wikipedia.org/wiki/Feature_phone) are another example:  although it _seemed_ like the market wanted more and more features added to their phones, [Apple's iPhone](https://en.wikipedia.org/wiki/IPhone) was able to steal huge market share by presenting a much more enjoyable, more coherent user experience, despite being more expensive and having _fewer_ features.  Feature Phones had been drowning in increasing [Conceptual Integrity Risk](Feature-Risk.md#Conceptual-integrity-risk) without realising it.
+[Feature Phones](https://en.wikipedia.org/wiki/Feature_phone) are another example:  although it _seemed_ like the market wanted more and more features added to their phones, [Apple's iPhone](https://en.wikipedia.org/wiki/IPhone) was able to steal huge market share by presenting a much more enjoyable, more coherent user experience, despite being more expensive and having _fewer_ features.  Feature Phones had been drowning in increasing [Conceptual Integrity Risk](Feature-Risk.md#conceptual-integrity-risk) without realising it.
 
 Conceptual Integrity Risk is a particularly pernicious kind of [Feature Risk](Feature-Risk.md) which can only be mitigated by good design and [feedback](../thinking/Cadence.md).  Human needs are [fractal in nature](../estimating/Fractals.md): the more you examine them, the more complexity you can find.  The aim of a product is to capture some needs at a *general* level:  you can't hope to anticipate everything.  As with the other risks, there is an inherent [Schedule Risk](Scarcity-Risk.md#schedule-risk) as addressing these risks takes _time_.
 

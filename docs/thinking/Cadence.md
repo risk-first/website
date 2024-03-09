@@ -8,6 +8,8 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cadence.svg">Feedback Loops</image-artifact>'
 tags:
  - Thinking Risk-First
+ - Feedback Loop
+ - Meet Reality
 sidebar_position: 11
 redirect_from: 
  - /Cadence
@@ -44,7 +46,7 @@ In a software development scenario, you should also test your model against real
 
 This list is arranged so that at the top, we have the most visceral, most _real_ feedback loop, but at the same time, the slowest.   
 
-At the bottom, a good IDE can inform you about errors in your [Internal Model](../thinking/Glossary.md#Internal-Model) in real time, by way of highlighting compilation errors .  So, this is the fastest loop, but it's the most _limited_ reality.
+At the bottom, a good IDE can inform you about errors in your [Internal Model](../thinking/Glossary.md#internal-model) in real time, by way of highlighting compilation errors .  So, this is the fastest loop, but it's the most _limited_ reality.
 
 Imagine for a second that you had a special time-travelling machine.  With it, you could make a change to your software, and get back a report from the future listing out all the issues people had faced using it over its lifetime, instantly.
 

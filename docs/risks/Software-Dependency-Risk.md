@@ -50,7 +50,7 @@ With this in mind, we can see that adding a software dependency is a trade-off: 
 
 ## Programming Languages as Dependencies
 
-In the earlier section on [Complexity Risk](Complexity-Risk.md) we tackled [Kolmogorov Complexity](Complexity-Risk.md#Kolmogorov-Complexity), and the idea that your codebase had some kind of minimal level of complexity based on the output it was trying to create.  This is a neat idea, but in a way, we cheated.  Let's look at how.
+In the earlier section on [Complexity Risk](Complexity-Risk.md) we tackled [Kolmogorov Complexity](Complexity-Risk.md#kolmogorov-complexity), and the idea that your codebase had some kind of minimal level of complexity based on the output it was trying to create.  This is a neat idea, but in a way, we cheated.  Let's look at how.
 
 We were trying to figure out the shortest (Javascript) program to generate this output:
 
@@ -118,11 +118,11 @@ The interface of a dependency expands when you ask it to do a wider variety of t
 
 ![Software Dependency Ergonomics:  adopting complex dependencies](/img/generated/risks/software-dependency/ergonomics2.png)
 
-Adopting complex software dependencies (as shown in the diagram above) might allow you to avoid complexity in your own codebase.  However, this likely gives you a longer learning curve before you understand the tool, and you _might_ run into issues later where the tool fails to do something critical that you wanted (a [Dead End Risk](Complexity-Risk.md#Dead-End-Risk)).
+Adopting complex software dependencies (as shown in the diagram above) might allow you to avoid complexity in your own codebase.  However, this likely gives you a longer learning curve before you understand the tool, and you _might_ run into issues later where the tool fails to do something critical that you wanted (a [Dead End Risk](Complexity-Risk.md#dead-end-risk)).
 
 Using a software dependency allows us to split a project's complexity into two: 
 
- - The inner complexity of the dependency (how it works internally, its own [internal complexity](Complexity-Risk.md#Kolmogorov-Complexity)).
+ - The inner complexity of the dependency (how it works internally, its own [internal complexity](Complexity-Risk.md#kolmogorov-complexity)).
  - The complexity of the instructions that we need to write to make the tool work, [the protocol complexity](Communication-Risk.md#protocol-risk), which will be a function of the complexity of the tool itself.
 
 ![Types of Complexity For a Software Dependency](/img/generated/risks/software-dependency/protocol-complexity.png)
@@ -190,7 +190,7 @@ In essence, this is Conway's Law:
 
 > "organisations which design systems ... are constrained to produce designs which are copies of the communication structures of these organisations." - [Melvin Conway, _Conway's Law_](https://en.wikipedia.org/wiki/Conway%27s_law)
 
-### 2.  Software Libraries
+### 2. Software Libraries
 
 By choosing a particular software library, we are making a move on the [Risk Landscape](Risk-Landscape.md) in the hope of moving to a place with more favourable risks.  Typically, using library code offers a [Schedule Risk](Scarcity-Risk.md#schedule-risk) and [Complexity Risk](Complexity-Risk.md) [Silver Bullet](../complexity/Silver-Bullets.md) - a high-speed route over the risk landscape to somewhere nearer where we want to be.  But, in return we expect to pick up:
 
@@ -277,7 +277,7 @@ Let's expand this view slightly and look at where different pieces of software s
 ![Software Dependencies, Pricing, Delivery Matrix Risk Profiles](/img/generated/risks/software-dependency/software_dependency_table_3_sideways.png)
 
 - Where there is value in **the [Network Effect](https://en.wikipedia.org/wiki/Network_effect)** it's often a sign that the software will be free, or open source:  programming languages and Linux are the obvious examples of this.  Bugs are easier to find when there are lots of eyes looking, and learning the skill to use the software has less [Boundary Risk](Boundary-Risk.md) if you know you'll be able to use it at any point in the future.
-- At the other end of the spectrum, clients will happily pay for software if it clearly **reduces [Operational Risk](Operational-Risk.md)**.  Take [Amazon Web Services (AWS)](https://en.wikipedia.org/wiki/Amazon_Web_Services).  The essential trade here is that you substitute the complexity of hosting and maintaining various pieces of hardware, in exchange for metered payments ([Funding Risk](Scarcity-Risk.md#Funding-Risk) for you).  Since the AWS _interfaces_ are specific to Amazon, there is significant [Boundary Risk](Boundary-Risk.md) in choosing this option.
+- At the other end of the spectrum, clients will happily pay for software if it clearly **reduces [Operational Risk](Operational-Risk.md)**.  Take [Amazon Web Services (AWS)](https://en.wikipedia.org/wiki/Amazon_Web_Services).  The essential trade here is that you substitute the complexity of hosting and maintaining various pieces of hardware, in exchange for metered payments ([Funding Risk](Scarcity-Risk.md#funding-risk) for you).  Since the AWS _interfaces_ are specific to Amazon, there is significant [Boundary Risk](Boundary-Risk.md) in choosing this option.
 - In the middle there are lots of **substitute options** and therefore high competition.  Because of this prices are pushed towards zero and therefore often advertising is used to monetise the product.  [Angry Birds](https://en.wikipedia.org/wiki/Angry_Birds) is a classic example:  initially, it had demo and paid versions, however [Rovio](https://en.wikipedia.org/wiki/Rovio_Entertainment) discovered there was much more money to be made through advertising than from the [paid-for app](https://www.deconstructoroffun.com/blog/2017/6/11/how-angry-birds-2-multiplied-quadrupled-revenue-in-a-year).
 
 ## Choice

@@ -8,6 +8,8 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/de-risking.svg">De-Risking</image-artifact>'
 tags:
  - Thinking Risk-First
+ - Taking Action
+ - Risk Landscape
 sidebar_position: 12
 redirect_from: 
  - /De-Risking

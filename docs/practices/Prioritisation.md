@@ -24,7 +24,7 @@ Usually, risk is mitigated by **Prioritisation**.  But sometimes, it's not appro
 
 There are several ways you can prioritise work:
 
-- **Largest Mitigation First**:  What's the thing we can do right now to reduce our [Attendant Risk](../thinking/Glossary.md#attendant-risk) most?  This is sometimes hard to quantify, given [Hidden Risk](../thinking/Glossary.md#Hidden-Risk), so maybe an easier metric is...
+- **Largest Mitigation First**:  What's the thing we can do right now to reduce our [Attendant Risk](../thinking/Glossary.md#attendant-risk) most?  This is sometimes hard to quantify, given [Hidden Risk](../thinking/Glossary.md#hidden-risk), so maybe an easier metric is...
 - **Biggest Win**:  What's the best thing we can do right now to reduce [Attendant Risk](../thinking/Glossary.md#attendant-risk) for least additional [Schedule-Risk](../risks/Scarcity-Risk.md#schedule-risk)?  (i.e. simply considering how much *work* is likely to be involved)
 - **Dependency Order**:  Sometimes, you can't build Feature A until Feature B is complete.   Prioritisation helps to identify and mitigate [Dependency Risk](../risks/Dependency-Risk.md).
 
@@ -45,7 +45,7 @@ This one way in which a particular prioritisation [Meets Reality](../thinking/Me
 Breaking a large delivery down into lots of small releases has an impact on [Operational Risk](../risks/Operational-Risk):
 
  - Usually, lots of small releases allows you to _practice_ the release process while the project is relatively unimportant.  This experience allows you to figure out automation and reduce the [Process Risk](../risks/Process-Risk.md) of releasing too.
- - Smaller, higher-cadence releases also reduce [Invisibility Risk](../risks/Communication-Risk#Invisibility-Risk), because users don't have large amounts of change to get accustomed to all-in-one-go.   
+ - Smaller, higher-cadence releases also reduce [Invisibility Risk](../risks/Communication-Risk#invisibility-risk), because users don't have large amounts of change to get accustomed to all-in-one-go.   
  
 ### [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk)
 

@@ -8,6 +8,12 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cash.svg">Payoff</image-artifact>'
 tags:
  - Thinking Risk-First
+ - Goal
+ - Attendant Risk
+ - Risk Landscape
+ - Bet
+ - Payoff
+ - Balance Of Risk
 sidebar_position: 6
 tweet: yes
 ---

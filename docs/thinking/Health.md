@@ -7,6 +7,7 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/8bit-heart.svg">Health</image-artifact>'
 tags: 
  - Thinking Risk-First
+ - Feedback Loop
 sidebar_position: 10
 redirect_from: 
  - /Health

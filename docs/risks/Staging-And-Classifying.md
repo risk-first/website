@@ -34,7 +34,7 @@ If you've been reading closely, you'll notice that a number of themes come up ag
 
 ## The Power Of Abstractions
 
-[Abstraction](../thinking/Glossary.md#abstraction) appears as a concept continually: in [Communication Risk](Communication-Risk.md), [Complexity Metrics](Complexity-Risk.md#kolmogorov-complexity), [Map and Territory Risk](Map-And-Territory-Risk.md) or how it causes [Boundary Risk](Boundary-Risk.md).  We've looked at some complicated examples of abstractions, such as [network protocols](Communication-Risk.md#protocols), [dependencies on technology](Software-Dependency-Risk.md#software-tools) or [Business Processes](Process-Risk.md#the-purpose-of-process).
+[Abstraction](../thinking/Glossary.md#abstraction) appears as a concept continually: in [Communication Risk](Communication-Risk.md), [Complexity Metrics](Complexity-Risk.md#kolmogorov-complexity), [Map and Territory Risk](Map-And-Territory-Risk.md) or how it causes [Boundary Risk](Boundary-Risk.md).  We've looked at some complicated examples of abstractions, such as [network protocols](Communication-Risk.md#protocols), [dependencies on technology](Software-Dependency-Risk.md) or [Business Processes](Process-Risk.md#the-purpose-of-process).
 
 Let's now _generalize_ what is happening with abstraction.  To do this, we'll consider the simplest example of abstraction:  _naming a pattern_ of behaviour we see in the real world, such as "Binge Watching" or "Remote Working", or naming a category of insects as "Beetles".
 
@@ -86,7 +86,7 @@ As shown in the diagram above, relationships of features/dependencies are the ba
 
 ## The Work Continues
 
-On this journey around the [Risk Landscape](Risk-Landscape.md) we've collected a (hopefully) good, representative sample of [Risks](../thinking/Glossary.md#Risk) and where to find them. But there are more out there.   How many of these have you seen on your projects?  What is missing?  What is wrong?
+On this journey around the [Risk Landscape](Risk-Landscape.md) we've collected a (hopefully) good, representative sample of [Risks](../thinking/Glossary.md#risk) and where to find them. But there are more out there.   How many of these have you seen on your projects?  What is missing?  What is wrong?
 
 Please help by reporting back what you find.
 
