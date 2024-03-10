@@ -30,7 +30,7 @@ The diagram above is taken from the [dinner party](A-Simple-Scenario.md) example
 
 ![Nothing To Eat](/img/generated/introduction/diagram_example.png)
 
-Here's another.  In the diagram above we are dealing with the risk of not having enough food at the party by considering buying lots of snacks. 
+Here's another.  In the diagram above we are dealing with the risk of not having enough food at the party by buying lots of snacks. 
 
 What’s going on in these diagrams?  How should we interpret them? Let’s work left-to-right.
 
@@ -56,7 +56,7 @@ In the middle of a Risk-First diagram we see the actions you could take.  In the
 
 ## On The Right
 
-_Nothing comes for free._  On the right, you can see the consequences of the actions you've taken:  [Attendant Risks](../thinking/Glossary.md#attendant-risk) are the _new_ risks you now have as a result of taking the action.
+_Nothing comes for free._  On the right, you can see the consequence or outcome of the actions you've taken:  [Attendant Risks](../thinking/Glossary.md#attendant-risk) are the _new_ risks you now have as a result of taking the action.
 
 Hosting a dinner party opens you up to attendant risks like "Not Enough to Eat".  As a result of that risk, we consider buying lots of snacks.  As a result of _that_ risk, we start to consider whether our guests will be impressed with that.
 
@@ -91,6 +91,24 @@ What does he do?  His [Action](../thinking/Glossary.md#taking-action) is to blam
 ![Mitigated and Hidden](/img/generated/introduction/hidden-mitigated.png)
 
 The diagram above shows two other marks we use quite commonly:  we put a "strike" through a risk to show that it's been dealt with in some way and the "cloud" icon denotes [Hidden Risks](../thinking/Glossary.md#hidden-risk)- those _unknown unknowns_ that we couldn't have predicted in advance.
+
+![Artifacts](/img/generated/introduction/artifacts.png)
+
+Sometimes, we add _artifacts_ to Risk-First diagrams.  That is, real-world things such as people, documents, code, servers and so on.  This is because as well as changing [Internal Models](../thinking/Glossary.md#internal-model), [Taking Action](../thinking/Glossary.md#taking-action) will produce real results and consume inputs in order to do so.  So, it's sometimes helpful to include these on the diagram.  Some examples are shown in the diagram above.
+
+![Causation and Correlation](/img/generated/introduction/causation.png)
+
+Finally, we might sometimes wish to show that one risk is correlated or caused by another.  In the diagram above we can see delays being caused by lack of staff, for example.  (Note that often in the real world things are rarely so clear-cut).
+
+## Summary
+
+Let's quickly summarise again what's happening in these diagrams:
+
+| Part     | Where Is It?  | Consists of..                                    |
+|----------|---------------|--------------------------------------------------|
+| Stimulus | On the left   | Risks and Goals (in Internal Models), Artifacts  |
+| Response | In the middle | Actions being taken                              |
+| Outcome  | On the right  | New Attendant Risks, New Artifacts, Hidden Risks |
 
 # Next
 
