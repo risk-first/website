@@ -69,7 +69,7 @@ _See: [Internal Model (Tag)](/tags/internal-model)_
 
 Any moment where we test an [Internal Model](#internal-model) by exposing it's predictive power against reality.  Note that "Reality" might be limited in some way, for example, a trial period or test users.   
 
-_See: [Meeting Reality (Tag)](/tags/meeting-reality)_
+_See: [Meet Reality (Tag)](/tags/meet-reality)_
 
 ### Payoff
 

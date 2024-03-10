@@ -5,7 +5,7 @@ url: https://riskfirst.org/thinking/A-Simple-Scenario
 
 tags: 
  - Thinking Risk-First
- - Taking Action
+ - Take Action
  - Internal Model
  - Goal
  - Attendant Risk
