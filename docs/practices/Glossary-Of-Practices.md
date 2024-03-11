@@ -97,7 +97,7 @@ See:
 
 The act of shifting burden of responsibility onto someone else.  
 
-_See: [Risk First Diagrams](../thinking/Risk-First-Diagrams.md#example-blaming-others)_
+_See: [Risk-First Diagrams](../thinking/Risk-First-Diagrams.md#example-blaming-others)_
 
 ### Requirements Capture
 

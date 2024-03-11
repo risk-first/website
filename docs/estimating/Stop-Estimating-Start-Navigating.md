@@ -114,7 +114,7 @@ No estimates says forget about trying to get the numbers right, because you can'
 > "Ian: Your scientists were so preoccupied with whether or not they could, they didn’t stop to think if they should. " - [Ian Malcolm, _Jurassic Park_](https://en.wikipedia.org/wiki/Jurassic_Park).
 
 
-Risk First Planning Game:  
+Risk-First Planning Game:  
 
 X: time 
 Y: importance  

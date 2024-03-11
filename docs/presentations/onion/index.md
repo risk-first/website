@@ -2,7 +2,7 @@
 template: post
 title: The Agile Onion
 permalink: /presentations/onion/onion.html
-description: Light-hearted presentation for Deutsche Bank on Risk First and Agile, June 2019.
+description: Light-hearted presentation for Deutsche Bank on Risk-First and Agile, June 2019.
 author: rob
 url: https://riskfirst.org/presentations/onion/onion.html
 featured: 
@@ -61,7 +61,7 @@ hide_table_of_contents: true
                 <img src="images/images.003.jpg" alt="Image of slide number 3" />
             </div>
             <div class="slide-notes">
-                      <p>Now, a third element to what I’m going to cover in my talk is an introduction to Risk First.  </p>
+                      <p>Now, a third element to what I’m going to cover in my talk is an introduction to Risk-First.  </p>
 
       <p>This is a website, which you can go and check out after the presentation.  I’m going to introduce a few of the concepts from Risk-First today.</p>
 

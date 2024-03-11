@@ -129,7 +129,7 @@ Over time, as a species, we have built up a detailed body of knowledge on the ri
 
 If all of these disparate domains are tracking health risks, it not clear that this is a good practice to perform at the level of a software project?
 
-The purpose of [Risk First](https://riskfirst.org) is to try to build that body of knowledge for software development.  Risks are in general _not_ unique on software projects - they are the same ones over and over again, such as [Communication Risk](../risks/Communication-Risk.md) or [Dependency Risk](../risks/Dependency-Risk.md).  
+The purpose of [Risk-First](https://riskfirst.org) is to try to build that body of knowledge for software development.  Risks are in general _not_ unique on software projects - they are the same ones over and over again, such as [Communication Risk](../risks/Communication-Risk.md) or [Dependency Risk](../risks/Dependency-Risk.md).  
 
 Every project faces these.  
 
