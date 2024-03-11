@@ -19,13 +19,17 @@ tweet: yes
 
 # Development Process
 
-In [A Simple Scenario](A-Simple-Scenario.md) we introduced some terms for talking about risk (such as [Attendant Risk](../thinking/Glossary.md#attendant-risk), [Hidden Risk](../thinking/Glossary.md#attendant-risk) and [Internal Model](../thinking/Glossary.md#internal-model)).
+In [A Simple Scenario](A-Simple-Scenario.md) we introduced some terms for talking about risk (such as [Attendant Risk](../thinking/Glossary.md#attendant-risk), [Hidden Risk](../thinking/Glossary.md#attendant-risk) and the [Internal Model](../thinking/Glossary.md#internal-model)).  
 
-Now, let's look at the everyday process of developing _a new feature_ on a software project and see how our risk model informs it.
+We've also introduced a notation in the form of [Risk-First Diagrams](./Risk-First-Diagrams.md) which allows us to represent the ways in which we can change the risks by [Taking Action](./Glossary.md#take-action).
 
-## Example: A Toy Process
+Now, we are going to start applying our new terminology to software.  In the example below, we'll look at a "toy" process and use it for developing a new feature on a software project and see how our risk model informs it.
 
-Let's ignore for now the specifics of what methodology is being used - we'll come to that later.  Let's say your team have settled for a process something like the following:
+## A "Toy" Process
+
+Let's ignore for now the specifics of software methodology - we'll come to that later.  For now, let's consider a simple, toy, process for developing software and understand how it works from a risk perspective.  
+
+Something like the following:
 
 1.  **Specification**: a new feature is requested somehow, and a business analyst works to specify it.
 2.  **Code And Unit Test**: a developer writes some code and some unit tests.
@@ -43,11 +47,11 @@ Also, the _methodology_ being used might be Waterfall, it might be Agile.  We're
 
 For now though, let's just assume that _it works for this project_ and everyone is reasonably happy with it. 
 
-We're just doing some analysis of _what process gives us_.  
+We're just doing some analysis of _what process gives us_, and also why it is that we end up with processes for producing software at all.
 
 ### Minimising Risks - Overview
 
-I am going to argue that this entire process is _informed by software risk_:
+I am going to argue that this entire evolved software production process is _informed by software risk_:
 
 1.  We have _a business analyst_ who talks to users and fleshes out the details of the feature properly.   This is to minimize the risk of **building the wrong thing**.
 2.  We _write unit tests_ to minimize the risk that our code **isn't doing what we expected, and that it matches the specifications**.
@@ -69,9 +73,9 @@ Two reasons:
 1.  You're [Meeting Reality](../thinking/Glossary.md#meet-reality) all-in-one-go:  all of these risks materialize at the same time, and you have to deal with them all at once.
 2.  Because of this, at the point you put code into the hands of your users, your [Internal Model](../thinking/Glossary.md#internal-model) is at its least-developed.  All the [Hidden Risks](../thinking/Glossary.md#hidden-risk) now need to be dealt with at the same time, in production.
 
-## Applying the Process
+## Applying the Toy Process
 
-Let's look at how our process should act to prevent these risks materializing by considering an unhappy path, one where at the outset, we have lots of [Hidden Risks](../thinking/Glossary.md#hidden-risk).  Let's say a particularly vocal user rings up someone in the office and asks for new **Feature X** to be added to the software.  It's logged as a new feature request, but:
+Let's look at how our toy process should act to prevent these risks materializing by considering an unhappy path. One where, at the outset, we have lots of [Hidden Risks](../thinking/Glossary.md#hidden-risk).  Let's say a particularly vocal user rings up someone in the office and asks for new **Feature X** to be added to the software.  It's logged as a new feature request, but:
   
 - Unfortunately, this feature once programmed will break an existing **Feature Y**.
 - Implementing the feature will use some api in a library, which contains bugs and have to be coded around.
@@ -122,9 +126,9 @@ Beneath the internal models we are also showing real-world tangible artifacts.  
 
 ### Integration
 
-Integration is where we run _all_ the tests on the project, and compile _all_ the code in a clean environment, collecting together the work from the whole development team. 
+Integration is where we run all the tests on the project, and compile the code in a clean environment, collecting together the work from the whole development team. 
 
-So, this stage is about meeting a new reality: the clean build.   
+So, within this example process, this stage is about meeting a new reality: the clean build.   
 
 ![Integration testing exposes Hidden Risks before you get to production](/img/generated/introduction/development_process_integration.png)
 
@@ -136,19 +140,25 @@ Next, User Acceptance Testing (UAT) is where our new feature meets another reali
 
 ![UAT - putting tame users in front of your software is better than real ones, where the risk is higher ](/img/generated/introduction/development_process_uat.png)
 
- - [Taking Action](../thinking/Glossary.md#taking-action) is the _only_ way to create change in the world.
- - It's also the only way we can _learn_ about the world, adding to our [Internal Model](../thinking/Glossary.md#internal-model). 
- - In this case, we discover a [Hidden Risk](../thinking/Glossary.md#hidden-risk): the user's difficulty in finding the feature.  (The cloud obscuring the risk shows that it is hidden).
- - In return, we can _expect_ the process of performing the UAT to delay our release (this is an attendant schedule risk).   
-
 ## Observations
 
-**First**, the people setting up the development process _didn't know_ about these _exact_ risks, but they knew the _shape that the risks take_.   The process builds "nets" for the different kinds of [Hidden Risks](../thinking/Glossary.md#hidden-risk) without knowing exactly what they are.  
+Here are a few quick observations about managing risk which you are revealed both by this toy software process and also our previous example of [The Dinner Party](A-Simple-Scenario.md):
+
+ - [Taking Action](../thinking/Glossary.md#taking-action) is the _only_ way to create change in the world.
+ - It's also the only way we can _learn_ about the world, adding to our [Internal Model](../thinking/Glossary.md#internal-model). 
+ - In this case, we discover a [Hidden Risk](../thinking/Glossary.md#hidden-risk): the user's difficulty in finding the feature.  
+ - In return, we can _expect_ the process of performing the UAT to delay our release (this is an attendant schedule risk).   
+ 
+## Major Themes
+ 
+So, what does this kind of Risk-First analysis tell us about _development processes in general_?  Below are four conclusions you can take away from the chapter, but which are all major themes of Risk-First that we'll be developing later:
+
+**First**, the people who set up the development process _didn't know_ about these _exact_ risks, but they knew the _shape that the risks take_.   The process builds "nets" for the different kinds of [Hidden Risks](../thinking/Glossary.md#hidden-risk) without knowing exactly what they are.  
 
 **Second**, are these really risks, or are they _problems we just didn't know about_?  I am using the terms interchangeably, to a certain extent.  Even when you know you have a problem, it's still a risk to your deadline until it's solved.  So, when does a risk become a problem?  Is a problem still just a schedule-risk, or cost-risk?  We'll come back to this question soon.
 
-**Third**, the real take-away from this is that all these risks exist because we don't know 100% how reality is.  We don't (and can't) have a perfect view of the universe and how it'll develop.   Reality is reality, _the risks just exist in our head_.
+**Third**, the real take-away from this is that all these risks exist because we don't know 100% how reality is.  We don't (and can't) have a perfect view of the universe and how it'll develop.   Reality is reality, _the risks just exist in our head_.  Again, this is a theme we'll develop later in Risk-First. 
 
-**Fourth**, hopefully you can see from the above that really _all this work is risk management_ and _all work is testing ideas against reality_.   
+**Fourth**, hopefully you might be able to see from the above that really _all this work is risk management_ and _all work is testing ideas against reality_.   
 
 In the next section, we're going to look at the concept of [Meeting Reality](Meeting-Reality.md) in a bit more depth.
