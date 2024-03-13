@@ -72,4 +72,4 @@ If we had a good [Internal Model](../thinking/Glossary.md#internal-model) and [t
 
 Here, we've introduced some new terms that we're going to use a lot:  [Meet Reality](../thinking/Glossary.md#meet-reality), [Attendant Risk](../thinking/Glossary.md#attendant-risk), [Hidden Risk](../thinking/Glossary.md#attendant-risk), [Internal Model](../thinking/Glossary.md#internal-model), [Taking Action](../thinking/Glossary.md#taking-action) and [Goal In Mind](../thinking/Glossary.md#goal-in-mind).  And, we've applied them in a simple scenario.
 
-Next, we're going to look at how we represent these ideas graphically, using [Risk First Diagrams](Risk-First-Diagrams.md).
+Next, we're going to look at how we represent these ideas graphically, using [Risk-First Diagrams](Risk-First-Diagrams.md).

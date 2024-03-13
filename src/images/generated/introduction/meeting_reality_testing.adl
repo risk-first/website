@@ -3,30 +3,32 @@
 	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
 	xmlns="http://www.kite9.org/schema/adl"
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
-    style="--kite9-layout: right; --kite9-min-width: 900pt; ">
+	style="--kite9-layout: right; --kite9-min-width: 600pt; ">
 
-  <container id="c" bordered="true">
+	<container id="c" bordered="true">
 
-    <mitigated>
-      <risk id="id_0" class="attendant">Usability Risks</risk>
-    </mitigated>
+		<mitigated>
+			<risk id="id_0" class="attendant">Usability Risks</risk>
+		</mitigated>
+		<mitigated>
+			<risk id="id_1" class="attendant">Reputational Risks</risk>
+		</mitigated>
 
-    <label  id="id_16">
-      Internal Model
-      
-    </label>
-  </container>
+		<label id="id_16">
+			Internal Model
+		</label>
+	</container>
 
-  <group>
-    <action>User Acceptance</action>
-  </group>
-  
-  <container id="d" style="--kite9-sizing: maximize; ">
-    <risk class="schedule" />
-    <label  id="4">
-      Attendant Risks
-      
-    </label>
-  </container>
+	<group>
+		<action>User Acceptance</action>
+	</group>
 
-  </diagram>
+	<container id="d" style="--kite9-sizing: maximize; ">
+		<risk class="schedule" />
+		<label id="4">
+			Attendant Risks
+
+		</label>
+	</container>
+
+</diagram>

@@ -3,58 +3,63 @@
 	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
 	xmlns="http://www.kite9.org/schema/adl"
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia">
-    
-    <group style="--kite9-layout: right; ">
-      
-      <container id="c" bordered="true" style=" --kite9-connection-align: 50%;">
-  
-        <risk id="id_0" class="goal">Successful Party</risk>
-        <mitigated>
-          <risk id="id_1" class="attendant">Risk 1</risk>
-        </mitigated>
-        <mitigated>
-          <risk id="id_2" class="attendant">Risk 2</risk>
-        </mitigated>
-  
-        <label  id="id_16">
-          Internal Model
-          
-        
-      </container>
-      
-      <action id="a">Mitigating Steps</action>
-      
-      <container id="d" style=" --kite9-connection-align: 50%;">
-      
-        <hidden>
-         <risk id="id_4" class="attendant"  style="--kite9-traversal: always, none, none none;" >New Hidden Risk</risk>
-        </hidden>
-        <risk id="id_3" class="attendant">Expected
-         Attendant Risk</risk>
-        <label  id="4">
-          Attendant Risks
-          
-        
-      </container>
-      
-    </group>
 
-    <arrow id="ar1">Feedback</arrow>
+	<group style="--kite9-layout: right; ">
 
-  
-    <link style="stroke-width: 2pt; ">
-       <from reference="d"/>
-       <to reference="ar1"/>
-    </link>  
-    
-      <link class="invisible" style="--kite9-direction: up;">
-       <from reference="a"/>
-       <to reference="ar1"/>
-    </link>  
-    
-    <link style="stroke-width: 2pt; ">
-       <from reference="ar1"/>
-       <to reference="c" shape="arrow"/>
-    </link>  
+		<container id="c" bordered="true"
+			style=" --kite9-connection-align: 50%;">
+			<group>
+				<risk id="id_0" class="goal">Successful Party</risk>
+				<mitigated>
+					<risk id="id_1" class="attendant">Risk 1</risk>
+				</mitigated>
+				<mitigated>
+					<risk id="id_2" class="attendant">Risk 2</risk>
+				</mitigated>
+			</group>
+			<label id="id_16">
+				Internal Model
+			</label>
 
-  </diagram>
+		</container>
+
+		<action id="a">Mitigating Steps</action>
+
+		<container id="d" style=" --kite9-connection-align: 50%;">
+			<group>
+			<hidden>
+				<risk id="id_4" class="attendant"
+					style="--kite9-traversal: always, none, none none;">New Hidden Risk
+				</risk>
+			</hidden>
+			<risk id="id_3" class="attendant">Expected
+				Attendant Risk
+			</risk>
+			</group>
+			<label id="4">
+				New Attendant Risks
+			</label>
+
+		</container>
+
+	</group>
+
+	<arrow id="ar1">Feedback</arrow>
+
+
+	<link style="stroke-width: 2pt; ">
+		<from reference="d" />
+		<to reference="ar1" />
+	</link>
+
+	<link class="invisible" style="--kite9-direction: up;">
+		<from reference="a" />
+		<to reference="ar1" />
+	</link>
+
+	<link style="stroke-width: 2pt; ">
+		<from reference="ar1" />
+		<to reference="c" shape="arrow" />
+	</link>
+
+</diagram>
