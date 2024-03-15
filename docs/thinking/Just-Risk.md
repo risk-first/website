@@ -56,7 +56,7 @@ This _hints_ at the fact that at some level it's all about risk:
 
 ## Every Action Attempts to Manage Risk
 
-The reason you are [taking an action](Glossary.md#take-action) is to manage a risk.  For example: 
+The reason you are [taking an action](Glossary.md#taking-action) is to manage a risk.  For example: 
 
  - If you're coding up new features in the software, this is managing [Feature Risk](../risks/Feature-Risk.md) (which we'll explore in more detail later).  
  - If you're getting a business sign-off for something, this is managing the risk of everyone not agreeing on a course of action (a [Coordination Risk](../risks/Coordination-Risk.md)).  

@@ -21,7 +21,7 @@ tweet: yes
 
 In [A Simple Scenario](A-Simple-Scenario.md) we introduced some terms for talking about risk (such as [Attendant Risk](../thinking/Glossary.md#attendant-risk), [Hidden Risk](../thinking/Glossary.md#attendant-risk) and the [Internal Model](../thinking/Glossary.md#internal-model)).  
 
-We've also introduced a notation in the form of [Risk-First Diagrams](./Risk-First-Diagrams.md) which allows us to represent the ways in which we can change the risks by [Taking Action](./Glossary.md#take-action).
+We've also introduced a notation in the form of [Risk-First Diagrams](./Risk-First-Diagrams.md) which allows us to represent the ways in which we can change the risks by [Taking Action](./Glossary.md#taking-action).
 
 Now, we are going to start applying our new terminology to software.  In the example below, we'll look at a "toy" process and use it for developing a new feature on a software project and see how our risk model informs it.
 
