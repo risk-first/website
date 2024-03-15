@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Risk First" href="/opensearch.xml"><link rel="stylesheet" href="/assets/css/styles.3ecb0cf0.css">
-<script src="/assets/js/runtime~main.3ac4c373.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.1e051525.js" defer="defer"></script>
 <script src="/assets/js/main.e0f08a08.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -22,9 +22,9 @@
 <p>The world is too complex to understand at a glance.  It takes years of growth and development for humans to build a useful <a href="/thinking/Glossary#internal-model">internal model</a> of reality in our heads.</p>
 <p>Within a development team, the model is split amongst people, documents, email, tickets, code... but it is still a model.</p>
 <p>This &quot;<a href="/thinking/Glossary#internal-model">Internal Model</a>&quot; of reality informs the actions we take in life: we take actions based on our model, hoping to change reality with some positive outcome.</p>
+<p><img decoding="async" loading="lazy" alt="Taking actions changes reality, but changes your model of the risks too" src="/assets/images/model_vs_reality_2-8db1913a9678fb3218c3058baa198d1b.png" width="1328" height="527" class="img_ev3q"></p>
 <p>For example, while <a href="/thinking/A-Simple-Scenario">organising a dinner party</a> you&#x27;ll have a model of who you expect to come.  You might take actions to ensure there is enough food, that you&#x27;ve got RSVPs and so on.</p>
 <p>The actions we take have consequences in the real world.   Hopefully, we eliminate some known risks but we might expose new <a href="/thinking/Glossary#hidden-risk">hidden risks</a> as we go.  There is a <em>recursive</em> nature about this - we&#x27;re left with an updated Internal Model, and we see new actions we have to take as a result.</p>
-<p><img decoding="async" loading="lazy" alt="Taking actions changes reality, but changes your model of the risks too" src="/assets/images/model_vs_reality_2-d503321a3edab827a5a389413648b049.png" width="1328" height="527" class="img_ev3q"></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="navigating-the-risk-landscape">Navigating the &quot;Risk Landscape&quot;<a href="#navigating-the-risk-landscape" class="hash-link" aria-label="Direct link to Navigating the &quot;Risk Landscape&quot;" title="Direct link to Navigating the &quot;Risk Landscape&quot;">​</a></h2>
 <p>The diagram above shows <em>just one possible action</em> but really, you&#x27;ll have choices.  We often have multiple ways of achieving our goals.</p>
 <p>What&#x27;s the best way?</p>
@@ -35,7 +35,7 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="example-automation">Example: Automation<a href="#example-automation" class="hash-link" aria-label="Direct link to Example: Automation" title="Direct link to Example: Automation">​</a></h3>
 <p><img decoding="async" loading="lazy" alt="Hidden Risks of Automation" src="/assets/images/risk_landscape_2_automating-4b7f2356595479e2dae8708e361e0c12.png" width="1047" height="344" class="img_ev3q"></p>
 <p><em>Automating processes</em> (as shown in the diagram above) is often tempting: it <em>should</em> save time, and reduce the amount of boring, repetitive work on a project.  But sometimes, it turns into an industry in itself, consumes more effort than it&#x27;ll ever pay back and needs to be maintained in the future at great expense.</p>
-<p>One popular type of automation is <a href="/practices/Glossary-Of-Practices#unit-testing">Unit Testing</a>.  Writing Unit Tests adds to the amount of development work, so on its own, it takes time out of the schedule.  It also creates complexity - you now have more code to manage.   However, if you write <em>just enough</em> of the right Unit Tests, you should be short-cutting the time spent finding issues in the User Acceptance Testing (UAT) stage, so you&#x27;re hopefully trading off a larger <a href="/risks/Scarcity-Risk#schedule-risk">Schedule Risk</a> from UAT and adding a smaller <a href="/risks/Scarcity-Risk#schedule-risk">Schedule Risk</a> to Development.</p>
+<p>One popular type of automation is <a href="/practices/Glossary-Of-Practices#unit-testing">Unit Testing</a>.  Writing unit tests adds to the amount of development work, so on its own, it <em>uses up time from the schedule</em>.  It also creates complexity - you now have more code to manage.   However, if you write <em>just enough</em> of the right unit tests, you should be short-cutting the time spent finding issues in the User Acceptance Testing (UAT) stage, so you&#x27;re hopefully trading off a larger <a href="/risks/Scarcity-Risk#schedule-risk">Schedule Risk</a> from UAT and adding a smaller <a href="/risks/Scarcity-Risk#schedule-risk">Schedule Risk</a> to Development.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="example-mongodb">Example: MongoDB<a href="#example-mongodb" class="hash-link" aria-label="Direct link to Example: MongoDB" title="Direct link to Example: MongoDB">​</a></h3>
 <p>On a previous project in a bank we had a requirement to store a modest amount of data and we needed to be able to retrieve it fast.  The developer chose to use <a href="https://www.mongodb.com" target="_blank" rel="noopener noreferrer">MongoDB</a> for this.  At the time, others pointed out that other teams in the bank had had lots of difficulty deploying MongoDB internally, due to licensing issues and other factors internal to the bank.</p>
 <p>Other options were available, but the developer chose MongoDB because of their <em>existing familiarity</em> with it:   therefore, they felt that the <a href="/thinking/Glossary#hidden-risk">Hidden Risks</a> of MongoDB were <em>lower</em> than the other options.</p>
@@ -64,7 +64,7 @@
 <p>Activities like User Acceptance Testing (UAT) or incremental delivery give us some flavour of reality, but more cheaply and sooner.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="trade-offs">Trade-Offs<a href="#trade-offs" class="hash-link" aria-label="Direct link to Trade-Offs" title="Direct link to Trade-Offs">​</a></h2>
 <p>Making a move on the <a href="/thinking/Glossary#risk-landscape">Risk Landscape</a> is about accepting a trade-off.  And the examples in this section are all classic software development trade-offs.  If you&#x27;re an experienced software developer, you&#x27;ll understand that any technology decision (whether it&#x27;s unit testing, database choices or release processes - the examples we&#x27;ve seen here) means accepting a trade-off.</p>
-<p>The Risk-First diagram gives us two things.  First, it makes this trade off clear:  what do I lose?  what do I gain? Second, by describing our trade-offs in terms of <em>risk</em>, we are also making clear the fact that up front, we never really know up-front whether the trade-off will be worth it.</p>
+<p>The Risk-First diagram gives us two things.  First, it makes this trade off clear:  what do I lose?  what do I gain? Second, by describing our trade-offs in terms of <em>risk</em>, we are also making clear the fact that up front, we&#x27;re never certain whether the trade-off will be worth it.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h2>
 <p>So, here we&#x27;ve looked at Meeting Reality, which basically boils down to taking actions to expose yourself to hidden risks and seeing how it turns out:</p>
 <ul>
