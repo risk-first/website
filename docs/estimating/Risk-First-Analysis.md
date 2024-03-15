@@ -129,7 +129,7 @@ While some projects are expressed in terms of addressing risks (e.g. installing 
 
 ![Goals, Anti-Goals, Risks and Upside Risks](/img/generated/estimating/planner/focus.png)
 
-The diagram above lays these out:  We'll work hard to _improve the probability_ of [Goals](../thinking/Glossary.md#goal-in-mind) and [Upside Risks](../thinking/Glossary.md#upside-risk) occurring, whilst at the same time taking action to prevent [Anti-Goals](https://riskfirst.org/post/news/2020/01/17/Anti-Goals) and [Downside Risks](../thinking/Glossary.md#risk).
+The diagram above lays these out:  We'll work hard to _improve the probability_ of [Goals](../thinking/Glossary.md#goal) and [Upside Risks](../thinking/Glossary.md#upside-risk) occurring, whilst at the same time taking action to prevent [Anti-Goals](https://riskfirst.org/post/news/2020/01/17/Anti-Goals) and [Downside Risks](../thinking/Glossary.md#risk).
 
 (There's a gentle introduction to the idea of _Anti-Goals_ [here](https://riskfirst.org/post/news/2020/01/17/Anti-Goals) which might be worth the diversion).
 

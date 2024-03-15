@@ -34,11 +34,11 @@ Within a development team, the model is split amongst people, documents, email, 
 
 This "[Internal Model](../thinking/Glossary.md#internal-model)" of reality informs the actions we take in life: we take actions based on our model, hoping to change reality with some positive outcome.
 
+![Taking actions changes reality, but changes your model of the risks too](/img/generated/introduction/model_vs_reality_2.png)
+
 For example, while [organising a dinner party](A-Simple-Scenario.md) you'll have a model of who you expect to come.  You might take actions to ensure there is enough food, that you've got RSVPs and so on.
 
 The actions we take have consequences in the real world.   Hopefully, we eliminate some known risks but we might expose new [hidden risks](../thinking/Glossary.md#hidden-risk) as we go.  There is a _recursive_ nature about this - we're left with an updated Internal Model, and we see new actions we have to take as a result.
-
-![Taking actions changes reality, but changes your model of the risks too](/img/generated/introduction/model_vs_reality_2.png)
 
 ## Navigating the "Risk Landscape"
 
@@ -60,7 +60,7 @@ Now, that's easier said than done!  Sometimes, you can end up somewhere _worse_:
 
 _Automating processes_ (as shown in the diagram above) is often tempting: it _should_ save time, and reduce the amount of boring, repetitive work on a project.  But sometimes, it turns into an industry in itself, consumes more effort than it'll ever pay back and needs to be maintained in the future at great expense. 
 
-One popular type of automation is [Unit Testing](../practices/Glossary-Of-Practices.md#unit-testing).  Writing Unit Tests adds to the amount of development work, so on its own, it takes time out of the schedule.  It also creates complexity - you now have more code to manage.   However, if you write _just enough_ of the right Unit Tests, you should be short-cutting the time spent finding issues in the User Acceptance Testing (UAT) stage, so you're hopefully trading off a larger [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk) from UAT and adding a smaller [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk) to Development.  
+One popular type of automation is [Unit Testing](../practices/Glossary-Of-Practices.md#unit-testing).  Writing unit tests adds to the amount of development work, so on its own, it _uses up time from the schedule_.  It also creates complexity - you now have more code to manage.   However, if you write _just enough_ of the right unit tests, you should be short-cutting the time spent finding issues in the User Acceptance Testing (UAT) stage, so you're hopefully trading off a larger [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk) from UAT and adding a smaller [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk) to Development.  
 
 ### Example: MongoDB
 
@@ -104,7 +104,7 @@ Activities like User Acceptance Testing (UAT) or incremental delivery give us so
 
 Making a move on the [Risk Landscape](Glossary.md#risk-landscape) is about accepting a trade-off.  And the examples in this section are all classic software development trade-offs.  If you're an experienced software developer, you'll understand that any technology decision (whether it's unit testing, database choices or release processes - the examples we've seen here) means accepting a trade-off.  
 
-The Risk-First diagram gives us two things.  First, it makes this trade off clear:  what do I lose?  what do I gain? Second, by describing our trade-offs in terms of _risk_, we are also making clear the fact that up front, we never really know up-front whether the trade-off will be worth it.
+The Risk-First diagram gives us two things.  First, it makes this trade off clear:  what do I lose?  what do I gain? Second, by describing our trade-offs in terms of _risk_, we are also making clear the fact that up front, we're never certain whether the trade-off will be worth it.
 
 ## Summary
 

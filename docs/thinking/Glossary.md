@@ -46,7 +46,7 @@ The process of testing an [Internal Model](#internal-model), through [taking act
 
 _See: [Feedback Loop (Tag)](/tags/feedback-loop)_
 
-### Goal In Mind
+### Goal
 
 A picture of the future that an individual or team carries within their [Internal Model](#internal-model);  An imagined destination on the [Risk Landscape](#risk-landscape).  A specific [Upside Risk](#upside-risk) we'd like to nurture and realize. _See: [A Simple Scenario](../thinking/A-Simple-Scenario.md)_
 

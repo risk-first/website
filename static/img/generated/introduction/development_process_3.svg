@@ -650,10 +650,10 @@ font-style: italic;
 --kite9-min-width: 70pt;
 --kite9-horizontal-sizing: MINIMIZE;
 --kite9-vertical-sizing: MINIMIZE;
---kite9-margin-top: 0px;
---kite9-margin-right: 0px;
---kite9-margin-bottom: 0px;
---kite9-margin-left: 0px;
+--kite9-margin-top: 0pt;
+--kite9-margin-right: 0pt;
+--kite9-margin-bottom: 0pt;
+--kite9-margin-left: 0pt;
 --kite9-vertical-align: BOTTOM;
 }
 
@@ -697,16 +697,16 @@ fill: white;
 --kite9-padding-right: 0pt;
 --kite9-padding-bottom: 0pt;
 --kite9-padding-left: 0pt;
---kite9-margin-top: 0pt;
---kite9-margin-right: 0pt;
---kite9-margin-bottom: 0pt;
---kite9-margin-left: 0pt;
+--kite9-margin-top: 3pt;
+--kite9-margin-right: 3pt;
+--kite9-margin-bottom: 3pt;
+--kite9-margin-left: 3pt;
 stroke: rgb(245, 245, 245);
 stroke-width: 7pt;
 --kite9-horizontal-sizing: MAXIMIZE;
 --kite9-vertical-sizing: MAXIMIZE;
---kite9-min-width: 1200px;
---kite9-min-height: 675px;
+--kite9-min-width: 1000pt;
+--kite9-min-height: 535pt;
 }
 
 *[k9-elem="group"].principle-left-top {
@@ -819,8 +819,8 @@ font-style: italic;
 
 *[k9-texture="none"] {
 fill: white;
-fill-opacity: 0.01;
-stroke-opacity: 0.01;
+fill-opacity: 1.0E-4;
+stroke-opacity: 1.0E-4;
 }
 
 *[k9-texture="background"] {
@@ -837,7 +837,7 @@ fill-opacity: 1;
 
 *[k9-texture~="outline"] {
 fill: white;
-fill-opacity: 0.01;
+fill-opacity: 1.0E-4;
 stroke: black;
 stroke-opacity: 1;
 }
@@ -1108,7 +1108,7 @@ font-size: 12pt;
 
 *[k9-texture="artifact"] {
 fill: white;
-fill-opacity: 0.01;
+fill-opacity: 1.0E-4;
 stroke: none;
 }
 
@@ -1127,19 +1127,7 @@ font-weight: 200;
 --kite9-direction: RIGHT;
 }
 
-*[k9-elem="label-inner"] &gt; g &gt; *[k9-elem="caption"] {
---kite9-padding-top: 0;
---kite9-padding-right: 0;
---kite9-padding-bottom: 0;
---kite9-padding-left: 0;
-}
-
-*[k9-elem="label-inner"] {
-stroke: none;
-font-size: 12pt;
-}
-
-*[k9-elem="caption"] text {
+*[k9-elem="caption"] {
 text-align: center;
 }
 
@@ -1208,7 +1196,7 @@ stroke-width: 1pt;
 }
 
 *[k9-elem="container"][k9-texture="background"] {
-fill-opacity: 0.01;
+fill-opacity: 1.0E-4;
 }
 
 *[k9-elem="planner-cell"], *[k9-elem="planner-header"] {

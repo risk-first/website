@@ -79,7 +79,7 @@ So, the problem with [Student Syndrome](#student-syndrome) is that the _very mit
 
 [Opportunity Risk](Scarcity-Risk.md#opportunity-risk) is really the concern that whatever we do, we have to do it _in time_.  If we wait too long, we'll miss the [Window Of Opportunity](https://en.wikipedia.org/wiki/Window_of_opportunity) for our product or service.   
 
-Any product idea is necessarily of its time:  the [Goal In Mind](../thinking/Glossary.md#goal-in-mind) will be based on observations from a particular [Internal Model](../thinking/Glossary.md#internal-model), reflecting a view on reality at a specific _point in time_.  
+Any product idea is necessarily of its time:  the [Goal](../thinking/Glossary.md#goal) will be based on observations from a particular [Internal Model](../thinking/Glossary.md#internal-model), reflecting a view on reality at a specific _point in time_.  
 
 How long will that remain true for?  This is your _opportunity_:  it exists apart from any deadlines you set yourself, or funding options.  It's purely, "how long will this idea be worth doing?"  
 

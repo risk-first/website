@@ -33,8 +33,15 @@ Lets look at one of the tools in the Project Manager's tool-box, the [RAID Log](
 ## RAID Log
 
 Many project managers will be familiar with the [RAID Log](http://pmtips.net/blog-new/raid-logs-introduction).  It's simply four columns on a spreadsheet:  **Risks**, **Actions**, **Issues** and **Decisions**.
- 
-Let's try and put the following item into the RAID Log:
+
+| Category   | Description                     | Impact           | Priority |
+|------------|---------------------------------|------------------|----------|
+| Assumption | Documentation prior to approval |                  | HIGH     |
+| Risk       | Supply Delivery Time            | Project Schedule | MEDIUM   |
+| Issue      | Master data inconsistency       |                  | MEDIUM   |
+| Decision   | Go/No Go with ABC Ltd.          | Internal Hiring  | LOW      |
+
+The table above shows a sample RAID log.  A real one might well be more elaborate.  Let's keep things simple for now and put the following item into the RAID Log:
 
 > "Debbie needs to visit the client to get them to choose the logo to use on the product, otherwise we can't size the screen areas exactly."
 
@@ -49,7 +56,7 @@ This _hints_ at the fact that at some level it's all about risk:
 
 ## Every Action Attempts to Manage Risk
 
-The reason you are _taking_ an action is to manage a risk.  For example: 
+The reason you are [taking an action](Glossary.md#take-action) is to manage a risk.  For example: 
 
  - If you're coding up new features in the software, this is managing [Feature Risk](../risks/Feature-Risk.md) (which we'll explore in more detail later).  
  - If you're getting a business sign-off for something, this is managing the risk of everyone not agreeing on a course of action (a [Coordination Risk](../risks/Coordination-Risk.md)).  
@@ -62,7 +69,7 @@ The reason you are _taking_ an action is to manage a risk.  For example:
 - Will it lead to yet more actions?
 - What [Hidden Risk](../thinking/Glossary.md#hidden-risk) will it uncover?
 
-Consider _coding a feature_.  The whole process of coding is an exercise in learning what we didn't know about the world, uncovering problems and improving our [Internal Model](../thinking/Glossary.md#internal-model).  That is, flushing out the [Attendant Risk](../thinking/Glossary.md#attendant-risk) of the [Goal In Mind](../thinking/Glossary.md#goal-in-mind).
+Consider _coding a feature_.  The whole process of coding is an exercise in learning what we didn't know about the world, uncovering problems and improving our [Internal Model](../thinking/Glossary.md#internal-model).  That is, flushing out the [Attendant Risk](../thinking/Glossary.md#attendant-risk) of the [Goal](../thinking/Glossary.md#goal).
 
 And, as we saw in the [Introduction](A-Simple-Scenario.md), even something _mundane_ like the Dinner Party had risks. 
 
@@ -79,26 +86,38 @@ One retort to this might be to say:  "an issue is a problem I have now, whereas 
 
 _Issues_ then, just seem more "definite" and "now" than _risks_, right?  This classification is arbitrary:  they're all just part of the same spectrum, they all have inherent uncertainty, so there should be no need to agonise over which column to put them in.
 
+In a way, this is a blessing because it means if you are maintaining a [backlog](https://www.scrum.org/resources/what-is-a-product-backlog) (the Scrum term) or tracking work in an issue-tracking tool such as [GitHub Issues](https://github.com/features/issues) then you're tracking risks.
+
+![A selection of issues from a GitHub project](/img/thinking/github-issues.png)
+
+Let's look at a real-life example.  The above image shows a selection of issues logged in GitHub for an open source project called [FDC3](https://github.com/finos/FDC3).  The first one, "Adding debugging information to help app developers trace broadcast storms" is written as if it's a piece of work to be done (an action to take).   However, there's an implicit risk being addressed by this piece of work: the risk that developers using the project are under-served by the functionality of it, and will be dissatisfied by the project.  This issue was likely written by developers facing this problem, unable to move forward due to this lack of functionality around debugging information.  
+
 ## Goals Are Risks Too
 
 In the previous sections, we introduced something of a "diagram language" of risk.  Let's review it:
 
 ![Risk-First Diagram Language](/img/generated/introduction/all_risk_management_language.png)
  
-[Goals](../thinking/Glossary.md#goal-in-mind) live inside our [Internal Model](../thinking/Glossary.md#internal-model), just like Risks.  It turns out, that functionally, Goals and Risks are equivalent.  For example, The Goal of "Implementing Feature X" is equivalent to mitigating "Risk of Feature X not being present".
+[Goals](../thinking/Glossary.md#goal) live inside our [Internal Model](../thinking/Glossary.md#internal-model), just like Risks.  It turns out, that functionally, Goals and Risks are equivalent.  For example, The Goal of "Implementing Feature X" is equivalent to mitigating "Risk of Feature X not being present".
 
 Let's try and back up that assertion with a few more examples:
 
-|Goal                                |Restated As A Risk                                                   |
-|------------------------------------|---------------------------------------------------------------------|
-|Build a Wall                        |Mitigate the risk of something getting in / out                      |
-|Land a man on the  moon             |Mitigate the risk of looking technically inferior during the cold war| 
-|Move House                          |Mitigate the risks/problems of where you currently live              |
+| **Risk** (Starting Point)                                             | **Action** (Movement)  | **Goal** (Destination) |
+|-----------------------------------------------------------------------|------------------------|------------------------|
+| Mitigate the risk of something getting in / out                       | Build a Wall           | Safety                 |
+| Mitigate the risk of looking technically inferior during the cold war | Land a man on the moon | Superiority            |
+| Mitigate the risks/problems of where you currently live               | Move House             | Comfort                |
 
 There is a certain "interplay" between the concepts of risks, actions and goals.  After all, on the [Risk Landscape](../thinking/Glossary.md#risk-landscape) they correspond to a starting point, a movement, and a destination.  From a redundancy perspective, any one of these can be determined by knowing the other two.  
 
-Psychologically, humans are very goal-driven:  they like to know where they're going, and are good at organising around a goal.  However, by focusing on goals ("solutionizing") it's easy to ignore alternatives.  
+Psychologically, humans are very goal-driven:  they like to know where they're going, and are good at organising around a goal (like "landing a man on the moon").  However, by focusing on goals ("solutionizing") it's easy to ignore alternatives.  
 
 By focusing on "Risk-First", we don't ignore the reasons we're doing something.  
 
-Next, let's look at how we should [Consider Payoff](Consider-Payoff.md) when we choose what to do next.
+## Summary
+
+A Risk-First diagram represents a starting point (a risk), some movement (an action to take) and a destination (the goal).  But frequently our usual tools will only show us one of these parts:  the RAID log is focusing on the starting point, and some actions (decisions).  Issues (in an issue log) often focus on the action and possibly the risk.   In a way, this is fine as you can derive the third by knowing the other two.
+
+However, where this becomes problematic is when trying to decide what work to do:  is the expected destination _worth_ the effort of the action?
+
+So next, let's look at how we should [Consider Payoff](Consider-Payoff.md) when we choose what to do next.

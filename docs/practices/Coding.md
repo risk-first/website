@@ -12,7 +12,7 @@ Often, this can be called "programming", "hacking" or "development", although th
 
 In [Development Process](../thinking/Development-Process.md) we introduced the following diagram to show what is happening when we do some coding.  Let's generalize a bit from this diagram:
 
-- We start with a [Goal In Mind](../thinking/Glossary.md#goal-in-mind) to implement _something_.
+- We start with a [Goal](../thinking/Glossary.md#goal) to implement _something_.
 - We build an [Internal Model](../thinking/Glossary.md#internal-model) of how we're going to meet this goal (though coding, naturally)
 - Then, we find out how well our idea stands up when we [Meet Reality](../thinking/Glossary.md#meet-reality) and try it out in our code-test-run-debug cycle.
 - As we go, the main outcome is that we change reality, and create code, but along the way, we discover where our [Internal Model](../thinking/Glossary.md#internal-model) was wrong, in the form of surfacing [Hidden Risks](../thinking/Glossary.md#hidden-risk).
@@ -94,7 +94,7 @@ By having more people involved, the feedback loop will be longer than the two-ma
 
 ### Specialization
 
-One of the problems with a **SkunkWorks** approach is that you end up with more [Coordination Risk](../risks/Coordination-Risk.md) than you'd like, as your different skunk-teams end up with different [Internal Models](../thinking/Glossary.md#internal-model) and different [Goals](../thinking/Glossary.md#goal-in-mind).  
+One of the problems with a **SkunkWorks** approach is that you end up with more [Coordination Risk](../risks/Coordination-Risk.md) than you'd like, as your different skunk-teams end up with different [Internal Models](../thinking/Glossary.md#internal-model) and different [Goals](../thinking/Glossary.md#goal).  
 
 In large companies, this is called [Silo Mentality](https://en.wikipedia.org/wiki/Information_silo) - the tendency for lines of business to stop communicating and sharing with one another.  As you can imagine, this leads to a more [Complex](../risks/Complexity-Risk.md) and [bureaucratic](../risks/Process-Risk.md#bureaucracy) structure than would be optimal.
 

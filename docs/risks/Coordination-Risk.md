@@ -16,7 +16,7 @@ tweet: yes
 
 # Coordination Risk
 
-As in [Agency Risk](Agency-Risk.md), we are going to use the term _agent_, which refers to anything with [agency](Agency-Risk.md#software-processes) in a system to make decisions:  that is, an agent has an [Internal Model](../thinking/Glossary.md#internal-model) and can [take actions](../thinking/Glossary.md#taking-action) based on it.  Here, we work on the assumption that the agents _are_ working towards a common [Goal](../thinking/Glossary.md#goal-in-mind), even though in reality it's not always the case, as we saw in the section on [Agency Risk](Agency-Risk.md).
+As in [Agency Risk](Agency-Risk.md), we are going to use the term _agent_, which refers to anything with [agency](Agency-Risk.md#software-processes) in a system to make decisions:  that is, an agent has an [Internal Model](../thinking/Glossary.md#internal-model) and can [take actions](../thinking/Glossary.md#taking-action) based on it.  Here, we work on the assumption that the agents _are_ working towards a common [Goal](../thinking/Glossary.md#goal), even though in reality it's not always the case, as we saw in the section on [Agency Risk](Agency-Risk.md).
 
 [Coordination Risk](Coordination-Risk.md) is the risk that agents can fail to coordinate to meet their common goal and end up making things worse.<!-- tweet-end -->  [Coordination Risk](Coordination-Risk.md) is embodied in the phrase "Too Many Cooks Spoil The Broth":  more people, opinions or _agents_ often make results worse.
 
@@ -47,14 +47,14 @@ As you can see, by _sharing_, it's possible that the _total benefit_ is greater 
 
 Just two things are needed for competition to occur:
 
- - Multiple, Individual agents, trying to achieve [Goals](../thinking/Glossary.md#goal-in-mind).
+ - Multiple, Individual agents, trying to achieve [Goals](../thinking/Glossary.md#goal).
  - Scarce Resources, which the agents want to use as [Dependencies](Dependency-Risk.md).
 
 ### Coordination via Communication
 
 The only way that the agents can move away from competition towards coordination is via [Communication](Communication-Risk.md), and this is where their coordination problems begin.  
 
-[Coordination Risk](Coordination-Risk.md) commonly occurs where people have different ideas about how to achieve a [goal](../thinking/Glossary.md#goal-in-mind), and they have different ideas because they have different [Internal Models](../thinking/Glossary.md#internal-model).  As we saw in the section on [Communication Risk](Communication-Risk.md), we can only hope to synchronise [Internal Models](../thinking/Glossary.md#internal-model) if there are high-bandwidth [Channels](Communication-Risk.md#channels) available for communication. 
+[Coordination Risk](Coordination-Risk.md) commonly occurs where people have different ideas about how to achieve a [goal](../thinking/Glossary.md#goal), and they have different ideas because they have different [Internal Models](../thinking/Glossary.md#internal-model).  As we saw in the section on [Communication Risk](Communication-Risk.md), we can only hope to synchronise [Internal Models](../thinking/Glossary.md#internal-model) if there are high-bandwidth [Channels](Communication-Risk.md#channels) available for communication. 
 
 You might think, therefore, that this is just another type of [Communication Risk](Communication-Risk.md) problem, and that's often a part of it, but even with synchronized [Internal Models](../thinking/Glossary.md#internal-model), coordination risk can occur.  Imagine the example of people all trying to madly leave a burning building.  They all have the same information (the building is on fire).  If they coordinate, and leave in an orderly fashion, they might all get out.  If they don't, and there's a scramble for the door, more people might die.
 
@@ -85,7 +85,7 @@ Let's unpack this idea, and review some classic problems of coordination, none o
 
 ## Decision Making
 
-Within a team, [Coordination Risk](Coordination-Risk.md) is at its core about resolving [Internal Model](../thinking/Glossary.md#internal-model) conflicts in order that everyone can agree on a [Goal In Mind](../thinking/Glossary.md#goal-in-mind) and cooperate on getting it done.  Therefore, [Coordination Risk](Coordination-Risk.md) is worse on projects with more members, and worse in organisations with more staff.  
+Within a team, [Coordination Risk](Coordination-Risk.md) is at its core about resolving [Internal Model](../thinking/Glossary.md#internal-model) conflicts in order that everyone can agree on a [Goal](../thinking/Glossary.md#goal) and cooperate on getting it done.  Therefore, [Coordination Risk](Coordination-Risk.md) is worse on projects with more members, and worse in organisations with more staff.  
 
 As an individual, do you suffer from [Coordination Risk](Coordination-Risk.md) at all?  Maybe:  sometimes, you can feel "conflicted" about the best way to solve a problem.  And weirdly, usually _not thinking about it_ helps.  Sleeping too.  (Rich Hickey calls this "[Hammock Driven Development](https://www.youtube.com/watch?v=f84n5oFoZBc)").  This is probably because, unbeknownst to you, your subconscious is furiously communicating internally, trying to resolve these conflicts itself, and will let you know when it has come to a resolution.  
 
@@ -135,7 +135,7 @@ The job of harmonising this on a project would seem to fall to the team leader, 
 
 > "The forming–storming–norming–performing model of group development was first proposed by Bruce Tuckman in 1965, who said that these phases are all necessary and inevitable in order for the team to grow, face up to challenges, tackle problems, find solutions, plan work, and deliver results." - [Tuckman's Stages Of Group Development, _Wikipedia_](https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development)
 
-Specifically this describes a process whereby a new group will form and then be required to work together. In the process, they will have many _disputes_.  Ideally, the group will resolve these disputes internally and emerge as a team, with a common [Goal In Mind](../thinking/Glossary.md#goal-in-mind).
+Specifically this describes a process whereby a new group will form and then be required to work together. In the process, they will have many _disputes_.  Ideally, the group will resolve these disputes internally and emerge as a team, with a common [Goal](../thinking/Glossary.md#goal).
 
 Since [Coordination](Coordination-Risk.md) is about [Resource Allocation](Coordination-Risk.md#problems-of-coordination) the skills of staff can potentially be looked at as resources to allocate.  This means handling [Coordination Risk](Coordination-Risk.md) issues like:
 
