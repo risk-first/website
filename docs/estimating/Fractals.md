@@ -77,7 +77,7 @@ As you go on [Meeting Reality](../thinking/Glossary.md#meet-reality), the shape 
 
 Is it possible to estimate problems in the Fractal Shape domain?  The best you might be able to do is to match two competing objectives:
 
-- Building Product:  By building functionality you head towards your [Goal](../thinking/Glossary.md#goal-in-mind) on the [Risk Landscape](../thinking/Glossary.md#risk-landscape).  But how do you know this is the right goal?
+- Building Product:  By building functionality you head towards your [Goal](../thinking/Glossary.md#goal) on the [Risk Landscape](../thinking/Glossary.md#risk-landscape).  But how do you know this is the right goal?
 - [Meeting Reality](../thinking/Glossary.md#meet-reality):  By putting your product "out there" you find your customers and your niche in the market, and you explore the [Risk Landscape](../thinking/Glossary.md#risk-landscape).  But this takes time and effort away from _building product_.
 
 With this in mind, you estimate a useful amount of time to go round this cycle, fixing the time but letting the deliverable vary.

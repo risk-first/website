@@ -166,7 +166,7 @@ Well, no.  First, how to choose the time period? [Schedule Risk](../risks/Scarci
 
 Second, the strategy of picking the two-day action with the greatest [Payoff](../thinking/Glossary.md#payoff) is _often good_.  (After all, this is just [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent) and that's a perfectly good way for training [Machine Learning](https://en.wikipedia.org/wiki/Machine_learning) systems.)  However, just like following a river downhill from the top of a mountain will _often_ get you to the sea, it probably won't take the shortest path and sometimes you'll get stuck at a lake.  
 
-The choice of using gradient descent means that you have given up on [Goals](../thinking/Glossary.md#goal-in-mind):  essentially, we have here the difference between "Walking towards a destination" and "Walking downhill".  Or, if you like, a planned economy and a market economy.  But, we don't live in _either_: everyone lives in some mixture of the two:  our governments _have plans_ for big things like roads and hospitals, and taxes.  Other stuff, they leave to the whims of supply and demand.   A project ends up being the same.
+The choice of using gradient descent means that you have given up on [Goals](../thinking/Glossary.md#goal):  essentially, we have here the difference between "Walking towards a destination" and "Walking downhill".  Or, if you like, a planned economy and a market economy.  But, we don't live in _either_: everyone lives in some mixture of the two:  our governments _have plans_ for big things like roads and hospitals, and taxes.  Other stuff, they leave to the whims of supply and demand.   A project ends up being the same.
 
 ## Risk-First Estimating
 

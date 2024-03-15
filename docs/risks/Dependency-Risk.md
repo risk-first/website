@@ -111,7 +111,7 @@ Our economic system and our software systems exhibit the same tendency-towards-c
 
 ## Managing Dependency Risk
 
-Arguably, managing [Dependency Risk](Dependency-Risk.md) is _what Project Managers do_.  Their job is to meet the project's [Goal](../thinking/Glossary.md#goal-in-mind) by organising the available dependencies into some kind of useful order.  
+Arguably, managing [Dependency Risk](Dependency-Risk.md) is _what Project Managers do_.  Their job is to meet the project's [Goal](../thinking/Glossary.md#goal) by organising the available dependencies into some kind of useful order.  
 
 There are some tools for managing dependency risk:  [Gantt Charts](https://en.wikipedia.org/wiki/Gantt_chart) for example, arrange work according to the capacity of the resources (i.e. dependencies) available, but also the _dependencies between the tasks_.   If task **B** requires the outputs of task **A**, then clearly task **A** comes first and task **B** starts after it finishes.  We'll look at this more in [Process Risk](Process-Risk.md). 
 

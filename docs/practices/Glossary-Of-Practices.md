@@ -149,7 +149,7 @@ See:
 Writing a specification to describe how a piece of functionality should best mitigate [Feature Risk](../risks/Feature-Risk.md).  Also known as _design_.
 
 See:
- - [Development Process](../thinking/Development-Process.md#example-a-toy-process)
+ - [Development Process](../thinking/Development-Process.md#a-toy-process)
  - [Waterfall (One Size Fits No One)](thinking/One-Size-Fits-No-One.md)
 
 ### Redundancy / Horizontal Scaling
@@ -189,14 +189,14 @@ See:
 
 Mitigating [Feature Risk](../risks/Feature-Risk.md) by adding code to a project.  Can often be called _coding_ or _implementation_.
 
-_See: [Development Process](../thinking/Development-Process.md#example-a-toy-process)_
+_See: [Development Process](../thinking/Development-Process.md#a-toy-process)_
 
 ### Integration
 
 Combining different versions of a codebase together to check for consistency.  Also called [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration).
 
 See: 
-- [Development Process](../thinking/Development-Process.md#example-a-toy-process)_
+- [Development Process](../thinking/Development-Process.md#a-toy-process)_
 - [Production (Cadence)](../thinking/Cadence.md#production)
 
 ### User Acceptance Testing (UAT)
@@ -204,7 +204,7 @@ See:
 Completing a [Feedback Loop](../thinking/Cadence.md) in order to ascertain whether [Feature Risk](../risks/Feature-Risk.md) has been correctly addressed by new features.  Also called _verification_, _user feedback_ or _manual testing_.
 
 See: 
- - [Development Process](../thinking/Development-Process.md#example-a-toy-process)_
+ - [Development Process](../thinking/Development-Process.md#a-toy-process)_
  - [User Acceptance Testing (Meeting Reality)](../thinking/Meeting-Reality.md#example-user-acceptance-testing-uat)
  - [Manual Testing](../thinking/Cadence.md#development-cycle-time) 
  - [Waterfall (One Size Fits No One)](thinking/One-Size-Fits-No-One.md) 
@@ -214,7 +214,7 @@ See:
 The act of moving in-development software to being in production, so that clients can make use of it.
 
 See: 
-- [Development Process](../thinking/Development-Process.md#example-a-toy-process)
+- [Development Process](../thinking/Development-Process.md#a-toy-process)
 - [Consider Payoff](../thinking/Consider-Payoff.md#example-3-continue-testing-or-release)
 - [Production (Cadence)](../thinking/Cadence.md#production)
 
@@ -246,8 +246,8 @@ See:
 Writing extra (test) code in the project which can automatically check that the (main, business logic) code works correctly.  Used to mitigate [Regression Risk](../risks/Feature-Risk.md#regression-risk) and [Implementation Risk](../risks/Feature-Risk.md#implementation-risk) in a short-cycle feedback loop.
 
 See: 
- - [Development Process](../thinking/Development-Process.md#example-a-toy-process)
- - [Unit Testing (Meeting Reality)](../thinking/Meeting-Reality.md#example-unit-testing)
+ - [Development Process](../thinking/Development-Process.md#a-toy-process)
+ - [Unit Testing (Meeting Reality)](../thinking/Meeting-Reality.md#example-automation)
 
 ### Operation / Maintenance
 

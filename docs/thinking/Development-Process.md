@@ -21,7 +21,7 @@ tweet: yes
 
 In [A Simple Scenario](A-Simple-Scenario.md) we introduced some terms for talking about risk (such as [Attendant Risk](../thinking/Glossary.md#attendant-risk), [Hidden Risk](../thinking/Glossary.md#attendant-risk) and the [Internal Model](../thinking/Glossary.md#internal-model)).  
 
-We've also introduced a notation in the form of [Risk-First Diagrams](./Risk-First-Diagrams.md) which allows us to represent the ways in which we can change the risks by [Taking Action](./Glossary.md#take-action).
+We've also introduced a notation in the form of [Risk-First Diagrams](./Risk-First-Diagrams.md) which allows us to represent the ways in which we can change the risks by [Taking Action](./Glossary.md#taking-action).
 
 Now, we are going to start applying our new terminology to software.  In the example below, we'll look at a "toy" process and use it for developing a new feature on a software project and see how our risk model informs it.
 
@@ -110,7 +110,7 @@ This process of evolving the feature request into a requirement is the BA's job.
 
 ### Code And Unit Test
 
-The next stage for our feature, **Feature X** is that it gets coded and some tests get written.  Let's look at how our [Goal In Mind](../thinking/Glossary.md#goal-in-mind) meets a new reality:   this time it's the reality of a pre-existing codebase, which has it's own internal logic.
+The next stage for our feature, **Feature X** is that it gets coded and some tests get written.  Let's look at how our [Goal](../thinking/Glossary.md#goal) meets a new reality:   this time it's the reality of a pre-existing codebase, which has it's own internal logic.
 
 As the developer begins coding the feature in the software, they will start with an [Internal Model](../thinking/Glossary.md#internal-model) of the software, and how the code fits into it.  But, in the process of implementing it, they are likely to learn about the codebase, and their [Internal Model](../thinking/Glossary.md#internal-model) will develop.  
 
@@ -153,7 +153,7 @@ Here are a few quick observations about managing risk which you are revealed bot
  
 So, what does this kind of Risk-First analysis tell us about _development processes in general_?  Below are four conclusions you can take away from the chapter, but which are all major themes of Risk-First that we'll be developing later:
 
-**First**, the people who set up the development process _didn't know_ about these _exact_ risks, but they knew the _shape that the risks take_.   The process builds "nets" for the different kinds of [Hidden Risks](../thinking/Glossary.md#hidden-risk) without knowing exactly what they are.  
+**First**, the people who set up the development process _didn't know_ about these _exact_ risks, but they knew the _shape that the risks take_.   The process builds "nets" for the different kinds of [Hidden Risks](../thinking/Glossary.md#hidden-risk) without knowing exactly what they are.  In order to build these nets, we have to be able to categorise the types of risk we face.  This is something we'll look at in the [Risks](../risks/Start.md) part of Risk-First.
 
 **Second**, are these really risks, or are they _problems we just didn't know about_?  I am using the terms interchangeably, to a certain extent.  Even when you know you have a problem, it's still a risk to your deadline until it's solved.  So, when does a risk become a problem?  Is a problem still just a schedule-risk, or cost-risk?  We'll come back to this question soon.
 

@@ -28,7 +28,7 @@ For a moment, forget about software completely and think about _any endeavour at
 
 ## Goal In Mind
 
-Now, in this endeavour, we want to be successful.  That is to say, we have a **[Goal In Mind](../thinking/Glossary.md#goal-in-mind)**:  we want our friends to go home satisfied after a decent meal and not to feel hungry.   As a bonus, we might also want to spend time talking with them before and during the meal.  So, now to achieve our [Goal In Mind](../thinking/Glossary.md#goal-in-mind) we *probably* have to do some tasks.  
+Now, in this endeavour, we want to be successful.  That is to say, we have a **[Goal](../thinking/Glossary.md#goal)** in mind:  we want our friends to go home satisfied after a decent meal and not to feel hungry.   As a bonus, we might also want to spend time talking with them before and during the meal.  So, now to achieve our [Goal](../thinking/Glossary.md#goal) we *probably* have to do some tasks.  
 
 Since our goal only exists _in our head_, we can say it is part of our **[Internal Model](../thinking/Glossary.md#internal-model)** of the world.  That is, the model we have of reality.  This model extends to _predicting what will happen_.
 
@@ -38,7 +38,7 @@ If we do nothing, our friends will turn up and maybe there's nothing in the hous
 
 These _nagging doubts_ that are going through your head are what I'll call the [Attendant Risks](../thinking/Glossary.md#attendant-risk):  they're the ones that will occur to you as you start to think about what will happen. 
 
-![Goal In Mind, with the risks you know about](/img/generated/introduction/goal_in_mind.png)
+![Goal, with the risks you know about](/img/generated/introduction/goal_in_mind.png)
 
 When we go about preparing for this wonderful evening, we can choose to deal with these risks:  shop for the ingredients in advance, prepare parts of the meal and maybe practice the cooking in advance.  Or, we can wing it and sometimes we'll get lucky.
 
@@ -50,7 +50,7 @@ How much effort we expend on these [Attendant Risks](../thinking/Glossary.md#att
 
 > "Reports that say that something hasn't happened are always interesting to me, because as we know, there are known knowns; there are things we know we know. We also know there are known unknowns; that is to say we know there are some things we do not know. But there are also unknown unknowns—the ones we don't know we don't know. And if one looks throughout the history of our country and other free countries, it is the latter category that tend to be the difficult ones." - [Donald Rumsfeld, _Wikipedia_](https://en.wikipedia.org/wiki/There_are_known_knowns)
 
-![Goal In Mind, the risks you know about and the ones you don't](/img/generated/introduction/hidden_risks.png)
+![Goal, the risks you know about and the ones you don't](/img/generated/introduction/hidden_risks.png)
 
 Different people evaluate risks differently and they'll also _know_ about different risks.  What is an [Attendant Risk](../thinking/Glossary.md#attendant-risk) for one person is a [Hidden Risk](../thinking/Glossary.md#attendant-risk) for another.     
 
@@ -70,6 +70,6 @@ If we had a good [Internal Model](../thinking/Glossary.md#internal-model) and [t
 
 ## On To Software
 
-Here, we've introduced some new terms that we're going to use a lot:  [Meet Reality](../thinking/Glossary.md#meet-reality), [Attendant Risk](../thinking/Glossary.md#attendant-risk), [Hidden Risk](../thinking/Glossary.md#attendant-risk), [Internal Model](../thinking/Glossary.md#internal-model), [Taking Action](../thinking/Glossary.md#taking-action) and [Goal In Mind](../thinking/Glossary.md#goal-in-mind).  And, we've applied them in a simple scenario.
+Here, we've introduced some new terms that we're going to use a lot:  [Meet Reality](../thinking/Glossary.md#meet-reality), [Attendant Risk](../thinking/Glossary.md#attendant-risk), [Hidden Risk](../thinking/Glossary.md#attendant-risk), [Internal Model](../thinking/Glossary.md#internal-model), [Taking Action](../thinking/Glossary.md#taking-action) and [Goal](../thinking/Glossary.md#goal).  And, we've applied them in a simple scenario.
 
 Next, we're going to look at how we represent these ideas graphically, using [Risk-First Diagrams](Risk-First-Diagrams.md).

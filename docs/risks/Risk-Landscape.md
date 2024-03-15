@@ -59,7 +59,7 @@ Below is a table outlining the different risks we'll see.  There _is_ an order t
 |[Software Dependency Risk](Software-Dependency-Risk.md)|The risk of depending on a software library, service or function.|    
 |[Process Risk](Process-Risk.md)                        |When you depend on a business process, or human process to give you something you need.|
 |[Boundary Risk](Boundary-Risk.md)                      |Risks due to making decisions that limit your choices later on.  Sometimes, you go the wrong way on the [Risk Landscape](Risk-Landscape.md) and it's hard to get back to where you want to be.|            
-|[Agency Risk](Agency-Risk.md)                          |Risks that staff have their own [Goals](../thinking/Glossary.md#goal-in-mind), which might not align with those of the project or team.|
+|[Agency Risk](Agency-Risk.md)                          |Risks that staff have their own [Goals](../thinking/Glossary.md#goal), which might not align with those of the project or team.|
 |[Coordination Risk](Coordination-Risk.md)              |Risks due to the fact that systems contain multiple agents, which need to work together.|       
 |[Map And Territory Risk](Map-And-Territory-Risk.md)    |Risks due to the fact that people don't see the world as it really is. (After all, they're working off different, imperfect [Internal Models](../thinking/Glossary.md#internal-model).)|  
 |[Operational Risk](Operational-Risk.md)                |Software is embedded in a system containing people, buildings, machines and other services.  Operational risk considers this wider picture of risk associated with running a software service or business in the real world.|
