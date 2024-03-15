@@ -102,21 +102,25 @@ In the previous sections, we introduced something of a "diagram language" of ris
 
 Let's try and back up that assertion with a few more examples:
 
-| **Risk** (Starting Point)                                             | **Action** (Movement)  | **Goal** (Destination) |
-|-----------------------------------------------------------------------|------------------------|------------------------|
-| Mitigate the risk of something getting in / out                       | Build a Wall           | Safety                 |
-| Mitigate the risk of looking technically inferior during the cold war | Land a man on the moon | Superiority            |
-| Mitigate the risks/problems of where you currently live               | Move House             | Comfort                |
+| **Risk**                                                              | **Goal**    | **Action**             |
+|-----------------------------------------------------------------------|-------------|------------------------|
+| Risk of someone breaking in                       | Feeling of safety      | Install a home security system           |
+| Risk of looking technically inferior during the cold war | Feeling of technical superiority | Land a man on the moon |
+| Risk of the market not requiring your skills             | Job security     | Retrain       |
 
-There is a certain "interplay" between the concepts of risks, actions and goals.  After all, on the [Risk Landscape](../thinking/Glossary.md#risk-landscape) they correspond to a starting point, a movement, and a destination.  From a redundancy perspective, any one of these can be determined by knowing the other two.  
+There is a certain "interplay" between the concepts of risks, actions and goals. On the [Risk Landscape](../thinking/Glossary.md#risk-landscape), goals and risks correspond to  starting points and destinations, whilst the action is moving on the risk landscape.  
 
-Psychologically, humans are very goal-driven:  they like to know where they're going, and are good at organising around a goal (like "landing a man on the moon").  However, by focusing on goals ("solutionizing") it's easy to ignore alternatives.  
+| **Starting Point** | **Movement** | **End Point**                  |
+|--------------------|--------------|--------------------------------|
+| Goal, risk         | Action       | Attendant risk, achieved goal  |
 
-By focusing on "Risk-First", we don't ignore the reasons we're doing something.  
+From a redundancy perspective, if you know any two of the start, end or movement you can figure out what the third would be.  At different times, people like to focus on different parts of this.  Sometimes, humans are very goal-driven:  they like to know where they're going, and are good at organising around a goal (like "landing a man on the moon").  However, by focusing on goals ("solutionizing") it's easy to ignore alternatives.  Sometimes, we focus on the risks.   As politicians know, fear is a great motivator for voting.  
+
+But risks, goals and actions are deeply connected.  By focusing on "Risk-First", we don't ignore the reasons we're doing something.  
 
 ## Summary
 
-A Risk-First diagram represents a starting point (a risk), some movement (an action to take) and a destination (the goal).  But frequently our usual tools will only show us one of these parts:  the RAID log is focusing on the starting point, and some actions (decisions).  Issues (in an issue log) often focus on the action and possibly the risk.   In a way, this is fine as you can derive the third by knowing the other two.
+A Risk-First diagram represents a starting point (a risk, a goal), some movement (an action to take) and a destination (mitigated risk, completed goals, new attendant risks).  But frequently our usual tools will only show us one of these parts:  the RAID log is focusing on the starting point, and some actions (decisions).  Issues (in an issue log) often focus on the action and possibly the risk.   In a way, this is fine as you can derive the third by knowing the other two.
 
 However, where this becomes problematic is when trying to decide what work to do:  is the expected destination _worth_ the effort of the action?
 
