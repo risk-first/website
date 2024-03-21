@@ -53,8 +53,8 @@ But, there is always the opposite opinion:  [You _Are_ Gonna Need It](http://wik
 Now, we can say:  do the work _if there is a worthwhile [Payoff](../thinking/Glossary.md#payoff)_.  
 
  - Logging statements are _good_, because otherwise, you're increasing the risk that in production, no one will be able to understand _how the software went wrong_.
- - However, adding them takes time, which might introduce [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk).
- - Also, we have to manage larger log files on our production systems.
+ - However, adding them takes time, which might [risk us not hitting our schedule](../risks/Scarcity-Risk.md#schedule-risk).
+ - Also, we have to manage larger log files on our production systems.  _Too much logging_ is just noise, and makes it harder to figure out what went wrong.
  
 So, it's a trade-off: continue adding logging statements so long as you feel that overall, the activity [pays off](../thinking/Glossary.md#payoff) reducing overall risk.
 
@@ -62,7 +62,7 @@ So, it's a trade-off: continue adding logging statements so long as you feel tha
 
 Another mantra from Kent Beck (originator of the [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) methodology), is "Do The Simplest Thing That Could Possibly Work", which is closely related to YAGNI and is an excellent razor for avoiding over-engineering.  
 
-At the same time, by adding "Could Possibly", Kent is encouraging us to go beyond straightforward iteration and use our brains to pick apart the simple solutions, avoiding them if we can logically determine when they would fail. 
+At the same time, by adding "Could Possibly", Beck is encouraging us to go beyond straightforward iteration and use our brains to pick apart the simple solutions, avoiding them if we can logically determine when they would fail. 
 
 Our risk-centric view of this strategy would be:
 
@@ -78,14 +78,14 @@ So, "Do The Simplest Thing That Could Possibly Work" is really a helpful guideli
  
 ### Example 3: Continue Testing or Release?
 
-You're on a project and you're faced with the decision - release now or do more testing?  
+You're on a project and you're faced with the decision - release now or do more User Acceptance Testing (UAT)?  
 
-Obviously, in the ideal world, we want to get to the place on the [Risk Landscape](../thinking/Glossary.md#risk-landscape) where we have a tested, bug-free system in production.  But we're not there yet, and we have funding pressure to get the software into the hands of some paying customers.  The table below shows an example: 
+Obviously, in the ideal world, we want to get to the place on the [Risk Landscape](../thinking/Glossary.md#risk-landscape) where we have a tested, bug-free system in production.  But we're not there yet, and we have funding pressure to get the software into the hands of some paying customers.  But what if we disappoint the customers and create bad feeling?   The table below shows an example: 
 
-|Risk Managed          |Action               |Attendant Risk                           |Payoff             | 
-|----------------------|---------------------|-----------------------------------------|-------------------|
-|Funding Risk          |Go Live              |Reputational Risk, Operational Risk      |MEDIUM             |
-|Implementation Risk   |User Acceptance Test |Worse Funding Risk, Operational Risk     |LOW                |
+|Risk Managed          |Action                       |Attendant Risk                           |Payoff             | 
+|----------------------|-----------------------------|-----------------------------------------|-------------------|
+|Funding Risk          |**Go Live**                  |Reputational Risk, Operational Risk      |MEDIUM             |
+|Implementation Risk   |**Another Round of UAT**     |Worse Funding Risk, Operational Risk     |LOW                |
 
 This is (a simplification of) the dilemma of lots of software projects - _test further_, to reduce the risk of users discovering bugs ([Implementation Risk](../risks/Feature-Risk.md#implementation-risk)) which would cause us reputational damage, or _get the release done_ and reduce our [Funding Risk](../risks/Scarcity-Risk.md#funding-risk) by getting paying clients sooner. 
 
