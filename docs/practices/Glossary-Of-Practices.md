@@ -199,6 +199,14 @@ See:
 - [Development Process](../thinking/Development-Process.md#a-toy-process)_
 - [Production (Cadence)](../thinking/Cadence.md#production)
 
+### Beta Test
+
+Beta testing is the process of testing an unreleased piece of software with a portion of its intended audience. 
+
+See:
+
+ - [Consider Payoff](../thinking/Consider-Payoff.md)
+ 
 ### User Acceptance Testing (UAT)
 
 Completing a [Feedback Loop](../thinking/Cadence.md) in order to ascertain whether [Feature Risk](../risks/Feature-Risk.md) has been correctly addressed by new features.  Also called _verification_, _user feedback_ or _manual testing_.
@@ -316,4 +324,19 @@ See:
 
  - [Operations Management](../risks/Operational-Risk.md#operations-management)
  - [Planning](../risks/Operational-Risk.md#planning)
+
+### Dog-Fooding
+
+_Eating your own dog food_ is the process by which you use your product or service internally in order to get more feedback about how well it works.
+
+See:
+
+ - [Consider Payoff](../thinking/Consider-Payoff.md)
  
+### Feature Toggle
+
+A condition within the code enables or disables a feature during runtime, perhaps for a certain group of users. 
+
+See:
+
+ - [Consider Payoff](../thinking/Consider-Payoff.md)

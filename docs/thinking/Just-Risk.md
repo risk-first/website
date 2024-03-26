@@ -98,7 +98,7 @@ In the previous sections, we introduced something of a "diagram language" of ris
 
 ![Risk-First Diagram Language](/img/generated/introduction/all_risk_management_language.png)
  
-[Goals](../thinking/Glossary.md#goal) live inside our [Internal Model](../thinking/Glossary.md#internal-model), just like Risks.  It turns out, that functionally, Goals and Risks are equivalent.  For example, The Goal of "Implementing Feature X" is equivalent to mitigating "Risk of Feature X not being present".
+[Goals](../thinking/Glossary.md#goal) live inside our [Internal Model](../thinking/Glossary.md#internal-model), just like Risks.  Functionally, Goals and Risks are equivalent.  For example, the Goal of "Implementing Feature X" is equivalent to mitigating "Risk of Feature X not being present".
 
 Let's try and back up that assertion with a few more examples:
 
