@@ -105,8 +105,14 @@ The important take-away here is that you don't have to accept the dilemma as sta
 
 The diagram above shows our decision as _moves on the [Risk Landscape](../thinking/Glossary.md#risk-landscape)_.  Whether you "Go Live" first, or "UAT" first makes a difference to where you will end up.  Is there a further action you can take to get you from the "Dead End" to the "Goal"?  Perhaps. 
  
-## What To Do?
+## Parting Ways With Agile
 
-In reality, payoff is made more tricky because often the actions you take might depend on each other, the payoff might not be immediate and (unlike making a bet in the real world) you can't be certain what the payoff will be in advance.  Nevertheless, this is a really useful concept in software engineering because it clarifies the decision you're making.   
+In reality, payoff is made more tricky because often the actions you take might depend on each other, the payoff might not be immediate and (unlike making a bet in the real world) you can't be certain what the payoff will be in advance.  Nevertheless, this is a really useful concept in software engineering because it clarifies the decision you're making.
 
-In order to make the most of payoff, first you need to make sure you're [Tracking Risk](Track-Risk.md) properly.
+Many Agile frameworks such as [Scrum](../bets/Purpose-Development-Team#case-2-scrum) place a lot of emphasis on estimating and time-boxing work:  trying to work out when you're going to deliver something and sticking to it.  But Risk-First is suggesting a totally different focus:  factors like _time taken to deliver_ and _coordinating the completion of work_ are just risks to consider along with all the others.  
+
+The most valuable project management skill is being able to chart a course which minimises risk.  Sometimes, that will mean [hitting a deadline](../risks/Deadline-Risk.md), but equally it could be [reducing codebase complexity](../risks/Complexity-Risk.md), [making a feature more accessible](../risks/Feature-Risk.md#feature-access-risk) or [removing problematic dependencies](../risks/Software-Dependency-Risk.md).
+
+The most important skill is to be able to _weigh up the risks_ and decide which course of action gives you the greatest payoff.
+
+And in order to make the most of payoff, first you need to make sure you're [tracking those risks](Track-Risk.md) in the first place.
