@@ -16,13 +16,13 @@ tweet: yes
 
 # Tracking Risks
 
-Here, I am going to re-cap on some pre-existing risk management theory in order to set the scene for the next section which heads back to looking at risk on software projects.  
+In this section we're going to look at the importance of keeping track of risks.  In fact, I'll make the case that because this is so important, you're already doing it, whether you realise it or not. 
 
-![Discount](/img/generated/principles/track-risks.png)
+![Tracking Risks](/img/generated/principles/track-risks.png)
 
 ## Risk Registers
 
-Most developers are familiar with recording issues in an issue tracker.  For all of the same reasons, it's good practice to record the risks you face running a project or an operation in a [Risk Register](https://en.wikipedia.org/wiki/Risk_register).  Typically, this will include for each risk:
+Most developers are familiar with recording issues in an issue tracker.  As we saw in [Just Risk](Just-Risk.md), _issues are a type of risk_, so it makes sense that issue trackers could be used for recording all project risks.   Within risk management, this is actually called a [Risk Register](https://en.wikipedia.org/wiki/Risk_register).  Typically, this will include for each risk:
 
  - The **name** of the risk, or other identifier.
  - A **categories** to which the risk belongs (this is the focus of the [Risk Landscape](../risks/Risk-Landscape.md) section in Part 2).
@@ -30,27 +30,35 @@ Most developers are familiar with recording issues in an issue tracker.  For all
  - Some estimate for the **Impact**, **Probability** or **Risk Score** of the risk.
  - Proposed actions and a log of the progress made to manage the risk.
 
-Four quick points about this description:
+If you work in software development and are familiar with [a product backlog](https://en.wikipedia.org/wiki/Product_backlog) this should be very familiar. However, there are four quick points I want to draw your attention to before moving on.
 
 ### 1. A Continuum of Formality
 
-In the [planning-a-dinner-party example](Meeting-Reality.md) the Risk Register happened *entirely in your head*.  There is a continuum all the way from "in your head" through "using a spreadsheet" to dedicated Risk Management software.    
+In the [planning-a-dinner-party example](Meeting-Reality.md) the Risk Register happened *entirely in your head*.  There is a continuum all the way from "in your head" through "using a spreadsheet" to dedicated Risk Management software.  
 
-It's also going to be useful _in conversation_ and this is where the value of the Risk-First approach is: providing a vocabulary to _talk about risks_ with your team.  
+When you have a team of people trying to coordinate, then its very important that this stuff is written down in a "single source of truth" somewhere that everyone on the team can add to and view.  Having a list of named risks (tasks, whatever) becomes useful when trying to decide what to do next and for dividing up work within the team.  It's no good everyone having a different in-head risk register as you'll never find agreement on what things to tackle next.
 
 ### 2. Probability And Impact
 
-**Probability** is how likely something is to happen, whilst **Impact** is the cost (usually financial) when it does happen.
+Often, an issue tracking tool will allow you to arrange tasks in priority order.  Developers then pick the first (highest priority) item off the list and then work on it.  
 
-In a financial context (or a gambling one), we can consider the overall **Risk Score** as being the sum of the **Impact** of each outcome multiplied by its **Probability**.  For example, if you buy a 1-Euro ticket in a raffle, there are two outcomes:  win or lose.  The impact of _winning_ would be (say) a hundred Euros, but the **probability** might be 1 in 200.  The impact of _losing_ would be the loss of 1 Euro, with 
+But the description of the risk register refers to **Impact** and **Probability**:  
 
+- **Probability** is how likely something is to happen, whilst 
+- **Impact** is the cost (usually financial) when it does happen.
 
-|Outcome        |Impact         |Probabilty        |Risk Score    |
-|---------------|---------------|------------------|--------------|
-|Win            |+ 99 EUR       |1 in 200          |.5 EUR        |
-|Lose           |-  1 EUR       |199 in 200        |-.99 EUR      |
+Let's look at an example.  In a financial context (or a gambling one), we can consider the overall **Risk Score** as being the product of the **Impact** of each outcome and its **Probability**.  For example, if you buy a 1-Euro ticket in a raffle, there are two outcomes:  win or lose.  The impact of _winning_ would be (say) a hundred Euros, but the **probability** might be 1 in 200.  The impact of _losing_ would be the loss of 1 Euro, as summarised in the table below. 
+
+|Outcome        |Impact         |Probability        |Risk Score    |
+|---------------|---------------|-------------------|--------------|
+|Win            |+ 99 EUR       |1 in 200           |.5 EUR        |
+|Lose           |-  1 EUR       |199 in 200         |-.99 EUR      |
 
 Risk Management in the finance industry _starts_ here and gets more complex.  But often (especially on a software project), it's better to skip all this and just estimate a Risk Score.  This is because if you think about "impact", it implies a definite, discrete event occurring (or not occurring) and asks you then to consider the probability of that. 
+
+So the second point to take away is - what is exactly happening when we set the priority of items in our backlog?  Are we arranging them by **Impact**, **Probability**, **Risk Score** or are we looking also at the [action we would take](Glossary.md#take-action) and factoring in the [Payoff](Payoff.md)?  
+
+We'll come back to this in a minute.
 
 ### 3. Risk And Uncertainty
 
@@ -60,27 +68,43 @@ I am using **risk** everywhere because later we will talk about specific risks (
 
 Additionally there is pre-existing usage in Banking of terms like [Operational Risk](https://en.wikipedia.org/wiki/Operational_risk) or [Reputational risk](https://www.investopedia.com/terms/r/reputational-risk.asp) which are also not really a-priori measurable.
 
-(Later, we'll dig into [Health](Health.md), which puts this on a better foundation.)
+Later, we'll dig into [Health](Health.md), which puts this on a better foundation.
 
-### 4. A Bug Tracker Is Also A Risk Register
+### 4. An Issue Tracker Is Also A Risk Register
 
-As covered in [Just Risk](Just-Risk.md), we know that _all work_ is managing risk.  So therefore it stands to reason that if you are using a bug tracker then actually you are tracking risks.  After all, bugs are capturing the risk that:
+As covered in [Just Risk](Just-Risk.md), we know that _all work_ is managing risk.  So therefore it stands to reason that if you are using an issue tracker then actually you are tracking risks.  After all, issues are capturing the risk that:
 
  - your customers stop using your product
  - someone is harmed by your product
  - you suffer loss-of-reputation from some issue with your product
  
-... and so on.  Prioritising the bugs in the tracker is a prioritisation _by risk_.
+... and so on.  Sometimes, your issue tracker will have fields for Probability and Impact or allow you to set up custom fields which might help focus your team's mind on risks.  
 
-## Risk Matrices
+Much more likely, it will have a field for _priority_, or allow the ordering of issues by priority.  This can lead to some interesting discussions, as it's often not clear what people mean by priority.  
+
+ - When someone says "this should be low priority as it's very unlikely to occur" then they're making a statement about **Probability**. 
+ - When someone says "this should be low priority because no one is going to care if we fix it" then they're making a statement about **Impact**.
+ - When someone says "this should be high priority as its a quick win" then maybe they're talking about [Payoff](Glossary.md#payoff).
+
+## Visualising Risks
 
 ![Risk Matrix of Dinner Party Risks](/img/generated/introduction/risk_matrix.png)
 
-A risk matrix presents a graphical view on where risks exist.  The diagram above is an example, showing the risks from the dinner party in the [A Simple Scenario](A-Simple-Scenario.md) section.
+A risk matrix presents a graphical view on where risks exist.  The diagram above is an example, showing the risks from the dinner party in the [A Simple Scenario](A-Simple-Scenario.md) section.  The useful thing about this visualisation is it helps focus attention on the risks at the top and to the right - those with the biggest impact and probability.
 
-This type of graphic is _helpful_ in deciding what to do next, although alternatively, you can graph the overall **Risk Score** against the [Payoff](../thinking/Glossary.md#payoff).  Easily mitigated risk (on the right) and worse risks (at the top) can therefore be dealt with first (hopefully).
+Risks at the bottom or left side of the diagram are candidates for being ignored or simply "accepted" (which we'll come to in a [later section](De-Risking#ignore--accept)).  If you're using something like [Scrum](../practices/Glossary-Of-Practices.md#scrum), then these might be issues that you remove in the process of [backlog refinement](../practices/Glossary-Of-Practices.md#backlog-refinement).
+
+## Incorporating Payoff
+
+The diagram above is _helpful_ in deciding what to focus on next, but it doesn't consider [Payoff](../thinking/Glossary.md#payoff).  The reason for this is that up until this point, we've been tracking risks but not necessarily figuring out what to do about them.   Quite often when I raise an issue on a project I will also include the details of the fix for that issue, or maybe I'll _only_ include the details of the fix.    
+
+For example, let's say I raise an issue saying that I want a button to sort an access control list by the surnames of the users in the list.  What am I really getting at here?   This could be a solution to the problem that _I'm wasting time looking for users in a list_.  Alternatively, it could be trying to solve the problem that _I'm struggling to keep the right people on the list_.  Or maybe both.  The risk of the former is around wasted time (for me) but the risk of the latter might be a security risk and might be higher priority.  
+
+Although I'm asking for a sort button, there are other ways to solve this problem: a search feature might work even better and the ability to cut-and-paste the user list so that I can put it into a text editor (which would provide the sort and search features instead) might be a perfectly good work-around.   Coming up with effective solutions to risks is where design comes in.  
 
 ![Risk Register of Dinner Party Risks, Considering Payoff](/img/generated/introduction/risk_matrix_2.png)
+
+Going back to the dinner party example, let's graph the overall **Risk Score** against the [Payoff](../thinking/Glossary.md#payoff).  Easily mitigated risk (on the right) is "low hanging fruit".   Worse risks (at the top) should be dealt with first.
 
 ## Unknown Unknowns
 
@@ -97,6 +121,8 @@ Donald Rumsfeld's famous [Known Knowns](https://en.wikipedia.org/wiki/There_are_
 
 ## Out of the Window
 
-Carefully tracking risks with a matrix or in a risk register is great when the going is good.  
+In this section, we've looked at a _continuum of formality_ of risk tracking.  Going from "in your head" (like the dinner party) through "using an issue tracker" and on to looking at visualisations to help understand which are the key risks to focus on.  If you are leading a development project, you will need to decide how formal a process you need for tracking risks and this will depend on the nature of the project.   Often, this will depend not just on your _own_ requirements but those of the project's stakeholders too, who will likely want to see that you are dealing with risk responsibly.
 
-But all this goes south when you hit [Crisis Mode](Crisis-Mode.md), right?
+Lots of projects start with good intentions.  Carefully tracking risks with a matrix or in a risk register is great when the going is good.  But then when the project is hit with delays everything goes out of the window.
+
+In the next section, on [Crisis Mode](Crisis-Mode.md) we'll see that actually risk management is _still occurring_, but in a subtly different way.

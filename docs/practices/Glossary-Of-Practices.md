@@ -23,7 +23,23 @@ See:
 
  - [Refactoring](../risks/Complexity-Risk.md#refactoring)
  - [The Power of Abstractions](../risks/Staging-And-Classifying.md#the-power-of-abstractions)
+
+### Scrum
+
+Agile development methodology.
+
+See:
+ - [Fixing Scrum](../estimating/Fixing-Scrum.md)
+ - [On Story Points](../estimating/On-Story-Points.md)
  
+### Backlog Refinement
+
+> "Backlog refinement is a process by which team members revise and prioritize a backlog for future sprints.[31] It can be done as a separate stage done before the beginning of a new sprint or as a continuous process that team members work on by themselves. Backlog refinement can include the breaking down of large tasks into smaller and clearer ones, the clarification of success criteria, and the revision of changing priorities and returns. " - [Scrum, _Wikipedia_]https://en.wikipedia.org/wiki/Scrum_(software_development)#Backlog_refinement
+
+See: 
+
+ - [Tracking Risks](../thinking/Track-Risk.md#visualising-risks)
+ - Scrum(#scrum)
  
 ### Standardization
 
