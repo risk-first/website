@@ -102,11 +102,13 @@ For example, let's say I raise an issue saying that I want a button to sort an a
 
 Although I'm asking for a sort button, there are other ways to solve this problem: a search feature might work even better and the ability to cut-and-paste the user list so that I can put it into a text editor (which would provide the sort and search features instead) might be a perfectly good work-around.   Coming up with effective solutions to risks is where design comes in.  
 
-![Risk Register of Dinner Party Risks, Considering Payoff](/img/generated/introduction/risk_matrix_2.png)
+![Payoff of different actions to take against the risk of ruining the food](/img/generated/introduction/risk_matrix_2.png)
 
-Going back to the dinner party example, let's graph the overall **Risk Score** against the [Payoff](../thinking/Glossary.md#payoff).  Easily mitigated risk (on the right) is "low hanging fruit".   Worse risks (at the top) should be dealt with first.
+Going back to the dinner party example, the above diagram considers solutions to the problem of _ruining the food_.  There are a number of alternative solutions here:  Option 1 is deemed the best as it has the least attendant risk, but option 2 also improves things.  Option 5 might be prohibitively expensive, and option 4 might run the risk of being found out by the guests!   Option 3 doesn't change things in the slightest.  
 
-## Unknown Unknowns
+If I added actions for all the other risks (maybe buying extra snacks, checking the guest's dietary restrictions etc) then this chart gets quite busy.  But clearly, actions to the top and left are the ones we should consider taking, since they have the best payoff.   Those below and to the right of the diagonal line are non-starters as they make our situation worse.
+
+## Criticism
 
 One of the criticisms of the [Risk Register](Track-Risk.md#risk-registers) approach is that of [mistaking the map for the territory](../risks/Map-And-Territory-Risk.md).  That is, mistakenly believing that what's on the Risk Register _is all there is_.  
 
