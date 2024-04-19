@@ -3,60 +3,69 @@
 	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
 	xmlns="http://www.kite9.org/schema/adl"
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
-    style="--kite9-layout: right; ">
+	xmlns:pp="http://www.kite9.org/schema/post-processor"
+	style="--kite9-layout: right; " xmlns:svg="http://www.w3.org/2000/svg">
 
-    <table>
-      <cell style=" --kite9-occupies: 0 0; ">
-        <box style="--kite9-margin: 4pt;">
-          <axis style="--kite9-type: svg; --kite9-margin: 6pt; ">
-            <svg:text transform="rotate(-90)">Importance</svg:text>
-          </axis>
-        </box>
-      </cell>
-      <cell style=" --kite9-occupies: 1 0; ">
-        <box style="--kite9-margin: 4pt; ">
-          <matrix style="--kite9-type: container; --kite9-min-size: 200pt 200pt;">
-            <symbol class="decal" theChar="1" ox="20" oy="80"/>
-            <symbol class="decal" theChar="2" ox="40" oy="120"/>
-            <symbol class="decal" theChar="3" ox="150" oy="10"/>
-            <symbol class="decal" theChar="4" ox="20" oy="15"/>
-            <symbol class="decal" theChar="5" ox="60" oy="20"/>
-          </matrix>
-        </box>
-      
-      </cell>
-      
-      <cell style=" --kite9-occupies: 1 1; ">
-        <box style="--kite9-margin: 4pt; ">
-          <axis style="--kite9-type: svg; --kite9-margin: 6pt; ">
-            <svg:text>Probability</svg:text>
-          </axis>
-        </box>
-      </cell>
-      
-      <cell style="--kite9-occupies: 2 2 0 1; --kite9-padding: 10pt; --kite9-layout: down; --kite9-vertical-align: top; --kite9-horizontal-align: left;">
-        <keyitem style="--kite9-horizontal-align: left;">
-          <symbol theChar="1" ox="0" oy="0"/> 
-          <keydesc>Dinner Party Is Boring</keydesc> 
-        </keyitem>
-        <keyitem style="--kite9-horizontal-align: left;">
-          <symbol theChar="2" ox="0" oy="0"/> 
-          <keydesc>Not Enough Food</keydesc> 
-        </keyitem>
-        <keyitem style="--kite9-horizontal-align: left;">
-          <symbol theChar="3" ox="0" oy="0"/> 
-          <keydesc>No Ingredients for Meal</keydesc> 
-        </keyitem>
-        <keyitem style="--kite9-horizontal-align: left;">
-          <symbol theChar="4" ox="0" oy="0"/> 
-          <keydesc>Some Guests Can't Eat the Food</keydesc> 
-        </keyitem>
-        <keyitem style="--kite9-horizontal-align: left;">
-          <symbol theChar="5" ox="0" oy="0"/> 
-          <keydesc>Ruin The Food</keydesc> 
-        </keyitem>
-      </cell>
-      
-    </table>
-       
-  </diagram>
+	<table k9-texture="none">
+		<cell style=" --kite9-occupies: 0 0;" k9-texture="none">
+			<s k9-format="svg-fixed" k9-texture="foreground" k9-shape="none"
+				transform="rotate(-90)"
+				style="--kite9-margin: 6pt; font-size: 10pt;">
+				<svg:text transform="rotate(-90)">Impact</svg:text>
+			</s>
+		</cell>
+		<cell
+			style=" --kite9-occupies: 1 0; --kite9-min-size: 300pt 300pt; ">
+				<sym transform="translate(50,200)" id="t1" k9-format="text-shape-inline" style="--kite9-transform: none; " k9-shape="risk-point">1</sym>
+				<sym transform="translate(80,260)" id="t1" k9-format="text-shape-inline" style="--kite9-transform: none; " k9-shape="risk-point">2</sym>
+				<sym transform="translate(280,50)" id="t1" k9-format="text-shape-inline" style="--kite9-transform: none; " k9-shape="risk-point">3</sym>
+				<sym transform="translate(50,50)" id="t1" k9-format="text-shape-inline" style="--kite9-transform: none; " k9-shape="risk-point">4</sym>
+				<sym transform="translate(100,70)" id="t1" k9-format="text-shape-inline" style="--kite9-transform: none; " k9-shape="risk-point">5</sym>
+				
+		</cell>
+
+		<cell style=" --kite9-occupies: 1 1; " k9-texture="none">
+			<s k9-format="svg-fixed" k9-shape="none" k9-texture="foreground"
+				transform="rotate(-90)"
+				style="--kite9-margin: 6pt; font-size: 10pt;">
+				<svg:text>Probability</svg:text>
+			</s>
+		</cell>
+
+		<cell k9-texture="none" id="5"
+			style="--kite9-occupies: 2 2 0 0; --kite9-vertical-align: top; --kite9-padding-left: 10pt; --kite9-layout: down; --kite9-vertical-align: top; --kite9-horizontal-align: left;">
+			<group id="g1"
+				style="--kite9-horizontal-align: left; --kite9-margin: 0; --kite9-padding-left: 20pt">
+				<symbol transform="translate(-50, 50)" id="t1"
+					k9-format="text-shape-inline" k9-shape="risk-point">1</symbol>
+				<t k9-format="text-fixed" style="--kite9-padding: 20pt; ">Dinner Party Is Boring</t>
+			</group>
+			<group id="g2"
+				style="--kite9-horizontal-align: left; --kite9-margin: 0; --kite9-padding-left: 20pt">
+				<symbol transform="translate(-50, 50)" id="t1"
+					k9-format="text-shape-inline" k9-shape="risk-point">2</symbol>
+				<t k9-format="text-fixed" style="--kite9-padding: 20pt; ">Not Enough Food</t>
+			</group>
+			<group id="g3"
+				style="--kite9-horizontal-align: left; --kite9-margin: 0; --kite9-padding-left: 20pt">
+				<symbol transform="translate(-50, 50)" id="t1"
+					k9-format="text-shape-inline" k9-shape="risk-point">3</symbol>
+				<t k9-format="text-fixed" style="--kite9-padding: 20pt; ">No Ingredients for Meal</t>
+			</group>
+			<group id="g4"
+				style="--kite9-horizontal-align: left; --kite9-margin: 0; --kite9-padding-left: 20pt">
+				<symbol transform="translate(-50, 50)" id="t1"
+					k9-format="text-shape-inline" k9-shape="risk-point">4</symbol>
+				<t k9-format="text-fixed" style="--kite9-padding: 20pt; ">Some Guests Can't Eat the Food</t>
+			</group>
+			<group id="g5"
+				style="--kite9-horizontal-align: left; --kite9-margin: 0; --kite9-padding-left: 20pt">
+				<symbol transform="translate(-50, 50)" id="t1"
+					k9-format="text-shape-inline" k9-shape="risk-point">5</symbol>
+				<t k9-format="text-fixed" style="--kite9-padding: 20pt; ">Ruin The Food</t>
+			</group>
+		</cell>
+
+	</table>
+
+</diagram>

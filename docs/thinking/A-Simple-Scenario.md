@@ -11,6 +11,7 @@ tags:
  - Attendant Risk
  - Hidden Risk
  - Meeting Reality
+ - Language (Track)
 featured: 
   class: bg3
   element: '<risk href="/public/templates/risk-first/redesign/risks/goal_v2.svg"><code>Goal</code><title>A Simple Scenario</title></risk>'

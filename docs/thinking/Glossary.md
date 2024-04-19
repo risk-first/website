@@ -40,6 +40,10 @@ Taking a decision to move somewhere new on the [Risk Landscape](#risk-landscape)
 
 _See: [Bets (Tag)](/tags/bets)_
 
+### De-Risk
+
+To [Take Action](#taking-action) to make (something) less risky.
+
 ### Feedback Loop
 
 The process of testing an [Internal Model](#internal-model), through [taking action](#taking-action) to [Meet Reality](#meet-reality).  Typically, we talk about short or long feedback loops, depending on the intervals between [Meeting Reality](#meet-reality).  

@@ -75,8 +75,15 @@ const config = {
 	themeConfig:
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
-			// Replace with your project's social card
-			image: 'img/docusaurus-social-card.jpg',
+		announcementBar: {
+		      id: 'support_us',
+		      content:
+		        'Risk-First Software Development Second Edition - Coming Soon! <a target="_blank" rel="noopener noreferrer" href="/Risk-First-Second-Edition">Click here for details</a>',
+		      backgroundColor: 'rgb(245, 62,121)',
+		      textColor: '#ffffff',
+		      isCloseable: true,
+		    },	
+			image: 'img/generated/titles/index.png',
 			metadata: [
 				{ name: 'msvalidate.01', content: "3D19A6D7C17D82567867CF4238511ED1" }
 			],

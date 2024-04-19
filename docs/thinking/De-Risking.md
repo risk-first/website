@@ -1,5 +1,5 @@
 ---
-title: De-Risking
+title: Derisking
 description: What can you do with the risks on a software project?
 url: https://riskfirst.org/thinking/De-Risking
 
@@ -10,30 +10,43 @@ tags:
  - Thinking Risk-First
  - Take Action
  - Risk Landscape
+ - Language (Track)
 sidebar_position: 12
 redirect_from: 
  - /De-Risking
 tweet: yes
 ---
 
-# De-Risking
+# Derisking
 
-> "To take steps to make (something) less risky or less likely to involve a financial loss." - [De-Risk, _OxfordDictionaries.com_](https://en.oxforddictionaries.com/definition/de-risk)
+In this section, we're going to more closely at [Taking Action](Glossary.md#taking-action) and separate out the ways in which this can be done.   Along the way, I'll introduce the correct risk management terms and we'll see how each of these apply to software development.
+
+So far in Risk-First, we've talked about [Taking Action](Glossary.md#taking-action) as having two effects:
+
+ 1. It's the way in which we [Meet Reality](Glossary.md#meet-reality) to learn about the world and uncover [Hidden Risks](Glossary.md#hidden-risk).
+ 2. It's the way we change our position on the [Risk Landscape](Glossary.md#risk-landscape) via actions with a positive [Payoff](Glossary.md#payoff).
+ 
+So the concept of [Taking Action](Glossary.md#taking-action) is doing a lot of heavy lifting.  This second effect is also called [De-Risking](Glossary.md#de-risk):
+
+> "To remove the risk from; to make safe. " - [Derisk, _Wiktionary_](https://en.wiktionary.org/wiki/derisk)
+
+Let's look at some common strategies for derisking.
+
+## Mitigate (or Reduce)
+
+**Mitigating** risk is taking steps towards minimising the **impact** (as we discussed in the [Evaluating Risk](Evaluating-Risk.md) section) of a risk arising.  
+
+> "To reduce, lessen, or decrease and thereby to make less severe or easier to bear." - [Mitigate, _Wiktionary_](https://en.wiktionary.org/wiki/mitigate) 
 
 Some simple examples of this might be:
 
-- **Safety-nets and ropes** de-risk climbing.  But, the activity of climbing itself is otherwise much unchanged.
-- **Backups and Source-Control** de-risk the development process by reducing the impact of computer failure.  Our process is changed _slightly_ by this imposition but we're not massively inconvenienced.
+- **Safety-nets and ropes** mitigates some of the risks of climbing.  The fall damage you'll take when you lose your grip is hopefully much reduced but the activity of climbing itself is otherwise much unchanged.  
+
+- **Backups and Source-Control** mitigates the impact of computer failure.  Hardware _still fails_ but the impact is less if we can restore from a recent backup.  Our process is changed _slightly_ by this imposition but we're not massively inconvenienced.
+
 - **Insurance** de-risks owning a house, going on holiday or driving a car.  Usually, the payment is small enough not to impact us too much.
+
 - **The National Health Service (NHS)** de-risks medical expense by pooling health-care costs across the entire population.  If you were struck down with a debilitating illness, then at least you wouldn't also have to pay to get better. 
-
-Let's look at some common strategies for De-Risking.
-
-## Mitigate
-
-**Mitigating** risk is taking steps towards minimising either its likelihood or impact (as we discussed in the [Evaluating Risk](Evaluating-Risk.md) section).  
-
-Safety-nets, for example, mitigate the impact of hitting the ground.  
 
 ## Avoid
 
@@ -43,7 +56,7 @@ For example, if you are working in a team which has no experience of relational 
 
 _Not_ launching an online service _avoids_ the [Operational Risk](../risks/Operational-Risk.md) involved in running one.  Although you avoid the upsides too.
 
-## Transfer
+## Transfer (sometimes Share)
 
 **Transferring** risk means _making it someone else's problem_.  
 

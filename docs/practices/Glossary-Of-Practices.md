@@ -23,7 +23,23 @@ See:
 
  - [Refactoring](../risks/Complexity-Risk.md#refactoring)
  - [The Power of Abstractions](../risks/Staging-And-Classifying.md#the-power-of-abstractions)
+
+### Scrum
+
+Agile development methodology.
+
+See:
+ - [Fixing Scrum](../estimating/Fixing-Scrum.md)
+ - [On Story Points](../estimating/On-Story-Points.md)
  
+### Backlog Refinement
+
+> "Backlog refinement is a process by which team members revise and prioritize a backlog for future sprints.[31] It can be done as a separate stage done before the beginning of a new sprint or as a continuous process that team members work on by themselves. Backlog refinement can include the breaking down of large tasks into smaller and clearer ones, the clarification of success criteria, and the revision of changing priorities and returns. " - [Scrum, _Wikipedia_]https://en.wikipedia.org/wiki/Scrum_(software_development)#Backlog_refinement
+
+See: 
+
+ - [Tracking Risks](../thinking/Track-Risk.md#visualising-risks)
+ - Scrum(#scrum)
  
 ### Standardization
 
@@ -199,6 +215,14 @@ See:
 - [Development Process](../thinking/Development-Process.md#a-toy-process)_
 - [Production (Cadence)](../thinking/Cadence.md#production)
 
+### Beta Test
+
+Beta testing is the process of testing an unreleased piece of software with a portion of its intended audience. 
+
+See:
+
+ - [Consider Payoff](../thinking/Consider-Payoff.md)
+ 
 ### User Acceptance Testing (UAT)
 
 Completing a [Feedback Loop](../thinking/Cadence.md) in order to ascertain whether [Feature Risk](../risks/Feature-Risk.md) has been correctly addressed by new features.  Also called _verification_, _user feedback_ or _manual testing_.
@@ -316,4 +340,19 @@ See:
 
  - [Operations Management](../risks/Operational-Risk.md#operations-management)
  - [Planning](../risks/Operational-Risk.md#planning)
+
+### Dog-Fooding
+
+_Eating your own dog food_ is the process by which you use your product or service internally in order to get more feedback about how well it works.
+
+See:
+
+ - [Consider Payoff](../thinking/Consider-Payoff.md)
  
+### Feature Toggle
+
+A condition within the code enables or disables a feature during runtime, perhaps for a certain group of users. 
+
+See:
+
+ - [Consider Payoff](../thinking/Consider-Payoff.md)

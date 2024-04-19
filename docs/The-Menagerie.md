@@ -6,8 +6,6 @@ url: https://riskfirst.org/The-Menagerie
 featured: 
   class: bg1
   element: '<big-image imgsrc="/public/templates/risk-first/posts/book-grey.png" />'
-tags: 
- - Front
 sidebar_position: 3
 ---
 
