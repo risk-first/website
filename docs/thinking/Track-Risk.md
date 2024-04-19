@@ -108,6 +108,8 @@ Going back to the dinner party example, the above diagram considers solutions to
 
 If I added actions for all the other risks (maybe buying extra snacks, checking the guest's dietary restrictions etc) then this chart gets quite busy.  But clearly, actions to the top and left are the ones we should consider taking, since they have the best payoff.   Those below and to the right of the diagonal line are non-starters as they make our situation worse.
 
+_Really good design_ would be coming up with a course of action that takes care of _multiple risks at the same time_ and creating a really good payoff. 
+
 ## Criticism
 
 One of the criticisms of the [Risk Register](Track-Risk.md#risk-registers) approach is that of [mistaking the map for the territory](../risks/Map-And-Territory-Risk.md).  That is, mistakenly believing that what's on the Risk Register _is all there is_.  
