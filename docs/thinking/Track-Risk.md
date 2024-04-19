@@ -56,7 +56,7 @@ Let's look at an example.  In a financial context (or a gambling one), we can co
 
 Risk Management in the finance industry _starts_ here and gets more complex.  But often (especially on a software project), it's better to skip all this and just estimate a Risk Score.  This is because if you think about "impact", it implies a definite, discrete event occurring (or not occurring) and asks you then to consider the probability of that. 
 
-So the second point to take away is - what is exactly happening when we set the priority of items in our backlog?  Are we arranging them by **Impact**, **Probability**, **Risk Score** or are we looking also at the [action we would take](Glossary.md#take-action) and factoring in the [Payoff](Payoff.md)?  
+So the second point to take away is - what is exactly happening when we set the priority of items in our backlog?  Are we arranging them by **Impact**, **Probability**, **Risk Score** or are we looking also at the [action we would take](Glossary.md#take-action) and factoring in the [Payoff](Glossary.md#payoff)?  
 
 We'll come back to this in a minute.
 
