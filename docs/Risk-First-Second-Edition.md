@@ -13,6 +13,10 @@ sidebar_position: 3
 
 # Coming in 2024
 
+I'm pleased to announce that the Pragmatic Bookshelf will be publishing a fully-revised and updated second edition of Risk-First Software Development!
+
+[![Pragmatic Bookshelf](https://media.pragprog.com/images/cms/logos/Bookshelf_4in.png)](https://pragprog.com)
+
 ## Risk-First Software Development Second Edition
 
 **Over 20 years ago an "Agile" revolution occurred** in the software development field.  But 20 years later, the very same proponents of the revolution are turning their backs on what they created, arguing that their ideals have been corrupted by zealotry, proscriptive norms, cargo-culting and an "Agile-Industrial Complex" focused on evangelism and certification.
@@ -39,6 +43,6 @@ This is where I will be adding blog materials discussing the content of the new 
 
 **Coming Soon!**
 
-### Read It Here
+### Tell Us What You Think!
 
-Most of the material in the second edition book is published here on this website, so you can simply [start reading](overview/Start.md).  If you have any feedback, please get in touch.  
+Most of the material in the second edition book is published here on this website, so you can simply [start reading](overview/Start.md).  If you have any feedback, please get in touch.  What's missing?  What doesn't make sense?  What should be left out?  Knowing this will be super-helpful and **you will be credited in the book along with all the other [Contributors](misc/Contributors.md).**
