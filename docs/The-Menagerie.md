@@ -11,6 +11,8 @@ sidebar_position: 3
 
 # The Menagerie
 
+[Second Edition Coming Soon!](Risk-First-Second-Edition.md)
+
 The software development world is crowded with different practices, metrics, methodologies, tools and techniques.  But what unites them all?
 
 Volume one of the Risk-First series argues the case for viewing _all_ of the activities on a software project through the lens of _managing risk_.  It introduces the menagerie of different risks you're likely to meet on a software project, naming and classifying them so that we can try to understand them better.
