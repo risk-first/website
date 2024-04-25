@@ -11,7 +11,7 @@ tags:
  - Take Action
  - Risk Landscape
  - Language (Track)
-sidebar_position: 12
+sidebar_position: 8
 redirect_from: 
  - /De-Risking
 tweet: yes
@@ -26,11 +26,11 @@ So far in Risk-First, we've talked about [Taking Action](Glossary.md#taking-acti
  1. It's the way in which we [Meet Reality](Glossary.md#meet-reality) to learn about the world and uncover [Hidden Risks](Glossary.md#hidden-risk).
  2. It's the way we change our position on the [Risk Landscape](Glossary.md#risk-landscape) via actions with a positive [Payoff](Glossary.md#payoff).
  
-So the concept of [Taking Action](Glossary.md#taking-action) is doing a lot of heavy lifting.  This second effect is also called [De-Risking](Glossary.md#de-risk):
+As we saw in the discussion of [Payoff](Consider-Payoff.md), any time you take action you are accruing [attendant risk](Glossary.md#attendant-risk), and we want to take actions with the most favourable payoff.  In this section, we are going to look at common ways in which we can lean the payoff in our favour.  This is called _derisking_:   
 
 > "To remove the risk from; to make safe. " - [Derisk, _Wiktionary_](https://en.wiktionary.org/wiki/derisk)
 
-Let's look at some common strategies for derisking.
+There are a set of _generic strategies_ for derisking which we'll look at below.  I'll give general examples for each and then we'll turn them into tactics you can use in software development specifically.
 
 ## Mitigate (or Reduce)
 
@@ -38,19 +38,29 @@ Let's look at some common strategies for derisking.
 
 > "To reduce, lessen, or decrease and thereby to make less severe or easier to bear." - [Mitigate, _Wiktionary_](https://en.wiktionary.org/wiki/mitigate) 
 
-Some simple examples of this might be:
+### General Examples
 
 - **Safety-nets and ropes** mitigates some of the risks of climbing.  The fall damage you'll take when you lose your grip is hopefully much reduced but the activity of climbing itself is otherwise much unchanged.  
 
 - **Backups and Source-Control** mitigates the impact of computer failure.  Hardware _still fails_ but the impact is less if we can restore from a recent backup.  Our process is changed _slightly_ by this imposition but we're not massively inconvenienced.
 
-- **Insurance** de-risks owning a house, going on holiday or driving a car.  Usually, the payment is small enough not to impact us too much.
+- **Using Commonly-Known Languages** mitigates the impact of highly specialised staff quitting and leaving you hunting for replacements.  Whilst hiring people is hard work at the best of times, hiring PL/1 programmers is _really hard_.
 
-- **The National Health Service (NHS)** de-risks medical expense by pooling health-care costs across the entire population.  If you were struck down with a debilitating illness, then at least you wouldn't also have to pay to get better. 
+### Specific Tactics
+
+1.  **Do Risky Things Early**.  If you are building some software process which has ten steps in it, and the 9th step has a high probability of not being implementable, then _build the 9th step first_.  If you succeed, you've massively reduced the risk of the process construction.  IF you fail, you'll only have lost the time it took to build that one step.
+
+2.  **Choose Popular Technologies**.  Popular technologies are easier to get support for, easier to staff and you're less likely to uncover novel edge conditions that stop your progress.  They're also likely to be popular for a reason.
+
+3.  **
 
 ## Avoid
 
 **Avoiding** risk, means taking a route on the [Risk Landscape](../thinking/Glossary.md#risk-landscape) _around_ the risk.  
+
+### General Examples
+
+- **Avoiding flying** 
 
 For example, if you are working in a team which has no experience of relational databases, then _storing data in files_ might be a way to avoid the [Learning Curve Risk](../risks/Communication-Risk.md#learning-curve-risk) associated with this technology.  Of course, you may pick up other, more serious risks as a result: Relational Databases are software solutions to many kinds of [Coordination Risk](../risks/Coordination-Risk.md) problem, such as concurrent writes or consistency.
 
@@ -61,6 +71,10 @@ _Not_ launching an online service _avoids_ the [Operational Risk](../risks/Opera
 **Transferring** risk means _making it someone else's problem_.  
 
 For example, when I buy home insurance, the personal consequence of my house burning down is reduced.  It hasn't gone away completely, but at least the financial element of it is handled by the insurance company.
+- **Insurance** de-risks owning a house, going on holiday or driving a car.  Usually, the payment is small enough not to impact us too much.
+
+- **The National Health Service (NHS)** de-risks medical expense by pooling health-care costs across the entire population.  If you were struck down with a debilitating illness, then at least you wouldn't also have to pay to get better. 
+
 
 **Transfer** of risk is an essential feature of [Software-as-a-Service (SaaS)](../risks/Software-Dependency-Risk.md):  someone else is responsible for making sure the service is up-and-running, backed up, etc.  
 
@@ -79,6 +93,8 @@ Another example is using particular software dependencies:   building a mobile a
 Whereas **Accepting** a risk seems to imply an eyes-wide-open examination; **Ignoring** seems to imply that either the risk is so insignificant it doesn't warrant evaluation, or so daunting that it can't be stared down.  Either way, **Ignoring** a risk amounts to the same thing as **Accepting** it, since you're not doing anything about it. 
 
 **Accepting** a risk has to occur _before_ we can **Mitigate** it.  
+
+
 
 ### A Nice Problem To Have
 
@@ -103,6 +119,11 @@ Sometimes risks just go away on their own.  [Learned Helplessness](https://en.wi
 Whenever a project-manager builds slack into a project plan, this is **Containment**.   "Time-Boxing" is also containment: this is where you give a piece of work a week (say) to prove itself.  If it can't be done in this time, we move on and try a different approach.
 
 In the section on [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk) we are going to look in detail at how this works. 
+
+### Specific Tectics
+
+1.  **Time-Boxing**
+
 
 ## Exploit
 

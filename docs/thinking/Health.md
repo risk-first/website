@@ -15,7 +15,7 @@ tweet: yes
 ---
 
 
-# Health and Risk
+# Health
 
 ![Stay Healthy](/img/generated/principles/stay-healthy.png)
 
