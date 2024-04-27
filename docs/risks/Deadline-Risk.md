@@ -8,6 +8,7 @@ featured:
   element: '<risk class="deadline" />'
 sidebar_position: 8
 tags:
+ - Deadline Risk
  - Risks
 redirect_from: 
  - /Deadline-Risk

@@ -7,11 +7,15 @@ featured:
   class: bg2
   element: '<risk class="scarcity" />'
 sidebar_position: 7
-tags:
- - Risks
 redirect_from: 
  - /Scarcity-Risk
 tweet: yes
+tags: 
+ - Risks
+ - Scarcity Risk
+ - Funding Risk
+ - Staff Risk
+ - Schedule Risk
 ---
 
 # Scarcity Risk

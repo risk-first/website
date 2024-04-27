@@ -7,11 +7,13 @@ featured:
   class: bg2
   element: '<risk class="operational" />'
 sidebar_position: 15
-tags:
- - Risks
 redirect_from: 
  - /Operational-Risk
 tweet: yes
+tags: 
+ - Risks
+ - Operational Risk
+ - Legal Risk
 ---
 
 # Operational Risk

@@ -8,7 +8,14 @@ featured:
   element: '<risk class="communication" />'
 sidebar_position: 4
 tags:
+ - Communication Risk
  - Risks
+ - Learning Curve Risk
+ - Channel Risk
+ - Protocol Risk
+ - Internal Model Risk
+ - Invisibility Risk
+ - Trust and Belief Risk
 redirect_from: 
  - /Communication-Risk
 tweet: yes

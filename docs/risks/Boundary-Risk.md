@@ -9,6 +9,7 @@ featured:
 sidebar_position: 11
 tags:
  - Risks
+ - Boundary Risk
 redirect_from: 
  - /Boundary-Risk
 tweet: yes

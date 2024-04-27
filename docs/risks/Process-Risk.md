@@ -7,11 +7,12 @@ featured:
   class: bg2
   element: '<risk class="process" />'
 sidebar_position: 10
-tags:
- - Risks
 redirect_from: 
  - /Process-Risk
 tweet: yes
+tags: 
+ - Risks
+ - Process Risk
 ---
 
 # Process Risk

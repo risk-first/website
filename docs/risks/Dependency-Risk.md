@@ -8,6 +8,10 @@ featured:
   element: '<risk class="dependency" />'
 sidebar_position: 6
 tags:
+ - Dependency Risk
+ - Fit Risk
+ - Reliability Risk
+ - Invisibility Risk
  - Risks
 redirect_from: 
  - /Dependency-Risk

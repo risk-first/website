@@ -8,6 +8,7 @@ featured:
   element: '<risk class="coordination" />'
 sidebar_position: 13
 tags:
+ - Coordination Risk
  - Risks
 redirect_from: 
  - /Coordination-Risk

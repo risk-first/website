@@ -9,6 +9,9 @@ featured:
 sidebar_position: 5
 tags:
  - Popular
+ - Complexity Risk
+ - Dead-End Risk
+ - Codebase Risk
  - Risks
 redirect_from: 
  - /Complexity-Risk

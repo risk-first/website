@@ -7,11 +7,19 @@ featured:
   class: bg2
   element: '<risk class="feature" />'
 sidebar_position: 3
-tags:
- - Risks
 redirect_from: 
  - /Feature-Risk
 tweet: yes
+tags: 
+ - Risks
+ - Feature Risk
+ - Feature Fit Risk
+ - Implementation Risk
+ - Regression Risk
+ - Conceptual Integrity Risk
+ - Feature Access Risk
+ - Market Risk
+ - Feature Drift Risk
 ---
 
 # Feature Risk
