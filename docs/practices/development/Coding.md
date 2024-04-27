@@ -12,10 +12,13 @@ practice:
      reason: "More code means more software to manage"
    - page: tags/Complexity-Risk
      reason: "Introducing code adds to the complexity of a project"
+   - page: tags/Implementation-Risk
+     reason: Adding working code also introduces bugs.
   related:
    - /practices/Refactoring
    - /practices/Automating
    - /practices/Outsourcing
+   - /practices/Pair-Programming
 ---
 
 <PracticeIntro details={frontMatter.practice} /> 
