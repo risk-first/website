@@ -11,15 +11,16 @@ practice:
      reason: "Prototyping aims to produce quick working examples to help understand a concept."
    - page: tags/Learning-Curve-Risk
      reason: "Prototypes are a way of learning about a particular solution to a problem."
+   - page: tags/Communication-Risk
+     reason: "A prototype often allows for communicating a design or idea in a way that a written document or diagram wouldn't."
   attendant:
    - page: tags/Complexity-Risk
      reason: "Prototypes that turn into the chosen solution often take shortcuts in design that are not rectified."
   related:
    - /practices/MVP
+   - /practices/Coding
 ---
- 
-# Prototyping
- 
+  
 <PracticeIntro details={frontMatter.practice} /> 
 
 ## Description
