@@ -14,9 +14,15 @@ module.exports = async function myPlugin(context, options) {
             // build the mapping of tags to docs
             const tagToDocMap = {};
             docs.forEach(doc => {
-	            //console.log(JSON.stringify(doc));
                 const tagNames = doc.tags.map(t => t.label);
-                tagNames.forEach(tn => {
+                const mitigates = (doc.frontMatter.practice?.mitigates ?? []).map(t => t.tag)
+                const attendant = (doc.frontMatter.practice?.attendant ?? []).map(t => t.tag)
+                
+                const allTags = [...tagNames, ...mitigates, ...attendant]
+                
+                console.log(JSON.stringify(allTags));
+                
+                allTags.forEach(tn => {
                     const collection = tagToDocMap[tn] ?? [];
 
                     const shortForm = {
