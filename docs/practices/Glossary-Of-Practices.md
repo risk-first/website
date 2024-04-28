@@ -77,7 +77,7 @@ See:
 
 ### Automation 
 
-Converting a manual [Process](../risks/Process-Risk) into an automatic, computer-controlled one.
+Converting a manual [Process](../risks/Process-Risk) into an automatic, machine-controlled one.
 
 See: 
 

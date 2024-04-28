@@ -1,24 +1,27 @@
 ---
 title: Coding
+tags: 
+  - Coding
 practice:
   aka: 
    - "Software Development"
    - "Computer Programming"
   mitigates:
-   - page: tags/Feature-Risk
+   - tag: Feature Risk
      reason: "Build or improve some features which our clients will find useful."
   attendant:
-   - page: tags/Codebase-Risk
+   - tag: Codebase Risk
      reason: "More code means more software to manage"
-   - page: tags/Complexity-Risk
+   - tag: Complexity Risk
      reason: "Introducing code adds to the complexity of a project"
-   - page: tags/Implementation-Risk
+   - tag: Implementation Risk
      reason: Adding working code also introduces bugs.
   related:
-   - /practices/Refactoring
-   - /practices/Automating
-   - /practices/Outsourcing
-   - /practices/Pair-Programming
+   - /practices/development/Refactoring
+   - /practices/development/Automating
+   - /practices/coordination/Outsourcing
+   - /practices/development/Pair-Programming
+   - /practices/testing/testing
 ---
 
 <PracticeIntro details={frontMatter.practice} /> 

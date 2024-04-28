@@ -8,6 +8,7 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/crystal.svg">Crystals And Code</image-artifact>'
 tags:
  - Complexity
+ - Refactoring
 sidebar_position: 2
 tweet: yes
 ---

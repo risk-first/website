@@ -6,10 +6,13 @@ function formatReadableTag(page) {
 	return page.replaceAll("-", " ").substring(page.lastIndexOf("/")+1)	
 }
 
-const Risk = ({page, reason}) => {
-	const title = formatReadableTag(page) 
+function tagUrl(tag) {
+	return "/tags/"+tag.replaceAll(" ", "-")	
+}
+
+const Risk = ({tag, reason}) => {
 	return (
-		<li><a href={"/"+page}>{title}</a>: {reason}</li>
+		<li><a href={tagUrl(tag)}>{tag}</a>: {reason}</li>
 	)
 }
 
@@ -31,13 +34,13 @@ export default ({details}) => {
 		<h2>Addresses / Mitigates</h2>
 		<ul>
     	{
-			details.mitigates.map(i => <Risk page={i.page} reason={i.reason} />)
+			details.mitigates.map(i => <Risk tag={i.tag} reason={i.reason} />)
 		}
 		</ul>
 		<h2>Attendant Risks</h2>
 		<ul>
     	{
-			details.attendant.map(i => <Risk page={i.page} reason={i.reason} />)
+			details.attendant.map(i => <Risk tag={i.tag} reason={i.reason} />)
 		}
 		</ul>
     </div>

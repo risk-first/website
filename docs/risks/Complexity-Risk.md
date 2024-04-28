@@ -13,6 +13,7 @@ tags:
  - Dead-End Risk
  - Codebase Risk
  - Risks
+ - Refactoring
 redirect_from: 
  - /Complexity-Risk
 ---

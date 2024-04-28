@@ -1,20 +1,22 @@
 ---
 title: Prototyping
+tags: 
+  - Prototyping
 practice:
   aka: 
    - "Spike Solution"
    - "Proof of Concept (POC)"
   mitigates:
-   - page: tags/Complexity-Risk
+   - tag: Complexity Risk
      reason: "Prototyping allows you to explore an idea or design without committing to it.  If the design turns out to be over-complex, it can be avoided."
-   - page: tags/Schedule-Risk
+   - tag: Schedule Risk
      reason: "Prototyping aims to produce quick working examples to help understand a concept."
-   - page: tags/Learning-Curve-Risk
+   - tag: Learning Curve Risk
      reason: "Prototypes are a way of learning about a particular solution to a problem."
-   - page: tags/Communication-Risk
+   - tag: Communication Risk
      reason: "A prototype often allows for communicating a design or idea in a way that a written document or diagram wouldn't."
   attendant:
-   - page: tags/Complexity-Risk
+   - tag: Complexity Risk
      reason: "Prototypes that turn into the chosen solution often take shortcuts in design that are not rectified."
   related:
    - /practices/MVP
