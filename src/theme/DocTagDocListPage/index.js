@@ -57,9 +57,6 @@ function sortDocs(items, exclude) {
 	
 	const out = {}
 	
-	console.log("Items : "+items.length)
-	console.log("Buckets : "+JSON.stringify(buckets))
-
 	items
 		.filter(i => i !== exclude)
 		.forEach(i => {
@@ -71,7 +68,6 @@ function sortDocs(items, exclude) {
 					if (!list) {
 						out[c] = [];
 					}
-					console.log("Pushed 1")
 
 					out[c].push(i);
 				}

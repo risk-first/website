@@ -20,7 +20,7 @@ module.exports = async function myPlugin(context, options) {
                 
                 const allTags = [...tagNames, ...mitigates, ...attendant]
                 
-                console.log(JSON.stringify(allTags));
+                //console.log(JSON.stringify(allTags));
                 
                 allTags.forEach(tn => {
                     const collection = tagToDocMap[tn] ?? [];

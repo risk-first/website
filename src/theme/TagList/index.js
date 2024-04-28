@@ -11,19 +11,18 @@ function DocItemImage({ doc }) {
 	const imageLink = "/img/generated/single/" + stripped + ".png"
 
 	return (
-		<Link key={doc.permalink} to={doc.permalink}>
-			<article className={styles.docItem}>
-				<div className={styles.columns}>
-					<div className={styles.left}>
-						<img src={imageLink} className={styles.articleImage} />
-					</div>
-					<div className={styles.right}>
-						<h3>{doc.title}</h3>
-						<p className={styles.description}>{doc.description}</p>
-					</div>
+		
+		<article className={styles.docItem}>
+			<div className={styles.columns}>
+				<div className={styles.left}>
+					<img src={imageLink} className={styles.articleImage} />
 				</div>
-			</article>
-		</Link>
+				<div className={styles.right}>
+					<Link key={doc.permalink} to={doc.permalink}><h3>{doc.title}</h3></Link>
+					<p className={styles.description}>{doc.description}</p>
+				</div>
+			</div>
+		</article>
 	);
 }
 
@@ -39,12 +38,14 @@ export default function TagList(props) {
 	const oneTag = props.tag ? allTags[props.tag] : Object.values(allTags)
 		.flatMap(a => a)
 		.filter(uniqueOnly)
+	console.log(JSON.stringify(oneTag))
 	const filter = props.filter ? '/' + props.filter + '/' : ''
 	const location = useLocation().pathname;
 
 	oneTag.sort((a, b) => a.order - b.order);
 	
 	console.log(oneTag[0].permalink.indexOf(location))
+	console.log(filter)
 
 	return (
 		<div className={styles.tagList}>
