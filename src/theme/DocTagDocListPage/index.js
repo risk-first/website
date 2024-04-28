@@ -88,7 +88,7 @@ export default function DocTagDocListPage({ tag }) {
 	
 	const nDocsTaggedPlural = useNDocsTaggedPlural();
 	const md = mainDoc(oneTag, tag);
-	const sorted = sortDocs(oneTag, null);
+	const sorted = sortDocs(oneTag, md);
 	const title = translate(
 		{
 			id: 'theme.docs.tagDocListPageTitle',

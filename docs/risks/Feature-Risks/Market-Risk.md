@@ -11,6 +11,8 @@ tags:
  - Market Risk
 ---
 
+<RiskIntro fm={frontMatter} />
+
 ![Market Risk](/img/generated/risks/feature/market-risk.png) 
 
 Market Risk is a term from finance:

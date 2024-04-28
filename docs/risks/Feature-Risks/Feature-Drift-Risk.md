@@ -11,6 +11,7 @@ tags:
  - Feature Risk
  - Feature Drift Risk
 ---
+<RiskIntro fm={frontMatter} />
 
 
 ![Feature Drift Risk](/img/generated/risks/feature/feature-drift-risk.png) 

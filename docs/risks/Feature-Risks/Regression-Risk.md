@@ -11,6 +11,8 @@ tags:
  - Regression Risk
 ---
 
+<RiskIntro fm={frontMatter} />
+
 ![Regression Risk](/img/generated/risks/feature/feature-regression-risk.png) 
 
 Delivering new features can delight your customers, but breaking existing ones will annoy them!  

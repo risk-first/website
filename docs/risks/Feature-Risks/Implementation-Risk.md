@@ -11,6 +11,8 @@ tags:
  - Implementation Risk
 ---
 
+<RiskIntro fm={frontMatter} />
+
 ![Implementation Risk](/img/generated/risks/feature/feature-implementation-risk.png) 
 
 The [Feature Risk](Feature-Risk.md) family also includes things that don't work as expected, that is to say, [bugs](https://en.wikipedia.org/wiki/Software_bug).   Although the distinction between "a missing feature" and "a broken feature" might be worth making in the development team, we can consider these both the same kind of risk:  _the software doesn't do what the user expects_.  We call these [Implementation Risks](Feature-Risk.md#implementation-risk).  

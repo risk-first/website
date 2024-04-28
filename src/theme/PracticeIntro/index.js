@@ -31,13 +31,13 @@ export default ({details}) => {
 			details.related.map(i => <li><a href={i}>{formatReadableTag(i)}</a></li>)
 		}
 		</ul>
-		<h2>Addresses / Mitigates</h2>
+		<h3>Addresses / Mitigates</h3>
 		<ul>
     	{
 			details.mitigates.map(i => <Risk tag={i.tag} reason={i.reason} />)
 		}
 		</ul>
-		<h2>Attendant Risks</h2>
+		<h3>Attendant Risks</h3>
 		<ul>
     	{
 			details.attendant.map(i => <Risk tag={i.tag} reason={i.reason} />)

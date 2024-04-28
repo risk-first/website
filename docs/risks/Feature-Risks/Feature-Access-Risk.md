@@ -12,6 +12,9 @@ tags:
  - Feature Access Risk
 ---
 
+<RiskIntro fm={frontMatter} />
+
+
 ![Feature Access Risk](/img/generated/risks/feature/feature-access-risk.png) 
 
 Feature Access Risks are risks due to some clients not having access to some or all of the features in your product.

@@ -11,6 +11,8 @@ tags:
  - Conceptual Integrity Risk
 ---
 
+<RiskIntro fm={frontMatter} />
+
 ![Conceptual Integrity Risk](/img/generated/risks/feature/conceptual-integrity-risk.png) 
 
 [Conceptual Integrity Risk](Feature-Risk.md#conceptual-integrity-risk) is the risk that chasing after features leaves the product making no sense, and therefore pleasing no-one.   
