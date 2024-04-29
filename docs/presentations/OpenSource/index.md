@@ -22,7 +22,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.001.jpg" alt="Image of slide number 1" />
+                <img src="/img/presentations/OpenSource/images/images.001.jpg" alt="Image of slide number 1" />
             </div>
             <div class="slide-notes">
                       <p>Hi, my name’s Rob Moffat.  Today, I’m going to talk about Open Source software, but first a bit of background:</p>
@@ -39,7 +39,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.002.jpg" alt="Image of slide number 2" />
+                <img src="/img/presentations/OpenSource/images/images.002.jpg" alt="Image of slide number 2" />
             </div>
             <div class="slide-notes">
                       <p>Power, Personal, Professional.</p>
@@ -56,7 +56,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.003.jpg" alt="Image of slide number 3" />
+                <img src="/img/presentations/OpenSource/images/images.003.jpg" alt="Image of slide number 3" />
             </div>
             <div class="slide-notes">
                       <p>So let’s start with Power.  On this slide is the cover of one of the most famous books on Software Engineering - TMMM by Fred Brooks.  It’s a collection of essays he wrote about his experience of being a software developer whilst at IBM. This is the 1995 edition, but And it’s so called because it has a chapter explaining Brooks’ Law</p>
@@ -67,7 +67,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.004.jpg" alt="Image of slide number 4" />
+                <img src="/img/presentations/OpenSource/images/images.004.jpg" alt="Image of slide number 4" />
             </div>
             <div class="slide-notes">
                       <p>And the reason this is true is that if you add extra people to a project, suddenly there are more lines of communication, more people with different ideas, more people who need to be brought up-to-speed and so on.  It can often make things worse.</p>
@@ -80,7 +80,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.005.jpg" alt="Image of slide number 5" />
+                <img src="/img/presentations/OpenSource/images/images.005.jpg" alt="Image of slide number 5" />
             </div>
             <div class="slide-notes">
                       <p>Brooks wrote this in 1985, so in the 1995 edition, he was able to reflect on whether he had been right or not.    In that 10-year span between 1985 and 1995, there were some improvements, new languages, some advances in AI, better tooling, better testing tools, all of which he anticipated in the original essay.  So, in the 1995 edition, looking back, he said that he was probably broadly correct.</p>
@@ -93,7 +93,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.006.jpg" alt="Image of slide number 6" />
+                <img src="/img/presentations/OpenSource/images/images.006.jpg" alt="Image of slide number 6" />
             </div>
             <div class="slide-notes">
                       <p>So, let’s talk about some early pieces of open source software that are still shaping the world we live in.  So, Linux is one of the oldest pieces of open-source software.  It was started in 1991, but really got going in the late 90’s and 00’s.  Linux takes a lot of code from the GNU project, which started in the 80’s, and was mainly an academic endeavour, as there weren’t many other people on the internet.  This is an operating system, so it provides services to other programs to run, like file management, handling displays and keyboards and so on.</p>
@@ -112,7 +112,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.007.jpg" alt="Image of slide number 7" />
+                <img src="/img/presentations/OpenSource/images/images.007.jpg" alt="Image of slide number 7" />
             </div>
             <div class="slide-notes">
                       <p>So, that’s often known as a LAMP stack.  So Linux, Apache, we know.  MySQL is a database - so all your wordpress posts get stored in there.  And PHP, Pearl, Python, they’re open-source programming languages - some of the biggest.  And Wordpress is written in PHP.</p>
@@ -125,7 +125,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.008.jpg" alt="Image of slide number 8" />
+                <img src="/img/presentations/OpenSource/images/images.008.jpg" alt="Image of slide number 8" />
             </div>
             <div class="slide-notes">
                       <p>So now, no-one really uses MySQL, because Oracle want to charge money for it, and because most of the improvements are being done in MariaDB.  So the LAMP stack is now really Linux, Apache, MariaDB, Php.</p>
@@ -146,7 +146,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.009.jpg" alt="Image of slide number 9" />
+                <img src="/img/presentations/OpenSource/images/images.009.jpg" alt="Image of slide number 9" />
             </div>
             <div class="slide-notes">
                       <p>To emphasise this point, we’re going to head into the personal part of the story.</p>
@@ -157,7 +157,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.010.jpg" alt="Image of slide number 10" />
+                <img src="/img/presentations/OpenSource/images/images.010.jpg" alt="Image of slide number 10" />
             </div>
             <div class="slide-notes">
                       <p>Ok, so here’s a story from before I was at Deutsche Bank, when I was working with Credit Suisse in their Risk department.  We were building a new risk calculator.  And the process went something like this.  The guy on the left, he’s the Analyst.  He writes a requirements document, explaining exactly how he thinks the calcuator should work.  Then, he goes to the pub.  Often, for several days. </p>
@@ -176,7 +176,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.011.jpg" alt="Image of slide number 11" />
+                <img src="/img/presentations/OpenSource/images/images.011.jpg" alt="Image of slide number 11" />
             </div>
             <div class="slide-notes">
                       <p>I looked around for an Open-Source solution to the problem, and found Concordion.  Now, the way Concordion works is this:  you write your specification using HTML, so it’s like a webpage.  Then, you have some Java code you want to test, and, so long as you follow concordion’s way of working, when you pass it the specification and the test, it can generate a report.  Here’s an example.  So, the analyst writes something about how names should be split, say.  </p>
@@ -193,7 +193,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.012.jpg" alt="Image of slide number 12" />
+                <img src="/img/presentations/OpenSource/images/images.012.jpg" alt="Image of slide number 12" />
             </div>
             <div class="slide-notes">
                       <p>What happens, is that the extension takes your spreadsheet, and converts it to HTML that Concordion understands, and then you’re back where you were in the first diagram - you just run it through Concordion.</p>
@@ -204,7 +204,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.013.jpg" alt="Image of slide number 13" />
+                <img src="/img/presentations/OpenSource/images/images.013.jpg" alt="Image of slide number 13" />
             </div>
             <div class="slide-notes">
                       <p>Here’s an example: I write a spreadsheet here, doing taxi-fare calculations.   As you can see I’m entering all the formulas.  Now, this is the bit the analyst would do.</p>
@@ -215,7 +215,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.014.jpg" alt="Image of slide number 14" />
+                <img src="/img/presentations/OpenSource/images/images.014.jpg" alt="Image of slide number 14" />
             </div>
             <div class="slide-notes">
                       <p>When I run it through Concordion, it produces this HTML page with this table of results.  </p>
@@ -230,7 +230,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.015.jpg" alt="Image of slide number 15" />
+                <img src="/img/presentations/OpenSource/images/images.015.jpg" alt="Image of slide number 15" />
             </div>
             <div class="slide-notes">
                       <p>I’m not the only person to do this - there are 49 repositories in the concordion organisation.  I wrote this 6 years ago, and I don’t really do the maintenance anymore, but it’s a useful feature of concordion that other people can benefit from.  And, this only happened because it was open source and free to use.  If it hadn’t been, I wouldn’t have considered using it, and I certainly wouldn’t have contributed. </p>
@@ -243,7 +243,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.016.jpg" alt="Image of slide number 16" />
+                <img src="/img/presentations/OpenSource/images/images.016.jpg" alt="Image of slide number 16" />
             </div>
             <div class="slide-notes">
                       <p>The second example I want to quickly cover is Risk-First.  So this image is from my website, riskfirst.org.  The idea of Risk-First is to be a catalog of the different risks you could face managing a software project.  And, it goes into detail discussing each of them.  </p>
@@ -256,7 +256,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.017.jpg" alt="Image of slide number 17" />
+                <img src="/img/presentations/OpenSource/images/images.017.jpg" alt="Image of slide number 17" />
             </div>
             <div class="slide-notes">
                       <p>So, this is the risk-first website repo, on github.  And, each page of the website is a file in my repo…</p>
@@ -267,7 +267,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.018.jpg" alt="Image of slide number 18" />
+                <img src="/img/presentations/OpenSource/images/images.018.jpg" alt="Image of slide number 18" />
             </div>
             <div class="slide-notes">
                       <p>Here’s one of them, called “A Pattern Language”.</p>
@@ -280,7 +280,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.019.jpg" alt="Image of slide number 19" />
+                <img src="/img/presentations/OpenSource/images/images.019.jpg" alt="Image of slide number 19" />
             </div>
             <div class="slide-notes">
                       <p>Now this is written in a language called “MarkDown”.  As opposed to “Markup” like HTML is.  See what they did there?  The idea of markdown is that it still looks OK even when you’re just viewing it as text, but, it can be made to look really nice when you view it as a webpage.</p>
@@ -293,7 +293,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.020.jpg" alt="Image of slide number 20" />
+                <img src="/img/presentations/OpenSource/images/images.020.jpg" alt="Image of slide number 20" />
             </div>
             <div class="slide-notes">
                       <p>And, when you save it, on Github it looks like this.</p>
@@ -306,7 +306,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.021.jpg" alt="Image of slide number 21" />
+                <img src="/img/presentations/OpenSource/images/images.021.jpg" alt="Image of slide number 21" />
             </div>
             <div class="slide-notes">
                       <p>It looks something like this.</p>
@@ -319,7 +319,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.022.jpg" alt="Image of slide number 22" />
+                <img src="/img/presentations/OpenSource/images/images.022.jpg" alt="Image of slide number 22" />
             </div>
             <div class="slide-notes">
                       <p>But one last thing I can do is take all those markdown files, run them through a tool called pandoc, which produced a PDF.  I was then able to upload that onto KDP, and have a book to sell.</p>
@@ -330,7 +330,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.023.jpg" alt="Image of slide number 23" />
+                <img src="/img/presentations/OpenSource/images/images.023.jpg" alt="Image of slide number 23" />
             </div>
             <div class="slide-notes">
                       <p>Now, I’m not going to give JK Rowling any sleepless nights, but this is a nice thing to have, and people do buy this - sometimes.  I’m glad I did it.  </p>
@@ -345,7 +345,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.024.jpg" alt="Image of slide number 24" />
+                <img src="/img/presentations/OpenSource/images/images.024.jpg" alt="Image of slide number 24" />
             </div>
             <div class="slide-notes">
                       <p>So, I’ve been working in the finance industry in London for many years.  During that time, consuming open source has always been on the cards: programming languages and things like Linux and Apache were always available.</p>
@@ -358,7 +358,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.025.jpg" alt="Image of slide number 25" />
+                <img src="/img/presentations/OpenSource/images/images.025.jpg" alt="Image of slide number 25" />
             </div>
             <div class="slide-notes">
                       <p>As I said at the start of the talk, I am building ChatBots at Deutsche Bank.  And this is one of the things I have been building:  it’s a library of components that helps you build chatbots for Symphony (the chat platform I mentioned earlier).</p>
@@ -379,7 +379,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.026.jpg" alt="Image of slide number 26" />
+                <img src="/img/presentations/OpenSource/images/images.026.jpg" alt="Image of slide number 26" />
             </div>
             <div class="slide-notes">
                       <p>Firstly, it’s now understood that owning code is a bad thing. The more you have, the more work you have to look after it! </p>
@@ -390,7 +390,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.027.jpg" alt="Image of slide number 27" />
+                <img src="/img/presentations/OpenSource/images/images.027.jpg" alt="Image of slide number 27" />
             </div>
             <div class="slide-notes">
                       <p>As Bill gates said:</p>
@@ -401,7 +401,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.028.jpg" alt="Image of slide number 28" />
+                <img src="/img/presentations/OpenSource/images/images.028.jpg" alt="Image of slide number 28" />
             </div>
             <div class="slide-notes">
                       <p>Secondly, Network effects.  The more people looking at, using, working on a body of code, the more likely it is that bugs in it will get fixed. </p>
@@ -412,7 +412,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.029.jpg" alt="Image of slide number 29" />
+                <img src="/img/presentations/OpenSource/images/images.029.jpg" alt="Image of slide number 29" />
             </div>
             <div class="slide-notes">
                       <p>By getting other people outside the bank to use this, we have a chance of actually making something good, and lasting, like the Concordion contribution. </p>
@@ -425,7 +425,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.030.jpg" alt="Image of slide number 30" />
+                <img src="/img/presentations/OpenSource/images/images.030.jpg" alt="Image of slide number 30" />
             </div>
             <div class="slide-notes">
                       <p>The third reason, and maybe the main one, is that for Deutsche bank, it looks cool.  It looks impressive that they are contributing code for others to use.  They do press releases on this sort of stuff!   And I guess this is really a good reason for everyone.  Building things, and giving them away for others to use is a kind of charity.  So if you can possibly make it happen, then you should.  </p>
@@ -440,7 +440,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.031.jpg" alt="Image of slide number 31" />
+                <img src="/img/presentations/OpenSource/images/images.031.jpg" alt="Image of slide number 31" />
             </div>
             <div class="slide-notes">
                       <p>That’s it!  My name’s robmoffat, you can find me on github if you want - please star my projects while you’re there!  </p>

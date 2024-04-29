@@ -1,6 +1,6 @@
 ---
 template: post
-title: How to Win
+title: 2. How to Win
 permalink: /presentations/HowToWin/index.html
 description: If development is a game, how do I win?  How to apply Risk Management to development tasks to win the "meta-game".
 author: rob
@@ -23,7 +23,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.001.jpg" alt="Image of slide number 1" />
+                <img src="/img/presentations/HowToWin/images/images.001.jpg" alt="Image of slide number 1" />
             </div>
             <div class="slide-notes">
                 
@@ -32,7 +32,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.002.jpg" alt="Image of slide number 2" />
+                <img src="/img/presentations/HowToWin/images/images.002.jpg" alt="Image of slide number 2" />
             </div>
             <div class="slide-notes">
                       <p>Ok, so the next stop is the title of the talk:  If Dev is a game, how do I win?</p>
@@ -45,7 +45,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.003.jpg" alt="Image of slide number 3" />
+                <img src="/img/presentations/HowToWin/images/images.003.jpg" alt="Image of slide number 3" />
             </div>
             <div class="slide-notes">
                       <p>Let’s start with gambling games, with the caveat that I am neither a poker player or professional gambler.  </p>
@@ -62,7 +62,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.004.jpg" alt="Image of slide number 4" />
+                <img src="/img/presentations/HowToWin/images/images.004.jpg" alt="Image of slide number 4" />
             </div>
             <div class="slide-notes">
                       <p>So, let’s say there’s a horse race with these three famous fictional horses.  Actually Horse C is technically a pony, which probably explains her lower chance of winning.</p>
@@ -83,7 +83,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.005.jpg" alt="Image of slide number 5" />
+                <img src="/img/presentations/HowToWin/images/images.005.jpg" alt="Image of slide number 5" />
             </div>
             <div class="slide-notes">
                       <p>So let’s talk about Internal Models.  This is a really helpful concept in Risk-First:  the idea is, the Internal Model is what you know about the world, or, what you think you know.  </p>
@@ -112,7 +112,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.006.jpg" alt="Image of slide number 6" />
+                <img src="/img/presentations/HowToWin/images/images.006.jpg" alt="Image of slide number 6" />
             </div>
             <div class="slide-notes">
                       <p>So, Chess is a great example of the power of Internal Models.  </p>
@@ -131,7 +131,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.007.jpg" alt="Image of slide number 7" />
+                <img src="/img/presentations/HowToWin/images/images.007.jpg" alt="Image of slide number 7" />
             </div>
             <div class="slide-notes">
                       <p>This is Donald Rumsfeld’s famous quote about known unknowns: </p>
@@ -148,7 +148,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.008.jpg" alt="Image of slide number 8" />
+                <img src="/img/presentations/HowToWin/images/images.008.jpg" alt="Image of slide number 8" />
             </div>
             <div class="slide-notes">
                       <p>So, I’ve tried to break that down on this slide.   Here are the three categories of things in an Internal Model that Rumsfeld suggested, plus a fourth one:  things you know, but didn’t know you knew them, which I guess has to exist.  </p>
@@ -169,7 +169,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.009.jpg" alt="Image of slide number 9" />
+                <img src="/img/presentations/HowToWin/images/images.009.jpg" alt="Image of slide number 9" />
             </div>
             <div class="slide-notes">
                       <p>The key to being a successful gambler is not to try and pick the winner, necessarily, but to play the odds.  You need to have a better Internal Model of what is going to happen than whoever you’re making the bet with.</p>
@@ -182,7 +182,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.010.jpg" alt="Image of slide number 10" />
+                <img src="/img/presentations/HowToWin/images/images.010.jpg" alt="Image of slide number 10" />
             </div>
             <div class="slide-notes">
                       <p>This guy, Joseph Jagger, made a ton of money in the 1880's out of Roulette because he had a better Internal Model.  He sent people to casinos to record the results of each spin of the wheel.  And he found that some wheels were biased and so certain numbers came up more often than others.</p>
@@ -199,7 +199,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.011.jpg" alt="Image of slide number 11" />
+                <img src="/img/presentations/HowToWin/images/images.011.jpg" alt="Image of slide number 11" />
             </div>
             <div class="slide-notes">
                       <p>You might be thinking - that’s all very well, but it doesn’t really apply to software development, does it?  </p>
@@ -212,7 +212,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.012.jpg" alt="Image of slide number 12" />
+                <img src="/img/presentations/HowToWin/images/images.012.jpg" alt="Image of slide number 12" />
             </div>
             <div class="slide-notes">
                       <p>In order to “Win” at software development, you have to consider not just the game that you’re playing, but the meta-game.  </p>
@@ -225,7 +225,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.013.jpg" alt="Image of slide number 13" />
+                <img src="/img/presentations/HowToWin/images/images.013.jpg" alt="Image of slide number 13" />
             </div>
             <div class="slide-notes">
                       <p>A really naive understanding of this game might be:   I’m just going to knock this out as quickly as possible.</p>
@@ -242,7 +242,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.014.jpg" alt="Image of slide number 14" />
+                <img src="/img/presentations/HowToWin/images/images.014.jpg" alt="Image of slide number 14" />
             </div>
             <div class="slide-notes">
                       <p>So, second time around, the developer goes away for a whole week and comes back with something like this.</p>
@@ -255,7 +255,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.015.jpg" alt="Image of slide number 15" />
+                <img src="/img/presentations/HowToWin/images/images.015.jpg" alt="Image of slide number 15" />
             </div>
             <div class="slide-notes">
                       <p>So, what’s wrong with both these solutions?  Put simply, they are not managing risk well.</p>
@@ -274,7 +274,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.016.jpg" alt="Image of slide number 16" />
+                <img src="/img/presentations/HowToWin/images/images.016.jpg" alt="Image of slide number 16" />
             </div>
             <div class="slide-notes">
                       <p>Now, an interesting thing does happen once you build either of these login pages.  And that is, your internal model changes.  </p>
@@ -303,7 +303,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.017.jpg" alt="Image of slide number 17" />
+                <img src="/img/presentations/HowToWin/images/images.017.jpg" alt="Image of slide number 17" />
             </div>
             <div class="slide-notes">
                       <p>So, at this point, you’re probably thinking, “Couldn’t they use a third-party security library”, or “Shouldn’t they use a social login, like OAuth2”.  </p>
@@ -322,7 +322,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.018.jpg" alt="Image of slide number 18" />
+                <img src="/img/presentations/HowToWin/images/images.018.jpg" alt="Image of slide number 18" />
             </div>
             <div class="slide-notes">
                       <p>Ok, so obviously, we know that different solutions have different trade-offs. In a way, whenever we take an action to try and do something on a project, we are making a bet.  </p>
@@ -337,7 +337,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.019.jpg" alt="Image of slide number 19" />
+                <img src="/img/presentations/HowToWin/images/images.019.jpg" alt="Image of slide number 19" />
             </div>
             <div class="slide-notes">
                       <p>So, this is what I mean about games and meta-games.  At the bottom are the games:   short term goals that you think you should achieve to “win” in quotes.</p>
@@ -352,7 +352,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.020.jpg" alt="Image of slide number 20" />
+                <img src="/img/presentations/HowToWin/images/images.020.jpg" alt="Image of slide number 20" />
             </div>
             <div class="slide-notes">
                       <p>One of the ways I talk about this on Risk-First is that these bets are like moves on a “Risk-Landscape”.  You can’t escape risk, but you can move your project to a position on the landscape where the risks are more in your favour.</p>
@@ -371,7 +371,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.021.jpg" alt="Image of slide number 21" />
+                <img src="/img/presentations/HowToWin/images/images.021.jpg" alt="Image of slide number 21" />
             </div>
             <div class="slide-notes">
                       <p>So, let’s look at some things we do on projects, and see how they are like bets.</p>
@@ -384,7 +384,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.022.jpg" alt="Image of slide number 22" />
+                <img src="/img/presentations/HowToWin/images/images.022.jpg" alt="Image of slide number 22" />
             </div>
             <div class="slide-notes">
                       <p>So, what’s at stake with the refactoring?  Well, the main thing is time. Usually what I find is that I have some idea for a refactoring, and start implementing it, and it touches large tracts of the codebase, and I have to fix all that up, and then I have to fix a load of unit tests too.</p>
@@ -405,7 +405,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.023.jpg" alt="Image of slide number 23" />
+                <img src="/img/presentations/HowToWin/images/images.023.jpg" alt="Image of slide number 23" />
             </div>
             <div class="slide-notes">
                       <p>Adding a new feature to a piece of software is also a bet - again, it’s a step into the unknown.</p>
@@ -416,7 +416,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.024.jpg" alt="Image of slide number 24" />
+                <img src="/img/presentations/HowToWin/images/images.024.jpg" alt="Image of slide number 24" />
             </div>
             <div class="slide-notes">
                       <p>So, let’s look at the Stake:   </p>
@@ -433,7 +433,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.025.jpg" alt="Image of slide number 25" />
+                <img src="/img/presentations/HowToWin/images/images.025.jpg" alt="Image of slide number 25" />
             </div>
             <div class="slide-notes">
                       <p>So, something that I think people kind of understand intrinsically, or maybe subconsciously, is that an estimate is a bet.  </p>
@@ -446,7 +446,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.026.jpg" alt="Image of slide number 26" />
+                <img src="/img/presentations/HowToWin/images/images.026.jpg" alt="Image of slide number 26" />
             </div>
             <div class="slide-notes">
                       <p>So, the payoff, for doing Fixed Price Contract is that your business is going to make money - it’s funding risks will be reduced.</p>
@@ -463,7 +463,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.027.jpg" alt="Image of slide number 27" />
+                <img src="/img/presentations/HowToWin/images/images.027.jpg" alt="Image of slide number 27" />
             </div>
             <div class="slide-notes">
                       <p>So on the Risk-First website I have a short section covering a few more examples of things like this, which you can look at. </p>
@@ -478,7 +478,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.028.jpg" alt="Image of slide number 28" />
+                <img src="/img/presentations/HowToWin/images/images.028.jpg" alt="Image of slide number 28" />
             </div>
             <div class="slide-notes">
                       <p>So, hopefully we’ve covered a couple of things at this point.</p>
