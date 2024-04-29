@@ -24,7 +24,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.001.jpg" alt="Image of slide number 1" />
+                <img src="/img/presentations/onion/images/images.001.jpg" alt="Image of slide number 1" />
             </div>
             <div class="slide-notes">
                       <p>My name is Rob Moffat.  I am a Java and Javascript software developer working in London.  </p>
@@ -39,7 +39,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.002.jpg" alt="Image of slide number 2" />
+                <img src="/img/presentations/onion/images/images.002.jpg" alt="Image of slide number 2" />
             </div>
             <div class="slide-notes">
                       <p>So, what am I going to talk about today.   </p>
@@ -58,7 +58,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.003.jpg" alt="Image of slide number 3" />
+                <img src="/img/presentations/onion/images/images.003.jpg" alt="Image of slide number 3" />
             </div>
             <div class="slide-notes">
                       <p>Now, a third element to what I’m going to cover in my talk is an introduction to Risk-First.  </p>
@@ -72,7 +72,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.004.jpg" alt="Image of slide number 4" />
+                <img src="/img/presentations/onion/images/images.004.jpg" alt="Image of slide number 4" />
             </div>
             <div class="slide-notes">
                       <p> Ok, let’s start at the start.  My first job in finance was at Deutsche Bank (this is a picture of their main London office, on London Wall).</p>
@@ -93,7 +93,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.005.jpg" alt="Image of slide number 5" />
+                <img src="/img/presentations/onion/images/images.005.jpg" alt="Image of slide number 5" />
             </div>
             <div class="slide-notes">
                       <p>Around 2005 Basel 2 was introduced, which actually addressed this Operational Risk in banks, and forced them to start doing something about it. </p>
@@ -112,7 +112,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.006.jpg" alt="Image of slide number 6" />
+                <img src="/img/presentations/onion/images/images.006.jpg" alt="Image of slide number 6" />
             </div>
             <div class="slide-notes">
                       <p>Now, it turns out, bankers weren’t the only people thinking about risk.</p>
@@ -127,7 +127,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.007.jpg" alt="Image of slide number 7" />
+                <img src="/img/presentations/onion/images/images.007.jpg" alt="Image of slide number 7" />
             </div>
             <div class="slide-notes">
 
@@ -141,7 +141,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.008.jpg" alt="Image of slide number 8" />
+                <img src="/img/presentations/onion/images/images.008.jpg" alt="Image of slide number 8" />
             </div>
             <div class="slide-notes">
                       <p>Kent had a bunch of ideas in this book, that really deviated from the accepted “norms” of software development, like Pair Programming.</p>
@@ -164,7 +164,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.009.jpg" alt="Image of slide number 9" />
+                <img src="/img/presentations/onion/images/images.009.jpg" alt="Image of slide number 9" />
             </div>
             <div class="slide-notes">
                       <p>Kent Beck also co-invented JUnit.  As a Java developer, I use this all the time.</p>
@@ -181,7 +181,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.010.jpg" alt="Image of slide number 10" />
+                <img src="/img/presentations/onion/images/images.010.jpg" alt="Image of slide number 10" />
             </div>
             <div class="slide-notes">
                       <p>They are managing a couple of risks:  First, you want to test your code before you put it in production.  Putting untested code into production is an Operational Risk right there!</p>
@@ -200,7 +200,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.011.jpg" alt="Image of slide number 11" />
+                <img src="/img/presentations/onion/images/images.011.jpg" alt="Image of slide number 11" />
             </div>
             <div class="slide-notes">
                       <p>It seems weird that Kent started his book with this statement, but what people really remember about XP is just Pair Programming, Unit Tests and eating pizza.</p>
@@ -217,7 +217,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.012.jpg" alt="Image of slide number 12" />
+                <img src="/img/presentations/onion/images/images.012.jpg" alt="Image of slide number 12" />
             </div>
             <div class="slide-notes">
                       <p>These approaches are more popular than XP nowadays.  </p>
@@ -234,7 +234,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.013.jpg" alt="Image of slide number 13" />
+                <img src="/img/presentations/onion/images/images.013.jpg" alt="Image of slide number 13" />
             </div>
             <div class="slide-notes">
                       <p>I’m not here to rag on Waterfall.  </p>
@@ -249,7 +249,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.014.jpg" alt="Image of slide number 14" />
+                <img src="/img/presentations/onion/images/images.014.jpg" alt="Image of slide number 14" />
             </div>
             <div class="slide-notes">
                       <p>Waterfall leads to XP and Scrum and Lean and Kanban, lately DevOps and so on.</p>
@@ -266,7 +266,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.015.jpg" alt="Image of slide number 15" />
+                <img src="/img/presentations/onion/images/images.015.jpg" alt="Image of slide number 15" />
             </div>
             <div class="slide-notes">
                       <p>Who know’s what this curve is?  </p>
@@ -295,7 +295,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.016.jpg" alt="Image of slide number 16" />
+                <img src="/img/presentations/onion/images/images.016.jpg" alt="Image of slide number 16" />
             </div>
             <div class="slide-notes">
                       <p>I think there are a few reasons.  </p>
@@ -322,7 +322,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.017.jpg" alt="Image of slide number 17" />
+                <img src="/img/presentations/onion/images/images.017.jpg" alt="Image of slide number 17" />
             </div>
             <div class="slide-notes">
                       <p>OK, so all this talk of Financial Crises and Waterfall is a bit tedious.  Let’s mix things up a bit and do a quick Risk-First introduction.  </p>
@@ -341,7 +341,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.018.jpg" alt="Image of slide number 18" />
+                <img src="/img/presentations/onion/images/images.018.jpg" alt="Image of slide number 18" />
                 <small>From <a href="https://xkcd.com">XKCD</a></small>
             </div>
             <div class="slide-notes">
@@ -359,7 +359,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.019.jpg" alt="Image of slide number 19" />
+                <img src="/img/presentations/onion/images/images.019.jpg" alt="Image of slide number 19" />
             </div>
             <div class="slide-notes">
                       <p>That is, methodologies like Scrum, XP, Waterfall are collections of practices like Unit Testing, Stand-Ups and so on. And these practices are meant to manage risk.  </p>
@@ -382,7 +382,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.020.jpg" alt="Image of slide number 20" />
+                <img src="/img/presentations/onion/images/images.020.jpg" alt="Image of slide number 20" />
             </div>
             <div class="slide-notes">
                       <p>So, in order to convince you of this statement, I'm first going to try and convince you of some more specific statements.  </p>
@@ -395,7 +395,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.021.jpg" alt="Image of slide number 21" />
+                <img src="/img/presentations/onion/images/images.021.jpg" alt="Image of slide number 21" />
             </div>
             <div class="slide-notes">
                       <p>So instead of looking at Software Development for a moment, I’m just going to talk about the board game, Risk.</p>
@@ -408,7 +408,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.022.jpg" alt="Image of slide number 22" />
+                <img src="/img/presentations/onion/images/images.022.jpg" alt="Image of slide number 22" />
             </div>
             <div class="slide-notes">
                       <p>This is actually the board from the last time we played.  He is Yellow and I am Grey. </p>
@@ -435,7 +435,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.023.jpg" alt="Image of slide number 23" />
+                <img src="/img/presentations/onion/images/images.023.jpg" alt="Image of slide number 23" />
             </div>
             <div class="slide-notes">
                       <p>So, to win at risk, I was managing a balance of risks.  And those risks are the ones I know about, in my "Internal Model".   </p>
@@ -450,7 +450,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.024.jpg" alt="Image of slide number 24" />
+                <img src="/img/presentations/onion/images/images.024.jpg" alt="Image of slide number 24" />
             </div>
             <div class="slide-notes">
                       <p>Roulette is another game that's all about risk.  Generally, most people have the same internal model of this game:  If I put a chip down on number 12, I will get back 36 chips if it comes up.. but there are 37 slots on the wheel, because of the zero.   The bank always wins on that, and so it’s everso slightly rigged against you. </p>
@@ -463,7 +463,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.025.jpg" alt="Image of slide number 25" />
+                <img src="/img/presentations/onion/images/images.025.jpg" alt="Image of slide number 25" />
             </div>
             <div class="slide-notes">
                       <p>But this guy, Joseph Jagger, made a ton of money in the 1880's out of Roulette because he had a better Internal Model.  He sent stooges to casinos to record the results of each spin of the wheel.  And he found that some wheels were biased and so certain numbers came up more often than others.</p>
@@ -478,7 +478,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.026.jpg" alt="Image of slide number 26" />
+                <img src="/img/presentations/onion/images/images.026.jpg" alt="Image of slide number 26" />
             </div>
             <div class="slide-notes">
                       <p>So, we all know feedback loops are important right?</p>
@@ -505,7 +505,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.027.jpg" alt="Image of slide number 27" />
+                <img src="/img/presentations/onion/images/images.027.jpg" alt="Image of slide number 27" />
             </div>
             <div class="slide-notes">
                       <p>Now, for most of us... this just hurts our eyes.   We can see all of the problems right off.  I have no idea what a browser would do with this.   Browsers are very lenient so maybe some of it would work.</p>
@@ -528,7 +528,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.028.jpg" alt="Image of slide number 28" />
+                <img src="/img/presentations/onion/images/images.028.jpg" alt="Image of slide number 28" />
             </div>
             <div class="slide-notes">
                       <p>So let's look again at Waterfall.  As I said earlier, a lot of the “Financial Crisis era” regulation projects, we got through them with something like this:</p>
@@ -564,7 +564,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.029.jpg" alt="Image of slide number 29" />
+                <img src="/img/presentations/onion/images/images.029.jpg" alt="Image of slide number 29" />
             </div>
             <div class="slide-notes">
                       <p>But, a lot of the time, waterfall was addressing the wrong risks.</p>
@@ -575,7 +575,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.030.jpg" alt="Image of slide number 30" />
+                <img src="/img/presentations/onion/images/images.030.jpg" alt="Image of slide number 30" />
             </div>
             <div class="slide-notes">
                       <p>So, here we have the full equation.  By taking these actions in the middle, we address the risks on the left.</p>
@@ -600,7 +600,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.031.jpg" alt="Image of slide number 31" />
+                <img src="/img/presentations/onion/images/images.031.jpg" alt="Image of slide number 31" />
             </div>
             <div class="slide-notes">
                       <p>So one of the key features - maybe the key feature - of Scrum is that you work in Sprints.</p>
@@ -623,7 +623,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.032.jpg" alt="Image of slide number 32" />
+                <img src="/img/presentations/onion/images/images.032.jpg" alt="Image of slide number 32" />
             </div>
             <div class="slide-notes">
                       <p>So, that Coordination Risk is the major problem with doing Sprints.  </p>
@@ -654,7 +654,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.033.jpg" alt="Image of slide number 33" />
+                <img src="/img/presentations/onion/images/images.033.jpg" alt="Image of slide number 33" />
             </div>
             <div class="slide-notes">
                       <p>Another Agile Practice then: Refactoring.</p>
@@ -689,7 +689,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.034.jpg" alt="Image of slide number 34" />
+                <img src="/img/presentations/onion/images/images.034.jpg" alt="Image of slide number 34" />
             </div>
             <div class="slide-notes">
                       <p>How should we look at DevOps?</p>
@@ -716,7 +716,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.035.jpg" alt="Image of slide number 35" />
+                <img src="/img/presentations/onion/images/images.035.jpg" alt="Image of slide number 35" />
             </div>
             <div class="slide-notes">
                       <p>So, we’ve basically been looking at JUnit, DevOps, Waterfall, and Scrum from the perspective of what risks they manage.</p>
@@ -735,7 +735,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.036.jpg" alt="Image of slide number 36" />
+                <img src="/img/presentations/onion/images/images.036.jpg" alt="Image of slide number 36" />
             </div>
             <div class="slide-notes">
                       <p>—Different Practices are useful for dealing with different risks.</p>
@@ -762,7 +762,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.037.jpg" alt="Image of slide number 37" />
+                <img src="/img/presentations/onion/images/images.037.jpg" alt="Image of slide number 37" />
             </div>
             <div class="slide-notes">
                       <p>I found this image online of some people doing the same thing.  If anything this woman’s house is better than his.  </p>
@@ -777,7 +777,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.038.jpg" alt="Image of slide number 38" />
+                <img src="/img/presentations/onion/images/images.038.jpg" alt="Image of slide number 38" />
             </div>
             <div class="slide-notes">
                       <p>So, maybe what Risk-First is, is that I’m now sliding back down that Hype Cycle curve, into the “Trough of Disillusionment”, and I’m trying to figure out what’s useful and what’s not, in the Agile world.</p>
@@ -790,7 +790,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.039.jpg" alt="Image of slide number 39" />
+                <img src="/img/presentations/onion/images/images.039.jpg" alt="Image of slide number 39" />
             </div>
             <div class="slide-notes">
                       <p>—-</p>
@@ -805,7 +805,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.040.jpg" alt="Image of slide number 40" />
+                <img src="/img/presentations/onion/images/images.040.jpg" alt="Image of slide number 40" />
             </div>
             <div class="slide-notes">
                       <p>There’s a movement now called post-agile, which you can read about on-line.  </p>
@@ -823,7 +823,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.041.jpg" alt="Image of slide number 41" />
+                <img src="/img/presentations/onion/images/images.041.jpg" alt="Image of slide number 41" />
             </div>
             <div class="slide-notes">
                       <p>When Kent Beck and Ron Jeffries and Martin Fowler got together to write the agile manifesto, the software landscape was very different than today.</p>
@@ -838,7 +838,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.042.jpg" alt="Image of slide number 42" />
+                <img src="/img/presentations/onion/images/images.042.jpg" alt="Image of slide number 42" />
             </div>
             <div class="slide-notes">
                       <p>Working in IT is really interesting.  Every day is Christmas Eve.  There are always new technologies to play with, new ideas to look at new practices to try.  This is one of the reasons why it’s such a fun, crazy career to work in.</p>
@@ -853,7 +853,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.043.jpg" alt="Image of slide number 43" />
+                <img src="/img/presentations/onion/images/images.043.jpg" alt="Image of slide number 43" />
             </div>
             <div class="slide-notes">
                       <p>What’s getting harder and harder now, is figuring out which tools to use.  Not just methodologies, or practices, like we’ve looked at today, but tools of all kinds. </p>
@@ -870,7 +870,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.044.jpg" alt="Image of slide number 44" />
+                <img src="/img/presentations/onion/images/images.044.jpg" alt="Image of slide number 44" />
             </div>
             <div class="slide-notes">
                       <p>Who’s seen this game?  </p>
