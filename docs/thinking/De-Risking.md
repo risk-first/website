@@ -32,9 +32,18 @@ As we saw in the discussion of [Payoff](Consider-Payoff.md), any time you take a
 
 There are a set of _generic strategies_ for derisking which we'll look at below.  I'll give general examples for each and then we'll turn them into tactics you can use in software development specifically.
 
-## Mitigate (or Reduce)
+|Strategy                                       |Effect On Stakes _(Downsides, Attendant Risks)_ | Effect on Payoff _(Goals Achieved, Risks Reduced)_ |
+|-----------------------------------------------|:----------------------------------------------:|:--------------------------------------------------:|
+| [Reduce](#reduce)                             | _reduce_                                       |                                                    |
+| [Exploit](#exploit)                           |                                                | _increase_                                         |
+| [Avoid](#avoid)                               | _zero_                                         | _zero_                                             |
+| [Share](#share)                               | _change ownership_                             | _chang ownership_                                  |
+| [Accept](#accept) _(Control, Monitor, Ignore)_|                                                |                                                    |
 
-**Mitigating** risk is taking steps towards minimising the **impact** (as we discussed in the [Evaluating Risk](Evaluating-Risk.md) section) of a risk arising.  
+
+## Reduce 
+
+**Reducing** or **Mitigating** risk is taking steps towards minimising the **impact** (as we discussed in the [Evaluating Risk](Evaluating-Risk.md) section) of a risk arising.  
 
 > "To reduce, lessen, or decrease and thereby to make less severe or easier to bear." - [Mitigate, _Wiktionary_](https://en.wiktionary.org/wiki/mitigate) 
 
@@ -48,42 +57,57 @@ There are a set of _generic strategies_ for derisking which we'll look at below.
 
 ### Specific Tactics
 
-1.  **Do Risky Things Early**.  If you are building some software process which has ten steps in it, and the 9th step has a high probability of not being implementable, then _build the 9th step first_.  If you succeed, you've massively reduced the risk of the process construction.  IF you fail, you'll only have lost the time it took to build that one step.
+1.  **Do Risky Things Early**:  If you are building some software process which has ten steps in it, and the 9th step has a high probability of not being implementable, then _build the 9th step first_.  If you succeed, you've massively reduced the risk of the process construction.  IF you fail, you'll only have lost the time it took to build that one step.  _Build a proof of concept_.
 
-2.  **Choose Popular Technologies**.  Popular technologies are easier to get support for, easier to staff and you're less likely to uncover novel edge conditions that stop your progress.  They're also likely to be popular for a reason.
+2.  **Take Care With Dependencies**: Choose popular technologies, minimise dependencies and avoid single points of failure.   This tactic is explored in much more depth in the sections on [Dependency Risk](../risks/Dependency-Risk.ms) and [Software Dependency Risk](../risks/Software-Dependency-Risk.md)
 
-3.  **
+3.  **Create Options**:  Using _feature flags_ allows you to turn off functionality in production, avoiding an all-or-nothing commitment.  Working in branches gives the same optionality while in development. 
 
 ## Avoid
 
-**Avoiding** risk, means taking a route on the [Risk Landscape](../thinking/Glossary.md#risk-landscape) _around_ the risk.  
+**Avoiding** risk, means taking a route on the [Risk Landscape](../thinking/Glossary.md#risk-landscape) _around_ the risk.  Neither the stakes or the payoff are changed.  
 
 ### General Examples
 
-- **Avoiding flying** 
+ - **Avoiding flying** means that you're not going to be killed in a plane crash.  However, you also lose the benefits that flying affords.  
 
-For example, if you are working in a team which has no experience of relational databases, then _storing data in files_ might be a way to avoid the [Learning Curve Risk](../risks/Communication-Risk.md#learning-curve-risk) associated with this technology.  Of course, you may pick up other, more serious risks as a result: Relational Databases are software solutions to many kinds of [Coordination Risk](../risks/Coordination-Risk.md) problem, such as concurrent writes or consistency.
+ - **Don't Launch a SaaS**: _Not_ launching an online service _avoids_ the [Operational Risk](../risks/Operational-Risk.md) involved in running one.  Although you avoid the upsides too.
 
-_Not_ launching an online service _avoids_ the [Operational Risk](../risks/Operational-Risk.md) involved in running one.  Although you avoid the upsides too.
+### Specific Tactics
 
-## Transfer (sometimes Share)
+1.  **Avoid Unfamiliar Technologies**:  If you are working in a team which has no experience of relational databases, then storing data in files _might_ be a way to avoid the [Learning Curve Risk](../risks/Communication-Risk.md#learning-curve-risk) associated with this technology.  Of course, you may pick up other, more serious risks as a result: Relational Databases are software solutions to many kinds of [Coordination Risk](../risks/Coordination-Risk.md) problem, such as concurrent writes or consistency.
 
-**Transferring** risk means _making it someone else's problem_.  
+2.  **Do Your Research**:  If you're not clear about the risks of a particular decision up front, it can be hard to avoid them.  Note that often some of the biggest breakthroughs come from people _not_ following this advice such as the Wright Brothers inventing powered flight and Percy Spencer inventing the microwave oven.  (You shouldn't spend your life avoiding all risks.)
 
-For example, when I buy home insurance, the personal consequence of my house burning down is reduced.  It hasn't gone away completely, but at least the financial element of it is handled by the insurance company.
-- **Insurance** de-risks owning a house, going on holiday or driving a car.  Usually, the payment is small enough not to impact us too much.
+3.  **Specialise and Focus**:  Software that performs well at a single, novel purpose will be in competition with fewer alternatives.  You can avoid the risk of competition by looking for an unoccupied niche.  
 
-- **The National Health Service (NHS)** de-risks medical expense by pooling health-care costs across the entire population.  If you were struck down with a debilitating illness, then at least you wouldn't also have to pay to get better. 
+## Share
 
+**Sharing** or **transferring** risk means making it someone else's problem too. 
 
-**Transfer** of risk is an essential feature of [Software-as-a-Service (SaaS)](../risks/Software-Dependency-Risk.md):  someone else is responsible for making sure the service is up-and-running, backed up, etc.  
+> "Sharing with another party the burden of loss or the benefit of gain, from a risk, and the measures to reduce a risk" - [Risk Sharing, _Wikipedia_](https://en.wikipedia.org/wiki/Risk_management#Risk_sharing)
 
-Inside organisations, **Transfer** of risk can become a political game:
+### General Examples
+
+- **Insurance** de-risks owning a house, going on holiday or driving a car.  Usually, the payment is small enough not to impact us too much.   For the owner, the risk hasn't gone away completely, but at least the financial element of it is handled by the insurance company.
+
+- **The National Health Service (NHS)** de-risks medical expense by pooling health-care costs across the UK population.  If you were struck down with a debilitating illness, then at least you wouldn't also have to pay to get better.  It's still 
+
+- **High Ladders**:  a policy of mine is to not do house projects up high ladders or with unfamiliar power tools.  I just don't trust myself with this.  So, I employ professionals to do these jobs even though conceivably I could do them myself.
+
+### Specific Tactics
+
+1. **Software as a Service**: [Software-as-a-Service (SaaS)](../risks/Software-Dependency-Risk.md) is an example of transferring risk, since= someone else is responsible for making sure the service is up-and-running, backed up, etc.
+
+1. **
+ 
+1. **Delegating Responsibility**: Putting people in charge of specific risks shares or transfers the responsibility away from you.  Note that inside organisations, transfer of risk can become a political game:
 
 > "... ownership results in ‘one throat to choke’ for audit functions [and] from ownership comes responsibility. A lot of the political footwork in an enterprise revolves around trying to not own technologies. Who wants to be responsible for Java usage across a technology function of dozens of thousands of staff, any of whom might be doing crazy stuff? You first, mate. " - [Why Are Enterprises So Slow?, _zwischenzugs.com_](https://zwischenzugs.com/2018/10/02/why-are-enterprises-so-slow/)
 
-## Ignore / Accept
+## Accept
 
+(or ignore)
 **Accepting** risk is to deal with it when it arises.  
 
 One example is the [Key Person Risk](../risks/Scarcity-Risk.md#staff-risk) involved in having a super-star programmer on the team.  Although there would be fall-out if they left, often they are a risk worth accepting because of the value they bring.
