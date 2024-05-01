@@ -37,8 +37,11 @@ There are a set of _generic strategies_ for derisking which we'll look at below.
 | [Reduce](#reduce)                             | _reduce_                                       |                                                    |
 | [Exploit](#exploit)                           |                                                | _increase_                                         |
 | [Avoid](#avoid)                               | _zero_                                         | _zero_                                             |
-| [Share](#share)                               | _change ownership_                             | _chang ownership_                                  |
-| [Accept](#accept) _(Control, Monitor, Ignore)_|                                                |                                                    |
+| [Share](#share)                               | _modify ownership_                             | _modify ownership_                                  |
+| [Retain](#retain)&nbsp;_consisting&nbsp;of..._|                                                |                                                    |
+| &nbsp;&nbsp; - [Ignore](#ignore)              |                                                |                                                    |
+| &nbsp;&nbsp; - [Control](#control)            | _limit_                                        |                                                    |
+| &nbsp;&nbsp; - [Monitor](#monitor)            | _monitor_                                      |                                                    |
 
 
 ## Reduce 
@@ -59,9 +62,39 @@ There are a set of _generic strategies_ for derisking which we'll look at below.
 
 1.  **Do Risky Things Early**:  If you are building some software process which has ten steps in it, and the 9th step has a high probability of not being implementable, then _build the 9th step first_.  If you succeed, you've massively reduced the risk of the process construction.  IF you fail, you'll only have lost the time it took to build that one step.  _Build a proof of concept_.
 
-2.  **Take Care With Dependencies**: Choose popular technologies, minimise dependencies and avoid single points of failure.   This tactic is explored in much more depth in the sections on [Dependency Risk](../risks/Dependency-Risk.ms) and [Software Dependency Risk](../risks/Software-Dependency-Risk.md)
+1.  **Take Care With Dependencies**: Choose popular technologies and reliable components. This tactic is explored in much more depth in [Software Dependency Risk](../risks/Software-Dependency-Risk.md)
 
-3.  **Create Options**:  Using _feature flags_ allows you to turn off functionality in production, avoiding an all-or-nothing commitment.  Working in branches gives the same optionality while in development. 
+1.  **Redundancy**: Avoid single points of failure.   See [Dependency Risk](../risks/Dependency-Risk.ms) for more on this.
+
+1.  **Create Options**:  Using _feature flags_ allows you to turn off functionality in production, avoiding an all-or-nothing commitment.  Working in branches gives the same optionality while in development. 
+
+1.  **Practising**:  Running fire-drills or rehearsing risky scenarios helps to de-risk those occurring.
+
+## Exploit
+
+**Exploiting** or **enhancing** as a strategy usually means taking advantage of the upside of a risk or opportunity.  That is, either increasing the probability or impact respectively of it happening.
+
+### General Examples
+
+- **Buying extra stock** to exploit the opportunity of a rush on sales over the Christmas period.
+
+- **Mergers** are a way for a firm to double down on exploiting a particular market, whilst at the same time reducing the risk of competition.
+
+- **Locating In A Busy City** might exploit a sales opportunity, whilst at the same time perhaps increasing rental costs.
+
+- **Star Players**: Sports teams will often spend lavishly on a star player in the hope of winning the title, risking their balance sheet in the process.
+  
+### Specific Tactics
+
+1. **Address multiple risks**: Writing some unit tests on your project might be an opportunity to build your reputation in your team as well as be an opportunity to _get better at testing_ and perhaps learn some new tools which improve your CV... if you exploit the opportunity in the right way.
+
+1. **Forecast**: It's often worth doing some forecasting to see what would happen if certain opportunities occur.  Will the servers stay up if you are unexpectedly featured in the news?  
+
+1. **Environmental Scanning**:  Technology changes quickly, so keep track of the latest trends to see if any of them are an opportunity for you or your project.
+
+1. **Going all-in**: Making a big bet on the most promising opportunity might work better than trying to be balanced, especially if there is competition.  Compare with...
+
+1. **Barbell Strategy**: Have a low-risk bet that will pay the rent (e.g. some consulting) whilst also having a high-risk bet that might pay high dividends (e.g. your AI-based trading algorithm).
 
 ## Avoid
 
@@ -71,7 +104,7 @@ There are a set of _generic strategies_ for derisking which we'll look at below.
 
  - **Avoiding flying** means that you're not going to be killed in a plane crash.  However, you also lose the benefits that flying affords.  
 
- - **Don't Launch a SaaS**: _Not_ launching an online service _avoids_ the [Operational Risk](../risks/Operational-Risk.md) involved in running one.  Although you avoid the upsides too.
+ - **Don't Launch a SaaS**: _Not_ launching an online service _avoids_ the [Operational Risk](../risks/Operational-Risk.md) involved in running one.  Although you'll need to look for some other way to make a living.
 
 ### Specific Tactics
 
@@ -79,7 +112,7 @@ There are a set of _generic strategies_ for derisking which we'll look at below.
 
 2.  **Do Your Research**:  If you're not clear about the risks of a particular decision up front, it can be hard to avoid them.  Note that often some of the biggest breakthroughs come from people _not_ following this advice such as the Wright Brothers inventing powered flight and Percy Spencer inventing the microwave oven.  (You shouldn't spend your life avoiding all risks.)
 
-3.  **Specialise and Focus**:  Software that performs well at a single, novel purpose will be in competition with fewer alternatives.  You can avoid the risk of competition by looking for an unoccupied niche.  
+3.  **Specialise and Focus**:  Software that performs well at a single, novel purpose will be in competition with fewer alternatives and have a smaller risk surface overall.  You can avoid the risk of competition by looking for an unoccupied niche.  
 
 ## Share
 
@@ -93,42 +126,79 @@ There are a set of _generic strategies_ for derisking which we'll look at below.
 
 - **The National Health Service (NHS)** de-risks medical expense by pooling health-care costs across the UK population.  If you were struck down with a debilitating illness, then at least you wouldn't also have to pay to get better.  It's still 
 
-- **High Ladders**:  a policy of mine is to not do house projects up high ladders or with unfamiliar power tools.  I just don't trust myself with this.  So, I employ professionals to do these jobs even though conceivably I could do them myself.
+- **High Ladders**:  a policy of mine is to avoid working up high ladders or with unfamiliar power tools.  I just don't trust myself with this.  I employ professionals to do these jobs even though conceivably I could do them myself.
 
 ### Specific Tactics
 
-1. **Software as a Service**: [Software-as-a-Service (SaaS)](../risks/Software-Dependency-Risk.md) is an example of transferring risk, since= someone else is responsible for making sure the service is up-and-running, backed up, etc.
+1. **Software as a Service**: [Software-as-a-Service (SaaS)](../risks/Software-Dependency-Risk.md) is an example of transferring risk, since= someone else is responsible for making sure the service is up-and-running, backed up, etc.   You 
 
-1. **
+1. **Employ Good People**: Having staff is a great way to share risk, whether you are a firm or a team.  The employee takes care of some of the risk for you.  In return, you're paying them a wage which helps them manage their own risks.  This is the time-tested, win-win symbiosis of a good trade.    
+
+1. **Escalating**: If your team is receiving poor service from a supplier it might be in your interests to share this risk with say the legal department or procurement.  
+ 
+1. **Taking Responsibility**: If your firm is struggling to deal with a certain risk, why not become the expert and make yourself indispensable?  In the section on [Process Risk](../risks/Process-Risk.md) we'll be looking at how this can happen organically within a company.    
  
 1. **Delegating Responsibility**: Putting people in charge of specific risks shares or transfers the responsibility away from you.  Note that inside organisations, transfer of risk can become a political game:
 
 > "... ownership results in ‘one throat to choke’ for audit functions [and] from ownership comes responsibility. A lot of the political footwork in an enterprise revolves around trying to not own technologies. Who wants to be responsible for Java usage across a technology function of dozens of thousands of staff, any of whom might be doing crazy stuff? You first, mate. " - [Why Are Enterprises So Slow?, _zwischenzugs.com_](https://zwischenzugs.com/2018/10/02/why-are-enterprises-so-slow/)
 
-## Accept
+## Retain
 
-(or ignore)
-**Accepting** risk is to deal with it when it arises.  
+**Retaining** or **accepting** risk is to realise that you can't reduce, share or avoid _everything_ because that would be too time-consuming.  Some risks you just have to accept.   Within the generic strategy of retaining a risk, there are three further sub-strategies worth considering: [Ignoring](#ignore), [Controlling](#control) and [Monitoring](#monitor).
 
-One example is the [Key Person Risk](../risks/Scarcity-Risk.md#staff-risk) involved in having a super-star programmer on the team.  Although there would be fall-out if they left, often they are a risk worth accepting because of the value they bring.
+## Ignore
 
-Another example is using particular software dependencies:   building a mobile application which requires a Facebook account to log in might give rise to the risk that people without Facebook accounts can't log in, but might simplify the software to such an extent that it's worthwhile.
+**Ignoring** a risk entirely, or indefinitely postponing dealing with it might acceptable if all the other options are worse. 
 
-Whereas **Accepting** a risk seems to imply an eyes-wide-open examination; **Ignoring** seems to imply that either the risk is so insignificant it doesn't warrant evaluation, or so daunting that it can't be stared down.  Either way, **Ignoring** a risk amounts to the same thing as **Accepting** it, since you're not doing anything about it. 
+### General Examples
 
-**Accepting** a risk has to occur _before_ we can **Mitigate** it.  
+- **War** is a risk that is usually accepted by businesses.  You're unlikely to be able to buy insurance against this.
 
+- **Key Staff**: Having a super-star on the team is risky as they might leave.  But sometimes they are a risk worth accepting because of the value they bring.  This is covered in more detail in [Staff Risk](../risks/Scarcity-Risk.md#staff-risk).
 
+### Specific Tactics
 
-### A Nice Problem To Have
+1. **Look for nice problems to have**: Worrying about running out of space in the database might be worth ignoring when you have few users.  Clearly it is a risk, would be a nice problem to have, because it could only happen if we had more users.   Similarly, worrying about a missing piece of functionality might be  worth ignoring:  if users start complaining then that's _a nice problem to have_ as they are using your software and want to see it improve.
 
-**Ignoring** or **Accepting** risks is a lot less work than **Mitigating** them, so sometimes it can feel negligent to just add them to the backlog or risk-register without doing anything immediately about them.  One useful test I have found is whether "This would be a nice problem to have".  For example:
+1. **Accept Dependencies**:  Building a mobile application which requires a social account to log in might give rise to the risk that people without social accounts can't log in, but might simplify development to such an extent that it's worth ignoring for the time being.
 
-> "Running out of space in the database would be a nice problem to have, because it would mean we have lots of users"
+## Control
 
-> "Users complaining about lacking function X would be a nice problem to have, because it would mean they were using the system"
+**Controlling** or **containing** risks means that you accept the risk but you have provisions to take action should the risk occur.   
 
-Applying this kind of logic at the start of a project leads you towards building a [Minimum Viable Product](https://en.wikipedia.org/wiki/Minimum_viable_product).
+### General Examples
+
+- **Stop-Loss Trades** are an investment where should the trade start loosing too much money, the trade is closed out, limiting the downside.
+
+- **Incident Reporting Plans**: often businesses will have a procedure for dealing with irregular behaviour (such as a cyber attack). 
+
+### Specific Tactics    
+
+1. **Time-Boxing**: give an approach a week (say) to prove itself.  If it can't be done in this time, we move on and try a different approach.
+
+1. **Emergency Funds**: Setting aside sufficient money to deal with a risk if it occurs.
+
+1. **Slack**: Accepting that sometimes tasks run long and building this into the plan.  [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk) examines in detail how this works. 
+
+## Monitor
+
+**Monitoring** a risk, or creating a **detective control** is aimed at identifying and addressing risks after they have occurred. 
+
+### General Examples
+
+- **Financial Reports** help investors keep an eye on the risk of their stocks.
+
+- **Health and Safety** inspections are valuable for businesses as they might help highlight increasingly risky working practices.
+
+## Specific Tactics
+
+1.  **Establish Metrics** that allow you to observe the performance of the systems you build.   [Map and Territory Risk](../risks/Map-and-Territory.md) covers this in more detail.
+
+1.  **Second opinions** and **audits** correct for errors in monitoring by people who can be too close to the problem.
+
+1.  **Sharing data** on performance might help with accountability and awareness of certain risks.
+
+1.  **Dashboards and Logging** are good examples of monitoring in action used extensively in software products.
 
 ### Learned Helplessness
 
@@ -136,26 +206,7 @@ Sometimes risks just go away on their own.  [Learned Helplessness](https://en.wi
 
 > "Learned helplessness is behaviour typical of animals, and in rare cases humans, that occurs when the subject endures repeatedly painful or otherwise aversive stimuli which it is unable to escape or avoid. After such experience, the organism often fails to learn or accept "escape" or "avoidance" in new situations where such behavior would likely be effective. " - [Learned Helplessness, _Wikipedia_](https://en.wikipedia.org/wiki/Learned_helplessness)
 
-## Contain
 
-**Containing** risks means setting aside sufficient time or money to deal with them if they occur.    
-
-Whenever a project-manager builds slack into a project plan, this is **Containment**.   "Time-Boxing" is also containment: this is where you give a piece of work a week (say) to prove itself.  If it can't be done in this time, we move on and try a different approach.
-
-In the section on [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk) we are going to look in detail at how this works. 
-
-### Specific Tectics
-
-1.  **Time-Boxing**
-
-
-## Exploit
-
-**Exploiting** as a strategy usually means taking advantage of the upside of a risk.   For example, ensuring enough stock is available to mitigate the risk of a rush on sales over the Christmas period, or ensuring your website has enough bandwidth to capture all the traffic headed towards it after it's featured on television.  
-
-Going back to the example of home insurance, the insurance company is **exploiting** the risk of my house burning down by selling me insurance.  This is a common pattern:  wherever there is risk, there is likely to be a way to profit from it.  
-
-Later, in the section on [Process Risk](../risks/Process-Risk.md) we'll be looking at how **exploiting risk** can happen organically within a company. 
 
 ## A Vocabulary
 
