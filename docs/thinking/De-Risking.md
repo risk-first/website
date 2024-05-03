@@ -19,18 +19,16 @@ tweet: yes
 
 # Derisking
 
-In this section, we're going to more closely at [Taking Action](Glossary.md#taking-action) and separate out the ways in which this can be done.   Along the way, I'll introduce the correct risk management terms and we'll see how each of these apply to software development.
+In this section, we're going to more closely at what, so far, we've called "[Taking Action](Glossary.md#taking-action)" and separate out different ways this can be done.   We'll introduce the correct risk management terms and give examples of how to apply these to software development.
 
 So far in Risk-First, we've talked about [Taking Action](Glossary.md#taking-action) as having two effects:
 
  1. It's the way in which we [Meet Reality](Glossary.md#meet-reality) to learn about the world and uncover [Hidden Risks](Glossary.md#hidden-risk).
  2. It's the way we change our position on the [Risk Landscape](Glossary.md#risk-landscape) via actions with a positive [Payoff](Glossary.md#payoff).
  
-As we saw in the discussion of [Payoff](Consider-Payoff.md), any time you take action you are accruing [attendant risk](Glossary.md#attendant-risk), and we want to take actions with the most favourable payoff.  In this section, we are going to look at common ways in which we can lean the payoff in our favour.  This is called _derisking_:   
+As we saw in the discussion of [Payoff](Consider-Payoff.md), any time you take action you are accruing [attendant risk](Glossary.md#attendant-risk), and we want to take actions with the most favourable payoff.  So here we are going to look at common ways in which we can lean the payoff in our favour.  This is called _derisking_:   
 
 > "To remove the risk from; to make safe. " - [Derisk, _Wiktionary_](https://en.wiktionary.org/wiki/derisk)
-
-There are a set of _generic strategies_ for derisking which we'll look at below.  I'll give general examples for each and then we'll turn them into tactics you can use in software development specifically.
 
 |Strategy                                       |Effect On Stakes _(Downsides, Attendant Risks)_ | Effect on Payoff _(Goals Achieved, Risks Reduced)_ |
 |-----------------------------------------------|:----------------------------------------------:|:--------------------------------------------------:|
@@ -43,6 +41,7 @@ There are a set of _generic strategies_ for derisking which we'll look at below.
 | &nbsp;&nbsp; - [Control](#control)            | _limit_                                        |                                                    |
 | &nbsp;&nbsp; - [Monitor](#monitor)            | _monitor_                                      |                                                    |
 
+The table above lists a set of _generic strategies_ for derisking which we'll look at in more detail below.  I'll give general examples for each and then we'll turn them into specific tactics you can use in software development.
 
 ## Reduce 
 
@@ -56,17 +55,17 @@ There are a set of _generic strategies_ for derisking which we'll look at below.
 
 - **Backups and Source-Control** mitigates the impact of computer failure.  Hardware _still fails_ but the impact is less if we can restore from a recent backup.  Our process is changed _slightly_ by this imposition but we're not massively inconvenienced.
 
-- **Using Commonly-Known Languages** mitigates the impact of highly specialised staff quitting and leaving you hunting for replacements.  Whilst hiring people is hard work at the best of times, hiring PL/1 programmers is _really hard_.
+- **Fire alarms** don't stop a fire but by helping get people out of the building faster they save lives.
 
 ### Specific Tactics
 
 1.  **Do Risky Things Early**:  If you are building some software process which has ten steps in it, and the 9th step has a high probability of not being implementable, then _build the 9th step first_.  If you succeed, you've massively reduced the risk of the process construction.  IF you fail, you'll only have lost the time it took to build that one step.  _Build a proof of concept_.
 
-1.  **Take Care With Dependencies**: Choose popular technologies and reliable components. This tactic is explored in much more depth in [Software Dependency Risk](../risks/Software-Dependency-Risk.md)
+1.  **Take Care With Dependencies**: Choose popular technologies and known reliable components. Whilst hiring people is hard work at the best of times, hiring PL/1 programmers is _really hard_. This tactic is explored in much more depth in [Software Dependency Risk](../risks/Software-Dependency-Risk.md)
 
-1.  **Redundancy**: Avoid single points of failure.   See [Dependency Risk](../risks/Dependency-Risk.ms) for more on this.
+1.  **Redundancy**: Avoid single points of failure.   For example, Pair Programming is a control espoused by [Extreme Programming](../practices/Agile.md#extreme-programming) to reduce [Key Person Risk](../risks/Agency-Risk.md) and [Communication Risk](../risks/Communication-Risk.md).  See [Dependency Risk](../risks/Dependency-Risk.ms) for more on this.  
 
-1.  **Create Options**:  Using _feature flags_ allows you to turn off functionality in production, avoiding an all-or-nothing commitment.  Working in branches gives the same optionality while in development. 
+1.  **Create Options**:  Using _feature flags_ allows you to turn off functionality in production, avoiding an all-or-nothing commitment.  Working in branches gives the same optionality while developing. 
 
 1.  **Practising**:  Running fire-drills or rehearsing risky scenarios helps to de-risk those occurring.
 
@@ -110,9 +109,9 @@ There are a set of _generic strategies_ for derisking which we'll look at below.
 
 1.  **Avoid Unfamiliar Technologies**:  If you are working in a team which has no experience of relational databases, then storing data in files _might_ be a way to avoid the [Learning Curve Risk](../risks/Communication-Risk.md#learning-curve-risk) associated with this technology.  Of course, you may pick up other, more serious risks as a result: Relational Databases are software solutions to many kinds of [Coordination Risk](../risks/Coordination-Risk.md) problem, such as concurrent writes or consistency.
 
-2.  **Do Your Research**:  If you're not clear about the risks of a particular decision up front, it can be hard to avoid them.  Note that often some of the biggest breakthroughs come from people _not_ following this advice such as the Wright Brothers inventing powered flight and Percy Spencer inventing the microwave oven.  (You shouldn't spend your life avoiding all risks.)
+2.  **Do Your Research**:  If you're not clear about the risks of a particular decision up front, it can be hard to avoid them.  Although, some of the biggest breakthroughs come from people _not_ following this advice such as the Wright Brothers inventing powered flight and Percy Spencer inventing the microwave oven.  Don't spend your life avoiding all risks.
 
-3.  **Specialise and Focus**:  Software that performs well at a single, novel purpose will be in competition with fewer alternatives and have a smaller risk surface overall.  You can avoid the risk of competition by looking for an unoccupied niche.  
+3.  **Specialise and focus**:  Software that performs well at a single, novel purpose will be in competition with fewer alternatives and have a smaller risk surface overall.  You can avoid the risk of competition by looking for an unoccupied niche.  
 
 ## Share
 
@@ -122,19 +121,19 @@ There are a set of _generic strategies_ for derisking which we'll look at below.
 
 ### General Examples
 
-- **Insurance** de-risks owning a house, going on holiday or driving a car.  Usually, the payment is small enough not to impact us too much.   For the owner, the risk hasn't gone away completely, but at least the financial element of it is handled by the insurance company.
+- **Insurance** de-risks owning a house, going on holiday or driving a car.  Usually, the payment is small enough not to impact us too much.   For the owner, the risk hasn't gone away completely, but at least the financial loss element of it is handled by the insurance company.
 
-- **The National Health Service (NHS)** de-risks medical expense by pooling health-care costs across the UK population.  If you were struck down with a debilitating illness, then at least you wouldn't also have to pay to get better.  It's still 
+- **The National Health Service (NHS)** derisks health care across the UK population.  You still have the risk of illness but not the financial risk of also have to pay to get better. 
 
 - **High Ladders**:  a policy of mine is to avoid working up high ladders or with unfamiliar power tools.  I just don't trust myself with this.  I employ professionals to do these jobs even though conceivably I could do them myself.
 
 ### Specific Tactics
 
-1. **Software as a Service**: [Software-as-a-Service (SaaS)](../risks/Software-Dependency-Risk.md) is an example of transferring risk, since= someone else is responsible for making sure the service is up-and-running, backed up, etc.   You 
+1. **Software as a Service**: [Software-as-a-Service (SaaS)](../risks/Software-Dependency-Risk.md) is an example of transferring risk, since another party is responsible for making sure the service is up-and-running, backed up, etc.  
 
 1. **Employ Good People**: Having staff is a great way to share risk, whether you are a firm or a team.  The employee takes care of some of the risk for you.  In return, you're paying them a wage which helps them manage their own risks.  This is the time-tested, win-win symbiosis of a good trade.    
 
-1. **Escalating**: If your team is receiving poor service from a supplier it might be in your interests to share this risk with say the legal department or procurement.  
+1. **Escalating**: If your team is receiving poor service from a supplier it might be in your interests to share this risk with say the legal department or procurement team.  
  
 1. **Taking Responsibility**: If your firm is struggling to deal with a certain risk, why not become the expert and make yourself indispensable?  In the section on [Process Risk](../risks/Process-Risk.md) we'll be looking at how this can happen organically within a company.    
  
@@ -158,19 +157,25 @@ There are a set of _generic strategies_ for derisking which we'll look at below.
 
 ### Specific Tactics
 
-1. **Look for nice problems to have**: Worrying about running out of space in the database might be worth ignoring when you have few users.  Clearly it is a risk, would be a nice problem to have, because it could only happen if we had more users.   Similarly, worrying about a missing piece of functionality might be  worth ignoring:  if users start complaining then that's _a nice problem to have_ as they are using your software and want to see it improve.
+1. **Look for nice problems to have**: Worrying about running out of space in the database might be worth ignoring.  Clearly it is a risk, would be a _nice problem to have_, because it could only happen if we had more users.   Similarly, worrying about a missing piece of functionality might be  worth ignoring:  if users start complaining then that's _a nice problem to have_ as they are using your software and want to see it improve.
 
 1. **Accept Dependencies**:  Building a mobile application which requires a social account to log in might give rise to the risk that people without social accounts can't log in, but might simplify development to such an extent that it's worth ignoring for the time being.
 
 ## Control
 
-**Controlling** or **containing** risks means that you accept the risk but you have provisions to take action should the risk occur.   
+**Controlling** or **containing** risks means that you accept the risk but you have provisions to for when things get out of hand.  
+
+There is a grey area here, because on the one hand you are [retaining](#retain) some of the risk but also trying to [reduce](#reduce) its worst features.  
 
 ### General Examples
 
 - **Stop-Loss Trades** are an investment where should the trade start loosing too much money, the trade is closed out, limiting the downside.
 
 - **Incident Reporting Plans**: often businesses will have a procedure for dealing with irregular behaviour (such as a cyber attack). 
+
+- **Regulations**: firms such as banks or drug companies operate under heavy regulation, designed to control and limit both the amount of risk they take on and that expose their customers to.
+
+- **Training** people on risky tasks doesn't stop them performing the task, but might prevent them taking too many unnecessary risks.
 
 ### Specific Tactics    
 
@@ -182,13 +187,15 @@ There are a set of _generic strategies_ for derisking which we'll look at below.
 
 ## Monitor
 
-**Monitoring** a risk, or creating a **detective control** is aimed at identifying and addressing risks after they have occurred. 
+**Monitoring** a risk, or creating a **detective control** is aimed at identifying and quantifying risk so that it can be managed properly. 
 
 ### General Examples
 
 - **Financial Reports** help investors keep an eye on the risk of their stocks.
 
 - **Health and Safety** inspections are valuable for businesses as they might help highlight increasingly risky working practices.
+
+- **Modelling** is often helpful in complex environments like building design or finance where it's not easy to see risks clearly.  
 
 ## Specific Tactics
 
@@ -200,17 +207,9 @@ There are a set of _generic strategies_ for derisking which we'll look at below.
 
 1.  **Dashboards and Logging** are good examples of monitoring in action used extensively in software products.
 
-### Learned Helplessness
-
-Sometimes risks just go away on their own.  [Learned Helplessness](https://en.wikipedia.org/wiki/Learned_helplessness), on the other hand, is where we _could_ do something about the risk, but fail to see that as an option:
-
-> "Learned helplessness is behaviour typical of animals, and in rare cases humans, that occurs when the subject endures repeatedly painful or otherwise aversive stimuli which it is unable to escape or avoid. After such experience, the organism often fails to learn or accept "escape" or "avoidance" in new situations where such behavior would likely be effective. " - [Learned Helplessness, _Wikipedia_](https://en.wikipedia.org/wiki/Learned_helplessness)
-
-
-
 ## A Vocabulary
 
-Here we've been building towards a vocabulary with which to communicate to our team-mates about which risks are important to us, which actions we believe are the right ones, and which tools we should use.
+Here we've been building towards a vocabulary with which to communicate to our team-mates about which risks are important to us (_reduce_, _exploit_, _share_, _retain_, _control_, _monitor_).  This helps us discuss which actions we believe are the right ones and how we should deal with them.
 
 In the next section we will see [an example of this in action](A-Conversation.md).
 
