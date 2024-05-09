@@ -32,10 +32,10 @@ As you can see in the diagram above, it's a **Feedback Loop**.   How _fast_ shou
 
 In a software development scenario, you should also test your model against reality early and safely.  To do this, you likely need to set up multiple feedback loops, like:
 
- - **Bug Reports and Feature Requests** tell you how the users are getting on with the software.
- - **[Monitoring Tools and Logs](../risks/Operational-Risk.md)** allow you to find out how your software is doing in reality.
+ - **Bug Reports and Feature Requests** lets users tell you how they are getting on with the software.
+ - **Monitoring Tools and Logs** allow you to find out how your software is doing in reality.
  - **Dog-Fooding** i.e using the software you write yourself might be faster than talking to users.
- - **[Continuous Delivery](https://en.wikipedia.org/wiki/Continuous_delivery)** is about putting software into production as soon as it's written.   
+ - **Continuous Delivery** is about putting software into production as soon as it's written, to get feedback on it.   
  - **Integration Testing** is a faster way of meeting _some_ reality than continually deploying code and re-testing it manually.
  - **Unit Testing** is a faster feedback loop than Integration Testing. 
  - **Compilation** warns you about logical inconsistencies in your code.
@@ -52,7 +52,7 @@ Imagine for a second that you had a special time-travelling machine.  With it, y
 
 That'd be neat, eh?  If you did have this, would there be any point at all in a compiler?   Probably not, right?  
 
-The whole _reason_ we have tools like compilers is because they give us a short-cut way to get some limited experience of reality _faster_ than would otherwise be possible.  Because cadence is really important:  the faster we test our ideas, the more quickly we'll find out if they're correct or not.
+The whole _reason_ we have tools like compilers is because they give us a short-cut way to get some limited experience of reality _faster_ than would otherwise be possible.  Because cadence is really important:  the faster we test our ideas, the more quickly we'll find out if they're correct or not and the faster we can back out of the bets that aren't [paying off](Payoff.md)
 
 ### Development Cycle Time
 
@@ -67,6 +67,7 @@ The [Testing Pyramid](http://www.agilenutshell.com/episodes/41-testing-pyramid) 
 - **Manual Tests** have a _very slow feedback loop_, so have _even fewer of them_.  Use them as a last resort.  But note - they are essential.
 
 ![The Testing Pyramid](/img/generated/introduction/testing_pyramid.png)
+
 
 ### Production
 
