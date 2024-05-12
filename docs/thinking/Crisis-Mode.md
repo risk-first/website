@@ -75,7 +75,7 @@ In 2020 the world was plunged into pandemic.  Everything changed very quickly, i
 
 The general ideas they espouse have stood the test of time but where they recommend particular technologies things are looking more shaky.  [Pair Programming](../practices/Pair-Programming.md) where two developers share the same keyboard doesn't work so well anymore.   However, it can be made to work over video conferencing and when we all move to augmented reality headsets perhaps there will be another configuration of this.  We can now do Pair Programming with our artificial intelligence "co-pilots" - but is that managing the same risks?
 
-The point I am making here is that while there are [technology tools to support risk management](Track-Risk.md) the idea itself is not wedded to a particular technology, culture or way of working. 
+The point I am making here is that while there are [technology tools to support risk management](Track-Risk.md) the idea itself is not wedded to a particular technology, culture or way of working.  And, it is as old as the hills.
 
 > "We've survived 200,000 years as humans.  Don't you think there's a reason why we survived? We're good at risk management." - [Nassim Nicholas Taleb, _Author of "The Black Swan" in the New Statesman](https://www.newstatesman.com/encounter/2018/03/i-hope-goldman-sachs-bankruptcy-nassim-nicholas-taleb-skin-game)
 
