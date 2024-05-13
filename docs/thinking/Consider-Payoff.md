@@ -60,11 +60,11 @@ It's worth noting that these terms come from mathematicians working in the 19th 
  
 ## Going All-In
 
-Faced with a bet having an expected return of 150% it might be tempting to go "all in" - that is, bet everything you have.  However, this would risk being wiped out!  
+Faced with a bet having an expected return of 150% it might be tempting to go "all in" - that is, bet everything you have.  However, this would risk being wiped out!  Deciding how much to bet and which _portfolio_ of bets to take is an area of considerable theory.  A simple starting point for deciding how much to stake on our bet above would be [The Kelly Criterion](https://en.wikipedia.org/wiki/Kelly_criterion) but beyond this, when trying to think about which stocks to own, [Modern Portfolio Theory](https://en.wikipedia.org/wiki/Modern_portfolio_theory) is  
 
+## Back To Software
 
-How do you choose what to work on next?
-
+The bets we are making in software development aren't about money.  Not directly, anyway.   We want to make bets that reduce the risks to our project's [Health](Health.md), whether that's reducing security risks, increasing sales opportunities, making our software more robust or making it easier to adopt and use.  So, the bets we make need to be framed in those terms.
 
 Sometimes, there will be multiple _actions_ you could take on a project and you have to choose the best one: 
 
@@ -72,15 +72,11 @@ Sometimes, there will be multiple _actions_ you could take on a project and you 
 - And, making a decision takes time, which could add risk to your schedule.
 - And what's the risk if the decision doesn't get made?
 
-We can't know in advance how well any action we take will work out.  Therefore, [Taking Action](../thinking/Glossary.md#taking-action) is a lot like placing a [bet](/bets/Start).  
-
-[Payoff](../thinking/Glossary.md#payoff) then is our judgement about whether we expect an action to be worthwhile:  are the risks we escape _worth_ the attendant risks we will encounter?  We should be able to _weigh these separate risks in our hands_ and judge whether the [Payoff](../thinking/Glossary.md#payoff) makes a given [Action](../thinking/Glossary.md#taking-action) worthwhile.  
-
 The fruits of this gambling are revealed when we [meet reality](../thinking/Glossary.md#meet-reality) and we can see whether our bets were worthwhile.
 
 Very occasionally, you'll be in a place where your hand is forced and you have to take one of only a handful of actions, or there is a binary decision.  A so called "rock and a hard place".  But as we'll see in the third example below, even here you can usually change the action (and therefore the payoff) in your favour.   
 
-## Considering Payoff: Examples
+## Examples
 
 ### Example 1: YAGNI 
 
