@@ -21,9 +21,50 @@ tweet: yes
 
 # Consider Payoff
 
-How do you choose what to work on next?
+Good software developers are actually good gamblers.  Perhaps not at the poker table, but in the sense that whenever you start a piece of development work you can't be sure exactly how long it'll take, what you'll end up with or whether the audience will be happy with it.  If you manage to get this right then you've made a bet and won.  
 
 ![What's the Payoff](/img/generated/principles/payoff.png)
+
+So in this section, we're going to look at _bets_, starting with some of the math around making good bets (in the idealised, gambling sense) and then looking at how software development is different from real gambling, and how we can use that to our advantage.
+
+## The Structure of a Bet
+
+First, let's cover some commonly used terms to describe bets and betting which we'll find useful later on.
+
+| Stake          | Probability     | Outcome (or Value)   |
+|---------------:|----------------:|---------------------:|
+| £10            | 50%             | Up £40               |
+|                | 50%             | Down £10 (your stake)|   
+
+In the table above is a simple example of a bet with just two outcomes: win and lose.  It could be a coin flip, or a two horse race or the winner of an evenly-matched tennis game.  Let's talk about some gambling terms: 
+
+ - **Value**:  The value (or _net winnings_) of winning this bet is £40.  That is, you'll make back your original stake of £10 and be given £40 more.  
+ - **Payoff**: The _payoff_ (or gross winnings) from winning this bet is £50.  This bet has a great payoff (given the probability of winning).  Ideally, we should be looking for bets with high payoff.  
+ - **Odds**: For this bet, the _odds_ are in your favour: although the probability of winning is 50%, the payoff is five times the stake.  There are various ways of presenting odds used in different places in the world, so I am not going to get into the vagaries of this except to say the odds and the probability of winning are different.   Another way to look at this is...
+ - **Return on Investment (ROI)**: Assuming you win the bet, the return on your investment is 400%.   This is the outcome divided by the stake to give a ratio or percentage.  This is a handy calculation because often bets have different sizes, and the ROI calculation controls for that.  Often, firms will look for projects to invest in where the return on investment is greater than some figure (perhaps 100%).  So the above bet seems like a great investment!
+
+The four terms above are really all telling us the same thing:  what's the upside if we win?  It's important that as developers, we try to invest our time into activities that will have a good payoff for the project we're on.  
+
+But we do need to think about what happens when we lose, too.  So I want to introduce two more terms. 
+
+| Result    | Value | Expected Value  | Expected Return |
+|-----------|------:|----------------:|----------------:|
+| Win       | £40   | £20 (£40 x .5)  |                 |
+| Lose      | -£10  | -£5 (-£10 x .5) |                 |
+| **Total** |       | **£15**         | **150%**        |
+
+- **Expected Value**: The probability-weighted average value of the outcome.  That is, the values of each outcome multiplied by their probabilities, added up.  The table above shows this calculation for our bet coming out at £15.
+- **Expected Return**: The probability-weighted return of the bet.  That is, the expected value divided by the stake.
+
+It's worth noting that these terms come from mathematicians working in the 19th century, when _expectation_ meant chance but nevertheless the name has stuck and is commonly used across the finance industry.  
+ 
+## Going All-In
+
+Faced with a bet having an expected return of 150% it might be tempting to go "all in" - that is, bet everything you have.  However, this would risk being wiped out!  
+
+
+How do you choose what to work on next?
+
 
 Sometimes, there will be multiple _actions_ you could take on a project and you have to choose the best one: 
 
