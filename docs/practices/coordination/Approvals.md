@@ -1,6 +1,36 @@
+---
+title: Approval
+tags: 
+  - Coordination
+practice:
+  aka: 
+   - "Quality Gate"
+   - "Code Review"
+   - "Sign Off"
+  mitigates:
+   - tag: Implementation Risk
+     reason: "A code review can filter out bugs"
+   - tag: Conceptual Integrity Risk
+     reason: "Conceptual issues can be avoided by reviews and approvals"
+   - tag: Complexity Risk
+     reason: "Tight approval processes prevent unnecessary complexity from being introduced into a project"
+  attendant:
+   - tag: Process Risk
+     reason: "Introducing approvals is introducing process"
+   - tag: 4 Risk
+     reason: "Introducing code adds to the complexity of a project"
+   - tag: Feature Fit Risk
+     reason: "The automated process might not capture the variability of requirements of the original approach"
+   - tag: Invisibility Risk
+     reason: "The quality and performance characteristics may be obscured by automation."
+   - tag: Process Risk
+     reason: "Automation introduces a process"
+  related:
+   - /practices/coordination/Contract
+   - /practices/coordination/Review
+---
 
-aka sign-off
-
+<PracticeIntro details={frontMatter.practice} /> 
 ### Too Many Cooks
 
 Sometimes, you have _too many developers_ on a project.  This is not a blessing.   As with [Student Syndrome](../risks/Scarcity-Risk.md#schedule-risk), having too many resources means that: 
