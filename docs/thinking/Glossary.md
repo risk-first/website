@@ -44,6 +44,18 @@ _See: [Bets (Tag)](/tags/bets)_
 
 To [Take Action](#taking-action) to make (something) less risky.
 
+### Expected Return
+
+The [return](#return) (that is, a percentage gain or loss) of a bet or investment aggregated over all possible outcomes, each weighted according to its likelihood.
+
+_See: [Bets (Tag)](/tags/bets)_
+
+### Expected Value
+
+The [value](#value) (that is, net amount made or lost) of a bet or investment aggregated over all possible outcomes, each weighted according to its likelihood.
+
+_See: [Bets (Tag)](/tags/bets)_
+
 ### Feedback Loop
 
 The process of testing an [Internal Model](#internal-model), through [taking action](#taking-action) to [Meet Reality](#meet-reality).  Typically, we talk about short or long feedback loops, depending on the intervals between [Meeting Reality](#meet-reality).  
@@ -55,7 +67,6 @@ _See: [Feedback Loop (Tag)](/tags/feedback-loop)_
 A picture of the future that an individual or team carries within their [Internal Model](#internal-model);  An imagined destination on the [Risk Landscape](#risk-landscape).  A specific [Upside Risk](#upside-risk) we'd like to nurture and realize. _See: [A Simple Scenario](../thinking/A-Simple-Scenario.md)_
 
 _See: [Goal (Tag)](/tags/goal)_
-
 
 ### Internal Model
 
@@ -80,6 +91,12 @@ _See: [Meet Reality (Tag)](/tags/meet-reality)_
 Payoff refers to the _value_ of the [actions we take](#taking-action).  When we decide on a course of action, we have in mind a risk we wish to manage.  If the action is likely to have a big positive effect on the risk of a project, we say it has a promising payoff, whereas if the action fails to manage the risk, then it hasn't _paid off_.   
 
 _See: [Payoff (Tag)](/tags/payoff)_
+
+### Return
+
+For a given bet or investment, the net value made or lost as a percentage of the initial investment cost or stake.
+
+_See: [Bets (Tag)](/tags/bets)_
 
 ### Risk
 
@@ -128,3 +145,9 @@ _See: [Bets (Tag)](/tags/bets)_
 Refers to any activity in the project.  Actions are taken in order to manage some risk.  At the same time, [Taking Action](#taking-action) usually means interacting with reality and updating the [Internal Model](#internal-model).  
 
 _See: [Take Action (Tag)](/tags/take-action)_
+
+### Value
+
+The worth or usefulness or importance of a thing (such as an investment, trade or bet) to the possessor.
+
+_See: [Bets (Tag)](/tags/bets)_

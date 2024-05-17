@@ -11,7 +11,7 @@ tags:
  - Goal
  - Attendant Risk
  - Risk Landscape
- - Bet
+ - Bets
  - Payoff
  - Balance Of Risk
  - Language (Track)
@@ -33,15 +33,15 @@ First, let's cover some commonly used terms to describe bets and betting which w
 
 | Stake          | Probability     | Outcome (or Value)   |
 |---------------:|----------------:|---------------------:|
-| £10            | 50%             | Up £40               |
+| £10            | 50%             | Up £30               |
 |                | 50%             | Down £10 (your stake)|   
 
 In the table above is a simple example of a bet with just two outcomes: win and lose.  It could be a coin flip, or a two horse race or the winner of an evenly-matched tennis game.  Let's talk about some gambling terms: 
 
- - **Value**:  The value (or _net winnings_) of winning this bet is £40.  That is, you'll make back your original stake of £10 and be given £40 more.  
- - **Payoff**: The _payoff_ (or gross winnings) from winning this bet is £50.  This bet has a great payoff (given the probability of winning).  Ideally, we should be looking for bets with high payoff.  
+ - **Value**:  The value (or _net winnings_) of winning this bet is £30.  That is, you'll make back your original stake of £10 and be given £30 more.  
+ - **Payoff**: The _payoff_ (or gross winnings) from winning this bet is £40.  This bet has a great payoff (given the probability of winning).  Ideally, we should be looking for bets with high payoff.  
  - **Odds**: For this bet, the _odds_ are in your favour: although the probability of winning is 50%, the payoff is five times the stake.  There are various ways of presenting odds used in different places in the world, so I am not going to get into the vagaries of this except to say the odds and the probability of winning are different.   Another way to look at this is...
- - **Return on Investment (ROI)**: Assuming you win the bet, the return on your investment is 400%.   This is the outcome divided by the stake to give a ratio or percentage.  This is a handy calculation because often bets have different sizes, and the ROI calculation controls for that.  Often, firms will look for projects to invest in where the return on investment is greater than some figure (perhaps 100%).  So the above bet seems like a great investment!
+ - **Return on Investment (ROI)**: Assuming you win the bet, the return on your investment is 300%.   This is the outcome divided by the stake to give a ratio or percentage.  This is a handy calculation because often bets have different sizes, and the ROI calculation controls for that.  Often, firms will look for projects to invest in where the return on investment is greater than some figure (perhaps 100%).  So the above bet seems like a great investment!
 
 The four terms above are really all telling us the same thing:  what's the upside if we win?  It's important that as developers, we try to invest our time into activities that will have a good payoff for the project we're on.  
 
@@ -49,22 +49,28 @@ But we do need to think about what happens when we lose, too.  So I want to intr
 
 | Result    | Value | Expected Value  | Expected Return |
 |-----------|------:|----------------:|----------------:|
-| Win       | £40   | £20 (£40 x .5)  |                 |
+| Win       | £30   | £15 (£30 x .5)  |                 |
 | Lose      | -£10  | -£5 (-£10 x .5) |                 |
-| **Total** |       | **£15**         | **150%**        |
+| **Total** |       | **£10**         | **100%**        |
 
-- **Expected Value**: The probability-weighted average value of the outcome.  That is, the values of each outcome multiplied by their probabilities, added up.  The table above shows this calculation for our bet coming out at £15.
+- **Expected Value**: The probability-weighted average value of the outcome.  That is, the values of each outcome multiplied by their probabilities, added up.  The table above shows this calculation for our bet coming out at £10.
 - **Expected Return**: The probability-weighted return of the bet.  That is, the expected value divided by the stake.
 
 It's worth noting that these terms come from mathematicians working in the 19th century, when _expectation_ meant chance but nevertheless the name has stuck and is commonly used across the finance industry.  
  
-## Going All-In
+## Should You Go All-In?
 
-Faced with a bet having an expected return of 150% it might be tempting to go "all in" - that is, bet everything you have.  However, this would risk being wiped out!  Deciding how much to bet and which _portfolio_ of bets to take is an area of considerable theory.  A simple starting point for deciding how much to stake on our bet above would be [The Kelly Criterion](https://en.wikipedia.org/wiki/Kelly_criterion) but beyond this, when trying to think about which stocks to own, [Modern Portfolio Theory](https://en.wikipedia.org/wiki/Modern_portfolio_theory) is  
+Faced with a bet having an expected return of 150% it might be tempting to go "all in" - that is, bet everything you have.  However, this would risk being wiped out!   Fund managers practice _diversification_. That is, holding a variety of different stocks in their portfolio, rather than betting big on a single stock.  Deciding how much to bet and which _portfolio_ of bets to take is an area of considerable [theory](https://en.wikipedia.org/wiki/Modern_portfolio_theory) and debate, but nevertheless this seems like good advice in other areas such as for running a software project or career development too.  
+
+One final note on sizing bets:  [The Kelly Criterion](https://en.wikipedia.org/wiki/Kelly_criterion) suggests that what you're trying to do is not maximise the result of _one bet,_ but your lifelong series of bets.  Faced with our example bet over and over again, you'll win and lose many times.  But the way to maximise the growth over that series is to stake one third of your pot each time.
+
+In the film [The Martian](https://www.imdb.com/title/tt3659388), NASA scientists are trying to decide the best way to recover a stranded Matt Damon from the surface of Mars, where he'd been lost and presumed dead.  In order to get a $500 million dollar supply probe out to Mars in a hurry, Jeff Daniels' character, Teddy, the director of NASA, decides to skip the testing phase and predictably, the probe explodes during launch.  The whole sequence is there to demonstrate the _incompetence_ of Teddy as a risk manager.  And while he's putatively on their team,  Teddy is the film's antagonist: the other characters are constantly fighting against his poor risk management skills to get the job done. 
+
+While this fictional, it is a great example of going "All In" and risking everything on a short-term technical bet.  Yes, the [Payoff](Glossary.md#payoff) would have been great if this had worked, but the stakes were very high and the probability of success was really low.  Don't be Teddy.
 
 ## Back To Software
 
-The bets we are making in software development aren't about money.  Not directly, anyway.   We want to make bets that reduce the risks to our project's [Health](Health.md), whether that's reducing security risks, increasing sales opportunities, making our software more robust or making it easier to adopt and use.  So, the bets we make need to be framed in those terms.
+As with NASA, the bets we are making in software development aren't directly about money.   We want to make bets that reduce the risks to our project's [Health](Health.md), whether that's reducing security risks, increasing sales opportunities, making our software more robust or making it easier to adopt and use.  So, the bets we make need to be framed in those terms.
 
 Sometimes, there will be multiple _actions_ you could take on a project and you have to choose the best one: 
 
@@ -80,7 +86,7 @@ Very occasionally, you'll be in a place where your hand is forced and you have t
 
 ### Example 1: YAGNI 
 
-As a flavour of what's to come, let's look at YAGNI, an acronym for "You Aren't Gonna Need It":
+YAGNI is an acronym for "You Aren't Gonna Need It":
 
 > YAGNI originally is an acronym that stands for "You Aren't Gonna Need It". It is a mantra from Extreme Programming that's often used generally in agile software teams. It's a statement that some capability we presume our software needs in the future should not be built now because "you aren't gonna need it".  - [YAGNI, _Martin Fowler_](https://www.martinfowler.com/bliki/Yagni.html)
 
@@ -112,7 +118,7 @@ Our risk-centric view of this strategy would be:
 
 So, "Do The Simplest Thing That Could Possibly Work" is really a helpful guideline for Navigating the [Risk Landscape](../risks/Risk-Landscape.md), but this analysis shows clearly where it's left wanting:
 
- - _Don't_ do the simplest thing if there are other things with a better [Payoff](../thinking/Glossary.md#payoff) available.
+ - _Don't_ do the simplest thing if there are other things with a better [Expected Value](../thinking/Glossary.md#expected-value) available.
 
 An example of where this might be the case, think about how you might write a big, complex function (I'm thinking of a function to process interest accrual), but pick your own example).  The _simplest thing_ might be to just write a single function and a few unit tests for it.  However, a slightly _less simple thing_ that would work might be to decompose the function into multiple steps, each with its own unit tests.  Perhaps you might have a step which calculates the number of days where interest is due (working days, avoiding bank holidays), another step that considers repayments, a step that works out different interest rates and so on.   
 
