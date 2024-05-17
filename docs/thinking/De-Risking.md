@@ -63,7 +63,7 @@ The table above lists a set of _generic strategies_ for derisking which we'll lo
 
 1.  **Take Care With Dependencies**: Choose popular technologies and known reliable components. Whilst hiring people is hard work at the best of times, hiring PL/1 programmers is _really hard_. This tactic is explored in much more depth in [Software Dependency Risk](../risks/Software-Dependency-Risk.md)
 
-1.  **Redundancy**: Avoid single points of failure.   For example, Pair Programming is a control espoused by [Extreme Programming](../practices/Agile.md#extreme-programming) to reduce [Key Person Risk](../risks/Agency-Risk.md) and [Communication Risk](../risks/Communication-Risk.md).  See [Dependency Risk](../risks/Dependency-Risk.ms) for more on this.  
+1.  **Redundancy**: Avoid single points of failure.   For example, Pair Programming is a control espoused by [Extreme Programming](../practices/Agile.md#extreme-programming) to reduce [Key Person Risk](../risks/Agency-Risk.md) and [Communication Risk](../risks/Communication-Risk.md).  See [Dependency Risk](../risks/Dependency-Risk.md) for more on this.  
 
 1.  **Create Options**:  Using _feature flags_ allows you to turn off functionality in production, avoiding an all-or-nothing commitment.  Working in branches gives the same optionality while developing. 
 
@@ -199,7 +199,7 @@ There is a grey area here, because on the one hand you are [retaining](#retain) 
 
 ## Specific Tactics
 
-1.  **Establish Metrics** that allow you to observe the performance of the systems you build.   [Map and Territory Risk](../risks/Map-and-Territory.md) covers this in more detail.
+1.  **Establish Metrics** that allow you to observe the performance of the systems you build.   [Map and Territory Risk](../risks/Map-And-Territory-Risk.md) covers this in more detail.
 
 1.  **Second opinions** and **audits** correct for errors in monitoring by people who can be too close to the problem.
 

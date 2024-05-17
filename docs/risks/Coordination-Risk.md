@@ -20,7 +20,7 @@ As in [Agency Risk](Agency-Risk.md), we are going to use the term _agent_, which
 
 [Coordination Risk](Coordination-Risk.md) is the risk that agents can fail to coordinate to meet their common goal and end up making things worse.<!-- tweet-end -->  [Coordination Risk](Coordination-Risk.md) is embodied in the phrase "Too Many Cooks Spoil The Broth":  more people, opinions or _agents_ often make results worse.
 
-In this section, we'll first build up [a model of Coordination Risk](#a-model-of-coordination-risk), describing exactly coordination means and why we do it.  Then, we'll look at some classic [problems of coordination](#problems-of-coordination).  Then, we're going to consider agency at several different levels (because of [Scale Invariance](../thinking/Crisis-Mode.md#invariances-2-scale-invariance)) .  We'll look at:
+In this section, we'll first build up [a model of Coordination Risk](#a-model-of-coordination-risk), describing exactly coordination means and why we do it.  Then, we'll look at some classic [problems of coordination](#problems-of-coordination).  Then, we're going to consider agency at several different levels (because of [Scale Invariance](../thinking/Crisis-Mode.md#invariances-3-scale-invariance)) .  We'll look at:
 
  - [Team Decision Making](#decision-making),
  - [Living Organisms](#in-living-organisms),

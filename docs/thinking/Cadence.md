@@ -52,7 +52,7 @@ Imagine for a second that you had a special time-travelling machine.  With it, y
 
 That'd be neat, eh?  If you did have this, would there be any point at all in a compiler?   Probably not, right?  
 
-The whole _reason_ we have tools like compilers is because they give us a short-cut way to get some limited experience of reality _faster_ than would otherwise be possible.  Because cadence is really important:  the faster we test our ideas, the more quickly we'll find out if they're correct or not and the faster we can back out of the bets that aren't [paying off](Payoff.md)
+The whole _reason_ we have tools like compilers is because they give us a short-cut way to get some limited experience of reality _faster_ than would otherwise be possible.  Because cadence is really important:  the faster we test our ideas, the more quickly we'll find out if they're correct or not and the faster we can back out of the bets that aren't [paying off](Consider-Payoff.md)
 
 ### Development Cycle Time
 

@@ -92,7 +92,7 @@ Much more likely, it will have a field for _priority_, or allow the ordering of 
 
 A risk matrix presents a graphical view on where risks exist.  The diagram above is an example, showing the risks from the dinner party in the [A Simple Scenario](A-Simple-Scenario.md) section.  The useful thing about this visualisation is it helps focus attention on the risks at the top and to the right - those with the biggest impact and probability.
 
-Risks at the bottom or left side of the diagram are candidates for being ignored or simply "accepted" (which we'll come to in a [later section](De-Risking#ignore--accept)).  If you're using something like [Scrum](../practices/Glossary-Of-Practices.md#scrum), then these might be issues that you remove in the process of [backlog refinement](../practices/Glossary-Of-Practices.md#backlog-refinement).
+Risks at the bottom or left side of the diagram are candidates for being ignored or simply "accepted" (which we'll come to in a [later section](De-Risking#retain)).  If you're using something like [Scrum](../practices/Glossary-Of-Practices.md#scrum), then these might be issues that you remove in the process of [backlog refinement](../practices/Glossary-Of-Practices.md#backlog-refinement).
 
 ## Incorporating Payoff
 
