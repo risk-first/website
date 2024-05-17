@@ -15,7 +15,7 @@ tags:
  - Payoff
  - Balance Of Risk
  - Language (Track)
-sidebar_position: 6
+sidebar_position: 10
 tweet: yes
 ---
 
@@ -198,4 +198,8 @@ The most valuable project management skill is being able to chart a course which
 
 The most important skill is to be able to _weigh up the risks_, decide on a course of action that gives you the greatest expected value and look for ways of increasing the payoff of winning and losing.
 
-And in order to make the most of payoff, first you need to make sure you're [tracking those risks](Track-Risk.md) in the first place.
+Often, urgent risks _can_ crowd out the merely important.  Why does that happen, and what should we do about it?  In the next section, we'll look at how you can account for different levels of _urgency_ in your payoff considerations.   
+
+On to [Evaluating Risk](Evaluating-Risk.md).
+
+

@@ -10,7 +10,7 @@ tags:
  - Thinking Risk-First
  - Feedback Loop
  - Meet Reality
-sidebar_position: 11
+sidebar_position: 9
 redirect_from: 
  - /Cadence
 tweet: yes
@@ -79,4 +79,4 @@ Yes, CD will give you faster feedback loops, but even getting things into produc
 
 The right answer is to use multiple feedback loops, as shown in the diagram above.
 
-In the next section [De-Risking](De-Risking.md) we're going to introduce a few more useful terms for thinking about risk.
+In the next section we'll be [Considering Payoff](Consider-Payoff.md), and figuring out how we can use terminology from _betting_ to make us better software developers.

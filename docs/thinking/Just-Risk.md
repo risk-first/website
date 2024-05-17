@@ -124,4 +124,4 @@ A Risk-First diagram represents a starting point (a risk, a goal), some movement
 
 However, where this becomes problematic is when trying to decide what work to do:  is the expected destination _worth_ the effort of the action?
 
-So next, let's look at how we should [Consider Payoff](Consider-Payoff.md) when we choose what to do next.
+So next, let's look at how we should [Track Risks](Track-Risk.md) in order to make sure we're not missing anything important.

@@ -211,6 +211,6 @@ There is a grey area here, because on the one hand you are [retaining](#retain) 
 
 Here we've been building towards a vocabulary with which to communicate to our team-mates about which risks are important to us (_reduce_, _exploit_, _share_, _retain_, _control_, _monitor_).  This helps us discuss which actions we believe are the right ones and how we should deal with them.
 
-In the next section we will see [an example of this in action](A-Conversation.md).
+In the next section we will look at the indicators that tell you when to apply these levers.  On to [Cadence](Cadence.md).
 
 

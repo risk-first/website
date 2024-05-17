@@ -8,7 +8,7 @@ featured:
   element: '<risk href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg"><code>Urgent</code><title>Evaluating Risk</title></risk>'
 tags:
  - Thinking Risk-First
-sidebar_position: 10
+sidebar_position: 11
 redirect_from: 
  - /Evaluating-Risk
 tweet: yes
@@ -103,5 +103,8 @@ technologies used etc.  That is, the risks faced by IT projects are _too diverse
 
 Reality is messy.  Dressing it up with numbers doesn't change that and you risk [fooling yourself](../risks/Map-And-Territory-Risk.md).  If this is the case, is there any hope at all in what we're doing?  Yes:   _forget precision_.  You should, with experience, be able to hold up two separate risks and answer the question, "is this one bigger than this one?"  
 
-Let's move on now to talk about how risks affect [Health](Health.md)
+Lots of projects start with good intentions.  Carefully evaluating the risks of your actions or inaction is great when the going is good.  But then when the project is hit with delays everything goes out of the window.
+
+In the next section, on [Crisis Mode](Crisis-Mode.md) we'll see that actually risk management is _still occurring_, but in a subtly different way.
+
 

@@ -8,7 +8,7 @@ featured:
 tags: 
  - Thinking Risk-First
  - Feedback Loop
-sidebar_position: 8
+sidebar_position: 7
 redirect_from: 
  - /Health
 tweet: yes
@@ -132,6 +132,6 @@ If all of these disparate domains at all of these different scales are tracking 
 
 The health risks affecting people are well known (by doctors, at least) and we have the list of state-level risks above too.  [Risk-First](https://riskfirst.org) is therefore about building a similar catalog for risks affecting the health of software development projects.  Risks are in general _not_ unique on software projects - they are the same ones over and over again, such as [Communication Risk](../risks/Communication-Risk.md) or [Dependency Risk](../risks/Dependency-Risk.md).   Every project faces these.  
 
-Having shown that risk management is _scale invariant_, the next step is to look at what happens in a crisis, when the usual rules of software development break down.
+Having shown that risk management is _scale invariant_, we're next going to look at general strategies we can use to manage all of these various health risks.
 
-On to [Crisis Mode](Crisis-Mode.md)...
+On to [Derisking](De-Risking.md)...

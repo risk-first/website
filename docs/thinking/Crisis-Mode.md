@@ -8,7 +8,7 @@ featured:
   element: '<risk href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg"><code>Panic</code><title>Crisis Mode</title></risk>'
 tags:
  - Thinking Risk-First
-sidebar_position: 9
+sidebar_position: 12
 tweet: yes
 ---
 
@@ -79,10 +79,9 @@ The point I am making here is that while there are [technology tools to support 
 
 > "We've survived 200,000 years as humans.  Don't you think there's a reason why we survived? We're good at risk management." - [Nassim Nicholas Taleb, _Author of "The Black Swan" in the New Statesman](https://www.newstatesman.com/encounter/2018/03/i-hope-goldman-sachs-bankruptcy-nassim-nicholas-taleb-skin-game)
 
-## Urgent and Important
+## Summing Up
 
-Often, urgent risks _can_ crowd out the merely important.  Why does that happen, and what should we do about it? 
+-- sum up here.
 
-In the next section, [Evaluating Risk](Evaluating-Risk.md) we'll look at some approaches to choosing what to do. 
-
+On to [A Conversation](A-Conversation.md)
 
