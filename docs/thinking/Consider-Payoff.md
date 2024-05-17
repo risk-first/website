@@ -170,16 +170,22 @@ This is (a simplification of) the dilemma of lots of software projects - _test f
 
 Lots of software projects end up in a phase of "release paralysis" - wanting things to be perfect before you show them to customers.  But sometimes this places too much emphasis on preserving reputation over getting paying customers.  Also, getting real customers is [meeting reality](Glossary.md#meet-reality) and will probably surface new [hidden risks](Glossary.md#hidden-risk) that are missing from the analysis.  
 
-The important take-away here is that you don't have to accept the dilemma as stated.  You can change the actions to improve the payoff, and [meet reality more gradually](Meeting-Reality#the-cost-of-meeting-reality):  
+## Manipulating The Payoff
+
+An important take-away here is that you don't have to accept the dilemma as stated.  You can change the actions to improve the payoff, and [meet reality more gradually](Meeting-Reality#the-cost-of-meeting-reality):  
 
  - Start a closed [beta test](../practices/Glossary-Of-Practices.md#beta-test) with a group of friendly customers
  - Use [feature toggles](../practices/Glossary-Of-Practices.md#feature-toggle) to release only some components of the software
  - [Dog-food](../practices/Glossary-Of-Practices.md#dog-fooding) the software internally so you can find out whether it's useful in its current state.
 
-The diagram above shows our decision as _moves on the [Risk Landscape](../thinking/Glossary.md#risk-landscape)_.  Whether you "Go Live" first, or "UAT" first makes a difference to where you will end up.  Is there a further action you can take to get you from the "Dead End" to the "Goal"?  Perhaps. 
+A second approach is to improve the payoff of the losing outcomes.  Here are some examples:
+
+ - Even if my Software-as-a-Service business goes bust, ideally I'll have learnt a lot for my next business and made some important industry contacts.
+ - If I take a job on a project using React, then even if the job doesn't work out, I'll have learnt React. 
+ - TODO - another example.
 
 **See:** The [Purpose of the Development Team](../bets/Purpose-Development-Team.md) article contains further examples of software bets.
- 
+
 ## Summing Up
 
 In this section, we've looked at how bets worked, discussed terms like _stake_, _payoff_ and _expected value_ and applied them to software development.
@@ -190,6 +196,6 @@ Many Agile frameworks such as [Scrum](../bets/Purpose-Development-Team#case-2-sc
 
 The most valuable project management skill is being able to chart a course which minimises risk.  Sometimes, that will mean [hitting a deadline](../risks/Deadline-Risk.md), but equally it could be [reducing codebase complexity](../risks/Complexity-Risk.md), [making a feature more accessible](../risks/Feature-Risk.md#feature-access-risk) or [removing problematic dependencies](../risks/Software-Dependency-Risk.md).
 
-The most important skill is to be able to _weigh up the risks_ and decide which course of action gives you the greatest expected value.
+The most important skill is to be able to _weigh up the risks_, decide on a course of action that gives you the greatest expected value and look for ways of increasing the payoff of winning and losing.
 
 And in order to make the most of payoff, first you need to make sure you're [tracking those risks](Track-Risk.md) in the first place.
