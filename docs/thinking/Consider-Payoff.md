@@ -52,8 +52,8 @@ The table above summarises these terms.  It's important that as developers, we t
 
 | Result                           | Stake   | Value | Expected Value  (Value&nbsp;x&nbsp;Probability) | Expected Return (Expected&nbsp;Value&nbsp;/&nbsp;Stake) |
 |:--------------------------------:|--------:|------:|--------------------------------------:|-----------------------------------------:|
-| Win <br />(.5&nbsp;probability)  |         | £30   | £15 (£30 x .5)                        |                                          |
-| Lose <br />(.5&nbsp;probability) |         | -£10  | -£5 (-£10 x .5)                       |                                          |
+| Win (.5&nbsp;probability)  |         | £30   | £15 (£30 x .5)                        |                                          |
+| Lose (.5&nbsp;probability) |         | -£10  | -£5 (-£10 x .5)                       |                                          |
 | **Total**                        | **£10** |       | **£10**                               | **100%**                                 |
 
 - **Expected Value**: The probability-weighted average value of the outcome.  That is, the values of each outcome multiplied by their probabilities, added up.  The table above shows this calculation for our bet coming out at £10.
@@ -118,13 +118,77 @@ Some people would argue that YAGNI is really a weapon to combat over-engineering
 
 It's important to reflect on the fact that there are other factors at play here:  people know they'll be judged on the quality of their work, don't want to make mistakes and might want to add tools or new skills to their CVs (all of which we'll cover in [Agency Risk](../risks/Agency-Risk.md).  If you are running the development team, you need to be aware of this risk and work hard to minimise it.
 
-| Example                  | Argument In Favour                                      | "Do It Now" Expected Value                                                                                                                | "Do It Later" Option Expected Value                                                      |
-|--------------------------|------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| Introducing Abstractions | "Feels like better engineering and future-proofing"        | <ul><li>Doesn't get used immediately</li> <li>Up-front development time</li> <li>Adds complexity</li> <li>Harder to maintain</li><li>Unlikely to anticipate right abstractions</li> </ul> | <ul><li>Some re-work </li><li>Will reed to re-familiarise with the code</li></ul>                                    |
-| Beauty                   | "As software artiste, I'm searching for perfection..."     | <ul> <li>Up-front development time</li> <li>Hard to decide the end point</li> </ul>                                         | <ul><li>Code less well factored</li><li>Might be harder to work with and change</li> </ul> |
-| 100% Coverage            | "Feels perfect.  I don't like to see the red."             | <ul> <li>Up-front development time</li> </ul>                                                                               |                                     |
-| Using Heavyweight tools  | "We'll have to replace our simple version sooner or later" | <ul> <li>Learning curve time</li> <li>Adds complexity</li> <li>Harder to maintain</li> </ul>                                | <ul><li>Some re-engineering </li> </ul>                                    |
-
+![Over Engineering](/img/generated/introduction/over-engineering.svg)
+<table>
+  <tr>
+    <th>Example</th>
+    <th>Argument In Favour </th>
+    <th>"Do It Now" Expected Value </th>
+    <th>"Do It Later" Option Expected Value</th>
+  </tr>
+  <tr>
+    <td>Introducing Abstractions</td>
+    <td>"Feels like better engineering and future-proofing"</td>
+    <td>
+      <ul>
+        <li>Doesn't get used immediately</li>
+        <li>Up-front development time</li>
+        <li>Adds complexity</li>
+        <li>Harder to maintain</li>
+        <li>Unlikely to anticipate right abstractions</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Some re-work </li>
+        <li>Will reed to re-familiarise with the code</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>100% Coverage </td>
+    <td>"Feels perfect.  I don't like to see the red."</td>
+    <td>
+      <ul>
+        <li>Up-front development time</li>
+      </ul>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Beauty</td>
+    <td>"As software artiste, I'm searching for perfection..."</td>
+    <td>
+      <ul>
+        <li>Up-front development time</li>
+        <li>Hard to decide the end point</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Code less well factored</li>
+        <li>Might be harder to work with and change</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Using Heavyweight Tools </td>
+    <td> "We'll have to replace our simple version sooner or later"</td>
+    <td>
+      <ul>
+        <li>Learning curve time</li>
+        <li>Adds complexity</li>
+        <li>Harder to maintain</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Some re-engineering</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+  
 With that caveat aside, it should be clear that the way to escape the over-engineering trap is to think hard about [Expected Value](Glossary.md#expected-value).   The above table tries to capture the difference in [Expected Value](Glossary.md#expected-value) between "Doing it Now" versus having the _option to_ "Do it Later".   
 
 There is no hard and fast right answer here.  Sometimes, it is correct to strive for 100% coverage or polish the code factorisation.  But hopefully thinking about the choice in terms of these two alternatives is helpful.

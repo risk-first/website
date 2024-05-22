@@ -139,7 +139,7 @@ The table above lists a set of _generic strategies_ for derisking which we'll lo
  
 1. **Delegating Responsibility**: Putting people in charge of specific risks shares or transfers the responsibility away from you.  Note that inside organisations, transfer of risk can become a political game:
 
-> "... ownership results in ‘one throat to choke’ for audit functions [and] from ownership comes responsibility. A lot of the political footwork in an enterprise revolves around trying to not own technologies. Who wants to be responsible for Java usage across a technology function of dozens of thousands of staff, any of whom might be doing crazy stuff? You first, mate. " - [Why Are Enterprises So Slow?, _zwischenzugs.com_](https://zwischenzugs.com/2018/10/02/why-are-enterprises-so-slow/)
+> "... ownership results in ‘one throat to choke’ for audit functions (and) from ownership comes responsibility. A lot of the political footwork in an enterprise revolves around trying to not own technologies. Who wants to be responsible for Java usage across a technology function of dozens of thousands of staff, any of whom might be doing crazy stuff? You first, mate. " - [Why Are Enterprises So Slow?, _zwischenzugs.com_](https://zwischenzugs.com/2018/10/02/why-are-enterprises-so-slow/)
 
 ## Retain
 

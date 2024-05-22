@@ -28,6 +28,12 @@ Agency is the capacity of an actor to act in a given environment.  We use the te
 
 _See: [Agency Risk](../risks/Agency-Risk.md)_
 
+### Anti-Goal
+
+The opposite of a [Goal](#goal), that is, something you are working hard to avoid happening.
+
+_See: [Goal (Tag)](/tags/goal)_
+
 ### Balance Of Risk
 
 The distribution of possible returns, given the set of risks you face from your position on the [Risk Landscape](#risk-landscape).  
@@ -85,6 +91,12 @@ _See: [Internal Model (Tag)](/tags/internal-model)_
 Any moment where we test an [Internal Model](#internal-model) by exposing it's predictive power against reality.  Note that "Reality" might be limited in some way, for example, a trial period or test users.   
 
 _See: [Meet Reality (Tag)](/tags/meet-reality)_
+
+### Opportunity
+
+A term often used instead of [Upside Risk](#upside-risk) as something you'd like to happen.
+
+_See: [Upside Risk](#upside-risk)
 
 ### Payoff
 

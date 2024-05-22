@@ -42,7 +42,7 @@ In a software development scenario, you should also test your model against real
  
 .. and so on.
 
-### Time / Reality Trade-Off
+## Time / Reality Trade-Off
 
 This list is arranged so that at the top, we have the most visceral, most _real_ feedback loop, but at the same time, the slowest.   
 
@@ -54,7 +54,7 @@ That'd be neat, eh?  If you did have this, would there be any point at all in a 
 
 The whole _reason_ we have tools like compilers is because they give us a short-cut way to get some limited experience of reality _faster_ than would otherwise be possible.  Because cadence is really important:  the faster we test our ideas, the more quickly we'll find out if they're correct or not and the faster we can back out of the bets that aren't [paying off](Consider-Payoff.md)
 
-### Development Cycle Time
+## Development Cycle Time
 
 Developers often ignore the fast feedback loops at the bottom of the list above because the ones nearer the top _will do_.   
 
@@ -68,8 +68,7 @@ The [Testing Pyramid](http://www.agilenutshell.com/episodes/41-testing-pyramid) 
 
 ![The Testing Pyramid](/img/generated/introduction/testing_pyramid.png)
 
-
-### Production
+## Production
 
 You could take this section to mean that [Continuous Delivery](https://en.wikipedia.org/wiki/Continuous_delivery) (CD) is always and everywhere a good idea.  That's not a bad take-away, but it's clearly more nuanced than that.  
 
