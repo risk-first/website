@@ -20,9 +20,25 @@ Let's look at some tools to help us decide when to do "urgent" work vs. when to 
 
 ![Discount](/img/generated/principles/discount.png)
 
-### Speed
+It's very easy to get caught up in the day-to-day bustle of doing urgent things and lose sight of what's really important.  This is true of life in general but is definitely an occupational hazard in software development!  So in this section, we will look at and critique some of the prior thinking around reconciling this tension before looking at a more general risk-centric way of solving the problem.  
 
-![Pillars, From Rapid Development By Steve McConnell](/img/generated/introduction/pillars_smc.png)  
+## Time, Quality, Cost Trade-Off
+
+A classic phrase from the project management discipline is "Cheap, good, fast - Pick any two".  
+
+![Project Management Triangle](/img/thinking/project_management_triangle.svg)
+
+The above diagram depicts this trilemma visually.  There is a certain amount of truth in this for projects _done well_.  However, we're all aware of hugely expensive projects that fail to deliver anything - they're not good, fast or cheap.   Also, we all know of people who somehow see a route through the complexity and deliver something that achieves the basic goals of a project in very little time (the cliched [10X developer](../estimating/Estimates.md#old-saw-no-1-the-10x-developer)) by applying the so-called 80/20 rule oir pareto rule where 80% of the value comes from 20% of the effort.   
+
+Fred Brooks introduced the idea of "adding staff to a late project will make it later" in [The Mythical Man Month](https://en.wikipedia.org/wiki/The_Mythical_Man-Month), directly contradicting the triangle in software development.
+ 
+
+
+## Rapid Development
+
+Let's start with "Rapid Development".
+
+![Pillars, From Rapid Development By Steve McConnell](/img/thinking/pillars_smc.svg)  
 
 The diagram above reproduces a figure from [Rapid Development](http://a.co/d/ddWGTB2) by Steve McConnell.  This is _fine_: McConnell is structuring the process from the perspective of _delivering as quickly as possible_.  However, here, I want to turn this on its head.  Software Development from a risk-perspective is an under-explored technique and I believe it offers some useful insights.   So the aim here is to present the case for viewing software development like this:
 
@@ -30,11 +46,11 @@ The diagram above reproduces a figure from [Rapid Development](http://a.co/d/ddW
 
 As we will see, _Speed_ (or [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk) as we will term it) is one risk amongst others that need to be considered from a risk-management perspective.  There's no point in prioritising _speed_ if the software fails in production due to [Operational Risk](../risks/Operational-Risk.md) issues and damages trust in the product.
 
-### Eisenhower's Box
+## Eisenhower's Box
 
-![A basic "Eisenhower box" to help evaluate urgency and importance. Items may be placed at more precise points within each quadrant.  - Adapted From [Time Management, _Wikipedia_](https://en.wikipedia.org/wiki/Time_management)](/img/generated/introduction/eisenhowers_box.png)
+![A basic Eisenhower box](/img/generated/introduction/eisenhowers_box.png) 
 
-Eisenhower's Box is a simple model allowing us to consider _two_ aspects of risk at the same time:
+As shown in the table above, [Eisenhower's Box](https://en.wikipedia.org/wiki/Time_management) (named after the president) is a tool to help evaluate urgency and importance.  It's a simple model allowing us to consider _two_ aspects of risk at the same time:
 
  - How valuable the work is (Importance, Value).
  - How soon it is needed (Urgency, Time, Speed).

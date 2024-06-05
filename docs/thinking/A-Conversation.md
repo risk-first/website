@@ -79,7 +79,7 @@ Synergy's release process means that the app-store submission must happen in a f
 
 At this point, you might be wondering what all the fuss is about.   This stuff is all obvious!  It's what we do anyway!  Perhaps.  Risk management _is_ what we do anyway.   Let's go through the conversation and see how this panned out:
 
-1.  Here, Bob and Eve are [Meeting Reality](Meet-Reality.md) by trying something risky early on to get feedback.
+1.  Here, Bob and Eve are [Meeting Reality](Meeting-Reality.md) by trying something risky early on to get feedback.
 2.  They do this because they know software releases are high-risk and there is reputational risk to consider.   
 3.  They consider [Ignoring](De-Risking.md#ignore) the problem, but then decide to try and [Reduce](De-Risking.md#reduce).
 4.  They evaluate various solutions, comparing [Internal Models](Glossary.md#internal-model) of the risks each poses.

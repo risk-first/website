@@ -396,7 +396,7 @@ fill: black;
 --kite9-margin-bottom: 10pt;
 }
 
-*[k9-elem="artifact"], *[k9-elem="document"], *[k9-elem="users"], *[k9-elem="computer"], *[k9-elem="interface"], *[k9-elem="component"], *[k9-elem="channel-artifact"], *[k9-elem="internal-model-artifact"], *[k9-elem="protocol-artifact"], *[k9-elem="agent-artifact"], *[k9-elem="image-artifact"], *[k9-elem="generic-artifact"] {
+*[k9-elem="artifact"], *[k9-elem="cash"], *[k9-elem="document"], *[k9-elem="users"], *[k9-elem="computer"], *[k9-elem="interface"], *[k9-elem="component"], *[k9-elem="channel-artifact"], *[k9-elem="internal-model-artifact"], *[k9-elem="protocol-artifact"], *[k9-elem="agent-artifact"], *[k9-elem="image-artifact"], *[k9-elem="generic-artifact"] {
 --kite9-margin-top: 10pt;
 --kite9-margin-right: 10pt;
 --kite9-margin-bottom: 10pt;
@@ -681,7 +681,7 @@ font-style: italic;
 
 *[k9-elem="diagram"].principle {
 fill-opacity: 1;
-fill: white;
+fill: rgb(245, 245, 245);
 --kite9-layout: VERTICAL;
 --kite9-padding-left: 0pt;
 --kite9-padding-right: 0pt;
@@ -689,7 +689,16 @@ fill: white;
 --kite9-padding-bottom: 0pt;
 }
 
-*[k9-elem="container"].principle-top {
+*[k9-elem="group"].principle-outline {
+fill: white;
+fill-opacity: 1;
+--kite9-padding-top: 50pt;
+--kite9-padding-right: 50pt;
+--kite9-padding-bottom: 50pt;
+--kite9-padding-left: 50pt;
+}
+
+*[k9-elem="group"].principle-top {
 --kite9-layout: GRID;
 --kite9-grid-columns: 2;
 --kite9-grid-rows: 2;
@@ -701,8 +710,6 @@ fill: white;
 --kite9-margin-right: 3pt;
 --kite9-margin-bottom: 3pt;
 --kite9-margin-left: 3pt;
-stroke: rgb(245, 245, 245);
-stroke-width: 7pt;
 --kite9-horizontal-sizing: MAXIMIZE;
 --kite9-vertical-sizing: MAXIMIZE;
 --kite9-min-width: 1000pt;
@@ -713,7 +720,7 @@ stroke-width: 7pt;
 --kite9-horizontal-sizing: MINIMIZE;
 --kite9-vertical-sizing: MINIMIZE;
 --kite9-layout: DOWN;
---kite9-padding-top: 0;
+--kite9-padding-top: 10pt;
 --kite9-margin-top: 0pt;
 }
 
@@ -721,9 +728,9 @@ stroke-width: 7pt;
 --kite9-horizontal-sizing: MAXIMIZE;
 --kite9-vertical-sizing: MINIMIZE;
 --kite9-layout: DOWN;
---kite9-padding-top: 0;
---kite9-padding-right: 0;
---kite9-padding-bottom: 0;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
 --kite9-padding-left: 30pt;
 --kite9-margin-top: 0pt;
 --kite9-margin-right: 0pt;
@@ -735,10 +742,10 @@ stroke-width: 7pt;
 --kite9-horizontal-sizing: MINIMIZE;
 --kite9-vertical-sizing: MAXIMIZE;
 --kite9-layout: DOWN;
---kite9-padding-top: 0;
---kite9-padding-right: 0;
---kite9-padding-bottom: 0;
---kite9-padding-left: 0;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
 --kite9-margin-top: 0pt;
 --kite9-margin-right: 0pt;
 --kite9-margin-bottom: 0pt;
@@ -749,9 +756,9 @@ stroke-width: 7pt;
 --kite9-horizontal-sizing: MAXIMIZE;
 --kite9-vertical-sizing: MAXIMIZE;
 --kite9-layout: DOWN;
---kite9-padding-top: 0;
---kite9-padding-right: 0;
---kite9-padding-bottom: 0;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
 --kite9-padding-left: 30pt;
 --kite9-margin-top: 0pt;
 --kite9-margin-right: 0pt;
@@ -789,17 +796,19 @@ indent: 0;
 font-weight: 600;
 --kite9-padding-bottom: 0;
 --kite9-margin-bottom: 0;
+--kite9-vertical-align: TOP;
 }
 
 *[k9-elem="page-title"].principle {
 font-family: "Metropolis";
-font-size: 50pt;
-font-weight: 500;
+font-size: 60pt;
+font-weight: 600;
 fill: rgb(0, 0, 0);
 text-align: left;
 --kite9-padding-bottom: 0;
 --kite9-margin-bottom: 0;
 --kite9-margin-right: 30pt;
+--kite9-vertical-align: TOP;
 }
 
 *[k9-elem="page-summary"].principle {
@@ -819,8 +828,8 @@ font-style: italic;
 
 *[k9-texture="none"] {
 fill: white;
-fill-opacity: 1.0E-4;
-stroke-opacity: 1.0E-4;
+fill-opacity: 0.001;
+stroke-opacity: 0.001;
 }
 
 *[k9-texture="background"] {
@@ -837,7 +846,7 @@ fill-opacity: 1;
 
 *[k9-texture~="outline"] {
 fill: white;
-fill-opacity: 1.0E-4;
+fill-opacity: 0.001;
 stroke: black;
 stroke-opacity: 1;
 }
@@ -1108,7 +1117,7 @@ font-size: 12pt;
 
 *[k9-texture="artifact"] {
 fill: white;
-fill-opacity: 1.0E-4;
+fill-opacity: 0.001;
 stroke: none;
 }
 
@@ -1196,12 +1205,22 @@ stroke-width: 1pt;
 }
 
 *[k9-elem="container"][k9-texture="background"] {
-fill-opacity: 1.0E-4;
+fill-opacity: 0.001;
 }
 
 *[k9-elem="planner-cell"], *[k9-elem="planner-header"] {
 stroke: rgb(174, 174, 174);
 stroke-width: 1pt;
+}
+
+*[k9-elem="diagram"].principle {
+fill-opacity: 1;
+fill: rgb(245, 245, 245);
+}
+
+*[k9-elem="container"][k9-texture="background"].principle-top {
+fill: white;
+fill-opacity: 1;
 }
 
 </style>
@@ -1402,8 +1421,9 @@ stroke-width: 1pt;
          <stop stop-color="#FFF" offset="0%"/>
          <stop stop-color="#DDD" offset="100%"/>
       </linearGradient>
-      <filter xlink:actuate="onLoad"
+      <filter xmlns:svg="http://www.w3.org/2000/svg"
               xlink:type="simple"
+              xlink:actuate="onLoad"
               height="130%"
               id="dropshadow"
               xlink:show="other">
