@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<diagram
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+	xmlns="http://www.kite9.org/schema/adl"
+	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
+	style="--kite9-min-width: 600pt;">
+
+	<glyph id="a1">Input</glyph>
+	<arrow id="a2">Function</arrow>
+	<glyph id="a3">output</glyph>
+
+	<link id="6" style="--kite9-direction: right;">
+		<from reference="a1" id="6-0" />
+		<to reference="a2" id="6-1"/>
+	</link>
+	<link id="6" style="--kite9-direction: right;">
+		<from reference="a2" id="6-0" />
+		<to reference="a3" id="6-1" shape="barbed-arrow" />
+	</link>
+</diagram>

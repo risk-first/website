@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+	xmlns="http://www.kite9.org/schema/adl"
+	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
+	style="--kite9-min-width: 600pt;">
+	<group style="--kite9-layout: right; ">
+		<cash id="3">Win
+		Payoff: £40</cash>
+		<group>
+			<cash id="1">Stake £10</cash>
+			<arrow id="2">Bet</arrow>
+		</group>
+		<cash id="4">Lose
+		Payoff: £0</cash>
+	</group>
+	<align>
+		<from reference="1" />
+		<to reference="2" />
+	</align>
+	<link>
+		<from reference="2"  />
+		<to reference="3" shape="barbed-arrow" />
+		<label end="to">50%</label>
+	</link>
+	<link>
+		<from reference="2"  />
+		<to reference="4" shape="barbed-arrow" />
+		<label end="to">50%</label>
+	</link>
+</diagram>

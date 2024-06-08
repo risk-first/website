@@ -1,27 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <diagram xmlns="http://www.kite9.org/schema/adl"
-         xmlns:xslt="http://www.kite9.org/schema/xslt"
-         id="diagram-129"
-         name="Health"
-         xslt:template="/public/templates/risk-first/risk-first-template.xsl">
-   <container id="4" style="--kite9-sizing: minimize; ">
-      <generic-artifact href="/public/templates/risk-first/redesign/artifacts/document_v2.svg"
-                        id="1">Metabolism</generic-artifact>
-      <generic-artifact href="/public/templates/risk-first/redesign/artifacts/document_v2.svg"
-                        id="1-ej">Homeostasis</generic-artifact>
-      <generic-artifact href="/public/templates/risk-first/redesign/artifacts/document_v2.svg"
-                        id="1-hy">Adaption</generic-artifact>
-      <label id="4-0">Behaviours</label>
-   </container>
-   <container id="8">
-      <generic-artifact href="/public/templates/risk-first/redesign/artifacts/component_v2.svg"
-                        id="2">Organism 
-		  	Health</generic-artifact>
-      <label id="8-0">Survival</label>
-   </container>
-   <link style="--kite9-direction: right;" id="6">
-      <from id="6-0" reference="4"/>
-      <to id="6-1" reference="8" shape="barbed-arrow"/>
-      <label end="from" id="7">indicate</label>
-   </link>
+	xmlns:xslt="http://www.kite9.org/schema/xslt" id="diagram-129"
+	name="Health"
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl">
+	<container id="4" style="--kite9-sizing: minimize; ">
+		<group style="--kite9-layout: down;">
+			<generic-artifact
+				href="/public/templates/risk-first/wip/gauge.svg"
+				id="1">Metabolism</generic-artifact>
+			<label style="--kite9-min-height: 70pt; ">
+				Taking in energy
+				or other inputs
+				for self-organisation
+			</label>
+		</group>
+		<group style="--kite9-layout: down;">
+			<generic-artifact
+				href="/public/templates/risk-first/wip/gauge.svg"
+				id="1-ej">Homeostasis</generic-artifact>
+			<label style="--kite9-min-height: 70pt;">
+				Maintaining a set of
+				steady internal 
+				conditions.
+			</label>
+		</group>
+		<group style="--kite9-layout: down;">
+			<generic-artifact
+				href="/public/templates/risk-first/wip/gauge.svg"
+				id="1-hy">Adaption</generic-artifact>
+			<label style="--kite9-min-height: 70pt;">
+				The process of 
+				fitting in with
+				the environment
+			</label>
+		</group>
+		<label id="4-0">Behaviours</label>
+	</container>
+	<container id="8" style="--kite9-sizing: maximize;">
+		<generic-artifact
+			href="/public/templates/risk-first/redesign/artifacts/component_v2.svg"
+			id="2">Organism
+			Survival
+		</generic-artifact>
+		<label id="8-0">Health</label>
+	</container>
+	<link style="--kite9-direction: right;" id="6">
+		<from id="6-0" reference="4" />
+		<to id="6-1" reference="8" shape="barbed-arrow" />
+		<label end="from" id="7">indicates</label>
+	</link>
 </diagram>

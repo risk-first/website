@@ -94,9 +94,11 @@ Let's look at a real-life example.  The above image shows a selection of issues 
 
 ## Goals Are Risks Too
 
-In the previous sections, we introduced something of a "diagram language" of risk.  Let's review it:
+[Earlier](Risk-First-Diagrams.md), we introduced something of a "diagram language" of risk. 
 
-![Risk-First Diagram Language](/img/generated/introduction/all_risk_management_language.png)
+![The Risk-First Diagram Language, with _stimulus_ on the left, the action (or _response_) we take in the middle, and the results on the right.](/img/generated/introduction/all_risk_management_language.png)
+
+The above diagram is an idealised example of this, showing how we take action to address the risks and goals on the left and end up with new risks on the right.  
  
 [Goals](../thinking/Glossary.md#goal) live inside our [Internal Model](../thinking/Glossary.md#internal-model), just like Risks.  Functionally, Goals and Risks are equivalent.  For example, the Goal of "Implementing Feature X" is equivalent to mitigating "Risk of Feature X not being present".
 
@@ -118,10 +120,18 @@ From a redundancy perspective, if you know any two of the start, end or movement
 
 But risks, goals and actions are deeply connected.  By focusing on "Risk-First", we don't ignore the reasons we're doing something.  
 
+## On Opportunities
+
+![Risks, Goals, Opportunities, Anti-goals](/img/generated/introduction/risks_opportunities.png)
+
+Some literature talks about [Opportunities](Glossary.md#opportunity) as being the opposite of [Risks](Glossary.md#risk).  Here, we tend to call these [Upside Risks](Glossary.md#upside-risk).  Therefore, there is a related discipline of _opportunity management_.  
+
+Here, we're not going to get into this except to say that sometimes it is worth also considering the idea of [Anti-Goals](../misc/Anti-Goals.md): that is, being clear about the things you really want to avoid happening, as shown in the figure above.
+
 ## Summary
 
 A Risk-First diagram represents a starting point (a risk, a goal), some movement (an action to take) and a destination (mitigated risk, completed goals, new attendant risks).  But frequently our usual tools will only show us one of these parts:  the RAID log is focusing on the starting point, and some actions (decisions).  Issues (in an issue log) often focus on the action and possibly the risk.   In a way, this is fine as you can derive the third by knowing the other two.
 
 However, where this becomes problematic is when trying to decide what work to do:  is the expected destination _worth_ the effort of the action?
 
-So next, let's look at how we should [Consider Payoff](Consider-Payoff.md) when we choose what to do next.
+So next, let's look at how we should [Track Risks](Track-Risk.md) in order to make sure we're not missing anything important.

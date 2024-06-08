@@ -69,8 +69,14 @@ In Risk-First, whenever we try to _do something_ about a risk, it is called [Tak
 
 If we had a good [Internal Model](../thinking/Glossary.md#internal-model) and [took the right actions](../thinking/Glossary.md#taking-action), we should see positive outcomes.  If we failed to manage the risks, or took inappropriate actions, we'll probably see negative outcomes.
 
-## On To Software
+## Why The New Terms?
 
-Here, we've introduced some new terms that we're going to use a lot:  [Meet Reality](../thinking/Glossary.md#meet-reality), [Attendant Risk](../thinking/Glossary.md#attendant-risk), [Hidden Risk](../thinking/Glossary.md#attendant-risk), [Internal Model](../thinking/Glossary.md#internal-model), [Taking Action](../thinking/Glossary.md#taking-action) and [Goal](../thinking/Glossary.md#goal).  And, we've applied them in a simple scenario.
+I know that as a reader it's annoying to have to pick up new terminology.  So you'll be pleased to learn that there are just three de novo terms to learn in the whole [Thinking](Start.md) part of Risk First: 
 
-Next, we're going to look at how we represent these ideas graphically, using [Risk-First Diagrams](Risk-First-Diagrams.md).
+ - [Internal Model](Glossary.md#internal-model): actually a term from financial risk management, which we'll be employing widely.  I'll expand on this in more detail in [Meeting Reality](Meeting-Reality.md).
+ - [Meeting Reality](Glossary.md#meet-reality), which is the process of improving your [Internal Model](Glossary.md#internal-model).  This is a totally new term.
+ - [Taking Action](Glossary.md#take-action) which we'll use as a general term to cover a whole range of specific techniques for dealing with risks.  We'll expand on this in [Derisking](De-Risking.md).
+
+## On To Software?
+
+Here, we've introduced some new terms that we're going to use a lot:  [Meet Reality](../thinking/Glossary.md#meet-reality), [Attendant Risk](../thinking/Glossary.md#attendant-risk), [Hidden Risk](../thinking/Glossary.md#attendant-risk), [Internal Model](../thinking/Glossary.md#internal-model), [Taking Action](../thinking/Glossary.md#taking-action) and, we've applied them in a simple scenario.  Clearly, what we really want to get to is talking about software development, but first I want to dig a bit deeper into how we represent these ideas graphically, using [Risk-First Diagrams](Risk-First-Diagrams.md).
