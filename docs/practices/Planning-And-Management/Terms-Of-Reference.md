@@ -1,0 +1,40 @@
+---
+title: Terms Of Reference
+tags: 
+  - Terms Of Reference
+practice:
+  aka: 
+   - "Project Charter"
+   - "Scope Definition"
+   - "Project Scope Statement"
+  mitigates:
+   - tag: Boundary Risk
+     reason: "Clearly defines the scope and objectives, managing expectations and limitations."
+   - tag: Contextual Risk
+     reason: "Ensures that the project aligns with legal, social, and economic contexts."
+   - tag: Coordination Risk
+     reason: "Provides a clear framework for coordination among team members."
+  attendant:
+   - tag: Boundary Risk
+     reason: "Clearly defined terms can create rigid boundaries that limit flexibility."
+   - tag: Coordination Risk
+     reason: "Requires alignment and coordination among all parties to adhere to the terms."
+   - tag: Dependency Risk
+     reason: "Creates dependencies on predefined scope and objectives."
+  related:
+   - ../Planning-and-Management/Change-Management
+   - ../Development-and-Coding/Coding
+   - ../Communication-and-Collaboration/Documentation
+---
+
+<PracticeIntro details={frontMatter.practice} /> 
+
+## Description
+
+> "Terms of reference (TOR) define the purpose and structures of a project, committee, meeting, negotiation, or any similar collection of people who have agreed to work together to accomplish a shared goal." - [Terms of reference, _Wikipedia_](https://en.wikipedia.org/wiki/Terms_of_reference)
+
+Terms of Reference in software development define the scope, objectives, and deliverables of a project. They serve as a foundational document that guides the project team and stakeholders, ensuring that everyone has a clear understanding of what the project aims to achieve and how it will be executed.
+
+## See Also
+
+<TagList tag="Terms Of Reference" />

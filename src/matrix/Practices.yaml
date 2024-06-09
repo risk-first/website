@@ -1,0 +1,422 @@
+practices:
+  Adoption (Standards, Libraries):
+    reduces:
+      - Complexity: "Standardizing libraries and frameworks simplifies the development process and makes the codebase easier to understand."
+      - Dependency: "Using well-established libraries and standards reduces the chance of unexpected issues and ensures better support."
+      - Invisibility: "Clear standards make the code and processes more transparent to all team members."
+    risks:
+      - Complexity: "Introducing new standards and libraries can initially increase complexity as the team adapts."
+      - Dependency: "Dependence on specific standards and libraries can create issues if those libraries become obsolete or unsupported."
+      - Feature-Fit: "Rigid adherence to standards may limit the ability to implement features that don't conform to those standards."
+
+  Adoption (Tools):
+    reduces:
+      - Complexity: "Proper tools can streamline development processes and reduce the complexity of tasks."
+      - Operational: "Tools automate repetitive tasks, reducing human error and improving consistency."
+      - Invisibility: "Tools often come with dashboards and reports that increase visibility into the project status."
+    risks:
+      - Complexity: "Implementing new tools can add complexity, especially if they don't integrate well with existing systems."
+      - Dependency: "Over-reliance on specific tools can create dependencies that are difficult to manage."
+      - Learning Curve: "The team may face a steep learning curve when adopting new tools, which can slow down productivity."
+
+  Applying Pressure:
+    reduces:
+      - Schedule: "Applying pressure can help keep the team focused on deadlines and prevent slippage."
+      - Dependency: "Can motivate quick resolution of dependency issues to avoid blocking the project."
+      - Operational: "Keeps the team motivated to maintain high standards in operations to avoid last-minute rushes."
+    risks:
+      - Implementation: "Excessive pressure can lead to hasty and poor-quality implementations."
+      - Coordination: "High pressure can strain team dynamics and reduce effective coordination."
+      - Operational: "Pressuring the team can lead to burnout and operational mistakes."
+
+  Approval / Sign Off:
+    reduces:
+      - Boundary: "Formal approvals ensure that changes are well-considered and documented, respecting dependencies and commitments."
+      - Feature-Fit: "Ensures that features align with client expectations before proceeding."
+      - Implementation: "Helps verify that implementation plans are sound before execution."
+    risks:
+      - Schedule: "The approval process can introduce delays, impacting the overall project timeline."
+      - Dependency: "Waiting for sign-offs can create bottlenecks and increase dependency on stakeholders."
+      - Boundary: "Formal approval processes can reinforce rigid boundaries and limit flexibility."
+
+  Architecture Design:
+    reduces:
+      - Complexity: "A well-thought-out architecture reduces the complexity of the system."
+      - Conceptual Integrity: "Ensures the system aligns with overall design goals and client expectations."
+      - Operational: "Good architecture supports robust and maintainable systems."
+    risks:
+      - Complexity: "Designing a comprehensive architecture can initially increase complexity."
+      - Feature-Drift: "A rigid architecture might not accommodate evolving feature requirements."
+      - Dependency: "Complex architectures can introduce new dependencies that must be managed."
+
+  Automation:
+    reduces:
+      - Operational: "Automation ensures consistency and reduces human error in repetitive tasks."
+      - Schedule: "Speeds up processes like testing and deployment, keeping the project on track."
+      - Complexity: "Automating complex processes can simplify the overall development and maintenance effort."
+    risks:
+      - Complexity: "Implementing automation can add complexity to the development process."
+      - Dependency: "Automation tools and scripts can create dependencies that need ongoing maintenance."
+      - Operational: "Automation failures can have widespread operational impacts if not managed carefully."
+
+  Change Management:
+    reduces:
+      - Boundary: "Manages changes systematically, respecting existing commitments and dependencies."
+      - Schedule: "Controls the impact of changes on the project timeline."
+      - Operational: "Ensures changes are implemented smoothly and systematically."
+    risks:
+      - Schedule: "Managing changes systematically can introduce delays."
+      - Boundary: "Change management processes can reinforce existing boundaries and reduce flexibility."
+      - Dependency: "Change management can increase dependency on approval processes and stakeholders."
+
+  Code Reviews:
+    reduces:
+      - Implementation: "Ensures code quality and correctness through peer review."
+      - Conceptual Integrity: "Maintains consistency and adherence to design principles."
+      - Complexity: "Identifies and resolves potential complexities during the review process."
+    risks:
+      - Schedule: "The review process can introduce delays in the development timeline."
+      - Coordination: "Requires effective coordination among team members, which can be challenging."
+      - Implementation: "Can lead to conflicts over code quality and implementation details."
+
+  Coding:
+    reduces:
+      - Implementation: "Good coding practices directly impact the quality and reliability of the software."
+      - Complexity: "Clear and well-structured code is easier to maintain and extend."
+      - Operational: "Reliable codebase reduces the chances of operational failures."
+    risks:
+      - Implementation: "Poor coding practices can lead to significant implementation issues."
+      - Complexity: "Complex code can be difficult to maintain and understand."
+      - Regression: "Changes in code can introduce new bugs and regressions."
+
+  Configuration Management:
+    reduces:
+      - Dependency: "Manages and tracks dependencies effectively, ensuring consistency."
+      - Operational: "Proper configuration management prevents configuration drift and errors."
+      - Security: "Ensures security settings are consistently applied across environments."
+    risks:
+      - Complexity: "Managing configurations can add complexity to the system."
+      - Dependency: "Creates dependencies on configuration tools and processes."
+      - Operational: "Incorrect configurations can lead to operational failures."
+
+  Contract:
+    reduces:
+      - Boundary: "Clearly defined contracts help manage dependencies and commitments."
+      - Agency: "Contracts outline responsibilities and expectations, aligning goals."
+      - Trust-And-Belief: "Well-structured contracts build trust through clear terms."
+    risks:
+      - Boundary: "Contracts can create rigid boundaries that limit flexibility."
+      - Dependency: "Can increase dependency on contractual obligations and third parties."
+      - Feature-Fit: "Rigid contracts may enforce features that do not align with evolving client needs."
+
+  Debugging:
+    reduces:
+      - Implementation: "Identifies and fixes defects, ensuring the software works as intended."
+      - Operational: "Resolving bugs improves the stability and reliability of the software."
+      - Complexity: "Systematic debugging helps simplify complex issues in the code."
+    risks:
+      - Schedule: "Debugging can be time-consuming and delay project timelines."
+      - Complexity: "Complex bugs can be challenging to resolve, increasing overall complexity."
+      - Operational: "Bugs that are not effectively debugged can lead to operational issues."
+
+  Demo:
+    reduces:
+      - Feature-Fit: "Regular demos ensure that features align with client needs and expectations."
+      - Implementation: "Provides a checkpoint to verify that the implementation meets requirements."
+      - Communication: "Enhances understanding and alignment among stakeholders."
+    risks:
+      - Implementation: "Frequent demos can lead to focus on presentation over actual implementation quality."
+      - Schedule: "Preparing for demos can introduce delays in development."
+      - Feature-Drift: "Focus on demos can cause features to evolve based on feedback, leading to drift."
+
+  Documentation:
+    reduces:
+      - Invisibility: "Makes all aspects of the project transparent and accessible to the team."
+      - Communication: "Provides clear guidelines and information, reducing misunderstandings."
+      - Complexity: "Detailed documentation helps manage and understand complex systems."
+    risks:
+      - Schedule: "Creating and maintaining documentation can be time-consuming."
+      - Dependency: "Over-reliance on documentation can lead to dependency issues if documentation is outdated or inaccurate."
+      - Complexity: "Extensive documentation can sometimes add to complexity rather than simplifying it."
+
+ Environmental Scanning:
+    definition: "The process of continuously monitoring the external environment to identify opportunities, threats, and trends that could impact the project."
+    synonyms: ["Market Scanning", "External Analysis", "Environmental Monitoring"]
+    reduces:
+      - Opportunity: "Helps identify new opportunities in the market by continuously monitoring external trends and changes."
+      - Contextual: "Ensures the project aligns with external factors such as legal, social, and economic conditions."
+      - Market: "Keeps the project relevant by understanding and adapting to changes in market demands and conditions."
+    risks:
+      - Complexity: "Continuously monitoring and analyzing external factors can add complexity to the project."
+      - Dependency: "Creates a dependency on the accuracy and timeliness of external information sources."
+      - Schedule: "Allocating time and resources to environmental scanning can divert focus from core project activities, potentially causing delays."
+
+  Estimation:
+    reduces:
+      - Schedule: "Provides realistic timelines, helping to keep the project on track."
+      - Funding: "Accurate estimation helps in securing and managing funding."
+      - Dependency: "Helps in planning and managing dependencies effectively."
+    risks:
+      - Schedule: "Inaccurate estimates can lead to schedule overruns."
+      - Dependency: "Can create dependencies on estimated timelines and resources."
+      - Boundary: "Rigid adherence to estimates can limit flexibility in project execution."
+
+  Incident Management:
+    reduces:
+      - Operational: "Ensures quick and effective response to issues, maintaining stability."
+      - Reliability: "Addresses and resolves reliability issues promptly."
+      - Security: "Handles security incidents efficiently to mitigate their impact."
+    risks:
+      - Operational: "Mismanaged incidents can exacerbate operational issues."
+      - Reliability: "Frequent incidents can affect system reliability."
+      - Security: "Security incidents, if not managed properly, can lead to breaches and vulnerabilities."
+
+  Integration Testing:
+    reduces:
+      - Dependency: "Ensures that integrated components work together as expected."
+      - Implementation: "Validates that the implementation meets requirements."
+      - Regression: "Detects regressions early in the integration phase."
+    risks:
+      - Schedule: "Can be time-consuming, leading to delays in the project timeline."
+      - Dependency: "Increases dependency on integrated components and their availability."
+      - Complexity: "Integrating multiple components can introduce complex issues that are hard to resolve."
+
+  Marketing:
+    reduces:
+      - Market: "Helps in understanding and responding to market needs and changes."
+      - Opportunity: "Identifies and acts on new market opportunities."
+      - Communication: "Ensures clear messaging and alignment with market expectations."
+    risks:
+      - Feature-Fit: "Misaligned marketing efforts can promote features that do not match user needs."
+      - Communication: "Poor marketing communication can lead to misunderstandings about the product."
+      - Opportunity: "Focusing too much on marketing can distract from actual product development and opportunities."
+
+  Measurement:
+    reduces:
+      - Operational: "Provides metrics to monitor and improve operational performance."
+      - Complexity: "Identifies areas of complexity through metrics and helps in managing them."
+      - Dependency: "Tracks dependencies and their impact through measurement."
+    risks:
+      - Complexity: "Measuring too many metrics can add unnecessary complexity."
+      - Dependency: "Over-reliance on specific metrics can create dependencies."
+      - Operational: "Misinterpreting measurements can lead to poor operational decisions."
+
+  Monitoring:
+    reduces:
+      - Operational: "Continuously tracks system performance and health."
+      - Reliability: "Identifies reliability issues early through continuous monitoring."
+      - Security: "Detects security threats and vulnerabilities in real-time."
+    risks:
+      - Operational: "Misconfigured monitoring can lead to false alerts and operational issues."
+      - Dependency: "Creates dependencies on monitoring tools and their accuracy."
+      - Complexity: "Implementing comprehensive monitoring can add to system complexity."
+
+  Outsourcing:
+    reduces:
+      - Scarcity: "Provides access to additional resources and skills."
+      - Schedule: "Can help in meeting deadlines by supplementing internal capacity."
+      - Funding: "Potentially reduces costs by leveraging external expertise."
+    risks:
+      - Coordination: "Managing external teams can create coordination challenges."
+      - Dependency: "Increases dependency on third-party vendors and their reliability."
+      - Security: "Outsourcing can introduce security risks due to external access to systems and data."
+
+  Pair Programming:
+    reduces:
+      - Coordination: "Enhances collaboration and coordination between developers."
+      - Learning Curve: "Facilitates knowledge sharing and learning."
+      - Implementation: "Improves code quality through real-time review and collaboration."
+    risks:
+      - Coordination: "Requires effective coordination and can be challenging to implement."
+      - Schedule: "Can slow down individual productivity, impacting overall schedule."
+      - Implementation: "Differences in coding styles and approaches can lead to conflicts."
+
+  Performance Testing:
+    reduces:
+      - Demand: "Ensures the software can handle expected loads and performance requirements."
+      - Reliability: "Identifies performance bottlenecks and reliability issues."
+      - Operational: "Improves overall system performance and stability."
+    risks:
+      - Schedule: "Can be time-consuming, leading to project delays."
+      - Dependency: "Requires specific tools and environments, creating dependencies."
+      - Complexity: "Setting up and interpreting performance tests can be complex."
+
+  Prioritising:
+    reduces:
+      - Schedule: "Helps in focusing on high-priority tasks and meeting deadlines."
+      - Opportunity: "Ensures that the most valuable features and opportunities are addressed first."
+      - Funding: "Allocates resources efficiently to high-impact areas."
+    risks:
+      - Boundary: "Focusing on priorities can create rigid boundaries around scope and features."
+      - Dependency: "Prioritization decisions can create dependencies on specific tasks or features."
+      - Opportunity: "Focusing on current priorities might cause missed opportunities for innovation."
+
+  Prototyping:
+    reduces:
+      - Conceptual Integrity: "Validates ideas and concepts early."
+      - Feature-Fit: "Ensures features align with user needs through early feedback."
+      - Implementation: "Identifies potential issues early in the development process."
+    risks:
+      - Schedule: "Excessive prototyping can delay final product development."
+      - Feature-Drift: "Prototypes can lead to feature changes that drift from the original plan."
+      - Dependency: "Prototyping can create dependencies on tools and processes used in prototype creation."
+
+  Redundancy:
+    reduces:
+      - Reliability: "Ensures backup systems are in place to handle failures."
+      - Operational: "Provides failover mechanisms to maintain operations."
+      - Dependency: "Mitigates the impact of dependency failures."
+    risks:
+      - Complexity: "Adding redundancy can increase system complexity."
+      - Dependency: "Redundant systems create dependencies on backup components."
+      - Operational: "Managing redundant systems can introduce operational challenges."
+
+  Refactoring:
+    reduces:
+      - Complexity: "Improves code structure and reduces complexity."
+      - Implementation: "Enhances code quality and maintainability."
+      - Regression: "Makes the codebase more robust and less prone to regressions."
+    risks:
+      - Schedule: "Refactoring can be time-consuming and delay project timelines."
+      - Implementation: "Changes during refactoring can introduce new bugs."
+      - Complexity: "Poorly planned refactoring can add to system complexity."
+
+  Regression Testing:
+    reduces:
+      - Regression: "Detects and prevents regressions in the software."
+      - Implementation: "Ensures new changes do not negatively impact existing functionality."
+      - Reliability: "Maintains the reliability of the software through continuous testing."
+    risks:
+      - Schedule: "Can be time-consuming and introduce delays."
+      - Dependency: "Requires a stable testing environment, creating dependencies."
+      - Complexity: "Managing regression tests can add to overall complexity."
+
+  Release / Delivery:
+    reduces:
+      - Schedule: "Ensures timely deployment of the software."
+      - Dependency: "Manages and coordinates dependencies for a smooth release."
+      - Operational: "Prepares the system for operational readiness and stability."
+    risks:
+      - Schedule: "Coordinating releases can create schedule pressures."
+      - Dependency: "Creates dependencies on release dates and schedules."
+      - Operational: "Improperly managed releases can lead to operational issues."
+
+  Requirements Capture:
+    reduces:
+      - Feature-Fit: "Ensures that features align with client needs and expectations."
+      - Communication: "Provides a clear understanding of requirements to all stakeholders."
+      - Implementation: "Helps in creating accurate and detailed implementation plans."
+    risks:
+      - Feature-Drift: "Evolving requirements can lead to feature drift."
+      - Dependency: "Detailed requirements can create rigid dependencies."
+      - Boundary: "Captured requirements can set boundaries that limit flexibility."
+
+  Retrospectives:
+    reduces:
+      - Coordination: "Identifies and addresses coordination issues through regular reviews."
+      - Implementation: "Continuously improves processes and practices."
+      - Feature-Drift: "Captures feedback and adjusts features to meet evolving needs."
+    risks:
+      - Coordination: "Requires coordination and can disrupt regular workflows."
+      - Implementation: "Insights from retrospectives may lead to significant changes in implementation."
+      - Complexity: "Analyzing and acting on retrospective feedback can add complexity."
+
+  Review:
+    reduces:
+      - Implementation: "Ensures quality and correctness of work products."
+      - Conceptual Integrity: "Maintains alignment with design principles and goals."
+      - Complexity: "Identifies and resolves potential complexities during the review process."
+    risks:
+      - Schedule: "Reviews can introduce delays in the project timeline."
+      - Coordination: "Requires effective coordination among team members."
+      - Implementation: "Can lead to conflicts over quality and implementation details."
+
+  Sales:
+    reduces:
+      - Market: "Directly addresses client needs and market demands through feedback loops."
+      - Opportunity: "Identifies and capitalizes on sales opportunities to drive growth."
+      - Communication: "Ensures clear and effective communication with potential and existing clients."
+    risks:
+      - Market: "Misaligned sales strategies can affect market position."
+      - Communication: "Sales-driven communication may overpromise or misrepresent the product."
+      - Feature-Fit: "Sales commitments might lead to features that do not align with the product's core capabilities."
+
+  Security Testing:
+    reduces:
+      - Security: "Identifies vulnerabilities and potential threats, ensuring the application is secure."
+      - Reliability: "Ensures that security measures do not compromise system reliability."
+      - Operational: "Protects against security breaches that could disrupt operations."
+    risks:
+      - Complexity: "Security testing can introduce additional complexity into the development process."
+      - Dependency: "Relies heavily on specific tools and expertise, creating dependencies."
+      - Schedule: "Comprehensive security testing can be time-consuming and delay the project."
+
+  Stakeholder Management:
+    reduces:
+      - Agency: "Aligns the goals and expectations of various stakeholders, reducing conflicts."
+      - Boundary: "Manages the commitments and limitations imposed by stakeholders."
+      - Communication: "Facilitates clear and consistent communication between stakeholders."
+    risks:
+      - Coordination: "Requires effective coordination among all stakeholders, which can be challenging."
+      - Boundary: "Managing diverse stakeholder expectations can create rigid boundaries."
+      - Communication: "Misaligned communication strategies can lead to misunderstandings and conflicts."
+
+  Issue Logging:
+    reduces:
+      - Operational: "Ensures that issues are tracked and resolved promptly."
+      - Reliability: "Helps maintain system reliability by addressing recurring issues."
+      - Security: "Tracks security incidents and ensures they are properly managed."
+    risks:
+      - Complexity: "Can add complexity if not managed properly."
+      - Dependency: "Creates dependency on the issue tracking system and its data accuracy."
+      - Schedule: "Logging and tracking issues can be time-consuming, potentially delaying the project."
+
+  Terms Of Reference:
+    reduces:
+      - Boundary: "Clearly defines the scope and objectives, managing expectations and limitations."
+      - Contextual: "Ensures that the project aligns with legal, social, and economic contexts."
+      - Coordination: "Provides a clear framework for coordination among team members."
+    risks:
+      - Boundary: "Clearly defined terms can create rigid boundaries that limit flexibility."
+      - Coordination: "Requires alignment and coordination among all parties to adhere to the terms."
+      - Dependency: "Creates dependencies on predefined scope and objectives."
+
+  Training:
+    reduces:
+      - Learning Curve: "Provides necessary education to help team members get up to speed."
+      - Operational: "Ensures that staff are well-trained in operational procedures and best practices."
+      - Security: "Educates team members on security protocols and practices."
+    risks:
+      - Schedule: "Training sessions can take time away from development, impacting schedules."
+      - Dependency: "Creates a dependency on training programs and their effectiveness."
+      - Implementation: "Poorly implemented training programs can lead to inadequate skill development."
+
+  Unit Testing:
+    reduces:
+      - Implementation: "Ensures that individual components work correctly."
+      - Regression: "Detects regressions early in the development cycle."
+      - Complexity: "Simplifies debugging by isolating issues to specific units."
+    risks:
+      - Schedule: "Writing and maintaining unit tests can be time-consuming."
+      - Complexity: "Managing a large suite of unit tests can add to the complexity."
+      - Dependency: "Creates dependencies on testing frameworks and tools."
+
+  User Acceptance Testing (UAT):
+    reduces:
+      - Feature-Fit: "Validates that features meet user needs and expectations."
+      - Implementation: "Ensures that the implementation aligns with client requirements."
+      - Communication: "Provides direct feedback from users to the development team."
+    risks:
+      - Schedule: "UAT can introduce delays if issues are found late in the development cycle."
+      - Coordination: "Requires effective coordination with users to conduct testing."
+      - Implementation: "Feedback from UAT might require significant changes in implementation."
+      
+  Version Control:
+    reduces:
+      - Implementation: "Tracks changes and ensures version consistency across the codebase."
+      - Regression: "Facilitates rollback and comparison to previous versions to identify regressions."
+      - Dependency: "Manages dependencies and versions effectively to maintain compatibility."
+    risks:
+      - Complexity: "Managing branches and merges can add complexity."
+      - Dependency: "Creates dependency on the version control system and its correct usage."
+      - Coordination: "Requires effective coordination among team members to avoid conflicts."
