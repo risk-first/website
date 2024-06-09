@@ -7,24 +7,27 @@ practice:
    - "Code Cleanup"
    - "Code Optimization"
    - "Technical Debt Management"
+   - "Factoring"
+   - "Separation of Concerns"
   mitigates:
    - tag: Complexity Risk
-     reason: "Improves code structure and reduces complexity."
+     reason: "Refactoring is aimed at making code more orthogonal, less duplicative and clearer to understand"
    - tag: Implementation Risk
      reason: "Enhances code quality and maintainability."
    - tag: Regression Risk
      reason: "Makes the codebase more robust and less prone to regressions."
+   - tag: Communication Risk
+     reason: "Well-factored code should be easier to understand."
   attendant:
    - tag: Schedule Risk
      reason: "Refactoring can be time-consuming and delay project timelines."
-   - tag: Implementation Risk
-     reason: "Changes during refactoring can introduce new bugs."
-   - tag: Complexity Risk
-     reason: "Poorly planned refactoring can add to system complexity."
+   - tag: Feature Regression Risk
+     reason: "Done carelessly, refactoring can introduce new issues into the codebase"
   related:
    - ../Development-and-Coding/Coding
    - ../Testing-and-Quality-Assurance/Regression-Testing
    - ../Planning-and-Management/Change-Management
+   - ../Planning-And-Management/Design
 ---
 
 <PracticeIntro details={frontMatter.practice} /> 
@@ -34,6 +37,13 @@ practice:
 > "Code refactoring is the process of restructuring existing computer code—changing the factoring—without changing its external behavior. Refactoring improves nonfunctional attributes of the software." - [Code refactoring, _Wikipedia_](https://en.wikipedia.org/wiki/Code_refactoring)
 
 Refactoring involves revising and restructuring existing code to improve its readability, maintainability, and performance without changing its external behavior. This practice helps in reducing technical debt, enhancing code quality, and making the codebase easier to understand and modify.
+
+
+## External References
+
+- [Separation of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns) Wikipedia Page.
+- [Refactoring](https://martinfowler.com/books/refactoring.html) Book by Martin Fowler.
+
 
 ## See Also
 

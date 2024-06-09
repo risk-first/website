@@ -7,20 +7,22 @@ practice:
    - "Collaborative Coding"
    - "Joint Programming"
    - "Buddy Programming"
+   - "Mob Programming"
+   - "Pairing"
   mitigates:
    - tag: Coordination Risk
      reason: "Enhances collaboration and coordination between developers."
    - tag: Learning Curve Risk
      reason: "Facilitates knowledge sharing and learning."
    - tag: Implementation Risk
-     reason: "Improves code quality through real-time review and collaboration."
+     reason: "More eyeballs means fewer bugs and a better implementation"     
   attendant:
    - tag: Coordination Risk
      reason: "Requires effective coordination and can be challenging to implement."
    - tag: Schedule Risk
      reason: "Can slow down individual productivity, impacting overall schedule."
-   - tag: Implementation Risk
-     reason: "Differences in coding styles and approaches can lead to conflicts."
+   - tag: Agency Risk
+     reason: "Staff might not like working in this arrangement."
   related:
    - ../Development-and-Coding/Coding
    - ../Communication-and-Collaboration/Review
