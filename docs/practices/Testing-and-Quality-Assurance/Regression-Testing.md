@@ -10,14 +10,10 @@ practice:
   mitigates:
    - tag: Regression Risk
      reason: "Detects and prevents regressions in the software."
-   - tag: Implementation Risk
-     reason: "Ensures new changes do not negatively impact existing functionality."
-   - tag: Reliability Risk
-     reason: "Maintains the reliability of the software through continuous testing."
   attendant:
    - tag: Schedule Risk
      reason: "Can be time-consuming and introduce delays."
-   - tag: Dependency Risk
+   - tag: Software Dependency Risk
      reason: "Requires a stable testing environment, creating dependencies."
    - tag: Complexity Risk
      reason: "Managing extensive regression tests can add complexity."

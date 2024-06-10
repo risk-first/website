@@ -8,7 +8,7 @@ practice:
    - "Failover"
    - "Resilience"
   mitigates:
-   - tag: Reliability Risk
+   - tag: Feature Risk
      reason: "Ensures system availability and reliability in case of component failure."
    - tag: Operational Risk
      reason: "Minimizes operational disruptions by providing backup components."
@@ -19,12 +19,9 @@ practice:
      reason: "Introducing redundancy can add complexity to the system."
    - tag: Cost Risk
      reason: "Implementing redundancy can be expensive."
-   - tag: Dependency Risk
-     reason: "Creates dependencies on the redundant components and systems."
   related:
    - ../Deployment-and-Operations/Incident-Management
-   - ../Testing-and-Quality-Assurance/Integration-Testing
-   - ../Development-and-Coding/Code-Reviews
+   - ../Development-and-Coding/Pair-Programming
 ---
 
 <PracticeIntro details={frontMatter.practice} /> 

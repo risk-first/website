@@ -8,14 +8,14 @@ practice:
    - "External Hiring"
    - "Third-Party Development"
   mitigates:
-   - tag: Resource Risk
+   - tag: Staff Risk
      reason: "Accesses external resources and skills that may not be available internally."
-   - tag: Cost Risk
+   - tag: Funding Risk
      reason: "Can be cost-effective by leveraging economies of scale."
    - tag: Schedule Risk
      reason: "Can speed up project timelines by adding more workforce."
   attendant:
-   - tag: Dependency Risk
+   - tag: Agency Risk
      reason: "Creates dependencies on third-party vendors and their reliability."
    - tag: Communication Risk
      reason: "May introduce communication challenges with external teams."
@@ -35,7 +35,7 @@ practice:
 
 Outsourcing in software development involves hiring external vendors or service providers to handle specific tasks or projects. This practice can help access specialized skills, reduce costs, and accelerate project timelines. However, it also introduces risks related to dependency, communication, and security that need to be managed effectively.
 
-### Offshoring / Remote Teams
+## Discussion
 
 **Pairing** and **Mobbing** as mitigations to [Coordination Risk](../risks/Coordination-Risk.md) are easiest when developers are together in the same room.  But it doesn't always work out like this.   Teams spread in different locations and timezones naturally don't have the same [communication bandwidth](../risks/Communication-Risk.md) and you _will_ have more issues with [Coordination Risk](../risks/Coordination-Risk.md).  
 

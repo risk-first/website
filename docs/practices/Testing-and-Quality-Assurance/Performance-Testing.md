@@ -8,18 +8,14 @@ practice:
    - "Stress Testing"
    - "Performance Benchmarking"
   mitigates:
-   - tag: Reliability Risk
-     reason: "Ensures the software performs well under expected workloads."
-   - tag: Operational Risk
+   - tag: Feature Access Risk
      reason: "Identifies performance bottlenecks that could impact operations."
-   - tag: Security Risk
-     reason: "Helps uncover vulnerabilities that could be exploited under load."
   attendant:
    - tag: Schedule Risk
      reason: "Can be time-consuming, leading to delays in the project timeline."
    - tag: Complexity Risk
      reason: "Requires sophisticated tools and setup, adding complexity."
-   - tag: Cost Risk
+   - tag: Funding Risk
      reason: "Performance testing tools and environments can be expensive."
   related:
    - ../Development-and-Coding/Coding

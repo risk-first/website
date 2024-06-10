@@ -12,12 +12,14 @@ practice:
      reason: "Ensures that requirements and specifications are clearly understood before development begins."
    - tag: Communication Risk
      reason: "Facilitates clear communication of requirements and expectations among stakeholders."
-   - tag: Complexity Risk
-     reason: "Helps in breaking down complex systems into manageable components."
+   - tag: Feature Fit Risk
+     reason: "Analysis of problems helps you make sure you come up with the right solution."
+   - tag: Contextual Risk
+     reason: "Developing an understanding the context into which a solution is put avoids legal and social problems."
   attendant:
    - tag: Schedule Risk
      reason: "Can be time-consuming, potentially delaying the start of development."
-   - tag: Dependency Risk
+   - tag: Agency Risk
      reason: "Creates dependencies on the availability and accuracy of information from stakeholders."
    - tag: Boundary Risk
      reason: "Well-defined analysis can create rigid boundaries that limit flexibility."

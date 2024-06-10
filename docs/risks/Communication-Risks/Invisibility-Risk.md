@@ -8,7 +8,7 @@ featured:
 sidebar_position: 5
 tags:
  - Risks
- - Invisibilty Risk
+ - Invisibility Risk
  - Communication Risk
 ---
  

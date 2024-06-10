@@ -15,8 +15,8 @@ tags:
  - Risks
  - Feature Risk
 ---
-
 [Feature Risks](Feature-Risk.md) are types of risks to do with functionality that you need to have in the software you're building.  
+
 
 [Feature Risk](Feature-Risk.md) is very fundamental:  if your project has _no_ [Feature Risk](Feature-Risk.md) it would be perfect!  And we all know that _can't happen_.
 

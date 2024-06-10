@@ -18,10 +18,10 @@ practice:
   attendant:
    - tag: Schedule Risk
      reason: "UAT can be time-consuming, potentially delaying the release."
-   - tag: Dependency Risk
-     reason: "Relies on the availability and feedback of end users."
    - tag: Coordination Risk
      reason: "Requires coordination between the development team and end users."
+   - tag: Deadline Risk
+     reason: "Can often go on longer than expected, leading to deadline issues."
   related:
    - ../Planning-and-Management/Requirements-Capture
    - ../Communication-and-Collaboration/Demo

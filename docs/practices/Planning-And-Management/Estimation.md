@@ -8,19 +8,19 @@ practice:
    - "Budgeting"
    - "Effort Estimation"
   mitigates:
-   - tag: Schedule Risk
-     reason: "Provides realistic timelines, helping to keep the project on track."
+   - tag: Deadline Risk
+     reason: "Provides realistic timelines helps hit important deadlines."
    - tag: Funding Risk
      reason: "Accurate estimation helps in securing and managing funding."
-   - tag: Dependency Risk
-     reason: "Helps in planning and managing dependencies effectively."
+   - tag: Staff Risk
+     reason: "Helps in planning and managing staff usage effectively."
   attendant:
    - tag: Schedule Risk
      reason: "Inaccurate estimates can lead to schedule overruns."
-   - tag: Dependency Risk
+   - tag: Deadline Risk
      reason: "Can create dependencies on estimated timelines and resources."
-   - tag: Boundary Risk
-     reason: "Rigid adherence to estimates can limit flexibility in project execution."
+   - tag: Agency Risk
+     reason: "Can put unnecessary pressure on staff to hit deadlines."
   related:
    - ../Planning-and-Management/Prioritising
    - ../Communication-and-Collaboration/Documentation

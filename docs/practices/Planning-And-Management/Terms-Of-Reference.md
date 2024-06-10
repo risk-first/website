@@ -8,19 +8,17 @@ practice:
    - "Scope Definition"
    - "Project Scope Statement"
   mitigates:
-   - tag: Boundary Risk
-     reason: "Clearly defines the scope and objectives, managing expectations and limitations."
    - tag: Contextual Risk
      reason: "Ensures that the project aligns with legal, social, and economic contexts."
    - tag: Coordination Risk
-     reason: "Provides a clear framework for coordination among team members."
+     reason: "Provides a clear framework for coordination among team members and stakeholders."
   attendant:
    - tag: Boundary Risk
-     reason: "Clearly defined terms can create rigid boundaries that limit flexibility."
+     reason: "Poorly defined terms can create rigid boundaries that limit flexibility."
    - tag: Coordination Risk
-     reason: "Requires alignment and coordination among all parties to adhere to the terms."
-   - tag: Dependency Risk
-     reason: "Creates dependencies on predefined scope and objectives."
+     reason: "Requires alignment and coordination among all parties to agree to the terms."
+   - tag: Schedule Risk
+     reason: "Can take time from the schedule to build."
   related:
    - ../Planning-and-Management/Change-Management
    - ../Development-and-Coding/Coding

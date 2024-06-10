@@ -8,9 +8,9 @@ practice:
    - "Terms"
    - "Service Agreement"
   mitigates:
-   - tag: Dependency Risk
+   - tag: Agency Risk
      reason: "Clearly defines roles, responsibilities, and expectations, reducing dependency issues."
-   - tag: Cost Risk
+   - tag: Funding Risk
      reason: "Outlines cost structures and helps manage budget expectations."
    - tag: Schedule Risk
      reason: "Establishes timelines and milestones to keep the project on track."

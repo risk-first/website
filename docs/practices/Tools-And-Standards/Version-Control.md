@@ -12,11 +12,9 @@ practice:
      reason: "Tracks changes and manages versions of the codebase, reducing the risk of implementation errors."
    - tag: Coordination Risk
      reason: "Facilitates collaboration by allowing multiple developers to work on the codebase simultaneously."
-   - tag: Dependency Risk
+   - tag: Regression Risk
      reason: "Maintains a history of changes, allowing rollback to previous versions if needed."
   attendant:
-   - tag: Dependency Risk
-     reason: "Creates dependencies on the version control system and its availability."
    - tag: Complexity Risk
      reason: "Managing branches and merges can add complexity."
    - tag: Security Risk

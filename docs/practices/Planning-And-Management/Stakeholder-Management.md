@@ -10,8 +10,8 @@ practice:
   mitigates:
    - tag: Agency Risk
      reason: "Aligns the goals and expectations of various stakeholders, reducing conflicts."
-   - tag: Boundary Risk
-     reason: "Manages the commitments and limitations imposed by stakeholders."
+   - tag: Coordination Risk
+     reason: "Allows stakeholders to coordinate on their work and demands."
    - tag: Communication Risk
      reason: "Facilitates clear and consistent communication between stakeholders."
   attendant:

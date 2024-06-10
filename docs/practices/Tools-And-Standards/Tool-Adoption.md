@@ -1,5 +1,5 @@
 ---
-title: Tool Adoption
+title: Adoption (Tools)
 tags: 
   - Tool-Adoption
 practice:

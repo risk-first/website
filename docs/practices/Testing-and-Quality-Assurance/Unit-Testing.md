@@ -6,7 +6,7 @@ practice:
   aka: 
    - "Component Testing"
    - "Module Testing"
-   - "Unit Tests"
+   - "Test-Driven Development (TDD)"
   mitigates:
    - tag: Implementation Risk
      reason: "Ensures that individual components work correctly."
@@ -19,7 +19,7 @@ practice:
      reason: "Writing and maintaining unit tests can be time-consuming."
    - tag: Complexity Risk
      reason: "Managing a large suite of unit tests can add to the complexity."
-   - tag: Dependency Risk
+   - tag: Software Dependency Risk
      reason: "Creates dependencies on testing frameworks and tools."
   related:
    - ../Testing-and-Quality-Assurance/Integration-Testing

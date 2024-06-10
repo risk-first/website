@@ -23,7 +23,7 @@ practice:
      reason: "Incorrect configuration management can lead to security vulnerabilities."
   related:
    - ../Planning-and-Management/Change-Management
-   - ../Development-and-Coding/Version-Control
+   - ../Tools-and-Standards/Version-Control
    - ../Tools-and-Standards/Tool-Adoption
 ---
 

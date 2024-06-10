@@ -12,15 +12,15 @@ practice:
      reason: "Identifies and addresses vulnerabilities in the software."
    - tag: Operational Risk
      reason: "Ensures the software can withstand security threats and attacks."
-   - tag: Compliance Risk
+   - tag: Contextual Risk
      reason: "Helps ensure compliance with security standards and regulations."
   attendant:
    - tag: Schedule Risk
      reason: "Security testing can be time-consuming, impacting schedules."
    - tag: Complexity Risk
      reason: "Requires specialized skills and tools, adding complexity."
-   - tag: Dependency Risk
-     reason: "Creates dependencies on security tools and external security experts."
+   - tag: Staff Risk
+     reason: "Requires security experts."
   related:
    - ../Development-and-Coding/Coding
    - ../Testing-and-Quality-Assurance/Performance-Testing

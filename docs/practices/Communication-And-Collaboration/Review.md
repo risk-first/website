@@ -23,8 +23,6 @@ practice:
      reason: "Can lead to conflicts over quality and implementation details."
   related:
    - ../Development-and-Coding/Code-Reviews
-   - ../Planning-and-Management/Stakeholder-Management
-   - ../Testing-and-Quality-Assurance/Integration-Testing
 ---
 
 <PracticeIntro details={frontMatter.practice} /> 

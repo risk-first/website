@@ -22,7 +22,6 @@ practice:
    - tag: Schedule Risk
      reason: "Demos can introduce delays if not planned and executed properly."
   related:
-   - ../Development-and-Coding/Prototyping
    - ../Communication-and-Collaboration/Documentation
    - ../Planning-and-Management/Stakeholder-Management
 ---
@@ -35,9 +34,15 @@ practice:
 
 A demo in software development involves showcasing a working version or prototype of the product to stakeholders. This helps in verifying that the product aligns with client needs and expectations, facilitates feedback, and identifies any potential issues early in the development process. Demos are crucial for communicating the functionality, performance, and feasibility of the software to clients, investors, and other stakeholders.
 
-## External References
+## Variations
 
-- [Geeks For Geeks](https://www.geeksforgeeks.org/software-engineering-prototyping-model/) - Prototyping Model – Software Engineering
+| **Demo Type**            | **Description**                                                                                       | **Reference** |
+|--------------------------|-------------------------------------------------------------------------------------------------------|---------------|
+| **Proof of Concept (PoC)** | Demonstrates the feasibility of a new concept or technology before full-scale development.             | [Proof of Concept, Wikipedia](https://en.wikipedia.org/wiki/Proof_of_concept) |
+| **Prototype Demo**       | Showcases an early model of the software to gather feedback and refine design and functionality.       | [Prototyping, Wikipedia](https://en.wikipedia.org/wiki/Prototyping) |
+| **Sales Demo**           | Tailored presentation to potential customers or clients, highlighting key features and benefits.       | [Product Demonstration, Wikipedia](https://en.wikipedia.org/wiki/Demonstration_(marketing)) |
+| **Training Demo**        | Provides a detailed walkthrough for new users or team members to teach effective software usage.       | [Training, Wikipedia](https://en.wikipedia.org/wiki/Training) |
+| **Product Launch Demo**  | Public demonstration of the final product to generate excitement and publicity at release time.        | [Product Launch, Wikipedia](https://en.wikipedia.org/wiki/Product_launch) |
 
 ## See Also
 

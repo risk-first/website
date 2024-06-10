@@ -12,13 +12,11 @@ practice:
      reason: "Makes all aspects of the project transparent and accessible to the team."
    - tag: Communication Risk
      reason: "Provides clear guidelines and information, reducing misunderstandings."
-   - tag: Complexity Risk
+   - tag: Learning Curve Risk
      reason: "Detailed documentation helps manage and understand complex systems."
   attendant:
    - tag: Schedule Risk
      reason: "Creating and maintaining documentation can be time-consuming."
-   - tag: Dependency Risk
-     reason: "Over-reliance on documentation can lead to dependency issues if documentation is outdated or inaccurate."
    - tag: Complexity Risk
      reason: "Extensive documentation can sometimes add to complexity rather than simplifying it."
   related:

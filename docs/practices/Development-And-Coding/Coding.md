@@ -10,6 +10,8 @@ practice:
   mitigates:
    - tag: Feature Risk
      reason: "Build or improve some features which our clients will find useful."
+   - tag: Process Risk
+     reason: Problems with processes can be fixed by adding code.
   attendant:
    - tag: Implementation Risk
      reason: "Poor coding practices can lead to significant implementation issues."

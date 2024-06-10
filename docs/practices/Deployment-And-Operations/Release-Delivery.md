@@ -9,7 +9,7 @@ practice:
    - "Deployment"
    - "Launch"
   mitigates:
-   - tag: Implementation Risk
+   - tag: Feature Risk
      reason: "Ensures that software is thoroughly tested and stable before being released."
    - tag: Operational Risk
      reason: "Manages the release process to minimize disruptions to operations."

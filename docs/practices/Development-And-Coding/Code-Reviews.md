@@ -19,12 +19,11 @@ practice:
      reason: "The review process can introduce delays in the development timeline."
    - tag: Coordination Risk
      reason: "Requires effective coordination among team members, which can be challenging."
-   - tag: Implementation Risk
-     reason: "Can lead to conflicts over code quality and implementation details."
   related:
-   - ../Planning-and-Management/Stakeholder-Management
-   - ../Development-and-Coding/Coding
-   - ../Testing-and-Quality-Assurance/Integration-Testing
+   - ../Communication-And-Collaboration/Review
+   - ../Development-And-Coding/Pair-Programming
+   - ../Testing-And-Quality-Assurance/Integration-Testing
+   - ../Planning-And-Management/Approvals
 ---
 
 <PracticeIntro details={frontMatter.practice} /> 

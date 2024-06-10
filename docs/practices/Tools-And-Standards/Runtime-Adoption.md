@@ -10,17 +10,17 @@ practice:
   mitigates:
    - tag: Implementation Risk
      reason: "Ensures consistency and reliability by adhering to proven standards and libraries."
-   - tag: Dependency Risk
+   - tag: Implementation Risk
      reason: "Reduces the risk of relying on proprietary or less widely adopted solutions."
    - tag: Complexity Risk
-     reason: "Simplifies development by using established standards and libraries."
+     reason: "Reduces the amount of code you are responsible for."
   attendant:
-   - tag: Dependency Risk
+   - tag: Software Dependency Risk
      reason: "Creates dependencies on the adopted standards and libraries."
    - tag: Boundary Risk
-     reason: "Limits flexibility by adhering to specific standards and libraries."
-   - tag: Cost Risk
-     reason: "Can incur costs associated with adopting and maintaining standards and libraries."
+     reason: "Limits flexibility by adhering to specific standards and libraries which may be hard to change later."
+   - tag: Funding Risk
+     reason: "Can incur costs associated with adopting standards or libraries."
   related:
    - ../Development-and-Coding/Coding
    - ../Testing-and-Quality-Assurance/Integration-Testing

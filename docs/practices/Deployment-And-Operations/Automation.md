@@ -6,15 +6,16 @@ practice:
   aka: 
    - "Mechanisation"
    - "Formalisation"
-   - "Auto-Execution"
-   - "Automated Processes"
+   - "Process Automation"
    - "Continuous Integration (CI)"
    - "Continuous Delivery (CD)"
   mitigates:
-   - tag: Implementation Risk
+   - tag: Feature Fit Risk
      reason: "Reduces the variability in process completion"
    - tag: Operational Risk
      reason: "Introduces more consistency in process operations and removes opportunity for human error"
+   - tag: Schedule Risk
+     reason: "Too much focus on automation can distract from more important tasks"
   attendant:
    - tag: Complexity Risk
      reason: "Introducing code adds to the complexity of a project"

@@ -10,21 +10,22 @@ practice:
   mitigates:
    - tag: Market Risk
      reason: "Promotes the software to reach potential customers and increase market share."
-   - tag: Opportunity Risk
-     reason: "Identifies and exploits new market opportunities."
+   - tag: Feature Drift Risk
+     reason: "Make the most of market opportunities while they exist."
    - tag: Communication Risk
      reason: "Facilitates communication of the product's value proposition to the target audience."
   attendant:
-   - tag: Cost Risk
+   - tag: Funding Risk
      reason: "Marketing campaigns can be expensive."
-   - tag: Resource Risk
+   - tag: Coordination Risk
      reason: "Requires dedicated resources for planning and execution."
-   - tag: Schedule Risk
+   - tag: Deadline Risk
      reason: "Timing of marketing campaigns needs to align with product readiness."
   related:
    - ../Planning-and-Management/Requirements-Capture
    - ../Communication-and-Collaboration/Demo
    - ../Deployment-and-Operations/Release-Delivery
+   - Sales
 ---
 
 <PracticeIntro details={frontMatter.practice} /> 

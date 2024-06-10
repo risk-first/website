@@ -10,17 +10,15 @@ practice:
   mitigates:
    - tag: Feature-Fit Risk
      reason: "Ensures that features align with client needs and expectations."
-   - tag: Communication Risk
-     reason: "Provides a clear understanding of requirements to all stakeholders."
-   - tag: Implementation Risk
-     reason: "Helps in creating accurate and detailed implementation plans."
+   - tag: Coordination Risk
+     reason: "Can Provide a clear understanding of requirements to all stakeholders."
+   - tag: Conceptual Integrity Risk
+     reason: "Helps in explaining exactly what should be built."
   attendant:
-   - tag: Feature-Drift Risk
-     reason: "Evolving requirements can lead to feature drift."
+   - tag: Feature Drift Risk
+     reason: "Requirements will evolve and this can lead to feature drift."
    - tag: Dependency Risk
-     reason: "Detailed requirements can create rigid dependencies."
-   - tag: Boundary Risk
-     reason: "Captured requirements can set boundaries that limit flexibility."
+     reason: "Thorough requirements capture can be time-consuming."
   related:
    - ../Planning-and-Management/Prioritising
    - ../Testing-and-Quality-Assurance/Integration-Testing

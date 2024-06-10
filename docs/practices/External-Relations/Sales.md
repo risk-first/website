@@ -8,18 +8,18 @@ practice:
    - "Revenue Generation"
    - "Client Acquisition"
   mitigates:
-   - tag: Opportunity Risk
+   - tag: Funding Risk
      reason: "Generates revenue by converting potential leads into customers."
    - tag: Market Risk
      reason: "Increases market penetration and customer base."
    - tag: Communication Risk
      reason: "Facilitates direct communication with potential customers to understand their needs."
   attendant:
-   - tag: Resource Risk
+   - tag: Staff Risk
      reason: "Requires a dedicated sales team and resources."
-   - tag: Cost Risk
+   - tag: Funding Risk
      reason: "Sales activities can incur significant costs."
-   - tag: Schedule Risk
+   - tag: Deadline Risk
      reason: "Sales cycles need to align with product availability and readiness."
   related:
    - ../External-Relations/Marketing

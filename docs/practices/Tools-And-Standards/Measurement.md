@@ -10,14 +10,14 @@ practice:
   mitigates:
    - tag: Operational Risk
      reason: "Provides data to inform decision-making and improve operational efficiency."
-   - tag: Complexity Risk
-     reason: "Helps in understanding and managing the complexity of the system."
+   - tag: Feature Access Risk
+     reason: "Helps in understanding the use of the system."
    - tag: Implementation Risk
      reason: "Identifies areas of improvement in the implementation process."
   attendant:
-   - tag: Cost Risk
+   - tag: Funding Risk
      reason: "Implementing measurement systems can be expensive."
-   - tag: Dependency Risk
+   - tag: Software Dependency Risk
      reason: "Creates dependencies on measurement tools and their accuracy."
    - tag: Complexity Risk
      reason: "Collecting and analyzing data can add to the complexity of the project."

@@ -17,12 +17,9 @@ practice:
   attendant:
    - tag: Schedule Risk
      reason: "Prototyping can be time-consuming and delay the project timeline."
-   - tag: Cost Risk
+   - tag: Funding Risk
      reason: "Creating prototypes can incur additional costs."
-   - tag: Dependency Risk
-     reason: "Relies on the availability of tools and resources for prototyping."
   related:
-   - ../Development-and-Coding/Refactoring
    - ../Testing-and-Quality-Assurance/User-Acceptance-Testing-(UAT)
    - ../Communication-and-Collaboration/Demo
 ---

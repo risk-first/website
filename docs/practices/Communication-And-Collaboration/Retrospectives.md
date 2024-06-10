@@ -10,17 +10,13 @@ practice:
   mitigates:
    - tag: Coordination Risk
      reason: "Identifies and addresses coordination issues through regular reviews."
-   - tag: Implementation Risk
+   - tag: Process Risk
      reason: "Continuously improves processes and practices."
    - tag: Feature-Drift Risk
      reason: "Captures feedback and adjusts features to meet evolving needs."
   attendant:
-   - tag: Coordination Risk
+   - tag: Schedule Risk
      reason: "Requires coordination and can disrupt regular workflows."
-   - tag: Implementation Risk
-     reason: "Insights from retrospectives may lead to significant changes in implementation."
-   - tag: Complexity Risk
-     reason: "Analyzing and acting on retrospective feedback can add complexity."
   related:
    - ../Planning-and-Management/Change-Management
    - ../Development-and-Coding/Refactoring

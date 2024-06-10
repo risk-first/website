@@ -8,7 +8,7 @@ practice:
    - "End-to-End Testing"
    - "Continuous Integration"
   mitigates:
-   - tag: Dependency Risk
+   - tag: Software Dependency Risk
      reason: "Ensures that integrated components work together as expected."
    - tag: Implementation Risk
      reason: "Validates that the implementation meets requirements."
@@ -17,10 +17,10 @@ practice:
   attendant:
    - tag: Schedule Risk
      reason: "Can be time-consuming, leading to delays in the project timeline."
-   - tag: Dependency Risk
-     reason: "Increases dependency on integrated components and their availability."
+   - tag: Software Dependency Risk
+     reason: "Adds dependencies on test environments and their availability."
    - tag: Complexity Risk
-     reason: "Integrating multiple components can introduce complex issues that are hard to resolve."
+     reason: "Integrating multiple components can be complex work in itself."
   related:
    - ../Planning-and-Management/Change-Management
    - ../Development-and-Coding/Unit-Testing

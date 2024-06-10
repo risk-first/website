@@ -4,8 +4,6 @@ tags:
   - Issue Management
 practice:
   aka: 
-   - "IcM"
-   - "IT Incident Management"
    - "Incident Response"
    - "Incident Management"
   mitigates:

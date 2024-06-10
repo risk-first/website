@@ -9,19 +9,18 @@ practice:
    - "Technical Debt Management"
    - "Factoring"
    - "Separation of Concerns"
+   - "Modularisation"
   mitigates:
    - tag: Complexity Risk
      reason: "Refactoring is aimed at making code more orthogonal, less duplicative and clearer to understand"
    - tag: Implementation Risk
      reason: "Enhances code quality and maintainability."
-   - tag: Regression Risk
-     reason: "Makes the codebase more robust and less prone to regressions."
    - tag: Communication Risk
      reason: "Well-factored code should be easier to understand."
   attendant:
    - tag: Schedule Risk
      reason: "Refactoring can be time-consuming and delay project timelines."
-   - tag: Feature Regression Risk
+   - tag: Regression Risk
      reason: "Done carelessly, refactoring can introduce new issues into the codebase"
   related:
    - ../Development-and-Coding/Coding

@@ -10,15 +10,15 @@ practice:
   mitigates:
    - tag: Schedule Risk
      reason: "Helps in focusing on high-priority tasks and meeting deadlines."
-   - tag: Opportunity Risk
+   - tag: Market Risk
      reason: "Ensures that the most valuable features and opportunities are addressed first."
    - tag: Funding Risk
      reason: "Allocates resources efficiently to high-impact areas."
   attendant:
-   - tag: Dependency Risk
-     reason: "Prioritization decisions can create dependencies on specific tasks or features."
-   - tag: Opportunity Risk
-     reason: "Focusing on current priorities might cause missed opportunities for innovation."
+   - tag: Scarcity Risk
+     reason: "Prioritization can create dependencies on specific tasks or features."
+   - tag: Complexity Risk
+     reason: "Sometimes prioritising in the wrong order can create project complexity."
   related:
    - ../Planning-and-Management/Requirements-Capture
    - ../Communication-and-Collaboration/Retrospectives

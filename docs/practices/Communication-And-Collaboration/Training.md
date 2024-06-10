@@ -22,9 +22,8 @@ practice:
    - tag: Implementation Risk
      reason: "Poorly implemented training programs can lead to inadequate skill development."
   related:
-   - ../Planning-and-Management/Stakeholder-Management
+   - ../Documentation
    - ../Development-and-Coding/Pair-Programming
-   - ../Deployment-and-Operations/Configuration-Management
 ---
 
 <PracticeIntro details={frontMatter.practice} /> 
