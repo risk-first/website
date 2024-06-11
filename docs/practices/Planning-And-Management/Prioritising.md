@@ -4,6 +4,9 @@ description: Defining the Minimum Viable Product and planning development priori
 tags: 
   - Prioritising
   - Planning-Management
+featured: 
+  class: c
+  element: '<action>Prioritise</action>'
 practice:
   aka: 
    - "Roadmapping"

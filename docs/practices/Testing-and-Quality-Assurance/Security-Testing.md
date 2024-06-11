@@ -4,6 +4,9 @@ description: Ensuring the application is secure by identifying vulnerabilities.
 tags: 
   - Security Testing
   - Testing-Quality-Assurance 
+featured: 
+  class: c
+  element: '<action>Security Test</action>'
 practice:
   aka: 
    - "Penetration Testing"

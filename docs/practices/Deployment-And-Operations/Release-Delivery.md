@@ -5,6 +5,9 @@ tags:
   - Release Management
   - Release-Delivery
   - Deployment-Operations
+featured: 
+  class: c
+  element: '<action>Release</action>'
 practice:
   aka: 
    - "Software Release Management"

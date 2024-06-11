@@ -4,6 +4,9 @@ description: Ensuring backup systems are in place to prevent failure.
 tags: 
   - Redundancy
   - Deployment-Operations
+featured: 
+  class: c
+  element: '<action>Redundancy</action>'
 practice:
   aka: 
    - "Backup"

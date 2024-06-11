@@ -4,6 +4,9 @@ description: Examining systems to understand how they work and how they should c
 tags: 
   - Analysis
   - External-Relations
+featured: 
+  class: c
+  element: '<action>Analysis</action>'
 practice:
   aka: 
    - "Requirement Analysis"

@@ -4,6 +4,9 @@ description: Testing to ensure the software performs well under expected workloa
 tags: 
   - Performance Testing
   - Testing-Quality-Assurance 
+featured: 
+  class: c
+  element: '<action>Performance Test</action>'
 practice:
   aka: 
    - "Load Testing"

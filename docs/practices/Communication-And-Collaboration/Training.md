@@ -4,6 +4,9 @@ description: Providing guidance on how to use the software to users or developer
 tags: 
   - Training
   - Communication-Collaboration
+featured: 
+  class: c
+  element: '<action>Training</action>'
 practice:
   aka: 
    - "Education"

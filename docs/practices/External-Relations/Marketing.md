@@ -4,6 +4,9 @@ description: Managing communication strategies to promote the software and engag
 tags: 
   - Marketing
   - External-Relations
+featured: 
+  class: c
+  element: '<action>Marketing</action>'
 practice:
   aka: 
    - "Promotion"

@@ -4,6 +4,9 @@ description: Estimating the time and resources needed for tasks.
 tags: 
   - Estimation
   - Planning-Management
+featured: 
+  class: c
+  element: '<action>Estimate</action>'
 practice:
   aka: 
    - "Forecasting"

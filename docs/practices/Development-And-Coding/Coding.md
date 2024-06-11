@@ -4,6 +4,9 @@ description: Writing software to meet a required feature.
 tags: 
   - Coding
   - Development-Coding
+featured: 
+  class: c
+  element: '<action>Code</action>'
 practice:
   aka: 
    - "Programming"

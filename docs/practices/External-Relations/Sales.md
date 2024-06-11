@@ -4,6 +4,9 @@ description: Managing the sales strategy to drive software adoption and revenue 
 tags: 
   - Sales
   - External-Relations
+featured: 
+  class: c
+  element: '<action>Sales</action>'
 practice:
   aka: 
    - "Selling"

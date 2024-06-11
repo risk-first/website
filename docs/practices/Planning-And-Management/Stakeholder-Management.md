@@ -4,6 +4,9 @@ description: Managing relationships and communications with stakeholders.
 tags: 
   - Stakeholder Management
   - Planning-Management
+featured: 
+  class: c
+  element: '<action>Stakeholder Mgmt</action>'
 practice:
   aka: 
    - "Stakeholder Engagement"

@@ -4,6 +4,9 @@ description: Two developers working together on the same code.
 tags: 
   - Pair-Programming
   - Development-Coding
+featured: 
+  class: c
+  element: '<action>Pairing</action>'
 practice:
   aka: 
    - "Collaborative Coding"

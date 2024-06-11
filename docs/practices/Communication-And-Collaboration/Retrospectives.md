@@ -4,6 +4,9 @@ description: Conducting regular reviews to discuss what went well, what didn't, 
 tags: 
   - Retrospectives
   - Communication-Collaboration
+featured: 
+  class: c
+  element: '<action>Retrospective</action>'
 practice:
   aka: 
    - "Post-Mortem"
@@ -20,6 +23,7 @@ practice:
    - tag: Schedule Risk
      reason: "Requires coordination and can disrupt regular workflows."
   related:
+   - Review
    - ../Planning-and-Management/Change-Management
    - ../Development-and-Coding/Refactoring
    - ../Testing-and-Quality-Assurance/Regression-Testing

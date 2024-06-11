@@ -4,6 +4,9 @@ description: Using machines to perform repetitive tasks.
 tags: 
   - Automation
   - Deployment-Operations
+featured: 
+  class: c
+  element: '<action>Automate</action>'
 practice:
   aka: 
    - "Mechanisation"

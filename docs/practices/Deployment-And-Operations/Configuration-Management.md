@@ -4,6 +4,9 @@ description: Managing and maintaining configuration settings of the software.
 tags: 
   - Configuration Management
   - Deployment-Operations
+featured: 
+  class: c
+  element: '<action>Configuration Mgmt</action>'
 practice:
   aka: 
    - "CM"

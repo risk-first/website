@@ -4,6 +4,9 @@ description: Creating documentation to describe the software and its use.
 tags: 
   - Documentation
   - Communication-Collaboration
+featured: 
+  class: c
+  element: '<action>Documentation</action>'
 practice:
   aka: 
    - "Manuals"

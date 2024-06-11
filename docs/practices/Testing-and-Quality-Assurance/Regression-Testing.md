@@ -4,6 +4,9 @@ description: Testing to ensure new changes do not adversely affect existing func
 tags: 
   - Regression Testing
   - Testing-Quality-Assurance 
+featured: 
+  class: c
+  element: '<action>Regression Test</action>'
 practice:
   aka: 
    - "Retesting"

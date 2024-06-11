@@ -5,6 +5,9 @@ tags:
   - Architecture
   - Design
   - Planning-Management
+featured: 
+  class: c
+  element: '<action>Design</action>'
 practice:
   aka: 
    - "System Design"

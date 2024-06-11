@@ -4,6 +4,9 @@ description: Responding to issues and requests from users.
 tags: 
   - Issue Management
   - Deployment-Operations
+featured: 
+  class: c
+  element: '<action>Incident Mgmt</action>'
 practice:
   aka: 
    - "Incident Response"

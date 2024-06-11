@@ -4,6 +4,9 @@ description: Defining the scope and objectives of the project.
 tags: 
   - Terms Of Reference
   - Planning-Management
+featured: 
+  class: c
+  element: '<action>Terms of Reference</action>'
 practice:
   aka: 
    - "Project Charter"

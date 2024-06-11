@@ -4,6 +4,9 @@ description: Implementing and utilising specific tools in the development proces
 tags: 
   - Tool-Adoption
   - Development-Coding
+featured: 
+  class: c
+  element: '<action>Use Tool</action>'
 practice:
   aka: 
    - "Tool Integration"

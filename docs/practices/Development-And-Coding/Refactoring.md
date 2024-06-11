@@ -4,6 +4,9 @@ description: Revising code to improve its structure without changing its behavio
 tags: 
   - Refactoring
   - Development-Coding
+featured: 
+  class: c
+  element: '<action>Refactor</action>'
 practice:
   aka: 
    - "Code Cleanup"

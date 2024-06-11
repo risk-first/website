@@ -4,6 +4,9 @@ description: Getting formal approval for various project stages.
 tags: 
   - Approvals
   - Planning-Management
+featured: 
+  class: c
+  element: '<action>Approval</action>'
 practice:
   aka: 
    - "Quality Gate"

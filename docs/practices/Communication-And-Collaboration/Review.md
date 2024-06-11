@@ -4,6 +4,9 @@ description: Conducting systematic reviews of work done.
 tags: 
   - Review
   - Communication-Collaboration
+featured: 
+  class: c
+  element: '<action>Review</action>'
 practice:
   aka: 
    - "Assessment"
@@ -28,6 +31,7 @@ practice:
      reason: "Can lead to conflicts over quality and implementation details."
   related:
    - ../Deployment-And-Operations/Monitoring
+   - Retrospective
 ---
 
 <PracticeIntro details={frontMatter} /> 

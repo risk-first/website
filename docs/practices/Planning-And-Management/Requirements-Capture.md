@@ -4,6 +4,9 @@ description: Gathering and documenting the requirements for the software.
 tags: 
   - Requirements Capture
   - Planning-Management
+featured: 
+  class: c
+  element: '<action>Capture Requirements</action>'
 practice:
   aka: 
    - "Requirement Gathering"

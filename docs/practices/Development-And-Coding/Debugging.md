@@ -4,6 +4,9 @@ description: Identifying and fixing defects in the software.
 tags: 
   - Debugging
   - Development-Coding
+featured: 
+  class: c
+  element: '<action>Debug</action>'
 practice:
   aka: 
    - "Troubleshooting"

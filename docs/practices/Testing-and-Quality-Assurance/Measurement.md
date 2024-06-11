@@ -4,6 +4,9 @@ description: Quantitatively evaluating the software against benchmarks along som
 tags: 
   - Measurement
   - Testing-Quality-Assurance 
+featured: 
+  class: c
+  element: '<action>Measure</action>'
 practice:
   aka: 
    - "Metrics"

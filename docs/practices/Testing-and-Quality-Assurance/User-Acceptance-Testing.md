@@ -4,6 +4,9 @@ description: Having a customer representative available onsite for feedback.
 tags: 
   - User-Acceptance-Testing
   - Testing-Quality-Assurance 
+featured: 
+  class: c
+  element: '<action>UAT</action>'
 practice:
   aka: 
    - "End User Testing"
