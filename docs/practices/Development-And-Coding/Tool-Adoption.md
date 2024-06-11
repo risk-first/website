@@ -3,6 +3,7 @@ title: Adoption (Tools)
 description: Implementing and utilising specific tools in the development process.
 tags: 
   - Tool-Adoption
+  - Development-Coding
 practice:
   aka: 
    - "Tool Integration"

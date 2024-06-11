@@ -3,6 +3,7 @@ title: User Acceptance Testing
 description: Having a customer representative available onsite for feedback.
 tags: 
   - User-Acceptance-Testing
+  - Testing-Quality-Assurance 
 practice:
   aka: 
    - "End User Testing"

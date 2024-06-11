@@ -3,6 +3,7 @@ title: Measurement
 description: Quantitatively evaluating the software against benchmarks along some defined dimension.
 tags: 
   - Measurement
+  - Testing-Quality-Assurance 
 practice:
   aka: 
    - "Metrics"

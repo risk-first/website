@@ -3,6 +3,7 @@ title: Configuration Management
 description: Managing and maintaining configuration settings of the software.
 tags: 
   - Configuration Management
+  - Deployment-Operations
 practice:
   aka: 
    - "CM"

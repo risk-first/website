@@ -17,7 +17,7 @@ practice:
      reason: "Maintains alignment with design principles and goals."
    - tag: Complexity Risk
      reason: "Identifies and resolves potential complexities during the review process."
-   - tag" Agency Risk
+   - tag: Agency Risk
      reason: "Reviewing work or activity can ensure good behaviour."
   attendant:
    - tag: Schedule Risk

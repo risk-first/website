@@ -3,6 +3,7 @@ title: Issue Logging
 description: Logging support issues and tracking their resolution.
 tags: 
   - Issue Logging
+  - Planning-Management
 practice:
   aka: 
    - "Issue Tracking"

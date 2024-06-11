@@ -14,4 +14,4 @@ layout: categories
 Here are a selection of software development practices aimed at improving communication and collaboration within or around a software project.
 
  
-<TagList tag="Communication-Collaboration" filter="practices/Communication-And-Collaboration" />
+<TagList tag="Communication-Collaboration" />

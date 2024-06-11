@@ -3,6 +3,7 @@ title: Performance Testing
 description: Testing to ensure the software performs well under expected workloads.
 tags: 
   - Performance Testing
+  - Testing-Quality-Assurance 
 practice:
   aka: 
    - "Load Testing"

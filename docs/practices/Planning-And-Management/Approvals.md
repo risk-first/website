@@ -3,6 +3,7 @@ title: Approval
 description: Getting formal approval for various project stages.
 tags: 
   - Approvals
+  - Planning-Management
 practice:
   aka: 
    - "Quality Gate"

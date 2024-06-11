@@ -1,8 +1,9 @@
 ---
 title: Change Management
-description: Managing changes in a systematic way.
+description: Managing changes to systems and organisations in a systematic way.
 tags: 
   - Change Management
+  - Planning-Management
 practice:
   aka: 
    - "Change Control"

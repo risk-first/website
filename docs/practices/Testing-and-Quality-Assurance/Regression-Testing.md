@@ -3,6 +3,7 @@ title: Regression Testing
 description: Testing to ensure new changes do not adversely affect existing functionality.
 tags: 
   - Regression Testing
+  - Testing-Quality-Assurance 
 practice:
   aka: 
    - "Retesting"

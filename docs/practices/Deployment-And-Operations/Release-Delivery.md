@@ -4,6 +4,7 @@ description: Deploying the software to production.
 tags: 
   - Release Management
   - Release-Delivery
+  - Deployment-Operations
 practice:
   aka: 
    - "Software Release Management"

@@ -3,6 +3,7 @@ title: Estimation
 description: Estimating the time and resources needed for tasks.
 tags: 
   - Estimation
+  - Planning-Management
 practice:
   aka: 
    - "Forecasting"

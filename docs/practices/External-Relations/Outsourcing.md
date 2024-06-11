@@ -3,6 +3,7 @@ title: Outsourcing
 description: Hiring external resources or companies to handle parts of the project.
 tags: 
   - Outsourcing
+  - External-Relations
 practice:
   aka: 
    - "Contracting"

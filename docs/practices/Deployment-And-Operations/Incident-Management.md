@@ -3,6 +3,7 @@ title: Issue Management
 description: Responding to issues and requests from users.
 tags: 
   - Issue Management
+  - Deployment-Operations
 practice:
   aka: 
    - "Incident Response"

@@ -3,6 +3,7 @@ title: Debugging
 description: Identifying and fixing defects in the software.
 tags: 
   - Debugging
+  - Development-Coding
 practice:
   aka: 
    - "Troubleshooting"

@@ -3,6 +3,7 @@ title: Contracts
 description: Defining contractual obligations and agreements.
 tags: 
   - Contracts
+  - External-Relations
 practice:
   aka: 
    - "Agreement"
