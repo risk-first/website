@@ -14,19 +14,19 @@ practice:
    - "Deployment"
    - "Launch"
   mitigates:
-   - tag: Feature Risk
-     reason: "Ensures that software is thoroughly tested and stable before being released."
-   - tag: Operational Risk
-     reason: "Manages the release process to minimize disruptions to operations."
-   - tag: Reliability Risk
-     reason: "Facilitates consistent and reliable releases through structured processes."
+   - tag: Feature Access Risk
+     reason: Users are able to access the features you release to them.
+   - tag: Market Risk
+     reason: "Delivering features means you get market feedback."
+   - tag: Funding Risk
+     reason: "Delivering features might mean you get paid for the software you write."
   attendant:
    - tag: Complexity Risk
      reason: "Release processes can add complexity to project management."
    - tag: Schedule Risk
      reason: "Delays in the release process can impact overall project timelines."
-   - tag: Dependency Risk
-     reason: "Relies heavily on the coordination of various teams and systems."
+   - tag: Operational Risk
+     reason: "Releasing software means that the software has to be supported in production."
   related:
    - ../Planning-and-Management/Change-Management
    - ../Tools-and-Standards/Version-Control
