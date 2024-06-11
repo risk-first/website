@@ -1,5 +1,6 @@
 ---
 title: Review
+description: Conducting systematic reviews of work done.
 tags: 
   - Review
   - Communication-Collaboration
@@ -26,7 +27,6 @@ practice:
    - tag: Implementation Risk
      reason: "Can lead to conflicts over quality and implementation details."
   related:
-   - ../Development-and-Coding/Code-Reviews
    - ../Deployment-And-Operations/Monitoring
 ---
 
@@ -37,6 +37,13 @@ practice:
 > "A review is an evaluation of a publication, product, service, or company such as a movie (a movie review), video game (video game review), musical composition (music review of a composition or recording), book (book review); a piece of hardware like a car, home appliance, or computer; or an event or performance, such as a live music concert, play, musical theater show, dance show, or art exhibition." - [Review, _Wikipedia_](https://en.wikipedia.org/wiki/Review)
 
 In the context of software development, a review involves evaluating work products to ensure they meet the required standards and specifications. This can include code reviews, design reviews, and project evaluations. Reviews are essential for maintaining quality, consistency, and alignment with project goals.
+
+### Code Review
+
+> "In software development, code review is a systematic examination of computer source code. It is intended to find and fix mistakes overlooked in the initial development phase, improving the overall quality of software." - [Code review, _Wikipedia_](https://en.wikipedia.org/wiki/Code_review)
+
+Code reviews involve evaluating code written by team members to ensure it meets the required standards and is free of defects. This practice helps in maintaining code quality, consistency, and reliability. By catching issues early, code reviews can prevent larger problems down the line and facilitate knowledge sharing among team members.
+
 
 ## See Also
 

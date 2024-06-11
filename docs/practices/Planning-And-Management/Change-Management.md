@@ -1,5 +1,6 @@
 ---
 title: Change Management
+description: Managing changes in a systematic way.
 tags: 
   - Change Management
 practice:

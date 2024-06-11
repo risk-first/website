@@ -1,5 +1,6 @@
 ---
 title: Terms Of Reference
+description: Defining the scope and objectives of the project.
 tags: 
   - Terms Of Reference
 practice:
@@ -23,6 +24,7 @@ practice:
    - ../Planning-and-Management/Change-Management
    - ../Development-and-Coding/Coding
    - ../Communication-and-Collaboration/Documentation
+   - Stakeholder-Management
 ---
 
 <PracticeIntro details={frontMatter} /> 

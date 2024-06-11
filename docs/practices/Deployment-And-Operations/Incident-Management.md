@@ -1,5 +1,6 @@
 ---
 title: Issue Management
+description: Responding to issues and requests from users.
 tags: 
   - Issue Management
 practice:

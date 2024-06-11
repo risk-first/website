@@ -1,5 +1,6 @@
 ---
 title: Documentation
+description: Creating documentation to describe the software and its use.
 tags: 
   - Documentation
   - Communication-Collaboration

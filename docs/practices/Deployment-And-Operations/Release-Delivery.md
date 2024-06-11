@@ -1,5 +1,6 @@
 ---
 title: Release / Delivery
+description: Deploying the software to production.
 tags: 
   - Release Management
   - Release-Delivery

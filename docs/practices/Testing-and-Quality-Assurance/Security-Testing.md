@@ -1,5 +1,6 @@
 ---
 title: Security Testing
+description: Ensuring the application is secure by identifying vulnerabilities.
 tags: 
   - Security Testing
 practice:

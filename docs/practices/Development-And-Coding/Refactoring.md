@@ -1,5 +1,6 @@
 ---
 title: Refactoring
+description: Revising code to improve its structure without changing its behavior.
 tags: 
   - Refactoring
 practice:

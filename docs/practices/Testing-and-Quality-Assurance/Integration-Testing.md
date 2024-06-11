@@ -1,5 +1,6 @@
 ---
 title: Integration Testing
+description: Testing combined parts of the software to ensure they work together.
 tags: 
   - Integration Testing
 practice:

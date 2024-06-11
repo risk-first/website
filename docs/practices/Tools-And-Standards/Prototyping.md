@@ -1,5 +1,6 @@
 ---
 title: Prototyping
+description: Creating early models of the software to test concepts and ideas.
 tags: 
   - Prototyping
 practice:
@@ -22,6 +23,7 @@ practice:
   related:
    - ../Testing-and-Quality-Assurance/User-Acceptance-Testing-(UAT)
    - ../Communication-and-Collaboration/Demo
+   - ../Planning-And-Management/Prioritising
 ---
 
 <PracticeIntro details={frontMatter} /> 

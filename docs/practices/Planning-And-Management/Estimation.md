@@ -1,5 +1,6 @@
 ---
 title: Estimation
+description: Estimating the time and resources needed for tasks.
 tags: 
   - Estimation
 practice:

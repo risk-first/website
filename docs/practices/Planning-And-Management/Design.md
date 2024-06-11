@@ -1,5 +1,6 @@
 ---
 title: Design
+description: Designing the high-level structure of the software.
 tags: 
   - Architecture
   - Design

@@ -1,5 +1,6 @@
 ---
 title: Stakeholder Management
+description: Managing relationships and communications with stakeholders. 
 tags: 
   - Stakeholder Management
 practice:
@@ -25,6 +26,7 @@ practice:
    - ../Planning-and-Management/Change-Management
    - ../Communication-and-Collaboration/Documentation
    - ../External-Relations/Contract
+   - Terms-Of-Reference
 ---
 
 <PracticeIntro details={frontMatter} /> 

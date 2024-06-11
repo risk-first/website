@@ -1,5 +1,6 @@
 ---
 title: Requirements Capture
+description: Gathering and documenting the requirements for the software.
 tags: 
   - Requirements Capture
 practice:

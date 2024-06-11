@@ -1,5 +1,6 @@
 ---
 title: Retrospectives
+description: Conducting regular reviews to discuss what went well, what didn't, and how to improve.
 tags: 
   - Retrospectives
   - Communication-Collaboration

@@ -1,5 +1,6 @@
 ---
 title: Marketing
+description: Managing communication strategies to promote the software and engage with the target audience.
 tags: 
   - Marketing
 practice:

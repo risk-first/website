@@ -1,5 +1,6 @@
 ---
 title: Regression Testing
+description: Testing to ensure new changes do not adversely affect existing functionality.
 tags: 
   - Regression Testing
 practice:

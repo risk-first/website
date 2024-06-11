@@ -1,5 +1,6 @@
 ---
 title: Prioritising
+description: Defining the Minimum Viable Product and planning development priorities.
 tags: 
   - Prioritising
 practice:
@@ -7,6 +8,7 @@ practice:
    - "Roadmapping"
    - "Release Planning"
    - "Task Prioritization"
+   -  Minimum Viable Product"
   mitigates:
    - tag: Schedule Risk
      reason: "Helps in focusing on high-priority tasks and meeting deadlines."
@@ -23,6 +25,7 @@ practice:
    - ../Planning-and-Management/Requirements-Capture
    - ../Communication-and-Collaboration/Retrospectives
    - ../Development-and-Coding/Refactoring
+   - ../Tools-And-Standards/Prototyping
 ---
 
 <PracticeIntro details={frontMatter} /> 

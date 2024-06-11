@@ -1,5 +1,6 @@
 ---
 title: Contracts
+description: Defining contractual obligations and agreements.
 tags: 
   - Contracts
 practice:

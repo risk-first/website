@@ -1,5 +1,6 @@
 ---
 title: Automation
+description: Using machines to perform repetitive tasks.
 tags: 
   - Automation
 practice:

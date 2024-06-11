@@ -1,6 +1,6 @@
 ---
 title: Adoption (Tools)
-description: Implementing and adhering to specific standards and libraries.
+description: Implementing and utilising specific tools in the development process.
 tags: 
   - Tool-Adoption
 practice:

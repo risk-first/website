@@ -1,5 +1,6 @@
 ---
 title: Debugging
+description: Identifying and fixing defects in the software.
 tags: 
   - Debugging
 practice:

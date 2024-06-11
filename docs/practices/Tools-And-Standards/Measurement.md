@@ -1,5 +1,6 @@
 ---
 title: Measurement
+description: Quantitatively evaluating the software against benchmarks along some defined dimension.
 tags: 
   - Measurement
 practice:

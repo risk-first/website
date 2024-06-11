@@ -1,5 +1,6 @@
 ---
 title: Approval
+description: Getting formal approval for various project stages.
 tags: 
   - Approvals
 practice:

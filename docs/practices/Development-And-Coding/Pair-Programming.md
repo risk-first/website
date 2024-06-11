@@ -1,5 +1,6 @@
 ---
 title: Pair Programming
+description: Two developers working together on the same code.
 tags: 
   - Pair-Programming
 practice:

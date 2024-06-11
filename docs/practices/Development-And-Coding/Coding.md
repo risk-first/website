@@ -1,5 +1,6 @@
 ---
 title: Coding
+description: Writing software to meet a required feature.
 tags: 
   - Coding
 practice:
