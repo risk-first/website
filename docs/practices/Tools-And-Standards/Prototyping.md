@@ -24,7 +24,7 @@ practice:
    - ../Communication-and-Collaboration/Demo
 ---
 
-<PracticeIntro details={frontMatter.practice} /> 
+<PracticeIntro details={frontMatter} /> 
 
 ## Description
 

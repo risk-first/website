@@ -26,7 +26,7 @@ practice:
    - ../Planning-and-Management/Change-Management
 ---
 
-<PracticeIntro details={frontMatter.practice} /> 
+<PracticeIntro details={frontMatter} /> 
 
 ## Description
 

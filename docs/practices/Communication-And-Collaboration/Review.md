@@ -2,11 +2,13 @@
 title: Review
 tags: 
   - Review
+  - Communication-Collaboration
 practice:
   aka: 
    - "Assessment"
    - "Evaluation"
    - "Code Review"
+   - "Audit"
   mitigates:
    - tag: Implementation Risk
      reason: "Ensures quality and correctness of work products."
@@ -14,6 +16,8 @@ practice:
      reason: "Maintains alignment with design principles and goals."
    - tag: Complexity Risk
      reason: "Identifies and resolves potential complexities during the review process."
+   - tag" Agency Risk
+     reason: "Reviewing work or activity can ensure good behaviour."
   attendant:
    - tag: Schedule Risk
      reason: "Reviews can introduce delays in the project timeline."
@@ -23,9 +27,10 @@ practice:
      reason: "Can lead to conflicts over quality and implementation details."
   related:
    - ../Development-and-Coding/Code-Reviews
+   - ../Deployment-And-Operations/Monitoring
 ---
 
-<PracticeIntro details={frontMatter.practice} /> 
+<PracticeIntro details={frontMatter} /> 
 
 ## Description
 

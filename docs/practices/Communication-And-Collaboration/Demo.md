@@ -1,7 +1,12 @@
 ---
 title: Demo
+description: Demonstrating the software to stakeholders.
+featured: 
+  class: c
+  element: '<action>Demo</action>'
 tags: 
   - Demo
+  - Communication-Collaboration
 practice:
   aka: 
    - "Technology Demonstration"
@@ -26,7 +31,7 @@ practice:
    - ../Planning-and-Management/Stakeholder-Management
 ---
 
-<PracticeIntro details={frontMatter.practice} /> 
+<PracticeIntro details={frontMatter} /> 
 
 ## Description
 

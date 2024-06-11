@@ -1,5 +1,6 @@
 ---
 title: Adoption (Tools)
+description: Implementing and adhering to specific standards and libraries.
 tags: 
   - Tool-Adoption
 practice:
@@ -29,7 +30,7 @@ practice:
    - ../Deployment-and-Operations/Automation
 ---
 
-<PracticeIntro details={frontMatter.practice} /> 
+<PracticeIntro details={frontMatter} /> 
 
 ## Description
 

@@ -2,6 +2,7 @@
 title: Documentation
 tags: 
   - Documentation
+  - Communication-Collaboration
 practice:
   aka: 
    - "Manuals"
@@ -25,7 +26,7 @@ practice:
    - ../Deployment-and-Operations/Configuration-Management
 ---
 
-<PracticeIntro details={frontMatter.practice} /> 
+<PracticeIntro details={frontMatter} /> 
 
 ## Description
 

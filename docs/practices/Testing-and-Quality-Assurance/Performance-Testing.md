@@ -23,7 +23,7 @@ practice:
    - ../Deployment-and-Operations/Monitoring
 ---
 
-<PracticeIntro details={frontMatter.practice} /> 
+<PracticeIntro details={frontMatter} /> 
 
 ## Description
 

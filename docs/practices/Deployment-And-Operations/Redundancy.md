@@ -24,7 +24,7 @@ practice:
    - ../Development-and-Coding/Pair-Programming
 ---
 
-<PracticeIntro details={frontMatter.practice} /> 
+<PracticeIntro details={frontMatter} /> 
 
 ## Description
 

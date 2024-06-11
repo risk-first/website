@@ -33,4 +33,4 @@ _This is in progress_
 
 - Wrap Up:  How to Run a project Risk-First. (tbd)
 
-<TagList filter="practices" />
+<TagList filter="practices" tag="Practice-Category" />

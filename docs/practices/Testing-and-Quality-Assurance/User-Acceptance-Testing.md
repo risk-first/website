@@ -28,7 +28,7 @@ practice:
    - ../Development-and-Coding/Unit-Testing
 ---
 
-<PracticeIntro details={frontMatter.practice} /> 
+<PracticeIntro details={frontMatter} /> 
 
 ## Description
 

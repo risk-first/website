@@ -26,7 +26,7 @@ practice:
    - ../Planning-And-Management/Approvals
 ---
 
-<PracticeIntro details={frontMatter.practice} /> 
+<PracticeIntro details={frontMatter} /> 
 
 ## Description
 

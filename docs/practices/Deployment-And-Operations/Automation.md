@@ -34,7 +34,7 @@ practice:
    - ../Tools-And-Standards/Measurement
 ---
 
-<PracticeIntro details={frontMatter.practice} /> 
+<PracticeIntro details={frontMatter} /> 
 
 ## Description
 

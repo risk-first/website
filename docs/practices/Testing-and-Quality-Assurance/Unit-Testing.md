@@ -27,7 +27,7 @@ practice:
    - ../Planning-and-Management/Requirements-Capture
 ---
 
-<PracticeIntro details={frontMatter.practice} /> 
+<PracticeIntro details={frontMatter} /> 
 
 ## Description
 

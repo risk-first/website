@@ -25,7 +25,7 @@ practice:
    - ../Development-and-Coding/Refactoring
 ---
 
-<PracticeIntro details={frontMatter.practice} /> 
+<PracticeIntro details={frontMatter} /> 
 
 ## Description
 

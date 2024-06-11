@@ -27,7 +27,7 @@ practice:
    - ../Development-and-Coding/Coding
 ---
 
-<PracticeIntro details={frontMatter.practice} /> 
+<PracticeIntro details={frontMatter} /> 
 
 ## Description
 

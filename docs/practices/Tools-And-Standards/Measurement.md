@@ -27,7 +27,7 @@ practice:
    - ../Development-and-Coding/Code-Reviews
 ---
 
-<PracticeIntro details={frontMatter.practice} /> 
+<PracticeIntro details={frontMatter} /> 
 
 ## Description
 

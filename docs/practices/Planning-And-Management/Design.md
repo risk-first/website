@@ -29,7 +29,7 @@ practice:
    - ../Communication-and-Collaboration/Documentation
 ---
 
-<PracticeIntro details={frontMatter.practice} /> 
+<PracticeIntro details={frontMatter} /> 
 
 ## Description
 

@@ -27,7 +27,7 @@ practice:
    - ../Tools-and-Standards/Tool-Adoption
 ---
 
-<PracticeIntro details={frontMatter.practice} /> 
+<PracticeIntro details={frontMatter} /> 
 
 ## Description
 

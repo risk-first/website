@@ -27,7 +27,7 @@ practice:
    - ../External-Relations/Contract
 ---
 
-<PracticeIntro details={frontMatter.practice} /> 
+<PracticeIntro details={frontMatter} /> 
 
 ## Description
 

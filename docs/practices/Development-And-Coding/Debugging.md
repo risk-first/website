@@ -27,7 +27,7 @@ practice:
    - ../Deployment-and-Operations/Incident-Management
 ---
 
-<PracticeIntro details={frontMatter.practice} /> 
+<PracticeIntro details={frontMatter} /> 
 
 ## Description
 

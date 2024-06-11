@@ -48,7 +48,6 @@ function isPracticeAttendant(article, title) {
 
 export default ({ fm }) => {
 	const title = fm.title
-	const description = fm.description
 	const allTags = usePluginData('category-listing');
 	const myTag = allTags[title]
 

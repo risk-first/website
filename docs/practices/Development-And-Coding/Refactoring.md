@@ -29,7 +29,7 @@ practice:
    - ../Planning-And-Management/Design
 ---
 
-<PracticeIntro details={frontMatter.practice} /> 
+<PracticeIntro details={frontMatter} /> 
 
 ## Description
 

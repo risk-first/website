@@ -28,7 +28,7 @@ practice:
    - ../Deployment-and-Operations/Configuration-Management
 ---
 
-<PracticeIntro details={frontMatter.practice} /> 
+<PracticeIntro details={frontMatter} /> 
 
 ## Description
 

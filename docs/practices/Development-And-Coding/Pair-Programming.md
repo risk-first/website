@@ -29,7 +29,7 @@ practice:
    - ../Planning-and-Management/Stakeholder-Management
 ---
 
-<PracticeIntro details={frontMatter.practice} /> 
+<PracticeIntro details={frontMatter} /> 
 
 ## Description
 

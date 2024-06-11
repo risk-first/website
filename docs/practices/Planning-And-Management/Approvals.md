@@ -30,7 +30,7 @@ practice:
 ---
 
 
-<PracticeIntro details={frontMatter.practice} /> 
+<PracticeIntro details={frontMatter} /> 
 
 ## Description
 

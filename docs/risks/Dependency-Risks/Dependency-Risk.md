@@ -2,7 +2,6 @@
 title: Dependency Risks
 description: Risks faced by depending on something else,  e.g. an event, process, person, piece of software or an organisation. 
 url: https://riskfirst.org/risks/Dependency-Risk
-id: Dependency-Risk
 featured: 
   class: bg2
   element: '<risk class="dependency" />'
@@ -16,6 +15,7 @@ tags:
 redirect_from: 
  - /Dependency-Risk
 tweet: yes
+slug: /risks/Dependency-Risk
 ---
 
 # Dependency Risks

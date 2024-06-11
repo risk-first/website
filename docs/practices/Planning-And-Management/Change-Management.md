@@ -25,7 +25,7 @@ practice:
    - ../Deployment-and-Operations/Release-Delivery
 ---
 
-<PracticeIntro details={frontMatter.practice} /> 
+<PracticeIntro details={frontMatter} /> 
 
 ## Description
 

@@ -2,6 +2,7 @@
 title: Training
 tags: 
   - Training
+  - Communication-Collaboration
 practice:
   aka: 
    - "Education"
@@ -26,7 +27,7 @@ practice:
    - ../Development-and-Coding/Pair-Programming
 ---
 
-<PracticeIntro details={frontMatter.practice} /> 
+<PracticeIntro details={frontMatter} /> 
 
 ## Description
 

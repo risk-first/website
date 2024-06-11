@@ -1,5 +1,6 @@
 ---
 title: Adoption (Standards, Libraries)
+description: Implementing and adhering to specific standards and libraries.
 tags: 
   - Runtime-Adoption
 practice:
@@ -27,7 +28,7 @@ practice:
    - ../Deployment-and-Operations/Configuration-Management
 ---
 
-<PracticeIntro details={frontMatter.practice} /> 
+<PracticeIntro details={frontMatter} /> 
 
 ## Description
 

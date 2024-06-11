@@ -2,6 +2,7 @@
 title: Retrospectives
 tags: 
   - Retrospectives
+  - Communication-Collaboration
 practice:
   aka: 
    - "Post-Mortem"
@@ -23,7 +24,7 @@ practice:
    - ../Testing-and-Quality-Assurance/Regression-Testing
 ---
 
-<PracticeIntro details={frontMatter.practice} /> 
+<PracticeIntro details={frontMatter} /> 
 
 ## Description
 
