@@ -2,8 +2,8 @@
 title: "Communication and Collaboration"
 description: "Software development practices involving communication and collaboration."
 featured: 
-  class: bg1
-  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/dictionary.svg">Track 3: Risks</image-artifact>'
+  class: c
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/communications.svg">Communications</image-artifact>'
 tags:
   - Practice-Category
 layout: categories

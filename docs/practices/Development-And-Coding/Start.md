@@ -2,8 +2,8 @@
 title: "Development and Coding"
 description: "Software development and coding practices."
 featured: 
-  class: bg1
-  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/dictionary.svg">Track 3: Risks</image-artifact>'
+  class: c
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/coding.svg">Coding</image-artifact>'
 tags:
   - Practice-Category
 layout: categories

@@ -2,8 +2,8 @@
 title: "Deployment and Operations"
 description: "Software development practices for deployment / operations."
 featured: 
-  class: bg1
-  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/dictionary.svg">Track 3: Risks</image-artifact>'
+  class: c
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/operations.svg">Operations</image-artifact>'
 tags:
   - Practice-Category
 layout: categories

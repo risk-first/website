@@ -2,8 +2,8 @@
 title: "External Relations"
 description: "Practices in software development concerned with interfacing with the world outside the team and product. "
 featured: 
-  class: bg1
-  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/dictionary.svg">Track 3: Risks</image-artifact>'
+  class: c
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/external.svg">External Relations</image-artifact>'
 tags:
   - Practice-Category
 layout: categories
