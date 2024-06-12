@@ -4,7 +4,7 @@ description: What is the point of a deadline?  Do they serve a useful purpose?
 url: https://riskfirst.org/risks/Deadline-Risk
 
 featured: 
-  class: bg2
+  class: c
   element: '<risk class="deadline" />'
 sidebar_position: 8
 tags:
@@ -15,7 +15,7 @@ redirect_from:
 tweet: yes
 ---
 
-# Deadline Risk
+<RiskIntro fm={frontMatter} />
 
 Let's examine dependencies on _events_.  
 

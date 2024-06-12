@@ -4,7 +4,7 @@ description: Risks of losses or reputational damage caused by failing processes 
 url: https://riskfirst.org/risks/Operational-Risk
 
 featured: 
-  class: bg2
+  class: c
   element: '<risk class="operational" />'
 sidebar_position: 15
 redirect_from: 
@@ -16,7 +16,7 @@ tags:
  - Legal Risk
 ---
 
-# Operational Risk
+<RiskIntro fm={frontMatter} />
 
 > "The risk of loss resulting from inadequate or failed internal processes, people and systems or from external events." - [Operational Risk, _Wikipedia_](https://en.wikipedia.org/wiki/Operational_risk#Definition)
 

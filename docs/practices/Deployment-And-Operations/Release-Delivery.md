@@ -21,8 +21,6 @@ practice:
    - tag: Funding Risk
      reason: "Delivering features might mean you get paid for the software you write."
   attendant:
-   - tag: Complexity Risk
-     reason: "Release processes can add complexity to project management."
    - tag: Schedule Risk
      reason: "Delays in the release process can impact overall project timelines."
    - tag: Operational Risk

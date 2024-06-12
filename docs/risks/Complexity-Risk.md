@@ -4,7 +4,7 @@ description: A lot of advice around constructing software comes back to simplici
 url: https://riskfirst.org/risks/Complexity-Risk
 
 featured: 
-  class: bg2
+  class: c
   element: '<risk class="complexity" />'
 sidebar_position: 5
 tags:
@@ -18,7 +18,7 @@ redirect_from:
  - /Complexity-Risk
 ---
 
-# Complexity Risk
+<RiskIntro fm={frontMatter} />
 
 [Complexity Risk](Complexity-Risk.md) is the [risk](../thinking/Glossary.md#risk) to your project due to its underlying "complexity".   Here, we will break down exactly what we mean by complexity, look at where it can hide on a software project and discuss some ways in which we can manage this important risk.
 

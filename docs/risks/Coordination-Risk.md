@@ -4,7 +4,7 @@ description: What prevents us working as a team?  Why are distributed systems so
 url: https://riskfirst.org/risks/Coordination-Risk
 
 featured: 
-  class: bg2
+  class: c
   element: '<risk class="coordination" />'
 sidebar_position: 13
 tags:
@@ -15,7 +15,7 @@ redirect_from:
 tweet: yes
 ---
 
-# Coordination Risk
+<RiskIntro fm={frontMatter} />
 
 As in [Agency Risk](Agency-Risk.md), we are going to use the term _agent_, which refers to anything with [agency](Agency-Risk.md#software-processes) in a system to make decisions:  that is, an agent has an [Internal Model](../thinking/Glossary.md#internal-model) and can [take actions](../thinking/Glossary.md#taking-action) based on it.  Here, we work on the assumption that the agents _are_ working towards a common [Goal](../thinking/Glossary.md#goal), even though in reality it's not always the case, as we saw in the section on [Agency Risk](Agency-Risk.md).
 

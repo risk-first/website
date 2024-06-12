@@ -1,5 +1,5 @@
 ---
-title: Issue Logging
+title: Issue Management
 description: Logging support issues and tracking their resolution.
 tags: 
   - Issue Logging
@@ -21,6 +21,8 @@ practice:
      reason: "Facilitates communication about issues and their status among team members."
    - tag: Trust and Belief Risk
      reason: "Tracking and fixing bugs improves software reputation."
+   - tag: Security Risk
+     reason: "Addresses and resolves security incidents to protect the organization."
   attendant:
    - tag: Complexity Risk
      reason: "Managing a large number of logged issues can add complexity."
@@ -37,5 +39,10 @@ practice:
 <PracticeIntro details={frontMatter} /> 
 
 ## Description
+
+> "Issue tracking systems are used to manage and maintain lists of issues, as needed by an organization." - [Issue tracking system, _Wikipedia_](https://en.wikipedia.org/wiki/Issue_tracking_system)
+
+Issue Management / Issue Logging in software development involves recording and tracking issues, bugs, and tasks. This practice helps in managing and resolving defects systematically, ensuring that all problems are addressed in a timely manner and improving the overall quality of the software.
+
 
 > "Issue

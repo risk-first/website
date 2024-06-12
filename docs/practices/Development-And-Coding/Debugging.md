@@ -22,8 +22,6 @@ practice:
   attendant:
    - tag: Schedule Risk
      reason: "Debugging can be time-consuming, affecting project timelines."
-   - tag: Complexity Risk
-     reason: "Complex bugs can be challenging and resource-intensive to resolve."
    - tag: Dependency Risk
      reason: "Debugging may reveal dependencies on other systems or components."
   related:

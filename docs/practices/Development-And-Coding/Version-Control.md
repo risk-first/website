@@ -19,11 +19,6 @@ practice:
      reason: "Facilitates collaboration by allowing multiple developers to work on the codebase simultaneously."
    - tag: Regression Risk
      reason: "Maintains a history of changes, allowing rollback to previous versions if needed."
-  attendant:
-   - tag: Complexity Risk
-     reason: "Managing branches and merges can add complexity."
-   - tag: Security Risk
-     reason: "Requires proper access control to prevent unauthorized changes."
   related:
    - ../Planning-and-Management/Change-Management
    - ../Development-and-Coding/Coding

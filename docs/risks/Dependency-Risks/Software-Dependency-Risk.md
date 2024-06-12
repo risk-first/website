@@ -4,7 +4,7 @@ description: Specific dependency risks due to relying on software.
 url: https://riskfirst.org/risks/Software-Dependency-Risk
 
 featured: 
-  class: bg2
+  class: c
   element: '<risk class="software-dependency" />'
 sidebar_position: 9
 redirect_from: 
@@ -15,7 +15,7 @@ tags:
  - Software Dependency Risk
 ---
 
-# Software Dependency Risk
+<RiskIntro fm={frontMatter} />
 
 In this section, we're going to look specifically at _Software_ dependencies, although many of the concerns we'll raise here apply equally to all the other types of dependency we outlined in [Dependency Risk](Dependency-Risk.md). 
 

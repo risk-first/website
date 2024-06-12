@@ -21,7 +21,7 @@ practice:
    - tag: Implementation Risk
      reason: "Poor coding practices can lead to significant implementation issues."
    - tag: Complexity Risk
-     reason: "Complex code can be difficult to maintain and understand."
+     reason: "Writing new code adds complexity to a project."
    - tag: Regression Risk
      reason: "Changes in code can introduce new bugs and regressions."
   related:

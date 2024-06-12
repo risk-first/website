@@ -4,7 +4,7 @@ description: Making sense of risks faced by software projects.
 url: https://riskfirst.org/risks/Staging-And-Classifying
 
 featured: 
-  class: bg2
+  class: c
   element: '<document>Collection</document>'
 sidebar_position: 16
 tags:

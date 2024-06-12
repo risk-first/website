@@ -4,7 +4,7 @@ description: Risks due to the following a particular protocol of communication w
 url: https://riskfirst.org/risks/Process-Risk
 
 featured: 
-  class: bg2
+  class: c
   element: '<risk class="process" />'
 sidebar_position: 10
 redirect_from: 
@@ -15,7 +15,7 @@ tags:
  - Process Risk
 ---
 
-# Process Risk
+<RiskIntro fm={frontMatter} />
 
 [Process Risk](Process-Risk.md) is the risk you take on whenever you embark on completing a _process_. <!-- tweet-end -->
 

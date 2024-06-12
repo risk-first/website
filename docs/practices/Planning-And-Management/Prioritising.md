@@ -23,8 +23,6 @@ practice:
   attendant:
    - tag: Scarcity Risk
      reason: "Prioritization can create dependencies on specific tasks or features."
-   - tag: Complexity Risk
-     reason: "Sometimes prioritising in the wrong order can create project complexity."
   related:
    - ../Planning-and-Management/Requirements-Capture
    - ../Communication-and-Collaboration/Retrospectives

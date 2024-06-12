@@ -396,7 +396,7 @@ fill: black;
 --kite9-margin-bottom: 10pt;
 }
 
-*[k9-elem="artifact"], *[k9-elem="document"], *[k9-elem="users"], *[k9-elem="computer"], *[k9-elem="interface"], *[k9-elem="component"], *[k9-elem="channel-artifact"], *[k9-elem="internal-model-artifact"], *[k9-elem="protocol-artifact"], *[k9-elem="agent-artifact"], *[k9-elem="image-artifact"], *[k9-elem="generic-artifact"] {
+*[k9-elem="artifact"], *[k9-elem="cash"], *[k9-elem="document"], *[k9-elem="users"], *[k9-elem="computer"], *[k9-elem="interface"], *[k9-elem="component"], *[k9-elem="channel-artifact"], *[k9-elem="internal-model-artifact"], *[k9-elem="protocol-artifact"], *[k9-elem="agent-artifact"], *[k9-elem="image-artifact"], *[k9-elem="generic-artifact"] {
 --kite9-margin-top: 10pt;
 --kite9-margin-right: 10pt;
 --kite9-margin-bottom: 10pt;
@@ -1421,8 +1421,9 @@ fill-opacity: 1;
          <stop stop-color="#FFF" offset="0%"/>
          <stop stop-color="#DDD" offset="100%"/>
       </linearGradient>
-      <filter xlink:actuate="onLoad"
+      <filter xmlns:svg="http://www.w3.org/2000/svg"
               xlink:type="simple"
+              xlink:actuate="onLoad"
               height="130%"
               id="dropshadow"
               xlink:show="other">

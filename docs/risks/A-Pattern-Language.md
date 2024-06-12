@@ -4,7 +4,7 @@ description: Explanation of how Risk-First comprises a pattern language of risk 
 url: https://riskfirst.org/risks/A-Pattern-Language
 
 featured: 
-  class: bg2
+  class: c
   element: '<protocol-artifact>Patterns</protocol-artifact>'
 tags: 
  - Risks

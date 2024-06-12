@@ -31,4 +31,3 @@ After reading this section of [Risk-First](https://riskfirst.org), hopefully you
  - Learn a **Pattern Language**: that is, a vocabulary of terms which you can use for discussing these risks with colleagues.
  - Know the main **actions you can take** to handle each type of risk.
  
- <TagList filter="risks" />

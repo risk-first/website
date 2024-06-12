@@ -4,7 +4,7 @@ description: On avoiding mistakes that limit your options later on.
 url: https://riskfirst.org/risks/Boundary-Risk
 
 featured: 
-  class: bg2
+  class: c
   element: '<risk class="boundary" />'
 sidebar_position: 11
 tags:
@@ -15,7 +15,7 @@ redirect_from:
 tweet: yes
 ---
 
-# Boundary Risk
+<RiskIntro fm={frontMatter} />
 
 In the previous sections on [Dependency Risk](Dependency-Risk.md) we've touched on [Boundary Risk](Boundary-Risk.md) several times, but now it's time to tackle it head-on and discuss this important type of risk.  
 

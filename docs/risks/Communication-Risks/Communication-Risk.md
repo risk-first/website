@@ -1,5 +1,5 @@
 ---
-title: Communication Risks
+title: Communication Risk
 description: Why is it so hard to be understood?
 
 featured: 
@@ -20,6 +20,9 @@ redirect_from:
  - /Communication-Risk
 tweet: yes
 ---
+
+<RiskIntro fm={frontMatter} />
+
 
 # Communication Risk
 

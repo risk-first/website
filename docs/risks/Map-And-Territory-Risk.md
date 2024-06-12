@@ -4,7 +4,7 @@ description: Risks due to the differences between reality and the internal model
 url: https://riskfirst.org/risks/Map-And-Territory-Risk
 
 featured: 
-  class: bg2
+  class: c
   element: '<risk class="map-and-territory" />'
 sidebar_position: 14
 redirect_from: 
@@ -12,10 +12,10 @@ redirect_from:
 tweet: yes
 tags: 
  - Risks
- - Map and Territory Risk
+ - Map And Territory Risk
 ---
 
-# Map And Territory Risk
+<RiskIntro fm={frontMatter} />
 
 As we discussed in the [Communication Risk](Communication-Risk.md#misinterpretation) section, our understanding of the world is informed by abstractions we create and the names we give them.  <!-- tweet-end -->
 

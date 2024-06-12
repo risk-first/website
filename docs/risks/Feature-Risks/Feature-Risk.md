@@ -4,7 +4,7 @@ description: Risks you face when providing features for your clients.
 url: https://riskfirst.org/risks/Feature-Risk
 
 featured: 
-  class: bg2
+  class: c
   element: '<risk class="feature" />'
 redirect_from: 
  - /Feature-Risk

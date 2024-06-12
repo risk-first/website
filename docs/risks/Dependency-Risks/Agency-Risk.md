@@ -8,7 +8,7 @@ tags:
  - Goal
  - Agency Risk
 featured: 
-  class: bg2
+  class: c
   element: '<risk class="agency" />'
 sidebar_position: 12
 redirect_from: 
@@ -16,7 +16,7 @@ redirect_from:
 tweet: yes
 ---
 
-# Agency Risk
+<RiskIntro fm={frontMatter} />
 
 Coordinating a team is difficult enough when everyone on the team has a single [Goal](../thinking/Glossary.md#goal).  But people have their own goals too.  Sometimes their goals harmlessly co-exist with the team's goal, other times they don't. 
 

@@ -22,8 +22,6 @@ practice:
    - tag: Learning Curve Risk
      reason: "Prototypes are a way of learning about a particular solution to a problem."
   attendant:
-   - tag: Complexity Risk
-     reason: "Creating demos can add complexity and require additional resources."
    - tag: Schedule Risk
      reason: "Demos can introduce delays if not planned and executed properly."
   related:

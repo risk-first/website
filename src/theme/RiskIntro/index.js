@@ -45,6 +45,15 @@ function isPracticeAttendant(article, title) {
 	}
 }
 
+function sortAndUnique(l) {
+	const uniqueArray = l.filter(function(item, pos) {
+    	return l.findIndex(e => e.article == item.article) == pos;
+	})
+	
+	const sorted = uniqueArray.sort((a, b) => a.article.localeCompare(b.article))
+	return sorted
+}
+
 
 export default ({ fm }) => {
 	const title = fm.title
@@ -53,8 +62,8 @@ export default ({ fm }) => {
 
 	console.log("Found " + JSON.stringify(myTag.map(i => i.title)))
 
-	const mitigating = myTag.map(article => isPracticeMitigating(article, title)).filter(i => i != undefined)
-	const attendant = myTag.map(article => isPracticeAttendant(article, title)).filter(i => i != undefined)
+	const mitigating = sortAndUnique(myTag.map(article => isPracticeMitigating(article, title)).filter(i => i != undefined))
+	const attendant = sortAndUnique(myTag.map(article => isPracticeAttendant(article, title)).filter(i => i != undefined))
 
 	const pl = useLocation().pathname
 	const stripped = pl.endsWith('/') ? pl+"index" : pl

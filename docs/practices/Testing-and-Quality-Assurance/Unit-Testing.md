@@ -26,6 +26,8 @@ practice:
      reason: "Managing a large suite of unit tests can add to the complexity."
    - tag: Software Dependency Risk
      reason: "Creates dependencies on testing frameworks and tools."
+   - tag: Map And Territory Risk
+     reason: "Unit Testing and code coverage doesn't reflect how a system will work when assembled."
   related:
    - ../Testing-and-Quality-Assurance/Integration-Testing
    - ../Development-and-Coding/Coding

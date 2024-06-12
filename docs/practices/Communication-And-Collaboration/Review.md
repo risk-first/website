@@ -22,6 +22,8 @@ practice:
      reason: "Identifies and resolves potential complexities during the review process."
    - tag: Agency Risk
      reason: "Reviewing work or activity can ensure good behaviour."
+   - tag: Map And Territory Risk
+     reason: "Reviews and audits can uncover unseen problems in a system"
   attendant:
    - tag: Schedule Risk
      reason: "Reviews can introduce delays in the project timeline."

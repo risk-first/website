@@ -24,8 +24,6 @@ practice:
      reason: "Can be time-consuming, leading to delays in the project timeline."
    - tag: Software Dependency Risk
      reason: "Adds dependencies on test environments and their availability."
-   - tag: Complexity Risk
-     reason: "Integrating multiple components can be complex work in itself."
   related:
    - ../Planning-and-Management/Change-Management
    - ../Development-and-Coding/Unit-Testing

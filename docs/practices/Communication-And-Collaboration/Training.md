@@ -24,8 +24,6 @@ practice:
      reason: "Training sessions can take time away from development, impacting schedules."
    - tag: Dependency Risk
      reason: "Creates a dependency on training programs and their effectiveness."
-   - tag: Implementation Risk
-     reason: "Poorly implemented training programs can lead to inadequate skill development."
   related:
    - ../Documentation
    - ../Development-and-Coding/Pair-Programming

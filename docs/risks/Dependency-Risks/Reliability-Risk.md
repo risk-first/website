@@ -4,7 +4,7 @@ description: Risks of not getting benefit from a dependency due to it's reliabil
 url: https://riskfirst.org/risks/Reliability-Risk
 
 featured: 
-  class: bg2
+  class: c
   element: '<risk class="dependency" />'
 sidebar_position: 6
 tags:
@@ -18,8 +18,7 @@ redirect_from:
 tweet: yes
 ---
 
-
-## Reliability Risk
+<RiskIntro fm={frontMatter} />
 
 This points to the problem that when we use an external dependency, we are at the mercy of its reliability.   
 

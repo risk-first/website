@@ -4,7 +4,7 @@ description: Scarcity Risk is about quantities of a dependency, and specifically
 url: https://riskfirst.org/risks/Scarcity-Risk
 
 featured: 
-  class: bg2
+  class: c
   element: '<risk class="scarcity" />'
 sidebar_position: 7
 redirect_from: 
@@ -18,7 +18,7 @@ tags:
  - Schedule Risk
 ---
 
-# Scarcity Risk
+<RiskIntro fm={frontMatter} />
 
 While [Reliability Risk](Dependency-Risk.md#reliability-risk) (which we met in the previous section) considers what happens when a _single dependency_ is unreliable, scarcity is about _quantities_ of a dependency, and specifically, _not having enough_.  <!-- tweet-end -->
 

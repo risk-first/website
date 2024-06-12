@@ -4,7 +4,7 @@ description: A way to think about the risks you face on a software project.
 url: https://riskfirst.org/risks/Risk-Landscape
 
 featured: 
-  class: bg2
+  class: c
   element: '<risk href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg"><code>Attendant</code><title>Risk Landscape</title></risk>'
 sidebar_position: 2
 tags:

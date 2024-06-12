@@ -22,6 +22,8 @@ practice:
      reason: "Requires sophisticated tools and setup, adding complexity."
    - tag: Funding Risk
      reason: "Performance testing tools and environments can be expensive."
+   - tag: Map And Territory Risk
+     reason: "Performance testing might not be reflecting real-world scenarios."
   related:
    - ../Development-and-Coding/Coding
    - ../Testing-and-Quality-Assurance/Integration-Testing
