@@ -6,7 +6,6 @@ url: https://riskfirst.org/risks/Feature-Risk
 featured: 
   class: bg2
   element: '<risk class="feature" />'
-sidebar_position: 3
 redirect_from: 
  - /Feature-Risk
 tweet: yes
