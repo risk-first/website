@@ -10,13 +10,14 @@ import rehypeKatex from 'rehype-katex';
 
 const navLinks =  [	{ to: '/overview/Start', label: 'Overview', position: 'left' },
 					{ to: '/thinking/Start', label: 'Thinking', position: 'left' },
-					{ to: '/The-Menagerie', label: 'Book', position: 'left' },
 					{ to: '/risks/Start', label: 'Risks', position: 'left' },
+					{ to: '/practices/Start', label: 'Practices', position: 'left' },
 					{ to: '/bets/Start', label: 'Bets', position: 'left' },
+					{ to: '/methods/Start', label: 'Methods', position: 'left' },
 					{ to: '/estimating/Start', label: 'Estimating', position: 'left' },
-					{ to: '/complexity/Start', label: 'Complexity', position: 'left' },
+					{ to: '/books/Start', label: 'Books', position: 'left' },
 					{ to: '/presentations/Start', label: 'Presentations', position: 'left' },
-					{ to: '/misc/Start', label: 'Misc', position: 'left' } ]
+					]
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {

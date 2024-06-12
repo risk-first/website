@@ -8,7 +8,8 @@ featured:
   element: '<big-image imgsrc="/public/templates/risk-first/posts/book-grey.png" />'
 tags: 
  - Front
-sidebar_position: 3
+ - Book
+sidebar_position: 2
 ---
 
 # Coming in 2024

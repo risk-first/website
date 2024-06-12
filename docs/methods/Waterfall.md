@@ -1,5 +1,5 @@
 ---
 tags:
-  - Coding
+  - Method
 ---
 ![Draft](/img/state/draft.png)

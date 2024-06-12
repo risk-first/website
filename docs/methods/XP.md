@@ -1,8 +1,6 @@
 ---
 tags:
-  - Prototyping
-  - Coding
-  - Pair Programming
+  - Method
 ---
 
 ![Draft](/img/state/draft.png)

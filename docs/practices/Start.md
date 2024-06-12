@@ -10,7 +10,9 @@ layout: categories
 cat: Practices
 ---
 
-_This is in progress_
+This is an incomplete index of software development practices that you might apply on a project to manage risks.  This is not meant to be exhaustive, but if you'd like to add a practice please create a GitHub pull request, copying the format (especially FrontMatter) of one of the existing practices.
+
+  
 
 ## Main Areas
 
