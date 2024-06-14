@@ -12,6 +12,7 @@ practice:
    - "Issue Tracking"
    - "Ticket Logging"
    - "Bug Tracking"
+   - "Backlog"
   mitigates:
    - tag: Implementation Risk
      reason: "Tracks and manages defects and issues, ensuring they are resolved."

@@ -38,7 +38,11 @@ export default function TagList(props) {
 	const oneTag = props.tag ? allTags[props.tag] : Object.values(allTags)
 		.flatMap(a => a)
 		.filter(uniqueOnly)
-	console.log(JSON.stringify(oneTag))
+
+	if (!oneTag) {
+		return <p><em>No documents tagged</em></p>;
+	}
+
 	const filter = props.filter ? '/' + props.filter + '/' : ''
 	const location = useLocation().pathname;
 

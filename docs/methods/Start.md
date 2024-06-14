@@ -3,8 +3,8 @@ title: Methodology
 description: Some rough groupings of practices by methodology.
 
 featured: 
-  class: bg1
-  element: '<image-artifact imgsrc="/public/templates/risk-first/redesign/risks/complexity_risk_v2.svg">Track 6: On Complexity</image-artifact>'
+  class: c
+  element: '<image-artifact imgsrc="/public/templates/risk-first/redesign/artifacts/methodology_v2.svg">Methods</image-artifact>'
 layout: categories
 cat: Complexity
 tags:
