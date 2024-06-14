@@ -60,7 +60,7 @@ export default ({ fm }) => {
 	const allTags = usePluginData('category-listing');
 	const myTag = allTags[title]
 
-	console.log("Found " + JSON.stringify(myTag.map(i => i.title)))
+	//console.log("Found " + JSON.stringify(myTag.map(i => i.title)))
 
 	const mitigating = sortAndUnique(myTag.map(article => isPracticeMitigating(article, title)).filter(i => i != undefined))
 	const attendant = sortAndUnique(myTag.map(article => isPracticeAttendant(article, title)).filter(i => i != undefined))
