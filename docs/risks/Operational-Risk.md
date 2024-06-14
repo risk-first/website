@@ -7,8 +7,6 @@ featured:
   class: c
   element: '<risk class="operational" />'
 sidebar_position: 15
-redirect_from: 
- - /Operational-Risk
 tweet: yes
 tags: 
  - Risks

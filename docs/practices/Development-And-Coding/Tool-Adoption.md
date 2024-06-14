@@ -1,8 +1,8 @@
 ---
-title: Adoption (Tools)
+title: Tool Adoption
 description: Implementing and utilising specific tools in the development process.
 tags: 
-  - Tool-Adoption
+  - Tool Adoption
   - Development-Coding
 featured: 
   class: c
@@ -67,4 +67,4 @@ Picking new tools and libraries should be done **very carefully**:  you may be s
 
 ## See Also
 
-<TagList tag="Tool-Adoption" />
+<TagList tag="Tool Adoption" />

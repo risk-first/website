@@ -9,8 +9,6 @@ featured:
 sidebar_position: 2
 tags:
  - Risks
-redirect_from: 
- - /Risk-Landscape
 tweet: yes
 ---
 

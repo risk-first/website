@@ -11,9 +11,8 @@ featured:
   class: c
   element: '<risk class="agency" />'
 sidebar_position: 12
-redirect_from: 
- - /Agency-Risk
 tweet: yes
+part_of: Dependency Risk
 ---
 
 <RiskIntro fm={frontMatter} />

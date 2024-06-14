@@ -16,8 +16,6 @@ tags:
  - Internal Model Risk
  - Invisibility Risk
  - Trust and Belief Risk
-redirect_from: 
- - /Communication-Risk
 tweet: yes
 ---
 

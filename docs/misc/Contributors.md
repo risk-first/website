@@ -9,9 +9,6 @@ featured:
 tags: 
  - Misc
 sidebar_position: 13
-redirect_from: 
- - /Contributors
- - /overview/Contributors
 ---
 
 # Contributors

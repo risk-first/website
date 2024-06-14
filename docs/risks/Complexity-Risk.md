@@ -14,8 +14,6 @@ tags:
  - Codebase Risk
  - Risks
  - Refactoring
-redirect_from: 
- - /Complexity-Risk
 ---
 
 <RiskIntro fm={frontMatter} />

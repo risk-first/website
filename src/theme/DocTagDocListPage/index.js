@@ -62,7 +62,7 @@ function sortDocs(items, exclude) {
 		.forEach(i => {
 			const p = path(i)
 			buckets.forEach(c => {
-				console.log("Bucket "+c)
+				// console.log("Bucket "+c)
 				if (p == c) {
 					const list = out[c];
 					if (!list) {

@@ -7,8 +7,6 @@ featured:
   class: c
   element: '<risk class="map-and-territory" />'
 sidebar_position: 14
-redirect_from: 
- - /Map-And-Territory-Risk
 tweet: yes
 tags: 
  - Risks

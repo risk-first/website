@@ -7,12 +7,11 @@ featured:
   class: c
   element: '<risk class="software-dependency" />'
 sidebar_position: 9
-redirect_from: 
- - /Software-Dependency-Risk
 tweet: yes
 tags: 
  - Risks
  - Software Dependency Risk
+part_of: Dependency Risk
 ---
 
 <RiskIntro fm={frontMatter} />

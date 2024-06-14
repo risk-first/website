@@ -6,8 +6,6 @@ url: https://riskfirst.org/risks/Feature-Risk
 featured: 
   class: c
   element: '<risk class="feature" />'
-redirect_from: 
- - /Feature-Risk
 tweet: yes
 slug: /risks/Feature-Risk
 tags: 

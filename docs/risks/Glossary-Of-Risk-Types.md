@@ -9,8 +9,6 @@ featured:
 tags:
  - Risks
 sidebar_position: 17
-redirect_from: 
- - /Glossary-Of-Risk-Types
 tweet: yes
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 'Book: The Menagerie'
 description: "Risk-First Software Development Volume 1: The Menagerie.  Available to read online, on Kindle and to buy at Amazon"
-url: https://riskfirst.org/The-Menagerie
+slug: /The-Menagerie
 
 featured: 
   class: bg1

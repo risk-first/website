@@ -1,8 +1,8 @@
 ---
-title: Adoption (Standards, Libraries)
+title: Runtime Adoption
 description: Implementing and adhering to specific standards and libraries.
 tags: 
-  - Runtime-Adoption
+  - Runtime Adoption
   - Development-Coding
 featured: 
   class: c
@@ -42,4 +42,4 @@ Adoption of standards and libraries involves implementing and adhering to establ
 
 ## See Also
 
-<TagList tag="Runtime-Adoption" />
+<TagList tag="Runtime Adoption" />

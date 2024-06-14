@@ -48,8 +48,8 @@ export default function TagList(props) {
 
 	oneTag.sort((a, b) => a.order - b.order);
 	
-	console.log(oneTag[0].permalink.indexOf(location))
-	console.log(filter)
+	// console.log(oneTag[0].permalink.indexOf(location))
+	// console.log(filter)
 
 	return (
 		<div className={styles.tagList}>

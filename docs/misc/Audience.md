@@ -9,9 +9,6 @@ featured:
   class: bg1
   element: '<users>Audience</users>'
 sidebar_position: 3
-redirect_from: 
- - /Audience
- - /overview/Audience
 ---
 
 # Audience 

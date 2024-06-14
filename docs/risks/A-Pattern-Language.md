@@ -9,8 +9,6 @@ featured:
 tags: 
  - Risks
 sidebar_position: 1
-redirect_from: 
- - /A-Pattern-Language
 tweet: yes
 ---
 

@@ -1,8 +1,7 @@
 ---
 title: 'Book: Risk-First Second Edition'
 description: "Risk-First Software Development Second Edition Coming Soon!"
-url: https://riskfirst.org/The-Menagerie
-
+slug: /Risk-First-Second-Edition
 featured: 
   class: bg1
   element: '<big-image imgsrc="/public/templates/risk-first/posts/book-grey.png" />'

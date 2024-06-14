@@ -7,12 +7,11 @@ featured:
   class: c
   element: '<risk class="process" />'
 sidebar_position: 10
-redirect_from: 
- - /Process-Risk
 tweet: yes
 tags: 
  - Risks
  - Process Risk
+part_of: Dependency Risk
 ---
 
 <RiskIntro fm={frontMatter} />

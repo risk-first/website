@@ -12,8 +12,6 @@ tags:
  - Reliability Risk
  - Invisibility Risk
  - Risks
-redirect_from: 
- - /Dependency-Risk
 tweet: yes
 slug: /risks/Dependency-Risk
 ---
@@ -96,5 +94,7 @@ There are some tools for managing dependency risk:  [Gantt Charts](https://en.wi
 
 We'll look in more detail at project management in Part 3, later.   But now, let's get into specifics with [Scarcity Risk](Scarcity-Risk.md).
 
+## Types Of Dependency Risk
 
+<TagList tag="Dependency Risk" filter="risks/Dependency-Risks" /> 
 

@@ -1,7 +1,6 @@
 ---
 title: Debugging Bets
 description: Making use of risk and odds while debugging
-url: https://riskfirst.org/bets/Debugging-Bets
 
 date: 2019-11-10 16:32:03 +0000
 featured: 

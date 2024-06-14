@@ -11,9 +11,6 @@ tags:
  - Misc
  - Goal
 sidebar_position: 10
-redirect_from: 
- - /post/news/2020/01/17/Anti-Goals
- - /2020/01/17/Anti-Goals
 tweet: yes
 ---
 

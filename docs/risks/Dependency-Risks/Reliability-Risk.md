@@ -13,9 +13,8 @@ tags:
  - Reliability Risk
  - Invisibility Risk
  - Risks
-redirect_from: 
- - /Dependency-Risk
 tweet: yes
+part_of: Dependency Risk
 ---
 
 <RiskIntro fm={frontMatter} />

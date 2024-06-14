@@ -1,9 +1,9 @@
 ---
-title: Release / Delivery
+title: Release
 description: Deploying the software to production.
 tags: 
   - Release Management
-  - Release-Delivery
+  - Release
   - Deployment-Operations
 featured: 
   class: c
@@ -41,4 +41,4 @@ Release / Delivery involves the structured and controlled process of moving soft
 
 ## See Also
 
-<TagList tag="Release-Delivery" />
+<TagList tag="Release" filter="risks" />

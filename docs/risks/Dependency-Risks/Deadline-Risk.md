@@ -10,9 +10,8 @@ sidebar_position: 8
 tags:
  - Deadline Risk
  - Risks
-redirect_from: 
- - /Deadline-Risk
 tweet: yes
+part_of: Dependency Risk
 ---
 
 <RiskIntro fm={frontMatter} />

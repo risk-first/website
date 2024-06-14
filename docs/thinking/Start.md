@@ -11,8 +11,6 @@ cat: Thinking Risk-First
 tags:
  - Front
 sidebar_position: 2
-redirect_from:
- - /All-About-Risk
 tweet: yes
 ---
 
