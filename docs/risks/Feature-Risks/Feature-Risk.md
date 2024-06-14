@@ -11,6 +11,7 @@ slug: /risks/Feature-Risk
 tags: 
  - Risks
  - Feature Risk
+part_of: Operational Risk
 ---
 [Feature Risks](Feature-Risk.md) are types of risks to do with functionality that you need to have in the software you're building.  
 

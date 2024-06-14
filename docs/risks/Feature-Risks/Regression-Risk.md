@@ -7,8 +7,8 @@ featured:
 sidebar_position: 6
 tags: 
  - Risks
- - Feature Risk
  - Regression Risk
+part_of: Feature Risk
 ---
 
 <RiskIntro fm={frontMatter} />

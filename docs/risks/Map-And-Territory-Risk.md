@@ -11,6 +11,7 @@ tweet: yes
 tags: 
  - Risks
  - Map And Territory Risk
+part_of: Operational Risk
 ---
 
 <RiskIntro fm={frontMatter} />

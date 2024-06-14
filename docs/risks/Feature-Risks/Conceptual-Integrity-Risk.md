@@ -7,8 +7,8 @@ featured:
 sidebar_position: 3
 tags: 
  - Risks
- - Feature Risk
  - Conceptual Integrity Risk
+part_of: Feature Risk
 ---
 
 <RiskIntro fm={frontMatter} />

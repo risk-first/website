@@ -14,6 +14,7 @@ tags:
  - Risks
 tweet: yes
 slug: /risks/Dependency-Risk
+part_of: Operational Risk
 ---
 
 # Dependency Risks

@@ -9,7 +9,7 @@ sidebar_position: 4
 tags:
  - Risks
  - Message Risk
- - Communication Risk
+part_of: Communication Risk
 ---
 
 <RiskIntro fm={frontMatter} />

@@ -17,6 +17,7 @@ tags:
  - Invisibility Risk
  - Trust and Belief Risk
 tweet: yes
+part_of: Operational Risk
 ---
 
 <RiskIntro fm={frontMatter} />

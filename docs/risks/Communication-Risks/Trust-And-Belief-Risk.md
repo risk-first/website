@@ -9,7 +9,7 @@ sidebar_position: 7
 tags:
  - Risks
  - Trust And Belief Risk
- - Communication Risk
+part_of: Communication Risk
 ---
 <RiskIntro fm={frontMatter} />
 

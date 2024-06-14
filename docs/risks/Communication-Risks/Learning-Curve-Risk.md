@@ -9,7 +9,7 @@ sidebar_position: 6
 tags:
  - Risks
  - Learning Curve Risk
- - Communication Risk
+part_of: Communication Risk
 ---
 
 <RiskIntro fm={frontMatter} />

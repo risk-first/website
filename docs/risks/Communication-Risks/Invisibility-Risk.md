@@ -9,7 +9,7 @@ sidebar_position: 5
 tags:
  - Risks
  - Invisibility Risk
- - Communication Risk
+part_of: Communication Risk
 ---
  
 <RiskIntro fm={frontMatter} />

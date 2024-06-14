@@ -9,7 +9,7 @@ sidebar_position: 3
 tags:
  - Risks
  - Protocol Risk
- - Communication Risk
+part_of: Communication Risk
 ---
 <RiskIntro fm={frontMatter} />
 

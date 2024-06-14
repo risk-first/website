@@ -11,6 +11,7 @@ tags:
  - Coordination Risk
  - Risks
 tweet: yes
+part_of: Operational Risk
 ---
 
 <RiskIntro fm={frontMatter} />

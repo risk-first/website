@@ -12,6 +12,13 @@ function tagUrl(tag) {
 	return "/tags/" + tag.replaceAll(" ", "-")
 }
 
+
+const Risk = ({tag}) => {
+	return (
+		<li><a href={tagUrl(tag)}>{tag}</a></li>
+	)
+}
+
 const Practice = ({ article, permalink, reason }) => {
 	return (
 		<li><a href={permalink}>{article}</a>: {reason}</li>
@@ -78,6 +85,9 @@ export default ({ fm }) => {
 				{fm.description}
 			</div>
 		</div>
+		{
+			fm.part_of ? <><h3>Part Of</h3><ul><Risk tag={fm.part_of} /></ul></> : null
+		}
 		{
 			mitigating.length > 0 ? (
 				<>
