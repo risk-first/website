@@ -1,7 +1,7 @@
 ---
 title: Scarcity Risk
 description: Scarcity Risk is about quantities of a dependency, and specifically, not having enough.
-url: https://riskfirst.org/risks/Scarcity-Risk
+
 
 featured: 
   class: c

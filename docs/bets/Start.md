@@ -1,7 +1,7 @@
 ---
 title: On Bets
 description: Risk-First Track of articles on Bets within Software Development
-url: https://riskfirst.org/bets/Start
+
 
 featured: 
   class: bg1

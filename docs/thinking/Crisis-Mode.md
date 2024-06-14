@@ -1,7 +1,7 @@
 ---
 title: Crisis Mode
 description: Why 'Crisis Mode' shouldn't be a mode.
-url: https://riskfirst.org/thinking/Crisis-Mode
+
 
 featured: 
   class: bg3

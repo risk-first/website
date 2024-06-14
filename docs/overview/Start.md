@@ -1,7 +1,7 @@
 ---
 title: "Overview"
 description: A few short articles about what Risk-First is all about
-url: https://riskfirst.org/overview/Start
+
 
 featured: 
   class: bg1

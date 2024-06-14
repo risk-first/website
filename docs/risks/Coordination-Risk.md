@@ -1,7 +1,7 @@
 ---
 title: Coordination Risk
 description: What prevents us working as a team?  Why are distributed systems so hard?
-url: https://riskfirst.org/risks/Coordination-Risk
+
 
 featured: 
   class: c

@@ -1,7 +1,7 @@
 ---
 title: Interference Checklist
 description: Part of the 'Estimating' Risk-First Track, example Risk Checklist
-url: https://riskfirst.org/estimating/Interference-Checklist
+
 
 featured: 
   class: bg1

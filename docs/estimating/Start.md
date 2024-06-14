@@ -1,7 +1,7 @@
 ---
 title: On Estimating
 description: The 'Estimating' Risk-First Track.
-url: https://riskfirst.org/estimating/Start
+
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/tape-measure.svg">Track 5: On Estimating</image-artifact>'

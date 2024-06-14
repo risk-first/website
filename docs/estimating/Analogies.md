@@ -1,7 +1,7 @@
 ---
 title: Analogies
 description: Part of the 'Estimating' Risk-First Track. Analogies for the problems of estimating.
-url: https://riskfirst.org/estimating/Analogies
+
 
 featured: 
   class: bg1

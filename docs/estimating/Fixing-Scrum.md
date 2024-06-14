@@ -1,7 +1,7 @@
 ---
 title: Fixing Scrum
 description: "Part of the 'Estimating' Risk-First Track, looking at the essential flaws in Scrums' time-boxing of work."
-url: https://riskfirst.org/estimating/Fixing-Scrum
+
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/scrum.svg">Fixing Scrum</image-artifact>'

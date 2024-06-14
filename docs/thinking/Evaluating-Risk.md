@@ -1,7 +1,7 @@
 ---
 title: Evaluating Risk
 description: Eisenhower's box, NPV and Discounting explained.
-url: https://riskfirst.org/thinking/Evaluating-Risk
+
 
 featured: 
   class: bg3

@@ -1,7 +1,7 @@
 ---
 title: Cadence
 description: How long should feedback loops be?
-url: https://riskfirst.org/thinking/Cadence
+
 
 featured: 
   class: bg3

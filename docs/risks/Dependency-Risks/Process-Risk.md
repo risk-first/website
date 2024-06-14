@@ -1,7 +1,7 @@
 ---
 title: Process Risk
 description: Risks due to the following a particular protocol of communication with a dependency, which may not work out the way we want.
-url: https://riskfirst.org/risks/Process-Risk
+
 
 featured: 
   class: c

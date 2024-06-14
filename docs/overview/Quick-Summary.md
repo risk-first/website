@@ -1,7 +1,7 @@
 ---
 title: Quick Summary
 description: A quick summary of the underlying theory behind Risk-First
-url: https://riskfirst.org/overview/Quick-Summary
+
 
 tags: 
  - Overview

@@ -1,7 +1,7 @@
 ---
 title: Practices
 description: Discussion Of Software Development Practices
-url: https://riskfirst.org/practices/Start
+
 
 featured: 
   class: bg1

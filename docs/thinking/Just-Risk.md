@@ -1,7 +1,7 @@
 ---
 title: Just Risk
 description: Are all tasks in software development just managing risk?
-url: https://riskfirst.org/thinking/Just-Risk
+
 
 featured: 
   class: bg3

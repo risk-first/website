@@ -1,7 +1,7 @@
 ---
 title: Authors
 description: List of Risk-First authors
-url: https://riskfirst.org/Authors
+
 tags:
  - Misc
 featured: 

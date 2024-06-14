@@ -4,7 +4,7 @@ title: COVID, Agile, ChatOps
 permalink: /presentations/BotsChatOpsCovid/chatops.html
 description: How COVID has come for Agile Practices, and how Chat Bots offer us a way forwards.
 author: rob
-url: https://riskfirst.org/presentations/BotsChatOpsCovid/chatops.html
+
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/bot.svg">COVID, Agile, ChatOps</image-artifact>'

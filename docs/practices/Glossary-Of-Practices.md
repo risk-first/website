@@ -1,7 +1,7 @@
 ---
 title: Glossary of Practices
 description: List of all types of actions discussed in Risk-First.
-url: https://riskfirst.org/actions/Glossary-Of-Practices
+
 
 featured: 
   class: bg2

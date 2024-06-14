@@ -1,7 +1,7 @@
 ---
 title: Software Dependency Risk
 description: Specific dependency risks due to relying on software.
-url: https://riskfirst.org/risks/Software-Dependency-Risk
+
 
 featured: 
   class: c

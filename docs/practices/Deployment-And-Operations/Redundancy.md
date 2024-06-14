@@ -15,7 +15,7 @@ practice:
   mitigates:
    - tag: Feature Risk
      reason: "Ensures system availability and reliability in case of component failure."
-   - tag: Operational Risk
+   - tag: Reliability Risk
      reason: "Minimizes operational disruptions by providing backup components."
    - tag: Security Risk
      reason: "Enhances security by providing alternative paths and systems."

@@ -1,7 +1,7 @@
 ---
 title: Risk-First Analysis
 description: Part of the 'Estimating' Risk-First Track, looking at an alternative to Scrum's Planning Poker
-url: https://riskfirst.org/estimating/Risk-First-Analysis
+
 
 date: 2020-11-10 16:32:03 +0000
 

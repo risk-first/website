@@ -1,7 +1,7 @@
 ---
 title: Anti-Goals
 description:  Just focusing on your goal is not enough... 
-url: https://riskfirst.org/misc/Anti-Goals
+
 
 featured: 
   class: bg1

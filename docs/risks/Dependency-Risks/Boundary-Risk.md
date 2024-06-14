@@ -1,7 +1,7 @@
 ---
 title: Boundary Risk
-description: On avoiding mistakes that limit your options later on.
-url: https://riskfirst.org/risks/Boundary-Risk
+description: Risks due to the commitments we make around dependencies, and the limitations they place on our ability to change.
+
 
 featured: 
   class: c

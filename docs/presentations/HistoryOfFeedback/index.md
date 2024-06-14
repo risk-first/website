@@ -4,7 +4,7 @@ title: A Short History Of Feedback
 permalink: /presentations/HistoryOfFeedback/index.html
 description: How the concept of feedback returns and returns over 400 years, and how every time it's a "reinvention".
 author: rob
-url: https://riskfirst.org/presentations/HistoryOfFeedback/index.html
+
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/feedback-loop.svg">A Short History Of Feedback</image-artifact>'

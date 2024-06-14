@@ -4,7 +4,7 @@ title: All Work Is Risk Management
 permalink: /presentations/AllWorkIsRiskManagement/index.html
 description: The origins and justification for Risk-First as a concept.
 author: rob
-url: https://riskfirst.org/presentations/AllWorkIsRiskManagement/index.html
+
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/work.svg">All Work is Risk Management</image-artifact>'

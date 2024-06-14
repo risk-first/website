@@ -1,7 +1,7 @@
 ---
 title: Stop Estimating, Start Navigating
 description: Part of the 'Estimating' Risk-First Track, looking at how to work without estimates.
-url: https://riskfirst.org/estimating/Stop-Estimating-Start-Navigating
+
 
 featured: 
   class: bg1

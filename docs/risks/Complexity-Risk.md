@@ -1,7 +1,7 @@
 ---
 title: Complexity Risk
 description: A lot of advice around constructing software comes back to simplicity.  Why?
-url: https://riskfirst.org/risks/Complexity-Risk
+
 
 featured: 
   class: c

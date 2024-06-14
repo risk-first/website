@@ -1,7 +1,7 @@
 ---
 title: Health
 description: How can a product be good with a bad team making it?
-url: https://riskfirst.org/thinking/Health
+
 featured: 
   class: bg3
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/8bit-heart.svg">Health</image-artifact>'

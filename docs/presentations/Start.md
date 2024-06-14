@@ -1,7 +1,7 @@
 ---
 title: Presentations
 description: Presentations given about Risk-First
-url: https://riskfirst.org/presentations/Start
+
 
 featured: 
   class: bg1

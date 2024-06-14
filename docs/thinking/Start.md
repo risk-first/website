@@ -1,7 +1,7 @@
 ---
 title: Thinking Risk-First
 description: Learning to think about software development from the perspective of risk
-url: https://riskfirst.org/thinking/Start
+
 
 featured: 
   class: bg1

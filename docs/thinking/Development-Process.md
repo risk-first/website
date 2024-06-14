@@ -1,7 +1,7 @@
 ---
 title: Development Process
 description: Why do we even have processes in software development? 
-url: https://riskfirst.org/thinking/Development-Process
+
 
 featured: 
   class: bg3

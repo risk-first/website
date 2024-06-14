@@ -1,7 +1,7 @@
 ---
 title: Kitchen Cabinets
 description: Part of the 'Estimating' Risk-First Track, where we look at exponential distributions in estimates.
-url: https://riskfirst.org/estimating/Kitchen-Cabinet
+
 
 featured: 
   class: bg1

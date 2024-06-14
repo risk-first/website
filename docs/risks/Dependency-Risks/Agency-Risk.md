@@ -1,7 +1,7 @@
 ---
 title: Agency Risk
 description: People all have their own agendas.  What do you do about that?
-url: https://riskfirst.org/risks/Agency-Risk
+
 
 tags:
  - Risks

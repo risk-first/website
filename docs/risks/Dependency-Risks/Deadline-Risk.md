@@ -1,7 +1,7 @@
 ---
 title: Deadline Risk
 description: What is the point of a deadline?  Do they serve a useful purpose?
-url: https://riskfirst.org/risks/Deadline-Risk
+
 
 featured: 
   class: c

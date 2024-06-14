@@ -1,7 +1,7 @@
 ---
 title: Reliability Risk
 description: Risks of not getting benefit from a dependency due to it's reliability, either now or in the future.
-url: https://riskfirst.org/risks/Reliability-Risk
+
 
 featured: 
   class: c

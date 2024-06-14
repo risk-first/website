@@ -1,7 +1,7 @@
 ---
 title: Consider Payoff
 description: To work out what to do next, consider the upside and downside risks you're addressing, and also what risks you introduce.
-url: https://riskfirst.org/thinking/Consider-Payoff
+
 
 featured: 
   class: bg3

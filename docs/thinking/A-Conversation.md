@@ -1,7 +1,7 @@
 ---
 title: A Conversation
 description: A conversation about software development using Risk-First vocabulary.
-url: https://riskfirst.org/thinking/A-Conversation
+
 
 featured: 
   class: bg3

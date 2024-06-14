@@ -1,7 +1,7 @@
 ---
 title: Contributors
 description: List of contributors for the Risk-First wiki and other materials.
-url: https://riskfirst.org/misc/Contributors
+
 
 featured: 
   class: bg1

@@ -2,7 +2,7 @@
 layout: categories
 title: "Risks"
 description: "A pattern language for the types of risks you can face on a software project"
-url: https://riskfirst.org/risks/Start
+
 cat: Risks
 featured: 
   class: bg1

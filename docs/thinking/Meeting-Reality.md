@@ -1,7 +1,7 @@
 ---
 title: Meeting Reality
 description: Are you living in an ivory tower, or do you have boots on the ground?
-url: https://riskfirst.org/thinking/Meeting-Reality
+
 
 featured: 
   class: bg3

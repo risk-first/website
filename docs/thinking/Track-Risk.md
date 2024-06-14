@@ -1,7 +1,7 @@
 ---
 title: Tracking Risks
 description: Ways to keep track of the risks you face.
-url: https://riskfirst.org/thinking/Track-Risk
+
 
 featured: 
   class: bg3

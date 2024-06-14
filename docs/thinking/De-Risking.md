@@ -1,7 +1,7 @@
 ---
 title: Derisking
 description: What can you do with the risks on a software project?
-url: https://riskfirst.org/thinking/De-Risking
+
 
 featured: 
   class: bg3

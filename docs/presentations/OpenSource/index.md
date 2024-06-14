@@ -4,7 +4,7 @@ title: All In On Open Source
 permalink: /presentations/OpenSource/os.html
 description: Talk given to Colchester Digital about Open Source
 author: rob
-url: https://riskfirst.org/presentations/OpenSource/os.html
+
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/opensource.svg">All In On Open Source</image-artifact>'

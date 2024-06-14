@@ -1,7 +1,7 @@
 ---
 title: Tracks
 description: Understanding the structure of the Risk-First website
-url: https://riskfirst.org/overview/Tracks
+
 
 tags: 
  - Overview

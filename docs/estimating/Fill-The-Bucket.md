@@ -1,7 +1,7 @@
 ---
 title: Fill-The-Bucket
 description: Part of the 'Estimating' Risk-First Track, in which we look at straightforward extrapolation.
-url: https://riskfirst.org/estimating/Fill-The-Bucket
+
 
 featured: 
   class: bg1
