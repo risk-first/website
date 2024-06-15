@@ -2,7 +2,6 @@
 title: Redundancy
 description: Ensuring backup systems are in place to prevent failure.
 tags: 
-  - Redundancy
   - Deployment-Operations
 featured: 
   class: c

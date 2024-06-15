@@ -12,6 +12,8 @@ import Layout from '@theme/Layout';
 import SearchMetadata from '@theme/SearchMetadata';
 import { usePluginData } from '@docusaurus/useGlobalData'
 import { useLocation } from '@docusaurus/router'
+import styles from './styles.module.css'
+
 // Very simple pluralization: probably good enough for now
 function useNDocsTaggedPlural() {
 	const { selectMessage } = usePluralForm();
@@ -41,7 +43,7 @@ function DocItem({ doc }) {
 }
 
 function categoryFromPermalink(pl) {
-	return pl.replaceAll("/", " ")
+	return pl.substr(1).replace(new RegExp("/$"), "").replaceAll("/", " > ")
 }
 
 function mainDoc(items, tag) {
@@ -112,7 +114,7 @@ export default function DocTagDocListPage({ tag }) {
 						</Link>
 					</header>
 					{md ? 
-						<section key="maindoc" className="margin-vert--lg" style={{textTransform: "capitalize"}}>
+						<section key="maindoc" className={`margin-vert--lg  ${styles.main}`} style={{textTransform: "capitalize"}}>
 							<h2>Main Result</h2>
 							<DocItem id={-1} doc={md} /> 
 						</section> : ""

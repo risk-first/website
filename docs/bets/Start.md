@@ -27,4 +27,4 @@ This is a short sequence of articles that looks at the idea of _betting_, at dif
 - Understand the appropriate domain for Agile and Planned methodologies.
 - Move beyond "Agile"  and "Planned" approaches, to a right-tool-for-the-job approach.
 
-<TagList filter="bets" />
+<TagList tag="Bets" filter="bets" />

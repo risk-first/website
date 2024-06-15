@@ -2,7 +2,6 @@
 title: Monitoring
 description: Continuous observation and tracking of a system, team or person, perhaps with respect to performance, security or availability.
 tags: 
-  - Monitoring
   - Deployment-Operations
 featured: 
   class: c

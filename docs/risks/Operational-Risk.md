@@ -10,7 +10,6 @@ sidebar_position: 15
 tweet: yes
 tags: 
  - Risks
- - Operational Risk
  - Legal Risk
 ---
 

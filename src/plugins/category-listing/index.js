@@ -19,8 +19,9 @@ module.exports = async function myPlugin(context, options) {
                 const attendant = (doc.frontMatter.practice?.attendant ?? []).map(t => t.tag)
                 const practices = (doc.frontMatter.method?.practices ?? []).map(t => t.tag)
                 const partOf = doc.frontMatter.part_of ? [doc.frontMatter.part_of] : []
+                const title = doc.frontMatter.title
                 
-                const allTags = [...tagNames, ...mitigates, ...attendant, ...practices, ...partOf]
+                const allTags = [...tagNames, ...mitigates, ...attendant, ...practices, ...partOf, title]
                 
                 //console.log(JSON.stringify(allTags));
                 

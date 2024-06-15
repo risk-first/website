@@ -2,7 +2,6 @@
 title: Terms Of Reference
 description: Defining the scope and objectives of the project.
 tags: 
-  - Terms Of Reference
   - Planning-Management
 featured: 
   class: c

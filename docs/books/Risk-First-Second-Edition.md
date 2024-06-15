@@ -7,7 +7,7 @@ featured:
   element: '<big-image imgsrc="/public/templates/risk-first/posts/book-grey.png" />'
 tags: 
  - Front
- - Book
+ - Books
 sidebar_position: 2
 ---
 

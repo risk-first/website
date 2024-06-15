@@ -2,7 +2,6 @@
 title: Analysis
 description: Examining systems to understand how they work and how they should change. 
 tags: 
-  - Analysis
   - External-Relations
 featured: 
   class: c

@@ -11,7 +11,6 @@ featured:
 date: 2020-11-07 16:32:03 +0000
 tags:
  - Presentations 
- - Popular
 sidebar_position: 5
 hide_table_of_contents: true
 ---

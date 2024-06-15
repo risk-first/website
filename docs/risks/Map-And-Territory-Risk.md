@@ -10,7 +10,6 @@ sidebar_position: 14
 tweet: yes
 tags: 
  - Risks
- - Map And Territory Risk
 part_of: Operational Risk
 ---
 

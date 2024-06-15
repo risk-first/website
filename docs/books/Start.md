@@ -15,4 +15,4 @@ tweet: yes
 
 You can buy books about Risk-First!
 
-<TagList  tag="Book" />
+<TagList  tag="Books" />

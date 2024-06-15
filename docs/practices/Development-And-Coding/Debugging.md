@@ -2,7 +2,6 @@
 title: Debugging
 description: Identifying and fixing defects in the software.
 tags: 
-  - Debugging
   - Development-Coding
 featured: 
   class: c

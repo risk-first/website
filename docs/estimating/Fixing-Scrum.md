@@ -10,6 +10,7 @@ tags:
  - Popular
  - Feedback Loop
  - Meet Reality
+ - Scrum
 sidebar_position: 6
 tweet: yes
 ---

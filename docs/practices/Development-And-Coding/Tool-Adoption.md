@@ -2,7 +2,6 @@
 title: Tool Adoption
 description: Implementing and utilising specific tools in the development process.
 tags: 
-  - Tool Adoption
   - Development-Coding
 featured: 
   class: c

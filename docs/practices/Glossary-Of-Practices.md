@@ -6,8 +6,6 @@ description: List of all types of actions discussed in Risk-First.
 featured: 
   class: bg2
   element: '<document>Glossary</document>'
-tags:
- - Actions
 sidebar_position: 10
 ---
 

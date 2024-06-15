@@ -2,7 +2,6 @@
 title: Coding
 description: Writing software to meet a required feature.
 tags: 
-  - Coding
   - Development-Coding
 featured: 
   class: c

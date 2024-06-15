@@ -2,7 +2,6 @@
 title: Training
 description: Providing guidance on how to use the software to users or developers.
 tags: 
-  - Training
   - Communication-Collaboration
 featured: 
   class: c

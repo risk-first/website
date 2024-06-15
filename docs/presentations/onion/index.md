@@ -11,7 +11,6 @@ featured:
 date: 2019-07-24 16:32:03 +0000
 tags: 
  - Presentations
- - Popular
 sidebar_position: 6
 hide_table_of_contents: true
 ---

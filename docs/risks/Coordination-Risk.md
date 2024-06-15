@@ -8,7 +8,6 @@ featured:
   element: '<risk class="coordination" />'
 sidebar_position: 13
 tags:
- - Coordination Risk
  - Risks
 tweet: yes
 part_of: Operational Risk

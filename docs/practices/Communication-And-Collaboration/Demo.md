@@ -5,7 +5,6 @@ featured:
   class: c
   element: '<action>Demo</action>'
 tags: 
-  - Demo
   - Communication-Collaboration
 practice:
   aka: 

@@ -10,6 +10,7 @@ tags:
   - Estimating
 sidebar_position: 9
 tweet: yes
+hide_table_of_contents: true
 ---
 
 # Interference Checklist
@@ -27,7 +28,7 @@ This is just meant to be used as a starting point - feel free to adapt this to t
 5.  Consider removing unnecessary risk from the project. 
 6.  After, or during a piece of work, add any new risks you discover to the checklist to remind you about them next time.
 
-Download this in [PDF](https://riskfirst.org/estimating/Interference-Checklist.pdf) or [Numbers](https://riskfirst.org/estimating/Interference-Checklist.numbers) format.
+Download this in [PDF](/estimating/Interference-Checklist.pdf) or [Numbers](/estimating/Interference-Checklist.numbers) format.
 
 | **Area**                                     | **Concern**                                                                       | **Notes** | **Point Value** |
 | -------------------------------------------- | --------------------------------------------------------------------------------- | --------- | --------------- |

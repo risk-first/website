@@ -2,7 +2,6 @@
 title: Quick Summary
 description: A quick summary of the underlying theory behind Risk-First
 
-
 tags: 
  - Overview
 sidebar_position: 1

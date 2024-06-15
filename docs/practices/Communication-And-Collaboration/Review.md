@@ -2,7 +2,6 @@
 title: Review
 description: Conducting systematic reviews of work done.
 tags: 
-  - Review
   - Communication-Collaboration
 featured: 
   class: c

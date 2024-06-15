@@ -2,7 +2,6 @@
 title: Runtime Adoption
 description: Implementing and adhering to specific standards and libraries.
 tags: 
-  - Runtime Adoption
   - Development-Coding
 featured: 
   class: c

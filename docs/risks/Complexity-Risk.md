@@ -8,10 +8,6 @@ featured:
   element: '<risk class="complexity" />'
 sidebar_position: 5
 tags:
- - Popular
- - Complexity Risk
- - Dead-End Risk
- - Codebase Risk
  - Risks
  - Refactoring
 part_of: Operational Risk

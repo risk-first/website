@@ -2,7 +2,6 @@
 title: Contracts
 description: Defining contractual obligations and agreements.
 tags: 
-  - Contracts
   - External-Relations
 featured: 
   class: c

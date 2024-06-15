@@ -2,7 +2,6 @@
 title: Version Control
 description: Using version control systems to manage changes to the codebase.
 tags: 
-  - Version Control
   - Development-Coding
 featured: 
   class: c
