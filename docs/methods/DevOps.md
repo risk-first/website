@@ -49,7 +49,7 @@ method:
      reason: "Security as Code and Automated Security Testing integrate security practices into the DevOps pipeline."
      use:
        - Automated Security Testing
-   - tag: Unit Testing
+   - tag: Automated Testing
      reason: "Automated Testing and Test Driven Development (TDD) validate code changes to ensure they work as expected."
      use:
        - Automated Testing

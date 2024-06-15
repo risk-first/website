@@ -34,7 +34,7 @@ method:
      reason: "Lean uses set-based concurrent engineering to explore multiple design options and narrow down to the best solution."
      use:
        - Set-Based Concurrent Engineering
-   - tag: Estimation
+   - tag: Estimating
      reason: "Lean focuses on working in small, manageable batches to reduce cycle time and increase feedback, aiding in more accurate estimation."
      use:
        - Small Batch Sizes
@@ -83,7 +83,7 @@ method:
      reason: "Lean emphasizes respecting people and engaging stakeholders."
      use:
        - Respect People
-   - tag: Unit Testing
+   - tag: Automated Testing
      reason: "Lean ensures that quality is built into the product from the beginning."
      use:
        - Build Quality In

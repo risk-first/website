@@ -27,7 +27,7 @@ method:
      reason: "Scrum includes sprint reviews which act as demos for stakeholders."
    - tag: Documentation
      reason: "Documentation is produced, but Scrum values working software over comprehensive documentation."
-   - tag: Estimation
+   - tag: Estimating
      reason: "Estimation is performed during sprint planning using techniques like story points."
      use: 
        - Planning Poker
@@ -69,8 +69,10 @@ method:
      reason: "Scrum includes regular reviews in the form of sprint reviews and retrospectives."
    - tag: Release Delivery
      reason: "Scrum focuses on frequent releases, with potentially shippable increments delivered at the end of each sprint."
-   - tag: Unit Testing
+   - tag: Automated Testing
      reason: "Unit testing is part of the Definition of Done in Scrum."
+     use: 
+       - Unit Testing
    - tag: Code Reviews
      reason: "Code reviews can be part of the development practices within Scrum."
    - tag: Stakeholder Management

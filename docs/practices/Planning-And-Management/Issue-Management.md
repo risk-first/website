@@ -2,16 +2,17 @@
 title: Issue Management
 description: Logging support issues and tracking their resolution.
 tags: 
-  - Issue Logging
+  - Planning-Management
 featured: 
   class: c
-  element: '<action>Issue Logging</action>'
+  element: '<action>Issue Management</action>'
 practice:
   aka: 
    - "Issue Tracking"
    - "Ticket Logging"
    - "Bug Tracking"
    - "Backlog"
+   - "Risk Management"
   mitigates:
    - tag: Implementation Risk
      reason: "Tracks and manages defects and issues, ensuring they are resolved."

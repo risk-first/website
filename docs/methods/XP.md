@@ -13,11 +13,11 @@ method:
      reason: "XP encourages two developers working together at one workstation, which improves code quality and facilitates knowledge sharing."
      use: 
       - "Collective Code Ownership"
-   - tag: Unit Testing
+   - tag: Automated Testing
      reason: "XP emphasizes writing tests before coding, ensuring that the software meets its requirements from the start."
      use: 
        - Test Driven Development (TDD)
-       - Automated Testing
+       - Unit Testing
    - tag: Integration Testing
      reason: "XP practices include integrating code into a shared repository frequently, which helps in identifying integration issues early."
      use: 
@@ -49,7 +49,7 @@ method:
        - User Stories
    - tag: Debugging
      reason: "Debugging is an essential part of the development process in XP."
-   - tag: Estimation
+   - tag: Estimating
      reason: "XP uses practices like planning games to estimate the time and resources needed for tasks."
      use: 
        - Planning Game

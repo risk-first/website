@@ -1,5 +1,5 @@
 ---
-title: Unit Testing
+title: Automated Testing
 description: Writing and running tests for individual units or components of the software.
 tags: 
   - Testing-Quality-Assurance 
@@ -10,7 +10,6 @@ practice:
   aka: 
    - "Component Testing"
    - "Module Testing"
-   - "Test-Driven Development (TDD)"
   mitigates:
    - tag: Implementation Risk
      reason: "Ensures that individual components work correctly."

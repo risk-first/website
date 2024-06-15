@@ -42,6 +42,27 @@ function DocItem({ doc }) {
 	);
 }
 
+function DocItemImage({ doc }) {
+	const pl = doc.permalink
+	const stripped = pl.endsWith('/') ? pl+"index" : pl
+	const imageLink = "/img/generated/single/" + stripped + ".png"
+
+	return (
+		
+		<article className={styles.docItem}>
+			<div className={styles.columns}>
+				<div className={styles.left}>
+					<img src={imageLink} className={styles.articleImage} />
+				</div>
+				<div className={styles.right}>
+					<Link key={doc.permalink} to={doc.permalink}><h3>{doc.title}</h3></Link>
+					<p className={styles.description}>{doc.description}</p>
+				</div>
+			</div>
+		</article>
+	);
+}
+
 function categoryFromPermalink(pl) {
 	return pl.substr(1).replace(new RegExp("/$"), "").replaceAll("/", " > ")
 }
@@ -116,7 +137,7 @@ export default function DocTagDocListPage({ tag }) {
 					{md ? 
 						<section key="maindoc" className={`margin-vert--lg  ${styles.main}`} style={{textTransform: "capitalize"}}>
 							<h2>Main Result</h2>
-							<DocItem id={-1} doc={md} /> 
+							<DocItemImage id={-1} doc={md} /> 
 						</section> : ""
 					}
 
