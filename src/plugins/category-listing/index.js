@@ -2,9 +2,7 @@ module.exports = async function myPlugin(context, options) {
     // ...
     return {
       name: 'category-listing',
-      async loadContent() {
-      },
-      async contentLoaded({content, actions, allContent}) {
+      async allContentLoaded({actions, allContent}) {
         const {setGlobalData, addRoute} = actions;
         const allVersions = allContent['docusaurus-plugin-content-docs']['default']['loadedVersions'];
         allVersions.forEach(version => {
