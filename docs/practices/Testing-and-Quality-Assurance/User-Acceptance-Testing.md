@@ -3,6 +3,7 @@ title: User Acceptance Testing
 description: Having a customer representative available onsite for feedback.
 tags: 
   - Testing-Quality-Assurance 
+  - User Acceptance Testing
 featured: 
   class: c
   element: '<action>UAT</action>'

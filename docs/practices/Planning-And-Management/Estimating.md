@@ -3,6 +3,7 @@ title: Estimating
 description: Estimating the time and resources needed for tasks.
 tags: 
   - Planning-Management
+  - Estimating
 featured: 
   class: c
   element: '<action>Estimate</action>'

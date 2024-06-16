@@ -3,6 +3,7 @@ title: Contracts
 description: Defining contractual obligations and agreements.
 tags: 
   - External-Relations
+  - Contracts
 featured: 
   class: c
   element: '<action>Contract</action>'

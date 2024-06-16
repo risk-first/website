@@ -3,6 +3,7 @@ title: Requirements Capture
 description: Gathering and documenting the requirements for the software.
 tags: 
   - Planning-Management
+  - Requirements Capture
 featured: 
   class: c
   element: '<action>Capture Requirements</action>'

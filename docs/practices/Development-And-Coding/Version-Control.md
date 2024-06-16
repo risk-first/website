@@ -3,6 +3,7 @@ title: Version Control
 description: Using version control systems to manage changes to the codebase.
 tags: 
   - Development-Coding
+  - Version Control
 featured: 
   class: c
   element: '<action>Version Control</action>'

@@ -3,6 +3,7 @@ title: Debugging
 description: Identifying and fixing defects in the software.
 tags: 
   - Development-Coding
+  - Debugging
 featured: 
   class: c
   element: '<action>Debug</action>'

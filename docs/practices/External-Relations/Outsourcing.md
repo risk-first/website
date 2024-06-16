@@ -3,6 +3,7 @@ title: Outsourcing
 description: Hiring external resources or companies to handle parts of the project.
 tags: 
   - External-Relations
+  - Outsourcing
 featured: 
   class: c
   element: '<action>Outsource</action>'

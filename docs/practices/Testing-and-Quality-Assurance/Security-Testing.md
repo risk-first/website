@@ -3,6 +3,7 @@ title: Security Testing
 description: Ensuring the application is secure by identifying vulnerabilities.
 tags: 
   - Testing-Quality-Assurance 
+  - Security Testing
 featured: 
   class: c
   element: '<action>Security Test</action>'

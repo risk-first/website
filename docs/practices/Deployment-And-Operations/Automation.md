@@ -3,6 +3,7 @@ title: Automation
 description: Using machines to perform repetitive tasks.
 tags: 
   - Deployment-Operations
+  - Automation
 featured: 
   class: c
   element: '<action>Automate</action>'

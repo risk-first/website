@@ -3,6 +3,7 @@ title: Automated Testing
 description: Writing and running tests for individual units or components of the software.
 tags: 
   - Testing-Quality-Assurance 
+  - Automated Testing
 featured: 
   class: c
   element: '<action>Unit Test</action>'

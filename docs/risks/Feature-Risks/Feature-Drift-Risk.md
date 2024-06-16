@@ -8,7 +8,6 @@ featured:
 sidebar_position: 7
 tags: 
  - Risks
- - Feature Risk
 part_of: Feature Risk
 ---
 <RiskIntro fm={frontMatter} />

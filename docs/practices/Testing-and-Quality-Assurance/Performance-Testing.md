@@ -3,6 +3,7 @@ title: Performance Testing
 description: Testing to ensure the software performs well under expected workloads.
 tags: 
   - Testing-Quality-Assurance 
+  - Performance Testing
 featured: 
   class: c
   element: '<action>Performance Test</action>'

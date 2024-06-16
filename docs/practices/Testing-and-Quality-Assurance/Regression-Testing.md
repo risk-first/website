@@ -3,6 +3,7 @@ title: Regression Testing
 description: Testing to ensure new changes do not adversely affect existing functionality.
 tags: 
   - Testing-Quality-Assurance 
+  - Regression Testing
 featured: 
   class: c
   element: '<action>Regression Test</action>'

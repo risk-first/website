@@ -3,6 +3,7 @@ title: Coding
 description: Writing software to meet a required feature.
 tags: 
   - Development-Coding
+  - Coding
 featured: 
   class: c
   element: '<action>Code</action>'

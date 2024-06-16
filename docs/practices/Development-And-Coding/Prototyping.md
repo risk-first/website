@@ -3,6 +3,7 @@ title: Prototyping
 description: Creating early models of the software to test concepts and ideas.
 tags: 
   - Development-Coding
+  - Prototyping
 featured: 
   class: c
   element: '<action>Prototype</action>'

@@ -3,6 +3,7 @@ title: Measurement
 description: Quantitatively evaluating the software against benchmarks along some defined dimension.
 tags: 
   - Testing-Quality-Assurance 
+  - Measurement
 featured: 
   class: c
   element: '<action>Measure</action>'

@@ -3,6 +3,7 @@ title: Terms Of Reference
 description: Defining the scope and objectives of the project.
 tags: 
   - Planning-Management
+  - Terms Of Reference
 featured: 
   class: c
   element: '<action>Terms of Reference</action>'

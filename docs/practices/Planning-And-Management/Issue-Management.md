@@ -3,6 +3,7 @@ title: Issue Management
 description: Logging support issues and tracking their resolution.
 tags: 
   - Planning-Management
+  - Issue Management
 featured: 
   class: c
   element: '<action>Issue Management</action>'

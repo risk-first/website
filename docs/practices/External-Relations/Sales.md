@@ -3,6 +3,7 @@ title: Sales
 description: Managing the sales strategy to drive software adoption and revenue generation.
 tags: 
   - External-Relations
+  - Sales
 featured: 
   class: c
   element: '<action>Sales</action>'

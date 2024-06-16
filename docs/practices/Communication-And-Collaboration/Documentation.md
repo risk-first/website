@@ -3,6 +3,7 @@ title: Documentation
 description: Creating documentation to describe the software and its use.
 tags: 
   - Communication-Collaboration
+  - Documentation
 featured: 
   class: c
   element: '<action>Documentation</action>'

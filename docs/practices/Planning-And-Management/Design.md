@@ -2,8 +2,8 @@
 title: Design
 description: Designing the high-level structure of the software.
 tags: 
-  - Architecture
   - Planning-Management
+  - Design
 featured: 
   class: c
   element: '<action>Design</action>'
@@ -12,6 +12,7 @@ practice:
    - "System Design"
    - "Software Architecture"
    - "Design Patterns"
+   - "Architecture"
   mitigates:
    - tag: Conceptual Integrity Risk
      reason: "Provides a clear structure and organization, making the system easier to understand and use."

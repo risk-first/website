@@ -6,6 +6,7 @@ featured:
   element: '<action>Demo</action>'
 tags: 
   - Communication-Collaboration
+  - Demo
 practice:
   aka: 
    - "Technology Demonstration"

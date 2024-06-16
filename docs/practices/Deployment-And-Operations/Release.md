@@ -2,7 +2,7 @@
 title: Release
 description: Deploying the software to production.
 tags: 
-  - Release Management
+  - Release
   - Deployment-Operations
 featured: 
   class: c

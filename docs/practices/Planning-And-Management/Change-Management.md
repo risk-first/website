@@ -3,6 +3,7 @@ title: Change Management
 description: Managing changes to systems and organisations in a systematic way.
 tags: 
   - Planning-Management
+  - Change Management
 featured: 
   class: c
   element: '<action>Change Mgmt</action>'
