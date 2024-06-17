@@ -4,6 +4,7 @@ description: A traditional linear and sequential development methodology where e
 tags: 
   - Method
   - Traditional
+  - Waterfall Development
 featured: 
   class: c
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/waterfall.svg">Waterfall Development</image-artifact>'

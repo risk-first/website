@@ -2,7 +2,7 @@
 title: Issue Management
 description: Logging support issues and tracking their resolution.
 tags: 
-  - Planning-Management
+  - Practice
   - Issue Management
 featured: 
   class: c

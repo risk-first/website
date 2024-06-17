@@ -2,8 +2,8 @@
 title: Pair Programming
 description: Two developers working together on the same code.
 tags: 
-  - Development-Coding
   - Pair Programming
+  - Practice
 featured: 
   class: c
   element: '<action>Pairing</action>'

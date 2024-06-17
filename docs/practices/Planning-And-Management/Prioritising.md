@@ -2,7 +2,7 @@
 title: Prioritising
 description: Defining the Minimum Viable Product and planning development priorities.
 tags: 
-  - Planning-Management
+  - Practice
   - Prioritising
 featured: 
   class: c

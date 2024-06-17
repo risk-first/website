@@ -2,7 +2,7 @@
 title: Requirements Capture
 description: Gathering and documenting the requirements for the software.
 tags: 
-  - Planning-Management
+  - Practice
   - Requirements Capture
 featured: 
   class: c

@@ -6,8 +6,6 @@ description: List of all types of risk discussed in Risk-First.
 featured: 
   class: c
   element: '<document>Glossary</document>'
-tags:
- - Risks
 sidebar_position: 17
 tweet: yes
 ---

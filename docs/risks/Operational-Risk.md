@@ -11,6 +11,7 @@ tweet: yes
 tags: 
  - Risks
  - Legal Risk
+ - Operational Risk
 ---
 
 <RiskIntro fm={frontMatter} />

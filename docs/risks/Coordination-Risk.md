@@ -9,6 +9,7 @@ featured:
 sidebar_position: 13
 tags:
  - Risks
+ - Coordination Risk
 tweet: yes
 part_of: Operational Risk
 ---

@@ -14,4 +14,4 @@ layout: categories
 A small selection of the practices around testing that can be employed on a software project.
 
  
-<TagList tag="Testing-Quality-Assurance" />
+<TagList tag="Practice" filter="Testing-and-Quality-Assurance" />

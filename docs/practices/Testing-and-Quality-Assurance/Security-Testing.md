@@ -2,7 +2,7 @@
 title: Security Testing
 description: Ensuring the application is secure by identifying vulnerabilities.
 tags: 
-  - Testing-Quality-Assurance 
+  - Practice 
   - Security Testing
 featured: 
   class: c

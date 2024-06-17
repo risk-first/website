@@ -2,8 +2,8 @@
 title: Marketing
 description: Managing communication strategies to promote the software and engage with the target audience.
 tags: 
-  - External-Relations
   - Marketing
+  - Practice
 featured: 
   class: c
   element: '<action>Marketing</action>'

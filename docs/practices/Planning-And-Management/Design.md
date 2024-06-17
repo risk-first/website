@@ -2,7 +2,7 @@
 title: Design
 description: Designing the high-level structure of the software.
 tags: 
-  - Planning-Management
+  - Practice
   - Design
 featured: 
   class: c

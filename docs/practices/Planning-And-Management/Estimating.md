@@ -2,7 +2,7 @@
 title: Estimating
 description: Estimating the time and resources needed for tasks.
 tags: 
-  - Planning-Management
+  - Practice
   - Estimating
 featured: 
   class: c

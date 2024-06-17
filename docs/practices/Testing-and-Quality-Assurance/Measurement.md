@@ -2,7 +2,7 @@
 title: Measurement
 description: Quantitatively evaluating the software against benchmarks along some defined dimension.
 tags: 
-  - Testing-Quality-Assurance 
+  - Practice 
   - Measurement
 featured: 
   class: c

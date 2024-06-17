@@ -2,8 +2,8 @@
 title: Refactoring
 description: Revising code to improve its structure without changing its behavior.
 tags: 
-  - Development-Coding
   - Refactoring
+  - Practice
 featured: 
   class: c
   element: '<action>Refactor</action>'

@@ -7,8 +7,6 @@ featured:
   class: c
   element: '<document>Collection</document>'
 sidebar_position: 16
-tags:
- - Risks
 tweet: yes
 ---
 

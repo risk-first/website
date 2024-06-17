@@ -4,6 +4,7 @@ description: An Agile framework for managing and completing complex projects.
 tags: 
   - Method
   - Agile
+  - Scrum
 featured: 
   class: c
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/scrum.svg">Scrum</image-artifact>'

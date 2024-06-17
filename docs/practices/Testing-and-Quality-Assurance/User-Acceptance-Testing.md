@@ -2,7 +2,7 @@
 title: User Acceptance Testing
 description: Having a customer representative available onsite for feedback.
 tags: 
-  - Testing-Quality-Assurance 
+  - Practice 
   - User Acceptance Testing
 featured: 
   class: c

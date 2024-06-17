@@ -10,6 +10,7 @@ sidebar_position: 5
 tags:
  - Risks
  - Refactoring
+ - Complexity Risk
 part_of: Operational Risk
 ---
 

@@ -13,4 +13,4 @@ layout: categories
 
 Here are a selection of software development practices centered around development and coding.
  
-<TagList tag="Development-Coding" />
+<TagList tag="Practice" filter="Development-And-Coding" />

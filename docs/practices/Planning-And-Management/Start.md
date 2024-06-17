@@ -13,4 +13,4 @@ layout: categories
 
 Here is a short rundown of some practices that can be employed to help plan and manage software projects.
  
-<TagList tag="Planning-Management" />
+<TagList tag="Practice" filter="Planning-And-Management" />

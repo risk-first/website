@@ -4,6 +4,7 @@ description: An Agile software development methodology that emphasizes eliminati
 tags: 
   - Method
   - Agile
+  - Lean Software Development
 featured: 
   class: c
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/lean.svg">Lean Software Development</image-artifact>'

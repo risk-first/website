@@ -2,7 +2,7 @@
 title: Performance Testing
 description: Testing to ensure the software performs well under expected workloads.
 tags: 
-  - Testing-Quality-Assurance 
+  - Practice 
   - Performance Testing
 featured: 
   class: c

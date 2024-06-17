@@ -10,6 +10,7 @@ tweet: yes
 tags: 
  - Risks
  - Funding Risk
+ - Schedule Risk
 part_of: Scarcity Risk
 ---
 

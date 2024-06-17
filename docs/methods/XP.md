@@ -4,6 +4,7 @@ description: An Agile software development methodology that emphasizes customer 
 tags: 
   - Method
   - Agile
+  - Extreme Programming (XP)
 featured: 
   class: c
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/xp.svg">XP</image-artifact>'

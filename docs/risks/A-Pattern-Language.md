@@ -6,8 +6,6 @@ description: Explanation of how Risk-First comprises a pattern language of risk 
 featured: 
   class: c
   element: '<protocol-artifact>Patterns</protocol-artifact>'
-tags: 
- - Risks
 sidebar_position: 1
 tweet: yes
 ---

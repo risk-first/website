@@ -2,7 +2,7 @@
 title: Approvals
 description: Getting formal approval for various project stages.
 tags: 
-  - Planning-Management
+  - Practice
   - Approvals
 featured: 
   class: c

@@ -13,4 +13,4 @@ layout: categories
 
 A selection of practices in software development concerned with relationships outside of the team itself.
  
-<TagList tag="External-Relations" />
+<TagList tag="Practice" filter="External-Relations" />

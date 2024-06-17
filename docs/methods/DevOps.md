@@ -4,6 +4,7 @@ description: A set of practices that combines software development (Dev) and IT 
 tags: 
   - Method
   - Agile
+  - DevOps
 featured: 
   class: c
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/devops.svg">DevOps</image-artifact>'

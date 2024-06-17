@@ -2,7 +2,7 @@
 title: Integration Testing
 description: Testing combined parts of the software to ensure they work together.
 tags: 
-  - Testing-Quality-Assurance
+  - Practice 
   - Integration Testing
 featured: 
   class: c

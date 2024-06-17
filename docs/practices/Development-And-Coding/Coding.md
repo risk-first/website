@@ -2,8 +2,8 @@
 title: Coding
 description: Writing software to meet a required feature.
 tags: 
-  - Development-Coding
   - Coding
+  - Practice
 featured: 
   class: c
   element: '<action>Code</action>'

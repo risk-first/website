@@ -2,7 +2,7 @@
 title: Stakeholder Management
 description: Managing relationships and communications with stakeholders. 
 tags: 
-  - Planning-Management
+  - Practice
   - Stakeholder Management
 featured: 
   class: c

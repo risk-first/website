@@ -2,8 +2,8 @@
 title: Analysis
 description: Examining systems to understand how they work and how they should change. 
 tags: 
-  - External-Relations
   - Analysis
+  - Practice
 featured: 
   class: c
   element: '<action>Analysis</action>'
