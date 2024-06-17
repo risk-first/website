@@ -19,7 +19,7 @@ In Scrum, the idea of a _sprint_ is well named:  as a team, you are trying to co
 
 In a previous article in this series, [Fixing Scrum](Fixing-Scrum.md) we took against the idea of fixed time-boxes generally, because they _introduce more problems than they solve_:  as we've seen [in](Journeys.md) [multiple](Kitchen-Cabinet.md) [articles](Fractals.md), estimating is _hard_, trying to use it as a solution to anything is misguided.  So you should only estimate when you absolutely need to.
 
-Nevertheless, _knowing how long things will take_ is really the whole purpose of this track on [Estimating](Start.md), and sometimes unavoidable [deadlines](../risks/Deadline-Risk.md) make it necessary.  
+Nevertheless, _knowing how long things will take_ is really the whole purpose of this track on [Estimating](Start.md), and sometimes unavoidable [deadlines](/tags/Deadline-Risk) make it necessary.  
 
 In Scrum, the Estimation process is based on the concept of _story points_, so that will be the focus here, although essentially this discussion is relevant to anyone estimating software development.
 

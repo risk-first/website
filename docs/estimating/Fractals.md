@@ -98,11 +98,11 @@ Although there are some high-profile wins with these types of problems, generall
  
 ## Applying Risk-First
 
-Let's look at the conclusions we reached in [Boundary Risk](../risks/Boundary-Risk.md):
+Let's look at the conclusions we reached in [Boundary Risk](/tags/Boundary-Risk):
 
 > - **Human need is [Fractal](https://en.wikipedia.org/wiki/Fractal)**:  this means that over time, software products have evolved to more closely map human needs.   Software that would have delighted us ten years ago lacks the sophistication we expect today.
 - **Software and hardware are both improving with time**: due to evolution and the ability to support greater and greater levels of complexity.
-- **Abstractions accrete too**:  as we saw in [Process Risk](../risks/Process-Risk.md), we _encapsulate_ earlier abstractions in order to build later ones.
+- **Abstractions accrete too**:  as we saw in [Process Risk](/tags/Process-Risk), we _encapsulate_ earlier abstractions in order to build later ones.
 
 If we accept this problem of the fractal nature of human desire, then we have to contend with the fact that our software systems are always going to get continually more complex to serve it.
 

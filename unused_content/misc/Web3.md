@@ -35,7 +35,7 @@ To understand this, we need to understand why it happens in the first place.   T
 
 As shown in the above diagram, successful platforms beget success.  This is how the big get bigger.   This is why we see a power-law distribution of wealth in the world, and also why platforms like Wordpress are orders of magnitude more successful than its rivals like Drupal.  As we discussed in Boundary Risk:
 
-> "Did WordPress gain this march because it was always _better_ than Drupal?  That's arguable.  Certainly, they're not different enough that WordPress is 16x better.  That it's this way round could be _entirely accidental_, and a result of the Network Effect." - [Boundary Risk, _Risk-First_](../risks/Boundary-Risk.md)
+> "Did WordPress gain this march because it was always _better_ than Drupal?  That's arguable.  Certainly, they're not different enough that WordPress is 16x better.  That it's this way round could be _entirely accidental_, and a result of the Network Effect." - [Boundary Risk, _Risk-First_](/tags/Boundary-Risk)
 
 ## Coordination Trumps Competition
 

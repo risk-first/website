@@ -32,7 +32,7 @@ Download this in [PDF](/estimating/Interference-Checklist.pdf) or [Numbers](/est
 
 | **Area**                                     | **Concern**                                                                       | **Notes** | **Point Value** |
 | -------------------------------------------- | --------------------------------------------------------------------------------- | --------- | --------------- |
-| **[Communication Risks](../risks/Communication-Risk.md)**    |                                                                                   |           |                 |
+| **[Communication Risks](/tags/Communication-Risk)**    |                                                                                   |           |                 |
 | **\- [Channel Risk](../risks/Communication-Risk.md#channel-risk)**  | Requires input from other team members                                            |           |                 |
 |                                                            | Requires input from other teams                                                   |           |                 |
 |                                                            | Requires input from other departments                                             |           |                 |
@@ -77,13 +77,13 @@ Download this in [PDF](/estimating/Interference-Checklist.pdf) or [Numbers](/est
 |                                              | No prior work exists in this area                                                 |           |                 |
 |                                              | Significant algorithmic innovation is required                                    |           |                 |
 |                                              |                                                                                   |           |                 |
-| **\- [Boundary Risk](../risks/Boundary-Risk.md)**   | Ecosystem choice                                                                  |           |                 |
+| **\- [Boundary Risk](/tags/Boundary-Risk)**   | Ecosystem choice                                                                  |           |                 |
 |                                              | Platform choice                                                                   |           |                 |
 |                                              | App stores                                                                        |           |                 |
 |                                              | Language choice                                                                   |           |                 |
 |                                              | Market choice                                                                     |           |                 |
 |                                              |                                                                                   |           |                 |
-| **[Feature Risks](../risks/Feature-Risk.md)**  |                                                                                   |           |                 |
+| **[Feature Risks](/tags/Feature-Risk)**  |                                                                                   |           |                 |
 | **\- [Conceptual Integrity Risk](../risks/Feature-Risk.md#conceptual-integrity-risk)** | Requires new interface to be added                                                |           |                 |
 |                                              | Requires refactoring of existing interfaces                                       |           |                 |
 |                                              | Deprecates existing functionality                                                 |           |                 |
@@ -108,7 +108,7 @@ Download this in [PDF](/estimating/Interference-Checklist.pdf) or [Numbers](/est
 |                                              | Market itself is uncertain                                                        |           |                 |
 |                                              | Product needs to find it’s market                                                 |           |                 |
 |                                              |                                                                                   |           |                 |
-| **[Agency Risks](../risks/Agency-Risk.md)** /| 3rd Party involved                                                                |           |                 |
+| **[Agency Risks](/tags/Agency-Risk)** /| 3rd Party involved                                                                |           |                 |
 | **[Trust Risk](../risks/Communication-Risk.md#trust--belief-risk)** / | Competitor involvement                                                            |           |                 |
 | **[Security Risks](../risks/Agency-Risk.md#security)**| General public involved                                                           |           |                 |
 |                                              | Available on the open internet                                                    |           |                 |
@@ -121,7 +121,7 @@ Download this in [PDF](/estimating/Interference-Checklist.pdf) or [Numbers](/est
 |                                              | Involves security infrastructure: firewalls, proxies, VPN etc.                    |           |                 |
 |                                              |                                                                                   |           |                 |
 | **[Dependency Risks](../risks/Dependency-Risk.md)** |                                                                                   |           |                 |
-| **\- [Software Dependency Risk](../risks/Software-Dependency-Risk.md)**| Requires the introduction of a new dependency                                     |           |                 |
+| **\- [Software Dependency Risk](/tags/Software-Dependency-Risk)**| Requires the introduction of a new dependency                                     |           |                 |
 |                                              | … which is immature                                                               |           |                 |
 |                                              | … which must be chosen from competing alternatives                                |           |                 |
 |                                              | … which is Open-Source                                                            |           |                 |
@@ -149,11 +149,11 @@ Download this in [PDF](/estimating/Interference-Checklist.pdf) or [Numbers](/est
 |                                              | Has unusual hosting requirements                                                  |           |                 |
 |                                              | Unfamiliar hardware involved                                                      |           |                 |
 |                                              |                                                                                   |           |                 |
-| **\- [Process Risk](../risks/Process-Risk.md)**       | Unfamiliar process for releasing                                                  |           |                 |
+| **\- [Process Risk](/tags/Process-Risk)**       | Unfamiliar process for releasing                                                  |           |                 |
 |                                              | New CI Steps Needed                                                               |           |                 |
 |                                              | Unfamiliar approvals required                                                     |           |                 |
 |                                              |                                                                                   |           |                 |
-| **\- [Deadline Risk](../risks/Deadline-Risk.md)**     | Has components that must be completed during certain time windows (e.g. weekends) |           |                 |
+| **\- [Deadline Risk](/tags/Deadline-Risk)**     | Has components that must be completed during certain time windows (e.g. weekends) |           |                 |
 |                                              | Has components that must be completed before drop-dead dates                      |           |                 |
 |                                              |                                                                                   |           |                 |
 | **[Operational Risk](../risks/Operational-Risk.md)**                         | Requires new or extra production support                                          |           |                 |

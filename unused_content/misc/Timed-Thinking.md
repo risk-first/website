@@ -60,7 +60,7 @@ Ideally, you'll want to perform debugging experiments that -whatever the outcome
 
 ### Designing
 
-As you might expect, a [Risk-First](https://riskfirst.org) approach to software design would be one where you don't introduce unnecessary risk to your project, be it in the form of [Dependency Risks](../risks/Dependency-Risk.md) (try not to add them), [Complexity Risks](../risks/Complexity-Risk.md) (keep the codebase nice and tight), [Feature Risks](../risks/Feature-Risk.md) (make sure you're building the right thing) and so on.  
+As you might expect, a [Risk-First](https://riskfirst.org) approach to software design would be one where you don't introduce unnecessary risk to your project, be it in the form of [Dependency Risks](../risks/Dependency-Risk.md) (try not to add them), [Complexity Risks](../risks/Complexity-Risk.md) (keep the codebase nice and tight), [Feature Risks](/tags/Feature-Risk) (make sure you're building the right thing) and so on.  
 
 It's tempting to just throw code together and then hammer out the issues as you go.  Maybe even, this is how some people think Agile should work.   
 

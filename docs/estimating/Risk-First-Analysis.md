@@ -28,7 +28,7 @@ The previous article, [Fixing Scrum](Fixing-Scrum.md), examined Scrum's idea of 
 
 ![Scrum: Consequences Of Time-Boxing](/img/generated/estimating/planner/scrum-consequences.png)
 
-The diagram above shows this behaviour in the form of a [Risk-First Diagram](../thinking/Risk-First-Diagrams.md).  Put briefly:  _risks_ ([Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk), [Feature Risk](../risks/Feature-Risk.md)) are addressed by actions such as "Development", "Review" or "Planning Poker".  
+The diagram above shows this behaviour in the form of a [Risk-First Diagram](../thinking/Risk-First-Diagrams.md).  Put briefly:  _risks_ ([Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk), [Feature Risk](/tags/Feature-Risk)) are addressed by actions such as "Development", "Review" or "Planning Poker".  
 
 If you're new to [Risk-First](https://www.riskfirst.org) then it's probably worth explaining at this point that one of the purposes of this project is to enumerate the different types of risk you could face running a software project.  You can begin to learn about them all [here](../risks/Start.md).  Suffice to say, we have icons to represent each of these kinds of risks, and the rest of this article will introduce some of them to you in passing.
 
@@ -102,9 +102,9 @@ So, this diagram encapsulates the reason why we might fix the rendering bug:  it
 
 Let's move on to task 2, the **Search Function**, as shown in the above diagram.
 
-As with the **Rendering Bug**, above, we lose something:  [Feature Risk](../risks/Feature-Risk.md), which is the risk (to us) that the features our product is supplying don't meet the client's (or the market's) requirements.  Writing code is all about identifying and removing [Feature Risk](../risks/Feature-Risk.md), and building products that fit the needs of their users.
+As with the **Rendering Bug**, above, we lose something:  [Feature Risk](/tags/Feature-Risk), which is the risk (to us) that the features our product is supplying don't meet the client's (or the market's) requirements.  Writing code is all about identifying and removing [Feature Risk](/tags/Feature-Risk), and building products that fit the needs of their users.
 
-So as in the Rendering Bug example, we can show [Feature Risk](../risks/Feature-Risk.md) being eliminated by showing it on the left with a strike-out line.   However, it's been established during analysis that the way to implement this feature is to introduce [ElasticSearch](https://www.elastic.co), a third-party piece of software.  This in itself is an [Attendant Risk](../thinking/Glossary.md#attendant-risk) of taking that action:  
+So as in the Rendering Bug example, we can show [Feature Risk](/tags/Feature-Risk) being eliminated by showing it on the left with a strike-out line.   However, it's been established during analysis that the way to implement this feature is to introduce [ElasticSearch](https://www.elastic.co), a third-party piece of software.  This in itself is an [Attendant Risk](../thinking/Glossary.md#attendant-risk) of taking that action:  
 
 - Are we going to find that easy to deploy and maintain?  
 - What impact will this have on hosting charges?  
@@ -139,7 +139,7 @@ Let's go on to the third action, **Refactoring Subscriptions** to see this in ac
 
 ![Refactoring Subscriptions](/img/generated/estimating/planner/refactoring.png)
 
-In the above diagram, we are showing that by removing [Communication Risk](../risks/Communication-Risk.md) around our product, we are _improving_ our chances of reaching the goal of 50K subscribers.  That's a big assumption - it could well be that the users don't complete the upgrade for other reasons.  Maybe they find out the price during the upgrade and are put off, or they are being forced onto the upgrade screen by some dark patterns, but actually have no intention of upgrading the product at all.
+In the above diagram, we are showing that by removing [Communication Risk](/tags/Communication-Risk) around our product, we are _improving_ our chances of reaching the goal of 50K subscribers.  That's a big assumption - it could well be that the users don't complete the upgrade for other reasons.  Maybe they find out the price during the upgrade and are put off, or they are being forced onto the upgrade screen by some dark patterns, but actually have no intention of upgrading the product at all.
 
 ### "Fix The CI Pipeline"
 
@@ -147,7 +147,7 @@ Let's look at the last example:  the action to fix the Continuous Integration Pi
 
 ![Fixing The CI Pipeline, v1](/img/generated/estimating/planner/ci-impact.png)
 
-The above diagram tries to show how this is:  on the left side, we have the [Coordination Risk](../risks/Coordination-Risk.md) experienced by the Development Team.  (Note the use of round-cornered boxes to show _who_ the risks apply to).  On the right side, we have the [Deadline Risk](../risks/Deadline-Risk.md) experienced by the Sales Team.
+The above diagram tries to show how this is:  on the left side, we have the [Coordination Risk](../risks/Coordination-Risk.md) experienced by the Development Team.  (Note the use of round-cornered boxes to show _who_ the risks apply to).  On the right side, we have the [Deadline Risk](/tags/Deadline-Risk) experienced by the Sales Team.
 
 On the face of it, it's clear why the Sales Team might feel annoyed - there is a transfer of risk _away_ from the Development Team _to_ them.  That's not fair!  But the Development Team Lead might counter by saying:  "Look, this issue is slowing down development, which might mean this startup runs out of funding before the product is ready for launch. Plus it's causing a loss of morale in our team and we're having trouble retaining good staff as it is".  
 

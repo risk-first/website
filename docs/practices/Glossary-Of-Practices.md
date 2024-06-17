@@ -97,7 +97,7 @@ Includes the sub-actions or motivation, composition, encoding, transmission, rec
 
 See:
 
- - [Communication Risk](../risks/Communication-Risk.md)
+ - [Communication Risk](/tags/Communication-Risk)
  
 ### Translation
 
@@ -142,7 +142,7 @@ See:
  
 ### Innovation
 
-The process of evolving a product to better manage existing or newly discovered [Feature Risk](../risks/Feature-Risk.md).  Also called _evolution_ (often when talking about ecosystems or organisms), _extension_ (when applied to standards or protocols) or _improvement_.
+The process of evolving a product to better manage existing or newly discovered [Feature Risk](/tags/Feature-Risk).  Also called _evolution_ (often when talking about ecosystems or organisms), _extension_ (when applied to standards or protocols) or _improvement_.
 
 See:
  - [Feature Drift Risk](../risks/Feature-Risk.md#feature-drift-risk)
@@ -160,7 +160,7 @@ See:
 
 ### Specification 
 
-Writing a specification to describe how a piece of functionality should best mitigate [Feature Risk](../risks/Feature-Risk.md).  Also known as _design_.
+Writing a specification to describe how a piece of functionality should best mitigate [Feature Risk](/tags/Feature-Risk).  Also known as _design_.
 
 See:
  - [Development Process](../thinking/Development-Process.md#a-toy-process)
@@ -201,7 +201,7 @@ See:
 
 ### Product Development
 
-Mitigating [Feature Risk](../risks/Feature-Risk.md) by adding code to a project.  Can often be called _coding_ or _implementation_.
+Mitigating [Feature Risk](/tags/Feature-Risk) by adding code to a project.  Can often be called _coding_ or _implementation_.
 
 _See: [Development Process](../thinking/Development-Process.md#a-toy-process)_
 
@@ -223,7 +223,7 @@ See:
  
 ### User Acceptance Testing (UAT)
 
-Completing a [Feedback Loop](../thinking/Cadence.md) in order to ascertain whether [Feature Risk](../risks/Feature-Risk.md) has been correctly addressed by new features.  Also called _verification_, _user feedback_ or _manual testing_.
+Completing a [Feedback Loop](../thinking/Cadence.md) in order to ascertain whether [Feature Risk](/tags/Feature-Risk) has been correctly addressed by new features.  Also called _verification_, _user feedback_ or _manual testing_.
 
 See: 
  - [Development Process](../thinking/Development-Process.md#a-toy-process)_
@@ -281,7 +281,7 @@ See:
 
 ### Sign-Off
 
-The act of introducing a human-controlled approval step into a [Process](../risks/Process-Risk.md) in order to mitigate [Operational Risks](../risks/Operational-Risk.md).
+The act of introducing a human-controlled approval step into a [Process](/tags/Process-Risk) in order to mitigate [Operational Risks](../risks/Operational-Risk.md).
 
 See:
 
@@ -310,7 +310,7 @@ Within a given context, limiting the actions of agents to perform certain privil
 
 See:
 
-- [Security](../risks/Agency-Risk.md)
+- [Security](/tags/Agency-Risk)
 
 ### Accountability (Assigning)
 

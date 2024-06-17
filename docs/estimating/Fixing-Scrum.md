@@ -30,11 +30,11 @@ Work in Scrum is done within periods of time called _Sprints_.  Each sprint ends
 
 > "The goal of this activity is to inspect and adapt the product being built... Everyone in attendance gets clear visibility into what is occurring and has an opportunity to help guide the forthcoming development to ensure that the most business-appropriate solution is created." - Essential Scrum (p26), _Rubin_
 
-In Risk-First, we tend to call this validation step [Meeting Reality](../thinking/Glossary.md#meet-reality):  you are creating a [feedback loop](../thinking/Cadence.md) in order to minimise risk.  What is the risk you are minimising?  Essentially, we are trying to reduce the risk of the developers _building the wrong thing_, which could be due to misunderstanding of requirements, or perfectionism, or because the piece of work was ill-conceived in the first place.  In Risk-First, the risk of building the wrong thing is called [Feature Risk](../risks/Feature-Risk.md).
+In Risk-First, we tend to call this validation step [Meeting Reality](../thinking/Glossary.md#meet-reality):  you are creating a [feedback loop](../thinking/Cadence.md) in order to minimise risk.  What is the risk you are minimising?  Essentially, we are trying to reduce the risk of the developers _building the wrong thing_, which could be due to misunderstanding of requirements, or perfectionism, or because the piece of work was ill-conceived in the first place.  In Risk-First, the risk of building the wrong thing is called [Feature Risk](/tags/Feature-Risk).
 
 ![Feature Risk mitigated by Meeting Reality](/img/generated/estimating/scrum/scrum1.png)
 
-The above diagram demonstrates us mitigating [Feature Risk](../risks/Feature-Risk.md) (the risk of not building the right software for our clients) by organising a Sprint Review.  But there is a downside to a Sprint Review:  _it takes time_.
+The above diagram demonstrates us mitigating [Feature Risk](/tags/Feature-Risk) (the risk of not building the right software for our clients) by organising a Sprint Review.  But there is a downside to a Sprint Review:  _it takes time_.
 
 ![Schedule Risk for Stakeholders](/img/generated/estimating/scrum/scrum2.png)
 
@@ -122,7 +122,7 @@ How can we, as software developers, minimise the chance of building the wrong th
 
 ![Scrum](/img/generated/estimating/scrum/scrum4.png)
 
-Look above at the diagram what Scrum is trying to do to mitigate [Feature Risk](../risks/Feature-Risk.md):
+Look above at the diagram what Scrum is trying to do to mitigate [Feature Risk](/tags/Feature-Risk):
 
 - We [Meet Reality](../thinking/Glossary.md#meet-reality) to ensure we've got a feedback loop.
 - We **time-box** to avoid wasting stake-holders' time (Schedule Risk).

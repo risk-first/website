@@ -48,4 +48,4 @@ All systems have to balance two things:
 
 > "Homeostasis is brought about by a natural resistance to change when already in the optimal conditions, and equilibrium is maintained by many regulatory mechanisms." - [Homeostasis, _Wikipedia_](https://en.wikipedia.org/wiki/Homeostasis)
 
-These two things are in tension:  one is pushing for change, one is asking for things to stay the same.   More on this in [Agency Risk](../risks/Agency-Risk.md)
+These two things are in tension:  one is pushing for change, one is asking for things to stay the same.   More on this in [Agency Risk](/tags/Agency-Risk)
