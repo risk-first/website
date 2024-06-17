@@ -1,8 +1,6 @@
 ---
 title: Glossary of Practices
 description: List of all types of actions discussed in Risk-First.
-
-
 featured: 
   class: bg2
   element: '<document>Glossary</document>'
@@ -190,6 +188,13 @@ See:
 
 - [Scarcity Risk](../risks/Scarcity-Risk.md#mitigations)
 
+### Pair Programming
+
+Two people at the same keyboard, learning and working together.
+
+ - [Crisis Mode](../thinking/Crisis-Mode.md) 
+
+
 ### Pools / Queues
 
 A way of ensuring orderly consumption of scarce resources.
@@ -237,7 +242,7 @@ The act of moving in-development software to being in production, so that client
 
 See: 
 - [Development Process](../thinking/Development-Process.md#a-toy-process)
-- [Consider Payoff](../thinking/Consider-Payoff.md#example-3-continue-testing-or-release)
+- [Consider Payoff](../thinking/Consider-Payoff.md#example-4-continue-testing-or-release)
 - [Production (Cadence)](../thinking/Cadence.md#production)
 
 ### Testing

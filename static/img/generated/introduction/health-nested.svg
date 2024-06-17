@@ -1,0 +1,2052 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:adl="http://www.kite9.org/schema/adl"
+     xmlns:exslt="http://exslt.org/common"
+     xmlns:pp="http://www.kite9.org/schema/post-processor"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     contentScriptType="text/ecmascript"
+     zoomAndPan="magnify"
+     contentStyleType="text/css"
+     version="1.0"
+     width="1105"
+     pp:width="$width"
+     preserveAspectRatio="xMidYMid meet"
+     height="429"
+     pp:height="$height">
+   <metadata xmlns:md="http://www.kite9.org/schema/metadata">
+      <md:self>http://robs-pro:8080/api/renderer?format=svg</md:self>
+   </metadata>
+   <defs>
+      <style xml:space="preserve">*[k9-format="text-fixed"] {
+--kite9-type: TEXT;
+--kite9-vertical-align: CENTER;
+--kite9-horizontal-align: CENTER;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+}
+
+*[k9-format="image"], *[k9-format="image-fixed"] {
+--kite9-type: SVG;
+--kite9-horizontal-align: CENTER;
+--kite9-vertical-align: CENTER;
+}
+
+*[k9-format="shape"] {
+--kite9-type: CONTAINER;
+--kite9-horizontal-align: CENTER;
+--kite9-vertical-align: CENTER;
+}
+
+*[k9-format="svg"], *[k9-format="svg-fixed"] {
+--kite9-type: SVG;
+--kite9-horizontal-align: CENTER;
+--kite9-vertical-align: CENTER;
+}
+
+*[k9-format="container"] {
+--kite9-type: CONTAINER;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+}
+
+*[k9-format="text-image-portrait"], *[k9-format="text-image-captioned"], *[k9-format="text-shape-captioned"], *[k9-format="text-shape-portrait"], *[k9-format="text-shape-inline"] {
+--kite9-type: CONTAINER;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+}
+
+*[k9-format="text-image-portrait"], *[k9-format="text-shape-portrait"] {
+--kite9-layout: DOWN;
+}
+
+*[k9-format="text-shape-captioned"] &gt; g &gt; *[k9-elem="depiction"], *[k9-format="text-image-portrait"] &gt; g &gt; *[k9-elem="depiction"], *[k9-format="text-shape-portrait"] &gt; g &gt; *[k9-elem="depiction"] {
+--kite9-type: SVG;
+--kite9-horizontal-align: CENTER;
+--kite9-connections: SEPARATE;
+}
+
+*[k9-format="text-shape-inline"] &gt; g &gt; *[k9-elem="caption"], *[k9-format="text-image-portrait"] &gt; g &gt; *[k9-elem="caption"], *[k9-format="text-shape-portrait"] &gt; g &gt; *[k9-elem="caption"], *[k9-format="text-shape-captioned"] &gt; g &gt; *[k9-elem="caption"] {
+--kite9-type: TEXT;
+--kite9-horizontal-align: CENTER;
+--kite9-vertical-align: CENTER;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+}
+
+*[k9-format="text-shape-captioned"] &gt; g &gt; *[k9-elem="shape-align"] {
+--kite9-type: LINK;
+}
+
+*[k9-format="text-shape-captioned"] &gt; g &gt; *[k9-elem="shape-align"] &gt; g &gt; *[k9-elem="from"], *[k9-format="text-shape-captioned"] &gt; g &gt; *[k9-elem="shape-align"] &gt; g &gt; *[k9-elem="to"] {
+--kite9-type: LINK_END;
+}
+
+*[k9-elem="diagram"] {
+--kite9-type: DIAGRAM;
+--kite9-traversal-bottom: LEAVING;
+--kite9-traversal-left: LEAVING;
+--kite9-traversal-right: LEAVING;
+--kite9-traversal-top: LEAVING;
+}
+
+*[k9-elem="group"] {
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-traversal-bottom: ALWAYS;
+--kite9-traversal-left: ALWAYS;
+--kite9-traversal-right: ALWAYS;
+--kite9-traversal-top: ALWAYS;
+--kite9-min-width: 40pt;
+--kite9-min-height: 40pt;
+}
+
+*[k9-elem="container"] {
+--kite9-padding-top: 15pt;
+--kite9-padding-right: 15pt;
+--kite9-padding-bottom: 15pt;
+--kite9-padding-left: 15pt;
+--kite9-margin-top: 15pt;
+--kite9-margin-right: 15pt;
+--kite9-margin-bottom: 15pt;
+--kite9-margin-left: 15pt;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+}
+
+*[k9-elem="label"] {
+--kite9-usage: LABEL;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-direction: DOWN;
+}
+
+*[k9-elem="label-inner"] {
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-padding-top: 4pt;
+--kite9-padding-right: 4pt;
+--kite9-padding-bottom: 4pt;
+--kite9-padding-left: 4pt;
+--kite9-margin-top: 4pt;
+--kite9-margin-right: 4pt;
+--kite9-margin-bottom: 4pt;
+--kite9-margin-left: 4pt;
+}
+
+*[k9-elem="label"][end="to"] {
+--kite9-link-end: TO;
+}
+
+*[k9-elem="label"][end="from"] {
+--kite9-link-end: FROM;
+}
+
+*[k9-elem="table"] {
+--kite9-layout: GRID;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+}
+
+*[k9-elem="cell"] {
+--kite9-usage: REGULAR;
+--kite9-vertical-align: CENTER;
+--kite9-horizontal-align: CENTER;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+text-align: center;
+--kite9-min-width: 30pt;
+--kite9-min-height: 30pt;
+--kite9-traversal-bottom: ALWAYS;
+--kite9-traversal-left: ALWAYS;
+--kite9-traversal-right: ALWAYS;
+--kite9-traversal-top: ALWAYS;
+}
+
+*[k9-format="link-align"], *[k9-format="link-basic"] {
+--kite9-type: LINK;
+--kite9-link-from-xpath: "descendant::*[@k9-elem='from']/@reference";
+--kite9-link-to-xpath: "descendant::*[@k9-elem='to']/@reference";
+}
+
+*[k9-elem="link-grab"], *[k9-elem="align-grab"], *[k9-elem="grab"], *[k9-elem="align-body"], *[k9-elem="link-body"] {
+--kite9-usage: DECAL;
+--kite9-type: SVG;
+fill: none;
+}
+
+*[k9-elem="from"], *[k9-elem="to"] {
+fill: rgb(255, 255, 255);
+fill-opacity: 0.01;
+}
+
+*[k9-elem="link"] {
+--kite9-margin-top: 20pt;
+--kite9-margin-right: 20pt;
+--kite9-margin-bottom: 20pt;
+--kite9-margin-left: 20pt;
+--kite9-link-corner-radius: 6pt;
+}
+
+*.indicators-on *[id] *[k9-elem="align-body"] {
+stroke: rgb(187, 221, 238);
+stroke-opacity: 1;
+}
+
+*[k9-elem="from"] {
+--kite9-link-end: FROM;
+}
+
+*[k9-elem="to"] {
+--kite9-link-end: TO;
+}
+
+*[k9-elem="from"].gap, *[k9-elem="to"].gap {
+--kite9-marker-reserve: 20pt;
+}
+
+*[k9-elem="from"][shape="open-diamond"], *[k9-elem="to"][shape="open-diamond"] {
+--kite9-marker-reserve: 8pt;
+}
+
+*[k9-elem="from"][shape="open-arrow"], *[k9-elem="to"][shape="open-arrow"] {
+--kite9-marker-reserve: 6pt;
+}
+
+*[k9-elem="from"], *[k9-elem="to"] {
+--kite9-type: LINK_END;
+--kite9-padding-top: 8pt;
+--kite9-padding-right: 8pt;
+--kite9-padding-bottom: 8pt;
+--kite9-padding-left: 8pt;
+}
+
+*[k9-elem="port"] {
+--kite9-type: PORT;
+}
+
+*[k9-elem="hub"] {
+--kite9-type: SVG;
+--kite9-margin-top: 0;
+--kite9-margin-right: 0;
+--kite9-margin-bottom: 0;
+--kite9-margin-left: 0;
+--kite9-min-width: 10pt;
+--kite9-min-height: 10pt;
+}
+
+*[k9-elem="group"] {
+--kite9-type: CONTAINER;
+--kite9-margin-top: 20pt;
+--kite9-margin-right: 20pt;
+--kite9-margin-bottom: 20pt;
+--kite9-margin-left: 20pt;
+}
+
+*[k9-elem="textarea"] {
+--kite9-margin-top: 4pt;
+--kite9-margin-right: 4pt;
+--kite9-margin-bottom: 4pt;
+--kite9-margin-left: 4pt;
+--kite9-vertical-align: CENTER;
+--kite9-horizontal-align: CENTER;
+}
+
+*[id] &gt; *[k9-highlight] {
+}
+
+*.indicators-on *[id] &gt; *[k9-highlight~="grab"] {
+stroke-width: 10pt;
+fill-opacity: 0.5;
+}
+
+*.indicators-on *[id] &gt; *[k9-highlight~="bar"] {
+stroke-width: 10pt;
+stroke-opacity: 0.1;
+}
+
+*.indicators-on *[id] &gt; *[k9-highlight~="stroke"] {
+stroke: rgb(183, 192, 254);
+stroke-opacity: 0.8;
+stroke-width: 1pt;
+stroke-dasharray: none;
+}
+
+*.indicators-on *[id] &gt; *[k9-highlight~="stroke"] &gt; image {
+filter: url(#highlight-visible);
+}
+
+*.indicators-on *[id] &gt; *[k9-highlight~="fill"] {
+fill: rgb(183, 192, 254);
+fill-opacity: 0.6;
+}
+
+*.indicators-off *[id] &gt; *[k9-highlight~="fill"] {
+fill-opacity: 0;
+}
+
+*.indicators-off *[id] &gt; *[k9-highlight~="stroke"] {
+stroke-opacity: 0;
+}
+
+*.indicators-off *[id] &gt; *[k9-highlight~="stroke"] &gt; image {
+filter: url(#highlight-invisible);
+}
+
+*.indicators-on *[id][default] &gt; *[k9-highlight~="bar"], *.indicators-on *[id][default] &gt; g &gt; *[k9-highlight~="bar"] {
+stroke-width: 10pt;
+stroke-opacity: 0.8;
+stroke: rgb(253, 152, 112);
+}
+
+*.indicators-on *[id][default] &gt; *[k9-highlight~="pulse"], *.indicators-on *[id][default] &gt; g &gt; *[k9-highlight~="pulse"] {
+fill-opacity: 1;
+fill: rgb(253, 152, 112);
+}
+
+*.mouseover &gt; g &gt; *[k9-highlight~="stroke"], *.mouseover &gt; g &gt; *[k9-highlight~="outline"], *.mouseover &gt; g &gt; *[k9-highlight~="bar"], *.mouseover &gt; *[k9-highlight~="stroke"], *.mouseover &gt; *[k9-highlight~="outline"], *.mouseover &gt; *[k9-highlight~="bar"] {
+stroke: rgb(187, 221, 238);
+stroke-opacity: 1;
+}
+
+*.mouseover &gt; g &gt; *[k9-highlight~="pulse"], *.mouseover &gt; g &gt; *[k9-highlight~="fill"], *.mouseover &gt; g &gt; *[k9-highlight~="grab"], *.mouseover &gt; *[k9-highlight~="pulse"], *.mouseover &gt; *[k9-highlight~="fill"], *.mouseover &gt; *[k9-highlight~="grab"], *.mouseover.grid-temporary {
+fill: rgb(204, 238, 255);
+fill-opacity: 0.8;
+}
+
+*.selected &gt; g &gt; *[k9-highlight~="outline"], *.selected &gt; g &gt; *[k9-highlight~="stroke"], *.selected &gt; g &gt; *[k9-highlight~="bar"], *.selected &gt; *[k9-highlight~="outline"], *.selected &gt; *[k9-highlight~="stroke"], *.selected &gt; *[k9-highlight~="bar"] {
+stroke: rgb(255, 204, 0);
+stroke-opacity: 0.8;
+}
+
+*[k9-elem="_temporary"].selected, *.selected &gt; g &gt; *[k9-highlight~="pulse"], *.selected &gt; g &gt; *[k9-highlight~="fill"], *.selected &gt; g &gt; *[k9-highlight~="grab"], *.selected &gt; *[k9-highlight~="pulse"], *.selected &gt; *[k9-highlight~="fill"], *.selected &gt; *[k9-highlight~="grab"] {
+fill: rgb(255, 204, 0);
+fill-opacity: 0.8;
+}
+
+*.dropping &gt; g &gt; *[k9-highlight~="outline"], *.dropping &gt; g &gt; *[k9-highlight~="stroke"], *.dropping &gt; g &gt; *[k9-highlight~="bar"], *.dropping &gt; *[k9-highlight~="outline"], *.dropping &gt; *[k9-highlight~="stroke"], *.dropping &gt; *[k9-highlight~="bar"] {
+stroke: rgb(220, 221, 221);
+stroke-opacity: 0.8;
+}
+
+*.dropping &gt; g &gt; *[k9-highlight~="pulse"], *.dropping &gt; g &gt; *[k9-highlight~="fill"], *.dropping &gt; g &gt; *[k9-highlight~="grab"], *.dropping &gt; *[k9-highlight~="pulse"], *.dropping &gt; *[k9-highlight~="fill"], *.dropping &gt; *[k9-highlight~="grab"] {
+fill: rgb(220, 221, 221);
+fill-opacity: 0.8;
+}
+
+*[k9-elem="diagram"].selected &gt; *[k9-highlight] {
+fill-opacity: 0;
+fill: white;
+}
+
+*.inactive &gt; *[k9-highlight~="outline"], *.inactive &gt; *[k9-highlight~="stroke"], *.inactive &gt; *[k9-highlight~="bar"] {
+stroke-opacity: 0.2;
+}
+
+*.inactive &gt; *[k9-highlight~="pulse"], *.inactive &gt; *[k9-highlight~="fill"], *.inactive &gt; *[k9-highlight~="grab"], *.inactive &gt; g &gt; text {
+fill-opacity: 0.2;
+}
+
+*.indicators-on *.grid-temporary {
+fill-opacity: 0.3;
+stroke: none;
+}
+
+*[k9-elem="action"] {
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-margin-top: 10pt;
+--kite9-margin-right: 10pt;
+--kite9-margin-bottom: 10pt;
+--kite9-margin-left: 10pt;
+--kite9-padding-top: 12pt;
+--kite9-padding-right: 22pt;
+--kite9-padding-bottom: 12pt;
+--kite9-padding-left: 12pt;
+stroke-width: 1pt;
+}
+
+*[k9-elem="action"].left {
+--kite9-padding-left: 22pt;
+--kite9-padding-right: 12pt;
+}
+
+*[k9-elem="glyph"] &gt; g &gt; *[k9-elem="caption"], *[k9-elem="action"] &gt; g &gt; *[k9-elem="caption"] {
+--kite9-margin-top: 0pt;
+--kite9-margin-right: 0pt;
+--kite9-margin-bottom: 0pt;
+--kite9-margin-left: 0pt;
+--kite9-padding-top: 0pt;
+--kite9-padding-right: 0pt;
+--kite9-padding-bottom: 0pt;
+--kite9-padding-left: 0pt;
+fill: black;
+}
+
+*[k9-elem="glyph"] {
+--kite9-layout: DOWN;
+--kite9-padding-top: 6pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 6pt;
+--kite9-padding-left: 10pt;
+--kite9-margin-top: 10pt;
+--kite9-margin-right: 10pt;
+--kite9-margin-left: 10pt;
+--kite9-margin-bottom: 10pt;
+}
+
+*[k9-elem="artifact"], *[k9-elem="document"], *[k9-elem="users"], *[k9-elem="computer"], *[k9-elem="interface"], *[k9-elem="component"], *[k9-elem="channel-artifact"], *[k9-elem="internal-model-artifact"], *[k9-elem="protocol-artifact"], *[k9-elem="agent-artifact"], *[k9-elem="image-artifact"], *[k9-elem="generic-artifact"] {
+--kite9-margin-top: 10pt;
+--kite9-margin-right: 10pt;
+--kite9-margin-bottom: 10pt;
+--kite9-margin-left: 10pt;
+--kite9-link-inset: 10pt;
+--kite9-link-gutter: 10pt;
+--kite9-layout: VERTICAL;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-min-width: 110pt;
+--kite9-min-height: 140pt;
+}
+
+*[k9-elem="arrow"], *[k9-elem="block"] {
+--kite9-padding-top: 8pt;
+--kite9-padding-right: 8pt;
+--kite9-padding-bottom: 8pt;
+--kite9-padding-left: 8pt;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-connections: SEPARATE;
+font-size: 14pt;
+font-weight: 500;
+--kite9-link-inset: 3pt;
+}
+
+*[k9-elem="block"] &gt; g &gt; *[k9-elem="caption"] {
+--kite9-margin-top: 5pt;
+--kite9-margin-right: 5pt;
+--kite9-margin-bottom: 5pt;
+--kite9-margin-left: 5pt;
+--kite9-padding-top: 5pt;
+--kite9-padding-right: 5pt;
+--kite9-padding-bottom: 5pt;
+--kite9-padding-left: 5pt;
+}
+
+*[k9-elem="arrow"] &gt; g &gt; *[k9-elem="caption"] {
+--kite9-margin-top: 0pt;
+--kite9-margin-right: 0pt;
+--kite9-margin-bottom: 0pt;
+--kite9-margin-left: 0pt;
+--kite9-padding-top: 0pt;
+--kite9-padding-right: 0pt;
+--kite9-padding-bottom: 0pt;
+--kite9-padding-left: 0pt;
+}
+
+*[k9-elem="description"] {
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-usage: REGULAR;
+--kite9-text-bounds-width: 250pt;
+--kite9-direction: DOWN;
+}
+
+*[k9-elem="planner"] {
+--kite9-layout: GRID;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+}
+
+*[k9-elem="planner-cell"], *[k9-elem="planner-header"] {
+--kite9-usage: REGULAR;
+--kite9-vertical-align: CENTER;
+--kite9-horizontal-align: CENTER;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+text-align: center;
+--kite9-min-width: 230pt;
+--kite9-min-height: 30pt;
+--kite9-traversal-bottom: ALWAYS;
+--kite9-traversal-left: ALWAYS;
+--kite9-traversal-right: ALWAYS;
+--kite9-traversal-top: ALWAYS;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-layout: RIGHT;
+}
+
+*[k9-elem="planner-header"] {
+--kite9-min-width: 60pt;
+--kite9-min-height: 30pt;
+}
+
+*[k9-elem="mitigated"] {
+--kite9-min-width: 120pt;
+--kite9-min-height: 160pt;
+}
+
+*[k9-elem="hidden"] {
+--kite9-min-width: 120pt;
+--kite9-min-height: 160pt;
+}
+
+*[k9-elem="risk"] {
+--kite9-layout: DOWN;
+--kite9-margin-top: 10pt;
+--kite9-margin-right: 10pt;
+--kite9-margin-bottom: 10pt;
+--kite9-margin-left: 10pt;
+--kite9-link-inset: 10pt;
+--kite9-link-gutter: 10pt;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-min-width: 120pt;
+--kite9-min-height: 160pt;
+}
+
+*[k9-elem="title"][k9-format="text-fixed"] {
+--kite9-horizontal-align: CENTER;
+--kite9-vertical-align: BOTTOM;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-type: TEXT;
+--kite9-text-bounds-width: 110pt;
+--kite9-padding-top: 0pt;
+--kite9-padding-right: 0pt;
+--kite9-padding-bottom: 0pt;
+--kite9-padding-left: 0pt;
+}
+
+*[k9-elem="code"][k9-format="text-fixed"] {
+--kite9-horizontal-align: CENTER;
+--kite9-vertical-align: TOP;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-padding-top: 0pt;
+--kite9-padding-right: 0pt;
+--kite9-padding-bottom: 0pt;
+--kite9-padding-left: 0pt;
+--kite9-margin-top: 0pt;
+--kite9-margin-right: 0pt;
+--kite9-margin-bottom: 10pt;
+--kite9-margin-left: 0pt;
+}
+
+*[k9-elem="risk"] &gt; g &gt; *[k9-format="image-fixed"] {
+--kite9-vertical-align: TOP;
+--kite9-horizontal-align: CENTER;
+}
+
+*[k9-elem="celltext"] {
+--kite9-usage: REGULAR;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-vertical-align: CENTER;
+--kite9-horizontal-align: LEFT;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+font-size: 40pt;
+fill: black;
+font-family: "gothic";
+stroke: none;
+--kite9-text-bounds-width: 350pt;
+}
+
+*[k9-elem="celltext"].bold {
+font-family: "gothic-bold";
+}
+
+*[k9-elem="celltext"].bottom {
+--kite9-vertical-align: BOTTOM;
+}
+
+*[k9-elem="celltext"] *[k9-elem="text-label"] {
+--kite9-horizontal-align: LEFT;
+}
+
+*[k9-elem="bulleted"] {
+--kite9-usage: REGULAR;
+--kite9-type: CONTAINER;
+--kite9-vertical-align: TOP;
+--kite9-horizontal-align: LEFT;
+font-size: 40pt;
+fill: black;
+font-family: "gothic";
+stroke: none;
+}
+
+*[k9-elem="ctext"] {
+--kite9-usage: REGULAR;
+--kite9-vertical-align: TOP;
+--kite9-horizontal-align: LEFT;
+font-size: 40pt;
+fill: black;
+font-family: "gothic";
+stroke: none;
+--kite9-type: TEXT;
+}
+
+*[k9-elem="btext"] {
+--kite9-usage: REGULAR;
+--kite9-vertical-align: TOP;
+--kite9-horizontal-align: LEFT;
+font-size: 40pt;
+fill: black;
+font-family: "gothic-bold";
+stroke: none;
+--kite9-type: TEXT;
+}
+
+*[k9-elem="tick"] {
+--kite9-usage: REGULAR;
+--kite9-type: CONTAINER;
+}
+
+*[k9-elem="table"] *[k9-elem="risk"], *[k9-elem="table"] *[k9-elem="tick"] {
+--kite9-horizontal-align: CENTER;
+--kite9-margin-top: 20pt;
+--kite9-margin-right: 20pt;
+--kite9-margin-bottom: 20pt;
+--kite9-margin-left: 20pt;
+}
+
+*[k9-elem="table"] *[k9-elem="celltext"].bottom {
+--kite9-vertical-align: BOTTOM;
+}
+
+*[k9-elem="table"] *[k9-elem="celltext"].top {
+--kite9-vertical-align: TOP;
+}
+
+*[k9-elem="description"], *[k9-elem="long-description"], *.description {
+font-size: 14pt;
+font-family: "gothic-italic";
+font-style: italic;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-text-bounds-width: 250pt;
+}
+
+*[k9-elem="leg"] {
+--kite9-type: CONTAINER;
+--kite9-layout: DOWN;
+--kite9-min-height: 110pt;
+--kite9-min-width: 70pt;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-margin-top: 0pt;
+--kite9-margin-right: 0pt;
+--kite9-margin-bottom: 0pt;
+--kite9-margin-left: 0pt;
+--kite9-vertical-align: BOTTOM;
+}
+
+*[k9-elem="plinth"] {
+--kite9-type: CONTAINER;
+--kite9-horizontal-sizing: MAXIMIZE;
+--kite9-vertical-sizing: MAXIMIZE;
+}
+
+*[k9-elem="big-image"] {
+--kite9-margin-top: 10pt;
+--kite9-margin-right: 10pt;
+--kite9-margin-bottom: 10pt;
+--kite9-margin-left: 10pt;
+--kite9-link-inset: 10pt;
+--kite9-link-gutter: 10pt;
+--kite9-layout: VERTICAL;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-min-width: 110pt;
+--kite9-min-height: 140pt;
+}
+
+*[k9-elem="diagram"].principle {
+fill-opacity: 1;
+fill: rgb(245, 245, 245);
+--kite9-layout: VERTICAL;
+--kite9-padding-left: 0pt;
+--kite9-padding-right: 0pt;
+--kite9-padding-top: 0pt;
+--kite9-padding-bottom: 0pt;
+}
+
+*[k9-elem="group"].principle-outline {
+fill: white;
+fill-opacity: 1;
+--kite9-padding-top: 50pt;
+--kite9-padding-right: 50pt;
+--kite9-padding-bottom: 50pt;
+--kite9-padding-left: 50pt;
+}
+
+*[k9-elem="group"].principle-top {
+--kite9-layout: GRID;
+--kite9-grid-columns: 2;
+--kite9-grid-rows: 2;
+--kite9-padding-top: 0pt;
+--kite9-padding-right: 0pt;
+--kite9-padding-bottom: 0pt;
+--kite9-padding-left: 0pt;
+--kite9-margin-top: 3pt;
+--kite9-margin-right: 3pt;
+--kite9-margin-bottom: 3pt;
+--kite9-margin-left: 3pt;
+--kite9-horizontal-sizing: MAXIMIZE;
+--kite9-vertical-sizing: MAXIMIZE;
+--kite9-min-width: 1000pt;
+--kite9-min-height: 535pt;
+}
+
+*[k9-elem="group"].principle-left-top {
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-layout: DOWN;
+--kite9-padding-top: 10pt;
+--kite9-margin-top: 0pt;
+}
+
+*[k9-elem="group"].principle-right-top {
+--kite9-horizontal-sizing: MAXIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-layout: DOWN;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 30pt;
+--kite9-margin-top: 0pt;
+--kite9-margin-right: 0pt;
+--kite9-margin-bottom: 0pt;
+--kite9-margin-left: 0pt;
+}
+
+*[k9-elem="group"].principle-left-bottom {
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MAXIMIZE;
+--kite9-layout: DOWN;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-margin-top: 0pt;
+--kite9-margin-right: 0pt;
+--kite9-margin-bottom: 0pt;
+--kite9-margin-left: 0pt;
+}
+
+*[k9-elem="group"].principle-right-bottom {
+--kite9-horizontal-sizing: MAXIMIZE;
+--kite9-vertical-sizing: MAXIMIZE;
+--kite9-layout: DOWN;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 30pt;
+--kite9-margin-top: 0pt;
+--kite9-margin-right: 0pt;
+--kite9-margin-bottom: 0pt;
+--kite9-margin-left: 0pt;
+}
+
+*[k9-elem="risk-first-logo"].principle {
+--kite9-vertical-align: BOTTOM;
+--kite9-padding-top: 0;
+--kite9-padding-right: 0;
+--kite9-padding-bottom: 0;
+--kite9-padding-left: 0;
+--kite9-margin-top: 0;
+--kite9-margin-right: 0;
+--kite9-margin-bottom: 0;
+--kite9-margin-left: 0;
+}
+
+*[k9-elem="page-title"].principle-site {
+font-family: "Metropolis";
+font-size: 14pt;
+fill: rgb(97, 162, 161);
+letter-spacing: 1.4;
+font-weight: 600;
+text-align: center;
+--kite9-margin-top: 0;
+}
+
+*[k9-elem="page-title"].number {
+font-family: "Metropolis";
+font-size: 60pt;
+fill: rgb(245, 62, 121);
+indent: 0;
+font-weight: 600;
+--kite9-padding-bottom: 0;
+--kite9-margin-bottom: 0;
+--kite9-vertical-align: TOP;
+}
+
+*[k9-elem="page-title"].principle {
+font-family: "Metropolis";
+font-size: 60pt;
+font-weight: 600;
+fill: rgb(0, 0, 0);
+text-align: left;
+--kite9-padding-bottom: 0;
+--kite9-margin-bottom: 0;
+--kite9-margin-right: 30pt;
+--kite9-vertical-align: TOP;
+}
+
+*[k9-elem="page-summary"].principle {
+font-family: "Metropolis";
+font-size: 25pt;
+--kite9-text-bounds-width: 600pt;
+--kite9-padding-top: 0pt;
+--kite9-padding-right: 0pt;
+--kite9-padding-bottom: 0pt;
+--kite9-padding-left: 0pt;
+fill: rgb(97, 162, 161);
+indent: 0;
+text-align: center;
+font-weight: 300;
+font-style: italic;
+}
+
+*[k9-texture="none"] {
+fill: white;
+fill-opacity: 0.001;
+stroke-opacity: 0.001;
+}
+
+*[k9-texture="background"] {
+fill: white;
+fill-opacity: 1;
+stroke: black;
+stroke-opacity: 1;
+}
+
+*[k9-texture~="default"] {
+fill: white;
+fill-opacity: 1;
+}
+
+*[k9-texture~="outline"] {
+fill: white;
+fill-opacity: 0.001;
+stroke: black;
+stroke-opacity: 1;
+}
+
+*[k9-texture~="foreground"] {
+fill: black;
+fill-opacity: 1;
+stroke: none;
+stroke-width: 0;
+}
+
+*[k9-texture="background"][k9-elem="container"] {
+stroke: black;
+stroke-width: 1pt;
+}
+
+*[k9-texture="background"][k9-elem="container"].solid &gt; g.k9-shape &gt; rect {
+stroke-dasharray: none;
+}
+
+*[k9-texture="background"][k9-elem="container"].dotted &gt; g.k9-shape &gt; rect {
+stroke-dasharray: 4 4;
+}
+
+*[k9-elem="from"], *[k9-elem="to"] {
+fill: rgb(255, 255, 255);
+fill-opacity: 0.01;
+}
+
+*[k9-elem="link"] {
+stroke: black;
+stroke-width: 2pt;
+fill: none;
+}
+
+*[k9-elem="link"].invisible {
+stroke: none;
+}
+
+*[k9-elem="link"].dotted {
+stroke-dasharray: 8;
+}
+
+*[k9-elem="link"].thick {
+stroke-width: 4pt;
+}
+
+*[k9-elem="link"].grey {
+stroke: rgb(204, 204, 204);
+}
+
+*[k9-elem="hub"][k9-texture="background"] {
+fill: rgb(255, 255, 255);
+stroke: none;
+}
+
+*[k9-elem="cell"] {
+text-align: center;
+}
+
+*[k9-elem="_temporary"], *[k9-elem="cell"] &gt; *[k9-texture="background"] {
+fill: rgb(255, 255, 255);
+fill-opacity: 0.01;
+}
+
+*[k9-elem="cell"].bordered {
+stroke: black;
+stroke-width: 2pt;
+}
+
+*[k9-elem="cell"].shaded {
+fill: rgb(222, 222, 222);
+fill-opacity: 1;
+}
+
+*[k9-elem="table"].invisible *[k9-elem="cell"], *[k9-elem="table"].invisible *[k9-elem="_temporary"], *[k9-elem="cell"].invisible, *[k9-elem="table"].invisible {
+stroke: none;
+}
+
+*[k9-elem="cell"].left {
+--kite9-horizontal-align: LEFT;
+text-align: left;
+}
+
+*[k9-elem="cell"].right {
+--kite9-horizontal-align: RIGHT;
+text-align: right;
+}
+
+*[k9-elem="cell"].bottom {
+--kite9-vertical-align: BOTTOM;
+}
+
+*[k9-elem="cell"].top {
+--kite9-vertical-align: TOP;
+}
+
+*[k9-elem="label"] *[k9-texture="background"] {
+stroke: none;
+}
+
+*[k9-elem="label-inner"], *[k9-elem="label"] {
+--kite9-margin-top: 0;
+--kite9-margin-right: 0;
+--kite9-margin-bottom: 0;
+--kite9-margin-left: 0;
+--kite9-padding-top: 0;
+--kite9-padding-right: 0;
+--kite9-padding-bottom: 0;
+--kite9-padding-left: 0;
+}
+
+*[k9-elem="from"], *[k9-elem="to"] {
+fill: rgb(255, 255, 255);
+fill-opacity: 0.01;
+}
+
+*[k9-elem="link"] {
+stroke: black;
+stroke-width: 2pt;
+fill: none;
+}
+
+*[k9-elem="link"].invisible {
+stroke: none;
+}
+
+*[k9-elem="link"].dotted {
+stroke-dasharray: 8;
+}
+
+*[k9-elem="link"].thick {
+stroke-width: 4pt;
+}
+
+*[k9-elem="link"].grey {
+stroke: rgb(204, 204, 204);
+}
+
+*[k9-elem="hub"][k9-texture="background"] {
+fill: rgb(255, 255, 255);
+stroke: none;
+}
+
+*#_moveLayer *[highlight~="fill"], *#_moveLayer *[highlight~="pulse"] {
+fill: rgb(183, 192, 254);
+fill-opacity: 0.7;
+}
+
+*#_moveLayer *[highlight~="stroke"], *#_moveLayer *[highlight~="outline"] {
+stroke: rgb(183, 192, 254);
+stroke-opacity: 0.7;
+}
+
+*.indicators-on *[k9-info~="contradicting:"] &gt; g &gt; *[k9-highlight~="stroke"], *.indicators-on *[k9-info~="contradicting:"] &gt; g &gt; *[k9-highlight~="outline"], *.indicators-on *[k9-info~="contradicting:"] &gt; g &gt; *[k9-highlight~="bar"], *.indicators-on *[k9-info~="contradicting:"] &gt; *[k9-highlight~="stroke"], *.indicators-on *[k9-info~="contradicting:"] &gt; *[k9-highlight~="outline"], *.indicators-on *[k9-info~="contradicting:"] &gt; *[k9-highlight~="bar"] {
+stroke: rgb(255, 89, 86);
+stroke-opacity: 0.5;
+}
+
+*.indicators-on *[k9-info~="contradicting:"] &gt; g &gt; *[k9-highlight~="stroke"], *.indicators-on *[k9-info~="contradicting:"] &gt; g &gt; *[k9-highlight~="outline"], *.indicators-on *[k9-info~="contradicting:"] &gt; g &gt; *[k9-highlight~="bar"], *.indicators-on *[k9-info~="contradicting:"] &gt; *[k9-highlight~="stroke"], *.indicators-on *[k9-info~="contradicting:"] &gt; *[k9-highlight~="outline"], *.indicators-on *[k9-info~="contradicting:"] &gt; *[k9-highlight~="bar"] {
+fill: rgb(255, 89, 86);
+fill-opacity: 0.5;
+}
+
+@media editor {
+*[k9-elem="diagram"] {
+--kite9-padding-top: 200pt;
+--kite9-padding-right: 200pt;
+--kite9-padding-bottom: 200pt;
+--kite9-padding-left: 200pt;
+--kite9-min-width: 50pt;
+--kite9-min-height: 50pt;
+}
+}
+
+*[media="editor"] *[k9-elem="diagram"] {
+--kite9-padding-top: 200pt;
+--kite9-padding-right: 200pt;
+--kite9-padding-bottom: 200pt;
+--kite9-padding-left: 200pt;
+--kite9-min-width: 50pt;
+--kite9-min-height: 50pt;
+}
+
+*[k9-elem].attention {
+stroke: rgb(255, 89, 86);
+stroke-opacity: 1;
+}
+
+svg {
+cursor: pointer;
+}
+
+*#_update {
+overflow: hidden;
+}
+
+*[k9-elem="box"] &gt; *[k9-texture="background"] {
+fill: rgb(204, 204, 170);
+fill-opacity: 1;
+stroke: rgb(170, 170, 136);
+stroke-dasharray: none;
+}
+
+*[k9-texture="foreground"], *[k9-texture="background"] &gt; g &gt; text {
+fill: rgb(36, 51, 20);
+font-family: "metropolis";
+font-size: 50pt;
+}
+
+*[k9-elem="label"] {
+fill: black;
+font-family: "metropolis";
+font-size: 35pt;
+}
+
+*[k9-elem="box"].shaded {
+fill: rgb(170, 85, 0);
+}
+
+*[k9-elem="textarea"].warning {
+fill: rgb(255, 136, 0);
+}
+
+*[k9-elem="votes"] {
+--kite9-type: SVG;
+--kite9-usage: DECAL;
+}
+
+*[k9-elem="votes"] &gt; g &gt; rect.back {
+fill: rgb(122, 164, 127);
+fill-opacity: 0.9;
+stroke: none;
+}
+
+*[k9-elem="votes"] &gt; g &gt; text.count {
+font-size: 16pt;
+fill: white;
+fill-opacity: 1;
+text-anchor: middle;
+dominant-baseline: middle;
+}
+
+*[k9-elem="votes"] &gt; g &gt; text.font-awesome {
+font-size: 16pt;
+font-family: "Font Awesome 5 Free";
+font-weight: 400;
+fill: white;
+fill-opacity: 1;
+text-anchor: middle;
+dominant-baseline: middle;
+}
+
+*[k9-elem="votes"][count="0"] &gt; g &gt; rect.back, *[k9-elem="votes"][count="0"] &gt; g &gt; text.count, *[k9-elem="votes"][count="0"] &gt; g &gt; text.font-awesome {
+fill-opacity: 0;
+stroke-opacity: 0;
+}
+
+*[k9-elem="diagram"][k9-texture="none"] {
+fill: white;
+fill-opacity: 1;
+}
+
+*[k9-texture] {
+font-family: "metropolis";
+font-size: 12pt;
+}
+
+*[k9-texture="artifact"] {
+fill: white;
+fill-opacity: 0.001;
+stroke: none;
+}
+
+*[k9-texture="artifact"] text {
+font-size: 12pt;
+font-weight: 200;
+fill: black;
+text-align: center;
+--kite9-text-bounds-width: 100pt;
+}
+
+*[k9-elem="description"] text {
+font-style: italic;
+font-size: 12pt;
+font-weight: 200;
+--kite9-direction: RIGHT;
+}
+
+*[k9-elem="caption"] {
+text-align: center;
+}
+
+*[k9-elem="label"] {
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+fill: white;
+}
+
+*[k9-elem="arrow"] {
+fill: black;
+fill-opacity: 1;
+}
+
+*[k9-elem="arrow"] &gt; g &gt; *[k9-elem="caption"] &gt; g &gt; text {
+fill: white;
+fill-opacity: 1;
+}
+
+*[k9-elem="from"], *[k9-elem="to"] {
+--kite9-marker-reserve: 8pt;
+}
+
+*[k9-elem="link"] {
+--kite9-link-minimum-length: 30pt;
+}
+
+*[k9-elem="glyph"][k9-texture="background"] &gt; g &gt; rect, *[k9-elem="action"] *[k9-texture="background"] {
+fill: url(#risk-background);
+stroke: black;
+stroke-width: 1pt;
+}
+
+*[k9-elem="action"] &gt; g &gt; *[k9-elem="caption"] &gt; g &gt; text {
+fill-opacity: 1;
+font-size: 12pt;
+font-weight: 200;
+fill: black;
+text-align: center;
+}
+
+*[k9-elem="hidden"], *[k9-elem="mitigated"] {
+fill: white;
+}
+
+*[k9-elem="title"] {
+font-size: 12pt;
+font-weight: 200;
+fill: black;
+text-align: center;
+}
+
+*[k9-elem="code"] {
+font-size: 22pt;
+font-weight: 300;
+fill: black;
+text-align: center;
+}
+
+*[k9-elem="risk"][k9-texture="background"], *[k9-elem="block"][k9-texture="background"] {
+fill: url(#risk-background);
+stroke: black;
+stroke-width: 1pt;
+}
+
+*[k9-elem="container"][k9-texture="background"] {
+fill-opacity: 0.001;
+}
+
+*[k9-elem="planner-cell"], *[k9-elem="planner-header"] {
+stroke: rgb(174, 174, 174);
+stroke-width: 1pt;
+}
+
+*[k9-elem="diagram"].principle {
+fill-opacity: 1;
+fill: rgb(245, 245, 245);
+}
+
+*[k9-elem="container"][k9-texture="background"].principle-top {
+fill: white;
+fill-opacity: 1;
+}
+
+</style>
+      <defs id="links-markers">
+         <marker id="-start-marker" preserveAspectRatio="xMidYMid meet"/>
+         <marker id="-end-marker" preserveAspectRatio="xMidYMid meet"/>
+         <marker refX="1"
+                 refY="3"
+                 orient="auto"
+                 id="strike-start-marker"
+                 markerHeight="6"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="8">
+            <path class="strike-marker" d="         M7,0 L5,6 h-1 L6,0z"/>
+         </marker>
+         <marker refX="7"
+                 refY="3"
+                 orient="auto"
+                 id="strike-end-marker"
+                 markerHeight="6"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="8">
+            <path class="strike-marker" d="         M3,0 L1,6 h-1 L2,0z"/>
+         </marker>
+         <marker refY="3"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerHeight="6"
+                 id="circle-start-marker"
+                 markerWidth="6"
+                 refX="3">
+            <circle r="2" class="circle-marker" cx="3" cy="3"/>
+         </marker>
+         <marker refY="3"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerHeight="6"
+                 id="circle-end-marker"
+                 markerWidth="6"
+                 refX="3">
+            <circle r="2" class="circle-marker" cx="3" cy="3"/>
+         </marker>
+         <marker refX="2"
+                 refY="3"
+                 orient="auto"
+                 id="diamond-start-marker"
+                 markerHeight="6"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="8">
+            <polygon class="diamond-marker" points="1,3 4,1 7,3 4,5"/>
+         </marker>
+         <marker refX="6"
+                 refY="3"
+                 orient="auto"
+                 id="diamond-end-marker"
+                 markerHeight="6"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="8">
+            <polygon class="diamond-marker" points="1,3 4,1 7,3 4,5"/>
+         </marker>
+         <marker refX="5"
+                 refY="3"
+                 orient="auto"
+                 id="open-diamond-start-marker"
+                 markerHeight="6"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="8">
+            <path class="open-diamond-marker"
+                  d="         M0,3 L3,1 L6,3 L5,3 L3,1.66 L1,3             L3,4.33 L5,3 L6,3 L3,5 L0,3"/>
+         </marker>
+         <marker refX="1"
+                 refY="3"
+                 orient="auto"
+                 id="open-diamond-end-marker"
+                 markerHeight="6"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="8">
+            <path class="open-diamond-marker"
+                  d="         M6,3 L3,1 L0,3 L1,3 L3,1.66 L5,3             L3,4.33 L1,3 L0,3 L3,5 L6,3"/>
+         </marker>
+         <marker refX="4"
+                 refY="4"
+                 orient="auto"
+                 id="barbed-arrow-end-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <path class="barbed-arrow-marker" d="M2,2 L6,4 L2,6 L4,4 L2,2"/>
+         </marker>
+         <marker refX="4"
+                 refY="4"
+                 orient="auto"
+                 id="barbed-arrow-start-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <path class="barbed-arrow-marker" d="M6,2 L2,4 L6,6 L4,4 L6,2"/>
+         </marker>
+         <marker refX="1"
+                 refY="4"
+                 orient="auto"
+                 id="open-arrow-end-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <path class="open-arrow-marker"
+                  d="         M6,4 L1,2 L1,3 L4,4 L1,5 L1,6 L6,4         M2,3 h-1 v2 h1z"/>
+         </marker>
+         <marker refX="6"
+                 refY="4"
+                 orient="auto"
+                 id="open-arrow-start-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <path class="open-arrow-marker"
+                  d="         M1,4 L6,2 L6,3 L3,4 L6,5 L6,6 L1,4         M5,3 h1 v2 h-1z"/>
+         </marker>
+         <marker refX="4"
+                 refY="4"
+                 orient="auto"
+                 id="arrow-start-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <polygon class="arrow-marker" points="2,4 6,2 6,6"/>
+         </marker>
+         <marker refX="4"
+                 refY="4"
+                 orient="auto"
+                 id="arrow-end-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <polygon class="arrow-marker" points="6,4 2,2 2,6"/>
+         </marker>
+         <marker refX="5"
+                 refY="4"
+                 orient="auto"
+                 id="crow-end-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <path class="crow-marker"
+                  d="          M1,4 L4,1 l0.66 0.66 L2.3,4z          M1,4 L4,7 l0.66 -0.66 L2.3,4z"/>
+         </marker>
+         <marker refX="1"
+                 refY="4"
+                 orient="auto"
+                 id="crow-start-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <path class="crow-marker"
+                  d="          M5,4 L2,1 l-0.66 0.66 L3.66,4z          M5,4 L2,7 l-0.66 -0.66 L3.66,4z"/>
+         </marker>
+         <marker refX="2"
+                 refY="2"
+                 orient="auto"
+                 id="square-end-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <rect x="0" width="4" height="4" y="0" class="square-marker"/>
+         </marker>
+         <marker refX="2"
+                 refY="2"
+                 orient="auto"
+                 id="square-start-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <rect x="0" width="4" height="4" y="0" class="square-marker"/>
+         </marker>
+      </defs>
+      <defs id="highlight-indicators">
+         <filter xlink:actuate="onLoad"
+                 xlink:type="simple"
+                 id="highlight-visible"
+                 xlink:show="other">
+            <feColorMatrix values="0 0 0 0 .214                 0 0 0 0 .25                 0 0 0 0 1                 0 0 0 1 0 "
+                           type="matrix"/>
+         </filter>
+         <filter xlink:actuate="onLoad"
+                 xlink:type="simple"
+                 id="highlight-invisible"
+                 xlink:show="other">
+            <feColorMatrix values="0 0 0 0 0                 0 0 0 0 0                 0 0 0 0 0                 0 0 0 0 0 "
+                           type="matrix"/>
+         </filter>
+      </defs>
+      <linearGradient x1="0%"
+                      y1="0%"
+                      x2="0%"
+                      y2="100%"
+                      xlink:type="simple"
+                      xlink:actuate="onLoad"
+                      id="risk-background"
+                      xlink:show="other">
+         <stop stop-color="#FFF" offset="0%"/>
+         <stop stop-color="#DDD" offset="100%"/>
+      </linearGradient>
+      <filter xlink:actuate="onLoad"
+              xlink:type="simple"
+              height="130%"
+              id="dropshadow"
+              xlink:show="other">
+         <feGaussianBlur stdDeviation="4" in="SourceAlpha"/>
+         <feOffset dx="6" dy="6"/>
+         <feColorMatrix values="             0 0 0 0 0                 0 0 0 0 0                 0 0 0 0 0                 0 0 0 .4 0"
+                        type="matrix"/>
+         <feMerge>
+            <feMergeNode/>
+            <feMergeNode in="SourceGraphic"/>
+         </feMerge>
+      </filter>
+      <script xlink:actuate="onLoad"
+              xlink:type="simple"
+              id="adl:markup"
+              xlink:show="other"
+              type="text/xml;purpose=adl;base64">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPGRpYWdyYW0geG1sbnM9Imh0dHA6Ly93d3cua2l0ZTkub3JnL3NjaGVtYS9hZGwiCiAgICAgICAgIHhtbG5zOnhzbHQ9Imh0dHA6Ly93d3cua2l0ZTkub3JnL3NjaGVtYS94c2x0IgogICAgICAgICBpZD0iZGlhZ3JhbS0xMjkiCiAgICAgICAgIG5hbWU9IkhlYWx0aCIKICAgICAgICAgeHNsdDp0ZW1wbGF0ZT0iL3B1YmxpYy90ZW1wbGF0ZXMvcmlzay1maXJzdC9yaXNrLWZpcnN0LXRlbXBsYXRlLnhzbCI+CiAgIDxjb250YWluZXIgaWQ9IjQiIHN0eWxlPSItLWtpdGU5LXNpemluZzogbWluaW1pemU7ICI+CiAgICAgIDxjb250YWluZXIgaWQ9IjQuMSIgc3R5bGU9Ii0ta2l0ZTktc2l6aW5nOiBtaW5pbWl6ZTsgIj4KICAgICAgICAgPGNvbnRhaW5lciBpZD0iNC4yIiBzdHlsZT0iLS1raXRlOS1zaXppbmc6IG1pbmltaXplOyAiPgogICAgICAgICAgICA8Z2VuZXJpYy1hcnRpZmFjdCBocmVmPSIvcHVibGljL3RlbXBsYXRlcy9yaXNrLWZpcnN0L3JlZGVzaWduL3Jpc2tzL2FnZW5jeV9yaXNrX3YyLnN2ZyIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaWQ9IjIiPlRlYW0gTWVtYmVyPC9nZW5lcmljLWFydGlmYWN0PgogICAgICAgICAgICA8Z2VuZXJpYy1hcnRpZmFjdCBocmVmPSIvcHVibGljL3RlbXBsYXRlcy9yaXNrLWZpcnN0L3JlZGVzaWduL3Jpc2tzL2FnZW5jeV9yaXNrX3YyLnN2ZyIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaWQ9IjItZ3oiPlRlYW0gTWVtYmVyPC9nZW5lcmljLWFydGlmYWN0PgogICAgICAgICAgICA8Z2VuZXJpYy1hcnRpZmFjdCBocmVmPSIvcHVibGljL3RlbXBsYXRlcy9yaXNrLWZpcnN0L3JlZGVzaWduL3Jpc2tzL2FnZW5jeV9yaXNrX3YyLnN2ZyIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaWQ9IjItenkiPlRlYW0gTWVtYmVyPC9nZW5lcmljLWFydGlmYWN0PgogICAgICAgICAgICA8bGFiZWwgaWQ9IjQtMSI+VGVhbSBIZWFsdGg8L2xhYmVsPgogICAgICAgICA8L2NvbnRhaW5lcj4KICAgICAgICAgPGxhYmVsIGlkPSI0LTIiPk9yZ2FuaXNhdGlvbiBIZWFsdGg8L2xhYmVsPgogICAgICA8L2NvbnRhaW5lcj4KICAgICAgPGxhYmVsIGlkPSI0LTAiPlN0YXRlIEhlYWx0aDwvbGFiZWw+CiAgICAgIDxjb250YWluZXIgaWQ9IjgiPgogICAgICAgICA8Z2VuZXJpYy1hcnRpZmFjdCBocmVmPSIvcHVibGljL3RlbXBsYXRlcy9yaXNrLWZpcnN0L3JlZGVzaWduL2FydGlmYWN0cy9jb21wb25lbnRfdjIuc3ZnIgogICAgICAgICAgICAgICAgICAgICAgICAgICBpZD0iMi1oYSI+UHJvZHVjdDwvZ2VuZXJpYy1hcnRpZmFjdD4KICAgICAgICAgPGxhYmVsIGlkPSI4LTAiPlByb2R1Y3QgSGVhbHRoPC9sYWJlbD4KICAgICAgPC9jb250YWluZXI+CiAgIDwvY29udGFpbmVyPgogICA8bGluayBpZD0iNiIgc3R5bGU9Ii0ta2l0ZTktZGlyZWN0aW9uOiByaWdodDsiPgogICAgICA8ZnJvbSBpZD0iNi0wIiByZWZlcmVuY2U9IjQuMSIvPgogICAgICA8dG8gaWQ9IjYtMSIgcmVmZXJlbmNlPSI4IiBzaGFwZT0iYmFyYmVkLWFycm93Ii8+CiAgICAgIDxsYWJlbCBlbmQ9InRvIiBpZD0iNyI+c2VsbHM8L2xhYmVsPgogICA8L2xpbms+CjwvZGlhZ3JhbT4K</script>
+   </defs>
+   <g xmlns:xslt="http://www.kite9.org/schema/xslt"
+      k9-contains="connected label"
+      k9-texture="none"
+      k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: diagram; rect-pos: [0.0, 0.0]; rect-size: [1105.0, 429.0]; position: none; painter: direct-svg; "
+      id="diagram-129"
+      k9-format="container"
+      k9-ui="layout label fill size"
+      name="Health"
+      k9-elem="diagram"
+      xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+      k9-type="diagram">
+      <g class="k9-shape">
+         <rect x="0"
+               y="0"
+               width="1105"
+               pp:y="$y"
+               pp:height="$height"
+               pp:x="$x"
+               rx="0"
+               ry="0"
+               height="429"
+               pp:width="$width"/>
+      </g>
+      <g class="k9-content">
+         <g k9-contains="connected port label terminator"
+            transform="translate(20.0,20.0)"
+            k9-texture="background"
+            style="--kite9-sizing: minimize; "
+            k9-info="margin: [20.0 20.0 20.0 20.0]; padding: [20.0 20.0 20.0 20.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: connected; rect-pos: [20.0, 20.0]; rect-size: [1065.0, 389.0]; position: none; painter: direct-svg; "
+            id="4"
+            k9-format="container"
+            k9-ui="drag delete align connect insert autoconnect layout label fill stroke size align"
+            k9-elem="container"
+            k9-type="connected">
+            <g class="k9-shape" k9-highlight="pulse">
+               <rect x="0"
+                     y="0"
+                     width="1065"
+                     pp:y="$y"
+                     pp:height="$height"
+                     pp:x="$x"
+                     rx="10pt"
+                     ry="10pt"
+                     height="389"
+                     pp:width="$width"/>
+            </g>
+            <g class="k9-content">
+               <g k9-contains="connected port label terminator"
+                  transform="translate(20.0,20.0)"
+                  k9-texture="background"
+                  style="--kite9-sizing: minimize; "
+                  k9-info="margin: [20.0 20.0 20.0 20.0]; padding: [20.0 20.0 20.0 20.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: connected; rect-pos: [40.0, 40.0]; rect-size: [544.0, 349.0]; position: none; painter: direct-svg; "
+                  id="4.1"
+                  k9-format="container"
+                  k9-ui="drag delete align connect insert autoconnect layout label fill stroke size align"
+                  k9-elem="container"
+                  k9-type="connected">
+                  <g class="k9-shape" k9-highlight="pulse">
+                     <rect x="0"
+                           y="0"
+                           width="544"
+                           pp:y="$y"
+                           pp:height="$height"
+                           pp:x="$x"
+                           rx="10pt"
+                           ry="10pt"
+                           height="349"
+                           pp:width="$width"/>
+                  </g>
+                  <g class="k9-content">
+                     <g k9-contains="connected port label terminator"
+                        transform="translate(20.0,20.0)"
+                        k9-texture="background"
+                        style="--kite9-sizing: minimize; "
+                        k9-info="margin: [20.0 20.0 20.0 20.0]; padding: [20.0 20.0 20.0 20.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: connected; rect-pos: [60.0, 60.0]; rect-size: [504.0, 264.0]; position: none; painter: direct-svg; "
+                        id="4.2"
+                        k9-format="container"
+                        k9-ui="drag delete align connect insert autoconnect layout label fill stroke size align"
+                        k9-elem="container"
+                        k9-type="connected">
+                        <g class="k9-shape" k9-highlight="pulse">
+                           <rect x="0"
+                                 y="0"
+                                 width="504"
+                                 pp:y="$y"
+                                 pp:height="$height"
+                                 pp:x="$x"
+                                 rx="10pt"
+                                 ry="10pt"
+                                 height="264"
+                                 pp:width="$width"/>
+                        </g>
+                        <g class="k9-content">
+                           <g href="/public/templates/risk-first/redesign/risks/agency_risk_v2.svg"
+                              transform="translate(20.0,20.0)"
+                              k9-texture="none"
+                              k9-info="margin: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [146.6666717529297 186.6666717529297]; sizing: [minimize minimize]; horiz: center; vert: center; layout: vertical; rectangular: connected; rect-pos: [80.0, 80.0]; rect-size: [146.0, 186.0]; position: none; painter: direct-svg; "
+                              id="2"
+                              k9-format="text-image-portrait"
+                              k9-ui="size drag delete align connect autoconnect edit"
+                              k9-elem="generic-artifact"
+                              k9-type="connected">
+                              <g class="k9-shape" k9-highlight="pulse">
+                                 <rect x="0"
+                                       y="0"
+                                       width="146"
+                                       pp:y="$y"
+                                       pp:height="$height"
+                                       pp:x="$x"
+                                       rx="5pt"
+                                       ry="5pt"
+                                       height="186"
+                                       pp:width="$width"/>
+                              </g>
+                              <g class="k9-content">
+                                 <g k9-ui="image"
+                                    k9-elem="depiction"
+                                    id="2@dep"
+                                    k9-texture="none"
+                                    transform="translate(39.7,37.7)"
+                                    k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [119.0, 117.0]; rect-size: [68.0, 68.0]; position: none; painter: direct-svg; ">
+                                    <g class="k9-content k9-no-shape" k9-highlight="pulse">
+                                       <image x="0"
+                                              y="0"
+                                              width="50pt"
+                                              xlink:href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5l&#xA;cmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIxLjEuMCwgU1ZHIEV4cG9ydCBQbHVn&#xA;LUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNp&#xA;b249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8y&#xA;MDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxp&#xA;bmsiIHg9IjBwdCIgeT0iMHB0IgoJIHZpZXdCb3g9IjAgMCA4NSA4NSIgc3R5bGU9&#xA;ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgODUgODU7IiB4bWw6c3BhY2U9InBy&#xA;ZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDpub25l&#xA;O3N0cm9rZTojMUExNzFCO3N0cm9rZS13aWR0aDozO3N0cm9rZS1saW5lY2FwOnJv&#xA;dW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDt9Cjwvc3R5bGU+CjxwYXRoIGNsYXNz&#xA;PSJzdDAiIGQ9Ik02Ny4zLDM2LjJjMTAtMywxMC41LTYuMiwxMC05LjJjLTAuOC00&#xA;LjMtNi4zLTgtMTUtMTBjMC0wLjMsMC0wLjMsMC0wLjNjLTEuOC03LjUtNS0xMi4x&#xA;LTkuNS0xMy42CgljLTQuMy0xLjUtOC4zLDAuMy0xMC4zLDEuM2MtMi0xLjMtNi0z&#xA;LTEwLjMtMS41Yy00LjUsMS41LTcuOCw2LjMtOS44LDEzLjhjMCwwLjMsMCwwLjMs&#xA;MCwwLjVjLTguOCwyLjMtMTQuNSw2LTE1LDEwLjgKCWMtMC4zLDMuMywyLjksNy44&#xA;LDE4LjYsMTFjMCw5LjQsNy40LDE2LjQsMTYuMSwxNi40YzEwLTAuMywxNi43LTgs&#xA;MTYuNy0xNy44VjI3LjMiLz4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTIyLjUsMTcu&#xA;MmMwLDAsMTYuNC00LjYsMzkuOC0wLjMiLz4KPHBhdGggY2xhc3M9InN0MCIgZD0i&#xA;TTI2LjEsMjYuNGMwLDAtMC4xLDkuMSwwLDEyLjciLz4KPGc+Cgk8cGF0aCBjbGFz&#xA;cz0ic3QwIiBkPSJNMzcsODIuOGMwLDAtNC41LTIwLjgtMTMuMS0zMC42TDguMSw2&#xA;Mi43bDEyLjcsOC44bC00LjcsOGwyLjUsMi44Ii8+Cgk8bGluZSBjbGFzcz0ic3Qw&#xA;IiB4MT0iMS45IiB5MT0iNzQiIHgyPSIxNC42IiB5Mj0iNjcuNSIvPgo8L2c+Cjxn&#xA;PgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTQ4LjIsODIuOGMwLDAsNC41LTIwLjgs&#xA;MTMuMS0zMC42bDE1LjcsMTAuNWwtMTIuNyw4LjhsNC43LDhsLTIuNSwyLjgiLz4K&#xA;CTxsaW5lIGNsYXNzPSJzdDAiIHgxPSI4My4zIiB5MT0iNzQiIHgyPSI3MC42IiB5&#xA;Mj0iNjcuNSIvPgo8L2c+Cjwvc3ZnPgo="
+                                              xlink:type="simple"
+                                              xlink:actuate="onLoad"
+                                              height="50pt"
+                                              preserveAspectRatio="xMidYMid meet"
+                                              xlink:show="embed"/>
+                                       <rect width="50pt" x="0" height="50pt" y="0"/>
+                                    </g>
+                                 </g>
+                                 <g k9-elem="caption"
+                                    k9-texture="foreground"
+                                    transform="translate(18.3,146.0)"
+                                    k9-format="text-fixed"
+                                    k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [99.0, 210.0]; rect-size: [109.0, 19.0]; position: none; painter: direct-svg; ">
+                                    <g class="k9-content k9-no-shape" k9-highlight="pulse">
+                                       <g rendered="true">
+                                          <g fill="rgb(36,51,20)" stroke="rgb(36,51,20)">
+                                             <path d="M4.4167 -9.8073 L0.7188 -9.8073 L0.7188 -10.9896 L9.3594 -10.9896 L9.3594 -9.8073 L5.6615 -9.8073 L5.6615 0 L4.4167 0 L4.4167 -9.8073 ZM15.0227 -0.8802 Q15.7623 -0.8802 16.5019 -1.1667 Q17.2467 -1.4583 17.6321 -1.8698 L18.3665 -1.0885 Q17.8404 -0.5104 16.8873 -0.1562 Q15.9342 0.1927 15.0384 0.1927 Q13.9342 0.1927 12.9759 -0.3646 Q12.0175 -0.9271 11.429 -1.9271 Q10.8456 -2.9271 10.8456 -4.1615 Q10.8456 -5.3594 11.3977 -6.349 Q11.9498 -7.3438 12.8873 -7.901 Q13.8248 -8.4635 14.929 -8.4635 Q16.7831 -8.4635 17.8144 -7.1667 Q18.8456 -5.8698 18.8456 -3.6823 L12.08 -3.6823 Q12.2102 -2.4479 13.0175 -1.6615 Q13.8248 -0.8802 15.0227 -0.8802 ZM14.9759 -7.3906 Q13.8561 -7.3906 13.054 -6.6615 Q12.2571 -5.9375 12.0956 -4.75 L17.6634 -4.75 Q17.5384 -5.9375 16.8456 -6.6615 Q16.1581 -7.3906 14.9759 -7.3906 ZM24.1782 -8.4635 Q25.824 -8.4635 26.6782 -7.526 Q27.5375 -6.5938 27.5375 -5.0417 L27.5375 0 L26.3344 0 L26.3344 -1.2969 Q25.9021 -0.5938 25.0948 -0.1979 Q24.2875 0.1927 23.423 0.1927 Q22.0948 0.1927 21.2459 -0.526 Q20.4021 -1.25 20.4021 -2.4479 Q20.4021 -3.25 20.8396 -3.8802 Q21.2823 -4.5104 22.0219 -4.8542 Q22.7667 -5.1979 23.6469 -5.1979 Q24.8969 -5.1979 26.3344 -4.7344 L26.3344 -5.0417 Q26.3344 -6.0469 25.824 -6.7396 Q25.3136 -7.4375 24.0948 -7.4375 Q23.5375 -7.4375 22.949 -7.2396 Q22.3657 -7.0417 21.6782 -6.6875 L21.199 -7.6615 Q22.798 -8.4635 24.1782 -8.4635 ZM23.6313 -0.8646 Q24.5271 -0.8646 25.3188 -1.3177 Q26.1105 -1.776 26.3344 -2.5938 L26.3344 -3.8542 Q25.1209 -4.1927 23.8396 -4.1927 Q22.8969 -4.1927 22.2302 -3.7135 Q21.5688 -3.2344 21.5688 -2.4948 Q21.5688 -1.7448 22.1521 -1.3021 Q22.7355 -0.8646 23.6313 -0.8646 ZM38.9295 -8.4635 Q39.7785 -8.4635 40.4504 -8.0521 Q41.1222 -7.6458 41.4972 -6.9167 Q41.8722 -6.1927 41.8722 -5.2656 L41.8722 0 L40.6743 0 L40.6743 -5.1042 Q40.6743 -6.1146 40.1379 -6.75 Q39.6014 -7.3906 38.7681 -7.3906 Q37.7785 -7.3906 37.1535 -6.7917 Q36.5285 -6.1927 36.5285 -5.2656 L36.5285 0 L35.3306 0 L35.3306 -5.1042 Q35.3306 -6.1146 34.7941 -6.75 Q34.2576 -7.3906 33.4243 -7.3906 Q32.4295 -7.3906 31.8045 -6.7917 Q31.1847 -6.1927 31.1847 -5.2656 L31.1847 0 L29.9816 0 L29.9816 -8.2708 L31.1847 -8.2708 L31.1847 -7.0573 Q31.5024 -7.7135 32.1326 -8.0885 Q32.7681 -8.4635 33.5858 -8.4635 Q34.5129 -8.4635 35.216 -7.9896 Q35.9191 -7.5208 36.2576 -6.7031 Q36.5129 -7.5052 37.2472 -7.9844 Q37.9816 -8.4635 38.9295 -8.4635 ZM49.2333 -10.9896 L50.4781 -10.9896 L54.5614 -3.3281 L58.6396 -10.9896 L59.8896 -10.9896 L59.8896 0 L58.6396 0 L58.6396 -8.3021 L54.5614 -0.6406 L50.4781 -8.3021 L50.4781 0 L49.2333 0 L49.2333 -10.9896 ZM66.3348 -0.8802 Q67.0744 -0.8802 67.814 -1.1667 Q68.5588 -1.4583 68.9442 -1.8698 L69.6786 -1.0885 Q69.1525 -0.5104 68.1994 -0.1562 Q67.2463 0.1927 66.3505 0.1927 Q65.2463 0.1927 64.288 -0.3646 Q63.3296 -0.9271 62.7411 -1.9271 Q62.1577 -2.9271 62.1577 -4.1615 Q62.1577 -5.3594 62.7098 -6.349 Q63.2619 -7.3438 64.1994 -7.901 Q65.1369 -8.4635 66.2411 -8.4635 Q68.0952 -8.4635 69.1265 -7.1667 Q70.1577 -5.8698 70.1577 -3.6823 L63.3921 -3.6823 Q63.5223 -2.4479 64.3296 -1.6615 Q65.1369 -0.8802 66.3348 -0.8802 ZM66.288 -7.3906 Q65.1682 -7.3906 64.3661 -6.6615 Q63.5692 -5.9375 63.4077 -4.75 L68.9755 -4.75 Q68.8505 -5.9375 68.1577 -6.6615 Q67.4702 -7.3906 66.288 -7.3906 ZM81.0736 -8.4635 Q81.9226 -8.4635 82.5944 -8.0521 Q83.2663 -7.6458 83.6413 -6.9167 Q84.0163 -6.1927 84.0163 -5.2656 L84.0163 0 L82.8184 0 L82.8184 -5.1042 Q82.8184 -6.1146 82.2819 -6.75 Q81.7455 -7.3906 80.9121 -7.3906 Q79.9226 -7.3906 79.2976 -6.7917 Q78.6726 -6.1927 78.6726 -5.2656 L78.6726 0 L77.4746 0 L77.4746 -5.1042 Q77.4746 -6.1146 76.9382 -6.75 Q76.4017 -7.3906 75.5684 -7.3906 Q74.5736 -7.3906 73.9486 -6.7917 Q73.3288 -6.1927 73.3288 -5.2656 L73.3288 0 L72.1257 0 L72.1257 -8.2708 L73.3288 -8.2708 L73.3288 -7.0573 Q73.6465 -7.7135 74.2767 -8.0885 Q74.9121 -8.4635 75.7299 -8.4635 Q76.6569 -8.4635 77.3601 -7.9896 Q78.0632 -7.5208 78.4017 -6.7031 Q78.6569 -7.5052 79.3913 -7.9844 Q80.1257 -8.4635 81.0736 -8.4635 ZM90.7686 -8.4635 Q91.8416 -8.4635 92.7113 -7.9115 Q93.5863 -7.3594 94.0811 -6.375 Q94.5759 -5.3906 94.5759 -4.1458 Q94.5759 -2.8958 94.0811 -1.901 Q93.5863 -0.9115 92.7113 -0.3594 Q91.8416 0.1927 90.7686 0.1927 Q89.7947 0.1927 89.0186 -0.2604 Q88.2426 -0.7188 87.7582 -1.5521 L87.7582 0 L86.5603 0 L86.5603 -11.1823 L87.7582 -11.1823 L87.7582 -6.7188 Q88.2426 -7.5521 89.0186 -8.0052 Q89.7947 -8.4635 90.7686 -8.4635 ZM90.5447 -0.8802 Q91.3468 -0.8802 91.977 -1.2969 Q92.6072 -1.7135 92.9561 -2.4531 Q93.3103 -3.1979 93.3103 -4.1458 Q93.3103 -5.0885 92.9561 -5.8229 Q92.6072 -6.5625 91.977 -6.974 Q91.3468 -7.3906 90.5447 -7.3906 Q89.7426 -7.3906 89.102 -6.974 Q88.4666 -6.5625 88.1124 -5.8229 Q87.7582 -5.0885 87.7582 -4.1458 Q87.7582 -3.1979 88.1124 -2.4531 Q88.4666 -1.7135 89.102 -1.2969 Q89.7426 -0.8802 90.5447 -0.8802 ZM100.3829 -0.8802 Q101.1225 -0.8802 101.8621 -1.1667 Q102.6069 -1.4583 102.9923 -1.8698 L103.7267 -1.0885 Q103.2006 -0.5104 102.2475 -0.1562 Q101.2944 0.1927 100.3985 0.1927 Q99.2944 0.1927 98.336 -0.3646 Q97.3777 -0.9271 96.7892 -1.9271 Q96.2058 -2.9271 96.2058 -4.1615 Q96.2058 -5.3594 96.7579 -6.349 Q97.31 -7.3438 98.2475 -7.901 Q99.185 -8.4635 100.2892 -8.4635 Q102.1433 -8.4635 103.1746 -7.1667 Q104.2058 -5.8698 104.2058 -3.6823 L97.4402 -3.6823 Q97.5704 -2.4479 98.3777 -1.6615 Q99.185 -0.8802 100.3829 -0.8802 ZM100.336 -7.3906 Q99.2162 -7.3906 98.4142 -6.6615 Q97.6173 -5.9375 97.4558 -4.75 L103.0235 -4.75 Q102.8985 -5.9375 102.2058 -6.6615 Q101.5183 -7.3906 100.336 -7.3906 ZM107.4863 -6.6562 Q107.856 -7.4896 108.705 -7.974 Q109.554 -8.4635 110.6894 -8.4635 L110.6894 -7.3906 Q109.7623 -7.3906 109.0331 -7.0365 Q108.304 -6.6875 107.8925 -6.0521 Q107.4863 -5.4219 107.4863 -4.625 L107.4863 0 L106.2883 0 L106.2883 -8.2708 L107.4863 -8.2708 L107.4863 -6.6562 Z"
+                                                   stroke="none"/>
+                                          </g>
+                                       </g>
+                                    </g>
+                                 </g>
+                              </g>
+                           </g>
+                           <g href="/public/templates/risk-first/redesign/risks/agency_risk_v2.svg"
+                              transform="translate(179.0,20.0)"
+                              k9-texture="none"
+                              k9-info="margin: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [146.6666717529297 186.6666717529297]; sizing: [minimize minimize]; horiz: center; vert: center; layout: vertical; rectangular: connected; rect-pos: [239.0, 80.0]; rect-size: [146.0, 186.0]; position: none; painter: direct-svg; "
+                              id="2-gz"
+                              k9-format="text-image-portrait"
+                              k9-ui="size drag delete align connect autoconnect edit"
+                              k9-elem="generic-artifact"
+                              k9-type="connected">
+                              <g class="k9-shape" k9-highlight="pulse">
+                                 <rect x="0"
+                                       y="0"
+                                       width="146"
+                                       pp:y="$y"
+                                       pp:height="$height"
+                                       pp:x="$x"
+                                       rx="5pt"
+                                       ry="5pt"
+                                       height="186"
+                                       pp:width="$width"/>
+                              </g>
+                              <g class="k9-content">
+                                 <g k9-ui="image"
+                                    k9-elem="depiction"
+                                    id="2-gz@dep"
+                                    k9-texture="none"
+                                    transform="translate(39.7,37.7)"
+                                    k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [278.0, 117.0]; rect-size: [68.0, 68.0]; position: none; painter: direct-svg; ">
+                                    <g class="k9-content k9-no-shape" k9-highlight="pulse">
+                                       <image x="0"
+                                              y="0"
+                                              width="50pt"
+                                              xlink:href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5l&#xA;cmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIxLjEuMCwgU1ZHIEV4cG9ydCBQbHVn&#xA;LUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNp&#xA;b249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8y&#xA;MDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxp&#xA;bmsiIHg9IjBwdCIgeT0iMHB0IgoJIHZpZXdCb3g9IjAgMCA4NSA4NSIgc3R5bGU9&#xA;ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgODUgODU7IiB4bWw6c3BhY2U9InBy&#xA;ZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDpub25l&#xA;O3N0cm9rZTojMUExNzFCO3N0cm9rZS13aWR0aDozO3N0cm9rZS1saW5lY2FwOnJv&#xA;dW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDt9Cjwvc3R5bGU+CjxwYXRoIGNsYXNz&#xA;PSJzdDAiIGQ9Ik02Ny4zLDM2LjJjMTAtMywxMC41LTYuMiwxMC05LjJjLTAuOC00&#xA;LjMtNi4zLTgtMTUtMTBjMC0wLjMsMC0wLjMsMC0wLjNjLTEuOC03LjUtNS0xMi4x&#xA;LTkuNS0xMy42CgljLTQuMy0xLjUtOC4zLDAuMy0xMC4zLDEuM2MtMi0xLjMtNi0z&#xA;LTEwLjMtMS41Yy00LjUsMS41LTcuOCw2LjMtOS44LDEzLjhjMCwwLjMsMCwwLjMs&#xA;MCwwLjVjLTguOCwyLjMtMTQuNSw2LTE1LDEwLjgKCWMtMC4zLDMuMywyLjksNy44&#xA;LDE4LjYsMTFjMCw5LjQsNy40LDE2LjQsMTYuMSwxNi40YzEwLTAuMywxNi43LTgs&#xA;MTYuNy0xNy44VjI3LjMiLz4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTIyLjUsMTcu&#xA;MmMwLDAsMTYuNC00LjYsMzkuOC0wLjMiLz4KPHBhdGggY2xhc3M9InN0MCIgZD0i&#xA;TTI2LjEsMjYuNGMwLDAtMC4xLDkuMSwwLDEyLjciLz4KPGc+Cgk8cGF0aCBjbGFz&#xA;cz0ic3QwIiBkPSJNMzcsODIuOGMwLDAtNC41LTIwLjgtMTMuMS0zMC42TDguMSw2&#xA;Mi43bDEyLjcsOC44bC00LjcsOGwyLjUsMi44Ii8+Cgk8bGluZSBjbGFzcz0ic3Qw&#xA;IiB4MT0iMS45IiB5MT0iNzQiIHgyPSIxNC42IiB5Mj0iNjcuNSIvPgo8L2c+Cjxn&#xA;PgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTQ4LjIsODIuOGMwLDAsNC41LTIwLjgs&#xA;MTMuMS0zMC42bDE1LjcsMTAuNWwtMTIuNyw4LjhsNC43LDhsLTIuNSwyLjgiLz4K&#xA;CTxsaW5lIGNsYXNzPSJzdDAiIHgxPSI4My4zIiB5MT0iNzQiIHgyPSI3MC42IiB5&#xA;Mj0iNjcuNSIvPgo8L2c+Cjwvc3ZnPgo="
+                                              xlink:type="simple"
+                                              xlink:actuate="onLoad"
+                                              height="50pt"
+                                              preserveAspectRatio="xMidYMid meet"
+                                              xlink:show="embed"/>
+                                       <rect width="50pt" x="0" height="50pt" y="0"/>
+                                    </g>
+                                 </g>
+                                 <g k9-elem="caption"
+                                    k9-texture="foreground"
+                                    transform="translate(18.3,146.0)"
+                                    k9-format="text-fixed"
+                                    k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [258.0, 210.0]; rect-size: [109.0, 19.0]; position: none; painter: direct-svg; ">
+                                    <g class="k9-content k9-no-shape" k9-highlight="pulse">
+                                       <g rendered="true">
+                                          <g fill="rgb(36,51,20)" stroke="rgb(36,51,20)">
+                                             <path d="M4.4167 -9.8073 L0.7188 -9.8073 L0.7188 -10.9896 L9.3594 -10.9896 L9.3594 -9.8073 L5.6615 -9.8073 L5.6615 0 L4.4167 0 L4.4167 -9.8073 ZM15.0227 -0.8802 Q15.7623 -0.8802 16.5019 -1.1667 Q17.2467 -1.4583 17.6321 -1.8698 L18.3665 -1.0885 Q17.8404 -0.5104 16.8873 -0.1562 Q15.9342 0.1927 15.0384 0.1927 Q13.9342 0.1927 12.9759 -0.3646 Q12.0175 -0.9271 11.429 -1.9271 Q10.8456 -2.9271 10.8456 -4.1615 Q10.8456 -5.3594 11.3977 -6.349 Q11.9498 -7.3438 12.8873 -7.901 Q13.8248 -8.4635 14.929 -8.4635 Q16.7831 -8.4635 17.8144 -7.1667 Q18.8456 -5.8698 18.8456 -3.6823 L12.08 -3.6823 Q12.2102 -2.4479 13.0175 -1.6615 Q13.8248 -0.8802 15.0227 -0.8802 ZM14.9759 -7.3906 Q13.8561 -7.3906 13.054 -6.6615 Q12.2571 -5.9375 12.0956 -4.75 L17.6634 -4.75 Q17.5384 -5.9375 16.8456 -6.6615 Q16.1581 -7.3906 14.9759 -7.3906 ZM24.1782 -8.4635 Q25.824 -8.4635 26.6782 -7.526 Q27.5375 -6.5938 27.5375 -5.0417 L27.5375 0 L26.3344 0 L26.3344 -1.2969 Q25.9021 -0.5938 25.0948 -0.1979 Q24.2875 0.1927 23.423 0.1927 Q22.0948 0.1927 21.2459 -0.526 Q20.4021 -1.25 20.4021 -2.4479 Q20.4021 -3.25 20.8396 -3.8802 Q21.2823 -4.5104 22.0219 -4.8542 Q22.7667 -5.1979 23.6469 -5.1979 Q24.8969 -5.1979 26.3344 -4.7344 L26.3344 -5.0417 Q26.3344 -6.0469 25.824 -6.7396 Q25.3136 -7.4375 24.0948 -7.4375 Q23.5375 -7.4375 22.949 -7.2396 Q22.3657 -7.0417 21.6782 -6.6875 L21.199 -7.6615 Q22.798 -8.4635 24.1782 -8.4635 ZM23.6313 -0.8646 Q24.5271 -0.8646 25.3188 -1.3177 Q26.1105 -1.776 26.3344 -2.5938 L26.3344 -3.8542 Q25.1209 -4.1927 23.8396 -4.1927 Q22.8969 -4.1927 22.2302 -3.7135 Q21.5688 -3.2344 21.5688 -2.4948 Q21.5688 -1.7448 22.1521 -1.3021 Q22.7355 -0.8646 23.6313 -0.8646 ZM38.9295 -8.4635 Q39.7785 -8.4635 40.4504 -8.0521 Q41.1222 -7.6458 41.4972 -6.9167 Q41.8722 -6.1927 41.8722 -5.2656 L41.8722 0 L40.6743 0 L40.6743 -5.1042 Q40.6743 -6.1146 40.1379 -6.75 Q39.6014 -7.3906 38.7681 -7.3906 Q37.7785 -7.3906 37.1535 -6.7917 Q36.5285 -6.1927 36.5285 -5.2656 L36.5285 0 L35.3306 0 L35.3306 -5.1042 Q35.3306 -6.1146 34.7941 -6.75 Q34.2576 -7.3906 33.4243 -7.3906 Q32.4295 -7.3906 31.8045 -6.7917 Q31.1847 -6.1927 31.1847 -5.2656 L31.1847 0 L29.9816 0 L29.9816 -8.2708 L31.1847 -8.2708 L31.1847 -7.0573 Q31.5024 -7.7135 32.1326 -8.0885 Q32.7681 -8.4635 33.5858 -8.4635 Q34.5129 -8.4635 35.216 -7.9896 Q35.9191 -7.5208 36.2576 -6.7031 Q36.5129 -7.5052 37.2472 -7.9844 Q37.9816 -8.4635 38.9295 -8.4635 ZM49.2333 -10.9896 L50.4781 -10.9896 L54.5614 -3.3281 L58.6396 -10.9896 L59.8896 -10.9896 L59.8896 0 L58.6396 0 L58.6396 -8.3021 L54.5614 -0.6406 L50.4781 -8.3021 L50.4781 0 L49.2333 0 L49.2333 -10.9896 ZM66.3348 -0.8802 Q67.0744 -0.8802 67.814 -1.1667 Q68.5588 -1.4583 68.9442 -1.8698 L69.6786 -1.0885 Q69.1525 -0.5104 68.1994 -0.1562 Q67.2463 0.1927 66.3505 0.1927 Q65.2463 0.1927 64.288 -0.3646 Q63.3296 -0.9271 62.7411 -1.9271 Q62.1577 -2.9271 62.1577 -4.1615 Q62.1577 -5.3594 62.7098 -6.349 Q63.2619 -7.3438 64.1994 -7.901 Q65.1369 -8.4635 66.2411 -8.4635 Q68.0952 -8.4635 69.1265 -7.1667 Q70.1577 -5.8698 70.1577 -3.6823 L63.3921 -3.6823 Q63.5223 -2.4479 64.3296 -1.6615 Q65.1369 -0.8802 66.3348 -0.8802 ZM66.288 -7.3906 Q65.1682 -7.3906 64.3661 -6.6615 Q63.5692 -5.9375 63.4077 -4.75 L68.9755 -4.75 Q68.8505 -5.9375 68.1577 -6.6615 Q67.4702 -7.3906 66.288 -7.3906 ZM81.0736 -8.4635 Q81.9226 -8.4635 82.5944 -8.0521 Q83.2663 -7.6458 83.6413 -6.9167 Q84.0163 -6.1927 84.0163 -5.2656 L84.0163 0 L82.8184 0 L82.8184 -5.1042 Q82.8184 -6.1146 82.2819 -6.75 Q81.7455 -7.3906 80.9121 -7.3906 Q79.9226 -7.3906 79.2976 -6.7917 Q78.6726 -6.1927 78.6726 -5.2656 L78.6726 0 L77.4746 0 L77.4746 -5.1042 Q77.4746 -6.1146 76.9382 -6.75 Q76.4017 -7.3906 75.5684 -7.3906 Q74.5736 -7.3906 73.9486 -6.7917 Q73.3288 -6.1927 73.3288 -5.2656 L73.3288 0 L72.1257 0 L72.1257 -8.2708 L73.3288 -8.2708 L73.3288 -7.0573 Q73.6465 -7.7135 74.2767 -8.0885 Q74.9121 -8.4635 75.7299 -8.4635 Q76.6569 -8.4635 77.3601 -7.9896 Q78.0632 -7.5208 78.4017 -6.7031 Q78.6569 -7.5052 79.3913 -7.9844 Q80.1257 -8.4635 81.0736 -8.4635 ZM90.7686 -8.4635 Q91.8416 -8.4635 92.7113 -7.9115 Q93.5863 -7.3594 94.0811 -6.375 Q94.5759 -5.3906 94.5759 -4.1458 Q94.5759 -2.8958 94.0811 -1.901 Q93.5863 -0.9115 92.7113 -0.3594 Q91.8416 0.1927 90.7686 0.1927 Q89.7947 0.1927 89.0186 -0.2604 Q88.2426 -0.7188 87.7582 -1.5521 L87.7582 0 L86.5603 0 L86.5603 -11.1823 L87.7582 -11.1823 L87.7582 -6.7188 Q88.2426 -7.5521 89.0186 -8.0052 Q89.7947 -8.4635 90.7686 -8.4635 ZM90.5447 -0.8802 Q91.3468 -0.8802 91.977 -1.2969 Q92.6072 -1.7135 92.9561 -2.4531 Q93.3103 -3.1979 93.3103 -4.1458 Q93.3103 -5.0885 92.9561 -5.8229 Q92.6072 -6.5625 91.977 -6.974 Q91.3468 -7.3906 90.5447 -7.3906 Q89.7426 -7.3906 89.102 -6.974 Q88.4666 -6.5625 88.1124 -5.8229 Q87.7582 -5.0885 87.7582 -4.1458 Q87.7582 -3.1979 88.1124 -2.4531 Q88.4666 -1.7135 89.102 -1.2969 Q89.7426 -0.8802 90.5447 -0.8802 ZM100.3829 -0.8802 Q101.1225 -0.8802 101.8621 -1.1667 Q102.6069 -1.4583 102.9923 -1.8698 L103.7267 -1.0885 Q103.2006 -0.5104 102.2475 -0.1562 Q101.2944 0.1927 100.3985 0.1927 Q99.2944 0.1927 98.336 -0.3646 Q97.3777 -0.9271 96.7892 -1.9271 Q96.2058 -2.9271 96.2058 -4.1615 Q96.2058 -5.3594 96.7579 -6.349 Q97.31 -7.3438 98.2475 -7.901 Q99.185 -8.4635 100.2892 -8.4635 Q102.1433 -8.4635 103.1746 -7.1667 Q104.2058 -5.8698 104.2058 -3.6823 L97.4402 -3.6823 Q97.5704 -2.4479 98.3777 -1.6615 Q99.185 -0.8802 100.3829 -0.8802 ZM100.336 -7.3906 Q99.2162 -7.3906 98.4142 -6.6615 Q97.6173 -5.9375 97.4558 -4.75 L103.0235 -4.75 Q102.8985 -5.9375 102.2058 -6.6615 Q101.5183 -7.3906 100.336 -7.3906 ZM107.4863 -6.6562 Q107.856 -7.4896 108.705 -7.974 Q109.554 -8.4635 110.6894 -8.4635 L110.6894 -7.3906 Q109.7623 -7.3906 109.0331 -7.0365 Q108.304 -6.6875 107.8925 -6.0521 Q107.4863 -5.4219 107.4863 -4.625 L107.4863 0 L106.2883 0 L106.2883 -8.2708 L107.4863 -8.2708 L107.4863 -6.6562 Z"
+                                                   stroke="none"/>
+                                          </g>
+                                       </g>
+                                    </g>
+                                 </g>
+                              </g>
+                           </g>
+                           <g href="/public/templates/risk-first/redesign/risks/agency_risk_v2.svg"
+                              transform="translate(338.0,20.0)"
+                              k9-texture="none"
+                              k9-info="margin: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [146.6666717529297 186.6666717529297]; sizing: [minimize minimize]; horiz: center; vert: center; layout: vertical; rectangular: connected; rect-pos: [398.0, 80.0]; rect-size: [146.0, 186.0]; position: none; painter: direct-svg; "
+                              id="2-zy"
+                              k9-format="text-image-portrait"
+                              k9-ui="size drag delete align connect autoconnect edit"
+                              k9-elem="generic-artifact"
+                              k9-type="connected">
+                              <g class="k9-shape" k9-highlight="pulse">
+                                 <rect x="0"
+                                       y="0"
+                                       width="146"
+                                       pp:y="$y"
+                                       pp:height="$height"
+                                       pp:x="$x"
+                                       rx="5pt"
+                                       ry="5pt"
+                                       height="186"
+                                       pp:width="$width"/>
+                              </g>
+                              <g class="k9-content">
+                                 <g k9-ui="image"
+                                    k9-elem="depiction"
+                                    id="2-zy@dep"
+                                    k9-texture="none"
+                                    transform="translate(39.7,37.7)"
+                                    k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [437.0, 117.0]; rect-size: [68.0, 68.0]; position: none; painter: direct-svg; ">
+                                    <g class="k9-content k9-no-shape" k9-highlight="pulse">
+                                       <image x="0"
+                                              y="0"
+                                              width="50pt"
+                                              xlink:href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5l&#xA;cmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIxLjEuMCwgU1ZHIEV4cG9ydCBQbHVn&#xA;LUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNp&#xA;b249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8y&#xA;MDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxp&#xA;bmsiIHg9IjBwdCIgeT0iMHB0IgoJIHZpZXdCb3g9IjAgMCA4NSA4NSIgc3R5bGU9&#xA;ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgODUgODU7IiB4bWw6c3BhY2U9InBy&#xA;ZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDpub25l&#xA;O3N0cm9rZTojMUExNzFCO3N0cm9rZS13aWR0aDozO3N0cm9rZS1saW5lY2FwOnJv&#xA;dW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDt9Cjwvc3R5bGU+CjxwYXRoIGNsYXNz&#xA;PSJzdDAiIGQ9Ik02Ny4zLDM2LjJjMTAtMywxMC41LTYuMiwxMC05LjJjLTAuOC00&#xA;LjMtNi4zLTgtMTUtMTBjMC0wLjMsMC0wLjMsMC0wLjNjLTEuOC03LjUtNS0xMi4x&#xA;LTkuNS0xMy42CgljLTQuMy0xLjUtOC4zLDAuMy0xMC4zLDEuM2MtMi0xLjMtNi0z&#xA;LTEwLjMtMS41Yy00LjUsMS41LTcuOCw2LjMtOS44LDEzLjhjMCwwLjMsMCwwLjMs&#xA;MCwwLjVjLTguOCwyLjMtMTQuNSw2LTE1LDEwLjgKCWMtMC4zLDMuMywyLjksNy44&#xA;LDE4LjYsMTFjMCw5LjQsNy40LDE2LjQsMTYuMSwxNi40YzEwLTAuMywxNi43LTgs&#xA;MTYuNy0xNy44VjI3LjMiLz4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTIyLjUsMTcu&#xA;MmMwLDAsMTYuNC00LjYsMzkuOC0wLjMiLz4KPHBhdGggY2xhc3M9InN0MCIgZD0i&#xA;TTI2LjEsMjYuNGMwLDAtMC4xLDkuMSwwLDEyLjciLz4KPGc+Cgk8cGF0aCBjbGFz&#xA;cz0ic3QwIiBkPSJNMzcsODIuOGMwLDAtNC41LTIwLjgtMTMuMS0zMC42TDguMSw2&#xA;Mi43bDEyLjcsOC44bC00LjcsOGwyLjUsMi44Ii8+Cgk8bGluZSBjbGFzcz0ic3Qw&#xA;IiB4MT0iMS45IiB5MT0iNzQiIHgyPSIxNC42IiB5Mj0iNjcuNSIvPgo8L2c+Cjxn&#xA;PgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTQ4LjIsODIuOGMwLDAsNC41LTIwLjgs&#xA;MTMuMS0zMC42bDE1LjcsMTAuNWwtMTIuNyw4LjhsNC43LDhsLTIuNSwyLjgiLz4K&#xA;CTxsaW5lIGNsYXNzPSJzdDAiIHgxPSI4My4zIiB5MT0iNzQiIHgyPSI3MC42IiB5&#xA;Mj0iNjcuNSIvPgo8L2c+Cjwvc3ZnPgo="
+                                              xlink:type="simple"
+                                              xlink:actuate="onLoad"
+                                              height="50pt"
+                                              preserveAspectRatio="xMidYMid meet"
+                                              xlink:show="embed"/>
+                                       <rect width="50pt" x="0" height="50pt" y="0"/>
+                                    </g>
+                                 </g>
+                                 <g k9-elem="caption"
+                                    k9-texture="foreground"
+                                    transform="translate(18.3,146.0)"
+                                    k9-format="text-fixed"
+                                    k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [417.0, 210.0]; rect-size: [109.0, 19.0]; position: none; painter: direct-svg; ">
+                                    <g class="k9-content k9-no-shape" k9-highlight="pulse">
+                                       <g rendered="true">
+                                          <g fill="rgb(36,51,20)" stroke="rgb(36,51,20)">
+                                             <path d="M4.4167 -9.8073 L0.7188 -9.8073 L0.7188 -10.9896 L9.3594 -10.9896 L9.3594 -9.8073 L5.6615 -9.8073 L5.6615 0 L4.4167 0 L4.4167 -9.8073 ZM15.0227 -0.8802 Q15.7623 -0.8802 16.5019 -1.1667 Q17.2467 -1.4583 17.6321 -1.8698 L18.3665 -1.0885 Q17.8404 -0.5104 16.8873 -0.1562 Q15.9342 0.1927 15.0384 0.1927 Q13.9342 0.1927 12.9759 -0.3646 Q12.0175 -0.9271 11.429 -1.9271 Q10.8456 -2.9271 10.8456 -4.1615 Q10.8456 -5.3594 11.3977 -6.349 Q11.9498 -7.3438 12.8873 -7.901 Q13.8248 -8.4635 14.929 -8.4635 Q16.7831 -8.4635 17.8144 -7.1667 Q18.8456 -5.8698 18.8456 -3.6823 L12.08 -3.6823 Q12.2102 -2.4479 13.0175 -1.6615 Q13.8248 -0.8802 15.0227 -0.8802 ZM14.9759 -7.3906 Q13.8561 -7.3906 13.054 -6.6615 Q12.2571 -5.9375 12.0956 -4.75 L17.6634 -4.75 Q17.5384 -5.9375 16.8456 -6.6615 Q16.1581 -7.3906 14.9759 -7.3906 ZM24.1782 -8.4635 Q25.824 -8.4635 26.6782 -7.526 Q27.5375 -6.5938 27.5375 -5.0417 L27.5375 0 L26.3344 0 L26.3344 -1.2969 Q25.9021 -0.5938 25.0948 -0.1979 Q24.2875 0.1927 23.423 0.1927 Q22.0948 0.1927 21.2459 -0.526 Q20.4021 -1.25 20.4021 -2.4479 Q20.4021 -3.25 20.8396 -3.8802 Q21.2823 -4.5104 22.0219 -4.8542 Q22.7667 -5.1979 23.6469 -5.1979 Q24.8969 -5.1979 26.3344 -4.7344 L26.3344 -5.0417 Q26.3344 -6.0469 25.824 -6.7396 Q25.3136 -7.4375 24.0948 -7.4375 Q23.5375 -7.4375 22.949 -7.2396 Q22.3657 -7.0417 21.6782 -6.6875 L21.199 -7.6615 Q22.798 -8.4635 24.1782 -8.4635 ZM23.6313 -0.8646 Q24.5271 -0.8646 25.3188 -1.3177 Q26.1105 -1.776 26.3344 -2.5938 L26.3344 -3.8542 Q25.1209 -4.1927 23.8396 -4.1927 Q22.8969 -4.1927 22.2302 -3.7135 Q21.5688 -3.2344 21.5688 -2.4948 Q21.5688 -1.7448 22.1521 -1.3021 Q22.7355 -0.8646 23.6313 -0.8646 ZM38.9295 -8.4635 Q39.7785 -8.4635 40.4504 -8.0521 Q41.1222 -7.6458 41.4972 -6.9167 Q41.8722 -6.1927 41.8722 -5.2656 L41.8722 0 L40.6743 0 L40.6743 -5.1042 Q40.6743 -6.1146 40.1379 -6.75 Q39.6014 -7.3906 38.7681 -7.3906 Q37.7785 -7.3906 37.1535 -6.7917 Q36.5285 -6.1927 36.5285 -5.2656 L36.5285 0 L35.3306 0 L35.3306 -5.1042 Q35.3306 -6.1146 34.7941 -6.75 Q34.2576 -7.3906 33.4243 -7.3906 Q32.4295 -7.3906 31.8045 -6.7917 Q31.1847 -6.1927 31.1847 -5.2656 L31.1847 0 L29.9816 0 L29.9816 -8.2708 L31.1847 -8.2708 L31.1847 -7.0573 Q31.5024 -7.7135 32.1326 -8.0885 Q32.7681 -8.4635 33.5858 -8.4635 Q34.5129 -8.4635 35.216 -7.9896 Q35.9191 -7.5208 36.2576 -6.7031 Q36.5129 -7.5052 37.2472 -7.9844 Q37.9816 -8.4635 38.9295 -8.4635 ZM49.2333 -10.9896 L50.4781 -10.9896 L54.5614 -3.3281 L58.6396 -10.9896 L59.8896 -10.9896 L59.8896 0 L58.6396 0 L58.6396 -8.3021 L54.5614 -0.6406 L50.4781 -8.3021 L50.4781 0 L49.2333 0 L49.2333 -10.9896 ZM66.3348 -0.8802 Q67.0744 -0.8802 67.814 -1.1667 Q68.5588 -1.4583 68.9442 -1.8698 L69.6786 -1.0885 Q69.1525 -0.5104 68.1994 -0.1562 Q67.2463 0.1927 66.3505 0.1927 Q65.2463 0.1927 64.288 -0.3646 Q63.3296 -0.9271 62.7411 -1.9271 Q62.1577 -2.9271 62.1577 -4.1615 Q62.1577 -5.3594 62.7098 -6.349 Q63.2619 -7.3438 64.1994 -7.901 Q65.1369 -8.4635 66.2411 -8.4635 Q68.0952 -8.4635 69.1265 -7.1667 Q70.1577 -5.8698 70.1577 -3.6823 L63.3921 -3.6823 Q63.5223 -2.4479 64.3296 -1.6615 Q65.1369 -0.8802 66.3348 -0.8802 ZM66.288 -7.3906 Q65.1682 -7.3906 64.3661 -6.6615 Q63.5692 -5.9375 63.4077 -4.75 L68.9755 -4.75 Q68.8505 -5.9375 68.1577 -6.6615 Q67.4702 -7.3906 66.288 -7.3906 ZM81.0736 -8.4635 Q81.9226 -8.4635 82.5944 -8.0521 Q83.2663 -7.6458 83.6413 -6.9167 Q84.0163 -6.1927 84.0163 -5.2656 L84.0163 0 L82.8184 0 L82.8184 -5.1042 Q82.8184 -6.1146 82.2819 -6.75 Q81.7455 -7.3906 80.9121 -7.3906 Q79.9226 -7.3906 79.2976 -6.7917 Q78.6726 -6.1927 78.6726 -5.2656 L78.6726 0 L77.4746 0 L77.4746 -5.1042 Q77.4746 -6.1146 76.9382 -6.75 Q76.4017 -7.3906 75.5684 -7.3906 Q74.5736 -7.3906 73.9486 -6.7917 Q73.3288 -6.1927 73.3288 -5.2656 L73.3288 0 L72.1257 0 L72.1257 -8.2708 L73.3288 -8.2708 L73.3288 -7.0573 Q73.6465 -7.7135 74.2767 -8.0885 Q74.9121 -8.4635 75.7299 -8.4635 Q76.6569 -8.4635 77.3601 -7.9896 Q78.0632 -7.5208 78.4017 -6.7031 Q78.6569 -7.5052 79.3913 -7.9844 Q80.1257 -8.4635 81.0736 -8.4635 ZM90.7686 -8.4635 Q91.8416 -8.4635 92.7113 -7.9115 Q93.5863 -7.3594 94.0811 -6.375 Q94.5759 -5.3906 94.5759 -4.1458 Q94.5759 -2.8958 94.0811 -1.901 Q93.5863 -0.9115 92.7113 -0.3594 Q91.8416 0.1927 90.7686 0.1927 Q89.7947 0.1927 89.0186 -0.2604 Q88.2426 -0.7188 87.7582 -1.5521 L87.7582 0 L86.5603 0 L86.5603 -11.1823 L87.7582 -11.1823 L87.7582 -6.7188 Q88.2426 -7.5521 89.0186 -8.0052 Q89.7947 -8.4635 90.7686 -8.4635 ZM90.5447 -0.8802 Q91.3468 -0.8802 91.977 -1.2969 Q92.6072 -1.7135 92.9561 -2.4531 Q93.3103 -3.1979 93.3103 -4.1458 Q93.3103 -5.0885 92.9561 -5.8229 Q92.6072 -6.5625 91.977 -6.974 Q91.3468 -7.3906 90.5447 -7.3906 Q89.7426 -7.3906 89.102 -6.974 Q88.4666 -6.5625 88.1124 -5.8229 Q87.7582 -5.0885 87.7582 -4.1458 Q87.7582 -3.1979 88.1124 -2.4531 Q88.4666 -1.7135 89.102 -1.2969 Q89.7426 -0.8802 90.5447 -0.8802 ZM100.3829 -0.8802 Q101.1225 -0.8802 101.8621 -1.1667 Q102.6069 -1.4583 102.9923 -1.8698 L103.7267 -1.0885 Q103.2006 -0.5104 102.2475 -0.1562 Q101.2944 0.1927 100.3985 0.1927 Q99.2944 0.1927 98.336 -0.3646 Q97.3777 -0.9271 96.7892 -1.9271 Q96.2058 -2.9271 96.2058 -4.1615 Q96.2058 -5.3594 96.7579 -6.349 Q97.31 -7.3438 98.2475 -7.901 Q99.185 -8.4635 100.2892 -8.4635 Q102.1433 -8.4635 103.1746 -7.1667 Q104.2058 -5.8698 104.2058 -3.6823 L97.4402 -3.6823 Q97.5704 -2.4479 98.3777 -1.6615 Q99.185 -0.8802 100.3829 -0.8802 ZM100.336 -7.3906 Q99.2162 -7.3906 98.4142 -6.6615 Q97.6173 -5.9375 97.4558 -4.75 L103.0235 -4.75 Q102.8985 -5.9375 102.2058 -6.6615 Q101.5183 -7.3906 100.336 -7.3906 ZM107.4863 -6.6562 Q107.856 -7.4896 108.705 -7.974 Q109.554 -8.4635 110.6894 -8.4635 L110.6894 -7.3906 Q109.7623 -7.3906 109.0331 -7.0365 Q108.304 -6.6875 107.8925 -6.0521 Q107.4863 -5.4219 107.4863 -4.625 L107.4863 0 L106.2883 0 L106.2883 -8.2708 L107.4863 -8.2708 L107.4863 -6.6562 Z"
+                                                   stroke="none"/>
+                                          </g>
+                                       </g>
+                                    </g>
+                                 </g>
+                              </g>
+                           </g>
+                           <g k9-contains="none"
+                              transform="translate(192.0,219.0)"
+                              k9-texture="none"
+                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: label; rect-pos: [252.0, 279.0]; rect-size: [121.0, 45.0]; position: none; placement: down;painter: direct-svg; "
+                              id="4-1"
+                              k9-format="text-shape-inline"
+                              k9-ui="delete edit xml drag place fill stroke size font direction align"
+                              k9-elem="label"
+                              k9-type="label">
+                              <g class="k9-shape" k9-highlight="pulse">
+                                 <rect x="0"
+                                       y="0"
+                                       width="121"
+                                       pp:y="$y"
+                                       pp:height="$height"
+                                       pp:x="$x"
+                                       rx="5pt"
+                                       ry="5pt"
+                                       height="45"
+                                       pp:width="$width"/>
+                              </g>
+                              <g class="k9-content">
+                                 <g k9-elem="caption"
+                                    k9-texture="foreground"
+                                    transform="translate(12.3,29.0)"
+                                    k9-format="text-fixed"
+                                    k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [265.0, 292.0]; rect-size: [95.0, 19.0]; position: none; painter: direct-svg; ">
+                                    <g class="k9-content k9-no-shape" k9-highlight="pulse">
+                                       <g rendered="true">
+                                          <g fill="rgb(36,51,20)" stroke="rgb(36,51,20)">
+                                             <path d="M4.4167 -9.8073 L0.7188 -9.8073 L0.7188 -10.9896 L9.3594 -10.9896 L9.3594 -9.8073 L5.6615 -9.8073 L5.6615 0 L4.4167 0 L4.4167 -9.8073 ZM15.0227 -0.8802 Q15.7623 -0.8802 16.5019 -1.1667 Q17.2467 -1.4583 17.6321 -1.8698 L18.3665 -1.0885 Q17.8404 -0.5104 16.8873 -0.1562 Q15.9342 0.1927 15.0384 0.1927 Q13.9342 0.1927 12.9759 -0.3646 Q12.0175 -0.9271 11.429 -1.9271 Q10.8456 -2.9271 10.8456 -4.1615 Q10.8456 -5.3594 11.3977 -6.349 Q11.9498 -7.3438 12.8873 -7.901 Q13.8248 -8.4635 14.929 -8.4635 Q16.7831 -8.4635 17.8144 -7.1667 Q18.8456 -5.8698 18.8456 -3.6823 L12.08 -3.6823 Q12.2102 -2.4479 13.0175 -1.6615 Q13.8248 -0.8802 15.0227 -0.8802 ZM14.9759 -7.3906 Q13.8561 -7.3906 13.054 -6.6615 Q12.2571 -5.9375 12.0956 -4.75 L17.6634 -4.75 Q17.5384 -5.9375 16.8456 -6.6615 Q16.1581 -7.3906 14.9759 -7.3906 ZM24.1782 -8.4635 Q25.824 -8.4635 26.6782 -7.526 Q27.5375 -6.5938 27.5375 -5.0417 L27.5375 0 L26.3344 0 L26.3344 -1.2969 Q25.9021 -0.5938 25.0948 -0.1979 Q24.2875 0.1927 23.423 0.1927 Q22.0948 0.1927 21.2459 -0.526 Q20.4021 -1.25 20.4021 -2.4479 Q20.4021 -3.25 20.8396 -3.8802 Q21.2823 -4.5104 22.0219 -4.8542 Q22.7667 -5.1979 23.6469 -5.1979 Q24.8969 -5.1979 26.3344 -4.7344 L26.3344 -5.0417 Q26.3344 -6.0469 25.824 -6.7396 Q25.3136 -7.4375 24.0948 -7.4375 Q23.5375 -7.4375 22.949 -7.2396 Q22.3657 -7.0417 21.6782 -6.6875 L21.199 -7.6615 Q22.798 -8.4635 24.1782 -8.4635 ZM23.6313 -0.8646 Q24.5271 -0.8646 25.3188 -1.3177 Q26.1105 -1.776 26.3344 -2.5938 L26.3344 -3.8542 Q25.1209 -4.1927 23.8396 -4.1927 Q22.8969 -4.1927 22.2302 -3.7135 Q21.5688 -3.2344 21.5688 -2.4948 Q21.5688 -1.7448 22.1521 -1.3021 Q22.7355 -0.8646 23.6313 -0.8646 ZM38.9295 -8.4635 Q39.7785 -8.4635 40.4504 -8.0521 Q41.1222 -7.6458 41.4972 -6.9167 Q41.8722 -6.1927 41.8722 -5.2656 L41.8722 0 L40.6743 0 L40.6743 -5.1042 Q40.6743 -6.1146 40.1379 -6.75 Q39.6014 -7.3906 38.7681 -7.3906 Q37.7785 -7.3906 37.1535 -6.7917 Q36.5285 -6.1927 36.5285 -5.2656 L36.5285 0 L35.3306 0 L35.3306 -5.1042 Q35.3306 -6.1146 34.7941 -6.75 Q34.2576 -7.3906 33.4243 -7.3906 Q32.4295 -7.3906 31.8045 -6.7917 Q31.1847 -6.1927 31.1847 -5.2656 L31.1847 0 L29.9816 0 L29.9816 -8.2708 L31.1847 -8.2708 L31.1847 -7.0573 Q31.5024 -7.7135 32.1326 -8.0885 Q32.7681 -8.4635 33.5858 -8.4635 Q34.5129 -8.4635 35.216 -7.9896 Q35.9191 -7.5208 36.2576 -6.7031 Q36.5129 -7.5052 37.2472 -7.9844 Q37.9816 -8.4635 38.9295 -8.4635 ZM57.9677 -10.9896 L57.9677 0 L56.7177 0 L56.7177 -5.0104 L50.2385 -5.0104 L50.2385 0 L48.9937 0 L48.9937 -10.9896 L50.2385 -10.9896 L50.2385 -6.1927 L56.7177 -6.1927 L56.7177 -10.9896 L57.9677 -10.9896 ZM64.1748 -0.8802 Q64.9144 -0.8802 65.654 -1.1667 Q66.3988 -1.4583 66.7842 -1.8698 L67.5186 -1.0885 Q66.9925 -0.5104 66.0394 -0.1562 Q65.0863 0.1927 64.1905 0.1927 Q63.0863 0.1927 62.128 -0.3646 Q61.1696 -0.9271 60.5811 -1.9271 Q59.9977 -2.9271 59.9977 -4.1615 Q59.9977 -5.3594 60.5498 -6.349 Q61.1019 -7.3438 62.0394 -7.901 Q62.9769 -8.4635 64.0811 -8.4635 Q65.9352 -8.4635 66.9665 -7.1667 Q67.9977 -5.8698 67.9977 -3.6823 L61.2321 -3.6823 Q61.3623 -2.4479 62.1696 -1.6615 Q62.9769 -0.8802 64.1748 -0.8802 ZM64.128 -7.3906 Q63.0082 -7.3906 62.2061 -6.6615 Q61.4092 -5.9375 61.2477 -4.75 L66.8155 -4.75 Q66.6905 -5.9375 65.9977 -6.6615 Q65.3102 -7.3906 64.128 -7.3906 ZM73.3303 -8.4635 Q74.9761 -8.4635 75.8303 -7.526 Q76.6896 -6.5938 76.6896 -5.0417 L76.6896 0 L75.4865 0 L75.4865 -1.2969 Q75.0542 -0.5938 74.2469 -0.1979 Q73.4396 0.1927 72.5751 0.1927 Q71.2469 0.1927 70.398 -0.526 Q69.5542 -1.25 69.5542 -2.4479 Q69.5542 -3.25 69.9917 -3.8802 Q70.4344 -4.5104 71.174 -4.8542 Q71.9188 -5.1979 72.799 -5.1979 Q74.049 -5.1979 75.4865 -4.7344 L75.4865 -5.0417 Q75.4865 -6.0469 74.9761 -6.7396 Q74.4657 -7.4375 73.2469 -7.4375 Q72.6896 -7.4375 72.1011 -7.2396 Q71.5178 -7.0417 70.8303 -6.6875 L70.3511 -7.6615 Q71.9501 -8.4635 73.3303 -8.4635 ZM72.7834 -0.8646 Q73.6792 -0.8646 74.4709 -1.3177 Q75.2626 -1.776 75.4865 -2.5938 L75.4865 -3.8542 Q74.273 -4.1927 72.9917 -4.1927 Q72.049 -4.1927 71.3823 -3.7135 Q70.7209 -3.2344 70.7209 -2.4948 Q70.7209 -1.7448 71.3042 -1.3021 Q71.8876 -0.8646 72.7834 -0.8646 ZM79.1337 -11.1823 L80.3368 -11.1823 L80.3368 0 L79.1337 0 L79.1337 -11.1823 ZM86.9897 -0.3385 Q86.3178 0.1927 85.4584 0.1927 Q84.5782 0.1927 84.0053 -0.3958 Q83.4376 -0.9896 83.4376 -1.9219 L83.4376 -7.1979 L82.1459 -7.1979 L82.1459 -8.2708 L83.4376 -8.2708 L83.4376 -10.5417 L84.6407 -10.5417 L84.6407 -8.2708 L86.672 -8.2708 L86.672 -7.1979 L84.6407 -7.1979 L84.6407 -1.9219 Q84.6407 -1.474 84.9011 -1.1771 Q85.1668 -0.8802 85.5365 -0.8802 Q85.8074 -0.8802 86.0313 -0.974 Q86.2553 -1.0729 86.4011 -1.2135 L86.9897 -0.3385 ZM92.6232 -8.4635 Q93.5191 -8.4635 94.2326 -8.0521 Q94.9462 -7.6458 95.3368 -6.9167 Q95.7274 -6.1927 95.7274 -5.2656 L95.7274 0 L94.5295 0 L94.5295 -5.1042 Q94.5295 -6.1146 93.9514 -6.75 Q93.3784 -7.3906 92.4618 -7.3906 Q91.7743 -7.3906 91.1909 -7.1042 Q90.6076 -6.8177 90.2534 -6.3177 Q89.9045 -5.8229 89.9045 -5.2656 L89.9045 0 L88.7066 0 L88.7066 -11.1823 L89.9045 -11.1823 L89.9045 -6.9427 Q90.2743 -7.6146 91.0139 -8.0365 Q91.7587 -8.4635 92.6232 -8.4635 Z"
+                                                   stroke="none"/>
+                                          </g>
+                                       </g>
+                                    </g>
+                                 </g>
+                              </g>
+                           </g>
+                        </g>
+                     </g>
+                     <g k9-contains="none"
+                        transform="translate(185.0,304.0)"
+                        k9-texture="none"
+                        k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: label; rect-pos: [225.0, 344.0]; rect-size: [175.0, 45.0]; position: none; placement: down;painter: direct-svg; "
+                        id="4-2"
+                        k9-format="text-shape-inline"
+                        k9-ui="delete edit xml drag place fill stroke size font direction align"
+                        k9-elem="label"
+                        k9-type="label">
+                        <g class="k9-shape" k9-highlight="pulse">
+                           <rect x="0"
+                                 y="0"
+                                 width="175"
+                                 pp:y="$y"
+                                 pp:height="$height"
+                                 pp:x="$x"
+                                 rx="5pt"
+                                 ry="5pt"
+                                 height="45"
+                                 pp:width="$width"/>
+                        </g>
+                        <g class="k9-content">
+                           <g k9-elem="caption"
+                              k9-texture="foreground"
+                              transform="translate(12.2,29.0)"
+                              k9-format="text-fixed"
+                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [238.0, 357.0]; rect-size: [149.0, 19.0]; position: none; painter: direct-svg; ">
+                              <g class="k9-content k9-no-shape" k9-highlight="pulse">
+                                 <g rendered="true">
+                                    <g fill="rgb(36,51,20)" stroke="rgb(36,51,20)">
+                                       <path d="M6.4635 0.1927 Q4.974 0.1927 3.6719 -0.5833 Q2.3698 -1.3594 1.599 -2.6719 Q0.8333 -3.9844 0.8333 -5.5052 Q0.8333 -7.026 1.599 -8.3281 Q2.3698 -9.6302 3.6719 -10.4062 Q4.974 -11.1823 6.4635 -11.1823 Q7.9688 -11.1823 9.2552 -10.4062 Q10.5417 -9.6302 11.3073 -8.3281 Q12.0781 -7.026 12.0781 -5.5052 Q12.0781 -3.9844 11.3073 -2.6719 Q10.5417 -1.3594 9.2552 -0.5833 Q7.9688 0.1927 6.4635 0.1927 ZM6.4635 -0.9583 Q7.6302 -0.9583 8.6302 -1.5833 Q9.6302 -2.2083 10.224 -3.2448 Q10.8177 -4.2865 10.8177 -5.5052 Q10.8177 -6.7031 10.224 -7.75 Q9.6302 -8.8021 8.6302 -9.4167 Q7.6302 -10.0312 6.4635 -10.0312 Q5.2969 -10.0312 4.2969 -9.4167 Q3.2969 -8.8021 2.6927 -7.75 Q2.0938 -6.7031 2.0938 -5.5052 Q2.0938 -4.2865 2.6927 -3.2448 Q3.2969 -2.2083 4.2969 -1.5833 Q5.2969 -0.9583 6.4635 -0.9583 ZM15.4381 -6.6562 Q15.8079 -7.4896 16.6568 -7.974 Q17.5058 -8.4635 18.6412 -8.4635 L18.6412 -7.3906 Q17.7141 -7.3906 16.9849 -7.0365 Q16.2558 -6.6875 15.8443 -6.0521 Q15.4381 -5.4219 15.4381 -4.625 L15.4381 0 L14.2402 0 L14.2402 -8.2708 L15.4381 -8.2708 L15.4381 -6.6562 ZM27.937 -8.2708 L27.937 -0.8802 Q27.937 0.1771 27.4162 1 Q26.8953 1.8229 25.9735 2.2865 Q25.0568 2.75 23.8745 2.75 Q22.8953 2.75 21.9995 2.4479 Q21.1037 2.1458 20.5255 1.6458 L21.0568 0.7031 Q21.536 1.1667 22.2391 1.4219 Q22.9422 1.6823 23.713 1.6823 Q25.1349 1.6823 25.9318 1.0104 Q26.7339 0.3385 26.7339 -0.8802 L26.7339 -2.224 Q26.2547 -1.4583 25.4787 -1.0312 Q24.7026 -0.6094 23.7287 -0.6094 Q22.6245 -0.6094 21.7599 -1.1094 Q20.8953 -1.6146 20.4057 -2.5104 Q19.9214 -3.4062 19.9214 -4.5417 Q19.9214 -5.6823 20.4057 -6.5781 Q20.8953 -7.474 21.7599 -7.9688 Q22.6245 -8.4635 23.7287 -8.4635 Q24.7026 -8.4635 25.4787 -8.0365 Q26.2547 -7.6146 26.7339 -6.849 L26.7339 -8.2708 L27.937 -8.2708 ZM23.9526 -1.6823 Q24.7495 -1.6823 25.3901 -2.0469 Q26.0307 -2.4167 26.3797 -3.0625 Q26.7339 -3.7135 26.7339 -4.5417 Q26.7339 -5.3594 26.3797 -6.0052 Q26.0307 -6.6562 25.3901 -7.0208 Q24.7495 -7.3906 23.9526 -7.3906 Q23.1505 -7.3906 22.5203 -7.0208 Q21.8901 -6.6562 21.536 -6.0052 Q21.1818 -5.3594 21.1818 -4.5417 Q21.1818 -3.7135 21.536 -3.0625 Q21.8901 -2.4167 22.5203 -2.0469 Q23.1505 -1.6823 23.9526 -1.6823 ZM33.8422 -8.4635 Q35.488 -8.4635 36.3422 -7.526 Q37.2016 -6.5938 37.2016 -5.0417 L37.2016 0 L35.9984 0 L35.9984 -1.2969 Q35.5661 -0.5938 34.7589 -0.1979 Q33.9516 0.1927 33.087 0.1927 Q31.7589 0.1927 30.9099 -0.526 Q30.0661 -1.25 30.0661 -2.4479 Q30.0661 -3.25 30.5036 -3.8802 Q30.9464 -4.5104 31.6859 -4.8542 Q32.4307 -5.1979 33.3109 -5.1979 Q34.5609 -5.1979 35.9984 -4.7344 L35.9984 -5.0417 Q35.9984 -6.0469 35.488 -6.7396 Q34.9776 -7.4375 33.7589 -7.4375 Q33.2016 -7.4375 32.613 -7.2396 Q32.0297 -7.0417 31.3422 -6.6875 L30.863 -7.6615 Q32.462 -8.4635 33.8422 -8.4635 ZM33.2953 -0.8646 Q34.1911 -0.8646 34.9828 -1.3177 Q35.7745 -1.776 35.9984 -2.5938 L35.9984 -3.8542 Q34.7849 -4.1927 33.5036 -4.1927 Q32.5609 -4.1927 31.8943 -3.7135 Q31.2328 -3.2344 31.2328 -2.4948 Q31.2328 -1.7448 31.8161 -1.3021 Q32.3995 -0.8646 33.2953 -0.8646 ZM43.5831 -8.4635 Q44.479 -8.4635 45.1925 -8.0521 Q45.906 -7.6458 46.2967 -6.9167 Q46.6873 -6.1927 46.6873 -5.2656 L46.6873 0 L45.4894 0 L45.4894 -5.1042 Q45.4894 -6.1146 44.9112 -6.75 Q44.3383 -7.3906 43.4217 -7.3906 Q42.7342 -7.3906 42.1508 -7.1042 Q41.5675 -6.8177 41.2133 -6.3177 Q40.8644 -5.8229 40.8644 -5.2656 L40.8644 0 L39.6665 0 L39.6665 -8.2708 L40.8644 -8.2708 L40.8644 -6.9427 Q41.2342 -7.6146 41.9737 -8.0365 Q42.7185 -8.4635 43.5831 -8.4635 ZM49.7114 -9.776 Q49.3781 -9.776 49.1437 -10.0156 Q48.9145 -10.2552 48.9145 -10.5781 Q48.9145 -10.8958 49.1437 -11.125 Q49.3781 -11.3594 49.7114 -11.3594 Q50.0343 -11.3594 50.2635 -11.125 Q50.4978 -10.8958 50.4978 -10.5781 Q50.4978 -10.2552 50.2635 -10.0156 Q50.0343 -9.776 49.7114 -9.776 ZM49.102 -8.2708 L50.3051 -8.2708 L50.3051 0 L49.102 0 L49.102 -8.2708 ZM55.6499 0.1927 Q54.7697 0.1927 53.8635 -0.125 Q52.9624 -0.4479 52.2229 -1.0417 L52.8479 -1.9219 Q54.2697 -0.8802 55.6499 -0.8802 Q56.4624 -0.8802 56.9676 -1.2292 Q57.4729 -1.5833 57.4729 -2.1771 Q57.4729 -2.5938 57.1968 -2.8698 Q56.926 -3.151 56.5197 -3.3125 Q56.1135 -3.474 55.3895 -3.6823 Q53.8739 -4.1146 53.2489 -4.6302 Q52.6239 -5.151 52.6239 -6.0312 Q52.6239 -7.1354 53.4364 -7.7969 Q54.2541 -8.4635 55.5197 -8.4635 Q56.2697 -8.4635 57.0354 -8.2135 Q57.8062 -7.9688 58.4781 -7.5365 L57.9051 -6.6094 Q56.6708 -7.3906 55.5197 -7.3906 Q54.7854 -7.3906 54.301 -7.0677 Q53.8218 -6.75 53.8218 -6.1771 Q53.8218 -5.8229 54.0301 -5.599 Q54.2385 -5.375 54.6551 -5.1979 Q55.0718 -5.026 55.9676 -4.7344 Q56.8479 -4.4635 57.3895 -4.2083 Q57.9364 -3.9531 58.301 -3.4948 Q58.6708 -3.0417 58.6708 -2.3021 Q58.6708 -1.1823 57.8166 -0.4948 Q56.9624 0.1927 55.6499 0.1927 ZM64.0182 -8.4635 Q65.6641 -8.4635 66.5182 -7.526 Q67.3776 -6.5938 67.3776 -5.0417 L67.3776 0 L66.1745 0 L66.1745 -1.2969 Q65.7422 -0.5938 64.9349 -0.1979 Q64.1276 0.1927 63.263 0.1927 Q61.9349 0.1927 61.086 -0.526 Q60.2422 -1.25 60.2422 -2.4479 Q60.2422 -3.25 60.6797 -3.8802 Q61.1224 -4.5104 61.862 -4.8542 Q62.6068 -5.1979 63.487 -5.1979 Q64.737 -5.1979 66.1745 -4.7344 L66.1745 -5.0417 Q66.1745 -6.0469 65.6641 -6.7396 Q65.1537 -7.4375 63.9349 -7.4375 Q63.3776 -7.4375 62.7891 -7.2396 Q62.2057 -7.0417 61.5182 -6.6875 L61.0391 -7.6615 Q62.638 -8.4635 64.0182 -8.4635 ZM63.4714 -0.8646 Q64.3672 -0.8646 65.1589 -1.3177 Q65.9505 -1.776 66.1745 -2.5938 L66.1745 -3.8542 Q64.961 -4.1927 63.6797 -4.1927 Q62.737 -4.1927 62.0703 -3.7135 Q61.4089 -3.2344 61.4089 -2.4948 Q61.4089 -1.7448 61.9922 -1.3021 Q62.5755 -0.8646 63.4714 -0.8646 ZM74.0456 -0.3385 Q73.3738 0.1927 72.5144 0.1927 Q71.6342 0.1927 71.0613 -0.3958 Q70.4936 -0.9896 70.4936 -1.9219 L70.4936 -7.1979 L69.2019 -7.1979 L69.2019 -8.2708 L70.4936 -8.2708 L70.4936 -10.5417 L71.6967 -10.5417 L71.6967 -8.2708 L73.7279 -8.2708 L73.7279 -7.1979 L71.6967 -7.1979 L71.6967 -1.9219 Q71.6967 -1.474 71.9571 -1.1771 Q72.2227 -0.8802 72.5925 -0.8802 Q72.8633 -0.8802 73.0873 -0.974 Q73.3113 -1.0729 73.4571 -1.2135 L74.0456 -0.3385 ZM76.3354 -9.776 Q76.0021 -9.776 75.7677 -10.0156 Q75.5386 -10.2552 75.5386 -10.5781 Q75.5386 -10.8958 75.7677 -11.125 Q76.0021 -11.3594 76.3354 -11.3594 Q76.6584 -11.3594 76.8875 -11.125 Q77.1219 -10.8958 77.1219 -10.5781 Q77.1219 -10.2552 76.8875 -10.0156 Q76.6584 -9.776 76.3354 -9.776 ZM75.7261 -8.2708 L76.9292 -8.2708 L76.9292 0 L75.7261 0 L75.7261 -8.2708 ZM83.1854 0.1927 Q82.05 0.1927 81.0552 -0.3958 Q80.0657 -0.9896 79.4771 -1.9896 Q78.8938 -2.9896 78.8938 -4.1458 Q78.8938 -5.2969 79.4771 -6.2865 Q80.0657 -7.2812 81.0552 -7.8698 Q82.05 -8.4635 83.1854 -8.4635 Q84.3209 -8.4635 85.3052 -7.8698 Q86.2896 -7.2812 86.8729 -6.2865 Q87.4563 -5.2969 87.4563 -4.1458 Q87.4563 -2.9896 86.8729 -1.9896 Q86.2896 -0.9896 85.3052 -0.3958 Q84.3209 0.1927 83.1854 0.1927 ZM83.1854 -0.8802 Q83.9823 -0.8802 84.6802 -1.3281 Q85.3782 -1.776 85.7844 -2.5208 Q86.1907 -3.2656 86.1907 -4.1458 Q86.1907 -5.0104 85.7844 -5.7604 Q85.3782 -6.5104 84.6802 -6.9479 Q83.9823 -7.3906 83.1854 -7.3906 Q82.3677 -7.3906 81.6698 -6.9479 Q80.9771 -6.5104 80.5657 -5.7604 Q80.1594 -5.0104 80.1594 -4.1458 Q80.1594 -3.2656 80.5657 -2.5208 Q80.9771 -1.776 81.6698 -1.3281 Q82.3677 -0.8802 83.1854 -0.8802 ZM93.3752 -8.4635 Q94.2711 -8.4635 94.9846 -8.0521 Q95.6981 -7.6458 96.0888 -6.9167 Q96.4794 -6.1927 96.4794 -5.2656 L96.4794 0 L95.2815 0 L95.2815 -5.1042 Q95.2815 -6.1146 94.7033 -6.75 Q94.1304 -7.3906 93.2138 -7.3906 Q92.5263 -7.3906 91.9429 -7.1042 Q91.3596 -6.8177 91.0054 -6.3177 Q90.6565 -5.8229 90.6565 -5.2656 L90.6565 0 L89.4586 0 L89.4586 -8.2708 L90.6565 -8.2708 L90.6565 -6.9427 Q91.0263 -7.6146 91.7658 -8.0365 Q92.5106 -8.4635 93.3752 -8.4635 ZM112.5758 -10.9896 L112.5758 0 L111.3258 0 L111.3258 -5.0104 L104.8466 -5.0104 L104.8466 0 L103.6018 0 L103.6018 -10.9896 L104.8466 -10.9896 L104.8466 -6.1927 L111.3258 -6.1927 L111.3258 -10.9896 L112.5758 -10.9896 ZM118.783 -0.8802 Q119.5225 -0.8802 120.2621 -1.1667 Q121.0069 -1.4583 121.3923 -1.8698 L122.1267 -1.0885 Q121.6007 -0.5104 120.6475 -0.1562 Q119.6944 0.1927 118.7986 0.1927 Q117.6944 0.1927 116.7361 -0.3646 Q115.7777 -0.9271 115.1892 -1.9271 Q114.6059 -2.9271 114.6059 -4.1615 Q114.6059 -5.3594 115.158 -6.349 Q115.71 -7.3438 116.6475 -7.901 Q117.585 -8.4635 118.6892 -8.4635 Q120.5434 -8.4635 121.5746 -7.1667 Q122.6059 -5.8698 122.6059 -3.6823 L115.8402 -3.6823 Q115.9705 -2.4479 116.7777 -1.6615 Q117.585 -0.8802 118.783 -0.8802 ZM118.7361 -7.3906 Q117.6163 -7.3906 116.8142 -6.6615 Q116.0173 -5.9375 115.8559 -4.75 L121.4236 -4.75 Q121.2986 -5.9375 120.6059 -6.6615 Q119.9184 -7.3906 118.7361 -7.3906 ZM127.9384 -8.4635 Q129.5842 -8.4635 130.4384 -7.526 Q131.2978 -6.5938 131.2978 -5.0417 L131.2978 0 L130.0946 0 L130.0946 -1.2969 Q129.6624 -0.5938 128.8551 -0.1979 Q128.0478 0.1927 127.1832 0.1927 Q125.8551 0.1927 125.0061 -0.526 Q124.1624 -1.25 124.1624 -2.4479 Q124.1624 -3.25 124.5999 -3.8802 Q125.0426 -4.5104 125.7821 -4.8542 Q126.5269 -5.1979 127.4071 -5.1979 Q128.6571 -5.1979 130.0946 -4.7344 L130.0946 -5.0417 Q130.0946 -6.0469 129.5842 -6.7396 Q129.0738 -7.4375 127.8551 -7.4375 Q127.2978 -7.4375 126.7092 -7.2396 Q126.1259 -7.0417 125.4384 -6.6875 L124.9592 -7.6615 Q126.5582 -8.4635 127.9384 -8.4635 ZM127.3915 -0.8646 Q128.2874 -0.8646 129.079 -1.3177 Q129.8707 -1.776 130.0946 -2.5938 L130.0946 -3.8542 Q128.8811 -4.1927 127.5999 -4.1927 Q126.6571 -4.1927 125.9905 -3.7135 Q125.329 -3.2344 125.329 -2.4948 Q125.329 -1.7448 125.9124 -1.3021 Q126.4957 -0.8646 127.3915 -0.8646 ZM133.7418 -11.1823 L134.945 -11.1823 L134.945 0 L133.7418 0 L133.7418 -11.1823 ZM141.5978 -0.3385 Q140.9259 0.1927 140.0665 0.1927 Q139.1863 0.1927 138.6134 -0.3958 Q138.0457 -0.9896 138.0457 -1.9219 L138.0457 -7.1979 L136.754 -7.1979 L136.754 -8.2708 L138.0457 -8.2708 L138.0457 -10.5417 L139.2488 -10.5417 L139.2488 -8.2708 L141.2801 -8.2708 L141.2801 -7.1979 L139.2488 -7.1979 L139.2488 -1.9219 Q139.2488 -1.474 139.5092 -1.1771 Q139.7749 -0.8802 140.1447 -0.8802 Q140.4155 -0.8802 140.6395 -0.974 Q140.8634 -1.0729 141.0092 -1.2135 L141.5978 -0.3385 ZM147.2314 -8.4635 Q148.1272 -8.4635 148.8407 -8.0521 Q149.5543 -7.6458 149.9449 -6.9167 Q150.3355 -6.1927 150.3355 -5.2656 L150.3355 0 L149.1376 0 L149.1376 -5.1042 Q149.1376 -6.1146 148.5595 -6.75 Q147.9866 -7.3906 147.0699 -7.3906 Q146.3824 -7.3906 145.7991 -7.1042 Q145.2157 -6.8177 144.8616 -6.3177 Q144.5126 -5.8229 144.5126 -5.2656 L144.5126 0 L143.3147 0 L143.3147 -11.1823 L144.5126 -11.1823 L144.5126 -6.9427 Q144.8824 -7.6146 145.622 -8.0365 Q146.3668 -8.4635 147.2314 -8.4635 Z"
+                                             stroke="none"/>
+                                    </g>
+                                 </g>
+                              </g>
+                           </g>
+                        </g>
+                     </g>
+                  </g>
+               </g>
+               <g k9-contains="none"
+                  transform="translate(927.0,344.0)"
+                  k9-texture="none"
+                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: label; rect-pos: [947.0, 364.0]; rect-size: [118.0, 45.0]; position: none; placement: down;painter: direct-svg; "
+                  id="4-0"
+                  k9-format="text-shape-inline"
+                  k9-ui="delete edit xml drag place fill stroke size font direction align"
+                  k9-elem="label"
+                  k9-type="label">
+                  <g class="k9-shape" k9-highlight="pulse">
+                     <rect x="0"
+                           y="0"
+                           width="118"
+                           pp:y="$y"
+                           pp:height="$height"
+                           pp:x="$x"
+                           rx="5pt"
+                           ry="5pt"
+                           height="45"
+                           pp:width="$width"/>
+                  </g>
+                  <g class="k9-content">
+                     <g k9-elem="caption"
+                        k9-texture="foreground"
+                        transform="translate(12.3,29.0)"
+                        k9-format="text-fixed"
+                        k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [960.0, 377.0]; rect-size: [92.0, 19.0]; position: none; painter: direct-svg; ">
+                        <g class="k9-content k9-no-shape" k9-highlight="pulse">
+                           <g rendered="true">
+                              <g fill="rgb(36,51,20)" stroke="rgb(36,51,20)">
+                                 <path d="M5.0729 0.1771 Q2.5104 0.1771 0.7344 -1.5677 L1.5208 -2.5417 Q2.2708 -1.7917 3.151 -1.375 Q4.0312 -0.9583 5.1198 -0.9583 Q5.9375 -0.9583 6.5104 -1.224 Q7.0885 -1.4896 7.3854 -1.9271 Q7.6823 -2.3698 7.6823 -2.8802 Q7.6823 -3.7135 6.9844 -4.151 Q6.2865 -4.5938 4.7188 -4.9583 Q3.5208 -5.25 2.7448 -5.599 Q1.9688 -5.9531 1.5417 -6.5521 Q1.1198 -7.151 1.1198 -8.0625 Q1.1198 -8.9271 1.599 -9.6458 Q2.0781 -10.3698 2.9167 -10.7812 Q3.7604 -11.1979 4.8021 -11.1979 Q5.9688 -11.1979 6.901 -10.7917 Q7.8385 -10.3854 8.6562 -9.6302 L7.8854 -8.6562 Q7.1823 -9.3281 6.3802 -9.6927 Q5.5833 -10.0625 4.7344 -10.0625 Q4.0781 -10.0625 3.5312 -9.7969 Q2.9896 -9.5365 2.6875 -9.0938 Q2.3854 -8.6562 2.3854 -8.1615 Q2.3854 -7.375 3.0729 -6.9688 Q3.7604 -6.5625 5.3438 -6.1771 Q7.1042 -5.7604 8.0208 -5.0469 Q8.9427 -4.3385 8.9427 -2.9896 Q8.9427 -2.0938 8.5 -1.375 Q8.0625 -0.6562 7.1823 -0.2396 Q6.3021 0.1771 5.0729 0.1771 ZM15.2455 -0.3385 Q14.5736 0.1927 13.7143 0.1927 Q12.8341 0.1927 12.2611 -0.3958 Q11.6934 -0.9896 11.6934 -1.9219 L11.6934 -7.1979 L10.4018 -7.1979 L10.4018 -8.2708 L11.6934 -8.2708 L11.6934 -10.5417 L12.8966 -10.5417 L12.8966 -8.2708 L14.9278 -8.2708 L14.9278 -7.1979 L12.8966 -7.1979 L12.8966 -1.9219 Q12.8966 -1.474 13.157 -1.1771 Q13.4226 -0.8802 13.7924 -0.8802 Q14.0632 -0.8802 14.2872 -0.974 Q14.5111 -1.0729 14.657 -1.2135 L15.2455 -0.3385 ZM20.3062 -8.4635 Q21.952 -8.4635 22.8062 -7.526 Q23.6655 -6.5938 23.6655 -5.0417 L23.6655 0 L22.4624 0 L22.4624 -1.2969 Q22.0301 -0.5938 21.2228 -0.1979 Q20.4155 0.1927 19.5509 0.1927 Q18.2228 0.1927 17.3739 -0.526 Q16.5301 -1.25 16.5301 -2.4479 Q16.5301 -3.25 16.9676 -3.8802 Q17.4103 -4.5104 18.1499 -4.8542 Q18.8947 -5.1979 19.7749 -5.1979 Q21.0249 -5.1979 22.4624 -4.7344 L22.4624 -5.0417 Q22.4624 -6.0469 21.952 -6.7396 Q21.4416 -7.4375 20.2228 -7.4375 Q19.6655 -7.4375 19.077 -7.2396 Q18.4937 -7.0417 17.8062 -6.6875 L17.327 -7.6615 Q18.9259 -8.4635 20.3062 -8.4635 ZM19.7593 -0.8646 Q20.6551 -0.8646 21.4468 -1.3177 Q22.2384 -1.776 22.4624 -2.5938 L22.4624 -3.8542 Q21.2489 -4.1927 19.9676 -4.1927 Q19.0249 -4.1927 18.3582 -3.7135 Q17.6968 -3.2344 17.6968 -2.4948 Q17.6968 -1.7448 18.2801 -1.3021 Q18.8634 -0.8646 19.7593 -0.8646 ZM30.3335 -0.3385 Q29.6617 0.1927 28.8023 0.1927 Q27.9221 0.1927 27.3492 -0.3958 Q26.7815 -0.9896 26.7815 -1.9219 L26.7815 -7.1979 L25.4898 -7.1979 L25.4898 -8.2708 L26.7815 -8.2708 L26.7815 -10.5417 L27.9846 -10.5417 L27.9846 -8.2708 L30.0158 -8.2708 L30.0158 -7.1979 L27.9846 -7.1979 L27.9846 -1.9219 Q27.9846 -1.474 28.245 -1.1771 Q28.5106 -0.8802 28.8804 -0.8802 Q29.1513 -0.8802 29.3752 -0.974 Q29.5992 -1.0729 29.745 -1.2135 L30.3335 -0.3385 ZM35.7588 -0.8802 Q36.4984 -0.8802 37.2379 -1.1667 Q37.9827 -1.4583 38.3681 -1.8698 L39.1025 -1.0885 Q38.5765 -0.5104 37.6234 -0.1562 Q36.6702 0.1927 35.7744 0.1927 Q34.6702 0.1927 33.7119 -0.3646 Q32.7536 -0.9271 32.165 -1.9271 Q31.5817 -2.9271 31.5817 -4.1615 Q31.5817 -5.3594 32.1338 -6.349 Q32.6859 -7.3438 33.6234 -7.901 Q34.5609 -8.4635 35.665 -8.4635 Q37.5192 -8.4635 38.5504 -7.1667 Q39.5817 -5.8698 39.5817 -3.6823 L32.8161 -3.6823 Q32.9463 -2.4479 33.7536 -1.6615 Q34.5609 -0.8802 35.7588 -0.8802 ZM35.7119 -7.3906 Q34.5921 -7.3906 33.79 -6.6615 Q32.9931 -5.9375 32.8317 -4.75 L38.3994 -4.75 Q38.2744 -5.9375 37.5817 -6.6615 Q36.8942 -7.3906 35.7119 -7.3906 ZM55.2157 -10.9896 L55.2157 0 L53.9657 0 L53.9657 -5.0104 L47.4865 -5.0104 L47.4865 0 L46.2417 0 L46.2417 -10.9896 L47.4865 -10.9896 L47.4865 -6.1927 L53.9657 -6.1927 L53.9657 -10.9896 L55.2157 -10.9896 ZM61.4228 -0.8802 Q62.1624 -0.8802 62.902 -1.1667 Q63.6468 -1.4583 64.0322 -1.8698 L64.7666 -1.0885 Q64.2405 -0.5104 63.2874 -0.1562 Q62.3343 0.1927 61.4384 0.1927 Q60.3343 0.1927 59.3759 -0.3646 Q58.4176 -0.9271 57.8291 -1.9271 Q57.2457 -2.9271 57.2457 -4.1615 Q57.2457 -5.3594 57.7978 -6.349 Q58.3499 -7.3438 59.2874 -7.901 Q60.2249 -8.4635 61.3291 -8.4635 Q63.1832 -8.4635 64.2145 -7.1667 Q65.2457 -5.8698 65.2457 -3.6823 L58.4801 -3.6823 Q58.6103 -2.4479 59.4176 -1.6615 Q60.2249 -0.8802 61.4228 -0.8802 ZM61.3759 -7.3906 Q60.2562 -7.3906 59.4541 -6.6615 Q58.6572 -5.9375 58.4957 -4.75 L64.0635 -4.75 Q63.9384 -5.9375 63.2457 -6.6615 Q62.5582 -7.3906 61.3759 -7.3906 ZM70.5783 -8.4635 Q72.2241 -8.4635 73.0783 -7.526 Q73.9376 -6.5938 73.9376 -5.0417 L73.9376 0 L72.7345 0 L72.7345 -1.2969 Q72.3022 -0.5938 71.4949 -0.1979 Q70.6876 0.1927 69.8231 0.1927 Q68.4949 0.1927 67.646 -0.526 Q66.8022 -1.25 66.8022 -2.4479 Q66.8022 -3.25 67.2397 -3.8802 Q67.6824 -4.5104 68.422 -4.8542 Q69.1668 -5.1979 70.047 -5.1979 Q71.297 -5.1979 72.7345 -4.7344 L72.7345 -5.0417 Q72.7345 -6.0469 72.2241 -6.7396 Q71.7137 -7.4375 70.4949 -7.4375 Q69.9376 -7.4375 69.3491 -7.2396 Q68.7658 -7.0417 68.0783 -6.6875 L67.5991 -7.6615 Q69.1981 -8.4635 70.5783 -8.4635 ZM70.0314 -0.8646 Q70.9272 -0.8646 71.7189 -1.3177 Q72.5106 -1.776 72.7345 -2.5938 L72.7345 -3.8542 Q71.521 -4.1927 70.2397 -4.1927 Q69.297 -4.1927 68.6303 -3.7135 Q67.9689 -3.2344 67.9689 -2.4948 Q67.9689 -1.7448 68.5522 -1.3021 Q69.1356 -0.8646 70.0314 -0.8646 ZM76.3817 -11.1823 L77.5848 -11.1823 L77.5848 0 L76.3817 0 L76.3817 -11.1823 ZM84.2377 -0.3385 Q83.5658 0.1927 82.7064 0.1927 Q81.8262 0.1927 81.2533 -0.3958 Q80.6856 -0.9896 80.6856 -1.9219 L80.6856 -7.1979 L79.3939 -7.1979 L79.3939 -8.2708 L80.6856 -8.2708 L80.6856 -10.5417 L81.8887 -10.5417 L81.8887 -8.2708 L83.92 -8.2708 L83.92 -7.1979 L81.8887 -7.1979 L81.8887 -1.9219 Q81.8887 -1.474 82.1491 -1.1771 Q82.4148 -0.8802 82.7845 -0.8802 Q83.0554 -0.8802 83.2793 -0.974 Q83.5033 -1.0729 83.6491 -1.2135 L84.2377 -0.3385 ZM89.8712 -8.4635 Q90.7671 -8.4635 91.4806 -8.0521 Q92.1941 -7.6458 92.5848 -6.9167 Q92.9754 -6.1927 92.9754 -5.2656 L92.9754 0 L91.7775 0 L91.7775 -5.1042 Q91.7775 -6.1146 91.1993 -6.75 Q90.6264 -7.3906 89.7098 -7.3906 Q89.0223 -7.3906 88.4389 -7.1042 Q87.8556 -6.8177 87.5014 -6.3177 Q87.1525 -5.8229 87.1525 -5.2656 L87.1525 0 L85.9546 0 L85.9546 -11.1823 L87.1525 -11.1823 L87.1525 -6.9427 Q87.5223 -7.6146 88.2618 -8.0365 Q89.0066 -8.4635 89.8712 -8.4635 Z"
+                                       stroke="none"/>
+                              </g>
+                           </g>
+                        </g>
+                     </g>
+                  </g>
+               </g>
+               <g k9-contains="connected port label terminator"
+                  transform="translate(721.0,63.0)"
+                  k9-texture="background"
+                  k9-info="margin: [20.0 20.0 20.0 20.0]; padding: [20.0 20.0 20.0 20.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: connected; rect-pos: [741.0, 83.0]; rect-size: [186.0, 264.0]; position: none; painter: direct-svg; "
+                  id="8"
+                  k9-format="container"
+                  k9-ui="drag delete align connect insert autoconnect layout label fill stroke size align"
+                  k9-elem="container"
+                  k9-type="connected">
+                  <g class="k9-shape" k9-highlight="pulse">
+                     <rect x="0"
+                           y="0"
+                           width="186"
+                           pp:y="$y"
+                           pp:height="$height"
+                           pp:x="$x"
+                           rx="10pt"
+                           ry="10pt"
+                           height="264"
+                           pp:width="$width"/>
+                  </g>
+                  <g class="k9-content">
+                     <g href="/public/templates/risk-first/redesign/artifacts/component_v2.svg"
+                        transform="translate(20.0,20.0)"
+                        k9-texture="none"
+                        k9-info="margin: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [146.6666717529297 186.6666717529297]; sizing: [minimize minimize]; horiz: center; vert: center; layout: vertical; rectangular: connected; rect-pos: [761.0, 103.0]; rect-size: [146.0, 186.0]; position: none; painter: direct-svg; "
+                        id="2-ha"
+                        k9-format="text-image-portrait"
+                        k9-ui="size drag delete align connect autoconnect edit"
+                        k9-elem="generic-artifact"
+                        k9-type="connected">
+                        <g class="k9-shape" k9-highlight="pulse">
+                           <rect x="0"
+                                 y="0"
+                                 width="146"
+                                 pp:y="$y"
+                                 pp:height="$height"
+                                 pp:x="$x"
+                                 rx="5pt"
+                                 ry="5pt"
+                                 height="186"
+                                 pp:width="$width"/>
+                        </g>
+                        <g class="k9-content">
+                           <g k9-ui="image"
+                              k9-elem="depiction"
+                              id="2-ha@dep"
+                              k9-texture="none"
+                              transform="translate(39.7,37.7)"
+                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [800.0, 140.0]; rect-size: [68.0, 68.0]; position: none; painter: direct-svg; ">
+                              <g class="k9-content k9-no-shape" k9-highlight="pulse">
+                                 <image x="0"
+                                        y="0"
+                                        width="50pt"
+                                        xlink:href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5l&#xA;cmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIxLjEuMCwgU1ZHIEV4cG9ydCBQbHVn&#xA;LUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNp&#xA;b249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8y&#xA;MDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxp&#xA;bmsiIHg9IjBwdCIgeT0iMHB0IgoJIHZpZXdCb3g9IjAgMCA4NSA4NSIgc3R5bGU9&#xA;ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgODUgODU7IiB4bWw6c3BhY2U9InBy&#xA;ZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDpub25l&#xA;O3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDozO3N0cm9rZS1saW5lY2FwOnJv&#xA;dW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDt9Cgkuc3Qxe2ZpbGw6bm9uZTtzdHJv&#xA;a2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6MjtzdHJva2UtbGluZWNhcDpyb3VuZDtz&#xA;dHJva2UtbGluZWpvaW46cm91bmQ7fQo8L3N0eWxlPgo8Zz4KCTxwYXRoIGNsYXNz&#xA;PSJzdDAiIGQ9Ik01Ny42LDU5LjFjLTAuMSwwLTAuMi0wLjEtMC4zLTAuMWMtMC45&#xA;LTAuNS0xLjctMS4yLTIuMy0ycy0xLjEtMS43LTEuNS0yLjdjLTAuMy0xLTAuNC0y&#xA;LTAuMy0zLjFzMC40LTIsMC44LTMKCQljMC4yLTAuNSwwLjUtMC45LDAuOC0xLjNz&#xA;MC43LTAuOCwxLTEuMWMwLjQtMC4zLDAuOC0wLjYsMS4yLTAuOWMwLjQtMC4zLDAu&#xA;OC0wLjUsMS4yLTAuOWMwLjctMC42LDEuMS0xLjQsMS4zLTIuM3MwLjItMS44LTAu&#xA;MS0yLjYKCQljLTAuMi0wLjYtMC41LTEuMS0wLjgtMS42cy0wLjctMS0wLjktMS41&#xA;Yy0wLjMtMC41LTAuNi0xLjEtMC45LTEuNmMtMC4zLTAuNS0wLjctMS0xLjItMS40&#xA;Yy0wLjctMC42LTEuNS0wLjktMi40LTEKCQljLTAuOS0wLjEtMS43LDAtMi41LDAu&#xA;NGMtMC42LDAuMy0xLjIsMC42LTEuOCwwLjhzLTEuMiwwLjQtMS45LDAuNWMtMC42&#xA;LDAuMS0xLjIsMC0xLjcsMGMtMC42LTAuMS0xLjItMC4yLTEuNy0wLjQKCQljLTEu&#xA;MS0wLjQtMi4xLTEtMy0xLjhjLTAuOC0wLjgtMS41LTEuNy0yLTIuOGMtMC40LTEt&#xA;MC41LTItMC42LTNzLTAuMy0yLTAuOS0yLjljLTAuNS0wLjYtMS0xLjEtMS43LTEu&#xA;NHMtMS40LTAuNS0yLjItMC41CgkJYy0wLjYsMC0xLjMsMC0xLjksMGMtMC43LDAt&#xA;MS4zLDAtMiwwcy0xLjUsMC0yLjEsMC4yYy0wLjcsMC4yLTEuMywwLjUtMS45LDFj&#xA;LTAuNCwwLjQtMC43LDAuOC0wLjksMS4yYy0wLjIsMC41LTAuNCwxLTAuNSwxLjUK&#xA;CQljLTAuMSwwLjYtMC4xLDEuMS0wLjEsMS43Yy0wLjEsMC41LTAuMSwxLjEtMC4z&#xA;LDEuNmMtMC40LDEtMC45LDItMS42LDIuOHMtMS42LDEuNS0yLjUsMS45Yy0xLDAu&#xA;NS0yLjEsMC44LTMuMiwwLjkKCQljLTEuMSwwLjEtMi4yLTAuMS0zLjItMC40Yy0w&#xA;LjUtMC4yLTAuOS0wLjQtMS40LTAuNmMtMC40LTAuMi0wLjktMC40LTEuNC0wLjVj&#xA;LTAuNC0wLjEtMC44LTAuMS0xLjMtMC4xYy0wLjQsMC0wLjgsMC4xLTEuMiwwLjMK&#xA;CQlDNywzMi42LDYuNSwzMyw2LDMzLjVzLTAuOCwxLTEuMiwxLjZjLTAuMywwLjYt&#xA;MC43LDEuMi0xLDEuN2MtMC4zLDAuNi0wLjcsMS4xLTEsMS43Yy0wLjQsMC43LTAu&#xA;NiwxLjQtMC43LDIuMgoJCWMwLDAuNywwLjEsMS41LDAuNCwyLjJjMC40LDAuOSwx&#xA;LjEsMS41LDEuOSwyQzUuMiw0NS41LDYsNDYsNi42LDQ2LjdjMS40LDEuNywyLDMu&#xA;OCwxLjksNS45Yy0wLjEsMi4xLTEsNC4xLTIuNyw1LjYKCQljLTAuNCwwLjMtMS4x&#xA;LDAuOC0xLjUsMS4xYy0wLjgsMC41LTAuNCwwLjEtMC44LDAuNWMtMC4zLDAuMy0w&#xA;LjksMC42LTEuMSwwLjlTMi4xLDYxLjUsMiw2MS45Yy0wLjIsMC43LTAuMiwxLjQs&#xA;MCwyCgkJczAuNCwxLjMsMC44LDEuOWMwLjcsMS4yLDEuMywyLjYsMi4xLDMuN2Mw&#xA;LjgsMS4yLDEuOSwyLjEsMy40LDIuM2MwLjUsMC4xLDAuOSwwLjEsMS40LDBzMC45&#xA;LTAuMiwxLjMtMC40YzAuNi0wLjMsMS4yLTAuNiwxLjgtMC44CgkJYzAuNi0wLjIs&#xA;MS4yLTAuNCwxLjktMC40YzEuMi0wLjEsMi4zLDAsMy41LDAuNGMxLjEsMC40LDIu&#xA;MSwxLDMsMS44YzAuOSwwLjksMS42LDEuOSwyLDIuOWMwLjQsMS4xLDAuNiwyLjIs&#xA;MC43LDMuNQoJCWMwLjEsMC45LDAuNCwxLjcsMC45LDIuNGMwLjUsMC43LDEuMiwx&#xA;LjIsMiwxLjZjMC42LDAuMiwxLjEsMC4zLDEuNywwLjNzMS4yLDAsMS44LDBjMC42&#xA;LDAsMS4yLDAsMS44LDBzMS4yLDAsMS44LTAuMQoJCWMxLTAuMSwyLTAuNiwyLjct&#xA;MS4zYzAuNy0wLjcsMS4yLTEuNiwxLjMtMi43YzAuMS0wLjYsMC4xLTEuMSwwLjIt&#xA;MS43czAuMS0xLjEsMC40LTEuN2MwLjItMC41LDAuNC0xLDAuNy0xLjVzMC42LTAu&#xA;OSwxLTEuNAoJCWMwLjctMC44LDEuNi0xLjQsMi41LTEuOGMxLTAuNCwyLTAuNywz&#xA;LjEtMC44YzAuNSwwLDEuMSwwLDEuNiwwLjFzMS4xLDAuMiwxLjYsMC40YzAuNSww&#xA;LjIsMC45LDAuNCwxLjQsMC42CgkJYzAuNCwwLjIsMC45LDAuNCwxLjQsMC41YzAu&#xA;OSwwLjIsMS44LDAuMSwyLjYtMC4yYzAuOC0wLjMsMS42LTAuOCwyLjEtMS42YzAu&#xA;My0wLjUsMC43LTEsMC45LTEuNWMwLjMtMC41LDAuNi0xLDAuOC0xLjYKCQljMC4z&#xA;LTAuNSwwLjYtMS4xLDAuOS0xLjZjMC4zLTAuNSwwLjUtMS4xLDAuNi0xLjdjMC4x&#xA;LTAuOSwwLTEuOC0wLjQtMi42QzU4LjgsNjAuMiw1OC4yLDU5LjYsNTcuNiw1OS4x&#xA;Ii8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzAuNyw2MC40YzIuMSwwLDQtMC44&#xA;LDUuNi0yLjFjMS41LTEuMywyLjYtMywzLTUuMWMwLjMtMS44LDAuMS0zLjUtMC43&#xA;LTUuMWMtMC43LTEuNi0xLjktMi45LTMuNC0zLjkKCQljLTEuNS0wLjktMy4zLTEu&#xA;My01LjEtMS4yYy0xLjcsMC4xLTMuNCwwLjctNC44LDEuOWMtMS40LDEuMi0yLjQs&#xA;Mi43LTIuOSw0LjRzLTAuNCwzLjUsMC4yLDUuM2MwLjYsMS43LDEuNywzLjIsMy4y&#xA;LDQuMgoJCUMyNy4yLDU5LjksMjguOSw2MC40LDMwLjcsNjAuNCIvPgo8L2c+Cjxn&#xA;PgoJPHBhdGggY2xhc3M9InN0MSIgZD0iTTgyLjUsMjAuMmMwLDAtMC4xLDAtMC4x&#xA;LTAuMWMtMC40LTAuMy0wLjgtMC42LTEuMS0xYy0wLjMtMC40LTAuNS0wLjgtMC43&#xA;LTEuM3MtMC4yLTEtMC4yLTEuNQoJCWMwLTAuNSwwLjItMSwwLjQtMS40YzAuMS0w&#xA;LjIsMC4yLTAuNCwwLjQtMC42YzAuMS0wLjIsMC4zLTAuNCwwLjUtMC42YzAuMi0w&#xA;LjIsMC40LTAuMywwLjYtMC40YzAuMi0wLjEsMC40LTAuMywwLjYtMC40CgkJYzAu&#xA;My0wLjMsMC41LTAuNywwLjYtMS4xczAuMS0wLjktMC4xLTEuM2MtMC4xLTAuMy0w&#xA;LjItMC41LTAuNC0wLjhjLTAuMi0wLjMtMC4zLTAuNS0wLjUtMC43Yy0wLjEtMC4z&#xA;LTAuMy0wLjUtMC40LTAuOAoJCWMtMC4yLTAuMy0wLjMtMC41LTAuNi0wLjdjLTAu&#xA;My0wLjMtMC43LTAuNC0xLjEtMC41cy0wLjgsMC0xLjIsMC4yYy0wLjMsMC4xLTAu&#xA;NiwwLjMtMC45LDAuNHMtMC42LDAuMi0wLjksMC4ycy0wLjYsMC0wLjgsMAoJCVM3&#xA;Niw3LjcsNzUuOCw3LjZjLTAuNS0wLjItMS0wLjUtMS40LTAuOXMtMC43LTAuOC0x&#xA;LTEuNGMtMC4yLTAuNS0wLjItMS0wLjMtMS41Yy0wLjEtMC41LTAuMS0xLTAuNS0x&#xA;LjRDNzIuMywyLjIsNzIsMiw3MS43LDEuOQoJCXMtMC43LTAuMi0xLTAuMnMtMC42&#xA;LDAtMC45LDBzLTAuNiwwLTAuOSwwYy0wLjQsMC0wLjcsMC0xLDAuMVM2Ny4zLDIs&#xA;NjcsMi4zYy0wLjIsMC4yLTAuMywwLjQtMC41LDAuNmMtMC4xLDAuMi0wLjIsMC41&#xA;LTAuMiwwLjcKCQljMCwwLjMsMCwwLjUtMC4xLDAuOFM2Ni4xLDQuOSw2Niw1LjFj&#xA;LTAuMiwwLjUtMC40LDAuOS0wLjgsMS4zYy0wLjMsMC40LTAuOCwwLjctMS4yLDAu&#xA;OWMtMC41LDAuMi0xLDAuNC0xLjUsMC40cy0xLjEsMC0xLjYtMC4yCgkJYy0wLjIt&#xA;MC4xLTAuNC0wLjItMC43LTAuM0M2MCw3LjEsNTkuOCw3LDU5LjUsNi45QzU5LjMs&#xA;Nyw1OS4xLDcsNTguOSw3Yy0wLjIsMC0wLjQsMC4xLTAuNiwwLjFjLTAuMywwLjEt&#xA;MC42LDAuMy0wLjgsMC41CgkJcy0wLjQsMC41LTAuNiwwLjhjLTAuMiwwLjMtMC4z&#xA;LDAuNi0wLjUsMC44Yy0wLjIsMC4zLTAuMywwLjYtMC41LDAuOGMtMC4yLDAuMy0w&#xA;LjMsMC43LTAuMywxYzAsMC40LDAsMC43LDAuMiwxLjEKCQljMC4yLDAuNCwwLjYs&#xA;MC43LDAuOSwxYzAuNCwwLjMsMC44LDAuNSwxLDAuOWMwLjcsMC44LDEsMS44LDAu&#xA;OSwyLjhjLTAuMSwxLTAuNSwyLTEuMywyLjdjLTAuMiwwLjItMC40LDAuMy0wLjYs&#xA;MC40CgkJYy0wLjIsMC4xLTAuNCwwLjMtMC42LDAuNGMtMC4yLDAuMi0wLjMsMC4z&#xA;LTAuNCwwLjVzLTAuMiwwLjQtMC4yLDAuNmMtMC4xLDAuMy0wLjEsMC43LDAsMXMw&#xA;LjIsMC42LDAuNCwwLjljMC4zLDAuNiwwLjYsMS4yLDEsMS44CgkJYzAuNCwwLjYs&#xA;MC45LDEsMS42LDEuMWMwLjIsMCwwLjQsMCwwLjcsMGMwLjIsMCwwLjQtMC4xLDAu&#xA;Ni0wLjJjMC4zLTAuMSwwLjYtMC4zLDAuOS0wLjRjMC4zLTAuMSwwLjYtMC4yLDAu&#xA;OS0wLjIKCQljMC42LTAuMSwxLjEsMCwxLjcsMC4yYzAuNSwwLjIsMSwwLjUsMS40&#xA;LDAuOWMwLjUsMC40LDAuOCwwLjksMC45LDEuNGMwLjIsMC41LDAuMywxLjEsMC4z&#xA;LDEuN2MwLDAuNCwwLjIsMC44LDAuNCwxLjEKCQljMC4yLDAuMywwLjYsMC42LDEs&#xA;MC43YzAuMywwLjEsMC41LDAuMSwwLjgsMC4yYzAuMywwLDAuNiwwLDAuOSwwczAu&#xA;NiwwLDAuOSwwczAuNiwwLDAuOSwwYzAuNS0wLjEsMC45LTAuMywxLjMtMC42CgkJ&#xA;YzAuMy0wLjMsMC42LTAuOCwwLjYtMS4zYzAtMC4zLDAtMC42LDAuMS0wLjhzMC4x&#xA;LTAuNSwwLjItMC44czAuMi0wLjUsMC40LTAuN2MwLjEtMC4yLDAuMy0wLjQsMC41&#xA;LTAuN2MwLjMtMC40LDAuOC0wLjcsMS4yLTAuOQoJCWMwLjUtMC4yLDEtMC4zLDEu&#xA;NS0wLjRjMC4zLDAsMC41LDAsMC44LDBzMC41LDAuMSwwLjgsMC4yYzAuMiwwLjEs&#xA;MC40LDAuMiwwLjcsMC4zYzAuMiwwLjEsMC40LDAuMiwwLjcsMC4zCgkJYzAuNCww&#xA;LjEsMC44LDAuMSwxLjItMC4xYzAuNC0wLjEsMC44LTAuNCwxLTAuOGMwLjItMC4y&#xA;LDAuMy0wLjUsMC41LTAuN2MwLjEtMC4zLDAuMy0wLjUsMC40LTAuN2MwLjEtMC4z&#xA;LDAuMy0wLjUsMC40LTAuOAoJCXMwLjMtMC41LDAuMy0wLjhjMC4xLTAuNCwwLTAu&#xA;OS0wLjItMS4zQzgzLjEsMjAuNyw4Mi44LDIwLjQsODIuNSwyMC4yIi8+Cgk8cGF0&#xA;aCBjbGFzcz0ic3QxIiBkPSJNNjkuNiwyMC44YzEsMCwxLjktMC40LDIuNy0xYzAu&#xA;Ny0wLjYsMS4zLTEuNSwxLjQtMi41YzAuMi0wLjgsMC0xLjctMC4zLTIuNXMtMC45&#xA;LTEuNC0xLjctMS45CgkJYy0wLjctMC40LTEuNi0wLjYtMi40LTAuNmMtMC44LDAu&#xA;MS0xLjcsMC40LTIuMywwLjljLTAuNywwLjYtMS4yLDEuMy0xLjQsMi4xYy0wLjIs&#xA;MC44LTAuMiwxLjcsMC4xLDIuNWMwLjMsMC44LDAuOCwxLjUsMS41LDIKCQlDNjcu&#xA;OSwyMC41LDY4LjcsMjAuOCw2OS42LDIwLjgiLz4KPC9nPgo8L3N2Zz4K"
+                                        xlink:type="simple"
+                                        xlink:actuate="onLoad"
+                                        height="50pt"
+                                        preserveAspectRatio="xMidYMid meet"
+                                        xlink:show="embed"/>
+                                 <rect width="50pt" x="0" height="50pt" y="0"/>
+                              </g>
+                           </g>
+                           <g k9-elem="caption"
+                              k9-texture="foreground"
+                              transform="translate(42.7,146.0)"
+                              k9-format="text-fixed"
+                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [805.0, 233.0]; rect-size: [59.0, 19.0]; position: none; painter: direct-svg; ">
+                              <g class="k9-content k9-no-shape" k9-highlight="pulse">
+                                 <g rendered="true">
+                                    <g fill="rgb(36,51,20)" stroke="rgb(36,51,20)">
+                                       <path d="M1.2656 -10.9896 L5.7292 -10.9896 Q6.849 -10.9896 7.776 -10.5417 Q8.7031 -10.0938 9.2396 -9.2865 Q9.776 -8.4792 9.776 -7.474 Q9.776 -6.4635 9.2396 -5.6562 Q8.7031 -4.849 7.776 -4.401 Q6.849 -3.9531 5.7292 -3.9531 L2.5104 -3.9531 L2.5104 0 L1.2656 0 L1.2656 -10.9896 ZM5.5052 -5.1354 Q6.8646 -5.1354 7.6875 -5.7604 Q8.5104 -6.3854 8.5104 -7.474 Q8.5104 -8.5625 7.6875 -9.1823 Q6.8646 -9.8073 5.5052 -9.8073 L2.5104 -9.8073 L2.5104 -5.1354 L5.5052 -5.1354 ZM12.8301 -6.6562 Q13.1999 -7.4896 14.0488 -7.974 Q14.8978 -8.4635 16.0332 -8.4635 L16.0332 -7.3906 Q15.1061 -7.3906 14.3769 -7.0365 Q13.6478 -6.6875 13.2363 -6.0521 Q12.8301 -5.4219 12.8301 -4.625 L12.8301 0 L11.6321 0 L11.6321 -8.2708 L12.8301 -8.2708 L12.8301 -6.6562 ZM21.5373 0.1927 Q20.4019 0.1927 19.4071 -0.3958 Q18.4175 -0.9896 17.829 -1.9896 Q17.2457 -2.9896 17.2457 -4.1458 Q17.2457 -5.2969 17.829 -6.2865 Q18.4175 -7.2812 19.4071 -7.8698 Q20.4019 -8.4635 21.5373 -8.4635 Q22.6727 -8.4635 23.6571 -7.8698 Q24.6415 -7.2812 25.2248 -6.2865 Q25.8081 -5.2969 25.8081 -4.1458 Q25.8081 -2.9896 25.2248 -1.9896 Q24.6415 -0.9896 23.6571 -0.3958 Q22.6727 0.1927 21.5373 0.1927 ZM21.5373 -0.8802 Q22.3342 -0.8802 23.0321 -1.3281 Q23.73 -1.776 24.1363 -2.5208 Q24.5425 -3.2656 24.5425 -4.1458 Q24.5425 -5.0104 24.1363 -5.7604 Q23.73 -6.5104 23.0321 -6.9479 Q22.3342 -7.3906 21.5373 -7.3906 Q20.7196 -7.3906 20.0217 -6.9479 Q19.329 -6.5104 18.9175 -5.7604 Q18.5113 -5.0104 18.5113 -4.1458 Q18.5113 -3.2656 18.9175 -2.5208 Q19.329 -1.776 20.0217 -1.3281 Q20.7196 -0.8802 21.5373 -0.8802 ZM35.4563 -11.1823 L35.4563 0 L34.2583 0 L34.2583 -1.5521 Q33.774 -0.7188 32.9979 -0.2604 Q32.2219 0.1927 31.2479 0.1927 Q30.175 0.1927 29.3 -0.3594 Q28.4302 -0.9115 27.9354 -1.901 Q27.4406 -2.8958 27.4406 -4.1458 Q27.4406 -5.3906 27.9354 -6.375 Q28.4302 -7.3594 29.3 -7.9115 Q30.175 -8.4635 31.2479 -8.4635 Q32.2219 -8.4635 32.9979 -8.0052 Q33.774 -7.5521 34.2583 -6.7188 L34.2583 -11.1823 L35.4563 -11.1823 ZM31.4719 -0.8802 Q32.274 -0.8802 32.9094 -1.2969 Q33.55 -1.7135 33.9042 -2.4531 Q34.2583 -3.1979 34.2583 -4.1458 Q34.2583 -5.0885 33.9042 -5.8229 Q33.55 -6.5625 32.9094 -6.974 Q32.274 -7.3906 31.4719 -7.3906 Q30.6698 -7.3906 30.0396 -6.974 Q29.4094 -6.5625 29.0552 -5.8229 Q28.7063 -5.0885 28.7063 -4.1458 Q28.7063 -3.1979 29.0552 -2.4531 Q29.4094 -1.7135 30.0396 -1.2969 Q30.6698 -0.8802 31.4719 -0.8802 ZM45.0237 -8.2708 L45.0237 0 L43.8257 0 L43.8257 -1.3281 Q43.4559 -0.6562 42.7112 -0.2292 Q41.9664 0.1927 41.1018 0.1927 Q40.2059 0.1927 39.4924 -0.2135 Q38.7841 -0.625 38.3882 -1.349 Q37.9976 -2.0781 37.9976 -3.0104 L37.9976 -8.2708 L39.2007 -8.2708 L39.2007 -3.1667 Q39.2007 -2.1615 39.7737 -1.5208 Q40.3518 -0.8802 41.2632 -0.8802 Q41.9507 -0.8802 42.5341 -1.1667 Q43.1226 -1.4583 43.4716 -1.9531 Q43.8257 -2.4479 43.8257 -3.0104 L43.8257 -8.2708 L45.0237 -8.2708 ZM51.3134 0.1927 Q50.178 0.1927 49.1832 -0.3958 Q48.1936 -0.9896 47.605 -1.9896 Q47.0217 -2.9896 47.0217 -4.1458 Q47.0217 -5.2969 47.605 -6.2865 Q48.1936 -7.2812 49.1832 -7.8698 Q50.178 -8.4635 51.3134 -8.4635 Q52.1415 -8.4635 52.9019 -8.1406 Q53.6623 -7.8229 54.2561 -7.25 L53.4228 -6.4323 Q53.0061 -6.8802 52.4592 -7.1354 Q51.9175 -7.3906 51.3134 -7.3906 Q50.4957 -7.3906 49.7978 -6.9479 Q49.105 -6.5104 48.6936 -5.7604 Q48.2873 -5.0104 48.2873 -4.1458 Q48.2873 -3.2656 48.6936 -2.5208 Q49.105 -1.776 49.7978 -1.3281 Q50.4957 -0.8802 51.3134 -0.8802 Q51.9175 -0.8802 52.48 -1.1406 Q53.0425 -1.4062 53.4696 -1.8854 L54.303 -1.0729 Q53.7144 -0.4792 52.9384 -0.1406 Q52.1623 0.1927 51.3134 0.1927 ZM60.3656 -0.3385 Q59.6937 0.1927 58.8344 0.1927 Q57.9542 0.1927 57.3812 -0.3958 Q56.8135 -0.9896 56.8135 -1.9219 L56.8135 -7.1979 L55.5219 -7.1979 L55.5219 -8.2708 L56.8135 -8.2708 L56.8135 -10.5417 L58.0167 -10.5417 L58.0167 -8.2708 L60.0479 -8.2708 L60.0479 -7.1979 L58.0167 -7.1979 L58.0167 -1.9219 Q58.0167 -1.474 58.2771 -1.1771 Q58.5427 -0.8802 58.9125 -0.8802 Q59.1833 -0.8802 59.4073 -0.974 Q59.6312 -1.0729 59.7771 -1.2135 L60.3656 -0.3385 Z"
+                                             stroke="none"/>
+                                    </g>
+                                 </g>
+                              </g>
+                           </g>
+                        </g>
+                     </g>
+                     <g k9-contains="none"
+                        transform="translate(24.0,219.0)"
+                        k9-texture="none"
+                        k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: label; rect-pos: [765.0, 302.0]; rect-size: [138.0, 45.0]; position: none; placement: down;painter: direct-svg; "
+                        id="8-0"
+                        k9-format="text-shape-inline"
+                        k9-ui="delete edit xml drag place fill stroke size font direction align"
+                        k9-elem="label"
+                        k9-type="label">
+                        <g class="k9-shape" k9-highlight="pulse">
+                           <rect x="0"
+                                 y="0"
+                                 width="138"
+                                 pp:y="$y"
+                                 pp:height="$height"
+                                 pp:x="$x"
+                                 rx="5pt"
+                                 ry="5pt"
+                                 height="45"
+                                 pp:width="$width"/>
+                        </g>
+                        <g class="k9-content">
+                           <g k9-elem="caption"
+                              k9-texture="foreground"
+                              transform="translate(11.7,29.0)"
+                              k9-format="text-fixed"
+                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [778.0, 315.0]; rect-size: [112.0, 19.0]; position: none; painter: direct-svg; ">
+                              <g class="k9-content k9-no-shape" k9-highlight="pulse">
+                                 <g rendered="true">
+                                    <g fill="rgb(36,51,20)" stroke="rgb(36,51,20)">
+                                       <path d="M1.2656 -10.9896 L5.7292 -10.9896 Q6.849 -10.9896 7.776 -10.5417 Q8.7031 -10.0938 9.2396 -9.2865 Q9.776 -8.4792 9.776 -7.474 Q9.776 -6.4635 9.2396 -5.6562 Q8.7031 -4.849 7.776 -4.401 Q6.849 -3.9531 5.7292 -3.9531 L2.5104 -3.9531 L2.5104 0 L1.2656 0 L1.2656 -10.9896 ZM5.5052 -5.1354 Q6.8646 -5.1354 7.6875 -5.7604 Q8.5104 -6.3854 8.5104 -7.474 Q8.5104 -8.5625 7.6875 -9.1823 Q6.8646 -9.8073 5.5052 -9.8073 L2.5104 -9.8073 L2.5104 -5.1354 L5.5052 -5.1354 ZM12.8301 -6.6562 Q13.1999 -7.4896 14.0488 -7.974 Q14.8978 -8.4635 16.0332 -8.4635 L16.0332 -7.3906 Q15.1061 -7.3906 14.3769 -7.0365 Q13.6478 -6.6875 13.2363 -6.0521 Q12.8301 -5.4219 12.8301 -4.625 L12.8301 0 L11.6321 0 L11.6321 -8.2708 L12.8301 -8.2708 L12.8301 -6.6562 ZM21.5373 0.1927 Q20.4019 0.1927 19.4071 -0.3958 Q18.4175 -0.9896 17.829 -1.9896 Q17.2457 -2.9896 17.2457 -4.1458 Q17.2457 -5.2969 17.829 -6.2865 Q18.4175 -7.2812 19.4071 -7.8698 Q20.4019 -8.4635 21.5373 -8.4635 Q22.6727 -8.4635 23.6571 -7.8698 Q24.6415 -7.2812 25.2248 -6.2865 Q25.8081 -5.2969 25.8081 -4.1458 Q25.8081 -2.9896 25.2248 -1.9896 Q24.6415 -0.9896 23.6571 -0.3958 Q22.6727 0.1927 21.5373 0.1927 ZM21.5373 -0.8802 Q22.3342 -0.8802 23.0321 -1.3281 Q23.73 -1.776 24.1363 -2.5208 Q24.5425 -3.2656 24.5425 -4.1458 Q24.5425 -5.0104 24.1363 -5.7604 Q23.73 -6.5104 23.0321 -6.9479 Q22.3342 -7.3906 21.5373 -7.3906 Q20.7196 -7.3906 20.0217 -6.9479 Q19.329 -6.5104 18.9175 -5.7604 Q18.5113 -5.0104 18.5113 -4.1458 Q18.5113 -3.2656 18.9175 -2.5208 Q19.329 -1.776 20.0217 -1.3281 Q20.7196 -0.8802 21.5373 -0.8802 ZM35.4563 -11.1823 L35.4563 0 L34.2583 0 L34.2583 -1.5521 Q33.774 -0.7188 32.9979 -0.2604 Q32.2219 0.1927 31.2479 0.1927 Q30.175 0.1927 29.3 -0.3594 Q28.4302 -0.9115 27.9354 -1.901 Q27.4406 -2.8958 27.4406 -4.1458 Q27.4406 -5.3906 27.9354 -6.375 Q28.4302 -7.3594 29.3 -7.9115 Q30.175 -8.4635 31.2479 -8.4635 Q32.2219 -8.4635 32.9979 -8.0052 Q33.774 -7.5521 34.2583 -6.7188 L34.2583 -11.1823 L35.4563 -11.1823 ZM31.4719 -0.8802 Q32.274 -0.8802 32.9094 -1.2969 Q33.55 -1.7135 33.9042 -2.4531 Q34.2583 -3.1979 34.2583 -4.1458 Q34.2583 -5.0885 33.9042 -5.8229 Q33.55 -6.5625 32.9094 -6.974 Q32.274 -7.3906 31.4719 -7.3906 Q30.6698 -7.3906 30.0396 -6.974 Q29.4094 -6.5625 29.0552 -5.8229 Q28.7063 -5.0885 28.7063 -4.1458 Q28.7063 -3.1979 29.0552 -2.4531 Q29.4094 -1.7135 30.0396 -1.2969 Q30.6698 -0.8802 31.4719 -0.8802 ZM45.0237 -8.2708 L45.0237 0 L43.8257 0 L43.8257 -1.3281 Q43.4559 -0.6562 42.7112 -0.2292 Q41.9664 0.1927 41.1018 0.1927 Q40.2059 0.1927 39.4924 -0.2135 Q38.7841 -0.625 38.3882 -1.349 Q37.9976 -2.0781 37.9976 -3.0104 L37.9976 -8.2708 L39.2007 -8.2708 L39.2007 -3.1667 Q39.2007 -2.1615 39.7737 -1.5208 Q40.3518 -0.8802 41.2632 -0.8802 Q41.9507 -0.8802 42.5341 -1.1667 Q43.1226 -1.4583 43.4716 -1.9531 Q43.8257 -2.4479 43.8257 -3.0104 L43.8257 -8.2708 L45.0237 -8.2708 ZM51.3134 0.1927 Q50.178 0.1927 49.1832 -0.3958 Q48.1936 -0.9896 47.605 -1.9896 Q47.0217 -2.9896 47.0217 -4.1458 Q47.0217 -5.2969 47.605 -6.2865 Q48.1936 -7.2812 49.1832 -7.8698 Q50.178 -8.4635 51.3134 -8.4635 Q52.1415 -8.4635 52.9019 -8.1406 Q53.6623 -7.8229 54.2561 -7.25 L53.4228 -6.4323 Q53.0061 -6.8802 52.4592 -7.1354 Q51.9175 -7.3906 51.3134 -7.3906 Q50.4957 -7.3906 49.7978 -6.9479 Q49.105 -6.5104 48.6936 -5.7604 Q48.2873 -5.0104 48.2873 -4.1458 Q48.2873 -3.2656 48.6936 -2.5208 Q49.105 -1.776 49.7978 -1.3281 Q50.4957 -0.8802 51.3134 -0.8802 Q51.9175 -0.8802 52.48 -1.1406 Q53.0425 -1.4062 53.4696 -1.8854 L54.303 -1.0729 Q53.7144 -0.4792 52.9384 -0.1406 Q52.1623 0.1927 51.3134 0.1927 ZM60.3656 -0.3385 Q59.6937 0.1927 58.8344 0.1927 Q57.9542 0.1927 57.3812 -0.3958 Q56.8135 -0.9896 56.8135 -1.9219 L56.8135 -7.1979 L55.5219 -7.1979 L55.5219 -8.2708 L56.8135 -8.2708 L56.8135 -10.5417 L58.0167 -10.5417 L58.0167 -8.2708 L60.0479 -8.2708 L60.0479 -7.1979 L58.0167 -7.1979 L58.0167 -1.9219 Q58.0167 -1.474 58.2771 -1.1771 Q58.5427 -0.8802 58.9125 -0.8802 Q59.1833 -0.8802 59.4073 -0.974 Q59.6312 -1.0729 59.7771 -1.2135 L60.3656 -0.3385 ZM75.7277 -10.9896 L75.7277 0 L74.4777 0 L74.4777 -5.0104 L67.9985 -5.0104 L67.9985 0 L66.7538 0 L66.7538 -10.9896 L67.9985 -10.9896 L67.9985 -6.1927 L74.4777 -6.1927 L74.4777 -10.9896 L75.7277 -10.9896 ZM81.9349 -0.8802 Q82.6744 -0.8802 83.414 -1.1667 Q84.1588 -1.4583 84.5442 -1.8698 L85.2786 -1.0885 Q84.7526 -0.5104 83.7994 -0.1562 Q82.8463 0.1927 81.9505 0.1927 Q80.8463 0.1927 79.888 -0.3646 Q78.9296 -0.9271 78.3411 -1.9271 Q77.7578 -2.9271 77.7578 -4.1615 Q77.7578 -5.3594 78.3099 -6.349 Q78.8619 -7.3438 79.7994 -7.901 Q80.7369 -8.4635 81.8411 -8.4635 Q83.6953 -8.4635 84.7265 -7.1667 Q85.7578 -5.8698 85.7578 -3.6823 L78.9921 -3.6823 Q79.1224 -2.4479 79.9296 -1.6615 Q80.7369 -0.8802 81.9349 -0.8802 ZM81.888 -7.3906 Q80.7682 -7.3906 79.9661 -6.6615 Q79.1692 -5.9375 79.0078 -4.75 L84.5755 -4.75 Q84.4505 -5.9375 83.7578 -6.6615 Q83.0703 -7.3906 81.888 -7.3906 ZM91.0903 -8.4635 Q92.7361 -8.4635 93.5903 -7.526 Q94.4497 -6.5938 94.4497 -5.0417 L94.4497 0 L93.2465 0 L93.2465 -1.2969 Q92.8143 -0.5938 92.007 -0.1979 Q91.1997 0.1927 90.3351 0.1927 Q89.007 0.1927 88.158 -0.526 Q87.3143 -1.25 87.3143 -2.4479 Q87.3143 -3.25 87.7518 -3.8802 Q88.1945 -4.5104 88.934 -4.8542 Q89.6788 -5.1979 90.559 -5.1979 Q91.809 -5.1979 93.2465 -4.7344 L93.2465 -5.0417 Q93.2465 -6.0469 92.7361 -6.7396 Q92.2257 -7.4375 91.007 -7.4375 Q90.4497 -7.4375 89.8611 -7.2396 Q89.2778 -7.0417 88.5903 -6.6875 L88.1111 -7.6615 Q89.7101 -8.4635 91.0903 -8.4635 ZM90.5434 -0.8646 Q91.4393 -0.8646 92.2309 -1.3177 Q93.0226 -1.776 93.2465 -2.5938 L93.2465 -3.8542 Q92.033 -4.1927 90.7518 -4.1927 Q89.809 -4.1927 89.1424 -3.7135 Q88.4809 -3.2344 88.4809 -2.4948 Q88.4809 -1.7448 89.0643 -1.3021 Q89.6476 -0.8646 90.5434 -0.8646 ZM96.8937 -11.1823 L98.0969 -11.1823 L98.0969 0 L96.8937 0 L96.8937 -11.1823 ZM104.7497 -0.3385 Q104.0778 0.1927 103.2184 0.1927 Q102.3382 0.1927 101.7653 -0.3958 Q101.1976 -0.9896 101.1976 -1.9219 L101.1976 -7.1979 L99.906 -7.1979 L99.906 -8.2708 L101.1976 -8.2708 L101.1976 -10.5417 L102.4007 -10.5417 L102.4007 -8.2708 L104.432 -8.2708 L104.432 -7.1979 L102.4007 -7.1979 L102.4007 -1.9219 Q102.4007 -1.474 102.6612 -1.1771 Q102.9268 -0.8802 103.2966 -0.8802 Q103.5674 -0.8802 103.7914 -0.974 Q104.0153 -1.0729 104.1612 -1.2135 L104.7497 -0.3385 ZM110.3833 -8.4635 Q111.2791 -8.4635 111.9926 -8.0521 Q112.7062 -7.6458 113.0968 -6.9167 Q113.4874 -6.1927 113.4874 -5.2656 L113.4874 0 L112.2895 0 L112.2895 -5.1042 Q112.2895 -6.1146 111.7114 -6.75 Q111.1385 -7.3906 110.2218 -7.3906 Q109.5343 -7.3906 108.951 -7.1042 Q108.3676 -6.8177 108.0135 -6.3177 Q107.6645 -5.8229 107.6645 -5.2656 L107.6645 0 L106.4666 0 L106.4666 -11.1823 L107.6645 -11.1823 L107.6645 -6.9427 Q108.0343 -7.6146 108.7739 -8.0365 Q109.5187 -8.4635 110.3833 -8.4635 Z"
+                                             stroke="none"/>
+                                    </g>
+                                 </g>
+                              </g>
+                           </g>
+                        </g>
+                     </g>
+                  </g>
+               </g>
+            </g>
+         </g>
+         <g k9-contains="none"
+            k9-texture="background"
+            style="--kite9-direction: right;"
+            k9-info="link: ['4.1' '8']; direction: right; painter: direct-svg; "
+            id="6"
+            k9-format="link-basic"
+            k9-ui="delete link cascade drop stroke direction"
+            k9-elem="link">
+            <g class="k9-shape" k9-highlight="bar stroke">
+               <g k9-elem="link-grab"
+                  k9-highlight="bar stroke"
+                  k9-texture="none"
+                  k9-info="painter: direct-svg; ">
+                  <path pp:d="$path" k9-animate="link" d="M595 212 L730 212 "/>
+               </g>
+            </g>
+            <g class="k9-content">
+               <g k9-contains="label"
+                  transform="translate(584.0,212.0)"
+                  k9-texture="none"
+                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [10.666666984558105 10.666666984558105 10.666666984558105 10.666666984558105]; min-size: [0.0 0.0]; sizing: [minimize minimize]; rectangular: terminator; rect-pos: [584.0, 212.0]; rect-size: [0.0, 0.0]; position: none; terminates: 6; terminates-at: 4.1; end: from; direction: left; painter: direct-svg; "
+                  reference="4.1"
+                  id="6-0"
+                  k9-ui="drag label direction"
+                  k9-elem="from"
+                  k9-type="terminator">
+                  <g k9-highlight="fill">
+                     <ellipse rx="8" ry="8" cx="0" cy="0"/>
+                  </g>
+               </g>
+               <g k9-contains="label"
+                  transform="translate(741.0,212.0)"
+                  shape="barbed-arrow"
+                  k9-texture="none"
+                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [10.666666984558105 10.666666984558105 10.666666984558105 10.666666984558105]; min-size: [0.0 0.0]; sizing: [minimize minimize]; rectangular: terminator; rect-pos: [741.0, 212.0]; rect-size: [0.0, 0.0]; position: none; terminates: 6; terminates-at: 8; end: to; direction: right; painter: direct-svg; "
+                  reference="8"
+                  id="6-1"
+                  k9-ui="drag label direction"
+                  k9-elem="to"
+                  k9-type="terminator">
+                  <g k9-highlight="fill">
+                     <ellipse rx="8" ry="8" cx="0" cy="0"/>
+                  </g>
+               </g>
+               <g k9-contains="none"
+                  transform="translate(634.0,212.0)"
+                  k9-texture="none"
+                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: right; vert: center; layout: null; rectangular: label; rect-pos: [634.0, 212.0]; rect-size: [57.0, 45.0]; position: none; placement: down;end: to;painter: direct-svg; "
+                  id="7"
+                  k9-format="text-shape-inline"
+                  end="to"
+                  k9-ui="delete edit xml drag place fill stroke size font direction align"
+                  k9-elem="label"
+                  k9-type="label">
+                  <g class="k9-shape" k9-highlight="pulse">
+                     <rect x="0"
+                           y="0"
+                           width="57"
+                           pp:y="$y"
+                           pp:height="$height"
+                           pp:x="$x"
+                           rx="5pt"
+                           ry="5pt"
+                           height="45"
+                           pp:width="$width"/>
+                  </g>
+                  <g class="k9-content">
+                     <g k9-elem="caption"
+                        k9-texture="foreground"
+                        transform="translate(12.3,29.0)"
+                        k9-format="text-fixed"
+                        k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [647.0, 225.0]; rect-size: [31.0, 19.0]; position: none; painter: direct-svg; ">
+                        <g class="k9-content k9-no-shape" k9-highlight="pulse">
+                           <g rendered="true">
+                              <g fill="rgb(36,51,20)" stroke="rgb(36,51,20)">
+                                 <path d="M4.1458 0.1927 Q3.2656 0.1927 2.3594 -0.125 Q1.4583 -0.4479 0.7188 -1.0417 L1.3438 -1.9219 Q2.7656 -0.8802 4.1458 -0.8802 Q4.9583 -0.8802 5.4635 -1.2292 Q5.9688 -1.5833 5.9688 -2.1771 Q5.9688 -2.5938 5.6927 -2.8698 Q5.4219 -3.151 5.0156 -3.3125 Q4.6094 -3.474 3.8854 -3.6823 Q2.3698 -4.1146 1.7448 -4.6302 Q1.1198 -5.151 1.1198 -6.0312 Q1.1198 -7.1354 1.9323 -7.7969 Q2.75 -8.4635 4.0156 -8.4635 Q4.7656 -8.4635 5.5312 -8.2135 Q6.3021 -7.9688 6.974 -7.5365 L6.401 -6.6094 Q5.1667 -7.3906 4.0156 -7.3906 Q3.2812 -7.3906 2.7969 -7.0677 Q2.3177 -6.75 2.3177 -6.1771 Q2.3177 -5.8229 2.526 -5.599 Q2.7344 -5.375 3.151 -5.1979 Q3.5677 -5.026 4.4635 -4.7344 Q5.3438 -4.4635 5.8854 -4.2083 Q6.4323 -3.9531 6.7969 -3.4948 Q7.1667 -3.0417 7.1667 -2.3021 Q7.1667 -1.1823 6.3125 -0.4948 Q5.4583 0.1927 4.1458 0.1927 ZM12.8787 -0.8802 Q13.6183 -0.8802 14.3579 -1.1667 Q15.1027 -1.4583 15.4881 -1.8698 L16.2225 -1.0885 Q15.6964 -0.5104 14.7433 -0.1562 Q13.7902 0.1927 12.8943 0.1927 Q11.7902 0.1927 10.8318 -0.3646 Q9.8735 -0.9271 9.285 -1.9271 Q8.7016 -2.9271 8.7016 -4.1615 Q8.7016 -5.3594 9.2537 -6.349 Q9.8058 -7.3438 10.7433 -7.901 Q11.6808 -8.4635 12.785 -8.4635 Q14.6391 -8.4635 15.6704 -7.1667 Q16.7016 -5.8698 16.7016 -3.6823 L9.936 -3.6823 Q10.0662 -2.4479 10.8735 -1.6615 Q11.6808 -0.8802 12.8787 -0.8802 ZM12.8318 -7.3906 Q11.7121 -7.3906 10.91 -6.6615 Q10.1131 -5.9375 9.9516 -4.75 L15.5193 -4.75 Q15.3943 -5.9375 14.7016 -6.6615 Q14.0141 -7.3906 12.8318 -7.3906 ZM18.6696 -11.1823 L19.8727 -11.1823 L19.8727 0 L18.6696 0 L18.6696 -11.1823 ZM22.3016 -11.1823 L23.5047 -11.1823 L23.5047 0 L22.3016 0 L22.3016 -11.1823 ZM28.8659 0.1927 Q27.9857 0.1927 27.0794 -0.125 Q26.1784 -0.4479 25.4388 -1.0417 L26.0638 -1.9219 Q27.4857 -0.8802 28.8659 -0.8802 Q29.6784 -0.8802 30.1836 -1.2292 Q30.6888 -1.5833 30.6888 -2.1771 Q30.6888 -2.5938 30.4128 -2.8698 Q30.1419 -3.151 29.7357 -3.3125 Q29.3294 -3.474 28.6055 -3.6823 Q27.0898 -4.1146 26.4648 -4.6302 Q25.8398 -5.151 25.8398 -6.0312 Q25.8398 -7.1354 26.6523 -7.7969 Q27.4701 -8.4635 28.7357 -8.4635 Q29.4857 -8.4635 30.2513 -8.2135 Q31.0221 -7.9688 31.694 -7.5365 L31.1211 -6.6094 Q29.8867 -7.3906 28.7357 -7.3906 Q28.0013 -7.3906 27.5169 -7.0677 Q27.0378 -6.75 27.0378 -6.1771 Q27.0378 -5.8229 27.2461 -5.599 Q27.4544 -5.375 27.8711 -5.1979 Q28.2878 -5.026 29.1836 -4.7344 Q30.0638 -4.4635 30.6055 -4.2083 Q31.1523 -3.9531 31.5169 -3.4948 Q31.8867 -3.0417 31.8867 -2.3021 Q31.8867 -1.1823 31.0326 -0.4948 Q30.1784 0.1927 28.8659 0.1927 Z"
+                                       stroke="none"/>
+                              </g>
+                           </g>
+                        </g>
+                     </g>
+                  </g>
+               </g>
+               <g k9-info="painter: direct-svg; " k9-elem="link-body">
+                  <path marker-start="url(#-start-marker)"
+                        marker-end="url(#barbed-arrow-end-marker)"
+                        d="M595 212 L730 212 "
+                        pp:d="$path"
+                        k9-animate="link"/>
+               </g>
+            </g>
+      
+      
+      sells
+   </g>
+      </g>
+   </g>
+   <defs>
+      <script xlink:actuate="onLoad"
+              xlink:type="simple"
+              xlink:show="other"
+              type="module">
+     import '/public/templates/risk-first/risk-first.js?v=v0.15'
+  </script>
+   </defs>
+</svg>
