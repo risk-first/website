@@ -12,7 +12,7 @@ practice:
    - "Roadmapping"
    - "Release Planning"
    - "Task Prioritization"
-   -  Minimum Viable Product"
+   - "Minimum Viable Product"
   mitigates:
    - tag: Schedule Risk
      reason: "Helps in focusing on high-priority tasks and meeting deadlines."

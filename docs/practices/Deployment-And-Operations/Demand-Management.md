@@ -1,8 +1,8 @@
 ---
 title: Demand Management
-description: The practice of forecasting, planning, and managing the demand for products or services to ensure that they meet the business objectives and customer needs.
+description: The practice of forecasting, planning, and managing the demand for resources to ensure that the best use is made of them.
 tags: 
-  - Planning-Management
+  - Practice
   - Demand-Management
 featured: 
   class: c
@@ -13,19 +13,18 @@ practice:
    - "Demand Forecasting"
    - "Resource Planning"
    - "Capacity Planning"
+   - "Resource Scaling"
   mitigates:
-   - tag: Resource Risk
+   - tag: Scarcity Risk
      reason: "Helps in efficiently allocating resources to meet the demand without overburdening the team."
-   - tag: Schedule Risk
+   - tag: Deadline Risk
      reason: "Ensures that the demand is managed to meet delivery schedules."
    - tag: Market Risk
      reason: "Aligns production with market demand, reducing the risk of under or overproduction."
   attendant:
    - tag: Complexity Risk
      reason: "Forecasting and planning demand can add complexity to project management."
-   - tag: Inflexibility Risk
-     reason: "Strict demand management can limit the ability to respond to unexpected changes."
-   - tag: Accuracy Risk
+   - tag: Funding Risk
      reason: "Inaccurate demand forecasts can lead to resource misallocation."
   related:
    - ../Planning-And-Management/Prioritising
