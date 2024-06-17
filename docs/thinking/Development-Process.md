@@ -19,7 +19,7 @@ tweet: yes
 
 # Analysing The Development Process
 
-In [A Simple Scenario](A-Simple-Scenario.md) we introduced some terms for talking about risk (such as [Attendant Risk](../thinking/Glossary.md#attendant-risk), [Hidden Risk](../thinking/Glossary.md#attendant-risk) and the [Internal Model](../thinking/Glossary.md#internal-model)).  
+In [A Simple Scenario](A-Simple-Scenario.md) we introduced some terms for talking about risk (such as [Attendant Risk](/thinking/Glossary.md#attendant-risk), [Hidden Risk](/thinking/Glossary.md#attendant-risk) and the [Internal Model](/thinking/Glossary.md#internal-model)).  
 
 We've also introduced a notation in the form of [Risk-First Diagrams](./Risk-First-Diagrams.md) which allows us to represent the ways in which we can change the risks by [Taking Action](./Glossary.md#taking-action).
 
@@ -70,12 +70,12 @@ We can all see this might end in disaster, but why?
 
 Two reasons: 
 
-1.  You're [Meeting Reality](../thinking/Glossary.md#meet-reality) all-in-one-go:  all of these risks materialize at the same time, and you have to deal with them all at once.
-2.  Because of this, at the point you put code into the hands of your users, your [Internal Model](../thinking/Glossary.md#internal-model) is at its least-developed.  All the [Hidden Risks](../thinking/Glossary.md#hidden-risk) now need to be dealt with at the same time, in production.
+1.  You're [Meeting Reality](/thinking/Glossary.md#meet-reality) all-in-one-go:  all of these risks materialize at the same time, and you have to deal with them all at once.
+2.  Because of this, at the point you put code into the hands of your users, your [Internal Model](/thinking/Glossary.md#internal-model) is at its least-developed.  All the [Hidden Risks](/thinking/Glossary.md#hidden-risk) now need to be dealt with at the same time, in production.
 
 ## Applying the Toy Process
 
-Let's look at how our toy process should act to prevent these risks materializing by considering an unhappy path. One where, at the outset, we have lots of [Hidden Risks](../thinking/Glossary.md#hidden-risk).  Let's say a particularly vocal user rings up someone in the office and asks for new **Feature X** to be added to the software.  It's logged as a new feature request, but:
+Let's look at how our toy process should act to prevent these risks materializing by considering an unhappy path. One where, at the outset, we have lots of [Hidden Risks](/thinking/Glossary.md#hidden-risk).  Let's say a particularly vocal user rings up someone in the office and asks for new **Feature X** to be added to the software.  It's logged as a new feature request, but:
   
 - Unfortunately, this feature once programmed will break an existing **Feature Y**.
 - Implementing the feature will use some api in a library, which contains bugs and have to be coded around.
@@ -87,38 +87,38 @@ Let's look at how our toy process should act to prevent these risks materializin
 
 The diagram above shows how this plays out.
 
-This is a slightly contrived example, as you'll see.  But let's follow our feature through the process and see how it meets reality slowly, and the [Hidden Risks](../thinking/Glossary.md#hidden-risk) are discovered:
+This is a slightly contrived example, as you'll see.  But let's follow our feature through the process and see how it meets reality slowly, and the [Hidden Risks](/thinking/Glossary.md#hidden-risk) are discovered:
 
 ### Specification
 
-The first stage of the journey for the feature is that it meets the Business Analyst (BA).  The _purpose_ of the BA is to examine new goals for the project and try to integrate them with _reality as they understand it_.  A good BA might take a feature request and vet it against his [Internal Model](../thinking/Glossary.md#internal-model), saying something like: 
+The first stage of the journey for the feature is that it meets the Business Analyst (BA).  The _purpose_ of the BA is to examine new goals for the project and try to integrate them with _reality as they understand it_.  A good BA might take a feature request and vet it against his [Internal Model](/thinking/Glossary.md#internal-model), saying something like: 
 
 - "This feature doesn't belong on the User screen, it belongs on the New Account screen"
 - "90% of this functionality is already present in the Document Merge Process" 
 - "We need a control on the form that allows the user to select between Internal and External projects"
 
-In the process of doing this, the BA is turning the simple feature request _idea_ into a more consistent, well-explained _specification_ or _requirement_ which the developer can pick up.  But why is this a useful step in our simple methodology?  From the perspective of our [Internal Model](../thinking/Glossary.md#internal-model), we can say that the BA is responsible for:
+In the process of doing this, the BA is turning the simple feature request _idea_ into a more consistent, well-explained _specification_ or _requirement_ which the developer can pick up.  But why is this a useful step in our simple methodology?  From the perspective of our [Internal Model](/thinking/Glossary.md#internal-model), we can say that the BA is responsible for:
 
-- Trying to surface [Hidden Risks](../thinking/Glossary.md#hidden-risk)
-- Trying to evaluate [Attendant Risks](../thinking/Glossary.md#attendant-risk) and make them clear to everyone on the project.
+- Trying to surface [Hidden Risks](/thinking/Glossary.md#hidden-risk)
+- Trying to evaluate [Attendant Risks](/thinking/Glossary.md#attendant-risk) and make them clear to everyone on the project.
 
 ![BA Specification: exposing Hidden Risks as soon as possible](/img/generated/introduction/development_process_ba.png)
 
 In surfacing these risks, there is another outcome:  while **Feature X** might be flawed as originally presented, the BA can "evolve" it into a specification and tie it down sufficiently to reduce the risks.   The BA does all this by simply _thinking about it_, _talking to people_ and _writing stuff down_.
 
-This process of evolving the feature request into a requirement is the BA's job.  From our Risk-First perspective, it is _taking an idea and making it [Meet Reality](../thinking/Glossary.md#meet-reality)_.  Not the _full reality_ of production (yet), but something more limited.  
+This process of evolving the feature request into a requirement is the BA's job.  From our Risk-First perspective, it is _taking an idea and making it [Meet Reality](/thinking/Glossary.md#meet-reality)_.  Not the _full reality_ of production (yet), but something more limited.  
 
 ### Code And Unit Test
 
-The next stage for our feature, **Feature X** is that it gets coded and some tests get written.  Let's look at how our [Goal](../thinking/Glossary.md#goal) meets a new reality:   this time it's the reality of a pre-existing codebase, which has it's own internal logic.
+The next stage for our feature, **Feature X** is that it gets coded and some tests get written.  Let's look at how our [Goal](/thinking/Glossary.md#goal) meets a new reality:   this time it's the reality of a pre-existing codebase, which has it's own internal logic.
 
-As the developer begins coding the feature in the software, they will start with an [Internal Model](../thinking/Glossary.md#internal-model) of the software, and how the code fits into it.  But, in the process of implementing it, they are likely to learn about the codebase, and their [Internal Model](../thinking/Glossary.md#internal-model) will develop.  
+As the developer begins coding the feature in the software, they will start with an [Internal Model](/thinking/Glossary.md#internal-model) of the software, and how the code fits into it.  But, in the process of implementing it, they are likely to learn about the codebase, and their [Internal Model](/thinking/Glossary.md#internal-model) will develop.  
 
 ![Coding Process:  exposing more hidden risks as you code](/img/generated/introduction/development_process_code.png)
 
-At this point, let's review the visual grammar of the diagram above.  Here, we're showing how the balance of risks will change if the developer [Takes Action](../thinking/Glossary.md#taking-action) and writes some code.  On the left, we have the current state of the world, on the right is the anticipated state _after_ taking the action.
+At this point, let's review the visual grammar of the diagram above.  Here, we're showing how the balance of risks will change if the developer [Takes Action](/thinking/Glossary.md#taking-action) and writes some code.  On the left, we have the current state of the world, on the right is the anticipated state _after_ taking the action.
 
-The round-cornered rectangles represent our [Internal Model](../thinking/Glossary.md#internal-model), and these contain our view of [Risk](../thinking/Glossary.md#risk), whether the risks we face right now, or the [Attendant Risks](../thinking/Glossary.md#attendant-risk) expected after taking the action.  We're not at the stage where taking this actions is _completing_ the goal.  In fact, arguably, we're facing _worse_ risks after taking action than before, since we now have _development difficulties_ to contend with!  
+The round-cornered rectangles represent our [Internal Model](/thinking/Glossary.md#internal-model), and these contain our view of [Risk](/thinking/Glossary.md#risk), whether the risks we face right now, or the [Attendant Risks](/thinking/Glossary.md#attendant-risk) expected after taking the action.  We're not at the stage where taking this actions is _completing_ the goal.  In fact, arguably, we're facing _worse_ risks after taking action than before, since we now have _development difficulties_ to contend with!  
 
 But at least, taking the action of "coding and unit testing" is expected to mitigate the risk of "Duplicating Functionality".
 
@@ -132,11 +132,11 @@ So, within this example process, this stage is about meeting a new reality: the 
 
 ![Integration testing exposes Hidden Risks before you get to production](/img/generated/introduction/development_process_integration.png)
 
-As shown in the diagram above, at this stage we might discover the [Hidden Risk](../thinking/Glossary.md#hidden-risk) that we'd break **Feature Y**
+As shown in the diagram above, at this stage we might discover the [Hidden Risk](/thinking/Glossary.md#hidden-risk) that we'd break **Feature Y**
 
 ### User Acceptance Test
 
-Next, User Acceptance Testing (UAT) is where our new feature meets another reality: _actual users_.   I think you can see how the process works by now.  We're just flushing out yet more [Hidden Risks](../thinking/Glossary.md#hidden-risk).
+Next, User Acceptance Testing (UAT) is where our new feature meets another reality: _actual users_.   I think you can see how the process works by now.  We're just flushing out yet more [Hidden Risks](/thinking/Glossary.md#hidden-risk).
 
 ![UAT - putting tame users in front of your software is better than real ones, where the risk is higher ](/img/generated/introduction/development_process_uat.png)
 
@@ -144,16 +144,16 @@ Next, User Acceptance Testing (UAT) is where our new feature meets another reali
 
 Here are a few quick observations about managing risk which you are revealed both by this toy software process and also our previous example of [The Dinner Party](A-Simple-Scenario.md):
 
- - [Taking Action](../thinking/Glossary.md#taking-action) is the _only_ way to create change in the world.
- - It's also the only way we can _learn_ about the world, adding to our [Internal Model](../thinking/Glossary.md#internal-model). 
- - In this case, we discover a [Hidden Risk](../thinking/Glossary.md#hidden-risk): the user's difficulty in finding the feature.  
+ - [Taking Action](/thinking/Glossary.md#taking-action) is the _only_ way to create change in the world.
+ - It's also the only way we can _learn_ about the world, adding to our [Internal Model](/thinking/Glossary.md#internal-model). 
+ - In this case, we discover a [Hidden Risk](/thinking/Glossary.md#hidden-risk): the user's difficulty in finding the feature.  
  - In return, we can _expect_ the process of performing the UAT to delay our release (this is an attendant schedule risk).   
  
 ## Major Themes
  
 So, what does this kind of Risk-First analysis tell us about _development processes in general_?  Below are four conclusions you can take away from the chapter, but which are all major themes of Risk-First that we'll be developing later:
 
-**First**, the people who set up the development process _didn't know_ about these _exact_ risks, but they knew the _shape that the risks take_.   The process builds "nets" for the different kinds of [Hidden Risks](../thinking/Glossary.md#hidden-risk) without knowing exactly what they are.  In order to build these nets, we have to be able to categorise the types of risk we face.  This is something we'll look at in the [Risks](../risks/Start.md) part of Risk-First.
+**First**, the people who set up the development process _didn't know_ about these _exact_ risks, but they knew the _shape that the risks take_.   The process builds "nets" for the different kinds of [Hidden Risks](/thinking/Glossary.md#hidden-risk) without knowing exactly what they are.  In order to build these nets, we have to be able to categorise the types of risk we face.  This is something we'll look at in the [Risks](/risks/Start.md) part of Risk-First.
 
 **Second**, are these really risks, or are they _problems we just didn't know about_?  I am using the terms interchangeably, to a certain extent.  Even when you know you have a problem, it's still a risk to your deadline until it's solved.  So, when does a risk become a problem?  Is a problem still just a schedule-risk, or cost-risk?  We'll come back to this question soon.
 

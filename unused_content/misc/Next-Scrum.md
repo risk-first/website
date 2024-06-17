@@ -24,9 +24,9 @@ But nevertheless, I'm still seeing a fair bit of traffic over the last couple of
 
 It's got me thinking about what I want to do next on this project.  A quick recap:
 
-- [Thinking Risk-First](../thinking/Start.md) was explaining how Software Development is really an exercise in risk management.  Although that sounds a bit dull (maybe complex even), I try to explain it really simply.  
+- [Thinking Risk-First](/thinking/Start.md) was explaining how Software Development is really an exercise in risk management.  Although that sounds a bit dull (maybe complex even), I try to explain it really simply.  
 
-- [The Risk Catalog](../risks/Start.md) looks at the types of risks we face in Software Development.  I spend a while breaking down the different types.
+- [The Risk Catalog](/risks/Start.md) looks at the types of risks we face in Software Development.  I spend a while breaking down the different types.
 
 So next, we should look at the different _techniques/practices/actions_ we use, and explain the qualities of them.  Generally, all activity boils down into something like this:
 

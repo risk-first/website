@@ -15,7 +15,7 @@ part_of: Scarcity Risk
 
 <RiskIntro fm={frontMatter} />
 
-A more specific formulation of [Schedule Risk](Scarcity-Risk.md#schedule-risk) is [Red Queen Risk](Scarcity-Risk.md#red-queen-risk), which is that whatever you build at the start of the project will go slowly more-and-more out of date as the project goes on. <!-- tweet-end --> 
+A more specific formulation of [Schedule Risk](/tags/Schedule-Risk) is [Red Queen Risk](/tags/Red-Queen-Risk), which is that whatever you build at the start of the project will go slowly more-and-more out of date as the project goes on. <!-- tweet-end --> 
 
 This is named after the Red Queen quote from Alice in Wonderland:  
 
@@ -29,6 +29,6 @@ Now, they didn't _deliberately_ take 15 years to build this game (lots of things
 
 ![Red Queen Risk](/img/generated/risks/scarcity/red-queen-risk.png)
 
-Personally, I have suffered the pain on project teams where we've had to cope with legacy code and databases because the cost of changing them was too high.  This is shown in the above diagram:  mitigating [Red Queen Risk](#red-queen-risk) (by _keeping up-to-date_) has the [Attendant Risk](../thinking/Glossary.md#attendant-risk) of costing time and money, which might not seem worth it.  Any team who is stuck using [Visual Basic 6.0](https://en.wikipedia.org/wiki/Visual_Basic) is here.   
+Personally, I have suffered the pain on project teams where we've had to cope with legacy code and databases because the cost of changing them was too high.  This is shown in the above diagram:  mitigating [Red Queen Risk](#red-queen-risk) (by _keeping up-to-date_) has the [Attendant Risk](/thinking/Glossary.md#attendant-risk) of costing time and money, which might not seem worth it.  Any team who is stuck using [Visual Basic 6.0](https://en.wikipedia.org/wiki/Visual_Basic) is here.   
 
-It's possible to ignore [Red Queen Risk](Scarcity-Risk.md#red-queen-risk) for a time, but this is just another form of [Technical Debt](Complexity-Risk.md) which eventually comes due.  
+It's possible to ignore [Red Queen Risk](/tags/Red-Queen-Risk) for a time, but this is just another form of [Technical Debt](/tags/Complexity-Risk) which eventually comes due.  

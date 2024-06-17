@@ -40,6 +40,9 @@ practice:
 
 Security Testing involves assessing the security of software applications to identify vulnerabilities and ensure they are protected against threats and attacks. This practice is essential for maintaining the integrity, confidentiality, and availability of software systems.
 
+See:
+ - [Penetration Testing](/risks/Operational-Risk.md#scanning-the-operational-context)
+
 ## See Also
 
 <TagList tag="Security Testing" />

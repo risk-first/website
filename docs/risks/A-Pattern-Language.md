@@ -12,7 +12,7 @@ tweet: yes
 
 # A Pattern Language
 
-Risk-First is not intended to be a rigorous, scientific work: I don't believe it's possible to objectively analyze a field like software development in any meaningful, statistically significant way (things just change [too fast](../complexity/Silver-Bullets.md)). 
+Risk-First is not intended to be a rigorous, scientific work: I don't believe it's possible to objectively analyze a field like software development in any meaningful, statistically significant way things just change too fast. 
 
 Does that diminish it?   If you have visited the [TVTropes](https://tvtropes.org) website, you'll know that it's a set of web-pages describing _common patterns_ of narrative, production, character design etc. to do with fiction. 
 

@@ -42,6 +42,11 @@ practice:
 
 Pair Programming involves two developers working together on the same code. One developer writes the code while the other reviews each line in real-time, providing instant feedback and suggestions. This practice not only improves code quality but also facilitates knowledge sharing and collaboration between team members.
 
+See:
+
+ - [Crisis Mode](/thinking/Crisis-Mode.md) 
+
+
 ## See Also
 
 <TagList tag="Pair-Programming" />

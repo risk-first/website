@@ -19,7 +19,7 @@ Much of the content of [Risk-First](https://riskfirst.org) is a collection of [R
 
 Here, we're going to take you through the various types of Risk you will face on every software project.  
 
-In [Thinking Risk-First](../thinking/One-Size-Fits-No-One.md), we saw how _Lean Software Development_ owed its existence to production-line manufacturing techniques developed at Toyota.  And we saw that the _Waterfall_ approach originally came from engineering.  If Risk-First is anything, it's about applying the techniques of _Risk Management_ to the discipline of _Software Development_ (there's nothing new under the sun, after all).  
+In [Thinking Risk-First](/thinking/One-Size-Fits-No-One.md), we saw how _Lean Software Development_ owed its existence to production-line manufacturing techniques developed at Toyota.  And we saw that the _Waterfall_ approach originally came from engineering.  If Risk-First is anything, it's about applying the techniques of _Risk Management_ to the discipline of _Software Development_ (there's nothing new under the sun, after all).  
 
 One key activity of Risk Management we haven't discussed yet is _categorizing_ risks. So, this track of Risk-First is all about developing categories of risks for use in Software Development.
 

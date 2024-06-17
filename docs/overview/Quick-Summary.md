@@ -15,7 +15,7 @@ tweet: yes
 
 ## 1.  There are Lots of Ways to Run Software Projects
 
-There are lots of ways to look at a project in-flight.  For example, metrics such as “number of open tickets”, “story points”, “code coverage" or "release cadence" give us a numerical feel for how things are going and what needs to happen next.  We also judge the health of projects by the practices used on them, such as [Continuous Integration](../practices/Testing.md#continuous-integration), [Unit Testing](../practices/Testing.md) or [Pair Programming](../practices/Coding.md).  
+There are lots of ways to look at a project in-flight.  For example, metrics such as “number of open tickets”, “story points”, “code coverage" or "release cadence" give us a numerical feel for how things are going and what needs to happen next.  We also judge the health of projects by the practices used on them, such as [Continuous Integration](/practices/Testing.md#continuous-integration), [Unit Testing](/tags/Automated-Testing) or [Pair Programming](/tags/Pair-Programming).  
 
 Software methodologies, then, are collections of tools and practices:  “Agile”, “Waterfall”, “Lean” or “Phased Delivery” all prescribe different approaches to running a project and are opinionated about the way they think projects should be done and the tools that should be used.    
 
@@ -25,11 +25,11 @@ A key question then is: **how do we select the right tools for the job?**
 
 ## 2.  We Can Look at Projects in Terms of Risks
 
-One way to examine the project in-flight is by looking at the [risks](../thinking/Glossary.md#risk) it faces. 
+One way to examine the project in-flight is by looking at the [risks](/thinking/Glossary.md#risk) it faces. 
 
 Commonly, tools such as [RAID logs](https://www.projectmanager.com/blog/raid-log-use-one) and [RAG status](https://pmtips.net/blog-new/what-does-rag-status-mean) reporting are used.  These techniques should be familiar to project managers and developers everywhere.   
 
-However, the Risk-First view is that we can go much further:  that each item of work being done on the project is to manage a particular risk.  [Risk](../thinking/Glossary.md#risk) isn't something that just appears in a report, it actually drives *everything we do*.  
+However, the Risk-First view is that we can go much further:  that each item of work being done on the project is to manage a particular risk.  [Risk](/thinking/Glossary.md#risk) isn't something that just appears in a report, it actually drives *everything we do*.  
 
 For example:
 
@@ -37,7 +37,7 @@ For example:
 - A task about improving the health indicators could be seen as mitigating _the risk of the application failing and no-one reacting to it_. 
 - Even a task as basic as implementing a new function in the application is mitigating _the risk that users are dissatisfied and go elsewhere_.  
 
-One assertion of Risk-First is that **every action you take on a project is to manage a [risk](../thinking/Glossary.md#risk).**
+One assertion of Risk-First is that **every action you take on a project is to manage a [risk](/thinking/Glossary.md#risk).**
 
 ## 3.  We Can Break Down Risks on a Project Methodically
 
@@ -54,7 +54,7 @@ Software risks are difficult to quantify and mostly the effort involved in doing
 With this in place, we can:
 
 - Talk about the types of risks we face on our projects, using an appropriate language.
-- Anticipate [Hidden Risks](../thinking/Glossary.md#hidden-risk) that we hadn't considered before.
+- Anticipate [Hidden Risks](/thinking/Glossary.md#hidden-risk) that we hadn't considered before.
 - Weigh the risks against each other and decide which order to tackle them.   
 
 ## 4.  We Can Analyse Tools and Techniques in Terms of how they Manage Risk
@@ -63,8 +63,8 @@ If we accept the assertion that _all_ the actions we take on a project are about
 
 For example:
 
- - If we do a [Code Review](../practices/Review.md), we are partly trying to minimise the risks of bugs slipping through into production and also manage the [Key Person Risk](../risks/Scarcity-Risk.md#staff-risk) of knowledge not being widely-enough shared. 
- - If we write [Unit Tests](../practices/Testing.md), we’re addressing the risk of bugs going to production. We’re also mitigating against the risk of _regression_ and future changes breaking our existing functionality.   
+ - If we do a [Code Review](/tags/Review), we are partly trying to minimise the risks of bugs slipping through into production and also manage the [Key Person Risk](/tags/Staff-Risk) of knowledge not being widely-enough shared. 
+ - If we write [Unit Tests](/tags/Automated-Testing), we’re addressing the risk of bugs going to production. We’re also mitigating against the risk of _regression_ and future changes breaking our existing functionality.   
  - If we enter into a contract with a supplier then we are mitigating the risk of the supplier vanishing and leaving us exposed.  With the contract in place we have legal recourse against this risk.
 
 From the above examples, it's clear that **different tools are appropriate for managing different types of risks.**
@@ -91,9 +91,9 @@ We have described a model of risk within software projects, looking something li
 
 How do we take this further?
 
-One idea explored is the _[Risk Landscape](../risks/Risk-Landscape.md)_:  although the software team can't remove risk from their project, they can take actions that move them to a place in the [Risk Landscape](../risks/Risk-Landscape.md) where the risks on the project are more favourable than where they started.  
+One idea explored is the _[Risk Landscape](/risks/Risk-Landscape.md)_:  although the software team can't remove risk from their project, they can take actions that move them to a place in the [Risk Landscape](/risks/Risk-Landscape.md) where the risks on the project are more favourable than where they started.  
 
-From there, we examine basic risk archetypes you will encounter on the software project, to build up a [vocabulary of Software Risk](../risks/Staging-And-Classifying.md) and look at which specific tools you can use to mitigate each kind of risk.  
+From there, we examine basic risk archetypes you will encounter on the software project, to build up a [vocabulary of Software Risk](/risks/Staging-And-Classifying.md) and look at which specific tools you can use to mitigate each kind of risk.  
 
 Then, we look at software practices and how they manage various risks.  Beyond this we examine the question:  _how can a Risk-First approach inform the use of this practice?_  
 

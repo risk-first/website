@@ -63,7 +63,7 @@ Ideally, a methodology should be applicable at _any_ scale too:
  - A department.
  - An entire organisation.
 
-In practice, however, we usually find methodologies are tuned for certain scales.  For example, [Extreme Programming (XP)](https://en.wikipedia.org/wiki/Extreme_programming) is designed for small, co-located teams and that's useful.  But the fact it doesn't scale tells us something about it:  chiefly, that it considers certain _kinds_ of risk, while ignoring others.  At small scales XP works ok, but at larger scales other risks (such as team [Coordination Risk](../risks/Coordination-Risk.md)) increase too fast for it to work.
+In practice, however, we usually find methodologies are tuned for certain scales.  For example, [Extreme Programming (XP)](https://en.wikipedia.org/wiki/Extreme_programming) is designed for small, co-located teams and that's useful.  But the fact it doesn't scale tells us something about it:  chiefly, that it considers certain _kinds_ of risk, while ignoring others.  At small scales XP works ok, but at larger scales other risks (such as team [Coordination Risk](/tags/Coordination-Risk)) increase too fast for it to work.
 
 If the methodology _fails at a particular scale_ this tells you something about the risks that the methodology isn't addressing.    One of the things Risk-First explores is trying to place methodologies and practices within a framework to say _when_ they are applicable.
 
@@ -73,7 +73,7 @@ In the previous section on [Health](Health.md) we looked at how risk management 
 
 In 2020 the world was plunged into pandemic.  Everything changed very quickly, including the nature of software development.  Lots of the practices we'd grown used to (such as XP's small, co-located teams) had to be jettisoned and replaced with Zoom calls and instant messaging apps.   This was a very sudden, rapid change in the technology we use to do our jobs, but in a more general sense we need to understand that Agile, XP and Scrum were invented at the turn of the 21st century.  The [Lean Manufacturing](https://en.wikipedia.org/wiki/Lean_manufacturing) movement originated post-WW2.  
 
-The general ideas they espouse have stood the test of time but where they recommend particular technologies things are looking more shaky.  [Pair Programming](../practices/Glossary-Of-Practices.md#pair-programming) where two developers share the same keyboard doesn't work so well anymore.   However, it can be made to work over video conferencing and when we all move to augmented reality headsets perhaps there will be another configuration of this.  We can now do Pair Programming with our artificial intelligence "co-pilots" - but is that managing the same risks?
+The general ideas they espouse have stood the test of time but where they recommend particular technologies things are looking more shaky.  [Pair Programming](/practices/Glossary-Of-Practices.md#pair-programming) where two developers share the same keyboard doesn't work so well anymore.   However, it can be made to work over video conferencing and when we all move to augmented reality headsets perhaps there will be another configuration of this.  We can now do Pair Programming with our artificial intelligence "co-pilots" - but is that managing the same risks?
 
 The point I am making here is that while there are [technology tools to support risk management](Track-Risk.md) the idea itself is not wedded to a particular technology, culture or way of working.  And, it is as old as the hills.
 

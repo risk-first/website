@@ -2,6 +2,10 @@
 title: Practices
 description: Discussion Of Software Development Practices
 
+tags:
+  - Front
+sidebar_position: 4
+
 
 featured: 
   class: bg1

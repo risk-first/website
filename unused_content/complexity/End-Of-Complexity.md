@@ -60,7 +60,7 @@ There are various efforts to create out-of-the-box solutions:
 - Things like [CodeAnywhere](https://codeanywhere.com), [GitHub](https://github.com) and [GitLab](https://gitlab.com) go a long way to simplifying tool choice (although you still have to choose one of those).   
 - [AWS](https://aws.amazon.com) has a "menu" of services for you to choose from (although this too is bewildering).  
 
-Ultimately, curators are running to stand still, facing huge [Red-Queen Risk](../risks/Scarcity-Risk.md#red-queen-risk).   Their efforts to consolidate and simplify the landscape can't possibly keep up with the pace of evolution in the space they are working in.  
+Ultimately, curators are running to stand still, facing huge [Red-Queen Risk](/tags/Red-Queen-Risk).   Their efforts to consolidate and simplify the landscape can't possibly keep up with the pace of evolution in the space they are working in.  
 
 ## Potential Solution #5: AI
 

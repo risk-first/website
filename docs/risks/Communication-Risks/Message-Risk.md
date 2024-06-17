@@ -26,7 +26,7 @@ This is called [Theory Of Mind](https://en.wikipedia.org/wiki/Theory_of_mind): t
 
 ### Message Risk  
 
-A second, related problem is actually [Dependency Risk](Dependency-Risk.md), which is covered more thoroughly in a later section.  Often, to understand a new message, you have to have followed everything up to that point already.
+A second, related problem is actually [Dependency Risk](/tags/Dependency-Risk), which is covered more thoroughly in a later section.  Often, to understand a new message, you have to have followed everything up to that point already.
 
 The same **Message Dependency Risk** exists for computer software:  if there is replication going on between instances of an application and one of the instances misses some messages, you end up with a "[Split Brain](https://en.wikipedia.org/wiki/Split-brain_(computing))" scenario, where later messages can't be processed because they refer to an application state that doesn't exist.  For example, a message saying:
 
@@ -46,6 +46,6 @@ For people, nothing exists unless we have a name for it. <!-- tweet-end --> The 
 
 > "The famous pipe. How people reproached me for it! And yet, could you stuff my pipe? No, it's just a representation, is it not? So if I had written on my picture “This is a pipe”, I'd have been lying!" - [Rene Magritte, of _The Treachery of Images_](https://en.wikipedia.org/wiki/The_Treachery_of_Images)
 
-People don't rely on rigorous definitions of abstractions like computers do; we make do with fuzzy definitions of concepts and ideas.  We rely on [Abstraction](../thinking/Glossary.md#abstraction) to move between the name of a thing and the _idea of a thing_.
+People don't rely on rigorous definitions of abstractions like computers do; we make do with fuzzy definitions of concepts and ideas.  We rely on [Abstraction](/thinking/Glossary.md#abstraction) to move between the name of a thing and the _idea of a thing_.
 
 This brings about [Misinterpretation](Communication-Risk.md#misinterpretation): names are not _precise_, and concepts mean different things to different people.  We can't be sure that other people have the same meaning for a name that we have.  

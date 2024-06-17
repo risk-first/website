@@ -38,6 +38,12 @@ practice:
 
 Release / Delivery involves the structured and controlled process of moving software from development to production environments. It ensures that all aspects of the software are ready for deployment, including code stability, functionality, and performance. Effective release management is crucial for maintaining the quality and reliability of software, minimizing disruptions, and ensuring that new features and fixes reach users in a timely manner.
 
+
+See: 
+- [Development Process](/thinking/Development-Process.md#a-toy-process)
+- [Consider Payoff](/thinking/Consider-Payoff.md#example-4-continue-testing-or-release)
+- [Production (Cadence)](/thinking/Cadence.md#production)
+
 ## See Also
 
 <TagList tag="Release" filter="risks" />

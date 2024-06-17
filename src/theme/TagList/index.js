@@ -26,6 +26,11 @@ function DocItemImage({ doc }) {
 	);
 }
 
+const sorts = {
+	"title" : (a, b) => { return a.title.localeCompare(b.title) },
+	"default" : (a, b) => { return a.order - b.order }
+} 
+
 
 
 export default function TagList(props) {
@@ -45,8 +50,10 @@ export default function TagList(props) {
 
 	const filter = props.filter ? '/' + props.filter + '/' : ''
 	const location = useLocation().pathname;
+	
+	const sort = props.sort ?? "default"
 
-	oneTag.sort((a, b) => a.order - b.order);
+	oneTag.sort(sorts[sort]);
 	
 	// console.log(oneTag[0].permalink.indexOf(location))
 	// console.log(filter)

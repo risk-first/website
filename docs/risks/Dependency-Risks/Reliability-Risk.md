@@ -27,7 +27,7 @@ This points to the problem that when we use an external dependency, we are at th
 
 It's easy to think about reliability for something like a bus:  sometimes, it's late due to weather, or cancelled due to driver sickness, or the route changes unexpectedly due to road works.  
 
-In software, it's no different:  _unreliability_ is the flip-side of [Feature Implementation Risk](Feature-Risk.md#implementation-risk).  It's caused in the gap between the real behaviour of the software and the expectations for it.
+In software, it's no different:  _unreliability_ is the flip-side of [Feature Implementation Risk](/tags/Implementation-Risk).  It's caused in the gap between the real behaviour of the software and the expectations for it.
 
 There is an upper bound on the reliability of the software you write, and this is based on the dependencies you use and (in turn) the reliability of those dependencies:
   
@@ -41,4 +41,4 @@ This kind of stuff is encapsulated in the science of [Reliability Engineering](h
 
 This was applied on NASA missions, and then in the 1970's to car design following the [Ford Pinto exploding car](https://en.wikipedia.org/wiki/Ford_Pinto#Design_flaws_and_ensuing_lawsuits) affair.  But establishing the reliability of software dependencies like this would be _hard_ and _expensive_.  We are more likely to mitigate [Reliability Risk](#reliability-risk) in software using _testing_, _redundancy_ and _reserves_, as shown in the diagram above.  
 
-Additionally, we often rely on _proxies for reliability_.  We'll look at these proxies (and the way in which software projects signal their reliability) in much more detail in the section on [Software Dependency Risk](Software-Dependency-Risk.md).
+Additionally, we often rely on _proxies for reliability_.  We'll look at these proxies (and the way in which software projects signal their reliability) in much more detail in the section on [Software Dependency Risk](/tags/Software-Dependency-Risk).

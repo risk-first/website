@@ -85,7 +85,7 @@ In the above simulation, we are trying to fit a Normal Distribution, estimated f
 
 You should be able to see that when you move from two to three samples, the variance will probably change _a lot_.  However moving from twenty to thirty samples means it hardly changes at all.  
 
-This kind of measurement and estimating is the bread-and-butter of all kinds of [Operational Control](../risks/Operational-Risk.md) systems.
+This kind of measurement and estimating is the bread-and-butter of all kinds of [Operational Control](/tags/Operational-Risk) systems.
 
 ## Big-O
 
@@ -125,7 +125,7 @@ There are three charts above:
 
  - The top (red) chart is showing the probability density for us completing the work.  Our actual completion time is one point chosen randomly from the area in red. So, we're probably looking at around 32 days.
  - The middle (blue) chart shows our return distribution.  As you can see, it starts sliding down after 20 days, eventually ending up in negative territory.  Leaving the estimate at 20 days gives us the _highest possible_ payout of £10,000, increasing our estimate reduces this maximum.  
- - The bottom (orange) chart multiplies these two together to give us a measure of [financial risk](../risks/Scarcity-Risk.md#funding-risk). Without adjusting the estimate, we're more likely to lose than win.
+ - The bottom (orange) chart multiplies these two together to give us a measure of [financial risk](/tags/Funding-Risk). Without adjusting the estimate, we're more likely to lose than win.
  
 Are you a gambler?  If you can just make everyone work a couple of extra hours' overtime, you'll be much more likely to make the big bucks.  But without cheating like this, it's probably best to give an estimate around 30 days or more.  
 
@@ -133,7 +133,7 @@ Are you a gambler?  If you can just make everyone work a couple of extra hours' 
 
 This is a really contrived example, but actually this represents _most of_ how banks, insurance companies, investors etc. work out risk, simply multiplying the probability of something happening by what is lost when it does happen.  But let's look at some criticisms of this:
 
-1. Aren't there other options?  We might be able to work nights to get the project done, or hire more staff, or give bonuses for overtime _or something_.  In fact, in [Pressure](../practices/Pressure.md) we'll  look at some of these factors.
+1. Aren't there other options?  We might be able to work nights to get the project done, or hire more staff, or give bonuses for overtime _or something_.  In fact, in [Pressure](/tags/Pressure.md) we'll  look at some of these factors.
 
 2. We've actually got a project here which _degrades gracefully_. The costs of taking longer are clearly sign-posted in advance.  In reality, the costs of missing a date might be much more disastrous:  not getting your game completed for Christmas, missing a regulatory deadline, not being ready for an important demo - these are all-or-nothing outcomes where it's a [stark contrast between in-time and missing-the-bus](/tags/Deadline-Risk).  
 
@@ -149,6 +149,6 @@ But there are lots of ways [Fill-The-Bucket](Fill-The-Bucket.md) goes wrong, and
 2. Each unit is pretty much the same as another.  
 3. Each unit is _independent_ to the others. 
  
-In [the financial crisis](../risks/Risk-Landscape.md#example-the-financial-crisis), we saw how estimates of risk failed because they violated point 3.  
+In [the financial crisis](/risks/Risk-Landscape.md#example-the-financial-crisis), we saw how estimates of risk failed because they violated point 3.  
 
 Let's have a look at [what happens when we relax these constraints](Kitchen-Cabinet.md).

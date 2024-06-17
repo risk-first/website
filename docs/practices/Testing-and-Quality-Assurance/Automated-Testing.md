@@ -41,6 +41,11 @@ practice:
 
 Unit testing involves writing and running tests for individual units or components of the software to ensure they function as expected. This practice helps in identifying and fixing issues early in the development process, making the codebase more reliable and maintainable.
 
+
+See: 
+ - [Development Process](/thinking/Development-Process.md#a-toy-process)
+ - [Unit Testing (Meeting Reality)](/thinking/Meeting-Reality.md#example-automation)
+
 ## See Also
 
 <TagList tag="Unit-Testing" />

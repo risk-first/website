@@ -47,7 +47,7 @@ Architecture / Design in software development involves creating the high-level s
 Design is what you do every time you think of an action to mitigate a risk.  And **Big Design Up Front** is where you do a lot of it in one go, for example:
 
  - Where you think about the design of all (or a set of) the requirements in one go, in advance.
- - Where you consider a _set of [Attendant Risks](../thinking/Glossary.md#attendant-risk)_ all at the same time.
+ - Where you consider a _set of [Attendant Risks](/thinking/Glossary.md#attendant-risk)_ all at the same time.
  
 Compare with "little" design, where we consider just the _next_ requirement, or the _most pressing_ risk. 
  
@@ -55,11 +55,11 @@ Although it's fallen out of favour in Agile methodologies, there are benefits to
 
 ## How It Works  
 
-As we saw in [Meet Reality](../thinking/Meeting-Reality.md), "Navigating the [Risk Landscape](../risks/Risk-Landscape.md)", meant going from a position of high risk, to a position of lower risk.  [Agile Design](Agile) is much like [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent): each day, one small step after another _downwards in risk_ on the [Risk Landscape](../risks/Risk-Landscape.md).
+As we saw in [Meet Reality](/thinking/Meeting-Reality.md), "Navigating the [Risk Landscape](/risks/Risk-Landscape.md)", meant going from a position of high risk, to a position of lower risk.  [Agile Design](Agile) is much like [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent): each day, one small step after another _downwards in risk_ on the [Risk Landscape](/risks/Risk-Landscape.md).
 
 But the problem with this is you can get trapped in a [Local Minima](https://en.wikipedia.org/wiki/Maximum_and_minimum#Search), where there are _no_ easy steps to take to get you to where you want to be.  
 
-In these cases, you have to _widen your horizon_ and look at where you want to go:  and this is the process of _design_.  You're not necessarily now taking steps on the [Risk Landscape](../risks/Risk-Landscape.md), but imagining a place on the [Risk Landscape](../risks/Risk-Landscape.md) where you want to be, and checking it against your [Internal Model](../thinking/Glossary.md#internal-model) for validity.
+In these cases, you have to _widen your horizon_ and look at where you want to go:  and this is the process of _design_.  You're not necessarily now taking steps on the [Risk Landscape](/risks/Risk-Landscape.md), but imagining a place on the [Risk Landscape](/risks/Risk-Landscape.md) where you want to be, and checking it against your [Internal Model](/thinking/Glossary.md#internal-model) for validity.
 
 
 ## See Also

@@ -16,12 +16,12 @@ part_of: Operational Risk
 
 <RiskIntro fm={frontMatter} />
 
-[Complexity Risk](Complexity-Risk.md) is the [risk](../thinking/Glossary.md#risk) to your project due to its underlying "complexity".   Here, we will break down exactly what we mean by complexity, look at where it can hide on a software project and discuss some ways in which we can manage this important risk.
+[Complexity Risk](/tags/Complexity-Risk) is the [risk](/thinking/Glossary.md#risk) to your project due to its underlying "complexity".   Here, we will break down exactly what we mean by complexity, look at where it can hide on a software project and discuss some ways in which we can manage this important risk.
 
 Here we will:
 
  - Look at two ways in which complexity is measured, via [Kolmogorov Complexity](Complexity-Risk.md#kolmogorov-complexity) and [Graph-Connectivity](Complexity-Risk.md#connectivity).
- - Define [Complexity Risk](Complexity-Risk.md), and the related risks of [Codebase Risk](Complexity-Risk.md#codebase-risk) (complexity in your codebase) and [Dead-End Risk](Complexity-Risk.md#dead-end-risk) (risk of implementations getting "stuck").
+ - Define [Complexity Risk](/tags/Complexity-Risk), and the related risks of [Codebase Risk](/tags/Codebase-Risk) (complexity in your codebase) and [Dead-End Risk](/tags/Dead-End-Risk) (risk of implementations getting "stuck").
  - Discuss ways to think about complexity:  as [mass](Complexity-Risk.md#complexity-is-mass), [technical debt](Complexity-Risk.md#technical-debt) and [mess](Complexity-Risk.md#kitchen-analogy).
  - Discuss ways to manage complexity risk, such as modularisation, hierarchy, use of languages and libraries and by avoiding feature creep.
  - Discuss places where Complexity Risk [manifests](Complexity-Risk.md#where-complexity-hides) in computing.  
@@ -34,7 +34,7 @@ Complexity arises in software projects in a number of different ways.  We're goi
 
 > “Measuring programming progress by lines of code is like measuring aircraft building progress by weight.” - Bill Gates
 
-The size of your codebase, the amount of code, the number of modules, the interconnectedness of the modules and how well-factored the code is all contribute to [Codebase Risk](Complexity-Risk.md#codebase-risk): a specific type of [Complexity Risk](Complexity-Risk.md) meaning _the complexity of your codebase_.
+The size of your codebase, the amount of code, the number of modules, the interconnectedness of the modules and how well-factored the code is all contribute to [Codebase Risk](/tags/Codebase-Risk): a specific type of [Complexity Risk](/tags/Complexity-Risk) meaning _the complexity of your codebase_.
 
 Before we look at the implications of this risk, let's look at some prior-art on how to measure this complexity. 
 
@@ -91,11 +91,11 @@ function out() {                                      (7 )
 
 ### Abstraction
 
-What's happening here is that we're _exploiting a pattern_: we noticed that `abcd` occurs several times, so we defined it a single time and then used it over and over, like a stamp.  This is called [abstraction](../thinking/Glossary.md#abstraction).
+What's happening here is that we're _exploiting a pattern_: we noticed that `abcd` occurs several times, so we defined it a single time and then used it over and over, like a stamp.  This is called [abstraction](/thinking/Glossary.md#abstraction).
 
 By applying abstraction, we can improve in the direction of the Kolmogorov lower bound.  By allowing ourselves to say that _symbols_ (like `out` and `ABCD`) are worth one complexity point, we've allowed that we can be descriptive in naming `function` and `const`.  Naming things is an important part of abstraction, because to use something, you have to be able to refer to it.
 
-Generally, the more complex a piece of software is, the more difficulty users will have [understanding it](Feature-Risk.md#conceptual-integrity-risk), and the more work developers will have changing it. 
+Generally, the more complex a piece of software is, the more difficulty users will have [understanding it](/tags/Conceptual-Integrity-Risk), and the more work developers will have changing it. 
 
 Although we should prefer the third version of our code over either the first or second (because of its brevity) we could go further down into [Code Golf](https://en.wikipedia.org/wiki/Code_golf) territory.  The following javascript program plays [FizzBuzz](https://en.wikipedia.org/wiki/Fizz_buzz) up to 100, but is less readable than you might hope.
 
@@ -105,23 +105,23 @@ for(i=0;i<100;)document.write(((++i%3?'':'Fizz')+
                                                (total: 62)
 ```
 
-So there is at some point a trade-off to be made between [Complexity Risk](Complexity-Risk.md) and [Communication Risk](Communication-Risk.md). That is, after a certain point, reducing Kolmogorov Complexity further risks making the program less intelligible. 
+So there is at some point a trade-off to be made between [Complexity Risk](/tags/Complexity-Risk) and [Communication Risk](/tags/Communication-Risk). That is, after a certain point, reducing Kolmogorov Complexity further risks making the program less intelligible. 
 
 ### Refactoring
 
 ![Using Refactoring and Abstraction to reduce Codebase Risk](/img/generated/risks/complexity/refactoring.png)
 
-Abstraction is therefore a key tool in the battle against [Complexity Risk](Complexity-Risk.md): it allows us to jettison repetition.  But, as the code-golf example shows, you can go too far.  So an important part of software development is picking the _right_ abstractions:  ones that are useful, durable and pervasive.  
+Abstraction is therefore a key tool in the battle against [Complexity Risk](/tags/Complexity-Risk): it allows us to jettison repetition.  But, as the code-golf example shows, you can go too far.  So an important part of software development is picking the _right_ abstractions:  ones that are useful, durable and pervasive.  
 
 Time spent replacing poor abstractions with better ones is called _refactoring_.  
 
-The above diagram demonstrates that a key practice in battling [Codebase Risk](Complexity-Risk.md#codebase-risk) is choosing **a minimal set of useful abstractions**.  The attendant risk in doing that work (the downside) is the _time spent doing it_. That is, [Schedule Risk](Scarcity-Risk.md#schedule-risk).   
+The above diagram demonstrates that a key practice in battling [Codebase Risk](/tags/Codebase-Risk) is choosing **a minimal set of useful abstractions**.  The attendant risk in doing that work (the downside) is the _time spent doing it_. That is, [Schedule Risk](/tags/Schedule-Risk).   
 
 Sometimes it is better to have an ok-ish abstraction _now_ rather than a brilliant abstraction _too late_. 
 
 ### Languages and Dependencies
 
-The above Javascript example also demonstrates a second way in which we can manage [Codebase Risk](Complexity-Risk.md#codebase-risk).  
+The above Javascript example also demonstrates a second way in which we can manage [Codebase Risk](/tags/Codebase-Risk).  
 
 In the third version of the program, we used the method `.repeat()`, which allowed us to save a further 16 symbols.  
 
@@ -129,7 +129,7 @@ In the third version of the program, we used the method `.repeat()`, which allow
 
 ![Using Libraries and Languages to reduce Codebase Risk](/img/generated/risks/complexity/libraries.png)
 
-So as the above diagram shows, we can also reduce [Codebase Risk](Complexity-Risk.md#codebase-risk) in our choice of _languages_ and _third party libraries_.   This doesn't come without a cost, though.  We are trading-off our own [Codebase Risk](Complexity-Risk.md#codebase-risk) but increasing [Dependency Risk](Dependency-Risk.md) and [Boundary Risk](Boundary-Risk.md) instead.   
+So as the above diagram shows, we can also reduce [Codebase Risk](/tags/Codebase-Risk) in our choice of _languages_ and _third party libraries_.   This doesn't come without a cost, though.  We are trading-off our own [Codebase Risk](/tags/Codebase-Risk) but increasing [Dependency Risk](/tags/Dependency-Risk) and [Boundary Risk](/tags/Boundary-Risk) instead.   
 
 ## Connectivity
 
@@ -210,7 +210,7 @@ Secondly, it's not apparent to **i** that **j** _even exists_: we have hidden th
 
 ![Modularisation and Hierarchy](/img/generated/risks/complexity/modularisation.png)
 
-The trade-off of modularisation/hierarchy is shown in the above diagram, and it's our third tool for battling [Codebase Risk](Complexity-Risk.md#codebase-risk).  
+The trade-off of modularisation/hierarchy is shown in the above diagram, and it's our third tool for battling [Codebase Risk](/tags/Codebase-Risk).  
 
 But we don't just see this in software, it's everywhere in our lives:  societies, business, and living organisms all use this technique.  For example in our bodies we have:
   
@@ -223,9 +223,9 @@ The great complexity-reducing mechanism of modularisation is that _you only have
 
 ## Analogies
 
-So, we've looked at some measures of software structure complexity.  We can say "this is more complex than this" for a given piece of code or structure.  We've also looked at three ways to manage it:  [Abstraction](../thinking/Glossary.md#abstraction) and [Modularisation](Complexity-Risk.md#hierarchies-and-modularisation) and via [Dependencies](Complexity-Risk.md#languages-and-dependencies).  
+So, we've looked at some measures of software structure complexity.  We can say "this is more complex than this" for a given piece of code or structure.  We've also looked at three ways to manage it:  [Abstraction](/thinking/Glossary.md#abstraction) and [Modularisation](Complexity-Risk.md#hierarchies-and-modularisation) and via [Dependencies](Complexity-Risk.md#languages-and-dependencies).  
 
-However, we've not really said why complexity entails [Risk](../thinking/Glossary.md#attendant-risk).  So let's address that now by looking at three analogies, [Mass](Complexity-Risk.md#complexity-is-mass), [Technical Debt](Complexity-Risk.md#technical-debt) and [Mess](Complexity-Risk.md#kitchen-analogy)  
+However, we've not really said why complexity entails [Risk](/thinking/Glossary.md#attendant-risk).  So let's address that now by looking at three analogies, [Mass](Complexity-Risk.md#complexity-is-mass), [Technical Debt](Complexity-Risk.md#technical-debt) and [Mess](Complexity-Risk.md#kitchen-analogy)  
 
 ### Complexity is Mass
 
@@ -247,23 +247,23 @@ I'm not an expert in physics _at all_ so there is every chance that I am pushing
 
 If we want to move _fast_ we need simple code-bases. 
 
-At a basic level, [Complexity Risk](Complexity-Risk.md) heavily impacts on [Schedule Risk](Scarcity-Risk.md#schedule-risk):  more complexity means you need more force to get things done, which takes longer.
+At a basic level, [Complexity Risk](/tags/Complexity-Risk) heavily impacts on [Schedule Risk](/tags/Schedule-Risk):  more complexity means you need more force to get things done, which takes longer.
 
 ### Technical Debt
 
-The most common way we talk about [Complexity Risk](Complexity-Risk.md) in software is as [Technical Debt](Complexity-Risk.md#technical-debt):
+The most common way we talk about [Complexity Risk](/tags/Complexity-Risk) in software is as [Technical Debt](Complexity-Risk.md#technical-debt):
 
 > "Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite... The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organisations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise." - [Ward Cunningham, 1992, _Wikipedia, Technical Debt_](https://en.wikipedia.org/wiki/Technical_debt)
 
-Building a low-complexity first-time solution is often a waste:  in the first version, we're usually interested in reducing [Feature Risk](Feature-Risk.md) as fast as possible. That is, putting working software in front of users to get [feedback](../thinking/Meeting-Reality.md).  We would rather carry [Complexity Risk](Complexity-Risk.md) than take on more [Schedule Risk](Scarcity-Risk.md#schedule-risk).
+Building a low-complexity first-time solution is often a waste:  in the first version, we're usually interested in reducing [Feature Risk](/tags/Feature-Risk) as fast as possible. That is, putting working software in front of users to get [feedback](/thinking/Meeting-Reality.md).  We would rather carry [Complexity Risk](/tags/Complexity-Risk) than take on more [Schedule Risk](/tags/Schedule-Risk).
 
-So a quick-and-dirty, over-complex implementation mitigates the same [Feature Risk](Feature-Risk.md) and allows you to [Meet Reality](../thinking/Meeting-Reality.md) faster.  
+So a quick-and-dirty, over-complex implementation mitigates the same [Feature Risk](/tags/Feature-Risk) and allows you to [Meet Reality](/thinking/Meeting-Reality.md) faster.  
 
-But having mitigated the [Feature Risk](Feature-Risk.md) this way, you are likely exposed to a higher level of [Complexity Risk](Complexity-Risk.md) than would be desirable.  This "carries forward" and means that in the future, you're going to be slower.  As in the case of a real debt, "servicing" the debt incurs a steady, regular cost.
+But having mitigated the [Feature Risk](/tags/Feature-Risk) this way, you are likely exposed to a higher level of [Complexity Risk](/tags/Complexity-Risk) than would be desirable.  This "carries forward" and means that in the future, you're going to be slower.  As in the case of a real debt, "servicing" the debt incurs a steady, regular cost.
 
 ### Kitchen Analogy
 
-It’s often hard to make the case for minimising [Technical Debt](Complexity-Risk.md#technical-debt): it often feels that there are more important priorities, especially when technical debt can be “swept under the carpet” and forgotten about until later.  (See [Discounting](../thinking/Evaluating-Risk.md#discounting-the-future-to-zero).)
+It’s often hard to make the case for minimising [Technical Debt](Complexity-Risk.md#technical-debt): it often feels that there are more important priorities, especially when technical debt can be “swept under the carpet” and forgotten about until later.  (See [Discounting](/thinking/Evaluating-Risk.md#discounting-the-future-to-zero).)
 
 One helpful analogy I have found is to imagine your code-base is a kitchen.   After preparing a meal (i.e. delivering the first implementation), _you need to tidy up the kitchen_.  This is just something everyone does as a matter of _basic sanitation_. 
 
@@ -273,7 +273,7 @@ It's not long before someone comes down with food poisoning.
 
 ![Complexity Risk and its implications](/img/generated/risks/complexity/complexity-risk-impact.png)
 
-We wouldn't tolerate this behaviour in a restaurant kitchen, so why put up with it in a software project?  This state-of-affairs is illustrated in the above diagram.  Not only does [Complexity Risk](Complexity-Risk.md) slow down future development, it can be a cause of [Operational Risks](Operational-Risk.md) and [Security Risks](Agency-Risk.md#security).
+We wouldn't tolerate this behaviour in a restaurant kitchen, so why put up with it in a software project?  This state-of-affairs is illustrated in the above diagram.  Not only does [Complexity Risk](/tags/Complexity-Risk) slow down future development, it can be a cause of [Operational Risks](/tags/Operational-Risk) and [Security Risks](Agency-Risk.md#security).
 
 ### Feature Creep
 
@@ -284,17 +284,17 @@ In Brooks' essay "No Silver Bullet - Essence and Accident in Software Engineerin
 
 The problem with this definition is that we are accepting features of our software as _essential_.  
 
-Applying Risk-First, if you want to mitigate some [Feature Risk](Feature-Risk.md) then you have to pick up [Complexity Risk](Complexity-Risk.md) as a result.  But, that's a _choice you get to make_.  
+Applying Risk-First, if you want to mitigate some [Feature Risk](/tags/Feature-Risk) then you have to pick up [Complexity Risk](/tags/Complexity-Risk) as a result.  But, that's a _choice you get to make_.  
 
 ![Mitigating Feature Risk](/img/generated/risks/complexity/feature-creep.png)
 
-Therefore, [Feature Creep](https://en.wikipedia.org/wiki/Feature_creep) (or [Gold Plating](https://en.wikipedia.org/wiki/Gold_plating_(software_engineering))) is a failure to observe this basic equation:  instead of considering this trade off, you're building _every feature possible_.  This will impact on [Complexity Risk](Complexity-Risk.md).
+Therefore, [Feature Creep](https://en.wikipedia.org/wiki/Feature_creep) (or [Gold Plating](https://en.wikipedia.org/wiki/Gold_plating_(software_engineering))) is a failure to observe this basic equation:  instead of considering this trade off, you're building _every feature possible_.  This will impact on [Complexity Risk](/tags/Complexity-Risk).
 
-Sometimes, feature-creep happens because either managers feel they need to keep their staff busy, or the staff decide on their own that they need to [keep themselves busy](Agency-Risk.md).  This is something we'll return to in [Agency Risk](Agency-Risk.md).
+Sometimes, feature-creep happens because either managers feel they need to keep their staff busy, or the staff decide on their own that they need to [keep themselves busy](/tags/Agency-Risk).  This is something we'll return to in [Agency Risk](/tags/Agency-Risk).
 
 ## Dead-End Risk
 
-[Dead-End Risk](Complexity-Risk.md#dead-end-risk) is where you take an action that you _think_ is useful, only to find out later that actually it was a dead-end and your efforts were wasted.  Here, we'll see that [Complexity Risk](Complexity-Risk.md) is a big cause of this.
+[Dead-End Risk](/tags/Dead-End-Risk) is where you take an action that you _think_ is useful, only to find out later that actually it was a dead-end and your efforts were wasted.  Here, we'll see that [Complexity Risk](/tags/Complexity-Risk) is a big cause of this.
 
 ### An Example
 
@@ -304,9 +304,9 @@ Finally, the team realises that actually authentication would be something that 
 
 At this point, you realise you're in a **Dead End**:
   
- - **Option 1: Continue.** You carry on making minor incremental improvements to the accounting authentication system (carrying the extra [Complexity Risk](Complexity-Risk.md) of the duplicated functionality).
- - **Option 2: Merge.** You rip out the accounting authentication system and merge in the Approvals authentication system, consuming lots of development time in the process, due to the difficulty in migrating users from the old to new way of working.  There is [Implementation Risk](Feature-Risk.md#implementation-risk) here.
- - **Option 3: Remove.** You start again, trying to take into account both sets of requirements at the same time, again, possibly surfacing new hidden [Complexity Risk](Complexity-Risk.md) due to the combined approach.  Rewriting code can _seem_ like a way to mitigate [Complexity Risk](Complexity-Risk.md) but it usually doesn't work out too well.  As Joel Spolsky says:
+ - **Option 1: Continue.** You carry on making minor incremental improvements to the accounting authentication system (carrying the extra [Complexity Risk](/tags/Complexity-Risk) of the duplicated functionality).
+ - **Option 2: Merge.** You rip out the accounting authentication system and merge in the Approvals authentication system, consuming lots of development time in the process, due to the difficulty in migrating users from the old to new way of working.  There is [Implementation Risk](/tags/Implementation-Risk) here.
+ - **Option 3: Remove.** You start again, trying to take into account both sets of requirements at the same time, again, possibly surfacing new hidden [Complexity Risk](/tags/Complexity-Risk) due to the combined approach.  Rewriting code can _seem_ like a way to mitigate [Complexity Risk](/tags/Complexity-Risk) but it usually doesn't work out too well.  As Joel Spolsky says:
 
 > There’s a subtle reason that programmers always want to throw away the code and start over. The reason is that they think the old code is a mess. And here is the interesting observation: they are probably wrong. The reason that they think the old code is a mess is because of a cardinal, fundamental law of programming:  _It’s harder to read code than to write it._    - [Things You Should Never Do, Part 1, _Joel Spolsky_](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)
 
@@ -316,13 +316,13 @@ Whichever option you choose, this is a [Dead End](#dead-end-risk) because with h
 
 Working in a complex environment makes it harder to see developmental dead-ends.
  
-Sometimes, the path across the [Risk Landscape](Risk-Landscape.md) will take you to dead ends, and the only benefit to be gained is experience.  No one deliberately chooses a dead end - often you can take an action that doesn't pay off, but frequently the dead end appears from nowhere:  it's a [Hidden Risk](../thinking/Glossary.md#hidden-risk).  The source of a lot of this hidden risk is the complexity of the [risk landscape](../thinking/Glossary.md#risk-landscape).
+Sometimes, the path across the [Risk Landscape](Risk-Landscape.md) will take you to dead ends, and the only benefit to be gained is experience.  No one deliberately chooses a dead end - often you can take an action that doesn't pay off, but frequently the dead end appears from nowhere:  it's a [Hidden Risk](/thinking/Glossary.md#hidden-risk).  The source of a lot of this hidden risk is the complexity of the [risk landscape](/thinking/Glossary.md#risk-landscape).
 
-[Version Control Systems](https://en.wikipedia.org/wiki/Version_control) like [Git](https://en.wikipedia.org/wiki/Git) are a useful mitigation of [Dead-End Risk](Complexity-Risk.md#dead-end-risk), because using them means that at least you can _go back_ to the point where you made the bad decision and go a different way.  Additionally, they provide you with backups against the often inadvertent [Dead-End Risk](Complexity-Risk.md#dead-end-risk) of someone wiping the hard-disk.
+[Version Control Systems](https://en.wikipedia.org/wiki/Version_control) like [Git](https://en.wikipedia.org/wiki/Git) are a useful mitigation of [Dead-End Risk](/tags/Dead-End-Risk), because using them means that at least you can _go back_ to the point where you made the bad decision and go a different way.  Additionally, they provide you with backups against the often inadvertent [Dead-End Risk](/tags/Dead-End-Risk) of someone wiping the hard-disk.
 
 ## Where Complexity Hides
 
-So far, we've focused mainly on [Codebase Risk](Complexity-Risk.md#codebase-risk), but this isn't the only place complexity appears in software.  We're going to cover a few of these areas now, but be warned, this is not a complete list by any means:
+So far, we've focused mainly on [Codebase Risk](/tags/Codebase-Risk), but this isn't the only place complexity appears in software.  We're going to cover a few of these areas now, but be warned, this is not a complete list by any means:
 
  - Algorithmic (Space and Time) Complexity
  - Memory Management
@@ -335,23 +335,23 @@ So far, we've focused mainly on [Codebase Risk](Complexity-Risk.md#codebase-risk
 
 There is a whole branch of complexity theory devoted to how the software _runs_, namely [Big O Complexity](https://en.wikipedia.org/wiki/Big_O_notation).  
 
-Once running, an algorithm or data structure will consume space or runtime dependent on its performance characteristics, which may well have an impact on the [Operational Risk](Operational-Risk.md) of the software.  Using off-the-shelf data structures and algorithms helps, but you still need to know their performance characteristics. 
+Once running, an algorithm or data structure will consume space or runtime dependent on its performance characteristics, which may well have an impact on the [Operational Risk](/tags/Operational-Risk) of the software.  Using off-the-shelf data structures and algorithms helps, but you still need to know their performance characteristics. 
 
 The [Big O Cheat Sheet](https://bigocheatsheet.com) is a wonderful resource to investigate this further.  
 
 ### Memory Management
 
-Memory Management (and more generally, all resource management in software) is another place where [Complexity Risk](Complexity-Risk.md) hides:
+Memory Management (and more generally, all resource management in software) is another place where [Complexity Risk](/tags/Complexity-Risk) hides:
 
 > "Memory leaks are a common error in programming, especially when using languages that have no built in automatic garbage collection, such as C and C++." - [Memory Leak, _Wikipedia_](https://en.wikipedia.org/wiki/Memory_leak)
 
-[Garbage Collectors](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)) (as found in Javascript or Java) offer you the deal that they will mitigate the [Complexity Risk](Complexity-Risk.md) of you having to manage your own memory, but in return perhaps give you fewer guarantees about the _performance_ of your software.  Again, there are times when you can't accommodate this [Operational Risk](Operational-Risk.md), but these are rare and usually only affect a small portion of an entire software-system.  
+[Garbage Collectors](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)) (as found in Javascript or Java) offer you the deal that they will mitigate the [Complexity Risk](/tags/Complexity-Risk) of you having to manage your own memory, but in return perhaps give you fewer guarantees about the _performance_ of your software.  Again, there are times when you can't accommodate this [Operational Risk](/tags/Operational-Risk), but these are rare and usually only affect a small portion of an entire software-system.  
  
 ### Protocols And Types
 
-As we saw in [Communication Risk](Communication-Risk.md), whenever two components of a software system need to interact, they have to establish a protocol for doing so.  As systems become more complex, and the connectedness increases, it becomes harder to manage the risk around versioning protocols.  This becomes especially true when operating beyond the edge of the compiler's domain. 
+As we saw in [Communication Risk](/tags/Communication-Risk), whenever two components of a software system need to interact, they have to establish a protocol for doing so.  As systems become more complex, and the connectedness increases, it becomes harder to manage the risk around versioning protocols.  This becomes especially true when operating beyond the edge of the compiler's domain. 
 
-Although type-checking helps mitigate [Protocol Risk](Communication-Risk.md#protocol-risk), when software systems grow large it becomes hard to communicate intent and keep connectivity low.  You  can end up with "The Big Ball Of Mud":
+Although type-checking helps mitigate [Protocol Risk](/tags/Protocol-Risk), when software systems grow large it becomes hard to communicate intent and keep connectivity low.  You  can end up with "The Big Ball Of Mud":
 
 > "A big ball of mud is a software system that lacks a perceivable architecture. Although undesirable from a software engineering point of view, such systems are common in practice due to business pressures, developer turnover and code entropy. " - [Big Ball Of Mud, _Wikipedia_](https://en.wikipedia.org/wiki/Big_ball_of_mud)
 
@@ -361,27 +361,27 @@ Although modern languages include plenty of concurrency primitives (such as the 
 
 [Race conditions](https://en.wikipedia.org/wiki/Race_condition) and [Deadlocks](https://en.wikipedia.org/wiki/Deadlock) abound in over-complicated concurrency designs:  complexity issues are magnified by concurrency concerns, and are also hard to test and debug.  
 
-Recently, languages such as [Clojure](https://clojure.org) have introduced [persistent collections](https://en.wikipedia.org/wiki/Persistent_data_structure) to alleviate concurrency issues.  The basic premise is that any time you want to _change_ the contents of a collection, you get given back a _new collection_.  So, any collection instance is immutable once created.  The trade-off is again speed to mitigate [Complexity Risk](Complexity-Risk.md).  
+Recently, languages such as [Clojure](https://clojure.org) have introduced [persistent collections](https://en.wikipedia.org/wiki/Persistent_data_structure) to alleviate concurrency issues.  The basic premise is that any time you want to _change_ the contents of a collection, you get given back a _new collection_.  So, any collection instance is immutable once created.  The trade-off is again speed to mitigate [Complexity Risk](/tags/Complexity-Risk).  
 
-An important lesson here is that choice of language can reduce complexity: and we'll come back to this in [Software Dependency Risk](Software-Dependency-Risk.md).
+An important lesson here is that choice of language can reduce complexity: and we'll come back to this in [Software Dependency Risk](/tags/Software-Dependency-Risk).
  
 ### Networking / Security
 
-There are plenty of [Complexity Risk](Complexity-Risk.md) perils in _anything_ to do with networked code, chief amongst them being error handling and (again) [protocol evolution](Communication-Risk.md#protocol-risk).  <!-- tweet-end -->
+There are plenty of [Complexity Risk](/tags/Complexity-Risk) perils in _anything_ to do with networked code, chief amongst them being error handling and (again) [protocol evolution](/tags/Protocol-Risk).  <!-- tweet-end -->
 
 In the case of security considerations, exploits _thrive_ on the complexity of your code, and the weaknesses that occur because of it.  In particular, Schneier's Law says, never implement your own cryptographic scheme:
 
 > "Anyone, from the most clueless amateur to the best cryptographer, can create an algorithm that he himself can't break. It's not even hard. What is hard is creating an algorithm that no one else can break, even after years of analysis." - [Bruce Schneier, 1998](https://en.wikipedia.org/wiki/Bruce_Schneier#Cryptography) 
 
-Luckily, most good languages include cryptographic libraries that you can include to mitigate these [Complexity Risks](Complexity-Risk.md) from your own code-base.  
+Luckily, most good languages include cryptographic libraries that you can include to mitigate these [Complexity Risks](/tags/Complexity-Risk) from your own code-base.  
 
-This is a strong argument for the use of libraries.  But when should you use a library and when should you code-your-own?  This is covered further in the section on [Software Dependency Risk](Software-Dependency-Risk.md).  
+This is a strong argument for the use of libraries.  But when should you use a library and when should you code-your-own?  This is covered further in the section on [Software Dependency Risk](/tags/Software-Dependency-Risk).  
 
 ### The Environment
 
-The complexity of software tends to reflect the complexity of the environment it runs in, and complex software environments are more difficult to reason about, and more susceptible to [Operational Risk](Operational-Risk.md) and [Security-Risk](Agency-Risk.md#security).  
+The complexity of software tends to reflect the complexity of the environment it runs in, and complex software environments are more difficult to reason about, and more susceptible to [Operational Risk](/tags/Operational-Risk) and [Security-Risk](Agency-Risk.md#security).  
 
 In particular, when we talk about the environment, we are talking about the number of external dependencies that the software has, and the risks we face when relying on those dependencies.  
 
-So the next stop in the tour is a closer look at [Dependency Risk](Dependency-Risk.md).
+So the next stop in the tour is a closer look at [Dependency Risk](/tags/Dependency-Risk).
 

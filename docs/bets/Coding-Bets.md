@@ -25,11 +25,11 @@ So let's look at some examples...
 
 ##### "Making our codebase easier to reason about is worth the outlay of time."
 
-[Complexity Risk](../risks/Complexity-Risk.md) is the risk of your project failing due to the weight of complexity in the codebase, and its resistance to change and comprehension.  Fred Brooks' calls this mode of failure _the tar pit_:
+[Complexity Risk](/tags/Complexity-Risk) is the risk of your project failing due to the weight of complexity in the codebase, and its resistance to change and comprehension.  Fred Brooks' calls this mode of failure _the tar pit_:
 
 > "Large and small, massive or wiry, team after team has become entangled in the tar. No one thing seems to cause the difficulty - any particular paw can be pulled away. But the accumulation of simultaneous and interacting factors brings slower and slower motion." - [Frederick P. Brooks, _The Mythical Man-Month_](https://www.amazon.com/Mythical-Man-Month-Software-Engineering-Anniversary/dp/0201835959)
 
-Refactoring is the notion that we can escape the tar pit by making our codebase simpler: If _project agility_ is some function of [Complexity Risk](../risks/Complexity-Risk.md) and your team's talent, the bet here is that you can trade some time _now_ on to move to a place of lower [Complexity Risk](../risks/Complexity-Risk.md), making it easier for the developers to _get stuff done_ in the future.
+Refactoring is the notion that we can escape the tar pit by making our codebase simpler: If _project agility_ is some function of [Complexity Risk](/tags/Complexity-Risk) and your team's talent, the bet here is that you can trade some time _now_ on to move to a place of lower [Complexity Risk](/tags/Complexity-Risk), making it easier for the developers to _get stuff done_ in the future.
 
 Refactoring requires that you have some _simplifying realisation_:
 
@@ -45,7 +45,7 @@ It looks like this:
 
 **When you win** the codebase becomes easier to think about, and you delay the tar-pit.  
  
-**When you lose** the [Complexity Risk](../risks/Complexity-Risk.md) improvement is less than you hoped, it takes longer than expected, or the _simplifying realisation_ doesn't pan out and you've lost a week.
+**When you lose** the [Complexity Risk](/tags/Complexity-Risk) improvement is less than you hoped, it takes longer than expected, or the _simplifying realisation_ doesn't pan out and you've lost a week.
 
 ## Spike Solutions: A New Technology Bet
 
@@ -57,7 +57,7 @@ You might want to use a Spike Solution to test out replacing a badly-fitting tec
 
 > "Let's explore using [ElasticSearch](https://en.wikipedia.org/wiki/Elasticsearch) for searching instead of SQL Statements."
 
-Alternatively, someone will suggest using an existing technology to eradicate lots of home-grown code.  Devoting parts of your code-base to solving problems that are already solved elsewhere is a source of [Complexity Risk](../risks/Complexity-Risk.md), because that code needs maintaining.
+Alternatively, someone will suggest using an existing technology to eradicate lots of home-grown code.  Devoting parts of your code-base to solving problems that are already solved elsewhere is a source of [Complexity Risk](/tags/Complexity-Risk), because that code needs maintaining.
 
 > "Let's throw away all these scripts and start using [Kubernetes](https://en.wikipedia.org/wiki/Kubernetes) to manage our components."
 
@@ -87,13 +87,13 @@ Often you get user-stories like these:
 
 > "We need a global search because people spend too much time menu-diving."
 
-New features might help sell your software to new markets and please existing power users.  But too many features confuse users, obscuring the essential purpose of the software.  This is [Conceptual Integrity Risk](../risks/Feature-Risk.md#conceptual-integrity-risk) - trying to please everyone means you please no-one.  
+New features might help sell your software to new markets and please existing power users.  But too many features confuse users, obscuring the essential purpose of the software.  This is [Conceptual Integrity Risk](/tags/Conceptual-Integrity-Risk) - trying to please everyone means you please no-one.  
 
 ![Stake and Reward for Adding New Features](/img/generated/practices/coding/new-feature.png)
 
 **When you win** existing users welcome the change with open arms and maybe new markets open up.
  
-**When you lose** the feature is just a diversion from the main purpose of the project, or it makes little impact. It might be used often enough to remain, but adds [Complexity Risk](../risks/Complexity-Risk.md) to the codebase.  A worse scenario is that excessive features confuse the user-base and lead to dissatisfaction.
+**When you lose** the feature is just a diversion from the main purpose of the project, or it makes little impact. It might be used often enough to remain, but adds [Complexity Risk](/tags/Complexity-Risk) to the codebase.  A worse scenario is that excessive features confuse the user-base and lead to dissatisfaction.
 
 **Reduce the stakes by:** 
  - Thoroughly triaging new features.
@@ -132,12 +132,12 @@ The idea here is to make a bet that a market exists for a certain product, _and 
 
 We're used to the idea of entrepreneurs taking risks on new business ideas (like in the MVP example, above).  But it's not really so different when you are developing in a team, or on a personal project.  So if you start by taking the view that every piece of work you do is a bet then it really helps to put into perspective what is at stake and what is to gain.  
 
-The best gamblers (the ones who win over time) don't necessarily take bets they'll always win.  But they are always judging risk, stake and reward.  They try to place bets where the [Balance of Risk](../thinking/Glossary.md#balance-of-risk) is in their favour.   As developers, we should adopt the same mind-set:
+The best gamblers (the ones who win over time) don't necessarily take bets they'll always win.  But they are always judging risk, stake and reward.  They try to place bets where the [Balance of Risk](/thinking/Glossary.md#balance-of-risk) is in their favour.   As developers, we should adopt the same mind-set:
 
  - What are the likely stakes?
- - What is the [Payoff](../thinking/Glossary.md#payoff)?
+ - What is the [Payoff](/thinking/Glossary.md#payoff)?
  - What are the odds?
- - Is the bet worth it?  Do the stakes justify the [Payoff](../thinking/Glossary.md#payoff)?
+ - Is the bet worth it?  Do the stakes justify the [Payoff](/thinking/Glossary.md#payoff)?
  - How can you maximise the stakes while minimising pay-off?  How long will it take for the pay-off to be worthwhile?
  - Are you making a long bet, or lots of small, short bets?  You can reduce the overall stakes by splitting work up and doing the riskiest part first.
 

@@ -12,6 +12,7 @@ practice:
    - "CM"
    - "SCM"
    - "Software Configuration Management"
+   - "Feature Toggle"
   mitigates:
    - tag: Implementation Risk
      reason: "Establishes and maintains consistency in the software product's performance and attributes."
@@ -40,6 +41,10 @@ practice:
 
 Configuration Management (CM) involves systematically handling changes to ensure the system maintains its integrity over time. It includes practices and tools for managing changes, tracking their status, and maintaining an inventory of system and support documents. CM is critical in software engineering to handle changes efficiently, reduce risks, and ensure the system performs as intended throughout its lifecycle.
 
+See:
+
+ - [Consider Payoff](/thinking/Consider-Payoff.md)
+ 
 ## See Also
 
 <TagList tag="Configuration Management" />

@@ -42,13 +42,13 @@ Outsourcing in software development involves hiring external vendors or service 
 
 ## Discussion
 
-**Pairing** and **Mobbing** as mitigations to [Coordination Risk](../risks/Coordination-Risk.md) are easiest when developers are together in the same room.  But it doesn't always work out like this.   Teams spread in different locations and timezones naturally don't have the same [communication bandwidth](/tags/Communication-Risk) and you _will_ have more issues with [Coordination Risk](../risks/Coordination-Risk.md).  
+**Pairing** and **Mobbing** as mitigations to [Coordination Risk](/tags/Coordination-Risk) are easiest when developers are together in the same room.  But it doesn't always work out like this.   Teams spread in different locations and timezones naturally don't have the same [communication bandwidth](/tags/Communication-Risk) and you _will_ have more issues with [Coordination Risk](/tags/Coordination-Risk).  
 
 In the extreme, I've seen situations where the team at one location has decided to "suck up" the extra development effort themselves rather than spend time trying to bring a new remote team up-to-speed.  More common is for one location to do the development, while another gets the [Support](Support) duties.  
 
-When this happens, it's because somehow the team feel that [Coordination Risk](../risks/Coordination-Risk.md) is more unmanageable than [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk).
+When this happens, it's because somehow the team feel that [Coordination Risk](/tags/Coordination-Risk) is more unmanageable than [Schedule Risk](/tags/Schedule-Risk).
 
-There are some mitigations here:  video-chat, moving staff from location-to-location for face-time, frequent [show-and-tell](Review.md), or simply modularizing accross geographic boundaries, in respect of [Conway's Law](../risks/Coordination-Risk.md):
+There are some mitigations here:  video-chat, moving staff from location-to-location for face-time, frequent [show-and-tell](/tags/Review), or simply modularizing accross geographic boundaries, in respect of [Conway's Law](/tags/Coordination-Risk):
 
 > "organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations."  - _[M. Conway](https://en.wikipedia.org/wiki/Conways_law)_
 

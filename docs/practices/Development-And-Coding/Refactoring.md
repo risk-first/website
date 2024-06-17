@@ -15,6 +15,7 @@ practice:
    - "Factoring"
    - "Separation of Concerns"
    - "Modularisation"
+   - "Creating Abstractions"
   mitigates:
    - tag: Complexity Risk
      reason: "Refactoring is aimed at making code more orthogonal, less duplicative and clearer to understand"
@@ -42,6 +43,18 @@ practice:
 
 Refactoring involves revising and restructuring existing code to improve its readability, maintainability, and performance without changing its external behavior. This practice helps in reducing technical debt, enhancing code quality, and making the codebase easier to understand and modify.
 
+## Abstractions
+
+Refactoring is all about ensuring you have the right abstractions.  
+
+> "An abstraction" is the outcome of this process—a concept that acts as a common noun for all subordinate concepts and connects any related concepts as a group, field, or category.
+
+See: 
+
+ - [Refactoring](/risks/Complexity-Risk.md#refactoring)
+ - [The Power of Abstractions](/risks/Staging-And-Classifying.md#the-power-of-abstractions)
+ - [Hierarchies and Modularisation](/risks/Complexity-Risk.md#hierarchies-and-modularisation)
+ 
 
 ## External References
 

@@ -58,18 +58,18 @@ This _hints_ at the fact that at some level it's all about risk:
 
 The reason you are [taking an action](Glossary.md#taking-action) is to manage a risk.  For example: 
 
- - If you're coding up new features in the software, this is managing [Feature Risk](../risks/Feature-Risk.md) (which we'll explore in more detail later).  
- - If you're getting a business sign-off for something, this is managing the risk of everyone not agreeing on a course of action (a [Coordination Risk](../risks/Coordination-Risk.md)).  
- - If you're writing a test, then that's managing a type of [Implementation Risk](../risks/Feature-Risk.md#implementation-risk).  
+ - If you're coding up new features in the software, this is managing [Feature Risk](/tags/Feature-Risk) (which we'll explore in more detail later).  
+ - If you're getting a business sign-off for something, this is managing the risk of everyone not agreeing on a course of action (a [Coordination Risk](/tags/Coordination-Risk)).  
+ - If you're writing a test, then that's managing a type of [Implementation Risk](/tags/Implementation-Risk).  
 
 ## Every Action Has Attendant Risk
 
 - How do you know if the action will get completed?  
 - Will it overrun, or be on time?  
 - Will it lead to yet more actions?
-- What [Hidden Risk](../thinking/Glossary.md#hidden-risk) will it uncover?
+- What [Hidden Risk](/thinking/Glossary.md#hidden-risk) will it uncover?
 
-Consider _coding a feature_.  The whole process of coding is an exercise in learning what we didn't know about the world, uncovering problems and improving our [Internal Model](../thinking/Glossary.md#internal-model).  That is, flushing out the [Attendant Risk](../thinking/Glossary.md#attendant-risk) of the [Goal](../thinking/Glossary.md#goal).
+Consider _coding a feature_.  The whole process of coding is an exercise in learning what we didn't know about the world, uncovering problems and improving our [Internal Model](/thinking/Glossary.md#internal-model).  That is, flushing out the [Attendant Risk](/thinking/Glossary.md#attendant-risk) of the [Goal](/thinking/Glossary.md#goal).
 
 And, as we saw in the [Introduction](A-Simple-Scenario.md), even something _mundane_ like the Dinner Party had risks. 
 
@@ -100,7 +100,7 @@ Let's look at a real-life example.  The above image shows a selection of issues 
 
 The above diagram is an idealised example of this, showing how we take action to address the risks and goals on the left and end up with new risks on the right.  
  
-[Goals](../thinking/Glossary.md#goal) live inside our [Internal Model](../thinking/Glossary.md#internal-model), just like Risks.  Functionally, Goals and Risks are equivalent.  For example, the Goal of "Implementing Feature X" is equivalent to mitigating "Risk of Feature X not being present".
+[Goals](/thinking/Glossary.md#goal) live inside our [Internal Model](/thinking/Glossary.md#internal-model), just like Risks.  Functionally, Goals and Risks are equivalent.  For example, the Goal of "Implementing Feature X" is equivalent to mitigating "Risk of Feature X not being present".
 
 Let's try and back up that assertion with a few more examples:
 
@@ -110,7 +110,7 @@ Let's try and back up that assertion with a few more examples:
 | Risk of looking technically inferior during the cold war | Feeling of technical superiority | Land a man on the moon |
 | Risk of the market not requiring your skills             | Job security     | Retrain       |
 
-There is a certain "interplay" between the concepts of risks, actions and goals. On the [Risk Landscape](../thinking/Glossary.md#risk-landscape), goals and risks correspond to  starting points and destinations, whilst the action is moving on the risk landscape.  
+There is a certain "interplay" between the concepts of risks, actions and goals. On the [Risk Landscape](/thinking/Glossary.md#risk-landscape), goals and risks correspond to  starting points and destinations, whilst the action is moving on the risk landscape.  
 
 | **Starting Point** | **Movement** | **End Point**                  |
 |--------------------|--------------|--------------------------------|

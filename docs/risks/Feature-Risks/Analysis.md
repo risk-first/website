@@ -10,24 +10,24 @@ sidebar_label: Analysis
 
 ## Fashion
 
-Fashion plays a big part in IT.  By being _fashionable_, web-sites are communicating:   _this is a new thing_, _this is relevant_, _this is not terrible_.  All of which is mitigating a [Communication Risk](Communication-Risk.md).  Users are all-too-aware that the Internet is awash with terrible, abandon-ware sites that are going to waste their time.  
+Fashion plays a big part in IT.  By being _fashionable_, web-sites are communicating:   _this is a new thing_, _this is relevant_, _this is not terrible_.  All of which is mitigating a [Communication Risk](/tags/Communication-Risk).  Users are all-too-aware that the Internet is awash with terrible, abandon-ware sites that are going to waste their time.  
 
 How can you communicate that you're not one of them to your users?
 
 ## Delight
 
-If this breakdown of [Feature Risk](Feature-Risk.md) seems reductive, then try not to think of it that way:  the aim _of course_ should be to delight users, and turn them into fans.  
+If this breakdown of [Feature Risk](/tags/Feature-Risk) seems reductive, then try not to think of it that way:  the aim _of course_ should be to delight users, and turn them into fans.  
 
-Consider [Feature Risk](Feature-Risk.md) from both the down-side and the up-side:  
+Consider [Feature Risk](/tags/Feature-Risk) from both the down-side and the up-side:  
 
  - What are we missing?
  - How can we be _even better_?
 
 ## Analysis
 
-So far in this section, we've simply seen a bunch of different types of [Feature Risk](Feature-Risk.md).  But we're going to be relying heavily on [Feature Risk](Feature-Risk.md) as we go on in order to build our understanding of other risks, so it's probably worth spending a bit of time up front to classify what we've found.  
+So far in this section, we've simply seen a bunch of different types of [Feature Risk](/tags/Feature-Risk).  But we're going to be relying heavily on [Feature Risk](/tags/Feature-Risk) as we go on in order to build our understanding of other risks, so it's probably worth spending a bit of time up front to classify what we've found.  
 
-The [Feature Risks](Feature-Risk.md) identified here basically exist in a space with at least 3 dimensions:
+The [Feature Risks](/tags/Feature-Risk) identified here basically exist in a space with at least 3 dimensions:
 
  - **Fit**: how well the features fit for a particular client.
  - **Audience**:  the range of clients (the _market_) that may be able to use this feature.
@@ -55,7 +55,7 @@ In the [Staging And Classifying](Staging-And-Classifying.md) section we'll come 
 
 ### Fit and Audience
 
-Two risks, [Feature Access Risk](Feature-Risk.md#feature-access-risk) and [Market Risk](Feature-Risk.md#market-risk), consider _fit_ for a whole _audience_ of users.  They are different:  just as it's possible to have a small audience, but a large revenue, it's possible to have a product which has low [Feature Access Risk](#feature-access-risk) (i.e lots of users can access it without difficulty) but high [Market Risk](#market-risk) (i.e. the market is highly volatile or capricious in it's demands).  _Online services_ often suffer from this [Market Risk](#market-risk) roller-coaster, being one moment highly valued and the next irrelevant. 
+Two risks, [Feature Access Risk](/tags/Feature-Access-Risk) and [Market Risk](/tags/Market-Risk), consider _fit_ for a whole _audience_ of users.  They are different:  just as it's possible to have a small audience, but a large revenue, it's possible to have a product which has low [Feature Access Risk](#feature-access-risk) (i.e lots of users can access it without difficulty) but high [Market Risk](#market-risk) (i.e. the market is highly volatile or capricious in it's demands).  _Online services_ often suffer from this [Market Risk](#market-risk) roller-coaster, being one moment highly valued and the next irrelevant. 
 
  - **Market Risk** is therefore risk to _income_ from the market changing.
  - **Feature Access Risk** is risk to _audience_ changing.

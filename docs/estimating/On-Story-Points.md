@@ -3,11 +3,11 @@ title: On Story Points
 description: Part of the 'Estimating' Risk-First Track, about improving estimates using risk checklists.
 
 date: 2021-05-08 13:32:03 +0000
-
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/box-size.svg">On Story Points</image-artifact>'
 tags:
+  - Scrum
   - Estimating
 sidebar_position: 8
 tweet: yes
@@ -37,7 +37,7 @@ At a basic level, to calculate the number of story points for an item of work, y
 
 - **A Project**:  Since the story will be embedded in the context of a project, this is an important input.  On some projects, work is harder to complete than on others.  Things like the choice of languages or architectures have an effect, as do the systems and people the project needs to interface with.
 
-- **Team Experience**: Over time, the team become more experienced both working with each other and with the project itself.  They learn the [Risk Landscape](../risks/Risk-Landscape.md) and understand where the pitfalls lie and how to avoid them.   
+- **Team Experience**: Over time, the team become more experienced both working with each other and with the project itself.  They learn the [Risk Landscape](/risks/Risk-Landscape.md) and understand where the pitfalls lie and how to avoid them.   
 
 ## Calculating Story Points
 
@@ -61,9 +61,9 @@ After some back-and-forth, the team agrees on a number.  But what does this numb
 
 - **Ideal Person-Days**: An obvious interpretation is that a story point is some number of person-days.   In most of the planning sessions I've been involved in, there is either an explicit or tacit base-lining of story points so that everyone has a similar conception of how much work is involved in one, e.g. "A Story point is a morning".  The "ideal" part refers to the actual time you get to spend on a task, away from interruptions, lunches, all-hands meetings and so on.  The reason _not_ to use person days directly is that developers all work at different speeds.
 
-- **Complexity**: An alternate view is that [a story point is about _complexity_](https://www.clearvision-cm.com/blog/why-Story Points-are-a-measure-of-complexity-not-effort/).  This means a Sprint is all about budgeting complexity, rather than effort.   This makes some sense - [complexity is a recurring theme in Risk-First, after all.](../complexity/Start.md)  However, given that the sprint is measured in person-days, and the scrum leader is going to produce a report showing how many story points were completed in a sprint, it's clear that complexity really is just a weak proxy for person-days anyway.  In fact, there are lots of tasks that might be low-complexity, but take a lot of time anyway, such as designing 500 icons.  This will clearly take a lot of time, but be low-complexity, so you better give it enough story points to represent the time you'll spend on it.   
+- **Complexity**: An alternate view is that [a story point is about _complexity_](https://www.clearvision-cm.com/blog/why-Story Points-are-a-measure-of-complexity-not-effort/).  This means a Sprint is all about budgeting complexity, rather than effort.   This makes some sense but given that the sprint is measured in person-days, and the scrum leader is going to produce a report showing how many story points were completed in a sprint, it's clear that complexity really is just a weak proxy for person-days anyway.  In fact, there are lots of tasks that might be low-complexity, but take a lot of time anyway, such as designing 500 icons.  This will clearly take a lot of time, but be low-complexity, so you better give it enough story points to represent the time you'll spend on it.   
 
-- **Relative Sizing**: A third way of looking at it is that really, story points are just about _relative_ sizing:  it doesn't matter what they refer to or how big they are, it's all about trying to budget the right amount of work into the sprint.  For example, you can either have two one-point stories, or a two-point story, and the effect on the sprint is the same.  Because there is no fixed definition of the size of a story point, you do run the risk of story-point "inflation" or "deflation".  But unless you are trying to use them to plot team productivity over time, this shouldn't really matter so much.  And we'd never make the mistake of doing that, [right](../risks/Map-And-Territory-Risk.md)?  
+- **Relative Sizing**: A third way of looking at it is that really, story points are just about _relative_ sizing:  it doesn't matter what they refer to or how big they are, it's all about trying to budget the right amount of work into the sprint.  For example, you can either have two one-point stories, or a two-point story, and the effect on the sprint is the same.  Because there is no fixed definition of the size of a story point, you do run the risk of story-point "inflation" or "deflation".  But unless you are trying to use them to plot team productivity over time, this shouldn't really matter so much.  And we'd never make the mistake of doing that, [right](/tags/Map-And-Territory-Risk)?  
 
 ## Observations
 
@@ -75,7 +75,7 @@ In his essay, "Choose Boring Technology", Dan McKinley describes a theoretical i
 
 > "Let’s say every company gets about three innovation tokens. You can spend these however you want, but the supply is fixed for a long while... If you choose to write your website in NodeJS, you just spent one of your innovation tokens. If you choose to use MongoDB, you just spent one of your innovation tokens. If you choose to use service discovery tech that’s existed for a year or less, you just spent one of your innovation tokens... there are many choices of technology that are boring and good, or at least good enough. MySQL is boring. Postgres is boring. PHP is boring. " - [Choose Boring Technology, _Dan McKinley_](https://mcfunley.com/choose-boring-technology)
 
-What he's driving at here is of course _risk_: with shiny (i.e. non-boring) technology, you pick up lots of [Hidden Risk](../thinking/Glossary.md#hidden-risk).  Innovation Tokens are paying for time spent dealing with [Hidden Risk](../thinking/Glossary.md#hidden-risk).  Dan's contention is that not only do you have the up-front costs of integrating the shiny technology, but you also have a long tail of extra running costs, as you have to manage the new technology through to maturity in your environment.
+What he's driving at here is of course _risk_: with shiny (i.e. non-boring) technology, you pick up lots of [Hidden Risk](/thinking/Glossary.md#hidden-risk).  Innovation Tokens are paying for time spent dealing with [Hidden Risk](/thinking/Glossary.md#hidden-risk).  Dan's contention is that not only do you have the up-front costs of integrating the shiny technology, but you also have a long tail of extra running costs, as you have to manage the new technology through to maturity in your environment.
 
 Put this way, couldn't story points be some kind of "Innovation Token"?    
 
@@ -87,7 +87,7 @@ Sometimes, developers provide _tolerances_ around their story-point estimates, "
 
 Another problem in Story Point estimation is bootstrapping.  It is expected that, to start with, estimates made by inexperienced teams, or inexperienced team-members, are going to be poor.  The expectation is also that over time, through domain experience, the estimates improve.  This seems to happen _somewhat_ in my experience.  But nowhere near enough. 
 
-A common complaint when tasks overrun is that the team were blind-sided by [Hidden Risk](../thinking/Glossary.md#hidden-risk), but in my experience this boils down to two things:
+A common complaint when tasks overrun is that the team were blind-sided by [Hidden Risk](/thinking/Glossary.md#hidden-risk), but in my experience this boils down to two things:
 
  - Genuine hidden risk, that no-one could have foreseen (e.g. a bug in a device driver that no-one knew about).
  - Fake hidden risks, that could have been foreseen with the appropriate up-front effort (e.g. a design approval might take a bit longer than expected due to absence).
@@ -98,18 +98,18 @@ Below, I've sketched out a small section of what this might look like.  The [nex
 
 | **Area**                                     | **Concern**                                                                       | **Notes** | **Point Value** |
 | -------------------------------------------- | --------------------------------------------------------------------------------- | --------- | --------------- |
-| **\- [Conceptual Integrity Risk](../risks/Feature-Risk.md#conceptual-integrity-risk)** | Requires new interface to be added      |           |                 |
+| **\- [Conceptual Integrity Risk](/tags/Conceptual-Integrity-Risk)** | Requires new interface to be added      |           |                 |
 |                                              | Requires refactoring of existing interfaces                                       |           |                 |
-| **\- [Feature-Access Risk](../risks/Feature-Risk.md#feature-access-risk)**| Interface Experimentation required                   |           |                 |
+| **\- [Feature-Access Risk](/tags/Feature-Access-Risk)**| Interface Experimentation required                   |           |                 |
 |                                              | Varied user population                                                            |           |                 |
 |                                              |                                                                                   |           |                 |
-| **\- [Implementation Risk](../risks/Feature-Risk.md#implementation-risk)** | Developer unfamiliar with the requirements / system |           |                 |                                              
-| **\- [Feature-Fit](../risks/Feature-Risk.md#feature-fit-risk)**| Success criteria hard to define                                          |           |                 |
+| **\- [Implementation Risk](/tags/Implementation-Risk)** | Developer unfamiliar with the requirements / system |           |                 |                                              
+| **\- [Feature-Fit](/tags/Feature-Fit-Risk)**| Success criteria hard to define                                          |           |                 |
 |                                              | Difficult-to-access user base                                                     |           |                 |
 
 By starting discussions with an Interference Checklist, we can augment the "play planning poker" process by _prompting people on things to think about_, like "Do we know what done looks like here?", "Is this going to affect some of our existing functionality?", "How are we going to get it tested?".  
 
-A Checklist is a good way of asking questions in order that we can manage risk early on.  It's all about turning a [Hidden Risk](../thinking/Glossary.md#hidden-risk) into one we've thought about.  
+A Checklist is a good way of asking questions in order that we can manage risk early on.  It's all about turning a [Hidden Risk](/thinking/Glossary.md#hidden-risk) into one we've thought about.  
 
 If the team runs through this list together, and then decides the task is a "five-story-pointer", then surely that is a better, more rigorous approach than just plucking a number out of the air, as planning poker suggests.
 
@@ -142,13 +142,13 @@ Maybe the Interference Checklist for it looks like this:
 
 | **Area**                                     | **Concern**                                                                       | **Notes** | **Point Value** |
 | -------------------------------------------- | --------------------------------------------------------------------------------- | --------- | --------------- |
-| **\- [Conceptual Integrity Risk](../risks/Feature-Risk.md#conceptual-integrity-risk)** | Requires new interface to be added      | Yes, new screen  | 1                |
+| **\- [Conceptual Integrity Risk](/tags/Conceptual-Integrity-Risk)** | Requires new interface to be added      | Yes, new screen  | 1                |
 |                                              | Requires refactoring of existing interfaces                                       |           |                 |
-| **\- [Feature-Access Risk](../risks/Feature-Risk.md#feature-access-risk)**| Interface Experimentation required                   |           | 1               |
+| **\- [Feature-Access Risk](/tags/Feature-Access-Risk)**| Interface Experimentation required                   |           | 1               |
 |                                              | Varied user population                                                            |           | 1               |
 |                                              |                                                                                   |           |                 |
-| **\- [Implementation Risk](../risks/Feature-Risk.md#implementation-risk)** | Developer unfamiliar with the requirements / system |           |                 |                                              
-| **\- [Feature-Fit](../risks/Feature-Risk.md#feature-fit-risk)**| Success criteria hard to define                                          |           |                 |
+| **\- [Implementation Risk](/tags/Implementation-Risk)** | Developer unfamiliar with the requirements / system |           |                 |                                              
+| **\- [Feature-Fit](/tags/Feature-Fit-Risk)**| Success criteria hard to define                                          |           |                 |
 |                                              | Difficult-to-access user base                                                     | Need to find a representative group | 2    |
 |                                              |                                                                                   | Total     | 5               |      
 

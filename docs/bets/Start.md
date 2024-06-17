@@ -11,7 +11,7 @@ cat: Bets
 tags:
  - Front
 tweet: yes
-sidebar_position: 4
+sidebar_position: 7
 ---
 
 # On Bets

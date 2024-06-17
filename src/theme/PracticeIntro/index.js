@@ -5,8 +5,13 @@ import { usePluginData } from '@docusaurus/useGlobalData'
 import { useLocation } from '@docusaurus/router';
 
 function formatReadableTag(page) {
-	return page.replaceAll("-", " ").substring(page.lastIndexOf("/")+1)	
-}
+	var out = page.replaceAll("-", " ").substring(page.lastIndexOf("/")+1)	
+	if (out.indexOf("#") > -1) {
+		out = out.substr(0, out.indexOf("#"))
+	}
+	
+	return out
+ }
 
 function tagUrl(tag) {
 	return "/tags/"+tag.replaceAll(" ", "-")	
@@ -88,7 +93,7 @@ export default ({details}) => {
 		sortedAka.map(m => <Aka name={m.name} from={m.from} link={m.link} /> )
 		}
 		</ul>
-		<h3>Related Practices</h3>
+		<h3>Related</h3>
 		<ul>
     	{
 			details.practice.related.map(i => <li><a href={i}>{formatReadableTag(i)}</a></li>)

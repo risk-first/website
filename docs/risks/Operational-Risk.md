@@ -20,35 +20,35 @@ tags:
 
 In this section we're going to start considering the realities of running software systems in the real world.  
 
-There is a lot to this subject, so this section is just a taster: we're going to set the scene by looking at what constitutes an [Operational Risk](Operational-Risk.md), and then look at the related discipline of [Operations Management](#operations-management).  Following this background, we'll apply the Risk-First model and have a high-level look at the various mitigations for [Operational Risk](Operational-Risk.md).  
+There is a lot to this subject, so this section is just a taster: we're going to set the scene by looking at what constitutes an [Operational Risk](/tags/Operational-Risk), and then look at the related discipline of [Operations Management](#operations-management).  Following this background, we'll apply the Risk-First model and have a high-level look at the various mitigations for [Operational Risk](/tags/Operational-Risk).  
 
 ## Operational Risks
 
-When building software, it's tempting to take a very narrow view of the dependencies of a system, but [Operational Risks](Operational-Risk.md) are often caused by dependencies we _don't_ consider - i.e. the **Operational Context** within which the system is operating.<!-- tweet-end -->  Here are some examples:  
+When building software, it's tempting to take a very narrow view of the dependencies of a system, but [Operational Risks](/tags/Operational-Risk) are often caused by dependencies we _don't_ consider - i.e. the **Operational Context** within which the system is operating.<!-- tweet-end -->  Here are some examples:  
 
  - **[Staff Risks](Scarcity-Risk.md#staff-risk)**: 
    - Freak weather conditions affecting ability of staff to get to work, interrupting the development and support teams. 
    - Reputational damage caused when staff are rude to the customers.
  
- - **[Reliability Risks](Dependency-Risk.md#reliability-risk)**:
+ - **[Reliability Risks](/tags/Reliability-Risk)**:
    - A data-centre going off-line, causing your customers to lose access.
    - A power cut causing backups to fail.
    - Not having enough desks for everyone to sit at.
    
- - **[Process Risks](Process-Risk.md)**:
+ - **[Process Risks](/tags/Process-Risk)**:
    - Regulatory change, which means you have to adapt your business model.
    - Insufficient controls which means you don't notice when some transactions are failing, leaving you out-of-pocket.
    - Data loss because of bugs introduced during an untested release.
  
- - **[Software Dependency Risk](Software-Dependency-Risk.md)**:
+ - **[Software Dependency Risk](/tags/Software-Dependency-Risk)**:
    - Hackers exploit weaknesses in a piece of 3rd party software, bringing your service down.
  
- - **[Agency Risk](Agency-Risk.md)**:
+ - **[Agency Risk](/tags/Agency-Risk)**:
    - Workers going on strike.
    - Employees trying to steal from the company (bad actors).
    - Other crime, such as hackers stealing data.
 
-This is a long laundry-list of everything that can go wrong due to operating in "The Real World".  Although we've spent a lot of time looking at the varieties of [Dependency Risk](Dependency-Risk.md) on a software project, with [Operational Risk](Operational-Risk.md) we have to consider that these dependencies will fail in any number of unusual ways, and we can't be ready for all of them.  Preparing for this comes under the umbrella of [Operations Management](#operations-management).
+This is a long laundry-list of everything that can go wrong due to operating in "The Real World".  Although we've spent a lot of time looking at the varieties of [Dependency Risk](/tags/Dependency-Risk) on a software project, with [Operational Risk](/tags/Operational-Risk) we have to consider that these dependencies will fail in any number of unusual ways, and we can't be ready for all of them.  Preparing for this comes under the umbrella of [Operations Management](#operations-management).
 
 ## Operations Management
 
@@ -82,7 +82,7 @@ Let's look at each of these actions in turn.
 
 ![Control, Monitoring And Detection](/img/generated/risks/operational/monitoring-detection.png)
 
-Since humans and machines have different areas of expertise, and because [Operational Risks](Operational-Risk.md) are often novel, it's often not optimal to try and automate everything.  A good operation will consist of a mix of human and machine actors, each playing to their strengths (see the table below). 
+Since humans and machines have different areas of expertise, and because [Operational Risks](/tags/Operational-Risk) are often novel, it's often not optimal to try and automate everything.  A good operation will consist of a mix of human and machine actors, each playing to their strengths (see the table below). 
 
 The aim is to build a human-machine operational system that is [_Homeostatic_](https://en.wikipedia.org/wiki/Homeostasis).  This is the property of living things to try and maintain an equilibrium (for example, body temperature or blood glucose levels), but also applies to systems at any scale.  The key to homeostasis is to build systems with feedback loops, even though this leads to more complex systems overall. The diagram above shows some of the actions involved in these kind of feedback loops within IT operations. 
 
@@ -93,15 +93,15 @@ The aim is to build a human-machine operational system that is [_Homeostatic_](h
 |Expensive at scale           |Cheap at scale               |
 |Reacting and Anticipating    |Recording                    |
 
-As we saw in [Map and Territory Risk](Map-And-Territory-Risk.md), it's very easy to fool yourself, especially around [Key Performance Indicators (KPIs)](https://en.wikipedia.org/wiki/Performance_indicator) and metrics. Large organisations have [Audit](https://en.wikipedia.org/wiki/Audit) functions precisely to guard against their own internal failing [processes](Process-Risk.md) and [Agency Risk](Agency-Risk.md).  Audits could be around software tools, processes, practices, quality and so on.  Practices such as [Continuous Improvement](https://en.wikipedia.org/wiki/Continual_improvement_process) and [Total Quality Management](https://en.wikipedia.org/wiki/Total_quality_management) also figure here.
+As we saw in [Map and Territory Risk](/tags/Map-And-Territory-Risk), it's very easy to fool yourself, especially around [Key Performance Indicators (KPIs)](https://en.wikipedia.org/wiki/Performance_indicator) and metrics. Large organisations have [Audit](https://en.wikipedia.org/wiki/Audit) functions precisely to guard against their own internal failing [processes](/tags/Process-Risk) and [Agency Risk](/tags/Agency-Risk).  Audits could be around software tools, processes, practices, quality and so on.  Practices such as [Continuous Improvement](https://en.wikipedia.org/wiki/Continual_improvement_process) and [Total Quality Management](https://en.wikipedia.org/wiki/Total_quality_management) also figure here.
 
 ### Scanning The Operational Context
 
-There are plenty of [Hidden Risks](../thinking/Glossary.md#hidden-risk) within the operation's environment. These change all the time in response to economic, legal or political change.  In order to manage a risk, you have to uncover it, so part of [Operations Management](#operations-management) is to look for trouble.
+There are plenty of [Hidden Risks](/thinking/Glossary.md#hidden-risk) within the operation's environment. These change all the time in response to economic, legal or political change.  In order to manage a risk, you have to uncover it, so part of [Operations Management](#operations-management) is to look for trouble.
 
-- **Environmental Scanning** is all about trying to determine which changes in the environment are going to impact your operation.   Here we are trying to determine the level of [Dependency Risk](Dependency-Risk.md) we face for external dependencies, such as suppliers, customers, markets and regulation.  Tools like [PEST](https://en.wikipedia.org/wiki/PEST_analysis) are relevant, as is 
+- **Environmental Scanning** is all about trying to determine which changes in the environment are going to impact your operation.   Here we are trying to determine the level of [Dependency Risk](/tags/Dependency-Risk) we face for external dependencies, such as suppliers, customers, markets and regulation.  Tools like [PEST](https://en.wikipedia.org/wiki/PEST_analysis) are relevant, as is 
 - **[Penetration Testing](https://en.wikipedia.org/wiki/Penetration_test)**: looking for security weaknesses within the operation.  See [OWASP](https://en.wikipedia.org/wiki/OWASP) for examples.
-- **[Vulnerability Management](https://en.wikipedia.org/wiki/Vulnerability_management)** is about keeping up-to-date with vulnerabilities in [Software Dependencies](Software-Dependency-Risk.md).
+- **[Vulnerability Management](https://en.wikipedia.org/wiki/Vulnerability_management)** is about keeping up-to-date with vulnerabilities in [Software Dependencies](/tags/Software-Dependency-Risk).
 
 ## Planning
 
@@ -115,20 +115,20 @@ As the diagram above shows, we can bring [Planning](#planning) to bear on depend
 
 ![Design and Change Activities](/img/generated/risks/operational/design-change.png)
 
-Since our operation exists in a world of risks like [Red Queen Risk](Scarcity-Risk.md#red-queen-risk) and [Feature Drift Risk](Feature-Risk.md#feature-drift-risk), we would expect that the output of our [Planning](#planning) actions would result in changes to our operation.  
+Since our operation exists in a world of risks like [Red Queen Risk](/tags/Red-Queen-Risk) and [Feature Drift Risk](/tags/Feature-Drift-Risk), we would expect that the output of our [Planning](#planning) actions would result in changes to our operation.  
 
 While _planning_ is a day-to-day operational feedback loop, _design_ is a longer feedback loop changing not just the parameters of the operation, but the operation itself.
 
-You might think that for an IT operation, tasks like [Design](#design) belong within a separate "Development" function within an organisation.  Traditionally, this might have been the case.  However separating Development from Operations implies [Boundary Risk](Boundary-Risk.md) between these two functions.  For example, the developers might employ different tools, equipment and processes to the Operations team resulting in a mismatch when software is delivered.
+You might think that for an IT operation, tasks like [Design](#design) belong within a separate "Development" function within an organisation.  Traditionally, this might have been the case.  However separating Development from Operations implies [Boundary Risk](/tags/Boundary-Risk) between these two functions.  For example, the developers might employ different tools, equipment and processes to the Operations team resulting in a mismatch when software is delivered.
 
-In recent years the [DevOps](https://en.wikipedia.org/wiki/DevOps) movement has brought this [Boundary Risk](Boundary-Risk.md) into sharper focus.  This specifically means:
+In recent years the [DevOps](https://en.wikipedia.org/wiki/DevOps) movement has brought this [Boundary Risk](/tags/Boundary-Risk) into sharper focus.  This specifically means:
  
   - Using code to automate previously manual Operations functions, like monitoring and releasing.
   - Involving Operations in the planning and design, so that the delivered software is optimised for the environment it runs in.
   
 ## Improvement
 
-No system can be perfect, and after it meets the real world, we will want to improve it over time.  But [Operational Risk](Operational-Risk.md) includes an element of [Trust & Belief Risk](Communication-Risk.md#trust--belief-risk): we have a  _reputation_ and the good will of our customers to consider when we make improvements.  Because this is very hard to rebuild, we should consider this before releasing software that might not live up to expectations.    
+No system can be perfect, and after it meets the real world, we will want to improve it over time.  But [Operational Risk](/tags/Operational-Risk) includes an element of [Trust & Belief Risk](/tags/Trust-And-Belief-Risk): we have a  _reputation_ and the good will of our customers to consider when we make improvements.  Because this is very hard to rebuild, we should consider this before releasing software that might not live up to expectations.    
 
 So there is a tension between "you only get one chance to make a first impression" and "gilding the lily" (perfectionism).  In the past I've seen this stated as _pressure to ship vs pressure to improve_.
 
@@ -136,10 +136,10 @@ So there is a tension between "you only get one chance to make a first impressio
 
 A Risk-First re-framing of this (as shown in the diagram above) might be the balance between:
 
-- The perceived [Scarcity Risks](Scarcity-Risk.md) (such as funding, time available, etc) of staying in development (pressure to ship).
-- The perceived [Trust & Belief Risk](Communication-Risk.md#trust--belief-risk), [Feature Risk](Feature-Risk.md) and [Operational Risk](Operational-Risk.md) of going to production (pressure to improve).
+- The perceived [Scarcity Risks](/tags/Scarcity-Risk) (such as funding, time available, etc) of staying in development (pressure to ship).
+- The perceived [Trust & Belief Risk](/tags/Trust-And-Belief-Risk), [Feature Risk](/tags/Feature-Risk) and [Operational Risk](/tags/Operational-Risk) of going to production (pressure to improve).
 
-The "should we ship?" decision is therefore a complex one.  In [Meeting Reality](../thinking/Meeting-Reality.md), we discussed that it's better to do this "sooner, more frequently, in smaller chunks and with feedback".  We can meet [Operational Risk](Operational-Risk.md) _on our own terms_ by doing so: 
+The "should we ship?" decision is therefore a complex one.  In [Meeting Reality](/thinking/Meeting-Reality.md), we discussed that it's better to do this "sooner, more frequently, in smaller chunks and with feedback".  We can meet [Operational Risk](/tags/Operational-Risk) _on our own terms_ by doing so: 
 
 |Meet Reality...             |Techniques                                                            | 
 |----------------------------|----------------------------------------------------------------------|
@@ -152,7 +152,7 @@ The "should we ship?" decision is therefore a complex one.  In [Meeting Reality]
 
 ## The End Of The Road
 
-In a way, [actions](../thinking/Glossary.md#taking-action) like **Design** and **Improvement** bring us right back to where we started from: identifying [Dependency Risks](Dependency-Risk.md), [Feature Risks](Feature-Risk.md) and [Complexity Risks](Complexity-Risk.md) that hinder our operation, and mitigating them through actions like _software development_.  
+In a way, [actions](/thinking/Glossary.md#taking-action) like **Design** and **Improvement** bring us right back to where we started from: identifying [Dependency Risks](/tags/Dependency-Risk), [Feature Risks](/tags/Feature-Risk) and [Complexity Risks](/tags/Complexity-Risk) that hinder our operation, and mitigating them through actions like _software development_.  
 
 Our safari of risk is finally complete: it's time to reflect on what we've seen in the next section, [Staging and Classifying](Staging-And-Classifying.md).  
  

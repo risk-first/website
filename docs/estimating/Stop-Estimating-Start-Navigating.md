@@ -19,7 +19,7 @@ This is the _ninth_ article in the [Risk-First](https://riskfirst.org) track on 
 
 - In article seven, we explored how [Scrum](Fixing-Scrum.md), the popular Agile methodology, fails to understand this crucial problem with estimates (among other failings).
 
-- Then, in [Risk-First Analysis](Risk-First-Analysis.md) we look at how we can work out what to build by examining what [risks](../thinking/Glossary.md#risk) we'd like to address and which [goals](../thinking/Glossary.md#risk) or [Upside Risks](../thinking/Glossary.md#upside-risk) we'd like to see happen.  
+- Then, in [Risk-First Analysis](Risk-First-Analysis.md) we look at how we can work out what to build by examining what [risks](/thinking/Glossary.md#risk) we'd like to address and which [goals](/thinking/Glossary.md#risk) or [Upside Risks](/thinking/Glossary.md#upside-risk) we'd like to see happen.  
 
 So, now we're up to date.  It's article nine, and I was going to build on [Risk-First Analysis](Risk-First-Analysis.md) to show how to plan work for a team of people over a week, a month, a year.  
 

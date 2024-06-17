@@ -45,9 +45,9 @@ Terry _busted through_ the Anti-Goal, and eventually released VVVVVV to critical
 
 ## Visualising Anti-Goals
 
-Goals and Anti-Goals are both kinds of [Risks](../thinking/Glossary.md#risk).  While Goals are "Upside" risks or opportunities (the outcome is uncertain, but likely to be in your favour), Anti-Goals are "Downside" risks (again, uncertain outcome, likely to go against you): you'll want to try to navigate between these to arrive at the Goal, rather than the Anti-Goal.
+Goals and Anti-Goals are both kinds of [Risks](/thinking/Glossary.md#risk).  While Goals are "Upside" risks or opportunities (the outcome is uncertain, but likely to be in your favour), Anti-Goals are "Downside" risks (again, uncertain outcome, likely to go against you): you'll want to try to navigate between these to arrive at the Goal, rather than the Anti-Goal.
 
-Here at [Risk-First](https://riskfirst.org), there's lots of talk about navigating the [Risk Landscape](../risks/Risk-Landscape.md), which you can imagine being like the terrain of a golf course (as in the diagram above). 
+Here at [Risk-First](https://riskfirst.org), there's lots of talk about navigating the [Risk Landscape](/risks/Risk-Landscape.md), which you can imagine being like the terrain of a golf course (as in the diagram above). 
 
 Sporting analogies are an over-used pedagogic tool, for writers of limited imagination.  But I'm not going to let that stop me from beating this to death:
 
@@ -73,7 +73,7 @@ But Anti-Goals are a demonstration of the fact that sometimes, you can't just ca
 - If I'm building a secure website, the anti-goal might be _accidentally publishing sensitive details_.
 - If I'm adding features to my product, an anti-goal might be _making the product harder to use_.
 
-We almost have a blind-spot when it comes to the anti-goals, or at least, we create further task-ticket for them to make them someone else's problem, or dump them on a [Risk Register](../thinking/Just-Risk.md) to be forgotten about.
+We almost have a blind-spot when it comes to the anti-goals, or at least, we create further task-ticket for them to make them someone else's problem, or dump them on a [Risk Register](/thinking/Just-Risk.md) to be forgotten about.
 
 We need to acknowledge that pursuing certain goals via certain courses of action exposes us to Anti-Goals along the way.  Maybe we can frame this in Behaviour-Driven Design? 
 

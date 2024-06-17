@@ -43,6 +43,11 @@ practice:
 
 Approval / Sign Off in software development involves getting formal approval from stakeholders at various stages of the project. This practice ensures that the work meets the required standards and specifications before progressing to the next phase, providing a formal communication of acceptance and readiness.
 
+See:
+
+- [Processes, Sign-Offs and Agency Risk](/risks/Process-Risk.md#processes-sign-offs-and-agency-risk)_
+
+
 ## See Also
 
 <TagList tag="Approvals" />

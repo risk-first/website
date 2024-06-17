@@ -28,15 +28,15 @@ Shannon discusses that no channel is perfect:  there is always the **risk of noi
 
 ![Communication Channel Risk](/img/generated/risks/communication/communication_channel_risks.png) 
 
-But channel risk goes wider than just this mathematical example:  messages might be delayed or delivered in the wrong order, or not be acknowledged when they do arrive.  Sometimes, a channel is just an inappropriate way of communicating.  When you work in a different time-zone to someone else on your team, there is _automatic_ [Channel Risk](Communication-Risk.md#channel-risk), because instantaneous communication is only available for a few hours a day. 
+But channel risk goes wider than just this mathematical example:  messages might be delayed or delivered in the wrong order, or not be acknowledged when they do arrive.  Sometimes, a channel is just an inappropriate way of communicating.  When you work in a different time-zone to someone else on your team, there is _automatic_ [Channel Risk](/tags/Channel-Risk), because instantaneous communication is only available for a few hours a day. 
 
-When channels are **poor-quality**, less communication occurs.  People will try to communicate just the most important information.  But, it's often impossible to know a-priori what constitutes "important".   This is why [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) recommends the practices of [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming) and grouping all the developers together: although you don't know whether useful communication will happen, you are mitigating [Channel Risk](Communication-Risk.md#channel-risk) by ensuring high-quality communication channels are in place.
+When channels are **poor-quality**, less communication occurs.  People will try to communicate just the most important information.  But, it's often impossible to know a-priori what constitutes "important".   This is why [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) recommends the practices of [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming) and grouping all the developers together: although you don't know whether useful communication will happen, you are mitigating [Channel Risk](/tags/Channel-Risk) by ensuring high-quality communication channels are in place.
 
 At other times channels are crowded and can contain so much information that we can't hope to receive all the messages.  In these cases we don't even observe the whole channel, just parts of it. 
 
 ### Marketing Communications
 
-When we are talking about a product or a brand, mitigating [Channel Risk](Communication-Risk.md#channel-risk) is the domain of [Marketing Communications](https://en.wikipedia.org/wiki/Marketing_communications).  <!-- tweet-end --> How do you ensure that the information about your (useful) project makes it to the right people?  How do you address the right channels? 
+When we are talking about a product or a brand, mitigating [Channel Risk](/tags/Channel-Risk) is the domain of [Marketing Communications](https://en.wikipedia.org/wiki/Marketing_communications).  <!-- tweet-end --> How do you ensure that the information about your (useful) project makes it to the right people?  How do you address the right channels? 
 
 This works both ways.  Let's looks at some of the **Channel Risks** from the point of view of a hypothetical software tool, **D**, which my team would find really useful: 
 
@@ -49,4 +49,4 @@ This works both ways.  Let's looks at some of the **Channel Risks** from the poi
 
 ![Marketing Communication](/img/generated/risks/communication/communication_marketing.png)
 
-[Internal Models](../thinking/Glossary.md#internal-model) don't magically get populated with the information they need:  they fill up gradually, as shown in the diagram above.  Popular products and ideas _spread_, by word-of-mouth or other means.  Part of the job of being a good technologist is to keep track of new **Ideas**, **Concepts** and **Options**, so as to use them as [Dependencies](Dependency-Risk.md) when needed.
+[Internal Models](/thinking/Glossary.md#internal-model) don't magically get populated with the information they need:  they fill up gradually, as shown in the diagram above.  Popular products and ideas _spread_, by word-of-mouth or other means.  Part of the job of being a good technologist is to keep track of new **Ideas**, **Concepts** and **Options**, so as to use them as [Dependencies](/tags/Dependency-Risk) when needed.

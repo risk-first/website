@@ -30,4 +30,4 @@ As shown in the diagram, saving your project from Feature Drift Risk means **fur
 
 Sometimes, the only way to go is to start again with a clean sheet by some **distruptive innovation**.
 
-[Feature Drift Risk](Feature-Risk.md#feature-drift-risk) is _not the same thing_ as **Requirements Drift**, which is the tendency projects have to expand in scope as they go along.  There are lots of reasons they do that, a key one being the [Hidden Risks](../thinking/Glossary.md#hidden-risk) uncovered on the project as it progresses.
+[Feature Drift Risk](/tags/Feature-Drift-Risk) is _not the same thing_ as **Requirements Drift**, which is the tendency projects have to expand in scope as they go along.  There are lots of reasons they do that, a key one being the [Hidden Risks](/thinking/Glossary.md#hidden-risk) uncovered on the project as it progresses.

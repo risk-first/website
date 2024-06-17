@@ -12,10 +12,10 @@ const navLinks =  [	{ to: '/overview/Start', label: 'Overview', position: 'left'
 					{ to: '/thinking/Start', label: 'Thinking', position: 'left' },
 					{ to: '/risks/Start', label: 'Risks', position: 'left' },
 					{ to: '/practices/Start', label: 'Practices', position: 'left' },
-					{ to: '/bets/Start', label: 'Bets', position: 'left' },
 					{ to: '/methods/Start', label: 'Methods', position: 'left' },
-					{ to: '/estimating/Start', label: 'Estimating', position: 'left' },
 					{ to: '/books/Start', label: 'Books', position: 'left' },
+					{ to: '/bets/Start', label: 'Bets', position: 'left' },
+					{ to: '/estimating/Start', label: 'Estimating', position: 'left' },
 					{ to: '/presentations/Start', label: 'Presentations', position: 'left' },
 					]
 

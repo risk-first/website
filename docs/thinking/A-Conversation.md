@@ -27,7 +27,7 @@ Uniquely as a species, humans are fascinated by story-telling _precisely because
 
 As humans, we all bring our own experiences to bear on the best way to solve problems.  Sometimes, experience tells us that solving a problem one way will create a new _worse_ problem.
 
-It's key that we share our experiences to improve everyone's [Internal Model](../thinking/Glossary.md#internal-model)s.  
+It's key that we share our experiences to improve everyone's [Internal Model](/thinking/Glossary.md#internal-model)s.  
 
 ## A Risk Conversation
 
@@ -43,9 +43,9 @@ Synergy's release process means that the app-store submission must happen in a f
 
 **Eve**:  Well, you know Synergy did their review and asked us to upgrade our Web Server to only allow TLS version 1.1 and greater?  
 
-**Bob**:  Yes, I remember:   we discussed it as a team and thought the simplest thing would be to change the security settings on the Web Server, but we all felt it was pretty risky.  We decided that in order to flush out [Hidden Risk](../thinking/Glossary.md#hidden-risk), we'd upgrade our entire production site to use it _now_, rather than wait for the app launch. **(1)**
+**Bob**:  Yes, I remember:   we discussed it as a team and thought the simplest thing would be to change the security settings on the Web Server, but we all felt it was pretty risky.  We decided that in order to flush out [Hidden Risk](/thinking/Glossary.md#hidden-risk), we'd upgrade our entire production site to use it _now_, rather than wait for the app launch. **(1)**
 
-**Eve**:  Right, and it _did_ flush out [Hidden Risk](../thinking/Glossary.md#hidden-risk): some of our existing software broke on Windows 7, which sadly we still need to support.  So, we had to back it out. 
+**Eve**:  Right, and it _did_ flush out [Hidden Risk](/thinking/Glossary.md#hidden-risk): some of our existing software broke on Windows 7, which sadly we still need to support.  So, we had to back it out. 
 
 **Bob**:  Ok, well I guess it's good we found out _now_.  It would have been a disaster to discover this after the app had gone live on Synergy's app-store. **(2)**
 
@@ -55,9 +55,9 @@ Synergy's release process means that the app-store submission must happen in a f
 
 **Eve**:  How about we run two web-servers?  One for the existing content, and one for our new Synergy app?  We'd have to get a new external IP address, handle DNS setup, change the firewalls, and then deploy a new version of the Web Server software on the production boxes... **(3)**
 
-**Bob**:  This feels like there'd be a lot of [Attendant Risk](../thinking/Glossary.md#attendant-risk):  we're adding [Complexity Risk](../risks/Complexity-Risk.md) to our estate, and all of this needs to be handled by the Networking Team, so we're picking up a lot of [Process Risk](../risks/Process-Risk.md).  I'm also worried that there are too many steps here, and we're going to discover loads of [Hidden Risks](../thinking/Glossary.md#hidden-risk) as we go. **(4)**
+**Bob**:  This feels like there'd be a lot of [Attendant Risk](/thinking/Glossary.md#attendant-risk):  we're adding [Complexity Risk](/tags/Complexity-Risk) to our estate, and all of this needs to be handled by the Networking Team, so we're picking up a lot of [Process Risk](/tags/Process-Risk).  I'm also worried that there are too many steps here, and we're going to discover loads of [Hidden Risks](/thinking/Glossary.md#hidden-risk) as we go. **(4)**
 
-**Eve**:  Well, you're correct on the first one.  But, I've done this before not that long ago for a Chinese project, so I know the process - we shouldn't run into any new [Hidden Risk](../thinking/Glossary.md#hidden-risk). **(4)**
+**Eve**:  Well, you're correct on the first one.  But, I've done this before not that long ago for a Chinese project, so I know the process - we shouldn't run into any new [Hidden Risk](/thinking/Glossary.md#hidden-risk). **(4)**
 
 **Bob**:  OK, fair enough.  But isn't there something simpler we can do?  Maybe some settings in the Web Server? **(4)**
 
@@ -65,7 +65,7 @@ Synergy's release process means that the app-store submission must happen in a f
 
 **Bob**:  OK, and upgrading to Apache is a _big_ risk, right?  We'd have to migrate all of our configuration... **(4)**
 
-**Eve**:  Yes, let's not go there.  So, _changing_ the settings on Baroque, we have the risk that it's not supported by the software and we're back where we started.  Also, if we isolate the Synergy app stuff now, we can mess around with it at any point in future, which is a big win in case there are other [Hidden Risks](../thinking/Glossary.md#hidden-risk) with the security changes that we don't know about yet. **(5)**
+**Eve**:  Yes, let's not go there.  So, _changing_ the settings on Baroque, we have the risk that it's not supported by the software and we're back where we started.  Also, if we isolate the Synergy app stuff now, we can mess around with it at any point in future, which is a big win in case there are other [Hidden Risks](/thinking/Glossary.md#hidden-risk) with the security changes that we don't know about yet. **(5)**
 
 **Bob**:  OK, I can see that buys us something, but time is really short and we have holidays coming up. 
 

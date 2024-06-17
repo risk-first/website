@@ -1,6 +1,6 @@
 ---
-title: Methodology
-description: Some rough groupings of practices by methodology.
+title: Methods
+description: Some rough groupings of practices by development method.
 
 featured: 
   class: c
@@ -9,7 +9,7 @@ layout: categories
 cat: Complexity
 tags:
  - Front
-sidebar_position: 6
+sidebar_position: 5
 tweet: yes
 ---
 

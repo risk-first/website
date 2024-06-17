@@ -25,7 +25,7 @@ In this section we're going to look at the importance of keeping track of risks.
 Most developers are familiar with recording issues in an issue tracker.  As we saw in [Just Risk](Just-Risk.md), _issues are a type of risk_, so it makes sense that issue trackers could be used for recording all project risks.   Within risk management, this is actually called a [Risk Register](https://en.wikipedia.org/wiki/Risk_register).  Typically, this will include for each risk:
 
  - The **name** of the risk, or other identifier.
- - A **categories** to which the risk belongs (this is the focus of the [Risk Landscape](../risks/Risk-Landscape.md) section in Part 2).
+ - A **categories** to which the risk belongs (this is the focus of the [Risk Landscape](/risks/Risk-Landscape.md) section in Part 2).
  - A **brief description** or name of the risk to make the risk easy to discuss.
  - Some estimate for the **Impact**, **Probability** or **Risk Score** of the risk.
  - Proposed actions and a log of the progress made to manage the risk.
@@ -64,7 +64,7 @@ We'll come back to this in a minute.
 
 Arguably, Risk-First uses the term 'Risk' wrongly:  most literature suggests [risk can be measured](https://keydifferences.com/difference-between-risk-and-uncertainty.html) whereas uncertainty represents things that cannot.  
 
-I am using **risk** everywhere because later we will talk about specific risks (e.g. [Boundary Risk](../risks/Boundary-Risk.md) or [Complexity Risk](../risks/Complexity-Risk.md)) and it doesn't feel grammatically correct to talk about those as **uncertainties**.  
+I am using **risk** everywhere because later we will talk about specific risks (e.g. [Boundary Risk](/tags/Boundary-Risk) or [Complexity Risk](/tags/Complexity-Risk)) and it doesn't feel grammatically correct to talk about those as **uncertainties**.  
 
 Additionally there is pre-existing usage in Banking of terms like [Operational Risk](https://en.wikipedia.org/wiki/Operational_risk) or [Reputational risk](https://www.investopedia.com/terms/r/reputational-risk.asp) which are also not really a-priori measurable.
 
@@ -92,11 +92,11 @@ Much more likely, it will have a field for _priority_, or allow the ordering of 
 
 A risk matrix presents a graphical view on where risks exist.  The diagram above is an example, showing the risks from the dinner party in the [A Simple Scenario](A-Simple-Scenario.md) section.  The useful thing about this visualisation is it helps focus attention on the risks at the top and to the right - those with the biggest impact and probability.
 
-Risks at the bottom or left side of the diagram are candidates for being ignored or simply "accepted" (which we'll come to in a [later section](De-Risking#retain)).  If you're using something like [Scrum](../practices/Glossary-Of-Practices.md#scrum), then these might be issues that you remove in the process of [backlog refinement](../practices/Glossary-Of-Practices.md#backlog-refinement).
+Risks at the bottom or left side of the diagram are candidates for being ignored or simply "accepted" (which we'll come to in a [later section](De-Risking#retain)).  If you're using something like [Scrum](/practices/Glossary-Of-Practices.md#scrum), then these might be issues that you remove in the process of [backlog refinement](/practices/Glossary-Of-Practices.md#backlog-refinement).
 
 ## Incorporating Payoff
 
-The diagram above is _helpful_ in deciding what to focus on next, but it doesn't consider [Payoff](../thinking/Glossary.md#payoff).  The reason for this is that up until this point, we've been tracking risks but not necessarily figuring out what to do about them.   Quite often when I raise an issue on a project I will also include the details of the fix for that issue, or maybe I'll _only_ include the details of the fix.    
+The diagram above is _helpful_ in deciding what to focus on next, but it doesn't consider [Payoff](/thinking/Glossary.md#payoff).  The reason for this is that up until this point, we've been tracking risks but not necessarily figuring out what to do about them.   Quite often when I raise an issue on a project I will also include the details of the fix for that issue, or maybe I'll _only_ include the details of the fix.    
 
 For example, let's say I raise an issue saying that I want a button to sort an access control list by the surnames of the users in the list.  What am I really getting at here?   This could be a solution to the problem that _I'm wasting time looking for users in a list_.  Alternatively, it could be trying to solve the problem that _I'm struggling to keep the right people on the list_.  Or maybe both.  The risk of the former is around wasted time (for me) but the risk of the latter might be a security risk and might be higher priority.  
 
@@ -112,16 +112,16 @@ _Really good design_ would be coming up with a course of action that takes care 
 
 ## Criticism
 
-One of the criticisms of the [Risk Register](Track-Risk.md#risk-registers) approach is that of [mistaking the map for the territory](../risks/Map-And-Territory-Risk.md).  That is, mistakenly believing that what's on the Risk Register _is all there is_.  
+One of the criticisms of the [Risk Register](Track-Risk.md#risk-registers) approach is that of [mistaking the map for the territory](/tags/Map-And-Territory-Risk).  That is, mistakenly believing that what's on the Risk Register _is all there is_.  
 
-In the preceding discussions, I have been careful to point out the existence of [Hidden Risks](../thinking/Glossary.md#hidden-risk) for that very reason. Or, to put another way:
+In the preceding discussions, I have been careful to point out the existence of [Hidden Risks](/thinking/Glossary.md#hidden-risk) for that very reason. Or, to put another way:
 
 > "What we don't know is what usually gets us killed" - [Petyr Baelish, _Game of Thrones_](https://medium.com/@TanyaMardi/petyr-baelishs-best-quotes-on-game-of-thrones-1ea92968db5c)
 
 Donald Rumsfeld's famous [Known Knowns](https://en.wikipedia.org/wiki/There_are_known_knowns) is also a helpful conceptualisation:  
 
- - **A _known_ unknown** is an [Attendant Risk](../thinking/Glossary.md#attendant-risk).  i.e. something you are aware of, but where the precise degree of threat can't be established.
- - **An _unknown_ unknown** is a [Hidden Risk](../thinking/Glossary.md#hidden-risk). i.e a risk you haven't even thought to exist yet.
+ - **A _known_ unknown** is an [Attendant Risk](/thinking/Glossary.md#attendant-risk).  i.e. something you are aware of, but where the precise degree of threat can't be established.
+ - **An _unknown_ unknown** is a [Hidden Risk](/thinking/Glossary.md#hidden-risk). i.e a risk you haven't even thought to exist yet.
 
 ## Out of the Window
 

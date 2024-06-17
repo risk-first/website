@@ -42,6 +42,10 @@ practice:
 
 Analysis in software development involves examining and breaking down the requirements, systems, and processes to understand the needs and ensure the correct implementation of the software. This practice is crucial for identifying potential issues, clarifying requirements, and ensuring that the development aligns with business goals and user needs.
 
+See: 
+
+ - [Environmental Scanning](/risks/Operational-Risk.md#scanning-the-operational-context)
+
 ## See Also
 
 <TagList tag="Analysis" />

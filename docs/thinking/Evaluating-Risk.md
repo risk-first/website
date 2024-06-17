@@ -94,12 +94,12 @@ Enough with the numbers and the theory:  we need a practical framework, rather t
 - First, there isn't enough scientific evidence for an approach like this.  We can look at collected data about historic IT projects, but techniques and tools advance rapidly.
 - Second, IT projects have too many confounding factors, such as experience of the teams, 
 technologies, used, problem domain, clients etc.  That is, the risks faced by IT projects are _too diverse_ and _hard to quantify_ to allow for meaningful comparison from one to the next.
-- Third, as soon as you _publish a date_ it changes the expectations of the project (see [Student Syndrome](../risks/Scarcity-Risk.md#student-syndrome)).
-- Fourth, metrics get [misused](../risks/Map-And-Territory-Risk.md) and [gamed](../risks/Agency-Risk.md).
+- Third, as soon as you _publish a date_ it changes the expectations of the project (see [Student Syndrome](/risks/Scarcity-Risk.md#student-syndrome)).
+- Fourth, metrics get [misused](/tags/Map-And-Territory-Risk) and [gamed](/tags/Agency-Risk).
 
 ## Discounting In A Crisis
 
-Reality is messy.  Dressing it up with numbers doesn't change that and you risk [fooling yourself](../risks/Map-And-Territory-Risk.md).  If this is the case, is there any hope at all in what we're doing?  Yes:   _forget precision_.  You should, with experience, be able to hold up two separate risks and answer the question, "is this one bigger than this one?"  
+Reality is messy.  Dressing it up with numbers doesn't change that and you risk [fooling yourself](/tags/Map-And-Territory-Risk).  If this is the case, is there any hope at all in what we're doing?  Yes:   _forget precision_.  You should, with experience, be able to hold up two separate risks and answer the question, "is this one bigger than this one?"  
 
 Lots of projects start with good intentions.  Carefully evaluating the risks of your actions or inaction is great when the going is good.  But then when the project is hit with delays everything goes out of the window.
 

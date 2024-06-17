@@ -61,11 +61,17 @@ Usually, risk is mitigated by **Prioritisation**.  But sometimes, it's not appro
 
 There are several ways you can prioritise work:
 
-- **Largest Mitigation First**:  What's the thing we can do right now to reduce our [Attendant Risk](../thinking/Glossary.md#attendant-risk) most?  This is sometimes hard to quantify, given [Hidden Risk](../thinking/Glossary.md#hidden-risk), so maybe an easier metric is...
-- **Biggest Win**:  What's the best thing we can do right now to reduce [Attendant Risk](../thinking/Glossary.md#attendant-risk) for least additional [Schedule-Risk](../risks/Scarcity-Risk.md#schedule-risk)?  (i.e. simply considering how much *work* is likely to be involved)
-- **Dependency Order**:  Sometimes, you can't build Feature A until Feature B is complete.   Prioritisation helps to identify and mitigate [Dependency Risk](../risks/Dependency-Risk.md).
+- **Largest Mitigation First**:  What's the thing we can do right now to reduce our [Attendant Risk](/thinking/Glossary.md#attendant-risk) most?  This is sometimes hard to quantify, given [Hidden Risk](/thinking/Glossary.md#hidden-risk), so maybe an easier metric is...
+- **Biggest Win**:  What's the best thing we can do right now to reduce [Attendant Risk](/thinking/Glossary.md#attendant-risk) for least additional [Schedule-Risk](/tags/Schedule-Risk)?  (i.e. simply considering how much *work* is likely to be involved)
+- **Dependency Order**:  Sometimes, you can't build Feature A until Feature B is complete.   Prioritisation helps to identify and mitigate [Dependency Risk](/tags/Dependency-Risk).
 
-By prioritising, you get to [Meet Reality](../thinking/Meeting-Reality.md) _sooner_ and _more frequently_ and in _small chunks_.
+By prioritising, you get to [Meet Reality](/thinking/Meeting-Reality.md) _sooner_ and _more frequently_ and in _small chunks_.
+
+
+See:
+ - [Operations Management](/risks/Operational-Risk.md#operations-management)
+ - [Planning](/risks/Operational-Risk.md#planning)
+ - [Tracking Risks](/thinking/Track-Risk.md#visualising-risks)
 
 
 ## See Also

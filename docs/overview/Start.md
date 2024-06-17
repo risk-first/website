@@ -21,7 +21,7 @@ The software development world is crowded with different practices, metrics, met
 The Risk-First perspective is that all of these practices and methodologies have at their heart the job of managing different _software development risks_.  Risk isn't something that just appears in a report, it actually drives everything we do.  
 
 
-## Outcomes 
+## Introductory Articles 
  
 The articles linked below aim to give you a taster of what Risk-First is about, and how to navigate the material on this site.
 

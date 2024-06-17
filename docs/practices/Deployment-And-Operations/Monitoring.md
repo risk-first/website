@@ -40,6 +40,11 @@ practice:
 
 Monitoring encompasses a wide range of practices designed to ensure that systems operate efficiently and without interruption. This includes tracking the performance, availability, and security of networks, systems, and applications. Effective monitoring helps in early detection of issues, allowing for prompt resolution and minimizing the impact on operations.
 
+See:
+ - [Operations Management](/risks/Operational-Risk.md#operations-management)
+ - [Monitoring](/risks/Agency-Risk.md#monitoring)
+ - [Control](/risks/Operational-Risk.md#control)
+
 ## See Also
 
 <TagList tag="Monitoring" />

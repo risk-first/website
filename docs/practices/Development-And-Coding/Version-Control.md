@@ -8,7 +8,7 @@ featured:
   class: c
   element: '<action>Version Control</action>'
 practice:
-  aka: 
+  aka:
    - "Source Control"
    - "Revision Control"
    - "SCM"
@@ -19,6 +19,9 @@ practice:
      reason: "Facilitates collaboration by allowing multiple developers to work on the codebase simultaneously."
    - tag: Regression Risk
      reason: "Maintains a history of changes, allowing rollback to previous versions if needed."
+  attendant:
+   - tag: Invisibility Risk
+     reason: "Poor version management can be chaotic and leave lots of work in progress."
   related:
    - ../Planning-and-Management/Change-Management
    - ../Development-and-Coding/Coding

@@ -15,9 +15,9 @@ part_of: Communication Risk
 
 > "A communication protocol is a system of rules that allow two or more entities of a communications system to transmit information. " - [Communication Protocol, Wikipedia](https://en.wikipedia.org/wiki/Communication_protocol)
 
-In this section I want to examine the concept of [Communication Protocols](https://en.wikipedia.org/wiki/Communication_protocol) and how they relate to [Abstraction](../thinking/Glossary.md#abstraction), which is implicated over and over again in different types of risk we will be looking at. 
+In this section I want to examine the concept of [Communication Protocols](https://en.wikipedia.org/wiki/Communication_protocol) and how they relate to [Abstraction](/thinking/Glossary.md#abstraction), which is implicated over and over again in different types of risk we will be looking at. 
 
-[Abstraction](../thinking/Glossary.md#abstraction) means separating the _definition_ of something from the _use_ of something.  It's a widely applicable concept, but our example below will be specific to communication, and looking at the abstractions involved in loading a web page. 
+[Abstraction](/thinking/Glossary.md#abstraction) means separating the _definition_ of something from the _use_ of something.  It's a widely applicable concept, but our example below will be specific to communication, and looking at the abstractions involved in loading a web page. 
 
 ### Clients and Servers
 
@@ -44,7 +44,7 @@ http://google.com/preferences
 
 The first thing that happens is that the name `google.com` is _resolved_ by DNS.  This means that the browser looks up the domain name `google.com` and gets back an [IP Address](https://en.wikipedia.org/wiki/IP_address).  An IP Address is a bit like a postal address, but instead of being the address of a building, it is the address of a particular computer.
 
-This is an [Abstraction](../thinking/Glossary.md#abstraction):  although computers use IP addresses like `216.58.204.78`, I can use a human-readable _name_, `google.com`.   
+This is an [Abstraction](/thinking/Glossary.md#abstraction):  although computers use IP addresses like `216.58.204.78`, I can use a human-readable _name_, `google.com`.   
 
 The address `google.com` doesn't even necessarily resolve to that same address each time:  Google serves a lot of traffic so there are multiple servers handling the requests and _they have multiple IP addresses for `google.com`_.   But as a user, I don't have to worry about this detail.
 
@@ -57,7 +57,7 @@ Each packet consists of two things:
 - The **IP address**, which tells the network where to send the packet (again, much like you'd write the address on the outside of a parcel).
 - The **payload**, the stream of bytes for processing at the destination, like the contents of the parcel.
 
-But even this concept of "packets" is an [abstraction](../thinking/Glossary.md#abstraction).  Although the network understands this protocol, we might be using Wired Ethernet cables, or WiFi, 4G or _something else_ beneath that.  You can think of this as analogous to the parcel being delivered on foot, by plane or by car - it doesn't matter to the sender of the parcel!
+But even this concept of "packets" is an [abstraction](/thinking/Glossary.md#abstraction).  Although the network understands this protocol, we might be using Wired Ethernet cables, or WiFi, 4G or _something else_ beneath that.  You can think of this as analogous to the parcel being delivered on foot, by plane or by car - it doesn't matter to the sender of the parcel!
 
 ### 3. 802.11 - WiFi Protocol
 
@@ -67,7 +67,7 @@ And WiFi is just the first hop.  After the WiFi receiver, there will be protocol
 
 ### 4. TCP - Transmission Control Protocol
 
-Another [abstraction](../thinking/Glossary.md#abstraction) going on here is that my browser believes it has a  "connection" to the server.  This is provided by the TCP protocol. 
+Another [abstraction](/thinking/Glossary.md#abstraction) going on here is that my browser believes it has a  "connection" to the server.  This is provided by the TCP protocol. 
 
 But this is a fiction - my "connection" is built on the IP protocol, which as we saw above is just packets of data on the network.  So there are lots of packets floating around which say "this connection is still alive" and "I'm message 5 in the sequence" and so on in order to maintain this fiction.  
 
@@ -116,7 +116,7 @@ By having a stack of protocols we are able to apply [Separation Of Concerns](htt
 
 ![Communication Protocols Risks](/img/generated/risks/communication/communication_protocol_risks.png)
 
-Hopefully, the above example gives an indication of the usefulness of protocols within software.  But for every protocol we use we have [Protocol Risk](Communication-Risk.md#protocol-risk).  While this is a problem in human communication protocols, it's really common in computer communication because we create protocols _all the time_ in software. 
+Hopefully, the above example gives an indication of the usefulness of protocols within software.  But for every protocol we use we have [Protocol Risk](/tags/Protocol-Risk).  While this is a problem in human communication protocols, it's really common in computer communication because we create protocols _all the time_ in software. 
 
 For example, as soon as we define a Javascript function (called **b** here), we are creating a protocol for other functions (**a** here) to use it: 
 
@@ -141,7 +141,7 @@ function b(a, b, c, d /* new parameter */) {
 
 Then, **a** will instantly have a problem calling it and there will be an error of some sort.
 
-[Protocol Risk](Communication-Risk.md#protocol-risk) also occurs when we use [Data Types](https://en.wikipedia.org/wiki/Data_type):  whenever we change the data type, we need to correct the usages of that type.  Note above, I've given the `JavaScript` example, but I'm going to switch to `TypeScript` now:
+[Protocol Risk](/tags/Protocol-Risk) also occurs when we use [Data Types](https://en.wikipedia.org/wiki/Data_type):  whenever we change the data type, we need to correct the usages of that type.  Note above, I've given the `JavaScript` example, but I'm going to switch to `TypeScript` now:
 
 ```javascript
 interface BInput {
@@ -163,12 +163,12 @@ function a() {
 
 By using a [static type checker](https://en.wikipedia.org/wiki/Type_system#Static_type_checking), we can identify issues like this, but there is a trade-off:  
  
-- we mitigate [Protocol Risk](Communication-Risk.md#protocol-risk), because we define the protocols _once only_ in the program, and ensure that usages all match the specification.  
-- but the tradeoff is more _finger-typing_, which means [Codebase Risk](Complexity-Risk.md#codebase-risk) in some circumstances. 
+- we mitigate [Protocol Risk](/tags/Protocol-Risk), because we define the protocols _once only_ in the program, and ensure that usages all match the specification.  
+- but the tradeoff is more _finger-typing_, which means [Codebase Risk](/tags/Codebase-Risk) in some circumstances. 
 
 Nevertheless, static type checking is so prevalent in software that clearly in most cases, the trade-off has been worth it: even languages like [Clojure](https://clojure.org) have been retro-fitted with [type checkers](https://github.com/clojure/core.typed).
 
-Let's look at some further types of [Protocol Risk](Communication-Risk.md#protocol-risk).
+Let's look at some further types of [Protocol Risk](/tags/Protocol-Risk).
  
 #### Protocol Incompatibility
 
@@ -186,7 +186,7 @@ There are various mitigating strategies for this.  We'll look at two now: **Back
 
 #### Backward Compatibility
 
-Backwards Compatibility mitigates [Protocol Risk](Communication-Risk.md#protocol-risk).  This means supporting the old protocol until it falls out of use.  If a supplier is pushing for a change in protocol it either must ensure that it is Backwards Compatible with the clients it is communicating with, or make sure they are upgraded concurrently.  When building [web services](https://en.wikipedia.org/wiki/Web_service), for example, it's common practice to version all API's so that you can manage the migration.  Something like this:
+Backwards Compatibility mitigates [Protocol Risk](/tags/Protocol-Risk).  This means supporting the old protocol until it falls out of use.  If a supplier is pushing for a change in protocol it either must ensure that it is Backwards Compatible with the clients it is communicating with, or make sure they are upgraded concurrently.  When building [web services](https://en.wikipedia.org/wiki/Web_service), for example, it's common practice to version all API's so that you can manage the migration.  Something like this:
 
  - Supplier publishes `/api/v1/something`.
  - Clients use `/api/v1/something`.
@@ -197,7 +197,7 @@ Backwards Compatibility mitigates [Protocol Risk](Communication-Risk.md#protocol
 
 #### Forward Compatibility
 
-`HTML` and `HTTP` provide "graceful failure" to mitigate [Protocol Risk](Communication-Risk.md#protocol-risk)<!-- tweet-end -->:  while it's expected that all clients can parse the syntax of `HTML` and `HTTP`, it's not necessary for them to be able to handle all of the tags, attributes and rules they see.  The specification for both these standards is that if you don't understand something, ignore it.  Designing with this in mind means that old clients can always at least cope with new features, but it's not always possible.  
+`HTML` and `HTTP` provide "graceful failure" to mitigate [Protocol Risk](/tags/Protocol-Risk)<!-- tweet-end -->:  while it's expected that all clients can parse the syntax of `HTML` and `HTTP`, it's not necessary for them to be able to handle all of the tags, attributes and rules they see.  The specification for both these standards is that if you don't understand something, ignore it.  Designing with this in mind means that old clients can always at least cope with new features, but it's not always possible.  
 
 `JavaScript` _can't_ support this:  because the meaning of the next instruction will often depend on the result of the previous one.  
 
@@ -205,6 +205,6 @@ Do human languages support forward compatibility?  To some extent!  New words ar
 
 #### Protocol Implementation
 
-A second aspect of [Protocol Risk](Communication-Risk.md#protocol-risk) exists in heterogeneous computing environments where protocols have been independently implemented based on standards.  For example, there are now so many different browsers, all supporting variations of `HTTP`, `HTML` and `JavaScript` that it becomes impossible to test a website comprehensively over all the different permutations.  
+A second aspect of [Protocol Risk](/tags/Protocol-Risk) exists in heterogeneous computing environments where protocols have been independently implemented based on standards.  For example, there are now so many different browsers, all supporting variations of `HTTP`, `HTML` and `JavaScript` that it becomes impossible to test a website comprehensively over all the different permutations.  
 
-To mitigate as much [Protocol Risk](Communication-Risk.md#protocol-risk) as possible, generally we test web sites in a subset of browsers, and use a lowest-common-denominator approach to choosing protocol and language features.
+To mitigate as much [Protocol Risk](/tags/Protocol-Risk) as possible, generally we test web sites in a subset of browsers, and use a lowest-common-denominator approach to choosing protocol and language features.

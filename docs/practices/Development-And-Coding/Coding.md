@@ -38,6 +38,11 @@ practice:
 
 Coding is a core activity in software development, involving the translation of requirements and designs into functional code. High-quality coding practices are essential for creating reliable, maintainable, and efficient software. This involves writing clear, well-structured, and documented code that adheres to established standards and best practices.
 
+See:
+
+ - [Time/Reality Tradeoff](/thinking/Cadence.md#time--reality-trade-off)
+
+
 ## See Also
 
 <TagList tag="Coding" />

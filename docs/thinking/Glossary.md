@@ -20,13 +20,13 @@ tweet: yes
 
 The process of removing physical, spatial, or temporal details or attributes in the study of objects or systems in order to more closely attend to other details of interest.  
 
-_See: [Complexity Risk](../risks/Complexity-Risk.md)_
+_See: [Complexity Risk](/tags/Complexity-Risk)_
 
 ### Agent
 
 Agency is the capacity of an actor to act in a given environment.  We use the term _agent_ to refer to any process, person, system or organisation with agency. 
 
-_See: [Agency Risk](../risks/Agency-Risk.md)_
+_See: [Agency Risk](/tags/Agency-Risk)_
 
 ### Anti-Goal
 
@@ -70,7 +70,7 @@ _See: [Feedback Loop (Tag)](/tags/feedback-loop)_
 
 ### Goal
 
-A picture of the future that an individual or team carries within their [Internal Model](#internal-model);  An imagined destination on the [Risk Landscape](#risk-landscape).  A specific [Upside Risk](#upside-risk) we'd like to nurture and realize. _See: [A Simple Scenario](../thinking/A-Simple-Scenario.md)_
+A picture of the future that an individual or team carries within their [Internal Model](#internal-model);  An imagined destination on the [Risk Landscape](#risk-landscape).  A specific [Upside Risk](#upside-risk) we'd like to nurture and realize. _See: [A Simple Scenario](/thinking/A-Simple-Scenario.md)_
 
 _See: [Goal (Tag)](/tags/goal)_
 
@@ -132,7 +132,7 @@ _See: [Hidden Risk (Tag)](/tags/hidden-risk)_
 
 Risks that, as a result of [Taking Action](#taking-action) have been minimized.  
 
-_See: [De-Risking](../thinking/De-Risking.md)_
+_See: [De-Risking](/thinking/De-Risking.md)_
 
 #### Upside Risk
 

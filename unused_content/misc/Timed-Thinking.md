@@ -60,11 +60,11 @@ Ideally, you'll want to perform debugging experiments that -whatever the outcome
 
 ### Designing
 
-As you might expect, a [Risk-First](https://riskfirst.org) approach to software design would be one where you don't introduce unnecessary risk to your project, be it in the form of [Dependency Risks](../risks/Dependency-Risk.md) (try not to add them), [Complexity Risks](../risks/Complexity-Risk.md) (keep the codebase nice and tight), [Feature Risks](/tags/Feature-Risk) (make sure you're building the right thing) and so on.  
+As you might expect, a [Risk-First](https://riskfirst.org) approach to software design would be one where you don't introduce unnecessary risk to your project, be it in the form of [Dependency Risks](/tags/Dependency-Risk) (try not to add them), [Complexity Risks](/tags/Complexity-Risk) (keep the codebase nice and tight), [Feature Risks](/tags/Feature-Risk) (make sure you're building the right thing) and so on.  
 
 It's tempting to just throw code together and then hammer out the issues as you go.  Maybe even, this is how some people think Agile should work.   
 
-But you can do a lot of work up-front with Timed Thinking.  Take your design.   Think hard about it using the above technique.  Consider all the [Risks](../risks/Risk-Landscape.md) from the Risk-First collection.  Work out which ones are going to sink you.  Can you re-design to avoid them entirely?  Probably you can.
+But you can do a lot of work up-front with Timed Thinking.  Take your design.   Think hard about it using the above technique.  Consider all the [Risks](/risks/Risk-Landscape.md) from the Risk-First collection.  Work out which ones are going to sink you.  Can you re-design to avoid them entirely?  Probably you can.
 
 You can also think about this from a constraints point-of-view.  Start the session by enumerating all the constraints you are under.  Then, start to try and design within the space that's left.   Or, start with the design _you already have in mind_ and subject it to all the constraints you can think of.  Even within half an hour, this can be tremendously insightful.
 

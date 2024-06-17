@@ -26,11 +26,11 @@ I am going to argue here that _risks_ affect the health of a thing, where the th
 
  - **A Living Organism**, such as the human body, which is exposed to _health risks_, such as [Cardiovascular Disease](https://en.wikipedia.org/wiki/Cardiovascular_disease).  
  
- - **A Software Product** is a thing we interact with, built out of code.  The health of that software is damaged by the existence of [bugs and missing features](../risks/Feature-Risk.md).
+ - **A Software Product** is a thing we interact with, built out of code.  The health of that software is damaged by the existence of [bugs and missing features](/tags/Feature-Risk).
  
  - **A Project**, like making a film or organising a [dinner party](A-Simple-Scenario.md). 
  
- - **A Commercial Entity**, such as a business, which is exposed to various [Operational Risks](../risks/Operational-Risk.md) in order to continue to function.  Businesses face different health risks than organisms, like  key staff leaving, reputation damage or running out of money.
+ - **A Commercial Entity**, such as a business, which is exposed to various [Operational Risks](/tags/Operational-Risk) in order to continue to function.  Businesses face different health risks than organisms, like  key staff leaving, reputation damage or running out of money.
 
  - On a larger scale, **a State** is a system, the health of which is threatened by various existential risks such as revolution, climate change or nuclear attack.
  
@@ -117,9 +117,9 @@ The examples we've looked at so far are all at different scales, and could be ne
 
 When an organisation or a project hires an employee they are doing so in order to improve their health:  make sales, fix bugs, clean the office and so on.  This is a symbiotic relationship - the health of the organisation is related to the health of the employee.  The health of staff, projects, departments, firms are all related.  You might be working on a software product for a team inside an organisation operating in a certain country.   You are probably going to have to consider the health of more than one of those things.  Can a team be "healthy" if the organisation it is contained within is dying?  Probably not.
 
-Sometimes, as discussed in [Agency Risk](../risks/Agency-Risk.md) these can be in conflict with one another:
+Sometimes, as discussed in [Agency Risk](/tags/Agency-Risk) these can be in conflict with one another:
 
- - Putting in [a heroic effort](../risks/Agency-Risk.md#the-hero) might save a project but at the expense of your personal health. 
+ - Putting in [a heroic effort](/risks/Agency-Risk.md#the-hero) might save a project but at the expense of your personal health. 
    
  - [Lobbying](https://en.wikipedia.org/wiki/Lobbying) is trying to push the  political agenda of an organisation at the state level, which might help the health of the organisation at the expense of the state or its citizens.  
  
@@ -129,7 +129,7 @@ Sometimes, as discussed in [Agency Risk](../risks/Agency-Risk.md) these can be i
 
 If all of these disparate domains at all of these different scales are tracking health risks, it is clear that we should be doing this for software projects too.
 
-The health risks affecting people are well known (by doctors, at least) and we have the list of state-level risks above too.  [Risk-First](https://riskfirst.org) is therefore about building a similar catalog for risks affecting the health of software development projects.  Risks are in general _not_ unique on software projects - they are the same ones over and over again, such as [Communication Risk](../risks/Communication-Risk.md) or [Dependency Risk](../risks/Dependency-Risk.md).   Every project faces these.  
+The health risks affecting people are well known (by doctors, at least) and we have the list of state-level risks above too.  [Risk-First](https://riskfirst.org) is therefore about building a similar catalog for risks affecting the health of software development projects.  Risks are in general _not_ unique on software projects - they are the same ones over and over again, such as [Communication Risk](/tags/Comunication-Risk) or [Dependency Risk](/tags/Dependency-Risk).   Every project faces these.  
 
 Having shown that risk management is _scale invariant_, we're next going to look at general strategies we can use to manage all of these various health risks.
 

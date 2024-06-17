@@ -40,6 +40,13 @@ practice:
 
 Adoption of standards and libraries involves implementing and adhering to established standards and integrating widely-used libraries in software development. This practice helps in ensuring consistency, reliability, and maintainability of the software by leveraging proven solutions.
 
+See:
+
+ - [Languages and Dependencies](/risks/Complexity-Risk.md#languages-and-dependencies)
+ - [Software Libraries (Software Dependency Risk)](/risks/Software-Dependency-Risk.md#2-software-libraries)
+ - [Software-as-a-Service (Software Dependency Risk)](/risks/Software-Dependency-Risk.md#3--software-as-a-service)
+
+
 ## See Also
 
 <TagList tag="Runtime Adoption" />
