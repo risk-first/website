@@ -44,6 +44,11 @@ method:
      use: 
        - Burndown Chart
        - Definition of Done
+   - tag: Meeting
+     reason: Scrum uses various face-to-face meetings.
+     use:
+       - Daily Stand-ups
+       - Retrospectives
    - tag: Monitoring
      reason: "Monitoring progress through daily stand-ups and sprint reviews is integral to Scrum."
      use: 

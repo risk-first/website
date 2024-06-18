@@ -2,6 +2,11 @@
 title: The Risk Landscape
 description: A way to think about the risks you face on a software project.
 
+tags:
+ - Risk Landscape
+ 
+definitions:
+ - Risk Landscape
 
 featured: 
   class: c

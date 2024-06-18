@@ -1,17 +1,10 @@
 import React from 'react';
-import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import {
-	PageMetadata,
-	HtmlClassNameProvider,
-	ThemeClassNames,
 	usePluralForm,
 } from '@docusaurus/theme-common';
 import Translate, { translate } from '@docusaurus/Translate';
-import Layout from '@theme/Layout';
-import SearchMetadata from '@theme/SearchMetadata';
 import { usePluginData } from '@docusaurus/useGlobalData'
-import { useLocation } from '@docusaurus/router'
 import styles from './styles.module.css'
 
 // Very simple pluralization: probably good enough for now
@@ -68,7 +61,13 @@ function categoryFromPermalink(pl) {
 }
 
 function mainDoc(items, tag) {
-	return items.find(i => i.title == tag.label)
+	const found = items.find(i => i.title == tag.label)
+	if (found) {
+		return found
+	}
+
+	const found2 = items.find(i => (i.frontMatter.definitions ?? []).includes(tag.label))
+	return found2;		
 }
 
 function path(i) {

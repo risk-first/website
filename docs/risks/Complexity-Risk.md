@@ -11,6 +11,9 @@ tags:
  - Risks
  - Refactoring
  - Complexity Risk
+ - Abstraction
+definitions:
+ - Abstraction
 part_of: Operational Risk
 ---
 

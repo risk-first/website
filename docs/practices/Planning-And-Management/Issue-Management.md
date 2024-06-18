@@ -14,6 +14,7 @@ practice:
    - "Bug Tracking"
    - "Backlog"
    - "Risk Management"
+   - Support
   mitigates:
    - tag: Implementation Risk
      reason: "Tracks and manages defects and issues, ensuring they are resolved."

@@ -10,7 +10,8 @@ tags:
  - Thinking Risk-First
  - Take Action
  - Risk Landscape
- - Language (Track)
+definitions:
+ - Take Action
 sidebar_position: 8
 redirect_from: 
  - /De-Risking

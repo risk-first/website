@@ -12,8 +12,13 @@ tags:
  - Risk Landscape
  - Bets
  - Payoff
- - Balance Of Risk
- - Language (Track)
+ - Stake
+ - Expected Value
+definition:
+ - Bets
+ - Payoff
+ - Stake
+ - Expected Value 
 sidebar_position: 10
 tweet: yes
 ---

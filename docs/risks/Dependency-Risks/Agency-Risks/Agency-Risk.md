@@ -7,6 +7,9 @@ tags:
  - Risks
  - Goal
  - Agency Risk
+ - Agent
+definitions: 
+ - Agent
 featured: 
   class: c
   element: '<risk class="agency" />'

@@ -12,7 +12,12 @@ tags:
  - Take Action
  - Risk Landscape
  - Payoff
- - Language (Track)
+ - Meet Reality
+ - Internal Model
+definitions:
+ - Meet Reality
+ - Feedback Loop
+ - Internal Model
 sidebar_position: 4
 redirect_from: 
  - /Meeting-Reality

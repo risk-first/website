@@ -3,7 +3,7 @@ title: Demand Management
 description: The practice of forecasting, planning, and managing the demand for resources to ensure that the best use is made of them.
 tags: 
   - Practice
-  - Demand-Management
+  - Demand Management
 featured: 
   class: c
   element: '<method imgsrc="/public/templates/risk-first/posts/demand-management.svg">Demand Management</method>'
@@ -43,7 +43,7 @@ TODO: buffers, queues, pools, kanban
 
 See: 
 
-- [Scarcity Risk](/risks/Scarcity-Risk.md#mitigations)
+- [Scarcity Risk](/risks/Scarcity-Risks/Mitigations)
 
 
 ## See Also
