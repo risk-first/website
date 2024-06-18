@@ -11,7 +11,8 @@ tags:
  - Take Action
  - Risk Landscape
 definitions:
- - Take Action
+ - name: Take Action
+   description: Refers to any activity in the project. Actions are taken in order to manage some risk. At the same time, Taking Action usually means interacting with reality and updating the Internal Model.
 sidebar_position: 8
 redirect_from: 
  - /De-Risking

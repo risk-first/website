@@ -6,7 +6,8 @@ tags:
  - Risk Landscape
  
 definitions:
- - Risk Landscape
+ - name: Risk Landscape
+   description: A hypothetical landscape on which risks can be placed. Taking Action means making a move on the Risk Landscape to reposition a project so that it has a different profile of Attendant Risks.
 
 featured: 
   class: c

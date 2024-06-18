@@ -15,9 +15,12 @@ tags:
  - Meet Reality
  - Internal Model
 definitions:
- - Meet Reality
- - Feedback Loop
- - Internal Model
+ - name: Meet Reality
+   description: Any moment where we test an Internal Model by exposing it's predictive power against reality. 
+ - name: Internal Model
+   description: The model of reality held by an individual, team, software system or other Agent. 
+   anchor: different-internal-models
+  
 sidebar_position: 4
 redirect_from: 
  - /Meeting-Reality

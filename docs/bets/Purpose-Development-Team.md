@@ -8,7 +8,7 @@ featured:
   class: bg1
   element: '<agent-artifact>Balance Of Risk</agent-artifact>'
 tags:
- - Bets
+ - Bet
  - Balance Of Risk
 sidebar_position: 1
 tweet: yes

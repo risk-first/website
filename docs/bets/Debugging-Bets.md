@@ -7,7 +7,7 @@ featured:
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cards.svg">Debugging Bets</image-artifact>'
 tags:
- - Bets
+ - Bet
 sidebar_position: 3
 tweet: yes
 ---

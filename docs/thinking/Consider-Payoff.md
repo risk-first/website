@@ -10,15 +10,28 @@ tags:
  - Goal
  - Attendant Risk
  - Risk Landscape
- - Bets
+ - Bet
  - Payoff
  - Stake
  - Expected Value
+ - Expected Return
 definition:
- - Bets
- - Payoff
- - Stake
- - Expected Value 
+ - name: Bet
+   description: Taking a decision to move somewhere new on the Risk Landscape and change the Balance Of Risk.
+   anchor: the-structure-of-a-bet
+ - name: Payoff
+   description: The payoff (or gross winnings) from winning a bet.
+   anchor: the-structure-of-a-bet
+ - name: Stake
+   description: The amount you have to pay to take a bet.
+   anchor: the-structure-of-a-bet
+ - name: Expected Value 
+   description: The probability-weighted average value of the outcome. 
+   anchor: the-structure-of-a-bet
+ - name: Expected Return 
+   description: The probability-weighted return of the bet.
+   anchor: the-structure-of-a-bet
+ 
 sidebar_position: 10
 tweet: yes
 ---

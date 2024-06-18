@@ -7,7 +7,7 @@ featured:
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cards.svg">Coding Bets</image-artifact>'
 tags:
- - Bets
+ - Bet
  - Refactoring
 sidebar_position: 2
 tweet: yes

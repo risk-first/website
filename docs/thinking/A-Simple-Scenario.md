@@ -13,9 +13,15 @@ tags:
  - Meeting Reality
  
 definitions:
- - Attendant Risk
- - Hidden Risk
- - Goal 
+ - name: Attendant Risk
+   description:  A Risk you expect to face as the result of Taking Action.
+   anchor: attendant-risks
+ - name: Hidden Risk
+   description: Risks you aren't aware of when you consider Taking Action. i.e. an unknown unknown.
+   anchor: hidden-risks
+ - name: Goal
+   description: A picture of the future that an individual or team carries within their Internal Model; An imagined destination on the Risk Landscape. A specific Upside Risk we'd like to nurture and realize.
+   anchor: goal-in-mind
  
 featured: 
   class: bg3

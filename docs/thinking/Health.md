@@ -7,6 +7,10 @@ featured:
 tags: 
  - Thinking Risk-First
  - Feedback Loop
+ - Risk
+definition:
+ - name: Risk
+   description: A possibility of loss or cost.   
 sidebar_position: 7
 redirect_from: 
  - /Health

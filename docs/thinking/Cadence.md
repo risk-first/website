@@ -10,6 +10,9 @@ tags:
  - Thinking Risk-First
  - Feedback Loop
  - Meet Reality
+definitions:
+ - name: Feedback Loop
+   description: The process of testing an Internal Model, through taking action to Meet Reality. Typically, we talk about short or long feedback loops, depending on the intervals between Meeting Reality.
 sidebar_position: 9
 redirect_from: 
  - /Cadence
