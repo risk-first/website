@@ -5,10 +5,9 @@ featured:
   class: bg3
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/8bit-heart.svg">Health</image-artifact>'
 tags: 
- - Thinking Risk-First
  - Feedback Loop
  - Risk
-definition:
+definitions:
  - name: Risk
    description: A possibility of loss or cost.   
 sidebar_position: 7

@@ -28,7 +28,7 @@ The book aims to develop a **Pattern Language for understanding software risk**,
 
 ### Get Updates
 
-<BoxOut title="Join The Risk-First GitHub Organisation" image="/img/github.png">
+<BoxOut title="Join The Risk-First GitHub Organisation">
 
 If you [Add Your Star on GitHub](https://github.com/risk-first/website) you'll be sent an email invite to join the [Risk-First GitHub Organisation](https://github.com/risk-first/website/discussions) and the associated discussion group!
 

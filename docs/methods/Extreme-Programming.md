@@ -1,10 +1,10 @@
 ---
-title: Extreme Programming (XP)
+title: Extreme Programming
 description: An Agile software development methodology that emphasizes customer satisfaction, teamwork, and frequent delivery of small, functional software increments.
 tags: 
   - Method
   - Agile
-  - Extreme Programming (XP)
+  - Extreme Programming
 featured: 
   class: c
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/xp.svg">XP</image-artifact>'

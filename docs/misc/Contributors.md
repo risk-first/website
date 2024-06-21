@@ -2,12 +2,9 @@
 title: Contributors
 description: List of contributors for the Risk-First wiki and other materials.
 
-
 featured: 
   class: bg1
   element: '<users>Contributors</users>'
-tags: 
- - Misc
 sidebar_position: 13
 ---
 

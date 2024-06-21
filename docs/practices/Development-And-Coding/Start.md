@@ -5,7 +5,7 @@ featured:
   class: c
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/coding.svg">Coding</image-artifact>'
 tags:
-  - Practice-Category
+  - Practice Category
 layout: categories
 ---
 

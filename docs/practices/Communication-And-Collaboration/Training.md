@@ -2,8 +2,8 @@
 title: Training
 description: Providing guidance on how to use the software to users or developers.
 tags: 
-  - Communication-Collaboration
   - Training
+  - Practice
 featured: 
   class: c
   element: '<action>Training</action>'

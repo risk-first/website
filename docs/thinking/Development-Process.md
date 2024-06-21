@@ -8,7 +8,6 @@ featured:
   element: '<risk href="/public/templates/risk-first/redesign/artifacts/methodology_v2.svg"><code>Method</code><title>On Process</title></risk>'
 sidebar_position: 3
 tags:
- - Thinking Risk-First
  - Attendant Risk
  - Meet Reality
  - Hidden Risk

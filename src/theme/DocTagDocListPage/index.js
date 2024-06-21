@@ -66,7 +66,7 @@ function mainDoc(items, tag) {
 		return found
 	}
 
-	const found2 = items.find(i => (i.frontMatter.definitions ?? []).includes(tag.label))
+	const found2 = items.find(i => (i.frontMatter.definitions ?? []).map(d => d.name).includes(tag.label))
 	return found2;		
 }
 

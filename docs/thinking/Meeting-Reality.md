@@ -7,7 +7,6 @@ featured:
   class: bg3
   element: '<action>Meeting Reality</action>'
 tags:
- - Thinking Risk-First
  - Feedback Loop
  - Take Action
  - Risk Landscape

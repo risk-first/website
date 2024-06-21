@@ -4,7 +4,6 @@ description: What is the one thing every project needs to control to be successf
 
 
 tags: 
- - Thinking Risk-First
  - Take Action
  - Internal Model
  - Goal
@@ -90,4 +89,10 @@ I know that as a reader it's annoying to have to pick up new terminology.  So yo
 
 ## On To Software?
 
-Here, we've introduced some new terms that we're going to use a lot:  [Meet Reality](/thinking/Glossary.md#meet-reality), [Attendant Risk](/thinking/Glossary.md#attendant-risk), [Hidden Risk](/thinking/Glossary.md#attendant-risk), [Internal Model](/thinking/Glossary.md#internal-model), [Taking Action](/thinking/Glossary.md#taking-action) and, we've applied them in a simple scenario.  Clearly, what we really want to get to is talking about software development, but first I want to dig a bit deeper into how we represent these ideas graphically, using [Risk-First Diagrams](Risk-First-Diagrams.md).
+Here, we've introduced some new terms that we're going to use a lot and, we've applied them in a simple scenario. Let's go over them again: 
+
+<BoxOut title="New Terms" link="/thinking/Glossary" linkText="View Glossary">
+<TermList details={frontMatter} /> 
+</BoxOut>
+
+Clearly, what we really want to get to is talking about software development, but first I want to dig a bit deeper into how we represent these ideas graphically, using [Risk-First Diagrams](Risk-First-Diagrams.md).

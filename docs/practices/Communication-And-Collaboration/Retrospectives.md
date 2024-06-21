@@ -2,8 +2,8 @@
 title: Retrospectives
 description: Conducting regular reviews to discuss what went well, what didn't, and how to improve.
 tags: 
-  - Communication-Collaboration
   - Retrospectives
+  - Practice
 featured: 
   class: c
   element: '<action>Retrospective</action>'

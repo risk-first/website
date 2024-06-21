@@ -7,7 +7,9 @@ export default ({children, image, link, linkText, title, className = ''}) => {
          		.toLowerCase();
     return <div className={`${styles.boxout} ${className}`}>
     	<div className={styles.header}>
-	        <img className={styles.icon} src={image} alt={title} />
+    		{
+				(image) ?  <img className={styles.icon} src={image} alt={title} /> : null
+			}
 	        {
 				(link) ? <a href={link}><h3 id={id}> {title} </h3></a> : <h3 id={id}> {title} </h3>
 			}

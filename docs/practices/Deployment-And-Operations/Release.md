@@ -3,7 +3,7 @@ title: Release
 description: Deploying the software to production.
 tags: 
   - Release
-  - Deployment-Operations
+  - Practice
 featured: 
   class: c
   element: '<action>Release</action>'

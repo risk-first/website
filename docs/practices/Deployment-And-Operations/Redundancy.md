@@ -2,8 +2,8 @@
 title: Redundancy
 description: Ensuring backup systems are in place to prevent failure.
 tags: 
-  - Deployment-Operations
   - Redundancy 
+  - Practice
 featured: 
   class: c
   element: '<action>Redundancy</action>'

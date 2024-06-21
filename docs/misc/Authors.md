@@ -2,8 +2,6 @@
 title: Authors
 description: List of Risk-First authors
 
-tags:
- - Misc
 featured: 
   class: bg1
   element: '<users>Authors</users>'

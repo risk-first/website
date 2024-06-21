@@ -7,7 +7,6 @@ featured:
   class: bg3
   element: '<risk class="internal-model" />'
 tags:
- - Thinking Risk-First
  - Internal Model
  - Goal
  - Attendant Risk

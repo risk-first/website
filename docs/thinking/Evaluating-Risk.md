@@ -6,8 +6,6 @@ description: Eisenhower's box, NPV and Discounting explained.
 featured: 
   class: bg3
   element: '<risk href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg"><code>Urgent</code><title>Evaluating Risk</title></risk>'
-tags:
- - Thinking Risk-First
 sidebar_position: 11
 redirect_from: 
  - /Evaluating-Risk

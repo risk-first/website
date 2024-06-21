@@ -7,7 +7,6 @@ featured:
   class: bg3
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cadence.svg">Feedback Loops</image-artifact>'
 tags:
- - Thinking Risk-First
  - Feedback Loop
  - Meet Reality
 definitions:
@@ -79,6 +78,14 @@ Yes, CD will give you faster feedback loops, but even getting things into produc
 
 ![Different actions have different feedback loops](/img/generated/introduction/cadence.png)
 
-The right answer is to use multiple feedback loops, as shown in the diagram above.
+The right answer is to use multiple feedback loops, as shown in the diagram above.  
+
+## Moving On
+
+Let's quickly review the new terms introduced in this section:
+
+<BoxOut title="New Terms" link="/thinking/Glossary" linkText="View Glossary">
+	<TermList details={frontMatter} /> 
+</BoxOut>
 
 In the next section we'll be [Considering Payoff](Consider-Payoff.md), and figuring out how we can use terminology from _betting_ to make us better software developers.

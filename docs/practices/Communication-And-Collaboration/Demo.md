@@ -5,8 +5,8 @@ featured:
   class: c
   element: '<action>Demo</action>'
 tags: 
-  - Communication-Collaboration
   - Demo
+  - Practice
 practice:
   aka: 
    - "Technology Demonstration"

@@ -4,7 +4,6 @@ description: A quick primer to help parse a Risk-First diagram.
 
 
 tags: 
- - Thinking Risk-First
  - Internal Model
  - Attendant Risk
  - Hidden Risk

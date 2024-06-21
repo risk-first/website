@@ -6,8 +6,6 @@ description: Why 'Crisis Mode' shouldn't be a mode.
 featured: 
   class: bg3
   element: '<risk href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg"><code>Panic</code><title>Crisis Mode</title></risk>'
-tags:
- - Thinking Risk-First
 sidebar_position: 12
 tweet: yes
 ---

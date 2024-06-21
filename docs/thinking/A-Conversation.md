@@ -7,11 +7,9 @@ featured:
   class: bg3
   element: '<risk class="communication" />'
 tags: 
- - Thinking Risk-First
  - Internal Model
  - Hidden Risk
  - Attendant Risk
- - Language (Track)
 sidebar_position: 13
 redirect_from: 
  - /A-Conversation

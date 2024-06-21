@@ -6,7 +6,6 @@ featured:
   class: bg3
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cash.svg">Payoff</image-artifact>'
 tags:
- - Thinking Risk-First
  - Goal
  - Attendant Risk
  - Risk Landscape
@@ -15,7 +14,7 @@ tags:
  - Stake
  - Expected Value
  - Expected Return
-definition:
+definitions:
  - name: Bet
    description: Taking a decision to move somewhere new on the Risk Landscape and change the Balance Of Risk.
    anchor: the-structure-of-a-bet

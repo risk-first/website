@@ -5,7 +5,7 @@ featured:
   class: c
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/communications.svg">Communications</image-artifact>'
 tags:
-  - Practice-Category
+  - Practice Category
 layout: categories
 ---
 
@@ -14,4 +14,4 @@ layout: categories
 Here are a selection of software development practices aimed at improving communication and collaboration within or around a software project.
 
  
-<TagList tag="Communication-Collaboration" />
+<TagList tag="Practice" filter="Communication-And-Collaboration" />

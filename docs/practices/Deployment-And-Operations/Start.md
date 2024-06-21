@@ -5,7 +5,7 @@ featured:
   class: c
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/operations.svg">Operations</image-artifact>'
 tags:
-  - Practice-Category
+  - Practice Category
 layout: categories
 ---
 
@@ -14,4 +14,4 @@ layout: categories
 Here are a selection of software development practices aimed at improving deployment and operations processes.
 
  
-<TagList tag="Deployment-Operations" />
+<TagList tag="Practice" filter="Deployment-And-Operations" />

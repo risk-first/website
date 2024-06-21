@@ -8,7 +8,6 @@ featured:
   element: '<risk href="/public/templates/risk-first/redesign/risks/goal_v2.svg"><code>AG</code><title>Anti-Goal</title></risk>'
 author: rob
 tags:
- - Misc
  - Goal
 sidebar_position: 10
 tweet: yes

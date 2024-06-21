@@ -2,8 +2,8 @@
 title: Demand Management
 description: The practice of forecasting, planning, and managing the demand for resources to ensure that the best use is made of them.
 tags: 
-  - Practice
   - Demand Management
+  - Practice
 featured: 
   class: c
   element: '<method imgsrc="/public/templates/risk-first/posts/demand-management.svg">Demand Management</method>'

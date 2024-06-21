@@ -2,7 +2,7 @@
 title: Standardisation
 description: The practice of establishing and adhering to standards to ensure consistency, compatibility, and quality in software development.
 tags: 
-  - Tools-Standards
+  - Practice
   - Standardisation
 featured: 
   class: c

@@ -5,7 +5,7 @@ featured:
   class: c
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/testing.svg">Testing / QA</image-artifact>'
 tags:
-  - Practice-Category
+  - Practice Category
 layout: categories
 ---
 

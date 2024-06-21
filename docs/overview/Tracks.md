@@ -2,9 +2,6 @@
 title: Tracks
 description: Understanding the structure of the Risk-First website
 
-
-tags: 
- - Overview
 sidebar_position: 2
 featured: 
   class: bg1

@@ -7,7 +7,6 @@ featured:
   class: bg3
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/de-risking.svg">De-Risking</image-artifact>'
 tags:
- - Thinking Risk-First
  - Take Action
  - Risk Landscape
 definitions:

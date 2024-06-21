@@ -6,9 +6,8 @@ featured:
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/tape-measure.svg">Miscellaneous</image-artifact>'
 layout: categories
-cat: Misc
 tags:
- - None
+ - Front
 sidebar_position: 7
 ---
 

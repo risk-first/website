@@ -2,8 +2,8 @@
 title: Configuration Management
 description: Managing and maintaining configuration settings of the software.
 tags: 
-  - Deployment-Operations
   - Configuration Management
+  - Practice
 featured: 
   class: c
   element: '<action>Configuration Mgmt</action>'

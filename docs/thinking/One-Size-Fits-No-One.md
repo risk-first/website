@@ -7,7 +7,6 @@ featured:
   class: bg3
   element: '<internal-model-artifact>One Size</internal-model-artifact>'
 tags:
- - Thinking Risk-First
  - Popular
  - Goal
  - Feedback Loop
