@@ -13,54 +13,33 @@
 				<code>Risk</code>
 				<title>Nothing To Eat</title>
 			</risk>
-			<description id="id_16">
+			<label id="id_16">
 				Internal Model
-			</description>
+			</label>
 		</container>
-		<description id="d1">Part A</description>
 	</group>
 	<group
 		style="--kite9-layout: down; --kite9-sizing: maximize; ">
 		<action id="a">Buy Snacks</action>
-		<description id="d2">Part B</description>
-
 	</group>
 	<group  style="--kite9-layout: down; ">
 
-		<container bordered="true" id="c-zr"
-			style="--kite9-layout: down; ">
-			<group style="--kite9-layout: right; ">
-				<risk class="generic"
-					href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg"
-					id="id_0-ae">
-					<code>Risk</code>
-					<title>Too Many Leftovers</title>
-				</risk>
-				<risk class="generic"
-					href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg"
-					id="id_0-ry">
-					<code>Risk</code>
-					<title>Guests Are Unimpressed</title>
-				</risk>
-			</group>
+		<container bordered="true" id="c-zr">
+			<risk class="generic"
+				href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg"
+				id="id_0-ae">
+				<code>Risk</code>
+				<title>Too Many Leftovers</title>
+			</risk>
+			<risk class="generic"
+				href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg"
+				id="id_0-ry">
+				<code>Risk</code>
+				<title>Guests Are Unimpressed</title>
+			</risk>
 			<label id="id_16-nm">
 				Updated Internal Model
 			</label>
 		</container>
-		<description id="d3">Part C</description>
-
 	</group>
-
-	<align>
-		<from reference="id_0" />
-		<to reference="a" />
-	</align>
-	<align>
-		<from reference="d1" />
-		<to reference="d2" />
-	</align>
-	<align>
-		<from reference="d2" />
-		<to reference="d3" />
-	</align>
 </diagram>

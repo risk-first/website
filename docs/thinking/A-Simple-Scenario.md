@@ -2,7 +2,6 @@
 title: A Simple Scenario
 description: What is the one thing every project needs to control to be successful?
 
-
 tags: 
  - Take Action
  - Internal Model
@@ -10,18 +9,20 @@ tags:
  - Attendant Risk
  - Hidden Risk
  - Meeting Reality
+ - Risk
  
 definitions:
  - name: Attendant Risk
    description:  A Risk you expect to face as the result of Taking Action.
    anchor: attendant-risks
+   own_term: true
  - name: Hidden Risk
    description: Risks you aren't aware of when you consider Taking Action. i.e. an unknown unknown.
    anchor: hidden-risks
+   own_term: true
  - name: Goal
    description: A picture of the future that an individual or team carries within their Internal Model; An imagined destination on the Risk Landscape. A specific Upside Risk we'd like to nurture and realize.
    anchor: goal-in-mind
- 
 featured: 
   class: bg3
   element: '<risk href="/public/templates/risk-first/redesign/risks/goal_v2.svg"><code>Goal</code><title>A Simple Scenario</title></risk>'
@@ -73,7 +74,7 @@ As the dinner party gets closer, we make our preparations and the inadequacies o
 
 ![How Taking Action affects Reality, and also changes your Internal Model](/img/generated/introduction/model_vs_reality.png)
 
-Our model is forced to [Meet Reality](/thinking/Glossary.md#meet-reality), and the model changes,  forcing us to deal with these risks, as shown in the diagram above.  
+Our model is forced to [Meet Reality](/tags/Meeting-Reality), and the model changes,  forcing us to deal with these risks, as shown in the diagram above.  
 
 In Risk-First, whenever we try to _do something_ about a risk, it is called [Taking Action](/thinking/Glossary.md#taking-action).  [Taking Action](/thinking/Glossary.md#taking-action) _changes_ reality, and with it your [Internal Model](/thinking/Glossary.md#internal-model) of the risks you're facing.  That's because it's only by interacting with the world that we add knowledge to our [Internal Model](/thinking/Glossary.md#internal-model) about what works and what doesn't.  Even something as passive as _checking the shop opening times_ is an action, and it improves on our [Internal Model](/thinking/Glossary.md#internal-model) of the world.
 
@@ -89,9 +90,10 @@ I know that as a reader it's annoying to have to pick up new terminology.  So yo
 
 ## On To Software?
 
-Here, we've introduced some new terms that we're going to use a lot and, we've applied them in a simple scenario. Let's go over them again: 
+Here, we've introduced some new terms that we're going to use a lot and, we've applied them in a simple scenario.
 
 <BoxOut title="New Terms" link="/thinking/Glossary" linkText="View Glossary">
+Risk-First tries as far as possible to use pre-existing terminology from the world of risk management, however sometimes new terms are necessary.  This box summarises the terms introduced in this chapter and  where it's a term Risk-First introduces, I've added a label to alert you to this novelty.  
 <TermList details={frontMatter} /> 
 </BoxOut>
 

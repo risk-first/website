@@ -9,7 +9,8 @@ tags:
  - Agency Risk
  - Agent
 definitions: 
- - Agent
+ - name: Agent
+   description: blah
 featured: 
   class: c
   element: '<risk class="agency" />'

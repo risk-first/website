@@ -29,5 +29,5 @@ By now it should be clear that it's going to be _both_ quite hard to read and wr
 But now we should be able to see the reason why it's harder to read than write too: 
  
  - When reading code, you are having to shift your [Internal Model](/thinking/Glossary.md#internal-model) to wherever the code is, accepting decisions that you might not agree with and accepting counter-intuitive logical leaps.  i.e. [Learning Curve Risk](/tags/Learning-Curve-Risk). _(cf. [Principle of Least Surprise](https://en.wikipedia.org/wiki/Principle_of_least_astonishment))_
- - There is no [Feedback Loop](/thinking/Glossary.md#feedback-loop) between your [Internal Model](/thinking/Glossary.md#internal-model) and the [Reality](/thinking/Glossary.md#meet-reality) of the code, opening you up to [misinterpretation](Communication-Risk.md#misinterpretation).  When you write code, your compiler and tests give you this.
+ - There is no [Feedback Loop](/thinking/Glossary.md#feedback-loop) between your [Internal Model](/thinking/Glossary.md#internal-model) and the [Reality](/tags/Meeting-Reality) of the code, opening you up to [misinterpretation](Communication-Risk.md#misinterpretation).  When you write code, your compiler and tests give you this.
  - While reading code _takes less time_ than writing it, this also means the [Learning Curve](/tags/Learning-Curve-Risk) is steeper.

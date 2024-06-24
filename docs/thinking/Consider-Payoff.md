@@ -30,7 +30,6 @@ definitions:
  - name: Expected Return 
    description: The probability-weighted return of the bet.
    anchor: the-structure-of-a-bet
- 
 sidebar_position: 10
 tweet: yes
 ---
@@ -101,7 +100,7 @@ Sometimes, there will be multiple _actions_ you could take on a project and you 
 - And, making a decision takes time, which could add risk to your schedule.
 - And what's the risk if the decision doesn't get made?
 
-The fruits of this gambling are revealed when we [meet reality](/thinking/Glossary.md#meet-reality) and we can see whether our bets were worthwhile.
+The fruits of this gambling are revealed when we [meet reality](/tags/Meeting-Reality) and we can see whether our bets were worthwhile.
 
 Very occasionally, you'll be in a place where your hand is forced and you have to take one of only a handful of actions, or there is a binary decision.  A so called "rock and a hard place".  But as we'll see in the third example below, even here you can usually change the action (and therefore the payoff) in your favour.   
 

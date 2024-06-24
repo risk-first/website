@@ -12,6 +12,7 @@ tags:
 definitions:
  - name: Take Action
    description: Refers to any activity in the project. Actions are taken in order to manage some risk. At the same time, Taking Action usually means interacting with reality and updating the Internal Model.
+   anchor: what-is-taking-action
 sidebar_position: 8
 redirect_from: 
  - /De-Risking
@@ -21,6 +22,8 @@ tweet: yes
 # Derisking
 
 In this section, we're going to more closely at what, so far, we've called "[Taking Action](Glossary.md#taking-action)" and separate out different ways this can be done.   We'll introduce the correct risk management terms and give examples of how to apply these to software development.
+
+## What is Taking Action?
 
 So far in Risk-First, we've talked about [Taking Action](Glossary.md#taking-action) as having two effects:
 

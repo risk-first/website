@@ -20,7 +20,7 @@ tweet: yes
 
 The previous article, [Fixing Scrum](Fixing-Scrum.md), examined Scrum's idea of "Sprints" and concluded:
 
-- The main purpose of a Sprint is to ensure there is a **feedback loop**.  Every two weeks (or however long the Sprint is) we have a Sprint Review, and review the code that has been completed during the Sprint.  In Risk-First parlance, we call this [Meeting Reality](/thinking/Glossary.md#meet-reality).  It is the process of _testing your ideas against reality_ to make sure they stand up. 
+- The main purpose of a Sprint is to ensure there is a **feedback loop**.  Every two weeks (or however long the Sprint is) we have a Sprint Review, and review the code that has been completed during the Sprint.  In Risk-First parlance, we call this [Meeting Reality](/tags/Meeting-Reality).  It is the process of _testing your ideas against reality_ to make sure they stand up. 
 
 - This Sprint Review is performed by the whole team.  All the code must be completed by the end of the sprint in order that it can be reviewed.  This introduces an artificial deadline to be met.
 

@@ -51,6 +51,8 @@ In the middle of a Risk-First diagram we see the actions you could take.  In the
 
 ### On The Right
 
+![Outcomes](/img/generated/introduction/outcome.png)
+
 _Nothing comes for free._  On the right, you can see the consequence or outcome of the actions you've taken:  [Attendant Risks](/thinking/Glossary.md#attendant-risk) are the _new_ risks you now have as a result of taking the action.
 
 Hosting a dinner party opens you up to attendant risks like "Not Enough to Eat".  As a result of that risk, we consider buying lots of snacks.  As a result of _that_ risk, we start to consider whether our guests will be impressed with that.

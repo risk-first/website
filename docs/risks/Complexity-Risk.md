@@ -13,7 +13,8 @@ tags:
  - Complexity Risk
  - Abstraction
 definitions:
- - Abstraction
+ - name: Abstraction
+   description: blah
 part_of: Operational Risk
 ---
 

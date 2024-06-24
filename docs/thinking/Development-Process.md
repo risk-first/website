@@ -69,7 +69,7 @@ We can all see this might end in disaster, but why?
 
 Two reasons: 
 
-1.  You're [Meeting Reality](/thinking/Glossary.md#meet-reality) all-in-one-go:  all of these risks materialize at the same time, and you have to deal with them all at once.
+1.  You're [Meeting Reality](/tags/Meeting-Reality) all-in-one-go:  all of these risks materialize at the same time, and you have to deal with them all at once.
 2.  Because of this, at the point you put code into the hands of your users, your [Internal Model](/thinking/Glossary.md#internal-model) is at its least-developed.  All the [Hidden Risks](/thinking/Glossary.md#hidden-risk) now need to be dealt with at the same time, in production.
 
 ## Applying the Toy Process
@@ -105,7 +105,7 @@ In the process of doing this, the BA is turning the simple feature request _idea
 
 In surfacing these risks, there is another outcome:  while **Feature X** might be flawed as originally presented, the BA can "evolve" it into a specification and tie it down sufficiently to reduce the risks.   The BA does all this by simply _thinking about it_, _talking to people_ and _writing stuff down_.
 
-This process of evolving the feature request into a requirement is the BA's job.  From our Risk-First perspective, it is _taking an idea and making it [Meet Reality](/thinking/Glossary.md#meet-reality)_.  Not the _full reality_ of production (yet), but something more limited.  
+This process of evolving the feature request into a requirement is the BA's job.  From our Risk-First perspective, it is _taking an idea and making it [Meet Reality](/tags/Meeting-Reality)_.  Not the _full reality_ of production (yet), but something more limited.  
 
 ### Code And Unit Test
 

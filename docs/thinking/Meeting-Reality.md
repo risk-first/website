@@ -11,15 +11,16 @@ tags:
  - Take Action
  - Risk Landscape
  - Payoff
- - Meet Reality
+ - Meeting Reality
  - Internal Model
 definitions:
- - name: Meet Reality
-   description: Any moment where we test an Internal Model by exposing it's predictive power against reality. 
+ - name: Meeting Reality
+   description: Testing out the predictive power of an Internal Model by exposing it to reality. 
+   own_term: true
  - name: Internal Model
    description: The model of reality held by an individual, team, software system or other Agent. 
    anchor: different-internal-models
-  
+   own_term: true
 sidebar_position: 4
 redirect_from: 
  - /Meeting-Reality

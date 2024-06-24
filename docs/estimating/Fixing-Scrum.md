@@ -29,7 +29,7 @@ Work in Scrum is done within periods of time called _Sprints_.  Each sprint ends
 
 > "The goal of this activity is to inspect and adapt the product being built... Everyone in attendance gets clear visibility into what is occurring and has an opportunity to help guide the forthcoming development to ensure that the most business-appropriate solution is created." - Essential Scrum (p26), _Rubin_
 
-In Risk-First, we tend to call this validation step [Meeting Reality](/thinking/Glossary.md#meet-reality):  you are creating a [feedback loop](/thinking/Cadence.md) in order to minimise risk.  What is the risk you are minimising?  Essentially, we are trying to reduce the risk of the developers _building the wrong thing_, which could be due to misunderstanding of requirements, or perfectionism, or because the piece of work was ill-conceived in the first place.  In Risk-First, the risk of building the wrong thing is called [Feature Risk](/tags/Feature-Risk).
+In Risk-First, we tend to call this validation step [Meeting Reality](/tags/Meeting-Reality):  you are creating a [feedback loop](/thinking/Cadence.md) in order to minimise risk.  What is the risk you are minimising?  Essentially, we are trying to reduce the risk of the developers _building the wrong thing_, which could be due to misunderstanding of requirements, or perfectionism, or because the piece of work was ill-conceived in the first place.  In Risk-First, the risk of building the wrong thing is called [Feature Risk](/tags/Feature-Risk).
 
 ![Feature Risk mitigated by Meeting Reality](/img/generated/estimating/scrum/scrum1.png)
 
@@ -123,7 +123,7 @@ How can we, as software developers, minimise the chance of building the wrong th
 
 Look above at the diagram what Scrum is trying to do to mitigate [Feature Risk](/tags/Feature-Risk):
 
-- We [Meet Reality](/thinking/Glossary.md#meet-reality) to ensure we've got a feedback loop.
+- We [Meet Reality](/tags/Meeting-Reality) to ensure we've got a feedback loop.
 - We **time-box** to avoid wasting stake-holders' time (Schedule Risk).
 - We do **planning poker** to try and avoid the Coordination Risk problem of everyone needing to complete their work for the end of the Sprint.
 
