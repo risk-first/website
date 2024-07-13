@@ -16,10 +16,12 @@ definitions:
    description:  A Risk you expect to face as the result of Taking Action.
    anchor: attendant-risks
    own_term: true
+   part_of: Risk
  - name: Hidden Risk
    description: Risks you aren't aware of when you consider Taking Action. i.e. an unknown unknown.
    anchor: hidden-risks
    own_term: true
+   part_of: Risk
  - name: Goal
    description: A picture of the future that an individual or team carries within their Internal Model; An imagined destination on the Risk Landscape. A specific Upside Risk we'd like to nurture and realize.
    anchor: goal-in-mind
@@ -97,4 +99,4 @@ Risk-First tries as far as possible to use pre-existing terminology from the wor
 <TermList details={frontMatter} /> 
 </BoxOut>
 
-Clearly, what we really want to get to is talking about software development, but first I want to dig a bit deeper into how we represent these ideas graphically, using [Risk-First Diagrams](Risk-First-Diagrams.md).
+Clearly, what we really want to get to is talking about software development, but first I want to dig a bit deeper into the visual language used here to show risks, using [Risk-First Diagrams](Risk-First-Diagrams.md).

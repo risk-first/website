@@ -16,20 +16,24 @@ tags:
  - Expected Return
 definitions:
  - name: Bet
-   description: Taking a decision to move somewhere new on the Risk Landscape and change the Balance Of Risk.
+   description: Taking a decision to move somewhere new on the Risk Landscape to try to improve your fortunes.
    anchor: the-structure-of-a-bet
  - name: Payoff
    description: The payoff (or gross winnings) from winning a bet.
    anchor: the-structure-of-a-bet
+   part_of: Bet
  - name: Stake
    description: The amount you have to pay to take a bet.
    anchor: the-structure-of-a-bet
+   part_of: Bet
  - name: Expected Value 
    description: The probability-weighted average value of the outcome. 
    anchor: the-structure-of-a-bet
+   part_of: Bet
  - name: Expected Return 
    description: The probability-weighted return of the bet.
    anchor: the-structure-of-a-bet
+   part_of: Bet
 sidebar_position: 10
 tweet: yes
 ---
@@ -268,6 +272,12 @@ A second approach is to improve the payoff of the losing outcomes.  Here are som
 ## Summing Up
 
 In this section, we've looked at how bets worked, discussed terms like _stake_, _payoff_ and _expected value_ and applied them to software development.
+
+<BoxOut title="New Terms" link="/thinking/Glossary" linkText="View Glossary">
+Here's a quick summary of some of the terms from the world of _gambling_ and _risk management_ we've introduced in this chapter to evaluate bets: 
+<TermList details={frontMatter} /> 
+</BoxOut>
+
 
 As we've seen, figuring out payoff is made more tricky because often the actions you take might depend on each other, the payoff might not be immediate and (unlike making a bet in the real world) you can't be certain what the payoff will be in advance.   But unlike gambling, you are able to manipulate the stakes and the payoff by coming up with your own approach.
 

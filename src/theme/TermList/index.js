@@ -5,14 +5,22 @@ import styles from './styles.module.css'
 import clsx from 'clsx';
 
 
-function Term({ name, description, anchor, permalink, own_term }) {
+function Term({ name, description, anchor, permalink, own_term, children }) {
 	const link = (permalink ? permalink + ( anchor ? "#"+anchor : "") : "") 
 	const tagLink = "/tags/" + name.replaceAll(" ","-")
+	const c = (children && children.length >0) 
 	return (
 		
 		<article className={styles.docItem}>
 			<h3><Link key={link} to={link} title="Go to main definition">{name}</Link> { own_term ? <span className={styles.ownTerm}>Risk-First Term</span> : null}</h3> 
-			<p className={styles.description}>{description}  <Link className={styles.termTag} href={tagLink}>(tagged)</Link></p>
+			<p className={styles.description}>{description} <Link className={styles.termTag} href={tagLink}>(View Tag)</Link> </p>
+			
+			{
+				c ? (<div>
+						<p className={styles.description}>Related Terms:</p>
+						<ul>{ children.map(c => <li>{c}</li>) } </ul>
+					</div>) : "" 				
+			}
    		</article>
 	);
 }
@@ -27,7 +35,7 @@ function sortAndUnique(l) {
 	return sorted
 }
 
-export default function TermList({details}) {
+function assembleAllDefinitions() {
 	// all terms from everywhere
 	const allTags = usePluginData('category-listing');
 	const allDocs = Object.values(allTags).flatMap(v => v)
@@ -36,13 +44,20 @@ export default function TermList({details}) {
 			return {
 				name: t.name,
 				own_term: t.own_term,
+				part_of: t.part_of,
 				description: t.description,
 				anchor: t.anchor,
 				permalink: doc.permalink
 			}
 		}))
+		
+	return sortAndUnique(grossDefinitions)	
+}
+
+export default function TermList({details}) {
 	
-	const allDefinitions = sortAndUnique(grossDefinitions)	
+	
+	const allDefinitions = assembleAllDefinitions()
 	
 	var definitions = []
 
@@ -65,7 +80,15 @@ export default function TermList({details}) {
 	return (
 		<div className={styles.tagList}>
 			{
-				sorted.map(d => <Term key={d.name} own_term={d.own_term} name={d.name} description={d.description} permalink={d.permalink} anchor={d.anchor}  />)
+				sorted
+					.filter(d => d.part_of == null)
+					.map(d => <Term key={d.name} own_term={d.own_term} name={d.name} description={d.description} permalink={d.permalink} anchor={d.anchor}>
+						{
+							sorted
+								.filter(e => e.part_of == d.name)
+								.map(e => <Term key={e.name} own_term={e.own_term} name={e.name} description={e.description} permalink={e.permalink} anchor={e.anchor} />)
+						}
+				</Term>)
 			}
 		</div>
 	);
