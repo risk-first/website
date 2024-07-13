@@ -4,7 +4,7 @@ description: How Coding, Investing and Gambling are similar undertakings.
 
 date: 2019-06-04 16:32:03 +0000
 featured: 
-  class: bg1
+  class: c
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cards.svg">Coding Bets</image-artifact>'
 tags:
  - Bet

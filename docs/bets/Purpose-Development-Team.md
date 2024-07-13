@@ -5,7 +5,7 @@ description: Making sense of contradictory objectives with the "Balance of Risk"
 
 date: 2019-05-12 16:32:03 +0000
 featured: 
-  class: bg1
+  class: c
   element: '<agent-artifact>Balance Of Risk</agent-artifact>'
 tags:
  - Bet

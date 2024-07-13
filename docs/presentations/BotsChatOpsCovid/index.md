@@ -1,7 +1,6 @@
 ---
 template: post
 title: COVID, Agile, ChatOps
-permalink: /presentations/BotsChatOpsCovid/chatops.html
 description: How COVID has come for Agile Practices, and how Chat Bots offer us a way forwards.
 author: rob
 

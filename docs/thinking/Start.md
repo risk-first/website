@@ -5,7 +5,7 @@ description: Learning to think about software development from the perspective o
 
 featured: 
   class: bg1
-  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/bulb.svg">Track 2: Thinking Risk-First</image-artifact>'
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/bulb.svg">Thinking Risk-First</image-artifact>'
 layout: categories
 cat: Thinking Risk-First
 tags:

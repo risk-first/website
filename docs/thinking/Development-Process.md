@@ -5,7 +5,7 @@ description: Why do we even have processes in software development?
 
 featured: 
   class: bg3
-  element: '<risk href="/public/templates/risk-first/redesign/artifacts/methodology_v2.svg"><code>Method</code><title>On Process</title></risk>'
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/development.svg">Payoff</image-artifact>'
 sidebar_position: 3
 tags:
  - Attendant Risk

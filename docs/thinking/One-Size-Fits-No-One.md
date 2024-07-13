@@ -5,7 +5,7 @@ description: There can't be a perfect software methodology.  Here's why.
 
 featured: 
   class: bg3
-  element: '<internal-model-artifact>One Size</internal-model-artifact>'
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/size.svg">One Size</image-artifact>'
 tags:
  - Popular
  - Goal

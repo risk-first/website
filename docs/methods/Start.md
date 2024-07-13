@@ -17,4 +17,4 @@ This is a categorisation of practice by methodology.
 
 Consider this to be incomplete but may be useful to get a sense of which risks different methodologies focus on.
 
-<TagList  tag="Method" />
+<TagList tag="Method" />

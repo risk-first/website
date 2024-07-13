@@ -5,7 +5,7 @@ description: A conversation about software development using Risk-First vocabula
 
 featured: 
   class: bg3
-  element: '<risk class="communication" />'
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/conversation.svg">A Conversation</image-artifact>'
 tags: 
  - Internal Model
  - Hidden Risk

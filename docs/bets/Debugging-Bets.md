@@ -4,7 +4,7 @@ description: Making use of risk and odds while debugging
 
 date: 2019-11-10 16:32:03 +0000
 featured: 
-  class: bg1
+  class: c
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cards.svg">Debugging Bets</image-artifact>'
 tags:
  - Bet

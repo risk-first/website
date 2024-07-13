@@ -6,7 +6,7 @@ description: "A pattern language for the types of risks you can face on a softwa
 cat: Risks
 featured: 
   class: bg1
-  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/dictionary.svg">Track 3: Risks</image-artifact>'
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/dictionary.svg">Risks</image-artifact>'
 sidebar_position: 3
 tags:
   - Front

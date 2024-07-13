@@ -5,7 +5,7 @@ description: Are all tasks in software development just managing risk?
 
 featured: 
   class: bg3
-  element: '<risk class="internal-model" />'
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/risk.svg">Payoff</image-artifact>'
 tags:
  - Internal Model
  - Goal

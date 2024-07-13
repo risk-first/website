@@ -5,7 +5,7 @@ description: Ways to keep track of the risks you face.
 
 featured: 
   class: bg3
-  element: '<risk href="/public/templates/risk-first/redesign/risks/map_and_territory_risk_v2.svg"><code>Tracking</code><title>Tracking Risks</title></risk>'
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/todo.svg">Tracking Risks</image-artifact>'
 tags:
  - Attendant Risk
  - Hidden Risk

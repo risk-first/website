@@ -1,7 +1,6 @@
 ---
 template: post
 title: Agile vs Open Source
-permalink: /presentations/AgileVsOpenSource/index.html
 description: Talk given to Simply Business about Risk-First and Open Source
 author: rob
 

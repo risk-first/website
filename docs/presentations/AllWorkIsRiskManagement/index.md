@@ -1,7 +1,6 @@
 ---
 template: post
 title: All Work Is Risk Management
-permalink: /presentations/AllWorkIsRiskManagement/index.html
 description: The origins and justification for Risk-First as a concept.
 author: rob
 

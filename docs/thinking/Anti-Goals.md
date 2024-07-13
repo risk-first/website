@@ -5,7 +5,7 @@ description:  Just focusing on your goal is not enough...
 
 featured: 
   class: bg1
-  element: '<risk href="/public/templates/risk-first/redesign/risks/goal_v2.svg"><code>AG</code><title>Anti-Goal</title></risk>'
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/no-entry.svg">Anti-Goals</image-artifact>'
 author: rob
 tags:
  - Goal

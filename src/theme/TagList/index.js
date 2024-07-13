@@ -7,8 +7,9 @@ import styles from './styles.module.css'
 
 function DocItemImage({ doc }) {
 	const pl = doc.permalink
+	console.log(JSON.stringify(doc, null, 2))
 	const stripped = pl.endsWith('/') ? pl+"index" : pl
-	const imageLink = "/img/generated/single/" + stripped + ".png"
+	const imageLink = "/img/generated/single/" + stripped + ".svg"
 
 	return (
 		

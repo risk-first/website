@@ -1,7 +1,6 @@
 ---
 template: post
 title: The Agile Onion
-permalink: /presentations/onion/onion.html
 description: Light-hearted presentation for Deutsche Bank on Risk-First and Agile, June 2019.
 author: rob
 

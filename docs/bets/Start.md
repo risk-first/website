@@ -4,8 +4,8 @@ description: Risk-First Track of articles on Bets within Software Development
 
 
 featured: 
-  class: bg1
-  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cards.svg">Track 4: On Bets</image-artifact>'
+  class: c
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cards.svg">On Bets</image-artifact>'
 layout: categories
 cat: Bets
 tags:
@@ -27,4 +27,6 @@ This is a short sequence of articles that looks at the idea of _betting_, at dif
 - Understand the appropriate domain for Agile and Planned methodologies.
 - Move beyond "Agile"  and "Planned" approaches, to a right-tool-for-the-job approach.
 
-<TagList tag="Bets" filter="bets" />
+## Articles
+
+<TagList filter="bets" />

@@ -1,13 +1,9 @@
 ---
 title: "Overview"
 description: A few short articles about what Risk-First is all about
-
-
 featured: 
   class: bg1
-  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/airplane.svg">Track 1: Overview</image-artifact>'
-layout: categories
-cat: Overview
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/airplane.svg">Overview</image-artifact>'
 tags:
  - Front
 sidebar_position: 1

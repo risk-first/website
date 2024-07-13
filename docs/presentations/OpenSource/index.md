@@ -1,7 +1,6 @@
 ---
 template: post
 title: All In On Open Source
-permalink: /presentations/OpenSource/os.html
 description: Talk given to Colchester Digital about Open Source
 author: rob
 

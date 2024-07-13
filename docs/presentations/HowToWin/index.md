@@ -1,7 +1,6 @@
 ---
 template: post
 title: How to Win
-permalink: /presentations/HowToWin/index.html
 description: If development is a game, how do I win?  How to apply Risk Management to development tasks to win the "meta-game".
 author: rob
 

@@ -5,7 +5,7 @@ description: Are you living in an ivory tower, or do you have boots on the groun
 
 featured: 
   class: bg3
-  element: '<action>Meeting Reality</action>'
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/tree.svg">Meeting Reality</image-artifact>'
 tags:
  - Feedback Loop
  - Take Action

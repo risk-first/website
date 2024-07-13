@@ -4,7 +4,7 @@ description: Risk-First Books
 
 featured: 
   class: bg1
-  element: '<image-artifact imgsrc="/public/templates/risk-first/redesign/risks/complexity_risk_v2.svg">Track 6: On Complexity</image-artifact>'
+  element: '<big-image imgsrc="/public/templates/risk-first/posts/book-grey.png" />'
 layout: categories
 cat: Complexity
 tags:

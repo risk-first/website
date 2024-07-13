@@ -4,7 +4,7 @@ description: The 'Estimating' Risk-First Track.
 
 featured: 
   class: bg1
-  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/tape-measure.svg">Track 5: On Estimating</image-artifact>'
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/tape-measure.svg">On Estimating</image-artifact>'
 layout: categories
 cat: Estimating
 tags:
