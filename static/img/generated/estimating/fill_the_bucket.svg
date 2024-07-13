@@ -1,279 +1,1779 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.0//EN'
-          'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
-<svg contentScriptType="text/ecmascript" width="1200.0px" xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify" contentStyleType="text/css" height="374.0px" preserveAspectRatio="xMidYMid" xmlns="http://www.w3.org/2000/svg" version="1.0"
->
-  <defs
-  >
-    <style type="text/css" xml:space="preserve"
-    > @import url("risk.css");</style
-    >
-  </defs
-    >
-  <g k9-elem="diagram" name="Development Process 1" id="diagram-116" style="kite9-layout: right; kite9-min-width: 1200px; kite9-horizontal-align: center; " class=" kite9-diagram" k9-info="position: none; horiz: CENTER; vert: CENTER; sizing: MINIMIZE; layout: RIGHT; rectangular: diagram; rect-pos: [0.0,0.0]; rect-size: [1200.0,374.0]; "
-    >
-    <g k9-elem="back" style="kite9-usage: decal; kite9-type: svg; " class=" kite9-back" k9-info=""
-      >
-      <rect x="0" width="1200.0" height="374.0" y="0" style="fill: white; " class="diagram-back"
-        />
-    </g
-        >
-    
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:adl="http://www.kite9.org/schema/adl"
+     xmlns:exslt="http://exslt.org/common"
+     xmlns:pp="http://www.kite9.org/schema/post-processor"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     contentScriptType="text/ecmascript"
+     zoomAndPan="magnify"
+     contentStyleType="text/css"
+     version="1.0"
+     width="1548"
+     pp:width="$width"
+     preserveAspectRatio="xMidYMid meet"
+     height="372"
+     pp:height="$height">
+   <metadata xmlns:md="http://www.kite9.org/schema/metadata">
+      <md:self>http://robs-pro:8080/api/renderer?format=svg</md:self>
+   </metadata>
+   <defs>
+      <style xml:space="preserve">*[k9-format="text-fixed"] {
+--kite9-type: TEXT;
+--kite9-vertical-align: CENTER;
+--kite9-horizontal-align: CENTER;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+}
 
-    <g k9-elem="group" style="kite9-horizontal-align: center; kite9-sizing: minimize; kite9-margin-right: 200px; " class=" kite9-group" transform="translate(192.0,40.0)" k9-info="position: none; horiz: CENTER; vert: CENTER; sizing: MINIMIZE; layout: null; rectangular: connected; rect-pos: [192.0,40.0]; rect-size: [808.0,294.0]; "
-        >
-    <g k9-elem="context" bordered="true" id="c" class=" kite9-context" transform="translate(26.0,26.0)" k9-info="position: none; horiz: CENTER; vert: CENTER; sizing: MINIMIZE; layout: null; rectangular: connected; rect-pos: [218.0,66.0]; rect-size: [313.0,242.0]; "
-          >
-    
+*[k9-format="image"], *[k9-format="image-fixed"] {
+--kite9-type: SVG;
+--kite9-horizontal-align: CENTER;
+--kite9-vertical-align: CENTER;
+}
 
-      <g imgsrc="posts/bucket.svg" k9-elem="image-artifact" class=" kite9-image-artifact" transform="translate(84.0,16.0)" k9-info="position: none; horiz: CENTER; vert: CENTER; sizing: MINIMIZE; layout: VERTICAL; rectangular: connected; rect-pos: [302.0,82.0]; rect-size: [146.0,186.0]; "
-            >
-    <g k9-elem="image" style="kite9-vertical-align: center; kite9-min-size: 80pt 80pt;" class=" kite9-image" transform="translate(20.0,25.0)" k9-info="position: none; horiz: CENTER; vert: CENTER; sizing: MINIMIZE; layout: null; rectangular: connected; rect-pos: [322.0,107.0]; rect-size: [106.0,106.0]; "
-              >
-        <image x="0" y="0" width="80pt" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="posts/bucket.svg" xlink:type="simple" xlink:actuate="onLoad" height="80pt" preserveAspectRatio="xMidYMid meet" xlink:show="embed"
-                />
-    </g
-                >
-    <g k9-elem="title" class=" kite9-title" transform="translate(39.0,155.0)" k9-info="position: none; horiz: CENTER; vert: BOTTOM; sizing: MINIMIZE; layout: HORIZONTAL; rectangular: connected; rect-pos: [341.0,237.0]; rect-size: [68.0,18.0]; "
-                >
-    <g class="title-label-front"
-                  >
-      <g k9-elem="front" style="kite9-type: text; " class=" kite9-front" transform="translate(-4966.3,1.9)" k9-info="position: none; horiz: CENTER; vert: CENTER; rectangular: connected; rect-pos: [341.0,237.0]; rect-size: [68.0,18.0]; "
-                    ><g font-size="16px"
-                      ><text x="4964.3086" xml:space="preserve" y="13.6" stroke="none"
-                        ><tspan
-                          >5</tspan
-                          ><tspan
-                          >l </tspan
-                          ><tspan
-                          >Bucket</tspan
-                        ></text
-                      ></g
-                    ></g
-                    >
-    </g
-                    >
-  </g
-                    >
-  </g
-                    >
+*[k9-format="shape"] {
+--kite9-type: CONTAINER;
+--kite9-horizontal-align: CENTER;
+--kite9-vertical-align: CENTER;
+}
 
-      <g k9-elem="label" id="id_16" class=" kite9-label" transform="translate(16.0,215.0)" k9-info="position: none; horiz: CENTER; vert: CENTER; sizing: MINIMIZE; layout: null; rectangular: label; rect-pos: [234.0,281.0]; rect-size: [281.0,27.0]; "
-                    >
-    <g class="container-label-front"
-                      >
-      <g k9-elem="front" style="kite9-type: text; " class=" kite9-front" transform="translate(3.6,6.7)" k9-info="position: none; horiz: CENTER; vert: CENTER; rectangular: connected; rect-pos: [239.0,286.0]; rect-size: [271.0,17.0]; "
-                        ><g font-size="14.6667px"
-                          ><text x="0" xml:space="preserve" y="12.4667" stroke="none"
-                            ><tspan
-                              >I</tspan
-                              ><tspan
-                              >f </tspan
-                              ><tspan
-                              >it </tspan
-                              ><tspan
-                              >takes </tspan
-                              ><tspan
-                              >one </tspan
-                              ><tspan
-                              >hour </tspan
-                              ><tspan
-                              >to </tspan
-                              ><tspan
-                              >fill </tspan
-                              ><tspan
-                              >a </tspan
-                              ><tspan
-                              >5l </tspan
-                              ><tspan
-                              >bucket...</tspan
-                            ></text
-                          ></g
-                        ></g
-                        >
-    </g
-                        >
-  </g
-                        >
-    
-    <g k9-elem="back" style="kite9-usage: decal; kite9-type: svg;  " class=" kite9-back" k9-info=""
-                        >
-      <rect x="0" y="0" width="313.0" rx="12pt" class="context-back" ry="12pt" height="242.0"
-                          />
-    </g
-                          >
-  </g
-                          >
+*[k9-format="svg"], *[k9-format="svg-fixed"] {
+--kite9-type: SVG;
+--kite9-horizontal-align: CENTER;
+--kite9-vertical-align: CENTER;
+}
 
-    <g k9-elem="group" class=" kite9-group" transform="translate(365.0,.0)" k9-info="position: none; horiz: CENTER; vert: CENTER; sizing: MAXIMIZE; layout: null; rectangular: connected; rect-pos: [557.0,40.0]; rect-size: [144.0,294.0]; "
-                          >
-      <g k9-elem="action" class=" kite9-action" transform="translate(.0,125.0)" k9-info="position: none; horiz: CENTER; vert: CENTER; sizing: MINIMIZE; layout: null; rectangular: connected; rect-pos: [557.0,165.0]; rect-size: [144.0,44.0]; "
-                            >
-    <g k9-elem="back" style="kite9-usage: decal; kite9-type: svg; " class=" kite9-back" k9-info=""
-                              >
-      <polygon style="fill: url(#risk-background); stroke: black; stroke-width: 1pt;" points="0 0, 123.999999 0, 144.0 22, 123.999999 44.0, 0 44.0"
-                                />
-    </g
-                                >
-    <g k9-elem="front" style="kite9-usage: regular; kite9-type: container; kite9-layout: down;  kite9-padding: 10pt; kite9-padding-right: 40pt; " class=" kite9-front" k9-info="position: none; horiz: CENTER; vert: CENTER; sizing: MINIMIZE; layout: DOWN; rectangular: connected; rect-pos: [557.0,165.0]; rect-size: [144.0,44.0]; "
-                                >
-      <g k9-elem="title" class=" kite9-title" transform="translate(13.0,13.0)" k9-info="position: none; horiz: LEFT; vert: BOTTOM; sizing: MINIMIZE; layout: HORIZONTAL; rectangular: connected; rect-pos: [570.0,178.0]; rect-size: [78.0,18.0]; "
-                                  >
-    <g class="title-label-front"
-                                    >
-      <g k9-elem="front" style="kite9-type: text; " class=" kite9-front" transform="translate(-4960.6,1.9)" k9-info="position: none; horiz: CENTER; vert: CENTER; rectangular: connected; rect-pos: [570.0,178.0]; rect-size: [78.0,18.0]; "
-                                      ><g font-size="16px"
-                                        ><text x="4959.1367" xml:space="preserve" y="13.6" stroke="none"
-                                          ><tspan
-                                            >E</tspan
-                                            ><tspan
-                                            >stimating</tspan
-                                          ></text
-                                        ></g
-                                      ></g
-                                      >
-    </g
-                                      >
-  </g
-                                      >
-    </g
-                                      >
-  </g
-                                      >
-      
-    </g
-                                      >
-    
-      <g k9-elem="context" id="d" class=" kite9-context" transform="translate(535.0,26.0)" k9-info="position: none; horiz: CENTER; vert: CENTER; sizing: MINIMIZE; layout: null; rectangular: connected; rect-pos: [727.0,66.0]; rect-size: [247.0,242.0]; "
-                                      >
-    
-        <g imgsrc="posts/bucket.svg" k9-elem="image-artifact" class=" kite9-image-artifact" transform="translate(51.0,16.0)" k9-info="position: none; horiz: CENTER; vert: CENTER; sizing: MINIMIZE; layout: VERTICAL; rectangular: connected; rect-pos: [778.0,82.0]; rect-size: [146.0,186.0]; "
-                                        >
-    <g k9-elem="image" style="kite9-vertical-align: center; kite9-min-size: 80pt 80pt;" class=" kite9-image" transform="translate(20.0,25.0)" k9-info="position: none; horiz: CENTER; vert: CENTER; sizing: MINIMIZE; layout: null; rectangular: connected; rect-pos: [798.0,107.0]; rect-size: [106.0,106.0]; "
-                                          >
-        <image x="0" y="0" width="80pt" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="posts/bucket.svg" xlink:type="simple" xlink:actuate="onLoad" height="80pt" preserveAspectRatio="xMidYMid meet" xlink:show="embed"
-                                            />
-    </g
-                                            >
-    <g k9-elem="title" class=" kite9-title" transform="translate(34.0,155.0)" k9-info="position: none; horiz: CENTER; vert: BOTTOM; sizing: MINIMIZE; layout: HORIZONTAL; rectangular: connected; rect-pos: [812.0,237.0]; rect-size: [79.0,18.0]; "
-                                            >
-    <g class="title-label-front"
-                                              >
-      <g k9-elem="front" style="kite9-type: text; " class=" kite9-front" transform="translate(-4960.6,1.9)" k9-info="position: none; horiz: CENTER; vert: CENTER; rectangular: connected; rect-pos: [812.0,237.0]; rect-size: [79.0,18.0]; "
-                                                ><g font-size="16px"
-                                                  ><text x="4959.25" xml:space="preserve" y="13.6" stroke="none"
-                                                    ><tspan
-                                                      >2</tspan
-                                                      ><tspan
-                                                      >0l </tspan
-                                                      ><tspan
-                                                      >Bucket</tspan
-                                                    ></text
-                                                  ></g
-                                                ></g
-                                                >
-    </g
-                                                >
-  </g
-                                                >
-  </g
-                                                >
-        <g k9-elem="label" id="4" class=" kite9-label" transform="translate(16.0,215.0)" k9-info="position: none; horiz: CENTER; vert: CENTER; sizing: MINIMIZE; layout: null; rectangular: label; rect-pos: [743.0,281.0]; rect-size: [215.0,27.0]; "
-                                                >
-    <g class="container-label-front"
-                                                  >
-      <g k9-elem="front" style="kite9-type: text; " class=" kite9-front" transform="translate(3.6,6.7)" k9-info="position: none; horiz: CENTER; vert: CENTER; rectangular: connected; rect-pos: [748.0,286.0]; rect-size: [205.0,17.0]; "
-                                                    ><g font-size="14.6667px"
-                                                      ><text x="0" xml:space="preserve" y="12.4667" stroke="none"
-                                                        ><tspan
-                                                          >H</tspan
-                                                          ><tspan
-                                                          >ow </tspan
-                                                          ><tspan
-                                                          >long </tspan
-                                                          ><tspan
-                                                          >to </tspan
-                                                          ><tspan
-                                                          >fill </tspan
-                                                          ><tspan
-                                                          >a </tspan
-                                                          ><tspan
-                                                          >20l </tspan
-                                                          ><tspan
-                                                          >Bucket?</tspan
-                                                        ></text
-                                                      ></g
-                                                    ></g
-                                                    >
-    </g
-                                                    >
-  </g
-                                                    >
-      
-    <g k9-elem="back" style="kite9-usage: decal; kite9-type: svg;  " class=" kite9-back" k9-info=""
-                                                    >
-      <rect x="0" y="0" width="247.0" rx="12pt" class="context-back" ry="12pt" height="242.0"
-                                                      />
-    </g
-                                                      >
-  </g
-                                                      >
-  </g
-                                                      >
-  
-  </g
-                                                      >
-<defs
-                                                      >
-    <linearGradient x1="0%" xmlns:xlink="http://www.w3.org/1999/xlink" y1="0%" x2="0%" y2="100%" xlink:type="simple" xlink:actuate="onLoad" id="risk-background" xlink:show="other"
-                                                        >
-      <stop stop-color="#FFF" offset="0%"
-                                                          />
-      <stop stop-color="#DDD" offset="100%"
-                                                          />
-    </linearGradient
-                                                          >
+*[k9-format="container"] {
+--kite9-type: CONTAINER;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+}
 
-    <filter xlink:actuate="onLoad" xlink:type="simple" height="130%" id="dropshadow" xlink:show="other" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                          >
-      <feGaussianBlur stdDeviation="4" in="SourceAlpha"
-                                                            />
-      <feOffset dx="6" dy="6"
-                                                            />
-      <feColorMatrix values="          0 0 0 0 0                 0 0 0 0 0                 0 0 0 0 0                 0 0 0 .4 0" type="matrix"
-                                                            />
-      <feMerge
-                                                            >
-        <feMergeNode
-                                                              />
-        <feMergeNode in="SourceGraphic"
-                                                              />
-      </feMerge
-                                                              >
-    </filter
-                                                              >
+*[k9-format="text-image-portrait"], *[k9-format="text-image-captioned"], *[k9-format="text-shape-captioned"], *[k9-format="text-shape-portrait"], *[k9-format="text-shape-inline"] {
+--kite9-type: CONTAINER;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+}
 
-    <marker refX="6" refY="4" orient="auto" id="arrow-end-marker" markerHeight="7" preserveAspectRatio="xMidYMid meet" markerWidth="7"
-                                                              >
-      <path class="arrow-marker" d="M2,2 L6,4 L2,6"
-                                                                />
-    </marker
-                                                                >
+*[k9-format="text-image-portrait"], *[k9-format="text-shape-portrait"] {
+--kite9-layout: DOWN;
+}
 
-    <marker refX="2" refY="4" orient="auto" id="arrow-start-marker" markerHeight="7" preserveAspectRatio="xMidYMid meet" markerWidth="7"
-                                                                >
-      <path class="arrow-marker" d="M6,2 L2,4 L6,6"
-                                                                  />
-    </marker
-                                                                  >
+*[k9-format="text-shape-captioned"] &gt; g &gt; *[k9-elem="depiction"], *[k9-format="text-image-portrait"] &gt; g &gt; *[k9-elem="depiction"], *[k9-format="text-shape-portrait"] &gt; g &gt; *[k9-elem="depiction"] {
+--kite9-type: SVG;
+--kite9-horizontal-align: CENTER;
+--kite9-connections: SEPARATE;
+}
 
-    <marker refY="3" preserveAspectRatio="xMidYMid meet" markerHeight="6" id="circle-marker" markerWidth="6" refX="3"
-                                                                  >
-      <circle r="2" class="circle-marker" cx="3" cy="3"
-                                                                    />
-    </marker
-                                                                    >
+*[k9-format="text-shape-inline"] &gt; g &gt; *[k9-elem="caption"], *[k9-format="text-image-portrait"] &gt; g &gt; *[k9-elem="caption"], *[k9-format="text-shape-portrait"] &gt; g &gt; *[k9-elem="caption"], *[k9-format="text-shape-captioned"] &gt; g &gt; *[k9-elem="caption"] {
+--kite9-type: TEXT;
+--kite9-horizontal-align: CENTER;
+--kite9-vertical-align: CENTER;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+}
 
-  </defs
-                                                                  ></svg
-                                                                >
+*[k9-format="text-shape-captioned"] &gt; g &gt; *[k9-elem="shape-align"] {
+--kite9-type: LINK;
+}
+
+*[k9-format="text-shape-captioned"] &gt; g &gt; *[k9-elem="shape-align"] &gt; g &gt; *[k9-elem="from"], *[k9-format="text-shape-captioned"] &gt; g &gt; *[k9-elem="shape-align"] &gt; g &gt; *[k9-elem="to"] {
+--kite9-type: LINK_END;
+}
+
+*[k9-elem="diagram"] {
+--kite9-type: DIAGRAM;
+--kite9-traversal-bottom: LEAVING;
+--kite9-traversal-left: LEAVING;
+--kite9-traversal-right: LEAVING;
+--kite9-traversal-top: LEAVING;
+}
+
+*[k9-elem="group"] {
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-traversal-bottom: ALWAYS;
+--kite9-traversal-left: ALWAYS;
+--kite9-traversal-right: ALWAYS;
+--kite9-traversal-top: ALWAYS;
+--kite9-min-width: 40pt;
+--kite9-min-height: 40pt;
+}
+
+*[k9-elem="container"] {
+--kite9-padding-top: 15pt;
+--kite9-padding-right: 15pt;
+--kite9-padding-bottom: 15pt;
+--kite9-padding-left: 15pt;
+--kite9-margin-top: 15pt;
+--kite9-margin-right: 15pt;
+--kite9-margin-bottom: 15pt;
+--kite9-margin-left: 15pt;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+}
+
+*[k9-elem="label"] {
+--kite9-usage: LABEL;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-direction: DOWN;
+}
+
+*[k9-elem="label-inner"] {
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-padding-top: 4pt;
+--kite9-padding-right: 4pt;
+--kite9-padding-bottom: 4pt;
+--kite9-padding-left: 4pt;
+--kite9-margin-top: 4pt;
+--kite9-margin-right: 4pt;
+--kite9-margin-bottom: 4pt;
+--kite9-margin-left: 4pt;
+}
+
+*[k9-elem="label"][end="to"] {
+--kite9-link-end: TO;
+}
+
+*[k9-elem="label"][end="from"] {
+--kite9-link-end: FROM;
+}
+
+*[k9-elem="table"] {
+--kite9-layout: GRID;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+}
+
+*[k9-elem="cell"] {
+--kite9-usage: REGULAR;
+--kite9-vertical-align: CENTER;
+--kite9-horizontal-align: CENTER;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+text-align: center;
+--kite9-min-width: 30pt;
+--kite9-min-height: 30pt;
+--kite9-traversal-bottom: ALWAYS;
+--kite9-traversal-left: ALWAYS;
+--kite9-traversal-right: ALWAYS;
+--kite9-traversal-top: ALWAYS;
+}
+
+*[k9-format="link-align"], *[k9-format="link-basic"] {
+--kite9-type: LINK;
+--kite9-link-from-xpath: "descendant::*[@k9-elem='from']/@reference";
+--kite9-link-to-xpath: "descendant::*[@k9-elem='to']/@reference";
+}
+
+*[k9-elem="link-grab"], *[k9-elem="align-grab"], *[k9-elem="grab"], *[k9-elem="align-body"], *[k9-elem="link-body"] {
+--kite9-usage: DECAL;
+--kite9-type: SVG;
+fill: none;
+}
+
+*[k9-elem="from"], *[k9-elem="to"] {
+fill: rgb(255, 255, 255);
+fill-opacity: 0.01;
+}
+
+*[k9-elem="link"] {
+--kite9-margin-top: 20pt;
+--kite9-margin-right: 20pt;
+--kite9-margin-bottom: 20pt;
+--kite9-margin-left: 20pt;
+--kite9-link-corner-radius: 6pt;
+}
+
+*.indicators-on *[id] *[k9-elem="align-body"] {
+stroke: rgb(187, 221, 238);
+stroke-opacity: 1;
+}
+
+*[k9-elem="from"] {
+--kite9-link-end: FROM;
+}
+
+*[k9-elem="to"] {
+--kite9-link-end: TO;
+}
+
+*[k9-elem="from"].gap, *[k9-elem="to"].gap {
+--kite9-marker-reserve: 20pt;
+}
+
+*[k9-elem="from"][shape="open-diamond"], *[k9-elem="to"][shape="open-diamond"] {
+--kite9-marker-reserve: 8pt;
+}
+
+*[k9-elem="from"][shape="open-arrow"], *[k9-elem="to"][shape="open-arrow"] {
+--kite9-marker-reserve: 6pt;
+}
+
+*[k9-elem="from"], *[k9-elem="to"] {
+--kite9-type: LINK_END;
+--kite9-padding-top: 8pt;
+--kite9-padding-right: 8pt;
+--kite9-padding-bottom: 8pt;
+--kite9-padding-left: 8pt;
+}
+
+*[k9-elem="port"] {
+--kite9-type: PORT;
+}
+
+*[k9-elem="hub"] {
+--kite9-type: SVG;
+--kite9-margin-top: 0;
+--kite9-margin-right: 0;
+--kite9-margin-bottom: 0;
+--kite9-margin-left: 0;
+--kite9-min-width: 10pt;
+--kite9-min-height: 10pt;
+}
+
+*[k9-elem="group"] {
+--kite9-type: CONTAINER;
+--kite9-margin-top: 20pt;
+--kite9-margin-right: 20pt;
+--kite9-margin-bottom: 20pt;
+--kite9-margin-left: 20pt;
+}
+
+*[k9-elem="textarea"] {
+--kite9-margin-top: 4pt;
+--kite9-margin-right: 4pt;
+--kite9-margin-bottom: 4pt;
+--kite9-margin-left: 4pt;
+--kite9-vertical-align: CENTER;
+--kite9-horizontal-align: CENTER;
+}
+
+*[id] &gt; *[k9-highlight] {
+}
+
+*.indicators-on *[id] &gt; *[k9-highlight~="grab"] {
+stroke-width: 10pt;
+fill-opacity: 0.5;
+}
+
+*.indicators-on *[id] &gt; *[k9-highlight~="bar"] {
+stroke-width: 10pt;
+stroke-opacity: 0.1;
+}
+
+*.indicators-on *[id] &gt; *[k9-highlight~="stroke"] {
+stroke: rgb(183, 192, 254);
+stroke-opacity: 0.8;
+stroke-width: 1pt;
+stroke-dasharray: none;
+}
+
+*.indicators-on *[id] &gt; *[k9-highlight~="stroke"] &gt; image {
+filter: url(#highlight-visible);
+}
+
+*.indicators-on *[id] &gt; *[k9-highlight~="fill"] {
+fill: rgb(183, 192, 254);
+fill-opacity: 0.6;
+}
+
+*.indicators-off *[id] &gt; *[k9-highlight~="fill"] {
+fill-opacity: 0;
+}
+
+*.indicators-off *[id] &gt; *[k9-highlight~="stroke"] {
+stroke-opacity: 0;
+}
+
+*.indicators-off *[id] &gt; *[k9-highlight~="stroke"] &gt; image {
+filter: url(#highlight-invisible);
+}
+
+*.indicators-on *[id][default] &gt; *[k9-highlight~="bar"], *.indicators-on *[id][default] &gt; g &gt; *[k9-highlight~="bar"] {
+stroke-width: 10pt;
+stroke-opacity: 0.8;
+stroke: rgb(253, 152, 112);
+}
+
+*.indicators-on *[id][default] &gt; *[k9-highlight~="pulse"], *.indicators-on *[id][default] &gt; g &gt; *[k9-highlight~="pulse"] {
+fill-opacity: 1;
+fill: rgb(253, 152, 112);
+}
+
+*.mouseover &gt; g &gt; *[k9-highlight~="stroke"], *.mouseover &gt; g &gt; *[k9-highlight~="outline"], *.mouseover &gt; g &gt; *[k9-highlight~="bar"], *.mouseover &gt; *[k9-highlight~="stroke"], *.mouseover &gt; *[k9-highlight~="outline"], *.mouseover &gt; *[k9-highlight~="bar"] {
+stroke: rgb(187, 221, 238);
+stroke-opacity: 1;
+}
+
+*.mouseover &gt; g &gt; *[k9-highlight~="pulse"], *.mouseover &gt; g &gt; *[k9-highlight~="fill"], *.mouseover &gt; g &gt; *[k9-highlight~="grab"], *.mouseover &gt; *[k9-highlight~="pulse"], *.mouseover &gt; *[k9-highlight~="fill"], *.mouseover &gt; *[k9-highlight~="grab"], *.mouseover.grid-temporary {
+fill: rgb(204, 238, 255);
+fill-opacity: 0.8;
+}
+
+*.selected &gt; g &gt; *[k9-highlight~="outline"], *.selected &gt; g &gt; *[k9-highlight~="stroke"], *.selected &gt; g &gt; *[k9-highlight~="bar"], *.selected &gt; *[k9-highlight~="outline"], *.selected &gt; *[k9-highlight~="stroke"], *.selected &gt; *[k9-highlight~="bar"] {
+stroke: rgb(255, 204, 0);
+stroke-opacity: 0.8;
+}
+
+*[k9-elem="_temporary"].selected, *.selected &gt; g &gt; *[k9-highlight~="pulse"], *.selected &gt; g &gt; *[k9-highlight~="fill"], *.selected &gt; g &gt; *[k9-highlight~="grab"], *.selected &gt; *[k9-highlight~="pulse"], *.selected &gt; *[k9-highlight~="fill"], *.selected &gt; *[k9-highlight~="grab"] {
+fill: rgb(255, 204, 0);
+fill-opacity: 0.8;
+}
+
+*.dropping &gt; g &gt; *[k9-highlight~="outline"], *.dropping &gt; g &gt; *[k9-highlight~="stroke"], *.dropping &gt; g &gt; *[k9-highlight~="bar"], *.dropping &gt; *[k9-highlight~="outline"], *.dropping &gt; *[k9-highlight~="stroke"], *.dropping &gt; *[k9-highlight~="bar"] {
+stroke: rgb(220, 221, 221);
+stroke-opacity: 0.8;
+}
+
+*.dropping &gt; g &gt; *[k9-highlight~="pulse"], *.dropping &gt; g &gt; *[k9-highlight~="fill"], *.dropping &gt; g &gt; *[k9-highlight~="grab"], *.dropping &gt; *[k9-highlight~="pulse"], *.dropping &gt; *[k9-highlight~="fill"], *.dropping &gt; *[k9-highlight~="grab"] {
+fill: rgb(220, 221, 221);
+fill-opacity: 0.8;
+}
+
+*[k9-elem="diagram"].selected &gt; *[k9-highlight] {
+fill-opacity: 0;
+fill: white;
+}
+
+*.inactive &gt; *[k9-highlight~="outline"], *.inactive &gt; *[k9-highlight~="stroke"], *.inactive &gt; *[k9-highlight~="bar"] {
+stroke-opacity: 0.2;
+}
+
+*.inactive &gt; *[k9-highlight~="pulse"], *.inactive &gt; *[k9-highlight~="fill"], *.inactive &gt; *[k9-highlight~="grab"], *.inactive &gt; g &gt; text {
+fill-opacity: 0.2;
+}
+
+*.indicators-on *.grid-temporary {
+fill-opacity: 0.3;
+stroke: none;
+}
+
+*[k9-elem="action"] {
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-margin-top: 10pt;
+--kite9-margin-right: 10pt;
+--kite9-margin-bottom: 10pt;
+--kite9-margin-left: 10pt;
+--kite9-padding-top: 12pt;
+--kite9-padding-right: 22pt;
+--kite9-padding-bottom: 12pt;
+--kite9-padding-left: 12pt;
+stroke-width: 1pt;
+}
+
+*[k9-elem="action"].left {
+--kite9-padding-left: 22pt;
+--kite9-padding-right: 12pt;
+}
+
+*[k9-elem="glyph"] &gt; g &gt; *[k9-elem="caption"], *[k9-elem="action"] &gt; g &gt; *[k9-elem="caption"] {
+--kite9-margin-top: 0pt;
+--kite9-margin-right: 0pt;
+--kite9-margin-bottom: 0pt;
+--kite9-margin-left: 0pt;
+--kite9-padding-top: 0pt;
+--kite9-padding-right: 0pt;
+--kite9-padding-bottom: 0pt;
+--kite9-padding-left: 0pt;
+fill: black;
+}
+
+*[k9-elem="glyph"] {
+--kite9-layout: DOWN;
+--kite9-padding-top: 6pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 6pt;
+--kite9-padding-left: 10pt;
+--kite9-margin-top: 10pt;
+--kite9-margin-right: 10pt;
+--kite9-margin-left: 10pt;
+--kite9-margin-bottom: 10pt;
+}
+
+*[k9-elem="artifact"], *[k9-elem="cash"], *[k9-elem="document"], *[k9-elem="users"], *[k9-elem="computer"], *[k9-elem="interface"], *[k9-elem="component"], *[k9-elem="channel-artifact"], *[k9-elem="internal-model-artifact"], *[k9-elem="protocol-artifact"], *[k9-elem="agent-artifact"], *[k9-elem="image-artifact"], *[k9-elem="generic-artifact"] {
+--kite9-margin-top: 10pt;
+--kite9-margin-right: 10pt;
+--kite9-margin-bottom: 10pt;
+--kite9-margin-left: 10pt;
+--kite9-link-inset: 10pt;
+--kite9-link-gutter: 10pt;
+--kite9-layout: VERTICAL;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-min-width: 110pt;
+--kite9-min-height: 140pt;
+}
+
+*[k9-elem="arrow"], *[k9-elem="block"] {
+--kite9-padding-top: 8pt;
+--kite9-padding-right: 8pt;
+--kite9-padding-bottom: 8pt;
+--kite9-padding-left: 8pt;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-connections: SEPARATE;
+font-size: 15pt;
+font-weight: 500;
+--kite9-link-inset: 3pt;
+}
+
+*[k9-elem="block"] &gt; g &gt; *[k9-elem="caption"] {
+--kite9-margin-top: 5pt;
+--kite9-margin-right: 5pt;
+--kite9-margin-bottom: 5pt;
+--kite9-margin-left: 5pt;
+--kite9-padding-top: 5pt;
+--kite9-padding-right: 5pt;
+--kite9-padding-bottom: 5pt;
+--kite9-padding-left: 5pt;
+}
+
+*[k9-elem="arrow"] &gt; g &gt; *[k9-elem="caption"] {
+--kite9-margin-top: 0pt;
+--kite9-margin-right: 0pt;
+--kite9-margin-bottom: 0pt;
+--kite9-margin-left: 0pt;
+--kite9-padding-top: 0pt;
+--kite9-padding-right: 0pt;
+--kite9-padding-bottom: 0pt;
+--kite9-padding-left: 0pt;
+}
+
+*[k9-elem="description"] {
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-usage: REGULAR;
+--kite9-text-bounds-width: 250pt;
+--kite9-direction: DOWN;
+}
+
+*[k9-elem="planner"] {
+--kite9-layout: GRID;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+}
+
+*[k9-elem="planner-cell"], *[k9-elem="planner-header"] {
+--kite9-usage: REGULAR;
+--kite9-vertical-align: CENTER;
+--kite9-horizontal-align: CENTER;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+text-align: center;
+--kite9-min-width: 230pt;
+--kite9-min-height: 30pt;
+--kite9-traversal-bottom: ALWAYS;
+--kite9-traversal-left: ALWAYS;
+--kite9-traversal-right: ALWAYS;
+--kite9-traversal-top: ALWAYS;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-layout: RIGHT;
+}
+
+*[k9-elem="planner-header"] {
+--kite9-min-width: 60pt;
+--kite9-min-height: 30pt;
+}
+
+*[k9-elem="mitigated"] {
+--kite9-min-width: 120pt;
+--kite9-min-height: 160pt;
+}
+
+*[k9-elem="hidden"] {
+--kite9-min-width: 120pt;
+--kite9-min-height: 160pt;
+}
+
+*[k9-elem="risk"] {
+--kite9-layout: DOWN;
+--kite9-margin-top: 10pt;
+--kite9-margin-right: 10pt;
+--kite9-margin-bottom: 10pt;
+--kite9-margin-left: 10pt;
+--kite9-link-inset: 10pt;
+--kite9-link-gutter: 10pt;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-min-width: 120pt;
+--kite9-min-height: 160pt;
+}
+
+*[k9-elem="title"][k9-format="text-fixed"] {
+--kite9-horizontal-align: CENTER;
+--kite9-vertical-align: BOTTOM;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-type: TEXT;
+--kite9-text-bounds-width: 110pt;
+--kite9-padding-top: 0pt;
+--kite9-padding-right: 0pt;
+--kite9-padding-bottom: 0pt;
+--kite9-padding-left: 0pt;
+}
+
+*[k9-elem="code"][k9-format="text-fixed"] {
+--kite9-horizontal-align: CENTER;
+--kite9-vertical-align: TOP;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-padding-top: 0pt;
+--kite9-padding-right: 0pt;
+--kite9-padding-bottom: 0pt;
+--kite9-padding-left: 0pt;
+--kite9-margin-top: 0pt;
+--kite9-margin-right: 0pt;
+--kite9-margin-bottom: 10pt;
+--kite9-margin-left: 0pt;
+}
+
+*[k9-elem="risk"] &gt; g &gt; *[k9-format="image-fixed"] {
+--kite9-vertical-align: TOP;
+--kite9-horizontal-align: CENTER;
+}
+
+*[k9-elem="celltext"] {
+--kite9-usage: REGULAR;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-vertical-align: CENTER;
+--kite9-horizontal-align: LEFT;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+font-size: 40pt;
+fill: black;
+font-family: "gothic";
+stroke: none;
+--kite9-text-bounds-width: 350pt;
+}
+
+*[k9-elem="celltext"].bold {
+font-family: "gothic-bold";
+}
+
+*[k9-elem="celltext"].bottom {
+--kite9-vertical-align: BOTTOM;
+}
+
+*[k9-elem="celltext"] *[k9-elem="text-label"] {
+--kite9-horizontal-align: LEFT;
+}
+
+*[k9-elem="bulleted"] {
+--kite9-usage: REGULAR;
+--kite9-type: CONTAINER;
+--kite9-vertical-align: TOP;
+--kite9-horizontal-align: LEFT;
+font-size: 40pt;
+fill: black;
+font-family: "gothic";
+stroke: none;
+}
+
+*[k9-elem="ctext"] {
+--kite9-usage: REGULAR;
+--kite9-vertical-align: TOP;
+--kite9-horizontal-align: LEFT;
+font-size: 40pt;
+fill: black;
+font-family: "gothic";
+stroke: none;
+--kite9-type: TEXT;
+}
+
+*[k9-elem="btext"] {
+--kite9-usage: REGULAR;
+--kite9-vertical-align: TOP;
+--kite9-horizontal-align: LEFT;
+font-size: 40pt;
+fill: black;
+font-family: "gothic-bold";
+stroke: none;
+--kite9-type: TEXT;
+}
+
+*[k9-elem="tick"] {
+--kite9-usage: REGULAR;
+--kite9-type: CONTAINER;
+}
+
+*[k9-elem="table"] *[k9-elem="risk"], *[k9-elem="table"] *[k9-elem="tick"] {
+--kite9-horizontal-align: CENTER;
+--kite9-margin-top: 20pt;
+--kite9-margin-right: 20pt;
+--kite9-margin-bottom: 20pt;
+--kite9-margin-left: 20pt;
+}
+
+*[k9-elem="table"] *[k9-elem="celltext"].bottom {
+--kite9-vertical-align: BOTTOM;
+}
+
+*[k9-elem="table"] *[k9-elem="celltext"].top {
+--kite9-vertical-align: TOP;
+}
+
+*[k9-elem="description"], *[k9-elem="long-description"], *.description {
+font-size: 14pt;
+font-family: "gothic-italic";
+font-style: italic;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-text-bounds-width: 250pt;
+}
+
+*[k9-elem="leg"] {
+--kite9-type: CONTAINER;
+--kite9-layout: DOWN;
+--kite9-min-height: 110pt;
+--kite9-min-width: 70pt;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-margin-top: 0pt;
+--kite9-margin-right: 0pt;
+--kite9-margin-bottom: 0pt;
+--kite9-margin-left: 0pt;
+--kite9-vertical-align: BOTTOM;
+}
+
+*[k9-elem="plinth"] {
+--kite9-type: CONTAINER;
+--kite9-horizontal-sizing: MAXIMIZE;
+--kite9-vertical-sizing: MAXIMIZE;
+}
+
+*[k9-elem="big-image"] {
+--kite9-margin-top: 10pt;
+--kite9-margin-right: 10pt;
+--kite9-margin-bottom: 10pt;
+--kite9-margin-left: 10pt;
+--kite9-link-inset: 10pt;
+--kite9-link-gutter: 10pt;
+--kite9-layout: VERTICAL;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-min-width: 110pt;
+--kite9-min-height: 140pt;
+}
+
+*[k9-elem="diagram"].principle {
+fill-opacity: 1;
+fill: rgb(245, 245, 245);
+--kite9-layout: VERTICAL;
+--kite9-padding-left: 0pt;
+--kite9-padding-right: 0pt;
+--kite9-padding-top: 0pt;
+--kite9-padding-bottom: 0pt;
+}
+
+*[k9-elem="group"].principle-outline {
+fill: white;
+fill-opacity: 1;
+--kite9-padding-top: 50pt;
+--kite9-padding-right: 50pt;
+--kite9-padding-bottom: 50pt;
+--kite9-padding-left: 50pt;
+}
+
+*[k9-elem="group"].principle-top {
+--kite9-layout: GRID;
+--kite9-grid-columns: 2;
+--kite9-grid-rows: 2;
+--kite9-padding-top: 0pt;
+--kite9-padding-right: 0pt;
+--kite9-padding-bottom: 0pt;
+--kite9-padding-left: 0pt;
+--kite9-margin-top: 3pt;
+--kite9-margin-right: 3pt;
+--kite9-margin-bottom: 3pt;
+--kite9-margin-left: 3pt;
+--kite9-horizontal-sizing: MAXIMIZE;
+--kite9-vertical-sizing: MAXIMIZE;
+--kite9-min-width: 1000pt;
+--kite9-min-height: 535pt;
+}
+
+*[k9-elem="group"].principle-left-top {
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-layout: DOWN;
+--kite9-padding-top: 10pt;
+--kite9-margin-top: 0pt;
+}
+
+*[k9-elem="group"].principle-right-top {
+--kite9-horizontal-sizing: MAXIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-layout: DOWN;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 30pt;
+--kite9-margin-top: 0pt;
+--kite9-margin-right: 0pt;
+--kite9-margin-bottom: 0pt;
+--kite9-margin-left: 0pt;
+}
+
+*[k9-elem="group"].principle-left-bottom {
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MAXIMIZE;
+--kite9-layout: DOWN;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-margin-top: 0pt;
+--kite9-margin-right: 0pt;
+--kite9-margin-bottom: 0pt;
+--kite9-margin-left: 0pt;
+}
+
+*[k9-elem="group"].principle-right-bottom {
+--kite9-horizontal-sizing: MAXIMIZE;
+--kite9-vertical-sizing: MAXIMIZE;
+--kite9-layout: DOWN;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 30pt;
+--kite9-margin-top: 0pt;
+--kite9-margin-right: 0pt;
+--kite9-margin-bottom: 0pt;
+--kite9-margin-left: 0pt;
+}
+
+*[k9-elem="risk-first-logo"].principle {
+--kite9-vertical-align: BOTTOM;
+--kite9-padding-top: 0;
+--kite9-padding-right: 0;
+--kite9-padding-bottom: 0;
+--kite9-padding-left: 0;
+--kite9-margin-top: 0;
+--kite9-margin-right: 0;
+--kite9-margin-bottom: 0;
+--kite9-margin-left: 0;
+}
+
+*[k9-elem="page-title"].principle-site {
+font-family: "Metropolis";
+font-size: 14pt;
+fill: rgb(97, 162, 161);
+letter-spacing: 1.4;
+font-weight: 600;
+text-align: center;
+--kite9-margin-top: 0;
+}
+
+*[k9-elem="page-title"].number {
+font-family: "Metropolis";
+font-size: 60pt;
+fill: rgb(245, 62, 121);
+indent: 0;
+font-weight: 600;
+--kite9-padding-bottom: 0;
+--kite9-margin-bottom: 0;
+--kite9-vertical-align: TOP;
+}
+
+*[k9-elem="page-title"].principle {
+font-family: "Metropolis";
+font-size: 60pt;
+font-weight: 600;
+fill: rgb(0, 0, 0);
+text-align: left;
+--kite9-padding-bottom: 0;
+--kite9-margin-bottom: 0;
+--kite9-margin-right: 30pt;
+--kite9-vertical-align: TOP;
+}
+
+*[k9-elem="page-summary"].principle {
+font-family: "Metropolis";
+font-size: 25pt;
+--kite9-text-bounds-width: 600pt;
+--kite9-padding-top: 0pt;
+--kite9-padding-right: 0pt;
+--kite9-padding-bottom: 0pt;
+--kite9-padding-left: 0pt;
+fill: rgb(97, 162, 161);
+indent: 0;
+text-align: center;
+font-weight: 300;
+font-style: italic;
+}
+
+*[k9-texture="none"] {
+fill: white;
+fill-opacity: 0.001;
+stroke-opacity: 0.001;
+}
+
+*[k9-texture="background"] {
+fill: white;
+fill-opacity: 1;
+stroke: black;
+stroke-opacity: 1;
+}
+
+*[k9-texture~="default"] {
+fill: white;
+fill-opacity: 1;
+}
+
+*[k9-texture~="outline"] {
+fill: white;
+fill-opacity: 0.001;
+stroke: black;
+stroke-opacity: 1;
+}
+
+*[k9-texture~="foreground"] {
+fill: black;
+fill-opacity: 1;
+stroke: none;
+stroke-width: 0;
+}
+
+*[k9-texture="background"][k9-elem="container"] {
+stroke: black;
+stroke-width: 1pt;
+}
+
+*[k9-texture="background"][k9-elem="container"].solid &gt; g.k9-shape &gt; rect {
+stroke-dasharray: none;
+}
+
+*[k9-texture="background"][k9-elem="container"].dotted &gt; g.k9-shape &gt; rect {
+stroke-dasharray: 4 4;
+}
+
+*[k9-elem="from"], *[k9-elem="to"] {
+fill: rgb(255, 255, 255);
+fill-opacity: 0.01;
+}
+
+*[k9-elem="link"] {
+stroke: black;
+stroke-width: 2pt;
+fill: none;
+}
+
+*[k9-elem="link"].invisible {
+stroke: none;
+}
+
+*[k9-elem="link"].dotted {
+stroke-dasharray: 8;
+}
+
+*[k9-elem="link"].thick {
+stroke-width: 4pt;
+}
+
+*[k9-elem="link"].grey {
+stroke: rgb(204, 204, 204);
+}
+
+*[k9-elem="hub"][k9-texture="background"] {
+fill: rgb(255, 255, 255);
+stroke: none;
+}
+
+*[k9-elem="cell"] {
+text-align: center;
+}
+
+*[k9-elem="_temporary"], *[k9-elem="cell"] &gt; *[k9-texture="background"] {
+fill: rgb(255, 255, 255);
+fill-opacity: 0.01;
+}
+
+*[k9-elem="cell"].bordered {
+stroke: black;
+stroke-width: 2pt;
+}
+
+*[k9-elem="cell"].shaded {
+fill: rgb(222, 222, 222);
+fill-opacity: 1;
+}
+
+*[k9-elem="table"].invisible *[k9-elem="cell"], *[k9-elem="table"].invisible *[k9-elem="_temporary"], *[k9-elem="cell"].invisible, *[k9-elem="table"].invisible {
+stroke: none;
+}
+
+*[k9-elem="cell"].left {
+--kite9-horizontal-align: LEFT;
+text-align: left;
+}
+
+*[k9-elem="cell"].right {
+--kite9-horizontal-align: RIGHT;
+text-align: right;
+}
+
+*[k9-elem="cell"].bottom {
+--kite9-vertical-align: BOTTOM;
+}
+
+*[k9-elem="cell"].top {
+--kite9-vertical-align: TOP;
+}
+
+*[k9-elem="label"] *[k9-texture="background"] {
+stroke: none;
+}
+
+*[k9-elem="label-inner"], *[k9-elem="label"] {
+--kite9-margin-top: 0;
+--kite9-margin-right: 0;
+--kite9-margin-bottom: 0;
+--kite9-margin-left: 0;
+--kite9-padding-top: 0;
+--kite9-padding-right: 0;
+--kite9-padding-bottom: 0;
+--kite9-padding-left: 0;
+}
+
+*[k9-elem="from"], *[k9-elem="to"] {
+fill: rgb(255, 255, 255);
+fill-opacity: 0.01;
+}
+
+*[k9-elem="link"] {
+stroke: black;
+stroke-width: 2pt;
+fill: none;
+}
+
+*[k9-elem="link"].invisible {
+stroke: none;
+}
+
+*[k9-elem="link"].dotted {
+stroke-dasharray: 8;
+}
+
+*[k9-elem="link"].thick {
+stroke-width: 4pt;
+}
+
+*[k9-elem="link"].grey {
+stroke: rgb(204, 204, 204);
+}
+
+*[k9-elem="hub"][k9-texture="background"] {
+fill: rgb(255, 255, 255);
+stroke: none;
+}
+
+*#_moveLayer *[highlight~="fill"], *#_moveLayer *[highlight~="pulse"] {
+fill: rgb(183, 192, 254);
+fill-opacity: 0.7;
+}
+
+*#_moveLayer *[highlight~="stroke"], *#_moveLayer *[highlight~="outline"] {
+stroke: rgb(183, 192, 254);
+stroke-opacity: 0.7;
+}
+
+*.indicators-on *[k9-info~="contradicting:"] &gt; g &gt; *[k9-highlight~="stroke"], *.indicators-on *[k9-info~="contradicting:"] &gt; g &gt; *[k9-highlight~="outline"], *.indicators-on *[k9-info~="contradicting:"] &gt; g &gt; *[k9-highlight~="bar"], *.indicators-on *[k9-info~="contradicting:"] &gt; *[k9-highlight~="stroke"], *.indicators-on *[k9-info~="contradicting:"] &gt; *[k9-highlight~="outline"], *.indicators-on *[k9-info~="contradicting:"] &gt; *[k9-highlight~="bar"] {
+stroke: rgb(255, 89, 86);
+stroke-opacity: 0.5;
+}
+
+*.indicators-on *[k9-info~="contradicting:"] &gt; g &gt; *[k9-highlight~="stroke"], *.indicators-on *[k9-info~="contradicting:"] &gt; g &gt; *[k9-highlight~="outline"], *.indicators-on *[k9-info~="contradicting:"] &gt; g &gt; *[k9-highlight~="bar"], *.indicators-on *[k9-info~="contradicting:"] &gt; *[k9-highlight~="stroke"], *.indicators-on *[k9-info~="contradicting:"] &gt; *[k9-highlight~="outline"], *.indicators-on *[k9-info~="contradicting:"] &gt; *[k9-highlight~="bar"] {
+fill: rgb(255, 89, 86);
+fill-opacity: 0.5;
+}
+
+@media editor {
+*[k9-elem="diagram"] {
+--kite9-padding-top: 200pt;
+--kite9-padding-right: 200pt;
+--kite9-padding-bottom: 200pt;
+--kite9-padding-left: 200pt;
+--kite9-min-width: 50pt;
+--kite9-min-height: 50pt;
+}
+}
+
+*[media="editor"] *[k9-elem="diagram"] {
+--kite9-padding-top: 200pt;
+--kite9-padding-right: 200pt;
+--kite9-padding-bottom: 200pt;
+--kite9-padding-left: 200pt;
+--kite9-min-width: 50pt;
+--kite9-min-height: 50pt;
+}
+
+*[k9-elem].attention {
+stroke: rgb(255, 89, 86);
+stroke-opacity: 1;
+}
+
+svg {
+cursor: pointer;
+}
+
+*#_update {
+overflow: hidden;
+}
+
+*[k9-elem="box"] &gt; *[k9-texture="background"] {
+fill: rgb(204, 204, 170);
+fill-opacity: 1;
+stroke: rgb(170, 170, 136);
+stroke-dasharray: none;
+}
+
+*[k9-texture="foreground"], *[k9-texture="background"] &gt; g &gt; text {
+fill: rgb(36, 51, 20);
+font-family: "metropolis";
+font-size: 50pt;
+}
+
+*[k9-elem="label"] {
+fill: black;
+font-family: "metropolis";
+font-size: 35pt;
+}
+
+*[k9-elem="box"].shaded {
+fill: rgb(170, 85, 0);
+}
+
+*[k9-elem="textarea"].warning {
+fill: rgb(255, 136, 0);
+}
+
+*[k9-elem="votes"] {
+--kite9-type: SVG;
+--kite9-usage: DECAL;
+}
+
+*[k9-elem="votes"] &gt; g &gt; rect.back {
+fill: rgb(122, 164, 127);
+fill-opacity: 0.9;
+stroke: none;
+}
+
+*[k9-elem="votes"] &gt; g &gt; text.count {
+font-size: 16pt;
+fill: white;
+fill-opacity: 1;
+text-anchor: middle;
+dominant-baseline: middle;
+}
+
+*[k9-elem="votes"] &gt; g &gt; text.font-awesome {
+font-size: 16pt;
+font-family: "Font Awesome 5 Free";
+font-weight: 400;
+fill: white;
+fill-opacity: 1;
+text-anchor: middle;
+dominant-baseline: middle;
+}
+
+*[k9-elem="votes"][count="0"] &gt; g &gt; rect.back, *[k9-elem="votes"][count="0"] &gt; g &gt; text.count, *[k9-elem="votes"][count="0"] &gt; g &gt; text.font-awesome {
+fill-opacity: 0;
+stroke-opacity: 0;
+}
+
+*[k9-elem="diagram"][k9-texture="none"] {
+fill: white;
+fill-opacity: 1;
+}
+
+*[k9-texture] {
+font-family: "metropolis";
+font-size: 22pt;
+}
+
+*[k9-texture="artifact"] {
+fill: white;
+fill-opacity: 0.001;
+stroke: none;
+}
+
+*[k9-texture="artifact"] text {
+font-size: 16pt;
+font-weight: 400;
+fill: black;
+text-align: center;
+--kite9-text-bounds-width: 100pt;
+}
+
+*[k9-elem="description"] text {
+font-style: italic;
+font-size: 16pt;
+font-weight: 400;
+--kite9-direction: RIGHT;
+}
+
+*[k9-elem="caption"] {
+text-align: center;
+}
+
+*[k9-elem="label"] {
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+fill: white;
+}
+
+*[k9-elem="arrow"] {
+fill: black;
+fill-opacity: 1;
+}
+
+*[k9-elem="arrow"] &gt; g &gt; *[k9-elem="caption"] &gt; g &gt; text {
+fill: white;
+fill-opacity: 1;
+}
+
+*[k9-elem="from"], *[k9-elem="to"] {
+--kite9-marker-reserve: 8pt;
+}
+
+*[k9-elem="link"] {
+--kite9-link-minimum-length: 30pt;
+}
+
+*[k9-elem="glyph"][k9-texture="background"] &gt; g &gt; rect, *[k9-elem="action"] *[k9-texture="background"] {
+fill: url(#risk-background);
+stroke: black;
+stroke-width: 1pt;
+}
+
+*[k9-elem="action"] &gt; g &gt; *[k9-elem="caption"] &gt; g &gt; text {
+fill-opacity: 1;
+font-size: 16pt;
+font-weight: 400;
+fill: black;
+text-align: center;
+}
+
+*[k9-elem="hidden"], *[k9-elem="mitigated"] {
+fill: white;
+}
+
+*[k9-elem="title"] {
+font-size: 16pt;
+font-weight: 400;
+fill: black;
+text-align: center;
+}
+
+*[k9-elem="code"] {
+font-size: 22pt;
+font-weight: 300;
+fill: black;
+text-align: center;
+}
+
+*[k9-elem="risk"][k9-texture="background"], *[k9-elem="block"][k9-texture="background"] {
+fill: url(#risk-background);
+stroke: black;
+stroke-width: 1pt;
+}
+
+*[k9-elem="container"][k9-texture="background"] {
+fill-opacity: 0.001;
+}
+
+*[k9-elem="planner-cell"], *[k9-elem="planner-header"] {
+stroke: rgb(174, 174, 174);
+stroke-width: 1pt;
+}
+
+*[k9-elem="diagram"].principle {
+fill-opacity: 1;
+fill: rgb(245, 245, 245);
+}
+
+*[k9-elem="container"][k9-texture="background"].principle-top {
+fill: white;
+fill-opacity: 1;
+}
+
+</style>
+      <defs id="links-markers">
+         <marker id="-start-marker" preserveAspectRatio="xMidYMid meet"/>
+         <marker id="-end-marker" preserveAspectRatio="xMidYMid meet"/>
+         <marker refX="1"
+                 refY="3"
+                 orient="auto"
+                 id="strike-start-marker"
+                 markerHeight="6"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="8">
+            <path class="strike-marker" d="         M7,0 L5,6 h-1 L6,0z"/>
+         </marker>
+         <marker refX="7"
+                 refY="3"
+                 orient="auto"
+                 id="strike-end-marker"
+                 markerHeight="6"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="8">
+            <path class="strike-marker" d="         M3,0 L1,6 h-1 L2,0z"/>
+         </marker>
+         <marker refY="3"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerHeight="6"
+                 id="circle-start-marker"
+                 markerWidth="6"
+                 refX="3">
+            <circle r="2" class="circle-marker" cx="3" cy="3"/>
+         </marker>
+         <marker refY="3"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerHeight="6"
+                 id="circle-end-marker"
+                 markerWidth="6"
+                 refX="3">
+            <circle r="2" class="circle-marker" cx="3" cy="3"/>
+         </marker>
+         <marker refX="2"
+                 refY="3"
+                 orient="auto"
+                 id="diamond-start-marker"
+                 markerHeight="6"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="8">
+            <polygon class="diamond-marker" points="1,3 4,1 7,3 4,5"/>
+         </marker>
+         <marker refX="6"
+                 refY="3"
+                 orient="auto"
+                 id="diamond-end-marker"
+                 markerHeight="6"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="8">
+            <polygon class="diamond-marker" points="1,3 4,1 7,3 4,5"/>
+         </marker>
+         <marker refX="5"
+                 refY="3"
+                 orient="auto"
+                 id="open-diamond-start-marker"
+                 markerHeight="6"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="8">
+            <path class="open-diamond-marker"
+                  d="         M0,3 L3,1 L6,3 L5,3 L3,1.66 L1,3             L3,4.33 L5,3 L6,3 L3,5 L0,3"/>
+         </marker>
+         <marker refX="1"
+                 refY="3"
+                 orient="auto"
+                 id="open-diamond-end-marker"
+                 markerHeight="6"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="8">
+            <path class="open-diamond-marker"
+                  d="         M6,3 L3,1 L0,3 L1,3 L3,1.66 L5,3             L3,4.33 L1,3 L0,3 L3,5 L6,3"/>
+         </marker>
+         <marker refX="4"
+                 refY="4"
+                 orient="auto"
+                 id="barbed-arrow-end-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <path class="barbed-arrow-marker" d="M2,2 L6,4 L2,6 L4,4 L2,2"/>
+         </marker>
+         <marker refX="4"
+                 refY="4"
+                 orient="auto"
+                 id="barbed-arrow-start-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <path class="barbed-arrow-marker" d="M6,2 L2,4 L6,6 L4,4 L6,2"/>
+         </marker>
+         <marker refX="1"
+                 refY="4"
+                 orient="auto"
+                 id="open-arrow-end-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <path class="open-arrow-marker"
+                  d="         M6,4 L1,2 L1,3 L4,4 L1,5 L1,6 L6,4         M2,3 h-1 v2 h1z"/>
+         </marker>
+         <marker refX="6"
+                 refY="4"
+                 orient="auto"
+                 id="open-arrow-start-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <path class="open-arrow-marker"
+                  d="         M1,4 L6,2 L6,3 L3,4 L6,5 L6,6 L1,4         M5,3 h1 v2 h-1z"/>
+         </marker>
+         <marker refX="4"
+                 refY="4"
+                 orient="auto"
+                 id="arrow-start-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <polygon class="arrow-marker" points="2,4 6,2 6,6"/>
+         </marker>
+         <marker refX="4"
+                 refY="4"
+                 orient="auto"
+                 id="arrow-end-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <polygon class="arrow-marker" points="6,4 2,2 2,6"/>
+         </marker>
+         <marker refX="5"
+                 refY="4"
+                 orient="auto"
+                 id="crow-end-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <path class="crow-marker"
+                  d="          M1,4 L4,1 l0.66 0.66 L2.3,4z          M1,4 L4,7 l0.66 -0.66 L2.3,4z"/>
+         </marker>
+         <marker refX="1"
+                 refY="4"
+                 orient="auto"
+                 id="crow-start-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <path class="crow-marker"
+                  d="          M5,4 L2,1 l-0.66 0.66 L3.66,4z          M5,4 L2,7 l-0.66 -0.66 L3.66,4z"/>
+         </marker>
+         <marker refX="2"
+                 refY="2"
+                 orient="auto"
+                 id="square-end-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <rect x="0" width="4" height="4" y="0" class="square-marker"/>
+         </marker>
+         <marker refX="2"
+                 refY="2"
+                 orient="auto"
+                 id="square-start-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <rect x="0" width="4" height="4" y="0" class="square-marker"/>
+         </marker>
+      </defs>
+      <defs id="highlight-indicators">
+         <filter xlink:actuate="onLoad"
+                 xlink:type="simple"
+                 id="highlight-visible"
+                 xlink:show="other">
+            <feColorMatrix values="0 0 0 0 .214                 0 0 0 0 .25                 0 0 0 0 1                 0 0 0 1 0 "
+                           type="matrix"/>
+         </filter>
+         <filter xlink:actuate="onLoad"
+                 xlink:type="simple"
+                 id="highlight-invisible"
+                 xlink:show="other">
+            <feColorMatrix values="0 0 0 0 0                 0 0 0 0 0                 0 0 0 0 0                 0 0 0 0 0 "
+                           type="matrix"/>
+         </filter>
+      </defs>
+      <linearGradient x1="0%"
+                      y1="0%"
+                      x2="0%"
+                      y2="100%"
+                      xlink:type="simple"
+                      xlink:actuate="onLoad"
+                      id="risk-background"
+                      xlink:show="other">
+         <stop stop-color="#FFF" offset="0%"/>
+         <stop stop-color="#DDD" offset="100%"/>
+      </linearGradient>
+      <filter xmlns:svg="http://www.w3.org/2000/svg"
+              xlink:type="simple"
+              xlink:actuate="onLoad"
+              height="130%"
+              id="dropshadow"
+              xlink:show="other">
+         <feGaussianBlur stdDeviation="4" in="SourceAlpha"/>
+         <feOffset dx="6" dy="6"/>
+         <feColorMatrix values="             0 0 0 0 0                 0 0 0 0 0                 0 0 0 0 0                 0 0 0 .4 0"
+                        type="matrix"/>
+         <feMerge>
+            <feMergeNode/>
+            <feMergeNode in="SourceGraphic"/>
+         </feMerge>
+      </filter>
+      <script xlink:actuate="onLoad"
+              xlink:type="simple"
+              id="adl:markup"
+              xlink:show="other"
+              type="text/xml;purpose=adl;base64">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPGRpYWdyYW0geG1sbnM9Imh0dHA6Ly93d3cua2l0ZTkub3JnL3NjaGVtYS9hZGwiCiAgICAgICAgIHhtbG5zOnhzbHQ9Imh0dHA6Ly93d3cua2l0ZTkub3JnL3NjaGVtYS94c2x0IgogICAgICAgICBpZD0iZGlhIgogICAgICAgICB4c2x0OnRlbXBsYXRlPSIvcHVibGljL3RlbXBsYXRlcy9yaXNrLWZpcnN0L3Jpc2stZmlyc3QtdGVtcGxhdGUueHNsIj4KICAgIG5hbWU9IkRldmVsb3BtZW50IFByb2Nlc3MgMSIgc3R5bGU9Ii0ta2l0ZTktbGF5b3V0OiByaWdodDsgLS1raXRlOS1taW4td2lkdGg6IDEyMDBweDsgLS1raXRlOS1ob3Jpem9udGFsLWFsaWduOiBjZW50ZXI7ICImZ3Q7CgogICAgPGdyb3VwIHN0eWxlPSItLWtpdGU5LWhvcml6b250YWwtYWxpZ246IGNlbnRlcjsgLS1raXRlOS1zaXppbmc6IG1pbmltaXplOyAtLWtpdGU5LW1hcmdpbi1yaWdodDogMjAwcHg7ICI+CiAgICAgIDxjb250YWluZXIgYm9yZGVyZWQ9InRydWUiIGlkPSJjIj4KICAgICAgICAgPGltYWdlLWFydGlmYWN0IGltZ3NyYz0icG9zdHMvYnVja2V0LnN2ZyI+NWwgQnVja2V0PC9pbWFnZS1hcnRpZmFjdD4KICAgICAgICAgPGxhYmVsIGlkPSJpZF8xNiI+CiAgICAgICAgSWYgaXQgdGFrZXMgb25lIGhvdXIgdG8gZmlsbCBhIDVsIGJ1Y2tldC4uLgogICAgICAgIAogICAgICA8L2xhYmVsPgogICAgICA8L2NvbnRhaW5lcj4KICAgICAgPGdyb3VwPgogICAgICAgICA8YWN0aW9uPkVzdGltYXRpbmc8L2FjdGlvbj4KICAgICAgPC9ncm91cD4KICAgICAgPGNvbnRhaW5lciBpZD0iZCI+CiAgICAgICAgIDxpbWFnZS1hcnRpZmFjdCBpbWdzcmM9InBvc3RzL2J1Y2tldC5zdmciPjIwbCBCdWNrZXQ8L2ltYWdlLWFydGlmYWN0PgogICAgICAgICA8bGFiZWwgaWQ9IjQiPgogICAgICAgICAgSG93IGxvbmcgdG8gZmlsbCBhIDIwbCBCdWNrZXQ/CiAgICAgICAgICAKICAgICAgICA8L2xhYmVsPgogICAgICA8L2NvbnRhaW5lcj4KICAgPC9ncm91cD4KPC9kaWFncmFtPgo=</script>
+   </defs>
+   <g xmlns:xslt="http://www.kite9.org/schema/xslt"
+      k9-contains="connected label"
+      k9-texture="none"
+      k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: diagram; rect-pos: [0.0, 0.0]; rect-size: [1548.0, 372.0]; position: none; painter: direct-svg; "
+      id="dia"
+      k9-format="container"
+      k9-ui="layout label fill size"
+      k9-elem="diagram"
+      xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+      k9-type="diagram">
+      <g class="k9-shape">
+         <rect x="0"
+               y="0"
+               width="1548"
+               pp:y="$y"
+               pp:height="$height"
+               pp:x="$x"
+               rx="0"
+               ry="0"
+               height="372"
+               pp:width="$width"/>
+      </g>
+      <g class="k9-content">
+         <g k9-elem="group"
+            k9-texture="none"
+            style="--kite9-horizontal-align: center; --kite9-sizing: minimize; --kite9-margin-right: 200px; "
+            transform="translate(26.0,26.0)"
+            k9-format="container"
+            k9-info="margin: [26.666667938232422 200.0 26.666667938232422 26.666667938232422]; padding: [0.0 0.0 0.0 0.0]; min-size: [53.333335876464844 53.333335876464844]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: connected; rect-pos: [26.0, 26.0]; rect-size: [1322.0, 320.0]; position: none; painter: direct-svg; ">
+            <g class="k9-shape" k9-highlight="pulse stroke">
+               <rect x="0"
+                     y="0"
+                     width="1322"
+                     pp:y="$y"
+                     pp:height="$height"
+                     pp:x="$x"
+                     rx="10pt"
+                     ry="10pt"
+                     height="320"
+                     pp:width="$width"/>
+            </g>
+            <g class="k9-content">
+               <g k9-contains="connected port label terminator"
+                  transform="translate(20.0,20.0)"
+                  k9-texture="background"
+                  k9-info="margin: [20.0 20.0 20.0 20.0]; padding: [20.0 20.0 20.0 20.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: connected; rect-pos: [46.0, 46.0]; rect-size: [585.0, 280.0]; position: none; painter: direct-svg; "
+                  bordered="true"
+                  id="c"
+                  k9-format="container"
+                  k9-ui="drag delete align connect insert autoconnect layout label fill stroke size align"
+                  k9-elem="container"
+                  k9-type="connected">
+                  <g class="k9-shape" k9-highlight="pulse">
+                     <rect x="0"
+                           y="0"
+                           width="585"
+                           pp:y="$y"
+                           pp:height="$height"
+                           pp:x="$x"
+                           rx="10pt"
+                           ry="10pt"
+                           height="280"
+                           pp:width="$width"/>
+                  </g>
+                  <g class="k9-content">
+                     <g imgsrc="posts/bucket.svg"
+                        k9-elem="image-artifact"
+                        k9-texture="artifact"
+                        transform="translate(220.0,20.0)"
+                        k9-format="text-image-portrait"
+                        k9-info="margin: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [146.6666717529297 186.6666717529297]; sizing: [minimize minimize]; horiz: center; vert: center; layout: vertical; rectangular: connected; rect-pos: [266.0, 66.0]; rect-size: [146.0, 186.0]; position: none; painter: direct-svg; ">
+                        <g class="k9-shape" k9-highlight="pulse">
+                           <rect x="0"
+                                 y="0"
+                                 width="146"
+                                 pp:y="$y"
+                                 pp:height="$height"
+                                 pp:x="$x"
+                                 rx="5pt"
+                                 ry="5pt"
+                                 height="186"
+                                 pp:width="$width"/>
+                        </g>
+                        <g class="k9-content">
+                           <g k9-elem="depiction"
+                              k9-texture="none"
+                              transform="translate(40.0,32.0)"
+                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [306.0, 98.0]; rect-size: [66.0, 66.0]; position: none; painter: direct-svg; ">
+                              <g class="k9-content k9-no-shape" k9-highlight="pulse">
+                                 <image x="0"
+                                        y="0"
+                                        width="50pt"
+                                        xlink:href="data:text/html;base64,PGh0bWw+PGhlYWQ+PHRpdGxlPjQwNDwvdGl0bGU+PGxpbmsgcmVsPSJzdHlsZXNo&#xA;ZWV0IiAgaHJlZj0iL3dlYmphcnMvaGlnaGxpZ2h0anMvOS42LjAvc3R5bGVzL2dp&#xA;dGh1Yi5jc3MiPgo8c2NyaXB0IHNyYz0iL3dlYmphcnMvaGlnaGxpZ2h0anMvOS42&#xA;LjAvaGlnaGxpZ2h0Lm1pbi5qcyI+PC9zY3JpcHQ+CjxzY3JpcHQgc3JjPSIvd2Vi&#xA;amFycy9oaWdobGlnaHRqcy85LjYuMC9sYW5ndWFnZXMveG1sLm1pbi5qcyI+PC9z&#xA;Y3JpcHQ+PGxpbmsgaHJlZj0iL3dlYmphcnMvYm9vdHN0cmFwLzQuMy4xL2Nzcy9i&#xA;b290c3RyYXAubWluLmNzcyIgcmVsPSJzdHlsZXNoZWV0IiAvPjwvaGVhZD48Ym9k&#xA;eT48ZGl2IGNsYXNzPSJjb250YWluZXIiPjxoMT5LaXRlOSBFcnJvciA8c3BhbiBj&#xA;bGFzcz0iYmFkZ2UgYmFkZ2UtZGFuZ2VyIj40MDQ8L3NwYW4+PC9oMT48ZGl2IGNs&#xA;YXNzPSJhbGVydCBhbGVydC1pbmZvIj4vYXBpL3Bvc3RzL2J1Y2tldC5zdmc8L2Rp&#xA;dj48c2NyaXB0PmhsanMuaW5pdEhpZ2hsaWdodGluZ09uTG9hZCgpOzwvc2NyaXB0&#xA;PjwvZGl2PjwvYm9keT48L2h0bWw+"
+                                        xlink:type="simple"
+                                        xlink:actuate="onLoad"
+                                        height="50pt"
+                                        preserveAspectRatio="xMidYMid meet"
+                                        xlink:show="embed"/>
+                                 <rect width="50pt" x="0" height="50pt" y="0"/>
+                              </g>
+                           </g>
+                           <g k9-elem="caption"
+                              k9-texture="foreground"
+                              transform="translate(25.8,148.3)"
+                              k9-format="text-fixed"
+                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [293.0, 185.0]; rect-size: [92.0, 35.0]; position: none; painter: direct-svg; ">
+                              <g class="k9-content k9-no-shape" k9-highlight="pulse">
+                                 <g rendered="true">
+                                    <g>
+                                       <path d="M6.3542 0.2569 Q4.7361 0.2569 3.4444 -0.3611 Q2.1528 -0.9792 1.1944 -2.0694 L2.2847 -3.2847 Q4.1597 -1.2361 6.4236 -1.2361 Q7.4236 -1.2361 8.2083 -1.6597 Q9 -2.0903 9.4375 -2.8333 Q9.875 -3.5833 9.875 -4.5 Q9.875 -5.9097 8.8958 -6.7847 Q7.9167 -7.6597 6.3819 -7.6597 Q4.6319 -7.6597 3.1181 -6.5278 L1.8958 -7.125 L2.1111 -14.6528 L10.7708 -14.6528 L10.7708 -13.0764 L3.7361 -13.0764 L3.5833 -8.1528 Q5.0347 -9.1319 6.7222 -9.1319 Q8.0625 -9.1319 9.1597 -8.5833 Q10.2639 -8.0417 10.9097 -7.0069 Q11.5625 -5.9722 11.5625 -4.5625 Q11.5625 -3.1389 10.8889 -2.0347 Q10.2153 -0.9375 9.0278 -0.3403 Q7.8472 0.2569 6.3542 0.2569 ZM14.3967 -14.9097 L16.0009 -14.9097 L16.0009 0 L14.3967 0 L14.3967 -14.9097 ZM25.815 -14.6528 L32.5303 -14.6528 Q33.7039 -14.6528 34.6206 -14.1806 Q35.5442 -13.7153 36.0511 -12.8819 Q36.565 -12.0556 36.565 -11.0069 Q36.565 -9.8958 36.0442 -9.1458 Q35.5233 -8.4028 34.4747 -7.7847 Q35.7525 -7.1458 36.4469 -6.1736 Q37.1414 -5.2083 37.1414 -4.0139 Q37.1414 -2.8611 36.5858 -1.9375 Q36.0303 -1.0208 35.0372 -0.5069 Q34.0511 0 32.7872 0 L25.815 0 L25.815 -14.6528 ZM32.1067 -8.4514 Q33.3219 -8.4514 34.0997 -9.1111 Q34.8775 -9.7708 34.8775 -10.7917 Q34.8775 -11.8194 34.0997 -12.4792 Q33.3219 -13.1389 32.1067 -13.1389 L27.4747 -13.1389 L27.4747 -8.4514 L32.1067 -8.4514 ZM32.3636 -1.5139 Q33.7247 -1.5139 34.5858 -2.2708 Q35.4539 -3.0278 35.4539 -4.2222 Q35.4539 -5.4167 34.5858 -6.1736 Q33.7247 -6.9306 32.3636 -6.9306 L27.4747 -6.9306 L27.4747 -1.5139 L32.3636 -1.5139 ZM49.3435 -11.0278 L49.3435 0 L47.7463 0 L47.7463 -1.7708 Q47.2532 -0.875 46.2602 -0.3056 Q45.2671 0.2569 44.1144 0.2569 Q42.9199 0.2569 41.9685 -0.2847 Q41.0241 -0.8333 40.4963 -1.7986 Q39.9755 -2.7708 39.9755 -4.0139 L39.9755 -11.0278 L41.5796 -11.0278 L41.5796 -4.2222 Q41.5796 -2.8819 42.3435 -2.0278 Q43.1144 -1.1736 44.3296 -1.1736 Q45.2463 -1.1736 46.0241 -1.5556 Q46.8088 -1.9444 47.2741 -2.6042 Q47.7463 -3.2639 47.7463 -4.0139 L47.7463 -11.0278 L49.3435 -11.0278 ZM57.7298 0.2569 Q56.2159 0.2569 54.8896 -0.5278 Q53.5701 -1.3194 52.7854 -2.6528 Q52.0076 -3.9861 52.0076 -5.5278 Q52.0076 -7.0625 52.7854 -8.3819 Q53.5701 -9.7083 54.8896 -10.4931 Q56.2159 -11.2847 57.7298 -11.2847 Q58.834 -11.2847 59.8479 -10.8542 Q60.8618 -10.4306 61.6534 -9.6667 L60.5423 -8.5764 Q59.9868 -9.1736 59.2576 -9.5139 Q58.5354 -9.8542 57.7298 -9.8542 Q56.6396 -9.8542 55.709 -9.2639 Q54.7854 -8.6806 54.2368 -7.6806 Q53.6951 -6.6806 53.6951 -5.5278 Q53.6951 -4.3542 54.2368 -3.3611 Q54.7854 -2.3681 55.709 -1.7708 Q56.6396 -1.1736 57.7298 -1.1736 Q58.5354 -1.1736 59.2854 -1.5208 Q60.0354 -1.875 60.6048 -2.5139 L61.7159 -1.4306 Q60.9312 -0.6389 59.8965 -0.1875 Q58.8618 0.2569 57.7298 0.2569 ZM68.862 -5.9722 L73.5564 0 L71.5495 0 L67.73 -4.8819 L65.7509 -2.9236 L65.7509 0 L64.1467 0 L64.1467 -14.9097 L65.7509 -14.9097 L65.7509 -4.9306 L71.7856 -11.0278 L73.8342 -11.0278 L68.862 -5.9722 ZM80.7238 -1.1736 Q81.7099 -1.1736 82.696 -1.5556 Q83.689 -1.9444 84.2029 -2.4931 L85.1821 -1.4514 Q84.4807 -0.6806 83.2099 -0.2083 Q81.939 0.2569 80.7446 0.2569 Q79.2724 0.2569 77.9946 -0.4861 Q76.7168 -1.2361 75.9321 -2.5694 Q75.1543 -3.9028 75.1543 -5.5486 Q75.1543 -7.1458 75.8904 -8.4653 Q76.6265 -9.7917 77.8765 -10.5347 Q79.1265 -11.2847 80.5988 -11.2847 Q83.071 -11.2847 84.446 -9.5556 Q85.821 -7.8264 85.821 -4.9097 L76.8002 -4.9097 Q76.9738 -3.2639 78.0502 -2.2153 Q79.1265 -1.1736 80.7238 -1.1736 ZM80.6613 -9.8542 Q79.1682 -9.8542 78.0988 -8.8819 Q77.0363 -7.9167 76.821 -6.3333 L84.2446 -6.3333 Q84.0779 -7.9167 83.1543 -8.8819 Q82.2377 -9.8542 80.6613 -9.8542 ZM94.0769 -0.4514 Q93.181 0.2569 92.0352 0.2569 Q90.8616 0.2569 90.0977 -0.5278 Q89.3407 -1.3194 89.3407 -2.5625 L89.3407 -9.5972 L87.6185 -9.5972 L87.6185 -11.0278 L89.3407 -11.0278 L89.3407 -14.0556 L90.9449 -14.0556 L90.9449 -11.0278 L93.6532 -11.0278 L93.6532 -9.5972 L90.9449 -9.5972 L90.9449 -2.5625 Q90.9449 -1.9653 91.2921 -1.5694 Q91.6463 -1.1736 92.1394 -1.1736 Q92.5005 -1.1736 92.7991 -1.2986 Q93.0977 -1.4306 93.2921 -1.6181 L94.0769 -0.4514 Z"
+                                             stroke="none"/>
+                                    </g>
+                                 </g>
+                              </g>
+                           </g>
+                        </g>
+                     </g>
+                     <g k9-contains="none"
+                        transform="translate(20.0,219.0)"
+                        k9-texture="none"
+                        k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: label; rect-pos: [66.0, 265.0]; rect-size: [545.0, 61.0]; position: none; placement: down;painter: direct-svg; "
+                        id="id_16"
+                        k9-format="text-shape-inline"
+                        k9-ui="delete edit xml drag place fill stroke size font direction align"
+                        k9-elem="label"
+                        k9-type="label">
+                        <g class="k9-shape" k9-highlight="pulse">
+                           <rect x="0"
+                                 y="0"
+                                 width="545"
+                                 pp:y="$y"
+                                 pp:height="$height"
+                                 pp:x="$x"
+                                 rx="5pt"
+                                 ry="5pt"
+                                 height="61"
+                                 pp:width="$width"/>
+                        </g>
+                        <g class="k9-content">
+                           <g k9-elem="caption"
+                              k9-texture="foreground"
+                              transform="translate(10.7,42.3)"
+                              k9-format="text-fixed"
+                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [79.0, 278.0]; rect-size: [519.0, 35.0]; position: none; painter: direct-svg; ">
+                              <g class="k9-content k9-no-shape" k9-highlight="pulse">
+                                 <g rendered="true">
+                                    <g fill="rgb(36,51,20)" stroke="rgb(36,51,20)">
+                                       <path d="M2.3203 -20.1476 L4.6024 -20.1476 L4.6024 0 L2.3203 0 L2.3203 -20.1476 ZM12.585 -15.1632 L16.309 -15.1632 L16.309 -13.1962 L12.585 -13.1962 L12.585 0 L10.3793 0 L10.3793 -13.1962 L8.0112 -13.1962 L8.0112 -15.1632 L10.3793 -15.1632 L10.3793 -17.2448 Q10.3793 -18.954 11.4201 -20.033 Q12.4704 -21.1215 14.0841 -21.1215 Q15.6597 -21.1215 16.8914 -20.1476 L15.8124 -18.5434 Q15.5451 -18.8012 15.1345 -18.9731 Q14.7239 -19.1545 14.2274 -19.1545 Q13.5494 -19.1545 13.0624 -18.6102 Q12.585 -18.066 12.585 -17.2448 L12.585 -15.1632 ZM29.0388 -17.9227 Q28.4276 -17.9227 27.998 -18.362 Q27.5778 -18.8012 27.5778 -19.3932 Q27.5778 -19.9757 27.998 -20.3958 Q28.4276 -20.8255 29.0388 -20.8255 Q29.6308 -20.8255 30.0509 -20.3958 Q30.4806 -19.9757 30.4806 -19.3932 Q30.4806 -18.8012 30.0509 -18.362 Q29.6308 -17.9227 29.0388 -17.9227 ZM27.9216 -15.1632 L30.1273 -15.1632 L30.1273 0 L27.9216 0 L27.9216 -15.1632 ZM42.2941 -0.6207 Q41.0624 0.3533 39.4869 0.3533 Q37.8731 0.3533 36.8228 -0.7257 Q35.782 -1.8142 35.782 -3.5234 L35.782 -13.1962 L33.4139 -13.1962 L33.4139 -15.1632 L35.782 -15.1632 L35.782 -19.3264 L37.9877 -19.3264 L37.9877 -15.1632 L41.7117 -15.1632 L41.7117 -13.1962 L37.9877 -13.1962 L37.9877 -3.5234 Q37.9877 -2.7023 38.4651 -2.158 Q38.9521 -1.6137 39.6301 -1.6137 Q40.1266 -1.6137 40.5372 -1.7856 Q40.9478 -1.967 41.2151 -2.2248 L42.2941 -0.6207 ZM61.6542 -0.6207 Q60.4224 0.3533 58.8469 0.3533 Q57.2332 0.3533 56.1828 -0.7257 Q55.142 -1.8142 55.142 -3.5234 L55.142 -13.1962 L52.774 -13.1962 L52.774 -15.1632 L55.142 -15.1632 L55.142 -19.3264 L57.3478 -19.3264 L57.3478 -15.1632 L61.0717 -15.1632 L61.0717 -13.1962 L57.3478 -13.1962 L57.3478 -3.5234 Q57.3478 -2.7023 57.8252 -2.158 Q58.3122 -1.6137 58.9901 -1.6137 Q59.4867 -1.6137 59.8972 -1.7856 Q60.3078 -1.967 60.5752 -2.2248 L61.6542 -0.6207 ZM70.932 -15.5165 Q73.9494 -15.5165 75.5154 -13.7977 Q77.0909 -12.0885 77.0909 -9.2431 L77.0909 0 L74.8851 0 L74.8851 -2.3776 Q74.0926 -1.0885 72.6126 -0.3628 Q71.1325 0.3533 69.5475 0.3533 Q67.1126 0.3533 65.5562 -0.9644 Q64.0093 -2.2917 64.0093 -4.4878 Q64.0093 -5.9583 64.8114 -7.1137 Q65.623 -8.2691 66.9789 -8.8993 Q68.3444 -9.5295 69.9581 -9.5295 Q72.2497 -9.5295 74.8851 -8.6797 L74.8851 -9.2431 Q74.8851 -11.0859 73.9494 -12.3559 Q73.0136 -13.6354 70.7792 -13.6354 Q69.7575 -13.6354 68.6786 -13.2726 Q67.6091 -12.9097 66.3487 -12.2604 L65.4702 -14.046 Q68.4016 -15.5165 70.932 -15.5165 ZM69.9294 -1.5851 Q71.5718 -1.5851 73.0232 -2.4158 Q74.4746 -3.2561 74.8851 -4.7552 L74.8851 -7.066 Q72.6603 -7.6866 70.3114 -7.6866 Q68.5831 -7.6866 67.3608 -6.8082 Q66.1482 -5.9297 66.1482 -4.5738 Q66.1482 -3.1988 67.2176 -2.3872 Q68.2871 -1.5851 69.9294 -1.5851 ZM88.0265 -8.2118 L94.4814 0 L91.7218 0 L86.4701 -6.7127 L83.7487 -4.02 L83.7487 0 L81.543 0 L81.543 -20.5009 L83.7487 -20.5009 L83.7487 -6.7795 L92.0465 -15.1632 L94.8633 -15.1632 L88.0265 -8.2118 ZM104.3365 -1.6137 Q105.6924 -1.6137 107.0483 -2.1389 Q108.4137 -2.6736 109.1204 -3.428 L110.4667 -1.9957 Q109.5023 -0.9358 107.7549 -0.2865 Q106.0075 0.3533 104.3651 0.3533 Q102.3408 0.3533 100.5839 -0.6684 Q98.827 -1.6997 97.748 -3.533 Q96.6785 -5.3663 96.6785 -7.6293 Q96.6785 -9.8255 97.6907 -11.6398 Q98.7028 -13.4635 100.4216 -14.4852 Q102.1403 -15.5165 104.1646 -15.5165 Q107.5639 -15.5165 109.4546 -13.1389 Q111.3452 -10.7613 111.3452 -6.7509 L98.9415 -6.7509 Q99.1802 -4.4878 100.6603 -3.046 Q102.1403 -1.6137 104.3365 -1.6137 ZM104.2506 -13.5495 Q102.1976 -13.5495 100.7271 -12.2127 Q99.2662 -10.8854 98.9702 -8.7083 L109.1776 -8.7083 Q108.9485 -10.8854 107.6785 -12.2127 Q106.4181 -13.5495 104.2506 -13.5495 ZM120.3289 0.3533 Q118.7152 0.3533 117.0538 -0.2292 Q115.4018 -0.8212 114.0459 -1.9097 L115.1918 -3.5234 Q117.7985 -1.6137 120.3289 -1.6137 Q121.8185 -1.6137 122.7447 -2.2535 Q123.6709 -2.9028 123.6709 -3.9913 Q123.6709 -4.7552 123.1649 -5.2613 Q122.6683 -5.7769 121.9235 -6.0729 Q121.1788 -6.3689 119.8515 -6.7509 Q117.0729 -7.5434 115.927 -8.4887 Q114.7812 -9.4436 114.7812 -11.0573 Q114.7812 -13.0816 116.2708 -14.2943 Q117.7699 -15.5165 120.0902 -15.5165 Q121.4652 -15.5165 122.8689 -15.0582 Q124.2821 -14.6094 125.5138 -13.8168 L124.4635 -12.1172 Q122.2005 -13.5495 120.0902 -13.5495 Q118.7439 -13.5495 117.8558 -12.9575 Q116.9774 -12.375 116.9774 -11.3247 Q116.9774 -10.6753 117.3593 -10.2648 Q117.7413 -9.8542 118.5051 -9.5295 Q119.269 -9.2144 120.9114 -8.6797 Q122.5251 -8.1832 123.5182 -7.7153 Q124.5208 -7.2474 125.1892 -6.4071 Q125.8671 -5.5764 125.8671 -4.2205 Q125.8671 -2.1675 124.3011 -0.9071 Q122.7352 0.3533 120.3289 0.3533 ZM145.056 0.3533 Q142.9744 0.3533 141.1506 -0.7257 Q139.3364 -1.8142 138.2574 -3.6476 Q137.1879 -5.4809 137.1879 -7.6007 Q137.1879 -9.7109 138.2574 -11.5252 Q139.3364 -13.349 141.1506 -14.428 Q142.9744 -15.5165 145.056 -15.5165 Q147.1376 -15.5165 148.9423 -14.428 Q150.747 -13.349 151.8164 -11.5252 Q152.8858 -9.7109 152.8858 -7.6007 Q152.8858 -5.4809 151.8164 -3.6476 Q150.747 -1.8142 148.9423 -0.7257 Q147.1376 0.3533 145.056 0.3533 ZM145.056 -1.6137 Q146.5169 -1.6137 147.7964 -2.4349 Q149.076 -3.2561 149.8207 -4.6215 Q150.5655 -5.987 150.5655 -7.6007 Q150.5655 -9.1858 149.8207 -10.5608 Q149.076 -11.9358 147.7964 -12.7378 Q146.5169 -13.5495 145.056 -13.5495 Q143.5569 -13.5495 142.2773 -12.7378 Q141.0074 -11.9358 140.253 -10.5608 Q139.5082 -9.1858 139.5082 -7.6007 Q139.5082 -5.987 140.253 -4.6215 Q141.0074 -3.2561 142.2773 -2.4349 Q143.5569 -1.6137 145.056 -1.6137 ZM163.7372 -15.5165 Q165.3796 -15.5165 166.6878 -14.7622 Q167.9959 -14.0174 168.7121 -12.6806 Q169.4282 -11.3533 169.4282 -9.6536 L169.4282 0 L167.232 0 L167.232 -9.3576 Q167.232 -11.2101 166.1721 -12.375 Q165.1218 -13.5495 163.4412 -13.5495 Q162.1808 -13.5495 161.1114 -13.0243 Q160.0419 -12.4991 159.3926 -11.5825 Q158.7529 -10.6753 158.7529 -9.6536 L158.7529 0 L156.5567 0 L156.5567 -15.1632 L158.7529 -15.1632 L158.7529 -12.7283 Q159.4308 -13.9601 160.7867 -14.7335 Q162.1522 -15.5165 163.7372 -15.5165 ZM180.7207 -1.6137 Q182.0766 -1.6137 183.4325 -2.1389 Q184.7979 -2.6736 185.5045 -3.428 L186.8509 -1.9957 Q185.8865 -0.9358 184.1391 -0.2865 Q182.3917 0.3533 180.7493 0.3533 Q178.725 0.3533 176.968 -0.6684 Q175.2111 -1.6997 174.1321 -3.533 Q173.0627 -5.3663 173.0627 -7.6293 Q173.0627 -9.8255 174.0748 -11.6398 Q175.087 -13.4635 176.8057 -14.4852 Q178.5245 -15.5165 180.5488 -15.5165 Q183.9481 -15.5165 185.8387 -13.1389 Q187.7293 -10.7613 187.7293 -6.7509 L175.3257 -6.7509 Q175.5644 -4.4878 177.0444 -3.046 Q178.5245 -1.6137 180.7207 -1.6137 ZM180.6347 -13.5495 Q178.5818 -13.5495 177.1113 -12.2127 Q175.6503 -10.8854 175.3543 -8.7083 L185.5618 -8.7083 Q185.3326 -10.8854 184.0627 -12.2127 Q182.8023 -13.5495 180.6347 -13.5495 ZM207.0626 -15.5165 Q208.705 -15.5165 210.0132 -14.7622 Q211.3213 -14.0174 212.0375 -12.6806 Q212.7536 -11.3533 212.7536 -9.6536 L212.7536 0 L210.5574 0 L210.5574 -9.3576 Q210.5574 -11.2101 209.4975 -12.375 Q208.4472 -13.5495 206.7666 -13.5495 Q205.5062 -13.5495 204.4368 -13.0243 Q203.3673 -12.4991 202.718 -11.5825 Q202.0783 -10.6753 202.0783 -9.6536 L202.0783 0 L199.8821 0 L199.8821 -20.5009 L202.0783 -20.5009 L202.0783 -12.7283 Q202.7562 -13.9601 204.1121 -14.7335 Q205.4776 -15.5165 207.0626 -15.5165 ZM224.2561 0.3533 Q222.1746 0.3533 220.3508 -0.7257 Q218.5365 -1.8142 217.4575 -3.6476 Q216.3881 -5.4809 216.3881 -7.6007 Q216.3881 -9.7109 217.4575 -11.5252 Q218.5365 -13.349 220.3508 -14.428 Q222.1746 -15.5165 224.2561 -15.5165 Q226.3378 -15.5165 228.1424 -14.428 Q229.9471 -13.349 231.0166 -11.5252 Q232.086 -9.7109 232.086 -7.6007 Q232.086 -5.4809 231.0166 -3.6476 Q229.9471 -1.8142 228.1424 -0.7257 Q226.3378 0.3533 224.2561 0.3533 ZM224.2561 -1.6137 Q225.7171 -1.6137 226.9966 -2.4349 Q228.2761 -3.2561 229.0209 -4.6215 Q229.7657 -5.987 229.7657 -7.6007 Q229.7657 -9.1858 229.0209 -10.5608 Q228.2761 -11.9358 226.9966 -12.7378 Q225.7171 -13.5495 224.2561 -13.5495 Q222.757 -13.5495 221.4775 -12.7378 Q220.2075 -11.9358 219.4532 -10.5608 Q218.7084 -9.1858 218.7084 -7.6007 Q218.7084 -5.987 219.4532 -4.6215 Q220.2075 -3.2561 221.4775 -2.4349 Q222.757 -1.6137 224.2561 -1.6137 ZM248.5997 -15.1632 L248.5997 0 L246.4035 0 L246.4035 -2.4349 Q245.7256 -1.2031 244.3601 -0.4201 Q242.9947 0.3533 241.4096 0.3533 Q239.7673 0.3533 238.4591 -0.3915 Q237.1605 -1.1458 236.4348 -2.4731 Q235.7186 -3.8099 235.7186 -5.5191 L235.7186 -15.1632 L237.9244 -15.1632 L237.9244 -5.8056 Q237.9244 -3.9627 238.9747 -2.7882 Q240.0346 -1.6137 241.7056 -1.6137 Q242.966 -1.6137 244.0355 -2.1389 Q245.1145 -2.6736 245.7542 -3.5807 Q246.4035 -4.4878 246.4035 -5.5191 L246.4035 -15.1632 L248.5997 -15.1632 ZM255.4902 -12.2031 Q256.1682 -13.7309 257.7246 -14.6189 Q259.2811 -15.5165 261.3626 -15.5165 L261.3626 -13.5495 Q259.663 -13.5495 258.3262 -12.9002 Q256.9894 -12.2604 256.235 -11.0955 Q255.4902 -9.9401 255.4902 -8.4792 L255.4902 0 L253.2941 0 L253.2941 -15.1632 L255.4902 -15.1632 L255.4902 -12.2031 ZM280.6573 -0.6207 Q279.4255 0.3533 277.85 0.3533 Q276.2363 0.3533 275.1859 -0.7257 Q274.1451 -1.8142 274.1451 -3.5234 L274.1451 -13.1962 L271.7771 -13.1962 L271.7771 -15.1632 L274.1451 -15.1632 L274.1451 -19.3264 L276.3509 -19.3264 L276.3509 -15.1632 L280.0748 -15.1632 L280.0748 -13.1962 L276.3509 -13.1962 L276.3509 -3.5234 Q276.3509 -2.7023 276.8283 -2.158 Q277.3153 -1.6137 277.9932 -1.6137 Q278.4897 -1.6137 278.9003 -1.7856 Q279.3109 -1.967 279.5783 -2.2248 L280.6573 -0.6207 ZM290.8136 0.3533 Q288.732 0.3533 286.9082 -0.7257 Q285.094 -1.8142 284.015 -3.6476 Q282.9456 -5.4809 282.9456 -7.6007 Q282.9456 -9.7109 284.015 -11.5252 Q285.094 -13.349 286.9082 -14.428 Q288.732 -15.5165 290.8136 -15.5165 Q292.8952 -15.5165 294.6999 -14.428 Q296.5046 -13.349 297.574 -11.5252 Q298.6435 -9.7109 298.6435 -7.6007 Q298.6435 -5.4809 297.574 -3.6476 Q296.5046 -1.8142 294.6999 -0.7257 Q292.8952 0.3533 290.8136 0.3533 ZM290.8136 -1.6137 Q292.2745 -1.6137 293.554 -2.4349 Q294.8336 -3.2561 295.5784 -4.6215 Q296.3232 -5.987 296.3232 -7.6007 Q296.3232 -9.1858 295.5784 -10.5608 Q294.8336 -11.9358 293.554 -12.7378 Q292.2745 -13.5495 290.8136 -13.5495 Q289.3145 -13.5495 288.0349 -12.7378 Q286.765 -11.9358 286.0107 -10.5608 Q285.2659 -9.1858 285.2659 -7.6007 Q285.2659 -5.987 286.0107 -4.6215 Q286.765 -3.2561 288.0349 -2.4349 Q289.3145 -1.6137 290.8136 -1.6137 ZM314.2203 -15.1632 L317.9442 -15.1632 L317.9442 -13.1962 L314.2203 -13.1962 L314.2203 0 L312.0146 0 L312.0146 -13.1962 L309.6465 -13.1962 L309.6465 -15.1632 L312.0146 -15.1632 L312.0146 -17.2448 Q312.0146 -18.954 313.0554 -20.033 Q314.1057 -21.1215 315.7194 -21.1215 Q317.2949 -21.1215 318.5267 -20.1476 L317.4477 -18.5434 Q317.1804 -18.8012 316.7697 -18.9731 Q316.3592 -19.1545 315.8626 -19.1545 Q315.1847 -19.1545 314.6977 -18.6102 Q314.2203 -18.066 314.2203 -17.2448 L314.2203 -15.1632 ZM322.1673 -17.9227 Q321.5562 -17.9227 321.1266 -18.362 Q320.7064 -18.8012 320.7064 -19.3932 Q320.7064 -19.9757 321.1266 -20.3958 Q321.5562 -20.8255 322.1673 -20.8255 Q322.7594 -20.8255 323.1795 -20.3958 Q323.6092 -19.9757 323.6092 -19.3932 Q323.6092 -18.8012 323.1795 -18.362 Q322.7594 -17.9227 322.1673 -17.9227 ZM321.0501 -15.1632 L323.2559 -15.1632 L323.2559 0 L321.0501 0 L321.0501 -15.1632 ZM327.6788 -20.5009 L329.8845 -20.5009 L329.8845 0 L327.6788 0 L327.6788 -20.5009 ZM334.3375 -20.5009 L336.5432 -20.5009 L336.5432 0 L334.3375 0 L334.3375 -20.5009 ZM355.6712 -15.5165 Q358.6886 -15.5165 360.2545 -13.7977 Q361.8301 -12.0885 361.8301 -9.2431 L361.8301 0 L359.6243 0 L359.6243 -2.3776 Q358.8318 -1.0885 357.3518 -0.3628 Q355.8717 0.3533 354.2867 0.3533 Q351.8518 0.3533 350.2953 -0.9644 Q348.7485 -2.2917 348.7485 -4.4878 Q348.7485 -5.9583 349.5506 -7.1137 Q350.3622 -8.2691 351.7181 -8.8993 Q353.0835 -9.5295 354.6973 -9.5295 Q356.9889 -9.5295 359.6243 -8.6797 L359.6243 -9.2431 Q359.6243 -11.0859 358.6886 -12.3559 Q357.7528 -13.6354 355.5184 -13.6354 Q354.4967 -13.6354 353.4178 -13.2726 Q352.3483 -12.9097 351.0879 -12.2604 L350.2094 -14.046 Q353.1408 -15.5165 355.6712 -15.5165 ZM354.6686 -1.5851 Q356.311 -1.5851 357.7624 -2.4158 Q359.2137 -3.2561 359.6243 -4.7552 L359.6243 -7.066 Q357.3995 -7.6866 355.0506 -7.6866 Q353.3223 -7.6866 352.1 -6.8082 Q350.8874 -5.9297 350.8874 -4.5738 Q350.8874 -3.1988 351.9568 -2.3872 Q353.0262 -1.5851 354.6686 -1.5851 ZM381.3297 0.3533 Q379.1048 0.3533 377.3288 -0.4965 Q375.5528 -1.3464 374.235 -2.8455 L375.7342 -4.5165 Q378.3123 -1.6997 381.4251 -1.6997 Q382.8001 -1.6997 383.8792 -2.2821 Q384.9677 -2.8741 385.5692 -3.8958 Q386.1708 -4.9271 386.1708 -6.1875 Q386.1708 -8.1259 384.8245 -9.329 Q383.4781 -10.5321 381.3679 -10.5321 Q378.9616 -10.5321 376.88 -8.9757 L375.1995 -9.7969 L375.4955 -20.1476 L387.4026 -20.1476 L387.4026 -17.98 L377.7298 -17.98 L377.5198 -11.2101 Q379.5154 -12.5564 381.8357 -12.5564 Q383.6786 -12.5564 385.1873 -11.8021 Q386.7055 -11.0573 387.5935 -9.6345 Q388.4911 -8.2118 388.4911 -6.2734 Q388.4911 -4.316 387.5649 -2.7977 Q386.6387 -1.2891 385.0059 -0.4679 Q383.3826 0.3533 381.3297 0.3533 ZM392.3882 -20.5009 L394.5939 -20.5009 L394.5939 0 L392.3882 0 L392.3882 -20.5009 ZM415.4789 -15.5165 Q417.4459 -15.5165 419.0405 -14.5043 Q420.6447 -13.4922 421.5518 -11.6875 Q422.459 -9.8828 422.459 -7.6007 Q422.459 -5.309 421.5518 -3.4852 Q420.6447 -1.671 419.0405 -0.6589 Q417.4459 0.3533 415.4789 0.3533 Q413.6933 0.3533 412.2706 -0.4774 Q410.8478 -1.3177 409.9598 -2.8455 L409.9598 0 L407.7636 0 L407.7636 -20.5009 L409.9598 -20.5009 L409.9598 -12.3177 Q410.8478 -13.8455 412.2706 -14.6762 Q413.6933 -15.5165 415.4789 -15.5165 ZM415.0683 -1.6137 Q416.5388 -1.6137 417.6942 -2.3776 Q418.8496 -3.1415 419.4893 -4.4974 Q420.1386 -5.8628 420.1386 -7.6007 Q420.1386 -9.329 419.4893 -10.6753 Q418.8496 -12.0312 417.6942 -12.7856 Q416.5388 -13.5495 415.0683 -13.5495 Q413.5978 -13.5495 412.4233 -12.7856 Q411.2584 -12.0312 410.6091 -10.6753 Q409.9598 -9.329 409.9598 -7.6007 Q409.9598 -5.8628 410.6091 -4.4974 Q411.2584 -3.1415 412.4233 -2.3776 Q413.5978 -1.6137 415.0683 -1.6137 ZM439.1494 -15.1632 L439.1494 0 L436.9532 0 L436.9532 -2.4349 Q436.2752 -1.2031 434.9098 -0.4201 Q433.5443 0.3533 431.9593 0.3533 Q430.3169 0.3533 429.0087 -0.3915 Q427.7101 -1.1458 426.9844 -2.4731 Q426.2683 -3.8099 426.2683 -5.5191 L426.2683 -15.1632 L428.474 -15.1632 L428.474 -5.8056 Q428.474 -3.9627 429.5244 -2.7882 Q430.5843 -1.6137 432.2552 -1.6137 Q433.5157 -1.6137 434.5851 -2.1389 Q435.6641 -2.6736 436.3039 -3.5807 Q436.9532 -4.4878 436.9532 -5.5191 L436.9532 -15.1632 L439.1494 -15.1632 ZM450.6805 0.3533 Q448.5989 0.3533 446.7752 -0.7257 Q444.9609 -1.8142 443.8819 -3.6476 Q442.8125 -5.4809 442.8125 -7.6007 Q442.8125 -9.7109 443.8819 -11.5252 Q444.9609 -13.349 446.7752 -14.428 Q448.5989 -15.5165 450.6805 -15.5165 Q452.1988 -15.5165 453.5929 -14.9245 Q454.987 -14.342 456.0755 -13.2917 L454.5477 -11.7925 Q453.7838 -12.6137 452.7812 -13.0816 Q451.7882 -13.5495 450.6805 -13.5495 Q449.1814 -13.5495 447.9019 -12.7378 Q446.6319 -11.9358 445.8776 -10.5608 Q445.1328 -9.1858 445.1328 -7.6007 Q445.1328 -5.987 445.8776 -4.6215 Q446.6319 -3.2561 447.9019 -2.4349 Q449.1814 -1.6137 450.6805 -1.6137 Q451.7882 -1.6137 452.8194 -2.0911 Q453.8507 -2.5781 454.6337 -3.4566 L456.1614 -1.967 Q455.0825 -0.8785 453.6597 -0.2578 Q452.237 0.3533 450.6805 0.3533 ZM465.9872 -8.2118 L472.4421 0 L469.6826 0 L464.4308 -6.7127 L461.7095 -4.02 L461.7095 0 L459.5037 0 L459.5037 -20.5009 L461.7095 -20.5009 L461.7095 -6.7795 L470.0072 -15.1632 L472.824 -15.1632 L465.9872 -8.2118 ZM482.2972 -1.6137 Q483.6531 -1.6137 485.009 -2.1389 Q486.3745 -2.6736 487.0811 -3.428 L488.4274 -1.9957 Q487.463 -0.9358 485.7156 -0.2865 Q483.9682 0.3533 482.3258 0.3533 Q480.3015 0.3533 478.5446 -0.6684 Q476.7877 -1.6997 475.7086 -3.533 Q474.6392 -5.3663 474.6392 -7.6293 Q474.6392 -9.8255 475.6514 -11.6398 Q476.6635 -13.4635 478.3823 -14.4852 Q480.101 -15.5165 482.1253 -15.5165 Q485.5246 -15.5165 487.4153 -13.1389 Q489.3059 -10.7613 489.3059 -6.7509 L476.9022 -6.7509 Q477.141 -4.4878 478.621 -3.046 Q480.101 -1.6137 482.2972 -1.6137 ZM482.2113 -13.5495 Q480.1583 -13.5495 478.6878 -12.2127 Q477.2269 -10.8854 476.9309 -8.7083 L487.1383 -8.7083 Q486.9092 -10.8854 485.6392 -12.2127 Q484.3788 -13.5495 482.2113 -13.5495 ZM500.6577 -0.6207 Q499.4259 0.3533 497.8504 0.3533 Q496.2367 0.3533 495.1863 -0.7257 Q494.1455 -1.8142 494.1455 -3.5234 L494.1455 -13.1962 L491.7775 -13.1962 L491.7775 -15.1632 L494.1455 -15.1632 L494.1455 -19.3264 L496.3513 -19.3264 L496.3513 -15.1632 L500.0752 -15.1632 L500.0752 -13.1962 L496.3513 -13.1962 L496.3513 -3.5234 Q496.3513 -2.7023 496.8287 -2.158 Q497.3157 -1.6137 497.9936 -1.6137 Q498.4901 -1.6137 498.9007 -1.7856 Q499.3113 -1.967 499.5787 -2.2248 L500.6577 -0.6207 ZM505.2949 0.3533 Q504.6265 0.3533 504.149 -0.1146 Q503.6812 -0.5825 503.6812 -1.2604 Q503.6812 -1.8811 504.149 -2.349 Q504.6265 -2.8168 505.2949 -2.8168 Q505.9442 -2.8168 506.393 -2.349 Q506.8513 -1.8811 506.8513 -1.2604 Q506.8513 -0.5825 506.393 -0.1146 Q505.9442 0.3533 505.2949 0.3533 ZM512.7162 0.3533 Q512.0479 0.3533 511.5704 -0.1146 Q511.1025 -0.5825 511.1025 -1.2604 Q511.1025 -1.8811 511.5704 -2.349 Q512.0479 -2.8168 512.7162 -2.8168 Q513.3655 -2.8168 513.8143 -2.349 Q514.2726 -1.8811 514.2726 -1.2604 Q514.2726 -0.5825 513.8143 -0.1146 Q513.3655 0.3533 512.7162 0.3533 ZM520.1376 0.3533 Q519.4692 0.3533 518.9918 -0.1146 Q518.5239 -0.5825 518.5239 -1.2604 Q518.5239 -1.8811 518.9918 -2.349 Q519.4692 -2.8168 520.1376 -2.8168 Q520.7869 -2.8168 521.2357 -2.349 Q521.694 -1.8811 521.694 -1.2604 Q521.694 -0.5825 521.2357 -0.1146 Q520.7869 0.3533 520.1376 0.3533 Z"
+                                             stroke="none"/>
+                                    </g>
+                                 </g>
+                              </g>
+                           </g>
+                        </g>
+                     </g>
+                  </g>
+               </g>
+               <g k9-elem="group"
+                  k9-texture="none"
+                  transform="translate(631.0,114.0)"
+                  k9-format="container"
+                  k9-info="margin: [26.666667938232422 26.666667938232422 26.666667938232422 26.666667938232422]; padding: [0.0 0.0 0.0 0.0]; min-size: [53.333335876464844 53.333335876464844]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: connected; rect-pos: [657.0, 140.0]; rect-size: [174.0, 93.0]; position: none; painter: direct-svg; ">
+                  <g class="k9-shape" k9-highlight="pulse stroke">
+                     <rect x="0"
+                           y="0"
+                           width="174"
+                           pp:y="$y"
+                           pp:height="$height"
+                           pp:x="$x"
+                           rx="10pt"
+                           ry="10pt"
+                           height="93"
+                           pp:width="$width"/>
+                  </g>
+                  <g class="k9-content">
+                     <g k9-elem="action"
+                        k9-texture="background"
+                        transform="translate(13.0,13.0)"
+                        k9-format="text-shape-inline"
+                        k9-info="margin: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; padding: [16.0 29.33333396911621 16.0 16.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: connected; rect-pos: [670.0, 153.0]; rect-size: [148.0, 67.0]; position: none; painter: direct-svg; ">
+                        <g class="k9-shape" k9-highlight="pulse">
+                           <g k9-highlight="pulse"
+                              k9-texture="background"
+                              style="transform: translate(0px,0px)"
+                              pp:style="transform: translate([[$x]]px,[[$y]]px)">
+                              <polygon points="             0 0,              127.99999940395355 0,             148 33.5,             127.99999940395355 67,             0 67"
+                                       pp:points="             0 0,              [[$width - (15 * $pt)]] 0,             [[$width]] [[$height div 2]],             [[$width - (15 * $pt)]] [[$height]],             0 [[$height]]"/>
+                           </g>
+                        </g>
+                        <g class="k9-content">
+                           <g k9-elem="caption"
+                              k9-texture="foreground"
+                              transform="translate(14.3,45.3)"
+                              k9-format="text-fixed"
+                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [686.0, 169.0]; rect-size: [103.0, 35.0]; position: none; painter: direct-svg; ">
+                              <g class="k9-content k9-no-shape" k9-highlight="pulse">
+                                 <g rendered="true">
+                                    <g>
+                                       <path d="M3.3681 -13.0764 L3.3681 -8.2569 L11.3264 -8.2569 L11.3264 -6.6806 L3.3681 -6.6806 L3.3681 -1.5764 L12.2014 -1.5764 L12.2014 0 L1.6875 0 L1.6875 -14.6528 L12.2014 -14.6528 L12.2014 -13.0764 L3.3681 -13.0764 ZM18.9038 0.2569 Q17.7302 0.2569 16.5219 -0.1667 Q15.3205 -0.5972 14.3344 -1.3889 L15.1677 -2.5625 Q17.0635 -1.1736 18.9038 -1.1736 Q19.9871 -1.1736 20.6607 -1.6389 Q21.3344 -2.1111 21.3344 -2.9028 Q21.3344 -3.4583 20.9663 -3.8264 Q20.6052 -4.2014 20.0635 -4.4167 Q19.5219 -4.6319 18.5566 -4.9097 Q16.5357 -5.4861 15.7024 -6.1736 Q14.8691 -6.8681 14.8691 -8.0417 Q14.8691 -9.5139 15.9524 -10.3958 Q17.0427 -11.2847 18.7302 -11.2847 Q19.7302 -11.2847 20.751 -10.9514 Q21.7788 -10.625 22.6746 -10.0486 L21.9107 -8.8125 Q20.2649 -9.8542 18.7302 -9.8542 Q17.751 -9.8542 17.1052 -9.4236 Q16.4663 -9 16.4663 -8.2361 Q16.4663 -7.7639 16.7441 -7.4653 Q17.0219 -7.1667 17.5774 -6.9306 Q18.133 -6.7014 19.3274 -6.3125 Q20.501 -5.9514 21.2232 -5.6111 Q21.9524 -5.2708 22.4385 -4.6597 Q22.9316 -4.0556 22.9316 -3.0694 Q22.9316 -1.5764 21.7927 -0.6597 Q20.6538 0.2569 18.9038 0.2569 ZM31.2074 -0.4514 Q30.3115 0.2569 29.1657 0.2569 Q27.9921 0.2569 27.2282 -0.5278 Q26.4713 -1.3194 26.4713 -2.5625 L26.4713 -9.5972 L24.749 -9.5972 L24.749 -11.0278 L26.4713 -11.0278 L26.4713 -14.0556 L28.0754 -14.0556 L28.0754 -11.0278 L30.7838 -11.0278 L30.7838 -9.5972 L28.0754 -9.5972 L28.0754 -2.5625 Q28.0754 -1.9653 28.4227 -1.5694 Q28.7768 -1.1736 29.2699 -1.1736 Q29.631 -1.1736 29.9296 -1.2986 Q30.2282 -1.4306 30.4227 -1.6181 L31.2074 -0.4514 ZM34.2605 -13.0347 Q33.816 -13.0347 33.5035 -13.3542 Q33.198 -13.6736 33.198 -14.1042 Q33.198 -14.5278 33.5035 -14.8333 Q33.816 -15.1458 34.2605 -15.1458 Q34.691 -15.1458 34.9966 -14.8333 Q35.3091 -14.5278 35.3091 -14.1042 Q35.3091 -13.6736 34.9966 -13.3542 Q34.691 -13.0347 34.2605 -13.0347 ZM33.448 -11.0278 L35.0521 -11.0278 L35.0521 0 L33.448 0 L33.448 -11.0278 ZM50.1993 -11.2847 Q51.3313 -11.2847 52.2271 -10.7361 Q53.123 -10.1944 53.623 -9.2222 Q54.123 -8.2569 54.123 -7.0208 L54.123 0 L52.5257 0 L52.5257 -6.8056 Q52.5257 -8.1528 51.8105 -9 Q51.0952 -9.8542 49.9841 -9.8542 Q48.6646 -9.8542 47.8313 -9.0556 Q46.998 -8.2569 46.998 -7.0208 L46.998 0 L45.4007 0 L45.4007 -6.8056 Q45.4007 -8.1528 44.6855 -9 Q43.9702 -9.8542 42.8591 -9.8542 Q41.5327 -9.8542 40.6993 -9.0556 Q39.873 -8.2569 39.873 -7.0208 L39.873 0 L38.2688 0 L38.2688 -11.0278 L39.873 -11.0278 L39.873 -9.4097 Q40.2966 -10.2847 41.1368 -10.7847 Q41.9841 -11.2847 43.0743 -11.2847 Q44.3105 -11.2847 45.248 -10.6528 Q46.1855 -10.0278 46.6368 -8.9375 Q46.9771 -10.0069 47.9563 -10.6458 Q48.9355 -11.2847 50.1993 -11.2847 ZM61.8483 -11.2847 Q64.0427 -11.2847 65.1816 -10.0347 Q66.3274 -8.7917 66.3274 -6.7222 L66.3274 0 L64.7233 0 L64.7233 -1.7292 Q64.1469 -0.7917 63.0705 -0.2639 Q61.9941 0.2569 60.8413 0.2569 Q59.0705 0.2569 57.9386 -0.7014 Q56.8136 -1.6667 56.8136 -3.2639 Q56.8136 -4.3333 57.3969 -5.1736 Q57.9872 -6.0139 58.9733 -6.4722 Q59.9663 -6.9306 61.1399 -6.9306 Q62.8066 -6.9306 64.7233 -6.3125 L64.7233 -6.7222 Q64.7233 -8.0625 64.0427 -8.9861 Q63.3622 -9.9167 61.7372 -9.9167 Q60.9941 -9.9167 60.2094 -9.6528 Q59.4316 -9.3889 58.5149 -8.9167 L57.8761 -10.2153 Q60.008 -11.2847 61.8483 -11.2847 ZM61.1191 -1.1528 Q62.3136 -1.1528 63.3691 -1.7569 Q64.4247 -2.3681 64.7233 -3.4583 L64.7233 -5.1389 Q63.1052 -5.5903 61.3969 -5.5903 Q60.1399 -5.5903 59.2511 -4.9514 Q58.3691 -4.3125 58.3691 -3.3264 Q58.3691 -2.3264 59.1469 -1.7361 Q59.9247 -1.1528 61.1191 -1.1528 ZM75.2181 -0.4514 Q74.3223 0.2569 73.1765 0.2569 Q72.0029 0.2569 71.239 -0.5278 Q70.482 -1.3194 70.482 -2.5625 L70.482 -9.5972 L68.7598 -9.5972 L68.7598 -11.0278 L70.482 -11.0278 L70.482 -14.0556 L72.0862 -14.0556 L72.0862 -11.0278 L74.7945 -11.0278 L74.7945 -9.5972 L72.0862 -9.5972 L72.0862 -2.5625 Q72.0862 -1.9653 72.4334 -1.5694 Q72.7876 -1.1736 73.2806 -1.1736 Q73.6418 -1.1736 73.9404 -1.2986 Q74.239 -1.4306 74.4334 -1.6181 L75.2181 -0.4514 ZM78.2712 -13.0347 Q77.8268 -13.0347 77.5143 -13.3542 Q77.2087 -13.6736 77.2087 -14.1042 Q77.2087 -14.5278 77.5143 -14.8333 Q77.8268 -15.1458 78.2712 -15.1458 Q78.7018 -15.1458 79.0073 -14.8333 Q79.3198 -14.5278 79.3198 -14.1042 Q79.3198 -13.6736 79.0073 -13.3542 Q78.7018 -13.0347 78.2712 -13.0347 ZM77.4587 -11.0278 L79.0629 -11.0278 L79.0629 0 L77.4587 0 L77.4587 -11.0278 ZM87.5296 -11.2847 Q88.724 -11.2847 89.6754 -10.7361 Q90.6268 -10.1944 91.1476 -9.2222 Q91.6684 -8.2569 91.6684 -7.0208 L91.6684 0 L90.0712 0 L90.0712 -6.8056 Q90.0712 -8.1528 89.3004 -9 Q88.5365 -9.8542 87.3143 -9.8542 Q86.3976 -9.8542 85.6198 -9.4722 Q84.8421 -9.0903 84.3698 -8.4236 Q83.9046 -7.7639 83.9046 -7.0208 L83.9046 0 L82.3073 0 L82.3073 -11.0278 L83.9046 -11.0278 L83.9046 -9.2569 Q84.3976 -10.1528 85.3837 -10.7153 Q86.3768 -11.2847 87.5296 -11.2847 ZM105.0895 -11.0278 L105.0895 -1.1736 Q105.0895 0.2361 104.395 1.3333 Q103.7006 2.4306 102.4714 3.0486 Q101.2492 3.6667 99.6728 3.6667 Q98.3672 3.6667 97.1728 3.2639 Q95.9784 2.8611 95.2075 2.1944 L95.9159 0.9375 Q96.5547 1.5556 97.4922 1.8958 Q98.4297 2.2431 99.4575 2.2431 Q101.3534 2.2431 102.4159 1.3472 Q103.4853 0.4514 103.4853 -1.1736 L103.4853 -2.9653 Q102.8464 -1.9444 101.8117 -1.375 Q100.777 -0.8125 99.4784 -0.8125 Q98.0061 -0.8125 96.8534 -1.4792 Q95.7006 -2.1528 95.0478 -3.3472 Q94.402 -4.5417 94.402 -6.0556 Q94.402 -7.5764 95.0478 -8.7708 Q95.7006 -9.9653 96.8534 -10.625 Q98.0061 -11.2847 99.4784 -11.2847 Q100.777 -11.2847 101.8117 -10.7153 Q102.8464 -10.1528 103.4853 -9.1319 L103.4853 -11.0278 L105.0895 -11.0278 ZM99.777 -2.2431 Q100.8395 -2.2431 101.6936 -2.7292 Q102.5478 -3.2222 103.0131 -4.0833 Q103.4853 -4.9514 103.4853 -6.0556 Q103.4853 -7.1458 103.0131 -8.0069 Q102.5478 -8.875 101.6936 -9.3611 Q100.8395 -9.8542 99.777 -9.8542 Q98.7075 -9.8542 97.8672 -9.3611 Q97.027 -8.875 96.5547 -8.0069 Q96.0825 -7.1458 96.0825 -6.0556 Q96.0825 -4.9514 96.5547 -4.0833 Q97.027 -3.2222 97.8672 -2.7292 Q98.7075 -2.2431 99.777 -2.2431 Z"
+                                             stroke="none"/>
+                                    </g>
+                                 </g>
+                              </g>
+                           </g>
+                        </g>
+                     </g>
+                  </g>
+               </g>
+               <g k9-contains="connected port label terminator"
+                  transform="translate(831.0,20.0)"
+                  k9-texture="background"
+                  k9-info="margin: [20.0 20.0 20.0 20.0]; padding: [20.0 20.0 20.0 20.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: connected; rect-pos: [857.0, 46.0]; rect-size: [471.0, 280.0]; position: none; painter: direct-svg; "
+                  id="d"
+                  k9-format="container"
+                  k9-ui="drag delete align connect insert autoconnect layout label fill stroke size align"
+                  k9-elem="container"
+                  k9-type="connected">
+                  <g class="k9-shape" k9-highlight="pulse">
+                     <rect x="0"
+                           y="0"
+                           width="471"
+                           pp:y="$y"
+                           pp:height="$height"
+                           pp:x="$x"
+                           rx="10pt"
+                           ry="10pt"
+                           height="280"
+                           pp:width="$width"/>
+                  </g>
+                  <g class="k9-content">
+                     <g imgsrc="posts/bucket.svg"
+                        k9-elem="image-artifact"
+                        k9-texture="artifact"
+                        transform="translate(163.0,20.0)"
+                        k9-format="text-image-portrait"
+                        k9-info="margin: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [146.6666717529297 186.6666717529297]; sizing: [minimize minimize]; horiz: center; vert: center; layout: vertical; rectangular: connected; rect-pos: [1020.0, 66.0]; rect-size: [146.0, 186.0]; position: none; painter: direct-svg; ">
+                        <g class="k9-shape" k9-highlight="pulse">
+                           <rect x="0"
+                                 y="0"
+                                 width="146"
+                                 pp:y="$y"
+                                 pp:height="$height"
+                                 pp:x="$x"
+                                 rx="5pt"
+                                 ry="5pt"
+                                 height="186"
+                                 pp:width="$width"/>
+                        </g>
+                        <g class="k9-content">
+                           <g k9-elem="depiction"
+                              k9-texture="none"
+                              transform="translate(40.0,32.0)"
+                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [1060.0, 98.0]; rect-size: [66.0, 66.0]; position: none; painter: direct-svg; ">
+                              <g class="k9-content k9-no-shape" k9-highlight="pulse">
+                                 <image x="0"
+                                        y="0"
+                                        width="50pt"
+                                        xlink:href="data:text/html;base64,PGh0bWw+PGhlYWQ+PHRpdGxlPjQwNDwvdGl0bGU+PGxpbmsgcmVsPSJzdHlsZXNo&#xA;ZWV0IiAgaHJlZj0iL3dlYmphcnMvaGlnaGxpZ2h0anMvOS42LjAvc3R5bGVzL2dp&#xA;dGh1Yi5jc3MiPgo8c2NyaXB0IHNyYz0iL3dlYmphcnMvaGlnaGxpZ2h0anMvOS42&#xA;LjAvaGlnaGxpZ2h0Lm1pbi5qcyI+PC9zY3JpcHQ+CjxzY3JpcHQgc3JjPSIvd2Vi&#xA;amFycy9oaWdobGlnaHRqcy85LjYuMC9sYW5ndWFnZXMveG1sLm1pbi5qcyI+PC9z&#xA;Y3JpcHQ+PGxpbmsgaHJlZj0iL3dlYmphcnMvYm9vdHN0cmFwLzQuMy4xL2Nzcy9i&#xA;b290c3RyYXAubWluLmNzcyIgcmVsPSJzdHlsZXNoZWV0IiAvPjwvaGVhZD48Ym9k&#xA;eT48ZGl2IGNsYXNzPSJjb250YWluZXIiPjxoMT5LaXRlOSBFcnJvciA8c3BhbiBj&#xA;bGFzcz0iYmFkZ2UgYmFkZ2UtZGFuZ2VyIj40MDQ8L3NwYW4+PC9oMT48ZGl2IGNs&#xA;YXNzPSJhbGVydCBhbGVydC1pbmZvIj4vYXBpL3Bvc3RzL2J1Y2tldC5zdmc8L2Rp&#xA;dj48c2NyaXB0PmhsanMuaW5pdEhpZ2hsaWdodGluZ09uTG9hZCgpOzwvc2NyaXB0&#xA;PjwvZGl2PjwvYm9keT48L2h0bWw+"
+                                        xlink:type="simple"
+                                        xlink:actuate="onLoad"
+                                        height="50pt"
+                                        preserveAspectRatio="xMidYMid meet"
+                                        xlink:show="embed"/>
+                                 <rect width="50pt" x="0" height="50pt" y="0"/>
+                              </g>
+                           </g>
+                           <g k9-elem="caption"
+                              k9-texture="foreground"
+                              transform="translate(19.0,148.3)"
+                              k9-format="text-fixed"
+                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [1040.0, 185.0]; rect-size: [107.0, 35.0]; position: none; painter: direct-svg; ">
+                              <g class="k9-content k9-no-shape" k9-highlight="pulse">
+                                 <g rendered="true">
+                                    <g>
+                                       <path d="M1.0486 -1.3889 L6.4028 -5.9514 Q7.9375 -7.2778 8.625 -8.375 Q9.3194 -9.4722 9.3194 -10.5833 Q9.3194 -11.4375 8.8958 -12.0833 Q8.4722 -12.7361 7.7639 -13.0764 Q7.0625 -13.4167 6.2708 -13.4167 Q5.0556 -13.4167 4.1042 -12.8194 Q3.1597 -12.2222 2.3472 -11.1389 L1.1736 -12.0972 Q3.1597 -14.9097 6.3333 -14.9097 Q7.6181 -14.9097 8.6806 -14.375 Q9.75 -13.8472 10.375 -12.8611 Q11.0069 -11.8819 11.0069 -10.6042 Q11.0069 -9.1319 10.2083 -7.8194 Q9.4097 -6.5069 7.5486 -4.9097 L3.7153 -1.5764 L11.1597 -1.5764 L11.1597 0 L1.0486 0 L1.0486 -1.3889 ZM19.9265 0.2569 Q18.1556 0.2569 16.7668 -0.7153 Q15.3848 -1.6875 14.6001 -3.4097 Q13.8223 -5.1389 13.8223 -7.3403 Q13.8223 -9.5347 14.6001 -11.25 Q15.3848 -12.9722 16.7668 -13.9375 Q18.1556 -14.9097 19.9265 -14.9097 Q21.6765 -14.9097 23.0584 -13.9375 Q24.4473 -12.9722 25.2251 -11.25 Q26.0029 -9.5347 26.0029 -7.3403 Q26.0029 -5.1389 25.2251 -3.4097 Q24.4473 -1.6875 23.0723 -0.7153 Q21.6973 0.2569 19.9265 0.2569 ZM19.9265 -1.2778 Q21.2043 -1.2778 22.2043 -2.0556 Q23.2112 -2.8403 23.7668 -4.2153 Q24.3223 -5.5903 24.3223 -7.3403 Q24.3223 -9.0903 23.7668 -10.4653 Q23.2112 -11.8403 22.2043 -12.6042 Q21.2043 -13.375 19.9265 -13.375 Q18.6487 -13.375 17.6418 -12.6042 Q16.6418 -11.8403 16.0723 -10.4653 Q15.5098 -9.0903 15.5098 -7.3403 Q15.5098 -5.5903 16.0723 -4.2153 Q16.6418 -2.8403 17.6418 -2.0556 Q18.6487 -1.2778 19.9265 -1.2778 ZM28.8821 -14.9097 L30.4863 -14.9097 L30.4863 0 L28.8821 0 L28.8821 -14.9097 ZM40.3004 -14.6528 L47.0156 -14.6528 Q48.1893 -14.6528 49.1059 -14.1806 Q50.0295 -13.7153 50.5365 -12.8819 Q51.0504 -12.0556 51.0504 -11.0069 Q51.0504 -9.8958 50.5295 -9.1458 Q50.0087 -8.4028 48.9601 -7.7847 Q50.2379 -7.1458 50.9323 -6.1736 Q51.6268 -5.2083 51.6268 -4.0139 Q51.6268 -2.8611 51.0712 -1.9375 Q50.5156 -1.0208 49.5226 -0.5069 Q48.5365 0 47.2726 0 L40.3004 0 L40.3004 -14.6528 ZM46.592 -8.4514 Q47.8073 -8.4514 48.5851 -9.1111 Q49.3629 -9.7708 49.3629 -10.7917 Q49.3629 -11.8194 48.5851 -12.4792 Q47.8073 -13.1389 46.592 -13.1389 L41.9601 -13.1389 L41.9601 -8.4514 L46.592 -8.4514 ZM46.849 -1.5139 Q48.2101 -1.5139 49.0712 -2.2708 Q49.9393 -3.0278 49.9393 -4.2222 Q49.9393 -5.4167 49.0712 -6.1736 Q48.2101 -6.9306 46.849 -6.9306 L41.9601 -6.9306 L41.9601 -1.5139 L46.849 -1.5139 ZM63.8289 -11.0278 L63.8289 0 L62.2317 0 L62.2317 -1.7708 Q61.7386 -0.875 60.7456 -0.3056 Q59.7525 0.2569 58.5997 0.2569 Q57.4053 0.2569 56.4539 -0.2847 Q55.5094 -0.8333 54.9817 -1.7986 Q54.4608 -2.7708 54.4608 -4.0139 L54.4608 -11.0278 L56.065 -11.0278 L56.065 -4.2222 Q56.065 -2.8819 56.8289 -2.0278 Q57.5997 -1.1736 58.815 -1.1736 Q59.7317 -1.1736 60.5094 -1.5556 Q61.2942 -1.9444 61.7594 -2.6042 Q62.2317 -3.2639 62.2317 -4.0139 L62.2317 -11.0278 L63.8289 -11.0278 ZM72.2152 0.2569 Q70.7013 0.2569 69.3749 -0.5278 Q68.0555 -1.3194 67.2708 -2.6528 Q66.493 -3.9861 66.493 -5.5278 Q66.493 -7.0625 67.2708 -8.3819 Q68.0555 -9.7083 69.3749 -10.4931 Q70.7013 -11.2847 72.2152 -11.2847 Q73.3194 -11.2847 74.3333 -10.8542 Q75.3471 -10.4306 76.1388 -9.6667 L75.0277 -8.5764 Q74.4721 -9.1736 73.743 -9.5139 Q73.0208 -9.8542 72.2152 -9.8542 Q71.1249 -9.8542 70.1944 -9.2639 Q69.2708 -8.6806 68.7221 -7.6806 Q68.1805 -6.6806 68.1805 -5.5278 Q68.1805 -4.3542 68.7221 -3.3611 Q69.2708 -2.3681 70.1944 -1.7708 Q71.1249 -1.1736 72.2152 -1.1736 Q73.0208 -1.1736 73.7708 -1.5208 Q74.5208 -1.875 75.0902 -2.5139 L76.2013 -1.4306 Q75.4166 -0.6389 74.3819 -0.1875 Q73.3471 0.2569 72.2152 0.2569 ZM83.3473 -5.9722 L88.0418 0 L86.0348 0 L82.2154 -4.8819 L80.2362 -2.9236 L80.2362 0 L78.6321 0 L78.6321 -14.9097 L80.2362 -14.9097 L80.2362 -4.9306 L86.271 -11.0278 L88.3196 -11.0278 L83.3473 -5.9722 ZM95.2091 -1.1736 Q96.1952 -1.1736 97.1814 -1.5556 Q98.1744 -1.9444 98.6883 -2.4931 L99.6675 -1.4514 Q98.9661 -0.6806 97.6952 -0.2083 Q96.4244 0.2569 95.23 0.2569 Q93.7577 0.2569 92.48 -0.4861 Q91.2022 -1.2361 90.4175 -2.5694 Q89.6397 -3.9028 89.6397 -5.5486 Q89.6397 -7.1458 90.3758 -8.4653 Q91.1119 -9.7917 92.3619 -10.5347 Q93.6119 -11.2847 95.0841 -11.2847 Q97.5564 -11.2847 98.9314 -9.5556 Q100.3064 -7.8264 100.3064 -4.9097 L91.2855 -4.9097 Q91.4591 -3.2639 92.5355 -2.2153 Q93.6119 -1.1736 95.2091 -1.1736 ZM95.1466 -9.8542 Q93.6536 -9.8542 92.5841 -8.8819 Q91.5216 -7.9167 91.3064 -6.3333 L98.73 -6.3333 Q98.5633 -7.9167 97.6397 -8.8819 Q96.723 -9.8542 95.1466 -9.8542 ZM108.5622 -0.4514 Q107.6664 0.2569 106.5206 0.2569 Q105.3469 0.2569 104.5831 -0.5278 Q103.8261 -1.3194 103.8261 -2.5625 L103.8261 -9.5972 L102.1039 -9.5972 L102.1039 -11.0278 L103.8261 -11.0278 L103.8261 -14.0556 L105.4303 -14.0556 L105.4303 -11.0278 L108.1386 -11.0278 L108.1386 -9.5972 L105.4303 -9.5972 L105.4303 -2.5625 Q105.4303 -1.9653 105.7775 -1.5694 Q106.1317 -1.1736 106.6247 -1.1736 Q106.9858 -1.1736 107.2844 -1.2986 Q107.5831 -1.4306 107.7775 -1.6181 L108.5622 -0.4514 Z"
+                                             stroke="none"/>
+                                    </g>
+                                 </g>
+                              </g>
+                           </g>
+                        </g>
+                     </g>
+                     <g k9-contains="none"
+                        transform="translate(20.0,219.0)"
+                        k9-texture="none"
+                        k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: label; rect-pos: [877.0, 265.0]; rect-size: [431.0, 61.0]; position: none; placement: down;painter: direct-svg; "
+                        id="4"
+                        k9-format="text-shape-inline"
+                        k9-ui="delete edit xml drag place fill stroke size font direction align"
+                        k9-elem="label"
+                        k9-type="label">
+                        <g class="k9-shape" k9-highlight="pulse">
+                           <rect x="0"
+                                 y="0"
+                                 width="431"
+                                 pp:y="$y"
+                                 pp:height="$height"
+                                 pp:x="$x"
+                                 rx="5pt"
+                                 ry="5pt"
+                                 height="61"
+                                 pp:width="$width"/>
+                        </g>
+                        <g class="k9-content">
+                           <g k9-elem="caption"
+                              k9-texture="foreground"
+                              transform="translate(10.7,42.3)"
+                              k9-format="text-fixed"
+                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [890.0, 278.0]; rect-size: [405.0, 35.0]; position: none; painter: direct-svg; ">
+                              <g class="k9-content k9-no-shape" k9-highlight="pulse">
+                                 <g rendered="true">
+                                    <g fill="rgb(36,51,20)" stroke="rgb(36,51,20)">
+                                       <path d="M18.7726 -20.1476 L18.7726 0 L16.4809 0 L16.4809 -9.1858 L4.6024 -9.1858 L4.6024 0 L2.3203 0 L2.3203 -20.1476 L4.6024 -20.1476 L4.6024 -11.3533 L16.4809 -11.3533 L16.4809 -20.1476 L18.7726 -20.1476 ZM30.3624 0.3533 Q28.2808 0.3533 26.457 -0.7257 Q24.6428 -1.8142 23.5638 -3.6476 Q22.4944 -5.4809 22.4944 -7.6007 Q22.4944 -9.7109 23.5638 -11.5252 Q24.6428 -13.349 26.457 -14.428 Q28.2808 -15.5165 30.3624 -15.5165 Q32.444 -15.5165 34.2487 -14.428 Q36.0534 -13.349 37.1228 -11.5252 Q38.1923 -9.7109 38.1923 -7.6007 Q38.1923 -5.4809 37.1228 -3.6476 Q36.0534 -1.8142 34.2487 -0.7257 Q32.444 0.3533 30.3624 0.3533 ZM30.3624 -1.6137 Q31.8233 -1.6137 33.1029 -2.4349 Q34.3824 -3.2561 35.1272 -4.6215 Q35.872 -5.987 35.872 -7.6007 Q35.872 -9.1858 35.1272 -10.5608 Q34.3824 -11.9358 33.1029 -12.7378 Q31.8233 -13.5495 30.3624 -13.5495 Q28.8633 -13.5495 27.5838 -12.7378 Q26.3138 -11.9358 25.5595 -10.5608 Q24.8147 -9.1858 24.8147 -7.6007 Q24.8147 -5.987 25.5595 -4.6215 Q26.3138 -3.2561 27.5838 -2.4349 Q28.8633 -1.6137 30.3624 -1.6137 ZM40.6313 -15.1632 L42.9707 -15.1632 L46.7615 -2.9314 L50.8961 -15.1632 L52.7963 -15.1632 L56.9404 -2.9314 L60.7216 -15.1632 L63.0706 -15.1632 L57.9621 0 L55.8805 0 L51.8605 -12.1172 L47.7832 0 L45.7016 0 L40.6313 -15.1632 ZM74.7663 -20.5009 L76.972 -20.5009 L76.972 0 L74.7663 0 L74.7663 -20.5009 ZM88.4719 0.3533 Q86.3903 0.3533 84.5665 -0.7257 Q82.7522 -1.8142 81.6732 -3.6476 Q80.6038 -5.4809 80.6038 -7.6007 Q80.6038 -9.7109 81.6732 -11.5252 Q82.7522 -13.349 84.5665 -14.428 Q86.3903 -15.5165 88.4719 -15.5165 Q90.5535 -15.5165 92.3581 -14.428 Q94.1628 -13.349 95.2323 -11.5252 Q96.3017 -9.7109 96.3017 -7.6007 Q96.3017 -5.4809 95.2323 -3.6476 Q94.1628 -1.8142 92.3581 -0.7257 Q90.5535 0.3533 88.4719 0.3533 ZM88.4719 -1.6137 Q89.9328 -1.6137 91.2123 -2.4349 Q92.4918 -3.2561 93.2366 -4.6215 Q93.9814 -5.987 93.9814 -7.6007 Q93.9814 -9.1858 93.2366 -10.5608 Q92.4918 -11.9358 91.2123 -12.7378 Q89.9328 -13.5495 88.4719 -13.5495 Q86.9727 -13.5495 85.6932 -12.7378 Q84.4232 -11.9358 83.6689 -10.5608 Q82.9241 -9.1858 82.9241 -7.6007 Q82.9241 -5.987 83.6689 -4.6215 Q84.4232 -3.2561 85.6932 -2.4349 Q86.9727 -1.6137 88.4719 -1.6137 ZM107.1531 -15.5165 Q108.7955 -15.5165 110.1036 -14.7622 Q111.4118 -14.0174 112.1279 -12.6806 Q112.8441 -11.3533 112.8441 -9.6536 L112.8441 0 L110.6479 0 L110.6479 -9.3576 Q110.6479 -11.2101 109.588 -12.375 Q108.5377 -13.5495 106.8571 -13.5495 Q105.5967 -13.5495 104.5272 -13.0243 Q103.4578 -12.4991 102.8085 -11.5825 Q102.1687 -10.6753 102.1687 -9.6536 L102.1687 0 L99.9726 0 L99.9726 -15.1632 L102.1687 -15.1632 L102.1687 -12.7283 Q102.8467 -13.9601 104.2026 -14.7335 Q105.568 -15.5165 107.1531 -15.5165 ZM131.298 -15.1632 L131.298 -1.6137 Q131.298 0.3247 130.3431 1.8333 Q129.3883 3.342 127.6982 4.1918 Q126.0176 5.0417 123.8501 5.0417 Q122.0549 5.0417 120.4126 4.4878 Q118.7702 3.934 117.7103 3.0174 L118.6843 1.2891 Q119.5627 2.1389 120.8518 2.6068 Q122.1409 3.0842 123.5541 3.0842 Q126.1608 3.0842 127.6218 1.8524 Q129.0923 0.6207 129.0923 -1.6137 L129.0923 -4.0773 Q128.2138 -2.6736 126.791 -1.8906 Q125.3683 -1.1172 123.5827 -1.1172 Q121.5584 -1.1172 119.9733 -2.0339 Q118.3883 -2.9601 117.4907 -4.6024 Q116.6027 -6.2448 116.6027 -8.3264 Q116.6027 -10.4175 117.4907 -12.0599 Q118.3883 -13.7023 119.9733 -14.6094 Q121.5584 -15.5165 123.5827 -15.5165 Q125.3683 -15.5165 126.791 -14.7335 Q128.2138 -13.9601 129.0923 -12.5564 L129.0923 -15.1632 L131.298 -15.1632 ZM123.9933 -3.0842 Q125.4542 -3.0842 126.6287 -3.7526 Q127.8032 -4.4306 128.4429 -5.6146 Q129.0923 -6.8082 129.0923 -8.3264 Q129.0923 -9.8255 128.4429 -11.0095 Q127.8032 -12.2031 126.6287 -12.8715 Q125.4542 -13.5495 123.9933 -13.5495 Q122.5228 -13.5495 121.3674 -12.8715 Q120.2121 -12.2031 119.5627 -11.0095 Q118.9134 -9.8255 118.9134 -8.3264 Q118.9134 -6.8082 119.5627 -5.6146 Q120.2121 -4.4306 121.3674 -3.7526 Q122.5228 -3.0842 123.9933 -3.0842 ZM152.2064 -0.6207 Q150.9746 0.3533 149.3991 0.3533 Q147.7854 0.3533 146.735 -0.7257 Q145.6942 -1.8142 145.6942 -3.5234 L145.6942 -13.1962 L143.3262 -13.1962 L143.3262 -15.1632 L145.6942 -15.1632 L145.6942 -19.3264 L147.8999 -19.3264 L147.8999 -15.1632 L151.6239 -15.1632 L151.6239 -13.1962 L147.8999 -13.1962 L147.8999 -3.5234 Q147.8999 -2.7023 148.3774 -2.158 Q148.8644 -1.6137 149.5423 -1.6137 Q150.0388 -1.6137 150.4494 -1.7856 Q150.86 -1.967 151.1274 -2.2248 L152.2064 -0.6207 ZM162.3627 0.3533 Q160.2811 0.3533 158.4573 -0.7257 Q156.6431 -1.8142 155.5641 -3.6476 Q154.4946 -5.4809 154.4946 -7.6007 Q154.4946 -9.7109 155.5641 -11.5252 Q156.6431 -13.349 158.4573 -14.428 Q160.2811 -15.5165 162.3627 -15.5165 Q164.4443 -15.5165 166.249 -14.428 Q168.0537 -13.349 169.1231 -11.5252 Q170.1926 -9.7109 170.1926 -7.6007 Q170.1926 -5.4809 169.1231 -3.6476 Q168.0537 -1.8142 166.249 -0.7257 Q164.4443 0.3533 162.3627 0.3533 ZM162.3627 -1.6137 Q163.8236 -1.6137 165.1031 -2.4349 Q166.3827 -3.2561 167.1274 -4.6215 Q167.8722 -5.987 167.8722 -7.6007 Q167.8722 -9.1858 167.1274 -10.5608 Q166.3827 -11.9358 165.1031 -12.7378 Q163.8236 -13.5495 162.3627 -13.5495 Q160.8636 -13.5495 159.584 -12.7378 Q158.3141 -11.9358 157.5597 -10.5608 Q156.8149 -9.1858 156.8149 -7.6007 Q156.8149 -5.987 157.5597 -4.6215 Q158.3141 -3.2561 159.584 -2.4349 Q160.8636 -1.6137 162.3627 -1.6137 ZM185.7693 -15.1632 L189.4933 -15.1632 L189.4933 -13.1962 L185.7693 -13.1962 L185.7693 0 L183.5636 0 L183.5636 -13.1962 L181.1956 -13.1962 L181.1956 -15.1632 L183.5636 -15.1632 L183.5636 -17.2448 Q183.5636 -18.954 184.6044 -20.033 Q185.6548 -21.1215 187.2685 -21.1215 Q188.844 -21.1215 190.0758 -20.1476 L188.9968 -18.5434 Q188.7294 -18.8012 188.3188 -18.9731 Q187.9082 -19.1545 187.4117 -19.1545 Q186.7338 -19.1545 186.2468 -18.6102 Q185.7693 -18.066 185.7693 -17.2448 L185.7693 -15.1632 ZM193.7164 -17.9227 Q193.1053 -17.9227 192.6756 -18.362 Q192.2555 -18.8012 192.2555 -19.3932 Q192.2555 -19.9757 192.6756 -20.3958 Q193.1053 -20.8255 193.7164 -20.8255 Q194.3084 -20.8255 194.7286 -20.3958 Q195.1582 -19.9757 195.1582 -19.3932 Q195.1582 -18.8012 194.7286 -18.362 Q194.3084 -17.9227 193.7164 -17.9227 ZM192.5992 -15.1632 L194.805 -15.1632 L194.805 0 L192.5992 0 L192.5992 -15.1632 ZM199.2279 -20.5009 L201.4336 -20.5009 L201.4336 0 L199.2279 0 L199.2279 -20.5009 ZM205.8866 -20.5009 L208.0923 -20.5009 L208.0923 0 L205.8866 0 L205.8866 -20.5009 ZM227.2203 -15.5165 Q230.2377 -15.5165 231.8036 -13.7977 Q233.3792 -12.0885 233.3792 -9.2431 L233.3792 0 L231.1734 0 L231.1734 -2.3776 Q230.3809 -1.0885 228.9009 -0.3628 Q227.4208 0.3533 225.8358 0.3533 Q223.4009 0.3533 221.8444 -0.9644 Q220.2976 -2.2917 220.2976 -4.4878 Q220.2976 -5.9583 221.0996 -7.1137 Q221.9113 -8.2691 223.2672 -8.8993 Q224.6326 -9.5295 226.2463 -9.5295 Q228.538 -9.5295 231.1734 -8.6797 L231.1734 -9.2431 Q231.1734 -11.0859 230.2377 -12.3559 Q229.3019 -13.6354 227.0675 -13.6354 Q226.0458 -13.6354 224.9668 -13.2726 Q223.8974 -12.9097 222.637 -12.2604 L221.7585 -14.046 Q224.6899 -15.5165 227.2203 -15.5165 ZM226.2177 -1.5851 Q227.8601 -1.5851 229.3114 -2.4158 Q230.7628 -3.2561 231.1734 -4.7552 L231.1734 -7.066 Q228.9486 -7.6866 226.5996 -7.6866 Q224.8713 -7.6866 223.6491 -6.8082 Q222.4364 -5.9297 222.4364 -4.5738 Q222.4364 -3.1988 223.5059 -2.3872 Q224.5753 -1.5851 226.2177 -1.5851 ZM245.5836 -1.9097 L252.9456 -8.1832 Q255.0558 -10.0069 256.0012 -11.5156 Q256.956 -13.0243 256.956 -14.5521 Q256.956 -15.7266 256.3735 -16.6146 Q255.7911 -17.5122 254.8171 -17.98 Q253.8527 -18.4479 252.7642 -18.4479 Q251.0932 -18.4479 249.785 -17.6267 Q248.4864 -16.8056 247.3692 -15.316 L245.7555 -16.6337 Q248.4864 -20.5009 252.8501 -20.5009 Q254.6166 -20.5009 256.0775 -19.7656 Q257.548 -19.0399 258.4074 -17.684 Q259.2763 -16.3377 259.2763 -14.5807 Q259.2763 -12.5564 258.1782 -10.7517 Q257.0801 -8.947 254.5211 -6.7509 L249.2503 -2.1675 L259.4864 -2.1675 L259.4864 0 L245.5836 0 L245.5836 -1.9097 ZM271.5406 0.3533 Q269.1058 0.3533 267.196 -0.9835 Q265.2959 -2.3203 264.2169 -4.6884 Q263.1474 -7.066 263.1474 -10.0929 Q263.1474 -13.1102 264.2169 -15.4688 Q265.2959 -17.8368 267.196 -19.1641 Q269.1058 -20.5009 271.5406 -20.5009 Q273.9469 -20.5009 275.8471 -19.1641 Q277.7568 -17.8368 278.8262 -15.4688 Q279.8957 -13.1102 279.8957 -10.0929 Q279.8957 -7.066 278.8262 -4.6884 Q277.7568 -2.3203 275.8662 -0.9835 Q273.9756 0.3533 271.5406 0.3533 ZM271.5406 -1.7569 Q273.2976 -1.7569 274.6726 -2.8264 Q276.0572 -3.9054 276.821 -5.796 Q277.5849 -7.6866 277.5849 -10.0929 Q277.5849 -12.4991 276.821 -14.3898 Q276.0572 -16.2804 274.6726 -17.3307 Q273.2976 -18.3906 271.5406 -18.3906 Q269.7837 -18.3906 268.3992 -17.3307 Q267.0242 -16.2804 266.2412 -14.3898 Q265.4677 -12.4991 265.4677 -10.0929 Q265.4677 -7.6866 266.2412 -5.796 Q267.0242 -3.9054 268.3992 -2.8264 Q269.7837 -1.7569 271.5406 -1.7569 ZM283.8546 -20.5009 L286.0604 -20.5009 L286.0604 0 L283.8546 0 L283.8546 -20.5009 ZM299.5547 -20.1476 L308.7882 -20.1476 Q310.402 -20.1476 311.6624 -19.4983 Q312.9323 -18.8585 313.6294 -17.7127 Q314.336 -16.5764 314.336 -15.1345 Q314.336 -13.6068 313.6198 -12.5755 Q312.9037 -11.5538 311.4619 -10.704 Q313.2188 -9.8255 314.1737 -8.4887 Q315.1285 -7.1615 315.1285 -5.5191 Q315.1285 -3.934 314.3647 -2.6641 Q313.6007 -1.4036 312.2353 -0.697 Q310.8794 0 309.1415 0 L299.5547 0 L299.5547 -20.1476 ZM308.2058 -11.6207 Q309.8768 -11.6207 310.9462 -12.5278 Q312.0157 -13.4349 312.0157 -14.8385 Q312.0157 -16.2517 310.9462 -17.1589 Q309.8768 -18.066 308.2058 -18.066 L301.8369 -18.066 L301.8369 -11.6207 L308.2058 -11.6207 ZM308.5591 -2.0816 Q310.4306 -2.0816 311.6147 -3.1224 Q312.8082 -4.1632 312.8082 -5.8056 Q312.8082 -7.4479 311.6147 -8.4887 Q310.4306 -9.5295 308.5591 -9.5295 L301.8369 -9.5295 L301.8369 -2.0816 L308.5591 -2.0816 ZM331.9065 -15.1632 L331.9065 0 L329.7103 0 L329.7103 -2.4349 Q329.0323 -1.2031 327.6669 -0.4201 Q326.3014 0.3533 324.7164 0.3533 Q323.074 0.3533 321.7658 -0.3915 Q320.4672 -1.1458 319.7415 -2.4731 Q319.0254 -3.8099 319.0254 -5.5191 L319.0254 -15.1632 L321.2311 -15.1632 L321.2311 -5.8056 Q321.2311 -3.9627 322.2815 -2.7882 Q323.3414 -1.6137 325.0124 -1.6137 Q326.2728 -1.6137 327.3422 -2.1389 Q328.4212 -2.6736 329.061 -3.5807 Q329.7103 -4.4878 329.7103 -5.5191 L329.7103 -15.1632 L331.9065 -15.1632 ZM343.4377 0.3533 Q341.356 0.3533 339.5323 -0.7257 Q337.718 -1.8142 336.639 -3.6476 Q335.5696 -5.4809 335.5696 -7.6007 Q335.5696 -9.7109 336.639 -11.5252 Q337.718 -13.349 339.5323 -14.428 Q341.356 -15.5165 343.4377 -15.5165 Q344.9559 -15.5165 346.35 -14.9245 Q347.7441 -14.342 348.8326 -13.2917 L347.3048 -11.7925 Q346.541 -12.6137 345.5384 -13.0816 Q344.5453 -13.5495 343.4377 -13.5495 Q341.9385 -13.5495 340.659 -12.7378 Q339.389 -11.9358 338.6347 -10.5608 Q337.8899 -9.1858 337.8899 -7.6007 Q337.8899 -5.987 338.6347 -4.6215 Q339.389 -3.2561 340.659 -2.4349 Q341.9385 -1.6137 343.4377 -1.6137 Q344.5453 -1.6137 345.5765 -2.0911 Q346.6078 -2.5781 347.3908 -3.4566 L348.9185 -1.967 Q347.8396 -0.8785 346.4168 -0.2578 Q344.9941 0.3533 343.4377 0.3533 ZM358.7444 -8.2118 L365.1992 0 L362.4397 0 L357.1879 -6.7127 L354.4666 -4.02 L354.4666 0 L352.2608 0 L352.2608 -20.5009 L354.4666 -20.5009 L354.4666 -6.7795 L362.7643 -15.1632 L365.5811 -15.1632 L358.7444 -8.2118 ZM375.0544 -1.6137 Q376.4102 -1.6137 377.7661 -2.1389 Q379.1316 -2.6736 379.8382 -3.428 L381.1845 -1.9957 Q380.2201 -0.9358 378.4727 -0.2865 Q376.7253 0.3533 375.083 0.3533 Q373.0587 0.3533 371.3017 -0.6684 Q369.5448 -1.6997 368.4658 -3.533 Q367.3964 -5.3663 367.3964 -7.6293 Q367.3964 -9.8255 368.4085 -11.6398 Q369.4207 -13.4635 371.1394 -14.4852 Q372.8582 -15.5165 374.8825 -15.5165 Q378.2818 -15.5165 380.1724 -13.1389 Q382.063 -10.7613 382.063 -6.7509 L369.6594 -6.7509 Q369.8981 -4.4878 371.3781 -3.046 Q372.8582 -1.6137 375.0544 -1.6137 ZM374.9684 -13.5495 Q372.9154 -13.5495 371.445 -12.2127 Q369.984 -10.8854 369.688 -8.7083 L379.8955 -8.7083 Q379.6663 -10.8854 378.3964 -12.2127 Q377.1359 -13.5495 374.9684 -13.5495 ZM393.4148 -0.6207 Q392.183 0.3533 390.6075 0.3533 Q388.9938 0.3533 387.9435 -0.7257 Q386.9027 -1.8142 386.9027 -3.5234 L386.9027 -13.1962 L384.5346 -13.1962 L384.5346 -15.1632 L386.9027 -15.1632 L386.9027 -19.3264 L389.1084 -19.3264 L389.1084 -15.1632 L392.8324 -15.1632 L392.8324 -13.1962 L389.1084 -13.1962 L389.1084 -3.5234 Q389.1084 -2.7023 389.5858 -2.158 Q390.0728 -1.6137 390.7508 -1.6137 Q391.2473 -1.6137 391.6579 -1.7856 Q392.0685 -1.967 392.3358 -2.2248 L393.4148 -0.6207 ZM399.6944 -11.1432 Q401.394 -11.296 402.7308 -11.8212 Q404.0676 -12.3464 404.8124 -13.1675 Q405.5668 -13.9887 405.5668 -14.934 Q405.5668 -15.8411 405.0798 -16.6432 Q404.5928 -17.4549 403.6857 -17.9323 Q402.7786 -18.4193 401.6041 -18.4193 Q400.0763 -18.4193 398.8732 -17.684 Q397.6701 -16.9583 396.5911 -15.6311 L395.0919 -17.1302 Q397.7942 -20.5009 401.7187 -20.5009 Q403.5424 -20.5009 404.9461 -19.7943 Q406.3593 -19.0972 407.1136 -17.8655 Q407.8775 -16.6337 407.8775 -15.1345 Q407.8775 -13.8455 407.1328 -12.671 Q406.3879 -11.4965 405.0511 -10.6276 Q403.7143 -9.7682 402.0147 -9.4149 L402.0147 -5.6623 L399.6944 -5.6623 L399.6944 -11.1432 ZM400.8689 0.3533 Q400.1909 0.3533 399.723 -0.1146 Q399.2551 -0.5825 399.2551 -1.2604 Q399.2551 -1.8811 399.723 -2.349 Q400.1909 -2.8168 400.8689 -2.8168 Q401.5182 -2.8168 401.9669 -2.349 Q402.4253 -1.8811 402.4253 -1.2604 Q402.4253 -0.5825 401.9669 -0.1146 Q401.5182 0.3533 400.8689 0.3533 Z"
+                                             stroke="none"/>
+                                    </g>
+                                 </g>
+                              </g>
+                           </g>
+                        </g>
+                     </g>
+                  </g>
+               </g>
+            </g>
+         </g>
+      </g>
+   </g>
+   <defs>
+      <script xlink:actuate="onLoad"
+              xlink:type="simple"
+              xlink:show="other"
+              type="module">
+     import '/public/templates/risk-first/risk-first.js?v=v0.15'
+  </script>
+   </defs>
+</svg>

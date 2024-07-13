@@ -32,7 +32,7 @@ Here we will:
  
 ## Codebase Risk
 
-![Complexity Risk and Codebase Risk](/img/generated/risks/complexity/complexity-risk.png)
+![Complexity Risk and Codebase Risk](/img/generated/risks/complexity/complexity-risk.svg)
 
 Complexity arises in software projects in a number of different ways.  We're going to start by looking at complexity in the _code you write_.  Aside from _bragging rights_, no-one is interested in having a large codebase:
 
@@ -113,7 +113,7 @@ So there is at some point a trade-off to be made between [Complexity Risk](/tags
 
 ### Refactoring
 
-![Using Refactoring and Abstraction to reduce Codebase Risk](/img/generated/risks/complexity/refactoring.png)
+![Using Refactoring and Abstraction to reduce Codebase Risk](/img/generated/risks/complexity/refactoring.svg)
 
 Abstraction is therefore a key tool in the battle against [Complexity Risk](/tags/Complexity-Risk): it allows us to jettison repetition.  But, as the code-golf example shows, you can go too far.  So an important part of software development is picking the _right_ abstractions:  ones that are useful, durable and pervasive.  
 
@@ -131,7 +131,7 @@ In the third version of the program, we used the method `.repeat()`, which allow
 
 `.repeat()` is a recent addition to Javascript, added in ES6.  What this shows is that the Kolmogorov complexity of a program is actually _heavily dependent_ on the features of the programming language:  using ES6-Javascript allows us to produce simpler programs than before. 
 
-![Using Libraries and Languages to reduce Codebase Risk](/img/generated/risks/complexity/libraries.png)
+![Using Libraries and Languages to reduce Codebase Risk](/img/generated/risks/complexity/libraries.svg)
 
 So as the above diagram shows, we can also reduce [Codebase Risk](/tags/Codebase-Risk) in our choice of _languages_ and _third party libraries_.   This doesn't come without a cost, though.  We are trading-off our own [Codebase Risk](/tags/Codebase-Risk) but increasing [Dependency Risk](/tags/Dependency-Risk) and [Boundary Risk](/tags/Boundary-Risk) instead.   
 
@@ -141,7 +141,7 @@ A second useful measure of complexity comes from graph theory, and that is the c
 
 > "...the minimum number of elements (nodes or edges) that need to be removed to disconnect the remaining nodes from each other" - [Connectivity, _Wikipedia_](https://en.wikipedia.org/wiki/Connectivity_(graph_theory))
 
-![Graph 1, 2-Connected](/img/generated/risks/complexity/connectivity_1.png)
+![Graph 1, 2-Connected](/img/generated/risks/complexity/connectivity_1.svg)
 
 To see this in action, have a look at the graph above.  It has 10 vertices, labelled **a** to **j**, and it has 15 edges (or links) connecting the vertices together.  If any single edge were removed from the diagram above, the 10 vertices would still be linked together.   Because of this, we can say that the graph is _2-connected_.   That is, to disconnect any single vertex, you'd have to remove _at least_ two edges.
 
@@ -169,7 +169,7 @@ i: j
                                                (total: 39)
 ```
 
-![Graph 2, 1-Connected](/img/generated/risks/complexity/connectivity_2.png)
+![Graph 2, 1-Connected](/img/generated/risks/complexity/connectivity_2.svg)
 
 In the graph above, I've removed 6 of the edges.  Now, we're in a situation where if any single edge is removed, the graph becomes _unconnected_.  That is, it's broken into distinct chunks.  So, it is _1-connected_.  
 
@@ -212,7 +212,7 @@ On the down-side, perhaps our messages have farther to go now:  in the original,
 
 Secondly, it's not apparent to **i** that **j** _even exists_: we have hidden the modules from each other.  For anything that **i** needed to send to **j**, **i** must be able to send to **c** instead.  
 
-![Modularisation and Hierarchy](/img/generated/risks/complexity/modularisation.png)
+![Modularisation and Hierarchy](/img/generated/risks/complexity/modularisation.svg)
 
 The trade-off of modularisation/hierarchy is shown in the above diagram, and it's our third tool for battling [Codebase Risk](/tags/Codebase-Risk).  
 
@@ -275,7 +275,7 @@ Now of course, you could carry on with the messy kitchen.  When tomorrow comes a
 
 It's not long before someone comes down with food poisoning.   
 
-![Complexity Risk and its implications](/img/generated/risks/complexity/complexity-risk-impact.png)
+![Complexity Risk and its implications](/img/generated/risks/complexity/complexity-risk-impact.svg)
 
 We wouldn't tolerate this behaviour in a restaurant kitchen, so why put up with it in a software project?  This state-of-affairs is illustrated in the above diagram.  Not only does [Complexity Risk](/tags/Complexity-Risk) slow down future development, it can be a cause of [Operational Risks](/tags/Operational-Risk) and [Security Risks](Agency-Risk.md#security).
 
@@ -290,7 +290,7 @@ The problem with this definition is that we are accepting features of our softwa
 
 Applying Risk-First, if you want to mitigate some [Feature Risk](/tags/Feature-Risk) then you have to pick up [Complexity Risk](/tags/Complexity-Risk) as a result.  But, that's a _choice you get to make_.  
 
-![Mitigating Feature Risk](/img/generated/risks/complexity/feature-creep.png)
+![Mitigating Feature Risk](/img/generated/risks/complexity/feature-creep.svg)
 
 Therefore, [Feature Creep](https://en.wikipedia.org/wiki/Feature_creep) (or [Gold Plating](https://en.wikipedia.org/wiki/Gold_plating_(software_engineering))) is a failure to observe this basic equation:  instead of considering this trade off, you're building _every feature possible_.  This will impact on [Complexity Risk](/tags/Complexity-Risk).
 

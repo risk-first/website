@@ -14,7 +14,7 @@ part_of: Feature Risk
 
 <RiskIntro fm={frontMatter} />
 
-![Feature Fit Risk](/img/generated/risks/feature/feature-fit-risk.png) 
+![Feature Fit Risk](/img/generated/risks/feature/feature-fit-risk.svg) 
 
 This is the risk that the feature that clients want to use in the software _isn't there_.
 

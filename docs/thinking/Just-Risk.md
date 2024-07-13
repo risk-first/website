@@ -21,7 +21,7 @@ tweet: yes
 
 In this section, I am going to propose the idea that _everything_ productive you do on a software project is Risk Management.
 
-![All Work is Managing Risk](/img/generated/principles/all-work.png)
+![All Work is Managing Risk](/img/generated/principles/all-work.svg)
 
 Think about your development process at work.  Maybe it involves weekly releases, a continuous-integration system, unit-testing and beta-testing.  All these activities have a part to play in managing different risks.  They work to manage risks before they create bigger problems in production.
 
@@ -95,7 +95,7 @@ Let's look at a real-life example.  The above image shows a selection of issues 
 
 [Earlier](Risk-First-Diagrams.md), we introduced something of a "diagram language" of risk. 
 
-![The Risk-First Diagram Language, with _stimulus_ on the left, the action (or _response_) we take in the middle, and the results on the right.](/img/generated/introduction/all_risk_management_language.png)
+![The Risk-First Diagram Language, with _stimulus_ on the left, the action (or _response_) we take in the middle, and the results on the right.](/img/generated/introduction/all_risk_management_language.svg)
 
 The above diagram is an idealised example of this, showing how we take action to address the risks and goals on the left and end up with new risks on the right.  
  
@@ -121,7 +121,7 @@ But risks, goals and actions are deeply connected.  By focusing on "Risk-First",
 
 ## On Opportunities
 
-![Risks, Goals, Opportunities, Anti-goals](/img/generated/introduction/risks_opportunities.png)
+![Risks, Goals, Opportunities, Anti-goals](/img/generated/introduction/risks_opportunities.svg)
 
 Some literature talks about [Opportunities](Glossary.md#opportunity) as being the opposite of [Risks](Glossary.md#risk).  Here, we tend to call these [Upside Risks](Glossary.md#upside-risk).  Therefore, there is a related discipline of _opportunity management_.  
 

@@ -58,7 +58,7 @@ The only way that the agents can move away from competition towards coordination
 
 You might think, therefore, that this is just another type of [Communication Risk](/tags/Communication-Risk) problem, and that's often a part of it, but even with synchronized [Internal Models](/thinking/Glossary.md#internal-model), coordination risk can occur.  Imagine the example of people all trying to madly leave a burning building.  They all have the same information (the building is on fire).  If they coordinate, and leave in an orderly fashion, they might all get out.  If they don't, and there's a scramble for the door, more people might die.
 
-![Coordination Risk - Mitigated by Communication](/img/generated/risks/coordination/coordination-risk.png)
+![Coordination Risk - Mitigated by Communication](/img/generated/risks/coordination/coordination-risk.svg)
 
 ## Problems Of Coordination
 
@@ -89,7 +89,7 @@ Within a team, [Coordination Risk](/tags/Coordination-Risk) is at its core about
 
 As an individual, do you suffer from [Coordination Risk](/tags/Coordination-Risk) at all?  Maybe:  sometimes, you can feel "conflicted" about the best way to solve a problem.  And weirdly, usually _not thinking about it_ helps.  Sleeping too.  (Rich Hickey calls this "[Hammock Driven Development](https://www.youtube.com/watch?v=f84n5oFoZBc)").  This is probably because, unbeknownst to you, your subconscious is furiously communicating internally, trying to resolve these conflicts itself, and will let you know when it has come to a resolution.  
 
-![Vroom And Yetton Decision Making Styles.  "d" indicates authority in making a decision, circles are subordinates.  Thin lines with arrow-heads show information flow, whilst thick lines show _opinions_ being passed around.](/img/generated/risks/coordination/vroom-yetton.png)
+![Vroom And Yetton Decision Making Styles.  "d" indicates authority in making a decision, circles are subordinates.  Thin lines with arrow-heads show information flow, whilst thick lines show _opinions_ being passed around.](/img/generated/risks/coordination/vroom-yetton.svg)
 
 [Vroom and Yetton](https://en.wikipedia.org/wiki/Vroom-Yetton_decision_model) introduced a model of group decision making which delineated five different styles of decision making within a team. These are summarised in the table below (**AI, AII, CI, CII, GII**).  To this, I have added a sixth (**UI**), which is the _uncoordinated_ option, where everyone competes.   The diagram above illustrates these, with the following conventions:
 
@@ -184,7 +184,7 @@ As before, in order to face [Coordination Risk](/tags/Coordination-Risk) in soft
 
 Imagine talking to a distributed database, where your request (_read_ or _write_) can be handled by one of many agents.
 
-![User A and User B are both using a distributed database, managed by Agents 1 and 2, whom each have their own Internal Model](/img/generated/risks/coordination/cap1.png)
+![User A and User B are both using a distributed database, managed by Agents 1 and 2, whom each have their own Internal Model](/img/generated/risks/coordination/cap1.svg)
 
 In the diagram above, we have just two agents `1` and `2`, in order to keep things simple.  `User A` _writes something_ to the database, then `User B` _reads it back_ afterwards.     
 
@@ -202,19 +202,19 @@ In the above diagram, you can already see that there is a _race condition_:  if 
 
 #### With an AP System
 
-![In an AP system, the User B may get back a _stale value_ for X](/img/generated/risks/coordination/cap-ap.png)
+![In an AP system, the User B may get back a _stale value_ for X](/img/generated/risks/coordination/cap-ap.svg)
 
 Here, we are going to consider what happens when communication breaks down between Agents 1 and 2.  That is, they are _isolated_ from communicating with each other.  As shown in the above diagram, in an `AP` system, we have a database that is able to survive partitioning, and always returns a response, but may not be consistent.  The value `B` will get back will depend on whether they talk with Agent 1 or Agent 2.  
 
 #### With an CP System
 
-![In an CP system, the User B won't get anything back for X, because Agent 2 can't be sure it has the latest value](/img/generated/risks/coordination/cap-cp.png).  
+![In an CP system, the User B won't get anything back for X, because Agent 2 can't be sure it has the latest value](/img/generated/risks/coordination/cap-cp.svg).  
 
 To be consistent, Agent 2 needs to check with Agent 1 to make sure it has the latest value for X.  Where Agent 2 is left waiting for Agent 1 to re-appear, we are _blocked_.  So CP systems will block when partitioned.
 
 #### With an CA System
 
-![In an CA system, we can't have partition tolerance, so in order to be consistent a single Agent has to do all the work](/img/generated/risks/coordination/cap-ca.png)
+![In an CA system, we can't have partition tolerance, so in order to be consistent a single Agent has to do all the work](/img/generated/risks/coordination/cap-ca.svg)
 
 Finally, if we have a CA system, we are essentially saying that _only one agent is doing the work_.  (You can't partition a single agent, after all).  But this leads to [Resource Allocation](https://en.wikipedia.org/wiki/Resource_allocation) and **Contention** around use of the scarce resource of `Agent 2`'s attention. (Both [Coordination Risk](/tags/Coordination-Risk) issues we met earlier.)  
 

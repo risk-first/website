@@ -13,7 +13,7 @@ part_of: Feature Risk
 
 <RiskIntro fm={frontMatter} />
 
-![Conceptual Integrity Risk](/img/generated/risks/feature/conceptual-integrity-risk.png) 
+![Conceptual Integrity Risk](/img/generated/risks/feature/conceptual-integrity-risk.svg) 
 
 [Conceptual Integrity Risk](/tags/Conceptual-Integrity-Risk) is the risk that chasing after features leaves the product making no sense, and therefore pleasing no-one.   
 

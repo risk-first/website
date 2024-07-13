@@ -15,7 +15,7 @@ part_of: Scarcity Risk
 
 <RiskIntro fm={frontMatter} />
 
-![Funding Risk](/img/generated/risks/scarcity/funding-risk.png)
+![Funding Risk](/img/generated/risks/scarcity/funding-risk.svg)
 
 On a lot of software projects you are "handed down" deadlines from above and told to deliver by a certain date or face the consequences. <!-- tweet-end --> But sometimes you're given a budget instead, which really just adds another layer of abstraction to the [Schedule Risk](/tags/Schedule-Risk).  That is, do I have enough funds to cover the team for as long as I need them?
 

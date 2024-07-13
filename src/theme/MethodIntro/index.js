@@ -29,7 +29,7 @@ const Practice = ({tag, reason, uses}) => {
 export default ({details}) => {
 	const pl = useLocation().pathname
 	const stripped = pl.endsWith('/') ? pl+"index" : pl
-	const imageLink = "/img/generated/single/" + stripped + ".png"
+	const imageLink = "/img/generated/single/" + stripped + ".svg"
 	
 	
     return <div className={styles.methodIntro}>

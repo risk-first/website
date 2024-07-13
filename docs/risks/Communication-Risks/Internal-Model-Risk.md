@@ -14,6 +14,6 @@ part_of: Communication Risk
 
 <RiskIntro fm={frontMatter} />
 
-![Internal Model Risks](/img/generated/risks/communication/communication_internal_model_risks.png)
+![Internal Model Risks](/img/generated/risks/communication/communication_internal_model_risks.svg)
 
 The communication process so far has been fraught with risks, but now let's look at risks specific to our internal models.

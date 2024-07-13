@@ -19,7 +19,7 @@ tweet: yes
 
 # Health
 
-![Stay Healthy](/img/generated/principles/stay-healthy.png)
+![Stay Healthy](/img/generated/principles/stay-healthy.svg)
 
 People in industries like banking and insurance think mainly about risk measured in _money_.  But risk isn't just money.  Life is filled with non-monetary risks.
 
@@ -47,7 +47,7 @@ However, in all these cases, health refers to something slightly different, perh
 
 The most obvious indicator of health in _living things_ is whether they're alive or dead.  But since there is no clear definition of exactly [what a living thing is](https://en.wikipedia.org/wiki/Life), scientists fall back to describing the _behaviours_ of living things.  For example, [metabolism](https://en.wikipedia.org/wiki/Metabolism) (taking in energy or other inputs, and using it to self-organise), [homeostasis](https://en.wikipedia.org/wiki/Homeostasis) (having some kind of feedback loops to maintain an internal state) or [adaptation](https://en.wikipedia.org/wiki/Cellular_adaptation) (responding to changes in the environment).
 
-![Healthy Behaviours](/img/generated/introduction/health4.png)
+![Healthy Behaviours](/img/generated/introduction/health4.svg)
 
 When a living thing is no longer exhibiting these behaviours, it is dead.  But, the same is true of our other examples too:  businesses go bust, projects get cancelled, dinner parties end.  At the larger end of this scale, we can say that a country or a project is alive so long as there are people participating in it:  to be alive, the constituent components must be alive too.
 
@@ -69,7 +69,7 @@ A different approach to judging the health of a thing might be to take measureme
 
 Metrics are difficult though.  Choosing the _right_ metrics, knowing their weaknesses and being aware of what knowledge is missing is a whole other discussion which we look at in [Map And Territory Risk](https://riskfirst.org/risks/Map-And-Territory-Risk).  Taking the car plant example again, what does it mean to produce a hundred cars a day?  Is it good or bad?  Is this directly tied into how healthy our business is?  Does it matter if the cars aren't selling?
 
-![Measuring Fitness](/img/generated/introduction/health1.png)
+![Measuring Fitness](/img/generated/introduction/health1.svg)
 
 ### Health as Critical Acclaim
 
@@ -81,7 +81,7 @@ Building a new feature on a software project fits into this category:  although 
 
 Although you might not have visibility of the _end result_, sometimes it's enough to care about _the health of the process itself_.  So a fourth perspective on health is:  does the project/person/business control the resources it needs?
 
-![Health as a product of Power and Safety](/img/generated/introduction/health2.png)   
+![Health as a product of Power and Safety](/img/generated/introduction/health2.svg)   
 
 When talking about **businesses**, economists call these resources [Factors of Production](https://en.wikipedia.org/wiki/Factors_of_production), dividing them into categories like land, labour and capital.  
 
@@ -97,7 +97,7 @@ Health isn't just about considering where you are now, but also how _precarious_
 
 So, we have to go further and consider - what are the health risks I am exposed to?   What are the risks due to my environment, my diet, my behaviour?   If I live in a high-crime area, in a high-fire-risk house, engaging in lots of dangerous activities then this should be taken into account when judging my health.
 
-![Risks affecting health](/img/generated/introduction/health3.png)
+![Risks affecting health](/img/generated/introduction/health3.svg)
 
 ## Health At Different Scales
 

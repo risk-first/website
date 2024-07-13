@@ -89,7 +89,7 @@ In the [Financial Services](https://en.wikipedia.org/wiki/Financial_services) in
 - **[Credit Risk](https://en.wikipedia.org/wiki/Credit_risk)**, the risk that someone who owes you a payment at a specific point in time might not pay it back.
 - **[Liquidity Risk](https://en.wikipedia.org/wiki/Liquidity_risk)**, the risk that you can't find a market to sell/buy something, usually leading to a shortage of ready cash.
 
-![Correlation of Risks in the Financial Crisis](/img/generated/risks/landscape/causation2.png)
+![Correlation of Risks in the Financial Crisis](/img/generated/risks/landscape/causation2.svg)
 
 In the financial crisis of 2007, these models of risk didn't turn out to be much use.   Although there are lots of conflicting explanations of what happened, one way to look at it is this:
 
@@ -99,7 +99,7 @@ In the financial crisis of 2007, these models of risk didn't turn out to be much
 
 All the [Risks](/thinking/Glossary.md#risk) were [correlated](https://www.investopedia.com/terms/c/correlation.asp).  That is, they were affected by the _same underlying events_, or _each other_.
 
-![Causation shown on a Risk-First Diagram.  More complexity is likely to lead to more Operational Risk](/img/generated/risks/landscape/causation.png)
+![Causation shown on a Risk-First Diagram.  More complexity is likely to lead to more Operational Risk](/img/generated/risks/landscape/causation.svg)
 
 It's like this with software risks, too, sadly.  For example, [Operational Risk](/tags/Operational-Risk) is going to be heavily correlated with [Complexity Risk](/tags/Complexity-Risk).  Just like a machine, the more complex it is, the more likely it is to fail, and the more likely it will fail in some unexpected, difficult-to-diagnose way.  
 

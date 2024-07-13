@@ -7,7 +7,7 @@ featured:
 sidebar_position: 8
 ---
 
-![Communication Risks, Summarised](/img/generated/risks/communication/communication_3.png)
+![Communication Risks, Summarised](/img/generated/risks/communication/communication_3.svg)
 
 In this section, we've looked at [Communication Risk](/tags/Communication-Risk) itself and broken it down into six sub-types of risk as shown in the diagram above.  Again, we are calling out _patterns_ here. You could classify communication risks in other ways, but concepts like [Learning Curve Risk](#learning-curve-risk) and [Invisibility Risk](#invisibility-risk) we will be using again in again in Risk-First.
 

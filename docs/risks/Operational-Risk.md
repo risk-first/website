@@ -56,7 +56,7 @@ If we are designing a software system to "live" in the real world we have to be 
 
 > "Operations management is an area of management concerned with designing and controlling the process of production and redesigning business operations in the production of goods or services.  It involves the responsibility of ensuring that business operations are efficient in terms of using as few resources as needed and effective in terms of meeting customer requirements. " - [Operations Management, _Wikipedia_](https://en.wikipedia.org/wiki/Operations_management)
 
-![Model of Operations Management, adapted from Slack _et al._](/img/generated/risks/operational/slack.png)
+![Model of Operations Management, adapted from Slack _et al._](/img/generated/risks/operational/slack.svg)
 
 The diagram above is a Risk-First interpretation of [Slack _et al_'s model of Operations Management](https://amzn.eu/d/b6ZjuMu).  This model breaks down some of the key abstractions of the discipline: 
 
@@ -66,7 +66,7 @@ The diagram above is a Risk-First interpretation of [Slack _et al_'s model of Op
  - **Resources**:  whether _transformed_ resources (like electricity or information, say) or _transforming_ resources (like staff or equipment).  
  - **Customers**: which supply it with money in return for goods and services.
  
-![Risk-First Operations Management:  Taking Action, inspired by the work of Slack _et al._](/img/generated/risks/operational/operational-risk.png)
+![Risk-First Operations Management:  Taking Action, inspired by the work of Slack _et al._](/img/generated/risks/operational/operational-risk.svg)
  
 The healthy functioning of the **Transform Process** is the domain of [Operations Management](#operations-management).  As the above diagram shows (again, modified from Slack _et al._) this involves the following types of actions.
 
@@ -80,7 +80,7 @@ Let's look at each of these actions in turn.
 
 ## Control
 
-![Control, Monitoring And Detection](/img/generated/risks/operational/monitoring-detection.png)
+![Control, Monitoring And Detection](/img/generated/risks/operational/monitoring-detection.svg)
 
 Since humans and machines have different areas of expertise, and because [Operational Risks](/tags/Operational-Risk) are often novel, it's often not optimal to try and automate everything.  A good operation will consist of a mix of human and machine actors, each playing to their strengths (see the table below). 
 
@@ -105,7 +105,7 @@ There are plenty of [Hidden Risks](/thinking/Glossary.md#hidden-risk) within the
 
 ## Planning
 
-![Forecasting and Planning Actions](/img/generated/risks/operational/forecasting-planning.png)
+![Forecasting and Planning Actions](/img/generated/risks/operational/forecasting-planning.svg)
 
 In order to _control_ an operation, we need targets and plans to _control against_.  For a system to run well, it needs to carefully manage unreliable dependencies, and ensure their safety and availability.  In the example of the humans, say, it's the difference between [Hunter-Gathering](https://en.wikipedia.org/wiki/Hunter-gatherer) (picking up food where we find it) and [Agriculture](https://en.wikipedia.org/wiki/Agriculture) (controlling the environment and the resources to grown crops).
 
@@ -113,7 +113,7 @@ As the diagram above shows, we can bring [Planning](#planning) to bear on depend
 
 ## Design
 
-![Design and Change Activities](/img/generated/risks/operational/design-change.png)
+![Design and Change Activities](/img/generated/risks/operational/design-change.svg)
 
 Since our operation exists in a world of risks like [Red Queen Risk](/tags/Red-Queen-Risk) and [Feature Drift Risk](/tags/Feature-Drift-Risk), we would expect that the output of our [Planning](#planning) actions would result in changes to our operation.  
 
@@ -132,7 +132,7 @@ No system can be perfect, and after it meets the real world, we will want to imp
 
 So there is a tension between "you only get one chance to make a first impression" and "gilding the lily" (perfectionism).  In the past I've seen this stated as _pressure to ship vs pressure to improve_.
 
-![Balance of Risks from Delivering Software](/img/generated/risks/operational/ship-it.png)
+![Balance of Risks from Delivering Software](/img/generated/risks/operational/ship-it.svg)
 
 A Risk-First re-framing of this (as shown in the diagram above) might be the balance between:
 

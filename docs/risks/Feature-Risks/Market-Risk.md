@@ -13,7 +13,7 @@ part_of: Feature Risk
 
 <RiskIntro fm={frontMatter} />
 
-![Market Risk](/img/generated/risks/feature/market-risk.png) 
+![Market Risk](/img/generated/risks/feature/market-risk.svg) 
 
 Market Risk is a term from finance:
 

@@ -60,7 +60,7 @@ In order to illustrate some of the different [Dependency Risks](/tags/Dependency
 
 Normally, we'll use the same dependency each day.  This speaks to the fact that each of these approaches has different [Feature Fit Risk](/tags/Feature-Fit-Risk).   Perhaps you choose going by bus over going by car because of the risk that owning the car is expensive, or that you might not be able to find somewhere to park it.
 
-![Two-Dimensions of Feature Fit for the bus-ride](/img/generated/risks/dependency/dependency-risk-fit.png)
+![Two-Dimensions of Feature Fit for the bus-ride](/img/generated/risks/dependency/dependency-risk-fit.svg)
 
 But there are a couple of problems with buses you don't have with your own car, as shown in the above diagram. A bus might take you to lots of in-between places you _didn't_ want to go, which is [Conceptual Integrity Risk](/tags/Conceptual-Integrity-Risk) and we saw this already in the section on [Feature Risk](/tags/Feature-Risk).  Also, it might not go at the time you want it to, which is [Feature-Fit-Risk](/tags/Feature-Fit-Risk).  
 
@@ -73,7 +73,7 @@ Dependencies (like the bus) make life simpler for you by taking on complexity fo
 
 In software, dependencies are a way to manage [Complexity Risk](/tags/Complexity-Risk).  The reason for this is that a dependency gives you an [abstraction](/thinking/Glossary.md#abstraction): you no longer need to know _how_ to do something, (that's the job of the dependency), you just need to interact with the dependency properly to get the job done.  Buses are _perfect_ for people who can't drive, after all.
 
-![Dependencies help with complexity risk, but come with their own attendant risks](/img/generated/risks/dependency/dependency-risk.png)
+![Dependencies help with complexity risk, but come with their own attendant risks](/img/generated/risks/dependency/dependency-risk.svg)
 
 But (as shown in the above diagram) this means that all of the issues of abstractions that we covered in [Communication Risk](/tags/Communication-Risk) apply.  For example, there is [Invisibility Risk](/tags/Invisibility-Risk) because you probably don't have a full view of what the dependency is doing.  Nowadays, bus stops have a digital "arrivals" board which gives you details of when the bus will arrive, and shops publish their opening hours online.  But, abstraction always means the loss of detail (the bus might be two minutes away but could already be full).
 

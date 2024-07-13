@@ -20,7 +20,7 @@ tweet: yes
 
 # One Size Fits No-One
 
-![Fit Process To Risk](/img/generated/principles/risk-leads-process.png)
+![Fit Process To Risk](/img/generated/principles/risk-leads-process.svg)
 
 Why are [Software Methodologies](https://en.wikipedia.org/wiki/Software_development_process) all different? 
 
@@ -48,7 +48,7 @@ In this section, we're going to have a brief look at some different software met
 
 > "The waterfall development model originated in the manufacturing and construction industries; where the highly structured physical environments meant that design changes became prohibitively expensive much sooner in the development process. When first adopted for software development, there were no recognized alternatives for knowledge-based creative work." - [Waterfall Model, _Wikipedia_](https://en.wikipedia.org/wiki/Waterfall_model)
 
-![Waterfall Actions](/img/generated/introduction/waterfall.png) 
+![Waterfall Actions](/img/generated/introduction/waterfall.svg) 
 
 Waterfall is a family of methodologies advocating a linear, stepwise approach to the processes involved in delivering a software system.  The basic idea behind Waterfall-style methodologies is that the software process is broken into distinct stages, as shown in the diagram above.  These usually include:
 
@@ -61,7 +61,7 @@ Waterfall is a family of methodologies advocating a linear, stepwise approach to
 
 Because Waterfall methodologies are borrowed from _the construction industry_, they manage the risks that you would care about in a construction project.  Specifically, minimising the risk of rework, and the risk of costs spiralling during the physical phase of the project.  For example, pouring concrete is significantly easier than digging it out again after it sets.  
 
-![Waterfall, Specifications and Requirements Capture](/img/generated/introduction/waterfall2.png)
+![Waterfall, Specifications and Requirements Capture](/img/generated/introduction/waterfall2.svg)
 
 Construction projects are often done by tender which means that the supplier will bid for the job of completing the project, and deliver it to a fixed price.   This is a risk-management strategy for the client:  they are transferring the risk of construction difficulties to the supplier, and avoiding the [Agency Risk](/tags/Agency-Risk) that the supplier will "pad" the project and take longer to implement it than necessary, charging them more in the process.  In order for this to work, both sides need to have a fairly close understanding of what will be delivered, and this is why a specification is created.
 
@@ -75,7 +75,7 @@ In construction this makes a lot of sense.  But _software projects are not the s
 
 So, the same actions Waterfall prescribes to mitigate rework and cost-overruns in the building industry do not address (and perhaps exacerbate) the two issues raised above when applied to software.
 
-![Waterfall, Applied to a Software Project](/img/generated/introduction/waterfall3.png)
+![Waterfall, Applied to a Software Project](/img/generated/introduction/waterfall3.svg)
 
 As you can see in the diagram above, some of the risks on the left _are the same_ as the ones on the right:  the actions taken to manage them made no difference (or made things worse).  The inability to manage these risks led to the identification of a "Software Crisis", in the 1970's:
 
@@ -85,7 +85,7 @@ As you can see in the diagram above, some of the risks on the left _are the same
 
 The Software Crisis showed that, a lot of the time, up-front requirements-capture, specification and fixed-price bids did little to manage cost and schedule risks on software projects.  So it's not surprising that by the 1990's, various different groups of software engineers were advocating "Agile" techniques which did away with those actions.
 
-![Risks, and the practices that manage them in Extreme Programming](/img/generated/introduction/xp.png)
+![Risks, and the practices that manage them in Extreme Programming](/img/generated/introduction/xp.svg)
 
 In [Extreme Programming Explained](http://amzn.eu/d/1vSqAWa), Kent Beck breaks down his methodology, 'Extreme Programming', listing the risks he wants to address and the actions with which he proposes to address them.  The diagram above summarises the main risks and actions he talks about.   These are _different_ risks to those addressed by Waterfall, so unsurprisingly, they lead to different actions.
 
@@ -123,7 +123,7 @@ When we [take action](/thinking/Glossary.md#taking-action) according to a method
 
 ## Choosing A Methodology
 
-![Inappropriate Methodologies create their own risks](/img/generated/introduction/one_size.png)
+![Inappropriate Methodologies create their own risks](/img/generated/introduction/one_size.svg)
 
 There is value in adopting a methodology as a complete collection of processes:  choosing a methodology (or any process) reduces the amount of thinking individuals have to do, and it becomes _the process_ that is responsible for failure, not the individual (as shown in the above diagram).  
 
@@ -133,7 +133,7 @@ It's nice to lay the blame somewhere else.  But, if we genuinely care about our 
 
 An off-the-shelf methodology is unlikely to fit the risks of any project exactly.  Sometimes, we need to break down methodologies into their component practices, and apply just the practices we need.  This requires a much more fine-grained understanding of how the individual practices work, and what they bring.  
 
-![Methodologies, Actions, Risks, Goals](/img/generated/executive-summary/pattern_language.png)
+![Methodologies, Actions, Risks, Goals](/img/generated/executive-summary/pattern_language.svg)
 
 As the above diagram shows, different methodologies advocate different practices, and different practices manage different risks.   If we want to understand methodologies, or choose practices from one, we really need to understand the _types of risks_ we face on software projects.  This is where we [go next](/risks/Start.md).
 

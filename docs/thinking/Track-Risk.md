@@ -17,7 +17,7 @@ tweet: yes
 
 In this section we're going to look at the importance of keeping track of risks.  In fact, I'll make the case that because this is so important, you're already doing it, whether you realise it or not. 
 
-![Tracking Risks](/img/generated/principles/track-risks.png)
+![Tracking Risks](/img/generated/principles/track-risks.svg)
 
 ## Risk Registers
 
@@ -87,7 +87,7 @@ Much more likely, it will have a field for _priority_, or allow the ordering of 
 
 ## Visualising Risks
 
-![Risk Matrix of Dinner Party Risks](/img/generated/introduction/risk_matrix.png)
+![Risk Matrix of Dinner Party Risks](/img/generated/introduction/risk_matrix.svg)
 
 A risk matrix presents a graphical view on where risks exist.  The diagram above is an example, showing the risks from the dinner party in the [A Simple Scenario](A-Simple-Scenario.md) section.  The useful thing about this visualisation is it helps focus attention on the risks at the top and to the right - those with the biggest impact and probability.
 
@@ -101,7 +101,7 @@ For example, let's say I raise an issue saying that I want a button to sort an a
 
 Although I'm asking for a sort button, there are other ways to solve this problem: a search feature might work even better and the ability to cut-and-paste the user list so that I can put it into a text editor (which would provide the sort and search features instead) might be a perfectly good work-around.   Coming up with effective solutions to risks is where design comes in.  
 
-![Payoff of different actions to take against the risk of ruining the food](/img/generated/introduction/risk_matrix_2.png)
+![Payoff of different actions to take against the risk of ruining the food](/img/generated/introduction/risk_matrix_2.svg)
 
 Going back to the dinner party example, the above diagram considers solutions to the problem of _ruining the food_.  There are a number of alternative solutions here:  Option 1 is deemed the best as it has the least attendant risk, but option 2 also improves things.  Option 5 might be prohibitively expensive, and option 4 might run the risk of being found out by the guests!   Option 3 doesn't change things in the slightest.  
 

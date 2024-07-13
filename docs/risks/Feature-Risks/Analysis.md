@@ -47,7 +47,7 @@ Darwin's conception of fitness was not one of athletic prowess, but how well an 
  - **Expectation**, what the user _expects_.
  - **Reality**, what they actually _get_.
 
-![Feature Risks Assembled.  Fit Risks, shown as _gaps_, as in the _Service Quality Model_](/img/generated/risks/feature/all-feature-risk.png) 
+![Feature Risks Assembled.  Fit Risks, shown as _gaps_, as in the _Service Quality Model_](/img/generated/risks/feature/all-feature-risk.svg) 
 
 For further reading, you can check out [The Service Quality Model](https://en.wikipedia.org/wiki/SERVQUAL) which the diagram above is derived from.  This model analyses the types of _quality gaps_ in services and how consumer expectations and perceptions of a service arise.
 
@@ -62,7 +62,7 @@ Two risks, [Feature Access Risk](/tags/Feature-Access-Risk) and [Market Risk](/t
 
 ### Fit, Audience and Change
 
-![Risks of Change either of the product or the expectations of clients.](/img/generated/risks/feature/all-feature-risk2.png) 
+![Risks of Change either of the product or the expectations of clients.](/img/generated/risks/feature/all-feature-risk2.svg) 
 
 Two risks further consider how the **fit** and **audience** _change_: [Regression Risk](#regression-risk) and [Feature Drift Risk](#feature-drift-risk).  We call this _Change_ in the sense that:
 

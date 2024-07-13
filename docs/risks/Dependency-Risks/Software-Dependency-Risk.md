@@ -18,7 +18,7 @@ part_of: Dependency Risk
 
 In this section, we're going to look specifically at _Software_ dependencies, although many of the concerns we'll raise here apply equally to all the other types of dependency we outlined in [Dependency Risk](/tags/Dependency-Risk). 
 
-![Software Dependency Risk](/img/generated/risks/software-dependency/software-dependency-risk.png)
+![Software Dependency Risk](/img/generated/risks/software-dependency/software-dependency-risk.svg)
 
 In this section we will look at:
 
@@ -110,13 +110,13 @@ But outside, the form is simple, and designed for humans to use.   This is _[erg
 
 ### Protocols and Ergonomics
 
-![Software Dependency Ergonomics:  adopting simple dependencies](/img/generated/risks/software-dependency/ergonomics1.png)
+![Software Dependency Ergonomics:  adopting simple dependencies](/img/generated/risks/software-dependency/ergonomics1.svg)
 
 The _interface_ of a tool is the part we touch and interact with, via its protocol.    If you adopt _simple_ dependencies (as in the diagram above) you don't accrue [Communication Risk](/tags/Communication-Risk), but you might have to orchestrate _more_ dependencies, picking up [Complexity Risk](/tags/Complexity-Risk) in your software.
 
 The interface of a dependency expands when you ask it to do a wider variety of things.  An easy-to-use drill does one thing well: it turns drill-bits at useful levels of torque for drilling holes and sinking screws.  But if you wanted it to also operate as a lathe, a sander or a strimmer (all basically mechanical things going round) you would have to sacrifice the conceptual integrity for a more complex protocol, probably including adapters, extensions, handles and so on.
 
-![Software Dependency Ergonomics:  adopting complex dependencies](/img/generated/risks/software-dependency/ergonomics2.png)
+![Software Dependency Ergonomics:  adopting complex dependencies](/img/generated/risks/software-dependency/ergonomics2.svg)
 
 Adopting complex software dependencies (as shown in the diagram above) might allow you to avoid complexity in your own codebase.  However, this likely gives you a longer learning curve before you understand the tool, and you _might_ run into issues later where the tool fails to do something critical that you wanted (a [Dead End Risk](/tags/Dead-End-Risk)).
 
@@ -125,7 +125,7 @@ Using a software dependency allows us to split a project's complexity into two:
  - The inner complexity of the dependency (how it works internally, its own [internal complexity](Complexity-Risk.md#kolmogorov-complexity)).
  - The complexity of the instructions that we need to write to make the tool work, [the protocol complexity](/tags/Protocol-Risk), which will be a function of the complexity of the tool itself.
 
-![Types of Complexity For a Software Dependency](/img/generated/risks/software-dependency/protocol-complexity.png)
+![Types of Complexity For a Software Dependency](/img/generated/risks/software-dependency/protocol-complexity.svg)
  
 As the above diagram shows, the bulk of the complexity of a software tool is hidden behind its interface.  The more complex the _purpose_ of the tool, the more complex the interface will need to be.
 
@@ -162,13 +162,13 @@ One of the hidden risks of embarking on a code-your-own approach is that the fea
  - Reminders to complete the sign up process
  - ... and so on.
 
-![Code-Your-Own mitigates immediate feature risk, but at the expense of schedule risk, complexity risk and communication risk.  There is also a hidden risk of features you don't yet know you need.](/img/generated/risks/software-dependency/code-your-own.png) 
+![Code-Your-Own mitigates immediate feature risk, but at the expense of schedule risk, complexity risk and communication risk.  There is also a hidden risk of features you don't yet know you need.](/img/generated/risks/software-dependency/code-your-own.svg) 
 
 ### Unwritten Software
 
 Sometimes you will pick up [Dependency Risk](/tags/Dependency-Risk) from _unwritten software_.  This commonly happens when work is divided amongst team members, or teams.  
 
-![Sometimes, a module you're writing will depend on unwritten code](/img/generated/risks/software-dependency/unwritten.png)
+![Sometimes, a module you're writing will depend on unwritten code](/img/generated/risks/software-dependency/unwritten.svg)
 
 If a component **A** of our project _depends_ on **B** for some kind of processing, you might not be able to complete **A** before writing **B**.   This makes _scheduling_ the project harder, and if component **A** is a risky part of the project, then the chances are you'll want to mitigate risk there first.  
 
@@ -180,7 +180,7 @@ There are a couple of ways of doing this:
 
  - **Coding To Interfaces**:  if standards aren't an option, but the surface area of **B** that **A** uses is quite small and obvious, you can write a small interface for it, and work behind that, using a [Mock](https://en.wikipedia.org/wiki/Mock_object) for **B** while you're waiting for finished component.  Write the interface to cover only what **A** _needs_, rather than everything that **B** _does_ in order to minimise the risk of [Leaky Abstractions](https://en.wikipedia.org/wiki/Leaky_abstraction).
 
-![Coding to a standard on an interface breaks the dependency on unwritten software](/img/generated/risks/software-dependency/unwritten-mitigation.png)
+![Coding to a standard on an interface breaks the dependency on unwritten software](/img/generated/risks/software-dependency/unwritten-mitigation.svg)
 
 ### Conway's Law
 
@@ -211,7 +211,7 @@ Unfortunately, we know that most decisions _don't_ really get made this way.  We
 
 But, leaving that aside, let's try to build a model of what this decision making process _should_ involve.  Luckily, other authors have already considered the problem of choosing good software libraries, so let's start there.
 
-![Software Library Dependencies, Attendant Risks](/img/generated/risks/software-dependency/software_dependency_table_1_large.png)
+![Software Library Dependencies, Attendant Risks](/img/generated/risks/software-dependency/software_dependency_table_1_large.svg)
 
 In the table above, I am summarising three different sources (linked at the end of the section), which give descriptions of which factors to look for when choosing open-source libraries.  Here are some take-aways:
 
@@ -219,7 +219,7 @@ In the table above, I am summarising three different sources (linked at the end 
  - **[Boundary Risk](/tags/Boundary-Risk) is also very important**:  You are going to have to _live_ with your choices for the duration of the project, so it's worth spending the effort to either ensure that you're not going to regret the decision, or that you can change direction later.
  - **Third is [Communication Risk](/tags/Communication-Risk)**:  how well does the project deal with its users?  If a project is "famous", then it has communicated its usefulness to a wide, appreciative audience.  Avoiding [Communication Risk](/tags/Communication-Risk) is also a good reason to pick _tools you are already familiar with_.
   
-![Software Libraries Risk Tradeoff](/img/generated/risks/software-dependency/library.png) 
+![Software Libraries Risk Tradeoff](/img/generated/risks/software-dependency/library.svg) 
 
 #### Sources
 
@@ -247,7 +247,7 @@ Businesses opt for Software-as-a-Service (SaaS) because:
 
 SaaS is now a very convenient way to provide _commercial_ software.   Popular examples of SaaS might be [SalesForce](https://en.wikipedia.org/wiki/Salesforce.com), or [GMail](https://en.wikipedia.org/wiki/Gmail).  Both of which follow the commonly-used [Freemium](https://en.wikipedia.org/wiki/Freemium) model, where the basic service is provided free but upgrading to a paid account gives extra benefits.  
 
-![Software-as-a-Service (SaaS) Attendant Risks](/img/generated/risks/software-dependency/software_dependency_table_2_large.png)
+![Software-as-a-Service (SaaS) Attendant Risks](/img/generated/risks/software-dependency/software_dependency_table_2_large.svg)
 
 The diagram above summarises the risks raised in some of the available literature (sources below).  Some take-aways:
 
@@ -255,7 +255,7 @@ The diagram above summarises the risks raised in some of the available literatur
 - With [Feature Risk](/tags/Feature-Risk) you now have to contend with the fact that the software will be upgraded _outside your control_, and you may have limited control over which features get added or changed. 
 - [Boundary Risk](/tags/Boundary-Risk) is also a different proposition: you are tied to the software provider by _a contract_.  If the service changes in the future, or isn't to your liking, you can't simply fork the code (like you could with an open source project).
 
-![Risk Tradeoff From Using Software as a Service (SaaS)](/img/generated/risks/software-dependency/saas.png)
+![Risk Tradeoff From Using Software as a Service (SaaS)](/img/generated/risks/software-dependency/saas.svg)
 
 #### Sources
 
@@ -274,7 +274,7 @@ But these are not the only ways to do it, and there's clearly no one _right_ way
 
 Let's expand this view slightly and look at where different pieces of software sit on these axes:
 
-![Software Dependencies, Pricing, Delivery Matrix Risk Profiles](/img/generated/risks/software-dependency/software_dependency_table_3_sideways.png)
+![Software Dependencies, Pricing, Delivery Matrix Risk Profiles](/img/generated/risks/software-dependency/software_dependency_table_3_sideways.svg)
 
 - Where there is value in **the [Network Effect](https://en.wikipedia.org/wiki/Network_effect)** it's often a sign that the software will be free, or open source:  programming languages and Linux are the obvious examples of this.  Bugs are easier to find when there are lots of eyes looking, and learning the skill to use the software has less [Boundary Risk](/tags/Boundary-Risk) if you know you'll be able to use it at any point in the future.
 - At the other end of the spectrum, clients will happily pay for software if it clearly **reduces [Operational Risk](/tags/Operational-Risk)**.  Take [Amazon Web Services (AWS)](https://en.wikipedia.org/wiki/Amazon_Web_Services).  The essential trade here is that you substitute the complexity of hosting and maintaining various pieces of hardware, in exchange for metered payments ([Funding Risk](/tags/Funding-Risk) for you).  Since the AWS _interfaces_ are specific to Amazon, there is significant [Boundary Risk](/tags/Boundary-Risk) in choosing this option.

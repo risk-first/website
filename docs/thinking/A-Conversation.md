@@ -21,7 +21,7 @@ tweet: yes
 
 Uniquely as a species, humans are fascinated by story-telling _precisely because_ it's a powerful way to share details about real-world risks.  
 
-![Share Your Models](/img/generated/principles/share-models.png)
+![Share Your Models](/img/generated/principles/share-models.svg)
 
 As humans, we all bring our own experiences to bear on the best way to solve problems.  Sometimes, experience tells us that solving a problem one way will create a new _worse_ problem.
 

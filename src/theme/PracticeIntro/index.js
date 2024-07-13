@@ -64,7 +64,7 @@ export default ({details}) => {
 
 	const pl = useLocation().pathname
 	const stripped = pl.endsWith('/') ? pl+"index" : pl
-	const imageLink = "/img/generated/single/" + stripped + ".png"
+	const imageLink = "/img/generated/single/" + stripped + ".svg"
 	const allTags = usePluginData('category-listing');
 
 	const myTag = allTags[title]

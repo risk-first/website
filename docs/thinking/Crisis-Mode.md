@@ -14,7 +14,7 @@ tweet: yes
 
 In this section we're going to explore the assertion that good risk management principles apply irrespective of how much pressure you're under.   
 
-![There's No Crisis](/img/generated/principles/crisis.png)
+![There's No Crisis](/img/generated/principles/crisis.svg)
 
 As software developers, we face crises of different sorts. Perhaps there's a production outage and we're up at 3am scrambling around to recover data from backups, or a sudden meeting with clients or investors arises in which we have to scramble to put together a prototype in short order.  Agile software development doesn't have much to say about what we should do in these situations:  Scrum's rigorous 2-week sprint model doesn't account for the sprint being interrupted by urgent events.
 

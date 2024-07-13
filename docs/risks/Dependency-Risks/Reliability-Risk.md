@@ -23,7 +23,7 @@ This points to the problem that when we use an external dependency, we are at th
 
 > "... Reliability describes the ability of a system or component to function under stated conditions for a specified period of time." - [Reliability Engineering, _Wikipedia_](https://en.m.wikipedia.org/wiki/Reliability_engineering)
 
-![Reliability Risk](/img/generated/risks/dependency/reliability-risk.png) 
+![Reliability Risk](/img/generated/risks/dependency/reliability-risk.svg) 
 
 It's easy to think about reliability for something like a bus:  sometimes, it's late due to weather, or cancelled due to driver sickness, or the route changes unexpectedly due to road works.  
 

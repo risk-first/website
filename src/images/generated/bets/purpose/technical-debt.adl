@@ -1,0 +1,39 @@
+<diagram
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+	xmlns="http://www.kite9.org/schema/adl"
+	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
+    style="--kite9-layout: right; ">
+      <container id="c1"
+               style="--kite9-sizing: minimize; --kite9-horizontal-align: right;">
+         <risk class="attendant">Premature 
+      Optimisation</risk>
+         <risk class="attendant">Missed
+      Opportunities</risk>
+         <label id="4">
+            Attendant Risks
+            <symbols/>
+         </label>
+      </container>
+      <group>
+         <action class="left"
+                 id="a1"
+                 style="--kite9-min-width: 150pt; --kite9-sizing: minimize; --kite9-margin: 10pt; ">Fix Technical Debt</action>
+         <action class="right"
+                 id="a2"
+                 style="--kite9-min-width: 150pt; --kite9-sizing: minimize; --kite9-margin: 10pt;">Build Features
+    </action>
+      </group>
+      <container id="c2"
+               style="--kite9-sizing: minimize; --kite9-horizontal-align: right;">
+         <risk class="attendant">Dangerous
+     Complexity
+     </risk>
+         <risk class="attendant">Harder
+     Development
+     </risk>
+         <label id="4-yd">
+            Attendant Risks
+            <symbols/>
+         </label>
+      </container>
+   </diagram>

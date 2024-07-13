@@ -18,7 +18,7 @@ part_of: Operational Risk
 
 [Feature Risk](/tags/Feature-Risk) is very fundamental:  if your project has _no_ [Feature Risk](/tags/Feature-Risk) it would be perfect!  And we all know that _can't happen_.
 
-![Feature Risk Family](/img/generated/risks/feature/feature-risks.png)
+![Feature Risk Family](/img/generated/risks/feature/feature-risks.svg)
 
 As a rule of thumb, [Feature Risk](/tags/Feature-Risk) exists in the gaps between what users _want_, and what they _are given_.
 

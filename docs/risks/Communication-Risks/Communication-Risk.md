@@ -38,7 +38,7 @@ So, we are going to go on a journey discovering Communication Risk, covering:
 
 ## A Model Of Communication
 
-![Shannon's Communication Model](/img/generated/risks/communication/communication_1.png)
+![Shannon's Communication Model](/img/generated/risks/communication/communication_1.svg)
 
 In 1948, Claude Shannon proposed this definition of communication:
 
@@ -65,7 +65,7 @@ But it's not just transmission.  [Communication Risk](/tags/Communication-Risk) 
 
 To get inside [Communication Risk](/tags/Communication-Risk), we need to understand **Communication** itself, whether between _machines_, _people_ or _products_:  although these seem very different, the process involved (and the risks) are the same for each.  
 
-![Communication Risk, broken into four areas](/img/generated/risks/communication/communication_2.png)
+![Communication Risk, broken into four areas](/img/generated/risks/communication/communication_2.svg)
 
 There is a symmetry about the steps going on in Shannon's model and we're going to exploit this in order to break down [Communication Risk](/tags/Communication-Risk) into four basic _stages_, as shown in the diagram above: 
 

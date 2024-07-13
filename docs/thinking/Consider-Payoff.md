@@ -42,7 +42,7 @@ tweet: yes
 
 Good software developers are actually good gamblers.  Perhaps not at the poker table, but in the sense that whenever you start a piece of development work you can't be sure exactly how long it'll take, what you'll end up with or whether the audience will be happy with it.  If you manage to get this right then you've made a bet and won.  
 
-![What's the Payoff](/img/generated/principles/payoff.png)
+![What's the Payoff](/img/generated/principles/payoff.svg)
 
 So in this section, we're going to look at _bets_, starting with some of the math around making good bets (in the idealised, gambling sense) and then looking at how software development is different from real gambling, and how we can use that to our advantage.
 
@@ -50,7 +50,7 @@ So in this section, we're going to look at _bets_, starting with some of the mat
 
 First, let's cover some commonly used terms to describe bets and betting which we'll find useful later on.
 
-![Different Payoffs](/img/generated/introduction/payoffs.png)
+![Different Payoffs](/img/generated/introduction/payoffs.svg)
 
 In the diagram above is a simple example of a bet with just two outcomes: win and lose.  It could be a coin flip, or a two horse race or the winner of an evenly-matched tennis game.  Let's talk about some gambling terms: 
 
@@ -234,7 +234,7 @@ So, "Do The Simplest Thing That Could Possibly Work" is really a helpful guideli
 
 An example of where this might be the case, think about how you might write a big, complex function (for example, processing interest accrual on a loan).  The _simplest thing_ might be to just write a single function and a few unit tests for it.  However, a slightly _less simple thing_ that would work might be to decompose the function into multiple steps, each with its own unit tests.  Perhaps you might have a step which calculates the number of days where interest is due (working days, avoiding bank holidays), another step that considers repayments, a step that works out different interest rates and so on.   
 
-![Different payoff for doing the simplest thing vs something slightly less simple with more effort](/img/generated/introduction/risk_landscape_4_simplest.png)
+![Different payoff for doing the simplest thing vs something slightly less simple with more effort](/img/generated/introduction/risk_landscape_4_simplest.svg)
 
 Functional decomposition and extra testing might not be the _simplest thing_, but it might reduce risks in other ways - making the code easier to understand, easier to test and easier to modify in the future.  So deciding up-front to accept this extra complexity and effort in exchange for the other benefits might seem like a better [Payoff](/thinking/Glossary.md#payoff) than the simplest thing. 
  

@@ -20,7 +20,7 @@ tweet: yes
 
 # Cadence
 
-![Multiple Feedback Loops](/img/generated/principles/feedback-loops.png)
+![Multiple Feedback Loops](/img/generated/principles/feedback-loops.svg)
 
 If you want to run a successful dinner party, you have to address all the risks of it _not_ being successful.  For example:  having the right food, inviting the right people, serving the right drinks, and so on.  
 
@@ -28,7 +28,7 @@ On the run-up to the party, as you solve problems, new, previously-hidden ones c
 
 Congratulations, you're in a feedback loop.
 
-![Meeting Reality: reality is changed and so is your internal model.](/img/generated/introduction/model_vs_reality_2.png)
+![Meeting Reality: reality is changed and so is your internal model.](/img/generated/introduction/model_vs_reality_2.svg)
 
 As you can see in the diagram above, it's a **Feedback Loop**.   How _fast_ should we go round this loop?  The longer you procrastinate, the longer it'll be before you find out how your model of the risks you face really stacks up against reality.  
 
@@ -68,7 +68,7 @@ The [Testing Pyramid](http://www.agilenutshell.com/episodes/41-testing-pyramid) 
 - **Integration Tests** have a slightly _slower feedback loop_, so have _few of them_.   Use them when you can't write unit tests (at the application boundaries).
 - **Manual Tests** have a _very slow feedback loop_, so have _even fewer of them_.  Use them as a last resort.  But note - they are essential.
 
-![The Testing Pyramid](/img/generated/introduction/testing_pyramid.png)
+![The Testing Pyramid](/img/generated/introduction/testing_pyramid.svg)
 
 ## Production
 
@@ -76,7 +76,7 @@ You could take this section to mean that [Continuous Delivery](https://en.wikipe
 
 Yes, CD will give you faster feedback loops, but even getting things into production is not the whole story:   the feedback loop isn't complete until people have used the code, and reported back to the development team.  
 
-![Different actions have different feedback loops](/img/generated/introduction/cadence.png)
+![Different actions have different feedback loops](/img/generated/introduction/cadence.svg)
 
 The right answer is to use multiple feedback loops, as shown in the diagram above.  
 

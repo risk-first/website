@@ -26,7 +26,7 @@ The channel characteristics also imply suitability for certain _kinds_ of messag
 
 Shannon discusses that no channel is perfect:  there is always the **risk of noise** corrupting the signal.  A key outcome from Shannon's paper is that there is a tradeoff:  within the capacity of the channel (the **bandwidth**), you can either send lots of information with _higher_ risk that it is wrong, or less information with _lower_ risk of errors.
 
-![Communication Channel Risk](/img/generated/risks/communication/communication_channel_risks.png) 
+![Communication Channel Risk](/img/generated/risks/communication/communication_channel_risks.svg) 
 
 But channel risk goes wider than just this mathematical example:  messages might be delayed or delivered in the wrong order, or not be acknowledged when they do arrive.  Sometimes, a channel is just an inappropriate way of communicating.  When you work in a different time-zone to someone else on your team, there is _automatic_ [Channel Risk](/tags/Channel-Risk), because instantaneous communication is only available for a few hours a day. 
 
@@ -47,6 +47,6 @@ This works both ways.  Let's looks at some of the **Channel Risks** from the poi
  - I've chosen **D**, I now need to persuade my team that **D** is the correct solution...
  - ... and then they also need to understand **D** to do their job too.
 
-![Marketing Communication](/img/generated/risks/communication/communication_marketing.png)
+![Marketing Communication](/img/generated/risks/communication/communication_marketing.svg)
 
 [Internal Models](/thinking/Glossary.md#internal-model) don't magically get populated with the information they need:  they fill up gradually, as shown in the diagram above.  Popular products and ideas _spread_, by word-of-mouth or other means.  Part of the job of being a good technologist is to keep track of new **Ideas**, **Concepts** and **Options**, so as to use them as [Dependencies](/tags/Dependency-Risk) when needed.

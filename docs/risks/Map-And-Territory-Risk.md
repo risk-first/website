@@ -22,7 +22,7 @@ For example, <!-- tweet-start -->Risk-First is about naming _risks_ within softw
 
 Our [Internal Models](/thinking/Glossary.md#internal-model) of the world are constructed from these abstractions and their relationships.
 
-![Maps and Territories, and Communication happening between them](/img/generated/risks/map-and-territory/communication.png) 
+![Maps and Territories, and Communication happening between them](/img/generated/risks/map-and-territory/communication.svg) 
 
 As the diagram above shows, there is a translation going on here: observations about the arrangement of _atoms_ in the world are _communicated_ to our [Internal Models](/thinking/Glossary.md#internal-model) and stored as patterns of _information_ (measured in bits and bytes). <!-- tweet-end --> 
 
@@ -30,7 +30,7 @@ We face [Map And Territory Risk](/tags/Map-And-Territory-Risk) because we base o
 
 > "Polish-American scientist and philosopher Alfred Korzybski remarked that "the map is not the territory"  and that "the word is not the thing", encapsulating his view that an abstraction derived from something, or a reaction to it, is not the thing itself. Korzybski held that many people _do_ confuse maps with territories, that is, confuse models of reality with reality itself." - [Map-Territory Relation, _Wikipedia_](https://en.wikipedia.org/wiki/Map–territory_relation)
 
-![Map And Territory Risk defined](/img/generated/risks/map-and-territory/map-and-territory-risk.png)
+![Map And Territory Risk defined](/img/generated/risks/map-and-territory/map-and-territory-risk.svg)
 
 As the above diagram shows, there are two parts to this risk, which we are going to examine in this section:  
 
@@ -56,7 +56,7 @@ There are two [Map and Territory Risks](/tags/Map-And-Territory-Risk) here:
 
 You could argue that both the SatNav and the Driver's _[Internal Model](/thinking/Glossary.md#internal-model)_ had bugs in them.  That is, they both suffer the [Feature Implementation Risk](/tags/Implementation-Risk) we saw in the [Feature Risk](/tags/Feature-Risk) section.  If a SatNav has too much of this, you'd end up not trusting it, and getting a new one.  With your _personal_ [Internal Model](/thinking/Glossary.md#internal-model), you can't buy a new one, but you may learn to _trust your assumptions less_.
 
-![Some examples of Feature Fit Risks, as manifested in the Internal Model](/img/generated/risks/map-and-territory/map_and_territory_table_1.png)
+![Some examples of Feature Fit Risks, as manifested in the Internal Model](/img/generated/risks/map-and-territory/map_and_territory_table_1.svg)
 
 The diagram above shows how types of [Feature Fit Risk](/tags/Feature-Risk) can manifest in the [Internal Model](/thinking/Glossary.md#internal-model). 
 
@@ -96,7 +96,7 @@ As you might expect, the "Trough of Disillusionment" exists because the **Awaren
  
 Where the **Awareness** and **Knowledge** grow more evenly together, there is no spike in [Map and Territory Risk](/tags/Map-And-Territory-Risk) and we don't see the corresponding "Trough of Disillusionment" at all, as shown in the above chart.
 
-![Audience Feature Risks, as manifested in the Internal Model](/img/generated/risks/map-and-territory/map_and_territory_table_2.png)
+![Audience Feature Risks, as manifested in the Internal Model](/img/generated/risks/map-and-territory/map_and_territory_table_2.svg)
 
 The diagram above shows how Audience-type [Feature Risks](/tags/Feature-Risk) can manifest in the Internal Model. (The Hype Cycle model is available in **Numbers** format [here](https://github.com/risk-first/website/blob/master/numbers/RiskMatrix.numbers).)
 
@@ -165,7 +165,7 @@ SLOC is not on its own a _bad idea_, but using it as a metric for developer prod
 
 > "Measuring programming progress by lines of code is like measuring aircraft building progress by weight.” - [Bill Gates](https://www.goodreads.com/quotes/536587)
 
-![Evolution Feature Risks, as manifested in the Internal Model](/img/generated/risks/map-and-territory/map_and_territory_table_3.png)
+![Evolution Feature Risks, as manifested in the Internal Model](/img/generated/risks/map-and-territory/map_and_territory_table_3.svg)
 
 The diagram above shows how Evolution-type [Feature Risks](/tags/Feature-Risk) can manifest in the Internal Model.
 

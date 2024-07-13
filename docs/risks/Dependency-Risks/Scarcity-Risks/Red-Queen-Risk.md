@@ -27,7 +27,7 @@ The problem with software projects is that tools and techniques change _really f
 
 Now, they didn't _deliberately_ take 15 years to build this game (lots of things went wrong).  But, the longer it took, the more their existing design and code-base were a liability rather than an asset. 
 
-![Red Queen Risk](/img/generated/risks/scarcity/red-queen-risk.png)
+![Red Queen Risk](/img/generated/risks/scarcity/red-queen-risk.svg)
 
 Personally, I have suffered the pain on project teams where we've had to cope with legacy code and databases because the cost of changing them was too high.  This is shown in the above diagram:  mitigating [Red Queen Risk](#red-queen-risk) (by _keeping up-to-date_) has the [Attendant Risk](/thinking/Glossary.md#attendant-risk) of costing time and money, which might not seem worth it.  Any team who is stuck using [Visual Basic 6.0](https://en.wikipedia.org/wiki/Visual_Basic) is here.   
 

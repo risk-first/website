@@ -1,70 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <diagram xmlns="http://www.kite9.org/schema/adl"
-         xmlns:xslt="http://www.kite9.org/schema/xslt"
-         id="dia"
-         xslt:template="/public/templates/risk-first/risk-first-template.xsl">
-   <action id="praco">Too-Long Action</action>
-   <group id="7" style="--kite9-layout: down; ">
-      <group id="6">
-         <group id="15" style="--kite9-layout: down; ">
-            <risk href="/public/templates/risk-first/redesign/risks/dependency_deadline_risk_v2.svg"
-                  id="5">
-               <code id="5-0">D-Dl</code>
-               <title id="5-1">Deadline Risk</title>
-            </risk>
-            <description id="15-0"
-                         style="--kite9-text-bounds-width: 198.828125px; --kite9-text-bounds-height: 35px; text-align: center; ">Missing a specific event</description>
-         </group>
-         <group id="19" style="--kite9-layout: down; ">
-            <risk href="/public/templates/risk-first/redesign/risks/dependency_opportunity_risk_v2.svg"
-                  id="4">
-               <code id="4-0">D-Opp</code>
-               <title id="4-1">Opportunity Risk</title>
-            </risk>
-            <description id="19-0"
-                         style="--kite9-text-bounds-width: 198.828125px; --kite9-text-bounds-height: 35px; text-align: center; ">Limited-time opportunity in 
-the market</description>
-         </group>
-         <group id="20" style="--kite9-layout: down; ">
-            <risk href="/public/templates/risk-first/redesign/risks/dependency_red_queen_risk_v2.svg"
-                  id="3">
-               <code id="3-0">D-Rq</code>
-               <title id="3-1">Red Queen Risk</title>
-            </risk>
-            <description id="20-0"
-                         style="--kite9-text-bounds-width: 198.828125px; --kite9-text-bounds-height: 35px; text-align: center; ">Competitors racing ahead</description>
-         </group>
-         <group id="21" style="--kite9-layout: down; ">
-            <risk href="/public/templates/risk-first/redesign/risks/dependency_funding_risk_v2.svg"
-                  id="2">
-               <code id="2-0">D-Fu</code>
-               <title id="2-1">Funding Risk</title>
-            </risk>
-            <description id="21-0"
-                         style="--kite9-text-bounds-width: 198.828125px; --kite9-text-bounds-height: 35px; text-align: center; ">Running out of funding</description>
-         </group>
-      </group>
-      <description id="6-0"
-                   style="--kite9-text-bounds-width: 392px; --kite9-text-bounds-height: 35px; ">Risks that development might take too long</description>
-   </group>
-   <link id="23">
-      <from id="23-0" reference="5"/>
-      <to id="23-1" reference="6" shape="barbed-arrow"/>
-   </link>
-   <align id="25-0" style="--kite9-direction: right;">
-      <from id="25-0-0" reference="praco"/>
-      <to id="25-0-1" reference="5"/>
-   </align>
-   <align id="25-1" style="--kite9-direction: right;">
-      <from id="25-1-0" reference="5"/>
-      <to id="25-1-1" reference="4"/>
-   </align>
-   <align id="25-2" style="--kite9-direction: right;">
-      <from id="25-2-0" reference="4"/>
-      <to id="25-2-1" reference="3"/>
-   </align>
-   <align id="25-3" style="--kite9-direction: right;">
-      <from id="25-3-0" reference="3"/>
-      <to id="25-3-1" reference="2"/>
-   </align>
+	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl">
+	<action id="praco">Too-Long Action</action>
+	<group id="7" style="--kite9-layout: down; ">
+		<group id="6">
+			<group id="15" style="--kite9-layout: down; ">
+				<risk class="feature" />
+				<description id="15-0" >Missing a specific event</description>
+			</group>
+			<group id="19" style="--kite9-layout: down; ">
+				<risk class="schedule" />
+				<description id="19-0">Limited-time opportunity in
+					the market
+				</description>
+			</group>
+			<group id="20" style="--kite9-layout: down; ">
+				<risk class="red-queen" />
+				<description id="20-0">Competitors racing ahead</description>
+			</group>
+			<group id="21" style="--kite9-layout: down; ">
+				<risk class="funding" />
+				<description id="21-0">Running out of funding</description>
+			</group>
+		</group>
+		<description id="6-0">Risks that development might take too long</description>
+	</group>
 </diagram>

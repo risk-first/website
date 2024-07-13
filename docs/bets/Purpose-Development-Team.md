@@ -42,7 +42,7 @@ Scrum's rule about working-to-a-sprint is well-meaning but not always applicable
 
 Sometimes, I am faced with a conflict over whether to pay off [technical debt](/risks/Complexity-Risk.md#technical-debt) or build new functionality.  Sometimes the conflict will be with people in my team, or with stake-holders but sometimes it is an internal, personal conflict.  
 
-![Technical Debt vs Building Features](/img/generated/practices/purpose/technical-debt.png)
+![Technical Debt vs Building Features](/img/generated/bets/purpose/technical-debt.svg)
 
 As the above diagram shows, paying off technical debt is sometimes the right thing to do when there is lots of unnecessary complexity in the code-base, but sometimes, it can be [premature optimisation](https://en.wikipedia.org/wiki/Program_optimization#When_to_optimize), and the shape of the software gets changed by new functionality so much that the work I put into clearing the technical debt is wasted.
 

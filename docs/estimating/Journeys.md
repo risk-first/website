@@ -20,7 +20,7 @@ There are many ways we could do this journey, and many destinations.  The idea o
 
 What does this journey look like in Risk-First terms?
 
-![Product Development](/img/generated/estimating/journey.png)
+![Product Development](/img/generated/estimating/journey.svg)
 
 As this diagram shows, at the start we have plenty of [Feature Fit Risk](/tags/Feature-Fit-Risk):  if we have _no_ product, then it definitely doesn't fit our customer's needs!  Also we have some amount of [Funding Risk](/tags/Funding-Risk), as at some point the money will run out.
 

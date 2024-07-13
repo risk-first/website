@@ -23,7 +23,7 @@ Nevertheless, _knowing how long things will take_ is really the whole purpose of
 
 In Scrum, the Estimation process is based on the concept of _story points_, so that will be the focus here, although essentially this discussion is relevant to anyone estimating software development.
 
-![Story Point Diagram](/img/generated/estimating/story-points.png)
+![Story Point Diagram](/img/generated/estimating/story-points.svg)
 
 In this article we will critique story points as an _estimation tool_.  First, we will break it down to see how it works (the diagram above will guide us) then we'll offer some ideas for improving it.
 

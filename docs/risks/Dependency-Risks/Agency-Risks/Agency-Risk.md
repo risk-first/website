@@ -25,7 +25,7 @@ Coordinating a team is difficult enough when everyone on the team has a single [
 
 This is [Agency Risk](/tags/Agency-Risk). 
 
-![Agency Risk](/img/generated/risks/agency/agency-risk.png)
+![Agency Risk](/img/generated/risks/agency/agency-risk.svg)
 
 In this section, we are going to take a closer look at how [Agency Risk](/tags/Agency-Risk) arises, in particular we will:
 
@@ -51,7 +51,7 @@ In software development, we're not lending each other money, but we _are_ being 
   
 ## A Model For Agency Risk  
   
-![Goal Hierarchy](/img/generated/risks/agency/hierarchy.png)
+![Goal Hierarchy](/img/generated/risks/agency/hierarchy.svg)
 
 Although the definition of [Agency Risk](/tags/Agency-Risk) above pertains to looking after other people's money, this is just a single example of a wider issue which is best understood by appreciating that humans have a _hierarchy of concern_ with respect to their goals, as shown in the diagram above.  This hierarchy has arisen from millennia of evolution and helps us prioritise competing goals, generally in favour of _preserving our genes_.  
 
@@ -73,7 +73,7 @@ We shouldn't expect people on a project to sacrifice their personal lives for th
 
 People taking time off, going to funerals, looking after sick relatives and so on are all acceptable forms of [Agency Risk](/tags/Agency-Risk). They are the a risk of having _staff_ rather than _slaves_.
 
-![Heroism](/img/generated/risks/agency/heroism.png)
+![Heroism](/img/generated/risks/agency/heroism.svg)
 
 Where an agent _excessively_ prioritises their own goals over the group we term this selfishness or perhaps nepotism.  Conversely, putting the tribe's or the team's needs over your own is _heroism_.
 
@@ -114,7 +114,7 @@ Working on a pet project usually means you get lots of attention (and more than 
 
 ### Morale Failure
 
-![Morale Failure](/img/generated/risks/agency/morale.png)
+![Morale Failure](/img/generated/risks/agency/morale.svg)
 
 > "Morale, also known as Esprit de Corps, is the capacity of a group's members to retain belief in an institution or goal, particularly in the face of opposition or hardship" - [Morale, _Wikipedia_](https://en.wikipedia.org/wiki/Morale) 
 
@@ -138,7 +138,7 @@ Given the fluidity of the goal hierarchy for people, we shouldn't be surprised t
 
 ### Software Processes
 
-![Software Goals](/img/generated/risks/agency/software.png) 
+![Software Goals](/img/generated/risks/agency/software.svg) 
 
 Compared to humans, most software has a simple goal hierarchy, as shown in the diagram above.  Nevertheless, there is significant [Agency Risk](/tags/Agency-Risk) in running software _at all_.  Since computer systems follow rules we set for them, we shouldn't be surprised when those rules have exceptions that lead to disaster.  For example:
 
@@ -152,7 +152,7 @@ Building software systems that try to optimise for a hierarchy of goals (like hu
 
 > "If you give an artificial intelligence an explicit goal – like maximizing the number of paper clips in the world – and that artificial intelligence has gotten smart enough to the point where it is capable of inventing its own super-technologies and building its own manufacturing plants, then, well, be careful what you wish for." -- [Nick Bostrom, _Wikipedia_](https://en.wikipedia.org/wiki/Universal_Paperclips#Themes)
 
-![Universal Paperclips](/img/generated/risks/agency/paperclips.png)
+![Universal Paperclips](/img/generated/risks/agency/paperclips.svg)
 
 Bostrom worries that humanity would be steamrollered accidentally whilst trying to maximise the paperclip goal.  The AI need not be malevolent - it's enough that it just requres the resources that keep us alive!
 
@@ -176,7 +176,7 @@ Let's look at three common ways to mitigate [Agency Risk](/tags/Agency-Risk):  [
 
 ### Monitoring
 
-![Mitigating Agency Risk Through Monitoring](/img/generated/risks/agency/monitoring.png)
+![Mitigating Agency Risk Through Monitoring](/img/generated/risks/agency/monitoring.svg)
 
 A the core of the Principal-Agent Problem is the issue that we _want_ our agents to do work for us so we don't have the responsibility of doing it ourselves.  However, we pick up the second-order responsibility of managing the agents instead.  
 
@@ -190,7 +190,7 @@ Monitoring of _software process_ agents is an important part of designing reliab
 
 Security is all about _setting limits_ on agency - both within and outside a system, so when we talk about "Security Risk" we are really talking about a failure to limit agency.
 
-![Related Risks](/img/generated/risks/agency/agency-risks.png)
+![Related Risks](/img/generated/risks/agency/agency-risks.svg)
 
 _Within_ a system we may wish to prevent our agents from causing accidental (or deliberate) harm but we also have [Agency Risk](/tags/Agency-Risk) from unwanted agents _outside_ the system.  So security is also about ensuring that the environment we work in is _safe_ for the good actors to operate in while keeping out the bad actors.
 
@@ -208,7 +208,7 @@ These work at various levels in **our own bodies**:  our _cells_ have _cell wall
 
 We're waking up to the realisation that our software systems need to work the same way:  we have [Firewalls](https://en.wikipedia.org/wiki/Firewall_(computing)) and we lock down _ports_ on servers to ensure there are the minimum number of _doors_ to guard,  we _police_ the servers with monitoring tools, and we _guard_ access using passwords and other identification approaches. 
 
-![Security as a mitigation for Agency Risk](/img/generated/risks/agency/security-risk.png)
+![Security as a mitigation for Agency Risk](/img/generated/risks/agency/security-risk.svg)
 
 [Agency Risk](/tags/Agency-Risk) and [Security Risk](Agency-Risk.md#security) thrive on complexity:  the more complex the systems we create, the more opportunities there are for bad actors to insert themselves and extract their own value.  The dilemma is, _increasing security_ also means increasing [Complexity Risk](/tags/Complexity-Risk), because secure systems are necessarily more complex than insecure ones.
 
@@ -242,7 +242,7 @@ So one mitigation for [Agency Risk](/tags/Agency-Risk) is therefore to employ th
 
 But _extrinsic motivation_ is a complex, difficult-to-apply tool.  In [Map And Territory Risk](/tags/Map-And-Territory-Risk) we will come back to this and look at the various ways in which it can go awry.
 
-![Collective Code Ownership, Individual Responsibility](/img/generated/risks/agency/cco.png)
+![Collective Code Ownership, Individual Responsibility](/img/generated/risks/agency/cco.svg)
 
 Tools like [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming) and [Collective Code Ownership](https://en.wikipedia.org/wiki/Collective_ownership) are about mitigating [Staff Risks](Scarcity-Risk.md#staff-risk) like [Key Person Risk](https://en.wikipedia.org/wiki/Key_person_insurance#Key_person_definition) and [Learning Curve Risk](/tags/Learning-Curve-Risk), but these push in the opposite direction to _individual responsibility_.   
 

@@ -35,7 +35,7 @@ Having an event occur in a fixed time and place is [mitigating risk](/thinking/G
 
 ## But, Events Lead To Attendant Risk
 
-![Action Diagram showing risks mitigated by having an _event_](/img/generated/risks/deadline/dependency-risk-event.png)
+![Action Diagram showing risks mitigated by having an _event_](/img/generated/risks/deadline/dependency-risk-event.svg)
 
 By _deciding to use the bus_ we've [Taken Action](/thinking/Glossary.md#taking-action).  By agreeing a _time_ and _place_ for something to happen (creating an _event_, as shown in the diagram above), you're introducing [Deadline Risk](/tags/Deadline-Risk).  Miss the deadline, and you miss the bus.
 

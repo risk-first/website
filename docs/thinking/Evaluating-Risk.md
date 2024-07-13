@@ -16,13 +16,13 @@ tweet: yes
 
 Let's look at some tools to help us decide when to do "urgent" work vs. when to do "important" work.
 
-![Discount](/img/generated/principles/discount.png)
+![Discount](/img/generated/principles/discount.svg)
 
 It's very easy to get caught up in the day-to-day bustle of doing urgent things and lose sight of what's really important.  This is true of life in general but is definitely an occupational hazard in software development!  So in this section, I'll present an approach for reconciling this tension via a process of evaluating risk.
 
 ## Eisenhower's Box
 
-![A basic Eisenhower box](/img/generated/introduction/eisenhowers_box.png) 
+![A basic Eisenhower box](/img/generated/introduction/eisenhowers_box.svg) 
 
 As shown in the table above, [Eisenhower's Box](https://en.wikipedia.org/wiki/Time_management) (named after the president) is a tool to help evaluate urgency and importance.  It's a simple model allowing us to consider _two_ aspects of risk at the same time:
 

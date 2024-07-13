@@ -14,7 +14,7 @@ part_of: Communication Risk
 
 <RiskIntro fm={frontMatter} />
 
-![Message Risk](/img/generated/risks/communication/communication_message_risks.png) 
+![Message Risk](/img/generated/risks/communication/communication_message_risks.svg) 
 
 Although Shannon's Communication Theory is about transmitting **Messages**, messages are really encoded **Ideas** and **Concepts**, from an **Internal Model**.   Let's break down some of the risks associated with this:
 

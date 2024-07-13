@@ -30,7 +30,7 @@ First we need to broaden our terminology.  Although so far we've talked about **
 
 We're going to look at the example of a web browser (a **client**) loading a web-page from a **server**.  Specifically, we're going to examine how the web browser receives the **message** from the **server** via a **channel**.  That is - we're looking at the part of Shannon's diagram where we deal with _protocol_. 
  
-![Protocol Stack](/img/generated/risks/communication/communication_protocols.png) 
+![Protocol Stack](/img/generated/risks/communication/communication_protocols.svg) 
 
 In order that the **client** can load the web-page from the **server**, they both need to communicate with _shared protocols_.  In this example, this is going to involve (at least) six separate protocols, as shown in the diagram above.  
 
@@ -114,7 +114,7 @@ By having a stack of protocols we are able to apply [Separation Of Concerns](htt
 
 ### Protocol Risk
 
-![Communication Protocols Risks](/img/generated/risks/communication/communication_protocol_risks.png)
+![Communication Protocols Risks](/img/generated/risks/communication/communication_protocol_risks.svg)
 
 Hopefully, the above example gives an indication of the usefulness of protocols within software.  But for every protocol we use we have [Protocol Risk](/tags/Protocol-Risk).  While this is a problem in human communication protocols, it's really common in computer communication because we create protocols _all the time_ in software. 
 

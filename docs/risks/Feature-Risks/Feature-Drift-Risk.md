@@ -14,7 +14,7 @@ part_of: Feature Risk
 <RiskIntro fm={frontMatter} />
 
 
-![Feature Drift Risk](/img/generated/risks/feature/feature-drift-risk.png) 
+![Feature Drift Risk](/img/generated/risks/feature/feature-drift-risk.svg) 
 
 **Feature Drift** is the tendency that the features people need _change over time_.   
 

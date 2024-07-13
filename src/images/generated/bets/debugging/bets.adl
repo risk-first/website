@@ -1,0 +1,29 @@
+<diagram
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+	xmlns="http://www.kite9.org/schema/adl"
+	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia">
+
+		<artifact id="a1">
+		Purpose Of The
+		Development Team</artifact>
+
+		<artifact id="a2">
+		Coding 
+		Bets</artifact>
+		
+		<artifact id="a3">
+		Debugging 
+		Bets</artifact>
+
+
+		<link>
+			<from reference="a1" />
+			<to reference="a2" shape="arrow" />
+		</link>
+		
+		<link>
+			<from reference="a2" />
+			<to reference="a3" shape="arrow" />
+		</link>
+
+	</diagram>
