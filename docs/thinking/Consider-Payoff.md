@@ -273,12 +273,6 @@ As we've seen, figuring out payoff is made more tricky because often the actions
 
 Many Agile frameworks such as [Scrum](../bets/Purpose-Development-Team#case-2-scrum) place a lot of emphasis on estimating and time-boxing work:  trying to work out when you're going to deliver something and sticking to it.  But Risk-First is suggesting a totally different focus:  factors like _time taken to deliver_ and _coordinating the completion of work_ are just risks to consider along with all the others.  
 
-The most valuable project management skill is being able to chart a course which minimises risk.  Sometimes, that will mean [hitting a deadline](/tags/Deadline-Risk), but equally it could be [reducing codebase complexity](/tags/Complexity-Risk), [making a feature more accessible](/tags/Feature-Access-Risk) or [removing problematic dependencies](/tags/Software-Dependency-Risk).
+Betting generally focuses on the odds of winning.  However, there are entire classes of problem (such as short positions) where you need to focus on minimising the risk of losing.   
 
-The most important skill is to be able to _weigh up the risks_, decide on a course of action that gives you the greatest expected value and look for ways of increasing the payoff of winning and losing.
-
-Often, urgent risks _can_ crowd out the merely important.  Why does that happen, and what should we do about it?  In the next section, we'll look at how you can account for different levels of _urgency_ in your payoff considerations.   
-
-On to [Evaluating Risk](Evaluating-Risk.md).
-
-
+Let's look at that next in [Anti-Goals](Anti-Goals.md).

@@ -20,7 +20,6 @@ definitions:
  - name: Internal Model
    description: The model of reality held by an individual, team, software system or other Agent. 
    anchor: different-internal-models
-   own_term: true
 sidebar_position: 4
 redirect_from: 
  - /Meeting-Reality

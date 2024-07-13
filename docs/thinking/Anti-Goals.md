@@ -9,7 +9,7 @@ featured:
 author: rob
 tags:
  - Goal
-sidebar_position: 10
+sidebar_position: 11
 tweet: yes
 ---
 
@@ -78,6 +78,15 @@ We need to acknowledge that pursuing certain goals via certain courses of action
 
 > "GIVEN the scope of this SaaS project, WHEN I develop it THEN I want to avoid burn-out and bankruptcy"  
 
+## Summing Up
+
+The most valuable project management skill is being able to chart a course controlling your exposure to risk.  Sometimes, that will mean [hitting a deadline](/tags/Deadline-Risk), but equally it could be [reducing codebase complexity](/tags/Complexity-Risk), [making a feature more accessible](/tags/Feature-Access-Risk) or [removing problematic dependencies](/tags/Software-Dependency-Risk).
+
+The most important skill is to be able to _weigh up the risks_, decide on a course of action that exposes you to the greatest expected value, while looking for ways of increasing the payoff of winning and minimise the impact of losing.
+
+In the next section, we'll turn our attention to time:  often, urgent risks _can_ crowd out the merely important.  Why does that happen, and what should we do about it?  In the next section, we'll look at how you can account for different levels of _urgency_ in your payoff considerations.   
+
+On to [Evaluating Risk](Evaluating-Risk.md).
 
 
  

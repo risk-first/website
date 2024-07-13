@@ -10,7 +10,7 @@ tags:
  - Internal Model
  - Hidden Risk
  - Attendant Risk
-sidebar_position: 13
+sidebar_position: 14
 redirect_from: 
  - /A-Conversation
 tweet: yes
@@ -88,7 +88,11 @@ At this point, you might be wondering what all the fuss is about.   This stuff i
  
 The problem is that although all this _is_ obvious, it appears to have largely escaped codification within the literature, practices and methodologies of software development.   Further, while it is obvious, there is a huge hole: successful De-Risking depends heavily on individual experience and talent.  
 
-In the [next section](One-Size-Fits-No-One.md), we are going to briefly look at software methodology, and how it comes up short in when addressing risk.
+## Where Next?
+
+This section has hopefully underscored the importance of _talking about risk_ with colleagues.  If you're working in a team where this isn't happening then perhaps you can introduce this practice and improve your teams' odds of winning.  
+
+If you're working in a larger organisation then the chances are that risk management is already well embedded in the organisation.   So in the next section we'll have a quick run-down covering what developers need to know about [Enterprise Risk Management](Enterprise-Risk.md).
 
 
 

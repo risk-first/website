@@ -7,7 +7,7 @@ featured:
   class: bg3
   element: '<document>Glossary</document>'
 
-sidebar_position: 15
+sidebar_position: 17
 redirect_from: 
  - /Glossary
 tweet: yes

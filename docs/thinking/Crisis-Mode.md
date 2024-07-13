@@ -6,7 +6,7 @@ description: Why 'Crisis Mode' shouldn't be a mode.
 featured: 
   class: bg3
   element: '<risk href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg"><code>Panic</code><title>Crisis Mode</title></risk>'
-sidebar_position: 12
+sidebar_position: 13
 tweet: yes
 ---
 
@@ -18,9 +18,13 @@ In this section we're going to explore the assertion that good risk management p
 
 As software developers, we face crises of different sorts. Perhaps there's a production outage and we're up at 3am scrambling around to recover data from backups, or a sudden meeting with clients or investors arises in which we have to scramble to put together a prototype in short order.  Agile software development doesn't have much to say about what we should do in these situations:  Scrum's rigorous 2-week sprint model doesn't account for the sprint being interrupted by urgent events.
 
-In this section, we are going to look at how a risk management approach to software development is invariant to a number of different things:  the size of the project, the level of pressure and the technology being used.  
+## Testing For Invariances
 
-## Crisis Management?
+In this section, we are going to look at how a risk management approach to software development is invariant to a number of different things:  the size of the project, the level of pressure and the technology being used.  For example, I am an advocate of [Extreme Programming](../methods/Extreme-Programming.md).  However, as you scale the size of the project, it breaks down.  This is well understood and explains why methodologies like [Scaled Agile](../methods/SAFe.md) arose which attempt to fix this.  
+
+Why would we want to do this?  Einstein's ideas around relativistic gravity were proven because people discovered that the Newtonian model of gravity [failed to predict the orbit of Mercury](https://en.wikipedia.org/wiki/Tests_of_general_relativity#Classical_tests).  So it's important to explore and understand the limits of our ideas and practices.  
+
+## Invariance 1: Is It A Crisis?
 
 First though, let's talk specifically about "Crisis Management".  A lot of literature on Crisis Management suggests that when a crisis occurs, you abandon your normal approach and switch to a different, crisis management approach.  For example:
 
@@ -36,7 +40,7 @@ Third, Crisis Management is _still just Risk Management_:  the crisis (Earthquak
 
 Yes, it's fine to say "we're in crisis", but to assume there is a different strategy for dealing with it is a mistake:  this is the [Fallacy of Sunk Costs](https://en.wikipedia.org/wiki/Escalation_of_commitment). 
 
-## Invariance #1: Pressure Invariance
+## Invariance #2: Pressure Invariance
 
 You would expect that ideally, any methods for managing software delivery should be _invariant_ to the degree of crisis in the project.  If, for example, a project proceeds using [Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development)) for eight months and then the deadline looms and everyone agrees to throw Scrum out of the window and start hacking, then _this implies there is a problem with Scrum_ and that it is not **Pressure Invariant**.  In fact, many tools like Scrum don't consider this:
 
@@ -49,7 +53,7 @@ This is **Pressure Invariance**:  ideally, your methodology shouldn't need to ch
 
 **See:** In [Debugging Bets](../bets/Debugging-Bets.md) I tell the story of a high-pressure situation where I applied a risk-analysis approach in order to try and bring a new problem to ground ahead of a big presentation.
 
-## Invariance #2: Scale Invariance
+## Invariance #3: Scale Invariance
 
 We are used to the idea that physical laws work at _any scale_: if they don't apply equally to big and small scenarios then that implies something is wrong.  For example, Newton's Laws of Motion work fine for artillery shells but fail to calculate the orbital period of Mercury, which led to Einstein trying to improve on them with the [Theory of Relativity](https://en.wikipedia.org/wiki/Theory_of_relativity).  
 
@@ -67,7 +71,7 @@ If the methodology _fails at a particular scale_ this tells you something about 
 
 In the previous section on [Health](Health.md) we looked at how risk management was used by the UK government at the scale of _the whole country_. 
 
-## Invariance #3: Technology Invariance
+## Invariance #4: Technology Invariance
 
 In 2020 the world was plunged into pandemic.  Everything changed very quickly, including the nature of software development.  Lots of the practices we'd grown used to (such as XP's small, co-located teams) had to be jettisoned and replaced with Zoom calls and instant messaging apps.   This was a very sudden, rapid change in the technology we use to do our jobs, but in a more general sense we need to understand that Agile, XP and Scrum were invented at the turn of the 21st century.  The [Lean Manufacturing](https://en.wikipedia.org/wiki/Lean_manufacturing) movement originated post-WW2.  
 
@@ -79,7 +83,11 @@ The point I am making here is that while there are [technology tools to support 
 
 ## Summing Up
 
--- sum up here.
+Humans have a built-in fight-or-flight mechanism which makes it hard for us to act rationally in times of stress.  And as we'll explore in [Agency Risk](../risks/Agency-Risk.md), firms are able to abuse their staff's loyalty or enthusiasm in order to get them to work much longer than is healthy for either them or their projects.  
 
-On to [A Conversation](A-Conversation.md)
+Risk management, like everything else, can be abused or misunderstood.  
+
+In this section, we've looked at an important "proof" - the idea that risk management applies irrespective of pressure, scale or technology trends (so far, at least).  This is really important as we need to know whether there's a point at which our tools won't apply anymore.
+
+In the next section, we'll start to look at how risk management can fit into working in our organisations, starting with discussing risk in a project team.  On to [A Conversation](A-Conversation.md)
 
