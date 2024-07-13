@@ -7,6 +7,8 @@ featured:
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/redesign/risks/feature_drift_risk_v2.svg">Tracks</image-artifact>'
 tweet: yes
+tags:
+ - About
 ---
 
 

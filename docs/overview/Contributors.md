@@ -6,6 +6,8 @@ featured:
   class: bg1
   element: '<users>Contributors</users>'
 sidebar_position: 13
+tags:
+ - About
 ---
 
 # Contributors

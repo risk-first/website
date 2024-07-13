@@ -7,6 +7,8 @@ featured:
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/quick-summary.svg">Quick Summary</image-artifact>'
 tweet: yes
+tags:
+ - About
 ---
 
 # Quick Summary

@@ -7,7 +7,6 @@ import styles from './styles.module.css'
 
 function DocItemImage({ doc }) {
 	const pl = doc.permalink
-	console.log(JSON.stringify(doc, null, 2))
 	const stripped = pl.endsWith('/') ? pl+"index" : pl
 	const imageLink = "/img/generated/single/" + stripped + ".svg"
 
@@ -54,10 +53,15 @@ export default function TagList(props) {
 	
 	const sort = props.sort ?? "default"
 
+	console.log("Filter: "+filter)
+
 	oneTag.sort(sorts[sort]);
 	
-	// console.log(oneTag[0].permalink.indexOf(location))
-	// console.log(filter)
+	oneTag
+	    //.filter(d => d.permalink.indexOf(filter) > -1)
+		.forEach(d => console.log(d.permalink))
+
+
 
 	return (
 		<div className={styles.tagList}>
