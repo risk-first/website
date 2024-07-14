@@ -9,4 +9,4 @@ sidebar_position: 10
 
 # Glossary of Practices
 
-<TagList filter="practices" sort="title" />
+<TagList filter="practices" sort="title" tag="Practice" />

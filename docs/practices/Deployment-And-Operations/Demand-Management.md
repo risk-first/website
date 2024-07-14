@@ -6,7 +6,7 @@ tags:
   - Practice
 featured: 
   class: c
-  element: '<method imgsrc="/public/templates/risk-first/posts/demand-management.svg">Demand Management</method>'
+  element: '<action>Demand Management</action>'
 practice:
   aka: 
    - "Demand Planning"

@@ -6,7 +6,7 @@ tags:
   - Practice
 featured: 
   class: c
-  element: '<method imgsrc="/public/templates/risk-first/posts/fundraising.svg">Fundraising</method>'
+  element: '<action>Fundraising</action>'
 practice:
   aka: 
    - "Raising Investment Capital"

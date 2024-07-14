@@ -6,7 +6,7 @@ tags:
   - Standardisation
 featured: 
   class: c
-  element: '<method imgsrc="/public/templates/risk-first/posts/standardisation.svg">Standardisation</method>'
+  element: '<action>Standardisation</action>'
 practice:
   aka: 
    - "Standardization"
