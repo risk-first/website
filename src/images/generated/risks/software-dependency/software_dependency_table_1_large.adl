@@ -3,102 +3,134 @@
 	xmlns:xslt="http://www.kite9.org/schema/xslt"
 	xmlns="http://www.kite9.org/schema/adl"
 	xmlns:svg="http://www.w3.org/2000/svg"
-	xmlns:xlink="http://www.w3.org/1999/xlink" id="diagram-113" style="--kite9-layout: down;">
-    <table>
-      <risk class="coordination" style="--kite9-occupies: 2 1; " />
-      <risk class="boundary" style="--kite9-occupies: 3 1; "/>
-      <risk class="feature" style="--kite9-occupies: 4 1; "/>
-      <risk class="communication" style="--kite9-occupies: 5 1; "/>
-      <celltext style="--kite9-occupies: 6 1; " class="bold bottom">Sources</celltext>
-      
-      <celltext style="--kite9-occupies: 1 2; ">Is the project "famous"?</celltext>
-      <tick style="--kite9-occupies: 3 2; " />
-      <tick style="--kite9-occupies: 4 2; " />
-      <tick style="--kite9-occupies: 5 2; " />
-      <celltext style="--kite9-occupies: 6 2; ">[sd2] [sd3]</celltext>
-      
-      
-      <celltext style="--kite9-occupies: 1 3; ">Is there evidence of a large user community on user forums or e-mail list archives? </celltext>
-      <tick style="--kite9-occupies: 3 3; " />
-      <tick style="--kite9-occupies: 4 3; " />
-      <tick style="--kite9-occupies: 5 3; " />
-      <celltext style="--kite9-occupies: 6 3; ">[sd1]</celltext>
-      
-      <celltext style="--kite9-occupies: 1 4; ">Who is developing and maintaining the project?  (Track Record)</celltext>
-      <tick style="--kite9-occupies: 3 4; " />
-      <tick style="--kite9-occupies: 4 4; " />
-      <tick style="--kite9-occupies: 5 4; " />
-      <celltext style="--kite9-occupies: 6 4; ">[sd3]</celltext>
-      
-      <celltext style="--kite9-occupies: 1 5; ">What are the mechanisms for supporting the software (community support, direct email, dedicated support team), and how long will the support be available?  The more support, the better  </celltext>
-      <tick style="--kite9-occupies: 4 5; " />
-      <tick style="--kite9-occupies: 5 5; " />
-      <celltext style="--kite9-occupies: 6 5; ">[sd3]</celltext>
-      
-      
-      <celltext style="--kite9-occupies: 1 6; ">Is the API to your liking?</celltext>
-      <tick style="--kite9-occupies: 5 6; " />
-      <celltext style="--kite9-occupies: 6 6; ">[sd2]</celltext>
-      
-      <celltext style="--kite9-occupies: 1 7; ">Are there examples of using the software successfully in the manner you want to use it?</celltext>
-      <tick style="--kite9-occupies: 4 7; " />
-      <celltext style="--kite9-occupies: 6 7; ">[sd1]</celltext>
-      
-      <celltext style="--kite9-occupies: 1 8; ">Are all the features you need, and think you will need, included?     </celltext>
-      <tick style="--kite9-occupies: 4 8; " />
-      <celltext style="--kite9-occupies: 6 8; ">[sd1]</celltext>
-      
-      <celltext style="--kite9-occupies: 1 9; ">How mature is the project?</celltext>
-      <tick style="--kite9-occupies: 4 9; " />
-      <celltext style="--kite9-occupies: 6 9; ">[sd2]</celltext>
+	xmlns:xlink="http://www.w3.org/1999/xlink" id="diagram-113"
+	style="--kite9-layout: down; ">
+	<table class="wide" k9-texture="background">
+		<cell style="--kite9-occupies: 2 1; ">
+			<risk class="coordination" />
+		</cell>
+		<cell style="--kite9-occupies: 3 1; ">
+			<risk class="boundary" />
+		</cell>
+		<cell style="--kite9-occupies: 4 1; ">
+			<risk class="feature" />
+		</cell>
+		<cell style="--kite9-occupies: 5 1; ">
+			<risk class="communication" />
+		</cell>
+		<cell style="--kite9-occupies: 6 1; " class="bold bottom"><description>Sources</description>
+		</cell>
 
-      <celltext style="--kite9-occupies: 1 10; ">In respect to the software licence, do you have the right to use the software in its intended production environment, or the right to distribute it along with your software?</celltext>
-      <tick style="--kite9-occupies: 4 10; " />
-      <celltext style="--kite9-occupies: 6 10; ">[sd1]</celltext>
-       
-      <celltext style="--kite9-occupies: 1 11; ">What is its deprecation or versioning policy? Does it have one? If not then it may be more unstable and features may disappear without warning between versioning, especially if releases are frequent.</celltext>
-      <tick style="--kite9-occupies: 3 11; " />
-      <risk class="regression" style="--kite9-occupies: 4 11; " />
-      <tick style="--kite9-occupies: 5 11; " />
-      <celltext style="--kite9-occupies: 6 11; ">[sd1]</celltext>
-      
-      <celltext style="--kite9-occupies: 1 12; ">What does the codebase look like?</celltext>
-      <risk class="implementation" style="--kite9-occupies: 4 12; " />
-      <celltext style="--kite9-occupies: 6 12; ">[sd1]</celltext>
-
-      <celltext style="--kite9-occupies: 1 13; ">How frequent are its releases? </celltext>
-      <tick style="--kite9-occupies: 4 13; " />
-      <celltext style="--kite9-occupies: 6 13; ">[sd1] [sd2] [sd3]</celltext>
-
-      <celltext style="--kite9-occupies: 1 14; ">How well documented is the project? </celltext>
-      <tick style="--kite9-occupies: 5 14; " />
-      <celltext style="--kite9-occupies: 6 14; ">[sd2]</celltext>
-
-      <celltext style="--kite9-occupies: 1 15; ">Does the software have evidence of a sustainable future (e.g. is there a roadmap)?</celltext>
-      <tick style="--kite9-occupies: 5 15; " />
-      <celltext style="--kite9-occupies: 6 15; ">[sd2]</celltext>
+		<cell style="--kite9-occupies: 1 2; "><description class="left">Is the project "famous"?</description></cell>
+		<cell style="--kite9-occupies: 3 2; "><tick /></cell>
+		<cell style="--kite9-occupies: 4 2; "><tick /></cell>
+		<cell style="--kite9-occupies: 5 2; "><tick /></cell>
+		<cell style="--kite9-occupies: 6 2; "><description>[sd2] [sd3]</description></cell>
 
 
-      <celltext style="--kite9-occupies: 1 16; ">Does the software support open standards? If it does, it will be easier to replace the software should it come to the end of its lifetime</celltext>
-      <tick style="--kite9-occupies: 3 16; " />
-      <celltext style="--kite9-occupies: 6 16; ">[sd1]</celltext>
+		<cell style="--kite9-occupies: 1 3; "><description class="left">Is there evidence of a large user community on user forums or e-mail list archives?</description>
+		</cell>
+		<cell style="--kite9-occupies: 3 3; "><tick /></cell>
+		<cell style="--kite9-occupies: 4 3; "><tick /></cell>
+		<cell style="--kite9-occupies: 5 3; "><tick /></cell>
+		<cell style="--kite9-occupies: 6 3; "><description>[sd1]</description></cell>
 
-      <celltext style="--kite9-occupies: 1 17; ">Does the version you intend to use come from a forked open-source project, or is it from the original source project? If so, which source is more appropriate?</celltext>
-      <tick style="--kite9-occupies: 3 17; " />
-      <celltext style="--kite9-occupies: 6 17; ">[sd1]</celltext>
+		<cell style="--kite9-occupies: 1 4; "><description class="left">Who is developing and maintaining the project? (Track Record)</description>
+		</cell>
+		<cell style="--kite9-occupies: 3 4; "><tick /></cell>
+		<cell style="--kite9-occupies: 4 4; "><tick /></cell>
+		<cell style="--kite9-occupies: 5 4; "><tick /></cell>
+		<cell style="--kite9-occupies: 6 4; "><description>[sd3]</description></cell>
 
-      <celltext style="--kite9-occupies: 1 18; ">Are there any alternatives to the software?</celltext>
-      <tick style="--kite9-occupies: 3 18; " />
-      <celltext style="--kite9-occupies: 6 18; ">[sd1]</celltext>
+		<cell style="--kite9-occupies: 1 5; "><description class="left">What are the mechanisms for supporting the software (community support, direct email, dedicated support team), and how long will the support be available? The more support, the better</description>
+		</cell>
+		<cell style="--kite9-occupies: 4 5; "><tick /></cell>
+		<cell style="--kite9-occupies: 5 5; "><tick /></cell>
+		<cell style="--kite9-occupies: 6 5; "><description>[sd3]</description></cell>
 
-      <celltext style="--kite9-occupies: 1 19; ">Has your community converged on using a particular software package?</celltext>
-      <tick style="--kite9-occupies: 2 19; " />
-      <celltext style="--kite9-occupies: 6 19; ">[sd1]</celltext>
-      
-      <celltext style="--kite9-occupies: 1 20; " class="bold">Totals</celltext>
-      <celltext style="--kite9-occupies: 2 20; " class="center bold">1</celltext>
-      <celltext style="--kite9-occupies: 3 20; " class="center bold">9</celltext>
-      <celltext style="--kite9-occupies: 4 20; " class="center bold">15</celltext>
-      <celltext style="--kite9-occupies: 5 20; " class="center bold">8</celltext>      
-    </table>
-  </diagram>
+
+		<cell style="--kite9-occupies: 1 6; "><description class="left">Is the API to your liking?</description></cell>
+		<cell style="--kite9-occupies: 5 6; "><tick /></cell>
+		<cell style="--kite9-occupies: 6 6; "><description>[sd2]</description></cell>
+
+		<cell style="--kite9-occupies: 1 7; "><description class="left">Are there examples of using the software successfully in the manner you want to use it?</description>
+		</cell>
+		<cell style="--kite9-occupies: 4 7; "><tick /></cell>
+		<cell style="--kite9-occupies: 6 7; "><description>[sd1]</description></cell>
+
+		<cell style="--kite9-occupies: 1 8; "><description class="left">Are all the features you need, and think you will need, included?</description>
+		</cell>
+		<cell style="--kite9-occupies: 4 8; "><tick /></cell>
+		<cell style="--kite9-occupies: 6 8; "><description>[sd1]</description></cell>
+
+		<cell style="--kite9-occupies: 1 9; "><description class="left">How mature is the project?</description></cell>
+		<cell style="--kite9-occupies: 4 9; "><tick /></cell>
+		<cell style="--kite9-occupies: 6 9; "><description>[sd2]</description></cell>
+
+		<cell style="--kite9-occupies: 1 10; "><description class="left">In respect to the software licence, do you have the right to use the software in its intended production environment, or the right to distribute it along with your software?</description>
+		</cell>
+		<cell style="--kite9-occupies: 4 10; "><tick /></cell>
+		<cell style="--kite9-occupies: 6 10; "><description>[sd1]</description></cell>
+
+		<cell style="--kite9-occupies: 1 11; "><description class="left">What is its deprecation or versioning policy? Does it have one? If not then it may be more unstable and features may disappear without warning between versioning, especially if releases are frequent.</description>
+		</cell>
+		<cell style="--kite9-occupies: 3 11; "><tick /></cell>
+		<cell style="--kite9-occupies: 4 11; ">
+			<risk class="regression" />
+		</cell>
+		<cell style="--kite9-occupies: 5 11; "><tick /></cell>
+		<cell style="--kite9-occupies: 6 11; "><description>[sd1]</description></cell>
+
+		<cell style="--kite9-occupies: 1 12; "><description class="left">What does the codebase look like?</description></cell>
+		<cell style="--kite9-occupies: 4 12; ">
+			<risk class="implementation" />
+		</cell>
+		<cell style="--kite9-occupies: 6 12; "><description>[sd1]</description></cell>
+
+		<cell style="--kite9-occupies: 1 13; "><description class="left">How frequent are its releases? </description></cell>
+		<cell style="--kite9-occupies: 4 13; "><tick /></cell>
+		<cell style="--kite9-occupies: 6 13; "><description>[sd1] [sd2] [sd3]</description></cell>
+
+		<cell style="--kite9-occupies: 1 14; "><description class="left">How well documented is the project?</description>
+		</cell>
+		<cell style="--kite9-occupies: 5 14; "><tick /></cell>
+		<cell style="--kite9-occupies: 6 14; "><description>[sd2]</description></cell>
+
+		<cell style="--kite9-occupies: 1 15; "><description class="left">Does the software have evidence of a sustainable future (e.g. is there a roadmap)?</description>
+		</cell>
+		<cell style="--kite9-occupies: 5 15; "><tick /></cell>
+		<cell style="--kite9-occupies: 6 15; "><description>[sd2]</description></cell>
+
+
+		<cell style="--kite9-occupies: 1 16; "><description class="left">Does the software support open standards? If it does, it will be easier to replace the software should it come to the end of its lifetime</description>
+		</cell>
+		<cell style="--kite9-occupies: 3 16; "><tick /></cell>
+		<cell style="--kite9-occupies: 6 16; "><description>[sd1]</description></cell>
+
+		<cell style="--kite9-occupies: 1 17; "><description class="left">Does the version you intend to use come from a forked open-source project, or is it from the original source project? If so, which source is more appropriate?</description>
+		</cell>
+		<cell style="--kite9-occupies: 3 17; "><tick /></cell>
+		<cell style="--kite9-occupies: 6 17; "><description>[sd1]</description></cell>
+
+		<cell style="--kite9-occupies: 1 18; "><description class="left">Are there any alternatives to the software?</description>
+		</cell>
+		<cell style="--kite9-occupies: 3 18; "><tick /></cell>
+		<cell style="--kite9-occupies: 6 18; "><description>[sd1]</description></cell>
+
+		<cell style="--kite9-occupies: 1 19; "><description class="left">Has your community converged on using a particular software package?</description>
+		</cell>
+		<cell style="--kite9-occupies: 2 19; "><tick /></cell>
+		<cell style="--kite9-occupies: 6 19; "><description>[sd1]</description></cell>
+
+		<cell style="--kite9-occupies: 1 20; " class="bold"><description class="left">Totals</description>
+		</cell>
+		<cell style="--kite9-occupies: 2 20; "
+			class="center bold"><description>1</description></cell>
+		<cell style="--kite9-occupies: 3 20; "
+			class="center bold"><description>9</description></cell>
+		<cell style="--kite9-occupies: 4 20; "
+			class="center bold"><description>15</description></cell>
+		<cell style="--kite9-occupies: 5 20; "
+			class="center bold"><description>8</description></cell>
+	</table>
+</diagram>
