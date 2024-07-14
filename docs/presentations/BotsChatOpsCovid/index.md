@@ -24,7 +24,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.001.jpg" alt="Image of slide number 1" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.001.jpg" alt="Image of slide number 1" />
             </div>
             <div class="slide-notes">
                       <p>Hi Thanks for joining my talk:  Bots, ChatOps, COVID and The Symphony Java Toolkit.  </p>
@@ -41,7 +41,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.002.jpg" alt="Image of slide number 2" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.002.jpg" alt="Image of slide number 2" />
             </div>
             <div class="slide-notes">
                       <p>This is a screenshot from Symphony.  It’s a chat platform. I’m imagining that lots of people here today are very familiar with chat platforms now, and use them in their day to day work.  </p>
@@ -52,7 +52,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.003.jpg" alt="Image of slide number 3" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.003.jpg" alt="Image of slide number 3" />
             </div>
             <div class="slide-notes">
                       <p>This one is Slack.  It’s pretty similar to Symphony.  You’ve got your chats down the left-hand side there.  Box at the bottom for entering text.   </p>
@@ -63,7 +63,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.004.jpg" alt="Image of slide number 4" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.004.jpg" alt="Image of slide number 4" />
             </div>
             <div class="slide-notes">
                       <p>And this one is Teams, from Microsoft.  Again, same kind of layout.  I guess you could say that there’s a lot of “convergent evolution” going on here.  All of these platforms share a lot of the same features, and we’ll talk about some of those features as we go.</p>
@@ -74,7 +74,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.005.jpg" alt="Image of slide number 5" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.005.jpg" alt="Image of slide number 5" />
             </div>
             <div class="slide-notes">
                       <p>You might have even seen in the press lately how the guys building Slack are trying to sue Microsoft over exactly that issue: not only is Teams similar to Slack, but they’re trying to push Teams out to everyone.  They’re using their dominance of Office tools to try and muscle in on Slack’s territory.</p>
@@ -85,7 +85,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.006.jpg" alt="Image of slide number 6" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.006.jpg" alt="Image of slide number 6" />
             </div>
             <div class="slide-notes">
                       <p>Here’s a Google trends chart of those two.  You can see:  Teams is now a lot more popular as a search term than Slack, which explains why Slack are getting mad.  </p>
@@ -106,7 +106,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.007.jpg" alt="Image of slide number 7" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.007.jpg" alt="Image of slide number 7" />
             </div>
             <div class="slide-notes">
                       <p>Let’s change tack now.  This is the Manifesto for Agile software development.  It’s a website from about 20 years ago.  Now, I expect at this conference most people are going to know what Agile software development is.  </p>
@@ -125,7 +125,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.008.jpg" alt="Image of slide number 8" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.008.jpg" alt="Image of slide number 8" />
             </div>
             <div class="slide-notes">
                       <p>So here’s a bunch of beautiful people having a stand up meeting in their office.  This could well be a photo taken at Deutsche Bank in 2019.  Everyone stands up to keep the meeting short.  These are individuals having interactions, over processes and tools.</p>
@@ -138,7 +138,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.009.jpg" alt="Image of slide number 9" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.009.jpg" alt="Image of slide number 9" />
             </div>
             <div class="slide-notes">
                       <p>The other thing about stand-up meeting is that it forced you to concentrate.  </p>
@@ -153,7 +153,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.010.jpg" alt="Image of slide number 10" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.010.jpg" alt="Image of slide number 10" />
             </div>
             <div class="slide-notes">
                       <p>Here’s a Scrum board.  It’s a bunch of post-it notes keeping track of what work is being done, and who’s doing it.  This was already on the ropes before COVID, because of distributed teams.  Now, it’s just impossible.  There’s no way I’m devoting a wall in my house for this, and it wouldn’t help anyone else in my team even if I did.</p>
@@ -166,7 +166,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.011.jpg" alt="Image of slide number 11" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.011.jpg" alt="Image of slide number 11" />
             </div>
             <div class="slide-notes">
                       <p>This is some guys doing some pair programming.  Two people at one computer.  You can see their Scrum Board in the background there.  Now, this doesn’t happen anymore either.  We have to screen share to get anything like this, but even then it’s not quite the same.  And the tools we generally use for screen share are things like Teams, Skype, things that allow us to do chat too.</p>
@@ -177,7 +177,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.012.jpg" alt="Image of slide number 12" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.012.jpg" alt="Image of slide number 12" />
             </div>
             <div class="slide-notes">
                       <p>So, there is the idea of having teams big enough to feed with two pizzas.  Now, this is attributed to Jeff Bezos, but I think the ideas stem from Kent Beck, who came up with an Agile approach called XP, or Extreme Programming.  He was very keen on his developers all eating together, and working in close proximity to each other so they could discuss their issues over a donut or a coffee.</p>
@@ -190,7 +190,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.013.jpg" alt="Image of slide number 13" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.013.jpg" alt="Image of slide number 13" />
             </div>
             <div class="slide-notes">
                       <p>Finally, this is Planning Poker, from Scrum.   The idea is that when you are planning what work to do, everyone plays cards.  The higher the number card you play, the more complex you think the piece of work is.  </p>
@@ -207,7 +207,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.014.jpg" alt="Image of slide number 14" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.014.jpg" alt="Image of slide number 14" />
             </div>
             <div class="slide-notes">
                       <p>This is that first statement from the Agile Manifesto again: Individuals and Interactions over Processes and Tools.</p>
@@ -222,7 +222,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.015.jpg" alt="Image of slide number 15" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.015.jpg" alt="Image of slide number 15" />
             </div>
             <div class="slide-notes">
                       <p>But luckily, there are teams that have been working like that for a while now.  On GitHub, like a lot of other people, I contribute to software projects, and rather than coordinate with people using the Agile approaches I’ve discussed, we coordinate with chat.  </p>
@@ -239,7 +239,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.016.jpg" alt="Image of slide number 16" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.016.jpg" alt="Image of slide number 16" />
             </div>
             <div class="slide-notes">
                       <p>So, COVID is really forcing us to move away from those traditional Agile practices.  A while ago, whether or not you prefer one approach over the other was personal style. </p>
@@ -252,7 +252,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.017.jpg" alt="Image of slide number 17" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.017.jpg" alt="Image of slide number 17" />
             </div>
             <div class="slide-notes">
                       <p>Let’s talk a bit about ChatOps now.   </p>
@@ -267,7 +267,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.018.jpg" alt="Image of slide number 18" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.018.jpg" alt="Image of slide number 18" />
             </div>
             <div class="slide-notes">
                       <p>Well, according to BBC Bitesize, which is a part of the BBC for helping school children revise for their exams, “An operating system (or 'OS') controls the general operation of a computer, and provides an easy way for us to interact with computers and run applications.”</p>
@@ -282,7 +282,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.019.jpg" alt="Image of slide number 19" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.019.jpg" alt="Image of slide number 19" />
             </div>
             <div class="slide-notes">
                       <p>On Mobile, the dominant operating systems are iOS and Android.  Microsoft did try to have a Windows version for Mobile, but that didn’t really work out.   The types of things we do on our phones and tablets are different to the things we do on the desktop, so perhaps that’s one reason why we ended up with different operating systems there.  </p>
@@ -295,7 +295,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.020.jpg" alt="Image of slide number 20" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.020.jpg" alt="Image of slide number 20" />
             </div>
             <div class="slide-notes">
                       <p>Now, here’s a couple of other things that could claim to be a bit like that definition of Operating System.  </p>
@@ -310,7 +310,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.021.jpg" alt="Image of slide number 21" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.021.jpg" alt="Image of slide number 21" />
             </div>
             <div class="slide-notes">
                       <p>So ChatOps essentially, is the chat platform as some kind of operating system:  lots of users, lots of applications, all working together.  Let’s look at an example.</p>
@@ -323,7 +323,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.022.jpg" alt="Image of slide number 22" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.022.jpg" alt="Image of slide number 22" />
             </div>
             <div class="slide-notes">
                       <p>So, in this issue, Gab raises an issue suggesting changing the namespace.   He’s cc’ing Mao, with the “at”.  </p>
@@ -346,7 +346,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.023.jpg" alt="Image of slide number 23" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.023.jpg" alt="Image of slide number 23" />
             </div>
             <div class="slide-notes">
                       <p>This slide says it all:  “Teams is the new operating system, essentially, for a customer. It is where they will do everything that they need to do.”</p>
@@ -363,7 +363,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.024.jpg" alt="Image of slide number 24" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.024.jpg" alt="Image of slide number 24" />
             </div>
             <div class="slide-notes">
                       <p>I have been developing Bots and Apps on Symphony for a number of years, both at HSBC and Deutsche Bank.  </p>
@@ -378,7 +378,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.025.jpg" alt="Image of slide number 25" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.025.jpg" alt="Image of slide number 25" />
             </div>
             <div class="slide-notes">
                       <p>So, to start with, my view of bots was “Oh, it’s the command line all over again”.  I can type commands to my bot, and have it respond.  Text in, text out, just like DOS or Linux.</p>
@@ -395,7 +395,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.026.jpg" alt="Image of slide number 26" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.026.jpg" alt="Image of slide number 26" />
             </div>
             <div class="slide-notes">
                       <p>But there are use-cases that work better on a chat platform.  </p>
@@ -414,7 +414,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.027.jpg" alt="Image of slide number 27" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.027.jpg" alt="Image of slide number 27" />
             </div>
             <div class="slide-notes">
                       <p>Next, I started to see that a Chat Platform was really a lot like a big append-only database, like Datomic, say.  You can do indexing, through hash-tagging and mentions, and you can control access to different pieces of information via Private Chat Rooms, since different rooms can have different members and privacy settings and administrators.</p>
@@ -427,7 +427,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.028.jpg" alt="Image of slide number 28" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.028.jpg" alt="Image of slide number 28" />
             </div>
             <div class="slide-notes">
                       <p>So, rather than do a tour of the functionality in the Symphony Java Toolkit, I’m just going to demonstrate something we built with it, and show you how it works.  </p>
@@ -450,7 +450,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.029.jpg" alt="Image of slide number 29" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.029.jpg" alt="Image of slide number 29" />
             </div>
             <div class="slide-notes">
                       <p>We’ve talked about:  Symphony as being like an append-only database, which handles access control, and indexing.  </p>
@@ -471,7 +471,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.030.jpg" alt="Image of slide number 30" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.030.jpg" alt="Image of slide number 30" />
             </div>
             <div class="slide-notes">
                       <p>We built a Symphony Bot that allows you to play the Scrum planning Poker Game… via a Symphony Chat.</p>
@@ -492,7 +492,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.031.jpg" alt="Image of slide number 31" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.031.jpg" alt="Image of slide number 31" />
             </div>
             <div class="slide-notes">
                       <p>So, instead of getting our developers together in a meeting room, we’re going to get our team together in a Symphony room, to play the planning poker.</p>
@@ -513,7 +513,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.032.jpg" alt="Image of slide number 32" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.032.jpg" alt="Image of slide number 32" />
             </div>
             <div class="slide-notes">
                       <p>The bot replies back with this card containing the story.  It’s got a name, a description and an empty story points field.</p>
@@ -526,7 +526,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.033.jpg" alt="Image of slide number 33" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.033.jpg" alt="Image of slide number 33" />
             </div>
             <div class="slide-notes">
                       <p>So this is on the left is what that underlying JSON looks like: that workflow_001 is the main bit.  It’s got the name and the description, and the empty story points field.</p>
@@ -543,7 +543,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.034.jpg" alt="Image of slide number 34" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.034.jpg" alt="Image of slide number 34" />
             </div>
             <div class="slide-notes">
                       <p>So we haven’t set the story points yet.  </p>
@@ -558,7 +558,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.035.jpg" alt="Image of slide number 35" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.035.jpg" alt="Image of slide number 35" />
             </div>
             <div class="slide-notes">
                       <p>And, this is my private message here - asking me how many points I want to give to this poker story.   So, this is the equivalent of playing that card in the real planning poker game. </p>
@@ -573,7 +573,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.036.jpg" alt="Image of slide number 36" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.036.jpg" alt="Image of slide number 36" />
             </div>
             <div class="slide-notes">
                       <p>And, we did this live in the hackathon, and got all the judges to be in the room and start voting on the story too, so you can see them all voting here.  You can’t tell how many points they gave, but you know they voted.  </p>
@@ -586,7 +586,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.037.jpg" alt="Image of slide number 37" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.037.jpg" alt="Image of slide number 37" />
             </div>
             <div class="slide-notes">
                       <p>Behind the scenes, what’s happening?  In the room, we are basically writing these votes as messages into the room.  So, again, append only database - we are appending each Answer into the room.  </p>
@@ -605,7 +605,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.038.jpg" alt="Image of slide number 38" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.038.jpg" alt="Image of slide number 38" />
             </div>
             <div class="slide-notes">
                       <p>So, at some point, you decide everyone’s voted, which we left as manual in our hackathon, and you can close the poll by hitting the “End Poll” button.  </p>
@@ -626,7 +626,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.039.jpg" alt="Image of slide number 39" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.039.jpg" alt="Image of slide number 39" />
             </div>
             <div class="slide-notes">
                       <p>So I hit the button to assign.</p>
@@ -641,7 +641,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.040.jpg" alt="Image of slide number 40" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.040.jpg" alt="Image of slide number 40" />
             </div>
             <div class="slide-notes">
                       <p>This is our Result class in java.  It’s got all the details as fields that it needs to display that bar chart of who voted for what:  like the counts, and the names of the options and the question, and the Story hash-tag.</p>
@@ -668,7 +668,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.041.jpg" alt="Image of slide number 41" />
+                <img src="/img/presentations/BotsChatOpsCovid/images/images.041.jpg" alt="Image of slide number 41" />
             </div>
             <div class="slide-notes">
                       <p>So, this Hackathon bot was just a bit of fun:  we’re going to show some people internally this, and see if they want us to carry on developing it.  But personally, I’m not sure if Scrum’s Planning Poker is going to survive the transition to the post-agile COVID world.</p>

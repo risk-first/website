@@ -1,6 +1,6 @@
 ---
 template: post
-title: All Work Is Risk Management
+title: 1. All Work Is Risk Management
 description: The origins and justification for Risk-First as a concept.
 author: rob
 
@@ -21,7 +21,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.001.jpg" alt="Image of slide number 1" />
+                <img src="/img/presentations/AllWorkIsRiskManagement/images/images.001.jpg" alt="Image of slide number 1" />
             </div>
             <div class="slide-notes">
                       <p>So today I am going to defend this statement:  “All Work is Risk Management”.   And, this is one of the founding philosophies of Risk-First.  </p>
@@ -50,7 +50,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.002.jpg" alt="Image of slide number 2" />
+                <img src="/img/presentations/AllWorkIsRiskManagement/images/images.002.jpg" alt="Image of slide number 2" />
             </div>
             <div class="slide-notes">
                       <p>So, I’ve worked in finance for many years.  I’ve built systems for managing risk in banks, just like many of you have probably worked on systems for managing risk at your company. </p>
@@ -69,7 +69,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.003.jpg" alt="Image of slide number 3" />
+                <img src="/img/presentations/AllWorkIsRiskManagement/images/images.003.jpg" alt="Image of slide number 3" />
             </div>
             <div class="slide-notes">
                       <p>The quote above is actually the first sentence from Chapter One of a fairly famous book on Software Development, written in 2000.</p>
@@ -82,7 +82,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.004.jpg" alt="Image of slide number 4" />
+                <img src="/img/presentations/AllWorkIsRiskManagement/images/images.004.jpg" alt="Image of slide number 4" />
             </div>
             <div class="slide-notes">
                       <p>It's this one: Extreme Programming Explained by Kent Beck.</p>
@@ -97,7 +97,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.005.jpg" alt="Image of slide number 5" />
+                <img src="/img/presentations/AllWorkIsRiskManagement/images/images.005.jpg" alt="Image of slide number 5" />
             </div>
             <div class="slide-notes">
                       <p>Kent Beck had a bunch of ideas in “Extreme Programming”, that really deviated from the accepted “norms” of software development, like Pair Programming.</p>
@@ -120,7 +120,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.006.jpg" alt="Image of slide number 6" />
+                <img src="/img/presentations/AllWorkIsRiskManagement/images/images.006.jpg" alt="Image of slide number 6" />
             </div>
             <div class="slide-notes">
                       <p>Kent Beck also co-invented JUnit, which is a library for building Unit Tests. As a Java developer, I use this all the time.  </p>
@@ -139,7 +139,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.007.jpg" alt="Image of slide number 7" />
+                <img src="/img/presentations/AllWorkIsRiskManagement/images/images.007.jpg" alt="Image of slide number 7" />
             </div>
             <div class="slide-notes">
                       <p>So, what risks is Unit Testing managing? </p>
@@ -168,7 +168,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.008.jpg" alt="Image of slide number 8" />
+                <img src="/img/presentations/AllWorkIsRiskManagement/images/images.008.jpg" alt="Image of slide number 8" />
             </div>
             <div class="slide-notes">
                       <p>Ok, so let’s move on from Extreme Programming for a minute. </p>
@@ -195,7 +195,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.009.jpg" alt="Image of slide number 9" />
+                <img src="/img/presentations/AllWorkIsRiskManagement/images/images.009.jpg" alt="Image of slide number 9" />
             </div>
             <div class="slide-notes">
                       <p>So, banks do Risk Management seriously now.  But also, this is done at a national level:  even the UK government is talking about Risk Management!</p>
@@ -208,7 +208,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.010.jpg" alt="Image of slide number 10" />
+                <img src="/img/presentations/AllWorkIsRiskManagement/images/images.010.jpg" alt="Image of slide number 10" />
             </div>
             <div class="slide-notes">
                       <p>So, here are a few of the risks from the National Risk Register.  I’m not going through all these, but it’s all the kind of disasters you’d expect.</p>
@@ -227,7 +227,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.011.jpg" alt="Image of slide number 11" />
+                <img src="/img/presentations/AllWorkIsRiskManagement/images/images.011.jpg" alt="Image of slide number 11" />
             </div>
             <div class="slide-notes">
                       <p>And it’s categorised as impact level C, which.. you can see here means up to 200 fatalities and possibly up to 1 billion pounds cost.</p>
@@ -242,7 +242,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.012.jpg" alt="Image of slide number 12" />
+                <img src="/img/presentations/AllWorkIsRiskManagement/images/images.012.jpg" alt="Image of slide number 12" />
             </div>
             <div class="slide-notes">
                       <p>So, my thinking is:  can’t we do the same thing for software projects?   Just as the UK government and banking apply a divide-and-conquer approach to managing risks, can we do the same?</p>
@@ -263,7 +263,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.013.jpg" alt="Image of slide number 13" />
+                <img src="/img/presentations/AllWorkIsRiskManagement/images/images.013.jpg" alt="Image of slide number 13" />
             </div>
             <div class="slide-notes">
                       <p>There are more than just four of these, and we’ll see some more as we go.  </p>
@@ -282,7 +282,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.014.jpg" alt="Image of slide number 14" />
+                <img src="/img/presentations/AllWorkIsRiskManagement/images/images.014.jpg" alt="Image of slide number 14" />
             </div>
             <div class="slide-notes">
                       <p>The first time I was introduced to the idea of patterns was in this book, Design Patterns Elements of Reusable Object-Oriented Software, which showed you a load of reusable patterns that you could employ to make your software more extensible.</p>
@@ -297,7 +297,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.015.jpg" alt="Image of slide number 15" />
+                <img src="/img/presentations/AllWorkIsRiskManagement/images/images.015.jpg" alt="Image of slide number 15" />
             </div>
             <div class="slide-notes">
                       <p>If you’ve not heard of design patterns, then here’s another pattern language.  TVTropes is a website that talks about patterns in narrative.</p>
@@ -312,7 +312,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.016.jpg" alt="Image of slide number 16" />
+                <img src="/img/presentations/AllWorkIsRiskManagement/images/images.016.jpg" alt="Image of slide number 16" />
             </div>
             <div class="slide-notes">
                       <p>Ok, so at this point, I’ve made the case that some of the practices in Extreme Programming are about managing risk.  And, I’ve talked about the idea of Risk Management in Banking, the UK and in software development.</p>
@@ -327,7 +327,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.017.jpg" alt="Image of slide number 17" />
+                <img src="/img/presentations/AllWorkIsRiskManagement/images/images.017.jpg" alt="Image of slide number 17" />
             </div>
             <div class="slide-notes">
                       <p>Let’s say this piece of text above is a task in your backlog.  Or, a JIRA item.  Or a github issue.  Or whatever you use to track these things.  </p>
@@ -344,7 +344,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.018.jpg" alt="Image of slide number 18" />
+                <img src="/img/presentations/AllWorkIsRiskManagement/images/images.018.jpg" alt="Image of slide number 18" />
             </div>
             <div class="slide-notes">
                       <p>So, first, we can see there is a Dependency:  doing one thing depends on something else.  Sizing the screen can’t be done until we have the logo.</p>
@@ -363,7 +363,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.019.jpg" alt="Image of slide number 19" />
+                <img src="/img/presentations/AllWorkIsRiskManagement/images/images.019.jpg" alt="Image of slide number 19" />
             </div>
             <div class="slide-notes">
                       <p>Now the thing is, at some level we do consider all these risks when we are working on a project, but it tends to be more implicit.</p>
@@ -384,7 +384,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.020.jpg" alt="Image of slide number 20" />
+                <img src="/img/presentations/AllWorkIsRiskManagement/images/images.020.jpg" alt="Image of slide number 20" />
             </div>
             <div class="slide-notes">
                       <p>Now, at this point, you might be thinking - how many of these risks are there?  tvtropes has literally thousands of different tropes recorded.  Is it the same for Software Projects?  </p>
@@ -407,7 +407,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.021.jpg" alt="Image of slide number 21" />
+                <img src="/img/presentations/AllWorkIsRiskManagement/images/images.021.jpg" alt="Image of slide number 21" />
             </div>
             <div class="slide-notes">
                       <p>So Nassim Taleb, who wrote the black swan said this.  We’re good at risk management.  </p>
@@ -432,7 +432,7 @@ hide_table_of_contents: true
         
         <div class="slide slide--bordered">
             <div class="slide-image">
-                <img src="images/images.022.jpg" alt="Image of slide number 22" />
+                <img src="/img/presentations/AllWorkIsRiskManagement/images/images.022.jpg" alt="Image of slide number 22" />
             </div>
             <div class="slide-notes">
                       <p>So, is All Work Risk Management? </p>
