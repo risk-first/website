@@ -23,8 +23,6 @@ In the previous section we talked about the _reliability_ of the bus:  it will e
 
 Any resource (such as disk space, oxygen, concert tickets, time or pizza) that you depend on can suffer from _scarcity_,  and here, we're going to look at five particular types, relevant to software.<!-- tweet-end -->
 
-![Scarcity Risk and its variations](/img/generated/risks/scarcity/scarcity-risks.svg)
-
 ## Types Of Scarcity Risk
 
 <TagList tag="Scarcity Risk" filter="risks/Dependency-Risks/Scarcity-Risks" /> 

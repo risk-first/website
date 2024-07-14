@@ -30,7 +30,7 @@ Luckily one came along today, giving me a chance to write it up and go over this
 
 In order to make this work, we made use of functionality within Symphony called “On-Behalf-Of”, which allows Tables App to post messages as a user, if the user has given prior authorisation.
 
-![Table Editing In Symphony](/img/tables.jpg)
+![Table Editing In Symphony](/img/bets/tables.jpg)
 
 But something wasn’t working - whenever I clicked "post" - no table!
 
@@ -40,7 +40,7 @@ To make matters worse, I was supposed to be doing a presentation on this within 
 
 So, what is supposed to happen?
 
-![Flow of Action](/img/debugging_flow.png)
+![Flow of Action](/img/bets/debugging_flow.png)
 
 1.  The user clicks the "post" button in Tables App.
 2.  Tables App then makes a request to the Symphony Server for an On-Behalf-Of token.
@@ -141,7 +141,3 @@ I have a feeling that this is really the process I use for _every_ bug, whether 
 Also, I am super-lazy.  I'm always trying to rule of out the hypotheses with the least effort.  Usually, that means lashing together some arrangement of stuff just so see what happens (like the switching identities stuff above).  If testing a hypothesis starts to look onerous, I'll try and find some clever trick to reduce that effort.
 
 Perhaps you have a different process?  Is there another one?  I'd really like to know about it if so.   Please join the GitHub Risk-First team and tell me about it!
-
-## Coming Soon...
-
-In the next (currently unwritten) article, we'll bring this home by looking at testing, and look at the similarities across all of these different practices.  

@@ -62,7 +62,7 @@ Two risks, [Feature Access Risk](/tags/Feature-Access-Risk) and [Market Risk](/t
 
 ### Fit, Audience and Change
 
-![Risks of Change either of the product or the expectations of clients.](/img/generated/risks/feature/all-feature-risk2.svg) 
+Risks of Change either of the product or the expectations of clients.(/img/generated/risks/feature/all-feature-risk2.svg) 
 
 Two risks further consider how the **fit** and **audience** _change_: [Regression Risk](#regression-risk) and [Feature Drift Risk](#feature-drift-risk).  We call this _Change_ in the sense that:
 

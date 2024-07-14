@@ -43,7 +43,7 @@ In the [Feature Risk](/tags/Feature-Risk) section we looked at ways in which our
 
 ### Example: The SatNav
 
-![Sat Nav Blunder Sends Asda Van Crashing Narrow Footpath - Telegraph Newspaper](/img/sat_nav.png)
+![Sat Nav Blunder Sends Asda Van Crashing Narrow Footpath - Telegraph Newspaper](/img/risks/map-and-territory/sat_nav.png)
 
 In the headline above, taken from [the Telegraph newspaper](https://www.telegraph.co.uk/news/newstopics/howaboutthat/6413887/Asda-van-crashes-after-sat-nav-sends-driver-to-narrow-footpath.html), the driver _trusted_ the SatNav to such an extent that he didn't pay attention to the road-signs around him and ended up getting stuck.  
 

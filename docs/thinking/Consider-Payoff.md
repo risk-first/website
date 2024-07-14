@@ -137,7 +137,6 @@ Some people would argue that YAGNI is really a weapon to combat over-engineering
 
 It's important to reflect on the fact that there are other factors at play here:  people know they'll be judged on the quality of their work, don't want to make mistakes and might want to add tools or new skills to their CVs (all of which we'll cover in [Agency Risk](/tags/Agency-Risk).  If you are running the development team, you need to be aware of this risk and work hard to minimise it.
 
-![Over Engineering](/img/generated/introduction/over-engineering.svg)
 <table>
   <tr>
     <th>Example</th>
