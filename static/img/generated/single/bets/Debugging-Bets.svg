@@ -1112,7 +1112,8 @@ fill-opacity: 1;
 
 *[k9-texture] {
 font-family: "metropolis";
-font-size: 22pt;
+font-size: 16pt;
+font-weight: 500;
 }
 
 *[k9-texture="artifact"] {
@@ -1129,10 +1130,8 @@ text-align: center;
 --kite9-text-bounds-width: 100pt;
 }
 
-*[k9-elem="description"] text {
+*[k9-elem="label"] text, *[k9-elem="description"] text {
 font-style: italic;
-font-size: 16pt;
-font-weight: 400;
 --kite9-direction: RIGHT;
 }
 
@@ -1156,6 +1155,7 @@ fill-opacity: 1;
 *[k9-elem="arrow"] &gt; g &gt; *[k9-elem="caption"] &gt; g &gt; text {
 fill: white;
 fill-opacity: 1;
+font-size: 16pt;
 }
 
 *[k9-elem="from"], *[k9-elem="to"] {
@@ -1175,7 +1175,7 @@ stroke-width: 1pt;
 *[k9-elem="action"] &gt; g &gt; *[k9-elem="caption"] &gt; g &gt; text {
 fill-opacity: 1;
 font-size: 16pt;
-font-weight: 400;
+font-weight: 500;
 fill: black;
 text-align: center;
 }
@@ -1186,14 +1186,14 @@ fill: white;
 
 *[k9-elem="title"] {
 font-size: 16pt;
-font-weight: 400;
+font-weight: 500;
 fill: black;
 text-align: center;
 }
 
 *[k9-elem="code"] {
 font-size: 22pt;
-font-weight: 300;
+font-weight: 500;
 fill: black;
 text-align: center;
 }
@@ -1484,8 +1484,8 @@ fill-opacity: 1;
             <g class="k9-content">
                <g k9-elem="depiction"
                   k9-texture="none"
-                  transform="translate(61.0,32.0)"
-                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [100.0, 72.0]; rect-size: [66.0, 66.0]; position: none; painter: direct-svg; ">
+                  transform="translate(61.0,36.0)"
+                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [100.0, 76.0]; rect-size: [66.0, 66.0]; position: none; painter: direct-svg; ">
                   <g class="k9-content k9-no-shape" k9-highlight="pulse">
                      <image x="0"
                             y="0"
@@ -1501,9 +1501,9 @@ fill-opacity: 1;
                </g>
                <g k9-elem="caption"
                   k9-texture="foreground"
-                  transform="translate(11.0,148.3)"
+                  transform="translate(11.0,146.3)"
                   k9-format="text-fixed"
-                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [52.0, 159.0]; rect-size: [162.0, 35.0]; position: none; painter: direct-svg; ">
+                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [52.0, 165.0]; rect-size: [162.0, 25.0]; position: none; painter: direct-svg; ">
                   <g class="k9-content k9-no-shape" k9-highlight="pulse">
                      <g rendered="true">
                         <g>
