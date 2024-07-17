@@ -2,47 +2,50 @@
 	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
 	xmlns="http://www.kite9.org/schema/adl"
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
-            style="--kite9-min-width: 800pt;">
-      <users id="a">A</users>
-      <group style="--kite9-layout: right; ">
-         <container class="dotted" id="c" style="--kite9-layout: right; ">
-            <agent-artifact id="1">Agent 1</agent-artifact>
-         </container>
-         <container class="dotted" id="c-du" style="--kite9-layout: right; ">
-            <agent-artifact id="2">Agent 2</agent-artifact>
-         </container>
-         <label id="id_16">
-            Distributed Database
-            <symbols/>
-         </label>
-      </group>
-      <users id="b">B</users>
-      <link style="--kite9-direction: right;">
-         <from reference="a"/>
-         <to shape="arrow" reference="1"/>
-         <fromLabel>
-            writes X=1
-         </fromLabel>
-      </link>
-      <link style="--kite9-direction: right;">
-         <from shape="arrow" reference="a"/>
-         <to reference="1"/>
-         <toLabel>
-            acknowledges
-         </toLabel>
-      </link>
-      <link style="--kite9-direction: left;">
-         <from reference="b"/>
-         <to shape="arrow" reference="2"/>
-         <fromLabel>
-            requests X
-         </fromLabel>
-      </link>
-      <link style="--kite9-direction: left;">
-         <from shape="arrow" reference="b"/>
-         <to reference="2"/>
-         <toLabel>
-            returns 0
-         </toLabel>
-      </link>
-   </diagram>
+	style="--kite9-min-width: 800pt;">
+	<users id="a">A</users>
+	<group style="--kite9-layout: down">
+		<group style="--kite9-layout: right; ">
+			<container class="dotted" id="c"
+				style="--kite9-layout: right; ">
+				<agent-artifact id="1">Agent 1</agent-artifact>
+			</container>
+			<container class="dotted" id="c-du"
+				style="--kite9-layout: right; ">
+				<agent-artifact id="2">Agent 2</agent-artifact>
+			</container>
+		</group>
+		<description id="id_16" style="--kite9-horizontal-align: center;">
+			Distributed Database
+		</description>
+	</group>
+	<users id="b">B</users>
+	<link style="--kite9-direction: right;">
+		<from reference="a" />
+		<to shape="arrow" reference="1" />
+		<fromLabel>
+			writes X=1
+		</fromLabel>
+	</link>
+	<link style="--kite9-direction: right;">
+		<from shape="arrow" reference="a" />
+		<to reference="1" />
+		<toLabel>
+			acknowledges
+		</toLabel>
+	</link>
+	<link style="--kite9-direction: left;">
+		<from reference="b" />
+		<to shape="arrow" reference="2" />
+		<fromLabel>
+			requests X
+		</fromLabel>
+	</link>
+	<link style="--kite9-direction: left;">
+		<from shape="arrow" reference="b" />
+		<to reference="2" />
+		<toLabel>
+			returns 0
+		</toLabel>
+	</link>
+</diagram>
