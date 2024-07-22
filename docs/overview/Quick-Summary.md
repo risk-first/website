@@ -15,7 +15,7 @@ tags:
 
 ## 1.  There are Lots of Ways to Run Software Projects
 
-There are lots of ways to look at a project in-flight.  For example, metrics such as “number of open tickets”, “story points”, “code coverage" or "release cadence" give us a numerical feel for how things are going and what needs to happen next.  We also judge the health of projects by the practices used on them, such as [Continuous Integration](/practices/Testing.md#continuous-integration), [Unit Testing](/tags/Automated-Testing) or [Pair Programming](/tags/Pair-Programming).  
+There are lots of ways to look at a project in-flight.  For example, metrics such as “number of open tickets”, “story points”, “code coverage" or "release cadence" give us a numerical feel for how things are going and what needs to happen next.  We also judge the health of projects by the practices used on them, such as [Continuous Integration](/tags/Integration-Testing.md), [Unit Testing](/tags/Automated-Testing) or [Pair Programming](/tags/Pair-Programming).  
 
 Software methodologies, then, are collections of tools and practices:  “Agile”, “Waterfall”, “Lean” or “Phased Delivery” all prescribe different approaches to running a project and are opinionated about the way they think projects should be done and the tools that should be used.    
 

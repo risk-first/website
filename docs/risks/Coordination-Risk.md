@@ -154,7 +154,7 @@ Vroom and Yetton's organisational model isn't relevant to just teams of people. 
  - **Tissues**, which contain...
  - **Cells** of different types.  (Even cells are complex systems containing multiple different, communicating sub-systems.)  
  
-There is huge attendant [Coordination Risk](/tags/Coordination-Risk) to running a complex multi-cellular system like the human body, but given the success of humanity as a species, you must conclude that these steps on the _evolutionary_ [Risk Landscape](Risk-Landscape.md) have benefited us in our ecological niche.
+There is huge attendant [Coordination Risk](/tags/Coordination-Risk) to running a complex multi-cellular system like the human body, but given the success of humanity as a species, you must conclude that these steps on the _evolutionary_ [Risk Landscape](/risks/Risk-Landscape.md) have benefited us in our ecological niche.
 
 ### Decision Making
 

@@ -9,7 +9,7 @@ featured:
 sidebar_position: 3
 tags:
  - Attendant Risk
- - Meet Reality
+ - Meeting Reality
  - Hidden Risk
 redirect_from: 
  - /Development-Process

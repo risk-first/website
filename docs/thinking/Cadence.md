@@ -8,7 +8,7 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cadence.svg">Feedback Loops</image-artifact>'
 tags:
  - Feedback Loop
- - Meet Reality
+ - Meeting Reality
 definitions:
  - name: Feedback Loop
    description: The process of testing an Internal Model, through taking action to Meet Reality. Typically, we talk about short or long feedback loops, depending on the intervals between Meeting Reality.

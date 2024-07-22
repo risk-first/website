@@ -2,7 +2,7 @@
 title: Deadline Risk
 description: What is the point of a deadline?  Do they serve a useful purpose?
 
-
+slug: risks/Deadline-Risk
 featured: 
   class: c
   element: '<risk class="deadline" />'

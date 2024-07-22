@@ -2,6 +2,7 @@
 title: Protocol Risk
 description: Risks due to the failure of encoding or decoding messages between two parties in communication.  
 
+slug: risks/Protocol-Risk
 featured: 
   class: c
   element: '<risk class="protocol" />'

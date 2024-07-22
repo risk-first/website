@@ -2,6 +2,7 @@
 title: Message Risk
 description: Risks caused by the difficulty of composing and interpreting messages in the communication process.
 
+slug: risks/Message-Risk
 featured: 
   class: c
   element: '<risk class="message" />'

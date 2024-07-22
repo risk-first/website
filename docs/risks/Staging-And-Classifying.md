@@ -24,13 +24,13 @@ As we said [at the start](A-Pattern-Language.md), Risk-First is all about develo
 
 ![Periodic Table of Risks, Horizontal](/img/generated/staging-and-classifying/periodic-horizontal.svg)
 
-The diagram above compiles all of the risks we've seen so far on our tour across the [Risk Landscape](Risk-Landscape.md).  Just like a periodic table, there are perhaps others left to discover.   _Unlike_ a periodic table, these risks are not completely distinct: they mix like paint and blend into one another.  
+The diagram above compiles all of the risks we've seen so far on our tour across the [Risk Landscape](/risks/Risk-Landscape.md).  Just like a periodic table, there are perhaps others left to discover.   _Unlike_ a periodic table, these risks are not completely distinct: they mix like paint and blend into one another.  
 
 If you've been reading closely, you'll notice that a number of themes come up again and again within the different sections.   It's time to look at the _patterns within the patterns_. 
 
 ## The Power Of Abstractions
 
-[Abstraction](/thinking/Glossary.md#abstraction) appears as a concept continually: in [Communication Risk](/tags/Communication-Risk), [Complexity Metrics](Complexity-Risk.md#kolmogorov-complexity), [Map and Territory Risk](/tags/Map-And-Territory-Risk) or how it causes [Boundary Risk](/tags/Boundary-Risk).  We've looked at some complicated examples of abstractions, such as [network protocols](Communication-Risk.md#protocols), [dependencies on technology](/tags/Software-Dependency-Risk) or [Business Processes](Process-Risk.md#the-purpose-of-process).
+[Abstraction](/thinking/Glossary.md#abstraction) appears as a concept continually: in [Communication Risk](/tags/Communication-Risk), [Complexity Metrics](/risks/Complexity-Risk.md#kolmogorov-complexity), [Map and Territory Risk](/tags/Map-And-Territory-Risk) or how it causes [Boundary Risk](/tags/Boundary-Risk).  We've looked at some complicated examples of abstractions, such as [network protocols](Communication-Risk.md#protocols), [dependencies on technology](/tags/Software-Dependency-Risk) or [Business Processes](Process-Risk.md#the-purpose-of-process).
 
 Let's now _generalize_ what is happening with abstraction.  To do this, we'll consider the simplest example of abstraction:  _naming a pattern_ of behaviour we see in the real world, such as "Binge Watching" or "Remote Working", or naming a category of insects as "Beetles".
 
@@ -82,7 +82,7 @@ As shown in the diagram above, relationships of features/dependencies are the ba
 
 ## The Work Continues
 
-On this journey around the [Risk Landscape](Risk-Landscape.md) we've collected a (hopefully) good, representative sample of [Risks](/thinking/Glossary.md#risk) and where to find them. But there are more out there.   How many of these have you seen on your projects?  What is missing?  What is wrong?
+On this journey around the [Risk Landscape](/risks/Risk-Landscape.md) we've collected a (hopefully) good, representative sample of [Risks](/thinking/Glossary.md#risk) and where to find them. But there are more out there.   How many of these have you seen on your projects?  What is missing?  What is wrong?
 
 Please help by reporting back what you find.
 

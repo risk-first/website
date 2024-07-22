@@ -2,6 +2,7 @@
 title: "Trust And Belief Risk"
 description: Risk that a party we are communicating with can't be trusted, as it has agency or is unreliable in some other way.  
 
+slug: risks/Trust-And-Belief-Risk
 featured: 
   class: c
   element: '<risk class="trust" />'

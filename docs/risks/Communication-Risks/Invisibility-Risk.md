@@ -2,6 +2,7 @@
 title: Invisibility Risk
 description: Risks caused by the choice of abstractions we use in communication.
 
+slug: risks/Invisibility-Risk
 featured: 
   class: c
   element: '<risk class="invisibility" />'

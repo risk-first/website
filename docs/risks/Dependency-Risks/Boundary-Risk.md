@@ -2,7 +2,7 @@
 title: Boundary Risk
 description: Risks due to the commitments we make around dependencies, and the limitations they place on our ability to change.
 
-
+slug: /risks/Boundary-Risk
 featured: 
   class: c
   element: '<risk class="boundary" />'
@@ -25,7 +25,7 @@ As shown in the above diagram, [Boundary Risk](/tags/Boundary-Risk) is the risk 
 - Although I eat cereals for breakfast, I don't have [Boundary Risk](/tags/Boundary-Risk) on them.  If the supermarket runs out of cereals when I go, I can just buy some other food and eat that.
 - However the hot water system in my house uses gas.  If that's not available I can't just switch to using oil or solar without cost.  There is [Boundary Risk](/tags/Boundary-Risk), but it's low because the supply of gas is plentiful and seems like it will stay that way.
 
-In terms of the [Risk Landscape](Risk-Landscape.md), [Boundary Risk](/tags/Boundary-Risk) is exactly as it says:  a _boundary_, _wall_ or other kind of obstacle in your way to making a move you want to make. <!-- tweet-end -->  This changes the nature of the [Risk Landscape](/thinking/Glossary.md#risk-landscape), and introduces a maze-like component to it.  It also means that we have to make _commitments_ about which way to go, knowing that our future paths are constrained by the decisions we make.
+In terms of the [Risk Landscape](/risks/Risk-Landscape.md), [Boundary Risk](/tags/Boundary-Risk) is exactly as it says:  a _boundary_, _wall_ or other kind of obstacle in your way to making a move you want to make. <!-- tweet-end -->  This changes the nature of the [Risk Landscape](/thinking/Glossary.md#risk-landscape), and introduces a maze-like component to it.  It also means that we have to make _commitments_ about which way to go, knowing that our future paths are constrained by the decisions we make.
 
 As we discussed in [Complexity Risk](/tags/Complexity-Risk), there is always the chance we end up at a [Dead End](/tags/Dead-End-Risk), having done work that we need to throw away.  In this case, we'll have to head back and make a different decision.
 
@@ -33,7 +33,7 @@ As we discussed in [Complexity Risk](/tags/Complexity-Risk), there is always the
 
 In software development, although we might face [Boundary Risk](/tags/Boundary-Risk) choosing staff or offices, most of the everyday dependency commitments we have to make are around _abstractions_. 
 
-As discussed in [Software Dependency Risk](/tags/Software-Dependency-Risk), if we are going to use a software tool as a dependency, we have to accept the complexity of its [protocols](Communication-Risk.md#protocols).  You have to use its protocol: it won't come to you.   
+As discussed in [Software Dependency Risk](/tags/Software-Dependency-Risk), if we are going to use a software tool as a dependency, we have to accept the complexity of its [protocols](/tags/Protocol-Risk).  You have to use its protocol: it won't come to you.   
 
 ![Our System receives data from the `input`, translates it and sends it to the `output`.  But which dependency should we use for the translation, if any?](/img/generated/risks/boundary/choices.svg)
 
@@ -79,7 +79,7 @@ But crucially, the underlying abstractions of WordPress and Drupal are different
 
 > "... a set of businesses functioning as a unit and interacting with a shared market for software and services, together with relationships among them. These relationships are frequently underpinned by a common technological platform and operate through the exchange of information, resources, and artifacts." - [Software Ecosystem, _Wikipedia_](https://en.wikipedia.org/wiki/Software_ecosystem)
 
-You can think of the ecosystem as being like the footprint of a town or a city, consisting of the buildings, transport network and the people that live there.  Within the city, and because of the transport network and the amenities available, it's easy to make rapid, useful moves on the [Risk Landscape](Risk-Landscape.md).  In a software ecosystem it's the same: the ecosystem has gathered together to provide a way to mitigate various different [Feature Risks](/tags/Feature-Risk) in a common way.
+You can think of the ecosystem as being like the footprint of a town or a city, consisting of the buildings, transport network and the people that live there.  Within the city, and because of the transport network and the amenities available, it's easy to make rapid, useful moves on the [Risk Landscape](/risks/Risk-Landscape.md).  In a software ecosystem it's the same: the ecosystem has gathered together to provide a way to mitigate various different [Feature Risks](/tags/Feature-Risk) in a common way.
 
 Ecosystem size is one key determinant of [Boundary Risk](/tags/Boundary-Risk):
   
@@ -125,7 +125,7 @@ The above chart is an example of this: look at how the number of public classes 
 
 #### Backward Compatibility
 
-As we saw in [Software Dependency Risk](/tags/Software-Dependency-Risk), The art of good design is to afford the greatest increase in functionality with the smallest increase in  complexity possible, and this usually means [Refactoring](https://en.wikipedia.org/wiki/Refactoring).  But, this is at odds with [Backward Compatibility](Communication-Risk.md#backward-compatibility).
+As we saw in [Software Dependency Risk](/tags/Software-Dependency-Risk), The art of good design is to afford the greatest increase in functionality with the smallest increase in  complexity possible, and this usually means [Refactoring](https://en.wikipedia.org/wiki/Refactoring).  But, this is at odds with [Backward Compatibility](/risks/Protocol-Risk.md#backward-compatibility).
 
 Each new version has a greater functional scope than the one before (pushing back [Boundary Risk](/tags/Boundary-Risk)), making the platform more attractive to build solutions in.   But this increases the [Complexity Risk](/tags/Complexity-Risk) as there is more functionality to deal with.  
 
@@ -133,7 +133,7 @@ Each new version has a greater functional scope than the one before (pushing bac
 
 You can see in the diagram above the Peter Principle at play:  as more responsibility is given to a dependency, the more complex it gets and the greater the learning curve to work with it.  Large ecosystems like Java react to [Learning Curve Risk](/tags/Learning-Curve-Risk) by having copious amounts of literature to read or buy to help, but it is still off-putting.
 
-Because [Complexity is Mass](Complexity-Risk.md#complexity-is-mass), large ecosystems can't respond quickly to [Feature Drift](/tags/Feature-Drift-Risk).  This means that when the world changes, new ecosystems are likely to appear to fill gaps, rather than old ones moving in.
+Because [Complexity is Mass](/risks/Complexity-Risk.md#complexity-is-mass), large ecosystems can't respond quickly to [Feature Drift](/tags/Feature-Drift-Risk).  This means that when the world changes, new ecosystems are likely to appear to fill gaps, rather than old ones moving in.
 
 ## Managing Boundary Risk
 

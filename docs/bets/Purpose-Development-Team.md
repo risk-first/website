@@ -141,7 +141,7 @@ Let's go back to our original cases:
 In a way, this is not just about development teams.  Any time a person is added to an organisation, the hope is that it will improve the [balance of risk](/thinking/Glossary.md#balance-of-risk) for that organisation.  The development team are experts in improving the balance of [technical risks](/risks/Risk-Landscape.md) but other teams have other specialities:
  
  - The Finance team are there to avoid the risk of [running out of money](/tags/Funding-Risk) and ensuring that the bills get paid (avoiding [Legal Risks](/tags/Operational-Risk)).
- - The Human Resources team are there to make sure staff are hired, managed and leave properly.  Doing this avoids [inefficiency](/tags/Schedule-Risk), [Reputation Damage](/tags/Trust-And-Belief-Risk), [Morale Issues](/risks/Agency-Risk.md#morale-failure) and [Legal Risks](/tags/Operational-Risk).
+ - The Human Resources team are there to make sure staff are hired, managed and leave properly.  Doing this avoids [inefficiency](/tags/Schedule-Risk), [Reputation Damage](/tags/Trust-And-Belief-Risk), [Morale Issues](/risks/Agency-Risk#morale-failure) and [Legal Risks](/tags/Operational-Risk).
  - The best doctors have accurate [Internal Models](/thinking/Glossary.md#internal-model). They can best diagnose the illnesses and figure out treatments that improve the patient's [balance of risk](/thinking/Glossary.md#balance-of-risk).  Medical Students are all taught to 'first, do no harm':
 
 > "given an existing problem, it may be better not to do something, or even to do nothing, than to risk causing more harm than good." - [Primum non nocere, _Wikipedia_](https://en.wikipedia.org/wiki/Primum_non_nocere).
@@ -166,4 +166,4 @@ All of these actions are about _insurance_, which is about limiting downside-ris
 
 If you are faced with a choice between extremes...
 
-This is just a few simple examples and actually it goes much further than this.  In [Estimates](../estimating/Estimates.md) I apply this idea to software estimating, and the next article, [Coding Bets](Coding-Bets.md), I am going to show how knowledge of the [balance of risk](/thinking/Glossary.md#balance-of-risk) concept can inform the way we go about our day-to-day work as developers...
+This is just a few simple examples and actually it goes much further than this.  In [Estimates](../estimating/Start.md) I apply this idea to software estimating, and the next article, [Coding Bets](Coding-Bets.md), I am going to show how knowledge of the [balance of risk](/thinking/Glossary.md#balance-of-risk) concept can inform the way we go about our day-to-day work as developers...

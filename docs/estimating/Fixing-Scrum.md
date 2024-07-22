@@ -8,7 +8,7 @@ tags:
  - Estimating
  - Popular
  - Feedback Loop
- - Meet Reality
+ - Meeting Reality
  - Scrum
 sidebar_position: 6
 tweet: yes

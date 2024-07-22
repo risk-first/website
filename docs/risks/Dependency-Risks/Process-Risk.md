@@ -2,7 +2,7 @@
 title: Process Risk
 description: Risks due to the following a particular protocol of communication with a dependency, which may not work out the way we want.
 
-
+slug: risks/Process-Risk
 featured: 
   class: c
   element: '<risk class="process" />'
@@ -134,7 +134,7 @@ But [Parkinson's Law](https://en.wikipedia.org/wiki/Parkinsons_law) takes this o
 
 This implies that there is a tendency for organisations to end up with _needless levels of [Process Risk](/tags/Process-Risk)_.
 
-To fix this, design needs to happen at a higher level.  In our code, we would [Refactor](Complexity-Risk.md#technical-debt) these processes to remove the unwanted complexity.  In a business, it requires re-organisation at a higher level to redefine the boundaries and responsibilities between the teams.  
+To fix this, design needs to happen at a higher level.  In our code, we would [Refactor](/risks/Complexity-Risk.md#technical-debt) these processes to remove the unwanted complexity.  In a business, it requires re-organisation at a higher level to redefine the boundaries and responsibilities between the teams.  
 
 Next in the tour of [Dependency Risks](/tags/Dependency-Risk), it's time to look at [Boundary Risk](/tags/Boundary-Risk).
 

@@ -2,6 +2,9 @@
 title: Funding Risk
 description: A particular scarcity risk, due to lack of funding.
 
+
+slug: risks/Funding-Risk
+
 featured: 
   class: c
   element: '<risk class="funding" />'

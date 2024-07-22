@@ -2,6 +2,7 @@
 title: Learning Curve Risk
 description: Risks due to the difficulty faced in updating an internal model.
 
+slug: risks/Learning-Curve-Risk
 featured: 
   class: c
   element: '<risk class="learning-curve" />'

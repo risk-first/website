@@ -2,6 +2,7 @@
 title: Channel Risk
 description: Risks due to the inadequacy of the physical channel used to communicate our messages. e.g. noise, loss, interception, corruption.
 
+slug: risks/Channel-Risk
 featured: 
   class: c
   element: '<risk class="channel" />'

@@ -2,6 +2,7 @@
 title: Staff Risk
 description: The aspect of dependency risks related to employing people.
 
+slug: risks/Staff-Risk
 featured: 
   class: c
   element: '<risk class="staff" />'

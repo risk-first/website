@@ -2,6 +2,8 @@
 title: Red Queen Risk
 description: The general risk that the competitive environment we operate within changes over time.
 
+slug: risks/Red-Queen-Risk
+
 featured: 
   class: c
   element: '<risk class="red-queen" />'

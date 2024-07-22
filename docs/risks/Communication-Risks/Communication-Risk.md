@@ -15,7 +15,7 @@ tags:
  - Protocol Risk
  - Internal Model Risk
  - Invisibility Risk
- - Trust and Belief Risk
+ - Trust And Belief Risk
 tweet: yes
 part_of: Operational Risk
 ---

@@ -31,9 +31,9 @@ To get there, we need to avoid the pitfalls dotted around the landscape like "Ru
 
 Our job as developers is to _navigate_ across this landscape, testing the way as we go, trying to get to a position of _more favourable risk_.
 
-It's tempting to think of the [Risk Landscape](Risk-Landscape.md) as being like a [Fitness Landscape](https://en.wikipedia.org/wiki/Fitness_landscape).  That is, you have a "cost function" which is your height above the landscape, and you try and optimise by moving downhill in a [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent) fashion.  
+It's tempting to think of the [Risk Landscape](/risks/Risk-Landscape.md) as being like a [Fitness Landscape](https://en.wikipedia.org/wiki/Fitness_landscape).  That is, you have a "cost function" which is your height above the landscape, and you try and optimise by moving downhill in a [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent) fashion.  
 
-However, there's a problem with this:  we don't have that cost function.  We can only _guess_ at what risks there are.  We have to go on our _experience_. For this reason, I prefer to think of the [Risk Landscape](Risk-Landscape.md) as a terrain which contains various categories of _fauna_ or _obstacles_ which we will find as we explore it.
+However, there's a problem with this:  we don't have that cost function.  We can only _guess_ at what risks there are.  We have to go on our _experience_. For this reason, I prefer to think of the [Risk Landscape](/risks/Risk-Landscape.md) as a terrain which contains various categories of _fauna_ or _obstacles_ which we will find as we explore it.
 
 ## Why Should We Categorise The Risks?
 
@@ -61,7 +61,7 @@ Below is a table outlining the different risks we'll see.  There _is_ an order t
 |[Deadline Risk](/tags/Deadline-Risk)                      |The risk of having a date to hit.|
 |[Software Dependency Risk](/tags/Software-Dependency-Risk)|The risk of depending on a software library, service or function.|    
 |[Process Risk](/tags/Process-Risk)                        |When you depend on a business process, or human process to give you something you need.|
-|[Boundary Risk](/tags/Boundary-Risk)                      |Risks due to making decisions that limit your choices later on.  Sometimes, you go the wrong way on the [Risk Landscape](Risk-Landscape.md) and it's hard to get back to where you want to be.|            
+|[Boundary Risk](/tags/Boundary-Risk)                      |Risks due to making decisions that limit your choices later on.  Sometimes, you go the wrong way on the [Risk Landscape](/risks/Risk-Landscape.md) and it's hard to get back to where you want to be.|            
 |[Agency Risk](/tags/Agency-Risk)                          |Risks that staff have their own [Goals](/thinking/Glossary.md#goal), which might not align with those of the project or team.|
 |[Coordination Risk](/tags/Coordination-Risk)              |Risks due to the fact that systems contain multiple agents, which need to work together.|       
 |[Map And Territory Risk](/tags/Map-And-Territory-Risk)    |Risks due to the fact that people don't see the world as it really is. (After all, they're working off different, imperfect [Internal Models](/thinking/Glossary.md#internal-model).)|  
@@ -73,7 +73,7 @@ Also on that page is a [periodic table](Staging-And-Classifying.md#towards-a-per
 
 ## Causation & Correlation 
 
-Although we're going to try and categorise the kinds of things we see on this [Risk Landscape](Risk-Landscape.md), this isn't going to be perfect, because: 
+Although we're going to try and categorise the kinds of things we see on this [Risk Landscape](/risks/Risk-Landscape.md), this isn't going to be perfect, because: 
 
  - One risk can "blend" into another just like sometimes a "field" is also a "car-park", or a building might contain some trees (but isn't a forest).
  - Ameliorating one risk probably means accepting another (hopefully lesser) risk.

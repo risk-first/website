@@ -53,13 +53,13 @@ export default function TagList(props) {
 	
 	const sort = props.sort ?? "default"
 
-	console.log("Filter: "+filter)
+	//console.log("Filter: "+filter)
 
 	oneTag.sort(sorts[sort]);
 	
-	oneTag
-	    //.filter(d => d.permalink.indexOf(filter) > -1)
-		.forEach(d => console.log(d.permalink))
+	// oneTag
+	//.filter(d => d.permalink.indexOf(filter) > -1)
+	//	.forEach(d => console.log(d.permalink))
 
 
 
