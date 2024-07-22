@@ -44,7 +44,7 @@ Outsourcing in software development involves hiring external vendors or service 
 
 **Pairing** and **Mobbing** as mitigations to [Coordination Risk](/tags/Coordination-Risk) are easiest when developers are together in the same room.  But it doesn't always work out like this.   Teams spread in different locations and timezones naturally don't have the same [communication bandwidth](/tags/Communication-Risk) and you _will_ have more issues with [Coordination Risk](/tags/Coordination-Risk).  
 
-In the extreme, I've seen situations where the team at one location has decided to "suck up" the extra development effort themselves rather than spend time trying to bring a new remote team up-to-speed.  More common is for one location to do the development, while another gets the [Support](Support) duties.  
+In the extreme, I've seen situations where the team at one location has decided to "suck up" the extra development effort themselves rather than spend time trying to bring a new remote team up-to-speed.  More common is for one location to do the development, while another gets the [Support](../Planning-And-Management/Issue-Management) duties.  
 
 When this happens, it's because somehow the team feel that [Coordination Risk](/tags/Coordination-Risk) is more unmanageable than [Schedule Risk](/tags/Schedule-Risk).
 

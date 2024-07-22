@@ -2,7 +2,7 @@
 title: Process Risk
 description: Risks due to the following a particular protocol of communication with a dependency, which may not work out the way we want.
 
-slug: risks/Process-Risk
+slug: /risks/Process-Risk
 featured: 
   class: c
   element: '<risk class="process" />'
@@ -32,7 +32,7 @@ As the above diagram shows, process exists to mitigate other kinds of risk.  For
  - **[Operational Risk](/tags/Operational-Risk)**:  this encompasses the risk of people _not doing their job properly_.  But, by having a process, (and asking, did this person follow the process?) you can draw a distinction between a process failure and a personnel failure.  For example, accepting funds from a money launderer _could_ be a failure of a bank employee.   But, if they followed the _process_, it's a failure of the [Process](/tags/Process-Risk) itself. 
  - **[Complexity Risk](/tags/Complexity-Risk)**: working _within a process_ can reduce the amount of [Complexity](/tags/Complexity-Risk) you have to think about.  We accept that processes are going to slow us down, but we appreciate the reduction in risk this brings.  Clearly, the complexity hasn't gone away, but it's hidden within design of the process.  For example, [McDonalds](https://en.wikipedia.org/wiki/McDonald's) tries to design its operation so that preparing each food item is a simple process to follow, reducing complexity (and training time) for the staff.
 
-These are all examples of [Risk Mitigation](/thinking/Glossary.md#mitigated-risk) for the _owners_ of the process.  But often the _consumers_ of the process end up picking up [Process Risks](/tags/Process-Risk) as a result:
+These are all examples of [Risk Mitigation](/thinking/Glossary#mitigated-risk) for the _owners_ of the process.  But often the _consumers_ of the process end up picking up [Process Risks](/tags/Process-Risk) as a result:
 
  - **[Invisibility Risk](/tags/Invisibility-Risk)**: it's often not possible to see how far along a process is to completion.  Sometimes, you can do this to an extent.  For example, when I send a package for delivery, I can see roughly how far it's got on the tracking website.  But this is still less-than-complete information and is a representation of reality.    
  - **[Dead-End Risk](/tags/Dead-End-Risk)**: even if you have the right process, initiating a process has no guarantee that your efforts won't be wasted and you'll be back where you started from.  The chances of this happening increase as you get further from the standard use-case for the process, and the sunk cost increases with the length of time the process takes to complete.
@@ -46,7 +46,7 @@ When we talk about "[Process Risk](/tags/Process-Risk)" we are really referring 
 
 Processes tend to work well for the common cases because *practice makes perfect*,  but they are really tested when unusual situations occur.  Expanding processes to deal with edge-cases incurs [Complexity Risk](/tags/Complexity-Risk), so often it's better to try and have clear boundaries of what is "in" and "out" of the process' domain.
 
-Sometimes, processes are _not_ used commonly.  How can we rely on them anyway?  Usually, the answer is to build in extra [feedback loops](/thinking/Glossary.md#feedback-loop):
+Sometimes, processes are _not_ used commonly.  How can we rely on them anyway?  Usually, the answer is to build in extra [feedback loops](/thinking/Glossary#feedback-loop):
 
 - Testing that backups work, even when no backup is needed.
 - Running through a disaster recovery scenario at the weekend.
@@ -67,7 +67,7 @@ Often, [Sign-Offs](/tags/Approvals) boil down to a balance of risk for the signe
 This is a nasty situation, but there are a couple of ways to de-risk this: 
 
  - Break [Sign-Offs](/tags/Approvals) down into bite-size chunks of risk that are acceptable to those doing the signing-off.  
- - Agree far-in-advance the sign-off criteria.  As discussed in [Risk Theory](/thinking/Evaluating-Risk.md), people have a habit of heavily discounting future risk, and it's much easier to get agreement on the _criteria_ than it is to get the sign-off. 
+ - Agree far-in-advance the sign-off criteria.  As discussed in [Risk Theory](/thinking/Evaluating-Risk), people have a habit of heavily discounting future risk, and it's much easier to get agreement on the _criteria_ than it is to get the sign-off. 
  
 ## Evolution Of Process
 
@@ -87,14 +87,14 @@ Let's look at an example of how that can happen in a step-wise way.
 
 ![Step 2: team `B` doing `A` for clients `C`.  Complexity Risk is transferred to B, but C pick up Staff Risk.](/img/generated/risks/process/step2.svg)
 
-2.  Because `A` is risky, a new team (`B`) is spun up to deal with the [Complexity Risk](/tags/Complexity-Risk), which might let `C` get on with their "proper" jobs.  As shown in the diagram above, this is really useful:  `C`'s is job much easier (reduced [Complexity Risk](/tags/Complexity-Risk)) as they have an easier path to `A` than before.  But the risk for `A` hasn't really gone - they're now just dependent on `B` instead.  When members of `B` fail to deliver, this is [Staff Risk](Scarcity-Risk.md#staff-risk) for `C`.   
+2.  Because `A` is risky, a new team (`B`) is spun up to deal with the [Complexity Risk](/tags/Complexity-Risk), which might let `C` get on with their "proper" jobs.  As shown in the diagram above, this is really useful:  `C`'s is job much easier (reduced [Complexity Risk](/tags/Complexity-Risk)) as they have an easier path to `A` than before.  But the risk for `A` hasn't really gone - they're now just dependent on `B` instead.  When members of `B` fail to deliver, this is [Staff Risk](Scarcity-Risk#staff-risk) for `C`.   
 
 ![Step 3: team `B` formalises the dependency with a Process](/img/generated/risks/process/step3.svg)
 
 3. Problems are likely to occur eventually in the `B`/`C` relationship.  Perhaps some members of the `B` team give better service than others, or deal with more variety in requests?   In order to standardise the response from `B` and also to reduce scope-creep in requests from `C`, `B` organises bureaucratically so that there is a controlled process (`P`) by which `A` can be accessed.  Members of teams `B` and `C` now interact via some request mechanism like forms (or another protocol).  
 
   - As shown in the above diagram, because of `P`, `B` can now process requests on a first-come-first-served basis and deal with them all in the same way: the more unusual requests from `C` might not fit the model.  These [Process Risks](/tags/Process-Risk) are now the problem of the form-filler in `C`.   
-  - Since this is [Abstraction](/thinking/Glossary.md#abstraction), `C` now has [Invisibility Risk](/tags/Invisibility-Risk) since it can't access team `B` and see how it works.
+  - Since this is [Abstraction](/thinking/Glossary#abstraction), `C` now has [Invisibility Risk](/tags/Invisibility-Risk) since it can't access team `B` and see how it works.
   - Team `B` may also use `P` to introduce other bureaucracy like authorisation and sign-off steps or payment barriers.   All of this increases [Process Risk](/tags/Process-Risk) for team C. 
 
 ![Person D acts as a middleman for customers needing some variant of `A`, transferring Complexity Risk](/img/generated/risks/process/step4.svg)
@@ -110,8 +110,8 @@ In this example, you can see how the organisation evolves process to mitigate ri
 
 Two key take-aways from this:
 
- - **The System Gets More Complex**: with different teams working to mitigate different risks in different ways, we end up with a more complex situation than when we started.  Although we've _evolved_ in this direction by mitigating risks, it's not necessarily the case that the end result is _more efficient_.  In fact, as we will see in [Map-And-Territory Risk](Map-And-Territory-Risk.md#markets), this evolution can lead to some very inadequate (but nonetheless stable) systems.
- - **Organisational process evolves to mitigate risk**: just as we've shown that [actions are about mitigating risk](/thinking/Start.md), we've now seen that these actions get taken in an evolutionary way.  That is, there is "pressure" on our internal processes to reduce risk.  The people maintaining these processes feel the risk, and modify their processes in response.  Let's look at a real-life example: 
+ - **The System Gets More Complex**: with different teams working to mitigate different risks in different ways, we end up with a more complex situation than when we started.  Although we've _evolved_ in this direction by mitigating risks, it's not necessarily the case that the end result is _more efficient_.  In fact, as we will see in [Map-And-Territory Risk](Map-And-Territory-Risk#markets), this evolution can lead to some very inadequate (but nonetheless stable) systems.
+ - **Organisational process evolves to mitigate risk**: just as we've shown that [actions are about mitigating risk](/thinking/Start), we've now seen that these actions get taken in an evolutionary way.  That is, there is "pressure" on our internal processes to reduce risk.  The people maintaining these processes feel the risk, and modify their processes in response.  Let's look at a real-life example: 
 
 ## An Example - Release Processes
 
@@ -134,7 +134,7 @@ But [Parkinson's Law](https://en.wikipedia.org/wiki/Parkinsons_law) takes this o
 
 This implies that there is a tendency for organisations to end up with _needless levels of [Process Risk](/tags/Process-Risk)_.
 
-To fix this, design needs to happen at a higher level.  In our code, we would [Refactor](/risks/Complexity-Risk.md#technical-debt) these processes to remove the unwanted complexity.  In a business, it requires re-organisation at a higher level to redefine the boundaries and responsibilities between the teams.  
+To fix this, design needs to happen at a higher level.  In our code, we would [Refactor](/risks/Complexity-Risk#technical-debt) these processes to remove the unwanted complexity.  In a business, it requires re-organisation at a higher level to redefine the boundaries and responsibilities between the teams.  
 
 Next in the tour of [Dependency Risks](/tags/Dependency-Risk), it's time to look at [Boundary Risk](/tags/Boundary-Risk).
 

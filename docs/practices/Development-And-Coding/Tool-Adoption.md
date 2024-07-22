@@ -51,7 +51,7 @@ In general, unless the problem is somehow _specific to your circumstances_ it ma
 
 Tools in general are _good_ and _worth using_ if they offer you a better risk return than you would have had from not using them.  
 
-But, this is a low bar -  some tools offer _amazing_ returns on investment.  The [Silver Bullets](/complexity/Silver-Bullets.md) article describes in general some of these: 
+But, this is a low bar -  some tools offer _amazing_ returns on investment: 
  - Assemblers
  - Compilers
  - Garbage Collection

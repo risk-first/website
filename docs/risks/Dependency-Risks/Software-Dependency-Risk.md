@@ -2,7 +2,7 @@
 title: Software Dependency Risk
 description: Specific dependency risks due to relying on software.
 
-slug: risks/Software-Dependency-Risk
+slug: /risks/Software-Dependency-Risk
 featured: 
   class: c
   element: '<risk class="software-dependency" />'
@@ -50,7 +50,7 @@ With this in mind, we can see that adding a software dependency is a trade-off: 
 
 ## Programming Languages as Dependencies
 
-In the earlier section on [Complexity Risk](/tags/Complexity-Risk) we tackled [Kolmogorov Complexity](/risks/Complexity-Risk.md#kolmogorov-complexity), and the idea that your codebase had some kind of minimal level of complexity based on the output it was trying to create.  This is a neat idea, but in a way, we cheated.  Let's look at how.
+In the earlier section on [Complexity Risk](/tags/Complexity-Risk) we tackled [Kolmogorov Complexity](/risks/Complexity-Risk#kolmogorov-complexity), and the idea that your codebase had some kind of minimal level of complexity based on the output it was trying to create.  This is a neat idea, but in a way, we cheated.  Let's look at how.
 
 We were trying to figure out the shortest (Javascript) program to generate this output:
 
@@ -96,7 +96,7 @@ function out() {                           (7 symbols)
 1.  **Language Matters**:  the Kolmogorov complexity is dependent on the language, and the features the language has built in. 
 2.  **Exact Kolmogorov complexity is uncomputable anyway:**  Since it's the _theoretical_ minimum program length, it's a fairly abstract idea, so we shouldn't get too hung up on this.  There is no function to be able to say, "What's the Kolmogorov complexity of string X?"
 3.  **What is this new library function we've created?**   Is `abcdRepeater` going to be part of _every_ Javascript?  If so, then we've shifted [Codebase Risk](/tags/Complexity-Risk) away from ourselves, but we've pushed [Conceptual Integrity Risk](/tags/Conceptual-Integrity-Risk) onto every _other_ user of Javascript, because `abcdRepeater` will be clogging up the JavaScript documentation for everyone, despite being rarely useful.
-4.  **Are there equivalent functions for every single other string?**  If so, then compilation is no longer a tractable problem because now we have a massive library of different `XXXRepeater` functions to compile against.   So, what we _lose_ in [Codebase Risk](/tags/Codebase-Risk) we gain in [Complexity Risk](/risks/Complexity-Risk.md#space-and-time-complexity).
+4.  **Are there equivalent functions for every single other string?**  If so, then compilation is no longer a tractable problem because now we have a massive library of different `XXXRepeater` functions to compile against.   So, what we _lose_ in [Codebase Risk](/tags/Codebase-Risk) we gain in [Complexity Risk](/risks/Complexity-Risk#space-and-time-complexity).
 5.  **Language design, then, is about _ergonomics_:** x After you have passed the relatively low bar of providing [Turing Completeness](https://en.wikipedia.org/wiki/Turing_completeness), the key is to provide _useful_ features that enable problems to be solved, without over-burdening the user with features they _don't_ need.  And in fact, all software is about this.
 6.  **Language Ecosystems _really_ matter**: all modern languages allow extensions via libraries, modules or plugins.  If your particular `abcdRepeater` isn't in the main library,   
 
@@ -122,7 +122,7 @@ Adopting complex software dependencies (as shown in the diagram above) might all
 
 Using a software dependency allows us to split a project's complexity into two: 
 
- - The inner complexity of the dependency (how it works internally, its own [internal complexity](/risks/Complexity-Risk.md#kolmogorov-complexity)).
+ - The inner complexity of the dependency (how it works internally, its own [internal complexity](/risks/Complexity-Risk#kolmogorov-complexity)).
  - The complexity of the instructions that we need to write to make the tool work, [the protocol complexity](/tags/Protocol-Risk), which will be a function of the complexity of the tool itself.
 
 ![Types of Complexity For a Software Dependency](/img/generated/risks/software-dependency/protocol-complexity.svg)
@@ -131,7 +131,7 @@ As the above diagram shows, the bulk of the complexity of a software tool is hid
 
 ### Designing Protocols
 
-Software is not constrained by _physical_ ergonomics in the same way as a tool is.  But ideally, it should have conceptual ergonomics: complexity is hidden away from the user behind the _User Interface_.  This is the familiar concept of [Abstraction](/thinking/Glossary.md#abstraction) we've already looked at.  As we saw in [Communication Risk](/tags/Learning-Curve-Risk), when we use a new protocol, we face [Learning Curve Risk](/tags/Learning-Curve-Risk).  
+Software is not constrained by _physical_ ergonomics in the same way as a tool is.  But ideally, it should have conceptual ergonomics: complexity is hidden away from the user behind the _User Interface_.  This is the familiar concept of [Abstraction](/thinking/Glossary#abstraction) we've already looked at.  As we saw in [Communication Risk](/tags/Learning-Curve-Risk), when we use a new protocol, we face [Learning Curve Risk](/tags/Learning-Curve-Risk).  
 
 To minimise this, we should apply the [Principal Of Least Astonishment](https://en.wikipedia.org/wiki/Principle_of_least_astonishment) when designing our own protocols: 
 
@@ -192,7 +192,7 @@ In essence, this is Conway's Law:
 
 ### 2. Software Libraries
 
-By choosing a particular software library, we are making a move on the [Risk Landscape](/risks/Risk-Landscape.md) in the hope of moving to a place with more favourable risks.  Typically, using library code offers a [Schedule Risk](/tags/Schedule-Risk) and [Complexity Risk](/tags/Complexity-Risk) [Silver Bullet](/complexity/Silver-Bullets.md) - a high-speed route over the risk landscape to somewhere nearer where we want to be.  But, in return we expect to pick up:
+By choosing a particular software library, we are making a move on the [Risk Landscape](/risks/Risk-Landscape) in the hope of moving to a place with more favourable risks.  Typically, using library code offers a [Schedule Risk](/tags/Schedule-Risk) and [Complexity Risk](/tags/Complexity-Risk) Silver Bullet - a high-speed route over the risk landscape to somewhere nearer where we want to be.  But, in return we expect to pick up:
 
 - **[Communication Risk](/tags/Communication-Risk)**: because we now have to learn how to communicate with this new dependency.
 - **[Boundary Risk](/tags/Boundary-Risk)**: - because now are limited to using the functionality provided by this dependency.  We have chosen it over alternatives and changing to something else would be more work and therefore costly.   

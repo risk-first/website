@@ -11,6 +11,8 @@ tags:
  - Risks
  - Refactoring
  - Complexity Risk
+ - Codebase Risk
+ - Dead End Risk
  - Abstraction
 definitions:
  - name: Abstraction
@@ -20,15 +22,15 @@ part_of: Operational Risk
 
 <RiskIntro fm={frontMatter} />
 
-[Complexity Risk](/tags/Complexity-Risk) is the [risk](/thinking/Glossary.md#risk) to your project due to its underlying "complexity".   Here, we will break down exactly what we mean by complexity, look at where it can hide on a software project and discuss some ways in which we can manage this important risk.
+[Complexity Risk](/tags/Complexity-Risk) is the [risk](/thinking/Glossary#risk) to your project due to its underlying "complexity".   Here, we will break down exactly what we mean by complexity, look at where it can hide on a software project and discuss some ways in which we can manage this important risk.
 
 Here we will:
 
- - Look at two ways in which complexity is measured, via [Kolmogorov Complexity](/risks/Complexity-Risk.md#kolmogorov-complexity) and [Graph-Connectivity](/risks/Complexity-Risk.md#connectivity).
+ - Look at two ways in which complexity is measured, via [Kolmogorov Complexity](/risks/Complexity-Risk#kolmogorov-complexity) and [Graph-Connectivity](/risks/Complexity-Risk#connectivity).
  - Define [Complexity Risk](/tags/Complexity-Risk), and the related risks of [Codebase Risk](/tags/Codebase-Risk) (complexity in your codebase) and [Dead-End Risk](/tags/Dead-End-Risk) (risk of implementations getting "stuck").
- - Discuss ways to think about complexity:  as [mass](/risks/Complexity-Risk.md#complexity-is-mass), [technical debt](/risks/Complexity-Risk.md#technical-debt) and [mess](/risks/Complexity-Risk.md#kitchen-analogy).
+ - Discuss ways to think about complexity:  as [mass](/risks/Complexity-Risk#complexity-is-mass), [technical debt](/risks/Complexity-Risk#technical-debt) and [mess](/risks/Complexity-Risk#kitchen-analogy).
  - Discuss ways to manage complexity risk, such as modularisation, hierarchy, use of languages and libraries and by avoiding feature creep.
- - Discuss places where Complexity Risk [manifests](/risks/Complexity-Risk.md#where-complexity-hides) in computing.  
+ - Discuss places where Complexity Risk [manifests](/risks/Complexity-Risk#where-complexity-hides) in computing.  
  
 ## Codebase Risk
 
@@ -95,7 +97,7 @@ function out() {                                      (7 )
 
 ### Abstraction
 
-What's happening here is that we're _exploiting a pattern_: we noticed that `abcd` occurs several times, so we defined it a single time and then used it over and over, like a stamp.  This is called [abstraction](/thinking/Glossary.md#abstraction).
+What's happening here is that we're _exploiting a pattern_: we noticed that `abcd` occurs several times, so we defined it a single time and then used it over and over, like a stamp.  This is called [abstraction](/thinking/Glossary#abstraction).
 
 By applying abstraction, we can improve in the direction of the Kolmogorov lower bound.  By allowing ourselves to say that _symbols_ (like `out` and `ABCD`) are worth one complexity point, we've allowed that we can be descriptive in naming `function` and `const`.  Naming things is an important part of abstraction, because to use something, you have to be able to refer to it.
 
@@ -227,9 +229,9 @@ The great complexity-reducing mechanism of modularisation is that _you only have
 
 ## Analogies
 
-So, we've looked at some measures of software structure complexity.  We can say "this is more complex than this" for a given piece of code or structure.  We've also looked at three ways to manage it:  [Abstraction](/thinking/Glossary.md#abstraction) and [Modularisation](/risks/Complexity-Risk.md#hierarchies-and-modularisation) and via [Dependencies](/risks/Complexity-Risk.md#languages-and-dependencies).  
+So, we've looked at some measures of software structure complexity.  We can say "this is more complex than this" for a given piece of code or structure.  We've also looked at three ways to manage it:  [Abstraction](/thinking/Glossary#abstraction) and [Modularisation](/risks/Complexity-Risk#hierarchies-and-modularisation) and via [Dependencies](/risks/Complexity-Risk#languages-and-dependencies).  
 
-However, we've not really said why complexity entails [Risk](/thinking/Glossary.md#attendant-risk).  So let's address that now by looking at three analogies, [Mass](/risks/Complexity-Risk.md#complexity-is-mass), [Technical Debt](/risks/Complexity-Risk.md#technical-debt) and [Mess](/risks/Complexity-Risk.md#kitchen-analogy)  
+However, we've not really said why complexity entails [Risk](/thinking/Glossary#attendant-risk).  So let's address that now by looking at three analogies, [Mass](/risks/Complexity-Risk#complexity-is-mass), [Technical Debt](/risks/Complexity-Risk#technical-debt) and [Mess](/risks/Complexity-Risk#kitchen-analogy)  
 
 ### Complexity is Mass
 
@@ -255,19 +257,19 @@ At a basic level, [Complexity Risk](/tags/Complexity-Risk) heavily impacts on [S
 
 ### Technical Debt
 
-The most common way we talk about [Complexity Risk](/tags/Complexity-Risk) in software is as [Technical Debt](/risks/Complexity-Risk.md#technical-debt):
+The most common way we talk about [Complexity Risk](/tags/Complexity-Risk) in software is as [Technical Debt](/risks/Complexity-Risk#technical-debt):
 
 > "Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite... The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organisations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise." - [Ward Cunningham, 1992, _Wikipedia, Technical Debt_](https://en.wikipedia.org/wiki/Technical_debt)
 
-Building a low-complexity first-time solution is often a waste:  in the first version, we're usually interested in reducing [Feature Risk](/tags/Feature-Risk) as fast as possible. That is, putting working software in front of users to get [feedback](/thinking/Meeting-Reality.md).  We would rather carry [Complexity Risk](/tags/Complexity-Risk) than take on more [Schedule Risk](/tags/Schedule-Risk).
+Building a low-complexity first-time solution is often a waste:  in the first version, we're usually interested in reducing [Feature Risk](/tags/Feature-Risk) as fast as possible. That is, putting working software in front of users to get [feedback](/thinking/Meeting-Reality).  We would rather carry [Complexity Risk](/tags/Complexity-Risk) than take on more [Schedule Risk](/tags/Schedule-Risk).
 
-So a quick-and-dirty, over-complex implementation mitigates the same [Feature Risk](/tags/Feature-Risk) and allows you to [Meet Reality](/thinking/Meeting-Reality.md) faster.  
+So a quick-and-dirty, over-complex implementation mitigates the same [Feature Risk](/tags/Feature-Risk) and allows you to [Meet Reality](/thinking/Meeting-Reality) faster.  
 
 But having mitigated the [Feature Risk](/tags/Feature-Risk) this way, you are likely exposed to a higher level of [Complexity Risk](/tags/Complexity-Risk) than would be desirable.  This "carries forward" and means that in the future, you're going to be slower.  As in the case of a real debt, "servicing" the debt incurs a steady, regular cost.
 
 ### Kitchen Analogy
 
-It’s often hard to make the case for minimising [Technical Debt](/risks/Complexity-Risk.md#technical-debt): it often feels that there are more important priorities, especially when technical debt can be “swept under the carpet” and forgotten about until later.  (See [Discounting](/thinking/Evaluating-Risk.md#discounting-the-future-to-zero).)
+It’s often hard to make the case for minimising [Technical Debt](/risks/Complexity-Risk#technical-debt): it often feels that there are more important priorities, especially when technical debt can be “swept under the carpet” and forgotten about until later.  (See [Discounting](/thinking/Evaluating-Risk#discounting-the-future-to-zero).)
 
 One helpful analogy I have found is to imagine your code-base is a kitchen.   After preparing a meal (i.e. delivering the first implementation), _you need to tidy up the kitchen_.  This is just something everyone does as a matter of _basic sanitation_. 
 
@@ -277,7 +279,7 @@ It's not long before someone comes down with food poisoning.
 
 ![Complexity Risk and its implications](/img/generated/risks/complexity/complexity-risk-impact.svg)
 
-We wouldn't tolerate this behaviour in a restaurant kitchen, so why put up with it in a software project?  This state-of-affairs is illustrated in the above diagram.  Not only does [Complexity Risk](/tags/Complexity-Risk) slow down future development, it can be a cause of [Operational Risks](/tags/Operational-Risk) and [Security Risks](Agency-Risk.md#security).
+We wouldn't tolerate this behaviour in a restaurant kitchen, so why put up with it in a software project?  This state-of-affairs is illustrated in the above diagram.  Not only does [Complexity Risk](/tags/Complexity-Risk) slow down future development, it can be a cause of [Operational Risks](/tags/Operational-Risk) and [Security Risks](Agency-Risk#security).
 
 ### Feature Creep
 
@@ -320,7 +322,7 @@ Whichever option you choose, this is a [Dead End](#dead-end-risk) because with h
 
 Working in a complex environment makes it harder to see developmental dead-ends.
  
-Sometimes, the path across the [Risk Landscape](/risks/Risk-Landscape.md) will take you to dead ends, and the only benefit to be gained is experience.  No one deliberately chooses a dead end - often you can take an action that doesn't pay off, but frequently the dead end appears from nowhere:  it's a [Hidden Risk](/thinking/Glossary.md#hidden-risk).  The source of a lot of this hidden risk is the complexity of the [risk landscape](/thinking/Glossary.md#risk-landscape).
+Sometimes, the path across the [Risk Landscape](/risks/Risk-Landscape) will take you to dead ends, and the only benefit to be gained is experience.  No one deliberately chooses a dead end - often you can take an action that doesn't pay off, but frequently the dead end appears from nowhere:  it's a [Hidden Risk](/thinking/Glossary#hidden-risk).  The source of a lot of this hidden risk is the complexity of the [risk landscape](/thinking/Glossary#risk-landscape).
 
 [Version Control Systems](https://en.wikipedia.org/wiki/Version_control) like [Git](https://en.wikipedia.org/wiki/Git) are a useful mitigation of [Dead-End Risk](/tags/Dead-End-Risk), because using them means that at least you can _go back_ to the point where you made the bad decision and go a different way.  Additionally, they provide you with backups against the often inadvertent [Dead-End Risk](/tags/Dead-End-Risk) of someone wiping the hard-disk.
 
@@ -383,7 +385,7 @@ This is a strong argument for the use of libraries.  But when should you use a l
 
 ### The Environment
 
-The complexity of software tends to reflect the complexity of the environment it runs in, and complex software environments are more difficult to reason about, and more susceptible to [Operational Risk](/tags/Operational-Risk) and [Security-Risk](Agency-Risk.md#security).  
+The complexity of software tends to reflect the complexity of the environment it runs in, and complex software environments are more difficult to reason about, and more susceptible to [Operational Risk](/tags/Operational-Risk) and [Security-Risk](Agency-Risk#security).  
 
 In particular, when we talk about the environment, we are talking about the number of external dependencies that the software has, and the risks we face when relying on those dependencies.  
 

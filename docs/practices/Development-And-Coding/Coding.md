@@ -40,7 +40,7 @@ Coding is a core activity in software development, involving the translation of 
 
 See:
 
- - [Time/Reality Tradeoff](/thinking/Cadence.md#time--reality-trade-off)
+ - [Time/Reality Tradeoff](/thinking/Cadence#time--reality-trade-off)
 
 
 ## See Also

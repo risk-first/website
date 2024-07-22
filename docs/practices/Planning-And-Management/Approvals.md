@@ -45,7 +45,7 @@ Approval / Sign Off in software development involves getting formal approval fro
 
 See:
 
-- [Processes, Sign-Offs and Agency Risk](/risks/Process-Risk.md#processes-sign-offs-and-agency-risk)_
+- [Processes, Sign-Offs and Agency Risk](/risks/Process-Risk#processes-sign-offs-and-agency-risk)_
 
 
 ## See Also

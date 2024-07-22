@@ -44,7 +44,7 @@ Pair Programming involves two developers working together on the same code. One 
 
 See:
 
- - [Crisis Mode](/thinking/Crisis-Mode.md) 
+ - [Crisis Mode](/thinking/Crisis-Mode) 
 
 
 ## See Also

@@ -51,7 +51,7 @@ Darwin's conception of fitness was not one of athletic prowess, but how well an 
 
 For further reading, you can check out [The Service Quality Model](https://en.wikipedia.org/wiki/SERVQUAL) which the diagram above is derived from.  This model analyses the types of _quality gaps_ in services and how consumer expectations and perceptions of a service arise.
 
-In the [Staging And Classifying](Staging-And-Classifying.md) section we'll come back and build on this model further. 
+In the [Staging And Classifying](/risks/Staging-And-Classifying) section we'll come back and build on this model further. 
 
 ### Fit and Audience
 

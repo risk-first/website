@@ -2,7 +2,7 @@
 title: Red Queen Risk
 description: The general risk that the competitive environment we operate within changes over time.
 
-slug: risks/Red-Queen-Risk
+slug: /risks/Red-Queen-Risk
 
 featured: 
   class: c
@@ -31,6 +31,6 @@ Now, they didn't _deliberately_ take 15 years to build this game (lots of things
 
 ![Red Queen Risk](/img/generated/risks/scarcity/red-queen-risk.svg)
 
-Personally, I have suffered the pain on project teams where we've had to cope with legacy code and databases because the cost of changing them was too high.  This is shown in the above diagram:  mitigating [Red Queen Risk](#red-queen-risk) (by _keeping up-to-date_) has the [Attendant Risk](/thinking/Glossary.md#attendant-risk) of costing time and money, which might not seem worth it.  Any team who is stuck using [Visual Basic 6.0](https://en.wikipedia.org/wiki/Visual_Basic) is here.   
+Personally, I have suffered the pain on project teams where we've had to cope with legacy code and databases because the cost of changing them was too high.  This is shown in the above diagram:  mitigating [Red Queen Risk](#red-queen-risk) (by _keeping up-to-date_) has the [Attendant Risk](/thinking/Glossary#attendant-risk) of costing time and money, which might not seem worth it.  Any team who is stuck using [Visual Basic 6.0](https://en.wikipedia.org/wiki/Visual_Basic) is here.   
 
 It's possible to ignore [Red Queen Risk](/tags/Red-Queen-Risk) for a time, but this is just another form of [Technical Debt](/tags/Complexity-Risk) which eventually comes due.  

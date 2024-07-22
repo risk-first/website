@@ -29,9 +29,9 @@ Imagine a scenario where you're helping a friend pack up their kitchen:
  
 How long should you estimate for the job?   (The answer is below)
 
-This was suggested in a [Hacker News](https://news.ycombinator.com) comment discussing software estimation, and struck a chord with many readers.  It's clear that we are no longer in the [Fill-The-Bucket](Fill-The-Bucket.md) domain anymore; our original intuitions about how long things might take are not going to work here.
+This was suggested in a [Hacker News](https://news.ycombinator.com) comment discussing software estimation, and struck a chord with many readers.  It's clear that we are no longer in the [Fill-The-Bucket](Fill-The-Bucket) domain anymore; our original intuitions about how long things might take are not going to work here.
 
-As a developer, this 'feels' more real to me than [Fill-The-Bucket](Fill-The-Bucket.md).  _Any_ task I take on has an outside chance of telescoping into something _much worse_.  Here's a recent example:  
+As a developer, this 'feels' more real to me than [Fill-The-Bucket](Fill-The-Bucket).  _Any_ task I take on has an outside chance of telescoping into something _much worse_.  Here's a recent example:  
 
  - I wanted to test out a CSS change to my website site. _1 hour?_
  - But in order to avoid wrecking the live version, I would need to test this offline, with [Jekyll](https://jekyllrb.com). _2 hours?_
@@ -54,13 +54,13 @@ The above chart simulates the kitchen cabinet scenario.  Have a play and see how
  - You have _thirty_ cabinets in the original kitchen?
  - You have a _single_ cabinet in the original kitchen, and say a .8 chance-of-nesting?
  
-When the number of initial cabinets is high, we are closer to the [Fill-The-bucket](Fill-The-Bucket.md) world, with it's normal distribution, and variance-around-a-mean. 
+When the number of initial cabinets is high, we are closer to the [Fill-The-bucket](Fill-The-Bucket) world, with it's normal distribution, and variance-around-a-mean. 
  
 But when the number of initial cabinets is low, the distribution is "long-tailed" and tends towards the [Exponential Distribution](https://en.wikipedia.org/wiki/Exponential_distribution), which works in a way similar to [radioactive decay](https://en.wikipedia.org/wiki/Radioactive_decay).  We might best be able to talk about moving kitchens in terms of their half-lives.  
 
 That is, given a bunch of infinity-cabinets, we could say how long it would usually take for _half_ of them to be completed.  Then, it'll be the same again for the next half, and so on.
 
-Whereas [Fill-The-Bucket](Fill-The-Bucket.md) was defined with a _mean_ and _variance_, the exponential distribution is modelled with a single parameter, lambda (λ), which is the rate of decay.   
+Whereas [Fill-The-Bucket](Fill-The-Bucket) was defined with a _mean_ and _variance_, the exponential distribution is modelled with a single parameter, lambda (λ), which is the rate of decay.   
 
 <KitchenCabinet2 />
 
@@ -77,7 +77,7 @@ Let's assume that the exponential distribution _does_ model software development
 
 With any estimate, there are risks in both under- and over- estimating: 
 
- - **Too Long**: In estimating too much time,  you might not be given the work or your business might [miss the opportunity in the marketplace](/risks/Scarcity-Risk.md#opportunity-risk).  A too cautious risk might doom a potentially successful project before it has even started.
+ - **Too Long**: In estimating too much time,  you might not be given the work or your business might [miss the opportunity in the marketplace](/risks/Scarcity-Risk#opportunity-risk).  A too cautious risk might doom a potentially successful project before it has even started.
 
  - **Too Short**: If you estimate too little time, you might miss important coordinating dates with your marketing team, or miss the Christmas window, or run out of "runway".  
 
@@ -128,7 +128,7 @@ If the estimate is accepted, the supplier's [Funding Risk](/tags/Funding-Risk) i
 
 If the supplier is short on opportunities or funds, there is a tendency to under-estimate.  That's because the [Feature Risk](/tags/Feature-Risk) is a problem for the supplier _in the future_, whereas their [Funding Risk](/tags/Funding-Risk) is a problem _right now_.  
 
-You can often see suppliers under-bid on projects because of this future discounting, which we discussed before in [Evaluating Risk](/thinking/Evaluating-Risk.md#discounting).  
+You can often see suppliers under-bid on projects because of this future discounting, which we discussed before in [Evaluating Risk](/thinking/Evaluating-Risk#discounting).  
 
 This analysis also suggests something else:   the process of giving and accepting estimates _transfers risk_.  This is a key point which we'll return to later. 
 
@@ -136,7 +136,7 @@ This analysis also suggests something else:   the process of giving and acceptin
 
 Conversely, too-late risk accrues only _after_ the delivery date has passed.  Like too-early risk, there is probably a maximal limit on this too, which occurs at the point the project is cancelled due to lack of funds!
 
-The problem with projects in the [Kitchen Cabinet](Kitchen-Cabinet.md) domain is that _elapsed time is no indication of remaining time_.  The exponential distribution is exactly the same shape at every point in time (we're dealing with half-lives, remember?).
+The problem with projects in the [Kitchen Cabinet](Kitchen-Cabinet) domain is that _elapsed time is no indication of remaining time_.  The exponential distribution is exactly the same shape at every point in time (we're dealing with half-lives, remember?).
 
 This means that clients often keep projects running for far longer than they should, assuming success is just around the corner.  This is an example of the [Sunk Cost Fallacy](https://en.wikipedia.org/wiki/Sunk_cost).
 
@@ -146,7 +146,7 @@ There is an alternative to too-early or too-late risk.  You can always choose to
 
 Then, instead of worrying about [Scarcity Risks](/risks/(/tags/Scarcity-Risk), you are letting [Feature Risk](/tags/Feature-Risk) vary to take up the slack.
 
-So far, we've seen two kinds of estimate:  [Fill-The-Bucket](Fill-The-Bucket.md) and [Kitchen-Cabinet](Kitchen-Cabinet.md).  Now, it's time to review a third - estimating [Journey Style](Journeys.md), and looking at how we can minimise [Feature Risk](/tags/Feature-Risk) within an available budget.
+So far, we've seen two kinds of estimate:  [Fill-The-Bucket](Fill-The-Bucket) and [Kitchen-Cabinet](Kitchen-Cabinet).  Now, it's time to review a third - estimating [Journey Style](Journeys), and looking at how we can minimise [Feature Risk](/tags/Feature-Risk) within an available budget.
 
 
  

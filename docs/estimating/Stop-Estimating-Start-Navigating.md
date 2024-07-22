@@ -13,15 +13,15 @@ sidebar_position: 9
 
 # Stop Estimating, Start Navigating
 
-This is the _ninth_ article in the [Risk-First](https://riskfirst.org) track on [Estimating](Start.md).  We've come a long way:
+This is the _ninth_ article in the [Risk-First](https://riskfirst.org) track on [Estimating](Start).  We've come a long way:
 
-- In the first four articles, [Fill-The-Bucket](Fill-The-Bucket.md), [Kitchen Cabinet](Kitchen-Cabinet.md), [Journeys](Journeys.md) and [Fractals](Fractals.md) we looked at the various reasons why estimating is such a nightmare on software projects.  This is summarised in [Analogies](Analogies.md).  The upshot is that predictable, well understood, repeatable things can be estimated with some confidence.   However, as soon as software is predictable, repeatable and well-understood, _you're doing it wrong_.
+- In the first four articles, [Fill-The-Bucket](Fill-The-Bucket), [Kitchen Cabinet](Kitchen-Cabinet), [Journeys](Journeys) and [Fractals](Fractals) we looked at the various reasons why estimating is such a nightmare on software projects.  This is summarised in [Analogies](Analogies).  The upshot is that predictable, well understood, repeatable things can be estimated with some confidence.   However, as soon as software is predictable, repeatable and well-understood, _you're doing it wrong_.
 
-- In article seven, we explored how [Scrum](Fixing-Scrum.md), the popular Agile methodology, fails to understand this crucial problem with estimates (among other failings).
+- In article seven, we explored how [Scrum](Fixing-Scrum), the popular Agile methodology, fails to understand this crucial problem with estimates (among other failings).
 
-- Then, in [Risk-First Analysis](Risk-First-Analysis.md) we look at how we can work out what to build by examining what [risks](/thinking/Glossary.md#risk) we'd like to address and which [goals](/thinking/Glossary.md#risk) or [Upside Risks](/thinking/Glossary.md#upside-risk) we'd like to see happen.  
+- Then, in [Risk-First Analysis](Risk-First-Analysis) we look at how we can work out what to build by examining what [risks](/thinking/Glossary#risk) we'd like to address and which [goals](/thinking/Glossary#risk) or [Upside Risks](/thinking/Glossary#upside-risk) we'd like to see happen.  
 
-So, now we're up to date.  It's article nine, and I was going to build on [Risk-First Analysis](Risk-First-Analysis.md) to show how to plan work for a team of people over a week, a month, a year.  
+So, now we're up to date.  It's article nine, and I was going to build on [Risk-First Analysis](Risk-First-Analysis) to show how to plan work for a team of people over a week, a month, a year.  
 
 ## Something Happened 
 

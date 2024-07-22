@@ -14,15 +14,15 @@ tweet: yes
 
 # Debugging Bets
 
-In [The Purpose Of The Development Team](Purpose-Development-Team.md) we looked at how a development team is all about trying to shift the risk profile in favour of the business.  Perhaps by removing the risk of customers not having the features they want, or not signing up, or not learning about the product.
+In [The Purpose Of The Development Team](Purpose-Development-Team) we looked at how a development team is all about trying to shift the risk profile in favour of the business.  Perhaps by removing the risk of customers not having the features they want, or not signing up, or not learning about the product.
 
-Then, in [Coding Bets](Coding-Bets.md) we considered the same thing at task level. That is, in choosing to spend time on a given task we are staking our time to improve our risk position.  And, it’s definitely a bet, because sometimes, a piece of coding simply doesn’t end up working the way you want. 
+Then, in [Coding Bets](Coding-Bets) we considered the same thing at task level. That is, in choosing to spend time on a given task we are staking our time to improve our risk position.  And, it’s definitely a bet, because sometimes, a piece of coding simply doesn’t end up working the way you want. 
 
 ![Article Series](/img/generated/bets/debugging/bets.svg)
 
 Now, we’re going to consider the exact same thing again but from the point of view of debugging. I’ve been waiting a while to write this, because I’ve wanted a really interesting bug to come along to allow me to go over how you can apply risk to cracking it.  
 
-Luckily one came along today, giving me a chance to write it up and go over this.  If you've not looked at Risk-First articles before, you may want to review [Risk-First Diagrams Explained](/thinking/Risk-First-Diagrams.md), since there'll be lots of diagrams to demonstrate the bets I'm making.
+Luckily one came along today, giving me a chance to write it up and go over this.  If you've not looked at Risk-First articles before, you may want to review [Risk-First Diagrams Explained](/thinking/Risk-First-Diagrams), since there'll be lots of diagrams to demonstrate the bets I'm making.
 
 ## The Problem
 
@@ -126,7 +126,7 @@ Sadly, this meant that I’d actually had to test and rule out _all of the other
 
 ## Some Notes
 
-1.  I started by writing down all the things I knew, and all of my hypotheses.  Why?  Surely, time was short!  I did this _because_ time was short.  The reason was, by having all of the facts and hypotheses to hand I was setting up my [Internal Model](/thinking/Glossary.md#internal-model) of the problem, with which I could reason about the new information as I came across it.
+1.  I started by writing down all the things I knew, and all of my hypotheses.  Why?  Surely, time was short!  I did this _because_ time was short.  The reason was, by having all of the facts and hypotheses to hand I was setting up my [Internal Model](/thinking/Glossary#internal-model) of the problem, with which I could reason about the new information as I came across it.
 2.  I performed four tests, and ended up ruling out six different hypotheses.   That feels like good value-for-time.
 3.  In each case, I am trading _time_ to change the risk profile of the problem.  By reducing to zero the likelihood of some risks, I am increasing the likelihood of those left.  So a good test would:
  - a.  Bisect probability space 50/50.  That way the information is maximised.

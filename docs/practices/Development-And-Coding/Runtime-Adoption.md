@@ -42,9 +42,9 @@ Adoption of standards and libraries involves implementing and adhering to establ
 
 See:
 
- - [Languages and Dependencies](/risks/Complexity-Risk.md#languages-and-dependencies)
- - [Software Libraries (Software Dependency Risk)](/risks/Software-Dependency-Risk.md#2-software-libraries)
- - [Software-as-a-Service (Software Dependency Risk)](/risks/Software-Dependency-Risk.md#3--software-as-a-service)
+ - [Languages and Dependencies](/risks/Complexity-Risk#languages-and-dependencies)
+ - [Software Libraries (Software Dependency Risk)](/risks/Software-Dependency-Risk#2-software-libraries)
+ - [Software-as-a-Service (Software Dependency Risk)](/risks/Software-Dependency-Risk#3--software-as-a-service)
 
 
 ## See Also

@@ -15,7 +15,7 @@ hide_table_of_contents: true
 
 # Interference Checklist
 
-Here is an example "Interference Checklist", which you can use to estimate the risk on your stories / tasks.  For an explanation of how this works, check out the previous article [On Story Points](On-Story-Points.md).
+Here is an example "Interference Checklist", which you can use to estimate the risk on your stories / tasks.  For an explanation of how this works, check out the previous article [On Story Points](On-Story-Points).
 
 This is just meant to be used as a starting point - feel free to adapt this to the specifics of your own projects and environments.
 

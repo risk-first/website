@@ -43,7 +43,7 @@ TODO: buffers, queues, pools, kanban
 
 See: 
 
-- [Scarcity Risk](/risks/Scarcity-Risks/Mitigations)
+- [Scarcity Risk](/risks/Dependency-Risks/Scarcity-Risks/Mitigations)
 
 
 ## See Also

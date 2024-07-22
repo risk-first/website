@@ -39,8 +39,8 @@ practice:
 Integration Testing involves testing combined parts of the software to ensure they work together correctly. This practice helps in identifying and fixing issues that arise when individual components interact, ensuring that the overall system functions as intended.
 
 See: 
-- [Development Process](/thinking/Development-Process.md#a-toy-process)_
-- [Production (Cadence)](/thinking/Cadence.md#production)
+- [Development Process](/thinking/Development-Process#a-toy-process)_
+- [Production (Cadence)](/thinking/Cadence#production)
 
 ## See Also
 

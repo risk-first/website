@@ -43,7 +43,7 @@ Configuration Management (CM) involves systematically handling changes to ensure
 
 See:
 
- - [Consider Payoff](/thinking/Consider-Payoff.md)
+ - [Consider Payoff](/thinking/Consider-Payoff)
  
 ## See Also
 

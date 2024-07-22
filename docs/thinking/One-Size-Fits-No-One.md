@@ -24,13 +24,13 @@ tweet: yes
 
 Why are [Software Methodologies](https://en.wikipedia.org/wiki/Software_development_process) all different? 
 
-[Previously](Just-Risk.md), we made the case that any action you take on a software project is to do with managing risk.  The last section, [A Conversation](A-Conversation.md) was an example of this happening. 
+[Previously](Just-Risk), we made the case that any action you take on a software project is to do with managing risk.  The last section, [A Conversation](A-Conversation) was an example of this happening. 
 
 Therefore, it stands to reason that software methodologies are all about handling risk too.  Since they are prescribing a particular day-to-day process, or set of actions to take, they are also prescribing a particular approach to managing the risks on software projects.  
 
 ## Methodologies Surface Hidden Risks...
 
-Back in the [Development Process](Development-Process.md) section we introduced a toy software methodology that a development team might follow when building software.  It included steps like _analysis_, _coding_ and _testing_.  We looked at how the purpose of each of these actions was to manage risk in the software delivery process.  For example, it doesn't matter if a developer doesn't know that he's going to break "Feature Y", because the _Integration Testing_ part of the methodology will expose this [hidden risk](/thinking/Glossary.md#hidden-risk) in the testing stage, rather than in let it surface in production (where it becomes more expensive).  
+Back in the [Development Process](Development-Process) section we introduced a toy software methodology that a development team might follow when building software.  It included steps like _analysis_, _coding_ and _testing_.  We looked at how the purpose of each of these actions was to manage risk in the software delivery process.  For example, it doesn't matter if a developer doesn't know that he's going to break "Feature Y", because the _Integration Testing_ part of the methodology will expose this [hidden risk](/thinking/Glossary#hidden-risk) in the testing stage, rather than in let it surface in production (where it becomes more expensive).  
 
 ## ... But Replace Judgement
 
@@ -53,10 +53,10 @@ In this section, we're going to have a brief look at some different software met
 Waterfall is a family of methodologies advocating a linear, stepwise approach to the processes involved in delivering a software system.  The basic idea behind Waterfall-style methodologies is that the software process is broken into distinct stages, as shown in the diagram above.  These usually include:
 
 - [Requirements Capture](/tags/Requirements-Capture)
-- [Specification](tags/Design)
+- [Specification](/tags/Design)
 - [Implementation](/tags/Coding)
 - [Verification](/tags/User-Acceptance-Testing)
-- [Delivery](/tags/Release) and [Operations](/tags/Support.md)
+- [Delivery](/tags/Release) and [Operations](/tags/Issue-Management)
 - [Sign Offs](/tags/Approvals) at each stage
 
 Because Waterfall methodologies are borrowed from _the construction industry_, they manage the risks that you would care about in a construction project.  Specifically, minimising the risk of rework, and the risk of costs spiralling during the physical phase of the project.  For example, pouring concrete is significantly easier than digging it out again after it sets.  
@@ -101,19 +101,19 @@ Here are some high-level differences we see in some other popular methodologies:
  
  - **[DevOps](https://en.wikipedia.org/wiki/DevOps)**. Many software systems struggle at the [boundary](/tags/Boundary-Risk) between "in development" and "in production".  DevOps is an acknowledgement of this, and is about more closely aligning the feedback loops between the developers and the production system.  It champions activities such as continuous deployment, automated releases and automated monitoring.
 
-While this is a limited set of examples, you should be able to observe that the [actions](/thinking/Glossary.md#taking-action) promoted by a methodology are contingent on the risks it considers important.
+While this is a limited set of examples, you should be able to observe that the [actions](/thinking/Glossary#taking-action) promoted by a methodology are contingent on the risks it considers important.
 
 ## Effectiveness
 
 > "All methodologies are based on fear.  You try to set up habits to prevent your fears from becoming reality." - [Extreme Programming Explained, _Kent Beck_](http://amzn.eu/d/1vSqAWa)
 
-The promise of any methodology is that it will help you manage certain [Hidden Risks](/thinking/Glossary.md#hidden-risk).  But this comes at the expense of the _effort_ you put into the practices of the methodology. 
+The promise of any methodology is that it will help you manage certain [Hidden Risks](/thinking/Glossary#hidden-risk).  But this comes at the expense of the _effort_ you put into the practices of the methodology. 
 
-A methodology offers us a route through the [Risk Landscape](/thinking/Glossary.md#risk-landscape), based on the risks that the designers of the methodology care about.  When we use the methodology, it means that we are baking into our behaviour actions to avoid those risks.  
+A methodology offers us a route through the [Risk Landscape](/thinking/Glossary#risk-landscape), based on the risks that the designers of the methodology care about.  When we use the methodology, it means that we are baking into our behaviour actions to avoid those risks.  
 
 ### Methodological Failure
  
-When we [take action](/thinking/Glossary.md#taking-action) according to a methodology, we expect the [Payoff](/thinking/Glossary.md#payoff), and if this doesn't materialise, then we feel the methodology is failing us.   It could just be that it is inappropriate to the _type of project_ we are running.  Our [Risk Landscape](/thinking/Glossary.md#risk-landscape) may not be the one the designers of the methodology envisaged.   For example:
+When we [take action](/thinking/Glossary#taking-action) according to a methodology, we expect the [Payoff](/thinking/Glossary#payoff), and if this doesn't materialise, then we feel the methodology is failing us.   It could just be that it is inappropriate to the _type of project_ we are running.  Our [Risk Landscape](/thinking/Glossary#risk-landscape) may not be the one the designers of the methodology envisaged.   For example:
 
  - NASA [doesn't follow an agile methodology](https://swehb.nasa.gov/display/7150/SWEREF-278) when launching space craft:  there's no two-weekly launch that they can iterate over, and the the risks of losing a rocket or satellite are simply too great to allow for iteration in production.   The risk profile is just all wrong: you need to manage the risk of _losing hardware_ over the risk of _requirements changing_.  
 
@@ -135,7 +135,7 @@ An off-the-shelf methodology is unlikely to fit the risks of any project exactly
 
 ![Methodologies, Actions, Risks, Goals](/img/generated/executive-summary/pattern_language.svg)
 
-As the above diagram shows, different methodologies advocate different practices, and different practices manage different risks.   If we want to understand methodologies, or choose practices from one, we really need to understand the _types of risks_ we face on software projects.  This is where we [go next](/risks/Start.md).
+As the above diagram shows, different methodologies advocate different practices, and different practices manage different risks.   If we want to understand methodologies, or choose practices from one, we really need to understand the _types of risks_ we face on software projects.  This is where we [go next](/risks/Start).
 
-The last part of this track is the [Glossary](Glossary.md), which summarises all the new terms we've covered here.
+The last part of this track is the [Glossary](Glossary), which summarises all the new terms we've covered here.
  

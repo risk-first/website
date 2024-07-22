@@ -2,7 +2,7 @@
 title: Schedule Risk
 description: A particular scarcity risk, due to lack of time.
 
-slug: risks/Schedule-Risk
+slug: /risks/Schedule-Risk
 
 featured: 
   class: c

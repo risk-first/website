@@ -71,7 +71,7 @@ What this shows us is that [Fit Risks](/tags/Feature-Fit-Risk) are as much a pro
 
 Dependencies (like the bus) make life simpler for you by taking on complexity for you.
 
-In software, dependencies are a way to manage [Complexity Risk](/tags/Complexity-Risk).  The reason for this is that a dependency gives you an [abstraction](/thinking/Glossary.md#abstraction): you no longer need to know _how_ to do something, (that's the job of the dependency), you just need to interact with the dependency properly to get the job done.  Buses are _perfect_ for people who can't drive, after all.
+In software, dependencies are a way to manage [Complexity Risk](/tags/Complexity-Risk).  The reason for this is that a dependency gives you an [abstraction](/thinking/Glossary#abstraction): you no longer need to know _how_ to do something, (that's the job of the dependency), you just need to interact with the dependency properly to get the job done.  Buses are _perfect_ for people who can't drive, after all.
 
 ![Dependencies help with complexity risk, but come with their own attendant risks](/img/generated/risks/dependency/dependency-risk.svg)
 
@@ -83,13 +83,13 @@ In Rich Hickey's talk, [Simple Made Easy](https://www.infoq.com/presentations/Si
 
 But: living systems are not simple.  Not anymore.  They evolved in the direction of increasing complexity because life was _easier_ that way.  In the "simpler" direction, life is first _harder_ and then _impossible_, and then an evolutionary dead-end.  
 
-Depending on things makes _your job easier_.  But the [Complexity Risk](/tags/Complexity-Risk) hasn't gone away: it's just _transferred_ to the dependency.  It's just [division of labour](https://en.wikipedia.org/wiki/Division_of_labour) and dependency hierarchies, as we saw in [Complexity Risk](/risks/Complexity-Risk.md#hierarchies-and-modularisation).
+Depending on things makes _your job easier_.  But the [Complexity Risk](/tags/Complexity-Risk) hasn't gone away: it's just _transferred_ to the dependency.  It's just [division of labour](https://en.wikipedia.org/wiki/Division_of_labour) and dependency hierarchies, as we saw in [Complexity Risk](/risks/Complexity-Risk#hierarchies-and-modularisation).
 
 Our economic system and our software systems exhibit the same tendency-towards-complexity.  For example, the television in my house now is _vastly more complicated_ than the one in my home when I was a child.  But, it contains much more functionality and consumes much less power and space.  
 
 ## Managing Dependency Risk
 
-Arguably, managing [Dependency Risk](/tags/Dependency-Risk) is _what Project Managers do_.  Their job is to meet the project's [Goal](/thinking/Glossary.md#goal) by organising the available dependencies into some kind of useful order.  
+Arguably, managing [Dependency Risk](/tags/Dependency-Risk) is _what Project Managers do_.  Their job is to meet the project's [Goal](/thinking/Glossary#goal) by organising the available dependencies into some kind of useful order.  
 
 There are some tools for managing dependency risk:  [Gantt Charts](https://en.wikipedia.org/wiki/Gantt_chart) for example, arrange work according to the capacity of the resources (i.e. dependencies) available, but also the _dependencies between the tasks_.   If task **B** requires the outputs of task **A**, then clearly task **A** comes first and task **B** starts after it finishes.  We'll look at this more in [Process Risk](/tags/Process-Risk). 
 

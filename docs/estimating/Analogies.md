@@ -16,14 +16,14 @@ tweet: yes
 
 So far, this track of articles has tried to bring the problems of estimating software projects into focus by identifying different _estimation domains_ and analogies for each domain.  Let's recap:
 
-- [Fill-The-Bucket](Fill-The-Bucket.md):  This is the easiest domain to work in.   All tasks are similar and uncorrelated.  We can _extrapolate_ to figure out how much time the next _n_ units will take to do.
-- [Kitchen Cabinet](Kitchen-Cabinet.md):  In this domain, there is _hidden work_.  We don't know how much there might be.  If we can break down tasks into smaller units, then by the _law of averages_ and the _central limit theorem_, we can apply some statistics to figure out when we might finish.
-- [Journeys](Journeys.md):  In this domain, work is heterogeneous and interconnected.  Different parts depend on each other, and a failure in one part might mean going back to the drawing board entirely.  The way to estimate in this domain is to _know the landscape_ and to build in _buffers_.  
-- [Fractals](Fractals.md):  In this domain, [Parkinson's Law](/risks/Process-Risk.md#bureaucracy) is king.  There is always more work to be done.  The best thing we can do is try and apply ourselves to the _highest value_ work at any given point, and frequently refer back to reality to find out if we're building the right thing.
+- [Fill-The-Bucket](Fill-The-Bucket):  This is the easiest domain to work in.   All tasks are similar and uncorrelated.  We can _extrapolate_ to figure out how much time the next _n_ units will take to do.
+- [Kitchen Cabinet](Kitchen-Cabinet):  In this domain, there is _hidden work_.  We don't know how much there might be.  If we can break down tasks into smaller units, then by the _law of averages_ and the _central limit theorem_, we can apply some statistics to figure out when we might finish.
+- [Journeys](Journeys):  In this domain, work is heterogeneous and interconnected.  Different parts depend on each other, and a failure in one part might mean going back to the drawing board entirely.  The way to estimate in this domain is to _know the landscape_ and to build in _buffers_.  
+- [Fractals](Fractals):  In this domain, [Parkinson's Law](/risks/Process-Risk#bureaucracy) is king.  There is always more work to be done.  The best thing we can do is try and apply ourselves to the _highest value_ work at any given point, and frequently refer back to reality to find out if we're building the right thing.
 
 ![Three Dimensions From Fill-The-Bucket](/img/estimates/dimensions.png)
 
-In Risk-First, one of the main messages has been that it's all about your [Internal Model](/thinking/Glossary.md#internal-model).  If you have a good model of the world, then you're likely to be able to [Take Actions](/thinking/Glossary.md#taking-action) in the world that lead you to positions of lower risk.
+In Risk-First, one of the main messages has been that it's all about your [Internal Model](/thinking/Glossary#internal-model).  If you have a good model of the world, then you're likely to be able to [Take Actions](/thinking/Glossary#taking-action) in the world that lead you to positions of lower risk.
 
 So the main reason for identifying all these different problem domains for estimation has been to improve that internal model.  
 
@@ -37,7 +37,7 @@ For the rest of this article, I'm going to go out on a limb, and describe, throu
 
 ![Journey Planning](/img/estimates/fill-journey.png)
 
-As we discussed in [Journeys](Journeys.md), there are plenty of problems in getting from A to B.  But to help you we have:
+As we discussed in [Journeys](Journeys), there are plenty of problems in getting from A to B.  But to help you we have:
 
 - **Maps**: so we can plan our routes via those which already exist, and 
 - **Closeness**:  the closer you are to your destination, the nearer you are to done (which is great for walking and driving, but tends to fall down somewhat when we have to wait for buses or make a detour to the airport).
@@ -106,4 +106,4 @@ So I find the _transport network_ analogy to be a useful one.  But actually it t
 
 Maintaining a transport network is a balancing act.  In an ideal world, every destination would be connected with every other.  In reality, we adopt hub-and-spoke architectures to minimise the cost of maintaining all the connections.   In essence, turning our transport network into some kind of _hierarchy_.
 
-It's time to look at [Fixing Scrum](Fixing-Scrum.md).
+It's time to look at [Fixing Scrum](Fixing-Scrum).

@@ -2,7 +2,7 @@
 title: Reliability Risk
 description: Risks of not getting benefit from a dependency due to it's reliability, either now or in the future.
 
-slug: risks/Reliability-Risk
+slug: /risks/Reliability-Risk
 featured: 
   class: c
   element: '<risk class="dependency" />'

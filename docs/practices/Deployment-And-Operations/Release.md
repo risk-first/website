@@ -40,9 +40,9 @@ Release / Delivery involves the structured and controlled process of moving soft
 
 
 See: 
-- [Development Process](/thinking/Development-Process.md#a-toy-process)
-- [Consider Payoff](/thinking/Consider-Payoff.md#example-4-continue-testing-or-release)
-- [Production (Cadence)](/thinking/Cadence.md#production)
+- [Development Process](/thinking/Development-Process#a-toy-process)
+- [Consider Payoff](/thinking/Consider-Payoff#example-4-continue-testing-or-release)
+- [Production (Cadence)](/thinking/Cadence#production)
 
 ## See Also
 

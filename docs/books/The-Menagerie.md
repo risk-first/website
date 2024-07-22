@@ -13,7 +13,7 @@ sidebar_position: 1
 
 # The Menagerie
 
-[Second Edition Coming Soon!](Risk-First-Second-Edition.md)
+[Second Edition Coming Soon!](Risk-First-Second-Edition)
 
 The software development world is crowded with different practices, metrics, methodologies, tools and techniques.  But what unites them all?
 
@@ -31,4 +31,4 @@ The book aims to develop a _Pattern Language_ for understanding software risk, a
 
 ## Read It Here
 
-"The Menagerie" contains all of the [Overview](overview/Start.md), [Thinking Risk-First](thinking/Start.md) and [Risks](thinking/Start.md) tracks from the Risk-First website, so you can read all the material on-line here if you want to.
+"The Menagerie" contains all of the [Overview](overview/Start), [Thinking Risk-First](thinking/Start) and [Risks](thinking/Start) tracks from the Risk-First website, so you can read all the material on-line here if you want to.

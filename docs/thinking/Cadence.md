@@ -48,13 +48,13 @@ In a software development scenario, you should also test your model against real
 
 This list is arranged so that at the top, we have the most visceral, most _real_ feedback loop, but at the same time, the slowest.   
 
-At the bottom, a good IDE can inform you about errors in your [Internal Model](/thinking/Glossary.md#internal-model) in real time, by way of highlighting compilation errors .  So, this is the fastest loop, but it's the most _limited_ reality.
+At the bottom, a good IDE can inform you about errors in your [Internal Model](/thinking/Glossary#internal-model) in real time, by way of highlighting compilation errors .  So, this is the fastest loop, but it's the most _limited_ reality.
 
 Imagine for a second that you had a special time-travelling machine.  With it, you could make a change to your software, and get back a report from the future listing out all the issues people had faced using it over its lifetime, instantly.
 
 That'd be neat, eh?  If you did have this, would there be any point at all in a compiler?   Probably not, right?  
 
-The whole _reason_ we have tools like compilers is because they give us a short-cut way to get some limited experience of reality _faster_ than would otherwise be possible.  Because cadence is really important:  the faster we test our ideas, the more quickly we'll find out if they're correct or not and the faster we can back out of the bets that aren't [paying off](Consider-Payoff.md)
+The whole _reason_ we have tools like compilers is because they give us a short-cut way to get some limited experience of reality _faster_ than would otherwise be possible.  Because cadence is really important:  the faster we test our ideas, the more quickly we'll find out if they're correct or not and the faster we can back out of the bets that aren't [paying off](Consider-Payoff)
 
 ## Development Cycle Time
 
@@ -80,4 +80,4 @@ Yes, CD will give you faster feedback loops, but even getting things into produc
 
 The right answer is to use multiple feedback loops, as shown in the diagram above.  
 
-In the next section we'll be [Considering Payoff](Consider-Payoff.md), and figuring out how we can use terminology from _betting_ to make us better software developers.
+In the next section we'll be [Considering Payoff](Consider-Payoff), and figuring out how we can use terminology from _betting_ to make us better software developers.

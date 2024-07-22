@@ -39,7 +39,7 @@ practice:
 Prototyping in software development involves creating early models or mockups of the software to test concepts and gather feedback. This practice helps in validating design choices, identifying potential issues, and ensuring that the final product meets the users' needs and expectations.
 
 See:
- - [Spike Solution (Coding Bets)](../bets/Coding-Bets.md#spike-solutions-a-new-technology-bet)
+ - [Spike Solution (Coding Bets)](/bets/Coding-Bets#spike-solutions-a-new-technology-bet)
 
 
 ## See Also

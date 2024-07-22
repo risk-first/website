@@ -31,7 +31,7 @@ I am going to argue here that _risks_ affect the health of a thing, where the th
  
  - **A Software Product** is a thing we interact with, built out of code.  The health of that software is damaged by the existence of [bugs and missing features](/tags/Feature-Risk).
  
- - **A Project**, like making a film or organising a [dinner party](A-Simple-Scenario.md). 
+ - **A Project**, like making a film or organising a [dinner party](A-Simple-Scenario). 
  
  - **A Commercial Entity**, such as a business, which is exposed to various [Operational Risks](/tags/Operational-Risk) in order to continue to function.  Businesses face different health risks than organisms, like  key staff leaving, reputation damage or running out of money.
 
@@ -73,7 +73,7 @@ Metrics are difficult though.  Choosing the _right_ metrics, knowing their weakn
 
 ### Health as Critical Acclaim
 
-Measuring fitness as you go along is not always possible.  For a lot of projects, like dinner parties, films or construction projects, the success or failure has to be judged subjectively on completion, and not before.  Essentially, the project is a [bet](Glossary.md#bet) on a future outcome. 
+Measuring fitness as you go along is not always possible.  For a lot of projects, like dinner parties, films or construction projects, the success or failure has to be judged subjectively on completion, and not before.  Essentially, the project is a [bet](Glossary#bet) on a future outcome. 
 
 Building a new feature on a software project fits into this category:  although you can build tests, do demos and run beta-test programmes the full picture of the health of what you've built won't emerge until later.  
 
@@ -122,7 +122,7 @@ When an organisation or a project hires an employee they are doing so in order t
 
 Sometimes, as discussed in [Agency Risk](/tags/Agency-Risk) these can be in conflict with one another:
 
- - Putting in [a heroic effort](/risks/Agency-Risk.md#the-hero) might save a project but at the expense of your personal health. 
+ - Putting in [a heroic effort](/risks/Agency-Risk#the-hero) might save a project but at the expense of your personal health. 
    
  - [Lobbying](https://en.wikipedia.org/wiki/Lobbying) is trying to push the  political agenda of an organisation at the state level, which might help the health of the organisation at the expense of the state or its citizens.  
  
@@ -132,8 +132,8 @@ Sometimes, as discussed in [Agency Risk](/tags/Agency-Risk) these can be in conf
 
 If all of these disparate domains at all of these different scales are tracking health risks, it is clear that we should be doing this for software projects too.
 
-The health risks affecting people are well known (by doctors, at least) and we have the list of state-level risks above too.  [Risk-First](https://riskfirst.org) is therefore about building a similar catalog for risks affecting the health of software development projects.  Risks are in general _not_ unique on software projects - they are the same ones over and over again, such as [Communication Risk](/tags/Comunication-Risk) or [Dependency Risk](/tags/Dependency-Risk).   Every project faces these.  
+The health risks affecting people are well known (by doctors, at least) and we have the list of state-level risks above too.  [Risk-First](https://riskfirst.org) is therefore about building a similar catalog for risks affecting the health of software development projects.  Risks are in general _not_ unique on software projects - they are the same ones over and over again, such as [Communication Risk](/tags/Communication-Risk) or [Dependency Risk](/tags/Dependency-Risk).   Every project faces these.  
 
 Having shown that risk management is _scale invariant_, we're next going to look at general strategies we can use to manage all of these various health risks.
 
-On to [Derisking](De-Risking.md)...
+On to [Derisking](De-Risking)...

@@ -42,6 +42,6 @@ Risk-First isn't an exhaustive guide to every possible software development prac
 
 Neither is this a practitioner's guide to using any particular methodology:  if you've come here to learn the best way to use Story Points (for example), then you're in the wrong place.  There are plenty of places you can find that information already.  Where possible, this site will link to or reference concepts on Wikipedia or the wider Internet for further reading on each subject.
 
-With those caveats in place, let's go on and explore [The Risk Landscape](/risks/Risk-Landscape.md).
+With those caveats in place, let's go on and explore [The Risk Landscape](/risks/Risk-Landscape).
 
 

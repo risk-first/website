@@ -44,11 +44,11 @@ practice:
 User Acceptance Testing (UAT) involves having end users test the software to ensure it meets their requirements and expectations. This practice helps in identifying any issues that may not have been caught during previous testing phases and ensures that the final product is user-friendly and functional.
 
 See: 
- - [Consider Payoff](/thinking/Consider-Payoff.md)
- - [Development Process](/thinking/Development-Process.md#a-toy-process)_
- - [User Acceptance Testing (Meeting Reality)](/thinking/Meeting-Reality.md#example-user-acceptance-testing-uat)
- - [Manual Testing](/thinking/Cadence.md#development-cycle-time) 
- - [Waterfall (One Size Fits No One)](thinking/One-Size-Fits-No-One.md) 
+ - [Consider Payoff](/thinking/Consider-Payoff)
+ - [Development Process](/thinking/Development-Process#a-toy-process)_
+ - [User Acceptance Testing (Meeting Reality)](/thinking/Meeting-Reality#example-user-acceptance-testing-uat)
+ - [Manual Testing](/thinking/Cadence#development-cycle-time) 
+ - [Waterfall (One Size Fits No One)](/thinking/One-Size-Fits-No-One) 
  
 ## See Also
 

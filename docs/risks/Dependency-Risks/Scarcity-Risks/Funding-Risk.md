@@ -3,7 +3,7 @@ title: Funding Risk
 description: A particular scarcity risk, due to lack of funding.
 
 
-slug: risks/Funding-Risk
+slug: /risks/Funding-Risk
 
 featured: 
   class: c
@@ -26,4 +26,4 @@ This grants you some leeway as now you have two variables to play with: the _siz
 
 In startup circles, this "amount of time you can afford it" is called the ["Runway"](https://en.wiktionary.org/wiki/runway):  you have to get the product to "take-off" (become profitable) before the runway ends. 
 
-Startups often spend a lot of time courting investors in order to get funding and mitigate this type of [Schedule Risk](/tags/Schedule-Risk).<!-- tweet-end -->  But, as shown in the diagram above, this activity usually comes at the expense of [Opportunity Risk](/tags/Opportunity-Risk) and [Feature Risk](/tags/Feature-Risk), as usually the same people are diverted into raise funds instead of building the project itself.  
+Startups often spend a lot of time courting investors in order to get funding and mitigate this type of [Schedule Risk](/tags/Schedule-Risk).<!-- tweet-end -->  But, as shown in the diagram above, this activity usually comes at the expense of [Feature Risk](/tags/Feature-Risk), as usually the same people are diverted into raise funds instead of building the project itself.  

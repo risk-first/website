@@ -44,4 +44,4 @@ This is where I will be adding blog materials discussing the content of the new 
 
 ### Tell Us What You Think!
 
-Most of the material in the second edition book is published here on this website, so you can simply [start reading](overview/Start.md).  If you have any feedback, please get in touch.  What's missing?  What doesn't make sense?  What should be left out?  Knowing this will be super-helpful and **you will be credited in the book along with all the other [Contributors](misc/Contributors.md).**
+Most of the material in the second edition book is published here on this website, so you can simply [start reading](overview/Start).  If you have any feedback, please get in touch.  What's missing?  What doesn't make sense?  What should be left out?  Knowing this will be super-helpful and **you will be credited in the book along with all the other [Contributors](/overview/Contributors).**

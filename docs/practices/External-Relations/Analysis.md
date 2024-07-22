@@ -44,7 +44,7 @@ Analysis in software development involves examining and breaking down the requir
 
 See: 
 
- - [Environmental Scanning](/risks/Operational-Risk.md#scanning-the-operational-context)
+ - [Environmental Scanning](/risks/Operational-Risk#scanning-the-operational-context)
 
 ## See Also
 

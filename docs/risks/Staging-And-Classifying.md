@@ -20,17 +20,17 @@ But if we are good collectors, then before we finish we should _[Stage](https://
 
 ## Towards A "Periodic Table" Of Risks
 
-As we said [at the start](A-Pattern-Language.md), Risk-First is all about developing _A Pattern Language_.  We can use the terms like "[Feature Risk](/tags/Feature-Risk)" or "[Learning Curve Risk](/tags/Learning-Curve-Risk)" to explain phenomena we see on software projects.   If we want to [De-Risk](/thinking/De-Risking.md) our work, we need this power of explanation so we can talk about how to go about it.
+As we said [at the start](A-Pattern-Language), Risk-First is all about developing _A Pattern Language_.  We can use the terms like "[Feature Risk](/tags/Feature-Risk)" or "[Learning Curve Risk](/tags/Learning-Curve-Risk)" to explain phenomena we see on software projects.   If we want to [De-Risk](/thinking/De-Risking) our work, we need this power of explanation so we can talk about how to go about it.
 
 ![Periodic Table of Risks, Horizontal](/img/generated/staging-and-classifying/periodic-horizontal.svg)
 
-The diagram above compiles all of the risks we've seen so far on our tour across the [Risk Landscape](/risks/Risk-Landscape.md).  Just like a periodic table, there are perhaps others left to discover.   _Unlike_ a periodic table, these risks are not completely distinct: they mix like paint and blend into one another.  
+The diagram above compiles all of the risks we've seen so far on our tour across the [Risk Landscape](/risks/Risk-Landscape).  Just like a periodic table, there are perhaps others left to discover.   _Unlike_ a periodic table, these risks are not completely distinct: they mix like paint and blend into one another.  
 
 If you've been reading closely, you'll notice that a number of themes come up again and again within the different sections.   It's time to look at the _patterns within the patterns_. 
 
 ## The Power Of Abstractions
 
-[Abstraction](/thinking/Glossary.md#abstraction) appears as a concept continually: in [Communication Risk](/tags/Communication-Risk), [Complexity Metrics](/risks/Complexity-Risk.md#kolmogorov-complexity), [Map and Territory Risk](/tags/Map-And-Territory-Risk) or how it causes [Boundary Risk](/tags/Boundary-Risk).  We've looked at some complicated examples of abstractions, such as [network protocols](Communication-Risk.md#protocols), [dependencies on technology](/tags/Software-Dependency-Risk) or [Business Processes](Process-Risk.md#the-purpose-of-process).
+[Abstraction](/thinking/Glossary#abstraction) appears as a concept continually: in [Communication Risk](/tags/Communication-Risk), [Complexity Metrics](/risks/Complexity-Risk#kolmogorov-complexity), [Map and Territory Risk](/tags/Map-And-Territory-Risk) or how it causes [Boundary Risk](/tags/Boundary-Risk).  We've looked at some complicated examples of abstractions, such as [network protocols](Communication-Risk#protocols), [dependencies on technology](/tags/Software-Dependency-Risk) or [Business Processes](Process-Risk#the-purpose-of-process).
 
 Let's now _generalize_ what is happening with abstraction.  To do this, we'll consider the simplest example of abstraction:  _naming a pattern_ of behaviour we see in the real world, such as "Binge Watching" or "Remote Working", or naming a category of insects as "Beetles".
 
@@ -52,7 +52,7 @@ As shown in the above diagram, _using an abstraction you already know_ means:
 As shown in the above diagram, _inventing a new abstraction_ means:
 
 - **Mitigating [Feature Risk](/tags/Feature-Risk).**  By _giving a name to something_ (or building a new product, or a way of working) you are offering up something that someone else can use.  This should mitigate [Feature Risk](/tags/Feature-Risk) in the sense that other people can choose to use your it, if it fits their requirements.  
-- **Creating a [Protocol](Communication-Risk.md#protocols).**  Introducing _new words to a language_ creates [Protocol Risk](/tags/Protocol-Risk) as most people won't know what it means. 
+- **Creating a [Protocol](Communication-Risk#protocols).**  Introducing _new words to a language_ creates [Protocol Risk](/tags/Protocol-Risk) as most people won't know what it means. 
 - **Increasing [Complexity Risk](/tags/Complexity-Risk).** Because, the more words we have, the more complex the language is.
 - **Creating the opportunity for [Boundary Risk](/tags/Boundary-Risk).**  By naming something, you _implicitly_ create a boundary, because the world is now divided into "things which _are_ X" and "things which _are not_ X".  _Boundary Risk arises from abstractions._
     
@@ -66,7 +66,7 @@ As shown in the above diagram, _learning a new abstraction_ means:
  - **Accepting [Boundary Risks](/tags/Boundary-Risk).**  Commitment to one abstraction over another means that you have the opportunity cost of the other abstractions that you could have used.
  - **Accepting [Map And Territory Risk](/tags/Map-And-Territory-Risk).** Because the word refers to the _concept_ of the thing, and _not the thing itself_.
 
-Abstraction is everywhere and seems to be at the heart of what our brains do.  But clearly, like [taking any other action](/thinking/Glossary.md#taking-action) there is always trade-off in terms of risk.   
+Abstraction is everywhere and seems to be at the heart of what our brains do.  But clearly, like [taking any other action](/thinking/Glossary#taking-action) there is always trade-off in terms of risk.   
 
 ## Your Feature Risk is Someone Else's Dependency Risk
 
@@ -82,7 +82,7 @@ As shown in the diagram above, relationships of features/dependencies are the ba
 
 ## The Work Continues
 
-On this journey around the [Risk Landscape](/risks/Risk-Landscape.md) we've collected a (hopefully) good, representative sample of [Risks](/thinking/Glossary.md#risk) and where to find them. But there are more out there.   How many of these have you seen on your projects?  What is missing?  What is wrong?
+On this journey around the [Risk Landscape](/risks/Risk-Landscape) we've collected a (hopefully) good, representative sample of [Risks](/thinking/Glossary#risk) and where to find them. But there are more out there.   How many of these have you seen on your projects?  What is missing?  What is wrong?
 
 Please help by reporting back what you find.
 

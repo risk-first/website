@@ -21,16 +21,16 @@ tweet: yes
 
 # Derisking
 
-In this section, we're going to more closely at what, so far, we've called "[Taking Action](Glossary.md#taking-action)" and separate out different ways this can be done.   We'll introduce the correct risk management terms and give examples of how to apply these to software development.
+In this section, we're going to more closely at what, so far, we've called "[Taking Action](Glossary#taking-action)" and separate out different ways this can be done.   We'll introduce the correct risk management terms and give examples of how to apply these to software development.
 
 ## What is Taking Action?
 
-So far in Risk-First, we've talked about [Taking Action](Glossary.md#taking-action) as having two effects:
+So far in Risk-First, we've talked about [Taking Action](Glossary#taking-action) as having two effects:
 
- 1. It's the way in which we [Meet Reality](Glossary.md#meet-reality) to learn about the world and uncover [Hidden Risks](Glossary.md#hidden-risk).
- 2. It's the way we change our position on the [Risk Landscape](Glossary.md#risk-landscape) via actions with a positive [Payoff](Glossary.md#payoff).
+ 1. It's the way in which we [Meet Reality](Glossary#meet-reality) to learn about the world and uncover [Hidden Risks](Glossary#hidden-risk).
+ 2. It's the way we change our position on the [Risk Landscape](Glossary#risk-landscape) via actions with a positive [Payoff](Glossary#payoff).
  
-As we saw in the discussion of [Payoff](Consider-Payoff.md), any time you take action you are accruing [attendant risk](Glossary.md#attendant-risk), and we want to take actions with the most favourable payoff.  So here we are going to look at common ways in which we can lean the payoff in our favour.  This is called _derisking_:   
+As we saw in the discussion of [Payoff](Consider-Payoff), any time you take action you are accruing [attendant risk](Glossary#attendant-risk), and we want to take actions with the most favourable payoff.  So here we are going to look at common ways in which we can lean the payoff in our favour.  This is called _derisking_:   
 
 > "To remove the risk from; to make safe. " - [Derisk, _Wiktionary_](https://en.wiktionary.org/wiki/derisk)
 
@@ -49,7 +49,7 @@ The table above lists a set of _generic strategies_ for derisking which we'll lo
 
 ## Reduce 
 
-**Reducing** or **Mitigating** risk is taking steps towards minimising the **impact** (as we discussed in the [Evaluating Risk](Evaluating-Risk.md) section) of a risk arising.  
+**Reducing** or **Mitigating** risk is taking steps towards minimising the **impact** (as we discussed in the [Evaluating Risk](Evaluating-Risk) section) of a risk arising.  
 
 > "To reduce, lessen, or decrease and thereby to make less severe or easier to bear." - [Mitigate, _Wiktionary_](https://en.wiktionary.org/wiki/mitigate) 
 
@@ -67,7 +67,7 @@ The table above lists a set of _generic strategies_ for derisking which we'll lo
 
 1.  **Take Care With Dependencies**: Choose popular technologies and known reliable components. Whilst hiring people is hard work at the best of times, hiring PL/1 programmers is _really hard_. This tactic is explored in much more depth in [Software Dependency Risk](/tags/Software-Dependency-Risk)
 
-1.  **Redundancy**: Avoid single points of failure.   For example, Pair Programming is a control espoused by [Extreme Programming](/tags/Extreme-Programming-(XP)) to reduce [Key Person Risk](/tags/Agency-Risk) and [Communication Risk](/tags/Comunication-Risk).  See [Dependency Risk](/tags/Dependency-Risk) for more on this.  
+1.  **Redundancy**: Avoid single points of failure.   For example, Pair Programming is a control espoused by [Extreme Programming](/tags/Extreme-Programming) to reduce [Key Person Risk](/tags/Agency-Risk) and [Communication Risk](/tags/Communication-Risk).  See [Dependency Risk](/tags/Dependency-Risk) for more on this.  
 
 1.  **Create Options**:  Using _feature flags_ allows you to turn off functionality in production, avoiding an all-or-nothing commitment.  Working in branches gives the same optionality while developing. 
 
@@ -101,7 +101,7 @@ The table above lists a set of _generic strategies_ for derisking which we'll lo
 
 ## Avoid
 
-**Avoiding** risk, means taking a route on the [Risk Landscape](/thinking/Glossary.md#risk-landscape) _around_ the risk.  Neither the stakes or the payoff are changed.  
+**Avoiding** risk, means taking a route on the [Risk Landscape](/thinking/Glossary#risk-landscape) _around_ the risk.  Neither the stakes or the payoff are changed.  
 
 ### General Examples
 
@@ -215,6 +215,6 @@ There is a grey area here, because on the one hand you are [retaining](#retain) 
 
 Here we've been building towards a vocabulary with which to communicate to our team-mates about which risks are important to us (_reduce_, _exploit_, _share_, _retain_, _control_, _monitor_).  This helps us discuss which actions we believe are the right ones and how we should deal with them.
 
-In the next section we will look at the indicators that tell you when to apply these levers.  On to [Cadence](Cadence.md).
+In the next section we will look at the indicators that tell you when to apply these levers.  On to [Cadence](Cadence).
 
 

@@ -8,6 +8,7 @@ tags:
  - Goal
  - Agency Risk
  - Agent
+ - Security Risk
 definitions: 
  - name: Agent
    description: blah
@@ -21,7 +22,7 @@ part_of: Dependency Risk
 
 <RiskIntro fm={frontMatter} />
 
-Coordinating a team is difficult enough when everyone on the team has a single [Goal](/thinking/Glossary.md#goal).  But people have their own goals too.  Sometimes their goals harmlessly co-exist with the team's goal, other times they don't. 
+Coordinating a team is difficult enough when everyone on the team has a single [Goal](/thinking/Glossary#goal).  But people have their own goals too.  Sometimes their goals harmlessly co-exist with the team's goal, other times they don't. 
 
 This is [Agency Risk](/tags/Agency-Risk). 
 
@@ -118,7 +119,7 @@ Working on a pet project usually means you get lots of attention (and more than 
 
 > "Morale, also known as Esprit de Corps, is the capacity of a group's members to retain belief in an institution or goal, particularly in the face of opposition or hardship" - [Morale, _Wikipedia_](https://en.wikipedia.org/wiki/Morale) 
 
-Sometimes the morale of the team or individuals within it dips, leading to lack of motivation.  Losing morale is a kind of [Agency Risk](/tags/Agency-Risk) because it really means that a team member or the whole team isn't committed to the [Goal](/thinking/Glossary.md#goal) and may decide their efforts are best spent elsewhere.  Morale failure might be caused by:
+Sometimes the morale of the team or individuals within it dips, leading to lack of motivation.  Losing morale is a kind of [Agency Risk](/tags/Agency-Risk) because it really means that a team member or the whole team isn't committed to the [Goal](/thinking/Glossary#goal) and may decide their efforts are best spent elsewhere.  Morale failure might be caused by:
 
  - **External Factors**:  perhaps the employee's dog has died, or they're simply tired of the industry, or are not feeling challenged.
  - **The goal feels unachievable**:  in this case people won't commit their full effort to it.  This might be due to a difference in the evaluation of the risks on the project between the team members and the leader.  In military science, a second meaning of morale is how well supplied and equipped a unit is.  This would also seem like a useful reference point for IT projects.  If teams are under-staffed or under-equipped, it will impact on motivation too.
@@ -160,9 +161,9 @@ This problem may be a long way off.  In any case it's not really in our interest
 
 ### Teams
 
-[Agency Risk](/tags/Agency-Risk) applies to _whole teams_ too.  It's perfectly possible that a team within an organisation develops [Goals](/thinking/Glossary.md#goal) that don't align with those of the overall organisation.  For example:
+[Agency Risk](/tags/Agency-Risk) applies to _whole teams_ too.  It's perfectly possible that a team within an organisation develops [Goals](/thinking/Glossary#goal) that don't align with those of the overall organisation.  For example:
 
- - A team introduces excessive [Bureaucracy](Process-Risk.md#bureaucracy) in order to avoid work it doesn't like.
+ - A team introduces excessive [Bureaucracy](Process-Risk#bureaucracy) in order to avoid work it doesn't like.
  - A team gets obsessed with a particular technology, or their own internal process improvement, at the expense of delivering business value.
  - A marginalised team forces their services on other teams in the name of "consistency".   (This can happen a lot with "Architecture", "Branding" and "Testing" teams, sometimes for the better, sometimes for the worse.)
 
@@ -210,11 +211,11 @@ We're waking up to the realisation that our software systems need to work the sa
 
 ![Security as a mitigation for Agency Risk](/img/generated/risks/agency/security-risk.svg)
 
-[Agency Risk](/tags/Agency-Risk) and [Security Risk](Agency-Risk.md#security) thrive on complexity:  the more complex the systems we create, the more opportunities there are for bad actors to insert themselves and extract their own value.  The dilemma is, _increasing security_ also means increasing [Complexity Risk](/tags/Complexity-Risk), because secure systems are necessarily more complex than insecure ones.
+[Agency Risk](/tags/Agency-Risk) and [Security Risk](Agency-Risk#security) thrive on complexity:  the more complex the systems we create, the more opportunities there are for bad actors to insert themselves and extract their own value.  The dilemma is, _increasing security_ also means increasing [Complexity Risk](/tags/Complexity-Risk), because secure systems are necessarily more complex than insecure ones.
 
 ### Goal Alignment
 
-As we stated at the beginning, [Agency Risk](/tags/Agency-Risk) at any level comes down to differences of [Goals](/thinking/Glossary.md#goal) between the different agents, whether they are _people_, _teams_ or _software_. 
+As we stated at the beginning, [Agency Risk](/tags/Agency-Risk) at any level comes down to differences of [Goals](/thinking/Glossary#goal) between the different agents, whether they are _people_, _teams_ or _software_. 
 
 #### Skin In The Game 
 
@@ -228,7 +229,7 @@ Another example of this is [The Code of Hammurabi](https://en.wikipedia.org/wiki
 
 > "The death of a homeowner in a house collapse necessitates the death of the house's builder... if the homeowner's son died, the builder's son must die also." - [Code of Hammurabi, _Wikipedia_](https://en.wikipedia.org/wiki/Code_of_Hammurabi#Theories_of_purpose)
 
-Luckily, these kinds of exposure aren't very common on software projects!  [Fixed Price Contracts](/thinking/One-Size-Fits-No-One.md#waterfall) and [Employee Stock Options](https://en.wikipedia.org/wiki/Employee_stock_option) are two exceptions.
+Luckily, these kinds of exposure aren't very common on software projects!  [Fixed Price Contracts](/thinking/One-Size-Fits-No-One#waterfall) and [Employee Stock Options](https://en.wikipedia.org/wiki/Employee_stock_option) are two exceptions.
 
 #### Needs Theory
 
@@ -244,7 +245,7 @@ But _extrinsic motivation_ is a complex, difficult-to-apply tool.  In [Map And T
 
 ![Collective Code Ownership, Individual Responsibility](/img/generated/risks/agency/cco.svg)
 
-Tools like [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming) and [Collective Code Ownership](https://en.wikipedia.org/wiki/Collective_ownership) are about mitigating [Staff Risks](Scarcity-Risk.md#staff-risk) like [Key Person Risk](https://en.wikipedia.org/wiki/Key_person_insurance#Key_person_definition) and [Learning Curve Risk](/tags/Learning-Curve-Risk), but these push in the opposite direction to _individual responsibility_.   
+Tools like [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming) and [Collective Code Ownership](https://en.wikipedia.org/wiki/Collective_ownership) are about mitigating [Staff Risks](Scarcity-Risk#staff-risk) like [Key Person Risk](https://en.wikipedia.org/wiki/Key_person_insurance#Key_person_definition) and [Learning Curve Risk](/tags/Learning-Curve-Risk), but these push in the opposite direction to _individual responsibility_.   
 
 This is an important consideration:  in adopting _those_ tools, you are necessarily setting aside certain _other_ tools to manage [Agency Risk](/tags/Agency-Risk) as a result.
 
@@ -252,7 +253,7 @@ This is an important consideration:  in adopting _those_ tools, you are necessar
 
 We've looked at various different shades of [Agency Risk](/tags/Agency-Risk) and three different mitigations for it. [Agency Risk](/tags/Agency-Risk) is a concern at the level of _individual agents_, whether they are processes, people, systems or teams.  
 
-So having looked at agents _individually_, it's time to look more closely at [Goals](/thinking/Glossary.md#goal), and the [Attendant Risks](/thinking/Glossary.md#attendant-risk) when aligning them amongst multiple agents. 
+So having looked at agents _individually_, it's time to look more closely at [Goals](/thinking/Glossary#goal), and the [Attendant Risks](/thinking/Glossary#attendant-risk) when aligning them amongst multiple agents. 
 
 On to [Coordination Risk](/tags/Coordination-Risk)...
 

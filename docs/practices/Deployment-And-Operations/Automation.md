@@ -47,12 +47,12 @@ practice:
 
 > "Automation describes a wide range of technologies that reduce human intervention in processes, mainly by predetermining decision criteria, subprocess relationships, and related actions, as well as embodying those predeterminations in machines.": - [Automation, _Wikipedia_](https://en.wikipedia.org/wiki/Automation)
 
-One of the key ways to measure whether your team is doing _useful work_ is to look at whether, in fact, it can be automated.  And this is the spirit of [DevOps](DevOps) - the idea that people in general are poor at repeatable tasks, and anything people do repeatedly _should_ be automated.  
+One of the key ways to measure whether your team is doing _useful work_ is to look at whether, in fact, it can be automated.  And this is the spirit of [DevOps](/methods/DevOps) - the idea that people in general are poor at repeatable tasks, and anything people do repeatedly _should_ be automated.  
 
 See: 
 
- - [Automation (Meeting Reality)](/thinking/Meeting-Reality.md#example-automation)
- - [The Purpose of Process](/risks/Process-Risk.md#the-purpose-of-process)
+ - [Automation (Meeting Reality)](/thinking/Meeting-Reality#example-automation)
+ - [The Purpose of Process](/risks/Process-Risk#the-purpose-of-process)
 
 ## See Also
 

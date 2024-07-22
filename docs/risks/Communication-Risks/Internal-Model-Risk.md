@@ -2,7 +2,7 @@
 title: Internal Model Risk
 description: Risks arising from insufficient or erroneous internal models of reality.
 
-slug: risks/Internal-Model-Risk
+slug: /risks/Internal-Model-Risk
 featured: 
   class: c
   element: '<risk class="internal-model" />'

@@ -29,7 +29,7 @@ Work in Scrum is done within periods of time called _Sprints_.  Each sprint ends
 
 > "The goal of this activity is to inspect and adapt the product being built... Everyone in attendance gets clear visibility into what is occurring and has an opportunity to help guide the forthcoming development to ensure that the most business-appropriate solution is created." - Essential Scrum (p26), _Rubin_
 
-In Risk-First, we tend to call this validation step [Meeting Reality](/tags/Meeting-Reality):  you are creating a [feedback loop](/thinking/Cadence.md) in order to minimise risk.  What is the risk you are minimising?  Essentially, we are trying to reduce the risk of the developers _building the wrong thing_, which could be due to misunderstanding of requirements, or perfectionism, or because the piece of work was ill-conceived in the first place.  In Risk-First, the risk of building the wrong thing is called [Feature Risk](/tags/Feature-Risk).
+In Risk-First, we tend to call this validation step [Meeting Reality](/tags/Meeting-Reality):  you are creating a [feedback loop](/thinking/Cadence) in order to minimise risk.  What is the risk you are minimising?  Essentially, we are trying to reduce the risk of the developers _building the wrong thing_, which could be due to misunderstanding of requirements, or perfectionism, or because the piece of work was ill-conceived in the first place.  In Risk-First, the risk of building the wrong thing is called [Feature Risk](/tags/Feature-Risk).
 
 ![Feature Risk mitigated by Meeting Reality](/img/generated/estimating/scrum/scrum1.svg)
 
@@ -37,7 +37,7 @@ The above diagram demonstrates us mitigating [Feature Risk](/tags/Feature-Risk) 
 
 ![Schedule Risk for Stakeholders](/img/generated/estimating/scrum/scrum2.svg)
 
-And that risk is called [Schedule Risk](/tags/Schedule-Risk).  It is shown in the diagram above: the _more feedback_ you are receiving, the more _interruption_ you are causing to the people giving feedback.   So you are trying to [Balance Risk](../bets/Purpose-Development-Team.md):  while having a _daily_ review for a software project involving all stakeholders would be over-kill and waste a lot of everyone's time, having a _yearly_ review would be too-long a feedback loop.   Balancing risk here means doing the feedback loop _just often enough_.
+And that risk is called [Schedule Risk](/tags/Schedule-Risk).  It is shown in the diagram above: the _more feedback_ you are receiving, the more _interruption_ you are causing to the people giving feedback.   So you are trying to [Balance Risk](../bets/Purpose-Development-Team):  while having a _daily_ review for a software project involving all stakeholders would be over-kill and waste a lot of everyone's time, having a _yearly_ review would be too-long a feedback loop.   Balancing risk here means doing the feedback loop _just often enough_.
 
 ## Time-Boxing To The Rescue
 
@@ -60,13 +60,13 @@ Nevertheless, time-boxing is foundational principle of Scrum.  So in order to ge
 
 Now, although the above diagram _makes sense_ (estimating as a mitigation to coordination issues) by this point in this track of articles we should be wary of our ability to estimate development tasks _at all_:
 
- - **Sometimes, tasks have a [Fill-The-Bucket](Fill-The-Bucket.md) nature.**  If you have a test plan to run through on six different platforms, and last week doing a single platform took two hours, then your estimate of two days for the lot is probably about right.  
+ - **Sometimes, tasks have a [Fill-The-Bucket](Fill-The-Bucket) nature.**  If you have a test plan to run through on six different platforms, and last week doing a single platform took two hours, then your estimate of two days for the lot is probably about right.  
 
- - **Sometimes, it's about finesse.**  With [Fractal-Style](Fractals.md) problems you know that three days spent on icon design will yield better results than one day, but either way, there will be a set of icons to look at.  
+ - **Sometimes, it's about finesse.**  With [Fractal-Style](Fractals) problems you know that three days spent on icon design will yield better results than one day, but either way, there will be a set of icons to look at.  
 
- - **But sometimes, problems can telescope, as we discussed in [Kitchen Cabinets](Kitchen-Cabinet.md).**  You start thinking the problem of connecting A to B is simple, but then you realise it involves a call to C and to redesign the whole of D and introduce a new micro-service E... your estimate is toast.
+ - **But sometimes, problems can telescope, as we discussed in [Kitchen Cabinets](Kitchen-Cabinet).**  You start thinking the problem of connecting A to B is simple, but then you realise it involves a call to C and to redesign the whole of D and introduce a new micro-service E... your estimate is toast.
 
- - **Finally, sometimes, you'll have a problem that's like a [Journey](Journeys.md).**  Maybe you're trying to set up a new deployment pipeline?  The first step, finding servers turned out to be easy, but now you're trying to license the software to run on them, and it's taking longer.  The journey you have to take is _known_, but the steps along it are all different.   Will you hit the Sprint Review on time?  It's super-hard to say.
+ - **Finally, sometimes, you'll have a problem that's like a [Journey](Journeys).**  Maybe you're trying to set up a new deployment pipeline?  The first step, finding servers turned out to be easy, but now you're trying to license the software to run on them, and it's taking longer.  The journey you have to take is _known_, but the steps along it are all different.   Will you hit the Sprint Review on time?  It's super-hard to say.
  
 Given that estimating is so problematic, does it make any sense to try to mitigate our [Coordination Risk](/tags/Coordination-Risk) using estimates?  
 
@@ -97,7 +97,7 @@ Perhaps this improves estimating, but for me there are two key problems with thi
 
 ## 10X
 
-I've written before about [how being a "10X Developer" largely comes down to having already visited the terrain](Estimates.md).  This implies that _at different times_ we can all be either 1X or 10X Developers.
+I've written before about [how being a "10X Developer" largely comes down to having already visited the terrain](/estimating/Start).  This implies that _at different times_ we can all be either 1X or 10X Developers.
 
 But with the power of hindsight, it's clear that at different times, on different projects, _whole teams_ can be either 1X or 10X.  
 
@@ -131,4 +131,4 @@ But actually, we're now _three degrees_ away from the original problem of **tryi
 
 If the thesis that "90% of everything is waste" is true, then Planning Poker is _also_ a waste, and we should devise a planning process to avoid this.  
 
-In the [next article](Risk-First-Analysis.md) we'll look at how we might do that.
+In the [next article](Risk-First-Analysis) we'll look at how we might do that.

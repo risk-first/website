@@ -43,8 +43,8 @@ Unit testing involves writing and running tests for individual units or componen
 
 
 See: 
- - [Development Process](/thinking/Development-Process.md#a-toy-process)
- - [Unit Testing (Meeting Reality)](/thinking/Meeting-Reality.md#example-automation)
+ - [Development Process](/thinking/Development-Process#a-toy-process)
+ - [Unit Testing (Meeting Reality)](/thinking/Meeting-Reality#example-automation)
 
 ## See Also
 

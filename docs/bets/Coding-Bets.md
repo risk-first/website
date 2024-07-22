@@ -132,12 +132,12 @@ The idea here is to make a bet that a market exists for a certain product, _and 
 
 We're used to the idea of entrepreneurs taking risks on new business ideas (like in the MVP example, above).  But it's not really so different when you are developing in a team, or on a personal project.  So if you start by taking the view that every piece of work you do is a bet then it really helps to put into perspective what is at stake and what is to gain.  
 
-The best gamblers (the ones who win over time) don't necessarily take bets they'll always win.  But they are always judging risk, stake and reward.  They try to place bets where the [Balance of Risk](/thinking/Glossary.md#balance-of-risk) is in their favour.   As developers, we should adopt the same mind-set:
+The best gamblers (the ones who win over time) don't necessarily take bets they'll always win.  But they are always judging risk, stake and reward.  They try to place bets where the [Balance of Risk](/thinking/Glossary#balance-of-risk) is in their favour.   As developers, we should adopt the same mind-set:
 
  - What are the likely stakes?
- - What is the [Payoff](/thinking/Glossary.md#payoff)?
+ - What is the [Payoff](/thinking/Glossary#payoff)?
  - What are the odds?
- - Is the bet worth it?  Do the stakes justify the [Payoff](/thinking/Glossary.md#payoff)?
+ - Is the bet worth it?  Do the stakes justify the [Payoff](/thinking/Glossary#payoff)?
  - How can you maximise the stakes while minimising pay-off?  How long will it take for the pay-off to be worthwhile?
  - Are you making a long bet, or lots of small, short bets?  You can reduce the overall stakes by splitting work up and doing the riskiest part first.
 
@@ -149,4 +149,4 @@ But software isn't like this.  Largely, we aren't building the exact same thing 
 
 What if you _are_ building the same cookie-cutter things over-and-over?   Perhaps it's time to change the bet?   By using new tools or techniques you would increase the risk, but also the reward would be to learn something new.  Alternatively, _build the library_ that automates the drudge-work so you can re-focus on the areas of risk.
 
-[The Purpose Of The Development Team](Purpose-Development-Team.md) article expands this idea further: that everything we do in a development team is about managing a balance of risks across the portfolio of an entire team's efforts.  In the next article though, we'll zoom in more closely and see how we use risk when we make [Debugging Bets](Debugging-Bets.md). 
+[The Purpose Of The Development Team](Purpose-Development-Team) article expands this idea further: that everything we do in a development team is about managing a balance of risks across the portfolio of an entire team's efforts.  In the next article though, we'll zoom in more closely and see how we use risk when we make [Debugging Bets](Debugging-Bets). 
