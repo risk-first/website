@@ -22,7 +22,7 @@ part_of: Operational Risk
 
 <RiskIntro fm={frontMatter} />
 
-[Complexity Risk](/tags/Complexity-Risk) is the [risk](/thinking/Glossary#risk) to your project due to its underlying "complexity".   Here, we will break down exactly what we mean by complexity, look at where it can hide on a software project and discuss some ways in which we can manage this important risk.
+[Complexity Risk](/tags/Complexity-Risk) is the [risk](/tags/Risk) to your project due to its underlying "complexity".   Here, we will break down exactly what we mean by complexity, look at where it can hide on a software project and discuss some ways in which we can manage this important risk.
 
 Here we will:
 
@@ -97,7 +97,7 @@ function out() {                                      (7 )
 
 ### Abstraction
 
-What's happening here is that we're _exploiting a pattern_: we noticed that `abcd` occurs several times, so we defined it a single time and then used it over and over, like a stamp.  This is called [abstraction](/thinking/Glossary#abstraction).
+What's happening here is that we're _exploiting a pattern_: we noticed that `abcd` occurs several times, so we defined it a single time and then used it over and over, like a stamp.  This is called [abstraction](/tags/Abstraction).
 
 By applying abstraction, we can improve in the direction of the Kolmogorov lower bound.  By allowing ourselves to say that _symbols_ (like `out` and `ABCD`) are worth one complexity point, we've allowed that we can be descriptive in naming `function` and `const`.  Naming things is an important part of abstraction, because to use something, you have to be able to refer to it.
 
@@ -229,9 +229,9 @@ The great complexity-reducing mechanism of modularisation is that _you only have
 
 ## Analogies
 
-So, we've looked at some measures of software structure complexity.  We can say "this is more complex than this" for a given piece of code or structure.  We've also looked at three ways to manage it:  [Abstraction](/thinking/Glossary#abstraction) and [Modularisation](/risks/Complexity-Risk#hierarchies-and-modularisation) and via [Dependencies](/risks/Complexity-Risk#languages-and-dependencies).  
+So, we've looked at some measures of software structure complexity.  We can say "this is more complex than this" for a given piece of code or structure.  We've also looked at three ways to manage it:  [Abstraction](/tags/Abstraction) and [Modularisation](/risks/Complexity-Risk#hierarchies-and-modularisation) and via [Dependencies](/risks/Complexity-Risk#languages-and-dependencies).  
 
-However, we've not really said why complexity entails [Risk](/thinking/Glossary#attendant-risk).  So let's address that now by looking at three analogies, [Mass](/risks/Complexity-Risk#complexity-is-mass), [Technical Debt](/risks/Complexity-Risk#technical-debt) and [Mess](/risks/Complexity-Risk#kitchen-analogy)  
+However, we've not really said why complexity entails [Risk](/tags/Attendant-Risk).  So let's address that now by looking at three analogies, [Mass](/risks/Complexity-Risk#complexity-is-mass), [Technical Debt](/risks/Complexity-Risk#technical-debt) and [Mess](/risks/Complexity-Risk#kitchen-analogy)  
 
 ### Complexity is Mass
 
@@ -322,7 +322,7 @@ Whichever option you choose, this is a [Dead End](#dead-end-risk) because with h
 
 Working in a complex environment makes it harder to see developmental dead-ends.
  
-Sometimes, the path across the [Risk Landscape](/risks/Risk-Landscape) will take you to dead ends, and the only benefit to be gained is experience.  No one deliberately chooses a dead end - often you can take an action that doesn't pay off, but frequently the dead end appears from nowhere:  it's a [Hidden Risk](/thinking/Glossary#hidden-risk).  The source of a lot of this hidden risk is the complexity of the [risk landscape](/thinking/Glossary#risk-landscape).
+Sometimes, the path across the [Risk Landscape](/risks/Risk-Landscape) will take you to dead ends, and the only benefit to be gained is experience.  No one deliberately chooses a dead end - often you can take an action that doesn't pay off, but frequently the dead end appears from nowhere:  it's a [Hidden Risk](/tags/Hidden-Risk).  The source of a lot of this hidden risk is the complexity of the [risk landscape](/tags/Risk-Landscape).
 
 [Version Control Systems](https://en.wikipedia.org/wiki/Version_control) like [Git](https://en.wikipedia.org/wiki/Git) are a useful mitigation of [Dead-End Risk](/tags/Dead-End-Risk), because using them means that at least you can _go back_ to the point where you made the bad decision and go a different way.  Additionally, they provide you with backups against the often inadvertent [Dead-End Risk](/tags/Dead-End-Risk) of someone wiping the hard-disk.
 

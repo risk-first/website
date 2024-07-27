@@ -27,7 +27,7 @@ part_of: Operational Risk
 
 If we all had identical knowledge, there would be no need to do any communicating at all, and therefore no [Communication Risk](/tags/Communication-Risk).  
 
-But people are not all-knowing oracles.  We rely on our _senses_ to improve our [Internal Models](/thinking/Glossary#internal-model) of the world. There is [Communication Risk](/tags/Communication-Risk) here - we might overlook something vital (like an on-coming truck) or mistake something someone says (like "Don't cut the green wire").  
+But people are not all-knowing oracles.  We rely on our _senses_ to improve our [Internal Models](/tags/Internal-Model) of the world. There is [Communication Risk](/tags/Communication-Risk) here - we might overlook something vital (like an on-coming truck) or mistake something someone says (like "Don't cut the green wire").  
 
 So, we are going to go on a journey discovering Communication Risk, covering:
 
@@ -59,7 +59,7 @@ But it's not just transmission.  [Communication Risk](/tags/Communication-Risk) 
 |Reception             | **Bob** doesn't hear the message clearly (maybe there is background noise). |
 |Decoding              | **Bob** might not decode what was said into a meaningful sentence. |
 |Interpretation        | Assuming **Bob** _has_ heard, will he correctly **interpret**  which type of chips (or chops) **Alice** was talking about? |
-|Reconciliation        | Does **Bob** believe the message?  Will he **reconcile** the information into his [Internal Model](/thinking/Glossary#internal-model) and act on it?  Perhaps not, if **Bob** forgets, or thinks that there are chips at home already.|
+|Reconciliation        | Does **Bob** believe the message?  Will he **reconcile** the information into his [Internal Model](/tags/Internal-Model) and act on it?  Perhaps not, if **Bob** forgets, or thinks that there are chips at home already.|
 
 ## Approach To Communication Risk
 
@@ -72,7 +72,7 @@ There is a symmetry about the steps going on in Shannon's model and we're going 
  - **[Channels](https://en.wikipedia.org/wiki/Communication_channel)**: the medium via which the communication is happening.
  - **[Protocols](https://en.wikipedia.org/wiki/Communication_protocol)**:  the systems of rules that allow two or more entities of a communications system to transmit information.
  - **[Messages](https://en.wikipedia.org/wiki/Message)**: the information we want to convey.
- - **[Internal Models](/thinking/Glossary#internal-model)**: the sources and destinations for the messages.  Updating internal models (whether in our heads or machines) is the reason why we're communicating.
+ - **[Internal Models](/tags/Internal-Model)**: the sources and destinations for the messages.  Updating internal models (whether in our heads or machines) is the reason why we're communicating.
  
 As we look at these four stages we'll consider the risks of each.
 

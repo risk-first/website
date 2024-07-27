@@ -16,9 +16,9 @@ part_of: Communication Risk
 
 > "A communication protocol is a system of rules that allow two or more entities of a communications system to transmit information. " - [Communication Protocol, Wikipedia](https://en.wikipedia.org/wiki/Communication_protocol)
 
-In this section I want to examine the concept of [Communication Protocols](https://en.wikipedia.org/wiki/Communication_protocol) and how they relate to [Abstraction](/thinking/Glossary#abstraction), which is implicated over and over again in different types of risk we will be looking at. 
+In this section I want to examine the concept of [Communication Protocols](https://en.wikipedia.org/wiki/Communication_protocol) and how they relate to [Abstraction](/tags/Abstraction), which is implicated over and over again in different types of risk we will be looking at. 
 
-[Abstraction](/thinking/Glossary#abstraction) means separating the _definition_ of something from the _use_ of something.  It's a widely applicable concept, but our example below will be specific to communication, and looking at the abstractions involved in loading a web page. 
+[Abstraction](/tags/Abstraction) means separating the _definition_ of something from the _use_ of something.  It's a widely applicable concept, but our example below will be specific to communication, and looking at the abstractions involved in loading a web page. 
 
 ### Clients and Servers
 
@@ -45,7 +45,7 @@ http://google.com/preferences
 
 The first thing that happens is that the name `google.com` is _resolved_ by DNS.  This means that the browser looks up the domain name `google.com` and gets back an [IP Address](https://en.wikipedia.org/wiki/IP_address).  An IP Address is a bit like a postal address, but instead of being the address of a building, it is the address of a particular computer.
 
-This is an [Abstraction](/thinking/Glossary#abstraction):  although computers use IP addresses like `216.58.204.78`, I can use a human-readable _name_, `google.com`.   
+This is an [Abstraction](/tags/Abstraction):  although computers use IP addresses like `216.58.204.78`, I can use a human-readable _name_, `google.com`.   
 
 The address `google.com` doesn't even necessarily resolve to that same address each time:  Google serves a lot of traffic so there are multiple servers handling the requests and _they have multiple IP addresses for `google.com`_.   But as a user, I don't have to worry about this detail.
 
@@ -58,7 +58,7 @@ Each packet consists of two things:
 - The **IP address**, which tells the network where to send the packet (again, much like you'd write the address on the outside of a parcel).
 - The **payload**, the stream of bytes for processing at the destination, like the contents of the parcel.
 
-But even this concept of "packets" is an [abstraction](/thinking/Glossary#abstraction).  Although the network understands this protocol, we might be using Wired Ethernet cables, or WiFi, 4G or _something else_ beneath that.  You can think of this as analogous to the parcel being delivered on foot, by plane or by car - it doesn't matter to the sender of the parcel!
+But even this concept of "packets" is an [abstraction](/tags/Abstraction).  Although the network understands this protocol, we might be using Wired Ethernet cables, or WiFi, 4G or _something else_ beneath that.  You can think of this as analogous to the parcel being delivered on foot, by plane or by car - it doesn't matter to the sender of the parcel!
 
 ### 3. 802.11 - WiFi Protocol
 
@@ -68,7 +68,7 @@ And WiFi is just the first hop.  After the WiFi receiver, there will be protocol
 
 ### 4. TCP - Transmission Control Protocol
 
-Another [abstraction](/thinking/Glossary#abstraction) going on here is that my browser believes it has a  "connection" to the server.  This is provided by the TCP protocol. 
+Another [abstraction](/tags/Abstraction) going on here is that my browser believes it has a  "connection" to the server.  This is provided by the TCP protocol. 
 
 But this is a fiction - my "connection" is built on the IP protocol, which as we saw above is just packets of data on the network.  So there are lots of packets floating around which say "this connection is still alive" and "I'm message 5 in the sequence" and so on in order to maintain this fiction.  
 

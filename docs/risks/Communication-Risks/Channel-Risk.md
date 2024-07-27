@@ -50,4 +50,4 @@ This works both ways.  Let's looks at some of the **Channel Risks** from the poi
 
 ![Marketing Communication](/img/generated/risks/communication/communication_marketing.svg)
 
-[Internal Models](/thinking/Glossary#internal-model) don't magically get populated with the information they need:  they fill up gradually, as shown in the diagram above.  Popular products and ideas _spread_, by word-of-mouth or other means.  Part of the job of being a good technologist is to keep track of new **Ideas**, **Concepts** and **Options**, so as to use them as [Dependencies](/tags/Dependency-Risk) when needed.
+[Internal Models](/tags/Internal-Model) don't magically get populated with the information they need:  they fill up gradually, as shown in the diagram above.  Popular products and ideas _spread_, by word-of-mouth or other means.  Part of the job of being a good technologist is to keep track of new **Ideas**, **Concepts** and **Options**, so as to use them as [Dependencies](/tags/Dependency-Risk) when needed.

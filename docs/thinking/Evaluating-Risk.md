@@ -92,7 +92,7 @@ Enough with the numbers and the theory:  we need a practical framework, rather t
 - First, there isn't enough scientific evidence for an approach like this.  We can look at collected data about historic IT projects, but techniques and tools advance rapidly.
 - Second, IT projects have too many confounding factors, such as experience of the teams, 
 technologies, used, problem domain, clients etc.  That is, the risks faced by IT projects are _too diverse_ and _hard to quantify_ to allow for meaningful comparison from one to the next.
-- Third, as soon as you _publish a date_ it changes the expectations of the project (see [Student Syndrome](/risks/Scarcity-Risk#student-syndrome)).
+- Third, as soon as you _publish a date_ it changes the expectations of the project (see [Student Syndrome](/risks/Staff-Risk#student-syndrome)).
 - Fourth, metrics get [misused](/tags/Map-And-Territory-Risk) and [gamed](/tags/Agency-Risk).
 
 ## Discounting In A Crisis

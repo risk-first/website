@@ -28,25 +28,25 @@ tweet: yes
 
 # Meeting Reality
 
-Of the new terminology we've looked at so far, [Meeting Reality](Glossary#meet-reality) might be one of the most baffling.  However, it is a crucial concept in risk management. 
+Of the new terminology we've looked at so far, [Meeting Reality](/tags/Meeting-Reality) might be one of the most baffling.  However, it is a crucial concept in risk management. 
 
-Here we look at how exposing your [Internal Model](Glossary#meet-reality) to reality is in itself a good risk management technique.  
+Here we look at how exposing your [Internal Model](/tags/Meeting-Reality) to reality is in itself a good risk management technique.  
 
 ![Meeting Reality](/img/generated/principles/meet-reality.svg)
 
 ## Different Internal Models
 
-The world is too complex to understand at a glance.  It takes years of growth and development for humans to build a useful [internal model](Glossary#internal-model) of reality in our heads.  
+The world is too complex to understand at a glance.  It takes years of growth and development for humans to build a useful [internal model](/tags/Internal-Model) of reality in our heads.  
 
 Within a development team, the model is split amongst people, documents, email, tickets, code... but it is still a model.  
 
-This "[Internal Model](/thinking/Glossary#internal-model)" of reality informs the actions we take in life: we take actions based on our model, hoping to change reality with some positive outcome.
+This "[Internal Model](/tags/Internal-Model)" of reality informs the actions we take in life: we take actions based on our model, hoping to change reality with some positive outcome.
 
 ![Taking actions changes reality, but changes your model of the risks too](/img/generated/introduction/model_vs_reality_2.svg)
 
 For example, while [organising a dinner party](A-Simple-Scenario) you'll have a model of who you expect to come.  You might take actions to ensure there is enough food, that you've got RSVPs and so on.
 
-The actions we take have consequences in the real world.   Hopefully, we eliminate some known risks but we might expose new [hidden risks](/thinking/Glossary#hidden-risk) as we go.  There is a _recursive_ nature about this - we're left with an updated Internal Model, and we see new actions we have to take as a result.
+The actions we take have consequences in the real world.   Hopefully, we eliminate some known risks but we might expose new [hidden risks](/tags/Hidden-Risk) as we go.  There is a _recursive_ nature about this - we're left with an updated Internal Model, and we see new actions we have to take as a result.
 
 ## Navigating the "Risk Landscape"
 
@@ -58,7 +58,7 @@ I would argue that the best choice of what to do is the one has the greatest [Pa
 
 ![Navigating The Risk Landscape](/img/generated/introduction/risk_landscape_1.svg)
 
-You can think of [Taking Action](/thinking/Glossary#taking-action) as moving your project on a "[Risk Landscape](Glossary#risk-landscape)".  Ideally, when you take an action, you move from some place with worse risk to somewhere more favourable, as shown in the diagram above.
+You can think of [Taking Action](/tags/Take-Action) as moving your project on a "[Risk Landscape](/tags/Risk-Landscape)".  Ideally, when you take an action, you move from some place with worse risk to somewhere more favourable, as shown in the diagram above.
 
 Now, that's easier said than done!  Sometimes, you can end up somewhere _worse_:  the action you took to manage a risk has made things worse.  Almost certainly, this will have been due to a hidden risk that you weren't aware of when you embarked on the action, otherwise you'd not have chosen it.  
 
@@ -74,11 +74,11 @@ One popular type of automation is [Unit Testing](/tags/Automated-Testing).  Writ
 
 On a previous project in a bank we had a requirement to store a modest amount of data and we needed to be able to retrieve it fast.  The developer chose to use [MongoDB](https://www.mongodb.com) for this.  At the time, others pointed out that other teams in the bank had had lots of difficulty deploying MongoDB internally, due to licensing issues and other factors internal to the bank.
 
-Other options were available, but the developer chose MongoDB because of their _existing familiarity_ with it:   therefore, they felt that the [Hidden Risks](/thinking/Glossary#hidden-risk) of MongoDB were _lower_ than the other options.
+Other options were available, but the developer chose MongoDB because of their _existing familiarity_ with it:   therefore, they felt that the [Hidden Risks](/tags/Hidden-Risk) of MongoDB were _lower_ than the other options.
 
 This turned out to be a mistake:  the internal bureaucracy eventually proved too great and MongoDB had to be abandoned after much investment of time.
 
-This is not a criticism of MongoDB: it's simply a demonstration that sometimes, the cure is worse than the disease.  Successful projects are _always_ trying to _reduce_ [Attendant Risks](/thinking/Glossary#attendant-risk).  
+This is not a criticism of MongoDB: it's simply a demonstration that sometimes, the cure is worse than the disease.  Successful projects are _always_ trying to _reduce_ [Attendant Risks](/tags/Attendant-Risk).  
 
 ## The Cost Of Meeting Reality
 
@@ -110,7 +110,7 @@ Activities like User Acceptance Testing (UAT) or incremental delivery give us so
 
 ## Trade-Offs
 
-Making a move on the [Risk Landscape](Glossary#risk-landscape) is about accepting a trade-off.  And the examples in this section are all classic software development trade-offs.  If you're an experienced software developer, you'll understand that any technology decision (whether it's unit testing, database choices or release processes - the examples we've seen here) means accepting a trade-off.  
+Making a move on the [Risk Landscape](/tags/Risk-Landscape) is about accepting a trade-off.  And the examples in this section are all classic software development trade-offs.  If you're an experienced software developer, you'll understand that any technology decision (whether it's unit testing, database choices or release processes - the examples we've seen here) means accepting a trade-off.  
 
 The Risk-First diagram gives us two things.  First, it makes this trade off clear:  what do I lose?  what do I gain? Second, by describing our trade-offs in terms of _risk_, we are also making clear the fact that up front, we're never certain whether the trade-off will be worth it.
 
@@ -118,9 +118,9 @@ The Risk-First diagram gives us two things.  First, it makes this trade off clea
 
 So, here we've looked at Meeting Reality, which basically boils down to taking actions to expose yourself to hidden risks and seeing how it turns out:
 
-- Each action you take is a step on the [Risk Landscape](/thinking/Glossary#risk-landscape), trading off one set of risks for another.
-- Each action exposes new [Hidden Risks](/thinking/Glossary#hidden-risk), changing your [Internal Model](/thinking/Glossary#internal-model).
-- Ideally, each action should reduce the overall [Attendant Risk](/thinking/Glossary#attendant-risk) on the project (that is, puts it in a better place on the [Risk Landscape](/thinking/Glossary#risk-landscape).
+- Each action you take is a step on the [Risk Landscape](/tags/Risk-Landscape), trading off one set of risks for another.
+- Each action exposes new [Hidden Risks](/tags/Hidden-Risk), changing your [Internal Model](/tags/Internal-Model).
+- Ideally, each action should reduce the overall [Attendant Risk](/tags/Attendant-Risk) on the project (that is, puts it in a better place on the [Risk Landscape](/tags/Risk-Landscape).
 
 Could it be that _everything_ you do on a software project is risk management? This is an idea explored next in [Just Risk](Just-Risk).
 

@@ -73,7 +73,7 @@ Metrics are difficult though.  Choosing the _right_ metrics, knowing their weakn
 
 ### Health as Critical Acclaim
 
-Measuring fitness as you go along is not always possible.  For a lot of projects, like dinner parties, films or construction projects, the success or failure has to be judged subjectively on completion, and not before.  Essentially, the project is a [bet](Glossary#bet) on a future outcome. 
+Measuring fitness as you go along is not always possible.  For a lot of projects, like dinner parties, films or construction projects, the success or failure has to be judged subjectively on completion, and not before.  Essentially, the project is a [bet](/tags/Bet) on a future outcome. 
 
 Building a new feature on a software project fits into this category:  although you can build tests, do demos and run beta-test programmes the full picture of the health of what you've built won't emerge until later.  
 

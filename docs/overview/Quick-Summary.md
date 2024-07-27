@@ -25,11 +25,11 @@ A key question then is: **how do we select the right tools for the job?**
 
 ## 2.  We Can Look at Projects in Terms of Risks
 
-One way to examine the project in-flight is by looking at the [risks](/thinking/Glossary#risk) it faces. 
+One way to examine the project in-flight is by looking at the [risks](/tags/Risk) it faces. 
 
 Commonly, tools such as [RAID logs](https://www.projectmanager.com/blog/raid-log-use-one) and [RAG status](https://pmtips.net/blog-new/what-does-rag-status-mean) reporting are used.  These techniques should be familiar to project managers and developers everywhere.   
 
-However, the Risk-First view is that we can go much further:  that each item of work being done on the project is to manage a particular risk.  [Risk](/thinking/Glossary#risk) isn't something that just appears in a report, it actually drives *everything we do*.  
+However, the Risk-First view is that we can go much further:  that each item of work being done on the project is to manage a particular risk.  [Risk](/tags/Risk) isn't something that just appears in a report, it actually drives *everything we do*.  
 
 For example:
 
@@ -37,7 +37,7 @@ For example:
 - A task about improving the health indicators could be seen as mitigating _the risk of the application failing and no-one reacting to it_. 
 - Even a task as basic as implementing a new function in the application is mitigating _the risk that users are dissatisfied and go elsewhere_.  
 
-One assertion of Risk-First is that **every action you take on a project is to manage a [risk](/thinking/Glossary#risk).**
+One assertion of Risk-First is that **every action you take on a project is to manage a [risk](/tags/Risk).**
 
 ## 3.  We Can Break Down Risks on a Project Methodically
 
@@ -54,7 +54,7 @@ Software risks are difficult to quantify and mostly the effort involved in doing
 With this in place, we can:
 
 - Talk about the types of risks we face on our projects, using an appropriate language.
-- Anticipate [Hidden Risks](/thinking/Glossary#hidden-risk) that we hadn't considered before.
+- Anticipate [Hidden Risks](/tags/Hidden-Risk) that we hadn't considered before.
 - Weigh the risks against each other and decide which order to tackle them.   
 
 ## 4.  We Can Analyse Tools and Techniques in Terms of how they Manage Risk

@@ -18,8 +18,8 @@ Although protocols can sometimes handle security features of communication (such
  
 Even if the **receiver** trusts the **sender**, they may not _believe_ the message.  Let's look at some reasons for that:
 
-- **[Weltanschauung (World View)](https://en.wikipedia.org/wiki/World_view)**: the ethics, values and beliefs in the receiver's [Internal Model](/thinking/Glossary#internal-model) may be incompatible to those from the sender.
+- **[Weltanschauung (World View)](https://en.wikipedia.org/wiki/World_view)**: the ethics, values and beliefs in the receiver's [Internal Model](/tags/Internal-Model) may be incompatible to those from the sender.
 - **[Relativism](https://en.wikipedia.org/wiki/Relativism)** is the concept that there are no universal truths.  Every truth is from a frame of reference.  For example, what constitutes _offensive language_ is dependent on the listener.
 - **[Psycholinguistics](https://en.wikipedia.org/wiki/Psycholinguistics)** is the study of how humans acquire languages.  There are different languages, dialects, and _industry dialects_.  We all understand language in different ways, take different meanings and apply different contexts to the messages.
   
-From the point-of-view of [Marketing Communications](Communication-Risk#marketing-communications), choosing the right message is part of the battle.  You are trying to communicate your idea in such a way as to mitigate Trust & Belief Risk.
+From the point-of-view of [Marketing Communications](/risks/Channel-Risk#marketing-communications), choosing the right message is part of the battle.  You are trying to communicate your idea in such a way as to mitigate Trust & Belief Risk.

@@ -55,7 +55,7 @@ Let's look at an example.  In a financial context (or a gambling one), we can co
 
 Risk Management in the finance industry _starts_ here and gets more complex.  But often (especially on a software project), it's better to skip all this and just estimate a Risk Score.  This is because if you think about "impact", it implies a definite, discrete event occurring (or not occurring) and asks you then to consider the probability of that. 
 
-So the second point to take away is - what is exactly happening when we set the priority of items in our backlog?  Are we arranging them by **Impact**, **Probability**, **Risk Score** or are we looking also at the [action we would take](Glossary#taking-action) and factoring in the [Payoff](Glossary#payoff)?  
+So the second point to take away is - what is exactly happening when we set the priority of items in our backlog?  Are we arranging them by **Impact**, **Probability**, **Risk Score** or are we looking also at the [action we would take](/tags/Take-Action) and factoring in the [Payoff](/tags/Payoff)?  
 
 We'll come back to this in a minute.
 
@@ -83,7 +83,7 @@ Much more likely, it will have a field for _priority_, or allow the ordering of 
 
  - When someone says "this should be low priority as it's very unlikely to occur" then they're making a statement about **Probability**. 
  - When someone says "this should be low priority because no one is going to care if we fix it" then they're making a statement about **Impact**.
- - When someone says "this should be high priority as its a quick win" then maybe they're talking about [Payoff](Glossary#payoff).
+ - When someone says "this should be high priority as its a quick win" then maybe they're talking about [Payoff](/tags/Payoff).
 
 ## Visualising Risks
 
@@ -95,7 +95,7 @@ Risks at the bottom or left side of the diagram are candidates for being ignored
 
 ## Incorporating Payoff
 
-The diagram above is _helpful_ in deciding what to focus on next, but it doesn't consider [Payoff](/thinking/Glossary#payoff).  The reason for this is that up until this point, we've been tracking risks but not necessarily figuring out what to do about them.   Quite often when I raise an issue on a project I will also include the details of the fix for that issue, or maybe I'll _only_ include the details of the fix.    
+The diagram above is _helpful_ in deciding what to focus on next, but it doesn't consider [Payoff](/tags/Payoff).  The reason for this is that up until this point, we've been tracking risks but not necessarily figuring out what to do about them.   Quite often when I raise an issue on a project I will also include the details of the fix for that issue, or maybe I'll _only_ include the details of the fix.    
 
 For example, let's say I raise an issue saying that I want a button to sort an access control list by the surnames of the users in the list.  What am I really getting at here?   This could be a solution to the problem that _I'm wasting time looking for users in a list_.  Alternatively, it could be trying to solve the problem that _I'm struggling to keep the right people on the list_.  Or maybe both.  The risk of the former is around wasted time (for me) but the risk of the latter might be a security risk and might be higher priority.  
 
@@ -113,14 +113,14 @@ _Really good design_ would be coming up with a course of action that takes care 
 
 One of the criticisms of the [Risk Register](Track-Risk#risk-registers) approach is that of [mistaking the map for the territory](/tags/Map-And-Territory-Risk).  That is, mistakenly believing that what's on the Risk Register _is all there is_.  
 
-In the preceding discussions, I have been careful to point out the existence of [Hidden Risks](/thinking/Glossary#hidden-risk) for that very reason. Or, to put another way:
+In the preceding discussions, I have been careful to point out the existence of [Hidden Risks](/tags/Hidden-Risk) for that very reason. Or, to put another way:
 
 > "What we don't know is what usually gets us killed" - [Petyr Baelish, _Game of Thrones_](https://medium.com/@TanyaMardi/petyr-baelishs-best-quotes-on-game-of-thrones-1ea92968db5c)
 
 Donald Rumsfeld's famous [Known Knowns](https://en.wikipedia.org/wiki/There_are_known_knowns) is also a helpful conceptualisation:  
 
- - **A _known_ unknown** is an [Attendant Risk](/thinking/Glossary#attendant-risk).  i.e. something you are aware of, but where the precise degree of threat can't be established.
- - **An _unknown_ unknown** is a [Hidden Risk](/thinking/Glossary#hidden-risk). i.e a risk you haven't even thought to exist yet.
+ - **A _known_ unknown** is an [Attendant Risk](/tags/Attendant-Risk).  i.e. something you are aware of, but where the precise degree of threat can't be established.
+ - **An _unknown_ unknown** is a [Hidden Risk](/tags/Hidden-Risk). i.e a risk you haven't even thought to exist yet.
 
 ## Out of the Window
 

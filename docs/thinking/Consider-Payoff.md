@@ -90,7 +90,7 @@ One final note on sizing bets:  [The Kelly Criterion](https://en.wikipedia.org/w
 
 In the film [The Martian](https://www.imdb.com/title/tt3659388), NASA scientists are trying to decide the best way to recover a stranded Matt Damon from the surface of Mars, where he'd been lost and presumed dead.  In order to get a $500 million dollar supply probe out to Mars in a hurry, Jeff Daniels' character, Teddy, the director of NASA, decides to skip the testing phase and predictably, the probe explodes during launch.  The whole sequence is there to demonstrate the _incompetence_ of Teddy as a risk manager.  And while he's putatively on their team,  Teddy is the film's antagonist: the other characters are constantly fighting against his poor risk management skills to get the job done. 
 
-While this fictional, it is a great example of going "All In" and risking everything on a short-term technical bet.  Yes, the [Payoff](Glossary#payoff) would have been great if this had worked, but the stakes were very high and the probability of success was really low.  Don't be Teddy.
+While this fictional, it is a great example of going "All In" and risking everything on a short-term technical bet.  Yes, the [Payoff](/tags/Payoff) would have been great if this had worked, but the stakes were very high and the probability of success was really low.  Don't be Teddy.
 
 :::
 
@@ -118,13 +118,13 @@ The idea makes sense:  if you take on extra work that you don't need, _of course
 
 But, there is always the opposite opinion:  [You _Are_ Gonna Need It](http://wiki.c2.com/?YouAreGonnaNeedIt).  As a simple example, we often add log statements in our code as we write it (so we can trace what happened when things go wrong), though following YAGNI strictly says we shouldn't.  
 
-So which is right?  We should conclude that we do the work _if there is a worthwhile [Payoff](/thinking/Glossary#payoff)_.  
+So which is right?  We should conclude that we do the work _if there is a worthwhile [Payoff](/tags/Payoff)_.  
 
  - Logging statements are _good_, because otherwise, you're increasing the risk that in production, no one will be able to understand [how the software went wrong](/tags/Invisibility-Risk).
  - However, adding them takes time, which might [risk us not hitting our schedule](/tags/Schedule-Risk).
  - Also, we have to manage larger log files on our production systems.  _Too much logging_ is just noise, and makes it harder to figure out what went wrong.  This increases the risk that our software is [less transparent in how it works](/tags/Complexity-Risk).
  
-So, it's a trade-off: continue adding logging statements so long as you feel that overall, the activity [pays off](/thinking/Glossary#payoff) reducing overall risk.
+So, it's a trade-off: continue adding logging statements so long as you feel that overall, the activity [pays off](/tags/Payoff) reducing overall risk.
 
 ### Example 2: Over-Engineering
 
@@ -207,13 +207,13 @@ It's important to reflect on the fact that there are other factors at play here:
   </tr>
 </table>
   
-With that caveat aside, it should be clear that the way to escape the over-engineering trap is to think hard about [Expected Value](Glossary#expected-value).   The above table tries to capture the difference in [Expected Value](Glossary#expected-value) between "Doing it Now" versus having the _option to_ "Do it Later".   
+With that caveat aside, it should be clear that the way to escape the over-engineering trap is to think hard about [Expected Value](/tags/Expected-Value).   The above table tries to capture the difference in [Expected Value](/tags/Expected-Value) between "Doing it Now" versus having the _option to_ "Do it Later".   
 
 There is no hard and fast right answer here.  Sometimes, it is correct to strive for 100% coverage or polish the code factorisation.  But hopefully thinking about the choice in terms of these two alternatives is helpful.
 
 ### Example 3: "Do The Simplest Thing That Could Possibly Work"
 
-The previous example applied [Expected Value](Glossary#expected-value) to avoid over-engineering.  Let's now consider an example of where [Expected Value](Glossary#expected-value) suggests we do _more_ work.
+The previous example applied [Expected Value](/tags/Expected-Value) to avoid over-engineering.  Let's now consider an example of where [Expected Value](/tags/Expected-Value) suggests we do _more_ work.
 
 Another mantra from Kent Beck (originator of the [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) methodology), is "Do The Simplest Thing That Could Possibly Work", which is closely related to YAGNI and is an excellent razor for avoiding over-engineering.  
 
@@ -221,27 +221,27 @@ At the same time, by adding "Could Possibly", Beck is encouraging us to go beyon
 
 Our risk-centric view of this strategy would be:
 
-- Every action you take on a project has its own [Attendant Risks](/thinking/Glossary#attendant-risk).
-- The bigger or more complex the action, the more [Attendant Risk](/thinking/Glossary#attendant-risk) it'll have.
+- Every action you take on a project has its own [Attendant Risks](/tags/Attendant-Risk).
+- The bigger or more complex the action, the more [Attendant Risk](/tags/Attendant-Risk) it'll have.
 - The reason you're taking action _at all_ is because you're trying to reduce risk elsewhere on the project.
-- Therefore, the best [Expected Value](Glossary#expected-value) is likely to be the action with the least [Attendant Risk](/thinking/Glossary#attendant-risk).
+- Therefore, the best [Expected Value](/tags/Expected-Value) is likely to be the action with the least [Attendant Risk](/tags/Attendant-Risk).
 - So, usually this is going to be the simplest thing.
 
 So, "Do The Simplest Thing That Could Possibly Work" is really a helpful guideline for Navigating the [Risk Landscape](/risks/Risk-Landscape), but this analysis shows clearly where it's left wanting:
 
- - _Don't_ do the simplest thing if there are other things with a better [Expected Value](/thinking/Glossary#expected-value) available.
+ - _Don't_ do the simplest thing if there are other things with a better [Expected Value](/tags/Expected-Value) available.
 
 An example of where this might be the case, think about how you might write a big, complex function (for example, processing interest accrual on a loan).  The _simplest thing_ might be to just write a single function and a few unit tests for it.  However, a slightly _less simple thing_ that would work might be to decompose the function into multiple steps, each with its own unit tests.  Perhaps you might have a step which calculates the number of days where interest is due (working days, avoiding bank holidays), another step that considers repayments, a step that works out different interest rates and so on.   
 
 ![Different payoff for doing the simplest thing vs something slightly less simple with more effort](/img/generated/introduction/risk_landscape_4_simplest.svg)
 
-Functional decomposition and extra testing might not be the _simplest thing_, but it might reduce risks in other ways - making the code easier to understand, easier to test and easier to modify in the future.  So deciding up-front to accept this extra complexity and effort in exchange for the other benefits might seem like a better [Payoff](/thinking/Glossary#payoff) than the simplest thing. 
+Functional decomposition and extra testing might not be the _simplest thing_, but it might reduce risks in other ways - making the code easier to understand, easier to test and easier to modify in the future.  So deciding up-front to accept this extra complexity and effort in exchange for the other benefits might seem like a better [Payoff](/tags/Payoff) than the simplest thing. 
  
 ### Example 4: Continue Testing or Release?
 
 You're on a project and you're faced with the decision - release now or do more User Acceptance Testing (UAT)?  
 
-Obviously, in the ideal world, we want to get to the place on the [Risk Landscape](/thinking/Glossary#risk-landscape) where we have a tested, bug-free system in production.  But we're not there yet, and we have funding pressure to get the software into the hands of some paying customers.  But what if we disappoint the customers and create bad feeling?   The table below shows an example: 
+Obviously, in the ideal world, we want to get to the place on the [Risk Landscape](/tags/Risk-Landscape) where we have a tested, bug-free system in production.  But we're not there yet, and we have funding pressure to get the software into the hands of some paying customers.  But what if we disappoint the customers and create bad feeling?   The table below shows an example: 
 
 |Risk Managed          |Action                       |Attendant Risk                           |Payoff             | 
 |----------------------|-----------------------------|-----------------------------------------|-------------------|
@@ -250,7 +250,7 @@ Obviously, in the ideal world, we want to get to the place on the [Risk Landscap
 
 This is (a simplification of) the dilemma of lots of software projects - _test further_, to reduce the risk of users discovering bugs ([Implementation Risk](/tags/Implementation-Risk)) which would cause us reputational damage, or _get the release done_ and reduce our [Funding Risk](/tags/Funding-Risk) by getting paying clients sooner. 
 
-Lots of software projects end up in a phase of "release paralysis" - wanting things to be perfect before you show them to customers.  But sometimes this places too much emphasis on preserving reputation over getting paying customers.  Also, getting real customers is [meeting reality](Glossary#meet-reality) and will probably surface new [hidden risks](Glossary#hidden-risk) that are missing from the analysis.  
+Lots of software projects end up in a phase of "release paralysis" - wanting things to be perfect before you show them to customers.  But sometimes this places too much emphasis on preserving reputation over getting paying customers.  Also, getting real customers is [meeting reality](/tags/Meeting-Reality) and will probably surface new [hidden risks](/tags/Hidden-Risk) that are missing from the analysis.  
 
 ## Manipulating The Payoff
 

@@ -24,7 +24,7 @@ Since staff are a scarce resource, it stands to reason that if a startup has a "
   
 You need to consider how long your staff are going to be around, especially if you have [Key Person Risk](https://en.wikipedia.org/wiki/Key_person_insurance#Key_person_definition) on some of them.  <!-- tweet-end -->People like to have new challenges, move on to live in new places, or simply get bored.  Replacing staff can be highly risky.
 
-The longer your project goes on for, the more [Staff Risk](Scarcity-Risk#staff-risk) you will have to endure, and you can't rely on getting the [best staff for failing projects](/tags/Agency-Risk).
+The longer your project goes on for, the more [Staff Risk](/tags/Staff-Risk) you will have to endure, and you can't rely on getting the [best staff for failing projects](/tags/Agency-Risk).
 
 ### Student Syndrome
 
@@ -36,4 +36,4 @@ Arguably, there is good psychological, evolutionary and risk-based reasoning beh
 
 Or at least, that's the argument:  if you're [Discounting the Future To Zero](/thinking/Evaluating-Risk) then you'll be pulling all-nighters in order to deliver any assignment.   
 
-So, the problem with [Student Syndrome](#student-syndrome) is that the _very mitigation_ for [Schedule Risk](/tags/Schedule-Risk) (allowing more time) is an [Attendant Risk](/thinking/Glossary#attendant-risk) that _causes_ [Schedule Risk](/tags/Schedule-Risk):   you'll work within the more generous time allocation more slowly and you'll end up revealing [Hidden Risk](/thinking/Glossary#hidden-risk) _later_.  And, discovering these hidden risks later causes you to end up being late because of them.
+So, the problem with [Student Syndrome](#student-syndrome) is that the _very mitigation_ for [Schedule Risk](/tags/Schedule-Risk) (allowing more time) is an [Attendant Risk](/tags/Attendant-Risk) that _causes_ [Schedule Risk](/tags/Schedule-Risk):   you'll work within the more generous time allocation more slowly and you'll end up revealing [Hidden Risk](/tags/Hidden-Risk) _later_.  And, discovering these hidden risks later causes you to end up being late because of them.

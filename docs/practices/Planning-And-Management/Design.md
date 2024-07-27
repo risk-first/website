@@ -47,7 +47,7 @@ Architecture / Design in software development involves creating the high-level s
 Design is what you do every time you think of an action to mitigate a risk.  And **Big Design Up Front** is where you do a lot of it in one go, for example:
 
  - Where you think about the design of all (or a set of) the requirements in one go, in advance.
- - Where you consider a _set of [Attendant Risks](/thinking/Glossary#attendant-risk)_ all at the same time.
+ - Where you consider a _set of [Attendant Risks](/tags/Attendant-Risk)_ all at the same time.
  
 Compare with "little" design, where we consider just the _next_ requirement, or the _most pressing_ risk. 
  
@@ -59,7 +59,7 @@ As we saw in [Meet Reality](/thinking/Meeting-Reality), "Navigating the [Risk La
 
 But the problem with this is you can get trapped in a [Local Minima](https://en.wikipedia.org/wiki/Maximum_and_minimum#Search), where there are _no_ easy steps to take to get you to where you want to be.  
 
-In these cases, you have to _widen your horizon_ and look at where you want to go:  and this is the process of _design_.  You're not necessarily now taking steps on the [Risk Landscape](/risks/Risk-Landscape), but imagining a place on the [Risk Landscape](/risks/Risk-Landscape) where you want to be, and checking it against your [Internal Model](/thinking/Glossary#internal-model) for validity.
+In these cases, you have to _widen your horizon_ and look at where you want to go:  and this is the process of _design_.  You're not necessarily now taking steps on the [Risk Landscape](/risks/Risk-Landscape), but imagining a place on the [Risk Landscape](/risks/Risk-Landscape) where you want to be, and checking it against your [Internal Model](/tags/Internal-Model) for validity.
 
 
 ## See Also

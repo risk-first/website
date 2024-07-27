@@ -10,7 +10,8 @@ tags:
  - Hidden Risk
  - Meeting Reality
  - Risk
- 
+ - Upside Risk
+
 definitions:
  - name: Attendant Risk
    description:  A Risk you expect to face as the result of Taking Action.
@@ -42,53 +43,53 @@ For a moment, forget about software completely and think about _any endeavour at
 
 ## Goal In Mind
 
-Now, in this endeavour, we want to be successful.  That is to say, we have a **[Goal](/thinking/Glossary#goal)** in mind:  we want our friends to go home satisfied after a decent meal and not to feel hungry.   As a bonus, we might also want to spend time talking with them before and during the meal.  So, now to achieve our [Goal](/thinking/Glossary#goal) we *probably* have to do some tasks.  
+Now, in this endeavour, we want to be successful.  That is to say, we have a **[Goal](/tags/Goal)** in mind:  we want our friends to go home satisfied after a decent meal and not to feel hungry.   As a bonus, we might also want to spend time talking with them before and during the meal.  So, now to achieve our [Goal](/tags/Goal) we *probably* have to do some tasks.  
 
-Since our goal only exists _in our head_, we can say it is part of our **[Internal Model](/thinking/Glossary#internal-model)** of the world.  That is, the model we have of reality.  This model extends to _predicting what will happen_.
+Since our goal only exists _in our head_, we can say it is part of our **[Internal Model](/tags/Internal-Model)** of the world.  That is, the model we have of reality.  This model extends to _predicting what will happen_.
 
 If we do nothing, our friends will turn up and maybe there's nothing in the house for them to eat.   Or maybe, the thing that you're going to cook is going to take hours and they'll have to sit around and wait for you to cook it and they'll leave before it's ready.  Maybe you'll be some ingredients short, or maybe you're not confident of the steps to prepare the meal and you're worried about messing it all up.  
 
 ## Attendant Risks
 
-These _nagging doubts_ that are going through your head are what I'll call the [Attendant Risks](/thinking/Glossary#attendant-risk):  they're the ones that will occur to you as you start to think about what will happen. 
+These _nagging doubts_ that are going through your head are what I'll call the [Attendant Risks](/tags/Attendant-Risk):  they're the ones that will occur to you as you start to think about what will happen. 
 
 ![Goal, with the risks you know about](/img/generated/introduction/goal_in_mind.svg)
 
 When we go about preparing for this wonderful evening, we can choose to deal with these risks:  shop for the ingredients in advance, prepare parts of the meal and maybe practice the cooking in advance.  Or, we can wing it and sometimes we'll get lucky.
 
-How much effort we expend on these [Attendant Risks](/thinking/Glossary#attendant-risk) depends on how big we think they are.  For example, if you know there's a 24-hour shop, you'll probably not worry too much about getting the ingredients well in advance (although, the shop _could still be closed_).
+How much effort we expend on these [Attendant Risks](/tags/Attendant-Risk) depends on how big we think they are.  For example, if you know there's a 24-hour shop, you'll probably not worry too much about getting the ingredients well in advance (although, the shop _could still be closed_).
 
 ## Hidden Risks
 
-[Attendant Risks](/thinking/Glossary#attendant-risk) are risks you are aware of.  You may not be able to exactly _quantify_ them, but you know they exist.  But there are also **[Hidden Risks](/thinking/Glossary#attendant-risk)** that you _don't_ know about: if you're poaching eggs for dinner, perhaps you didn't know that fresh eggs poach best.  Donald Rumsfeld famously called these kinds of risks "Unknown Unknowns":
+[Attendant Risks](/tags/Attendant-Risk) are risks you are aware of.  You may not be able to exactly _quantify_ them, but you know they exist.  But there are also **[Hidden Risks](/tags/Attendant-Risk)** that you _don't_ know about: if you're poaching eggs for dinner, perhaps you didn't know that fresh eggs poach best.  Donald Rumsfeld famously called these kinds of risks "Unknown Unknowns":
 
 > "Reports that say that something hasn't happened are always interesting to me, because as we know, there are known knowns; there are things we know we know. We also know there are known unknowns; that is to say we know there are some things we do not know. But there are also unknown unknowns—the ones we don't know we don't know. And if one looks throughout the history of our country and other free countries, it is the latter category that tend to be the difficult ones." - [Donald Rumsfeld, _Wikipedia_](https://en.wikipedia.org/wiki/There_are_known_knowns)
 
 ![Goal, the risks you know about and the ones you don't](/img/generated/introduction/hidden_risks.svg)
 
-Different people evaluate risks differently and they'll also _know_ about different risks.  What is an [Attendant Risk](/thinking/Glossary#attendant-risk) for one person is a [Hidden Risk](/thinking/Glossary#attendant-risk) for another.     
+Different people evaluate risks differently and they'll also _know_ about different risks.  What is an [Attendant Risk](/tags/Attendant-Risk) for one person is a [Hidden Risk](/tags/Attendant-Risk) for another.     
 
 Which risks we know about depends on our **knowledge** and **experience**, then. <!-- tweet-end --> And that varies from person to person (or team to team).  
 
 ## Taking Action and Meeting Reality
 
-As the dinner party gets closer, we make our preparations and the inadequacies of the [Internal Model](/thinking/Glossary#internal-model) become apparent.  We learn what we didn't know and the [Hidden Risks](/thinking/Glossary#hidden-risk) reveal themselves.  Other things we were worried about don't materialise.  Things we thought would be minor risks turn out to be greater.   
+As the dinner party gets closer, we make our preparations and the inadequacies of the [Internal Model](/tags/Internal-Model) become apparent.  We learn what we didn't know and the [Hidden Risks](/tags/Hidden-Risk) reveal themselves.  Other things we were worried about don't materialise.  Things we thought would be minor risks turn out to be greater.   
 
 ![How Taking Action affects Reality, and also changes your Internal Model](/img/generated/introduction/model_vs_reality.svg)
 
 Our model is forced to [Meet Reality](/tags/Meeting-Reality), and the model changes,  forcing us to deal with these risks, as shown in the diagram above.  
 
-In Risk-First, whenever we try to _do something_ about a risk, it is called [Taking Action](/thinking/Glossary#taking-action).  [Taking Action](/thinking/Glossary#taking-action) _changes_ reality, and with it your [Internal Model](/thinking/Glossary#internal-model) of the risks you're facing.  That's because it's only by interacting with the world that we add knowledge to our [Internal Model](/thinking/Glossary#internal-model) about what works and what doesn't.  Even something as passive as _checking the shop opening times_ is an action, and it improves on our [Internal Model](/thinking/Glossary#internal-model) of the world.
+In Risk-First, whenever we try to _do something_ about a risk, it is called [Taking Action](/tags/Take-Action).  [Taking Action](/tags/Take-Action) _changes_ reality, and with it your [Internal Model](/tags/Internal-Model) of the risks you're facing.  That's because it's only by interacting with the world that we add knowledge to our [Internal Model](/tags/Internal-Model) about what works and what doesn't.  Even something as passive as _checking the shop opening times_ is an action, and it improves on our [Internal Model](/tags/Internal-Model) of the world.
 
-If we had a good [Internal Model](/thinking/Glossary#internal-model) and [took the right actions](/thinking/Glossary#taking-action), we should see positive outcomes.  If we failed to manage the risks, or took inappropriate actions, we'll probably see negative outcomes.
+If we had a good [Internal Model](/tags/Internal-Model) and [took the right actions](/tags/Take-Action), we should see positive outcomes.  If we failed to manage the risks, or took inappropriate actions, we'll probably see negative outcomes.
 
 ## Why The New Terms?
 
 I know that as a reader it's annoying to have to pick up new terminology.  So you'll be pleased to learn that there are just three de novo terms to learn in the whole [Thinking](Start) part of Risk First: 
 
- - [Internal Model](Glossary#internal-model): actually a term from financial risk management, which we'll be employing widely.  I'll expand on this in more detail in [Meeting Reality](Meeting-Reality).
- - [Meeting Reality](Glossary#meet-reality), which is the process of improving your [Internal Model](Glossary#internal-model).  This is a totally new term.
- - [Taking Action](Glossary#take-action) which we'll use as a general term to cover a whole range of specific techniques for dealing with risks.  We'll expand on this in [Derisking](De-Risking).
+ - [Internal Model](/tags/Internal-Model): actually a term from financial risk management, which we'll be employing widely.  I'll expand on this in more detail in [Meeting Reality](Meeting-Reality).
+ - [Meeting Reality](/tags/Meeting-Reality), which is the process of improving your [Internal Model](/tags/Internal-Model).  This is a totally new term.
+ - [Taking Action](/tags/Take-Action) which we'll use as a general term to cover a whole range of specific techniques for dealing with risks.  We'll expand on this in [Derisking](De-Risking).
 
 ## On To Software?
 

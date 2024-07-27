@@ -25,7 +25,7 @@ As shown in the above diagram, [Boundary Risk](/tags/Boundary-Risk) is the risk 
 - Although I eat cereals for breakfast, I don't have [Boundary Risk](/tags/Boundary-Risk) on them.  If the supermarket runs out of cereals when I go, I can just buy some other food and eat that.
 - However the hot water system in my house uses gas.  If that's not available I can't just switch to using oil or solar without cost.  There is [Boundary Risk](/tags/Boundary-Risk), but it's low because the supply of gas is plentiful and seems like it will stay that way.
 
-In terms of the [Risk Landscape](/risks/Risk-Landscape), [Boundary Risk](/tags/Boundary-Risk) is exactly as it says:  a _boundary_, _wall_ or other kind of obstacle in your way to making a move you want to make. <!-- tweet-end -->  This changes the nature of the [Risk Landscape](/thinking/Glossary#risk-landscape), and introduces a maze-like component to it.  It also means that we have to make _commitments_ about which way to go, knowing that our future paths are constrained by the decisions we make.
+In terms of the [Risk Landscape](/risks/Risk-Landscape), [Boundary Risk](/tags/Boundary-Risk) is exactly as it says:  a _boundary_, _wall_ or other kind of obstacle in your way to making a move you want to make. <!-- tweet-end -->  This changes the nature of the [Risk Landscape](/tags/Risk-Landscape), and introduces a maze-like component to it.  It also means that we have to make _commitments_ about which way to go, knowing that our future paths are constrained by the decisions we make.
 
 As we discussed in [Complexity Risk](/tags/Complexity-Risk), there is always the chance we end up at a [Dead End](/tags/Dead-End-Risk), having done work that we need to throw away.  In this case, we'll have to head back and make a different decision.
 
@@ -83,7 +83,7 @@ You can think of the ecosystem as being like the footprint of a town or a city, 
 
 Ecosystem size is one key determinant of [Boundary Risk](/tags/Boundary-Risk):
   
-- **A large ecosystem** has a large boundary circumference.  [Boundary Risk](/tags/Boundary-Risk) is lower in a large ecosystem because your moves on the [Risk Landscape](/thinking/Glossary#risk-landscape) are unlikely to collide with it.  The boundary _got large_ because other developers before you hit the boundary and did the work building the software equivalents of bridges and roads and pushing it back so that the boundary didn't get in their way.  
+- **A large ecosystem** has a large boundary circumference.  [Boundary Risk](/tags/Boundary-Risk) is lower in a large ecosystem because your moves on the [Risk Landscape](/tags/Risk-Landscape) are unlikely to collide with it.  The boundary _got large_ because other developers before you hit the boundary and did the work building the software equivalents of bridges and roads and pushing it back so that the boundary didn't get in their way.  
 - In **a small ecosystem**, you are much more likely to come into contact with the edges of the boundary.  _You_ will have to be the developer that pushes back the frontier and builds the roads for the others.  This is hard work.
 
 ### Big Ecosystems Get Bigger

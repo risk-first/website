@@ -97,7 +97,7 @@ Second, while you know ahead-of-time the chances of winning at roulette, you can
 
 Another question relating to this graph might be:  which firm is generating the most value?  Certainly, the area under the Berkshire Hathaway curve is larger but there is a bigger downside too.  Is it possible that Berkshire Hathaway generates more value while taking on more risk?
 
-When we consider buying a stock, we are going to build a model of the [balance of risks](/tags/Balance-Of-Risk) (perhaps on a spreadsheet, or in our heads).  This will be dependent on our own preferences and experience (our [Internal Model](/thinking/Glossary#internal-model) if you will).
+When we consider buying a stock, we are going to build a model of the [balance of risks](/tags/Balance-Of-Risk) (perhaps on a spreadsheet, or in our heads).  This will be dependent on our own preferences and experience (our [Internal Model](/tags/Internal-Model) if you will).
 
 ## Example 3: Cycling To Work
 
@@ -105,7 +105,7 @@ Gambling is all about winning _chips_, and buying stock is all about winning _mo
 
 ![Cycling To Work:  Distributions of Returns - Time and Health](/img/numbers/cycling-to-work.png)
 
-In the above chart, we have two risk profiles for cycling to work.  On the left, we have the time taken.  After a few week's cycling, we can probably start to build up a good [Internal Model](/thinking/Glossary#internal-model) of what this distribution looks like. 
+In the above chart, we have two risk profiles for cycling to work.  On the left, we have the time taken.  After a few week's cycling, we can probably start to build up a good [Internal Model](/tags/Internal-Model) of what this distribution looks like. 
 
 On the right, we have _health_.  There _isn't_ a good objective measure for this.  We might look at our weight, or resting heart-rate or something, or just generally have a good feeling that cycling is making us fitter.  Also, there's probably a worry about having an accident built into this (the steep drop on the left), and again, there is no objective measure for judging how badly that might come off.
 
@@ -117,7 +117,7 @@ So we have three issues with health:
 
 ## Back To Software
 
-So, we've gone from the Roulette Table example where the whole risk profile is completely known in advance to the Cycling example, where the risk profile is hidden from us, and unknowable.  Regardless, we will have our own [Internal Model](/thinking/Glossary#internal-model) of the balance of risks which we use to make judgement calls.
+So, we've gone from the Roulette Table example where the whole risk profile is completely known in advance to the Cycling example, where the risk profile is hidden from us, and unknowable.  Regardless, we will have our own [Internal Model](/tags/Internal-Model) of the balance of risks which we use to make judgement calls.
 
 Just as a decision over how fast to cycle to work changes the [balance of risk](/tags/Balance-Of-Risk), the actions and decisions we make in software development do too.  
 
@@ -134,7 +134,7 @@ Let's go back to our original cases:
  - If I decide to **suspend the current sprint** to fix an outage, then that’s because I’ve decided that the risk of lost business, or the damage to reputation is much greater than the risk of customers walking because we didn’t complete the planned features.  
 - When the Agile Manifesto stresses **Individuals and Interactions over Processes and Tools**, it’s because it believes focusing on processes and tools leads to much greater risk.  This is based on the experience that while focusing on individuals and interactions may appear to be a less efficient way to build software, following strict formal processes massively increases the much worse risk of [building the wrong product](/tags/Feature-Fit-Risk). 
 - When we argue for **fixing technical debt against shipping a new feature**, what we are really doing is expressing differences in our models of the [balance of risk](/tags/Balance-Of-Risk) from taking these actions.   My boss and I might both be trying to minimise the risk of customers defecting to another product but he might believe this is best achieved by [adding new features](/tags/Feature-Risk) in the short term, whilst I might believe that [clearing technical debt](/risks/Complexity-Risk#technical-debt) allows us to get features delivered faster in the long term.
-- In the example of **Sustainably vs Quickly**, it's clear that what we should be doing is trying to avoid altering the balance of risks in a way that sacrifices too much Sustainability or Speed.  To do this requires judgement in the form of an accurate [Internal Model](/thinking/Glossary#internal-model) of the [balance of risks](/tags/Balance-Of-Risk).
+- In the example of **Sustainably vs Quickly**, it's clear that what we should be doing is trying to avoid altering the balance of risks in a way that sacrifices too much Sustainability or Speed.  To do this requires judgement in the form of an accurate [Internal Model](/tags/Internal-Model) of the [balance of risks](/tags/Balance-Of-Risk).
 
 ### Other Scenarios
 
@@ -142,7 +142,7 @@ In a way, this is not just about development teams.  Any time a person is added 
  
  - The Finance team are there to avoid the risk of [running out of money](/tags/Funding-Risk) and ensuring that the bills get paid (avoiding [Legal Risks](/tags/Operational-Risk)).
  - The Human Resources team are there to make sure staff are hired, managed and leave properly.  Doing this avoids [inefficiency](/tags/Schedule-Risk), [Reputation Damage](/tags/Trust-And-Belief-Risk), [Morale Issues](/risks/Agency-Risk#morale-failure) and [Legal Risks](/tags/Operational-Risk).
- - The best doctors have accurate [Internal Models](/thinking/Glossary#internal-model). They can best diagnose the illnesses and figure out treatments that improve the patient's [balance of risk](/tags/Balance-Of-Risk).  Medical Students are all taught to 'first, do no harm':
+ - The best doctors have accurate [Internal Models](/tags/Internal-Model). They can best diagnose the illnesses and figure out treatments that improve the patient's [balance of risk](/tags/Balance-Of-Risk).  Medical Students are all taught to 'first, do no harm':
 
 > "given an existing problem, it may be better not to do something, or even to do nothing, than to risk causing more harm than good." - [Primum non nocere, _Wikipedia_](https://en.wikipedia.org/wiki/Primum_non_nocere).
 

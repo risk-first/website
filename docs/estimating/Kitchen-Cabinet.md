@@ -77,7 +77,7 @@ Let's assume that the exponential distribution _does_ model software development
 
 With any estimate, there are risks in both under- and over- estimating: 
 
- - **Too Long**: In estimating too much time,  you might not be given the work or your business might [miss the opportunity in the marketplace](/risks/Scarcity-Risk#opportunity-risk).  A too cautious risk might doom a potentially successful project before it has even started.
+ - **Too Long**: In estimating too much time,  you might not be given the work or your business might [miss the opportunity in the marketplace](/tags/Market-Risk).  A too cautious risk might doom a potentially successful project before it has even started.
 
  - **Too Short**: If you estimate too little time, you might miss important coordinating dates with your marketing team, or miss the Christmas window, or run out of "runway".  
 

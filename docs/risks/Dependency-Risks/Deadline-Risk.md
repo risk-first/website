@@ -27,7 +27,7 @@ In the first example, you can't _start_ something until a particular event happe
 
 ## Events Mitigate Risk...
 
-Having an event occur in a fixed time and place is [mitigating risk](/thinking/Glossary#mitigated-risk):
+Having an event occur in a fixed time and place is [mitigating risk](/tags/Mitigated-Risk):
 
 - By taking the bus, we are mitigating our own [Schedule Risk](/tags/Schedule-Risk):  we're (hopefully) reducing the amount of time we're going to spend on the activity of getting to work.  It's not entirely necessary to even take the bus:  you could walk, or go by another form of transport.  But, effectively, this just swaps one dependency for another:  if you walk, this might well take longer and use more energy, so you're just picking up [Schedule Risk](/tags/Schedule-Risk) in another way.
 - Events are a mitigation for [Coordination Risk](/tags/Coordination-Risk): a bus needn't necessarily _have_ a fixed timetable. It could wait for each passenger until they turned up, and then go.  (A bit like ride-sharing works).  This would be a total disaster from a [Coordination Risk](/tags/Coordination-Risk) perspective, as one person could cause everyone else to be really really late.  
@@ -37,7 +37,7 @@ Having an event occur in a fixed time and place is [mitigating risk](/thinking/G
 
 ![Action Diagram showing risks mitigated by having an _event_](/img/generated/risks/deadline/dependency-risk-event.svg)
 
-By _deciding to use the bus_ we've [Taken Action](/thinking/Glossary#taking-action).  By agreeing a _time_ and _place_ for something to happen (creating an _event_, as shown in the diagram above), you're introducing [Deadline Risk](/tags/Deadline-Risk).  Miss the deadline, and you miss the bus.
+By _deciding to use the bus_ we've [Taken Action](/tags/Take-Action).  By agreeing a _time_ and _place_ for something to happen (creating an _event_, as shown in the diagram above), you're introducing [Deadline Risk](/tags/Deadline-Risk).  Miss the deadline, and you miss the bus.
 
 As discussed above, _schedules_ (such as bus timetables) exist so that _two or more parties can coordinate_<!-- tweet-end -->, and [Deadline Risk](/tags/Deadline-Risk) is on _all_ of the parties.  While there's a risk I am late, there's also a risk the bus is late.  I might miss the start of a concert, or the band might keep everyone waiting.
 

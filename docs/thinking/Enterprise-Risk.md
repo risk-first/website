@@ -46,7 +46,7 @@ A great example of risk appetite is [Meta (née Facebook)](https://www.meta.com)
 
 > "The objectives must exist before management can identify potential events that affect its achievement." - [_Wikipedia_](https://en.wikipedia.org/wiki/Committee_of_Sponsoring_Organizations_of_the_Treadway_Commission#Eight_frame_components)
 
-There are not many organisations that simply allow their staff to turn up and do what they like and in larger firms objectives are usually "cascaded down" from the top of the firm.  Conversely, in the small, our [dinner party example](/thinking/A-Simple-Scenario) requires that there is a [goal](/thinking/Glossary#goal) before we can consider the risks to that goal!  
+There are not many organisations that simply allow their staff to turn up and do what they like and in larger firms objectives are usually "cascaded down" from the top of the firm.  Conversely, in the small, our [dinner party example](/thinking/A-Simple-Scenario) requires that there is a [goal](/tags/Goal) before we can consider the risks to that goal!  
 
 In the [Health](/thinking/Health) chapter we looked at how _surviving and thriving_ become an objective of the organisation too.  (TBD more here  EXAMPLE)
 

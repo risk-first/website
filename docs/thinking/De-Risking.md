@@ -9,6 +9,7 @@ featured:
 tags:
  - Take Action
  - Risk Landscape
+ - Upside Risk
 definitions:
  - name: Take Action
    description: Refers to any activity in the project. Actions are taken in order to manage some risk. At the same time, Taking Action usually means interacting with reality and updating the Internal Model.
@@ -21,16 +22,16 @@ tweet: yes
 
 # Derisking
 
-In this section, we're going to more closely at what, so far, we've called "[Taking Action](Glossary#taking-action)" and separate out different ways this can be done.   We'll introduce the correct risk management terms and give examples of how to apply these to software development.
+In this section, we're going to more closely at what, so far, we've called "[Taking Action](/tags/Take-Action)" and separate out different ways this can be done.   We'll introduce the correct risk management terms and give examples of how to apply these to software development.
 
 ## What is Taking Action?
 
-So far in Risk-First, we've talked about [Taking Action](Glossary#taking-action) as having two effects:
+So far in Risk-First, we've talked about [Taking Action](/tags/Take-Action) as having two effects:
 
- 1. It's the way in which we [Meet Reality](Glossary#meet-reality) to learn about the world and uncover [Hidden Risks](Glossary#hidden-risk).
- 2. It's the way we change our position on the [Risk Landscape](Glossary#risk-landscape) via actions with a positive [Payoff](Glossary#payoff).
+ 1. It's the way in which we [Meet Reality](/tags/Meeting-Reality) to learn about the world and uncover [Hidden Risks](/tags/Hidden-Risk).
+ 2. It's the way we change our position on the [Risk Landscape](/tags/Risk-Landscape) via actions with a positive [Payoff](/tags/Payoff).
  
-As we saw in the discussion of [Payoff](Consider-Payoff), any time you take action you are accruing [attendant risk](Glossary#attendant-risk), and we want to take actions with the most favourable payoff.  So here we are going to look at common ways in which we can lean the payoff in our favour.  This is called _derisking_:   
+As we saw in the discussion of [Payoff](Consider-Payoff), any time you take action you are accruing [attendant risk](/tags/Attendant-Risk), and we want to take actions with the most favourable payoff.  So here we are going to look at common ways in which we can lean the payoff in our favour.  This is called _derisking_:   
 
 > "To remove the risk from; to make safe. " - [Derisk, _Wiktionary_](https://en.wiktionary.org/wiki/derisk)
 
@@ -101,7 +102,7 @@ The table above lists a set of _generic strategies_ for derisking which we'll lo
 
 ## Avoid
 
-**Avoiding** risk, means taking a route on the [Risk Landscape](/thinking/Glossary#risk-landscape) _around_ the risk.  Neither the stakes or the payoff are changed.  
+**Avoiding** risk, means taking a route on the [Risk Landscape](/tags/Risk-Landscape) _around_ the risk.  Neither the stakes or the payoff are changed.  
 
 ### General Examples
 

@@ -8,6 +8,7 @@ tags:
  - Attendant Risk
  - Hidden Risk
  - Balance Of Risk
+ - Mitigated Risk
 sidebar_position: 2
 featured: 
   class: bg3
@@ -25,7 +26,7 @@ Throughout [A Simple Scenario](A-Simple-Scenario) we used diagrams to explain th
 
 ![Goal In Mind and Attendant Risks](/img/generated/introduction/goal_in_mind.svg)
 
-The diagram above is taken from the [dinner party](A-Simple-Scenario) example: we want to host a successful party, but in doing so, we know there are [Attendant Risks](Glossary#attendant-risk). 
+The diagram above is taken from the [dinner party](A-Simple-Scenario) example: we want to host a successful party, but in doing so, we know there are [Attendant Risks](/tags/Attendant-Risk). 
 
 ![Nothing To Eat](/img/generated/introduction/diagram_example.svg)
 
@@ -53,7 +54,7 @@ In the middle of a Risk-First diagram we see the actions you could take.  In the
 
 ![Outcomes](/img/generated/introduction/outcome.svg)
 
-_Nothing comes for free._  On the right, you can see the consequence or outcome of the actions you've taken:  [Attendant Risks](/thinking/Glossary#attendant-risk) are the _new_ risks you now have as a result of taking the action.
+_Nothing comes for free._  On the right, you can see the consequence or outcome of the actions you've taken:  [Attendant Risks](/tags/Attendant-Risk) are the _new_ risks you now have as a result of taking the action.
 
 Hosting a dinner party opens you up to attendant risks like "Not Enough to Eat".  As a result of that risk, we consider buying lots of snacks.  As a result of _that_ risk, we start to consider whether our guests will be impressed with that.
 
@@ -61,17 +62,17 @@ Hosting a dinner party opens you up to attendant risks like "Not Enough to Eat".
 
 It's worth pointing out that sometimes _the cure is worse than the disease_.  
 
-By [Taking Action](/thinking/Glossary#taking-action) you might end up in a worse predicament than you started.  For example, cutting your legs off _would definitely cure your in-growing toenail_.  We have to use our judgement to decide on the right course of action!
+By [Taking Action](/tags/Take-Action) you might end up in a worse predicament than you started.  For example, cutting your legs off _would definitely cure your in-growing toenail_.  We have to use our judgement to decide on the right course of action!
 
 ### A Balance of Risk
 
-So Risk-First diagrams represent a [balance of risk](/thinking/Glossary#balance-of-risk): whether or not you choose to take the action will depend on your evaluation of this balance.  Are the things on the left worse or better than the things on the right?  
+So Risk-First diagrams represent a [balance of risk](/tags/Balance-Of-Risk): whether or not you choose to take the action will depend on your evaluation of this balance.  Are the things on the left worse or better than the things on the right?  
 
 ### Cause and Effect
 
 ![Stimulus, Response, Outcome](/img/generated/introduction/stimulus-response-outcome.svg)
 
-You can think about a Risk-First diagram in a sense as a way of visualising _cause and effect_.  In _biological terms_ this is called the [Stimulus-Response Model](https://en.wikipedia.org/wiki/Stimulus–response_model), or sometimes, as shown in the diagram above, Stimulus-Response-Outcome.   The items on the left of the diagram are the _stimulus_ part: they're the thing that makes us [Take Action](Glossary#taking-action) in the world.  The middle part (the action) is the response and the right side is the outcome.  
+You can think about a Risk-First diagram in a sense as a way of visualising _cause and effect_.  In _biological terms_ this is called the [Stimulus-Response Model](https://en.wikipedia.org/wiki/Stimulus–response_model), or sometimes, as shown in the diagram above, Stimulus-Response-Outcome.   The items on the left of the diagram are the _stimulus_ part: they're the thing that makes us [Take Action](/tags/Take-Action) in the world.  The middle part (the action) is the response and the right side is the outcome.  
 
 There are [all kinds of risks](/risks/Risk-Landscape) we face in life and we attach different value or _criticality_ to them.  Most people will want to take action against the worst risks they face in their lives and maybe put up with some of the lesser ones.  Equally, we should also try and achieve our _most critical_ goals and let the lesser ones slide (at least, from a rational standpoint). 
 
@@ -90,27 +91,27 @@ There are a few other bits and pieces that crop up in these diagrams that we sho
 
 ### Containers For _Internal Models_
 
-The risks on the left and right are contained in rounded-boxes.  That's because risks live in our [Internal Models](/thinking/Glossary#internal-model) - they're not real-world things you can reach out and touch.  They're _contained_ in things like brains, spreadsheets, reports and programs.  
+The risks on the left and right are contained in rounded-boxes.  That's because risks live in our [Internal Models](/tags/Internal-Model) - they're not real-world things you can reach out and touch.  They're _contained_ in things like brains, spreadsheets, reports and programs.  
 
 #### Example: Blaming Others
 
 ![Blame Game](/img/generated/introduction/blame.svg)
 
-In the above diagram, you can see how Jim is worried about his job security, probably because he's made a mistake at work.  Therefore, in his [Internal Model](/thinking/Glossary#internal-model) he has [Funding Risks](/tags/Funding-Risk), i.e. he's worried about money.
+In the above diagram, you can see how Jim is worried about his job security, probably because he's made a mistake at work.  Therefore, in his [Internal Model](/tags/Internal-Model) he has [Funding Risks](/tags/Funding-Risk), i.e. he's worried about money.
 
-What does he do?  His [Action](/thinking/Glossary#taking-action) is to blame Bob.  If all goes according to plan, Jim has dealt with his risk and now Bob has the problems instead.
+What does he do?  His [Action](/tags/Take-Action) is to blame Bob.  If all goes according to plan, Jim has dealt with his risk and now Bob has the problems instead.
 
 ### Mitigated and Hidden Risk
 
 ![Mitigated and Hidden](/img/generated/introduction/hidden-mitigated.svg)
 
-The diagram above shows two other marks we use quite commonly:  we put a "strike" through a risk to show that it's been dealt with in some way and the "cloud" icon denotes [Hidden Risks](/thinking/Glossary#hidden-risk)- those _unknown unknowns_ that we couldn't have predicted in advance.
+The diagram above shows two other marks we use quite commonly:  we put a "strike" through a risk to show that it's been dealt with in some way and the "cloud" icon denotes [Hidden Risks](/tags/Hidden-Risk)- those _unknown unknowns_ that we couldn't have predicted in advance.
 
 ### Artifacts
 
 ![Artifacts](/img/generated/introduction/artifacts.svg)
 
-Sometimes, we add _artifacts_ to Risk-First diagrams.  That is, real-world things such as people, documents, code, servers and so on.  This is because as well as changing [Internal Models](/thinking/Glossary#internal-model), [Taking Action](/thinking/Glossary#taking-action) will produce real results and consume inputs in order to do so.  So, it's sometimes helpful to include these on the diagram.  Some examples are shown in the diagram above.
+Sometimes, we add _artifacts_ to Risk-First diagrams.  That is, real-world things such as people, documents, code, servers and so on.  This is because as well as changing [Internal Models](/tags/Internal-Model), [Taking Action](/tags/Take-Action) will produce real results and consume inputs in order to do so.  So, it's sometimes helpful to include these on the diagram.  Some examples are shown in the diagram above.
 
 ### Causation and Correlation
 
@@ -130,7 +131,7 @@ Let's quickly summarise again what's happening in these diagrams:
 
 ## Next
 
-Risk-First is about understanding risk in software development, so next let's examine the scenario of a new software project.  Instead of a single person organising a dinner party, we are likely to have a team, and our [Internal Model](Glossary#internal-model) will not just exist in our heads, but in the code we write.  
+Risk-First is about understanding risk in software development, so next let's examine the scenario of a new software project.  Instead of a single person organising a dinner party, we are likely to have a team, and our [Internal Model](/tags/Internal-Model) will not just exist in our heads, but in the code we write.  
 
 On to [Development Process](Development-Process)...
 

@@ -59,7 +59,7 @@ If your problem doesn't have an exact, defined end-goal, there is simply no way 
 
 ![Opportunity on the Risk Landscape](/img/estimates/fractal1.png)
 
-You might have some idea (selling hats for dogs?) of some interesting area of value on the [Risk Landscape](/thinking/Glossary#risk-landscape)  that you want to occupy, as shown in the above diagram.  
+You might have some idea (selling hats for dogs?) of some interesting area of value on the [Risk Landscape](/tags/Risk-Landscape)  that you want to occupy, as shown in the above diagram.  
 
 Your best bet is to try and colonise the area of value _as fast as possible_ by using as much readily available software as possible.  
 
@@ -69,7 +69,7 @@ Maybe version one looks something like the diagram above: a few hastily-assemble
 
 ![Second Version](/img/estimates/fractal3.png)
 
-Releasing the first version might fill in some of the blanks, and show you more detail on the [Risk Landscape](/thinking/Glossary#risk-landscape).  Effectively showing you a more detailed view of the coastline.   Feedback from users will provide you with a better understanding of exactly what this fractal problem-space looks like. 
+Releasing the first version might fill in some of the blanks, and show you more detail on the [Risk Landscape](/tags/Risk-Landscape).  Effectively showing you a more detailed view of the coastline.   Feedback from users will provide you with a better understanding of exactly what this fractal problem-space looks like. 
 
 ![Third Version](/img/estimates/fractal4.png)
 
@@ -77,8 +77,8 @@ As you go on [Meeting Reality](/tags/Meeting-Reality), the shape of the problem 
 
 Is it possible to estimate problems in the Fractal Shape domain?  The best you might be able to do is to match two competing objectives:
 
-- Building Product:  By building functionality you head towards your [Goal](/thinking/Glossary#goal) on the [Risk Landscape](/thinking/Glossary#risk-landscape).  But how do you know this is the right goal?
-- [Meeting Reality](/tags/Meeting-Reality):  By putting your product "out there" you find your customers and your niche in the market, and you explore the [Risk Landscape](/thinking/Glossary#risk-landscape).  But this takes time and effort away from _building product_.
+- Building Product:  By building functionality you head towards your [Goal](/tags/Goal) on the [Risk Landscape](/tags/Risk-Landscape).  But how do you know this is the right goal?
+- [Meeting Reality](/tags/Meeting-Reality):  By putting your product "out there" you find your customers and your niche in the market, and you explore the [Risk Landscape](/tags/Risk-Landscape).  But this takes time and effort away from _building product_.
 
 With this in mind, you estimate a useful amount of time to go round this cycle, fixing the time but letting the deliverable vary.
  

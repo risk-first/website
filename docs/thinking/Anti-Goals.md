@@ -17,6 +17,9 @@ definitions:
    description:  A particular destination on the Risk Landscape you don't want to arrive at.
    own_term: true
    part_of: Goal
+ - name: Upside Risk
+   description:  In investing, upside risk is the uncertain possibility of gain.  e.g. the opportunity to make high levels of profits.
+   part_of: Risk
 sidebar_position: 11
 tweet: yes
 ---
@@ -52,7 +55,7 @@ Terry _busted through_ the Anti-Goal, and eventually released VVVVVV to critical
 
 ## Visualising Anti-Goals
 
-Goals and Anti-Goals are both kinds of [Risks](/thinking/Glossary#risk).  While Goals are "Upside" risks or opportunities (the outcome is uncertain, but likely to be in your favour), Anti-Goals are "Downside" risks (again, uncertain outcome, likely to go against you): you'll want to try to navigate between these to arrive at the Goal, rather than the Anti-Goal.
+Goals and Anti-Goals are both kinds of [Risks](/tags/Risk).  While Goals are "Upside" risks or opportunities (the outcome is uncertain, but likely to be in your favour), Anti-Goals are "Downside" risks (again, uncertain outcome, likely to go against you): you'll want to try to navigate between these to arrive at the Goal, rather than the Anti-Goal.
 
 Here at [Risk-First](https://riskfirst.org), there's lots of talk about navigating the [Risk Landscape](/risks/Risk-Landscape.md), which you can imagine being like the terrain of a golf course (as in the diagram above). 
 

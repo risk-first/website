@@ -16,11 +16,11 @@ part_of: Operational Risk
 
 <RiskIntro fm={frontMatter} />
 
-As in [Agency Risk](/tags/Agency-Risk), we are going to use the term _agent_, which refers to anything with [agency](Agency-Risk#software-processes) in a system to make decisions:  that is, an agent has an [Internal Model](/thinking/Glossary#internal-model) and can [take actions](/thinking/Glossary#taking-action) based on it.  Here, we work on the assumption that the agents _are_ working towards a common [Goal](/thinking/Glossary#goal), even though in reality it's not always the case, as we saw in the section on [Agency Risk](/tags/Agency-Risk).
+As in [Agency Risk](/tags/Agency-Risk), we are going to use the term _agent_, which refers to anything with [agency](Agency-Risk#software-processes) in a system to make decisions:  that is, an agent has an [Internal Model](/tags/Internal-Model) and can [take actions](/tags/Take-Action) based on it.  Here, we work on the assumption that the agents _are_ working towards a common [Goal](/tags/Goal), even though in reality it's not always the case, as we saw in the section on [Agency Risk](/tags/Agency-Risk).
 
 [Coordination Risk](/tags/Coordination-Risk) is the risk that agents can fail to coordinate to meet their common goal and end up making things worse.<!-- tweet-end -->  [Coordination Risk](/tags/Coordination-Risk) is embodied in the phrase "Too Many Cooks Spoil The Broth":  more people, opinions or _agents_ often make results worse.
 
-In this section, we'll first build up [a model of Coordination Risk](#a-model-of-coordination-risk), describing exactly coordination means and why we do it.  Then, we'll look at some classic [problems of coordination](#problems-of-coordination).  Then, we're going to consider agency at several different levels (because of [Scale Invariance](/thinking/Crisis-Mode#invariance-2-scale-invariance)) .  We'll look at:
+In this section, we'll first build up [a model of Coordination Risk](#a-model-of-coordination-risk), describing exactly coordination means and why we do it.  Then, we'll look at some classic [problems of coordination](#problems-of-coordination).  Then, we're going to consider agency at several different levels (because of [Scale Invariance](/thinking/Crisis-Mode#invariance-3-scale-invariance)) .  We'll look at:
 
  - [Team Decision Making](#decision-making),
  - [Living Organisms](#in-living-organisms),
@@ -47,16 +47,16 @@ As you can see, by _sharing_, it's possible that the _total benefit_ is greater 
 
 Just two things are needed for competition to occur:
 
- - Multiple, Individual agents, trying to achieve [Goals](/thinking/Glossary#goal).
+ - Multiple, Individual agents, trying to achieve [Goals](/tags/Goal).
  - Scarce Resources, which the agents want to use as [Dependencies](/tags/Dependency-Risk).
 
 ### Coordination via Communication
 
 The only way that the agents can move away from competition towards coordination is via [Communication](/tags/Communication-Risk), and this is where their coordination problems begin.  
 
-[Coordination Risk](/tags/Coordination-Risk) commonly occurs where people have different ideas about how to achieve a [goal](/thinking/Glossary#goal), and they have different ideas because they have different [Internal Models](/thinking/Glossary#internal-model).  As we saw in the section on [Communication Risk](/tags/Communication-Risk), we can only hope to synchronise [Internal Models](/thinking/Glossary#internal-model) if there are high-bandwidth [Channels](Communication-Risk#channels) available for communication. 
+[Coordination Risk](/tags/Coordination-Risk) commonly occurs where people have different ideas about how to achieve a [goal](/tags/Goal), and they have different ideas because they have different [Internal Models](/tags/Internal-Model).  As we saw in the section on [Communication Risk](/tags/Communication-Risk), we can only hope to synchronise [Internal Models](/tags/Internal-Model) if there are high-bandwidth [Channels](/tags/Channel-Risk) available for communication. 
 
-You might think, therefore, that this is just another type of [Communication Risk](/tags/Communication-Risk) problem, and that's often a part of it, but even with synchronized [Internal Models](/thinking/Glossary#internal-model), coordination risk can occur.  Imagine the example of people all trying to madly leave a burning building.  They all have the same information (the building is on fire).  If they coordinate, and leave in an orderly fashion, they might all get out.  If they don't, and there's a scramble for the door, more people might die.
+You might think, therefore, that this is just another type of [Communication Risk](/tags/Communication-Risk) problem, and that's often a part of it, but even with synchronized [Internal Models](/tags/Internal-Model), coordination risk can occur.  Imagine the example of people all trying to madly leave a burning building.  They all have the same information (the building is on fire).  If they coordinate, and leave in an orderly fashion, they might all get out.  If they don't, and there's a scramble for the door, more people might die.
 
 ![Coordination Risk - Mitigated by Communication](/img/generated/risks/coordination/coordination-risk.svg)
 
@@ -85,7 +85,7 @@ Let's unpack this idea, and review some classic problems of coordination, none o
 
 ## Decision Making
 
-Within a team, [Coordination Risk](/tags/Coordination-Risk) is at its core about resolving [Internal Model](/thinking/Glossary#internal-model) conflicts in order that everyone can agree on a [Goal](/thinking/Glossary#goal) and cooperate on getting it done.  Therefore, [Coordination Risk](/tags/Coordination-Risk) is worse on projects with more members, and worse in organisations with more staff.  
+Within a team, [Coordination Risk](/tags/Coordination-Risk) is at its core about resolving [Internal Model](/tags/Internal-Model) conflicts in order that everyone can agree on a [Goal](/tags/Goal) and cooperate on getting it done.  Therefore, [Coordination Risk](/tags/Coordination-Risk) is worse on projects with more members, and worse in organisations with more staff.  
 
 As an individual, do you suffer from [Coordination Risk](/tags/Coordination-Risk) at all?  Maybe:  sometimes, you can feel "conflicted" about the best way to solve a problem.  And weirdly, usually _not thinking about it_ helps.  Sleeping too.  (Rich Hickey calls this "[Hammock Driven Development](https://www.youtube.com/watch?v=f84n5oFoZBc)").  This is probably because, unbeknownst to you, your subconscious is furiously communicating internally, trying to resolve these conflicts itself, and will let you know when it has come to a resolution.  
 
@@ -108,9 +108,9 @@ As an individual, do you suffer from [Coordination Risk](/tags/Coordination-Risk
 
 **s** = subordinate
 
-At the top, you have the _least_ consultative styles, and at the bottom, the _most_.   At the top, decisions are made with just the leader's [Internal Model](/thinking/Glossary#internal-model), but moving down, the [Internal Models](/thinking/Glossary#internal-model) of the _subordinates_ are increasingly brought into play.  
+At the top, you have the _least_ consultative styles, and at the bottom, the _most_.   At the top, decisions are made with just the leader's [Internal Model](/tags/Internal-Model), but moving down, the [Internal Models](/tags/Internal-Model) of the _subordinates_ are increasingly brought into play.  
 
-The decisions at the top are faster, but don't do much for mitigating [Coordination Risk](/tags/Coordination-Risk).  The ones below take longer (incurring [Schedule Risk](/tags/Schedule-Risk)) but mitigate more [Coordination Risk](/tags/Coordination-Risk).   Group decision-making inevitably involves everyone _learning_ and improving their [Internal Models](/thinking/Glossary#internal-model).   
+The decisions at the top are faster, but don't do much for mitigating [Coordination Risk](/tags/Coordination-Risk).  The ones below take longer (incurring [Schedule Risk](/tags/Schedule-Risk)) but mitigate more [Coordination Risk](/tags/Coordination-Risk).   Group decision-making inevitably involves everyone _learning_ and improving their [Internal Models](/tags/Internal-Model).   
 
 The trick is to be able to tell which approach is suitable at which time.   Everyone is expected to make decisions _within their realm of expertise_: you can't have developers continually calling meetings to discuss whether they should be using an [Abstract Factory](https://en.wikipedia.org/wiki/Abstract_factory_pattern) or a [Factory Method](https://en.wikipedia.org/wiki/Factory_method_pattern): it would waste time.  The critical question is therefore, "what's the biggest risk?"
 
@@ -123,7 +123,7 @@ So _organisation_ can reduce [Coordination Risk](/tags/Coordination-Risk) but to
 
 Staff in a team have a dual nature:  they are **Agents** and **Resources** at the same time.  The team [depends](/tags/Dependency-Risk) on staff for their resource of _labour_, but they're also part of the decision making process of the team, because they have [_agency_](/tags/Agency-Risk) over their own actions.  
 
-Part of [Coordination Risk](/tags/Coordination-Risk) is about trying to mitigate differences in [Internal Models](/thinking/Glossary#internal-model). So it's worth considering how varied people's models can be:
+Part of [Coordination Risk](/tags/Coordination-Risk) is about trying to mitigate differences in [Internal Models](/tags/Internal-Model). So it's worth considering how varied people's models can be:
 
  - Different skill levels
  - Different experiences
@@ -135,11 +135,11 @@ The job of harmonising this on a project would seem to fall to the team leader, 
 
 > "The forming–storming–norming–performing model of group development was first proposed by Bruce Tuckman in 1965, who said that these phases are all necessary and inevitable in order for the team to grow, face up to challenges, tackle problems, find solutions, plan work, and deliver results." - [Tuckman's Stages Of Group Development, _Wikipedia_](https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development)
 
-Specifically this describes a process whereby a new group will form and then be required to work together. In the process, they will have many _disputes_.  Ideally, the group will resolve these disputes internally and emerge as a team, with a common [Goal](/thinking/Glossary#goal).
+Specifically this describes a process whereby a new group will form and then be required to work together. In the process, they will have many _disputes_.  Ideally, the group will resolve these disputes internally and emerge as a team, with a common [Goal](/tags/Goal).
 
 Since [Coordination](/tags/Coordination-Risk) is about [Resource Allocation](Coordination-Risk#problems-of-coordination) the skills of staff can potentially be looked at as resources to allocate.  This means handling [Coordination Risk](/tags/Coordination-Risk) issues like:
 
- - People leaving, taking their [Internal Models](/thinking/Glossary#internal-model) and expertise with them ([Key Person Risk](Scarcity-Risk#staff-risk)).
+ - People leaving, taking their [Internal Models](/tags/Internal-Model) and expertise with them ([Key Person Risk](/tags/Staff-Risk)).
  - People requiring external training, to understand new tools and techniques ([Learning Curve Risk](/tags/Learning-Curve-Risk)).
  - People being protective about their knowledge in order to protect their jobs ([Agency Risk](/tags/Agency-Risk)). 
  
@@ -176,7 +176,7 @@ Clearly, this is just a _model_, it's not set in stone and decision making style
 
 ## In Software Processes
 
-It should be pretty clear that we are applying our [Scale Invariance](/thinking/Crisis-Mode#invariance-2-scale-invariance) rule to [Coordination Risk](/tags/Coordination-Risk):  all of the problems we've described as affecting teams and organisations also affect software, although the scale and terrain are different.  Software processes have limited _agency_ - in most cases they follow fixed rules set down by the programmers, rather than self-organising like people can (so far).
+It should be pretty clear that we are applying our [Scale Invariance](/thinking/Crisis-Mode#invariance-3-scale-invariance) rule to [Coordination Risk](/tags/Coordination-Risk):  all of the problems we've described as affecting teams and organisations also affect software, although the scale and terrain are different.  Software processes have limited _agency_ - in most cases they follow fixed rules set down by the programmers, rather than self-organising like people can (so far).
 
 As before, in order to face [Coordination Risk](/tags/Coordination-Risk) in software, we need multiple agents all working together. [Coordination Risks](/tags/Coordination-Risk) (such as race conditions or deadlock) only really occur where _more than one agent working at the same time_.  This means we are considering _at least_ multi-threaded software, and anything above that (multiple CPUs, servers, data-centres and so on).  
 

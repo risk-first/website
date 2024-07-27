@@ -2,7 +2,6 @@
 title: Stop Estimating, Start Navigating
 description: Part of the 'Estimating' Risk-First Track, looking at how to work without estimates.
 
-
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/logo/R1_logo_black.svg">Risk-First Analysis</image-artifact>'
@@ -19,7 +18,7 @@ This is the _ninth_ article in the [Risk-First](https://riskfirst.org) track on 
 
 - In article seven, we explored how [Scrum](Fixing-Scrum), the popular Agile methodology, fails to understand this crucial problem with estimates (among other failings).
 
-- Then, in [Risk-First Analysis](Risk-First-Analysis) we look at how we can work out what to build by examining what [risks](/thinking/Glossary#risk) we'd like to address and which [goals](/thinking/Glossary#risk) or [Upside Risks](/thinking/Glossary#upside-risk) we'd like to see happen.  
+- Then, in [Risk-First Analysis](Risk-First-Analysis) we look at how we can work out what to build by examining what [risks](/tags/Risk) we'd like to address and which [goals](/tags/Risk) or [Upside Risks](/tags/Upside-Risk) we'd like to see happen.  
 
 So, now we're up to date.  It's article nine, and I was going to build on [Risk-First Analysis](Risk-First-Analysis) to show how to plan work for a team of people over a week, a month, a year.  
 

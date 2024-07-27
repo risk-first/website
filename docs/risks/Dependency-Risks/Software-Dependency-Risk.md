@@ -131,7 +131,7 @@ As the above diagram shows, the bulk of the complexity of a software tool is hid
 
 ### Designing Protocols
 
-Software is not constrained by _physical_ ergonomics in the same way as a tool is.  But ideally, it should have conceptual ergonomics: complexity is hidden away from the user behind the _User Interface_.  This is the familiar concept of [Abstraction](/thinking/Glossary#abstraction) we've already looked at.  As we saw in [Communication Risk](/tags/Learning-Curve-Risk), when we use a new protocol, we face [Learning Curve Risk](/tags/Learning-Curve-Risk).  
+Software is not constrained by _physical_ ergonomics in the same way as a tool is.  But ideally, it should have conceptual ergonomics: complexity is hidden away from the user behind the _User Interface_.  This is the familiar concept of [Abstraction](/tags/Abstraction) we've already looked at.  As we saw in [Communication Risk](/tags/Learning-Curve-Risk), when we use a new protocol, we face [Learning Curve Risk](/tags/Learning-Curve-Risk).  
 
 To minimise this, we should apply the [Principal Of Least Astonishment](https://en.wikipedia.org/wiki/Principle_of_least_astonishment) when designing our own protocols: 
 

@@ -16,17 +16,17 @@ part_of: Operational Risk
 
 <RiskIntro fm={frontMatter} />
 
-As we discussed in the [Communication Risk](Communication-Risk#misinterpretation) section, our understanding of the world is informed by abstractions we create and the names we give them.  <!-- tweet-end -->
+As we discussed in the [Communication Risk](/risks/Message-Risk#misinterpretation) section, our understanding of the world is informed by abstractions we create and the names we give them.  <!-- tweet-end -->
 
 For example, <!-- tweet-start -->Risk-First is about naming _risks_ within software development, so we can discuss and understand them better.<!-- tweet-end -->
 
-Our [Internal Models](/thinking/Glossary#internal-model) of the world are constructed from these abstractions and their relationships.
+Our [Internal Models](/tags/Internal-Model) of the world are constructed from these abstractions and their relationships.
 
 ![Maps and Territories, and Communication happening between them](/img/generated/risks/map-and-territory/communication.svg) 
 
-As the diagram above shows, there is a translation going on here: observations about the arrangement of _atoms_ in the world are _communicated_ to our [Internal Models](/thinking/Glossary#internal-model) and stored as patterns of _information_ (measured in bits and bytes). <!-- tweet-end --> 
+As the diagram above shows, there is a translation going on here: observations about the arrangement of _atoms_ in the world are _communicated_ to our [Internal Models](/tags/Internal-Model) and stored as patterns of _information_ (measured in bits and bytes). <!-- tweet-end --> 
 
-We face [Map And Territory Risk](/tags/Map-And-Territory-Risk) because we base our behaviour on our [Internal Models](/thinking/Glossary#internal-model) rather than reality itself.  It comes from the expression "Confusing the Map for the Territory", attributed to Alfred Korzybski:
+We face [Map And Territory Risk](/tags/Map-And-Territory-Risk) because we base our behaviour on our [Internal Models](/tags/Internal-Model) rather than reality itself.  It comes from the expression "Confusing the Map for the Territory", attributed to Alfred Korzybski:
 
 > "Polish-American scientist and philosopher Alfred Korzybski remarked that "the map is not the territory"  and that "the word is not the thing", encapsulating his view that an abstraction derived from something, or a reaction to it, is not the thing itself. Korzybski held that many people _do_ confuse maps with territories, that is, confuse models of reality with reality itself." - [Map-Territory Relation, _Wikipedia_](https://en.wikipedia.org/wiki/Map–territory_relation)
 
@@ -39,7 +39,7 @@ As the above diagram shows, there are two parts to this risk, which we are going
 
 ## Fitness
 
-In the [Feature Risk](/tags/Feature-Risk) section we looked at ways in which our software project might have risks due to having _inappropriate_ features ([Feature Fit Risk](/tags/Feature-Fit-Risk)), _broken_ features ([Feature Implementation Risk](/tags/Implementation-Risk)) or _too many of the wrong_ features ([Conceptual Integrity Risk](/tags/Conceptual-Integrity-Risk)).  Let's see how these same categories also apply to [Internal Models](/thinking/Glossary#internal-model).
+In the [Feature Risk](/tags/Feature-Risk) section we looked at ways in which our software project might have risks due to having _inappropriate_ features ([Feature Fit Risk](/tags/Feature-Fit-Risk)), _broken_ features ([Feature Implementation Risk](/tags/Implementation-Risk)) or _too many of the wrong_ features ([Conceptual Integrity Risk](/tags/Conceptual-Integrity-Risk)).  Let's see how these same categories also apply to [Internal Models](/tags/Internal-Model).
 
 ### Example: The SatNav
 
@@ -51,22 +51,22 @@ This wasn't borne of stupidity, but experience:  SatNavs are pretty reliable. _S
 
 There are two [Map and Territory Risks](/tags/Map-And-Territory-Risk) here:
 
-- The [Internal Model](/thinking/Glossary#internal-model) of the _SatNav_ contained information that was wrong:  the track had been marked up as a road, rather than a path.  
-- The [Internal Model](/thinking/Glossary#internal-model) of the _driver_ was wrong:   his abstraction of "the SatNav is always right" turned out to be only _mostly_ accurate.  
+- The [Internal Model](/tags/Internal-Model) of the _SatNav_ contained information that was wrong:  the track had been marked up as a road, rather than a path.  
+- The [Internal Model](/tags/Internal-Model) of the _driver_ was wrong:   his abstraction of "the SatNav is always right" turned out to be only _mostly_ accurate.  
 
-You could argue that both the SatNav and the Driver's _[Internal Model](/thinking/Glossary#internal-model)_ had bugs in them.  That is, they both suffer the [Feature Implementation Risk](/tags/Implementation-Risk) we saw in the [Feature Risk](/tags/Feature-Risk) section.  If a SatNav has too much of this, you'd end up not trusting it, and getting a new one.  With your _personal_ [Internal Model](/thinking/Glossary#internal-model), you can't buy a new one, but you may learn to _trust your assumptions less_.
+You could argue that both the SatNav and the Driver's _[Internal Model](/tags/Internal-Model)_ had bugs in them.  That is, they both suffer the [Feature Implementation Risk](/tags/Implementation-Risk) we saw in the [Feature Risk](/tags/Feature-Risk) section.  If a SatNav has too much of this, you'd end up not trusting it, and getting a new one.  With your _personal_ [Internal Model](/tags/Internal-Model), you can't buy a new one, but you may learn to _trust your assumptions less_.
 
 ![Some examples of Feature Fit Risks, as manifested in the Internal Model](/img/generated/risks/map-and-territory/map_and_territory_table_1.svg)
 
-The diagram above shows how types of [Feature Fit Risk](/tags/Feature-Risk) can manifest in the [Internal Model](/thinking/Glossary#internal-model). 
+The diagram above shows how types of [Feature Fit Risk](/tags/Feature-Risk) can manifest in the [Internal Model](/tags/Internal-Model). 
 
 ## Audience
 
-Communication allows us to _share_ information between [Internal Models](/thinking/Glossary#internal-model) of a whole audience of people.  The [Communication Risk](/tags/Communication-Risk) and [Coordination Risk](/tags/Coordination-Risk) sections covered the difficulties inherent in aligning [Internal Models](/thinking/Glossary#internal-model) so that they cooperate.
+Communication allows us to _share_ information between [Internal Models](/tags/Internal-Model) of a whole audience of people.  The [Communication Risk](/tags/Communication-Risk) and [Coordination Risk](/tags/Coordination-Risk) sections covered the difficulties inherent in aligning [Internal Models](/tags/Internal-Model) so that they cooperate.
 
 ![Relative popularity of "Machine Learning" and "Big Data" as search terms on [Google Trends](https://trends.google.com), 2011-2018 ](/img/google-trends.png)
  
-But how does [Map and Territory Risk](/tags/Map-And-Territory-Risk) apply across a population of [Internal Models](/thinking/Glossary#internal-model)?   Can we track the rise-and-fall of _ideas_ like we track stock prices?  In effect, this is what [Google Trends](https://trends.google.com) does.  In the chart above, we can see the relative popularity of two search terms over time.  This is probably as good an indicator as any of the changing popularity of an abstraction within an audience.
+But how does [Map and Territory Risk](/tags/Map-And-Territory-Risk) apply across a population of [Internal Models](/tags/Internal-Model)?   Can we track the rise-and-fall of _ideas_ like we track stock prices?  In effect, this is what [Google Trends](https://trends.google.com) does.  In the chart above, we can see the relative popularity of two search terms over time.  This is probably as good an indicator as any of the changing popularity of an abstraction within an audience.
 
 ### Example: Map And Territory Risk Drives The Hype Cycle
 
@@ -171,7 +171,7 @@ The diagram above shows how Evolution-type [Feature Risks](/tags/Feature-Risk) c
 
 ## Humans and Machines
 
-In the example of the SatNav, we saw how the _quality_ of [Map and Territory Risk](/tags/Map-And-Territory-Risk) is different for _people_ and _machines_.   Whereas people _should_ be expected show skepticism for new (unlikely) information our databases accept it unquestioningly.  _Forgetting_ is an everyday, usually benign part of our human [Internal Model](/thinking/Glossary#internal-model), but for software systems it is a production crisis involving 3am calls and backups.  
+In the example of the SatNav, we saw how the _quality_ of [Map and Territory Risk](/tags/Map-And-Territory-Risk) is different for _people_ and _machines_.   Whereas people _should_ be expected show skepticism for new (unlikely) information our databases accept it unquestioningly.  _Forgetting_ is an everyday, usually benign part of our human [Internal Model](/tags/Internal-Model), but for software systems it is a production crisis involving 3am calls and backups.  
 
 For Humans, [Map and Territory Risk](/tags/Map-And-Territory-Risk) is exacerbated by [cognitive biases](https://en.wikipedia.org/wiki/List_of_cognitive_biases):
 
@@ -215,4 +215,4 @@ As the book points out, while everyone _persists_ in using an inadequate abstrac
 
 Scientific journals are a single example taken from a closely argued book investigating lots of cases of this kind.  It's worth taking the time to read a couple of the chapters on this interesting topic.  (Like Risk-First it is available to read online).
 
-As usual, this section forms a grab-bag of examples in a complex topic.  But it's time to move on as there is one last stop we have to make on the [Risk Landscape](/thinking/Glossary#risk-landscape), and that is to look at [Operational Risk](/tags/Operational-Risk).  
+As usual, this section forms a grab-bag of examples in a complex topic.  But it's time to move on as there is one last stop we have to make on the [Risk Landscape](/tags/Risk-Landscape), and that is to look at [Operational Risk](/tags/Operational-Risk).  

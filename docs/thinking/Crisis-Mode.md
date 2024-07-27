@@ -2,6 +2,8 @@
 title: Crisis Mode
 description: Why 'Crisis Mode' shouldn't be a mode.
 
+tags:
+ - Upside Risk
 
 featured: 
   class: bg3
@@ -47,7 +49,7 @@ You would expect that ideally, any methods for managing software delivery should
 - If there is a production outage during the working week, we don't wait for the next Scrum Sprint to plan and fix it.
 - Although a 40-hour, Monday-to-Friday work-week _is a great idea_, this goes out of the window if the databases all crash on a Saturday morning.
 
-In these cases, we (hopefully calmly) _evaluate the risks and [Take Action](Glossary#taking-action)_.  
+In these cases, we (hopefully calmly) _evaluate the risks and [Take Action](/tags/Take-Action)_.  
 
 This is **Pressure Invariance**:  ideally, your methodology shouldn't need to change given the amount of pressure or importance on the table.  
 
