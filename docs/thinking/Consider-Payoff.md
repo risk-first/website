@@ -120,7 +120,7 @@ But, there is always the opposite opinion:  [You _Are_ Gonna Need It](http://wik
 
 So which is right?  We should conclude that we do the work _if there is a worthwhile [Payoff](/thinking/Glossary#payoff)_.  
 
- - Logging statements are _good_, because otherwise, you're increasing the risk that in production, no one will be able to understand [how the software went wrong](/risks/Dependency-Risk#invisibility-risk).
+ - Logging statements are _good_, because otherwise, you're increasing the risk that in production, no one will be able to understand [how the software went wrong](/tags/Invisibility-Risk).
  - However, adding them takes time, which might [risk us not hitting our schedule](/tags/Schedule-Risk).
  - Also, we have to manage larger log files on our production systems.  _Too much logging_ is just noise, and makes it harder to figure out what went wrong.  This increases the risk that our software is [less transparent in how it works](/tags/Complexity-Risk).
  
@@ -256,9 +256,9 @@ Lots of software projects end up in a phase of "release paralysis" - wanting thi
 
 An important take-away here is that you don't have to accept the dilemma as stated.  You can change the actions to improve the payoff, and [meet reality more gradually](Meeting-Reality#the-cost-of-meeting-reality):  
 
- - Start a closed [beta test](/practices/Glossary-Of-Practices#beta-test) with a group of friendly customers
- - Use [feature toggles](/practices/Glossary-Of-Practices#feature-toggle) to release only some components of the software
- - [Dog-food](/practices/Glossary-Of-Practices#dog-fooding) the software internally so you can find out whether it's useful in its current state.
+ - Start a closed [beta test](/tags/User-Acceptance-Testing) with a group of friendly customers
+ - Use [feature toggles](/tags/Configuration-Management) to release only some components of the software
+ - [Dog-food](/tags/User-Acceptance-Testing) the software internally so you can find out whether it's useful in its current state.
 
 A second approach is to improve the payoff of the losing outcomes.  Here are some examples:
 

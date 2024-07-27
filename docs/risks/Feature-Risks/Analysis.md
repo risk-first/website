@@ -41,7 +41,7 @@ Let's examine each in turn.
  
 Darwin's conception of fitness was not one of athletic prowess, but how well an organism worked within the landscape, with the goal of reproducing itself.  
 
-[Feature Fit Risk](#feature-fit-risk), [Conceptual Integrity Risk](#conceptual-integrity-risk) and [Implementation Risk](#implementation-risk) all hint at different aspects of this "fitness".   We can conceive of them as the gaps between the following entities:
+[Feature Fit Risk](/tags/Feature-Fit-Risk), [Conceptual Integrity Risk](/tags/Conceptual-Integrity-Risk) and [Implementation Risk](/tags/Implementation-Risk) all hint at different aspects of this "fitness".   We can conceive of them as the gaps between the following entities:
  
  - **Perceived Need**,  what the developers _think_ the users want.
  - **Expectation**, what the user _expects_.
@@ -55,7 +55,7 @@ In the [Staging And Classifying](/risks/Staging-And-Classifying) section we'll c
 
 ### Fit and Audience
 
-Two risks, [Feature Access Risk](/tags/Feature-Access-Risk) and [Market Risk](/tags/Market-Risk), consider _fit_ for a whole _audience_ of users.  They are different:  just as it's possible to have a small audience, but a large revenue, it's possible to have a product which has low [Feature Access Risk](#feature-access-risk) (i.e lots of users can access it without difficulty) but high [Market Risk](#market-risk) (i.e. the market is highly volatile or capricious in it's demands).  _Online services_ often suffer from this [Market Risk](#market-risk) roller-coaster, being one moment highly valued and the next irrelevant. 
+Two risks, [Feature Access Risk](/tags/Feature-Access-Risk) and [Market Risk](/tags/Market-Risk), consider _fit_ for a whole _audience_ of users.  They are different:  just as it's possible to have a small audience, but a large revenue, it's possible to have a product which has low [Feature Access Risk](/tags/Feature-Access-Risk) (i.e lots of users can access it without difficulty) but high [Market Risk](/tags/Market-Risk) (i.e. the market is highly volatile or capricious in it's demands).  _Online services_ often suffer from this [Market Risk](/tags/Market-Risk) roller-coaster, being one moment highly valued and the next irrelevant. 
 
  - **Market Risk** is therefore risk to _income_ from the market changing.
  - **Feature Access Risk** is risk to _audience_ changing.
@@ -64,7 +64,7 @@ Two risks, [Feature Access Risk](/tags/Feature-Access-Risk) and [Market Risk](/t
 
 Risks of Change either of the product or the expectations of clients.(/img/generated/risks/feature/all-feature-risk2.svg) 
 
-Two risks further consider how the **fit** and **audience** _change_: [Regression Risk](#regression-risk) and [Feature Drift Risk](#feature-drift-risk).  We call this _Change_ in the sense that:
+Two risks further consider how the **fit** and **audience** _change_: [Regression Risk](/tags/Regression-Risk) and [Feature Drift Risk](/tags/Feature-Drift-Risk).  We call this _Change_ in the sense that:
 
  - Our product's features _evolve_ with time and the changes made by the development team.
  - Our audience changes and evolves as it is exposed to our product and competing products.

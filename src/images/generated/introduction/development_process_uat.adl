@@ -1,46 +1,45 @@
-<diagram
-	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
-	xmlns="http://www.kite9.org/schema/adl"
+<diagram xmlns="http://www.kite9.org/schema/adl"
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
-    style="--kite9-layout: right; --kite9-min-width: 600pt;">
-    
-      <group style="--kite9-layout: down">
-         <container bordered="true" id="c">
-            <risk class="goal" id="id_0">Feature X</risk>
-            <mitigated>
-            	<risk class="attendant">Breaks Feature Y</risk>
-            </mitigated>
-            <label id="id_16">
-               Internal Model
-               <symbols/>
-            </label>
-         </container>
-         <group id="reality" style="--kite9-layout: right">
-            <artifact>Product To Test</artifact>
-            <users>Users</users>
-         </group>
-      </group>
-      <action>User Acceptance</action>
-      <group style="--kite9-layout: down">
-         <group style="--kite9-layout: right">
-            <container id="d">
-               <risk class="attendant">Schedule Risks</risk>
-               <label id="4">
-                  Attendant Risks
-                  <symbols/>
-               </label>
-            </container>
-            <container id="d-uc">
-               <hidden>
-                  <risk class="attendant">Difficulty 
-          Finding Feature</risk>
-               </hidden>
-               <label id="4-of">
-                  Hidden Risks
-                  <symbols/>
-               </label>
-            </container>
-         </group>
-         <artifact>Test Results</artifact>
-      </group>
-   </diagram>
+	style="--kite9-layout: right; --kite9-min-width: 600pt;"
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl">
+	<group id="x1" style="--kite9-layout: down">
+		<container bordered="true" id="c">
+			<risk class="goal" id="id_0">Feature X</risk>
+			<label id="id_16">
+				Internal Model
+				<symbols />
+			</label>
+		</container>
+		<group id="reality" style="--kite9-layout: right">
+			<artifact>Product To Test</artifact>
+			<users>Users</users>
+		</group>
+	</group>
+	<action id="inte">User Acceptance</action>
+	<group id="x2"
+		style="--kite9-layout: down; --kite9-vertical-sizing: maximize; ">
+		<container id="d" style="--kite9-vertical-align: top; ">
+			<hidden>
+				<risk class="attendant" id="x">Difficulty
+					Finding Feature
+				</risk>
+			</hidden>
+			<risk class="attendant" id="y">Schedule Risks</risk>
+			<label id="4">
+				Internal Model
+				<symbols />
+			</label>
+		</container>
+		<group id="b">
+			<artifact>Test Results</artifact>
+		</group>
+	</group>
+	<align id="2-0" style="--kite9-direction: right; ">
+		<from id="2-0-0" reference="c" />
+		<to id="2-0-1" reference="inte" />
+	</align>
+	<align id="2-1" style="--kite9-direction: right; ">
+		<from id="2-1-0" reference="inte" />
+		<to id="2-1-1" reference="d" />
+	</align>
+</diagram>

@@ -39,6 +39,6 @@ This kind of stuff is encapsulated in the science of [Reliability Engineering](h
 
 > "...was one of the first highly structured, systematic techniques for failure analysis. It was developed by reliability engineers in the late 1950s to study problems that might arise from malfunctions of military systems. " - [FEMA, _Wikipedia_](https://en.wikipedia.org/wiki/Failure_mode_and_effects_analysis)
 
-This was applied on NASA missions, and then in the 1970's to car design following the [Ford Pinto exploding car](https://en.wikipedia.org/wiki/Ford_Pinto#Design_flaws_and_ensuing_lawsuits) affair.  But establishing the reliability of software dependencies like this would be _hard_ and _expensive_.  We are more likely to mitigate [Reliability Risk](#reliability-risk) in software using _testing_, _redundancy_ and _reserves_, as shown in the diagram above.  
+This was applied on NASA missions, and then in the 1970's to car design following the [Ford Pinto exploding car](https://en.wikipedia.org/wiki/Ford_Pinto#Design_flaws_and_ensuing_lawsuits) affair.  But establishing the reliability of software dependencies like this would be _hard_ and _expensive_.  We are more likely to mitigate [Reliability Risk](/tags/Reliability-Risk) in software using _testing_, _redundancy_ and _reserves_, as shown in the diagram above.  
 
 Additionally, we often rely on _proxies for reliability_.  We'll look at these proxies (and the way in which software projects signal their reliability) in much more detail in the section on [Software Dependency Risk](/tags/Software-Dependency-Risk).

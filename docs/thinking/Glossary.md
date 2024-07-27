@@ -2,7 +2,6 @@
 title: Glossary of Terms
 description: List of terms used to discuss risks on Risk-First.
 
-
 featured: 
   class: bg3
   element: '<document>Glossary</document>'

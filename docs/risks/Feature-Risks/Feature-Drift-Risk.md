@@ -26,7 +26,7 @@ The point is:  what users want _today_ might not make it to _tomorrow_.  This is
  - Certain ways of interacting become the norm (e.g. [querty](https://en.wikipedia.org/wiki/QWERTY) keyboards, or the control layout in cars: these don't change with time).
  - Features decline in usefulness: _Printing_ is less important now than it was,  for example.
  
-As shown in the diagram, saving your project from Feature Drift Risk means **further design and development**.   But trying to keep up with users' changing demands can re-introduce [Conceptual Integrity Risk](#conceptual-integrity-risk) back into your project.  
+As shown in the diagram, saving your project from Feature Drift Risk means **further design and development**.   But trying to keep up with users' changing demands can re-introduce [Conceptual Integrity Risk](/tags/Conceptual-Integrity-Risk) back into your project.  
 
 Sometimes, the only way to go is to start again with a clean sheet by some **distruptive innovation**.
 

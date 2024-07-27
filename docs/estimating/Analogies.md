@@ -23,7 +23,7 @@ So far, this track of articles has tried to bring the problems of estimating sof
 
 ![Three Dimensions From Fill-The-Bucket](/img/estimates/dimensions.png)
 
-In Risk-First, one of the main messages has been that it's all about your [Internal Model](/thinking/Glossary#internal-model).  If you have a good model of the world, then you're likely to be able to [Take Actions](/thinking/Glossary#taking-action) in the world that lead you to positions of lower risk.
+In Risk-First, one of the main messages has been that it's all about your [Internal Model](/thinking/Glossary#internal-model).  If you have a good model of the world, then you're likely to be able to [Take Actions](/tags/Take-Action) in the world that lead you to positions of lower risk.
 
 So the main reason for identifying all these different problem domains for estimation has been to improve that internal model.  
 

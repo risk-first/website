@@ -20,7 +20,7 @@ tweet: yes
 
 In [A Simple Scenario](A-Simple-Scenario) we introduced some terms for talking about risk (such as [Attendant Risk](/thinking/Glossary#attendant-risk), [Hidden Risk](/thinking/Glossary#attendant-risk) and the [Internal Model](/thinking/Glossary#internal-model)).  
 
-We've also introduced a notation in the form of [Risk-First Diagrams](./Risk-First-Diagrams) which allows us to represent the ways in which we can change the risks by [Taking Action](./Glossary#taking-action).
+We've also introduced a notation in the form of [Risk-First Diagrams](./Risk-First-Diagrams) which allows us to represent the ways in which we can change the risks by [Taking Action](/tags/Take-Action).
 
 Now, we are going to start applying our new terminology to software.  In the example below, we'll look at a "toy" process and use it for developing a new feature on a software project and see how our risk model informs it.
 
@@ -74,7 +74,9 @@ Two reasons:
 
 ## Applying the Toy Process
 
-Let's look at how our toy process should act to prevent these risks materializing by considering an unhappy path. One where, at the outset, we have lots of [Hidden Risks](/thinking/Glossary#hidden-risk).  Let's say a particularly vocal user rings up someone in the office and asks for new **Feature X** to be added to the software.  It's logged as a new feature request, but:
+Although bitter experience has shown that this is a terrible way of delivering software, I want to use Risk-First diagrams and our new terminology to explore exactly why this is the case by examining what happens to _risk_, and specifically look at how our toy process should act to prevent these risks materialising in production and causing maximum harm.
+
+First, let's consider the unhappy path.  One where, at the outset, we have lots of [Hidden Risks](/thinking/Glossary#hidden-risk).  Let's say a particularly vocal user rings up someone in the office and asks for new **Feature X** to be added to the software.  It's logged as a new feature request, but:
   
 - Unfortunately, this feature once programmed will break an existing **Feature Y**.
 - Implementing the feature will use some api in a library, which contains bugs and have to be coded around.
@@ -84,9 +86,9 @@ Let's look at how our toy process should act to prevent these risks materializin
 
 ![Development Process - Exposing Hidden Risks](/img/generated/introduction/development_process_3.svg)
 
-The diagram above shows how this plays out.
+The diagram above shows how this plays out.  As you can see, our truncated, two-step development process exposes us to all the hidden risks in production at the same time and disaster ensues.
 
-This is a slightly contrived example, as you'll see.  But let's follow our feature through the process and see how it meets reality slowly, and the [Hidden Risks](/thinking/Glossary#hidden-risk) are discovered:
+Now let's follow our feature through the toy process and see how it meets reality slowly, and the [Hidden Risks](/thinking/Glossary#hidden-risk) are exposed in a more benign way.
 
 ### Specification
 
@@ -117,9 +119,7 @@ As the developer begins coding the feature in the software, they will start with
 
 At this point, let's review the visual grammar of the diagram above.  Here, we're showing how the balance of risks will change if the developer [Takes Action](/thinking/Glossary#taking-action) and writes some code.  On the left, we have the current state of the world, on the right is the anticipated state _after_ taking the action.
 
-The round-cornered rectangles represent our [Internal Model](/thinking/Glossary#internal-model), and these contain our view of [Risk](/thinking/Glossary#risk), whether the risks we face right now, or the [Attendant Risks](/thinking/Glossary#attendant-risk) expected after taking the action.  We're not at the stage where taking this actions is _completing_ the goal.  In fact, arguably, we're facing _worse_ risks after taking action than before, since we now have _development difficulties_ to contend with!  
-
-But at least, taking the action of "coding and unit testing" is expected to mitigate the risk of "Duplicating Functionality".
+The round-cornered rectangles represent our [Internal Model](/thinking/Glossary#internal-model), and these contain our view of [Risk](/thinking/Glossary#risk), whether the risks we face right now, or the [Attendant Risks](/thinking/Glossary#attendant-risk) expected after taking the action.  We're not at the stage where taking this actions is _completing_ the goal.  In fact, arguably, we're facing _worse_ risks after taking action than before, since we now have _development difficulties_ to contend with... but at least we have uncovered these risks that were previously hidden.  
 
 Beneath the internal models we are also showing real-world tangible artifacts.  That is, the physical change we would expect to see as a result of taking action.  In the diagram above, the action will result in "New Code" being added to the project, needed for the next steps of the development process. 
 
@@ -137,7 +137,7 @@ As shown in the diagram above, at this stage we might discover the [Hidden Risk]
 
 Next, User Acceptance Testing (UAT) is where our new feature meets another reality: _actual users_.   I think you can see how the process works by now.  We're just flushing out yet more [Hidden Risks](/thinking/Glossary#hidden-risk).
 
-![UAT - putting tame users in front of your software is better than real ones, where the risk is higher ](/img/generated/introduction/development_process_uat.svg)
+![UAT - putting tame users in front of your software is be tter than real ones, where the risk is higher ](/img/generated/introduction/development_process_uat.svg)
 
 ## Observations
 

@@ -1,18 +1,36 @@
 import React from 'react';
 import { usePluginData } from '@docusaurus/useGlobalData'
 import Link from '@docusaurus/Link';
+import Heading from '@theme/Heading';
 import styles from './styles.module.css'
 import clsx from 'clsx';
 
+function generateMarkdownHeaderID(header) {
+    // Step 1: Convert all text to lowercase
+    let id = header.toLowerCase();
+
+    // Step 2: Replace all non-word characters with hyphens
+    id = id.replace(/[^\w\s]/g, '-');
+
+    // Step 3: Replace all spaces with hyphens
+    id = id.replace(/\s+/g, '-');
+
+    // Step 4: Replace two or more hyphens in a row with one hyphen
+    id = id.replace(/-+/g, '-');
+
+    return id;
+}
 
 function Term({ name, description, anchor, permalink, own_term, children }) {
 	const link = (permalink ? permalink + ( anchor ? "#"+anchor : "") : "") 
 	const tagLink = "/tags/" + name.replaceAll(" ","-")
 	const c = (children && children.length >0) 
+	//const id = generateMarkdownHeaderID(name)
+
 	return (
 		
 		<article className={styles.docItem}>
-			<h3><Link key={link} to={link} title="Go to main definition">{name}</Link> { own_term ? <span className={styles.ownTerm}>Risk-First Term</span> : null}</h3> 
+			<Heading as="h3"><Link key={link} to={link} title="Go to main definition">{name}</Link> { own_term ? <span className={styles.ownTerm}>Risk-First Term</span> : null}</Heading> 
 			<p className={styles.description}>{description} <Link className={styles.termTag} href={tagLink}>(View Tag)</Link> </p>
 			
 			{

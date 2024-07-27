@@ -68,7 +68,7 @@ Now, that's easier said than done!  Sometimes, you can end up somewhere _worse_:
 
 _Automating processes_ (as shown in the diagram above) is often tempting: it _should_ save time, and reduce the amount of boring, repetitive work on a project.  But sometimes, it turns into an industry in itself, consumes more effort than it'll ever pay back and needs to be maintained in the future at great expense. 
 
-One popular type of automation is [Unit Testing](/practices/Glossary-Of-Practices#unit-testing).  Writing unit tests adds to the amount of development work, so on its own, it _uses up time from the schedule_.  It also creates complexity - you now have more code to manage.   However, if you write _just enough_ of the right unit tests, you should be short-cutting the time spent finding issues in the User Acceptance Testing (UAT) stage, so you're hopefully trading off a larger [Schedule Risk](/tags/Schedule-Risk) from UAT and adding a smaller [Schedule Risk](/tags/Schedule-Risk) to Development.  
+One popular type of automation is [Unit Testing](/tags/Automated-Testing).  Writing unit tests adds to the amount of development work, so on its own, it _uses up time from the schedule_.  It also creates complexity - you now have more code to manage.   However, if you write _just enough_ of the right unit tests, you should be short-cutting the time spent finding issues in the User Acceptance Testing (UAT) stage, so you're hopefully trading off a larger [Schedule Risk](/tags/Schedule-Risk) from UAT and adding a smaller [Schedule Risk](/tags/Schedule-Risk) to Development.  
 
 ### Example: MongoDB
 

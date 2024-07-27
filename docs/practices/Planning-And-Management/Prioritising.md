@@ -13,6 +13,7 @@ practice:
    - "Release Planning"
    - "Task Prioritization"
    - "Minimum Viable Product"
+   - "Backlog Refinement"
   mitigates:
    - tag: Schedule Risk
      reason: "Helps in focusing on high-priority tasks and meeting deadlines."

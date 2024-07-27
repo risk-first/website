@@ -8,7 +8,7 @@
      zoomAndPan="magnify"
      contentStyleType="text/css"
      version="1.0"
-     width="952"
+     width="1042"
      pp:width="$width"
      preserveAspectRatio="xMidYMid meet"
      height="389"
@@ -512,7 +512,7 @@ text-align: center;
 --kite9-padding-right: 10pt;
 --kite9-padding-bottom: 10pt;
 --kite9-padding-left: 10pt;
---kite9-min-width: 120pt;
+--kite9-min-width: 145pt;
 --kite9-min-height: 160pt;
 }
 
@@ -549,25 +549,24 @@ text-align: center;
 --kite9-horizontal-align: CENTER;
 }
 
-*[k9-elem="celltext"] {
+*[k9-elem="celltext"][k9-format="text-fixed"] {
 --kite9-usage: REGULAR;
 --kite9-padding-top: 10pt;
 --kite9-padding-right: 10pt;
 --kite9-padding-bottom: 10pt;
 --kite9-padding-left: 10pt;
---kite9-vertical-align: CENTER;
---kite9-horizontal-align: LEFT;
+--kite9-vertical-align: BOTTOM;
+--kite9-horizontal-align: CENTER;
 --kite9-horizontal-sizing: MINIMIZE;
 --kite9-vertical-sizing: MINIMIZE;
-font-size: 40pt;
+font-size: 15pt;
 fill: black;
-font-family: "gothic";
 stroke: none;
 --kite9-text-bounds-width: 350pt;
 }
 
 *[k9-elem="celltext"].bold {
-font-family: "gothic-bold";
+font-weight: bold;
 }
 
 *[k9-elem="celltext"].bottom {
@@ -578,37 +577,8 @@ font-family: "gothic-bold";
 --kite9-horizontal-align: LEFT;
 }
 
-*[k9-elem="bulleted"] {
---kite9-usage: REGULAR;
---kite9-type: CONTAINER;
+*[k9-elem="description"].top {
 --kite9-vertical-align: TOP;
---kite9-horizontal-align: LEFT;
-font-size: 40pt;
-fill: black;
-font-family: "gothic";
-stroke: none;
-}
-
-*[k9-elem="ctext"] {
---kite9-usage: REGULAR;
---kite9-vertical-align: TOP;
---kite9-horizontal-align: LEFT;
-font-size: 40pt;
-fill: black;
-font-family: "gothic";
-stroke: none;
---kite9-type: TEXT;
-}
-
-*[k9-elem="btext"] {
---kite9-usage: REGULAR;
---kite9-vertical-align: TOP;
---kite9-horizontal-align: LEFT;
-font-size: 40pt;
-fill: black;
-font-family: "gothic-bold";
-stroke: none;
---kite9-type: TEXT;
 }
 
 *[k9-elem="tick"] {
@@ -632,10 +602,34 @@ stroke: none;
 --kite9-vertical-align: TOP;
 }
 
+*[k9-elem="table"] &gt; rect, *[k9-elem="table"] &gt; g &gt; rect {
+stroke: white;
+}
+
+*[k9-elem="table"].wide *[k9-elem="description"] {
+--kite9-text-bounds-width: 450pt;
+}
+
+*[k9-elem="description"].top {
+--kite9-horizontal-align: LEFT;
+text-align: left;
+}
+
+*[k9-elem="description"].left {
+--kite9-horizontal-align: LEFT;
+text-align: left;
+}
+
+*[k9-elem="description"].middle {
+--kite9-horizontal-align: CENTER;
+}
+
+*[k9-elem="cell"] &gt; g &gt; rect {
+stroke: white;
+}
+
 *[k9-elem="description"], *[k9-elem="long-description"], *.description {
 font-size: 14pt;
-font-family: "gothic-italic";
-font-style: italic;
 --kite9-padding-top: 10pt;
 --kite9-padding-right: 10pt;
 --kite9-padding-bottom: 10pt;
@@ -643,24 +637,10 @@ font-style: italic;
 --kite9-text-bounds-width: 250pt;
 }
 
-*[k9-elem="leg"] {
---kite9-type: CONTAINER;
---kite9-layout: DOWN;
---kite9-min-height: 110pt;
---kite9-min-width: 70pt;
---kite9-horizontal-sizing: MINIMIZE;
---kite9-vertical-sizing: MINIMIZE;
---kite9-margin-top: 0pt;
---kite9-margin-right: 0pt;
---kite9-margin-bottom: 0pt;
---kite9-margin-left: 0pt;
---kite9-vertical-align: BOTTOM;
-}
-
-*[k9-elem="plinth"] {
---kite9-type: CONTAINER;
---kite9-horizontal-sizing: MAXIMIZE;
---kite9-vertical-sizing: MAXIMIZE;
+*[k9-elem="description"].bold {
+fill: black;
+font-style: normal;
+font-weight: 600;
 }
 
 *[k9-elem="big-image"] {
@@ -824,6 +804,16 @@ indent: 0;
 text-align: center;
 font-weight: 300;
 font-style: italic;
+}
+
+*[k9-elem="glyph"].rect {
+--kite9-min-height: 40pt;
+--kite9-min-width: 30pt;
+}
+
+*[k9-elem="glyph"].circle {
+--kite9-min-height: 30pt;
+--kite9-min-width: 30pt;
 }
 
 *[k9-texture="none"] {
@@ -1166,7 +1156,7 @@ font-size: 16pt;
 --kite9-link-minimum-length: 30pt;
 }
 
-*[k9-elem="glyph"][k9-texture="background"] &gt; g &gt; rect, *[k9-elem="action"] *[k9-texture="background"] {
+*[k9-elem="glyph"][k9-texture="background"] &gt; g &gt; rect, *[k9-elem="glyph"][k9-texture="background"] &gt; g &gt; ellipse, *[k9-elem="action"] *[k9-texture="background"] {
 fill: url(#risk-background);
 stroke: black;
 stroke-width: 1pt;
@@ -1446,7 +1436,7 @@ fill-opacity: 1;
       k9-contains="connected label"
       k9-texture="none"
       style="--kite9-min-width: 600pt;"
-      k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [800.0000610351562 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: diagram; rect-pos: [0.0, 0.0]; rect-size: [952.0, 389.0]; position: none; painter: direct-svg; "
+      k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [800.0000610351562 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: diagram; rect-pos: [0.0, 0.0]; rect-size: [1042.0, 389.0]; position: none; painter: direct-svg; "
       id="dia"
       k9-format="container"
       k9-ui="layout label fill size"
@@ -1456,7 +1446,7 @@ fill-opacity: 1;
       <g class="k9-shape">
          <rect x="0"
                y="0"
-               width="952"
+               width="1042"
                pp:y="$y"
                pp:height="$height"
                pp:x="$x"
@@ -1471,11 +1461,11 @@ fill-opacity: 1;
             style="--kite9-layout: down; --kite9-vertical-sizing: maximize; "
             transform="translate(26.0,26.0)"
             k9-format="container"
-            k9-info="margin: [26.666667938232422 26.666667938232422 26.666667938232422 26.666667938232422]; padding: [0.0 0.0 0.0 0.0]; min-size: [53.333335876464844 53.333335876464844]; sizing: [maximize minimize]; horiz: center; vert: center; layout: down; rectangular: connected; rect-pos: [26.0, 26.0]; rect-size: [249.0, 337.0]; position: none; painter: direct-svg; ">
+            k9-info="margin: [26.666667938232422 26.666667938232422 26.666667938232422 26.666667938232422]; padding: [0.0 0.0 0.0 0.0]; min-size: [53.333335876464844 53.333335876464844]; sizing: [maximize minimize]; horiz: center; vert: center; layout: down; rectangular: connected; rect-pos: [26.0, 26.0]; rect-size: [273.0, 337.0]; position: none; painter: direct-svg; ">
             <g class="k9-shape" k9-highlight="pulse stroke">
                <rect x="0"
                      y="0"
-                     width="249"
+                     width="273"
                      pp:y="$y"
                      pp:height="$height"
                      pp:x="$x"
@@ -1489,7 +1479,7 @@ fill-opacity: 1;
                   transform="translate(20.0,20.0)"
                   k9-texture="background"
                   style="--kite9-layout: down; "
-                  k9-info="margin: [20.0 20.0 20.0 20.0]; padding: [20.0 20.0 20.0 20.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: down; rectangular: connected; rect-pos: [46.0, 46.0]; rect-size: [209.0, 297.0]; position: none; painter: direct-svg; "
+                  k9-info="margin: [20.0 20.0 20.0 20.0]; padding: [20.0 20.0 20.0 20.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: down; rectangular: connected; rect-pos: [46.0, 46.0]; rect-size: [233.0, 297.0]; position: none; painter: direct-svg; "
                   bordered="true"
                   id="c"
                   k9-format="container"
@@ -1499,7 +1489,7 @@ fill-opacity: 1;
                   <g class="k9-shape" k9-highlight="pulse">
                      <rect x="0"
                            y="0"
-                           width="209"
+                           width="233"
                            pp:y="$y"
                            pp:height="$height"
                            pp:x="$x"
@@ -1510,9 +1500,9 @@ fill-opacity: 1;
                   </g>
                   <g class="k9-content">
                      <g href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg"
-                        transform="translate(25.0,20.0)"
+                        transform="translate(20.0,20.0)"
                         k9-texture="background"
-                        k9-info="margin: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [160.0 213.33334350585938]; sizing: [minimize minimize]; horiz: center; vert: center; layout: down; rectangular: connected; rect-pos: [71.0, 66.0]; rect-size: [160.0, 213.0]; position: none; painter: direct-svg; "
+                        k9-info="margin: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [193.33334350585938 213.33334350585938]; sizing: [minimize minimize]; horiz: center; vert: center; layout: down; rectangular: connected; rect-pos: [66.0, 66.0]; rect-size: [193.0, 213.0]; position: none; painter: direct-svg; "
                         class="generic"
                         id="id_0"
                         k9-format="container"
@@ -1522,7 +1512,7 @@ fill-opacity: 1;
                         <g class="k9-shape" k9-highlight="pulse">
                            <rect x="0"
                                  y="0"
-                                 width="160"
+                                 width="193"
                                  pp:y="$y"
                                  pp:height="$height"
                                  pp:x="$x"
@@ -1534,9 +1524,9 @@ fill-opacity: 1;
                         <g class="k9-content">
                            <g k9-elem="code"
                               k9-texture="foreground"
-                              transform="translate(50.8,42.3)"
+                              transform="translate(67.8,42.3)"
                               k9-format="text-fixed"
-                              k9-info="margin: [0.0 0.0 13.333333969116211 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: top; rectangular: connected; rect-pos: [124.0, 79.0]; rect-size: [54.0, 35.0]; position: none; painter: direct-svg; ">
+                              k9-info="margin: [0.0 0.0 13.333333969116211 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: top; rectangular: connected; rect-pos: [136.0, 79.0]; rect-size: [54.0, 35.0]; position: none; painter: direct-svg; ">
                               <g class="k9-content k9-no-shape" k9-highlight="pulse">
                                  <g rendered="true">
                                     <g>
@@ -1547,9 +1537,9 @@ fill-opacity: 1;
                               </g>
                            </g>
                            <g href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg"
-                              transform="translate(46.7,71.7)"
+                              transform="translate(63.7,71.7)"
                               k9-texture="none"
-                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [117.0, 137.0]; rect-size: [68.0, 68.0]; position: none; painter: direct-svg; "
+                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [129.0, 137.0]; rect-size: [68.0, 68.0]; position: none; painter: direct-svg; "
                               class="generic"
                               id="id_0@image"
                               k9-format="image"
@@ -1576,9 +1566,9 @@ fill-opacity: 1;
                            </g>
                            <g k9-elem="title"
                               k9-texture="foreground"
-                              transform="translate(22.1,170.3)"
+                              transform="translate(39.1,170.3)"
                               k9-format="text-fixed"
-                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: bottom; rectangular: connected; rect-pos: [95.0, 215.0]; rect-size: [112.0, 51.0]; position: none; painter: direct-svg; ">
+                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: bottom; rectangular: connected; rect-pos: [107.0, 215.0]; rect-size: [112.0, 51.0]; position: none; painter: direct-svg; ">
                               <g class="k9-content k9-no-shape" k9-highlight="pulse">
                                  <g rendered="true">
                                     <g>
@@ -1597,9 +1587,9 @@ fill-opacity: 1;
                         </g>
                      </g>
                      <g k9-contains="none"
-                        transform="translate(20.0,246.0)"
+                        transform="translate(32.0,246.0)"
                         k9-texture="none"
-                        k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: label; rect-pos: [66.0, 292.0]; rect-size: [169.0, 51.0]; position: none; placement: down;painter: direct-svg; "
+                        k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: label; rect-pos: [78.0, 292.0]; rect-size: [169.0, 51.0]; position: none; placement: down;painter: direct-svg; "
                         id="id_16"
                         k9-format="text-shape-inline"
                         k9-ui="delete edit xml drag place fill stroke size font direction align"
@@ -1622,7 +1612,7 @@ fill-opacity: 1;
                               k9-texture="foreground"
                               transform="translate(11.4,34.3)"
                               k9-format="text-fixed"
-                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [79.0, 305.0]; rect-size: [143.0, 25.0]; position: none; painter: direct-svg; ">
+                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [91.0, 305.0]; rect-size: [143.0, 25.0]; position: none; painter: direct-svg; ">
                               <g class="k9-content k9-no-shape" k9-highlight="pulse">
                                  <g rendered="true">
                                     <g fill="rgb(36,51,20)" stroke="rgb(36,51,20)">
@@ -1641,9 +1631,9 @@ fill-opacity: 1;
          <g k9-elem="group"
             k9-texture="none"
             style="--kite9-layout: down; --kite9-sizing: maximize; "
-            transform="translate(301.0,26.0)"
+            transform="translate(325.0,26.0)"
             k9-format="container"
-            k9-info="margin: [26.666667938232422 26.666667938232422 26.666667938232422 26.666667938232422]; padding: [0.0 0.0 0.0 0.0]; min-size: [53.333335876464844 53.333335876464844]; sizing: [maximize maximize]; horiz: center; vert: center; layout: down; rectangular: connected; rect-pos: [301.0, 26.0]; rect-size: [186.0, 337.0]; position: none; painter: direct-svg; ">
+            k9-info="margin: [26.666667938232422 26.666667938232422 26.666667938232422 26.666667938232422]; padding: [0.0 0.0 0.0 0.0]; min-size: [53.333335876464844 53.333335876464844]; sizing: [maximize maximize]; horiz: center; vert: center; layout: down; rectangular: connected; rect-pos: [325.0, 26.0]; rect-size: [186.0, 337.0]; position: none; painter: direct-svg; ">
             <g class="k9-shape" k9-highlight="pulse stroke">
                <rect x="0"
                      y="0"
@@ -1659,7 +1649,7 @@ fill-opacity: 1;
             <g class="k9-content">
                <g transform="translate(13.0,140.0)"
                   k9-texture="background"
-                  k9-info="margin: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; padding: [16.0 29.33333396911621 16.0 16.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: connected; rect-pos: [314.0, 166.0]; rect-size: [160.0, 57.0]; position: none; painter: direct-svg; "
+                  k9-info="margin: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; padding: [16.0 29.33333396911621 16.0 16.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: connected; rect-pos: [338.0, 166.0]; rect-size: [160.0, 57.0]; position: none; painter: direct-svg; "
                   id="a"
                   k9-format="text-shape-inline"
                   k9-ui="size drag delete align connect autoconnect edit vote"
@@ -1679,7 +1669,7 @@ fill-opacity: 1;
                         k9-texture="foreground"
                         transform="translate(14.1,37.3)"
                         k9-format="text-fixed"
-                        k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [330.0, 182.0]; rect-size: [115.0, 25.0]; position: none; painter: direct-svg; ">
+                        k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [354.0, 182.0]; rect-size: [115.0, 25.0]; position: none; painter: direct-svg; ">
                         <g class="k9-content k9-no-shape" k9-highlight="pulse">
                            <g rendered="true">
                               <g>
@@ -1696,13 +1686,13 @@ fill-opacity: 1;
          <g k9-elem="group"
             k9-texture="none"
             style="--kite9-layout: down; "
-            transform="translate(513.0,26.0)"
+            transform="translate(537.0,26.0)"
             k9-format="container"
-            k9-info="margin: [26.666667938232422 26.666667938232422 26.666667938232422 26.666667938232422]; padding: [0.0 0.0 0.0 0.0]; min-size: [53.333335876464844 53.333335876464844]; sizing: [minimize minimize]; horiz: center; vert: center; layout: down; rectangular: connected; rect-pos: [513.0, 26.0]; rect-size: [413.0, 337.0]; position: none; painter: direct-svg; ">
+            k9-info="margin: [26.666667938232422 26.666667938232422 26.666667938232422 26.666667938232422]; padding: [0.0 0.0 0.0 0.0]; min-size: [53.333335876464844 53.333335876464844]; sizing: [minimize minimize]; horiz: center; vert: center; layout: down; rectangular: connected; rect-pos: [537.0, 26.0]; rect-size: [479.0, 337.0]; position: none; painter: direct-svg; ">
             <g class="k9-shape" k9-highlight="pulse stroke">
                <rect x="0"
                      y="0"
-                     width="413"
+                     width="479"
                      pp:y="$y"
                      pp:height="$height"
                      pp:x="$x"
@@ -1715,7 +1705,7 @@ fill-opacity: 1;
                <g k9-contains="connected port label terminator"
                   transform="translate(20.0,20.0)"
                   k9-texture="background"
-                  k9-info="margin: [20.0 20.0 20.0 20.0]; padding: [20.0 20.0 20.0 20.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: connected; rect-pos: [533.0, 46.0]; rect-size: [373.0, 297.0]; position: none; painter: direct-svg; "
+                  k9-info="margin: [20.0 20.0 20.0 20.0]; padding: [20.0 20.0 20.0 20.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: connected; rect-pos: [557.0, 46.0]; rect-size: [439.0, 297.0]; position: none; painter: direct-svg; "
                   bordered="true"
                   id="c-zr"
                   k9-format="container"
@@ -1725,7 +1715,7 @@ fill-opacity: 1;
                   <g class="k9-shape" k9-highlight="pulse">
                      <rect x="0"
                            y="0"
-                           width="373"
+                           width="439"
                            pp:y="$y"
                            pp:height="$height"
                            pp:x="$x"
@@ -1738,7 +1728,7 @@ fill-opacity: 1;
                      <g href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg"
                         transform="translate(20.0,20.0)"
                         k9-texture="background"
-                        k9-info="margin: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [160.0 213.33334350585938]; sizing: [minimize minimize]; horiz: center; vert: center; layout: down; rectangular: connected; rect-pos: [553.0, 66.0]; rect-size: [160.0, 213.0]; position: none; painter: direct-svg; "
+                        k9-info="margin: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [193.33334350585938 213.33334350585938]; sizing: [minimize minimize]; horiz: center; vert: center; layout: down; rectangular: connected; rect-pos: [577.0, 66.0]; rect-size: [193.0, 213.0]; position: none; painter: direct-svg; "
                         class="generic"
                         id="id_0-ae"
                         k9-format="container"
@@ -1748,7 +1738,7 @@ fill-opacity: 1;
                         <g class="k9-shape" k9-highlight="pulse">
                            <rect x="0"
                                  y="0"
-                                 width="160"
+                                 width="193"
                                  pp:y="$y"
                                  pp:height="$height"
                                  pp:x="$x"
@@ -1760,9 +1750,9 @@ fill-opacity: 1;
                         <g class="k9-content">
                            <g k9-elem="code"
                               k9-texture="foreground"
-                              transform="translate(50.8,42.3)"
+                              transform="translate(67.8,42.3)"
                               k9-format="text-fixed"
-                              k9-info="margin: [0.0 0.0 13.333333969116211 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: top; rectangular: connected; rect-pos: [606.0, 79.0]; rect-size: [54.0, 35.0]; position: none; painter: direct-svg; ">
+                              k9-info="margin: [0.0 0.0 13.333333969116211 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: top; rectangular: connected; rect-pos: [647.0, 79.0]; rect-size: [54.0, 35.0]; position: none; painter: direct-svg; ">
                               <g class="k9-content k9-no-shape" k9-highlight="pulse">
                                  <g rendered="true">
                                     <g>
@@ -1773,9 +1763,9 @@ fill-opacity: 1;
                               </g>
                            </g>
                            <g href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg"
-                              transform="translate(46.7,71.7)"
+                              transform="translate(63.7,71.7)"
                               k9-texture="none"
-                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [599.0, 137.0]; rect-size: [68.0, 68.0]; position: none; painter: direct-svg; "
+                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [640.0, 137.0]; rect-size: [68.0, 68.0]; position: none; painter: direct-svg; "
                               class="generic"
                               id="id_0-ae@image"
                               k9-format="image"
@@ -1802,9 +1792,9 @@ fill-opacity: 1;
                            </g>
                            <g k9-elem="title"
                               k9-texture="foreground"
-                              transform="translate(28.1,170.3)"
+                              transform="translate(45.1,170.3)"
                               k9-format="text-fixed"
-                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: bottom; rectangular: connected; rect-pos: [582.0, 215.0]; rect-size: [102.0, 51.0]; position: none; painter: direct-svg; ">
+                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: bottom; rectangular: connected; rect-pos: [623.0, 215.0]; rect-size: [102.0, 51.0]; position: none; painter: direct-svg; ">
                               <g class="k9-content k9-no-shape" k9-highlight="pulse">
                                  <g rendered="true">
                                     <g>
@@ -1823,9 +1813,9 @@ fill-opacity: 1;
                         </g>
                      </g>
                      <g href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg"
-                        transform="translate(193.0,20.0)"
+                        transform="translate(226.0,20.0)"
                         k9-texture="background"
-                        k9-info="margin: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [160.0 213.33334350585938]; sizing: [minimize minimize]; horiz: center; vert: center; layout: down; rectangular: connected; rect-pos: [726.0, 66.0]; rect-size: [160.0, 213.0]; position: none; painter: direct-svg; "
+                        k9-info="margin: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [193.33334350585938 213.33334350585938]; sizing: [minimize minimize]; horiz: center; vert: center; layout: down; rectangular: connected; rect-pos: [783.0, 66.0]; rect-size: [193.0, 213.0]; position: none; painter: direct-svg; "
                         class="generic"
                         id="id_0-ry"
                         k9-format="container"
@@ -1835,7 +1825,7 @@ fill-opacity: 1;
                         <g class="k9-shape" k9-highlight="pulse">
                            <rect x="0"
                                  y="0"
-                                 width="160"
+                                 width="193"
                                  pp:y="$y"
                                  pp:height="$height"
                                  pp:x="$x"
@@ -1847,9 +1837,9 @@ fill-opacity: 1;
                         <g class="k9-content">
                            <g k9-elem="code"
                               k9-texture="foreground"
-                              transform="translate(50.8,42.3)"
+                              transform="translate(67.8,42.3)"
                               k9-format="text-fixed"
-                              k9-info="margin: [0.0 0.0 13.333333969116211 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: top; rectangular: connected; rect-pos: [779.0, 79.0]; rect-size: [54.0, 35.0]; position: none; painter: direct-svg; ">
+                              k9-info="margin: [0.0 0.0 13.333333969116211 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: top; rectangular: connected; rect-pos: [853.0, 79.0]; rect-size: [54.0, 35.0]; position: none; painter: direct-svg; ">
                               <g class="k9-content k9-no-shape" k9-highlight="pulse">
                                  <g rendered="true">
                                     <g>
@@ -1860,9 +1850,9 @@ fill-opacity: 1;
                               </g>
                            </g>
                            <g href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg"
-                              transform="translate(46.7,71.7)"
+                              transform="translate(63.7,71.7)"
                               k9-texture="none"
-                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [772.0, 137.0]; rect-size: [68.0, 68.0]; position: none; painter: direct-svg; "
+                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [846.0, 137.0]; rect-size: [68.0, 68.0]; position: none; painter: direct-svg; "
                               class="generic"
                               id="id_0-ry@image"
                               k9-format="image"
@@ -1889,9 +1879,9 @@ fill-opacity: 1;
                            </g>
                            <g k9-elem="title"
                               k9-texture="foreground"
-                              transform="translate(12.3,170.3)"
+                              transform="translate(29.3,170.3)"
                               k9-format="text-fixed"
-                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: bottom; rectangular: connected; rect-pos: [740.0, 215.0]; rect-size: [132.0, 51.0]; position: none; painter: direct-svg; ">
+                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: bottom; rectangular: connected; rect-pos: [814.0, 215.0]; rect-size: [132.0, 51.0]; position: none; painter: direct-svg; ">
                               <g class="k9-content k9-no-shape" k9-highlight="pulse">
                                  <g rendered="true">
                                     <g>
@@ -1910,9 +1900,9 @@ fill-opacity: 1;
                         </g>
                      </g>
                      <g k9-contains="none"
-                        transform="translate(54.0,246.0)"
+                        transform="translate(87.0,246.0)"
                         k9-texture="none"
-                        k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: label; rect-pos: [587.0, 292.0]; rect-size: [266.0, 51.0]; position: none; placement: down;painter: direct-svg; "
+                        k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: label; rect-pos: [644.0, 292.0]; rect-size: [266.0, 51.0]; position: none; placement: down;painter: direct-svg; "
                         id="id_16-nm"
                         k9-format="text-shape-inline"
                         k9-ui="delete edit xml drag place fill stroke size font direction align"
@@ -1935,7 +1925,7 @@ fill-opacity: 1;
                               k9-texture="foreground"
                               transform="translate(11.3,34.3)"
                               k9-format="text-fixed"
-                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [600.0, 305.0]; rect-size: [240.0, 25.0]; position: none; painter: direct-svg; ">
+                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [657.0, 305.0]; rect-size: [240.0, 25.0]; position: none; painter: direct-svg; ">
                               <g class="k9-content k9-no-shape" k9-highlight="pulse">
                                  <g rendered="true">
                                     <g fill="rgb(36,51,20)" stroke="rgb(36,51,20)">

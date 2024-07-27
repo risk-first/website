@@ -126,7 +126,7 @@ Sadly, this meant that I’d actually had to test and rule out _all of the other
 
 ## Some Notes
 
-1.  I started by writing down all the things I knew, and all of my hypotheses.  Why?  Surely, time was short!  I did this _because_ time was short.  The reason was, by having all of the facts and hypotheses to hand I was setting up my [Internal Model](/thinking/Glossary#internal-model) of the problem, with which I could reason about the new information as I came across it.
+1.  I started by writing down all the things I knew, and all of my hypotheses.  Why?  Surely, time was short!  I did this _because_ time was short.  The reason was, by having all of the facts and hypotheses to hand I was setting up my [Internal Model](/tags/Internal-Model) of the problem, with which I could reason about the new information as I came across it.
 2.  I performed four tests, and ended up ruling out six different hypotheses.   That feels like good value-for-time.
 3.  In each case, I am trading _time_ to change the risk profile of the problem.  By reducing to zero the likelihood of some risks, I am increasing the likelihood of those left.  So a good test would:
  - a.  Bisect probability space 50/50.  That way the information is maximised.

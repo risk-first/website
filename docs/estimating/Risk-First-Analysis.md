@@ -117,7 +117,7 @@ So, on the right side of the action, we are showing the [Attendant Risks](/think
 
 ## Question 3:  What Is The Expected Return?
 
-If we know what we lose and what we gain from each action we take, then it's simple maths to work out what the best actions to take on a project are simply pick the ones with the greatest [Expected Return](../thinking/Glossary#expected-return) (as shown in the above diagram).
+If we know what we lose and what we gain from each action we take, then it's simple maths to work out what the best actions to take on a project are simply pick the ones with the greatest [Expected Return](/tags/Expected-Return) (as shown in the above diagram).
 
 ### Upside Risk
 
@@ -163,7 +163,7 @@ All I need to do is "weigh up" the change in risks as best as I can.  A lot of t
 
 ## Ensemble
 
-So far, we've been looking at each task individually, working out which risks we're addressing, and which ones we're exposed to as a result.  If you have plenty of spare talent and only a few tasks, then maybe that's enough and you can get to work on all the tasks that have a positive [Payoff](/thinking/Glossary#payoff).   But if you're constrained, then you should be hunting for the [actions](/thinking/Glossary#taking-action) with the biggest [Payoff](/thinking/Glossary#payoff) and doing those first.
+So far, we've been looking at each task individually, working out which risks we're addressing, and which ones we're exposed to as a result.  If you have plenty of spare talent and only a few tasks, then maybe that's enough and you can get to work on all the tasks that have a positive [Payoff](/thinking/Glossary#payoff).   But if you're constrained, then you should be hunting for the [actions](/tags/Take-Action) with the biggest [Payoff](/thinking/Glossary#payoff) and doing those first.
 
 Things change too when you have a whole team engaged in the planning process.  Although people will generally agree on what the risks _are_, they often will disagree on the [Probability they will occur, or the impact if they do](/thinking/Track-Risk#risk-registers).   In cases like these, you might want to allow each stakeholder to "vote up" the risks they consider significant, or vote up the actions they consider to have high [Payoff](/thinking/Glossary#payoff).  This will be covered in further detail in the [next section](Stop-Estimating-Start-Navigating).
 

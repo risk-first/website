@@ -34,7 +34,7 @@ So, we are going to go on a journey discovering Communication Risk, covering:
 - A look at the four different _stages_ of communication and examples of each in the world of computing.
 - Breaking down [Communication Risk](/tags/Communication-Risk) as it affects each stage, discussing the types of risks present for each one.
 - The many problems faced in product marketing.
-- The concept of _abstraction_ and it's associated [Invisibility Risk](#invisibility-risk). 
+- The concept of _abstraction_ and it's associated [Invisibility Risk](/tags/Invisibility-Risk). 
 
 ## A Model Of Communication
 

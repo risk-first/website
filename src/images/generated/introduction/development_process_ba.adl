@@ -1,44 +1,38 @@
-<?xml version="1.0"?>
-<diagram
-	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
-	xmlns="http://www.kite9.org/schema/adl"
-	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
-    style="--kite9-min-width: 600pt;">
+<diagram xmlns="http://www.kite9.org/schema/adl" xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia" style="--kite9-min-width: 600pt;" xslt:template="/public/templates/risk-first/risk-first-template.xsl">
+   <group id="jeff" style="--kite9-vertical-align: top; ">
+      <container bordered="true" id="c">
+         <risk class="goal" id="id_0">Feature X</risk>
+         <label id="id_16">
+				Internal Model
 
-
-
-    <container id="c" bordered="true">
-
-      <risk id="id_0" class="goal">Feature X</risk>
-
-      <label id="id_16">
-        Internal Model
-        
-      </label>
-    </container>
-
-    <action>Write Specification</action>
-
-    <group style="--kite9-layout: down">
-      <container id="d">
-        <hidden>
-          <risk class="attendant">Incorrect
-            Implementation
-          </risk>
-        </hidden>
-        <hidden>
-          <risk class="attendant">Duplicates
-            Functionality
-          </risk>
-        </hidden>
-        <label id="4">
-          Hidden Risks
-          
-        </label>
+			</label>
       </container>
-
+   </group>
+   <action id="cat">Write Specification</action>
+   <group id="bob" style="--kite9-layout: down">
+      <container id="d">
+         <hidden>
+            <risk class="attendant">Incorrect
+					Implementation
+				</risk>
+         </hidden>
+         <hidden>
+            <risk class="attendant">Duplicates
+					Functionality
+				</risk>
+         </hidden>
+         <label id="4">
+				Internal Model
+			</label>
+      </container>
       <artifact>Specification</artifact>
-    </group>
-
-
-  </diagram>
+   </group>
+   <align id="2-0" style="--kite9-direction: right; ">
+      <from id="2-0-0" reference="c"/>
+      <to id="2-0-1" reference="cat"/>
+   </align>
+   <align id="2-1" style="--kite9-direction: right; ">
+      <from id="2-1-0" reference="cat"/>
+      <to id="2-1-1" reference="d"/>
+   </align>
+</diagram>
