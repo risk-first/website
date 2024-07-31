@@ -18,7 +18,7 @@ definitions:
    description: Testing out the predictive power of an Internal Model by exposing it to reality. 
    own_term: true
  - name: Internal Model
-   description: The model of reality held by an individual, team, software system or other Agent. 
+   description: The risk model of reality held by an individual, team, software system or other Agent. 
    anchor: different-internal-models
 sidebar_position: 4
 redirect_from: 
@@ -36,15 +36,24 @@ Here we look at how exposing your [Internal Model](/tags/Meeting-Reality) to rea
 
 ## Different Internal Models
 
-The world is too complex to understand at a glance.  It takes years of growth and development for humans to build a useful [internal model](/tags/Internal-Model) of reality in our heads.  
+The world is too complex to understand at a glance.  It takes years of growth and development for humans to build a useful [internal model](/tags/Internal-Model) of reality in our heads in order to understand the risks they face.  Even then, we need domain experts to understand _specific_ kinds of risk in specific areas (like software development, for example).
 
-Within a development team, the model is split amongst people, documents, email, tickets, code... but it is still a model.  
+Within a development team, that model is split amongst people, documents, email, tickets, code... but it is still a model.  
 
-This "[Internal Model](/tags/Internal-Model)" of reality informs the actions we take in life: we take actions based on our model, hoping to change reality with some positive outcome.
+This [Internal Model](/tags/Internal-Model) of reality informs the actions we take in life: we take actions based on our model, hoping to change reality with some positive outcome.
 
 ![Taking actions changes reality, but changes your model of the risks too](/img/generated/introduction/model_vs_reality_2.svg)
 
-For example, while [organising a dinner party](A-Simple-Scenario) you'll have a model of who you expect to come.  You might take actions to ensure there is enough food, that you've got RSVPs and so on.
+When we started [organising our dinner party](A-Simple-Scenario) we had an internal model of the risks we faced doing that.  You might take actions to ensure there is enough food, that you've got RSVPs and so on.
+
+:::info Where does the term "Internal Model" come from?
+Risk-First borrows the term "Internal Model" from the finance industry, where it was used in the [2004 Basel II capital requirements rules](https://en.wikipedia.org/wiki/Basel_II) (i.e. rules to say how much money (or capital) banks needed to keep handy for any crises that might arise.  In Basel II there was an "Internal Model Method", where a bank could create _its own_ model for how much capital it needed to store.  The catch was, the bank would have to demonstrate via simulations that this would have been adequate for any crisis occurring in the previous ten years.
+
+Sadly, the financial crisis of 2007 demonstrated very quickly that just looking at the last ten years probably wasn't enough.  
+
+Interestingly, the term was previously used in [Cybernetics Theory](https://en.wikipedia.org/wiki/Cybernetics) which looked at concepts of feedback and control in dynamically evolving systems, which is exactly what we're looking at here too.
+   
+:::
 
 The actions we take have consequences in the real world.   Hopefully, we eliminate some known risks but we might expose new [hidden risks](/tags/Hidden-Risk) as we go.  There is a _recursive_ nature about this - we're left with an updated Internal Model, and we see new actions we have to take as a result.
 
@@ -121,6 +130,10 @@ So, here we've looked at Meeting Reality, which basically boils down to taking a
 - Each action you take is a step on the [Risk Landscape](/tags/Risk-Landscape), trading off one set of risks for another.
 - Each action exposes new [Hidden Risks](/tags/Hidden-Risk), changing your [Internal Model](/tags/Internal-Model).
 - Ideally, each action should reduce the overall [Attendant Risk](/tags/Attendant-Risk) on the project (that is, puts it in a better place on the [Risk Landscape](/tags/Risk-Landscape).
+
+<BoxOut title="Terms Used" link="/thinking/Glossary" linkText="View Glossary">
+<TermList details={frontMatter} /> 
+</BoxOut>
 
 Could it be that _everything_ you do on a software project is risk management? This is an idea explored next in [Just Risk](Just-Risk).
 

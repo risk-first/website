@@ -38,7 +38,7 @@ function DocItem({ doc }) {
 function DocItemImage({ doc }) {
 	const pl = doc.permalink
 	const stripped = pl.endsWith('/') ? pl+"index" : pl
-	const imageLink = "/img/generated/single/" + stripped + ".png"
+	const imageLink = "/img/generated/single/" + stripped + ".svg"
 
 	return (
 		

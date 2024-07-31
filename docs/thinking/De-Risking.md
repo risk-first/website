@@ -10,10 +10,45 @@ tags:
  - Take Action
  - Risk Landscape
  - Upside Risk
+ - Share
+ - Avoid
+ - Exploit
+ - Reduce
+ - Retain
+ - Control
+ - Ignore
+ - Monitor
 definitions:
  - name: Take Action
    description: Refers to any activity in the project. Actions are taken in order to manage some risk. At the same time, Taking Action usually means interacting with reality and updating the Internal Model.
    anchor: what-is-taking-action
+ - name: Exploit
+   description:  Take advantage of an upside risk or opportunity.
+   anchor: exploit
+ - name: Reduce
+   description:  Minimise the impact of a risk arising.
+   anchor: reduced
+ - name: Share
+   description:  Sharing with another party the burden or loss of a risk.
+   anchor: share
+ - name: Avoid
+   description:  Taking a route on the risk landscape around the risk.
+   anchor: avoid
+ - name: Retain
+   description:  Accepting a risk you can't reduce, share or avoid.
+   anchor: retain
+ - name: Ignore
+   description: Ignoring a risk entirely.
+   anchor: ignore
+   part_of: Retain
+ - name: Control
+   description: Accepting a risk but making provisions to ensure it doesn't worsen.
+   anchor: control
+   part_of: Retain
+ - name: Monitor
+   description: Identifying, quantifying and measuring a risk to help manage it.
+   anchor: monitor
+   part_of: Retain
 sidebar_position: 8
 redirect_from: 
  - /De-Risking
@@ -168,7 +203,7 @@ The table above lists a set of _generic strategies_ for derisking which we'll lo
 
 ## Control
 
-**Controlling** or **containing** risks means that you accept the risk but you have provisions to for when things get out of hand.  
+**Controlling** or **containing** risks means that you accept the risk but you have provisions in place for when things get out of hand.  
 
 There is a grey area here, because on the one hand you are [retaining](#retain) some of the risk but also trying to [reduce](#reduce) its worst features.  
 
