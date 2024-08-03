@@ -11,6 +11,9 @@ import Layout from "@theme/Layout";
 import NewSplashTop from "../components/front/NewSplashTop";
 import WhatIsIt from "../components/front/WhatIsIt";
 
+import Benefits from "../components/front/Benefits";
+import Parts from "../components/front/Parts";
+import Books from "../components/front/Books";
 
 
 
@@ -18,7 +21,9 @@ export default () => {
 	return (<Layout>
 		<NewSplashTop />
 		<WhatIsIt />
-		
+		<Benefits />
+		<Parts />
+		<Books />
 
 	</Layout>)
 }

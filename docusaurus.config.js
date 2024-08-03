@@ -94,6 +94,7 @@ const config = {
 				logo: {
 					alt: 'Risk First Logo',
 					src: 'img/R1_logo_round_white.svg',
+					srcDark: 'img/R1_logo_round_black.svg'
 				},
 				items: [
 					...navLinks,

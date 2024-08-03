@@ -10,6 +10,7 @@ featured:
 sidebar_position: 3
 tags:
   - Front
+  - Read All About It
 tweet: yes
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Thinking Risk-First
-description: Learning to think about software development from the perspective of risk
+description: Thinking about software development from the perspective of risk
 
 
 featured: 
@@ -10,6 +10,7 @@ layout: categories
 cat: Thinking Risk-First
 tags:
  - Front
+ - Read All About It
 sidebar_position: 2
 tweet: yes
 ---

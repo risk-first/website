@@ -1,6 +1,6 @@
 ---
 title: Books
-description: Risk-First Books
+description: Books you can buy on the subject of Risk-First
 
 featured: 
   class: bg1
@@ -9,6 +9,7 @@ layout: categories
 cat: Complexity
 tags:
  - Front
+ - Read All About It
 sidebar_position: 6
 tweet: yes
 ---

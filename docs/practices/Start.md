@@ -1,9 +1,10 @@
 ---
 title: Practices
-description: Discussion Of Software Development Practices
+description: Index of key software development practices
 
 tags:
   - Front
+  - Read All About It
 sidebar_position: 4
 
 
