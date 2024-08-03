@@ -1,0 +1,72 @@
+
+.siteHeader {
+	font-family: Geomanist;
+	font-weight: 600;
+    color: rgb(245, 62, 121);
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+.lead {
+	font-family: Geomanist;
+	font-weight: 400;
+	font-size: 1.5rem;
+}
+
+section.nst {
+	margin: auto;
+	max-width: 1200px;
+	text-align: center;
+}
+
+svg.logo {
+	height: calc(70vh);
+	width: 100%;
+}
+
+@keyframes change {
+	100% {
+		stroke-dashoffset: 0;
+	}	
+	0% {
+		fill: white;
+		stroke-dashoffset: 700;
+	}
+}
+
+@keyframes change-dark {
+	100% {
+		stroke-dashoffset: 0;
+	}	
+	0% {
+		fill: black;
+		stroke-dashoffset: 700;
+	}
+}
+
+.st1 {
+	animation-direction: normal;
+	animation-duration: 4s;
+	animation-name: change; 
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+	fill: black;
+	opacity: 1;
+	stroke: black;
+	stroke-width: .1;
+	stroke-dasharray: 700;
+}
+
+html[data-theme=dark] .st1 {
+  fill: white;
+  stroke: white;	
+}
+
+html[data-theme=dark] .st1 {
+  animation-name: change-dark; 
+}
+
+div.footerImage {
+	width: 3rem;
+	margin: auto;
+}
