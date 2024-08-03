@@ -14,6 +14,7 @@ import WhatIsIt from "../components/front/WhatIsIt";
 import Benefits from "../components/front/Benefits";
 import Parts from "../components/front/Parts";
 import Books from "../components/front/Books";
+import GetInvolved from "../components/front/GetInvolved";
 
 
 
@@ -24,6 +25,7 @@ export default () => {
 		<Benefits />
 		<Parts />
 		<Books />
+		<GetInvolved />
 
 	</Layout>)
 }
