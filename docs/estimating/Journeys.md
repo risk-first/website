@@ -1,7 +1,7 @@
 ---
 title: Journeys
 description: Part of the 'Estimating' Risk-First Track, where we look at estimates with dependent, connected parts.
-url: https://riskfirst.org/estimating/Journeys
+
 
 featured: 
   class: bg1
@@ -14,19 +14,19 @@ tweet: yes
 
 # Journeys
 
-A third way to conceive of software development is as a _journey_ on the [Risk Landscape](../thinking/Glossary.md#risk-landscape). For example, in a startup we might start at a place where we have no product, no customers and some funding.  We go on a journey of discovery and end up in a place where hopefully we _have_ a product, customers and an income stream.
+A third way to conceive of software development is as a _journey_ on the [Risk Landscape](/tags/Risk-Landscape). For example, in a startup we might start at a place where we have no product, no customers and some funding.  We go on a journey of discovery and end up in a place where hopefully we _have_ a product, customers and an income stream.
 
-There are many ways we could do this journey, and many destinations.  The idea of "pivoting" your startup idea feels very true to the [Journey](Journeys.md) analogy, because that literally means changing direction.  _The place where we were headed sucked, lets go over here_.  
+There are many ways we could do this journey, and many destinations.  The idea of "pivoting" your startup idea feels very true to the [Journey](Journeys) analogy, because that literally means changing direction.  _The place where we were headed sucked, lets go over here_.  
 
 What does this journey look like in Risk-First terms?
 
-![Product Development](/img/generated/estimating/journey.png)
+![Product Development](/img/generated/estimating/journey.svg)
 
-As this diagram shows, at the start we have plenty of [Feature Fit Risk](../risks/Feature-Risk.md#feature-fit-risk):  if we have _no_ product, then it definitely doesn't fit our customer's needs!  Also we have some amount of [Funding Risk](../risks/Scarcity-Risk.md#funding-risk), as at some point the money will run out.
+As this diagram shows, at the start we have plenty of [Feature Fit Risk](/tags/Feature-Fit-Risk):  if we have _no_ product, then it definitely doesn't fit our customer's needs!  Also we have some amount of [Funding Risk](/tags/Funding-Risk), as at some point the money will run out.
 
-After that, we use every trick in the book called "product development" to get to a new place on the [Risk Landscape](../thinking/Glossary.md#risk-landscape).  This place (hopefully) will have a better risk profile than the one we came from.  
+After that, we use every trick in the book called "product development" to get to a new place on the [Risk Landscape](/tags/Risk-Landscape).  This place (hopefully) will have a better risk profile than the one we came from.  
 
-If we're successful then yes, we'll have the [Operational Risk](../risks/Operational-Risk.md) of running a business, but hopefully we'll be in a better position than we started.
+If we're successful then yes, we'll have the [Operational Risk](/tags/Operational-Risk) of running a business, but hopefully we'll be in a better position than we started.
 
 ## A London Example
 
@@ -44,11 +44,11 @@ If you were doing this same journey on foot, it's a very direct route, but would
 
 ## Journey Risks
  
-In the software development past, _building it yourself_ was the only way to get anything done.  It was like London _before road and rail_.   Nowadays, you are bombarded with choices.  It's actually _worse than London_ because it's not even a two-dimensional geographic space and there are multitudes of different routes and acceptable destinations.  Journey planning on the software [Risk Landscape](../thinking/Glossary.md#risk-landscape) is an optimisation problem _par excellence_. 
+In the software development past, _building it yourself_ was the only way to get anything done.  It was like London _before road and rail_.   Nowadays, you are bombarded with choices.  It's actually _worse than London_ because it's not even a two-dimensional geographic space and there are multitudes of different routes and acceptable destinations.  Journey planning on the software [Risk Landscape](/tags/Risk-Landscape) is an optimisation problem _par excellence_. 
 
 How can we think about estimating in such a domain?  There are clearly a number of factors to come into play:
 
-1.  For individual _parts_ of the journey, we could use a [Fill-The-Bucket](Fill-The-Bucket.md) approach, and look at things like _expected travel time_, _mean travel time_ or  _reliability_.
+1.  For individual _parts_ of the journey, we could use a [Fill-The-Bucket](Fill-The-Bucket) approach, and look at things like _expected travel time_, _mean travel time_ or  _reliability_.
 2.  Chances are, we're going to need to join up several different pieces of transport: maybe some on-foot, some by road, some by rail.  
 3.  It's a really good idea to build in buffers if you're relying on services that are infrequent (like flights or trains).
 4.  Cost is a factor.
@@ -98,7 +98,7 @@ This should look a _fair bit_ like software architecture:  often, we sketch out 
 
 At the other extreme, if we're estimating a single story, we can break down work like this.  For development tasks which _look like a journey_, this is what I'm doing.   _"If I build the Foo component using Spring and the Bar component in HTML, I can join them together with some Java code..."_  
 
-Further, as we solve problems in our code-base, we break them down into smaller and smaller parts.  (We'll come back to this in [Hierarchies](../complexity/Hierarchies.md).)
+Further, as we solve problems in our code-base, we break them down into smaller and smaller parts.  
 
 So **Journey Estimating** is three things all at once:
 
@@ -108,7 +108,7 @@ So **Journey Estimating** is three things all at once:
 
 ## Meta Analysis
 
-So, we now have a third type of estimating.  Again, very different from the [first](Fill-The-Bucket.md) [two](Kitchen-Cabinet.md).  But again, there are obvious similarities with what we do in the world of software, because it's so easy to _go the wrong way_ or _overlook a short-cut_.  
+So, we now have a third type of estimating.  Again, very different from the [first](Fill-The-Bucket) [two](Kitchen-Cabinet).  But again, there are obvious similarities with what we do in the world of software, because it's so easy to _go the wrong way_ or _overlook a short-cut_.  
 
 I've been on projects where a team has toiled long-and-hard to get a database working, only to find out that there was a better, different one available that would do the job for them with _way less effort_.  I've watched people struggle to build their own languages and compilers, only to realise later that actually all they needed was to use the ones that were there already.  
 
@@ -127,6 +127,6 @@ Estimating then becomes the art of:
 
 To achieve point (4), once an estimate is in place, the Risk-First way to proceed would then be to tackle each part in order, from the riskiest and most-likely-to-fail, to the most reliable.  This approach front-loads finding out if the plan is suspect. 
 
-But, there is _yet another_ way of looking at what's needed to estimate: [Fractals](Fractals.md).
+But, there is _yet another_ way of looking at what's needed to estimate: [Fractals](Fractals).
 
  

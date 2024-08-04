@@ -1,16 +1,19 @@
 ---
 title: The Risk Landscape
 description: A way to think about the risks you face on a software project.
-url: https://riskfirst.org/risks/Risk-Landscape
+
+tags:
+ - Risk Landscape
+ 
+definitions:
+ - name: Risk Landscape
+   description: A hypothetical landscape on which risks can be placed. Taking Action means making a move on the Risk Landscape to reposition a project so that it has a different profile of Attendant Risks.
+   own_term: true
 
 featured: 
-  class: bg2
+  class: c
   element: '<risk href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg"><code>Attendant</code><title>Risk Landscape</title></risk>'
 sidebar_position: 2
-tags:
- - Risks
-redirect_from: 
- - /Risk-Landscape
 tweet: yes
 ---
 
@@ -28,9 +31,9 @@ To get there, we need to avoid the pitfalls dotted around the landscape like "Ru
 
 Our job as developers is to _navigate_ across this landscape, testing the way as we go, trying to get to a position of _more favourable risk_.
 
-It's tempting to think of the [Risk Landscape](Risk-Landscape.md) as being like a [Fitness Landscape](https://en.wikipedia.org/wiki/Fitness_landscape).  That is, you have a "cost function" which is your height above the landscape, and you try and optimise by moving downhill in a [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent) fashion.  
+It's tempting to think of the [Risk Landscape](/risks/Risk-Landscape) as being like a [Fitness Landscape](https://en.wikipedia.org/wiki/Fitness_landscape).  That is, you have a "cost function" which is your height above the landscape, and you try and optimise by moving downhill in a [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent) fashion.  
 
-However, there's a problem with this:  we don't have that cost function.  We can only _guess_ at what risks there are.  We have to go on our _experience_. For this reason, I prefer to think of the [Risk Landscape](Risk-Landscape.md) as a terrain which contains various categories of _fauna_ or _obstacles_ which we will find as we explore it.
+However, there's a problem with this:  we don't have that cost function.  We can only _guess_ at what risks there are.  We have to go on our _experience_. For this reason, I prefer to think of the [Risk Landscape](/risks/Risk-Landscape) as a terrain which contains various categories of _fauna_ or _obstacles_ which we will find as we explore it.
 
 ## Why Should We Categorise The Risks?
 
@@ -50,27 +53,27 @@ Below is a table outlining the different risks we'll see.  There _is_ an order t
 
 |Risk            |          Description           |      
 |----------------|--------------------------|
-|[Feature Risk](Feature-Risk.md)                        |When you haven't built features the market needs, or the features you have built contain bugs, or the market changes underneath you.    |
-|[Communication Risk](Communication-Risk.md)            |Risks associated with getting messages heard and understood.|             
-|[Complexity Risk](Complexity-Risk.md)                  |Your software is so complex it makes it hard to change, understand, or run.             |        
-|[Dependency Risk](Dependency-Risk.md)                  |Risks of depending on other people, products, software, functions, etc. This is a general look at dependencies, before diving into specifics like...|  
-|[Scarcity Risk](Scarcity-Risk.md)                      |Risks associated with having limited time, money or some other resource.|    
-|[Deadline Risk](Deadline-Risk.md)                      |The risk of having a date to hit.|
-|[Software Dependency Risk](Software-Dependency-Risk.md)|The risk of depending on a software library, service or function.|    
-|[Process Risk](Process-Risk.md)                        |When you depend on a business process, or human process to give you something you need.|
-|[Boundary Risk](Boundary-Risk.md)                      |Risks due to making decisions that limit your choices later on.  Sometimes, you go the wrong way on the [Risk Landscape](Risk-Landscape.md) and it's hard to get back to where you want to be.|            
-|[Agency Risk](Agency-Risk.md)                          |Risks that staff have their own [Goals](../thinking/Glossary.md#goal), which might not align with those of the project or team.|
-|[Coordination Risk](Coordination-Risk.md)              |Risks due to the fact that systems contain multiple agents, which need to work together.|       
-|[Map And Territory Risk](Map-And-Territory-Risk.md)    |Risks due to the fact that people don't see the world as it really is. (After all, they're working off different, imperfect [Internal Models](../thinking/Glossary.md#internal-model).)|  
-|[Operational Risk](Operational-Risk.md)                |Software is embedded in a system containing people, buildings, machines and other services.  Operational risk considers this wider picture of risk associated with running a software service or business in the real world.|
+|[Feature Risk](/tags/Feature-Risk)                        |When you haven't built features the market needs, or the features you have built contain bugs, or the market changes underneath you.    |
+|[Communication Risk](/tags/Communication-Risk)            |Risks associated with getting messages heard and understood.|             
+|[Complexity Risk](/tags/Complexity-Risk)                  |Your software is so complex it makes it hard to change, understand, or run.             |        
+|[Dependency Risk](/tags/Dependency-Risk)                  |Risks of depending on other people, products, software, functions, etc. This is a general look at dependencies, before diving into specifics like...|  
+|[Scarcity Risk](/tags/Scarcity-Risk)                      |Risks associated with having limited time, money or some other resource.|    
+|[Deadline Risk](/tags/Deadline-Risk)                      |The risk of having a date to hit.|
+|[Software Dependency Risk](/tags/Software-Dependency-Risk)|The risk of depending on a software library, service or function.|    
+|[Process Risk](/tags/Process-Risk)                        |When you depend on a business process, or human process to give you something you need.|
+|[Boundary Risk](/tags/Boundary-Risk)                      |Risks due to making decisions that limit your choices later on.  Sometimes, you go the wrong way on the [Risk Landscape](/risks/Risk-Landscape) and it's hard to get back to where you want to be.|            
+|[Agency Risk](/tags/Agency-Risk)                          |Risks that staff have their own [Goals](/tags/Goal), which might not align with those of the project or team.|
+|[Coordination Risk](/tags/Coordination-Risk)              |Risks due to the fact that systems contain multiple agents, which need to work together.|       
+|[Map And Territory Risk](/tags/Map-And-Territory-Risk)    |Risks due to the fact that people don't see the world as it really is. (After all, they're working off different, imperfect [Internal Models](/tags/Internal-Model).)|  
+|[Operational Risk](/tags/Operational-Risk)                |Software is embedded in a system containing people, buildings, machines and other services.  Operational risk considers this wider picture of risk associated with running a software service or business in the real world.|
        
-After the last stop on the tour, in [Staging and Classifying](Staging-And-Classifying.md) we'll have a recap about what we've seen and make some guesses about how things fit together.
+After the last stop on the tour, in [Staging and Classifying](Staging-And-Classifying) we'll have a recap about what we've seen and make some guesses about how things fit together.
 
-Also on that page is a [periodic table](Staging-And-Classifying.md#towards-a-periodic-table-of-risks) showing a diagrammatic view of how all these risks fit together.  
+Also on that page is a [periodic table](Staging-And-Classifying#towards-a-periodic-table-of-risks) showing a diagrammatic view of how all these risks fit together.  
 
 ## Causation & Correlation 
 
-Although we're going to try and categorise the kinds of things we see on this [Risk Landscape](Risk-Landscape.md), this isn't going to be perfect, because: 
+Although we're going to try and categorise the kinds of things we see on this [Risk Landscape](/risks/Risk-Landscape), this isn't going to be perfect, because: 
 
  - One risk can "blend" into another just like sometimes a "field" is also a "car-park", or a building might contain some trees (but isn't a forest).
  - Ameliorating one risk probably means accepting another (hopefully lesser) risk.
@@ -86,7 +89,7 @@ In the [Financial Services](https://en.wikipedia.org/wiki/Financial_services) in
 - **[Credit Risk](https://en.wikipedia.org/wiki/Credit_risk)**, the risk that someone who owes you a payment at a specific point in time might not pay it back.
 - **[Liquidity Risk](https://en.wikipedia.org/wiki/Liquidity_risk)**, the risk that you can't find a market to sell/buy something, usually leading to a shortage of ready cash.
 
-![Correlation of Risks in the Financial Crisis](/img/generated/risks/landscape/causation2.png)
+![Correlation of Risks in the Financial Crisis](/img/generated/risks/landscape/causation2.svg)
 
 In the financial crisis of 2007, these models of risk didn't turn out to be much use.   Although there are lots of conflicting explanations of what happened, one way to look at it is this:
 
@@ -94,11 +97,11 @@ In the financial crisis of 2007, these models of risk didn't turn out to be much
  - This caused credit defaults (the thing that [Credit Risk](https://en.wikipedia.org/wiki/Credit_risk) measures were meant to guard against) even though the banks _technically_ were solvent.
  - Once credit defaults started, this worried investors in the banks, which had massive [Market Risk](https://en.wikipedia.org/wiki/Market_risk) impacts that none of the models foresaw.
 
-All the [Risks](../thinking/Glossary.md#risk) were [correlated](https://www.investopedia.com/terms/c/correlation.asp).  That is, they were affected by the _same underlying events_, or _each other_.
+All the [Risks](/tags/Risk) were [correlated](https://www.investopedia.com/terms/c/correlation.asp).  That is, they were affected by the _same underlying events_, or _each other_.
 
-![Causation shown on a Risk-First Diagram.  More complexity is likely to lead to more Operational Risk](/img/generated/risks/landscape/causation.png)
+![Causation shown on a Risk-First Diagram.  More complexity is likely to lead to more Operational Risk](/img/generated/risks/landscape/causation.svg)
 
-It's like this with software risks, too, sadly.  For example, [Operational Risk](Operational-Risk.md) is going to be heavily correlated with [Complexity Risk](Complexity-Risk.md).  Just like a machine, the more complex it is, the more likely it is to fail, and the more likely it will fail in some unexpected, difficult-to-diagnose way.  
+It's like this with software risks, too, sadly.  For example, [Operational Risk](/tags/Operational-Risk) is going to be heavily correlated with [Complexity Risk](/tags/Complexity-Risk).  Just like a machine, the more complex it is, the more likely it is to fail, and the more likely it will fail in some unexpected, difficult-to-diagnose way.  
 
 In the Risk-First diagrams, we will sometimes show correlation or causation with an arrow, like in the diagram above.
 
@@ -108,4 +111,4 @@ Just as naturalists are able to head out and find new species of insects and pla
 
 It's a big, crazy, evolving world of software.  Help to fill in the details.   Report back what you find.
                                                       
-So, let's get started with [Feature Risk](Feature-Risk.md).
+So, let's get started with [Feature Risk](/tags/Feature-Risk).

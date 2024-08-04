@@ -1,22 +1,18 @@
 ---
 title: A Pattern Language
 description: Explanation of how Risk-First comprises a pattern language of risk patterns for use in software projects.
-url: https://riskfirst.org/risks/A-Pattern-Language
+
 
 featured: 
-  class: bg2
+  class: c
   element: '<protocol-artifact>Patterns</protocol-artifact>'
-tags: 
- - Risks
 sidebar_position: 1
-redirect_from: 
- - /A-Pattern-Language
 tweet: yes
 ---
 
 # A Pattern Language
 
-Risk-First is not intended to be a rigorous, scientific work: I don't believe it's possible to objectively analyze a field like software development in any meaningful, statistically significant way (things just change [too fast](../complexity/Silver-Bullets.md)). 
+Risk-First is not intended to be a rigorous, scientific work: I don't believe it's possible to objectively analyze a field like software development in any meaningful, statistically significant way things just change too fast. 
 
 Does that diminish it?   If you have visited the [TVTropes](https://tvtropes.org) website, you'll know that it's a set of web-pages describing _common patterns_ of narrative, production, character design etc. to do with fiction. 
 
@@ -46,6 +42,6 @@ Risk-First isn't an exhaustive guide to every possible software development prac
 
 Neither is this a practitioner's guide to using any particular methodology:  if you've come here to learn the best way to use Story Points (for example), then you're in the wrong place.  There are plenty of places you can find that information already.  Where possible, this site will link to or reference concepts on Wikipedia or the wider Internet for further reading on each subject.
 
-With those caveats in place, let's go on and explore [The Risk Landscape](Risk-Landscape.md).
+With those caveats in place, let's go on and explore [The Risk Landscape](/risks/Risk-Landscape).
 
 

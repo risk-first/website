@@ -1,7 +1,7 @@
 ---
 title: Fractals
 description: Part of the 'Estimating' Risk-First Track, where we look at estimating with uncertain boundaries.
-url: https://riskfirst.org/estimating/Fractals
+
 
 featured: 
   class: bg1
@@ -59,7 +59,7 @@ If your problem doesn't have an exact, defined end-goal, there is simply no way 
 
 ![Opportunity on the Risk Landscape](/img/estimates/fractal1.png)
 
-You might have some idea (selling hats for dogs?) of some interesting area of value on the [Risk Landscape](../thinking/Glossary.md#risk-landscape)  that you want to occupy, as shown in the above diagram.  
+You might have some idea (selling hats for dogs?) of some interesting area of value on the [Risk Landscape](/tags/Risk-Landscape)  that you want to occupy, as shown in the above diagram.  
 
 Your best bet is to try and colonise the area of value _as fast as possible_ by using as much readily available software as possible.  
 
@@ -69,16 +69,16 @@ Maybe version one looks something like the diagram above: a few hastily-assemble
 
 ![Second Version](/img/estimates/fractal3.png)
 
-Releasing the first version might fill in some of the blanks, and show you more detail on the [Risk Landscape](../thinking/Glossary.md#risk-landscape).  Effectively showing you a more detailed view of the coastline.   Feedback from users will provide you with a better understanding of exactly what this fractal problem-space looks like. 
+Releasing the first version might fill in some of the blanks, and show you more detail on the [Risk Landscape](/tags/Risk-Landscape).  Effectively showing you a more detailed view of the coastline.   Feedback from users will provide you with a better understanding of exactly what this fractal problem-space looks like. 
 
 ![Third Version](/img/estimates/fractal4.png)
 
-As you go on [Meeting Reality](../thinking/Glossary.md#meet-reality), the shape of the problem domain comes into focus, and you're able to _refine_ your solution to match it more exactly.
+As you go on [Meeting Reality](/tags/Meeting-Reality), the shape of the problem domain comes into focus, and you're able to _refine_ your solution to match it more exactly.
 
 Is it possible to estimate problems in the Fractal Shape domain?  The best you might be able to do is to match two competing objectives:
 
-- Building Product:  By building functionality you head towards your [Goal](../thinking/Glossary.md#goal) on the [Risk Landscape](../thinking/Glossary.md#risk-landscape).  But how do you know this is the right goal?
-- [Meeting Reality](../thinking/Glossary.md#meet-reality):  By putting your product "out there" you find your customers and your niche in the market, and you explore the [Risk Landscape](../thinking/Glossary.md#risk-landscape).  But this takes time and effort away from _building product_.
+- Building Product:  By building functionality you head towards your [Goal](/tags/Goal) on the [Risk Landscape](/tags/Risk-Landscape).  But how do you know this is the right goal?
+- [Meeting Reality](/tags/Meeting-Reality):  By putting your product "out there" you find your customers and your niche in the market, and you explore the [Risk Landscape](/tags/Risk-Landscape).  But this takes time and effort away from _building product_.
 
 With this in mind, you estimate a useful amount of time to go round this cycle, fixing the time but letting the deliverable vary.
  
@@ -88,25 +88,25 @@ The fractal nature of many software development tasks is both a blessing and a c
 
 > "Lets explore this point more by means of an extended analogy. Suppose that you wanted to start a new business as a yachting captain... This is in many ways analogous to when a startup company decides that they want to serve the fortune 500, companies that have petabytes and beyond of data. However, you as a startup founder have to operate lean, and you are only willing to spend $10,000 on a boat. If you were to walk up to the owner of the multi-million dollar yacht and say, I’ll give you $10,000 for that boat, you would be laughed off the dock. " - [Kyle Prifogle, _Dear Startup_](https://kyleprifogle.com/dear-startup/)
 
-Buying yachts is _not_ in the Fractal problem space.  It's much more [Fill-The-Bucket](Fill-The-Bucket.md): more money means more yacht.  So, it's not a great analogy.  But the point is that the _expectation_ is for a value-miracle to occur, simply by adopting the practice of MVP or agile development.
+Buying yachts is _not_ in the Fractal problem space.  It's much more [Fill-The-Bucket](Fill-The-Bucket): more money means more yacht.  So, it's not a great analogy.  But the point is that the _expectation_ is for a value-miracle to occur, simply by adopting the practice of MVP or agile development.
 
 ## Where To Find Fractal Spaces
 
-Not all software development problems are squarely in the [Fractal](Fractals.md) space, but those that are are generally tasks like building user interfaces, games, interactivity and usability.  This is where the curse comes in:  it's _hard to know what to build_ and _you are never done_.  
+Not all software development problems are squarely in the [Fractal](Fractals) space, but those that are are generally tasks like building user interfaces, games, interactivity and usability.  This is where the curse comes in:  it's _hard to know what to build_ and _you are never done_.  
 
 Although there are some high-profile wins with these types of problems, generally they are _hard_.
  
 ## Applying Risk-First
 
-Let's look at the conclusions we reached in [Boundary Risk](../risks/Boundary-Risk.md):
+Let's look at the conclusions we reached in [Boundary Risk](/tags/Boundary-Risk):
 
 > - **Human need is [Fractal](https://en.wikipedia.org/wiki/Fractal)**:  this means that over time, software products have evolved to more closely map human needs.   Software that would have delighted us ten years ago lacks the sophistication we expect today.
 - **Software and hardware are both improving with time**: due to evolution and the ability to support greater and greater levels of complexity.
-- **Abstractions accrete too**:  as we saw in [Process Risk](../risks/Process-Risk.md), we _encapsulate_ earlier abstractions in order to build later ones.
+- **Abstractions accrete too**:  as we saw in [Process Risk](/tags/Process-Risk), we _encapsulate_ earlier abstractions in order to build later ones.
 
 If we accept this problem of the fractal nature of human desire, then we have to contend with the fact that our software systems are always going to get continually more complex to serve it.
 
-So that's _four_ different styles of estimating.  Let's try and put these together in [Analogies](Analogies.md)
+So that's _four_ different styles of estimating.  Let's try and put these together in [Analogies](Analogies)
 
 
 

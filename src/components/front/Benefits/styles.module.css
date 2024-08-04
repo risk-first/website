@@ -1,0 +1,36 @@
+.cta {
+	background: #00000044;
+	border: 1px solid #777;
+	border-radius: .5rem;
+	color: white;
+	display: inline-block;
+	font-size: 1rem;
+	line-height: 1.2em;
+	margin: 1rem;
+	padding: 1rem;
+	text-decoration: none !important;
+	transition: background .3s, color .3s;
+	width: 15rem;
+}
+
+.innerAside {
+	text-align: right;
+}
+
+.innerAside h2 {
+	font-weight: 800;
+	font-family: Geomanist;
+	font-size: 8rem;
+	line-height: 1.1;
+	overflow: hidden;
+}
+
+@media (max-width: 60rem) {
+	.innerAside h2 {
+		font-size: 4rem;
+	}
+}
+
+html[data-theme=dark] .innerAside {
+	color: white;
+}

@@ -1,0 +1,59 @@
+.innerAside h2 {
+font-weight: 800;
+	font-family: Geomanist;
+	font-size: 8rem;
+	line-height: 1.1;
+	text-align: center;
+}
+
+@media (max-width: 60rem) {
+	.innerAside h2 {
+		font-size: 4rem;
+	}
+}
+
+.explanation,
+.innerAside p {
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.explanationLarge {
+	font-size: 2rem;	
+	text-align: center;
+}
+
+.showcaseOuter {
+	align-items: center;
+	background-color: #fff;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 4rem;
+	padding: 2rem;
+	border-radius: 2rem;
+}
+
+.showcaseImage img {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	max-height: 420px;
+	max-width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.cta {
+	background: #00000044;
+	border: 1px solid #777;
+	border-radius: .5rem;
+	color: white;
+	display: inline-block;
+	font-size: 1rem;
+	line-height: 1.2em;
+	margin: 1rem;
+	padding: 1rem;
+	text-decoration: none !important;
+	transition: background .3s, color .3s;
+	width: 15rem;
+}

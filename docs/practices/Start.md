@@ -1,36 +1,26 @@
 ---
 title: Practices
-description: Discussion Of Software Development Practices
-url: https://riskfirst.org/practices/Start
+description: Index of key software development practices
+
+tags:
+  - Front
+  - Read All About It
+sidebar_position: 4
+
 
 featured: 
   class: bg1
-  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/introduction.svg">Part 3: Practices</image-artifact>'
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/introduction.svg">Practices</image-artifact>'
 layout: categories
 cat: Practices
 ---
 
-_This is in progress_
+This is an incomplete index of software development practices that you might apply on a project to manage risks.  This is not meant to be exhaustive, but if you'd like to add a practice please create a GitHub pull request, copying the format (especially FrontMatter) of one of the existing practices.
 
-> "Risk Management is project management for grown-ups" -- Tim Lister
-
-## Outcomes
-
-- Talk about _bets_ rather than _tasks_.
-- Understand risk as a _spectrum_, rather than an item on a register.
-- Understand the appropriate domain for Agile and Planned methodologies.
-- Move beyond "Agile"  and "Planned" approaches, to a right-tool-for-the-job approach.
+  
 
 ## Main Areas
 
-- Agile and Project Management (tbd)
+Practices here are broken down into the following main categories.
 
-- [Understanding Complexity](../complexity/Start.md)
-
-- [Understanding Estimation Problems](../estimating/Start.md)
-
-- [Placing Bets](../bets/Purpose-Development-Team.md)
-
-- Wrap Up:  How to Run a project Risk-First. (tbd)
-
-<TagList filter="practices" />
+<TagList filter="practices" tag="Practice Category" />

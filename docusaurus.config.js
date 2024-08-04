@@ -10,13 +10,14 @@ import rehypeKatex from 'rehype-katex';
 
 const navLinks =  [	{ to: '/overview/Start', label: 'Overview', position: 'left' },
 					{ to: '/thinking/Start', label: 'Thinking', position: 'left' },
-					{ to: '/The-Menagerie', label: 'Book', position: 'left' },
 					{ to: '/risks/Start', label: 'Risks', position: 'left' },
+					{ to: '/practices/Start', label: 'Practices', position: 'left' },
+					{ to: '/methods/Start', label: 'Methods', position: 'left' },
+					{ to: '/books/Start', label: 'Books', position: 'left' },
 					{ to: '/bets/Start', label: 'Bets', position: 'left' },
 					{ to: '/estimating/Start', label: 'Estimating', position: 'left' },
-					{ to: '/complexity/Start', label: 'Complexity', position: 'left' },
 					{ to: '/presentations/Start', label: 'Presentations', position: 'left' },
-					{ to: '/misc/Start', label: 'Misc', position: 'left' } ]
+					]
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -38,6 +39,7 @@ const config = {
 
 	onBrokenLinks: 'throw',
 	onBrokenMarkdownLinks: 'warn',
+	//onInlineTags: 'warn',
 
 	// Even if you don't use internationalization, you can use this field to set
 	// useful metadata like html lang. For example, if your site is Chinese, you
@@ -92,6 +94,7 @@ const config = {
 				logo: {
 					alt: 'Risk First Logo',
 					src: 'img/R1_logo_round_white.svg',
+					srcDark: 'img/R1_logo_round_black.svg'
 				},
 				items: [
 					...navLinks,

@@ -4,8 +4,8 @@
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
     style="--kite9-layout: down; --kite9-min-width: 800pt;">
     <table>
-      <celltext style="--kite9-occupies: 1 1; " class="bold top center">Fit Risk</celltext>
-      <celltext style="--kite9-occupies: 2 1; " class="bold top center">Examples</celltext>
+      <cell style="--kite9-occupies: 1 1; "><description class="bold middle top">Fit Risk</description></cell>
+      <cell style="--kite9-occupies: 2 1; "><description class="bold middle top">Examples</description></cell>
 
       <cell style="--kite9-occupies: 1 2; ">
         <risk class="feature-fit" />
@@ -18,16 +18,16 @@
       </cell>
 
       <cell style="--kite9-occupies: 2 2; --kite9-layout: vertical; --kite9-padding: 20pt;">
-        <bulleted>Knowing how a car works, but actually needing to know how to drive.</bulleted>
-        <bulleted>Knowing how to program in one language, when another would be more appropriate.</bulleted>
+        <description class="left">Knowing how a car works, but actually needing to know how to drive.</description>
+        <description class="left">Knowing how to program in one language, when another would be more appropriate.</description>
       </cell>
       <cell style="--kite9-occupies: 2 3; --kite9-layout: vertical; --kite9-padding: 20pt;">
-        <bulleted>A filing cabinet containing too much junk. </bulleted>
-        <bulleted>Learning things that aren’t useful. </bulleted>
+        <description class="left">A filing cabinet containing too much junk. </description>
+        <description class="left">Learning things that aren’t useful. </description>
       </cell>
       <cell style="--kite9-occupies: 2 4; --kite9-layout: vertical; --kite9-padding: 20pt;">
-        <bulleted>SatNav had the wrong route.</bulleted>
-        <bulleted>Not quite remembering a recipe properly.</bulleted>
+        <description class="left">SatNav had the wrong route.</description>
+        <description class="left">Not quite remembering a recipe properly.</description>
       </cell>
 
     </table>

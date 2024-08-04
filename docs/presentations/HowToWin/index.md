@@ -1,10 +1,9 @@
 ---
 template: post
 title: 2. How to Win
-permalink: /presentations/HowToWin/index.html
 description: If development is a game, how do I win?  How to apply Risk Management to development tasks to win the "meta-game".
 author: rob
-url: https://riskfirst.org/presentations/HowToWin/index.html
+
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/winner.svg">How to Win</image-artifact>'

@@ -1,0 +1,37 @@
+Risk,Definition,Subtype of
+Boundary,"Risks due to the commitments we make around dependencies, and the limitations they place on our ability to change.",Dependency
+Agency,"Risks due to the fact that things you depend on have agency, and they have their own goals to pursue.",Dependency
+Channel,"Risks due to the inadequacy of the physical channel used to communicate our messages. e.g. noise, loss, interception, corruption.",Communication
+Communication,"Risks due to the difficulty of communicating with other entities, be they people, software, processes etc.",Operational
+Complexity,"Risks caused by the weight of complexity in the systems we create, and their resistance to change and comprehension.",Operational
+Conceptual-integrity,"Risk that the software you provide is too complex, or doesn't match the expectations of your clients' internal models.",Feature
+Coordination,"Risks that a group of agents cannot work together in a mutually beneficial way, and their behaviour devolves into competition.",Operational
+Deadline,"Where the use of a dependency has some kind of deadline, which can be missed.",Dependency
+Dependency,"Risks faced by depending on something else. e.g. an event, process, person, piece of software or an organisation.",Operational
+Feature-Access,Risks due to some clients not having access to some or all of the features in your product. ,Feature
+Feature-Drift,Risk that the features required by clients will change and evolve over time.,Feature
+Feature,Risks you face when providing features for your clients.,Operational
+Feature-Fit,Risk that the needs of the client don't coincide with services provided by the supplier.,Feature
+Funding,"A particular scarcity risk, due to lack of funding.",Scarcity
+Implementation,"Risk that the functionality you are providing doesn't match the features the client is expecting, due to poor or partial implementation, bugs, technical debt etc.",Feature
+Internal-Model,Risks arising from insufficient or erroneous internal models of reality.,Communication
+Invisibility,"Risks caused by the choice of abstractions we use in communication and the opacity of project status, software or any Internal Model’s workings.",Communication
+Learning-Curve,"Risks due to the difficulty, time and expense faced in updating an internal model.",Communication
+Contextual,"Risks arising from the context the system is embedded in, from non-compliance with laws, regulations, and standards, encompassing environmental, social, economic, political and technological risks.",Operational
+Map-And-Territory,"Risks due to the differences between reality and the internal model of reality, and the assumption that they are equivalent.",Operational
+Market,"Risk that the value your clients place on the features you supply will change, over time.",Feature
+Message,Risks caused by the difficulty of composing and interpreting messages in the communication process.,Communication
+Operational,Risks of losses or reputational damage caused by failing processes or real-world events.,
+Opportunity,Risk that a particular set of market conditions.,Scarcity
+Process,"Risks due to the fact that when dealing with a dependency, we have to follow a particular protocol of communication, which may not work out the way we want.  Includes risks associated with adopting new technologies or methodologies that may not be fully mature, understood or fit for purpose.",Dependency
+Protocol,Risks due to the failure of encoding or decoding messages between two parties in communication.,Communication
+Red-Queen,The general risk that the competitive environment we operate within changes over time.,Scarcity
+Regression,"Risk that the functionality you provide changes for the worse, over time.",Feature
+Demand,Risks related to a dependency’s ability to meet the demand you have for it.  i.e. scalability. ,Scarcity
+Reliability,"Risks of not getting benefit from a dependency due to it's reliability, either now or in the future.",Dependency
+Scarcity,Risk of not being able to access a dependency in a timely fashion due to it's scarcity.,Dependency
+Schedule,The aspect of dependency risk related to time.,Scarcity
+Security,Agency Risks due to hostile actors from inside or outside of the system.,Agency
+Software Dependency,Dependency Risk due to software dependencies.,Dependency
+Staff,The aspect of dependency risks related to employing people.,Scarcity
+Trust-And-Belief,"Risk that a party we are communicating with can't be trusted, as it has agency or is unreliable in some other way.",Agency

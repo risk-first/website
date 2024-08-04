@@ -7,21 +7,21 @@
 
     <users id="a">A</users>
 
-    <group>
-    <container id="c" class="dotted" style="--kite9-layout: right; ">
-
-      <agent-artifact id="1">Agent 1</agent-artifact>
-      <agent-artifact id="2">Agent 2</agent-artifact>
-
-    </container>
-    
-      <label id="id_16">
-        Distributed Database
-        
-      </label>
-    
-    </group>
-
+   	<group style="--kite9-layout: down">
+		<group style="--kite9-layout: right; ">
+			<container class="dotted" id="c"
+				style="--kite9-layout: right; ">
+				<agent-artifact id="1">Agent 1</agent-artifact>
+			</container>
+			<container class="dotted" id="c-du"
+				style="--kite9-layout: right; ">
+				<agent-artifact id="2">Agent 2</agent-artifact>
+			</container>
+		</group>
+		<description id="id_16" style="--kite9-horizontal-align: center;">
+			Distributed Database
+		</description>
+	</group>
     <users id="b">B</users>
 
   <link style="--kite9-direction: right;">

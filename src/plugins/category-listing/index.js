@@ -2,9 +2,7 @@ module.exports = async function myPlugin(context, options) {
     // ...
     return {
       name: 'category-listing',
-      async loadContent() {
-      },
-      async contentLoaded({content, actions, allContent}) {
+      async allContentLoaded({actions, allContent}) {
         const {setGlobalData, addRoute} = actions;
         const allVersions = allContent['docusaurus-plugin-content-docs']['default']['loadedVersions'];
         allVersions.forEach(version => {
@@ -14,9 +12,27 @@ module.exports = async function myPlugin(context, options) {
             // build the mapping of tags to docs
             const tagToDocMap = {};
             docs.forEach(doc => {
-	            //console.log(JSON.stringify(doc));
                 const tagNames = doc.tags.map(t => t.label);
-                tagNames.forEach(tn => {
+                const mitigates = (doc.frontMatter.practice?.mitigates ?? []).map(t => t.tag)
+                const attendant = (doc.frontMatter.practice?.attendant ?? []).map(t => t.tag)
+                const practices = (doc.frontMatter.method?.practices ?? []).map(t => t.tag)
+                const partOf = doc.frontMatter.part_of ? [doc.frontMatter.part_of] : []
+                const title = doc.frontMatter.title
+                
+                const allTags = [...tagNames, ...mitigates, ...attendant, ...practices, ...partOf]
+                
+                if (!allTags.includes(title)) {
+					const isRisk = allTags.includes("Risks")
+					const isPractice = allTags.includes("Practice")
+					const isMethod  = allTags.includes("Method")
+					if (isRisk || isPractice || isMethod) {
+						console.warn(`${doc.title} is not self-tagged risk =${isRisk} practice=${isPractice} tags=${JSON.stringify(allTags)}`)
+					}
+				}
+                
+                //console.log(JSON.stringify(allTags));
+                
+                allTags.forEach(tn => {
                     const collection = tagToDocMap[tn] ?? [];
 
                     const shortForm = {

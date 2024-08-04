@@ -1,16 +1,16 @@
 ---
 title: On Estimating
 description: The 'Estimating' Risk-First Track.
-url: https://riskfirst.org/estimating/Start
+
 featured: 
   class: bg1
-  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/tape-measure.svg">Track 5: On Estimating</image-artifact>'
+  element: '<image-artifact imgsrc="/public/templates/risk-first/posts/tape-measure.svg">On Estimating</image-artifact>'
 layout: categories
 cat: Estimating
 tags:
  - Front
 tweet: yes
-sidebar_position: 5
+sidebar_position: 8
 ---
 
 # On Estimating 
@@ -27,4 +27,4 @@ The main take aways from this track are:
 
 3.  **How we can get faster at development, despite the complexity.**  Some practical tools and advice for planning in the absence of reliable estimates.
 
-<TagList filter="estimating" />
+<TagList tag="Estimating" filter="estimating" />

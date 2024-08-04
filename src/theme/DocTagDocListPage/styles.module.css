@@ -1,0 +1,39 @@
+.main h2 {
+	font-weight: bold;
+} 
+
+.main article {
+	border: 1px solid lightgrey;
+	border-radius: 1rem;
+	padding: 2rem;
+}
+
+.columns {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+
+.left {
+	flex-basis: 10rem;
+	flex-shrink: .5;
+	flex-grow: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.left img {
+	padding: 0;
+	display: block;
+}
+
+.description {
+	color: grey;
+}
+
+.right {
+	flex-basis: 15rem;
+	flex-grow: .7;  
+	flex-shrink: .5;
+	padding: 1rem;
+}

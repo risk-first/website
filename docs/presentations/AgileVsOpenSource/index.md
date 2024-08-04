@@ -1,10 +1,9 @@
 ---
 template: post
 title: 4. Agile vs Open Source
-permalink: /presentations/AgileVsOpenSource/index.html
 description: Talk given to Simply Business about Risk-First and Open Source
 author: rob
-url: https://riskfirst.org/presentations/AgileVsOpenSource/index.html
+
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/scrum.svg">Agile vs Open Source</image-artifact>'

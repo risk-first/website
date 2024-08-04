@@ -1,0 +1,45 @@
+.practiceIntro {
+	border: 1px solid lightgray;
+	border-radius: 1rem;
+	margin: 2rem 0rem;
+	padding: 2rem;
+	font-size: smaller;
+}
+
+
+.columns {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.left {
+	flex-basis: 10rem;
+	flex-shrink: .5;
+	flex-grow: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.left img {
+	padding: 0;
+	display: block;
+}
+
+.description {
+	color: grey;
+	font-size: bigger;
+}
+
+.right {
+	flex-basis: 15rem;
+	flex-grow: .7;  
+	flex-shrink: .5;
+	padding: 1rem;
+}
+
+.methodRef {
+	color: darkgray;
+	font-style: italic;
+}

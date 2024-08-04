@@ -1,0 +1,53 @@
+section.homeSection, section.homeSectionAlt {
+	margin-top: 5rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	clip-path: polygon(0 3rem, 100% 0, 100% 100%, 0 calc(100% - 3rem));
+	overflow: hidden;
+	color: black
+}
+
+html[data-theme=dark] section.homeSection,
+html[data-theme=dark] section.homeSectionAlt {
+	color: white;	
+}
+
+
+section.homeSectionAlt {
+	background-color: #0ac18655;
+	color: black;
+}
+
+div.innerFlex, div.innerFlexReverse {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	font-size: 1.5rem;
+}
+
+div.innerFlexReverse {
+	flex-direction: row-reverse;
+}
+
+div.item {
+	padding: 20px;
+	flex-basis: 20rem;
+	flex-grow: 1;
+	flex-shrink: 0;
+}
+
+div.footerImage {
+	width: 3rem;
+	margin: auto;
+	margin-top: 3rem;
+}
+
+div.callToAction {
+	margin: 2rem auto;
+	font-size: 2rem;
+	text-align: center;
+}

@@ -1,7 +1,6 @@
 ---
 title: Stop Estimating, Start Navigating
 description: Part of the 'Estimating' Risk-First Track, looking at how to work without estimates.
-url: https://riskfirst.org/estimating/Stop-Estimating-Start-Navigating
 
 featured: 
   class: bg1
@@ -13,15 +12,15 @@ sidebar_position: 9
 
 # Stop Estimating, Start Navigating
 
-This is the _ninth_ article in the [Risk-First](https://riskfirst.org) track on [Estimating](Start.md).  We've come a long way:
+This is the _ninth_ article in the [Risk-First](https://riskfirst.org) track on [Estimating](Start).  We've come a long way:
 
-- In the first four articles, [Fill-The-Bucket](Fill-The-Bucket.md), [Kitchen Cabinet](Kitchen-Cabinet.md), [Journeys](Journeys.md) and [Fractals](Fractals.md) we looked at the various reasons why estimating is such a nightmare on software projects.  This is summarised in [Analogies](Analogies.md).  The upshot is that predictable, well understood, repeatable things can be estimated with some confidence.   However, as soon as software is predictable, repeatable and well-understood, _you're doing it wrong_.
+- In the first four articles, [Fill-The-Bucket](Fill-The-Bucket), [Kitchen Cabinet](Kitchen-Cabinet), [Journeys](Journeys) and [Fractals](Fractals) we looked at the various reasons why estimating is such a nightmare on software projects.  This is summarised in [Analogies](Analogies).  The upshot is that predictable, well understood, repeatable things can be estimated with some confidence.   However, as soon as software is predictable, repeatable and well-understood, _you're doing it wrong_.
 
-- In article seven, we explored how [Scrum](Fixing-Scrum.md), the popular Agile methodology, fails to understand this crucial problem with estimates (among other failings).
+- In article seven, we explored how [Scrum](Fixing-Scrum), the popular Agile methodology, fails to understand this crucial problem with estimates (among other failings).
 
-- Then, in [Risk-First Analysis](Risk-First-Analysis.md) we look at how we can work out what to build by examining what [risks](../thinking/Glossary.md#risk) we'd like to address and which [goals](../thinking/Glossary.md#risk) or [Upside Risks](../thinking/Glossary.md#upside-risk) we'd like to see happen.  
+- Then, in [Risk-First Analysis](Risk-First-Analysis) we look at how we can work out what to build by examining what [risks](/tags/Risk) we'd like to address and which [goals](/tags/Risk) or [Upside Risks](/tags/Upside-Risk) we'd like to see happen.  
 
-So, now we're up to date.  It's article nine, and I was going to build on [Risk-First Analysis](Risk-First-Analysis.md) to show how to plan work for a team of people over a week, a month, a year.  
+So, now we're up to date.  It's article nine, and I was going to build on [Risk-First Analysis](Risk-First-Analysis) to show how to plan work for a team of people over a week, a month, a year.  
 
 ## Something Happened 
 
@@ -61,7 +60,7 @@ The third question you need to always be asking is:  _what is our goal?_
 
 Considered individually, the tasks on our backlog clearly are operations which change the risks we are facing, but unless we understand the _goal_ or _goals_ of the product, we're not really in a position to make judgements about whether some set of risks is better or worse.
 
-![One Goal](/img/generated/estimating/planner/one-goal.png)
+![One Goal](/img/generated/estimating/planner/one-goal.svg)
 
 If we are a startup with some investors, they might have set us the goal themselves.  Perhaps the future funding of the business is predicated on our ability to generate a certain number of subscribers?  Then the business goal might look like that in the diagram above.
 

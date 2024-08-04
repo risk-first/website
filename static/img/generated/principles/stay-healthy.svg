@@ -396,7 +396,7 @@ fill: black;
 --kite9-margin-bottom: 10pt;
 }
 
-*[k9-elem="artifact"], *[k9-elem="document"], *[k9-elem="users"], *[k9-elem="computer"], *[k9-elem="interface"], *[k9-elem="component"], *[k9-elem="channel-artifact"], *[k9-elem="internal-model-artifact"], *[k9-elem="protocol-artifact"], *[k9-elem="agent-artifact"], *[k9-elem="image-artifact"], *[k9-elem="generic-artifact"] {
+*[k9-elem="artifact"], *[k9-elem="cash"], *[k9-elem="document"], *[k9-elem="users"], *[k9-elem="computer"], *[k9-elem="interface"], *[k9-elem="component"], *[k9-elem="channel-artifact"], *[k9-elem="internal-model-artifact"], *[k9-elem="protocol-artifact"], *[k9-elem="agent-artifact"], *[k9-elem="image-artifact"], *[k9-elem="generic-artifact"] {
 --kite9-margin-top: 10pt;
 --kite9-margin-right: 10pt;
 --kite9-margin-bottom: 10pt;
@@ -420,7 +420,7 @@ fill: black;
 --kite9-horizontal-sizing: MINIMIZE;
 --kite9-vertical-sizing: MINIMIZE;
 --kite9-connections: SEPARATE;
-font-size: 14pt;
+font-size: 15pt;
 font-weight: 500;
 --kite9-link-inset: 3pt;
 }
@@ -512,7 +512,7 @@ text-align: center;
 --kite9-padding-right: 10pt;
 --kite9-padding-bottom: 10pt;
 --kite9-padding-left: 10pt;
---kite9-min-width: 120pt;
+--kite9-min-width: 145pt;
 --kite9-min-height: 160pt;
 }
 
@@ -549,25 +549,24 @@ text-align: center;
 --kite9-horizontal-align: CENTER;
 }
 
-*[k9-elem="celltext"] {
+*[k9-elem="celltext"][k9-format="text-fixed"] {
 --kite9-usage: REGULAR;
 --kite9-padding-top: 10pt;
 --kite9-padding-right: 10pt;
 --kite9-padding-bottom: 10pt;
 --kite9-padding-left: 10pt;
---kite9-vertical-align: CENTER;
---kite9-horizontal-align: LEFT;
+--kite9-vertical-align: BOTTOM;
+--kite9-horizontal-align: CENTER;
 --kite9-horizontal-sizing: MINIMIZE;
 --kite9-vertical-sizing: MINIMIZE;
-font-size: 40pt;
+font-size: 15pt;
 fill: black;
-font-family: "gothic";
 stroke: none;
 --kite9-text-bounds-width: 350pt;
 }
 
 *[k9-elem="celltext"].bold {
-font-family: "gothic-bold";
+font-weight: bold;
 }
 
 *[k9-elem="celltext"].bottom {
@@ -578,37 +577,8 @@ font-family: "gothic-bold";
 --kite9-horizontal-align: LEFT;
 }
 
-*[k9-elem="bulleted"] {
---kite9-usage: REGULAR;
---kite9-type: CONTAINER;
+*[k9-elem="description"].top {
 --kite9-vertical-align: TOP;
---kite9-horizontal-align: LEFT;
-font-size: 40pt;
-fill: black;
-font-family: "gothic";
-stroke: none;
-}
-
-*[k9-elem="ctext"] {
---kite9-usage: REGULAR;
---kite9-vertical-align: TOP;
---kite9-horizontal-align: LEFT;
-font-size: 40pt;
-fill: black;
-font-family: "gothic";
-stroke: none;
---kite9-type: TEXT;
-}
-
-*[k9-elem="btext"] {
---kite9-usage: REGULAR;
---kite9-vertical-align: TOP;
---kite9-horizontal-align: LEFT;
-font-size: 40pt;
-fill: black;
-font-family: "gothic-bold";
-stroke: none;
---kite9-type: TEXT;
 }
 
 *[k9-elem="tick"] {
@@ -632,10 +602,34 @@ stroke: none;
 --kite9-vertical-align: TOP;
 }
 
+*[k9-elem="table"] &gt; rect, *[k9-elem="table"] &gt; g &gt; rect {
+stroke: white;
+}
+
+*[k9-elem="table"].wide *[k9-elem="description"] {
+--kite9-text-bounds-width: 450pt;
+}
+
+*[k9-elem="description"].top {
+--kite9-horizontal-align: LEFT;
+text-align: left;
+}
+
+*[k9-elem="description"].left {
+--kite9-horizontal-align: LEFT;
+text-align: left;
+}
+
+*[k9-elem="description"].middle {
+--kite9-horizontal-align: CENTER;
+}
+
+*[k9-elem="cell"] &gt; g &gt; rect {
+stroke: white;
+}
+
 *[k9-elem="description"], *[k9-elem="long-description"], *.description {
 font-size: 14pt;
-font-family: "gothic-italic";
-font-style: italic;
 --kite9-padding-top: 10pt;
 --kite9-padding-right: 10pt;
 --kite9-padding-bottom: 10pt;
@@ -643,24 +637,10 @@ font-style: italic;
 --kite9-text-bounds-width: 250pt;
 }
 
-*[k9-elem="leg"] {
---kite9-type: CONTAINER;
---kite9-layout: DOWN;
---kite9-min-height: 110pt;
---kite9-min-width: 70pt;
---kite9-horizontal-sizing: MINIMIZE;
---kite9-vertical-sizing: MINIMIZE;
---kite9-margin-top: 0pt;
---kite9-margin-right: 0pt;
---kite9-margin-bottom: 0pt;
---kite9-margin-left: 0pt;
---kite9-vertical-align: BOTTOM;
-}
-
-*[k9-elem="plinth"] {
---kite9-type: CONTAINER;
---kite9-horizontal-sizing: MAXIMIZE;
---kite9-vertical-sizing: MAXIMIZE;
+*[k9-elem="description"].bold {
+fill: black;
+font-style: normal;
+font-weight: 600;
 }
 
 *[k9-elem="big-image"] {
@@ -824,6 +804,16 @@ indent: 0;
 text-align: center;
 font-weight: 300;
 font-style: italic;
+}
+
+*[k9-elem="glyph"].rect {
+--kite9-min-height: 40pt;
+--kite9-min-width: 30pt;
+}
+
+*[k9-elem="glyph"].circle {
+--kite9-min-height: 30pt;
+--kite9-min-width: 30pt;
 }
 
 *[k9-texture="none"] {
@@ -1112,7 +1102,8 @@ fill-opacity: 1;
 
 *[k9-texture] {
 font-family: "metropolis";
-font-size: 12pt;
+font-size: 16pt;
+font-weight: 500;
 }
 
 *[k9-texture="artifact"] {
@@ -1122,17 +1113,15 @@ stroke: none;
 }
 
 *[k9-texture="artifact"] text {
-font-size: 12pt;
-font-weight: 200;
+font-size: 16pt;
+font-weight: 400;
 fill: black;
 text-align: center;
 --kite9-text-bounds-width: 100pt;
 }
 
-*[k9-elem="description"] text {
+*[k9-elem="label"] text, *[k9-elem="description"] text {
 font-style: italic;
-font-size: 12pt;
-font-weight: 200;
 --kite9-direction: RIGHT;
 }
 
@@ -1156,6 +1145,7 @@ fill-opacity: 1;
 *[k9-elem="arrow"] &gt; g &gt; *[k9-elem="caption"] &gt; g &gt; text {
 fill: white;
 fill-opacity: 1;
+font-size: 16pt;
 }
 
 *[k9-elem="from"], *[k9-elem="to"] {
@@ -1166,7 +1156,7 @@ fill-opacity: 1;
 --kite9-link-minimum-length: 30pt;
 }
 
-*[k9-elem="glyph"][k9-texture="background"] &gt; g &gt; rect, *[k9-elem="action"] *[k9-texture="background"] {
+*[k9-elem="glyph"][k9-texture="background"] &gt; g &gt; rect, *[k9-elem="glyph"][k9-texture="background"] &gt; g &gt; ellipse, *[k9-elem="action"] *[k9-texture="background"] {
 fill: url(#risk-background);
 stroke: black;
 stroke-width: 1pt;
@@ -1174,8 +1164,8 @@ stroke-width: 1pt;
 
 *[k9-elem="action"] &gt; g &gt; *[k9-elem="caption"] &gt; g &gt; text {
 fill-opacity: 1;
-font-size: 12pt;
-font-weight: 200;
+font-size: 16pt;
+font-weight: 500;
 fill: black;
 text-align: center;
 }
@@ -1185,15 +1175,15 @@ fill: white;
 }
 
 *[k9-elem="title"] {
-font-size: 12pt;
-font-weight: 200;
+font-size: 16pt;
+font-weight: 500;
 fill: black;
 text-align: center;
 }
 
 *[k9-elem="code"] {
 font-size: 22pt;
-font-weight: 300;
+font-weight: 500;
 fill: black;
 text-align: center;
 }
@@ -1421,8 +1411,9 @@ fill-opacity: 1;
          <stop stop-color="#FFF" offset="0%"/>
          <stop stop-color="#DDD" offset="100%"/>
       </linearGradient>
-      <filter xlink:actuate="onLoad"
+      <filter xmlns:svg="http://www.w3.org/2000/svg"
               xlink:type="simple"
+              xlink:actuate="onLoad"
               height="130%"
               id="dropshadow"
               xlink:show="other">
@@ -1439,7 +1430,7 @@ fill-opacity: 1;
               xlink:type="simple"
               id="adl:markup"
               xlink:show="other"
-              type="text/xml;purpose=adl;base64">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPGRpYWdyYW0geG1sbnM9Imh0dHA6Ly93d3cua2l0ZTkub3JnL3NjaGVtYS9hZGwiCiAgICAgICAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgICAgICAgIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIgogICAgICAgICB4bWxuczp4c2x0PSJodHRwOi8vd3d3LmtpdGU5Lm9yZy9zY2hlbWEveHNsdCIKICAgICAgICAgY2xhc3M9InByaW5jaXBsZSIKICAgICAgICAgaWQ9ImRpYSIKICAgICAgICAgeHNsdDp0ZW1wbGF0ZT0iL3B1YmxpYy90ZW1wbGF0ZXMvcmlzay1maXJzdC9yaXNrLWZpcnN0LXRlbXBsYXRlLnhzbCI+CiAgIDxncm91cCBjbGFzcz0icHJpbmNpcGxlLW91dGxpbmUiPgogICAgICA8Z3JvdXAgY2xhc3M9InByaW5jaXBsZS10b3AiPgogICAgICAgICA8Z3JvdXAgY2xhc3M9InByaW5jaXBsZS1sZWZ0LXRvcCI+CiAgICAgICAgICAgIDxwYWdlLXRpdGxlIGNsYXNzPSJudW1iZXIiPgoJCQkJCSM3CgkJCQk8L3BhZ2UtdGl0bGU+CiAgICAgICAgIDwvZ3JvdXA+CiAgICAgICAgIDxncm91cCBjbGFzcz0icHJpbmNpcGxlLXJpZ2h0LXRvcCI+CiAgICAgICAgICAgIDxwYWdlLXRpdGxlIGNsYXNzPSJwcmluY2lwbGUiPgoJCQkJCVN0YXkgSGVhbHRoeQoJCQkJPC9wYWdlLXRpdGxlPgogICAgICAgICA8L2dyb3VwPgogICAgICAgICA8Z3JvdXAgY2xhc3M9InByaW5jaXBsZS1sZWZ0LWJvdHRvbSI+CiAgICAgICAgICAgIDxyaXNrLWZpcnN0LWxvZ28gY2xhc3M9InByaW5jaXBsZSIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICBoZWlnaHQ9IjE1MHB0IgogICAgICAgICAgICAgICAgICAgICAgICAgICAgIGhyZWY9Ii9wdWJsaWMvdGVtcGxhdGVzL3Jpc2stZmlyc3QvbG9nby9SMV9sb2dvX2dydWUuc3ZnIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgIHdpZHRoPSIxNTBwdCIvPgogICAgICAgICAgICA8cGFnZS10aXRsZSBjbGFzcz0icHJpbmNpcGxlLXNpdGUiPgoJCQkJCVJJU0stRklSU1QKCQkJCQlTT0ZUV0FSRQoJCQkJCURFVkVMT1BNRU5UCgkJCQk8L3BhZ2UtdGl0bGU+CiAgICAgICAgIDwvZ3JvdXA+CiAgICAgICAgIDxncm91cCBjbGFzcz0icHJpbmNpcGxlLXJpZ2h0LWJvdHRvbSI+CiAgICAgICAgICAgIDxwYWdlLXN1bW1hcnkgY2xhc3M9InByaW5jaXBsZSI+CgkJCQkJVHJhY2sgdGhlIHJpc2tzIHRvIHRoZSBoZWFsdGggb2Y6CgkJCQk8L3BhZ2Utc3VtbWFyeT4KICAgICAgICAgICAgPHBhZ2Utc3VtbWFyeSBjbGFzcz0icHJpbmNpcGxlIj4KCQkJCQlZb3Vyc2VsZgoJCQkJPC9wYWdlLXN1bW1hcnk+CiAgICAgICAgICAgIDxwYWdlLXN1bW1hcnkgY2xhc3M9InByaW5jaXBsZSI+CgkJCQkJWW91ciB0ZWFtCgkJCQk8L3BhZ2Utc3VtbWFyeT4KICAgICAgICAgICAgPHBhZ2Utc3VtbWFyeSBjbGFzcz0icHJpbmNpcGxlIj4KCQkJCQlZb3VyIHByb2plY3QKCQkJCTwvcGFnZS1zdW1tYXJ5PgogICAgICAgICAgICA8cGFnZS1zdW1tYXJ5IGNsYXNzPSJwcmluY2lwbGUiPgoJCQkJCVlvdXIgY29tcGFueS4KCQkJCTwvcGFnZS1zdW1tYXJ5PgogICAgICAgICAgICA8cGFnZS1zdW1tYXJ5IGNsYXNzPSJwcmluY2lwbGUiPgoJCQkJCVRoZXkgYXJlIGFsbCByZWxhdGVkLgoJCQkJPC9wYWdlLXN1bW1hcnk+CiAgICAgICAgIDwvZ3JvdXA+CiAgICAgIDwvZ3JvdXA+CiAgIDwvZ3JvdXA+CjwvZGlhZ3JhbT4K</script>
+              type="text/xml;purpose=adl;base64">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPGRpYWdyYW0geG1sbnM9Imh0dHA6Ly93d3cua2l0ZTkub3JnL3NjaGVtYS9hZGwiCiAgICAgICAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgICAgICAgIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIgogICAgICAgICB4bWxuczp4c2x0PSJodHRwOi8vd3d3LmtpdGU5Lm9yZy9zY2hlbWEveHNsdCIKICAgICAgICAgY2xhc3M9InByaW5jaXBsZSIKICAgICAgICAgaWQ9ImRpYSIKICAgICAgICAgeHNsdDp0ZW1wbGF0ZT0iL3B1YmxpYy90ZW1wbGF0ZXMvcmlzay1maXJzdC9yaXNrLWZpcnN0LXRlbXBsYXRlLnhzbCI+CiAgIDxncm91cCBjbGFzcz0icHJpbmNpcGxlLW91dGxpbmUiPgogICAgICA8Z3JvdXAgY2xhc3M9InByaW5jaXBsZS10b3AiPgogICAgICAgICA8Z3JvdXAgY2xhc3M9InByaW5jaXBsZS1sZWZ0LXRvcCI+CiAgICAgICAgICAgIDxwYWdlLXRpdGxlIGNsYXNzPSJudW1iZXIiPgoJCQkJCSM0CgkJCQk8L3BhZ2UtdGl0bGU+CiAgICAgICAgIDwvZ3JvdXA+CiAgICAgICAgIDxncm91cCBjbGFzcz0icHJpbmNpcGxlLXJpZ2h0LXRvcCI+CiAgICAgICAgICAgIDxwYWdlLXRpdGxlIGNsYXNzPSJwcmluY2lwbGUiPgoJCQkJCVN0YXkgSGVhbHRoeQoJCQkJPC9wYWdlLXRpdGxlPgogICAgICAgICA8L2dyb3VwPgogICAgICAgICA8Z3JvdXAgY2xhc3M9InByaW5jaXBsZS1sZWZ0LWJvdHRvbSI+CiAgICAgICAgICAgIDxyaXNrLWZpcnN0LWxvZ28gY2xhc3M9InByaW5jaXBsZSIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICBoZWlnaHQ9IjE1MHB0IgogICAgICAgICAgICAgICAgICAgICAgICAgICAgIGhyZWY9Ii9wdWJsaWMvdGVtcGxhdGVzL3Jpc2stZmlyc3QvbG9nby9SMV9sb2dvX2dydWUuc3ZnIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgIHdpZHRoPSIxNTBwdCIvPgogICAgICAgICAgICA8cGFnZS10aXRsZSBjbGFzcz0icHJpbmNpcGxlLXNpdGUiPgoJCQkJCVJJU0stRklSU1QKCQkJCQlTT0ZUV0FSRQoJCQkJCURFVkVMT1BNRU5UCgkJCQk8L3BhZ2UtdGl0bGU+CiAgICAgICAgIDwvZ3JvdXA+CiAgICAgICAgIDxncm91cCBjbGFzcz0icHJpbmNpcGxlLXJpZ2h0LWJvdHRvbSI+CiAgICAgICAgICAgIDxwYWdlLXN1bW1hcnkgY2xhc3M9InByaW5jaXBsZSI+CgkJCQkJVHJhY2sgdGhlIHJpc2tzIHRvIHRoZSBoZWFsdGggb2Y6CgkJCQk8L3BhZ2Utc3VtbWFyeT4KICAgICAgICAgICAgPHBhZ2Utc3VtbWFyeSBjbGFzcz0icHJpbmNpcGxlIj4KCQkJCQlZb3Vyc2VsZgoJCQkJPC9wYWdlLXN1bW1hcnk+CiAgICAgICAgICAgIDxwYWdlLXN1bW1hcnkgY2xhc3M9InByaW5jaXBsZSI+CgkJCQkJWW91ciB0ZWFtCgkJCQk8L3BhZ2Utc3VtbWFyeT4KICAgICAgICAgICAgPHBhZ2Utc3VtbWFyeSBjbGFzcz0icHJpbmNpcGxlIj4KCQkJCQlZb3VyIHByb2plY3QKCQkJCTwvcGFnZS1zdW1tYXJ5PgogICAgICAgICAgICA8cGFnZS1zdW1tYXJ5IGNsYXNzPSJwcmluY2lwbGUiPgoJCQkJCVlvdXIgY29tcGFueS4KCQkJCTwvcGFnZS1zdW1tYXJ5PgogICAgICAgICAgICA8cGFnZS1zdW1tYXJ5IGNsYXNzPSJwcmluY2lwbGUiPgoJCQkJCVRoZXkgYXJlIGFsbCByZWxhdGVkLgoJCQkJPC9wYWdlLXN1bW1hcnk+CiAgICAgICAgIDwvZ3JvdXA+CiAgICAgIDwvZ3JvdXA+CiAgIDwvZ3JvdXA+CjwvZGlhZ3JhbT4K</script>
    </defs>
    <g xmlns:xslt="http://www.kite9.org/schema/xslt"
       k9-contains="connected label"
@@ -1525,13 +1516,13 @@ fill-opacity: 1;
                            <g k9-elem="page-title"
                               k9-texture="foreground"
                               class="number"
-                              transform="translate(62.5,93.0)"
+                              transform="translate(60.5,93.0)"
                               k9-format="text-fixed"
-                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: top; rectangular: connected; rect-pos: [183.0, 105.0]; rect-size: [96.0, 96.0]; position: none; painter: direct-svg; ">
+                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: top; rectangular: connected; rect-pos: [181.0, 105.0]; rect-size: [100.0, 96.0]; position: none; painter: direct-svg; ">
                               <g class="k9-content k9-no-shape" k9-highlight="pulse">
                                  <g rendered="true">
                                     <g fill="rgb(245,62,121)" stroke="rgb(245,62,121)">
-                                       <path d="M41.6927 -33.6719 L38.5677 -21.1979 L46.25 -21.1979 L44.2448 -12.8125 L36.4062 -12.8125 L33.2031 0 L24.5573 0 L27.7604 -12.8125 L18.5677 -12.8125 L15.3646 0 L6.7969 0 L10 -12.8125 L2.474 -12.8125 L4.5573 -21.1979 L12.1615 -21.1979 L15.2865 -33.6719 L7.526 -33.6719 L9.6094 -42.0833 L17.3698 -42.0833 L20.651 -54.9479 L29.1927 -54.9479 L25.9115 -42.0833 L35.1302 -42.0833 L38.4115 -54.9479 L47.0312 -54.9479 L43.75 -42.0833 L51.5104 -42.0833 L49.4271 -33.6719 L41.6927 -33.6719 ZM33.0469 -33.6719 L23.8281 -33.6719 L20.7292 -21.1979 L29.9219 -21.1979 L33.0469 -33.6719 ZM84.9637 -44.3229 L57.7501 -44.3229 L57.7501 -54.9479 L98.6355 -54.9479 L98.6355 -46.0677 L76.4741 0 L63.1147 0 L84.9637 -44.3229 Z"
+                                       <path d="M41.6927 -33.6719 L38.5677 -21.1979 L46.25 -21.1979 L44.2448 -12.8125 L36.4062 -12.8125 L33.2031 0 L24.5573 0 L27.7604 -12.8125 L18.5677 -12.8125 L15.3646 0 L6.7969 0 L10 -12.8125 L2.474 -12.8125 L4.5573 -21.1979 L12.1615 -21.1979 L15.2865 -33.6719 L7.526 -33.6719 L9.6094 -42.0833 L17.3698 -42.0833 L20.651 -54.9479 L29.1927 -54.9479 L25.9115 -42.0833 L35.1302 -42.0833 L38.4115 -54.9479 L47.0312 -54.9479 L43.75 -42.0833 L51.5104 -42.0833 L49.4271 -33.6719 L41.6927 -33.6719 ZM33.0469 -33.6719 L23.8281 -33.6719 L20.7292 -21.1979 L29.9219 -21.1979 L33.0469 -33.6719 ZM83.922 -11.1979 L57.1251 -11.1979 L56.0053 -20.3125 L81.448 -54.8698 L95.771 -54.8698 L95.771 -21.1198 L103.0366 -21.1198 L103.0366 -11.1979 L95.771 -11.1979 L95.771 0 L83.922 0 L83.922 -11.1979 ZM83.922 -21.1198 L83.922 -42.3958 L68.4012 -21.1198 L83.922 -21.1198 Z"
                                              stroke="none"/>
                                     </g>
                                  </g>

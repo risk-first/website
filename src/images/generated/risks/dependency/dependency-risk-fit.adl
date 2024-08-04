@@ -2,54 +2,55 @@
 	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
 	xmlns="http://www.kite9.org/schema/adl"
 	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia">
-    <group style="--kite9-horizontal-align: center; --kite9-sizing: minimize;">
+	<group
+		style="--kite9-horizontal-align: center; --kite9-sizing: minimize;">
 
 
-      <glyph style="--kite9-min-size: 200pt 50pt; " id="1" >
-       Perfect Bus
-      </glyph>
+		<container style="--kite9-min-size: 320pt 250pt; " id="1">
+			<label>Perfect
+			 Bus</label>
+		</container>
+		<container id="2" style="--kite9-min-size: 320pt 250pt; ">
+			<risk class="feature-fit" />
+			<label>Not leaving at exactly
+				the time you want
+			</label>
+		</container>
 
-      <glyph style="--kite9-min-size: 200pt  50pt ; " id="2">
-        <stereotype>Feature Fit Risk</stereotype>
-        <label>Not Leaving at exactly 
-        the time you want
-        </label>
-      </glyph>
+		<container style="--kite9-min-size: 320pt 250pt; " id="3">
+			<risk class="conceptual-integrity" />
+			<label>Stopping at too many places</label>
+		</container>
 
-      <glyph style="--kite9-min-size: 200pt 50pt; " id="3">
-        <stereotype>Conceptual Integrity Risk</stereotype>
-        <label>Stopping at too many places
-        </label>
-      </glyph>
+		<container id="4" style="--kite9-min-size: 320pt 250pt; --kite9-horizontal-align: top;">
+			<risk class="feature-fit" style="" />
+			<risk class="conceptual-integrity" />
+			<label>Real
+			 Bus</label>
 
-      <glyph  style="--kite9-min-size: 200pt 50pt; " id="4">
-        <stereotype>Conceptual Integrity Risk
-          Feature Fit Risk
-        </stereotype>
+		</container>
 
-        <label style="--kite9-minimum-width: 250pt; "> Real Bus</label>
-      </glyph>
-      </group>
+	</group>
 
-      <link>
-        <from reference="1" />
-        <to reference="2" shape="arrow" />
-      </link>
+	<link>
+		<from reference="1" />
+		<to reference="2" shape="arrow" />
+	</link>
 
-      <link>
-        <from reference="2" />
-        <to reference="4" shape="arrow" />
-      </link>
+	<link>
+		<from reference="2" />
+		<to reference="4" shape="arrow" />
+	</link>
 
-      <link>
-        <from reference="1" />
-        <to reference="3" shape="arrow" />
-      </link>
+	<link>
+		<from reference="1" />
+		<to reference="3" shape="arrow" />
+	</link>
 
-      <link>
-        <from reference="3" />
-        <to reference="4" shape="arrow" />
-      </link>
+	<link>
+		<from reference="3" />
+		<to reference="4" shape="arrow" />
+	</link>
 
 
-  </diagram>
+</diagram>

@@ -1,29 +1,28 @@
 ---
 title: Debugging Bets
 description: Making use of risk and odds while debugging
-url: https://riskfirst.org/bets/Debugging-Bets
 
 date: 2019-11-10 16:32:03 +0000
 featured: 
-  class: bg1
+  class: c
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/cards.svg">Debugging Bets</image-artifact>'
 tags:
- - Bets
+ - Bet
 sidebar_position: 3
 tweet: yes
 ---
 
 # Debugging Bets
 
-In [The Purpose Of The Development Team](Purpose-Development-Team.md) we looked at how a development team is all about trying to shift the risk profile in favour of the business.  Perhaps by removing the risk of customers not having the features they want, or not signing up, or not learning about the product.
+In [The Purpose Of The Development Team](Purpose-Development-Team) we looked at how a development team is all about trying to shift the risk profile in favour of the business.  Perhaps by removing the risk of customers not having the features they want, or not signing up, or not learning about the product.
 
-Then, in [Coding Bets](Coding-Bets.md) we considered the same thing at task level. That is, in choosing to spend time on a given task we are staking our time to improve our risk position.  And, it’s definitely a bet, because sometimes, a piece of coding simply doesn’t end up working the way you want. 
+Then, in [Coding Bets](Coding-Bets) we considered the same thing at task level. That is, in choosing to spend time on a given task we are staking our time to improve our risk position.  And, it’s definitely a bet, because sometimes, a piece of coding simply doesn’t end up working the way you want. 
 
-![Article Series](/img/generated/practices/debugging/bets.png)
+![Article Series](/img/generated/bets/debugging/bets.svg)
 
 Now, we’re going to consider the exact same thing again but from the point of view of debugging. I’ve been waiting a while to write this, because I’ve wanted a really interesting bug to come along to allow me to go over how you can apply risk to cracking it.  
 
-Luckily one came along today, giving me a chance to write it up and go over this.  If you've not looked at Risk-First articles before, you may want to review [Risk-First Diagrams Explained](../thinking/Risk-First-Diagrams.md), since there'll be lots of diagrams to demonstrate the bets I'm making.
+Luckily one came along today, giving me a chance to write it up and go over this.  If you've not looked at Risk-First articles before, you may want to review [Risk-First Diagrams Explained](/thinking/Risk-First-Diagrams), since there'll be lots of diagrams to demonstrate the bets I'm making.
 
 ## The Problem
 
@@ -31,7 +30,7 @@ Luckily one came along today, giving me a chance to write it up and go over this
 
 In order to make this work, we made use of functionality within Symphony called “On-Behalf-Of”, which allows Tables App to post messages as a user, if the user has given prior authorisation.
 
-![Table Editing In Symphony](/img/tables.jpg)
+![Table Editing In Symphony](/img/bets/tables.jpg)
 
 But something wasn’t working - whenever I clicked "post" - no table!
 
@@ -41,7 +40,7 @@ To make matters worse, I was supposed to be doing a presentation on this within 
 
 So, what is supposed to happen?
 
-![Flow of Action](/img/debugging_flow.png)
+![Flow of Action](/img/bets/debugging_flow.png)
 
 1.  The user clicks the "post" button in Tables App.
 2.  Tables App then makes a request to the Symphony Server for an On-Behalf-Of token.
@@ -71,7 +70,7 @@ For now, I ignored those voices in my head.  I wanted to use my limited time wis
 
 In order to figure out how to use my time, I’d need to enumerate all the hypotheses about what the problem might be, and then work out how best to use my time to test these hypotheses.
 
-![Hypotheses](/img/generated/practices/debugging/hypotheses.png)
+![Hypotheses](/img/generated/bets/debugging/hypotheses.svg)
 
 In order to generate the list of hypotheses, you have to find the last-known good place, and work forward through all the steps after that that could have failed.  So this is what I came up with:
 
@@ -91,7 +90,7 @@ If we test each hypothesis, we learn something about the system.  But that has a
 
 ### First Test
 
-![Test 1: Curl With Broken Token](/img/generated/practices/debugging/test1.png) 
+![Test 1: Curl With Broken Token](/img/generated/bets/debugging/test1.svg) 
 
 Although `H1` was unlikely (and therefore I probably wasn’t going to learn much) it was really easy to test.  All I needed to do was try the `curl` command again with a deliberately broken token.  What would the message be?  What came back was a `401 error - unauthorised`.  So it definitely wasn’t `H1`, because the error message was different.
 
@@ -103,13 +102,13 @@ So, although I did have an issue with certificates, it wasn’t the main problem
 
 Since the code was returning the same result locally and on the server, that really ruled out `H7`.  Also `H2` was ruled out, because the server ran really fast - there wasn’t time for the token to expire.  
 
-![Test 2:  Run Locally](/img/generated/practices/debugging/test2.png) 
+![Test 2:  Run Locally](/img/generated/bets/debugging/test2.svg) 
 
 ## Third Test
 
 Down to just `H3`,`H4` and `H5`.  I had definitely seen On-Behalf-Of working two weeks’ ago, but in that other app.  A fairly quick thing to do would be to try and post the message with that other app, but it wasn't installed.  Instead, I could try my same code out again, but _using the other app's identity_.  I did this, and lo!  I still get the “not able to obtain session” error. 
 
-![Test 3:  Post With Other App](/img/generated/practices/debugging/test3.png) 
+![Test 3:  Post With Other App](/img/generated/bets/debugging/test3.svg) 
 
 This ruled out `H3`.  But there was still a chance I was creating the token wrongly (`H5`). 
 
@@ -119,7 +118,7 @@ If I could use this token for an an On-Behalf-Of operation on the Symphony Serve
 
 This was another simple thing to test, since all I had to do was call a “Room Lookup” function on the Symphony Server, something that didn’t need encryption, and therefore use the Encryption Agent.  Now, although Tables App couldn't do this (fact 4), my other app could, so I could continue with the new identity and try that.
 
-![Test 4:  On-Behalf-Of Against Server](/img/generated/practices/debugging/test4.png) 
+![Test 4:  On-Behalf-Of Against Server](/img/generated/bets/debugging/test4.svg) 
 
 ## Outcome
 
@@ -127,7 +126,7 @@ Sadly, this meant that I’d actually had to test and rule out _all of the other
 
 ## Some Notes
 
-1.  I started by writing down all the things I knew, and all of my hypotheses.  Why?  Surely, time was short!  I did this _because_ time was short.  The reason was, by having all of the facts and hypotheses to hand I was setting up my [Internal Model](../thinking/Glossary.md#internal-model) of the problem, with which I could reason about the new information as I came across it.
+1.  I started by writing down all the things I knew, and all of my hypotheses.  Why?  Surely, time was short!  I did this _because_ time was short.  The reason was, by having all of the facts and hypotheses to hand I was setting up my [Internal Model](/tags/Internal-Model) of the problem, with which I could reason about the new information as I came across it.
 2.  I performed four tests, and ended up ruling out six different hypotheses.   That feels like good value-for-time.
 3.  In each case, I am trading _time_ to change the risk profile of the problem.  By reducing to zero the likelihood of some risks, I am increasing the likelihood of those left.  So a good test would:
  - a.  Bisect probability space 50/50.  That way the information is maximised.
@@ -142,7 +141,3 @@ I have a feeling that this is really the process I use for _every_ bug, whether 
 Also, I am super-lazy.  I'm always trying to rule of out the hypotheses with the least effort.  Usually, that means lashing together some arrangement of stuff just so see what happens (like the switching identities stuff above).  If testing a hypothesis starts to look onerous, I'll try and find some clever trick to reduce that effort.
 
 Perhaps you have a different process?  Is there another one?  I'd really like to know about it if so.   Please join the GitHub Risk-First team and tell me about it!
-
-## Coming Soon...
-
-In the next (currently unwritten) article, we'll bring this home by looking at testing, and look at the similarities across all of these different practices.  

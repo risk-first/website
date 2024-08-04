@@ -1,7 +1,7 @@
 ---
 title: Presentations
 description: Presentations given about Risk-First
-url: https://riskfirst.org/presentations/Start
+
 
 featured: 
   class: bg1
@@ -10,7 +10,8 @@ layout: categories
 cat: Presentations
 tags:
  - Front
-sidebar_position: 7
+ - Read All About It
+sidebar_position: 9
 tweet: yes
 ---
 

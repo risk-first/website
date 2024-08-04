@@ -1,7 +1,6 @@
 ---
 title: Fixing Scrum
 description: "Part of the 'Estimating' Risk-First Track, looking at the essential flaws in Scrums' time-boxing of work."
-url: https://riskfirst.org/estimating/Fixing-Scrum
 featured: 
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/scrum.svg">Fixing Scrum</image-artifact>'
@@ -9,7 +8,8 @@ tags:
  - Estimating
  - Popular
  - Feedback Loop
- - Meet Reality
+ - Meeting Reality
+ - Scrum
 sidebar_position: 6
 tweet: yes
 ---
@@ -29,54 +29,54 @@ Work in Scrum is done within periods of time called _Sprints_.  Each sprint ends
 
 > "The goal of this activity is to inspect and adapt the product being built... Everyone in attendance gets clear visibility into what is occurring and has an opportunity to help guide the forthcoming development to ensure that the most business-appropriate solution is created." - Essential Scrum (p26), _Rubin_
 
-In Risk-First, we tend to call this validation step [Meeting Reality](../thinking/Glossary.md#meet-reality):  you are creating a [feedback loop](../thinking/Cadence.md) in order to minimise risk.  What is the risk you are minimising?  Essentially, we are trying to reduce the risk of the developers _building the wrong thing_, which could be due to misunderstanding of requirements, or perfectionism, or because the piece of work was ill-conceived in the first place.  In Risk-First, the risk of building the wrong thing is called [Feature Risk](../risks/Feature-Risk.md).
+In Risk-First, we tend to call this validation step [Meeting Reality](/tags/Meeting-Reality):  you are creating a [feedback loop](/thinking/Cadence) in order to minimise risk.  What is the risk you are minimising?  Essentially, we are trying to reduce the risk of the developers _building the wrong thing_, which could be due to misunderstanding of requirements, or perfectionism, or because the piece of work was ill-conceived in the first place.  In Risk-First, the risk of building the wrong thing is called [Feature Risk](/tags/Feature-Risk).
 
-![Feature Risk mitigated by Meeting Reality](/img/generated/estimating/scrum/scrum1.png)
+![Feature Risk mitigated by Meeting Reality](/img/generated/estimating/scrum/scrum1.svg)
 
-The above diagram demonstrates us mitigating [Feature Risk](../risks/Feature-Risk.md) (the risk of not building the right software for our clients) by organising a Sprint Review.  But there is a downside to a Sprint Review:  _it takes time_.
+The above diagram demonstrates us mitigating [Feature Risk](/tags/Feature-Risk) (the risk of not building the right software for our clients) by organising a Sprint Review.  But there is a downside to a Sprint Review:  _it takes time_.
 
-![Schedule Risk for Stakeholders](/img/generated/estimating/scrum/scrum2.png)
+![Schedule Risk for Stakeholders](/img/generated/estimating/scrum/scrum2.svg)
 
-And that risk is called [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk).  It is shown in the diagram above: the _more feedback_ you are receiving, the more _interruption_ you are causing to the people giving feedback.   So you are trying to [Balance Risk](../bets/Purpose-Development-Team.md):  while having a _daily_ review for a software project involving all stakeholders would be over-kill and waste a lot of everyone's time, having a _yearly_ review would be too-long a feedback loop.   Balancing risk here means doing the feedback loop _just often enough_.
+And that risk is called [Schedule Risk](/tags/Schedule-Risk).  It is shown in the diagram above: the _more feedback_ you are receiving, the more _interruption_ you are causing to the people giving feedback.   So you are trying to [Balance Risk](../bets/Purpose-Development-Team):  while having a _daily_ review for a software project involving all stakeholders would be over-kill and waste a lot of everyone's time, having a _yearly_ review would be too-long a feedback loop.   Balancing risk here means doing the feedback loop _just often enough_.
 
 ## Time-Boxing To The Rescue
 
 > "Sprints are **time-boxed** so that they have a fixed start and end date, and generally they should all be of the same duration. " - Essential Scrum (p20), _Rubin_
 
-![Time Boxing Causes Coordination Risk](/img/generated/estimating/scrum/scrum3.png)
+![Time Boxing Causes Coordination Risk](/img/generated/estimating/scrum/scrum3.svg)
 
 In order to balance the risks, Sprints are time-boxed:  rather than just requesting feedback every five minutes or _whenever_, the idea is that the development team completes a Sprint within a fixed period of time (two weeks being common).  On the one hand, this means everyone can have a regular meeting in their diary, and agree up-front about how much of their schedule will be taken up in Sprint Reviews.  
 
 But the problem is that now the developers have to coordinate their work to be ready before the Sprint Review starts.   Even for a _development team of one_ it can be a challenge to coordinate like this:   often, development is completed a few days early, or incomplete by the day of the demo, so it might be easier to move the meeting.    
 
-As the number of developers in the team grows, the [Coordination Risk](../risks/Coordination-Risk.md) increases:  rather than bulls-eye-ing a single feature for demo day, you're now expecting a whole team to do it.  
+As the number of developers in the team grows, the [Coordination Risk](/tags/Coordination-Risk) increases:  rather than bulls-eye-ing a single feature for demo day, you're now expecting a whole team to do it.  
 
 Nevertheless, time-boxing is foundational principle of Scrum.  So in order to get time-boxing to work, this means we have to rely on planning and estimating.
 
 
 ## Planning And Estimating
 
-![Planning and Estimating to reduce Coordination Risk](/img/generated/estimating/scrum/scrum4.png)
+![Planning and Estimating to reduce Coordination Risk](/img/generated/estimating/scrum/scrum4.svg)
 
 Now, although the above diagram _makes sense_ (estimating as a mitigation to coordination issues) by this point in this track of articles we should be wary of our ability to estimate development tasks _at all_:
 
- - **Sometimes, tasks have a [Fill-The-Bucket](Fill-The-Bucket.md) nature.**  If you have a test plan to run through on six different platforms, and last week doing a single platform took two hours, then your estimate of two days for the lot is probably about right.  
+ - **Sometimes, tasks have a [Fill-The-Bucket](Fill-The-Bucket) nature.**  If you have a test plan to run through on six different platforms, and last week doing a single platform took two hours, then your estimate of two days for the lot is probably about right.  
 
- - **Sometimes, it's about finesse.**  With [Fractal-Style](Fractals.md) problems you know that three days spent on icon design will yield better results than one day, but either way, there will be a set of icons to look at.  
+ - **Sometimes, it's about finesse.**  With [Fractal-Style](Fractals) problems you know that three days spent on icon design will yield better results than one day, but either way, there will be a set of icons to look at.  
 
- - **But sometimes, problems can telescope, as we discussed in [Kitchen Cabinets](Kitchen-Cabinet.md).**  You start thinking the problem of connecting A to B is simple, but then you realise it involves a call to C and to redesign the whole of D and introduce a new micro-service E... your estimate is toast.
+ - **But sometimes, problems can telescope, as we discussed in [Kitchen Cabinets](Kitchen-Cabinet).**  You start thinking the problem of connecting A to B is simple, but then you realise it involves a call to C and to redesign the whole of D and introduce a new micro-service E... your estimate is toast.
 
- - **Finally, sometimes, you'll have a problem that's like a [Journey](Journeys.md).**  Maybe you're trying to set up a new deployment pipeline?  The first step, finding servers turned out to be easy, but now you're trying to license the software to run on them, and it's taking longer.  The journey you have to take is _known_, but the steps along it are all different.   Will you hit the Sprint Review on time?  It's super-hard to say.
+ - **Finally, sometimes, you'll have a problem that's like a [Journey](Journeys).**  Maybe you're trying to set up a new deployment pipeline?  The first step, finding servers turned out to be easy, but now you're trying to license the software to run on them, and it's taking longer.  The journey you have to take is _known_, but the steps along it are all different.   Will you hit the Sprint Review on time?  It's super-hard to say.
  
-Given that estimating is so problematic, does it make any sense to try to mitigate our [Coordination Risk](../risks/Coordination-Risk.md) using estimates?  
+Given that estimating is so problematic, does it make any sense to try to mitigate our [Coordination Risk](/tags/Coordination-Risk) using estimates?  
 
 ##### As a tool for dealing with Coordination Risk, _Estimating_ is an unreliable foot-gun.
 
 ## Other Ways To Address Schedule Risk
 
-![Schedule Risk for Stakeholders](/img/generated/estimating/scrum/scrum2.png)
+![Schedule Risk for Stakeholders](/img/generated/estimating/scrum/scrum2.svg)
 
-Let's go back a step:  isn't there another way to tackle the [Schedule Risk](../risks/Scarcity-Risk.md#schedule-risk) problem _instead_ of time-boxing / huge sprint review meeting?   As we saw, this led to [Coordination Risk](../risks/Coordination-Risk.md) issues.  Here are several other ways you could solve this problem:
+Let's go back a step:  isn't there another way to tackle the [Schedule Risk](/tags/Schedule-Risk) problem _instead_ of time-boxing / huge sprint review meeting?   As we saw, this led to [Coordination Risk](/tags/Coordination-Risk) issues.  Here are several other ways you could solve this problem:
 
 - **Instead of giving live demos of completed features, give video demos of software in progress.** In the film industry, this is called [Dailies or Rushes](https://en.wikipedia.org/wiki/Dailies), because they produce a reel of all the film shot that day.  Why?  Again - it's about risk management:  you're trying to find out if there are any technical issues with the film shot before shooting anything new.   Going back and shooting several weeks later can often be impossibly difficult.  (A great example being the reshoots of the film "Justice League" involving Henry Cavill, playing Superman.  Sadly, when these reshoots were done, he was filming "Mission Impossible: Fallout", and had grown a moustache, which the director of that film, Chris McQuarrie, couldn't let him shave.  So Superman's moustache was edited-out using CGI.)
 
@@ -97,7 +97,7 @@ Perhaps this improves estimating, but for me there are two key problems with thi
 
 ## 10X
 
-I've written before about [how being a "10X Developer" largely comes down to having already visited the terrain](Estimates.md).  This implies that _at different times_ we can all be either 1X or 10X Developers.
+I've written before about [how being a "10X Developer" largely comes down to having already visited the terrain](/estimating/Start).  This implies that _at different times_ we can all be either 1X or 10X Developers.
 
 But with the power of hindsight, it's clear that at different times, on different projects, _whole teams_ can be either 1X or 10X.  
 
@@ -119,11 +119,11 @@ What's the point in getting an estimate right if you're building _totally the wr
 
 How can we, as software developers, minimise the chance of building the wrong thing?   
 
-![Scrum](/img/generated/estimating/scrum/scrum4.png)
+![Scrum](/img/generated/estimating/scrum/scrum4.svg)
 
-Look above at the diagram what Scrum is trying to do to mitigate [Feature Risk](../risks/Feature-Risk.md):
+Look above at the diagram what Scrum is trying to do to mitigate [Feature Risk](/tags/Feature-Risk):
 
-- We [Meet Reality](../thinking/Glossary.md#meet-reality) to ensure we've got a feedback loop.
+- We [Meet Reality](/tags/Meeting-Reality) to ensure we've got a feedback loop.
 - We **time-box** to avoid wasting stake-holders' time (Schedule Risk).
 - We do **planning poker** to try and avoid the Coordination Risk problem of everyone needing to complete their work for the end of the Sprint.
 
@@ -131,4 +131,4 @@ But actually, we're now _three degrees_ away from the original problem of **tryi
 
 If the thesis that "90% of everything is waste" is true, then Planning Poker is _also_ a waste, and we should devise a planning process to avoid this.  
 
-In the [next article](Risk-First-Analysis.md) we'll look at how we might do that.
+In the [next article](Risk-First-Analysis) we'll look at how we might do that.
