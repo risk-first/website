@@ -27,7 +27,7 @@ definitions:
    anchor: exploit
  - name: Reduce
    description:  Minimise the impact of a risk arising.
-   anchor: reduced
+   anchor: reduce
  - name: Share
    description:  Sharing with another party the burden or loss of a risk.
    anchor: share
