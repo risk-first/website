@@ -16,9 +16,11 @@ export default function GetInvolved() {
 			<div className={styles.showcaseOuter}>
 				<img className={styles.showcaseImage} src="/img/generated/executive-summary/pattern_language.svg" />
 			</div>
-			<p>
-				<a className={styles.cta} href="/overview/Quick-Summary">READ THE SUMMARY</a>
-			</p>
+			<div className={styles.explanation}>
+				<p>But in order to meet your projects' goals, you'll have to choose the right practices to tackle the most important risks.</p>
+				<p className={styles.explanationLarge}>That's Risk Management</p>
+				<p><a className={styles.cta} href="/overview/Quick-Summary">READ THE SUMMARY</a></p>
+			</div>
 		</HomeSection2>
 	);
 };

@@ -6,7 +6,7 @@ export default function NewSplashTop() {
 
 		<section className={styles.nst}>
 			<svg version="1.1" id="Layer_1" x="0px" y="0px" className={styles.logo}
-				viewBox="50 50 180 180" width="500px" height="500px" style={{enableBackground: "new 0 0 283.5 283.5;"}}>
+				viewBox="50 50 180 180" width="500px" height="500px" style={{enableBackground: "new 0 0 283.5 283.5"}}>
 				<g>
 					<path className={styles.st1} d="M142.4,70c-39.9,0-72.3,32.4-72.3,72.3c0,39.9,32.4,72.3,72.3,72.3c39.9,0,72.3-32.4,72.3-72.3
 		C214.7,102.3,182.3,70,142.4,70z M192.6,192.5c-12.9,12.9-30.6,20.8-50.2,20.8c-19.6,0-37.4-8-50.2-20.8

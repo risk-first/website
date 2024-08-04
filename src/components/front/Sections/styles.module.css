@@ -14,11 +14,15 @@
 }
 
 .innerAside {
-	background-image: url("/img/front/reading.svg");
+	background-image: url("/img/front/footprints-white.svg");
 	background-position: 0 0px;
 	background-size: 60%;
 	background-repeat: no-repeat;
 	height: 25rem;
+}
+
+html[data-theme=dark] .innerAside {
+	background-image: url("/img/front/footprints-black.svg");
 }
 
 .innerAside h2 {

@@ -7,17 +7,14 @@ import TagList from '../../../theme/TagList'
 
 export default function Books() {
 	return (
-		<HomeSection reversed="true">
+		<HomeSection alt="true">
 			<div className={styles.innerAside}>
-				<h2>Read All About It</h2>
-				<p>Buy The Print Edition of Risk-First</p>
+				<h2>Risk-First Tracks</h2>
+				<p>Risk-First is split into several main tracks, dealing with different areas of Software Development</p>
 			</div>
 			<>
-				<a href="/The-Menagerie"><img src="/img/Cover_Image_Bordered.png" /></a>
+				<TagList tag="Read All About It" />
 			</>
-			<div>
-				<p><a className={styles.cta} href="/The-Menagerie">BUY THE BOOK</a></p>
-			</div>
 		</HomeSection>
 
 

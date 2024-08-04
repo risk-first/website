@@ -22,7 +22,7 @@ export default function Parts() {
 				Join Our <a href="https://github.com/orgs/risk-first/teams/risk-first-team">GitHub Team</a> (and receive regular updates)
 				</ImageBullet>
 				<ImageBullet  image="/img/front/training.svg" alt="Connect Icon"> 
-				Run A Training Session (contact <a href="https://www.linkedin.com/in/robmoffat/">Rob</a>)
+				Join or Run A Training Session (contact <a href="https://www.linkedin.com/in/robmoffat/">Rob</a>)
 				</ImageBullet>
 			</div>
 		</HomeSection>
