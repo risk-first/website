@@ -1,0 +1,1528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:adl="http://www.kite9.org/schema/adl"
+     xmlns:exslt="http://exslt.org/common"
+     xmlns:pp="http://www.kite9.org/schema/post-processor"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     contentScriptType="text/ecmascript"
+     zoomAndPan="magnify"
+     contentStyleType="text/css"
+     version="1.0"
+     width="266"
+     pp:width="$width"
+     preserveAspectRatio="xMidYMid meet"
+     height="266"
+     pp:height="$height">
+   <metadata xmlns:md="http://www.kite9.org/schema/metadata">
+      <md:self>http://robs-pro:8080/api/renderer?format=svg</md:self>
+   </metadata>
+   <defs>
+      <style xml:space="preserve">*[k9-format="text-fixed"] {
+--kite9-type: TEXT;
+--kite9-vertical-align: CENTER;
+--kite9-horizontal-align: CENTER;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+}
+
+*[k9-format="image"], *[k9-format="image-fixed"] {
+--kite9-type: SVG;
+--kite9-horizontal-align: CENTER;
+--kite9-vertical-align: CENTER;
+}
+
+*[k9-format="shape"] {
+--kite9-type: CONTAINER;
+--kite9-horizontal-align: CENTER;
+--kite9-vertical-align: CENTER;
+}
+
+*[k9-format="svg"], *[k9-format="svg-fixed"] {
+--kite9-type: SVG;
+--kite9-horizontal-align: CENTER;
+--kite9-vertical-align: CENTER;
+}
+
+*[k9-format="container"] {
+--kite9-type: CONTAINER;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+}
+
+*[k9-format="text-image-portrait"], *[k9-format="text-image-captioned"], *[k9-format="text-shape-captioned"], *[k9-format="text-shape-portrait"], *[k9-format="text-shape-inline"] {
+--kite9-type: CONTAINER;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+}
+
+*[k9-format="text-image-portrait"], *[k9-format="text-shape-portrait"] {
+--kite9-layout: DOWN;
+}
+
+*[k9-format="text-shape-captioned"] &gt; g &gt; *[k9-elem="depiction"], *[k9-format="text-image-portrait"] &gt; g &gt; *[k9-elem="depiction"], *[k9-format="text-shape-portrait"] &gt; g &gt; *[k9-elem="depiction"] {
+--kite9-type: SVG;
+--kite9-horizontal-align: CENTER;
+--kite9-connections: SEPARATE;
+}
+
+*[k9-format="text-shape-inline"] &gt; g &gt; *[k9-elem="caption"], *[k9-format="text-image-portrait"] &gt; g &gt; *[k9-elem="caption"], *[k9-format="text-shape-portrait"] &gt; g &gt; *[k9-elem="caption"], *[k9-format="text-shape-captioned"] &gt; g &gt; *[k9-elem="caption"] {
+--kite9-type: TEXT;
+--kite9-horizontal-align: CENTER;
+--kite9-vertical-align: CENTER;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+}
+
+*[k9-format="text-shape-captioned"] &gt; g &gt; *[k9-elem="shape-align"] {
+--kite9-type: LINK;
+}
+
+*[k9-format="text-shape-captioned"] &gt; g &gt; *[k9-elem="shape-align"] &gt; g &gt; *[k9-elem="from"], *[k9-format="text-shape-captioned"] &gt; g &gt; *[k9-elem="shape-align"] &gt; g &gt; *[k9-elem="to"] {
+--kite9-type: LINK_END;
+}
+
+*[k9-elem="diagram"] {
+--kite9-type: DIAGRAM;
+--kite9-traversal-bottom: LEAVING;
+--kite9-traversal-left: LEAVING;
+--kite9-traversal-right: LEAVING;
+--kite9-traversal-top: LEAVING;
+}
+
+*[k9-elem="group"] {
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-traversal-bottom: ALWAYS;
+--kite9-traversal-left: ALWAYS;
+--kite9-traversal-right: ALWAYS;
+--kite9-traversal-top: ALWAYS;
+--kite9-min-width: 40pt;
+--kite9-min-height: 40pt;
+}
+
+*[k9-elem="container"] {
+--kite9-padding-top: 15pt;
+--kite9-padding-right: 15pt;
+--kite9-padding-bottom: 15pt;
+--kite9-padding-left: 15pt;
+--kite9-margin-top: 15pt;
+--kite9-margin-right: 15pt;
+--kite9-margin-bottom: 15pt;
+--kite9-margin-left: 15pt;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+}
+
+*[k9-elem="label"] {
+--kite9-usage: LABEL;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-direction: DOWN;
+}
+
+*[k9-elem="label-inner"] {
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-padding-top: 4pt;
+--kite9-padding-right: 4pt;
+--kite9-padding-bottom: 4pt;
+--kite9-padding-left: 4pt;
+--kite9-margin-top: 4pt;
+--kite9-margin-right: 4pt;
+--kite9-margin-bottom: 4pt;
+--kite9-margin-left: 4pt;
+}
+
+*[k9-elem="label"][end="to"] {
+--kite9-link-end: TO;
+}
+
+*[k9-elem="label"][end="from"] {
+--kite9-link-end: FROM;
+}
+
+*[k9-elem="table"] {
+--kite9-layout: GRID;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+}
+
+*[k9-elem="cell"] {
+--kite9-usage: REGULAR;
+--kite9-vertical-align: CENTER;
+--kite9-horizontal-align: CENTER;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+text-align: center;
+--kite9-min-width: 30pt;
+--kite9-min-height: 30pt;
+--kite9-traversal-bottom: ALWAYS;
+--kite9-traversal-left: ALWAYS;
+--kite9-traversal-right: ALWAYS;
+--kite9-traversal-top: ALWAYS;
+}
+
+*[k9-format="link-align"], *[k9-format="link-basic"] {
+--kite9-type: LINK;
+--kite9-link-from-xpath: "descendant::*[@k9-elem='from']/@reference";
+--kite9-link-to-xpath: "descendant::*[@k9-elem='to']/@reference";
+}
+
+*[k9-elem="link-grab"], *[k9-elem="align-grab"], *[k9-elem="grab"], *[k9-elem="align-body"], *[k9-elem="link-body"] {
+--kite9-usage: DECAL;
+--kite9-type: SVG;
+fill: none;
+}
+
+*[k9-elem="from"], *[k9-elem="to"] {
+fill: rgb(255, 255, 255);
+fill-opacity: 0.01;
+}
+
+*[k9-elem="link"] {
+--kite9-margin-top: 20pt;
+--kite9-margin-right: 20pt;
+--kite9-margin-bottom: 20pt;
+--kite9-margin-left: 20pt;
+--kite9-link-corner-radius: 6pt;
+}
+
+*.indicators-on *[id] *[k9-elem="align-body"] {
+stroke: rgb(187, 221, 238);
+stroke-opacity: 1;
+}
+
+*[k9-elem="from"] {
+--kite9-link-end: FROM;
+}
+
+*[k9-elem="to"] {
+--kite9-link-end: TO;
+}
+
+*[k9-elem="from"].gap, *[k9-elem="to"].gap {
+--kite9-marker-reserve: 20pt;
+}
+
+*[k9-elem="from"][shape="open-diamond"], *[k9-elem="to"][shape="open-diamond"] {
+--kite9-marker-reserve: 8pt;
+}
+
+*[k9-elem="from"][shape="open-arrow"], *[k9-elem="to"][shape="open-arrow"] {
+--kite9-marker-reserve: 6pt;
+}
+
+*[k9-elem="from"], *[k9-elem="to"] {
+--kite9-type: LINK_END;
+--kite9-padding-top: 8pt;
+--kite9-padding-right: 8pt;
+--kite9-padding-bottom: 8pt;
+--kite9-padding-left: 8pt;
+}
+
+*[k9-elem="port"] {
+--kite9-type: PORT;
+}
+
+*[k9-elem="hub"] {
+--kite9-type: SVG;
+--kite9-margin-top: 0;
+--kite9-margin-right: 0;
+--kite9-margin-bottom: 0;
+--kite9-margin-left: 0;
+--kite9-min-width: 10pt;
+--kite9-min-height: 10pt;
+}
+
+*[k9-elem="group"] {
+--kite9-type: CONTAINER;
+--kite9-margin-top: 20pt;
+--kite9-margin-right: 20pt;
+--kite9-margin-bottom: 20pt;
+--kite9-margin-left: 20pt;
+}
+
+*[k9-elem="textarea"] {
+--kite9-margin-top: 4pt;
+--kite9-margin-right: 4pt;
+--kite9-margin-bottom: 4pt;
+--kite9-margin-left: 4pt;
+--kite9-vertical-align: CENTER;
+--kite9-horizontal-align: CENTER;
+}
+
+*[id] &gt; *[k9-highlight] {
+}
+
+*.indicators-on *[id] &gt; *[k9-highlight~="grab"] {
+stroke-width: 10pt;
+fill-opacity: 0.5;
+}
+
+*.indicators-on *[id] &gt; *[k9-highlight~="bar"] {
+stroke-width: 10pt;
+stroke-opacity: 0.1;
+}
+
+*.indicators-on *[id] &gt; *[k9-highlight~="stroke"] {
+stroke: rgb(183, 192, 254);
+stroke-opacity: 0.8;
+stroke-width: 1pt;
+stroke-dasharray: none;
+}
+
+*.indicators-on *[id] &gt; *[k9-highlight~="stroke"] &gt; image {
+filter: url(#highlight-visible);
+}
+
+*.indicators-on *[id] &gt; *[k9-highlight~="fill"] {
+fill: rgb(183, 192, 254);
+fill-opacity: 0.6;
+}
+
+*.indicators-off *[id] &gt; *[k9-highlight~="fill"] {
+fill-opacity: 0;
+}
+
+*.indicators-off *[id] &gt; *[k9-highlight~="stroke"] {
+stroke-opacity: 0;
+}
+
+*.indicators-off *[id] &gt; *[k9-highlight~="stroke"] &gt; image {
+filter: url(#highlight-invisible);
+}
+
+*.indicators-on *[id][default] &gt; *[k9-highlight~="bar"], *.indicators-on *[id][default] &gt; g &gt; *[k9-highlight~="bar"] {
+stroke-width: 10pt;
+stroke-opacity: 0.8;
+stroke: rgb(253, 152, 112);
+}
+
+*.indicators-on *[id][default] &gt; *[k9-highlight~="pulse"], *.indicators-on *[id][default] &gt; g &gt; *[k9-highlight~="pulse"] {
+fill-opacity: 1;
+fill: rgb(253, 152, 112);
+}
+
+*.mouseover &gt; g &gt; *[k9-highlight~="stroke"], *.mouseover &gt; g &gt; *[k9-highlight~="outline"], *.mouseover &gt; g &gt; *[k9-highlight~="bar"], *.mouseover &gt; *[k9-highlight~="stroke"], *.mouseover &gt; *[k9-highlight~="outline"], *.mouseover &gt; *[k9-highlight~="bar"] {
+stroke: rgb(187, 221, 238);
+stroke-opacity: 1;
+}
+
+*.mouseover &gt; g &gt; *[k9-highlight~="pulse"], *.mouseover &gt; g &gt; *[k9-highlight~="fill"], *.mouseover &gt; g &gt; *[k9-highlight~="grab"], *.mouseover &gt; *[k9-highlight~="pulse"], *.mouseover &gt; *[k9-highlight~="fill"], *.mouseover &gt; *[k9-highlight~="grab"], *.mouseover.grid-temporary {
+fill: rgb(204, 238, 255);
+fill-opacity: 0.8;
+}
+
+*.selected &gt; g &gt; *[k9-highlight~="outline"], *.selected &gt; g &gt; *[k9-highlight~="stroke"], *.selected &gt; g &gt; *[k9-highlight~="bar"], *.selected &gt; *[k9-highlight~="outline"], *.selected &gt; *[k9-highlight~="stroke"], *.selected &gt; *[k9-highlight~="bar"] {
+stroke: rgb(255, 204, 0);
+stroke-opacity: 0.8;
+}
+
+*[k9-elem="_temporary"].selected, *.selected &gt; g &gt; *[k9-highlight~="pulse"], *.selected &gt; g &gt; *[k9-highlight~="fill"], *.selected &gt; g &gt; *[k9-highlight~="grab"], *.selected &gt; *[k9-highlight~="pulse"], *.selected &gt; *[k9-highlight~="fill"], *.selected &gt; *[k9-highlight~="grab"] {
+fill: rgb(255, 204, 0);
+fill-opacity: 0.8;
+}
+
+*.dropping &gt; g &gt; *[k9-highlight~="outline"], *.dropping &gt; g &gt; *[k9-highlight~="stroke"], *.dropping &gt; g &gt; *[k9-highlight~="bar"], *.dropping &gt; *[k9-highlight~="outline"], *.dropping &gt; *[k9-highlight~="stroke"], *.dropping &gt; *[k9-highlight~="bar"] {
+stroke: rgb(220, 221, 221);
+stroke-opacity: 0.8;
+}
+
+*.dropping &gt; g &gt; *[k9-highlight~="pulse"], *.dropping &gt; g &gt; *[k9-highlight~="fill"], *.dropping &gt; g &gt; *[k9-highlight~="grab"], *.dropping &gt; *[k9-highlight~="pulse"], *.dropping &gt; *[k9-highlight~="fill"], *.dropping &gt; *[k9-highlight~="grab"] {
+fill: rgb(220, 221, 221);
+fill-opacity: 0.8;
+}
+
+*[k9-elem="diagram"].selected &gt; *[k9-highlight] {
+fill-opacity: 0;
+fill: white;
+}
+
+*.inactive &gt; *[k9-highlight~="outline"], *.inactive &gt; *[k9-highlight~="stroke"], *.inactive &gt; *[k9-highlight~="bar"] {
+stroke-opacity: 0.2;
+}
+
+*.inactive &gt; *[k9-highlight~="pulse"], *.inactive &gt; *[k9-highlight~="fill"], *.inactive &gt; *[k9-highlight~="grab"], *.inactive &gt; g &gt; text {
+fill-opacity: 0.2;
+}
+
+*.indicators-on *.grid-temporary {
+fill-opacity: 0.3;
+stroke: none;
+}
+
+*[k9-elem="action"] {
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-margin-top: 10pt;
+--kite9-margin-right: 10pt;
+--kite9-margin-bottom: 10pt;
+--kite9-margin-left: 10pt;
+--kite9-padding-top: 12pt;
+--kite9-padding-right: 22pt;
+--kite9-padding-bottom: 12pt;
+--kite9-padding-left: 12pt;
+stroke-width: 1pt;
+}
+
+*[k9-elem="action"].left {
+--kite9-padding-left: 22pt;
+--kite9-padding-right: 12pt;
+}
+
+*[k9-elem="glyph"] &gt; g &gt; *[k9-elem="caption"], *[k9-elem="action"] &gt; g &gt; *[k9-elem="caption"] {
+--kite9-margin-top: 0pt;
+--kite9-margin-right: 0pt;
+--kite9-margin-bottom: 0pt;
+--kite9-margin-left: 0pt;
+--kite9-padding-top: 0pt;
+--kite9-padding-right: 0pt;
+--kite9-padding-bottom: 0pt;
+--kite9-padding-left: 0pt;
+fill: black;
+}
+
+*[k9-elem="glyph"] {
+--kite9-layout: DOWN;
+--kite9-padding-top: 6pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 6pt;
+--kite9-padding-left: 10pt;
+--kite9-margin-top: 10pt;
+--kite9-margin-right: 10pt;
+--kite9-margin-left: 10pt;
+--kite9-margin-bottom: 10pt;
+}
+
+*[k9-elem="artifact"], *[k9-elem="cash"], *[k9-elem="document"], *[k9-elem="users"], *[k9-elem="computer"], *[k9-elem="interface"], *[k9-elem="component"], *[k9-elem="channel-artifact"], *[k9-elem="internal-model-artifact"], *[k9-elem="protocol-artifact"], *[k9-elem="agent-artifact"], *[k9-elem="image-artifact"], *[k9-elem="generic-artifact"] {
+--kite9-margin-top: 10pt;
+--kite9-margin-right: 10pt;
+--kite9-margin-bottom: 10pt;
+--kite9-margin-left: 10pt;
+--kite9-link-inset: 10pt;
+--kite9-link-gutter: 10pt;
+--kite9-layout: VERTICAL;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-min-width: 110pt;
+--kite9-min-height: 140pt;
+}
+
+*[k9-elem="arrow"], *[k9-elem="block"] {
+--kite9-padding-top: 8pt;
+--kite9-padding-right: 8pt;
+--kite9-padding-bottom: 8pt;
+--kite9-padding-left: 8pt;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-connections: SEPARATE;
+font-size: 15pt;
+font-weight: 500;
+--kite9-link-inset: 3pt;
+}
+
+*[k9-elem="block"] &gt; g &gt; *[k9-elem="caption"] {
+--kite9-margin-top: 5pt;
+--kite9-margin-right: 5pt;
+--kite9-margin-bottom: 5pt;
+--kite9-margin-left: 5pt;
+--kite9-padding-top: 5pt;
+--kite9-padding-right: 5pt;
+--kite9-padding-bottom: 5pt;
+--kite9-padding-left: 5pt;
+}
+
+*[k9-elem="arrow"] &gt; g &gt; *[k9-elem="caption"] {
+--kite9-margin-top: 0pt;
+--kite9-margin-right: 0pt;
+--kite9-margin-bottom: 0pt;
+--kite9-margin-left: 0pt;
+--kite9-padding-top: 0pt;
+--kite9-padding-right: 0pt;
+--kite9-padding-bottom: 0pt;
+--kite9-padding-left: 0pt;
+}
+
+*[k9-elem="description"] {
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-usage: REGULAR;
+--kite9-text-bounds-width: 250pt;
+--kite9-direction: DOWN;
+}
+
+*[k9-elem="planner"] {
+--kite9-layout: GRID;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+}
+
+*[k9-elem="planner-cell"], *[k9-elem="planner-header"] {
+--kite9-usage: REGULAR;
+--kite9-vertical-align: CENTER;
+--kite9-horizontal-align: CENTER;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+text-align: center;
+--kite9-min-width: 230pt;
+--kite9-min-height: 30pt;
+--kite9-traversal-bottom: ALWAYS;
+--kite9-traversal-left: ALWAYS;
+--kite9-traversal-right: ALWAYS;
+--kite9-traversal-top: ALWAYS;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-layout: RIGHT;
+}
+
+*[k9-elem="planner-header"] {
+--kite9-min-width: 60pt;
+--kite9-min-height: 30pt;
+}
+
+*[k9-elem="mitigated"] {
+--kite9-min-width: 120pt;
+--kite9-min-height: 160pt;
+}
+
+*[k9-elem="hidden"] {
+--kite9-min-width: 120pt;
+--kite9-min-height: 160pt;
+}
+
+*[k9-elem="risk"] {
+--kite9-layout: DOWN;
+--kite9-margin-top: 10pt;
+--kite9-margin-right: 10pt;
+--kite9-margin-bottom: 10pt;
+--kite9-margin-left: 10pt;
+--kite9-link-inset: 10pt;
+--kite9-link-gutter: 10pt;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-min-width: 120pt;
+--kite9-min-height: 160pt;
+}
+
+*[k9-elem="title"][k9-format="text-fixed"] {
+--kite9-horizontal-align: CENTER;
+--kite9-vertical-align: BOTTOM;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-type: TEXT;
+--kite9-text-bounds-width: 110pt;
+--kite9-padding-top: 0pt;
+--kite9-padding-right: 0pt;
+--kite9-padding-bottom: 0pt;
+--kite9-padding-left: 0pt;
+}
+
+*[k9-elem="code"][k9-format="text-fixed"] {
+--kite9-horizontal-align: CENTER;
+--kite9-vertical-align: TOP;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-padding-top: 0pt;
+--kite9-padding-right: 0pt;
+--kite9-padding-bottom: 0pt;
+--kite9-padding-left: 0pt;
+--kite9-margin-top: 0pt;
+--kite9-margin-right: 0pt;
+--kite9-margin-bottom: 10pt;
+--kite9-margin-left: 0pt;
+}
+
+*[k9-elem="risk"] &gt; g &gt; *[k9-format="image-fixed"] {
+--kite9-vertical-align: TOP;
+--kite9-horizontal-align: CENTER;
+}
+
+*[k9-elem="celltext"] {
+--kite9-usage: REGULAR;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-vertical-align: CENTER;
+--kite9-horizontal-align: LEFT;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+font-size: 40pt;
+fill: black;
+font-family: "gothic";
+stroke: none;
+--kite9-text-bounds-width: 350pt;
+}
+
+*[k9-elem="celltext"].bold {
+font-family: "gothic-bold";
+}
+
+*[k9-elem="celltext"].bottom {
+--kite9-vertical-align: BOTTOM;
+}
+
+*[k9-elem="celltext"] *[k9-elem="text-label"] {
+--kite9-horizontal-align: LEFT;
+}
+
+*[k9-elem="bulleted"] {
+--kite9-usage: REGULAR;
+--kite9-type: CONTAINER;
+--kite9-vertical-align: TOP;
+--kite9-horizontal-align: LEFT;
+font-size: 40pt;
+fill: black;
+font-family: "gothic";
+stroke: none;
+}
+
+*[k9-elem="ctext"] {
+--kite9-usage: REGULAR;
+--kite9-vertical-align: TOP;
+--kite9-horizontal-align: LEFT;
+font-size: 40pt;
+fill: black;
+font-family: "gothic";
+stroke: none;
+--kite9-type: TEXT;
+}
+
+*[k9-elem="btext"] {
+--kite9-usage: REGULAR;
+--kite9-vertical-align: TOP;
+--kite9-horizontal-align: LEFT;
+font-size: 40pt;
+fill: black;
+font-family: "gothic-bold";
+stroke: none;
+--kite9-type: TEXT;
+}
+
+*[k9-elem="tick"] {
+--kite9-usage: REGULAR;
+--kite9-type: CONTAINER;
+}
+
+*[k9-elem="table"] *[k9-elem="risk"], *[k9-elem="table"] *[k9-elem="tick"] {
+--kite9-horizontal-align: CENTER;
+--kite9-margin-top: 20pt;
+--kite9-margin-right: 20pt;
+--kite9-margin-bottom: 20pt;
+--kite9-margin-left: 20pt;
+}
+
+*[k9-elem="table"] *[k9-elem="celltext"].bottom {
+--kite9-vertical-align: BOTTOM;
+}
+
+*[k9-elem="table"] *[k9-elem="celltext"].top {
+--kite9-vertical-align: TOP;
+}
+
+*[k9-elem="description"], *[k9-elem="long-description"], *.description {
+font-size: 14pt;
+font-family: "gothic-italic";
+font-style: italic;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-text-bounds-width: 250pt;
+}
+
+*[k9-elem="leg"] {
+--kite9-type: CONTAINER;
+--kite9-layout: DOWN;
+--kite9-min-height: 110pt;
+--kite9-min-width: 70pt;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-margin-top: 0pt;
+--kite9-margin-right: 0pt;
+--kite9-margin-bottom: 0pt;
+--kite9-margin-left: 0pt;
+--kite9-vertical-align: BOTTOM;
+}
+
+*[k9-elem="plinth"] {
+--kite9-type: CONTAINER;
+--kite9-horizontal-sizing: MAXIMIZE;
+--kite9-vertical-sizing: MAXIMIZE;
+}
+
+*[k9-elem="big-image"] {
+--kite9-margin-top: 10pt;
+--kite9-margin-right: 10pt;
+--kite9-margin-bottom: 10pt;
+--kite9-margin-left: 10pt;
+--kite9-link-inset: 10pt;
+--kite9-link-gutter: 10pt;
+--kite9-layout: VERTICAL;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-min-width: 110pt;
+--kite9-min-height: 140pt;
+}
+
+*[k9-elem="diagram"].principle {
+fill-opacity: 1;
+fill: rgb(245, 245, 245);
+--kite9-layout: VERTICAL;
+--kite9-padding-left: 0pt;
+--kite9-padding-right: 0pt;
+--kite9-padding-top: 0pt;
+--kite9-padding-bottom: 0pt;
+}
+
+*[k9-elem="group"].principle-outline {
+fill: white;
+fill-opacity: 1;
+--kite9-padding-top: 50pt;
+--kite9-padding-right: 50pt;
+--kite9-padding-bottom: 50pt;
+--kite9-padding-left: 50pt;
+}
+
+*[k9-elem="group"].principle-top {
+--kite9-layout: GRID;
+--kite9-grid-columns: 2;
+--kite9-grid-rows: 2;
+--kite9-padding-top: 0pt;
+--kite9-padding-right: 0pt;
+--kite9-padding-bottom: 0pt;
+--kite9-padding-left: 0pt;
+--kite9-margin-top: 3pt;
+--kite9-margin-right: 3pt;
+--kite9-margin-bottom: 3pt;
+--kite9-margin-left: 3pt;
+--kite9-horizontal-sizing: MAXIMIZE;
+--kite9-vertical-sizing: MAXIMIZE;
+--kite9-min-width: 1000pt;
+--kite9-min-height: 535pt;
+}
+
+*[k9-elem="group"].principle-left-top {
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-layout: DOWN;
+--kite9-padding-top: 10pt;
+--kite9-margin-top: 0pt;
+}
+
+*[k9-elem="group"].principle-right-top {
+--kite9-horizontal-sizing: MAXIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-layout: DOWN;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 30pt;
+--kite9-margin-top: 0pt;
+--kite9-margin-right: 0pt;
+--kite9-margin-bottom: 0pt;
+--kite9-margin-left: 0pt;
+}
+
+*[k9-elem="group"].principle-left-bottom {
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MAXIMIZE;
+--kite9-layout: DOWN;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-margin-top: 0pt;
+--kite9-margin-right: 0pt;
+--kite9-margin-bottom: 0pt;
+--kite9-margin-left: 0pt;
+}
+
+*[k9-elem="group"].principle-right-bottom {
+--kite9-horizontal-sizing: MAXIMIZE;
+--kite9-vertical-sizing: MAXIMIZE;
+--kite9-layout: DOWN;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 30pt;
+--kite9-margin-top: 0pt;
+--kite9-margin-right: 0pt;
+--kite9-margin-bottom: 0pt;
+--kite9-margin-left: 0pt;
+}
+
+*[k9-elem="risk-first-logo"].principle {
+--kite9-vertical-align: BOTTOM;
+--kite9-padding-top: 0;
+--kite9-padding-right: 0;
+--kite9-padding-bottom: 0;
+--kite9-padding-left: 0;
+--kite9-margin-top: 0;
+--kite9-margin-right: 0;
+--kite9-margin-bottom: 0;
+--kite9-margin-left: 0;
+}
+
+*[k9-elem="page-title"].principle-site {
+font-family: "Metropolis";
+font-size: 14pt;
+fill: rgb(97, 162, 161);
+letter-spacing: 1.4;
+font-weight: 600;
+text-align: center;
+--kite9-margin-top: 0;
+}
+
+*[k9-elem="page-title"].number {
+font-family: "Metropolis";
+font-size: 60pt;
+fill: rgb(245, 62, 121);
+indent: 0;
+font-weight: 600;
+--kite9-padding-bottom: 0;
+--kite9-margin-bottom: 0;
+--kite9-vertical-align: TOP;
+}
+
+*[k9-elem="page-title"].principle {
+font-family: "Metropolis";
+font-size: 60pt;
+font-weight: 600;
+fill: rgb(0, 0, 0);
+text-align: left;
+--kite9-padding-bottom: 0;
+--kite9-margin-bottom: 0;
+--kite9-margin-right: 30pt;
+--kite9-vertical-align: TOP;
+}
+
+*[k9-elem="page-summary"].principle {
+font-family: "Metropolis";
+font-size: 25pt;
+--kite9-text-bounds-width: 600pt;
+--kite9-padding-top: 0pt;
+--kite9-padding-right: 0pt;
+--kite9-padding-bottom: 0pt;
+--kite9-padding-left: 0pt;
+fill: rgb(97, 162, 161);
+indent: 0;
+text-align: center;
+font-weight: 300;
+font-style: italic;
+}
+
+*[k9-texture="none"] {
+fill: white;
+fill-opacity: 0.001;
+stroke-opacity: 0.001;
+}
+
+*[k9-texture="background"] {
+fill: white;
+fill-opacity: 1;
+stroke: black;
+stroke-opacity: 1;
+}
+
+*[k9-texture~="default"] {
+fill: white;
+fill-opacity: 1;
+}
+
+*[k9-texture~="outline"] {
+fill: white;
+fill-opacity: 0.001;
+stroke: black;
+stroke-opacity: 1;
+}
+
+*[k9-texture~="foreground"] {
+fill: black;
+fill-opacity: 1;
+stroke: none;
+stroke-width: 0;
+}
+
+*[k9-texture="background"][k9-elem="container"] {
+stroke: black;
+stroke-width: 1pt;
+}
+
+*[k9-texture="background"][k9-elem="container"].solid &gt; g.k9-shape &gt; rect {
+stroke-dasharray: none;
+}
+
+*[k9-texture="background"][k9-elem="container"].dotted &gt; g.k9-shape &gt; rect {
+stroke-dasharray: 4 4;
+}
+
+*[k9-elem="from"], *[k9-elem="to"] {
+fill: rgb(255, 255, 255);
+fill-opacity: 0.01;
+}
+
+*[k9-elem="link"] {
+stroke: black;
+stroke-width: 2pt;
+fill: none;
+}
+
+*[k9-elem="link"].invisible {
+stroke: none;
+}
+
+*[k9-elem="link"].dotted {
+stroke-dasharray: 8;
+}
+
+*[k9-elem="link"].thick {
+stroke-width: 4pt;
+}
+
+*[k9-elem="link"].grey {
+stroke: rgb(204, 204, 204);
+}
+
+*[k9-elem="hub"][k9-texture="background"] {
+fill: rgb(255, 255, 255);
+stroke: none;
+}
+
+*[k9-elem="cell"] {
+text-align: center;
+}
+
+*[k9-elem="_temporary"], *[k9-elem="cell"] &gt; *[k9-texture="background"] {
+fill: rgb(255, 255, 255);
+fill-opacity: 0.01;
+}
+
+*[k9-elem="cell"].bordered {
+stroke: black;
+stroke-width: 2pt;
+}
+
+*[k9-elem="cell"].shaded {
+fill: rgb(222, 222, 222);
+fill-opacity: 1;
+}
+
+*[k9-elem="table"].invisible *[k9-elem="cell"], *[k9-elem="table"].invisible *[k9-elem="_temporary"], *[k9-elem="cell"].invisible, *[k9-elem="table"].invisible {
+stroke: none;
+}
+
+*[k9-elem="cell"].left {
+--kite9-horizontal-align: LEFT;
+text-align: left;
+}
+
+*[k9-elem="cell"].right {
+--kite9-horizontal-align: RIGHT;
+text-align: right;
+}
+
+*[k9-elem="cell"].bottom {
+--kite9-vertical-align: BOTTOM;
+}
+
+*[k9-elem="cell"].top {
+--kite9-vertical-align: TOP;
+}
+
+*[k9-elem="label"] *[k9-texture="background"] {
+stroke: none;
+}
+
+*[k9-elem="label-inner"], *[k9-elem="label"] {
+--kite9-margin-top: 0;
+--kite9-margin-right: 0;
+--kite9-margin-bottom: 0;
+--kite9-margin-left: 0;
+--kite9-padding-top: 0;
+--kite9-padding-right: 0;
+--kite9-padding-bottom: 0;
+--kite9-padding-left: 0;
+}
+
+*[k9-elem="from"], *[k9-elem="to"] {
+fill: rgb(255, 255, 255);
+fill-opacity: 0.01;
+}
+
+*[k9-elem="link"] {
+stroke: black;
+stroke-width: 2pt;
+fill: none;
+}
+
+*[k9-elem="link"].invisible {
+stroke: none;
+}
+
+*[k9-elem="link"].dotted {
+stroke-dasharray: 8;
+}
+
+*[k9-elem="link"].thick {
+stroke-width: 4pt;
+}
+
+*[k9-elem="link"].grey {
+stroke: rgb(204, 204, 204);
+}
+
+*[k9-elem="hub"][k9-texture="background"] {
+fill: rgb(255, 255, 255);
+stroke: none;
+}
+
+*#_moveLayer *[highlight~="fill"], *#_moveLayer *[highlight~="pulse"] {
+fill: rgb(183, 192, 254);
+fill-opacity: 0.7;
+}
+
+*#_moveLayer *[highlight~="stroke"], *#_moveLayer *[highlight~="outline"] {
+stroke: rgb(183, 192, 254);
+stroke-opacity: 0.7;
+}
+
+*.indicators-on *[k9-info~="contradicting:"] &gt; g &gt; *[k9-highlight~="stroke"], *.indicators-on *[k9-info~="contradicting:"] &gt; g &gt; *[k9-highlight~="outline"], *.indicators-on *[k9-info~="contradicting:"] &gt; g &gt; *[k9-highlight~="bar"], *.indicators-on *[k9-info~="contradicting:"] &gt; *[k9-highlight~="stroke"], *.indicators-on *[k9-info~="contradicting:"] &gt; *[k9-highlight~="outline"], *.indicators-on *[k9-info~="contradicting:"] &gt; *[k9-highlight~="bar"] {
+stroke: rgb(255, 89, 86);
+stroke-opacity: 0.5;
+}
+
+*.indicators-on *[k9-info~="contradicting:"] &gt; g &gt; *[k9-highlight~="stroke"], *.indicators-on *[k9-info~="contradicting:"] &gt; g &gt; *[k9-highlight~="outline"], *.indicators-on *[k9-info~="contradicting:"] &gt; g &gt; *[k9-highlight~="bar"], *.indicators-on *[k9-info~="contradicting:"] &gt; *[k9-highlight~="stroke"], *.indicators-on *[k9-info~="contradicting:"] &gt; *[k9-highlight~="outline"], *.indicators-on *[k9-info~="contradicting:"] &gt; *[k9-highlight~="bar"] {
+fill: rgb(255, 89, 86);
+fill-opacity: 0.5;
+}
+
+@media editor {
+*[k9-elem="diagram"] {
+--kite9-padding-top: 200pt;
+--kite9-padding-right: 200pt;
+--kite9-padding-bottom: 200pt;
+--kite9-padding-left: 200pt;
+--kite9-min-width: 50pt;
+--kite9-min-height: 50pt;
+}
+}
+
+*[media="editor"] *[k9-elem="diagram"] {
+--kite9-padding-top: 200pt;
+--kite9-padding-right: 200pt;
+--kite9-padding-bottom: 200pt;
+--kite9-padding-left: 200pt;
+--kite9-min-width: 50pt;
+--kite9-min-height: 50pt;
+}
+
+*[k9-elem].attention {
+stroke: rgb(255, 89, 86);
+stroke-opacity: 1;
+}
+
+svg {
+cursor: pointer;
+}
+
+*#_update {
+overflow: hidden;
+}
+
+*[k9-elem="box"] &gt; *[k9-texture="background"] {
+fill: rgb(204, 204, 170);
+fill-opacity: 1;
+stroke: rgb(170, 170, 136);
+stroke-dasharray: none;
+}
+
+*[k9-texture="foreground"], *[k9-texture="background"] &gt; g &gt; text {
+fill: rgb(36, 51, 20);
+font-family: "metropolis";
+font-size: 50pt;
+}
+
+*[k9-elem="label"] {
+fill: black;
+font-family: "metropolis";
+font-size: 35pt;
+}
+
+*[k9-elem="box"].shaded {
+fill: rgb(170, 85, 0);
+}
+
+*[k9-elem="textarea"].warning {
+fill: rgb(255, 136, 0);
+}
+
+*[k9-elem="votes"] {
+--kite9-type: SVG;
+--kite9-usage: DECAL;
+}
+
+*[k9-elem="votes"] &gt; g &gt; rect.back {
+fill: rgb(122, 164, 127);
+fill-opacity: 0.9;
+stroke: none;
+}
+
+*[k9-elem="votes"] &gt; g &gt; text.count {
+font-size: 16pt;
+fill: white;
+fill-opacity: 1;
+text-anchor: middle;
+dominant-baseline: middle;
+}
+
+*[k9-elem="votes"] &gt; g &gt; text.font-awesome {
+font-size: 16pt;
+font-family: "Font Awesome 5 Free";
+font-weight: 400;
+fill: white;
+fill-opacity: 1;
+text-anchor: middle;
+dominant-baseline: middle;
+}
+
+*[k9-elem="votes"][count="0"] &gt; g &gt; rect.back, *[k9-elem="votes"][count="0"] &gt; g &gt; text.count, *[k9-elem="votes"][count="0"] &gt; g &gt; text.font-awesome {
+fill-opacity: 0;
+stroke-opacity: 0;
+}
+
+*[k9-elem="diagram"][k9-texture="none"] {
+fill: white;
+fill-opacity: 1;
+}
+
+*[k9-texture] {
+font-family: "metropolis";
+font-size: 16pt;
+font-weight: 500;
+}
+
+*[k9-texture="artifact"] {
+fill: white;
+fill-opacity: 0.001;
+stroke: none;
+}
+
+*[k9-texture="artifact"] text {
+font-size: 16pt;
+font-weight: 400;
+fill: black;
+text-align: center;
+--kite9-text-bounds-width: 100pt;
+}
+
+*[k9-elem="label"] text, *[k9-elem="description"] text {
+font-style: italic;
+--kite9-direction: RIGHT;
+}
+
+*[k9-elem="caption"] {
+text-align: center;
+}
+
+*[k9-elem="label"] {
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+fill: white;
+}
+
+*[k9-elem="arrow"] {
+fill: black;
+fill-opacity: 1;
+}
+
+*[k9-elem="arrow"] &gt; g &gt; *[k9-elem="caption"] &gt; g &gt; text {
+fill: white;
+fill-opacity: 1;
+font-size: 16pt;
+}
+
+*[k9-elem="from"], *[k9-elem="to"] {
+--kite9-marker-reserve: 8pt;
+}
+
+*[k9-elem="link"] {
+--kite9-link-minimum-length: 30pt;
+}
+
+*[k9-elem="glyph"][k9-texture="background"] &gt; g &gt; rect, *[k9-elem="action"] *[k9-texture="background"] {
+fill: url(#risk-background);
+stroke: black;
+stroke-width: 1pt;
+}
+
+*[k9-elem="action"] &gt; g &gt; *[k9-elem="caption"] &gt; g &gt; text {
+fill-opacity: 1;
+font-size: 16pt;
+font-weight: 500;
+fill: black;
+text-align: center;
+}
+
+*[k9-elem="hidden"], *[k9-elem="mitigated"] {
+fill: white;
+}
+
+*[k9-elem="title"] {
+font-size: 16pt;
+font-weight: 500;
+fill: black;
+text-align: center;
+}
+
+*[k9-elem="code"] {
+font-size: 22pt;
+font-weight: 500;
+fill: black;
+text-align: center;
+}
+
+*[k9-elem="risk"][k9-texture="background"], *[k9-elem="block"][k9-texture="background"] {
+fill: url(#risk-background);
+stroke: black;
+stroke-width: 1pt;
+}
+
+*[k9-elem="container"][k9-texture="background"] {
+fill-opacity: 0.001;
+}
+
+*[k9-elem="planner-cell"], *[k9-elem="planner-header"] {
+stroke: rgb(174, 174, 174);
+stroke-width: 1pt;
+}
+
+*[k9-elem="diagram"].principle {
+fill-opacity: 1;
+fill: rgb(245, 245, 245);
+}
+
+*[k9-elem="container"][k9-texture="background"].principle-top {
+fill: white;
+fill-opacity: 1;
+}
+
+</style>
+      <defs id="links-markers">
+         <marker id="-start-marker" preserveAspectRatio="xMidYMid meet"/>
+         <marker id="-end-marker" preserveAspectRatio="xMidYMid meet"/>
+         <marker refX="1"
+                 refY="3"
+                 orient="auto"
+                 id="strike-start-marker"
+                 markerHeight="6"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="8">
+            <path class="strike-marker" d="         M7,0 L5,6 h-1 L6,0z"/>
+         </marker>
+         <marker refX="7"
+                 refY="3"
+                 orient="auto"
+                 id="strike-end-marker"
+                 markerHeight="6"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="8">
+            <path class="strike-marker" d="         M3,0 L1,6 h-1 L2,0z"/>
+         </marker>
+         <marker refY="3"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerHeight="6"
+                 id="circle-start-marker"
+                 markerWidth="6"
+                 refX="3">
+            <circle r="2" class="circle-marker" cx="3" cy="3"/>
+         </marker>
+         <marker refY="3"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerHeight="6"
+                 id="circle-end-marker"
+                 markerWidth="6"
+                 refX="3">
+            <circle r="2" class="circle-marker" cx="3" cy="3"/>
+         </marker>
+         <marker refX="2"
+                 refY="3"
+                 orient="auto"
+                 id="diamond-start-marker"
+                 markerHeight="6"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="8">
+            <polygon class="diamond-marker" points="1,3 4,1 7,3 4,5"/>
+         </marker>
+         <marker refX="6"
+                 refY="3"
+                 orient="auto"
+                 id="diamond-end-marker"
+                 markerHeight="6"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="8">
+            <polygon class="diamond-marker" points="1,3 4,1 7,3 4,5"/>
+         </marker>
+         <marker refX="5"
+                 refY="3"
+                 orient="auto"
+                 id="open-diamond-start-marker"
+                 markerHeight="6"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="8">
+            <path class="open-diamond-marker"
+                  d="         M0,3 L3,1 L6,3 L5,3 L3,1.66 L1,3             L3,4.33 L5,3 L6,3 L3,5 L0,3"/>
+         </marker>
+         <marker refX="1"
+                 refY="3"
+                 orient="auto"
+                 id="open-diamond-end-marker"
+                 markerHeight="6"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="8">
+            <path class="open-diamond-marker"
+                  d="         M6,3 L3,1 L0,3 L1,3 L3,1.66 L5,3             L3,4.33 L1,3 L0,3 L3,5 L6,3"/>
+         </marker>
+         <marker refX="4"
+                 refY="4"
+                 orient="auto"
+                 id="barbed-arrow-end-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <path class="barbed-arrow-marker" d="M2,2 L6,4 L2,6 L4,4 L2,2"/>
+         </marker>
+         <marker refX="4"
+                 refY="4"
+                 orient="auto"
+                 id="barbed-arrow-start-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <path class="barbed-arrow-marker" d="M6,2 L2,4 L6,6 L4,4 L6,2"/>
+         </marker>
+         <marker refX="1"
+                 refY="4"
+                 orient="auto"
+                 id="open-arrow-end-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <path class="open-arrow-marker"
+                  d="         M6,4 L1,2 L1,3 L4,4 L1,5 L1,6 L6,4         M2,3 h-1 v2 h1z"/>
+         </marker>
+         <marker refX="6"
+                 refY="4"
+                 orient="auto"
+                 id="open-arrow-start-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <path class="open-arrow-marker"
+                  d="         M1,4 L6,2 L6,3 L3,4 L6,5 L6,6 L1,4         M5,3 h1 v2 h-1z"/>
+         </marker>
+         <marker refX="4"
+                 refY="4"
+                 orient="auto"
+                 id="arrow-start-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <polygon class="arrow-marker" points="2,4 6,2 6,6"/>
+         </marker>
+         <marker refX="4"
+                 refY="4"
+                 orient="auto"
+                 id="arrow-end-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <polygon class="arrow-marker" points="6,4 2,2 2,6"/>
+         </marker>
+         <marker refX="5"
+                 refY="4"
+                 orient="auto"
+                 id="crow-end-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <path class="crow-marker"
+                  d="          M1,4 L4,1 l0.66 0.66 L2.3,4z          M1,4 L4,7 l0.66 -0.66 L2.3,4z"/>
+         </marker>
+         <marker refX="1"
+                 refY="4"
+                 orient="auto"
+                 id="crow-start-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <path class="crow-marker"
+                  d="          M5,4 L2,1 l-0.66 0.66 L3.66,4z          M5,4 L2,7 l-0.66 -0.66 L3.66,4z"/>
+         </marker>
+         <marker refX="2"
+                 refY="2"
+                 orient="auto"
+                 id="square-end-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <rect x="0" width="4" height="4" y="0" class="square-marker"/>
+         </marker>
+         <marker refX="2"
+                 refY="2"
+                 orient="auto"
+                 id="square-start-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <rect x="0" width="4" height="4" y="0" class="square-marker"/>
+         </marker>
+      </defs>
+      <defs id="highlight-indicators">
+         <filter xlink:actuate="onLoad"
+                 xlink:type="simple"
+                 id="highlight-visible"
+                 xlink:show="other">
+            <feColorMatrix values="0 0 0 0 .214                 0 0 0 0 .25                 0 0 0 0 1                 0 0 0 1 0 "
+                           type="matrix"/>
+         </filter>
+         <filter xlink:actuate="onLoad"
+                 xlink:type="simple"
+                 id="highlight-invisible"
+                 xlink:show="other">
+            <feColorMatrix values="0 0 0 0 0                 0 0 0 0 0                 0 0 0 0 0                 0 0 0 0 0 "
+                           type="matrix"/>
+         </filter>
+      </defs>
+      <linearGradient x1="0%"
+                      y1="0%"
+                      x2="0%"
+                      y2="100%"
+                      xlink:type="simple"
+                      xlink:actuate="onLoad"
+                      id="risk-background"
+                      xlink:show="other">
+         <stop stop-color="#FFF" offset="0%"/>
+         <stop stop-color="#DDD" offset="100%"/>
+      </linearGradient>
+      <filter xmlns:svg="http://www.w3.org/2000/svg"
+              xlink:type="simple"
+              xlink:actuate="onLoad"
+              height="130%"
+              id="dropshadow"
+              xlink:show="other">
+         <feGaussianBlur stdDeviation="4" in="SourceAlpha"/>
+         <feOffset dx="6" dy="6"/>
+         <feColorMatrix values="             0 0 0 0 0                 0 0 0 0 0                 0 0 0 0 0                 0 0 0 .4 0"
+                        type="matrix"/>
+         <feMerge>
+            <feMergeNode/>
+            <feMergeNode in="SourceGraphic"/>
+         </feMerge>
+      </filter>
+      <script xlink:actuate="onLoad"
+              xlink:type="simple"
+              id="adl:markup"
+              xlink:show="other"
+              type="text/xml;purpose=adl;base64">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPGRpYWdyYW0geG1sbnM9Imh0dHA6Ly93d3cua2l0ZTkub3JnL3NjaGVtYS9hZGwiCiAgICAgICAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgICAgICAgIHhtbG5zOnhzbHQ9Imh0dHA6Ly93d3cua2l0ZTkub3JnL3NjaGVtYS94c2x0IgogICAgICAgICBjbGFzcz0iYyIKICAgICAgICAgc3R5bGU9Ii0ta2l0ZTktbGF5b3V0OiB2ZXJ0aWNhbDsgICAgICAgICAgIC0ta2l0ZTktcGFkZGluZzogNXB0OyAtLWtpdGU5LW1pbi13aWR0aDogMjAwcHQ7IC0ta2l0ZTktbWluLWhlaWdodDogMjAwcHQ7ICIKICAgICAgICAgeHNsdDp0ZW1wbGF0ZT0iL3B1YmxpYy90ZW1wbGF0ZXMvcmlzay1maXJzdC9yaXNrLWZpcnN0LXRlbXBsYXRlLnhzbCI+CiAgIDxpbWFnZS1hcnRpZmFjdCBpbWdzcmM9Ii9wdWJsaWMvdGVtcGxhdGVzL3Jpc2stZmlyc3QvcG9zdHMvb3BlcmF0aW9ucy5zdmciPk9wZXJhdGlvbnM8L2ltYWdlLWFydGlmYWN0Pgo8L2RpYWdyYW0+Cg==</script>
+   </defs>
+   <g xmlns:xslt="http://www.kite9.org/schema/xslt"
+      k9-texture="none"
+      style="--kite9-layout: vertical;           --kite9-padding: 5pt; --kite9-min-width: 200pt; --kite9-min-height: 200pt; "
+      k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [6.6666669845581055 6.6666669845581055 6.6666669845581055 6.6666669845581055]; min-size: [266.66668701171875 266.66668701171875]; sizing: [minimize minimize]; horiz: center; vert: center; layout: vertical; rectangular: diagram; rect-pos: [0.0, 0.0]; rect-size: [266.0, 266.0]; position: none; painter: direct-svg; "
+      class="c"
+      k9-format="container"
+      k9-elem="diagram"
+      xslt:template="/public/templates/risk-first/risk-first-template.xsl">
+      <g class="k9-shape">
+         <rect x="0"
+               y="0"
+               width="266"
+               pp:y="$y"
+               pp:height="$height"
+               pp:x="$x"
+               rx="0"
+               ry="0"
+               height="266"
+               pp:width="$width"/>
+      </g>
+      <g class="k9-content">
+         <g imgsrc="/public/templates/risk-first/posts/operations.svg"
+            k9-elem="image-artifact"
+            k9-texture="artifact"
+            transform="translate(60.0,40.0)"
+            k9-format="text-image-portrait"
+            k9-info="margin: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [146.6666717529297 186.6666717529297]; sizing: [minimize minimize]; horiz: center; vert: center; layout: vertical; rectangular: connected; rect-pos: [60.0, 40.0]; rect-size: [146.0, 186.0]; position: none; painter: direct-svg; ">
+            <g class="k9-shape" k9-highlight="pulse">
+               <rect x="0"
+                     y="0"
+                     width="146"
+                     pp:y="$y"
+                     pp:height="$height"
+                     pp:x="$x"
+                     rx="5pt"
+                     ry="5pt"
+                     height="186"
+                     pp:width="$width"/>
+            </g>
+            <g class="k9-content">
+               <g k9-elem="depiction"
+                  k9-texture="none"
+                  transform="translate(40.0,36.0)"
+                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [100.0, 76.0]; rect-size: [66.0, 66.0]; position: none; painter: direct-svg; ">
+                  <g class="k9-content k9-no-shape" k9-highlight="pulse">
+                     <image x="0"
+                            y="0"
+                            width="50pt"
+                            xlink:href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0&#xA;aD0iMTIwMHB0IiBoZWlnaHQ9IjEyMDBwdCIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94&#xA;PSIwIDAgMTIwMCAxMjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9z&#xA;dmciPgogPHBhdGggZD0ibTcyMS41OSA2ODMuMmMtMS42MDk0LTI1LjczOC02Ljc4&#xA;MTItNTEuMTI5LTE1LjM3MS03NS40NDlsMzcuMzAxLTQ3LjcyMy01OC41ODYtODYu&#xA;OTA2LTU4LjI0NiAxNi42NzIgMC4wMDM5MDYgMC4wMDM5MDZjLTE5LjMzNi0xNy4w&#xA;NjYtNDAuOTM4LTMxLjM3OS02NC4xOTUtNDIuNTI3bC03LjM2MzMtNjAuMDktMTAy&#xA;LjkyLTIwLjAyMy0yOS4zNDQgNTIuOTY1Yy0yNS43MzQgMS42MTcyLTUxLjEyMSA2&#xA;Ljc4NTItNzUuNDM4IDE1LjM1OWwtNDcuNzM0LTM3LjI4OS04Ni45MTggNTguNjA5&#xA;IDE2LjY5OSA1OC4yMTl2MC4wMDM5MDZjLTE3LjA2MiAxOS4zMzYtMzEuMzcxIDQw&#xA;LjkzNC00Mi41MjcgNjQuMThsLTYwLjEwMiA3LjM5MDYtMjAuMDA4IDEwMi45IDUy&#xA;Ljk2NSAyOS4zNTVoLTAuMDAzOTA3YzEuNjIxMSAyNS43MzQgNi43ODkxIDUxLjEy&#xA;NSAxNS4zNTkgNzUuNDQ5bC0zNy4zMDEgNDcuNzM0IDU4LjYwOSA4Ni44OTUgNTgu&#xA;MjQ2LTE2LjY4OHYtMC4wMDM5MDdjMTkuMzI0IDE3LjA3OCA0MC45MjIgMzEuMzg3&#xA;IDY0LjE4NCA0Mi41Mmw3LjM2MzMgNjAuMTAyIDEwMi45IDIwLjAwOCAyOS4zNjct&#xA;NTIuOTUzYzI1LjczNC0xLjYyNSA1MS4xMjUtNi43OTY5IDc1LjQ0OS0xNS4zNTls&#xA;NDcuNzIzIDM3LjMwMSA4Ni45MTgtNTguNjA5LTE2LjY5OS01OC4yM2gtMC4wMDM5&#xA;MDdjMTcuMDc0LTE5LjMzMiAzMS4zOTEtNDAuOTMgNDIuNTQzLTY0LjE4NGw2MC4w&#xA;OS03LjM3NSAxOS45OTYtMTAyLjg4em04LjYxMzMgMTA2LjExLTU1LjM2MyA2Ljc4&#xA;MTItMy4zMDg2IDcuNDc2NnYwLjAwMzkwNmMtMTEuMzk4IDI1LjcxMS0yNy4wMzkg&#xA;NDkuMzI0LTQ2LjI3IDY5Ljg1MmwtNS41OTc3IDUuOTc2NiAxNS4zOTggNTMuNjMz&#xA;LTUyLjE1NiAzNS4xNjgtNDMuOTY5LTM0LjM3MS03LjU3ODEgMi45NDE0Yy0yNi4y&#xA;MTEgMTAuMTIxLTUzLjkzNCAxNS43NjYtODIuMDE2IDE2LjY5OWwtOC4xNzE5IDAu&#xA;Mjg5MDYtMjcuMDU5IDQ4Ljc4MS02MS42OTEtMTIuMDA4LTYuODIwMy01NS4zNzUt&#xA;Ny40NjQ4LTMuMzA4Ni0wLjAwMzkwNy0wLjAwMzkwNmMtMjUuNjc2LTExLjM4Ny00&#xA;OS4yNTQtMjcuMDA4LTY5Ljc1LTQ2LjIxOWwtNS45NzY2LTUuNTk3Ny01My43MzQg&#xA;MTUuMzk4LTM1LjE4LTUyLjE1NiAzNC4zODMtNDMuOTg0LTIuOTQxNC03LjU3ODF2&#xA;MC4wMDM5MDdjLTEwLjEyOS0yNi4yMjMtMTUuNzg1LTUzLjk2MS0xNi43MjMtODIu&#xA;MDU1bC0wLjI3NzM0LTguMTcxOS00OC43OTctMjcuMDU5IDEyLjAxMi02MS43NDIg&#xA;NTUuMzkxLTYuODIwMyAzLjMwODYtNy40NjQ4di0wLjAwMzkwN2MxMS4zOTEtMjUu&#xA;Njc2IDI3LjAxNi00OS4yNTQgNDYuMjE5LTY5Ljc1bDUuNTgyLTUuOTc2Ni0xNS4z&#xA;MzItNTMuNjcyIDUyLjE1Ni0zNS4xNjggNDMuOTg0IDM0LjM3MSA3LjU3ODEtMi45&#xA;NDE0YzI2LjIwMy0xMC4xMjUgNTMuOTI2LTE1Ljc2NiA4Mi4wMDQtMTYuNjg0bDgu&#xA;MTcxOS0wLjI3NzM0IDI3LjA0My00OC44MDkgNjEuNzU0IDEyLjAyMyA2Ljc4MTIg&#xA;NTUuMzYzIDcuNDc2NiAzLjMyMDMgMC4wMDc4MTMgMC4wMDM5MDdjMjUuNjg0IDEx&#xA;LjM4MyA0OS4yNzMgMjcuMDA4IDY5Ljc3MyA0Ni4yMTlsNS45NjA5IDUuNTcwMyA1&#xA;My42NzItMTUuMzU5IDM1LjE2OCA1Mi4xNDUtMzQuMzgzIDQzLjk5NiAyLjk0MTQg&#xA;Ny41NzgxIDAuMDAzOTA2LTAuMDAzOTA2YzEwLjEyNSAyNi4yMDcgMTUuNzczIDUz&#xA;LjkyNiAxNi43MTEgODIuMDA0bDAuMjY1NjIgOC4xNzE5IDQ4LjgzMiAyNy4wNTl6&#xA;bS0yNTAuNDgtMjg4Ljk2Yy01My4wMzUtOS44OTQ1LTEwNy44MyAxLjU3NDItMTUy&#xA;LjQ1IDMxLjkwNi00NC42MTMgMzAuMzM2LTc1LjQzIDc3LjA3OC04NS43MjcgMTMw&#xA;LjA0LTEwLjI5NyA1Mi45NjEgMC43NTc4MSAxMDcuODQgMzAuNzU0IDE1Mi42OCAy&#xA;OS45OTYgNDQuODQ0IDc2LjUwNCA3Ni4wMTIgMTI5LjM4IDg2LjcwNyAxMy4wMDQg&#xA;Mi41MjM0IDI2LjIxOSAzLjc4OTEgMzkuNDYxIDMuNzg5MSA1MC43ODEtMC4xMjUg&#xA;OTkuNjk5LTE5LjE0OCAxMzcuMjMtNTMuMzU1IDM3LjUzMS0zNC4yMTEgNjAuOTg4&#xA;LTgxLjE2NCA2NS44MDUtMTMxLjcyIDQuODE2NC01MC41NTEtOS4zNTE2LTEwMS4w&#xA;OS0zOS43NDYtMTQxLjc3LTMwLjM5NS00MC42ODQtNzQuODQtNjguNTk4LTEyNC42&#xA;OS03OC4zMTJ6bTEzMy4zIDIzNC4yYy04Ljg5ODQgNDUuNzA3LTM1LjU4NiA4Ni4w&#xA;MTItNzQuMTk5IDExMi4wNC0zOC42MDkgMjYuMDMxLTg1Ljk4IDM1LjY1Ni0xMzEu&#xA;NjkgMjYuNzU4LTQ1LjcxMS04Ljg5NDUtODYuMDEyLTM1LjU4Ni0xMTIuMDQtNzQu&#xA;MTk1LTI2LjAyNy0zOC42MDktMzUuNjU2LTg1Ljk4LTI2Ljc2Mi0xMzEuNjkgOC44&#xA;OTg0LTQ1LjcxMSAzNS41ODYtODYuMDEyIDc0LjE5NS0xMTIuMDRzODUuOTgtMzUu&#xA;NjYgMTMxLjY5LTI2Ljc2NmM0NS42ODggOC45NDE0IDg1Ljk2MSAzNS42NDEgMTEx&#xA;Ljk4IDc0LjI0MiAyNi4wMjMgMzguNjAyIDM1LjY2OCA4NS45NDkgMjYuODI0IDEz&#xA;MS42NXptNDQwLjg0IDEwMC42IDE3LjI4OS0yMi4xNjgtMzIuMzM2LTQ4LTI3LjAz&#xA;MSA3Ljc5M2MtNy4wMTE3LTUuNzgxMi0xNC42MDUtMTAuODItMjIuNjYtMTUuMDMx&#xA;bC0zLjQxMDItMjcuOTMtNTYuNzY2LTExLjAyNy0xMy42MjkgMjQuNjA1LTAuMDAz&#xA;OTA3IDAuMDAzOTA2Yy05LjAzNTIgMC44NzUtMTcuOTU3IDIuNjk1My0yNi42MTMg&#xA;NS40Mjk3bC0yMi4xOC0xNy4yNzctNDcuOTI2IDMyLjMxMiA3Ljc0MjIgMjcuMDd2&#xA;LTAuMDAzOTA3Yy01Ljc2NTYgNy4wMDc4LTEwLjc4OSAxNC41OTQtMTQuOTkyIDIy&#xA;LjYzN2wtMjcuOTQxIDMuNDM3NS0xMS4wMjcgNTYuNzI3IDI0LjYwNSAxMy42Njhj&#xA;MC44Nzg5MSA5LjAzMTIgMi42OTUzIDE3Ljk0NSA1LjQyMTkgMjYuNjAybC0xNy4z&#xA;NTkgMjIuMTU2IDMyLjM0OCA0OCAyNy4wNDMtNy43NTM5IDAuMDAzOTA2LTAuMDAz&#xA;OTA3YzcuMDAzOSA1Ljc4MTIgMTQuNTk0IDEwLjgxMiAyMi42NDggMTUuMDA4bDMu&#xA;NDEwMiAyNy45MDIgNTYuNzQyIDExLjA1MSAxMy42NTYtMjQuNTk0djAuMDAzOTA2&#xA;YzkuMDM5MS0wLjg4MjgxIDE3Ljk2NS0yLjcwNyAyNi42MjUtNS40NDUzbDIyLjE2&#xA;OCAxNy4zNDQgNDgtMzIuMzAxLTcuNzUzOS0yNy4wODJjNS43ODEyLTcuMDAzOSAx&#xA;MC44MDktMTQuNTk0IDE1LjAwOC0yMi42NDhsMjcuOTMtMy40MjE5IDExLjA2Ni01&#xA;Ni43NTQtMjQuNjMzLTEzLjYwNWgtMC4wMDM5MDZjLTAuODk0NTMtOS4wNjY0LTIu&#xA;NzMwNS0xOC4wMTYtNS40ODA1LTI2LjcwM3ptLTUuMzMyIDcwLjkzOC0yMy4wMTYg&#xA;Mi44MDQ3LTMuMzM1OSA3LjQ3NjZ2MC4wMDM5MDZjLTQuNjQ4NCAxMC40OC0xMS4w&#xA;MjcgMjAuMTA1LTE4Ljg3MSAyOC40NzNsLTUuNTk3NyA1Ljk3NjYgNi40MDIzIDIy&#xA;LjMzMi0xMy4xNiA4Ljg0MzgtMTguMzI0LTE0LjMxNi03LjU3ODEgMi45NDE0LTAu&#xA;MDAzOTA3IDAuMDAzOTA2Yy0xMC42NzIgNC4xMjExLTIxLjk2MSA2LjQyMTktMzMu&#xA;Mzk1IDYuODA0N2wtOC4xNzE5IDAuMjc3MzQtMTEuMjU0IDIwLjMwMS0xNS42MDIt&#xA;My4wMzEyLTIuODQzOC0yMy4wNjYtNy40NjQ4LTMuMjk2OWMtMTAuNDQ5LTQuNjM2&#xA;Ny0yMC4wNDMtMTEtMjguMzgzLTE4LjgybC01Ljk2MDktNS41OTc3LTIyLjM1OSA2&#xA;LjQxOC04Ljg0MzgtMTMuMTc2IDE0LjMyNC0xOC4yODktMi45NDE0LTcuNjU2MnYw&#xA;LjAwMzkwNmMtNC4xMzY3LTEwLjY2LTYuNDQxNC0yMS45NDUtNi44MDg2LTMzLjM3&#xA;NWwtMC4yNjU2Mi04LjE4MzYtMjAuMzEyLTExLjI1NCAzLjAzMTItMTUuNjEzIDIz&#xA;LjAzOS0yLjgwNDcgMy4zMjAzLTcuNDc2NmgwLjAwMzkwNmM0LjY0NDUtMTAuNDY1&#xA;IDExLjAwOC0yMC4wNzggMTguODItMjguNDQ5bDUuNTcwMy01Ljk2MDktNi4zOTA2&#xA;LTIyLjMyIDEzLjE3Ni04Ljg0MzggMTguMzE2IDE0LjMyNCA3LjU3ODEtMi45NDE0&#xA;YzEwLjY3Mi00LjEyODkgMjEuOTYxLTYuNDI5NyAzMy4zOTgtNi44MDg2bDguMTcx&#xA;OS0wLjI4OTA2IDExLjI1NC0yMC4zMDEgMTUuNjAyIDMuMDMxMiAyLjgyODEgMjMu&#xA;MDM5IDcuNDY0OCAzLjMyMDN2MC4wMDM5MDZjMTAuNDUzIDQuNjI4OSAyMC4wNTEg&#xA;MTAuOTkyIDI4LjM4MyAxOC44Mmw1Ljk3NjYgNS42MDk0IDIyLjM3MS02LjQxOCA4&#xA;Ljg0MzggMTMuMTYtMTQuMzAxIDE4LjMwNSAyLjkyOTcgNy41NzgxdjAuMDAzOTA2&#xA;YzQuMTE3MiAxMC42NzIgNi40MTQxIDIxLjk2MSA2Ljc5NjkgMzMuMzk1bDAuMjY1&#xA;NjIgOC4xNjAyIDIwLjMxMiAxMS4zMDV6bS0xMDUuODgtMTA2LjE3djAuMDAzOTA2&#xA;Yy0yMy4yMTEtNC41MTU2LTQ3LjE5NSAyLjAyMzQtNjQuOTA2IDE3LjY5MXMtMjcu&#xA;MTI1IDM4LjY4LTI1LjQ3NyA2Mi4yNjZjMS42NDg0IDIzLjU4NiAxNC4xNzIgNDUu&#xA;MDY2IDMzLjg4NyA1OC4xMTcgMTkuNzE5IDEzLjA1MSA0NC4zODMgMTYuMTkxIDY2&#xA;LjczOCA4LjQ5MjIgMjIuMzU1LTcuNjk1MyAzOS44NjMtMjUuMzUyIDQ3LjM2Ny00&#xA;Ny43NzNzNC4xNTIzLTQ3LjA1OS05LjA2NjQtNjYuNjZjLTExLjI1LTE2Ljc3LTI4&#xA;Ljc0Mi0yOC4zNDQtNDguNTgyLTMyLjEzM3ptMzEuODIgODMuNjg0djAuMDAzOTA3&#xA;Yy0yLjMwMDggMTEuNzU0LTguOTg0NCAyMi4xOTEtMTguNjk1IDI5LjIwMy05Ljcx&#xA;NDggNy4wMDc4LTIxLjczIDEwLjA1OS0zMy42MDkgOC41MzUycy0yMi43MzQtNy41&#xA;MTE3LTMwLjM2Ny0xNi43NDJjLTcuNjI4OS05LjIzNDQtMTEuNDYxLTIxLjAyMy0x&#xA;MC43MTktMzIuOTc3IDAuNzQyMTktMTEuOTUzIDYuMDAzOS0yMy4xOCAxNC43MTUt&#xA;MzEuMzk4IDguNzE0OC04LjIxODggMjAuMjI3LTEyLjgxNiAzMi4yMDMtMTIuODU5&#xA;IDMuMDU4NiAwLjAwMzkwNiA2LjEwNTUgMC4yOTY4NyA5LjEwOTQgMC44ODY3MiAx&#xA;Mi4yOTMgMi4zODY3IDIzLjEzMyA5LjU2MjUgMzAuMTM3IDE5Ljk0NSA3IDEwLjM4&#xA;MyA5LjU4NTkgMjMuMTI1IDcuMTg3NSAzNS40MTh6bS0yMzAuNDgtNDczLjg1LTIx&#xA;LjU3NCAyNy41ODYgMzcuODk1IDU2LjIzNCAzMy42NjQtOS42MzY3djAuMDAzOTA2&#xA;YzkuNjU2MiA4LjE2NDEgMjAuMjMgMTUuMTcyIDMxLjUxNiAyMC44NzlsNC4yODEy&#xA;IDM0Ljc2MiA2Ni41NTUgMTIuOTM0IDE2Ljk4OC0zMC42MzMgMC4wMDM5MDYgMC4w&#xA;MDM5MDdjMTIuNjA1LTEuMDc4MSAyNS4wNDMtMy42MjExIDM3LjA1OS03LjU3ODFs&#xA;MjcuNjAyIDIxLjU3NCA1Ni4yMjMtMzcuODk1LTkuNjUyMy0zMy42NTJjOC4xNjgt&#xA;OS42Nzk3IDE1LjE4LTIwLjI3NyAyMC44OTUtMzEuNTc4bDM0Ljc1LTQuMjY5NSAx&#xA;Mi45MzQtNjYuNTctMzAuNjA1LTE2Ljk2NXYwLjAwMzkwNmMtMS4wNzQyLTEyLjYx&#xA;My0zLjYxNzItMjUuMDU1LTcuNTc4MS0zNy4wNzRsMjEuNTYyLTI3LjYwMi0zNy44&#xA;OTUtNTYuMjExLTMzLjY1MiA5LjYxMzNjLTkuNjc5Ny04LjE2NDEtMjAuMjc3LTE1&#xA;LjE3Mi0zMS41NzgtMjAuODc5bC00LjIzMDUtMzQuNzM4LTY2LjYwNS0xMi45OTYt&#xA;MTYuOTQxIDMwLjcxOWMtMTIuNjA1IDEuMDcwMy0yNS4wMzkgMy42MTMzLTM3LjA1&#xA;MSA3LjU3ODFsLTI3LjYwOS0yMS41OTgtNTYuMjIzIDM3Ljg5NSA5LjY2NDEgMzMu&#xA;Njg4aC0wLjAwMzkwNmMtOC4xNzU4IDkuNjY4LTE1LjE4NCAyMC4yNy0yMC44Nzkg&#xA;MzEuNTc4bC0zNC43ODkgNC4yNjk1LTEyLjkzNCA2Ni41NyAzMC42MzMgMTYuOTI2&#xA;YzEuMDY2NCAxMi42MDUgMy42MDk0IDI1LjA0NyA3LjU3ODEgMzcuMDU5em0tMC45&#xA;MTAxNi05NC41MzUgMjkuOTYxLTMuNjUyMyAzLjMwODYtNy41MDM5IDAuMDAzOTA2&#xA;IDAuMDAzOTA2YzYuMDY2NC0xMy42OTkgMTQuMzk4LTI2LjI3NyAyNC42NDUtMzcu&#xA;MjExbDUuNTgyLTUuOTc2Ni04LjMxMjUtMjkuMDUxIDIxLjQ3My0xNC40NzcgMjMu&#xA;Nzg1IDE4LjU5NCA3LjU3ODEtMi45NTdoMC4wMDM5MDdjMTMuOTgtNS4zOTQ1IDI4&#xA;Ljc2Ni04LjQwNjIgNDMuNzQyLTguOTAyM2w4LjE2MDItMC4yNjU2MyAxNC42NDEt&#xA;MjYuMzg3IDI1LjQyNiA0LjkzNzUgMy42ODc1IDI5Ljk0OSA3LjQ1MzEgMy4zMDg2&#xA;YzEzLjcwNyA2LjA4MiAyNi4yOTcgMTQuNDE0IDM3LjI1IDI0LjY1Nmw1Ljk3NjYg&#xA;NS41ODIgMjkuMDUxLTguMzEyNSAxNC40ODggMjEuNDczLTE4LjU5NCAyMy43NzMg&#xA;Mi45NDE0IDcuNTc4MSAwLjAwMzkwNiAwLjAwMzkwNmM1LjM5ODQgMTMuOTggOC40&#xA;MTQxIDI4Ljc2NiA4LjkxOCA0My43NDJsMC4yNjU2MiA4LjE3MTkgMjYuMzc1IDE0&#xA;LjY1Mi00LjkzNzUgMjUuNDAyLTI5LjkzOCAzLjY4NzUtMy4zMjAzIDcuNDY0OC0w&#xA;LjAwMzkwNiAwLjAwMzkwNmMtNi4wNzAzIDEzLjY5OS0xNC40MDIgMjYuMjc3LTI0&#xA;LjY0NSAzNy4yMTFsLTUuNTgyIDUuOTYwOSA4LjMwMDggMjkuMDUxLTIxLjQ3MyAx&#xA;NC40NzctMjMuODUyLTE4LjQ4OC03LjU3ODEgMi45Mjk3Yy0xMy45ODggNS4zNzg5&#xA;LTI4Ljc4MSA4LjM2NzItNDMuNzU4IDguODQzOGwtOC4xNjAyIDAuMjg5MDYtMTQu&#xA;NjI5IDI2LjM3NS0yNS40MjYtNC45NTMxLTMuNjY0MS0yOS45MjYtNy40NzY2LTMu&#xA;MzIwM2MtMTMuNjk5LTYuMDYyNS0yNi4yNzctMTQuNDAyLTM3LjE5OS0yNC42NTZs&#xA;LTUuOTg4My01LjU5NzctMjkuMDUxIDguMzI0Mi0xNC40ODgtMjEuNDczIDE4LjU4&#xA;Mi0yMy43OTctMi45NDE0LTcuNTc4MWgtMC4wMDM5MDZjLTUuNDA2Mi0xMy45Nzct&#xA;OC40MjE5LTI4Ljc2Ni04LjkxOC00My43NDJsLTAuMjY1NjItOC4xODM2LTI2LjM3&#xA;NS0xNC42MDJ6bTEzNi43OSAxNDQuNTdjMjYuNzU0IDUuMTk1MyA1NC40NzMtMC40&#xA;NTMxMiA3Ny4wNjYtMTUuNjk1IDIyLjU5LTE1LjI0MiAzOC4yMDMtMzguODM2IDQz&#xA;LjM5OC02NS41OSA1LjE2OC0yNi43NDYtMC40ODQzOC01NC40NDktMTUuNzE1LTc3&#xA;LjAzNS0xNS4yMy0yMi41ODYtMzguNzk3LTM4LjIwNy02NS41MzEtNDMuNDQ1LTI2&#xA;Ljc2Ni01LjIyNjYtNTQuNTEyIDAuMzk4NDQtNzcuMTMzIDE1LjYzNy0yMi42MTcg&#xA;MTUuMjQyLTM4LjI1IDM4Ljg0OC00My40NTMgNjUuNjE3LTUuMjAzMSAyNi43NzMg&#xA;MC40NDUzMSA1NC41MTYgMTUuNzA3IDc3LjEyMSAxNS4yNjIgMjIuNjAyIDM4Ljg4&#xA;MyAzOC4yMTEgNjUuNjYgNDMuMzkxem0tNTIuOTUzLTExNS4wN2M0LjM5NDUtMjIu&#xA;NTUxIDE5LjAyMy00MS43NzcgMzkuNTktNTIuMDIzIDIwLjU2Ni0xMC4yNDIgNDQu&#xA;NzI3LTEwLjM0IDY1LjM3NS0wLjI2MTcyIDIwLjY0NSAxMC4wNzggMzUuNDM0IDI5&#xA;LjE4NCA0MC4wMDggNTEuNjk5IDQuNTc0MiAyMi41MTYtMS41ODIgNDUuODc5LTE2&#xA;LjY2IDYzLjIxOS0xNS4wNzggMTcuMzM2LTM3LjM1OSAyNi42NzYtNjAuMjkzIDI1&#xA;LjI3LTIyLjkzLTEuNDA2Mi00My45MDYtMTMuMzk4LTU2Ljc1LTMyLjQ0OS0xMC45&#xA;NTMtMTYuMjYyLTE1LjAwNC0zNi4yMDctMTEuMjctNTUuNDUzeiIvPgo8L3N2Zz4K&#xA;"
+                            xlink:type="simple"
+                            xlink:actuate="onLoad"
+                            height="50pt"
+                            preserveAspectRatio="xMidYMid meet"
+                            xlink:show="embed"/>
+                     <rect width="50pt" x="0" height="50pt" y="0"/>
+                  </g>
+               </g>
+               <g k9-elem="caption"
+                  k9-texture="foreground"
+                  transform="translate(16.9,146.3)"
+                  k9-format="text-fixed"
+                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [78.0, 165.0]; rect-size: [111.0, 25.0]; position: none; painter: direct-svg; ">
+                  <g class="k9-content k9-no-shape" k9-highlight="pulse">
+                     <g rendered="true">
+                        <g>
+                           <path d="M8.6181 0.2569 Q6.6319 0.2569 4.8958 -0.7778 Q3.1597 -1.8125 2.1319 -3.5625 Q1.1111 -5.3125 1.1111 -7.3403 Q1.1111 -9.3681 2.1319 -11.1042 Q3.1597 -12.8403 4.8958 -13.875 Q6.6319 -14.9097 8.6181 -14.9097 Q10.625 -14.9097 12.3403 -13.875 Q14.0556 -12.8403 15.0764 -11.1042 Q16.1042 -9.3681 16.1042 -7.3403 Q16.1042 -5.3125 15.0764 -3.5625 Q14.0556 -1.8125 12.3403 -0.7778 Q10.625 0.2569 8.6181 0.2569 ZM8.6181 -1.2778 Q10.1736 -1.2778 11.5069 -2.1111 Q12.8403 -2.9444 13.6319 -4.3264 Q14.4236 -5.7153 14.4236 -7.3403 Q14.4236 -8.9375 13.6319 -10.3333 Q12.8403 -11.7361 11.5069 -12.5556 Q10.1736 -13.375 8.6181 -13.375 Q7.0625 -13.375 5.7292 -12.5556 Q4.3958 -11.7361 3.5903 -10.3333 Q2.7917 -8.9375 2.7917 -7.3403 Q2.7917 -5.7153 3.5903 -4.3264 Q4.3958 -2.9444 5.7292 -2.1111 Q7.0625 -1.2778 8.6181 -1.2778 ZM24.598 -11.2847 Q26.0285 -11.2847 27.1883 -10.5486 Q28.3549 -9.8125 29.0146 -8.5 Q29.6744 -7.1875 29.6744 -5.5278 Q29.6744 -3.8611 29.0146 -2.5347 Q28.3549 -1.2153 27.1883 -0.4792 Q26.0285 0.2569 24.598 0.2569 Q23.2994 0.2569 22.2646 -0.3472 Q21.2299 -0.9583 20.5841 -2.0694 L20.5841 3.6667 L18.9869 3.6667 L18.9869 -11.0278 L20.5841 -11.0278 L20.5841 -8.9583 Q21.2299 -10.0694 22.2646 -10.6736 Q23.2994 -11.2847 24.598 -11.2847 ZM24.2994 -1.1736 Q25.3688 -1.1736 26.2091 -1.7292 Q27.0494 -2.2847 27.5146 -3.2708 Q27.9869 -4.2639 27.9869 -5.5278 Q27.9869 -6.7847 27.5146 -7.7639 Q27.0494 -8.75 26.2091 -9.2986 Q25.3688 -9.8542 24.2994 -9.8542 Q23.2299 -9.8542 22.3758 -9.2986 Q21.5285 -8.75 21.0563 -7.7639 Q20.5841 -6.7847 20.5841 -5.5278 Q20.5841 -4.2639 21.0563 -3.2708 Q21.5285 -2.2847 22.3758 -1.7292 Q23.2299 -1.1736 24.2994 -1.1736 ZM37.417 -1.1736 Q38.4031 -1.1736 39.3892 -1.5556 Q40.3823 -1.9444 40.8962 -2.4931 L41.8753 -1.4514 Q41.174 -0.6806 39.9031 -0.2083 Q38.6323 0.2569 37.4378 0.2569 Q35.9656 0.2569 34.6878 -0.4861 Q33.4101 -1.2361 32.6253 -2.5694 Q31.8476 -3.9028 31.8476 -5.5486 Q31.8476 -7.1458 32.5837 -8.4653 Q33.3198 -9.7917 34.5698 -10.5347 Q35.8198 -11.2847 37.292 -11.2847 Q39.7642 -11.2847 41.1392 -9.5556 Q42.5142 -7.8264 42.5142 -4.9097 L33.4934 -4.9097 Q33.667 -3.2639 34.7434 -2.2153 Q35.8198 -1.1736 37.417 -1.1736 ZM37.3545 -9.8542 Q35.8615 -9.8542 34.792 -8.8819 Q33.7295 -7.9167 33.5142 -6.3333 L40.9378 -6.3333 Q40.7712 -7.9167 39.8476 -8.8819 Q38.9309 -9.8542 37.3545 -9.8542 ZM46.8882 -8.875 Q47.3812 -9.9861 48.5132 -10.6319 Q49.6451 -11.2847 51.159 -11.2847 L51.159 -9.8542 Q49.9229 -9.8542 48.9507 -9.3819 Q47.9784 -8.9167 47.4298 -8.0694 Q46.8882 -7.2292 46.8882 -6.1667 L46.8882 0 L45.2909 0 L45.2909 -11.0278 L46.8882 -11.0278 L46.8882 -8.875 ZM57.8589 -11.2847 Q60.0534 -11.2847 61.1923 -10.0347 Q62.3381 -8.7917 62.3381 -6.7222 L62.3381 0 L60.7339 0 L60.7339 -1.7292 Q60.1576 -0.7917 59.0812 -0.2639 Q58.0048 0.2569 56.852 0.2569 Q55.0812 0.2569 53.9492 -0.7014 Q52.8242 -1.6667 52.8242 -3.2639 Q52.8242 -4.3333 53.4076 -5.1736 Q53.9978 -6.0139 54.9839 -6.4722 Q55.977 -6.9306 57.1506 -6.9306 Q58.8173 -6.9306 60.7339 -6.3125 L60.7339 -6.7222 Q60.7339 -8.0625 60.0534 -8.9861 Q59.3728 -9.9167 57.7478 -9.9167 Q57.0048 -9.9167 56.2201 -9.6528 Q55.4423 -9.3889 54.5256 -8.9167 L53.8867 -10.2153 Q56.0187 -11.2847 57.8589 -11.2847 ZM57.1298 -1.1528 Q58.3242 -1.1528 59.3798 -1.7569 Q60.4353 -2.3681 60.7339 -3.4583 L60.7339 -5.1389 Q59.1159 -5.5903 57.4076 -5.5903 Q56.1506 -5.5903 55.2617 -4.9514 Q54.3798 -4.3125 54.3798 -3.3264 Q54.3798 -2.3264 55.1576 -1.7361 Q55.9353 -1.1528 57.1298 -1.1528 ZM71.2288 -0.4514 Q70.333 0.2569 69.1871 0.2569 Q68.0135 0.2569 67.2496 -0.5278 Q66.4927 -1.3194 66.4927 -2.5625 L66.4927 -9.5972 L64.7705 -9.5972 L64.7705 -11.0278 L66.4927 -11.0278 L66.4927 -14.0556 L68.0969 -14.0556 L68.0969 -11.0278 L70.8052 -11.0278 L70.8052 -9.5972 L68.0969 -9.5972 L68.0969 -2.5625 Q68.0969 -1.9653 68.4441 -1.5694 Q68.7982 -1.1736 69.2913 -1.1736 Q69.6524 -1.1736 69.951 -1.2986 Q70.2496 -1.4306 70.4441 -1.6181 L71.2288 -0.4514 ZM74.2819 -13.0347 Q73.8374 -13.0347 73.5249 -13.3542 Q73.2194 -13.6736 73.2194 -14.1042 Q73.2194 -14.5278 73.5249 -14.8333 Q73.8374 -15.1458 74.2819 -15.1458 Q74.7124 -15.1458 75.018 -14.8333 Q75.3305 -14.5278 75.3305 -14.1042 Q75.3305 -13.6736 75.018 -13.3542 Q74.7124 -13.0347 74.2819 -13.0347 ZM73.4694 -11.0278 L75.0735 -11.0278 L75.0735 0 L73.4694 0 L73.4694 -11.0278 ZM83.4152 0.2569 Q81.9013 0.2569 80.5749 -0.5278 Q79.2555 -1.3194 78.4708 -2.6528 Q77.693 -3.9861 77.693 -5.5278 Q77.693 -7.0625 78.4708 -8.3819 Q79.2555 -9.7083 80.5749 -10.4931 Q81.9013 -11.2847 83.4152 -11.2847 Q84.9291 -11.2847 86.2416 -10.4931 Q87.5541 -9.7083 88.3319 -8.3819 Q89.1097 -7.0625 89.1097 -5.5278 Q89.1097 -3.9861 88.3319 -2.6528 Q87.5541 -1.3194 86.2416 -0.5278 Q84.9291 0.2569 83.4152 0.2569 ZM83.4152 -1.1736 Q84.4777 -1.1736 85.4083 -1.7708 Q86.3388 -2.3681 86.8805 -3.3611 Q87.4222 -4.3542 87.4222 -5.5278 Q87.4222 -6.6806 86.8805 -7.6806 Q86.3388 -8.6806 85.4083 -9.2639 Q84.4777 -9.8542 83.4152 -9.8542 Q82.3249 -9.8542 81.3944 -9.2639 Q80.4708 -8.6806 79.9222 -7.6806 Q79.3805 -6.6806 79.3805 -5.5278 Q79.3805 -4.3542 79.9222 -3.3611 Q80.4708 -2.3681 81.3944 -1.7708 Q82.3249 -1.1736 83.4152 -1.1736 ZM97.0016 -11.2847 Q98.196 -11.2847 99.1474 -10.7361 Q100.0988 -10.1944 100.6196 -9.2222 Q101.1405 -8.2569 101.1405 -7.0208 L101.1405 0 L99.5432 0 L99.5432 -6.8056 Q99.5432 -8.1528 98.7724 -9 Q98.0085 -9.8542 96.7863 -9.8542 Q95.8696 -9.8542 95.0919 -9.4722 Q94.3141 -9.0903 93.8419 -8.4236 Q93.3766 -7.7639 93.3766 -7.0208 L93.3766 0 L91.7794 0 L91.7794 -11.0278 L93.3766 -11.0278 L93.3766 -9.2569 Q93.8696 -10.1528 94.8557 -10.7153 Q95.8488 -11.2847 97.0016 -11.2847 ZM108.2907 0.2569 Q107.1171 0.2569 105.9087 -0.1667 Q104.7073 -0.5972 103.7212 -1.3889 L104.5546 -2.5625 Q106.4504 -1.1736 108.2907 -1.1736 Q109.374 -1.1736 110.0476 -1.6389 Q110.7212 -2.1111 110.7212 -2.9028 Q110.7212 -3.4583 110.3532 -3.8264 Q109.9921 -4.2014 109.4504 -4.4167 Q108.9087 -4.6319 107.9434 -4.9097 Q105.9226 -5.4861 105.0893 -6.1736 Q104.2559 -6.8681 104.2559 -8.0417 Q104.2559 -9.5139 105.3393 -10.3958 Q106.4296 -11.2847 108.1171 -11.2847 Q109.1171 -11.2847 110.1379 -10.9514 Q111.1657 -10.625 112.0615 -10.0486 L111.2976 -8.8125 Q109.6518 -9.8542 108.1171 -9.8542 Q107.1379 -9.8542 106.4921 -9.4236 Q105.8532 -9 105.8532 -8.2361 Q105.8532 -7.7639 106.1309 -7.4653 Q106.4087 -7.1667 106.9643 -6.9306 Q107.5198 -6.7014 108.7143 -6.3125 Q109.8879 -5.9514 110.6101 -5.6111 Q111.3393 -5.2708 111.8254 -4.6597 Q112.3184 -4.0556 112.3184 -3.0694 Q112.3184 -1.5764 111.1796 -0.6597 Q110.0407 0.2569 108.2907 0.2569 Z"
+                                 stroke="none"/>
+                        </g>
+                     </g>
+                  </g>
+               </g>
+            </g>
+         </g>
+      </g>
+   </g>
+   <defs>
+      <script xlink:actuate="onLoad"
+              xlink:type="simple"
+              xlink:show="other"
+              type="module">
+     import '/public/templates/risk-first/risk-first.js?v=v0.15'
+  </script>
+   </defs>
+</svg>
