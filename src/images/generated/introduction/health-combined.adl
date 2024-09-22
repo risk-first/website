@@ -1,0 +1,82 @@
+<diagram
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+	xmlns="http://www.kite9.org/schema/adl"
+	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
+	style="--kite9-layout: down; --kite9-min-width: 600pt; ">
+	<table k9-texture="none">
+		<cell style="--kite9-occupies: 1 1; ">
+			<container id="4" style="--kite9-sizing: maximize ">
+				<generic-artifact
+					href="/public/templates/risk-first/wip/gauge.svg" id="1">Metabolism
+				</generic-artifact>
+			
+				<generic-artifact
+					href="/public/templates/risk-first/wip/gauge.svg" id="1-ej">Homeostasis
+				</generic-artifact>
+				
+				<generic-artifact
+					href="/public/templates/risk-first/wip/gauge.svg" id="1-hy">Adaption
+				</generic-artifact>
+					
+			
+				<label id="4-0">Health as Behaviour 
+				e.g. Organism Survival</label>
+			</container>
+		</cell>
+		<cell style="--kite9-occupies: 2 1; ">
+			<container id="4" style="--kite9-sizing: maximize ">
+				<generic-artifact
+					href="/public/templates/risk-first/redesign/artifacts/document_v2.svg"
+					id="1">Air</generic-artifact>
+				<generic-artifact
+					href="/public/templates/risk-first/redesign/artifacts/document_v2.svg"
+					id="1-fj">Water</generic-artifact>
+				<generic-artifact
+					href="/public/templates/risk-first/redesign/artifacts/document_v2.svg"
+					id="1-gh">Food</generic-artifact>
+				<label id="4-0">Health as Control of Resources </label>
+			</container>
+		</cell>
+
+		<cell style="--kite9-occupies: 1 2;  ">
+			<container id="5" style="--kite9-sizing: maximize ">
+				<risk class="generic"
+					href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg"
+					id="attendant">
+					<code id="att_1">Attendant</code>
+					<title id="att_2">Poor Diet</title>
+				</risk>
+				<risk class="generic"
+					href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg"
+					id="attendant-bz">
+					<code id="att_1-pz">Attendant</code>
+					<title id="att_2-zt">High-Crime Area</title>
+				</risk>
+				<risk class="generic"
+					href="/public/templates/risk-first/redesign/risks/attendant_risk_v2.svg"
+					id="attendant-bb">
+					<code id="att_1-rr">Attendant</code>
+					<title id="att_2-ez">Dangerous Behaviour</title>
+				</risk>
+				<label>Health as Risk Exposure</label>
+			</container>
+		</cell>
+		<cell style="--kite9-occupies: 2 2; ">
+			<container id="10" style="--kite9-sizing: maximize ">
+				<generic-artifact id="3a"
+					href="/public/templates/risk-first/wip/gauge.svg">Cars 
+					Completed</generic-artifact>
+				<generic-artifact id="3b"
+					href="/public/templates/risk-first/wip/gauge.svg">Defect
+					 Rate</generic-artifact>
+				<generic-artifact id="3c"
+					href="/public/templates/risk-first/wip/gauge.svg">Industrial 
+					Accidents 
+				</generic-artifact>
+				<label id="10-0">Health as Measured Fitness
+				e.g. for a factory</label>
+			</container>
+
+		</cell>
+	</table>
+</diagram>

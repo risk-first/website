@@ -15,6 +15,8 @@ practice:
   mitigates:
    - tag: Feature Access Risk
      reason: Users are able to access the features you release to them.
+   - tag: Feature Fit Risk
+     reason: Putting new features in the hands of users can make your product fit their needs better.
    - tag: Market Risk
      reason: "Delivering features means you get market feedback."
    - tag: Funding Risk

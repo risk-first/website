@@ -203,7 +203,7 @@ The table above lists a set of _generic strategies_ for derisking which we'll lo
 
 ## Control
 
-**Controlling** or **containing** risks means that you accept the risk but you have provisions in place for when things get out of hand.  
+**Controlling** or **containing** risks means that you accept the risk but you have provisions in place (i.e. **preventive controls**) for when things get out of hand.  
 
 There is a grey area here, because on the one hand you are [retaining](#retain) some of the risk but also trying to [reduce](#reduce) its worst features.  
 
@@ -216,6 +216,8 @@ There is a grey area here, because on the one hand you are [retaining](#retain) 
 - **Regulations**: firms such as banks or drug companies operate under heavy regulation, designed to control and limit both the amount of risk they take on and that expose their customers to.
 
 - **Training** people on risky tasks doesn't stop them performing the task, but might prevent them taking too many unnecessary risks.
+
+- **Seatbelts**: could be considered a preventive control to stop people flying through the windscreen when they crash their car.
 
 ### Specific Tactics    
 

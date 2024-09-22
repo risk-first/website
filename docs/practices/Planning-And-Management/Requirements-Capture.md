@@ -13,7 +13,7 @@ practice:
    - "Needs Analysis"
    - "Requirement Elicitation"
   mitigates:
-   - tag: Feature-Fit Risk
+   - tag: Feature Fit Risk
      reason: "Ensures that features align with client needs and expectations."
    - tag: Coordination Risk
      reason: "Can Provide a clear understanding of requirements to all stakeholders."
