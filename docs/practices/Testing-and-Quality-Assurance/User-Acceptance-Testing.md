@@ -16,7 +16,7 @@ practice:
    - Beta Testing
    - Dogfooding
   mitigates:
-   - tag: Feature-Fit Risk
+   - tag: Feature Fit Risk
      reason: "Ensures that the software meets the client's requirements and expectations."
    - tag: Implementation Risk
      reason: "Validates that the implementation meets the specified requirements."

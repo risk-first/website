@@ -15,8 +15,6 @@ practice:
    - "Continuous Integration (CI)"
    - "Continuous Delivery (CD)"
   mitigates:
-   - tag: Feature Fit Risk
-     reason: "Reduces the variability in process completion"
    - tag: Operational Risk
      reason: "Introduces more consistency in process operations and removes opportunity for human error"
    - tag: Schedule Risk

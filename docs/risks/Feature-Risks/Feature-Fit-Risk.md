@@ -14,8 +14,6 @@ part_of: Feature Risk
 
 <RiskIntro fm={frontMatter} />
 
-![Feature Fit Risk](/img/generated/risks/feature/feature-fit-risk.svg) 
-
 This is the risk that the feature that clients want to use in the software _isn't there_.
 
  - This might manifest itself as complete _absence_ of something you need, e.g "Why is there no word count in this editor?"

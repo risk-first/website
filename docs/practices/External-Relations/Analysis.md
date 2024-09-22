@@ -18,7 +18,7 @@ practice:
    - tag: Communication Risk
      reason: "Facilitates clear communication of requirements and expectations among stakeholders."
    - tag: Feature Fit Risk
-     reason: "Analysis of problems helps you make sure you come up with the right solution."
+     reason: "Analysis can help ensure technical solutions fit the problems they're designed for."
    - tag: Contextual Risk
      reason: "Developing an understanding the context into which a solution is put avoids legal and social problems."
   attendant:

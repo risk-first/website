@@ -13,7 +13,7 @@ practice:
    - "Pilot Models"
    - "Early Models"
   mitigates:
-   - tag: Feature-Fit Risk
+   - tag: Feature Fit Risk
      reason: "Allows early validation of features and design with stakeholders."
    - tag: Communication Risk
      reason: "Facilitates clear communication of concepts and requirements."

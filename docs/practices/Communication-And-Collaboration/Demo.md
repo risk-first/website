@@ -15,7 +15,7 @@ practice:
    - "Spike Solution"
    - "Proof of Concept (POC)"
   mitigates:
-   - tag: Feature-Fit Risk
+   - tag: Feature Fit Risk
      reason: "Showcases the product to ensure it meets client expectations and needs."
    - tag: Communication Risk
      reason: "Facilitates clear communication of the product's features and benefits to stakeholders."
