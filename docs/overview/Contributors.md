@@ -30,7 +30,7 @@ Ideas, issues and proof-reading:
 
 If you feel something important is missing, or you spot a mistake, [we need help](https://github.com/risk-first/website/blob/master/CONTRIBUTING).
 
-Although this is a collaborative Github project, it's not meant to be an open-ended discussion of software techniques like [Ward's Wiki](https://wiki.c2.com).  In order to be concise and useful, discussions need to be carried out by either:
+Although this is a collaborative GitHub project, it's not meant to be an open-ended discussion of software techniques like [Ward's Wiki](https://wiki.c2.com).  In order to be concise and useful, discussions need to be carried out by either:
 
  - **[Opening an Issue](https://github.com/risk-first/website/issues).**
  - **["Star"ing the project](https://github.com/risk-first/website/stargazers)**: this will cause you to be invited to join the Risk-First organisation
