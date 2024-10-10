@@ -258,7 +258,7 @@ hide_table_of_contents: true
                 <img src="/img/presentations/OpenSource/images/images.017.jpg" alt="Image of slide number 17" />
             </div>
             <div class="slide-notes">
-                      <p>So, this is the risk-first website repo, on github.  And, each page of the website is a file in my repo…</p>
+                      <p>So, this is the risk-first website repo, on GitHub.  And, each page of the website is a file in my repo…</p>
 
 
             </div>
@@ -271,7 +271,7 @@ hide_table_of_contents: true
             <div class="slide-notes">
                       <p>Here’s one of them, called “A Pattern Language”.</p>
 
-      <p>Now, if I want, I can press the “Edit” button, and Github will allow me to edit that page. </p>
+      <p>Now, if I want, I can press the “Edit” button, and GitHub will allow me to edit that page. </p>
 
 
             </div>
@@ -295,9 +295,9 @@ hide_table_of_contents: true
                 <img src="/img/presentations/OpenSource/images/images.020.jpg" alt="Image of slide number 20" />
             </div>
             <div class="slide-notes">
-                      <p>And, when you save it, on Github it looks like this.</p>
+                      <p>And, when you save it, on GitHub it looks like this.</p>
 
-      <p>But, Github also has a feature called Jekyll, which is a Open-Source (obviously) static website generator.  After I make an edit on Github, it recreates the webpages in my website, on <a href="http://riskfirst.org" target="_blank">riskfirst.org</a></p>
+      <p>But, GitHub also has a feature called Jekyll, which is a Open-Source (obviously) static website generator.  After I make an edit on GitHub, it recreates the webpages in my website, on <a href="http://riskfirst.org" target="_blank">riskfirst.org</a></p>
 
 
             </div>
@@ -310,7 +310,7 @@ hide_table_of_contents: true
             <div class="slide-notes">
                       <p>It looks something like this.</p>
 
-      <p>And obviously, Markdown is open source and Jekyll is open source, and people write extensions for them too.  Github is hosting this page for me, and the domain is riskfirst.org, but I don’t have to worry about running a webserver, or paying for a server somewhere.</p>
+      <p>And obviously, Markdown is open source and Jekyll is open source, and people write extensions for them too.  GitHub is hosting this page for me, and the domain is riskfirst.org, but I don’t have to worry about running a webserver, or paying for a server somewhere.</p>
 
 
             </div>
@@ -366,7 +366,7 @@ hide_table_of_contents: true
 
       <p>So DB have let me open-source this.</p>
 
-      <p>I wrote it at DB, we had a thorough review of the code, and then we set up a process to synchronise our internal git repos with the ones on github.   </p>
+      <p>I wrote it at DB, we had a thorough review of the code, and then we set up a process to synchronise our internal git repos with the ones on GitHub.   </p>
 
       <p>And since then, as you can see, DB have actually donated this project to FINOS:  A Financial Open-Source consortium, who will own it going forward.</p>
 
@@ -442,7 +442,7 @@ hide_table_of_contents: true
                 <img src="/img/presentations/OpenSource/images/images.031.jpg" alt="Image of slide number 31" />
             </div>
             <div class="slide-notes">
-                      <p>That’s it!  My name’s robmoffat, you can find me on github if you want - please star my projects while you’re there!  </p>
+                      <p>That’s it!  My name’s robmoffat, you can find me on GitHub if you want - please star my projects while you’re there!  </p>
 
 
             </div>

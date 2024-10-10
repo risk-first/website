@@ -31,7 +31,7 @@ Faced with this baffling choice, what are developers to do?  Jono Bacon, at the 
 
 The current approach developers apply all the time is the [Lindy Effect](https://en.wikipedia.org/wiki/Lindy_effect):  assume that any software that has been around x years will be around another x years.  This really restricts the search-space, but means you're not on the bleeding edge. (Often a good thing).  
 
-A variation on this is social status- indicated by github stars or questions on Stack Overflow, or the number of conferences about that thing.  
+A variation on this is social status- indicated by GitHub stars or questions on Stack Overflow, or the number of conferences about that thing.  
 
 We're kind of getting by with this - but it still gets harder all the time.  There are just too many options to even _discover_ them all these days.  It's more likely that we're using a tool X due to some historical accident rather than any reasoned analysis of its strengths or weaknesses.
 

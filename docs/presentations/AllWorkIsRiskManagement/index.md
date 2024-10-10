@@ -330,7 +330,7 @@ hide_table_of_contents: true
                 <img src="/img/presentations/AllWorkIsRiskManagement/images/images.017.jpg" alt="Image of slide number 17" />
             </div>
             <div class="slide-notes">
-                      <p>Let’s say this piece of text above is a task in your backlog.  Or, a JIRA item.  Or a github issue.  Or whatever you use to track these things.  </p>
+                      <p>Let’s say this piece of text above is a task in your backlog.  Or, a JIRA item.  Or a GitHub issue.  Or whatever you use to track these things.  </p>
 
       <p>Let’s break it down in terms of risk.</p>
 

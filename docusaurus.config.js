@@ -138,13 +138,13 @@ const config = {
 						title: 'GitHub',
 						items: [
 							{
-								html: '<a href="https://github.com/risk-first/website/stargazers"><img src="https://img.shields.io/github/stars/risk-first/website" alt="Github Stars"/></a>',
+								html: '<a href="https://github.com/risk-first/website/stargazers"><img src="https://img.shields.io/github/stars/risk-first/website" alt="GitHub Stars"/></a>',
 							},
 							{
-								html: '<a href="https://github.com/risk-first/website/forks"><img src="https://img.shields.io/github/forks/risk-first/website" alt="Github Forks"/></a>',
+								html: '<a href="https://github.com/risk-first/website/forks"><img src="https://img.shields.io/github/forks/risk-first/website" alt="GitHub Forks"/></a>',
 							},
 							{
-								html: '<a href="https://github.com/risk-first/website/watchers"><img src="https://img.shields.io/github/watchers/risk-first/website" alt="Github Watchers"/></a>',
+								html: '<a href="https://github.com/risk-first/website/watchers"><img src="https://img.shields.io/github/watchers/risk-first/website" alt="GitHub Watchers"/></a>',
 							},
 						],
 					},

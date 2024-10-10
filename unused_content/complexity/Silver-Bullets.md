@@ -42,7 +42,7 @@ Suddenly, anyone can program, by typing stuff in and watching what happens on th
 
 ## 3.  Library Code
 
-By creating a language that allows libraries to work together, suddenly, the lone programmer doesn’t have to do it all herself.  (This was Brooks’ re-use option).  Also, we have google now.  And github.  I can type a few keywords in and instantly discover all the libraries in a given area.  I have to make a value-judgement on whether any of them are good, but still, I have the choice of not building it myself.
+By creating a language that allows libraries to work together, suddenly, the lone programmer doesn’t have to do it all herself.  (This was Brooks’ re-use option).  Also, we have google now.  And GitHub.  I can type a few keywords in and instantly discover all the libraries in a given area.  I have to make a value-judgement on whether any of them are good, but still, I have the choice of not building it myself.
 
 ## 4.  Garbage Collection
 
