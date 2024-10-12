@@ -37,17 +37,17 @@ i.e. Ready for consumption, enjoy!
 
 ## Want To Write Something?
 
-- If you "Star" the project in github you will receive an invite to [Join the Risk-First Organisation](https://github.com/risk-first).
+- If you "Star" the project in GitHub you will receive an invite to [Join the Risk-First Organisation](https://github.com/risk-first).
 - Alternatively, fork the repo and issue a pull request in the usual way.
 - Feel free to raise issues on the project to ask for corrections / improvements.
 
 ## Forking / Wiki Updates
 
-Both this main repo (`risk-first/website`) and it's wiki (`risk-first/website.wiki`) are identical.  The reason for this is to allow the main github workflow to operate (forking / pull requests).
+Both this main repo (`risk-first/website`) and it's wiki (`risk-first/website.wiki`) are identical.  The reason for this is to allow the main GitHub workflow to operate (forking / pull requests).
 
 In order to merge pull requests:
 
-1. Perform the pull request through the normal github UI.
+1. Perform the pull request through the normal GitHub UI.
 2. Pull the changes to the local repo
 3. Ensure that the origin for the wiki is added to the local repo:
 

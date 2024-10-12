@@ -18,7 +18,7 @@ redirect_from:
 
 # Next: Scrum?
 
-I'm not sure exactly how people are finding Risk-First on the internet.  Seems like I get a lot of traffic referred from Github.   For some reason, even fairly specific searches don't make much of an impact in Google.  
+I'm not sure exactly how people are finding Risk-First on the internet.  Seems like I get a lot of traffic referred from GitHub.   For some reason, even fairly specific searches don't make much of an impact in Google.  
 
 But nevertheless, I'm still seeing a fair bit of traffic over the last couple of weeks, and despite the content being free, people are buying the book.  
 

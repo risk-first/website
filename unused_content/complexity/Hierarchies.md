@@ -300,10 +300,10 @@ Nevertheless, there are some after-the-fact efforts to provide consistent interf
 A second example to look at is the URL.  URL paths have hierarchy built into them.   I can navigate upwards from from a child to successive levels of parent like so:
 
 ```bash
-https://github.com/robmoffat/kite9-visualization/actions # Actions on one of my github projects
-https://github.com/robmoffat/kite9-visualization         # One of my github projects
+https://github.com/robmoffat/kite9-visualization/actions # Actions on one of my GitHub projects
+https://github.com/robmoffat/kite9-visualization         # One of my GitHub projects
 https://github.com/robmoffat                             # All of my projects
-https://github.com                                       # Top level of github
+https://GitHub.com                                       # Top level of GitHub
 ```
 
 This _usually_ works, but isn't guaranteed to (there might be some intermediate levels within the URL scheme which yield `404 - Not Found` pages).   
