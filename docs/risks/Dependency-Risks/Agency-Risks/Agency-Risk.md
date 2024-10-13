@@ -155,7 +155,7 @@ Building software systems that try to optimise for a hierarchy of goals (like hu
 
 ![Universal Paperclips](/img/generated/risks/agency/paperclips.svg)
 
-Bostrom worries that humanity would be steamrollered accidentally whilst trying to maximise the paperclip goal.  The AI need not be malevolent - it's enough that it just requres the resources that keep us alive!
+Bostrom worries that humanity would be steamrollered accidentally whilst trying to maximise the paperclip goal.  The AI need not be malevolent - it's enough that it just requires the resources that keep us alive!
 
 This problem may be a long way off.  In any case it's not really in our interests to build AI systems that prioritise their own survival.  As humans, we have inherited the survival goal through evolution: an AI wouldn't necessarily have this goal unless we subjected AI development to some kind of evolutionary survival-of-the-fittest process too.
 

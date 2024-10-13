@@ -44,7 +44,7 @@ const chart1 = (model) => {
 	return {
 		type: 'line',
 		id: '1',
-		optons: {
+		options: {
 			scales: {
 				y: {
 					ticks: {

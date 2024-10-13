@@ -244,7 +244,7 @@ Subsumptive hierarchies are difficult for a couple of reasons.  The first being 
 As an example of this, let's consider _planets_. The definition of a planet is quite bogus, and has changed over time:
 
 - The Greeks coined _asteres planetai_ to be the class of objects in the sky that moved separately from the rest of the body of stars.   Possibly including moons, comets and asteroids. [1](https://en.wikipedia.org/wiki/Definition_of_planet#Planets_in_antiquity).
-- However, after the [Copernican Revolution](https://en.wikipedia.org/wiki/Definition_of_planet#satellites) made the moon a satellite of earth, the defintion of planets seemed to be _bodies orbiting the sun_, and there were just 9 of them: Mercury, Mars, Earth, Venus, Saturn, Jupiter, Uranus, Neptune and Pluto.
+- However, after the [Copernican Revolution](https://en.wikipedia.org/wiki/Definition_of_planet#satellites) made the moon a satellite of earth, the definition of planets seemed to be _bodies orbiting the sun_, and there were just 9 of them: Mercury, Mars, Earth, Venus, Saturn, Jupiter, Uranus, Neptune and Pluto.
 - In 2005, [The Discovery of Eris](https://en.wikipedia.org/wiki/Definition_of_planet#Pluto), a body _larger_ than Pluto orbiting in a trans-Neptunian orbit meant that [potentially hundreds of objects](https://en.wikipedia.org/wiki/Trans-Neptunian_object#/media/File:TheTransneptunians_73AU.svg) deserved the term planet.
 - In response, Pluto was demoted to being a _dwarf planet_.  In order to do this, the definition of planet was changed to include the clause that it had "cleared its neighbourhood" of most other orbiting bodies.  This excluded Kuiper-Belt objects such as Pluto, but is _still problematic_, as Alan Stern discusses below.
 
