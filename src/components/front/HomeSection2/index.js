@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './styles.module.css'
 import MonoIcon from '../MonoIcon'
 
-// title, central panel, a call to action adn a footer icon
+// title, central panel, a call to action and a footer icon
 export default ({ children, alt }) => {
 	return (
 		<section className={alt ? styles.homeSectionAlt : styles.homeSection}>
