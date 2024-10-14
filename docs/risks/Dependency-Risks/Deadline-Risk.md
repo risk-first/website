@@ -18,7 +18,7 @@ part_of: Dependency Risk
 
 Let's examine dependencies on _events_.  
 
-We rely on events occuring all the time in our lives, and event dependencies are simple to express: usually, a _time_ and a _place_.   For example:
+We rely on events occurring all the time in our lives, and event dependencies are simple to express: usually, a _time_ and a _place_.   For example:
 
 - "The bus to work leaves at 7:30am" or 
 - "I can't start shopping until the supermarket opens at 9am".
@@ -31,7 +31,7 @@ Having an event occur in a fixed time and place is [mitigating risk](/tags/Mitig
 
 - By taking the bus, we are mitigating our own [Schedule Risk](/tags/Schedule-Risk):  we're (hopefully) reducing the amount of time we're going to spend on the activity of getting to work.  It's not entirely necessary to even take the bus:  you could walk, or go by another form of transport.  But, effectively, this just swaps one dependency for another:  if you walk, this might well take longer and use more energy, so you're just picking up [Schedule Risk](/tags/Schedule-Risk) in another way.
 - Events are a mitigation for [Coordination Risk](/tags/Coordination-Risk): a bus needn't necessarily _have_ a fixed timetable. It could wait for each passenger until they turned up, and then go.  (A bit like ride-sharing works).  This would be a total disaster from a [Coordination Risk](/tags/Coordination-Risk) perspective, as one person could cause everyone else to be really really late.  
--  If you drive, you have a dependency on your car instead.  So, there is often an _opportunity cost_ with dependencies.  Using the bus might be a cheaper way to travel, so you're picking up less [Fuding Risk](/tags/Funding-Risk) by using it.
+-  If you drive, you have a dependency on your car instead.  So, there is often an _opportunity cost_ with dependencies.  Using the bus might be a cheaper way to travel, so you're picking up less [Funding Risk](/tags/Funding-Risk) by using it.
 
 ## But, Events Lead To Attendant Risk
 
