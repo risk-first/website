@@ -16,7 +16,7 @@ tweet: yes
 
 ##### "Hierarchies are the wheel we're happy to re-invent over and over and over again."
 
-Have you noticed just how prevalent the idea of _heirarchy_ is in software?  By hierarchy, I mean a general pattern of _connectedness_, where a _parent_ has some _children_, who, in turn, may each have some further children, and so on.
+Have you noticed just how prevalent the idea of _hierarchy_ is in software?  By hierarchy, I mean a general pattern of _connectedness_, where a _parent_ has some _children_, who, in turn, may each have some further children, and so on.
 
 This is a really popular pattern.  But what's odd about it is that we seem to re-invent it over and over again in software.  
 
