@@ -67,6 +67,10 @@ Below is a table outlining the different risks we'll see.  There _is_ an order t
 |[Map And Territory Risk](/tags/Map-And-Territory-Risk)    |Risks due to the fact that people don't see the world as it really is. (After all, they're working off different, imperfect [Internal Models](/tags/Internal-Model).)|  
 |[Operational Risk](/tags/Operational-Risk)                |Software is embedded in a system containing people, buildings, machines and other services.  Operational risk considers this wider picture of risk associated with running a software service or business in the real world.|
        
+       
+<Matrix />       
+       
+       
 After the last stop on the tour, in [Staging and Classifying](Staging-And-Classifying) we'll have a recap about what we've seen and make some guesses about how things fit together.
 
 Also on that page is a [periodic table](Staging-And-Classifying#towards-a-periodic-table-of-risks) showing a diagrammatic view of how all these risks fit together.  

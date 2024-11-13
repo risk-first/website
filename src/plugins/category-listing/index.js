@@ -21,10 +21,11 @@ module.exports = async function myPlugin(context, options) {
                 
                 const allTags = [...tagNames, ...mitigates, ...attendant, ...practices, ...partOf]
                 
+                const isRisk = allTags.includes("Risks")
+                const isPractice = allTags.includes("Practice")
+                const isMethod  = allTags.includes("Method")
+                
                 if (!allTags.includes(title)) {
-					const isRisk = allTags.includes("Risks")
-					const isPractice = allTags.includes("Practice")
-					const isMethod  = allTags.includes("Method")
 					if (isRisk || isPractice || isMethod) {
 						console.warn(`${doc.title} is not self-tagged risk =${isRisk} practice=${isPractice} tags=${JSON.stringify(allTags)}`)
 					}
@@ -41,6 +42,9 @@ module.exports = async function myPlugin(context, options) {
                         description: doc.description,
                         order: doc.sidebarPosition ?? 0,
                         tags: doc.tags,
+                        isRisk,
+                        isPractice,
+                        isMethod,
                         frontMatter: doc.frontMatter,
                     }
 
