@@ -43,3 +43,19 @@ In the above diagram, we can see Feature Fit Risk being addressed by [Analysis](
 ### 4. Evolving Requirements
 
 **Threat:** Not reassessing the design when new requirements emerge can lead to delivering features that no longer align with the client’s current needs.
+
+### 5. Accessibility Concerns
+
+**Threat**: It's easy to ignore edge cases around _types of user_, failing to consider the full breadth of platforms the software will need to run on, ease-of-use, visual accessibility, auditory accessibility and cognitive accessibility. 
+
+### 6.  Over-Complication
+
+**Threat**: In an effort to provide as much as many features as possible, software can become over-complicated and hard to use.  Trying to mitigate [Feature Fit Risk](/tags/Feature-Fit-Risk) can lead to [Complexity Risk](/tags/Complexity-RisK).
+
+:::tip Anecdote Corner
+
+The excessive menu-diving in [Feature Phones](https://en.wikipedia.org/wiki/Feature_phone) of the late 1990s are an example of trying to account for too much [Feature Risk](/tags/Feature-Fit-Risk):  although it _seemed_ like the market wanted more and more features added to their phones, [Apple's iPhone](https://en.wikipedia.org/wiki/IPhone) was able to steal huge market share by presenting a much more enjoyable, coherent user experience, despite being more expensive and initially having _far fewer_ features.   
+
+Feature Phones had been drowning in increasing numbers of box-ticking features while ignoring the feature that users really wanted:  a clear, responsive user interface and ease-of-use.
+
+:::

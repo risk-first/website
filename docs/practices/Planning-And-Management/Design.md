@@ -13,6 +13,7 @@ practice:
    - "Software Architecture"
    - "Design Patterns"
    - "Architecture"
+   - "Research and Design"
   mitigates:
    - tag: Conceptual Integrity Risk
      reason: "Provides a clear structure and organization, making the system easier to understand and use."
@@ -20,6 +21,8 @@ practice:
      reason: "Guides the development process, ensuring that the system meets requirements and design specifications."
    - tag: Operational Risk
      reason: "Ensures that the system architecture supports operational requirements and scalability."
+   - tag: Market Risk
+     reason:  (Research and) design allows you to leapfrog competitors and provide new sources of value.   
   attendant:
    - tag: Boundary Risk
      reason: "Design decisions can create boundaries that limit flexibility and adaptability."
@@ -27,6 +30,8 @@ practice:
      reason: "Creates dependencies on software components and design patterns."
    - tag: Feature Fit Risk
      reason: "Too much design up-front can create problems meeting feature requirements."
+   - tag: Funding Risk
+     reason: "Design can be an expensive bet that doesn't lead to improved software." 
   related:
    - ../Planning-and-Management/Requirements-Capture
    - ../Development-and-Coding/Coding

@@ -21,6 +21,8 @@ practice:
      reason: "Facilitates clear communication of the product's features and benefits to stakeholders."
    - tag: Learning Curve Risk
      reason: "Prototypes are a way of learning about a particular solution to a problem."
+   - tag: Implementation Risk
+     reason: "Demonstrations often highlight issues in implementations"   
   attendant:
    - tag: Schedule Risk
      reason: "Demos can introduce delays if not planned and executed properly."

@@ -16,7 +16,7 @@ practice:
    - "Re-Use"
   mitigates:
    - tag: Feature Fit Risk
-     reason: "Ensures that the features conform to predefined standards, reducing variability."
+     reason: "Ensures that the features conform to predefined standards, reducing variability and potentially widening accessibility."
    - tag: Operational Risk
      reason: "Reduces operational errors by providing clear guidelines and protocols."
    - tag: Communication Risk
@@ -24,8 +24,8 @@ practice:
   attendant:
    - tag: Inflexibility Risk
      reason: "May limit creativity and flexibility by enforcing strict adherence to standards."
-   - tag: Implementation Risk
-     reason: "Can introduce complexity and delays during the implementation phase."
+   - tag: Schedule Risk
+     reason: "Adhering to standards can introduce scope creep during the implementation phase."
    - tag: Compliance Risk
      reason: "Ensuring continuous compliance with evolving standards can be challenging."
   related:

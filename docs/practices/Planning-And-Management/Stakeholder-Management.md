@@ -18,7 +18,7 @@ practice:
    - tag: Coordination Risk
      reason: "Allows stakeholders to coordinate on their work and demands."
    - tag: Communication Risk
-     reason: "Facilitates clear and consistent communication between stakeholders."
+     reason: "Facilitates clear and consistent communication between stakeholders."    
   attendant:
    - tag: Coordination Risk
      reason: "Requires effective coordination among all stakeholders, which can be challenging."

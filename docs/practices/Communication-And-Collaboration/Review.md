@@ -29,8 +29,6 @@ practice:
      reason: "Reviews can introduce delays in the project timeline."
    - tag: Coordination Risk
      reason: "Requires effective coordination among team members."
-   - tag: Implementation Risk
-     reason: "Can lead to conflicts over quality and implementation details."
   related:
    - ../Deployment-And-Operations/Monitoring
    - Retrospective

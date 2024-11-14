@@ -24,6 +24,8 @@ practice:
   attendant:
    - tag: Scarcity Risk
      reason: "Prioritization can create dependencies on specific tasks or features."
+   - tag: Market Risk
+     reason: "Prioritising a single client or narrowing scope reduces diversification, increasing exposure to changes in the market." 
   related:
    - ../Planning-and-Management/Requirements-Capture
    - ../Communication-and-Collaboration/Retrospectives

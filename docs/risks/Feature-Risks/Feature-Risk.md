@@ -1,6 +1,6 @@
 ---
 title: Feature Risk
-description: Risk you face when providing features for your clients.
+description: Risks you face when providing features for your clients.
 
 
 featured: 
@@ -31,4 +31,5 @@ Not considering [Feature Risk](/tags/Feature-Risk) means that you might be build
 ## Types Of Feature Risk
 
 <TagList tag="Feature Risk" filter="risks/Feature-Risks" /> 
+
 
