@@ -51,8 +51,6 @@ The wider client base reduces the life-threatening impact of one of the original
 
 **Threat**: Taking on too much debt (i.e. borrowing too much) increases market risk as creditors expect to be paid irrespective of market conditions.  
 
-### 5.  Ignoring 
-
 :::tip Anecdote Corner
 
 While not a traditional software company, [WeWork](https://en.wikipedia.org/wiki/WeWork) (a provider of co-working spaces) nevertheless branded itself as one and was able to borrow heavily against its "tech" image.  They relied on high levels of debt for rapid expansion which raised eyebrows at the time it filed for IPO in 2019. 

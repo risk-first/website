@@ -1,6 +1,6 @@
 ---
 title: Communication Risk
-description: Why is it so hard to be understood?
+description: Risk associated with getting messages heard and understood and the transfer of information.
 
 featured: 
   class: c
@@ -22,23 +22,26 @@ part_of: Operational Risk
 
 <RiskIntro fm={frontMatter} />
 
+[Communication Risk](/tags/Communication-Risk) is risk associated with getting messages heard and understood and the transfer of information.   
 
-# Communication Risk
+If we all had identical knowledge, there would be no need to do any communicating at all, and therefore no [Communication Risk](/tags/Communication-Risk).   But people are not all-knowing oracles:  we rely on our _senses_ to improve our [Internal Models](/tags/Internal-Model) of the world. There is [Communication Risk](/tags/Communication-Risk) here - we might overlook something vital (like an on-coming truck) or mistake something someone says (like "Don't cut the green wire").  For people, Communication Risk includes:
 
-If we all had identical knowledge, there would be no need to do any communicating at all, and therefore no [Communication Risk](/tags/Communication-Risk).  
+ - Not having the information you need.
+ - Being presented with the wrong or erroneous information.
+ - Being "out of the loop" of important updates.
+ - Not being able to speak the language, or misunderstanding what's being said.
 
-But people are not all-knowing oracles.  We rely on our _senses_ to improve our [Internal Models](/tags/Internal-Model) of the world. There is [Communication Risk](/tags/Communication-Risk) here - we might overlook something vital (like an on-coming truck) or mistake something someone says (like "Don't cut the green wire").  
-
-So, we are going to go on a journey discovering Communication Risk, covering:
-
-- A look at the four different _stages_ of communication and examples of each in the world of computing.
-- Breaking down [Communication Risk](/tags/Communication-Risk) as it affects each stage, discussing the types of risks present for each one.
-- The many problems faced in product marketing.
-- The concept of _abstraction_ and it's associated [Invisibility Risk](/tags/Invisibility-Risk). 
+For our software, it includes:
+ 
+ - Issues with connectivity, Accuracy and relevance of information.
+ - The problem of contradictory versions of information.
+ - Protocol incompatibilities.
+ 
+Communication Risk applies equally well as a concept in human scenarios between _people_, _teams_, _organisations_ as well as software scenarios such as _libraries_, _services_, and _data formats_.
 
 ## A Model Of Communication
 
-![Shannon's Communication Model](/img/generated/risks/communication/communication_1.svg)
+![Communication Risk, broken into four areas (Shannon's Model)](/img/generated/risks/communication/communication_2.svg)
 
 In 1948, Claude Shannon proposed this definition of communication:
 
@@ -61,23 +64,47 @@ But it's not just transmission.  [Communication Risk](/tags/Communication-Risk) 
 |Interpretation        | Assuming **Bob** _has_ heard, will he correctly **interpret**  which type of chips (or chops) **Alice** was talking about? |
 |Reconciliation        | Does **Bob** believe the message?  Will he **reconcile** the information into his [Internal Model](/tags/Internal-Model) and act on it?  Perhaps not, if **Bob** forgets, or thinks that there are chips at home already.|
 
-## Approach To Communication Risk
+## Worked Example
 
-To get inside [Communication Risk](/tags/Communication-Risk), we need to understand **Communication** itself, whether between _machines_, _people_ or _products_:  although these seem very different, the process involved (and the risks) are the same for each.  
+![A Demo Helps Overcome Communication Risk](/img/generated/risks/posters/communication-risk.svg) 
 
-![Communication Risk, broken into four areas](/img/generated/risks/communication/communication_2.svg)
+You're about to roll out new software in an organisation and you're worried that staff within the organisation won't bother to read the documentation on how to use it.  You organise a [Demo](/tags/Demo).  However, there is the risk that by doing this you divert staff from hitting the very visible release milestones that have been mandated by senior staff. 
 
-There is a symmetry about the steps going on in Shannon's model and we're going to exploit this in order to break down [Communication Risk](/tags/Communication-Risk) into four basic _stages_, as shown in the diagram above: 
+## Example Threats
 
- - **[Channels](https://en.wikipedia.org/wiki/Communication_channel)**: the medium via which the communication is happening.
- - **[Protocols](https://en.wikipedia.org/wiki/Communication_protocol)**:  the systems of rules that allow two or more entities of a communications system to transmit information.
- - **[Messages](https://en.wikipedia.org/wiki/Message)**: the information we want to convey.
- - **[Internal Models](/tags/Internal-Model)**: the sources and destinations for the messages.  Updating internal models (whether in our heads or machines) is the reason why we're communicating.
- 
-As we look at these four stages we'll consider the risks of each.
+Each of the above stages represents a potential threat vector, increasing [Communication Risk](/tags/Communication-Risk).  (For risks and threats pertaining to the [Internal Model](/tags/Internal-Model) itself, see [Internal Model Risk](/tags/Internal-Model-Risk).)
 
-## Types Of Communication Risk
+### 1. Channel Threats
 
-<TagList tag="Communication Risk" filter="risks/Communication-Risks" /> 
+**Threat**: Channel is noisy, containing much that isn't the signal you're after.  
 
+**Threat**: Channel is low-bandwidth and important messages that should be sent and received aren't.
+
+_See [On Channels](On-Channels)_
+
+### 2. Protocol Threats
+
+**Threat**: The protocol isn't what is expected (e.g. you're understand English but they're speaking French, or you're expecting HTML but get JSON)
+
+**Threat**:  The protocol changes to a new version (e.g. people start using words you don't understand, or the network changes to use IPv6) 
+
+_See [On Protocols](On-Protocols)_
+
+### 3. Message Threats
+
+**Threat**: Someone is sending a message with malicious purpose
+
+**Threat**: The message contains only part of the information you need, leading to the wrong decision.
+
+_See [On Messages](On-Messages)_
+
+:::tip Anecdote Corner
+
+The [1998 Mars Climate Orbiter] software disaster was caused by two teams (Lockheed Martin and NASA) collaborating on building different parts of the orbital insertion control program.  The two components needed to communicate with each other but there was a discrepancy:  one piece of software was expecting _pound-force seconds_ of thrust, while the other was producing _newton seconds_, a great example of Communication Risk occurring at the protocol level.  
+
+Additionally, two navigators had spotted discrepancies in the orbital insertion but failed to correctly fill out forms relaying their concerns to the project managers in charge - Communication Risk occurring at the channel level.   
+
+The orbiter and lander were both lost at the cost of hundreds of millions of dollars.
+
+:::
 

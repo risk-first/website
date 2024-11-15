@@ -1,19 +1,18 @@
 ---
-title: Channel Risk
-description: Risks due to the inadequacy of the physical channel used to communicate our messages. e.g. noise, loss, interception, corruption.
+title: On Channels
+description: How communication channels contribute to Communication Risk
 
-slug: /risks/Channel-Risk
+slug: /risks/On-Channels
 featured: 
   class: c
   element: '<risk class="channel" />'
 sidebar_position: 2
 tags:
- - Risks
- - Channel Risk
-part_of: Communication Risk
+ - Communication Risk
 ---
 
-<RiskIntro fm={frontMatter} />
+ - **[Channels](https://en.wikipedia.org/wiki/Communication_channel)**: the medium via which the communication is happening.
+
 
 There are lots of different types of media for communicating (e.g. TV, radio, talking, posters, books, phones, the Internet, etc. ) and they all have different characteristics.  When we communicate via a given medium, it's called a *channel*.  
 
@@ -21,13 +20,9 @@ The channel _characteristics_ depend on the medium then.  Some obvious ones are 
 
 Channel characteristics are important:  in a high-bandwidth, low-latency situation, **Alice** and **Bob** can _check_ with each other that the meaning was transferred correctly.  They can discuss what to buy, they can agree that **Alice** wasn't lying or playing a joke.  
 
-The channel characteristics also imply suitability for certain _kinds_ of messages.  A documentary might be a great way of explaining some economic concept, whereas an opera might not be.  <!-- tweet-end -->
-
-### Channel Risk
+The channel characteristics also imply suitability for certain _kinds_ of messages.  A documentary might be a great way of explaining some economic concept, whereas an opera might not be. 
 
 Shannon discusses that no channel is perfect:  there is always the **risk of noise** corrupting the signal.  A key outcome from Shannon's paper is that there is a tradeoff:  within the capacity of the channel (the **bandwidth**), you can either send lots of information with _higher_ risk that it is wrong, or less information with _lower_ risk of errors.
-
-![Communication Channel Risk](/img/generated/risks/communication/communication_channel_risks.svg) 
 
 But channel risk goes wider than just this mathematical example:  messages might be delayed or delivered in the wrong order, or not be acknowledged when they do arrive.  Sometimes, a channel is just an inappropriate way of communicating.  When you work in a different time-zone to someone else on your team, there is _automatic_ [Channel Risk](/tags/Channel-Risk), because instantaneous communication is only available for a few hours a day. 
 

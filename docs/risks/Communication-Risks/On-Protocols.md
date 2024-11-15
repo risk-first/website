@@ -1,18 +1,18 @@
 ---
-title: Protocol Risk
+title: On Protocols
 description: Risks due to the failure of encoding or decoding messages between two parties in communication.  
 
-slug: /risks/Protocol-Risk
+slug: /risks/On-Protocols
 featured: 
   class: c
   element: '<risk class="protocol" />'
 sidebar_position: 3
 tags:
- - Risks
- - Protocol Risk
-part_of: Communication Risk
+ - Communication Risk
 ---
-<RiskIntro fm={frontMatter} />
+
+
+ - **[Protocols](https://en.wikipedia.org/wiki/Communication_protocol)**:  the systems of rules that allow two or more entities of a communications system to transmit information.
 
 > "A communication protocol is a system of rules that allow two or more entities of a communications system to transmit information. " - [Communication Protocol, Wikipedia](https://en.wikipedia.org/wiki/Communication_protocol)
 
