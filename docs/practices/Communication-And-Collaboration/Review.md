@@ -19,7 +19,7 @@ practice:
    - tag: Conceptual Integrity Risk
      reason: "Maintains alignment with design principles and goals."
    - tag: Complexity Risk
-     reason: "Identifies and resolves potential complexities during the review process."
+     reason: "Identifies unnecessary complexity and communicates necessary complexity to the rest of the team."
    - tag: Agency Risk
      reason: "Reviewing work or activity can ensure good behaviour."
    - tag: Map And Territory Risk

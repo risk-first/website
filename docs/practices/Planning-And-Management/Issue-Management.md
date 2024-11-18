@@ -28,7 +28,7 @@ practice:
      reason: "Addresses and resolves security incidents to protect the organization."
   attendant:
    - tag: Complexity Risk
-     reason: "Managing a large number of logged issues can add complexity."
+     reason: "Managing an excessive number of logged issues can add complexity."
    - tag: Process Risk
      reason: "Creates dependency on issue tracking tools and their accuracy."
    - tag: Schedule Risk

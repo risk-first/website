@@ -13,6 +13,7 @@ practice:
    - "SCM"
    - "Software Configuration Management"
    - "Feature Toggle"
+   - "Feature Flag"
   mitigates:
    - tag: Implementation Risk
      reason: "Establishes and maintains consistency in the software product's performance and attributes."

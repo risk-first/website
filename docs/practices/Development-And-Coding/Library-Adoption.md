@@ -1,24 +1,25 @@
 ---
-title: Runtime Adoption
-description: Implementing and adhering to specific standards and libraries.
+title: Library Adoption
+description: Implementing code to use libraries or adhere to specific standards.
 tags: 
-  - Runtime Adoption
+  - Library Adoption
   - Practice
 featured: 
   class: c
   element: '<action>Use Library</action>'
 practice:
   aka: 
-   - "Standardization"
+   - "Runtime Adoption"
    - "Library Integration"
    - "Standards Adoption"
+   - "Runtime Dependency"
   mitigates:
    - tag: Implementation Risk
      reason: "Ensures consistency and reliability by adhering to proven standards and libraries."
    - tag: Implementation Risk
      reason: "Reduces the risk of relying on proprietary or less widely adopted solutions."
    - tag: Complexity Risk
-     reason: "Reduces the amount of code you are responsible for."
+     reason: "Can reduce the amount of code you are responsible for, hence the amount of 'owned' complexity."
   attendant:
    - tag: Software Dependency Risk
      reason: "Creates dependencies on the adopted standards and libraries."
@@ -49,4 +50,4 @@ See:
 
 ## See Also
 
-<TagList tag="Runtime Adoption" />
+<TagList tag="Library Adoption" />

@@ -1,15 +1,4 @@
----
-title: On Channels
-description: How communication channels contribute to Communication Risk
-
-slug: /risks/On-Channels
-featured: 
-  class: c
-  element: '<risk class="channel" />'
-sidebar_position: 2
-tags:
- - Communication Risk
----
+ 
 
  - **[Channels](https://en.wikipedia.org/wiki/Communication_channel)**: the medium via which the communication is happening.
 

@@ -17,7 +17,7 @@ practice:
    - tag: Regression Risk
      reason: "Detects regressions early in the development cycle."
    - tag: Complexity Risk
-     reason: "Simplifies debugging by isolating issues to specific units."
+     reason: "Aids in refactoring by ensuring that functionality survives the change."
   attendant:
    - tag: Schedule Risk
      reason: "Writing and maintaining unit tests can be time-consuming."

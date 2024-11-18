@@ -21,7 +21,7 @@ practice:
      reason: "Too much focus on automation can distract from more important tasks"
   attendant:
    - tag: Complexity Risk
-     reason: "Introducing code adds to the complexity of a project"
+     reason: "Introducing automation adds to the complexity of a project"
    - tag: Feature Fit Risk
      reason: "The automated process might not capture the variability of requirements of the original approach"
    - tag: Invisibility Risk

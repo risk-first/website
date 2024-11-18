@@ -2,15 +2,11 @@
 title: On Messages
 description: Messages can be a source of Communication Risk
 
-slug: /risks/Message-Risk
-featured: 
-  class: c
-  element: '<risk class="message" />'
 sidebar_position: 4
+
 tags:
  - Risks
- - Message Risk
-part_of: Communication Risk
+ - Communication Risk
 ---
 
  - **[Messages](https://en.wikipedia.org/wiki/Message)**: the information we want to convey.

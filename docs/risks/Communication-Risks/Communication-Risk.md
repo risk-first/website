@@ -100,9 +100,9 @@ _See [On Messages](On-Messages)_
 
 :::tip Anecdote Corner
 
-The [1998 Mars Climate Orbiter] software disaster was caused by two teams (Lockheed Martin and NASA) collaborating on building different parts of the orbital insertion control program.  The two components needed to communicate with each other but there was a discrepancy:  one piece of software was expecting _pound-force seconds_ of thrust, while the other was producing _newton seconds_, a great example of Communication Risk occurring at the protocol level.  
+The [1998 Mars Climate Orbiter](https://en.wikipedia.org/wiki/Mars_Climate_Orbiter) software disaster was caused by two teams (Lockheed Martin and NASA) collaborating on building different parts of the orbital insertion control program.  The two components needed to communicate with each other but there was a discrepancy:  one piece of software was expecting _pound-force seconds_ of thrust, while the other was producing _newton seconds_ - one imperial, one metric measurement. This is a great example of Communication Risk occurring at the protocol level.  
 
-Additionally, two navigators had spotted discrepancies in the orbital insertion but failed to correctly fill out forms relaying their concerns to the project managers in charge - Communication Risk occurring at the channel level.   
+During flight, two navigators had spotted discrepancies in the orbital insertion but failed to correctly fill out forms relaying their concerns to the project managers in charge - Communication Risk occurring at the channel level.   
 
 The orbiter and lander were both lost at the cost of hundreds of millions of dollars.
 
