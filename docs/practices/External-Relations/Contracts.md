@@ -26,6 +26,8 @@ practice:
      reason: "Requires careful coordination to ensure all terms are met."
    - tag: Process Risk
      reason: "The process of drafting, negotiating, and managing contracts can be complex and time-consuming."
+   - tag: Deadline Risk
+     reason: "Contracts often stipulate certain conditions must be met at certain times."
   related:
    - ../Planning-and-Management/Change-Management
    - ../Development-and-Coding/Coding

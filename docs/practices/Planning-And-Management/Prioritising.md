@@ -1,6 +1,6 @@
 ---
 title: Prioritising
-description: Defining the Minimum Viable Product and planning development priorities.
+description: Defining the Minimum Viable Product, planning development priorities or schedules.
 tags: 
   - Practice
   - Prioritising
@@ -14,6 +14,7 @@ practice:
    - "Task Prioritization"
    - "Minimum Viable Product"
    - "Backlog Refinement"
+   - "Scheduling"
   mitigates:
    - tag: Schedule Risk
      reason: "Helps in focusing on high-priority tasks and meeting deadlines."
@@ -21,11 +22,15 @@ practice:
      reason: "Ensures that the most valuable features and opportunities are addressed first."
    - tag: Funding Risk
      reason: "Allocates resources efficiently to high-impact areas."
+   - tag: Deadline Risk
+     reason: "In order to hit a deadline, you can de-prioritise less important work."
   attendant:
    - tag: Scarcity Risk
      reason: "Prioritization can create dependencies on specific tasks or features."
    - tag: Market Risk
      reason: "Prioritising a single client or narrowing scope reduces diversification, increasing exposure to changes in the market." 
+   - tag: Deadline Risk
+     reason: "Establishing an order of events often places deadlines on the earlier events completing or the later events starting."
   related:
    - ../Planning-and-Management/Requirements-Capture
    - ../Communication-and-Collaboration/Retrospectives
