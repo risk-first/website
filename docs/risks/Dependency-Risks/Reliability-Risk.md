@@ -6,7 +6,7 @@ slug: /risks/Reliability-Risk
 featured: 
   class: c
   element: '<risk class="dependency" />'
-sidebar_position: 6
+sidebar_position: 1
 tags:
  - Dependency Risk
  - Fit Risk

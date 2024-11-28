@@ -1,5 +1,5 @@
 ---
-title: Dependency Risk
+title: Dependency Risks
 description: Risk faced by depending on something else,  e.g. an event, process, person, piece of software or an organisation. 
 
 featured: 

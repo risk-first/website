@@ -19,6 +19,8 @@ practice:
      reason: "Identifies and addresses potential issues before they impact system reliability."
    - tag: Security Risk
      reason: "Monitors for security breaches and anomalies."
+   - tag: Process Risk
+     reason: "Monitoring a process can ensure that when it misbehaves the issues are quickly caught."  
   attendant:
    - tag: Complexity Risk
      reason: "Implementing comprehensive monitoring solutions can add complexity."

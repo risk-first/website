@@ -6,7 +6,7 @@ slug: /risks/Software-Dependency-Risk
 featured: 
   class: c
   element: '<risk class="software-dependency" />'
-sidebar_position: 9
+sidebar_position: 4
 tweet: yes
 tags: 
  - Risks

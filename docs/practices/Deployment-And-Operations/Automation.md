@@ -27,7 +27,7 @@ practice:
    - tag: Invisibility Risk
      reason: "The quality and performance characteristics may be obscured by automation."
    - tag: Process Risk
-     reason: "Automation introduces a process"
+     reason: "Automation introduces a process, which therefore means a new source of Process Risk."
    - tag: Agency Risk
      reason: Automated processes have their own agency and might not work as desired.
    - tag: Security Risk

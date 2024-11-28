@@ -18,8 +18,6 @@ practice:
      reason: "Ensures optimal utilization of team members' skills and capabilities."
    - tag: Schedule Risk
      reason: "Distributes workload effectively, helping to meet deadlines."
-   - tag: Process Risk
-     reason: "Delegation can be used to stop processes getting in the way of progress."
   attendant:
    - tag: Agency Risk
      reason: "Can lead to a loss of control over task execution and quality."

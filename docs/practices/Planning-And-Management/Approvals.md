@@ -26,7 +26,7 @@ practice:
    - tag: Coordination Risk
      reason: "Requires coordination among stakeholders to provide timely sign-off."
    - tag: Process Risk
-     reason: "Approval processes may lack required flexibility"
+     reason: "Adding approvals to a process increases the number of stakeholders involved and can impact process performance."
   related:
    - ../Planning-and-Management/Stakeholder-Management
    - ../Communication-and-Collaboration/Review

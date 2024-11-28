@@ -26,6 +26,8 @@ practice:
      reason: "Delays in the release process can impact overall project timelines."
    - tag: Operational Risk
      reason: "Releasing software means that the software has to be supported in production."
+   - tag: Process Risk
+     reason: "Complex release procedures are a source of process risk."
   related:
    - ../Planning-and-Management/Change-Management
    - ../Tools-and-Standards/Version-Control

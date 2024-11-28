@@ -23,7 +23,7 @@ practice:
    - tag: Schedule Risk
      reason: "Managing changes systematically can introduce delays."
    - tag: Process Risk
-     reason: "Change management can increase dependency on approval processes and stakeholders."
+     reason: "Change control is a process, and therefore is a source of process risk. "
   related:
    - ../Development-and-Coding/Coding
    - ../Testing-and-Quality-Assurance/Integration-Testing

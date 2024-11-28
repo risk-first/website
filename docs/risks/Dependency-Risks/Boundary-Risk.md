@@ -6,7 +6,7 @@ slug: /risks/Boundary-Risk
 featured: 
   class: c
   element: '<risk class="boundary" />'
-sidebar_position: 11
+sidebar_position: 6
 tags:
  - Risks
  - Boundary Risk
