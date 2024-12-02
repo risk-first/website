@@ -40,6 +40,8 @@ practice:
 
 Estimation in software development involves predicting the time, effort, and resources needed to complete tasks or projects. Accurate estimation is crucial for planning, budgeting, and managing the development process, helping to set realistic expectations and reduce the risk of overruns.
 
+See the Risk-First section on [Estimating](/estimating/Start) for a thorough breakdown of this topic.
+
 ## See Also
 
 <TagList tag="Estimation" />

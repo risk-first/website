@@ -18,7 +18,7 @@ practice:
    - tag: Funding Risk
      reason: "Can be cost-effective by leveraging economies of scale."
    - tag: Schedule Risk
-     reason: "Can speed up project timelines by adding more workforce."
+     reason: "Can speed up project timelines by increasing the workforce."
   attendant:
    - tag: Agency Risk
      reason: "Creates dependencies on third-party vendors and their reliability."

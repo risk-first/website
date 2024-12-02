@@ -18,7 +18,7 @@ practice:
    - tag: Operational Risk
      reason: "Introduces more consistency in process operations and removes opportunity for human error"
    - tag: Schedule Risk
-     reason: "Too much focus on automation can distract from more important tasks"
+     reason: "Automating laborious tasks clears the schedule for higher-value work."
   attendant:
    - tag: Complexity Risk
      reason: "Introducing automation adds to the complexity of a project"

@@ -17,7 +17,7 @@ practice:
    - "Scheduling"
   mitigates:
    - tag: Schedule Risk
-     reason: "Helps in focusing on high-priority tasks and meeting deadlines."
+     reason: "Helps in focusing on high-priority tasks."
    - tag: Market Risk
      reason: "Ensures that the most valuable features and opportunities are addressed first."
    - tag: Funding Risk
