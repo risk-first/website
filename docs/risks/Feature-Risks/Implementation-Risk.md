@@ -45,6 +45,10 @@ As you can see from the table at the top, many of the practices we adopt in soft
 
 **Threat**:  Implementation risks are more prevalent in certain areas of computing, such as concurrency, memory management, security, algorithms with complex time/space tradeoffs and so on.  See [Complexity Risk](/tags/Complexity-Risk) and [Security Risk](/tags/Security-Risk).
 
+### 6. Regressions
+
+**Threat**: Existing features in your software get broken when you add new ones.   Customers don't have the features they expect.  
+
 :::tip Anecdote Corner
 
 Implementation Risks lead to bugs and disappointed clients, but often the results are more serious.  The original wireless (WiFi) network protocol, [IEEE 802.11](https://en.wikipedia.org/wiki/IEEE_802.11) from 1997 was supposed to offer security via [WEP - Wired Equivalent Privacy](https://en.wikipedia.org/wiki/Wired_Equivalent_Privacy).  However, there were severe design flaws in the algorithm and in the early 2000's it was proven to be completely insecure to the point that you could fairly trivially recover a WEP pass-key just by snooping the encrypted network.  

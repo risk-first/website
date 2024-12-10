@@ -21,6 +21,8 @@ practice:
      reason: "Analysis can help ensure technical solutions fit the problems they're designed for."
    - tag: Contextual Risk
      reason: "Developing an understanding the context into which a solution is put avoids legal and social problems."
+   - tag: Internal Model Risk
+     reason: "Analysis is the process of doign work to build a better Internal Model."
   attendant:
    - tag: Schedule Risk
      reason: "Can be time-consuming, potentially delaying the start of development."

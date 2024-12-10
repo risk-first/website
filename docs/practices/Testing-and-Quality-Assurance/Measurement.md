@@ -26,7 +26,7 @@ practice:
      reason: "Creates dependencies on measurement tools and their accuracy."
    - tag: Complexity Risk
      reason: "Collecting and analyzing data can add to the complexity of the project."
-   - tag: Map And Territory Risk
+   - tag: Internal Model Risk
      reason: "Focusing on the wrong measures can blind you to what's important."
   related:
    - ../Deployment-and-Operations/Monitoring

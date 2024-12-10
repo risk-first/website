@@ -32,8 +32,8 @@ practice:
      reason: Automated processes have their own agency and might not work as desired.
    - tag: Security Risk
      reason: Automation can introduce security issues if automated processes are given elevated privileges.  
-   - tag: Map And Territory Risk
-     reason: "Automation of reporting and status can hide the truth of a system's health."
+   - tag: Internal Model Risk
+     reason: "Automation of reporting and statuses can lead to false confidence about a system's health."
   related:
    - ../Development-And-Coding/Coding
    - ../Tools-And-Standards/Measurement

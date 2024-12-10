@@ -22,7 +22,7 @@ practice:
      reason: "Identifies unnecessary complexity and communicates necessary complexity to the rest of the team."
    - tag: Agency Risk
      reason: "Reviewing work or activity can ensure good behaviour."
-   - tag: Map And Territory Risk
+   - tag: Internal Model Risk
      reason: "Reviews and audits can uncover unseen problems in a system"
   attendant:
    - tag: Schedule Risk
