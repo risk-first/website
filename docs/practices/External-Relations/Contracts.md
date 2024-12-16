@@ -23,7 +23,7 @@ practice:
    - tag: Boundary Risk
      reason: "Contracts can create rigid boundaries that limit flexibility."
    - tag: Coordination Risk
-     reason: "Requires careful coordination to ensure all terms are met."
+     reason: "Contracting work can often involve setting careful terms to minimise coordination risks."
    - tag: Process Risk
      reason: "The process of drafting, negotiating, and managing contracts is a process with significant risk."
    - tag: Deadline Risk

@@ -12,11 +12,9 @@ practice:
    - "Post-Mortem"
    - "After-Action Review"
    - "Lessons Learned"
-   - "Oversight"
-   - "Governance"
   mitigates:
    - tag: Coordination Risk
-     reason: "Identifies and addresses coordination issues through regular reviews."
+     reason: "Identifies and addresses historic coordination issues through regular reviews."
    - tag: Process Risk
      reason: "Continuously improves processes and practices."
    - tag: Feature-Drift Risk

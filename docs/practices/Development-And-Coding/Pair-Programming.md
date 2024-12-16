@@ -23,7 +23,7 @@ practice:
      reason: "More eyeballs means fewer bugs and a better implementation"     
   attendant:
    - tag: Coordination Risk
-     reason: "Requires effective coordination and can be challenging to implement."
+     reason: "Requires coordination around time, place, activity and skills."
    - tag: Schedule Risk
      reason: "Can slow down individual productivity, impacting overall schedule."
    - tag: Agency Risk

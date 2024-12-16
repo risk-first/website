@@ -18,7 +18,7 @@ practice:
    - tag: Implementation Risk
      reason: "Avoid bugs from creeping into the system."
    - tag: Coordination Risk
-     reason: "Controls the impact of changes on other project activities."
+     reason: "Specifically addresses coordinating change in a structured way."
   attendant:
    - tag: Schedule Risk
      reason: "Managing changes systematically can introduce delays."

@@ -23,7 +23,7 @@ practice:
    - tag: Funding Risk
      reason: "Marketing campaigns can be expensive."
    - tag: Coordination Risk
-     reason: "Requires dedicated resources for planning and execution."
+     reason: "Marketing efforts often need to be coordinated with other parts of the business."
    - tag: Deadline Risk
      reason: "Timing of marketing campaigns needs to align with product readiness."
   related:

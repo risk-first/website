@@ -16,7 +16,7 @@ practice:
    - tag: Feature Fit Risk
      reason: "Ensures that features align with client needs and expectations."
    - tag: Coordination Risk
-     reason: "Can Provide a clear understanding of requirements to all stakeholders."
+     reason: "Reduces coordination risks around deciding what should be built."
    - tag: Conceptual Integrity Risk
      reason: "Helps in explaining exactly what should be built."
   attendant:

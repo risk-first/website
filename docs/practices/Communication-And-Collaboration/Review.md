@@ -28,7 +28,7 @@ practice:
    - tag: Schedule Risk
      reason: "Reviews can introduce delays in the project timeline."
    - tag: Coordination Risk
-     reason: "Requires effective coordination among team members."
+     reason: "Synchronous reviews require effective coordination among team members."
   related:
    - ../Deployment-And-Operations/Monitoring
    - Retrospective

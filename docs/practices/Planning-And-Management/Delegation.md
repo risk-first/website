@@ -14,11 +14,11 @@ practice:
    - "Authority Delegation"
    - "Responsibility Allocation"
   mitigates:
-   - tag: Coordination Risk
-     reason: "Ensures optimal utilization of team members' skills and capabilities."
    - tag: Schedule Risk
      reason: "Distributes workload effectively, helping to meet deadlines."
   attendant:
+   - tag: Coordination Risk
+     reason: "Increases the number of entities involved in project coordination."
    - tag: Agency Risk
      reason: "Can lead to a loss of control over task execution and quality."
    - tag: Communication Risk

@@ -13,6 +13,8 @@ practice:
    - "Authorization"
    - "Validation"
    - "Sign Off"
+   - "Oversight"
+   - "Governance"
   mitigates:
    - tag: Implementation Risk
      reason: "Ensures that work meets the required standards and specifications before progressing."
