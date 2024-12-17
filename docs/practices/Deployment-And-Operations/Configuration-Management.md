@@ -22,7 +22,7 @@ practice:
    - tag: Complexity Risk
      reason: "Reduces complexity by managing system changes in a controlled and documented manner."
   attendant:
-   - tag: Dependency Risk
+   - tag: Reliability Risk
      reason: "Dependencies on the CM tools and processes can become critical points of failure."
    - tag: Security Risk
      reason: "Incorrect configuration management can lead to security vulnerabilities."

@@ -96,6 +96,8 @@ So, as the above diagram shows, the problem with Student Syndrome is that _allow
 
 > _Adding manpower to a late software project makes it later._ - [The Mythical Man-Month](https://en.wikipedia.org/wiki/The_Mythical_Man-Month)
 
+**See:** [Coordination Risk](/tags/Coordination-Risk)
+
 :::tip Anecdote Corner
 
 I've worked on lots of very large, expensive IT projects.  A general rule is the bigger the project, the less under-control the Schedule Risk will be.  I believe this is because Schedule Risk thrives on complexity.  However in this case I want to talk about a rare case where things went _right_.  

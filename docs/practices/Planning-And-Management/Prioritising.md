@@ -25,7 +25,7 @@ practice:
    - tag: Deadline Risk
      reason: "In order to hit a deadline, you can de-prioritise less important work."
   attendant:
-   - tag: Scarcity Risk
+   - tag: Reliability Risk
      reason: "Prioritization can create dependencies on specific tasks or features."
    - tag: Market Risk
      reason: "Prioritising a single client or narrowing scope reduces diversification, increasing exposure to changes in the market." 

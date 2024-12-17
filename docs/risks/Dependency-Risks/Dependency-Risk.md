@@ -13,7 +13,7 @@ tags:
  - Invisibility Risk
  - Risks
 tweet: yes
-slug: /risks/Dependency-Risk
+slug: /risks/Dependency-Risks
 part_of: Operational Risk
 ---
 

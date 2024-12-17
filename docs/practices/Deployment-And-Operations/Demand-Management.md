@@ -15,7 +15,7 @@ practice:
    - "Capacity Planning"
    - "Resource Scaling"
   mitigates:
-   - tag: Scarcity Risk
+   - tag: Reliability Risk
      reason: "Helps in efficiently allocating resources to meet the demand without overburdening the team."
    - tag: Deadline Risk
      reason: "Ensures that the demand is managed to meet delivery schedules."

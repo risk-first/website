@@ -93,9 +93,19 @@ Refers to a situation where, in an environment where multiple parallel processes
 
 ### 7. Scaling
 
-[Amdahl's law](https://en.wikipedia.org/wiki/Amdahl's_law) and [Gunther's Universal Scalability Law](https://en.wikipedia.org/wiki/Neil_J._Gunther#Universal_Scalability_Law) both draw attention to the fact that as you increase the number of agents that need to coordinate, the more time needs to be spent on coordination.  These laws were originally drawn from observations on computer hardware, but they apply generally to problems of coordination.  While Amdahl's Law shows the diminishing returns of adding extra agents, Gunther's Law goes further to model how performance can get worse with extra agents involved - something we see when our computers thrash or when roads get really busy.
+[Amdahl's law](https://en.wikipedia.org/wiki/Amdahl's_law) and [Gunther's Universal Scalability Law](https://en.wikipedia.org/wiki/Neil_J._Gunther#Universal_Scalability_Law) both draw attention to the fact that as you increase the number of agents that need to coordinate, the more time needs to be spent on coordination.  These laws were originally drawn from observations on computer hardware, but they apply generally to problems of coordination.  While Amdahl's Law shows the diminishing returns of adding extra agents, Gunther's Law goes further to model how performance can get worse with extra agents involved - something we see when our computers thrash or when roads get really busy.  This also explains [Brooks Law](https://en.wikipedia.org/wiki/The_Mythical_Man-Month) - "_Adding manpower to a late software project makes it later._"
 
 **Threat**: The more agents involved in coordinating, the harder and more time consuming it becomes.  
 
+:::tip Anecdote Corner
 
+Coordination Risk generally focuses on the problems inherent in _trying to get more coordination_.  But at the other end of the spectrum, crypto-currency systems like Bitcoin are predicated on the idea that the participants of the system are _not coordinating_ but are competing - and this keeps the currency running.  
+
+However, if participants coordinated, they could perform what is known as a [51% Attack](https://www.investopedia.com/terms/1/51-attack.asp) - effectively taking control of the currency via a majority share of the activity. This happened in 2019 when two mining conglomerates banded together to reorganise the blockchain and change the transaction history of Bitcoin Cash, a fork of Bitcoin.  Although this could have been done for nefarious purposes, they actually coordinated in order to fix some erroneous transaction state for the good of the network.  
+
+This was in their interests as fixing these issues increased the value and trust of Bitcoin Cash and therefore the value of the holdings of the mining conglomerates too. But it could have easily gone the other way, with a nefarious party stealing from the network.  That is didn't happen is down to the economic incentives of the miners involved:  they don't want to damage the reputation and therefore the value of the currency that they are mining.  
+
+The fact that mining consortia needed to band together to fix issues in the network demonstrates a central issue with a distributed system like Bitcoin:  as the protocol is designed on the basis of competition, change is very hard to coordinate and effect.  
+
+:::
  

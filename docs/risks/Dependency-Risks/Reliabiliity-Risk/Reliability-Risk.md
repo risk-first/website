@@ -5,7 +5,7 @@ description: Risks of not getting benefit from a dependency due to it's reliabil
 slug: /risks/Reliability-Risk
 featured: 
   class: c
-  element: '<risk class="dependency" />'
+  element: '<risk class="reliability" />'
 sidebar_position: 1
 tags:
  - Dependency Risk
