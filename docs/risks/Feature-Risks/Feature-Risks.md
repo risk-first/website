@@ -1,5 +1,5 @@
 ---
-title: Feature Risk
+title: Feature Risks
 description: Risks you face when providing features for your clients.
 
 
@@ -7,11 +7,9 @@ featured:
   class: c
   element: '<risk class="feature" />'
 tweet: yes
-slug: /risks/Feature-Risk
+slug: /risks/Feature-Risks
 tags: 
- - Risks
  - Feature Risk
-part_of: Operational Risk
 ---
 [Feature Risks](/tags/Feature-Risk) are types of risks to do with functionality that you need to have in the software you're building.  
 

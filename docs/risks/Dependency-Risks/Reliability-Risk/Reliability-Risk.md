@@ -8,10 +8,7 @@ featured:
   element: '<risk class="reliability" />'
 sidebar_position: 1
 tags:
- - Dependency Risk
- - Fit Risk
  - Reliability Risk
- - Invisibility Risk
  - Risks
 tweet: yes
 part_of: Dependency Risk

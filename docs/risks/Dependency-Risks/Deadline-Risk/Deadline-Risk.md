@@ -76,7 +76,7 @@ So, these are two separate concepts, both useful in software development and oth
 
 :::tip Anecdote Corner
 
-In July 2003, the second Tomb Raider film, "Lara Croft: Tomb Raider - The Cradle of Life" was being released.Eidos, the publishers of Tomb Raider games put pressure on their developers, Core Design, to release ["Tomb Raider- Angel of Darkness"](https://en.wikipedia.org/wiki/Tomb_Raider:_The_Angel_of_Darkness#Release) to tie in with this. Core Design met the deadline but the game buggy, badly received and regarded as a poor sequel despite having some interesting ideas.  Following this, Eidos transferred production of the franchise to a new developer.
+In July 2003, the second Tomb Raider film, "Lara Croft: Tomb Raider - The Cradle of Life" was being released. Eidos, the publishers of Tomb Raider games, put pressure on their developers, Core Design, to release ["Tomb Raider- Angel of Darkness"](https://en.wikipedia.org/wiki/Tomb_Raider:_The_Angel_of_Darkness#Release) to tie in with this. Core Design met the deadline but the game buggy, badly received and regarded as a poor sequel despite having some interesting ideas.  Following this, Eidos transferred production of the franchise to a new developer.
 
 For a software-based example, we can turn to the [Mars Pathfinder mission (1997)](https://en.wikipedia.org/wiki/Mars_Pathfinder#On-board_computer).  The mission was jeopardised by a long-running communications task which had higher priority than a bus management task.  If the communication task took too long, the lander computer reset itself.  This was debugged and fixed remotely by engineers on Earth.
 
