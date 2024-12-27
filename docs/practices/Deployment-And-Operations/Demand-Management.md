@@ -16,7 +16,7 @@ practice:
    - "Resource Scaling"
   mitigates:
    - tag: Reliability Risk
-     reason: "Helps in efficiently allocating resources to meet the demand without overburdening the team."
+     reason: "Helps in efficiently allocating scarce dependencies to meet the most critical demands."
    - tag: Deadline Risk
      reason: "Ensures that the demand is managed to meet delivery schedules."
    - tag: Market Risk

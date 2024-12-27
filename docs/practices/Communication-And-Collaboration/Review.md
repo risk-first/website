@@ -23,7 +23,9 @@ practice:
    - tag: Agency Risk
      reason: "Reviewing work or activity can ensure good behaviour."
    - tag: Internal Model Risk
-     reason: "Reviews and audits can uncover unseen problems in a system"
+     reason: "Reviews and audits can uncover unseen problems in a system."
+   - tag: Reliability Risk
+     reason: "Reviews and audits can be performed to investigate the causes of unreliability in a system."
   attendant:
    - tag: Schedule Risk
      reason: "Reviews can introduce delays in the project timeline."

@@ -20,7 +20,9 @@ practice:
    - tag: Learning Curve Risk
      reason: "Facilitates knowledge sharing and learning."
    - tag: Implementation Risk
-     reason: "More eyeballs means fewer bugs and a better implementation"     
+     reason: "More eyeballs means fewer bugs and a better implementation" 
+   - tag: Reliability Risk
+     reason: "More developers may be able to produce a more reliable implementation."    
   attendant:
    - tag: Coordination Risk
      reason: "Requires coordination around time, place, activity and skills."

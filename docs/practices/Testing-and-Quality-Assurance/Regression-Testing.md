@@ -15,6 +15,8 @@ practice:
   mitigates:
    - tag: Regression Risk
      reason: "Detects and prevents regressions in the software."
+   - tag: Reliability Risk
+     reason: "Regression testing helps prevent reliability breaks caused by software change."
   attendant:
    - tag: Schedule Risk
      reason: "Can be time-consuming and introduce delays."

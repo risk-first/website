@@ -18,12 +18,10 @@ practice:
    - tag: Operational Risk
      reason: "Ensures that the software operates correctly and efficiently."
    - tag: Reliability Risk
-     reason: "Improves the reliability and stability of the software."
+     reason: "Removing bugs improves the reliability and stability of the software."
   attendant:
    - tag: Schedule Risk
      reason: "Debugging can be time-consuming, affecting project timelines."
-   - tag: Reliability Risk
-     reason: "Debugging may reveal dependencies on other systems or components."
   related:
    - ../Development-and-Coding/Coding
    - ../Testing-and-Quality-Assurance/Integration-Testing

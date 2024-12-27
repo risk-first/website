@@ -47,7 +47,7 @@ But this is flawed, for the following reasons:
 
 In 1973, Fischer Black and Myron Scholes published their ground-breaking paper describing the [Black-Scholes-Merton model](https://en.wikipedia.org/wiki/Black–Scholes_model) for pricing options.  Pricing options (agreements to give someone the option to buy or sell something at a later date and price) had previously been hugely problematic, so the creation of a model that would do it correctly was a huge step forward and earned Merton and Scholes the 1997 Nobel Prize for Economics (Black had died in 1995 and was thus ineligible).  
 
-Long-Term Capital Management (LTCM) was founded in 1994 and was, for a while, a hugely successful hedge fund.  Scholes and Merton sat on the board, which, along with incredible returns lent the organisation a strong reputation.  However, the models underlying their impressive returns were faulty.  They were based on historical correlations and made assumptions about liquidity.
+Long-Term Capital Management (LTCM) was founded in 1994 and was, for a while, a hugely successful hedge fund.  Scholes and Merton sat on the board, which, along with incredible returns lent the organisation a strong reputation.  However, the models underlying their impressive returns were faulty: they were based on historical correlations (which might not hold in the future) and made assumptions about liquidity.
 
 In 1997, a confluence of market conditions (the Asian Financial Crisis and Russian Debt Default) uncovered these weaknesses and the firm lost 90% of its value, exceeding $4bn, forcing the US government to stage a bail-out.  
 

@@ -23,7 +23,7 @@ practice:
      reason: "Reduces complexity by managing system changes in a controlled and documented manner."
   attendant:
    - tag: Reliability Risk
-     reason: "Dependencies on the CM tools and processes can become critical points of failure."
+     reason: "Carefully managing software configuration ensures that the reliability of dependencies is also managed."
    - tag: Security Risk
      reason: "Incorrect configuration management can lead to security vulnerabilities."
   related:

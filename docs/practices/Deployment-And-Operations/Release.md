@@ -28,6 +28,8 @@ practice:
      reason: "Releasing software means that the software has to be supported in production."
    - tag: Process Risk
      reason: "Complex release procedures are a source of process risk."
+   - tag: Reliability Risk
+     reason: "Releases can introduce discontinuities in software service if not managed well."
   related:
    - ../Planning-and-Management/Change-Management
    - ../Tools-and-Standards/Version-Control

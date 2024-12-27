@@ -12,6 +12,7 @@ practice:
    - "Backup"
    - "Failover"
    - "Resilience"
+   - "Stockpiling"
   mitigates:
    - tag: Feature Risk
      reason: "Ensures system availability and reliability in case of component failure."

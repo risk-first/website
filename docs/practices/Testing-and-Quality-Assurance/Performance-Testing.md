@@ -15,6 +15,8 @@ practice:
   mitigates:
    - tag: Feature Access Risk
      reason: "Identifies performance bottlenecks that could impact operations."
+   - tag: Reliability Risk
+     reason: "Performance testing software can establish bounds on its reliability."
   attendant:
    - tag: Schedule Risk
      reason: "Can be time-consuming, leading to delays in the project timeline."
