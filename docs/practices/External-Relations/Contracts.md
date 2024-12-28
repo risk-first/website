@@ -20,7 +20,7 @@ practice:
    - tag: Schedule Risk
      reason: "Establishes timelines and milestones to keep the project on track."
   attendant:
-   - tag: Boundary Risk
+   - tag: Lock-In Risk
      reason: "Contracts can create rigid boundaries that limit flexibility."
    - tag: Coordination Risk
      reason: "Contracting work can often involve setting careful terms to minimise coordination risks."

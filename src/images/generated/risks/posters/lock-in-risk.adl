@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram xmlns="http://www.kite9.org/schema/adl"
+         xmlns:svg="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xslt="http://www.kite9.org/schema/xslt"
+         id="diagram-113"
+         xslt:template="/public/templates/risk-first/risk-first-template.xsl">
+   <container bordered="true"
+              id="c"
+              style="--kite9-layout: down; --kite9-vertical-sizing: maximize; ">
+      <risk class="feature"/>
+      <description/>
+      <label id="id_16">We choose a dependency which provides us
+      with some key features...
+    </label>
+   </container>
+   <group style="--kite9-layout: down; --kite9-horizontal-align: left;">
+      <action style="--kite9-horizontal-align: left;">Commitment</action>
+   </group>
+   <container id="d" style="--kite9-vertical-sizing: maximize;  ">
+      <risk class="lock-in"/>
+      <label id="id_16-kg">But find we are now locked in
+       to the use of that dependency.
+      </label>
+   </container>
+</diagram>

@@ -18,7 +18,7 @@ practice:
    - tag: Coordination Risk
      reason: "Provides a clear framework for coordination among team members and stakeholders."
   attendant:
-   - tag: Boundary Risk
+   - tag: Lock-In Risk
      reason: "Poorly defined terms can create rigid boundaries that limit flexibility."
    - tag: Coordination Risk
      reason: "Requires alignment and coordination among all parties to agree to the terms."

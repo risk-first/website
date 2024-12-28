@@ -1,20 +1,16 @@
 ---
-title: Software Dependency Risk
-description: Specific dependency risks due to relying on software.
+title: Software Dependency Risks
+description: Specific risks due to relying on software as a dependency.
 
-slug: /risks/Software-Dependency-Risk
+slug: /risks/Software-Dependency-Risks
 featured: 
   class: c
   element: '<risk class="software-dependency" />'
 sidebar_position: 4
 tweet: yes
 tags: 
- - Risks
  - Software Dependency Risk
-part_of: Dependency Risk
 ---
-
-<RiskIntro fm={frontMatter} />
 
 In this section, we're going to look specifically at _Software_ dependencies, although many of the concerns we'll raise here apply equally to all the other types of dependency we outlined in [Dependency Risk](/tags/Dependency-Risk). 
 
@@ -195,7 +191,7 @@ In essence, this is Conway's Law:
 By choosing a particular software library, we are making a move on the [Risk Landscape](/risks/Risk-Landscape) in the hope of moving to a place with more favourable risks.  Typically, using library code offers a [Schedule Risk](/tags/Schedule-Risk) and [Complexity Risk](/tags/Complexity-Risk) Silver Bullet - a high-speed route over the risk landscape to somewhere nearer where we want to be.  But, in return we expect to pick up:
 
 - **[Communication Risk](/tags/Communication-Risk)**: because we now have to learn how to communicate with this new dependency.
-- **[Boundary Risk](/tags/Boundary-Risk)**: - because now are limited to using the functionality provided by this dependency.  We have chosen it over alternatives and changing to something else would be more work and therefore costly.   
+- **[Lock-In Risk](/tags/Lock-In-Risk)**: - because now are limited to using the functionality provided by this dependency.  We have chosen it over alternatives and changing to something else would be more work and therefore costly.   
 
 But, it's quite possible that we could wind up in a worse place than we started out, by using a library that's out-of-date, riddled with bugs or badly supported.  i.e. full of new, hidden [Feature Risk](/tags/Feature-Risk).  
 
@@ -216,7 +212,7 @@ But, leaving that aside, let's try to build a model of what this decision making
 In the table above, I am summarising three different sources (linked at the end of the section), which give descriptions of which factors to look for when choosing open-source libraries.  Here are some take-aways:
 
  - **[Feature Risk](/tags/Feature-Risk) is a big concern**:   How can you be sure that the project will do what you want it to do ahead of schedule?  Will it contain bugs or missing features?  By looking at factors like _release frequency_ and _size of the community_ you get a good feel for this which is difficult to fake.
- - **[Boundary Risk](/tags/Boundary-Risk) is also very important**:  You are going to have to _live_ with your choices for the duration of the project, so it's worth spending the effort to either ensure that you're not going to regret the decision, or that you can change direction later.
+ - **[Lock-In Risk](/tags/Lock-In-Risk) is also very important**:  You are going to have to _live_ with your choices for the duration of the project, so it's worth spending the effort to either ensure that you're not going to regret the decision, or that you can change direction later.
  - **Third is [Communication Risk](/tags/Communication-Risk)**:  how well does the project deal with its users?  If a project is "famous", then it has communicated its usefulness to a wide, appreciative audience.  Avoiding [Communication Risk](/tags/Communication-Risk) is also a good reason to pick _tools you are already familiar with_.
   
 ![Software Libraries Risk Tradeoff](/img/generated/risks/software-dependency/library.svg) 
@@ -253,7 +249,7 @@ The diagram above summarises the risks raised in some of the available literatur
 
 - Clearly, [Operational Risk](/tags/Operational-Risk) is now a big concern.  By depending on a third-party organisation you are tying yourself to its success or failure in a much bigger way than just by using a piece of open-source software.   What happens to data security, both in the data centre and over the Internet?  Although you might choose a SaaS solution to mitigate _internal_ [Operational Risk](/tags/Operational-Risk), you might just be "throwing it over the wall" to a third party, who might do a worse job.
 - With [Feature Risk](/tags/Feature-Risk) you now have to contend with the fact that the software will be upgraded _outside your control_, and you may have limited control over which features get added or changed. 
-- [Boundary Risk](/tags/Boundary-Risk) is also a different proposition: you are tied to the software provider by _a contract_.  If the service changes in the future, or isn't to your liking, you can't simply fork the code (like you could with an open source project).
+- [Lock-In Risk](/tags/Lock-In-Risk) is also a different proposition: you are tied to the software provider by _a contract_.  If the service changes in the future, or isn't to your liking, you can't simply fork the code (like you could with an open source project).
 
 ![Risk Tradeoff From Using Software as a Service (SaaS)](/img/generated/risks/software-dependency/saas.svg)
 
@@ -276,8 +272,8 @@ Let's expand this view slightly and look at where different pieces of software s
 
 ![Software Dependencies, Pricing, Delivery Matrix Risk Profiles](/img/generated/risks/software-dependency/software_dependency_table_3_sideways.svg)
 
-- Where there is value in **the [Network Effect](https://en.wikipedia.org/wiki/Network_effect)** it's often a sign that the software will be free, or open source:  programming languages and Linux are the obvious examples of this.  Bugs are easier to find when there are lots of eyes looking, and learning the skill to use the software has less [Boundary Risk](/tags/Boundary-Risk) if you know you'll be able to use it at any point in the future.
-- At the other end of the spectrum, clients will happily pay for software if it clearly **reduces [Operational Risk](/tags/Operational-Risk)**.  Take [Amazon Web Services (AWS)](https://en.wikipedia.org/wiki/Amazon_Web_Services).  The essential trade here is that you substitute the complexity of hosting and maintaining various pieces of hardware, in exchange for metered payments ([Funding Risk](/tags/Funding-Risk) for you).  Since the AWS _interfaces_ are specific to Amazon, there is significant [Boundary Risk](/tags/Boundary-Risk) in choosing this option.
+- Where there is value in **the [Network Effect](https://en.wikipedia.org/wiki/Network_effect)** it's often a sign that the software will be free, or open source:  programming languages and Linux are the obvious examples of this.  Bugs are easier to find when there are lots of eyes looking, and learning the skill to use the software has less [Lock-In Risk](/tags/Lock-In-Risk) if you know you'll be able to use it at any point in the future.
+- At the other end of the spectrum, clients will happily pay for software if it clearly **reduces [Operational Risk](/tags/Operational-Risk)**.  Take [Amazon Web Services (AWS)](https://en.wikipedia.org/wiki/Amazon_Web_Services).  The essential trade here is that you substitute the complexity of hosting and maintaining various pieces of hardware, in exchange for metered payments ([Funding Risk](/tags/Funding-Risk) for you).  Since the AWS _interfaces_ are specific to Amazon, there is significant [Lock-In Risk](/tags/Lock-In-Risk) in choosing this option.
 - In the middle there are lots of **substitute options** and therefore high competition.  Because of this prices are pushed towards zero and therefore often advertising is used to monetise the product.  [Angry Birds](https://en.wikipedia.org/wiki/Angry_Birds) is a classic example:  initially, it had demo and paid versions, however [Rovio](https://en.wikipedia.org/wiki/Rovio_Entertainment) discovered there was much more money to be made through advertising than from the [paid-for app](https://www.deconstructoroffun.com/blog/2017/6/11/how-angry-birds-2-multiplied-quadrupled-revenue-in-a-year).
 
 ## Choice
@@ -288,4 +284,4 @@ Choosing dependencies can be extremely difficult.  As we discussed above, the us
 
 Having chosen a dependency, whether or not you end up in a more favourable position risk-wise is going to depend heavily on the quality of the execution and the skill of the implementor.  With software dependencies we often have to live with the decisions we make for a long time: _choosing_ the software dependency is far easier than _changing it later_.
 
-Let's take a closer look at this problem in the section on [Boundary Risk](/tags/Boundary-Risk).  But first, lets looks at [processes](/tags/Process-Risk).
+Let's take a closer look at this problem in the section on [Lock-In Risk](/tags/Lock-In-Risk).  But first, lets looks at [processes](/tags/Process-Risk).

@@ -77,7 +77,7 @@ Download this in [PDF](/estimating/Interference-Checklist.pdf) or [Numbers](/est
 |                                              | No prior work exists in this area                                                 |           |                 |
 |                                              | Significant algorithmic innovation is required                                    |           |                 |
 |                                              |                                                                                   |           |                 |
-| **\- [Boundary Risk](/tags/Boundary-Risk)**   | Ecosystem choice                                                                  |           |                 |
+| **\- [Lock-In Risk](/tags/Lock-In-Risk)**   | Ecosystem choice                                                                  |           |                 |
 |                                              | Platform choice                                                                   |           |                 |
 |                                              | App stores                                                                        |           |                 |
 |                                              | Language choice                                                                   |           |                 |

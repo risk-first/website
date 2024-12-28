@@ -8,7 +8,7 @@ slug: /risks/Funding-Risk
 featured: 
   class: c
   element: '<risk class="funding" />'
-sidebar_position: 1
+sidebar_position: 3
 tweet: yes
 tags: 
  - Risks

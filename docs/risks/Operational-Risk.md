@@ -119,9 +119,9 @@ Since our operation exists in a world of risks like [Red Queen Risk](/tags/Red-Q
 
 While _planning_ is a day-to-day operational feedback loop, _design_ is a longer feedback loop changing not just the parameters of the operation, but the operation itself.
 
-You might think that for an IT operation, tasks like [Design](#design) belong within a separate "Development" function within an organisation.  Traditionally, this might have been the case.  However separating Development from Operations implies [Boundary Risk](/tags/Boundary-Risk) between these two functions.  For example, the developers might employ different tools, equipment and processes to the Operations team resulting in a mismatch when software is delivered.
+You might think that for an IT operation, tasks like [Design](#design) belong within a separate "Development" function within an organisation.  Traditionally, this might have been the case.  However separating Development from Operations implies [Lock-In Risk](/tags/Lock-In-Risk) between these two functions.  For example, the developers might employ different tools, equipment and processes to the Operations team resulting in a mismatch when software is delivered.
 
-In recent years the [DevOps](https://en.wikipedia.org/wiki/DevOps) movement has brought this [Boundary Risk](/tags/Boundary-Risk) into sharper focus.  This specifically means:
+In recent years the [DevOps](https://en.wikipedia.org/wiki/DevOps) movement has brought this [Lock-In Risk](/tags/Lock-In-Risk) into sharper focus.  This specifically means:
  
   - Using code to automate previously manual Operations functions, like monitoring and releasing.
   - Involving Operations in the planning and design, so that the delivered software is optimised for the environment it runs in.

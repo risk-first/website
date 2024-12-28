@@ -43,7 +43,7 @@ It's the early 2000s: your Pokémon website is becoming really popular and profi
 
 ![Increasing the Cost To Reduce Operational Risks](/img/generated/risks/posters/complexity-risk2.svg) 
 
-It's the early 2020s: your Pokémon website is becoming really popular and profitable but you're worried that you're carrying too much [Operational Risk](tags/Operational-Risk).  You're able to turn on some backup features, load balancing and increase the instances via the console provided by your Cloud Service Provider, handing off the [Complexity Risk](/tags/Complexity-Risk) to them at some expense.  As well as helping with [Demand Management](/tags/Demand-Management), CSPs have allowed software developers to shift a lot of [Complexity Risk](/tags/Complexity-Risk) to them, the downsides being [cost](/tags/Funding-Risk) and [lock-in](/tags/Boundary-Risk).
+It's the early 2020s: your Pokémon website is becoming really popular and profitable but you're worried that you're carrying too much [Operational Risk](tags/Operational-Risk).  You're able to turn on some backup features, load balancing and increase the instances via the console provided by your Cloud Service Provider, handing off the [Complexity Risk](/tags/Complexity-Risk) to them at some expense.  As well as helping with [Demand Management](/tags/Demand-Management), CSPs have allowed software developers to shift a lot of [Complexity Risk](/tags/Complexity-Risk) to them, the downsides being [cost](/tags/Funding-Risk) and [lock-in](/tags/Lock-In-Risk).
 
 ## Example Threats
 

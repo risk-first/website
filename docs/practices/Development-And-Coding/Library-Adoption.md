@@ -23,7 +23,7 @@ practice:
   attendant:
    - tag: Software Dependency Risk
      reason: "Creates dependencies on the adopted standards and libraries."
-   - tag: Boundary Risk
+   - tag: Lock-In Risk
      reason: "Limits flexibility by adhering to specific standards and libraries which may be hard to change later."
    - tag: Funding Risk
      reason: "Can incur costs associated with adopting standards or libraries."

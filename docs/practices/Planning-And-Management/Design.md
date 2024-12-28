@@ -24,7 +24,7 @@ practice:
    - tag: Market Risk
      reason:  (Research and) design allows you to leapfrog competitors and provide new sources of value.   
   attendant:
-   - tag: Boundary Risk
+   - tag: Lock-In Risk
      reason: "Design decisions can create boundaries that limit flexibility and adaptability."
    - tag: Software Dependency Risk
      reason: "Creates dependencies on software components and design patterns."

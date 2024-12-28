@@ -61,7 +61,7 @@ Below is a table outlining the different risks we'll see.  There _is_ an order t
 |[Deadline Risk](/tags/Deadline-Risk)                      |The risk of creating a dependency around a point in time.|
 |[Software Dependency Risk](/tags/Software-Dependency-Risk)|The risk of depending on a software library, service or function.|    
 |[Process Risk](/tags/Process-Risk)                        |When you depend on a business process, or human process to give you something you need.|
-|[Boundary Risk](/tags/Boundary-Risk)                      |Risks due to making decisions that limit your choices later on.  Sometimes, you go the wrong way on the [Risk Landscape](/risks/Risk-Landscape) and it's hard to get back to where you want to be.|            
+|[Lock-In Risk](/tags/Lock-In-Risk)                      |Risks due to making decisions that limit your choices later on.  Sometimes, you go the wrong way on the [Risk Landscape](/risks/Risk-Landscape) and it's hard to get back to where you want to be.|            
 |[Agency Risk](/tags/Agency-Risk)                          |Risks that staff have their own [Goals](/tags/Goal), which might not align with those of the project or team.|
 |[Coordination Risk](/tags/Coordination-Risk)              |Risks due to the fact that systems contain multiple agents, which need to work together.|       
 |[Map And Territory Risk](/tags/Map-And-Territory-Risk)    |Risks due to the fact that people don't see the world as it really is. (After all, they're working off different, imperfect [Internal Models](/tags/Internal-Model).)|  

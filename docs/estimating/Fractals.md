@@ -98,7 +98,7 @@ Although there are some high-profile wins with these types of problems, generall
  
 ## Applying Risk-First
 
-Let's look at the conclusions we reached in [Boundary Risk](/tags/Boundary-Risk):
+Let's look at the conclusions we reached in [Lock-In Risk](/tags/Lock-In-Risk):
 
 > - **Human need is [Fractal](https://en.wikipedia.org/wiki/Fractal)**:  this means that over time, software products have evolved to more closely map human needs.   Software that would have delighted us ten years ago lacks the sophistication we expect today.
 - **Software and hardware are both improving with time**: due to evolution and the ability to support greater and greater levels of complexity.

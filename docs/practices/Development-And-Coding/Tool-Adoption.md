@@ -26,7 +26,7 @@ practice:
      reason: "Can incur costs associated with acquiring and maintaining tools."
    - tag: Complexity Risk
      reason: "Integrating multiple tools can add complexity to the development process."
-   - tag: Boundary Risk
+   - tag: Lock-In Risk
      reason: Once tools become embedded in the process, they can be hard to change.
   related:
    - ../Planning-and-Management/Change-Management

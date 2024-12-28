@@ -28,7 +28,7 @@ practice:
      reason: "Can be time-consuming, potentially delaying the start of development."
    - tag: Agency Risk
      reason: "Creates dependencies on the availability and accuracy of information from stakeholders."
-   - tag: Boundary Risk
+   - tag: Lock-In Risk
      reason: "Well-defined analysis can create rigid boundaries that limit flexibility."
   related:
    - ../Planning-and-Management/Requirements-Capture

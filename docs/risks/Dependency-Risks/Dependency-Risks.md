@@ -28,7 +28,7 @@ In order to avoid repetition, and also to break down this large topic, we're goi
  - We'll cover [Deadline Risk](/tags/Deadline-Risk), and discuss the purpose of Events and Deadlines, and how they enable us to coordinate around dependency use.
  - Then, we'll move on to look specifically at [Software Dependency Risk](/tags/Software-Dependency-Risk), covering using libraries, software services and building on top of the work of others.
  - Then, we'll take a look at [Process Risk](/tags/Process-Risk), which is still [Dependency Risk](/tags/Dependency-Risk), but we'll be considering more organisational factors and how bureaucracy comes into the picture.
- - After that, we'll take a closer look at [Boundary Risk](/tags/Boundary-Risk) and [Dead-End Risk](/tags/Dead-End-Risk).  These are the risks you face in making choices about what to depend on.
+ - After that, we'll take a closer look at [Lock-In Risk](/tags/Lock-In-Risk) and [Dead-End Risk](/tags/Dead-End-Risk).  These are the risks you face in making choices about what to depend on.
  - Finally, we'll wrap up this analysis with a look at some of the specific problems around depending on other people or businesses in [Agency Risk](/tags/Agency-Risk).
   
 ## Why Have Dependencies?

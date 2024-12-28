@@ -92,4 +92,4 @@ In the third version of the program, we used the method `.repeat()`, which allow
 
 ![Using Libraries and Languages to reduce Codebase Risk](/img/generated/risks/complexity/libraries.svg)
 
-So as the above diagram shows, we can also reduce [Codebase Risk](/tags/Codebase-Risk) in our choice of _languages_ and _third party libraries_.   This doesn't come without a cost, though.  We are trading-off our own [Codebase Risk](/tags/Codebase-Risk) but increasing [Dependency Risk](/tags/Dependency-Risk) and [Boundary Risk](/tags/Boundary-Risk) instead.   
+So as the above diagram shows, we can also reduce [Codebase Risk](/tags/Codebase-Risk) in our choice of _languages_ and _third party libraries_.   This doesn't come without a cost, though.  We are trading-off our own [Codebase Risk](/tags/Codebase-Risk) but increasing [Dependency Risk](/tags/Dependency-Risk) and [Lock-In Risk](/tags/Lock-In-Risk) instead.   
