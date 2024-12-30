@@ -8,7 +8,7 @@ module.exports = async function myPlugin(context, options) {
         allVersions.forEach(version => {
             const docs = version.docs;
 
-			docs.forEach(d => console.log(d))
+			// docs.forEach(d => console.log(d))
 
             // build the mapping of tags to docs
             const tagToDocMap = {};

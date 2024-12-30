@@ -26,6 +26,7 @@ practice:
   related:
    - ../Planning-And-Management/Prioritising
    - ../Collaboration-And-Communication/Stakeholder-Management
+   - ../External-Relations/Outsourcing
 ---
 
 <PracticeIntro details={frontMatter} /> 

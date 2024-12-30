@@ -13,6 +13,7 @@ practice:
    - "Library Integration"
    - "Standards Adoption"
    - "Runtime Dependency"
+   - "Open-Source Consumption"
   mitigates:
    - tag: Implementation Risk
      reason: "Ensures consistency and reliability by adhering to proven standards and libraries."
@@ -24,7 +25,7 @@ practice:
    - tag: Software Dependency Risk
      reason: "Creates dependencies on the adopted standards and libraries."
    - tag: Lock-In Risk
-     reason: "Limits flexibility by adhering to specific standards and libraries which may be hard to change later."
+     reason: "Adopting proprietary libraries may lead to worsening terms-of-service in the future."
    - tag: Funding Risk
      reason: "Can incur costs associated with adopting standards or libraries."
   related:

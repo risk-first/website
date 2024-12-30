@@ -21,6 +21,8 @@ practice:
      reason: "Reduces operational errors by providing clear guidelines and protocols."
    - tag: Communication Risk
      reason: "Improves communication by using a common language and standardized terms."
+   - tag: Lock-In Risk
+     reason: "Using software that adheres to standards allows for swapping out components and promotes competition amongst dependencies."
   attendant:
    - tag: Inflexibility Risk
      reason: "May limit creativity and flexibility by enforcing strict adherence to standards."

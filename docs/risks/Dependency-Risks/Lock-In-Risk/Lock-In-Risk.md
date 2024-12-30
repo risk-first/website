@@ -16,8 +16,6 @@ part_of: Dependency Risk
 
 <RiskIntro fm={frontMatter} />
 
-In the previous sections on [Dependency Risk](/tags/Dependency-Risk) we've touched on [Lock-In Risk](/tags/Lock-In-Risk) several times, but now it's time to tackle it head-on and discuss this important type of risk.  
-
 ![Lock-In Risk is due to Dependency Risk and commitment](/img/generated/risks/posters/lock-in-risk.svg)
 
 As shown in the above diagram, [Lock-In Risk](/tags/Lock-In-Risk) is the risk we face due to _commitments_ around dependencies and the limitations they place on our ability to change.  To illustrate, lets consider two examples:
@@ -107,6 +105,12 @@ Will the dependency satisfy your expanding requirements going forward? It's ofte
 
 **Threat**: The owner of the dependency has the opportunity to unilaterally change the licensing conditions for your dependency.  (Compare to [Open Source](../Software-Dependency-Risk)).
   
+:::tip Anecdote Corner
 
+The IT industry is replete with examples of where Lock-In Risk is used as a key business strategy.  In the 1980's and 1990's Microsoft were able to use proprietary file formats as a way to lock-in users of the Microsoft Windows and Office ecosystems, nearly bankrupting Apple in the process.  
 
+However in 2007/2008 Apple were able to use the same strategy to build a locked-in ecosystem around the iPhone, relegating Blackberry, Nokia and Microsoft's offerings to being minor, incompatible players and leaving them locked out of the ecosystem.
 
+Amazon Web Services (AWS), started in 2006, is another example of a proprietary, locked-in ecosystem, with Microsoft and Google providing their own alternatives. It's easy to see the same strategic patterns being repeated again in different sections of the IT industry (Desktop, Mobile, Cloud).     
+
+It's worth pointing out Google's strategy here of creating (arguably) _open source_ alternatives for all of the above.  On the desktop, Chrome, on mobile, Android and in the Cloud, Kubernetes.  All of these are aimed at attracting users and developers interested in building out ecosystems which minimise lock-in.  Google's [strategy](https://opensource.google/documentation/reference/why/) here is that sacrificing some potential lock-in leads to a bigger overall ecosystem as a result.     

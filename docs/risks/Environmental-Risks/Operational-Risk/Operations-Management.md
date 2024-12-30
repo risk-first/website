@@ -1,54 +1,3 @@
----
-title: Operational Risk
-description: Risks of losses or reputational damage caused by failing processes or real-world events.
-
-
-featured: 
-  class: c
-  element: '<risk class="operational" />'
-sidebar_position: 15
-tweet: yes
-tags: 
- - Risks
- - Legal Risk
- - Operational Risk
----
-
-<RiskIntro fm={frontMatter} />
-
-> "The risk of loss resulting from inadequate or failed internal processes, people and systems or from external events." - [Operational Risk, _Wikipedia_](https://en.wikipedia.org/wiki/Operational_risk#Definition)
-
-In this section we're going to start considering the realities of running software systems in the real world.  
-
-There is a lot to this subject, so this section is just a taster: we're going to set the scene by looking at what constitutes an [Operational Risk](/tags/Operational-Risk), and then look at the related discipline of [Operations Management](#operations-management).  Following this background, we'll apply the Risk-First model and have a high-level look at the various mitigations for [Operational Risk](/tags/Operational-Risk).  
-
-## Operational Risks
-
-When building software, it's tempting to take a very narrow view of the dependencies of a system, but [Operational Risks](/tags/Operational-Risk) are often caused by dependencies we _don't_ consider - i.e. the **Operational Context** within which the system is operating.<!-- tweet-end -->  Here are some examples:  
-
- - **[Staff Risks](/tags/Staff-Risk)**: 
-   - Freak weather conditions affecting ability of staff to get to work, interrupting the development and support teams. 
-   - Reputational damage caused when staff are rude to the customers.
- 
- - **[Reliability Risks](/tags/Reliability-Risk)**:
-   - A data-centre going off-line, causing your customers to lose access.
-   - A power cut causing backups to fail.
-   - Not having enough desks for everyone to sit at.
-   
- - **[Process Risks](/tags/Process-Risk)**:
-   - Regulatory change, which means you have to adapt your business model.
-   - Insufficient controls which means you don't notice when some transactions are failing, leaving you out-of-pocket.
-   - Data loss because of bugs introduced during an untested release.
- 
- - **[Software Dependency Risk](/tags/Software-Dependency-Risk)**:
-   - Hackers exploit weaknesses in a piece of 3rd party software, bringing your service down.
- 
- - **[Agency Risk](/tags/Agency-Risk)**:
-   - Workers going on strike.
-   - Employees trying to steal from the company (bad actors).
-   - Other crime, such as hackers stealing data.
-
-This is a long laundry-list of everything that can go wrong due to operating in "The Real World".  Although we've spent a lot of time looking at the varieties of [Dependency Risk](/tags/Dependency-Risk) on a software project, with [Operational Risk](/tags/Operational-Risk) we have to consider that these dependencies will fail in any number of unusual ways, and we can't be ready for all of them.  Preparing for this comes under the umbrella of [Operations Management](#operations-management).
 
 ## Operations Management
 
@@ -155,4 +104,3 @@ The "should we ship?" decision is therefore a complex one.  In [Meeting Reality]
 In a way, [actions](/tags/Take-Action) like **Design** and **Improvement** bring us right back to where we started from: identifying [Dependency Risks](/tags/Dependency-Risk), [Feature Risks](/tags/Feature-Risk) and [Complexity Risks](/tags/Complexity-Risk) that hinder our operation, and mitigating them through actions like _software development_.  
 
 Our safari of risk is finally complete: it's time to reflect on what we've seen in the next section, [Staging and Classifying](Staging-And-Classifying).  
- 
