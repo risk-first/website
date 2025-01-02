@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram xmlns="http://www.kite9.org/schema/adl"
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xslt="http://www.kite9.org/schema/xslt" id="diagram-113"
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl">
+	<container bordered="true" id="c"
+		style=" --kite9-vertical-sizing: maximize; ">
+		
+		<mitigated>
+			<risk class="agency" />
+		</mitigated>
+		
+		<mitigated>
+			<risk class="complexity" />
+		</mitigated>
+		
+		<mitigated>
+			<risk class="funding" />
+		</mitigated>
+
+		<label id="id_16">Firm A is struggling to provide 
+		a support function and struggles with the complexity
+		of quality support across multiple locations
+		</label>
+	</container>
+	<group
+		style="--kite9-layout: down; --kite9-horizontal-align: left;">
+		<action style="--kite9-horizontal-align: left;">Outsourcing</action>
+	</group>
+	<container id="d"
+		style="--kite9-vertical-sizing: maximize;  ">
+		<risk class="operational" style="--kite9-vertical-align: top;  " />
+		<label id="id_16-kg">But there are down sides to 
+		outsourcing support too and
+		 quality of service declines
+		</label>
+	</container>
+</diagram>

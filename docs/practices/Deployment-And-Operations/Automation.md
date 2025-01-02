@@ -20,6 +20,8 @@ practice:
    - tag: Schedule Risk
      reason: "Automating laborious tasks clears the schedule for higher-value work."
   attendant:
+   - tag: Operational Risk
+     reason: "Automated processes may be less observable than manual ones."
    - tag: Complexity Risk
      reason: "Introducing automation adds to the complexity of a project"
    - tag: Feature Fit Risk
