@@ -1,0 +1,27 @@
+<diagram
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+	xmlns:xslt="http://www.kite9.org/schema/xslt"
+	xmlns="http://www.kite9.org/schema/adl"
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink" id="diagram-113"
+	style="--kite9-min-width: 600pt;">
+
+		<group style="--kite9-layout: down; ">
+			<mitigated>
+				<risk class="security" style="--kite9-horizontal-align: left;" />
+			</mitigated>
+		</group>
+
+	<group style="--kite9-layout: down;">
+		<action>Security Training</action>
+		<action>Multi-Factor Auth</action>
+		<action>Endpoint Detection 
+		&amp; Response (EDR)</action>
+	</group>
+
+	<group style="--kite9-layout: down; ">
+
+	<risk style="--kite9-horizontal-align: right; " class="complexity" />
+</group>
+
+</diagram>

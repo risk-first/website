@@ -25,7 +25,7 @@ practice:
    - tag: Communication Risk
      reason: "May introduce communication challenges with external teams."
    - tag: Security Risk
-     reason: "Potential risks related to data security and confidentiality."
+     reason: "Sharing responsibilities across multiple organisations can introduce new security risks."
    - tag: Market Risk
      reason: "Increasing the size of the supply chain introduces risks that the state of that supply chain changes with the market."
   related:

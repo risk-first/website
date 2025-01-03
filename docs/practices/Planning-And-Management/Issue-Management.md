@@ -25,7 +25,7 @@ practice:
    - tag: Trust and Belief Risk
      reason: "Tracking and fixing bugs improves software reputation."
    - tag: Security Risk
-     reason: "Addresses and resolves security incidents to protect the organization."
+     reason: "Track and Prioritise Security Issues and Incidents."
   attendant:
    - tag: Complexity Risk
      reason: "Managing an excessive number of logged issues can add complexity."

@@ -17,6 +17,8 @@ practice:
    - tag: Schedule Risk
      reason: "Distributes workload effectively, helping to meet deadlines."
   attendant:
+   - tag: Security Risk
+     reason: "Delegating responsibility can introduce new security risks."
    - tag: Coordination Risk
      reason: "Increases the number of entities involved in project coordination."
    - tag: Agency Risk

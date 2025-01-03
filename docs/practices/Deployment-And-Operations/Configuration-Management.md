@@ -24,8 +24,6 @@ practice:
   attendant:
    - tag: Reliability Risk
      reason: "Carefully managing software configuration ensures that the reliability of dependencies is also managed."
-   - tag: Security Risk
-     reason: "Incorrect configuration management can lead to security vulnerabilities."
   related:
    - ../Planning-and-Management/Change-Management
    - ../Tools-and-Standards/Version-Control
