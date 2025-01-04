@@ -19,6 +19,8 @@ practice:
      reason: "Ensures that staff are well-trained in operational procedures and best practices."
    - tag: Security Risk
      reason: "Educates team members on security protocols and practices."
+   - tag: Legal Risk
+     reason: "Sometimes, training is required to demonstrate that an organisation complies with certain legal obligations."
   attendant:
    - tag: Schedule Risk
      reason: "Training sessions can take time away from development, impacting schedules."

@@ -25,6 +25,8 @@ practice:
      reason: "Involves giving up a portion of ownership and control to investors."
    - tag: Funding Risk
      reason: "Creates a dependency on investors and their continued support and introduces pressure to meet investor expectations and deliver returns."
+   - tag: Legal Risk
+     reason: "Raising capital invariably involves signing of and adherence to contracts."
   related:
    - ../Planning-And-Management/Stakeholder-Management
    - ../Planning-And-Management/Requirements-Capture

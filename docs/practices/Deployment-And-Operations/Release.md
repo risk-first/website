@@ -12,6 +12,7 @@ practice:
    - "Software Release Management"
    - "Deployment"
    - "Launch"
+   - "Publication"
   mitigates:
    - tag: Feature Access Risk
      reason: Users are able to access the features you release to them.
@@ -30,6 +31,8 @@ practice:
      reason: "Complex release procedures are a source of process risk."
    - tag: Reliability Risk
      reason: "Releases can introduce discontinuities in software service if not managed well."
+   - tag: Legal Risk  
+     reason: Publishing or releasing code may involve licensing, Intellectual Property, Liability or other legal compliance."
   related:
    - ../Planning-and-Management/Change-Management
    - ../Tools-and-Standards/Version-Control

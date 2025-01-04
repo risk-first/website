@@ -28,6 +28,8 @@ practice:
      reason: "Sharing responsibilities across multiple organisations can introduce new security risks."
    - tag: Market Risk
      reason: "Increasing the size of the supply chain introduces risks that the state of that supply chain changes with the market."
+   - tag: Legal Risk
+     reason: "Outsourcing relationships may be more legally complex than hiring staff directly."
   related:
    - ../Planning-and-Management/Contract
    - ../Communication-and-Collaboration/Stakeholder-Management

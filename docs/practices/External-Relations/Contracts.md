@@ -19,6 +19,8 @@ practice:
      reason: "Outlines cost structures and helps manage budget expectations."
    - tag: Schedule Risk
      reason: "Establishes timelines and milestones to keep the project on track."
+   - tag: Legal Risk
+     reason: "A well-written contract establishes the terms under which software is provided or used."
   attendant:
    - tag: Lock-In Risk
      reason: "Contracts can create rigid boundaries that limit flexibility."
