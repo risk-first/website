@@ -41,7 +41,6 @@ In addition, as laws differ across jurisdictions, the firm may have to deal with
 
 ## Example Threats
 
-
 ### 1. Intellectual Property Rights
 
 **Threat**: Copyrights, patents and trademarks apply when distributing software.   
@@ -52,10 +51,11 @@ In addition, as laws differ across jurisdictions, the firm may have to deal with
 
 ### 3. Contracts
 
+**Threat**: Entering into contracts (e.g. Terms of Service (ToS), Non-Disclosure Agreements (NDAs) or employment contracts (see [Outsourcing](/tags/Outsourcing) and [Delegation](/tags/Delegation) is essential to running a business but involves Legal Risk.
+
 ### 4. Tax / Sales Laws
 
-### 
-
+**Threat**: Having customers means  accounting regulations and sales tax laws.  This is even more problematic in different jurisdictions, where you'll need to consider handling foreign exchange, different legal regimes and cross-border obligations.
 
 :::tip Anecdote Corner
 
