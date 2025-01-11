@@ -26,7 +26,7 @@ practice:
      reason: "Introducing automation adds to the complexity of a project"
    - tag: Feature Fit Risk
      reason: "The automated process might not capture the variability of requirements of the original approach"
-   - tag: Invisibility Risk
+   - tag: Communication Risk
      reason: "The quality and performance characteristics may be obscured by automation."
    - tag: Process Risk
      reason: "Automation introduces a process, which therefore means a new source of Process Risk."

@@ -30,7 +30,7 @@ Next in the tour of [Dependency Risks](/tags/Dependency-Risk), it's time to look
 
 
 
-s And Invisibility Risk
+## Processes And Communication Risk
 
 Processes tend to work well for the common cases because *practice makes perfect*,  but they are really tested when unusual situations occur.  Expanding processes to deal with edge-cases incurs [Complexity Risk](/tags/Complexity-Risk), so often it's better to try and have clear boundaries of what is "in" and "out" of the process' domain.
 
@@ -82,7 +82,7 @@ Let's look at an example of how that can happen in a step-wise way.
 3. Problems are likely to occur eventually in the `B`/`C` relationship.  Perhaps some members of the `B` team give better service than others, or deal with more variety in requests?   In order to standardise the response from `B` and also to reduce scope-creep in requests from `C`, `B` organises bureaucratically so that there is a controlled process (`P`) by which `A` can be accessed.  Members of teams `B` and `C` now interact via some request mechanism like forms (or another protocol).  
 
   - As shown in the above diagram, because of `P`, `B` can now process requests on a first-come-first-served basis and deal with them all in the same way: the more unusual requests from `C` might not fit the model.  These [Process Risks](/tags/Process-Risk) are now the problem of the form-filler in `C`.   
-  - Since this is [Abstraction](/tags/Abstraction), `C` now has [Invisibility Risk](/tags/Invisibility-Risk) since it can't access team `B` and see how it works.
+  - Since this is [Abstraction](/tags/Abstraction), `C` now has [Communication Risk](/tags/Communication-Risk) since it can't access team `B` and see how it works.
   - Team `B` may also use `P` to introduce other bureaucracy like authorisation and sign-off steps or payment barriers.   All of this increases [Process Risk](/tags/Process-Risk) for team C. 
 
 ![Person D acts as a middleman for customers needing some variant of `A`, transferring Complexity Risk](/img/generated/risks/process/step4.svg)

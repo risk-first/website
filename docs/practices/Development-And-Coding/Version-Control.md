@@ -20,7 +20,7 @@ practice:
    - tag: Regression Risk
      reason: "Maintains a history of changes, allowing rollback to previous versions if needed."
   attendant:
-   - tag: Invisibility Risk
+   - tag: Communication Risk
      reason: "Poor version management can be chaotic and leave lots of work in progress."
   related:
    - ../Planning-and-Management/Change-Management

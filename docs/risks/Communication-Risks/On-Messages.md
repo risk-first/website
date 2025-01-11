@@ -43,9 +43,9 @@ For people, nothing exists unless we have a name for it. The world is just atoms
 
 People don't rely on rigorous definitions of abstractions like computers do; we make do with fuzzy definitions of concepts and ideas.  We rely on [Abstraction](/tags/Abstraction) to move between the name of a thing and the _idea of a thing_.
 
-This brings about [Misinterpretation](/risks/Message-Risk#misinterpretation): names are not _precise_, and concepts mean different things to different people.  We can't be sure that other people have the same meaning for a name that we have.  
+This brings about [Misinterpretation](#2-misinterpretation): names are not _precise_, and concepts mean different things to different people.  We can't be sure that other people have the same meaning for a name that we have.  
 
-Another cost of [Abstraction](/tags/Abstraction) is [Invisibility Risk](/tags/Invisibility-Risk).  While abstraction is a massively powerful technique, it lets the function of a thing hide behind the layers of abstraction and become invisible.  
+So one cost of [Abstraction](/tags/Abstraction) is [Communication Risk](/tags/Communication-Risk).  While abstraction is a massively powerful technique, it lets the function of a thing hide behind the layers of abstraction and become invisible.  
 
 As we saw above, [Protocols](/risks/On-Protocols) allow things like the Internet to happen - this is amazing! But the higher level protocols _hide_ the details of the lower ones.   HTTP _didn't know anything about_ IP packets, for example.  
 

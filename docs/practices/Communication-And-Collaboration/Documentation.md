@@ -13,8 +13,6 @@ practice:
    - "Guides"
    - "Technical Writing"
   mitigates:
-   - tag: Invisibility Risk
-     reason: "Makes all aspects of the project transparent and accessible to the team."
    - tag: Communication Risk
      reason: "Provides clear guidelines and information, reducing misunderstandings."
    - tag: Internal Model Risk
