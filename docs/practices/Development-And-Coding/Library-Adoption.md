@@ -22,7 +22,7 @@ practice:
    - tag: Complexity Risk
      reason: "Can reduce the amount of code you are responsible for, hence the amount of 'owned' complexity."
   attendant:
-   - tag: Software Dependency Risk
+   - tag: Feature Fit Risk
      reason: "Creates dependencies on the adopted standards and libraries."
    - tag: Lock-In Risk
      reason: "Adopting proprietary libraries may lead to worsening terms-of-service in the future."

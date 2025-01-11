@@ -132,7 +132,7 @@ Sometimes, as discussed in [Agency Risk](/tags/Agency-Risk) these can be in conf
 
 If all of these disparate domains at all of these different scales are tracking health risks, it is clear that we should be doing this for software projects too.
 
-The health risks affecting people are well known (by doctors, at least) and we have the list of state-level risks above too.  [Risk-First](https://riskfirst.org) is therefore about building a similar catalog for risks affecting the health of software development projects.  Risks are in general _not_ unique on software projects - they are the same ones over and over again, such as [Communication Risk](/tags/Communication-Risk) or [Dependency Risk](/tags/Dependency-Risk).   Every project faces these.  
+The health risks affecting people are well known (by doctors, at least) and we have the list of state-level risks above too.  [Risk-First](https://riskfirst.org) is therefore about building a similar catalog for risks affecting the health of software development projects.  Risks are in general _not_ unique on software projects - they are the same ones over and over again, such as [Communication Risk](/tags/Communication-Risk) or [Dependency Risks](/tags/Dependency-Risks).   Every project faces these.  
 
 Having shown that risk management is _scale invariant_, we're next going to look at general strategies we can use to manage all of these various health risks.
 

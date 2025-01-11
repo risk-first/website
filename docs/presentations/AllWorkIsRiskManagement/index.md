@@ -389,7 +389,7 @@ hide_table_of_contents: true
             <div class="slide-notes">
                       <p>Now, at this point, you might be thinking - how many of these risks are there?  tvtropes has literally thousands of different tropes recorded.  Is it the same for Software Projects?  </p>
 
-      <p>Luckily, the answer is no.  On the Risk-First website I just break it down into about 50, and some of those are just more specific versions of others.  There are many different types of Dependency Risk - such as Staff Risk, and Software Dependency Risk.</p>
+      <p>Luckily, the answer is no.  On the Risk-First website I just break it down into about 50, and some of those are just more specific versions of others.  There are many different types of Dependency Risk - such as Agency Risk, and Reliability Risk.</p>
 
       <p>I run through these on the website but we’re not going to go into detail today.   </p>
 

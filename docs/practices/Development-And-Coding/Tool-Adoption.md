@@ -20,7 +20,7 @@ practice:
    - tag: Operational Risk
      reason: "Enhances operational efficiency through the use of appropriate tools."
   attendant:
-   - tag: Software Dependency Risk
+   - tag: Lock-In Risk
      reason: "Creates dependencies on specific tools and their continued support."
    - tag: Funding Risk
      reason: "Can incur costs associated with acquiring and maintaining tools."

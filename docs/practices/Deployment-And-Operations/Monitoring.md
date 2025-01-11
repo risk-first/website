@@ -24,7 +24,7 @@ practice:
   attendant:
    - tag: Complexity Risk
      reason: "Implementing comprehensive monitoring solutions can add complexity."
-   - tag: Software Dependency Risk
+   - tag: Reliability Risk
      reason: "Creates dependency on monitoring tools and their accuracy."
    - tag: Funding Risk
      reason: "High-quality monitoring tools and systems can be costly."

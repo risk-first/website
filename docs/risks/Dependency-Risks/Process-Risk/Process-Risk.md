@@ -11,7 +11,7 @@ tweet: yes
 tags: 
  - Risks
  - Process Risk
-part_of: Dependency Risk
+part_of: Dependency Risks
 ---
 
 <RiskIntro fm={frontMatter} />

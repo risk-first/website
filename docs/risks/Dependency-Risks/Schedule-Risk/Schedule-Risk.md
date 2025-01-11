@@ -13,7 +13,7 @@ tags:
  - Risks
  - Funding Risk
  - Schedule Risk
-part_of: Dependency Risk
+part_of: Dependency Risks
 ---
 
 <RiskIntro fm={frontMatter} />

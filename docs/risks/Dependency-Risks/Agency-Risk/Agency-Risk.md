@@ -17,7 +17,7 @@ featured:
   element: '<risk class="agency" />'
 sidebar_position: 12
 tweet: yes
-part_of: Dependency Risk
+part_of: Dependency Risks
 ---
 
 <RiskIntro fm={frontMatter} />

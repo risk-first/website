@@ -11,7 +11,7 @@ tags:
  - Reliability Risk
  - Risks
 tweet: yes
-part_of: Dependency Risk
+part_of: Dependency Risks
 ---
 
 <RiskIntro fm={frontMatter} />

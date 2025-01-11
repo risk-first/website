@@ -23,7 +23,7 @@ practice:
      reason: "Writing and maintaining unit tests can be time-consuming."
    - tag: Complexity Risk
      reason: "Managing a large suite of unit tests can add to the complexity."
-   - tag: Software Dependency Risk
+   - tag: Reliability Risk
      reason: "Creates dependencies on testing frameworks and tools."
    - tag: Internal Model Risk
      reason: "Unit Testing and code coverage can give false assurances about how a system will work in the real world."

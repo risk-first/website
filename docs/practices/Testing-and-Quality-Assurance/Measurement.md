@@ -22,7 +22,7 @@ practice:
   attendant:
    - tag: Funding Risk
      reason: "Implementing measurement systems can be expensive."
-   - tag: Software Dependency Risk
+   - tag: Reliability Risk
      reason: "Creates dependencies on measurement tools and their accuracy."
    - tag: Complexity Risk
      reason: "Collecting and analyzing data can add to the complexity of the project."

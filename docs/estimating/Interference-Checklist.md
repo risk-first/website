@@ -120,7 +120,7 @@ Download this in [PDF](/estimating/Interference-Checklist.pdf) or [Numbers](/est
 |                                                         | Involves payments                                                                 |           |                 |
 |                                                         | Involves security infrastructure: firewalls, proxies, VPN etc.                    |           |                 |
 |                                                         |                                                                                   |           |                 |
-| **[Dependency Risks](/tags/Dependency-Risk)**           |                                                                                   |           |                 |
+| **[Dependency Risks](/tags/Dependency-Risks)**           |                                                                                   |           |                 |
 |                                                         | Requires the introduction of a new dependency                                     |           |                 |
 |                                                         | … which is immature                                                               |           |                 |
 |                                                         | … which must be chosen from competing alternatives                                |           |                 |

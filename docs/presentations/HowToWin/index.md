@@ -328,7 +328,7 @@ hide_table_of_contents: true
 
       <p>Just like in the horse racing, or the roulette example, what we want are bets where payoff is worth what you stake.  </p>
 
-      <p>So, you might say: a bet on OAuth2 adds the software dependency risk, but at least it doesn’t tie up one developer for a month, pushing up my schedule risk.  Things could go south, but this might be the safest bet out of the ones available.</p>
+      <p>So, you might say: a bet on OAuth2 adds a dependency risk, but at least it doesn’t tie up one developer for a month, pushing up my schedule risk.  Things could go south, but this might be the safest bet out of the ones available.</p>
 
 
             </div>

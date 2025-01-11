@@ -13,7 +13,7 @@ tweet: yes
 tags: 
  - Risks
  - Funding Risk
-part_of: Scarcity Risk
+part_of: Dependency Risks
 ---
 
 <RiskIntro fm={frontMatter} />

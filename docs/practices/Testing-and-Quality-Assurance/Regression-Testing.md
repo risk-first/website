@@ -20,7 +20,7 @@ practice:
   attendant:
    - tag: Schedule Risk
      reason: "Can be time-consuming and introduce delays."
-   - tag: Software Dependency Risk
+   - tag: Reliability Risk
      reason: "Requires a stable testing environment, creating dependencies."
    - tag: Complexity Risk
      reason: "Managing extensive regression tests can add complexity."

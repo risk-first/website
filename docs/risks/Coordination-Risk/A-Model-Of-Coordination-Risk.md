@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## A Model Of Coordination Risk
 
-Earlier, in [Dependency Risk](/tags/Dependency-Risk), we looked at various resources (time, money, people, events etc) and showed how we could [depend on them](/tags/Dependency-Risk) taking on risk.<!-- tweet-end -->  Here, let's consider the situation where there is _competition for those dependencies_ due to [Scarcity Risk]((/tags/Scarcity-Risk):   other agents want to use them in a different way.  
+Earlier, when looking at [Dependency Risks](/tags/Dependency-Risks), we looked at various resources (time, money, people, events etc) and showed how we could [depend on them](/tags/Dependency-Risks) taking on risk.  Here, let's consider the situation where there is _competition for those dependencies_ due to [Scarcity Risk]((/tags/Scarcity-Risk):   other agents want to use them in a different way.  
 
 ### Law Of Diminishing Returns
 

@@ -71,7 +71,7 @@ There are several ways you can prioritise work:
 
 - **Largest Mitigation First**:  What's the thing we can do right now to reduce our [Attendant Risk](/tags/Attendant-Risk) most?  This is sometimes hard to quantify, given [Hidden Risk](/tags/Hidden-Risk), so maybe an easier metric is...
 - **Biggest Win**:  What's the best thing we can do right now to reduce [Attendant Risk](/tags/Attendant-Risk) for least additional [Schedule-Risk](/tags/Schedule-Risk)?  (i.e. simply considering how much *work* is likely to be involved)
-- **Dependency Order**:  Sometimes, you can't build Feature A until Feature B is complete.   Prioritisation helps to identify and mitigate [Dependency Risk](/tags/Dependency-Risk).
+- **Dependency Order**:  Sometimes, you can't build Feature A until Feature B is complete.   Prioritisation helps to identify and mitigate [Dependency Risks](/tags/Dependency-Risks).
 
 By prioritising, you get to [Meet Reality](/thinking/Meeting-Reality) _sooner_ and _more frequently_ and in _small chunks_.
 

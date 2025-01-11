@@ -17,7 +17,7 @@ When we construct messages in a conversation, we have to make judgements about w
 
 This is called [Theory Of Mind](https://en.wikipedia.org/wiki/Theory_of_mind): the appreciation that your knowledge is different to other peoples', and adjusting you messages accordingly.  When teaching, this is called [The Curse Of Knowledge](https://en.wikipedia.org/wiki/Curse_of_knowledge):  teachers have difficulty understanding students' problems _because they already understand the subject_.  
 
-A second, related problem is actually [Dependency Risk](/tags/Dependency-Risk), which is covered more thoroughly in a later section.  Often, to understand a new message, you have to have followed everything up to that point already.
+A second, related problem is actually [Dependency Risk](/tags/Dependency-Risks), which is covered more thoroughly in a later section.  Often, to understand a new message, you have to have followed everything up to that point already.
 
 The same **Message Dependency Risk** exists for computer software:  if there is replication going on between instances of an application and one of the instances misses some messages, you end up with a "[Split Brain](https://en.wikipedia.org/wiki/Split-brain_(computing))" scenario, where later messages can't be processed because they refer to an application state that doesn't exist.  For example, a message saying:
 

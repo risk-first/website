@@ -26,7 +26,7 @@ practice:
   attendant:
    - tag: Lock-In Risk
      reason: "Design decisions can create boundaries that limit flexibility and adaptability."
-   - tag: Software Dependency Risk
+   - tag: Reliability Risk
      reason: "Creates dependencies on software components and design patterns."
    - tag: Feature Fit Risk
      reason: "Too much design up-front can create problems meeting feature requirements."
