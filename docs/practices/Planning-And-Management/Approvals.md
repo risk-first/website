@@ -20,8 +20,6 @@ practice:
      reason: "Ensures that work meets the required standards and specifications before progressing."
    - tag: Communication Risk
      reason: "Provides formal communication of acceptance and readiness."
-   - tag: Conceptual Integrity Risk
-     reason: "Conceptual issues can be avoided by reviews and approvals"
   attendant:
    - tag: Schedule Risk
      reason: "Waiting for approvals can introduce delays in the project timeline."

@@ -16,7 +16,7 @@ practice:
   mitigates:
    - tag: Implementation Risk
      reason: "Ensures quality and correctness of work products."
-   - tag: Conceptual Integrity Risk
+   - tag: Communication Risk
      reason: "Maintains alignment with design principles and goals."
    - tag: Complexity Risk
      reason: "Identifies unnecessary complexity and communicates necessary complexity to the rest of the team."

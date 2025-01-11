@@ -420,7 +420,7 @@ hide_table_of_contents: true
             <div class="slide-notes">
                       <p>So, let’s look at the Stake:   </p>
 
-      <p>Adding a new feature is going to take time - that’s schedule risk.  It’s going to make your product more complex, that’s Complexity Risk.   And, it might make your product harder to understand and use - that’s Conceptual Integrity Risk.</p>
+      <p>Adding a new feature is going to take time - that’s schedule risk.  It’s going to make your product more complex, that’s Complexity Risk.   And, it might make your product harder to understand and use - that’s Communication Risk.</p>
 
       <p>On the other hand, if the features of your product don’t fit the requirements of the client then they may go off and start using a competitor’s product.  So, that’s hopefully this feature fit risk we’re reducing on the other side.</p>
 

@@ -94,17 +94,17 @@ A common complaint when tasks overrun is that the team were blind-sided by [Hidd
  
 Couldn't we bootstrap the estimation process by providing an "Interference Checklist" for story points, based on the things that commonly throw spanners into the works?  
 
-Below, I've sketched out a small section of what this might look like.  The [next article](Interference-Checklist) contains a more complete Interference Checklist that I've put together and you can modify for your own purposes.
+The [next article](Interference-Checklist) contains such an Interference Checklist that I've put together and you can modify for your own purposes.
 
 | **Area**                                     | **Concern**                                                                       | **Notes** | **Point Value** |
 | -------------------------------------------- | --------------------------------------------------------------------------------- | --------- | --------------- |
-| **\- [Conceptual Integrity Risk](/tags/Conceptual-Integrity-Risk)** | Requires new interface to be added      |           |                 |
+| **\- [Communication Risk](/tags/Communication-Risk)** | Requires new interface to be added      |           |                 |
 |                                              | Requires refactoring of existing interfaces                                       |           |                 |
-| **\- [Feature-Access Risk](/tags/Feature-Access-Risk)**| Interface Experimentation required                   |           |                 |
+| **\- [Schedule Risk](/tags/Schedule-Risk)**| Interface Experimentation required                   |           |                 |
 |                                              | Varied user population                                                            |           |                 |
 |                                              |                                                                                   |           |                 |
 | **\- [Implementation Risk](/tags/Implementation-Risk)** | Developer unfamiliar with the requirements / system |           |                 |                                              
-| **\- [Feature-Fit](/tags/Feature-Fit-Risk)**| Success criteria hard to define                                          |           |                 |
+| **\- [Feature Fit Risk](/tags/Feature-Fit-Risk)**| Success criteria hard to define                                          |           |                 |
 |                                              | Difficult-to-access user base                                                     |           |                 |
 
 By starting discussions with an Interference Checklist, we can augment the "play planning poker" process by _prompting people on things to think about_, like "Do we know what done looks like here?", "Is this going to affect some of our existing functionality?", "How are we going to get it tested?".  
@@ -142,13 +142,13 @@ Maybe the Interference Checklist for it looks like this:
 
 | **Area**                                     | **Concern**                                                                       | **Notes** | **Point Value** |
 | -------------------------------------------- | --------------------------------------------------------------------------------- | --------- | --------------- |
-| **\- [Conceptual Integrity Risk](/tags/Conceptual-Integrity-Risk)** | Requires new interface to be added      | Yes, new screen  | 1                |
+| **\- [Communication Risk](/tags/Communication-Risk)** | Requires new interface to be added      | Yes, new screen  | 1                |
 |                                              | Requires refactoring of existing interfaces                                       |           |                 |
-| **\- [Feature-Access Risk](/tags/Feature-Access-Risk)**| Interface Experimentation required                   |           | 1               |
+| **\- [Schedule Risk](/tags/Schedule-Risk)**| Interface Experimentation required                   |           | 1               |
 |                                              | Varied user population                                                            |           | 1               |
 |                                              |                                                                                   |           |                 |
 | **\- [Implementation Risk](/tags/Implementation-Risk)** | Developer unfamiliar with the requirements / system |           |                 |                                              
-| **\- [Feature-Fit](/tags/Feature-Fit-Risk)**| Success criteria hard to define                                          |           |                 |
+| **\- [Feature Fit Risk](/tags/Feature-Fit-Risk)**| Success criteria hard to define                                          |           |                 |
 |                                              | Difficult-to-access user base                                                     | Need to find a representative group | 2    |
 |                                              |                                                                                   | Total     | 5               |      
 

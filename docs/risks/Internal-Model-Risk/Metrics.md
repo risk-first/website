@@ -1,7 +1,14 @@
+---
+title: Metrics
+description: The use of metrics as a cause of Internal Model Risk
 
-### Example: Metrics
+sidebar_position: 2
+tweet: yes
+tags: 
+ - Internal Model Risk
+---
 
-Let's dive into a specific example now: someone finds a useful new metric that helps in evaluating performance. 
+The misuse or misinterpretation of metrics is a common contributor to internal model risks.  Let's dive into a specific example now: someone finds a useful new metric that helps in evaluating performance. 
 
 It might be:
 
@@ -18,6 +25,8 @@ With some skill, they may be able to _correlate_ this metric against some other 
  - "revenue is correlated with response time"
 
 Because the _thing on the right_ is easier to measure than _the thing on the left_, it becomes used as a proxy (or, Map) for the thing they are really interested in (the Territory).  At this point, it's _easy_ to communicate this idea with the rest of the team, and _the market value of the idea is high_:  it is a useful representation of reality, which is shown to be accurate at a particular point in time. 
+
+### 1. Metrics as a Proxy
  
 But _correlation_ doesn't imply _causation_.  The _cause_ might be different:
   
@@ -25,13 +34,13 @@ But _correlation_ doesn't imply _causation_.  The _cause_ might be different:
  - User satisfaction and SLOC might both be down to the calibre of the developers.
  - Response time and revenue might both be down to clever team planning.
  
-Metrics are seductive because they simplify reality and are easily communicated.  But they _inherently_ contain [Map and Territory Risk](/tags/Map-And-Territory-Risk): by relying _only_ on the metrics, you're not really _seeing_ the reality.  
+Metrics are seductive because they simplify reality and are easily communicated.  But they _inherently_ contain [Internal Model Risk](/tags/Internal-Model-Risk): by relying _only_ on the metrics, you're not really _seeing_ the reality.  
 
 The devil is in the detail.
 
-### Reality Evolves
+### 2. Metrics Become Out-Dated
 
-In the same way that [markets evolve to demand more features](/tags/Red-Queen-Risk), our behaviour evolves to incorporate new ideas.  The more popular an idea is, the more people will modify their behaviour as a result of it, and the more the world will change.   
+Just as market needs evolve over time, our behaviour evolves to incorporate new ideas.  The more popular an idea is, the more people will modify their behaviour as a result of it, and the more the world will change.   
 
 In the case of metrics this is where they start being used for more than just indicators but as measures of performance or targets:
 
@@ -45,13 +54,9 @@ Some of this seems obvious:  _Of course_ SLOC is a terrible measure performance!
 
 Will the idea still be useful as the world adapts?   Although the Hype Cycle model doesn't cover it, ideas and products all eventually have their day and decline in usefulness.
 
-### Bad Ideas
+### 3. Ideas Take Time To Prove (or Disprove)
 
-There are plenty of ideas which _seem a really good idea at the time_ but then end up being terrible.  It's only as we _improve our internal model_ and realize the hidden risks that we stop using them.  While SLOC is a minor offender, [CFCs](https://en.wikipedia.org/wiki/Chlorofluorocarbon) or [Leaded Petrol](https://en.wikipedia.org/wiki/Tetraethyllead) are more significant examples.  
-
-![Hype Cycle for something that turns out to be a _bad_ idea](/img/numbers/hype3.png)
-
-The above chart shows an initially promising idea that turns out to be terrible.  That is, the **Knowledge** value of it ends up being significantly less than the **Map and Territory Risk** of using it.  Hence, there is a "Period of Inoculation" where the population realise their mistake - there is "negative hype" as they work to phase out the offending idea until it's forgotten.
+There are plenty of ideas which _seem a really good idea at the time_ but then end up being terrible.  It's only as we _improve our internal model_ and realize the hidden risks that we stop using them.  While SLOC is a minor offender, [CFCs](https://en.wikipedia.org/wiki/Chlorofluorocarbon) or [Leaded Petrol](https://en.wikipedia.org/wiki/Tetraethyllead) are more significant examples.   Hence, there is a "Period of Inoculation" where the population realise their mistake - there is "negative hype" as they work to phase out the offending idea until it's forgotten.
 
 SLOC is not on its own a _bad idea_, but using it as a metric for developer productivity _is_.
 
@@ -60,20 +65,3 @@ SLOC is not on its own a _bad idea_, but using it as a metric for developer prod
 ![Evolution Feature Risks, as manifested in the Internal Model](/img/generated/risks/map-and-territory/map_and_territory_table_3.svg)
 
 The diagram above shows how Evolution-type [Feature Risks](/tags/Feature-Risk) can manifest in the Internal Model.
-
-
-
-## Audience
-
-Communication allows us to _share_ information between [Internal Models](/tags/Internal-Model) of a whole audience of people.  The [Communication Risk](/tags/Communication-Risk) and [Coordination Risk](/tags/Coordination-Risk) sections covered the difficulties inherent in aligning [Internal Models](/tags/Internal-Model) so that they cooperate.
-
-![Relative popularity of "Machine Learning" and "Big Data" as search terms on [Google Trends](https://trends.google.com), 2011-2018 ](/img/google-trends.png)
- 
-But how does [Map and Territory Risk](/tags/Map-And-Territory-Risk) apply across a population of [Internal Models](/tags/Internal-Model)?   Can we track the rise-and-fall of _ideas_ like we track stock prices?  In effect, this is what [Google Trends](https://trends.google.com) does.  In the chart above, we can see the relative popularity of two search terms over time.  This is probably as good an indicator as any of the changing popularity of an abstraction within an audience.
-
-## Evolution
-
-So concepts and abstractions spread through an audience.  But what happens next?   
-
- - People will use and abuse new ideas up to the point when they start breaking down. (We also discussed this as the **Peter Principle** in [Lock-In Risk](/tags/Lock-In-Risk).)  
- - At the same time, reality itself _evolves_ in response to the idea:  the new idea displaces old ones,  behaviour changes, and the idea itself can change. 

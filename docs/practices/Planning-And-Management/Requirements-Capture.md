@@ -17,7 +17,7 @@ practice:
      reason: "Ensures that features align with client needs and expectations."
    - tag: Coordination Risk
      reason: "Reduces coordination risks around deciding what should be built."
-   - tag: Conceptual Integrity Risk
+   - tag: Communication Risk
      reason: "Helps in explaining exactly what should be built."
   attendant:
    - tag: Feature Drift Risk

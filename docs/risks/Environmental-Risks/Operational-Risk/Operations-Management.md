@@ -42,7 +42,7 @@ The aim is to build a human-machine operational system that is [_Homeostatic_](h
 |Expensive at scale           |Cheap at scale               |
 |Reacting and Anticipating    |Recording                    |
 
-As we saw in [Map and Territory Risk](/tags/Map-And-Territory-Risk), it's very easy to fool yourself, especially around [Key Performance Indicators (KPIs)](https://en.wikipedia.org/wiki/Performance_indicator) and metrics. Large organisations have [Audit](https://en.wikipedia.org/wiki/Audit) functions precisely to guard against their own internal failing [processes](/tags/Process-Risk) and [Agency Risk](/tags/Agency-Risk).  Audits could be around software tools, processes, practices, quality and so on.  Practices such as [Continuous Improvement](https://en.wikipedia.org/wiki/Continual_improvement_process) and [Total Quality Management](https://en.wikipedia.org/wiki/Total_quality_management) also figure here.
+As we saw in [Internal Model Risk](/tags/Internal-Model-Risk), it's very easy to fool yourself, especially around [Key Performance Indicators (KPIs)](https://en.wikipedia.org/wiki/Performance_indicator) and metrics. Large organisations have [Audit](https://en.wikipedia.org/wiki/Audit) functions precisely to guard against their own internal failing [processes](/tags/Process-Risk) and [Agency Risk](/tags/Agency-Risk).  Audits could be around software tools, processes, practices, quality and so on.  Practices such as [Continuous Improvement](https://en.wikipedia.org/wiki/Continual_improvement_process) and [Total Quality Management](https://en.wikipedia.org/wiki/Total_quality_management) also figure here.
 
 ### Scanning The Operational Context
 

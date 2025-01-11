@@ -1,7 +1,18 @@
+---
+title: Systemic Threats
+description: Internal Model Risk threats caused by broken systems.
 
-## Hierarchical Organisations
+sidebar_position: 1
+tweet: yes
+tags: 
+ - Internal Model Risk
+---
 
-[Map And Territory Risk](/tags/Map-And-Territory-Risk) "trickles down" through an organisation.  The higher levels have an out-sized ability to pervert the incentives at lower levels because once an organisation begins to pursue a "bullshit objective" the whole company can align to this.  
+Broken systems of control are a common threat for [Internal Model Risk](/tags/Internal-Model-Risk).  Let's examine a few cases.
+
+## 1. Hierarchical Organisations
+
+[Internal Model Risk](/tags/Internal-Model-Risk) "trickles down" through an organisation.  The higher levels have an out-sized ability to pervert the incentives at lower levels because once an organisation begins to pursue a "bullshit objective" the whole company can align to this.  
 
 [The Huffington Post](https://www.huffingtonpost.com/otto-scharmer/the-fish-rots-from-the-he_b_8208652.html) paints a brilliant picture of how Volkswagen managed to get caught faking their emissions tests.  As they point out:
 
@@ -14,9 +25,9 @@ This article identifies the following process:
 - **Deception**:  backed into a corner, engineers had no choice but to find "creative" ways to meet the metrics.
 - **Destruction**: eventually, the truth comes out, to the detriment of the company, the environment and the shareholders.  As the article's title summarizes "A fish rots from the head down".
 
-## Markets
+## 2. Markets
 
-We've considered [Map and Territory Risk](/tags/Map-And-Territory-Risk) for individuals, teams and organisations.  [Inadequate Equilibria](https://equilibriabook.com) by Eleizer Yudkovsky, looks at how perverse incentive mechanisms break not just departments, but entire societal systems.  He highlights one example involving _academics_ and _grantmakers_ in academia:
+We've considered [Internal Model Risk](/tags/Internal-Model-Risk) for individuals, teams and organisations.  [Inadequate Equilibria](https://equilibriabook.com) by Eleizer Yudkovsky, looks at how perverse incentive mechanisms break not just departments, but entire societal systems.  He highlights one example involving _academics_ and _grantmakers_ in academia:
 
  - It's not very apparent which academics are more worthy of funding.
  - One proxy is what they've published (scientific papers) and where they've published (journals).
@@ -33,15 +44,15 @@ Scientific journals are a single example taken from a closely argued book invest
 
 As usual, this section forms a grab-bag of examples in a complex topic.  But it's time to move on as there is one last stop we have to make on the [Risk Landscape](/tags/Risk-Landscape), and that is to look at [Operational Risk](/tags/Operational-Risk).  
 
-## Humans and Machines
+## 3. Cognitive Biases
 
-In the example of the SatNav, we saw how the _quality_ of [Map and Territory Risk](/tags/Map-And-Territory-Risk) is different for _people_ and _machines_.   Whereas people _should_ be expected show skepticism for new (unlikely) information our databases accept it unquestioningly.  _Forgetting_ is an everyday, usually benign part of our human [Internal Model](/tags/Internal-Model), but for software systems it is a production crisis involving 3am calls and backups.  
+In the example of the SatNav, we saw how the _quality_ of [Internal Model Risk](/tags/Internal-Model-Risk) is different for _people_ and _machines_.   Whereas people _should_ be expected show skepticism for new (unlikely) information our databases accept it unquestioningly.  _Forgetting_ is an everyday, usually benign part of our human [Internal Model](/tags/Internal-Model), but for software systems it is a production crisis involving 3am calls and backups.  
 
-For Humans, [Map and Territory Risk](/tags/Map-And-Territory-Risk) is exacerbated by [cognitive biases](https://en.wikipedia.org/wiki/List_of_cognitive_biases):
+For Humans, [Internal Model Risk](/tags/Internal-Model-Risk) is exacerbated by [cognitive biases](https://en.wikipedia.org/wiki/List_of_cognitive_biases):
 
 > "Cognitive biases are systematic patterns of deviation from norm or rationality in judgement, and are often studied in psychology and behavioural economics." - [Cognitive Bias, _Wikipedia_](https://en.wikipedia.org/wiki/List_of_cognitive_biases)
 
-There are _lots_ of cognitive biases.  But let's just mention some that are relevant to [Map and Territory Risk](/tags/Map-And-Territory-Risk):
+There are _lots_ of cognitive biases.  But let's just mention some that are relevant to [Internal Model Risk](/tags/Internal-Model-Risk):
 
 - **Availability Heuristic**: people overestimate the importance of knowledge they have been exposed to. 
 - **The Ostrich Effect**:  which is where dangerous information is ignored or avoided because of the emotions it will evoke.

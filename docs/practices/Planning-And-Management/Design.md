@@ -15,7 +15,7 @@ practice:
    - "Architecture"
    - "Research and Design"
   mitigates:
-   - tag: Conceptual Integrity Risk
+   - tag: Communication Risk
      reason: "Provides a clear structure and organization, making the system easier to understand and use."
    - tag: Implementation Risk
      reason: "Guides the development process, ensuring that the system meets requirements and design specifications."

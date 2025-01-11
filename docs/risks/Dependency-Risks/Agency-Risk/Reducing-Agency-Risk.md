@@ -69,7 +69,7 @@ So one mitigation for [Agency Risk](/tags/Agency-Risk) is therefore to employ th
 
 > "One key to success in a mission is establishing clear lines of blame." - [Henshaw's Law, _Akin's Laws Of Spacecraft Design_](https://spacecraft.ssl.umd.edu/akins_laws.html)
 
-But _extrinsic motivation_ is a complex, difficult-to-apply tool.  In [Map And Territory Risk](/tags/Map-And-Territory-Risk) we will come back to this and look at the various ways in which it can go awry.
+But _extrinsic motivation_ is a complex, difficult-to-apply tool.  In [Internal Model Risk](/tags/Internal-Model-Risk) we will come back to this and look at the various ways in which it can go awry.
 
 ![Collective Code Ownership, Individual Responsibility](/img/generated/risks/agency/cco.svg)
 

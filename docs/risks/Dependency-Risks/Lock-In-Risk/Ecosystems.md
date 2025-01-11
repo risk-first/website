@@ -54,7 +54,7 @@ When a tool or platform is popular, it is under pressure to increase in complexi
 
 > "The Peter principle is a concept in management developed by Laurence J. Peter, which observes that people in a hierarchy tend to rise to their 'level of incompetence'." - [The Peter Principle, _Wikipedia_](https://en.wikipedia.org/wiki/Peter_principle)
 
-Although designed for _people_, it can just as easily be applied to any other dependency you can think of.  This means when things get popular, there is a tendency towards [Conceptual Integrity Risk](/tags/Conceptual-Integrity-Risk) and [Complexity Risk](/tags/Complexity-Risk).  
+Although designed for _people_, it can just as easily be applied to any other dependency you can think of.  This means when things get popular, there is a tendency towards the sprawl, increasing [Communication Risk](/tags/Communication-Risk) and [Complexity Risk](/tags/Complexity-Risk).  
 
 ![Java Public Classes By Version (3-9)](/img/numbers/java_classes_by_version.png)
 

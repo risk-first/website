@@ -87,7 +87,7 @@ Often you get user-stories like these:
 
 > "We need a global search because people spend too much time menu-diving."
 
-New features might help sell your software to new markets and please existing power users.  But too many features confuse users, obscuring the essential purpose of the software.  This is [Conceptual Integrity Risk](/tags/Conceptual-Integrity-Risk) - trying to please everyone means you please no-one.  
+New features might help sell your software to new markets and please existing power users.  But too many features confuse users, obscuring the essential purpose of the software.  This is a [Communication Risk](/tags/Communication-Risk) - trying to please everyone means you please no-one.  
 
 ![Stake and Reward for Adding New Features](/img/generated/bets/coding/new-feature.svg)
 
