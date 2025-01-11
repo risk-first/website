@@ -9,7 +9,7 @@ sidebar_position: 1
 tags: 
  - Risks
  - Feature Fit Risk
-part_of: Feature Risk
+part_of: Feature Risks
 ---
 
 <RiskIntro fm={frontMatter} />

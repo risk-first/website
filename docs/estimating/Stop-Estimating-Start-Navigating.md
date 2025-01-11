@@ -106,7 +106,7 @@ What does that mean?
 
 The problem is that estimation only addresses a single risk:  runway risk/time resource.  It says nothing about other risks that you might bump into.
 
-Why is all my code in the bin?  I guess either it was badly written (which, probably it isn't, given that it's probably not objectively worse than the 10% that is in production) or, more likely, it didn't address _Feature RIsk_ properly, or, it was useful, but people didn't find out about how amazing it was.  Or, it was built to work on top of X, but then X was decomissioned (Dependency Risk) or, the budget was cut from the department and there was no funding (Dependency Risk... but maybe caused by Feature RIsk)?
+Why is all my code in the bin?  I guess either it was badly written (which, probably it isn't, given that it's probably not objectively worse than the 10% that is in production) or, more likely, it didn't address [Feature Fit Risk](/tags/Feature-Fit-Risk) properly, or, it was useful, but people didn't find out about how amazing it was.  Or, it was built to work on top of X, but then X was decommissioned (Dependency Risk) or, the budget was cut from the department and there was no funding (Dependency Risk... but maybe caused by Feature Fit Risk)?
 
 No estimates says forget about trying to get the numbers right, because you can't.  What's better than that?  Let's try and focus on reducing that 90% of waste by thinking about _risks other than time_.
 

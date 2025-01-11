@@ -450,7 +450,7 @@ hide_table_of_contents: true
             <div class="slide-notes">
                       <p>So, the payoff, for doing Fixed Price Contract is that your business is going to make money - it’s funding risks will be reduced.</p>
 
-      <p>But, for the client, the great thing about a Fixed Price Contract is that they know how much the project will cost.  So, you’ve taken on their funding risk.  And of course, you’ve taken on their Feature Risk - you have to provide the Features of the software that this client needs.</p>
+      <p>But, for the client, the great thing about a Fixed Price Contract is that they know how much the project will cost.  So, you’ve taken on their funding risk.  And of course, you’ve taken on their Feature Risks - you have to provide the Features of the software that this client needs.</p>
 
       <p>So in order to make accurate estimates, and win these bets, it’s all about having a good internal model of the development process, and how long things take.</p>
 

@@ -29,7 +29,7 @@ If you are building software, you need to account for the [Legal Risks](/tags/Le
 
 An online gaming firm is considering adding forum features, where players can discuss tactics and events related to their game and upload images and videos that they've created related to the game.  
 
-![Mitigating Feature Risk Leads to Legal Risk](/img/generated/risks/posters/legal-risk.svg)
+![Mitigating Feature Fit Risk Leads to Legal Risk](/img/generated/risks/posters/legal-risk.svg)
 
 But as the above diagram shows, mitigating these [Feature Fit Risks](/tags/Feature-Fit-Risk) naively exposes the firm to [Leagl Risks](/tags/Legal-Risk).  For example:
 

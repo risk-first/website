@@ -13,7 +13,7 @@ practice:
    - "Development"
    - "Software Engineering"
   mitigates:
-   - tag: Feature Risk
+   - tag: Feature Fit Risk
      reason: "Build or improve some features which our clients will find useful."
    - tag: Process Risk
      reason: Problems and edge cases with software processes can be fixed by adding code.

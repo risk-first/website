@@ -86,7 +86,7 @@ So there is a tension between "you only get one chance to make a first impressio
 A Risk-First re-framing of this (as shown in the diagram above) might be the balance between:
 
 - The perceived [Scarcity Risks](/tags/Scarcity-Risk) (such as funding, time available, etc) of staying in development (pressure to ship).
-- The perceived [Trust & Belief Risk](/tags/Trust-And-Belief-Risk), [Feature Risk](/tags/Feature-Risk) and [Operational Risk](/tags/Operational-Risk) of going to production (pressure to improve).
+- The perceived [Trust & Belief Risk](/tags/Trust-And-Belief-Risk), [Feature Fit  Risk](/tags/Feature-Fit-Risk) and [Operational Risk](/tags/Operational-Risk) of going to production (pressure to improve).
 
 The "should we ship?" decision is therefore a complex one.  In [Meeting Reality](/thinking/Meeting-Reality), we discussed that it's better to do this "sooner, more frequently, in smaller chunks and with feedback".  We can meet [Operational Risk](/tags/Operational-Risk) _on our own terms_ by doing so: 
 
@@ -101,6 +101,6 @@ The "should we ship?" decision is therefore a complex one.  In [Meeting Reality]
 
 ## The End Of The Road
 
-In a way, [actions](/tags/Take-Action) like **Design** and **Improvement** bring us right back to where we started from: identifying [Dependency Risks](/tags/Dependency-Risk), [Feature Risks](/tags/Feature-Risk) and [Complexity Risks](/tags/Complexity-Risk) that hinder our operation, and mitigating them through actions like _software development_.  
+In a way, [actions](/tags/Take-Action) like [Design](/tags/Design) and [Development](/tags/Coding) bring us right back to where we started from: identifying [Dependency Risks](/tags/Dependency-Risk), [Feature Risks](/tags/Feature-Risks) and [Complexity Risks](/tags/Complexity-Risk) that hinder our operation, and mitigating them through actions like _software development_.  
 
 Our safari of risk is finally complete: it's time to reflect on what we've seen in the next section, [Staging and Classifying](Staging-And-Classifying).  

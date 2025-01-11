@@ -29,7 +29,7 @@ The previous article, [Fixing Scrum](Fixing-Scrum), examined Scrum's idea of "Sp
 
 ![Scrum: Consequences Of Time-Boxing](/img/generated/estimating/planner/scrum-consequences.svg)
 
-The diagram above shows this behaviour in the form of a [Risk-First Diagram](/thinking/Risk-First-Diagrams).  Put briefly:  _risks_ ([Schedule Risk](/tags/Schedule-Risk), [Feature Risk](/tags/Feature-Risk)) are addressed by actions such as "Development", "Review" or "Planning Poker".  
+The diagram above shows this behaviour in the form of a [Risk-First Diagram](/thinking/Risk-First-Diagrams).  Put briefly:  _risks_ ([Schedule Risk](/tags/Schedule-Risk), [Feature Fit Risk](/tags/Feature-Fit-Risk)) are addressed by actions such as "Development", "Review" or "Planning Poker".  
 
 If you're new to [Risk-First](https://www.riskfirst.org) then it's probably worth explaining at this point that one of the purposes of this project is to enumerate the different types of risk you could face running a software project.  You can begin to learn about them all [here](/risks/Start).  Suffice to say, we have icons to represent each of these kinds of risks, and the rest of this article will introduce some of them to you in passing.
 
@@ -103,9 +103,9 @@ So, this diagram encapsulates the reason why we might fix the rendering bug:  it
 
 Let's move on to task 2, the **Search Function**, as shown in the above diagram.
 
-As with the **Rendering Bug**, above, we lose something:  [Feature Risk](/tags/Feature-Risk), which is the risk (to us) that the features our product is supplying don't meet the client's (or the market's) requirements.  Writing code is all about identifying and removing [Feature Risk](/tags/Feature-Risk), and building products that fit the needs of their users.
+As with the **Rendering Bug**, above, we lose something:  [Feature Fit Risk](/tags/Feature-Fit-Risk), which is the risk (to us) that the features our product is supplying don't meet the client's (or the market's) requirements.  Writing code is all about identifying and removing [Feature Fit Risk](/tags/Feature-Fit-Risk), and building products that fit the needs of their users.
 
-So as in the Rendering Bug example, we can show [Feature Risk](/tags/Feature-Risk) being eliminated by showing it on the left with a strike-out line.   However, it's been established during analysis that the way to implement this feature is to introduce [ElasticSearch](https://www.elastic.co), a third-party piece of software.  This in itself is an [Attendant Risk](/tags/Attendant-Risk) of taking that action:  
+So as in the Rendering Bug example, we can show [Feature Fit Risk](/tags/Feature-Fit-Risk) being eliminated by showing it on the left with a strike-out line.   However, it's been established during analysis that the way to implement this feature is to introduce [ElasticSearch](https://www.elastic.co), a third-party piece of software.  This in itself is an [Attendant Risk](/tags/Attendant-Risk) of taking that action:  
 
 - Are we going to find that easy to deploy and maintain?  
 - What impact will this have on hosting charges?  

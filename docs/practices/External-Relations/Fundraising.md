@@ -18,7 +18,7 @@ practice:
      reason: "Provides necessary financial resources to support the startup’s operations and growth."
    - tag: Market Risk
      reason: "Allows the startup to invest in market research and customer acquisition."
-   - tag: Feature Risk
+   - tag: Feature Fit Risk
      reason: "Enables the startup to fund product development and innovation."
   attendant:
    - tag: Agency Risk

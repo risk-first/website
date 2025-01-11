@@ -38,11 +38,11 @@ The most common way we talk about [Complexity Risk](/tags/Complexity-Risk) in so
 
 > "Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite... The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organisations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise." - [Ward Cunningham, 1992, _Wikipedia, Technical Debt_](https://en.wikipedia.org/wiki/Technical_debt)
 
-Building a low-complexity first-time solution is often a waste:  in the first version, we're usually interested in reducing [Feature Risk](/tags/Feature-Risk) as fast as possible. That is, putting working software in front of users to get [feedback](/thinking/Meeting-Reality).  We would rather carry [Complexity Risk](/tags/Complexity-Risk) than take on more [Schedule Risk](/tags/Schedule-Risk).
+Building a low-complexity first-time solution is often a waste:  in the first version, we're usually interested in reducing [Feature Fit Risk](/tags/Feature-Fit-Risk) as fast as possible. That is, putting working software in front of users to get [feedback](/thinking/Meeting-Reality).  We would rather carry [Complexity Risk](/tags/Complexity-Risk) than take on more [Schedule Risk](/tags/Schedule-Risk).
 
-So a quick-and-dirty, over-complex implementation mitigates the same [Feature Risk](/tags/Feature-Risk) and allows you to [Meet Reality](/thinking/Meeting-Reality) faster.  
+So a quick-and-dirty, over-complex implementation mitigates the same [Feature  Fit Risk](/tags/Feature-Fit-Risk) and allows you to [Meet Reality](/thinking/Meeting-Reality) faster.  
 
-But having mitigated the [Feature Risk](/tags/Feature-Risk) this way, you are likely exposed to a higher level of [Complexity Risk](/tags/Complexity-Risk) than would be desirable.  This "carries forward" and means that in the future, you're going to be slower.  As in the case of a real debt, "servicing" the debt incurs a steady, regular cost.
+But having mitigated the [Feature Fit Risk](/tags/Feature-Fit-Risk) this way, you are likely exposed to a higher level of [Complexity Risk](/tags/Complexity-Risk) than would be desirable.  This "carries forward" and means that in the future, you're going to be slower.  As in the case of a real debt, "servicing" the debt incurs a steady, regular cost.
 
 ### Kitchen Analogy
 
@@ -67,7 +67,7 @@ In Brooks' essay "No Silver Bullet - Essence and Accident in Software Engineerin
 
 The problem with this definition is that we are accepting features of our software as _essential_.  
 
-Applying Risk-First, if you want to mitigate some [Feature Risk](/tags/Feature-Risk) then you have to pick up [Complexity Risk](/tags/Complexity-Risk) as a result.  But, that's a _choice you get to make_.  
+Applying Risk-First, if you want to mitigate some [Feature Fit Risk](/tags/Feature-Fit-Risk) then you have to pick up [Complexity Risk](/tags/Complexity-Risk) as a result.  But, that's a _choice you get to make_.  
 
 ![Mitigating Feature Risk](/img/generated/risks/complexity/feature-creep.svg)
 

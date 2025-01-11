@@ -26,7 +26,7 @@ Process Risk intersects with several other types of risk we've covered so far:
 - [Agency Risk](/tags/Agency-Risk): Processes have their own agency - they often involve decision making (a loan application or passport renewal).
 - [Reliability Risk](tags/Reliability-Risk): Processes can fail for various reasons (a payment process for example).
 - [Communication Risk](/tags/Communication-Risk): You need to communicate intent to the process, and have it report back its status (think of buying something on the Internet, and the delivery company communicating where the parcel is in transit).
-- [Feature Risks](/tags/Feature-Risk): A Process should be supplying some useful _features_ to you in order for you to use it.  Is it fit for purpose? (An example might be starting to fill out a form but then realising you're filling out the wrong form).
+- [Feature Fit Risk](/tags/Feature-Fit-Risk): A Process should be supplying some useful _features_ to you in order for you to use it.  Is it fit for purpose? (An example might be starting to fill out a form but then realising you're filling out the wrong form).
 
 So clearly there is overlap here with other types of risk we've looked at:  a good process should be reliable, available (i.e. not scarce), transparent in its communications and obedient to our wishes.  In fact, Process Risk really should be thought of as just a wrapper for other things.  Nevertheless, it's a useful pattern to talk about as it comes up repeatedly.
 
