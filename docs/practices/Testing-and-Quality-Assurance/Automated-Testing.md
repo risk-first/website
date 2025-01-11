@@ -13,9 +13,7 @@ practice:
    - "Module Testing"
   mitigates:
    - tag: Implementation Risk
-     reason: "Ensures that individual components work correctly."
-   - tag: Regression Risk
-     reason: "Detects regressions early in the development cycle."
+     reason: "Ensures that individual components work correctly and detects regressions early in the development cycle."
    - tag: Complexity Risk
      reason: "Aids in refactoring by ensuring that functionality survives the change."
   attendant:

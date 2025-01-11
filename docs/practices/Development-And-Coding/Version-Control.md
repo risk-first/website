@@ -14,11 +14,9 @@ practice:
    - "SCM"
   mitigates:
    - tag: Implementation Risk
-     reason: "Tracks changes and manages versions of the codebase, reducing the risk of implementation errors."
+     reason: "Maintains a history of changes, allowing rollback to previous versions if needed."
    - tag: Coordination Risk
      reason: "Facilitates collaboration by allowing multiple developers to work on the codebase simultaneously."
-   - tag: Regression Risk
-     reason: "Maintains a history of changes, allowing rollback to previous versions if needed."
   attendant:
    - tag: Communication Risk
      reason: "Poor version management can be chaotic and leave lots of work in progress."

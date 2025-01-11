@@ -16,9 +16,7 @@ practice:
    - tag: Reliability Risk
      reason: "Ensures that integrated components work together as expected."
    - tag: Implementation Risk
-     reason: "Validates that the implementation meets requirements."
-   - tag: Regression Risk
-     reason: "Detects regressions early in the integration phase."
+     reason: "Validates that the implementation meets requirements and detects regressions early in the integration phase."
   attendant:
    - tag: Schedule Risk
      reason: "Can be time-consuming, leading to delays in the project timeline."

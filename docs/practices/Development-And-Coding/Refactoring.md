@@ -26,7 +26,7 @@ practice:
   attendant:
    - tag: Schedule Risk
      reason: "Refactoring can be time-consuming and delay project timelines."
-   - tag: Regression Risk
+   - tag: Implementation Risk
      reason: "Done carelessly, refactoring can introduce new issues into the codebase"
   related:
    - ../Development-and-Coding/Coding

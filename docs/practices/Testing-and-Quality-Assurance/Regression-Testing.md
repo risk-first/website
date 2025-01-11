@@ -13,7 +13,7 @@ practice:
    - "Non-Regression Testing"
    - "Software Regression Testing"
   mitigates:
-   - tag: Regression Risk
+   - tag: Implementation Risk
      reason: "Detects and prevents regressions in the software."
    - tag: Reliability Risk
      reason: "Regression testing helps prevent reliability breaks caused by software change."

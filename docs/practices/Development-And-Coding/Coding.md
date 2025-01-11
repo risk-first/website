@@ -19,11 +19,9 @@ practice:
      reason: Problems and edge cases with software processes can be fixed by adding code.
   attendant:
    - tag: Implementation Risk
-     reason: "Poor coding practices can lead to significant implementation issues."
+     reason: "Changes in code can introduce new bugs and regressions."
    - tag: Complexity Risk
      reason: "Writing new code adds complexity to a project."
-   - tag: Regression Risk
-     reason: "Changes in code can introduce new bugs and regressions."
   related:
    - ../Planning-and-Management/Requirements-Capture
    - ../Testing-and-Quality-Assurance/Integration-Testing
