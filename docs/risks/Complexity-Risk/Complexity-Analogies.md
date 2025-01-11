@@ -3,14 +3,11 @@ sidebar_position: 3
 title: Analogies For Complexity
 ---
 
-
-## Analogies
-
 So, we've looked at some measures of software structure complexity.  We can say "this is more complex than this" for a given piece of code or structure.  We've also looked at three ways to manage it:  [Abstraction](/tags/Abstraction) and [Modularisation](/risks/Complexity-Risk#hierarchies-and-modularisation) and via [Dependencies](/risks/Complexity-Risk#languages-and-dependencies).  
 
 However, we've not really said why complexity entails [Risk](/tags/Attendant-Risk).  So let's address that now by looking at three analogies, [Mass](/risks/Complexity-Risk#complexity-is-mass), [Technical Debt](/risks/Complexity-Risk#technical-debt) and [Mess](/risks/Complexity-Risk#kitchen-analogy)  
 
-### Complexity is Mass
+## Complexity is Mass
 
 The first way to look at complexity is as **Mass** :  a software project with more complexity has greater mass than one with less complexity.  
 
@@ -32,7 +29,7 @@ If we want to move _fast_ we need simple code-bases.
 
 At a basic level, [Complexity Risk](/tags/Complexity-Risk) heavily impacts on [Schedule Risk](/tags/Schedule-Risk):  more complexity means you need more force to get things done, which takes longer.
 
-### Technical Debt
+## Technical Debt
 
 The most common way we talk about [Complexity Risk](/tags/Complexity-Risk) in software is as [Technical Debt](/risks/Complexity-Risk#technical-debt):
 
@@ -58,7 +55,7 @@ It's not long before someone comes down with food poisoning.
 
 We wouldn't tolerate this behaviour in a restaurant kitchen, so why put up with it in a software project?  This state-of-affairs is illustrated in the above diagram.  Not only does [Complexity Risk](/tags/Complexity-Risk) slow down future development, it can be a cause of [Operational Risks](/tags/Operational-Risk) and [Security Risks](Agency-Risk#security).
 
-### Feature Creep
+## Feature Creep
 
 In Brooks' essay "No Silver Bullet - Essence and Accident in Software Engineering", a distinction is made between:
 

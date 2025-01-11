@@ -3,10 +3,6 @@ sidebar_position: 4
 title: Hiding Places
 ---
 
-
-
-## Where Complexity Hides
-
 So far, we've focused mainly on [Codebase Risk](/tags/Codebase-Risk), but this isn't the only place complexity appears in software.  We're going to cover a few of these areas now, but be warned, this is not a complete list by any means:
 
  - Algorithmic (Space and Time) Complexity

@@ -77,7 +77,7 @@ In recent years the [DevOps](https://en.wikipedia.org/wiki/DevOps) movement has 
   
 ## Improvement
 
-No system can be perfect, and after it meets the real world, we will want to improve it over time.  But [Operational Risk](/tags/Operational-Risk) includes an element of [Trust & Belief Risk](/tags/Trust-And-Belief-Risk): we have a  _reputation_ and the good will of our customers to consider when we make improvements.  Because this is very hard to rebuild, we should consider this before releasing software that might not live up to expectations.    
+No system can be perfect, and after it meets the real world, we will want to improve it over time.  But [Operational Risk](/tags/Operational-Risk) includes an element of [Reputational Risk](/tags/Reputational-Risk): we have a  _reputation_ and the good will of our customers to consider when we make improvements.  Because this is very hard to rebuild, we should consider this before releasing software that might not live up to expectations.    
 
 So there is a tension between "you only get one chance to make a first impression" and "gilding the lily" (perfectionism).  In the past I've seen this stated as _pressure to ship vs pressure to improve_.
 
@@ -85,8 +85,8 @@ So there is a tension between "you only get one chance to make a first impressio
 
 A Risk-First re-framing of this (as shown in the diagram above) might be the balance between:
 
-- The perceived [Scarcity Risks](/tags/Scarcity-Risk) (such as funding, time available, etc) of staying in development (pressure to ship).
-- The perceived [Trust & Belief Risk](/tags/Trust-And-Belief-Risk), [Feature Fit  Risk](/tags/Feature-Fit-Risk) and [Operational Risk](/tags/Operational-Risk) of going to production (pressure to improve).
+- The perceived scarcity (such as funding, time available, etc) of staying in development (pressure to ship).
+- The perceived [Reputational Risk](/tags/Reputational-Risk), [Feature Fit Risk](/tags/Feature-Fit-Risk) and [Operational Risk](/tags/Operational-Risk) of going to production (pressure to improve).
 
 The "should we ship?" decision is therefore a complex one.  In [Meeting Reality](/thinking/Meeting-Reality), we discussed that it's better to do this "sooner, more frequently, in smaller chunks and with feedback".  We can meet [Operational Risk](/tags/Operational-Risk) _on our own terms_ by doing so: 
 

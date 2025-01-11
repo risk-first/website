@@ -3,7 +3,6 @@ sidebar_position: 2
 title: Connectivity As Complexity
 ---
 
-
 A second useful measure of complexity comes from graph theory, and that is the connectivity of a graph:
 
 > "...the minimum number of elements (nodes or edges) that need to be removed to disconnect the remaining nodes from each other" - [Connectivity, _Wikipedia_](https://en.wikipedia.org/wiki/Connectivity_(graph_theory))

@@ -22,9 +22,8 @@ part_of: Dependency Risks
 
 Process Risk intersects with several other types of risk we've covered so far:
 
-- [Scarcity Risk](/tags/Scarcity-Risk): Processes may become scarce when they lack resources (think of CPU bottlenecks or queues at the post-office counter).
 - [Agency Risk](/tags/Agency-Risk): Processes have their own agency - they often involve decision making (a loan application or passport renewal).
-- [Reliability Risk](tags/Reliability-Risk): Processes can fail for various reasons (a payment process for example).
+- [Reliability Risk](tags/Reliability-Risk): Processes can fail for various reasons (a payment process for example) or unavailable when they lack resources (think of CPU bottlenecks or queues at the post-office counter)..
 - [Communication Risk](/tags/Communication-Risk): You need to communicate intent to the process, and have it report back its status (think of buying something on the Internet, and the delivery company communicating where the parcel is in transit).
 - [Feature Fit Risk](/tags/Feature-Fit-Risk): A Process should be supplying some useful _features_ to you in order for you to use it.  Is it fit for purpose? (An example might be starting to fill out a form but then realising you're filling out the wrong form).
 

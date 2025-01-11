@@ -1,6 +1,6 @@
 ---
 title: Funding Risk
-description: A particular scarcity risk, due to lack of funding.
+description: A particular dependency-scarcity risk, due to lack of funding.
 
 
 slug: /risks/Funding-Risk
