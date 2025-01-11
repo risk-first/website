@@ -15,8 +15,6 @@ practice:
   mitigates:
    - tag: Market Risk
      reason: "Promotes the software to reach potential customers and increase market share."
-   - tag: Feature Drift Risk
-     reason: "Make the most of market opportunities while they exist."
    - tag: Communication Risk
      reason: "Facilitates communication of the product's value proposition to the target audience."
   attendant:

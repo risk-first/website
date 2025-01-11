@@ -24,7 +24,7 @@ So there is a translation going on here: observations about the arrangement of _
 
 ## Worked Example
 
-![Feature Drift Risk](/img/generated/risks/posters/internal-model-risk.svg) 
+![Internal Model Risk](/img/generated/risks/posters/internal-model-risk.svg) 
 
 A large software firm struggles to hire effectively and feels it uses a lot of cycles trying to lure the best candidates.
 

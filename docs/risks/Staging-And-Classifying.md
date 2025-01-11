@@ -43,7 +43,7 @@ As shown in the above diagram, _using an abstraction you already know_ means:
  - **Mitigating [Feature Risk](/tags/Feature-Risk)**: because the abstraction is providing you with something _useful_.  For example, using the word "London" allows you to refer to a whole (but slightly non-specific) geographic area.
  - **Accepting [Communication Risk](/tags/Communication-Risk)**: because if you are using the abstraction in conversation the people you are using it with _need to understand it too_.
  - **Accepting [Map and Territory Risk](/tags/Map-And-Territory-Risk)**: because the abstraction is a simplification and not the actual thing itself.
- - **Living with [Dependency Risks](/tags/Dependency-Risks)**:  we depend on a word in our language (or a function in our library, or a service on the Internet).  But words are [unreliable](/tags/Reliability-Risk).  Language _changes_ and _evolves_, and the words you are using now might not always mean what you want them to mean.  (Software too changes and evolves:  We've seen this in [Red Queen Risk](/tags/Red-Queen-Risk) and [Feature Drift Risk](/tags/Feature-Drift-Risk).)
+ - **Living with [Dependency Risks](/tags/Dependency-Risks)**:  we depend on a word in our language (or a function in our library, or a service on the Internet).  But words are [unreliable](/tags/Reliability-Risk).  Language _changes_ and _evolves_, and the words you are using now might not always mean what you want them to mean.  (Software too changes and evolves:  We've seen this in [Red Queen Risk](/tags/Red-Queen-Risk) and [Market Risk](/tags/Market-Risk).)
  
 ### Inventing A New Abstraction  
 

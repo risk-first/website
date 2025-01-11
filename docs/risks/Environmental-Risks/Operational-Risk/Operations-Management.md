@@ -64,7 +64,7 @@ As the diagram above shows, we can bring [Planning](#planning) to bear on depend
 
 ![Design and Change Activities](/img/generated/risks/operational/design-change.svg)
 
-Since our operation exists in a world of risks like [Red Queen Risk](/tags/Red-Queen-Risk) and [Feature Drift Risk](/tags/Feature-Drift-Risk), we would expect that the output of our [Planning](#planning) actions would result in changes to our operation.  
+Since our operation exists in a world of risks like [Red Queen Risk](/tags/Red-Queen-Risk) and [Market Risk](/tags/Market-Risk), we would expect that the output of our [Planning](#planning) actions would result in changes to our operation.  
 
 While _planning_ is a day-to-day operational feedback loop, _design_ is a longer feedback loop changing not just the parameters of the operation, but the operation itself.
 

@@ -20,8 +20,6 @@ practice:
    - tag: Communication Risk
      reason: "Helps in explaining exactly what should be built."
   attendant:
-   - tag: Feature Drift Risk
-     reason: "Requirements will evolve and this can lead to feature drift."
    - tag: Schedule Risk
      reason: "Thorough requirements capture can be time-consuming."
   related:
