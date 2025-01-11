@@ -15,7 +15,7 @@ practice:
   mitigates:
    - tag: Operational Risk
      reason: "Provides data to inform decision-making and improve operational efficiency."
-   - tag: Feature Access Risk
+   - tag: Feature Fit Risk
      reason: "Helps in understanding the use of the system."
    - tag: Implementation Risk
      reason: "Identifies areas of improvement in the implementation process."

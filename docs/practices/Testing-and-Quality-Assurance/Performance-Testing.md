@@ -13,8 +13,8 @@ practice:
    - "Stress Testing"
    - "Performance Benchmarking"
   mitigates:
-   - tag: Feature Access Risk
-     reason: "Identifies performance bottlenecks that could impact operations."
+   - tag: Feature Fit Risk
+     reason: "Identifies performance bottlenecks that could affect usefulness."
    - tag: Reliability Risk
      reason: "Performance testing software can establish bounds on its reliability."
   attendant:

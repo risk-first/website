@@ -72,7 +72,7 @@ Abstraction is everywhere and seems to be at the heart of what our brains do.  B
 
 ![Features And Dependencies](/img/generated/staging-and-classifying/features-and-dependencies.svg)
 
-In the [Feature Risk](/tags/Feature-Risk) section, we looked at the problems of _supplying something for a client to use as a dependency_:  you've got to satisfy a demand ([Market Risk](/tags/Market-Risk)) and service a segment of the user community ([Feature Access Risk](/tags/Feature-Access-Risk)).    
+In the [Feature Risks](/tags/Feature-Risks) section, we looked at the problems of _supplying something for a client to use as a dependency_:  you've got to satisfy a demand ([Market Risk](/tags/Market-Risk)) and service a segment of the user community ([Feature Fit Risk](/tags/Feature-Fit-Risk)).    
 
 However over the rest of the [Dependency Risk](/tags/Dependency-Risks) sections we looked at this from the point of view of _being a client of someone else_:  you want to find trustworthy, reliable dependencies that don't give up when you least want them to.
 
