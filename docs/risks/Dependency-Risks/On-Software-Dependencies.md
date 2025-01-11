@@ -1,20 +1,15 @@
 ---
-title: Software Dependency Risks
-description: Specific risks due to relying on software as a dependency.
+title: On Software Dependencies
+description: Discussion of Dependency Risks due to software.
 
-slug: /risks/Software-Dependency-Risks
-featured: 
-  class: c
-  element: '<risk class="software-dependency" />'
-sidebar_position: 4
+slug: /risks/On-Software-Dependencies
+sidebar_position: 10
 tweet: yes
 tags: 
- - Software Dependency Risk
+ - Dependency Risk
 ---
 
 In this section, we're going to look specifically at _Software_ dependencies, although many of the concerns we'll raise here apply equally to all the other types of dependency we outlined in [Dependency Risk](/tags/Dependency-Risk). 
-
-![Software Dependency Risk](/img/generated/risks/software-dependency/software-dependency-risk.svg)
 
 In this section we will look at:
 
@@ -24,9 +19,9 @@ In this section we will look at:
  - **Different Types of Software Dependencies**.   In a software project there are a number of ways you could depend on _other software_.  Here, we break it down into some specific types (write-your-own, libraries and services) and look at the risk characteristics of each.
  - Finally, we look at how software dependencies are **Funded** - that is, how they survive over time.  Here we focus on Open Source, Commercial and Ad-Supported options, and the risks introduced by each.
 
-## Software Dependencies as Features
+## Software Dependencies Mitigate Risks
 
-[Software Dependencies](/tags/Software-Dependency-Risk) allows us to construct dependency networks to give us all kinds of features and mitigate all kinds of risk.  That is, the features we are looking for in a dependency _are to mitigate some kind of risk_.
+[Software Dependencies](/tags/Dependency-Adoption) allows us to construct dependency networks to give us all kinds of features and mitigate all kinds of risk.  That is, the features we are looking for in a dependency _are to mitigate some kind of risk_.
 
 For example, I might start using [WhatsApp](https://en.wikipedia.org/wiki/WhatsApp) because I want to be able to send my friends photos and text messages.  However, it's likely that those same features allow us to mitigate [Coordination Risk](/tags/Coordination-Risk) when we're next trying to meet up. 
 
@@ -42,7 +37,7 @@ Let's look at some more examples:
 |[Operational-Risk](/tags/Operational-Risk)                 |Support tools like ZenDesk, Grafana, InfluxDB, Geneos, Security Tools     |
 |[Feature-Risk](/tags/Feature-Risk)                         |Every piece of software you use!                                          |
   
-With this in mind, we can see that adding a software dependency is a trade-off:  we reduce some risk (as in the table above), but in return we pick up [Software Dependency Risk](/tags/Software-Dependency-Risk) as a result.  Whether this trade-off is worth it depends entirely on how well that software dependency resolves the original risk and how onerous the new risks are that we pick up.
+With this in mind, we can see that adding a software dependency is a trade-off:  we reduce some risk (as in the table above), but in return we pick up [Dependency Risk](/tags/Dependency-Risks) as a result.  Whether this trade-off is worth it depends entirely on how well that software dependency resolves the original risk and how onerous the new risks are that we pick up.
 
 ## Programming Languages as Dependencies
 

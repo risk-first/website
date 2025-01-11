@@ -1,12 +1,12 @@
 ---
-title: Library Adoption
-description: Implementing code to use libraries or adhere to specific standards.
+title: Dependency Adoption
+description: Making use of software libraries or services as a dependency.
 tags: 
-  - Library Adoption
+  - Dependency Adoption
   - Practice
 featured: 
   class: c
-  element: '<action>Use Library</action>'
+  element: '<action>Use Dependency</action>'
 practice:
   aka: 
    - "Runtime Adoption"
@@ -38,15 +38,13 @@ practice:
 
 ## Description
 
-> "Standardization is the process of implementing and developing technical standards based on the consensus of different parties, including firms, users, interest groups, standards organizations, and governments." - [Standardization, _Wikipedia_](https://en.wikipedia.org/wiki/Standardization)
-
-Adoption of standards and libraries involves implementing and adhering to established standards and integrating widely-used libraries in software development. This practice helps in ensuring consistency, reliability, and maintainability of the software by leveraging proven solutions.
+Making use of third-party libraries or services in your code.
 
 See:
 
  - [Languages and Dependencies](/risks/Complexity-Risk#languages-and-dependencies)
- - [Software Libraries (Software Dependency Risk)](/risks/Software-Dependency-Risk#2-software-libraries)
- - [Software-as-a-Service (Software Dependency Risk)](/risks/Software-Dependency-Risk#3--software-as-a-service)
+ - [Software Libraries (On Software Dependencies)](/risks/On-Software-Dependencies#2-software-libraries)
+ - [Software-as-a-Service (On Software Dependencies)](/risks/On-Software-Dependencies#3--software-as-a-service)
 
 
 ## See Also

@@ -94,7 +94,7 @@ This kind of stuff is encapsulated in the science of [Reliability Engineering](h
 
 This was applied on NASA missions, and then in the 1970's to car design following the Ford Pinto exploding car (see below).  But establishing the reliability of software dependencies like this would be _hard_ and _expensive_.  We are more likely to mitigate [Reliability Risk](/tags/Reliability-Risk) in software using [performance testing](/tags/Performance-Testing) or [redundancy](/tags/Redundancy) as shown in the diagram above.  
 
-Additionally, we often rely on _proxies for reliability_.  We'll look at these proxies (and the way in which software projects signal their reliability) in much more detail in the section on [Software Dependency Risk](/tags/Software-Dependency-Risk).
+Additionally, we often rely on _proxies for reliability_.  We'll look at these proxies (and the way in which software projects signal their reliability) in much more detail in the section on [Software Dependency Risks](/risks/On-Software-Dependencies).
 
 :::tip Anecdote Corner
 

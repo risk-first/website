@@ -62,7 +62,7 @@ The above chart is an example of this: look at how the number of public classes 
 
 #### Backward Compatibility
 
-As we saw in [Software Dependency Risk](/tags/Software-Dependency-Risk), The art of good design is to afford the greatest increase in functionality with the smallest increase in  complexity possible, and this usually means [Refactoring](https://en.wikipedia.org/wiki/Refactoring).  But, this is at odds with [Backward Compatibility](/risks/Protocol-Risk#backward-compatibility).
+The art of good design is to afford the greatest increase in functionality with the smallest increase in complexity possible, and this usually means [Refactoring](https://en.wikipedia.org/wiki/Refactoring).  But, this is at odds with [Backward Compatibility](/risks/Protocol-Risk#backward-compatibility).
 
 Each new version has a greater functional scope than the one before (pushing back [Lock-In Risk](/tags/Lock-In-Risk)), making the platform more attractive to build solutions in.   But this increases the [Complexity Risk](/tags/Complexity-Risk) as there is more functionality to deal with.  
 

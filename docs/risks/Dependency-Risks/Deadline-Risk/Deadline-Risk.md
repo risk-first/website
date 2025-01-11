@@ -56,7 +56,7 @@ The data processing team needs a new account report to be ready at the start of 
  - [Schedule Risk](/tags/Schedule-Risk) is _continuous_, like money.  i.e. you want to waste as little of it as possible.  Every extra day you take compounds [Schedule Risk](/tags/Schedule-Risk) additively. A day wasted at the start of the project is much the same as a day wasted at the end.
  - [Deadline Risk](/tags/Deadline-Risk) is _binary_.  The impact of [Deadline Risk](/tags/Deadline-Risk) is either zero (you make it in time) or one (you are late and miss the flight).  You don't particularly get a reward for being early.
  
-So, these are two separate concepts, both useful in software development and other fields.   Next up, something more specific: [Software Dependency Risk](/risks/Software-Dependency-Risk).
+So, these are two separate concepts, both useful in software development and other fields.  
  
 ## Example Threats
 

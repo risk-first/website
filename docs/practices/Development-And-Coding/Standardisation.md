@@ -44,7 +44,7 @@ practice:
 Standardisation involves creating, implementing, and enforcing standards and guidelines to ensure consistency, compatibility, and quality across software projects. This practice helps in maintaining uniformity, reducing complexity, and improving communication among team members and stakeholders.
 
 See:
-- [Unwritten Software (Software Dependency Risk)](/risks/Software-Dependency-Risk#unwritten-software)
+- [Unwritten Software (On Software Dependencies)](/risks/On-Software-Dependencies#unwritten-software)
 
 
 ## See Also

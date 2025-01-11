@@ -101,6 +101,6 @@ The "should we ship?" decision is therefore a complex one.  In [Meeting Reality]
 
 ## The End Of The Road
 
-In a way, [actions](/tags/Take-Action) like [Design](/tags/Design) and [Development](/tags/Coding) bring us right back to where we started from: identifying [Dependency Risks](/tags/Dependency-Risk), [Feature Risks](/tags/Feature-Risks) and [Complexity Risks](/tags/Complexity-Risk) that hinder our operation, and mitigating them through actions like _software development_.  
+In a way, [actions](/tags/Take-Action) like [Design](/tags/Design) and [Development](/tags/Coding) bring us right back to where we started from: identifying [Dependency Risks](/tags/Dependency-Risks), [Feature Risks](/tags/Feature-Risks) and [Complexity Risks](/tags/Complexity-Risk) that hinder our operation, and mitigating them through actions like _software development_.  
 
 Our safari of risk is finally complete: it's time to reflect on what we've seen in the next section, [Staging and Classifying](Staging-And-Classifying).  

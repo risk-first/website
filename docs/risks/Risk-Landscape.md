@@ -59,7 +59,6 @@ Below is a table outlining the different risks we'll see.  There _is_ an order t
 |[Dependency Risks](/tags/Dependency-Risks)                  |Risks of depending on other people, products, software, functions, etc. This is a general look at dependencies, before diving into specifics like...|  
 |[Scarcity Risk](/tags/Scarcity-Risk)                      |Risks associated with having limited time, money or some other resource.|    
 |[Deadline Risk](/tags/Deadline-Risk)                      |The risk of creating a dependency around a point in time.|
-|[Software Dependency Risk](/tags/Software-Dependency-Risk)|The risk of depending on a software library, service or function.|    
 |[Process Risk](/tags/Process-Risk)                        |When you depend on a business process, or human process to give you something you need.|
 |[Lock-In Risk](/tags/Lock-In-Risk)                      |Risks due to making decisions that limit your choices later on.  Sometimes, you go the wrong way on the [Risk Landscape](/risks/Risk-Landscape) and it's hard to get back to where you want to be.|            
 |[Agency Risk](/tags/Agency-Risk)                          |Risks that staff have their own [Goals](/tags/Goal), which might not align with those of the project or team.|

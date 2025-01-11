@@ -47,7 +47,7 @@ The choice of approach presents us with [Lock-In Risk](/tags/Lock-In-Risk) optio
 
 After having chosen either 'a', 'b' or even our own approach, we have significant sunk costs and are committed to the implementation - changing to another option is going to be expensive and means we have to re-trace our steps.
 
-This is a toy example, but in real life this dilemma occurs when we choose between database vendors, cloud hosting platforms, operating systems, software libraries etc. and is a big factor in our analysis of [Software Dependency Risks](/tags/Software-Dependency-Risk).
+This is a toy example, but in real life this dilemma occurs when we choose between database vendors, cloud hosting platforms, operating systems, software libraries etc. and is a big factor in our analysis of [Software Dependency Risks](/risks/On-Software-Dependencies).
 
 ## Everyday Lock-In Risks
 

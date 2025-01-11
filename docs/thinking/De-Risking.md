@@ -101,7 +101,7 @@ The table above lists a set of _generic strategies_ for derisking which we'll lo
 
 1.  **Do Risky Things Early**:  If you are building some software process which has ten steps in it, and the 9th step has a high probability of not being implementable, then _build the 9th step first_.  If you succeed, you've massively reduced the risk of the process construction.  IF you fail, you'll only have lost the time it took to build that one step.  _Build a proof of concept_.
 
-1.  **Take Care With Dependencies**: Choose popular technologies and known reliable components. Whilst hiring people is hard work at the best of times, hiring PL/1 programmers is _really hard_. This tactic is explored in much more depth in [Software Dependency Risk](/risks/Software-Dependency-Risk)
+1.  **Take Care With Dependencies**: Choose popular technologies and known reliable components. Whilst hiring people is hard work at the best of times, hiring PL/1 programmers is _really hard_. This tactic is explored in much more depth in [On Software Dependencies](/risks/On-Software-Dependencies)
 
 1.  **Redundancy**: Avoid single points of failure.   For example, Pair Programming is a control espoused by [Extreme Programming](/tags/Extreme-Programming) to reduce [Key Person Risk](/tags/Agency-Risk) and [Communication Risk](/tags/Communication-Risk).  See [Dependency Risks](/tags/Dependency-Risks) for more on this.  
 

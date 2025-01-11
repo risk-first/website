@@ -81,7 +81,7 @@ Although modern languages include plenty of concurrency primitives (such as the 
 
 Languages such as [Clojure](https://clojure.org) introduce [persistent collections](https://en.wikipedia.org/wiki/Persistent_data_structure) to alleviate concurrency issues.  The basic premise is that any time you want to _change_ the contents of a collection, you get given back a _new collection_.  So, any collection instance is immutable once created.  The trade-off is again speed to mitigate [Complexity Risk](/tags/Complexity-Risk).  
 
-An important lesson here is that choice of language can reduce complexity: and we'll come back to this in [Software Dependency Risk](/risks/Software-Dependency-Risk).
+An important lesson here is that choice of language can reduce complexity: and we'll come back to this in [On Software Dependencies](/risks/On-Software-Dependencies).
  
 ### 5. Networking / Security
 
@@ -93,7 +93,7 @@ There are plenty of [Complexity Risk](/tags/Complexity-Risk) perils in _anything
 
 Luckily, most good languages include cryptographic libraries that you can include to mitigate these [Complexity Risks](/tags/Complexity-Risk) from your own code-base.  
 
-This is a strong argument for the use of libraries.  But when should you use a library and when should you code-your-own?  This is covered further in the section on [Software Dependency Risk](/risks/Software-Dependency-Risk).  
+This is a strong argument for the use of libraries.  But when should you use a library and when should you code-your-own?  This is covered further in the section on [On Software Dependencies](/risks/On-Software-Dependencies).  
 
 ### 6.  The Pursuit Of Perfection
 
